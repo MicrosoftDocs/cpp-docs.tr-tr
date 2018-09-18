@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d5d4dc98c4fb411a4d63fdfad5049cf0df723bec
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 6d4a1b76966216a6dc7b2e7249bddb1ac629376f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33686571"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016773"
 ---
 # <a name="progressreporter-class"></a>progress_reporter Sınıfı
-Belirli bir türdeki ilerleme bildirimleri raporlama ilerleme Raporlayıcı sınıf sağlar. Her progress_reporter nesne belirli bir zaman uyumsuz eylem veya işlem için bağlı.  
+İlerleme Raporlayıcısı belirli bir türdeki ilerleme bildirimlerinin raporlama sağlar. Her progress_reporter nesnesi, bir belirli bir zaman uyumsuz eyleme veya işleme bağlıdır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,8 +37,8 @@ class progress_reporter;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_ProgressType`  
- İlerleme Raporlayıcı bildirilen her ilerleme bildirimi yük türü.  
+*_ProgressType*<br/>
+İlerleme Raporlayıcısı ile bildirilen her bir ilerleme bildiriminin yük türü.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -52,7 +52,7 @@ class progress_reporter;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Raporu](#report)|Zaman uyumsuz eylem ya da bu ilerleme Raporlayıcı bağlandığı işlemi ilerleme durumu raporu gönderir.|  
+|[Rapor](#report)|Zaman uyumsuz eylem ya da bu işlem raporcusunun bağlı olduğu işleme bir İlerleme raporu gönderir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu tür, yalnızca Windows çalışma zamanı uygulamaları için kullanılabilir.  
@@ -71,17 +71,17 @@ class progress_reporter;
 progress_reporter();
 ```  
   
-##  <a name="report"></a> Raporu 
+##  <a name="report"></a> Rapor 
 
- Zaman uyumsuz eylem ya da bu ilerleme Raporlayıcı bağlandığı işlemi ilerleme durumu raporu gönderir.  
+ Zaman uyumsuz eylem ya da bu işlem raporcusunun bağlı olduğu işleme bir İlerleme raporu gönderir.  
   
 ```
 void report(const _ProgressType& val) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `val`  
- Rapora bir ilerleme bildirimi aracılığıyla yükü.  
+*VAL*<br/>
+Devam eden bildirim yoluyla bildirilecek yük.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0bf22539a53a0eee78a7d0be110d7459cf5d4f9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d637892a71f9a2c9bafdced6cb3a6e51e23ae463
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33234898"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029344"
 ---
 # <a name="compiler-error-c2724"></a>Derleyici Hatası C2724
-'tanımlayıcısı': 'static' kullanılmamalıdır üzerinde dosya kapsamında tanımlı üye işlevleri  
-  
- Statik üye işlevleri ile dış bağlantı bildirilmelidir.  
-  
- Aşağıdaki örnek C2724 oluşturur:  
-  
-```  
-// C2724.cpp  
-class C {  
-   static void func();  
-};  
-  
-static void C::func(){};   // C2724  
-// try the following line instead  
-// void C::func(){};  
+
+'identifier': 'static' kullanılmamalıdır dosya kapsamında tanımlanan üye işlevlerde
+
+Statik üye işlevleri, harici bağlantı ile bildirilmelidir.
+
+Aşağıdaki örnek, C2724 oluşturur:
+
+```
+// C2724.cpp
+class C {
+   static void func();
+};
+
+static void C::func(){};   // C2724
+// try the following line instead
+// void C::func(){};
 ```

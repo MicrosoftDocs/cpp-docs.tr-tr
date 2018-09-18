@@ -16,38 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ddae81dbad5f828b754c97247527a891e8c0e2c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3941af133d03b3cc4eae11785b8f870e8058809f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33242163"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026068"
 ---
 # <a name="compiler-error-c3023"></a>Derleyici Hatası C3023
-'value': beklenmeyen bir belirteç OpenMP 'yan tümcesi' yan tümcesi bağımsız değişkende karşılaştı  
-  
- Bir yan tümce için geçirilen değer geçerli değil.  
-  
- Aşağıdaki örnek C3023 oluşturur:  
-  
-```  
-// C3023.cpp  
-// compile with: /openmp /link vcomps.lib  
-#include <stdio.h>  
-#include "omp.h"  
-  
-int main() {  
-   int i;  
-  
-   #pragma omp parallel for schedule(dynamic 10)   // C3023  
-   for (i = 0; i < 10; ++i) ;  
-  
-   #pragma omp parallel for schedule(dynamic;10)   // C3023  
-   for (i = 0; i < 10; ++i) ;  
-  
-   // OK  
-   #pragma omp parallel for schedule(dynamic, 10)  
-   for (i = 0; i < 10; ++i)  
-   ;  
-}  
+
+'value': OpenMP 'yan tümcesi' yan tümcesinin bağımsız değişkeninde karşılaştı beklenmeyen belirteç
+
+Bir yan tümce için geçirilen değer geçerli değil.
+
+Aşağıdaki örnek, C3023 oluşturur:
+
+```
+// C3023.cpp
+// compile with: /openmp /link vcomps.lib
+#include <stdio.h>
+#include "omp.h"
+
+int main() {
+   int i;
+
+   #pragma omp parallel for schedule(dynamic 10)   // C3023
+   for (i = 0; i < 10; ++i) ;
+
+   #pragma omp parallel for schedule(dynamic;10)   // C3023
+   for (i = 0; i < 10; ++i) ;
+
+   // OK
+   #pragma omp parallel for schedule(dynamic, 10)
+   for (i = 0; i < 10; ++i)
+   ;
+}
 ```

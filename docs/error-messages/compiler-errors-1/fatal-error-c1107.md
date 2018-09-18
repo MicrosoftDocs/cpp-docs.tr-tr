@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 949ee09244a106984522fb35dd13c0b3426fc820
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bc896f08ac161cae4e4fab5e991da810f3faf195
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199937"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016643"
 ---
 # <a name="fatal-error-c1107"></a>Önemli hata C1107
-derleme 'dosya' bulunamadı: Lütfen /AI kullanarak derleme arama yolu belirtin veya LIBPATH ortam değişkeni ayarlayarak  
-  
- Meta veri dosyasının geçirilmedi bir [#using](../../preprocessor/hash-using-directive-cpp.md) derleyici bulamadı yönergesi.  
-  
- İçin konusunda açıklanan LIBPATH `#using`ve [/AI](../../build/reference/ai-specify-metadata-directories.md) derleyici seçeneği derleyici başvurulan meta veri dosyaları için görünür dizinleri belirtmenize olanak tanır.
+
+'dosya' derlemesi bulunamadı: Lütfen /AI kullanarak bütünleştirilmiş kod arama yolunu belirtin veya LIBPATH ortam değişkenini ayarlayarak
+
+Meta veri dosyası için geçirilen bir [#using](../../preprocessor/hash-using-directive-cpp.md) derleyici bulamadı yönergesi.
+
+Konu için açıklanan LIBPATH `#using`ve [/AI](../../build/reference/ai-specify-metadata-directories.md) derleyici seçeneği başvurulan meta veri dosyaları için derleyici görünür dizinler belirtmenize olanak tanır.

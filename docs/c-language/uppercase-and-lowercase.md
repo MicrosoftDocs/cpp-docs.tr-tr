@@ -12,19 +12,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22eade414a42913d3fbd3c5281336279af6390cb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3e7e4ead59263124ff86b23836105f0af9d29662
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32386702"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026120"
 ---
 # <a name="uppercase-and-lowercase"></a>Büyük Harf ve Küçük Harf
-**ANSI 3.1.2** büyük farklılıklar önemli olup olmadığı  
-  
- Microsoft C tanımlayıcıları derleme birimindeki büyük küçük harfe duyarlı olarak değerlendirir.  
-  
- Microsoft bağlayıcı büyük küçük harfe duyarlıdır. Tutarlı bir şekilde çalışması göre tüm tanımlayıcılar belirtmeniz gerekir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Tanımlayıcıların Davranışı](../c-language/behavior-of-identifiers.md)
+
+**ANSI 3.1.2** büyük/küçük farklılıklar önemli olup
+
+Microsoft C, bir derleme biriminde içindeki tanımlayıcıları büyük küçük harfe duyarlı olarak değerlendirir.
+
+Microsoft bağlayıcı büyük/küçük harfe duyarlıdır. Tüm tanımlayıcılar çalışması göre tutarlı bir şekilde belirtmeniz gerekir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Tanımlayıcıların Davranışı](../c-language/behavior-of-identifiers.md)

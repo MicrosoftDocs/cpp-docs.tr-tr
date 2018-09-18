@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4946e3a8341963ee1a1ca2c3ad65d64cfbad8080
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9265c54175236d96391c64e343771c896de1c744
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302834"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031723"
 ---
 # <a name="c-runtime-error-r6018"></a>C çalışma zamanı hatası R6018
-Beklenmeyen yığın hatası  
-  
+
+yığın beklenmeyen hata
+
 > [!NOTE]
->  Bir uygulama çalıştırırken bu hata iletisi alırsanız, dahili bir sorun olduğundan uygulama kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak genellikle uygulamanın kodu üründe tarafından kaynaklanır.  
->   
->  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:  
->   
->  -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasındaki **Denetim Masası** onarın veya program yeniden yükleyin.  
-> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.  
-> -   Uygulamanın güncelleştirilmiş bir sürümünü denetle. Sorun devam ederse uygulamanın satıcısına başvurun.  
-  
- **Programcıları için bilgi**  
-  
- Program, bir bellek yönetimi işlemi gerçekleştirilirken beklenmeyen bir hatayla karşılaştı.  
-  
- Programın çalışma zamanı yığın veri yanlışlıkla değiştirirse genellikle bu hata oluşur. Ancak, bu da işletim sistemi kod ve Çalışma Zamanı Modülü bir iç hata neden olabilir.  
-  
- Bu sorunu gidermek için kodunuzda yığın bozulması hataları denetleyin. Daha fazla bilgi ve örnekler için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ardından, uygulama dağıtımınız için en son yeniden dağıtılabilir öğeleri kullandığınızdan emin olun. Bilgi için bkz: [Visual C++ üzerinde dağıtım](../../ide/deployment-in-visual-cpp.md).
+>  Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bir sorun olduğundan uygulaması kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak genellikle, uygulamanın koddaki bir hata nedeniyle oluşur.
+>
+>  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
+>
+>  -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
+> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
+> -   Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
+
+**Programcıları için bilgi**
+
+Program bir bellek yönetimi işlemi gerçekleştirilirken beklenmeyen bir hatayla karşılaştı.
+
+Bu hata genellikle programın çalışma zamanı yığın verileri yanlışlıkla değiştirirse oluşur. Ancak, bu da işletim sistemi kod ve çalışma zamanı içinde bir iç hata neden olabilir.
+
+Bu sorunu düzeltmek için kodunuzu yığın bozulması hataları kontrol edin. Daha fazla bilgi ve örnekler için bkz. [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ardından, uygulama dağıtımınız için en son yeniden dağıtılabilir dosyaları kullandığınızdan emin olun. Bilgi için [Visual C++ üzerinde dağıtım](../../ide/deployment-in-visual-cpp.md).

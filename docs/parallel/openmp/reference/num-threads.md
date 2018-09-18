@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7dd57950d083c4f89ee2aa5962ad1e07a55a9a8
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d3485d534cf279863b241abcd26195cdde7fea19
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691892"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016292"
 ---
 # <a name="numthreads"></a>num_threads
-İş parçacığı sayısı, iş parçacığı ekip olarak ayarlar.  
+Bir iş parçacığı takıma iş parçacığı sayısını ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,14 +32,13 @@ ms.locfileid: "33691892"
 num_threads(num)  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
+### <a name="parameters"></a>Parametreler
   
- `num`  
- İş parçacığı sayısı  
+*sayı*<br/>
+İş parçacığı sayısı  
   
 ## <a name="remarks"></a>Açıklamalar  
- `num_threads` Yan tümcesine sahip ile aynı işlevselliği [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) işlevi.  
+ `num_threads` Yan tümcesi ile aynı işlevlere sahip [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) işlevi.  
   
  `num_threads` Aşağıdaki yönergeleri için geçerlidir:  
   
@@ -47,9 +46,9 @@ num_threads(num)
   
 -   [for](../../../parallel/openmp/reference/for-openmp.md)  
   
--   [Bölümler](../../../parallel/openmp/reference/sections-openmp.md)  
+-   [Bölümleri](../../../parallel/openmp/reference/sections-openmp.md)  
   
- Daha fazla bilgi için bkz: [2.3 parallel yapı](../../../parallel/openmp/2-3-parallel-construct.md).  
+ Daha fazla bilgi için [2.3 parallel yapı](../../../parallel/openmp/2-3-parallel-construct.md).  
   
 ## <a name="example"></a>Örnek  
  Bkz: [paralel](../../../parallel/openmp/reference/parallel.md) kullanma örneği için `num_threads` yan tümcesi.  

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45139b16ebb923acd004d995cd9466ea9e39e163
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 61cbd301d01d62c0d24f232703b53cebf411a082
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765742"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021076"
 ---
 # <a name="celementtraits-class"></a>CElementTraits sınıfı
 
@@ -31,13 +31,13 @@ Bu sınıf, taşıma, kopyalama, karşılaştırma ve karma işlemleri için yö
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<typename T>  
+template<typename T>
 class CElementTraits : public CDefaultElementTraits<T>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-`T`  
+*T*<br/>
 Koleksiyonda depolanacak veri türü.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -54,5 +54,5 @@ Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-cl
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CDefaultElementTraits sınıfı](../../atl/reference/cdefaultelementtraits-class.md)   
+[CDefaultElementTraits Sınıfı](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

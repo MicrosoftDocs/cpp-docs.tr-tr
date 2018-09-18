@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01741d1cc67f0045c46ab392212625b9e1a2d8ca
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 86d81662cb02fa3c8f6af75009daf4dab9b70196
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246376"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016565"
 ---
 # <a name="compiler-error-c2891"></a>Derleyici Hatası C2891
-'parametresi': bir şablon parametresini adresi alınamıyor  
-  
- Bir lvalue olmadığı sürece bir şablon parametresini adresini alamıyor. Tür parametreleri herhangi bir adres sahip oldukları için lvalues değildir. Lvalues olmayan şablon parametresi listelerinde olmayan tür değerleri de bir adresi yok. Şablon parametresi olarak geçirilen değer şablon bağımsız değişken derleyici tarafından üretilen bir kopyası olduğundan bu derleyici hatası C2891 neden olan kod örneğidir.  
-  
-```  
-template <int i> int* f() { return &i; }  
-```  
-  
- Başvuru türleri gibi lvalues olan şablon parametreleri kendi adres gerçekleştirmişsiniz.  
-  
-```  
-template <int& r> int* f() { return &r; }  
-```  
-  
- Bu hatayı düzeltmek için bir lvalue olmadığı sürece bir şablon parametresini adresini kazanmaz.
+
+'parameter': bir şablon parametresinin adresi alınamaz
+
+Lvalue olmadığı sürece bir şablon parametresinin adresi alınamaz. Tür parametrelerine sahip oldukları herhangi bir adres lvalues değildir. Türü olmayan değerleri lvalues olmayan şablon parametre listeleri de bir adresi yok. Şablon parametre olarak geçirilen değer şablon bağımsız değişkeni derleyici tarafından oluşturulan bir kopyasını derleyici hatası C2891 neden bir kod örneğini olmasıdır.
+
+```
+template <int i> int* f() { return &i; }
+```
+
+Lvalues, başvuru türleri gibi bir şablon parametreleri alınan kendi adresi.
+
+```
+template <int& r> int* f() { return &r; }
+```
+
+Bu hatayı düzeltmek için bir lvalue olmadığı sürece bir şablon parametresinin adresi almaz.

@@ -47,12 +47,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed6e32ec0e474f901818618af662a91e3e46efed
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3ce6099b904c088399dcb43635a1b254567e8320
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763704"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024924"
 ---
 # <a name="message-map-macros-atl"></a>İleti eşleme makroları (ATL)
 
@@ -109,7 +109,7 @@ ALT_MSG_MAP(msgMapID)
 
 ### <a name="parameters"></a>Parametreler
 
-*msgMapID*  
+*msgMapID*<br/>
 [in] İleti eşleme tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -148,7 +148,7 @@ BEGIN_MSG_MAP(theClass)
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*  
+*Sınıfın*<br/>
 [in] İleti eşlemesi içeren sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -227,10 +227,10 @@ CHAIN_MSG_MAP_ALT(theChainClass, msgMapID)
 
 ### <a name="parameters"></a>Parametreler
 
-*theChainClass*  
+*theChainClass*<br/>
 [in] İleti eşlemesi içeren temel sınıfın adı.
 
-*msgMapID*  
+*msgMapID*<br/>
 [in] İleti eşleme tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -256,10 +256,10 @@ CHAIN_MSG_MAP_ALT_MEMBER(theChainMember, msgMapID)
 
 ### <a name="parameters"></a>Parametreler
 
-*theChainMember*  
+*theChainMember*<br/>
 [in] İleti eşlemesi içeren veri üyesinin adı.
 
-*msgMapID*  
+*msgMapID*<br/>
 [in] İleti eşleme tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -285,7 +285,7 @@ CHAIN_MSG_MAP(theChainClass)
 
 ### <a name="parameters"></a>Parametreler
 
-*theChainClass*  
+*theChainClass*<br/>
 [in] İleti eşlemesi içeren temel sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -323,7 +323,7 @@ CHAIN_MSG_MAP_DYNAMIC(dynaChainID)
 
 ### <a name="parameters"></a>Parametreler
 
-*dynaChainID*  
+*dynaChainID*<br/>
 [in] Bir nesnenin ileti eşlemesi için benzersiz tanımlayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -349,7 +349,7 @@ CHAIN_MSG_MAP_MEMBER(theChainMember)
 
 ### <a name="parameters"></a>Parametreler
 
-*theChainMember*  
+*theChainMember*<br/>
 [in] İleti eşlemesi içeren veri üyesinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -387,10 +387,10 @@ COMMAND_CODE_HANDLER(code, func)
 
 ### <a name="parameters"></a>Parametreler
 
-*Kod*  
+*Kod*<br/>
 [in] Uyarı kodu.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
@@ -407,13 +407,13 @@ COMMAND_HANDLER(id, code, func)
 
 ### <a name="parameters"></a>Parametreler
 
-*id*  
+*id*<br/>
 [in] Menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısı.
 
-*Kod*  
+*Kod*<br/>
 [in] Uyarı kodu.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -449,10 +449,10 @@ COMMAND_ID_HANDLER(id, func)
 
 ### <a name="parameters"></a>Parametreler
 
-*id*  
+*id*<br/>
 [in] Menü öğesi, denetim ya da Hızlandırıcı iletiyi gönderen tanımlayıcısı.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
@@ -469,16 +469,16 @@ COMMAND_RANGE_CODE_HANDLER(idFirst, idLast, code, func)
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*  
+*idFirst*<br/>
 [in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
 
-*idLast*  
+*idLast*<br/>
 [in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
 
-*Kod*  
+*Kod*<br/>
 [in] Uyarı kodu.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -499,13 +499,13 @@ COMMAND_RANGE_HANDLER( idFirst, idLast, func)
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*  
+*idFirst*<br/>
 [in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
 
-*idLast*  
+*idLast*<br/>
 [in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -598,10 +598,10 @@ MESSAGE_HANDLER( msg, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*ileti*  
+*ileti*<br/>
 [in] Windows ileti.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -639,13 +639,13 @@ MESSAGE_RANGE_HANDLER( msgFirst, msgLast, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*msgFirst*  
+*msgFirst*<br/>
 [in] İletileri bir aralıkta başlangıcını işaretler.
 
-*msgLast*  
+*msgLast*<br/>
 [in] İletilerin bitişik bir aralığın sonunu işaretler.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
@@ -662,10 +662,10 @@ NOTIFY_CODE_HANDLER(cd, func)
 
 ### <a name="parameters"></a>Parametreler
 
-*CD*  
+*CD*<br/>
 [in] Uyarı kodu.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
@@ -682,13 +682,13 @@ NOTIFY_HANDLER( id, cd, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*id*  
+*id*<br/>
 [in] İletiyi gönderen denetim tanımlayıcısı.
 
-*CD*  
+*CD*<br/>
 [in] Uyarı kodu.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -726,10 +726,10 @@ NOTIFY_ID_HANDLER( id, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*id*  
+*id*<br/>
 [in] İletiyi gönderen denetim tanımlayıcısı.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
@@ -746,16 +746,16 @@ NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*  
+*idFirst*<br/>
 [in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
 
-*idLast*  
+*idLast*<br/>
 [in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
 
-*CD*  
+*CD*<br/>
 [in] Uyarı kodu.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -776,13 +776,13 @@ NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*  
+*idFirst*<br/>
 [in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
 
-*idLast*  
+*idLast*<br/>
 [in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -819,10 +819,10 @@ REFLECTED_COMMAND_CODE_HANDLER( code, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*Kod*  
+*Kod*<br/>
 [in] Uyarı kodu.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.  
 
 ### <a name="requirements"></a>Gereksinimler
@@ -839,13 +839,13 @@ REFLECTED_COMMAND_HANDLER( id, code, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*id*  
+*id*<br/>
 [in] Menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısı.
 
-*Kod*  
+*Kod*<br/>
 [in] Uyarı kodu.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.  
 
 ### <a name="requirements"></a>Gereksinimler
@@ -862,10 +862,10 @@ REFLECTED_COMMAND_ID_HANDLER( id, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*id*  
+*id*<br/>
 [in] Menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısı.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.  
 
 ### <a name="requirements"></a>Gereksinimler
@@ -882,16 +882,16 @@ REFLECTED_COMMAND_RANGE_CODE_HANDLER( idFirst, idLast, code, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*  
+*idFirst*<br/>
 [in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
 
-*idLast*  
+*idLast*<br/>
 [in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
 
-*Kod*  
+*Kod*<br/>
 [in] Uyarı kodu.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.  
 
 ### <a name="requirements"></a>Gereksinimler
@@ -908,13 +908,13 @@ REFLECTED_COMMAND_RANGE_HANDLER( idFirst, idLast, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*  
+*idFirst*<br/>
 [in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
 
-*idLast*  
+*idLast*<br/>
 [in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.  
 
 ### <a name="requirements"></a>Gereksinimler
@@ -931,10 +931,10 @@ REFLECTED_NOTIFY_CODE_HANDLER_EX( cd, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*CD*  
+*CD*<br/>
 [in] Uyarı kodu.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.  
 
 ### <a name="requirements"></a>Gereksinimler
@@ -951,13 +951,13 @@ REFLECTED_NOTIFY_HANDLER( id, cd, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*id*  
+*id*<br/>
 [in] Menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısı.
 
-*CD*  
+*CD*<br/>
 [in] Uyarı kodu.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.  
 
 ### <a name="requirements"></a>Gereksinimler
@@ -974,10 +974,10 @@ REFLECTED_NOTIFY_ID_HANDLER( id, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*id*  
+*id*<br/>
 [in] Menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısı.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.  
 
 ### <a name="requirements"></a>Gereksinimler
@@ -994,16 +994,16 @@ REFLECTED_NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*  
+*idFirst*<br/>
 [in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
 
-*idLast*  
+*idLast*<br/>
 [in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
 
-*CD*  
+*CD*<br/>
 [in] Uyarı kodu.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
@@ -1020,13 +1020,13 @@ REFLECTED_NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*  
+*idFirst*<br/>
 [in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
 
-*idLast*  
+*idLast*<br/>
 [in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
 
-*FUNC*  
+*FUNC*<br/>
 [in] İleti işleyici işlevinin adı.
 
 ## <a name="see-also"></a>Ayrıca Bkz.

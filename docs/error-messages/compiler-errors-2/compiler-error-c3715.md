@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9412592ac177fb49f065975db469c9f77b98e8c8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 63ae3486b4db21a3aa241d5ebdbbfa0cdc6806f2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33265902"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026562"
 ---
 # <a name="compiler-error-c3715"></a>Derleyici Hatası C3715
-'işaretçi': 'sınıfı' için bir işaretçi olmalıdır  
-  
- Bir işaretçi belirtilen [__hook](../../cpp/hook.md) veya [__unhook](../../cpp/unhook.md) , göstermiyor için geçerli bir sınıf. Bu hatayı düzeltmek için emin olun, `__hook` ve `__unhook` çağrıları geçerli sınıf işaretçileri belirtin.
+
+'işaretçisi': 'class' için bir işaretçi olmalıdır
+
+Bir işaretçi belirtilen [__hook](../../cpp/hook.md) veya [__unhook](../../cpp/unhook.md) , noktası için geçerli bir sınıf. Bu hatayı düzeltmek için emin olun, `__hook` ve `__unhook` çağrılar, geçerli sınıf işaretçileri belirtin.

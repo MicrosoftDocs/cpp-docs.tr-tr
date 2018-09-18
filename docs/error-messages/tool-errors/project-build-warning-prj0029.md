@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd6e7b738785d9cfacfb2128e03d3a3123da4fa1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 854120bf6021295348ff2e28b36f7b44007017b1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320227"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026029"
 ---
 # <a name="project-build-warning-prj0029"></a>Proje Derleme Uyarısı PRJ0029
-Proje düzeyi özel derleme adımı için 'Outputs' özelliği ayarlanmadı. Özel derleme adımı atlanır.  
-  
- Hiçbir çıktı belirtilmediğinden özel derleme adımı yürütülmedi.  
-  
- Bu hatayı gidermek için aşağıdakilerden birini yapın:  
-  
--   Özel derleme adımı derlemeden çıkarın.  
-  
--   Bir çıkış ekleyin.  
-  
--   Özel derleme adımının komutu içeriğini silin.
+
+Proje düzeyindeki özel derleme adımı için 'Çıkışlar' özelliği ayarlanmadı. Özel derleme aşaması atlanacak.
+
+Hiçbir çıkış belirtilmiş olduğundan, özel derleme adımı yürütülmedi.
+
+Bu hatayı gidermek için aşağıdakilerden birini yapın:
+
+- Özel derleme adımı derlemeden hariç tutma.
+
+- Bir çıktı ekleyin.
+
+- Özel derleme adımının komut içeriğini silin.

@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4220be654f93ecd79d196efc14657ca7346411f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cb2d85ffbc7aa799f0688fbb10021a04ef9455ad
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197786"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022627"
 ---
 # <a name="compiler-error-c2460"></a>Derleyici Hatası C2460
-'identifier1': 'hangi tanımlanıyorsa kullanır identifier2',  
-  
- Bir sınıf veya yapı (`identifier2`) kendisinin üyesi bildirilen (`identifier1`). Sınıfları ve yapıları özyinelemeli tanımları izin verilmiyor.  
-  
- Aşağıdaki örnek C2460 oluşturur:  
-  
-```  
-// C2460.cpp  
-class C {  
-   C aC;    // C2460  
-};  
-```  
-  
- Bunun yerine, bir işaretçi başvuru sınıfında kullanın.  
-  
-```  
-// C2460.cpp  
-class C {  
-   C * aC;    // OK  
-};  
+
+'ıdentifier1': 'anda tanımlanmakta olan kullanımlar identifier2',
+
+Bir sınıf veya yapı (`identifier2`) kendisinin üyesi bildirilmiş (`identifier1`). Sınıfları ve yapıları özyinelemeli tanımlarını izin verilmez.
+
+Aşağıdaki örnek, C2460 oluşturur:
+
+```
+// C2460.cpp
+class C {
+   C aC;    // C2460
+};
+```
+
+Bunun yerine, bir işaretçi başvuru sınıfında kullanın.
+
+```
+// C2460.cpp
+class C {
+   C * aC;    // OK
+};
 ```

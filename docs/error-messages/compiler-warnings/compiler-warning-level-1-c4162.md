@@ -16,47 +16,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2789f6aa63c8a547a34ec6adfd89c1e1163c68e3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a36fa6a63443bf2272df7ce6125fd77afedf100f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33287533"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027186"
 ---
 # <a name="compiler-warning-level-1-c4162"></a>Derleyici Uyarısı (düzey 1) C4162
-'tanımlayıcısı': bulunan C bağlantısı ile hiçbir işlevi  
-  
- C bağlantı işleviyle bildirilmiş ancak bulunamıyor.  
-  
- Bu uyarıyı çözmek için derleme .c dosyasında (C Derleyici çağırma).  C++ derleyicisi çağırmanız gerekir, extern "C" işlev bildirimi önce koyun.  
-  
- Aşağıdaki örnek C4162 oluşturur  
-  
-```  
-// C4162.cpp  
-// compile with: /c /W1  
-unsigned char _bittest(long* a, long b);  
-#pragma intrinsic (_bittest)   // C4162  
-  
-int main() {  
-   bool bit;  
-   long num = 78002;  
-   bit = _bittest(&num, 5);  
-}  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C4162b.cpp  
-// compile with: /c  
-extern "C"  
-unsigned char _bittest(long* a, long b);  
-#pragma intrinsic (_bittest)  
-  
-int main() {  
-   bool bit;  
-   long num = 78002;  
-   bit = _bittest(&num, 5);  
-}  
+
+'identifier': hiçbir işlev bulunamadı C bağlaması olan
+
+Bir işlev C bağlaması olan bildirildi ancak bulunamıyor.
+
+Bu uyarıyı çözmek için derleme .c dosyasında (C derleyicisinin).  C++ derleyicisini çağırma gerekir, extern "C" işlev bildirimi önce yerleştirin.
+
+Aşağıdaki örnek C4162 oluşturur
+
+```
+// C4162.cpp
+// compile with: /c /W1
+unsigned char _bittest(long* a, long b);
+#pragma intrinsic (_bittest)   // C4162
+
+int main() {
+   bool bit;
+   long num = 78002;
+   bit = _bittest(&num, 5);
+}
+```
+
+Olası çözüm:
+
+```
+// C4162b.cpp
+// compile with: /c
+extern "C"
+unsigned char _bittest(long* a, long b);
+#pragma intrinsic (_bittest)
+
+int main() {
+   bool bit;
+   long num = 78002;
+   bit = _bittest(&num, 5);
+}
 ```

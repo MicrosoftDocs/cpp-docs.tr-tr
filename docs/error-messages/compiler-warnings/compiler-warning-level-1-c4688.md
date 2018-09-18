@@ -16,33 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 503f7783748407415ecd3a4ddbaafeb601b7c2b1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: aff10e34fd2dde20059ccbe2845b199486beb865
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33286584"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027836"
 ---
 # <a name="compiler-warning-level-1-c4688"></a>Derleyici Uyarısı (düzey 1) C4688
-'kısıtlaması': kısıtlama listesini içeren derleme özel türü 'type'  
-  
- Kısıtlama listesini Türü alanından derlemenin dışından erişildiğinde yeniden kullanılabilir olmayacaktır anlamı bir derleme özel türüne sahip. Daha fazla bilgi için bkz: [genel türler](../../windows/generics-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4688 oluşturur.  
-  
-```  
-// C4688.cpp  
-// compile with: /clr /c /W1  
-ref struct A {};   // private type  
-public ref struct B {};  
-  
-// Delete the following 3 lines to resolve.  
-generic <class T>   
-where T : A   // C4688  
-public ref struct M {};  
-  
-generic <class T>   
-where T : B  
-public ref struct N {};  
+
+'kısıtlaması': sınırlama listesi 'type' derleme özel türünü içeriyor
+
+Bir kısıtlama listesi türü derlemenin dışından erişilebilir olduğunda yeniden kullanılabilir olmayacaktır yani bir derleme özel türünü içeriyor. Daha fazla bilgi için [genel türler](../../windows/generics-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4688 oluşturur.
+
+```
+// C4688.cpp
+// compile with: /clr /c /W1
+ref struct A {};   // private type
+public ref struct B {};
+
+// Delete the following 3 lines to resolve.
+generic <class T>
+where T : A   // C4688
+public ref struct M {};
+
+generic <class T>
+where T : B
+public ref struct N {};
 ```

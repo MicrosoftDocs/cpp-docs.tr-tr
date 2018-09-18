@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be10e5e4105dd16a68ad2854538d6181e90bfbe9
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 12e035a27693fcad095cd83880aba99c37ba1c1f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705347"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027641"
 ---
 # <a name="badtarget-class"></a>bad_target Sınıfı
-Bu sınıf, bir ileti bloğu gerçekleştirilen işlem için geçersiz bir hedef için bir işaretçi verildiğinde oluşturulan bir özel açıklar.  
+Bu sınıf, bir özel durum gerçekleştirilmekte olan işlem için geçersiz bir hedefe bir ileti bloğu bir işaretçi verildiğinde, durum açıklar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,10 +40,10 @@ class bad_target : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[bad_target](#ctor)|Fazla Yüklendi. Oluşturan bir `bad_target` nesnesi.|  
+|[bad_target](#ctor)|Fazla Yüklendi. Oluşturur bir `bad_target` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu durum genellikle farklı bir hedef için ayrılmış bir ileti kullanma girişiminde veya değil tutan bir ayırma serbest hedef gibi nedenlerle oluşturulur.  
+ Bu özel durum, genellikle bir hedef için farklı bir hedef ayrılmış olan bir iletiyi kullanmak çalışan veya değil tutan bir ayırma serbest gibi nedenlerle oluşturulur.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -57,7 +57,7 @@ class bad_target : public std::exception;
   
 ##  <a name="ctor"></a> bad_target 
 
- Oluşturan bir `bad_target` nesnesi.  
+ Oluşturur bir `bad_target` nesne.  
   
 ```
 explicit _CRTIMP bad_target(_In_z_ const char* _Message) throw();
@@ -66,8 +66,8 @@ bad_target() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

@@ -16,37 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 039b819b65f0c0e9a7d9fb7fa490659dd9763e37
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 20b50d394b0701281cf382c6c0226b0b0b3c8180
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33267260"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016851"
 ---
 # <a name="compiler-error-c3830"></a>Derleyici Hatası C3830
-'type1': 'type2', değer türleri yalnızca arabirimi sınıflardan devralan devralınmalıdır olamaz  
-  
- Değer türü, bir taban sınıf devralır olamaz.  Daha fazla bilgi için bkz: [sınıflar ve yapılar](../../windows/classes-and-structs-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3830 oluşturur:  
-  
-```  
-// C3830a.cpp  
-// compile with: /clr /c  
-public value struct MyStruct4 {  
-   int i;  
-};  
-  
-public value class MyClass : public MyStruct4 {};   // C3830  
-  
-// OK  
-public interface struct MyInterface4 {  
-   void i();  
-};  
-  
-public value class MyClass2 : public MyInterface4 {  
-public:  
-   virtual void i(){}  
-};  
-```  
+
+'type1': değer türleri yalnızca arabirim sınıflarından Devral 'type2' öğesinden devralamaz
+
+Bir değer türü temel sınıfı devralamaz.  Daha fazla bilgi için [sınıfları ve yapıları](../../windows/classes-and-structs-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3830 oluşturur:
+
+```
+// C3830a.cpp
+// compile with: /clr /c
+public value struct MyStruct4 {
+   int i;
+};
+
+public value class MyClass : public MyStruct4 {};   // C3830
+
+// OK
+public interface struct MyInterface4 {
+   void i();
+};
+
+public value class MyClass2 : public MyInterface4 {
+public:
+   virtual void i(){}
+};
+```

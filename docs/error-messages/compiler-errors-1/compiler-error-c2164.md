@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23596fc25685adc155220de344adcd7d25827985
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b1e997a3b260b9ec8b68a92967233269707e6888
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171330"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032165"
 ---
 # <a name="compiler-error-c2164"></a>Derleyici Hatası C2164
-'function': bildirilmemiş iç işlevi  
-  
- Bir `intrinsic` pragma bildirilmemiş işlevi kullanır (yalnızca oluşur **/Oi**). Ya da derleyici iç bilgileri birini kendi üst bilgi dosyasını dahil olmak üzere kullanıldı.  
-  
- Aşağıdaki örnek C2164 oluşturur:  
-  
-```  
-// C2164.c  
-// compile with: /c  
-// processor: x86  
-// Uncomment the following line to resolve.  
-// #include "xmmintrin.h"  
-void b(float *p) {  
-   _mm_load_ss(p);   // C2164  
-}  
+
+'function': iç işlevin bildirimi yapılmadı
+
+Bir `intrinsic` pragma bildirilmemiş bir işlevi kullanır (yalnızca oluşur **/Oi**). Veya, derleyici iç bilgileri birini kendi üst bilgi dosyasını dahil olmak üzere kullanılmıştır.
+
+Aşağıdaki örnek, C2164 oluşturur:
+
+```
+// C2164.c
+// compile with: /c
+// processor: x86
+// Uncomment the following line to resolve.
+// #include "xmmintrin.h"
+void b(float *p) {
+   _mm_load_ss(p);   // C2164
+}
 ```

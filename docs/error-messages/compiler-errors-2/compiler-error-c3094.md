@@ -16,31 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac2b5cfee828d05137c1ad9b8bc2756d3bf06512
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6c114a81904962a6986b33b3c634ed6611d79179
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249803"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016696"
 ---
 # <a name="compiler-error-c3094"></a>Derleyici Hatası C3094
-'öznitelik': anonim kullanım izin verilmiyor  
-  
- Bir öznitelik doğru kapsamlı değil.  Daha fazla bilgi için bkz: [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3094 oluşturur.  
-  
-```  
-// C3094.cpp  
-// compile with: /clr /c  
-using namespace System;  
-[AttributeUsage(AttributeTargets::Class)]  
-public ref class AAttribute : Attribute {};  
-  
-[A];   // C3094  
-  
-// OK  
-[A]  
-ref class x{};  
+
+'attribute': anonim kullanım izin verilmiyor
+
+Bir özniteliğin doğru kapsama.  Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3094 oluşturur.
+
+```
+// C3094.cpp
+// compile with: /clr /c
+using namespace System;
+[AttributeUsage(AttributeTargets::Class)]
+public ref class AAttribute : Attribute {};
+
+[A];   // C3094
+
+// OK
+[A]
+ref class x{};
 ```

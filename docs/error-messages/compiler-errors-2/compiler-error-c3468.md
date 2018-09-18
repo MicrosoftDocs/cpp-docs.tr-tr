@@ -16,37 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a5d8b4fbdded1fc234e3f0de7e05c76d7164a16
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5ccd7238fa7101f70ce2e15a6cd39030934901fb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33256729"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023962"
 ---
 # <a name="compiler-error-c3468"></a>Derleyici Hatası C3468
-'type': yalnızca bir tür bir derlemeye iletebilirsiniz:  
-  
- '`file`' bağımlılığı derleme değil  
-  
- Yalnızca derlemedeki türleri iletilebilir.  
-  
- Daha fazla bilgi için bkz: [tür iletme (C + +/ CLI)](../../windows/type-forwarding-cpp-cli.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir modül oluşturur.  
-  
-```  
-// C3468.cpp  
-// compile with: /LN /clr  
-public ref class R {};  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3468 oluşturur.  
-  
-```  
-// C3468_b.cpp  
-// compile with: /clr /c  
-#using "C3468.netmodule"  
-[ assembly:TypeForwardedTo(R::typeid) ];   // C3468  
+
+'type': bir tür yalnızca bir derlemeye iletebilirsiniz:
+
+'`file`' bir derleme değil
+
+Yalnızca bir bütünleştirilmiş kodundaki türler iletilebilir.
+
+Daha fazla bilgi için [tür iletme (C + +/ CLI)](../../windows/type-forwarding-cpp-cli.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, bir modül oluşturur.
+
+```
+// C3468.cpp
+// compile with: /LN /clr
+public ref class R {};
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3468 oluşturur.
+
+```
+// C3468_b.cpp
+// compile with: /clr /c
+#using "C3468.netmodule"
+[ assembly:TypeForwardedTo(R::typeid) ];   // C3468
 ```

@@ -16,66 +16,68 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc152cd9d83b163632e64d1e2d8a0c5692439987
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a52a932d45c94fb63f3d7b943b2cd78fa1862e4f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196198"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029058"
 ---
 # <a name="compiler-error-c2385"></a>Derleyici Hatası C2385
-'üyesinin' belirsiz erişim  
-  
- Üye (birden fazla nesneden devralındı) birden fazla nesne öğesinden türetilen.  Bu hatayı gidermek için  
-  
--   Üye anlaşılır bir cast sağlayarak olun.  
-  
--   Temel sınıflar belirsiz üyeleri yeniden adlandırın.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2385 oluşturur.  
-  
-```  
-// C2385.cpp  
-// C2385 expected  
-#include <stdio.h>  
-  
-struct A   
-{  
-    void x(int i)   
-    {  
-        printf_s("\nIn A::x");  
-    }  
-};  
-  
-struct B   
-{  
-    void x(char c)   
-    {  
-        printf_s("\nIn B::x");  
-    }  
-};  
-  
-// Delete the following line to resolve.  
-struct C : A, B {}  
-  
-// Uncomment the following 4 lines to resolve.  
-// struct C : A, B   
-// {  
-//     using B::x;  
-//     using A::x;  
-// };  
-  
-int main()   
-{  
-    C aC;  
-    aC.x(100);  
-    aC.x('c');  
-}  
-  
-struct C : A, B   
-{  
-    using B::x;  
-    using A::x;  
-};  
+
+'üyesinin' belirsiz erişim
+
+Üye (birden fazla nesneden devralınır) birden fazla nesne türeyebilir.  Bu hatayı gidermek için
+
+- Üyenin benzersiz bir yayın sağlayarak olun.
+
+- Temel sınıflar belirsiz üyeleri yeniden adlandırın.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2385 oluşturur.
+
+```
+// C2385.cpp
+// C2385 expected
+#include <stdio.h>
+
+struct A
+{
+    void x(int i)
+    {
+        printf_s("\nIn A::x");
+    }
+};
+
+struct B
+{
+    void x(char c)
+    {
+        printf_s("\nIn B::x");
+    }
+};
+
+// Delete the following line to resolve.
+struct C : A, B {}
+
+// Uncomment the following 4 lines to resolve.
+// struct C : A, B
+// {
+//     using B::x;
+//     using A::x;
+// };
+
+int main()
+{
+    C aC;
+    aC.x(100);
+    aC.x('c');
+}
+
+struct C : A, B
+{
+    using B::x;
+    using A::x;
+};
 ```

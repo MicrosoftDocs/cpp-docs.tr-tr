@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4cf1248c072374cbe65d74136dfd1a8680e483b0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6838202178e8012df61d17e2434461d6f4858bf3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297095"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022792"
 ---
 # <a name="command-line-error-d8045"></a>Komut Satırı Hatası D8045
-C dosya/CLR seçeneğiyle ' dosya' derlenemiyor  
-  
- Yalnızca C++ kaynak kodu dosyaları kullanan bir derleme geçirilebilir **/CLR**.  Kullanım **/TP** .c dosya .cpp dosyası; olarak derlemek için bkz: [TP, /Tp, TP, /TP (kaynak dosya türünü belirtin)](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md) daha fazla bilgi için.  
-  
- Daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).  
-  
- Visual C++ kullanarak ATL uygulamasını derleyin D8045 de ortaya çıkabilir. Bkz: [nasıl yapılır: pure'a Geçiş](../../dotnet/how-to-migrate-to-clr.md) daha fazla bilgi için.
+
+/ CLR seçeneğiyle ' dosya' C dosyası derlenemiyor
+
+Yalnızca C++ kaynak kodu dosyaları kullanan derleme için geçirilebilir **/CLR**.  Kullanım **/TP** bir .c dosyası .cpp dosyası; olarak derlemek için bkz: [/Tc, /Tp, /TC, /TP (kaynak dosya türünü belirtin)](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md) daha fazla bilgi için.
+
+Daha fazla bilgi için [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
+
+ATL uygulamasını Visual C++ kullanarak derleme yaparsanız D8045 da meydana gelebilir. Bkz: [nasıl yapılır: / CLR'ye geçiş](../../dotnet/how-to-migrate-to-clr.md) daha fazla bilgi için.

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88c816fecf71b94d25ac676f8169eeb26a2982fc
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e667f943d2630d78880d49f18015bdac95e571ac
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760223"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026523"
 ---
 # <a name="cfirepropnotifyevent-class"></a>CFirePropNotifyEvent sınıfı
 
@@ -72,10 +72,10 @@ static HRESULT FireOnChanged(IUnknown* pUnk, DISPID dispID);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnk*  
+*pUnk*<br/>
 [in] İşaretçi `IUnknown` bildirimi gönderilmesi nesnenin.
 
-*dispID*  
+*dispID*<br/>
 [in] Değişen özellik tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -96,10 +96,10 @@ static HRESULT FireOnRequestEdit(IUnknown* pUnk, DISPID dispID);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnk*  
+*pUnk*<br/>
 [in] İşaretçi `IUnknown` bildirimi gönderilmesi nesnenin.
 
-*dispID*  
+*dispID*<br/>
 [in] Değişmek üzere özellik tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri

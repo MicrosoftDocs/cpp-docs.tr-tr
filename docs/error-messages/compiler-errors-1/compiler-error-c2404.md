@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0f9636b593999695d145fe163c48a877e32ea25
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 54b1f76223f118a9a25dda6252fc74dbdc90f1a1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225767"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021973"
 ---
 # <a name="compiler-error-c2404"></a>Derleyici Hatası C2404
-'tanımlayıcısı': 'context' geçersiz kayıttaki  
-  
- Bu kayıt, bu bağlamda geçersiz.
+
+'identifier': 'context' içindeki yazmaç geçersiz
+
+Bu kayıt, bu bağlamda geçersiz.

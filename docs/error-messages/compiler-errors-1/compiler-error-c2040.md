@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6b19a5dd647e51efb46ef9798b7f7cdff5339b9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ccfbacff97550e20c0dd0202e0737585ffd39d6d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33167547"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016474"
 ---
 # <a name="compiler-error-c2040"></a>Derleyici Hatası C2040
-'işleci': 'identifier1' farklı 'identifier2' den yöneltme düzeylerinde  
-  
- Belirtilen işlenenler içeren bir ifade uyumsuz işlenen türleri olan veya örtük olarak işlenen türleri dönüştürülür. Her iki işlenen aritmetik veya her ikisi de (dizi veya işaretçi gibi) nonarithmetic, bunlar değişiklik kullanılır. Bir işlenen aritmetik ise ve diğer değil, nonarithmetic işlenen türü için aritmetik işleç dönüştürülür.  
-  
- Bu örnek C2040 oluşturur ve nasıl düzeltileceği gösterir.  
-  
-```  
-// C2040.cpp  
-// Compile by using: cl /c /W3 C2040.cpp  
-bool test() {  
-   char c = '3';  
-   return c == "3"; // C2446, C2040  
-   // return c == '3'; // OK  
-}  
+
+'operator': 'ıdentifier1' farklıdır, 'identifier2' nden yöneltme düzeyi
+
+Belirtilen işlenen içeren bir ifade, uyumsuz işlenen türleri vardır veya örtük olarak işlenen türleri dönüştürülür. Her iki işlenen de aritmetik veya her ikisi de (örneğin, dizi veya işaretçi) nonarithmetic, bunlar değişmeden kullanılır. Tek bir işlenen, aritmetik ve diğer değil, aritmetik işlenen nonarithmetic işlenen türüne dönüştürülür.
+
+Bu örnek C2040 oluşturur ve bu sorunun nasıl gösterir.
+
+```
+// C2040.cpp
+// Compile by using: cl /c /W3 C2040.cpp
+bool test() {
+   char c = '3';
+   return c == "3"; // C2446, C2040
+   // return c == '3'; // OK
+}
 ```

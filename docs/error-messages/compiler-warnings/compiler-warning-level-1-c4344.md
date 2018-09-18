@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a203288b5becde41704e0ab59dbb03e2bccef7e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f9505f7773a129430e5bdc7122e947c88fa57bb6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33271376"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025623"
 ---
 # <a name="compiler-warning-level-1-c4344"></a>Derleyici Uyarısı (düzey 1) C4344
-davranış değişikliği: açık şablon bağımsız değişken sonuçları 'Function 'işlevine yapılan çağrıda kullanımı  
-  
- Açık bağımsız değişken belirtilmezse, misiniz daha açık şablon değişkenlerini kullanarak işlevi çağrısı farklı bir işlevi çağırır.
+
+davranış değişikliği: açık şablon bağımsız değişkenleri 'function' çağrısıyla sonuçlandı kullanımı
+
+Açık bağımsız değişken belirtilmezse, onu olduğu kadar temkinli açık şablon bağımsız değişkenleri kullanarak bir işlev çağrısı, farklı bir işlevi çağırır.

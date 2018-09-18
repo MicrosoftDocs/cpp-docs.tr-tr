@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0934a3c6690b75ffa2eca18f1fd38662bc2a9fd9
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9e747386c37e760793ceaa0396f217304cbe621d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756996"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022688"
 ---
 # <a name="ccomautothreadmodule-class"></a>CComAutoThreadModule sınıfı
 
@@ -44,13 +44,13 @@ ATL 7. 0'den itibaren `CComAutoThreadModule` artık kullanılmıyor: bkz [ATL mo
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class ThreadAllocator = CComSimpleThreadAllocator>  
+template <class ThreadAllocator = CComSimpleThreadAllocator>
 class CComAutoThreadModule : public CComModule
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-`ThreadAllocator`  
+*ThreadAllocator*<br/>
 [in] İş parçacığı seçimi yönetme sınıfı. Varsayılan değer [CComSimpleThreadAllocator](../../atl/reference/ccomsimplethreadallocator-class.md).
 
 ## <a name="members"></a>Üyeler
@@ -122,13 +122,13 @@ HRESULT CreateInstance(
 
 ### <a name="parameters"></a>Parametreler
 
-*pfnCreateInstance*  
+*pfnCreateInstance*<br/>
 [in] Bir oluşturucu işlevi işaretçisi.
 
-*riid*  
+*riid*<br/>
 [in] İstenen arabirim Laboratuvardaki.
 
-*ppvObj*  
+*ppvObj*<br/>
 [out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppvObj* NULL olarak ayarlandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -181,16 +181,16 @@ HRESULT Init(
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 [in] Bir nesne eşleme girişleri dizisine bir işaretçi.
 
-*h*  
+*h*<br/>
 [in] Geçirilen HINSTANCE `DLLMain` veya `WinMain`.
 
-*plibid*  
+*plibid*<br/>
 [in] Projeyle ilişkili tür kitaplığının Kitaplık kimliği için bir işaretçi.
 
-*nThreads*  
+*nThreads*<br/>
 [in] Oluşturulacak iş parçacığı sayısı. Varsayılan olarak, *nThreads* tarafından döndürülen değer [GetDefaultThreads](#getdefaultthreads).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -269,5 +269,5 @@ Modülün kilit sayacını sıfır ulaştığında, modül kaldırılamıyor.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Modül sınıfları](../../atl/atl-module-classes.md)

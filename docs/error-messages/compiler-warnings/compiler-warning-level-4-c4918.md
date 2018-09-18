@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4ca1d8a33ac811a23fbb0ac3e438eeeb9c1acf8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cb4cc66359c28ffc23afa64da1e5bdbaadd8fb9b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296802"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023234"
 ---
 # <a name="compiler-warning-level-4-c4918"></a>Derleyici Uyarısı (düzey 4) C4918
-'character': pragma iyileştirme listesinde geçersiz bir karakter  
-  
- Bilinmeyen bir karakterle iyileştirme listesinde bulunan bir [en iyi duruma getirme](../../preprocessor/optimize.md) pragma deyimi.  
-  
- Örneğin, aşağıdaki deyim C4918 oluşturur:  
-  
-```  
-// C4918.cpp  
-// compile with: /W4  
-#pragma optimize("X", on) // C4918 expected  
-int main()  
-{  
-}  
+
+'character': pragram iyileştirme listesinde geçersiz karakter
+
+Bilinmeyen bir karakter iyileştirme listesinde bulunan bir [en iyi duruma getirme](../../preprocessor/optimize.md) pragma deyimi.
+
+Örneğin, aşağıdaki deyim C4918 oluşturur:
+
+```
+// C4918.cpp
+// compile with: /W4
+#pragma optimize("X", on) // C4918 expected
+int main()
+{
+}
 ```

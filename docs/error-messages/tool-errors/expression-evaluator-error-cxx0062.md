@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b812a269b5acc383cbdd185e06ecb92f1c63d2a4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 509d33be45f26f7dbf2de85969b90e253e0d5228
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295655"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019165"
 ---
 # <a name="expression-evaluator-error-cxx0062"></a>İfade Değerlendirici Hatası CXX0062
-Oluşturucu çağrıları desteklenmiyor  
-  
- Bir ifadenin bir oluşturucu için bir çağrı yapılır. İfadeler oluşturucular açık çağrı yapmak veya bir oluşturucu için bir çağrı gerektiren dönüşümleri olun.  
-  
- Bu hata için CAN0062 aynıdır.
+
+Oluşturucu çağrıları desteklenmiyor
+
+Bir ifade, bir oluşturucu için bir çağrı yapılır. İfadeler, açık oluşturucuları çağrı yapmak veya bir oluşturucu çağrısı gerekli dönüştürmeleri olun.
+
+Bu hata için CAN0062 aynıdır.

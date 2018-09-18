@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea99ca177a90281ca02e44265f603045b72845f5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c27466912956988a2396b8e3c52fc41ed2caa604
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294225"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016345"
 ---
 # <a name="compiler-warning-level-4-c4820"></a>Derleyici Uyarısı (düzey 4) C4820
-eklenen 'member_name' oluştur değerinden sonra 'bytes' bayt dolduruluyor  
-  
- Öğelerin sırasını ve türünü doldurma yapı sonuna eklemek derleyici neden oldu. Bkz: [Hizala](../../cpp/align-cpp.md) yapı doldurma hakkında daha fazla bilgi için.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.  
-  
- Aşağıdaki örnek C4820 oluşturur:  
-  
-```  
-// C4820.cpp  
-// compile with: /W4 /c  
-#pragma warning(default : 4820)   
-  
-// Delete the following 4 lines to resolve.  
-__declspec(align(2)) struct MyStruct {  
-   char a;  
-   int i;   // C4820  
-};  
-  
-// OK  
-#pragma pack(1)  
-__declspec(align(1)) struct MyStruct2 {  
-   char a;  
-   int i;  
-};  
+
+eklenen 'member_name' oluştur değerinden sonra 'bytes' bayt dolduruluyor
+
+Öğelerin sırasını ve türünü doldurma bir yapının sonuna eklemek derleyicinin neden oldu. Bkz: [hizalama](../../cpp/align-cpp.md) doldurma bir yapı içinde hakkında daha fazla bilgi için.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+Aşağıdaki örnek, C4820 oluşturur:
+
+```
+// C4820.cpp
+// compile with: /W4 /c
+#pragma warning(default : 4820)
+
+// Delete the following 4 lines to resolve.
+__declspec(align(2)) struct MyStruct {
+   char a;
+   int i;   // C4820
+};
+
+// OK
+#pragma pack(1)
+__declspec(align(1)) struct MyStruct2 {
+   char a;
+   int i;
+};
 ```

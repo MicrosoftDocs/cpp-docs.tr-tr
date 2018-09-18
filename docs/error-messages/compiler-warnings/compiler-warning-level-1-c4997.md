@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9b0484beafa364406c5f95ca87048edddaba3f1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ab199f4dd884c1a2371704a836546bdb43aabed6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290768"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026705"
 ---
 # <a name="compiler-warning-level-1-c4997"></a>Derleyici Uyarısı (düzey 1) C4997
-'class': COM arabirimi veya Sahte Arabirimi coclass'ı uygulamıyor  
-  
- Bir sınıf ile işaretli [coclass](../../windows/coclass.md) özniteliği bir arabirimini uygulamaz.  
-  
- Aşağıdaki örnek C4997 oluşturur:  
-  
-```  
-// C4997.cpp  
-// compile with: /WX  
-// to resolve this C4997, uncomment all code  
-#include <objbase.h>  
-  
-[ object ]  
-__interface I {  
-   HRESULT func();  
-};  
-  
-[ coclass ]  
-struct C /*: I*/ {  
-   /*  
-   HRESULT func() {  
-      return S_OK;  
-   }  
-   */  
-};   // C4997  
+
+'class': coclass COM arabirimi veya sahte arabirim uygulamıyor
+
+Bir sınıf ile işaretlenen [coclass'ı](../../windows/coclass.md) özniteliği bir arabirim değil uygulama.
+
+Aşağıdaki örnek, C4997 oluşturur:
+
+```
+// C4997.cpp
+// compile with: /WX
+// to resolve this C4997, uncomment all code
+#include <objbase.h>
+
+[ object ]
+__interface I {
+   HRESULT func();
+};
+
+[ coclass ]
+struct C /*: I*/ {
+   /*
+   HRESULT func() {
+      return S_OK;
+   }
+   */
+};   // C4997
 ```

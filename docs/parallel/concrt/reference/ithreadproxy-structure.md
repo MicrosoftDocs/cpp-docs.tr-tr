@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 220a02fca7a8de67d1f35743fa9f56e8499c88e0
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: d3be0a32de4e0e5b57471722ffa2cf8fcea5fd6c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690052"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027862"
 ---
 # <a name="ithreadproxy-structure"></a>IThreadProxy Yapısı
 Bir iş parçacığı için bir soyutlamayı yürütme. Yapılandırmanıza bağlı olarak `SchedulerType` oluşturduğunuz Zamanlayıcı ilke anahtarı, kaynak yöneticisi vermek, normal bir Win32 iş parçacığı veya bir kullanıcı modunda zamanlanabilen (UMS) iş parçacığı tarafından desteklenen bir iş parçacığı proxy'sini. UMS iş parçacıkları, sürümü Windows 7 64-bit işletim sistemlerinde desteklenen ve daha yüksek.  
@@ -77,8 +77,8 @@ virtual void SwitchOut(SwitchingProxyState switchState = Blocking) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `switchState`  
- Geçişi yürüten iş parçacığı proxy durumunu belirtir. Parametre türüdür `SwitchingProxyState`.  
+*switchState*<br/>
+Geçişi yürüten iş parçacığı proxy durumunu belirtir. Parametre türüdür `SwitchingProxyState`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım `SwitchOut` bir bağlam üzerinde yürütülen, herhangi bir nedenle sanal işlemci kökünden ilişkisini gerekiyorsa. Değere göre parametresi için geçirdiğiniz `switchState`, ve bir sanal işlemci kökünde Yürütülüyor olsun veya olmasın, çağrı ya hemen döndürür veya bağlamla ilişkilendirilen iş parçacığı proxy'sini engellemek. Çağırmak için bir hata olduğunu `SwitchOut` ayarlanan parametre ile `Idle`. Bunun yapılması sonucunda bir [invalid_argument](../../../standard-library/invalid-argument-class.md) özel durum.  
@@ -103,11 +103,11 @@ virtual void SwitchTo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `pContext`  
- İşbirliği ile geçmek için yürütme bağlamı.  
+*pContext*<br/>
+İşbirliği ile geçmek için yürütme bağlamı.  
   
- `switchState`  
- Geçişi yürüten iş parçacığı proxy durumunu belirtir. Parametre türüdür `SwitchingProxyState`.  
+*switchState*<br/>
+Geçişi yürüten iş parçacığı proxy durumunu belirtir. Parametre türüdür `SwitchingProxyState`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Tek bir yürütme bağlamında diğerine geçmek için bu yöntemi kullanın [Iexecutioncontext::Dispatch](iexecutioncontext-structure.md#dispatch) yöntemi ilk yürütme bağlamı. Yürütme bağlamı yöntemi ilişkilendirir `pContext` zaten ile ilişkili değilse, bir iş parçacığı proxy ile. Geçerli iş parçacığı proxy'sini sahipliğini için belirttiğiniz değere göre belirlenir `switchState` bağımsız değişken.  

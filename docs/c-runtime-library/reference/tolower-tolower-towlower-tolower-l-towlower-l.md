@@ -53,14 +53,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e399cb38fee83fee23f88732bb2186c4b501c152
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 49b52bd65439165ef8dd83917a0d75926caba518
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412634"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023672"
 ---
 # <a name="tolower-tolower-towlower-tolowerl-towlowerl"></a>tolower, _tolower, towlower, _tolower_l, _towlower_l
+
 Bir karakteri küçük harfe dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
@@ -91,17 +92,17 @@ int _towlower_l(
 Dönüştürülecek karakter.
 
 *Yerel ayar*<br/>
-Yerel ayarlara özgü çevirisi için kullanılacak yerel ayar.
+Yerel ayara özgü çeviri için kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamlar her bir kopyasını dönüştürür *c* alt örneğine dönüştürme mümkün ise ve sonucunu döndürür. Hiçbir değer döndürmeyen bir hata belirtmek üzere ayrılmış.
+Bu yordamların her biri bir kopyasını dönüştürür *c* dönüştürme mümkündür ve sonucu döndürür, küçük harfe. Dönüş değeri bir hatayı göstermek için ayrılmış.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Olası ve ilgili ise bu yordamlar her bir küçük harf belirli bir büyük harf dönüştürür. Büyük/küçük harfe dönüştürülmesini **towlower** yerel ayar özgüdür. Yalnızca geçerli yerel ilgili karakterleri durumda değiştirilir. Olmadan çalışır **_l** sonekini kullan ayarlanmış yerel ayar. Bu işlevleri sürümlerini **_l** soneki yerel bir parametre olarak geçirmesine ve ayarlanmış yerine kullanan yerel ayar. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Olası ve ilgili ise bu yordamların her biri belirli bir büyük harf küçük harfle dönüştürür. Büyük/küçük harfe dönüştürülmesi **towlower** yerel ayara özgü olan. Yalnızca karakterler geçerli yerel ayarına uygun durumda değiştirilir. İşlevlerin **_l** soneki kullanıp ayarlanmış yerel ayar. Sahip bu işlevlerin sürümleri **_l** soneki yerel ayar bir parametre olarak almak ve ayarlanmış yerine kullanan yerel ayar. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Sırayla **_tolower** beklenen sonuçları elde etmek için [__isascii](isascii-isascii-iswascii.md) ve [isupper](isupper-isupper-l-iswupper-iswupper-l.md) her ikisi de sıfır olmayan bir değer döndürmesi gerekir.
+Sırayla **_tolower** beklenen sonuçları elde etmek için [__isascii](isascii-isascii-iswascii.md) ve [isupper](isupper-isupper-l-iswupper-iswupper-l.md) her ikisi de sıfır olmayan döndürmelidir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -111,7 +112,7 @@ Sırayla **_tolower** beklenen sonuçları elde etmek için [__isascii](isascii-
 |**_totlower_l**|**_tolower_l**|**_mbctolower_l**|**_towlower_l**|
 
 > [!NOTE]
-> **_tolower_l** ve **_towlower_l** hiçbir yerel ayar bağımlılığı olan ve doğrudan çağrılması amaçlanmamıştır. Tarafından iç kullanım için sağlanan **_totlower_l**.
+> **_tolower_l** ve **_towlower_l** öğelerinin yerel bağımlılığı olan ve doğrudan çağrılmak için değildirler. Tarafından iç kullanım için sağlanan **_totlower_l**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -121,11 +122,11 @@ Sırayla **_tolower** beklenen sonuçları elde etmek için [__isascii](isascii-
 |**_tolower**|\<CType.h >|
 |**towlower**|\<CType.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örnekte bkz [işlevlere](../../c-runtime-library/to-functions.md).
+Örnekte bakın [işlevlere](../../c-runtime-library/to-functions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

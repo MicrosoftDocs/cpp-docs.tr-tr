@@ -19,14 +19,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2050a444ca228554cfbb3b6bba2693c55e53c4a2
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 87b8b6893c8fdd04374919ceff1d28a61bc315e5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217556"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024677"
 ---
 # <a name="rowset-object-interfaces"></a>Satır Kümesi Nesnesi Arabirimleri
+
 Aşağıdaki tabloda bir satır kümesi nesnesi için OLE DB tarafından tanımlanan zorunlu ve isteğe bağlı arabirimler gösterilir.  
   
 |Arabirim|Gerekli mi?|OLE DB Şablonları tarafından uygulanır?|  
@@ -56,7 +57,8 @@ Aşağıdaki tabloda bir satır kümesi nesnesi için OLE DB tarafından tanıml
 |[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816\(v=vs.85\))|İsteğe Bağlı|Evet|  
 |[IRowsetBookmark](/previous-versions/windows/desktop/ms714246\(v=vs.85\))|İsteğe Bağlı|Hayır|  
   
- Sihirbazın ürettiği satır kümesi nesnesi uygulayan `IAccessor`, `IRowset`, ve `IRowsetInfo` devralma yoluyla. `IAccessorImpl` Hem çıkış sütunları bağlar. `IRowset` Arabirimi öğesinden satır ve verileri işler. `IRowsetInfo` Arabirimi satır kümesi özellikleri işler.  
+Sihirbazın ürettiği satır kümesi nesnesi uygulayan `IAccessor`, `IRowset`, ve `IRowsetInfo` devralma yoluyla. `IAccessorImpl` Hem çıkış sütunları bağlar. `IRowset` Arabirimi öğesinden satır ve verileri işler. `IRowsetInfo` Arabirimi satır kümesi özellikleri işler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

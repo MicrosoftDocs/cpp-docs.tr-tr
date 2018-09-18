@@ -16,33 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3edd2f39848ea1db054dd4ceee8abf290dde7a74
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2eaa6ce8a1ca566fd3d585b5c457e1fb2829b0b0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597668"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016747"
 ---
 # <a name="linker-tools-error-lnk1181"></a>Bağlayıcı Araçları Hatası LNK1181
-'filename' giriş dosyası açılamıyor  
-  
- Bağlayıcı bulunamadı `filename` mevcut olmadığından veya yolu bulunamadı.  
-  
- Bazı yaygın nedenleri hatası LNK1181 eklemek için:  
-  
--   `filename` ek bir bağımlılık bağlayıcı satır, ancak dosya yok olarak başvuruluyor.  
-  
--   A **/Libpath** dizinini içeren ifadesi `filename` eksik.  
-  
- Yukarıdaki sorunları çözmek için bağlayıcı satırında başvurulan tüm dosyaların sistemde mevcut olduğundan emin olun.  Olduğundan da emin bir **/Libpath** deyimi için bağlı bağlayıcı dosyasını içeren her dizini. 
 
- Daha fazla bilgi için [bağlayıcı girişi olarak .lib dosyaları](../../build/reference/dot-lib-files-as-linker-input.md).
-  
- Başka bir olası LNK1181 gömülü boşluklarla uzun dosya adları tırnak içine alınmamıştı nedeni.  Bu durumda, bağlayıcı yalnızca ilk alana kadar bir dosya adı tanır ve ardından bir dosya uzantısı varsayılır. obj.  Uzun dosya adı tırnak içine bu duruma yönelik bir çözüm olan (yol ve dosya adı) tırnak işareti içine alınmış.  
+'filename' giriş dosyası açılamıyor
 
- İle derlerken [/P (dosyaya ön işleme)](../../build/reference/p-preprocess-to-a-file.md) seçeneği, LNK1181 sonuçlanabilir, çünkü bu seçenek .obj dosyaları oluşturulmasını bastırır.
-  
-  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [/LIBPATH (Ek Libpath)](../../build/reference/libpath-additional-libpath.md)
+Bağlayıcı bulunamadı `filename` mevcut olmadığından veya yolu bulunamadı.
+
+Bazı yaygın nedenleri hatası LNK1181 eklemek için:
+
+- `filename` ek bir bağımlılık bağlayıcı satır, ancak dosya yok olarak başvuruluyor.
+
+- A **/Libpath** dizinini içeren ifadesi `filename` eksik.
+
+Yukarıdaki sorunları çözmek için bağlayıcı satırında başvurulan tüm dosyaların sistemde mevcut olduğundan emin olun.  Olduğundan da emin bir **/Libpath** deyimi için bağlı bağlayıcı dosyasını içeren her dizini.
+
+Daha fazla bilgi için [bağlayıcı girişi olarak .lib dosyaları](../../build/reference/dot-lib-files-as-linker-input.md).
+
+Başka bir olası LNK1181 gömülü boşluklarla uzun dosya adları tırnak içine alınmamıştı nedeni.  Bu durumda, bağlayıcı yalnızca ilk alana kadar bir dosya adı tanır ve ardından bir dosya uzantısı varsayılır. obj.  Uzun dosya adı tırnak içine bu duruma yönelik bir çözüm olan (yol ve dosya adı) tırnak işareti içine alınmış.
+
+İle derlerken [/P (dosyaya ön işleme)](../../build/reference/p-preprocess-to-a-file.md) seçeneği, LNK1181 sonuçlanabilir, çünkü bu seçenek .obj dosyaları oluşturulmasını bastırır.
+
+
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[/LIBPATH (Ek Libpath)](../../build/reference/libpath-additional-libpath.md)

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26d2f74f1d189cf2be71d812dd8da01bb6fe8bdb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 36b2b0a71ef29edc7bbd7fec7b359c4a5a10df1c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225469"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018919"
 ---
 # <a name="compiler-error-c2487"></a>Derleyici Hatası C2487
-'tanımlayıcısı': üye DLL'si arabirimi sınıfının bildirilmemiş dll arabirimi  
-  
- Tam bir sınıf ya da belirli üyeleri DLL arabirimi ile bir DLL olmayan arabirimi sınıfın bildirebilirsiniz. DLL arabirimi ile bir sınıf bildirme ve o sınıfın DLL arabirimiyle üyesi bildirin.
+
+'identifier': dll arabirimi sınıfının üyesi dll arabirimi ile bildirilemez
+
+Tüm sınıf veya belirli üyelere, DLL arabirimi olmayan DLL arabirimi sınıfının bildirebilirsiniz. DLL arabirimi ile bir sınıf bildirme ve ardından bir üyesi DLL arabirimi ile söz konusu sınıfın bildirin.

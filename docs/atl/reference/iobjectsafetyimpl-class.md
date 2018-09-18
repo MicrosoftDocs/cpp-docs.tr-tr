@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae4aaffc76e12734038b0d325e7b540393c6cc6d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e760bab6fb3ad420fc6fe0f5c8a2ea6addc652ac
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754936"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019438"
 ---
 # <a name="iobjectsafetyimpl-class"></a>Iobjectsafetyımpl sınıfı
 
@@ -40,16 +40,16 @@ Bu sınıfın bir varsayılan uygulamayı sağlar `IObjectSafety` almak ve bir n
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T,DWORD dwSupportedSafety>  
+template <class T,DWORD dwSupportedSafety>
 class IObjectSafetyImpl
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `IObjectSafetyImpl`.
 
-*dwSupportedSafety*  
+*dwSupportedSafety*<br/>
 Denetim için desteklenen güvenlik seçeneklerini belirtir. Aşağıdaki değerlerden biri olabilir:
 
 - INTERFACESAFE_FOR_UNTRUSTED_CALLER tarafından tanımlanan arabirimi [SetInterfaceSafetyOptions](#setinterfacesafetyoptions) parametre `riid` komut dosyası için güvenli olarak yapılmalıdır.
@@ -139,5 +139,5 @@ Bkz: [IObjectSafety::SetInterfaceSafetyOptions](https://msdn.microsoft.com/libra
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IObjectSafety arabirimi](https://msdn.microsoft.com/library/aa768224.aspx)   
+[IObjectSafety arabirimi](https://msdn.microsoft.com/library/aa768224.aspx)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

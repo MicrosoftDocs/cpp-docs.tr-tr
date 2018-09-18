@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d999056d718d9c7aad93d08a99895caebbef539
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3f2377f48eb8102771705f2dedc67a7a15f6fa95
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229819"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031004"
 ---
 # <a name="compiler-error-c2592"></a>Derleyici Hatası C2592
-'class': 'base_class_2' 'base_class_1' devralınan ve belirtilen yeniden olamaz  
-  
- Diğer temel sınıflardan devralmayan temel sınıflar yalnızca belirtebilirsiniz. Bu durumda, yalnızca `base_class_1` belirtimi için gerekli `class` çünkü `base_class_1` zaten devralır `base_class_2`.
+
+'class': 'base_class_2' 'base_class_1' devralınan ve yeniden belirtilemez
+
+Diğer temel sınıftan devralmaz taban sınıfları yalnızca belirtebilirsiniz. Bu durumda, yalnızca `base_class_1` belirtimi gerekli `class` çünkü `base_class_1` zaten devralan `base_class_2`.

@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f2e448d5fa73c64e9abb66ef70e513bc9fa0728
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 0abc7e3b87ef23e6350b54c3f64b50fbcfdd5b07
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759252"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031151"
 ---
 # <a name="ienumonstlimpl-class"></a>Ienumonstlımpl sınıfı
 
@@ -40,25 +40,25 @@ Bu sınıf, bir C++ Standart Kitaplığı koleksiyonuna bağlı bir numaralandı
 
 ```
 template <class Base,
-    const IID* piid, class T, class Copy, class CollType>  
+    const IID* piid, class T, class Copy, class CollType>
 class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*temel*  
+*temel*<br/>
 Bir COM Numaralandırıcı. Bkz: [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) örneği.
 
-*piid*  
+*piid*<br/>
 Numaralandırıcı arabirimi arabirim kimliği için bir işaretçi.
 
-*T*  
+*T*<br/>
 Numaralandırıcı arabirim tarafından sunulan öğe türü.
 
-*kopyalama*  
+*kopyalama*<br/>
 A [kopyalama İlkesi sınıfı](../../atl/atl-copy-policy-classes.md).
 
-*CollType*  
+*CollType*<br/>
 Bir C++ Standart Kitaplığı kapsayıcı sınıfı.
 
 ## <a name="members"></a>Üyeler
@@ -114,10 +114,10 @@ HRESULT Init(
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnkForRelease*  
+*pUnkForRelease*<br/>
 [in] `IUnknown` İşaretçiyi nesnenin Numaralandırıcı yaşam süresi boyunca canlı olarak tutulmalıdır. Böyle bir nesne varsa, NULL geçirin.
 
-*Koleksiyon*  
+*Koleksiyon*<br/>
 Numaralandırılacak öğelerini tutan C++ Standart Kitaplığı kapsayıcıya bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -140,7 +140,7 @@ STDMETHOD(Clone)(Base** ppEnum);
 
 ### <a name="parameters"></a>Parametreler
 
-*ppEnum*  
+*ppEnum*<br/>
 [out] Yeni oluşturulan bir nesneye Numaralandırıcı arabirimde geçerli Numaralandırıcının kopyalandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -192,13 +192,13 @@ STDMETHOD(Next)(
 
 ### <a name="parameters"></a>Parametreler
 
-*celt*  
+*celt*<br/>
 [in] İstenen öğe sayısı.
 
-*rgelt*  
+*rgelt*<br/>
 [out] Öğeleri ile doldurulacak dizisi.
 
-*pceltFetched*  
+*pceltFetched*<br/>
 [out] Gerçekte döndürülen öğe sayısını *rgelt*. Bu kısa *celt* az olursa *celt* öğeleri listesinde kalır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -227,7 +227,7 @@ STDMETHOD(Skip)(ULONG celt);
 
 ### <a name="parameters"></a>Parametreler
 
-*celt*  
+*celt*<br/>
 [in] Geçilecek öğelerin sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri

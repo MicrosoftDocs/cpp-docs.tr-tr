@@ -16,23 +16,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 804039142e63af838ddd7e8a899d616657596f66
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 08b92dcf1e51a58255254f36df5c140ea36343f2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32383455"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023377"
 ---
 # <a name="operands-and-expressions"></a>İşlenenler ve İfadeler
-"İşlenen", bir işlecin üzerinde işlem yaptığı varlıktır. "İfade", şu işlemlerin bir bileşimini yapan işleçler ve işlenenler dizisidir:  
-  
--   Bir değeri hesaplar  
-  
--   Bir nesne veya işlevi atar  
-  
--   Yan etkiler oluşturur  
-  
- C içindeki işlenenler şunları içerir; sabitler, tanımlayıcılar, dizeler, işlev çağrıları, alt simge ifadeler, üye seçimi ifadeleri ve işlenenleri işleçlerle birleştirerek veya işlenenleri parantez içine alarak yapılan karmaşık ifadeler. Bu işlenen sözdizimi verilen [birincil ifadeler](../c-language/c-primary-expressions.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İfadeler ve Atamalar](../c-language/expressions-and-assignments.md)
+
+"İşlenen", bir işlecin üzerinde işlem yaptığı varlıktır. "İfade", şu işlemlerin bir bileşimini yapan işleçler ve işlenenler dizisidir:
+
+- Bir değeri hesaplar
+
+- Bir nesne veya işlevi atar
+
+- Yan etkiler oluşturur
+
+C içindeki işlenenler şunları içerir; sabitler, tanımlayıcılar, dizeler, işlev çağrıları, alt simge ifadeler, üye seçimi ifadeleri ve işlenenleri işleçlerle birleştirerek veya işlenenleri parantez içine alarak yapılan karmaşık ifadeler. Bu işlenenlerin sözdizimi verilen [birincil ifadeler](../c-language/c-primary-expressions.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İfadeler ve Atamalar](../c-language/expressions-and-assignments.md)

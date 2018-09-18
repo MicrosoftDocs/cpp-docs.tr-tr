@@ -17,20 +17,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c9f4b6fb0db87a77f433775fedea9880f3f24bd9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1ba8fb898930ef830857773a89cd80e4c43c59c4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302327"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028161"
 ---
 # <a name="expression-evaluator-error-cxx0052"></a>İfade Değerlendirici Hatası CXX0052
-üye işlev yok  
-  
- Üye işlevi bir kesme noktası belirtildi, ancak bulunamadı. Satır içi konumundaki işlev kesme noktası ayarlama, bu hataya neden olabilir.  
-  
- Dosyayla yeniden derleyin satır içi kullanım dışı zorla (/ Ob0) Bu işlev bir kesme noktası ayarlamak için.  
-  
- İfade tanımlanmadı işlevi çağrılır.  
-  
- Bu hata için CAN0052 aynıdır.
+
+üye işlev yok
+
+Bir üye işlevine bir kesme noktası belirtildi ancak bulunamadı. Bir işlevi satır içine alınmış yapılmış bir kesme noktası ayarlamak bu hataya neden olabilir.
+
+Dosyayı yeniden derleyin inlining'i kapalı zorla (/ Ob0) bu işlevdeki bir kesme noktası ayarlamak için.
+
+Bir ifade tanımlı değil bir işlev çağrılır.
+
+Bu hata için CAN0052 aynıdır.

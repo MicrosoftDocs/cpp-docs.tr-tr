@@ -1,5 +1,5 @@
 ---
-title: Yazın Conversions (C) | Microsoft Docs
+title: Türü Conversions (C) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,23 +18,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e06da627d18fa643cb64fda870c986264c573641
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 606ff0197f73a697aa3dad3bea779de80b060705
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387245"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020842"
 ---
 # <a name="type-conversions-c"></a>Tür Dönüştürmeleri (C)
-Tür dönüştürmeleri belirtilen işleci ve işlenen veya işleçleri türünü bağlıdır. Tür dönüştürmeleri aşağıdaki durumlarda gerçekleştirilir:  
-  
--   Bir türde bir değer atandığında farklı bir tür veya bir işleç değişken türünü, işlenen veya işlenen bir işlem gerçekleştirmeden önce dönüştürür  
-  
--   Bir türde bir değer farklı bir türe açıkça zaman atama  
-  
--   Bir değeri bir işleve bağımsız değişken olarak geçirilen veya ne zaman bir tür bir işleve döndürülür  
-  
- Bir karakter, kısa bir tamsayı ya da bir tamsayı bit alan tüm ya da imzalı olmadığını veya numaralandırma türü, bir nesnenin tamsayı kullanılabilir olduğunda bir ifadede kullanılabilir. Varsa bir `int` değeri dönüştürdükten sonra özgün türündeki tüm değerleri temsil edebilir `int`; Aksi takdirde dönüştürülmeden `unsigned int`. Bu işlem "tam sayı promosyon." olarak adlandırılır Tamsayı yükseltmeleri değerini korur. Diğer bir deyişle, yükseltme sonrasında değeri olarak yükseltmeden önce aynı olması sağlanır. Bkz: [olağan aritmetik dönüştürmeler](../c-language/usual-arithmetic-conversions.md) daha fazla bilgi için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İfadeler ve Atamalar](../c-language/expressions-and-assignments.md)
+
+Belirtilen işleç ve işleçler ve işlenen türü tür dönüştürmeleri bağlıdır. Tür dönüştürmeleri, aşağıdaki durumlarda gerçekleştirilir:
+
+- Bir türde bir değer atandığında bir değişken farklı bir tür ya da bir işleci, işlenen veya işlenen türü bir işlem gerçekleştirmeden önce dönüştürür
+
+- Bir türün bir değerini farklı bir türe açıkça olduğunda cast
+
+- Bir değer bir bağımsız değişken bir işleve geçirildiğinde veya bir tür bir işlevden döndürülür
+
+Bir karakter, kısa bir tamsayı ve tamsayı bit alanı, tüm ya da imzalı veya veya numaralandırma türünde bir nesne bir tamsayı kullanılabilir her yerde bir ifadede kullanılabilir. Varsa bir `int` değeri dönüştürdükten sonra özgün türünün tüm değerleri temsil edebilen `int`; Aksi takdirde dönüştürülür `unsigned int`. Bu işlem çağrılırken "integral yükseltme." İntegral yükseltmeler değerini korur. Diğer bir deyişle, yükseltmeden sonra bir değer olarak yükseltmeden önce aynı olması garanti edilir. Bkz: [olağan aritmetik dönüştürmeler](../c-language/usual-arithmetic-conversions.md) daha fazla bilgi için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İfadeler ve Atamalar](../c-language/expressions-and-assignments.md)

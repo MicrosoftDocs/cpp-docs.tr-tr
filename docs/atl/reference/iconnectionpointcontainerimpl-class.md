@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17a66946ced067e720a7e907bf39ffdd10327bc5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 27c1d945cf9e801ec1fe2346232aebcad559982a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760662"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019917"
 ---
 # <a name="iconnectionpointcontainerimpl-class"></a>Iconnectionpointcontainerımpl sınıfı
 
@@ -35,14 +35,14 @@ Bu sınıfın uyguladığı bir koleksiyonu yönetmek için bir bağlantı nokta
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<class T>  
+template<class T>
 class ATL_NO_VTABLE IConnectionPointContainerImpl 
    : public IConnectionPointContainer
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `IConnectionPointContainerImpl`.
 
 ## <a name="members"></a>Üyeler
@@ -100,5 +100,5 @@ Bkz: [IConnectionPointContainer::FindConnectionPoint](/windows/desktop/api/ocidl
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)   
+[IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

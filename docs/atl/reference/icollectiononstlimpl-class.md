@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bbfb34d34f6bd920744621042f5f3e09143e896
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d2b70e7332c5f0a24af80ddb5cfd14a8ecf146de
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751325"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025158"
 ---
 # <a name="icollectiononstlimpl-class"></a>Icollectiononstlımpl sınıfı
 
@@ -35,25 +35,25 @@ Bu sınıf, bir koleksiyon sınıfı tarafından kullanılan yöntemleri sağlar
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T, class CollType, class ItemType, class CopyItem, class EnumType>  
+template <class T, class CollType, class ItemType, class CopyItem, class EnumType>
 class ICollectionOnSTLImpl : public T
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 COM koleksiyon arabirimi.
 
-*CollType*  
+*CollType*<br/>
 Bir C++ Standart Kitaplığı kapsayıcı sınıfı.
 
-*Itemtype*  
+*Itemtype*<br/>
 Kapsayıcı arabirimi tarafından sunulan öğe türü.
 
-*CopyItem*  
+*CopyItem*<br/>
 A [kopyalama İlkesi sınıfı](../../atl/atl-copy-policy-classes.md).
 
-*EnumType*  
+*EnumType*<br/>
 A [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md)-uyumlu Numaralandırıcı sınıfı.
 
 ## <a name="members"></a>Üyeler
@@ -111,7 +111,7 @@ STDMETHOD(getcount)(long* pcount);
 
 ### <a name="parameters"></a>Parametreler
 
-*pcount*  
+*pcount*<br/>
 [out] Koleksiyondaki öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -128,10 +128,10 @@ STDMETHOD(get_Item)(long Index, ItemType* pvar);
 
 ### <a name="parameters"></a>Parametreler
 
-*Index*  
+*Index*<br/>
 [in] Koleksiyondaki bir öğe 1 tabanlı dizini.
 
-*pvar*  
+*pvar*<br/>
 [out] Öğesi için karşılık gelen *dizin*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -152,7 +152,7 @@ STDMETHOD(get__NewEnum)(IUnknown** ppUnk);
 
 ### <a name="parameters"></a>Parametreler
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] **IUnknown** yeni oluşturulan Numaralandırıcı nesnesi işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -173,5 +173,5 @@ CollType m_coll;
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ATLCollections örnek](../../visual-cpp-samples.md)   
+[ATLCollections örnek](../../visual-cpp-samples.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

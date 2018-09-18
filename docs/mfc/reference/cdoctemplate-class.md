@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5cbdb880c7165f314c004a7cbcad44dd3b76fd36
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: cd7e80d3c01cf84080ba2b5851da99584122ec4c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709845"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023949"
 ---
 # <a name="cdoctemplate-class"></a>CDocTemplate sınıfı
 Belge şablonları için temel işlevselliği tanımlayan soyut bir temel sınıf.  
@@ -167,17 +167,15 @@ CDocTemplate (
  Belge türü ile kullanılan kaynakları Kimliğini belirtir. Bu menü, simge, Hızlandırıcı tablosu ve dize kaynakları içerebilir.  
   
  '\N' karakteriyle ayrılmış en fazla yedi alt dizeler dize kaynağını oluşur ('\n' karakteri bir alt dizesi değilse, bir yer tutucu gereklidir; ancak, sonunda '\n' karakterler gerekli değildir) Bu alt dizeleri belge türü açıklar. Alt dizeler hakkında daha fazla bilgi için bkz: [GetDocString](#getdocstring). Bu dize kaynağı uygulama kaynak dosyası bulunamadı. Örneğin:  
-  
- `// MYCALC.RC`  
-  
- `STRINGTABLE PRELOAD DISCARDABLE`  
-  
- `BEGIN`  
-  
- `IDR_SHEETTYPE "\nSheet\nWorksheet\nWorksheets (*.myc)\n.myc\n MyCalcSheet\nMyCalc Worksheet"`  
-  
- `END`  
-  
+
+```RC
+// MYCALC.RC
+STRINGTABLE PRELOAD DISCARDABLE
+BEGIN
+  IDR_SHEETTYPE "\nSheet\nWorksheet\nWorksheets (*.myc)\n.myc\n MyCalcSheet\nMyCalc Worksheet"
+END
+```
+
  Unutmayın; dize '\n' karakteri ile başlar. ilk alt dizeyi MDI uygulamaları için kullanılmaz ve bu nedenle dahil olmadığından budur. Dize Düzenleyicisi'ni kullanarak bu dizeni düzenleyebilirsiniz; Tüm dize tek bir giriş dizesini Düzenleyicisi'nde, olarak değil yedi ayrı girişleri olarak görünür.  
   
  *pDocClass*  

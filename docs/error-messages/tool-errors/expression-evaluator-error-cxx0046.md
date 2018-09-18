@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3f8092f5233d1a0e1501c3c0ea16164b96c137e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 28cffba8a424d5a8cf2160dd6a5f8718259a54b0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296667"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022493"
 ---
 # <a name="expression-evaluator-error-cxx0046"></a>İfade Değerlendirici Hatası CXX0046
-üye işlevi için gerekli bağımsız değişken listesi  
-  
- İfade üye işlevi çağrıldı, ancak herhangi bir gerçek parametre belirtmedi.  
-  
- Bu hata için CAN0046 aynıdır.
+
+üye işlevi için gerekli bağımsız değişken listesi
+
+Bir ifade, bir üye işlev çağrıldı ancak herhangi bir gerçek parametre belirtmedi.
+
+Bu hata için CAN0046 aynıdır.

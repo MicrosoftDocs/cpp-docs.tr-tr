@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea378b2a875542eab431cf9cc30217f50c971af6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d5b9f350a3d3845649c9423a412ed5286cb13723
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236298"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026211"
 ---
 # <a name="compiler-error-c2793"></a>Derleyici Hatası C2793
-'belirteci': beklenmeyen belirteç aşağıdaki '::', tanımlayıcısı veya beklenen'işleci ' anahtar sözcüğü  
-  
- İzleyebileceğiniz yalnızca belirteçleri `__super::` tanımlayıcı ya da anahtar sözcük `operator`.  
-  
- Aşağıdaki örnek C2793 oluşturur  
-  
-```  
-// C2793.cpp  
-struct B {  
-   void mf();  
-};  
-  
-struct D : B {  
-   void mf() {  
-      __super::(); // C2793  
-   }  
-};  
+
+'token': arkasında beklenmeyen belirteç '::', tanımlayıcısı veya beklenen'operator ' anahtar sözcüğü
+
+İzleyebileceğiniz yalnızca belirteçleri `__super::` tanımlayıcı veya anahtar sözcüğü `operator`.
+
+Aşağıdaki örnek C2793 oluşturur
+
+```
+// C2793.cpp
+struct B {
+   void mf();
+};
+
+struct D : B {
+   void mf() {
+      __super::(); // C2793
+   }
+};
 ```

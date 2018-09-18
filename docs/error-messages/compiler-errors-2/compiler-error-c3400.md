@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 918b0e2198df68a6748166c13a492dadb45e2ede
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 35231ffda3a072b0720acc4c866dd2e3684c88fb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33258351"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024560"
 ---
 # <a name="compiler-error-c3400"></a>Derleyici Hatası C3400
-'constraint_1' ve 'constraint_2' ilişkili döngüsel kısıtlama bağımlılığı  
-  
- Derleyici döngüsel kısıtlamaları algıladı.  
-  
- Daha fazla bilgi için bkz: [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3400 oluşturur.  
-  
-```  
-// C3400.cpp  
-// compile with: /clr /c  
-generic<class T, class U>  
-where T : U  
-where U : T   // C3400  
-public ref struct R {};  
+
+'constraint_1' ve 'constraint_2' ile ilişkili döngüsel kısıtlama bağımlılığı
+
+Derleyici, döngüsel kısıtlamaları algıladı.
+
+Daha fazla bilgi için [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3400 oluşturur.
+
+```
+// C3400.cpp
+// compile with: /clr /c
+generic<class T, class U>
+where T : U
+where U : T   // C3400
+public ref struct R {};
 ```

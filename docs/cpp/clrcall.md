@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27564ce9c3cf795d7999745e82c733092bccd719
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 9631ac9beb0e6263ac1cf7e60e11e498aa4c7667
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39401863"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019763"
 ---
 # <a name="clrcall"></a>__clrcall
 
@@ -103,5 +103,6 @@ int main() {
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Bağımsız Değişkeni Geçirme ve Adlandırma Kuralları](../cpp/argument-passing-and-naming-conventions.md)  
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)
+
+[Bağımsız Değişkeni Geçirme ve Adlandırma Kuralları](../cpp/argument-passing-and-naming-conventions.md)<br/>
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

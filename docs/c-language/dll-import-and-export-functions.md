@@ -19,35 +19,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da456b7caca59fb874f4da87a342162b53c09319
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3da47c4d6c5af518660b5799b3bf9ae3f512a6fe
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384960"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029227"
 ---
 # <a name="dll-import-and-export-functions"></a>DLL İçeri ve Dışarı Aktarma İşlevleri
-**Microsoft özel**  
-  
- Bu konu hakkında en eksiksiz ve güncel bilgi bulunabilir [dllexport, dllimport](../cpp/dllexport-dllimport.md).  
-  
- **Dllimport** ve `dllexport` depolama sınıfı değiştiricileri olan C dil için Microsoft'a özgü uzantılar. Bu değiştiriciler, DLL arabirimini istemciye (yürütülebilir dosya veya başka bir DLL) açık olarak tanımlar. İşlevlerin `dllexport` olarak bildirilmesi, modül tanım (.DEF) dosyasına yönelik gereksinimi ortadan kaldırır. Aynı zamanda **dllimport** ve `dllexport` değiştiricileri veri ve nesneleri ile.  
-  
- **Dllimport** ve `dllexport` genişletilmiş öznitelik sözdizimi anahtar sözcüğü ile depolama sınıfı değiştiricileri kullanılan `__declspec`, bu örnekte gösterildiği gibi:  
-  
-```  
-#define DllImport   __declspec( dllimport )  
-#define DllExport   __declspec( dllexport )  
-  
-DllExport void func();  
-DllExport int i = 10;  
-DllExport int j;  
-DllExport int n;  
-```  
-  
- Genişletilmiş depolama sınıfı değiştiricileri sözdizimi hakkında ayrıntılı bilgi için bkz: [genişletilmiş depolama sınıfı öznitelikler](../c-language/c-extended-storage-class-attributes.md).  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C İşlev Tanımları](../c-language/c-function-definitions.md)
+
+**Microsoft'a özgü**
+
+Bu konuyla ilgili en eksiksiz ve güncel bilgiler bulunabilir [dllexport, dllimport](../cpp/dllexport-dllimport.md).
+
+**Dllimport** ve `dllexport` depolama sınıfı değiştiricileri C diline yönelik Microsoft'a özgü genişletmelerdir olan. Bu değiştiriciler, DLL arabirimini istemciye (yürütülebilir dosya veya başka bir DLL) açık olarak tanımlar. İşlevlerin `dllexport` olarak bildirilmesi, modül tanım (.DEF) dosyasına yönelik gereksinimi ortadan kaldırır. Ayrıca **dllimport** ve `dllexport` değiştiricilerini veri ve nesneleri.
+
+**Dllimport** ve `dllexport` genişletilmiş öznitelik sözdizimi anahtar sözcüğü ile depolama sınıfı değiştiricilere kullanılan `__declspec`, bu örnekte gösterildiği gibi:
+
+```
+#define DllImport   __declspec( dllimport )
+#define DllExport   __declspec( dllexport )
+
+DllExport void func();
+DllExport int i = 10;
+DllExport int j;
+DllExport int n;
+```
+
+Genişletilmiş depolama sınıfı değiştiricilere ilişkin sözdizimi hakkında ayrıntılı bilgi için bkz: [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md).
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C İşlev Tanımları](../c-language/c-function-definitions.md)

@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0426dd44cfcb8f655f3981802dfe23adcd436a0d
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: f1c8963fee0fa7718c6ea8fe67904613b2dca8ad
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688160"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020268"
 ---
 # <a name="acceleratorviewremoved-class"></a>accelerator_view_removed Sınıfı
-Windows zaman aşımı algılama ve kurtarma mekanizması nedeniyle bir temel alınan DirectX araması başarısız olmadığında oluşan özel durum.  
+Windows zaman aşımı algılama ve kurtarma mekanizmasına bağlı temel DirectX çağrısı başarısız olduğunda oluşturulan özel durum.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -47,7 +47,7 @@ class accelerator_view_removed : public runtime_exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[get_view_removed_reason](#get_view_removed_reason)|Nedenini belirten bir HRESULT hata kodu döndürüyor `accelerator_view` nesnenin kaldırma.|  
+|[get_view_removed_reason](#get_view_removed_reason)|Nedenini belirten bir HRESULT hata kodu döndürür `accelerator_view` nesnenin kaldırma.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -77,18 +77,18 @@ explicit accelerator_view_removed(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hatanın açıklaması.  
+*İl_eti*<br/>
+Hatanın açıklaması.  
   
- `_View_removed_reason`  
- Kaldırma nedenini belirten bir HRESULT hata kodu `accelerator_view` nesnesi.  
+*_View_removed_reason*<br/>
+Kaldırma nedenini belirten bir HRESULT hata kodu `accelerator_view` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Accelerator_view_removed sınıfının yeni bir örneği.  
+ Accelerator_view_removed sınıfı, yeni bir örneği.  
   
 ## <a name="get_view_removed_reason_method"></a> get_view_removed_reason 
 
-Nedenini belirten bir HRESULT hata kodu döndürüyor `accelerator_view` nesnenin kaldırma.  
+Nedenini belirten bir HRESULT hata kodu döndürür `accelerator_view` nesnenin kaldırma.  
   
 ### <a name="syntax"></a>Sözdizimi  
   

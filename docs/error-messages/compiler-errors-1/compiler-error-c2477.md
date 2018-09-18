@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca1212a664582f19e91fbf21bde36431ec715946
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4a3e8a9f76526ecc170b30436ff395d54f8d5395
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198033"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020179"
 ---
 # <a name="compiler-error-c2477"></a>Derleyici Hatası C2477
-'member': statik veri üyesi türetilmiş sınıf başlatılamıyor  
-  
- Statik veri üyesi bir şablon sınıfı yanlış başlatıldı. ISO C++ Standart uygun için Visual Studio .NET 2003 önce Visual C++ Derleyici sürümleriyle önemli bir değişiklik budur.  
-  
- Aşağıdaki örnek C2477 oluşturur:  
-  
-```  
-// C2477.cpp  
-// compile with: /Za /c  
-template <class T>  
-struct S {  
-   static int n;  
-};  
-  
-struct X {};  
-struct A: S<X> {};  
-  
-int A::n = 0;   // C2477  
-  
-template<>  
-int S<X>::n = 0;  
+
+'member': statik veri üyesi türetilmiş sınıf aracılığıyla başlatılamaz
+
+Bir şablon sınıfının statik veri üyesine hatalı olarak başlatıldı. ISO C++ standardı uymak için bir Visual Studio .NET 2003 önce Visual C++ Derleyici sürümleri ile değişiklik budur.
+
+Aşağıdaki örnek, C2477 oluşturur:
+
+```
+// C2477.cpp
+// compile with: /Za /c
+template <class T>
+struct S {
+   static int n;
+};
+
+struct X {};
+struct A: S<X> {};
+
+int A::n = 0;   // C2477
+
+template<>
+int S<X>::n = 0;
 ```

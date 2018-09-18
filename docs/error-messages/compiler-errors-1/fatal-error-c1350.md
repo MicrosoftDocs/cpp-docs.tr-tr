@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa392805c85e5158fa90618638d6c9075b4fa91c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5e3ae307f316cd3d7a7921c6c6a246a2eae4c83d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198449"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023221"
 ---
 # <a name="fatal-error-c1350"></a>Önemli hata C1350
-DLL 'dll' yüklenirken hata oluştu: dll bulunamadı  
-  
- Denenen işlem destekleyen DLL bulunamadı.  
-  
- Bu, yükleme ile ilgili bir sorun olduğunu gösterir ve ürün CD'SİNDEN DLL yeniden yüklemeniz gerekir.
+
+DLL 'dll' yüklenirken hata oluştu: dll bulunamadı
+
+Denenen işlem destekleyen knihovna DLL nebyla nalezena.
+
+Bu yüklemenizle ilgili bir sorunu gösterir ve kendi ürün CD'SİNDEN DLL'yi yeniden yüklemeniz gerekir.

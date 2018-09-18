@@ -16,30 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f694f9461c923d70040370819eaca6a18568c99b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d3cae3c038e4af4a58756ad7387472c081bf4c3d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33258842"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016799"
 ---
 # <a name="compiler-error-c3399"></a>Derleyici Hatası C3399
-'type': bağımsız bir genel parametre örneği oluşturulurken sağlayamaz  
-  
- Belirttiğinizde `gcnew()` kısıtlaması, belirttiğiniz kısıtlama türü bir parametresiz oluşturucuya sahip. Bu nedenle, bu tür için örnek oluşturmak ve bir parametre geçirin girişimi için hatadır.  
-  
- Bkz: [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md) daha fazla bilgi için.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3399 oluşturur.  
-  
-```  
-// C3399.cpp  
-// compile with: /clr /c  
-generic <class T>   
-where T : gcnew()  
-void f() {  
-   T t = gcnew T(1);   // C3399  
-   T t2 = gcnew T();   // OK  
-}  
+
+'type': bir genel parametrenin örneği oluşturulurken bağımsız değişken sağlanamaz
+
+Belirttiğinizde `gcnew()` kısıtlaması, belirttiğiniz kısıtlama türü parametresiz bir oluşturucu gerekir. Bu nedenle, bu tür örneği ve bir parametre geçirin denemek için bir hatadır.
+
+Bkz: [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md) daha fazla bilgi için.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3399 oluşturur.
+
+```
+// C3399.cpp
+// compile with: /clr /c
+generic <class T>
+where T : gcnew()
+void f() {
+   T t = gcnew T(1);   // C3399
+   T t2 = gcnew T();   // OK
+}
 ```

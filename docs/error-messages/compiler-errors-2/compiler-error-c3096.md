@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 781d032875a0edc042eb8f8031d5d035c1ab40eb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 84d2b1a51073c49f0300e6b43a4575309a0dfc17
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243786"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026354"
 ---
 # <a name="compiler-error-c3096"></a>Derleyici Hatası C3096
-'öznitelik': yalnızca öznitelik sınıfları veri üyeleri özniteliği izin verilir  
-  
- Bir öznitelik yanlış uygulandı.  
-  
- Daha fazla bilgi için bkz: [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).
+
+'attribute': özniteliğe yalnızca öznitelik sınıflarının veri üyelerinde izin veriliyor
+
+Bir öznitelik yanlış uygulandı.
+
+Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).

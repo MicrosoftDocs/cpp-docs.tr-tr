@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 78ff500d050fbb646dd97fc898279712fb750d9e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8c18d6f9b502e818992097c3042689cf66457792
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197617"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024781"
 ---
 # <a name="fatal-error-c1045"></a>Önemli hata C1045
-Derleyici sınırı: bağlantı belirtimleri çok fazla iç içe  
-  
- İç içe geçmiş externals derleyici sınırı aşıyor. İç içe geçmiş externals izin verilir dış bağlantı türüyle gibi `extern` "C++". Hatayı gidermek için iç içe geçmiş externals sayısını azaltın.
+
+Derleyici sınırı: bağlantı belirtimleri çok derin iç içe
+
+İç içe geçmiş dışlar derleyici sınırı aşıyor. İç içe geçmiş dışlar izin verilir dış bağlantı türüyle gibi `extern` "C++". Hatayı gidermek için iç içe geçmiş dışlar sayısını azaltın.

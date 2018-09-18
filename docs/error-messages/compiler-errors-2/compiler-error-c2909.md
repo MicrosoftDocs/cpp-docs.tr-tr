@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9bb5252c0122f5610348c5fb154fedd1869d131e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f611a026d0a969f49eaf2dcd93ba081bae052d10
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245449"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030891"
 ---
 # <a name="compiler-error-c2909"></a>Derleyici Hatası C2909
-'tanımlayıcısı': işlev şablonunun açık örnekleme dönüş türü gerektirir  
-  
- Bir açık örnekleme işlevi şablonu dönüş türüne açık belirtilmesini gerektiriyor. Örtük dönüş türü belirtimi çalışmaz.  
-  
- Aşağıdaki örnek C2909 oluşturur:  
-  
-```  
-// C2909.cpp  
-// compile with: /c  
-template<class T> int f(T);  
-template f<int>(int);         // C2909  
-template int f<int>(int);   // OK  
+
+'identifier': işlev şablonunun açıkça örneğinin oluşturulması dönüş türü gerektirir
+
+Bir işlev şablonunun açıkça örneğinin kendi dönüş türünün açık belirtimi gerektirir. Örtük dönüş türü belirtimi çalışmaz.
+
+Aşağıdaki örnek, C2909 oluşturur:
+
+```
+// C2909.cpp
+// compile with: /c
+template<class T> int f(T);
+template f<int>(int);         // C2909
+template int f<int>(int);   // OK
 ```

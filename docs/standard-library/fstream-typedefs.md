@@ -13,12 +13,12 @@ f1_keywords:
 - fstream/std::wifstream
 - fstream/std::wofstream
 ms.assetid: 8dddef2d-7f17-42a6-ba08-6f6f20597d23
-ms.openlocfilehash: 49c5af53c6d174e7f87f75ad8970726c526db714
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: dcae38b92d4740758bad00bc6e07555654dfd973
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962981"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018060"
 ---
 # <a name="ltfstreamgt-typedefs"></a>&lt;fstream&gt; tür tanımları
 
@@ -66,21 +66,17 @@ typedef basic_ifstream<char, char_traits<char>> ifstream;
 
 Şablon sınıfı için bir eşanlamlı türüdür [basic_ifstream](../standard-library/basic-ifstream-class.md), char türü ile varsayılan karakter nitelikleri öğeler için özelleştirilmiş. Bir örnek verilmiştir
 
-`using namespace std;`
+```cpp
+using namespace std;
 
-`ifstream infile("existingtextfile.txt");`
+ifstream infile("existingtextfile.txt");
 
-`if (!infile.bad())`
-
-`{`
-
-`// Dump the contents of the file to cout.`
-
-`cout << infile.rdbuf();`
-
-`infile.close();`
-
-`}`
+if (!infile.bad())
+{
+    // Dump the contents of the file to cout.
+    cout << infile.rdbuf();infile.close();
+}
+```
 
 ## <a name="ofstream"></a>  ofstream
 

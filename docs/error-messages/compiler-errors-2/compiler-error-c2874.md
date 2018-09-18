@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aebe8054c68e1474a2597da5bda7bb985eb205dd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: da285053507865d88fef31fac485c2a77a918d52
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243293"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031099"
 ---
 # <a name="compiler-error-c2874"></a>Derleyici Hatası C2874
-using bildirimi 'simgesi' birden çok bildirim neden olur.  
-  
- Bildirim iki kez tanımlanması için aynı öğeyi neden olur.  
-  
- Aşağıdaki örnek C2874 oluşturur:  
-  
-```  
-// C2874.cpp  
-namespace Z {  
-   int i;  
-}  
-  
-int main() {  
-   int i;  
-   using Z::i;   // C2874, i already declared  
-}  
+
+'symbol' birden çok bildirimi bildirim kullanımı neden olur
+
+Bildirimi, aynı öğesini iki kez tanımlanmış olması neden olur.
+
+Aşağıdaki örnek, C2874 oluşturur:
+
+```
+// C2874.cpp
+namespace Z {
+   int i;
+}
+
+int main() {
+   int i;
+   using Z::i;   // C2874, i already declared
+}
 ```

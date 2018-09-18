@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b0f3ec99e5d528967fb7b02bc9d198402b16e18
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c0048d1493a540bfb460d03ae514b6b191ead39d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33258302"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016916"
 ---
 # <a name="compiler-error-c3609"></a>Derleyici Hatası C3609
-'member': korumalı veya son bir işlev sanal olmalıdır  
-  
- [Korumalı](../../windows/sealed-cpp-component-extensions.md) ve [son](../../cpp/final-specifier.md) anahtar sözcükler yalnızca bir sınıf, yapı veya üye işlevi işaretlenmiş izin `virtual`.  
-  
- Aşağıdaki örnek C3609 oluşturur:  
-  
-```  
-// C3609.cpp  
-// compile with: /clr /c  
-ref class C {  
-   int f() sealed;   // C3609  
-   virtual int f2() sealed;   // OK  
-};  
-```  
+
+'member': sealed veya son bir işlev sanal olmalıdır
+
+[Korumalı](../../windows/sealed-cpp-component-extensions.md) ve [son](../../cpp/final-specifier.md) anahtar sözcükler yalnızca bir sınıf, yapı veya üye işlev işaretlenmiş izin `virtual`.
+
+Aşağıdaki örnek, C3609 oluşturur:
+
+```
+// C3609.cpp
+// compile with: /clr /c
+ref class C {
+   int f() sealed;   // C3609
+   virtual int f2() sealed;   // OK
+};
+```

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 867904067add0b18981b5b8c71d7c6d8db3434ae
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7a392cbdbd601d2ea9ebc3d3ca9be37ed6029185
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198475"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028603"
 ---
 # <a name="fatal-error-c1312"></a>Önemli hata C1312
-İşlev içinde çok fazla koşullu dal. Basitleştirin veya kaynak kodu yeniden düzenleyin.  
-  
- Yığın bellek tükenmesinden olmadan işlemeye derleyici karmaşık kodudur.  Kodunuzu basitleştirin.
+
+İşlevi çok fazla sayıda koşullu dallanma. Basitleştirin veya kaynak kodu yeniden düzenleyin.
+
+Kod çok karmaşık derleyicinin yığın bellek bitmesi olmadan işlem.  Kodunuzu basitleştirin.

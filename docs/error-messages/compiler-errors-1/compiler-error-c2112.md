@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f050a4b9e8b188c5c44534972e9c94d89020351
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c9bbb2a2cc65ae5b9216344e5d2e1a6cc3e13b93
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33164651"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018563"
 ---
 # <a name="compiler-error-c2112"></a>Derleyici Hatası C2112
-'-': işaretçi çıkarması tamsayı veya işaretçi işleneni gerektirir  
-  
- Farklı türler noktası işaretçileri çıkarmak için girişimde bulunuldu.
+
+'-': işaretçi çıkarma integral veya işaretçi işlenen gerekir
+
+Diğer türlere işaret eden işaretçilerin çıkarılması için girişimde bulunuldu.

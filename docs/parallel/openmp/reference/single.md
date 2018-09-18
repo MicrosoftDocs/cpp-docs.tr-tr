@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ff1a255933b79d39b6eedbb9362ff76a34e0f8a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8a57d93d8d2be84a470dd48d1ca6f9b04010182f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716995"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020985"
 ---
 # <a name="single"></a>single
 Kodun bir bölümünü tek bir iş parçacığı üzerinde mutlaka ana iş parçacığının yürütülmesi gereken belirtmenize olanak sağlar.  
@@ -37,7 +37,7 @@ Kodun bir bölümünü tek bir iş parçacığı üzerinde mutlaka ana iş parç
   
 #### <a name="parameters"></a>Parametreler  
 
-`clause`  
+*Yan tümcesi*<br/>
 (İsteğe bağlı) Sıfır veya daha fazla tümceciği. Tarafından desteklenen yan tümce listesi için Açıklamalar bölümüne bakın **tek**.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -51,13 +51,13 @@ Kodun bir bölümünü tek bir iş parçacığı üzerinde mutlaka ana iş parç
   
 -   [private](../../../parallel/openmp/reference/private-openmp.md)  
   
- [Ana](../../../parallel/openmp/reference/master.md) yönergesi, kodun bir bölümünden yalnızca ana iş parçacığı üzerinde yapılmalıdır belirtmenize olanak sağlar.  
+[Ana](../../../parallel/openmp/reference/master.md) yönergesi, kodun bir bölümünden yalnızca ana iş parçacığı üzerinde yapılmalıdır belirtmenize olanak sağlar.  
   
  Daha fazla bilgi için [2.4.3 tek oluşturmak](../../../parallel/openmp/2-4-3-single-construct.md).  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // omp_single.cpp  
 // compile with: /openmp   
 #include <stdio.h>  

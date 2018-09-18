@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4546e576ced8d57a35c4c4861f29824a8d91d910
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 77f440bf282d6159af3a96bfeb1aa7db8941e87b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228350"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022805"
 ---
 # <a name="compiler-error-c2523"></a>Derleyici Hatası C2523
-' sınıfı:: ~ tanımlayıcısı ': yıkıcı/sonlandırıcıyı etiketi uyuşmazlığı  
-  
- Yok Edicisi adı tarafından tilde öncesinde sınıf adı olmalıdır (`~`). Oluşturucu ve yıkıcı sınıfı aynı ada sahip yalnızca üyeleridir.  
-  
- Aşağıdaki örnek C2523 oluşturur:  
-  
-```  
-// C2523.cpp  
-// compile with: /c  
-class A {  
-   ~B();    // C2523  
-   ~A();   // OK  
-};  
+
+' sınıf:: ~ tanımlayıcı ': yıkıcı/Sonlandırıcı etiketi uyuşmazlığı
+
+Yok edici adını bir tilde işareti tarafından öncesinde sınıf adı olmalıdır (`~`). Oluşturucu ve yıkıcı sınıfı aynı ada sahip yalnızca üyeleridir.
+
+Aşağıdaki örnek, C2523 oluşturur:
+
+```
+// C2523.cpp
+// compile with: /c
+class A {
+   ~B();    // C2523
+   ~A();   // OK
+};
 ```

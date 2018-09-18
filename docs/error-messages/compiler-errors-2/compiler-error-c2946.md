@@ -16,24 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9485f424306d66514c9e919f13ff5988f8b0d1f2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 91af822dd21adf9125162ed997e71ed548c863ac
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247077"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027693"
 ---
 # <a name="compiler-error-c2946"></a>Derleyici Hatası C2946
-Açık örnekleme; 'class' Şablon sınıfı uzmanlık değil  
-  
- Açıkça nontemplated sınıfı örneği oluşturulamıyor.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2946 oluşturur.  
-  
-```  
-// C2946.cpp  
-class C {};  
-template C;  // C2946  
-int main() {}  
+
+Açık örnek oluşturma; 'class' Şablon sınıfı bir özelleştirmeye değil
+
+Açıkça bir şablonu oluşturulmamış sınıfın örneği oluşturulamıyor.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2946 oluşturur.
+
+```
+// C2946.cpp
+class C {};
+template C;  // C2946
+int main() {}
 ```

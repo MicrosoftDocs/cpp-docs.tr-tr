@@ -16,47 +16,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 327c1526b59f84064c9ba0e444341d8795fb98a7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d543634bf91411fcaa6acaa0b53c8b4820c6c021
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33268872"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018411"
 ---
 # <a name="compiler-error-c3761"></a>Derleyici Hatası C3761
-'function': 'retval' yalnızca bir işlevi son bağımsız değişken görünür  
-  
- [Retval](../../windows/retval.md) özniteliği, listedeki son bağımsız değişken değil bir işlev bağımsız değişkeni üzerinde kullanıldı.  
-  
- Aşağıdaki örnek C3761 oluşturur:  
-  
-```  
-// C3761.cpp  
-#define _ATL_ATTRIBUTES 1  
-#include <atlbase.h>  
-#include <atlcom.h>  
-  
-[ module(name=test) ];  
-  
-[dispinterface]  
-__interface I  
-{  
-   [id(1)] HRESULT func([out, retval] int* i, [in] int j);  
-   // try the following line instead  
-   // [id(1)] HRESULT func([in] int i, [out, retval] int* j);  
-};  
-  
-[coclass]  
-struct C : I {   // C3761  
-   HRESULT func(int* i, int j)  
-   // try the following line instead  
-   // HRESULT func(int j, int* i)  
-   {  
-      return S_OK;  
-   }  
-};  
-  
-int main()  
-{  
-}  
+
+'function': 'retval' yalnızca işlevin son bağımsız değişken üzerinde görünür
+
+[Retval](../../windows/retval.md) özniteliği, listedeki son bağımsız değişken olmayan işlev bağımsız değişkenleri üzerinde kullanıldı.
+
+Aşağıdaki örnek, C3761 oluşturur:
+
+```
+// C3761.cpp
+#define _ATL_ATTRIBUTES 1
+#include <atlbase.h>
+#include <atlcom.h>
+
+[ module(name=test) ];
+
+[dispinterface]
+__interface I
+{
+   [id(1)] HRESULT func([out, retval] int* i, [in] int j);
+   // try the following line instead
+   // [id(1)] HRESULT func([in] int i, [out, retval] int* j);
+};
+
+[coclass]
+struct C : I {   // C3761
+   HRESULT func(int* i, int j)
+   // try the following line instead
+   // HRESULT func(int j, int* i)
+   {
+      return S_OK;
+   }
+};
+
+int main()
+{
+}
 ```

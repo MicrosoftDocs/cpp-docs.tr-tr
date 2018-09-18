@@ -16,27 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f9b9763dda5bdfd4e3af68a282579cdb42c3e2d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 269cc2c22d260b058f16263e4ee73e4a480920eb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248117"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023403"
 ---
 # <a name="compiler-error-c3133"></a>Derleyici Hatası C3133
-Özniteliği için C++ varargs uygulanamaz  
-  
- Bir öznitelik yanlış uygulandı. Değişken bağımsız değişkenler temsil eden bir üç nokta öznitelikleri uygulanamaz.  
-  
- Daha fazla bilgi için bkz: [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3133 oluşturur.  
-  
-```  
-// C3133.cpp  
-// compile with: /clr /c  
-ref struct MyAttr: System::Attribute {};   
-void Func([MyAttr]...);   // C3133  
-void Func2([MyAttr] int i);   // OK  
+
+Öznitelikler C++ VARARG'larına uygulanamaz
+
+Bir öznitelik yanlış uygulandı. Öznitelikleri değişken bağımsız değişkenleri temsil eden bir nokta için uygulanabilir değil.
+
+Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3133 oluşturur.
+
+```
+// C3133.cpp
+// compile with: /clr /c
+ref struct MyAttr: System::Attribute {};
+void Func([MyAttr]...);   // C3133
+void Func2([MyAttr] int i);   // OK
 ```

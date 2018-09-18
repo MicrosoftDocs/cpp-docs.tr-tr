@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e393c657e12f84d3cadfacd469e35e3472a39d0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6dc986c98028530b8a5d4d25047305fd1a8effef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33281797"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027289"
 ---
 # <a name="compiler-warning-level-1-c4269"></a>Derleyici Uyarısı (düzey 1) C4269
-'tanımlayıcısı': oluşturulan derleyici varsayılan kurucu ile başlatılmış 'const' otomatik veri güvenilir olmayan sonuçlar üretir  
-  
- A **const** otomatik Önemsiz olmayan bir sınıfın örneğini derleyicinin ürettiği varsayılan kurucu ile başlatıldı.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4269.cpp  
-// compile with: /c /LD /W1  
-class X {  
-public:  
-   int m_data;  
-};  
-  
-void g() {  
-   const X x1;   // C4269  
-};  
-```  
-  
- Bu sınıfın örneğini ilk değeri yığında oluşturulan beri `m_data` herhangi bir şey olabilir. Ayrıca, beri olduğu bir **const** örneği, değeri `m_data` hiçbir zaman değiştirilemez.
+
+'identifier': derleyicinin ürettiği varsayılan oluşturucuyla başlatılan 'const' otomatik verileri güvenilmez sonuçlar üretiyor
+
+A **const** otomatik Önemsiz olmayan bir sınıf örneği, derleyicinin ürettiği varsayılan oluşturucuyla başlatılır.
+
+## <a name="example"></a>Örnek
+
+```
+// C4269.cpp
+// compile with: /c /LD /W1
+class X {
+public:
+   int m_data;
+};
+
+void g() {
+   const X x1;   // C4269
+};
+```
+
+Yığında, başlangıç değeri oluşan bu sınıf örneği oluşturulan bu yana `m_data` herhangi bir şey olabilir. Ayrıca, beri olduğu bir **const** örneği, değerini `m_data` hiçbir zaman değiştirilebilir.

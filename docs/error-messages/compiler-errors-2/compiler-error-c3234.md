@@ -16,26 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10964afb48e4a83830d0eb48a5f2147906a3543e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f701eb20743925913bf0eab754f2788e8bd3a9b6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246023"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017058"
 ---
 # <a name="compiler-error-c3234"></a>Derleyici Hatası C3234
-Genel bir sınıf bir genel tür parametresi türetilemez  
-  
- Genel bir sınıf bir genel tür parametresi devralır olamaz.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3234 oluşturur.  
-  
-```  
-// C3234.cpp  
-// compile with: /clr /c  
-generic <class T>  
-public ref class C : T {};   // C3234  
-// try the following line instead  
-// public ref class C {};  
+
+Genel sınıf bir genel tür parametresinden türetilemez
+
+Genel sınıf bir genel tür parametresinden devralamaz.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3234 oluşturur.
+
+```
+// C3234.cpp
+// compile with: /clr /c
+generic <class T>
+public ref class C : T {};   // C3234
+// try the following line instead
+// public ref class C {};
 ```

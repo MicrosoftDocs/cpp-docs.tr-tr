@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a03dd56320b948d47c765f253bf3e6b706ed2b56
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: d050625121314526dff687822b97d7b19475a5e8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33335510"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025872"
 ---
 # <a name="ltseegt-visual-c"></a>&lt;bkz:&gt; (Visual C++)
-\<Bkz > etiketi metin içindeki bir bağlantıdan belirtmenize olanak sağlar. Kullanım [ \<seealso >](../ide/seealso-visual-cpp.md) bir Ayrıca bkz. bölümünde görünen isteyebilirsiniz metin belirtmek için.  
+\<Bakın > etiketi bağlantı metninde belirtmenize olanak sağlar. Kullanım [ \<seealso >](../ide/seealso-visual-cpp.md) ayrıca bölümü görünmesini istediğiniz metni belirtmek için.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,20 +35,20 @@ ms.locfileid: "33335510"
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `member`  
- Bir üye ya da geçerli derleme ortamından çağrılacak kullanılabilir alan başvuru.  Ad, tek veya çift tırnak işaretleri içine alın.  
+*Üyesi*<br/>
+Bir üye veya geçerli derleme ortamdan çağrılacak kullanılabilir alan başvuru.  Ad, tek veya çift tırnak içine alın.  
   
- Verilen code öğesi var ve çözümler derleyici denetler `member` çıktı XML öğesi adı.  Derleyici bulamadı, bir uyarı verir `member`.  
+ Derleyici belirli kod öğesi var. çözümler olup olmadığını denetler ve `member` çıktı XML öğesi adı.  Değil bulamazsa, derleyici bir uyarı verir `member`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İle derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) bir dosyaya işlem belgesi açıklamaları için.  
+ Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.  
   
  Bkz: [ \<Özet >](../ide/summary-visual-cpp.md) kullanma örneği için \<bakın >.  
   
- Visual C++ derleyicisi belge açıklamaları bir geçiş cref başvurularında çözümlemeye çalışır.  Bu nedenle, C++ arama kurallarını kullanarak, bir simge başvuru işaretlenir derleyici tarafından bulunmaması halinde olarak çözümlenmemiş. Bkz: [ \<seealso >](../ide/seealso-visual-cpp.md) daha fazla bilgi için.  
+ Visual C++ derleyicisi, belge yorumlarını bir geçiş cref başvuruları çözümlemek dener.  Bu nedenle, C++ arama kurallarını kullanarak, bir sembol başvurusu işaretlenir derleyici tarafından bulunamadı olarak çözümlenmemiş. Bkz: [ \<seealso >](../ide/seealso-visual-cpp.md) daha fazla bilgi için.  
   
 ## <a name="example"></a>Örnek  
- Derleyici başvurusu çözümleyecek şekilde aşağıdaki örnek, genel bir tür cref referansı nasıl yapabileceğiniz gösterir.  
+ Derleyicinin başvuru giderecek şekilde, aşağıdaki örnek bir genel tür referansı cref nasıl kullanabileceğinizi gösterir.  
   
 ```  
 // xml_see_cref_example.cpp  

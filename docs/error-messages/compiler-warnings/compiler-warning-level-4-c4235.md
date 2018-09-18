@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc63640bc58caefa281b9207b9796ffdf387a7a8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c9e709017e51101efe53a8697bb145014f200871
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292548"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031827"
 ---
 # <a name="compiler-warning-level-4-c4235"></a>Derleyici Uyarısı (düzey 4) C4235
-kullanılan standart olmayan uzantısı: Bu mimarisine desteklenmeyen 'anahtar sözcüğü' anahtar sözcüğü  
-  
- Derleyici kullandığınız anahtar sözcüğü desteklemez.  
-  
- Bu uyarı için bir hata otomatik olarak yükseltilir. Bu davranışı değiştirmek istiyorsanız, kullanmak [#pragma Uyarısı](../../preprocessor/warning.md). Örneğin, bir düzey 2 uyarı C4235 yapmak için aşağıdaki kod satırını kullanın.  
-  
-```  
-#pragma warning(2:4235)  
-```  
-  
- Kaynak kodu dosyasının içinde.
+
+Standart olmayan uzantı kullanıldı: 'anahtar sözcüğü' anahtar sözcüğü bu mimaride desteklenmiyor
+
+Derleyici, kullanılan anahtar sözcüğü desteklemez.
+
+Bu uyarı, bir hata için otomatik olarak yükseltilir. Bu davranışı değiştirmek istiyorsanız, [#pragma Uyarısı](../../preprocessor/warning.md). Örneğin, bir düzey 2 uyarı C4235 yapmak için aşağıdaki kod satırını kullanın.
+
+```
+#pragma warning(2:4235)
+```
+
+Kaynak kodu dosyanızda.

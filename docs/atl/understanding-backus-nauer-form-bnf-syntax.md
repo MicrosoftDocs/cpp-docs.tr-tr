@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9acb054c7d991e2d9e98df3ce9bba8c7093f281a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e615068580bcc9078959cc6cdd7831d05b5a4acd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761488"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020881"
 ---
 # <a name="understanding-backus-nauer-form-bnf-syntax"></a>Backus Nauer Form (BNF) söz dizimini anlama
 
@@ -54,56 +54,56 @@ Gösterim ve dize değişmez değerleri bir ATL Kaydedicisi betikte nasıl çal�
 
 ### <a name="syntax-example-1"></a>Sözdizimi örneği 1
 
-```  
-<registry expression> ::= <Add Key>  
+```
+<registry expression> ::= <Add Key>
 ```
 
 belirten `registry expression` eşdeğerdir `Add Key`.
 
 ### <a name="syntax-example-2"></a>Sözdizimi örneği 2
 
-```  
-<registry expression> ::= <Add Key> | <Delete Key>  
+```
+<registry expression> ::= <Add Key> | <Delete Key>
 ```
 
 belirten `registry expression` ya da eşdeğerine `Add Key` veya `Delete Key`.
 
 ### <a name="syntax-example-3"></a>Sözdizimi örneği 3
 
-```  
-<Key Name> ::= '<AlphaNumeric>+'  
+```
+<Key Name> ::= '<AlphaNumeric>+'
 ```
 
 belirten `Key Name` bir veya daha fazla eşdeğerdir `AlphaNumerics`.
 
 ### <a name="syntax-example-4"></a>4 sözdizimi örneği
 
-```  
-<Add Key> ::= [ForceRemove | NoRemove | val]<Key Name>  
+```
+<Add Key> ::= [ForceRemove | NoRemove | val]<Key Name>
 ```
 
 belirten `Add Key` eşdeğerdir `Key Name`ve dize değişmez değerleri, `ForceRemove`, `NoRemove`, ve `val`, isteğe bağlıdır.
 
 ### <a name="syntax-example-5"></a>5 sözdizimi örneği
 
-```  
-<AlphaNumeric> ::= any character not NULL, that is, ASCII 0  
+```
+<AlphaNumeric> ::= any character not NULL, that is, ASCII 0
 ```
 
 belirten `AlphaNumeric` herhangi NULL karakter olmayan için eşdeğerdir.
 
 ### <a name="syntax-example-6"></a>6 sözdizimi örneği
 
-```  
-val 'testmulti' = m 'String 1\0String 2\0'  
+```
+val 'testmulti' = m 'String 1\0String 2\0'
 ```
 
 belirten anahtar adı `testmulti` oluşan bir çok dizeli değer `String 1` ve `String 2`.
 
 ### <a name="syntax-example-7"></a>7 sözdizimi örneği
 
-```  
-val 'testhex' = d '&H55'  
+```
+val 'testhex' = d '&H55'
 ```
 
 belirten anahtar adı `testhex` bir DWORD değeri, onaltılık 55 (ondalık 85) ayarlanır. Bu biçim aynılarını için Not **& H** gösterimi olarak Visual Basic belirtiminde bulunamadı.

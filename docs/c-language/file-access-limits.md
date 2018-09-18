@@ -12,17 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b66880bbb86d786516782892b540ff2b84be0321
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0e8be236b2f84473fb8ea6b918d8520f7b2060cd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381515"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019738"
 ---
 # <a name="file-access-limits"></a>Dosya Erişim Sınırları
-**ANSI 4.9.3** aynı dosyayı birden çok kez olup açık olabilir  
-  
- Zaten açık olan bir dosyayı açmaya izin verilmez.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık İşlevleri](../c-language/library-functions.md)
+
+**ANSI 4.9.3** olup aynı dosyanın birden çok kez açılabilir
+
+Zaten açık olan bir dosyayı açmaya izin verilmez.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kitaplık İşlevleri](../c-language/library-functions.md)

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17f4ce858949aafe1a448fc51b8ecd5591270184
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e0ffdb791355aa40a33d80104af540b856cdf601
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764848"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019490"
 ---
 # <a name="crbmap-class"></a>CRBMap sınıfı
 
@@ -38,22 +38,22 @@ Bu sınıf, Red-siyah bir ikili Ağacı'nı kullanarak bir eşleme yapısını t
 template <typename K,
           typename V, 
           class KTraits = CElementTraits<K>, 
-          class VTraits = CElementTraits<V>> 
+          class VTraits = CElementTraits<V>>
 class CRBMap : public CRBTree<K, V, KTraits, VTraits>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*K*  
+*K*<br/>
 Anahtar öğe türü.
 
-*V*  
+*V*<br/>
 Değer öğe türü.
 
-*KTraits*  
+*KTraits*<br/>
 Kopyalamak veya taşımak temel öğeleri için kullanılan kod. Bkz: [CElementTraits sınıfı](../../atl/reference/celementtraits-class.md) daha fazla ayrıntı için.
 
-*VTraits*  
+*VTraits*<br/>
 Kopyalamak veya taşımak değeri öğeleri için kullanılan kod.
 
 ## <a name="members"></a>Üyeler
@@ -107,7 +107,7 @@ explicit CRBMap(size_t nBlockSize = 10) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBlockSize*  
+*nBlockSize*<br/>
 Blok boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -146,10 +146,10 @@ CPair* Lookup(KINARGTYPE key) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Bakılacak öğeyi tanımlayan anahtar belirtir.
 
-*value*  
+*value*<br/>
 Değişken, aranan yukarı değerini alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -174,7 +174,7 @@ bool RemoveKey(KINARGTYPE key) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Kaldırmak istediğiniz anahtar karşılık gelen bir öğe çifti.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -201,10 +201,10 @@ POSITION SetAt(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Eklenecek anahtar değeri `CRBMap` nesne.
 
-*value*  
+*value*<br/>
 Eklenecek değer `CRBMap` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -223,7 +223,7 @@ Temel sınıf için belgelere bakın [CRBTree](../../atl/reference/crbtree-class
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CRBTree sınıfı](../../atl/reference/crbtree-class.md)   
-[CAtlMap sınıfı](../../atl/reference/catlmap-class.md)   
-[CRBMultiMap sınıfı](../../atl/reference/crbmultimap-class.md)   
+[CRBTree Sınıfı](../../atl/reference/crbtree-class.md)<br/>
+[CAtlMap Sınıfı](../../atl/reference/catlmap-class.md)<br/>
+[CRBMultiMap Sınıfı](../../atl/reference/crbmultimap-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

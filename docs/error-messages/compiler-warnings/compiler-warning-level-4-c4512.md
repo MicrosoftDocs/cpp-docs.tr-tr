@@ -16,82 +16,84 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d87a79fcdc4c1ac79b1237032f6cfb5a52b9e269
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9aee9e7f48430ddc9b2b9a6a7f055ac8b1e32b71
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293923"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029955"
 ---
 # <a name="compiler-warning-level-4-c4512"></a>Derleyici Uyarısı (düzey 4) C4512
-'class': atama işleci oluşturulamadı  
-  
- Derleyici verilen sınıf için bir atama işleci oluşturulamıyor. Atama işleci oluşturuldu.  
-  
- Türetilmiş sınıf tarafından erişilebilir durumda değil taban sınıfı için bir atama işleci bu uyarıyı neden olabilir.  
-  
- Bu uyarıyı önlemek için sınıf için bir kullanıcı tarafından tanımlanan atama işleci belirtin.  
-  
- Derleyici bir tanımlamıyor bir sınıf için bir atama işleci işlevi de oluşturur. Bu atama işleci bir nesnenin veri üyelerine memberwise bir kopyasıdır. Çünkü `const` veri öğeleri sınıfı içeriyorsa başlatma sonra değiştirilemez bir `const` öğesi, varsayılan atama işleci çalışmaz. Başka bir C4512 uyarı bildirimi başvuru türü statik olmayan veri üyesi nedenidir. Hedefi copyable olmayan bir tür oluşturmak için ise, varsayılan kopya Oluşturucu oluşturulmasını engellemeniz gerekir.  
-  
- Üç şekilde kodunuzda için C4512 uyarıyı çözün:  
-  
--   Sınıfı için bir atama işleci açıkça tanımlayın.  
-  
--   Kaldırma **const** veya sınıfında veri öğesi başvurusu işleci.  
-  
--   #Pragma kullanmak [uyarı](../../preprocessor/warning.md) gizlemek için deyimi.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4512 oluşturur.  
-  
-```  
-// C4512.cpp  
-// compile with: /EHsc /W4  
-// processor: x86  
-  
-class Base {  
-private:  
-   const int a;  
-  
-public:  
-   Base(int val = 0) : a(val) {}  
-   int get_a() { return a; }  
-};   // C4512 warning  
-  
-class Base2 {  
-private:  
-   const int a;  
-  
-public:  
-   Base2(int val = 0) : a(val) {}  
-   Base2 & operator=( const Base2 & ) { return *this; }  
-   int get_a() { return a; }  
-};  
-  
-// Type designer intends this to be non-copyable because it has a   
-// reference member  
-class Base3  
-{  
-private:  
-   char& cr;  
-  
-public:  
-   Base3(char& r) : cr(r) {}  
-   // Uncomment the following line to explicitly disable copying:  
-   // Base3(const Base3&) = delete;   
-};   // C4512 warning  
-  
-int main() {  
-   Base first;  
-   Base second;  
-  
-   // OK  
-   Base2 first2;  
-   Base2 second2;  
-  
-   char c = 'x';  
-   Base3 first3(c);  
-   Base3 second3 = first3; // C2280 if no default copy ctor  
-}  
+
+'class': atama işleci üretilemedi
+
+Derleyici, belirli bir sınıf için bir atama işleci oluşturulamıyor. Hiçbir atama işleci oluşturuldu.
+
+Türetilmiş sınıf tarafından erişilebilir değil temel sınıf için bir atama işleci, bu uyarıyı neden olabilir.
+
+Bu uyarıyı engellemek için sınıf için bir kullanıcı tanımlı atama işleci belirtin.
+
+Derleyici ayrıca bir tanımlamıyor bir sınıf için bir atama işleci işlevi oluşturur. Bu atama işleci bir nesnenin veri üyelerinin kopyalamadır. Çünkü `const` veri öğeleri sınıf içeriyorsa, başlatmadan sonra değiştirilemez bir `const` öğesini varsayılan atama işleci çalışmamasına. Başka bir nedeni de C4512 uyarı bir başvuru türü statik olmayan veri üyesi bildirimidir. Amaç, kopyalanamaz türü oluşturmak için ise, varsayılan bir kopya Oluşturucu oluşturulmasını de engellemelisiniz.
+
+C4512 uyarı kodu üç yoldan biriyle çözümleyebilirsiniz:
+
+- Sınıfı için bir atama işleci açıkça tanımlayın.
+
+- Kaldırma **const** veya başvuru işleci sınıftaki veri öğesi.
+
+- #Pragma kullanın [uyarı](../../preprocessor/warning.md) uyarının gösterilmemesi için deyimi.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4512 oluşturur.
+
+```
+// C4512.cpp
+// compile with: /EHsc /W4
+// processor: x86
+
+class Base {
+private:
+   const int a;
+
+public:
+   Base(int val = 0) : a(val) {}
+   int get_a() { return a; }
+};   // C4512 warning
+
+class Base2 {
+private:
+   const int a;
+
+public:
+   Base2(int val = 0) : a(val) {}
+   Base2 & operator=( const Base2 & ) { return *this; }
+   int get_a() { return a; }
+};
+
+// Type designer intends this to be non-copyable because it has a
+// reference member
+class Base3
+{
+private:
+   char& cr;
+
+public:
+   Base3(char& r) : cr(r) {}
+   // Uncomment the following line to explicitly disable copying:
+   // Base3(const Base3&) = delete;
+};   // C4512 warning
+
+int main() {
+   Base first;
+   Base second;
+
+   // OK
+   Base2 first2;
+   Base2 second2;
+
+   char c = 'x';
+   Base3 first3(c);
+   Base3 second3 = first3; // C2280 if no default copy ctor
+}
 ```

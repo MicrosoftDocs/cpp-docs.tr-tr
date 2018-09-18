@@ -25,12 +25,13 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dd143c97a95ebe5f1e156a469c1536ae762c0c7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9ad3531403542ab0b8a553865f2da1d80dd0cd96
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389877"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026575"
 ---
 # <a name="operator-newcrt"></a>işleç new(CRT)
-Visual Studio 2013'te başlayarak, Evrensel C çalışma zamanı'nı (UCRT) artık yeni C++ özgü işleci destekler ve işlevleri delete işleci. Bu, artık C++ Standart Kitaplığı bir parçasıdır. Daha fazla bilgi için bkz: [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md) ve [new işleci](../cpp/new-operator-cpp.md) C++ dil başvurusu. 
+
+Visual Studio 2013'te başlayarak, Evrensel C çalışma zamanı'nı (UCRT) artık yeni C++ diline özgü işleci destekler ve delete işleci işlevleri. Bu, artık C++ Standart Kitaplığı bir parçasıdır. Daha fazla bilgi için [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md) ve [new işleci](../cpp/new-operator-cpp.md) C++ dil başvurusu.

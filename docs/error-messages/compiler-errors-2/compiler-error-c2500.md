@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c05ffd59e415375dd3c7f94ae9bc377c0fc2b9e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9b7e24ca520796b63171fe63c2bf841fe8776845
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229228"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026679"
 ---
 # <a name="compiler-error-c2500"></a>Derleyici Hatası C2500
-'identifier1': 'identifier2' doğrudan temel sınıf bulunmakta  
-  
- Bir sınıf veya yapı taban sınıflar listesi içinde birden fazla kez görüntülenir.  
-  
- Bir doğrudan taban temel listesinde belirtilen biridir. Temel listesinde sınıflarından birini temel bir sınıfında bir dolaylı tabanıdır.  
-  
- Bir sınıf doğrudan bir temel sınıf olarak birden çok kez belirtilemez. Bir sınıf dolaylı bir temel sınıf olarak birden çok kez kullanılabilir.  
-  
- Aşağıdaki örnek C2500 oluşturur:  
-  
-```  
-// C2500.cpp  
-// compile with: /c  
-class A {};  
-class B : public A, public A {};    // C2500  
-  
-// OK  
-class C : public A {};  
-class D : public A {};  
-class E : public C, public D {};  
+
+'ıdentifier1': 'identifier2' olduğunu zaten bir doğrudan taban sınıfı
+
+Bir sınıf veya yapı birden çok kez temel sınıflar listesinde görünür.
+
+Bir doğrudan temel temel listesinde belirtilen biridir. Dolaylı bir temel listesinde sınıflarından birinin temel sınıftır.
+
+Bir sınıf doğrudan temel sınıf olarak birden fazla kez belirtilemez. Bir sınıf kereden fazla dolaylı temel sınıf olarak kullanılabilir.
+
+Aşağıdaki örnek, C2500 oluşturur:
+
+```
+// C2500.cpp
+// compile with: /c
+class A {};
+class B : public A, public A {};    // C2500
+
+// OK
+class C : public A {};
+class D : public A {};
+class E : public C, public D {};
 ```

@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa953d8d41003ff53e721671845c1ddee26da640
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e9bb7c37cd4a9da8844f30463c6e2d73fcc04609
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33282434"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022428"
 ---
 # <a name="compiler-warning-level-1-c4717"></a>Derleyici Uyarısı (düzey 1) C4717
-'function': Yinelenen tüm denetim yazmalar işlevi neden olacak çalışma zamanı yığın taşması  
-  
- Her bir işlev yolundan işlevine bir çağrı içerir. Özyinelemeli işlev ilk arama kendisini olmadan'ndan çıkmak için hiçbir şekilde olduğundan işlev hiçbir zaman çıkılacak.  
-  
- Aşağıdaki örnek C4717 oluşturur:  
-  
-```  
-// C4717.cpp  
-// compile with: /W1 /c  
-// C4717 expected  
-int func(int x) {  
-   if (x > 1)  
-      return func(x - 1); // recursive call  
-   else {  
-      int y = func(0) + 1; // recursive call  
-      return y;  
-   }  
-}  
-  
-int main(){  
-   func(1);  
-}  
+
+'function': özyinelemeli tüm denetim yollarında işlevi neden çalışma zamanı yığın taşması
+
+Her bir işlev yolundan işlevine bir çağrı içerir. Exit işlevi çağırmadan ilk kendisini yinelemeli olarak şekilde olduğundan, işlev hiçbir zaman çıkış yapar.
+
+Aşağıdaki örnek, C4717 oluşturur:
+
+```
+// C4717.cpp
+// compile with: /W1 /c
+// C4717 expected
+int func(int x) {
+   if (x > 1)
+      return func(x - 1); // recursive call
+   else {
+      int y = func(0) + 1; // recursive call
+      return y;
+   }
+}
+
+int main(){
+   func(1);
+}
 ```

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 580fb4c96db70b612135ac48e30bd9c0d45c4d1c
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 1edd35ac9f32a28a19c4ea54b7e9fba2820d6095
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42466017"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031632"
 ---
 # <a name="mixing-c-structured-and-c-exceptions"></a>C (yapılandırılmış) ile C++ özel durumlarını karıştırma
 
@@ -47,10 +47,10 @@ Yapılandırılmış karışımı varsa ve C++ özel durumlarını, bu olası so
 
   Kullanımı hakkında daha fazla bilgi `setjmp` ve `longjmp` C++ programlarında.
 
-- [C++'ta yapılandırılmış özel durumları işleme](../cpp/exception-handling-differences.md)
+- [C++ dilinde yapılandırılmış özel durumları işleme](../cpp/exception-handling-differences.md)
 
   C++ için tanıtıcı yapısal özel durumlar kullanma yollarına örneklere bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)  
+[C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)

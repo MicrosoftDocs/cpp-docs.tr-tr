@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b5c2a03c6e8f0ee018a7e3b3449fc0448d179be
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ab70449232c7177a555700b96d4965c617692e1a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33227804"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023574"
 ---
 # <a name="fatal-error-c1208"></a>Önemli hata C1208
-Başvuru sınıfları yığınındaki ayırma yüklü çalışma zamanı sürümü tarafından desteklenmiyor  
-  
- Geçerli sürümde, ancak bir ortak dil çalışma zamanı önceki bir sürümünden bir derleyici olduğunda C1208 oluşur.  
-  
- Bazı işlevler Derleyici önceki bir çalışma zamanı sürümünde çalışmayabilir.  
-  
- Derleyici kullanmaya yönelik ortak dil çalışma zamanı sürümü yükleyin.
+
+Yığında başvuru sınıfları ayırma yüklü olan çalışma zamanı sürümü tarafından desteklenmiyor
+
+Geçerli sürümde, ancak bir ortak dil çalışma zamanının önceki bir sürümden bir derleyici olduğunda C1208 gerçekleşir.
+
+Bazı işlevler derleyicinin önceki bir çalışma zamanı sürümünü çalışmayabilir.
+
+Derleyici ile kullanıma yöneliktir ortak dil çalışma zamanı sürümünü yükleyin.

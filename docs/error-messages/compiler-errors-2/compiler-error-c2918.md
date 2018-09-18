@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49d724d3e6d88935421d3770115ebfc2186e3cd7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ec2b330598c1a88f0fa4399aae862d1109e72255
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33262472"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029175"
 ---
 # <a name="compiler-error-c2918"></a>Derleyici Hatası C2918
-'name': WinRT türü yayımlanan yüzeyine dizinli özellikler kullanılamaz  
-  
- Dizinli Özellikler WinRT türü yayımlanan yüzey üzerinde desteklenmez.
+
+'name': dizini oluşturulmuş özellikler bir WinRT türünün yayımlanmış yüzeyinde kullanılamaz
+
+Dizinli Özellikler bir WinRT türünün yayımlanmış yüzeyinde desteklenmez.

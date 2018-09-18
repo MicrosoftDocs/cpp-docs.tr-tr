@@ -16,38 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8555732fbe3321c65a4da9689b0b8816ff356532
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e9d25d09343cc2a8d341925727529be7d435d9da
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33268610"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023481"
 ---
 # <a name="compiler-error-c3754"></a>Derleyici Hatası C3754
-Oluşturucu temsilci: üye işlevi 'function', 'type' türünün bir örneğinde çağrılamaz  
-  
- İşlevi içermeyen bir tür için bir işaretçi aracılığıyla işlevine bir çağrı yapıldı.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3754 oluşturur:  
-  
-```  
-// C3754a.cpp  
-// compile with: /clr  
-using namespace System;  
-  
-delegate void MyDel();  
-  
-interface class MyInterface {};  
-  
-ref struct MyClass : MyInterface {  
-   void f() {}  
-};  
-  
-int main() {  
-   MyInterface^ p = gcnew MyClass;  
-   MyDel^ q = gcnew MyDel(p, &MyClass::f);   // C3754  
-   // try the following line instead  
-//   MyDel^ q = gcnew MyDel(safe_cast<MyClass^>(p), &MyClass::f);  
-}  
-```  
+
+temsilci oluşturucusu: 'function' üye işlevi, 'type' türünün bir örneği üzerinde çağrılamaz
+
+İşlev içermeyen bir türü bir işaretçi ile bir işleve bir çağrı yapıldı.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3754 oluşturur:
+
+```
+// C3754a.cpp
+// compile with: /clr
+using namespace System;
+
+delegate void MyDel();
+
+interface class MyInterface {};
+
+ref struct MyClass : MyInterface {
+   void f() {}
+};
+
+int main() {
+   MyInterface^ p = gcnew MyClass;
+   MyDel^ q = gcnew MyDel(p, &MyClass::f);   // C3754
+   // try the following line instead
+//   MyDel^ q = gcnew MyDel(safe_cast<MyClass^>(p), &MyClass::f);
+}
+```

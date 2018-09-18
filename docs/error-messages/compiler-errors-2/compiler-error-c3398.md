@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b870479977bfb49ff39d5a15fe19fc700ed66b8e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 336494ea9581289efd9a41e604a28984125ae61a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33255837"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018138"
 ---
 # <a name="compiler-error-c3398"></a>Derleyici Hatası C3398
-'işleci': 'function_signature' 'function_pointer' dönüştürülemiyor. İşlev simgesi kaynağı deyim olmalıdır  
-  
- Zaman [__clrcall](../../cpp/clrcall.md) çağırma kuralı belirtilmedi ile derleme yapılırken **/CLR**, iki giriş noktaları (adresleri) her işlev, yerel giriş noktası ve yönetilen bir giriş noktası için derleyici oluşturur.  
-  
- Varsayılan olarak, yerel giriş noktası derleyici verir, ancak yönetilen giriş noktası istenen olduğu bazı durumlar vardır (örneğin adresine atarken bir `__clrcall` işlev işaretçisi). Derleyicinin güvenilir bir atamasında yönetilen giriş noktasını seçmek sağ taraftaki işlev simgesi olmalı.
+
+'operator': 'function_pointer' için 'function_signature' dönüştürülemiyor. Kaynak ifadesi bir işlev simgesi olmalıdır
+
+Zaman [__clrcall](../../cpp/clrcall.md) çağırma kuralı belirtilmediği ile derleme yaparken **/CLR**, derleyici her işlev, yerel giriş noktası ve yönetilen bir giriş noktası için iki giriş noktaları (adresleri) oluşturur.
+
+Varsayılan olarak, derleyici yerel giriş noktası döndürür, ancak yönetilen giriş noktasını istenen olduğu bazı durumlar vardır (örneğin adresine atarken bir `__clrcall` işlev işaretçisi). Güvenilir bir şekilde atama içinde yönetilen giriş noktasını seçmek derleyici için sırada sağ tarafı bir işlev simgesi olmalıdır.

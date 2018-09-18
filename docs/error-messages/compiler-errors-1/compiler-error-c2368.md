@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5660bcc07758ccd8e693207d87988b3b4f1d03ac
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 923f3742688b9d5c282cb8ceb3799a978e9a030a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195080"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030548"
 ---
 # <a name="compiler-error-c2368"></a>Derleyici Hatası C2368
-'tanımlayıcısı': şemadaki; farklı ayırma tanımlayıcıları  
-  
- Bildirim ve simgesinin tanımı farklı belirtin `__declspec` öznitelikleri.
+
+'identifier': yeniden tanımlama; ayırma belirticileri farklı
+
+Sembol tanımını ve bildirimini farklı belirtin `__declspec` öznitelikleri.

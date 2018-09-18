@@ -16,30 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db8e60df6c6f8f1d19b55d78b527cca2755f4ca4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7ceb6875484a3afe1d13f13990334434a6c1b086
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33254140"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022662"
 ---
 # <a name="compiler-error-c3393"></a>Derleyici Hatası C3393
-kısıtlaması yan tümcesinde sözdizimi hatası: 'tanımlayıcısı' türünde değil  
-  
- Bir tür olmalıdır, bir kısıtlama olarak geçirilen tanımlayıcı bir türde değildi.  Daha fazla bilgi için bkz: [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3393 oluşturur:  
-  
-```  
-// C3393.cpp  
-// compile with: /clr /c  
-void MyInterface() {}  
-interface class MyInterface2 {};  
-  
-generic<typename T>  
-where T : MyInterface   // C3393  
-// try the following line instead  
-// where T : MyInterface2  
-ref class R {};  
+
+kısıtlama yan tümcesinde sözdizimi hatası: 'identifier' bir tür değil
+
+Bir türü olmalıdır, bir kısıtlama olarak geçirilen tanımlayıcısı bir tür değil.  Daha fazla bilgi için [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3393 oluşturur:
+
+```
+// C3393.cpp
+// compile with: /clr /c
+void MyInterface() {}
+interface class MyInterface2 {};
+
+generic<typename T>
+where T : MyInterface   // C3393
+// try the following line instead
+// where T : MyInterface2
+ref class R {};
 ```

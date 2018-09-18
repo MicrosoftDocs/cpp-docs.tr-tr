@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d11160eea5e978a0c1ef67255d4e96b48fe2d101
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0adfa7eed25f1902300fa2378b8ffc19eb8dfafd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199517"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023806"
 ---
 # <a name="fatal-error-c1852"></a>Önemli hata C1852
-'filename' geçerli önceden derlenmiş üst bilgi dosyası değil  
-  
- Dosya önceden derlenmiş üstbilgi değil.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Geçersiz dosya ile belirtilen **/Yu** veya **#pragma hdrstop**.  
-  
-2.  Aksi takdirde belirtmezseniz, derleyici .pch dosya uzantısı varsayar.
+
+'filename' geçerli önceden derlenmiş üst bilgi dosyası değil.
+
+Ön derlenmiş üstbilgi dosyası değil.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Belirtilen geçersiz dosya **/Yu** veya **#pragma hdrstop**.
+
+1. Aksi takdirde belirtmezseniz, derleyici bir dosya uzantısı .pch varsayar.

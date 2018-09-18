@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea0bf7f9e9467b35391034dafcbd48044b6229d7
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: c980115496e70cf0c767ce0592ef5ac9fd1fd239
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33696077"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027030"
 ---
 # <a name="schedulernotattached-class"></a>scheduler_not_attached Sınıfı
-Bu sınıf geçerli bağlamla eklenmesi için bir zamanlayıcı gerektiren bir işlem gerçekleştirdiğinizde ve bulunmaması oluşturulan bir özel açıklar.  
+Bu sınıf, bir işlem için geçerli bağlam eklenmesi bir zamanlayıcı gerektiren gerçekleştirilir ve bulunmaması olduğunda oluşturulan bir özel durum açıklar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,7 +40,7 @@ class scheduler_not_attached : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[scheduler_not_attached](#ctor)|Fazla Yüklendi. Oluşturan bir `scheduler_not_attached` nesnesi.|  
+|[scheduler_not_attached](#ctor)|Fazla Yüklendi. Oluşturur bir `scheduler_not_attached` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -54,7 +54,7 @@ class scheduler_not_attached : public std::exception;
   
 ##  <a name="ctor"></a> scheduler_not_attached 
 
- Oluşturan bir `scheduler_not_attached` nesnesi.  
+ Oluşturur bir `scheduler_not_attached` nesne.  
   
 ```
 explicit _CRTIMP scheduler_not_attached(_In_z_ const char* _Message) throw();
@@ -63,8 +63,8 @@ scheduler_not_attached() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

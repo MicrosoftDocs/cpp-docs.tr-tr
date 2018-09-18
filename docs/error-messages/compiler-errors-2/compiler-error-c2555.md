@@ -16,44 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d2d1a710177e2c8c72b0afeff662dddf1c22ef5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8f91ec33db2d3a7b6772556233a3c99b501ede76
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230593"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017345"
 ---
 # <a name="compiler-error-c2555"></a>Derleyici Hatası C2555
-'class1::function1': sanal işlevi geçersiz kılma dönüş türü farklıdır ve 'class2::function2' eşdeğişken değil  
-  
- Bir sanal işleve ve türetilmiş bir geçersiz kılma işlevi farklı dönüş türleri ancak aynı parametre listeleri vardır. Bir geçersiz kılma işlevi türetilmiş bir sınıf içinde bir sanal işlev dönüş türü tarafından yalnızca bir taban sınıf içinde farklı olamaz.  
-  
- Bu hatayı gidermek için sanal işlev çağrıldıktan sonra dönüş değerini atayın.  
-  
- / CLR ile derleme yaparsanız, bu hatayı da görebilirsiniz.   Örneğin, Visual C++ aşağıdaki C# bildirimine eşdeğer:  
-  
-```  
-Guid[] CheckSources(Guid sourceID, Guid[] carouselIDs);  
-```  
-  
- is  
-  
-```  
-Guid CheckSources(Guid sourceID, Guid carouselIDs[]) [];  
-```  
-  
- Bilgi Bankası makalesi Q240862 C2555 hakkında daha fazla bilgi için bkz.  
-  
- Aşağıdaki örnek C2555 oluşturur:  
-  
-```  
-// C2555.cpp  
-// compile with: /c  
-struct X {  
-   virtual void func();  
-};  
-struct Y : X {  
-   char func();  // C2555  
-   void func2();   // OK  
-};  
+
+'class1::function1': geçersiz kılan sanal işlev dönüş türü farklıdır ve 'class2::function2' bunun bir kovaryansı değil
+
+Bir sanal işlev ve türetilmiş bir geçersiz kılma işlevini aynı parametre listelerini ancak farklı dönüş türlerine sahip. Türetilen bir sınıfta geçersiz kılan bir işlev dönüş türü tarafından yalnızca bir temel sınıf sanal bir işlevi farklı olamaz.
+
+Bu hatayı gidermek için sanal işlev çağrıldıktan sonra dönüş değeri dönüştürün.
+
+/ CLR ile derleme yaparsanız, bu hatayı görebilirsiniz.   Örneğin, Visual C++ aşağıdaki C# bildirimine eşdeğer:
+
+```
+Guid[] CheckSources(Guid sourceID, Guid[] carouselIDs);
+```
+
+is
+
+```
+Guid CheckSources(Guid sourceID, Guid carouselIDs[]) [];
+```
+
+Bilgi Bankası makalesi Q240862 C2555 hakkında daha fazla bilgi için bkz.
+
+Aşağıdaki örnek, C2555 oluşturur:
+
+```
+// C2555.cpp
+// compile with: /c
+struct X {
+   virtual void func();
+};
+struct Y : X {
+   char func();  // C2555
+   void func2();   // OK
+};
 ```

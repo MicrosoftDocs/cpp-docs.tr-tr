@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f6be9ba8ba45adecfe5355848126dcb4b3b2fd1
-ms.sourcegitcommit: 592a2f402fef502450a45571a846175cc3ab1ceb
+ms.openlocfilehash: fef8d0ab55205d2377fc52049c40a1c50151b93e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44249626"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024183"
 ---
 # <a name="compiler-warning-level-1-c4627"></a>Derleyici Uyarısı (düzey 1) C4627
 
@@ -32,7 +32,7 @@ Geçerli kaynak dosyanın varsa [/Yu \(kullanım önceden derlenmiş üst bilgi 
 ## <a name="example"></a>Örnek
 
 Bu örnek nasıl hata ortaya çıkabilir ve nasıl düzeltileceğini gösteren gösterir:
- 
+
 ```cpp
 // c4627.cpp
 #include <iostream>       // C4627 - iostream not included by pch.h
@@ -43,7 +43,7 @@ int main()
     std::cout << "std::cout is defined!\n";
 }
 ```
-  
+
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma](../../build/reference/creating-precompiled-header-files.md)

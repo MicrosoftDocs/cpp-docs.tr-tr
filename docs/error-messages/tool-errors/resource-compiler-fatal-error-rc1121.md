@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99d89b217e5cca5abc4a352a05722bd4d0d53a48
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1fd83298e9a1afcaa318c8bbc333b77f3b2da61c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317563"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019924"
 ---
 # <a name="resource-compiler-fatal-error-rc1121"></a>Kaynak Derleyicisi Önemli Hatası RC1121
-Dosya okuma g/ç hatası  
-  
- Kaynak derleyicisi bir dosyayı okuyabilir değildi. Dosyasını içeren sürücüde kullanılabilir olduğunu ve dosyanın geçerli olup olmadığını denetleyin.
+
+Dosya okuma g/ç hatası
+
+Kaynak derleyicisi, bir dosyayı okumak ulaşamadı. Dosyasını içeren sürücüde kullanılabilir olduğunu ve dosyanın geçerli olduğunu denetleyin.

@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ab812a4b6621acb28a4df636056598047f5c21e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7ec7b1e9c1e5e7894740cc80f9c030fa1ee26ec0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230167"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028850"
 ---
 # <a name="compiler-error-c2585"></a>Derleyici Hatası C2585
-'type ' açık dönüştürme belirsiz  
-  
- Tür dönüşümü birden fazla sonuç üretebilir.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Birden çok devralmayı göre bir sınıf veya yapı türü dönüştürme. Aynı temel sınıfı türü birden çok kez devralır, dönüştürme işlevi veya işleci kapsam çözümü kullanmanız gerekir (`::`) Dönüştürmedeki devralınan sınıfların belirtmek için.  
-  
-2.  Bir dönüşüm işleci ve bir oluşturucu aynı dönüştürme yapma tanımlanmadı.
+
+'type ' açık dönüştürme belirsiz
+
+Tür dönüştürme, birden fazla sonuç üretebilir.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Birden çok devralma göre bir sınıf veya yapı türü dönüştürme. Dönüştürme işlevi veya işleç türü aynı temel sınıfın birden çok kez devralınırsa, kapsam çözümleme kullanmalısınız (`::`) Dönüştürmedeki devralınan sınıflar belirtmek için.
+
+1. Bir dönüştürme operatörünün ve bir oluşturucu aynı dönüştürme yapma tanımlanmadı.

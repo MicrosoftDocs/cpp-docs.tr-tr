@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 825d1e1e119aa80445c5ae15804bbdde4a3d8bf9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 091fab63737c7ee1b3b85753a354bb7214cfa411
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295629"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025249"
 ---
 # <a name="bscmake-error-bk1509"></a>BSCMAKE Hatası BK1509
-yığın alanı kalmadı  
-  
- BSCMAKE sanal bellek dahil olmak üzere, bellek yetersiz kaldı.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümlere kullanarak düzeltmek için  
-  
-1.  Disk alanını boşaltın.  
-  
-2.  Takas dosyası boyutunu artırın.  
-  
-3.  Windows takas dosyası boyutunu artırın.  
-  
-4.  /Ei kullanılarak BSCMAKE gerektiren bellek azaltın veya bazı ortadan kaldırmak için /Es dosyaları veya makrosu gövdeleri ortadan kaldırmak için /Em giriş.
+
+yığın alanı kalmadı
+
+BSCMAKE sanal bellek dahil olmak üzere, bellek yetersiz kaldı.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+
+1. Disk alanını boşaltın.
+
+1. Takas dosyasının boyutunu artırın.
+
+1. Windows takas dosyası boyutunu artırın.
+
+1. Kullanarak /Ei BSCMAKE gerektirir bellek azaltın veya bazı ortadan kaldırmak için /Es dosyaları veya makro gövdeleri ortadan kaldırmak için /Em giriş.

@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f97918c38f896dd5fccd3abeae86a3104cf80694
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 333a6d9741d4ccaa5764e84fabd71f58788c1b6d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316062"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46015805"
 ---
 # <a name="math-error-m6110"></a>Matematik Hatası M6110
-yığın taşması  
-  
- Kayan nokta ifadesi bir kayan nokta yığın taşması nedeniyle.  
-  
- Kayan nokta özel durum yığın taşması genellikle 287/8087/387 işlemcisi tarafından desteklenen sekiz düzeylerini yanı sıra yedi düzeylerinin sınırına kadar yakalanır.  
-  
- Program 138 çıkış koduyla sona erer.
+
+yığın taşması
+
+Bir kayan nokta ifadesi, bir kayan nokta yığın taşmasına neden oldu.
+
+Yığın taşması kayan nokta özel durumlarını yedi düzey sekiz düzeyleri genellikle 8087/287/387 işlemcisi tarafından desteklenen ek olarak bir sınıra kadar yakalanır.
+
+Program çıkış kodu ile 138 sonlandırır.

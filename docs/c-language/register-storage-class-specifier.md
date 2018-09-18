@@ -1,5 +1,5 @@
 ---
-title: Depolama sınıfı tanımlayıcısı kaydetme | Microsoft Docs
+title: register depolama sınıfı tanımlayıcısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,19 +15,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 211f623923286e598f495920bcbdac3a9321b13a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e15b6bd4136e2644dbd040ac509b35af772ae4c3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384606"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028330"
 ---
 # <a name="register-storage-class-specifier"></a>register Depolama Sınıfı Tanımlayıcısı
-**Microsoft özel**  
-  
- Microsoft C/C++ derleyici, kayıt değişkenleri için kullanıcı isteklerini dikkate almaz. Ancak, diğer tüm semantiği ile ilişkili taşınabilirlik için **kaydetmek** derleyici tarafından anahtar sözcüğü dikkate alınır. Örneğin, adres, birli işleç uygulanamıyor (**&**) kaydı nesnesi ya da can için **kaydetmek** anahtar sözcüğü dizileri kullanılabilir.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İç Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları](../c-language/storage-class-specifiers-for-internal-level-declarations.md)
+
+**Microsoft'a özgü**
+
+Microsoft C/C++ derleyici, kayıt değişkenleri için kullanıcı isteklerini dikkate almaz. Bununla birlikte, taşınabilirlik için diğer tüm semantikler ilişkili **kaydetme** anahtar sözcüğü derleyici tarafından kabul edilir. Örneğin, birli adres işleci uygulanamıyor (**&**) için bir kayıt nesnesine ya da can **kaydetme** anahtar sözcüğü diziler üzerinde kullanılamaz.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İç Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları](../c-language/storage-class-specifiers-for-internal-level-declarations.md)

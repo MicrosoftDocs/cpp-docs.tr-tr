@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33b285cb55e04bcae2fd7f65ef5e94686e88e5e6
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: d7ee8fa674174d95c3e538889f6d5538be049b70
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208994"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020726"
 ---
 # <a name="taskgroup-class"></a>task_group Sınıfı
 `task_group` Sınıf beklenen veya iptal edilen paralel iş koleksiyonunu temsil eder.  
@@ -127,17 +127,17 @@ void run(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Function`  
- Görev tanıtıcısını gövdesi yürütme için çağrılacak işlev nesnesinin türü.  
+*_Function*<br/>
+Görev tanıtıcısını gövdesi yürütme için çağrılacak işlev nesnesinin türü.  
   
- `_Func`  
- Görevin çağırmak için çağrılacak işlev. Bu bir lambda ifadesi veya işlev çağrısı işleci imzalı sürümünü destekleyen başka bir nesneyi olabilir `void operator()()`.  
+*_Func*<br/>
+Görevin çağırmak için çağrılacak işlev. Bu bir lambda ifadesi veya işlev çağrısı işleci imzalı sürümünü destekleyen başka bir nesneyi olabilir `void operator()()`.  
   
- `_Placement`  
- Görevi nerede temsil ettiği konumuna yönelik bir başvuru `_Func` parametre yürütün.  
+*Y_erleştirme*<br/>
+Görevi nerede temsil ettiği konumuna yönelik bir başvuru `_Func` parametre yürütün.  
   
- `_Task_handle`  
- Zamanlanmış iş için bir tanıtıcı. Çağıranın bu nesnenin ömrünü sorumluluğunu olduğuna dikkat edin. Çalışma zamanı kadar Canlı beklediğiniz devam edecek `wait` veya `run_and_wait` bu yöntemi çağrıldıktan `task_group` nesne.  
+*_Task_handle*<br/>
+Zamanlanmış iş için bir tanıtıcı. Çağıranın bu nesnenin ömrünü sorumluluğunu olduğuna dikkat edin. Çalışma zamanı kadar Canlı beklediğiniz devam edecek `wait` veya `run_and_wait` bu yöntemi çağrıldıktan `task_group` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çalışma zamanı, sonra çağıran işlevin verir olabilen daha sonraki bir zamanda, çalıştırmak için sağlanan çalışma işlevi zamanlar. Bu yöntemde bir [task_handle](task-handle-class.md) sağlanan çalışma işlevi bir kopyasını tutacak nesne. Bu nedenle, bu yönteme geçirin bir işlev nesnesi içinde gerçekleşen durumu değişiklikleri, bu işlev nesnesi kopyanızda görünmez. Ayrıca, iş işlev dönene kadar işaretçi veya başvuruya iş işleve göre geçirdiğiniz tüm nesnelerin ömrünü geçerli kalır emin olun.  
@@ -167,14 +167,14 @@ task_group_status run_and_wait(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Function`  
- Görevin yürütmek için çağrılacak işlev nesnesinin türü.  
+*_Function*<br/>
+Görevin yürütmek için çağrılacak işlev nesnesinin türü.  
   
- `_Task_handle`  
- Satır içi arama bağlamda çalıştırılacak görev için bir tanıtıcı. Çağıranın bu nesnenin ömrünü sorumluluğunu olduğuna dikkat edin. Çalışma zamanı kadar Canlı beklediğiniz devam edecek `run_and_wait` yöntemi yürütme biter.  
+*_Task_handle*<br/>
+Satır içi arama bağlamda çalıştırılacak görev için bir tanıtıcı. Çağıranın bu nesnenin ömrünü sorumluluğunu olduğuna dikkat edin. Çalışma zamanı kadar Canlı beklediğiniz devam edecek `run_and_wait` yöntemi yürütme biter.  
   
- `_Func`  
- İş gövdesi çağırmak için çağrılacak işlev. Bu bir lambda ifadesi veya işlev çağrısı işleci imzalı sürümünü destekleyen başka bir nesneyi olabilir `void operator()()`.  
+*_Func*<br/>
+İş gövdesi çağırmak için çağrılacak işlev. Bu bir lambda ifadesi veya işlev çağrısı işleci imzalı sürümünü destekleyen başka bir nesneyi olabilir `void operator()()`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir gösterge olup bekleme memnun ettiyse veya görev grubu, bir açık İptal işlemi veya görevleri birinden oluşturulan bir özel durum nedeniyle iptal edildi. Daha fazla bilgi için [task_group_status](concurrency-namespace-enums.md#task_group_status).  
@@ -202,8 +202,8 @@ task_group(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_CancellationToken`  
- Bu görev grubu ile ilişkilendirilecek iptal belirteci. Belirteç iptal edildiğinde görev grubunu iptal edilir.  
+*_CancellationToken*<br/>
+Bu görev grubu ile ilişkilendirilecek iptal belirteci. Belirteç iptal edildiğinde görev grubunu iptal edilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İptali belirteci alan oluşturucu bir `task_group` , iptal edilemez belirteçle ilişkili kaynak iptal edildiğinde. Bir açık bir iptal belirteci sağlayan örtük bir iptal belirteci yok ya da farklı bir belirteç ile bir üst gruptan katılan bu görev grubunun yalıtır.  

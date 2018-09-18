@@ -16,29 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af0342d3e8e6011e37b0588515299f2a0ab7b761
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0eeecedd3ad2cee551b6003912d9b7af32883588
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33241026"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026081"
 ---
 # <a name="compiler-error-c2473"></a>Derleyici Hatası C2473
-'tanımlayıcısı': işlev tanımı gibi görünüyor, ancak hiçbir parametre listesi yok.  
-  
- Derleyici ne gibi bir işlev parametre listesi olmadan Aranan algıladı.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2473 oluşturur.  
-  
-```  
-// C2473.cpp  
-// compile with: /clr /c  
-class A {  
-   int i {}   // C2473  
-};  
-  
-class B {  
-   int i() {}   // OK  
-};  
+
+'identifier': işlev tanımı gibi görünüyor, ancak hiçbir parametre listesi yoktur.
+
+Derleyici, parametre listesi olmayan bir işlev göründüğüne algıladı.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2473 oluşturur.
+
+```
+// C2473.cpp
+// compile with: /clr /c
+class A {
+   int i {}   // C2473
+};
+
+class B {
+   int i() {}   // OK
+};
 ```

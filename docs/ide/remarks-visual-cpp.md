@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 409f10dffdf6816f3ff0ab4e71060c9bcb6eaf9f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 5bf60222b276050af5296d678985eda8fd12948b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684218"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027576"
 ---
 # <a name="ltremarksgt-visual-c"></a>&lt;Açıklamalar&gt; (Visual C++)
 \<Remarks > etiketi, bir tür hakkında bilgi eklemek için kullanılır, ek bilgiler ile belirtilen [ \<Özet >](../ide/summary-visual-cpp.md). Bu bilgileri görüntülenen [Nesne Tarayıcısı](/visualstudio/ide/viewing-the-structure-of-code) ve kod açıklaması Web raporu.  
@@ -35,8 +35,8 @@ ms.locfileid: "43684218"
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `description`  
- Üye açıklaması.  
+*Açıklaması*<br/>
+Üye açıklaması.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.  

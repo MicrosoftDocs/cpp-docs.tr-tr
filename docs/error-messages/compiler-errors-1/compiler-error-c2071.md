@@ -16,40 +16,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: faee56023d14e9b010d1c691af654ffcbc31dc78
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 757110c88d3279964ab0c26f753e4d3b1f2889d5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169211"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025873"
 ---
 # <a name="compiler-error-c2071"></a>Derleyici Hatası C2071
-'tanımlayıcısı': Geçersiz depolama sınıfı  
-  
- `identifier` Geçersiz bir bildirildi [depolama sınıfı](../../c-language/c-storage-classes.md). Birden fazla depolama sınıfı tanımlayıcısı belirtildiğinde veya tanımı depolama sınıf bildirimi ile uyumsuz olduğunda bu hata oluşabilir.  
-  
- Bu sorunu gidermek için hedeflenen depolama sınıfı tanımlayıcısı anlamanız — Örneğin, `static` veya `extern`— ve bildirimi eşleşecek şekilde düzeltin.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2071 oluşturur.  
-  
-```  
-// C2071.cpp  
-// compile with: /c  
-struct C {  
-   extern int i;   // C2071  
-};  
-struct D {  
-   int i;   // OK, no extern on an automatic  
-};  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2071 oluşturur.  
-  
-```  
-// C2071_b.cpp  
-// compile with: /c  
-typedef int x(int i) { return i; }   // C2071  
-typedef int (x)(int);   // OK, no local definition in typedef  
+
+'identifier': Geçersiz depolama sınıfı
+
+`identifier` Geçersiz bir bildirildi [depolama sınıfı](../../c-language/c-storage-classes.md). Birden fazla depolama sınıfı tanımlayıcısı olarak belirtildiğinde veya tanımı depolama sınıfı bildirimle uyumsuz olduğunda bu hatayı neden olabilir.
+
+Bu sorunu gidermek için hedeflenen depolama sınıfı tanımlayıcısının anlamak — Örneğin, `static` veya `extern`— bildirimi eşleşecek şekilde düzeltin.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2071 oluşturur.
+
+```
+// C2071.cpp
+// compile with: /c
+struct C {
+   extern int i;   // C2071
+};
+struct D {
+   int i;   // OK, no extern on an automatic
+};
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2071 oluşturur.
+
+```
+// C2071_b.cpp
+// compile with: /c
+typedef int x(int i) { return i; }   // C2071
+typedef int (x)(int);   // OK, no local definition in typedef
 ```

@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ee4215d9407a9dc873c7affdf97e4d16c55ec2a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 728d22a7af72232618716e665b241188773cd66c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199543"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031294"
 ---
 # <a name="compiler-error-c2611"></a>Derleyici Hatası C2611
-'belirteci': Geçersiz aşağıdaki ' ~' (beklenen tanımlayıcısı)  
-  
- Simge bir tanımlayıcı değil.  
-  
- Aşağıdaki örnek C2611 oluşturur:  
-  
-```  
-// C2611.cpp  
-// compile with: /c  
-class C {  
-   C::~operator int();   // C2611  
-   ~C();   // OK  
-};  
+
+'token': Geçersiz aşağıdaki ' ~' (tanımlayıcı bekleniyor)
+
+Belirteç bir tanımlayıcı değil.
+
+Aşağıdaki örnek, C2611 oluşturur:
+
+```
+// C2611.cpp
+// compile with: /c
+class C {
+   C::~operator int();   // C2611
+   ~C();   // OK
+};
 ```

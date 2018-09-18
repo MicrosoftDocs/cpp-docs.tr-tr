@@ -23,14 +23,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8b67fc55a8af2bed554254732832cbd6486d2420
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: c6d8a07ded3da02c21c4ee8c528474efc6e52b6c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464588"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021570"
 ---
 # <a name="idbcreatecommandimpl-class"></a>IDBCreateCommandImpl Sınıfı
+
 Bir uygulamasını sağlar [IDBCreateCommand](/previous-versions/windows/desktop/ms711625\(v=vs.85\)) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -42,14 +43,16 @@ class ATL_NO_VTABLE IDBCreateCommandImpl
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *T*  
- Oturum nesnesi türetilen `IDBCreateCommandImpl`.  
+
+*T*<br/>
+Oturum nesnesi türetilen `IDBCreateCommandImpl`.  
   
- *CommandClass*  
- Komutu sınıfınızın.  
+*CommandClass*<br/>
+Komutu sınıfınızın.  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldb.h  
+
+**Başlık:** atldb.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -60,9 +63,11 @@ class ATL_NO_VTABLE IDBCreateCommandImpl
 |[CreateCommand](#createcommand)|Yeni bir komut oluşturur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yeni bir komut almak için oturum nesnesi üzerinde isteğe bağlı bir arabirim.  
+
+Yeni bir komut almak için oturum nesnesi üzerinde isteğe bağlı bir arabirim.  
 
 ## <a name="createcommand"></a> Idbcreatecommandımpl::CreateCommand
+
 Yeni bir komut oluşturur ve istenen arabirim döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -74,14 +79,16 @@ STDMETHOD(CreateCommand)(IUnknown * pUnkOuter,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IDBCreateCommand::CreateCommand](/previous-versions/windows/desktop/ms709772\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IDBCreateCommand::CreateCommand](/previous-versions/windows/desktop/ms709772\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
- Bazı parametreler karşılık *OLE DB Programcının Başvurusu* açıklanan farklı adlar parametrelerinin `IDBCreateCommand::CreateCommand`:  
+Bazı parametreler karşılık *OLE DB Programcının Başvurusu* açıklanan farklı adlar parametrelerinin `IDBCreateCommand::CreateCommand`:  
   
 |OLE DB Şablon parametreleri|*OLE DB Programcının Başvurusu* parametreleri|  
 |--------------------------------|------------------------------------------------|  
 |*ppvCommand*|*ppCommand*|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

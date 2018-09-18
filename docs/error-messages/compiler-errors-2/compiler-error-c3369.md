@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a15a8e52b7bf311f20883c6ebc5635e86c6a7ffd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b111889c6a4203f5b63a7a644adbc7a51d8a810a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248720"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018009"
 ---
 # <a name="compiler-error-c3369"></a>Derleyici Hatası C3369
-'modül adı': önceden tanımlanmış idl_module  
-  
- [İdl_module](../../windows/idl-module.md) DLL tanımladığınız yerlerde kullanım yalnızca oluşabilir kez bir programda.  
-  
- Aşağıdaki örnek C3369 oluşturur:  
-  
-```  
-// C3369.cpp  
-// compile with: /c  
-[idl_module(name="name1", dllname="x.dll")]; // C3369  
-[idl_module(name="name1", dllname="x.dll")];  
+
+'modül adı': idl_module zaten tanımlanmış
+
+[İdl_module](../../windows/idl-module.md) DLL tanımladığınız kullanım yalnızca oluşabilir kez bir programda.
+
+Aşağıdaki örnek, C3369 oluşturur:
+
+```
+// C3369.cpp
+// compile with: /c
+[idl_module(name="name1", dllname="x.dll")]; // C3369
+[idl_module(name="name1", dllname="x.dll")];
 ```

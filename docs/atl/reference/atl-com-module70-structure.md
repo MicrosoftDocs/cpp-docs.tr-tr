@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf975b0b434218d1917c2d630582e32cd287e298
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 7cfa52749f6789ef8bfe65f9bdcdf5238923216f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755079"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019391"
 ---
 # <a name="atlcommodule70-structure"></a>_ATL_COM_MODULE70 yapısı
 
@@ -44,19 +44,19 @@ struct _ATL_COM_MODULE70 {
 
 ## <a name="members"></a>Üyeler
 
-`cbSize`  
+`cbSize`<br/>
 Sürüm oluşturma için kullanılan bir yapının boyutu.
 
-`m_hInstTypeLib`  
+`m_hInstTypeLib`<br/>
 Bu modül için tür kitaplığı için tanıtıcı örneği.
 
-`m_ppAutoObjMapFirst`  
+`m_ppAutoObjMapFirst`<br/>
 Bu modülü için nesne eşleme girişleri başlangıcını gösteren bir dizi öğenin adresi.
 
-`m_ppAutoObjMapLast`  
+`m_ppAutoObjMapLast`<br/>
 Bu modülü için nesne eşleme girişleri sonuna belirten dizi öğesinin adresi.
 
-`m_csObjMap`  
+`m_csObjMap`<br/>
 Nesne eşleme girişleri erişimi serileştirmek için kritik bölüm. ATL tarafından dahili olarak kullanılır
 
 ## <a name="remarks"></a>Açıklamalar

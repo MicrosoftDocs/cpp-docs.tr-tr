@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17ae5ac4abbdabc68813a7f1d8f25cac138961e6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ea0aa3daada09f5e1daae7f50caeb214db1aaadd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294709"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020595"
 ---
 # <a name="linker-tools-error-lnk1143"></a>Bağlayıcı Araçları Hatası LNK1143
-geçersiz veya bozuk dosya: comdat'ı bölüm numarası yok simgesi  
-  
- Nesne dosyası bozuk olduğunda bu hata oluşabilir.  
-  
- Dosyayı yeniden oluşturun.
+
+dosya geçersiz veya bozuk: COMDAT bölümü numarası için Sembol yok
+
+Nesne dosyası bozuk olduğunda bu hata oluşabilir.
+
+Dosyayı yeniden oluşturun.

@@ -16,36 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: baeb6e97549bb55212d336e9f832152abaf7db68
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 39fe816c2637df5e5a474718d70b404bbc0c2df6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33270722"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030038"
 ---
 # <a name="compiler-error-c3898"></a>Derleyici Hatası C3898
-'var': tür veri üyeleri yalnızca yönetilen türler üyeleri olabilir  
-  
- Bir [initonly](../../dotnet/initonly-cpp-cli.md) veri üyesi yerel bir sınıfta bildirilmedi.  Bir `initonly` veri üyesi yalnızca bir CLR sınıfında bildirilebilir.  
-  
- Aşağıdaki örnek C3898 oluşturur:  
-  
-```  
-// C3898.cpp  
-// compile with: /clr  
-struct Y1 {  
-   initonly  
-   static int data_var = 9;   // C3898  
-};  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C3898b.cpp  
-// compile with: /clr /c  
-ref struct Y1 {  
-   initonly  
-   static int data_var = 9;  
-};  
+
+'var': tür veri üyeleri yalnızca yönetilen türlerin üyeleri olabilir
+
+Bir [initonly](../../dotnet/initonly-cpp-cli.md) veri üyesi, bir yerel sınıf içinde bildirildi.  Bir `initonly` veri üyesi yalnızca bir CLR sınıfında bildirilebilir.
+
+Aşağıdaki örnek, C3898 oluşturur:
+
+```
+// C3898.cpp
+// compile with: /clr
+struct Y1 {
+   initonly
+   static int data_var = 9;   // C3898
+};
+```
+
+Olası çözüm:
+
+```
+// C3898b.cpp
+// compile with: /clr /c
+ref struct Y1 {
+   initonly
+   static int data_var = 9;
+};
 ```

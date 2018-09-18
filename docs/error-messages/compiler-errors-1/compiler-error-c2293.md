@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6b3f395199a1621d507683aa6c79b1212888145
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9c5a24be3c51f17d12712b950babe5e723f1633c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171200"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031177"
 ---
 # <a name="compiler-error-c2293"></a>Derleyici Hatası C2293
-'tanımlayıcısı': __based tanımlayıcısı olarak bir üye değişkeni için geçersiz  
-  
- Tanımlayıcıları `__based` değiştiricisi dahil olmayan işaretçileri olması gerekir.  
-  
- Aşağıdaki örnek C2293 oluşturur:  
-  
-```  
-// C2293.cpp  
-// compile with: /c  
-class A {  
-   static int *i;  
-   void __based(i) *bp;   // C2293  
-   void *bp2;   // OK  
-};  
+
+'identifier': bir __based belirticisi olarak bir üye değişkeni için geçersiz
+
+Tanımlayıcıları `__based` değiştiricisi değiştiricilere işaretçileri olması gerekir.
+
+Aşağıdaki örnek, C2293 oluşturur:
+
+```
+// C2293.cpp
+// compile with: /c
+class A {
+   static int *i;
+   void __based(i) *bp;   // C2293
+   void *bp2;   // OK
+};
 ```

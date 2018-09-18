@@ -30,15 +30,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56b936e1ecb3864b7a7bb95f3e552c16d2ce81d0
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: a8bc30d3fe394dd9940e716be69a7c10360da59f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33693419"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028629"
 ---
 # <a name="choice-class"></a>seçenek Sınıfı
-A `choice` ileti bloğu olan bir kaynak kümesi akış denetimi etkileşim temsil eden birden çok kaynak, tek hedef blok. Seçim bloğu bir iletisi oluşturmak üzere birden çok kaynaktan herhangi biri için bekler ve ileti üretilen kaynak dizini yayılır.  
+A `choice` ileti bloğu bir kaynak kümesi denetim akışı etkileşim temsil eden çok kaynak, hedef tek bir blok. Seçim bloğu bir iletisi oluşturmak üzere birden çok kaynaktan herhangi biri için bekleyeceği ve ileti üretilen kaynak dizinini yayılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -50,45 +50,45 @@ class choice: public ISource<size_t>;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- A `tuple`-giriş kaynağı yüklerini temsil eden tür tabanlı.  
+*T*<br/>
+A `tuple`-yüklerini giriş kaynakları temsil eden türüne göre.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`type`|İçin bir tür diğer adı `T`.|  
+|`type`|Bir tür diğer adı için `T`.|  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Seçim](#ctor)|Fazla Yüklendi. Oluşturan bir `choice` ileti bloğu.|  
-|[~ choice yok Edicisi](#dtor)|Bozar `choice` ileti bloğu.|  
+|[Seçim](#ctor)|Fazla Yüklendi. Oluşturur bir `choice` ileti bloğu.|  
+|[~ choice yok Edicisi](#dtor)|Yok eder `choice` ileti bloğu.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Kabul et](#accept)|Bu tarafından sunulan bir iletiyi kabul `choice` çağırana sahipliğini aktarma bloğu.|  
-|[acquire_ref](#acquire_ref)|Bu başvuru sayısı edinir `choice` silinmesini önlemek için ileti bloğu.|  
-|[Kullanma](#consume)|Daha önce bu tarafından sunulan bir ileti tüketir `choice` blok Mesajlaşma ve başarıyla çağırana sahipliğini aktarma hedef tarafından ayrılmış.|  
-|[has_value](#has_value)|Denetler olup olmadığını bu `choice` ileti bloğu başlatıldıysa bir değerle henüz.|  
+|[Kabul et](#accept)|Bu tarafından sunulan bir iletiyi kabul `choice` engelleme, arayana sahipliğini aktarma.|  
+|[acquire_ref](#acquire_ref)|Bu başvuru sayısını alması `choice` silinmesini engellemek için ileti bloğu.|  
+|[kullanma](#consume)|Daha önce bu tarafından sunulan iletiyi tüketir `choice` blok Mesajlaşma ve çağırana sahipliğini aktarma hedefi, başarılı bir şekilde ayrılmıştır.|  
+|[has_value](#has_value)|Denetler olup bu `choice` ileti bloğu başlatıldıysa bir değerle henüz.|  
 |[Dizin](#index)|Bir dizine döndürür `tuple` tarafından seçilen öğeyi temsil eden `choice` ileti bloğu.|  
-|[link_target](#link_target)|Hedef blok için bağlantılar `choice` ileti bloğu.|  
-|[Sürüm](#release)|Bir önceki başarılı ileti ayırma serbest bırakır.|  
-|[release_ref](#release_ref)|Serbest başvuru sayısı bu `choice` ileti bloğu.|  
-|[ayırma](#reserve)|Daha önce bu tarafından sunulan bir ileti ayırır `choice` ileti bloğu.|  
-|[unlink_target](#unlink_target)|Hedef blok bu bağlantıyı keser `choice` ileti bloğu.|  
-|[unlink_targets](#unlink_targets)|Tüm hedefleri bu bağlantıyı keser `choice` ileti bloğu. (Geçersiz kılmaları [Isource::unlink_targets](isource-class.md#unlink_targets).)|  
-|[value](#value)|Dizinini tarafından seçildiğinde iletisini alır `choice` ileti bloğu.|  
+|[link_target](#link_target)|Bir hedef bloğu için bağlantı `choice` ileti bloğu.|  
+|[Yayın](#release)|Önceki bir başarılı iletisi ayırma serbest bırakır.|  
+|[release_ref](#release_ref)|Bir başvuru sayısı bu sürümleri `choice` ileti bloğu.|  
+|[ayırma](#reserve)|Daha önce bu tarafından sunulan bir iletiyi ayırdıktan `choice` ileti bloğu.|  
+|[unlink_target](#unlink_target)|Bu hedef bloğun olan bağlantısını kesen `choice` ileti bloğu.|  
+|[unlink_targets](#unlink_targets)|Bu tüm hedefleri olan bağlantısını kesen `choice` ileti bloğu. (Geçersiz kılmaları [Isource::unlink_targets](isource-class.md#unlink_targets).)|  
+|[value](#value)|Dizini tarafından seçilmedi iletisini alır `choice` ileti bloğu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Seçim bloğu gelen iletileri yalnızca biri tüketiliyor sağlar.  
+ Gelen iletiler yalnızca biri tüketilir seçim bloğu sağlar.  
   
- Daha fazla bilgi için bkz: [zaman uyumsuz ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).  
+ Daha fazla bilgi için [zaman uyumsuz ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [Isource](isource-class.md)  
@@ -102,7 +102,7 @@ class choice: public ISource<size_t>;
   
 ##  <a name="accept"></a> Kabul et 
 
- Bu tarafından sunulan bir iletiyi kabul `choice` çağırana sahipliğini aktarma bloğu.  
+ Bu tarafından sunulan bir iletiyi kabul `choice` engelleme, arayana sahipliğini aktarma.  
   
 ```  
 virtual message<size_t>* accept(
@@ -111,33 +111,33 @@ virtual message<size_t>* accept(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_MsgId`  
- `runtime_object_identity` Sunulan, `message` nesnesi.  
+*_MsgId*<br/>
+`runtime_object_identity` Sunulan, `message` nesne.  
   
- `_PTarget`  
- Çağırma hedef blok gösteren bir işaretçi `accept` yöntemi.  
+*_PTarget*<br/>
+Çağıran bir hedef blok için işaretçi `accept` yöntemi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi çağıran şimdi sahipliği var. iletisi.  
+ Arayanın artık sahipliğini olan iletisi için bir işaretçi.  
   
 ##  <a name="acquire_ref"></a> acquire_ref 
 
- Bu başvuru sayısı edinir `choice` silinmesini önlemek için ileti bloğu.  
+ Bu başvuru sayısını alması `choice` silinmesini engellemek için ileti bloğu.  
   
 ```  
 virtual void acquire_ref(_Inout_ ITarget<size_t>* _PTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PTarget`  
- Bu yöntemin çağrılması hedef blok için bir işaretçi.  
+*_PTarget*<br/>
+Bu yöntemi çağıran bir hedef blok için işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem tarafından çağrılır bir `ITarget` sırasında bu kaynak için bağlantılı nesne `link_target` yöntemi.  
+ Bu yöntemi çağıran bir `ITarget` sırasında bu kaynağa bağlı nesnesi `link_target` yöntemi.  
   
 ##  <a name="ctor"></a> Seçim 
 
- Oluşturan bir `choice` ileti bloğu.  
+ Oluşturur bir `choice` ileti bloğu.  
   
 ```  
 explicit choice(
@@ -159,34 +159,34 @@ choice(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Tuple`  
- A `tuple` seçimi için kaynakları.  
+*_Tuple*<br/>
+A `tuple` seçimi için kaynaklar.  
   
- `_PScheduler`  
- `Scheduler` İçinde yayma görev için nesne `choice` ileti bloğu zamanlandı.  
+*_PScheduler*<br/>
+`Scheduler` İçinde Yayma görevi için nesne `choice` ileti bloğu zamanlandı.  
   
- `_PScheduleGroup`  
- `ScheduleGroup` İçinde yayma görev için nesne `choice` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından kapsanan.  
+*_PScheduleGroup*<br/>
+`ScheduleGroup` İçinde Yayma görevi için nesne `choice` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından belirtilir.  
   
- `_Choice`  
- A `choice` kopyalamak için ileti bloğu. Özgün nesne, bu bir taşıma oluşturucusuna yapmadan yalnız bırakılmış olduğunu unutmayın.  
+*_Choice*<br/>
+A `choice` kopyalamak için ileti bloğu. Orijinal nesneyi, bu bir taşıma Oluşturucusu yapma yalnız bırakılmış olduğunu unutmayın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çalışma zamanı belirtmezseniz varsayılan Zamanlayıcısı'nı kullanıyorsa `_PScheduler` veya `_PScheduleGroup` parametreleri.  
+ Çalışma zamanı belirtmezseniz varsayılan Zamanlayıcı kullanıyorsa `_PScheduler` veya `_PScheduleGroup` parametreleri.  
   
- Taşıma yapım hafif görevleri uçuş modunda taşıma sırasında emin olmak için kullanıcı kadar olduğu anlamına gelir bir kilit altında yapılmaz. Aksi takdirde, özel durumları veya tutarsız önde gelen çok sayıda diğerleriyle oluşabilir.  
+ Basit görev uçuşta taşıma sırasında emin olmak için kullanıcı en fazla olduğunu gösterir bir kilidi altında taşıma oluşturma yapılmaz. Aksi takdirde, özel durumlar veya tutarsız için önde gelen çok sayıda yarışa hazır oluşabilir.  
   
-##  <a name="dtor"></a> ~ Seçimi 
+##  <a name="dtor"></a> ~ Seçim 
 
- Bozar `choice` ileti bloğu.  
+ Yok eder `choice` ileti bloğu.  
   
 ```  
 ~choice();
 ```  
   
-##  <a name="consume"></a> Kullanma 
+##  <a name="consume"></a> kullanma 
 
- Daha önce bu tarafından sunulan bir ileti tüketir `choice` blok Mesajlaşma ve başarıyla çağırana sahipliğini aktarma hedef tarafından ayrılmış.  
+ Daha önce bu tarafından sunulan iletiyi tüketir `choice` blok Mesajlaşma ve çağırana sahipliğini aktarma hedefi, başarılı bir şekilde ayrılmıştır.  
   
 ```  
 virtual message<size_t>* consume(
@@ -195,21 +195,21 @@ virtual message<size_t>* consume(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_MsgId`  
- `runtime_object_identity` Ayrılmış, `message` nesnesi.  
+*_MsgId*<br/>
+`runtime_object_identity` Ayrılmış, `message` nesne.  
   
- `_PTarget`  
- Çağırma hedef blok gösteren bir işaretçi `consume` yöntemi.  
+*_PTarget*<br/>
+Çağıran bir hedef blok için işaretçi `consume` yöntemi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi `message` çağıran şimdi sahipliği var. nesne.  
+ Bir işaretçi `message` nesne arayan sahipliğini artık sahiptir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `consume` Yöntemi benzer `accept`, her zaman için yapılan bir çağrı tarafından gelmelidir ancak `reserve` döndürülen `true`.  
+ `consume` Yöntemi benzer `accept`, ancak her zaman bir çağrı tarafından gelmelidir `reserve` döndürülen `true`.  
   
 ##  <a name="has_value"></a> has_value 
 
- Denetler olup olmadığını bu `choice` ileti bloğu başlatıldıysa bir değerle henüz.  
+ Denetler olup bu `choice` ileti bloğu başlatıldıysa bir değerle henüz.  
   
 ```  
 bool has_value() const;
@@ -218,7 +218,7 @@ bool has_value() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` bir değer blok aldıysa `false` Aksi takdirde.  
+ `true` blok bir değer aldıysa `false` Aksi takdirde.  
   
 ##  <a name="index"></a> Dizin 
 
@@ -232,23 +232,23 @@ size_t index();
  İleti dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İleti yükü kullanarak ayıklanabilir `get` yöntemi.  
+ İleti yükü kullanarak ayıklanabileceği `get` yöntemi.  
   
 ##  <a name="link_target"></a> link_target 
 
- Hedef blok için bağlantılar `choice` ileti bloğu.  
+ Bir hedef bloğu için bağlantı `choice` ileti bloğu.  
   
 ```  
 virtual void link_target(_Inout_ ITarget<size_t>* _PTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PTarget`  
- Bir işaretçi bir `ITarget` Bağlanılacak blok `choice` ileti bloğu.  
+*_PTarget*<br/>
+Bir işaretçi bir `ITarget` bloğu için bağlantı `choice` ileti bloğu.  
   
-##  <a name="release"></a> Sürüm 
+##  <a name="release"></a> Yayın 
 
- Bir önceki başarılı ileti ayırma serbest bırakır.  
+ Önceki bir başarılı iletisi ayırma serbest bırakır.  
   
 ```  
 virtual void release(
@@ -257,30 +257,30 @@ virtual void release(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_MsgId`  
- `runtime_object_identity` , `message` Yayımlanan nesne.  
+*_MsgId*<br/>
+`runtime_object_identity` , `message` Yayımlanan nesne.  
   
- `_PTarget`  
- Çağırma hedef blok gösteren bir işaretçi `release` yöntemi.  
+*_PTarget*<br/>
+Çağıran bir hedef blok için işaretçi `release` yöntemi.  
   
 ##  <a name="release_ref"></a> release_ref 
 
- Serbest başvuru sayısı bu `choice` ileti bloğu.  
+ Bir başvuru sayısı bu sürümleri `choice` ileti bloğu.  
   
 ```  
 virtual void release_ref(_Inout_ ITarget<size_t>* _PTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PTarget`  
- Bu yöntemin çağrılması hedef blok için bir işaretçi.  
+*_PTarget*<br/>
+Bu yöntemi çağıran bir hedef blok için işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem tarafından çağrılır bir `ITarget` bu kaynaktan bağlantısız nesnesi. Kaynak blok için hedef blok ayrılan tüm kaynakları serbest bırakmak izin verilmez.  
+ Bu yöntemi çağıran bir `ITarget` bu kaynaktan bağlantısız bir nesne. Kaynak blok için hedef blok ayrılmış tüm kaynakları serbest bırakmak için kullanılabilir.  
   
 ##  <a name="reserve"></a> ayırma 
 
- Daha önce bu tarafından sunulan bir ileti ayırır `choice` ileti bloğu.  
+ Daha önce bu tarafından sunulan bir iletiyi ayırdıktan `choice` ileti bloğu.  
   
 ```  
 virtual bool reserve(
@@ -289,44 +289,44 @@ virtual bool reserve(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_MsgId`  
- `runtime_object_identity` , `message` Ayrılan nesne.  
+*_MsgId*<br/>
+`runtime_object_identity` , `message` Ayrılan nesne.  
   
- `_PTarget`  
- Çağırma hedef blok gösteren bir işaretçi `reserve` yöntemi.  
+*_PTarget*<br/>
+Çağıran bir hedef blok için işaretçi `reserve` yöntemi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` İletiyi başarıyla ayrıldı, `false` Aksi takdirde. Ayırmalar dahil olmak üzere çeşitli nedenlerle başarısız olabilir: ileti zaten ayrılmış veya kaynak sağlanamadı ayırmaları Reddet ve benzeri başka bir hedef tarafından kabul.  
+ `true` iletinin başarıyla ayrıldı, `false` Aksi takdirde. Ayırmalar dahil olmak üzere çeşitli nedenlerle başarısız olabilir: ileti zaten ayrılmış veya kaynak ayırmaları Reddet vb. başka bir hedef tarafından kabul.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağırdıktan sonra `reserve`, başarılı olursa ya da çağırmalıdır `consume` veya `release` alın veya ileti elinde sırasıyla vermek için.  
+ Çağırdıktan sonra `reserve`, başarılı olursa ya da çağırmalıdır `consume` veya `release` alabilir veya ileti, bir elinde sırasıyla vermek için.  
   
 ##  <a name="unlink_target"></a> unlink_target 
 
- Hedef blok bu bağlantıyı keser `choice` ileti bloğu.  
+ Bu hedef bloğun olan bağlantısını kesen `choice` ileti bloğu.  
   
 ```  
 virtual void unlink_target(_Inout_ ITarget<size_t>* _PTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PTarget`  
- Bir işaretçi bir `ITarget` öğesinden bağlantısını kesmek için blok `choice` ileti bloğu.  
+*_PTarget*<br/>
+Bir işaretçi bir `ITarget` buradan bağlantısını kaldırmak için bloğu `choice` ileti bloğu.  
   
 ##  <a name="unlink_targets"></a> unlink_targets 
 
- Tüm hedefleri bu bağlantıyı keser `choice` ileti bloğu.  
+ Bu tüm hedefleri olan bağlantısını kesen `choice` ileti bloğu.  
   
 ```  
 virtual void unlink_targets();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, yıkıcı çünkü çağrılması gerekmez. yıkıcı iç için `single_assignment` blok bağlantısını düzgün.  
+ Bu yöntem, çünkü yok ediciden çağrılması gerekmez. iç için yıkıcı `single_assignment` blok bağlantısını doğru.  
   
 ##  <a name="value"></a> Değer 
 
- Dizinini tarafından seçildiğinde iletisini alır `choice` ileti bloğu.  
+ Dizini tarafından seçilmedi iletisini alır `choice` ileti bloğu.  
   
 ```  
 template <
@@ -336,14 +336,14 @@ _Payload_type const& value();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Payload_type`  
- İleti yükü türü.  
+*_Payload_type*<br/>
+İleti yükü türü.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İletinin yükü.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çünkü bir `choice` ileti bloğu girişleri farklı yükü türleriyle alabilir, alma noktasında yükü türünü belirtmeniz gerekir. Sonucuna göre türü belirleyebilirsiniz `index` yöntemi.  
+ Çünkü bir `choice` ileti engelleme, farklı yük türleri ile girişleri alabilir, yükü alma noktasında türünü belirtmeniz gerekir. Sonucuna göre türü belirleyebilir `index` yöntemi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

@@ -17,57 +17,60 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d5ee7e0b9679fc4fd4e4cd9c541c38dd4446e47c
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: abe0c1a2e443e88879cd7005d944acfcacc3c17d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404372"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031476"
 ---
 # <a name="raise"></a>__raise
-Bir olayın çağrı sitesini vurgular.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-__raise method-declarator;  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Yönetilen koddan bir olay yalnızca tanımlandığı sınıfın içinden oluşturulabilir. Bkz: [olay](../windows/event-cpp-component-extensions.md) daha fazla bilgi için.  
-  
- Anahtar sözcüğü **__raise** dışı bir olay çağırırsanız yayılan bir hataya neden olur.  
-  
+
+Bir olayın çağrı sitesini vurgular.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+__raise method-declarator;
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Yönetilen koddan bir olay yalnızca tanımlandığı sınıfın içinden oluşturulabilir. Bkz: [olay](../windows/event-cpp-component-extensions.md) daha fazla bilgi için.
+
+Anahtar sözcüğü **__raise** dışı bir olay çağırırsanız yayılan bir hataya neden olur.
+
 > [!NOTE]
->  Şablonlu bir alan veya yapı, olay içeremez.  
-  
-## <a name="example"></a>Örnek  
-  
-```cpp 
-// EventHandlingRef_raise.cpp  
-struct E {  
-   __event void func1();  
-   void func1(int) {}  
-  
-   void func2() {}  
-  
-   void b() {  
-      __raise func1();  
-      __raise func1(1);  // C3745: 'int Event::bar(int)':   
-                         // only an event can be 'raised'  
-      __raise func2();   // C3745  
-   }  
-};  
-  
-int main() {  
-   E e;  
-   __raise e.func1();  
-   __raise e.func1(1);  // C3745  
-   __raise e.func2();   // C3745  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [anahtar sözcükler](../cpp/keywords-cpp.md)   
- [Olay işleme](../cpp/event-handling.md)   
- [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+>  Şablonlu bir alan veya yapı, olay içeremez.
+
+## <a name="example"></a>Örnek
+
+```cpp
+// EventHandlingRef_raise.cpp
+struct E {
+   __event void func1();
+   void func1(int) {}
+
+   void func2() {}
+
+   void b() {
+      __raise func1();
+      __raise func1(1);  // C3745: 'int Event::bar(int)':
+                         // only an event can be 'raised'
+      __raise func2();   // C3745
+   }
+};
+
+int main() {
+   E e;
+   __raise e.func1();
+   __raise e.func1(1);  // C3745
+   __raise e.func2();   // C3745
+}
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[Olay İşleme](../cpp/event-handling.md)<br/>
+[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

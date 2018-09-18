@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd1df20ab022df9ce1321c2f6de77bf7591fec3d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a320fb08eaf19b5ed53000ffecd17d747e7a3000
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33304732"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019711"
 ---
 # <a name="expression-evaluator-error-cxx0032"></a>İfade Değerlendirici Hatası CXX0032
-0 ile bölme  
-  
- İfade geçersiz sıfır bölen içeriyor. Bu bölen değişmez değer sayısı sıfır olabilir veya sıfır olarak değerlendiren bir ifade olabilir.  
-  
- Bu hata için CAN0032 aynıdır.
+
+0 ile bölme
+
+Geçersiz sıfır, bir bölen ifade içeriyor. Bu bölen değişmez değer sıfır sayı olabilir veya sıfır olarak değerlendirilen bir ifade olabilir.
+
+Bu hata için CAN0032 aynıdır.

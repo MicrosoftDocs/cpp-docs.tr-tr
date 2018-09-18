@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 320e0f4560baa5b07c982ca9af6134cf2bfdc292
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: adc6467a66163eeef5916580181005cac1a0a4b6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695661"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016943"
 ---
 # <a name="improperschedulerreference-class"></a>improper_scheduler_reference Sınıfı
-Bu sınıf ne zaman oluşturulan bir özel tanımlar `Reference` yöntemi çağrıldığında bir `Scheduler` aşağı, bu Zamanlayıcı parçası olmayan bir bağlamından kapatılıyor nesne.  
+Bu sınıf oluşan bir özel durumu anlatmaktadır `Reference` yöntemi çağrıldığında bir `Scheduler` aşağı, bu Zamanlayıcı bir parçası olmayan bir bağlamdan kapatılıyor nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,7 +40,7 @@ class improper_scheduler_reference : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[improper_scheduler_reference](#ctor)|Fazla Yüklendi. Oluşturan bir `improper_scheduler_reference` nesnesi.|  
+|[improper_scheduler_reference](#ctor)|Fazla Yüklendi. Oluşturur bir `improper_scheduler_reference` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -54,7 +54,7 @@ class improper_scheduler_reference : public std::exception;
   
 ##  <a name="ctor"></a> improper_scheduler_reference 
 
- Oluşturan bir `improper_scheduler_reference` nesnesi.  
+ Oluşturur bir `improper_scheduler_reference` nesne.  
   
 ```
 explicit _CRTIMP improper_scheduler_reference(_In_z_ const char* _Message) throw();
@@ -63,8 +63,8 @@ improper_scheduler_reference() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

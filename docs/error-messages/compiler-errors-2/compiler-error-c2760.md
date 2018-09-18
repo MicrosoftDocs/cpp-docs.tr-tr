@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: beee34b7dfa31365e9bdf79c843cca501a930e02
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9ae920b9bf0d6d8a743bd9defac883304e80c117
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229842"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026094"
 ---
 # <a name="compiler-error-c2760"></a>Derleyici Hatası C2760
-sözdizimi hatası: beklenen 'Ad1' yok 'ad2'  
-  
- Atama işleci geçersiz bir işleç ile kullanılır.  
-  
- Aşağıdaki örnek C2760 oluşturur:  
-  
-```  
-// C2760.cpp  
-class B {};  
-class D : public B {};  
-  
-void f(B* pb) {  
-    D* pd1 = static_cast<D*>(pb);  
-    D* pd2 = static_cast<D*>=(pb);  // C2760  
-    D* pd3 = static_cast<D*=(pb);   // C2760  
-}  
+
+sözdizimi hatası: beklenen 'name1' değil 'name2'
+
+Atama işleci ile geçersiz bir işleç kullanılır.
+
+Aşağıdaki örnek, C2760 oluşturur:
+
+```
+// C2760.cpp
+class B {};
+class D : public B {};
+
+void f(B* pb) {
+    D* pd1 = static_cast<D*>(pb);
+    D* pd2 = static_cast<D*>=(pb);  // C2760
+    D* pd3 = static_cast<D*=(pb);   // C2760
+}
 ```

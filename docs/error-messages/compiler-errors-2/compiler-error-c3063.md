@@ -16,29 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68809002b2c895387cd10d33615ec9d6c7a6b861
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9adea484416b85f027693b59acb343d4ca19cf6e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248986"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021648"
 ---
 # <a name="compiler-error-c3063"></a>Derleyici Hatası C3063
-operator 'işleci: tüm işlenenleri aynı numaralandırma türü olmalıdır  
-  
-İşleçler hakkında numaralandırıcılar kullanırken, her iki işlenen numaralandırma türü olmalıdır. Daha fazla bilgi için bkz: [nasıl yapılır: C + numaralandırmaları tanımlama ve kullanma +/ CLI](../../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md).  
-  
-## <a name="example"></a>Örnek  
-Aşağıdaki örnek C3063 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C3063.cpp  
-// compile with: /clr  
-enum class E { a, b } e, mask;  
-int main() {  
-   if ( ( e & mask ) != 0 ) ;   // C3063 no operator!= (E, int)  
-  
-   if ( ( e & mask ) != E() )   // OK  
-      ;  
-}  
+
+işleç 'operator': tüm işlenenler aynı numaralandırma türünde olmalıdır
+
+İşleçler listeleyicilerden kullanırken her iki işlenen de sabit listesi türünde olmalıdır. Daha fazla bilgi için [nasıl yapılır: tanımlama ve kullanma numaralandırmalar C + +/ CLI](../../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3063 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C3063.cpp
+// compile with: /clr
+enum class E { a, b } e, mask;
+int main() {
+   if ( ( e & mask ) != 0 ) ;   // C3063 no operator!= (E, int)
+
+   if ( ( e & mask ) != E() )   // OK
+      ;
+}
 ```

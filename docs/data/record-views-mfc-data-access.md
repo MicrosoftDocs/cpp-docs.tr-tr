@@ -19,42 +19,46 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 742866b2b11811ee37365ee6cc5e4d3aa881db91
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 89677762fd1744afcb6aa749b374dbbb8301d4c4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111256"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029708"
 ---
 # <a name="record-views--mfc-data-access"></a>Kayıt görünümleri (MFC veri erişimi)
+
 Bu bölüm, yalnızca MFC ODBC sınıfları için geçerlidir. OLE DB kayıt görünümleri hakkında daha fazla bilgi için bkz: [COleDBRecordView](../mfc/reference/coledbrecordview-class.md) ve [kullanarak OLE DB kayıt görünümleri](../data/oledb/using-ole-db-record-views.md).  
   
- Form tabanlı veri erişimi uygulamaları desteklemek için sınıf kitaplığı SAX [CRecordView](../mfc/reference/crecordview-class.md). Kayıt görünümü, denetimleri doğrudan alan veri üyeleri için eşlenmiş bir form görüntüleme nesnesidir bir [kayıt kümesi](../data/odbc/recordset-odbc.md) nesne (ve karşılık gelen sütunlara bir sorgu sonucu ya da veri kaynağında tablo için dolaylı olarak). İster kendi temel sınıfının [Cformview'yu](../mfc/reference/cformview-class.md), `CRecordView` iletişim şablon kaynağında dayanır.  
+Form tabanlı veri erişimi uygulamaları desteklemek için sınıf kitaplığı SAX [CRecordView](../mfc/reference/crecordview-class.md). Kayıt görünümü, denetimleri doğrudan alan veri üyeleri için eşlenmiş bir form görünümü nesnesi olan bir [kayıt](../data/odbc/recordset-odbc.md) nesnesi (ve karşılık gelen bir sorgu sonucunu veya veri kaynağında tablo sütunları için dolaylı olarak). Temel sınıfı gibi [CFormView](../mfc/reference/cformview-class.md), `CRecordView` iletişim şablon kaynağında temel alır.  
   
 ## <a name="form-uses"></a>Form kullanır  
- Formları, çeşitli veri erişim görevleri için yararlıdır:  
+
+Formlar çeşitli veri erişim görevleri için kullanışlıdır:  
   
--   Veri girme  
+- Veri girme  
   
--   Veri salt okunur incelenmesi gerçekleştirme  
+- Salt okunur veri incelemesi gerçekleştirme  
   
--   Verileri güncelleştirme  
+- Verileri güncelleştirme  
   
 ## <a name="further-reading-about-record-views"></a>Kayıt görünümleri hakkında daha fazla bilgi  
- Konulardaki malzeme ODBC tabanlı ve DAO tabanlı sınıflar için geçerlidir. Kullanım `CRecordView` ODBC için ve `CDaoRecordView` DAO için.  
+
+Malzeme konular, ODBC tabanlı ve DAO tabanlı sınıflar için geçerlidir. Kullanım `CRecordView` ODBC için ve `CDaoRecordView` DAO için.  
   
- Konular şunlardır:  
+Konular şunlardır:  
   
--   [Kayıt görünümü sınıflarının özellikleri](../data/features-of-record-view-classes-mfc-data-access.md)  
+- [Kayıt görünümü sınıflarının özellikleri](../data/features-of-record-view-classes-mfc-data-access.md)  
   
--   [Kayıt görünümleri için veri değişimi](../data/data-exchange-for-record-views-mfc-data-access.md)  
+- [Kayıt görünümleri için veri değişimi](../data/data-exchange-for-record-views-mfc-data-access.md)  
   
--   [Kayıt görünümü ile çalışırken sizin rolünüz](../data/your-role-in-working-with-a-record-view-mfc-data-access.md)  
+- [Kayıt görünümü ile çalışırken sizin rolünüz](../data/your-role-in-working-with-a-record-view-mfc-data-access.md)  
   
--   [Tasarlama ve kayıt görünümü oluşturma](../data/designing-and-creating-a-record-view-mfc-data-access.md)  
+- [Kayıt görünümü tasarlama ve oluşturma](../data/designing-and-creating-a-record-view-mfc-data-access.md)  
   
--   [Kayıt görünümünü kullanma](../data/using-a-record-view-mfc-data-access.md)  
+- [Kayıt görünümünü kullanma](../data/using-a-record-view-mfc-data-access.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri erişimi (MFC/ATL) programlama](../data/data-access-programming-mfc-atl.md)   
- [ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)
+
+[Veri erişim programlama (MFC/ATL)](../data/data-access-programming-mfc-atl.md)<br/>
+[ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)

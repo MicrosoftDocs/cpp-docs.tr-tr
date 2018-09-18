@@ -17,20 +17,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 78c25c9c6bde27219f10e4047dc7a6ab416f55d5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c100b1edbd36f4384e8deb1abf5b36465e8da479
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297543"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024170"
 ---
 # <a name="expression-evaluator-error-cxx0065"></a>İfade Değerlendirici Hatası CXX0065
-yığın çerçevesi değişkeni gerekiyor  
-  
- Bir ifade geçerli kapsam içinde var, ancak henüz oluşturulmamıştır bir değişken içeriyor.  
-  
- Bu hata, Giriş işlevi ancak henüz işlevi için yığın çerçevesi ayarlama içine adım adım olduğunda veya işlevi için çıkış koda adım adım durumunda ortaya çıkabilir.  
-  
- Yığın çerçevesi ifade değerlendirmeden önce ayarlanmış kadar giriş kodu ilerleyin.  
-  
- Bu hata için CAN0065 aynıdır.
+
+yığın çerçevesi değişkeni gerekiyor
+
+Bir ifade geçerli kapsamda var, ancak henüz oluşturulmadıysa bir değişken içeriyor.
+
+Giriş işlevi ancak henüz yığın çerçevesinin işlev ayarlama içine girdiğiniz olduğunda veya işlevi için çıkış kodu içine girdiğiniz değilse bu hata oluşabilir.
+
+Yığın çerçevesini ifade değerlendirmeden önce ayarlandığını gösterdiğinde kadar giriş kodda adım adım.
+
+Bu hata için CAN0065 aynıdır.

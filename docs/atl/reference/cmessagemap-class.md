@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be04510f7967b431b7e7c4a3b11aef6f51afe8d8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3f09347fdfaaf20e465e5be05ce446dfec449526
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763233"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024404"
 ---
 # <a name="cmessagemap-class"></a>CMessageMap sınıfı
 
@@ -80,22 +80,22 @@ virtual BOOL ProcessWindowMessage(
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*  
+*hWnd*<br/>
 [in] İletiyi alan pencereye tanıtıcısı.
 
-*uMsg*  
+*uMsg*<br/>
 [in] Pencereye gönderilen ileti.
 
-*wParam*  
+*wParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
-*lParam*  
+*lParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
-*lResult*  
+*lResult*<br/>
 [out] İleti işleme sonucu.
 
-*dwMsgMapID*  
+*dwMsgMapID*<br/>
 [in] İleti işleme ileti eşlemesi tanımlayıcısı. Varsayılan ileti eşlemesi ile bildirilmiş [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map), 0 ile tanımlanır. Bir diğer ileti eşlemesi ile bildirilmiş [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), tarafından tanımlanan `msgMapID`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -108,7 +108,7 @@ Pencere yordamı tarafından adlandırılan bir [CContainedWindow](../../atl/ref
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CDynamicChain sınıfı](../../atl/reference/cdynamicchain-class.md)   
-[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
-[ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)   
+[CDynamicChain Sınıfı](../../atl/reference/cdynamicchain-class.md)<br/>
+[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
+[ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -16,45 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e5dd8db3d39ff8aec2084736483c4d325d81314
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 68c7f3a2525974c1d6c2cc26719e284538cae332
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246976"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023559"
 ---
 # <a name="compiler-error-c2931"></a>Derleyici Hatası C2931
-'class': türü sınıfı kimliği yeniden tanımlandı 'tanımlayıcısı' bir üye işlevi  
-  
- Genel veya Şablon sınıfı başka bir sınıf bir üye işlevini kullanamazsınız.  
-  
- Küme ayraçları yanlış eşleşirse bu hataya neden olabilir.  
-  
- Aşağıdaki örnek C2931 oluşturur:  
-  
-```  
-// C2931.cpp  
-// compile with: /c  
-template<class T>   
-struct TC { };   
-struct MyStruct {  
-   void TC<int>();   // C2931  
-};  
-  
-struct TC2 { };   
-struct MyStruct2 {  
-   void TC2();  
-};  
-```  
-  
- Ayrıca C2931 genel türler kullanma ortaya çıkabilir:  
-  
-```  
-// C2931b.cpp  
-// compile with: /clr /c  
-generic<class T> ref struct GC {};  
-struct MyStruct {  
-   void GC<int>();   // C2931  
-   void GC2();   // OK  
-};  
+
+'class': türü sınıf kimliği bir üye işlevi 'tanımlayıcısının' yeniden tanımlandı
+
+Genel veya Şablon sınıfı, başka bir sınıfın üyesi işlevi olarak kullanamazsınız.
+
+Küme ayraçları yanlış eşleşirse bu hataya neden olabilir.
+
+Aşağıdaki örnek, C2931 oluşturur:
+
+```
+// C2931.cpp
+// compile with: /c
+template<class T>
+struct TC { };
+struct MyStruct {
+   void TC<int>();   // C2931
+};
+
+struct TC2 { };
+struct MyStruct2 {
+   void TC2();
+};
+```
+
+C2931, genel türler kullanırken da meydana gelebilir:
+
+```
+// C2931b.cpp
+// compile with: /clr /c
+generic<class T> ref struct GC {};
+struct MyStruct {
+   void GC<int>();   // C2931
+   void GC2();   // OK
+};
 ```

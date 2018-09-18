@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a97b0885dd626c992ab55703038838aa743e30d0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5d6cea2b4ce805c8f7d966ee9d2b3c27f8a901c8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168704"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023520"
 ---
 # <a name="compiler-error-c2192"></a>Derleyici Hatası C2192
-parametre 'numara' bildirimi farklı  
-  
- C işlev farklı parametre listesi ile ikinci kez bildirildi. C aşırı yüklenmiş işlevlerin desteklemez.  
-  
- Aşağıdaki örnek C2192 oluşturur:  
-  
-```  
-// C2192.c  
-// compile with: /Za /c  
-void func( float, int );  
-void func( int, float );   // C2192, different parameter list  
-void func2( int, float );   // OK  
+
+parametresi, 'number', bildirimi farklı
+
+C işlevi, ikinci kez farklı parametre listesiyle bildirildi. C, aşırı yüklenmiş işlevler desteklemez.
+
+Aşağıdaki örnek, C2192 oluşturur:
+
+```
+// C2192.c
+// compile with: /Za /c
+void func( float, int );
+void func( int, float );   // C2192, different parameter list
+void func2( int, float );   // OK
 ```

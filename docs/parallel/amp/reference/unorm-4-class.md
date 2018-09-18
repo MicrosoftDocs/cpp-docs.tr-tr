@@ -278,15 +278,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3186200fb01e13fcf3d79d162439a900abf6f4a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 5c57bbb2e54eb86333ee7e80ad144a486c4c1fba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33694621"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027667"
 ---
 # <a name="unorm4-class"></a>unorm_4 Sınıfı
-Kısa bir vektör dört imzasız normal sayıların temsil eder.  
+Dört işaretsiz normal sayıdan oluşan bir kısa vektörü temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -296,7 +296,7 @@ class unorm_4;
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
@@ -306,7 +306,7 @@ class unorm_4;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[unorm_4 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|  
+|[unorm_4 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -334,7 +334,7 @@ class unorm_4;
 |unorm_4::get_xwyz||  
 |unorm_4::get_xwz||  
 |unorm_4::get_xwzy||  
-|unorm_4::get_xy||  
+|unorm_4::get_x||  
 |unorm_4::get_xyw||  
 |unorm_4::get_xywz||  
 |unorm_4::get_xyz||  
@@ -456,7 +456,7 @@ class unorm_4;
 |unorm_4::operator-||  
 |unorm_4::operator--||  
 |unorm_4::operator * =||  
-|unorm_4::operator ve =||  
+|unorm_4::operator / =||  
 |unorm_4::operator ++||  
 |unorm_4::operator +=||  
 |unorm_4::operator =||  
@@ -611,7 +611,7 @@ class unorm_4;
   
 ##  <a name="ctor"></a> unorm_4 
 
- Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.  
+ Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.  
   
 ```  
 unorm_4() restrict(amp,
@@ -675,23 +675,23 @@ explicit inline unorm_4(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_V0`  
- Öğeyi 0 başlatmak için değer.  
+*_V0*<br/>
+Öğe 0'ı başlatmak için değer.  
   
- `_V1`  
- 1 öğesi başlatmak için değeri.  
+*_V1*<br/>
+1 öğe başlatmak için değer.  
   
- `_V2`  
- Öğe 2 başlatmak için değeri.  
+*_V2*<br/>
+Öğe 2 başlatmak için değer.  
   
- `_V3`  
- Öğeyi 3 başlatmak için değer.  
+*_V3*<br/>
+Öğeyi 3 başlatmak için değer.  
   
- `_V`  
- Başlatma için değer.  
+*_V*<br/>
+Başlatma için değer.  
   
- `_Other`  
- Başlatmak için kullanılan nesne.  
+*_Diğer*<br/>
+Başlatmak için kullanılan nesne.  
   
 ##  <a name="unorm_4__size"></a> Boyutu 
 

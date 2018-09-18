@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1472c475a89fc219f8fe94fdbc69ae7c8a176f24
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 271ee8341cb5faa033d3fb5ec3238f36975c3531
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243469"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023585"
 ---
 # <a name="compiler-error-c2886"></a>Derleyici Hatası C2886
-'class::identifier': sembol bir üye kullanarak-bildiriminde kullanılamaz  
-  
- A `using` bildirimini ad alanı adı gibi bir simge kullanır. A `using` bildirimidir taban sınıfı üyeleri bildirme.  
-  
- Aşağıdaki örnek C2886 oluşturur:  
-  
-```  
-// C2886.cpp  
-// compile with: /c  
-namespace Z {  
-    int i;  
-}  
-  
-class B {  
-protected:  
-    int i;  
-};  
-  
-class D : public B {  
-    // Error: Z is a namespace  
-    using Z::i;   // C2886  
-  
-    // OK: B is a base class  
-    using B::i;  
-};  
+
+'class::identifier': simge bir üye bildirim kullanımı içinde kullanılamaz
+
+A `using` bildirimi kullanan bir ad alanı adı gibi bir simgedir. A `using` bildirimidir temel sınıf üyelerinin bildirmek için.
+
+Aşağıdaki örnek, C2886 oluşturur:
+
+```
+// C2886.cpp
+// compile with: /c
+namespace Z {
+    int i;
+}
+
+class B {
+protected:
+    int i;
+};
+
+class D : public B {
+    // Error: Z is a namespace
+    using Z::i;   // C2886
+
+    // OK: B is a base class
+    using B::i;
+};
 ```

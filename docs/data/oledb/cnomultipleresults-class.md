@@ -19,15 +19,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c2e588021b1600b1b3ac6e04f91ab07649755a2e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 67658f6edadd7723789288ab268b97cecdd611d2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33096838"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017364"
 ---
 # <a name="cnomultipleresults-class"></a>CNoMultipleResults Sınıfı
-Şablon bağımsız değişken kullanılan (*TMultiple*) için [CCommand](../../data/oledb/ccommand-class.md) tek bir sonuç işler en iyi duruma getirilmiş bir komut oluşturmak için ayarlayın.  
+
+Bir şablon bağımsız değişken olarak kullanılan (*TMultiple*) için [CCommand](../../data/oledb/ccommand-class.md) tek bir sonuç işler en iyi duruma getirilmiş bir komut oluşturmak için ayarlayın.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,11 +37,14 @@ class CNoMultipleResults
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Birden çok sonuç kümesi işlemek için bir komut istiyorsanız kullanın [CMultipleResults](../../data/oledb/cmultipleresults-class.md) yerine.  
+
+Birden çok sonuç kümesi işlemek için bir komut istiyorsanız kullanın [CMultipleResults](../../data/oledb/cmultipleresults-class.md) yerine.  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldbcli.h  
+
+**Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+
+[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

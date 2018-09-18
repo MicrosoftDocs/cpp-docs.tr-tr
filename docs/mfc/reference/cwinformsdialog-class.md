@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 324df7657be7f74cade6fc4b50b98d6790245ab4
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 69882f9b22d11de139951b6196b58729af70a36a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027095"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018151"
 ---
 # <a name="cwinformsdialog-class"></a>CWinFormsDialog sınıfı
 Bir Windows Forms kullanıcı denetimi barındıran MFC iletişim kutusu sınıfı için sarmalayıcı.  
@@ -43,8 +43,8 @@ class CWinFormsDialog :
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `TManagedControl`  
- MFC uygulamasında görüntülenecek .NET Framework kullanıcı denetimi.  
+*TManagedControl*<br/>
+MFC uygulamasında görüntülenecek .NET Framework kullanıcı denetimi.  
   
 ## <a name="members"></a>Üyeler  
   

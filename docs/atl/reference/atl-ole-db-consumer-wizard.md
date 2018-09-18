@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec6c778c46998ba8e324fcf97c209598cc2f99dd
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 1fcaffc3eba3711accdfa13d311f5284e564b703
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315385"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020439"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketicisi Sihirbazı
 
@@ -193,6 +193,6 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ATL OLE DB Tüketicisi](../../atl/reference/adding-an-atl-ole-db-consumer.md)
-[kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)
-[bağlantı dizelerini ve veri bağlantıları (OLE DB)](/previous-versions/windows/desktop/ms718376\(v=vs.85\))
+[ATL OLE DB Tüketicisi](../../atl/reference/adding-an-atl-ole-db-consumer.md)<br/>
+[Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
+[Bağlantı dizelerini ve veri bağlantıları (OLE DB)](/previous-versions/windows/desktop/ms718376\(v=vs.85\))

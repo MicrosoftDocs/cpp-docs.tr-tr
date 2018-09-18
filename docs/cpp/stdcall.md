@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a452d563646ac869bc1a3bc832a72a9bd11b694
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: bb65ff85346412587fab96934ca5438bb6a4dfe5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894815"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031385"
 ---
 # <a name="stdcall"></a>__stdcall
 
@@ -54,7 +54,7 @@ ARM ve x64 işlemciler **__stdcall** kabul edilir ve derleyici tarafından; ARM 
 Statik olmayan sınıf işlevleri için, işlev satır dışı olarak tanımlandıysa çağırma kuralı değiştiricinin satır dışı tanımda belirtilmesi gerekmez. Diğer bir deyişle, statik olmayan üye sınıfı yöntemler için tanım noktasında bildirim sırasında belirtilen çağırma kuralı kabul edilir. Bu sınıf tanımı verildiğinde,
 
 ```cpp
-struct CMyClass {  
+struct CMyClass {
    void __stdcall mymethod();
 };
 ```
@@ -62,13 +62,13 @@ struct CMyClass {
 this
 
 ```cpp
-void CMyClass::mymethod() { return; }  
+void CMyClass::mymethod() { return; }
 ```
 
 Şuna eşdeğerdir:
 
 ```cpp
-void __stdcall CMyClass::mymethod() { return; }  
+void __stdcall CMyClass::mymethod() { return; }
 ```
 
 ## <a name="example"></a>Örnek
@@ -84,5 +84,5 @@ typedef BOOL (__stdcall *funcname_ptr)(void * arg1, const char * arg2, DWORD fla
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağımsız değişkeni geçirme ve adlandırma kuralları](../cpp/argument-passing-and-naming-conventions.md)   
+[Bağımsız Değişkeni Geçirme ve Adlandırma Kuralları](../cpp/argument-passing-and-naming-conventions.md)<br/>
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)

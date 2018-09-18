@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 04f1a21c06adeeda5d9db428e984da51f06addb5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d0e0d8b105d58b0585bc31b8d340d3d7ba5fb29e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170261"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029851"
 ---
 # <a name="compiler-error-c2086"></a>Derleyici Hatası C2086
-'tanımlayıcısı': yeniden tanımlama  
-  
- Tanımlayıcısı birden çok kez tanımlı değil veya önceki bir sonraki bildirimi farklıdır.  
-  
- C2086 de başvuruda bulunulan bir C# derleme için artımlı derleme sonucu olabilir. Bu hatayı gidermek için C# derleme yeniden oluşturun.  
-  
- Aşağıdaki örnek C2086 oluşturur:  
-  
-```  
-// C2086.cpp  
-main() {  
-  int a;  
-  int a;   // C2086 not an error in ANSI C  
-}  
+
+'identifier': yeniden tanımlama
+
+Tanımlayıcı, birden çok kez tanımlanmış veya önceki bir sonraki bildirimi farklıdır.
+
+C2086 da başvurulan bir C# derleme için artımlı oluşturmayı sonucu olabilir. Bu hatayı çözmek için C# derleme yeniden oluşturun.
+
+Aşağıdaki örnek, C2086 oluşturur:
+
+```
+// C2086.cpp
+main() {
+  int a;
+  int a;   // C2086 not an error in ANSI C
+}
 ```

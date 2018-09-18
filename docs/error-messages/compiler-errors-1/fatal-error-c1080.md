@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1400478dc1bbef4ab435f96eaa75c9a6637b6bb5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fdd3ad247bcdbfa30213eba57cdbbbc411438e79
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225413"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029942"
 ---
 # <a name="fatal-error-c1080"></a>Önemli Hata C1080
-Derleyici sınırı: komut satırı seçeneği aşıldı sınırını sayı karakteri  
-  
- Derleyiciye geçirilen bağımsız değişken 256 karakteri aşıyor.
+
+Derleyici sınırı: komut satırı seçeneği aşıldı sayı karakterlik sınırı
+
+Derleyicinin iletilen bağımsız değişken 256 karakteri aşıyor.

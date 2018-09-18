@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c3599cdab1307ccff4677b823b49d94d710adfd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fa6b6d102f78de7d834a0c7d9fc16cfb85833fd1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33241964"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023976"
 ---
 # <a name="compiler-error-c3015"></a>Derleyici Hatası C3015
-OpenMP başlatma 'için' deyimi yanlış biçime sahip  
-  
- A `for` döngü OpenMP deyimi içinde tam olarak ve açıkça belirtilmesi gerekir.  
-  
- Aşağıdaki örnek C3015 oluşturur:  
-  
-```  
-// C3015.cpp  
-// compile with: /openmp  
-int main()  
-{  
-   int i = 0, j = 10;  
-  
-   #pragma omp parallel  
-   {  
-      #pragma omp for  
-      for (; i < 0; i += j)   // C3015  
-      // Try the following line instead:  
-      // for (i = 0; i < 0; i++)   
-         --j;  
-   }  
-}  
+
+başlatma OpenMP 'for' deyimindeki hatalı biçimde
+
+A `for` OpenMP deyimi bir döngüde tam olarak ve açıkça belirtilmesi gerekir.
+
+Aşağıdaki örnek, C3015 oluşturur:
+
+```
+// C3015.cpp
+// compile with: /openmp
+int main()
+{
+   int i = 0, j = 10;
+
+   #pragma omp parallel
+   {
+      #pragma omp for
+      for (; i < 0; i += j)   // C3015
+      // Try the following line instead:
+      // for (i = 0; i < 0; i++)
+         --j;
+   }
+}
 ```

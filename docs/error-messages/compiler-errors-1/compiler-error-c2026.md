@@ -16,40 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6b2952daa8cc7b3642cca5ba278990fde7d1ebe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 055ac47d036a1027817aa6b3433bfe0e2e88570e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33167671"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019555"
 ---
 # <a name="compiler-error-c2026"></a>Derleyici Hatası C2026
-dize sondaki kesilmiş karakterleri çok büyük  
-  
- Dize 16380 tek baytlık karakterler sınırdan daha uzun.  
-  
- Birleştirilmiş bitişik dizeleri önce bir dize 16380 tek baytlı karakterden uzun olamaz.  
-  
- Bu hata hakkında yarısı bu uzunlukta bir UNICODE dizesi de oluşturur.  
-  
- Şu şekilde tanımlanmış bir dize varsa, C2026 oluşturur:  
-  
-```  
-char sz[] =  
-"\  
-imagine a really, really \  
-long string here\  
-";  
-```  
-  
- Bunu şu şekilde bölmek:  
-  
-```  
-char sz[] =  
-"\  
-imagine a really, really "  
-"long string here\  
-";  
-```  
-  
- Özel bir kaynak veya dış dosyası olağanüstü büyük dize değişmez değerleri (32 K veya daha fazla) depolamak isteyebilirsiniz. Bkz: [yeni özel veya veri kaynağı oluşturma](../../windows/creating-a-new-custom-or-data-resource.md) daha fazla bilgi için.
+
+dize çok büyük, sondaki karakterler kesildi
+
+Dize 16380 tek baytlık karakter sınırından daha uzun.
+
+Birleştirilmiş bitişik dize önce bir dize 16380 tek baytlık karakterden uzun olamaz.
+
+Bu süre yaklaşık yarım Unicode dizesi de bu hata oluşturur.
+
+Şu şekilde tanımlanmış bir dize varsa C2026 oluşturur:
+
+```
+char sz[] =
+"\
+imagine a really, really \
+long string here\
+";
+```
+
+Bunu şu şekilde bölmek:
+
+```
+char sz[] =
+"\
+imagine a really, really "
+"long string here\
+";
+```
+
+Olağanüstü bir geniş dize değişmez değerleri (32 bin veya daha fazlası) depolamak özel bir kaynak veya bir dış dosya isteyebilirsiniz. Bkz: [yeni özel veya veri kaynağı oluşturma](../../windows/creating-a-new-custom-or-data-resource.md) daha fazla bilgi için.

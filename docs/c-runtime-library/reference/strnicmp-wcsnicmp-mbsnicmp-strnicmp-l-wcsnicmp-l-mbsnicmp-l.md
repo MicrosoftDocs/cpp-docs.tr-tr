@@ -76,14 +76,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0da454b2b980be3565ee27fde4ee14d7eadd42fb
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 9a06bbfb66030a8f037ce83323486d10107bf505
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313638"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020322"
 ---
 # <a name="strnicmp-wcsnicmp-mbsnicmp-strnicmpl-wcsnicmpl-mbsnicmpl"></a>_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l
+
 Belirtilen sayıda karakteri çalışması dikkate almaksızın, iki dizenin karşılaştırır.
 
 > [!IMPORTANT]

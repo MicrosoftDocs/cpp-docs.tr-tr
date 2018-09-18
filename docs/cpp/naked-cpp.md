@@ -17,62 +17,66 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b74c08ee2130e9742884eacfa93d6fc55110291
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 89ab41c396f8602d16e2b2d88c3d83aeb7cdf21a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465553"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018388"
 ---
 # <a name="naked-c"></a>naked (C++)
-**Microsoft'a özgü**  
-  
- Bildirilen işlevler **naked** özniteliği, derleyici giriş ve sonuç kodu olmadan kod oluşturur. Satır içi derleyici kodunu kullanarak kendi giriş/sonuç kodu dizilerinizi yazmak için bu özelliği kullanabilirsiniz. Çıplak işlevler, özellikle sanal cihaz sürücülerinin yazılmasında yararlıdır.  Unutmayın **naked** özniteliği yalnızca x86 ve ARM geçerlidir ve x64 üzerinde kullanılabilir değil.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-__declspec(naked) declarator  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Çünkü **naked** özniteliği yalnızca bir işlev tanımı için geçerlidir ve bir tür değiştiricisi değil, naked işlevleri, genişletilmiş öznitelik söz dizimi kullanmalıdır ve [__declspec](../cpp/declspec.md) anahtar sözcüğü.  
-  
 
- İşlev ayrıca ile işaretlenmiş olsa bile derleyici, çıplak özniteliği ile işaretlenmiş bir işlevin satır içi işlev oluşturulamıyor [__forceinline](inline-functions-cpp.md) anahtar sözcüğü.  
+**Microsoft'a özgü**
 
- Varsa derleyici bir hata verir **naked** öznitelik, bir üye olmayan yöntem tanımının dışında her şey için uygulanır.  
-  
-## <a name="examples"></a>Örnekler  
- Bu kod, bir işlev ile tanımlar **naked** özniteliği:  
-  
-```  
-__declspec( naked ) int func( formal_parameters ) {}  
-```  
-  
- Veya alternatif olarak:  
-  
-```  
-#define Naked __declspec( naked )  
-Naked int func( formal_parameters ) {}  
-```  
-  
- **Naked** özniteliği, yalnızca işlevin giriş ve sonuç dizileri için derleyicinin kod oluşturma yapısını etkiler. Bu tür işlevleri çağırmak için oluşturulan kodu etkilemez. Bu nedenle, **naked** özniteliği işlev türünün bir parçası değil değerlendirilir ve işlev işaretçileri olamaz **naked** özniteliği. Ayrıca, **naked** özniteliği veri tanımına uygulanamaz. Örneğin, bu kod örneği, bir hata oluşturur:  
-  
-```  
-__declspec( naked ) int i;  
-// Error--naked attribute not permitted on data declarations.  
-```  
-  
- **Naked** özniteliği yalnızca işlevin tanımıyla ilgilidir ve işlevin prototipinde belirtilemez. Örneğin, bu bildirim, bir derleyici hatası oluşturur:  
-  
-```  
-__declspec( naked ) int func();  // Error--naked attribute not permitted on function declarations  
-```  
-  
- **END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [__declspec](../cpp/declspec.md)   
- [anahtar sözcükler](../cpp/keywords-cpp.md)   
- [Naked İşlevi Çağrıları](../cpp/naked-function-calls.md)
+Bildirilen işlevler **naked** özniteliği, derleyici giriş ve sonuç kodu olmadan kod oluşturur. Satır içi derleyici kodunu kullanarak kendi giriş/sonuç kodu dizilerinizi yazmak için bu özelliği kullanabilirsiniz. Çıplak işlevler, özellikle sanal cihaz sürücülerinin yazılmasında yararlıdır.  Unutmayın **naked** özniteliği yalnızca x86 ve ARM geçerlidir ve x64 üzerinde kullanılabilir değil.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+__declspec(naked) declarator
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Çünkü **naked** özniteliği yalnızca bir işlev tanımı için geçerlidir ve bir tür değiştiricisi değil, naked işlevleri, genişletilmiş öznitelik söz dizimi kullanmalıdır ve [__declspec](../cpp/declspec.md) anahtar sözcüğü.
+
+
+İşlev ayrıca ile işaretlenmiş olsa bile derleyici, çıplak özniteliği ile işaretlenmiş bir işlevin satır içi işlev oluşturulamıyor [__forceinline](inline-functions-cpp.md) anahtar sözcüğü.
+
+Varsa derleyici bir hata verir **naked** öznitelik, bir üye olmayan yöntem tanımının dışında her şey için uygulanır.
+
+## <a name="examples"></a>Örnekler
+
+Bu kod, bir işlev ile tanımlar **naked** özniteliği:
+
+```
+__declspec( naked ) int func( formal_parameters ) {}
+```
+
+Veya alternatif olarak:
+
+```
+#define Naked __declspec( naked )
+Naked int func( formal_parameters ) {}
+```
+
+**Naked** özniteliği, yalnızca işlevin giriş ve sonuç dizileri için derleyicinin kod oluşturma yapısını etkiler. Bu tür işlevleri çağırmak için oluşturulan kodu etkilemez. Bu nedenle, **naked** özniteliği işlev türünün bir parçası değil değerlendirilir ve işlev işaretçileri olamaz **naked** özniteliği. Ayrıca, **naked** özniteliği veri tanımına uygulanamaz. Örneğin, bu kod örneği, bir hata oluşturur:
+
+```
+__declspec( naked ) int i;
+// Error--naked attribute not permitted on data declarations.
+```
+
+**Naked** özniteliği yalnızca işlevin tanımıyla ilgilidir ve işlevin prototipinde belirtilemez. Örneğin, bu bildirim, bir derleyici hatası oluşturur:
+
+```
+__declspec( naked ) int func();  // Error--naked attribute not permitted on function declarations
+```
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[__declspec](../cpp/declspec.md)<br/>
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[Naked İşlevi Çağrıları](../cpp/naked-function-calls.md)

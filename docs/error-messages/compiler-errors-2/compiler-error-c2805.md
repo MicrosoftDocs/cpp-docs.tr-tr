@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17885edc9cc508455cf780c7089f6ba3f9c793d0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ad07ea30d4124c0655e739e0e9222b3dc428a0a7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33237563"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032243"
 ---
 # <a name="compiler-error-c2805"></a>Derleyici Hatası C2805
-İkili 'işleci işleci' çok az sayıda parametre yok  
-  
- İkili işleç hiç parametre yok.  
-  
- Aşağıdaki örnek C2805 oluşturur:  
-  
-```  
-// C2805.cpp  
-// compile with: /c  
-class X {  
-public:  
-   X operator< ( void );   // C2805 must take one parameter  
-   X operator< ( X );   // OK  
-};  
+
+İkili 'operator işleci' çok az sayıda parametre içeriyor
+
+İkili işleci hiç parametre yok.
+
+Aşağıdaki örnek, C2805 oluşturur:
+
+```
+// C2805.cpp
+// compile with: /c
+class X {
+public:
+   X operator< ( void );   // C2805 must take one parameter
+   X operator< ( X );   // OK
+};
 ```

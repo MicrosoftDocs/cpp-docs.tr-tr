@@ -17,37 +17,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8df4b584a4e8b0ef940d5934a5968037427c607d
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: e18dc83bf57b449f71c3219cf7f67b6152c17394
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931820"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016067"
 ---
 # <a name="handling-tool-tip-notifications"></a>Araç İpucu Bildirimlerini İşleme
-Belirttiğinizde **TBSTYLE_TOOLTIPS** stili, araç oluşturur ve bir araç ipucunu denetimini yönetir. Araç İpucu araç çubuğu düğmesi açıklayan metin satırının içeren küçük bir açılır penceredir. Yalnızca kullanıcı imleci bir araç çubuğu düğmesini koyar ve onu var. yaklaşık yarısı için ikinci bırakır görünen araç ipucu gizlenir. Araç İpucu imlecin yanında görüntülenir.  
+Belirttiğinizde **TBSTYLE_TOOLTIPS** stil, araç oluşturur ve bir araç ipucunu denetimini yönetir. Bir araç ipucu araç çubuğu düğmesi açıklayan metin satırı içeren küçük bir açılır penceredir. Yalnızca kullanıcı bir araç çubuğu düğmesini imleci getirir ve bunu var. ikinci yarısı için yaklaşık bırakır görünen araç ipucu gizlenir. Araç İpucu imlecin yanında görüntülenir.  
   
- Araç İpucu görüntülenmeden önce **TTN_NEEDTEXT** düğmesi için açıklayıcı metni almak için araç çubuğunun sahibi penceresine bildirim iletisi gönderilir. Araç çubuğunun sahibi pencere ise bir `CFrameWnd` penceresinde, araç ipuçları, tüm ek çaba görüntülenir, çünkü `CFrameWnd` için bir varsayılan işleyici sahip **TTN_NEEDTEXT** bildirim. Araç çubuğunun sahibi penceresi türetilmedi varsa `CFrameWnd`, bir iletişim kutusu veya form görünüm gibi sahibi pencerenin ileti eşlemesi için bir giriş ekleyin ve gerekir ileti eşlemesi bildirim işleyicisinde sağlayın. Girişine sahip pencerenin ileti eşlemesi aşağıdaki gibidir:  
+ Araç İpucu görüntülenmeden önce **TTN_NEEDTEXT** düğme için açıklayıcı metni almak için araç çubuğunun sahibi penceresine bildirim iletisi gönderilir. Araç çubuğunun sahibi penceresi olup olmadığını bir `CFrameWnd` penceresinde araç ipuçları, herhangi bir fazladan çaba görüntülenir, çünkü `CFrameWnd` için bir varsayılan işleyici sahip **TTN_NEEDTEXT** bildirim. Araç çubuğunun sahip penceresine türünden türetilmediğinden varsa `CFrameWnd`, bir iletişim kutusu veya form görünümü gibi sahibi pencerenin ileti eşlemesi için bir giriş ekleyin ve gerekir ileti eşlemesi bildirim işleyicisinde sağlayın. Girişe sahip pencerenin ileti eşlemesi aşağıdaki gibidir:  
   
  [!code-cpp[NVC_MFCControlLadenDialog#40](../mfc/codesnippet/cpp/handling-tool-tip-notifications_1.cpp)]  
   
 ## <a name="remarks"></a>Açıklamalar  
- `memberFxn`  
- Metin için bu düğmeyi gerektiğinde çağrılacak üye işlevi.  
+*memberFxn*<br/>
+Bu düğme için metin gerektiğinde çağrılacak üye işlevi.  
   
- Araç İpucu kimliği her zaman olduğuna dikkat edin 0.  
+ Bir araç ipucu kimliği her zaman olduğuna dikkat edin 0.  
   
- Ek olarak **TTN_NEEDTEXT** bildirimi, bir araç ipucunu denetimini gönderebilir aşağıdaki bildirimler için bir araç çubuğu denetimi:  
+ Ek olarak **TTN_NEEDTEXT** bildirim, bir araç ipucunu denetimini gönderebilir aşağıdaki bildirimleri bir toolbar denetimine:  
   
 |Bildirim|Açıklama|  
 |------------------|-------------|  
-|**TTN_NEEDTEXTA**|Araç ipucunu denetimini ASCII metni (yalnızca Windows 95) gerektirir|  
-|**TTN_NEEDTEXTW**|Araç ipucunu denetimini UNICODE metni (yalnızca Windows NT) gerektirir|  
-|**TBN_HOTITEMCHANGE**|Etkin (vurgulanan) öğenin değiştiğini gösterir.|  
-|**NM_RCLICK**|Kullanıcı bir düğme sağ tıklattığınız gösterir.|  
-|**TBN_DRAGOUT**|Kullanıcı düğmesine tıklanana ve işaretçiyi düğmeden sürüklenen gösterir. Araç çubuğu düğmesinden bırakma ve sürükleme uygulanması bir uygulama sağlar. Bu bildirim alındığında uygulama Sürükle başlamak ve bırak işlemini.|  
-|**TBN_DROPDOWN**|Kullanıcının kullandığı bir düğme tıkladığını gösterir **TBSTYLE_DROPDOWN** stili.|  
-|**TBN_GETOBJECT**|Kullanıcı taşınabilir işaretçinin kullanan bir düğme gösterir **TBSTYLE_DROPPABLE** stili.|  
+|**TTN_NEEDTEXTA**|Araç ipucunu denetimini ASCII metni (yalnızca Windows 95) gerektirir.|  
+|**TTN_NEEDTEXTW**|Araç ipucunu denetimini UNICODE metni (yalnızca Windows NT) gerektirir.|  
+|**TBN_HOTITEMCHANGE**|Sık erişimli vurgulanmış öğe değişmiş olduğunu belirtir.|  
+|**NM_RCLICK**|Kullanıcı bir düğme sağ gösterir.|  
+|**TBN_DRAGOUT**|Kullanıcı düğmeye tıkladı ve imleci düğmeden sürüklediğiniz gösterir. Sürükleme uygulamak ve araç çubuğu düğmesinden bırakma bir uygulama sağlar. Bu bildirim alındığında, uygulama başlamadan sürükleme ve bırakma işlemi.|  
+|**TBN_DROPDOWN**|Kullanıcının kullandığı bir düğmeye tıkladığını belirtir **TBSTYLE_DROPDOWN** stili.|  
+|**TBN_GETOBJECT**|Kullanıcı kullanan bir düğmenin üzerine işaretçiyi taşınmış gösterir **TBSTYLE_DROPPABLE** stili.|  
   
  Bir örnek işleyici işlevi ve araç ipuçlarını etkinleştirme hakkında daha fazla bilgi için bkz: [araç ipuçları](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md).  
   

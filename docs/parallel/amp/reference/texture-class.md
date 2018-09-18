@@ -27,15 +27,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b16e449f3def7b4b86932e9806fa78d422466978
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 369ca34eb75b33208365d34756312e23e85afd92
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692788"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029643"
 ---
 # <a name="texture-class"></a>texture Sınıfı
-Veri toplama üzerinde bir doku olan bir `accelerator_view` ölçüde etki alanındaki. Değişkenleri, bir uzantı etki alanındaki her öğe için bir tane koleksiyonudur. Her bir değişken C++ ilkel türüne karşılık gelen bir değer tutar ( `unsigned int`, `int`, `float`, `double`), skaler bir tür ( `norm`, veya `unorm`), ya da kısa vektör türü.  
+Bir doku bulunan veri olduğu bir `accelerator_view` uzantı etki alanında. Bu uzantı etki alanındaki her öğe için değişkenlerden oluşan bir koleksiyondur. Her değişken C++ primitif türüne karşı bir değer tutar ( `unsigned int`, `int`, `float`, `double`), skalar türü ( `norm`, veya `unorm`), ya da kısa vektör türü.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -45,15 +45,15 @@ class texture;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `value_type`  
- Dokudaki öğelerin türü.  
+*value_type*<br/>
+Dokudaki öğelerin türü.  
   
- `_Rank`  
- Doku derecesini.  
+*_Dizin*<br/>
+Dokunun boyut sayısı.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
@@ -65,41 +65,41 @@ class texture;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Doku Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `texture` sınıfı.|  
-|[~ texture yok Edicisi](#ctor)|Bozar `texture` nesnesi.|  
+|[~ texture yok Edicisi](#ctor)|Yok eder `texture` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[copy_to](#copy_to)|Kopya `texture` derin bir kopya yaparak bu hedefe nesnesi.|  
-|[Veri](#data)|Bir CPU işaretçi bu doku ham verileri döndürür.|  
+|[copy_to](#copy_to)|Kopya `texture` derin kopyalama yaparak hedefe nesne.|  
+|[Veri](#data)|Bir CPU işaretçisini bu dokunun ham verisine döndürür.|  
 |[get](#get)|Belirtilen dizindeki öğenin değerini döndürür.|  
-|[get_associated_accelerator_view](#get_associated_accelerator_view)|Döndürür [accelerator_view](accelerator-view-class.md) diğer bir deyişle kopyalanması bu doku için tercih edilen hedef.|  
-|[get_depth_pitch](#get_depth_pitch)|CPU üzerinde doku hazırlama 3B her derinliği dilimi arasında bayt sayısını döndürür.|  
-|[get_row_pitch](#get_row_pitch)|Her satırda bir 2B veya CPU üzerinde doku hazırlama 3B arasında bayt sayısını döndürür.|  
-|[set](#set)|Öğesinin değeri belirtilen dizindeki ayarlar.|  
+|[get_associated_accelerator_view](#get_associated_accelerator_view)|Döndürür [accelerator_view](accelerator-view-class.md) diğer bir deyişle bu dokunun kopyalanacağı tercih edilen hedef.|  
+|[get_depth_pitch](#get_depth_pitch)|Hazırlama dokusundaki CPU'da bir 3B hazırlama dokusundaki her derinlik dilimi arasında bulunan bayt sayısını döndürür.|  
+|[get_row_pitch](#get_row_pitch)|Bir hazırlama dokusundaki CPU'da bir 3B veya 2B her satırı arasında bulunan bayt sayısını döndürür.|  
+|[set](#set)|Belirtilen dizindeki öğenin değerini ayarlar.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[operator()](#operator_call)|Parametrelerle belirtilen öğenin değerini döndürür.|  
-|[[] işleci](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|  
-|[operator=](#operator_eq)|Belirtilen kopyalar [doku](texture-class.md) bu bir nesne.|  
+|[operator()](#operator_call)|Parametreler ile belirtilen öğe değeri döndürür.|  
+|[operator]](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|  
+|[operator=](#operator_eq)|Belirtilen kopyalar [doku](texture-class.md) buna nesne.|  
   
 ### <a name="public-constants"></a>Genel sabitler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[sıra sabiti](#rank)|Derecesini alır `texture` nesnesi.|  
+|[sıra sabiti](#rank)|Boyut sayısını alır `texture` nesne.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[associated_accelerator_view](#associated_accelerator_view)|Alır [accelerator_view](accelerator-view-class.md) diğer bir deyişle kopyalanması bu doku için tercih edilen hedef.|  
-|[depth_pitch](#depth_pitch)|Bir 3B hazırlama doku CPU üzerinde her derinliği dilimi arasındaki bayt sayısını alır.|  
-|[row_pitch](#row_pitch)|Her satırda bir 2B veya 3B arasında bayt sayısı, CPU üzerinde doku hazırlama alır.|  
+|[associated_accelerator_view](#associated_accelerator_view)|Alır [accelerator_view](accelerator-view-class.md) diğer bir deyişle bu dokunun kopyalanacağı tercih edilen hedef.|  
+|[depth_pitch](#depth_pitch)|CPU'da bir 3B hazırlama dokusundaki her derinlik dilimi arasında bulunan bayt sayısını alır.|  
+|[row_pitch](#row_pitch)|Bayt her satır arasında bulunan bir 3B veya 2B hazırlama dokusundaki CPU'da alır.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `_Texture_base`  
@@ -111,9 +111,9 @@ class texture;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="dtor"></a> ~ texture 
+##  <a name="dtor"></a> ~ Doku 
 
- Bozar `texture` nesnesi.  
+ Yok eder `texture` nesne.  
   
 ```  
 ~texture() restrict(cpu);
@@ -121,7 +121,7 @@ class texture;
   
 ##  <a name="associated_accelerator_view"></a> associated_accelerator_view 
 
- Alır [accelerator_view](accelerator-view-class.md) diğer bir deyişle kopyalanması bu doku için tercih edilen hedef.  
+ Alır [accelerator_view](accelerator-view-class.md) diğer bir deyişle bu dokunun kopyalanacağı tercih edilen hedef.  
   
 ```  
 __declspec(property(get= get_associated_accelerator_view)) Concurrency::accelerator_view associated_accelerator_view;  
@@ -129,7 +129,7 @@ __declspec(property(get= get_associated_accelerator_view)) Concurrency::accelera
   
 ##  <a name="copy_to"></a> copy_to 
 
- Kopya `texture` derin bir kopya yaparak bu hedefe nesnesi.  
+ Kopya `texture` derin kopyalama yaparak hedefe nesne.  
   
 ```  
 void copy_to(texture& _Dest) const; 
@@ -137,18 +137,18 @@ void copy_to(writeonly_texture_view<value_type, _Rank>& _Dest) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Dest`  
- Kopyalamak için nesne.  
+*_Dest*<br/>
+Üstüne kopyalanacak nesne.  
   
- `_Rank`  
- Doku derecesini.  
+*_Dizin*<br/>
+Dokunun boyut sayısı.  
   
- `value_type`  
- Dokudaki öğelerin türü.  
+*value_type*<br/>
+Dokudaki öğelerin türü.  
   
 ##  <a name="data"></a> Veri 
 
- Bir CPU işaretçi bu doku ham verileri döndürür.  
+ Bir CPU işaretçisini bu dokunun ham verisine döndürür.  
   
 ```  
 void* data() restrict(cpu);
@@ -158,11 +158,11 @@ const void* data() const restrict(cpu);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Doku ham verileri için bir işaretçi.  
+ Doku öğesinin ham verisine bir işaretçi.  
   
 ##  <a name="depth_pitch"></a> depth_pitch 
 
- Bir 3B hazırlama doku CPU üzerinde her derinliği dilimi arasındaki bayt sayısını alır.  
+ CPU'da bir 3B hazırlama dokusundaki her derinlik dilimi arasında bulunan bayt sayısını alır.  
   
 ```  
 __declspec(property(get= get_depth_pitch)) unsigned int depth_pitch;  
@@ -177,48 +177,48 @@ const value_type get(const index<_Rank>& _Index) const restrict(amp);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Index`  
- Öğenin dizini.  
+*_Index*<br/>
+Öğenin dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen dizindeki öğesinin değeri.  
+ Belirtilen dizindeki öğenin değeri.  
   
 ##  <a name="get_associated_accelerator_view"></a> get_associated_accelerator_view 
 
- Tercih edilen kopyalanması bu doku hedefidir accelerator_view döndürür.  
+ Bu dokunun kopyalanacağı tercih edilen hedef olan accelerator_view döndürür.  
   
 ```  
 Concurrency::accelerator_view get_associated_accelerator_view() const restrict(cpu);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- [Accelerator_view](accelerator-view-class.md) diğer bir deyişle kopyalanması bu doku için tercih edilen hedef.  
+ [Accelerator_view](accelerator-view-class.md) diğer bir deyişle bu dokunun kopyalanacağı tercih edilen hedef.  
   
 ##  <a name="get_depth_pitch"></a> get_depth_pitch 
 
- CPU üzerinde doku hazırlama 3B her derinliği dilimi arasında bayt sayısını döndürür.  
+ Hazırlama dokusundaki CPU'da bir 3B hazırlama dokusundaki her derinlik dilimi arasında bulunan bayt sayısını döndürür.  
   
 ```  
 unsigned int get_depth_pitch() const restrict(cpu);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- CPU üzerinde doku hazırlama 3B her derinliği dilimi arasındaki bayt sayısı.  
+ Hazırlama dokusundaki CPU'da bir 3B hazırlama dokusundaki her derinlik dilimi arasında bulunan bayt sayısını.  
   
 ##  <a name="get_row_pitch"></a> get_row_pitch 
 
- Bayt sayısını 2 boyutlu hazırlama doku her satırda bir derinliği dilimi 3 boyutlu hazırlama doku her satır arasında veya döndürür.  
+ 2 boyutlu bir hazırlama dokusundaki her satır arasında veya 3 boyutlu bir hazırlama dokusundaki bir derinlik diliminin her satırı arasında bulunan bayt sayısını döndürür.  
   
 ```  
 unsigned int get_row_pitch() const restrict(cpu);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Her satırda bir 2 boyutlu hazırlama doku derinliği dilim 3 boyutlu hazırlama doku içindeki her satır arasında veya bayt sayısı.  
+ 2 boyutlu bir hazırlama dokusundaki her satır arasında veya 3 boyutlu bir hazırlama dokusundaki bir derinlik diliminin her satırı arasında bulunan bayt sayısı.  
   
 ##  <a name="operator_call"></a> operator() 
 
- Parametrelerle belirtilen öğenin değerini döndürür.  
+ Parametreler ile belirtilen öğe değeri döndürür.  
   
 ```  
 const value_type operator() (
@@ -241,25 +241,25 @@ const value_type operator() (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Index`  
- Dizini.  
+*_Index*<br/>
+Dizini.  
   
- `_I0`  
- Dizin en önemli bileşenidir.  
+*_I0*<br/>
+Dizinin en önemli bileşeni.  
   
- `_I1`  
- Dizin İleri-için-çoğu-önemli bileşenidir.  
+*_I1*<br/>
+Dizinin sonraki-en-önemli bileşeni.  
   
- `_I2`  
- Dizin en az önemli bileşenidir.  
+*_I2*<br/>
+Dizinin en az önemli bileşeni.  
   
- `_Rank`  
- Dizin derecesini.  
+*_Dizin*<br/>
+Dizinin boyut sayısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Parametrelerle belirtilen öğe değeri.  
+ Parametreler ile belirtilen öğe değeri.  
   
-##  <a name="operator_at"></a> [] işleci 
+##  <a name="operator_at"></a> operator] 
 
  Belirtilen dizindeki öğeyi döndürür.  
   
@@ -271,18 +271,18 @@ const value_type operator[] (int _I0) const restrict(amp);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Index`  
- Dizini.  
+*_Index*<br/>
+Dizini.  
   
- `_I0`  
- Dizini.  
+*_I0*<br/>
+Dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen dizindeki öğeyi.  
+ Belirtilen dizindeki öğe.  
   
 ##  <a name="operator_eq"></a> işleç = 
 
- Belirtilen kopyalar [doku](texture-class.md) bu bir nesne.  
+ Belirtilen kopyalar [doku](texture-class.md) buna nesne.  
   
 ```  
 texture& operator= (
@@ -294,15 +294,15 @@ texture& operator= (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Other`  
- `texture` Kopyalanacak nesne.  
+*_Diğer*<br/>
+`texture` Kopyalanacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu başvuru `texture` nesnesi.  
+ Bu başvuru `texture` nesne.  
   
-##  <a name="rank"></a> RANK 
+##  <a name="rank"></a> boyut sayısı 
 
- Derecesini alır `texture` nesnesi.  
+ Boyut sayısını alır `texture` nesne.  
   
 ```  
 static const int rank = _Rank;  
@@ -310,15 +310,15 @@ static const int rank = _Rank;
   
 ##  <a name="row_pitch"></a> row_pitch 
 
- Her satırda bir 2B veya 3B arasında bayt sayısı, CPU üzerinde doku hazırlama alır.  
+ Bayt her satır arasında bulunan bir 3B veya 2B hazırlama dokusundaki CPU'da alır.  
   
 ```  
 __declspec(property(get= get_row_pitch)) unsigned int row_pitch;  
 ```  
   
-##  <a name="set"></a> ayarlama 
+##  <a name="set"></a> Ayarlayın 
 
- Öğesinin değeri belirtilen dizindeki ayarlar.  
+ Belirtilen dizindeki öğenin değerini ayarlar.  
   
 ```  
 void set(
@@ -327,14 +327,14 @@ void set(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Index`  
- Öğenin dizini.  
+*_Index*<br/>
+Öğenin dizini.  
   
- `_Rank`  
- Dizin derecesini.  
+*_Dizin*<br/>
+Dizinin boyut sayısı.  
   
- `value`  
- Öğesinin yeni değeri.  
+*value*<br/>
+Öğenin yeni değeri.  
   
 ##  <a name="ctor"></a> Doku 
 
@@ -561,59 +561,59 @@ texture(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Acc_view`  
- [Accelerator_view](accelerator-view-class.md) doku konumunu belirtir.  
+*_Acc_view*<br/>
+[Accelerator_view](accelerator-view-class.md) dokunun konumunu belirtir.  
   
- `_Av`  
- [Accelerator_view](accelerator-view-class.md) doku konumunu belirtir.  
+*_Av*<br/>
+[Accelerator_view](accelerator-view-class.md) dokunun konumunu belirtir.  
   
- `_Associated_av`  
- Tercih edilen hedef belirten bir accelerator_view için veya bu doku kopyalar.  
+*_Associated_av*<br/>
+Tercih edilen hedef belirten bir accelerator_view için bu dokuya veya buradan kopyalar.  
   
- `_Bits_per_scalar_element`  
- Temel alınan skaler bir türde doku skaler her öğe başına bit sayısı. Genel olarak, desteklenen değer: 8, 16, 32 ve 64. 0 belirtilirse bit sayısını temel scalar_type aynıdır. 64 yalnızca çift tabanlı dokular için geçerlidir.  
+*_Bits_per_scalar_element*<br/>
+Temel alınan skalar tür Dokuların her skalar öğe başına bit sayısı. Genel olarak, desteklenen değer 8, 16, 32 ve 64 olan. 0 belirtilirse bit sayısını temel scalar_type ile aynıdır. 64 yalnızca çift tabanlı dokular için geçerlidir.  
   
- `_Ext`  
- Her boyut doku içindeki kapsamı.  
+*_Ext*<br/>
+Dokunun her boyutundaki kapsam.  
   
- `_E0`  
- Doku en önemli bileşenidir.  
+*_E0*<br/>
+Dokunun en önemli bileşeni.  
   
- `_E1`  
- Doku İleri-için-çoğu-önemli bileşenidir.  
+*_E1*<br/>
+Doku sonraki-en-önemli bileşeni.  
   
- `_E2`  
- Doku kapsamını en az önemli bileşenidir.  
+*_E2*<br/>
+Doku kapsamındaki en az önemli bileşeni.  
   
- `_Input_iterator`  
- Giriş interator türü.  
+*_Input_iterator*<br/>
+Giriş yineleyicisinin türü.  
   
- `_Mipmap_levels`  
- Temel alınan doku mipmap düzey sayısı. 0 belirtilirse, belirtilen kapsam için en küçük olası ölçüye mipmap düzeyleri tam aralığını doku gerekir.  
+*_Mipmap_levels*<br/>
+Temel dokudaki mipmap düzeylerinin sayısı. 0 belirtilirse, dokudaki mipmap düzeyleri belirtilen uzantı için olası en küçük boyuta kadar çeşitli olacaktır.  
   
- `_Rank`  
- Uzantı derecesini.  
+*_Dizin*<br/>
+Kapsamın boyut sayısı.  
   
- `_Source`  
- Bir ana bilgisayar arabellek için bir işaretçi.  
+*_Source*<br/>
+Ana arabellek için işaretçi.  
   
- `_Src`  
- Doku kopyalamak için.  
+*_Src*<br/>
+Kopya dokusu oluşturmak için.  
   
- `_Src_byte_size`  
- Kaynak arabellekteki bayt sayısı.  
+*_Src_byte_size*<br/>
+Kaynak arabellekteki bayt sayısı.  
   
- `_Src_first`  
- Başlangıç yineleyici kaynak kapsayıcı içine.  
+*_Src_first*<br/>
+Kaynak kapsayıcı içine bir başlangıç yineleyicisi.  
   
- `_Src_last`  
- Bitiş yineleyici kaynak kapsayıcı içine.  
+*_Src_last*<br/>
+Kaynak kapsayıcı içine bir bitiş yineleyicisi.  
   
- `_Other`  
- Diğer veri kaynağı.  
+*_Diğer*<br/>
+Başka bir veri kaynağı.  
   
- `_Rank`  
- Bölüm derecesini.  
+*_Dizin*<br/>
+Bölümün boyut sayısı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

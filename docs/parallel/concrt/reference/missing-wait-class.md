@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5ebd607dc207975e7d38e3217c275d3d5d18bb8
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: a2a44cbdb5abeed7d5dbd7be7dfaba37ba1d0145
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33686353"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024963"
 ---
 # <a name="missingwait-class"></a>missing_wait Sınıfı
-Bu sınıf için hala zamanlanmış görevler olduğunda oluşturulan bir özel açıklayan bir `task_group` veya `structured_task_group` aynı anda bu nesnenin nesne yıkıcı yürütür. Yıkıcı bir özel durum sonucu olarak geriye doğru izleme yığını nedeniyle ulaşıldığında bu özel durumun hiçbir zaman oluşturulur.  
+Bu sınıf için yine de zamanlanmış görevler olduğunda oluşturulan bir özel açıklayan bir `task_group` veya `structured_task_group` sırada bu nesnenin nesne yok Edicisi yürütür. Bu özel durumun hiçbir zaman yok edici bir özel durum sonucu olarak geriye doğru izleme yığın nedeniyle ulaşılırsa oluşturulur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,10 +40,10 @@ class missing_wait : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[missing_wait](#ctor)|Fazla Yüklendi. Oluşturan bir `missing_wait` nesnesi.|  
+|[missing_wait](#ctor)|Fazla Yüklendi. Oluşturur bir `missing_wait` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Özel durum akış ya da çağırmak için sorumlu `wait` veya `run_and_wait` yöntemi bir `task_group` veya `structured_task_group` destruct söz konusu nesne izin vermeden önce nesnesi. Çalışma zamanı bu özel durum çağrı unuttunuz bir göstergesi olarak atar `wait` veya `run_and_wait` yöntemi.  
+ Özel durum akış ya da çağırmak için sorumlu `wait` veya `run_and_wait` yöntemi bir `task_group` veya `structured_task_group` söz konusu nesneyi yok etmek üzere izin vermeden önce nesne. Çalışma zamanı bu Exception'a çağrılacak unuttum bir gösterge olarak `wait` veya `run_and_wait` yöntemi.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -57,7 +57,7 @@ class missing_wait : public std::exception;
   
 ##  <a name="ctor"></a> missing_wait 
 
- Oluşturan bir `missing_wait` nesnesi.  
+ Oluşturur bir `missing_wait` nesne.  
   
 ```
 explicit _CRTIMP missing_wait(_In_z_ const char* _Message) throw();
@@ -66,8 +66,8 @@ missing_wait() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

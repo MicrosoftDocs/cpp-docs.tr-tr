@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0d8b55bed4b86e44ada9f81dc2bf0269af604ec
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 68dd34810041b9d71056d4bb4afc9beadcaffa81
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33164820"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030748"
 ---
 # <a name="compiler-error-c2106"></a>Derleyici Hatası C2106
-'işleci': sol işleneni, l-değeri olmalıdır  
-  
- İşleci, kendi sol işleneni olarak l-değeri olması gerekir.  
-  
- Aşağıdaki örnek C2106 oluşturur:  
-  
-```  
-// C2106.cpp  
-int main() {  
-   int a;  
-   1 = a;   // C2106  
-   a = 1;   // OK  
-}  
+
+'operator': sol işlenen l değeri olmalıdır
+
+İşlecinin sol işleneni bir l değeri olmalıdır.
+
+Aşağıdaki örnek, C2106 oluşturur:
+
+```
+// C2106.cpp
+int main() {
+   int a;
+   1 = a;   // C2106
+   a = 1;   // OK
+}
 ```

@@ -16,42 +16,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a06ea88dab6ac7e89f7d53351b54593fd7bd232
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8be172086e316c991f461b3ac42f58739801cfa7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33275382"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022974"
 ---
 # <a name="compiler-warning-level-1-c4005"></a>Derleyici Uyarısı (düzey 1) C4005
-'tanımlayıcısı': makrosu yeniden tanımlama  
-  
- Makro tanımlayıcısı iki kez tanımlanır. Derleyici ikinci bir makro tanımı kullanır.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Komut satırında ve koduyla makro tanımlarken bir `#define` yönergesi.  
-  
-2.  INCLUDE dosyalarından içeri makrolar.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümlere kullanarak düzeltmek için  
-  
-1.  Tanımları birini kaldırın.  
-  
-2.  Kullanım bir [#undef](../../preprocessor/hash-undef-directive-c-cpp.md) ikinci tanımı önce yönergesi.  
-  
- Aşağıdaki örnek C4005 oluşturur:  
-  
-```  
-// C4005.cpp  
-// compile with: /W1 /EHsc  
-#include <iostream>  
-using namespace std;  
-  
-#define TEST "test1"  
-#define TEST "test2"   // C4005 delete or rename to resolve the warning  
-  
-int main() {  
-   cout << TEST << endl;  
-}  
+
+'identifier': makro yeniden tanımlama
+
+Makro tanımlayıcı, iki kez tanımlanmış. Derleyici ikinci Makro tanımında kullanır.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Makro, komut satırında ve kodla tanımlarken bir `#define` yönergesi.
+
+1. Makroları dahil etme dosyaları içeri aktarıldı.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+
+1. Tanımlardan birini kaldırın.
+
+1. Kullanım bir [#undef](../../preprocessor/hash-undef-directive-c-cpp.md) ikinci tanımından önce yönergesi.
+
+Aşağıdaki örnek, C4005 oluşturur:
+
+```
+// C4005.cpp
+// compile with: /W1 /EHsc
+#include <iostream>
+using namespace std;
+
+#define TEST "test1"
+#define TEST "test2"   // C4005 delete or rename to resolve the warning
+
+int main() {
+   cout << TEST << endl;
+}
 ```

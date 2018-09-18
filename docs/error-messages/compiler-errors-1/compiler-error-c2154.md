@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e712a683e703bc277b82931dedcddba38a77c317
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 766291c6bd1a81469ce5dc2f1fbd8aee94f0db89
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168938"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019841"
 ---
 # <a name="compiler-error-c2154"></a>Derleyici Hatası C2154
-'type': yalnızca numaralandırma türü derleyici geçerli bir tür ayırdedici nitelik '__underlying_type' bağımsız değişkeni olarak izin verilir  
-  
- Yalnızca bir numaralandırma türünün temel alınan tür alabilir.  
-  
- Daha fazla bilgi için bkz: [tür özellikleri için derleyici desteği](../../windows/compiler-support-for-type-traits-cpp-component-extensions.md).
+
+'type': yalnızca numaralandırma türünün derleyici iç tür niteliğine '__underlying_type' bağımsız değişkeni olarak izin verilir
+
+Bir numaralandırma türünün temel türü yalnızca alabilirsiniz.
+
+Daha fazla bilgi için [tür özellikleri için derleyici desteği](../../windows/compiler-support-for-type-traits-cpp-component-extensions.md).

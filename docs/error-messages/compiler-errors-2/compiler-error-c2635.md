@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 30916834b8adee0d1a80625624e80c5a860e57ae
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cb7bc7b39550df7b742b2a8b940a77170e81914c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33233996"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017397"
 ---
 # <a name="compiler-error-c2635"></a>Derleyici Hatası C2635
-bir 'identifier1*' dönüştürülemiyor bir ' identifier2\*'; sanal bir temel sınıf dönüştürme kapsanan  
-  
- Bir dönüştürme dönüştürme gerektiren bir `virtual` temel sınıfı izin türetilmiş bir sınıf.  
-  
- Aşağıdaki örnek C2635 oluşturur:  
-  
-```  
-// C2635.cpp  
-class B {};  
-class D : virtual public B {};  
-class E : public B {};  
-  
-int main() {  
-   B b;  
-   D d;  
-   E e;  
-  
-   D * pD = &d;  
-   E * pE = &e;  
-   pD = (D*)&b;   // C2635  
-   pE = (E*)&b;   // OK  
-}  
+
+bir 'identifier1*' dönüştürülemiyor bir ' identifier2\*'; sanal bir temel sınıf dönüştürme kapsanan
+
+Dönüştürme gelen bir tür dönüştürme gerektiriyor bir `virtual` temel sınıfı izin verilmiyor bir türetilmiş sınıf.
+
+Aşağıdaki örnek, C2635 oluşturur:
+
+```
+// C2635.cpp
+class B {};
+class D : virtual public B {};
+class E : public B {};
+
+int main() {
+   B b;
+   D d;
+   E e;
+
+   D * pD = &d;
+   E * pE = &e;
+   pD = (D*)&b;   // C2635
+   pE = (E*)&b;   // OK
+}
 ```

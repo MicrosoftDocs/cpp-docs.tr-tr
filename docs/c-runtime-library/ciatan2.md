@@ -29,30 +29,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33abe3dd332bdb55decde308d67d0e1af13e13f8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dbeca42c9b00558823e36463eab39d5caabec632
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387151"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016409"
 ---
 # <a name="ciatan2"></a>_CIatan2
-Tanjantını hesaplar *x* / *y* nerede *x* ve *y* yığının üst kısmında değerlerdir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void __cdecl _CIatan2();  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sürümü `atan2` işlevi derleyici özelliğini algılayan bir özelleştirilmiş çağırma vardır. Oluşturulmasını önler kopyaları önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.  
-  
- Sonuç değeri yığının en üst gönderilir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Platform:** x86  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik işlev başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)
+
+Ark tanjantını hesaplar *x* / *y* burada *x* ve *y* yığının en üstündeki değerler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void __cdecl _CIatan2();
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sürümü `atan2` derleyici anlayan özelleştirilmiş bir çağırma kuralı işlevi vardır. Kopya oluşturulmasını önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.
+
+Sonuç değerini yığın üstüne itilir.
+
+## <a name="requirements"></a>Gereksinimler
+ **Platform:** x86
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)

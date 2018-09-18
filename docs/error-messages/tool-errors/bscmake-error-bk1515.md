@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da10dc8d0287158da1d44300075d0ac9ebf3e296
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e52447d7e4e0485b4725ef582384125c138a1a48
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295096"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016428"
 ---
 # <a name="bscmake-error-bk1515"></a>BSCMAKE Hatası BK1515
-bscfile: uyumsuz sürümü: artımlı olarak güncelleştirilemiyor  
-  
- .Bsc dosyası BSCMAKE başka bir sürümü ile oluşturuldu. .Bsc dosyasını yeniden oluşturun.
+
+bscfile: uyumsuz sürüm: artımlı olarak güncelleştirilemiyor
+
+.bsc dosyası BSCMAKE başka bir sürümüyle oluşturuldu. .Bsc dosyasını yeniden oluşturun.

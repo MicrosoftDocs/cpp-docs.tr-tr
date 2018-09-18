@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dc28d8a0d5dc24d0f0c665e5a17fc38e0c9d08f
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: eabb923b165d407f77554d88d710cd7c67a14240
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753155"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022117"
 ---
 # <a name="registry-scripting-examples"></a>Kayıt defteri betik oluşturma örnekleri
 
@@ -32,17 +32,17 @@ Bu konudaki betik örnekleri, sistem kayıt defterine bir anahtar ekleyin, kayı
 
 Aşağıdaki ayrıştırma ağacı tek bir anahtarı sistem kayıt defterine ekler basit bir komut dosyası gösterilmektedir. Özellikle, betik anahtar ekler `MyVeryOwnKey`, `HKEY_CURRENT_USER`. Ayrıca varsayılan dize değeri atar `HowGoesIt` yeni anahtarı:
 
-```  
-HKEY_CURRENT_USER  
+```
+HKEY_CURRENT_USER
 {  
-'MyVeryOwnKey' = s 'HowGoesIt'  
-}  
+    'MyVeryOwnKey' = s 'HowGoesIt'
+}
 ```
 
 Bu betik, birden çok alt şu şekilde tanımlamak için kolayca genişletilebilir:
 
-```  
-HKCU  
+```
+HKCU
 {  
     'MyVeryOwnKey' = s 'HowGoesIt'  
     {  
@@ -51,8 +51,8 @@ HKCU
             'PrettyCool' = d '55'  
             val 'ANameValue' = s 'WithANamedValue'  
         }  
-    }  
-}  
+    }
+}
 ```
 
 Artık, bir alt komut dosyası ekler `HasASubkey`, `MyVeryOwnKey`. Bu alt anahtar hem de ekler `PrettyCool` alt (varsayılan değer `DWORD` 55 değerini) ve `ANameValue` adlandırılmış değeri (bir dize değeriyle `WithANamedValue`).
@@ -61,8 +61,8 @@ Artık, bir alt komut dosyası ekler `HasASubkey`, `MyVeryOwnKey`. Bu alt anahta
 
 Aşağıdaki komut, kayıt şirketi COM sunucusunun kaydeder.
 
-```  
-HKCR  
+```
+HKCR
 {  
     ATL.Registrar = s 'ATL Registrar Class'  
     {  
@@ -78,8 +78,8 @@ HKCR
                 val ThreadingModel = s 'Apartment'  
             }  
         }  
-    }  
-}  
+    }
+}
 ```
 
 Çalışma zamanında bu ayrıştırma ağacı ekler `ATL.Registrar` anahtarını `HKEY_CLASSES_ROOT`. Bu yeni anahtar için BT sonra:
@@ -106,15 +106,15 @@ Ayrıştırma ağacına artık iki yeni anahtarlarına ekler `{44EC053A-400F-11D
 
 Ayrıştırma ağacı birden fazla komut belirtmek için bir ağaç sonunda başka yerleştirin. Örneğin, aşağıdaki betiği anahtar ekler `MyVeryOwnKey`, her ikisi için de ayrıştırma ağaçlarını için `HKEY_CLASSES_ROOT` ve `HKEY_CURRENT_USER`:
 
-```  
-HKCR  
+```
+HKCR
 {  
-    'MyVeryOwnKey' = s 'HowGoesIt'  
-}  
-HKEY_CURRENT_USER  
+    'MyVeryOwnKey' = s 'HowGoesIt'
+}
+HKEY_CURRENT_USER
 {  
-    'MyVeryOwnKey' = s 'HowGoesIt'  
-}  
+    'MyVeryOwnKey' = s 'HowGoesIt'
+}
 ```
 
 > [!NOTE]

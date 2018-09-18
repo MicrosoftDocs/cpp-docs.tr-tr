@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Programınızı (C++) dağıtma | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/14/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -19,82 +19,72 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1753c63673b9dd083e2b690788801bd467938c3
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 07939e7f0983e83b936d06cc871cba022d387d78
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33335542"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031398"
 ---
 # <a name="walkthrough-deploying-your-program-c"></a>İzlenecek Yol: Programınızı Dağıtma (C++)
-İçinde listelenen önceki ilgili incelemeleri tamamlayarak uygulamanızı oluşturduğunuza göre [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md), diğer kullanıcılar bir yükleyici oluşturmak üzere son adımdır program bilgisayarlarına yükleyin. Bunu yapmak için var olan çözümünüzü yeni bir proje ekleyeceksiniz. Bu yeni proje çıktısı, uygulamanızın başka bir bilgisayara yükler setup.exe dosyasıdır.  
+Listelenen önceki izlenecek yolları, tamamlayarak uygulamanızı oluşturdunuz [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md), böylece diğer kullanıcıların bir yükleyici oluşturmak için son adımdır programı kendi bilgisayarlarına yükleyin. Bunu yapmak için varolan çözümünüze yeni bir proje ekleyeceksiniz. Bu yeni proje çıktısı uygulamanız başka bir bilgisayara yükleyecek bir setup.exe dosyasıdır.  
   
- Bu kılavuzda Windows Installer uygulamanızı dağıtmak için nasıl kullanılacağını gösterir. Bir uygulamayı dağıtmak için ClickOnce de kullanabilirsiniz. Daha fazla bilgi için bkz: [Visual C++ uygulamaları için ClickOnce dağıtımı](../ide/clickonce-deployment-for-visual-cpp-applications.md). Genel olarak, dağıtımı hakkında daha fazla bilgi için bkz [dağıtma uygulamaları, hizmetleri ve bileşenleri](/visualstudio/deployment/deploying-applications-services-and-components).  
+ Bu yönerge Windows Installer uygulamanızı dağıtmak için nasıl kullanılacağını gösterir. Bir uygulamayı dağıtmak için ClickOnce da kullanabilirsiniz. Daha fazla bilgi için [Visual C++ uygulamaları için ClickOnce dağıtımı](../ide/clickonce-deployment-for-visual-cpp-applications.md). Genel olarak, dağıtım hakkında daha fazla bilgi için bkz [uygulamaları dağıtma, hizmetleri ve bileşenleri](/visualstudio/deployment/deploying-applications-services-and-components).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
   
--   Bu kılavuz, C++ dil temelleri anladığınızı varsayar.  
+- Bu izlenecek yol, C++ dili temellerini anladığınızı varsayar.  
   
--   Ayrıca listelenen ilgili daha önce izlenecek tamamladığınızı varsaymaktadır [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
+- Ayrıca, listelenen önceki izlenecek yolları tamamladığınızı varsayar [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
   
--   Bu kılavuz, Visual Studio Express sürümlerini tamamlanamıyor.  
+- Bu izlenecek yol, Visual Studio'nun Express sürümlerinde tamamlanamaz.  
   
--   Zaten yapmadıysanız, InstallShield Limited Edition (işle), adımlar bu makalenin sonraki bölümlerinde açıklandığı gibi indirin. İşle Visual Studio geliştiricileri için ücretsizdir ve Visual Studio'nun önceki sürümleri Kurulum ve dağıtım proje şablonlarını işlevselliğini değiştirir.  
+- Zaten yapmadıysanız, bu makaledeki adımlarda açıklandığı Microsoft Visual Studio yükleyici projeleri uzantısını indirin. Uzantı, Visual Studio geliştiricileri için ücretsizdir ve Visual Studio için Kurulum ve dağıtım proje şablonları işlevselliğinin ekler.  
   
-### <a name="to-install-the-isle-setup-and-deployment-project-template"></a>İşle Kurulum ve dağıtım proje şablonu yüklemek için  
+### <a name="to-install-the-visual-studio-setup-and-deployment-project-template"></a>Visual Studio Kurulum ve dağıtım proje şablonunu yüklemek için  
+
+1. Visual Studio, internet bağlıyken seçin **Araçları** > **Uzantılar ve güncelleştirmeler**.
+
+1. Altında **Uzantılar ve güncelleştirmeler**seçin **çevrimiçi** sekmesi ve türü *Microsoft Visual Studio yükleyici projeleri* arama kutusuna. İsabet **Enter**seçin **Microsoft Visual Studio 2017 yükleyicisi projeleri**, tıklatıp **indirme**.
+
+1. Uzantıyı yükledikten sonra Visual Studio'yu yeniden başlatın, bu seçeneği seçin. 
   
-1.  Menü çubuğunda, internet bağlıyken seçin **dosya**, **yeni**, **proje** açmak için **yeni proje** iletişim kutusu.  
+1. Menü çubuğunda, **dosya** > **son projeler ve çözümler**ve ardından **Game** yeniden açmak için çözüm.  
   
-2.  İletişim kutusunun sol bölmesinde, **yüklü**, **şablonları**, ve **diğer proje türleri** düğümleri ve ardından **Kurulum ve dağıtım**. Orta bölmede seçin **etkinleştirmek InstallShield Limited Edition** ve ardından **Tamam** düğmesi.  
+### <a name="to-create-a-setup-project-and-install-your-program"></a>Bir kurulum projesi oluşturmak ve programınızı yüklemek için  
   
-3.  Visual Studio (işle için) InstallShield Limited Edition'ı yüklemek için yönergeleri izleyin.  
+1. Etkin çözüm yapılandırmasını Release olarak değiştirin. Menü çubuğunda, **derleme** > **Configuration Manager**. İçinde **Configuration Manager** iletişim kutusundaki **etkin çözüm yapılandırması** aşağı açılan listesinden **yayın**. Seçin **Kapat** yapılandırmayı kaydetmek için düğme.  
   
-4.  İndirdiğiniz, yüklü ve işle etkinleştirilmiş sonra Visual Studio'yu kapatın ve yeniden açın.  
+1. Menü çubuğunda, **dosya** > **yeni** > **proje** açmak için **yeni proje** iletişim kutusu.  
   
-5.  Menü çubuğunda seçin **dosya**, **yeni projeler ve çözümler**ve ardından **oyun** çözümü yeniden açın.  
+1. İletişim kutusunun sol bölmesinde **yüklü** > **diğer proje türleri** düğümleri ve ardından **Visual Studio yükleyicisi**. Orta bölmede seçin **Kurulum projesi**.  
   
-### <a name="to-create-a-setup-project-and-install-your-program"></a>Kurulum projesi oluşturup, programı yüklemek için  
+1. Kurum projesi için bir ad girin **adı** kutusu. Bu örnekte, girin *oyun yükleyici*. İçinde **çözüm** aşağı açılan listesinden **eklemek için çözüm**. Seçin **Tamam** Kurulum projesi oluşturmak için. A **dosya Yardımcısı (oyun Yükleyici)** sekmesi düzenleyici penceresinde açılır.  
+
+1. Sağ **uygulama klasörü** düğümünü seçip alt **Ekle** > **proje çıktısı** açmak için **proje çıkış grubu Ekle**iletişim kutusu.
+
+1. İletişim kutusunda **birincil çıkışının** tıklatıp **Tamam**. Adlı yeni bir öğe **Game (etkin) birincil çıkışı** görünür.  
+
+1. Öğeyi seçin **birincil (etkin) oyun çıktısını**seçin ve sağ tıklatıp **oluşturma kısayoldan birincil çıkış için oyun (etkin)**. Adlı yeni bir öğe **Game (etkin) için birincil çıkışının kısayoldan** görünür.
+
+1. Kısayol öğeyi yeniden adlandır *oyun*ardından sürükleyip öğesine **kullanıcının Programlar menüsü** pencerenin sol tarafındaki düğümü.
+
+1. İçinde **Çözüm Gezgini** seçin **oyun yükleyici** projesini ve ardından **görünümü** > **Özellikler penceresi** veya isabet **F4** açmak için **özellikleri** penceresi.
+
+1. Yükleyicide görünmesini istediğiniz kadar ek ayrıntıları belirtin.  Örneğin, *Contoso* için **üretici**, *oyun yükleyici* için **ürün adı**, ve *http://www.contoso.com* için **SupportUrl**.
+
+1. Menü çubuğunda, **derleme** > **Configuration Manager**. İçinde **proje** tablosuna ve altında **derleme** sütun için kutuyu **oyun yükleyici**. **Kapat**'ı tıklatın.
   
-1.  Etkin çözüm yapılandırması yayın olarak değiştirin. Menü çubuğunda seçin **yapı**, **Configuration Manager**. İçinde **Configuration Manager** iletişim kutusundaki **etkin çözüm yapılandırması** aşağı açılan listesinden, **sürüm**. Seçin **Kapat** yapılandırmayı kaydetmek için düğmesi.  
+1. Menü çubuğunda, **derleme** > **Çözümü Derle** oyun projesini ve oyun yükleyici projesini derlemek için.  
   
-2.  Menü çubuğunda seçin **dosya**, **yeni**, **proje** açmak için **yeni proje** iletişim kutusu.  
-  
-3.  İletişim kutusunun sol bölmesinde, **yüklü**, **şablonları**, ve **diğer proje türleri** düğümleri ve ardından **Kurulum ve dağıtım**. Orta bölmede seçin **InstallShield Limited Edition proje**.  
-  
-4.  Kurulum projesi için bir ad girin **adı** kutusu. Bu örnekte, girin **oyun yükleyici**. İçinde **çözüm** aşağı açılan listesinden, **eklemek için çözüm**. Seçin **Tamam** düğmesi Kurulum projesi oluşturun. A **proje Yardımcısı (oyun Yükleyici)** sekmesi Düzenleyicisi penceresinde açılır.  
-  
-5.  Ekranın alt kısmındaki **proje Yardımcısı (oyun Yükleyici)** sekmesinde, seçin **uygulama bilgilerini** bağlantı.  
-  
-6.  Üzerinde **uygulama bilgilerini** sayfasında, yükleyici görünmesini istediğiniz gibi şirketinizin adını belirtin. Şirketinizin adını kullanın veya bu örneğin **Contoso**. Uygulama adınız; belirtin. Bu örnekte belirtin **oyun**. Şirketinizin web adresini belirtin veya bu örneğin **http://www.contoso.com**.  
-  
-7.  Ekranın alt kısmındaki **proje Yardımcısı (oyun Yükleyici)** sekmesinde, seçin **yükleme görüşme** bağlantı.  
-  
-8.  Üzerinde **yükleme görüşme** sayfasında, altında **, Lisans Sözleşmesi iletişim kutusunu görüntülemek istediğiniz**seçin **Hayır** seçenek düğmesi. Altında **istemi kullanıcıların kendi şirket adını girin ve kullanıcı adı istediğiniz**seçin **Hayır** seçenek düğmesi.  
-  
-9. İçinde **Çözüm Gezgini**, genişletin **oyun yükleyici** projesi, genişletin **düzenlemek bilgisayarınızı Kurulum** düğümünü ve ardından açın **genel bilgiler** sayfası.  
-  
-10. Üzerinde **genel bilgiler (oyun Yükleyici)** sekmesinde Düzenleyicisi penceresinde, belirtin bir **etiketi Oluşturucu Kimliği**, örneğin, **regid.2012 12.com.Contoso**.  
-  
-11. İçinde **Çözüm Gezgini**altında **oyun yükleyici** projesi, genişletin **uygulama verilerini belirtin** düğümünü ve ardından açın **dosyaları** Sayfa.  
-  
-12. Üzerinde **dosyaları (oyun Yükleyici)** Düzenleyicisi penceresinde, altında sekmesinde **bilgisayarın dosyalarını kaynağı**, kısayol menüsünü açın **birincil çıktı gelen oyun** ve seçin**Kopya**.  
-  
-13. Alanı altında bir kısayol menüsü açma **adı** sütununda **hedef bilgisayarın dosyaları**ve seçin **Yapıştır**. Adlı yeni bir öğe **Game.Primary çıkış** görüntülenir.  
-  
-14. İçinde **Çözüm Gezgini**altında **uygulama verilerini belirtin** düğümü, açık **yeniden dağıtılabilir öğeleri** sayfası.  
-  
-15. Üzerinde **yeniden dağıtılabilir öğeleri (oyun Yükleyici)** Düzenleyicisi penceresinde, seçin sekmesinde **Visual C++ 11.0 CRT (x86)** onay kutusu.  
-  
-16. Menü çubuğunda seçin **yapı**, **yapı çözümü** oyun proje ve oyun yükleyici proje oluşturmak için.  
-  
-17. Çözüm klasöründe oyun yükleyici projesinden oluşturulan setup.exe programını bulun ve ardından oyun uygulaması bilgisayarınıza yüklemek için çalıştırın. Uygulamayı yüklemek için bu dosyayı ve başka bir bilgisayarda gerekli kitaplık dosyalarını kopyalayabilirsiniz.  
-  
-18. Birçok seçenek gereksinimlerinize uyacak şekilde Kurulum projesi ayarlayabilirsiniz. Daha fazla bilgi için içinde **Çözüm Gezgini**altında **oyun yükleyici** proje, açık **Başlarken** sayfasında ve işle Yardım Kitaplığı'nı açmak için F1 tuşuna'i seçin.  
+1. Çözüm klasöründe, oyun yükleyici tarafından oluşturulan setup.exe programını bulun ve ardından oyun uygulamasını bilgisayarınıza yüklemek için çalıştırın. Uygulama ve gerekli kitaplık dosyalarını başka bir bilgisayara yüklemek için bu dosya (ve GameInstaller.msi) kopyalayabilirsiniz.   
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
- **Önceki:** [izlenecek yol: bir projenin (C++)](../ide/walkthrough-debugging-a-project-cpp.md)  
+
+**Önceki:** [izlenecek yol: bir projenin (C++)](../ide/walkthrough-debugging-a-project-cpp.md)<br/>
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
- [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)  
- [Masaüstü uygulamaları dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)
+
+[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/> 
+[C/C++ programları oluşturma](../build/building-c-cpp-programs.md)<br/>
+[Masaüstü uygulamalarını dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)<br/>

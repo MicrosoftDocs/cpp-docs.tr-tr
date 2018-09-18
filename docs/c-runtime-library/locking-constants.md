@@ -29,42 +29,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 588c286cbad5e0097394a38eed34c09fc04af3ea
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: abf776ab72d692be6d573803353f35946df145ec
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389975"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031945"
 ---
 # <a name="locking-constants"></a>_locking Sabitleri
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-#include <sys/locking.h>  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- *Modu* çağrısında bağımsız değişkeni `_locking` işlevi gerçekleştirilecek kilitleme eylemi belirtir.  
-  
- *Modu* bağımsız değişkeni aşağıdaki bildirim sabitlerden biri olması gerekir.  
-  
- `_LK_LOCK`  
- Belirtilen bayt kilitler. Bayt kilitlenemez varsa, işlev 1 saniye sonra yeniden çalışır. 10 denemeden sonra bayt kilitlenemez varsa, işlev hata döndürür.  
-  
- `_LK_RLCK`  
- Aynı `_LK_LOCK`.  
-  
- `_LK_NBLCK`  
- Belirtilen bayt kilitler. Bayt kilitlenemez, işlev hata döndürür.  
-  
- `_LK_NBRLCK`  
- Aynı `_LK_NBLCK`.  
-  
- `_LK_UNLCK`  
- Belirtilen bayt kilidini açar. (Bayt önceden kilitlenen gerekir.)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [_locking](../c-runtime-library/reference/locking.md)   
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+#include <sys/locking.h>
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+*Modu* çağrısında bağımsız değişken `_locking` işlevi kilitleme gerçekleştirilecek eylemi belirtir.
+
+*Modu* bağımsız değişkeni aşağıdaki bildirim sabitleri biri olması gerekir.
+
+|||
+|-|-|
+| `_LK_LOCK`  | Belirtilen bayt kilitler. Bayt kilitlenemez, işlev 1 saniye sonra yeniden çalışır. 10 denemeden sonra bayt kilitlenemez, işlev hata döndürür.  |
+| `_LK_RLCK`  | Aynı `_LK_LOCK`.  |
+|`_LK_NBLCK`  | Belirtilen bayt kilitler. Bayt kilitlenemez, işlev hata döndürür.  |
+| `_LK_NBRLCK`  | Aynı `_LK_NBLCK`.  |
+| `_LK_UNLCK`  | Belirtilen bayt kilidini açar. (Bayt önceden kilitlenmiş gerekir.)  |
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[_locking](../c-runtime-library/reference/locking.md)<br/>
+[Global Sabitler](../c-runtime-library/global-constants.md)

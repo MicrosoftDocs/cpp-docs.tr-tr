@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0516e7cae12e544195d157781e6ed86923470420
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bbb91d6f7b3ef6b8204a5f8bfb753db98ab6f93d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250911"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023390"
 ---
 # <a name="compiler-error-c3198"></a>Derleyici Hatası C3198
-kayan nokta pragmaları geçersiz kullanımı: fenv_access pragması yalnızca kesin modunda çalışır  
-  
- [fenv_access](../../preprocessor/fenv-access.md) pragma altında kullanıldı bir [/fp](../../build/reference/fp-specify-floating-point-behavior.md) dışında ayarı **/fp: kesin**.  
-  
- Aşağıdaki örnek C3198 oluşturur:  
-  
-```  
-// C3198.cpp  
-// compile with: /fp:fast  
-#pragma fenv_access(on)   // C3198  
+
+kayan noktalı pragmaların geçersiz kullanımı: fenv_access pragma yalnızca hassas modda çalışır
+
+[fenv_access](../../preprocessor/fenv-access.md) pragma altında kullanıldı bir [/FP](../../build/reference/fp-specify-floating-point-behavior.md) dışında ayarlama **/FP: precise**.
+
+Aşağıdaki örnek, C3198 oluşturur:
+
+```
+// C3198.cpp
+// compile with: /fp:fast
+#pragma fenv_access(on)   // C3198
 ```

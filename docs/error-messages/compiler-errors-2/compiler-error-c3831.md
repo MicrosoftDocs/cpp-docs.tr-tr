@@ -16,38 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47c0295f598b79436d1f892114615473d16275e3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8525df7eb854ee56eef7bc9167d3630ea3c72ad5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33268068"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029890"
 ---
 # <a name="compiler-error-c3831"></a>Derleyici Hatası C3831
-'member': 'sınıfı' sabitlenmiş veri üyesi veya bir sabitleme işaretçisi döndüren bir üye işlevi olamaz  
-  
- [pin_ptr (C + +/ CLI)](../../windows/pin-ptr-cpp-cli.md) yanlış kullanıldı.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3831 oluşturur:  
-  
-```  
-// C3831a.cpp  
-// compile with: /clr  
-ref class Y  
-{  
-public:  
-   int i;  
-};  
-  
-ref class X  
-{  
-   pin_ptr<int> mbr_Y;   // C3831  
-   int^ mbr_Y2;   // OK  
-};  
-  
-int main() {  
-   Y y;  
-   pin_ptr<int> p = &y.i;  
-}  
-```  
+
+'member': 'class' sabitlenmiş veri üyesi veya bir sabitleme işaretçisi döndüren bir üye işlevine sahip olamaz
+
+[pin_ptr (C + +/ CLI)](../../windows/pin-ptr-cpp-cli.md) yanlış kullanıldı.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3831 oluşturur:
+
+```
+// C3831a.cpp
+// compile with: /clr
+ref class Y
+{
+public:
+   int i;
+};
+
+ref class X
+{
+   pin_ptr<int> mbr_Y;   // C3831
+   int^ mbr_Y2;   // OK
+};
+
+int main() {
+   Y y;
+   pin_ptr<int> p = &y.i;
+}
+```

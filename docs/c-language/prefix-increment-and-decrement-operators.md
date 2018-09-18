@@ -16,29 +16,32 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 116921ea46418db5c8eff3327de73a40aa42533c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7077e1b40701f8586ce8322ac9922517ac77b22b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384535"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018294"
 ---
 # <a name="prefix-increment-and-decrement-operators"></a>Önek Arttırma ve Azaltma İşleçleri
-Birli işleçleri (`++` ve **--**) "öneki" artışı adlı veya artırma veya azaltma işleçleri önce işlenen görüntülendiğinde işleçleri azaltma. Sonek arttırma ve azaltma önek artırma ve azaltma daha yüksek önceliğe sahiptir. İşlenen integral, kayan veya işaretçi türü olması gerekir ve değiştirilebilir l-değeri ifadesi olmalıdır (olmayan bir ifade **const** özniteliği). L-değeri sonucudur.  
-  
- İşleç önce kendi işleneni göründüğünde, işlenen artırılır veya indirildiği ve yeni değeri ifade sonucudur.  
-  
- Tam sayı veya kayan tür işleneni tamsayı değeri 1 artırılır veya indirildiği. Sonuç türü işlenen türü ile aynıdır. İşaretçi türünün işleneni bu adresleri nesnesi tarafından artırılır veya indirildiği boyutudur. Bir artımlı işaretçinin sonraki nesneye işaret; Azaltılan işaretçi önceki nesneye işaret etmiyor.  
-  
-## <a name="example"></a>Örnek  
- Bu örnekte birli önek azaltma işleci gösterilmektedir:  
-  
-```  
-if( line[--i] != '\n' )  
-    return;  
-```  
-  
- Bu örnekte, değişken `i` bir alt simge olarak kullanılabilmesi düşülür `line`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Birli İşleçler](../c-language/c-unary-operators.md)
+
+Birli işleçler (`++` ve **--**) artırma veya azaltma işleçleri önce işlenen göründüğünde azaltma işleçleri veya "ön eki" artış olarak adlandırılır. Sonek artırma ve azaltma önek artırma ve azaltma daha yüksek önceliğe sahiptir. İşlenen, integral, kayan veya işaretçi türünde olmalıdır ve değiştirilebilir bir l-değeri bir ifade olması gerekir (bir ifade olmadan **const** özniteliği). Sonuç bir l-değerdir.
+
+İşleci, işleneni önce görünür işlenen artırılması veya azaltılması ve kendi yeni değer ifadesi sonucu.
+
+Tamsayı veya kayan türünde bir işlenen, tamsayı değeri 1 artırılması veya azaltılması. Sonuç türü, işlenenin türü ile aynıdır. İşaretçi türünde bir işlenen sıra nesnesi tarafından artırılması veya azaltılması boyutudur. Artan bir işaretçi sonraki nesneye işaret eder; indirildiği işaretçi önceki nesneye işaret eder.
+
+## <a name="example"></a>Örnek
+
+Bu örnekte, birli önek azaltma işleci gösterilmektedir:
+
+```
+if( line[--i] != '\n' )
+    return;
+```
+
+Bu örnekte, değişken `i` için bir alt simge olarak kullanılmadan önce azaltılır `line`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Birli İşleçler](../c-language/c-unary-operators.md)

@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97ebe9d44074b9e6915f577cc012d9e148b2fbb2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3cd295611f483a97dcf3621a6a923ec5153232e0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247891"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024144"
 ---
 # <a name="compiler-error-c3265"></a>Derleyici Hatası C3265
-bir yönetilen 'yönetilen yapı' bir yönetilmeyen 'yönetilmeyen yapısıyla' bildiremezsiniz  
-  
-Bir yönetilmeyen bağlamında yönetilen bir nesne içeremez.  
-  
-Aşağıdaki örnek C3265 oluşmazsa:  
-  
-```  
-// C3265_2.cpp  
-// compile with: /clr /LD  
-#include <vcclr.h>  
-  
-ref class A { };  
-  
-class B  
-// try the following line instead  
-// ref class B   
-{  
-   A ^a;   // C3265  
-   // or embed the managed handle using gcroot  
-   // try the following line instead  
-   // gcroot<A^> a;  
-};  
-```  
+
+bir yönetilen 'yönetilen yapısı' içinde bir yönetilmeyen 'yönetilmeyen yapı' bildiremez
+
+Yönetilen bir nesnenin yönetilmeyen bir bağlamda içeremez.
+
+Aşağıdaki örnek, C3265 yeniden oluşturur:
+
+```
+// C3265_2.cpp
+// compile with: /clr /LD
+#include <vcclr.h>
+
+ref class A { };
+
+class B
+// try the following line instead
+// ref class B
+{
+   A ^a;   // C3265
+   // or embed the managed handle using gcroot
+   // try the following line instead
+   // gcroot<A^> a;
+};
+```

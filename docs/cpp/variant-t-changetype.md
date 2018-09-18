@@ -19,38 +19,42 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f3790f4cb357ed830ba2c61b3c2906356dc64da
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 5a2883cba0d04bbed38ec44e8d00fdab0d4d5695
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39465594"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021050"
 ---
 # <a name="varianttchangetype"></a>_variant_t::ChangeType
-**Microsoft'a özgü**  
-  
- Değişiklikleri türde `_variant_t` belirtilen nesneye `VARTYPE`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void ChangeType(  
-   VARTYPE vartype,  
-   const _variant_t* pSrc = NULL   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *VarType*  
- `VARTYPE` Bu `_variant_t` nesne.  
-  
- *pSrc*  
- Bir işaretçi `_variant_t` dönüştürülecek nesne. Bu değer NULL ise, yerinde dönüştürme yapılır.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi dönüştürür bir `_variant_t` belirtilen nesnede `VARTYPE`. Varsa *pSrc* NULL ise dönüştürme yerine, aksi takdirde bu yapılır `_variant_t` nesne kopyalandığına *pSrc* ve sonra dönüştürülür.  
-  
- **END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [_variant_t Sınıfı](../cpp/variant-t-class.md)
+
+**Microsoft'a özgü**
+
+Değişiklikleri türde `_variant_t` belirtilen nesneye `VARTYPE`.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void ChangeType(
+   VARTYPE vartype,
+   const _variant_t* pSrc = NULL
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*VarType*<br/>
+`VARTYPE` Bu `_variant_t` nesne.
+
+*pSrc*<br/>
+Bir işaretçi `_variant_t` dönüştürülecek nesne. Bu değer NULL ise, yerinde dönüştürme yapılır.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu üye işlevi dönüştürür bir `_variant_t` belirtilen nesnede `VARTYPE`. Varsa *pSrc* NULL ise dönüştürme yerine, aksi takdirde bu yapılır `_variant_t` nesne kopyalandığına *pSrc* ve sonra dönüştürülür.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[_variant_t Sınıfı](../cpp/variant-t-class.md)

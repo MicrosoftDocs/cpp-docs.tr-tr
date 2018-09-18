@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2edfdc84ee38e20f7193d720eab0ccb58d30790b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6c22e3c33f9ef2409c02f0e651473d566b4d2a74
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294199"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022532"
 ---
 # <a name="compiler-warning-levels-1-and-4-c4115"></a>Derleyici Uyarısı (düzey 1 ve 4) C4115
-'type': tür tanımı parantez içinde adlı  
-  
- Belirtilen simge yapısı, UNION veya parantez içinde bir ifade içinde numaralandırılmış türünü tanımlamak için kullanılır. Tanımı kapsamını beklenmeyen olabilir.  
-  
- C işlev çağrısında tanımı genel kapsama sahip. Bir C++ çağrısında çağrılan işlev aynı kapsamı tanımı içeriyor.  
-  
- Bu uyarı bildirimleri parantez ifadeleri değildir (örneğin, prototipleri) parantez içinde tarafından da neden olabilir.  
-  
- Düzey 1 uyarı C++ programları ve ANSI uyumluluğu (/Za) altında derlenmiş C programları ile budur. Aksi takdirde, Düzey 3 olur.
+
+'type': parantez içinde tür tanımı adı
+
+Belirtilen simge, yapı, birleşim veya numaralandırılmış tür parantez içinde bir ifade içinde tanımlamak için kullanılır. Tanımı kapsamı beklenmeyen olabilir.
+
+C işlev çağrısında tanımı genel kapsam vardır. Bir C++ çağrısında, çağrılan işlevin aynı kapsama tanımı içeriyor.
+
+Bu uyarı ayrıca Bildirimciler parantezlerinin parantez ifadeleri olmayan (örneğin, prototipler) neden olabilir.
+
+Bu, C++ ve C programlar ANSI uyumluluğu (/Za) altında derlenmiş ile 1. düzey bir uyarıdır. Aksi takdirde Düzey 3 olur.

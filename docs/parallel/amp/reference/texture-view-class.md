@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3db02d9cafb87c0f173546687ad01390e09b9f68
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 03684d287072e6c27fa06343ff498bbc62d4449a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33696272"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027082"
 ---
 # <a name="textureview-class"></a>texture_view Sınıfı
-Okuma erişimi ve bir doku yazma erişimi sağlar. `texture_view` değer türü olan dokular okumak için yalnızca kullanılabilir `int`, `unsigned int`, veya `float` varsayılan 32-bit bpse sahip. Diğer doku biçimleri okumak için kullandığınız `texture_view<const value_type, _Rank>`.  
+Okuma erişimi ve bir doku yazma erişimi sağlar. `texture_view` yalnızca değer türü olan dokuları okumak için kullanılabilir `int`, `unsigned int`, veya `float` varsayılan 32-bit bpse sahip. Diğer doku biçimlerini okumak için kullandığınız `texture_view<const value_type, _Rank>`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -50,39 +50,39 @@ class texture_view<const value_type, _Rank>
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `value_type`  
- Doku toplama öğelerin türü.  
+*value_type*<br/>
+Doku toplamındaki öğelerin türü.  
   
- `_Rank`  
- Derecesini `texture_view`.  
+*_Dizin*<br/>
+Boyut sayısı `texture_view`.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`value_type`|Doku toplamalar öğelerin türü.|  
-|`coordinates_type`|Bir texel belirtmek için kullanılan koordinat türünü `texture_view`— diğer bir deyişle, bir `short_vector` bir değer türü ilişkili doku olarak aynı dereceye sahip `float`.|  
-|`gather_return_type`|Operations toplamak için kullanılan dönüş türü — derece diğer bir deyişle, 4 `short_vector` ayrı tutma dört homojen renk bileşenleri örneklenen dört texel değerlerinden toplanan.|  
+|`value_type`|Doku Toplamlarındaki öğelerin türü.|  
+|`coordinates_type`|İçinde bir doku hücresini belirtmek için kullanılan koordinatın türü `texture_view`— diğer bir deyişle, bir `short_vector` değer türüne sahip olan ilişkili doku ile aynı dereceye sahip `float`.|  
+|`gather_return_type`|Toplama işlemleri için kullanılan dönüş türü — diğer bir deyişle, 4. derece `short_vector` dört homojen renk bileşenini içeren örneklenen dört görüntü doku hücresi değerlerinden toplanan.|  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[texture_view Oluşturucusu](#ctor)|Fazla Yüklendi. Oluşturan bir `texture_view` örneği.|  
-|[~ texture_view yok Edicisi](#ctor)|Bozar `texture_view` örneği.|  
+|[texture_view Oluşturucusu](#ctor)|Fazla Yüklendi. Oluşturur bir `texture_view` örneği.|  
+|[~ texture_view yok Edicisi](#ctor)|Yok eder `texture_view` örneği.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[gather_alpha](#gather_alpha)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarının adresindeki doku örnekleri ve dört örneklenen texels alfa (w) bileşenlerinin döndürür.|  
-|[gather_blue](#gather_blue)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarının adresindeki doku örnekleri ve dört örneklenen texels mavi (z) bileşenlerinin döndürür.|  
-|[gather_green](#gather_green)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarının adresindeki doku örnekleri ve dört örneklenen texels yeşil (y) bileşenlerinin döndürür.|  
-|[gather_red](#gather_red)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarının adresindeki doku örnekleri ve dört örneklenen texels kırmızı (x) bileşenlerinin döndürür.|  
+|[gather_alpha](#gather_alpha)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarda dokuyu örnekler ve örneklenen dört texel'in alfa (w) bileşenlerini döndürür.|  
+|[gather_blue](#gather_blue)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarda dokuyu örnekler ve örneklenen dört texel'in mavi (z) bileşenlerini döndürür.|  
+|[gather_green](#gather_green)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarda dokuyu örnekler ve örneklenen dört texel'in yeşil (y) bileşenlerini döndürür.|  
+|[gather_red](#gather_red)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarda dokuyu örnekler ve örneklenen dört texel'in kırmızı (x) bileşenlerini döndürür.|  
 |[get](#get)|Fazla Yüklendi. Dizine göre öğe değerini alır.|  
-|[Örnek](#sample)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatları ve ayrıntı düzeyi doku örnekleri.|  
+|[Örnek](#sample)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarda ve ayrıntı düzeyinde dokuyu örnekler.|  
 |[set](#set)|Bir öğenin değerini dizine göre ayarlar.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
@@ -90,14 +90,14 @@ class texture_view<const value_type, _Rank>
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[operator()](#operator_call)|Fazla Yüklendi. Dizine göre öğe değerini alır.|  
-|[[] işleci](#operator_at)|Fazla Yüklendi. Dizine göre öğe değerini alır.|  
+|[operator]](#operator_at)|Fazla Yüklendi. Dizine göre öğe değerini alır.|  
 |[operator=](#operator_eq)|Fazla Yüklendi. Atama işleci.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[value_type](#value_type)|Değer türü öğelerinin `texture_view`.|  
+|[value_type](#value_type)|Öğelerinin değer türü `texture_view`.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `_Texture_base`  
@@ -111,7 +111,7 @@ class texture_view<const value_type, _Rank>
   
 ##  <a name="dtor"></a> ~ texture_view 
 
- Bozar `texture_view` örneği.  
+ Yok eder `texture_view` örneği.  
   
 ```  
 ~texture_view() restrict(amp, cpu);
@@ -119,7 +119,7 @@ class texture_view<const value_type, _Rank>
   
 ##  <a name="ctor"></a> texture_view 
 
- Oluşturan bir `texture_view` örneği.  
+ Oluşturur bir `texture_view` örneği.  
   
 ```  
 texture_view(// [1] constructor  
@@ -156,32 +156,32 @@ texture_view(// [7] copy constructor
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Src`  
- [1, 2] Oluşturucusu  
+*_Src*<br/>
+[1, 2] Oluşturucusu  
  `texture` Üzerine yazılabilir `texture_view` oluşturulur.  
   
  [3, 4] Oluşturucusu  
- `texture` Üretileceği Paylaşımsız `texture_view` oluşturulur.  
+ `texture` Üzerine yazılamaz `texture_view` oluşturulur.  
   
- `_Other`  
- [5] kopya Oluşturucu  
- Yazılabilir kaynak `texture_view`.  
+*_Diğer*<br/>
+[5] kopya Oluşturucu  
+ Kaynağın yazılabilir `texture_view`.  
   
  [6, 7] Kopya Oluşturucu  
- Yazılabilir olmayan kaynak `texture_view`.  
+ Kaynağın yazılabilir olmayan `texture_view`.  
   
- `_Mipmap_level`  
- Kaynak üzerinde belirli mipmap düzeyi `texture` , bu yazılabilir `texture_view` bağlar. Varsayılan değer, üst düzey (en fazla ayrıntı) MIP düzeyi temsil eden 0 ' dır.  
+*_Mipmap_level*<br/>
+Kaynak öğesindeki belirli mipmap düzeyi `texture` , bu yazılabilir `texture_view` bağlar. Varsayılan değer, en üst düzey (en ayrıntılı) mip düzeyini temsil eden 0 ' dır.  
   
- `_Most_detailed_mip`  
- (En fazla ayrıntı) MIP düzeye belirtilen göreli görünüm için üst `texture_view` nesnesi.  
+*_Most_detailed_mip*<br/>
+Üst düzey (en ayrıntılı) MIP düzeyini belirtilen göreli bir görünüm için `texture_view` nesne.  
   
- `_Mip_levels`  
- Mipmap düzey üzerinden erişilebilir sayısını `texture_view`.  
+*_Mip_levels*<br/>
+Erişilebilir mipmap düzeylerinin sayısını `texture_view`.  
   
 ##  <a name="gather_red"></a> gather_red 
 
- Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarının adresindeki doku örnekleri ve dört örneklenen texels kırmızı (x) bileşenlerinin döndürür.  
+ Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarda dokuyu örnekler ve örneklenen dört texel'in kırmızı (x) bileşenlerini döndürür.  
   
 ```  
 const gather_return_type gather_red(
@@ -197,21 +197,21 @@ const gather_return_type gather_red(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Address_mode`  
- Adres modunu kullanmak için örnek için `texture_view`. Adres modunu tüm boyutları için aynıdır.  
+*_Address_mode*<br/>
+Kullanılacak adres modu örneği `texture_view`. Adres modu tüm boyutlar için aynıdır.  
   
- `_Sampler`  
- Kullanmak üzere örneği yapılandırma örneği `texture_view`.  
+*_Sampler*<br/>
+Kullanılacak örnekleyici yapılandırması için örnek `texture_view`.  
   
- `_Coord`  
- Örnekten yapılacak koordinatları. Kesirli koordinat değerler arasında örnek texels kesinti için kullanılır.  
+*_Coord*<br/>
+Örneğin alındığı koordinatlar. Kesirli koordinat değerleri örnek texel'ler arasında enterpolasyon için kullanılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- 4 kırmızı (x) bileşeni içeren bir derece 4 kısa vektör texel değerleri örneklenen.  
+ 4 kırmızı (x) bileşenini içeren 4. derece kısa vektör örnek doku hücresi değerinin örneklenir.  
   
 ##  <a name="gather_green"></a> gather_green 
 
- Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarının adresindeki doku örnekleri ve dört örneklenen texels yeşil (y) bileşenlerinin döndürür.  
+ Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarda dokuyu örnekler ve örneklenen dört texel'in yeşil (y) bileşenlerini döndürür.  
   
 ```  
 const gather_return_type gather_green(
@@ -227,21 +227,21 @@ const gather_return_type gather_green(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Address_mode`  
- Adres modunu kullanmak için örnek için `texture_view`. Adres modunu tüm boyutları için aynıdır.  
+*_Address_mode*<br/>
+Kullanılacak adres modu örneği `texture_view`. Adres modu tüm boyutlar için aynıdır.  
   
- `_Sampler`  
- Kullanmak üzere örneği yapılandırma örneği `texture_view`.  
+*_Sampler*<br/>
+Kullanılacak örnekleyici yapılandırması için örnek `texture_view`.  
   
- `_Coord`  
- Örnekten yapılacak koordinatları. Kesirli koordinat değerler arasında örnek texels kesinti için kullanılır.  
+*_Coord*<br/>
+Örneğin alındığı koordinatlar. Kesirli koordinat değerleri örnek texel'ler arasında enterpolasyon için kullanılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- 4 yeşil (y) bileşeni içeren bir derece 4 kısa vektör texel değerleri örneklenen.  
+ 4 yeşil (y) bileşenini içeren 4. derece kısa vektör örnek doku hücresi değerinin örneklenir.  
   
 ##  <a name="gather_blue"></a> gather_blue 
 
- Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarının adresindeki doku örnekleri ve dört örneklenen texels mavi (z) bileşenlerinin döndürür.  
+ Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarda dokuyu örnekler ve örneklenen dört texel'in mavi (z) bileşenlerini döndürür.  
   
 ```  
 const gather_return_type gather_blue(
@@ -257,21 +257,21 @@ const gather_return_type gather_blue(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Address_mode`  
- Adres modunu kullanmak için örnek için `texture_view`. Adres modunu tüm boyutları için aynıdır.  
+*_Address_mode*<br/>
+Kullanılacak adres modu örneği `texture_view`. Adres modu tüm boyutlar için aynıdır.  
   
- `_Sampler`  
- Kullanmak üzere örneği yapılandırma örneği `texture_view`.  
+*_Sampler*<br/>
+Kullanılacak örnekleyici yapılandırması için örnek `texture_view`.  
   
- `_Coord`  
- Örnekten yapılacak koordinatları. Kesirli koordinat değerler arasında örnek texels kesinti için kullanılır.  
+*_Coord*<br/>
+Örneğin alındığı koordinatlar. Kesirli koordinat değerleri örnek texel'ler arasında enterpolasyon için kullanılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- 4 kırmızı (x) bileşeni içeren bir derece 4 kısa vektör texel değerleri örneklenen.  
+ 4 kırmızı (x) bileşenini içeren 4. derece kısa vektör örnek doku hücresi değerinin örneklenir.  
   
 ##  <a name="gather_alpha"></a> gather_alpha 
 
- Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarının adresindeki doku örnekleri ve dört örneklenen texels alfa (w) bileşenlerinin döndürür.  
+ Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarda dokuyu örnekler ve örneklenen dört texel'in alfa (w) bileşenlerini döndürür.  
   
 ```  
 const gather_return_type gather_alpha(
@@ -287,17 +287,17 @@ const gather_return_type gather_alpha(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Address_mode`  
- Adres modunu kullanmak için örnek için `texture_view`. Adres modunu tüm boyutları için aynıdır.  
+*_Address_mode*<br/>
+Kullanılacak adres modu örneği `texture_view`. Adres modu tüm boyutlar için aynıdır.  
   
- `_Sampler`  
- Kullanmak üzere örneği yapılandırma örneği `texture_view`.  
+*_Sampler*<br/>
+Kullanılacak örnekleyici yapılandırması için örnek `texture_view`.  
   
- `_Coord`  
- Örnekten yapılacak koordinatları. Kesirli koordinat değerler arasında örnek texels kesinti için kullanılır.  
+*_Coord*<br/>
+Örneğin alındığı koordinatlar. Kesirli koordinat değerleri örnek texel'ler arasında enterpolasyon için kullanılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir derece kısa 4 vektör alfa (4 bileşeninin texel değerleri örneklenen w) içeren.  
+ 4. derece kısa vektör alfa (w bileşen 4 örnek doku hücresi değerinin örneklenen) içeren.  
   
 ##  <a name="get"></a> Al 
 
@@ -314,18 +314,18 @@ value_type get(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Index`  
- Büyük olasılıkla birden çok boyutlu alınacak öğenin dizini.  
+*_Index*<br/>
+Büyük olasılıkla çok boyutlu alınacak öğenin dizini.  
   
- `_Mip_level`  
- Mipmap düzeyi biz değeri almalısınız. Varsayılan değer 0 en ayrıntılı mipmap düzeyi temsil eder.  
+*_Mip_level*<br/>
+İçinden değeri almamız mipmap düzeyi. Varsayılan değer 0 en ayrıntılı mipmap düzeyini temsil eder.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Öğenin değeri.  
   
 ##  <a name="operator_eq"></a> işleç = 
 
- Belirtildiği gibi aynı doku görünümünü atar `texture_view` bu `texture_view` örneği.  
+ Belirtilen aynı doku görünümü atar `texture_view` bu `texture_view` örneği.  
   
 ```  
 texture_view<value_type, _Rank>& operator= (// [1] copy constructor  
@@ -341,17 +341,17 @@ texture_view<const value_type, _Rank>& operator= (// [3] copy constructor
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Other`  
- [1, 2] Kopya Oluşturucu  
- Bir yazılabilir `texture_view` nesnesi.  
+*_Diğer*<br/>
+[1, 2] Kopya Oluşturucu  
+ Yazılabilir bir `texture_view` nesne.  
   
  [3] kopya Oluşturucu  
- Bir Paylaşımsız `texture_view` nesnesi.  
+ Yazılamaz `texture_view` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu başvuru `texture_view` örneği.  
   
-##  <a name="operator_at"></a> [] işleci 
+##  <a name="operator_at"></a> operator] 
 
  Dizine göre öğe değerini döndürür.  
   
@@ -369,14 +369,14 @@ value_type operator[] (int _I0) const restrict(amp);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Index`  
- Büyük olasılıkla birden çok boyutlu dizini.  
+*_Index*<br/>
+Büyük olasılıkla çok boyutlu dizin.  
   
- `_I0`  
- Tek boyutlu dizini.  
+*_I0*<br/>
+Tek boyutlu dizin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Öğesi değeri dizine göre `_Index`.  
+ Tarafından dizine eklenen öğe değeri `_Index`.  
   
 ##  <a name="operator_call"></a> operator() 
 
@@ -421,24 +421,24 @@ value_type operator() (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Index`  
- Büyük olasılıkla birden çok boyutlu dizini.  
+*_Index*<br/>
+Büyük olasılıkla çok boyutlu dizin.  
   
- `_I0`  
- Dizin en önemli bileşenidir.  
+*_I0*<br/>
+Dizinin en önemli bileşeni.  
   
- `_I1`  
- Dizin İleri-için-çoğu-önemli bileşenidir.  
+*_I1*<br/>
+Dizinin sonraki-en-önemli bileşeni.  
   
- `_I2`  
- Dizin en az önemli bileşenidir.  
+*_I2*<br/>
+Dizinin en az önemli bileşeni.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Öğesi değeri dizine göre `_Index`.  
+ Tarafından dizine eklenen öğe değeri `_Index`.  
   
 ##  <a name="sample"></a> Örnek 
 
- Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatları ve ayrıntı düzeyi doku örnekleri.  
+ Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarda ve ayrıntı düzeyinde dokuyu örnekler.  
   
 ```  
 value_type sample(
@@ -457,27 +457,27 @@ value_type sample(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Filter_mode`  
- Texture_view örneklemek için kullanılacak filtre modu. Filtre modu minimization, maximization ve mipmap filtreleri ile aynıdır.  
+*_Filter_mode*<br/>
+Texture_view örneklemek için kullanılacak filtre modu. Filtre modu küçültme, büyütme ve mipmap filtreleri için aynıdır.  
   
- `_Address_mode`  
- Texture_view örneklemek için kullanılacak adresi modu. Adres modunu tüm boyutları için aynıdır.  
+*_Address_mode*<br/>
+Texture_view örneklemek için kullanılacak adres modu. Adres modu tüm boyutlar için aynıdır.  
   
- `_Sampler`  
- Texture_view örneklemek için kullanmak üzere örneği yapılandırma.  
+*_Sampler*<br/>
+Texture_view örneklemek için kullanılacak örnekleyici yapılandırması.  
   
- `_Coord`  
- Örnekten yapılacak koordinatları. Kesirli koordinat değerler arasında texel değerleri kesinti için kullanılır.  
+*_Coord*<br/>
+Örneğin alındığı koordinatlar. Kesirli koordinat değerleri texel değerleri arasında enterpolasyon için kullanılır.  
   
- `_Level_of_detail`  
- Değer örnekleme mipmap düzeyini belirtir. Kesirli değerler arasında iki mipmap düzeyleri kesinti için kullanılır. Ayrıntı varsayılan düzeyini en ayrıntılı MIP düzeyi temsil eden 0 ' dır.  
+*_Level_of_detail*<br/>
+Değer, örnekleme yapılacak mipmap düzeyini belirtir. Kesirli değerler iki mipmap düzeyi arasında enterpolasyon için kullanılır. Varsayılan ayrıntı düzeyi, en ayrıntılı mip düzeyini temsil eden 0 ' dır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Ara değerli örnek değer.  
+ İlişkilendirilmiş örnek değer.  
   
-##  <a name="set"></a> ayarlama 
+##  <a name="set"></a> Ayarlayın 
 
- Belirtilen değer için belirtilen dizindeki öğeyi değerini ayarlar.  
+ Belirtilen değer için belirtilen dizindeki öğenin değerini ayarlar.  
   
 ```  
 void set(
@@ -486,15 +486,15 @@ void set(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Index`  
- Ayarlama, büyük olasılıkla birden çok boyutlu öğenin dizini.  
+*_Index*<br/>
+Büyük olasılıkla çok boyutlu ayarlanacak öğenin dizini.  
   
- `value`  
- Öğe ayarlanacak değer.  
+*value*<br/>
+Öğe ayarlanacak değer.  
   
 ##  <a name="value_type"></a> value_type 
 
- Texture_view öğelerinin değer türü.  
+ Texture_view'un öğelerinin değer türü.  
   
 ```  
 typedef typename const value_type value_type;  

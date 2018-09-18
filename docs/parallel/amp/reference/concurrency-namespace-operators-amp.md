@@ -10,22 +10,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d3bb77599fc81fa29f2c8155a6fd491ed2d639c
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d6e8d2a198105e9cd63581dd8ed8445b681da2e0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33686714"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026939"
 ---
 # <a name="concurrency-namespace-operators-amp"></a>Eşzamanlılık ad alanı işleçleri (AMP)
 ||||  
 |-|-|-|  
-|[operator!=](#operator_neq)|[operator%](#operator_mod)|[işleç *](#operator_star)|  
+|[operator!=](#operator_neq)|[operator%](#operator_mod)|[operator *](#operator_star)|  
 |[operator +](#operator_add)|[operator-](#operator-)|[operator /](#operator_div)|  
 |[operator==](#operator_eq_eq)|  
   
-##  <a name="operator_eq_eq"></a>  operator ==   
- Belirtilen bağımsız değişkenler eşit olup olmadığını belirler.  
+##  <a name="operator_eq_eq"></a>  işleç ==   
+ Belirtilen bağımsız değişkenlerin eşit olup olmadığını belirler.  
   
 ```  
 template <
@@ -38,20 +38,20 @@ bool operator== (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Rank`  
- Tuple bağımsız değişkenleri derecesini.  
+*_Dizin*<br/>
+Tanımlama grubu bağımsız boyut.  
   
- `_Lhs`  
- Karşılaştırılacak başlıklar biri.  
+*_Lhs*<br/>
+Karşılaştırılacak tanımlama gruplarından biri.  
   
- `_Rhs`  
- Karşılaştırılacak başlıklar biri.  
+*_Rhs*<br/>
+Karşılaştırılacak tanımlama gruplarından biri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` diziler eşitse; Aksi takdirde `false`.  
+ `true` Kayıt düzenleri eşitse; Aksi takdirde, `false`.  
   
-##  <a name="operator_neq"></a>  operator! =   
- Belirtilen bağımsız değişkenler eşit olup olmadığını belirler.  
+##  <a name="operator_neq"></a>  işleç! =   
+ Belirtilen bağımsız değişkenlerin eşit olup olmadığını belirler.  
   
 ```  
 template <
@@ -64,21 +64,21 @@ bool operator!= (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Rank`  
- Tuple bağımsız değişkenleri derecesini.  
+*_Dizin*<br/>
+Tanımlama grubu bağımsız boyut.  
   
- `_Lhs`  
- Karşılaştırılacak başlıklar biri.  
+*_Lhs*<br/>
+Karşılaştırılacak tanımlama gruplarından biri.  
   
- `_Rhs`  
- Karşılaştırılacak başlıklar biri.  
+*_Rhs*<br/>
+Karşılaştırılacak tanımlama gruplarından biri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` diziler eşit değilse; Aksi takdirde `false`.  
+ `true` Kayıt düzenleri eşit değilse, Aksi takdirde, `false`.  
   
 ##  <a name="operator_add"></a>  operator +   
 
- Belirtilen bağımsız değişkenler component-wise toplamını hesaplar.  
+ Belirtilen bağımsız değişkenlerin bileşen odaklı toplamını hesaplar.  
   
 ```  
 template <
@@ -109,21 +109,21 @@ class _Tuple_type> _Tuple_type<_Rank>   operator+(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Rank`  
- Tuple bağımsız değişkenleri derecesini.  
+*_Dizin*<br/>
+Tanımlama grubu bağımsız boyut.  
   
- `_Lhs`  
- Eklemek için bağımsız değişkenlerden biri.  
+*_Lhs*<br/>
+Toplanacak bağımsız değişkenlerden biri.  
   
- `_Rhs`  
- Eklemek için bağımsız değişkenlerden biri.  
+*_Rhs*<br/>
+Toplanacak bağımsız değişkenlerden biri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen bağımsız değişkenler component-wise toplamı.  
+ Belirtilen bağımsız değişkenlerin bileşen düzeyinde toplamı.  
   
 ##  <a name="operator-"></a>  operator-   
 
- Belirtilen bağımsız değişkenler arasındaki component-wise farkı hesaplar.  
+ Belirtilen bağımsız değişkenlerin bileşen odaklı farkı hesaplar.  
   
 ```  
 template <
@@ -154,21 +154,21 @@ _Tuple_type<_Rank>   operator-(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Rank`  
- Tuple bağımsız değişkenleri derecesini.  
+*_Dizin*<br/>
+Tanımlama grubu bağımsız boyut.  
   
- `_Lhs`  
- Çıkartma yapılacak için bağımsız değişken.  
+*_Lhs*<br/>
+Çıkarmanın yapılacağı bağımsız değişken.  
   
- `_Rhs`  
- Çıkarmak için bağımsız değişken.  
+*_Rhs*<br/>
+Çıkarılacak bağımsız değişken.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen bağımsız değişkenler arasındaki component-wise fark.  
+ Belirtilen bağımsız değişkenlerin bileşen odaklı farkı.  
   
-##  <a name="operator_star"></a>  işleç *   
+##  <a name="operator_star"></a>  operator *   
 
- Belirtilen bağımsız değişkenler component-wise çarpımını hesaplar.  
+ Belirtilen bağımsız değişkenlerin bileşen odaklı çarpımını hesaplar.  
   
 ```  
 template <
@@ -190,21 +190,21 @@ _Tuple_type<_Rank>   operator*(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Rank`  
- Tuple bağımsız değişkenleri derecesini.  
+*_Dizin*<br/>
+Tanımlama grubu bağımsız boyut.  
   
- `_Lhs`  
- Bir başlık çarpın.  
+*_Lhs*<br/>
+Çarpılacak dizlerden biri.  
   
- `_Rhs`  
- Bir başlık çarpın.  
+*_Rhs*<br/>
+Çarpılacak dizlerden biri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen bağımsız değişkenler component-wise ürün.  
+ Belirtilen bağımsız değişkenlerin bileşen odaklı çarpımı.  
   
 
 ##  <a name="operator_div"></a>  operator /   
- Belirtilen bağımsız değişkenler component-wise sayının hesaplar.  
+ Belirtilen bağımsız değişkenlerin bileşen odaklı bölümünü hesaplar.  
   
 ```  
 template <
@@ -226,21 +226,21 @@ _Tuple_type<_Rank>   operator/(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Rank`  
- Tuple bağımsız değişkenleri derecesini.  
+*_Dizin*<br/>
+Tanımlama grubu bağımsız boyut.  
   
- `_Lhs`  
- Bölünür tanımlama.  
+*_Lhs*<br/>
+Bölünecek kayıt düzeni.  
   
- `_Rhs`  
- Tarafından bölmek için tanımlama grubu.  
+*_Rhs*<br/>
+Bölmede kullanılacak kayıt düzeni.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen bağımsız değişkenler component-wise bölüm.  
+ Belirtilen bağımsız değişkenlerin bileşen odaklı bölümü.  
   
 ##  <a name="operator_mod"></a>  operator %   
 
- Modulus ilk belirtilen bağımsız değişkenin ikinci belirtilen bağımsız değişken olarak hesaplar.  
+ İkinci belirtilen bağımsız değişken tarafından belirtilen ilk bağımsız değişken modüllerini hesaplar.  
   
 ```  
 template <
@@ -262,17 +262,17 @@ _Tuple_type<_Rank>   operator%(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Rank`  
- Tuple bağımsız değişkenleri derecesini.  
+*_Dizin*<br/>
+Tanımlama grubu bağımsız boyut.  
   
- `_Lhs`  
- Tuple içinden modulo hesaplanır.  
+*_Lhs*<br/>
+Kayıt düzeni hesaplanmasında kullanılan.  
   
- `_Rhs`  
- Tanımlama grubu için modül tarafından.  
+*_Rhs*<br/>
+Ölçeklemede kullanılacak kayıt düzeni tarafından.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İlk belirtilen bağımsız değişken modulus ikinci belirtilen bağımsız değişken sonucu.  
+ İlk belirtilen bağımsız değişken modulus belirtilen ikinci bağımsız değişken sonucu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace ](concurrency-namespace-cpp-amp.md)

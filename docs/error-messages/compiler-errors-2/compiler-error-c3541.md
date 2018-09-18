@@ -16,34 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2440d1ab91cda00240d99d2188365754bd34fb3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a0f9cb18089bcf8ce1688cabb261f91f868da247
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33255116"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021726"
 ---
 # <a name="compiler-error-c3541"></a>Derleyici Hatası C3541
-'type': TypeID 'auto' içeren bir türü için uygulanamaz  
-  
- [TypeID](../../windows/typeid-cpp-component-extensions.md) işleci içerdiğinden belirtilen türe uygulanamaz `auto` tanımlayıcısı.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3541 verir.  
-  
-```  
-// C3541.cpp  
-// Compile with /Zc:auto  
-#include <typeinfo>  
-int main() {  
-    auto x = 123;  
-    typeid(x);    // OK  
-    typeid(auto); // C3541  
-    return 0;  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Auto anahtar sözcüğü](../../cpp/auto-keyword.md)   
- [/ZC:Auto (değişken türünü)](../../build/reference/zc-auto-deduce-variable-type.md)   
- [TypeId](../../windows/typeid-cpp-component-extensions.md)
+
+'type': 'auto' içeren bir türe typeid uygulanamaz
+
+[TypeID](../../windows/typeid-cpp-component-extensions.md) işleci içerdiğinden belirtilen türe uygulanamaz `auto` tanımlayıcısı.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek C3541 verir.
+
+```
+// C3541.cpp
+// Compile with /Zc:auto
+#include <typeinfo>
+int main() {
+    auto x = 123;
+    typeid(x);    // OK
+    typeid(auto); // C3541
+    return 0;
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)<br/>
+[/Zc:auto (Değişken Türünü Türet)](../../build/reference/zc-auto-deduce-variable-type.md)<br/>
+[typeid](../../windows/typeid-cpp-component-extensions.md)

@@ -278,15 +278,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d5c776784f78f79fb6d90bde96b199631d08d22
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 92f0a8ed6842986e7f64279ab0c6b23a80dab293
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33694267"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028447"
 ---
 # <a name="double4-class"></a>double_4 Sınıfı
-Dört çiftleri kısa bir vektör temsil eder.  
+Dört çiftten oluşan bir kısa vektörü temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -296,7 +296,7 @@ class double_4;
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
@@ -306,7 +306,7 @@ class double_4;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[double_4 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|  
+|[double_4 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -456,7 +456,7 @@ class double_4;
 |double_4::operator-||  
 |double_4::operator--||  
 |double_4::operator * =||  
-|double_4::operator ve =||  
+|double_4::operator / =||  
 |double_4::operator ++||  
 |double_4::operator +=||  
 |double_4::operator =||  
@@ -611,7 +611,7 @@ class double_4;
   
 ##  <a name="ctor"></a> double_4 
 
- Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.  
+ Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.  
   
 ```  
 double_4() restrict(amp,
@@ -662,23 +662,23 @@ explicit inline double_4(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_V0`  
- Öğeyi 0 başlatmak için değer.  
+*_V0*<br/>
+Öğe 0'ı başlatmak için değer.  
   
- `_V1`  
- 1 öğesi başlatmak için değeri.  
+*_V1*<br/>
+1 öğe başlatmak için değer.  
   
- `_V2`  
- Öğe 2 başlatmak için değeri.  
+*_V2*<br/>
+Öğe 2 başlatmak için değer.  
   
- `_V3`  
- Öğeyi 3 başlatmak için değer.  
+*_V3*<br/>
+Öğeyi 3 başlatmak için değer.  
   
- `_V`  
- Başlatma için değer.  
+*_V*<br/>
+Başlatma için değer.  
   
- `_Other`  
- Başlatmak için kullanılan nesne.  
+*_Diğer*<br/>
+Başlatmak için kullanılan nesne.  
   
 ##  <a name="double_4__size"></a> Boyutu 
 

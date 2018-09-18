@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95b76d41719da17e6e69d88d17a45269fff75cac
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a9be9eeb1043c28806d28cf216bc87931015695d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294553"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030020"
 ---
 # <a name="bscmake-error-bk1516"></a>BSCMAKE Hatası BK1516
-bscfile bozuk; artımlı olarak güncelleştirilemiyor  
-  
- .Bsc dosyası, büyük olasılıkla derleme sırasında sistem hatası nedeniyle bozulmuş. .Bsc dosyasını silin, tüm .sbr dosyaları yeniden oluşturduktan sonra .bsc dosyasını yeniden oluşturma.
+
+bscfile bozuk; artımlı olarak güncelleştirilemiyor
+
+.Bsc dosyası, büyük olasılıkla derleme sırasında bir sistem hatası nedeniyle bozulmuş. .Bsc dosyasını silmek, tüm .sbr dosyalarını yeniden oluşturun ve ardından .bsc dosyasını yeniden oluşturun.

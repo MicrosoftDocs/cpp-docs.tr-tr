@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 261d5dcc27c44291ddc6de4a6440cde040a84ed7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c992369d7bb3d9a3571e23c42a64bf936d5ae383
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302561"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017618"
 ---
 # <a name="linker-tools-warning-lnk4006"></a>Bağlayıcı Araçları Uyarısı LNK4006
-nesnesinde zaten tanımlanmış simge; göz ardı ikinci tanımı  
-  
- Verilen `symbol`, düzenlenmiş biçiminde, birden çok kez tanımlanmış. Bu uyarı karşılaşıldığında, `symbol` iki kez eklenir ancak yalnızca kendi ilk form kullanılır.  
-  
- İki alma kitaplıklar birinde birleştirmeyi çalışırsanız, bu uyarı alabilirsiniz.  
-  
- C çalışma zamanı kitaplığı yeniden bu iletiyi yoksayabilirsiniz.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümlere kullanarak düzeltmek için  
-  
-1.  Verilen `symbol` ile derleme tarafından oluşturulan paketlenmiş bir işlev olabilir [/Gy](../../build/reference/gy-enable-function-level-linking.md). Bu simgenin birden fazla dosyada eklendi ancak derlemeleri arasında değiştirildi. Dahil tüm dosyaları yeniden derleyin `symbol`.  
-  
-2.  Verilen `symbol` farklı iki üye nesnelerde farklı kitaplıklarında tanımlanmış olabilir.  
-  
-3.  Mutlak iki kez, her tanımında farklı bir değerle tanımlanmış olabilir.  
-  
-4.  Hata iletisi kitaplıkları, birleştirilirken aldıysanız `symbol` eklenmesini Kitaplığı'nda zaten mevcut.
+
+nesnesinde zaten tanımlanmış sembol; İkinci tanımlama yoksayıldı
+
+Verilen `symbol`, düzenlenmiş hâli içinde görüntülenen, birden çok kez tanımlanmış. Bu uyarıyla karşılaşıldığında `symbol` iki kez eklenir ancak yalnızca ilk hâli kullanılır.
+
+İki alma libs birleştirmek çalışırsanız, bu uyarı alabilirsiniz.
+
+C çalışma zamanı kitaplığı yeniden, bu iletiyi yoksayabilirsiniz.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+
+1. Verilen `symbol` ile derleme tarafından oluşturulan bir paket işlevi olabilir [/Gy](../../build/reference/gy-enable-function-level-linking.md). Bu sembol birden fazla dosyasında bulunan ancak derlemeler arasında değiştirildi. İçeren tüm dosyaları derleyin `symbol`.
+
+1. Verilen `symbol` farklı farklı kitaplıklarındaki iki üye nesneleri olarak tanımlanmış olabilir.
+
+1. Mutlak iki kez, her tanımındaki farklı bir değerle tanımlanmış olabilir.
+
+1. Kitaplıklar birleştirilirken hata iletisini aldığında, `symbol` eklenmesini Kitaplığı'nda zaten mevcut.

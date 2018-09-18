@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5703474a859d41bbfa62b29aa951f1e3198abb06
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b078efbd0d0d99a145bcada6266f8e886e4251a2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163715"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018685"
 ---
 # <a name="compiler-error-c2052"></a>Derleyici Hatası C2052
-'type': case deyimi için geçersiz tür  
-  
- Case ifadeleri tamsayı olmalıdır.  
-  
- Aşağıdaki örnek C2052 oluşturur:  
-  
-```  
-// C2052.cpp  
-int main() {  
-   int index = 0;  
-   switch (index) {  
-      case 1:  
-         return 24;  
-      case 1.0:   // C2052  
-      // try the following line instead  
-      // case 2:  
-         return 23;  
-   }  
-}  
+
+'type': case ifadesi için geçersiz tür
+
+CASE ifadesi tamsayı sabitlerini olması gerekir.
+
+Aşağıdaki örnek, C2052 oluşturur:
+
+```
+// C2052.cpp
+int main() {
+   int index = 0;
+   switch (index) {
+      case 1:
+         return 24;
+      case 1.0:   // C2052
+      // try the following line instead
+      // case 2:
+         return 23;
+   }
+}
 ```

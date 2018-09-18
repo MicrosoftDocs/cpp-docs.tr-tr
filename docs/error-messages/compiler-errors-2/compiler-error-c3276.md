@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 337418220b31fc9bad82dce46eef1047ac16f4ae
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bae371b0e50dca96da49b66d8c9226ba9c25ef06
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248248"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016319"
 ---
 # <a name="compiler-error-c3276"></a>Derleyici Hatası C3276
-'anahtar sözcüğü': atlama __finally/finally bloğu dışında davranış sonlandırma işleme sırasında tanımlanmamış  
-  
- Bu hata aynıdır [C4532](../../error-messages/compiler-warnings/compiler-warning-level-1-c4532.md) uyarı. / CLR kullanırken, ancak bu durum ile devre dışı bırakılamaz [uyarı](../../preprocessor/warning.md) pragması.
+
+'anahtar sözcüğü': __finally/finally bloğunun dışına atlama sonlandırma işleme sırasında davranışı tanımsız
+
+Bu hatayla aynı şeydir [C4532](../../error-messages/compiler-warnings/compiler-warning-level-1-c4532.md) uyarı. / CLR kullanırken, ancak bu durum ile devre dışı bırakılamaz [uyarı](../../preprocessor/warning.md) pragması.

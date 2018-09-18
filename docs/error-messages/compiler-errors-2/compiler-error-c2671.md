@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22812808ce6e159c0f35d9dc2de8e269ecc23cac
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b37d9dc1e50da921bdbe758e73257100853517eb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33233141"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026165"
 ---
 # <a name="compiler-error-c2671"></a>Derleyici Hatası C2671
-'function': statik üye işlevleri 'Bu' işaretçileri sahip değil  
-  
- A `static` üye işlevi erişmeyi denedi `this`.  
-  
- Aşağıdaki örnek C2671 oluşturur:  
-  
-```  
-// C2671.cpp  
-struct S {  
-   static S* const func() { return this; }  // C2671  
-};  
+
+'function': statik üye işlevlerinde 'this' işaretçileri yoktur
+
+A `static` üye işlevi erişmeyi denedi `this`.
+
+Aşağıdaki örnek, C2671 oluşturur:
+
+```
+// C2671.cpp
+struct S {
+   static S* const func() { return this; }  // C2671
+};
 ```

@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b82e87f37b50b8df727d043889cb35ca02d3f78
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d91e3c914d6c3feeb9d2326c94efe2bc54ac98f4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291547"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023247"
 ---
 # <a name="compiler-warning-level-3-c4622"></a>Derleyici Uyarısı (Düzey 3) C4622
-Hata ayıklama bilgileri üzerine biçimlendirilmiş nesne dosyası önceden derlenmiş üst bilgi oluşturulması sırasında: 'dosya'  
-  
- Belirtilen dosya CodeView bilgileri, ile derlendiğinde kayboldu [/Yu](../../build/reference/yu-use-precompiled-header-file.md) (kullanımı önceden derlenmiş üst bilgiler) seçeneği.  
-  
- Nesne dosyayı yeniden adlandırın (kullanarak [/Fo](../../build/reference/fo-object-file-name.md)) oluştururken veya önceden derlenmiş üst bilgi kullanarak dosya ve yeni nesne dosyası kullanarak bağlantıyı oluşturun.
+
+hata ayıklama bilgileri üzerine oluşturulmuş nesne dosyasındaki Ön derlenmiş üstbilginin oluşturulması sırasında: 'dosya'
+
+Belirtilen dosya CodeView bilgilerinde, ile derlendiğinde kesildi [/Yu](../../build/reference/yu-use-precompiled-header-file.md) (önceden derlenmiş üst bilgi kullan) seçeneği.
+
+Nesne dosyayı yeniden adlandırın (kullanarak [/Fo](../../build/reference/fo-object-file-name.md)) oluştururken veya önceden derlenmiş üst bilgi kullanarak dosya ve yeni nesne dosyası kullanarak bağlayın.

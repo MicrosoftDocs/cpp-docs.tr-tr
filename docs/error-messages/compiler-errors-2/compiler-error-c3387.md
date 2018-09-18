@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5469088b6707faa31e1d49157dcbc9991ffb7060
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0dafe972db1b3210e9243e34cc02e7a0366bdd65
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249509"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030761"
 ---
 # <a name="compiler-error-c3387"></a>Derleyici Hatası C3387
-'member': __declspec(dllexport) /\__declspec(dllimport) yönetilen üyesi ya da WinRT türü için uygulanamaz  
-  
- `dllimport` Ve [dllexport](../../cpp/dllexport-dllimport.md) `__declspec` değiştiricileri yönetilen üyeleri veya Windows çalışma zamanı türü geçerli değil.  
-  
- Aşağıdaki örnek C3387 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C3387a.cpp  
-// compile with: /clr /c  
-ref class X2 {  
-   void __declspec(dllexport) mf() {   // C3387  
-   // try the following line instead  
-   // void mf() {  
-   }  
-};  
+
+'member': __declspec(dllexport) /\__declspec(dllimport) bir yönetilen bir üyesi ya da WinRT türüne uygulanamaz
+
+`dllimport` Ve [dllexport](../../cpp/dllexport-dllimport.md) `__declspec` değiştiriciler yönetilen üyeleri veya Windows çalışma zamanı türü geçerli değil.
+
+Aşağıdaki örnek, C3387 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C3387a.cpp
+// compile with: /clr /c
+ref class X2 {
+   void __declspec(dllexport) mf() {   // C3387
+   // try the following line instead
+   // void mf() {
+   }
+};
 ```

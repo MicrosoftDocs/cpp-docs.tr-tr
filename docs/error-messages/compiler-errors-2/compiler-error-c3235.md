@@ -16,27 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6101d6f3d15e0276697130f26627ced593fef0a9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d156a9c1a6cda2ad8bb15e31034927b39a1a82e8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252251"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027875"
 ---
 # <a name="compiler-error-c3235"></a>Derleyici Hatası C3235
-'uzmanlık': genel bir sınıf açık ya da kısmi uzmanlığı izin verilmiyor  
-  
- Genel sınıflar açık ya da kısmi özelleştirmeleri için kullanılamaz.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3235 oluşturur.  
-  
-```  
-// C3235.cpp  
-// compile with: /clr  
-generic<class T>  
-public ref class C {};  
-  
-generic<>  
-public ref class C<int> {};   // C3235 Remove this specialization to resolve this error.  
+
+'özelleştirmesi': bir genel sınıfın açık veya kısmı özelleştirmesine izin verilmez
+
+Genel sınıflar açık ya da kısmi uzmanlıklar için kullanılamaz.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3235 oluşturur.
+
+```
+// C3235.cpp
+// compile with: /clr
+generic<class T>
+public ref class C {};
+
+generic<>
+public ref class C<int> {};   // C3235 Remove this specialization to resolve this error.
 ```

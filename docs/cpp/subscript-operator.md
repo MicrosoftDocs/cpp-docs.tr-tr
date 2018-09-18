@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb54752efb23db7599538e6dc2b71ea3bf5eb3a3
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cf12d517647e36c8a0d9428b818f3812bfea2e1d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197341"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020623"
 ---
 # <a name="subscript-operator-"></a>Alt simge işleci]
 
@@ -120,6 +120,6 @@ Alt simge işleci değiştirebilir. Bu nedenle, ifadeleri *dizi*[*dizin*] ve *di
 
 [Son Ek İfadeleri](../cpp/postfix-expressions.md)<br/>
 [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Diziler](../cpp/arrays-cpp.md)
-[tek boyutlu diziler](../c-language/one-dimensional-arrays.md)<br/>
+[Diziler](../cpp/arrays-cpp.md)<br/>
+[Bir Boyutlu Diziler](../c-language/one-dimensional-arrays.md)<br/>
 [Çok Boyutlu Diziler](../c-language/multidimensional-arrays-c.md)<br/>

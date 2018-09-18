@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ef92816c157d6bbc72d7c7539f2d0644c70082b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 444d2bc25c2eddd5ea9a0170272bd3e71b61f94f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199372"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018537"
 ---
 # <a name="fatal-error-c1211"></a>Önemli hata C1211
-TypeForwardedTo özel özniteliği yüklü çalışma zamanı sürümü tarafından desteklenmiyor  
-  
- Geçerli sürümde, ancak bir ortak dil çalışma zamanı önceki bir sürümünden bir derleyici olduğunda C1211 oluşur.  
-  
- Bazı işlevler Derleyici önceki bir çalışma zamanı sürümünde çalışmayabilir.  
-  
- Derleyicisi ile birlikte ortak dil çalışma zamanı C1211 çözmek için kullandığınız.  
-  
- Daha fazla bilgi için bkz: [tür iletme (C + +/ CLI)](../../windows/type-forwarding-cpp-cli.md).
+
+TypeForwardedTo özel özniteliği yüklü olan çalışma zamanı sürümü tarafından desteklenmiyor
+
+Geçerli sürümde, ancak bir ortak dil çalışma zamanının önceki bir sürümden bir derleyici olduğunda C1211 gerçekleşir.
+
+Bazı işlevler derleyicinin önceki bir çalışma zamanı sürümünü çalışmayabilir.
+
+Derleyici ile birlikte gelen ortak dil çalışma zamanı C1211 çözmek için kullandığınız.
+
+Daha fazla bilgi için [tür iletme (C + +/ CLI)](../../windows/type-forwarding-cpp-cli.md).
