@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e241f918191547812854de9734995b9f0b10770
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b3a2215e43573b08a69501edfbd0c7c86897fdd3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169679"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064931"
 ---
 # <a name="compiler-error-c2152"></a>Derleyici Hatası C2152
-'tanımlayıcısı': farklı özniteliklerle işlev işaretçileri  
-  
- Bir arama kuralı ile bir işlev işaretçisi (`__cdecl`, `__stdcall`, veya `__fastcall`) başka bir arama kuralı ile çalışması için bir işaretçi atanır.
+
+'identifier': farklı öznitelikleri olan işlevleri gösteren işaretçiler
+
+Bir çağırma kuralı olan bir işlev işaretçisine (`__cdecl`, `__stdcall`, veya `__fastcall`) için başka bir çağırma kuralı ile bir işleve işaretçi atanır.

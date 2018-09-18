@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74878342e153a78c6149ae3b177eff8c49e4a261
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: caff08744497936839e1021cef8fc86e0e8aa7e5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272106"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066264"
 ---
 # <a name="compiler-warning-c4962"></a>Derleyici Uyarısı C4962
-"function': Profil temelli iyileştirmeler iyileştirmeler profil verileri tutarsız hale gelmesine neden olduğundan devre dışı"  
-  
- İşlev için sayısı (Profil) verileri güvenilir olduğundan işlev /LTCG:PGO ile derlenmemiş. Bu işlev için güvenilir olmayan profil verileri içeren .pgc dosyasını yeniden oluşturmak için profil oluşturma yineleyin.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Daha fazla bilgi için bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+
+"function': iyileştirmeler profil verilerinin tutarsız olmasına yol açtığı için devre dışı profil temelli iyileştirmeler"
+
+Bir işlev, işlev sayısı (Profil) verileri güvenilmez olduğundan /LTCG:PGO ile derlenmedi. Bu işlev için güvenilir profil verilerini içeren .pgc dosyası yeniden oluşturmak için profil oluşturma yineler.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Daha fazla bilgi için [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).

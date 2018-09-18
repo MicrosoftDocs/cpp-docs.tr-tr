@@ -15,35 +15,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e91881f738c1b6411179c4f8e10e30f69e7b8667
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 106e02de80c3132846d7b88161637a37f74a59ee
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410937"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068643"
 ---
 # <a name="text-and-binary-streams"></a>Metin ve İkili Akışlar
-Bir metin akış metin odaklı bir görüntüye yazılabilir ve böylece okunabilir hale metnin bir veya daha fazla satırlardan oluşur. Bir metin akışından okuma bulunduğunda program okur bir `NL` (yeni satır) her satırın sonundaki. Bir metin akış yazarken, program Yazar bir `NL` bir satırın sonuna sinyal. Metin dosyalarını olarak temsil etmek için hedef ortamlar arasında farklı kuralları eşleştirmek için kitaplık işlevleri sayısı ve program ve bir metin akış arasında aktarılan karakterlerinin gösterimlerini değiştirebilirsiniz.  
-  
- Bu nedenle, bir metin akış içinde konumlandırma sınırlıdır. Geçerli dosya konumu göstergesi çağırarak elde edebileceğiniz [fgetpos](../c-runtime-library/reference/fgetpos.md) veya [ftell](../c-runtime-library/reference/ftell-ftelli64.md). Çağırarak bu şekilde elde konumunda ya da başlangıcında veya akışın sonuna bir metin akış yerleştirebilirsiniz [fsetpos](../c-runtime-library/reference/fsetpos.md) veya [fseek](../c-runtime-library/reference/fseek-fseeki64.md). Herhangi bir değişiklik konumunun iyi desteklenmiyor olabilir.  
-  
- En fazla taşınabilirlik için program yazamaz:  
-  
--   Boş dosyalar.  
-  
--   Bir satır sonunda boşluk karakterleri.  
-  
--   Kısmi satırlar (atlama tarafından `NL` bir dosya sonunda).  
-  
--   NL, yazdırılabilir karakterleri dışında karakterler ve `HT` (yatay sekme).  
-  
- Bu kurallar izlerseniz, (ya da bayt veya birden çok baytlı karakterler) bir metin akışından okuma karakter dizisi dosyasını oluştururken metin akışına yazdı karakter dizisi ile eşleşir. Aksi takdirde, kitaplık işlevleri kapatıldığında dosya boşsa, oluşturduğunuz dosya kaldırabilirsiniz. Veya alter veya dosyaya yazmak karakterleri silin.  
-  
- Bir ikili akış rasgele bilgilerinin bir veya daha fazla bayt oluşur. Rastgele bir nesne (bayt yönelimli) ikili akış depolanan değer yazma ve yazdığınız zaman tam olarak ne nesnesinde depolanan okuyun. Kitaplık işlevleri program ve ikili akış arasında iletme bayt değiştirmeyin. Bunlar ancak, rasgele bir null bayt sayısı olan ikili bir akış yazmak dosyasına ekleyebilirsiniz. Program, bu ek boş bayt ikili akış sonunda uğraşmanız gerekir.  
-  
- Bu nedenle, bir ikili akış içinde konumlandırma akışın sonuna göre konumlandırma dışında iyi tanımlanmış. Alın ve geçerli dosya konumu göstergesi bir metin akış aynı alter. Ayrıca, tarafından kullanılan uzaklıkları [ftell](../c-runtime-library/reference/ftell-ftelli64.md) ve [fseek](../c-runtime-library/reference/fseek-fseeki64.md) (bayt sıfır olan) akış başından itibaren bayt sayısı tamsayı üzerinde bu uzaklıkları aritmetik tahmin edilebilir sonuçlar verir şekilde.  
-  
- Bir bayt akış dosya bir bayt dizisi değerlendirir. Programında, akış aynı yukarıda açıklanan olası değişiklikleri dışında bayt dizisi gibi görünüyor.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Dosyalar ve Akışlar](../c-runtime-library/files-and-streams.md)
+
+Metin akışına bir veya daha fazla metin tabanlı bir görüntü için yazılabilir ve böylece bunlar okunabilir metin satırlarını oluşur. Bir metin akışından okuma sırasında program okur bir `NL` (yeni satır) her satırın sonunda. Bir metin akışına yazma, program Yazar bir `NL` bir satırın sonuna sinyal. Dosyalardaki metni temsil etmek için hedef ortamlar arasındaki farklı kuralları eşleştirmek için kitaplık işlevleri sayısı ve program ve metin akışına arasında aktarılan karakter temsillerini değiştirebilirsiniz.
+
+Bu nedenle, bir metin akışına içinde konumlandırma sınırlıdır. Geçerli dosya konumu göstergesi çağırarak elde edebileceğiniz [fgetpos](../c-runtime-library/reference/fgetpos.md) veya [ftell](../c-runtime-library/reference/ftell-ftelli64.md). Çağırarak bu şekilde elde ettiğiniz konumda veya başlangıcında veya akışın sonuna metin akışına konumlandırabilirsiniz [fsetpos](../c-runtime-library/reference/fsetpos.md) veya [fseek](../c-runtime-library/reference/fseek-fseeki64.md). Herhangi bir değişiklik konumunun da desteklenmeyebilir.
+
+En fazla taşınabilirlik için program yazma değil:
+
+- Boş dosya.
+
+- Bir satırın sonunda boşluk karakterleri.
+
+- Kısmi satır (atlama tarafından `NL` dosya sonunda).
+
+- dışında yazdırılabilir bir karakter, NL, karakterleri ve `HT` (yatay sekme).
+
+Bu kurallar izlerseniz (veya bayt veya çok baytlı karakter olarak) metin akıştan okunan karakter dizisini dosyasını oluştururken metin akışına yazdığınız karakterlerin dizisiyle eşleşir. Aksi halde, kitaplık işlevleri kapatıldığında dosya boşsa, oluşturduğunuz bir dosya kaldırabilirsiniz. Veya alter veya dosyaya yazmak karakterleri silin.
+
+İkili akışa bir veya daha fazla bilgi rastgele bayt oluşur. İkili akışa (bayt odaklı) için rastgele bir nesnede depolanan değeri yazın ve yazdığınız zaman tam olarak ne nesnesinde depolanan okuyun. Kitaplık işlevleri, program ve ikili akışa arasında iletim bayt değiştirmeyin. Bunlar ancak boş bayt rastgele bir sayıdan, bir ikili akışa yazmak dosya ekleyebilir. Programın sonunda herhangi bir ikili akışı, bu ek boş bayt uğraşmanız gerekir.
+
+Bu nedenle, ikili bir akış içinde konumlandırma akışın sonuna göreli konumlandırma dışında iyi tanımlanmış. Alabilir ve aynı metin akışına geçerli dosya konumu göstergesi alter. Ayrıca, tarafından kullanılan uzaklıkları [ftell](../c-runtime-library/reference/ftell-ftelli64.md) ve [fseek](../c-runtime-library/reference/fseek-fseeki64.md) (sıfır bayt olan) akış başından itibaren bayt sayısı için tamsayı bu uzaklıkları üzerinde aritmetik tahmin edilebilir sonuçlar verir.
+
+Bir bayt akışı, bir dosya bir bayt dizisi olarak değerlendirir. Bir program içindeki aynı yukarıda açıklanan olası değişiklikleri dışında bir bayt dizisini akış benzer.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Dosyalar ve Akışlar](../c-runtime-library/files-and-streams.md)

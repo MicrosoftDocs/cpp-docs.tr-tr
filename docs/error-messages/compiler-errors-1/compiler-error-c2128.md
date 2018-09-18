@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6db4621a39e704c2b9d19b66b388cc1899b8da12
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ecd2b7eb2db0828387bd2c933b51ee39c00bae77
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168158"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066719"
 ---
 # <a name="compiler-error-c2128"></a>Derleyici Hatası C2128
-'function': alloc_text/same_seg yalnızca C bağlantı işlevleriyle uygulanabilir  
-  
- `pragma` `alloc_text` yalnızca C bağlantı sağlamak için bildirilen işlevleri ile kullanılır.  
-  
- Aşağıdaki örnek C2128 oluşturur:  
-  
-```  
-// C2128.cpp  
-// compile with: /c  
-  
-// Delete the following line to resolve.  
-void func();  
-// #pragma alloc_text("my segment", func)   // C2128  
-  
-extern "C" {  
-void func();  
-}  
-  
-#pragma alloc_text("my segment", func)  
-void func() {}  
+
+'function': alloc_text/same_seg yalnızca C bağlaması olan işlevler için geçerlidir
+
+`pragma` `alloc_text` yalnızca C bağlaması olacak şekilde bildirilen işlevlerle kullanılabilir.
+
+Aşağıdaki örnek, C2128 oluşturur:
+
+```
+// C2128.cpp
+// compile with: /c
+
+// Delete the following line to resolve.
+void func();
+// #pragma alloc_text("my segment", func)   // C2128
+
+extern "C" {
+void func();
+}
+
+#pragma alloc_text("my segment", func)
+void func() {}
 ```

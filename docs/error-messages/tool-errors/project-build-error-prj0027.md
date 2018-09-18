@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a1c25f87913de312ca766b05edbac39f7191ff0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c642c678c7db29b9826449731f07ad90bc865294
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318993"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062065"
 ---
 # <a name="project-build-error-prj0027"></a>Proje Derleme Hatası PRJ0027
-Unicode günlük iletisi 'içeriği' kullanıcının ANSI kod sayfasına çevrilemedi içeriği alır.  
-  
- Toplu işlem ve/veya yanıt dosyaları oluşturma hataları ile birlikte bu uyarı genellikle yalnızca görürsünüz.  
-  
- ANSI kullanın veya bilgisayarınızda kod sayfasını yükleyin ve sistem varsayılan olarak ayarlamak için yapı günlük dosyasının içeriğini güncelleştirmek için bu hata için çözünürlük olur.
+
+Unicode günlük iletisi 'içeriğe' kullanıcının ANSI kodlu sayfasına çevrilemeyen içeriğe sahip.
+
+Batch ve/veya yanıt dosyaları oluşturulurken hata ile birlikte bu uyarı genellikle yalnızca görürsünüz.
+
+Bu hata için çözüm ANSI kullanın veya kod sayfası bilgisayarınıza yüklemek ve sistem varsayılan olarak ayarlamak için derleme günlük dosyasının içeriğini güncelleştirmektir.

@@ -15,32 +15,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d307ee359bd9eb1bfee0e33615f4906646ff22de
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ee0f818cca1e7569d3ba6cb53524f2bbc4f12e28
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381245"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062780"
 ---
 # <a name="c-unary-operators"></a>C Birli İşleçler
-Birli işleçleri önce kendi işleneni görünür ve sağdan sola ilişkilendirebilirsiniz.  
-  
-## <a name="syntax"></a>Sözdizimi  
- *Tek terimli ifadesi*:  
- *sonek ifade*  
-  
- **++**  *Tek terimli ifadesi*  
-  
- `--`  *Tek terimli ifadesi*  
-  
- *birli işleç cast ifadesi*  
-  
- **sizeof***Tek terimli ifadesi*   
-  
- **sizeof (***türü adı***)**   
-  
- *birli işleç*: biri  
- **& \* + -** `~` **!**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C İşleçleri](../c-language/c-operators.md)
+
+Birli işleçler, önce kendi işleneni görünür ve sağdan sola ilişkilendirin.
+
+## <a name="syntax"></a>Sözdizimi
+
+*Tekli ifade*: *sonek ifadesi*
+
+**++**  *Tekli ifade*
+
+`--`  *Tekli ifade*
+
+*birli işleci atama ifadesi*
+
+**sizeof***tekli ifade* 
+
+**sizeof (***tür adı***)** 
+
+*birli işleç*: biri  **&  \* + -** `~` **!**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C İşleçleri](../c-language/c-operators.md)

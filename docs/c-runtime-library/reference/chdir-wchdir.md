@@ -42,16 +42,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b81ace9c9fe5cf21d93f7e7dd4a8b5f2f2c5d726
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 73abd8ef0ca29ee9e7f2312cc44a8178fc464261
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451556"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064639"
 ---
 # <a name="chdir-wchdir"></a>_chdir, _wchdir
 
-Geçerli çalışma dizini değiştirir.
+Geçerli çalışma dizinini değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,21 +71,21 @@ Yeni çalışma dizini yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevler, başarılı olursa 0 değerini döndürür. Dönüş değeri-1 hata gösterir. Belirtilen yol bulunamadı, **errno** ayarlanır **ENOENT**. Varsa *DizinAdı* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlev -1 döndürür.
+Bu işlevler, başarılı olursa 0 değerini döndürür. Dönüş değeri-1 hata gösterir. Belirtilen yol bulunamadı, **errno** ayarlanır **ENOENT**. Varsa *DizinAdı* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev -1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Chdir** işlev tarafından belirtilen dizin için geçerli çalışma dizini değiştirir *DizinAdı*. *DizinAdı* parametresi varolan bir dizin başvurması gerekir. Bu işlev, herhangi bir sürücüdeki geçerli çalışma dizini değiştirebilirsiniz. Yeni bir sürücü harfi belirtilmişse *DizinAdı*, varsayılan sürücü harfini de değiştirilir. Örneğin, bir varsayılan sürücü harfini ve \BIN geçerli çalışma dizini ise aşağıdaki çağrıyı C sürücüsü için geçerli çalışma dizini değiştirir ve yeni bir varsayılan sürücü olarak C oluşturur:
+**_Chdir** işlevi tarafından belirtilen dizini geçerli çalışma dizini değişiklikleri *DizinAdı*. *DizinAdı* parametresi mevcut bir dizine başvurması gerekir. Bu işlev, herhangi bir sürücüdeki geçerli çalışma dizini değiştirebilirsiniz. Yeni bir sürücü harfi belirtilmişse *DizinAdı*, varsayılan sürücü harfini de değiştirilir. Örneğin, bir varsayılan sürücü harfi olduğu ve geçerli çalışma dizini \BIN ise, aşağıdaki çağrısı C sürücüsü için geçerli çalışma dizinini değiştirir ve yeni bir varsayılan sürücü olarak C kurar:
 
 ```C
 _chdir("c:\temp");
 ```
 
-İsteğe bağlı bir ters eğik çizgi karakteri kullandığınızda (**&#92;**) yollarında, iki ters eğik çizgi yerleştirmeniz gerekir (**&#92;&#92;**) tek bir ters eğik çizgi temsil etmek için bir C dize olarak ( **&#92;**).
+İsteğe bağlı bir ters eğik çizgi karakteri kullandığınızda (**&#92;**) yolları, iki ters eğik çizgi koymanız gerekir (**&#92;&#92;**) tek bir ters eğik çizgi temsil etmek için bir C dize içinde ( **&#92;**).
 
-**_wchdir** bir joker karakter sürümü **_chdir**; *DizinAdı* bağımsız değişkeni **_wchdir** bir joker karakter dizesidir. **_wchdir** ve **_chdir** Aksi takdirde aynı şekilde davranır.
+**_wchdir** geniş karakterli sürümüdür **_chdir**; *DizinAdı* bağımsız değişkeni **_wchdir** geniş karakterli bir dizedir. **_wchdir** ve **_chdir** aynı şekilde davranır.
 
-### <a name="generic-text-routine-mapping"></a>Genel metin rutin eşleme:
+### <a name="generic-text-routine-mapping"></a>Genel metin yordam eşlemesi:
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -93,12 +93,12 @@ _chdir("c:\temp");
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_chdir**|\<Direct.h >|\<errno.h >|
 |**_wchdir**|\<Direct.h > veya \<wchar.h >|\<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -137,10 +137,10 @@ int main( int argc, char *argv[] )
 ```
 
 ```Output
- Volume in drive C has no label.
- Volume Serial Number is 2018-08A1
+Volume in drive C has no label.
+Volume Serial Number is 2018-08A1
 
- Directory of c:\windows
+Directory of c:\windows
 
 08/29/2002  04:00 AM         1,004,032 explorer.exe
 12/17/2002  04:43 PM            10,752 hh.exe

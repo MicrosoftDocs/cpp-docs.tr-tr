@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec11d7ebc7d2c074344e9651a7c548fe1ad01943
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: ae46d9f9de26e80a97d4ea2e9a692caec3445c75
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689733"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068162"
 ---
 # <a name="invalidschedulerpolicyvalue-class"></a>invalid_scheduler_policy_value Sınıfı
-Bu sınıf, bir ilke anahtar oluşturulan bir özel açıklar bir `SchedulerPolicy` nesnesi, bu anahtarı için geçersiz bir değere ayarlanır.  
+Bu sınıf bir ilke anahtarı olduğunda oluşturulan bir özel durumu anlatmaktadır bir `SchedulerPolicy` nesne bu anahtar için geçersiz bir değere ayarlanır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,7 +38,7 @@ class invalid_scheduler_policy_value : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[invalid_scheduler_policy_value] (invalid-scheduler-policy-thread-specification-class.md#ctor|Fazla Yüklendi. Oluşturan bir `invalid_scheduler_policy_value` nesnesi.|  
+|[invalid_scheduler_policy_value] (invalid-scheduler-policy-thread-specification-class.md#ctor|Fazla Yüklendi. Oluşturur bir `invalid_scheduler_policy_value` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -53,7 +53,7 @@ class invalid_scheduler_policy_value : public std::exception;
     
 ##  <a name="ctor"></a> invalid_scheduler_policy_value 
 
- Oluşturan bir `invalid_scheduler_policy_value` nesnesi.  
+ Oluşturur bir `invalid_scheduler_policy_value` nesne.  
   
 ```
 explicit _CRTIMP invalid_scheduler_policy_value(_In_z_ const char* _Message) throw();
@@ -62,8 +62,8 @@ invalid_scheduler_policy_value() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 
 ## <a name="see-also"></a>Ayrıca Bkz.  

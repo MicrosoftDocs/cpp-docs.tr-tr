@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a018554de91003b54ffc403f1527ca07f2d4a75
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 56ecf997df2aeb1a41b5021d61b24073e871b55f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33233542"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064930"
 ---
 # <a name="compiler-error-c2755"></a>Derleyici Hatası C2755
-'param': Kısmi uzmanlığı olmayan tür parametresi, basit bir tanımlayıcı olmalıdır  
-  
- Tür olmayan parametresi bir basit bir tanımlayıcı, şey derleyici tek bir tanımlayıcı veya sabit bir değer derleme zamanında çözülebilir olması gerekir.  
-  
- Aşağıdaki örnek C2755 oluşturur:  
-  
-```  
-// C2755.cpp  
-template<int I, int J>  
-struct A {};  
-  
-template<int I>   
-struct A<I,I*5> {};   // C2755  
-// try the following line instead  
-// struct A<I,5> {};  
+
+'param': bir kısmi özelleştirmenin tür olmayan parametresi basit bir tanımlayıcı olmalıdır
+
+Tür olmayan parametresi basit bir tanımlayıcı, tek bir tanımlayıcı ya da sabit bir değer derleme zamanında derleyici çözümlemek için bir şey olması gerekir.
+
+Aşağıdaki örnek, C2755 oluşturur:
+
+```
+// C2755.cpp
+template<int I, int J>
+struct A {};
+
+template<int I>
+struct A<I,I*5> {};   // C2755
+// try the following line instead
+// struct A<I,5> {};
 ```

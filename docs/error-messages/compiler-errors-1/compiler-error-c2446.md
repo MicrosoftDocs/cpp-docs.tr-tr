@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0274aaf606d039cc4dcf4482f5d8ea1e3ef8e86d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7eeeab46bd7ed5be5b820d1740dd4ff8d377633a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196668"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062806"
 ---
 # <a name="compiler-error-c2446"></a>Derleyici Hatası C2446
-'işleci': 'type1' öğesinden 'type2' dönüştürme  
-  
- Derleyici dönüştürülemiyor `type1` için `type2`. C/C++ semantiği ihlal ettiğinden dönüştürme anlamı olmayabilir.
+
+'operator': 'type1' öğesinden 'type2' öğesine dönüştürme
+
+Derleyici dönüştürülemiyor `type1` için `type2`. C/C++ semantiği ihlal ettiğinden dönüştürme çoğaltılmasının anlamı olmayabilir.

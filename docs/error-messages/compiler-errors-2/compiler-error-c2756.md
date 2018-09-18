@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3eb61cd111166867be0439709a8b73dd4056099
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 252f212f9034151bc5e77d1d2d6e64e1ee388faa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231783"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061220"
 ---
 # <a name="compiler-error-c2756"></a>Derleyici Hatası C2756
-'şablon türü': varsayılan şablon değişkenlerini kısmi uzmanlığı üzerinde izin verilmiyor  
-  
- Şablon için bir kısmi uzmanlığı varsayılan bağımsız değişkeni içerebilir.  
-  
- Aşağıdaki örnek C2756 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C2756.cpp  
-template <class T>  
-struct S {};  
-  
-template <class T=int>  
-// try the following line instead  
-// template <class T>  
-struct S<T*> {};   // C2756  
+
+'şablon türü': varsayılan şablon bağımsız değişkenlerinin kısmi özelleştirmede izin verilmez
+
+Şablonu kısmi özelleştirmesi için varsayılan bağımsız değişken içeremez.
+
+Aşağıdaki örnek, C2756 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C2756.cpp
+template <class T>
+struct S {};
+
+template <class T=int>
+// try the following line instead
+// template <class T>
+struct S<T*> {};   // C2756
 ```

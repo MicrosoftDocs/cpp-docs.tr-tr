@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 944702897021f50ff1e7fea2931a9aa16c9d080a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 61f016c9fb8de12dd690dee7dbcd2aec1ecf3a97
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299298"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060778"
 ---
 # <a name="linker-tools-error-lnk1287"></a>Bağlayıcı Araçları Hatası LNK1287
-Geçersiz yönetilen giriş noktası işlevi  
-  
- Giriş noktası için yönetilen bir görüntü geçerli değil. Bir yönetilen giriş noktası işlevinin dönüş türü yalnızca olabilir `void` veya `int`. Yönetilen giriş noktası işlevi parametre türüne yalnızca olabilir `void` veya `String []`.
+
+Geçersiz yönetilen giriş noktası işlevi
+
+Giriş noktası için yönetilen bir görüntü geçerli değil. Yönetilen giriş noktası işlevi dönüş türünü yalnızca olabilir `void` veya `int`. Yönetilen giriş noktası işlevi parametresinin türünü yalnızca olabilir `void` veya `String []`.

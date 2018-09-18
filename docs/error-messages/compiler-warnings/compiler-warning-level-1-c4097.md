@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bc91f29d7d6544b2b9f0bfcf84ca5b043b74fe2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 93202696c06a38682da95947ac068b2d90e177ec
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272054"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062689"
 ---
 # <a name="compiler-warning-level-1-c4097"></a>Derleyici Uyarısı (düzey 1) C4097
-Beklenen 'geri' olacak şekilde pragma parametresi veya 'off'  
-  
- Pragma geçersiz değer geçirildi.  
-  
- Aşağıdaki örnek C4097 oluşturur:  
-  
-```  
-// C4097.cpp  
-// compile with: /W1  
-#pragma runtime_checks("",test)   // C4097  
-// try the following line instead  
-// #pragma runtime_checks("",off)  
-  
-int main() {  
-}  
+
+pragma parametresinin 'restore' olması bekleniyor veya 'off'
+
+Pragma, geçersiz bir değer geçirildi.
+
+Aşağıdaki örnek, C4097 oluşturur:
+
+```
+// C4097.cpp
+// compile with: /W1
+#pragma runtime_checks("",test)   // C4097
+// try the following line instead
+// #pragma runtime_checks("",off)
+
+int main() {
+}
 ```

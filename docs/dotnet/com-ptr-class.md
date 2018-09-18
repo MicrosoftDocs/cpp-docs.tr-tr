@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 27adaa2d91bac38c587ee7e4ec9c805c102d4883
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3cd5b4115d50f9e2db9b1e3dc8a03818e2c8252f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33108303"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066733"
 ---
 # <a name="comptr-class"></a>com::ptr Sınıfı
-Bir CLR sınıf üyesi olarak kullanılabilir bir COM nesnesi için sarmalayıcı.  Sarmalayıcı Ayrıca kendi yıkıcı çağrıldığında nesne üzerinde sahip olunan tüm başvurularını serbest COM nesnesinin ömür yönetimini otomatikleştirir. Benzer [CComPtr sınıfı](../atl/reference/ccomptr-class.md).  
+Bir CLR sınıfının bir üyesi kullanılabilecek bir COM nesnesi için bir sarmalayıcı.  Sarmalayıcı da yok edici çağrıldığında nesne üzerinde sahip olunan tüm başvurularını serbest COM nesnesi ömrü yönetimini otomatikleştirir. Alınmak üzere [CComPtr sınıfı](../atl/reference/ccomptr-class.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,18 +38,18 @@ ref class ptr;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_interface_type`  
- COM arabirimi.  
+*_interface_type*<br/>
+COM arabirimi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- A `com::ptr` yerel işlevi değişken olarak çeşitli COM görevlerini basitleştirmek ve ömür yönetimini otomatikleştirmek için de kullanılabilir.  
+ A `com::ptr` yerel işlev değişken olarak çeşitli COM görevleri basitleştirin ve ömür Yönetimi otomatik hale getirmek için de kullanılabilir.  
   
- A `com::ptr` doğrudan işlevi parametre olarak kullanılamaz; kullanın bir [izleme başvurusu işleci](../windows/tracking-reference-operator-cpp-component-extensions.md) veya [işlemek nesne işleci (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md) yerine.  
+ A `com::ptr` doğrudan işlevi parametre olarak kullanılamaz; kullanmak bir [Tracking Reference Operator](../windows/tracking-reference-operator-cpp-component-extensions.md) veya [işlemek nesne işleci (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md) bunun yerine.  
   
- A `com::ptr` doğrudan bir işleve döndürülemiyor; bunun yerine bir tanıtıcı kullanın.  
+ A `com::ptr` doğrudan bir işlevden döndürülen kullanılamaz; bunun yerine bir tanıtıcı kullanın.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek kullanan bir CLR sınıfı uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesnesi.  Kapsanan çağrılarında sınıfı sonuçları ortak yöntemleri çağırma `IXMLDOMDocument` nesnesi.  Örnek bir XML belgesi örneği oluşturur, bazı basit XML ile doldurur ve Basitleştirilmiş ilerlemesi konsoluna XML yazdırmak için ayrıştırılmış belge ağacında düğümlerin yapar.  
+ Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne.  Kapsanan çağrılarında sınıfı sonuçları genel yöntemleri çağırma `IXMLDOMDocument` nesne.  Örnek bir XML belgesi bir örneğini oluşturur, bazı basit XML ile doldurur ve Basitleştirilmiş bir Yürüme XML konsola yazdırmak için ayrıştırılmış belge ağacında düğümlerin yapar.  
   
 ```  
 // comptr.cpp  
@@ -164,7 +164,7 @@ int main() {
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\com\ptr.h >  
+ **Üst bilgi dosyası** \<msclr\com\ptr.h >  
   
  **Namespace** msclr::com  
   

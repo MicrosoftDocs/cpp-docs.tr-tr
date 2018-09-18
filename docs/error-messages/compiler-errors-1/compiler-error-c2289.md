@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d351bffc33fc754ffcb66d2428a77fb040089a3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b5bf284ee7ada4f32772b5f65ed0b983e08e5988
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170921"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067617"
 ---
 # <a name="compiler-error-c2289"></a>Derleyici Hatası C2289
-birden çok kez kullanılan aynı tür niteleyicisi  
-  
- Tür niteleyicisi türü bildirimi veya tanımı kullanır (`const`, `volatile`, `signed`, veya `unsigned`) birden fazla kez ANSI Uyumluluğu altında bir hata neden (**/Za**).  
-  
- Aşağıdaki örnek C2286 oluşturur:  
-  
-```  
-// C2289.cpp  
-// compile with: /Za /c  
-volatile volatile int i;   // C2289  
-volatile int j;   // OK  
+
+aynı tür niteleyicisi birden fazla kez kullanıldı
+
+Tür niteleyicisine türü bildirim veya tanım kullanır (`const`, `volatile`, `signed`, veya `unsigned`) birden çok kez, ANSI Uyumluluğu altında bir hata neden (**/Za**).
+
+Aşağıdaki örnek, C2286 oluşturur:
+
+```
+// C2289.cpp
+// compile with: /Za /c
+volatile volatile int i;   // C2289
+volatile int j;   // OK
 ```

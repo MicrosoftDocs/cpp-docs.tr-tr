@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c3e29c3eed99c95ee92841413ceaca6e17e8565
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 277951a5425a75c9769c5a2c4104421303f677c2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755072"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065347"
 ---
 # <a name="ccomobjectstack-class"></a>CComObjectStack sınıfı
 
@@ -36,13 +36,13 @@ Bu sınıf, geçici bir COM nesnesi oluşturur ve ile iskelet bir uygulamasını
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class  Base>  
+template <class  Base>
 class CComObjectStack : public Base
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*temel*  
+*temel*<br/>
 Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)iyi herhangi diğer bir arabirim uğradıysa nesnede desteklemek istediğiniz gibi.
 
 ## <a name="members"></a>Üyeler
@@ -170,7 +170,7 @@ Hata ayıklama modunda çağrı `_ASSERTE`.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComAggObject sınıfı](../../atl/reference/ccomaggobject-class.md)   
-[CComObject sınıfı](../../atl/reference/ccomobject-class.md)   
-[CComObjectGlobal sınıfı](../../atl/reference/ccomobjectglobal-class.md)   
+[CComAggObject Sınıfı](../../atl/reference/ccomaggobject-class.md)<br/>
+[CComObject Sınıfı](../../atl/reference/ccomobject-class.md)<br/>
+[CComObjectGlobal Sınıfı](../../atl/reference/ccomobjectglobal-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

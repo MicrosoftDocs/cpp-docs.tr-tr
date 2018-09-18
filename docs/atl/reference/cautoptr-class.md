@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a312ca8aa7afe39a301607e6b091341adbb89bc4
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c3066f4586d34c4742cc03511d7f8739b642ccbd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761088"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066251"
 ---
 # <a name="cautoptr-class"></a>CAutoPtr sınıfı
 
@@ -39,13 +39,13 @@ Bu sınıf, bir akıllı işaretçi nesnesinin temsil eder.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <typename T>  
+template <typename T>
 class CAutoPtr
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 İşaretçi türü.
 
 ## <a name="members"></a>Üyeler
@@ -109,7 +109,7 @@ void Attach(T* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 `CAutoPtr` Nesne, işaretçi sahipliğini alır.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -133,16 +133,16 @@ explicit CAutoPtr(T* p) throw();
 template<typename TSrc>
 CAutoPtr(CAutoPtr<TSrc>& p) throw();
 
-template<> 
+template<>
 CAutoPtr(CAutoPtr<T>& p) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Var olan bir işaretçi.
 
-*TSrc*  
+*TSrc*<br/>
 Bir başkası tarafından yönetilen türü `CAutoPtr`geçerli nesneyi başlatmak için kullanılır.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -223,10 +223,10 @@ CAutoPtr<T>& operator= (CAutoPtr<TSrc>& p);
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Bir işaretçi.
 
-*TSrc*  
+*TSrc*<br/>
 Sınıf türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -265,7 +265,7 @@ Değerini döndürür [CAutoPtr::m_p](#m_p) veri üye değişkeni.
 
 Atama işleci.
 
-```  
+```
 operator T* () const throw();
 ```
 
@@ -279,6 +279,6 @@ Sınıf şablonunda tanımlanan nesne veri türü bir işaretçi döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CHeapPtr sınıfı](../../atl/reference/cheapptr-class.md)   
-[CAutoVectorPtr sınıfı](../../atl/reference/cautovectorptr-class.md)   
+[CHeapPtr Sınıfı](../../atl/reference/cheapptr-class.md)<br/>
+[CAutoVectorPtr Sınıfı](../../atl/reference/cautovectorptr-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

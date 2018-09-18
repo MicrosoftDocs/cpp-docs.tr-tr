@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92f64ddab93fb6815e3ff7a98ac39a842042bfeb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 560edb9953d4f7c751f4ab4102fd544fb09bb86d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33232652"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066017"
 ---
 # <a name="compiler-error-c2706"></a>Derleyici Hatası C2706
-eşleşen olmadan __except geçersiz \__try (eksik '}' içinde \__try blok?)  
-  
- Derleme için bir kapanış ayracı bulamadı bir `__try` bloğu.  
-  
- Aşağıdaki örnek C2706 oluşturur:  
-  
-```  
-// C2706.cpp  
-int main() {  
-   __try {  
-      void f();  
-   // C2706  } missing here  
-   __except(GetExceptionCode() == 0x0) {  
-   }  
-}  
+
+eşleşen olmadan __except geçersizdir \__try (eksik '}' içinde \__try blok?)
+
+Derleyici için bir kapanış ayracı bulamadı bir `__try` blok.
+
+Aşağıdaki örnek, C2706 oluşturur:
+
+```
+// C2706.cpp
+int main() {
+   __try {
+      void f();
+   // C2706  } missing here
+   __except(GetExceptionCode() == 0x0) {
+   }
+}
 ```

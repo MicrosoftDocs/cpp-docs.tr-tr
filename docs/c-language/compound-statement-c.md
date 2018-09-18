@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e13f09defccb0aeb3d4ec47cf7cf1678deaee6dd
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 11197f19047b0058f5401b9419f0f353c44c91d6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767809"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063631"
 ---
 # <a name="compound-statement-c"></a>Bileşik Deyim (C)
 
@@ -61,4 +61,5 @@ if ( i > 0 )
 Bu örnekte, `i` 0'dan büyük olan tüm ifadeleri bileşik deyim içinde sırayla yürütülür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 [Deyimler](../c-language/statements-c.md)

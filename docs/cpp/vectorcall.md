@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 463f005388a066776d7db8b1701850e08888de76
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 335f81a204ec91361c51f7573e58b61fad91f97b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895103"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061714"
 ---
 # <a name="vectorcall"></a>__vectorcall
 
@@ -46,7 +46,7 @@ typedef struct {
    __m256 y;
    __m256 z;
 } hva3;    // 3 element HVA type on __m256
-```  
+```
 
 İşlevlerinizi açıkça bildirin **__vectorcall** üst bilgi dosyaları, ayrı olarak izin vermek için bir anahtar sözcük hatasız kodu derlenmiş. İşlevleri kullanmak için prototipli olmalıdır **__vectorcall**ve bir `vararg` değişken uzunlukta bağımsız değişken listesi.
 
@@ -60,25 +60,25 @@ Tanımlanan çıkış satır dışı, işlev ise, statik olmayan sınıf üyesi 
 struct MyClass {
    void __vectorcall mymethod();
 };
-```  
+```
 
 bu:
 
 ```cpp
 void MyClass::mymethod() { return; }
-```  
+```
 
 şuna eşdeğerdir:
 
 ```cpp
 void __vectorcall MyClass::mymethod() { return; }
-```  
+```
 
 **__Vectorcall** çağırma kuralı değiştiricisi belirtilmelidir işaretçisi olduğunda bir **__vectorcall** işlevi oluşturulur. Sonraki örnek, oluşturur bir **typedef** işaretçisi için bir **__vectorcall** dört alan işlev **çift** bağımsız değişkenleri ve döndürür bir **__m256**değeri:
 
 ```cpp
 typedef __m256 (__vectorcall * vcfnptr)(double, double, double, double);
-```  
+```
 
 ## <a name="vectorcall-convention-on-x64"></a>x64 __vectorcall kuralı
 
@@ -167,7 +167,7 @@ hva4 __vectorcall example6(hva2 a, hva4 b, __m256 c, hva2 d) {
    return b;
 }
 
-int __cdecl main( void )  
+int __cdecl main( void )
 {
    hva4 h4;
    hva2 h2;
@@ -188,7 +188,7 @@ int __cdecl main( void )
    i = example5(1, h2, 3, h4, 5);
    h4 = example6(h2, h4, c, h2);
 }
-```  
+```
 
 ## <a name="vectorcall-convention-on-x86"></a>x86 __vectorcall kuralı
 
@@ -273,7 +273,7 @@ hva4 __vectorcall example6(hva2 a, hva4 b, __m256 c, hva2 d) {
    return b;
 }
 
-int __cdecl main( void )  
+int __cdecl main( void )
 {
    hva4 h4;
    hva2 h2;
@@ -294,11 +294,11 @@ int __cdecl main( void )
    i = example5(1, h2, 3, h4, 5);
    h4 = example6(h2, h4, c, h2);
 }
-```  
+```
 
 **End Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağımsız değişkeni geçirme ve adlandırma kuralları](../cpp/argument-passing-and-naming-conventions.md)   
+[Bağımsız Değişkeni Geçirme ve Adlandırma Kuralları](../cpp/argument-passing-and-naming-conventions.md)<br/>
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)

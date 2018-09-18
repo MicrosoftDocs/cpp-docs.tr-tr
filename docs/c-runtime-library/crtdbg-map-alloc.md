@@ -19,17 +19,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 855b057223d7bdd69d7275e8c2acc0dd72bc256c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0c48095acceefa4bb4852dab18d35284492e7ba0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32386485"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069410"
 ---
 # <a name="crtdbgmapalloc"></a>_CRTDBG_MAP_ALLOC
-Zaman **_CRTDBG_MAP_ALLOC** bayrağı, bir uygulamanın hata ayıklama sürümü tanımlanır, heap işlevleri temel sürümü, hata ayıklama sürümlerine doğrudan eşlendi. Bayrak Crtdbg.h içinde eşleme yapmak için kullanılır. Bu bayrak yalnızca kullanılabilir [_DEBUG](../c-runtime-library/debug.md) bayrağı uygulamada tanımlandı.  
-  
- Hata ayıklama sürümü yığın işlevi temel sürümü ile kullanma hakkında daha fazla bilgi için bkz: [hata ayıklama sürümü karşı temel sürümünü kullanarak](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetim Bayrakları](../c-runtime-library/control-flags.md)
+
+Zaman **_CRTDBG_MAP_ALLOC** bayrağı, bir uygulama hata ayıklama sürümünde tanımlanır, yığın işlevlerinin temel sürümünü doğrudan hata ayıklama sürümlerine eşlendi. Bayrağı, Crtdbg.h eşleme yapmak için kullanılır. Bu bayrağı yalnızca kullanılabilir [_DEBUG](../c-runtime-library/debug.md) bayrağı uygulamada tanımlanmış.
+
+Bir yığın işlevi temel sürümünü ve hata ayıklama sürümü kullanma hakkında daha fazla bilgi için bkz. [hata ayıklama sürümü karşı temel sürümünü kullanarak](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Denetim Bayrakları](../c-runtime-library/control-flags.md)

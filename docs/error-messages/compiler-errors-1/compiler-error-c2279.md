@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1eb468ccf5d099745c5d4a30eaec2f38f015a58
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d1b194476e6400618045324a14c9e4781f9ec8f0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33172283"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067954"
 ---
 # <a name="compiler-error-c2279"></a>Derleyici Hatası C2279
-özel durum belirtimi typedef bildiriminde görünemez.  
-  
- Altında **/Za**, [özel durum belirtimleri](../../cpp/exception-specifications-throw-cpp.md) typedef bildiriminde izin verilmiyor.  
-  
- Aşağıdaki örnek C2279 oluşturur:  
-  
-```  
-// C2279.cpp  
-// compile with: /Za /c  
-typedef int (*xy)() throw(...);   // C2279  
-typedef int (*xyz)();   // OK  
+
+özel durum belirtimi bir typedef bildiriminde yer alamaz
+
+Altında **/Za**, [özel durum belirtimleri](../../cpp/exception-specifications-throw-cpp.md) bir typedef bildiriminde izin verilmez.
+
+Aşağıdaki örnek, C2279 oluşturur:
+
+```
+// C2279.cpp
+// compile with: /Za /c
+typedef int (*xy)() throw(...);   // C2279
+typedef int (*xyz)();   // OK
 ```

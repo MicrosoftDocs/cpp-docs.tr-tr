@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1aed17c9465d3d209e3ff027b6a03bddb6cec57
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0985ff20e52910bbe8ddbe788a16b8e85a6d7d7e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276548"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067610"
 ---
 # <a name="compiler-warning-level-1-c4264"></a>Derleyici Uyarısı (düzey 1) C4264
-'virtual_function': sanal üye işlevi temel 'sınıfındaki'; için kullanılabilir geçersiz kılma işlev gizli  
-  
- C4264 sonra oluşturulan her zaman [C4263](../../error-messages/compiler-warnings/compiler-warning-level-4-c4263.md).  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+'virtual_function': taban 'class'; sanal üye işlev için kullanılabilecek geçersiz kılma yok işlev gizli
+
+C4264 sonra oluşturulan her zaman [C4263](../../error-messages/compiler-warnings/compiler-warning-level-4-c4263.md).
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.

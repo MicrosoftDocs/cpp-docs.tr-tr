@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91e2668f950e6b2553113e74061994d1855ce7bc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5a3215c0e9dd7a76364c31a59f0f0d923092f686
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295554"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060739"
 ---
 # <a name="expression-evaluator-error-cxx0053"></a>İfade Değerlendirici Hatası CXX0053
-noktaları birleştirilirken işlev olmayan simge eşleşen kesme noktaları bağlama sırasında  
-  
- Bir kesme noktası kullanılan bir simge bir işlev değil. Bir veri üyesi bir kesme noktası belirterek bu hataya neden olabilir.  
-  
- Bu hata için CAN0053 aynıdır.
+
+noktaları birleştirilirken işlev olmayan sembol eşleşen kesme noktaları bağlama sırasında
+
+Bir kesme noktası kullanılan bir sembolü bir işlev değil. Bir veri üyesi bir kesme noktası belirterek bu hataya neden olabilir.
+
+Bu hata için CAN0053 aynıdır.

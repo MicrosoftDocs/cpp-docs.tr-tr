@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a65ca2c53ba2801f861471c66f7e1f2ec8766345
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b271875173bf0e55d94989d60a1c8f7aaf408b2a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319084"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065588"
 ---
 # <a name="project-build-error-prj0034"></a>Proje Derleme Hatası PRJ0034
-Proje düzeyi özel 'Ek bağımlılıklar' özelliği, 'out 'macro_expansion' sonucunu veren yer alan adım makrosu' oluşturun.  
-  
- Özel derleme adımı bir proje üzerinde ek bağımlılığı makro değerlendirmesi sorun büyük olasılıkla bir hata içeriyor. Bu hata, ayrıca yol hatalı, karakter veya bir dosya yolu geçersiz karakter bileşimlerini içeren biçimlendirildiğinden emin anlamına gelebilir.  
-  
- Bu hatayı gidermek için makrosu düzeltin veya yolunu düzeltin. Proje dizininden mutlak bir yol değerlendirilen yoludur.
+
+Proje düzeyindeki özel 'Ek bağımlılıklar' özelliği 'out 'için macro_expansion' sonucunu veren yer alan adım makrosu' oluşturun.
+
+Özel derleme adımı bulunan bir projede hata büyük olasılıkla bir makro değerlendirme sorunu nedeniyle ek bağımlılık içeriyor. Bu hata, da yolu yanlış, karakter veya bir dosya yolunda geçersiz karakter birleşimlerinin içeren biçimlendirildiğini anlamına gelebilir.
+
+Bu hatayı gidermek için makro düzeltin veya yolunu düzeltin. Proje dizininden mutlak bir yol değerlendirilen yoludur.

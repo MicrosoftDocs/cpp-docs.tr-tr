@@ -16,45 +16,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a45207f85575c8047f673b415ce802dbac24318
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1754977486327e06fb56a786be523c1b2fb7b917
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33282834"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068981"
 ---
 # <a name="compiler-warning-level-1-c4744"></a>Derleyici Uyarısı (düzey 1) C4744
-'var' 'dosya1' ve 'dosya2' farklı türe sahip: 'type1' ve 'type2'  
-  
- Başvurulan veya iki dosyasında tanımlanan bir dış değişkeni, bu dosyaları farklı türleri vardır.  Çözmek için aynı tür tanımları olun veya dosyalarından biri, değişken adını değiştirin.  
-  
- Yalnızca dosya ile /GL. derlendiğinde C4744 yayılan  Daha fazla bilgi için bkz: [/GL (bütün Program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md).  
-  
+
+'var', 'dosya1' ve 'dosya2' farklı türe sahip: 'type1' ve 'type2'
+
+İki dosyalarında tanımlanan ya da başvurulan bir dış değişkenine bu dosyaları farklı türleri vardır.  Çözmek için aynı tür tanımlarını belirleyebilir veya dosyalardan biri değişken adını değiştirin.
+
+/GL ile derlenmiş dosyalar yalnızca zaman C4744 yayıldığını  Daha fazla bilgi için [/GL (bütün Program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md).
+
 > [!NOTE]
->  C++'da bir değişken adı türü bilgileri ile donatılmış olduğundan C4744 genellikle C (C++ değil) dosyalarında ortaya çıkar.  (Aşağıda) örnek C++ derlerken olduğunda, bağlayıcı hatası LNK2019 alırsınız.  
-  
-## <a name="example"></a>Örnek  
- Bu örnek ilk tanım içerir.  
-  
-```  
-// C4744.c  
-// compile with: /c /GL  
-int global;  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4744 oluşturur.  
-  
-```  
-// C4744b.c  
-// compile with: C4744.c /GL /W1  
-// C4744 expected  
-#include <stdio.h>  
-  
-extern unsigned global;  
-  
-main()   
-{  
-    printf_s("%d\n", global);  
-}  
+>  C++'ta bir değişken adı türü bilgilerini ile donatılmış olduğundan C4744 genellikle C (C++ değil) dosyalarında gerçekleşir.  (Aşağıda) örnek C++ derler olduğunda, bağlayıcı hatası LNK2019 elde edersiniz.
+
+## <a name="example"></a>Örnek
+
+Bu örnek, ilk tanımı içeriyor.
+
+```
+// C4744.c
+// compile with: /c /GL
+int global;
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4744 oluşturur.
+
+```
+// C4744b.c
+// compile with: C4744.c /GL /W1
+// C4744 expected
+#include <stdio.h>
+
+extern unsigned global;
+
+main()
+{
+    printf_s("%d\n", global);
+}
 ```

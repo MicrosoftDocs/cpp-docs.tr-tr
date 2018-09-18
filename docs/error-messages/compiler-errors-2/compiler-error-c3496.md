@@ -16,37 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dbc128c1e9a80c61ad42514827bbf8d47b693e84
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6ec4602e6a0061f5eb750ab29587209a6c97985d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33256993"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062299"
 ---
 # <a name="compiler-error-c3496"></a>Derleyici Hatası C3496
-'this' değeri her zaman yakalanır: '&' yoksayıldı  
-  
- Yakalama yapılamaz `this` başvuruya işaretçi.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
--   Yakalama `this` değeriyle işaretçi.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3496 oluşturur çünkü bir başvuru `this` işaretçi lambda ifadesi yakalama listede görünür:  
-  
-```  
-// C3496.cpp  
-// compile with: /c  
-  
-class C  
-{  
-   void f()  
-   {  
-      [&this] {}(); // C3496  
-   }  
-};  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+
+'this' her zaman değere göre yakalanan: '&' yoksayıldı
+
+Yakalama gerçekleştiremez `this` başvuruya göre işaretçi.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+- Yakalama `this` işaretçi değeri.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek C3496 oluşturur çünkü bir başvuru `this` işaretçi bir lambda ifadesinin yakalama listede görünür:
+
+```
+// C3496.cpp
+// compile with: /c
+
+class C
+{
+   void f()
+   {
+      [&this] {}(); // C3496
+   }
+};
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)

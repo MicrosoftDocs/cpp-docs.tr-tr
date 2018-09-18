@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f12c9266e4693007d52a41624f11adafe92df56
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d06379c5b5163712fe3c82aefd0efb7521169736
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299490"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063696"
 ---
 # <a name="expression-evaluator-error-cxx0013"></a>İfade Değerlendirici Hatası CXX0013
-işleç eksik  
-  
- Bir işleç ifade bekleniyordu ancak bulunamadı. İfade sözdizimini denetleyin.  
-  
- Bu hata için CAN0013 aynıdır.
+
+işleç eksik
+
+Bir işleç ifade bekleniyordu ancak bulunamadı. İfade sözdizimini denetleyin.
+
+Bu hata için CAN0013 aynıdır.

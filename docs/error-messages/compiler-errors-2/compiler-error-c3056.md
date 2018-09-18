@@ -16,44 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52ec97865a1aa9c8b6da9b109bf100eb62824a9d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0495bc9c31df3aa3ff47ef860e8e47ea6f7c2248
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249173"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063586"
 ---
 # <a name="compiler-error-c3056"></a>Derleyici Hatası C3056
-'simgesi': simgesi değil 'threadprivate' yönergesi ile aynı kapsamda  
-  
- Kullanılan bir simge bir [threadprivate](../../parallel/openmp/reference/threadprivate.md) yan tümcesi aynı kapsamda olmalıdır `threadprivate` yan tümcesi.  
-  
- Aşağıdaki örnek C3056 oluşturur:  
-  
-```  
-// C3056.cpp  
-// compile with: /openmp  
-int x, y;  
-void test() {  
-   #pragma omp threadprivate(x, y)   // C3056  
-   #pragma omp parallel copyin(x, y)  
-   {  
-      x = y;  
-   }  
-}  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C3056b.cpp  
-// compile with: /openmp /LD  
-int x, y;  
-#pragma omp threadprivate(x, y)  
-void test() {  
-   #pragma omp parallel copyin(x, y)  
-   {  
-      x = y;  
-   }  
-}  
+
+'symbol': simge değil 'threadprivate' yönergesiyle aynı kapsamda
+
+Kullanılan bir sembolü bir [threadprivate](../../parallel/openmp/reference/threadprivate.md) yan tümcesi, aynı kapsamda olmalıdır `threadprivate` yan tümcesi.
+
+Aşağıdaki örnek, C3056 oluşturur:
+
+```
+// C3056.cpp
+// compile with: /openmp
+int x, y;
+void test() {
+   #pragma omp threadprivate(x, y)   // C3056
+   #pragma omp parallel copyin(x, y)
+   {
+      x = y;
+   }
+}
+```
+
+Olası çözüm:
+
+```
+// C3056b.cpp
+// compile with: /openmp /LD
+int x, y;
+#pragma omp threadprivate(x, y)
+void test() {
+   #pragma omp parallel copyin(x, y)
+   {
+      x = y;
+   }
+}
 ```

@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bef62649af39df950c3966ef93dddb6c71ec2fd6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f91a8152ef690b9ded63b91b2b6e6f1da6dc2524
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293377"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063716"
 ---
 # <a name="compiler-warning-level-4-c4268"></a>Derleyici Uyarısı (düzey 4) C4268
-'tanımlayıcısı': oluşturulan derleyici varsayılan kurucu ile başlatılmış 'const' statik/genel veri sıfırlarla nesnesini doldurur  
-  
- A **const** Önemsiz olmayan bir sınıfın genel veya statik örneğini derleyicinin ürettiği varsayılan kurucu ile başlatıldı.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4268.cpp  
-// compile with: /c /LD /W4  
-class X {  
-public:  
-   int m_data;  
-};  
-  
-const X x1;   // C4268  
-```  
-  
- Bu sınıf örneği olarak **const**, değeri `m_data` değiştirilemez.
+
+'identifier': derleyicinin ürettiği varsayılan oluşturucuyla başlatılan 'const' statik/genel verileri nesneyi sıfırlarla dolduruyor
+
+A **const** genel veya statik Önemsiz olmayan bir sınıfın örneğini bir derleyicinin ürettiği varsayılan oluşturucuyla başlatılan.
+
+## <a name="example"></a>Örnek
+
+```
+// C4268.cpp
+// compile with: /c /LD /W4
+class X {
+public:
+   int m_data;
+};
+
+const X x1;   // C4268
+```
+
+Bu sınıf örneği olarak **const**, değerini `m_data` değiştirilemez.

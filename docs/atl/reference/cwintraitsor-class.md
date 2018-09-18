@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e837e15f934e53f7b1d06a94efb4a320f2e8407
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 48303c6115ac1d2314e3038556b8f98330a6182e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757900"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062676"
 ---
 # <a name="cwintraitsor-class"></a>CWinTraitsOR sınıfı
 
@@ -45,10 +45,10 @@ class CWinTraitsOR
 
 #### <a name="parameters"></a>Parametreler
 
-*t_dwStyle*  
+*t_dwStyle*<br/>
 Varsayılan pencere stilleri.
 
-*t_dwExStyle*  
+*t_dwExStyle*<br/>
 Genişletilmiş pencere stilleri varsayılan olarak.
 
 ## <a name="members"></a>Üyeler
@@ -82,7 +82,7 @@ static DWORD GetWndStyle(DWORD dwStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwStyle*  
+*dwStyle*<br/>
 Bir pencere oluşturmak için kullanılan stilleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -99,7 +99,7 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwExStyle*  
+*dwExStyle*<br/>
 Bir pencere oluşturmak için kullanılan genişletilmiş stiller.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -108,6 +108,6 @@ Geçirilir genişletilmiş stiller birleşimi *dwExStyle* ve tarafından belirti
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Pencere Özelliklerini Anlama](../../atl/understanding-window-traits.md)
 

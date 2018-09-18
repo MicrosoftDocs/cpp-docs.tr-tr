@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2cee2ce072f3dfe106434443ba28047cf7b58284
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4c81e8dcfde2a24c4a827406c3e499c12e891b2f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33237398"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068019"
 ---
 # <a name="compiler-error-c2794"></a>Derleyici Hatası C2794
-'function': 'sınıfının' herhangi doğrudan veya dolaylı olarak temel sınıf üyesi değil  
-  
- Kullanmaya çalıştığınız [Süper](../../cpp/super.md) varolmayan üye işlevi çağırmak için.  
-  
- Aşağıdaki örnek C2794 oluşturur  
-  
-```  
-// C2794.cpp  
-struct B {  
-   void mf();  
-};  
-  
-struct D : B {  
-   void mf() {  
-      __super::f();  // C2794  
-   }  
-};  
+
+'function': 'class' hiçbir doğrudan veya dolaylı taban sınıfının üyesi değil
+
+Kullanmaya çalıştığınız [Süper](../../cpp/super.md) var olmayan üye işlevi çağırmak için.
+
+Aşağıdaki örnek C2794 oluşturur
+
+```
+// C2794.cpp
+struct B {
+   void mf();
+};
+
+struct D : B {
+   void mf() {
+      __super::f();  // C2794
+   }
+};
 ```

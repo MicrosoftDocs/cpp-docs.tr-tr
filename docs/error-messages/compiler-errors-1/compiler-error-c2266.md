@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cada178ed73ff9388b5f86d5d20220b375971e3c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c6f28741d5ae090a497ce3ebc3a56f68fc87e1b0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168015"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067371"
 ---
 # <a name="compiler-error-c2266"></a>Derleyici Hatası C2266
-'tanımlayıcısı': Sabit olmayan sınırlanmış bir dizi başvurudur geçersiz  
-  
- Başvuru için bir dizi bağlı nonconstant ile bildirilir. Dizi sabit sınırları olması gerekir.
+
+'identifier': Sabit olmayan sınırlı bir diziye başvuru geçersizdir
+
+Başvuru için bir dizi bağlı bir nonconstant ile bildirilir. Dizi sabit sınırları olması gerekir.

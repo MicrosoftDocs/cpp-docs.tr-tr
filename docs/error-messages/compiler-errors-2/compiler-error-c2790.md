@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 11f1c90fed93666fad7513e2b4186a5baa2aa406
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dc2c6b238fab7e42c0754e613b62756a86a5bb31
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33232823"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069579"
 ---
 # <a name="compiler-error-c2790"></a>Derleyici Hatası C2790
-'Süper': Bu anahtar sözcüğü yalnızca sınıf üye işlevi gövdesi içinde kullanılabilir  
-  
- Bu hata iletisi görüntüleniyor kullanıcı herhangi bir zamanda çalışırsa kullanan anahtar sözcüğü [Süper](../../cpp/super.md) üye işlevi bağlamı dışında.  
-  
- Aşağıdaki örnek C2790 oluşturur:  
-  
-```  
-// C2790.cpp  
-void f() {  
-   __super::g();   // C2790  
-}  
+
+'super': Bu anahtar sözcük yalnızca sınıf üye işlevinin gövdesi içinde kullanılabilir
+
+Bu hata iletisi görünür kullanıcı hiç olmadığı kadar çalışırsa kullanan anahtar sözcüğü [Süper](../../cpp/super.md) bir üye işlevin bağlamı dışında.
+
+Aşağıdaki örnek, C2790 oluşturur:
+
+```
+// C2790.cpp
+void f() {
+   __super::g();   // C2790
+}
 ```

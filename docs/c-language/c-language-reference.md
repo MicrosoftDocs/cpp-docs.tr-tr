@@ -19,25 +19,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df262ab37c8b7e565a947819c2340c310711fa0c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cde4759b6148894a0ca963a7266355c5939c3051
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381193"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063209"
 ---
 # <a name="c-language-reference"></a>C Dili Başvurusu
-*C dil başvurusu* C programlama dili Microsoft C. içinde uygulandığı şekilde açıklar Kitaptaki kuruluş standart ANSI C için Microsoft uzantıları ek ortama ile ANSI (bazen C89 adlandırılır) C Standart dayanır.  
-  
--   [C Dili Başvurularının Organizasyonu](../c-language/organization-of-the-c-language-reference.md)  
-  
-C++ ve önişlemci ek başvuru bilgileri için bkz:  
-  
--   [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)  
-  
--   [Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)  
-  
-Derleyici ve bağlayıcı Seçenekleri bölümünde belgelenmiştir [C/C++ oluşturma başvurusu](../build/reference/c-cpp-building-reference.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
-[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
+
+*C dil başvurusu* C programlama dilini Microsoft C. içinde uygulandığı şekilde açıklar. Kitaptaki kuruluş, ANSI C standardı için Microsoft uzantıları ek malzemeler ile birlikte ANSI (bazen C89 adlandırılır) c standart dayanır.
+
+- [C Dili Başvurularının Organizasyonu](../c-language/organization-of-the-c-language-reference.md)
+
+C++ ve önişlemci hakkında referans materyalleri için bkz:
+
+- [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)
+
+- [Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)
+
+Derleyici ve bağlayıcı Seçenekleri bölümünde belgelenmiştir [C/C++ oluşturma başvurusu](../build/reference/c-cpp-building-reference.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)

@@ -17,52 +17,55 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5deee0209866580afd038fbce068a9275f5b5874
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 2de25452d708545481bdc4a65cab998930b2778e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406974"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068441"
 ---
 # <a name="novtable"></a>novtable
-## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Bu bir **__declspec** genişletilmiş öznitelik.  
-  
- Bu tür **__declspec** herhangi bir sınıf bildirimine uygulanabilir, ancak yalnızca saf arabirim sınıflarına, diğer bir deyişle, hiçbir zaman kendi başlarına örneği oluşturulur sınıfları uygulanmalıdır. **__Declspec** oluşturucularında ve yok edicisinde vfptr'yi başlatmak için kod oluşturma derleyicinin durdurur. Çoğu durumda bu, yalnızca sınıf ile ilişkili vtable başvurularını kaldırır ve böylece bağlayıcı onu kaldırır. Bu biçimi kullanarak **__declspec** kod boyutunda önemli azalmaya neden olabilir.  
-  
- İle işaretlenmiş bir sınıf örneği çalışırsanız **novtable** ve ardından bir sınıf üyesine erişim sağlarsanız, erişim ihlali (AV) alırsınız.  
-  
-## <a name="example"></a>Örnek  
-  
-```cpp 
-// novtable.cpp  
-#include <stdio.h>  
-  
-struct __declspec(novtable) X {  
-   virtual void mf();  
-};  
-  
-struct Y : public X {  
-   void mf() {  
-      printf_s("In Y\n");  
-   }  
-};  
-  
-int main() {  
-   // X *pX = new X();  
-   // pX->mf();   // Causes a runtime access violation.  
-  
-   Y *pY = new Y();  
-   pY->mf();  
-}  
-```  
-  
-```Output  
-In Y  
-```  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [__declspec](../cpp/declspec.md)   
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)
+
+## <a name="microsoft-specific"></a>Microsoft'a Özgü
+
+Bu bir **__declspec** genişletilmiş öznitelik.
+
+Bu tür **__declspec** herhangi bir sınıf bildirimine uygulanabilir, ancak yalnızca saf arabirim sınıflarına, diğer bir deyişle, hiçbir zaman kendi başlarına örneği oluşturulur sınıfları uygulanmalıdır. **__Declspec** oluşturucularında ve yok edicisinde vfptr'yi başlatmak için kod oluşturma derleyicinin durdurur. Çoğu durumda bu, yalnızca sınıf ile ilişkili vtable başvurularını kaldırır ve böylece bağlayıcı onu kaldırır. Bu biçimi kullanarak **__declspec** kod boyutunda önemli azalmaya neden olabilir.
+
+İle işaretlenmiş bir sınıf örneği çalışırsanız **novtable** ve ardından bir sınıf üyesine erişim sağlarsanız, erişim ihlali (AV) alırsınız.
+
+## <a name="example"></a>Örnek
+
+```cpp
+// novtable.cpp
+#include <stdio.h>
+
+struct __declspec(novtable) X {
+   virtual void mf();
+};
+
+struct Y : public X {
+   void mf() {
+      printf_s("In Y\n");
+   }
+};
+
+int main() {
+   // X *pX = new X();
+   // pX->mf();   // Causes a runtime access violation.
+
+   Y *pY = new Y();
+   pY->mf();
+}
+```
+
+```Output
+In Y
+```
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[__declspec](../cpp/declspec.md)<br/>
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

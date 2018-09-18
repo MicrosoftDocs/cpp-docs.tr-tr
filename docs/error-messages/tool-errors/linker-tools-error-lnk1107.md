@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fee2105cb0c12287cd2b47636f0e47011854a608
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 73a1643d10ea9adc6ac6979eb2de023593ba8d01
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298356"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060713"
 ---
 # <a name="linker-tools-error-lnk1107"></a>Bağlayıcı Araçları Hatası LNK1107
-geçersiz veya bozuk dosya: konumda okunamıyor  
-  
- Aracı dosyası okunamadı. Dosyayı yeniden oluşturun.  
-  
- LNK1107 bir modül geçirmeye çalışırsanız da oluşabilir (.dll veya .netmodule uzantısı ile oluşturulan [/clr:noAssembly](../../build/reference/clr-common-language-runtime-compilation.md) veya [/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md)) bağlayıcıya; bunun yerine .obj dosya geçirme.  
-  
- Aşağıdaki örnek derleme ise:  
-  
-```  
-// LNK1107.cpp  
-// compile with: /clr /LD  
-public ref class MyClass {  
-public:  
-   void Test(){}  
-};  
-```  
-  
- ve ardından belirtin **LNK1107.dll bağlantı** komut satırında LNK1107 alırsınız.  Hatayı gidermek için belirtmek **LNK1107.obj bağlantı** yerine.
+
+dosya geçersiz veya bozuk: konumda okunamıyor
+
+Araç dosyası okunamadı. Dosyayı yeniden oluşturun.
+
+LNK1107 bir modül geçirmeye çalışırsanız da olabilir (.dll veya .netmodule uzantısı ile oluşturulan [/clr:noAssembly](../../build/reference/clr-common-language-runtime-compilation.md) veya [noassembly](../../build/reference/noassembly-create-a-msil-module.md)) bağlayıcıya; bunun yerine .obj dosyasına geçirin.
+
+Aşağıdaki örnek derlerseniz:
+
+```
+// LNK1107.cpp
+// compile with: /clr /LD
+public ref class MyClass {
+public:
+   void Test(){}
+};
+```
+
+ve ardından belirtin **LNK1107.dll bağlantı** komut satırında LNK1107 alırsınız.  Hatayı gidermek için belirtin **LNK1107.obj bağlantı** yerine.

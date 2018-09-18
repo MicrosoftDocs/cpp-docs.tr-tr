@@ -15,26 +15,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b792bc02cf620cbd961830a99e35ae0c61898fed
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 34f8a45dfa9de9a5a48e13cb6a38f667e5963f2d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408694"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068552"
 ---
 # <a name="arrays-in-expressions"></a>İfadelerdeki Diziler
-Bir dizi türünde bir tanımlayıcısı göründüğünde bir ifadede dışında `sizeof`, adres (**&**), veya başlatma, bir başvurunun ilk dizi öğesinin işaretçisine dönüştürülür. Örneğin:  
-  
-```cpp 
-char szError1[] = "Error: Disk drive not ready.";  
-char *psz = szError1;  
-```  
-  
- `psz` işaretçisi `szError1` dizisinin ilk öğesine işaret eder. İşaretçilerin aksine, dizilerin değiştirilebilir I-değerleri olmadığına dikkat edin. Bu nedenle aşağıdaki atama geçersizdir:  
-  
-```cpp 
-szError1 = psz;  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Diziler](../cpp/arrays-cpp.md)
+
+Bir dizi türünde bir tanımlayıcısı göründüğünde bir ifadede dışında `sizeof`, adres (**&**), veya başlatma, bir başvurunun ilk dizi öğesinin işaretçisine dönüştürülür. Örneğin:
+
+```cpp
+char szError1[] = "Error: Disk drive not ready.";
+char *psz = szError1;
+```
+
+`psz` işaretçisi `szError1` dizisinin ilk öğesine işaret eder. İşaretçilerin aksine, dizilerin değiştirilebilir I-değerleri olmadığına dikkat edin. Bu nedenle aşağıdaki atama geçersizdir:
+
+```cpp
+szError1 = psz;
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Diziler](../cpp/arrays-cpp.md)

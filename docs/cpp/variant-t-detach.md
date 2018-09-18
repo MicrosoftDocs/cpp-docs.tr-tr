@@ -19,31 +19,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42fc4bd5186ade5efaa9c4fa8e9f567f37509039
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 4ab1e4f83025dcc3e4bc65274746e0617cf31b5b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42466013"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065029"
 ---
 # <a name="varianttdetach"></a>_variant_t::Detach
-**Microsoft'a özgü**  
-  
- Kapsüllenmiş ayırır `VARIANT` bu nesneden `_variant_t` nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-VARIANT Detach( );  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Kapsüllenmiş `VARIANT`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Ayıklar ve döndürür kapsüllenmiş `VARIANT`, bu temizler `_variant_t` yok olmadan nesne. Bu üye işlevi kaldırır `VARIANT` kapsülleme ve kümeleri `VARTYPE` bu `_variant_t` VT_EMPTY nesnesine. Döndürülen yayın size olan `VARIANT` çağırarak [VariantClear](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-variantclear) işlevi.  
-  
- **END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [_variant_t Sınıfı](../cpp/variant-t-class.md)
+
+**Microsoft'a özgü**
+
+Kapsüllenmiş ayırır `VARIANT` bu nesneden `_variant_t` nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+VARIANT Detach( );
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Kapsüllenmiş `VARIANT`.
+
+## <a name="remarks"></a>Açıklamalar
+
+Ayıklar ve döndürür kapsüllenmiş `VARIANT`, bu temizler `_variant_t` yok olmadan nesne. Bu üye işlevi kaldırır `VARIANT` kapsülleme ve kümeleri `VARTYPE` bu `_variant_t` VT_EMPTY nesnesine. Döndürülen yayın size olan `VARIANT` çağırarak [VariantClear](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-variantclear) işlevi.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[_variant_t Sınıfı](../cpp/variant-t-class.md)

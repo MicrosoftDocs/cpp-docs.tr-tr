@@ -16,49 +16,50 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 973b966e4b589cb35ffc92da9031779b14d448e3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1549a327329d438cb30bd6908e07419eb1b6bc1a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291121"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060843"
 ---
 # <a name="compiler-warning-level-3-c4101"></a>Derleyici Uyarısı (Düzey 3) C4101
-'tanımlayıcısı': başvurulmayan yerel değişken  
-  
- Yerel değişken asla kullanılmaz. Bu uyarı açık durumda ortaya çıkar:  
-  
-```  
-// C4101a.cpp  
-// compile with: /W3  
-int main() {  
-int i;   // C4101  
-}  
-```  
-  
- Ancak, bu uyarıyı çağrılırken oluşacaktır bir **statik** üye işlevi sınıfının bir örneği ile:  
-  
-```  
-// C4101b.cpp  
-// compile with:  /W3  
-struct S {  
-   static int func()  
-   {  
-      return 1;  
-   }  
-};  
-  
-int main() {  
-   S si;   // C4101, si is never used  
-   int y = si.func();  
-   return y;  
-}  
-```  
-  
- Bu durumda, derleyici hakkında bilgileri kullanır `si` erişimi **statik** işlevi, ancak sınıf örneği gerekli olmadığında çağırmak için **statik** işlev; bu nedenle uyarı. Bu uyarıyı çözmek için şunları yapabilir:  
-  
--   İçinde derleyici kullandığınız örneğini bir oluşturucu ekleyin `si` çağrısında `func`.  
-  
--   Kaldırma **statik** anahtar sözcüğü tanımından `func`.  
-  
--   Çağrı **statik** açıkça işlev: `int y = S::func();`.
+
+'identifier': başvurulmayan yerel değişken
+
+Yerel değişkeni hiçbir zaman kullanılmaz. Bu uyarı açık durumda gerçekleşir:
+
+```
+// C4101a.cpp
+// compile with: /W3
+int main() {
+int i;   // C4101
+}
+```
+
+Ancak, bu uyarı ayrıca çağırırken meydana gelir bir **statik** üye işlevi bir sınıf örneği ile:
+
+```
+// C4101b.cpp
+// compile with:  /W3
+struct S {
+   static int func()
+   {
+      return 1;
+   }
+};
+
+int main() {
+   S si;   // C4101, si is never used
+   int y = si.func();
+   return y;
+}
+```
+
+Bu durumda, derleyici hakkında bilgileri kullanır `si` erişimi **statik** işlevi ama sınıfın örneğini gerekli değil çağrılacak **statik** işlev; bu nedenle uyarı. Bu uyarıyı gidermek için şunları yapabilirsiniz:
+
+- Hangi derleyici kullandığınız örneği, bir oluşturucu ekleyin `si` çağrısında `func`.
+
+- Kaldırma **statik** anahtar sözcüğü tanımından `func`.
+
+- Çağrı **statik** açıkça işlev: `int y = S::func();`.

@@ -33,12 +33,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53a37083335c42d8042167e737b68ccad517fa00
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 0fa2c3b421aa0aa60194f8ed949c023d78b70c2d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756356"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070309"
 ---
 # <a name="csimplemap-class"></a>CSimpleMap sınıfı
 
@@ -47,19 +47,19 @@ Bu sınıf, bir basit eşleme dizisi için destek sağlar.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class TKey, class TVal, class TEqual = CSimpleMapEqualHelper<TKey, TVal>>  
+template <class TKey, class TVal, class TEqual = CSimpleMapEqualHelper<TKey, TVal>>
 class CSimpleMap
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*TKey*  
+*TKey*<br/>
 Anahtar öğe türü.
 
-*TVal*  
+*TVal*<br/>
 Değer öğe türü.
 
-*TEqual*  
+*TEqual*<br/>
 Türü öğeler için eşitlik testi tanımlamak bir nitelik nesnesi `T`.
 
 ## <a name="members"></a>Üyeler
@@ -124,10 +124,10 @@ BOOL Add(const TKey& key, const TVal& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Anahtar.
 
-*VAL*  
+*VAL*<br/>
 İlişkili değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -188,7 +188,7 @@ int FindKey(const TKey& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Aranacak anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -205,7 +205,7 @@ int FindVal(const TVal& val) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL*  
+*VAL*<br/>
 Aranacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -222,7 +222,7 @@ TKey& GetKeyAt(int nIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*  
+*nIndex*<br/>
 Anahtarı döndürülecek dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -255,7 +255,7 @@ TVal& GetValueAt(int nIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*  
+*nIndex*<br/>
 Döndürülecek değeri dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -276,7 +276,7 @@ TVal Lookup(const TKey& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -293,7 +293,7 @@ BOOL Remove(const TKey& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -322,7 +322,7 @@ BOOL RemoveAt(int nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*  
+*nIndex*<br/>
 Dizin anahtarı ve kaldırmak için ilişkili değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -339,7 +339,7 @@ TKey ReverseLookup(const TVal& val) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL*  
+*VAL*<br/>
 Değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -356,10 +356,10 @@ BOOL SetAt(const TKey& key, const TVal& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Anahtar.
 
-*VAL*  
+*VAL*<br/>
 Atanacak yeni değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -379,13 +379,13 @@ BOOL SetAtIndex(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*  
+*nIndex*<br/>
 Anahtar ve değer çifti değiştirmek için başvuran dizin.
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Yeni anahtar.
 
-*VAL*  
+*VAL*<br/>
 Yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri

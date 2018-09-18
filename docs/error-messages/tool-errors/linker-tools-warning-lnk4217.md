@@ -16,38 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 625f3a1b8a67f198b1cb4ca37bd1350229ec20db
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3c650eddd8078419f63df48cc91705d2e86eb5c8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300582"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067990"
 ---
 # <a name="linker-tools-warning-lnk4217"></a>Bağlayıcı Araçları Uyarısı LNK4217
-yerel olarak simgesi 'simgesi işlevi 'function' alındı' tanımlandı  
-  
- [__declspec(dllimport)](../../cpp/dllexport-dllimport.md) simgenin yerel olarak tanımlanan olsa bile bir simge için belirtildi. Kaldırma `__declspec` bu uyarıyı çözümlemek için değiştiricisi.  
-  
- `symbol` içindeki görüntü tanımlanmış sembol adıdır. `function` simgenin alma işlevdir.  
-  
- Bu uyarı seçeneğini kullanarak derlediğinizde görünmez [/CLR](../../build/reference/clr-common-language-runtime-compilation.md).  
-  
- İlk modülü içeri aktarma kitaplığını sahip ikinci modül yerine derleme yaparken iki modülleri birlikte, bağlantı girişimi LNK4217 de ortaya çıkabilir.  
-  
-```  
-// LNK4217.cpp  
-// compile with: /LD  
-#include "windows.h"  
-__declspec(dllexport) void func(unsigned short*) {}  
-```  
-  
- Ardından,  
-  
-```  
-// LNK4217b.cpp  
-// compile with: /c  
-#include "windows.h"  
-__declspec(dllexport) void func(unsigned short*) {}  
-```  
-  
- Bu iki modülleri bağlantı girişimi içinde LNK4217 neden, ikinci örneği çözümlemek için ilk örnek içeri aktarma kitaplığı ile derleyin.
+
+Sembol 'symbol' function 'işlevini alma işlemi yerel olarak tanımlanan
+
+[__declspec(dllimport)](../../cpp/dllexport-dllimport.md) sembolü sembol yerel olarak tanımlanan olsa bile belirtildi. Kaldırma `__declspec` bu uyarıyı çözmek için değiştiricisi.
+
+`symbol` görüntüyü içinde tanımlanmış sembol adıdır. `function` sembolü içeri aktarılırken işlevidir.
+
+Seçeneğini kullanarak derleme yaptığınızda bu uyarıyı görünmez [/CLR](../../build/reference/clr-common-language-runtime-compilation.md).
+
+İlk modülünün içeri aktarma kitaplığını sahip ikinci modül bunun yerine derleme yaptığınızda iki modül birbirine bağlamak çalışırsanız LNK4217 da meydana gelebilir.
+
+```
+// LNK4217.cpp
+// compile with: /LD
+#include "windows.h"
+__declspec(dllexport) void func(unsigned short*) {}
+```
+
+Ardından,
+
+```
+// LNK4217b.cpp
+// compile with: /c
+#include "windows.h"
+__declspec(dllexport) void func(unsigned short*) {}
+```
+
+Bu iki modül bağlantı girişimi LNK4217 neden, ikinci örnek gidermek için ilk örneğinin içeri aktarma kitaplığı ile derleme.

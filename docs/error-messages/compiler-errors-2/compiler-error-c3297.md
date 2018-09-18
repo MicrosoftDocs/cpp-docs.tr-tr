@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5afdf54e7a335dda86a4046a01b31875a0c91575
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7aa23cebc7ad7019c375c351f723b7ad1573ab86
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249372"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069841"
 ---
 # <a name="compiler-error-c3297"></a>Derleyici Hatası C3297
-'constraint_2': 'constraint_1' değer kısıtlaması olduğundan 'constraint_1' kısıtlama olarak kullanılamaz  
-  
- Değer sınıfları korumalıdır. Değer sınıfı bir kısıtlamadır, başka bir kısıtlama hiçbir zaman bu sınıftan türetilen.  
-  
- Daha fazla bilgi için bkz: [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3297 oluşturur.  
-  
-```  
-// C3297.cpp  
-// compile with: /clr /c  
-generic<class T, class U>  
-where T : value class  
-where U : T   // C3297  
-public ref struct R {};  
+
+'constraint_2': 'constraint_1' değer kısıtlaması olduğundan 'constraint_1' bir kısıtlama olarak kullanılamaz
+
+Değer sınıfları korumalıdır. Kısıtlama değer sınıfı, başka bir kısıtlama hiçbir zaman buradan türetebilirsiniz.
+
+Daha fazla bilgi için [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3297 oluşturur.
+
+```
+// C3297.cpp
+// compile with: /clr /c
+generic<class T, class U>
+where T : value class
+where U : T   // C3297
+public ref struct R {};
 ```

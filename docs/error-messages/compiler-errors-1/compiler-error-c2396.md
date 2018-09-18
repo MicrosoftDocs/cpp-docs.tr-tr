@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd9007d15cb5b6f9badf8f0962c8c1aa29df5bf7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0d69dfc1e296532f00ce9f44a178a366dca41e2e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197461"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061636"
 ---
 # <a name="compiler-error-c2396"></a>Derleyici Hatası C2396
-' your_type::operator'type'': CLR veya WinRT kullanıcı tanımlı dönüştürme functionnot geçerli. Dönüştür veya Dönüştür: 'T ^', 'T ^ %', 'T ^ &', burada T 'your_type' =  
-  
- Windows çalışma zamanı veya yönetilen türü dönüştürme işlevinde türü Dönüşüm işlevini içeren türü ile aynı olan en az bir parametre sahip değil.  
-  
- Aşağıdaki örnek C2396 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C2396.cpp  
-// compile with: /clr /c  
-  
-ref struct Y {  
-   static operator int(char c);   // C2396  
-  
-   // OK  
-   static operator int(Y^ hY);  
-   // or  
-   static operator Y^(char c);  
-};  
+
+' your_type::operator'type'': CLR veya WinRT kullanıcı tanımlı dönüştürme functionnot geçerli. Dönüştürmek veya Dönüştür: 'T ^', 'T ^ %', 'T ^ &', burada T = 'your_type'
+
+Bir Windows çalışma zamanı veya yönetilen türü bir dönüştürme işlevi türü dönüştürme işlevi içeren türle aynı olan en az bir parametre yok.
+
+Aşağıdaki örnek, C2396 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C2396.cpp
+// compile with: /clr /c
+
+ref struct Y {
+   static operator int(char c);   // C2396
+
+   // OK
+   static operator int(Y^ hY);
+   // or
+   static operator Y^(char c);
+};
 ```

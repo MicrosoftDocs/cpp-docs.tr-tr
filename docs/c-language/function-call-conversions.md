@@ -16,19 +16,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71b0fc4468ea98f04c87c8389021f2e12d9cae69
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c3a1a245511f0ab849c28ab9a03ba76903609643
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384502"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065666"
 ---
 # <a name="function-call-conversions"></a>İşlev Çağrısı Dönüşümleri
-Bir işlev çağrısındaki bağımsız değişkenlerde gerçekleştirilen dönüştürme işleminin türü, çağrılan işlev için bildirilen bağımsız değişken türlerine sahip bir işlev prototipinin (ileri dönük bildirim) olup olmamasına bağlıdır.  
-  
- Bir işlev prototipi bulunduğundan ve bildirilen bağımsız değişken türleri içeriyorsa, derleyici tür denetlemesi gerçekleştirir (bkz [işlevleri](../c-language/functions-c.md)).  
-  
- İşlev prototipi yoksa, işlev çağrısındaki bağımsız değişkenlerde yalnızca olağan aritmetik dönüştürmeler gerçekleştirilir. Bu dönüştürmeler, çağrıdaki her bağımsız değişkende bağımsız olarak gerçekleştirilir. Bunun anlamı bir **float** değeri için dönüştürülür bir **çift**; `char` veya **kısa** değeri için dönüştürülür bir `int`; ve bir `unsigned char` veya **kısa imzasız** dönüştürülür bir `unsigned int`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Tür Dönüştürmeleri](../c-language/type-conversions-c.md)
+
+Bir işlev çağrısındaki bağımsız değişkenlerde gerçekleştirilen dönüştürme işleminin türü, çağrılan işlev için bildirilen bağımsız değişken türlerine sahip bir işlev prototipinin (ileri dönük bildirim) olup olmamasına bağlıdır.
+
+Bir işlev prototipi varsa ve bildirilen bağımsız değişken türlerini içeriyorsa, derleyici tür denetimi gerçekleştirir (bkz [işlevleri](../c-language/functions-c.md)).
+
+İşlev prototipi yoksa, işlev çağrısındaki bağımsız değişkenlerde yalnızca olağan aritmetik dönüştürmeler gerçekleştirilir. Bu dönüştürmeler, çağrıdaki her bağımsız değişkende bağımsız olarak gerçekleştirilir. Diğer bir deyişle bir **float** değerinin bir **çift**; `char` veya **kısa** değerinin bir `int`; ve bir `unsigned char` veya **işaretsiz** dönüştürülür bir `unsigned int`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Tür Dönüştürmeleri](../c-language/type-conversions-c.md)

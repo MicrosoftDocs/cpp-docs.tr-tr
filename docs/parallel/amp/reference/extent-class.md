@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8399eed2c047c10a0a78b1cd944dba7b2d1da97e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 59600343a06a2c3c0d4f5b55efadaa09c43452d9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102111"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067707"
 ---
 # <a name="extent-class-c-amp"></a>extent Sınıfı (C++ AMP)
 Oluşan bir vektörü temsil eder *N* uzayın sınırlarını belirten bir tamsayı değerleri bir *N*-kaynağı 0 olan boyutlu boşluk. Vektördeki değerler en önemliden en az önemliye doğru sıralanır.
@@ -40,7 +40,7 @@ class extent;
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Rank`  
+*_Dizin*<br/>
 Boyut sayısı `extent` nesne.
 
 ## <a name="requirements"></a>Gereksinimler
@@ -102,7 +102,7 @@ bool contains(const index<rank>& _Index) const restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Index`  
+*_Index*<br/>
 `index` Test etmek için değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -124,22 +124,22 @@ explicit extent(const int _Array[_Rank])restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Array`  
+*_Dizisi*<br/>
 Bir dizi `_Rank` yeni oluşturmak için kullanılan tamsayılar `extent` nesne.
 
-`_I`  
+*_I*<br/>
 Kapsamın uzunluğu.
 
-`_I0`  
+*_I0*<br/>
 En önemli boyutun uzunluğu.
 
-`_I1`  
+*_I1*<br/>
 Sonraki-en-önemli boyutun uzunluğu.
 
-`_I2`  
+*_I2*<br/>
 En az önemli boyutun uzunluğu.
 
-`_Other`  
+*_Diğer*<br/>
 Bir `extent` nesne yeni `extent` nesne dayanır.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -158,7 +158,7 @@ extent<_Rank>& operator%=(int _Rhs) restrict(cpu, direct3d);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Rhs`  
+*_Rhs*<br/>
 Modüllerini bulunacak sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -175,7 +175,7 @@ extent<_Rank>& operator*=(int _Rhs) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Rhs`  
+*_Rhs*<br/>
 Çarpılacağı sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -192,7 +192,7 @@ extent<_Rank> operator+(const index<_Rank>& _Rhs) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Rhs`  
+*_Rhs*<br/>
 `index` Eklenecek öğeleri içeren nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -225,7 +225,7 @@ extent<_Rank>& operator+=(int _Rhs) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Rhs`  
+*_Rhs*<br/>
 Sayı, dizin veya kapsam eklemek için.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -242,7 +242,7 @@ extent<_Rank> operator-(const index<_Rank>& _Rhs) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Rhs`  
+*_Rhs*<br/>
 `index` Çıkarılacak öğeleri içeren nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -273,7 +273,7 @@ extent<_Rank>& operator/=(int _Rhs) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Rhs`  
+*_Rhs*<br/>
 Bölecek sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -292,7 +292,7 @@ extent<_Rank>& operator-=(int _Rhs) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Rhs`  
+*_Rhs*<br/>
 Çıkarılacak sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -309,7 +309,7 @@ extent<_Rank>& operator=(const extent<_Rank>& _Other) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Other`  
+*_Diğer*<br/>
 `extent` Kopyalanacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -326,7 +326,7 @@ int& operator[](unsigned int _Index) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Index`  
+*_Index*<br/>
 0 ile boyut sayısı eksi 1 arasında bir tamsayı.
 
 ### <a name="return-value"></a>Dönüş Değeri

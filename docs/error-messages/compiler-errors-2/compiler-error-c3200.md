@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6aa34ea006b06138290417387bd393589b630aa4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 77be23b92d5237d2fa65557bdf36de31cd27d9d3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33251313"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062650"
 ---
 # <a name="compiler-error-c3200"></a>Derleyici Hatası C3200
-'şablon': 'parametresi' şablon parametresi için geçersiz şablon bağımsız değişken beklenen bir sınıf şablonu  
-  
- Sınıf şablonu için geçersiz bağımsız değişken geçirildi. Sınıf şablonu şablon bir parametre bekler. Aşağıdaki örnekte, çağırma `Y<int, int> aY` C3200 oluşturur. İlk parametre gibi bir şablon olması gereken `Y<X, int> aY`.  
-  
-```  
-// C3200.cpp  
-template<typename T>  
-class X  
-{  
-};  
-  
-template<template<typename U> class T1, typename T2>  
-class Y  
-{  
-};  
-  
-int main()  
-{  
-   Y<int, int> y;   // C3200  
-}  
+
+'şablon': şablon parametresi 'parametresi' için geçersiz şablon bağımsız değişkeni; sınıf şablonu bekleniyor
+
+Bir sınıf şablonu için geçersiz bağımsız değişken geçirildi. Sınıf şablonunun şablon parametre olarak bekler. Aşağıdaki örnekte, çağırma `Y<int, int> aY` C3200 oluşturur. İlk parametre, bir şablon gibi olması gereken `Y<X, int> aY`.
+
+```
+// C3200.cpp
+template<typename T>
+class X
+{
+};
+
+template<template<typename U> class T1, typename T2>
+class Y
+{
+};
+
+int main()
+{
+   Y<int, int> y;   // C3200
+}
 ```

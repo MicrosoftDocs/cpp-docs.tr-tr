@@ -17,43 +17,45 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90a6334ae0c00378f5162274dab499f3cb10bc3e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 187c176aa90997e4841bc22e468fab079f9e8b2a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32386936"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062767"
 ---
 # <a name="recursive-functions"></a>Özyinelemeli İşlevler
-C programındaki herhangi bir işlev özyinelemeli olarak çağrılabilir; diğer bir deyişle, kendisini çağırabilir. Özyinelemeli çağrıların sayısı, yığının boyutuyla sınırlıdır. Bkz: [/STACK (yığın ayırmaları)](../build/reference/stack-stack-allocations.md) (/ yığın) bağlayıcı hakkında bilgi için bağlayıcı seçeneği seçenekleri yığın boyutunu Ayarla. İşlevi çağrıldığında, her seferinde yeni bir depolama birimi ve parametreleri için ayrılan **otomatik** ve **kaydetmek** değişkenleri böylece önceki, tamamlanmamış çağrıları değerleri geçersiz kılınmaz. Parametrelere, yalnızca oluşturuldukları işlevin örneği doğrudan erişebilir. Önceki parametrelere, işlevin sonraki örnekleri tarafından doğrudan erişilemez.  
-  
- Değişkenleri ile bildirilen Not **statik** depolama her özyinelemeli çağrısı ile yeni bir depolama birimi gerektirmez. Depolama alanları, programın ömrü boyunca kullanılır. Böyle bir değişkene yapılan her başvuru aynı depolama alanına erişir.  
-  
-## <a name="example"></a>Örnek  
- Bu örnekte, özyinelemeli aramalar gösterilmektedir:  
-  
-```  
-int factorial( int num );      /* Function prototype */  
-  
-int main()  
-{  
-    int result, number;  
-    .  
-    .  
-    .  
-    result = factorial( number );  
-}  
-  
-int factorial( int num )      /* Function definition */  
-{  
-    .  
-    .  
-    .  
-    if ( ( num > 0 ) || ( num <= 10 ) )  
-        return( num * factorial( num - 1 ) );  
-}  
-  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşlev Çağrıları](../c-language/function-calls.md)
+
+C programındaki herhangi bir işlev özyinelemeli olarak çağrılabilir; diğer bir deyişle, kendisini çağırabilir. Özyinelemeli çağrıların sayısı, yığının boyutuyla sınırlıdır. Bkz: [/STACK (yığın ayırmaları)](../build/reference/stack-stack-allocations.md) (/ yığın) bağlayıcı seçeneği bağlayıcı hakkında bilgi için yığın boyutunu Ayarla seçenekleri. İşlevin çağrıldığı her zaman yeni bir depolama birimi ve parametreler için ayrılan **otomatik** ve **kaydetme** değişkenleri böylece değerlerini önceki, tamamlanmamış çağrılarındaki değerlerin üzerine. Parametrelere, yalnızca oluşturuldukları işlevin örneği doğrudan erişebilir. Önceki parametrelere, işlevin sonraki örnekleri tarafından doğrudan erişilemez.
+
+Not ile bildirilen değişkenlerin **statik** depolama, her Özyinelemeli çağrı ile yeni depolama alanı gerektirmez. Depolama alanları, programın ömrü boyunca kullanılır. Böyle bir değişkene yapılan her başvuru aynı depolama alanına erişir.
+
+## <a name="example"></a>Örnek
+
+Bu örnekte, özyinelemeli aramalar gösterilmektedir:
+
+```C
+int factorial( int num );      /* Function prototype */
+
+int main()
+{
+    int result, number;
+    .
+    .
+    .
+    result = factorial( number );
+}
+
+int factorial( int num )      /* Function definition */
+{
+    .
+    .
+    .
+    if ( ( num > 0 ) || ( num <= 10 ) )
+        return( num * factorial( num - 1 ) );
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İşlev Çağrıları](../c-language/function-calls.md)

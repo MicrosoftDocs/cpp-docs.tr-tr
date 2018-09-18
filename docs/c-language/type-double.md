@@ -17,21 +17,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0eb8fb3952b1825bff730d5d22222b56cdb4ecf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d3384c801f4ed7424711b0f51a42706650b75c41
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387349"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062052"
 ---
 # <a name="type-double"></a>Tür double
-Double türündeki çift duyarlıklı değerler 8 bayta sahiptir. Biçim, 11 bit fazladan 1023 üssü, 52 bit mantisi ve 1 bit üst sırası olması dışında kayan biçime benzerdir. Bu biçim yaklaşık 1.7E aralığı sunar-308 1.7E + 308 double türü için.  
-  
- **Microsoft özel**  
-  
- Double türü 64 bit içerir: işaret için 1, üs için 11 ve mantis için 52. Kendi 1.7E308 +/-ile en az 15 basamağa duyarlık arasındadır.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Temel Türleri Depolama](../c-language/storage-of-basic-types.md)
+
+Double türündeki çift duyarlıklı değerler 8 bayta sahiptir. Biçim, 11 bit fazladan 1023 üssü, 52 bit mantisi ve 1 bit üst sırası olması dışında kayan biçime benzerdir. Bu biçim bir dizi yaklaşık 1.7E sunar-308 ila 1.7E + 308 double türü için.
+
+**Microsoft'a özgü**
+
+Double türü 64 bit içerir: işaret için 1, üs için 11 ve mantis için 52. Kendi +/-1.7E308 en az 15 duyarlılık basamağıyla ile rozsah.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Temel Türleri Depolama](../c-language/storage-of-basic-types.md)

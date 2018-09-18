@@ -16,40 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d30a7fbb50a984c8cec6b45a0ab4759a0578de7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 99bdac5ffb75978479ae7ef420a48b3d1b2f8e64
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245459"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063677"
 ---
 # <a name="compiler-error-c3012"></a>Derleyici Hatası C3012
-  
-> '*iç*': doğrudan paralel bir bölge içinde izin verilmiyor iç işlevi  
-  
- A [iç derleyici](../../intrinsics/compiler-intrinsics.md) işlevi izin verilmeyen bir `omp parallel` bölge. Bu sorunu gidermek için yapı bölgesinin dışına taşıyın veya iç olmayan eşdeğerleriyle değiştirin.   
-  
-## <a name="example"></a>Örnek  
-  
- Aşağıdaki örnek C3012 oluşturur ve bu düzeltmenin bir yolu gösterir:  
-  
-```cpp  
-// C3012.cpp  
-// compile with: /openmp  
-#ifdef __cplusplus  
-extern "C" {  
-#endif  
-void* _ReturnAddress();  
-#ifdef __cplusplus  
-}  
-#endif  
-  
-int main()  
-{  
-   #pragma omp parallel  
-   {  
-      _ReturnAddress();   // C3012  
-   }  
-   _ReturnAddress();      // OK  
-}  
+
+> '*iç*': iç işlev doğrudan bir paralel bölgenin içinde izin verilmiyor
+
+A [iç derleyici](../../intrinsics/compiler-intrinsics.md) işlevine izin verilmiyor bir `omp parallel` bölge. Bu sorunu gidermek için yapı içleri bölgesinin dışına taşıyın veya bunları iç olmayan eşdeğerleriyle değiştirin.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3012 oluşturur ve bunu çözmenin yollarından biri gösterilmektedir:
+
+```cpp
+// C3012.cpp
+// compile with: /openmp
+#ifdef __cplusplus
+extern "C" {
+#endif
+void* _ReturnAddress();
+#ifdef __cplusplus
+}
+#endif
+
+int main()
+{
+   #pragma omp parallel
+   {
+      _ReturnAddress();   // C3012
+   }
+   _ReturnAddress();      // OK
+}
 ```

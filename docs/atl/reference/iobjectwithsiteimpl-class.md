@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1684c8fa380a7d17c802ad404c38c59f2257c979
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: eea09c8490bd2b34cc4c5cd99946d0d9dca7a44c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752033"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068220"
 ---
 # <a name="iobjectwithsiteimpl-class"></a>Iobjectwithsiteımpl sınıfı
 
@@ -42,7 +42,7 @@ template <class T>
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `IObjectWithSiteImpl`.
 
 ## <a name="members"></a>Üyeler
@@ -117,7 +117,7 @@ HRESULT SetChildSite(IUnknown* pUnkSite);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnkSite*  
+*pUnkSite*<br/>
 [in] İşaretçi `IUnknown` arayüz işaretçisinden bir sitenin bu nesne yönetme. NULL ise, nesne çağırmalıdır `IUnknown::Release` herhangi bir mevcut sitede hangi noktada nesne artık kendi site bilir.
 
 ### <a name="return-value"></a>Dönüş Değeri

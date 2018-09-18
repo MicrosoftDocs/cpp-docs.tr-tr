@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 403ebce4fdb8b3ff8cf014c27cfc6ec988a1a897
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b1a22bfce625001c4e8130fa9ab7a9954d0cb0fd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245116"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068786"
 ---
 # <a name="compiler-error-c2953"></a>Derleyici Hatası C2953
-'tanımlayıcısı': sınıf şablonu zaten tanımlandı  
-  
- Kaynak dosyayı denetleyin ve dosyaları diğer tanımlarını içerir.  
-  
- Aşağıdaki örnek C2953 oluşturur:  
-  
-```  
-// C2953.cpp  
-// compile with: /c  
-template <class T>  class A {};  
-template <class T>  class A {};   // C2953  
-template <class T>  class B {};   // OK  
+
+'identifier': sınıf şablonu zaten tanımlanmış
+
+Kaynak dosyasını denetleyin ve diğer tanımları için dosyaları içerir.
+
+Aşağıdaki örnek, C2953 oluşturur:
+
+```
+// C2953.cpp
+// compile with: /c
+template <class T>  class A {};
+template <class T>  class A {};   // C2953
+template <class T>  class B {};   // OK
 ```

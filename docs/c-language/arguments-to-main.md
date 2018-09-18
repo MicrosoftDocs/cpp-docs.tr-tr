@@ -12,35 +12,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 544b5eaba49fff0a5f2b3111c2a5f7fe42c9b2ee
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 98216f9e7354d9699bcaf74430028c88130c97e6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382500"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060908"
 ---
 # <a name="arguments-to-main"></a>main Bağımsız Değişkenleri
-**ANSI 2.1.2.2.1** main bağımsız değişkenleri semantiği  
-  
- Microsoft C programı başlangıçta çağrılan işlev çağrılır **ana**. İçin bildirilen hiçbir prototip yoktur **ana**, ve sıfır, iki veya üç parametrelerle tanımlanabilir:  
-  
-```  
-int main( void )  
-int main( int argc, char *argv[] )  
-int main( int argc, char *argv[], char *envp[] )  
-```  
-  
- Üçüncü satır yukarıda, where **ana** üç parametre kabul eder, ANSI C standart bir Microsoft uzantısıdır. Üçüncü parametre **envp**, ortam değişkenleri işaretçiler dizisidir. **Envp** dizi null işaretçinin tarafından sonlandırıldı. Bkz: [main işlevi ve Program yürütme](../c-language/main-function-and-program-execution.md) hakkında daha fazla bilgi için **ana** ve **envp**.  
-  
- Değişkeni **argc** hiçbir zaman negatif bir değer içerir.  
-  
- Dize dizisi bitip ile **argv [argc]**, boş bir işaretçi içeriyor.  
-  
- Tüm öğeleri **argv** dizi dizeleri işaretçileri olan.  
-  
- Komut satırı bağımsız değişkenler olmadan çağrılan bir program için bir tane değerini alacak **argc**yürütülebilir dosyanın adını yerleştirilir gibi **argv [0]**. (3.0'dan önceki MS-DOS sürümlerinde, yürütülebilir dosya adı kullanılamaz. "C" harf yerleştirilir **argv [0]**.) Tarafından için dizeleri işaret **argv [1]** aracılığıyla **argv [argc - 1]** program parametreleri temsil eder.  
-  
- Parametreleri **argc** ve **argv** değiştirilebilir ve program başlatma ve program sonlandırma arasında son depolanan değerlerini korur.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Ortam](../c-language/environment.md)
+
+**ANSI 2.1.2.2.1** Main bağımsız değişkenlerin semantiği
+
+Microsoft C'de, program başlangıcında çağrılan işlev çağrılırsa **ana**. İçin bildirilen prototip yoktur **ana**, ve sıfır, iki veya üç parametreyle tanımlanabilir:
+
+```
+int main( void )
+int main( int argc, char *argv[] )
+int main( int argc, char *argv[], char *envp[] )
+```
+
+Ettiği yukarıdaki üçüncü satır **ana** üç parametre kabul eder, ANSI C standardının bir Microsoft uzantısıdır. Üçüncü parametre **envp**, ortam değişkenlerine bir işaretçiler dizisidir. **Envp** dizisi, null işaretçisi tarafından sonlandırılır. Bkz: [main işlevi ve Program yürütme](../c-language/main-function-and-program-execution.md) hakkında daha fazla bilgi için **ana** ve **envp**.
+
+Değişken **argc** hiçbir zaman negatif bir değer içermez.
+
+Dize dizisi ile sona erer **argv [argc]**, null bir işaretçi içerir.
+
+Tüm öğeleri **argv** dizi dizelerin işaretçileridir.
+
+Hiçbir komut satırı bağımsız değişkeni olmadan çağrılan bir program için bir değerini alırsınız **argc**, yürütülebilir dosyanın adını içine yerleştirileceğinden **argv [0]**. (3.0'dan önceki MS-DOS sürümlerinde, yürütülebilir dosya adı kullanılamaz. "C" harfi yerleştirilir **argv [0]**.) Dizeleri tarafından işaret edilen **argv [1]** aracılığıyla **argv [argc - 1]** program parametrelerini temsil eder.
+
+Parametreleri **argc** ve **argv** değiştirilebilir ve program başlangıcı ve program arasındaki depolanan son değerlerini korur.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Ortam](../c-language/environment.md)

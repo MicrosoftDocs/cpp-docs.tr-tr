@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 223d781e879f2d1c3a35fce00e788a42247299eb
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8369afbbf423f85df0e38f7f2979b3b7e48f8591
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760103"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067928"
 ---
 # <a name="cstringrefelementtraits-class"></a>CStringRefElementTraits sınıfı
 
@@ -34,13 +34,13 @@ Bu sınıf, koleksiyon sınıfı nesnelerini içinde depolanan dizeleri ilgili s
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <typename T>  
+template <typename T>
 class CStringRefElementTraits : public CElementTraitsBase<T>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Koleksiyonda depolanacak veri türü.
 
 ## <a name="members"></a>Üyeler
@@ -79,10 +79,10 @@ static bool CompareElements(INARGTYPE element1, INARGTYPE element2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*element1*  
+*element1*<br/>
 İlk dize öğesi.
 
-*element2*  
+*element2*<br/>
 İkinci dize öğesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -99,10 +99,10 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*str1*  
+*str1*<br/>
 İlk dize öğesi.
 
-*str2*  
+*str2*<br/>
 İkinci dize öğesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -119,7 +119,7 @@ static ULONG Hash(INARGTYPE str) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*str*  
+*str*<br/>
 Dize öğesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -128,5 +128,5 @@ Dizenin içeriklerini kullanarak hesaplanan bir karma değer döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CElementTraitsBase sınıfı](../../atl/reference/celementtraitsbase-class.md)   
+[CElementTraitsBase Sınıfı](../../atl/reference/celementtraitsbase-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 266e377a917fe3ce9ae7bae228134f49384e15cb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e214f603c31c72533d81a140023363880532191c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302678"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068077"
 ---
 # <a name="linker-tools-warning-lnk4010"></a>Bağlayıcı Araçları Uyarısı LNK4010
-Geçersiz alt sürüm numarası numarası; kabul varsayılan alt sürümü  
-  
- Görüntünün alt sistemi için bir sürüm belirtin ([/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md)). Her alt sistemi en düşük sürüm gereksinimini sahiptir. Belirtilen sürüm en küçük değerinden daha düşük ise, bu uyarıyı ortaya çıkar ve bağlayıcı yalnızca varsayılan alt sistemi kullanır.
+
+Geçersiz alt sistem sürüm numarası numarası; varsayılan alt sistem sürümü kabul edildi
+
+Görüntünün alt sistemi için bir sürüm belirtebilirsiniz ([/Subsystem](../../build/reference/subsystem-specify-subsystem.md)). Her alt sistemin en düşük sürüm gereksinimi vardır. Belirtilen sürümü en küçük değerinden daha küçük, bu uyarı oluşur ve bağlayıcı, yalnızca varsayılan alt sistemi kullanır.

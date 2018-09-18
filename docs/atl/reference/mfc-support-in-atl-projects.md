@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb6a3c5bae4d973ba74155ab018ebea69b0e2b93
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f3853bbe90757563f6c7dc2c9003ed7c5f2a98dc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751406"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065445"
 ---
 # <a name="mfc-support-in-atl-projects"></a>ATL projelerinde MFC desteği
 
@@ -29,40 +29,40 @@ Seçerseniz **destek MFC** ATL Proje Sihirbazı'nda uygulamayı bir MFC uygulama
 
 Bu seçenek yalnızca nonattributed ATL DLL projelerinde kullanılabilir.
 
-```  
-class CProjNameApp : public CWinApp  
-{  
+```
+class CProjNameApp : public CWinApp
+{
 public:  
 
 // Overrides  
     virtual BOOL InitInstance();
 virtual int ExitInstance();
-DECLARE_MESSAGE_MAP() 
+DECLARE_MESSAGE_MAP()
 };  
 
-BEGIN_MESSAGE_MAP(CProjNameApp, CWinApp)  
+BEGIN_MESSAGE_MAP(CProjNameApp, CWinApp)
 END_MESSAGE_MAP()  
 
 CProjNameApp theApp;  
 
-BOOL CProjNameApp::InitInstance()  
+BOOL CProjNameApp::InitInstance()
 {  
     return CWinApp::InitInstance();
 
 }  
 
-int CProjNameApp::ExitInstance()  
+int CProjNameApp::ExitInstance()
 {  
     return CWinApp::ExitInstance();
 
-}  
+}
 ```
 
 Uygulama nesnesi sınıfı görüntüleyebilir ve `InitInstance` ve `ExitInstance` Sınıf Görünümü'nde işlevleri.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)   
-[ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)   
+[Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
+[ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)<br/>
 [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
 

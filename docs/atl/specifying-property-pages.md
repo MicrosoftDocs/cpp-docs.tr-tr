@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b93a93b545d03875167ccd641fa3e0867c371a8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: db0445e83bbcae6baa45d4a482489e6761fa945a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759378"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069436"
 ---
 # <a name="specifying-property-pages"></a>Özellik sayfaları belirtme
 
@@ -49,6 +49,6 @@ Uyum gösteren kapsayıcıları aynı sırada özellik eşlemesi PROP_PAGE giri�
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Özellik sayfaları](../atl/atl-com-property-pages.md)   
+[Özellik Sayfaları](../atl/atl-com-property-pages.md)<br/>
 [ATLPages örnek](../visual-cpp-samples.md)
 

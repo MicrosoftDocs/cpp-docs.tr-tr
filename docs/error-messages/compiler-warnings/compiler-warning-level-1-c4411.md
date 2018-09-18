@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb2a826103bd7055a9655c75b82a58fcf53b1d42
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eff4520c86332b3d547568fd643debdcdb61bf45
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33278171"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060830"
 ---
 # <a name="compiler-warning-level-1-c4411"></a>Derleyici Uyarısı (düzey 1) C4411
-'tanımlayıcısı': sembol öteleme kasaya çözümler  
-  
- Bir öteleme kasaya çözümler ve bu nedenle başka bir simge ile işleneni üzerinde kullanılabilir yerel bir sembol tanımlayıcısıdır.
+
+'identifier': simge yazmacını çözümlüyor
+
+Bir öteleme kasaya çözümler ve başka bir simge ile bir işlenen üzerinde kullanılabilir bir yerel sembol tanımlayıcısıdır.

@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19890e290c98fd9602d755ad35f9d47204bd6c24
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e0a83c62bedf995708d5e99fee19f05696d05c2d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316562"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065705"
 ---
 # <a name="nmake-fatal-error-u1056"></a>NMAKE Önemli Hatası U1056
-Komut işlemcisi bulunamıyor  
-  
- Komut işlemcisi, belirtilen yolu değildi **COMSPEC** veya **yolu** ortam değişkenleri.  
-  
- NMAKE COMMAND.COM veya cmd kullanır EXE komutları yürütülürken zaman Komut işlemcisi olarak. Komut işlemcisi için ilk kümesinde yolundaki görünüyor **COMSPEC**. Varsa **COMSPEC** yok, dizinleri belirtilen NMAKE aramaları **yolu**.
+
+Komut işlemcisi bulunamıyor
+
+Komut işleyicisi, belirtilen yolu değildi **COMSPEC** veya **yolu** ortam değişkenleri.
+
+NMAKE Command.COM'DUR veya CMD'yi kullanır. EXE komutları yürütülürken bir komut işlemcisini olarak. Komut işleyici için ilk kümesinde yolunda görünüyor **COMSPEC**. Varsa **COMSPEC** yok, dizinleri belirtilen NMAKE aramaları **yolu**.

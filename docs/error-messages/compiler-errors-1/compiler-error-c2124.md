@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79936fc45e2dbf7fc7af4bfe64cf3fc92512122b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7810565a8f7bfdac49f2c53815b9063e2e034df7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33167859"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062330"
 ---
 # <a name="compiler-error-c2124"></a>Derleyici Hatası C2124
-bölme ya da sıfıra mod  
-  
- Bir sabit ifadesine bir sıfır payda sahiptir. Hatayı gidermek için sıfıra bölünme değil.  
-  
- Aşağıdaki örnek C2124 oluşturur:  
-  
-```  
-// C2124.cpp  
-int main() {  
-  int i = 1 / 0;   // C2124  do not divide by zero  
-  int i2 = 12 / 2;   // OK  
-}  
+
+bölme veya mod alma sıfıra
+
+Bir sabit ifade bir sıfır paydası sahiptir. Hatayı gidermek için sıfır bölmeyin.
+
+Aşağıdaki örnek, C2124 oluşturur:
+
+```
+// C2124.cpp
+int main() {
+  int i = 1 / 0;   // C2124  do not divide by zero
+  int i2 = 12 / 2;   // OK
+}
 ```

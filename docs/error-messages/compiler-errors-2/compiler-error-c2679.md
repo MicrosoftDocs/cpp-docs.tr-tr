@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24a304d88ccc6044c5358759efffa2a38dfeaf67
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a01a79dfdff06c50b65bde33de62676e6df64a82
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231819"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069501"
 ---
 # <a name="compiler-error-c2679"></a>Derleyici Hatası C2679
-İkili 'işleci': işleç bulundu 'type' türündeki sağ işleneni aldığı (veya kabul edilebilir bir dönüştürme yok)  
-  
- İşleç kullanmak için belirtilen tür için aşırı yükleme veya işleci tanımlandığı bir türe dönüştürme tanımlayın.  
-  
- Aşağıdaki örnek C2679 oluşturur:  
-  
-```  
-// C2679.cpp  
-class C {  
-public:  
-   C();   // no constructor with an int argument  
-} c;  
-  
-class D {  
-public:  
-   D(int) {}  
-   D(){}  
-} d;  
-  
-int main() {  
-   c = 10;   // C2679  
-   d = 10;   // OK  
-}  
+
+İkili 'operator': 'type' türünde bir sağ işleneni alan hiçbir işleç bulunamadı (veya hiç kabul edilebilir dönüştürme yok)
+
+İşlecini kullanmak için belirtilen tür için aşırı veya tanımlar işlecin tanımlandığı bir türe dönüştürmeyi gerekir.
+
+Aşağıdaki örnek, C2679 oluşturur:
+
+```
+// C2679.cpp
+class C {
+public:
+   C();   // no constructor with an int argument
+} c;
+
+class D {
+public:
+   D(int) {}
+   D(){}
+} d;
+
+int main() {
+   c = 10;   // C2679
+   d = 10;   // OK
+}
 ```

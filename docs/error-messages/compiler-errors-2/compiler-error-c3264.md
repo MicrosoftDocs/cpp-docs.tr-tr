@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6404b2b83381bc29283232b9d2587bef7cb27bb9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 17dadf343cd342db4f18791882078cf46e5cc251
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252503"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063404"
 ---
 # <a name="compiler-error-c3264"></a>Derleyici Hatası C3264
-'class': bir sınıf oluşturucu bir dönüş türüne sahip olamaz  
-  
-Sınıf oluşturucuları dönüş türleri olamaz.  
-  
-Aşağıdaki örnek C3264 oluşturur:  
-  
-```  
-// C3264_2.cpp  
-// compile with: /clr  
-  
-ref class X {  
-   public:  
-      static int X()   { // C3264  
-      }  
-  
-      /* use the code below to resolve the error  
-      static X() {  
-      }  
-      */  
-};  
-int main() {  
-}  
-```  
+
+'class': sınıf oluşturucusu bir dönüş türü olamaz
+
+Sınıf Oluşturucular, dönüş türleri olamaz.
+
+Aşağıdaki örnek, C3264 oluşturur:
+
+```
+// C3264_2.cpp
+// compile with: /clr
+
+ref class X {
+   public:
+      static int X()   { // C3264
+      }
+
+      /* use the code below to resolve the error
+      static X() {
+      }
+      */
+};
+int main() {
+}
+```

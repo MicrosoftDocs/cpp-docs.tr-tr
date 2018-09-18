@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa2d0fc361f1cf5ba5355ca11ce86279ebd3575f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8e4dae59f686a1d2fe9f80a4f3f4c47ea6b7ea2d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195639"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065484"
 ---
 # <a name="compiler-error-c2380"></a>Derleyici Hatası C2380
-'tanımlayıcısı' (oluşturucu dönüş türü veya geçerli sınıf adı geçersiz yeniden tanımlama?) önceki türleri  
-  
- Oluşturucu bir değer döndürür veya sınıf adı yeniden tanımlamaktadır.  
-  
- Aşağıdaki örnek C2326 oluşturur:  
-  
-```  
-// C2380.cpp  
-// compile with: /c  
-class C {  
-public:  
-   int C();   // C2380, specifies an int return  
-   int C;   // C2380, redefinition of i  
-   C();   // OK  
-};  
+
+'identifier' (oluşturucu dönüş türü veya sınıf adının geçerli adlının yeniden tanımlanması geçersiz?) önceki türleri
+
+Bir oluşturucu, bir değer döndürür veya sınıf adı yeniden tanımlar.
+
+Aşağıdaki örnek, C2326 oluşturur:
+
+```
+// C2380.cpp
+// compile with: /c
+class C {
+public:
+   int C();   // C2380, specifies an int return
+   int C;   // C2380, redefinition of i
+   C();   // OK
+};
 ```

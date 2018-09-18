@@ -1,5 +1,5 @@
 ---
-title: Karakter dizileri | Microsoft Docs
+title: Karakter sıraları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,29 +12,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85cf817a4d50346b9d10a9a9d1bc27abb5904433
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5cf3b52b8a4e76062d06b0b9ca3d4535b79595c5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382396"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061519"
 ---
 # <a name="character-sequences"></a>Karakter Sıraları
-**ANSI 3.8.2** kaynak dosya karakter sıraları eşleme  
-  
- Önişlemci deyimleri, kaçış dizilerinin desteklenmemesi dışında kaynak dosyası deyimleriyle aynı karakter kümesini kullanır.  
-  
- Bu nedenle, bir içerme dosyasına yönelik bir yol belirtmek istediğinizde yalnızca bir ters eğik çizgi kullanın:  
-  
-```  
-#include "path1\path2\myfile"  
-```  
-  
- Kaynak kodu içinde iki ters eğik çizgi gereklidir:  
-  
-```  
-fil = fopen( "path1\\path2\\myfile", "rt" );  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Ön işleme Yönergeleri](../c-language/preprocessing-directives.md)
+
+**ANSI 3.8.2** kaynak dosyası karakter dizilerinin eşleme
+
+Önişlemci deyimleri, kaçış dizilerinin desteklenmemesi dışında kaynak dosyası deyimleriyle aynı karakter kümesini kullanır.
+
+Bu nedenle, bir içerme dosyasına yönelik bir yol belirtmek istediğinizde yalnızca bir ters eğik çizgi kullanın:
+
+```
+#include "path1\path2\myfile"
+```
+
+Kaynak kodu içinde iki ters eğik çizgi gereklidir:
+
+```
+fil = fopen( "path1\\path2\\myfile", "rt" );
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Ön işleme Yönergeleri](../c-language/preprocessing-directives.md)

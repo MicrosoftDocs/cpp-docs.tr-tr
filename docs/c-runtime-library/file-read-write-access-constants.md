@@ -20,25 +20,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc0b7c9a2d8707d8a1939a47d4fae2ec896e4d2b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 4977b1bf8342e0643b83b0b65a53048c4af91a7c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700536"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063417"
 ---
 # <a name="file-readwrite-access-constants"></a>Dosya Okuma/Yazma Erişimi Sabitleri
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-#include <stdio.h>  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
 
-Bu sabitler, dosya için istenen erişim türünü ("a", "r" veya "w") belirtin. Her iki [çeviri modu](../c-runtime-library/file-translation-constants.md) ("b" veya "t") ve [işleme disk modu](../c-runtime-library/commit-to-disk-constants.md) ("c" veya "n") erişim türü ile belirtilebilir.  
-  
-Erişim türleri bu tabloda açıklanmıştır:  
+## <a name="syntax"></a>Sözdizimi
+
+```
+#include <stdio.h>
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sabitler, dosya için istenen erişim türünü ("a", "r" veya "w") belirtin. Her iki [çeviri modu](../c-runtime-library/file-translation-constants.md) ("b" veya "t") ve [işleme disk modu](../c-runtime-library/commit-to-disk-constants.md) ("c" veya "n") erişim türü ile belirtilebilir.
+
+Erişim türleri bu tabloda açıklanmıştır:
 
 |Erişim türü|Açıklama|
 |----------|----------------|
@@ -49,12 +50,13 @@ Erişim türleri bu tabloda açıklanmıştır:
 |**"w +"**|Hem okuma ve yazma için boş bir dosya açar. Verilen dosya varsa içeriği yok edilir.|
 |**"a +"**|Aynı **"a"** ancak okuma de sağlar.|
 
-"R +", "w +" veya "a +" türü belirtildiğinde, hem okumaya hem yazmaya izin verilir (dosyanın "güncelleştirme" açık olarak kabul edilir). Ancak, yazma ve okuma arasında geçiş yaptığınızda, olmalıdır bir araya giren `fflush`, `fsetpos`, `fseek`, veya `rewind` işlemi. Geçerli konum için belirtilen `fsetpos` veya `fseek` işlemi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [_fdopen, _wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)   
- [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md)   
- [freopen, _wfreopen](../c-runtime-library/reference/freopen-wfreopen.md)   
- [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)   
- [_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md)   
- [Global Sabitler](../c-runtime-library/global-constants.md)
+"R +", "w +" veya "a +" türü belirtildiğinde, hem okumaya hem yazmaya izin verilir (dosyanın "güncelleştirme" açık olarak kabul edilir). Ancak, yazma ve okuma arasında geçiş yaptığınızda, olmalıdır bir araya giren `fflush`, `fsetpos`, `fseek`, veya `rewind` işlemi. Geçerli konum için belirtilen `fsetpos` veya `fseek` işlemi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[_fdopen, _wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
+[fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md)<br/>
+[freopen, _wfreopen](../c-runtime-library/reference/freopen-wfreopen.md)<br/>
+[_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)<br/>
+[_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md)<br/>
+[Global Sabitler](../c-runtime-library/global-constants.md)

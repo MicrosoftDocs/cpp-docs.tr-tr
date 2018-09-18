@@ -16,73 +16,74 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a9c942f6b1459cbdb88561b749290eb47d3cfb3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4c7f86d116c1a830db54490f3e5231d837d4246c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245374"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060649"
 ---
 # <a name="compiler-error-c3020"></a>Derleyici Hatası C3020
-'var': OpenMP dizin değişkeni 'için' döngü döngü gövdesine değiştirilemez  
-  
- Bir OpenMP `for` döngü gövdesine dizin (döngü sayacı) değiştiremez `for` döngü.  
-  
- Aşağıdaki örnek C3020 oluşturur:  
-  
-```  
-// C3020.cpp  
-// compile with: /openmp  
-int main() {  
-   int i = 0, n = 3;  
-  
-   #pragma omp parallel  
-   {  
-      #pragma omp for  
-      for (i = 0; i < 10; i += n)  
-         i *= 2;   // C3020  
-         // try the following line instead  
-         // n++;  
-   }  
-}  
-```  
-  
- İle bildirilen bir değişken [lastprivate](../../parallel/openmp/reference/lastprivate.md) parallelized döngü içinde dizin olarak kullanılamaz.  
-  
- Bu lastprivate en dıştaki içinde idx_a için yazma döngünün tetikleyecek çünkü aşağıdaki örnek C3020 için ikinci lastprivate verin. Bu lastprivate idx_a en dıştaki dışında bir yazma (teknik olarak, en son yineleme sonuna) döngünün tetikler çünkü ilk lastprivate hata vermez. Aşağıdaki örnek C3020 oluşturur.  
-  
-```  
-// C3020b.cpp  
-// compile with: /openmp /c  
-float a[100][100];  
-int idx_a, idx_b;  
-void test(int first, int last)  
-{  
-   #pragma omp parallel for lastprivate(idx_a)  
-   for (idx_a = first; idx_a <= last; ++idx_a) {  
-      #pragma omp parallel for lastprivate(idx_a)   // C3020  
-      for (idx_b = first; idx_b <= last; ++idx_b) {  
-         a[idx_a][idx_b] += 1.0f;  
-      }  
-   }  
-}  
-```  
-  
- Aşağıdaki örnek, olası bir çözüm gösterilmektedir:  
-  
-```  
-// C3020c.cpp  
-// compile with: /openmp /c  
-float a[100][100];  
-int idx_a, idx_b;  
-void test(int first, int last)  
-{  
-   #pragma omp parallel for lastprivate(idx_a)  
-   for (idx_a = first; idx_a <= last; ++idx_a) {  
-      #pragma omp parallel for lastprivate(idx_b)  
-      for (idx_b = first; idx_b <= last; ++idx_b) {  
-         a[idx_a][idx_b] += 1.0f;  
-      }  
-   }  
-}  
+
+'var': OpenMP 'for' döngüsünün dizin değişkeni döngü gövdesi içinde değiştirilemez
+
+Bir OpenMP `for` döngü gövdesi, dizin (döngü sayacı) değiştiremez `for` döngü.
+
+Aşağıdaki örnek, C3020 oluşturur:
+
+```
+// C3020.cpp
+// compile with: /openmp
+int main() {
+   int i = 0, n = 3;
+
+   #pragma omp parallel
+   {
+      #pragma omp for
+      for (i = 0; i < 10; i += n)
+         i *= 2;   // C3020
+         // try the following line instead
+         // n++;
+   }
+}
+```
+
+Bildirilen bir değişken [lastprivate](../../parallel/openmp/reference/lastprivate.md) paralel döngü içinde dizin olarak kullanılamaz.
+
+Aşağıdaki örnek bu lastprivate bir for döngüsü içinde en dıştaki idx_a yazma tetikleyecek çünkü C3020 için ikinci lastprivate sağlayacaktır. Bir for döngüsü (teknik olarak en son yineleme sonuna) dışında en dıştaki idx_a yazma bu lastprivate Tetikleyiciler olduğundan ilk lastprivate hata vermez. Aşağıdaki örnek, C3020 oluşturur.
+
+```
+// C3020b.cpp
+// compile with: /openmp /c
+float a[100][100];
+int idx_a, idx_b;
+void test(int first, int last)
+{
+   #pragma omp parallel for lastprivate(idx_a)
+   for (idx_a = first; idx_a <= last; ++idx_a) {
+      #pragma omp parallel for lastprivate(idx_a)   // C3020
+      for (idx_b = first; idx_b <= last; ++idx_b) {
+         a[idx_a][idx_b] += 1.0f;
+      }
+   }
+}
+```
+
+Aşağıdaki örnek, olası çözümü göstermektedir:
+
+```
+// C3020c.cpp
+// compile with: /openmp /c
+float a[100][100];
+int idx_a, idx_b;
+void test(int first, int last)
+{
+   #pragma omp parallel for lastprivate(idx_a)
+   for (idx_a = first; idx_a <= last; ++idx_a) {
+      #pragma omp parallel for lastprivate(idx_b)
+      for (idx_b = first; idx_b <= last; ++idx_b) {
+         a[idx_a][idx_b] += 1.0f;
+      }
+   }
+}
 ```

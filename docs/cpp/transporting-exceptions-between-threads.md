@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38c76d582a6bd30c5fa3f9285bc96853f7e9d162
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 46cdf86d431b69704b5a67fea3024365470de945
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199485"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066370"
 ---
 # <a name="transporting-exceptions-between-threads"></a>Özel durumları iş parçacıkları arasında taşıma
 
@@ -265,6 +265,7 @@ exception_ptr 1: Caught a  myException exception.
 **Başlık:** \<özel durum >
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Özel Durum İşleme](../cpp/exception-handling-in-visual-cpp.md)  
- [/EH (Özel Durum İşleme Modeli)](../build/reference/eh-exception-handling-model.md)  
- [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)
+
+[Özel Durum İşleme](../cpp/exception-handling-in-visual-cpp.md)<br/>
+[/EH (Özel Durum İşleme Modeli)](../build/reference/eh-exception-handling-model.md)<br/>
+[/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)

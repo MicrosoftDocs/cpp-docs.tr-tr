@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1941f08d13fb8aef9b5b281ce4b2bc1c61bf98fe
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 70ba26e5893b21393a3466ae7cf1c6cea43b81ef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766593"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070164"
 ---
 # <a name="ccomptrbase-class"></a>CComPtrBase sınıfı
 
@@ -41,13 +41,13 @@ Bu sınıf, COM tabanlı bellek yordamları kullanarak akıllı işaretçi sın�
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T>  
+template <class T>
 class CComPtrBase
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Akıllı işaretçi tarafından başvurulabilmesi için nesne türü.
 
 ## <a name="members"></a>Üyeler
@@ -111,13 +111,13 @@ HRESULT Advise(
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnk*  
+*pUnk*<br/>
 İstemcinin bir işaretçiye `IUnknown`.
 
-*IID*  
+*IID*<br/>
 Bağlantı noktası GUİD'si. Genellikle, bu bağlantı noktası tarafından yönetilen giden arabirimi aynıdır.
 
-*PDW*  
+*PDW*<br/>
 Bağlantı benzersiz olarak tanıtan bir tanımlama bilgisi için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -138,7 +138,7 @@ void Attach(T* p2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*P2*  
+*P2*<br/>
 `CComPtrBase` Nesne, işaretçi sahipliğini alır.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -175,16 +175,16 @@ HRESULT CoCreateInstance(
 
 ### <a name="parameters"></a>Parametreler
 
-*szProgID*  
+*szProgID*<br/>
 ProgID CLSID'si kurtarmak için kullanılan, işaretçi.
 
-*pUnkOuter*  
+*pUnkOuter*<br/>
 NULL ise, nesne bir toplamanın parçası oluşturulduğunu değil gösterir. NULL olmayan, toplam nesnenin bir işaretçi olup olmadığını `IUnknown` arabirimi (denetleme `IUnknown`).
 
-*dwClsContext*  
+*dwClsContext*<br/>
 Yeni oluşturulan nesne yöneten kod çalıştırılacağı bağlamı.
 
-*rclsid*  
+*rclsid*<br/>
 CLSID veri ve nesneyi oluşturmak için kullanılan kod ile ilişkili.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -207,7 +207,7 @@ HRESULT CopyTo(T** ppT) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*ppT*  
+*ppT*<br/>
 Alacak değişkenin adresi `CComPtrBase` işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -246,7 +246,7 @@ bool IsEqualObject(IUnknown* pOther) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pOther*  
+*pOther*<br/>
 `IUnknown *` Karşılaştırmak için.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -301,7 +301,7 @@ bool operator== (T* pT) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*PT*  
+*PT*<br/>
 Bir nesneye bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -334,7 +334,7 @@ bool operator<(T* pT) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*PT*  
+*PT*<br/>
 Bir nesneye bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -345,7 +345,7 @@ Bir nesneye bir işaretçi.
 
 Atama işleci.
 
-```  
+```
 operator T*() const throw();
 ```
 
@@ -376,10 +376,10 @@ template <class Q> HRESULT QueryInterface(Q
 
 ### <a name="parameters"></a>Parametreler
 
-*Q*  
+*Q*<br/>
 Nesne türü, arabirim işaretçisi gereklidir.
 
-*PP*  
+*PP*<br/>
 Adresi çıkış değişkeninin istenen arabirim işaretçisi alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -414,7 +414,7 @@ HRESULT SetSite(IUnknown* punkParent) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*punkParent*  
+*punkParent*<br/>
 Bir işaretçi `IUnknown` üst arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri

@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71b36f19cc6e3deddbd5984e63b70c61a0ca8ea8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e776fd88799999ce175ba2efc137fc0353cbe65a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762775"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068474"
 ---
 # <a name="ccomdynamicunkarray-class"></a>CComDynamicUnkArray sınıfı
 
@@ -93,7 +93,7 @@ DWORD Add(IUnknown* pUnk);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnk*  
+*pUnk*<br/>
 `IUnknown` Diziye eklemek için işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -174,7 +174,7 @@ IUnknown* GetAt(int nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*  
+*nIndex*<br/>
 Alınacak öğenin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -191,7 +191,7 @@ DWORD WINAPI GetCookie(IUnknown** ppFind);
 
 ### <a name="parameters"></a>Parametreler
 
-*ppFind*  
+*ppFind*<br/>
 `IUnknown` İşaretçi için ilişkili tanımlama bilgisi gereklidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -224,7 +224,7 @@ IUnknown* WINAPI GetUnknown(DWORD dwCookie);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwCookie*  
+*dwCookie*<br/>
 Tanımlama bilgisi, ilişkili `IUnknown` işaretçisi gereklidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -241,7 +241,7 @@ BOOL Remove(DWORD dwCookie);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwCookie*  
+*dwCookie*<br/>
 Tanımlama bilgisi başvuru `IUnknown` işaretçi diziden kaldırılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -250,5 +250,5 @@ Tanımlama bilgisi başvuru `IUnknown` işaretçi diziden kaldırılacak.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComUnkArray sınıfı](../../atl/reference/ccomunkarray-class.md)   
+[CComUnkArray Sınıfı](../../atl/reference/ccomunkarray-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

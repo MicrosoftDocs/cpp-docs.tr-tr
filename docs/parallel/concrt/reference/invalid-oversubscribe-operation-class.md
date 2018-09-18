@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 612a5658e0ef678253ec493f23b71cc564288904
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 1b4e1eaf4bfca27ef22af103a5696ca2a34265d6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689522"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069191"
 ---
 # <a name="invalidoversubscribeoperation-class"></a>invalid_oversubscribe_operation Sınıfı
-Bu sınıf ne zaman oluşturulan bir özel tanımlar `Context::Oversubscribe` yöntemi ile çağrılır `_BeginOversubscription` parametre kümesine `false` önceki çağrı olmadan `Context::Oversubscribe` yöntemiyle `_BeginOversubscription` parametre kümesine `true`.  
+Bu sınıf oluşan bir özel durumu anlatmaktadır `Context::Oversubscribe` yöntemi çağrıldığında `_BeginOversubscription` parametresini `false` çağrıda olmadan `Context::Oversubscribe` yöntemiyle `_BeginOversubscription` parametresini `true`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,7 +40,7 @@ class invalid_oversubscribe_operation : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[invalid_oversubscribe_operation](#ctor)|Fazla Yüklendi. Oluşturan bir `invalid_oversubscribe_operation` nesnesi.|  
+|[invalid_oversubscribe_operation](#ctor)|Fazla Yüklendi. Oluşturur bir `invalid_oversubscribe_operation` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -54,7 +54,7 @@ class invalid_oversubscribe_operation : public std::exception;
   
 ##  <a name="ctor"></a> invalid_oversubscribe_operation 
 
- Oluşturan bir `invalid_oversubscribe_operation` nesnesi.  
+ Oluşturur bir `invalid_oversubscribe_operation` nesne.  
   
 ```  
 explicit _CRTIMP invalid_oversubscribe_operation(_In_z_ const char* _Message) throw();
@@ -64,8 +64,8 @@ invalid_oversubscribe_operation() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

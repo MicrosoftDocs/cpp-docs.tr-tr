@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1780a4f77cce4812ebdb03ebc89936da0dc0d5d0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ba47b7f78e372f05a851d2180590bbc68a8c61ca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767061"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068448"
 ---
 # <a name="cdialogimpl-class"></a>Cdialogımpl sınıfı
 
@@ -51,10 +51,10 @@ template <class T,
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `CDialogImpl`.
 
-*Ttemel*  
+*Ttemel*<br/>
 Yeni sınıfın temel sınıf. Varsayılan temel sınıf [CWindow](../../atl/reference/cwindow-class.md).
 
 ## <a name="members"></a>Üyeler
@@ -113,7 +113,7 @@ Burada `MyDlg` olduğu **kısa ad** Sihirbazı'nda kişinin girilen **adları** 
 
 Modsuz iletişim kutusu oluşturur.
 
-```  
+```
 HWND Create(
     HWND hWndParent,  
     LPARAM dwInitParam = NULL );  
@@ -121,18 +121,17 @@ HWND Create(
 HWND Create(
     HWND hWndParent,  
     RECT&, 
-    LPARAM dwInitParam = NULL); 
+    LPARAM dwInitParam = NULL);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] İşleci sahip penceresine.
 
-**RECT &** *dikdörtgen*  
-[in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) Yapısı iletişim kutusunun boyutunu ve konumunu belirtme.
+**RECT &** *rect* [in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) Yapısı iletişim kutusunun boyutunu ve konumunu belirtme.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -173,16 +172,16 @@ static LRESULT CALLBACK DialogProc(
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*  
+*hWnd*<br/>
 [in] İletişim kutusu için tanıtıcı.
 
-*uMsg*  
+*uMsg*<br/>
 [in] İletişim kutusuna gönderilen ileti.
 
-*wParam*  
+*wParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
-*lParam*  
+*lParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -199,18 +198,18 @@ Geçersiz kılabilirsiniz `DialogProc` iletileri işlemek için farklı bir meka
 
 Kalıcı bir iletişim kutusu oluşturur.
 
-```   
+```
 INT_PTR DoModal(  
     HWND hWndParent = ::GetActiveWindow(),   
-    LPARAM dwInitParam = NULL); 
+    LPARAM dwInitParam = NULL);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] İşleci sahip penceresine. Varsayılan değer dönüş değeri [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 işlevi.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -227,13 +226,13 @@ Modsuz iletişim kutusu oluşturmak için arama [Oluştur](#create).
 
 Kalıcı bir iletişim kutusu yok eder.
 
-```   
-BOOL EndDialog(int nRetCode); 
+```
+BOOL EndDialog(int nRetCode);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*nRetCode*  
+*nRetCode*<br/>
 [in] Tarafından döndürülen değer [CDialogImpl::DoModal](#domodal).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -251,8 +250,8 @@ BOOL EndDialog(int nRetCode);
 
 Döndürür `DialogProc`, geçerli iletişim kutusu yordamını.
 
-```   
-virtual WNDPROC GetDialogProc(); 
+```
+virtual WNDPROC GetDialogProc();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -267,13 +266,13 @@ Geçerli iletişim kutusunu yordam.
 
 (Maps) belirtilen dikdörtgen ekran için iletişim kutusu ölçü birimleri (piksel) dönüştürür.
 
-```   
-BOOL MapDialogRect(LPRECT lpRect); 
+```
+BOOL MapDialogRect(LPRECT lpRect);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*  
+*lpRect*<br/>
 İşaret eden bir `CRect` nesne veya [RECT](../../mfc/reference/rect-structure1.md) güncelleştirme bölgeyi kapsayan güncelleştirme istemci koordinatlarını almak için yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -288,13 +287,13 @@ Güncelleştirme başarılı olursa sıfır dışı; güncelleştirme başarıs�
 
 Son ileti alındıktan sonra çağırılır (genellikle `WM_NCDESTROY`).
 
-```   
-virtual void OnFinalMessage(HWND hWnd); 
+```
+virtual void OnFinalMessage(HWND hWnd);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*  
+*hWnd*<br/>
 [in] Yok ediliyor penceresi için bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -305,26 +304,26 @@ Pencere yok etme sırasında nesne otomatik olarak silmek istiyorsanız, çağı
 
 İlk ileti alındığında iletişim kutusuna gönderilen iletileri işlemek için yalnızca bir kez çağrılır.
 
-```   
+```
 static LRESULT CALLBACK StartDialogProc(
     HWND hWnd,  
     UINT uMsg,  
     WPARAM wParam,  
-    LPARAM lParam); 
+    LPARAM lParam);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*  
+*hWnd*<br/>
 [in] İletişim kutusu için tanıtıcı.
 
-*uMsg*  
+*uMsg*<br/>
 [in] İletişim kutusuna gönderilen ileti.
 
-*wParam*  
+*wParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
-*lParam*  
+*lParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -337,5 +336,5 @@ Pencere yordamı.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
+[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

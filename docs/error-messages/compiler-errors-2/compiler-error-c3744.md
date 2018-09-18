@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f96b8445c343bdd4f606157e692c4d6ce262e369
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d644a621fc6d8e460e1b97e5baec360de8662365
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33265889"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063729"
 ---
 # <a name="compiler-error-c3744"></a>Derleyici Hatası C3744
-__unhook yönetilen olayları için en az 3 tane bağımsız değişkene sahip olmalıdır  
-  
- [__Unhook](../../cpp/unhook.md) işlevi C++ için Yönetilen Uzantılar için derlenmiş bir program kullanıldığında üç parametre almalıdır.  
-  
- `__hook` ve  `__unhook` /CLR programlama ile uyumlu değil. += Ve-= işleç kullanın.  
-  
- C3744 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.  
+
+en az 3 bağımsız değişken yönetilen olaylar için __unhook olmalıdır
+
+[__Unhook](../../cpp/unhook.md) işlevi, C++ için Yönetilen Uzantılar için derlenmiş bir program kullanıldığında üç parametreleri alması gerekir.
+
+`__hook` ve  `__unhook` /CLR programlama ile uyumlu değildir. Bunun yerine += ve-= işleçlerini kullanın.
+
+C3744 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.

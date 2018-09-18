@@ -15,14 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 02ce5cbfdc6c5305ab356fc32993b6bdd34f1fac
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 7fae3dafe056598dea5026d0639ce257af3cee87
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339542"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066784"
 ---
 # <a name="issuing-a-parameterized-query"></a>Parametreleştirilmiş Sorgu Verme
+
 Aşağıdaki örnek, bir Microsoft Access veritabanındaki bir tablodan (30'dan büyük olan) bir geçerlilik süresi alan kayıtlarla alır basit, parametreli bir sorgu verir. Parametre desteklemek için kullanıcı kaydı, ek bir harita olmalıdır. Aşağıdaki kod, kullanan bir ATL projesinde `CCommand` sınıfı yerine `CTable` önceki örnekte kullanılan sınıf [basit bir satır kümesinde geçiş yapma](../../data/oledb/traversing-a-simple-rowset.md).  
   
 ```cpp  
@@ -51,7 +52,7 @@ while (artists.MoveNext() == S_OK)
 }  
 ```  
   
- Kullanıcı kaydı, `CArtists`, şöyle görünür:  
+Kullanıcı kaydı, `CArtists`, şöyle görünür:  
   
 ```cpp  
 class CArtists  
@@ -78,4 +79,5 @@ END_PARAM_MAP()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)
+
+[OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)

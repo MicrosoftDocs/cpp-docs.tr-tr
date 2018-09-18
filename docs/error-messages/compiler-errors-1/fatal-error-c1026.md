@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24c034d45b7f8b222471094f4580902ae1b8dc66
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: db9167383df48dad274ef8941defaa53f51d3bfa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198111"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068994"
 ---
 # <a name="fatal-error-c1026"></a>Önemli hata C1026
-Ayrıştırıcı yığın taşması, program çok karmaşık  
-  
- Program ayrıştırmak için gereken alanı derleyici yığın taşmasına neden oldu.  
-  
- İfadeleri tarafından karmaşıklığını azaltmak:  
-  
--   İç içe geçme azalan `for` ve `switch` deyimleri. Daha fazla iç içe deyimleri ayrı işlevlerde yerleştirin.  
-  
--   Virgül işleçleri veya işlev çağrıları içeren uzun ifadeleri ayırma.
+
+Ayrıştırıcı yığını taştı, program çok karmaşık
+
+Program ayrıştırmak için gereken alanı, bir derleyici yığın taşmasına neden oldu.
+
+İfadeleri tarafından karmaşıklığını azaltın:
+
+- İç içe geçme azalan `for` ve `switch` deyimleri. Daha derin şekilde iç içe geçmiş deyimler içinde ayrı işlevler yerleştirin.
+
+- Virgül işleçleri veya işlev çağrıları içeren uzun ifadeleri ayırma.

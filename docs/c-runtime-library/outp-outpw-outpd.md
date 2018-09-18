@@ -43,68 +43,73 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 140b53fd90d393f2629dda6573d994635b96f417
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 604fe4a5fd3daa2cfef7698cd044c7edc56232b2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391515"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069645"
 ---
 # <a name="outp-outpw-outpd"></a>_outp, _outpw, _outpd
-Bir bağlantı noktası, bir bayt çıkışları (`_outp`), bir sözcük (`_outpw`), veya bir çift sözcük (`_outpd`).  
-  
+
+Bağlantı noktasında, bayt çıktıları (`_outp`), bir sözcük (`_outpw`), veya çift sözcüğe (`_outpd`).
+
 > [!IMPORTANT]
->  Bu işlevler artık kullanılmıyor. Visual Studio 2015'te başlayarak, bunlar CRT kullanılabilir değildir.  
-  
+>  Bu işlevler kullanım dışıdır. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz.
+
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-      int _outp(  
-unsigned short port,  
-int databyte   
-);  
-unsigned short _outpw(  
-unsigned short port,  
-unsigned short dataword   
-);  
-unsigned long _outpd(  
-unsigned short port,  
-unsigned long dataword   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *Bağlantı noktası*  
- Bağlantı noktası numarası.  
-  
- *databyte, dataword*  
- Çıkış değerleri.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- İşlevler, veri çıkışı döndürür. Döndürülen hata yoktur.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_outp`, `_outpw`, Ve `_outpd` işlevler yazma byte, bir sözcük ve bir çift sözcük sırasıyla belirtilen çıkış bağlantı noktasına. *Bağlantı noktası* bağımsız değişkeni, herhangi bir işaretsiz tamsayı 0 - 65.535; aralığında olabilir *databyte* aralık 0 - 255; herhangi bir tamsayı ve *dataword* herhangi bir değer bir tamsayı, imzasız kısa tamsayı ve imzasız uzun tamsayı aralığında sırasıyla olabilir.  
-  
- Bu işlevlerin bir g/ç bağlantı noktasına doğrudan yazma çünkü kullanıcı kodunda kullanılamaz. Bu işletim sistemlerindeki g/ç bağlantı noktaları hakkında daha fazla bilgi için MSDN'de "Seri iletişimler, Win32 için" arayın.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_outp`|\<conio.h >|  
-|`_outpw`|\<conio.h >|  
-|`_outpd`|\<conio.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../c-runtime-library/compatibility.md).  
-  
-## <a name="libraries"></a>Kitaplıklar  
- Tüm sürümleri [C çalışma zamanı kitaplıkları](../c-runtime-library/crt-library-features.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Konsol ve bağlantı noktası g/ç](../c-runtime-library/console-and-port-i-o.md)   
- [_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)
+>  Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+
+      int _outp(
+unsigned short port,
+int databyte
+);
+unsigned short _outpw(
+unsigned short port,
+unsigned short dataword
+);
+unsigned long _outpd(
+unsigned short port,
+unsigned long dataword
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+*Bağlantı noktası*<br/>
+Bağlantı noktası numarası.
+
+*databyte, dataword*<br/>
+Çıkış değerleri.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+İşlevler veri çıkışını geri döndürür. Döndürülen hata yok.
+
+## <a name="remarks"></a>Açıklamalar
+
+`_outp`, `_outpw`, Ve `_outpd` işlevler yazma bir bayt, bir sözcük ve bir çift sözcük sırasıyla belirtilen çıkış bağlantı noktasına. *Bağlantı noktası* bağımsız değişkeni de aralık 0 - 65,535; herhangi bir işaretsiz tamsayı. *databyte* 0 - 255 aralığında herhangi bir tamsayı olabilir ve *dataword* aralığında bir tamsayı, işaretsiz kısa tamsayı ve bir işaretsiz uzun tamsayı değerdeki sırasıyla olabilir.
+
+Bu işlevler doğrudan bir g/ç bağlantı noktasına yazıldığı için kullanıcı kodunda kullanılamaz. Bu işletim sistemlerindeki g/ç bağlantı noktalarını kullanma hakkında daha fazla bilgi için MSDN'de "seri iletişimleri"Win32'de arayın.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|`_outp`|\<conio.h >|
+|`_outpw`|\<conio.h >|
+|`_outpd`|\<conio.h >|
+
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
+
+## <a name="libraries"></a>Kitaplıklar
+
+Tüm sürümleri [C çalışma zamanı kitaplıkları](../c-runtime-library/crt-library-features.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Konsol ve bağlantı noktası g/ç](../c-runtime-library/console-and-port-i-o.md)<br/>
+[_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)

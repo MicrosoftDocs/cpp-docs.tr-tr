@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5746fb3a4e704d866ce6e929de832d783e7afc8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 60d8d81e772a6da66254d6e777c0cafa4fc8a296
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757048"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069280"
 ---
 # <a name="atl-and-the-free-threaded-marshaler"></a>ATL ve Ücretsiz İş Parçacıklı Sıralayıcı
 
@@ -37,9 +37,9 @@ Bu seçenek kullanıldığında, sınıf verilerini iş parçacığı güvenliğ
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kavramları](../atl/active-template-library-atl-concepts.md)   
-[CoCreateFreeThreadedMarshaler](/windows/desktop/api/combaseapi/nf-combaseapi-cocreatefreethreadedmarshaler)   
-[IMarshal](/windows/desktop/api/objidlbase/nn-objidlbase-imarshal)   
-[Genel arabirim tablosu kullanma zamanı](/windows/desktop/com/when-to-use-the-global-interface-table)   
+[Kavramları](../atl/active-template-library-atl-concepts.md)<br/>
+[CoCreateFreeThreadedMarshaler](/windows/desktop/api/combaseapi/nf-combaseapi-cocreatefreethreadedmarshaler)<br/>
+[IMarshal](/windows/desktop/api/objidlbase/nn-objidlbase-imarshal)<br/>
+[Genel arabirim tablosu kullanma zamanı](/windows/desktop/com/when-to-use-the-global-interface-table)<br/>
 [İşlem sunucusu iş parçacığı oluşturma sorunları](/windows/desktop/com/in-process-server-threading-issues)
 

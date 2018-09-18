@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49598223c3f68271065cc6212da19767020c51e9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 522abe9c3cb4b9922a6b307055a3d85f40253793
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230831"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062962"
 ---
 # <a name="compiler-error-c2601"></a>Derleyici Hatası C2601
-'function': yerel işlev tanımları geçersiz  
-  
- Bir işlevin içindeki bir işlev tanımlamak kod çalışır.  
-  
- Ya da kaynak kodunuzda C2601 hata konumunu önce ek bir küme parantezi olabilir.  
-  
- Aşağıdaki örnek C2601 oluşturur:  
-  
-```  
-// C2601.cpp  
-int main() {  
-   int i = 0;  
-  
-   void funcname(int j) {   // C2601  
-      j++;  
-   }  
-}  
+
+'function': yerel işlev tanımları geçersiz
+
+Kod, bir işlevin içindeki bir fonksiyon tanımlayın dener.
+
+Veya, kaynak kodunuzdaki C2601 hatanın konumunu önce ek bir küme ayracı olabilir.
+
+Aşağıdaki örnek, C2601 oluşturur:
+
+```
+// C2601.cpp
+int main() {
+   int i = 0;
+
+   void funcname(int j) {   // C2601
+      j++;
+   }
+}
 ```

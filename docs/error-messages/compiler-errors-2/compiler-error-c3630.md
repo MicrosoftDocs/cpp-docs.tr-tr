@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8e38e06f2a32e9a95421ac113cdd0b5f1371334
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 53d7b895c25a847e8abe1b9db11b8b413d3342d0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33265213"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066124"
 ---
 # <a name="compiler-error-c3630"></a>Derleyici Hatası C3630
-belirtecin 'belirteci' işlenirken hata oluştu  
-  
- Kaynak kodundaki bir belirteç işlenemedi.
+
+' % s'belirteç 'belirteci işlenirken hata oluştu
+
+Bir belirteç kaynak koduna işlenemedi.

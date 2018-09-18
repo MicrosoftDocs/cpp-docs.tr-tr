@@ -16,33 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4cd9de6f300fed673d588df60d7acca15b104b61
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: db3eee53f23aa2cdc958b63faed11ead302f4b1e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33258140"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060752"
 ---
 # <a name="compiler-error-c3485"></a>Derleyici Hatası C3485
-lambda tanımı herhangi MS niteleyicileri sahip olamaz  
-  
- Kullanarak bir `const` veya `volatile` niteleyicisi lambda ifadesi tanımının bir parçası olarak.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
--   Kaldırma `const` veya `volatile` niteleyicisi tanımından lambda ifadesi.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, C3485 oluşturur, bunu kullandığından `const` niteleyicisi lambda ifadesi tanımının bir parçası olarak:  
-  
-```  
-// C3485.cpp  
-  
-int main()  
-{  
-   auto x = []() const mutable {}; // C3485  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+
+bir lambda tanımında cv niteleyicileri bulunamaz
+
+Kullanamazsınız bir `const` veya `volatile` bir lambda ifadesinin tanımının bir parçası olarak niteleyicisi.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+- Kaldırma `const` veya `volatile` , lambda ifadesinin tanımından niteleyicisi.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3485 oluşturur, bunu kullandığından `const` niteleyicisi bir lambda ifadesinin tanımının bir parçası olarak:
+
+```
+// C3485.cpp
+
+int main()
+{
+   auto x = []() const mutable {}; // C3485
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)

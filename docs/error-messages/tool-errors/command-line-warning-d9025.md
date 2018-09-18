@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3875a2cbd065fd5ad887267bcc80748fa9845d0d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 822d1ac0cc1e6b3e728d43b816e7a0a15eee9958
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298856"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063703"
 ---
 # <a name="command-line-warning-d9025"></a>Komut Satırı Uyarısı D9025
-'seçenek ' 1 'Seçenek2' ile geçersiz kılma  
-  
- *Seçenek 1* seçeneği belirtildi, ancak ardından tarafından geçersiz kılınmış *Seçenek2*. *Seçenek2* seçeneği kullanıldı.  
-  
- İki seçenek çelişkili ya da uyumsuz yönergeleri belirtirseniz, komut satırında sağa sağdan seçeneğinde zımni ya da belirtilen yönergesi kullanılır.  
-  
- Bu uyarı geliştirme ortamından derlerken almak ve burada çakışan Seçenekler'ten gelen emin değilseniz, aşağıdakileri göz önünde bulundurun:  
-  
--   Bir seçenek kodu veya bir projenin proje ayarları belirtilebilir. Derleyicinin bakarsanız [komut satırı özellik sayfaları](../../ide/command-line-property-pages.md) ve çakışan seçeneklerinde görürseniz **tüm seçenekleri** seçenekleri ayarlama seçenekleri projenin özellik sayfalarında, aksi takdirde, sonra alanı Kaynak kodu olarak ayarlanır.  
-  
-     Projenin özellik sayfalarında seçenekleri ayarlarsanız derleyicinin önişlemci özellik sayfasında (Çözüm Gezgini'nde Seçili proje düğümüne) arayın.  Var. ayarlayın, emin olmak için her kaynak kodu dosyasının (Çözüm Gezgini'nde) önişlemci özellik sayfası ayarlarını denetlemek seçeneği görmüyorsanız var. eklenmez.  
-  
-     Kodda seçenekleri ayarlarsanız kodu veya bir windows üstbilgileri ayarlayabilirsiniz.  Önceden işlenmiş bir dosya oluşturulurken deneyebilirsiniz ([/P](../../build/reference/p-preprocess-to-a-file.md)) ve simge için arama yapın.
+
+'Seçenek2' ile ' Seçenek1' geçersiz kılma
+
+*Seçenek1* seçeneği belirtildi ancak ardından tarafından geçersiz kılınmıştır *Seçenek2*. *Seçenek2* seçeneği kullanıldı.
+
+İki seçenek çelişkili ya da uyumsuz yönergeleri belirtirseniz, belirtilen veya komut satırında sağa görselinin seçeneğinde kapsanan yönergesi kullanılır.
+
+Bu uyarı geliştirme ortamından derlenirken alın ve gelen çakışan seçenekler nereden geldiğini emin değilseniz, aşağıdakileri göz önünde bulundurun:
+
+- Bir seçenek, kod veya projenin proje ayarlarında belirtilebilir. Derleyicinin bakarsanız [komut satırı özellik sayfaları](../../ide/command-line-property-pages.md) ve çakışan seçenekleri görürseniz **tüm seçenekleri** seçenekleri, projenin özellik sayfalarında, aksi takdirde seçenekleri ayarlanmıştır alan kaynak kodunda ayarlanır.
+
+     Seçenekler projenin özellik sayfalarındaki ayarlarsanız, derleyicinin önişlemci özellik sayfasında (Çözüm Gezgini'nde Seçili proje düğümü) arayın.  Burada ayarlayın, emin olmak için her kaynak kodu dosyası (Çözüm Gezgini'nde) önişlemci özellik sayfası ayarları denetle seçeneğini görmüyorsanız var. eklenmez.
+
+     Seçenekler, kod içinde ayarlarsanız kodda veya windows üstbilgileri ayarlayabilirsiniz.  Önceden işlenmiş dosya oluşturma deneyebilirsiniz ([/P](../../build/reference/p-preprocess-to-a-file.md)) ve sembolü aratın.

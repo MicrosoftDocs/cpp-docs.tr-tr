@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa68a79b8255b1e64884ec7da1d1847021b8bc2f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f19e2a1b41c499605f22575f934b3d4872457011
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33172998"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065107"
 ---
 # <a name="compiler-error-c2311"></a>Derleyici Hatası C2311
-'özel': satır numarasında '...' tarafından yakalandı  
-  
- Üç nokta (...) catch işleyicisi bir throw son işleyicisi olması gerekir.  
-  
- Aşağıdaki örnek C2311 oluşturur:  
-  
-```  
-// C2311.cpp  
-// compile with: /EHsc  
-#include <eh.h>  
-int main() {  
-   try {  
-      throw "ooops!";  
-   }  
-   catch( ... ) {}  
-   catch( int ) {}   // C2311  ellipsis handler not last catch  
-}  
+
+'özel durum': satır numarasında '...' tarafından yakalandı
+
+Üç nokta (...)'için catch işleyicisi bir throw son işleyicisi olmalıdır.
+
+Aşağıdaki örnek, C2311 oluşturur:
+
+```
+// C2311.cpp
+// compile with: /EHsc
+#include <eh.h>
+int main() {
+   try {
+      throw "ooops!";
+   }
+   catch( ... ) {}
+   catch( int ) {}   // C2311  ellipsis handler not last catch
+}
 ```

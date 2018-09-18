@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d3adeff7c0c242d9e83b2e71afff78ec130f950
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 14c231edc5395515836ccbbe9adea87e0f31b33d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712964"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068415"
 ---
 # <a name="diagnostic-services"></a>Tanı Hizmetleri
 Microsoft Foundation Class Kitaplığı programlarınızın daha kolay hata ayıklaması yapmak çok sayıda tanı hizmetleri sağlar. Bu tanılama Hizmetleri makroları ve programınızın bellek ayırmaları, çalışma zamanı sırasında nesnelerin içeriğini dökümü ve çalışma zamanı sırasında hata ayıklama iletilerini yazdırma izlemenize olanak tanıyan genel işlevleri içerir. Makrolar ve genel işlevler için tanı Hizmetleri aşağıdaki kategorilere ayrılır:  
@@ -546,49 +546,31 @@ void AFXAPI AfxDumpStack(DWORD dwTarget = AFX_STACK_DUMP_TARGET_DEFAULT);
 ### <a name="remarks"></a>Açıklamalar  
  Aşağıdaki örnekte, tek satırlık bir arama öğesinden oluşturulan çıktı yansıtır `AfxDumpStack` MFC iletişim uygulamasında bir düğme işleyicisinden:  
   
- `=== begin AfxDumpStack output ===`  
-  
- `00427D55: DUMP2\DEBUG\DUMP2.EXE! void AfxDumpStack(unsigned long) + 181 bytes`  
-  
- `0040160B: DUMP2\DEBUG\DUMP2.EXE! void CDump2Dlg::OnClipboard(void) + 14 bytes`  
-  
- `0044F884: DUMP2\DEBUG\DUMP2.EXE! int _AfxDispatchCmdMsg(class CCmdTarget *,`  
-  
- `unsigned int,int,void ( CCmdTarget::*)(void),void *,unsigned int,struct AFX_CMDHANDLE`  
-  
- `0044FF7B: DUMP2\DEBUG\DUMP2.EXE! virtual int CCmdTarget::OnCmdMsg(unsigned`  
-  
- `int,int,void *,struct AFX_CMDHANDLERINFO *) + 626 bytes`  
-  
- `00450C71: DUMP2\DEBUG\DUMP2.EXE! virtual int CDialog::OnCmdMsg(unsigned`  
-  
- `int,int,void *,struct AFX_CMDHANDLERINFO *) + 36 bytes`  
-  
- `00455B27: DUMP2\DEBUG\DUMP2.EXE! virtual int CWnd::OnCommand(unsigned`  
-  
- `int,long) + 312 bytes`  
-  
- `00454D3D: DUMP2\DEBUG\DUMP2.EXE! virtual int CWnd::OnWndMsg(unsigned`  
-  
- `int,unsigned int,long,long *) + 83 bytes`  
-  
- `00454CC0: DUMP2\DEBUG\DUMP2.EXE! virtual long CWnd::WindowProc(unsigned`  
-  
- `int,unsigned int,long) + 46 bytes`  
-  
- `004528D9: DUMP2\DEBUG\DUMP2.EXE! long AfxCallWndProc(class CWnd *,struct`  
-  
- `HWND__ *,unsigned int,unsigned int,long) + 237 bytes`  
-  
- `00452D34: DUMP2\DEBUG\DUMP2.EXE! long AfxWndProc(struct HWND__ *,unsigned`  
-  
- `int,unsigned int,long) + 129 bytes`  
-  
- `BFF73663: WINDOWS\SYSTEM\KERNEL32.DLL! ThunkConnect32 + 2148 bytes`  
-  
- `BFF928E0: WINDOWS\SYSTEM\KERNEL32.DLL! UTUnRegister + 2492 bytes`  
-  
- `=== end AfxDumpStack() output ===`  
+```Output
+=== begin AfxDumpStack output ===
+00427D55: DUMP2\DEBUG\DUMP2.EXE! void AfxDumpStack(unsigned long) + 181 bytes
+0040160B: DUMP2\DEBUG\DUMP2.EXE! void CDump2Dlg::OnClipboard(void) + 14 bytes
+0044F884: DUMP2\DEBUG\DUMP2.EXE! int _AfxDispatchCmdMsg(class CCmdTarget *,
+unsigned int,int,void ( CCmdTarget::*)(void),void *,unsigned int,struct 
+AFX_CMDHANDLE
+0044FF7B: DUMP2\DEBUG\DUMP2.EXE! virtual int CCmdTarget::OnCmdMsg(unsigned
+int,int,void *,struct AFX_CMDHANDLERINFO *) + 626 bytes
+00450C71: DUMP2\DEBUG\DUMP2.EXE! virtual int CDialog::OnCmdMsg(unsigned
+int,int,void *,struct AFX_CMDHANDLERINFO *) + 36 bytes
+00455B27: DUMP2\DEBUG\DUMP2.EXE! virtual int CWnd::OnCommand(unsigned
+int,long) + 312 bytes
+00454D3D: DUMP2\DEBUG\DUMP2.EXE! virtual int CWnd::OnWndMsg(unsigned
+int,unsigned int,long,long *) + 83 bytes
+00454CC0: DUMP2\DEBUG\DUMP2.EXE! virtual long CWnd::WindowProc(unsigned
+int,unsigned int,long) + 46 bytes
+004528D9: DUMP2\DEBUG\DUMP2.EXE! long AfxCallWndProc(class CWnd *,struct
+HWND__ *,unsigned int,unsigned int,long) + 237 bytes
+00452D34: DUMP2\DEBUG\DUMP2.EXE! long AfxWndProc(struct HWND__ *,unsigned
+int,unsigned int,long) + 129 bytes
+BFF73663: WINDOWS\SYSTEM\KERNEL32.DLL! ThunkConnect32 + 2148 bytes
+BFF928E0: WINDOWS\SYSTEM\KERNEL32.DLL! UTUnRegister + 2492 bytes
+=== end AfxDumpStack() output ===
+```
   
  Yukarıdaki çıktıda her satır son işlev çağrısı, işlev çağrısı ve adlı işlev prototipi içeren modül tam yol adını adresini belirtir. İşlev çağrısının yığın üzerinde işlev tam adresinde gerçekleşmezse, bayt uzaklığı gösterilir.  
   

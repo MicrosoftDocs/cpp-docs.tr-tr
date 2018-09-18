@@ -16,59 +16,60 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57bd7f86a06c060a469d31e5fbdfcfbd7afb8c80
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7b3de829992bfa650280768a2fcd761feaeaece0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33283033"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061376"
 ---
 # <a name="compiler-warning-level-1-c4715"></a>Derleyici Uyarısı (düzey 1) C4715
-'function': değer tüm denetim yollarına döndürme  
-  
- Belirtilen işlev, bir değer döndürmesi olası değil.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4715a.cpp  
-// compile with: /W1 /LD  
-int func1( int i )  
-{  
-   if( i )  
-   return 3;  // C4715 warning, nothing returned if i == 0  
-}  
-```  
-  
- Bu uyarı önlemek için tüm yolları işlev için dönüş değeri atamak böylece kodu değiştirin:  
-  
-```  
-// C4715b.cpp  
-// compile with: /LD  
-int func1( int i )  
-{  
-   if( i ) return 3;  
-   else return 0;     // OK, always returns a value  
-}  
-```  
-  
- Kodunuzu hiçbir zaman döndüren, aşağıdaki örnekte olduğu gibi bir işlev çağrısı içerebilir mümkündür:  
-  
-```  
-// C4715c.cpp  
-// compile with: /W1 /LD  
-void fatal()  
-{  
-}  
-int glue()  
-{  
-   if(0)  
-      return 1;  
-   else if(0)  
-      return 0;  
-   else  
-      fatal();   // C4715  
-}  
-```  
-  
- Bu kod derleyici, bilmediğinden, aynı zamanda bir uyarı oluşturur `fatal` hiçbir zaman döndürür. Bu kod hata iletisine oluşturma önlemek için bildirme `fatal` kullanarak [__declspec(noreturn)](../../cpp/noreturn.md).
+
+'function': tüm denetim yolları değer döndürmez
+
+Belirtilen işlev, bir değer döndürmesi olası değil.
+
+## <a name="example"></a>Örnek
+
+```
+// C4715a.cpp
+// compile with: /W1 /LD
+int func1( int i )
+{
+   if( i )
+   return 3;  // C4715 warning, nothing returned if i == 0
+}
+```
+
+Bu uyarıyı engellemek için tüm yolları, dönüş değeri işleve atayın. böylece kodu değiştirin:
+
+```
+// C4715b.cpp
+// compile with: /LD
+int func1( int i )
+{
+   if( i ) return 3;
+   else return 0;     // OK, always returns a value
+}
+```
+
+Kodunuzu hiç dönmüyor, aşağıdaki örnekte olduğu gibi bir işlevi çağrısı içerebilir mümkündür:
+
+```
+// C4715c.cpp
+// compile with: /W1 /LD
+void fatal()
+{
+}
+int glue()
+{
+   if(0)
+      return 1;
+   else if(0)
+      return 0;
+   else
+      fatal();   // C4715
+}
+```
+
+Bu kod derleyici, bilmediğinden, aynı zamanda bir uyarı oluşturur `fatal` hiçbir zaman döndürür. Bu kod bir hata iletisi oluşturmasını önlemek için bildirin `fatal` kullanarak [__declspec(noreturn)](../../cpp/noreturn.md).

@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: baffb413a5c07acaeea7f4706ab9d6e951c65f04
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4f96bcf40b1fbc989daceabc810d019d1bb9aa98
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33280188"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060869"
 ---
 # <a name="compiler-warning-level-1-c4669"></a>Derleyici Uyarısı (düzey 1) C4669
-'cast': güvensiz dönüştürme: 'sınıfı', yönetilen veya WinRT tür nesnesi  
-  
- Bir cast Windows çalışma zamanı veya yönetilen türü içerir. Derleyici diğer bir işaretçi temelinde bir kopyasını gerçekleştirerek cast tamamlanır, ancak hiçbir başka bir denetim sağlar. Bu uyarıyı çözmek için yönetilen üyeleri ya da Windows çalışma zamanı türleri içeren sınıfları cast değil.  
-  
- Aşağıdaki örnek C4669 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C4669.cpp  
-// compile with: /clr /W1  
-ref struct A {  
-   int i;  
-   Object ^ pObj;   // remove the managed member to fix the warning  
-};  
-  
-ref struct B {  
-   int j;  
-};  
-  
-int main() {  
-   A ^ a = gcnew A;  
-   B ^ b = reinterpret_cast<B ^>(a);   // C4669  
-}  
+
+'cast': Güvenli olmayan dönüştürme: 'class' olan bir yönetilen veya WinRT türü nesne
+
+Bir yayın, bir Windows çalışma zamanı veya yönetilen türü içeriyor. Derleyici, diğer bir işaretçi temelinde bir kopyasını gerçekleştirerek atama tamamlanır, ancak hiçbir diğer denetim sağlar. Bu uyarıyı çözmek için yönetilen üyeleri veya Windows çalışma zamanı türleri içeren sınıfları yapmayın.
+
+Aşağıdaki örnek, C4669 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C4669.cpp
+// compile with: /clr /W1
+ref struct A {
+   int i;
+   Object ^ pObj;   // remove the managed member to fix the warning
+};
+
+ref struct B {
+   int j;
+};
+
+int main() {
+   A ^ a = gcnew A;
+   B ^ b = reinterpret_cast<B ^>(a);   // C4669
+}
 ```

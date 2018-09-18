@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9dfb13f388c6c40c6c1853ab8e87b2e39edbc1e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8dfad1703b36e1cd995207d35b99b323c883f828
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195210"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065419"
 ---
 # <a name="compiler-error-c2356"></a>Derleyici Hatası C2356
-başlatma segment çeviri birim sırasında değiştirmemeniz gerekir  
-  
- Olası nedenler:  
-  
--   `#pragma init_seg` Segment başlatma kodu tarafından öncesinde  
-  
--   `#pragma init_seg` bir başkası tarafından öncesinde `#pragma init_seg`  
-  
- Çözümlemek için modülün başlangıcına segment başlatma kodu taşıyın. Birden çok alana başlatılmalıdır, bunları modülleri ayırmak için taşıyın.  
-  
- Aşağıdaki örnek C2356 oluşturur:  
-  
-```  
-// C2356.cpp  
-#pragma warning(disable : 4075)  
-  
-int __cdecl myexit(void (__cdecl *)());  
-int __cdecl myexit2(void (__cdecl *)());  
-  
-#pragma init_seg(".mine$m",myexit)  
-#pragma init_seg(".mine$m",myexit2)   // C2356  
+
+başlatma kesiminin çeviri birimi sırasında değiştirmemelidir
+
+Olası nedenler:
+
+- `#pragma init_seg` Segmenti başlatma kodu tarafından öncesinde
+
+- `#pragma init_seg` bir başkası tarafından öncesinde `#pragma init_seg`
+
+Çözmek için segment başlatma kodu modülü başlangıcına Taşı. Birden fazla alana başlatılması gerekir, bunları modüller ayrı taşıyın.
+
+Aşağıdaki örnek, C2356 oluşturur:
+
+```
+// C2356.cpp
+#pragma warning(disable : 4075)
+
+int __cdecl myexit(void (__cdecl *)());
+int __cdecl myexit2(void (__cdecl *)());
+
+#pragma init_seg(".mine$m",myexit)
+#pragma init_seg(".mine$m",myexit2)   // C2356
 ```

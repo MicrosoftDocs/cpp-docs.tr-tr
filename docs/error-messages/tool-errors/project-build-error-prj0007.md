@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 288c86797d481719a594b061d6942923fe2230ce
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d944f444eb424339b4c214de1bb160e0545a3e35
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317771"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068097"
 ---
 # <a name="project-build-error-prj0007"></a>Proje Derleme Hatası PRJ0007
-Çıktı dizini 'dizini' oluşturulamadı.  
-  
- Visual C++ bir çıktı dizini oluşturulamadı. Olası nedenler şunlardır:  
-  
--   Çıktı dizini oluşturulacak açıldığı dizine salt okunurdur.  
-  
--   Disk alanı yetersiz bilgisayardır.  
-  
--   Geçersiz dizin yolu belirtildi.  
-  
--   Kullanıcı izinleri dizin oluşturmak yeterli değildir.
+
+Çıkış dizini 'dizin' oluşturulamadı.
+
+Visual C++ bir çıktı dizini oluşturulamadı. Olası nedenler şunlardır:
+
+- Çıkış dizinine oluşturulacak olan dizin salt okunur.
+
+- Disk alanı yetersiz bilgisayardır.
+
+- Geçersiz dizin yolu belirttiğiniz.
+
+- Kullanıcı izinleri dizini oluşturmak için yeterli değildir.

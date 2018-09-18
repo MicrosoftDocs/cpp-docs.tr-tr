@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7499c970396ce907a79fa5a666dd7dc1ab1e8c3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 34adab6500683d8b78a4ce9c990eaf04c143e424
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297901"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064717"
 ---
 # <a name="expression-evaluator-error-cxx0044"></a>İfade Değerlendirici Hatası CXX0044
-_based(void) işaretçi kullanımını gerektirir: > işleci  
-  
- Bir işaretçi temel alarak `void` doğrudan kullanılamaz. Tam işaretçisi kullanılarak oluşturması gerekir **: >** işleci.  
-  
- Bu hata için CAN0044 aynıdır.
+
+_based(void) işaretçisi kullanımı gerektirir: > işleci
+
+Bir işaretçi temel alarak `void` doğrudan kullanılamaz. Eksiksiz bir işaretçi kullanarak bir form gerekir **: >** işleci.
+
+Bu hata için CAN0044 aynıdır.

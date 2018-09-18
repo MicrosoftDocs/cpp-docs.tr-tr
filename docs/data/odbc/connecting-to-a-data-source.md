@@ -21,27 +21,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2b6a33f1e2421c56f89184d26185903b4ec7859e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4be8214ad036d67a02ce4b9c5935d3deb92252c1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088397"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061103"
 ---
 # <a name="connecting-to-a-data-source"></a>Veri Kaynağına Bağlanma
-ODBC veri kaynağını veri, bu verileri ve veri kaynağı adı kullanılarak tanımlanabilir veri kaynağının konumunu erişmek için gerekli bilgileri belirli bir kümesidir. Programınızın açısından bakıldığında, verileri, DBMS, ağ (varsa) ve ODBC veri kaynağını içerir.  
+
+ODBC veri kaynağında verileri, verilerin yanı sıra, bir veri kaynağı adını kullanarak açıklanan veri kaynağının konumu erişmek için gereken bilgileri belirli bir kümesidir. Programınızın açısından bakıldığında, verileri, DBMS, ağ (varsa) ve ODBC veri kaynağını içerir.  
   
- Bir veri kaynağı tarafından sağlanan verilere erişmek için program ilk veri kaynağına bağlantı oluşturmanız gerekir. Tüm veri erişimi Bu bağlantı üzerinden yönetilir.  
+Bir veri kaynağı tarafından sağlanan verilere erişmek için programınızı ilk veri kaynağı bağlantısı oluşturmanız gerekir. Tüm veri erişimi, bu bağlantı üzerinden yönetilir.  
   
- Veri kaynağı bağlantıları sınıfı tarafından kapsüllenmiş [CDatabase](../../mfc/reference/cdatabase-class.md). Zaman bir `CDatabase` nesne bir veri kaynağına bağlı olduğundan, aşağıdakileri yapabilirsiniz:  
+Veri kaynağı bağlantıları sınıfı tarafından Kapsüllenen [CDatabase](../../mfc/reference/cdatabase-class.md). Olduğunda bir `CDatabase` nesnesi, bir veri kaynağına bağlı olduğundan, aşağıdakileri yapabilirsiniz:  
   
--   Oluşturmak [kayıt kümeleri](../../mfc/reference/crecordset-class.md), tablo veya sorgu kayıtları seçin.  
+- Oluşturmak [kayıt kümeleri](../../mfc/reference/crecordset-class.md), tablolar veya sorguların kayıtları seçin.  
   
--   Yönetme [işlemleri](../../data/odbc/transaction-odbc.md), toplu güncelleştirmeler için tüm veri kaynağına kaydedilmiş aynı anda (veya tüm işlem geri veri kaynağına bağlanacak şekilde alınır) — veri kaynağı gerekli işlem düzeyini destekliyorsa.  
+- Yönetme [işlemleri](../../data/odbc/transaction-odbc.md), toplu güncelleştirmeler tüm veri kaynağına teslim tek seferde (veya veri kaynağına geri değişmeden, bu nedenle tüm işlem alınır) — veri kaynağı işlemleri gerekli düzeyi destekliyorsa.  
   
--   Doğrudan yürütme [SQL](../../data/odbc/sql.md) deyimleri.  
+- Doğrudan yürütme [SQL](../../data/odbc/sql.md) deyimleri.  
   
- Veri kaynağı bağlantısı ile çalışmayı bitirdiğinizde, kapatmak `CDatabase` nesne ve onu yok veya yeni bir bağlantı için yeniden kullanabilirsiniz. Veri kaynağı bağlantıları hakkında daha fazla bilgi için bkz: [veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md).  
+Veri kaynağı bağlantısı ile çalışmayı bitirdiğinizde, siz kapatana `CDatabase` nesne ve onu yok veya yeniden kullanmak için yeni bir bağlantı. Veri kaynağı bağlantıları hakkında daha fazla bilgi için bkz. [veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ODBC ve MFC](../../data/odbc/odbc-and-mfc.md)
+
+[ODBC ve MFC](../../data/odbc/odbc-and-mfc.md)

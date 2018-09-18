@@ -16,24 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a711f37e3ab54de5e3cfad77b82fbd603edfaf6e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2d310ab3a9a4bd0b31b9e6295a93a571a54f585b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33263833"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068916"
 ---
 # <a name="compiler-error-c3645"></a>Derleyici Hatası C3645
-'function': __clrcall yerel koda derlenmiş işlevleri kullanılamaz  
-  
- Bir işlevdeki bazı anahtar sözcükleri varlığını için yerel derlenecek işlevi neden olur.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3645 oluşturur.  
-  
-```  
-// C3645.cpp  
-// compile with: /clr /c  
-#pragma unmanaged   
-int __clrcall dog() {}   // C3645  
+
+'function': yerel kod olarak derlenen işlevlerde __clrcall kullanılamaz
+
+Bazı anahtar sözcükler bir işlevde varlığını işlevi yerel olarak derlenmesine neden olur.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3645 oluşturur.
+
+```
+// C3645.cpp
+// compile with: /clr /c
+#pragma unmanaged
+int __clrcall dog() {}   // C3645
 ```

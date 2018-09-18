@@ -15,42 +15,44 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a93fc1aa0f3108d4897a45b9014970afab220439
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ca0850f0e798067ba48b59a1c2585b8ba87c5451
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32390524"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062182"
 ---
 # <a name="files-and-streams"></a>Dosyalar ve Akışlar
-Bir program, okuma ve dosyalara yazma, hedef ortam ile iletişim kurar. Bir dosya olabilir:  
-  
--   Veri okuma ve yazma sürekli olarak ayarlayın.  
-  
--   Bir program (örneğin, bir işlem hattı) tarafından oluşturulan bayt akışı.  
-  
--   Bayt akışı bir aygıttaki gönderilen veya alınan.  
-  
- Son iki öğeleri etkileşimli dosyalarıdır. Genellikle, bir programla etkileşim kurmasına asıl yollarla dosyalarıdır. Tüm bu tür dosyaları çok aynı şekilde işlemek — kitaplık işlevleri çağırarak. Standart üstbilgi STDIO içerir. Bu işlevlerin çoğu bildirmek için H.  
-  
- Birçok dosyada işlemleri gerçekleştirmek için önce dosyayı açılması gerekir. Bir dosyanın açılması çeşitli dosyalar arasında çok sayıda fark üzerinden glosses standart C Kitaplığı veri yapısında bir akış ile ilişkilendirir. Kitaplık her dosya türünde bir nesne akışında durumunu korur.  
-  
- Hedef ortam program başlatma önce üç dosyaları açar. Kitaplık işlevini çağırarak bir dosyayı açabilmek için [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md) iki bağımsız değişkenlere sahip. ( `fopen` İşlevi kullanım dışı bırakıldı, kullanın [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md) yerine.) İlk bağımsız değişkeni bir dosya adıdır. İkinci bağımsız değişkeni belirten bir C dizesidir:  
-  
--   Olup, ya da her ikisine veri dosyasından veri okunamıyor veya yazılamıyor düşündüğünüz.  
-  
--   Dosya için yeni içerik oluştur (veya daha önce yoktu, bir dosya oluşturmak) düşündüğünüz veya varolan içeriğini bırakın.  
-  
--   Dosyaya yazma varolan içeriği değiştirebilirsiniz olup yalnızca dosyanın sonunda bayt eklemeniz gerekir.  
-  
--   Bir metin akış ya da bir ikili akış değiştirmek isteyip istemediğinizi.  
-  
- Dosya başarıyla açıldıktan sonra ardından akış odaklı bayt (bayt akışı) olup olmadığını belirlemek veya geniş (geniş bir akışı) yönelik. Bir akış başlangıçta bağlanmamış. Akışta çalışması için bazı işlevlerini çağırma yönelik belirli diğer işlevleri yönelik geniş bir bunu yaparken bayt kolaylaştırır. Bir çağrı tarafından kapatılana kadar kez kurulduğunda, bir akış yönünü tutar [fclose](../c-runtime-library/reference/fclose-fcloseall.md) veya [freopen](../c-runtime-library/reference/freopen-wfreopen.md).  
-  
- © 1989-2001 tarafından hazırlanan Plauger ve Jim Brodie. Tüm hakları saklıdır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Metin ve ikili akışlar](../c-runtime-library/text-and-binary-streams.md)   
- [Bayt ve geniş akışlar](../c-runtime-library/byte-and-wide-streams.md)   
- [Akışları denetleme](../c-runtime-library/controlling-streams.md)   
- [Akış Durumları](../c-runtime-library/stream-states.md)
+
+Bir program, okuma ve yazma, hedef ortam ile iletişim kurar. Bir dosya olabilir:
+
+- Veri okuma ve yazma sürekli olarak ayarlayın.
+
+- Bir program (örneğin, bir işlem hattı) tarafından oluşturulan bayt akışı.
+
+- Bayt akışı bir aygıttaki gönderilen veya alınan.
+
+Son iki öğeyi etkileşimli dosyalarıdır. Genellikle, bir programla etkileşim kurmasına asıl yöntemlerle dosyalarıdır. Bu tür dosyaların çok aynı şekilde işlemek — kitaplık işlevleri çağırarak. Standart üst bilgi STDIO dahil. Bu işlevlerin çoğunu bildirmek için H.
+
+Birçok dosya üzerindeki işlemler gerçekleştirmek için önce dosyanın açılması gerekir. Dosya açma stream, çeşitli türlerdeki dosyaları arasında pek çok fark üzerinden glosses standart C Kitaplığı içinde bir veri yapısı ile ilişkilendirir. Kitaplığa dosya türünde bir nesne içindeki her akış durumu korur.
+
+Hedef ortamı, program başlatma önce üç dosyayı açar. Kitaplık işlevini çağırarak bir dosyayı açabilirsiniz [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md) iki bağımsız değişken. ( `fopen` İşlevi kullanımdan kaldırıldı, kullanın [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md) yerine.) İlk bağımsız değişkeni bir dosya adıdır. İkinci bağımsız değişkeni belirten C dize şöyledir:
+
+- İster veri dosyasından verileri okuma veya bunu veya her ikisini de yazma sunmayı planlıyoruz.
+
+- Dosya için yeni içerik oluştur (veya daha önce mevcut bir dosya oluşturun) istediğinize veya var olan içeriğin yerinde bırakın.
+
+- Olup bir dosyaya yazma mevcut içeriğini değiştirebilir veya yalnızca dosyanın sonunda bayt eklemeniz gerekir.
+
+- Metin akışına veya ikili akışa değiştirmek isteyip istemediğinizi.
+
+Dosya başarıyla açıldıktan sonra ardından akış odaklı bayt (bayt akışı) olup olmadığını belirlemek veya geniş (geniş bir akışı) yönelik. Başlangıçta ilişkisiz bir akış biçimindedir. Akışta çalışmak için bazı işlevlerini çağırma yönelik belirli diğer işlevleri yönelik geniş bunu yaparken bayt yapar. Bir çağrı tarafından kapatılana kadar kez kurulduğunda, bir akış yönünü korur [fclose](../c-runtime-library/reference/fclose-fcloseall.md) veya [freopen](../c-runtime-library/reference/freopen-wfreopen.md).
+
+© 2001 1989 tarafından hazırlanan Plauger ve Jim Brodie. Tüm hakları saklıdır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Metin ve İkili Akışlar](../c-runtime-library/text-and-binary-streams.md)<br/>
+[Bayt ve Geniş Akışlar](../c-runtime-library/byte-and-wide-streams.md)<br/>
+[Akışları Denetleme](../c-runtime-library/controlling-streams.md)<br/>
+[Akış Durumları](../c-runtime-library/stream-states.md)
