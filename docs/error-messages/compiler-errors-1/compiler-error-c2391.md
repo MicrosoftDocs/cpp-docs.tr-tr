@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a16ed19f5cac9d6c23a3f709e40fc290223e93c7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1201651ffc52dae7b8f184895f8005750ee4697e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33224771"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102378"
 ---
 # <a name="compiler-error-c2391"></a>Derleyici Hatası C2391
-'tanımlayıcısı': 'friend' tür tanımı sırasında kullanılamaz  
-  
- `friend` Bildirimi tam sınıf bildirimi içerir. A `friend` bildirimi üye işlevi veya ayrıntılandırılmış tür belirteci, ancak tüm sınıf bildirimi belirtebilirsiniz.  
-  
- Aşağıdaki örnek C2326 oluşturur:  
-  
-```  
-// C2391.cpp  
-// compile with: /c  
-class D {   
-   void func( int );   
-};  
-  
-class A {  
-   friend class B { int i; };   // C2391  
-  
-   // OK  
-   friend class C;  
-   friend void D::func(int);  
-};  
+
+'identifier': 'friend' tür tanımı sırasında kullanılamaz
+
+`friend` Bildirimi tam sınıf bildirimi içerir. A `friend` bildirimi bir üye işlev veya ayrıntılı tür tanımlayıcısı, ancak tam sınıf bildirimi belirtebilirsiniz.
+
+Aşağıdaki örnek, C2326 oluşturur:
+
+```
+// C2391.cpp
+// compile with: /c
+class D {
+   void func( int );
+};
+
+class A {
+   friend class B { int i; };   // C2391
+
+   // OK
+   friend class C;
+   friend void D::func(int);
+};
 ```

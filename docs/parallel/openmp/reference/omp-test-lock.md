@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4bb63974f5d1864fe7b1c6359f7e8bda19b90c2
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: c34edd258c087f70bc9bb0b732cfd7ca192c791c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691943"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106109"
 ---
 # <a name="omptestlock"></a>omp_test_lock
-Kilit ayarlamaya çalışır, ancak iş parçacığı engellemez.  
+Kilit ayarlamaya çalışır, ancak yürütme iş parçacığını engellemez.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,14 +34,13 @@ int omp_test_lock(
 );  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
+### <a name="parameters"></a>Parametreler
   
- `lock`  
- Türünde bir değişken [omp_lock_t](../../../parallel/openmp/reference/omp-lock-t.md) , başlatılmış ile [omp_init_lock](../../../parallel/openmp/reference/omp-init-lock.md).  
+*lock*<br/>
+Türünde bir değişken [omp_lock_t](../../../parallel/openmp/reference/omp-lock-t.md) , başlatılan ile [omp_init_lock](../../../parallel/openmp/reference/omp-init-lock.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [3.2.5 omp_test_lock ve omp_test_nest_lock işlevleri](../../../parallel/openmp/3-2-5-omp-test-lock-and-omp-test-nest-lock-functions.md).  
+ Daha fazla bilgi için [3.2.5 omp_test_lock ve omp_test_nest_lock işlevleri](../../../parallel/openmp/3-2-5-omp-test-lock-and-omp-test-nest-lock-functions.md).  
   
 ## <a name="example"></a>Örnek  
   

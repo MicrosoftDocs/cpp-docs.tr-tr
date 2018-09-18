@@ -18,17 +18,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa0047193b3c16c93c23bab648735c2cc643bf20
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 50ab066219832258965ec96477a2ef268e127c53
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387550"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099661"
 ---
 # <a name="debug"></a>_DEBUG
-Derleyici tanımlar `_DEBUG` /MTd veya /MDd seçeneğini belirlediğinizde. Bu seçenekler, hata ayıklama sürümleri C çalışma zamanı kitaplığı belirtin.  
-  
- Daha fazla bilgi için bkz: [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetim Bayrakları](../c-runtime-library/control-flags.md)
+
+Derleyici tanımlar  `_DEBUG` /mtd veya/MDd seçeneğini belirttiğinizde. Bu seçenekler, hata ayıklama sürümleri C çalışma zamanı kitaplığı belirtin.
+
+Daha fazla bilgi için [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Denetim Bayrakları](../c-runtime-library/control-flags.md)

@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e52b08d7a7d93682e1750ae545183195fc563734
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 695576afc4daa7bff93d40ff1477dbc1a3b06363
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33164129"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111699"
 ---
 # <a name="compiler-error-c2012"></a>Derleyici Hatası C2012
-ad aşağıdaki eksik ' <'  
-  
- Bir `#include` yönergesi gerekli dosya adı eksik.  
-  
- Aşağıdaki örnek C2012 oluşturur:  
-  
-```  
-// C2012.cpp  
-#include <   // C2012 include the filename to resolve  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C2012b.cpp  
-// compile with: /c  
-#include <stdio.h>  
+
+işaretinden sonra ad eksik ' <'
+
+Bir `#include` yönergesi gerekli dosya adı eksik.
+
+Aşağıdaki örnek, C2012 oluşturur:
+
+```
+// C2012.cpp
+#include <   // C2012 include the filename to resolve
+```
+
+Olası çözüm:
+
+```
+// C2012b.cpp
+// compile with: /c
+#include <stdio.h>
 ```

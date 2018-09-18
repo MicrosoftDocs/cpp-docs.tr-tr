@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37747ebb68b5e965c15ef9763731e0b4d56ac57e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 83de08dfb0ea42e99a7ef7185fb3b8fc492bdec8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33265830"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101377"
 ---
 # <a name="compiler-error-c3812"></a>Derleyici Hatası C3812
-'property' özelliği bildiriminde ilk belirteç olmalıdır  
-  
- Bir özellik bildirirken `__property` anahtar sözcüğü satırındaki ilk simge olması gerekir.  
-  
- C3812 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.  
+
+'özelliği' bir özellik bildirimindeki ilk belirteç olmalıdır
+
+Bir özellik bildirirken `__property` anahtar sözcüğü satırındaki ilk belirteç olmalıdır.
+
+C3812 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.

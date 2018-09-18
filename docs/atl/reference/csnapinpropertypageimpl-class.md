@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0eb34b0ce7b087a457b751604ffd86e61085bf5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c89f577168593dcb22570af63801fc05654eb4b3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753080"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100703"
 ---
 # <a name="csnapinpropertypageimpl-class"></a>Csnapınpropertypageımpl sınıfı
 
@@ -125,7 +125,7 @@ CSnapInPropertyPageImpl(LPCTSTR lpszTitle = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszTitle*  
+*lpszTitle*<br/>
 [in] Özellik sayfasının başlığı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -326,10 +326,10 @@ LRESULT QuerySiblings(WPARAM wParam, LPARAM lParam);
 
 ### <a name="parameters"></a>Parametreler
 
-*wParam*  
+*wParam*<br/>
 [in] Ek ileti bağımlı bilgileri belirtir.
 
-*lParam*  
+*lParam*<br/>
 [in] Ek ileti bağımlı bilgileri belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -350,7 +350,7 @@ void SetModified(BOOL bChanged = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bChanged*  
+*bChanged*<br/>
 [in] Özellik sayfası ayarları uygulanmış olan son daraltılmasından değiştirilmiş belirtmek için TRUE; Özellik sayfası ayarları uygulanmış veya yoksayılıp yoksayılmaması gerektiğini belirtmek için FALSE.
 
 ### <a name="remarks"></a>Açıklamalar

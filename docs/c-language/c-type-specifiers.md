@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16c204636baf87cd88f80294b1f413cacc9f5ddc
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c2bf6990180a7fe325b1ee3d4f4e497a433c183e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764270"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103366"
 ---
 # <a name="c-type-specifiers"></a>C Tür Tanımlayıcıları
 
@@ -28,19 +28,7 @@ Tür belirleyicilerde bildirimleri bir değişken veya işlev bildirimi türün�
 
 ## <a name="syntax"></a>Sözdizimi
 
-*tür belirticisi*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**Geçersiz kılma**  
-&nbsp;&nbsp;&nbsp;&nbsp;**Char**  
-&nbsp;&nbsp;&nbsp;&nbsp;**kısa**  
-&nbsp;&nbsp;&nbsp;&nbsp;**int**  
-&nbsp;&nbsp;&nbsp;&nbsp;**uzun**  
-&nbsp;&nbsp;&nbsp;&nbsp;**kayan nokta**  
-&nbsp;&nbsp;&nbsp;&nbsp;**çift**  
-&nbsp;&nbsp;&nbsp;&nbsp;**İmzalı**  
-&nbsp;&nbsp;&nbsp;&nbsp;**İşaretsiz**  
-&nbsp;&nbsp;&nbsp;&nbsp;*struct veya union tanımlayıcısı*  
-&nbsp;&nbsp;&nbsp;&nbsp;*sabit listesi belirticisi*  
-&nbsp;&nbsp;&nbsp;&nbsp;*TypeDef adı*  
+*tür belirticisi*: &nbsp; &nbsp; &nbsp; &nbsp; **void** &nbsp; &nbsp; &nbsp; &nbsp; **char** &nbsp; &nbsp; &nbsp; &nbsp; **kısa** &nbsp; &nbsp; &nbsp; &nbsp; **int** &nbsp; &nbsp; &nbsp; &nbsp; **uzun** &nbsp; &nbsp; &nbsp; &nbsp; **float** &nbsp; &nbsp; &nbsp; &nbsp; **çift** &nbsp; &nbsp; &nbsp; &nbsp; **imzalı** &nbsp; &nbsp; &nbsp; &nbsp; **işaretsiz** &nbsp; &nbsp; &nbsp; &nbsp; *yapısı-veya-birleşim-specifier* &nbsp; &nbsp; &nbsp; &nbsp; *sabit listesi belirticisi* &nbsp; &nbsp; &nbsp; &nbsp; *typedef adı*
 
 **Signed char**, **signed int**, **imzalı short int**, ve **imzalı long int** türleri ile birlikte bunların **işaretsiz**  ortaklarınıza ve **enum**, adlandırılır *integral* türleri. **Float**, **çift**, ve **uzun çift** tür tanımlayıcıları denir *kayan* veya *kayan nokta* türleri. Herhangi bir tamsayı veya kayan nokta türü belirticisi, bir değişken veya işlev bildiriminde kullanabilirsiniz. Varsa bir *tür tanımlayıcısı* sağlanmamış bir bildiriminde olmasını alınır **int**.
 
@@ -87,4 +75,4 @@ Ek tür tanımlayıcıları ile oluşturabileceğiniz **typedef** açıklandığ
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bildirimler ve Türler](../c-language/declarations-and-types.md)  
+[Bildirimler ve Türler](../c-language/declarations-and-types.md)

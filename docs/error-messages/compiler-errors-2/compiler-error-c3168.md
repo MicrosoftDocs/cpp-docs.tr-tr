@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83f0d6c6b35d863ee200798bd4c6a8bcd08d88ab
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b2a70af70af5b31ef9a3bf2fe939eef28783369a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245244"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106460"
 ---
 # <a name="compiler-error-c3168"></a>Derleyici Hatası C3168
-'type': temel alınan tür enum için geçersiz  
-  
-Arka plandaki için belirtilen tür `enum` türü geçerli değil. Temel alınan türü, tamsayı C++ türü veya karşılık gelen bir CLR türü olması gerekir.  
-  
-Aşağıdaki örnek C3168 oluşturur:  
-  
-```  
-// C3168.cpp  
-// compile with: /clr /c  
-ref class G{};  
-  
-enum class E : G { e };   // C3168  
-enum class F { f };   // OK  
-```  
+
+'type': numaralandırma için temeldeki tür geçersiz
+
+Arka plandaki için belirtilen türü `enum` türü geçerli değildi. Temel alınan türü bir tamsayı C++ türü veya karşılık gelen bir CLR türü olması gerekir.
+
+Aşağıdaki örnek, C3168 oluşturur:
+
+```
+// C3168.cpp
+// compile with: /clr /c
+ref class G{};
+
+enum class E : G { e };   // C3168
+enum class F { f };   // OK
+```

@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6013720b55892ffd34e1faf132a69842e4bceb50
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0b67c5ba4c714b096da58b1e4d837840dc6b5fd2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198514"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113220"
 ---
 # <a name="compiler-error-c2459"></a>Derleyici Hatası C2459
-'tanımlayıcısı': tanımlanıyorsa; Anonim bir üye olarak eklenemez  
-  
- Sınıf, yapı veya birleşim kendi kapsamında anonim bir birleşim bir üyesi tarafından tanımlandı.  
-  
- Aşağıdaki örnek C2459 oluşturur:  
-  
-```  
-// C2459.cpp  
-// compile with: /c  
-class C {  
-   union { int C; };   // C2459  
-   union { int D; };  
-};  
+
+'identifier': tanımlanıyor; bir anonim üye olarak eklenemez
+
+Bir sınıf, yapı veya birleşim kendi kapsamı içinde anonim birleşim üyesi tarafından tanımlandı.
+
+Aşağıdaki örnek, C2459 oluşturur:
+
+```
+// C2459.cpp
+// compile with: /c
+class C {
+   union { int C; };   // C2459
+   union { int D; };
+};
 ```

@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac9d314f523706ae6b4a18070f51341eba43984e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 300dac81a55a07f163f0fe6bb01646403517b554
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317209"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107662"
 ---
 # <a name="nmake-fatal-error-u1086"></a>NMAKE Önemli Hatası U1086
-**çıkarım kuralı bağımlıları sahip olamaz**  
-  
- İki nokta üst üste (**:**) bir çıkarım kuralı bunlardan birini gelmelidir:  
-  
--   Yeni satır karakteri  
-  
--   Noktalı virgül (**;**), hangi uyulması komutu tarafından  
-  
--   Numara işareti (**#**), hangi uyulması açıklamaya göre
+
+**çıkarım kuralı bağımlılara sahip olamaz**
+
+İki nokta üst üste (**:**) içinde bir çıkarma kuralı bunlardan birini gelmelidir:
+
+- Yeni satır karakteri
+
+- Noktalı virgül (**;**), hangi sonrasında bir komut tarafından
+
+- Numara işareti (**#**), hangi sonrasında bir açıklamaya göre

@@ -16,47 +16,51 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 673eff58b09fe1f2bbfe8a7629594399e8ca6b22
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1fd58a8c38ee6dc5f77ef280ba3b7a546a666cd6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33259145"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107870"
 ---
 # <a name="compiler-error-c3480"></a>Derleyici Hatası C3480
-'var': kapsayan bir işlev kapsamdan bir lambda yakalama değişken olmalıdır  
-  
- Lambda yakalama değişkeni kapsayan bir işlev kapsamından değil.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
--   Değişkeni lambda ifadesi yakalama listesinden kaldırın.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3480 oluşturur çünkü değişkeni `global` kapsayan bir işlev kapsamından değil:  
-  
-```  
-// C3480a.cpp  
-  
-int global = 0;  
-int main()  
-{  
-   [&global] { global = 5; }(); // C3480  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek değişkeni kaldırarak C3480 çözümler `global` lambda ifadesi yakalama listesinden:  
-  
-```  
-// C3480b.cpp  
-  
-int global = 0;  
-int main()  
-{  
-   [] { global = 5; }();  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+
+'var': bir lambda yakalama değişkeni bir kapsayan işlev kapsamından gelmelidir
+
+Lambda yakalama değişkeni bir kapsayan işlev kapsamından değil.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+- Değişkeni, lambda ifadesinin yakalama listeden kaldırın.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek C3480 oluşturur çünkü değişken `global` bir kapsayan işlev kapsamından değil:
+
+```
+// C3480a.cpp
+
+int global = 0;
+int main()
+{
+   [&global] { global = 5; }(); // C3480
+}
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnekte, değişken kaldırarak C3480 çözümler `global` lambda ifadesinin yakalama listesinden:
+
+```
+// C3480b.cpp
+
+int global = 0;
+int main()
+{
+   [] { global = 5; }();
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)

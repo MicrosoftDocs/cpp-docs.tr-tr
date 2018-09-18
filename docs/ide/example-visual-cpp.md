@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cefd38a18447d0e8c9121d61c0ba963e9da39187
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 7c6be247c6c756557e7173c4b295197d9e4267cb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33321437"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110971"
 ---
 # <a name="ltexamplegt-visual-c"></a>&lt;örnek&gt; (Visual C++)
-\<Örnek > etiketini bir yöntemi veya diğer kitaplık üyesini nasıl kullanılacağını örneği belirtmenize olanak sağlar. Genellikle, bu da kullanımını içerir [ \<kodu >](../ide/code-visual-cpp.md) etiketi.  
+\<Örnek > etiketi bir yöntem veya diğer kitaplık üyesini kullanmaya ilişkin bir örnek belirtmenize olanak sağlar. Yaygın olarak, bu da kullanımını kapsayacaktır [ \<kod >](../ide/code-visual-cpp.md) etiketi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,11 +35,11 @@ ms.locfileid: "33321437"
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `description`  
- Kod örneği açıklaması.  
+*Açıklaması*<br/>
+Kod örneği açıklaması.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İle derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) bir dosyaya işlem belgesi açıklamaları için.  
+ Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.  
   
 ## <a name="example"></a>Örnek  
   

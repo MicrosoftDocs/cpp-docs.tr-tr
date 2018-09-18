@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e443dd1c48b7ce1d3c5c1173f6832d08d71508cd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 01a9ebad83f3b0596dbf21809f91c11fd73fda2a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197344"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102447"
 ---
 # <a name="fatal-error-c1007"></a>Önemli hata C1007
-seçenek dizesinde tanınmayan bayrağı  
-  
- Komut satırı seçeneği geçersiz bir dize içeriyor. Denetleme **CL** komut satırı ve hatalar için ortam değişkeni.
+
+Tanınmayan bayrak dizesinde seçeneği
+
+Komut satırı seçeneğini geçersiz bir dize içeriyor. Denetleme **CL** komut satırı ve hatalar için ortam değişkeni.

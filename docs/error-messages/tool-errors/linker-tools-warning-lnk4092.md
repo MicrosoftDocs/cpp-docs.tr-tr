@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72edd9e75dbc781355396e38f767a64c1ded3aa9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b9b47b347e11e640425bc7840a0f78a33e9e3b7e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302587"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113428"
 ---
 # <a name="linker-tools-warning-lnk4092"></a>Bağlayıcı Araçları Uyarısı LNK4092
-Paylaşılan yazılabilir Bölümü 'bölüm' relocatıons içerir. Görüntü düzgün çalışmayabilir  
-  
- Olası ciddi bir sorun, sizi uyaracak şekilde paylaşılan bir bölüm sahip olduğunda bu uyarı bağlayıcı yayar.  
-  
- Birden çok işlem arasında veri paylaşımı için bir bölüm "paylaşılan" olarak işaretlemek için yoludur Ancak, bir bölüm paylaşılan olarak işaretleme sorunlara neden olabilir. Örneğin, paylaşılan veri bölümü şöyle bildirimlerinde içeren DLL vardır:  
-  
-```  
-int var = 1;  
-int *pvar = &var;  
-```  
-  
- Bağlayıcı çözümlenemiyor `pvar` burada bellekte DLL yüklü değerini bağımlı olduğundan, bu nedenle, koyar yeniden konumlandırma kayıt DLL'de. DLL adresini belleğe yüklendiği zaman `var` çözülebilir ve `pvar` atanmış. Başka bir işlem aynı DLL'yi yükler, ancak aynı anda yüklenemiyor adres, adresi için yeniden konumlandırma `var` ikinci işlemi ve ilk işlemin adres alanı yanlış adresine işaret edecek için güncelleştirilir.
+
+Paylaşılan yazılabilir bölüm 'bölümü' konum değiştirmeleri içeriyor; Görüntü düzgün çalışmayabilir
+
+Bağlayıcı, potansiyel ciddi bir sorun sizi uyarabilmek için paylaşılan bir bölümü olduğunda bu uyarı yayar.
+
+Bir bölüm "paylaşılan" olarak işaretlemek için birden çok işlem arasında veri paylaşımı yollarından biri açıklanmıştır. Ancak, bir bölüm paylaşılan olarak işaretlenmesi sorunlara neden olabilir. Örneğin, bir paylaşılan veri bölümü şöyle bildirimlerinde içeren bir DLL vardır:
+
+```
+int var = 1;
+int *pvar = &var;
+```
+
+Bağlayıcı çözümlenemiyor `pvar` nerede bellekte DLL yüklü değerine bağlı olduğundan, bu nedenle bunu koyar bir yeniden konumlandırma kaydı DLL'de. Ne zaman dll Dosyasının belleğe yüklendiği, adresini `var` çözülebilir ve `pvar` atanmış. Başka bir işlem aynı DLL'yi yükler, ancak aynı anda yüklenemiyor adres, adresi için bir yeniden konumlandırma `var` ikinci işlem ve ilk işlemin adres alanı yanlış adresine işaret edecek için güncelleştirilir.

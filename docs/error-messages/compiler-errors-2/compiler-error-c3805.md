@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5aa7a2d388e950b7825c8dba78df565bc4a798a5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b83f75cca9b292c454fc40ad5487cf80ee9ceaef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33265058"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106343"
 ---
 # <a name="compiler-error-c3805"></a>Derleyici Hatası C3805
-'belirteci': beklenmeyen bir belirteç beklenen ya da '}' ya da bir tanımlayıcı  
-  
- Bir özellik tanımlarken, geçersiz bir belirteç karşılaşıldı. Geçersiz belirteç kaldırın.
+
+'token': beklenmeyen belirteç bekleniyordu '}' veya bir tanımlayıcı
+
+Özellik tanımlama, geçersiz bir belirteç karşılaşıldı. Geçersiz belirteç kaldırın.

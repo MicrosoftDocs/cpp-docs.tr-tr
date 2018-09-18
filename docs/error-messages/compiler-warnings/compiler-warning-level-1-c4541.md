@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d1f750ad9362f868b29ba93ea383b60156e648d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6c5b8959d7bdfb92c2813e4c7d81de652625942b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274683"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098985"
 ---
 # <a name="compiler-warning-level-1-c4541"></a>Derleyici Uyarısı (düzey 1) C4541
-'biçimli türü 'type' /GR-ile; kullanılan tanımlayıcısı' beklenmeyen davranışlara neden olabilir  
-  
- Çalışma zamanı türü bilgileri etkinleştirmeden çalışma zamanı türü bilgileri gerektiren bir özellik kullanmayı denediniz. WITH RECOMPILE [/GR](../../build/reference/gr-enable-run-time-type-information.md).
+
+'identifier' polimorfik türü 'type' / GR-; ile kullanılan öngörülemeyen davranışlara neden olabilir
+
+Çalışma zamanı türü bilgileri etkinleştirmeden çalışma zamanı tür bilgisi gerektiren bir özelliğini denedi. İle derlemeniz [GR](../../build/reference/gr-enable-run-time-type-information.md).

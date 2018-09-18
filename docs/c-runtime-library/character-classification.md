@@ -17,20 +17,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 262479a4538843cef2af61be0ec56347c7afc75f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: f4c194432c3d7442677a78046ac893e5e3e2a7ee
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222454"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101351"
 ---
 # <a name="character-classification"></a>Karakter Sınıflaması
 
 Bu yordamların her biri belirtilen tek baytlık karakteri, geniş karakter veya koşula uyması için çok baytlı karakteri test eder. (Tanım olarak, ASCII karakter kümesi 0 ile 127 arasında tüm çok baytlı karakter kümelerinin alt kümesidir. Örneğin, Japonca katakana ASCII iyi ASCII olmayan karakterler de içerir.)
 
- Test koşulları ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş.
+Test koşulları ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş.
 
- Genellikle bu yordamların hızlı bir şekilde yazabilir ve rutinler olmalıdır testleri yürütün. Örneğin, aşağıdaki kodu bir çağrısına göre daha yavaş çalıştırır `isalpha(c)`:
+Genellikle bu yordamların hızlı bir şekilde yazabilir ve rutinler olmalıdır testleri yürütün. Örneğin, aşağıdaki kodu bir çağrısına göre daha yavaş çalıştırır `isalpha(c)`:
 
 ```C
 if ((c >= 'A') && (c <= 'Z')) || ((c >= 'a') && (c <= 'z'))

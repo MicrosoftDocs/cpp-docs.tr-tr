@@ -16,24 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8c134d84ef27110cde83d54cbb8e46aa6a39efa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 52525062a07c7c55dd323109be87667d9e0847d6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236565"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098231"
 ---
 # <a name="compiler-error-c2821"></a>Derleyici Hatası C2821
-'yeni işleç' ilk biçimsel parametresi 'imzasız int' olmalıdır  
-  
-İlk biçimsel parametresi [new işleci](../../standard-library/new-operators.md#op_new) imzasız olmalıdır `int`.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2821 oluşturur:  
-  
-```cpp  
-// C2821.cpp  
-// compile with: /c  
-void * operator new( /* unsigned int,*/ void * );   // C2821  
-void * operator new( unsigned int, void * );  
+
+'operator new' için ilk biçimsel parametre 'unsigned int' olmalıdır
+
+İlk biçimsel parametresi [new işleci](../../standard-library/new-operators.md#op_new) imzasız olmalıdır `int`.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2821 oluşturur:
+
+```cpp
+// C2821.cpp
+// compile with: /c
+void * operator new( /* unsigned int,*/ void * );   // C2821
+void * operator new( unsigned int, void * );
 ```

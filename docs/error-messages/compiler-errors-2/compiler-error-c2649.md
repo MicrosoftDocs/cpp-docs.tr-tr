@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d23885c43618eab725dbf4425c273a59a77ba393
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 719a822f0e6b00d7f0de914c50f0391d4f3484f9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199307"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105084"
 ---
 # <a name="compiler-error-c2649"></a>Derleyici Hatası C2649
-'tanımlayıcısı': bir 'sınıfı anahtar' değil  
-  
- Sınıf, yapı veya birleşim bildirimi hatalı bir etiketini kullanır.
+
+'identifier': bir 'sınıf anahtarı' değil
+
+Bir sınıf, yapı veya birleşim bildirimi yanlış bir etiket kullanır.

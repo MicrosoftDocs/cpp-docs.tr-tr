@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3cb07824ad5212f4174a6f19e3efa4549432455
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: cd68e4488857708d119399df8bbc0da467983115
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894462"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100757"
 ---
 # <a name="ltincludegt-visual-c"></a>&lt;dahil&gt; (Visual C++)
 
@@ -37,16 +37,16 @@ ms.locfileid: "43894462"
 
 #### <a name="parameters"></a>Parametreler
 
-`filename`  
+*Dosya adı*<br/>
 Belgeleri içeren dosyanın adı. Dosya adını içeren bir yol nitelenmiş olmalıdır.  Ad, tek veya çift tırnak içine alın.  Değil bulamazsa, derleyici bir uyarı verir `filename`.
 
-`tagpath`  
+*tagpath*<br/>
 İstenen düğüm dosyasında yer alan kümesi seçer geçerli bir XPath ifadesi.
 
-`name`  
+*Adı*<br/>
 Yorumları önündeki etiketinde ad tanımlayıcısı; `name` sahip bir `id`.
 
-`id`  
+*id*<br/>
 Yorumları önünde etiket kimliği.  Ad, tek veya çift tırnak içine alın.
 
 ## <a name="remarks"></a>Açıklamalar

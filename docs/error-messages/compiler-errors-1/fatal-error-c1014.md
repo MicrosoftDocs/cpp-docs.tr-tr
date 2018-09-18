@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b52f0d998e124412c3cf81de4efa762d1c0c346e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7c85cff5895326b9a96e9254cebb27fc267550f4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33224817"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103977"
 ---
 # <a name="fatal-error-c1014"></a>Önemli hata C1014
-çok fazla dosyaları dahil etme: derinlik düzeyini =  
-  
- İç içe `#include` yönergeleri çok derin. İç içe geçmiş yönergeleri açık dosyalar içerebilir. Yönergeyi içeren kaynak dosya bir dosya olarak sayılır.
+
+çok fazla sayıda ekleme dosyası: derinlik = düzeyi
+
+İç içe `#include` yönergeleri çok derin. İç içe geçmiş yönergeleri açık dosyalar içerebilir. Yönergesini içeren kaynak dosyası bir dosya olarak sayılır.

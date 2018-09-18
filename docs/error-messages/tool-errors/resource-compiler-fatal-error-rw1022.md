@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57bb435d17cf1d539d558b5dead9c299f83494a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: caaefc045a31ca64aa9843927d550ef66285cb2e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319188"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099856"
 ---
 # <a name="resource-compiler-fatal-error-rw1022"></a>Kaynak Derleyicisi Önemli Hatası RW1022
-**Dosya yazma g/ç hatası**  
-  
- Kaynak derleyicisi bir dosyaya yazamadı.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Yetersiz disk alanı. Boş alan, en az iki kez oluşturmakta olduğunuz yürütülebilir dosyasının boyutu eşit olmalıdır.  
-  
-2.  Birim salt okunur durumdadır.  
-  
-3.  Bozuk kesim.  
-  
-4.  Paylaşım ihlali.
+
+**Dosya yazma g/ç hatası**
+
+Kaynak derleyicisi, bir dosyaya yazılamadı.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Yetersiz disk alanı. Boş alan en az iki kere oluşturmakta olduğunuz yürütülebilir dosyasının boyutu eşit olmalıdır.
+
+1. Birim, salt okunur.
+
+1. Bozuk kesim.
+
+1. Paylaşım ihlali.

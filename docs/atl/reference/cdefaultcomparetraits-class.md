@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4983984c8bf1cad2996818625091b60cdb732a9
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1aecfcb493bfc35e0d6f059c296af1b358eee93f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758563"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103224"
 ---
 # <a name="cdefaultcomparetraits-class"></a>CDefaultCompareTraits sınıfı
 
@@ -33,13 +33,13 @@ Bu sınıf, varsayılan öğe karşılaştırma işlevleri sağlar.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<typename T>  
+template<typename T>
 class CDefaultCompareTraits
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Koleksiyonda depolanacak veri türü.
 
 ## <a name="members"></a>Üyeler
@@ -71,10 +71,10 @@ static bool CompareElements(const T& element1, const T& element2);
 
 ### <a name="parameters"></a>Parametreler
 
-*element1*  
+*element1*<br/>
 İlk öğe.
 
-*element2*  
+*element2*<br/>
 İkinci öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -95,10 +95,10 @@ static int CompareElementsOrdered(const T& element1, const T& element2);
 
 ### <a name="parameters"></a>Parametreler
 
-*element1*  
+*element1*<br/>
 İlk öğe.
 
-*element2*  
+*element2*<br/>
 İkinci öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri

@@ -14,28 +14,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a61d9ae386efb25171cfdbedc5889c1ffa76e30
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 037ff61dbe1d1d42d8b0c751fcdc83f01a8dd112
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381869"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101429"
 ---
 # <a name="c-sized-integer-types"></a>C Boyutlu Tamsayı Türleri
-**Microsoft özel**  
-  
- Microsoft C, boyutlandırılmış tamsayı türleri için destek sağlar. __İnt kullanarak 8 - 16-, 32 veya 64 bit tamsayı değişkenleri bildirebilirsiniz*n* tür tanımlayıcısı, burada *n* tamsayı değişken bit cinsinden boyutu. Değeri *n* 8, 16, 32 veya 64 olabilir. Aşağıdaki örnekte, boyutlandırılmış tamsayıların dört türünün her biri için bir değişken bildirilmektedir:  
-  
-```  
-__int8 nSmall;      // Declares 8-bit integer  
-__int16 nMedium;    // Declares 16-bit integer  
-__int32 nLarge;     // Declares 32-bit integer  
-__int64 nHuge;      // Declares 64-bit integer  
-```  
-  
- Boyutlandırılmış tamsayıların ilk üç türü, aynı boyuta sahip ANSI türleri için eş anlamlıdır ve birden fazla platformda aynı şekilde davranan taşınabilir kod yazmak için yararlıdır. Tür char ile __int8 veri türü eşanlamlıdır Not \__int16 kısa, türüyle eşanlamlı ve \__int32 türü tamsayı ile eşanlamlı \__İnt64 türünde hiçbir eşdeğer ANSI karşılık gelen.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Temel Türleri Depolama](../c-language/storage-of-basic-types.md)
+
+**Microsoft'a özgü**
+
+Microsoft C, boyutlandırılmış tamsayı türleri için destek sağlar. __İnt kullanarak 8, 16, 32 veya 64-bit tamsayı değişkenleri bildirebilirsiniz*n* tür tanımlayıcısı, burada *n* tamsayı değişkeninin bit olarak boyutudur. Değerini *n* 8, 16, 32 veya 64 olabilir. Aşağıdaki örnekte, boyutlandırılmış tamsayıların dört türünün her biri için bir değişken bildirilmektedir:
+
+```
+__int8 nSmall;      // Declares 8-bit integer
+__int16 nMedium;    // Declares 16-bit integer
+__int32 nLarge;     // Declares 32-bit integer
+__int64 nHuge;      // Declares 64-bit integer
+```
+
+Boyutlandırılmış tamsayıların ilk üç türü, aynı boyuta sahip ANSI türleri için eş anlamlıdır ve birden fazla platformda aynı şekilde davranan taşınabilir kod yazmak için yararlıdır. __İnt8 veri türünün char türü ile eş anlamlı olduğuna dikkat edin \__int16 türünün short, ve \__int32 Tamsayı türünde ile eşanlamlı \__İnt64 türünde hiçbir eşdeğer ANSI karşılığı.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Temel Türleri Depolama](../c-language/storage-of-basic-types.md)

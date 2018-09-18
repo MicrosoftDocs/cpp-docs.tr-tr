@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f6009af2026f10ff25983544e6724385246a42f
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4678acbe251086f3a42e3544e155a191a5847f11
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755754"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101403"
 ---
 # <a name="ccomcriticalsection-class"></a>CComCriticalSection sınıfı
 
@@ -157,6 +157,6 @@ Başarılıysa S_OK döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComFakeCriticalSection sınıfı](../../atl/reference/ccomfakecriticalsection-class.md)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[CComFakeCriticalSection Sınıfı](../../atl/reference/ccomfakecriticalsection-class.md)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [CComCritSecLock Sınıfı](../../atl/reference/ccomcritseclock-class.md)

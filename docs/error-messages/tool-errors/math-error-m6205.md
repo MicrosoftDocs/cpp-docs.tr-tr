@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e8d7fbd042d8ce8210ec4fe275b0d83314f5d12
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 55549300a5ea603e4462d5b81679f935319838ca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322074"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099762"
 ---
 # <a name="math-error-m6205"></a>Matematik Hatası M6205
-'function': _TLOSS hata  
-  
- Anlamlı (duyarlık) toplam kaybı oluştu.  
-  
- Bu hata sin, işleneni olarak çok büyük bir sayı vererek cos kaynaklanıyor olabilir veya 0 ile 2 arasında bir sayı işleneni azaltılmış gerekir çünkü tan * pi.
+
+'function': _TLOSS hata
+
+Kaybedilmesi önemi (duyarlık) oluştu.
+
+Bu hata, çok büyük bir sayı sinüs, işleneni vererek cos neden olabilir veya 0 ile 2 arasında bir sayı işlenen düşürülmesi gerekir çünkü tan * pi.

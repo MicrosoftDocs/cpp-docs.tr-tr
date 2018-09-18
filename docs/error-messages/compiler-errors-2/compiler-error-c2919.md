@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5e2eb2a32f1a906814f5b347ba1ebf13eba71ff
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5d6ee01e32cd1855855fa6ac071af159be8bac0d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245808"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106837"
 ---
 # <a name="compiler-error-c2919"></a>Derleyici Hatası C2919
-'type': WinRT türü yayımlanan yüzeyine işleçler kullanılamaz  
-  
- Windows çalışma zamanı tür sistemi bir türdeki yayımlanan yüzeyde işleci üye işlevleri desteklemiyor. Tüm diller işleci üye işlevleri tüketebileceği olmasıdır. C++ kodu aynı sınıfın veya derleme biriminde çağrılabilir üye işlevleri özel veya dahili işleci oluşturabilirsiniz.  
-  
- Bu sorunu gidermek için ortak arabirimden işleci üye işlevi kaldırın veya bir adlandırılmış üye işlevine değiştirin. Örneğin, yerine, `operator==`, üye fonksiyonu ad `Equals`.
+
+'type': işleçler bir WinRT türünün yayımlanmış yüzeyinde kullanılamaz
+
+Windows çalışma zamanı tür sistemi türünün yayımlanmış yüzeyinde işleci üye işlevlerini desteklemez. Tüm diller, işleç üye işlevleri tüketebildiğinden budur. Aynı sınıf ya da derleme biriminde C++ koddan çağrılabilir üye işlevleri, özel veya iç işleci oluşturabilirsiniz.
+
+Bu sorunu gidermek için işleç üye işlevini ortak arabirimden kaldırın veya adlandırılmış üyesinin işleve değiştirin. Örneğin, yerine, `operator==`, üye işlev adı `Equals`.

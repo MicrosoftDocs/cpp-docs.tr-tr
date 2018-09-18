@@ -15,14 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9fcc5c6aae86aea005aef50f9083aeb718f64b19
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 5d73b7c45223c029451f300e495915eb15b0a956
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39340273"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103943"
 ---
 # <a name="transaction-performing-a-transaction-in-a-recordset-odbc"></a>İşlem: Kayıt Kümesinde İşlem Gerçekleştirme (ODBC)
+
 Bu konuda, bir kayıt kümesinde işlem gerçekleştirme açıklanmaktadır.  
   
 > [!NOTE]
@@ -30,13 +31,13 @@ Bu konuda, bir kayıt kümesinde işlem gerçekleştirme açıklanmaktadır.
   
 #### <a name="to-perform-a-transaction-in-a-recordset"></a>Bir kayıt kümesinde işlem gerçekleştirme  
   
-1.  Çağrı `CDatabase` nesnenin `BeginTrans` üye işlevi.  
+1. Çağrı `CDatabase` nesnenin `BeginTrans` üye işlevi.  
   
-2.  Toplu satır getirme değil uyguladıysanız, çağrı `AddNew/Update`, `Edit/Update`, ve `Delete` nesnelerin bir veya daha fazla kayıt aynı veritabanında gerektiği birçok üye işlevleri. Daha fazla bilgi için [kayıt kümesi: ekleme, güncelleştirme ve silme kayıtlarını (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md). Toplu satır getirme uyguladıysanız, veri kaynağını güncelleştirmek için kendi işlevlerinizi yazmanız gerekir.  
+1. Toplu satır getirme değil uyguladıysanız, çağrı `AddNew/Update`, `Edit/Update`, ve `Delete` nesnelerin bir veya daha fazla kayıt aynı veritabanında gerektiği birçok üye işlevleri. Daha fazla bilgi için [kayıt kümesi: ekleme, güncelleştirme ve silme kayıtlarını (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md). Toplu satır getirme uyguladıysanız, veri kaynağını güncelleştirmek için kendi işlevlerinizi yazmanız gerekir.  
   
-3.  Son olarak, çağrı `CDatabase` nesnenin `CommitTrans` üye işlevi. Güncelleştirmelerden biri bir hata oluşursa ya değişiklikleri iptal etmek karar verirseniz, arama, `Rollback` üye işlevi.  
+1. Son olarak, çağrı `CDatabase` nesnenin `CommitTrans` üye işlevi. Güncelleştirmelerden biri bir hata oluşursa ya değişiklikleri iptal etmek karar verirseniz, arama, `Rollback` üye işlevi.  
   
- Aşağıdaki örnek, bir öğrencinin kayıt Öğrenci, Öğrenci kayıtlı tüm sınıflardan kaldırarak bir okul kayıt veritabanından silmek için iki kayıt kümelerini kullanır. Çünkü `Delete` her iki kayıt kümelerinde çağrıları başarılı olmalıdır, bir işlem gereklidir. Örnek varsayar `m_dbStudentReg`, bir üye değişkeni türü `CDatabase` zaten bağlı veri kaynağı ve kayıt kümesi sınıfları `CEnrollmentSet` ve `CStudentSet`. `strStudentID` Değişken kullanıcıdan alınan bir değer içeriyor.  
+Aşağıdaki örnek, bir öğrencinin kayıt Öğrenci, Öğrenci kayıtlı tüm sınıflardan kaldırarak bir okul kayıt veritabanından silmek için iki kayıt kümelerini kullanır. Çünkü `Delete` her iki kayıt kümelerinde çağrıları başarılı olmalıdır, bir işlem gereklidir. Örnek varsayar `m_dbStudentReg`, bir üye değişkeni türü `CDatabase` zaten bağlı veri kaynağı ve kayıt kümesi sınıfları `CEnrollmentSet` ve `CStudentSet`. `strStudentID` Değişken kullanıcıdan alınan bir değer içeriyor.  
   
 ```  
 BOOL CEnrollDoc::RemoveStudent( CString strStudentID )  
@@ -92,7 +93,8 @@ BOOL CEnrollDoc::RemoveStudent( CString strStudentID )
 >  Çağırma `BeginTrans` yeniden çağırmadan `CommitTrans` veya `Rollback` bir hatadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşlem (ODBC)](../../data/odbc/transaction-odbc.md)   
- [İşlem: İşlemlerin güncelleştirmeleri (ODBC) nasıl etkiler.](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)   
- [CDatabase sınıfı](../../mfc/reference/cdatabase-class.md)   
- [CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)
+
+[İşlem (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
+[İşlem: İşlemlerin Güncelleştirmeleri Etkilemesi (ODBC)](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)<br/>
+[CDatabase Sınıfı](../../mfc/reference/cdatabase-class.md)<br/>
+[CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)

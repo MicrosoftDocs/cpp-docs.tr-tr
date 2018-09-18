@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ff4922e592ef717c51057cae75453422a5df7df
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ad66377aef7be43cc929ce4612284356597a4022
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33227182"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109236"
 ---
 # <a name="compiler-error-c2544"></a>Derleyici Hatası C2544
-Beklenen ')' işleci '(') için  
-  
- İşlev çağırma işleci, sol parantez eksik.  
-  
- Bu hata tarafından makrosu genişletme neden olabilir.
+
+Beklenen ')' işleci '()' için
+
+İşlev çağrısı işleci, sol parantez eksik.
+
+Makro genişletme tarafından bu hata oluşabilir.

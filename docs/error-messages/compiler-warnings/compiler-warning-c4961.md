@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68027aa11bedc6e9ad94fddc71a217a5e91bd2ba
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 397ada023e5640cacd53fe45ffd0d250c5799d84
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33269533"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105161"
 ---
 # <a name="compiler-warning-c4961"></a>Derleyici Uyarısı C4961
-Profil verileri '.pgd dosyasına', profil temelli iyileştirmeler devre dışı birleştirilmiş  
-  
- Profil temelli iyileştirmeler yer alamaz şekilde hiçbir profil verileri (.pgc dosyaları) kullanılabilir.
+
+Hiç profil verisi birleştirilmiş '.pgd dosyası ', profil temelli iyileştirmeler devre dışı bırakıldı
+
+Profil temelli iyileştirmeler yer alamaz. Bu nedenle hiçbir profil verisi (.pgc dosyaları) kullanılabilir.

@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c48c9dca72bddc844e94fb7978cb6414aa8fecf5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e93c2e6c26f8704e700465fb706867129847a460
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226230"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46104261"
 ---
 # <a name="fatal-error-c1091"></a>Önemli hata C1091
-Derleyici sınırı: dize uzunluğu 'length' baytı aşıyor  
-  
- Bir dize sabiti geçerli dize uzunluğu sınırı aştı.  
-  
- İki (veya daha fazla) değişkenlere statik dize bölme ve kullanmak istediğiniz durumlarda [strcpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) sonucu parçası olarak bildirimi veya çalışma zamanı sırasında katılmak için.
+
+Derleyici sınırı: dize uzunluğu 'length' baytı aşıyor
+
+Bir dize sabitine geçerli dize uzunluğu sınırı aştı.
+
+İki (veya daha fazla) değişkenlere statik dize bölme ve kullanmak isteyebilirsiniz [strcpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) sonucu bildirimin veya çalışma zamanı sırasında bir parçası olarak katılmaya.

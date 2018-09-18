@@ -17,43 +17,45 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c732bcf45f2dfbd4927366670aed6bfbdcfb4721
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 5aa7f72cc76f80e2304faf93ca0c6198c505e88a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679993"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101650"
 ---
 # <a name="using-manual-accessors"></a>El ile Çalışan Erişimcileri Kullanma
+
 Bilinmeyen bir komutu işlerken dört şeyler vardır:  
   
--   Parametreleri belirleme  
+- Parametreleri belirleme  
   
--   Komutu yürütün  
+- Komutu yürütün  
   
--   Çıktı sütunları belirleyin  
+- Çıktı sütunları belirleyin  
   
--   Birden fazla dönüş satır kümeleri olup olmadığını  
+- Birden fazla dönüş satır kümeleri olup olmadığını  
   
- OLE DB tüketici şablonlarıyla Bunu yapmak için `CManualAccessor` sınıfı ve aşağıdaki adımları izleyin:  
+OLE DB tüketici şablonlarıyla Bunu yapmak için `CManualAccessor` sınıfı ve aşağıdaki adımları izleyin:  
   
-1.  Açık bir `CCommand` nesnesi ile `CManualAccessor` şablon parametresi olarak.  
+1. Açık bir `CCommand` nesnesi ile `CManualAccessor` şablon parametresi olarak.  
   
     ```cpp  
     CCommand<CManualAccessor, CRowset, CMultipleResults> rs;  
     ```  
   
-2.  Oturum için sorgu `IDBSchemaRowset` arabirim ve yordam parametreleri satır kümesi kullanın. Varsa `IDBSchemaRowset` arabirimi kullanılabilir değil, sorgu `ICommandWithParameters` arabirimi. Çağrı `GetParameterInfo` bilgi. Hiçbiri arabirimi varsa, hiçbir parametre yok varsayabilirsiniz.  
+1. Oturum için sorgu `IDBSchemaRowset` arabirim ve yordam parametreleri satır kümesi kullanın. Varsa `IDBSchemaRowset` arabirimi kullanılabilir değil, sorgu `ICommandWithParameters` arabirimi. Çağrı `GetParameterInfo` bilgi. Hiçbiri arabirimi varsa, hiçbir parametre yok varsayabilirsiniz.  
   
-3.  Her parametre için çağrı `AddParameterEntry` parametreleri ekleyin ve bunları ayarlamak için.  
+1. Her parametre için çağrı `AddParameterEntry` parametreleri ekleyin ve bunları ayarlamak için.  
   
-4.  Açık satır kümesi, ancak bağlama parametresini **false**.  
+1. Açık satır kümesi, ancak bağlama parametresini **false**.  
   
-5.  Çağrı `GetColumnInfo` çıkış sütunları alınamıyor. Kullanım `AddBindEntry` çıkış sütunu bağlama eklemek için.  
+1. Çağrı `GetColumnInfo` çıkış sütunları alınamıyor. Kullanım `AddBindEntry` çıkış sütunu bağlama eklemek için.  
   
-6.  Çağrı `GetNextResult` daha fazla satır kümeleri kullanılabilir olup olmadığını belirlemek için. 2-5 arası adımları tekrarlayın.  
+1. Çağrı `GetNextResult` daha fazla satır kümeleri kullanılabilir olup olmadığını belirlemek için. 2-5 arası adımları tekrarlayın.  
   
- El ile erişimci örneği için bkz: `CDBListView::CallProcedure` içinde [DBVIEWER](https://github.com/Microsoft/VCSamples) örnek.  
+El ile erişimci örneği için bkz: `CDBListView::CallProcedure` içinde [DBVIEWER](https://github.com/Microsoft/VCSamples) örnek.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Erişimcileri Kullanma](../../data/oledb/using-accessors.md)
+
+[Erişimcileri Kullanma](../../data/oledb/using-accessors.md)

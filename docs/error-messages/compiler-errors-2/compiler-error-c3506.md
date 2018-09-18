@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 25ca6da46887cf6c521563334d06ba53958c3b4c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1b3adfa271cc5e076a00232c8f54c32e6b459f79
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250996"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112206"
 ---
 # <a name="compiler-error-c3506"></a>Derleyici Hatası C3506
-'ID' kimliği için kayıtlı hiçbir typelib yok  
-  
- Tür kitaplığı doğru biçimde kaydedilmedi. Tür kitaplığı kaydı regsvr32.exe kullanın.
+
+'ID' kitaplık kimliği için kayıtlı bir tür kitaplığı yok
+
+Typelib doğru şekilde kaydedilmedi. Regsvr32.exe bir tür kitaplığını kaydetmek için kullanın.

@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d3cf831590af2e1f2f7cd13d93c9d13ba217e11
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a6ad1b8bab287f4c16b00781e90351bbb204aa91
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292811"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099476"
 ---
 # <a name="compiler-warning-level-4-c4100"></a>Derleyici Uyarısı (düzey 4) C4100
-'tanımlayıcısı': başvurulmayan biçimsel parametresi  
-  
- Biçimsel parametresi, işlev gövdesine başvurulmuyor. Başvurulmayan parametre yoksayılır.  
-  
- C4100 ayrıca verilen kodu üzerinde bir yıkıcı çağırdığında bir aksi başvurulmayan ilkel tür parametresi.  Visual C++ derleyicisi kısıtlamasıdır.  
-  
- Aşağıdaki örnek C4100 oluşturur:  
-  
-```  
-// C4100.cpp  
-// compile with: /W4  
-void func(int i) {   // C4100, delete the unreferenced parameter to  
-                     //resolve the warning  
-   // i;   // or, add a reference like this  
-}  
-  
-int main()  
-{  
-   func(1);  
-}  
+
+'identifier': başvurulmayan biçimsel parametre
+
+Biçimsel parametre işlevin gövdesinde başvurulmuyor. Başvurulmayan parametre yok sayıldı.
+
+C4100, ayrıca kod bir yok edici çağırdığında verilebilir bir başvurulmayan parametresinde ilkel türü.  Bu Visual C++ Derleyici sınırlamasıdır.
+
+Şu örnek C4100 oluşturur:
+
+```
+// C4100.cpp
+// compile with: /W4
+void func(int i) {   // C4100, delete the unreferenced parameter to
+                     //resolve the warning
+   // i;   // or, add a reference like this
+}
+
+int main()
+{
+   func(1);
+}
 ```

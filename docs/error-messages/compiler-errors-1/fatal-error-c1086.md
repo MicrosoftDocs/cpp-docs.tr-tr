@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22dcb904da7ab2f3c20948b12181af91cb46a1be
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 170098d146eb4b2c83fedfd4787879b39ede3184
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225083"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102638"
 ---
 # <a name="fatal-error-c1086"></a>Önemli hata C1086
-Dosya türünü dosya aranamıyor: 'dosya': ileti  
-  
- Derleyici bir g/ç işlemi tamamlanamıyor.
+
+FileType dosyasında konum aranamıyor: 'file': ileti
+
+Derleyici, bir g/ç işlemi tamamlanamıyor.

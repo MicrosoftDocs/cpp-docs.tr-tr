@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9494f81c01a0bbad01015ecc7d0c171eedd637e8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4aff49918751e94e08cd7d6c229bfa1d27116210
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316101"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110594"
 ---
 # <a name="resource-compiler-fatal-error-rc1116"></a>Kaynak Derleyicisi Önemli Hatası RC1116
-Önişlemci hataları sonra sonlandırma RC  
-  
- Kaynak Derleyicisi diğer hatalar nedeniyle kilitlendi. Diğer hataları giderin ve yeniden derleyin.
+
+Önişlemci hataları sonlandıran RC
+
+Kaynak derleyicisi, diğer hatalar nedeniyle durduruldu. Diğer hataları düzeltin ve yeniden derleyin.

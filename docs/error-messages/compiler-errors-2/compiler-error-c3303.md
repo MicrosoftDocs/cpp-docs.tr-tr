@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ec00864bf0fb9d6a2f6e19198285a9b8ac65dd2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7625d7b16eba226539473ac8af109a3367291cb7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249160"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105111"
 ---
 # <a name="compiler-error-c3303"></a>Derleyici Hatası C3303
-'öznitelik': özniteliği yalnızca '' kullanımı kullanılabilir  
-  
- Bir öznitelik burada geçerli değildir kullanmak için girişimde bulunuldu.
+
+'attribute': öznitelik yalnızca 'kullanımı' kullanılabilir
+
+Burada geçerli değil, bir özniteliği kullanacak şekilde girişimde bulunuldu.

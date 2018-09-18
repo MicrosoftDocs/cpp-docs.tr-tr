@@ -16,27 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a79b6afae4bc14e5fcd2dc4979ebd29c60c15b7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 063c976915e744df8eda3604bdfa121ba21ef36d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33289847"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099457"
 ---
 # <a name="compiler-warning-level-3-c4570"></a>Derleyici Uyarısı (Düzey 3) C4570
-'type': soyut ancak soyut işlevleri taşıdığından açıkça bildirilmedi  
-  
- İçeren bir türü [soyut](../../windows/abstract-cpp-component-extensions.md) işlevleri kendisini işaretlenir soyut olarak.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4570 oluşturur.  
-  
-```  
-// C4570.cpp  
-// compile with: /clr /W3 /c  
-ref struct X {   // C4570  
-// try the following line instead  
-// ref class X abstract {  
-   virtual void f() abstract;  
-};  
+
+'type': soyut ancak soyut işlevler içeriyor olarak açıkça bildirilmedi
+
+İçeren bir tür [soyut](../../windows/abstract-cpp-component-extensions.md) işlevleri kendi işaretlenmemelidir soyut olarak.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4570 oluşturur.
+
+```
+// C4570.cpp
+// compile with: /clr /W3 /c
+ref struct X {   // C4570
+// try the following line instead
+// ref class X abstract {
+   virtual void f() abstract;
+};
 ```

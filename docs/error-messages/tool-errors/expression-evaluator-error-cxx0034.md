@@ -17,18 +17,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 936f63c0015f21b3683333d5153cffa07b2b1677
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7afc09a3334b284208ec077023427c67757afac3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33303930"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113051"
 ---
 # <a name="expression-evaluator-error-cxx0034"></a>İfade Değerlendirici Hatası CXX0034
-**türler işleçle uyumlu değil**  
-  
- İşlenen türleri belirtilen işlem için geçerli değildir.  
-  
- Örneğin, bir işaretçi tarafından herhangi bir değer çarpılan olamaz.  
-  
- Tür gerekebilir işleç ile uyumlu bir türü için işlenen cast.
+
+**türleri işleciyle uyumsuz**
+
+İşlenen türleri belirtilen işlem için geçerli değildir.
+
+Örneğin, bir işaretçi herhangi bir değer ile çarpılmasına olamaz.
+
+Yazmanız gereken işlenenler işleç ile uyumlu bir türe dönüştürün.

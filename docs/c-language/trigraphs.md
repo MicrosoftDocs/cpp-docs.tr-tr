@@ -25,52 +25,54 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3c83fc3feecc1b79f28c1b00b94469d30b93d8b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fb65bf8cf2f9585ff12ba0a098d9ca441310933f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389962"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101946"
 ---
 # <a name="trigraphs"></a>Trigraflar
-C kaynak programlarının kaynak karakter kümesi 7 bit ASCII karakter kümesi içinde yer alır, ancak ISO 646-1983 Sabit Kod Kümesi'nin bir üst kümesidir. Trigraf dizileri, C programlarının yalnızca ISO (Uluslararası Standartlar Enstitüsü) Sabit Kod Kümesi kullanarak yazılmasına izin verir. Trigraflar, derleyicinin karşılık gelen noktalama karakterleriyle değiştirdiği üç karakterli dizilerdir (birbirini izleyen iki soru işareti ile yazılır). Trigrafları, C kaynak dosyalarında bazı noktalama karakterleri için uygun grafik sunumlar içermeyen bir karakter kümesiyle kullanabilirsiniz.  
-  
- C ++ 17 trigrafları dilinden kaldırır. Uygulamaları uygulama tanımlı eşlemeden fiziksel kaynak dosyaya bir parçası olarak trigrafları desteklemeye devam edebilir *temel kaynak karakter kümesi*ancak bunu yapmak için uygulamalar standart önerir. C ++ 14, olduğu gibi C. trigrafları desteklenir  
-  
- Visual C++ trigrafı değiştirme desteklemeye devam eder, ancak varsayılan olarak devre dışıdır. Trigrafı değiştirme etkinleştirme hakkında daha fazla bilgi için bkz: [/ZC: trigraphs (Trigrafları değiştirme)](../build/reference/zc-trigraphs-trigraphs-substitution.md).  
-  
- Aşağıdaki tablo, dokuz trigraf dizisini göstermektedir. Noktalama karakterlerinin kaynak dosyasında ilk sütunda görünen tüm örneklerinin yerine karşılık gelen karakterler ikinci sütuna konur.  
-  
-### <a name="trigraph-sequences"></a>Trigraf Dizileri  
-  
-|Trigraf|Noktalama Karakteri|  
-|--------------|---------------------------|  
-|??=|#|  
-|??(|[|  
-|??/|\|  
-|??)|]|  
-|??'|^|  
-|??\<|{|  
-|??!|&#124;|  
-|??>|}|  
-|??-|~|  
-  
- Bir trigraf her zaman tek kaynaklı karakter olarak işlem görür. Trigrafları çevrilmesi gerçekleşir ilk [çeviri aşaması](../preprocessor/phases-of-translation.md), önce kaçış karakterleri tanıma dize değişmez değerleri ve karakter sabitleri. Yalnızca yukarıdaki tabloda gösterilen dokuz trigraf tanınır. Diğer tüm karakter dizileri çevrilmeden bırakılır.  
-  
- Karakteri kaçış sırası  **\\?**, trigrafı benzeri karakter sıralarının misinterpretation engeller. (Kaçış dizileri hakkında daha fazla bilgi için bkz: [kaçış sıraları](../c-language/escape-sequences.md).) Örneğin, `What??!` dizesini bu `printf` ifadesiyle yazdırmaya çalışırsanız  
-  
-```  
-printf( "What??!\n" );  
-```  
-  
- Yazdırılan dizesi `What|` çünkü `??!` ile değiştirilir bir trigrafı sırası `|` karakter. Diziyi düzgün şekilde yazdırmak için ifadeyi aşağıdaki gibi yazın:  
-  
-```  
-printf( "What?\?!\n" );  
-```  
-  
- Bu `printf` deyiminde, ikinci soru işaretinin önündeki bir ters eğik çizgi kaçış karakteri, `??!` öğesinin bir trigraf olarak yanlış yorumlanmasını önler.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [/ ZC: trigraphs (trigrafları değiştirme)](../build/reference/zc-trigraphs-trigraphs-substitution.md)   
- [C Tanımlayıcıları](../c-language/c-identifiers.md)
+
+C kaynak programlarının kaynak karakter kümesi 7 bit ASCII karakter kümesi içinde yer alır, ancak ISO 646-1983 Sabit Kod Kümesi'nin bir üst kümesidir. Trigraf dizileri, C programlarının yalnızca ISO (Uluslararası Standartlar Enstitüsü) Sabit Kod Kümesi kullanarak yazılmasına izin verir. Trigraflar, derleyicinin karşılık gelen noktalama karakterleriyle değiştirdiği üç karakterli dizilerdir (birbirini izleyen iki soru işareti ile yazılır). Trigrafları, C kaynak dosyalarında bazı noktalama karakterleri için uygun grafik sunumlar içermeyen bir karakter kümesiyle kullanabilirsiniz.
+
+Trigrafları, c ++ 17 dilinden kaldırır. Uygulamaları uygulama tanımlı eşlemeden fiziksel kaynak dosyaya bir parçası olarak trigrafları desteklemeye devam edebilir *temel kaynak karakter kümesi*, ancak bunu yapmak için uygulamaları standart teşvik eder. C ++ 14, olduğu gibi c trigrafları desteklenir
+
+Visual C++ trigraf değiştirme desteklemeye devam eder, ancak varsayılan olarak devre dışıdır. Trigraf değiştirme etkinleştirme hakkında daha fazla bilgi için bkz: [/ZC: trigraphs (Trigrafları değiştirme)](../build/reference/zc-trigraphs-trigraphs-substitution.md).
+
+Aşağıdaki tablo, dokuz trigraf dizisini göstermektedir. Noktalama karakterlerinin kaynak dosyasında ilk sütunda görünen tüm örneklerinin yerine karşılık gelen karakterler ikinci sütuna konur.
+
+### <a name="trigraph-sequences"></a>Trigraf Dizileri
+
+|Trigraf|Noktalama Karakteri|
+|--------------|---------------------------|
+|??=|#|
+|??(|[|
+|??/|\|
+|??)|]|
+|??'|^|
+|??\<|{|
+|??!|&#124;|
+|??>|}|
+|??-|~|
+
+Bir trigraf her zaman tek kaynaklı karakter olarak işlem görür. İlk çevirisi yapılmaz [çeviri aşaması](../preprocessor/phases-of-translation.md)tanıma çıkış karakterlerinin tanınmasından önce dize değişmez değerleri ve karakter sabitlerinde. Yalnızca yukarıdaki tabloda gösterilen dokuz trigraf tanınır. Diğer tüm karakter dizileri çevrilmeden bırakılır.
+
+Karakter kaçış dizisi  **\\?**, trigraf benzeri karakter dizilerinin yanlış yorumlanmasını önler. (Kaçış dizileri hakkında daha fazla bilgi için bkz: [kaçış dizileri](../c-language/escape-sequences.md).) Örneğin, `What??!` dizesini bu `printf` ifadesiyle yazdırmaya çalışırsanız
+
+```
+printf( "What??!\n" );
+```
+
+Yazdırılan dize `What|` çünkü `??!` ile değiştirilir bir trigraf sırası `|` karakter. Diziyi düzgün şekilde yazdırmak için ifadeyi aşağıdaki gibi yazın:
+
+```
+printf( "What?\?!\n" );
+```
+
+Bu `printf` deyiminde, ikinci soru işaretinin önündeki bir ters eğik çizgi kaçış karakteri, `??!` öğesinin bir trigraf olarak yanlış yorumlanmasını önler.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[/Zc:trigraphs (Trigrafları Değiştirme)](../build/reference/zc-trigraphs-trigraphs-substitution.md)<br/>
+[C Tanımlayıcıları](../c-language/c-identifiers.md)

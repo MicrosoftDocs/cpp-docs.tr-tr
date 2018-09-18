@@ -38,93 +38,96 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4502f4752d094805ac9e31bbd4fdcbd1b0fdbdab
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 6c338009b7dcd8f3810d48e17a4af470bee0837e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39403267"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109320"
 ---
 # <a name="comptrt-relational-operators"></a>_com_ptr_t İlişkisel İşleçleri
-**Microsoft'a özgü**  
-  
- NULL veya başka bir akıllı işaretçinin, ham arabirim işaretçisi için akıllı işaretçi nesnesinin karşılaştırın.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-template<typename _OtherIID>   
-bool operator==( const _com_ptr_t<_OtherIID>& p );  
-  
-template<typename _OtherIID>    
-bool operator==( _com_ptr_t<_OtherIID>& p );  
-  
-template<typename _InterfaceType>   
-bool operator==( _InterfaceType* p );  
-  
-template<>   
-bool operator==( Interface* p );  
-  
-template<>   
-bool operator==( const _com_ptr_t& p ) throw();  
-  
-template<>   
-bool operator==( _com_ptr_t& p ) throw();  
-  
-bool operator==( Int null );  
-  
-template<typename _OtherIID>   
-bool operator!=( const _com_ptr_t<_OtherIID>& p );  
-  
-template<typename _OtherIID>   
-bool operator!=( _com_ptr_t<_OtherIID>& p );  
-  
-template<typename _InterfaceType>   
-bool operator!=( _InterfaceType* p );  
-  
-bool operator!=( Int null );  
 
-template<typename _OtherIID>   
-bool operator<( const _com_ptr_t<_OtherIID>& p );  
-  
-template<typename _OtherIID>   
-bool operator<( _com_ptr_t<_OtherIID>& p );  
-  
-template<typename _InterfaceType>   
-bool operator<( _InterfaceType* p );  
+**Microsoft'a özgü**
 
-template<typename _OtherIID>   
-bool operator>( const _com_ptr_t<_OtherIID>& p );  
-  
-template<typename _OtherIID>   
-bool operator>(_com_ptr_t< _OtherIID>& p );  
-  
-template<typename _InterfaceType>   
-bool operator>( _InterfaceType* p );  
-  
-template<typename _OtherIID>   
-bool operator<=( const _com_ptr_t<_OtherIID>& p );  
-  
-template<typename _OtherIID>   
-bool operator<=( _com_ptr_t<_OtherIID>& p );  
-  
-template<typename _InterfaceType>   
-bool operator<=( _InterfaceType* p );  
-  
+NULL veya başka bir akıllı işaretçinin, ham arabirim işaretçisi için akıllı işaretçi nesnesinin karşılaştırın.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+template<typename _OtherIID> 
+bool operator==( const _com_ptr_t<_OtherIID>& p );
+
 template<typename _OtherIID>  
-bool operator>=( const _com_ptr_t<_OtherIID>& p );  
-  
-template<typename _OtherIID>   
-bool operator>=( _com_ptr_t<_OtherIID>& p );  
-  
-template<typename _InterfaceType>   
-bool operator>=( _InterfaceType* p );  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir akıllı işaretçi nesnesinin diğerine karşılaştırır, akıllı işaretçinin, ham arabirim işaretçisi veya NULL. NULL işaretçi testleri dışında bu işleçlerden önce her iki işaretçiler için sorgu `IUnknown`ve sonuçlarını karşılaştırın.  
-  
- **END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)
+bool operator==( _com_ptr_t<_OtherIID>& p );
+
+template<typename _InterfaceType> 
+bool operator==( _InterfaceType* p );
+
+template<> 
+bool operator==( Interface* p );
+
+template<> 
+bool operator==( const _com_ptr_t& p ) throw();
+
+template<> 
+bool operator==( _com_ptr_t& p ) throw();
+
+bool operator==( Int null );
+
+template<typename _OtherIID> 
+bool operator!=( const _com_ptr_t<_OtherIID>& p );
+
+template<typename _OtherIID> 
+bool operator!=( _com_ptr_t<_OtherIID>& p );
+
+template<typename _InterfaceType> 
+bool operator!=( _InterfaceType* p );
+
+bool operator!=( Int null );
+
+template<typename _OtherIID> 
+bool operator<( const _com_ptr_t<_OtherIID>& p );
+
+template<typename _OtherIID> 
+bool operator<( _com_ptr_t<_OtherIID>& p );
+
+template<typename _InterfaceType> 
+bool operator<( _InterfaceType* p );
+
+template<typename _OtherIID> 
+bool operator>( const _com_ptr_t<_OtherIID>& p );
+
+template<typename _OtherIID> 
+bool operator>(_com_ptr_t< _OtherIID>& p );
+
+template<typename _InterfaceType> 
+bool operator>( _InterfaceType* p );
+
+template<typename _OtherIID> 
+bool operator<=( const _com_ptr_t<_OtherIID>& p );
+
+template<typename _OtherIID> 
+bool operator<=( _com_ptr_t<_OtherIID>& p );
+
+template<typename _InterfaceType> 
+bool operator<=( _InterfaceType* p );
+
+template<typename _OtherIID>
+bool operator>=( const _com_ptr_t<_OtherIID>& p );
+
+template<typename _OtherIID> 
+bool operator>=( _com_ptr_t<_OtherIID>& p );
+
+template<typename _InterfaceType> 
+bool operator>=( _InterfaceType* p );
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir akıllı işaretçi nesnesinin diğerine karşılaştırır, akıllı işaretçinin, ham arabirim işaretçisi veya NULL. NULL işaretçi testleri dışında bu işleçlerden önce her iki işaretçiler için sorgu `IUnknown`ve sonuçlarını karşılaştırın.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

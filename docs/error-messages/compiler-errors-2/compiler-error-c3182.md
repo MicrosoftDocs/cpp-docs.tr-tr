@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 503ad6d17b197392967681bfdf4e921aa21dc3e9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 722f95b41f9f5ec467af25ccf927631590f90e45
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33254628"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110230"
 ---
 # <a name="compiler-error-c3182"></a>Derleyici Hatası C3182
-'class': üye kullanarak bildirimi veya erişim bildirimi yönetilen veya WinRTtype içinde geçersiz  
-  
- A [kullanarak](../../cpp/using-declaration.md) bildirimi tüm yönetilen sınıflar formları içinde geçersiz.  
-  
- Aşağıdaki örnek C3182 oluşturur ve nasıl düzeltileceği gösterir.  
-  
-```  
-// C3182a.cpp  
-// compile with: /clr /c  
-ref struct B {  
-   void mf(int) {  
-   }  
-};  
-  
-ref struct D : B {  
-   using B::mf;   // C3182, delete to resolve  
-   void mf(char) {  
-   }  
-};  
-```  
+
+'class': bir üye bildirim kullanımı veya erişim bildirimi yönetilen veya WinRTtype içinde geçersiz
+
+A [kullanarak](../../cpp/using-declaration.md) bildirimi tüm yönetilen sınıflar formları içinde geçersiz.
+
+Aşağıdaki örnek, C3182 oluşturur ve bu sorunun nasıl gösterir.
+
+```
+// C3182a.cpp
+// compile with: /clr /c
+ref struct B {
+   void mf(int) {
+   }
+};
+
+ref struct D : B {
+   using B::mf;   // C3182, delete to resolve
+   void mf(char) {
+   }
+};
+```

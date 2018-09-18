@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5082490b9dd2e37090bac747e592b62ce51ac26a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 7598065aa451d87fb45ae26310064e4828b4fb72
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754975"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098816"
 ---
 # <a name="cobarray-class"></a>CObArray sınıfı
 Dizilerini destekler `CObject` işaretçileri.  
@@ -170,11 +170,11 @@ INT_PTR Add(CObject* newElement);
   
  Bu program sonuçları aşağıdaki gibidir:  
   
- `Add example: A CObArray with 2 elements`  
-  
- `[0] = a CAge at $442A 21`  
-  
- `[1] = a CAge at $4468 40`  
+```Output
+Add example: A CObArray with 2 elements
+[0] = a CAge at $442A 21
+[1] = a CAge at $4468 40
+```
   
 ##  <a name="append"></a>  CObArray::Append  
  Başka bir dizinin içeriğini belirtilen dizinin sonuna eklemek için bu üye işlevini çağırın.  
@@ -530,13 +530,12 @@ void InsertAt(
   
  Bu program sonuçları aşağıdaki gibidir:  
   
- `InsertAt example: A CObArray with 3 elements`  
-  
- `[0] = a CAge at $45C8 21`  
-  
- `[1] = a CAge at $4646 30`  
-  
- `[2] = a CAge at $4606 40`  
+```Output
+InsertAt example: A CObArray with 3 elements
+[0] = a CAge at $45C8 21
+[1] = a CAge at $4646 30
+[2] = a CAge at $4606 40
+```
   
 ##  <a name="isempty"></a>  CObArray::IsEmpty  
  Dizi boş olup olmadığını belirler.  
@@ -646,9 +645,10 @@ void RemoveAt(
   
  Bu program sonuçları aşağıdaki gibidir:  
   
- `RemoveAt example: A CObArray with 1 elements`  
-  
- `[0] = a CAge at $4606 40`  
+```Output
+RemoveAt example: A CObArray with 1 elements
+[0] = a CAge at $4606 40
+```
   
 ##  <a name="setat"></a>  CObArray::SetAt  
  Belirtilen dizindeki dizi öğesini ayarlar.  
@@ -689,11 +689,11 @@ void SetAt(
   
  Bu program sonuçları aşağıdaki gibidir:  
   
- `SetAt example: A CObArray with 2 elements`  
-  
- `[0] = a CAge at $47E0 30`  
-  
- `[1] = a CAge at $47A0 40`  
+```Output
+SetAt example: A CObArray with 2 elements
+[0] = a CAge at $47E0 30
+[1] = a CAge at $47A0 40
+```
   
 ##  <a name="setatgrow"></a>  CObArray::SetAtGrow  
  Belirtilen dizindeki dizi öğesini ayarlar.  
@@ -732,15 +732,13 @@ void SetAtGrow(
   
  Bu program sonuçları aşağıdaki gibidir:  
   
- `SetAtGrow example: A CObArray with 4 elements`  
-  
- `[0] = a CAge at $47C0 21`  
-  
- `[1] = a CAge at $4800 40`  
-  
- `[2] = NULL`  
-  
- `[3] = a CAge at $4840 65`  
+```Output
+SetAtGrow example: A CObArray with 4 elements
+[0] = a CAge at $47C0 21
+[1] = a CAge at $4800 40
+[2] = NULL
+[3] = a CAge at $4840 65
+```
   
 ##  <a name="setsize"></a>  CObArray::SetSize  
  Boş veya varolan bir dizinin boyutunu belirler; Gerekirse, bellek ayırır.  

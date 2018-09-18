@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bf1c9137f8c4ed0d80955eef38b07ea86204a5c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 964fedd40f577a8b337c4ad0c20ba80d33ed2a23
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317664"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099928"
 ---
 # <a name="project-build-error-prj0030"></a>Proje Derleme Hatası PRJ0030
-Makro genişletme hata oluştu. Özyineleme aşıldı 32 düzeyleri için $(makrosu) değerlendirin.  
-  
- Bu hata, makrolardaki özyineleme kaynaklanır. Örneğin, ayarlarsanız **Ara dizin** özelliği (bkz [genel özellik sayfası (Proje)](../../ide/general-property-page-project.md)) $(IntDir) için özyineleme sahip olur.  
-  
- Bu hatayı gidermek için makroları veya özelliklerini tanımlamak için kullanılan makroları bakımından tanımlamayın.
+
+Makro genişletme hatası. Özyineleme aşıldı 32 düzeyleri (makro) $ için değerlendirin.
+
+Özyineleme makroları tarafından bu hataya neden olur. Örneğin, ayarlarsanız **Ara dizin** özelliği (bkz [genel özellik sayfası (Proje)](../../ide/general-property-page-project.md)) $(IntDir) için özyineleme olacaktır.
+
+Bu hatayı gidermek için makrolar veya özellikleri tanımlamak için kullanılan makrolar açısından tanımlamaz.

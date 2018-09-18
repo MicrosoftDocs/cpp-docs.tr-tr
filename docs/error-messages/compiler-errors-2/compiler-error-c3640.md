@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8ec2e22033ea4cc1b475ab1f838bb77d96916e7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f032f96d4e7af48ad98a75f2bf62058121f135d5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33267192"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109203"
 ---
 # <a name="compiler-error-c3640"></a>Derleyici Hatası C3640
-'member': yerel bir sınıfın başvurulan veya sanal üye işlevi tanımlanmış olması gerekir  
-  
- Derleyici belirli işlevleri tanımlanması gerekir.  
-  
- Aşağıdaki örnek C3640 oluşturur:  
-  
-```  
-// C3640.cpp  
-void f()   
-{  
-   struct S  
-   {  
-      virtual void f1();   // C3640  
-      // Try the following line instead:  
-      // virtual void f1(){}  
-   };  
-}  
+
+'member': yerel bir sınıfın başvurulan veya sanal üye işlevi tanımlanmış olmalıdır
+
+Derleyici belirli işlevleri tanımlanması gerekir.
+
+Aşağıdaki örnek, C3640 oluşturur:
+
+```
+// C3640.cpp
+void f()
+{
+   struct S
+   {
+      virtual void f1();   // C3640
+      // Try the following line instead:
+      // virtual void f1(){}
+   };
+}
 ```

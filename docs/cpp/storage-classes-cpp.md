@@ -19,22 +19,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8f7939d42aa246c9b7d5924979357fb6301e726
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 4b57e2c4e6631683afdabec983f155941b8cd2da
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39466591"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107480"
 ---
-# <a name="storage-classes-c"></a>Depolama sınıfları (C++)  
-  
-A *depolama sınıfı* C++ bağlamında değişken bildirimleri olan nesnelerin ömrü, bağlantı ve bellek konumu yöneten bir tür tanımlayıcısı. Belirli bir nesne yalnızca bir depolama sınıfına sahip olabilir. Bir blok içinde tanımlanan değişkenleri kullanarak aksi belirtilmediği sürece otomatik depolama sahip **extern**, **statik**, veya `thread_local` tanımlayıcıları. Otomatik nesnelerin ve değişkenlerin hiçbir bağlantısı yoktur; Bunlar kod bloğu dışında görünür değildir.  
-  
-**Notlar**  
-  
-1.  [Değişebilir](../cpp/mutable-data-members-cpp.md) anahtar sözcüğü bir depolama sınıfı tanımlayıcısı olarak değerlendirilebilir. Ancak, sadece bir sınıf tanımının üye listesinde kullanılabilir.  
-  
-2.  **Visual C++ 2010 ve sonraki sürümlerine:** **otomatik** anahtar sözcüğü, artık bir C++ depolama sınıfı tanımlayıcısı ve **kaydetme** anahtar sözcüğü kullanım dışı bırakılmıştır. **Visual Studio 2017 sürüm 15.7 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **kaydetme** anahtar sözcüğü C++ dili kaldırılır.
+# <a name="storage-classes-c"></a>Depolama sınıfları (C++)
+
+A *depolama sınıfı* C++ bağlamında değişken bildirimleri olan nesnelerin ömrü, bağlantı ve bellek konumu yöneten bir tür tanımlayıcısı. Belirli bir nesne yalnızca bir depolama sınıfına sahip olabilir. Bir blok içinde tanımlanan değişkenleri kullanarak aksi belirtilmediği sürece otomatik depolama sahip **extern**, **statik**, veya `thread_local` tanımlayıcıları. Otomatik nesnelerin ve değişkenlerin hiçbir bağlantısı yoktur; Bunlar kod bloğu dışında görünür değildir.
+
+**Notlar**
+
+1. [Değişebilir](../cpp/mutable-data-members-cpp.md) anahtar sözcüğü bir depolama sınıfı tanımlayıcısı olarak değerlendirilebilir. Ancak, sadece bir sınıf tanımının üye listesinde kullanılabilir.
+
+1. **Visual C++ 2010 ve sonraki sürümlerine:** **otomatik** anahtar sözcüğü, artık bir C++ depolama sınıfı tanımlayıcısı ve **kaydetme** anahtar sözcüğü kullanım dışı bırakılmıştır. **Visual Studio 2017 sürüm 15.7 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **kaydetme** anahtar sözcüğü C++ dili kaldırılır.
 
 
 ```cpp
@@ -148,14 +148,14 @@ using namespace std;
 struct C {
    void Test(int value) {
       static int var = 0;
-      if (var == value) 
+      if (var == value)
          cout << "var == value" << endl;
       else
          cout << "var != value" << endl;
 
       var = value;
    }
-}; 
+};
 
 int main() {
    C c1;
@@ -185,9 +185,9 @@ Aşağıdaki kod iki gösterir **extern** bildirimleri, `DefinedElsewhere` (hang
 ```cpp
 // external.cpp
 // DefinedElsewhere is defined in another translation unit
-extern int DefinedElsewhere;   
+extern int DefinedElsewhere;
 int main() {
-   int DefinedHere; 
+   int DefinedHere;
    {
       // refers to DefinedHere in the enclosing scope
       extern int DefinedHere;
@@ -205,7 +205,7 @@ thread_local float f = 42.0; // Global namespace. Not implicitly static.
 struct S // cannot be applied to type definition
 {
     thread_local int i; // Illegal. The member must be static.
-    thread_local static char buf[10]; // OK 
+    thread_local static char buf[10]; // OK
 };
 
 void DoSomething()
@@ -224,7 +224,7 @@ Hakkında dikkat edilecek noktalar `thread_local` tanımlayıcısı:
 
 -  Uygulayabileceğiniz `thread_local` sadece veri bildirimlerine ve tanımlarına; için `thread_local` İşlev bildirimlerinde veya tanımlarında kullanılamaz.
 
--  Belirtebileceğiniz `thread_local` yalnızca statik depolama süresine sahip veri öğeleri üzerinde. Bu, genel veri nesneleri içerir (her ikisi de **statik** ve **extern**), yerel statik nesneler ve sınıfların statik veri üyeleri. Herhangi bir yerel değişken bildirildi `thread_local` başka bir depolama sınıfı sağlanır; örtük olarak statiktir blok kapsamındaki diğer bir deyişle, `thread_local` eşdeğerdir `thread_local static`. 
+-  Belirtebileceğiniz `thread_local` yalnızca statik depolama süresine sahip veri öğeleri üzerinde. Bu, genel veri nesneleri içerir (her ikisi de **statik** ve **extern**), yerel statik nesneler ve sınıfların statik veri üyeleri. Herhangi bir yerel değişken bildirildi `thread_local` başka bir depolama sınıfı sağlanır; örtük olarak statiktir blok kapsamındaki diğer bir deyişle, `thread_local` eşdeğerdir `thread_local static`.
 
 -  Belirtmelisiniz `thread_local` bildirimi ve bir iş parçacığı yerel nesnesinin tanımı için bildirim ve tanım ortaya aynı dosya veya dosyaları ayırmak.
 
@@ -232,7 +232,7 @@ Windows, şirket `thread_local` işlevsel olarak eşdeğerdir [gt;__declspec(thr
 
 ##  <a name="register"></a>  Kaydolun
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **kaydetme** anahtar sözcüğü, artık desteklenen bir depolama sınıfı. Anahtar sözcüğü hala standart gelecekte kullanım için ayrılmıştır. 
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **kaydetme** anahtar sözcüğü, artık desteklenen bir depolama sınıfı. Anahtar sözcüğü hala standart gelecekte kullanım için ayrılmıştır.
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class
@@ -322,4 +322,5 @@ Program hakkında dikkat edilecek bazı noktalar vardır:
 - Son olarak, statik yerel değişkenler gibi `I3` program süresince değerlerini korur, ancak program sona erer gibi yok edilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Bildirimler ve Tanımlar](../cpp/declarations-and-definitions-cpp.md)
+
+[Bildirimler ve Tanımlar](../cpp/declarations-and-definitions-cpp.md)

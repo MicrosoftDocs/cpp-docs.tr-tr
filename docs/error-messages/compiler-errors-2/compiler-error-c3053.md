@@ -16,45 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e140e2da535ebebbc332a8342d8970ff61a528d1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c50112be2650c4b379b6de93acaa73a9cb285687
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250468"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112037"
 ---
 # <a name="compiler-error-c3053"></a>Derleyici Hatası C3053
-'simgesi': 'threadprivate' geçerli yalnızca genel veya statik veri öğeleri için  
-  
- Simgeler geçirilen [threadprivate](../../parallel/openmp/reference/threadprivate.md) ya da genel veya statik olmalıdır.  
-  
- Aşağıdaki örnek C3053 oluşturur:  
-  
-```  
-// C3053.cpp  
-// compile with: /openmp  
-void Test() {  
-   int x, y;  
-   #pragma omp threadprivate(x, y)   // C3053  
-   #pragma omp parallel copyin(x, y)  
-   {  
-      x = y;  
-   }  
-}  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C3053b.cpp  
-// compile with: /openmp /LD  
-int x, y;  
-#pragma omp threadprivate(x, y)  
-  
-void Test() {  
-   #pragma omp parallel copyin(x, y)  
-   {  
-      x = y;  
-   }  
-}  
+
+'symbol': 'threadprivate' genel veya statik veri öğeleri için geçerlidir, yalnızca
+
+Semboller geçirilen [threadprivate](../../parallel/openmp/reference/threadprivate.md) genel veya statik olmalıdır.
+
+Aşağıdaki örnek, C3053 oluşturur:
+
+```
+// C3053.cpp
+// compile with: /openmp
+void Test() {
+   int x, y;
+   #pragma omp threadprivate(x, y)   // C3053
+   #pragma omp parallel copyin(x, y)
+   {
+      x = y;
+   }
+}
+```
+
+Olası çözüm:
+
+```
+// C3053b.cpp
+// compile with: /openmp /LD
+int x, y;
+#pragma omp threadprivate(x, y)
+
+void Test() {
+   #pragma omp parallel copyin(x, y)
+   {
+      x = y;
+   }
+}
 ```

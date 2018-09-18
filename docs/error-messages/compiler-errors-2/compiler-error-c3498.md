@@ -16,53 +16,57 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 913caa8fc73e5fe325a9d17a48b6c2b9ba641546
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5bb87abc113e586aa4f3097444df4c5a46a6a92c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33254461"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106785"
 ---
 # <a name="compiler-error-c3498"></a>Derleyici Hatası C3498
-'var': bir yönetilen sahip değişkeni veya WinRTtype yakalayamazsınız  
-  
- Yönetilen tür veya bir Windows çalışma zamanı türü bir lambda sahip bir değişken yakalama yapılamaz.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
--   Yönetilen geçirmek ya da Windows çalışma zamanı değişkenine lambda ifadesi parametre listesi.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, yönetilen bir türe sahip bir değişken lambda ifadesi yakalama listesinde göründüğünden C3498 oluşturur:  
-  
-```  
-// C3498a.cpp  
-// compile with: /clr  
-using namespace System;  
-  
-int main()  
-{  
-   String ^ s = "Hello";  
-   [&s](String ^ r)   
-      { return String::Concat(s, r); } (", World!"); // C3498  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, yönetilen değişkeni geçirerek C3498 çözümler `s` lambda ifadesi parametre listesi için:  
-  
-```  
-// C3498b.cpp  
-// compile with: /clr  
-using namespace System;  
-  
-int main()  
-{  
-   String ^ s = "Hello";  
-   [](String ^ s, String ^ r)   
-      { return String::Concat(s, r); } (s, ", World!");  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+
+'var': bir yönetilen sahip bir değişken veya WinRTtype yakalayamazsınız
+
+Bir lambda içinde yönetilen bir türe veya bir Windows çalışma zamanı türü içeren bir değişkeni yakalayamazsınız.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+- Yönetilen geçirin veya lambda ifadesi parametre listesine Windows çalışma zamanı değişken.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, yönetilen bir türe sahip bir değişken bir lambda ifadesinin yakalama listede göründüğünden C3498 oluşturur:
+
+```
+// C3498a.cpp
+// compile with: /clr
+using namespace System;
+
+int main()
+{
+   String ^ s = "Hello";
+   [&s](String ^ r)
+      { return String::Concat(s, r); } (", World!"); // C3498
+}
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, yönetilen değişkeni geçirerek C3498 çözümler `s` lambda ifadesi parametre listesine:
+
+```
+// C3498b.cpp
+// compile with: /clr
+using namespace System;
+
+int main()
+{
+   String ^ s = "Hello";
+   [](String ^ s, String ^ r)
+      { return String::Concat(s, r); } (s, ", World!");
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)

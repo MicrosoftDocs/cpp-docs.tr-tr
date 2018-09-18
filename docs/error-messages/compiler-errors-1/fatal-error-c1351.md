@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a700734cc2fb860d9d3ad8143aed817809ab69f2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2bd76b164e24834f22cc4654873559e340efcb79
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198020"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100469"
 ---
 # <a name="fatal-error-c1351"></a>Önemli hata C1351
 
-> DLL yüklenirken hata oluştu '*dll*': uyumsuz sürümü  
+> DLL yüklenirken hata oluştu '*dll*': uyumsuz sürüm
 
-DLL yanlış sürümü bulundu.
+Yanlış bir DLL sürümü bulunamadı.
 
-Bu, yükleme ile ilgili bir sorun olduğunu gösterir ve Visual Studio yeniden yüklemeniz gerekir.
+Bu yüklemenizle ilgili bir sorunu gösterir ve Visual Studio yeniden yüklemeniz gerekir.

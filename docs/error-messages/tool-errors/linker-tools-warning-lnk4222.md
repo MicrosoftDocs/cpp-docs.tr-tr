@@ -16,46 +16,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 359af4c4d3b1079b2d56f108bff0ee1488ea71f9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: abc4f85fbc361b37d9325f9d395a1c34e1eeed2e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302155"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106948"
 ---
 # <a name="linker-tools-warning-lnk4222"></a>Bağlayıcı Araçları Uyarısı LNK4222
-dışarı aktarılan simgesi 'simgesi' sıra atanmamalıdır  
-  
- Aşağıdaki simgeler sıra tarafından verilebilir:  
-  
--   `DllCanUnloadNow`  
-  
--   `DllGetClassObject`  
-  
--   `DllGetClassFactoryFromClassString`  
-  
--   `DllInstall`  
-  
--   `DllRegisterServer`  
-  
--   `DllRegisterServerEx`  
-  
--   `DllUnregisterServer`  
-  
- Bu işlevlerin her zaman adıyla bulunan kullanarak `GetProcAddress`. Bağlayıcı bu hakkında sizi uyarır verme türüdür daha büyük bir resim neden. Sıralı dışarı aralığını nispeten az dışarı aktarma ile büyük olduğunda bu durum oluşabilir. Örneğin,  
-  
-```  
-EXPORTS  
-   DllGetClassObject   @1  
-   MyOtherAPI      @100  
-```  
-  
- (2-99) yalnızca dolgu bunların 98 dışa aktarma adres tablosundaki 100 yuvası gerektirir. Gel gelelim  
-  
-```  
-EXPORTS  
-   DllGetClassObject  
-   MyOtherAPI      @100  
-```  
-  
- iki yuvası gerektirir. (Ayrıca ile dışa aktarabilirsiniz olduğunu unutmayın [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlayıcı seçeneği.)
+
+dışarı aktarılan Sembol 'symbol' sembolüne sıra atanmamalıdır
+
+Aşağıdaki simgeleri sıra tarafından verilebilir:
+
+- `DllCanUnloadNow`
+
+- `DllGetClassObject`
+
+- `DllGetClassFactoryFromClassString`
+
+- `DllInstall`
+
+- `DllRegisterServer`
+
+- `DllRegisterServerEx`
+
+- `DllUnregisterServer`
+
+Bu işlevlerin her zaman adıyla bulunan kullanarak `GetProcAddress`. Bağlayıcı bu konuda uyaran daha büyük bir görüntüde neden olabileceğinden dışarı aktarma türüdür. Bu durum, sıralı dışarı aktarmalar aralığını nispeten daha az sayıda dışarı aktarma ile büyük olması durumunda gerçekleşebilir. Örneğin,
+
+```
+EXPORTS
+   DllGetClassObject   @1
+   MyOtherAPI      @100
+```
+
+100 ile bunların 98 dışa aktarma adres tablosunda (2-99) yalnızca filler yuvası gerektirir. Diğer yandan
+
+```
+EXPORTS
+   DllGetClassObject
+   MyOtherAPI      @100
+```
+
+iki yuvası gerektirir. (Ayrıca ile aktarabilirsiniz olduğunu unutmayın [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlayıcı seçeneği.)

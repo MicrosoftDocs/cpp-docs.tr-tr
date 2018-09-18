@@ -19,22 +19,24 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 170f45a3581846dc588abf06aec170d66aa0d545
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b37a06ec89f0e2e21c4332a480e58c605f0d161f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111396"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110724"
 ---
 # <a name="ole-db-consumers-and-providers"></a>OLE DB Tüketicileri ve Sağlayıcıları
-OLE DB Mimari Tüketicileri ve sağlayıcıları modelini kullanır. Bir tüketici veri isteğinde bulunur. Bir sağlayıcı tablo biçiminde veri yerleştirip tüketiciye dönmeden bu isteklere yanıt verir. Tüketici yapabilen herhangi bir çağrısına sağlayıcısında uygulanmalıdır.  
+
+OLE DB Mimari Tüketicileri ve sağlayıcıları modelini kullanır. Bir tüketici veri istekleri yapar. Bir sağlayıcı verileri tablo biçiminde yerleştirip tüketiciye döndürmeden bu isteklere yanıt verir. Tüketici yapabilen herhangi bir çağrı sağlayıcısında uygulanmalıdır.  
   
- Teknik olarak tanımlanan bir tüketici OLE DB arabirimleri aracılığıyla verilere erişen tüm sistem veya uygulama (OLE DB bileşen gerekmez) kodudur. Arabirimler sağlayıcı uygulanır. Bu nedenle, bir veri erişimi kapsüllemek ve başka nesnelere (tüketiciler) kullanıma sunmak için OLE DB arabirimlerini uygulayan herhangi bir yazılım bileşeni sağlayıcıdır.  
+Teknik olarak tanımlanan bir tüketici OLE DB arabirimleri aracılığıyla verilere erişen tüm sistem veya uygulama (OLE DB bileşeni gerekmez) kodudur. Arabirimler sağlayıcı uygulanır. Bu nedenle, bir veri erişimi kapsülleyen ve diğer nesneleri (diğer bir deyişle, tüketiciler) göstermek için OLE DB arabirimlerini uygulayan herhangi bir yazılım bileşeni sağlayıcısıdır.  
   
- Roller açısından bir tüketici OLE DB arabirimlerinde yöntemlerini çağıran; OLE DB sağlayıcısı gerekli OLE DB arabirimlerini uygular.  
+Rolleri açısından bir tüketici OLE DB arabirimleri üzerinde yöntemleri çağırır; bir OLE DB sağlayıcısı gerekli OLE DB arabirimlerini uygular.  
   
- Bu rolleri her zaman, özellikle bir n katmanlı durumda anlamlı değil çünkü OLE DB koşulları istemci ve sunucu önler. Bir tüketici başka bir bileşene hizmet katmanında bir bileşeni olabilir çünkü bir istemci çağırmak için bileşen kafa karıştırıcı olacaktır. Ayrıca, bir sağlayıcı bazen daha sunucu veritabanı sürücüsünden gibi davranır.  
+OLE DB, bu rolleri her zaman, özellikle bir n katmanlı durumda mantıklı değildir çünkü koşulları istemci ve sunucu önler. Bir tüketici bir bileşen başka bir bileşene hizmet katmanı olabileceğinden, bir istemci çağırmak için bileşen kafa karıştırıcı olacaktır. Ayrıca, bir sağlayıcı bazen daha bir sunucu veritabanı sürücüsünden gibi davranır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB programlama](../../data/oledb/ole-db-programming.md)   
- [OLE DB Programlamaya Genel Bakış](../../data/oledb/ole-db-programming-overview.md)
+
+[OLE DB Programlama](../../data/oledb/ole-db-programming.md)<br/>
+[OLE DB Programlamaya Genel Bakış](../../data/oledb/ole-db-programming-overview.md)

@@ -18,30 +18,32 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df491508f7898fe3c97bc02a83e5259baa9c89f8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7be460ace4e407a328c0cf23c9e6c9af09d17ca0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382870"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101489"
 ---
 # <a name="c-additive-operators"></a>C Ek İşleçleri
-Toplama işleçleri eklenmesini gerçekleştirme (**+**) ve çıkarma (**-**).  
-  
-## <a name="syntax"></a>Sözdizimi  
- *ADDITIVE ifade*:  
- *ifade çarpma*  
-  
- *ADDITIVE ifade***+***ifade çarpma*   
-  
- *ADDITIVE ifade***-***ifade çarpma*   
-  
+
+Ek işleçlerini eklenmesini gerçekleştirme (**+**) ve çıkarma (**-**).
+
+## <a name="syntax"></a>Sözdizimi
+
+*additive-expression*: *çarpma ifadesi*
+
+*additive-expression***+***çarpma ifadesi* 
+
+*additive-expression***-***çarpma ifadesi* 
+
 > [!NOTE]
->  Ancak sözdizimi *ADDITIVE ifade* içeren *ifade çarpma*, bu çarpma kullanarak ifadeler gerekli olduğunu göstermez. Sözdiziminde bkz [C dili sözdizimi özeti](../c-language/c-language-syntax-summary.md), için *ifade çarpma*, *cast ifadesi*, ve *Tek terimli ifadesi*.  
-  
- İşlenen tam sayı veya kayan değerlerini olabilir. Bazı ek işlemler her işleç tartışma altında özetlendiği gibi işaretçi değerlerine de gerçekleştirilebilir.  
-  
- Toplama işleçleri olağan aritmetik dönüştürmeler Entegral ve kayan işlenen üzerinde gerçekleştirin. Sonuç türü dönüştürmeden sonra işlenen türüdür. Toplama işleçleri tarafından gerçekleştirilen dönüşümleri taşması veya yetersiz kalması için koşullar sağlamaz, bu yana dönüştürmeden sonra işlenen türünde bir toplama işleminin sonucu gösterilemezse bilgiler kaybolmuş olabilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Ek İşleçler: + and -](../cpp/additive-operators-plus-and.md)
+>  Ancak söz diziminin *additive-expression* içerir *ifade çarpma*, bu ifadeleri kullanarak çarpma gerekli olduğunu göstermez. Aşağıdaki sözdizimine bakın [C dili sözdizimi özeti](../c-language/c-language-syntax-summary.md), için *ifade çarpma*, *atama ifadesini*, ve *tekli ifade*.
+
+İşlenen, tamsayı veya kayan değer olabilir. Bazı ek işlemler her işlecinin tartışma altında belirtildiği gibi işaretçi değerleri üzerinde de gerçekleştirilebilir.
+
+Ek işleçlerini olağan aritmetik dönüştürmeler integral ve kayan işlenenler üzerinde gerçekleştirin. Sonuç türü dönüştürme işleminden sonra işlenenler türüdür. Toplama işleçleri tarafından gerçekleştirilen dönüştürmeler taşma veya yetersiz kalma koşulları sağlamaz olduğundan, dönüştürme işleminden sonra bir toplama işleminin sonucu işlenenler türünü temsil edilemiyorsa bilgiler kaybolabilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Ek İşleçler: + and -](../cpp/additive-operators-plus-and.md)

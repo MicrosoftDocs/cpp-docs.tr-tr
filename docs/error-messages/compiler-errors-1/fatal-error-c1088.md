@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1041bc87822e5347e519f73e039056355825da2f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 570db0d6956be8345ef6ecae5a073bf28d2eee1d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196967"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111504"
 ---
 # <a name="fatal-error-c1088"></a>Önemli hata C1088
-Dosya türünü dosya boşaltılamıyor: 'dosya': ileti  
-  
- Derleyici bir g/ç işlemi tamamlanamıyor.
+
+FileType dosyası temizlenemiyor: 'file': ileti
+
+Derleyici, bir g/ç işlemi tamamlanamıyor.

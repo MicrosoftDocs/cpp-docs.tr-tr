@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eded212dc2a3c397ab0d917e860daf29ce6b9c8a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3df9761f999eaf3623811874ec6bee0bfb4f9cae
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319120"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112609"
 ---
 # <a name="resource-compiler-fatal-error-rw1030"></a>Kaynak Derleyicisi Önemli Hatası RW1030
-Çıkış hatası  
-  
- Kaynak Derleyicisi hedef dosyasını oluşturmaya mümkün değilse bu hata oluşabilir. Yeterli disk alanı olduğunu ve birim üzerinde yazma izni olduğundan emin olun.
+
+Çıkış hatası
+
+Kaynak derleyicisi için gereken hedef dosyayı oluşturmak mümkün değilse bu hata oluşabilir. Birim üzerinde yazma izninizin olduğunu ve yeterli disk alanı olduğundan emin olun.

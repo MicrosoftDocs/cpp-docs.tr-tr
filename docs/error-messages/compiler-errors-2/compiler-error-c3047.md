@@ -16,42 +16,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4ab5f13a898d3f1c200e493d386fb59727e022c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6ecc39ae2659416def6faf9903efb66a75e0afcc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246133"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105485"
 ---
 # <a name="compiler-error-c3047"></a>Derleyici Hatası C3047
-'Bölüm' bölge '#pragma omp bölümü tarafından' gelmelidir OpenMP yapılandırılmış bloğunda  
-  
- Tüm kod tarafından sunulan bir kod bloğu içinde bir [bölümleri](../../parallel/openmp/reference/sections-openmp.md) yönergesi tarafından sunulan bir kod bloğu olmalıdır bir `section` yönergesi.  
-  
- Aşağıdaki örnek C3047 oluşturur:  
-  
-```  
-// C3047.cpp  
-// compile with: /openmp /c  
-#include "omp.h"  
-  
-int main() {  
-   int n2 = 2, n3 = 3;  
-  
-   #pragma omp parallel  
-   {  
-      ++n2;  
-  
-      #pragma omp sections  
-      {  
-  
-         #pragma omp section  
-         {  
-            ++n3;  
-         }  
-  
-         ++n2;   // C3047 not enclosed in #pragma omp section  
-      }  
-   }  
-}  
+
+Yapısal bloğunun bir OpenMP 'sections' bölgesindeki '#pragma omp section' gelmelidir
+
+Herhangi bir kod tarafından sunulan bir kod bloğu içinde bir [bölümleri](../../parallel/openmp/reference/sections-openmp.md) yönergesi tarafından sunulan bir kod bloğu içinde olmalıdır bir `section` yönergesi.
+
+Aşağıdaki örnek, C3047 oluşturur:
+
+```
+// C3047.cpp
+// compile with: /openmp /c
+#include "omp.h"
+
+int main() {
+   int n2 = 2, n3 = 3;
+
+   #pragma omp parallel
+   {
+      ++n2;
+
+      #pragma omp sections
+      {
+
+         #pragma omp section
+         {
+            ++n3;
+         }
+
+         ++n2;   // C3047 not enclosed in #pragma omp section
+      }
+   }
+}
 ```

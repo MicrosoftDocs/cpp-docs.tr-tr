@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10d7f419d528fcd2445b82e29d92442002624909
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f692f52477c988c277f60a689dac5ce83a90acb2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236059"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112050"
 ---
 # <a name="compiler-error-c2818"></a>Derleyici Hatası C2818
-uygulamasının aşırı '-> işleci' 'type' yinelemelidir türü aracılığıyla  
-  
- Özyinelemeli bir sınıf üye erişimi işleci şemadaki içeren `return` deyimi. Tanımlanacak `->` özyineleme işleciyle, özyinelemeli yordamına operatöründen adlı ayrı bir işlevi geçersiz kılma işlevi gitmesi.
+
+Uygulama, aşırı yüklenmiş 'operator ->' 'type' türü aracılığıyla özyinelemelidir
+
+Bir şemadaki sınıf üye erişimi işleci bir özyinelemeli içeren `return` deyimi. Yeniden tanımlanacak `->` özyineleme işleç, işleç adlı ayrı bir işlev özyinelemeli yordamına geçersiz kılma işlevi konumsa.

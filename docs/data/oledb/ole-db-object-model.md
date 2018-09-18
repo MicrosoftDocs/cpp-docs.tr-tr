@@ -16,65 +16,78 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ba9fd9b7ba5503f6ed5e1837147524f5abc7c31b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c0bd4c8f18addf50dfcee525dea255f75b2fdf75
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111087"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101501"
 ---
 # <a name="ole-db-object-model"></a>OLE DB Nesne Modeli
-OLE DB Nesne modeli aşağıdaki nesnelerden veya bileşenlerden oluşur. İlk dört nesne veya listelenen bileşenleri (veri kaynakları, oturumlar, komutları ve satır kümeleri) bir veri kaynağına bağlanmak ve onu görüntülemenizi sağlar. Erişimciler ile başlayarak, kalan ilişkilendirmek görüntülendiğinde verilerle çalışmak için.  
+
+OLE DB Nesne modeli, aşağıdaki nesneleri veya bileşenleri içerir. İlk dört nesneleri veya listelenen bileşenleri (veri kaynakları, oturumlar, komutları ve satır kümeleri), bir veri kaynağına bağlanmak ve onu görüntülemenizi sağlar. Erişimcileri ile başlayarak, rest görüntülendiğinde verilerle çalışmaya ilgilidir.  
   
 ## <a name="data-sources"></a>Data Sources  
- Veri kaynağı nesneleri, bir dosya veya DBMS gibi bir veri kaynağına bağlanmak izin verin. Bir veri kaynağı nesnesi oluşturur ve bağlantısını yönetir ve izinleri ve kimlik doğrulama bilgilerini (örneğin, oturum açma adı ve parola) içeriyor. Bir veri kaynağı nesnesi bir veya daha fazla oturumları oluşturabilirsiniz.  
+
+Veri kaynağı nesneleri bir dosya veya DBMS gibi bir veri kaynağına bağlanmanıza olanak sağlar. Bir veri kaynağı nesnesi oluşturur ve bağlantı yönetir ve izinleri ve kimlik doğrulama bilgilerini (örneğin, oturum açma adı ve parola) içerir. Bir veri kaynağı nesnesinin bir veya daha fazla oturumları oluşturabilirsiniz.  
   
 ## <a name="sessions"></a>Oturumlar  
- Bir oturum sorgu ve veri almak için veri kaynağı ile belirli bir etkileşim yönetir. Her oturum tek bir işlem değil. Bir işlem ACID testi tarafından tanımlanan bir bölünemez iş birimidir. ACID tanımı için bkz: [işlemleri](#vcconoledbcomponents_transactions).  
+
+Oturum, sorgu ve veri alımı veri kaynağındaki belirli bir etkileşim yönetir. Her oturum, tek bir işlem değil. Bir işlem, ACID testi tarafından tanımlanan bir bölünemez iş birimidir. ACID tanımı için bkz [işlemleri](#vcconoledbcomponents_transactions).  
   
- Oturumlar satır kümeleri açmak ve onu oluşturan veri kaynağı nesnesi döndüren gibi önemli görevleri gerçekleştirin. Oturumlar, meta veriler veya veri kaynağı kendisini (örneğin, tablo bilgileri) hakkında bilgi de geri dönebilirsiniz.  
+Oturumlarının oluşturulduğu veri kaynağı nesnesi döndüren ve satır kümeleri açma gibi önemli görevler gerçekleştirir. Oturumlarının ayrıca meta veriler ya da veri kaynağının (örneğin, tablo bilgileri) hakkında bilgi döndürebilir.  
   
- Bir oturumu bir veya daha fazla komut oluşturabilirsiniz.  
+Bir oturumu bir veya daha fazla komut oluşturabilirsiniz.  
   
 ## <a name="commands"></a>Komutlar  
- Komutlar bir SQL deyimi gibi bir metin komutunu yürütün. Metin komutu bir SQL gibi bir satır kümesi belirtirse **seçin** deyimi, komut, satır kümesi oluşturur.  
+
+Bir SQL deyimi gibi bir metin komut komutları yürütün. Metin komutu bir SQL gibi bir satır kümesi belirtirse **seçin** deyimi, komut satır kümesi oluşturur.  
   
- Bir komutu yalnızca bir tüketici'den bir veri kaynağı nesnesi için yürütme sağlayıcının temel veri deposu tarafından geçirilen bir dize (örneğin, bir SQL deyimi) bir metin komutu için kapsayıcıdır. Genellikle, metin bir SQL komuttur **seçin** deyimi (olduğundan, bu durumda SQL **seçin** bir satır kümesi belirtir komutu otomatik olarak bir satır kümesi oluşturur).  
+Yalnızca bir tüketici için bir veri kaynağı nesnesi yürütme için sağlayıcıya ait temel veri deposu tarafından geçirilen bir dize (örneğin, bir SQL deyimi) olan bir metin komutu için kapsayıcı bir komuttur. Genellikle, bir SQL metin komutu, **seçin** deyimi (Bu durumda, çünkü SQL **seçin** bir satır kümesi belirtir komut otomatik olarak bir satır kümesi oluşturur).  
   
 ## <a name="rowsets"></a>Satır kümeleri  
- Satır kümeleri verileri tablo biçiminde kullanıma sunar. Bir dizin, bir satır kümesi özel bir durumdur. Satır kümeleri oturum ya da komutu oluşturabilirsiniz.  
+
+Satır kümeleri verileri tablo biçiminde kullanıma sunar. Dizin, bir satır kümesi özel bir durumdur. Oturum ya da komut satır kümeleri oluşturabilirsiniz.  
   
 ### <a name="schema-rowsets"></a>Şema Satır Kümeleri  
- Şemalar veritabanıyla ilgili meta veriler (yapısal bilgiler) içerir. Şema satır kümeleri şema bilgileri içeren satır kümeleri ' dir. Bazı OLE DB sağlayıcıları DBMS için şema satır kümesi nesneleri destekler. Şema satır kümeleri hakkında daha fazla bilgi için bkz: [şema satır kümeleri ile meta veri alma](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) ve [şema satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md).  
+
+Şemalar, bir veritabanı hakkındaki meta verileri (yapısal bilgileri) içerir. Şema satır kümeleri şema bilgileri içeren bir satır var. Bazı OLE DB sağlayıcıları için DBMS şeması satır kümesi nesneleri destekler. Şema satır kümeleri hakkında daha fazla bilgi için bkz: [kümelerinin şema satır kümeleri ile](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) ve [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md).  
   
-### <a name="view-objects"></a>Görünüm nesneleri  
- Bir görünüm nesnesi satırları ve satır sütunlarından bir alt kümesini tanımlar. Kendi veri içermiyor. Görünüm nesneleri birden çok satır kümeleri verilerden birleştiremez.  
+### <a name="view-objects"></a>Nesneleri görüntüle  
+
+Bir görünüm nesnesi bir satır kümesi sütun ve satır kümesini tanımlar. Kendi veri içermiyor. Görünüm nesneleri birden çok satır kümeleri verilerden birleştiremezsiniz.  
   
 ## <a name="accessors"></a>Erişimciler  
- Sadece OLE DB erişimciler kavramını kullanır. Erişimci tüketicide verilerin depolanma şeklini açıklar. Satır kümesi alanları (sütunları) tüketicideki bildirme veri üyeleri arasında (bir sütun eşlemesi olarak adlandırılır) bağlamaları kümesi içerir.  
+
+Sadece OLE DB erişimcileri kavramını kullanır. Erişimci, tüketicide verilerin depolanma şeklini tanımlar. Satır kümesi alan (sütun) ve tüketici olarak bildirdiğiniz veri üyeleri arasında (sütun eşlemesi olarak bilinir) bağlamaları kümesini içerir.  
   
 ##  <a name="vcconoledbcomponents_transactions"></a> İşlemler  
- İşlem nesneleri tamamlama ya da iç içe geçmiş işlemler en alt düzeyin durduruluyor olduğunda kullanılır. Bir işlem ACID testi tarafından tanımlanan bir bölünemez iş birimidir. ACID anlamına gelir:  
+
+İşlem nesneleri Sistemi'ne veya iptal ediliyor en alt düzeyin iç içe işlemler kullanılır. Bir işlem, ACID testi tarafından tanımlanan bir bölünemez iş birimidir. ACID anlamına gelir:  
   
--   Kararlılık: küçük çalışma birimlerine bölünemez.  
+- Özellik sağlar: küçük çalışma birimlerine bölünemez.  
   
--   Eşzamanlılık: aynı anda birden fazla işlem oluşabilir.  
+- Eşzamanlılık: birden fazla işlem bir zamanda meydana gelebilir.  
   
--   Yalıtım: bir işlem başka tarafından yapılan değişiklikler hakkında bilgi sınırlıdır.  
+- Yalıtım: bir işlem bir başkası tarafından yapılan değişiklikler hakkında bilgi sınırlıdır.  
   
--   Dayanıklılık: işlem kalıcı değişiklikler yapar.  
+- Dayanıklılık: işlem, kalıcı değişiklikler yapar.  
   
-## <a name="enumerators"></a>Numaralandırmalar  
- Numaralandırıcılar kullanılabilir veri kaynaklarını ve diğer numaralandırıcıları arayın. Belirli bir veri kaynağı için özelleştirilmiş değil tüketicileri numaralandırıcılar kullanmak için bir veri kaynağı için aramak için kullanın.  
+## <a name="enumerators"></a>Numaralandırıcılar  
+
+Numaralandırıcılar, kullanılabilir veri kaynaklarını ve diğer numaralandırıcıları arayın. Belirli veri kaynağı için özelleştirilmiş değil tüketiciler numaralandırıcılar kullanmak bir veri kaynağını aramak için kullanın.  
   
- Microsoft Data Access SDK kök numaralandırıcısı, veri kaynaklarını ve diğer numaralandırıcıları arayan kayıt defteri erişir. Başka numaralandırıcılar, bir sağlayıcıya özgü şekilde kayıt defteri veya arama geçiş.  
+Microsoft Data Access SDK kök numaralandırıcısı, veri kaynakları ve başka numaralandırıcılar için kayıt defteri erişir. Başka numaralandırıcılar kayıt defteri veya arama sağlayıcıya özgü bir şekilde çapraz geçiş yapma.  
   
 ## <a name="errors"></a>Hatalar  
- Herhangi bir OLE DB Nesne üzerinde herhangi bir arabirimi hatalara neden olabilir. Hata, bir isteğe bağlı özel hata nesnesi de dahil olmak üzere hatayla ilgili ek bilgileri içerir. Bu bilgiler bir HRESULT bulunur.  
+
+Herhangi bir OLE DB Nesne herhangi bir arabirimde hatalara neden olabilir. Hata, bir isteğe bağlı bir özel hata nesnesi dahil olmak üzere, bir hata hakkında ek bilgiler içermektedir. Bu bilgiler, HRESULT yer alır.  
   
 ## <a name="notifications"></a>Bildirimler  
- Bildirimler, (burada paylaşımı tüketicilerin aynı işlem içinde çalışmıyor olabilir varsayılır anlamına gelir) satır kümesi paylaşan birlikte çalışan tüketici grupları tarafından kullanılır. Bildirimleri satır kümesi kendi eşleri tarafından gerçekleştirilen eylemler hakkında bilgi sahibi olmak birlikte çalışan tüketiciler satır paylaşımını etkinleştirin.  
+
+Bildirimleri (burada paylaşımı tüketicilerin aynı işlem içinde çalışmıyor olabilir varsayılır anlamına gelir), satır kümesi paylaşan kurduğuna ilişkin tüketici grupları tarafından kullanılır. Satır kümesi kendi eşleri tarafından gerçekleştirilen eylemler hakkında bilgilendirilmesi kurduğuna ilişkin tüketicileri bir satır kümesi paylaşan bildirimlerini etkinleştirin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB programlama](../../data/oledb/ole-db-programming.md)   
- [OLE DB Programlamaya Genel Bakış](../../data/oledb/ole-db-programming-overview.md)
+
+[OLE DB Programlama](../../data/oledb/ole-db-programming.md)<br/>
+[OLE DB Programlamaya Genel Bakış](../../data/oledb/ole-db-programming-overview.md)

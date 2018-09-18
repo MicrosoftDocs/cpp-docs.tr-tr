@@ -1,5 +1,5 @@
 ---
-title: 'Kayıt kümesi: bir sınıf bir tablo için bildirme (ODBC) | Microsoft Docs'
+title: 'Kayıt kümesi: Tablo (ODBC) için bir sınıf bildirme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,26 +16,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 460b09d32b46bb9f15a95bcb976afa63519b8263
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ea4a816053a548ac8e3292d0416fe68da2dc4296
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33089951"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107680"
 ---
 # <a name="recordset-declaring-a-class-for-a-table-odbc"></a>Kayıt Kümesi: Tablo için Sınıf Bildirme (ODBC)
-Bu konu MFC ODBC sınıfları için geçerlidir.  
+
+Bu konu MFC ODBC sınıflarına uygulanır.  
   
- En yaygın kayıt kümesi sınıfı tek tablo açar. Tek bir tablo için bir kayıt kümesi sınıfı bildirmek için kullanın [MFC ODBC Tüketici Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) gelen **sınıfı Ekle** ve karşılık gelen bir kayıt kümesi alan veri üyesi adlandırılmasıyla istediğiniz her bir sütun seçin.  
+En sık karşılaşılan kayıt kümesi sınıfı, tek bir tabloyu açılır. Tek bir tablo için bir kayıt kümesi sınıfı bildirmek için kullanın [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) gelen **sınıfı Ekle** ve karşılık gelen bir kayıt kümesi alan veri üyesi adlandırarak istediğiniz her bir sütun seçin.  
   
- Kayıt kümeleri için diğer kullanımları şunlardır:  
+Kayıt kümeleri diğer kullanımları şunlardır:  
   
--   İki veya daha fazla tabloları birleştirme.  
+- İki veya daha fazla tabloları birleştirme.  
   
--   Önceden tanımlanmış sorgu sonuçlarını içeren.  
+- Önceden tanımlanmış sorgu sonuçlarını içeren.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md)   
- [Kayıt kümesi: Oluşturma ve kapatma (ODBC) kayıt kümeleri](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)   
- [Kayıt kümesi: bir sınıf bir önceden tanımlanmış sorgu için bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)   
- [Kayıt Kümesi: Birleşim Gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)
+
+[Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
+[Kayıt Kümesi: Kayıt Kümeleri Oluşturma ve Kapatma (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)<br/>
+[Kayıt Kümesi: Önceden Tanımlanmış Sorgu için Bir Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
+[Kayıt Kümesi: Birleşim Gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)

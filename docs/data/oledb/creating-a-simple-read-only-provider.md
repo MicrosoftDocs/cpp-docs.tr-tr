@@ -1,5 +1,5 @@
 ---
-title: Basit salt okunur sağlayıcı oluşturma | Microsoft Docs
+title: Basit bir salt okunur sağlayıcı oluşturma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,21 +16,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2662a071f443967b921c4a8db27713bc7c3e8bb4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9f951fba45b23b7e4dde92fc11f2faabb53bd43d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33096944"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101572"
 ---
 # <a name="creating-a-simple-read-only-provider"></a>Basit bir Salt Okunur Sağlayıcı Oluşturma
-ATL Proje Sihirbazı ve ATL OLE DB Sağlayıcı Sihirbazı'nı kullanarak bir OLE DB sağlayıcısı oluşturduğunuzda, desteklemek istediğiniz diğer işlevleri ekleyebilirsiniz. Ne tür veriler, tüketiciye ve hangi koşullarda göndereceği inceleyerek sağlayıcınızı tasarlamaya başlayın. Komutları, işlemleri ve diğer isteğe bağlı nesneleri destek gerekip gerekmediğini belirlemek özellikle önemlidir. Önden iyi bir tasarım, uygulama ve sınamayı hızlandırır.  
+
+ATL OLE DB sağlayıcısı Sihirbazı'nı ve ATL projesi Sihirbazı'nı kullanarak bir OLE DB sağlayıcısı oluştururken, desteklemek istediğiniz diğer işlevleri ekleyebilirsiniz. Ne tür veriler, tüketici ve hangi koşullar altında göndereceği inceleyerek sağlayıcınız tasarlamaya başlayabilir. Komutlar, işlemleri ve diğer isteğe bağlı nesneler destek gerekip gerekmediğini belirlemek özellikle önemlidir. Önden iyi bir tasarım, uygulama ve test hızlandırır.  
   
- Örneğin, iki parça halinde sunulur:  
+Örneğin, iki parça halinde sunulur:  
   
--   İlk bölümü gösterir nasıl [basit bir salt okunur sağlayıcı oluşturma](../../data/oledb/implementing-the-simple-read-only-provider.md) dizeleri çifti okur.  
+- İlk bölümü gösterir nasıl [basit bir salt okunur sağlayıcı oluşturma](../../data/oledb/implementing-the-simple-read-only-provider.md) , dizelerden oluşan bir çift okur.  
   
--   İkinci bölümü gösterir nasıl [basit salt okunur sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md) ekleyerek `IRowsetLocate` arabirimi.  
+- İkinci bölümü gösterir nasıl [basit salt okunur sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md) ekleyerek `IRowsetLocate` arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Sağlayıcısı Oluşturma](../../data/oledb/creating-an-ole-db-provider.md)
+
+[OLE DB Sağlayıcısı Oluşturma](../../data/oledb/creating-an-ole-db-provider.md)

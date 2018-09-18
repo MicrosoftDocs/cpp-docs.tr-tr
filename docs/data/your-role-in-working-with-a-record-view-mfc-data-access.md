@@ -16,31 +16,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e7a9d3fa7e828467e73c77736fb5643baf19660f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f0188f9b7498bc704c43f642fcb7aa1dc72af6a4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111100"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105472"
 ---
 # <a name="your-role-in-working-with-a-record-view--mfc-data-access"></a>Kayıt görünümü (MFC veri erişimi) ile çalışırken sizin rolünüz
-Aşağıdaki tabloda, genellikle kayıt görünümü ile çalışmak için ne gerekir ve framework sizin için ne yaptığını gösterir.  
+
+Aşağıdaki tabloda, genellikle kayıt görünümü ile çalışmak için neler gerekir ve framework sizin için ne yaptığını gösterir.  
   
 ### <a name="working-with-a-record-view-you-and-the-framework"></a>Kayıt görünümü ile çalışırken: siz ve Framework  
   
-|Bunun için,|Çerçeve|  
+|Bunun için,|Framework|  
 |---------|-------------------|  
-|Form tasarlamak için Visual C++ iletişim kutusu Düzenleyicisi'ni kullanın.|Bir iletişim kutusu şablon kaynağı denetimleriyle oluşturur.|  
-|Kullanım [MFC Uygulama Sihirbazı'nı](../mfc/reference/database-support-mfc-application-wizard.md) türetilmiş sınıfları oluşturmak için [CRecordView](../mfc/reference/crecordview-class.md) ve [CRecordset](../mfc/reference/crecordset-class.md).|Sınıflar için yazar.|  
-|Kayıt görünümü denetimlerini kayıt kümesi alan veri üyeleri için eşleyin.|DDX denetimleri ve kayıt kümesi alanları arasında sağlar.|  
-||Varsayılan için komut işleyicileri sağlar **taşıma ilk**, **taşıma son**, **taşıma sonraki**, ve **taşıma önceki** komutların menülerden veya araç düğmeler.|  
-||Veri kaynağına değişiklikleri güncelleştirir.|  
-|[İsteğe bağlı] Liste kutuları veya birleşik giriş kutuları veya diğer denetimleri ikinci kayıt kümesinden verilerle doldurmak için kod yazma.||  
-|[İsteğe bağlı] Herhangi bir özel doğrulama kodunu yazın.||  
+|Formu tasarlamak için Visual C++ iletişim kutusu düzenleyicisini kullanın.|Bir iletişim şablonunu kaynağı denetimleriyle oluşturur.|  
+|Kullanım [MFC Uygulama Sihirbazı](../mfc/reference/database-support-mfc-application-wizard.md) öğelerinden türetilen sınıfları oluşturmak için [CRecordView](../mfc/reference/crecordview-class.md) ve [CRecordset](../mfc/reference/crecordset-class.md).|Sınıflar, sizin yerinize yazar.|  
+|Kayıt görünümü denetimleri için kayıt kümesi alan veri üyeleri eşleyin.|DDX denetimleri ve kayıt alanları arasında sağlar.|  
+||Varsayılan için komut işleyicileri sağlar **taşıma ilk**, **sona Taşı**, **sonrakine Taşı**, ve **öncekine taşı** menü veya araç komutları düğmeler.|  
+||Değişiklikleri veri kaynağına güncelleştirir.|  
+|[İsteğe bağlı] Liste kutuları veya birleşik giriş kutuları veya diğer denetimleri, ikinci kayıt kümesinden verilerle doldurmak için kod yazın.||  
+|[İsteğe bağlı] Herhangi bir özel doğrulama için kod yazın.||  
 |[İsteğe bağlı] Kayıtlarını eklemek veya silmek için kod yazın.||  
   
- Form tabanlı programlama bir veritabanıyla çalışmak için yalnızca bir yaklaşımdır. Başka bir kullanıcı arabirimi veya herhangi bir kullanıcı arabirimi kullanarak uygulamaları hakkında daha fazla bilgi için bkz: [MFC: belgeler ve görünümler ile veritabanı sınıflarını kullanarak](../data/mfc-using-database-classes-with-documents-and-views.md) ve [MFC: olmadan veritabanı sınıflarını belgeleri kullanarak ve görünümleri](../data/mfc-using-database-classes-without-documents-and-views.md). Veritabanı kayıtlarını görüntülemeye alternatif yaklaşımlar için bkz: sınıfları [CListView](../mfc/reference/clistview-class.md) ve [CTreeView](../mfc/reference/ctreeview-class.md).  
+Form tabanlı programlama veritabanı ile çalışmaya yalnızca bir yaklaşımdır. Başka bir kullanıcı arabirimi veya herhangi bir kullanıcı arabirimi kullanarak uygulamaları hakkında daha fazla bilgi için bkz. [MFC: belgeler ve görünümler ile veritabanı sınıflarını kullanarak](../data/mfc-using-database-classes-with-documents-and-views.md) ve [MFC: olmadan veritabanı sınıflarını belgeleri kullanarak ve görünümleri](../data/mfc-using-database-classes-without-documents-and-views.md). Veritabanı kayıtlarını görüntüleyen alternatif yaklaşım için bkz: sınıfları [CListView](../mfc/reference/clistview-class.md) ve [CTreeView](../mfc/reference/ctreeview-class.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)   
- [ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)
+
+[Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)<br/>
+[ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)

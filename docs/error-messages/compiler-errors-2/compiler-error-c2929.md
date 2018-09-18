@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7a6069060541f884bfbeb298845f5001b35d561
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9d7eee14296178fb90d4a3c34a28926032fcb04b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244966"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102833"
 ---
 # <a name="compiler-error-c2929"></a>Derleyici Hatası C2929
-'tanımlayıcısı': açık örnekleme; açıkça zorla olamaz ve şablon sınıfının üye eşlemesinin gösterme  
-  
- Açıkça oluşturulmasını önlerken tanımlayıcı örneği oluşturulamıyor.  
-  
- Aşağıdaki örnek C2929 oluşturur:  
-  
-```  
-// C2929.cpp  
-// compile with: /c  
-template<typename T>  
-class A {  
-public:  
-   A() {}  
-};  
-  
-template A<int>::A();  
-  
-extern template A<int>::A();   // C2929  
+
+'identifier': açık örnek oluşturma; açıkça zorlanamıyor ve Şablon sınıfı üyesinin örneğinin Gizle
+
+Bir tanımlayıcı örneği oluşturulan önlenirken açıkça örneği oluşturulamıyor.
+
+Aşağıdaki örnek, C2929 oluşturur:
+
+```
+// C2929.cpp
+// compile with: /c
+template<typename T>
+class A {
+public:
+   A() {}
+};
+
+template A<int>::A();
+
+extern template A<int>::A();   // C2929
 ```

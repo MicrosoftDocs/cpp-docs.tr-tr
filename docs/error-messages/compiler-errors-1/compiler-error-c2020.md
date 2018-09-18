@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 267c71d987587ce1b4308a80f40cdc4fa9ecefc2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8b79bc9340e39d5cdc886db4b81d220bbfe88bbd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165328"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099804"
 ---
 # <a name="compiler-error-c2020"></a>Derleyici Hatası C2020
-'member': 'sınıfı' üye yeniden tanımlama  
-  
- Bir temel sınıf veya yapı devralınan üye tanımlandı. Devralınan üyeleri olamaz yeniden tanımlandı olarak bildirilir sürece `virtual` temel sınıf.
+
+'member': 'class' üyesi yeniden tanımı
+
+Bir temel sınıf veya yapı öğesinden devralınan üye tanımlandı. Devralınan üyeleri olamaz yeniden olarak bildirilmedikleri sürece `virtual` temel sınıf.

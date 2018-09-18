@@ -17,25 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 066e963cfe551173088f6d78efaf2057f29d05fa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 30ebb0e28bd25cf92a2d1c918d3cc5bc921df9f6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33105003"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099768"
 ---
 # <a name="using-accessors"></a>Erişimcileri Kullanma
-Aşağıdaki konularda, ne tür erişimci verileriniz için en iyi nasıl belirleneceği açıklanır uygulama ve farklı tür kullanılabilir erişimcileri kullanma:  
+
+Aşağıdaki konularda açıklanır ne tür erişimci için verilerinizi en iyi olduğunu belirlemek nasıl uygulama ve farklı türde kullanılabilir erişimcileri kullanma:  
   
--   [Hangi erişimci kullanacağınızı belirleme](../../data/oledb/determining-which-type-of-accessor-to-use.md)  
+- [Hangi erişimci kullanacağınızı belirleme](../../data/oledb/determining-which-type-of-accessor-to-use.md)  
   
--   [Satır Kümesinde Çoklu Erişimci Kullanma](../../data/oledb/using-multiple-accessors-on-a-rowset.md)  
+- [Satır Kümesinde Çoklu Erişimci Kullanma](../../data/oledb/using-multiple-accessors-on-a-rowset.md)  
   
--   [Dinamik Erişimcileri Kullanma](../../data/oledb/using-dynamic-accessors.md)  
+- [Dinamik Erişimcileri Kullanma](../../data/oledb/using-dynamic-accessors.md)  
   
--   [El ile Çalışan Erişimcileri Kullanma](../../data/oledb/using-manual-accessors.md)  
+- [El ile Çalışan Erişimcileri Kullanma](../../data/oledb/using-manual-accessors.md)  
   
--   [XML Verilerine Erişme](../../data/oledb/accessing-xml-data.md)  
+- [XML Verilerine Erişme](../../data/oledb/accessing-xml-data.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)
+
+[OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)

@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3dedaa2bd500b11f06f9cfa98802fdd6ca84534
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 719ff1a87f3f1afc19cf38736c0059c46a8a9bdc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298097"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110880"
 ---
 # <a name="linker-tools-error-lnk1106"></a>Bağlayıcı Araçları Hatası LNK1106
-Geçersiz dosya veya disk dolu: konuma arama yapılamaz  
-  
- Aracı değil okuma veya yazma `location` bellekle eşlenen dosyasında.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Disk dolu.  
-  
-     Biraz alan boşaltın ve yeniden bağlayın.  
-  
-2.  Bir ağ üzerinden bağlamak çalışıyor.  
-  
-     Bazı ağlar bağlayıcı tarafından kullanılan bellek eşlemeli dosyalar tam olarak desteklemez. Yerel diskinize bağlamayı deneyin.  
-  
-3.  Disk üzerindeki bozuk blok.  
-  
-     Disk donanım ve işletim sistemi gibi bir hata algılandı karşın, bir disk denetleme programı çalıştırmak isteyebilirsiniz.  
-  
-4.  Yığın alanı kalmadı.  
-  
+
+dosya geçersiz veya disk dolu: konumuna aranamıyor
+
+Aracı yüklenemedi okuma veya yazma `location` bellek eşlemeli dosya olarak.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Disk dolu.
+
+     Biraz alan boşaltın ve yeniden bağlayın.
+
+1. Bir ağ üzerinden bağlantı çalışılıyor.
+
+     Bazı ağlar bağlayıcı tarafından kullanılan bellek eşlemeli dosyalar tam olarak desteklemez. Yerel diskinizde bağlamayı deneyin.
+
+1. Diskinizde bozuk blok.
+
+     Disk donanım ve işletim sistemi gibi bir hata algılandı olsa da, bir disk denetleme programı çalıştırmak isteyebilirsiniz.
+
+1. Yığın alanı kalmadı.
+
      Bkz: [C1060](../../error-messages/compiler-errors-1/fatal-error-c1060.md) daha fazla bilgi için.

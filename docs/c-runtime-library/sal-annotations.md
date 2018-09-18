@@ -1,5 +1,5 @@
 ---
-title: SAL ek açıklamaları | Microsoft Docs
+title: SAL ek açıklamalarını | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -57,17 +57,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2eb935285c8c90c238baf59cd11a1232fa33d895
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 363d7ff6de4c808c3c7b8d37a9a9f95bf069723c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409390"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107500"
 ---
 # <a name="sal-annotations"></a>SAL Ek Açıklamaları
-Örneğin, kitaplık üstbilgi dosyaları incelerseniz, olağan dışı bazı ek açıklamaları karşılaşabilirsiniz `_In_z` ve `_Out_z_cap_(_Size)`. Bunlar, nasıl bir işlev parametreleri, örneğin, kullandığını tanımlamak için bunları ve bitirme üzerinde kolaylaştırır garanti hakkında kolaylaştırır varsayımlar ek açıklamaları sağlayan Microsoft kaynak kodu ek açıklama dili (SAL) örneğidir. Üst bilgi dosyasını \<sal.h > ek açıklamalar tanımlar.  
-  
- Visual Studio'da SAL ek açıklamalarını kullanma hakkında daha fazla bilgi için bkz: [C/C++ kod hatalarını azaltmak için SAL ek açıklamaları kullanılarak](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)
+
+Örneğin, kitaplık üstbilgi dosyaları incelemek, olağan dışı bazı ek açıklamaları, karşılaşabilirsiniz `_In_z` ve `_Out_z_cap_(_Size)`. Bunlar, bir dizi nasıl bir işlev parametrelerini, örneğin, kullandığı açıklamak için bunları ve sonlandırma üzerinde kolaylaştırır garantiler hakkında kolaylaştırır varsayımların ek açıklamalar sağlayan Microsoft kaynak kodu ek açıklama dili (SAL) örneğidir. Üst bilgi dosyası \<sal.h > ek açıklamalar tanımlar.
+
+Visual Studio'da SAL ek açıklamalarını kullanma hakkında daha fazla bilgi için bkz. [C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanarak](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)

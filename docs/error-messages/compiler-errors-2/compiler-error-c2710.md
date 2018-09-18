@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bfc182527aeb349fb91d098133c4545b95a93ac2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 94b95ce0a87a2ba894dde2ba41c0e7d704c477b6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33233086"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112804"
 ---
 # <a name="compiler-error-c2710"></a>Derleyici Hatası C2710
-'oluşturmak': '__declspec(modifier)' yalnızca bir işaretçi döndüren bir işlev uygulanabilir  
-  
- Dönüş değeri olan bir işaretçi bir işlevi olarak yalnızca yapıdır `modifier` uygulanabilir.  
-  
- Aşağıdaki örnek C2710 oluşturur:  
-  
-```  
-// C2710.cpp  
-__declspec(restrict) void f();   // C2710  
-// try the following line instead  
-__declspec(restrict) int * g();  
+
+'oluşturmak': '__declspec(modifier)' yalnızca işaretçi döndüren bir işleve uygulanabilir
+
+Dönüş değeri olan bir işaretçi bir işlev, yalnızca yapıdır `modifier` uygulanabilir.
+
+Aşağıdaki örnek, C2710 oluşturur:
+
+```
+// C2710.cpp
+__declspec(restrict) void f();   // C2710
+// try the following line instead
+__declspec(restrict) int * g();
 ```

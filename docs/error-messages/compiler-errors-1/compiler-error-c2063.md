@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dee835df0c30501c0b9a31fd542e51c498ae28d3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e3705192ba73faba88c63de5f4361449248e712e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163744"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100415"
 ---
 # <a name="compiler-error-c2063"></a>Derleyici Hatası C2063
-'tanımlayıcısı': bir işlev değil  
-  
- Tanımlayıcı bir işlevi olarak kullanılan ancak bir işlevi olarak bildirilmedi.  
-  
- Aşağıdaki örnek C2063 oluşturur:  
-  
-```  
-// C2063.c  
-int main() {  
-   int i, j;  
-   j = i();    // C2063, i is not a function  
-}  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C2063b.c  
-int i() { return 0;}  
-int main() {  
-   int j;  
-   j = i();  
-}  
+
+'identifier': bir işlev değil
+
+Tanımlayıcı bir işlev olarak kullanılan, ancak bir işlev olarak yapılmadı.
+
+Aşağıdaki örnek, C2063 oluşturur:
+
+```
+// C2063.c
+int main() {
+   int i, j;
+   j = i();    // C2063, i is not a function
+}
+```
+
+Olası çözüm:
+
+```
+// C2063b.c
+int i() { return 0;}
+int main() {
+   int j;
+   j = i();
+}
 ```

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ebe6ac2e3d19d16e2147411df436a976526ea2ff
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f59e43bbc1d5f11d1582bad577cc0d8eb971d121
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765141"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108592"
 ---
 # <a name="dual-interfaces-and-atl"></a>Çift arabirimler ve ATL
 
@@ -29,21 +29,21 @@ ms.locfileid: "43765141"
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Çift Arabirim Uygulama](../atl/implementing-a-dual-interface.md)  
+[Çift Arabirim Uygulama](../atl/implementing-a-dual-interface.md)<br/>
 Sınıfları ve çift arabirim uygulama içinde ilgili sihirbazları açıklar.
 
-[Birden Çok Çift Arabirim](../atl/multiple-dual-interfaces.md)  
+[Birden Çok Çift Arabirim](../atl/multiple-dual-interfaces.md)<br/>
 Tek bir nesnede birden çok çift arabirim kullanıma anlatılmaktadır.
 
-[Nonextensible özniteliği](../atl/nonextensible-attribute.md)  
+[Nonextensible özniteliği](../atl/nonextensible-attribute.md)<br/>
 Ne zaman kullanılacağı ele alınmaktadır **nonextensible** , arabirim tanımı özniteliği.
 
-[Çift Arabirimler ve Olaylar](../atl/dual-interfaces-and-events.md)  
+[Çift Arabirimler ve Olaylar](../atl/dual-interfaces-and-events.md)<br/>
 Çift arabirim arabirim bir olay yapmayı değil tasarım nedenleri açıklanır.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Active Template Library kullanarak programlama hakkında kavramsal konulara bağlantılar sağlar.
 
 ## <a name="see-also"></a>Ayrıca Bkz.

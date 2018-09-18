@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6fdc5dda82fe7410afc6e8580f3bedd8ddc289ca
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dc3322d97761f1a463426c71bde58de3591ded4a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33237365"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100714"
 ---
 # <a name="compiler-error-c2734"></a>Derleyici Hatası C2734
-'tanımlayıcısı': const nesnesi değil extern varsa başlatılmalı  
-  
- Tanımlayıcı bildirilmiş `const` ancak başlatılmamış veya `extern`.  
-  
- Aşağıdaki örnek C2734 oluşturur:  
-  
-```  
-// C2734.cpp  
-const int j;   // C2734  
-extern const int i;   // OK, declared as extern  
+
+'identifier': const nesnesi değil extern değilse başlatılmalıdır
+
+Bildirilmiş bir tanımlayıcı `const` ancak başlatılmadı veya `extern`.
+
+Aşağıdaki örnek, C2734 oluşturur:
+
+```
+// C2734.cpp
+const int j;   // C2734
+extern const int i;   // OK, declared as extern
 ```

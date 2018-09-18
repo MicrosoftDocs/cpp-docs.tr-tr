@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc1bfbba9cfb8991491bcbb42d2e13c586c7fc26
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e599150c1e8d62d751f9dca67cffc99fb079bd32
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33273997"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46104930"
 ---
 # <a name="compiler-error-c3890"></a>Derleyici Hatası C3890
-'var': değişmez değer veri üyesi adresi alınamıyor  
-  
- Değişmez değer veri üyesi atık toplanan yığında bulunmaktadır.  Adres alma yararlı değildir atık toplanan yığında bir nesne, taşınabilir.  
-  
- Aşağıdaki örnek C3890 oluşturur:  
-  
-```  
-// C3890.cpp  
-// compile with: /clr  
-ref struct Y1 {  
-   literal int staticConst = 9;  
-};  
-  
-int main() {  
-   int p = &Y1::staticConst;   // C3890  
-   int p2 = Y1::staticConst;   // OK  
-}  
+
+'var': sabit değerli bir veri üyesinin adresini alamazsınız
+
+Sabit değerli veri üyesi üzerinde atık olarak toplanmış yığınla var.  Atık olarak toplanmış yığındaki bir nesne taşınabilir, bu nedenle adresini almak kullanışlı değildir.
+
+Aşağıdaki örnek, C3890 oluşturur:
+
+```
+// C3890.cpp
+// compile with: /clr
+ref struct Y1 {
+   literal int staticConst = 9;
+};
+
+int main() {
+   int p = &Y1::staticConst;   // C3890
+   int p2 = Y1::staticConst;   // OK
+}
 ```

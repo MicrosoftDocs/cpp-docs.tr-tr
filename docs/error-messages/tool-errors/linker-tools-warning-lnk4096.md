@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca6dedf18989341df82cacfde14f358c778d141e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 264bbff052be7b37af1525392ffe0289fddef6d4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300611"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46104095"
 ---
 # <a name="linker-tools-warning-lnk4096"></a>Bağlayıcı Araçları Uyarısı LNK4096
-/ BASE değeri "number" Windows 95 ve Windows 98 için geçersiz; Görüntü çalışmayabilir  
-  
- Belirtilen taban adresi geçersiz. Windows 95 ve Windows 98 yürütülebilir dosyalar 0x400000 büyük bir taban adresi olması gerekir. Temel adresler hakkında daha fazla bilgi için bkz: [/temel](../../build/reference/base-base-address.md) bağlayıcı seçeneği.
+
+/ BASE değeri "number" Windows 95 ve Windows 98'için geçersiz; Görüntü çalışmayabilir
+
+Belirtilen temel adresi geçersiz. Windows 95 ve Windows 98 yürütülebilir dosyaları, temel adres 0x400000 büyük olmalıdır. Temel adresler hakkında daha fazla bilgi için bkz. [/BASE](../../build/reference/base-base-address.md) bağlayıcı seçeneği.

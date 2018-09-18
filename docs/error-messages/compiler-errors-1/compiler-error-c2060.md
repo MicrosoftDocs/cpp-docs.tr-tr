@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd6e23bd3f67bb6e2b100b8afa483b2be8fc68fb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5584bf596a507a3055cc9196acd233da8139523b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171343"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101585"
 ---
 # <a name="compiler-error-c2060"></a>Derleyici Hatası C2060
-sözdizimi hatası: bulunan dosya sonu  
-  
- En az bir tane daha belirteci bekleniyordu.
+
+sözdizimi hatası: dosya sonu bulundu
+
+En az bir fazla belirteç bekleniyordu.

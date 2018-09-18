@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6a15e841cfc8daf1abdafc9997698807e7356af
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 87d2c09d6448bcf7fb0557fa3a174c60205a34ea
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332071"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099401"
 ---
 # <a name="math-error-m6201"></a>Matematik Hatası M6201
-'function': _domaın hata  
-  
- Bu işlev için geçerli giriş değerleri, etki alanı dışındaki verilen işlevi bağımsız değişken oluştu.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-result = sqrt(-1.0)   // C statement  
-result = SQRT(-1.0)   !  FORTRAN statement  
-```  
-  
- Bu hata çağırır `_matherr` işlevi işlev adı, bağımsız değişkenlerini ve hata türü. Yeniden yazana `_matherr` belirli çalışma zamanı kayan nokta Matematiği hatalarının işlenmesini özelleştirmek için işlevi.
+
+'function': _etki alanı hatası
+
+Verilen işlevin bağımsız değişkeni geçerli bir giriş değerleri söz konusu işlev için etki alanı dışındaki oluştu.
+
+## <a name="example"></a>Örnek
+
+```
+result = sqrt(-1.0)   // C statement
+result = SQRT(-1.0)   !  FORTRAN statement
+```
+
+Bu hata çağırır `_matherr` işlevi işlev adı, bağımsız ve hata türü. Yeniden yazabilirsiniz `_matherr` belirli çalışma zamanı kayan nokta matematik hataları işleme özelleştirmek için işlevi.

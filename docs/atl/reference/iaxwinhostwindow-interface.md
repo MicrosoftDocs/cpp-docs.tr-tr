@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8cf8c27d118984422ec3a78f442a3f11f13e1c75
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: bee312cd5e7a88dd0798778d5f8385df265d78a1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766038"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099784"
 ---
 # <a name="iaxwinhostwindow-interface"></a>Iaxwinhostwindow arabirimi
 
@@ -79,10 +79,10 @@ STDMETHOD(AttachControl)(IUnknown* pUnkControl, HWND hWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnkControl*  
+*pUnkControl*<br/>
 [in] Bir işaretçi `IUnknown` konak nesnesine eklenecek denetimin arabirimi.
 
-*hWnd*  
+*hWnd*<br/>
 [in] Tanıtıcı penceresine barındırmak için kullanılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -102,13 +102,13 @@ STDMETHOD(CreateControl)(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpTricsData*  
+*lpTricsData*<br/>
 [in] Denetimi oluşturmak için tanımlayan bir dize. (Küme ayraçları içermelidir) CLSID, program kimliği, URL veya ham HTML olabilir (önek **MSHTML:**).
 
-*hWnd*  
+*hWnd*<br/>
 [in] Tanıtıcı penceresine barındırmak için kullanılacak.
 
-*pStream*  
+*pStream*<br/>
 [in] Denetim için başlatma verilerini içeren bir akış için bir arabirim işaretçisi. NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -139,22 +139,22 @@ STDMETHOD(CreateControlEx)(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpTricsData*  
+*lpTricsData*<br/>
 [in] Denetimi oluşturmak için tanımlayan bir dize. (Küme ayraçları içermelidir) CLSID, program kimliği, URL veya ham HTML olabilir (ön eki **MSHTML:**).
 
-*hWnd*  
+*hWnd*<br/>
 [in] Tanıtıcı penceresine barındırmak için kullanılacak.
 
-*pStream*  
+*pStream*<br/>
 [in] Denetim için başlatma verilerini içeren bir akış için bir arabirim işaretçisi. NULL olabilir.
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] Adresi alacak bir işaretçi `IUnknown` arabirimi oluşturulan denetimi. NULL olabilir.
 
-*riidAdvise*  
+*riidAdvise*<br/>
 [in] Kapsanan nesne üzerinde giden bir arabirim arabirimi tanımlayıcısı. IID_NULL olabilir.
 
-*punkAdvise*  
+*punkAdvise*<br/>
 [in] Bir işaretçi `IUnknown` arabirimi tarafından belirtilen kapsanan nesne üzerindeki bağlantı noktasına bağlı havuz nesnenin `iidSink`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -179,10 +179,10 @@ STDMETHOD(QueryControl)(
 
 ### <a name="parameters"></a>Parametreler
 
-*riid*  
+*riid*<br/>
 [in] İstenen denetimin bir arabirim kimliği.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] Oluşturulan denetimi belirtilen arabirim alacak bir işaretçi adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -199,7 +199,7 @@ STDMETHOD(SetExternalDispatch)(IDispatch* pDisp);
 
 ### <a name="parameters"></a>Parametreler
 
-*pDisp*  
+*pDisp*<br/>
 [in] Bir işaretçi bir `IDispatch` arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -216,7 +216,7 @@ STDMETHOD(SetExternalUIHandler)(IDocHostUIHandlerDispatch* pDisp);
 
 ### <a name="parameters"></a>Parametreler
 
-*pDisp*  
+*pDisp*<br/>
 [in] Bir işaretçi bir `IDocHostUIHandlerDispatch` arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -229,7 +229,7 @@ Bu işlev ana bilgisayarın site için sorgu denetimler (örneğin, Web tarayıc
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Iaxwinambientdispatch arabirimi](../../atl/reference/iaxwinambientdispatch-interface.md)   
-[CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)   
+[IAxWinAmbientDispatch Arabirimi](../../atl/reference/iaxwinambientdispatch-interface.md)<br/>
+[CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)<br/>
 [AtlAxGetHost](composite-control-global-functions.md#atlaxgethost)
 

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56ee12f65ff9efe9f3b048d061b80aef691eb0f2
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: a10acd24fed4dadb6bd33b66c895dc94f7215cb3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404401"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102813"
 ---
 # <a name="noalias"></a>noalias
 
@@ -103,12 +103,13 @@ int main()
     a = init(M, N);
     b = init(N, P);
     c = init(M, P);
- 
+
     multiply(a, b, c);
 }
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [__declspec](../cpp/declspec.md)  
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)  
- [__declspec(restrict)](../cpp/restrict.md)  
+
+[__declspec](../cpp/declspec.md)<br/>
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[__declspec(restrict)](../cpp/restrict.md)

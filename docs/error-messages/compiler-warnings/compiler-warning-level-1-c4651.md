@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0015102a44b71f342b125532d20849590157ee0c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b516ef86372901d00dd20d94ed10d5e361bbab8d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33283373"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099479"
 ---
 # <a name="compiler-warning-level-1-c4651"></a>Derleyici Uyarısı (düzey 1) C4651
-önceden derlenmiş üst bilgi, ancak geçerli derleme için belirtilen'tanımı '  
-  
- Önceden derlenmiş üst bilgi oluşturulduğunda, ancak bu derleme tanımı belirtilmedi.  
-  
- Tanımı içinde önceden derlenmiş üst bilgi, ancak kodu kalan uygulanmaz.  
-  
- Önceden derlenmiş üst bilgi /DSYMBOL ile oluşturulduysa, derleyici /Yu derleme /DSYMBOL yoksa, bu uyarı oluşturur.  /Yu komut satırına /DSYMBOL ekleme, bu uyarıyı çözümler.
+
+'Ön derlenmiş üstbilgi için geçerli derleme ancak belirtilen tanım'
+
+Ön derlenmiş üstbilgi oluşturulduğunda, ancak bu derleme tanımı belirtilmedi.
+
+Tanımı içinde önceden derlenmiş üst bilgi, ancak kodun geri kalanını uygulanmaz.
+
+Önceden derlenmiş üstbilgi /DSYMBOL ile oluşturulduysa, derleyici /Yu derleme /DSYMBOL sahip değilse bu uyarı oluşturur.  /Yu komut satırına /DSYMBOL ekleme, bu uyarıyı çözümler.

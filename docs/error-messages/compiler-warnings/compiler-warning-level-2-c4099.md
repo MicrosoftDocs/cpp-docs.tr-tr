@@ -16,24 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: afecb3fb2420d27bedf16c81894f224a1119a67b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2d7ffee02e8e5414a0e06cc4ba0da77a50c75f53
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33309474"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110178"
 ---
 # <a name="compiler-warning-level-2-c4099"></a>Derleyici Uyarısı (düzey 2) C4099
-'tanımlayıcısı': 'şimdi 'objecttype2' kullanarak görülen objecttype1' kullanarak ilk kez görülen türü adı  
-  
- Bir yapı bildirilen bir nesne bir sınıf olarak tanımlı değil veya bir sınıf olarak bildirilen bir nesne yapısı olarak tanımlanır. Derleyici tanımında belirtilen türünü kullanır.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4099 oluşturur.  
-  
-```  
-// C4099.cpp  
-// compile with: /W2 /c  
-struct A;  
-class A {};   // C4099, use different identifer or use same object type  
+
+'identifier': tür adı 'objecttype1' artık 'objecttype2' kullanarak görülen kullanarak ilk görülme
+
+Bir yapı bildirilen bir nesne sınıfı olarak tanımlanır ve bir sınıf olarak bildirilen bir nesne bir yapı tanımlanır. Derleme tanımında belirtilen türü kullanır.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4099 oluşturur.
+
+```
+// C4099.cpp
+// compile with: /W2 /c
+struct A;
+class A {};   // C4099, use different identifer or use same object type
 ```

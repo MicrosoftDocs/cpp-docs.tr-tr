@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 157b09aff38212e9257eb3557770dae57d04bf58
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 62c661b4fffee6c6da17d72724d61b7df39a3268
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295853"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109450"
 ---
 # <a name="compiler-warning-level-1-c4925"></a>Derleyici Uyarısı (düzey 1) C4925
-'yöntemi': görüntüleme arabirimi yöntemi betikten çağrılamaz  
-  
- Komut dosyası dili 'ın' parametresi bir VT_BYREF oluşturulamıyor, yalnızca 'out' parametreleri VT_BYREF oluşturabilirsiniz.  
-  
- Bu uyarıyı çözmek için başka bir parametre (tanımı ve uygulama) bir işaretçi türü olmamasını yoludur.  
-  
- Aşağıdaki örnek C4925 oluşturur:  
-  
-```  
-// C4925.cpp  
-// compile with: /LD /W1  
-#define _ATL_ATTRIBUTES 1  
-#include <atlbase.h>  
-#include <atlcom.h>  
-[ module(name="Test")];  
-  
-[ dispinterface, uuid("00000000-0000-0000-0000-000000000001") ]  
-__interface IDisp {  
-   [id(9)] void f([in] int*);  
-};  
-  
-[ coclass, uuid("00000000-0000-0000-0000-000000000002")  ]  
-struct CDisp : IDisp {   // C4925  
-   void f(int*) {}  
-};  
+
+'method': dispinterface yöntemi betikten çağrılamaz
+
+Komut dosyası dilleri 'ın' parametresi bir VT_BYREF oluşturulamıyor, yalnızca 'out' parametreleri VT_BYREF oluşturabilirsiniz.
+
+Bu uyarıyı çözmek için başka bir parametre (tanımı ve uygulaması) bir işaretçi türü olmamasını yoludur.
+
+Aşağıdaki örnek, C4925 oluşturur:
+
+```
+// C4925.cpp
+// compile with: /LD /W1
+#define _ATL_ATTRIBUTES 1
+#include <atlbase.h>
+#include <atlcom.h>
+[ module(name="Test")];
+
+[ dispinterface, uuid("00000000-0000-0000-0000-000000000001") ]
+__interface IDisp {
+   [id(9)] void f([in] int*);
+};
+
+[ coclass, uuid("00000000-0000-0000-0000-000000000002")  ]
+struct CDisp : IDisp {   // C4925
+   void f(int*) {}
+};
 ```

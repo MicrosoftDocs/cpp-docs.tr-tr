@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc7b30f01923ec4757ad1254f6646bc374d3f1da
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d3a8ef6c2b1f57e09a62e8f08efc2a4cc1f6e2e3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33263791"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110581"
 ---
 # <a name="compiler-error-c3634"></a>Derleyici Hatası C3634
-'function': yönetilen ya da WinRTclass soyut bir yöntemini tanımlanamıyor  
-  
- Soyut bir yöntem yönetilen veya WinRT sınıfı, ancak içinde bildirilen tanımlanamaz.  
-  
-## <a name="example"></a>Örnek  
-Aşağıdaki örnek C3634 oluşturur:  
-  
-```  
-// C3634.cpp  
-// compile with: /clr  
-ref class C {  
-   virtual void f() = 0;  
-};  
-  
-void C::f() {   // C3634 - don't define managed class' pure virtual method  
-}  
-```  
+
+'function': yönetilen veya WinRTclass soyut bir yöntemi tanımlanamıyor
+
+Soyut Metoda yönetilen veya WinRT sınıfı, ancak içinde bildirilebilir tanımlanamaz.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3634 oluşturur:
+
+```
+// C3634.cpp
+// compile with: /clr
+ref class C {
+   virtual void f() = 0;
+};
+
+void C::f() {   // C3634 - don't define managed class' pure virtual method
+}
+```

@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65ccdd6d2c8c34c360811b80d5a93abe76f5ef8e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e6e76b0c11d329c734b0609c540aca4315c7ed9f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33235045"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108748"
 ---
 # <a name="compiler-error-c2696"></a>Derleyici Hatası C2696
-Yönetilen türü 'type' geçici bir nesne oluşturulamıyor  
-  
-Başvurular `const` derleyici Oluşturucusu çağırın ve yığında geçici bir nesne oluşturmak yönetilmeyen bir programda neden. Ancak, bir yönetilen sınıf hiçbir zaman yığında oluşturulabilir.  
-  
-C2696 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.  
+
+Bir yönetilen türün 'type' geçici bir nesne oluşturulamıyor
+
+Başvurular `const` yönetilmeyen bir programda oluşturucusunu çağırın ve yığın üzerinde geçici bir nesne oluşturmak derleyicinin neden olur. Ancak, yönetilen bir sınıf yığında hiçbir zaman oluşturulabilir.
+
+C2696 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.

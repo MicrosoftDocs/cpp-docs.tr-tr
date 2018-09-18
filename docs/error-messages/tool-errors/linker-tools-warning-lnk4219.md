@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59cb7376957b7985b7ae2335ea472171d490ff42
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: daf097cd8715a7c523e6e8a2ea46714481ca7d2a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301141"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105218"
 ---
 # <a name="linker-tools-warning-lnk4219"></a>Bağlayıcı Araçları Uyarısı LNK4219
-düzeltmesi adı düzeltmesi taşması. Hedef 'hedef sembol adını' dönüştürücü ekleme aralık dışında kalıyor  
-  
- Bağlayıcı dönüştürücü burada adres veya offset hedef simgenin talimat 's konumdan çok uzakta olduğu için verilen yönergesinde uygun başaramadı durumda eklenir.  
-  
- Görüntüyü yeniden sıralamak istediğiniz (kullanarak [/sipariş](../../build/reference/order-put-functions-in-order.md) seçeneği, örneğin) yöneltme ek düzeyini önlemek için.
+
+Düzeltme adı düzeltme taşması. Hedef 'hedef sembol adı' olan aralık dışında dönüştürücü ekleniyor
+
+Bağlayıcı, adres veya offset hedefi sembolü yönergesinin konumdan çok uzakta olduğu için verilen yönergesinde uyacak şekilde oluşturulamıyor olduğu bir durumda bir dönüştürücü eklenir.
+
+Görüntüyü yeniden sıralamak isteyebilirsiniz (kullanarak [/sipariş](../../build/reference/order-put-functions-in-order.md) seçeneği, örneğin) ek yöneltme düzeyi önlemek için.

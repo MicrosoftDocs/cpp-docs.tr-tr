@@ -19,35 +19,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f84455dd29023194e64fa4e594419630ef2656e6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8816ac8917281ed19dfc1afe9e12d302a3423f74
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389669"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111413"
 ---
 # <a name="storage-class-specifiers-with-function-declarations"></a>İşlev Bildirimli Depolama Sınıfı Tanımlayıcıları
-Kullanabilirsiniz **statik** veya `extern` işlev bildirimleri depolama sınıfı tanımlayıcısı. İşlevlerin her zaman genel kullanım ömürleri vardır.  
-  
- **Microsoft özel**  
-  
- İç düzeydeki işlev bildirimleri, dış düzeydeki işlev bildirimleri ile aynı anlama sahiptir. Bu, yerel kapsamda bildirilmiş olsa bile bir işlevin, çeviri biriminin geri kalanında, bildirim noktasında görülebilir olması anlamına gelir.  
-  
- **SON Microsoft özel**  
-  
- İşlevler için görünürlük kuralları, aşağıdaki belirtildiği gibi değişkenlerle ilgili kurallara göre biraz farklıdır:  
-  
--   Bir işlev bildirilen olmasını **statik** yalnızca tanımlanmış kaynak dosya içinde görünür. Aynı kaynak dosyasındaki işlevleri çağırabilir **statik** işlevi, ancak diğer kaynak dosyalarda işlevleri erişemiyor, doğrudan adına göre. Başka bir bildirebilir **statik** işlevi bir çakışma olmadan farklı kaynak dosyasında aynı ada sahip.  
-  
--   Bildirilen işlevler olarak `extern` program tüm kaynak dosyaları boyunca görülebilir (daha sonra bu tür bir işlevi olarak redeclare sürece **statik**). Herhangi bir işlev `extern` işlevini çağırabilir.  
-  
--   Depolama sınıfı belirticisini atlayan işlev bildirimleri varsayılan olarak `extern`'dir.  
-  
- **Microsoft özel**  
-  
- Microsoft yeniden tanımlama sağlayan bir `extern` tanımlayıcı olarak **statik**.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Depolama Sınıfları](../c-language/c-storage-classes.md)
+
+Kullanabilirsiniz **statik** veya `extern` işlev bildirimleri depolama sınıfı belirticisini. İşlevlerin her zaman genel kullanım ömürleri vardır.
+
+**Microsoft'a özgü**
+
+İç düzeydeki işlev bildirimleri, dış düzeydeki işlev bildirimleri ile aynı anlama sahiptir. Bu, yerel kapsamda bildirilmiş olsa bile bir işlevin, çeviri biriminin geri kalanında, bildirim noktasında görülebilir olması anlamına gelir.
+
+**END Microsoft özgü**
+
+İşlevler için görünürlük kuralları, aşağıdaki belirtildiği gibi değişkenlerle ilgili kurallara göre biraz farklıdır:
+
+- Olarak bildirilen bir işlev **statik** içinde tanımlanmış olduğu yalnızca kaynak dosyasında görülebilir. Aynı kaynak dosyasındaki işlevler çağırabilir **statik** işlevi, ancak diğer kaynak dosyalarındaki işlevleri erişemez, doğrudan adını kullanarak. Başka bir bildirebilirsiniz **statik** işlevi çakışma olmadan farklı kaynak dosyada aynı ada sahip.
+
+- Olarak bildirilen işlevlerin `extern` programdaki tüm kaynak dosyaları boyunca görünürdür (böyle bir işlevi olarak yeniden bildirmek sürece **statik**). Herhangi bir işlev `extern` işlevini çağırabilir.
+
+- Depolama sınıfı belirticisini atlayan işlev bildirimleri varsayılan olarak `extern`'dir.
+
+**Microsoft'a özgü**
+
+Microsoft şemadaki sağlayan bir `extern` tanımlayıcı olarak **statik**.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Depolama Sınıfları](../c-language/c-storage-classes.md)

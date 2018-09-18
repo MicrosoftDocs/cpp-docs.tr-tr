@@ -16,45 +16,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9459d7330738180e92776e93fcba9a07bfd39640
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5ec916bcdce1a43c597d8cfae10e5393cbeb99ee
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33222299"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108620"
 ---
 # <a name="compiler-error-c2346"></a>Derleyici Hatası C2346
-'function' derlenemiyor olarak yerel: nedeni  
-  
- Derleyici MSIL işleve derleyemiyor.  
-  
- Daha fazla bilgi için bkz: [yönetilen, yönetilmeyen](../../preprocessor/managed-unmanaged.md) ve [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
-1.  Kod için MSIL derlenemez işlevi kaldırın.  
-  
-2.  Ya da modülüyle derleme değil **/CLR**, ya da işlev yönetilmeyen pragma ile yönetilmeyen olarak işaretleyin.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2346 oluşturur.  
-  
-```  
-// C2346.cpp  
-// processor: x86  
-// compile with: /clr   
-// C2346 expected  
-struct S  
-{  
-   S()  
-   {  
-      { __asm { nop } }  
-   }  
-   virtual __clrcall ~S() { }  
-};  
-  
-void main()  
-{  
-   S s;  
-}  
+
+'function' derlenemez yerel olarak: nedeni
+
+Derleyici bir işleve MSIL derleyemiyor.
+
+Daha fazla bilgi için [yönetilen, yönetilmeyen](../../preprocessor/managed-unmanaged.md) ve [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+1. İşlevinde, MSIL olarak derlenmiş kod kaldırın.
+
+1. Ya da modülüyle derlenmiyor **/CLR**, veya işlev yönetilmeyen pragma ile yönetilmeyen olarak işaretleyin.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2346 oluşturur.
+
+```
+// C2346.cpp
+// processor: x86
+// compile with: /clr
+// C2346 expected
+struct S
+{
+   S()
+   {
+      { __asm { nop } }
+   }
+   virtual __clrcall ~S() { }
+};
+
+void main()
+{
+   S s;
+}
 ```

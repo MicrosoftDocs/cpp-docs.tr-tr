@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: b4bc0f671ea0c156b05eabe092bc3cc85b5cd9fe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 91503568b093dfb7052cd6d6e99fc63f1c780a73
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111308"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102751"
 ---
 # <a name="autogcrootoperator"></a>auto_gcroot::operator=
 Atama işleci.  
@@ -46,15 +46,15 @@ auto_gcroot<_element_type> & operator=(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_right`  
- Nesne veya `auto_gcroot` geçerli atanacak `auto_gcroot`.  
+*_right*<br/>
+Nesne veya `auto_gcroot` geçerli atanacak `auto_gcroot`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Geçerli `auto_gcroot`, şimdi sahibi olan `_right`.  
+ Geçerli `auto_gcroot`, artık sahip olan `_right`.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // msl_auto_gcroot_operator_equals.cpp  
 // compile with: /clr  
 #include <msclr\auto_gcroot.h>  
@@ -119,7 +119,7 @@ in ClassA destructor: third
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\auto_gcroot.h >  
+ **Üst bilgi dosyası** \<msclr\auto_gcroot.h >  
   
  **Namespace** msclr  
   

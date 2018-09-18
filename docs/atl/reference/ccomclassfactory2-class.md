@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45e4b8fe74355d99258677fd4746ad2461f508d3
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 05fcef5ee1141de8261bc4ecc813cd573fb8f901
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757809"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099511"
 ---
 # <a name="ccomclassfactory2-class"></a>CComClassFactory2 sınıfı
 
@@ -36,7 +36,7 @@ Bu sınıfın uyguladığı [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class license>  
+template <class license>
 class CComClassFactory2 : public IClassFactory2,
     public CComObjectRootEx<CComGlobalsThreadModel>,
     public license
@@ -44,7 +44,7 @@ class CComClassFactory2 : public IClassFactory2,
 
 #### <a name="parameters"></a>Parametreler
 
-*Lisans*  
+*Lisans*<br/>
 Aşağıdaki statik işlevler uygulayan bir sınıf:
 
 - `static BOOL VerifyLicenseKey( BSTR bstr );`
@@ -105,13 +105,13 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnkOuter*  
+*pUnkOuter*<br/>
 [in] Nesne bir toplamanın parçası olarak ardından oluşturuluyorsa *pUnkOuter* dış bilinmeyen olması gerekir. Aksi takdirde, *pUnkOuter* NULL olmalıdır.
 
-*riid*  
+*riid*<br/>
 [in] İstenen arabirim Laboratuvardaki. Varsa *pUnkOuter* kullanmaktan, *riid* olmalıdır `IID_IUnknown`.
 
-*ppvObj*  
+*ppvObj*<br/>
 [out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppvObj* NULL olarak ayarlandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -138,19 +138,19 @@ STDMETHOD(CreateInstanceLic)(
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnkOuter*  
+*pUnkOuter*<br/>
 [in] Nesne bir toplamanın parçası olarak ardından oluşturuluyorsa *pUnkOuter* dış bilinmeyen olması gerekir. Aksi takdirde, *pUnkOuter* NULL olmalıdır.
 
-*pUnkReserved*  
+*pUnkReserved*<br/>
 [in] Kullanılmıyor. NULL olmalıdır.
 
-*riid*  
+*riid*<br/>
 [in] İstenen arabirim Laboratuvardaki. Varsa *pUnkOuter* kullanmaktan, *riid* olmalıdır `IID_IUnknown`.
 
-*bstrKey*  
+*bstrKey*<br/>
 [in] Çalışma zamanı lisans anahtarı daha önce edindiğiniz çağrısından `RequestLicKey`. Bu anahtar nesneyi oluşturmak için gereklidir.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] Tarafından belirtilen arabirim işaretçisini bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppvObject* NULL olarak ayarlandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -171,7 +171,7 @@ STDMETHOD(GetLicInfo)(LICINFO* pLicInfo);
 
 ### <a name="parameters"></a>Parametreler
 
-*pLicInfo*  
+*pLicInfo*<br/>
 [out] İşaretçi bir `LICINFO` yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -192,7 +192,7 @@ STDMETHOD(LockServer)(BOOL fLock);
 
 ### <a name="parameters"></a>Parametreler
 
-*fLock*  
+*fLock*<br/>
 [in] TRUE ise kilit sayacını artırılır; Aksi takdirde, kilit sayısı azaltılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -215,10 +215,10 @@ STDMETHOD(RequestLicKey)(DWORD dwReserved, BSTR* pbstrKey);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwReserved*  
+*dwReserved*<br/>
 [in] Kullanılmıyor. Sıfır olmalıdır.
 
-*pbstrKey*  
+*pbstrKey*<br/>
 [out] Lisans anahtarı için işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -233,8 +233,8 @@ Arama için bir lisans anahtarı gereklidir [CreateInstanceLic](#createinstancel
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComClassFactoryAutoThread sınıfı](../../atl/reference/ccomclassfactoryautothread-class.md)   
-[CComClassFactorySingleton sınıfı](../../atl/reference/ccomclassfactorysingleton-class.md)   
-[CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)   
-[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)   
+[CComClassFactoryAutoThread Sınıfı](../../atl/reference/ccomclassfactoryautothread-class.md)<br/>
+[CComClassFactorySingleton Sınıfı](../../atl/reference/ccomclassfactorysingleton-class.md)<br/>
+[CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

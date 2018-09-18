@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7a6bb966fd973a9ede675e98761e8649ca20c27
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 35867da62dad9e399e4b4672f84478e4ea9688a5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246963"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46104941"
 ---
 # <a name="compiler-error-c3065"></a>Derleyici Hatası C3065
-özellik bildirimi sınıfı olmayan kapsamında izin verilmiyor  
-  
- [Özelliği](../../cpp/property-cpp.md) __declspec değiştiricisi sınıf dışında kullanıldı.  Bir özelliği yalnızca bir sınıf içinde bildirilebilir.  
-  
- Aşağıdaki örnek C3065 oluşturur:  
-  
-```  
-// C3065.cpp  
-// compile with: /c  
-__declspec(property(get=get_i)) int i;   // C3065  
-  
-class x {  
-public:  
-   __declspec(property(get=get_i)) int i;   // OK  
-};  
+
+sınıf olmayan kapsamda özellik bildirimine izin verilmez
+
+[Özelliği](../../cpp/property-cpp.md) __declspec değiştiricisi bir sınıf dışında kullanıldı.  Bir özellik, yalnızca bir sınıf içinde bildirilebilir.
+
+Aşağıdaki örnek, C3065 oluşturur:
+
+```
+// C3065.cpp
+// compile with: /c
+__declspec(property(get=get_i)) int i;   // C3065
+
+class x {
+public:
+   __declspec(property(get=get_i)) int i;   // OK
+};
 ```

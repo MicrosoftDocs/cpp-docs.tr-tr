@@ -1,7 +1,7 @@
 ---
 title: once_flag yapısı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/17/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4275b99ada0dbfe1c974446d21862f7fa73aab38
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 67cfbe06461598fbd04e124629399baa63fdd5d9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964502"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46104341"
 ---
 # <a name="onceflag-structure"></a>once_flag Yapısı
 
@@ -27,7 +27,7 @@ Temsil eden bir **yapı** şablon işlevi ile kullanılan [call_once](../standar
 
 ## <a name="syntax"></a>Sözdizimi
 
-once_flag yapısı {constexpr once_flag() noexcept; once_flag(const once_flag&); once_flag & işleci =(const once_flag&);};
+Yapı once_flag {constexpr once_flag() noexcept;};
 
 ## <a name="remarks"></a>Açıklamalar
 

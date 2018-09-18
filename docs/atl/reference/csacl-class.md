@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f42d90fa2fb04c75f6c45db8d099d4a1a9a74c2a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d408ab5d0575984fb597cec28f01484d9b878ebf
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763109"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108397"
 ---
 # <a name="csacl-class"></a>CSacl sınıfı
 
@@ -110,25 +110,25 @@ bool AddAuditAce(
 
 ### <a name="parameters"></a>Parametreler
 
-*rSid*  
+*rSid*<br/>
 [CSID](../../atl/reference/csid-class.md) nesne.
 
-*AccessMask*  
+*AccessMask*<br/>
 Denetlenecek erişim hakları maskesi belirtir için belirtilen `CSid` nesne.
 
-*bSuccess*  
+*bSuccess*<br/>
 İzin verilen erişim denemesi denetlenmesi olup olmadığını belirtir. Bu bayrak denetimini etkinleştirmek için true olarak ayarlayın; Aksi takdirde false olarak ayarlayın.
 
-*bFailure*  
+*bFailure*<br/>
 Engellenen erişim girişimlerini denetlenmesi olup olmadığını belirtir. Bu bayrak denetimini etkinleştirmek için true olarak ayarlayın; Aksi takdirde false olarak ayarlayın.
 
-*AceFlags*  
+*AceFlags*<br/>
 ACE devralma denetleyen bit bayrakları kümesini.
 
-*pObjectType*  
+*pObjectType*<br/>
 Nesne türü.
 
-*pInheritedObjectType*  
+*pInheritedObjectType*<br/>
 Devralınan bir nesne türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -152,7 +152,7 @@ CSacl(const ACL& rhs) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
+*Sol*<br/>
 Mevcut bir `ACL` yapısı (erişim denetim listesi).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -193,7 +193,7 @@ CSacl& operator=(const ACL& rhs) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
+*Sol*<br/>
 `ACL` (Var olan nesneye atamak için erişim denetim listesi).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -210,7 +210,7 @@ void RemoveAce(UINT nIndex) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*  
+*nIndex*<br/>
 Kaldırmak için ACE giriş dizini.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -231,8 +231,8 @@ Kaldırır her `ACE` (varsa), yapı `CSacl` nesne.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CAcl sınıfı](../../atl/reference/cacl-class.md)   
-[ACL'ler](/windows/desktop/SecAuthZ/access-control-lists)   
-[ACE](/windows/desktop/SecAuthZ/access-control-entries)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[CAcl Sınıfı](../../atl/reference/cacl-class.md)<br/>
+[ACL'ler](/windows/desktop/SecAuthZ/access-control-lists)<br/>
+[ACE](/windows/desktop/SecAuthZ/access-control-entries)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

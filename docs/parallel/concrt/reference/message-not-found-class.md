@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7973da83716e4dc99dc98b199421ab9d840a8380
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: f28096fccae4f24b236631b3c27178bda7e22771
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705191"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103990"
 ---
 # <a name="messagenotfound-class"></a>message_not_found Sınıfı
-Bu sınıf, bir ileti bloğu istenen ileti bulamıyor olduğunda oluşturulan bir özel açıklar.  
+Bu sınıf, bir ileti bloğu bulamıyor istenen bir ileti olduğunda oluşturulan bir özel açıklar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,7 +40,7 @@ class message_not_found : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[message_not_found](#ctor)|Fazla Yüklendi. Oluşturan bir `message_not_found` nesnesi.|  
+|[message_not_found](#ctor)|Fazla Yüklendi. Oluşturur bir `message_not_found` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -54,7 +54,7 @@ class message_not_found : public std::exception;
   
 ##  <a name="ctor"></a> message_not_found 
 
- Oluşturan bir `message_not_found` nesnesi.  
+ Oluşturur bir `message_not_found` nesne.  
   
 ```
 explicit _CRTIMP message_not_found(_In_z_ const char* _Message) throw();
@@ -63,8 +63,8 @@ message_not_found() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

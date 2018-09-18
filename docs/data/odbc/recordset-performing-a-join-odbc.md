@@ -21,31 +21,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0be740a57f5c455b971dd23575401c666bf0723c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e033a300a023b3460fb27ced7cd4bae99ebd0b92
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33093317"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097918"
 ---
 # <a name="recordset-performing-a-join-odbc"></a>Kayıt Kümesi: Birleşim Gerçekleştirme (ODBC)
-Bu konu MFC ODBC sınıfları için geçerlidir.  
+
+Bu konu MFC ODBC sınıflarına uygulanır.  
   
 ## <a name="what-a-join-is"></a>Ne bir birleşim  
- Birleştirme işlemi, ortak bir veri erişim görevi, bir tek kayıt kümesi nesnesi kullanarak birden fazla tablodan veri çalışmanıza olanak sağlar. İki veya daha fazla tabloları birleştirme her tablodan sütun içerebilir ancak uygulamanız için tek bir tablo olarak görünen bir kayıt kümesi verir. Tüm tablolar, ancak bazı durumlarda SQL tüm sütunları join bazen kullanır **seçin** JOIN yan tümcesinde her tablodaki sütunların yalnızca bazılarını kullanır. Veritabanı sınıfları salt okunur birleştirmeler güncelleştirilebilir değil birleştirmeler destekler.  
+
+Birleştirme işlemi, genel bir veri erişim görev tek bir kayıt kümesi nesnesi kullanarak birden fazla tabloyu verilerle çalışmanıza olanak tanır. İki veya daha fazla tabloları birleştirme, her bir tablodaki sütunları içerebilir ancak uygulamanız için tek bir tablo olarak görünen bir kayıt kümesi üretir. Bazen birleştirme tüm sütunlardan tüm tabloları, ancak bazen SQL kullanan **seçin** JOIN yan tümcesinde her tablodaki sütunların yalnızca bir bölümünü kullanır. Veritabanı sınıfları salt okunur birleştirmeler güncellenebilir birleştirmeler destekler.  
   
- Birleştirilmiş tablolardaki sütunları içeren kayıtları seçmek için aşağıdaki öğeleri gerekir:  
+Birleştirilmiş bir tablodan sütun içeren kayıtları seçmek için aşağıdaki öğeler gerekir:  
   
--   Birleştirilen tüm tabloların adlarını içeren bir tablo listesi.  
+- Birleştirilen tüm tabloların adlarını içeren bir tablo listesi.  
   
--   Tüm katılımcı sütunlarının adlarını içeren bir sütun listesi. Aynı ada sahip ancak farklı tablolardan gelen sütunlar tablo adıyla yetkili olan.  
+- Tüm katılımcı sütunlarının adlarını içeren bir sütun listesi. Aynı adı taşıyan ancak farklı tablolardan gelen sütunlar tablo adı tarafından yetkili olan.  
   
--   Bir filtre (SQL **burada** yan tümcesi) tabloları birleştirilir sütunları belirtir. Bu filtre biçimdedir "Table1.KeyCol Table2.KeyCol =" ve gerçekte birleştirme gerçekleştirir.  
+- Bir filtre (SQL **burada** yan tümcesi) tabloları birleştirilir sütunları belirtir. Bu filtreyi alır "Table1.KeyCol Table2.KeyCol =" ve gerçekten birleşim gerçekleştirir.  
   
- Birden çok sütun çiftleri, SQL anahtar sözcüğüyle birleştirilmiş her çifti eşitleyerek tarafından aynı yolla ikiden fazla tablo katılabilirsiniz **ve**.  
+İkiden fazla tabloları eşitleyerek birden çok çiftlerini sütunları, SQL anahtar sözcüğüyle birleştirilmiş her bir çifti tarafından aynı şekilde birleştirebilirsiniz **ve**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md)   
- [Kayıt kümesi: bir sınıf bir önceden tanımlanmış sorgu için bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)   
- [Kayıt kümesi: bir sınıf bir tablo için bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)   
- [Kayıt kümesi: Bir Kayıt Kümesinde Yeniden Sorgulama (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)
+
+[Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
+[Kayıt Kümesi: Önceden Tanımlanmış Sorgu için Bir Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
+[Kayıt Kümesi: Tablo için Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
+[Kayıt kümesi: Bir Kayıt Kümesinde Yeniden Sorgulama (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)

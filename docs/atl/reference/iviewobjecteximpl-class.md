@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d47c017a178d0a222780532b74db4135447f062
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8a7364f86ad08f882660f49556853826bb7186f6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760454"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108436"
 ---
 # <a name="iviewobjecteximpl-class"></a>Iviewobjectexımpl sınıfı
 
@@ -49,14 +49,14 @@ Bu sınıfın uyguladığı `IUnknown` ve varsayılan uygulamalarını sağlar [
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<class T>  
+template<class T>
 class ATL_NO_VTABLE IViewObjectExImpl 
    : public IViewObjectEx
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `IViewObjectExImpl`.
 
 ## <a name="members"></a>Üyeler
@@ -309,7 +309,7 @@ HRESULT CloseHandle(HANDLE hHandle);
 
 ### <a name="parameters"></a>Parametreler
 
-*hHandle*  
+*hHandle*<br/>
 Kapatılması tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -336,10 +336,10 @@ HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwParam*  
+*dwParam*<br/>
 Kullanıcı parametresi.
 
-*hObject*  
+*hObject*<br/>
 Sinyal haline tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -358,8 +358,8 @@ Aşağıdaki kod basit bir uygulamasını gösterir `IWorkerThreadClient::Execut
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)   
-[Arabirimleri ActiveX denetimleri](/windows/desktop/com/activex-controls-interfaces)   
-[Öğretici](../../atl/active-template-library-atl-tutorial.md)   
-[ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)   
+[CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
+[Arabirimleri ActiveX denetimleri](/windows/desktop/com/activex-controls-interfaces)<br/>
+[Öğretici](../../atl/active-template-library-atl-tutorial.md)<br/>
+[ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

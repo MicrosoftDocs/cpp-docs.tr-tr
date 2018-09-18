@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: dd4ba56b92150046b986f2b101f6a004c114bf28
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8f03a4f0cfb2b231e9a453009155308f7bf407db
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33161710"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112219"
 ---
 # <a name="ptrcreateinstance"></a>ptr::CreateInstance
-İçinde bir COM nesnesinin örneği oluşturur bir `com::ptr`.  
+Bir COM nesnesi içinde bir örneği oluşturan bir `com::ptr`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -72,28 +72,28 @@ void CreateInstance(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `progid`  
- A `ProgID` dize.  
+*progid*<br/>
+A `ProgID` dize.  
   
- `pouter`  
- Birleşik nesnenin IUnknown arabirimi (IUnknown) yönelik işaretçi. Varsa `pouter` belirtilmezse, `NULL` kullanılır.  
+*pouter*<br/>
+Toplam nesnenin IUnknown arabirimi (IUnknown) yönelik işaretçi. Varsa `pouter` belirtilmezse, `NULL` kullanılır.  
   
- `cls_context`  
- Yeni oluşturulan nesnenin yönetir kod çalışacağı bağlamı. Değerleri alındığı `CLSCTX` numaralandırması. Varsa `cls_context` belirtilmezse, değerin CLSCTX_ALL kullanılır.  
+*cls_context*<br/>
+Yeni oluşturulan nesne yöneten kod çalıştırılacağı bağlamı. Değerleri alınmıştır `CLSCTX` sabit listesi. Varsa `cls_context` belirtilmezse, değerin CLSCTX_ALL kullanılır.  
   
- `rclsid`  
- `CLSID` nesne oluşturmak için kullanılan kod ve veri ile ilişkilendirilmiş.  
+*rclsid*<br/>
+`CLSID` veri ve nesneyi oluşturmak için kullanılan kod ile ilişkili.  
   
 ## <a name="exceptions"></a>Özel Durumlar  
- Varsa `com::ptr` zaten bir COM nesnesi başvuru sahibi `CreateInstance` oluşturur <xref:System.InvalidOperationException>.  
+ Varsa `com::ptr` bir COM nesnesine bir başvuru zaten sahip `CreateInstance` oluşturur <xref:System.InvalidOperationException>.  
   
- Bu işlev çağrılarını `CoCreateInstance` ve kullandığı <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> herhangi bir hata dönüştürmek için `HRESULT` için uygun bir özel durum.  
+ Bu işlev çağrıları `CoCreateInstance` ve kullandığı <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> herhangi bir hata dönüştürmek için `HRESULT` için uygun bir özel durum.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CreateInstance` kullanan `CoCreateInstance` ProgID veya CLSID tanımlanan belirtilen nesne yeni bir örneğini oluşturmak için. `com::ptr` Yeni oluşturulan nesnenin başvuruyor ve yok etme bağlı tüm ait başvuruları otomatik olarak serbest bırakır.  
+ `CreateInstance` kullanan `CoCreateInstance` ProgID veya bir CLSID tanımlanan belirtilen bir nesnenin yeni bir örneğini oluşturmak için. `com::ptr` Yeni oluşturulan nesneye başvuran ve yok etme sırasında şirkete ait tüm başvurularını otomatik olarak serbest bırakır.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek kullanan bir CLR sınıfı uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesnesi. Sınıf oluşturucuları iki farklı tür kullanmanıza `CreateInstance` ProgID veya CLSID artı bir CLSCTX belge nesnesi oluşturulamadı.  
+ Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne. İki farklı tür sınıf oluşturucuları kullanmanıza `CreateInstance` ProgID içinden ya bir CLSID değeri artı bir CLSCTX belge nesnesi oluşturulamıyor.  
   
 ```  
 // comptr_createinstance.cpp  
@@ -143,7 +143,7 @@ int main() {
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\com\ptr.h >  
+ **Üst bilgi dosyası** \<msclr\com\ptr.h >  
   
  **Namespace** msclr::com  
   

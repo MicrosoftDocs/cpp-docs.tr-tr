@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46e77311823977522952d4fe1ca79c41f7edc6b4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bc9cd34233fdc508d24a295495c4442ab16b7a9c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252766"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105017"
 ---
 # <a name="compiler-error-c3159"></a>Derleyici Hatası C3159
-'işaretçi': değer türü işaretçileri dizisi bildirilemez  
-  
- Değer türü işaretçileri dizisi bildirilemez.  
-  
- C3159 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.  
+
+'işaretçisi': değer türüne işaretçiler dizisi bildirilemez
+
+Bir değer türüne işaretçiler dizisi bildirilemez.
+
+C3159 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.

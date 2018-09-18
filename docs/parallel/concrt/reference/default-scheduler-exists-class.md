@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15c18bf2a747cdedda2c9ce2ea6162e5a92e3b36
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 488f1d08c089b159971834729596d74b4e3dab22
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688966"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106071"
 ---
 # <a name="defaultschedulerexists-class"></a>default_scheduler_exists Sınıfı
-Bu sınıf ne zaman oluşturulan bir özel tanımlar `Scheduler::SetDefaultSchedulerPolicy` yöntemi, bir varsayılan Zamanlayıcı işlemi içinde zaten mevcut olduğunda çağrılır.  
+Bu sınıf oluşan bir özel durumu anlatmaktadır `Scheduler::SetDefaultSchedulerPolicy` varsayılan Zamanlayıcı işlem içinde zaten mevcut olduğunda yöntemi çağrılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,7 +40,7 @@ class default_scheduler_exists : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[default_scheduler_exists](#ctor)|Fazla Yüklendi. Oluşturan bir `default_scheduler_exists` nesnesi.|  
+|[default_scheduler_exists](#ctor)|Fazla Yüklendi. Oluşturur bir `default_scheduler_exists` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -54,7 +54,7 @@ class default_scheduler_exists : public std::exception;
   
 ##  <a name="ctor"></a> default_scheduler_exists 
 
- Oluşturan bir `default_scheduler_exists` nesnesi.  
+ Oluşturur bir `default_scheduler_exists` nesne.  
   
 ```
 explicit _CRTIMP default_scheduler_exists(_In_z_ const char* _Message) throw();
@@ -63,8 +63,8 @@ default_scheduler_exists() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

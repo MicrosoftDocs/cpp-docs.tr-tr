@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8207f23f53cc10651be549bf30147f1c33cc3db9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 73444428d015949b4147639b7f6a7c2a27d8160e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163178"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101422"
 ---
 # <a name="compiler-error-c2044"></a>Derleyici Hatası C2044
-Geçersiz devam  
-  
- A [devam](../../cpp/continue-statement-cpp.md) yalnızca içinde geçerli bir `do`, `for`, veya `while` deyimi.
+
+Geçersiz devam etme
+
+A [devam](../../cpp/continue-statement-cpp.md) yalnızca dahilinde geçerli olan bir `do`, `for`, veya `while` deyimi.

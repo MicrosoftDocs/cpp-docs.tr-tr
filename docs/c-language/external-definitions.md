@@ -15,19 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 193ba8b853fbdbe16f906e1cdf82dd22a40f36bb
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ba0487716a24e75ec2fccfa9dc7803bff9a5cfcf
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759502"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098855"
 ---
 # <a name="external-definitions"></a>Dış Tanımlar
 
 *Çeviri birimi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Dış bildirimi* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Çeviri birimi* *dış bildirimi*  
-  
+&nbsp;&nbsp;&nbsp;&nbsp;*Çeviri birimi* *dış bildirimi*
+
 *Dış bildirimi*: /\* yalnızca dış (dosyası) kapsamında izin \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*işlev tanımı*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bildirimi*

@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: df9650c5a013d6308869de002919c33a08b2ae04
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bc168596c43c4ea8f26da5157656822b862bdc1e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33105835"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100447"
 ---
 # <a name="autogcrootautogcroot"></a>auto_gcroot::auto_gcroot
 `auto_gcroot` Oluşturucusu.  
@@ -46,14 +46,14 @@ auto_gcroot(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_ptr`  
- Kendi nesne.  
+*_ptr*<br/>
+Kendi hedef nesne.  
   
- `_right`  
- Var olan `auto_gcroot`.  
+*_right*<br/>
+Mevcut bir `auto_gcroot`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Oluşturulurken bir `auto_gcroot` mevcut bir kümeden `auto_gcroot`, varolan `auto_gcroot` yeni nesnenin sahipliğini aktarma önce kendi nesne serbest `auto_gcroot`.  
+ Oluştururken bir `auto_gcroot` mevcut bir `auto_gcroot`, varolan `auto_gcroot` nesne yeni nesneye sahipliğini aktarmadan önce serbest `auto_gcroot`.  
   
 ## <a name="example"></a>Örnek  
   
@@ -143,7 +143,7 @@ done
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\auto_gcroot.h >  
+ **Üst bilgi dosyası** \<msclr\auto_gcroot.h >  
   
  **Namespace** msclr  
   

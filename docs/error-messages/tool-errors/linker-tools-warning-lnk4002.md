@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 78bf20b152f70350b88d7cae5db71ce6df855f5b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3774dd53ba9d6dde24909df1ade33bfb7e13b840
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300078"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107654"
 ---
 # <a name="linker-tools-warning-lnk4002"></a>Bağlayıcı Araçları Uyarısı LNK4002
-nesnesinde tanımlanan simgesi  
-  
- Düzenlenmiş formda görüntülenen simge ve formunda belirtildi `object`, ancak bir düzenlenmiş simge için benzersiz bir eşleşme bulunamadı. Bu uyarı uyarı tarafından her zaman öncesinde [LNK4022](../../error-messages/tool-errors/linker-tools-warning-lnk4022.md) ve önemli hatası sonrasında [LNK1152](../../error-messages/tool-errors/linker-tools-error-lnk1152.md).
+
+nesnesinde tanımlanan simgesi
+
+Düzenlenmiş hâli içinde görüntülenen bir simge ve hâli içinde belirtilen `object`, ancak düzenlenmiş bir sembol için benzersiz bir eşleşme bulunamadı. Bu uyarı uyarı tarafından her zaman önünde [LNK4022](../../error-messages/tool-errors/linker-tools-warning-lnk4022.md) ve önemli bir hata tarafından izlenen [LNK1152](../../error-messages/tool-errors/linker-tools-error-lnk1152.md).

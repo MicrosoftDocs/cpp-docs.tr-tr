@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ebf3ba07ac5608a47f4e2bbbe853cb37c033e5f7
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 46198390ce25cb655b94c0ca4769321fc3e9362d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757621"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099714"
 ---
 # <a name="catlautothreadmodulet-class"></a>CAtlAutoThreadModuleT sınıfı
 
@@ -35,21 +35,21 @@ Bu sınıf, apartman modeli iş parçacığı havuza, COM sunucu uygulama için 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T, 
+template <class T,
          class ThreadAllocator = CComSimpleThreadAllocator,
-         DWORD dwWait = INFINITE>  
+         DWORD dwWait = INFINITE>
 class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 COM sunucusunun uygulayan sınıf.
 
-*ThreadAllocator*  
+*ThreadAllocator*<br/>
 İş parçacığı seçimi yönetme sınıfı. Varsayılan değer [CComSimpleThreadAllocator](../../atl/reference/ccomsimplethreadallocator-class.md).
 
-*dwWait*  
+*dwWait*<br/>
 Milisaniye cinsinden zaman aşımı aralığı belirtir. Yöntemin zaman aşımı aralığı, hiçbir zaman geçtikçe anlamına gelir ve SINIRSIZ varsayılandır.
 
 ## <a name="members"></a>Üyeler
@@ -95,7 +95,7 @@ EXE modülünde oluşturulacak iş parçacığı sayısı.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Iatlautothreadmodule sınıfı](../../atl/reference/iatlautothreadmodule-class.md)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
-[Iatlautothreadmodule sınıfı](../../atl/reference/iatlautothreadmodule-class.md)   
+[IAtlAutoThreadModule Sınıfı](../../atl/reference/iatlautothreadmodule-class.md)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[IAtlAutoThreadModule Sınıfı](../../atl/reference/iatlautothreadmodule-class.md)<br/>
 [Modül sınıfları](../../atl/atl-module-classes.md)

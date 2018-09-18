@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 11f371629c3811821d9c7dce56cc44137534058c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d08e89fe3dbcfbff8c947b432bda94e9ac15ef99
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231881"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099880"
 ---
 # <a name="compiler-error-c2745"></a>Derleyici Hatası C2745
-'belirteci': Bu belirteç tanımlayıcıya dönüştürülemez  
-  
- Tanımlayıcıları yasal karakterlerden oluşmasına gerekir.  
-  
- Aşağıdaki örnek C2745 oluşturur:  
-  
-```  
-// C2745.cpp  
-// compile with: /clr  
-int main() {  
-   int __identifier([));   // C2745  
-}  
+
+'token': Bu belirteci tanımlayıcıya dönüştürülemez
+
+Tanımlayıcıları yasal karakterlerden oluşmasına gerekir.
+
+Aşağıdaki örnek, C2745 oluşturur:
+
+```
+// C2745.cpp
+// compile with: /clr
+int main() {
+   int __identifier([));   // C2745
+}
 ```

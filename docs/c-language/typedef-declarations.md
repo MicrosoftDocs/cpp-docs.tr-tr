@@ -16,14 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba98340f9670229e7be0d56beac482d7ad994fb6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a7af5e89e66b179b4527fd35a042caf8ddb1c644
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765791"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100584"
 ---
 # <a name="typedef-declarations"></a>Typedef Bildirimleri
+
 Bir typedef bildiriminde bir typedef ile depolama sınıfı olarak bildirimidir. Yeni bir tür bildirimci olur. Typedef bildirimleri, zaten C tarafından tanımlanan türlerin veya, bildirilen türleri için daha kısa ya da daha anlamlı adları oluşturmak için kullanabilirsiniz. TypeDef adları değişebilir uygulama ayrıntılarını kapsüllemek olanak sağlar.
 
 Bir typedef bildiriminde bir değişken olarak aynı şekilde yorumlanır veya işlev bildirimi ancak bildirim tarafından belirtilen tür varsayılarak yerine tanımlayıcı, türe ilişkin bir eşanlam haline gelir.
@@ -113,6 +114,7 @@ pfv signal( int, pfv );    /* Uses typedef type */
 ```
 
 ## <a name="examples"></a>Örnekler
+
 Aşağıdaki örnekler typedef bildirimleri gösterir:
 
 ```C

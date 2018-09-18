@@ -14,17 +14,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e57a80a1550cc6147ce29894996183cce8f5ff99
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b30700b52e7cbbbc295d6050b03283b4b45a0b08
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32385796"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103821"
 ---
 # <a name="truncation-of-floating-point-values"></a>Kayan Nokta Değerlerinin Kesilmesi
-**ANSI 3.2.1.4** kesilmesi veya bir kayan noktalı sayıdan daha dar bir kayan noktalı sayı dönüştürüldüğünde yuvarlama yönünü  
-  
- Kayan nokta yetersiz geldiğinde, kayan nokta değişkeninin değeri sıfıra yuvarlanır. Kayan noktanın yetersiz gelmesi, belirtilen iyileştirmelere bağlı olarak bir çalışma zamanı hatasına neden olabilir ve tahmin edilemeyen bir değer oluşturabilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayan Nokta Matematiği](../c-language/floating-point-math.md)
+
+**ANSI 3.2.1.4** kesilmesi veya bir kayan noktalı sayı daha dar bir kayan noktalı sayıya dönüştürülürken yuvarlama yönünü
+
+Kayan nokta yetersiz geldiğinde, kayan nokta değişkeninin değeri sıfıra yuvarlanır. Kayan noktanın yetersiz gelmesi, belirtilen iyileştirmelere bağlı olarak bir çalışma zamanı hatasına neden olabilir ve tahmin edilemeyen bir değer oluşturabilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kayan Nokta Matematiği](../c-language/floating-point-math.md)

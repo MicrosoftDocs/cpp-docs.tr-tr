@@ -16,41 +16,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ffc789c3c4da5caf50f0657e17ddabe40a5773c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 34e0befb93db742bb2d132b2092414a1a167b87b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294956"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100727"
 ---
 # <a name="compiler-warning-levels-2-and-4-c4200"></a>Derleyici Uyarısı (Düzey 2 ve 4) C4200
-kullanılan standart olmayan uzantısı: sıfır boyutlu dizi struct/Birleşimdeki  
-  
- Bir yapının veya birleşimin sıfır boyutuna sahip bir dizi içerdiğini gösterir.  
-  
- Bir Microsoft uzantısı bildirimidir sıfır boyutlu dizi. Bir C dosyası derlendiğinde bu C++ dosyasına derlendiğinde bir düzey 2 uyarı ve düzey 4 uyarı neden olur. C++ derleme ayrıca bu uyarı verir: "UDT sıfır boyutlu bir array içerdiğinde copy ctor veya kopya atama işleci oluşturamıyor." Bu örnek uyarı C4200 oluşturur:  
-  
-```cpp  
-// C4200.cpp  
-// compile by using: cl /W4 c4200.cpp  
-struct A {  
-    int a[0];  // C4200  
-};  
-int main() {  
-}  
-```  
-  
- Bu standart uzantısı genellikle değişken uzunlukta olan dış veri yapılarını arabirimi koduyla için kullanılır. Bu senaryo için kodunuzu geçerliyse, uyarıyı devre dışı bırakabilirsiniz:  
-  
-## <a name="example"></a>Örnek  
-  
-```cpp  
-// C4200b.cpp  
-// compile by using: cl /W4 c4200a.cpp  
-#pragma warning(disable : 4200)  
-struct A {  
-    int a[0];  
-};  
-int main() {  
-}  
+
+Standart olmayan uzantı kullanıldı: yapıda/birleşimde sıfır boyutlu dizi
+
+Bir yapı veya birleşim sıfır boyuta sahip bir dizi içerdiğini gösterir.
+
+Bir sıfır boyutlu dizi bildirimi bir Microsoft uzantısıdır. Bir C dosyası derlendiğinde bu C++ dosyası derlendiğinde bir düzey 2 uyarı ve düzey 4 uyarısı neden olur. C++ derlemesini Ayrıca bu uyarıyı verir: "bir sıfır boyutlu dizi UDT içeren copy ctor veya kopya atama işleci oluşturulamıyor." Bu örnek, uyarı C4200 oluşturur:
+
+```cpp
+// C4200.cpp
+// compile by using: cl /W4 c4200.cpp
+struct A {
+    int a[0];  // C4200
+};
+int main() {
+}
+```
+
+Bu standart olmayan uzantı, genellikle arabirimi koduna sahip bir değişken uzunluklu dış veri yapıları ile kullanılır. Bu senaryo için kodunuzu geçerliyse, uyarıyı devre dışı bırakabilirsiniz:
+
+## <a name="example"></a>Örnek
+
+```cpp
+// C4200b.cpp
+// compile by using: cl /W4 c4200a.cpp
+#pragma warning(disable : 4200)
+struct A {
+    int a[0];
+};
+int main() {
+}
 ```

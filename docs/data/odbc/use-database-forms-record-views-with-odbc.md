@@ -16,29 +16,31 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 024df18137e38f7aecf2420b85f8fc4d8b1c30cd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f33ad599442a2d961bf20c88ba95e8081a5a9668
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33089823"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109376"
 ---
 # <a name="use-database-forms-record-views-with-odbc"></a>ODBC ile Veritabanı Formları (Kayıt Görünümleri) Kullanma
-Veri girişi veya veri görüntüleme gibi bazı uygulamalar, bir görünüm stili iletişim kutusu denetimleri ile bir form gerektirir.  
+
+Veri girişi veya verilerini görüntüleme gibi bazı uygulamalarla iletişim stili denetimleri olan bir görünümü formu gerektirir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
--   [Veritabanı verileri form içinde görüntüleme](../../data/record-views-mfc-data-access.md)  
+- [Bir formda veritabanı verileri görüntüle](../../data/record-views-mfc-data-access.md)  
   
--   [Kayıt görünümü sınıflarının özellikleri](../../data/features-of-record-view-classes-mfc-data-access.md)  
+- [Kayıt görünümü sınıflarının özellikleri](../../data/features-of-record-view-classes-mfc-data-access.md)  
   
--   [Kayıt görünümleri için veri değişimi](../../data/data-exchange-for-record-views-mfc-data-access.md)  
+- [Kayıt görünümleri için veri değişimi](../../data/data-exchange-for-record-views-mfc-data-access.md)  
   
--   [Kayıt görünümü ile çalışırken sizin rolünüz](../../data/your-role-in-working-with-a-record-view-mfc-data-access.md)  
+- [Kayıt görünümü ile çalışırken sizin rolünüz](../../data/your-role-in-working-with-a-record-view-mfc-data-access.md)  
   
--   [Tasarlama ve kayıt görünümü oluşturma](../../data/designing-and-creating-a-record-view-mfc-data-access.md)  
+- [Kayıt görünümü tasarlama ve oluşturma](../../data/designing-and-creating-a-record-view-mfc-data-access.md)  
   
--   [Kayıt görünümünü kullanma](../../data/using-a-record-view-mfc-data-access.md)  
+- [Kayıt görünümünü kullanma](../../data/using-a-record-view-mfc-data-access.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+
+[Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

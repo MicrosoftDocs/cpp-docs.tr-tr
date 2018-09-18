@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f977f3a0ffda275a0819f01f8c99f12236babd5c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d4f4247d8e752e71b86829ea61756f2f04d26762
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165724"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106005"
 ---
 # <a name="compiler-error-c2120"></a>Derleyici Hatası C2120
-Tüm türleriyle 'void' geçersiz  
-  
- `void` Türü, başka bir türüne sahip bir bildirimde kullanılır.  
-  
- Aşağıdaki örnek C2120 oluşturur:  
-  
-```  
-// C2120.cpp  
-int main() {  
-   void int i;   // C2120  
-   int j;   // OK  
-}  
+
+'tüm türlerle geçersizdir void'
+
+`void` Türü başka bir türü olan bildirimde kullanılır.
+
+Aşağıdaki örnek, C2120 oluşturur:
+
+```
+// C2120.cpp
+int main() {
+   void int i;   // C2120
+   int j;   // OK
+}
 ```

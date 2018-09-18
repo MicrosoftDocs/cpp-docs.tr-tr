@@ -18,48 +18,51 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3122cb3622469adeda3b8c0a2437fe4db7dfca62
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: a8967861ab6ac4e6b6fafd11eea22e67de339ea8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404219"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111387"
 ---
 # <a name="bitwise-and-operator-amp"></a>Bit düzeyinde AND işleci: &amp;
 
-## <a name="syntax"></a>Sözdizimi  
-  
+## <a name="syntax"></a>Sözdizimi
+
 ```
-expression & expression  
+expression & expression
 ```
-  
-## <a name="remarks"></a>Açıklamalar  
- İfadeler diğer ve ifadeleri, veya olabilir (aşağıda belirtilen türü kısıtlamalarına tabidir) eşitlik ifadeleridir, ilişkisel ifadeleri, ek ifadeleri, çarpma ifadeler, üye ifadeleri, cast ifadeleri birli işaretçisi deyimler, ifadeler veya birincil ifadeler sonek.  
-  
- Bit düzeyinde AND işleci (**&**) karşılık gelen bit ikinci işlenenin ilk işlenenin her bitini karşılaştırır. Her iki bit 1 ise, karşılık gelen sonuç bit 1 olarak ayarlanır. Aksi takdirde, karşılık gelen sonuç bit 0 olarak ayarlanır.  
-  
- Bit düzeyinde AND işleci iki işleneni de integral türünde olmalıdır. Olağan aritmetik dönüştürmeler ele [standart dönüştürmeler](standard-conversions.md), işlenenlere uygulanır.  
-  
-## <a name="operator-keyword-for-"></a>İçin işleç anahtar sözcüğü &  
- **Bitand** işlecidir öğesinin metin eşdeğeridir **&**. Erişmenin iki yöntemi vardır **bitand** programlarınızda işleci: üstbilgi dosyasını dahil `iso646.h`, ya da derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırakma) derleyici seçeneği.  
-  
-## <a name="example"></a>Örnek  
-  
-```cpp 
-// expre_Bitwise_AND_Operator.cpp  
-// compile with: /EHsc  
-// Demonstrate bitwise AND  
-#include <iostream>  
-using namespace std;  
-int main() {  
-   unsigned short a = 0xFFFF;      // pattern 1111 ...  
-   unsigned short b = 0xAAAA;      // pattern 1010 ...  
-  
-   cout  << hex << ( a & b ) << endl;   // prints "aaaa", pattern 1010 ...  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](cpp-built-in-operators-precedence-and-associativity.md)  
- [C++ yerleşik işleçler, öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
- [C Bit Düzeyinde İşleçler](../c-language/c-bitwise-operators.md)
+
+## <a name="remarks"></a>Açıklamalar
+
+İfadeler diğer ve ifadeleri, veya olabilir (aşağıda belirtilen türü kısıtlamalarına tabidir) eşitlik ifadeleridir, ilişkisel ifadeleri, ek ifadeleri, çarpma ifadeler, üye ifadeleri, cast ifadeleri birli işaretçisi deyimler, ifadeler veya birincil ifadeler sonek.
+
+Bit düzeyinde AND işleci (**&**) karşılık gelen bit ikinci işlenenin ilk işlenenin her bitini karşılaştırır. Her iki bit 1 ise, karşılık gelen sonuç bit 1 olarak ayarlanır. Aksi takdirde, karşılık gelen sonuç bit 0 olarak ayarlanır.
+
+Bit düzeyinde AND işleci iki işleneni de integral türünde olmalıdır. Olağan aritmetik dönüştürmeler ele [standart dönüştürmeler](standard-conversions.md), işlenenlere uygulanır.
+
+## <a name="operator-keyword-for-"></a>İçin işleç anahtar sözcüğü &
+
+**Bitand** işlecidir öğesinin metin eşdeğeridir **&**. Erişmenin iki yöntemi vardır **bitand** programlarınızda işleci: üstbilgi dosyasını dahil `iso646.h`, ya da derleme [/Za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırakma) derleyici seçeneği.
+
+## <a name="example"></a>Örnek
+
+```cpp
+// expre_Bitwise_AND_Operator.cpp
+// compile with: /EHsc
+// Demonstrate bitwise AND
+#include <iostream>
+using namespace std;
+int main() {
+   unsigned short a = 0xFFFF;      // pattern 1111 ...
+   unsigned short b = 0xAAAA;      // pattern 1010 ...
+
+   cout  << hex << ( a & b ) << endl;   // prints "aaaa", pattern 1010 ...
+}
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C Bit Düzeyinde İşleçler](../c-language/c-bitwise-operators.md)

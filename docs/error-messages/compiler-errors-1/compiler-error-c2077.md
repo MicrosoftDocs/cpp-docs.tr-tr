@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba9395bd783307ae184cf7f23f187d4425523968
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9a9025a61f9ca32679f5041256a2972ab1eaeea0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33164378"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100662"
 ---
 # <a name="compiler-error-c2077"></a>Derleyici Hatası C2077
-skaler olmayan alan Başlatıcı 'tanımlayıcısı'  
-  
- Nonscalar (yapısı, UNION, dizi veya sınıfı) bit alanıyla başlatılmaya çalışıldı. Bir tamsayı veya kayan nokta değeri kullanın.
+
+skalar olmayan alan Başlatıcısı 'identifier'
+
+Bir bit alanı bir nonscalar (yapı, birleşim, dizi veya sınıf) ile başlatmaya çalıştı. Bir tamsayı veya kayan nokta değeri kullanın.

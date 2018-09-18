@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3ff084da77768e4e5a4abd153c5c96d91e738a5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bd7fa14b1ff7b0925dad5eed2e2d84f3531ad599
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276942"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114221"
 ---
 # <a name="compiler-warning-level-1-c4375"></a>Derleyici Uyarısı (düzey 1) C4375
-genel yöntem 'method2' 'method1' kılmaz  
-  
- Başka bir tür uygulayan bir tür bir geçersiz kılma yöntemi tanımlı, ancak geçersiz kılma ortak değildi. Bu nedenle, yöntemi temel tür yöntemi kılmaz.
+
+Genel olmayan yöntemin 'method2' 'yöntem1' geçersiz kılmaz
+
+Başka bir tür uygulayan bir tür tanımlanan bir geçersiz kılma yöntemi, ancak geçersiz kılma genel değildi. Bu nedenle, temel tür yöntem yöntemi geçersiz kılmaz.

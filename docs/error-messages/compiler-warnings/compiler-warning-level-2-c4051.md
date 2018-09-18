@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 672de8924f7a04d1849ff79349c8334ed123a418
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5074ca6f048aec06f98b6081d932ee85868cb9d9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296669"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103418"
 ---
 # <a name="compiler-warning-level-2-c4051"></a>Derleyici Uyarısı (Düzey 2) C4051
-tür dönüştürme; olası veri kaybını  
-  
- İki veri öğeleri farklı temel türü ile bir ifade içeriyor. Tür dönüştürme kesilecek veri öğesi neden olur.  
-  
- Bu uyarı sabit veri öğelerini uygun türü cast ise.
+
+tür dönüştürme; olası veri kaybı
+
+Bir ifade farklı taban türlerden farklı olan iki veri öğeleri içeriyor. Bir tür dönüştürme, veri öğesinin kesilecek neden olur.
+
+Veri öğeleri için uygun bir tür cast değilse bu uyarı sabit olamaz.
