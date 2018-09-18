@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2893644dc4dbec2d1ebc25be42ba4b30fbd19cb1
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: e96b9d70e48b63eafb8cb3c6f4938f962114fd39
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465271"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059491"
 ---
 # <a name="currentscheduler-class"></a>CurrentScheduler Sınıfı
 Arama bağlamı ile ilişkili geçerli Zamanlayıcı için bir soyutlamayı temsil eder.  
@@ -80,8 +80,8 @@ static void __cdecl Create(const SchedulerPolicy& _Policy);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Policy`  
- Yeni oluşturulan Zamanlayıcı davranışını tanımlayan Zamanlayıcı ilke.  
+*_İlkesi*<br/>
+Yeni oluşturulan Zamanlayıcı davranışını tanımlayan Zamanlayıcı ilke.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Zamanlayıcı ek arama bağlamı için bir başvuru sayısı zamanlayıcıda örtük olarak yerleştirir.  
@@ -103,8 +103,8 @@ static ScheduleGroup* __cdecl CreateScheduleGroup(location& _Placement);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Placement`  
- Burada aynı zamanlama grubundaki görevlerin sırasında yürütülen doğru güçlü eğilimi nedeniyle bir konuma başvuru.  
+*Y_erleştirme*<br/>
+Burada aynı zamanlama grubundaki görevlerin sırasında yürütülen doğru güçlü eğilimi nedeniyle bir konuma başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni oluşturulan zamanlama grubu için bir işaretçi. Bu `ScheduleGroup` nesnesi üzerinde yerleştirilen bir ilk başvuru sayısını sahiptir.  
@@ -198,8 +198,8 @@ static bool __cdecl IsAvailableLocation(const location& _Placement);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Placement`  
- Konumun geçerli Zamanlayıcı hakkında sorgulamak için bir başvuru.  
+*Y_erleştirme*<br/>
+Konumun geçerli Zamanlayıcı hakkında sorgulamak için bir başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir gösterge olup olmadığına göre konumu belirtilen `_Placement` bağımsız değişkeni geçerli bir zamanlayıcı üzerinde kullanılabilir.  
@@ -218,8 +218,8 @@ static void __cdecl RegisterShutdownEvent(HANDLE _ShutdownEvent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_ShutdownEvent`  
- Geçerli bağlam ile ilişkili Zamanlayıcı kapanır ve kendisini yok eder bağlandığınızda çalışma zamanı tarafından sinyal Windows olay nesnesi için bir tanıtıcı.  
+*_ShutdownEvent*<br/>
+Geçerli bağlam ile ilişkili Zamanlayıcı kapanır ve kendisini yok eder bağlandığınızda çalışma zamanı tarafından sinyal Windows olay nesnesi için bir tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı bağlamına iliştirilemez hiçbir Zamanlayıcı ise, bu yöntemin çağrılması sonuçlanır bir [scheduler_not_attached](scheduler-not-attached-class.md) oluşturulan özel durum.  
@@ -240,14 +240,14 @@ static void __cdecl ScheduleTask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Proc`  
- İşlev gövdesi basit görev gerçekleştirmek için yürütmek için bir işaretçi.  
+*_Proc*<br/>
+İşlev gövdesi basit görev gerçekleştirmek için yürütmek için bir işaretçi.  
   
- `_Data`  
- Void bir işaretçi verilere gövdesi bir görev için bir parametre olarak geçirilir.  
+*_Veri*<br/>
+Void bir işaretçi verilere gövdesi bir görev için bir parametre olarak geçirilir.  
   
- `_Placement`  
- Burada basit görev sırasında yürütülen doğru güçlü eğilimi nedeniyle bir konuma başvuru.  
+*Y_erleştirme*<br/>
+Burada basit görev sırasında yürütülen doğru güçlü eğilimi nedeniyle bir konuma başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem oluşturulan ve/veya şu anda çağrı bağlamla ilişkili hiçbir Zamanlayıcı ise çağrı bağlamına iliştirilemez. işlem varsayılan Zamanlayıcı neden olur.  

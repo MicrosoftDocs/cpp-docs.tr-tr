@@ -15,21 +15,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51e98ca95131a0adb17f75b51e8e51ecdd4f9075
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6d215bd4dc33a0bd471555232e4f2714eaeb914c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32383712"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058204"
 ---
 # <a name="phrase-structure-grammar"></a>Tümcecik Yapısı Dil Bilgisi
--   [İfadeler](../c-language/summary-of-expressions.md)  
-  
--   [Bildirimleri](../c-language/summary-of-declarations.md)  
-  
--   [Deyimler](../c-language/summary-of-statements.md)  
-  
--   [Dış Tanımlar](../c-language/external-definitions.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Dili Sözdizimi Özeti](../c-language/c-language-syntax-summary.md)
+
+- [İfadeler](../c-language/summary-of-expressions.md)
+
+- [Bildirimleri](../c-language/summary-of-declarations.md)
+
+- [Deyimler](../c-language/summary-of-statements.md)
+
+- [Dış Tanımlar](../c-language/external-definitions.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Dili Sözdizimi Özeti](../c-language/c-language-syntax-summary.md)

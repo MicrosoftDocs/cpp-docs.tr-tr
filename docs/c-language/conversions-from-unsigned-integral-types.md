@@ -18,18 +18,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a8a77e898feb6676487c557b8e96d54dc793ace
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 38ef2c16c92322ae54dcc6dd7d577268daf74831
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391528"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058282"
 ---
 # <a name="conversions-from-unsigned-integral-types"></a>İmzasız Tam Sayı Türlerinden Dönüştürmeler
 
-İşaretsiz tamsayıya yüksek düzey BITS kesilmesiyle tarafından daha kısa bir veya imzalanmış tamsayı veya sıfır genişletme tarafından artık veya imzalanmış tamsayı dönüştürülür (bkz [imzasız tam sayı türlerinden dönüştürmeler](#_clang_table_4..3) tablo).
+İşaretsiz bir tamsayı yüksek sıra bitleri kesiliyor tarafından daha kısa bir imzalanmamış veya imzalı tamsayı veya sıfır genişletme tarafından artık imzalanmamış veya imzalı tamsayı dönüştürülür (bkz [işaretsiz tam sayı türlerinden dönüştürmeler](#_clang_table_4..3) tablo).
 
-Yeni türünü temsil edilebilir, daha küçük boyutu ile imzalanmış bir tamsayı değeri Tamsayı türünde indirgenir veya işaretsiz tamsayıya karşılık gelen kendi imzalı tamsayıya dönüştürülür değeri değişmeden olur. Ancak, değişiklikleri temsil ettiği oturum biti ayarlanmışsa aşağıdaki örnekteki değer.
+Yeni türü içinde gösterilebilir, değerin tam sayı türü ile işaretli bir tamsayıya daha küçük boyutlu indirgenir veya işaretsiz bir tamsayı, karşılık gelen bir işaretli tamsayıya dönüştürülen değer değiştirilmez. Ancak, değişiklikleri temsil ettiği imza biti ayarlanmışsa, aşağıdaki örnekte olduğu gibi değeri.
 
 ```C
 int j;
@@ -39,9 +39,9 @@ j = k;
 printf_s( "%hd\n", j );   // Prints -3
 ```
 
-Temsil edilemez, uygulama tanımlı sonucudur. Bkz: [tür atama dönüşümleri](../c-language/type-cast-conversions.md) indirgenmesi Microsoft C derleyicinin işleme hakkında bilgi için. Aynı davranışı sonuçları tamsayı dönüştürmesi veya tür tamsayı atama.
+Temsil edilemeyen, sonucu uygulama tarafından tanımlanır. Bkz: [tür atama dönüştürmeleri](../c-language/type-cast-conversions.md) tam sayıların indirgenmesi'nın Microsoft C Derleyici işleme hakkında bilgi için. Aynı davranış sonuçları tamsayı dönüşümü veya tür tamsayı atama.
 
-İmzasız değerler değerlerine korur ve doğrudan c dilinde gösterilebilir değil şekilde dönüştürülür Dönüştürme tek istisnası **uzun imzasız** için **float**, hangi kaybederse en düşük düzey BITS. Aksi halde değer, imzalanmış veya imzalanmamış korunur. Tamsayı türünde bir değer kayan dönüştürülür ve değer gösterilebilir aralığın dışında olduğunda sonuç tanımlanmamıştır. (Bkz [temel türleri depolama](../c-language/storage-of-basic-types.md) ayrılmaz ve kayan nokta türleri için izin verilen aralığın hakkında bilgi için.)
+İmzasız değerler değerlerine korur ve doğrudan C'de gösterilebilir değil bir şekilde dönüştürülür Bir dönüştürmedir tek özel durum **işaretsiz uzun** için **float**, hangi kaybeder en düşük sıra bitleri. Aksi takdirde, değeri, işaretli veya işaretsiz korunur. İntegral türünde bir değer kayan dönüştürülür ve değer gösterilebilir aralığının dışında olduğunda sonuç tanımsızdır. (Bkz [temel türlerin depolanması](../c-language/storage-of-basic-types.md) integral ve kayan nokta türleri için aralığı hakkında bilgi için.)
 
 İmzasız tam sayı türlerinden dönüştürmeler aşağıdaki tabloda özetlenmiştir.
 
@@ -49,37 +49,37 @@ Temsil edilemez, uygulama tanımlı sonucudur. Bkz: [tür atama dönüşümleri]
 
 |Başlangıç|Bitiş|Yöntem|
 |----------|--------|------------|
-|**İmzasız char**|**char**|Bit desenini korumak; yüksek sıralı bit bit oturum olur|
-|**İmzasız char**|**short**|Sıfır genişletme|
-|**İmzasız char**|**long**|Sıfır genişletme|
-|**İmzasız char**|**İmzasız short**|Sıfır genişletme|
-|**İmzasız char**|**İmzasız long**|Sıfır genişletme|
-|**İmzasız char**|**float**|Dönüştür **uzun**; Dönüştür **uzun** için **float**|
-|**İmzasız char**|**double**|Dönüştür **uzun**; Dönüştür **uzun** için **çift**|
-|**İmzasız char**|**uzun çift**|Dönüştür **uzun**; Dönüştür **uzun** için **çift**|
+|**İmzasız char**|**char**|Bit deseni korumak; yüksek sıralı bitten imza haline gelir.|
+|**İmzasız char**|**short**|Sıfır uzatma|
+|**İmzasız char**|**long**|Sıfır uzatma|
+|**İmzasız char**|**İmzasız short**|Sıfır uzatma|
+|**İmzasız char**|**İmzasız long**|Sıfır uzatma|
+|**İmzasız char**|**float**|Dönüştürme **uzun**; dönüştürme **uzun** için **float**|
+|**İmzasız char**|**double**|Dönüştürme **uzun**; dönüştürme **uzun** için **çift**|
+|**İmzasız char**|**uzun çift**|Dönüştürme **uzun**; dönüştürme **uzun** için **çift**|
 |**İmzasız short**|**char**|Düşük düzey baytı korur|
-|**İmzasız short**|**short**|Bit desenini korumak; yüksek sıralı bit bit oturum olur|
-|**İmzasız short**|**long**|Sıfır genişletme|
+|**İmzasız short**|**short**|Bit deseni korumak; yüksek sıralı bitten imza haline gelir.|
+|**İmzasız short**|**long**|Sıfır uzatma|
 |**İmzasız short**|**İmzasız char**|Düşük düzey baytı korur|
-|**İmzasız short**|**İmzasız long**|Sıfır genişletme|
-|**İmzasız short**|**float**|Dönüştür **uzun**; Dönüştür **uzun** için **float**|
-|**İmzasız short**|**double**|Dönüştür **uzun**; Dönüştür **uzun** için **çift**|
-|**İmzasız short**|**uzun çift**|Dönüştür **uzun**; Dönüştür **uzun** için **çift**|
+|**İmzasız short**|**İmzasız long**|Sıfır uzatma|
+|**İmzasız short**|**float**|Dönüştürme **uzun**; dönüştürme **uzun** için **float**|
+|**İmzasız short**|**double**|Dönüştürme **uzun**; dönüştürme **uzun** için **çift**|
+|**İmzasız short**|**uzun çift**|Dönüştürme **uzun**; dönüştürme **uzun** için **çift**|
 |**İmzasız long**|**char**|Düşük düzey baytı korur|
 |**İmzasız long**|**short**|Düşük düzey word koru|
-|**İmzasız long**|**long**|Bit desenini korumak; yüksek sıralı bit bit oturum olur|
+|**İmzasız long**|**long**|Bit deseni korumak; yüksek sıralı bitten imza haline gelir.|
 |**İmzasız long**|**İmzasız char**|Düşük düzey baytı korur|
 |**İmzasız long**|**İmzasız short**|Düşük düzey word koru|
-|**İmzasız long**|**float**|Dönüştür **uzun**; Dönüştür **uzun** için **float**|
-|**İmzasız long**|**double**|Doğrudan Dönüştür **çift**|
-|**İmzasız long**|**uzun çift**|Dönüştür **uzun**; Dönüştür **uzun** için **çift**|
+|**İmzasız long**|**float**|Dönüştürme **uzun**; dönüştürme **uzun** için **float**|
+|**İmzasız long**|**double**|Doğrudan dönüştürme **çift**|
+|**İmzasız long**|**uzun çift**|Dönüştürme **uzun**; dönüştürme **uzun** için **çift**|
 
-**Microsoft özel**
+**Microsoft'a özgü**
 
-Microsoft C derleyicisi için **imzasız int** türüdür eşdeğer **uzun imzasız** türü. Dönüştürme bir **imzasız int** değeri geçer dönüştürülmesi aynı şekilde bir **uzun imzasız**. Gelen dönüşümleri **uzun imzasız** değerler **float** dönüştürülen değerin imzalı en büyük pozitif büyükse doğru olmayan **uzun** değeri.
+Microsoft C derleyicisi için **işaretsiz int** türüdür eşdeğer **işaretsiz uzun** türü. Dönüştürme bir **işaretsiz int** değeri geçer dönüştürülmesi aynı şekilde bir **işaretsiz uzun**. Dönüştürmelere **işaretsiz uzun** değerler **float** dönüştürülen değer en fazla pozitif imzalı büyükse doğru olmadığını **uzun** değeri.
 
-**SON Microsoft özel**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Atama Dönüştürmeleri](../c-language/assignment-conversions.md)  
+[Atama Dönüştürmeleri](../c-language/assignment-conversions.md)

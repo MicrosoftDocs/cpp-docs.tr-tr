@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 503ce18d5ffa966f6c216468b487851207313937
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 9292c354b630ca5aea8bda7c88f5beab6691ba08
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105360"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052848"
 ---
 # <a name="cadapt-class"></a>CAdapt sınıfı
 
@@ -36,13 +36,13 @@ Bu şablon, nesnenin adresi dışında bir öğe döndürmek üzere address-of i
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T>  
+template <class T>
 class CAdapt
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Uyarlanmış tür.
 
 ## <a name="members"></a>Üyeler
@@ -97,10 +97,10 @@ CAdapt(CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 
 ### <a name="parameters"></a>Parametreler
 
-*rSrc*  
+*rSrc*<br/>
 Yeni oluşturulan bağdaştırıcısı nesnesine kopyalanacak uyarlanan türünde bir değişken.
 
-*rSrCA*  
+*rSrCA*<br/>
 Kapsanan verisini kopyalanamaz (yeni oluşturulmuş bağdaştırıcı nesnesine veya taşınamaz) bir bağdaştırıcı nesne.
 
 ##  <a name="m_t"></a>  CAdapt::m_T
@@ -119,7 +119,7 @@ Bu **genel** veri üyesinin erişilebilir doğrudan veya dolaylı olarak ile [i�
 
 Döndürür bir **const** başvurusu [m_T](#m_t) bağdaştırıcısı nesnesini bir nesne türü değilmiş gibi kabul edilmesi izin verme, üye *T*.
 
-```  
+```
 operator const T&() const;
 ```
 
@@ -131,7 +131,7 @@ A **const** başvurusu `m_T`.
 
 Bir başvuru döndürür [m_T](#m_t) bağdaştırıcısı nesnesini bir nesne türü değilmiş gibi kabul edilmesi izin verme, üye *T*.
 
-```  
+```
 operator T&();
 ```
 
@@ -149,7 +149,7 @@ bool operator<(const T& rSrc) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*rSrc*  
+*rSrc*<br/>
 Karşılaştırılacak nesnesine bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -168,10 +168,10 @@ CAdapt& operator= (CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 
 ### <a name="parameters"></a>Parametreler
 
-*rSrc*  
+*rSrc*<br/>
 Kopyalanacak uyarlanmış türde bir nesneye başvuru.
 
-*rSrCA*  
+*rSrCA*<br/>
 Taşınacak bir nesneye bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -188,7 +188,7 @@ bool operator== (const T& rSrc) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*rSrc*  
+*rSrc*<br/>
 Karşılaştırılacak nesnesine bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri

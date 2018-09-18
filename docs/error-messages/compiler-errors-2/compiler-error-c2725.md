@@ -16,49 +16,52 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a32f2a3255aa0d23f3164d01c0168365ad55c660
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 969ddd9343073dff3732204eb4b17375bb5ab9cc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236824"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056046"
 ---
 # <a name="compiler-error-c2725"></a>Derleyici Hatası C2725
-'özel': throw veya yönetilen bir catch veya WinRT nesnesiyle değer veya başvuru  
-  
- Yönetilen tür veya WinRT özel durum doğru değildi.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2725 oluşturur ve nasıl düzeltileceği gösterir.  
-  
-```  
-// C2725.cpp  
-// compile with: /clr  
-ref class R {  
-public:  
-   int i;  
-};  
-  
-int main() {  
-   R % r1 = *gcnew R;  
-   throw r1;   // C2725  
-  
-   R ^ r2 = gcnew R;  
-   throw r2;   // OK     
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2725 oluşturur ve nasıl düzeltileceği gösterir.  
-  
-```  
-// C2725b.cpp  
-// compile with: /clr  
-using namespace System;  
-int main() {  
-   try {}  
-   catch( System::Exception%) {}   // C2725  
-   // try the following line instead  
-   // catch( System::Exception ^e) {}  
-}  
-```  
+
+'özel durum': throw veya catch yönetilen ya da değer veya başvuruyla WinRT nesnesi
+
+Yönetilen tür veya WinRT özel durumu doğru değildi.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2725 oluşturur ve bu sorunun nasıl gösterir.
+
+```
+// C2725.cpp
+// compile with: /clr
+ref class R {
+public:
+   int i;
+};
+
+int main() {
+   R % r1 = *gcnew R;
+   throw r1;   // C2725
+
+   R ^ r2 = gcnew R;
+   throw r2;   // OK
+}
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2725 oluşturur ve bu sorunun nasıl gösterir.
+
+```
+// C2725b.cpp
+// compile with: /clr
+using namespace System;
+int main() {
+   try {}
+   catch( System::Exception%) {}   // C2725
+   // try the following line instead
+   // catch( System::Exception ^e) {}
+}
+```

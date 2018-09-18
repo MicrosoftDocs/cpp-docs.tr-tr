@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f0691230454ffd935d67c99f58b857cdc1ce0f0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d2f3c059e63bcca9bbde9e863cc17c9e240e4f78
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292707"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057021"
 ---
 # <a name="compiler-warning-level-3-c4240"></a>Derleyici Uyarısı (Düzey 3) C4240
-kullanılan standart olmayan uzantısı: erişim için 'şimdi 'erişim belirticisi', daha önce onu olarak tanımlanan classname' tanımlandığı 'erişim belirteci' olmalıdır  
-  
- ANSI Uyumluluğu altında ([/Za](../../build/reference/za-ze-disable-language-extensions.md)), bir iç içe geçmiş sınıf erişim değiştiremezsiniz. Varsayılan Microsoft uzantıları altında (/Ze), bu uyarı ile kullanabilirsiniz.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4240.cpp  
-// compile with: /W3  
-class X  
-{  
-private:  
-   class N;  
-public:  
-   class N  
-   {   // C4240  
-   };  
-};  
-  
-int main()  
-{  
-}  
+
+Standart olmayan uzantı kullanıldı: erişimi şimdi 'erişim belirticisi', daha önce tanımlanmış'classname ', 'erişim belirticisi' olacak şekilde tanımlandı
+
+ANSI Uyumluluğu altında ([/Za](../../build/reference/za-ze-disable-language-extensions.md)), iç içe geçmiş bir sınıf için erişim değiştiremezsiniz. Varsayılan Microsoft uzantıları altında (/Ze), bu uyarı ile kullanabilirsiniz.
+
+## <a name="example"></a>Örnek
+
+```
+// C4240.cpp
+// compile with: /W3
+class X
+{
+private:
+   class N;
+public:
+   class N
+   {   // C4240
+   };
+};
+
+int main()
+{
+}
 ```

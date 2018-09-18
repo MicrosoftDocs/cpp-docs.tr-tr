@@ -19,14 +19,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8208a372989fac5fa7c7b0c13b83eb27a4d1444b
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: e8c641cc543f213b6c81950c22b97f25b31d6c4e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464676"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057334"
 ---
 # <a name="session-object-interfaces"></a>Oturum Nesnesi Arabirimleri
+
 Aşağıdaki tabloda, bir oturum nesnesi için OLE DB tarafından tanımlanan zorunlu ve isteğe bağlı arabirimler gösterilir.  
   
 |Arabirim|Gerekli mi?|OLE DB Şablonları tarafından uygulanır?|  
@@ -50,9 +51,10 @@ Aşağıdaki tabloda, bir oturum nesnesi için OLE DB tarafından tanımlanan zo
 |[ITransactionLocal](/previous-versions/windows/desktop/ms714893\(v=vs.85\))|İsteğe Bağlı|Hayır|  
 |[ITransactionObject](/previous-versions/windows/desktop/ms713659\(v=vs.85\))|İsteğe Bağlı|Hayır|  
   
- Oturum nesnesi bir satır kümesi nesnesi oluşturur. Oturum Sağlayıcı komutları destekliyorsa, ayrıca bir komut nesnesi oluşturur. (`CCommand`, OLE DB uygulama `TCommand`). Komut nesnesi uygulayan `ICommand` arabirimi ve kullanımları `ICommand::Execute` satır kümesinde, aşağıdaki resimde gösterildiği gibi komutları yürütmek için yöntemi.  
+Oturum nesnesi bir satır kümesi nesnesi oluşturur. Oturum Sağlayıcı komutları destekliyorsa, ayrıca bir komut nesnesi oluşturur. (`CCommand`, OLE DB uygulama `TCommand`). Komut nesnesi uygulayan `ICommand` arabirimi ve kullanımları `ICommand::Execute` satır kümesinde, aşağıdaki resimde gösterildiği gibi komutları yürütmek için yöntemi.  
   
- ![Sağlayıcı kavramsal diyagram](../../data/oledb/media/vc4u551.gif "vc4u551")  
+![Sağlayıcı kavramsal diyagram](../../data/oledb/media/vc4u551.gif "vc4u551")  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d97cbbd75d3b39b55ff640ed99e261ba349043d3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b628adda383baee0f2ec03ace715d94c6cca764c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199634"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058152"
 ---
 # <a name="compiler-error-c2511"></a>Derleyici Hatası C2511
-'tanımlayıcısı': 'sınıfında' bulunamadı üye işlevi aşırı yüklenmiş  
-  
- Herhangi bir sürümü işlevi belirtilen parametrelerle bildirildi.  Olası nedenler:  
-  
-1.  İşlevi için yanlış parametre geçirildi.  
-  
-2.  Parametreler yanlış sırayla geçirildi.  
-  
-3.  Parametre adları yanlış yazımını.  
-  
- Aşağıdaki örnek C2511 oluşturur:  
-  
-```  
-// C2511.cpp  
-// compile with: /c  
-class C {  
-   int c_2;  
-   int Func(char *, char *);  
-};  
-  
-int C::Func(char *, char *, int i) {   // C2511  
-// try the following line instead  
-// int C::Func(char *, char *) {  
-   return 0;  
-}  
+
+'identifier': Aşırı yüklenen üye işlev 'sınıfında' bulunamadı
+
+Herhangi bir sürümü işlevi, belirtilen parametrelerle bildirilir.  Olası nedenler:
+
+1. Yanlış parametre işleve geçirildi.
+
+1. Geçirilen parametreler yanlış sırada.
+
+1. Parametre adları yanlış yazımını.
+
+Aşağıdaki örnek, C2511 oluşturur:
+
+```
+// C2511.cpp
+// compile with: /c
+class C {
+   int c_2;
+   int Func(char *, char *);
+};
+
+int C::Func(char *, char *, int i) {   // C2511
+// try the following line instead
+// int C::Func(char *, char *) {
+   return 0;
+}
 ```

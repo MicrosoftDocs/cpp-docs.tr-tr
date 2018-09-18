@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93d30c1af67159c04546076a07c78fbaec9cbb91
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 2647ea3ac46ec3783f584de996c3d988c168980d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762325"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054869"
 ---
 # <a name="ccomobjectroot-class"></a>CComObjectRoot sınıfı
 
@@ -46,8 +46,8 @@ typedef CComObjectRootEx<CComObjectThreadModel> CComObjectRoot;
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)   
-[CComAggObject sınıfı](../../atl/reference/ccomaggobject-class.md)   
-[CComObject sınıfı](../../atl/reference/ccomobject-class.md)   
-[CComPolyObject sınıfı](../../atl/reference/ccompolyobject-class.md)   
+[CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[CComAggObject Sınıfı](../../atl/reference/ccomaggobject-class.md)<br/>
+[CComObject Sınıfı](../../atl/reference/ccomobject-class.md)<br/>
+[CComPolyObject Sınıfı](../../atl/reference/ccompolyobject-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

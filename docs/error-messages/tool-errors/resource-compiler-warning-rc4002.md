@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 04c932b5f120f540f34cd0d6bdfef51be99bfbb4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 400d748f0ce9cafa4d11690f1d6c9fbfa4af90e7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322776"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058997"
 ---
 # <a name="resource-compiler-warning-rc4002"></a>Kaynak Derleyicisi Uyarısı RC4002
-Makro 'tanımlayıcısı' için çok fazla gerçek parametreleri  
-  
- Belirtilen tanımlayıcı ile parametre sayısı belirtilmiş gerçek tanımlayıcı makrosu tanımında belirtilen biçimsel parametresi sayısından büyük.  
-  
- Ek gerçek parametreler toplanan ancak makrosu genişletme sırasında yoksayıldı.
+
+Makro 'identifier' için çok fazla sayıda gerçek parametre
+
+Belirtilen tanımlayıcı ile belirtilen gerçek parametre sayısı, verilen tanımlayıcısının Makro tanımında biçimsel parametre sayısından daha büyük.
+
+Ek gerçek parametre toplanan ancak makro genişletme sırasında yoksayıldı.

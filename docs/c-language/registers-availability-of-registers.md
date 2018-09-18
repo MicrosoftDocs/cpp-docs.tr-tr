@@ -14,17 +14,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0a63bf8980ea9022a1cd06bc890512db8ba85a5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f9c7c09bccda07358384ca6b0be8d3ea824bc99e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32383949"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055149"
 ---
 # <a name="registers-availability-of-registers"></a>Yazmaçlar: Yazmaçların Kullanılabilirliği
-**ANSI 3.5.1** olduğu nesneleri gerçekten yerleştirilebilen yazmaçları tarafından register depolama sınıfı tanımlayıcısı kullanımını kapsamı  
-  
- Derleyici yazmaç değişkenleri için kullanıcı istekleri dikkate almaz. Bunun yerine, bu seçenek iyileştirirken kendi kolaylaştırır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Uygulama Tanımlı Davranış](../c-language/implementation-defined-behavior.md)
+
+**ANSI 3.5.1** istediğiniz nesneleri gerçekten yerleştirilebileceğini kayıtlara register depolama sınıfı tanımlayıcısı kullanarak kapsamı
+
+Derleyici yazmaç değişkenlerine yönelik kullanıcı isteklerini dikkate almaz. Bunun yerine, seçimleri iyileştirirken kendi sağlar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Uygulama Tanımlı Davranış](../c-language/implementation-defined-behavior.md)

@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0cbf64e673c84a60c37bce3ffd51bc7016eb7a2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6db497a7967e0cefc16ecb6e5a71874f86179b29
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169939"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053771"
 ---
 # <a name="compiler-error-c2203"></a>Derleyici Hatası C2203
-Delete işleci, bir dizi sınırları belirtemezsiniz  
-  
- İle **/Za** (ANSI) seçeneği `delete` işleci tüm diziyi ancak bölümleri veya dizi belirli üyeleri silebilirsiniz.  
-  
- Aşağıdaki örnek C2203 oluşturur:  
-  
-```  
-// C2203.cpp  
-// compile with: /Za  
-int main() {  
-   int *ar = new int[10];  
-   delete [4] ar;   // C2203  
-   // try the following line instead  
-   // delete [] ar;  
-}  
+
+Delete işleci bir dizi için sınırları belirtemez
+
+İle **/Za** seçeneğini (ANSI) `delete` işleci, tüm dizi ancak bölümleri veya dizinin belirli üyeleri silebilirsiniz.
+
+Aşağıdaki örnek, C2203 oluşturur:
+
+```
+// C2203.cpp
+// compile with: /Za
+int main() {
+   int *ar = new int[10];
+   delete [4] ar;   // C2203
+   // try the following line instead
+   // delete [] ar;
+}
 ```

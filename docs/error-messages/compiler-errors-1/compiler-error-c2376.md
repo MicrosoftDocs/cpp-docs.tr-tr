@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83174f74b30cd7b1c945587f4cd790f9b88a10a7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 978fc9044550be79f913180231799749cac97548
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195782"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060050"
 ---
 # <a name="compiler-error-c2376"></a>Derleyici Hatası C2376
-'function': şemadaki; farklı göre ayırma  
-  
- İşlevi ile farklı tabanlı bir ayırma zaten bildirildi.
+
+'function': yeniden tanımlama; based ayırması farklı
+
+İşleve based ayırması farklı ile zaten bildirildi.

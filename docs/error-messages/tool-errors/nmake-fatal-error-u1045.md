@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 673b20dde7156025c6aa56c487433eebe9e77aa3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c2b9be4f7440d9e79d603e917c1886aebe7c44af
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316380"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056891"
 ---
 # <a name="nmake-fatal-error-u1045"></a>NMAKE Önemli Hatası U1045
-spawn başarısız oldu: ileti  
-  
- Bir program veya komut belirli bir nedenle başarısız NMAKE tarafından çağrılır. NMAKE başka bir program çağırdığında — Örneğin, derleyici veya bağlayıcı — çağrısı başarısız olabilir veya bir hata çağrılan program tarafından döndürülebilir. Bu hatayı bildirmek için kullanılır.  
-  
- Bu sorunu gidermek için öncelikle hatanın nedenini belirleyin. NMAKE tarafından bildirilen komutlarını kullanabilirsiniz [/N](../../build/nmake-options.md) ortam ayarları doğrulayın ve komut satırında NMAKE tarafından gerçekleştirilen eylemler yinelenecek seçeneği.
+
+üretme başarısız oldu: ileti
+
+Bir program veya komut belirli bir nedenle başarısız NMAKE tarafından çağrılır. NMAKE başka bir program çağırdığında — Örneğin, derleyici veya bağlayıcı — çağrı başarısız olabilir veya çağrılan bir program tarafından döndürülen bir hata. Bu ileti, hatayı bildirmek için kullanılır.
+
+Bu sorunu gidermek için önce hatanın nedenini belirleyin. NMAKE tarafından bildirilen komutları kullanabilirsiniz [/N](../../build/nmake-options.md) ortam ayarları doğrulayın ve komut satırında NMAKE tarafından gerçekleştirilen eylemlerin yinelemek için seçeneği.

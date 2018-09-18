@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d052a1fa6124aa1518cddec00566e14668fe111d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 83131119e360bcf8193c2d6c8ca5a3cd09341516
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290094"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054200"
 ---
 # <a name="compiler-warning-level-3-c4390"></a>Derleyici Uyarısı (Düzey 3) C4390
-';': boş bulundu; denetimli deyimi Bu amaç mi?  
-  
- Noktalı virgül hiçbir yönergeleri içeren bir denetim deyimi sonra bulundu.  
-  
- Makro nedeniyle C4390 alırsanız, kullanmanız gereken [uyarı](../../preprocessor/warning.md) C4390 makrosu içeren modül devre dışı bırakmak için pragması.  
-  
- Aşağıdaki örnek C4390 oluşturur:  
-  
-```  
-// C4390.cpp  
-// compile with: /W3  
-int main() {  
-   int i = 0;  
-   if (i);   // C4390  
-      i++;  
-}  
+
+';': boş denetlenen deyim bulundu; Bu amaç mi?
+
+Noktalı virgül, hiçbir yönergeleri içeren bir denetim deyimidir sonra bulunamadı.
+
+Makro nedeniyle C4390 alırsanız, kullanmanız gereken [uyarı](../../preprocessor/warning.md) pragma makro içeren modülünde C4390 devre dışı bırakmak için.
+
+Aşağıdaki örnek, C4390 oluşturur:
+
+```
+// C4390.cpp
+// compile with: /W3
+int main() {
+   int i = 0;
+   if (i);   // C4390
+      i++;
+}
 ```

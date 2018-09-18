@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5761f475d12375baccad9c19a597215c9c6fc3cd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c15351e694e6e26671f50a1d3efb266f4a667029
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33227316"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056020"
 ---
 # <a name="compiler-error-c2579"></a>Derleyici Hatası C2579
-türü 'type' (uzaklık) çözümlenemiyor. Dosyasında bekleniyor  
-  
- C2579 her zaman C4691 izler. Daha fazla bilgi için bkz: [Derleyici Uyarısı (düzey 1) C4691](../../error-messages/compiler-warnings/compiler-warning-level-1-c4691.md).
+
+türü 'type' (kaydırma) çözümlemek yüklenemiyor. Dosyasında bekleniyor
+
+C2579 C4691 her zaman takip eder. Daha fazla bilgi için [Derleyici Uyarısı (düzey 1) C4691](../../error-messages/compiler-warnings/compiler-warning-level-1-c4691.md).

@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d1a4404d3f7e60adc2d8f9ff0c8ccb3d154b26d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cd97551e0feaecce776cc552353716c67822f273
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170612"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055903"
 ---
 # <a name="compiler-error-c2241"></a>Derleyici Hatası C2241
-'tanımlayıcısı': üye erişimi sınırlı  
-  
- Kod bir özel veya korumalı üye erişmeyi dener.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümlere kullanarak düzeltmek için  
-  
-1.  Üye erişim düzeyini değiştirin.  
-  
-2.  Üye bildirme bir `friend` erişilirken işlevinin.
+
+'identifier': üye erişimi kısıtlıdır
+
+Kod, özel veya korumalı bir üye erişmeyi dener.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+
+1. Üye erişim düzeyini değiştirin.
+
+1. Üye bildirmek bir `friend` erişen işlevi.

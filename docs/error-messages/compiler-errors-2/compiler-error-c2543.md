@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5f379927ab291a7e00f59444a8f635749aefc18
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d0bb955f2469b85cd7338135d08dc8d086aaaf9a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199333"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054148"
 ---
 # <a name="compiler-error-c2543"></a>Derleyici Hatası C2543
-Beklenen ']' işleci '[']  
-  
- Subscripting işleci sol ayracı eksik.  
-  
- Bu hata tarafından makrosu genişletme neden olabilir.
+
+Beklenen ']' [']' işleci için
+
+Subscripting işleci bir sol köşeli ayraç eksik.
+
+Makro genişletme tarafından bu hata oluşabilir.

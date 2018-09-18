@@ -16,27 +16,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe41175895f99ff97c6e2171e2cdfc0cbcc82689
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5007deecce9adcaf03ab3d367539eac58c79498f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32385962"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059708"
 ---
 # <a name="program-structure"></a>Program Yapısı
-Bu bölümde C programları ve program yürütme genel bakış sağlar. Hüküm ve C programları ve bileşenleri anlamak için önemli özellikleri ayrıca sunulmuştur. Ele alınan konular şunlardır:  
-  
--   [Kaynak dosyalar ve kaynak programlar](../c-language/source-files-and-source-programs.md)  
-  
--   [Main işlevi ve program yürütme](../c-language/main-function-and-program-execution.md)  
-  
--   [Komut satırı bağımsız değişkenlerini ayrıştırma](../c-language/parsing-c-command-line-arguments.md)  
-  
--   [Ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)  
-  
--   [Ad alanları](../c-language/name-spaces.md)  
-  
- Bu bölümde bir genel bakış olduğundan, yalnızca tanıtım malzemeleri konular içerir. Çapraz referanslı bilgi daha ayrıntılı açıklamalar için bkz.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Dil Başvurusu](../c-language/c-language-reference.md)
+
+Bu bölüm C programları ve program yürütme genel bir bakış sağlar. Hüküm ve C programları ve bileşenleri anlamak için bu önemli özellikler de kullanıma sunulmuştur. Ele alınan konular şunlardır:
+
+- [Kaynak dosyalar ve kaynak programlar](../c-language/source-files-and-source-programs.md)
+
+- [Main işlevi ve program yürütme](../c-language/main-function-and-program-execution.md)
+
+- [Komut satırı bağımsız değişkenlerini ayrıştırma](../c-language/parsing-c-command-line-arguments.md)
+
+- [Ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)
+
+- [Ad alanları](../c-language/name-spaces.md)
+
+Bu bölümde, genel bir bakış olduğundan, yalnızca tanıtım malzemeleri konular içerir. Daha ayrıntılı açıklamalar açıklamasındaki bilgilerine bakın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Dil Başvurusu](../c-language/c-language-reference.md)

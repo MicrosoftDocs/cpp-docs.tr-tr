@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ccc811e3459fe668b6a8dbd255007cb60bf0cf1
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 7472e8fa8932983569ad9e2a9c1fe6cdfc9318b7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33696142"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059689"
 ---
 # <a name="unsupportedfeature-class"></a>unsupported_feature Sınıfı
-Desteklenmeyen bir özellik kullanıldığında oluşan özel durum.  
+Desteklenmeyen bir özellik kullanıldığında oluşturulan özel durum.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -52,7 +52,7 @@ class unsupported_feature : public runtime_exception;
   
 ## <a name="unsupported_feature__ctor"></a> unsupported_feature 
 
-  Unsupported_feature özel durum yeni bir örneğini oluşturur.  
+  Unsupported_feature özel durumunun yeni bir örneğini oluşturur.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -64,11 +64,11 @@ unsupported_feature() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hatanın açıklaması.  
+*İl_eti*<br/>
+Hatanın açıklaması.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `unsupported_feature` Nesnesi.  
+ `unsupported_feature` Nesne.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** amprt.h  

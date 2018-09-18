@@ -29,44 +29,46 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a9897be9bbcae0a03ef67996bda6f3ffbe894b8f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 41d1692fc69ba4ff29e091ca736cae60b10a402a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680458"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054083"
 ---
 # <a name="simplifying-data-access-with-database-attributes"></a>Veritabanı Öznitelikleriyle Veri Erişimini Basitleştirme
+
 Bu konu, veritabanı işlemleri basitleştirmek için veritabanı öznitelikleri kullanımını gösterir.  
   
- Bir veritabanından bilgilere erişmek için temel yolu komutu (veya tablo) bir sınıfı ve belirli bir tablo için bir kullanıcı kayıt sınıfı veritabanında oluşturmaktır. Veritabanı öznitelikleri bazı önceden yapmak zorunda şablon bildirimleri basitleştirin.  
+Bir veritabanından bilgilere erişmek için temel yolu komutu (veya tablo) bir sınıfı ve belirli bir tablo için bir kullanıcı kayıt sınıfı veritabanında oluşturmaktır. Veritabanı öznitelikleri bazı önceden yapmak zorunda şablon bildirimleri basitleştirin.  
   
- Veritabanı öznitelikleri kullanımını göstermek için aşağıdaki bölümleri iki eşdeğer tablo ve kullanıcı kayıt sınıf bildirimleri göster: ilk öznitelikleri ve ikinci OLE DB Şablonları kullanır. Bu tür bildirimi kod genellikle adlı tablo veya komut nesnesi için bir üstbilgi dosyası gibi Authors.h yerleştirilir.  
+Veritabanı öznitelikleri kullanımını göstermek için aşağıdaki bölümleri iki eşdeğer tablo ve kullanıcı kayıt sınıf bildirimleri göster: ilk öznitelikleri ve ikinci OLE DB Şablonları kullanır. Bu tür bildirimi kod genellikle adlı tablo veya komut nesnesi için bir üstbilgi dosyası gibi Authors.h yerleştirilir.  
   
- İki dosyayı karşılaştırarak öznitelikleri ne kadar kolay olduğunu görebilirsiniz. Arasındaki farklar şunlardır:  
+İki dosyayı karşılaştırarak öznitelikleri ne kadar kolay olduğunu görebilirsiniz. Arasındaki farklar şunlardır:  
   
--   Öznitelikleri kullanarak, yalnızca bir sınıf bildirmeniz gerekir: `CAuthors`iki bildirmenize gerek şablonlarıyla korurken: `CAuthorsNoAttrAccessor` ve `CAuthorsNoAttr`.  
+- Öznitelikleri kullanarak, yalnızca bir sınıf bildirmeniz gerekir: `CAuthors`iki bildirmenize gerek şablonlarıyla korurken: `CAuthorsNoAttrAccessor` ve `CAuthorsNoAttr`.  
   
--   `db_source` Öznitelikli sürümdeki çağrısı eşdeğer `OpenDataSource()` şablon bildiriminde çağırın.  
+- `db_source` Öznitelikli sürümdeki çağrısı eşdeğer `OpenDataSource()` şablon bildiriminde çağırın.  
   
--   `db_table` Öznitelikli sürümdeki çağrısı için aşağıdaki şablon bildirimi eşdeğerdir:  
+- `db_table` Öznitelikli sürümdeki çağrısı için aşağıdaki şablon bildirimi eşdeğerdir:  
   
     ```  
     class CAuthorsNoAttr : public CTable<CAccessor<CAuthorsNoAttrAccessor>>  
     ```  
   
--   `db_column` Öznitelikli çağrılarında sütun eşlemesi için eşdeğer olan (bkz `BEGIN_COLUMN_MAP ... END_COLUMN_MAP`) şablon bildirimindeki.  
+- `db_column` Öznitelikli çağrılarında sütun eşlemesi için eşdeğer olan (bkz `BEGIN_COLUMN_MAP ... END_COLUMN_MAP`) şablon bildirimindeki.  
   
- Öznitelikleri sizin için bir kullanıcı kaydı sınıf bildirimi ekleyin. Kullanıcı kayıt sınıfı eşdeğerdir `CAuthorsNoAttrAccessor` şablon bildirimindeki. Tablo sınıfınız varsa `CAuthors`, eklenen kullanıcı kayıt sınıfı adlı `CAuthorsAccessor`, ve bildiriminden eklenen kodun yalnızca görüntüleyebilir. Daha fazla bilgi için bkz: "Öznitelik eklenmiş kullanıcı kayıt sınıfları" [kullanıcı kayıtlarını](../../data/oledb/user-records.md).  
+Öznitelikleri sizin için bir kullanıcı kaydı sınıf bildirimi ekleyin. Kullanıcı kayıt sınıfı eşdeğerdir `CAuthorsNoAttrAccessor` şablon bildirimindeki. Tablo sınıfınız varsa `CAuthors`, eklenen kullanıcı kayıt sınıfı adlı `CAuthorsAccessor`, ve bildiriminden eklenen kodun yalnızca görüntüleyebilir. Daha fazla bilgi için bkz: "Öznitelik eklenmiş kullanıcı kayıt sınıfları" [kullanıcı kayıtlarını](../../data/oledb/user-records.md).  
   
- Hem öznitelikli ve şablonlu kodu, kullanarak satır kümesi özelliklerini ayarlamanız gerekir `CDBPropSet::AddProperty`.  
+Hem öznitelikli ve şablonlu kodu, kullanarak satır kümesi özelliklerini ayarlamanız gerekir `CDBPropSet::AddProperty`.  
   
- Bu konuda tartışılan öznitelikleri hakkında daha fazla bilgi için bkz: [OLE DB tüketici öznitelikleri](../../windows/ole-db-consumer-attributes.md).  
+Bu konuda tartışılan öznitelikleri hakkında daha fazla bilgi için bkz: [OLE DB tüketici öznitelikleri](../../windows/ole-db-consumer-attributes.md).  
   
 ## <a name="table-and-accessor-declaration-using-attributes"></a>Tablo ve öznitelikleri kullanarak erişimci bildirimi  
- Aşağıdaki kod çağrıları `db_source` ve `db_table` tablo sınıfı üzerinde. `db_source` kullanılacak bağlantı ve veri kaynağını belirtir. `db_table` bir tablo sınıfı bildirmek için uygun şablonu kodu ekler. `db_column` Sütun eşlemesi belirtin ve erişimci bildirimini ekleyin. ATL destekleyen herhangi bir projede kullanabileceğiniz OLE DB tüketici öznitelikleri  
+
+Aşağıdaki kod çağrıları `db_source` ve `db_table` tablo sınıfı üzerinde. `db_source` kullanılacak bağlantı ve veri kaynağını belirtir. `db_table` bir tablo sınıfı bildirmek için uygun şablonu kodu ekler. `db_column` Sütun eşlemesi belirtin ve erişimci bildirimini ekleyin. ATL destekleyen herhangi bir projede kullanabileceğiniz OLE DB tüketici öznitelikleri  
   
- Öznitelikleri kullanarak tablo ve erişimcisi bildirimi şu şekildedir:  
+Öznitelikleri kullanarak tablo ve erişimcisi bildirimi şu şekildedir:  
   
 ```cpp
 //////////////////////////////////////////////////////////////////////  
@@ -102,7 +104,8 @@ public:
 ```  
   
 ## <a name="table-and-accessor-declaration-using-templates"></a>Tablo ve şablonları kullanarak erişimci bildirimi  
- Şablonları kullanarak tablo ve erişimcisi bildirimi aşağıda verilmiştir.  
+
+Şablonları kullanarak tablo ve erişimcisi bildirimi aşağıda verilmiştir.  
   
 ```cpp
 //////////////////////////////////////////////////////////////////////  
@@ -207,4 +210,5 @@ HRESULT hr = Open(m_session, "Authors", pPropSet);
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketici Öznitelikleri](../../windows/ole-db-consumer-attributes.md)   
+
+[OLE DB Tüketici Öznitelikleri](../../windows/ole-db-consumer-attributes.md)   

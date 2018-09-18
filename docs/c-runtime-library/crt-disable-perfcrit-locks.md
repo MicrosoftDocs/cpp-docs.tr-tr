@@ -18,24 +18,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 128403009595d85e44007d79c9110b5df530b45e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bd01cbddac128e2369971d07320ff95986d822f9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32386663"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053901"
 ---
 # <a name="crtdisableperfcritlocks"></a>_CRT_DISABLE_PERFCRIT_LOCKS
-Performans açısından kritik g/ç işlemlerinde kilitleme devre dışı bırakır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-#define _CRT_DISABLE_PERFCRIT_LOCKS  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu simge tanımlama tek iş parçacıklı g/Ç-bağlı programlarda tek iş parçacıklı g/ç modeli varsaymak tüm g/ç işlemleri zorlayarak performansı artırabilir. Daha fazla bilgi için bkz: [birden çok iş parçacıklı kitaplık performansı](../c-runtime-library/multithreaded-libraries-performance.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+Performans açısından kritik g/ç işlemlerinde kilitleme devre dışı bırakır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+#define _CRT_DISABLE_PERFCRIT_LOCKS
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sembol tanımlama miyim/O-bağlı programlarda tek iş parçacıklı bir tek iş parçacıklı g/ç modeli varsaymak tüm g/ç işlemleri zorlayarak performansını geliştirebilirsiniz. Daha fazla bilgi için [birden çok iş parçacıklı kitaplık performansı](../c-runtime-library/multithreaded-libraries-performance.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Global Sabitler](../c-runtime-library/global-constants.md)

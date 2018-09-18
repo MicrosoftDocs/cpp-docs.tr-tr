@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f2211137361d9de86397c333e51abf0a903ff67
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 56d49fe95dca7861b18d417dcd6049a12776e8d2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33227440"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057847"
 ---
 # <a name="compiler-error-c2572"></a>Derleyici Hatası C2572
-'class::member': yeniden tanımlama varsayılan parametre: parametre param  
-  
- Varsayılan parametreleri tanımlanamaz. Sol tanımsız başka bir değer parametresi için varsayılan parametre gerekiyorsa.  
-  
- Aşağıdaki örnek C2572 oluşturur:  
-  
-```  
-// C2572.cpp  
-// compile with: /c  
-void f(int i = 1);   // function declaration  
-  
-// function definition  
-void f(int i = 1) {}   // C2572  
-  
-// try the following line instead  
-// void f(int i) {}  
+
+'class::member': Varsayılan parametrenin yeniden tanımlanması: parametre param
+
+Varsayılan parametreleri tanımlanamaz. Sol tanımsız parametresi için varsayılan parametre başka bir değer gerekiyorsa.
+
+Aşağıdaki örnek, C2572 oluşturur:
+
+```
+// C2572.cpp
+// compile with: /c
+void f(int i = 1);   // function declaration
+
+// function definition
+void f(int i = 1) {}   // C2572
+
+// try the following line instead
+// void f(int i) {}
 ```

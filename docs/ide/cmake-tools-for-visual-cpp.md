@@ -1,7 +1,7 @@
 ---
 title: Visual C++'da CMake projeleri | Microsoft Docs
 ms.custom: ''
-ms.date: 04/28/2018
+ms.date: 09/17/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0e7852ad3fbd88b815aea8266bafc2879494d8a
-ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
+ms.openlocfilehash: c107fff98a322664ba38e0b57be59c743b464df8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900673"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060362"
 ---
 # <a name="cmake-projects-in-visual-c"></a>Visual C++'da CMake projeleri
 
@@ -64,7 +64,7 @@ Herhangi bir sayıda CMake projelerini içeren klasörleri açabilirsiniz. Visua
 
 ## <a name="import-an-existing-cache"></a>Mevcut bir önbelleğe alma
 
-Var olan bir CMakeCache.txt dosyasını içe aktardığınızda, Visual Studio otomatik olarak özelleştirilmiş değişkenleri ayıklar ve bunları temel alan önceden doldurulmuş bir CMakeSettings.json dosyasına oluşturur. Özgün önbellek herhangi bir şekilde değiştirilmez ve hala komut satırından veya oluşturmak için kullanılan herhangi bir aracı veya IDE ile kullanılabilir. Projenin kök CMakeLists.txt yanı sıra yeni bir CMakeSettings.json dosyasına yerleştirilir. Visual Studio oluşturur, yeni bir önbellek temel ayarları dosyası.  
+Mevcut bir CMakeCache.txt dosyasını içe aktardığınızda, Visual Studio otomatik olarak özelleştirilmiş değişkenleri ayıklar ve önceden doldurulmuş oluşturur [CMakeSettings.json](#cmake_settings) dosya tabanlı bunlar üzerinde. Özgün önbellek herhangi bir şekilde değiştirilmez ve hala komut satırından veya oluşturmak için kullanılan herhangi bir aracı veya IDE ile kullanılabilir. Projenin kök CMakeLists.txt yanı sıra yeni bir CMakeSettings.json dosyasına yerleştirilir. Visual Studio oluşturur, yeni bir önbellek temel ayarları dosyası.  
 
 
 **Visual Studio 2017 sürüm 15.7 ve üzeri**: otomatik önbellek oluşturma işleminde geçersiz kılabilirsiniz **araçları | Seçenekleri | CMake | Genel** iletişim.
@@ -218,11 +218,27 @@ Ninja, esneklik ve işlevi yerine hızlı derlemeler hızları için tasarlandı
 Visual Studio Oluşturucu CMakeSettings.json ana menüden seçerek açın **CMake | CMake ayarlarını değiştir**. "Ninja" silin ve "V" yazın. Bu, istediğiniz Oluşturucu seçmenize olanak sağlayan IntelliSense etkinleştirir.
 
 1. **buildRoot**: eşlendiği **-DCMAKE_BINARY_DIR** geçin ve CMake önbelleği oluşturulacağı belirtir. Klasör mevcut değilse oluşturulur.
-1. **değişkenleri**: bir ad-değer çifti olarak geçirilen CMake değişkenlerinin içeren **-D**_adı_**=**_değeri_ CMake için. CMake projesi derleme Yönergeleriniz eklenmesi hiçbir değişkene doğrudan CMake önbellek dosyası belirtirseniz, bunları burada yerine eklemeniz önerilir.
+1. **değişkenleri**: bir ad-değer çifti olarak geçirilen CMake değişkenlerinin içeren **-D**_adı_**=**_değeri_ CMake için. CMake projesi derleme Yönergeleriniz eklenmesi hiçbir değişkene doğrudan CMake önbellek dosyası belirtirseniz, bunları burada yerine eklemeniz önerilir. Aşağıdaki örnek, ad-değer çiftlerini belirtin gösterilmektedir:
+
+```json
+
+"variables": [
+    {
+      "name": "CMAKE_CXX_COMPILER",
+      "value": "C:/Program Files (x86)/Microsoft Visual Studio/157/Enterprise/VC/Tools/MSVC/14.14.26428/bin/HostX86/x86/cl.exe"
+    },
+    {
+      "name": "CMAKE_C_COMPILER",
+      "value": "C:/Program Files (x86)/Microsoft Visual Studio/157/Enterprise/VC/Tools/MSVC/14.14.26428/bin/HostX86/x86/cl.exe"
+    }
+  ]
+
+```
+
 1. **cmakeCommandArgs**: istediğiniz CMake.exe için geçirilecek herhangi ek anahtarlar belirtir.
-1. **configurationType**: Seçili Oluşturucu için derleme yapılandırması türü tanımlar. Şu anda desteklenen değerler şunlardır: "Debug", "MinSizeRel", "Sürüm" ve "RelWithDebInfo".
-1. **ctestCommandArgs**: testler çalıştırıldığında Ctest'e geçirilecek ek anahtarları belirtir.
-1. **buildCommandArgs**: temel alınan geçirilecek ek anahtarlar derleme sistemi belirtir. Örneğin, Ninja oluşturucusunu kullanırken - v geçirme komut satırları çıkış Ninja zorlar.
+2. **configurationType**: Seçili Oluşturucu için derleme yapılandırması türü tanımlar. Şu anda desteklenen değerler şunlardır: "Debug", "MinSizeRel", "Sürüm" ve "RelWithDebInfo".
+3. **ctestCommandArgs**: testler çalıştırıldığında Ctest'e geçirilecek ek anahtarları belirtir.
+4. **buildCommandArgs**: temel alınan geçirilecek ek anahtarlar derleme sistemi belirtir. Örneğin, Ninja oluşturucusunu kullanırken - v geçirme komut satırları çıkış Ninja zorlar.
 
 ### <a name="environment-variables"></a>Ortam değişkenleri
 

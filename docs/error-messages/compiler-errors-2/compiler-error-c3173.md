@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef35c534ac834779da15fce99e8c82b94bd445e4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 21a02ae1fcf4aff9636445979a81ef0a02ab5cb1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248081"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053030"
 ---
 # <a name="compiler-error-c3173"></a>Derleyici Hatası C3173
-sürüm uyuşmazlığı IDL birleştirme  
-  
- Bu hata, bir nesne dosyası Derleyici önceki bir sürümü ile oluşturuldu katıştırılmış IDL içerdiğinde oluşur. Derleyici .obj dosyaları ekli IDL içeriği oluşturmak için kullanılan aynı derleyici katıştırılmış IDL birleştirmek için kullanılan aynı derleyici olduğundan emin olmak için bir sürüm numarası kodlar.  
-  
- Visual C++ yüklemenizi, yayımlanan en son sürümü tüm araçlardır şekilde güncelleştirin.
+
+idl birleştirmede sürüm uyuşmazlığı
+
+Bir nesne dosyası derleyicinin önceki bir sürümüyle oluşturulmuş katıştırılmış IDL içerdiğinde, bu hata oluşur. Derleyici, .obj dosyalarında katıştırılmış IDL içeriği oluşturmak için kullanılan aynı derleyici katıştırılmış IDL birleştirmek için kullanılan derleyicinin aynı olduğundan emin olmak için bir sürüm numarası kodlar.
+
+Tüm Araçlar yayımlanan en son sürümü, böylece Visual C++ yüklemenizi güncelleştirin.

@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b870ddd8bb162f4f65bd3200c397f912249304b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9f5914af21ec780167c45334829a5d6517cf3662
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228314"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052991"
 ---
 # <a name="compiler-error-c2570"></a>Derleyici Hatası C2570
-'tanımlayıcısı': UNION temel sınıflar sahip olamaz  
-  
- UNION, sınıf, yapı veya birleşim türer. Bu duruma izin verilmez. Türetilmiş bir tür bir sınıf veya yapı bunun yerine bildirin.  
-  
- Aşağıdaki örnek C2570 oluşturur:  
-  
-```  
-// C2570.cpp  
-// compile with: /c  
-class base {};  
-union hasPubBase : public base {};   // C2570  
-union hasNoBase {};   // OK  
+
+'identifier': birleşimin taban sınıfları olamaz
+
+UNION, sınıf, yapı veya birleşim türetilir. Buna izin verilmez. Türetilmiş bir tür bir sınıf veya yapı bunun yerine bildirin.
+
+Aşağıdaki örnek C2570 oluşturur:
+
+```
+// C2570.cpp
+// compile with: /c
+class base {};
+union hasPubBase : public base {};   // C2570
+union hasNoBase {};   // OK
 ```

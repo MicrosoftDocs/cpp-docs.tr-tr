@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 555d6d30f78c82e4c37e9fd5a047f62018b3d3d7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6f2a672b8329bc3167452ec5e3d1d76f19161bf6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226320"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055968"
 ---
 # <a name="compiler-error-c2510"></a>Derleyici Hatası C2510
-'tanımlayıcısı': sol '::' sınıfı/struct/UNION olmalıdır  
-  
- Sınıf, yapı veya birleşim adı kapsam çözümü işleci sol tarafında görünür olmalıdır (`::`) işleci.
+
+'identifier': sol '::' bir sınıf/yapı/birleşim olmalıdır
+
+Bir sınıf, yapı veya birleşim adı kapsam çözümleme işlecinin sol tarafında yer almalıdır (`::`) işleci.

@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53e89dd422b1289d926ab04a0f17ae4d6185d19d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7bb3526f537a2eceb006f6af9e9b0faba44bf9cf
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33270823"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058711"
 ---
 # <a name="compiler-error-c3909"></a>Derleyici Hatası C3909
-aWinRT veya yönetilen olay bildirimi bir WinRT veya yönetilen türü olmalıdır  
-  
- Bir Windows çalışma zamanı veya yönetilen olayın yerel tür bildirildi. Bu hatayı düzeltmek için Windows çalışma zamanı türleri veya yönetilen türler olay bildirin.  
-  
- Daha fazla bilgi için bkz: [olay](../../windows/event-cpp-component-extensions.md).  
-  
- Aşağıdaki örnek C3909 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C3909.cpp  
-// compile with: /clr /c  
-delegate void H();  
-class X {  
-   event H^ E;   // C3909 - use ref class X instead  
-};  
-  
-ref class Y {  
-   static event H^ E {  
-      void add(H^) {}  
-      void remove( H^ h ) {}  
-      void raise( ) {}  
-   }  
-};  
+
+aWinRT veya yönetilen bir olay bildirimi bir WinRT veya yönetilen türünde olmalıdır
+
+Bir Windows çalışma zamanı olayı veya yönetilen bir olay, bir yerel türe bildirildi. Bu hatayı düzeltmek için Windows çalışma zamanı türleri ya da yönetilen türler olayları bildirin.
+
+Daha fazla bilgi için [olay](../../windows/event-cpp-component-extensions.md).
+
+Aşağıdaki örnek, C3909 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C3909.cpp
+// compile with: /clr /c
+delegate void H();
+class X {
+   event H^ E;   // C3909 - use ref class X instead
+};
+
+ref class Y {
+   static event H^ E {
+      void add(H^) {}
+      void remove( H^ h ) {}
+      void raise( ) {}
+   }
+};
 ```

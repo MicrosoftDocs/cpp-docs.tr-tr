@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ad83fecfe4df211cb7c5f301626454b5d2c9e47
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4c133748f95846160e1387e31e023d9ce459b281
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298775"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055282"
 ---
 # <a name="linker-tools-error-lnk1201"></a>Bağlayıcı Araçları Hatası LNK1201
-Program veritabanı için 'filename'; yazılırken hata oluştu yetersiz disk alanı, geçersiz bir yol veya yetersiz ayrıcalık olup olmadığını denetleyin  
-  
- BAĞLANTI, çıktı dosyası için program veritabanı (PDB) dosyasına yazılamadı.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Dosya bozuk olabilir. Yeniden bağlama ve PDB dosya silin.  
-  
-2.  Dosyayı yazmak için yeterli disk alanı yok.  
-  
-3.  Sürücü büyük olasılıkla bir ağ sorunu nedeniyle kullanılabilir değil.  
-  
-4.  Hata ayıklayıcı bağlantı oluşturmaya çalıştığınız programın etkin değil.  
-  
-5.  Yığın alanı kalmadı.  Bkz: [C1060](../../error-messages/compiler-errors-1/fatal-error-c1060.md) daha fazla bilgi için.
+
+'filename'; program veritabanına yazılırken hata oluştu yetersiz disk alanı, geçersiz bir yol veya yetersiz ayrıcalık denetimi
+
+Çıkış dosyası için program veritabanı (PDB) bağlantı yazılamadı.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Dosya bozuk olabilir. Yeniden Bağla ve PDB dosyasını silin.
+
+1. Dosya yazmak için yeterli disk alanı.
+
+1. Sürücü, büyük olasılıkla bir ağ sorunu nedeniyle kullanılabilir değil.
+
+1. Hata ayıklayıcı bağlantı oluşturmaya çalıştığınız programın etkin değil.
+
+1. Yığın alanı kalmadı.  Bkz: [C1060](../../error-messages/compiler-errors-1/fatal-error-c1060.md) daha fazla bilgi için.

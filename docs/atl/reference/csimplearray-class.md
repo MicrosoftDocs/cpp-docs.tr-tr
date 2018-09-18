@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd3e6809a8204b9a2380e896e4e458512e79fa2b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 5603327e7bdc32d9b760fc25160543c682e6f4f4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766668"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054512"
 ---
 # <a name="csimplearray-class"></a>CSimpleArray sınıfı
 
@@ -40,16 +40,16 @@ Bu sınıf, bir Basit dizi yönetmek için yöntemler sağlar.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T, class TEqual = CSimpleArrayEqualHelper<T>>  
+template <class T, class TEqual = CSimpleArrayEqualHelper<T>>
 class CSimpleArray
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Dizide saklamak için veri türü.
 
-*TEqual*  
+*TEqual*<br/>
 Türü öğeler için eşitlik testi tanımlamak bir nitelik nesnesi *T*.
 
 ## <a name="members"></a>Üyeler
@@ -107,7 +107,7 @@ BOOL Add(const T& t);
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Diziye eklenecek öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -123,13 +123,13 @@ Diziye eklenecek öğe.
 Dizi nesnesi için oluşturucu.
 
 ```
-CSimpleArray(const CSimpleArray<T, TEqual>& src);  
+CSimpleArray(const CSimpleArray<T, TEqual>& src);
 CSimpleArray();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*src*  
+*src*<br/>
 Varolan bir `CSimpleArray` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -158,7 +158,7 @@ int Find(const T& t) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Aranacak öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -203,7 +203,7 @@ T& operator[](int nindex);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*  
+*nIndex*<br/>
 Öğenin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -226,7 +226,7 @@ CSimpleArray<T, TEqual>
 
 ### <a name="parameters"></a>Parametreler
 
-*src*  
+*src*<br/>
 Kopyalamak için dizi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -251,7 +251,7 @@ BOOL Remove(const T& t);
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Diziden kaldırılacak öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -284,7 +284,7 @@ BOOL RemoveAtint nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*  
+*nIndex*<br/>
 Kaldırmak için öğeyi işaret eden dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -307,10 +307,10 @@ BOOL SetAtIndex(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*  
+*nIndex*<br/>
 Değiştirilecek öğenin dizini.
 
-*T*  
+*T*<br/>
 Belirtilen öğe için atanacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri

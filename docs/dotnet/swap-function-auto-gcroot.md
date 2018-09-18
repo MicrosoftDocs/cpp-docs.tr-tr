@@ -18,15 +18,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 308f909e2a863f2d08feb6ff688cddf61b0347b6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1c653130079870c885e5bb758a0ae2d953cca5b6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165158"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052185"
 ---
 # <a name="swap-function-autogcroot"></a>swap İşlevi (auto_gcroot)
-Değiştirir biri arasında nesneleri `auto_gcroot` ve başka bir.  
+Bir arasında nesneleri değiştirir `auto_gcroot` ve başka bir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,11 +39,11 @@ void swap(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_left`  
- Bir `auto_gcroot`.  
+*_left*<br/>
+Bir `auto_gcroot`.  
   
- `_right`  
- Başka bir `auto_gcroot`.  
+*_right*<br/>
+Başka bir `auto_gcroot`.  
   
 ## <a name="example"></a>Örnek  
   
@@ -73,7 +73,7 @@ s1 = 'string two', s2 = 'string one'
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\auto_gcroot.h >  
+ **Üst bilgi dosyası** \<msclr\auto_gcroot.h >  
   
  **Namespace** msclr  
   

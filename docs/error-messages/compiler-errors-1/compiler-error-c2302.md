@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4484e5cb76995a8bd75eeaf83d3d28383fdf900
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 482612aaddc659d0f3c07746051ac93b1ff362de
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168194"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055721"
 ---
 # <a name="compiler-error-c2302"></a>Derleyici Hatası C2302
-Sol '. ~ tanımlayıcısı ' struct/sınıfı/union türünde olmalıdır  
-  
- Sol ifade nokta (.) işlecinin sınıf, yapı veya birleşim değil.
+
+Sol '. ~ tanımlayıcısı ' sınıf/yapı/birleşim türünde olmalıdır
+
+Sol ifade nokta (.) işleci, sınıf, yapı veya birleşim değil.

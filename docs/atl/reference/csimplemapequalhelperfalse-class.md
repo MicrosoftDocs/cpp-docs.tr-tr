@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bfa615af00535d899533f21abf933f35bcd5bbf
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f26deca76ff887eff2cd0a2c33dad94fbdbff8ee
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43768001"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052750"
 ---
 # <a name="csimplemapequalhelperfalse-class"></a>CSimpleMapEqualHelperFalse sınıfı
 
@@ -33,7 +33,7 @@ Bu sınıf için Yardımcısı, [CSimpleMap](../../atl/reference/csimplemap-clas
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class TKey, class TVal>  
+template <class TKey, class TVal>
 class CSimpleMapEqualHelperFalse
 ```
 
@@ -66,10 +66,10 @@ static bool IsEqualKey(const TKey& k1, const TKey& k2);
 
 ### <a name="parameters"></a>Parametreler
 
-*K1*  
+*K1*<br/>
 İlk anahtar.
 
-*K2*  
+*K2*<br/>
 İkinci anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -98,5 +98,5 @@ Bu yöntem her zaman false değerini döndürür ve çağıracak `ATLASSERT` ba�
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CSimpleMapEqualHelper sınıfı](../../atl/reference/csimplemapequalhelper-class.md)   
+[CSimpleMapEqualHelper Sınıfı](../../atl/reference/csimplemapequalhelper-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

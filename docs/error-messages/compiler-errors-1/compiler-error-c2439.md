@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33bfe8ebf00850a54020b2a3f21159daf28b7224
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 419bf7be45a1383135d0231cd059837e1fe62729
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225695"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058421"
 ---
 # <a name="compiler-error-c2439"></a>Derleyici Hatası C2439
-'tanımlayıcısı': üye başlatılamadı  
-  
- Bir sınıf, yapı veya bileşim üyesi başlatılamaz.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Bir dolaylı temel sınıf veya yapı başlatılmaya çalışılıyor.  
-  
-2.  Devralınan bir sınıf veya yapı üyesi başlatılmaya çalışılıyor. Devralınmış bir üyeyi sınıf veya yapı oluşturucusu tarafından başlatılması gerekir.
+
+'identifier': üye başlatılamadı
+
+Bir sınıf, yapı veya birleşim üyesi başlatılamıyor.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Bir dolaylı temel sınıf veya yapı başlatmaya çalışıyor.
+
+1. Devralınmış bir üyeyi bir sınıfın veya yapının başlatılmaya çalışılırken. Devralınmış bir üyeyi sınıfın veya yapının Oluşturucu tarafından başlatılması gerekir.

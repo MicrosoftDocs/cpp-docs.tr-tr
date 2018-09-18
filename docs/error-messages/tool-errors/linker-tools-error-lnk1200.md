@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab32939c55dce5e27f907f3d23e639b24741cdc3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 03ecd51142bf30230b6b177a36e007345e93bf2c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298830"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059322"
 ---
 # <a name="linker-tools-error-lnk1200"></a>Bağlayıcı Araçları Hatası LNK1200
-Program Veritabanı 'filename' okunurken hata oluştu  
-  
- Program veritabanı (PDB) okunamadı.  
-  
- Bu hata, dosya bozulması nedeniyle oluşabilir.  
-  
- Varsa `filename` PDB olan bir nesne dosyası için dosya nesnesini kullanarak yeniden derleyin [/zı](../../build/reference/z7-zi-zi-debug-information-format.md).  
-  
- Varsa `filename` PDB ana çıktı dosyası için ise ve artımlı bir bağlantı sırasında bu bir hata oluştu, PDB silip yeniden bağla.
+
+Program Veritabanı 'filename' okunurken hata oluştu
+
+Program veritabanı (PDB) okunamadı.
+
+Dosya bozulması nedeniyle bu hatayı neden olabilir.
+
+Varsa `filename` PDB olan nesne dosyası kullanarak bir nesne dosyası için derlemeniz [/zi](../../build/reference/z7-zi-zi-debug-information-format.md).
+
+Varsa `filename` ana çıkış dosyası için PDB olduğu ve bir artımlı bağlantı sırasında bu hata oluştu, PDB silip yeniden bağlayın.

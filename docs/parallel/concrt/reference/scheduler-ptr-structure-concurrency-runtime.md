@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99c2ed2f8446b94d606c907f4d030c417e21fc01
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: dd15238408f90f268a5fea96635136077c795779
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465819"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059114"
 ---
 # <a name="schedulerptr-structure"></a>scheduler_ptr yapısı
 Bir işaretçi için bir Zamanlayıcı'yı temsil eder. Shared_ptr veya yalnızca bir düz başvuru ham işaretçiyi kullanarak paylaşılan bir kullanım ömrünün belirtilmesine izin vermek için bu sınıfı var.  
@@ -97,8 +97,11 @@ Açık scheduler_ptr (_In_opt_ pScheduler scheduler_interface *);
 ```  
   
 ### Parameters  
- `scheduler`  
- `pScheduler`  
+*scheduler*<br/>
+The scheduler to convert.
+
+*pScheduler*<br/>
+The scheduler pointer to convert.
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)

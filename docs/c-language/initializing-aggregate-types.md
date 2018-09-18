@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bfd0715acd7eb18c4ccc83d496a1e9a98084fdf
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8a58338d980db5acd8f41c71e23c37c1700a0761
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757955"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055123"
 ---
 # <a name="initializing-aggregate-types"></a>Toplama Türlerini Başlatma
 
@@ -32,12 +32,12 @@ Bir *toplama* türü, bir yapı, birlik veya dizi türü. Bir toplama türünü 
 ## <a name="syntax"></a>Sözdizimi
 
 *Başlatıcı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**{***başlatıcı listesi***}** / * için toplu başlatma     \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**{***başlatıcı listesi***,}** 
+&nbsp;&nbsp;&nbsp;&nbsp;**{***başlatıcı listesi***}** / * için toplu başlatma \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**{***başlatıcı listesi***,}**
 
 *Başlatıcı listesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Başlatıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Başlatıcı listesi***,***Başlatıcı* 
+&nbsp;&nbsp;&nbsp;&nbsp;*Başlatıcı listesi***,***Başlatıcı*
 
 *Başlatıcı listesi* başlatıcılar virgülle ayrılmış listesidir. Listedeki her Başlatıcısı sabit bir ifade ya da bir başlatıcı listesi değil. Bu nedenle, başlatıcı listeleri yuvalanabilir. Bu formu, bu bölümdeki örneklerde gösterildiği gibi bir toplama türü üyeleri toplama başlatmak için yararlı olur. Ancak, tek bir ifade otomatik tanımlayıcı için Başlatıcı ise sabit bir ifade olmamalıdır; Bu yalnızca uygun bir tür tanımlayıcı atama için sahip olması gerekir.
 
@@ -109,13 +109,13 @@ triplet nlist[2][3] =
 
 Bu örnekte, `nlist` yapıları 2 ile 3 bir dizi olarak üç üyesi olan her yapısı bildirilir. Başlatma 1 satırının ilk satırının değerleri atar `nlist`gibi:
 
-1.  1. satırda ilk sol ayraç derleyici ilk toplama üyesinin başlatmanın sinyalleri `nlist` (diğer bir deyişle, `nlist[0]`) başlangıcıdır.
+1. 1. satırda ilk sol ayraç derleyici ilk toplama üyesinin başlatmanın sinyalleri `nlist` (diğer bir deyişle, `nlist[0]`) başlangıcıdır.
 
-2.  İkinci bir sol ayraç ilk toplama üyesinin başlatmanın gösterir `nlist[0]` (diğer bir deyişle, yapıda `nlist[0][0]`) başlangıcıdır.
+1. İkinci bir sol ayraç ilk toplama üyesinin başlatmanın gösterir `nlist[0]` (diğer bir deyişle, yapıda `nlist[0][0]`) başlangıcıdır.
 
-3.  İlk sağ ayraç sonlandırır yapısının başlatma `nlist[0][0]`; sonraki sol ayraç başlatılıyor `nlist[0][1]`.
+1. İlk sağ ayraç sonlandırır yapısının başlatma `nlist[0][0]`; sonraki sol ayraç başlatılıyor `nlist[0][1]`.
 
-4.  İşlem başlangıcına doğru kapanış ayracı sona ereceği satırın sonuna kadar devam eder `nlist[0]`.
+1. İşlem başlangıcına doğru kapanış ayracı sona ereceği satırın sonuna kadar devam eder `nlist[0]`.
 
 Satır 2 ikinci satıra değerleri atar `nlist` benzer bir şekilde. 1. ve 2 numaralı satırda başlatıcılar kapsayan küme ayraçlarının dış ayarlar gerekli olduğunu unutmayın. Dış küme ayraçları atlar, aşağıdaki yapı hataya neden olur:
 

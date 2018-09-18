@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef9c608f19be28dbbeeca89c5f6672149e0ac4f8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e7e3b2d7bb76989b2028846efee6b18d10e1b0ad
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236085"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059621"
 ---
 # <a name="compiler-error-c2811"></a>Derleyici Hatası C2811
-'type1': 'type2' bir ref devral olamaz sınıfı yalnızca devralınan bir ref sınıf veya arabirim sınıfı  
-  
- Yönetilmeyen bir sınıfı için yönetilen bir sınıfın temel sınıf olarak kullanma girişimi.  
-  
- Aşağıdaki örnek C2811 oluşturur:  
-  
-```  
-// C2811.cpp  
-// compile with: /clr /c  
-struct S{};  
-ref struct T {};  
-ref class C : public S {};   // C2811  
-ref class D : public T {};   // OK  
+
+'type1': ref 'type2' devralınamıyor çünkü sınıf yalnızca devralınan bir başvuru sınıfı veya arabirim sınıfı
+
+Yönetilmeyen bir sınıf, yönetilen bir sınıf için temel sınıf olarak kullanma girişimi.
+
+Aşağıdaki örnek, C2811 oluşturur:
+
+```
+// C2811.cpp
+// compile with: /clr /c
+struct S{};
+ref struct T {};
+ref class C : public S {};   // C2811
+ref class D : public T {};   // OK
 ```

@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19f991fd7449eda11651dcca4adc73190e276e35
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d9e48d827c58ebf41ce3cf3862cbfbeaa494cf76
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226081"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055955"
 ---
 # <a name="fatal-error-c1103"></a>Önemli hata C1103
-önemli hata ProgID içeri aktarma: 'iletisi  
-  
- Derleyici tür kitaplığını içeri aktarma bir sorun algıladı.  Örneğin, olamaz bir tür kitaplığı ile ProgID belirtin ve ayrıca belirtin `no_registry`.  
-  
- Daha fazla bilgi için bkz: [#import yönergesi](../../preprocessor/hash-import-directive-cpp.md).  
-  
- Aşağıdaki örnek C1103 üretir:  
-  
-```  
-// C1103.cpp  
-#import "progid:a.b.id.1.5" no_registry auto_search   // C1103  
+
+önemli hata program kimliği içeri aktarılırken: 'message'
+
+Derleyici, bir tür kitaplığı içeri aktarılırken bir sorun algıladı.  Örneğin, edemez bir tür kitaplığı ile program kimliği belirtin ve ayrıca belirtin `no_registry`.
+
+Daha fazla bilgi için [#import yönergesi](../../preprocessor/hash-import-directive-cpp.md).
+
+Aşağıdaki örnek, C1103 oluşturur:
+
+```
+// C1103.cpp
+#import "progid:a.b.id.1.5" no_registry auto_search   // C1103
 ```

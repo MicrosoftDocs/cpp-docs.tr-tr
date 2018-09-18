@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 490f2865f8d3518facbaa86f4fa81932305e508d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 175b8fcbabbb0b16a69f20025e42939a38ef8bf0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319861"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056865"
 ---
 # <a name="resource-compiler-fatal-error-rw1009"></a>Kaynak Derleyicisi Önemli Hatası RW1009
-Kaynak adı oluşturulurken hata oluştu  
-  
- Belirtilen .res dosyası oluşturulamadı. Bu bir salt okunur sürücüde oluşturuluyor değil emin olun. /V olup dosyası oluşturuldu çıkışı bulmak için kullanın.
+
+Kaynak adı oluşturulurken hata oluştu
+
+Belirtilen bir .res dosyası oluşturulamadı. Salt okunur bir sürücüde oluşturulması değil emin olun. /V olup dosyasının oluşturulduğunu kullanıma bulmak için kullanın.

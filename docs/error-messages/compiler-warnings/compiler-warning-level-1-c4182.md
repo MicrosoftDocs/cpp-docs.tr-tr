@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79e86076a9d8218d08bd7437e2a06878b6ee91ff
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 80c0cdac45238a4734b02d34f4c540c62a2f0c09
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33278187"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056579"
 ---
 # <a name="compiler-warning-level-1-c4182"></a>Derleyici Uyarısı (düzey 1) C4182
-\#içeren iç içe geçirme düzeyi 'numara' derin; olası bir sonsuz özyineleme  
-  
- Derleyici alana öbek üzerinde sayısı nedeniyle çalıştıran iç içe geçmiş dosyaları içerir. Başka bir dahil etme dosyasından dahil edildiğinde bir içerme dosyası yer alıyor.  
-  
- Bu ileti bilgi amaçlıdır ve hata önündeki [C1076](../../error-messages/compiler-errors-1/fatal-error-c1076.md).
+
+\#içeren iç içe geçme düzeyi 'number' derinliğinde; sonsuz özyineleme olasılığı
+
+Derleyici yığında yer kalmadığı, sayısı nedeniyle çalıştı. iç içe geçmiş dosyaları içerir. Başka ekleme dosyasından eklendiğinde, bir dahil etme dosyasından yer alıyor.
+
+Bu ileti, bilgi amaçlıdır ve hata önündeki [C1076](../../error-messages/compiler-errors-1/fatal-error-c1076.md).

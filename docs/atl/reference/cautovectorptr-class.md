@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: daa4a34915547b726494ea9f461b7eba24c617dd
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8d60a7f40fc90d5586d7a8a7d41cab81a4d97c85
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755729"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054486"
 ---
 # <a name="cautovectorptr-class"></a>CAutoVectorPtr sınıfı
 
@@ -40,13 +40,13 @@ Bu sınıf, vektör kullanarak yeni bir akıllı işaretçi nesnesinin temsil ed
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<typename T>  
+template<typename T>
 class CAutoVectorPtr
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-`T`  
+*T*<br/>
 İşaretçi türü.
 
 ## <a name="members"></a>Üyeler
@@ -82,7 +82,7 @@ class CAutoVectorPtr
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, oluşturmak ve kapsam dışına düştüğünde otomatik olarak kaynakları boşaltma tarafından bellek sızıntılarını karşı korunmasına yardımcı olacak akıllı bir işaretçi yönetmek için yöntemler sağlar. `CAutoVectorPtr` benzer `CAutoPtr`, tek fark, olan `CAutoVectorPtr` kullanan [yeni vektör&#91; &#93; ](../../standard-library/new-operators.md#op_new_arr) ve [vektör silme&#91; &#93; ](../../standard-library/new-operators.md#op_delete_arr) ayırmak ve belleği boşaltmak için C++ yerine **yeni** ve **Sil** işleçleri. Bkz: [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) , koleksiyon sınıfları `CAutoVectorPtr` gereklidir.  
+Bu sınıf, oluşturmak ve kapsam dışına düştüğünde otomatik olarak kaynakları boşaltma tarafından bellek sızıntılarını karşı korunmasına yardımcı olacak akıllı bir işaretçi yönetmek için yöntemler sağlar. `CAutoVectorPtr` benzer `CAutoPtr`, tek fark, olan `CAutoVectorPtr` kullanan [yeni vektör&#91; &#93; ](../../standard-library/new-operators.md#op_new_arr) ve [vektör silme&#91; &#93; ](../../standard-library/new-operators.md#op_delete_arr) ayırmak ve belleği boşaltmak için C++ yerine **yeni** ve **Sil** işleçleri. Bkz: [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) , koleksiyon sınıfları `CAutoVectorPtr` gereklidir.
 
 Bkz: [CAutoPtr](../../atl/reference/cautoptr-class.md) akıllı işaretçi sınıfının kullanma örneği için.
 
@@ -100,7 +100,7 @@ bool Allocate(size_t nElements) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nElements*  
+*nElements*<br/>
 Dizideki öğelerin sayısı
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -121,7 +121,7 @@ void Attach(T* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 `CAutoVectorPtr` Nesne, işaretçi sahipliğini alır.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -142,7 +142,7 @@ CAutoVectorPtr(CAutoVectorPtr<T>& p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Var olan bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -211,7 +211,7 @@ CAutoVectorPtr<T>& operator= (CAutoVectorPtr<T>& p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -226,7 +226,7 @@ Atama işleci ayırır `CAutoVectorPtr` herhangi bir geçerli işaretçi nesnede
 
 Atama işleci.
 
-```  
+```
 operator T*() const throw();
 ```
 
@@ -236,5 +236,5 @@ Sınıf şablonunda tanımlanan nesne veri türü bir işaretçi döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CAutoPtr sınıfı](../../atl/reference/cautoptr-class.md)   
+[CAutoPtr Sınıfı](../../atl/reference/cautoptr-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

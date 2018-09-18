@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f61400ad53d6fcc208b22067bbce62e886d0299
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ab575cc03905cc4405c221e27eec5b36776b4a0a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322867"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056982"
 ---
 # <a name="resource-compiler-error-rc2171"></a>Kaynak Derleyicisi Hatası RC2171
-Bilinmeyen DIB üstbilgi biçimi  
-  
- Bit eşlem üstbilgi değil bir **BITMAPCOREHEADER** veya **BITMAPINFOHEADER** yapısı.
+
+Bilinmeyen DIB üstbilgi biçimi
+
+Bit eşlem üst bilgisi değil bir **BITMAPCOREHEADER** veya **BITMAPINFOHEADER** yapısı.

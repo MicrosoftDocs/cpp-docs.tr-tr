@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd38ccc8a4f812a458073c429d83cebe5dff151b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5a346f6b2abce22a1238a1f9bc6f8ea9f961cb43
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250022"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059073"
 ---
 # <a name="compiler-error-c3277"></a>Derleyici Hatası C3277
-Yönetilmeyen enum 'enum' yönetilen 'type' tanımlanamıyor  
-  
- Numaralandırma yanlış bir yönetilen türü içinde tanımlandı.  
-  
- Aşağıdaki örnek C3277 oluşturur:  
-  
-```  
-// C3277a.cpp  
-// compile with: /clr  
-ref class A  
-{  
-   enum E {e1,e2};   // C3277  
-   // try the following line instead  
-   // enum class E {e1,e2};  
-};  
-  
-int main()  
-{  
-}  
-```  
+
+yönetilmeyen bir enum 'enum' yönetilen 'type' içinde tanımlanamaz
+
+Bir numaralandırma yanlış yönetilen bir tür içinde tanımlanmıştır.
+
+Aşağıdaki örnek, C3277 oluşturur:
+
+```
+// C3277a.cpp
+// compile with: /clr
+ref class A
+{
+   enum E {e1,e2};   // C3277
+   // try the following line instead
+   // enum class E {e1,e2};
+};
+
+int main()
+{
+}
+```

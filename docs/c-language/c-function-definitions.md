@@ -22,14 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 265dfe599d4c3586b350787baab5977562326991
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: cbfc7e7bd6a3f2ef727a0cc259f222afad0ab555
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757688"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055240"
 ---
 # <a name="c-function-definitions"></a>C İşlev Tanımları
+
 Bir işlev tanımı işlev türlerini ve sayısını almak için bekliyor parametreler ve dönüş türü adını belirtir. Bir işlev tanımı bir işlev gövdesinin bildirimli kendi yerel değişkenlerin ve işlevin ne yaptığını belirlemek için ifadeleri de içerir.
 
 ## <a name="syntax"></a>Sözdizimi
@@ -73,7 +74,7 @@ Bir tanım parametre listesinde bu söz dizimini kullanır:
 
 *parametre listesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*parametre bildirimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre listesi* **,***parametre bildirimi* 
+&nbsp;&nbsp;&nbsp;&nbsp;*parametre listesi* **,***parametre bildirimi*
 
 *parametre bildirimi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları* *bildirimcisi*<br/>
@@ -83,7 +84,7 @@ Eski stil işlev tanımı parametre listesinde bu söz dizimini kullanır:
 
 *tanımlayıcı listesi*: /\* eski stil işlev tanımları ve bildirimleri \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı listesi* **,***tanımlayıcısı* 
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı listesi* **,***tanımlayıcısı*
 
 İşlev gövdesi için sözdizimi aşağıdaki gibidir:
 
@@ -103,4 +104,5 @@ A *bildirimi* içinde *bildirim listesi* işlev tanımları içeremez bir *depol
 Aşağıdaki bölümlerde [işlev öznitelikleri](../c-language/function-attributes.md), [depolama sınıfı](../c-language/storage-class.md), [dönüş türü](../c-language/return-type.md), [parametreleri](../c-language/parameters.md), ve [işlevgövdesi](../c-language/function-body.md) ayrıntılı işlev tanımının bileşenlerini açıklar.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 [İşlevler](../c-language/functions-c.md)

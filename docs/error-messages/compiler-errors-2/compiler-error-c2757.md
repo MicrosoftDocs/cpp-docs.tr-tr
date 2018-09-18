@@ -16,36 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14a65233ae0ad0a925d0b0d18cbc1b196fa5949a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0ff853ad499a9d50cc1c5c168ac13a570453dcba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33233862"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058015"
 ---
 # <a name="compiler-error-c2757"></a>Derleyici Hatası C2757
-'simgesi': Bu ada sahip bir sembolü zaten var ve bu nedenle bu ad ad alanı adı kullanılamaz  
-  
- Bir ad tanımlayıcısı geçerli derlemede kullanılan simge başvurulan bütünleştirilmiş kodunda zaten kullanılıyor.  
-  
- Aşağıdaki örnek C2757 oluşturur:  
-  
-```  
-// C2757a.cpp  
-// compile with: /clr /LD  
-public ref class Nes {};  
-```  
-  
- Ardından,  
-  
-```  
-// C2757b.cpp  
-// compile with: /clr /c  
-#using <C2757a.dll>  
-  
-namespace Nes {    // C2757  
-// try the following line instead  
-// namespace Nes2 {  
-   public ref class X {};  
-}  
-```  
+
+'symbol': Bu ada sahip bir simge zaten var ve bu nedenle bu adı bir ad alanı adı olarak kullanılamaz
+
+Başvurulan bir derlemede bir ad alanı tanımlayıcısı zaten kullanıldığından geçerli derlemede kullanılan bir simge.
+
+Aşağıdaki örnek, C2757 oluşturur:
+
+```
+// C2757a.cpp
+// compile with: /clr /LD
+public ref class Nes {};
+```
+
+Ardından,
+
+```
+// C2757b.cpp
+// compile with: /clr /c
+#using <C2757a.dll>
+
+namespace Nes {    // C2757
+// try the following line instead
+// namespace Nes2 {
+   public ref class X {};
+}
+```

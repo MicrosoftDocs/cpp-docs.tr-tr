@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f2c51bdc201b364d76f1692db8ee14973c90923f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b8b9e82f8cb24c4635fb64c3ac0a1c82e301c086
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276636"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056500"
 ---
 # <a name="compiler-warning-level-1-c4288"></a>Derleyici Uyarısı (düzey 1) C4288
-kullanılan standart olmayan uzantısı: 'var': for döngüsü denetim değişkeni için-döngüde bildirilen for döngüsü kapsamı dışındadır; kullanılır Dış kapsamdaki bildirimiyle çakışıyor  
-  
- İle derleme yapılırken [/Ze](../../build/reference/za-ze-disable-language-extensions.md) ve **/Zc:forscope-**, bildirilen bir değişken bir **için** döngü sonra kullanıldı [için](../../cpp/for-statement-cpp.md)-döngü kapsamı. C++ dili için bir Microsoft uzantısı kapsamda kalması bu değişkeni sağlar ve C4288 değişkeni ilk bildirimi kullanılmaz anımsatır.  
-  
- Bkz: [/ZC: forscope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) Microsoft uzantısı'nda belirtme hakkında bilgi için **için** döngüleri /Ze ile.  
-  
- Aşağıdaki örnek C4288 oluşturur:  
-  
-```  
-// C4288.cpp  
-// compile with: /W1 /c /Zc:forScope-  
-int main() {  
-   int i = 0;    // not used in this program  
-   for (int i = 0 ; ; ) ;  
-   i++;   // C4288 using for-loop declaration of i  
-}  
+
+Standart olmayan uzantı kullanıldı: 'var': for döngüsünde bildirimi yapılan döngü denetim değişkeni for döngüsü kapsamının dışında; kullanılıyor Dış kapsamdaki bildirimiyle çakışıyor
+
+İle derlerken [/Ze](../../build/reference/za-ze-disable-language-extensions.md) ve **/Zc:forscope-**, içinde bildirilen bir değişken bir **için** döngü sonra kullanıldı [için](../../cpp/for-statement-cpp.md)-döngü kapsamı. C++ dili için bir Microsoft uzantısı kapsamında kalmak bu değişkeni verir ve C4288 değişkenin ilk bildirimi kullanılmaz anımsatır.
+
+Bkz: [/ZC: forscope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) Microsoft uzantısı'nda belirtme hakkında daha fazla bilgi için **için** döngüleri /Ze ile.
+
+Aşağıdaki örnek, C4288 oluşturur:
+
+```
+// C4288.cpp
+// compile with: /W1 /c /Zc:forScope-
+int main() {
+   int i = 0;    // not used in this program
+   for (int i = 0 ; ; ) ;
+   i++;   // C4288 using for-loop declaration of i
+}
 ```

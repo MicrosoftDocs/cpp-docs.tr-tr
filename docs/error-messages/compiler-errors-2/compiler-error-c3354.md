@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b4bcc36580a453932068350f01b53c5f09f2d69
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 40f86702be19259bed7899cdbc5106346d6c6594
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33257363"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058542"
 ---
 # <a name="compiler-error-c3354"></a>Derleyici Hatası C3354
-'function': bir temsilci oluşturmak için kullanılan işlev dönüş türü 'type' olamaz  
-  
- Şu türler için dönüş türü olarak geçersiz bir `delegate`:  
-  
--   İşlev işaretçisi  
-  
--   İşaretçiden üyeye  
-  
--   Üye işlev işaretçisi  
-  
--   Başvuru işlevi  
-  
--   Üye işlevini referansı  
-  
- Aşağıdaki örnek C3354 oluşturur:  
-  
-```  
-// C3354_2.cpp  
-// compile with: /clr /c  
-using namespace System;  
-typedef void ( *VoidPfn )();  
-  
-delegate VoidPfn func(); // C3354  
-// try the following line instead  
-// delegate  void func();  
-```  
+
+'function': temsilci oluşturmak için kullanılan işlev dönüş türü 'type' olamaz
+
+Aşağıdaki türleri için dönüş türleri olarak geçersiz bir `delegate`:
+
+- İşlev işaretçisi
+
+- Üye işaretçisi
+
+- Üye işlev işaretçisi
+
+- Başvuru işlevi
+
+- Üye işlev başvurusu
+
+Aşağıdaki örnek, C3354 oluşturur:
+
+```
+// C3354_2.cpp
+// compile with: /clr /c
+using namespace System;
+typedef void ( *VoidPfn )();
+
+delegate VoidPfn func(); // C3354
+// try the following line instead
+// delegate  void func();
+```

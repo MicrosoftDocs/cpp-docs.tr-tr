@@ -1,5 +1,5 @@
 ---
-title: Depolama sınıfı tanımlayıcısı otomatik | Microsoft Docs
+title: auto depolama sınıfı tanımlayıcısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,17 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4054b723c1e44c94be9d112f6bfbd74db8f857ad
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ca42eb26cc6bb08cd8a05e31b23e004b1cbeb8b2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381379"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057437"
 ---
 # <a name="auto-storage-class-specifier"></a>auto Depolama Sınıfı Tanımlayıcısı
-**Otomatik** depolama sınıfı tanımlayıcısı otomatik bir değişkeni, yerel bir ömre sahip bir değişken bildirir. Bir **otomatik** değişkenidir yalnızca bloğunda görünür, bildirildiği içinde. Bildirimlerini **otomatik** değişkenleri, başlatıcılar, içerebilir, anlatıldığı gibi [başlatma](../c-language/initialization.md). Değişkenlerle itibaren **otomatik** depolama sınıfı başlatılmadı otomatik olarak, bunları bildirme ya da deyimleri bloğu içinde ilk değerleri atamak, ya da açıkça bunları başlatması gerekir. Başlatılmamış değerlerini **otomatik** değişkenlerdir tanımlanmamış. (Bir yerel değişken **otomatik** veya **kaydetmek** depolama sınıfı, her seferinde onu gelirse kapsamında bir başlatıcı verilen başlatılır.)  
-  
- Bir iç **statik** değişkeni (yerel statik değişkenle veya blok kapsamı) tüm dış adresiyle başlatılabilir veya **statik** öğesi, başka bir adres birlikte değil **otomatik**  , çünkü madde adresini bir **otomatik** öğe sabit bir değer değil.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [auto Anahtar Sözcüğü](../cpp/auto-keyword.md)
+
+**Otomatik** depolama sınıfı belirticisi, yerel kullanım ömrüne sahip bir değişken otomatik bir değişken bildirir. Bir **otomatik** değişkendir yalnızca blok içinde görülebilir içinde bildirildiği. Bildirimleri **otomatik** değişkenleri anlatıldığı gibi başlatıcılar içerebilir [başlatma](../c-language/initialization.md). Değişkenler **otomatik** depolama sınıfı otomatik olarak başlatılmadığından, bunları bildirdiğinizde veya içindeki blok içindeki deyimlerde başlangıç değerleri atamanız olduğunda, ya da açıkça bunları başlatmak. Başlatılmamış değerleri **otomatik** değişkenlerdir tanımlanmamış. (Bir yerel değişken **otomatik** veya **kaydetme** depolama sınıfı, her zaman bir başlatıcı verilirse kapsamda açıldığında başlatılır.)
+
+Bir iç **statik** değişken (statik değişkeni yerel veya blok kapsamı) herhangi bir dış adresi ile başlatılabilir veya **statik** öğesi, ancak başka bir **otomatik**  , çünkü madde adresini bir **otomatik** öğesi bir sabit değil.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[auto Anahtar Sözcüğü](../cpp/auto-keyword.md)

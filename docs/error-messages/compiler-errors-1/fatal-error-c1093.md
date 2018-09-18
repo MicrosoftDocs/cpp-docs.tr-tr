@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c736fbb5180edb26eda6a557a4e8e45a3ffc881
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 9bc1e7e3d3996eedd0fe464832c1ee91986e302f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202032"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052666"
 ---
 # <a name="fatal-error-c1093"></a>Önemli hata C1093
 
-> API çağrısı '*işlev adı*'başarısız'*çağrı konumunu*': '*çalışma süresi metni*'  
-  
-.NET işlevi çağrısı başarısız oldu. *Çalışma süresi metni* dize olabilir veya COM çalışma zamanı tarafından sağlanan değil.  
-  
+> API çağrısı '*işlev adı*'başarısız'*çağrı konumunu*': '*çalışma süresi metni*'
+
+.NET işlevi çağrısı başarısız oldu. *Çalışma süresi metni* dize olabilir veya COM çalışma zamanı tarafından sağlanan değil.
+
 Wınerror sistem dosyası sistem hata iletileri hakkında daha fazla bilgi için bkz ve [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage).

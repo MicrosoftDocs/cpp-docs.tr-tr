@@ -16,49 +16,50 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a00da68007834b85846fedf07d2466f1448a5b45
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ad1fc9acabd37ca6c1f9c71a4f8447a8def6bb62
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33242220"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057866"
 ---
 # <a name="compiler-error-c2977"></a>Derleyici Hatası C2977
-'tanımlayıcısı': çok fazla tür bağımsız değişkenleri  
-  
- Bir genel ya da şablon çok fazla sayıda gerçek bağımsız değişkenlere sahiptir. Doğru parametrelerin sayısı bulmak için genel ya da şablon bildirimine bakın.  
-  
- Aşağıdaki örnek C2977 oluşturur:  
-  
-```  
-// C2977.cpp  
-// compile with: /c  
-template<class T, int i>   
-class MyClass {};  
-  
-template MyClass< int , 1, 1 >;   // C2977  
-template MyClass< int , 1 >;   // OK  
-```  
-  
- Ayrıca C2977 genel türler kullanma ortaya çıkabilir:  
-  
-```  
-// C2977b.cpp  
-// compile with: /clr  
-// C2977 expected  
-generic <class T, class U>   
-void f(){}  
-  
-generic <class T>   
-ref struct GC1 {};  
-  
-int main() {  
-   // Delete the following 2 lines to resolve.  
-   GC1<int, char> ^ pgc1;  
-   f<int,int,int>();  
-  
-   // OK  
-   GC1<int> ^ pgc1;  
-   f<int, int>();  
-}  
+
+'identifier': çok fazla tür bağımsız değişkenleri
+
+Genel veya şablon çok fazla sayıda gerçek bağımsız değişkenler var. Doğru parametreleri sayısını bulmak için genel veya şablon bildirimi denetleyin.
+
+Aşağıdaki örnek, C2977 oluşturur:
+
+```
+// C2977.cpp
+// compile with: /c
+template<class T, int i>
+class MyClass {};
+
+template MyClass< int , 1, 1 >;   // C2977
+template MyClass< int , 1 >;   // OK
+```
+
+C2977, genel türler kullanırken da meydana gelebilir:
+
+```
+// C2977b.cpp
+// compile with: /clr
+// C2977 expected
+generic <class T, class U>
+void f(){}
+
+generic <class T>
+ref struct GC1 {};
+
+int main() {
+   // Delete the following 2 lines to resolve.
+   GC1<int, char> ^ pgc1;
+   f<int,int,int>();
+
+   // OK
+   GC1<int> ^ pgc1;
+   f<int, int>();
+}
 ```

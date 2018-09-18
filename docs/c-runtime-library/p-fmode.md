@@ -27,33 +27,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c520f81062f1bbbb295f17c6bc041afb8b5f2877
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6c4dcea9e3f35bf5fd8dbfbed9273562ac3db551
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389842"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056345"
 ---
 # <a name="pfmode"></a>__p__fmode
-İşaret `_fmode` varsayılan belirtir genel değişkeni *dosya çevirisi modu* dosya g/ç işlemleri için.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-int* __p__fmode(  
-   );  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- İşaretçi `_fmode` genel değişkeni.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `__p__fmode` İşlevi yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.  
-  
- Dosya çevirisi modu belirtir ya da `binary` veya `text` çeviri [_kurulum Aç](../c-runtime-library/reference/open-wopen.md) ve [_pipe](../c-runtime-library/reference/pipe.md) g/ç işlemleri. Daha fazla bilgi için bkz: [_fmode](../c-runtime-library/fmode.md).  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|__p\__fmode|stdlib.h|
+
+İşaret `_fmode` varsayılan belirtir genel değişkeni *dosya çevirisi modu* dosya g/ç işlemleri için.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+int* __p__fmode(
+   );
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+İşaretçi `_fmode` genel değişkeni.
+
+## <a name="remarks"></a>Açıklamalar
+
+`__p__fmode` İşlevi yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.
+
+Dosya çevirisi modu belirtir ya da `binary` veya `text` çeviri [_aç](../c-runtime-library/reference/open-wopen.md) ve [_pipe](../c-runtime-library/reference/pipe.md) g/ç işlemleri. Daha fazla bilgi için [_fmode](../c-runtime-library/fmode.md).
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|__p\__fmode|stdlıb.h|

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 086510c9f8aa4d5ae4231563bef833ec698ae1d3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b0f90df0fc9416246670e79975bbfde2025997f2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33275801"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057294"
 ---
 # <a name="compiler-warning-level-1-c4113"></a>Derleyici Uyarısı (düzey 1) C4113
-'identifier1' parametresi 'identifier2' listelerinden kullanımı bakımından farklı  
-  
- Bir işlev işaretçisi başka bir işlev işaretçisi atanan ancak işlevleri biçimsel parametresi listesini kabul etmiyorsunuz. Atama değişiklik yapmadan derlenir.
+
+parametre listeleri bakımından 'identifier2' 'ıdentifier1' farklıdır.
+
+Bir işlev işaretçisi, başka bir işlev işaretçisine atanır ancak işlevlerin biçimsel parametre listeleri eşleşmeyen. Değişiklik yapmadan atamayı derlenir.

@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1065d412a2f977e1784ba739d1226d08e28bc8ea
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 97423da084c005e427b21043e75ebe850623c63b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33289964"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055318"
 ---
 # <a name="compiler-warning-level-3-c4557"></a>Derleyici Uyarısı (Düzey 3) C4557
-'__assume' 'effect' etkisini içeriyor  
-  
- Geçirilen değerini bir [__assume](../../intrinsics/assume.md) statement2 değiştirildi.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.  
-  
- Aşağıdaki örnek C4557 oluşturur:  
-  
-```  
-// C4557.cpp  
-// compile with: /W3  
-#pragma warning(default : 4557)  
-int main()  
-{  
-   int i;  
-   __assume(i++);   // C4557  
-}  
+
+'__assume' 'effect' etkisini içeriyor
+
+Geçirilen değeri bir [__assume](../../intrinsics/assume.md) Deyim2 değiştirildi.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+Aşağıdaki örnek, C4557 oluşturur:
+
+```
+// C4557.cpp
+// compile with: /W3
+#pragma warning(default : 4557)
+int main()
+{
+   int i;
+   __assume(i++);   // C4557
+}
 ```

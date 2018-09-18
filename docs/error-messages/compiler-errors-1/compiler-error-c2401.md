@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 04c5531e0ccce6e90f106d80143a885e64c759ff
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 74a1ad33de97993a6d773834b1637376efcedb33
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195574"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060271"
 ---
 # <a name="compiler-error-c2401"></a>Derleyici Hatası C2401
-'tanımlayıcısı': yazmaç 'bağlamda' temel olmalıdır  
-  
- Dolaylı bellek işlenen kullanılan kayıt bu bağlamda temel bir kayıt olması gerekir.
+
+'identifier': yazmaç 'bağlam' içinde taban olmalıdır
+
+Bu bağlamda bir temel kayıt dolaylı bellek işleneni kullanılan kaydı olmalıdır.

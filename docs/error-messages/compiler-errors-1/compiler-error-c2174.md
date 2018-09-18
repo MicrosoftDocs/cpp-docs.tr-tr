@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4d11c4234bd4e1343198658b1dfcada556b0e1f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a8a7dc9cee6bf24f4605455818a32bd757bcd60c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171955"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052380"
 ---
 # <a name="compiler-error-c2174"></a>Derleyici Hatası C2174
-'function': Gerçek parametre türü 'void' içeriyor: parametre Sayı1, parametre listesi sayı2  
-  
- Parametre `number1` parametre listesine geçirilen `number2` olan bir `void` parametresi. Parametre türü olamaz `void`. Bunun yerine `void*` kullanın.
+
+'function': Gerçek parametrenin türü 'void': parametre Sayı1, parametre listesi sayı2
+
+Parametre `number1` geçirilen parametre listesine `number2` olduğu bir `void` parametresi. Tür parametreleri olamaz `void`. Bunun yerine `void*` kullanın.

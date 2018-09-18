@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b698c08958693d72fd1642ee95857d65cdc774e2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e5b0e140aa0c38a04098616302e1aa098c48e9b5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198540"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060375"
 ---
 # <a name="fatal-error-c1508"></a>Önemli hata C1508
-Derleyici sınırı: 'function': birden fazla 65535 bağımsız değişkeni bayt  
-  
- Çalışması biçimsel parametresi 65535 bayt sınırını aşıyor.
+
+Derleyici sınırı: 'function': 65535'ten fazla bağımsız değişken baytı
+
+İşlev biçimsel parametre 65535 bayt sınırını aşıyor.

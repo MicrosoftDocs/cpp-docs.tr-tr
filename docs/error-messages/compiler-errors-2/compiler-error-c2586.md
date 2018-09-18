@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3cf21a9379f7b0d07575dae54d9406eb5cf39094
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a85097f6383ddb788e1278aebf4732591fd38ec2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229375"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060418"
 ---
 # <a name="compiler-error-c2586"></a>Derleyici Hatası C2586
-yanlış kullanıcı tanımlı dönüştürme sözdizimi: Geçersiz indirections  
-  
- Bir dönüşüm işleci yöneltme izin verilmiyor.  
-  
- Aşağıdaki örnek C2586 oluşturur:  
-  
-```  
-// c2586.cpp  
-// compile with: /c  
-struct C {  
-   * operator int();   // C2586  
-   operator char();   // OK  
-};  
+
+yanlış kullanıcı tanımlı dönüşüm sözdizimi: yöneltmeler geçersiz
+
+Dönüştürme operatörü yöneltmeye izin verilmiyor.
+
+Aşağıdaki örnek, C2586 oluşturur:
+
+```
+// c2586.cpp
+// compile with: /c
+struct C {
+   * operator int();   // C2586
+   operator char();   // OK
+};
 ```

@@ -16,27 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07a28faaf7452a96759879b001cb9b078dd86f88
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 66f43af14474c042d7a4a311bbe672394a2f2d1d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243192"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053355"
 ---
 # <a name="compiler-error-c2979"></a>Derleyici Hatası C2979
-Açık özelleştirmeleri'nda genel türler desteklenmez.  
-  
- Genel bir sınıf yanlış bildirildi.  Bkz: [genel türler](../../windows/generics-cpp-component-extensions.md) daha fazla bilgi için.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2979 oluşturur.  
-  
-```  
-// C2979.cpp  
-// compile with: /clr /c  
-generic <>   
-ref class Utils {};   // C2979 error  
-  
-generic <class T>  
-ref class Utils2 {};   // OK  
+
+Açık uzmanlık'nda genel türler için desteklenmez.
+
+Genel sınıf yanlış bildirildi.  Bkz: [genel türler](../../windows/generics-cpp-component-extensions.md) daha fazla bilgi için.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2979 oluşturur.
+
+```
+// C2979.cpp
+// compile with: /clr /c
+generic <>
+ref class Utils {};   // C2979 error
+
+generic <class T>
+ref class Utils2 {};   // OK
 ```

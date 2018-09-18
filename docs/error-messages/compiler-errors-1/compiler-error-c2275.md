@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45e5948be0544b0fd6854206aa1aeb9c2c23fee1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: deedbf10edd3d9fd870dfbb1a896e504bfe9d877
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33173437"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052373"
 ---
 # <a name="compiler-error-c2275"></a>Derleyici Hatası C2275
-'tanımlayıcısı': Bu tür bir ifade olarak geçersiz kullanımı  
-  
- Bir ifade kullanır `->` işleciyle bir `typedef` tanımlayıcısı.  
-  
- Aşağıdaki örnek C2275 oluşturur:  
-  
-```  
-// C2275.cpp  
-typedef struct S {  
-    int mem;  
-} *S_t;  
-void func1( int *parm );  
-void func2() {  
-    func1( &S_t->mem );   // C2275, S_t is a typedef  
-}  
+
+'identifier': Bu türdeki bir ifade olarak geçersiz kullanımı
+
+Bir ifade kullanır `->` işleciyle bir `typedef` tanımlayıcısı.
+
+Aşağıdaki örnek, C2275 oluşturur:
+
+```
+// C2275.cpp
+typedef struct S {
+    int mem;
+} *S_t;
+void func1( int *parm );
+void func2() {
+    func1( &S_t->mem );   // C2275, S_t is a typedef
+}
 ```

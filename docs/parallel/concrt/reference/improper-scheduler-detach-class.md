@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9dd22c745a3b913c2973fa7d09609cab7f337ee1
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: dd492f28f2aba76e9d6e6d3b381d4d0de4c30202
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33696129"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059213"
 ---
 # <a name="improperschedulerdetach-class"></a>improper_scheduler_detach Sınıfı
-Bu sınıf ne zaman oluşturulan bir özel tanımlar `CurrentScheduler::Detach` yöntemi kullanarak tüm Zamanlayıcı bağlı olmayan bir bağlamda çağrılır `Attach` yöntemi bir `Scheduler` nesnesi.  
+Bu sınıf oluşan bir özel durumu anlatmaktadır `CurrentScheduler::Detach` yöntemi kullanarak herhangi bir zamanlayıcı için bağlı olmayan bir bağlamı çağrıldığında `Attach` yöntemi bir `Scheduler` nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,7 +40,7 @@ class improper_scheduler_detach : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[improper_scheduler_detach](#ctor)|Fazla Yüklendi. Oluşturan bir `improper_scheduler_detach` nesnesi.|  
+|[improper_scheduler_detach](#ctor)|Fazla Yüklendi. Oluşturur bir `improper_scheduler_detach` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -54,7 +54,7 @@ class improper_scheduler_detach : public std::exception;
   
 ##  <a name="ctor"></a> improper_scheduler_detach 
 
- Oluşturan bir `improper_scheduler_detach` nesnesi.  
+ Oluşturur bir `improper_scheduler_detach` nesne.  
   
 ```
 explicit _CRTIMP improper_scheduler_detach(_In_z_ const char* _Message) throw();
@@ -63,8 +63,8 @@ improper_scheduler_detach() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

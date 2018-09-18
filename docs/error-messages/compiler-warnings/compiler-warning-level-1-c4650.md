@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6cb1c9979141e7958b6c2802aaf321efe41e9570
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d49b21452465f26d6e696f928c04c20dc0e33307
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33283091"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052902"
 ---
 # <a name="compiler-warning-level-1-c4650"></a>Derleyici Uyarısı (düzey 1) C4650
-hata ayıklama bilgileri önceden derlenmiş üst bilgi içinde değil; yalnızca genel semboller başlığından kullanılabilir  
-  
- Önceden derlenmiş üst bilgi dosyasını Microsoft simgesel hata ayıklama bilgileri derlenmemiş.  
-  
- Bağlandığında, elde edilen yürütülebilir dosya veya dinamik bağlantı kitaplığı dosyası hata ayıklama bilgileri önceden derlenmiş üst bilgi bulunan yerel sembolleri dahil edilmez.  
-  
- Bu uyarı ile önceden derlenmiş üst bilgi dosyasını derleyerek önlenebilir [/zı](../../build/reference/z7-zi-zi-debug-information-format.md) komut satırı seçeneği.
+
+hata ayıklama bilgileri önceden derlenmiş üstbilgide değil; yalnızca üstbilgideki genel simgeler kullanılabilecek
+
+Ön derlenmiş üstbilgi dosyası Microsoft sembolik hata ayıklama bilgileri ile derlenmedi.
+
+Bağlı olduğunda, elde edilen çalıştırılabilir veya dinamik bağlantı kitaplığı dosyası için önceden derlenmiş üst bilgisinde yer alan yerel semboller hata ayıklama bilgisi içermez.
+
+Bu uyarı, önceden derlenmiş üst bilgi dosyası ile derleyerek önlenebilir [/zi](../../build/reference/z7-zi-zi-debug-information-format.md) komut satırı seçeneği.

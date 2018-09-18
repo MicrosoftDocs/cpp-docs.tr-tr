@@ -1,5 +1,5 @@
 ---
-title: '&lt;verir&gt; (Visual C++) | Microsoft Docs'
+title: '&lt;döndürür&gt; (Visual C++) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b9956299370b4a41ce725cf903ff2aefe55bf53
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: ed871ee2148b6b731ab9354cd45c2e178b4d85a8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33336742"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056085"
 ---
-# <a name="ltreturnsgt-visual-c"></a>&lt;verir&gt; (Visual C++)
-\<Döndürür > etiketi açıklamasında bir yöntem bildirimi için dönüş değerini açıklamak için kullanılmalıdır.  
+# <a name="ltreturnsgt-visual-c"></a>&lt;döndürür&gt; (Visual C++)
+\<Döndürür > etiketi yöntemi bildirimi için açıklama dönüş değeri tanımlamak için kullanılmalıdır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,11 +35,11 @@ ms.locfileid: "33336742"
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `description`  
- Dönüş değeri açıklaması.  
+*Açıklaması*<br/>
+Dönüş değeri bir açıklaması.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İle derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) bir dosyaya işlem belgesi açıklamaları için.  
+ Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.  
   
 ## <a name="example"></a>Örnek  
   

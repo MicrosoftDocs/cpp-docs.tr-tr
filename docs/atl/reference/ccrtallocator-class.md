@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f89df62f35e37e1ab74fc177167cbd82f92f7d9
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: bfd7d5a040da4d27838e8045b6c4c64950e515dc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752891"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054850"
 ---
 # <a name="ccrtallocator-class"></a>CCRTAllocator sınıfı
 
@@ -65,7 +65,7 @@ static __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBytes*  
+*nBytes*<br/>
 Ayrılacak bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -86,7 +86,7 @@ static void Free(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Ayrılan bellek işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -103,10 +103,10 @@ static __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Ayrılan bellek işaretçisi.
 
-*nBytes*  
+*nBytes*<br/>
 Ayrılacak bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -119,6 +119,6 @@ Ayrılan bellek miktarını yeniden boyutlandırır. Bkz: [realloc](../../c-runt
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CHeapPtr sınıfı](../../atl/reference/cheapptr-class.md)   
-[CComAllocator sınıfı](../../atl/reference/ccomallocator-class.md)   
+[CHeapPtr Sınıfı](../../atl/reference/cheapptr-class.md)<br/>
+[CComAllocator Sınıfı](../../atl/reference/ccomallocator-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

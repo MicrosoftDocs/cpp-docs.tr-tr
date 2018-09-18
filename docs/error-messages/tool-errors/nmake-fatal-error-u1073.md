@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dde9ca2f4a15edf6599dcc31b39d9411645f2a6f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4c309ed94cd1c984406e0d21f0139e35c6e41d7d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316312"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053952"
 ---
 # <a name="nmake-fatal-error-u1073"></a>NMAKE Önemli Hatası U1073
-'targetname' nasıl bilmiyorsanız  
-  
- Belirtilen hedef yok ve yürütülecek komut veya uygulamak için çıkarım kuralı yok.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümlere kullanarak düzeltmek için  
-  
-1.  Hedef adının yazımını denetleyin.  
-  
-2.  Varsa *targetname* bir pseudotarget olan başka bir açıklama bloğundaki hedefi olarak belirtin.  
-  
-3.  Varsa *targetname* makrosu çağırma olduğu değil genişletmek için boş bir dize emin olun.
+
+'targetname' olun nasıl yapılandıracağımı bilmiyorum
+
+Belirtilen hedef yok ve yürütmek için komut veya uygulamak için çıkarım kuralı yok.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+
+1. Hedef adı yazımını denetleyin.
+
+1. Varsa *targetname* bir pseudotarget olan başka bir açıklama bloğundaki hedefi olarak belirtin.
+
+1. Varsa *targetname* bir makro çağrısı olduğundan bu genişletmeyen boş bir dize emin olun.

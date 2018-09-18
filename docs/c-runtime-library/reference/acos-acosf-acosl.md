@@ -41,12 +41,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5384d4e97ebb4f3f6152278e916c02bb350090ea
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 2b645d7ab779a7d8c3f655c84a33a8916563c47a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39401944"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059874"
 ---
 # <a name="acos-acosf-acosl"></a>acos, acosf, acosl
 
@@ -67,7 +67,7 @@ long double acos( long double x );   // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 (Ters kosinüsünü) arkkosinüsünü hesaplamak 1 ile -1 arasındaki değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -144,10 +144,10 @@ Arccosine of 0.000000 = 1.570796
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)  
-[asin, asinf, asinl](asin-asinf-asinl.md)  
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)  
-[cos, cosf, cosl](cos-cosf-cosl.md)  
-[_matherr](matherr.md)  
-[sin, sinf, sinl](sin-sinf-sinl.md)  
-[tan, tanf, tanl](tan-tanf-tanl.md)  
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
+[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
+[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
+[_matherr](matherr.md)<br/>
+[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
+[tan, tanf, tanl](tan-tanf-tanl.md)

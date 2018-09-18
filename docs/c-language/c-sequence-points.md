@@ -14,37 +14,39 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9cf0b72314103587ddf64021db2a265044c469e3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 13d8bbc422be20a0e377a5705e8ebcf88db079aa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384313"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059816"
 ---
 # <a name="c-sequence-points"></a>C Sıralama Noktaları
-Ardışık arasında "bir nesnenin değeri değiştirilebilir yalnızca bir kez bir ifade sıralama noktaları". C dili aşağıdaki sıralama noktaları tanımlar:  
-  
--   Sol işleneni mantıksal- ve işleci (**&&**). Sol işleneni mantıksal-işleci tamamen değerlendirilir ve devam etmeden önce tüm yan etkileri tamamlayın. Sol işleneni (0) false hesaplanırsa başka işleneni değerlendirilmez.  
-  
--   Sol işleneni mantıksal OR işleci (`||`). Mantıksal OR işleci sol işleneni tamamen değerlendirilir ve devam etmeden önce tüm yan etkileri tamamlayın. Sol işleneni (sıfır) true olarak değerlendirilirse, diğer işleneni değerlendirilmez.  
-  
--   Virgül işlecinin sol işleneni. Virgül işleci sol işleneni tamamen değerlendirilir ve devam etmeden önce tüm yan etkileri tamamlayın. Virgül işlecinin her iki işleneni de her zaman değerlendirilir. Virgül işleci işlevi çağrısında Değerlendirme sırasını garanti etmez unutmayın.  
-  
--   İşlev çağrısı işleci. Bir işlevin tüm bağımsız değişkenleri değerlendirilir ve işlev girişine önce tüm yan etkileri tamamlayın. Değerlendirme bağımsız değişkenleri arasında hiçbir sırasını belirtilir.  
-  
--   Koşullu işlecin ilk işleneni. Koşullu işleç ilk işleneninin tamamen değerlendirilir ve devam etmeden önce tüm yan etkileri tamamlayın.  
-  
--   Bir tam başlatma ifadesi (bildirimi deyimi içinde bir başlatma sonuna gibi başka bir ifadenin bir parçası olmayan bir ifade) sonu.  
-  
--   Bir ifade deyimindeki ifade. İfade deyimleri oluşur noktalı virgülle ayrılır ve ardından isteğe bağlı ifade (**;**). İfade için onun yan etkileri değerlendirilir ve bu değerlendirmesinin bir dizi noktası yok.  
-  
--   Seçimdeki denetleme ifade (**varsa** veya `switch`) ifadesi. İfade tamamen değerlendirilir ve seçimini bağımlı kod yürütülmeden önce tüm yan etkileri tamamlayın.  
-  
--   Kontrol eden bir ifade bir `while` veya **yapmak** deyimi. İfade tamamen değerlendirilir ve herhangi bir sonraki yinelemesini deyimlerinde önce tüm yan etkileri tamamlamak `while` veya **yapmak** döngü çalıştırılır.  
-  
--   Her üç ifadelerin bir **için** deyimi. İfadeler tamamen değerlendirilir ve herhangi bir sonraki yinelemesini deyimlerinde önce tüm yan etkileri tamamlamak **için** döngü çalıştırılır.  
-  
--   İfade bir `return` deyimi. İfade tamamen değerlendirilir ve denetim çağıran işleve döndürmeden önce tüm yan etkileri tamamlayın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İfade değerlendirme](../c-language/expression-evaluation-c.md)
+
+Arasında ardışık "dizi noktaları bir nesnenin değerini değiştirilebilir yalnızca bir kez bir ifade tarafından". C dili, aşağıdaki dizi noktalarını tanımlar:
+
+- Sol işlenen mantıksal- ve işleci (**&&**). Sol işleneni, mantıksal-işleci tamamen değerlendirilir ve devam etmeden önce tüm yan etkiler tamamlayın. Sol işlenen yanlış (0) olarak değerlendirilirse diğer işlenen değerlendirilmez.
+
+- Mantıksal OR işlecinin işleneni, sol (`||`). Mantıksal OR işlecinin sol işleneni tamamen değerlendirilir ve devam etmeden önce tüm yan etkiler tamamlayın. Sol işlenen true (sıfırdan farklı) olarak değerlendirilirse diğer işlenen değerlendirilmez.
+
+- Virgül işlecinin sol işleneni. Virgül işlecinin sol işleneni tamamen değerlendirilir ve devam etmeden önce tüm yan etkiler tamamlayın. Virgül işlecinin her iki işleneni de her zaman değerlendirilir. Bir işlev çağrısındaki virgül işlecinin bir değerlendirme sırasını garanti etmez unutmayın.
+
+- İşlev çağrısı işleci. Bir işlev için tüm bağımsız değişkenler değerlendirilir ve işleve giriş önce tüm yan etkiler tamamlayın. Hiçbir bağımsız değişkenler arasından Değerlendirme sırasını belirtilir.
+
+- Koşullu işlecin ilk işleneni. Koşullu işlecin ilk işleneni tamamen değerlendirilir ve devam etmeden önce tüm yan etkiler tamamlayın.
+
+- (Diğer bir deyişle, bir bildirim deyiminde başlatmanın sonu gibi başka bir ifade parçası olmayan bir ifade) bir tam başlatma ifadesinin sonu.
+
+- Bir ifade deyimindeki ifade. İfade deyimleri, noktalı virgül tarafından izlenen isteğe bağlı bir ifade oluşur (**;**). İfade, yan etkileri için değerlendirilir ve bu değerlendirme izleyen bir dizi noktası yoktur.
+
+- Seçim denetim ifadesi (**varsa** veya `switch`) deyimi. İfade tamamen değerlendirilir ve seçime bağlı kod yürütülmeden önce tüm yan etkiler tamamlayın.
+
+- Denetim ifadesi, bir `while` veya **yapmak** deyimi. İfade tamamen değerlendirilir ve sonraki yinelemesinde yer alan herhangi bir deyim önce tüm yan etkiler tamamlamak `while` veya **yapmak** döngü yürütülür.
+
+- Her üç ifadesinden bir **için** deyimi. İfade tamamen değerlendirilir ve sonraki yinelemesinde yer alan herhangi bir deyim önce tüm yan etkiler tamamlamak **için** döngü yürütülür.
+
+- İfade bir `return` deyimi. İfade tamamen değerlendirilir ve denetim çağırma işlevine döndürmeden önce tüm yan etkiler tamamlayın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İfade Değerlendirme](../c-language/expression-evaluation-c.md)

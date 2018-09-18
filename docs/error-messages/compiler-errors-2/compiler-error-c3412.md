@@ -16,39 +16,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c5b2c86b91160eb7ae342b39ea6a63ffad364bb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f6a04de132c85cb09a960d3a0edfcb3b07127119
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250649"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054584"
 ---
 # <a name="compiler-error-c3412"></a>Derleyici Hatası C3412
-'şablon': geçerli kapsamında şablon specialize olamaz  
-  
- Bir şablon sınıfı kapsamında, yalnızca genel veya ad alanı kapsamı özelleştirilmiş olamaz.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3412 oluşturur.  
-  
-```  
-// C3412.cpp  
-template <class T>  
-struct S {  
-   template <>  
-   struct S<int> {};   // C3412 in a class  
-};  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, olası bir çözüm gösterir.  
-  
-```  
-// C3412b.cpp  
-// compile with: /c  
-template <class T>  
-struct S {};  
-  
-template <>  
-struct S<int> {};  
+
+'şablon': şablon geçerli kapsamda özelleştirilemiyor
+
+Sınıf kapsamında, yalnızca genel veya ad alanı kapsamında bir şablonu özelleştirilemez.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3412 oluşturur.
+
+```
+// C3412.cpp
+template <class T>
+struct S {
+   template <>
+   struct S<int> {};   // C3412 in a class
+};
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnekte, olası bir çözüm gösterilmektedir.
+
+```
+// C3412b.cpp
+// compile with: /c
+template <class T>
+struct S {};
+
+template <>
+struct S<int> {};
 ```

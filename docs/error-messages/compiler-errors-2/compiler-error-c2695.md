@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67dc97688dddde37323f25b96bd8bbc596660e2f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a618c02fcf3a8927d8090b1ad51ed16d9ac28542
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231223"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056059"
 ---
 # <a name="compiler-error-c2695"></a>Derleyici Hatası C2695
-'function1': sanal işlevi geçersiz kılma farklı 'function2' yalnızca çağırma  
-  
- Türetilmiş bir sınıf işlevinde imza bir taban sınıf işlevinde geçersiz kılar ve çağırma kuralı değiştirin.  
-  
- Aşağıdaki örnek C2695 oluşturur:  
-  
-```  
-// C2695.cpp  
-class C {  
-   virtual void __fastcall func();  
-};  
-  
-class D : public C {  
-   virtual void __clrcall func();   // C2695  
-};  
+
+'function1': geçersiz kılan sanal işlev farklı 'function2' yalnızca çağırma kuralı
+
+Türetilen bir sınıfta bir işlev imzası, temel sınıf içinde bir işlevi geçersiz kılma ve çağırma kuralı değiştirin.
+
+Aşağıdaki örnek, C2695 oluşturur:
+
+```
+// C2695.cpp
+class C {
+   virtual void __fastcall func();
+};
+
+class D : public C {
+   virtual void __clrcall func();   // C2695
+};
 ```

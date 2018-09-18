@@ -12,18 +12,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d00c75b2b7cdf2fdafb4e109496a701fb561cb9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5e6abce7ebbcdc41effed05ccf54337e3976c34e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33270904"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054876"
 ---
 # <a name="compiler-warning-c4746"></a>Derleyici Uyarısı C4746
-volatile erişimini '\<ifade >' / volatile tabi olan: [ISO&#124;ms] ayarlama; __iso_volatile_load/deposu iç işlevler kullanmayı düşünün.  
-  
- Geçici bir değişken doğrudan erişildiğinde C4746 yayınlanır. Şu anda belirtilen belirli volatile model tarafından etkilenen kod konumlarını tanımlayan geliştiricilere yardımcı olmak için tasarlanmıştır (hangi denetlenebilir ile [/volatile](../../build/reference/volatile-volatile-keyword-interpretation.md) derleyici seçeneği). Özellikle, derleyicinin ürettiği donanım bellek engelleri bulma /volatile:ms kullanıldığında yararlı olabilir.  
-  
- __İso_volatile_load/deposu iç bilgileri açıkça volatile modeli tarafından etkilenmeden geçici bellek erişmek için kullanılabilir. Bu yapı kullanarak C4746 tetiklemez.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+Geçici Erişim '\<ifadesi >' / volatile tabi olduğu: [ISO&#124;ms] ayarlama; iç işlevleri __iso_volatile_load depolama kullanmayı düşünün.
+
+Geçici bir değişkene doğrudan erişildiğinde C4746 yayılır. Şu anda belirtilen belirli geçici modeli tarafından etkilenen kod konumlarını tanımlamak geliştiricilerin yardımcı olmak için tasarlanmıştır (hangi denetlenebilir ile [/volatile](../../build/reference/volatile-volatile-keyword-interpretation.md) derleyici seçeneği). Özellikle, derleyicinin ürettiği donanım belleği engelleri bulma /volatile:ms kullanıldığında yararlı olabilir.
+
+Depolama __iso_volatile_load yapı içlerini açıkça geçici modeli tarafından etkilenmeden geçici bir bellek erişmek için kullanılabilir. Bu iç kullanarak C4746 tetiklemez.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.

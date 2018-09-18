@@ -30,18 +30,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d34557d11cf572f167ecc3f334b7432cb772f29d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fffd02cf0916b9f0bb8a21ae2a599fe1ed51f5a7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32388850"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057957"
 ---
 # <a name="outp-outpw"></a>outp, outpw
-Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumluluğunu kullanmak [_outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md) yerine.  
-  
+
+Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumlu [_outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md) yerine.
+
 > [!IMPORTANT]
->  Bu işlevler artık kullanılmıyor. Visual Studio 2015'te başlayarak, bunlar CRT kullanılabilir değildir.  
-  
+>  Bu işlevler kullanım dışıdır. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz.
+
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+>  Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

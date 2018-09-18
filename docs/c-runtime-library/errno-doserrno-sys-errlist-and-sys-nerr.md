@@ -1,5 +1,5 @@
 ---
-title: errno, _doserrno, _sys_errlist ve _sys_nerr | Microsoft Docs
+title: errno _doserrno, _sys_errlist ve _sys_nerr | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -31,101 +31,104 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b17abb975ea9f3212d4bd6171bcd2bffb78e483c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5ea13f86b99dd0a4678a715452122ee3f1a64d98
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392425"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054954"
 ---
 # <a name="errno-doserrno-syserrlist-and-sysnerr"></a>errno, _doserrno, _sys_errlist, and _sys_nerr
-Hata kodları tutun Genel makroları, program yürütme ve görüntülenecek hata kodları dize eşdeğerlerini sırasında ayarlanır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-#define errno   (*_errno())  
-#define _doserrno   (*__doserrno())  
-#define _sys_errlist (__sys_errlist())  
-#define _sys_nerr (*__sys_nerr())  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Her ikisi de `errno` ve `_doserrno` program başlatma sırasında çalışma zamanı tarafından 0 olarak ayarlanır. `errno` sistem düzeyinde çağrısında hata ayarlanır. Çünkü `errno` ayrı tutma, bu değeri ayarlayın son çağrı değeri çağrıları başarılı olarak değiştirilmesi. Çalışma Zamanı Kitaplığı çağırır o kümeye `errno` bir hatayla silmeyin `errno` başarılı. Her zaman temizleyin `errno` çağırarak `_set_errno(0)` hemen ayarlayın ve çağrısından hemen sonra denetleyin bir çağrıdan önce.  
-  
- Bir hata `errno` mutlaka bir sistem çağrısı tarafından döndürülen hata kodu ile aynı değerine ayarlı değil. G/ç işlemleri `_doserrno` işletim sistemi hata kodu eşdeğerlerini depolar `errno` kodları. Olmayan-g/Ç işlemlerinin çoğu, değeri için `_doserrno` ayarlı değil.  
-  
- Her `errno` değerdir bir hata iletisi ile ilişkili `_sys_errlist` , yazdırılabilir birini kullanarak [perror](../c-runtime-library/reference/perror-wperror.md) işlevleri veya birini kullanarak bir dizesinde depolanan [strerror](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md) veya [strerror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md) işlevleri. `perror` Ve `strerror` işlevleri kullanım `_sys_errlist` dizi ve `_sys_nerr`— öğe sayısı `_sys_errlist`— hata bilgilerini işleyemedi. Doğrudan erişim `_sys_errlist` ve `_sys_nerr` kodu güvenlik nedenleriyle kullanım dışı bırakılmıştır. Genel makroları yerine daha güvenli, işlevsel sürümlerini kullanan aşağıda gösterildiği gibi öneririz:  
-  
-|Genel makrosu|İşlevsel Eşdeğerleri|  
-|------------------|----------------------------|  
-|`_doserrno`|[_get_doserrno](../c-runtime-library/reference/get-doserrno.md), [_set_doserrno](../c-runtime-library/reference/set-doserrno.md)|  
-|`errno`|[_get_errno](../c-runtime-library/reference/get-errno.md), [_set_errno](../c-runtime-library/reference/set-errno.md)|  
-|`_sys_errlist`, `_sys_nerr`|[strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md)|  
-  
- Kitaplık matematik yordamları kümesi `errno` çağırarak [_matherr](../c-runtime-library/reference/matherr.md). Matematik hataları farklı işlemek için kendi yordamına göre yazma `_matherr` başvuru açıklama ve adlandırın `_matherr`.  
-  
- Tüm `errno` değerler aşağıdaki tabloda önceden tanımlanmış sabitler \<errno.h >, ve UNIX uyumludur. Yalnızca `ERANGE`, `EILSEQ`, ve `EDOM` ISO C99 standart belirtilir.  
-  
-|Sabit|Sistem hatası iletisi|Değer|  
-|--------------|--------------------------|-----------|  
-|`EPERM`|İşleme izin verilmiyor|1.|  
-|`ENOENT`|Böyle bir dosya ya da dizin yok|2|  
-|`ESRCH`|Böyle bir işlem yok|3|  
-|`EINTR`|Kesintiye uğramış işlev|4|  
-|`EIO`|G/Ç hatası|5|  
-|`ENXIO`|Böyle bir cihaz veya adres yok|6|  
-|`E2BIG`|Bağımsız değişken listesi çok uzun|7|  
-|`ENOEXEC`|Exec biçim hatası|8|  
-|`EBADF`|Hatalı dosya numarası|9|  
-|`ECHILD`|Üretilmiş işlem yok|10|  
-|`EAGAIN`|Daha fazla işlem yok veya bellek yetersiz ya da en fazla iç içe geçme düzeyine ulaşılmış|11|  
-|`ENOMEM`|Yeterli bellek yok|12|  
-|`EACCES`|İzin reddedildi|13|  
-|`EFAULT`|Hatalı adres|14|  
-|`EBUSY`|Cihaz veya kaynak meşgul|16|  
-|`EEXIST`|Dosya mevcut|17|  
-|`EXDEV`|Çapraz cihaz bağlantısı|18|  
-|`ENODEV`|Böyle bir cihaz yok|19|  
-|`ENOTDIR`|Bir dizin değil|20|  
-|`EISDIR`|Bir dizin|21|  
-|`EINVAL`|Geçersiz bağımsız değişken|22|  
-|`ENFILE`|Sistemde çok fazla dosya açık|23|  
-|`EMFILE`|Çok fazla dosya açık|24|  
-|`ENOTTY`|Uygun olmayan G/Ç denetimi işlemi|25|  
-|`EFBIG`|Dosya çok büyük|27|  
-|`ENOSPC`|Cihazda alan kalmadı|28|  
-|`ESPIPE`|Geçersiz arama|29|  
-|`EROFS`|Salt okunur dosya sistemi|30|  
-|`EMLINK`|Çok fazla bağlantı|31|  
-|`EPIPE`|Kesik kanal|32|  
-|`EDOM`|Matematik bağımsız değişkeni|33|  
-|`ERANGE`|Sonuç çok büyük|34|  
-|`EDEADLK`|Kaynak kilitlenmesi oluşabilir|36|  
-|`EDEADLOCK`|Önceki Microsoft C sürümleriyle uyumluluk için EDEADLK aynı|36|  
-|`ENAMETOOLONG`|Dosya adı çok uzun|38|  
-|`ENOLCK`|Kullanılabilir kilit yok|39|  
-|`ENOSYS`|İşlev desteklenmiyor|40|  
-|`ENOTEMPTY`|Dizin boş değil|41|  
-|`EILSEQ`|Geçersiz bayt dizisi|42|  
-|`STRUNCATE`|Dize kesildi|80|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Genel makrosu|Gerekli başlık|İsteğe bağlı üstbilgi|  
-|------------------|---------------------|---------------------|  
-|`errno`|\<errno.h > veya \<stdlib.h >, \<cerrno > veya \<cstdlib > (C++)||  
-|`_doserrno`, `_sys_errlist`, `_sys_nerr`|\<stdlib.h >, \<cstdlib > (C++)|\<errno.h >, \<cerrno > (C++)|  
-  
- `_doserrno`, `_sys_errlist`, Ve `_sys_nerr` makroları olan Microsoft uzantıları. Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../c-runtime-library/compatibility.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel değişkenler](../c-runtime-library/global-variables.md)   
- [errno sabitleri](../c-runtime-library/errno-constants.md)   
- [perror, _wperror](../c-runtime-library/reference/perror-wperror.md)   
- [strerror, _strerror, _wcserror, \__wcserror](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md)   
- [strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md)   
- [_get_doserrno](../c-runtime-library/reference/get-doserrno.md)   
- [_set_doserrno](../c-runtime-library/reference/set-doserrno.md)   
- [_get_errno](../c-runtime-library/reference/get-errno.md)   
- [_set_errno](../c-runtime-library/reference/set-errno.md)
+
+Bu hata kodlarını tutan genel makrolar, program yürütme ve hata kodlarını görüntülemek için dize eşdeğerleri sırasında ayarlanır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+#define errno   (*_errno())
+#define _doserrno   (*__doserrno())
+#define _sys_errlist (__sys_errlist())
+#define _sys_nerr (*__sys_nerr())
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Her ikisi de `errno` ve `_doserrno` 0 olarak program açılışında çalışma zamanı tarafından ayarlanır. `errno` sistem düzeyinde çağrıda bir hatada ayarlanır. Çünkü `errno` tutar, bu değeri ayarlayan son çağrının değerini takip eden çağrılar tarafından değiştirilebilir. Çalışma Zamanı Kitaplığı `errno` bir hatada silmeyin `errno` başarılı. Her zaman Temizle `errno` çağırarak `_set_errno(0)` hemen ayarlayın ve ve çağrının ardından hemen denetleyin bir çağrıdan önce.
+
+Bir hatada `errno` mutlaka aynı değere bir sistem çağrısı tarafından döndürülen hata kodu olarak ayarlanmadı. G/ç işlemleri `_doserrno` işletim sistemi hata kodu eşdeğerleri depolar `errno` kodları. Çoğu olmayan g/Ç işlemleri için değerini `_doserrno` ayarlı değil.
+
+Her `errno` değeri, bir hata iletisi ile ilişkilendirilmiş `_sys_errlist` , yazdırılabilir birini kullanarak [perror](../c-runtime-library/reference/perror-wperror.md) işlevleri veya birini kullanarak bir dizede depolanan [strerror](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md) veya [strerror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md) işlevleri. `perror` Ve `strerror` işlevleri kullanmak `_sys_errlist` dizi ve `_sys_nerr`— içindeki öğelerin sayısını `_sys_errlist`— hata bilgilerini işlemek için. Doğrudan erişim `_sys_errlist` ve `_sys_nerr` kod güvenlik nedenleriyle kullanım dışı bırakılmıştır. Genel makrolar yerine daha güvenli ve işlevsel sürümleri kullanmanız burada gösterildiği gibi öneririz:
+
+|Genel makrosu|İşlevsel Eşdeğerleri|
+|------------------|----------------------------|
+|`_doserrno`|[_get_doserrno](../c-runtime-library/reference/get-doserrno.md), [_set_doserrno](../c-runtime-library/reference/set-doserrno.md)|
+|`errno`|[_get_errno](../c-runtime-library/reference/get-errno.md), [_set_errno](../c-runtime-library/reference/set-errno.md)|
+|`_sys_errlist`, `_sys_nerr`|[strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md)|
+
+Kitaplık matematik yordamları kümesi `errno` çağırarak [_matherr](../c-runtime-library/reference/matherr.md). Matematik hatalarını farklı şekilde işlemek için kendi yordamınızı göre yazma `_matherr` başvurusunun açıklamasına ve adlandırın `_matherr`.
+
+Tüm `errno` değerler aşağıdaki tabloda önceden tanımlanmış sabitleri de \<errno.h >, ve UNIX uyumludur. Yalnızca `ERANGE`, `EILSEQ`, ve `EDOM` ISO C99 standardında belirtilmiştir.
+
+|Sabit|Sistem hatası iletisi|Değer|
+|--------------|--------------------------|-----------|
+|`EPERM`|İşleme izin verilmiyor|1.|
+|`ENOENT`|Böyle bir dosya ya da dizin yok|2|
+|`ESRCH`|Böyle bir işlem yok|3|
+|`EINTR`|Kesintiye uğramış işlev|4|
+|`EIO`|G/Ç hatası|5|
+|`ENXIO`|Böyle bir cihaz veya adres yok|6|
+|`E2BIG`|Bağımsız değişken listesi çok uzun|7|
+|`ENOEXEC`|Exec biçim hatası|8|
+|`EBADF`|Hatalı dosya numarası|9|
+|`ECHILD`|Üretilmiş işlem yok|10|
+|`EAGAIN`|Daha fazla işlem yok veya bellek yetersiz ya da en fazla iç içe geçme düzeyine ulaşılmış|11|
+|`ENOMEM`|Yeterli bellek yok|12|
+|`EACCES`|İzin reddedildi|13|
+|`EFAULT`|Hatalı adres|14|
+|`EBUSY`|Cihaz veya kaynak meşgul|16|
+|`EEXIST`|Dosya mevcut|17|
+|`EXDEV`|Çapraz cihaz bağlantısı|18|
+|`ENODEV`|Böyle bir cihaz yok|19|
+|`ENOTDIR`|Bir dizin değil|20|
+|`EISDIR`|Bir dizin|21|
+|`EINVAL`|Geçersiz bağımsız değişken|22|
+|`ENFILE`|Sistemde çok fazla dosya açık|23|
+|`EMFILE`|Çok fazla dosya açık|24|
+|`ENOTTY`|Uygun olmayan G/Ç denetimi işlemi|25|
+|`EFBIG`|Dosya çok büyük|27|
+|`ENOSPC`|Cihazda alan kalmadı|28|
+|`ESPIPE`|Geçersiz arama|29|
+|`EROFS`|Salt okunur dosya sistemi|30|
+|`EMLINK`|Çok fazla bağlantı|31|
+|`EPIPE`|Kesik kanal|32|
+|`EDOM`|Matematik bağımsız değişkeni|33|
+|`ERANGE`|Sonuç çok büyük|34|
+|`EDEADLK`|Kaynak kilitlenmesi oluşabilir|36|
+|`EDEADLOCK`|Önceki Microsoft C sürümleriyle uyumluluk için EDEADLK aynı|36|
+|`ENAMETOOLONG`|Dosya adı çok uzun|38|
+|`ENOLCK`|Kullanılabilir kilit yok|39|
+|`ENOSYS`|İşlev desteklenmiyor|40|
+|`ENOTEMPTY`|Dizin boş değil|41|
+|`EILSEQ`|Geçersiz bayt dizisi|42|
+|`STRUNCATE`|Dize kesildi|80|
+
+## <a name="requirements"></a>Gereksinimler
+
+|Genel makrosu|Gerekli başlık|İsteğe bağlı başlık|
+|------------------|---------------------|---------------------|
+|`errno`|\<errno.h > veya \<stdlib.h >, \<cerrno > veya \<cstdlib > (C++)||
+|`_doserrno`, `_sys_errlist`, `_sys_nerr`|\<stdlib.h >, \<cstdlib > (C++)|\<errno.h >, \<cerrno > (C++)|
+
+`_doserrno`, `_sys_errlist`, Ve `_sys_nerr` Microsoft uzantıları makrolardır. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Global Değişkenler](../c-runtime-library/global-variables.md)<br/>
+[errno sabitleri](../c-runtime-library/errno-constants.md)<br/>
+[perror, _wperror](../c-runtime-library/reference/perror-wperror.md)<br/>
+[strerror, _strerror, _wcserror, \__wcserror](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md)<br/>
+[strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md)<br/>
+[_get_doserrno](../c-runtime-library/reference/get-doserrno.md)<br/>
+[_set_doserrno](../c-runtime-library/reference/set-doserrno.md)<br/>
+[_get_errno](../c-runtime-library/reference/get-errno.md)<br/>
+[_set_errno](../c-runtime-library/reference/set-errno.md)

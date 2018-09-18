@@ -16,67 +16,71 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1964cffd0593e87a790befd8a76ae13847f2058d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 338a98adb45ee9fc8eb392853a5693d10a171940
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33257276"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058841"
 ---
 # <a name="compiler-error-c3409"></a>Derleyici Hatası C3409
-boş öznitelik blok izin verilmiyor  
-  
- Köşeli ayraçlar derleyici tarafından yorumlanan bir [özniteliği](../../windows/cpp-attributes-reference.md) bloğu, ancak hiçbir öznitelik bulunamadı.  
-  
- Lambda ifadesi tanımının bir parçası olarak köşeli kullandığınızda derleyici bu hata oluşmasına neden olabilir. Bu hata, derleyici köşeli ayraç lambda ifadesi veya bir öznitelik blok tanımının bir parçası olup olmadığını belirleyemez oluşur. Lambda ifadeleri hakkında daha fazla bilgi için bkz: [Lambda ifadeleri](../../cpp/lambda-expressions-in-cpp.md).  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
-1.  Köşeli ayraçlar bir öznitelik blok parçası ise:  
-  
-    1.  Bir veya daha fazla öznitelikler özniteliği bloğundaki sağlar.  
-  
-    2.  Öznitelik blok kaldırın.  
-  
-2.  Köşeli ayraçlar lambda ifadesi parçası ise:  
-  
-    1.  Lambda ifadesi geçerli sözdizimi kurallarına uyduğundan emin olun.  
-  
-         Lambda ifadesi sözdizimi hakkında daha fazla bilgi için bkz: [Lambda ifadesi sözdizimi](../../cpp/lambda-expression-syntax.md).  
-  
-    2.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3409 oluşturur.  
-  
-```  
-// C3409.cpp  
-// compile with: /c  
-#include <windows.h>  
-[]   // C3409  
-class a {};  
-  
-// OK  
-[object, uuid("00000000-0000-0000-0000-000000000000")]  
-__interface x {};  
-  
-[coclass, uuid("00000000-0000-0000-0000-000000000001")]  
-class b : public x {};  
-```  
-  
-## <a name="example"></a>Örnek  
- Lambda ifadesi kullandığından, aşağıdaki örnek C3409 oluşturur `mutable` belirtimi, ancak parametre listesi sağlamaz. Derleyici köşeli ayraç lambda ifadesi veya bir öznitelik blok tanımının bir parçası olup olmadığını belirleyemez.  
-  
-```  
-// C3409b.cpp  
-  
-int main()  
-{  
-   [] mutable {}();  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özniteliği](../../windows/cpp-attributes-reference.md)   
- [Lambda ifadeleri](../../cpp/lambda-expressions-in-cpp.md)   
- [Lambda İfadesi Söz Dizimi](../../cpp/lambda-expression-syntax.md)
+
+boş öznitelik bloğuna izin verilmiyor
+
+Köşeli ayraç derleyici tarafından yorumlanan bir [özniteliği](../../windows/cpp-attributes-reference.md) blok, ancak hiç öznitelik bulunamadı.
+
+Köşeli ayraçlar bir lambda ifadesinin tanımının bir parçası kullandığınızda, derleyici bu hatayı oluşturabilir. Derleyici köşeli ayraç bir lambda ifadesi veya bir öznitelik blok tanımının bir parçası olup olmadığını belirleyemiyor. Bu hata oluşur. Lambda ifadeleri hakkında daha fazla bilgi için bkz. [Lambda ifadeleri](../../cpp/lambda-expressions-in-cpp.md).
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+1. Köşeli ayraç öznitelik bloğuna parçası ise:
+
+   1. Öznitelikler, bir veya daha fazla öznitelik bloğunda sağlar.
+
+   1. Öznitelik bloğunu kaldırın.
+
+1. Köşeli ayraç bir lambda ifadesinin parçası ise:
+
+   1. Lambda ifadesi geçerli sözdizimi kurallarına uyduğundan emin olun.
+
+         Lambda ifadesi söz dizimi hakkında daha fazla bilgi için bkz: [Lambda ifadesi söz dizimi](../../cpp/lambda-expression-syntax.md).
+
+    2.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3409 oluşturur.
+
+```
+// C3409.cpp
+// compile with: /c
+#include <windows.h>
+[]   // C3409
+class a {};
+
+// OK
+[object, uuid("00000000-0000-0000-0000-000000000000")]
+__interface x {};
+
+[coclass, uuid("00000000-0000-0000-0000-000000000001")]
+class b : public x {};
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, bir lambda ifadesi kullandığından C3409 oluşturur `mutable` belirtimi, ancak parametre listesini sağlamaz. Derleyici, köşeli ayraç bir lambda ifadesi veya bir öznitelik blok tanımının bir parçası olup olmadığını belirleyemiyor.
+
+```
+// C3409b.cpp
+
+int main()
+{
+   [] mutable {}();
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[attribute](../../windows/cpp-attributes-reference.md)<br/>
+[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)<br/>
+[Lambda İfadesi Söz Dizimi](../../cpp/lambda-expression-syntax.md)

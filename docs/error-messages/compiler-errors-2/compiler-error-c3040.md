@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f895626ac04afc776c279f5e2bf7a857ffbd432
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 419178a7ff71817c418aa791ae1f6cce116cd986
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246241"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057700"
 ---
 # <a name="compiler-error-c3040"></a>Derleyici Hatası C3040
-'var': 'azaltma' yan tümcesinde değişkeninin türü, azaltma işleci 'işleci' ile uyumlu değil  
-  
- Bir değişkende bir [azaltma](../../parallel/openmp/reference/reduction.md) yan tümcesi ile azaltma işleci kullanılamaz.  
-  
- Aşağıdaki örnek C3040 oluşturur:  
-  
-```  
-// C3040.cpp  
-// compile with: /openmp /c  
-#include "omp.h"  
-double d;  
-  
-int main() {  
-   #pragma omp parallel reduction(&:d)   // C3040  
-      ;  
-  
-   #pragma omp parallel reduction(-:d)  // OK  
-      ;  
-}  
+
+'var': 'reduction' yan tümcesindeki değişkenin türü 'operator' azaltma işleciyle uyumsuz
+
+Bir değişkende bir [azaltma](../../parallel/openmp/reference/reduction.md) azaltma işleciyle yan tümcesi kullanılamaz.
+
+Aşağıdaki örnek, C3040 oluşturur:
+
+```
+// C3040.cpp
+// compile with: /openmp /c
+#include "omp.h"
+double d;
+
+int main() {
+   #pragma omp parallel reduction(&:d)   // C3040
+      ;
+
+   #pragma omp parallel reduction(-:d)  // OK
+      ;
+}
 ```

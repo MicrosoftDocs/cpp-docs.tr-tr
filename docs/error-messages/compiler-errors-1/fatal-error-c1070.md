@@ -16,41 +16,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99650b93819c4bc0192d612b0f1344e1b99671d4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e7e871b69bb189140a4001d574736a255eefaf61
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228185"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055630"
 ---
 # <a name="fatal-error-c1070"></a>Önemli hata C1070
-eşleşmeyen #if / #endif çiftinin dosya 'filename'  
-  
- Bir `#if`, `#ifdef`, veya `#ifndef` yönergesi sahip karşılık gelen `#endif`.  
-  
- Aşağıdaki örnek C1070 oluşturur:  
-  
-```  
-// C1070.cpp  
-#define TEST  
-  
-#ifdef TEST  
-  
-#ifdef TEST  
-#endif  
-// C1070  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C1070b.cpp  
-// compile with: /c  
-#define TEST  
-  
-#ifdef TEST  
-#endif  
-  
-#ifdef TEST  
-#endif  
+
+eşleşmeyen #if / #endif çifti 'filename' dosya
+
+Bir `#if`, `#ifdef`, veya `#ifndef` yönergesi, karşılık gelen içeriyor `#endif`.
+
+Aşağıdaki örnek, C1070 oluşturur:
+
+```
+// C1070.cpp
+#define TEST
+
+#ifdef TEST
+
+#ifdef TEST
+#endif
+// C1070
+```
+
+Olası çözüm:
+
+```
+// C1070b.cpp
+// compile with: /c
+#define TEST
+
+#ifdef TEST
+#endif
+
+#ifdef TEST
+#endif
 ```

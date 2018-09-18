@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d28136c9fa131d525878fe0551f5ba2421576951
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b873a615e04bd92e08abb51a048f227f19fd9eec
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760090"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057502"
 ---
 # <a name="cheapptrelementtraits-class"></a>CHeapPtrElementTraits sınıfı
 
@@ -36,17 +36,17 @@ Bu sınıf, yığın işaretçileri koleksiyonları oluştururken yöntemleri st
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<typename T, class Allocator = ATL::CCRTAllocator>  
+template<typename T, class Allocator = ATL::CCRTAllocator>
 class CHeapPtrElementTraits : 
    public CDefaultElementTraits<ATL::CHeapPtr<T, Allocator>>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Koleksiyon sınıfı içinde depolanan nesne türü.
 
-*Ayırıcı*  
+*Ayırıcı*<br/>
 Bellek ayırma kullanmak için sınıf. Varsayılan değer [CCRTAllocator](../../atl/reference/ccrtallocator-class.md).
 
 ## <a name="members"></a>Üyeler
@@ -98,6 +98,6 @@ typedef T *& OUTARGTYPE;
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CDefaultElementTraits sınıfı](../../atl/reference/cdefaultelementtraits-class.md)   
-[CComHeapPtr sınıfı](../../atl/reference/ccomheapptr-class.md)   
+[CDefaultElementTraits Sınıfı](../../atl/reference/cdefaultelementtraits-class.md)<br/>
+[CComHeapPtr Sınıfı](../../atl/reference/ccomheapptr-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

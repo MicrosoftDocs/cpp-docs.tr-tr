@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9c2a2df0941130c4f2416806a05ce0378373eb4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ba4c2b57bcae062ccf811e33cf1deaea45f83737
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226454"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052458"
 ---
 # <a name="compiler-error-c2410"></a>Derleyici Hatası C2410
-'tanımlayıcısı': 'bağlamda' belirsiz üye adı  
-  
- Birden fazla yapısı veya bu bağlamda Birliği üyesi tanımlayıcısıdır.  
-  
- Bir yapı veya birlik belirticisi hataya işlenen üzerinde kullanın. Bir yapı veya birlik belirticisi türünde bir tanımlayıcıdır `struct` veya `union` (bir `typedef` adı veya aynı türde yapısı veya başvurulan UNION değişkeni). Belirleyici işleneni kullanmak için ilk üye seçimi işleci (.) sol işleneni olması gerekir.
+
+'identifier': 'context' içinde belirsiz üye adı
+
+Tanımlayıcı, birden fazla yapı veya birleşim bu bağlamda bir üyesidir.
+
+Bir yapı veya birleşim belirleyici bir hataya yol açmayan işlenen üzerinde kullanın. Bir yapı veya birleşim belirticisi türünde bir tanımlayıcıdır `struct` veya `union` (bir `typedef` adı veya yapı veya birleşim başvurulan aynı türden bir değişkene). İşlenen kullanılacak ilk (.) üye seçme işlecinin sol işleneni tanımlayıcısı olmalıdır.

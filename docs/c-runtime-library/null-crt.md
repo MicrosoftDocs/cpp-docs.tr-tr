@@ -18,15 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6df1a987c13a5d7f79c527874a7bc1564161b597
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 469352b8c5729a6797912ce768a87c1f4a0eb9d3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387615"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059842"
 ---
 # <a name="null-crt"></a>NULL (CRT)
-**NULL** boş işaretçi değeri birçok işaretçi işlemleri ve işlevleri ile kullanılır. 0 olarak eşdeğerdir. **NULL** aşağıdaki üstbilgi dosyaları tanımlanır: CRTDBG. H, YEREL AYAR. H, STDDEF. H, STDIO. H, STDLIB. H, DİZE. H, TCHAR. H, SAAT. H ve WCHAR. H.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+**NULL** birçok işaretçi işlemler ve işlevler ile kullanılan null işaretçi değeri. 0 olarak eşdeğerdir. **NULL** aşağıdaki üstbilgi dosyalarında tanımlanır: CRTDBG. H, YEREL AYAR. H, STDDEF. STDIO H. H, STDLIB. H, DİZE. TCHAR H. S, SAATİ. H ve WCHAR. H
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Global Sabitler](../c-runtime-library/global-constants.md)

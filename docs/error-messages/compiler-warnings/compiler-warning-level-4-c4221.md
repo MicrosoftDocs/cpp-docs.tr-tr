@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e602eb662533207a1f2957d3b11a0823e4b83af
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 18b0804c8b7cb2d059e45fa504334687a796fbe1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293201"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056423"
 ---
 # <a name="compiler-warning-level-4-c4221"></a>Derleyici Uyarısı (düzey 4) C4221
-kullanılan standart olmayan uzantısı: 'tanımlayıcısı': otomatik değişkenin adresini kullanarak başlatılamaz  
-  
- Varsayılan Microsoft Uzantıları (/Ze), bir toplama türü başlatabilir (**dizi**, `struct`, veya **UNION**) yerel (otomatik) değişken adresine sahip.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4221.c  
-// compile with: /W4  
-struct S  
-{  
-   int *i;  
-};  
-  
-void func()  
-{  
-   int j;  
-   struct S s1 = { &j };   // C4221  
-}  
-  
-int main()  
-{  
-}  
-```  
-  
- Bu tür başlatmaları ANSI Uyumluluğu altında geçersiz ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
+
+Standart olmayan uzantı kullanıldı: 'identifier': otomatik değişkeninin adresi kullanılarak başlatılamıyor
+
+Varsayılan Microsoft Uzantıları (/Ze) ile bir toplama türünü başlatabilirsiniz (**dizi**, `struct`, veya **birleşim**) (otomatik) yerel değişkenin adresi.
+
+## <a name="example"></a>Örnek
+
+```
+// C4221.c
+// compile with: /W4
+struct S
+{
+   int *i;
+};
+
+void func()
+{
+   int j;
+   struct S s1 = { &j };   // C4221
+}
+
+int main()
+{
+}
+```
+
+Bu tür başlatmalar ANSI Uyumluluğu altında geçersiz ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).

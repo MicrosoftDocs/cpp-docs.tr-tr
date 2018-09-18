@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e1113abc814167912380b57ae7fc85d04284e77
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 90774b304a4649c72b6232b5908bf9ff14a4412d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33696168"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057359"
 ---
 # <a name="contextselfunblock-class"></a>context_self_unblock Sınıfı
-Bu sınıf ne zaman oluşturulan bir özel tanımlar `Unblock` yöntemi bir `Context` nesnesi aynı bağlamdan çağrılır. Bu girişiminde tarafından belirli bir bağlam kendisini engellemesini kaldırmak için gösterir.  
+Bu sınıf oluşan bir özel durumu anlatmaktadır `Unblock` yöntemi bir `Context` nesnesi aynı bağlamdan çağrılır. Bu tarafından belirtilen bir bağlamda kendisini engelini kaldırmak için girişiminde bulunulduğunu.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,7 +40,7 @@ class context_self_unblock : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[context_self_unblock](#ctor)|Fazla Yüklendi. Oluşturan bir `context_self_unblock` nesnesi.|  
+|[context_self_unblock](#ctor)|Fazla Yüklendi. Oluşturur bir `context_self_unblock` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -54,7 +54,7 @@ class context_self_unblock : public std::exception;
   
 ##  <a name="ctor"></a> context_self_unblock 
 
- Oluşturan bir `context_self_unblock` nesnesi.  
+ Oluşturur bir `context_self_unblock` nesne.  
   
 ```  
 explicit _CRTIMP context_self_unblock(_In_z_ const char* _Message) throw();
@@ -64,8 +64,8 @@ context_self_unblock() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

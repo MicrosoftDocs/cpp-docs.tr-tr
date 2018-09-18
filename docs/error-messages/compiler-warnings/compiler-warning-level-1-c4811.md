@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5644a8d372b96c72394760a362376606964c93c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1e19d428d592b9bb99c6cc396cb1771f9047fbf1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33279668"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059517"
 ---
 # <a name="compiler-warning-level-1-c4811"></a>Derleyici Uyarısı (düzey 1) C4811
-pragma değerini uygun (forScope, Göster) değeri ==  
-  
- Kullandığınızda bu uyarı **Göster** seçeneği [uygun](../../preprocessor/conform.md) pragması. *değer* geçerli Uydur değeridir.
+
+pragma değerini uyumluluk (forscope, show) değeri ==
+
+Kullandığınızda bu uyarı **Göster** seçeneği [uygun](../../preprocessor/conform.md) pragması. *değer* geçerli Uydur değeri.
