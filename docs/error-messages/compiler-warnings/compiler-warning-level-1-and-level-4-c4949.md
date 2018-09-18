@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3dbf80f85db7334d4bcb46402851cac601d258f2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f806912188ada3a4f97f0b1500e811d1271f40fe
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33279652"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077314"
 ---
 # <a name="compiler-warning-level-1-and-level-4-c4949"></a>Derleyici Uyarısı (düzey 1 ve düzey 4) C4949
-'yönetilen' ve 'yönetilmeyen' pragmaları yalnızca ile derlendiğinde anlamlı ' / clr [: seçeneği]'  
-  
- Derleyici yoksayar [yönetilen](../../preprocessor/managed-unmanaged.md) ve kaynak kodu ile derlenmiş değil ise pragmaları yönetilmeyen [/CLR](../../build/reference/clr-common-language-runtime-compilation.md). Bu uyarı, bilgi amaçlıdır.  
-  
- Aşağıdaki örnek C4949 oluşturur:  
-  
-```  
-// C4949.cpp  
-// compile with: /LD /W1  
-#pragma managed   // C4949  
-```  
-  
- Zaman **yönetilmeyen #pragma** olmadan kullanılan **/CLR**, C4949 olan düzey 4 uyarı.  
-  
- Aşağıdaki örnek C4949 oluşturur:  
-  
-```  
-// C4949b.cpp  
-// compile with: /LD /W4  
-#pragma unmanaged   // C4949  
+
+'managed' ve 'unmanaged' pragmaları yalnızca ile derlendikleri zaman anlamlıdır ' / clr [: option]'
+
+Derleyicinin yoksaydığı [yönetilen](../../preprocessor/managed-unmanaged.md) ve ile kaynak kodu derlenmemişse pragmaları yönetilmeyen [/CLR](../../build/reference/clr-common-language-runtime-compilation.md). Bu uyarı, bilgi amaçlıdır.
+
+Aşağıdaki örnek, C4949 oluşturur:
+
+```
+// C4949.cpp
+// compile with: /LD /W1
+#pragma managed   // C4949
+```
+
+Zaman **yönetilmeyen #pragma** olmadan kullanılan **/CLR**, C4949 olan düzey 4 uyarısı.
+
+Aşağıdaki örnek, C4949 oluşturur:
+
+```
+// C4949b.cpp
+// compile with: /LD /W4
+#pragma unmanaged   // C4949
 ```

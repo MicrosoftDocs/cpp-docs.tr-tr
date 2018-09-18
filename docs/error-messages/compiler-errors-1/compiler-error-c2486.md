@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 856d17d9ec816c8216553eca5bb273349ca0040e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 106d70c031a6981157875c86b1332bbe3be8a668
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197292"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081734"
 ---
 # <a name="compiler-error-c2486"></a>Derleyici Hatası C2486
-'İşlevinde 'naked' özniteliği yalnızca izin __local_sıze'  
-  
- Satır içi derleme işlevlerindeki adı `__LOCAL_SIZE` ile bildirilen işlevler için ayrılmış [naked](../../cpp/naked-cpp.md) özniteliği.  
-  
- Aşağıdaki örnek C2486 oluşturur:  
-  
-```  
-// C2486.cpp  
-// processor: x86  
-void __declspec(naked) f1() {  
-   __asm {  
-      mov   eax,   __LOCAL_SIZE  
-   }  
-}  
-void f2() {  
-   __asm {  
-      mov   eax,   __LOCAL_SIZE   // C2486  
-   }  
-}  
+
+'__Local_sıze' yalnızca 'naked' özniteliği olan işlevde izin verilir
+
+Satır içi derleme işlevlerindeki adı `__LOCAL_SIZE` bildirilen işlevler için ayrılmış [naked](../../cpp/naked-cpp.md) özniteliği.
+
+Aşağıdaki örnek, C2486 oluşturur:
+
+```
+// C2486.cpp
+// processor: x86
+void __declspec(naked) f1() {
+   __asm {
+      mov   eax,   __LOCAL_SIZE
+   }
+}
+void f2() {
+   __asm {
+      mov   eax,   __LOCAL_SIZE   // C2486
+   }
+}
 ```

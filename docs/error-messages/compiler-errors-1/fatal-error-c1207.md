@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b28db2573ac58ee46b9ac5466d341a4a1690fc3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a8042782477b402f2e09d1d67c8fd5c126647285
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33227401"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072634"
 ---
 # <a name="fatal-error-c1207"></a>Önemli hata C1207
-Yüklü çalışma zamanı sürümü tarafından desteklenmeyen Şablonlar Yönetilen  
-  
- Geçerli sürümde, ancak bir ortak dil çalışma zamanı önceki bir sürümünden bir derleyici olduğunda C1207 oluşur.  
-  
- Bazı işlevler Derleyici önceki bir çalışma zamanı sürümünde çalışmayabilir.  
-  
- C1207 gidermek için derleyici kullanmaya yönelik ortak dil çalışma zamanı sürümü yükleyin.
+
+Yönetilen şablonlar yüklü olan çalışma zamanı sürümü tarafından desteklenmiyor
+
+Geçerli sürümde, ancak bir ortak dil çalışma zamanının önceki bir sürümden bir derleyici olduğunda C1207 gerçekleşir.
+
+Bazı işlevler derleyicinin önceki bir çalışma zamanı sürümünü çalışmayabilir.
+
+C1207 gidermek için derleyicinizin ile kullanıma yöneliktir ortak dil çalışma zamanı sürümünü yükleyin.

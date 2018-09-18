@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a6835cb1f8fb6365149b91c30881b4966b4b644
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 40dddf2bb1619bd896ecf50008f80fca968ef8c9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765664"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075715"
 ---
 # <a name="ccomcachedtearoffobject-class"></a>CComCachedTearOffObject sınıfı
 
@@ -49,7 +49,7 @@ public CComObjectRootEx<contained
 
 #### <a name="parameters"></a>Parametreler
 
-`contained`  
+*yer alan*<br/>
 Bölünmüş sınıfınızı türetilen `CComTearOffObjectBase` ve desteklemek için etkinleştiriliyorken nesneyi istediğiniz arabirimleri.
 
 ## <a name="members"></a>Üyeler
@@ -121,7 +121,7 @@ CComCachedTearOffObject(void* pv);
 
 ### <a name="parameters"></a>Parametreler
 
-*BD*  
+*BD*<br/>
 [in] İşaretçi `IUnknown` , `CComCachedTearOffObject`.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -170,7 +170,7 @@ CcomContainedObject <contained> m_contained;
 
 ### <a name="parameters"></a>Parametreler
 
-*yer alan*  
+*yer alan*<br/>
 [in] Bölünmüş sınıfınızı türetilen `CComTearOffObjectBase` ve desteklemek için etkinleştiriliyorken nesneyi istediğiniz arabirimleri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -187,10 +187,10 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] İstenen arabiriminin GUID'si.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *IID*, veya arabirim bulunamazsa NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -215,6 +215,6 @@ Hata ayıklama olmayan yapılarında, her zaman 0 değerini döndürür. Hata ay
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComTearOffObject sınıfı](../../atl/reference/ccomtearoffobject-class.md)   
-[CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)   
+[CComTearOffObject Sınıfı](../../atl/reference/ccomtearoffobject-class.md)<br/>
+[CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cace3caf930c2b51bb1306b02bb7126373ddfe74
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1e03b0567b77b1ef3f64e5cf98cbe11dab502e1a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297495"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075433"
 ---
 # <a name="expression-evaluator-error-cxx0016"></a>İfade Değerlendirici Hatası CXX0016
-çok büyük sabiti  
-  
- C ifade değerlendiricisi 4.294.967.295 (0FFFFFFFF onaltılı) büyük bir işaretsiz tamsayı sabiti ya da belirtilenden yaklaşık 1.8E + 308 büyük bir kayan nokta sabiti kabul edemez.  
-  
- Bu hata için CAN0016 aynıdır.
+
+Sabit çok büyük
+
+C ifade değerlendiricisi 4.294.967.295'e (onaltılık 0FFFFFFFF) büyük bir işaretsiz tamsayı sabit veya belirtilenden yaklaşık 1.8E + 308 büyük bir kayan noktalı sabit kabul edemez.
+
+Bu hata için CAN0016 aynıdır.

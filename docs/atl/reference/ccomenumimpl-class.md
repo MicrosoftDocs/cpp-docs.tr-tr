@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aab6e168970ff740f68d1338a05d51c691fd116d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 2cf80d51cdf45b6298255a252124ace9568953b1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759993"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082541"
 ---
 # <a name="ccomenumimpl-class"></a>Ccomenumımpl sınıfı
 
@@ -43,22 +43,22 @@ Bu sınıf, numaralandırılan öğeleri bir dizi içinde depolandığı bir COM
 
 ```
 template <class Base,
-    const IID* piid, class T, class Copy>  
+    const IID* piid, class T, class Copy>
 class ATL_NO_VTABLE CComEnumImpl : public Base
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*temel*  
+*temel*<br/>
 COM Numaralandırıcı arabirimi. Bkz: [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) örneği.
 
-*piid*  
+*piid*<br/>
 Numaralandırıcı arabirimi arabirim kimliği için bir işaretçi.
 
-*T*  
+*T*<br/>
 Numaralandırıcı arabirim tarafından sunulan öğe türü.
 
-*kopyalama*  
+*kopyalama*<br/>
 Bir homojen [kopyalama İlkesi sınıfı](../../atl/atl-copy-policy-classes.md).
 
 ## <a name="members"></a>Üyeler
@@ -143,16 +143,16 @@ HRESULT Init(
 
 ### <a name="parameters"></a>Parametreler
 
-*başlayın*  
+*başlayın*<br/>
 Numaralandırılacak öğeleri içeren dizinin ilk öğesinin işaretçisi.
 
-*Son*  
+*Son*<br/>
 Konuma son sıralanması öğeleri içeren bir dizi öğesi için bir işaretçi.
 
-*pUnk*  
+*pUnk*<br/>
 [in] `IUnknown` İşaretçiyi nesnenin Numaralandırıcı yaşam süresi boyunca canlı olarak tutulmalıdır. Böyle bir nesne varsa, NULL geçirin.
 
-*bayrakları*  
+*bayrakları*<br/>
 Numaralandırıcı bir kopyasını oluşturmak veya dizinin sahipliğini olup olmadığını belirten işaretleri. Olası değerler, aşağıda açıklanmıştır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -167,13 +167,13 @@ Başka bir nesnede yer alacak bir dizi öğelerinde işaretçileri geçirebilirs
 
 *Bayrakları* parametresi Numaralandırıcı geçirilen dizi öğelerinin nasıl düşünmelisiniz belirtmenize olanak verir. *bayrakları* değerlerden birini alabilir `CComEnumFlags` sabit listesi aşağıda gösterilmektedir:
 
-```  
-enum CComEnumFlags  
-   {  
-   AtlFlagNoCopy = 0,  
-   AtlFlagTakeOwnership = 2, // BitOwn  
-   AtlFlagCopy = 3           // BitOwn | BitCopy  
-   };  
+```
+enum CComEnumFlags
+   {
+   AtlFlagNoCopy = 0,
+   AtlFlagTakeOwnership = 2, // BitOwn
+   AtlFlagCopy = 3           // BitOwn | BitCopy
+   };
 ```
 
 `AtlFlagNoCopy` dizinin ömrü numaralandırıcı tarafından denetlenmeyen anlamına gelir. Bu durumda, ya da dizi statik veya tarafından tanımlanan nesne olacak *pUnk* artık gerekli olmadığında, dizi boşaltma için sorumlu olursunuz.
@@ -195,7 +195,7 @@ STDMETHOD(Clone)(Base** ppEnum);
 
 ### <a name="parameters"></a>Parametreler
 
-*ppEnum*  
+*ppEnum*<br/>
 [out] Yeni oluşturulan bir nesneye Numaralandırıcı arabirimde geçerli Numaralandırıcının kopyalandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -256,13 +256,13 @@ STDMETHOD(Next)(ULONG celt, T* rgelt, ULONG* pceltFetched);
 
 ### <a name="parameters"></a>Parametreler
 
-*celt*  
+*celt*<br/>
 [in] İstenen öğe sayısı.
 
-*rgelt*  
+*rgelt*<br/>
 [out] Öğelerle doldurulması dizisi.
 
-*pceltFetched*  
+*pceltFetched*<br/>
 [out] Gerçekte döndürülen öğe sayısını *rgelt*. Bu kısa *celt* az olursa *celt* öğeleri listede kaldı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -291,7 +291,7 @@ STDMETHOD(Skip)(ULONG celt);
 
 ### <a name="parameters"></a>Parametreler
 
-*celt*  
+*celt*<br/>
 [in] Geçilecek öğelerin sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -304,6 +304,6 @@ E_INVALIDARG döndürür *celt* sıfırsa, küçüktür, S_FALSE döndürür *ce
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Ienumonstlımpl sınıfı](../../atl/reference/ienumonstlimpl-class.md)   
-[CComEnum sınıfı](../../atl/reference/ccomenum-class.md)   
+[IEnumOnSTLImpl Sınıfı](../../atl/reference/ienumonstlimpl-class.md)<br/>
+[CComEnum Sınıfı](../../atl/reference/ccomenum-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

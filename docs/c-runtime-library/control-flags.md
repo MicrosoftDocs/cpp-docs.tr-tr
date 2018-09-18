@@ -18,23 +18,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bfd37a3d76a39748efc0352df829a7b5c57146a9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 716e597be5d337d11d58df944bbba468e496f078
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32388296"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078068"
 ---
 # <a name="control-flags"></a>Denetim Bayrakları
-Microsoft C çalışma zamanı kitaplığı hata ayıklama sürümü aşağıdaki bayraklar denetim yığın ayırma ve raporlama işlemi kullanır. Daha fazla bilgi için bkz: [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).  
-  
-|Bayrağı|Açıklama|  
-|----------|-----------------|  
-|[_CRTDBG_MAP_ALLOC](../c-runtime-library/crtdbg-map-alloc.md)|Hata ayıklama sürümü dekiler temel heap işlevleri eşlemeleri|  
-|[_DEBUG](../c-runtime-library/debug.md)|Çalışma zamanı işlevleri hata ayıklama sürümleri kullanılmasına izin verir|  
-|[_crtDbgFlag](../c-runtime-library/crtdbgflag.md)|Hata ayıklama yığını Yöneticisi ayırmaları nasıl izler denetler|  
-  
- Bu bayrakların veya /D komut satırı seçeneği ile tanımlanan bir `#define` yönergesi. Ne zaman bayrağı ile tanımlanan `#define`, üst bilgi dosyasını dahil etmeden önce deyimi rutin bildirimleri yönergesi görünmesi gerekir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Global Değişkenler ve Standart Türler](../c-runtime-library/global-variables-and-standard-types.md)
+
+Microsoft C çalışma zamanı kitaplığı hata ayıklama sürümünü aşağıdaki bayraklar denetimi yığın ayırma ve raporlama işlemi kullanır. Daha fazla bilgi için [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).
+
+|Bayrağı|Açıklama|
+|----------|-----------------|
+|[_CRTDBG_MAP_ALLOC](../c-runtime-library/crtdbg-map-alloc.md)|Temel yığın işlevlerin hata ayıklama sürümü karşılıkları eşler.|
+|[_DEBUG](../c-runtime-library/debug.md)|Çalışma zamanı işlevlerin hata ayıklama sürümleri kullanılmasına olanak tanır|
+|[_crtDbgFlag](../c-runtime-library/crtdbgflag.md)|Hata ayıklama yığını Yöneticisi ayırmaları nasıl izlediği denetler|
+
+Bu bayraklar veya /D komut satırı seçeneği ile tanımlanan bir `#define` yönergesi. Ne zaman bayrağı ile tanımlanan `#define`, üstbilgi dosyasını dahil etmeden önce düzenli bildirimleri deyimi yönergesi yer almalıdır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Global Değişkenler ve Standart Türler](../c-runtime-library/global-variables-and-standard-types.md)

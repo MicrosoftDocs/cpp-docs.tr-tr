@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18eafefb4aa7694874c1fbdf994189bbd763826b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 749e96748698da9b2c08e805d68e0c2ba333d22f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171057"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074909"
 ---
 # <a name="compiler-error-c2110"></a>Derleyici Hatası C2110
-'+': iki işaretçisi ekleyemezsiniz  
-  
- Artı kullanarak iki işaretçi değerleri eklemek için girişimde bulunuldu ( `+` ) işleci.  
-  
- Aşağıdaki örnek C2110 oluşturur:  
-  
-```  
-// C2110.cpp  
-int main() {  
-   int a = 0;  
-   int *pa;  
-   int *pb;  
-   a = pa + pb;   // C2110  
-}  
+
+'+': iki işaretçi toplanamaz
+
+Artı kullanarak iki işaretçi değerler eklemek için bir girişimde bulunuldu ( `+` ) işleci.
+
+Aşağıdaki örnek, C2110 oluşturur:
+
+```
+// C2110.cpp
+int main() {
+   int a = 0;
+   int *pa;
+   int *pb;
+   a = pa + pb;   // C2110
+}
 ```

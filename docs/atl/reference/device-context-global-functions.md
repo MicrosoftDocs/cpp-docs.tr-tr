@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86c8e7c6fb2d1e441ab0c85f60779bbefd221d52
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ac2e56e4b13f739f61df5b37ab70689784a39882
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761072"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077548"
 ---
 # <a name="device-context-global-functions"></a>Cihaz bağlamı genel işlevleri
 
@@ -39,10 +39,10 @@ HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);
 
 ### <a name="parameters"></a>Parametreler
 
-*hdc*  
+*hdc*<br/>
 [in] Bir cihaz bağlamı NULL veya var olan işleyici.
 
-*ptd*  
+*ptd*<br/>
 [in] Bir işaretçi `DVTARGETDEVICE` hedef cihaz hakkındaki bilgileri içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri

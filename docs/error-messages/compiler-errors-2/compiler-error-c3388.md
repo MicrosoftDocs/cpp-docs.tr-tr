@@ -16,32 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 481096aa870d7e66df032f4d297c652417a7b487
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4447d2d72c2a0a56df9f3a64549f201f86ddf129
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33256147"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073479"
 ---
 # <a name="compiler-error-c3388"></a>Derleyici Hatası C3388
-'type': 'ref class' varsayılarak kısıtlama olarak izin verilmiyor ayrıştırma devam etmek için  
-  
- Bir kısıtlama üzerinde genel bir tür belirtildi, ancak kısıtlaması doğru şekilde belirtilmedi. Bkz: [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md) daha fazla bilgi için.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3388 oluşturur.  
-  
-```  
-// C3388.cpp  
-// compile with: /clr /c  
-interface class AA {};  
-  
-generic <class T>  
-where T : interface class   // C3388  
-ref class C {};  
-  
-// OK  
-generic <class T>  
-where T : AA  
-ref class D {};  
+
+'type': 'ref class' varsayılıyor bir kısıtlama olarak kullanılamaz ayrıştırmaya devam etmek için
+
+Genel türde bir kısıtlama belirtildi, ancak kısıtlaması düzgün belirtilmedi. Bkz: [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md) daha fazla bilgi için.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3388 oluşturur.
+
+```
+// C3388.cpp
+// compile with: /clr /c
+interface class AA {};
+
+generic <class T>
+where T : interface class   // C3388
+ref class C {};
+
+// OK
+generic <class T>
+where T : AA
+ref class D {};
 ```

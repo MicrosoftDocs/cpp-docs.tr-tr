@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1259ca2126211d6e91ed230a81959810b6427180
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1032c8210cc3df8f9000452ebe18576a10cf5437
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33267720"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072764"
 ---
 # <a name="compiler-error-c3834"></a>Derleyici Hatası C3834
-Geçersiz açık bir sabitleme işaretçisi cast; sabitlenmiş bir yerel değişken kullanın  
-  
- Sabitlenmiş işaretçisi açık atamaları izin verilmiyor.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3834 oluşturur.  
-  
-```  
-// C3834.cpp  
-// compile with: /clr  
-int main() {  
-   int x = 33;  
-  
-   pin_ptr<int> p = safe_cast<pin_ptr<int> >(&x);   // C3834  
-   pin_ptr<int> p2 = &x;   // OK  
-}  
-```  
+
+Geçersiz açık bir sabitleme işaretçisine dönüştürme; Bunun yerine sabitlenmiş bir yerel değişken kullanın
+
+Açık yayınları sabitlenmiş bir işaretçiye izin verilmez.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3834 oluşturur.
+
+```
+// C3834.cpp
+// compile with: /clr
+int main() {
+   int x = 33;
+
+   pin_ptr<int> p = safe_cast<pin_ptr<int> >(&x);   // C3834
+   pin_ptr<int> p2 = &x;   // OK
+}
+```

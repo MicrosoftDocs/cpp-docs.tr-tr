@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68ef867a966df027ff918db209ec6e46a5ca9d9b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 18ebfff81eed0268501c268cc6704914ebf054ef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296828"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084750"
 ---
 # <a name="linker-tools-error-lnk1196"></a>Bağlayıcı Araçları Hatası LNK1196
-geçersiz veya bozuk alma nesnesi: Bilinmeyen sürümü  
-  
- İçeri aktarma kitaplığını bozuk. Kitaplık yeniden oluşturun.
+
+içeri aktarma nesnesi geçersiz veya bozuk: Bilinmeyen sürüm
+
+İçeri aktarma kitaplığını bozuk. Kitaplığı yeniden oluşturun.

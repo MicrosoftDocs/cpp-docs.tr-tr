@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62e2867ed7e95f6b135581260103c9d5e1386fb9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bd17b03cc48555800e3c36cc3f5512506f011372
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168548"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072081"
 ---
 # <a name="compiler-error-c2157"></a>Derleyici Hatası C2157
-'function': pragma listesinde kullanmadan önce bildirilmesi gerekir  
-  
- İşlev adı işlevleri için listesinde başvurulmadan önce bildirilmemiş bir [alloc_text](../../preprocessor/alloc-text.md) pragması.  
-  
- Aşağıdaki örnek C2157 oluşturur:  
-  
-```  
-// C2157.cpp  
-// compile with: /c  
-#pragma alloc_text( "func", func)   // C2157  
-  
-// OK  
-extern "C" void func();  
-#pragma alloc_text( "func", func)  
+
+'function': pragma listesinde kullanılmadan önce bildirilmelidir
+
+İşlev adı için işlevleri listesinde başvurulan önce bildirilmedi bir [alloc_text](../../preprocessor/alloc-text.md) pragması.
+
+Aşağıdaki örnek, C2157 oluşturur:
+
+```
+// C2157.cpp
+// compile with: /c
+#pragma alloc_text( "func", func)   // C2157
+
+// OK
+extern "C" void func();
+#pragma alloc_text( "func", func)
 ```

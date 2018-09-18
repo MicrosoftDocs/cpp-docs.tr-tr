@@ -14,26 +14,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bec37b8fb00aedd83d91f1d001d77c42679ec038
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 83580d8202dada0b650b1703dcadf9b99e6771d9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33269441"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072816"
 ---
 # <a name="compiler-error-c3873"></a>Derleyici Hatası C3873
-'char': bu karakterin bir tanımlayıcı ilk karakteri olarak izin verilmiyor  
-  
- C++ derleyicisi C ++ 11 standart bir tanımlayıcı izin verilen karakter üzerinde izler. Yalnızca belirli aralıkları karakterden ve evrensel karakter adları tanımlayıcıda izin verilir. Bir tanımlayıcıda başlangıç karakteri ek kısıtlamalar. Daha fazla bilgi ve izin verilen karakterler ve evrensel karakter ad aralıkları listesi için bkz: [tanımlayıcıları](../../cpp/identifiers-cpp.md).  
-  
- Bir tanımlayıcı izin verilen karakter aralığı daha az kısıtlayıcı olduğunda C + derleniyor +/ CLI kod. / CLR kullanarak derlenmiş kod tanımlayıcılarının izlemelidir [standart ECMA-335: ortak dil altyapısı (CLI)](http://www.ecma-international.org/publications/standards/Ecma-335.htm).  
-  
- Aşağıdaki örnek C3873 oluşturur:  
-  
-```  
-// C3873.cpp  
-int main() {  
-   int \u036F_abc;   // C3873, not in allowed range for initial character  
-   int abc_\u036F;   // OK, in allowed range for non-initial character  
-}  
+
+'char': Bu karakter bir tanımlayıcının ilk karakteri olarak izin verilmez
+
+C++ Derleyici C ++ 11 standart bir tanımlayıcıda izin verilen karakterleri izler. Bir tanımlayıcı yalnızca karakterler ve evrensel karakter adları belirli aralıklarına izin verilir. Bir tanımlayıcının ilk karakteri ek kısıtlamalar. Daha fazla bilgi ve izin verilen karakter ve evrensel karakter adı aralıkları listesi için bkz: [tanımlayıcıları](../../cpp/identifiers-cpp.md).
+
+Bir tanımlayıcı izin verilen karakter aralığı daha az kısıtlayıcı olduğunda C + derleniyor +/ CLI kodu. / CLR ile derlenmiş kodda tanımlayıcıları izlemelidir [ECMA-335 standart: ortak dil altyapısı (CLI)](http://www.ecma-international.org/publications/standards/Ecma-335.htm).
+
+Aşağıdaki örnek, C3873 oluşturur:
+
+```
+// C3873.cpp
+int main() {
+   int \u036F_abc;   // C3873, not in allowed range for initial character
+   int abc_\u036F;   // OK, in allowed range for non-initial character
+}
 ```

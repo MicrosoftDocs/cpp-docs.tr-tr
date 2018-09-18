@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0d9cb2db2729e5ccb1787e2505fdf0aed1f7a12
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 90462bf9487a60ddcd1add092492e390f7ea71a1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33271966"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086694"
 ---
 # <a name="compiler-error-c3753"></a>Derleyici Hatası C3753
-bir genel özelliğe izin verilmiyor  
-  
- Genel parametre listeleri yalnızca yönetilen sınıflar, yapılar veya işlevler yer alabilir.  
-  
- Daha fazla bilgi için bkz: [genel türler](../../windows/generics-cpp-component-extensions.md) ve [özelliği](../../windows/property-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3753 oluşturur.  
-  
-```  
-// C3753.cpp  
-// compile with: /clr /c  
-ref struct A {  
-   generic <typename T>  
-   property int i;   // C3753 error  
-};  
+
+Genel bir özelliğe izin verilmez
+
+Genel parametre listeleri yalnızca yönetilen sınıflar, yapılar veya işlevler yer alabilir.
+
+Daha fazla bilgi için [genel türler](../../windows/generics-cpp-component-extensions.md) ve [özelliği](../../windows/property-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3753 oluşturur.
+
+```
+// C3753.cpp
+// compile with: /clr /c
+ref struct A {
+   generic <typename T>
+   property int i;   // C3753 error
+};
 ```

@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64cded5192c62687006b37363c4bad6e3e001a19
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 26ccf67d5e80134254268d00f46181a8b5c9d9bd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272207"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084919"
 ---
 # <a name="compiler-warning-level-1-c4406"></a>Derleyici Uyarısı (düzey 1) C4406
-işlenen üzerinde göz ardı yönergesi  
-  
- Yönergesi herhangi işlenenler almaz, ancak işleneni belirtildi.  
-  
- Derleyici verilen işlenen veya işlenenler yoksayıldı.
+
+yönergedeki işlenen yoksayıldı
+
+Yönergesi, tüm işlenenler almaz, ancak bir işlenen belirtildi.
+
+Derleyici, verilen işlenen ya da işlenen yoksayıldı.

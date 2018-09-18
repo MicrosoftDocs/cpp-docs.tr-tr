@@ -16,30 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc0ca6235e0fd4bdd22330e807464e96280ae461
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cfae8a58d9c42c9ddc3ef7779fc86f7157ba41b0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33234035"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080863"
 ---
 # <a name="compiler-error-c2785"></a>Derleyici Hatası C2785
-'declaration1' ve 'declaration2' farklı dönüş türlerine sahip  
-  
- İşlev şablonu uzmanlık dönüş türü birincil işlev şablonunun dönüş türünden farklı.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
-1.  Tüm özelleştirmeleri işlevi şablonunun tutarlılığını denetleyin.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2785 oluşturur:  
-  
-```  
-// C2785.cpp  
-// compile with: /c  
-template<class T> void f(T);  
-  
-template<> int f(int); // C2785  
-template<> void f(int); // OK  
+
+'declaration1' ve 'declaration2' farklı dönüş türlerine sahip
+
+İşlev şablonu uzmanlığı dönüş türünün birincil işlev şablonu dönüş türünden farklıdır.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+1. Tüm tutarlılık için işlev şablonunun uzmanlıkları denetleyin.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2785 oluşturur:
+
+```
+// C2785.cpp
+// compile with: /c
+template<class T> void f(T);
+
+template<> int f(int); // C2785
+template<> void f(int); // OK
 ```

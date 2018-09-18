@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2706a44b911587e61e996ee3f2456aad93925d7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ae6d1244374ce7f83a5c309dac99f4eb36906caf
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33268337"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086947"
 ---
 # <a name="compiler-error-c3815"></a>Derleyici Hatası C3815
-'get_accessor' yönteminin dönüş türü ayarlayıcı son parametrenin türü eşleşmelidir  
-  
- Özellikler, dönüş değerini bildirirken `get_accessor` yöntemi set erişimcisi yöntemi bildiriminde son parametre eşleşmesi gerekir.  
-  
- C3815 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.  
+
+'get_accessor' yöntemin dönüş türü bir ayarlayıcının son parametresinin türüyle eşleşmelidir
+
+Özellikler, dönüş değeri bildirirken `get_accessor` yöntemi son parametre kümesi erişimci metot bildiriminde eşleşmelidir.
+
+C3815 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.

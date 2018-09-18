@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39b712b44c2908df1163380a76909884e4ab87d8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 788188814de37214f397632161de55b54a28421e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755761"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073271"
 ---
 # <a name="default-atl-project-configurations"></a>Varsayılan ATL projesi yapılandırmaları
 
@@ -34,8 +34,8 @@ ATL projesi Sihirbazı, varsayılan olarak iki proje yapılandırmalarını olu�
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ATL ve C çalışma zamanı koduyla programlama](../../atl/programming-with-atl-and-c-run-time-code.md)   
-[Proje özellikleriyle çalışma](../../ide/working-with-project-properties.md)   
-[Configuration Manager iletişim kutusu](/visualstudio/ide/understanding-build-configurations)   
+[ATL ve C Çalışma Zamanı Koduyla Programlama](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
+[Proje Özellikleriyle Çalışma](../../ide/working-with-project-properties.md)<br/>
+[Configuration Manager iletişim kutusu](/visualstudio/ide/understanding-build-configurations)<br/>
 [Derleme ve Oluşturma](/visualstudio/ide/compiling-and-building-in-visual-studio)
 

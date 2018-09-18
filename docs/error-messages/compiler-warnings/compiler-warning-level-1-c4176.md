@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1e00e4bdc18b8adeb95d2425c8b122ffde867cd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f173e132a2bd0d54c32fb0c2f7ae3b13dff1657d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274868"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085712"
 ---
 # <a name="compiler-warning-level-1-c4176"></a>Derleyici Uyarısı (düzey 1) C4176
-'alt': #pragma bileşen tarayıcı için bilinmeyen bir alt bileşen  
-  
- **Bileşen** pragma geçersiz bir alt bileşen içerir. Belirli bir ad başvurular dışlamak için kullanmalısınız **başvuruları** adından önce seçeneği.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4176.cpp  
-// compile with: /W1 /LD  
-#pragma component(browser, off, i)  // C4176  
-#pragma component(browser, off, references, i) // ok  
+
+'alt': #pragma bileşen tarayıcısı için Bilinmeyen alt bileşen
+
+**Bileşen** pragması, geçersiz bir alt bileşen içeriyor. Belirli bir ad başvurularını tutmak için kullanmalısınız **başvuruları** adından önce seçeneği.
+
+## <a name="example"></a>Örnek
+
+```
+// C4176.cpp
+// compile with: /W1 /LD
+#pragma component(browser, off, i)  // C4176
+#pragma component(browser, off, references, i) // ok
 ```

@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57fa405f1137c8627b439110514f63fd3e62d83b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7a660192b11e98bc34871e1f845c872fe27fb9ee
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33278138"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076989"
 ---
 # <a name="compiler-warning-level-1-c4470"></a>Derleyici Uyarısı (düzey 1) C4470
-/ CLR altında göz ardı kayan nokta denetim pragmaları  
-  
- Float denetim pragmaları:  
-  
--   [fenv_access](../../preprocessor/fenv-access.md)  
-  
--   [float_control](../../preprocessor/float-control.md)  
-  
--   [fp_contract](../../preprocessor/fp-contract.md)  
-  
- hiçbir etkisi altında [/CLR](../../build/reference/clr-common-language-runtime-compilation.md).  
-  
- Aşağıdaki örnek C4470 oluşturur:  
-  
-```  
-// C4470.cpp  
-// compile with: /clr /W1 /LD  
-#pragma float_control(except, on)   // C4470  
+
+kayan noktalı denetim pragma'ları / CLR altında yoksayılır
+
+Kayan noktalı denetim pragma'ları:
+
+- [fenv_access](../../preprocessor/fenv-access.md)
+
+- [float_control](../../preprocessor/float-control.md)
+
+- [fp_contract](../../preprocessor/fp-contract.md)
+
+hiçbir etkisi altında [/CLR](../../build/reference/clr-common-language-runtime-compilation.md).
+
+Aşağıdaki örnek, C4470 oluşturur:
+
+```
+// C4470.cpp
+// compile with: /clr /W1 /LD
+#pragma float_control(except, on)   // C4470
 ```

@@ -24,14 +24,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 34eb8cb8a6b839f8a4dcd8d699c7fcb4851d57f6
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: c94152a9322b64acafe91e1fb0eb34ab82aa2902
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466006"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081305"
 ---
 # <a name="ctable-class"></a>CTable Sınıfı
+
 Bir basit satır kümesine (parametresi olmayan) doğrudan erişim için bir yol sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -44,14 +45,16 @@ class CTable :
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *TAccessor*  
- Bir erişimci sınıfı.  
+
+*TAccessor*<br/>
+Bir erişimci sınıfı.  
   
- *CRowset*  
- Bir satır kümesi sınıfı.  
+*CRowset*<br/>
+Bir satır kümesi sınıfı.  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldbcli.h  
+
+**Başlık:** atldbcli.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -62,9 +65,11 @@ class CTable :
 |[açın](#open)|Tablo açılır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bkz: [CCommand](../../data/oledb/ccommand-class.md) bir satır kümesine erişmek için bir komutu nasıl çalıştıracağını hakkında bilgi için.  
+
+Bkz: [CCommand](../../data/oledb/ccommand-class.md) bir satır kümesine erişmek için bir komutu nasıl çalıştıracağını hakkında bilgi için.  
 
 ## <a name="open"></a> CTable::Open
+
 Tablo açılır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -87,30 +92,34 @@ HRESULT Open(const CSession& session,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *Oturumu*  
- [in] Tablonun en iyi duruma açıldığında oturumu.  
+
+*Oturumu*<br/>
+[in] Tablonun en iyi duruma açıldığında oturumu.  
   
- *wszTableName*  
- [in] Açmak için tablonun adını bir Unicode dize olarak geçirildi.  
+*wszTableName*<br/>
+[in] Açmak için tablonun adını bir Unicode dize olarak geçirildi.  
   
- *szTableName*  
- [in] Açmak için tablonun adı bir ANSI dizesine geçirildi.  
+*szTableName*<br/>
+[in] Açmak için tablonun adı bir ANSI dizesine geçirildi.  
   
- *dbid*  
- [in] `DBID` Açmak için tablo.  
+*dbid*<br/>
+[in] `DBID` Açmak için tablo.  
   
- *pPropSet*  
- [in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde. Varsayılan değeri NULL özellik belirtir.  
+*pPropSet*<br/>
+[in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde. Varsayılan değeri NULL özellik belirtir.  
   
- *ulPropSets*  
- [in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) yapıları geçirilen *pPropSet* bağımsız değişken.  
+*ulPropSets*<br/>
+[in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) yapıları geçirilen *pPropSet* bağımsız değişken.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT.  
+
+Standart bir HRESULT.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla ayrıntı için [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Daha fazla ayrıntı için [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)   
+
+[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)   

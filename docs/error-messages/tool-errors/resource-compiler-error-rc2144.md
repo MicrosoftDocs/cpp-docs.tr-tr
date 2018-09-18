@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b6f83f937e881cdee16c22120e6ac1839f7ad76
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 62f9eb2b25919a2336c36a459ef41eece447a490
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320492"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080499"
 ---
 # <a name="resource-compiler-error-rc2144"></a>Kaynak Derleyicisi Hatası RC2144
-BİRİNCİL dil kimliği sayı değil  
-  
- BİRİNCİL dil kimliği onaltılık dil kimliği olmalıdır Bkz: [dil ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md) içinde *çalışma zamanı kitaplığı başvurusu* geçerli dil kimliklerinin listesi.  
-  
- Bu hata, ayrıca kaynaklar eklediyseniz ve sildi ortaya çıkabilir. Bir aracı kullanarak RC dosyası. Bu sorunu gidermek için açın. RC dosya bir metin düzenleyicisinde ve kullanılmayan tüm kaynakları temizleme el ile.
+
+BİRİNCİL dil kimliği bir sayı değil
+
+BİRİNCİL dil kimliği bir onaltılık dil kimliği olmalıdır Bkz: [dil ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md) içinde *çalışma zamanı kitaplığı başvurusu* geçerli dil kimlikleri listesi.
+
+Kaynaklar eklediyseniz ve silindiği de bu hata oluşabilir. RC dosyası bir araç kullanarak. Bu sorunu gidermek için açın. RC dosyası bir metin düzenleyicisinde ve kullanılmayan tüm kaynakları temizlemek el ile.

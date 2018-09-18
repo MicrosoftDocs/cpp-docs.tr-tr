@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac67538a10d39bc68059b0a7d1aaf73a381abb2a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: df6226bfd2fc11f05f894091f4ff02c145d09e11
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244139"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072725"
 ---
 # <a name="compiler-error-c2856"></a>Derleyici Hatası C2856
-\#pragma hdrstop #if bloğunun içine olamaz  
-  
- `hdrstop` Pragma koşullu derleme blok gövdesi içinde yerleştirilen olamaz.  
-  
- Taşıma `#pragma hdrstop` deyimi içinde yer almayan bir alan için bir `#if/#endif` bloğu.
+
+\#pragma hdrstop bir #if bloğu içinde yer alamaz
+
+`hdrstop` Pragma koşullu derleme blok gövdesi içinde yerleştirilmiş olamaz.
+
+Taşıma `#pragma hdrstop` deyimi içinde yer almayan bir alana bir `#if/#endif` blok.

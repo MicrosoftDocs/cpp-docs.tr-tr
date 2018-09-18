@@ -16,48 +16,51 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f078b128bfb3cd50707208e78b49ee1b8b3c5c35
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 70492be13d312c5d167990cfa0b6c0d741e1055f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33282723"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080109"
 ---
 # <a name="compiler-warning-level-1-c4835"></a>Derleyici Uyarısı (düzey 1) C4835
-'değişkeni': yönetilen kod ilk ana bilgisayarı bütünleştirilmiş kodunda yürütülene dek dışarı aktarılan veriler için Başlatıcı çalıştırılmaz  
-  
- Yönetilen bileşenleri arasında verilere erişirken değil yerel C++ içe aktarma işlemi kullanın ve mekanizmaları verme önerilir. Bunun yerine, bir yönetilen türü içinde veri üyeleri bildirme ve meta verileri ile başvuru `#using` istemci. Daha fazla bilgi için bkz: [#using yönergesi](../../preprocessor/hash-using-directive-cpp.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4835 oluşturur.  
-  
-```  
-// C4835.cpp  
-// compile with: /W1 /clr /LD  
-int f() { return 1; }  
-int n = 9;  
-  
-__declspec(dllexport) int m = f();   // C4835  
-__declspec(dllexport) int *p = &n;   // C4835  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, önceki örnekte, değişkenlerin değerini beklendiği gibi olduğunu gösteren yerleşik bileşeni kullanır.  
-  
-```  
-// C4835_b.cpp  
-// compile with: /clr C4835.lib  
-#include <stdio.h>  
-__declspec(dllimport) int m;  
-__declspec(dllimport) int *p;  
-  
-int main() {  
-   printf("%d\n", m);  
-   printf("%d\n", p);  
-}  
-```  
-  
-```Output  
-0  
-268456008  
+
+'variable': dışarı aktarılan veriler için Başlatıcı, önce yönetilen kod ana bilgisayar derlemesinde yürütülene kadar çalıştırılmayacak
+
+Yönetilen bileşenleri arasında veri erişirken değil yerel C++ alma kullanın ve dışarı aktarma mekanizması önerilir. Bunun yerine, bir yönetilen türün içinde veri üyeleri bildirme ve meta veriler ile başvuru `#using` istemci. Daha fazla bilgi için [#using yönergesi](../../preprocessor/hash-using-directive-cpp.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4835 oluşturur.
+
+```
+// C4835.cpp
+// compile with: /W1 /clr /LD
+int f() { return 1; }
+int n = 9;
+
+__declspec(dllexport) int m = f();   // C4835
+__declspec(dllexport) int *p = &n;   // C4835
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, önceki örnekte, değişkenlerin değerini beklendiği gibi olduğunu gösteren yerleşik bileşeni kullanır.
+
+```
+// C4835_b.cpp
+// compile with: /clr C4835.lib
+#include <stdio.h>
+__declspec(dllimport) int m;
+__declspec(dllimport) int *p;
+
+int main() {
+   printf("%d\n", m);
+   printf("%d\n", p);
+}
+```
+
+```Output
+0
+268456008
 ```

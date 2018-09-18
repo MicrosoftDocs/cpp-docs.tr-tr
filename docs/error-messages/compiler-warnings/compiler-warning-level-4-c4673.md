@@ -16,51 +16,52 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aecb4b3590a3cb1a1b055cd1e3377d00c5d0e5bb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1ab61a71a747b1fd917db579a57700107d12da87
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295931"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085829"
 ---
 # <a name="compiler-warning-level-4-c4673"></a>Derleyici Uyarısı (düzey 4) C4673
-Aşağıdaki türlerden 'tanımlayıcısı' atma catch sitede değerlendirilmeyecek  
-  
- İçinde bir throw nesnesi işlenemiyor **catch** bloğu. İşlenemez her türü hemen bu uyarıyı içeren satırı aşağıdaki hata çıktısında listelenir. Her işlenmemiş türü kendi uyarı sahiptir. Daha fazla bilgi için belirli her türünün uyarıyı okuyun.  
-  
- Aşağıdaki örnek C4673 oluşturur:  
-  
-```  
-// C4673.cpp  
-// compile with: /EHsc /W4  
-class Base {  
-private:  
-   char * m_chr;  
-public:  
-   Base() {  
-      m_chr = 0;  
-   }  
-  
-   ~Base() {  
-      if(m_chr)  
-         delete m_chr;  
-   }  
-};  
-  
-class Derv : private Base {  
-public:  
-   Derv() {}  
-   ~Derv() {}  
-};  
-  
-int main() {  
-   try {  
-      Derv D1;  
-      // delete previous line, uncomment the next line to resolve  
-      // Base D1;  
-      throw D1;   // C4673  
-   }  
-  
-   catch(...) {}  
-}  
+
+Aşağıdaki türleri 'identifier' atma catch sitede değerlendirilmeyecek
+
+İçinde bir throw nesnesi işlenemiyor **catch** blok. İşlenen her tür bu uyarı içeren satırı takip hata çıktısında listelenir. Her nezpracovaný typ kendi uyarı var. Daha fazla bilgi için belirli her türü için uyarıyı okuyun.
+
+Aşağıdaki örnek, C4673 oluşturur:
+
+```
+// C4673.cpp
+// compile with: /EHsc /W4
+class Base {
+private:
+   char * m_chr;
+public:
+   Base() {
+      m_chr = 0;
+   }
+
+   ~Base() {
+      if(m_chr)
+         delete m_chr;
+   }
+};
+
+class Derv : private Base {
+public:
+   Derv() {}
+   ~Derv() {}
+};
+
+int main() {
+   try {
+      Derv D1;
+      // delete previous line, uncomment the next line to resolve
+      // Base D1;
+      throw D1;   // C4673
+   }
+
+   catch(...) {}
+}
 ```

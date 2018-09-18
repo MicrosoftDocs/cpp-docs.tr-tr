@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: d2ff59b6fc9c4f893f87fbb59b0531c5ba8917fb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f461958a09212f5beb562b5b8e92fa6f39711ec5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106381"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082280"
 ---
 # <a name="autogcrootreset"></a>auto_gcroot::reset
 Geçerli ait bir nesneyi yok ve isteğe bağlı olarak yeni bir nesne elinde gerçekleştirin.  
@@ -39,8 +39,8 @@ void reset(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_new_ptr`  
- (İsteğe bağlı) Yeni nesne.  
+*_new_ptr*<br/>
+(İsteğe bağlı) Yeni nesne.  
   
 ## <a name="example"></a>Örnek  
   
@@ -93,7 +93,7 @@ done
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\auto_gcroot.h >  
+ **Üst bilgi dosyası** \<msclr\auto_gcroot.h >  
   
  **Namespace** msclr  
   

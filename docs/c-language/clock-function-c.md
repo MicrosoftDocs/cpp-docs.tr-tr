@@ -14,17 +14,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 11e7a127fdf09fbc3704d6e06786e3bd76350941
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a2f52e4f551f4ae59e7d3386af8bdba2d2fe5a0c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381687"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077353"
 ---
 # <a name="clock-function-c"></a>clock İşlevi (C)
-**ANSI 4.12.2.1** dönem için `clock` işlevi  
-  
- `clock` işlevinin dönemi, C programı yürütmeye başladığında başlar (0 değeri ile). 1'de ölçülen kez döndürür /**CLOCKS_PER_SEC** (hangi eşittir 1/1000 için Microsoft C).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık İşlevleri](../c-language/library-functions.md)
+
+**ANSI 4.12.2.1** dönemi `clock` işlevi
+
+`clock` işlevinin dönemi, C programı yürütmeye başladığında başlar (0 değeri ile). 1'de ölçülen süreleri döndürür /**CLOCKS_PER_SEC** (hangi eşittir 1/1000 Microsoft C için).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kitaplık İşlevleri](../c-language/library-functions.md)

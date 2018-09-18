@@ -16,34 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a8aa09f0eb38364179be1608c3f230fe8059509
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8685b75684827b4f202317e1df72a8248f1b41dc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250422"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085205"
 ---
 # <a name="compiler-error-c3451"></a>Derleyici Hatası C3451
-'öznitelik': 'type ' yönetilmeyen özniteliğini uygulayamazsınız  
-  
- C++ öznitelik CLR türüne uygulanamıyor. Bkz: [C++ öznitelikleri başvurusu](../../windows/cpp-attributes-reference.md) daha fazla bilgi için.  
-  
- Daha fazla bilgi için bkz: [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).  
-  
- Bu hata için Visual C++ 2005 yapıldığı derleyici uyumluluğu iş sonucunda oluşturulabilir: [UUID](../../windows/uuid-cpp-attributes.md) özniteliği artık CLR programlama kullanarak kullanıcı tanımlı bir öznitelikte izin verilir. Bunun yerine <xref:System.Runtime.InteropServices.GuidAttribute> kullanın.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3451 oluşturur.  
-  
-```  
-// C3451.cpp  
-// compile with: /clr /c  
-using namespace System;  
-[ attribute(AttributeTargets::All) ]  
-public ref struct MyAttr {};  
-  
-[ MyAttr, helpstring("test") ]   // C3451  
-// try the following line instead  
-// [ MyAttr ]  
-public ref struct ABC {};  
+
+'attribute': Yönetilmeyen öznitelik 'türü için ' uygulanamaz
+
+Bir C++ özniteliği bir CLR türüne uygulanamıyor. Bkz: [C++ öznitelikleri başvurusu](../../windows/cpp-attributes-reference.md) daha fazla bilgi için.
+
+Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).
+
+Bu hata için Visual C++ 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak oluşturulan: [UUID](../../windows/uuid-cpp-attributes.md) özniteliğine artık CLR programlama kullanarak kullanıcı tanımlı bir öznitelikte izin verilir. Bunun yerine <xref:System.Runtime.InteropServices.GuidAttribute> kullanın.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3451 oluşturur.
+
+```
+// C3451.cpp
+// compile with: /clr /c
+using namespace System;
+[ attribute(AttributeTargets::All) ]
+public ref struct MyAttr {};
+
+[ MyAttr, helpstring("test") ]   // C3451
+// try the following line instead
+// [ MyAttr ]
+public ref struct ABC {};
 ```

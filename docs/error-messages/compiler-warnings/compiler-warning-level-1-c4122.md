@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41f8547bc75c013a59ebd3ac8e1682049da54e3e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 37f7928b1aa89eb66da95b4383084b2011387e0e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277755"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075428"
 ---
 # <a name="compiler-warning-level-1-c4122"></a>Derleyici Uyarısı (düzey 1) C4122
-'function': alloc_text yalnızca C bağlantı işlevleriyle uygulanabilir  
-  
- **Alloc_text** ile bildirilen işlevler uygulandığı pragma **extern c**. Dış C++ işlevleri ile kullanılamaz.  
-  
- Pragma göz ardı edilir.
+
+'function': alloc_text yalnızca C bağlaması olan işlevler için geçerlidir
+
+**Alloc_text** pragma ile bildirilen işlevlerle uygulandığı **extern c**. Dış C++ işlevleri ile kullanılamaz.
+
+Pragma yoksayıldı.

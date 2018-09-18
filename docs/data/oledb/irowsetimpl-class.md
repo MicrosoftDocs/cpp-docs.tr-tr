@@ -102,14 +102,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c339ffcf3fb32c7ff8ad45fca792a91c96848d9e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 17e353f044a3b003736589f52c538101e18fd7ea
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703735"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085556"
 ---
 # <a name="irowsetimpl-class"></a>IRowsetImpl Sınıfı
+
 Bir uygulamasını sağlar `IRowset` arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -126,20 +127,22 @@ class ATL_NO_VTABLE IRowsetImpl : public RowsetInterface
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *T*  
- Sınıfınız, türetilen `IRowsetImpl`.  
+
+*T*<br/>
+Sınıfınız, türetilen `IRowsetImpl`.  
   
- *RowsetInterface*  
- Öğesinden türetilen bir sınıf `IRowsetImpl`.  
+*RowsetInterface*<br/>
+Öğesinden türetilen bir sınıf `IRowsetImpl`.  
   
- *RowClass*  
- Depolama birimi için `HROW`.  
+*RowClass*<br/>
+Depolama birimi için `HROW`.  
   
- *MapClass*  
- Sağlayıcı tarafından tutulan tüm olan satır işleyicilerini depolama birimi.  
+*MapClass*<br/>
+Sağlayıcı tarafından tutulan tüm olan satır işleyicilerini depolama birimi.  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldb.h  
+
+**Başlık:** atldb.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -169,9 +172,11 @@ class ATL_NO_VTABLE IRowsetImpl : public RowsetInterface
 |[m_rgRowHandles](#rgrowhandles)|Satır işleyicilerini listesi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\)) temel satır kümesi arabirimidir.  
+
+[IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\)) temel satır kümesi arabirimidir.  
 
 ## <a name="addrefrows"></a> Irowsetımpl::addrefrows
+
 Var olan bir satır işleyici için bir başvuru sayısı ekler.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -184,9 +189,11 @@ STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="createrow"></a> Irowsetımpl::createrow
+
 Bir yardımcı yöntemi tarafından aranır [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) yeni ayrılacak `HROW`.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -198,19 +205,22 @@ HRESULT CreateRow(DBROWOFFSET lRowsOffset,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *lRowsOffset*  
- Oluşturulan satır imleç konumu.  
+
+*lRowsOffset*<br/>
+Oluşturulan satır imleç konumu.  
   
- *cRowsObtained*  
- Oluşturulan satır sayısını gösteren kullanıcıya geri başvuru geçirildi.  
+*cRowsObtained*<br/>
+Oluşturulan satır sayısını gösteren kullanıcıya geri başvuru geçirildi.  
   
- *rgRows*  
- Bir dizi `HROW`s döndürülen yeni oluşturulan satır tutamaçları çağırana.  
+*rgRows*<br/>
+Bir dizi `HROW`s döndürülen yeni oluşturulan satır tutamaçları çağırana.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Satır varsa, bu yöntemin çağırdığı [AddRefRows](../../data/oledb/irowsetimpl-addrefrows.md) ve döndürür. Aksi takdirde, yeni bir örneğini RowClass Şablon değişkeni ayırır ve bu gruba ekler [m_rgRowHandles](../../data/oledb/irowsetimpl-m-rgrowhandles.md).  
+
+Satır varsa, bu yöntemin çağırdığı [AddRefRows](../../data/oledb/irowsetimpl-addrefrows.md) ve döndürür. Aksi takdirde, yeni bir örneğini RowClass Şablon değişkeni ayırır ve bu gruba ekler [m_rgRowHandles](../../data/oledb/irowsetimpl-m-rgrowhandles.md).  
   
 ## <a name="getdata"></a> Irowsetımpl::GetData
+
 Satır satır kümesinin kopyadan verileri alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -222,18 +232,21 @@ STDMETHOD(GetData )(HROW hRow,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: ['yı](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: ['yı](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
- Bazı parametreler karşılık *OLE DB Programcının Başvurusu* açıklanan farklı adlar parametrelerinin `IRowset::GetData`:  
+Bazı parametreler karşılık *OLE DB Programcının Başvurusu* açıklanan farklı adlar parametrelerinin `IRowset::GetData`:  
   
 |OLE DB Şablon parametreleri|*OLE DB Programcının Başvurusu* parametreleri|  
 |--------------------------------|------------------------------------------------|  
 |*pDstData*|*pData*|  
   
 ### <a name="remarks"></a>Açıklamalar  
- OLE DB veri dönüştürme DLL kullanarak veri dönüştürme da işler. 
+
+OLE DB veri dönüştürme DLL kullanarak veri dönüştürme da işler. 
 
 ## <a name="getdbstatus"></a> Irowsetımpl::getdbstatus
+
 Belirtilen alan için DBSTATUS durumu bayrakları döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -244,6 +257,7 @@ virtual DBSTATUS GetDBStatus(RowClass* currentRow,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
+
 *currentRow*<br/>
 [in] Geçerli satır.  
   
@@ -251,9 +265,11 @@ virtual DBSTATUS GetDBStatus(RowClass* currentRow,
 [in] Sütun durumu istenmektedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) sütunun bayrakları. 
+
+[DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) sütunun bayrakları. 
 
 ## <a name="getnextrows"></a> Irowsetımpl::GetNextRows
+
 Satırlar sıralı olarak, önceki konumdan hatırlamak getirir.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -267,9 +283,11 @@ STDMETHOD(GetNextRows )(HCHAPTER hReserved,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowset::GetNextRows](/previous-versions/windows/desktop/ms709827\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
+
+Bkz: [IRowset::GetNextRows](/previous-versions/windows/desktop/ms709827\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="irowsetimpl"></a> Irowsetımpl::ırowsetımpl
+
 Oluşturucu.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -279,9 +297,11 @@ IRowsetImpl();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Genellikle doğrudan bu yöntemi çağırmanız gerekmez.  
+
+Genellikle doğrudan bu yöntemi çağırmanız gerekmez.  
 
 ## <a name="refrows"></a> Irowsetımpl::refrows
+
 Çağıran [AddRefRows](../../data/oledb/irowsetimpl-addrefrows.md) ve [ReleaseRows](../../data/oledb/irowsetimpl-releaserows.md) artırın veya mevcut bir satırı işlemek için bir başvuru sayısı sürüm.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -295,12 +315,15 @@ HRESULT RefRows(DBCOUNTITEM cRows,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT değerini.  
+
+Standart bir HRESULT değerini.  
 
 ## <a name="releaserows"></a> Irowsetımpl::releaserows
+
 Satır serbest bırakır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -314,9 +337,11 @@ STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="restartposition"></a> Irowsetımpl::restartposition
+
 Sonraki getirme konumunu ilk konumuna yeniden konumlandırır; diğer bir deyişle, satır kümesi ilk kez yüklendiğinde konumuna oluşturuldu.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -326,12 +351,15 @@ STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Satır kümesi konumuna kadar tanımsızdır `GetNextRow` çağrılır. Çağırarak geriye dönük bir rowet taşıyabilirsiniz `RestartPosition` ve getirilirken veya geriye doğru kaydırma.  
+
+Satır kümesi konumuna kadar tanımsızdır `GetNextRow` çağrılır. Çağırarak geriye dönük bir rowet taşıyabilirsiniz `RestartPosition` ve getirilirken veya geriye doğru kaydırma.  
 
 ## <a name="setdbstatus"></a> Irowsetımpl::setdbstatus
+
 Belirtilen alan için DBSTATUS durumu bayraklarını ayarlar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -343,22 +371,26 @@ virtual HRESULT SetDBStatus(DBSTATUS* statusFlags,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *statusFlags*  
- [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) bayraklar için sütunu ayarlayın.  
+
+*statusFlags*<br/>
+[DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) bayraklar için sütunu ayarlayın.  
   
- *currentRow*  
- Geçerli satır.  
+*currentRow*<br/>
+Geçerli satır.  
   
- *ColumnInfo*  
- Sütun için durumu ayarlanıyor.  
+*ColumnInfo*<br/>
+Sütun için durumu ayarlanıyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT değerini.  
+
+Standart bir HRESULT değerini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sağlayıcı DBSTATUS_S_ISNULL ve DBSTATUS_S_DEFAULT için özel işleme sağlamak için bu işlevi geçersiz kılar. 
+
+Sağlayıcı DBSTATUS_S_ISNULL ve DBSTATUS_S_DEFAULT için özel işleme sağlamak için bu işlevi geçersiz kılar. 
 
 ## <a name="bcanfetchback"></a> Irowsetımpl::m_bcanfetchback
+
 Bir sağlayıcının geri getirme destekleyip desteklemediğini gösterir.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -368,9 +400,11 @@ unsigned m_bCanFetchBack:1;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bağlı `DBPROP_CANFETCHBACKWARDS` özelliğinde `DBPROPSET_ROWSET` grubu. Sağlayıcı desteklemelidir `DBPROP_CANFETCHBACKWARDS` için `m_bCanFetchBackwards` olmasını **true**.  
+
+Bağlı `DBPROP_CANFETCHBACKWARDS` özelliğinde `DBPROPSET_ROWSET` grubu. Sağlayıcı desteklemelidir `DBPROP_CANFETCHBACKWARDS` için `m_bCanFetchBackwards` olmasını **true**.  
 
 ## <a name="bcanscrollback"></a> Irowsetımpl::m_bcanscrollback
+
 Bir sağlayıcı, imleç kaydırma geriye doğru sahip olup olmadığını gösterir.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -380,9 +414,11 @@ unsigned  m_bCanScrollBack:1;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bağlı `DBPROP_CANSCROLLBACKWARDS` özelliğinde `DBPROPSET_ROWSET` grubu. Sağlayıcı desteklemelidir `DBPROP_CANSCROLLBACKWARDS` için `m_bCanFetchBackwards` olmasını **true**. 
+
+Bağlı `DBPROP_CANSCROLLBACKWARDS` özelliğinde `DBPROPSET_ROWSET` grubu. Sağlayıcı desteklemelidir `DBPROP_CANSCROLLBACKWARDS` için `m_bCanFetchBackwards` olmasını **true**. 
 
 ## <a name="breset"></a> Irowsetımpl::m_breset
+
 İmleç konumu satır kümesinde tanımlı olup olmadığını belirlemek için kullanılan bir bit bayrağı.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -392,9 +428,11 @@ unsigned m_bReset:1;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tüketici çağırırsa [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) bir negatif `lOffset` veya *cRows* ve `m_bReset` true ise `GetNextRows` satır sonuna taşır. Varsa `m_bReset` yanlış tüketici uygunluk OLE DB belirtimi ile bir hata kodunu alır. `m_bReset` Bayrağı ayarlanmış **true** satır kümesi ilk oluşturulduğunda ve tüketici çağırdığında [Irowsetımpl::restartposition](../../data/oledb/irowsetimpl-restartposition.md). Ayarlayın **false** çağırdığınızda `GetNextRows`. 
+
+Tüketici çağırırsa [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) bir negatif `lOffset` veya *cRows* ve `m_bReset` true ise `GetNextRows` satır sonuna taşır. Varsa `m_bReset` yanlış tüketici uygunluk OLE DB belirtimi ile bir hata kodunu alır. `m_bReset` Bayrağı ayarlanmış **true** satır kümesi ilk oluşturulduğunda ve tüketici çağırdığında [Irowsetımpl::restartposition](../../data/oledb/irowsetimpl-restartposition.md). Ayarlayın **false** çağırdığınızda `GetNextRows`. 
 
 ## <a name="irowset"></a> Irowsetımpl::m_irowset
+
 İmleç temsil eden satır kümesi için bir dizin.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -404,6 +442,7 @@ DBROWOFFSET m_iRowset;
 ```  
 
 ## <a name="rgrowhandles"></a> Irowsetımpl::m_rgrowhandles
+
 Şu anda yanıt olarak sağlayıcısı tarafından bulunan satır işleyicilerini haritasını `GetNextRows`.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -413,9 +452,11 @@ MapClass m_rgRowHandles;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Satır işleyicilerini çağırarak kaldırılır `ReleaseRows`. Bkz: [Irowsetımpl genel bakış](../../data/oledb/irowsetimpl-class.md) tanımını *MapClass*.  
+
+Satır işleyicilerini çağırarak kaldırılır `ReleaseRows`. Bkz: [Irowsetımpl genel bakış](../../data/oledb/irowsetimpl-class.md) tanımını *MapClass*.  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)    
- [CSimpleRow Sınıfı](../../data/oledb/csimplerow-class.md)
+
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
+[CSimpleRow Sınıfı](../../data/oledb/csimplerow-class.md)

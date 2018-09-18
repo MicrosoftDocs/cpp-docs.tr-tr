@@ -45,12 +45,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fff071ad298d379dd8d063d5f71287da9a567b49
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 74d36c7b13be3653a0c17f763e37447d5541c5a3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755569"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086466"
 ---
 # <a name="catlservicemodulet-class"></a>CAtlServiceModuleT sınıfı
 
@@ -62,16 +62,16 @@ Bu sınıf, bir hizmet uygular.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T, UINT nServiceNameID>  
+template <class T, UINT nServiceNameID>
 class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınıza türetilen `CAtlServiceModuleT`.
 
-*nServiceNameID*  
+*nServiceNameID*<br/>
 Hizmet kaynak tanımlayıcısı.
 
 ## <a name="members"></a>Üyeler
@@ -163,7 +163,7 @@ void Handler(DWORD dwOpcode) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dwOpcode*  
+*dwOpcode*<br/>
 İşleyici işlemi tanımlayan anahtar. Ayrıntılar için konusundaki yorumlara bakın.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -246,10 +246,10 @@ void __cdecl LogEvent(LPCTSTR pszFormat, ...) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pszFormat*  
+*pszFormat*<br/>
 Olay günlüğüne yazmak için dize.
 
-...  
+*...*<br/>
 Olay günlüğüne yazılması için isteğe bağlı ek dizeleri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -366,7 +366,7 @@ void OnUnknownRequest(DWORD /* dwOpcode*/) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dwOpcode*  
+*dwOpcode*<br/>
 Ayrılmış.
 
 ##  <a name="parsecommandline"></a>  CAtlServiceModuleT::ParseCommandLine
@@ -379,10 +379,10 @@ bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpCmdLine*  
+*lpCmdLine*<br/>
 Komut satırı.
 
-*pnRetCode*  
+*pnRetCode*<br/>
 Kayıt için (bir yerde gerçekleştirirse) karşılık gelen HRESULT.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -403,7 +403,7 @@ HRESULT PreMessageLoop(int nShowCmd) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nShowCmd*  
+*nShowCmd*<br/>
 Bu parametre için geçirilen [CAtlExeModuleT::PreMessageLoop](../../atl/reference/catlexemodulet-class.md#premessageloop).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -424,7 +424,7 @@ inline HRESULT RegisterAppId(bool bService = false) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*bService*  
+*bService*<br/>
 Hizmet olarak kaydetmek için doğru olması gerekir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -441,7 +441,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nShowCmd*  
+*nShowCmd*<br/>
 Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü. SW_HIDE varsayılan değerdir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -462,10 +462,10 @@ void ServiceMain(DWORD dwArgc, LPTSTR* lpszArgv) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dwArgc*  
+*dwArgc*<br/>
 Argc bağımsız değişkeni.
 
-*lpszArgv*  
+*lpszArgv*<br/>
 Argv bağımsız değişkeni.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -484,7 +484,7 @@ void SetServiceStatus(DWORD dwState) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dwState*  
+*dwState*<br/>
 Yeni durum. Bkz: [artırılmış](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) için olası değerler.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -501,7 +501,7 @@ HRESULT Start(int nShowCmd) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nShowCmd*  
+*nShowCmd*<br/>
 Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -562,7 +562,7 @@ int WinMain(int nShowCmd) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nShowCmd*  
+*nShowCmd*<br/>
 Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -575,5 +575,5 @@ Bu yöntem, komut satırında işler (ile [CAtlServiceModuleT::ParseCommandLine]
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CAtlExeModuleT sınıfı](../../atl/reference/catlexemodulet-class.md)   
+[CAtlExeModuleT Sınıfı](../../atl/reference/catlexemodulet-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

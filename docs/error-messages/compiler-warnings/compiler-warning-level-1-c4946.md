@@ -16,45 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 072e43f4750d2f64fb0f9dc56478a68699b98c9e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f7186848ffc005721fca430d53558100789eae76
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291937"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086661"
 ---
 # <a name="compiler-warning-level-1-c4946"></a>Derleyici Uyarısı (düzey 1) C4946
-reinterpret_cast ilgili sınıflar arasında kullanıldı: 'class1' ve 'class2'  
-  
- Kullanmayın [reinterpret_cast](../../cpp/reinterpret-cast-operator.md) ilgili türleri arasında yayınlanamıyor. Kullanmak [static_cast](../../cpp/static-cast-operator.md) bunun yerine veya çok biçimli türleri için kullanmak [dynamic_cast](../../cpp/dynamic-cast-operator.md).  
-  
- Varsayılan olarak, bu uyarıyı kapalıdır. Daha fazla bilgi için bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).  
-  
- Aşağıdaki kod örneğinde C4946 oluşturur:  
-  
-```  
-// C4946.cpp  
-// compile with: /W1  
-#pragma warning (default : 4946)  
-class a {  
-public:  
-   a() : m(0) {}  
-   int m;  
-};  
-  
-class b : public virtual a {  
-};  
-  
-class b2 : public virtual a {  
-};  
-  
-class c : public b, public b2 {  
-};  
-  
-int main() {  
-   c* pC = new c;  
-   a* pA = reinterpret_cast<a*>(pC);   // C4946  
-   // try the following line instead  
-   // a* pA = static_cast<a*>(pC);  
-}  
+
+reinterpret_cast ilgili sınıflar arasında kullanıldı: 'class1' ve 'class2'
+
+Kullanmayın [reinterpret_cast](../../cpp/reinterpret-cast-operator.md) ilgili türleri arasında dönüştürme için. Kullanma [static_cast](../../cpp/static-cast-operator.md) yerine veya çok biçimli türler için [dynamic_cast](../../cpp/dynamic-cast-operator.md).
+
+Varsayılan olarak, bu uyarıyı kapalıdır. Daha fazla bilgi için [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+
+Aşağıdaki kod örneği C4946 oluşturur:
+
+```
+// C4946.cpp
+// compile with: /W1
+#pragma warning (default : 4946)
+class a {
+public:
+   a() : m(0) {}
+   int m;
+};
+
+class b : public virtual a {
+};
+
+class b2 : public virtual a {
+};
+
+class c : public b, public b2 {
+};
+
+int main() {
+   c* pC = new c;
+   a* pA = reinterpret_cast<a*>(pC);   // C4946
+   // try the following line instead
+   // a* pA = static_cast<a*>(pC);
+}
 ```

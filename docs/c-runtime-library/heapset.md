@@ -32,106 +32,106 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c45c4cc3e6e6ffe23378ce0b4f26383369e92058
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6b9700ce3f003488ba394302ac011937ea116a90
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391593"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085218"
 ---
 # <a name="heapset"></a>_heapset
-Yığınları en az tutarlılığını denetler ve ücretsiz girişler için belirtilen değere ayarlar.  
-  
+
+En az tutarlılık yığınlar denetler ve ücretsiz girişler için belirtilen değere ayarlar.
+
 > [!IMPORTANT]
->  Bu işlev artık kullanılmıyor. Visual Studio 2015'te başlayarak, CRT kullanılamaz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _heapset(   
-   unsigned int fill   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `fill`  
- Karakter doldurun.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `_heapset` Malloc.h içinde tanımlanan tamsayı bildirim sabitlerden birini döndürür.  
-  
- `_HEAPBADBEGIN`  
- İlk üst bilgileri bulunamadı veya geçersiz.  
-  
- `_HEAPBADNODE`  
- Yığın bozulmuş veya hatalı düğüm bulundu.  
-  
- `_HEAPEMPTY`  
- Yığın başlatılmadı.  
-  
- `_HEAPOK`  
- Yığın tutarlı gibi görünüyor.  
-  
- Ayrıca, bir hata oluşursa, `_heapset` ayarlar `errno` için `ENOSYS`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_heapset` İşlevi boş bellek konumları veya yanlışlıkla üzerine düğümleri gösterir.  
-  
- `_heapset` en az tutarlılık yığında denetler ve her bir öbek 's ücretsiz girişlere bayt ayarlar `fill` değeri. Bu bilinen bir değerle bırakılmış belleğe kasıtsız olarak yazılmış veri içerir ve ücretsiz düğümler hangi Öbek bellek konumlarını içeren gösterir. İşletim sistemini desteklemiyor, `_heapset`işlevi (örneğin, Windows 98), döndürür `_HEAPOK` ve ayarlar `errno` için `ENOSYS`.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
-|-------------|---------------------|---------------------|  
-|`_heapset`|\<malloc.h >|\<errno.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_heapset.c  
-// This program checks the heap and  
-// fills in free entries with the character 'Z'.  
-  
-#include <malloc.h>  
-#include <stdio.h>  
-#include <stdlib.h>  
-  
-int main( void )  
-{  
-   int heapstatus;  
-   char *buffer;  
-  
-   if( (buffer = malloc( 1 )) == NULL ) // Make sure heap is   
-      exit( 0 );                        //    initialized       
-   heapstatus = _heapset( 'Z' );        // Fill in free entries   
-   switch( heapstatus )  
-   {  
-   case _HEAPOK:  
-      printf( "OK - heap is fine\n" );  
-      break;  
-   case _HEAPEMPTY:  
-      printf( "OK - heap is empty\n" );  
-      break;  
-   case _HEAPBADBEGIN:  
-      printf( "ERROR - bad start of heap\n" );  
-      break;  
-   case _HEAPBADNODE:  
-      printf( "ERROR - bad node in heap\n" );  
-      break;  
-   }  
-   free( buffer );  
-}  
-```  
-  
-```Output  
-OK - heap is fine  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bellek ayırma](../c-runtime-library/memory-allocation.md)   
- [_heapadd](../c-runtime-library/heapadd.md)   
- [_heapchk](../c-runtime-library/reference/heapchk.md)   
- [_heapmin](../c-runtime-library/reference/heapmin.md)   
- [_heapwalk](../c-runtime-library/reference/heapwalk.md)
+>  Bu işlev artık kullanılmıyor. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+int _heapset(
+   unsigned int fill
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*Dolgu*<br/>
+Karakter girin.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+`_heapset` Malloc.h içinde tanımlı aşağıdaki tam sayı bildirim sabitlerinden birini döndürür.
+
+|||
+|-|-|
+| `_HEAPBADBEGIN`  | İlk üstbilgi bilgileri geçersiz veya bulunamadı.  |
+| `_HEAPBADNODE`  | Yığın zarar görmüş veya bozuk düğümü bulunamadı.  |
+| `_HEAPEMPTY`  | Yığın başlatılmadı.  |
+| `_HEAPOK`  | Yığın tutarlı görünüyor.  |
+
+Ayrıca, bir hata oluşursa `_heapset` ayarlar `errno` için `ENOSYS`.
+
+## <a name="remarks"></a>Açıklamalar
+
+`_heapset` İşlevi boş bellek konumları veya yanlışlıkla üzerine olan düğümleri gösterir.
+
+`_heapset` Yığındaki en alt düzeyde tutarlılık olup olmadığını denetler ve ardından yığının ücretsiz girişine ait her baytın ayarlar `fill` değeri. Bu bilinen değer, hangi yığın bellek konumları ücretsiz düğümler içerebilir ve serbest bırakılan belleğe yanlışlıkla yazılmış veri içerir gösterir. İşletim sistemi desteklemiyorsa `_heapset`(örneğin, Windows 98), işlev döndürür `_HEAPOK` ve ayarlar `errno` için `ENOSYS`.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
+|-------------|---------------------|---------------------|
+|`_heapset`|\<malloc.h >|\<errno.h >|
+
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md) giriş.
+
+## <a name="example"></a>Örnek
+
+```
+// crt_heapset.c
+// This program checks the heap and
+// fills in free entries with the character 'Z'.
+
+#include <malloc.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main( void )
+{
+   int heapstatus;
+   char *buffer;
+
+   if( (buffer = malloc( 1 )) == NULL ) // Make sure heap is
+      exit( 0 );                        //    initialized
+   heapstatus = _heapset( 'Z' );        // Fill in free entries
+   switch( heapstatus )
+   {
+   case _HEAPOK:
+      printf( "OK - heap is fine\n" );
+      break;
+   case _HEAPEMPTY:
+      printf( "OK - heap is empty\n" );
+      break;
+   case _HEAPBADBEGIN:
+      printf( "ERROR - bad start of heap\n" );
+      break;
+   case _HEAPBADNODE:
+      printf( "ERROR - bad node in heap\n" );
+      break;
+   }
+   free( buffer );
+}
+```
+
+```Output
+OK - heap is fine
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bellek Ayırma](../c-runtime-library/memory-allocation.md)<br/>
+[_heapadd](../c-runtime-library/heapadd.md)<br/>
+[_heapchk](../c-runtime-library/reference/heapchk.md)<br/>
+[_heapmin](../c-runtime-library/reference/heapmin.md)<br/>
+[_heapwalk](../c-runtime-library/reference/heapwalk.md)

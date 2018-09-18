@@ -16,27 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d7614d07cf98ae9fe857809bf9400d36a48ab0b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3997bc0744bf1e1db34fe7ce1de666ebd3e3b8cd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33255064"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078575"
 ---
 # <a name="compiler-error-c3420"></a>Derleyici Hatası C3420
-'sonlandırıcıyı': bir sonlandırıcı sanal olamaz  
-  
- Bir sonlandırıcı yalnızca neredeyse olmayan kapsayan türünden çağrılabilir. Bu nedenle, bir sanal Sonlandırıcı bildirmek için hatadır.  
-  
- Daha fazla bilgi için bkz: [yok ediciler ve sonlandırıcılar nasıl yapılır: sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI)](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3420 oluşturur.  
-  
-```  
-// C3420.cpp  
-// compile with: /clr /c  
-ref class R {  
-   virtual !R() {}   // C3420  
-};  
+
+'Sonlandırıcı': bir sonlandırıcı sanal olamaz
+
+Bir sonlandırıcı yalnızca sanal olmayan kapsayan türdeki çağrılabilir. Bu nedenle, bunu sanal bir sonlandırıcı bildirmek için bir hatadır.
+
+Daha fazla bilgi için [yok ediciler ve sonlandırıcılar, nasıl yapılır: sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI)](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3420 oluşturur.
+
+```
+// C3420.cpp
+// compile with: /clr /c
+ref class R {
+   virtual !R() {}   // C3420
+};
 ```

@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 914619c2790a904530f6efe2324549402d9b6785
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: fa3f3356cf3fdddeeb4245986549fa1bd2e12ae7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758163"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085231"
 ---
 # <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY makroları  
 
@@ -72,7 +72,8 @@ COM_INTERFACE_ENTRY( x )
 ```
 ### <a name="parameters"></a>Parametreler
 
-[in] bir arabirimin adını x sınıfı nesnenizin doğrudan türetir.
+*x*<br/>
+[in] Doğrudan sınıf nesnenizin öğesinden türetilen arabirimin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -101,10 +102,10 @@ COM_INTERFACE_ENTRY2(x, x2)
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 [in] Bir nesneden kullanıma sunmak istediğiniz arabirimin adı.
 
-*x2*  
+*x2*<br/>
 [in] Devralma dalı adını *x* sunulur.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -125,10 +126,10 @@ COM_INTERFACE_ENTRY_IID(iid, x)
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] Kullanıma sunulan arabiriminin GUID'si.
 
-*x*  
+*x*<br/>
 [in] Vtable ortaya tarafından tanımlanan arabirimi sınıfının adı *IID*.
 
 ### <a name="example"></a>Örnek
@@ -145,13 +146,13 @@ COM_INTERFACE_ENTRY2_IID(iid, x, x2)
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] Arabirim için belirtiyorsanız GUID.
 
-*x*  
+*x*<br/>
 [in] Doğrudan sınıf nesnenizin öğesinden türetilen arabirimin adı.
 
-*x2*  
+*x2*<br/>
 [in] Doğrudan, sınıfı nesne öğesinden türer ikinci bir arabirimin adı.
 
 ##  <a name="com_interface_entry_aggregate"></a>  COM_INTERFACE_ENTRY_AGGREGATE
@@ -164,10 +165,10 @@ COM_INTERFACE_ENTRY_AGGREGATE(iid, punk)
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] İçin sorgulanan arabiriminin GUID'si.
 
-*Punk*  
+*Punk*<br/>
 [in] Adı bir `IUnknown` işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -188,7 +189,7 @@ COM_INTERFACE_ENTRY_AGGREGATE_BLIND(punk)
 
 ### <a name="parameters"></a>Parametreler
 
-*Punk*  
+*Punk*<br/>
 [in] Adı bir `IUnknown` işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -209,13 +210,13 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] İçin sorgulanan arabiriminin GUID'si.
 
-*Punk*  
+*Punk*<br/>
 [in] Adı bir `IUnknown` işaretçi. COM eşlemesini içeren sınıfın bir üyesi olmanız gerekir.
 
-*CLSID*  
+*CLSID*<br/>
 [in] Tanımlayıcı oluşturulur toplamanın *punk* null.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -234,10 +235,10 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
 
 ### <a name="parameters"></a>Parametreler
 
-*Punk*  
+*Punk*<br/>
 [in] Adı bir `IUnknown` işaretçi. COM eşlemesini içeren sınıfın bir üyesi olmanız gerekir.
 
-*CLSID*  
+*CLSID*<br/>
 [in] Tanımlayıcı oluşturulur toplamanın *punk* null.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -258,7 +259,7 @@ COM_INTERFACE_ENTRY_BREAK(x)
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 [in] Arabirim tanımlayıcısını oluşturmak için kullanılan metin.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -275,13 +276,13 @@ COM_INTERFACE_ENTRY_CACHED_TEAR_OFF(iid, x, punk)
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] Bölünmüş arabirim GUİD'si.
 
-*x*  
+*x*<br/>
 [in] Arabirimini uygulayan sınıfın adı.
 
-*Punk*  
+*Punk*<br/>
 [in] Adı bir `IUnknown` işaretçi. COM eşlemesini içeren sınıfın bir üyesi olmanız gerekir. Sınıfı nesne oluşturucuda NULL olarak başlatılması gerekir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -302,10 +303,10 @@ COM_INTERFACE_ENTRY_TEAR_OFF(iid, x)
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] Bölünmüş arabirim GUİD'si.
 
-*x*  
+*x*<br/>
 [in] Arabirimini uygulayan sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -326,7 +327,7 @@ COM_INTERFACE_ENTRY_CHAIN(classname)
 
 ### <a name="parameters"></a>Parametreler
 
-*ClassName*  
+*ClassName*<br/>
 [in] Geçerli nesnenin temel sınıf.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -349,13 +350,13 @@ COM_INTERFACE_ENTRY_FUNC(iid, dw, func)
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] Kullanıma sunulan arabiriminin GUID'si.
 
-*dw*  
+*dw*<br/>
 [in] Parametre geçirilen aracılığıyla *func*.
 
-*FUNC*  
+*FUNC*<br/>
 [in] Döndüreceği işlev işaretçisi *IID*.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -376,10 +377,10 @@ COM_INTERFACE_ENTRY_FUNC_BLIND(dw, func)
 
 ### <a name="parameters"></a>Parametreler
 
-*dw*  
+*dw*<br/>
 [in] Parametre geçirilen aracılığıyla *func*.
 
-*FUNC*  
+*FUNC*<br/>
 [in] Bu girdiye COM eşlemesine işlendiğinde çağrılan işlev.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -396,7 +397,7 @@ COM_INTERFACE_ENTRY_NOINTERFACE(x)
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 [in] Arabirim tanımlayıcısını oluşturmak için kullanılan metin.
 
 ### <a name="remarks"></a>Açıklamalar

@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: c4f9e54ce2bcd6ff402e6ad239b269a3e314286d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a8a8b87afba71836876554e1abbe04014cb09772
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33161037"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075091"
 ---
 # <a name="ptroperator"></a>ptr::operator=
-Bir COM nesnesi ekler bir `com::ptr`.  
+Bir COM nesnesine iliştirir bir `com::ptr`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,22 +39,22 @@ ptr<_interface_type> % operator=(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_right`  
- Eklenecek COM arabirimi işaretçisi.  
+*_right*<br/>
+COM arabirimi eklemek için işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  İzleme başvurusu üzerinde `com::ptr`.  
   
 ## <a name="exceptions"></a>Özel Durumlar  
- Varsa `com::ptr` zaten bir COM nesnesi başvuru sahibi `operator=` oluşturur <xref:System.InvalidOperationException>.  
+ Varsa `com::ptr` bir COM nesnesine bir başvuru zaten sahip `operator=` oluşturur <xref:System.InvalidOperationException>.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir COM nesnesi atama bir `com::ptr` COM nesnesine başvuruyor ancak arayanın referansı bırakmaz.  
+ Bir COM nesnesine atamak bir `com::ptr` COM nesnesine başvuruyor ancak arayanın referansı serbest bırakmaz.  
   
- Bu işleç aynı etkiye sahip `Attach`.  
+ Bu işleç aynı etkiye sahiptir `Attach`.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek kullanan bir CLR sınıfı uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesnesi.  `ReplaceDocument` Üye fonksiyonu ilk çağrıları `Release` herhangi nesne ve kullandığı önceden ait `operator=` belge yeni bir nesne eklemek için.  
+ Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne.  `ReplaceDocument` İlk işlev çağrıları, üye `Release` herhangi nesnesi ve ardından kullanan önceden ait `operator=` yeni bir belge nesnesi eklemek için.  
   
 ```  
 // comptr_op_assign.cpp  
@@ -129,7 +129,7 @@ int main() {
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\com\ptr.h >  
+ **Üst bilgi dosyası** \<msclr\com\ptr.h >  
   
  **Namespace** msclr::com  
   

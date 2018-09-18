@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e5695ac6184d7f31eadf0f5ed1bbd2260a0f4ff
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 992064c75493b15dd4e1b382f2789131dd4f05db
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33241519"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075376"
 ---
 # <a name="compiler-error-c2945"></a>Derleyici Hatası C2945
-Açık örnekleme bir şablon sınıfı uzmanlık başvurmuyor  
-  
- Şablonlu olmayan bir şey açıkça örneği oluşturulamıyor.
+
+Açık örnek oluşturma Şablon sınıfı bir özelleştirmeye başvurmuyor
+
+Şablonlu değil bir şey açıkça örneği oluşturulamıyor.

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c570a5f1fbbb58fcbe43a0fdd34e577b1113cdae
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b02bd2bf8605e5babb5bd7036b69f1d394b759d4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317596"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076287"
 ---
 # <a name="resource-compiler-fatal-error-rc1067"></a>Kaynak Derleyicisi Önemli Hatası RC1067
-Derleyici sınırı: tanımlayıcısı taştı iç arabellek  
-  
- Derleyici iç sınırı aşıldı.
+
+Derleyici sınırı: tanımlayıcısı iç arabelleği taşırdı
+
+Bir iç derleyici sınırı aşıldı.

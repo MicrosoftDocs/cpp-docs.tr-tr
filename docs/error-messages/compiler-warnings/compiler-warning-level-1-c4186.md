@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc40d2b9f43d041c7b04ba2bc77a0aba0630274c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0bfc722a07d2ddb10e5be8c6d8fde60956b297c8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277598"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46079784"
 ---
 # <a name="compiler-warning-level-1-c4186"></a>Derleyici Uyarısı (düzey 1) C4186
-\#içeri aktarma öznitelik 'özniteliği' sayısı bağımsız değişkenler gerektirir; göz ardı  
-  
- A `#import` özniteliğine sahip yanlış sayıda bağımsız değişken.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4186.cpp  
-// compile with: /W1 /c  
-#import "stdole2.tlb" no_namespace("abc") rename("a","b","c")  // C4186  
-```  
-  
- `no_namespace` Bağımsız değişkenler özniteliği alır. **Yeniden adlandırma** özniteliği yalnızca iki bağımsız değişkenleri alır.
+
+\#içeri aktarma öznitelik 'özniteliği' sayısı bağımsız değişkenler gerektiriyor; yoksayıldı
+
+A `#import` özniteliğinde yanlış sayıda bağımsız değişken.
+
+## <a name="example"></a>Örnek
+
+```
+// C4186.cpp
+// compile with: /W1 /c
+#import "stdole2.tlb" no_namespace("abc") rename("a","b","c")  // C4186
+```
+
+`no_namespace` Özniteliği bağımsız değişken alır. **Yeniden Adlandır** özniteliği yalnızca iki bağımsız değişken alır.

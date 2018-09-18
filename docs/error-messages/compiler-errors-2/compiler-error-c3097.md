@@ -16,38 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 817e6095a0141d33352946acf52a765578dafcb3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c99e6667e696c2ae1cff36e0d4dfcf771c060080
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247485"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075195"
 ---
 # <a name="compiler-error-c3097"></a>Derleyici Hatası C3097
-'öznitelik': öznitelik kapsamı, ile ' derleme:' veya ' modül:'  
-  
- Genel bir öznitelik yanlış kullanıldı.  
-  
- Daha fazla bilgi için bkz: [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3097 oluşturur.  
-  
-```  
-// C3097.cpp  
-// compile with: /clr /c  
-using namespace System;   
-  
-[AttributeUsage(AttributeTargets::All, AllowMultiple = true)]  
-public ref class Attr : public Attribute {  
-public:  
-   Attr(int t) : m_t(t) {}  
-   int m_t;  
-};  
-  
-[Attr(10)];   // C3097  
-[assembly:Attr(10)];   // OK  
-  
-[Attr(10)]   // OK  
-public ref class MyClass {};  
+
+'attribute': özniteliğin kapsamı belirlenmelidir ' derleme:' veya ' modül:'
+
+Genel öznitelik yanlış kullanıldı.
+
+Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3097 oluşturur.
+
+```
+// C3097.cpp
+// compile with: /clr /c
+using namespace System;
+
+[AttributeUsage(AttributeTargets::All, AllowMultiple = true)]
+public ref class Attr : public Attribute {
+public:
+   Attr(int t) : m_t(t) {}
+   int m_t;
+};
+
+[Attr(10)];   // C3097
+[assembly:Attr(10)];   // OK
+
+[Attr(10)]   // OK
+public ref class MyClass {};
 ```

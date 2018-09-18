@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a23d055dec45693f292978039c5c5108e34e7a9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f446cc09ab8799714141aefb45fa4aefc8b940e7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169094"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078458"
 ---
 # <a name="compiler-error-c2227"></a>Derleyici Hatası C2227
-'üye ->' ın sol sınıfı/struct/union/genel tür işaret etmesi gerekir  
-  
- İşlenen solundaki `->` bir işaretçi bir sınıf, yapı veya birleşim değil.  
-  
- Aşağıdaki örnek C2227 oluşturur:  
-  
-```  
-// C2227.cpp  
-int *pInt;  
-struct S {  
-public:  
-    int member;  
-} s, *pS = &s;  
-  
-int main() {  
-   pInt->member = 0;   // C2227 pInt points to an int  
-   pS->member = 0;   // OK  
-}  
+
+Sol 'üye ->', sınıf/yapı/birleşim/genel türe işaret etmelidir
+
+İşlenen solundaki `->` bir sınıf, yapı veya birleşim işaretçisi değil.
+
+Aşağıdaki örnek, C2227 oluşturur:
+
+```
+// C2227.cpp
+int *pInt;
+struct S {
+public:
+    int member;
+} s, *pS = &s;
+
+int main() {
+   pInt->member = 0;   // C2227 pInt points to an int
+   pS->member = 0;   // OK
+}
 ```

@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e0651f8c2b48ea69e7137ffa3415ddaffd8fe44
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ef276bdecf675a178f43f22e3aef88f4ed1c73cd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319916"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071191"
 ---
 # <a name="resource-compiler-fatal-error-rc1052"></a>Kaynak Derleyicisi Önemli Hatası RC1052
-Derleyici sınırı: #if veya #ifdef blokları çok fazla iç içe  
-  
- Program için en fazla izin verilen iç içe geçme düzeyi aşıldı `#if` ve `#ifdef` yönergeleri.  
-  
- Bu hata oluşabilir tarafından bu önişlemci yönergeleri kullanan dosyaları içerir.  
-  
- Bu sorunu düzeltin, sayısını azaltmak için iç içe `#if` ve `#ifdef` kaynak dosyanızdaki yönergeleri. Kaynak dosyanızda bulunan başlık dosyaları sorunun nedeni, sayısını, iç içe geçmiş `#if` ve `#ifdef` üstbilgi dosyaları yönergeleri. Bu mümkün değilse, oluşturma ve yeni bir üstbilgi dosyası mevcut eklenen üst bilgi dosyaları önişlemci çalıştırarak kaynak dosyanızda dahil olmak üzere göz önünde bulundurun. Daha fazla bilgi için bkz: [/P (dosyaya Önişle)](../../build/reference/p-preprocess-to-a-file.md) derleyici seçeneği.
+
+Derleyici sınırı: #if veya #ifdef bloklar çok derin iç içe
+
+Program için en fazla izin verilen iç içe geçme düzeyi aşıldı `#if` ve `#ifdef` yönergeleri.
+
+Bu hataya neden bu ön işlemci yönergeleri kullanan dosyalar arasında vardır.
+
+Bu sorunu gidermek için sayısını azaltmak için iç içe geçmiş `#if` ve `#ifdef` kaynak dosyanızdaki yönergeleri. Sorun, kaynak dosyasında bulunan üst bilgi dosyaları tarafından neden oluyorsa, sayısını azaltın. iç içe geçmiş `#if` ve `#ifdef` üstbilgi dosyalarında yönergeleri. Bu mümkün değilse, oluşturmak ve yeni bir üstbilgi dosyası mevcut dahil edilen üst bilgi dosyaları önişlemci çalıştırarak kaynak dosyanızı dahil olmak üzere göz önünde bulundurun. Daha fazla bilgi için [/P (dosyaya ön işleme)](../../build/reference/p-preprocess-to-a-file.md) derleyici seçeneği.

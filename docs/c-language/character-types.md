@@ -15,25 +15,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cd26eea35da463211b144e98faa0636f5204f6f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0c62633d8c7532f15d725018d80f045cf3a37838
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32383699"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081006"
 ---
 # <a name="character-types"></a>Karakter Türleri
-Harfinin öncesinde olmayan bir tamsayı karakter sabiti **L** türüne sahip `int`. Tek bir karakter içeren bir tamsayı karakter sabiti sayısal değer bir tamsayı olarak yorumlanan karakter değeridir. Örneğin, sayısal değer karakterinin `a` 97 ondalık ve onaltılık 61.  
-  
- Sözdizimsel olarak, bir "joker karakter sabiti" harfinin önekli karakter sabiti olduğunda **L**. Joker karakter sabiti türünde `wchar_t`, STDDEF içinde tanımlanan bir tamsayı yazın. H üstbilgi dosyası. Örneğin:  
-  
-```  
-char    schar =  'x';   /* A character constant          */  
-wchar_t wchar = L'x';   /* A wide-character constant for   
-                            the same character           */  
-```  
-  
- Joker karakter sabitleri 16 bit uzunluğunda ve genişletilmiş yürütme karakter kümesi üyeleri belirtin. Karakter türüne göre gösterilemeyecek kadar büyük harfler express izin `char`. Bkz: [çok baytlı ve geniş karakterler](../c-language/multibyte-and-wide-characters.md) geniş karakterler hakkında daha fazla bilgi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Karakter Sabitleri](../c-language/c-character-constants.md)
+
+Harfinin öncesinde olmayan bir tamsayı karakter sabitinin **L** türünde `int`. Tek bir karakter içeren tamsayı karakter sabitinin değeri bir tamsayı olarak yorumlanır karakterin sayısal değerdir. Örneğin, karakterin sayısal değerini `a` 97 ondalık ve 61 onaltılık.
+
+Sözdizimi, "geniş karakter sabiti" harfi ile önek olarak kullanılan bir karakter sabiti olduğunu **L**. Türü bir geniş karakter sabitinin `wchar_t`, STDDEF içinde tanımlanan bir tamsayı türü. H üst bilgi dosyası. Örneğin:
+
+```
+char    schar =  'x';   /* A character constant          */
+wchar_t wchar = L'x';   /* A wide-character constant for
+                            the same character           */
+```
+
+Geniş karakter sabitleri, 16 bit genişliğinde olan ve genişletilmiş yürütme karakter kümesi üyeleri belirtin. Karakter türüne göre gösterilemeyecek kadar çok büyük harfler express izin `char`. Bkz: [çok baytlı ve geniş karakterler](../c-language/multibyte-and-wide-characters.md) geniş karakterler hakkında daha fazla bilgi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Karakter Sabitleri](../c-language/c-character-constants.md)

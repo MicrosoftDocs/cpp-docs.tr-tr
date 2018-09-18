@@ -16,35 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55221cc233c74e612dd4a521641be90a6dbf9314
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 750295da5d2da42ae4c2aac4fbb04dd208a7f32c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272031"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072218"
 ---
 # <a name="compiler-warning-c4950"></a>Derleyici Uyarısı C4950
-'type_or_member': kullanımdan kaldırılmış olarak işaretlenmiş  
-  
-Bir üye ya da türü ile kullanımdan kaldırılmış olarak işaretlenmiş <xref:System.ObsoleteAttribute> özniteliği.  
-  
-C4950 her zaman hata olarak verilir. Kullanarak bu uyarıyı devre dışı bırakabilir [uyarı](../../preprocessor/warning.md) pragma yönergesi veya [/wd](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği.  
-  
-## <a name="example"></a>Örnek  
-Aşağıdaki örnek C4950 oluşturur:  
-  
-```cpp  
-// C4950.cpp  
-// compile with: /clr  
-using namespace System;  
-  
-// Any reference to Func3 should generate an error with message  
-[System::ObsoleteAttribute("Will be removed in next version", true)]  
-Int32 Func3(Int32 a, Int32 b) {  
-   return (a + b);  
-}  
-  
-int main() {  
-   Int32 MyInt3 = ::Func3(2, 2);   // C4950  
-}  
+
+'type_or_member': eski olarak işaretlendi
+
+Bir üyenin veya türün ile eski olarak işaretlendi <xref:System.ObsoleteAttribute> özniteliği.
+
+C4950 her zaman hata olarak verilir. Bu uyarıyı devre dışı kullanarak açabilirsiniz [uyarı](../../preprocessor/warning.md) pragma yönergesi veya [/wd](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4950 oluşturur:
+
+```cpp
+// C4950.cpp
+// compile with: /clr
+using namespace System;
+
+// Any reference to Func3 should generate an error with message
+[System::ObsoleteAttribute("Will be removed in next version", true)]
+Int32 Func3(Int32 a, Int32 b) {
+   return (a + b);
+}
+
+int main() {
+   Int32 MyInt3 = ::Func3(2, 2);   // C4950
+}
 ```

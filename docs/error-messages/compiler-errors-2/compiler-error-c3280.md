@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b47d9f552b84db462734d3ae7dd83fd1257d2044
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ed102abc0f46b896b70cb4681db4b0924b6c5822
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249235"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085127"
 ---
 # <a name="compiler-error-c3280"></a>Derleyici Hatası C3280
-'class': üye işlevi bir yönetilen türü yönetilmeyen işlev derlenemez  
-  
- Sınıf üyesi işlevleri yönetilmeyen işlevleri derlenemez yönetilen.  
-  
- Aşağıdaki örnek C3280 oluşturur:  
-  
-```  
-// C3280_2.cpp  
-// compile with: /clr  
-ref struct A {  
-   void func();  
-};  
-  
-#pragma managed(push,off)  
-  
-void A::func()   // C3280  
-{  
-}  
-  
-#pragma managed(pop)  
-```  
+
+'class': bir yönetilen türün üye işlevi yönetilmeyen bir işlev olarak derlenemez
+
+Sınıf üyesi işlevleri, yönetilmeyen bir işlev derlenemez yönetilen.
+
+Aşağıdaki örnek, C3280 oluşturur:
+
+```
+// C3280_2.cpp
+// compile with: /clr
+ref struct A {
+   void func();
+};
+
+#pragma managed(push,off)
+
+void A::func()   // C3280
+{
+}
+
+#pragma managed(pop)
+```

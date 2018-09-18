@@ -20,18 +20,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 733d090073fe2ed08a0499ea205c2377b4bdb289
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: eb9d21eee8e561e2caa8a7c4088774435d3ce273
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679703"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080447"
 ---
 # <a name="scope-c"></a>Kapsam (C++)
 
 Bir program öğesi gibi bir sınıf, işlev veya değişkeni bildirdiğinizde, onun adı yalnızca "görülen" ve programınızın belirli bölümlerinde kullanılan. Bir ad olduğu görünür bağlam adı verilen kendi *kapsam*. Örneğin, bir değişken bildirirseniz `x` bir işlev içinde `x` yalnızca bu işlev gövdesi içinde görünür olur. Sahip *yerel kapsama*. Programınızda başka değişkenler tarafından aynı ada sahip olabilir; farklı kapsamlarda oldukları sürece tek tanım kuralı ihlal değildir ve herhangi bir hata ortaya çıkar.
 
-Otomatik statik olmayan değişkenler, kapsam, bunlar oluşturulur ve programı belleğe yok belirler. 
+Otomatik statik olmayan değişkenler, kapsam, bunlar oluşturulur ve programı belleğe yok belirler.
 
 Kapsam altı tür vardır:
 
@@ -51,9 +51,9 @@ Kapsam altı tür vardır:
 
 Kapalı bir bloğunda bildirerek adları gizleyebilirsiniz. Aşağıdaki şekilde, `i` böylece ile ilişkili bir değişkeni gizleme iç bloğu içinde yeniden tanımlanıyor `i` Dıştaki bloğun kapsamında.
 
- ![Blok&#45;kapsam ad gizleme](../cpp/media/vc38sf1.png "vc38SF1") blok kapsamı ve ad gizleme
+![Blok&#45;kapsam ad gizleme](../cpp/media/vc38sf1.png "vc38SF1") blok kapsamı ve ad gizleme
 
- Şekilde gösterildiği programının çıktısı şöyledir:
+Şekilde gösterildiği programının çıktısı şöyledir:
 
 ```cpp
 i = 0
@@ -67,7 +67,7 @@ i = 0
 
 ## <a name="hiding-class-names"></a>Sınıf adlarını gizleme
 
- İşlev, nesne veya değişken veya aynı kapsamda Numaralandırıcı bildirerek sınıf adları gizleyebilirsiniz. Ancak, sınıf adı hala anahtar sözcüğü öneki erişilebilir **sınıfı**.
+İşlev, nesne veya değişken veya aynı kapsamda Numaralandırıcı bildirerek sınıf adları gizleyebilirsiniz. Ancak, sınıf adı hala anahtar sözcüğü öneki erişilebilir **sınıfı**.
 
 ```cpp
 // hiding_class_names.cpp
@@ -91,7 +91,7 @@ double Account = 15.37;            // Hides class name Account
 
 int main()
 {
-    class Account Checking( Account ); // Qualifies Account as 
+    class Account Checking( Account ); // Qualifies Account as
                                        //  class name
 
     cout << "Opening account with balance of: "
@@ -103,13 +103,13 @@ int main()
 > [!NOTE]
 > Herhangi bir sınıf adı yerleştirin (`Account`) anahtar sözcüğü sınıfı kapsamlı genel değişken hesaptan ayırmak için kullanılması gereken için çağrılır. Sınıf adı kapsam çözümleme işleci (:) sol tarafında oluştuğunda, bu kuralı uygulanmaz. Kapsam çözümleme işlecinin sol tarafındaki adlar her zaman sınıf adları olarak kabul edilir.
 
- Aşağıdaki örnek, bir işaretçi bir nesne türü bildirmek gösterilmiştir `Account` kullanarak **sınıfı** anahtar sözcüğü:
+Aşağıdaki örnek, bir işaretçi bir nesne türü bildirmek gösterilmiştir `Account` kullanarak **sınıfı** anahtar sözcüğü:
 
 ```cpp
 class Account *Checking = new class Account( Account );
 ```
 
- `Account` Önceki deyim (parantez) başlatıcısında genel kapsam vardır; türünde, **çift**.
+`Account` Önceki deyim (parantez) başlatıcısında genel kapsam vardır; türünde, **çift**.
 
 > [!NOTE]
 > Bu örnekte gösterildiği gibi tanımlayıcı adları yeniden kötü programlama stil olarak kabul edilir.
@@ -118,7 +118,7 @@ Bildirim ve sınıf nesnelerin başlatılması hakkında daha fazla bilgi için 
 
 ## <a name="hiding-names-with-global-scope"></a>Genel kapsamlı adları gizleme
 
- Blok kapsamında aynı adı açıkça bildirerek genel kapsamı ile adları gizleyebilirsiniz. Ancak, genel kapsam adlarına kapsam çözümleme işleci kullanılarak erişilebilir (`::`).
+Blok kapsamında aynı adı açıkça bildirerek genel kapsamı ile adları gizleyebilirsiniz. Ancak, genel kapsam adlarına kapsam çözümleme işleci kullanılarak erişilebilir (`::`).
 
 ```cpp
 #include <iostream>
@@ -139,4 +139,5 @@ Global-scoped i has the value: 7
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Temel Kavramlar](../cpp/basic-concepts-cpp.md)
+
+[Temel Kavramlar](../cpp/basic-concepts-cpp.md)

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3db32beb2f63a67a34045eab8a89ad82312ac4ac
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 062e035f2689539dbfbc415bf200471aa7580bda
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292954"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077145"
 ---
 # <a name="bscmake-error-bk1510"></a>BSCMAKE Hatası BK1510
-bozuk. SBR dosyasının dosya adı  
-  
- Verilen .sbr dosyası beklenen biçime sahip değil. Yeni bir .sbr oluşturmak için yeniden derleyin.
+
+bozuk. SBR dosyasının dosya adı
+
+Verilen .sbr dosyası, beklenen biçime sahip değil. Yeni bir .sbr oluşturmak için yeniden derleyin.

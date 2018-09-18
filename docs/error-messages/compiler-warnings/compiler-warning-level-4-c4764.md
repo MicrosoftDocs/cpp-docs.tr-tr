@@ -16,46 +16,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f400cd28f5c96ab53bf92f5ea86786efdf5ce55
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9c3b80e09736e03852a13073b1ba4ea3c506c5e2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294501"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081903"
 ---
 # <a name="compiler-warning-level-4-c4764"></a>Derleyici Uyarısı (düzey 4) C4764
-16 bayttan büyük catch nesnelere hizalanamıyor  
-  
- 16 ' büyük bir hizalama belirtildi, ancak işlev bir özel durum oluşturursa bazı platformlarda 16'den büyük bir hizalama yığın zorla.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4764 oluşturur:  
-  
-```  
-// C4764.cpp  
-// compile with: /W4 /EHsc  
-// processor: x64 IPF  
-#include <stdio.h>  
-  
-class A   
-{  
-public:  
-    int x;  
-};  
-  
-typedef __declspec(align(32)) A ALIGNEDA;  
-  
-int main()   
-{  
-    ALIGNEDA a;  
-    try   
-    {  
-        a.x = 15;  
-        throw a;  
-    }  
-    catch (ALIGNEDA b) // can’t align b to > 16 bytes  
-    {  
-        printf_s("%d\n", b.x);  
-    }  
-}   // C4764  
+
+Yakalama nesneleri 16 baytın üzerinde hizalanamaz
+
+16 ' büyük bir hizalama belirtildi ancak işlev bir özel durum oluşturursa bazı platformlarda, 16'dan büyük bir hizalama yığınına zorlar.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4764 oluşturur:
+
+```
+// C4764.cpp
+// compile with: /W4 /EHsc
+// processor: x64 IPF
+#include <stdio.h>
+
+class A
+{
+public:
+    int x;
+};
+
+typedef __declspec(align(32)) A ALIGNEDA;
+
+int main()
+{
+    ALIGNEDA a;
+    try
+    {
+        a.x = 15;
+        throw a;
+    }
+    catch (ALIGNEDA b) // can’t align b to > 16 bytes
+    {
+        printf_s("%d\n", b.x);
+    }
+}   // C4764
 ```

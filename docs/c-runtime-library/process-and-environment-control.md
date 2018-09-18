@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0fbbe1f7feca0b2c8d21bfaf5da3e758e2c6c0bb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0c314decf15886f8d99ed8be3b7bafe4fff3e36b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200969"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085764"
 ---
 # <a name="process-and-environment-control"></a>Süreç ve Ortam Denetimi
 
@@ -77,11 +77,11 @@ Başlatma, durdurma ve bir programın işlemlerini yönetmek için işlem deneti
 |[_spawnvpe, _wspawnvpe](../c-runtime-library/reference/spawnvpe-wspawnvpe.md)|Oluşturma ve yürütme işlemini kullanarak yeni **yolu** değişkeni, belirtilen ortam ve bağımsız değişken dizisi|
 |[system, _wsystem](../c-runtime-library/reference/system-wsystem.md)|İşletim sistemi komutu yürütün|
 
- Windows işletim sisteminde, üretilen işlemde spawning işleme eşdeğerdir. Herhangi bir işlem kullanabilirsiniz **_cwait** için işlem kimliği bilinen diğer işlemin tamamlanmasını beklemek için.
+Windows işletim sisteminde, üretilen işlemde spawning işleme eşdeğerdir. Herhangi bir işlem kullanabilirsiniz **_cwait** için işlem kimliği bilinen diğer işlemin tamamlanmasını beklemek için.
 
- Arasındaki fark **_exec** ve **_spawn** ailesinden olan bir **_spawn** işlevi döndürebilir denetimi yeni işlemden çağırma işlemine. İçinde bir **_spawn** işlev, her iki arama işlemi ve yeni işlem bellekte mevcut sürece **_P_OVERLAY** belirtilir. İçinde bir **_exec** işlevi, yeni işlem yer paylaşımları arama işlemek için yeni bir işlem yürütme işlemini başlatmadan girişimi sırasında bir hata gerçekleşmediği sürece denetimi çağırma işlemine geri döndürülemez.
+Arasındaki fark **_exec** ve **_spawn** ailesinden olan bir **_spawn** işlevi döndürebilir denetimi yeni işlemden çağırma işlemine. İçinde bir **_spawn** işlev, her iki arama işlemi ve yeni işlem bellekte mevcut sürece **_P_OVERLAY** belirtilir. İçinde bir **_exec** işlevi, yeni işlem yer paylaşımları arama işlemek için yeni bir işlem yürütme işlemini başlatmadan girişimi sırasında bir hata gerçekleşmediği sürece denetimi çağırma işlemine geri döndürülemez.
 
- İşlevler arasındaki farklar **_exec** ailesi, yanı sıra içinde arasından **_spawn** ailesi, yeni bir işlem, formun hangi bağımsız olarak yürütülecek dosyayı bulmak için yöntem içerir Aşağıdaki tabloda gösterildiği gibi yeni işlem ve ortam ayarlama yöntemi geçirilir. Bağımsız değişken sayısı sabittir veya derleme zamanında bilinen bir bağımsız değişken listesi geçirmeden bir işlev kullanın. Çalışma zamanında belirlenecek bağımsız değişken sayısı olduğunda, bağımsız değişkenleri içeren bir dizi işaretçi geçirir bir işlevi kullanın. Aşağıdaki tabloda yer alan bilgiler geniş karakter karşılıkları için de geçerlidir. **_spawn** ve **_exec** işlevleri.
+İşlevler arasındaki farklar **_exec** ailesi, yanı sıra içinde arasından **_spawn** ailesi, yeni bir işlem, formun hangi bağımsız olarak yürütülecek dosyayı bulmak için yöntem içerir Aşağıdaki tabloda gösterildiği gibi yeni işlem ve ortam ayarlama yöntemi geçirilir. Bağımsız değişken sayısı sabittir veya derleme zamanında bilinen bir bağımsız değişken listesi geçirmeden bir işlev kullanın. Çalışma zamanında belirlenecek bağımsız değişken sayısı olduğunda, bağımsız değişkenleri içeren bir dizi işaretçi geçirir bir işlevi kullanın. Aşağıdaki tabloda yer alan bilgiler geniş karakter karşılıkları için de geçerlidir. **_spawn** ve **_exec** işlevleri.
 
 ### <a name="spawn-and-exec-function-families"></a>_spawn ve _exec işlevi aileleri
 

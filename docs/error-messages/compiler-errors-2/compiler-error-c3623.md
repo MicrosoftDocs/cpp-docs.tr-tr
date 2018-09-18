@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 231826dbcb38bb6bdae490c2f86954e1a56c2b77
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 90198a3ea7cfb96b75717550b551c55915187211
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33254903"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085309"
 ---
 # <a name="compiler-error-c3623"></a>Derleyici Hatası C3623
-'değişkeni': bit alanları desteklenmiyor yönetilen veya WinRT türleri  
-  
- Bit alanlarını kullanma değişkenleri yönetilen ya da WinRT sınıfı üzerinde izin verilmez.  
-  
- Aşağıdaki örnek C3623 oluşturur:  
-  
-```  
-// C3623.cpp  
-// compile with: /clr  
-using namespace System;  
-ref class CMyClass {  
-public:  
-   int i : 1;   // C3623  
-};  
-  
-int main() {  
-   CMyClass^ pMyClass = gcnew CMyClass();  
-   pMyClass->i = 3;  
-   Console::Out->WriteLine(pMyClass->i);  
-}  
-```  
+
+'variable': bit alanları desteklenmez yönetilen veya WinRT türleri
+
+Bit alanlarını kullanma, yönetilen bir değişken veya WinRT sınıfı izin verilmez.
+
+Aşağıdaki örnek, C3623 oluşturur:
+
+```
+// C3623.cpp
+// compile with: /clr
+using namespace System;
+ref class CMyClass {
+public:
+   int i : 1;   // C3623
+};
+
+int main() {
+   CMyClass^ pMyClass = gcnew CMyClass();
+   pMyClass->i = 3;
+   Console::Out->WriteLine(pMyClass->i);
+}
+```

@@ -17,31 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2a4b76d0b4273e5afb32206336b4aabbfe9294eb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3220fe505bc4f4478fa663eab41f99f01d0f15d7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33090084"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072101"
 ---
 # <a name="selecting-and-manipulating-records"></a>Kayıtları Seçme ve Düzenleme
-Normalde seçtiğinizde kayıtları bir SQL kullanarak bir veri kaynağından **seçin** deyimi, bir tablo veya bir sorgu kayıtlarından bir dizi bir sonuç kümesi alın. Veritabanı sınıfları ile seçin ve sonuç kümesi erişmek için bir kayıt kümesi nesnesi kullanın. Bu sınıftan türeyen bir uygulamaya özgü sınıfın bir nesnesi olup [CRecordset](../../mfc/reference/crecordset-class.md). Bir kayıt kümesi sınıf tanımladığınızda, veri kaynağı ile ilişkilendirmek için kullanılacak tabloyu ve tablosunun sütunları belirtin. MFC Uygulama Sihirbazı'nı veya **sınıfı Ekle** (açıklandığı gibi [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) belirli bir veri kaynağı bağlantısı olan bir sınıf oluşturur. Sihirbazlar yazma [GetDefaultSQL](../../mfc/reference/crecordset-class.md#getdefaultsql) sınıfının üye işlevini `CRecordset` tablo adını döndürmek için. Kayıt kümesi sınıfları oluşturmak için sihirbaz kullanma hakkında daha fazla bilgi için bkz: [veritabanı desteği, MFC Uygulama Sihirbazı'nı](../../mfc/reference/database-support-mfc-application-wizard.md) ve [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md).  
+
+Normalde seçtiğinizde, kayıtları bir SQL kullanarak bir veri kaynağından **seçin** deyimi, bir dizi kayıtlardan bir tablo veya bir sorgu bir sonuç kümesi alın. Veritabanı sınıfları ile seçin ve sonuç kümesi erişmek için bir kayıt kümesi nesnesi kullanın. Bu sınıftan türetilen bir uygulamaya özgü sınıfın bir nesnesi, [CRecordset](../../mfc/reference/crecordset-class.md). Kayıt kümesi sınıfı tanımladığınızda, ile ilişkilendirmek istediğiniz veri kaynağı tablosunu ve tablo sütunları belirtin. MFC Uygulama Sihirbazı'nı veya **sınıfı Ekle** (açıklandığı [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) belirli bir veri kaynağına bağlantı ile bir sınıf oluşturur. Sihirbazlar [GetDefaultSQL](../../mfc/reference/crecordset-class.md#getdefaultsql) sınıfının üye işlevinde `CRecordset` tablo adını döndürmek için. Kayıt kümesi sınıfları oluşturmak için sihirbaz kullanma hakkında daha fazla bilgi için bkz. [veritabanı desteği, MFC Uygulama Sihirbazı](../../mfc/reference/database-support-mfc-application-wizard.md) ve [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md).  
   
- Kullanarak bir [CRecordset](../../mfc/reference/crecordset-class.md) nesne çalışma zamanında, şunları yapabilirsiniz:  
+Kullanarak bir [CRecordset](../../mfc/reference/crecordset-class.md) nesne çalışma zamanında, şunları yapabilirsiniz:  
   
--   Geçerli kayıt veri alanlarını inceleyin.  
+- Geçerli kayıt veri alanlarını inceleyin.  
   
--   Filtre veya kayıt sıralayabilirsiniz.  
+- Filtreleme veya sıralama kayıt.  
   
--   Varsayılan SQL özelleştirme **seçin** deyimi.  
+- Varsayılan SQL özelleştirme **seçin** deyimi.  
   
--   Seçili kayıt arasında gezinin.  
+- Seçili kayıtlarda gezinin.  
   
--   Ekleme, güncelleştirme veya (veri kaynağı ve kayıt güncelleştirilebilir değilse) kayıtları silin.  
+- Ekleme, güncelleştirme veya (hem veri kaynağı kayıt güncelleştirilebilir ise) kayıtlarını silin.  
   
--   Kayıt kümesinde yeniden sorgulama izin verip vermediğini test edin ve kayıt kümesinin içeriği yenileyin.  
+- Kayıt kümesinde yeniden sorgulama izin verip vermediğini test ve kümesinin içeriği yenileyin.  
   
- Kayıt kümesi nesnesi kullanılarak bitirdikten sonra kapatın ve onu yok. Kayıt kümeleri hakkında daha fazla bilgi için bkz: [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md).  
+Kayıt kümesi nesnesi kullanarak işiniz bittiğinde kapatın ve onu yok. Kayıt kümeleri hakkında daha fazla bilgi için bkz. [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ODBC ve MFC](../../data/odbc/odbc-and-mfc.md)
+
+[ODBC ve MFC](../../data/odbc/odbc-and-mfc.md)

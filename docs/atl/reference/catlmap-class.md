@@ -47,12 +47,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c1095df6caae94cac86e5e205507e0ed9eeb98e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 564ff010756a2afa9210fc71dd47fce2b72dcbca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755092"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075728"
 ---
 # <a name="catlmap-class"></a>CAtlMap sınıfı
 
@@ -70,15 +70,16 @@ class CAtlMap
 
 #### <a name="parameters"></a>Parametreler
 
-*K*  
+*K*<br/>
 Anahtar öğe türü.
 
-*V* değeri öğe türü.
+*V*<br/>
+Değer öğe türü.
 
-*KTraits*  
+*KTraits*<br/>
 Kopyalamak veya taşımak temel öğeleri için kullanılan kod. Bkz: [CElementTraits sınıfı](../../atl/reference/celementtraits-class.md) daha fazla ayrıntı için.
 
-*VTraits*  
+*VTraits*<br/>
 Kopyalamak veya taşımak değeri öğeleri için kullanılan kod.
 
 ## <a name="members"></a>Üyeler
@@ -195,19 +196,19 @@ CAtlMap(
 
 ### <a name="parameters"></a>Parametreler
 
-*nBins*  
+*nBins*<br/>
 Bölme depolanan öğelere işaretçileri sağlama sayısı. Depo bir açıklaması için bu konunun ilerleyen bölümlerinde açıklamalara bakın.
 
-*fOptimalLoad*  
+*fOptimalLoad*<br/>
 En iyi yük oranı.
 
-*fLoThreshold*  
+*fLoThreshold*<br/>
 Düşük bir Eşikte yük oranı.
 
-*fHiThreshold*  
+*fHiThreshold*<br/>
 Üst eşik yük oranı.
 
-*nBlockSize*  
+*nBlockSize*<br/>
 Blok boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -297,13 +298,13 @@ CPair* GetAt(POSITION& pos) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Önceki bir çağrı tarafından döndürülen konum sayaç [CAtlMap::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Haritanın anahtar türünü belirten bir şablon parametre.
 
-*value*  
+*value*<br/>
 Haritanın değerin türünü belirten bir şablon parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -352,7 +353,7 @@ const K& GetKeyAt(POSITION pos) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Önceki bir çağrı tarafından döndürülen konum sayaç [CAtlMap::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -374,7 +375,7 @@ const CPair* GetNext(POSITION& pos) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Önceki bir çağrı tarafından döndürülen konum sayaç [CAtlMap::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -394,13 +395,13 @@ void GetNextAssoc(
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Önceki bir çağrı tarafından döndürülen konum sayaç [CAtlMap::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Haritanın anahtar türünü belirten bir şablon parametre.
 
-*value*  
+*value*<br/>
 Haritanın değerin türünü belirten bir şablon parametre.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -417,7 +418,7 @@ const K& GetNextKey(POSITION& pos) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Önceki bir çağrı tarafından döndürülen konum sayaç [CAtlMap::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -439,7 +440,7 @@ const V& GetNextValue(POSITION& pos) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Önceki bir çağrı tarafından döndürülen konum sayaç [CAtlMap::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -488,7 +489,7 @@ const V& GetValueAt(POSITION pos) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Önceki bir çağrı tarafından döndürülen konum sayaç [CAtlMap::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -507,10 +508,10 @@ bool InitHashTable(
 
 ### <a name="parameters"></a>Parametreler
 
-*nBins*  
+*nBins*<br/>
 Karma tablosu tarafından kullanılan depo sayısı. Bkz: [CAtlMap::CAtlMap](#catlmap) açıklaması.
 
-*bAllocNow*  
+*bAllocNow*<br/>
 Bellek ayrılmış bir bayrak göstergesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -567,10 +568,10 @@ CPair* Lookup(KINARGTYPE key) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Bakılacak öğeyi tanımlayan anahtar belirtir.
 
-*value*  
+*value*<br/>
 Değişken, aranan yukarı değerini alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -591,7 +592,7 @@ V& operator[](kinargtype key) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Eklenecek veya değiştirilecek öğenin anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -612,7 +613,7 @@ void Rehash(UINT nBins = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*nBins*  
+*nBins*<br/>
 Yeni Karma tablosunda kullanmak için depo sayısı. Bkz: [CAtlMap::CAtlMap](#catlmap) açıklaması.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -641,7 +642,7 @@ void RemoveAtPos(POSITION pos) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Önceki bir çağrı tarafından döndürülen konum sayaç [CAtlMap::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -658,7 +659,7 @@ bool RemoveKey(KINARGTYPE key) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Kaldırmak istediğiniz anahtar karşılık gelen bir öğe çifti.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -681,10 +682,10 @@ POSITION SetAt(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Eklenecek anahtar değeri `CAtlMap` nesne.
 
-*value*  
+*value*<br/>
 Eklenecek değer `CAtlMap` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -709,16 +710,16 @@ void SetOptimalLoad(
 
 ### <a name="parameters"></a>Parametreler
 
-*fOptimalLoad*  
+*fOptimalLoad*<br/>
 En iyi yük oranı.
 
-*fLoThreshold*  
+*fLoThreshold*<br/>
 Düşük bir Eşikte yük oranı.
 
-*fHiThreshold*  
+*fHiThreshold*<br/>
 Üst eşik yük oranı.
 
-*bRehashNow*  
+*bRehashNow*<br/>
 Karma tabloyu yeniden hesaplanması gerektiği olmadığını belirten bayrak.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -737,10 +738,10 @@ void SetValueAt(
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Önceki bir çağrı tarafından döndürülen konum sayaç [CAtlMap::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).
 
-*value*  
+*value*<br/>
 Eklenecek değer `CAtlMap` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -773,7 +774,7 @@ const K m_key;
 
 ### <a name="parameters"></a>Parametreler
 
-*K*  
+*K*<br/>
 Anahtar öğe türü.
 
 ##  <a name="m_value"></a>  CAtlMap::CPair::m_value
@@ -786,11 +787,11 @@ V  m_value;
 
 ### <a name="parameters"></a>Parametreler
 
-*V*  
+*V*<br/>
 Değer öğe türü.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kayan örnek](../../visual-cpp-samples.md)   
-[Oluşturma](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)   
+[Kayan örnek](../../visual-cpp-samples.md)<br/>
+[Oluşturma](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

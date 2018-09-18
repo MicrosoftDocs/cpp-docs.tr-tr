@@ -41,12 +41,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28af5343f761f89678768133c9114e3cf23be8e5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 2b07609b792b7080e2c4c432ed435381007ba286
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755992"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075234"
 ---
 # <a name="ipropertypageimpl-class"></a>Ipropertypageımpl sınıfı
 
@@ -58,13 +58,13 @@ Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IPro
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<class T>  
+template<class T>
 class IPropertyPageImpl
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `IPropertyPageImpl`.
 
 ## <a name="members"></a>Üyeler
@@ -311,7 +311,7 @@ void SetDirty(BOOL bDirty);
 
 ### <a name="parameters"></a>Parametreler
 
-*bDirty*  
+*bDirty*<br/>
 [in] TRUE ise özellik sayfanın durumu değişmiş olarak işaretlenir. Aksi takdirde, işaretli olarak değişmez.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -368,7 +368,7 @@ Bkz: [IPropertyPage::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-i
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Ipropertypage2ımpl sınıfı](../../atl/reference/ipropertypage2impl-class.md)   
-[Iperpropertybrowsingımpl sınıfı](../../atl/reference/iperpropertybrowsingimpl-class.md)   
-[Ispecifypropertypagesımpl sınıfı](../../atl/reference/ispecifypropertypagesimpl-class.md)   
+[IPropertyPage2Impl Sınıfı](../../atl/reference/ipropertypage2impl-class.md)<br/>
+[IPerPropertyBrowsingImpl Sınıfı](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>
+[ISpecifyPropertyPagesImpl Sınıfı](../../atl/reference/ispecifypropertypagesimpl-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

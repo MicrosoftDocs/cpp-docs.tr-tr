@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47b7063dc9156e8feb41d447283ee457a13f1f4d
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: dae0eef25b11d49e5f869d88862e602d862135c1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692308"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082254"
 ---
 # <a name="ltsummarygt-visual-c"></a>&lt;Özet&gt; (Visual C++)
 \<Özet > etiketi, bir tür veya tür üye tanımlamak için kullanılmalıdır. Kullanım [ \<remarks >](../ide/remarks-visual-cpp.md) ek bilgiler bir tür tanımı eklemek için.  
@@ -35,8 +35,8 @@ ms.locfileid: "43692308"
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `description`  
- Nesne bir özeti.  
+*Açıklaması*<br/>
+Nesne bir özeti.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Metni \<Özet > etiketi yalnızca kaynak ıntellisense'te tür hakkında bilgilerin ve bir de görüntülenir [Nesne Tarayıcısı](/visualstudio/ide/viewing-the-structure-of-code) ve kod açıklaması Web raporu.  

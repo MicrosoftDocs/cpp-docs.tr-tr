@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7835d537c151ec1eba74d506e803c4f35685586
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4e58daedc0a2054bbeef885446694165f96bc44d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250130"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46083970"
 ---
 # <a name="compiler-error-c3251"></a>Derleyici Hatası C3251
-değer türü örneği üzerinde temel sınıf yöntemi çağrılamıyor  
-  
- Aşağıdaki hata nedeniyle oluşur `GetClass` üyesi `Microsoft.Runtime.Object`, değil `Microsoft.Runtime.Integer4`.
+
+bir değer türü örneği üzerinde taban sınıf yöntemi çağrılamaz
+
+Aşağıdaki hata oluşur `GetClass` üyesi `Microsoft.Runtime.Object`, olmayan `Microsoft.Runtime.Integer4`.

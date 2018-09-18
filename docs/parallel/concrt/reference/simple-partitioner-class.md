@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ef53ed9fa69dc77c93b90f9f24fa8628d589b07
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 98c4c82bcf858215ceba31e2ddd0770511446f72
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705269"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075650"
 ---
 # <a name="simplepartitioner-class"></a>simple_partitioner Sınıfı
-`simple_partitioner` Sınıfı temsil eden bir statik üzerinden tarafından yinelendiğinde aralığının bölümleme `parallel_for`. Her bir öbeğin öbek boyutu tarafından belirtilen yineleme sayısını en az sahip olacağı şekilde bölümleyici aralığı parçalara ayırır.  
+`simple_partitioner` Sınıfı temsil eder bir statik tarafından üzerinden yinelenir aralık bölümleme `parallel_for`. Her öbek öbek boyutu tarafından belirtilen yineleme sayısını en az sahip olacak şekilde bölümleyici aralığı öbeklere böler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,8 +40,8 @@ class simple_partitioner;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[simple_partitioner](#ctor)|Oluşturan bir `simple_partitioner` nesnesi.|  
-|[~ simple_partitioner yok Edicisi](#dtor)|Bozar bir `simple_partitioner` nesnesi.|  
+|[simple_partitioner](#ctor)|Oluşturur bir `simple_partitioner` nesne.|  
+|[~ simple_partitioner yok Edicisi](#dtor)|Yok eder bir `simple_partitioner` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `simple_partitioner`  
@@ -53,7 +53,7 @@ class simple_partitioner;
   
 ##  <a name="dtor"></a> ~ simple_partitioner 
 
- Bozar bir `simple_partitioner` nesnesi.  
+ Yok eder bir `simple_partitioner` nesne.  
   
 ```
 ~simple_partitioner();
@@ -61,14 +61,15 @@ class simple_partitioner;
   
 ##  <a name="ctor"></a> simple_partitioner 
 
- Oluşturan bir `simple_partitioner` nesnesi.  
+ Oluşturur bir `simple_partitioner` nesne.  
   
 ```
 explicit simple_partitioner(_Size_type _Chunk_size);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Chunk_size`  
+*_Chunk_size*<br/>
+En düşük bölüm boyutu.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

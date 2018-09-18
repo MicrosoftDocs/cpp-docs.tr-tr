@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4c5d7ad570d9745e10107f0df09faccd9eb42e3
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c000175c031868136aad44e59644d0fa122d213e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761559"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084516"
 ---
 # <a name="atlwinmodule70-structure"></a>_Atl_wın_module70 yapısı
 
@@ -43,16 +43,16 @@ struct _ATL_WIN_MODULE70 {
 
 ## <a name="members"></a>Üyeler
 
-`cbSize`  
+`cbSize`<br/>
 Sürüm oluşturma için kullanılan bir yapının boyutu.
 
-`m_csWindowCreate`  
+`m_csWindowCreate`<br/>
 Pencere kayıt kodu erişim serileştirmek için kullanılır. ATL tarafından dahili olarak kullanılır
 
-`m_pCreateWndList`  
+`m_pCreateWndList`<br/>
 Windows, nesnelere bağlamak için kullanılır. ATL tarafından dahili olarak kullanılır
 
-`m_rgWindowClassAtoms`  
+`m_rgWindowClassAtoms`<br/>
 Pencere sınıfı kaydı sonlandırmanın düzgün kaydedilmemiş olabilir, böylece izlemek için kullanılır. ATL tarafından dahili olarak kullanılır
 
 ## <a name="remarks"></a>Açıklamalar

@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 006e19565f6e7393bb081be72ef64aae03361a6d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1eb7743fed9f7269e3d81ddd7cefdd37c9a7b2a0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33256954"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075167"
 ---
 # <a name="compiler-error-c2958"></a>Derleyici Hatası C2958
-'konumunda' bulunan sol sınırlayıcı doğru eşleşmeyen  
-  
- Bir sınırlayıcı düzgün eşleşmiyor.  
-  
- Bu hata işlevi şablon bildiriminde eşleşmeyen parantezler neden olabilir.
+
+'konum' bulunan sol sınırlayıcı doğru eşleşmiyor
+
+Bir sınırlayıcıdan düzgün karşılaştırılamıyor.
+
+Bu hata bir işlev şablonu bildiriminde eşleşmeyen parantez neden olabilir.

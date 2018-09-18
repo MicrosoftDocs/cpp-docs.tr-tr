@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 718e0783c3f7afcc9af958f7940f437ac4c944b7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ac468bc605c261b66f47fdf40efd1a01a5383d58
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33283386"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074285"
 ---
 # <a name="compiler-warning-level-1-c4819"></a>Derleyici Uyarısı (düzey 1) C4819
-Dosya geçerli kod sayfasında (sayı) gösterilemez bir karakter içeriyor. Dosyayı veri kaybını önlemek için Unicode biçiminde kaydedin.  
-  
- Dosyadaki tüm karakterleri temsil edilemez bir kod sayfası ile bir sistemde derlenmiş bir ANSI kaynak dosyası C4819 oluşur.  
-  
- C4819 gidermek için dosyayı Unicode biçiminde kaydedin. Visual Studio'da, **dosya**, **Gelişmiş kaydetme seçenekleri**. İçinde **Gelişmiş kaydetme seçenekleri** iletişim kutusunda, dosya içindeki tüm karakterleri temsil eden bir kodlama seçin — örneğin, UTF-8 — ve ardından **Tamam**.
+
+Dosya (sayı) geçerli kod sayfasında temsil edilemeyen bir karakter içeriyor. Dosya, veri kaybını önlemek için Unicode biçiminde kaydedin.
+
+Bir sistemde, dosyadaki tüm karakterleri temsil edemeyen bir kod ile derlenmiş bir ANSI kaynak dosyası C4819 gerçekleşir.
+
+C4819 gidermek için dosyayı Unicode biçiminde kaydedin. Visual Studio'da **dosya**, **Gelişmiş kaydetme seçenekleri**. İçinde **Gelişmiş kaydetme seçenekleri** iletişim kutusunda, dosyadaki tüm karakterleri temsil edebilen bir kodlama seçin — örneğin, UTF-8 — ve ardından **Tamam**.

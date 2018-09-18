@@ -17,18 +17,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e93a2e5d8b589ddfbddac979aa27e0241ee02c68
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c1dc525ea75f58028f7359c7a063bdb45a8387a6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299129"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080811"
 ---
 # <a name="expression-evaluator-error-cxx0041"></a>İfade Değerlendirici Hatası CXX0041
-statik üye veya üye işlevi sınıfı öğesi olması gerekir  
-  
- Statik olmayan bir sınıfı (veya yapısı veya üyesi birleşimi) kullanmak için hangi örneklemesi sınıfının belirtmeden kullanıldı.  
-  
- Yalnızca statik veri üyeleri veya üye işlevleri örnekleme belirtmeden kullanılabilir.  
-  
- Bu hata için CAN0041 aynıdır.
+
+sınıf öğesine statik üye veya üye işlevi olmalıdır
+
+Statik olmayan üye bir sınıf (veya yapı veya birleşim) kullanmak için hangi sınıf örneğinin belirtilmeden kullanıldı.
+
+Yalnızca statik veri üyeleri veya üye işlevleri örneklemesi belirtmeden kullanılabilir.
+
+Bu hata için CAN0041 aynıdır.

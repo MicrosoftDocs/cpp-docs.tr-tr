@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: faccc0cc6c592df877517c6fd99ff539a1d65828
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7eaaed259448fc55e28211a5eab69a129729433e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168014"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46083125"
 ---
 # <a name="compiler-error-c2145"></a>Derleyici Hatası C2145
-sözdizimi hatası: 'tanımlayıcısı önce belirteci' eksik  
-  
- Beklenen derleyici `token` ve bunun yerine tanımlayıcısı bulunamadı.  
-  
- Bu hata, bir blok son bildiriminde sonra eksik noktalı virgülle kaynaklanıyor olabilir.
+
+sözdizimi hatası: 'belirteci tanımlayıcıdan önce' eksik
+
+Beklenen derleyici `token` ve bunun yerine tanımlayıcısı bulunamadı.
+
+Bu hata, bir blok içinde son bildiriminin eksik noktalı virgül neden olabilir.

@@ -29,30 +29,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 615a8818c6204298d06054ef77a1b95ab603b548
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e1d78967c8cff8933ac16af9333bb4e000f686f6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32386397"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078601"
 ---
 # <a name="cilog10"></a>_CIlog10
-Gerçekleştiren bir `log10` yığınında üst değer işlemi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void __cdecl _CIlog10();  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sürümü `log10` işlevi derleyici özelliğini algılayan bir özelleştirilmiş çağırma vardır. İşlev oluşturulmasını önler kopyaları önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.  
-  
- Sonuç değeri yığının en üst gönderilir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Platform:** x86  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik işlev başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [log, logf, log10, log10f](../c-runtime-library/reference/log-logf-log10-log10f.md)
+
+Gerçekleştiren bir `log10` yığınında üst değer işlemi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void __cdecl _CIlog10();
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sürümü `log10` derleyici anlayan özelleştirilmiş bir çağırma kuralı işlevi vardır. İşlevi, kopya oluşturulmasını önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.
+
+Sonuç değerini yığın üstüne itilir.
+
+## <a name="requirements"></a>Gereksinimler
+ **Platform:** x86
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[log, logf, log10, log10f](../c-runtime-library/reference/log-logf-log10-log10f.md)

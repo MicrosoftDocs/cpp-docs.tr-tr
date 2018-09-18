@@ -16,41 +16,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b46bf4866791ec82ac5984132903e22ab16e07ad
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b444156ae87e43b068521a3ad6687abe71df293f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33270891"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074324"
 ---
 # <a name="compiler-warning-c4867"></a>Derleyici Uyarısı C4867
-'function': bağımsız değişken listesi; eksik işlev çağrısı 'çağrı' üyesi için bir işaretçi oluşturmak için kullanın  
-  
- Üye işlev işaretçisi yanlış başlatıldı.  
-  
- Bu uyarı için Visual C++ 2005 yapıldığı derleyici uyumluluğu iş sonucunda oluşturulabilir: Gelişmiş işaretçi-üye uygunluk.  Visual C++ 2005 önce derlenmiş kod artık C4867 oluşturur.  
-  
- Bu uyarı, hata olarak her zaman görüntülenir. Kullanım [uyarı](../../preprocessor/warning.md) bu uyarıyı devre dışı bırakmak için pragması. C4867 ve MFC/ATL hakkında daha fazla bilgi için bkz: [_ATL_ENABLE_PTM_WARNING](../../atl/reference/compiler-options-macros.md#_atl_enable_ptm_warning).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4867 oluşturur.  
-  
-```  
-// C4867.cpp  
-// compile with: /c  
-class A {  
-public:  
-   void f(int) {}  
-  
-   typedef void (A::*TAmtd)(int);  
-  
-   struct B {  
-      TAmtd p;  
-   };  
-  
-   void g() {  
-      B b = {f};   // C4867  
-      B b2 = {&A::f};   // OK  
-   }  
-};  
+
+'function': işlev çağrısı; bağımsız değişken listesi eksik bir üyeye işaretçi oluşturmak için 'çağrısı' kullanın
+
+Üye işlevi işaretçisi hatalı olarak başlatıldı.
+
+Bu uyarı için Visual C++ 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak oluşturulan: Gelişmiş işaretçi-üye uyumluluğu.  Visual C++ 2005'ten önce derlenmiş kod artık C4867 oluşturur.
+
+Bu uyarı, her zaman hata olarak görüntülenir. Kullanım [uyarı](../../preprocessor/warning.md) pragması, bu uyarıyı devre dışı bırakmak için. C4867 ve MFC/ATL hakkında daha fazla bilgi için bkz. [_ATL_ENABLE_PTM_WARNING](../../atl/reference/compiler-options-macros.md#_atl_enable_ptm_warning).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4867 oluşturur.
+
+```
+// C4867.cpp
+// compile with: /c
+class A {
+public:
+   void f(int) {}
+
+   typedef void (A::*TAmtd)(int);
+
+   struct B {
+      TAmtd p;
+   };
+
+   void g() {
+      B b = {f};   // C4867
+      B b2 = {&A::f};   // OK
+   }
+};
 ```

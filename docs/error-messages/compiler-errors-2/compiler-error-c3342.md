@@ -16,39 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74798ff2892b7d049df7a45ffa4b1fa2dd9f649d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 03226ff4f7a5280827201a595b09a4779c88bb41
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33253950"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082111"
 ---
 # <a name="compiler-error-c3342"></a>Derleyici Hatası C3342
-'öznitelik': belirsiz özniteliği  
-  
- Derleyici bir özniteliğin birden çok tanım bulundu.  
-  
- Özniteliğin birden çok kez tanımlandı.  
-  
- Daha fazla bilgi için bkz: [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3342 oluşturur.  
-  
-```  
-// C3342.cpp  
-// compile with: /clr /c  
-using namespace System;  
-using namespace System::Reflection;  
-  
-[AttributeUsage(AttributeTargets::All)]  
-public ref class XAttribute : public  Attribute {};  
-  
-[AttributeUsage(AttributeTargets::All)]  
-public ref class X : public Attribute {};  
-  
-[X]   // C3342 could refer to X or XAttribute  
-// try the following line instead  
-// [XAttribute]  
-public ref class Class4 {};  
+
+'attribute': belirsiz öznitelik
+
+Derleyici, bir özniteliğin birden çok tanım bulundu.
+
+Özniteliğin birden çok kez tanımlandı.
+
+Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3342 oluşturur.
+
+```
+// C3342.cpp
+// compile with: /clr /c
+using namespace System;
+using namespace System::Reflection;
+
+[AttributeUsage(AttributeTargets::All)]
+public ref class XAttribute : public  Attribute {};
+
+[AttributeUsage(AttributeTargets::All)]
+public ref class X : public Attribute {};
+
+[X]   // C3342 could refer to X or XAttribute
+// try the following line instead
+// [XAttribute]
+public ref class Class4 {};
 ```

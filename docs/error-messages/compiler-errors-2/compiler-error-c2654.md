@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b28fb3de46d9071c9ee19711344c5b41e337934
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1181cbab40739617343f8d2a2e5e26540f01e82f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33232886"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080850"
 ---
 # <a name="compiler-error-c2654"></a>Derleyici Hatası C2654
-'tanımlayıcısı': üye işlevi dışında erişim üye girişimi  
-  
- Üye bir bildiriminde erişilir. Üye verileri yalnızca üye işlevleri erişilebilir.  
-  
- Bu hata, bir bildirimi değişkenlerde başlatılmaya çalışılırken kaynaklanabilir. Bu amaçla bir oluşturucu kullanın.
+
+'identifier': bir üye işlev dışındaki üyeye erişme girişimi
+
+Üye bir bildirimde erişilir. Üye verileri yalnızca üye işlevler erişilebilir.
+
+Bu hata bir bildirimde değişkenleri başlatılmaya çalışılırken neden olabilir. Bir oluşturucu, bu amaçla kullanın.

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 930e27e870b281eabf484dcc318c0203c3fc158d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 859fe416d9152e294f8edac5f703c721de7570f0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764972"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086544"
 ---
 # <a name="security-classes"></a>Güvenlik sınıfları
 
@@ -47,6 +47,6 @@ Bu ortak Win32 güvenlik sınıflar ve nesneler için sarmalayıcıları sınıf
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfına genel bakış](../atl/atl-class-overview.md)   
+[Sınıfına genel bakış](../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../atl/reference/security-global-functions.md)
 

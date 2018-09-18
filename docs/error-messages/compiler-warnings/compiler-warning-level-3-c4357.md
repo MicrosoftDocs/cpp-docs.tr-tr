@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79bb609b051def4f84924c1d9ebbcd9574d2ce77
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b5bf30112e152c473c4f88a98f5f1073b789216e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33289678"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086752"
 ---
 # <a name="compiler-warning-level-3-c4357"></a>Derleyici Uyarısı (Düzey 3) C4357
-param dizisi için biçimsel bağımsız değişken listesi değişkeninde 'del 'function' oluşturulurken göz ardı' temsilci seçme  
-  
- `ParamArray` Özniteliği yoksayıldı ve `function` değişken bağımsız değişkenlerle çağrılamaz.  
-  
- Aşağıdaki örnek C4357 oluşturur:  
-  
-```  
-// C4357.cpp  
-// compile with: /clr /W3 /c  
-using namespace System;  
-public delegate void f(int i, ... array<Object^>^ varargs);   // C4357  
-  
-public delegate void g(int i, array<Object^>^ varargs);   // OK  
+
+biçimsel bağımsız değişken listesinde param dizisi bağımsız değişkeni, '' function' üretilirken yoksayıldı del' temsilci seçme
+
+`ParamArray` Özniteliği yoksayıldı ve `function` değişken bağımsız değişkenlerle çağrılamaz.
+
+Aşağıdaki örnek, C4357 oluşturur:
+
+```
+// C4357.cpp
+// compile with: /clr /W3 /c
+using namespace System;
+public delegate void f(int i, ... array<Object^>^ varargs);   // C4357
+
+public delegate void g(int i, array<Object^>^ varargs);   // OK
 ```

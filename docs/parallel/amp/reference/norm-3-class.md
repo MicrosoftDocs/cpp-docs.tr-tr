@@ -82,15 +82,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 822ef062dbde18dcdb285d2358d10f4a6ae2b566
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: fe4852313d6eb445b3ea242f13e5dc5f6e90def2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688667"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074389"
 ---
 # <a name="norm3-class"></a>norm_3 Sınıfı
-Kısa bir vektör üç normal sayıların temsil eder.  
+Üç normal sayıdan oluşan bir kısa vektörü temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -100,7 +100,7 @@ class norm_3;
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
@@ -110,7 +110,7 @@ class norm_3;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[norm_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|  
+|[norm_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -160,7 +160,7 @@ class norm_3;
 |norm_3::operator-||  
 |norm_3::operator--||  
 |norm_3::operator * =||  
-|norm_3::operator ve =||  
+|norm_3::operator / =||  
 |norm_3::operator++||  
 |norm_3::operator +=||  
 |norm_3::operator=||  
@@ -216,7 +216,7 @@ class norm_3;
  **Namespace:** Concurrency::graphics  
 
 ## <a name="ctor"></a> norm_3 Oluşturucusu
-Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.  
+Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -264,20 +264,20 @@ explicit inline norm_3(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_V0`  
- Öğeyi 0 başlatmak için değer.  
+*_V0*<br/>
+Öğe 0'ı başlatmak için değer.  
   
- `_V1`  
- 1 öğesi başlatmak için değeri.  
+*_V1*<br/>
+1 öğe başlatmak için değer.  
   
- `_V2`  
- Öğe 2 başlatmak için değeri.  
+*_V2*<br/>
+Öğe 2 başlatmak için değer.  
   
- `_V`  
- Başlatma için değer.  
+*_V*<br/>
+Başlatma için değer.  
   
- `_Other`  
- Başlatmak için kullanılan nesne.  
+*_Diğer*<br/>
+Başlatmak için kullanılan nesne.  
   
 ## <a name="a-namesize-size-constant"></a><a name="size"> boyutu sabiti
 ### <a name="syntax"></a>Sözdizimi  

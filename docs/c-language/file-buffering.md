@@ -16,17 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8aaa6595fa9d7e87c7021368125af7a3bc53128e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2a2b8221976dc00666a24cfc2627dad35e73f3ce
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382659"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076027"
 ---
 # <a name="file-buffering"></a>Dosyayı Ara Belleğe Alma
-**ANSI 4.9.3** dosyayı arabelleğe alma özellikleri  
-  
- Standart I/O işlevleri aracılığıyla erişilen disk dosyaları tamamıyla arabelleğe alınır. Varsayılan olarak, arabellek 512 bayt tutar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık İşlevleri](../c-language/library-functions.md)
+
+**ANSI 4.9.3** dosya arabelleğe alma özellikleri
+
+Standart I/O işlevleri aracılığıyla erişilen disk dosyaları tamamıyla arabelleğe alınır. Varsayılan olarak, arabellek 512 bayt tutar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kitaplık İşlevleri](../c-language/library-functions.md)

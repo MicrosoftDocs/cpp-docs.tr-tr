@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55844390b872cb0d94ff991ab79b8519388d009f
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3f32ff38008e55e656bf8901541ffc5ec7246bed
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762466"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085998"
 ---
 # <a name="atl-global-variables"></a>ATL genel değişkenler
 
@@ -30,19 +30,20 @@ ms.locfileid: "43762466"
 
 Geçerli modül için bir işaretçi depolama genel değişkeni.  
 
-```cpp  
-__declspec(selectany) CAtlModule * _pAtlModule  
-```  
+```cpp
+__declspec(selectany) CAtlModule * _pAtlModule
+```
+
 ### <a name="remarks"></a>Açıklamalar
 
 Bu genel bir değişken üzerinde yöntemleri (artık kullanılmayan) CComModule sınıfı Visual C++ 6.0 ile sağlanan işlevselliği sağlamak için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
-```cpp  
-LONG lLocks = _pAtlModule->GetLockCount();  
-```  
+```cpp
+LONG lLocks = _pAtlModule->GetLockCount();
+```
+
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h  
-
+**Başlık:** atlbase.h

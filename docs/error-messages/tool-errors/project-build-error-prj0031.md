@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d5ebd25c239a05c4300b574ec0d47035904187d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ce97e8f540295f5a2968fce22312b8e0e34cfd2a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318329"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076898"
 ---
 # <a name="project-build-error-prj0031"></a>Proje Derleme Hatası PRJ0031
-'Outputs' özelliği için özel derleme adımı için 'çıkışı değerlendiren dosya 'bulunan dosya' makro' 'macro_expansion'.  
-  
- Özel derleme adımı bir dosyada makrosu değerlendirme sorun büyük olasılıkla hatalı çıkış vardı. Bu hata, ayrıca yol hatalı, karakter veya bir dosya yolu geçersiz karakter bileşimlerini içeren biçimlendirildiğinden emin anlamına gelebilir.  
-  
- Bu hatayı gidermek için makrosu düzeltin veya yolunu düzeltin. Proje dizininden mutlak bir yol değerlendirilen yoludur.
+
+'Çıkışlar' özelliği özel derleme adımı 'out değerlendiren dosya 'yer alan dosya' makro' için 'macro_expansion için'.
+
+Özel derleme adımı bir dosya çubuğunda hatalı çıkış büyük olasılıkla bir makro değerlendirme sorunu nedeniyle vardı. Bu hata, da yolu yanlış, karakter veya bir dosya yolunda geçersiz karakter birleşimlerinin içeren biçimlendirildiğini anlamına gelebilir.
+
+Bu hatayı gidermek için makro düzeltin veya yolunu düzeltin. Proje dizininden mutlak bir yol değerlendirilen yoludur.

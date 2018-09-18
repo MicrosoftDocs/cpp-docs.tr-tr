@@ -29,30 +29,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef9ebf20a365b48058bc7e5cf4dc0556d917ef44
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 04c628dec2c2fd7e0b0b5a61aa20abf9266ca416
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32386208"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084451"
 ---
 # <a name="cisqrt"></a>_CIsqrt
-Yığındaki üst değer karekökünü hesaplar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void __cdecl _CIsqrt();  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sürümü `sqrt` işlevi derleyici özelliğini algılayan bir özelleştirilmiş çağırma vardır. Oluşturulmasını önler kopyaları önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.  
-  
- Sonuç değeri yığının en üst gönderilir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Platform:** x86  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik işlev başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)
+
+Yığındaki en üst değer karekökünü hesaplar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void __cdecl _CIsqrt();
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sürümü `sqrt` derleyici anlayan özelleştirilmiş bir çağırma kuralı işlevi vardır. Kopya oluşturulmasını önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.
+
+Sonuç değerini yığın üstüne itilir.
+
+## <a name="requirements"></a>Gereksinimler
+ **Platform:** x86
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)

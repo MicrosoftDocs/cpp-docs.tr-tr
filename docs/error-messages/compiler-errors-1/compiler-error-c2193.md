@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc5d6a5890a74fbb4f8a70ee86073c257cdf16ea
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ecfadd6476b8ed65891b5cb8fcbb3e0d54b203ce
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169263"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071464"
 ---
 # <a name="compiler-error-c2193"></a>Derleyici Hatası C2193
-'tanımlayıcısı': bir kesimdeki  
-  
- Bir işlev kullanarak iki farklı segmentlerinde yerleştirilen `alloc_text` ve `code_seg` pragmaları.  
-  
- Aşağıdaki örnek C2193 oluşturur:  
-  
-```  
-// C2193.cpp  
-// compile with: /c  
-extern "C" void MYFUNCTION();  
-#pragma alloc_text(MYCODE, MYFUNCTION)  
-#pragma code_seg("MYCODE2")  
-extern "C" void MYFUNCTION() {}   // C2193  
-extern "C" void MYFUNCTION2() {}  
+
+'identifier': kesimde zaten var
+
+Bir işlevi kullanarak iki farklı segmentler yerleştirildiği `alloc_text` ve `code_seg` pragmaları.
+
+Aşağıdaki örnek, C2193 oluşturur:
+
+```
+// C2193.cpp
+// compile with: /c
+extern "C" void MYFUNCTION();
+#pragma alloc_text(MYCODE, MYFUNCTION)
+#pragma code_seg("MYCODE2")
+extern "C" void MYFUNCTION() {}   // C2193
+extern "C" void MYFUNCTION2() {}
 ```

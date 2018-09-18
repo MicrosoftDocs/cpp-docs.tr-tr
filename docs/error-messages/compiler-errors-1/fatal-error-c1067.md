@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89ac7084e92f7f2ed496a4c1572e94a4fa46862f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f267e58617fbc68835fd3a387c4b635de4fd0530
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229098"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077678"
 ---
 # <a name="fatal-error-c1067"></a>Önemli hata C1067
-Derleyici sınırı: türü bir kayıtta boyutu 64K sınırı aşıldı  
-  
- Bir simge 247 karakteri aşan bir düzenlenmiş adı varsa, bu hata oluşabilir.  Çözmek için sembol adını kısaltın.  
-  
- Derleyici hata ayıklama bilgileri oluşturduğunda, kaynak kodunda karşılaşılan türlerini tanımlamak için tür kayıtları yayar.  Örneğin, türü kayıtları basit yapılar ve işlevlerin bağımsız değişken listeleri içerir.  Bu tür kayıtların bazıları büyük listeleri olabilir.  
-  
- Herhangi bir tür kaydının boyutu 64K sınırı yoktur.  Bu 64 K sınır aşılırsa, bu hata meydana gelir.  
-  
- C1067 uzun adları birçok sembolleriyle varsa veya bir sınıf, yapı ve birleşim çok fazla sayıda üye sahipse da oluşabilir.
+
+Derleyici sınırı: bir tür kaydının boyutu 64K sınırı aşıldı
+
+Bir sembol 247 karakter aşan düzenlenmiş bir ada sahipse, bu hata oluşabilir.  Çözümlemek için sembol adını kısaltın.
+
+Derleyici hata ayıklama bilgileri oluşturur, kaynak kodunda karşılaşılan türleri tanımlamak için tür kayıtları gösterir.  Örneğin, basit yapılar ve İşlevler bağımsız değişken listeleri türü kayıtları içerir.  Bu tür kayıtların bazıları büyük listeler olabilir.
+
+Herhangi bir tür kaydının boyutuna 64K sınırı yoktur.  Bu 64 K sınırı aşılırsa, bu hata meydana gelir.
+
+C1067, uzun adlara sahip fazla sembol veya bir sınıf, yapı veya birleşim çok fazla sayıda üye var. da meydana gelebilir.

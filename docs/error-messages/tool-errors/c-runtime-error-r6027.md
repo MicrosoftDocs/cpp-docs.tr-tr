@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc38d664a6c9e2e2be0c360709ed6b39b1014b05
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3694c367c090d0dcc2fb5e4ac72c8f00593fed27
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297215"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084815"
 ---
 # <a name="c-runtime-error-r6027"></a>C çalışma zamanı hatası R6027
-lowio başlatma için yeterli alan yok  
-  
+
+lowio başlatma için yeterli alan yok
+
 > [!NOTE]
->  Bir uygulama çalıştırırken bu hata iletisi alırsanız, bir iç bellek sorunu olduğundan uygulama kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak genellikle son derece düşük bellek koşul tarafından kaynaklanır. Ayrıca uygulama bir hata, kullandığı Visual C++ kitaplıkları'nın Bozulması veya bir sürücüsü tarafından kaynaklanabilir.  
->   
->  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:  
->   
->  -   Çalışan diğer uygulamaları kapatın veya belleği boşaltmak için bilgisayarınızı yeniden başlatın.  
-> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasındaki **Denetim Masası** onarın veya program yeniden yükleyin.  
-> -   Uygulama başka bir uygulama veya sürücü yeni yüklemeden önce çalışan kullanırsanız **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasındaki **Denetim Masası** kaldırmak için Yeni uygulama veya sürücü, uygulamanızı yeniden deneyin.  
-> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasındaki **Denetim Masası** onarın veya Microsoft Visual C++ yeniden dağıtılabilir tüm kopyalarını yeniden yükleyin.  
-> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.  
-> -   Uygulamanın güncelleştirilmiş bir sürümünü denetle. Sorun devam ederse uygulamanın satıcısına başvurun.  
-  
- **Programcıları için bilgi**  
-  
- C çalışma zamanı düşük düzey g/ç desteği başlatmak yeterli bellek olmadığında bu hata oluşur. Bu hata genellikle uygulama başlatma sırasında oluşur. Uygulamanızı ve sürücüleri ve yüklerken DLL'leri öbek başlatma sırasında bozuk değil olduğunu doğrulayın.
+>  Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bellek sorunu olduğundan uygulaması kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak genellikle bir son derece düşük bellek durumu tarafından neden olur. Ayrıca uygulama bir hata, kullandığı Visual C++ kitaplıklarının Bozulması veya bir sürücü tarafından kaynaklanabilir.
+>
+>  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
+>
+>  -   Çalışan diğer uygulamaları kapatın veya belleği boşaltmak için bilgisayarınızı yeniden başlatın.
+> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
+> -   Uygulamayı başka bir uygulama veya sürücü yeni bir yüklemeden önce çalıştığı kullanırsanız **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** kaldırmak için Yeni uygulama veya sürücü, uygulamanızı yeniden deneyin.
+> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya Microsoft Visual C++ yeniden dağıtılabilir tüm kopyalarını yeniden yükleyin.
+> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
+> -   Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
+
+**Programcıları için bilgi**
+
+C çalışma zamanı düşük düzey g/ç desteği başlatmak yeterli bellek olmadığında bu hata oluşur. Bu hata genellikle uygulama başlatma sırasında oluşur. Uygulamanızı ve sürücüleri ve onu yükleyen DLL'leri başlatma sırasında yığın bozmadığından doğrulayın.

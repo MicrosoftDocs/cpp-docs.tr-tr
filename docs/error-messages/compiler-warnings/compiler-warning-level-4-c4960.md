@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1281bc86ad363c02df5c39ed41f616a6fff1a9b3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ed6ba083017c84cd6af05b917ff8417b0394d7c2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294433"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085725"
 ---
 # <a name="compiler-warning-level-4-c4960"></a>Derleyici Uyarısı (düzey 4) C4960
-'function' profili için çok büyük  
-  
- Kullanırken [/LTCG:PGOPTIMIZE](../../build/reference/ltcg-link-time-code-generation.md), derleyici 65.535 yönergeleri büyük bir işlevi olan bir giriş modülü algıladı. Profil temelli iyileştirmeler için büyük bir işlev kullanılamıyor.  
-  
- Bu uyarıyı çözmek için işlevi boyutunu azaltın.
+
+'function' profili çok büyük
+
+Kullanırken [/LTCG:PGOPTIMIZE](../../build/reference/ltcg-link-time-code-generation.md), derleyici ile 65.535 yönergeleri daha büyük bir işlev bir giriş modülü algılandı. Profil temelli iyileştirmeler için büyük bir işlevi kullanılamaz.
+
+Bu uyarıyı çözmek için işlev boyutunu azaltın.

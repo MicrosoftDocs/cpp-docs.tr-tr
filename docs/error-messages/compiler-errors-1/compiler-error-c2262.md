@@ -16,25 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 199c5d109cf994a8f69e29f893cd13dd7028ca82
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 44e60bfcf00e3e01340c3df1b79004e84e93f56c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170771"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071451"
 ---
 # <a name="compiler-error-c2262"></a>Derleyici Hatası C2262
-'attribute_specifiers': InternalsVisibleTo bildirimlerinde belirtilen sürüm, kültür veya işlemci mimarisi sahip olamaz  
-  
- <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> Özniteliği düzgün belirtilmedi.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2262 oluşturur.  
-  
-```  
-// C2262.cpp  
-// compile with: /clr /c  
-using namespace System::Runtime::CompilerServices;  
-[assembly: InternalsVisibleTo("assembly_name, version=1.2.3.7")];   // C2262  
-[assembly: InternalsVisibleTo("assembly_name ")];   // OK  
+
+'attribute_specifiers': InternalsVisibleTo bildirmelerinde belirtilmiş sürüm, kültür veya işlemci mimarisi olamaz
+
+<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> Özniteliği düzgün belirtilmedi.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2262 oluşturur.
+
+```
+// C2262.cpp
+// compile with: /clr /c
+using namespace System::Runtime::CompilerServices;
+[assembly: InternalsVisibleTo("assembly_name, version=1.2.3.7")];   // C2262
+[assembly: InternalsVisibleTo("assembly_name ")];   // OK
 ```

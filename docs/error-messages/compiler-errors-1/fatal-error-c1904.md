@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96e95fbce8bb87638365c534f906de5c7ede282f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c84f65909ed17060ec4347975b7e7f34a782da95
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199826"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46079030"
 ---
 # <a name="fatal-error-c1904"></a>Önemli hata C1904
-hatalı sağlayıcıyı etkileşim: 'dosya'  
-  
- Bu hata, bir öznitelik sağlayıcısı başarısızlığını gösterir.  
-  
- Hata durumlarda dikkat edin, yalıtmak ve tekrarlanabilir bir test çalışması oluşturma ardından başvurun [konuşun bize](/visualstudio/ide/talk-to-us).
+
+Hatalı sağlayıcı etkileşimi: 'dosya'
+
+Bu hata, bir öznitelik sağlayıcısı başarısız gösterir.
+
+Hatanın koşullara dikkat edin, yalıtmak ve tekrarlanabilir bir test çalışması oluşturmak deneyin ardından başvurun [konuşmak bize](/visualstudio/ide/talk-to-us).

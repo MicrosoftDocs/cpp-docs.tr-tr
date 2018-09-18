@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dab0ad6aff391eb89ac59198fb8c173ecb362bbd
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: ae551c934c4286a321772fb01a21260c36dfccff
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688303"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080330"
 ---
 # <a name="networklinkregistry-class"></a>network_link_registry Sınıfı
-`network_link_registry` Özet temel sınıf kaynak ve hedef blokları arasındaki bağlantıları yönetir.  
+`network_link_registry` Soyut temel sınıf kaynak ve hedef bloklar arasındaki bağlantıları yönetir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,29 +40,29 @@ class network_link_registry;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_Block`  
- Blok veri türü depolanıyor `network_link_registry`.  
+*Girildiğinde _bloğu*<br/>
+Blok veri türü içinde depolanan `network_link_registry`.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`const_pointer`|Bir işaretçi sağlayan bir türü bir `const` öğesinde bir `network_link_registry` nesnesi.|  
-|`const_reference`|Bir başvuru sağlayan bir türü bir `const` öğesi saklanan bir `network_link_registry` nesne için okuma ve const işlemlerini gerçekleştirme.|  
-|`iterator`|Yineleyici sağlayan bir tür okuma veya herhangi bir öğe değiştirme bir `network_link_registry` nesnesi.|  
-|`type`|Depolanan blok türü temsil eden bir tür `network_link_registry` nesnesi.|  
+|`const_pointer`|Bir işaretçi sağlayan bir tür bir `const` öğesinde bir `network_link_registry` nesne.|  
+|`const_reference`|Bir başvuru sağlayan bir tür bir `const` öğesi içinde depolanan bir `network_link_registry` okumak ve const işlemleri gerçekleştirmek için nesne.|  
+|`iterator`|Bir yineleyici sağlayan bir tür okuyabilen veya değiştirebilen herhangi bir öğenin bir `network_link_registry` nesne.|  
+|`type`|Depolanan blok türü temsil eden bir tür `network_link_registry` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[add](#add)|Türetilen bir sınıfta geçersiz kılındığında, bir bağlantı ekler `network_link_registry` nesnesi.|  
-|[Başlangıç](#begin)|Türetilen bir sınıfta geçersiz kılındığında, yineleyici ilk öğe döndürür `network_link_registry` nesnesi.|  
-|[içerir](#contains)|Türetilen bir sınıfta geçersiz kılındığında, arar `network_link_registry` belirtilen bloğu için nesnesi.|  
-|[Sayısı](#count)|Türetilen bir sınıfta geçersiz kılındığında, öğelerin sayısını döndürür `network_link_registry` nesnesi.|  
-|[remove](#remove)|Türetilen bir sınıfta geçersiz kılındığında, belirtilen bloğundan kaldırır `network_link_registry` nesnesi.|  
+|[add](#add)|Türetilen bir sınıfta geçersiz kılındığında, bir bağlantı ekler `network_link_registry` nesne.|  
+|[başlayın](#begin)|Türetilen bir sınıfta geçersiz kılındığında, içindeki ilk öğeye bir yineleyici döndüren `network_link_registry` nesne.|  
+|[içerir](#contains)|Türetilen bir sınıfta geçersiz kılındığında, arar `network_link_registry` belirtilen bloğu için nesne.|  
+|[Sayısı](#count)|Türetilen bir sınıfta geçersiz kılındığında, öğe sayısını döndürür `network_link_registry` nesne.|  
+|[remove](#remove)|Türetilen bir sınıfta geçersiz kılındığında, belirtilen bloğundan kaldırır `network_link_registry` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  `network link registry` Eş zamanlı erişim için güvenli değildir.  
@@ -77,70 +77,70 @@ class network_link_registry;
   
 ##  <a name="add"></a> Ekleme 
 
- Türetilen bir sınıfta geçersiz kılındığında, bir bağlantı ekler `network_link_registry` nesnesi.  
+ Türetilen bir sınıfta geçersiz kılındığında, bir bağlantı ekler `network_link_registry` nesne.  
   
 ```
 virtual void add(_EType _Link) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Link`  
- Eklenecek bir bloğu için bir işaretçi.  
+*_Bağla*<br/>
+Eklenecek bir blok için işaretçi.  
   
-##  <a name="begin"></a> Başlangıç 
+##  <a name="begin"></a> başlayın 
 
- Türetilen bir sınıfta geçersiz kılındığında, yineleyici ilk öğe döndürür `network_link_registry` nesnesi.  
+ Türetilen bir sınıfta geçersiz kılındığında, içindeki ilk öğeye bir yineleyici döndüren `network_link_registry` nesne.  
   
 ```
 virtual iterator begin() = 0;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İlk öğe adresleme yineleyici `network_link_registry` nesnesi.  
+ İçindeki ilk öğeyi ele alan bir yineleyici `network_link_registry` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yineleyici son durumu tarafından belirtilen bir `NULL` bağlantı.  
+ Bitiş durumuna yineleyici tarafından belirtilen bir `NULL` bağlantı.  
   
 ##  <a name="contains"></a> içerir 
 
- Türetilen bir sınıfta geçersiz kılındığında, arar `network_link_registry` belirtilen bloğu için nesnesi.  
+ Türetilen bir sınıfta geçersiz kılındığında, arar `network_link_registry` belirtilen bloğu için nesne.  
   
 ```
 virtual bool contains(_EType _Link) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Link`  
- İçin de Aranmakta olan bloğu için bir işaretçi `network_link_registry` nesnesi.  
+*_Bağla*<br/>
+Bir işaretçi için de Aranmakta olan bir blok `network_link_registry` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` Blok bulunduysa `false` Aksi takdirde.  
+ `true` bloğu bulunduysa `false` Aksi takdirde.  
   
 ##  <a name="count"></a> Sayısı 
 
- Türetilen bir sınıfta geçersiz kılındığında, öğelerin sayısını döndürür `network_link_registry` nesnesi.  
+ Türetilen bir sınıfta geçersiz kılındığında, öğe sayısını döndürür `network_link_registry` nesne.  
   
 ```
 virtual size_t count() = 0;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Öğelerin sayısı `network_link_registry` nesnesi.  
+ Öğe sayısını `network_link_registry` nesne.  
   
 ##  <a name="remove"></a> Kaldır 
 
- Türetilen bir sınıfta geçersiz kılındığında, belirtilen bloğundan kaldırır `network_link_registry` nesnesi.  
+ Türetilen bir sınıfta geçersiz kılındığında, belirtilen bloğundan kaldırır `network_link_registry` nesne.  
   
 ```
 virtual bool remove(_EType _Link) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Link`  
- Bir blok, kaldırılması için bir işaretçi bulundu.  
+*_Bağla*<br/>
+Bir blok, kaldırılacak işaretçisi bulunamadı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` bağlantı bulundu ve kaldırıldı, `false` Aksi takdirde.  
+ `true` bağlantıyı bulunan ve kaldırılmış `false` Aksi takdirde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

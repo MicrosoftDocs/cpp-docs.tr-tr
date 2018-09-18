@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e591ad979d6c995fd5559b22a826766b02d50dd
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 177fdb46971a0e932a41881cb9e6a08a800a60bb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39405876"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076300"
 ---
 # <a name="align-c"></a>align (C++)
 
@@ -34,7 +34,7 @@ Kullanım `__declspec(align(#))` tam olarak (örneğin, statik atamalar veya oto
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **__declspec (hizalama (** *#* **))** *bildirimcisi*  
+> **__declspec (hizalama (** *#* **))** *bildirimcisi*
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -251,6 +251,7 @@ Nesneye sahip olmadığı sürece bir nesnenin uzaklığı önceki nesne ve geç
 **END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[__declspec](../cpp/declspec.md)  
-[ARM ABI Kurallarına Genel Bakış](../build/overview-of-arm-abi-conventions.md)  
-[x64 Çağırma Kurallarına Genel Bakış](../build/overview-of-x64-calling-conventions.md)  
+
+[__declspec](../cpp/declspec.md)<br/>
+[ARM ABI Kurallarına Genel Bakış](../build/overview-of-arm-abi-conventions.md)<br/>
+[x64 Çağırma Kurallarına Genel Bakış](../build/overview-of-x64-calling-conventions.md)

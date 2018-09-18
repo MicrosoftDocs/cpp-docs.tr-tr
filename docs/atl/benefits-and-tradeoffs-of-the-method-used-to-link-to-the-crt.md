@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b90259a942ea785cfbfee4bfda803d9d7b568d4
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1962b2db987e34a1f0d18fa863473a20f9da7c9d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753883"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084269"
 ---
 # <a name="benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt"></a>Avantajlı ve Avantajsız yönleri CRT bağlantı için kullanılan yöntemi
 
@@ -34,7 +34,7 @@ Konu [CRT projenize ATL içinde bağlama](../atl/linking-to-the-crt-in-your-atl-
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ATL ve C çalışma zamanı koduyla programlama](../atl/programming-with-atl-and-c-run-time-code.md)   
-[DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../build/run-time-library-behavior.md)   
+[ATL ve C Çalışma Zamanı Koduyla Programlama](../atl/programming-with-atl-and-c-run-time-code.md)<br/>
+[DLL’ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../build/run-time-library-behavior.md)<br/>
 [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)
 

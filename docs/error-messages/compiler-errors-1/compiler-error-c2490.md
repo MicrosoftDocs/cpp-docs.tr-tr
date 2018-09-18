@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc366178c31f900b031aacca278e39cc0c2eb493
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 36e4a44a6a2288ce712c77538edbd710f22f5315
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198709"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071815"
 ---
 # <a name="compiler-error-c2490"></a>Derleyici Hatası C2490
-'anahtar sözcüğü 'naked' özniteliği işlevinde izin verilmiyor'  
-  
- Olarak tanımlanan bir işlev [naked](../../cpp/naked-cpp.md) yapılandırılmış özel durum işleme kullanamazsınız.  
-  
- Aşağıdaki örnek C2490 oluşturur:  
-  
-```  
-// C2490.cpp  
-// processor: x86  
-__declspec( naked ) int func() {  
-   __try{}   // C2490, structured exception handling  
-}  
+
+'anahtar sözcüğü 'naked' özniteliği olan işlevde izin verilmez'
+
+Olarak tanımlanan bir işlev [naked](../../cpp/naked-cpp.md) yapılandırılmış özel durum işleme kullanamazsınız.
+
+Aşağıdaki örnek, C2490 oluşturur:
+
+```
+// C2490.cpp
+// processor: x86
+__declspec( naked ) int func() {
+   __try{}   // C2490, structured exception handling
+}
 ```

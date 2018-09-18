@@ -16,38 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2eb5fca95c876b1020a630f0ebe69e56a1dfa362
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b3d0b070d5f32b75bdd3c56a3754857a574638b7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250435"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46083255"
 ---
 # <a name="compiler-error-c3226"></a>Derleyici Hatası C3226
-Bir şablon bildirimi genel bildirimi içinde izin verilmiyor  
-  
- Genel bir sınıf içinde genel bir bildirimi kullanın.  
-  
- Aşağıdaki örnek C3226 oluşturur:  
-  
-```  
-// C3226.cpp  
-// compile with: /clr  
-generic <class T>  
-ref class C {  
-   template <class T1>   // C3226  
-   ref struct S1 {};  
-};  
-```  
-  
- Aşağıdaki örnek, olası bir çözüm gösterilmektedir:  
-  
-```  
-// C3226b.cpp  
-// compile with: /clr /c  
-generic <class T>  
-ref class C {  
-   generic <class T1>  
-   ref struct S1 {};  
-};  
+
+Genel bildirim içinde şablon bildirimine izin verilmez
+
+Genel bildirim genel bir sınıf içinde kullanın.
+
+Aşağıdaki örnek, C3226 oluşturur:
+
+```
+// C3226.cpp
+// compile with: /clr
+generic <class T>
+ref class C {
+   template <class T1>   // C3226
+   ref struct S1 {};
+};
+```
+
+Aşağıdaki örnek, olası çözümü göstermektedir:
+
+```
+// C3226b.cpp
+// compile with: /clr /c
+generic <class T>
+ref class C {
+   generic <class T1>
+   ref struct S1 {};
+};
 ```

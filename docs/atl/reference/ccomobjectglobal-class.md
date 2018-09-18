@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4198e08a4c126a180006a088d4fc1509643824f6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 141940ef5d5c7d23ea3cf049e64e9f4c6974fce0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764936"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076664"
 ---
 # <a name="ccomobjectglobal-class"></a>CComObjectGlobal sınıfı
 
@@ -42,7 +42,7 @@ class CComObjectGlobal : public Base
 
 #### <a name="parameters"></a>Parametreler
 
-*temel*  
+*temel*<br/>
 Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)iyi herhangi diğer bir arabirim uğradıysa nesnede desteklemek istediğiniz gibi.
 
 ## <a name="members"></a>Üyeler
@@ -142,10 +142,10 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] İstenen arabiriminin GUID'si.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] IID veya NULL arabirimi bulunamazsa, belirtilen arabirim işaretçisini bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -174,7 +174,7 @@ Varsayılan olarak, `Release` çağrıları `_Module::Unlock`burada `_Module` ge
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComObjectStack sınıfı](../../atl/reference/ccomobjectstack-class.md)   
-[CComAggObject sınıfı](../../atl/reference/ccomaggobject-class.md)   
-[CComObject sınıfı](../../atl/reference/ccomobject-class.md)   
+[CComObjectStack Sınıfı](../../atl/reference/ccomobjectstack-class.md)<br/>
+[CComAggObject Sınıfı](../../atl/reference/ccomaggobject-class.md)<br/>
+[CComObject Sınıfı](../../atl/reference/ccomobject-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

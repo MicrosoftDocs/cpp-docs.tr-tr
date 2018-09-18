@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5974d5ac6202c9f68e5a8dea95e61769546782fa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1abd535733ad26c118ca7839d8a981767afe7110
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195704"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072166"
 ---
 # <a name="compiler-error-c2409"></a>Derleyici Hatası C2409
-'bağlamda' işleci olarak kullanılan türü geçersiz  
-  
- Türü bu bağlamda bir işleç olarak yasal değil.
+
+geçersiz tür 'context' içinde işleç olarak kullanıldı
+
+Türü bu bağlamda bir işleç olarak geçerli değil.

@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b0d2dd9bed6f719b13737cf4466266197b6e585
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a6156f305ce49266366ffc42504232614c6987eb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33253078"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081838"
 ---
 # <a name="compiler-error-c3371"></a>Derleyici Hatası C3371
-'idl_module': yalnızca 'name' özelliği burada izin verilir  
-  
- [idl_module](../../windows/idl-module.md) doğrudan bir işlev bildirimi kullanımı adı dışında herhangi bir parametre sahip olamaz.  
-  
- Aşağıdaki örnek C3371 oluşturur:  
-  
-```  
-// C3371.cpp  
-[idl_module(name="Name", dllname="Some.dll")];  
-[idl_module(name="Name", helpstring="Some help")]   // C3371  
-int f1();  
-// try  
-// [idl_module(name="Name")]  
-// int f1();  
-  
-int main()  
-{  
-}  
+
+'idl_module': Burada yalnızca 'name' özelliğine izin
+
+[idl_module](../../windows/idl-module.md) kullanımı doğrudan bir işlev bildirimi, adı dışında herhangi bir parametre olamaz.
+
+Aşağıdaki örnek, C3371 oluşturur:
+
+```
+// C3371.cpp
+[idl_module(name="Name", dllname="Some.dll")];
+[idl_module(name="Name", helpstring="Some help")]   // C3371
+int f1();
+// try
+// [idl_module(name="Name")]
+// int f1();
+
+int main()
+{
+}
 ```

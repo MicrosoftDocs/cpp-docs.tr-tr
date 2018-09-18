@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74bc3326c50f1b460fc212074b7ca34dec518c76
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 6cc489850ea8e8d2704c92d1c2a671557a4db67a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765641"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084334"
 ---
 # <a name="csimplearrayequalhelperfalse-class"></a>CSimpleArrayEqualHelperFalse sınıfı
 
@@ -32,13 +32,13 @@ Bu sınıf için Yardımcısı, [CSimpleArray](../../atl/reference/csimplearray-
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T>  
+template <class T>
 class CSimpleArrayEqualHelperFalse
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Türetilmiş bir sınıf.
 
 ## <a name="members"></a>Üyeler
@@ -75,5 +75,5 @@ Bu yöntem her zaman false değerini döndürür ve çağıracak `ATLASSERT` ba�
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CSimpleArrayEqualHelper sınıfı](../../atl/reference/csimplearrayequalhelper-class.md)   
+[CSimpleArrayEqualHelper Sınıfı](../../atl/reference/csimplearrayequalhelper-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

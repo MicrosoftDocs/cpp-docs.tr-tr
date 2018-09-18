@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfd8c933522e523329c41ebe666a5a7e3c198cb0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9ff2c8066557e420ecd7de561d7731b7be733315
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33286103"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085790"
 ---
 # <a name="compiler-warning-level-1-c4041"></a>Derleyici Uyarısı (düzey 1) C4041
-Derleyici sınırı: tarayıcı çıkış sonlandırma  
-  
- Tarayıcı bilgileri derleyici sınırı aştı.  
-  
- Bu uyarı ile derleme tarafından kaynaklanabilir [/FR](../../build/reference/fr-fr-create-dot-sbr-file.md) (tarayıcı bilgileri yerel değişkenleri dahil).  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümlere kullanarak düzeltmek için  
-  
-1.  /Fr (tarayıcı bilgileri yerel değişkenler olmadan) ile derleyin.  
-  
-2.  Tarayıcı çıkış (derleme /FR veya /Fr olmadan) devre dışı bırakın.
+
+Derleyici sınırı: yarayıcı çıktısı sonlandırılıyor
+
+Tarayıcı bilgilerini derleyici sınırı aşıldı.
+
+Bu uyarı ile derleme tarafından kaynaklanabilir [/FR](../../build/reference/fr-fr-create-dot-sbr-file.md) (tarayıcı bilgileri yerel değişkenler dahil olmak üzere).
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+
+1. /Fr (tarayıcı bilgileri yerel değişkenler olmadan) ile derleyin.
+
+1. Yarayıcı çıktısı (/FR veya /Fr olmadan derleme) devre dışı bırakın.

@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b83c3b6cf5697ca2e52f9f8ad6afdc2754edd4f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8b21636c3500625f262355750d32aa0fa3faeb5d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33256424"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073856"
 ---
 # <a name="compiler-error-c3417"></a>Derleyici Hatası C3417
-'member': değer türleri, kullanıcı tanımlı özel üye işlevleri içeremez  
-  
- Değer türleri varsayılan örnek oluşturucu, yıkıcı veya kopya Oluşturucu gibi işlevler içeremez.  
-  
- Aşağıdaki örnek C3517 oluşturur:  
-  
-```  
-// C3417.cpp  
-// compile with: /clr /c  
-value class VC {  
-   VC(){}   // C3417  
-  
-   // OK  
-   static VC(){}  
-   VC(int i){}  
-};  
+
+'member': değer türleri kullanıcı tanımlı özel üye işlevler içeremez
+
+Değer türleri, varsayılan örnek oluşturucusu, yok Edicisi veya kopya Oluşturucusu gibi işlevler içeremez.
+
+Aşağıdaki örnek, C3517 oluşturur:
+
+```
+// C3417.cpp
+// compile with: /clr /c
+value class VC {
+   VC(){}   // C3417
+
+   // OK
+   static VC(){}
+   VC(int i){}
+};
 ```

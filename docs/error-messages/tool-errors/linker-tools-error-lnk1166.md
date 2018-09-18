@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 474d4ad146edf4411bd9734a6ec4482273c065dd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6aa86a9fd3c2d6d19482ba5ce5c866ab660e742e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298158"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073094"
 ---
 # <a name="linker-tools-error-lnk1166"></a>Bağlayıcı Araçları Hatası LNK1166
-kod uzaklığındaki ayarlayamaz uzaklığı, va = value =  
-  
- BAĞLANTI kodu gerekli olarak doldurulacak bulamadı.  
-  
- Belirli yönergeler sayfa sınırları üzerinde bazı işlemciler arası izin verilmiyor. Bağlantı bu durumu düzeltmek için klavye takımı eklemeyi dener. Bu durumda, bağlantı sorunu çalışmıyor.
+
+kod uzaklığında ayarlayamaz uzaklığı, va = value =
+
+Gerektiği gibi kod yazma bağlantısı oluşturamadı.
+
+Belirli yönergeler sayfasına sınırlarını aşan bazı işlemciler üzerinde izin verilmez. BAĞLANTI, bu durumu düzeltmek için doldurmalar eklemeyi dener. Bu durumda, bağlantı sorunu geçici olarak çözebiliyor değil.

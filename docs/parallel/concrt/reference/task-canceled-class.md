@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f535a4cce75d388437025967b9c0c9b1ae0fd7a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 1e3351700d9e7e7ea466b667e47b105a7229f3d8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33690253"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46083008"
 ---
 # <a name="taskcanceled-class"></a>task_canceled Sınıfı
-Bu sınıf, iptal etmek için geçerli görev zorlamak için PPL görevleri katmanı tarafından oluşturulan bir özel açıklar. Tarafından da oluşturulan `get()` yöntemi [görev](/visualstudio/extensibility/debugger/task-class-internal-members), iptal edilen bir görev için.  
+Bu sınıf, geçerli görevi iptal etmek için zorlamak için PPL görev katmanı tarafından verilen bir özel durumu anlatmaktadır. Ayrıca tarafından oluşturulur `get()` metodunda [görev](/visualstudio/extensibility/debugger/task-class-internal-members), iptal edilen bir görev için.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,7 +40,7 @@ class task_canceled : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[task_canceled](#ctor)|Fazla Yüklendi. Oluşturan bir `task_canceled` nesnesi.|  
+|[task_canceled](#ctor)|Fazla Yüklendi. Oluşturur bir `task_canceled` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -54,7 +54,7 @@ class task_canceled : public std::exception;
   
 ##  <a name="ctor"></a> task_canceled 
 
- Oluşturan bir `task_canceled` nesnesi.  
+ Oluşturur bir `task_canceled` nesne.  
   
 ```
 explicit _CRTIMP task_canceled(_In_z_ const char* _Message) throw();
@@ -63,8 +63,8 @@ task_canceled() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

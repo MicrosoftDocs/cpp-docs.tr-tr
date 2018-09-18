@@ -16,38 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 496f26046803efdd2b67cdc6d5a5ec74a3cbb90d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b8188e3fc861573025a4855102e3ced14d3136fb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293393"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46079706"
 ---
 # <a name="compiler-warning-level-4-c4365"></a>Derleyici Uyarısı (düzey 4) C4365
-'action': 'type_1' dönüştürmeye 'type_2', imzalı ve imzasız uyuşmazlığı  
-  
- Örneğin, bir işaretsiz değer imzalı değerine dönüştürmek çalıştı.  
-  
- Varsayılan olarak C4365 kapalıdır.  Daha fazla bilgi için bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4365 oluşturur.  
-  
-```  
-// C4365.cpp  
-// compile with: /W4  
-#pragma warning(default:4365)  
-  
-int f(int) { return 0; }  
-void Test(size_t i) {}  
-  
-int main() {  
-   unsigned int n = 10;  
-   int o = 10;  
-   n++;  
-   f(n);   // C4365  
-   f(o);   // OK  
-  
-   Test( -19 );   // C4365  
-}  
+
+'action': 'type_1' öğesinden 'type_2', imzalı/imzasız uyuşmazlığı öğesine dönüştürme
+
+Örneğin, işaretsiz bir değere bir imzalı değerine dönüştürmek çalıştı.
+
+Varsayılan olarak C4365 kapalıdır.  Daha fazla bilgi için [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4365 oluşturur.
+
+```
+// C4365.cpp
+// compile with: /W4
+#pragma warning(default:4365)
+
+int f(int) { return 0; }
+void Test(size_t i) {}
+
+int main() {
+   unsigned int n = 10;
+   int o = 10;
+   n++;
+   f(n);   // C4365
+   f(o);   // OK
+
+   Test( -19 );   // C4365
+}
 ```

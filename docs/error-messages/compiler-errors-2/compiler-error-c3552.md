@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5f1453a6175019ad7c90471330d11c77da26134
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dd9f7ae37500e115fa33fa61298cab800c88f9c7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252549"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081266"
 ---
 # <a name="compiler-error-c3552"></a>Derleyici Hatası C3552
-'typename': geç belirtilen dönüş türü, 'auto' içeremez  
-  
- Kullanırsanız `auto` anahtar sözcüğü bir işlevin dönüş türü için bir yer tutucu olarak belirtilen geç dönüş türü sağlamanız gerekir. Ancak, başka bir kullanamazsınız `auto` geç belirtilen dönüş türü belirtmek için anahtar sözcüğü. Örneğin, aşağıdaki kod parçası C3552 hata verir.  
-  
- `auto myFunction->auto; // C3552`
+
+'typename': bir sonradan belirtilen dönüş türü, 'auto' içeremez
+
+Kullanırsanız `auto` anahtar sözcüğü bir işlevin dönüş türü için yer tutucu olarak sonradan belirtilmiş dönüş türü sağlamanız gerekir. Ancak, başka bir kullanamazsınız `auto` sonradan belirtilen dönüş türü belirtmek için anahtar sözcüğü. Örneğin, aşağıdaki kod parçası hatası C3552 verir.
+
+`auto myFunction->auto; // C3552`

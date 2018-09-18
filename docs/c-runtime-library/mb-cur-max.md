@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c9b290df51d631251811d1f8a92dff980304b24
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e1bed389b0b52b9eaccad02c6fb59d9e89076edb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32390387"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084566"
 ---
 # <a name="mbcurmax"></a>MB_CUR_MAX
 
-Geçerli yerel ayar için birden çok baytlı karakter bayt sayısını gösterir makrosu.
+Çok baytlı bir karakterin geçerli yerel ayarı için bayt maksimum sayısını gösteren bir makro.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,16 +35,16 @@ Geçerli yerel ayar için birden çok baytlı karakter bayt sayısını gösteri
 
 Bağlam: ANSI çok baytlı ve geniş karakter dönüştürme işlevleri
 
-Değeri `MB_CUR_MAX` en fazla bayt cinsinden geçerli yerel ayar için birden çok baytlı karakter sayısıdır.
+Değerini `MB_CUR_MAX` en fazla bir çok baytlı karakterin geçerli yerel ayarı için bayt sayısıdır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[_mbclen, mblen, _mblen_l](../c-runtime-library/reference/mbclen-mblen-mblen-l.md)   
-[mbstowcs, _mbstowcs_l](../c-runtime-library/reference/mbstowcs-mbstowcs-l.md)   
-[mbtowc, _mbtowc_l](../c-runtime-library/reference/mbtowc-mbtowc-l.md)   
-[&#95;&#95;&#95;mb_cur_max_func, &#95; &#95; &#95;mb_cur_max_l_func, &#95; &#95;p&#95;&#95;&#95;mb_cur_max, &#95; &#95;mb_cur_max](../c-runtime-library/mb-cur-max-func-mb-cur-max-l-func-p-mb-cur-max-mb-cur-max.md)   
-[Standart Türler](../c-runtime-library/standard-types.md)   
-[wcstombs, _wcstombs_l](../c-runtime-library/reference/wcstombs-wcstombs-l.md)   
-[wctomb, _wctomb_l](../c-runtime-library/reference/wctomb-wctomb-l.md)   
-[Veri türü sabitleri](../c-runtime-library/data-type-constants.md)   
+[_mbclen, mblen, _mblen_l](../c-runtime-library/reference/mbclen-mblen-mblen-l.md)<br/>
+[mbstowcs, _mbstowcs_l](../c-runtime-library/reference/mbstowcs-mbstowcs-l.md)<br/>
+[mbtowc, _mbtowc_l](../c-runtime-library/reference/mbtowc-mbtowc-l.md)<br/>
+[&#95;&#95;&#95;mb_cur_max_func, &#95; &#95; &#95;mb_cur_max_l_func, &#95; &#95;p&#95;&#95;&#95;mb_cur_max, &#95; &#95;mb_cur_max](../c-runtime-library/mb-cur-max-func-mb-cur-max-l-func-p-mb-cur-max-mb-cur-max.md)<br/>
+[Standart Türler](../c-runtime-library/standard-types.md)<br/>
+[wcstombs, _wcstombs_l](../c-runtime-library/reference/wcstombs-wcstombs-l.md)<br/>
+[wctomb, _wctomb_l](../c-runtime-library/reference/wctomb-wctomb-l.md)<br/>
+[Veri Türü Sabitleri](../c-runtime-library/data-type-constants.md)<br/>
 [Global Sabitler](../c-runtime-library/global-constants.md)

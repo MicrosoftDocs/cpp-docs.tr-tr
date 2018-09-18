@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 476dd8b3eeb7174c7584a58ccb5d53bf251adbcc
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b6a2e6c334016c79f02dc43e9790d7dfc4645212
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43768014"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075624"
 ---
 # <a name="programming-with-ccombstr-atl"></a>CComBSTR (ATL) ile programlama
 
@@ -88,8 +88,8 @@ Sızıntısını önlemek için çağrı `Empty` mevcut yöntemi `CComBSTR` adre
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kavramları](../atl/active-template-library-atl-concepts.md)   
-[CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md)   
-[wstring](../standard-library/basic-string-class.md)   
+[Kavramları](../atl/active-template-library-atl-concepts.md)<br/>
+[CStringT Sınıfı](../atl-mfc-shared/reference/cstringt-class.md)<br/>
+[wstring](../standard-library/basic-string-class.md)<br/>
 [Dize Dönüşüm Makroları](../atl/reference/string-conversion-macros.md)
 

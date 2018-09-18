@@ -16,42 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5c5342a65e9f900582246bb007d9dd67338dd8e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3f464f2a6e1f76c7d8b9de8bcc2353766aff0854
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33275168"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077067"
 ---
 # <a name="compiler-warning-c4986"></a>Derleyici Uyarısı C4986
-'function': özel durum belirtimi önceki bildirimi eşleşmiyor  
-  
- Bir bildirim ve diğer bir özel durum belirtimi olduğunda bu uyarı oluşturulabilir.  
-  
- Varsayılan olarak, C4986 kapalıdır. Daha fazla bilgi için bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4986 oluşturur.  
-  
-```cpp  
-class X { };  
-void f1() throw (X*);  
-// ...  
-void f1()  
-{  
-    // ...  
-}    
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bu uyarıyı ortadan kaldırır.  
-  
-```cpp  
-class X { };  
-void f1() throw (X*);  
-// ...  
-void f1() throw (X*)  
-{  
-    // ...  
-}    
+
+'function': özel durum belirtimi, önceki bildirimle eşleşmiyor
+
+Bir özel durum belirtimi bir bildirim ve diğer olduğunda bu uyarı oluşturulabilir.
+
+Varsayılan olarak, C4986 kapalıdır. Daha fazla bilgi için [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4986 oluşturur.
+
+```cpp
+class X { };
+void f1() throw (X*);
+// ...
+void f1()
+{
+    // ...
+}
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, bu uyarıyı ortadan kaldırır.
+
+```cpp
+class X { };
+void f1() throw (X*);
+// ...
+void f1() throw (X*)
+{
+    // ...
+}
 ```

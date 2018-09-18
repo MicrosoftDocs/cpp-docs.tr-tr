@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68e6b4730be3679e4309a298d40657dcecde94b6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9eb111b3fa1376be8a43bfc9a04c7865164bff76
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755716"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084581"
 ---
 # <a name="idispeventsimpleimpl-class"></a>Idispeventsimpleımpl sınıfı
 
@@ -42,19 +42,19 @@ Bu sınıf uygulamalarını sağlar `IDispatch` yöntemleri olmadan bir tür kit
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <UINT nID, class T, const IID* pdiid>  
+template <UINT nID, class T, const IID* pdiid>
 class ATL_NO_VTABLE IDispEventSimpleImpl : public _IDispEventLocator<nID, pdiid>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*nID*  
+*nID*<br/>
 Kaynak nesne için benzersiz bir tanımlayıcı. Zaman `IDispEventSimpleImpl` temel sınıf için bileşik denetim, bu parametre için istenen kapsanan denetiminin kaynak kimliği kullanın. Diğer durumlarda, rastgele bir pozitif tamsayı kullanın.
 
-*T*  
+*T*<br/>
 Sınıfından türetilen kullanıcının sınıfı `IDispEventSimpleImpl`.
 
-*pdiid*  
+*pdiid*<br/>
 Bu sınıf tarafından uygulanan olay görüntüleme arabirimi Laboratuvardaki işaretçisi.
 
 ## <a name="members"></a>Üyeler
@@ -119,7 +119,7 @@ HRESULT Advise(IUnknown* pUnk);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnk*  
+*pUnk*<br/>
 [in] Bir işaretçi `IUnknown` olay kaynağı nesnesinin arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -145,10 +145,10 @@ HRESULT DispEventAdvise(IUnknown* pUnk  const IID* piid);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnk*  
+*pUnk*<br/>
 [in] Bir işaretçi `IUnknown` olay kaynağı nesnesinin arabirimi.
 
-*piid*  
+*piid*<br/>
 Olay kaynağı nesnesinin IID için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -174,10 +174,10 @@ HRESULT DispEventUnadvise(IUnknown* pUnk  const IID* piid);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnk*  
+*pUnk*<br/>
 [in] Bir işaretçi `IUnknown` olay kaynağı nesnesinin arabirimi.
 
-*piid*  
+*piid*<br/>
 Olay kaynağı nesnesinin IID için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -267,7 +267,7 @@ HRESULT Unadvise(IUnknown* pUnk);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnk*  
+*pUnk*<br/>
 [in] Bir işaretçi `IUnknown` olay kaynağı nesnesinin arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -287,8 +287,8 @@ Bağlantı kesildiğinde sonra olayları olay havuzu haritada listelenen işleyi
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[_Atl_func_ınfo yapısı](../../atl/reference/atl-func-info-structure.md)   
-[Idispatchımpl sınıfı](../../atl/reference/idispatchimpl-class.md)   
-[Idispeventımpl sınıfı](../../atl/reference/idispeventimpl-class.md)   
-[SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)   
+[_ATL_FUNC_INFO Yapısı](../../atl/reference/atl-func-info-structure.md)<br/>
+[IDispatchImpl Sınıfı](../../atl/reference/idispatchimpl-class.md)<br/>
+[IDispEventImpl Sınıfı](../../atl/reference/idispeventimpl-class.md)<br/>
+[SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06ab6307a34887fe2d8a8719e20c31da9728664b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 52449689d329cee45cc69b63c315ce9335befbe0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274660"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073112"
 ---
 # <a name="compiler-warning-level-1-c4010"></a>Derleyici Uyarısı (düzey 1) C4010
-Satır devamlılığı karakteri tek satırlı yorum içerir  
-  
- Tarafından sunulan tek satırlı bir yorum, / / ters eğik çizgi içerir (\\) satır devamlılığı karakteri olarak görev yapar. Derleyici bir devamlılık olması için sonraki satıra göz önünde bulundurur ve yorum olarak değerlendirir.  
-  
- Bazı sözdizimi düzenleyicileri devamlılığı karakteri bir açıklama olarak aşağıdaki satırı göstermiyor yönelik. Bu uyarı neden tüm satırlarda renklendirme sözdizimi yoksay.  
-  
- Aşağıdaki örnek C4010 oluşturur:  
-  
-```  
-// C4010.cpp  
-// compile with: /WX  
-int main() {  
-   // the next line is also a comment because of the backslash \  
-   int a = 3; // C4010  
-   a++;  
-}  
+
+tek satır açıklama satır devam ettirme karakteri içeriyor
+
+Tarafından sunulan bir tek satır açıklama / /, ters eğik çizgi içerir (\\) satır devam ettirme karakteri olarak görev yapar. Derleyici, bir devamlılık sonraki satırını göz önünde bulundurur ve açıklama olarak değerlendirir.
+
+Bazı sözdizimi düzenleyicileri devamlılık karakter olarak bir açıklama satırı göstermez yönelik. Sözdizimi renklendirme bu uyarıyı neden olan tüm satırları yoksay.
+
+Aşağıdaki örnek, C4010 oluşturur:
+
+```
+// C4010.cpp
+// compile with: /WX
+int main() {
+   // the next line is also a comment because of the backslash \
+   int a = 3; // C4010
+   a++;
+}
 ```

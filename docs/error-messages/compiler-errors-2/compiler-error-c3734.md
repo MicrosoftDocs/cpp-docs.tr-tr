@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af0b27f449e61d6b80ad2d19eb09a3a55c5f3ad1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d304b3853986b54f9844f9e4968f7bb7d6a8af5a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33264200"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072751"
 ---
 # <a name="compiler-error-c3734"></a>Derleyici Hatası C3734
-'class': yönetilen veya WinRT sınıfı bir coclass'ı olamaz  
-  
- [Coclass](../../windows/coclass.md) özniteliği ile kullanılamaz yönetilen veya WinRT sınıfları.  
-  
- Aşağıdaki örnek C3734 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C3734.cpp  
-// compile with: /clr /c  
-[module(name="x")];  
-  
-[coclass]  
-ref class CMyClass {   // C3734 remove the ref keyword to resolve  
-};  
-```  
+
+'class': yönetilen veya WinRT sınıfı coclass'ı olamaz
+
+[Coclass'ı](../../windows/coclass.md) özniteliği ile kullanılamaz yönetilen veya WinRT sınıflar.
+
+Aşağıdaki örnek, C3734 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C3734.cpp
+// compile with: /clr /c
+[module(name="x")];
+
+[coclass]
+ref class CMyClass {   // C3734 remove the ref keyword to resolve
+};
+```

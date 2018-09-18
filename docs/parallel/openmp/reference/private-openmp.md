@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4af88f450ce6c77a6b0753917516719331199dfd
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 7bd5b85e563f8160dd4490b650caf4f146a09410
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692684"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071243"
 ---
 # <a name="private-openmp"></a>private (OpenMP)
-Her iş parçacığı bir değişken örneğini olması gerektiğini belirtir.  
+Her iş parçacığı bir değişkenin kendi örnek olması gerektiğini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,11 +32,10 @@ Her iş parçacığı bir değişken örneğini olması gerektiğini belirtir.
 private(var)  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
+### <a name="parameters"></a>Parametreler
   
- `var`  
- Her iş parçacığı örnekleri için değişkeni.  
+*var*<br/>
+Her iş parçacığında Örneğiniz için değişken.  
   
 ## <a name="remarks"></a>Açıklamalar  
  **özel** aşağıdaki yönergeleri için geçerlidir:  
@@ -45,15 +44,15 @@ private(var)
   
 -   [parallel](../../../parallel/openmp/reference/parallel.md)  
   
--   [Bölümler](../../../parallel/openmp/reference/sections-openmp.md)  
+-   [Bölümleri](../../../parallel/openmp/reference/sections-openmp.md)  
   
 -   [single](../../../parallel/openmp/reference/single.md)  
   
- Daha fazla bilgi için bkz: [2.7.2.1 özel](../../../parallel/openmp/2-7-2-1-private.md).  
+ Daha fazla bilgi için [2.7.2.1 özel](../../../parallel/openmp/2-7-2-1-private.md).  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```C  
 // openmp_private.c  
 // compile with: /openmp  
 #include <windows.h>  

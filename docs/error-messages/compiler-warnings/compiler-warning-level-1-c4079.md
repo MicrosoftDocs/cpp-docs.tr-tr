@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1fc6c58649c16365d1bbeb22dcf0676947d5d8ce
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7de3eca54ddadd5c7a1687d4f7ebc5f6359a464e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276574"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074018"
 ---
 # <a name="compiler-warning-level-1-c4079"></a>Derleyici Uyarısı (düzey 1) C4079
-beklenmeyen belirteç 'belirteci'  
-  
- Beklenmeyen ayırıcı belirteci pragma bağımsız değişken listesinde oluşur. Pragma kalanı yoksayıldı.  
-  
- Aşağıdaki örnek C4079 oluşturur:  
-  
-```  
-// C4079.cpp  
-// compile with: /W1  
-#pragma warning(disable : 4081)  
-#pragma pack(c,16)   // C4079  
-  
-int main() {  
-}  
+
+beklenmeyen belirteç 'belirteci
+
+Pragmasını bağımsız değişken listesinde bir beklenmeyen ayırıcısı belirteç gerçekleşir. Pragma geri kalanı göz ardı edildi.
+
+Aşağıdaki örnek, C4079 oluşturur:
+
+```
+// C4079.cpp
+// compile with: /W1
+#pragma warning(disable : 4081)
+#pragma pack(c,16)   // C4079
+
+int main() {
+}
 ```
