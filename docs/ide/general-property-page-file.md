@@ -15,30 +15,32 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 523ac16a647116f4d18da7e516adb4f0e6bb7fc4
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 8ad4689c15e14ba0bbac61c8c3b28148536b9057
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "33324041"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715474"
 ---
 # <a name="general-property-page-file"></a>Genel Özellik Sayfası (Dosya)
 
-İçinde bir dosya seçildiğinde **Çözüm Gezgini**, **genel** altında özellik sayfası **yapılandırma özellikleri** düğümü aşağıdaki özellikleri içerir:
+İçinde bir dosya seçildiğinde **Çözüm Gezgini**, **genel** altında özellik sayfası **yapılandırma özellikleri** düğümü, aşağıdaki özellikleri içerir:
 
-**Derlemeden dışlama**  
-Dosya, geçerli yapılandırma için yapı gerekip gerekmeyeceğini belirtir.
+- **Derlemeden hariç tutma**
 
-Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.ExcludedFromBuild%2A>.
+   Dosya, geçerli yapılandırma için derleme gerekip gerekmeyeceğini belirtir.
 
-**Aracı**  
-Bu dosyayı oluşturmak için kullanılan araçtır. Bkz: [özel derleme araçlarını belirtme](../ide/specifying-custom-build-tools.md) daha fazla bilgi için.
+   Bu özelliğe program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.ExcludedFromBuild%2A>.
 
-Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.Tool%2A>.
+- **Aracı**
 
-Nasıl erişileceği hakkında bilgi için **genel** altında özellik sayfası **yapılandırma özellikleri** düğümü, bkz: [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).
+   Bu dosyayı oluşturmak için kullanılan araç. Bkz: [belirterek özel derleme Araçları](../ide/specifying-custom-build-tools.md) daha fazla bilgi için.
 
-Windows olmayan projeleri için bkz: [Linux C++ özellik sayfası başvurusu](../linux/prop-pages-linux.md)<!-- or [C++ Cross Platform Property Page Reference](../linux/prop-pages-linux.md)-->.
+   Bu özelliğe program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.Tool%2A>.
+
+Erişim hakkında daha fazla bilgi için **genel** altında özellik sayfası **yapılandırma özellikleri** düğümünü görmek [Working with Project Properties](../ide/working-with-project-properties.md).
+
+Windows olmayan projeler için bkz: [Linux C++ özellik Sayfa başvurusu](../linux/prop-pages-linux.md)<!-- or [C++ Cross Platform Property Page Reference](../linux/prop-pages-linux.md)-->.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

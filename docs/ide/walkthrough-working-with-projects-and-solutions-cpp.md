@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Projeler ve çözümler (C++) ile çalışma | Microsoft Docs'
 ms.custom: ''
-ms.date: 12/13/2017
+ms.date: 09/14/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -17,64 +17,64 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f62b2317669949473c8b0e68ad4410a3d9b03806
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: d33e01ff455e47a94356dab455e9a4628cc68178
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33339141"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017788"
 ---
 # <a name="walkthrough-working-with-projects-and-solutions-c"></a>İzlenecek Yol: Projelerle ve Çözümlerle Çalışma (C++)
 
 Visual Studio'da nasıl C++ projesi oluşturulduğu, nasıl kod eklendiği ve ardından projenin nasıl oluşturulup çalıştırıldığını burada bulabilirsiniz. Bu adım adım öğreticideki proje, kaç oyuncunun farklı kart oyunları oynadığını izleyen bir programdır.
 
-Visual Studio'da projeler ve çözümler iş düzenlenmiştir. Bir çözüm birden fazla proje içerebilir; örneğin bir DLL ve bu DLL'ye başvuran yürütülebilir bir dosya. Daha fazla bilgi için bkz: [çözümler ve projeler](/visualstudio/ide/solutions-and-projects-in-visual-studio).
+Visual Studio'da iş, projeler ve çözümler halinde düzenlenmiştir. Bir çözüm birden fazla proje içerebilir; örneğin bir DLL ve bu DLL'ye başvuran yürütülebilir bir dosya. Daha fazla bilgi için [çözümler ve projeler](/visualstudio/ide/solutions-and-projects-in-visual-studio).
 
 ## <a name="before-you-start"></a>Başlamadan önce
 
-Bu izlenecek yolu tamamlamak için Visual Studio 2017 sürüm 15.3 veya üstü gerekir. Bir kopyasını ihtiyacınız varsa, kısa bir kılavuz şöyledir: [Visual Studio yükleme C++ Destek](../build/vscpp-step-0-installation.md). Bunu henüz yapmadıysanız sonraki adımlar Visual C++ doğru şekilde yüklendiğinden emin olmak için "Hello, World" öğretici ve aracılığıyla yüklenmesinden sonra tüm çalıştığından izleyin.
+Bu izlenecek yolu tamamlamak için Visual Studio 2017 sürüm 15.3 veya üzeri gerekir. Bir kopyası gerekirse, kısa bir kılavuz şöyledir: [Visual Studio'da C++ yükleme desteği](../build/vscpp-step-0-installation.md). Bunu henüz yapmadıysanız sonraki adımları aracılığıyla Visual C++'ın doğru şekilde yüklendiğinden emin olmak için "Hello, World" öğretici ve yüklemeden sonra tüm works izleyin.
 
-C++ dili, temellerini ve ne derleyici, bağlayıcı ve hata ayıklayıcı için kullanılan biliyorsanız yardımcı olur. Öğretici, aynı zamanda Windows ve menüleri, iletişim kutuları kullanma konusunda bilgi sahibi varsayar,
+C++ dilinin temellerini anlamanız ve bildiğiniz ne derleyici, bağlayıcı ve hata ayıklayıcı için kullanılan yardımcı olur. Öğreticide ayrıca Windows ve menüler, iletişim kutuları kullanma ile ilgili bilgi sahibi olduğunuz varsayılır,
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
-Proje oluşturmak için önce bir proje türü şablonu seçin. Her proje türü için Visual Studio derleyici ayarları ayarlar ve — türüne bağlı olarak — daha sonra değiştirebilirsiniz başlangıç kodunu oluşturur.
+Proje oluşturmak için önce bir proje türü şablonu seçin. Her proje türü için Visual Studio derleyici ayarlarını belirler ve — türüne bağlı olarak — daha sonra değiştirebileceğiniz Başlatıcı kodu üretir.
 
 ### <a name="to-create-a-project"></a>Bir proje oluşturmak için
 
-1. Menü çubuğunda seçin **Dosya > Yeni > Proje**.
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-1. Sol bölmesinde **yeni proje** iletişim kutusunda, genişletin **yüklü** seçip **Visual C++**, zaten açık değilse.
+1. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü** seçip **Visual C++**, zaten açık değilse.
 
-1. Orta bölmede yüklenmiş şablonlar listesinden seçin **Windows konsol uygulaması**.
+1. Orta bölmedeki yüklü şablonlar listesinde seçin **Windows konsol uygulaması**.
 
-1. Projede için bir ad girin **adı** kutusu. Bu örnekte, girin **oyun**.
+1. Proje için bir ad girin **adı** kutusu. Bu örnekte, girin *Game*.
 
-   Varsayılan konumu kabul edebilir **konumu** aşağı açılan listesinde, farklı bir konum girin veya seçin **Gözat** projeyi kaydetmek istediğiniz bir dizine gözatmak için düğmeyi.
+   Varsayılan konumu kabul edebilir **konumu** açılır listede farklı bir konum girin veya seçin **Gözat** , projeyi kaydetmek istediğiniz dizine gitmek için düğme.
 
-   Bir proje oluşturduğunuzda, Visual Studio Proje bir çözümde koyar. Varsayılan olarak çözüm proje ile aynı ada sahiptir. Adını değiştirebilirsiniz **çözüm adı** kutusu, ancak bu örnek için varsayılan adı bırakın.
+   Bir proje oluşturduğunuzda, Visual Studio projeyi bir çözümün içine koyar. Varsayılan olarak çözüm proje ile aynı ada sahiptir. Adı değiştirebilirsiniz **çözüm adı** kutusu, ancak bu örnekte, varsayılan adı bırakın.
 
-1. Seçin **Tamam** projesi oluşturmak için düğmesi.
+1. Seçin **Tamam** projeyi oluşturmak için.
 
-   Visual Studio yeni çözüm ve proje dosyalarını oluşturur ve bunu oluşturulan Game.cpp kaynak kodu dosyasının Düzenleyicisi'ni açar.
+   Visual Studio, yeni çözüm ve proje dosyalarını oluşturur ve onu oluşturulmuş Game.cpp kaynak kodu dosyası düzenleyicisi açılır.
 
-## <a name="organize-projects-and-files"></a>Projeler ve dosyaları düzenleme
+## <a name="organize-projects-and-files"></a>Projeleri ve dosyaları düzenleme
 
-Kullanabileceğiniz **Çözüm Gezgini** düzenlemek ve projeleri, dosyaları ve diğer kaynakları çözümünüzdeki yönetmek için.
+Kullanabileceğiniz **Çözüm Gezgini** projeleri, dosyaları ve çözümünüzdeki diğer kaynakları düzenlemek ve yönetmek için.
 
-Adım adım öğreticinin bu bölümü projeye nasıl sınıf ekleneceğini göstermektedir. Sınıf eklediğinizde, Visual Studio karşılık gelen .h ve .cpp dosyaları ekler. Sonuçları görebilirsiniz **Çözüm Gezgini**.
+Adım adım öğreticinin bu bölümü projeye nasıl sınıf ekleneceğini göstermektedir. Sınıfı eklediğinizde, Visual Studio karşılık gelen .h ve .cpp dosyaları ekler. Sonuçlarda gördüğünüz **Çözüm Gezgini**.
 
 ### <a name="to-add-a-class-to-a-project"></a>Bir projeye sınıf eklemek için
 
-1. Varsa **Çözüm Gezgini** penceresi gösterilmesi için Visual Studio menü çubuğunda, seçin **Görünüm > Çözüm Gezgini**.
+1. Varsa **Çözüm Gezgini** penceresi Visual Studio'da, menü çubuğunda görüntülenmez öğesini **görünümü** > **Çözüm Gezgini**.
 
-1. İçinde **Çözüm Gezgini**seçin **oyun** projesi. Menü çubuğunda seçin **Proje > sınıfı Ekle**.
+1. İçinde **Çözüm Gezgini**seçin **Game** proje. Menü çubuğunda, **proje** > **sınıfı Ekle**.
 
-1. İçinde **sınıfı Ekle** iletişim kutusunda, girin *Cardgame* içinde **sınıf adı** kutusu. Varsayılan dosya adlarını ve ayarlarını değiştirmeyin. Seçin **Tamam** düğmesi.
+1. İçinde **sınıfı Ekle** iletişim kutusunda girin *Cardgame* içinde **sınıf adı** kutusu. Varsayılan dosya adlarını ve ayarlarını değiştirmeyin. Seçin **Tamam** düğmesi.
 
-   Visual Studio yeni dosyaları oluşturur ve bunları projenize ekler. Bunları görebilirsiniz **Çözüm Gezgini** penceresi. Cardgame.h ve Cardgame.cpp dosyaları Düzenleyicisi'nde açılır.
+   Visual Studio, yeni dosyalar oluşturur ve bunları projenize ekler. Bunları gördüğünüz **Çözüm Gezgini** penceresi. Cardgame.h ve Cardgame.cpp dosyaları düzenleyicide açılır.
 
-1. Cardgame.h dosyasını düzenleyin ve bu değişiklikleri yapın:
+1. Cardgame.h dosyası düzenleyin ve şu değişiklikleri yapın:
 
    - Sınıf tanımının açılış ayracından sonra iki özel veri üyesi ekleyin.
       <!--      [!code-cpp[NVC_Walkthrough_Working_With_Projects#100](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_1.h)] -->
@@ -84,19 +84,17 @@ Adım adım öğreticinin bu bölümü projeye nasıl sınıf ekleneceğini gös
       static int totalParticipants;
       ```
 
-   - Visual Studio'nun ürettiği varsayılan oluşturucuyu değiştirin. Sonra `public:` belirticisi erişmek için şöyle satırı bulun:
+   - Visual Studio'nun ürettiği varsayılan oluşturucuyu değiştirin. Sonra `public:` erişim belirticisi, şuna benzeyen satırı bulun:
 
       `Cardgame();`
 
-      Bu oluşturucu türü tek bir parametre almalıdır değiştirmek `int`, adlandırılmış *oynatıcıları*.
+      Bu oluşturucu türünden bir parametre değiştirme `int`, adlandırılmış *oyuncuların*.
 
-      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#101](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_2.h)]-->
-      `Cardgame(int players);`
+      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#101](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_2.h)]-->`Cardgame(int players);`
 
-   - Bir satır içi bildirimi için varsayılan yıkıcı sonra eklemek bir `static int` adlı üye işlevi *GetParticipants* parametre almayan ve döndürür `totalParticipants` değeri.
+   - Varsayılan yıkıcıdan sonra eklemek için bir satır içi bildirim bir `static int` adlı üye işlevi *GetParticipants* , herhangi bir parametre alır ve döndürür `totalParticipants` değeri.
 
-      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#102](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_3.h)]-->
-      `static int GetParticipants() { return totalParticipants; }`
+      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#102](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_3.h)]-->`static int GetParticipants() { return totalParticipants; }`
 
    Cardgame.h dosyası, siz değiştirdikten sonra şuna benzemelidir:
 
@@ -109,20 +107,20 @@ Adım adım öğreticinin bu bölümü projeye nasıl sınıf ekleneceğini gös
        static int totalParticipants;
    public:
        Cardgame(int players);
-       ~Cardgame(void);
+       ~Cardgame();
        static int GetParticipants() { return totalParticipants; }
    };
    ```
 
-   Satır `#pragma once` yalnızca bir kez üst bilgi dosyasını dahil bildirir. Daha fazla bilgi için bkz: [sonra](../preprocessor/once.md). Bu üstbilgi dosyasında diğer C++ anahtar sözcükleri hakkında daha fazla bilgi için bkz: [sınıfı](../cpp/class-cpp.md), [int](../cpp/fundamental-types-cpp.md), [statik](../cpp/storage-classes-cpp.md), ve [ortak](../cpp/public-cpp.md).
+   Satır `#pragma once` derleyici üstbilgi dosyası yalnızca bir kez dahil etmesini söyler. Daha fazla bilgi için [sonra](../preprocessor/once.md). Bu üstbilgi dosyasındaki diğer C++ anahtar sözcükleri hakkında daha fazla bilgi için bkz. [sınıfı](../cpp/class-cpp.md), [int](../cpp/fundamental-types-cpp.md), [statik](../cpp/storage-classes-cpp.md), ve [genel](../cpp/public-cpp.md).
 
-1. Seçin **Cardgame.cpp** düzenlemek üzere açmak için düzenleme bölmesinin üst sekmesini.
+1. Seçin **Cardgame.cpp** düzenlemek üzere açmak için düzenleme bölmesinin üst sekmesi.
 
 1. Dosyadaki her şeyi silin ve şu kodla değiştirin:
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#111](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_5.cpp)]-->
    ```cpp
-   #include "stdafx.h"
+   #include "pch.h"
    #include "Cardgame.h"
    #include <iostream>
 
@@ -144,22 +142,22 @@ Adım adım öğreticinin bu bölümü projeye nasıl sınıf ekleneceğini gös
    ```
 
    > [!NOTE]
-   > Kod girerken otomatik tamamlamayı kullanabilirsiniz. Örneğin, klavye bu kodu girerseniz, girdiğiniz *pl* veya *Sigortalanan Top* ve Ctrl + Ara çubuğu tuşlarına basın. Otomatik Tamamlama girer `players` veya `totalParticipants` sizin için.
+   > Kod girerken otomatik tamamlamayı kullanabilirsiniz. Klavye bu kodu girerseniz, örneğin, girebilirsiniz *pl* veya *tot* ve tuşuna **Ctrl**+**boşluk**. Otomatik Tamamlama girer `players` veya `totalParticipants` sizin için.
 
-## <a name="add-test-code-to-your-main-function"></a>Ana işlevinizi test kodu ekleyin
+## <a name="add-test-code-to-your-main-function"></a>Test kodu ana işlevinize ekleyin
 
-Bazı kodlar yeni işlevler testleri uygulamanıza ekleyin.
+Yeni işlevleri test uygulamanıza kod ekleyin.
 
 ### <a name="to-add-test-code-to-the-project"></a>Test kodu projeye eklemek için
 
-1. Game.cpp Düzenleyicisi penceresinde, varolan kod bu ile değiştirin:
+1. İçinde **Game.cpp** Düzenleyicisi penceresinde, mevcut kodu şununla değiştirin:
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#120](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_6.cpp)]-->
    ```cpp
    // Game.cpp : Defines the entry point for the console application.
    //
 
-   #include "stdafx.h"
+   #include "pch.h"
    #include "Cardgame.h"
    #include <iostream>
 
@@ -179,33 +177,33 @@ Bazı kodlar yeni işlevler testleri uygulamanıza ekleyin.
        return 0;
    }
    ```
-Bu kod bir test işlevi ekler `PlayGames`, kaynak kodu ve çağrıları içinde `main`. 
+Bu kod, bir test işlevi ekler `PlayGames`kaynak kodu ve çağrı içinde `main`. 
 
-## <a name="build-and-run-your-app-project"></a>Uygulama projesini derlemeyi ve çalıştırmayı
+## <a name="build-and-run-your-app-project"></a>Derleme ve uygulama projenizi çalıştırma
 
 Ardından, projeyi oluşturun ve uygulamayı çalıştırın.
 
 ### <a name="to-build-and-run-the-project"></a>Projeyi derleyip çalıştırmak için
 
-1. Menü çubuğunda seçin **Yapı > Yapı çözümü**.
+1. Menü çubuğunda, **derleme** > **Çözümü Derle**.
 
-   Derleme çıktısı görüntülenir **çıkış** penceresi. Derlemeniz başarılıysa çıktı şuna benzemelidir:
+   Bir derlemenin çıktısı görüntülenir **çıkış** penceresi. Derlemeniz başarılıysa çıktı şuna benzemelidir:
 
    ```Output
    1>------ Build started: Project: Game, Configuration: Debug Win32 ------
-   1>  stdafx.cpp
-   1>  Game.cpp
-   1>  Cardgame.cpp
-   1>  Generating Code...
-   1>  Game.vcxproj -> C:\Users\username\Source\Repos\Game\Debug\Game.exe
+   1>pch.cpp
+   1>Cardgame.cpp
+   1>Game.cpp
+   1>Generating Code...
+   1>Game.vcxproj -> C:\Users\<username>\source\repos\Game\Debug\Game.exe
    ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
    ```
 
-   **Çıkış** penceresi yapı yapılandırmasına bağlı olarak farklı adımlar gösterebilir, ancak Proje yapı başarılı olursa, son satırında gösterilen çıkış benzemelidir.
+   **Çıkış** penceresi derleme yapılandırmasına bağlı olarak farklı adımlar gösterebilir, ancak proje derlemesi başarılı olursa son satır gösterilen çıktıya benzemelidir.
 
-   Derleme başarısız oldu, önceki adımlarda gösterilen kodu kodunuzu karşılaştırın.
+   Derlemeniz başarılı olmadıysa, kodunuzu önceki adımlarda gösterilen koda karşılaştırın.
 
-1. Menü çubuğunda proje çalıştırmak için tercih **hata ayıklama > hata ayıklama olmadan Başlat**. Bir konsol penceresi görünür olmalıdır ve çıktı şuna benzemelidir:
+1. Menü çubuğunda projeyi çalıştırmak için seçin **hata ayıklama** > **hata ayıklama olmadan Başlat**. Bir konsol penceresi görünür olmalıdır ve çıktı şuna benzemelidir:
 
    ```Output
    4 players have started a new game.  There are now 4 players in total.
@@ -215,14 +213,14 @@ Ardından, projeyi oluşturun ve uygulamayı çalıştırın.
    ```
 Konsol penceresini kapatmak için bir tuşa basın.
 
-Tebrikler, bir uygulama proje ve çözüm başarıyla oluşturuncaya. İzlenecek yol Visual Studio'da C++ kodu projeleri oluşturma hakkında daha fazla bilgi için devam edin.
+Tebrikler, bir uygulama projesi ve çözümü başarıyla derlediyseniz. İzlenecek yol, C++ kod projeleri Visual Studio'da derleme hakkında daha fazla bilgi için devam edin.
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-**Önceki:** [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
-**Sonraki:** [izlenecek yol: Proje derleme (C++)](../ide/walkthrough-building-a-project-cpp.md).
+**Önceki:** [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanma](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)<br/>
+**Sonraki:** [izlenecek yol: Proje derleme (C++)](../ide/walkthrough-building-a-project-cpp.md)<br/>
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)  
-[C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)
+[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
+[C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)<br/>
