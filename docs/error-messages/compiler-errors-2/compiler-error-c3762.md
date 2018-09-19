@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e40134353b713c855199ae0b062e263d31c37522
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d4c9f5dc1c270f59dafa9e1076e3641cd1cd2c75
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33267234"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103353"
 ---
 # <a name="compiler-error-c3762"></a>Derleyici Hatası C3762
-öznitelik 'özniteliği' işlenemedi  
-  
- Öğesinden devralınan kullanıcı tanımlı bir öznitelik `System.Security.Permissions.SecurityAttribute` güvenlik özniteliği tanımlamak için kullanılır. Bu tür bir öznitelik tanımlandığı aynı bütünleştirilmiş kodda kullanılamaz.
+
+'öznitelik' özniteliği işlenemiyor
+
+Devralınan kullanıcı tanımlı bir öznitelik `System.Security.Permissions.SecurityAttribute` güvenlik özniteliği tanımlamak için kullanılır. Böyle bir öznitelik tanımlandığı aynı bütünleştirilmiş kodda kullanılamaz.

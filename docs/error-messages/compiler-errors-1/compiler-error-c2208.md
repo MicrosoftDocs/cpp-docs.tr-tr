@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24377d17735fc63e9dc0541dfd9fb432eb0e0cda
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6721166efad2fc214ccf2c2a45ec2342b67c39e4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33172115"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101728"
 ---
 # <a name="compiler-error-c2208"></a>Derleyici Hatası C2208
-'type': Bu türü kullanılarak tanımlanmış bir üye yok  
-  
- Bir tür adı çözümlenirken bir tanımlayıcı, bir toplama bildiriminde olmakla birlikte derleyici üyesi bildiremezsiniz.  
-  
- Aşağıdaki örnek C2208 oluşturur:  
-  
-```  
-// C2208.cpp  
-class C {  
-   C;   // C2208  
-   C(){}   // OK  
-};  
+
+'type': Bu tür kullanılarak tanımlanmış bir üye yok
+
+İçin bir tür adı çözülürken bir tanımlayıcı, bir toplama bildiriminde olmakla birlikte derleyici üyesi bildiremezsiniz.
+
+Aşağıdaki örnek, C2208 oluşturur:
+
+```
+// C2208.cpp
+class C {
+   C;   // C2208
+   C(){}   // OK
+};
 ```

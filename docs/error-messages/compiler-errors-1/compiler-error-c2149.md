@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e02d69aa89c77c72685ef0db3125dab2cbf1898b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 38ebb710cc9f4d5f546c40d84909dbe23805f2f7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33167830"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094929"
 ---
 # <a name="compiler-error-c2149"></a>Derleyici Hatası C2149
-'tanımlayıcısı': adlandırılmış bit alan genişliği sıfır olamaz  
-  
- Bit alanları yalnızca adlandırılmamış Sıfır Genişlik olabilir.  
-  
- Aşağıdaki örnek C2149 oluşturur:  
-  
-```  
-// C2149.cpp  
-// compile with: /c  
-struct C {  
-   int i : 0;   // C2149  
-   int j : 2;   // OK  
-};  
+
+'identifier': adlandırılmış bit alanının genişliği sıfır olamaz
+
+Bit alanları yalnızca adlandırılmamış Sıfır Genişlik olabilir.
+
+Aşağıdaki örnek, C2149 oluşturur:
+
+```
+// C2149.cpp
+// compile with: /c
+struct C {
+   int i : 0;   // C2149
+   int j : 2;   // OK
+};
 ```

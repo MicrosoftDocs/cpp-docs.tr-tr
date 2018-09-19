@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5dcaa927bc9fe38ca45cf938a20cf08713ecff1d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f24cf6cce5cdf268367f547e8a536dcdae7cc859
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755524"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098959"
 ---
 # <a name="ccomobjectrootex-class"></a>CComObjectRootEx sınıfı
 
@@ -44,13 +44,13 @@ Bu sınıf, toplanmayan ve toplanan nesneler için nesne başvuru sayısı Yöne
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<class ThreadModel>  
+template<class ThreadModel>
 class CComObjectRootEx : public CComObjectRootBase
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*ThreadModel*  
+*ThreadModel*<br/>
 İstenen iş parçacığı modeli yöntemleri uygulayan sınıf. İş parçacığı modeli ayarlayarak açıkça seçebilirsiniz *ThreadModel* için [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md), [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), veya [ CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md). Sunucunun varsayılan iş parçacığı modeli ayarlayarak kabul edebilir *ThreadModel* için [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) veya [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel).  
 
 ## <a name="members"></a>Üyeler
@@ -205,16 +205,16 @@ static HRESULT InternalQueryInterface(
 
 ### <a name="parameters"></a>Parametreler
 
-*pThis*  
+*pThis*<br/>
 [in] Açık arabirimler COM haritasını içeren nesneye bir işaretçi `QueryInterface`.
 
-*pEntries*  
+*pEntries*<br/>
 [in] Bir işaretçi `_ATL_INTMAP_ENTRY` kullanılabilir arabirim haritasını erişen yapısı.
 
-*IID*  
+*IID*<br/>
 [in] İstenen arabiriminin GUID'si.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] Belirtilen arabirim işaretçisini bir işaretçi *IID*, veya arabirim bulunamazsa NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -308,7 +308,7 @@ static void WINAPI ObjectMain(bool bStarting);
 
 ### <a name="parameters"></a>Parametreler
 
-*bStarting*  
+*bStarting*<br/>
 [out] Değer TRUE ise sınıfı başlatılır. Aksi durumda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -343,10 +343,10 @@ HRESULT OuterQueryInterface(REFIID iid, void** ppvObject);
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] İstenen arabiriminin GUID'si.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] Belirtilen arabirim işaretçisini bir işaretçi *IID*, veya toplama arabirimini desteklemiyor yoksa NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -381,7 +381,7 @@ Bu yöntem, iş parçacığı modeli tek iş parçacıklı ise, hiçbir şey yap
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComAggObject sınıfı](../../atl/reference/ccomaggobject-class.md)   
-[CComObject sınıfı](../../atl/reference/ccomobject-class.md)   
-[CComPolyObject sınıfı](../../atl/reference/ccompolyobject-class.md)   
+[CComAggObject Sınıfı](../../atl/reference/ccomaggobject-class.md)<br/>
+[CComObject Sınıfı](../../atl/reference/ccomobject-class.md)<br/>
+[CComPolyObject Sınıfı](../../atl/reference/ccompolyobject-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

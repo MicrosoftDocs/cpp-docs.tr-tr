@@ -16,19 +16,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4fb374e028097157ae72b621593a899af9fe2f91
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4b1760607a335d4dd56ec711eef76f5a68550d64
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33255459"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089508"
 ---
 # <a name="compiler-error-c3554"></a>Derleyici Hatası C3554
-'decltype' tüm diğer tür-belirteci ile birlikte kullanılamaz  
-  
- Nitelemek olamaz `decltype()` anahtar sözcüğüyle hiçbir tür belirteci. Örneğin, aşağıdaki kod parçası C3554 hata verir.  
-  
-```  
-int x;  
-unsigned decltype(x); // C3554  
+
+'decltype' herhangi başka bir tür tanımlayıcısı ile birleştirilemez
+
+Uygun olamaz `decltype()` herhangi bir tür tanımlayıcısı ile anahtar sözcüğü. Örneğin, aşağıdaki kod parçası hatası C3554 verir.
+
+```
+int x;
+unsigned decltype(x); // C3554
 ```

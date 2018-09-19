@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d32734850c58b64694e96c3a27b759131e6c5ff
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 39b06566f84003b08f5fe3869a021c4bf86dcf5f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299883"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105167"
 ---
 # <a name="c-runtime-error-r6008"></a>C çalışma zamanı hatası R6008
-bağımsız değişkenler için yeterli alan yok  
-  
+
+bağımsız değişkenler için yeterli alan yok
+
 > [!NOTE]
->  Bir uygulama çalıştırırken bu hata iletisi alırsanız, bir iç bellek sorunu olduğundan uygulama kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak genellikle bir son derece düşük bellek durumu, ortam değişkenleri ya da hata programı tarafından gerçekleştirilecek çok fazla bellek tarafından kaynaklanır.  
->   
->  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:  
->   
->  -   Çalışan diğer uygulamaları kapatın veya belleği boşaltmak için bilgisayarınızı yeniden başlatın.  
-> -   Uygulamaya sayısını ve komut satırı bağımsız değişkenleri boyutunu azaltın.  
-> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasındaki **Denetim Masası** onarın veya program yeniden yükleyin.  
-> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.  
-> -   Uygulamanın güncelleştirilmiş bir sürümünü denetle. Sorun devam ederse uygulamanın satıcısına başvurun.  
-  
- **Programcıları için bilgi**  
-  
- Programı yüklemek için yeterli bellek ancak oluşturmak için yeterli bellek yoktu **argv** dizi. Bu, son derece düşük bellek koşulları veya olağan dışı derecede büyük komut satırları veya ortam değişkeni kullanımı kaynaklanabilir. Aşağıdaki çözümlerden birini göz önünde bulundurun:  
-  
--   Programa kullanılabilir bellek miktarını artırın.  
-  
--   Sayısını ve komut satırı bağımsız değişkenleri boyutunu azaltın.  
-  
--   Gereksiz değişkenleri kaldırarak ortam boyutunu azaltın.
+>  Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bellek sorunu olduğundan uygulaması kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak genellikle bir son derece düşük bellek durumu, ortam değişkenleri ya da hata programı tarafından gerçekleştirilecek çok fazla bellek tarafından kaynaklanır.
+>
+>  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
+>
+>  -   Çalışan diğer uygulamaları kapatın veya belleği boşaltmak için bilgisayarınızı yeniden başlatın.
+> -   Uygulamaya sayısını ve komut satırı bağımsız değişkenlerinin boyutunu azaltın.
+> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
+> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
+> -   Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
+
+**Programcıları için bilgi**
+
+Programı yüklemek için yeterli bellek ancak oluşturmak için yeterli bellek yoktu **argv** dizisi. Bu, olağan dışı derecede büyük komut satırları veya ortam değişken kullanımı veya son derece düşük bellek koşullarını kaynaklanabilir. Aşağıdaki çözümlerden birini göz önünde bulundurun:
+
+- Program için kullanılabilir bellek miktarını artırın.
+
+- Sayı ve komut satırı bağımsız değişkenleri boyutunu azaltın.
+
+- Gereksiz değişkenleri kaldırarak ortam boyutunu azaltın.

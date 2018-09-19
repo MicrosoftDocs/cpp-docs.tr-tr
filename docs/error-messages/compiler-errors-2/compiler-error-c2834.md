@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4eb4fb992f9213c4a4b456f786fd8f81308cec12
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b94e1a3fba9bc3589af020340651b4546347cf1a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244790"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089352"
 ---
 # <a name="compiler-error-c2834"></a>Derleyici Hatası C2834
-'işleci işleci' genel olarak nitelenmiş olmalıdır  
-  
- `new` Ve `delete` işleçleri işletim sistemi sınıfa bulundukları. Kapsam çözümü, bir sürümünü seçmek için kullanılamaz `new` veya `delete` farklı bir sınıftan. Birden çok biçimlerinin uygulamak için `new` veya `delete` işleci, fazladan resmi parametrelerle işleci sürümünü oluşturun.
+
+'operator işleci' genel olarak nitelenmiş olmalıdır
+
+`new` Ve `delete` işleçleri bağlı sınıfa bulundukları. Kapsam çözümü, bir sürümünü seçmek için kullanılamaz `new` veya `delete` farklı bir sınıftan. Birden çok tür uygulamak için `new` veya `delete` işleci, fazladan biçimsel parametrelerle işleci bir sürümünü oluşturun.

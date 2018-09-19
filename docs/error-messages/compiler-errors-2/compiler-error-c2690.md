@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59ee25501b621ca48648cdc00edaf927b6792428
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c48a4bfdf93a8b897b6f5e861a9031859fe39f5f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231528"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096190"
 ---
 # <a name="compiler-error-c2690"></a>Derleyici Hatası C2690
-'işleci': yönetilen üzerinde aritmetik işaretçi veya WinRT dizi işlemi gerçekleştiremezsiniz.  
-  
- İşaretçi aritmetiği yönetilen veya WinRT izin verilmeyen dizi. Dizi dizini gösterimini dizi geçiş yapmak için kullanın.  
+
+'operator': işaretçi yönetilen üzerinde aritmetik veya WinRT dizi gerçekleştirilemiyor
+
+Yönetilen veya WinRT üzerinde işaretçi aritmetik verilmez dizisi. Dizi dizini gösteriminde dizi geçirmek için kullanın.

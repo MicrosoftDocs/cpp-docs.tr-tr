@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4272f5f8c5e19b32b295c1028de7ab30b22684bb
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 99d8cd4b076e5de35ffcb957a05f3c680bc82214
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757295"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106811"
 ---
 # <a name="chandle-class"></a>CHandle sınıfı
 
@@ -90,7 +90,7 @@ void Attach(HANDLE h) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*h*  
+*h*<br/>
 `CHandle` tanıtıcı sahipliğini *h*.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -109,7 +109,7 @@ explicit CHandle(HANDLE h) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*h*  
+*h*<br/>
 Var olan bir tanıtıcı veya `CHandle`.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -174,7 +174,7 @@ CHandle& operator=(CHandle& h) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*h*  
+*h*<br/>
 `CHandle` tanıtıcı sahipliğini *h*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -189,7 +189,7 @@ Varsa `CHandle` nesnesi şu anda bir tanıtıcı içerir, kapatılacak. `CHandle
 
 Saklı tanıtıcı değerini döndürür.
 
-```  
+```
 operator HANDLE() const throw();
 ```
 

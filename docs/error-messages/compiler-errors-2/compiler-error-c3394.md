@@ -16,30 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66d99ff65ba7fa6fd463a1266cdc506d7fd0a11b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d7a7f66d437158504b3ca4c8dccaf3c35d2c1ae4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33251683"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096424"
 ---
 # <a name="compiler-error-c3394"></a>Derleyici Hatası C3394
-kısıtlaması yan tümcesinde sözdizimi hatası: 'tanımlayıcısı' beklenen bir tür bulundu  
-  
- Bir kısıtlama ill oluşturulmuş.  Daha fazla bilgi için bkz: [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3394 oluşturur:  
-  
-```  
-// C3394.cpp  
-// compile with: /clr /c  
-ref class MyClass {};  
-ref class R {  
-   generic<typename T>  
-   where T : static   // C3394  
-   // try the following line instead  
-   // where T : MyClass  
-   void f() {}  
-};  
+
+kısıtlama yan tümcesinde sözdizimi hatası: 'identifier' beklenen bir tür bulunamadı
+
+Kısıtlama ill oluşturulmuş.  Daha fazla bilgi için [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3394 oluşturur:
+
+```
+// C3394.cpp
+// compile with: /clr /c
+ref class MyClass {};
+ref class R {
+   generic<typename T>
+   where T : static   // C3394
+   // try the following line instead
+   // where T : MyClass
+   void f() {}
+};
 ```

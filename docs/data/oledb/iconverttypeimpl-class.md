@@ -25,14 +25,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e176cc20dc3f6f13eb868133b99c0ce7e86d25c4
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: ed4eefe8c05e2b5b027ba1d7c1fec022c9e44409
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466365"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46104952"
 ---
 # <a name="iconverttypeimpl-class"></a>IConvertTypeImpl Sınıfı
+
 Bir uygulamasını sağlar [IConvertType](/previous-versions/windows/desktop/ms715926\(v=vs.85\)) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -44,11 +45,13 @@ class ATL_NO_VTABLE IConvertTypeImpl
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *T*  
- Sınıfınız, türetilen `IConvertTypeImpl`.  
+
+*T*<br/>
+Sınıfınız, türetilen `IConvertTypeImpl`.  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldb.h  
+
+**Başlık:** atldb.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -59,9 +62,11 @@ class ATL_NO_VTABLE IConvertTypeImpl
 |[CanConvert](#canconvert)|Bir komutu veya bir satır kümesi tür dönüştürmeleri kullanılabilirliği hakkında bilgi sağlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu arabirim, komutları, satır kümeleri ve dizin satır kümeleri zorunludur. `IConvertTypeImpl` OLE DB tarafından sağlanan dönüştürme nesne temsilci atayarak arabirimini uygular.  
+
+Bu arabirim, komutları, satır kümeleri ve dizin satır kümeleri zorunludur. `IConvertTypeImpl` OLE DB tarafından sağlanan dönüştürme nesne temsilci atayarak arabirimini uygular.  
 
 ## <a name="canconvert"></a> Iconverttypeımpl::canconvert
+
 Bir komutu veya bir satır kümesi tür dönüştürmeleri kullanılabilirliği hakkında bilgi sağlar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -73,11 +78,14 @@ STDMETHOD(CanConvert)(DBTYPE wFromType,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IConvertType::CanConvert](/previous-versions/windows/desktop/ms711224\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IConvertType::CanConvert](/previous-versions/windows/desktop/ms711224\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- OLE DB veri dönüştürme kullanan `MSADC.DLL`.  
+
+OLE DB veri dönüştürme kullanan `MSADC.DLL`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

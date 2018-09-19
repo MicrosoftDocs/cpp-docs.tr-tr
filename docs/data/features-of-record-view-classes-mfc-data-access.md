@@ -1,5 +1,5 @@
 ---
-title: Kayıt özelliklerini görüntülemek sınıfları (MFC veri erişimi) | Microsoft Docs
+title: Kaydın özelliklerini görüntüleme sınıfları (MFC veri erişimi) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,24 +16,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9b6717c0ef1167e01df2f5e8de14408b23a9dbb1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b1c99b8b271b4948584d9bdb25c74518fe835573
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33089578"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093226"
 ---
 # <a name="features-of-record-view-classes--mfc-data-access"></a>Kayıt görünümü sınıfları (MFC veri erişimi) özellikleri
-Form tabanlı veri erişimi programlama sınıfı ile yapabileceğiniz [Cformview'yu](../mfc/reference/cformview-class.md), ancak [CRecordView](../mfc/reference/crecordview-class.md) genellikle türetmek bir daha iyi bir sınıftır. Ek olarak kendi `CFormView` özellikleri `CRecordView`:  
+
+Form tabanlı veri erişim programlama sınıfı ile yapabileceğiniz [Cformview'yu](../mfc/reference/cformview-class.md), ancak [CRecordView](../mfc/reference/crecordview-class.md) genellikle türetilmesi için bir daha iyi bir sınıftır. Ek olarak kendi `CFormView` özellikleri `CRecordView`:  
   
--   Form denetimleri ile ilişkili kayıt kümesi nesnesi arasındaki iletişim kutusu veri değişimi (DDX) sağlar.  
+- Formu denetimleri ile ilişkili kayıt kümesi nesnesi arasındaki iletişim kutusu veri değişimi (DDX) sağlar.  
   
--   İlişkili kayıt kümesi nesnesindeki kayıtlar gezinme için taşıma ilk, sonrakine Taşı, öncekine taşı ve taşıma son komutları işler.  
+- İlişkili kayıt kümesi nesnesi kayıtları arasında gezinmek için Taşı, ileri taşıma, öncekine taşı ve sona Taşı komutları işler.  
   
--   Kullanıcı başka bir kayda geçtiğinde geçerli kayda değişiklikleri güncelleştirir.  
+- Güncelleştirmeleri, kullanıcının başka bir kayıda taşır, geçerli kayıtta değiştirir.  
   
- Gezinme hakkında daha fazla bilgi için bkz: [kayıt görünümleri: kayıt görünümü gezintiyi destekleme](../data/supporting-navigation-in-a-record-view-mfc-data-access.md).  
+Gezintisi hakkında daha fazla bilgi için bkz. [kayıt görünümleri: kayıt görünümü içinde gezinme destekleyen](../data/supporting-navigation-in-a-record-view-mfc-data-access.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)   
- [ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)
+
+[Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)<br/>
+[ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)

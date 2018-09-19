@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ed21327028fc9849f6e0694bb82ae34c6084842
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8232e83774dc53755b77ad9c8b3bbb2a0bcc6ae6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301469"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102755"
 ---
 # <a name="linker-tools-error-lnk1264"></a>Bağlayıcı Araçları Hatası LNK1264
-Belirtilen /LTCG:PGINSTRUMENT ancak gerekli hiçbir kod oluşturma; izleme başarısız oldu  
-  
- **/LTCG:PGINSTRUMENT** ile derlendi hiçbir .obj dosyaları bulundu ancak belirtildi [/GL](../../build/reference/gl-whole-program-optimization.md). İzleme yerinde ve bağlantının başarısız alamıyor. Komut satırında ile derlenmiş en az bir .obj dosya olmalıdır **/GL** böylece araçları oluşabilir.  
-  
- Profil temelli iyileştirme (PGO) yalnızca 64-bit derleyicileri içinde kullanılabilir.
+
+/LTCG:PGINSTRUMENT belirtildi ancak kod üretme gerekli. izleme başarısız oldu
+
+**/LTCG:PGINSTRUMENT** ile derlendi hiçbir .obj dosyası bulundu ancak belirtilen [/GL](../../build/reference/gl-whole-program-optimization.md). İzleme, yerinde ve bağlantının başarısız alamıyor. Komut satırında ile derlenmiş en az bir .obj dosyası olmalıdır **/GL** izleme gerçekleştirilmesi.
+
+Profil temelli iyileştirme (PGO), yalnızca 64 bit derleyicilerde kullanılabilir.

@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10021c707873c7c4db449bd04ebeae392fc3f27a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 47ad5d4da16cc584101b0bab4f26d78fdfe71002
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244299"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091952"
 ---
 # <a name="compiler-error-c2876"></a>Derleyici Hatası C2876
-'class::symbol': tüm aşırı erişilebilir  
-  
- Bir işlevin bir taban sınıf içinde tüm aşırı yüklenmiş formları türetilmiş sınıf erişilebilir olması gerekir.  
-  
- Aşağıdaki örnek C2876 oluşturur:  
-  
-```  
-// C2876.cpp  
-// compile with: /c  
-class A {  
-public:     
-   double a(double);  
-private:  
-   int a(int);  
-};  
-  
-class B : public A {  
-   using A::a;   // C2876 one overload is private in base class  
-};  
+
+'class::symbol': tüm aşırı yüklemeler erişilebilir değil
+
+Taban sınıfında bir işlevin aşırı yüklenmiş tüm formlar, türetilmiş sınıf için erişilebilir olmalıdır.
+
+Aşağıdaki örnek, C2876 oluşturur:
+
+```
+// C2876.cpp
+// compile with: /c
+class A {
+public:
+   double a(double);
+private:
+   int a(int);
+};
+
+class B : public A {
+   using A::a;   // C2876 one overload is private in base class
+};
 ```

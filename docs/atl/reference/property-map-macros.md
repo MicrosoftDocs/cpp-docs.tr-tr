@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf82c48cb5b1f9bd93a9c30afe8c698699c8199b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 594b02d777d87decfc218064678dbecdf8ecf0c9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758098"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106357"
 ---
 # <a name="property-map-macros"></a>Özellik eşleme makroları
 
@@ -55,7 +55,7 @@ BEGIN_PROP_MAP(theClass)
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*  
+*Sınıfın*<br/>
 [in] Özellik eşlemesini içeren sınıfın belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -80,13 +80,13 @@ PROP_DATA_ENTRY( szDesc, member, vt)
 
 ### <a name="parameters"></a>Parametreler
 
-*szDesc*  
+*szDesc*<br/>
 [in] Özellik açıklaması.
 
-*Üyesi*  
+*Üyesi*<br/>
 [in] Uzantı içeren veri üyesi; Örneğin, `m_sizeExtent`.
 
-*vt*  
+*vt*<br/>
 [in] Özelliğin değişken türünü belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -113,16 +113,16 @@ PROP_ENTRY_TYPE( szDesc, dispid, clsid, vt)
 
 ### <a name="parameters"></a>Parametreler
 
-*szDesc*  
+*szDesc*<br/>
 [in] Özellik açıklaması.
 
-*DISPID*  
+*DISPID*<br/>
 [in] Özelliğin DISPID.
 
-*CLSID*  
+*CLSID*<br/>
 [in] İlişkili özelliğin sayfanın CLSID değeri. Özel değer CLSID_NULL ilişkili özellik sayfası yok. bir özellik için kullanın.
 
-*vt*  
+*vt*<br/>
 [in] Özelliğin türü.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -145,19 +145,19 @@ PROP_ENTRY_TYPE_EX( szDesc, dispid, clsid, iidDispatch, vt)
 
 ### <a name="parameters"></a>Parametreler
 
-*szDesc*  
+*szDesc*<br/>
 [in] Özellik açıklaması.
 
-*DISPID*  
+*DISPID*<br/>
 [in] Özelliğin DISPID.
 
-*CLSID*  
+*CLSID*<br/>
 [in] İlişkili özelliğin sayfanın CLSID değeri. Özel değer CLSID_NULL ilişkili özellik sayfası yok. bir özellik için kullanın.
 
-*iidDispatch*  
+*iidDispatch*<br/>
 [in] Özellik tanımlama çift arabirim Laboratuvardaki.
 
-*vt*  
+*vt*<br/>
 [in] Özelliğin türü.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -182,7 +182,7 @@ PROP_PAGE(clsid)
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*  
+*CLSID*<br/>
 [in] Özellik sayfası CLSID değeri.
 
 ### <a name="remarks"></a>Açıklamalar

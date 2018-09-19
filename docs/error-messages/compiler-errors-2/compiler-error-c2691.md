@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc6a20aaf3cf9d634d7426b0b7b59f624e184d42
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fe048537ca1d504587fe64fdd5f9b5a43af7c6e3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33232767"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100571"
 ---
 # <a name="compiler-error-c2691"></a>Derleyici Hatası C2691
-'veri türü': yönetilen bir ya da WinRTarray bu öğe türüne sahip olamaz  
-  
- Yönetilen tür veya WinRT dizi öğesi bir değer türü veya bir başvuru türü olabilir.  
-  
- Aşağıdaki örnek C2691 oluşturur:  
-  
-```  
-// C2691a.cpp  
-// compile with: /clr  
-class A {};  
-  
-int main() {  
-   array<A>^ a1 = gcnew array<A>(20);   // C2691  
-   array<int>^ a2 = gcnew array<int>(20);   // value type OK  
-}  
-```  
+
+'data type': yönetilen veya WinRTarray bu öğe türüne sahip olamaz
+
+Yönetilen tür veya WinRT dizi öğesi, bir değer türü veya bir başvuru türü olabilir.
+
+Aşağıdaki örnek, C2691 oluşturur:
+
+```
+// C2691a.cpp
+// compile with: /clr
+class A {};
+
+int main() {
+   array<A>^ a1 = gcnew array<A>(20);   // C2691
+   array<int>^ a2 = gcnew array<int>(20);   // value type OK
+}
+```

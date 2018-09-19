@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2468e20265de6558464a493f49439f1766effa5b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ac8b176db26ed615874569a9ed646b9d89ec4db0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33223562"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097945"
 ---
 # <a name="compiler-error-c2428"></a>Derleyici Hatası C2428
-'işlemi': 'bool' türünde işlenen üzerinde izin verilmiyor  
-  
- Azaltma işleci türündeki nesnelere uygulanamıyor `bool`.  
-  
- Aşağıdaki örnek C2428 oluşturur:  
-  
-```  
-// C2428.cpp  
-void g(bool fFlag) {  
-   --fFlag;   // C2428  
-   fFlag--;   // C2428  
-}  
+
+'operation': 'bool' türü işlenen üzerinde izin verilmiyor
+
+Azaltma işleci türündeki nesnelere uygulayamazsınız `bool`.
+
+Aşağıdaki örnek, C2428 oluşturur:
+
+```
+// C2428.cpp
+void g(bool fFlag) {
+   --fFlag;   // C2428
+   fFlag--;   // C2428
+}
 ```

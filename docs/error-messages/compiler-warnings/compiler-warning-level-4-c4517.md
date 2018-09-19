@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bcfca18512d7a5af18bf978fc4f6549799bbdc7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f71fca2804a6869fbb58073eb0c11a3ac1f18153
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297699"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098900"
 ---
 # <a name="compiler-warning-level-4-c4517"></a>Derleyici Uyarısı (düzey 4) C4517
-erişim bildirimleri kullanım dışıdır; üye kullanarak bildirimleri daha iyi bir alternatif sunar  
-  
- ANSI C++ komitesi erişim bildirimleri belirtmiş (üyesi bir türetilmiş sınıfta erişimini değiştirme [kullanarak](../../cpp/using-declaration.md) anahtar sözcüğü) güncel olması. Erişim bildirimleri C++ gelecekteki sürümleri tarafından desteklenmiyor olabilir.
+
+erişim bildirimleri kullanımdan; üye kullanarak-bildirim kullanımları daha iyi bir alternatif sağlıyor
+
+ANSI C++ komitesi erişim bildirimleri bildirdiği (türetilen bir sınıfta bir üyenin erişim değiştirme [kullanarak](../../cpp/using-declaration.md) anahtar sözcüğü) güncelliğini yitirmiş. Erişim bildirimleri C++ gelecekteki sürümleri tarafından desteklenmiyor olabilir.

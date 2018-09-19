@@ -16,52 +16,53 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 797d7299c73574db28dd5c09284602e167485204
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bed7f3b29ffeab2ae26516c51cf6ce09acab3e54
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248532"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088533"
 ---
 # <a name="compiler-error-c3190"></a>Derleyici Hatası C3190
-sağlanan şablon bağımsız değişkenlerle ' örneklemesi' herhangi 'type' üye işlevinin açık örnekleme değil  
-  
- Derleyici explicit işlev örneklemesi olun girişimi algılandı; Ancak, sağlanan tür bağımsız değişkenleri herhangi bir olası işlevleri eşleşmiyor.  
-  
- Aşağıdaki örnek C3190 oluşturur:  
-  
-```  
-// C3190.cpp  
-// compile with: /LD  
-template<class T>  
-struct A {  
-   A(int x = 0) {  
-   }  
-   A(int x, int y) {  
-   }  
-};  
-  
-template A<float>::A();   // C3190  
-// try the following line instead  
-// template A<int>::A(int);  
-  
-struct Y {  
-   template<class T> void f(T);  
-};  
-  
-template<class T> void Y::f(T) { }  
-  
-template void Y::f(int,int);   // C3190  
-  
-template<class OT> class X {  
-   template<class T> void f2(T,OT);  
-};  
-  
-template<class OT> template<class T> void X<OT>::f2(T,OT) {}  
-  
-template void X<float>::f2<int>(int,char);   // C3190  
-// try one of the following lines instead  
-// template void X<char>::f2(int, char);  
-// template void X<char>::f2<int>(int,char);  
-// template void X<char>::f2<>(int,char);  
+
+sağlanan şablon bağımsız değişkenleriyle ' örnekleme' 'type', herhangi bir üye işlevinin açık olarak başlatılması değil
+
+Derleyicinin açık işlevi örneklemesi yapma girişimi algılandı; Ancak, belirtilen tür bağımsız değişkenlerini olası işlevlerden herhangi birinin eşleşmiyor.
+
+Aşağıdaki örnek, C3190 oluşturur:
+
+```
+// C3190.cpp
+// compile with: /LD
+template<class T>
+struct A {
+   A(int x = 0) {
+   }
+   A(int x, int y) {
+   }
+};
+
+template A<float>::A();   // C3190
+// try the following line instead
+// template A<int>::A(int);
+
+struct Y {
+   template<class T> void f(T);
+};
+
+template<class T> void Y::f(T) { }
+
+template void Y::f(int,int);   // C3190
+
+template<class OT> class X {
+   template<class T> void f2(T,OT);
+};
+
+template<class OT> template<class T> void X<OT>::f2(T,OT) {}
+
+template void X<float>::f2<int>(int,char);   // C3190
+// try one of the following lines instead
+// template void X<char>::f2(int, char);
+// template void X<char>::f2<int>(int,char);
+// template void X<char>::f2<>(int,char);
 ```

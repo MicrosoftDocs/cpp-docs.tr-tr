@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd34cbcecdcf8943f8a02a2bb82c5c712f2cb16f
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 512f791b3db513c2a143bda84a8dc2677b341544
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754728"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106057"
 ---
 # <a name="adding-an-atl-dialog-box"></a>ATL iletişim kutusu ekleme
 
@@ -44,7 +44,7 @@ Daha fazla bilgi için [iletişim kutusu uygulama](../../atl/implementing-a-dial
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)   
-[Pencere sınıfları](../../atl/atl-window-classes.md)   
+[Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
+[Pencere sınıfları](../../atl/atl-window-classes.md)<br/>
 [İleti eşlemeleri](../../atl/message-maps-atl.md)
 

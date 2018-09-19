@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 008267fddbd1d83574081d7b257e6627b32a1f58
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8375f96c0a35e01a2a93866157c0156cf22a4993
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252923"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105172"
 ---
 # <a name="compiler-error-c3507"></a>Derleyici Hatası C3507
-bir ProgID en fazla 39 'ID'; karakter uzunluğunda olabilir ya da apart gelen tüm noktalama işaretlerini içeren '.'; veya bir rakamla Başlat  
-  
- [ProgID](../../windows/progid.md) özniteliği devam edebilir değerlerine kısıtlamaları vardır.  
-  
- Aşağıdaki örnek C3507 oluşturur:  
-  
-```  
-// C3507.cpp  
-[module(name="x")];  
-[  
-coclass,  
-progid("0123456789012345678901234567890123456789"),  
-uuid("00000000-0000-0000-0000-000000000001") // C3507 expected  
-]  
-struct CMyStruct {  
-};  
-int main() {  
-}  
+
+bir program kimliği en fazla 39 karakter 'id'; olabilir. ya da bir noktalama işareti içeriyor. '.'; ya da rakamla başlayamaz
+
+[ProgID](../../windows/progid.md) özniteliğine sahip kısıtlamaları, alan değerleri.
+
+Aşağıdaki örnek, C3507 oluşturur:
+
+```
+// C3507.cpp
+[module(name="x")];
+[
+coclass,
+progid("0123456789012345678901234567890123456789"),
+uuid("00000000-0000-0000-0000-000000000001") // C3507 expected
+]
+struct CMyStruct {
+};
+int main() {
+}
 ```

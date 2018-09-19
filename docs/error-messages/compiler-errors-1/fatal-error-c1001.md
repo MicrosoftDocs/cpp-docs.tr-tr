@@ -16,21 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f605dd7e4892c4a8b57e544ed857257be72f020d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6363694dbd7f1a7ebfcd58cad030dfecf7f38397
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199034"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098205"
 ---
 # <a name="fatal-error-c1001"></a>Önemli hata C1001
 
-> İÇ derleyici ERROR(compiler file *file*, line *number*)  
-  
-Derleyici genellikle belirli bir ifade ve en iyi duruma getirme seçeneği veya bir sorunu bileşimi nedeniyle bir yapı için doğru kodu ayrıştırma oluşturulamıyor. Listelenen derleyici dosya utc veya C2 yol kesimi varsa, büyük olasılıkla en iyi duruma getirme hatadır. Dosya cxxfe veya c1xx yol kesimi yok veya msc1.cpp, büyük olasılıkla ayrıştırıcı bir hatadır. Adlı dosyayı cl.exe ise, başka hiçbir bilgi mevcut değil.  
+> İÇ derleyici ERROR(compiler file *file*, line *number*)
 
-Genellikle, bir veya daha fazla en iyi duruma getirme seçenekleri kaldırarak bir en iyi duruma getirme sorunu düzeltebilirsiniz. Hangi seçeneği hataya neden olduğunu belirlemek için hata iletisi kaybolduktan kadar seçenekleri birer bir saat ve yeniden derleyebilirsiniz kaldırın. En yaygın olarak sorumlu seçeneklerdir [/Og (Global iyileştirmeler)](../../build/reference/og-global-optimizations.md) ve [/Oi (iç işlevler Oluştur)](../../build/reference/oi-generate-intrinsic-functions.md). Hangi iyileştirme seçeneği sorumludur belirledikten sonra bu hatanın oluştuğu kullanarak işlevi geçici devre dışı bırakabilirsiniz [en iyi duruma getirme](../../preprocessor/optimize.md) pragma ve modül geri kalanı için bu seçeneği kullanmak devam edin. En iyi duruma getirme seçenekleri hakkında daha fazla bilgi için bkz: [en iyi uygulamaları iyileştirme](../../build/reference/optimization-best-practices.md).
+Derleyici, ayrıştırma genellikle birlikte belirli bir ifadeye ve iyileştirme seçeneği veya bir sorun nedeniyle bir yapı için doğru kod üretilemiyor. Listelenen derleyici dosyayı bir utc veya C2 yol kesimi varsa, büyük olasılıkla en iyi duruma getirme hatadır. Dosya bir cxxfe veya c1xx yol kesimi yok veya msc1.cpp, büyük olasılıkla ayrıştırıcı bir hatadır. Adlı dosyayı cl.exe var ise, başka hiçbir bilgi kullanılabilir.
 
-En iyi duruma getirme hatası için sorumlu emin değilseniz, burada bildirilen hata, veya birkaç satıra bu satırı çevreleyen kodunun yeniden yazmayı deneyin. Derleyici görür, ön işleme sonra şekilde kodu görmek için kullanabileceğiniz [/P (dosyaya Önişle)](../../build/reference/p-preprocess-to-a-file.md) seçeneği.
+Genellikle, bir veya daha fazla iyileştirme seçenekleri kaldırarak bir iyileştirme sorunu düzeltebilirsiniz. Hangi seçeneği hataya neden olduğunu belirlemek için hata iletisini kaybolduktan kadar seçenekler tek bir zaman ve yeniden derleyin kaldırın. En yaygın olarak sorumlu Seçenekler [/Og (Global iyileştirmeler)](../../build/reference/og-global-optimizations.md) ve [(iç işlevler Oluştur) /Oi](../../build/reference/oi-generate-intrinsic-functions.md). Hangi iyileştirme seçeneği sorumludur belirledikten sonra bu hatanın oluştuğu kullanarak işlevi geçici olarak devre dışı bırakabilirsiniz [en iyi duruma getirme](../../preprocessor/optimize.md) pragması ve modül geri kalanı için bu seçeneği kullanmak devam edin. En iyi duruma getirme seçenekleri hakkında daha fazla bilgi için bkz. [en iyi uygulamaları iyileştirme](../../build/reference/optimization-best-practices.md).
 
-Hatanın kaynağını yalıtmak ve bir iç derleyici hatası Microsoft'a hakkında daha fazla bilgi için bkz: [Visual C++ araç ile ilgili bir sorun bildirme](../../how-to-report-a-problem-with-the-visual-cpp-toolset.md).
+En iyi duruma getirme hatası için sorumlu emin değilseniz, burada raporlanan hata satırı veya birkaç satırdaki çevreleyen kod satırlarını yeniden deneyin. Kod derleyici görür, ön işleme sonra biçimini görmek için kullanabileceğiniz [/P (dosyaya ön işleme)](../../build/reference/p-preprocess-to-a-file.md) seçeneği.
+
+Hatanın kaynağını yalıtmak ve derleyici iç hatası Microsoft'a hakkında daha fazla bilgi için bkz. [Visual C++ araç takımı ile ilgili bir sorun bildirme](../../how-to-report-a-problem-with-the-visual-cpp-toolset.md).

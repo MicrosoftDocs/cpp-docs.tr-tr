@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 973f8a007080d728a07afae8818ffa2c7bd8ed4a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fedb865a1c0c6e1bbefc94c03549936951b84e17
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231643"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099900"
 ---
 # <a name="compiler-error-c2689"></a>Derleyici Hatası C2689
-'function': arkadaş işlev içinde yerel bir sınıf tanımlanamıyor  
-  
- Bildirmesine rağmen bir arkadaş işlev içinde yerel bir sınıf tanımlama değil.  
-  
- Aşağıdaki örnek C2689 oluşturur:  
-  
-```  
-// C2689.cpp  
-// compile with: /c  
-void g() {  
-   void f2();  
-   class X {  
-      friend void f2(){}   // C2689  
-      friend void f2();   // OK  
-   };  
-}  
+
+'function': bir arkadaş işlev bir yerel sınıf içinde tanımlanamaz
+
+Bildirmesine rağmen bir arkadaş işlev bir yerel sınıf içinde tanımlayın değil.
+
+Aşağıdaki örnek, C2689 oluşturur:
+
+```
+// C2689.cpp
+// compile with: /c
+void g() {
+   void f2();
+   class X {
+      friend void f2(){}   // C2689
+      friend void f2();   // OK
+   };
+}
 ```

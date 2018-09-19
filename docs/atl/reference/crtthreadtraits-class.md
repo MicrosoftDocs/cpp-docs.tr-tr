@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5cbd0031e9291edc39b2b437acb014c6f0424fa4
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f58b5936ab9f73ce2fe351d078e61bddfda54d6c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753896"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097828"
 ---
 # <a name="crtthreadtraits-class"></a>CRTThreadTraits sınıfı
 
@@ -80,22 +80,22 @@ static HANDLE CreateThread(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpsa*  
+*lpsa*<br/>
 Yeni iş parçacığı için güvenlik öznitelikleri.
 
-*dwStackSize*  
+*dwStackSize*<br/>
 Yeni iş parçacığı için yığın boyutu.
 
-*pfnThreadProc*  
+*pfnThreadProc*<br/>
 Yeni iş parçacığının iş parçacığı yordamı.
 
-*pvParam*  
+*pvParam*<br/>
 İş parçacığı yordama iletilecek parametre.
 
-*dwCreationFlags*  
+*dwCreationFlags*<br/>
 Oluşturma (0 veya CREATE_SUSPENDED) işaretler.
 
-*pdwThreadId*  
+*pdwThreadId*<br/>
 [out] Başarı durumunda, yeni oluşturulan iş parçacığının iş parçacığı kimliği alır, DWORD değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1764f04f7733cfb6b9a9a033b8667e53fbbfcc8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e76cef24436fc5ce3468a1c94be2d1a49733525a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300722"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105537"
 ---
 # <a name="linker-tools-warning-lnk4205"></a>Bağlayıcı Araçları Uyarısı LNK4205
-'filename' modülü başvuran için geçerli hata ayıklama bilgileri eksik; hata ayıklama bilgileri gibi nesne bağlama  
-  
- .Pdb dosyasını güncel bilgilere sahip. Bağlayıcı, hata ayıklama bilgisi olmadan nesneyi bağlamak devam eder. Nesne kullanarak dosya yeniden derleyin isteyebilirsiniz [/zı](../../build/reference/z7-zi-zi-debug-information-format.md) seçeneği.
+
+'filename' başvuru modülü için geçerli hata ayıklama bilgileri eksik; Nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
+
+.Pdb dosyası güncel bilgilere sahip. Bağlayıcı hata ayıklama bilgileri olmadan nesneyi bağlamak devam eder. Nesne dosyası kullanarak derleyin isteyebilirsiniz [/zi](../../build/reference/z7-zi-zi-debug-information-format.md) seçeneği.

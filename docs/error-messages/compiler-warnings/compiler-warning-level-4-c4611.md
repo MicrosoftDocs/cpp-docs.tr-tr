@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5946c10b5e0e0e7e08f1ee37c77120896937adb1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 723976dc8b7085ede9b3157445ff3026de6fc4b9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293159"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091055"
 ---
 # <a name="compiler-warning-level-4-c4611"></a>Derleyici Uyarısı (düzey 4) C4611
-taşınabilir olmayan 'function' C++ nesne yok etme arasındaki etkileşimi  
-  
- Bazı platformlarda, içeren işlevler **catch** C++ nesne yok etme, kapsam dışına semantiği desteklemeyebilir.  
-  
- Beklenmeyen davranışları önlemek için kullanmaktan kaçının **catch** oluşturucular ve Yıkıcılar işlevlerinde.  
-  
- Bu uyarı yalnızca bir kez verilir; bkz: [pragma Uyarısı](../../preprocessor/warning.md).
+
+'function' ile C++ nesne yok etme arasındaki etkileşim taşınabilir değildir.
+
+Bazı platformlarda, içeren işlevler **catch** C++ nesnesi semantiğini yok etme zaman kapsam dışına desteklemiyor olabilir.
+
+Beklenmeyen davranışları önlemek için kullanmaktan kaçının **catch** oluşturucular ve Yıkıcılar işlevlerde.
+
+Bu uyarı yalnızca bir kez verilir; bkz: [pragma Uyarısı](../../preprocessor/warning.md).

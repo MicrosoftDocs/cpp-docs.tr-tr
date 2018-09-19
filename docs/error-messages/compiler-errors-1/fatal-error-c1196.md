@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51316b1e25c13a7e501d1d0f2fbde88f6b2ce613
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 53c10a2b3849bfa45f5111b07c95d7355fcbdbfd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199021"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102534"
 ---
 # <a name="fatal-error-c1196"></a>Önemli hata C1196
-'tanımlayıcısı': 'typelib' tür kitaplığında bulunan tanımlayıcısı geçerli bir C++ tanımlayıcısı değil  
-  
- Tür kitaplığı tanımlayıcılarında biri geçerli bir C++ tanımlayıcısı değil. Tür kitaplığı ile kullanmak için kullanılabilir değil [#import](../../preprocessor/hash-import-directive-cpp.md).
+
+'identifier': 'typelib' tür kitaplığında bulunan tanımlayıcı geçerli bir C++ tanımlayıcısı değil
+
+Tanımlayıcılar, tür kitaplığındaki biri geçerli bir C++ tanımlayıcısı değil. Tür kitaplığı ile kullanmak için kullanılabilir değil [#import](../../preprocessor/hash-import-directive-cpp.md).

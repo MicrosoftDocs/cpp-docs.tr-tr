@@ -16,38 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dbaed18984dbcc06b976a367ef9911528792ce52
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d94d2462662fd5f99e80ba205b8e2df41d7c716b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33275518"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099557"
 ---
 # <a name="compiler-error-c3854"></a>Derleyici Hatası C3854
-'=' ın sol ifade bir işleve değerlendirir. (Bir işlev l-değeri değildir) bir işleve atayamazsınız.  
-  
- Bir başvuru yeniden olamaz. Bir işlev başvurusu başvurusunun kaldırılmasının nesnesine atanamaz bir rvalue olan bir işlev verir. Bu nedenle, bir işlev başvurusu aracılığıyla atayamazsınız.  
-  
- Aşağıdaki örnek C3854 oluşturur:  
-  
-```  
-// C3854.cpp  
-int afunc(int i)  
-{  
-   return i;  
-}  
-  
-typedef int (& rFunc_t)(int);  
-typedef int (* pFunc_t)(int);  
-  
-int main()  
-{  
-   rFunc_t rf = afunc;   // OK binding a reference to function  
-   pFunc_t pf = &afunc;   // OK initializing a pointer to function  
-  
-   *pf = &afunc;   // C3854  
-   // try the following line instead  
-   // pf = &afunc;  
-   *rf = &afunc;   // C3854  
-}  
+
+'=' işaretinin solundaki ifade bir işlev olarak değerleniyor. (Bir işlevin bir l değeri değildir) bir işleve atama yapılamaz
+
+Bir başvuru başlatılmasına olamaz. Bir işleve bir başvuru'başvurusunun kaldırılması atama yapılamaz, bir rvalue olduğunu bir işlev verir. Bu nedenle, bir işlev başvurusu yoluyla atayamazsınız.
+
+Aşağıdaki örnek, C3854 oluşturur:
+
+```
+// C3854.cpp
+int afunc(int i)
+{
+   return i;
+}
+
+typedef int (& rFunc_t)(int);
+typedef int (* pFunc_t)(int);
+
+int main()
+{
+   rFunc_t rf = afunc;   // OK binding a reference to function
+   pFunc_t pf = &afunc;   // OK initializing a pointer to function
+
+   *pf = &afunc;   // C3854
+   // try the following line instead
+   // pf = &afunc;
+   *rf = &afunc;   // C3854
+}
 ```

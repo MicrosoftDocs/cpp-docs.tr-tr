@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: bir proje derleme (C++) | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/14/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -16,54 +16,57 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c8d04dc3692076b867302af0e793eaac7ed25cb
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 5050ab07f430a545e5d2d0497ae2d17b09acdba3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33332461"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101442"
 ---
 # <a name="walkthrough-building-a-project-c"></a>İzlenecek Yol: Proje Derleme (C++)
-Bu kılavuzda, kasıtlı olarak bir Visual C++ söz dizimi hatası derleme hatası nasıl göründüğünü ve nasıl düzeltileceği öğrenmek için kodunuzda tanıtır. Proje derleme yaparken bir hata iletisi sorunun ne olduğunu ve nerede oluştuğunu gösterir.  
+Bu kılavuzda, kasıtlı bir derleme hatası nasıl göründüğünü ve nasıl düzeltileceğini öğrenmek için kodunuzda bir Visual C++ sözdizimi hatası tanıtır. Projeyi derlediğinizde, bir hata iletisi sorunun ne olduğunu ve oluştuğu yeri gösterir.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
   
--   Bu kılavuz, C++ dil temelleri anladığınızı varsayar.  
+- Bu izlenecek yol, C++ dili temellerini anladığınızı varsayar.  
   
--   Ayrıca listelenen ilgili daha önce izlenecek tamamladığınızı varsaymaktadır [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
+- Ayrıca, listelenen önceki izlenecek yolları tamamladığınızı varsayar [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
   
-### <a name="to-fix-compilation-errors"></a>Derleme hataları gidermek için  
+### <a name="to-fix-compilation-errors"></a>Derleme hatalarını düzeltmek için  
   
-1.  Böylece bu benzer TestGames.cpp içinde son satırında noktalı virgülü silin:  
+1. Bu benzeyecek şekilde Game.cpp içinde son satırda bulunan noktalı virgülü silin:  
   
      `return 0`  
   
-2.  Menü çubuğunda seçin **yapı**, **yapı çözümü**.  
+1. Menü çubuğunda, **derleme** > **Çözümü Derle**.  
   
-3.  Bir ileti **hata listesi** penceresi gösterir proje binada bir hata oluştu. Açıklama şuna benzer:  
+1. Bir ileti **hata listesi** penceresini gösteren projesinin yapı içinde bir hata oluştu. Açıklama şuna benzer:  
   
-     `error C2143: syntax error : missing ';' before '}'`  
+     `error C2143: syntax error: missing ';' before '}'`  
   
-     Bu hatayla ilgili Yardım bilgilerini görüntülemek için de Vurgula **hata listesi** penceresi ve F1 tuşuna'i seçin.  
+     Bu hatayla ilgili Yardım bilgilerini görüntülemek için onu vurgulayın **hata listesi** penceresi seçip **F1** anahtarı.  
   
-4.  Noktalı virgül geri sözdizimi hatası var. satırın sonuna ekleyin:  
+1. Geri söz dizimi hatası olan satırın sonuna noktalı virgül ekleyin:  
   
      `return 0;`  
   
-5.  Menü çubuğunda seçin **yapı**, **yapı çözümü**.  
+1. Menü çubuğunda, **derleme** > **Çözümü Derle**.  
   
-     Bir ileti **çıkış** penceresi gösterir Proje başarıyla derlenir.  
+     Bir ileti **çıkış** penceresi projenin başarıyla derlendiğini gösterir.  
   
     ```Output  
     1>------ Build started: Project: Game, Configuration: Debug Win32 ------  
-    1>  TestGames.cpp  
-    1>  Game.vcxproj -> C:\Users\<username>\Documents\Visual Studio <version>\Projects\Game\Debug\Game.exe  
+    1>Game.cpp  
+    1>Game.vcxproj -> C:\Users\<username>\source\repos\Game\Debug\Game.exe  
     ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========  
     ```  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
- **Önceki:** [izlenecek yol: projeler ve çözümler (C++) ile çalışma](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) &#124; **sonraki:**[izlenecek yol: Proje (C++) test etme](../ide/walkthrough-testing-a-project-cpp.md)  
+
+**Önceki:** [izlenecek yol: projelerle ve çözümlerle (C++) ile çalışma](../ide/walkthrough-working-with-projects-and-solutions-cpp.md)<br/>
+**Sonraki:** [izlenecek yol: projeyi (C++) test etme](../ide/walkthrough-testing-a-project-cpp.md)<br/>
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
- [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
+[C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)<br/>

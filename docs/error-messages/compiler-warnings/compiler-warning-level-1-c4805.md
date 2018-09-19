@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13477b20a046741e845c84fd1812dbc6c547ccbd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1fa9352dbd4138a755c603d332ff79232d7bb72a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33281570"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103457"
 ---
 # <a name="compiler-warning-level-1-c4805"></a>Derleyici Uyarısı (düzey 1) C4805
-'işlemi': ' type' türünde güvensiz karışımı ve türü 'type' işlemi  
-  
- Bu uyarı arasında karşılaştırma işlemi için oluşturulan [bool](../../cpp/bool-cpp.md) ve [int](../../c-language/integer-types.md). Aşağıdaki örnek C4805 oluşturur:  
-  
-```  
-// C4805.cpp  
-// compile with: /W1  
-int main() {  
-   int i = 1;  
-   bool b = true;  
-  
-   if (i == b) {   // C4805, comparing bool and int variables  
-   }  
-}  
+
+'operation': Güvenli olmayan karışımı türü 'type' ve türü 'type' işleminde
+
+Bu uyarı için karşılaştırma işlemleri arasında oluşturulan [bool](../../cpp/bool-cpp.md) ve [int](../../c-language/integer-types.md). Aşağıdaki örnek, C4805 oluşturur:
+
+```
+// C4805.cpp
+// compile with: /W1
+int main() {
+   int i = 1;
+   bool b = true;
+
+   if (i == b) {   // C4805, comparing bool and int variables
+   }
+}
 ```

@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 987cefa42b3f3f8d9588e446ca181c0b7cd48f8c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8b5d8f80293c05b651ad01e725ae501288005dfe
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198592"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102594"
 ---
 # <a name="compiler-error-c2480"></a>Derleyici Hatası C2480
-'tanımlayıcısı': 'iş parçacığı' statik kapsam veri öğeleri için geçerli değil yalnızca  
-  
- Kullanamazsınız `thread` özniteliği bir otomatik değişkeni, statik olmayan veri üyesi, işlev parametresi veya işlev bildirimleri ya da tanımları.  
-  
- Kullanım `thread` genel değişkenler, statik veri üyeleri ve yalnızca yerel statik değişkenler özniteliği.  
-  
- Aşağıdaki örnek C2480 oluşturur:  
-  
-```  
-// C2480.cpp  
-// compile with: /c  
-__declspec( thread ) void func();   // C2480  
-__declspec( thread ) static int i;   // OK  
+
+'identifier': 'thread' geçerlidir yalnızca statik kapsamı olan veri öğeleri için
+
+Kullanamazsınız `thread` otomatik değişken, statik olmayan veri üyesi, işlev parametresi veya işlev bildirimlerinde veya tanımlarında özniteliği.
+
+Kullanım `thread` genel değişkenler ve statik veri üyeleri yalnızca yerel statik değişkenler için özniteliği.
+
+Aşağıdaki örnek, C2480 oluşturur:
+
+```
+// C2480.cpp
+// compile with: /c
+__declspec( thread ) void func();   // C2480
+__declspec( thread ) static int i;   // OK
 ```

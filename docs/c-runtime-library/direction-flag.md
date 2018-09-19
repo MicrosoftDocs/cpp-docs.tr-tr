@@ -16,19 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3737304d2443b4f67f00a03e23a0529ad5bcbfe3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7db91b20b76ef06130cbb8357344352b820ed731
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387856"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093214"
 ---
 # <a name="direction-flag"></a>Yön Bayrağı
-Yön bayrağı Intel 80 x 86 işlemciler için belirli bir CPU bayrak ' dir. MOVS, MOVSD, MOVSW ve diğerleri gibi REP (Yineleme) önekini tüm derleme yönergeleri için geçerlidir. Yön bayrağı temizlenirse ilgili yönergeler için sağlanan adresleri artırılır.  
-  
- C çalışma zamanı yordamları yön bayrağı temizlenir varsayalım. C çalışma zamanı işlevleri ile diğer işlevleri kullanıyorsanız, diğer işlevleri yön bayrağı bırakır veya orijinal durumuna geri emin olmalısınız. Giriş temizlenmesini yön bayrağı bekleniyor çalışma zamanı kodu daha hızlı ve daha verimli hale getirir.  
-  
- Dize düzenlemesi ve ara bellek düzenlemesi yordamlarını gibi C çalışma zamanı kitaplığı işlevleri yön bayrağı açık olmasını bekler.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)
+
+Yön bayrağı Intel 80 x 86 işlemciler için belirli bir CPU bayrağı ' dir. MOVS, MOVSD, MOVSW ve diğerleri gibi Temsilcisi (Yineleme) önek kullanan tüm derleme yönergeleri için geçerlidir. Yön bayrağı iptal edilirse ilgili yönergeler için sağlanan adreslerini artırıldı.
+
+Yön bayrağı temizlenir C çalışma zamanı yordamları varsayılır. C çalışma zamanı işlevleri diğer işlevleri kullanıyorsanız, diğer işlevler yön bayrağı dokunmayın veya orijinal durumuna geri emin olmanız gerekir. Yön bayrağı giriş temizlenmesini bekleniyor çalışma zamanı kod daha hızlı ve daha verimli hale getirir.
+
+Dize düzenlemesi ve ara bellek düzenlemesi yordamlar gibi C çalışma zamanı kitaplık işlevleri yön bayrağı açık olmasını bekler.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)

@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9ecbd8823717a5967ffeca0410e4b97ffc7ac8f
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 98187d7f5946496af26e0cf4ff7929f12e5a6eb7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758423"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088962"
 ---
 # <a name="csimplestringt-class"></a>CSimpleStringT sınıfı
 
@@ -385,11 +385,11 @@ _tprintf_s(_T("Alloc length is %d, String length is %d\n"),
 
 Bu örnek çıktısı aşağıdaki gibidir:
 
-`Alloc length is 1031, String length is 1024`
-
-`Alloc length is 1031, String length is 15`
-
-`Alloc length is 15, String length is 15`
+```Output
+Alloc length is 1031, String length is 1024
+Alloc length is 1031, String length is 15
+Alloc length is 15, String length is 15
+```
 
 ##  <a name="getalloclength"></a>  CSimpleStringT::GetAllocLength
 

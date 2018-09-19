@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb090b932daa93c2c680d4ec871b36c78f09a7c3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 880234d1d11556b8882bfd564fdf64bc587d56ae
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228244"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107807"
 ---
 # <a name="compiler-error-c2556"></a>Derleyici Hatası C2556
-'tanımlayıcısı': Aşırı yüklenen işlevler yalnızca dönüş türüne göre farklılık gösterir  
-  
- Aşırı yüklenen işlevler aynı parametre listesi ancak farklı dönüş türü var. Aşırı yüklenmiş her işlevi DISTINCT resmi parametre listesi olmalıdır.  
-  
- Aşağıdaki örnek C2556 oluşturur:  
-  
-```  
-// C2556.cpp  
-// compile with: /c  
-class C {  
-   int func();  
-   double func();   // C2556  
-   int func(int i);   // ok parameter lists differ  
-};  
+
+'identifier': aşırı yüklenmiş işlevler yalnızca dönüş türüne göre farklılık gösterir
+
+Aşırı yüklenmiş işlevler aynı parametre listesi ancak farklı dönüş türlerine sahip. Her aşırı yüklenmiş işlev ayrı biçimsel parametre listesi olmalıdır.
+
+Aşağıdaki örnek, C2556 oluşturur:
+
+```
+// C2556.cpp
+// compile with: /c
+class C {
+   int func();
+   double func();   // C2556
+   int func(int i);   // ok parameter lists differ
+};
 ```

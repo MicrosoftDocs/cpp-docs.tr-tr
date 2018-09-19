@@ -16,31 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65e1aea19dbeab5c34a6b818afcb4cd4a7deda91
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f85ff8c33cc43bdc1af9a3bf02d9240a0fd5e09c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33263380"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098777"
 ---
 # <a name="compiler-error-c3454"></a>Derleyici Hatası C3454
-[öznitelik] sınıfı bildiriminde izin verilmiyor  
-  
- Bir sınıf bir özniteliği için tanımlanmalıdır.  
-  
- Daha fazla bilgi için bkz: [özniteliği](../../windows/attribute.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3454 oluşturur.  
-  
-```  
-// C3454.cpp  
-// compile with: /clr /c  
-using namespace System;  
-  
-[attribute]   // C3454  
-ref class Attr1;  
-  
-[attribute]   // OK  
-ref class Attr2 {};  
+
+[attribute] sınıf bildiriminde kullanılamaz
+
+Bir öznitelik için bir sınıf tanımlanmalıdır.
+
+Daha fazla bilgi için [özniteliği](../../windows/attribute.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3454 oluşturur.
+
+```
+// C3454.cpp
+// compile with: /clr /c
+using namespace System;
+
+[attribute]   // C3454
+ref class Attr1;
+
+[attribute]   // OK
+ref class Attr2 {};
 ```

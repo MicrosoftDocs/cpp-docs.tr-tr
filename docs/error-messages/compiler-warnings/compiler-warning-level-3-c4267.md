@@ -16,36 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de75c4eb05002f638e6b665a39f2a35e114b0ab4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 359b254c937eb0c52edd56ae9a2616bfea764213
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290169"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097048"
 ---
 # <a name="compiler-warning-level-3-c4267"></a>Derleyici Uyarısı (Düzey 3) C4267
-'var': 'yazmak için ', olası veri kaybını 'size_t' dönüştürme  
-  
- Dönüştürme derleyici algılanan `size_t` daha küçük bir türü.  
-  
- Bu uyarıyı çözmenin kullanmak `size_t` yerine `type`. Alternatif olarak, en az kadar büyük bir tam sayı türü kullanın `size_t`.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4267 oluşturur.  
-  
-```  
-// C4267.cpp  
-// compile by using: cl /W4 C4267.cpp  
-void Func1(short) {}  
-void Func2(int) {}  
-void Func3(long) {}  
-void Func4(size_t) {}  
-  
-int main() {  
-   size_t bufferSize = 10;  
-   Func1(bufferSize);   // C4267 for all platforms  
-   Func2(bufferSize);   // C4267 only for 64-bit platforms  
-   Func3(bufferSize);   // C4267 only for 64-bit platforms  
-   Func4(bufferSize);   // OK for all platforms  
-}  
+
+'var': 'size_t 'yazmak için ' olası veri kaybı' öğesinden dönüştürme
+
+Derleyici, dönüştürme algıladı `size_t` daha küçük bir türü.
+
+Bu uyarıyı düzeltmek için kullanmak `size_t` yerine `type`. Alternatif olarak, en az kadar büyük bir tamsayı türü kullanmak `size_t`.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4267 oluşturur.
+
+```
+// C4267.cpp
+// compile by using: cl /W4 C4267.cpp
+void Func1(short) {}
+void Func2(int) {}
+void Func3(long) {}
+void Func4(size_t) {}
+
+int main() {
+   size_t bufferSize = 10;
+   Func1(bufferSize);   // C4267 for all platforms
+   Func2(bufferSize);   // C4267 only for 64-bit platforms
+   Func3(bufferSize);   // C4267 only for 64-bit platforms
+   Func4(bufferSize);   // OK for all platforms
+}
 ```

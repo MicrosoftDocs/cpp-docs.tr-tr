@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac922526abec73d7219f64cb1004319e9547fef6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 815a276cb07a91da73acb68a32cceef4b2138325
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757887"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093859"
 ---
 # <a name="idispeventimpl-class"></a>Idispeventımpl sınıfı
 
@@ -45,31 +45,31 @@ template <UINT nID, class T,
     const GUID* plibid = &GUID_NULL,
     WORD wMajor = 0,
     WORD wMinor = 0, 
-    class tihclass = CcomTypeInfoHolder>  
+    class tihclass = CcomTypeInfoHolder>
 class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T, pdiid>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*nID*  
+*nID*<br/>
 Kaynak nesne için benzersiz bir tanımlayıcı. Zaman `IDispEventImpl` temel sınıf için bileşik denetim, bu parametre için istenen kapsanan denetiminin kaynak kimliği kullanın. Diğer durumlarda, rastgele bir pozitif tamsayı kullanın.
 
-*T*  
+*T*<br/>
 Sınıfından türetilen kullanıcının sınıfı `IDispEventImpl`.
 
-*pdiid*  
+*pdiid*<br/>
 Bu sınıf tarafından uygulanan olay görüntüleme arabirimi Laboratuvardaki işaretçisi. Bu arabirim tarafından belirtilen tür kitaplığı tanımlanmalıdır *plibid*, *wMajor*, ve *wMinor*.
 
-*plibid*  
+*plibid*<br/>
 Dağıtım arabirimi tanımlayan tür kitaplığı için bir işaretçi tarafından işaret edilen *pdiid*. Varsa **& GUID_NULL**, olay kaynağını belirleme nesneden tür kitaplığı yüklenir.
 
-*wMajor*  
+*wMajor*<br/>
 Tür kitaplığının ana sürümü. Varsayılan değer 0’dır.
 
-*wMinor*  
+*wMinor*<br/>
 Tür kitaplığının bir alt sürümü. Varsayılan değer 0’dır.
 
-*tihclass*  
+*tihclass*<br/>
 İçin tür bilgilerini yönetmek için kullanılan sınıf *T*. Varsayılan değer türünün bir sınıftır `CComTypeInfoHolder`; ancak, bir türün bir sınıf dışında sağlayarak bu şablon parametresi geçersiz kılabilirsiniz `CComTypeInfoHolder`.
 
 ## <a name="members"></a>Üyeler
@@ -143,16 +143,16 @@ HRESULT GetFuncInfoFromId(
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] İşlev kodu bir başvuru.
 
-*dispidMember*  
+*dispidMember*<br/>
 [in] İşlev gönderme kimliği.
 
-*lcid*  
+*lcid*<br/>
 [in] İşlev kimliğine, yerel ayar bağlamı
 
-*Bilgileri*  
+*Bilgileri*<br/>
 [in] İşlev nasıl çağrılır belirten yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -213,10 +213,10 @@ VARTYPE GetUserDefinedType(
 
 ### <a name="parameters"></a>Parametreler
 
-*PTI*  
+*PTI*<br/>
 [in] Bir işaretçi [ITypeInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) arabirimi içeren kullanıcı tanımlı tür.
 
-*hrt*  
+*hrt*<br/>
 [in] Alınacak tür tanımı için bir tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -249,10 +249,10 @@ Varsayılan olarak, bir sınıftır `CComTypeInfoHolder`. `CComTypeInfoHolder` s
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[_Atl_func_ınfo yapısı](../../atl/reference/atl-func-info-structure.md)   
-[Idispatchımpl sınıfı](../../atl/reference/idispatchimpl-class.md)   
-[Idispeventsimpleımpl sınıfı](../../atl/reference/idispeventsimpleimpl-class.md)   
-[SINK_ENTRY](composite-control-macros.md#sink_entry)   
-[SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex)   
-[SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)   
+[_ATL_FUNC_INFO Yapısı](../../atl/reference/atl-func-info-structure.md)<br/>
+[IDispatchImpl Sınıfı](../../atl/reference/idispatchimpl-class.md)<br/>
+[IDispEventSimpleImpl Sınıfı](../../atl/reference/idispeventsimpleimpl-class.md)<br/>
+[SINK_ENTRY](composite-control-macros.md#sink_entry)<br/>
+[SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex)<br/>
+[SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

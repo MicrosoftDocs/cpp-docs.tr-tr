@@ -16,42 +16,44 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a4d173162d290644f450614e19aaa96615c0ae2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: df81df38758cfdd9b3f62d9e0d241f0bf8578746
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171672"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097919"
 ---
 # <a name="compiler-error-c2107"></a>Derleyici Hatası C2107
-Geçersiz dizin, yöneltme izin verilmiyor  
-  
- Bir alt simge gösteren bir işaretçi değerlendirmez bir ifade uygulanır.  
-  
-## <a name="example"></a>Örnek  
- C2107 yanlış kullanırsanız oluşabilir `this` işaretçi türünün varsayılan dizin oluşturucu erişmek için bir değer türü. Daha fazla bilgi için bkz: [bu semantiği işaretçi](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Semantics_of_the_this_pointer).  
-  
- Aşağıdaki örnek C2107 oluşturur.  
-  
-```  
-// C2107.cpp  
-// compile with: /clr  
-using namespace System;  
-  
-value struct B {  
-   property String ^ default[String ^] {  
-      String ^ get(String ^ data) {  
-         return "abc";  
-      }  
-   }  
-   void Test() {  
-      Console::WriteLine("{0}", this["aa"]);   // C2107  
-      Console::WriteLine("{0}", this->default["aa"]);   // OK  
-   }  
-};  
-  
-int main() {  
-   B ^ myb = gcnew B();  
-   myb->Test();  
-}  
+
+Geçersiz dizin, yöneltmeye izin verilmiyor
+
+Bir alt simge işaretçisi değerlendirmez ifade uygulanır.
+
+## <a name="example"></a>Örnek
+
+Yanlış kullanırsanız C2107 oluşabilir `this` türün varsayılan dizin oluşturucu erişmek için bir değer türünün işaretçisi. Daha fazla bilgi için [semantiği Bu işaretçi](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Semantics_of_the_this_pointer).
+
+Aşağıdaki örnek, C2107 oluşturur.
+
+```
+// C2107.cpp
+// compile with: /clr
+using namespace System;
+
+value struct B {
+   property String ^ default[String ^] {
+      String ^ get(String ^ data) {
+         return "abc";
+      }
+   }
+   void Test() {
+      Console::WriteLine("{0}", this["aa"]);   // C2107
+      Console::WriteLine("{0}", this->default["aa"]);   // OK
+   }
+};
+
+int main() {
+   B ^ myb = gcnew B();
+   myb->Test();
+}
 ```

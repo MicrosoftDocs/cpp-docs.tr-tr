@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f4f89abd2d2a59efa7c028321fd9a6ff82cc206
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4d9374f5e5c8b65956a7864406c86927b0daf604
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226153"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102222"
 ---
 # <a name="fatal-error-c1903"></a>Önemli hata C1903
-Önceki hataları kurtarmak eklenemiyor; derleme durdurma  
-  
- Derleyici devam etmek için çok fazla hata bulundu. Hataları düzeltin ve yeniden derleyin.
+
+Önceki hatalardan kurtarmak alınamıyor; derleme durduruluyor
+
+Derleyici, devam etmek için çok fazla hata bulundu. Hataları düzeltin ve yeniden derleyin.

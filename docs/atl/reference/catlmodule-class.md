@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7d7b8ee240b94fe6a9b05d5c06c960ab8857ed6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 88c8ee576af3c50317b86b7016ac198fefdcbaa9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753142"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093447"
 ---
 # <a name="catlmodule-class"></a>CAtlModule sınıfı
 
@@ -106,7 +106,7 @@ virtual HRESULT AddCommonRGSReplacements(IRegistrarBase* /* pRegistrar*/) throw(
 
 ### <a name="parameters"></a>Parametreler
 
-*pRegistrar*  
+*pRegistrar*<br/>
 Ayrılmış.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -129,10 +129,10 @@ HRESULT AddTermFunc(_ATL_TERMFUNC* pFunc, DWORD_PTR dw) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pFunc*  
+*pFunc*<br/>
 İşlev eklemek için işaretçi.
 
-*dw*  
+*dw*<br/>
 Kullanıcı tanımlı veri, işleve geçirilen.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -173,7 +173,7 @@ virtual HRESULT GetGITPtr(IGlobalInterfaceTable** ppGIT) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*ppGIT*  
+*ppGIT*<br/>
 Genel arabirim tablosu işaretçisi alacak bir değişken işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -270,16 +270,16 @@ HRESULT WINAPI UpdateRegistryFromResourceD(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszRes*  
+*lpszRes*<br/>
 Bir kaynak adı.
 
-*nResID*  
+*nResID*<br/>
 Bir kaynak kimliği
 
-*bRegister*  
+*bRegister*<br/>
 Nesne kayıtlı olması gerekiyorsa TRUE; FALSE Aksi takdirde.
 
-*pMapEntries*  
+*pMapEntries*<br/>
 Betiğin değiştirilebilir parametreler ile ilişkili değerleri depolamayı değiştirme eşlemesi için bir işaretçi. ATL MODÜL % otomatik olarak kullanır. Ek değiştirilebilir parametreler kullanmak için bkz: [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Aksi takdirde, NULL varsayılan değeri kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -307,13 +307,13 @@ inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszRes*  
+*lpszRes*<br/>
 Bir kaynak adı.
 
-*bRegister*  
+*bRegister*<br/>
 Nesne kayıtlı olup olmadığını gösterir.
 
-*pMapEntries*  
+*pMapEntries*<br/>
 Betiğin değiştirilebilir parametreler ile ilişkili değerleri depolamayı değiştirme eşlemesi için bir işaretçi. ATL MODÜL % otomatik olarak kullanır. Ek değiştirilebilir parametreler kullanmak için bkz: [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Aksi takdirde, NULL varsayılan değeri kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -342,16 +342,16 @@ HRESULT WINAPI UpdateRegistryFromResourceS(
 
 ### <a name="parameters"></a>Parametreler
 
-*nResID*  
+*nResID*<br/>
 Bir kaynak kimliği
 
-*lpszRes*  
+*lpszRes*<br/>
 Bir kaynak adı.
 
-*bRegister*  
+*bRegister*<br/>
 Kaynak betiği kayıtlı olup olmadığını gösterir.
 
-*pMapEntries*  
+*pMapEntries*<br/>
 Betiğin değiştirilebilir parametreler ile ilişkili değerleri depolamayı değiştirme eşlemesi için bir işaretçi. ATL MODÜL % otomatik olarak kullanır. Ek değiştirilebilir parametreler kullanmak için bkz: [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements). Aksi takdirde, NULL varsayılan değeri kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -364,7 +364,7 @@ Benzer şekilde [CAtlModule::UpdateRegistryFromResourceD](#updateregistryfromres
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[_ATL_MODULE](atl-typedefs.md#_atl_module)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
-[Modül sınıfları](../../atl/atl-module-classes.md)   
+[_ATL_MODULE](atl-typedefs.md#_atl_module)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[Modül sınıfları](../../atl/atl-module-classes.md)<br/>
 [Kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md)  

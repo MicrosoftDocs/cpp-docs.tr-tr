@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c9693fdc524953c9fa1070ec5e286cb2a999f5a0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9182241b1d33c63aae523cae0c2c9602466e4c2e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767731"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090431"
 ---
 # <a name="windows-support-classes"></a>Windows desteği sınıfları
 
@@ -64,7 +64,7 @@ Aşağıdaki sınıflar, windows için destek sağlar:
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfına genel bakış](../atl/atl-class-overview.md)   
-[İleti eşleme makroları](../atl/reference/message-map-macros-atl.md)   
+[Sınıfına genel bakış](../atl/atl-class-overview.md)<br/>
+[İleti eşleme makroları](../atl/reference/message-map-macros-atl.md)<br/>
 [Pencere Sınıfı Makroları](../atl/reference/window-class-macros.md)
 

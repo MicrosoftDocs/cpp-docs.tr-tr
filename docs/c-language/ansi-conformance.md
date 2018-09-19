@@ -15,17 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c363fa74a3fac97399eee72c4b3d396a2f375d06
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cca68ad9865ab6382114c3ebe64d5921539f7ce0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380595"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106889"
 ---
 # <a name="ansi-conformance"></a>ANSI Uyumluluğu
-Microsoft C, ANSI C standardının 9899:1990 sürümünde ifade edildiği gibi C dili standardına uyar.  
-  
- ANSI C standardı için Microsoft uzantıları çevrimiçi başvuruda olduğu gibi bu kitabın metin ve sözdiziminde belirtilmiştir. Uzantılar ANSI C standardının bir parçası olmadığından, kullanımları sistemler arasında programların taşınabilirliğini kısıtlayabilir. Varsayılan olarak, Microsoft uzantıları etkindir. Uzantıları devre dışı bırakmak için, /Za derleyici seçeneğini belirtin. /Za ile tüm ANSI olmayan kodlar hata veya uyarılar oluşturur.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Dili Başvurularının Organizasyonu](../c-language/organization-of-the-c-language-reference.md)
+
+Microsoft C, ANSI C standardının 9899:1990 sürümünde ifade edildiği gibi C dili standardına uyar.
+
+ANSI C standardı için Microsoft uzantıları çevrimiçi başvuruda olduğu gibi bu kitabın metin ve sözdiziminde belirtilmiştir. Uzantılar ANSI C standardının bir parçası olmadığından, kullanımları sistemler arasında programların taşınabilirliğini kısıtlayabilir. Varsayılan olarak, Microsoft uzantıları etkindir. Uzantıları devre dışı bırakmak için, /Za derleyici seçeneğini belirtin. /Za ile tüm ANSI olmayan kodlar hata veya uyarılar oluşturur.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Dili Başvurularının Organizasyonu](../c-language/organization-of-the-c-language-reference.md)

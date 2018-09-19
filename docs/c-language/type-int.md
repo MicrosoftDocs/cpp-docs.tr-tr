@@ -17,26 +17,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ed3fcd9b11a76f8ff211bf8be5cf50ee6664cda
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: da73fc26bb6afa6455ac569148ab06370a728948
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389182"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107750"
 ---
 # <a name="type-int"></a>Tür int
-İşaretli veya işaretsiz bir `int` öğesinin boyutu, belirli bir makinedeki bir tamsayının standart boyutudur. Örneğin, 16 bit işletim sistemlerinde `int` türü genellikle 16 bit veya 2 bayttır. 32 bit işletim sistemlerinde, `int` türü genellikle 32 bit veya 4 bayttır. Bu nedenle, `int` türüdür ya da eşdeğer `short int` veya **uzun tamsayı** türü ve `unsigned int` türüdür ya da eşdeğer **kısa imzasız** veya `unsigned long` bağlı olarak hedef ortam türü. `int` türlerinin hepsi aksi belirtilmediği sürece işaretli değerleri temsil eder.  
-  
- `int` ve `unsigned int` tür tanımlayıcıları (veya `unsigned`) C dilinin belirli özelliklerini tanımlar (örneğin, `enum` türü). Bu durumlarda, belirli bir uygulama için `int` ve unsigned int tanımları gerçek depolamayı belirler.  
-  
- **Microsoft özel**  
-  
- İşaretli tam sayılar ikiye tamamlayıcı biçimde temsil edilir. En anlamlı bit işareti tutar: negatif için 1, pozitif ve sıfır için 0. Değerleri aralığı verilen [C++ tamsayı sınırları](../c-language/cpp-integer-limits.md), sınırlamaları uygulanmaya alınır. H üstbilgi dosyası.  
-  
- **SON Microsoft özel**  
-  
+
+İşaretli veya işaretsiz bir `int` öğesinin boyutu, belirli bir makinedeki bir tamsayının standart boyutudur. Örneğin, 16 bit işletim sistemlerinde `int` türü genellikle 16 bit veya 2 bayttır. 32 bit işletim sistemlerinde, `int` türü genellikle 32 bit veya 4 bayttır. Bu nedenle, `int` türüdür ya da eşdeğer `short int` veya **long int** türü ve `unsigned int` türüdür ya da eşdeğer **işaretsiz** veya `unsigned long` hedef ortama bağlı olarak türü. `int` türlerinin hepsi aksi belirtilmediği sürece işaretli değerleri temsil eder.
+
+`int` ve `unsigned int` tür tanımlayıcıları (veya `unsigned`) C dilinin belirli özelliklerini tanımlar (örneğin, `enum` türü). Bu durumlarda, belirli bir uygulama için `int` ve unsigned int tanımları gerçek depolamayı belirler.
+
+**Microsoft'a özgü**
+
+İşaretli tam sayılar ikiye tamamlayıcı biçimde temsil edilir. En anlamlı bit işareti tutar: negatif için 1, pozitif ve sıfır için 0. Değerleri aralığı verilen [C++ tamsayı sınırları](../c-language/cpp-integer-limits.md), SINIRLARI alınır. H üst bilgi dosyası.
+
+**END Microsoft özgü**
+
 > [!NOTE]
->  int ve unsigned int tanımlayıcıları C programlarında sık sık kullanılır, çünkü belirli bir makinenin tam sayı değerlerini o makine için en etkin şekilde işlemesine olanak verirler. Ancak, int ve unsigned int türlerinin boyutu değişebildiği için belirli bir int boyutuna bağlı olan programlar diğer makinelere taşınabilir olmayabilir. Programları daha taşınabilir hale getirmek için ifadeler ile sizeof işleci kullanabilirsiniz (anlatıldığı gibi [sizeof işleci](../c-language/sizeof-operator-c.md)) yerine sabit kodlanmış veri boyutları.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Temel Türleri Depolama](../c-language/storage-of-basic-types.md)
+>  int ve unsigned int tanımlayıcıları C programlarında sık sık kullanılır, çünkü belirli bir makinenin tam sayı değerlerini o makine için en etkin şekilde işlemesine olanak verirler. Ancak, int ve unsigned int türlerinin boyutu değişebildiği için belirli bir int boyutuna bağlı olan programlar diğer makinelere taşınabilir olmayabilir. Programları daha taşınabilir yapmak için sizeof işleci ile ifadeleri kullanabilirsiniz (açıklandığı gibi [sizeof işleci](../c-language/sizeof-operator-c.md)) sabit kodlanmış veri boyutları yerine.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Temel Türleri Depolama](../c-language/storage-of-basic-types.md)

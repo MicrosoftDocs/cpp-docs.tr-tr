@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68b3d769c5b86be172a0a27828fb1dc3905959d5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2fcb9058bf1aac584e8b7728616f821bda4b33f6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197370"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096281"
 ---
 # <a name="compiler-error-c2492"></a>Derleyici Hatası C2492
-'*değişkeni*': iş parçacığı depolama süresi verilerle dll arabirimi olmayabilir    
-  
- Değişkeni ile bildirilmiş [iş parçacığı](../../cpp/thread.md) özniteliği ve DLL ile arabirim. Adresini `thread` bir DLL içeri veya dışarı aktarma bağlanamaz şekilde değişkeni çalışma zamanına kadar değil bilinen.  
-  
- Aşağıdaki örnek C2492 oluşturur:  
-  
-```  
-// C2492.cpp  
-// compile with: /c  
-class C {  
-public:  
-   char   ch;  
-};  
-  
-__declspec(dllexport) __declspec(thread) C c_1;   // C2492  
-__declspec(thread) C c_1;   // OK  
+
+'*değişkeni*': iş parçacığı depolama süresine sahip verilerin dll arabirimi olmayabilir
+
+Değişkeni ile bildirilen [iş parçacığı](../../cpp/thread.md) özniteliği ve DLL ile arabirim. Adresini `thread` değişkeni için bir DLL içeri veya dışarı aktarma bağlanamaz için çalışma zamanına kadar tanınmıyor.
+
+Aşağıdaki örnek, C2492 oluşturur:
+
+```
+// C2492.cpp
+// compile with: /c
+class C {
+public:
+   char   ch;
+};
+
+__declspec(dllexport) __declspec(thread) C c_1;   // C2492
+__declspec(thread) C c_1;   // OK
 ```

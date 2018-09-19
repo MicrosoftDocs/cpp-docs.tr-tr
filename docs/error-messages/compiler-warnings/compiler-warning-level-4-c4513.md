@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92c3e89204ec30f9c96a5ea03ede5093dd013d0c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 75ae1c94d7a11fc9bb0049333c65a6677b04778a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292902"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087389"
 ---
 # <a name="compiler-warning-level-4-c4513"></a>Derleyici Uyarısı (düzey 4) C4513
-'class': yıkıcı oluşturulamadı  
-  
- Derleyici verilen sınıf için bir varsayılan yıkıcı oluşturulamıyor; hiçbir yıkıcı oluşturuldu. Türetilmiş sınıf erişilebilir değil bir taban sınıf yıkıcı kullanılıyor. Taban sınıfı özel yıkıcı varsa, genel veya korumalı olun.
+
+'class': yok edici üretilemedi
+
+Derleyici, belirtilen sınıfın bir varsayılan yıkıcı oluşturulamıyor; hiçbir yok edici oluşturuldu. Türetilmiş sınıf için erişilebilir değil bir temel sınıf yok Edicisi kullanılıyor. Temel sınıf özel bir yok Edicisi varsa, ortak veya korumalı olun.

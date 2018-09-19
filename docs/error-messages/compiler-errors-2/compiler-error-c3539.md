@@ -16,35 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f704bd283ab5228a8988d587707e978aa5b49e1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4b2f78b69e00290dcc283e3fc340d25a4a071776
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33256408"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091887"
 ---
 # <a name="compiler-error-c3539"></a>Derleyici Hatası C3539
-'type': bir şablon bağımsız değişken 'auto' içeren bir türü olamaz  
-  
- Belirtilen şablon bağımsız değişken türü bir kullanımını içeremez `auto` anahtar sözcüğü.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
-1.  Şablon bağımsız değişkeniyle belirtmeyin `auto` anahtar sözcüğü.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3539 verir.  
-  
-```  
-// C3539.cpp  
-// Compile with /Zc:auto  
-template<class T> class C{};  
-int main()  
-{  
-   C<auto> c;   // C3539  
-   return 0;  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)
+
+'type': bir şablon bağımsız değişkeni 'auto' içeren bir tür olamaz
+
+Belirtilen şablon bağımsız değişken türü bir kullanımını içeremez `auto` anahtar sözcüğü.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+1. Şablon bağımsız değişkeni ile belirtmeyin `auto` anahtar sözcüğü.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek C3539 verir.
+
+```
+// C3539.cpp
+// Compile with /Zc:auto
+template<class T> class C{};
+int main()
+{
+   C<auto> c;   // C3539
+   return 0;
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)

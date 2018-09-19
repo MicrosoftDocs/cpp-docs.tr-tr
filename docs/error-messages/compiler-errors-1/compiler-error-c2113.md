@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92ad712fa27d6350b672a7bfc1636d0fb3b80b7b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 94dd75ad7df782a92dfe359ebabf0abe1175ad75
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33166341"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096179"
 ---
 # <a name="compiler-error-c2113"></a>Derleyici Hatası C2113
-'-': işaretçi yalnızca çıkarılır başka bir işaretçi  
-  
- Bir çıkarma işleminde sağ işleneni için bir işaretçi olsa da, sol işleneni değildi.
+
+'-': işaretçi yalnızca başka bir işaretçiden çıkarılabilir
+
+Çıkarma işlemi, sağ işlenen bir işaretçi olduğu, ancak sol işlenen değildi.

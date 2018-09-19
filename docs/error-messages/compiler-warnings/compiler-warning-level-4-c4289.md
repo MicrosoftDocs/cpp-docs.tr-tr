@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f7f09bd85d3740d43b6e4b6a80ed562f8cc2261
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 35cb22c767c0ea64a1536bd4d02ad8653bb94250
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292613"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102846"
 ---
 # <a name="compiler-warning-level-4-c4289"></a>Derleyici Uyarısı (düzey 4) C4289
-standart olmayan uzantı kullanıldı : 'var': for döngüsünde bildirimi yapılan döngü denetim değişkeni for döngüsü kapsamının dışında kullanılıyor  
-  
- İle derleme yapılırken [/Ze](../../build/reference/za-ze-disable-language-extensions.md) ve **/Zc:forScope-**, bildirilen bir değişken bir [için](../../cpp/for-statement-cpp.md) döngü sonra kullanıldı **için**-döngü kapsamı.  
-  
- Bkz: [/ZC: forscope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) standart davranışını belirtme hakkında bilgi için **için** ile döngü **/Ze**.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.  
-  
- Aşağıdaki örnek C4289 oluşturur:  
-  
-```  
-// C4289.cpp  
-// compile with: /W4 /Zc:forScope-  
-#pragma warning(default:4289)  
-int main() {  
-   for (int i = 0 ; ; )   // C4289  
-      break;  
-   i++;  
-}  
+
+standart olmayan uzantı kullanıldı : 'var': for döngüsünde bildirimi yapılan döngü denetim değişkeni for döngüsü kapsamının dışında kullanılıyor
+
+İle derlerken [/Ze](../../build/reference/za-ze-disable-language-extensions.md) ve **/Zc:forScope-**, içinde bildirilen bir değişken bir [için](../../cpp/for-statement-cpp.md) döngü sonra kullanıldı **için**-döngü kapsamı.
+
+Bkz: [/ZC: forscope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) standart davranışını belirtme hakkında daha fazla bilgi için **için** ile döngü **/Ze**.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+Aşağıdaki örnek, C4289 oluşturur:
+
+```
+// C4289.cpp
+// compile with: /W4 /Zc:forScope-
+#pragma warning(default:4289)
+int main() {
+   for (int i = 0 ; ; )   // C4289
+      break;
+   i++;
+}
 ```

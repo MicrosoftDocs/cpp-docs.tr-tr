@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 338943e2168930bc48f02ef9ddbf36f738965078
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 56038ffe4c6062422ea34a439e73b0d90a37cfb8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763379"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097737"
 ---
 # <a name="catlexception-class"></a>CAtlException sınıfı
 
@@ -77,14 +77,14 @@ CAtlException() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İK*  
+*İK*<br/>
 HRESULT hata kodu.
 
 ##  <a name="operator_hresult"></a>  CAtlException::operator HRESULT
 
 HRESULT değerini geçerli nesneye çevirir.
 
-```  
+```
 operator HRESULT() const throw ();
 ```
 
@@ -102,5 +102,5 @@ Hata koşulu depolar veri üyesi. HRESULT değerini Oluşturucu tarafından ayar
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çeşitlemeleri](debugging-and-error-reporting-global-functions.md#atlthrow)   
+[Çeşitlemeleri](debugging-and-error-reporting-global-functions.md#atlthrow)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

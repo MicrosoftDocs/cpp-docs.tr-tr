@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0a96d2bf743d0ae2eae75bc4f90b7451f771af6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7f1d3c405e7a74dbade84b0ecd25284c4d6d8f27
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247699"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093863"
 ---
 # <a name="compiler-error-c3239"></a>Derleyici Hatası C3239
-'type': ortak dil çalışma zamanı tarafından iç/PIN işaretçi işaretçi izin verilmiyor  
-  
- Derleyici geçersiz bir tür ile karşılaşıldı.  
-  
- Aşağıdaki örnek C3229 oluşturur:  
-  
-```  
-// C3239.cpp  
-// compile with: /clr  
-int main() {  
-   interior_ptr<int>* pip0;   // C3239  
-  
-   // OK  
-   int * pip1;  
-   interior_ptr<int> pip2;  
-   int ** pip;  
-}  
+
+'type': işaretçi iç/tam işaretçiye ortak dil çalışma zamanı tarafından izin verilmiyor
+
+Derleyici, geçersiz bir türe karşılaşıldı.
+
+Aşağıdaki örnek, C3229 oluşturur:
+
+```
+// C3239.cpp
+// compile with: /clr
+int main() {
+   interior_ptr<int>* pip0;   // C3239
+
+   // OK
+   int * pip1;
+   interior_ptr<int> pip2;
+   int ** pip;
+}
 ```

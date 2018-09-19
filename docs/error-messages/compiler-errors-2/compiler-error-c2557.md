@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5402cb98d2cf315861ccb27aad3233b3bd370f8e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f975bdacf4db0460f6b12cd4f340c72e50f01a8c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33227414"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102612"
 ---
 # <a name="compiler-error-c2557"></a>Derleyici Hatası C2557
-'tanımlayıcısı': özel ve korumalı üyeleri bir oluşturucu başlatılamıyor  
-  
- Yalnızca üyeleri ve arkadaş özel veya korumalı üye için bir değer atayabilirsiniz. Ortak olmayan üyeler sınıfı oluşturucuda başlatılması.
+
+'identifier': özel ve korumalı üyeler bir oluşturucu olmadan başlatılamaz
+
+Yalnızca üyeleri ve arkadaşları özel veya korumalı üye için bir değer atayabilirsiniz. Ortak olmayan üyeler sınıf oluşturucuda başlatılmalıdır.

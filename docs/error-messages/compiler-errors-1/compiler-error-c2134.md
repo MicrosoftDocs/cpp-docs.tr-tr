@@ -14,41 +14,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8390e720e1a4389e43c263faf0c7582eaccfceec
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e616540fdb83619096ae24533380c559aa4759da
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168301"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101455"
 ---
 # <a name="compiler-error-c2134"></a>Derleyici Hatası C2134
-'function': çağrı sabit bir ifade neden olmaz  
-  
- Constexpr yalnızca diğer işlevleri çağırabilir olarak bildirilen bir işlev constexpr bildirildi.  
-  
- Aşağıdaki örnek C2134 oluşturur:  
-  
-```  
-// C2134.cpp  
-// compile with: /c  
-int A() {  
-    return 42;  
-};  
-  
-constexpr int B() {  
-    return A();  // Error C2134: 'A': call does not result in a constant expression.  
-}  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C2134b.cpp  
-constexpr int A() {  // add constexpr to A, since it meets the requirements of constexpr.  
-    return 42;  
-};  
-  
-constexpr int B() {  
-    return A();  // No error  
-}  
+
+'function': çağrı sabit ifadesiyle sonuçlanmıyor neden olmaz
+
+Constexpr yalnızca diğer işlevler çağırabilir olarak bildirilen bir işlevi constexpr bildirildi.
+
+Aşağıdaki örnek, C2134 oluşturur:
+
+```
+// C2134.cpp
+// compile with: /c
+int A() {
+    return 42;
+};
+
+constexpr int B() {
+    return A();  // Error C2134: 'A': call does not result in a constant expression.
+}
+```
+
+Olası çözüm:
+
+```
+// C2134b.cpp
+constexpr int A() {  // add constexpr to A, since it meets the requirements of constexpr.
+    return 42;
+};
+
+constexpr int B() {
+    return A();  // No error
+}
 ```

@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5369a6a5bf904f7a7492037fbad4df44de92e66
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4967c410dfdce781a4191c9ac848883228ba4d3a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228524"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093421"
 ---
 # <a name="compiler-error-c2506"></a>Derleyici Hatası C2506
-'member': '__declspec(modifier)' bu simgeyi uygulanamaz  
-  
- Yönetilen bir sınıfın statik üyeleri için işlem başına veya appdomain başına bildiremezsiniz.  
-  
- Bkz: [appdomain](../../cpp/appdomain.md) daha fazla bilgi için.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2506 oluşturur.  
-  
-```  
-// C2506.cpp  
-// compile with: /clr /c  
-ref struct R {  
-   __declspec(process) static int n;   // C2506  
-   int o;   // OK  
-};  
+
+'member': '__declspec(modifier)' bu simgeye uygulanamaz
+
+Statik bir yönetilen sınıf üyeleri için işlem içi appdomain başına bildiremezsiniz.
+
+Bkz: [appdomain](../../cpp/appdomain.md) daha fazla bilgi için.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2506 oluşturur.
+
+```
+// C2506.cpp
+// compile with: /clr /c
+ref struct R {
+   __declspec(process) static int n;   // C2506
+   int o;   // OK
+};
 ```

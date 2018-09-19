@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94bd1c043ac5660c5cb8fc8b2bfa1dd2f6968b55
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 33305f1f86c0cc1722e4a235ec27927f6e70675f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33337112"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095995"
 ---
 # <a name="resource-compiler-warning-rw4004"></a>Kaynak Derleyicisi Uyarısı RW4004
-ASCII karakter sanal anahtar kodu eşdeğer değil  
-  
- Bir dize sabit değeri VIRTKEY Türü Hızlandırıcı sanal anahtar kodunu kullanıldı.  
-  
- Bu uyarı, devam ancak oluşturulan Hızlandırıcı tuşları belirttiğiniz dizesi eşleşmeyebilir unutmayın olanak sağlar. (VIRTKEYs ASCII Hızlandırıcıları daha farklı anahtar kodları kullanın.)  
-  
- Dize değişmez değerleri sözdizimsel olarak geçerli durumdayken, yalnızca kullanarak istediğiniz Hızlandırıcı alma sağlayabilirsiniz **VK_\* #define** WINDOWS.h değerleri.
+
+ASCII karakter için sanal anahtar kodu eşdeğer değil
+
+Bir dize sabit değeri, sanal anahtar VIRTKEY'e Türü Hızlandırıcı kodunu kullanıldı.
+
+Bu uyarı, devam etmek, ancak oluşturulan kısayol tuşları belirttiğiniz dizesi eşleşmeyebilir unutmayın olanak tanır. (VIRTKEYs ASCII Hızlandırıcıları değerinden farklı anahtar kodlarını kullanın.)
+
+Dize değişmez değerleri sözdizimsel açıdan geçerli olsa da, yalnızca istediğiniz kullanarak Hızlandırıcı alma sağlayabilirsiniz **VK_\* #define** WINDOWS.h değerleri.

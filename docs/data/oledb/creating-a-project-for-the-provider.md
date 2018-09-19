@@ -17,29 +17,31 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: dad3b020cb7f66fc4ba6535f79393c2d0ad0333f
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 573cfdf3abda8f8190ceb7bca447e40130ea8610
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339847"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103331"
 ---
 # <a name="creating-a-project-for-the-provider"></a>Sağlayıcı için Proje Oluşturma
+
 ### <a name="to-create-a-project-in-which-the-ole-db-provider-will-reside"></a>OLE DB sağlayıcısı içinde yer alacağını bir proje oluşturmak için  
   
-1.  Gelen **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
+1. Gelen **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
   
      **Yeni proje** iletişim kutusu görüntülenir.  
   
-2.  Proje Türleri bölmesinde, Visual C++ projeleri klasöre tıklayın. Şablonlar bölmesinde **ATL projesi**.  
+1. Proje Türleri bölmesinde, Visual C++ projeleri klasöre tıklayın. Şablonlar bölmesinde **ATL projesi**.  
   
-3.  İçinde **adı** kutusuna proje için bir ad girin ve ardından **Tamam**.  
+1. İçinde **adı** kutusuna proje için bir ad girin ve ardından **Tamam**.  
   
      ATL projesi Sihirbazı görünür.  
   
-4.  ATL projesi Sihirbazı'nda seçin **dinamik bağlantı kitaplığı (DLL)** için **sunucu türü**.  
+1. ATL projesi Sihirbazı'nda seçin **dinamik bağlantı kitaplığı (DLL)** için **sunucu türü**.  
   
-5.  **Son**'a tıklayın.  
+1. **Son**'a tıklayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Sağlayıcısı Oluşturma](../../data/oledb/creating-an-ole-db-provider.md)
+
+[OLE DB Sağlayıcısı Oluşturma](../../data/oledb/creating-an-ole-db-provider.md)

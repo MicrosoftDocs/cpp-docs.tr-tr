@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2870b2958f2e18b711ea568fdda2ae01d41e37f6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ca5ef287ad853387635bbcc349374e1f174b4fd6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752729"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095943"
 ---
 # <a name="pointer-declarations"></a>İşaretçi Bildirimleri
 
@@ -59,6 +59,7 @@ Yaparak *tür tanımlayıcısı* **void**, işaretçi başvurduğu türü belirt
 Yapı, birleşim veya numaralandırma türü tanımlamadan önce bir yapı, birleşim veya numaralandırma türü için bir işaretçi bildirebilirsiniz. İşaretçi, örnekte gösterildiği gibi yapı veya birleşim etiketini kullanarak bildirin. Derleyici yapı veya birleşim işaretçi değişkeninin için alan ayırmak için boyutu bilmeniz gerekmez çünkü bu tür bildirimleri izin verilir.
 
 ## <a name="examples"></a>Örnekler
+
 Aşağıdaki örnekler, işaretçi bildirimleri gösterir.
 
 ```

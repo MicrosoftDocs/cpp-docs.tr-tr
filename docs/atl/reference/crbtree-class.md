@@ -37,12 +37,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18c8221b7e379d739dda3ebfa9cbc205d9f88af6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: de307c1b4f3d910615061915a240bf7b2c61b337
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759551"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090366"
 ---
 # <a name="crbtree-class"></a>CRBTree sınıfı
 
@@ -54,22 +54,22 @@ Bu sınıf, oluşturma ve Red-siyah ağaç kullanan yöntemleri sağlar.
 template <typename K,
           typename V, 
           class KTraits = CElementTraits<K>, 
-          class VTraits = CElementTraits<V>> 
+          class VTraits = CElementTraits<V>>
 class CRBTree
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*K*  
+*K*<br/>
 Anahtar öğe türü.
 
-*V*  
+*V*<br/>
 Değer öğe türü.
 
-*KTraits*  
+*KTraits*<br/>
 Kopyalamak veya taşımak temel öğeleri için kullanılan kod. Bkz: [CElementTraits sınıfı](../../atl/reference/celementtraits-class.md) daha fazla ayrıntı için.
 
-*VTraits*  
+*VTraits*<br/>
 Kopyalamak veya taşımak değeri öğeleri için kullanılan kod.
 
 ## <a name="members"></a>Üyeler
@@ -169,7 +169,7 @@ POSITION FindFirstKeyAfter(KINARGTYPE key) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Bir anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -192,13 +192,13 @@ void GetAt(POSITION pos, KOUTARGTYPE key, VOUTARGTYPE value) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Konum değeri.
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Değişken anahtarı alır.
 
-*value*  
+*value*<br/>
 Değişken değerini alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -249,7 +249,7 @@ const K& GetKeyAt(POSITION pos) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Konum değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -271,7 +271,7 @@ CPair* GetNext(POSITION& pos) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -295,13 +295,13 @@ void GetNextAssoc(
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Ağacının anahtar türünü belirten bir şablon parametre.
 
-*value*  
+*value*<br/>
 Ağacının değerin türünü belirten bir şablon parametre.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -318,7 +318,7 @@ const K& GetNextKey(POSITION& pos) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -340,7 +340,7 @@ V& GetNextValue(POSITION& pos) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -362,7 +362,7 @@ CPair* GetPrev(POSITION& pos) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -400,7 +400,7 @@ V& GetValueAt(POSITION pos) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -457,7 +457,7 @@ void RemoveAt(POSITION pos) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -474,10 +474,10 @@ void SetValueAt(POSITION pos, VINARGTYPE value);
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Gibi yöntemleri için önceki bir çağrı tarafından döndürülen konum sayaç [CRBTree::GetHeadPosition](#getheadposition) veya [CRBTree::FindFirstKeyAfter](#findfirstkeyafter).
 
-*value*  
+*value*<br/>
 Eklenecek değer `CRBTree` nesne.
 
 ### <a name="remarks"></a>Açıklamalar

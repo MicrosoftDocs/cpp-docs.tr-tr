@@ -18,15 +18,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: c616a391db07a9c6116c96c1b0242714a0ad958b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 66416bf19a154a5ea1f4a52728f97bbfbd3477f8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163965"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103242"
 ---
 # <a name="swap-function-autohandle"></a>swap İşlevi (auto_handle)
-Değiştirir biri arasında nesneleri `auto_handle` ve başka bir.  
+Bir arasında nesneleri değiştirir `auto_handle` ve başka bir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,11 +39,11 @@ void swap(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_left`  
- Bir `auto_handle`.  
+*_left*<br/>
+Bir `auto_handle`.  
   
- `_right`  
- Başka bir `auto_handle`.  
+*_right*<br/>
+Başka bir `auto_handle`.  
   
 ## <a name="example"></a>Örnek  
   
@@ -73,7 +73,7 @@ s1 = 'string two', s2 = 'string one'
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\auto_handle.h >  
+ **Üst bilgi dosyası** \<msclr\auto_handle.h >  
   
  **Namespace** msclr  
   

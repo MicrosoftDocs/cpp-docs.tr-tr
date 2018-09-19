@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39bc842e62254db7e524071970cb8f8c65e4a321
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: adf2787f8aea3611abd9eeac054df6bb054d802a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33166526"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103288"
 ---
 # <a name="compiler-error-c2083"></a>Derleyici Hatası C2083
-struct/union karşılaştırma geçersiz  
-  
- Bir yapının veya birleşimin doğrudan başka bir kullanıcı tanımlı tür ile karşılaştırılır. Bu bir karşılaştırma işleci tanımlanan veya bir skaler bir tür dönüştürme var sürece izin verilmiyor.
+
+Geçersiz yapı/birleşim karşılaştırma
+
+Bir yapı veya birleşim doğrudan başka bir kullanıcı tanımlı tür ile karşılaştırılır. Bu karşılaştırma işleci tanımlanan veya mevcut bir skaler türe dönüştürmeyi izin verilmez.

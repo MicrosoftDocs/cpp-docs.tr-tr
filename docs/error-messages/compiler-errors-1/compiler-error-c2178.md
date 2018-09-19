@@ -16,26 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3727a66554b2e128061820df160c02a1370ebb74
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: af9efdb3258e6793a17a26b552df8ba4e63c9107
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171302"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102345"
 ---
-# <a name="compiler-error-c2178"></a>Derleyici Hatası C2178  
-  
-'*tanımlayıcısı*'ile bildirilemez'*belirticisi*' tanımlayıcısı  
-  
-A `mutable` belirleyici bir bildiriminde kullanıldı, ancak belirleyici bu bağlamda izin verilmiyor.  
-  
-`mutable` Belirticisi yalnızca sınıf veri üyesi adlarına uygulanabilir ve bildirilen adlarına uygulanamaz `const` veya `static`ve üyeleri başvurmak için uygulanamaz.  
-  
-## <a name="example"></a>Örnek  
-  
-Aşağıdaki örnek C2178 nasıl oluşabilir ve bu sorunun nasıl gösterir.  
-  
-```  
+# <a name="compiler-error-c2178"></a>Derleyici Hatası C2178
+
+'*tanımlayıcı*'ile bildirilemez'*belirticisi*' tanımlayıcısı
+
+A `mutable` belirleyici bir bildirimde kullanıldı, ancak bu bağlamda belirticisine izin verilmiyor.
+
+`mutable` Belirticisi yalnızca sınıf veri üyeleri adlarına uygulanan ve bildirilen adlar için uygulanamaz `const` veya `static`ve üyeleri başvurmak için uygulanamaz.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek nasıl C2178 oluşabilir ve bu sorunun nasıl gösterir.
+
+```
 // C2178.cpp
 // compile with: cl /c /W4 C2178.cpp
 
@@ -46,4 +46,4 @@ class S {
 
 mutable int x = 4; // C2178
 // To fix, remove mutable keyword
-```  
+```

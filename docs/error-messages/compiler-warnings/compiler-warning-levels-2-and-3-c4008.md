@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4cdc88f222f9e5ce3829a63c131c955ce2abdd7d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bd052b8dd6a0b70dd90ca076d0085675b33dc621
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294264"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091185"
 ---
 # <a name="compiler-warning-levels-2-and-3-c4008"></a>Derleyici Uyarısı (Düzey 2 ve 3) C4008
-'tanımlayıcısı': 'öznitelik' özniteliği yoksayıldı  
-  
- Göz ardı derleyici `__fastcall`, **statik**, veya **satır içi** özniteliği işlevi (Düzey 3 uyarı) veya veriler (Düzey 2 uyarı).  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  `__fastcall` veri özniteliği.  
-  
-2.  **statik** veya **satır içi** ile öznitelik **ana** işlevi.
+
+'identifier': 'öznitelik' özniteliği yoksayıldı
+
+Derleyicinin göz ardı `__fastcall`, **statik**, veya **satır içi** işlevi (uyarı Düzey 3) veya veri (uyarı Düzey 2) için özniteliği.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. `__fastcall` verilerle özniteliği.
+
+1. **statik** veya **satır içi** özniteliğini **ana** işlevi.

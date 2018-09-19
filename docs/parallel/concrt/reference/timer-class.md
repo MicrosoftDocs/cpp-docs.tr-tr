@@ -1,5 +1,5 @@
 ---
-title: Süreölçer sınıfı | Microsoft Docs
+title: Zamanlayıcı sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -28,15 +28,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8372e32b408b97a6ac652b0ff2ff5cc19de69b54
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 42d77386350dab3e8714b00f8e55143b2a486e79
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33693230"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091666"
 ---
 # <a name="timer-class"></a>süreölçer Sınıfı
-A `timer` ileti bloğu tek hedef `source_block` hedefine belirtilen süre geçtikten sonra veya belirli aralıklarla ileti gönderme yapabilir.  
+A `timer` ileti bloğu tek hedef `source_block` gönderebilen bir ileti hedefine belirtilen süre geçtikten sonra veya belirli aralıklarla.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,8 +46,8 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Bu bloğu çıktı iletilerinin yük türü.  
+*T*<br/>
+Bu çıktı iletilerini yük türü.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -55,15 +55,15 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Zamanlayıcı](#ctor)|Fazla Yüklendi. Oluşturan bir `timer` belirli bir ileti belirtilen bir zaman aralığından sonra ateşlenir ileti bloğu.|  
-|[~ timer yok Edicisi](#dtor)|Bozar bir `timer` ileti bloğu.|  
+|[Zamanlayıcı](#ctor)|Fazla Yüklendi. Oluşturur bir `timer` belirli bir ileti belirtilen bir süre sonra ateşlenir ileti bloğu.|  
+|[~ timer yok Edicisi](#dtor)|Yok eder bir `timer` ileti bloğu.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Duraklat](#pause)|Durakları `timer` ileti bloğu. Yinelenen ise `timer` blok Mesajlaşma, bir sonraki yeniden başlatılmadan `start()` çağırın. Yinelenmeyen için zamanlayıcılar, bu etkisi aynı olarak bir `stop` çağırın.|  
-|[Başlat](#start)|Başlatır `timer` ileti bloğu. Bundan sonra milisaniye belirtilen sayıda çağrılır, belirtilen değer yayılır aşağı akış olarak bir `message`.|  
+|[Duraklat](#pause)|Durakları `timer` ileti bloğu. Yinelenen ise `timer` blok Mesajlaşma, bir sonraki başlatılmadan `start()` çağırın. Yinelenmeyen için zamanlayıcıları, bu aynı etkiye sahiptir olarak bir `stop` çağırın.|  
+|[Başlangıç](#start)|Başlar `timer` ileti bloğu. Belirtilen sayıda milisaniye sonra bu çağrılır, belirtilen değeri yayılan aşağı akış olarak bir `message`.|  
 |[Durdur](#stop)|Durakları `timer` ileti bloğu.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
@@ -71,15 +71,15 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[accept_message](#accept_message)|Bu tarafından sunulan bir iletiyi kabul `timer` çağırana sahipliğini aktarma ileti bloğu.|  
-|[consume_message](#consume_message)|Daha önce tarafından sunulan bir ileti tüketir `timer` ve çağırana sahipliğini aktarma hedef tarafından ayrılmış.|  
-|[link_target_notification](#link_target_notification)|Yeni bir hedef için bağlayana olduğunu bildiren bir geri çağırma `timer` ileti bloğu.|  
-|[propagate_to_any_targets](#propagate_to_any_targets)|Tarafından üretilen ileti sunmaya çalışır `timer` tüm bağlı hedef blok.|  
-|[release_message](#release_message)|Bir önceki iletiyi ayırma serbest bırakır. (Geçersiz kılmaları [source_block::release_message](source-block-class.md#release_message).)|  
-|[reserve_message](#reserve_message)|Daha önce bu tarafından sunulan bir ileti ayırır `timer` ileti bloğu. (Geçersiz kılmaları [source_block::reserve_message](source-block-class.md#reserve_message).)|  
-|[resume_propagation](#resume_propagation)|Bir ayırma serbest bırakıldıktan sonra yayma sürdürür. (Geçersiz kılmaları [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
+|[consume_message](#consume_message)|Daha önce tarafından sunulan iletiyi tüketir `timer` ve çağırana sahipliğini aktarma hedefi tarafından ayrılmış.|  
+|[link_target_notification](#link_target_notification)|Yeni bir hedef için bağlandı olduğunu bildiren bir geri çağırma `timer` ileti bloğu.|  
+|[propagate_to_any_targets](#propagate_to_any_targets)|Tarafından üretilen ileti sunmaya çalışır `timer` bağlantılı hedeflere tüm blok.|  
+|[release_message](#release_message)|Bir önceki ileti ayırma serbest bırakır. (Geçersiz kılmaları [source_block::release_message](source-block-class.md#release_message).)|  
+|[reserve_message](#reserve_message)|Daha önce bu tarafından sunulan bir iletiyi ayırdıktan `timer` ileti bloğu. (Geçersiz kılmaları [source_block::reserve_message](source-block-class.md#reserve_message).)|  
+|[resume_propagation](#resume_propagation)|Rezervasyon piyasaya sürüldükten sonra yayma sürdürür. (Geçersiz kılmaları [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [zaman uyumsuz ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).  
+ Daha fazla bilgi için [zaman uyumsuz ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [Isource](isource-class.md)  
@@ -102,45 +102,45 @@ virtual message<T>* accept_message(runtime_object_identity _MsgId);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_MsgId`  
- `runtime_object_identity` Sunulan, `message` nesnesi.  
+*_MsgId*<br/>
+`runtime_object_identity` Sunulan, `message` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi `message` çağıran şimdi sahipliği var. nesne.  
+ Bir işaretçi `message` nesne arayan sahipliğini artık sahiptir.  
   
 ##  <a name="consume_message"></a> consume_message 
 
- Daha önce tarafından sunulan bir ileti tüketir `timer` ve çağırana sahipliğini aktarma hedef tarafından ayrılmış.  
+ Daha önce tarafından sunulan iletiyi tüketir `timer` ve çağırana sahipliğini aktarma hedefi tarafından ayrılmış.  
   
 ```
 virtual message<T>* consume_message(runtime_object_identity _MsgId);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_MsgId`  
- `runtime_object_identity` , `message` Kullanılan nesne.  
+*_MsgId*<br/>
+`runtime_object_identity` , `message` Kullanılan nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi `message` çağıran şimdi sahipliği var. nesne.  
+ Bir işaretçi `message` nesne arayan sahipliğini artık sahiptir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Benzer şekilde `accept`, her zaman için yapılan bir çağrı tarafından öncesinde ancak `reserve`.  
+ Benzer şekilde `accept`, ancak her zaman bir çağrı tarafından öncesinde `reserve`.  
   
 ##  <a name="link_target_notification"></a> link_target_notification 
 
- Yeni bir hedef için bağlayana olduğunu bildiren bir geri çağırma `timer` ileti bloğu.  
+ Yeni bir hedef için bağlandı olduğunu bildiren bir geri çağırma `timer` ileti bloğu.  
   
 ```
 virtual void link_target_notification(_Inout_ ITarget<T>* _PTarget);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PTarget`  
- Yeni bağlantılı hedefi için bir işaretçi.  
+*_PTarget*<br/>
+Yeni bağlantılı hedefi için bir işaretçi.  
   
 ##  <a name="pause"></a> Duraklat 
 
- Durakları `timer` ileti bloğu. Yinelenen ise `timer` blok Mesajlaşma, bir sonraki yeniden başlatılmadan `start()` çağırın. Yinelenmeyen için zamanlayıcılar, bu etkisi aynı olarak bir `stop` çağırın.  
+ Durakları `timer` ileti bloğu. Yinelenen ise `timer` blok Mesajlaşma, bir sonraki başlatılmadan `start()` çağırın. Yinelenmeyen için zamanlayıcıları, bu aynı etkiye sahiptir olarak bir `stop` çağırın.  
   
 ```
 void pause();
@@ -148,7 +148,7 @@ void pause();
   
 ##  <a name="propagate_to_any_targets"></a> propagate_to_any_targets 
 
- Tarafından üretilen ileti sunmaya çalışır `timer` tüm bağlı hedef blok.  
+ Tarafından üretilen ileti sunmaya çalışır `timer` bağlantılı hedeflere tüm blok.  
   
 ```
 virtual void propagate_to_any_targets(_Inout_opt_ message<T> *);
@@ -156,45 +156,45 @@ virtual void propagate_to_any_targets(_Inout_opt_ message<T> *);
   
 ##  <a name="release_message"></a> release_message 
 
- Bir önceki iletiyi ayırma serbest bırakır.  
+ Bir önceki ileti ayırma serbest bırakır.  
   
 ```
 virtual void release_message(runtime_object_identity _MsgId);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_MsgId`  
- `runtime_object_identity` , `message` Yayımlanan nesne.  
+*_MsgId*<br/>
+`runtime_object_identity` , `message` Yayımlanan nesne.  
   
 ##  <a name="reserve_message"></a> reserve_message 
 
- Daha önce bu tarafından sunulan bir ileti ayırır `timer` ileti bloğu.  
+ Daha önce bu tarafından sunulan bir iletiyi ayırdıktan `timer` ileti bloğu.  
   
 ```
 virtual bool reserve_message(runtime_object_identity _MsgId);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_MsgId`  
- `runtime_object_identity` , `message` Ayrılan nesne.  
+*_MsgId*<br/>
+`runtime_object_identity` , `message` Ayrılan nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` İletiyi başarıyla ayrıldı, `false` Aksi takdirde.  
+ `true` iletinin başarıyla ayrıldı, `false` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sonra `reserve` çağrılır, döndürürse `true`, her iki `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.  
+ Sonra `reserve` çağrılır, döndürürse `true`, ya da `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.  
   
 ##  <a name="resume_propagation"></a> resume_propagation 
 
- Bir ayırma serbest bırakıldıktan sonra yayma sürdürür.  
+ Rezervasyon piyasaya sürüldükten sonra yayma sürdürür.  
   
 ```
 virtual void resume_propagation();
 ```  
   
-##  <a name="start"></a> Başlat 
+##  <a name="start"></a> Başlangıç 
 
- Başlatır `timer` ileti bloğu. Bundan sonra milisaniye belirtilen sayıda çağrılır, belirtilen değer yayılır aşağı akış olarak bir `message`.  
+ Başlar `timer` ileti bloğu. Belirtilen sayıda milisaniye sonra bu çağrılır, belirtilen değeri yayılan aşağı akış olarak bir `message`.  
   
 ```
 void start();
@@ -210,7 +210,7 @@ void stop();
   
 ##  <a name="ctor"></a> Zamanlayıcı 
 
- Oluşturan bir `timer` belirli bir ileti belirtilen bir zaman aralığından sonra ateşlenir ileti bloğu.  
+ Oluşturur bir `timer` belirli bir ileti belirtilen bir süre sonra ateşlenir ileti bloğu.  
   
 ```
 timer(
@@ -235,30 +235,30 @@ timer(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Ms`  
- Başlatmak için aşağı yayılması belirtilen ileti çağrısı sonra geçmesi gereken milisaniye sayısı.  
+*_Ms*<br/>
+Başlamak için aşağı yönde dağıtılmasını belirtilen iletiyi çağrısından sonra geçmesi gereken milisaniye sayısını.  
   
- `value`  
- Zamanlayıcı sona erdiğinde aşağı yayılır değeri.  
+*value*<br/>
+Zamanlayıcı sona erdiğinde aşağı yönde aktarılacaktır değeri.  
   
- `_PTarget`  
- Zamanlayıcı kendi ileti yayılır hedefi.  
+*_PTarget*<br/>
+Hedef için Zamanlayıcıyı iletisini yayılır.  
   
- `_Repeating`  
- TRUE ise, Zamanlayıcı düzenli aralıklarla ateşlenir gösterir her `_Ms` milisaniye.  
+*_Repeating*<br/>
+TRUE ise, Zamanlayıcıyı düzenli aralıklarla ateşlenir gösterir. her `_Ms` milisaniye.  
   
- `_Scheduler`  
- `Scheduler` İçinde yayma görev için nesne `timer` ileti bloğu zamanlandığı zamanlandı.  
+*_Scheduler*<br/>
+`Scheduler` İçinde Yayma görevi için nesne `timer` ileti bloğu zamanlandığı zamanlandı.  
   
- `_ScheduleGroup`  
- `ScheduleGroup` İçinde yayma görev için nesne `timer` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından kapsanan.  
+*_ScheduleGroup*<br/>
+`ScheduleGroup` İçinde Yayma görevi için nesne `timer` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından belirtilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çalışma zamanı belirtmezseniz varsayılan Zamanlayıcısı'nı kullanıyorsa `_Scheduler` veya `_ScheduleGroup` parametreleri.  
+ Çalışma zamanı belirtmezseniz varsayılan Zamanlayıcı kullanıyorsa `_Scheduler` veya `_ScheduleGroup` parametreleri.  
   
 ##  <a name="dtor"></a> ~ timer 
 
- Bozar bir `timer` ileti bloğu.  
+ Yok eder bir `timer` ileti bloğu.  
   
 ```
 ~timer();

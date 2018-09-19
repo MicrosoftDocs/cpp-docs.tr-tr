@@ -39,35 +39,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a469ed8b5e6f026eecf5d8df88eee12b0e0fe74
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9d11f6fd60cb85406f729fc337054858fbed73f3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389361"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100490"
 ---
 # <a name="data-type-mappings"></a>Veri Türü Eşlemeleri
-Bu veri türü eşlemeleri TCHAR içinde tanımlanmıştır. H ve olup olmadığına göre değişir sabiti `_UNICODE` veya `_MBCS` programınıza tanımlandı.  
-  
- İlgili bilgi için bkz: [kullanarak TCHAR. _MBCS Kodu ile H veri türleri](../text/using-tchar-h-data-types-with-mbcs-code.md).  
-  
-### <a name="generic-text-data-type-mappings"></a>Genel metin veri türü eşlemeleri  
-  
-|Genel metin<br /><br /> veri türü adı|SBCS (_UNICODE,<br /><br /> _MBCS değil<br /><br /> tanımlanan)|_MBCS<br /><br /> tanımlanmış|_UNICODE<br /><br /> tanımlanmış|  
-|--------------------------------------|----------------------------------------------------|------------------------|---------------------------|  
-|`_TCHAR`|`char`|`char`|`wchar_t`|  
-|`_tfinddata_t`|`_finddata_t`|`_finddata_t`|`_wfinddata_t`|  
-|`_tfinddata64_t`|`__finddata64_t`|`__finddata64_t`|`__wfinddata64_t`|  
-|`_tfinddatai64_t`|`_finddatai64_t`|`_finddatai64_t`|`_wfinddatai64_t`|  
-|`_TINT`|`int`|`int`|`wint_t`|  
-|`_TSCHAR`|`signed char`|`signed char`|`wchar_t`|  
-|`_TUCHAR`|`unsigned char`|`unsigned char`|`wchar_t`|  
-|`_TXCHAR`|`char`|`unsigned char`|`wchar_t`|  
-|`_T` Veya `_TEXT`|(Önişlemci tarafından kaldırılır) herhangi bir etkisi|(Önişlemci tarafından kaldırılır) herhangi bir etkisi|`L` (karakter veya dize Unicode karşılığı aşağıdaki dönüştürür)|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md)   
- [Sabit ve Global değişken eşlemeleri](../c-runtime-library/constant-and-global-variable-mappings.md)   
- [Rutin eşlemeler](../c-runtime-library/routine-mappings.md)   
- [Örnek genel metin programı](../c-runtime-library/a-sample-generic-text-program.md)   
- [Genel Metin Eşlemelerini Kullanma](../c-runtime-library/using-generic-text-mappings.md)
+
+Bu veri türü eşlemeleri TCHAR içinde tanımlanır. H ve olup olmadığına göre bağlı sabiti `_UNICODE` veya `_MBCS` programınızda tanımlanmış.
+
+İlgili bilgiler için bkz. [TCHAR kullanarak. _MBCS Kodu ile saat veri türleri](../text/using-tchar-h-data-types-with-mbcs-code.md).
+
+### <a name="generic-text-data-type-mappings"></a>Genel metin veri türü eşlemeleri
+
+|Genel metin<br /><br /> veri türü adı|SBCS (_UNICODE,<br /><br /> _MBCS değil<br /><br /> tanımlanan)|_MBCS<br /><br /> tanımlanmış|_UNICODE<br /><br /> tanımlanmış|
+|--------------------------------------|----------------------------------------------------|------------------------|---------------------------|
+|`_TCHAR`|`char`|`char`|`wchar_t`|
+|`_tfinddata_t`|`_finddata_t`|`_finddata_t`|`_wfinddata_t`|
+|`_tfinddata64_t`|`__finddata64_t`|`__finddata64_t`|`__wfinddata64_t`|
+|`_tfinddatai64_t`|`_finddatai64_t`|`_finddatai64_t`|`_wfinddatai64_t`|
+|`_TINT`|`int`|`int`|`wint_t`|
+|`_TSCHAR`|`signed char`|`signed char`|`wchar_t`|
+|`_TUCHAR`|`unsigned char`|`unsigned char`|`wchar_t`|
+|`_TXCHAR`|`char`|`unsigned char`|`wchar_t`|
+|`_T` veya `_TEXT`|Herhangi bir etkisi (önişlemci tarafından kaldırıldı)|Herhangi bir etkisi (önişlemci tarafından kaldırıldı)|`L` (aşağıdaki karakter veya Unicode çözümlemesiyle dizeye dönüştürür)|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Genel Metin Eşlemeleri](../c-runtime-library/generic-text-mappings.md)<br/>
+[Sabit ve Global Değişken Eşlemeleri](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
+[Rutin Eşlemeler](../c-runtime-library/routine-mappings.md)<br/>
+[Örnek Genel Metin Programı](../c-runtime-library/a-sample-generic-text-program.md)<br/>
+[Genel Metin Eşlemelerini Kullanma](../c-runtime-library/using-generic-text-mappings.md)

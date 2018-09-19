@@ -16,21 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c11c897f35a6c395c4bc6ee6a64be51fa810911b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b9292f54fee467a5f8d01202b6ed7ca991b52d43
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33270670"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096468"
 ---
 # <a name="compiler-error-c3888"></a>Derleyici Hatası C3888
-'name': Bu değişmez değer veri üye ile ilişkili const ifade C + tarafından desteklenmiyor +/ CLI  
-  
- *Adı* ile bildirilen veri üyesi [değişmez değer](../../windows/literal-cpp-component-extensions.md) anahtar sözcüğü derleyici desteği olmayan bir değerle başlatılır. Derleyici yalnızca sabit Entegral, numaralandırma veya dize türlerini destekler. Olası nedeni **C3888** hata: veri üyesi bir bayt dizisi başlatılır.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
-1.  Bildirilen değişmez değer veri üyesi desteklenen bir tür olup olmadığını denetleyin.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Değişmez değer](../../windows/literal-cpp-component-extensions.md)
+
+'name': Bu sabit değerli veri üyesiyle ilişkili const ifadesi C + tarafından desteklenmiyor +/ CLI
+
+*Adı* ile bildirilen veri üyesi [değişmez değer](../../windows/literal-cpp-component-extensions.md) anahtar sözcüğü, derleyici desteği olmayan bir değer ile başlatılır. Derleyici, yalnızca sabit integral, enum veya dize türleri destekler. Olası nedeni **C3888** hatadır veri üyesi bir bayt dizisi ile başlatılır.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+1. Desteklenen bir türde bildirilen sabit değerli veri üyesi olduğundan emin olun.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[değişmez değer](../../windows/literal-cpp-component-extensions.md)

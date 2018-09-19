@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53b3759a5fec4b072f9a9b300670d61cb0d101c5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d93aa28d0cef3c07fd469349d485c4009fa4771d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226685"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091068"
 ---
 # <a name="fatal-error-c1311"></a>Önemli hata C1311
-COFF biçimi statik olarak 'var' numara miktarında bir adresi ile başlatamıyor  
-  
- Değeri derleme zamanında bilinmiyor adres türü dört bayt'tan küçük, depolama alanına sahip bir değişken için statik olarak atanamaz.  
-  
- Bu hata, aksi takdirde kodu oluşabilir geçerli C++.  
-  
- Aşağıdaki örnek C1311 neden olabilecek bir koşul gösterir.  
-  
-```  
-char c = (char)"Hello, world";   // C1311  
-char *d = (char*)"Hello, world";   // OK  
+
+COFF biçimi 'var' numara miktarında bir adresi statik olarak başlatılamıyor
+
+Değeri derleme zamanında bilinen olmayan bir adresi statik olarak küçüktür dört baytlık depolama türü olan bir değişkene atanamaz.
+
+Kod üzerinde değilse bu hata oluşabilir geçerli C++.
+
+Aşağıdaki örnek, C1311 neden olabilecek bir durumu gösterir.
+
+```
+char c = (char)"Hello, world";   // C1311
+char *d = (char*)"Hello, world";   // OK
 ```

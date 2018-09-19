@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: faa258b7dbd965f0aaa76d4b60bb5c043df1187f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cab4d812c91239f277dbacede6db43f669908b0a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291170"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099635"
 ---
 # <a name="compiler-warning-level-4-c4152"></a>Derleyici Uyarısı (düzey 4) C4152
-Standart olmayan uzantısı, ifadede işlevi/veri ptr dönüştürme  
-  
- Bir işlev işaretçisi için veya bir veri işaretçi dönüştürülür. Bu dönüştürme Microsoft Uzantıları (/Ze) altında ancak ANSI c altında izin verilir
+
+Standart olmayan uzantı, ifadede işlev/veri ptr dönüştürme
+
+Bir işlev işaretçisi için veya veri işaretçisine dönüştürülür. Bu dönüştürme Microsoft Uzatmaları (/Ze) altında ancak ANSI c altında izin verilir

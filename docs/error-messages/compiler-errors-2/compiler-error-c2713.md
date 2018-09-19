@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3eab5ee25df49355e82cede0f03d633f13ac20bf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a40c248226cd8f863bb099d16272dfa149f1dc2c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33235724"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102721"
 ---
 # <a name="compiler-error-c2713"></a>Derleyici Hatası C2713
-yalnızca bir form işlevi izin verilen özel durum işleme  
-  
- Yapılandırılmış özel durum işleme kullanamazsınız (`__try`/`__except`) ve C++ özel durum işleme (`try`/`catch`) aynı işlevde.
+
+yalnızca bir form işlev izin verilen özel durum işleme
+
+Yapılandırılmış özel durum işleme kullanamazsınız (`__try`/`__except`) ve C++ özel durum işleme (`try`/`catch`) aynı işlevde.

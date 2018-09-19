@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e8a23eda6aa263cdfbf0ef7b4fb777f4158dd06
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 56262d7f3b3e1b21c4267b171baabb11d8311b18
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226518"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096070"
 ---
 # <a name="compiler-error-c2516"></a>Derleyici Hatası C2516
-'name': yasal bir taban sınıfı değil  
-  
- Sınıfı tarafından tanımlanan bir tür adı türetilmiş bir `typedef` deyimi.  
-  
- Aşağıdaki örnek C2516 oluşturur:  
-  
-```  
-// C2516.cpp  
-typedef unsigned long ulong;  
-class C : public ulong {}; // C2516  
+
+'name': geçerli bir taban sınıf değil
+
+Sınıfı tarafından tanımlanan bir tür adı türetilmiş bir `typedef` deyimi.
+
+Aşağıdaki örnek, C2516 oluşturur:
+
+```
+// C2516.cpp
+typedef unsigned long ulong;
+class C : public ulong {}; // C2516
 ```

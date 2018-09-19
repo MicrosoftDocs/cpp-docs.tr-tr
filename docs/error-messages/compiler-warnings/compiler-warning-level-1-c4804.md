@@ -16,31 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 677899230b2475c80f9bdd461a0c79740c4d3bec
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fd1d1659ad6c8716cebf37a99f234af7b41f5745
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33286987"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094812"
 ---
 # <a name="compiler-warning-level-1-c4804"></a>Derleyici Uyarısı (düzey 1) C4804
-'işlemi': işlem ' bool' türünün güvensiz kullanımı  
-  
- Bu uyarı için kullanıldığında bir `bool` değişken veya beklenmeyen bir şekilde değer. Negatif birli işleç gibi işleçlerin kullanırsanız, örneğin, C4804 oluşturulur (**-**) veya tamamlama işleci (`~`). Derleyici ifadeyi hesaplar.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4804 oluşturur:  
-  
-```  
-// C4804.cpp  
-// compile with: /W1  
-  
-int main()  
-{  
-   bool i = true;  
-   if (-i)   // C4804, remove the '-' to resolve  
-   {  
-      i = false;  
-   }  
-}  
+
+'operation': işlemde ' bool' türü güvensiz kullanımı
+
+Bu uyarı için kullanıldığında bir `bool` değişkeni veya beklenmedik bir şekilde değer. Negatif birli işleç gibi işleçler kullanın, örneğin, C4804 oluşturulur (**-**) veya Tamamlayıcı işleci (`~`). Derleyici, ifadeyi değerlendirir.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4804 oluşturur:
+
+```
+// C4804.cpp
+// compile with: /W1
+
+int main()
+{
+   bool i = true;
+   if (-i)   // C4804, remove the '-' to resolve
+   {
+      i = false;
+   }
+}
 ```

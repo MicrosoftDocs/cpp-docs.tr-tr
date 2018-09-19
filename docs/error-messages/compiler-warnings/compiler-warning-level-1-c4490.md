@@ -16,34 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: baf6c10d50b9b6dd7a41df195dd0b1e39683c98c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6d6bda2aaf729c2d4b8fb29dcbeaff428ed79d78
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33285723"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090873"
 ---
 # <a name="compiler-warning-level-1-c4490"></a>Derleyici Uyarısı (düzey 1) C4490
-'override': geçersiz kılma tanımlayıcısı; yanlış kullanımı 'function' temel ref sınıf yöntemi eşleşmiyor.  
-  
- Bir geçersiz kılma tanımlayıcısı yanlış kullanıldı. Örneğin, bir arabirim işlevi geçersiz kılmaz, uyguladıktan.  
-  
- Daha fazla bilgi için bkz: [geçersiz kılma tanımlayıcıları](../../windows/override-specifiers-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4490 oluşturur.  
-  
-```  
-// C4490.cpp  
-// compile with: /clr /c /W1  
-  
-interface struct IFace {  
-   void Test();  
-};  
-  
-ref struct Class1 : public IFace {  
-   virtual void Test() override {}   // C4490  
-   // try the following line instead  
-   // virtual void Test() {}  
-};  
+
+'override': geçersiz kılma belirticisi; yanlış kullanımı 'function' taban başvuru sınıfı yöntemiyle eşleşmiyor
+
+Geçersiz kılma tanımlayıcısı yanlış kullanıldı. Örneğin, bir arabirim işlevi geçersiz, uyguladıktan.
+
+Daha fazla bilgi için [geçersiz kılma tanımlayıcıları](../../windows/override-specifiers-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4490 oluşturur.
+
+```
+// C4490.cpp
+// compile with: /clr /c /W1
+
+interface struct IFace {
+   void Test();
+};
+
+ref struct Class1 : public IFace {
+   virtual void Test() override {}   // C4490
+   // try the following line instead
+   // virtual void Test() {}
+};
 ```

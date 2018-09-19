@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bc23270d70a2fec1c0ac9cc5f6b96541085cfc6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0feaad0e0eb1b9dc5ee6c5b2f47e8f2a425b6d99
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249110"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096476"
 ---
 # <a name="compiler-error-c3283"></a>Derleyici Hatası C3283
-'type': arabirim örnek oluşturucu olamaz  
-  
- Bir CLR [arabirimi](../../windows/interface-class-cpp-component-extensions.md) örnek oluşturucu sahip olamaz.  Statik Oluşturucu izin verilir.  
-  
- Aşağıdaki örnek C3283 oluşturur:  
-  
-```  
-// C3283.cpp  
-// compile with: /clr  
-interface class I {  
-   I();   // C3283  
-};  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C3283b.cpp  
-// compile with: /clr /c  
-interface class I {  
-   static I(){}  
-};  
+
+'type': arabirimin örnek oluşturucusu olamaz
+
+Bir CLR [arabirimi](../../windows/interface-class-cpp-component-extensions.md) örnek oluşturucusu olamaz.  Statik Oluşturucu izin verilir.
+
+Aşağıdaki örnek, C3283 oluşturur:
+
+```
+// C3283.cpp
+// compile with: /clr
+interface class I {
+   I();   // C3283
+};
+```
+
+Olası çözüm:
+
+```
+// C3283b.cpp
+// compile with: /clr /c
+interface class I {
+   static I(){}
+};
 ```

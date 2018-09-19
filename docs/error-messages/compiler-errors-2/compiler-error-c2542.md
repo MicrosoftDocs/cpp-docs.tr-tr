@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 039d5853da3876dbe079ff1e4a38be4afdb34bd6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 81f6f9aa48a4a0ee1a0b414879ae3673c13529fe
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229085"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097254"
 ---
 # <a name="compiler-error-c2542"></a>Derleyici Hatası C2542
-'tanımlayıcısı': sınıf nesnesi sahip başlatma için oluşturucu yok  
-  
- Hiçbir oluşturucusu başlatma eşleşen bir parametre listesi vardır.  
-  
- Bu hata yanlış başlatma parametreleri neden olabilir.
+
+'identifier': sınıf nesnesinde başlatma bir oluşturucusu yok
+
+Hiçbir Oluşturucu ile başlatma eşleşen bir parametre listesi yoktur.
+
+Bu hatanın nedeni yanlış başlatma parametreleri.

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acb946e7032cb4b6c04f715563e6101e03770308
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9b26546a3cf7612b32eb6a464ca21abafafb4cd9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243267"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102859"
 ---
 # <a name="compiler-error-c2994"></a>Derleyici Hatası C2994
-Şablon parametresi listesinde adlandırılmamış sınıfı  
-  
- Kullanamazsınız `class` anahtar sözcüğü bir sınıf adı belirtmeden şablon bağımsız değişken olarak.
+
+Şablon parametre listesinde adsız sınıf
+
+Kullanamazsınız `class` anahtar sözcüğü bir sınıf adı belirtmeden bir şablon bağımsız değişkeni olarak.

@@ -19,70 +19,63 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3608e40db2aa3eb0c49942de278c1d428e26689f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e4ceed8fa38ae2b6801fa13c65e54f1cd1cc711d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32385103"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097698"
 ---
 # <a name="c-floating-point-constants"></a>C Kayan Nokta Sabitleri
-"Kayan nokta sabiti" temsil eden imzalı bir gerçek sayı ondalık bir sayıdır. İmzalı bir gerçek sayı gösterimini bir tamsayı bölümü, bir kesirli kısmını ve üs içerir. Kayan nokta sabitleri değiştirilemez kayan nokta değerlerini temsil edecek şekilde kullanın.  
-  
-## <a name="syntax"></a>Sözdizimi  
- *Floating sabiti point*:  
- &nbsp;&nbsp; *sabiti kesirli üs parçalı*<sub>kabul</sub> *kayan soneki*<sub>iptal et</sub>  
- &nbsp;&nbsp; *Kayan basamak dizisi üs bölümü-soneki*<sub>iptal et</sub>  
-  
- *sabiti kesirli*:  
- &nbsp;&nbsp; *basamak dizisi*<sub>kabul</sub> **.** *basamak dizisi*  
- &nbsp;&nbsp; *basamak dizisi***.**   
-  
- *Üs bölümü*:  
- &nbsp;&nbsp; **e***oturum*<sub>kabul</sub> *basamak dizisi*   
- &nbsp;&nbsp; **E***oturum*<sub>kabul</sub> *basamak dizisi*   
-  
- *oturum* : biri  
- &nbsp;&nbsp; **+ -**  
-  
- *basamak dizisi*:  
- &nbsp;&nbsp; *Basamak*  
- &nbsp;&nbsp; *basamak dizisi basamak*  
-  
- *Kayan soneki* : biri  
- &nbsp;&nbsp; **f l F M**  
-  
- Rakamları (değeri tamsayı kısmını) ondalık ayırıcıdan önce veya basamak (kesirli kısmı) ondalık ayırıcıdan sonra ancak ikisi atlayabilirsiniz. Yalnızca bir üs eklerseniz, bir ondalık ayırıcısı bırakabilirsiniz. Hiçbir boşluk karakter, rakam veya karakter sabiti ayırabilirsiniz.  
-  
- Aşağıdaki örneklerde, kayan nokta sabitleri ve ifadeler bazı formları gösterilmektedir:  
-  
-```  
-15.75  
-1.575E1   /* = 15.75   */  
-1575e-2   /* = 15.75   */  
--2.5e-3   /* = -0.0025 */  
-25E-4     /* =  0.0025 */  
-```  
-  
- Bir eksi işareti koyarak sürece kayan nokta sabitleri pozitif (**-**). Bu durumda, eksi işareti birli aritmetik değilleme işleci kabul edilir. Kayan nokta sabitleri türüne sahip `float`, `double`, veya `long double`.  
-  
- Kayan nokta sabiti olmadan bir **f**, **F**, **l**, veya **L** soneki türüne sahip `double`. Varsa harf **f** veya **F** sahip sabit türü soneki eklenir `float`. Harfinin sonekine varsa **l** veya **L**, türüne sahip `long double`. Örneğin:  
-  
-```  
-100L  /* Has type long double  */  
-100F  /* Has type float        */  
-```  
-  
- Microsoft C Derleyici dahili olarak temsil eden Not `long double` türle aynı `double`. Bkz: [temel türleri depolama](../c-language/storage-of-basic-types.md) türü hakkında bilgi için `double`, `float`, ve `long double`.  
-  
- Aşağıdaki örneklerde gösterildiği gibi kayan nokta sabiti tamsayı bölümünü atlayabilirsiniz. .75 numarası aşağıdakiler de dahil olmak üzere birçok yolla ifade edilebilir:  
-  
-```  
-.0075e2  
-0.075e1  
-.075e1  
-75e-2  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Sabitleri](../c-language/c-constants.md)
+
+"Kayan noktalı sabit" temsil eden imzalı bir gerçek sayı bir ondalık sayıdır. Bir tamsayı kısmı, kesirli bölümü ve bir üs imzalı bir gerçek sayı gösterimini içerir. Kayan nokta sabitleri değiştirilemez kayan nokta değerlerini temsil edecek şekilde kullanın.
+
+## <a name="syntax"></a>Sözdizimi
+
+*Kayan noktaya sabiti*: &nbsp; &nbsp; *sabiti kesirli üs bölümü*<sub>iyileştirilmiş</sub> *kayan soneki* <sub>iyileştirilmiş</sub> &nbsp; &nbsp; *kayan basamak dizisi üs bölümü-soneki*<sub>iyileştirilmiş</sub>
+
+*Sabit kesirli*: &nbsp; &nbsp; *basamak dizisi*<sub>iyileştirilmiş</sub> **.** *basamak dizisi* &nbsp; &nbsp; *basamak dizisi***.** 
+
+*Üs bölümü*: &nbsp; &nbsp; **e***oturum*<sub>iyileştirilmiş</sub> *basamak dizisi* &nbsp; &nbsp; **E***oturum*<sub>iyileştirilmiş</sub> *basamak dizisi* 
+
+*oturum* : biri &nbsp; &nbsp; **+ -**
+
+*basamak dizisi*: &nbsp; &nbsp; *basamak* &nbsp; &nbsp; *basamak dizisi basamak*
+
+*Kayan soneki* : biri &nbsp; &nbsp; **f m F M**
+
+Rakamları ondalık (değer tamsayı kısmını) önce veya basamak (kesirli kısmı) ondalık ayırıcıdan sonra ancak ikisi atlayabilirsiniz. Bir üssü içeriyorsa ondalık bırakabilirsiniz. Hiçbir boşluk karakterleri rakam veya karakter sabitinin ayırabilirsiniz.
+
+Aşağıdaki örnekler, kayan nokta sabitleri ve ifadeler bazı forms gösterir:
+
+```
+15.75
+1.575E1   /* = 15.75   */
+1575e-2   /* = 15.75   */
+-2.5e-3   /* = -0.0025 */
+25E-4     /* =  0.0025 */
+```
+
+Bunlar bir eksi işareti tarafından öncelenen sürece kayan nokta sabitleri pozitif (**-**). Bu durumda, eksi işareti birli aritmetik olumsuzlama işleci olarak kabul edilir. Kayan nokta sabitleri `float`, `double`, veya `long double`.
+
+Bir kayan noktalı sabit olmayan bir **f**, **F**, **l**, veya **L** soneki türüne sahip `double`. Varsa harfi **f** veya **F** soneki sabiti türüne sahip olan `float`. Harfinin olup olmadığını **l** veya **L**, türüne sahip `long double`. Örneğin:
+
+```
+100L  /* Has type long double  */
+100F  /* Has type float        */
+```
+
+Microsoft C derleyicisi dahili olarak temsil eden Not `long double` türle aynı `double`. Bkz: [temel türlerin depolanması](../c-language/storage-of-basic-types.md) türü hakkında bilgi için `double`, `float`, ve `long double`.
+
+Aşağıdaki örneklerde gösterildiği gibi kayan noktalı sabit tamsayı kısmını atlayabilirsiniz. Aşağıdakiler dahil olmak üzere birçok şekilde.75 sayısı belirtilebilir:
+
+```
+.0075e2
+0.075e1
+.075e1
+75e-2
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Sabitleri](../c-language/c-constants.md)

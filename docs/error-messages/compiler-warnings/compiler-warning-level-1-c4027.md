@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cbad35c43f602dcaa83f550db887275db3e5213c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b919eeece5529d1914fadf5724088e3e64e73db9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272249"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089521"
 ---
 # <a name="compiler-warning-level-1-c4027"></a>Derleyici Uyarısı (düzey 1) C4027
-biçimsel parametresi listesini olmadan bildirilen işlevi  
-  
- İşlev bildirimi resmi parametresiz ancak resmi parametreleri işlevi tanımında veya çağrıda gerçek parametreleri vardır. Sonraki çağrılar bu işlev, işlev işlev tanımının veya çağrı bulunan türlerinin gerçek parametreleri alır varsayalım.
+
+işlev biçimsel parametre listesi olmadan bildirildi
+
+İşlev bildirimi hiç biçimsel parametre ancak işlev tanımında biçimsel parametre ya da bir çağrıda gerçek parametre vardır. Bu işleve yapılan sonraki çağrılar, işlev işlev tanımı veya çağrı bulunan türleri gerçek parametre sürdüğünü varsayalım.

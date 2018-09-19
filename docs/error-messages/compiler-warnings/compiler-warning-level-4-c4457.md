@@ -16,24 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80eac0ade54df1626e993bfed12468b2aa34402f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 62232a814bed47f8b6a5041d20e6f37776abffe8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300982"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093538"
 ---
 # <a name="compiler-warning-level-4-c4457"></a>Derleyici Uyarısı (düzey 4) C4457
-  
-> bildirimi '*tanımlayıcısı*' gizler işlev parametresi
-  
-Bildirimi *tanımlayıcısı* yerel kapsamda aynı adlı işlev parametresi bildirimi gizler. Bu uyarı, başvuran için bilmenizi sağlar *tanımlayıcısı* yerel kapsamında değil veya maksadınızı olmayabilir parametresi, yerel olarak bildirilen sürüme çözümleyin. Bu sorunu gidermek için yerel değişkenleri çakışmasını parametre adları adlarıyla size öneririz.  
-    
+
+> bildirimi '*tanımlayıcı*' işlev parametresini gizliyor
+
+Bildirimi *tanımlayıcı* yerel kapsamda aynı adlı işlevi parametre bildirimi gizler. Bu uyarı, başvuruları size sağlar *tanımlayıcı* yerel kapsamda değil amacınızla olmayabilir veya parametre, yerel olarak bildirilen sürümüne çözün. Bu sorunu çözmek için yerel değişkenler çakışmasını parametre adları adlarla size öneririz.
+
 ## <a name="example"></a>Örnek
-  
-Aşağıdaki örnek C4457 oluşturur çünkü parametresi `x` ve yerel değişken `x` içinde `member_fn` aynı ada sahip. Bu sorunu gidermek için yerel değişkenleri ve parametreleri için farklı adlar kullanın.  
-  
-```cpp  
+
+Aşağıdaki örnek C4457 oluşturur çünkü parametre `x` ve yerel değişkeni `x` içinde `member_fn` aynı ada sahip. Bu sorunu gidermek için yerel değişkenleri ve parametreleri için farklı adlar kullanın.
+
+```cpp
 // C4457_hide.cpp
 // compile with: cl /W4 /c C4457_hide.cpp
 
@@ -42,8 +42,8 @@ struct S {
         double a = 0;
         for (int x = 0; x < 10; ++x) {  // C4457
             a += x; // uses local x
-        } 
+        }
         a += x; // uses parameter x
     }
 } s;
-```  
+```

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe03ca53056a48d2c6104d86dd70c8c4ae31a2c6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1e14664a40057ff76bf69863f7b0b08bb0e63d5d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33273198"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105181"
 ---
 # <a name="compiler-warning-level-1-c4029"></a>Derleyici Uyarısı (düzey 1) C4029
-tanımından farklı bildirilen resmi parametre listesi  
-  
- İşlevi bildiriminde biçimsel parametresi türleri işlevi tanımında olanla kabul etmeyin. Derleyici tanımındaki parametre listesi kullanır.
+
+bildirilen biçimsel parametre listesi tanımdan farklı
+
+Bu işlev tanımında ile biçimsel parametre türleri işlev bildiriminde kabul etmeyin. Derleyici, parametre listesi tanımdan kullanır.

@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc095a32e5cb0d5a0bf240282e11c3fa3382ffe5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6e02f38044180c45e221099d2874b7f8ff48d62f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276649"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098452"
 ---
 # <a name="compiler-warning-level-1-c4129"></a>Derleyici Uyarısı (düzey 1) C4129
-'character': Tanınmayan karakteri kaçış sırası  
-  
- `character` İzleyen bir ters eğik çizgi (\\) bir karakter ya da dize sabiti geçerli kaçış sırası tanınmıyor. Ters eğik çizgi göz ardı ve değil yazdırılabilir. Ters eğik çizgi aşağıdaki karakter yazdırılır.  
-  
- Tek bir ters eğik çizgi yazdırmak için bir çift ters eğik çizgi belirtin (\\\\).  
-  
- C++ standart, bölüm 2.13.2'kaçış sıraları açıklanmaktadır.  
-  
- Aşağıdaki örnek C4129 oluşturur:  
-  
-```  
-// C4129.cpp  
-// compile with: /W1  
-int main() {  
-   char array1[] = "\/709";   // C4129  
-   char array2[] = "\n709";   // OK  
-}  
+
+'character': Tanınmayan karakter kaçış sırası
+
+`character` Bir ters eğik çizgiden (\\) bir karakter veya dize sabiti geçerli kaçış dizisi olarak tanınmıyor. Ters eğik çizgi yok sayıldı ve yazdırılmaz. Ters eğik çizgiyi takip eden karakterden yazdırılır.
+
+Tek bir ters eğik çizgi yazdırmak için bir çift ters eğik çizgi belirtin (\\\\).
+
+Bölümünde 2.13.2 C++ standardı, kaçış dizileri açıklar.
+
+Aşağıdaki örnek, C4129 oluşturur:
+
+```
+// C4129.cpp
+// compile with: /W1
+int main() {
+   char array1[] = "\/709";   // C4129
+   char array2[] = "\n709";   // OK
+}
 ```

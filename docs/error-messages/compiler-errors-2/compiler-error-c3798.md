@@ -16,43 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da4ca81f2110ff1f76fdc9d0377234087a532017
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 217aa46cdd643361fed16f8a69de7f8ec75214fb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33269060"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099851"
 ---
 # <a name="compiler-error-c3798"></a>Derleyici Hatası C3798
-'tanımlayıcısı': özellik bildirimi geçersiz kılma tanımlayıcısı (yöntemleri yerine get/set özellik yerleştirilmelidir) sahip olamaz  
-  
- Bir özellik yanlış bildirildi. Daha fazla bilgi için bkz.  
-  
--   [property](../../windows/property-cpp-component-extensions.md)  
-  
--   [abstract](../../windows/abstract-cpp-component-extensions.md)  
-  
--   [sealed](../../windows/sealed-cpp-component-extensions.md)  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3798 oluşturur  
-  
-```  
-// C3798.cpp  
-// compile with: /clr /c  
-ref struct A {  
-   property int Prop_1 abstract;   // C3798  
-   property int Prop_2 sealed;   // C3798  
-  
-   // OK  
-   property int Prop_3 {  
-      virtual int get() abstract;  
-      virtual void set(int i) abstract;  
-   }  
-  
-   property int Prop_4 {  
-      virtual int get() sealed;  
-      virtual void set(int i) sealed;  
-   }  
-};  
+
+'belirticisi': özellik bildiriminde (yöntemler yerine alma/ayarlama özelliği yerleştirilmelidir) geçersiz kılma belirticisi olamaz
+
+Bir özellik yanlış olarak bildirildi. Daha fazla bilgi için bkz.
+
+- [property](../../windows/property-cpp-component-extensions.md)
+
+- [abstract](../../windows/abstract-cpp-component-extensions.md)
+
+- [sealed](../../windows/sealed-cpp-component-extensions.md)
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek C3798 oluşturur
+
+```
+// C3798.cpp
+// compile with: /clr /c
+ref struct A {
+   property int Prop_1 abstract;   // C3798
+   property int Prop_2 sealed;   // C3798
+
+   // OK
+   property int Prop_3 {
+      virtual int get() abstract;
+      virtual void set(int i) abstract;
+   }
+
+   property int Prop_4 {
+      virtual int get() sealed;
+      virtual void set(int i) sealed;
+   }
+};
 ```

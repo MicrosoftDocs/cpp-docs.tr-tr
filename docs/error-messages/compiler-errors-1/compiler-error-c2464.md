@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98949ba463f432666753cb39de37bb4bf8f7276f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ff74085364d6638772ab2376aace93fea741056b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226032"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103151"
 ---
 # <a name="compiler-error-c2464"></a>Derleyici Hatası C2464
-'tanımlayıcısı': 'new' bir başvuru ayırmak için kullanılamaz  
-  
- Başvuru kimliği ile ayrıldı `new` işleci. Başvuruları olmayan bellek nesneleri, bu nedenle `new` bir işaretçi bunları geri dönemezsiniz. Bir başvuru bildirmek için standart değişken bildirimi sözdizimini kullanın.  
-  
- Aşağıdaki örnek C2464 oluşturur:  
-  
-```  
-// C2464.cpp  
-int main() {  
-   new ( int& ir );   // C2464  
-}  
+
+'identifier': bir başvuru ayırmak için 'new' kullanılamaz
+
+Bir başvuru tanımlayıcısı ile ayrılan `new` işleci. Başvuru olmayan bellek nesneleri, bu nedenle `new` bir işaretçi kendisine döndüremez. Standart değişken bildirimi sözdizimi, bir başvuru bildirmek için kullanın.
+
+Aşağıdaki örnek, C2464 oluşturur:
+
+```
+// C2464.cpp
+int main() {
+   new ( int& ir );   // C2464
+}
 ```

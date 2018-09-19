@@ -37,12 +37,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c56f8fe711980e038281baca7618bff08f0d3d9b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 042fe1a446137546654c8f0cfd5ee9be8072dcee
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764949"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091835"
 ---
 # <a name="csnapinitemimpl-class"></a>Csnapınıtemımpl sınıfı
 
@@ -54,16 +54,16 @@ Bu sınıf, bir ek düğüm nesnesi uygulamak için yöntemler sağlar.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T, BOOL bIsExtension = FALSE>  
+template <class T, BOOL bIsExtension = FALSE>
 class ATL_NO_VTABLE CSnapInItemImpl : public CSnapInItem
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `CSnapInItemImpl`.
 
-*bIsExtension*  
+*bIsExtension*<br/>
 Nesnenin ek uzantı ise TRUE; Aksi durumda FALSE.
 
 ## <a name="members"></a>Üyeler
@@ -127,10 +127,10 @@ AddMenuItems(
 
 ### <a name="parameters"></a>Parametreler
 
-*piCallback*  
+*piCallback*<br/>
 [in] İşaretçi `IContextMenuCallback` için bağlam menüsü öğeleri eklemek.
 
-*pInsertionAllowed*  
+*pInsertionAllowed*<br/>
 [out içinde] Tanımlayan kullanılacak Microsoft Yönetim Konsolu MMC tanımlı menü öğesi ekleme noktaları. Bu, aşağıdaki bayrakların birleşimi olabilir:
 
 - Bağlam menüsünün üstünde CCM_INSERTIONALLOWED_TOP öğeleri eklenebilir.
@@ -141,7 +141,7 @@ AddMenuItems(
 
 - CCM_INSERTIONALLOWED_VIEW öğeleri araç Görünüm menüsü ya da sonuç bölmesi bağlam menüsü Görünüm alt eklenebilir.
 
-*Türü*  
+*Türü*<br/>
 [in] Nesne türünü belirtir. Aşağıdaki değerlerden biri olabilir:
 
 - Kapsam bölmesi bağlamının CCT_SCOPE veri nesnesi.
@@ -162,10 +162,10 @@ Command(long lCommandID, DATA_OBJECT_TYPES type);
 
 ### <a name="parameters"></a>Parametreler
 
-*lCommandID*  
+*lCommandID*<br/>
 [in] Menü öğesinin komut tanımlayıcısını belirtir.
 
-*Türü*  
+*Türü*<br/>
 [in] Nesne türünü belirtir. Aşağıdaki değerlerden biri olabilir:
 
 - Kapsam bölmesi bağlamının CCT_SCOPE veri nesnesi.
@@ -190,16 +190,16 @@ CreatePropertyPages(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpProvider*  
+*lpProvider*<br/>
 [in] İşaretçi `IPropertySheetCallback` arabirimi.
 
-*Tanıtıcı*  
+*Tanıtıcı*<br/>
 [in] Uygun veri sınıfa MMCN_PROPERTY_CHANGE bildirim iletisini yönlendirmek için kullanılan tanıtıcı belirtir.
 
-*pUnk*  
+*pUnk*<br/>
 [in] İşaretçi `IExtendPropertySheet` arabiriminde düğüm hakkında bağlam bilgisi içeren nesne.
 
-*Türü*  
+*Türü*<br/>
 [in] Nesne türünü belirtir. Aşağıdaki değerlerden biri olabilir:
 
 - Kapsam bölmesi bağlamının CCT_SCOPE veri nesnesi.
@@ -228,10 +228,10 @@ FillData(CLIPFORMAT cf, LPSTREAM pStream);
 
 ### <a name="parameters"></a>Parametreler
 
-*cf*  
+*cf*<br/>
 [in] Biçimi (metin, zengin metin veya OLE öğeleri ile zengin metin) Pano.
 
-*pStream*  
+*pStream*<br/>
 [in] Nesne verilerini içeren akış için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -250,10 +250,10 @@ GetResultViewType(
 
 ### <a name="parameters"></a>Parametreler
 
-*ppViewType*  
+*ppViewType*<br/>
 [out] Adres döndürülen görünüm türünün işaretçisi.
 
-*pViewOptions*  
+*pViewOptions*<br/>
 [out] Konsolu, sahip olan ek bileşenini tarafından belirtilen seçeneklerle sağlar MMC_VIEW_OPTIONS sabit listesi için işaretçi. Bu değer aşağıdakilerden biri olabilir:
 
 - MMC_VIEW_OPTIONS_NOLISTVIEWS = 0x00000001 belirten standart liste görünümü seçenekleri görüntülemesini ayarladıysa konsola **görünümü** menüsü. Ek bileşeni, kendi özel görünümlerinizi yalnızca sonuç görünümü bölmesinde görüntülenecek sağlar. Şu anda tanımlı olan tek seçenek bayrak budur.
@@ -270,7 +270,7 @@ GetScopePaneInfo (SCOPEDATAITEM* pScopeDataItem);
 
 ### <a name="parameters"></a>Parametreler
 
-*pScopeDataItem*  
+*pScopeDataItem*<br/>
 [out] Bir işaretçi `SCOPEDATAITEM` yapısını `CSnapInItemImpl` nesne.
 
 ##  <a name="getresultpaneinfo"></a>  CSnapInItemImpl::GetResultPaneInfo
@@ -283,7 +283,7 @@ GetResultPaneInfo (RESULTDATAITEM* pResultDataItem);
 
 ### <a name="parameters"></a>Parametreler
 
-*pResultDataItem*  
+*pResultDataItem*<br/>
 [out] Bir işaretçi `RESULTDATAITEM` yapısını `CSnapInItemImpl` nesne.
 
 ##  <a name="m_bstrdisplayname"></a>  CSnapInItemImpl::m_bstrDisplayName
@@ -326,7 +326,7 @@ STDMETHOD(Notify)(
 
 ### <a name="parameters"></a>Parametreler
 
-*event*  
+*event*<br/>
 [in] Bir kullanıcı tarafından gerçekleştirilen bir eylem belirtir. Aşağıdaki bildirimler mümkündür:
 
 - Bir pencere edilirken MMCN_ACTIVATE gönderilen etkinleştirilir ve devre dışı bırakıldı.
@@ -357,19 +357,19 @@ STDMETHOD(Notify)(
 
 - Bir değişiklik olduğunda ek bileşenini tüm görünümlere güncelleştirebilirsiniz MMCN_VIEW_CHANGE gönderilir.
 
-*bağımsız değişken*  
+*bağımsız değişken*<br/>
 [in] Bildirim türüne göre değişir.
 
-*param*  
+*param*<br/>
 [in] Bildirim türüne göre değişir.
 
-*pComponentData*  
+*pComponentData*<br/>
 [out] Uygulayan nesne için bir işaretçi `IComponentData`. Bildirim alanından gönderilmekte olduğu değil, bu parametre null `IComponentData::Notify`.
 
-*pComponent*  
+*pComponent*<br/>
 [out] Uygulayan nesne işaretçisi `IComponent`. Bildirim alanından gönderilmekte olduğu değil, bu parametre null `IComponent::Notify`.
 
-*Türü*  
+*Türü*<br/>
 [in] Nesne türünü belirtir. Aşağıdaki değerlerden biri olabilir:
 
 - Kapsam bölmesi bağlamının CCT_SCOPE veri nesnesi.
@@ -400,10 +400,10 @@ void SetMenuInsertionFlags(
 
 ### <a name="parameters"></a>Parametreler
 
-*bBeforeInsertion*  
+*bBeforeInsertion*<br/>
 [in] Bağlam menüsüne eklenen öğeler önce işlevin çağrılması gerektiğini olursa sıfır dışı; Aksi durumda 0.
 
-*pInsertionAllowed*  
+*pInsertionAllowed*<br/>
 [out içinde] Tanımlayan kullanılacak Microsoft Yönetim Konsolu MMC tanımlı menü öğesi ekleme noktaları. Bu, aşağıdaki bayrakların birleşimi olabilir:
 
 - Bağlam menüsünün üstünde CCM_INSERTIONALLOWED_TOP öğeleri eklenebilir.
@@ -433,10 +433,10 @@ void SetToolbarButtonInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*id*  
+*id*<br/>
 [in] Ayarlanacak araç çubuğu düğmesini kimliği.
 
-*fsState*  
+*fsState*<br/>
 [in] Düğmenin durumu bayrakları. Bir veya daha fazlasını olabilir:
 
 - Düğme TBSTYLE_CHECKED stilde ve basıldığında TBSTATE_CHECKED.
@@ -451,7 +451,7 @@ void SetToolbarButtonInfo(
 
 - Düğme TBSTATE_WRAP bir satır sonu izler. Düğme de TBSTATE_ENABLED olması gerekir.
 
-*fsType*  
+*fsType*<br/>
 [in] Düğmenin durumu bayrakları. Bir veya daha fazlasını olabilir:
 
 - TBSTYLE_BUTTON standart bir düğme oluşturur.
@@ -477,13 +477,13 @@ void UpdateMenuState(
 
 ### <a name="parameters"></a>Parametreler
 
-*id*  
+*id*<br/>
 [in] Ayarlanacak menü öğesinin kimliği.
 
-*pBuf*  
+*pBuf*<br/>
 [in] Güncelleştirilecek menü öğesi için bir dizeye bir işaretçi.
 
-*bayrakları*  
+*bayrakları*<br/>
 [in] Yeni durum bayrakları belirtir. Bu, aşağıdaki bayrakların birleşimi olabilir:
 
 - MF_POPUP bu bağlam menüsü içine olduğunu belirtir. Menü öğeleri ekleme noktaları ve daha fazla alt menülerini kullanarak bu alt eklenebilir, `lCommandID` olarak kendi `IInsertionPointID`.
@@ -524,10 +524,10 @@ BOOL UpdateToolbarButton(UINT id, BYTE fsState);
 
 ### <a name="parameters"></a>Parametreler
 
-*id*  
+*id*<br/>
 Güncelleştirilecek araç çubuğu düğmesini düğmesi Kimliğini belirtir.
 
-*fsState*  
+*fsState*<br/>
 Araç çubuğu düğmesi durumunu belirtir. Ayarlamak için bu durum ise, TRUE döndürür. Bu, aşağıdaki bayrakların birleşimi olabilir:
 
 - Etkin, düğme kullanıcı girişi kabul eder. Bu duruma sahip olmayan bir düğme kullanıcı girdisi kabul etmiyor ve renkte gösterilir.

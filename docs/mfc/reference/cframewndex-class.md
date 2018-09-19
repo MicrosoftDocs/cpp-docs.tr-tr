@@ -188,12 +188,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62bb1ca2cc4ba07e3f3262f6babee3ed4c52caa2
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: db4e6a01fbf7384cfbc2e1ef2b3c5ed48991998d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45708220"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095462"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx sınıfı
 Implements işlevselliğinin bir Windows tek Belgeli Arabirim (SDI) çakışan veya açılır çerçeve penceresinde ve pencereyi yönetmek için üyeleri sağlar. Bunu genişleten [CFrameWnd](../../mfc/reference/cframewnd-class.md) sınıfı.  
@@ -1198,17 +1198,12 @@ afx_msg LRESULT OnMenuChar(
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Dwpoint aşağıdaki değerlerden biri olmalıdır.  
-  
- `0`  
- Framework tuş vuruşu yok saymanız gerekir.  
-  
- `1`  
- Çerçevenin menüsünü kapatmalısınız.  
-  
- `2`  
- Framework menüde görüntülenen öğelerden birini seçmeniz gerekir. Düşük düzey word seçmek için komutu Kimliğini içerir.  
-  
-### <a name="remarks"></a>Açıklamalar  
+
+|||
+|-|-|
+ `0` | Framework tuş vuruşu yok saymanız gerekir.  
+ `1`  | Çerçevenin menüsünü kapatmalısınız.  
+ `2`  | Framework menüde görüntülenen öğelerden birini seçmeniz gerekir. Düşük düzey word seçmek için komutu Kimliğini içerir.  
   
 ##  <a name="onmousemove"></a>  CFrameWndEx::OnMouseMove  
  İşaretçiyi hareket ettirdiğinde framework bu yöntemi çağırır.  

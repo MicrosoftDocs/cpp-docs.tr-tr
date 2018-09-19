@@ -59,12 +59,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b82aa22c3cc1c217ba4dfd332c43f6663c94638e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: fe5f3234738a16b4c072b667982d36032e30f7dd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761881"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107123"
 ---
 # <a name="ioleobjectimpl-class"></a>Ioleobjectımpl sınıfı
 
@@ -76,13 +76,13 @@ Bu sınıfın uyguladığı `IUnknown` ve kapsayıcı bir denetimle iletişim as
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<class T>  
+template<class T>
 class ATL_NO_VTABLE IOleObjectImpl : public IOleObject
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `IOleObjectImpl`.
 
 ## <a name="members"></a>Üyeler
@@ -219,10 +219,10 @@ HRESULT DoVerbDiscardUndo(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 
 ### <a name="parameters"></a>Parametreler
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] Kapsayıcı dikdörtgen işaretçisi denetimin içine çizin istiyor.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] Denetimi içeren pencere tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -239,10 +239,10 @@ HRESULT DoVerbHide(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 
 ### <a name="parameters"></a>Parametreler
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] Kapsayıcı dikdörtgen işaretçisi denetimin içine çizin istiyor.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] Denetimi içeren pencere tanıtıcısı. ATL uygulamasında kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -259,10 +259,10 @@ HRESULT DoVerbInPlaceActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
 
 ### <a name="parameters"></a>Parametreler
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] Kapsayıcı dikdörtgen işaretçisi denetimin içine çizin istiyor.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] Denetimi içeren pencere tanıtıcısı. ATL uygulamasında kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -283,10 +283,10 @@ HRESULT DoVerbOpen(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 
 ### <a name="parameters"></a>Parametreler
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] Kapsayıcı dikdörtgen işaretçisi denetimin içine çizin istiyor.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] Denetimi içeren pencere tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -303,10 +303,10 @@ HRESULT DoVerbPrimary(LPCRECT prcPosRect, HWND hwndParent);
 
 ### <a name="parameters"></a>Parametreler
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] Kapsayıcı dikdörtgen işaretçisi denetimin içine çizin istiyor.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] Denetimi içeren pencere tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -327,10 +327,10 @@ HRESULT DoVerbShow(LPCRECT prcPosRect, HWND /* hwndParent */);
 
 ### <a name="parameters"></a>Parametreler
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] Kapsayıcı dikdörtgen işaretçisi denetimin içine çizin istiyor.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] Denetimi içeren pencere tanıtıcısı. ATL uygulamasında kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -347,10 +347,10 @@ HRESULT DoVerbUIActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
 
 ### <a name="parameters"></a>Parametreler
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] Kapsayıcı dikdörtgen işaretçisi denetimin içine çizin istiyor.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] Denetimi içeren pencere tanıtıcısı. ATL uygulamasında kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -833,6 +833,6 @@ Bkz: [IOleObject::Update](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-updat
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)   
-[Arabirimleri ActiveX denetimleri](/windows/desktop/com/activex-controls-interfaces)   
+[CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
+[Arabirimleri ActiveX denetimleri](/windows/desktop/com/activex-controls-interfaces)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

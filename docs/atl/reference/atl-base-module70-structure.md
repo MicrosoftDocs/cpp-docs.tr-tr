@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb7218d7fc8886cffdcce13f09a682fdc635f84f
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a8ee35df4b6ee792cd91f1b294259544e8944509
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759934"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089053"
 ---
 # <a name="atlbasemodule70-structure"></a>_ATL_BASE_MODULE70 yapısı
 
@@ -47,28 +47,28 @@ struct _ATL_BASE_MODULE70 {
 
 ## <a name="members"></a>Üyeler
 
-`cbSize`  
+`cbSize`<br/>
 Sürüm oluşturma için kullanılan bir yapının boyutu.
 
-`m_hInst`  
+`m_hInst`<br/>
 `hInstance` Bu Modülü (exe veya dll).
 
-`m_hInstResource`  
+`m_hInstResource`<br/>
 Varsayılan örneği kaynağı tanıtıcısı.
 
-`m_bNT5orWin98`  
+`m_bNT5orWin98`<br/>
 İşletim sistemi sürüm bilgisi. ATL tarafından dahili olarak kullanılır
 
-`dwAtlBuildVer`  
+`dwAtlBuildVer`<br/>
 ATL sürümünü depolar Şu anda 0x0700.
 
-`pguidVer`  
+`pguidVer`<br/>
 ATL'nin iç GUID.
 
-`m_csResource`  
+`m_csResource`<br/>
 Erişimi eşitlemek için kullanılan `m_rgResourceInstance` dizisi. ATL tarafından dahili olarak kullanılır
 
-`m_rgResourceInstance`  
+`m_rgResourceInstance`<br/>
 ATL uyumlu olduğu tüm kaynak örneklerinin kaynaklarında aramak için kullanılan dizisi. ATL tarafından dahili olarak kullanılır
 
 ## <a name="remarks"></a>Açıklamalar

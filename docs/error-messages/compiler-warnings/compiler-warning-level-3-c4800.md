@@ -16,35 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed4b14ae2f3af3218909d6cd4609f1f45d3d7cc2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b5a19c27731192a5fe2930aec3e78fb66d790484
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293640"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090914"
 ---
-# <a name="compiler-warning-level-3-c4800"></a>Derleyici Uyarısı (Düzey 3) C4800  
-  
-> '*türü*': değer bool 'true' veya 'false' (Performans Uyarısı) zorlama  
-  
-Bir değeri olmayan bu uyarı oluşturulur `bool` atanmış veya türüne yüklenen `bool`. Atayarak bu ileti genellikle, kaynaklanır `int` değişkenleri `bool` değişkenleri nerede `int` değişken yalnızca değerler içerdiğinden **true** ve **yanlış**ve olabilir tür olarak yeniden bildirilen `bool`. İfade türü kullanacak şekilde yeniden yazma, `bool`, sonra da ekleyebilirsiniz "`!=0`" ifadesine sağlayan ifade türü `bool`. İfade türü atama `bool` tasarım gereğidir uyarıyı devre dışı bırakılmaz.  
-  
-Bu uyarı artık Visual Studio 2017 içinde oluşturulur.  
-  
+# <a name="compiler-warning-level-3-c4800"></a>Derleyici Uyarısı (Düzey 3) C4800
+
+> '*türü*': değer bool 'true' veya 'false' (Performans Uyarısı) zorlama
+
+Bir değeri, olmadığında bu uyarı oluşturulur `bool` atanmış veya türe durumunda bırakılması `bool`. Atayarak bu ileti genellikle, kaynaklanır `int` değişkenlere `bool` değişkenleri burada `int` değişkeni yalnızca verileri içeren **true** ve **false**ve olabilir tür olarak yeniden tanımlanıyor `bool`. İfadeyi türü yeniden yazma, `bool`, ekleyebileceğiniz sonra "`!=0`" ifade, ifade türü sağlayan `bool`. İfade türüne atama `bool` bilinçli olarak böyle tasarlanmıştır uyarı devre dışı bırakmaz.
+
+Bu uyarı artık Visual Studio 2017'de oluşturulur.
+
 ## <a name="example"></a>Örnek
-  
- Aşağıdaki örnek C4800 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```cpp  
-// C4800.cpp  
-// compile with: /W3  
-int main() {  
-   int i = 0;  
-  
-   // To fix, instead try:  
-   // bool i = 0;  
-  
-   bool j = i;   // C4800  
-   j++;  
-}  
+
+Aşağıdaki örnek, C4800 oluşturur ve bu sorunun nasıl gösterir:
+
+```cpp
+// C4800.cpp
+// compile with: /W3
+int main() {
+   int i = 0;
+
+   // To fix, instead try:
+   // bool i = 0;
+
+   bool j = i;   // C4800
+   j++;
+}
 ```

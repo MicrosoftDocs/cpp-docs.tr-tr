@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d5e07b9382c24f82f3e7d84fe82aee9dd91ca19
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 137a278452e9e3e204d761f0519c16541cfdb46e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277611"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094097"
 ---
 # <a name="compiler-warning-level-1-c4215"></a>Derleyici Uyarısı (düzey 1) C4215
-kullanılan standart olmayan uzantısı: uzun float  
-  
- Varsayılan Microsoft Uzantıları (/Ze) kabul **uzun float** olarak **çift**. ANSI uyumluluğu ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) desteklemez. Kullanım **çift** uyumluluğu korumak için.  
-  
- Aşağıdaki örnek C4215 oluşturur:  
-  
-```  
-// C4215.cpp  
-// compile with: /W1 /LD  
-long float a;   // C4215  
-  
-// use the line below to resolve the warning  
-// double a;  
+
+Standart olmayan uzantı kullanıldı: kayan uzun
+
+Varsayılan Microsoft Uzatmaları (/Ze) kabul **uzun kayan nokta** olarak **çift**. ANSI uyumluluğu ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) desteklemez. Kullanım **çift** uyumluluğu korumak için.
+
+Aşağıdaki örnek, C4215 oluşturur:
+
+```
+// C4215.cpp
+// compile with: /W1 /LD
+long float a;   // C4215
+
+// use the line below to resolve the warning
+// double a;
 ```

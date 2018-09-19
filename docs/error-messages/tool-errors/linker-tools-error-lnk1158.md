@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71cee2a31d1a7b05104031fbf41e8e3addb82d7d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0ce319aa4529c74cad00342b09aa0ed98bb49ce7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300192"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094175"
 ---
 # <a name="linker-tools-error-lnk1158"></a>Bağlayıcı Araçları Hatası LNK1158
-'filename' çalıştırılamıyor  
-  
- Adlı belirli bir yürütülebilir dosyanın [bağlantı](../../build/reference/linker-command-line-syntax.md) bağlantıyı içeren dizin değil veya PATH ortam değişkeninde belirtilen bir dizin değil.  
-  
- Örneğin, PGOPTIMIZE parametresi kullanmaya çalıştığınızda bu hatayı alırsınız [/LTCG](../../build/reference/ltcg-link-time-code-generation.md) 32-bit işletim sistemine sahip bir makinede bağlayıcı seçeneği.
+
+'filename' çalıştırılamıyor
+
+Çağıran belirli bir yürütülebilir dosyanın [bağlantı](../../build/reference/linker-command-line-syntax.md) bağlantısını içeren dizin değil ya da yol ortam değişkeninde belirtilen bir dizin değil.
+
+Örneğin, PGOPTIMIZE parametresi için kullanmayı denerseniz bu hata iletisini alırsınız [/LTCG](../../build/reference/ltcg-link-time-code-generation.md) bir 32-bit işletim sistemine sahip bir makinede bağlayıcı seçeneği.

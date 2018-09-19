@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9753599f08d1e8ee238097027c501a0b56e40300
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9a5541613bddd1e6a4fbac3a5555e54ce30fb94c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757400"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091705"
 ---
 # <a name="cthreadpool-class"></a>CThreadPool sınıfı
 
@@ -44,16 +44,16 @@ Bu sınıf, iş öğelerinin bir kuyruğu işleyen çalışan iş parçacığı 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class Worker, class ThreadTraits = DefaultThreadTraits>  
+template <class Worker, class ThreadTraits = DefaultThreadTraits>
 class CThreadPool : public IThreadPoolConfig
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*Çalışan*  
+*Çalışan*<br/>
 Uyumludur sınıfı [çalışan modeli](../../atl/reference/worker-archetype.md) iş iş parçacığı havuzu üzerinde sıraya alınan öğeleri işlemek için kullanılan kod sağlama.
 
-*ThreadTraits*  
+*ThreadTraits*<br/>
 İş parçacığı havuzu oluşturmak için kullanılan işlev sağlayan sınıf.
 
 ## <a name="members"></a>Üyeler
@@ -180,7 +180,7 @@ HRESULT STDMETHODCALLTYPE GetSize(int* pnNumThreads) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pnNumThreads*  
+*pnNumThreads*<br/>
 [out] Değişkeninin adresi, başarı, havuzda iş parçacığı sayısını alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -197,7 +197,7 @@ HRESULT STDMETHODCALLTYPE GetTimeout(DWORD* pdwMaxWait) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pdwMaxWait*  
+*pdwMaxWait*<br/>
 [out] Başarı durumunda, iş parçacığı havuzu kapatmak bir iş parçacığı için bekleyeceği milisaniye cinsinden en uzun süreyi alır. değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -222,20 +222,20 @@ HRESULT Initialize(
 
 ### <a name="parameters"></a>Parametreler
 
-*pvWorkerParam*  
+*pvWorkerParam*<br/>
 Çalışan iş parçacığı nesnenin iletilecek alt parametre `Initialize`, `Execute`, ve `Terminate` yöntemleri.
 
-*nNumThreads*  
+*nNumThreads*<br/>
 İstenen havuzundaki iş parçacığı sayısı.
 
 Varsa *nNumThreads* olan negatif mutlak değerini toplam iş parçacığı sayısını almak için makinede işlemci sayısını çarpılacağı.
 
 Varsa *nNumThreads* sıfır ATLS_DEFAULT_THREADSPERPROC çarpılarak toplam iş parçacığı sayısını almak için makinede işlemci sayısı.  İşlemci başına 2 iş parçacığı varsayılandır. Gerekirse, atlutil.h eklemeden önce bu simgenin kendi pozitif bir tamsayı değeri tanımlayabilirsiniz.
 
-*dwStackSize*  
+*dwStackSize*<br/>
 Havuzdaki her bir iş parçacığı için yığın boyutu.
 
-*hCompletion*  
+*hCompletion*<br/>
 Tamamlama bağlantı ile ilişkilendirilecek bir nesne tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -264,7 +264,7 @@ BOOL QueueRequest(Worker::RequestType request) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*İstek*  
+*İstek*<br/>
 Kuyruğa alınacak istek.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -301,7 +301,7 @@ HRESULT STDMETHODCALLTYPE SetSizeint nNumThreads) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nNumThreads*  
+*nNumThreads*<br/>
 İstenen havuzundaki iş parçacığı sayısı.
 
 Varsa *nNumThreads* olan negatif mutlak değerini toplam iş parçacığı sayısını almak için makinede işlemci sayısını çarpılacağı.
@@ -326,7 +326,7 @@ HRESULT STDMETHODCALLTYPE SetTimeout(DWORD dwMaxWait) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dwMaxWait*  
+*dwMaxWait*<br/>
 İstenen en uzun süreyi milisaniye kapatmak bir iş parçacığı için iş parçacığı havuzu bekler.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -349,7 +349,7 @@ void Shutdown(DWORD dwMaxWait = 0) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dwMaxWait*  
+*dwMaxWait*<br/>
 İstenen en uzun süreyi milisaniye kapatmak bir iş parçacığı için iş parçacığı havuzu bekler. 0 veya herhangi bir değer sağlanmazsa, bu yöntem ayarlanan zaman aşımı kullanacağı [CThreadPool::SetTimeout](#settimeout).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -358,6 +358,6 @@ Bu yöntem, havuzdaki tüm iş parçacıkları bir kapatma isteği gönderir. Za
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Ithreadpoolconfig arabirimi](../../atl/reference/ithreadpoolconfig-interface.md)   
-[DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)   
+[IThreadPoolConfig Arabirimi](../../atl/reference/ithreadpoolconfig-interface.md)<br/>
+[DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>
 [Sınıflar](../../atl/reference/atl-classes.md)

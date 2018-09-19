@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13ff7f5dbc1f9ecb66c54f52fae4a38d1e4d4664
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 888bdaf2eaddc0d4178affa1ccc4ae77c34f4617
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197721"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092316"
 ---
 # <a name="fatal-error-c1005"></a>Önemli hata C1005
-dize için arabellek boyutu çok büyük  
-  
- Bir dize derleyici Ara dosyasındaki bir arabellek taştı.  
-  
- Bu hatayı alabilirsiniz olduğunda ya da geçirdiğiniz parametre [/Fd](../../build/reference/fd-program-database-file-name.md) veya [/Yl](../../build/reference/yl-inject-pch-reference-for-debug-library.md) derleyici seçenekleri 256 bayttan büyük.
+
+dize için arabellek çok büyük
+
+Derleyici Ara dosyası bir dizedeki bir arabellek taşma oluştu.
+
+Bu hatayı alabilir, ya da geçirdiğiniz parametre [/Fd](../../build/reference/fd-program-database-file-name.md) veya [/Yl](../../build/reference/yl-inject-pch-reference-for-debug-library.md) derleyici seçenekleri, 256 bayt değerinden büyüktür.

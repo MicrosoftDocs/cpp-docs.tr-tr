@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6f5619a7c2a6ccf671845b27bbedf93d8eb2d69
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 941773fbcf65a3b1c1a6041a1e7a067cfc286823
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298557"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097061"
 ---
 # <a name="bscmake-error-bk1517"></a>BSCMAKE Hatası BK1517
-/Yc ve /Yu ile derlenmiş sbrfile için kaynak dosyası  
-  
- .Sbr dosyası kendine başvuruyor. /Yc ile derledikten sonra onu /Yu ile büyük olasılıkla derlendiğini. Kaynak dosya için derleyici seçeneği için /Yc sıfırlama ve ardından **yeniden** yeni .sbr dosyaları oluşturmak için. /Yu kaynak dosyayla yeniden derleyin değil.
+
+kaynak dosyası /Yc ve /Yu ile derlendi sbrfile
+
+.Sbr dosyası kendine başvuruyor. /Yc ile derledikten sonra /Yu ile büyük olasılıkla derlendiğini. Derleyici seçeneği için kaynak dosyası /Yc için sıfırlama ve ardından **yeniden** yeni .sbr dosyaları oluşturmak için. Kaynak dosya /Yu ile derlemeniz yok.

@@ -43,12 +43,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a0dd4f32f8c7b3a9e859e23fcc26e668fa87cdb
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a48e4112dc513923b3a933457a874409121fb1e7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726368"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087727"
 ---
 # <a name="popen-wpopen"></a>_popen, _wpopen
 
@@ -168,12 +168,12 @@ int main( void )
 Bu çıkış, yalnızca bir dosya var. geçerli dizindeki .c dosya adı uzantısına sahip varsayar.
 
 ```Output
- Volume in drive C is CDRIVE
- Volume Serial Number is 0E17-1702
+Volume in drive C is CDRIVE
+Volume Serial Number is 0E17-1702
 
 Directory of D:\proj\console\test1
 
- 07/17/98  07:26p                   780 popen.c
+07/17/98  07:26p                   780 popen.c
                1 File(s)            780 bytes
                              86,597,632 bytes free
 

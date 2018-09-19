@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e162f315b950718d5a7e2f602159fb0e8661669
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 62c6538e77d3b21c088a5a48f9870a743ea9c5d3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322240"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093954"
 ---
 # <a name="resource-compiler-fatal-error-rc1205"></a>Kaynak Derleyicisi Önemli Hatası RC1205
-Geçersiz kod sayfası  
-  
- Kod sayfası belirtin (/ c) seçeneği geçersiz kod sayfası tarafından izlenen. Bkz: [kod sayfaları](../../c-runtime-library/code-pages.md) içinde *çalışma zamanı kitaplığı başvurusu* daha fazla bilgi için.
+
+Geçersiz kod sayfası
+
+Kod sayfası belirtin (/ c) seçeneği bir geçersiz kod sayfası tarafından izlenen. Bkz: [kod sayfaları](../../c-runtime-library/code-pages.md) içinde *çalışma zamanı kitaplığı başvurusu* daha fazla bilgi için.

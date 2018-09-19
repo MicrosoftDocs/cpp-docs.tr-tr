@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e0d74548ff546993c5c8f752709de7418c62965
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4314a6e79a5052d3e9e05aa453ce3ae842ded74c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243251"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107801"
 ---
 # <a name="compiler-error-c2845"></a>Derleyici Hatası C2845
-'işleci': işaretçi aritmetiği bu türüne izin verilmiyor  
-  
- Yönetilen bir sınıfın işaretçisine artırılamıyor.  
+
+'operator': işaretçi aritmetik bu türüne izin verilmiyor
+
+Yönetilen bir sınıf işaretçisine artırılamıyor.

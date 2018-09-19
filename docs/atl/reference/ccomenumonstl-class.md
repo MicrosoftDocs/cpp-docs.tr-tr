@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5938785d7d9fdccae73048392b74cc5bb34f6680
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a4821ba572d2719ebba6c693cc39b96971002512
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753561"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106330"
 ---
 # <a name="ccomenumonstl-class"></a>CComEnumOnSTL sınıfı
 
@@ -32,7 +32,7 @@ Bu sınıf, bir C++ Standart Kitaplığı koleksiyonuna bağlı bir COM Numarala
 
 ```
 template <class Base,
-    const IID* piid, class T, class Copy, class CollType, class ThreadModel = CComObjectThreadModel>  
+    const IID* piid, class T, class Copy, class CollType, class ThreadModel = CComObjectThreadModel>
 class ATL_NO_VTABLE CComEnumOnSTL : public IEnumOnSTLImpl<Base, piid,
 T,
     Copy,
@@ -42,19 +42,19 @@ CollType>,
 
 #### <a name="parameters"></a>Parametreler
 
-*temel*  
+*temel*<br/>
 Bir COM Numaralandırıcı. Bkz: [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) örneği.
 
-*piid*  
+*piid*<br/>
 Numaralandırıcı arabirimi arabirim kimliği için bir işaretçi.
 
-*T*  
+*T*<br/>
 Numaralandırıcı arabirim tarafından sunulan öğe türü.
 
-*kopyalama*  
+*kopyalama*<br/>
 A [kopyalama İlkesi](../../atl/atl-copy-policy-classes.md) sınıfı.
 
-*CollType*  
+*CollType*<br/>
 Bir C++ Standart Kitaplığı kapsayıcı sınıfı.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -111,9 +111,9 @@ Bu kod oluşturur bir **typedef** için `CComEnumOnSTL` oluşan bir vektörü su
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Ienumonstlımpl](../../atl/reference/ienumonstlimpl-class.md)   
-[ATLCollections örnek: Icollectiononstlımpl ve CComEnumOnSTL özel kopyalama İlkesi sınıfları gösterir](../../visual-cpp-samples.md)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
-[CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)   
-[CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)   
+[Ienumonstlımpl](../../atl/reference/ienumonstlimpl-class.md)<br/>
+[ATLCollections örnek: Icollectiononstlımpl ve CComEnumOnSTL özel kopyalama İlkesi sınıfları gösterir](../../visual-cpp-samples.md)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)<br/>
 [IEnumOnSTLImpl Sınıfı](../../atl/reference/ienumonstlimpl-class.md)

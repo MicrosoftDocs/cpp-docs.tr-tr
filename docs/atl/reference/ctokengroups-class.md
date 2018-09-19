@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87109793625435945c45b2643ccd674946acff49
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1d14a839cded7d22236912ba52a733a9ce15f7aa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752651"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103249"
 ---
 # <a name="ctokengroups-class"></a>CTokenGroups sınıfı
 
@@ -92,19 +92,19 @@ Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](/
 Ekler bir `CSid` veya mevcut `TOKEN_GROUPS` için yapı `CTokenGroups` nesne.
 
 ```
-void Add(const CSid& rSid, DWORD dwAttributes) throw(... );  
+void Add(const CSid& rSid, DWORD dwAttributes) throw(... );
 void Add(const TOKEN_GROUPS& rTokenGroups) throw(...);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*rSid*  
+*rSid*<br/>
 A [CSID](../../atl/reference/csid-class.md) nesne.
 
-*dwAttributes*  
+*dwAttributes*<br/>
 Öznitelikleri ile ilişkilendirilecek `CSid` nesne.
 
-*rTokenGroups*  
+*rTokenGroups*<br/>
 A [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -117,13 +117,13 @@ Oluşturucu.
 
 ```
 CTokenGroups() throw();
-CTokenGroups(const CTokenGroups& rhs) throw(... );  
+CTokenGroups(const CTokenGroups& rhs) throw(... );
 CTokenGroups(const TOKEN_GROUPS& rhs) throw(...);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
+*Sol*<br/>
 `CTokenGroups` Nesne veya [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) yapısı oluşturmak hangi `CTokenGroups` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -152,7 +152,7 @@ bool Delete(const CSid& rSid) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*rSid*  
+*rSid*<br/>
 [CSID](../../atl/reference/csid-class.md) nesnenin kendisi için öznitelikler ve güvenlik tanımlayıcısı (SID) kaldırılması gerekir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -215,10 +215,10 @@ void GetSidsAndAttributes(
 
 ### <a name="parameters"></a>Parametreler
 
-*pSids*  
+*pSids*<br/>
 Bir dizi işaretçi [CSID](../../atl/reference/csid-class.md) nesneleri.
 
-*pAttributes*  
+*pAttributes*<br/>
 DWORD bir dizi için işaretçi. Bu parametre belirtilmemişse veya NULL ise, öznitelikleri alınmamış.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -237,10 +237,10 @@ bool LookupSid(
 
 ### <a name="parameters"></a>Parametreler
 
-*rSid*  
+*rSid*<br/>
 [CSID](../../atl/reference/csid-class.md) nesne.
 
-*pdwAttributes*  
+*pdwAttributes*<br/>
 Hangi kabul edileceği bir DWORD işaretçisine `CSid` nesnenin öznitelik. Belirtilmemiş veya boş ise, öznitelik alınmayacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -256,13 +256,13 @@ Ayarı *pdwAttributes* için NULL varlığını onaylayan bir yol sağlar `CSid`
 Atama işleci.
 
 ```
-CTokenGroups& operator= (const TOKEN_GROUPS& rhs) throw(...);  
+CTokenGroups& operator= (const TOKEN_GROUPS& rhs) throw(...);
 CTokenGroups& operator= (const CTokenGroups& rhs) throw(...);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
+*Sol*<br/>
 `CTokenGroups` Nesne veya [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) atamak için yapı `CTokenGroups` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -273,7 +273,7 @@ Güncelleştirilmiş döndürür `CTokenGroups` nesne.
 
 Bir işaretçi değerine çevirir `TOKEN_GROUPS` yapısı.
 
-```  
+```
 operator const TOKEN_GROUPS *() const throw(...);
 ```
 
@@ -283,7 +283,7 @@ Bir işaretçi değerine çevirir [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-w
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Güvenliği örneği](../../visual-cpp-samples.md)   
-[CSid sınıfı](../../atl/reference/csid-class.md)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[Güvenliği örneği](../../visual-cpp-samples.md)<br/>
+[CSid Sınıfı](../../atl/reference/csid-class.md)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

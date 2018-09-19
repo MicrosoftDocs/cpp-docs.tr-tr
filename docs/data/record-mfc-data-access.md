@@ -17,15 +17,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b03bfb65bd10787f41d30c63117fec54e8dc30ea
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fe348043d991aa04652eae02ba0f2efa393bcf5f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103456"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098140"
 ---
 # <a name="record-mfc-data-access"></a>Kayıt (MFC veri erişimi)
-Bir kaydı, bir hesap veya tabloda (tablodaki satır) depolanan bir müşteri gibi tek bir varlık hakkında veriler koleksiyonudur. Bir kayıt, çeşitli türlerde veriler içeren bitişik sütunları (alanları olarak da adlandırılır) bir grup oluşur. Bir veri kaynağından seçilen kayıt kümesi — bir sonuç kümesi veritabanı bağlamında adlandırılırlar — bir kayıt kümesi MFC'de denir. Daha fazla bilgi için bkz: [kayıt kümesi (ODBC)](../data/odbc/recordset-odbc.md).  
+
+Bir kaydı, bir hesap veya bir tablodaki (tablodaki satır) depolanan, bir müşteri gibi tek bir varlık hakkında veriler koleksiyonudur. Bir kayıt çeşitli türlerde verileri içerir (alanlar olarak da adlandırılır) bitişik sütun grubundan oluşur. Bir veri kaynağından seçilen kayıt kümesini — genellikle bir sonuç kümesi veritabanı bağlamında olarak adlandırılır — bir kayıt kümesi MFC'de çağrılır. Daha fazla bilgi için [kayıt kümesi (ODBC)](../data/odbc/recordset-odbc.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri erişimi (MFC/ATL) programlama](../data/data-access-programming-mfc-atl.md)
+
+[Veri erişim programlama (MFC/ATL)](../data/data-access-programming-mfc-atl.md)

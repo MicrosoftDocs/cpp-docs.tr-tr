@@ -16,29 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b4aaa53ae1d92364fad143f127ee3e7b504acdd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c4b6656753ab4a611dcb80d1473e0b44bf47a270
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33273650"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094786"
 ---
 # <a name="compiler-error-c3675"></a>Derleyici Hatası C3675
-'function': 'property' tanımlı olduğu için ayrılmıştır  
-  
- Basit bir özelliği bildirme olduğunda derleyici alma ve ayarlama erişimci yöntemleri ve bu oluşturur adlardır programınızı kapsamı içinde mevcut.  Derleyicinin ürettiği adları get_ ve SWbemObject özellik adının başına eklenerek oluşturulur.  Bu nedenle, derleyicinin ürettiği erişimciler aynı ada sahip işlevleri bildiremezsiniz.  
-  
- Bkz: [özelliği](../../windows/property-cpp-component-extensions.md) daha fazla bilgi için.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3675 oluşturur.  
-  
-```  
-// C3675.cpp  
-// compile with: /clr /c  
-ref struct C {  
-public:  
-   property int Size;  
-   int get_Size() { return 0; }   // C3675  
-};  
+
+'function': 'property' tanımlı olduğundan ayrıldı
+
+Basit bir özelliğin bildirdiğinizde, derleyici alma ve ayarlama erişimci yöntemlerinin ve bu oluşturur adlardır programınızı kapsamı içinde mevcut.  Derleyicinin ürettiği adları get_ ve set_ özellik adının önüne eklenerek oluşturulur.  Bu nedenle, İşlevler derleyici tarafından oluşturulan erişimcileri aynı ada sahip bildiremezsiniz.
+
+Bkz: [özelliği](../../windows/property-cpp-component-extensions.md) daha fazla bilgi için.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3675 oluşturur.
+
+```
+// C3675.cpp
+// compile with: /clr /c
+ref struct C {
+public:
+   property int Size;
+   int get_Size() { return 0; }   // C3675
+};
 ```

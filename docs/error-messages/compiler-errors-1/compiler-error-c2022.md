@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47e13dddc1cba93afe8c51b2bca3efdd58e75f85
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dc92e683c3def2378912db5011049924696b7f59
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165616"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089664"
 ---
 # <a name="compiler-error-c2022"></a>Derleyici Hatası C2022
-'numara': karakter için çok büyük  
-  
- Ters eğik çizgi aşağıdaki sekizlik bir sayı (\\) bir karakter veya dize sabiti olduğunda bir karakteri temsil etmesi için çok büyük.
+
+'number': karakter için çok büyük
+
+Sekizlik sayı bir ters eğik çizgiden (\\) bir karakter veya dize sabit değeri bir karakteri temsil etmesi için çok büyük.

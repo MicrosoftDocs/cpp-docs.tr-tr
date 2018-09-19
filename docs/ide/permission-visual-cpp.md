@@ -1,5 +1,5 @@
 ---
-title: '&lt;izin&gt; (Visual C++) | Microsoft Docs'
+title: '&lt;izni&gt; (Visual C++) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e13824780a5c73d4423bd544a97108b45d1b770a
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: b1dab2c803fee38662a638d056b35f79f8d5e8e9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33324089"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096619"
 ---
-# <a name="ltpermissiongt-visual-c"></a>&lt;izin&gt; (Visual C++)
-\<İzni > etiketi üyesi erişim belge olanak sağlar. <xref:System.Security.PermissionSet> üye erişimi belirtmenize olanak sağlar.  
+# <a name="ltpermissiongt-visual-c"></a>&lt;izni&gt; (Visual C++)
+\<İzni > etiketi üyenin erişim belge olanak tanır. <xref:System.Security.PermissionSet> üye erişimi belirtmenize olanak sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,20 +35,20 @@ ms.locfileid: "33324089"
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `member`  
- Bir üye ya da geçerli derleme ortamından çağrılacak kullanılabilir alan başvuru. Verilen code öğesi var ve çevirir derleyici denetler `member` XML çıktısında kurallı öğesi adı.  Ad, tek veya çift tırnak işaretleri içine alın.  
+*Üyesi*<br/>
+Bir üye veya geçerli derleme ortamdan çağrılacak kullanılabilir alan başvuru. Derleyici belirli kod öğesi var. çevirir olup olmadığını denetler ve `member` kurallı öğesi adı ' % s'çıkış XML dosyası.  Ad, tek veya çift tırnak içine alın.  
   
- Derleyici bulamadı, bir uyarı verir `member`.  
+ Değil bulamazsa, derleyici bir uyarı verir `member`.  
   
- Genel bir tür cref başvuru oluşturma hakkında daha fazla bilgi için bkz: [ \<bkz >](../ide/see-visual-cpp.md).  
+ Genel tür cref başvuru oluşturma hakkında daha fazla bilgi için bkz: [ \<bakın >](../ide/see-visual-cpp.md).  
   
- `description`  
- Üye erişimi açıklaması.  
+*Açıklaması*<br/>
+Üye erişimi açıklaması.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İle derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) bir dosyaya işlem belgesi açıklamaları için.  
+ Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.  
   
- Visual C++ derleyicisi belge açıklamaları bir geçiş cref başvurularında çözümlemeye çalışır.  Bu nedenle, C++ arama kurallarını kullanarak, bir simge başvuru işaretlenir derleyici tarafından bulunmaması halinde olarak çözümlenmemiş. Bkz: [ \<seealso >](../ide/seealso-visual-cpp.md) daha fazla bilgi için.  
+ Visual C++ derleyicisi, belge yorumlarını bir geçiş cref başvuruları çözümlemek dener.  Bu nedenle, C++ arama kurallarını kullanarak, bir sembol başvurusu işaretlenir derleyici tarafından bulunamadı olarak çözümlenmemiş. Bkz: [ \<seealso >](../ide/seealso-visual-cpp.md) daha fazla bilgi için.  
   
 ## <a name="example"></a>Örnek  
   

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e2cd0e4f2e800d9922a6e1820d6e4141cefc7a0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6230cd50c621a37f0c2dd8f9e56bda8b0a20eb68
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317339"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098871"
 ---
 # <a name="resource-compiler-error-rc2163"></a>Kaynak Derleyicisi Hatası RC2163
-gerekli Hızlandırıcı türü [ASCII veya VIRTKEY]  
-  
- `type` Alanındaki **HIZLANDIRICILARI** deyimi ASCII veya VIRTKEY değer içermesi gerekir.
+
+Hızlandırıcı türü [ASCII veya VIRTKEY'e] gerekli
+
+`type` Alanındaki **HIZLANDIRICILARI** deyimi ASCII veya VIRTKEY'e değer içermesi gerekir.

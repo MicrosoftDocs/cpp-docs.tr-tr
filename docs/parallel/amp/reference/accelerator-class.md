@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bebc10481c446edfa29d09663ac3139ecc5391b
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: dee005091c95bbac5fca64851f631b443bd33cca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42464477"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106778"
 ---
 # <a name="accelerator-class"></a>accelerator Sınıfı
 Hızlandırıcı veri paralel hesaplamaları için optimize edilmiş bir donanımdır. Bir Hızlandırıcı PCIe veri yoluna (örneğin GPU) bağlı bir cihaz olabilir veya ana CPU üzerinde ayarlanmış, genişletilmiş bir yönerge olabilir.  
@@ -164,11 +164,11 @@ accelerator(const accelerator& _Other);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Device_path`  
- Fiziksel cihazın yolu.  
+*_Device_path*<br/>
+Fiziksel cihazın yolu.  
   
- `_Other`  
- Kopyalamak için Hızlandırıcı.  
+*_Diğer*<br/>
+Kopyalamak için Hızlandırıcı.  
   
 ##  <a name="cpu_accelerator"></a> cpu_accelerator 
 
@@ -187,8 +187,8 @@ accelerator_view create_view(queuing_mode qmode = queuing_mode_automatic);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `qmode`  
- Sıralama modu.  
+*qmode*<br/>
+Sıralama modu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni bir `accelerator_view` belirtilen bir sıralama modu kullanarak bu hızlandırıcıda nesne.  
@@ -470,8 +470,8 @@ bool operator!= (const accelerator& _Other) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Other`  
- `accelerator` İle Karşılaştırılacak nesne.  
+*_Diğer*<br/>
+`accelerator` İle Karşılaştırılacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `false` iki `accelerator` nesneleri aynıdır; Aksi takdirde `true`.  
@@ -485,8 +485,8 @@ accelerator& operator= (const accelerator& _Other);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Other`  
- `accelerator` Kopyalanacak nesne.  
+*_Diğer*<br/>
+`accelerator` Kopyalanacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu başvuru `accelerator` nesne.  
@@ -502,8 +502,8 @@ bool operator== (const accelerator& _Other) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Other`  
- `accelerator` İle Karşılaştırılacak nesne.  
+*_Diğer*<br/>
+`accelerator` İle Karşılaştırılacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` varsa diğer `accelerator` nesne olarak aynı `accelerator` nesne; Aksi takdirde, `false`.  
@@ -517,8 +517,8 @@ static inline bool set_default(std::wstring _Path);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Path`  
- Hızlandırıcının yolu.  
+*_Yolu*<br/>
+Hızlandırıcının yolu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Varsayılan kısayol tuşu ayarlanırken çağrı başarılı olursa. Aksi takdirde, `false`.  
@@ -532,8 +532,8 @@ bool set_default_cpu_access_type(access_type _Default_cpu_access_type);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Default_cpu_access_type`  
- Bu hızlandırıcıda array/array_view bellek ayırmaları için kullanılacak varsayılan cpu access_type.  
+*_Default_cpu_access_type*<br/>
+Bu hızlandırıcıda array/array_view bellek ayırmaları için kullanılacak varsayılan cpu access_type.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Hızlandırıcı için varsayılan cpu access_type başarıyla ayarlandı gösteren bir Boole değeri.  
@@ -597,8 +597,8 @@ accelerator_view(const accelerator_view& _Other);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Other`  
- `accelerator_view` Kopyalanacak nesne.  
+*_Diğer*<br/>
+`accelerator_view` Kopyalanacak nesne.  
   
 ##  <a name="create_marker"></a> create_marker 
 
@@ -714,8 +714,8 @@ bool operator!= (const accelerator_view& _Other) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Other`  
- `accelerator_view` İle Karşılaştırılacak nesne.  
+*_Diğer*<br/>
+`accelerator_view` İle Karşılaştırılacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `false` iki nesnenin aynı olup olmadığını; Aksi takdirde, `true`.  
@@ -729,8 +729,8 @@ accelerator_view& operator= (const accelerator_view& _Other);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Other`  
- `accelerator_view` Kopyalanacak nesne.  
+*_Diğer*<br/>
+`accelerator_view` Kopyalanacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Değiştirilmiş başvuru `accelerator_view` nesne.  
@@ -746,8 +746,8 @@ bool operator== (const accelerator_view& _Other) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Other`  
- `accelerator_view` İle Karşılaştırılacak nesne.  
+*_Diğer*<br/>
+`accelerator_view` İle Karşılaştırılacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` iki nesnenin aynı olup olmadığını; Aksi takdirde, `false`.  

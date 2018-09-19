@@ -16,38 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80c0bdb0f17670c5acd178b7eadcbc6d3868637c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d94d32def0a2fc5ddc3b992d4098a75f925499e7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245207"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089343"
 ---
 # <a name="compiler-error-c3005"></a>Derleyici Hatası C3005
-'error_text': beklenmeyen bir belirteç OpenMP 'yönergesi' yönergesi karşılaştı  
-  
- OpenMP yönergesi ill oluşturulmuş.  
-  
- Aşağıdaki örnek C3005 oluşturur:  
-  
-```  
-// C3005.c  
-// compile with: /openmp  
-int main()  
-{  
-   #pragma omp parallel + for   // C3005  
-}  
-```  
-  
- Pragma aynı satırda bir açma ayracı yerleştirirseniz C3005 da oluşabilir.  
-  
-```  
-// C3005b.c  
-// compile with: /openmp  
-int main() {  
-   #pragma omp parallel {   // C3005 put open brace on next line  
-   lbl2:;  
-   }  
-   goto lbl2;  
-}  
+
+'error_text': OpenMP 'yönergesi' yönergesinde karşılaştı beklenmeyen belirteç
+
+Bir OpenMP yönergesinde ill oluşturulmuş.
+
+Aşağıdaki örneğe C3005 oluşturur:
+
+```
+// C3005.c
+// compile with: /openmp
+int main()
+{
+   #pragma omp parallel + for   // C3005
+}
+```
+
+Pragma ile aynı satırda açık bir ayraç koyarsanız C3005 da meydana gelebilir.
+
+```
+// C3005b.c
+// compile with: /openmp
+int main() {
+   #pragma omp parallel {   // C3005 put open brace on next line
+   lbl2:;
+   }
+   goto lbl2;
+}
 ```

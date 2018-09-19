@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: debb983c-382b-487b-8d42-7ea26dc158b8
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 6b812ddd4dbd3c81d9018be926d9103bca3ec796
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 7f26a9d603238c83aa4243092e88719d1de4fda1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755979"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093083"
 ---
 # <a name="ccomclassfactorysingleton-class"></a>CComClassFactorySingleton sınıfı
 
@@ -34,13 +34,13 @@ Bu sınıfın türetildiği [CComClassFactory](../../atl/reference/ccomclassfact
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<class T>  
+template<class T>
 class CComClassFactorySingleton : public CComClassFactory
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınıza.
 
 `CComClassFactorySingleton` öğesinden türetilen [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve kullandığı [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tek bir nesne oluşturmak için. Her çağrı `CreateInstance` yöntemi yalnızca bu nesne bir arabirim işaretçisi için sorgular.
@@ -91,13 +91,13 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnkOuter*  
+*pUnkOuter*<br/>
 [in] Nesne bir toplamanın parçası olarak ardından oluşturuluyorsa *pUnkOuter* dış bilinmeyen olması gerekir. Aksi takdirde, *pUnkOuter* NULL olmalıdır.
 
-*riid*  
+*riid*<br/>
 [in] İstenen arabirim Laboratuvardaki. Varsa *pUnkOuter* kullanmaktan, *riid* olmalıdır `IID_IUnknown`.
 
-*ppvObj*  
+*ppvObj*<br/>
 [out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppvObj* NULL olarak ayarlandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -120,9 +120,9 @@ Unutmayın, geçerli form `m_spObj` sunan bir arabirimden değişiklik, `CComCla
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)   
-[CComClassFactory2 sınıfı](../../atl/reference/ccomclassfactory2-class.md)   
-[CComClassFactoryAutoThread sınıfı](../../atl/reference/ccomclassfactoryautothread-class.md)   
-[CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)   
-[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)   
+[IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)<br/>
+[CComClassFactory2 Sınıfı](../../atl/reference/ccomclassfactory2-class.md)<br/>
+[CComClassFactoryAutoThread Sınıfı](../../atl/reference/ccomclassfactoryautothread-class.md)<br/>
+[CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

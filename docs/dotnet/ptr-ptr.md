@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0cd8b4a4a1140a1a34e0148756cdb23b2f8069cc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4f4df3e8059a56b137b2a4750177af1269cb6a5c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33161479"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107032"
 ---
 # <a name="ptrptr"></a>ptr::ptr
-Oluşturan bir `com::ptr` bir COM nesnesi sarmalamak için.  
+Oluşturur bir `com::ptr` bir COM nesnesini sarmak için.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,18 +40,18 @@ ptr(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `P`  
- COM arabirimi işaretçisi.  
+*P*<br/>
+Bir COM arabirim işaretçisi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bağımsız değişken içermeyen Oluşturucusu atar `nullptr` temel nesne işlenecek. Sonraki çağrılar `com::ptr` iç nesne doğrulamak ve bir nesne gerçekte oluşturduğunuz veya iliştirilmiş kadar sessizce başarısız.  
+ Bağımsız değişken olmayan Oluşturucu atar `nullptr` temel alınan nesne işlenecek. Yapılan sonraki çağrılar `com::ptr` iç nesne doğrulamak ve bir nesneyi gerçekten oluşturulduğunda veya bağlı kadar sessizce başarısız.  
   
- Tek bağımsız değişkenli Oluşturucusu COM nesnesi bir başvuru eklenir ancak çağıran çağırmanız gerekir böylece arayanın başvuru bırakmaz `Release` gerçekten denetime sahip olmak COM nesnesi üzerinde. Zaman `com::ptr`'s yıkıcı çağrılır da başvurularında COM nesnesi üzerinde otomatik olarak sunacaktır.  
+ Tek bağımsız değişkenli Oluşturucusu COM nesnesine bir başvuru ekler, ancak çağıranın çağırmanız gerekir böylece arayanın başvuru serbest bırakmaz `Release` gerçekten denetimini sağlamak için COM nesne üzerinde. Zaman `com::ptr`ait yok edici çağrıldığında otomatik olarak bir COM nesnesi üzerinde başvuruları serbest bırakır.  
   
- Geçirme `NULL` bu oluşturucuya bağımsız değişken içermeyen sürüm çağırma aynıdır.  
+ Geçirme `NULL` bu oluşturucuya çağırma bağımsız değişkenli sürümü ile aynıdır.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek kullanan bir CLR sınıfı uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesnesi. Her iki sürümünün de Oluşturucusu kullanımını gösterir.  
+ Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne. Bu oluşturucu her iki sürümü de kullanımını gösterir.  
   
 ```  
 // comptr_ptr.cpp  
@@ -113,7 +113,7 @@ int main() {
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\com\ptr.h >  
+ **Üst bilgi dosyası** \<msclr\com\ptr.h >  
   
  **Namespace** msclr::com  
   

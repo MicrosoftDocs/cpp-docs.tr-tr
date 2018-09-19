@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e45ef2fe60a3f30a064ccbb3e4c7636df90165a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 20a551d8e0df55418c195db791e46693979758a2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165483"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46104049"
 ---
 # <a name="compiler-error-c2116"></a>Derleyici Hatası C2116
-işlev parametre listeleri farklıydı  
-  
- Varsayılan parametre listesi parametrelerinde biçimsel parametresi listesiyle eşleşmiyor.
+
+işlev parametre listeleri farklıydı
+
+Varsayılan parametre listesinde parametreleri biçimsel parametre listesi eşleşmiyor.

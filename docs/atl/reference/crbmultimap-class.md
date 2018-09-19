@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be0b81d1baddfd8d89112f7f7b9d63624a6aa3b6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ae9a83ff8cc8e4909e23e7751e0c82da690a0c21
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757773"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093824"
 ---
 # <a name="crbmultimap-class"></a>CRBMultiMap sınıfı
 
@@ -40,22 +40,22 @@ Bu sınıf, her anahtar Red-siyah bir ikili Ağacı'nı kullanarak birden fazla 
 template<typename K,
          typename V, 
          class KTraits = CElementTraits<K>, 
-         class VTraits = CElementTraits<V>>  
+         class VTraits = CElementTraits<V>>
 class CRBMultiMap : public CRBTree<K, V, KTraits, VTraits>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*K*  
+*K*<br/>
 Anahtar öğe türü.
 
-*V*  
+*V*<br/>
 Değer öğe türü.
 
-*KTraits*  
+*KTraits*<br/>
 Kopyalamak veya taşımak temel öğeleri için kullanılan kod. Bkz: [CElementTraits sınıfı](../../atl/reference/celementtraits-class.md) daha fazla ayrıntı için.
 
-*VTraits*  
+*VTraits*<br/>
 Kopyalamak veya taşımak değeri öğeleri için kullanılan kod.
 
 ## <a name="members"></a>Üyeler
@@ -111,7 +111,7 @@ explicit CRBMultiMap(size_t nBlockSize = 10) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBlockSize*  
+*nBlockSize*<br/>
 Blok boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -148,7 +148,7 @@ POSITION FindFirstWithKey(KINARGTYPE key) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Bulunacak öğe tanımlayan anahtar belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -180,10 +180,10 @@ V& GetNextValueWithKey(
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Ya da bir çağrı ile elde edilen konum değeri [CRBMultiMap::FindFirstWithKey](#findfirstwithkey) veya [CRBMultiMap::GetNextWithKey](#getnextwithkey), veya önceki bir çağrı `GetNextValueWithKey`.
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Bulunacak öğe tanımlayan anahtar belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -215,10 +215,10 @@ CPair* GetNextWithKey(
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Ya da bir çağrı ile elde edilen konum değeri [CRBMultiMap::FindFirstWithKey](#findfirstwithkey) veya [CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey), veya önceki bir çağrı `GetNextWithKey`.
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Bulunacak öğe tanımlayan anahtar belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -241,10 +241,10 @@ POSITION Insert(KINARGTYPE key, VINARGTYPE value) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Eklenecek anahtar değeri `CRBMultiMap` nesne.
 
-*value*  
+*value*<br/>
 Eklenecek değer `CRBMultiMap` nesnesi ile ilişkili *anahtar*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -269,7 +269,7 @@ size_t RemoveKey(KINARGTYPE key) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Silinecek öğeyi/öğeleri tanımlayan anahtar belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -288,7 +288,7 @@ Temel sınıf için belgelere bakın [CRBTree](../../atl/reference/crbtree-class
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CRBTree sınıfı](../../atl/reference/crbtree-class.md)   
-[CAtlMap sınıfı](../../atl/reference/catlmap-class.md)   
-[CRBMap sınıfı](../../atl/reference/crbmap-class.md)   
+[CRBTree Sınıfı](../../atl/reference/crbtree-class.md)<br/>
+[CAtlMap Sınıfı](../../atl/reference/catlmap-class.md)<br/>
+[CRBMap Sınıfı](../../atl/reference/crbmap-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

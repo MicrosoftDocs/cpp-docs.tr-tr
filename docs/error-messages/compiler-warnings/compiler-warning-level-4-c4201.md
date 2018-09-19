@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56805506c112d0d92b627b905199bcbbeae8d2f7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 702ce23333e29548e9bfe092c15ae60c5652168e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292298"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096944"
 ---
 # <a name="compiler-warning-level-4-c4201"></a>Derleyici Uyarısı (düzey 4) C4201
-kullanılan standart olmayan uzantısı: Adsız struct/birleşim  
-  
- Microsoft Uzantıları (/Ze) altında bir bildirimcisi olmadan bir yapı başka bir yapı veya birleşim üyeleri olarak belirtebilirsiniz. Bu yapıları ANSI Uyumluluğu altında bir hata oluştur ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4201.cpp  
-// compile with: /W4  
-struct S  
-{  
-   float y;  
-   struct  
-   {  
-      int a, b, c;  // C4201  
-   };  
-} *p_s;  
-  
-int main()  
-{  
-}  
+
+Standart olmayan uzantı kullanıldı: Adsız yapı/birleşim
+
+Microsoft Uzatmaları (/Ze) altında bir bildirimcide olmadan bir yapının başka bir yapı veya birleşim üyesi olarak belirtebilirsiniz. Bu yapılar, ANSI Uyumluluğu altında bir hata oluştur ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
+
+## <a name="example"></a>Örnek
+
+```
+// C4201.cpp
+// compile with: /W4
+struct S
+{
+   float y;
+   struct
+   {
+      int a, b, c;  // C4201
+   };
+} *p_s;
+
+int main()
+{
+}
 ```

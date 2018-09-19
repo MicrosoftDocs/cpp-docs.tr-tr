@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 338612527555dff6331ceaeef5e3b3dba0949d51
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1438473ff4fa45bf4000cb273ad3817d5673f219
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300104"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094435"
 ---
 # <a name="command-line-error-d8022"></a>Komut Satırı Hatası D8022
-'messagefile' açılamıyor  
-  
- Verilen dosya geçerli dizinde olmayan veya PATH ortam değişkeninde belirtilen bir dizinde oldu. İleti dosyası derleyici komut satırı sözdizimi ve Seçenekler kısa bir özeti içerir.  
-  
- Bu dosya geçerli dizinde veya geçerli yolda bir dizin taşıyın. Bu dosya bulunamıyorsa, dağıtım disklerinden kopyalamak için Kurulum programını çalıştırın.
+
+'messagefile' açılamıyor
+
+Söz konusu dosyanın geçerli dizin veya yol ortam değişkeninde belirtilen dizinde oluştu. İleti dosyası derleyici komut satırı sözdizimi ve seçenekleri kısa bir özetini içerir.
+
+Bu dosya geçerli dizinde veya geçerli yolda dizin taşıyın. Bu dosya bulunamazsa, dağıtım disklerden kopyalamak için Kurulum programını çalıştırın.

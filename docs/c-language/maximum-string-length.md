@@ -17,23 +17,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f95f4cb279c7e13d9500fbf5ce90a8ed82d55307
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 82bf6ef1f868ee182d3bef038ba87b07e85419db
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32386109"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095554"
 ---
 # <a name="maximum-string-length"></a>Maksimum Dize Uzunluğu
-**Microsoft özel**  
-  
- ANSI uyumluluğu birleştirme sonra bir dize sabit değeri içinde en çok 509 karakterleri kabul etmek için bir derleyici gerektirir. Microsoft C izin verilen uzunluk sınırını bir değişmez dize değeri, yaklaşık 2.048 bayttır. Ancak, dize sabit değeri çift tırnak işaretleri içine bölümleri oluşuyorsa önişlemci bölümleri tek bir dize halinde birleştirir ve birleştirilmiş her satır için fazladan bir bayt toplam bayt sayısı ekler.  
-  
- Örneğin, bir dize 40 satırları satır (2.000 karakter) başına 50 karakterden oluşur ve 7 karakter içeren bir satır ve her satırın çift tırnak işaretleri arasına varsayalım. Bu, en fazla 2.007 bayt artı bir bayt toplam 2,008 bayt için sonlandırma null karakter ekler. Birleştirme üzerinde satırların her biri ilk 40 için fazladan bir karakteri eklenir. Bu, toplam 2.048 bayt hale getirir. Unutmayın, ancak olması durumunda satır devamlılıklar (\\) kullanılan çift tırnak işaretleri yerine her satır için fazladan bir karakter önişlemci eklemez.  
-  
- Sınırlandırılmış bir kişinin 2048 bayttan daha uzun olamaz olsa da, bir dize hazır değer kabaca 65535 bayt dizeleri birleştirme tarafından oluşturulabilir.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Dize Değişmez Değerleri](../c-language/c-string-literals.md)
+
+**Microsoft'a özgü**
+
+ANSI uyumluluğu birleştirme sonra bir dize sabit değerinde en fazla 509 karakterleri kabul etmek için bir derleyici gerektirir. Microsoft C'de izin verilen uzunluk dize sabitinin yaklaşık 2.048 bayttır. Ancak, dize sabit değeri çift tırnak işareti içine alınmış bölümlerinin oluşuyorsa, önişlemci bölümleri tek bir dize olarak sıralar ve birleştirilmiş her satır için fazladan bir bayt toplam bayt sayısı ekler.
+
+Örneğin, bir dize olan 40 satır satır (2.000 karakter) başına 50 karakterden oluşur ve 7 karakter içeren bir satır ve her satır çift tırnak işaretleri arasına varsayalım. Bu kadar 2.007 bayt artı tek baytlık 2,008 bayt toplam sondaki null karakter ekler. Birleştirme üzerinde bir ek karakter her ilk 40 satırlar eklenir. Bu, 2.048 bayt toplam hale getirir. Not, ancak devamlılıklar satır olması durumunda (\\) kullanılan yerine çift tırnak işareti, önişlemcinin her satır için bir ek karakter eklemez.
+
+Sınırlandırılmış bir kişi 2048 bayttan daha uzun olamaz, ancak bir dize sabit değeri kabaca 65535 bayt dizeleri birleştirerek oluşturulabilir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Dize Değişmez Değerleri](../c-language/c-string-literals.md)

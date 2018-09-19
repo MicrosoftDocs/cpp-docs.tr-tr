@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d378c92fbeff4e8738450e2e49c42c00bd46a6c6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0a68f047309d0a83bc1e0eb86f0651c3f20f310c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33258081"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093785"
 ---
 # <a name="compiler-error-c3386"></a>Derleyici Hatası C3386
-'type': __declspec(dllexport) /\_yönetilen veya WinRTtype _declspec(dllimport) uygulanamaz  
-  
- `dllimport` Ve [dllexport](../../cpp/dllexport-dllimport.md) `__declspec` değiştiricileri yönetilen veya Windows çalışma zamanı geçerli olmayan türü.  
-  
- Aşağıdaki örnek C3386 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C3386.cpp  
-// compile with: /clr /c  
-ref class __declspec(dllimport) X1 {   // C3386  
-// try the following line instead  
-// ref class X1 {  
-};  
+
+'type': __declspec(dllexport) /\_yönetilen veya WinRTtype _declspec(dllimport) uygulanamaz
+
+`dllimport` Ve [dllexport](../../cpp/dllexport-dllimport.md) `__declspec` değiştiriciler, yönetilen veya Windows çalışma zamanı geçerli olmayan türü.
+
+Aşağıdaki örnek, C3386 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C3386.cpp
+// compile with: /clr /c
+ref class __declspec(dllimport) X1 {   // C3386
+// try the following line instead
+// ref class X1 {
+};
 ```

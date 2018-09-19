@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8fa9d2c0aeae56ea678a9f2aa2cbfabfc43e71c5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f485d26ac2a05cc91a1c918c63e319e893b8cf95
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33222400"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103158"
 ---
 # <a name="compiler-error-c2319"></a>Derleyici Hatası C2319
-Bileşik deyim tarafından ' try/catch' gelmelidir. Eksik ' {'  
-  
- A `try` veya `catch` blok bulunamadı aşağıdaki `try` veya `catch` deyimi. Blok kaşlı ayraç içine alınması gerekir.  
-  
- Aşağıdaki örnek C2319 oluşturur:  
-  
-```  
-// C2319.cpp  
-// compile with: /EHsc  
-#include <eh.h>  
-class C {};  
-int main() {  
-   try {  
-      throw "ooops!";  
-   }  
-   catch( C ) ;    // C2319  
-   // try the following line instead  
-   // catch( C ) {}  
-}  
+
+' try/catch' bileşik deyim gelmelidir. Eksik ' {'
+
+A `try` veya `catch` blok, aşağıdaki nebyly nalezeny `try` veya `catch` deyimi. Blok küme ayraçları içine alınmalıdır.
+
+Aşağıdaki örnek, C2319 oluşturur:
+
+```
+// C2319.cpp
+// compile with: /EHsc
+#include <eh.h>
+class C {};
+int main() {
+   try {
+      throw "ooops!";
+   }
+   catch( C ) ;    // C2319
+   // try the following line instead
+   // catch( C ) {}
+}
 ```

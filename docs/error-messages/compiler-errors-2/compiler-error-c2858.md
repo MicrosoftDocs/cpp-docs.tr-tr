@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eabeb17a437b0267e659e2bae74489a22a3551e7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cc87f8ceda2daa9a1129b401a20314c082b6452b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245410"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095618"
 ---
 # <a name="compiler-error-c2858"></a>Derleyici Hatası C2858
-komut satırı seçeneği ' /Yc (/ Fdfilename)' kullanılan önceden derlenmiş üst bilgi tutarsız ' / Fdfilename'  
-  
- Kullanım önceden derlenmiş üstbilgi tarafından belirtilen program veritabanı ([/Yu](../../build/reference/yu-use-precompiled-header-file.md)) seçeneği önceki oluşturmak önceden derlenmiş üstbilgi'tarafından belirtilen bir değil ([/Yc](../../build/reference/yc-create-precompiled-header-file.md)) seçeneği.
+
+komut satırı seçeneği ' /Yc (/ Fdfilename)' kullanılan önceden derlenmiş üstbilgiyle tutarsız ' / Fdfilename'
+
+Kullanım önceden derlenmiş üst bilgi tarafından belirtilen program veritabanı ([/Yu](../../build/reference/yu-use-precompiled-header-file.md)) seçeneği önceki oluşturma önceden derlenmiş üstbilgi'tarafından belirtilen değil ([/Yc](../../build/reference/yc-create-precompiled-header-file.md)) seçeneği.

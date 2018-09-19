@@ -15,39 +15,42 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f9ee05b55a0945d18e78dc67df5653c06c8a1bc
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 04e681560854be4c93b1c93786d38771c07244ea
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404388"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099583"
 ---
 # <a name="calling-example-function-prototype-and-call"></a>Çağırma Örneği: İşlev Prototipi ve Çağrı
-## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Aşağıdaki örnek, çeşitli çağırma kurallarını kullanarak bir işlevi çağırmak sonuçlarını gösterir.  
-  
- Bu örnek, aşağıdaki işlev çatıyı üzerinde temel alır. Değiştirin `calltype` uygun çağırma kuralı.  
-  
-```  
-void    calltype MyFunc( char c, short s, int i, double f );  
-.  
-.  
-.  
-void    MyFunc( char c, short s, int i, double f )  
-    {  
-    .  
-    .  
-    .  
-    }  
-.  
-.  
-.  
-MyFunc ('x', 12, 8192, 2.7183);  
-```  
-  
- Daha fazla bilgi için [çağırma örneği sonuçları](../cpp/results-of-calling-example.md).  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Çağırma Kuralları](../cpp/calling-conventions.md)
+
+## <a name="microsoft-specific"></a>Microsoft'a Özgü
+
+Aşağıdaki örnek, çeşitli çağırma kurallarını kullanarak bir işlevi çağırmak sonuçlarını gösterir.
+
+Bu örnek, aşağıdaki işlev çatıyı üzerinde temel alır. Değiştirin `calltype` uygun çağırma kuralı.
+
+```
+void    calltype MyFunc( char c, short s, int i, double f );
+.
+.
+.
+void    MyFunc( char c, short s, int i, double f )
+    {
+    .
+    .
+    .
+    }
+.
+.
+.
+MyFunc ('x', 12, 8192, 2.7183);
+```
+
+Daha fazla bilgi için [çağırma örneği sonuçları](../cpp/results-of-calling-example.md).
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Çağırma Kuralları](../cpp/calling-conventions.md)

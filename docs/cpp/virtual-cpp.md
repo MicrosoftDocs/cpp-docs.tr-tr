@@ -20,40 +20,44 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84035f2007f3c45c33c1dfa342caf5c788580205
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 2471dac12db574aa045142a654effafadbabd732
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39460925"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092279"
 ---
 # <a name="virtual-c"></a>virtual (C++)
-**Sanal** anahtar sözcüğü, bir sanal işlev ya da sanal bir temel sınıf bildirir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-virtual [type-specifiers] member-function-declarator  
-virtual [access-specifier] base-class-name  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *tür tanımlayıcıları*  
- Sanal üye işlevi dönüş türünü belirtir.  
-  
- *üye işlevinin bildirimcisi*  
- Bir üye işlev bildirir.  
-  
- *erişim belirticisi*  
- Temel sınıf için erişim düzeyini tanımlar **genel**, **korumalı** veya **özel**. Önce veya sonra görünebilir **sanal** anahtar sözcüğü.  
-  
- *temel sınıf adı*  
- Daha önce bildirilen sınıf türü tanımlar.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bkz: [sanal işlevler](../cpp/virtual-functions.md) daha fazla bilgi için.  
-  
- Aşağıdaki anahtar sözcükler Ayrıca bkz: [sınıfı](../cpp/class-cpp.md), [özel](../cpp/private-cpp.md), [genel](../cpp/public-cpp.md), ve [korumalı](../cpp/protected-cpp.md).  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)
+
+**Sanal** anahtar sözcüğü, bir sanal işlev ya da sanal bir temel sınıf bildirir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+virtual [type-specifiers] member-function-declarator
+virtual [access-specifier] base-class-name
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*tür tanımlayıcıları*<br/>
+Sanal üye işlevi dönüş türünü belirtir.
+
+*üye işlevinin bildirimcisi*<br/>
+Bir üye işlev bildirir.
+
+*erişim belirticisi*<br/>
+Temel sınıf için erişim düzeyini tanımlar **genel**, **korumalı** veya **özel**. Önce veya sonra görünebilir **sanal** anahtar sözcüğü.
+
+*temel sınıf adı*<br/>
+Daha önce bildirilen sınıf türü tanımlar.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bkz: [sanal işlevler](../cpp/virtual-functions.md) daha fazla bilgi için.
+
+Aşağıdaki anahtar sözcükler Ayrıca bkz: [sınıfı](../cpp/class-cpp.md), [özel](../cpp/private-cpp.md), [genel](../cpp/public-cpp.md), ve [korumalı](../cpp/protected-cpp.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ebd514b0135de4ac438b406201dc069257d1bce
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e34b6d3764c0096e30c0e1f27c36194fd5d44110
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752480"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088832"
 ---
 # <a name="atl-encoding-reference"></a>ATL Kodlama Başvurusu
 
@@ -54,6 +54,6 @@ Bir dizi onaltılık uuencode gibi ortak Internet standartları ve UTF8 Kodlamas
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kavramları](../atl/active-template-library-atl-concepts.md)   
+[Kavramları](../atl/active-template-library-atl-concepts.md)<br/>
 [ATL COM Masaüstü Bileşenleri](../atl/atl-com-desktop-components.md)
 

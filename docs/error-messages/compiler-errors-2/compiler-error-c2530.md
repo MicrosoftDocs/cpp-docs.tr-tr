@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b226ef5ca0e839c745e13d4118264a69ca408db
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f41f9ec64e2074ed5e0cd2654f2b6bfec886bc07
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229408"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103201"
 ---
 # <a name="compiler-error-c2530"></a>Derleyici Hatası C2530
-'tanımlayıcısı': başvuruları başlatılmalı  
-  
- Bunu bildirildi, zaten bildirilir sürece bir başvuru başlatması gerekir:  
-  
--   Anahtar sözcüğüyle [extern](../../cpp/using-extern-to-specify-linkage.md).  
-  
--   Sınıf, yapı veya birleşim üyesi olarak (ve oluşturucuda başlatılır).  
-  
--   İşlevi bildiriminde ya da tanımı bir parametre olarak.  
-  
--   Bir işlevin dönüş türü olarak.  
-  
- Aşağıdaki örnek C2530 oluşturur:  
-  
-```  
-// C2530.cpp  
-int main() {  
-   int i = 0;  
-   int &j;   // C2530  
-   int &k = i;   // OK  
-}  
+
+'identifier': başvuruların başlatılması gerekir
+
+Bunu bildirildi, zaten bildirildiği sürece bir başvuruyu başlatmak gerekir:
+
+- Anahtar sözcüğü ile [extern](../../cpp/using-extern-to-specify-linkage.md).
+
+- Bir sınıf, yapı veya birleşim üyesi olarak (ve oluşturucuda başlatılır).
+
+- Bir işlev bildirimini veya tanımını parametre olarak.
+
+- Bir işlevin dönüş türü olarak.
+
+Aşağıdaki örnek, C2530 oluşturur:
+
+```
+// C2530.cpp
+int main() {
+   int i = 0;
+   int &j;   // C2530
+   int &k = i;   // OK
+}
 ```

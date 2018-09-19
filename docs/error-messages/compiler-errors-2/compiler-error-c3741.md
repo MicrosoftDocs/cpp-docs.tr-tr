@@ -16,41 +16,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67c1bdb78a48571f58b59930615bc3251f3eeea5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 531b2765bb829a6278bf2d1ca663733f6279b1b4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33266230"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106904"
 ---
 # <a name="compiler-error-c3741"></a>Derleyici Hatası C3741
-'class': bir coclass'ı olmalıdır, event_receiver 'layout_dependent' parametresinin = true  
-  
- Zaman `layout_dependent=true` için bir [event_receiver](../../windows/event-receiver.md) sınıfı, ardından sınıf de olmalıdır [coclass](../../windows/coclass.md) özniteliği.  
-  
- Aşağıdaki örnek C3741 oluşturur  
-  
-```  
-// C3741.cpp  
-// compile with: /c  
-// C3741 expected  
-#define _ATL_ATTRIBUTES 1  
-#include <atlbase.h>  
-#include <atlcom.h>  
-[module(name="xx")];  
-  
-[object, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface I{ HRESULT f(); };  
-  
-// Delete the following line to resolve.  
-[ event_receiver(com, layout_dependent=true)]  
-  
-// class or struct must be declared with coclass  
-// Uncomment the following line to resolve.  
-// [ event_receiver(com, layout_dependent=true), coclass, uuid("00000000-0000-0000-0000-000000000002")]  
-struct R : I {  
-   HRESULT f(){ return 0; }  
-   R(){}  
-   R(I* a){ __hook(I, a); }  
-};  
+
+'class': bir coclass olmalıdır, event_receiver'ın 'layout_dependent' parametresi = true
+
+Zaman `layout_dependent=true` için bir [event_receiver](../../windows/event-receiver.md) sınıfı ve ardından sınıf de olmalıdır [coclass'ı](../../windows/coclass.md) özniteliği.
+
+Aşağıdaki örnek C3741 oluşturur
+
+```
+// C3741.cpp
+// compile with: /c
+// C3741 expected
+#define _ATL_ATTRIBUTES 1
+#include <atlbase.h>
+#include <atlcom.h>
+[module(name="xx")];
+
+[object, uuid("00000000-0000-0000-0000-000000000001")]
+__interface I{ HRESULT f(); };
+
+// Delete the following line to resolve.
+[ event_receiver(com, layout_dependent=true)]
+
+// class or struct must be declared with coclass
+// Uncomment the following line to resolve.
+// [ event_receiver(com, layout_dependent=true), coclass, uuid("00000000-0000-0000-0000-000000000002")]
+struct R : I {
+   HRESULT f(){ return 0; }
+   R(){}
+   R(I* a){ __hook(I, a); }
+};
 ```

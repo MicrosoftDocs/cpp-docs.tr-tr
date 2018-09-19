@@ -16,72 +16,73 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed27398ea1f51ccc2ef0d3339446b422c7a503c0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f00516a3aa9cb2e88f47e81ad27890247a725733
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33172319"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107487"
 ---
 # <a name="compiler-error-c2247"></a>Derleyici Hatası C2247
-'tanımlayıcısı' 'class', ' sınıfından ' için 'tanımlayıcısı' kullandığından erişilemiyor  
-  
- `identifier` Özel veya korumalı erişimle bildirilen sınıfından devralınır.  
-  
- Aşağıdaki örnek C2247 oluşturur:  
-  
-```  
-// C2247.cpp  
-class A {  
-public:  
-   int i;  
-};  
-class B : private A {};    // B inherits a private A  
-class C : public B {} c;   // so even though C's B is public  
-int j = c.i;               // C2247, i not accessible  
-```  
-  
- Bu hata için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucunda da oluşturulabilir: erişim denetimi ile korumalı üyeleri. Korumalı üye (n) yalnızca bir üye işlevi, (n) üyesi olduğu (A) sınıftan bir sınıfın (B) üzerinden erişilebilir.  
-  
- Geçerli Visual Studio .NET 2003 ve Visual Studio .NET sürümlerini Visual C++ kodu için bir arkadaş türü olmasını üyesi bildirin. Ortak devralma de kullanılabilir.  
-  
-```  
-// C2247b.cpp  
-// compile with: /c  
-// C2247 expected  
-class A {  
-public:  
-   void f();  
-   int n;  
-};  
-  
-class B: protected A {  
-   // Uncomment the following line to resolve.  
-   // friend void A::f();  
-};  
-  
-void A::f() {  
-   B b;  
-   b.n;  
-}  
-```  
-  
- C2247 de oluşturulabilir için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucunda: özel temel erişilemez sınıflar şimdi. Özel bir taban sınıf türü için bir sınıf (A) (C) B temel sınıf olarak kullanan bir türü için erişilebilir olmamalıdır (B).  
-  
- Visual Studio .NET 2003 ve Visual Studio .NET Visual C++ sürümü geçerli kod kapsam işleci kullanın.  
-  
-```  
-// C2247c.cpp  
-// compile with: /c  
-struct A {};  
-  
-struct B: private A {};  
-  
-struct C : B {  
-   void f() {  
-      A *p1 = (A*) this;   // C2247  
-      // try the following line instead  
-      // ::A *p2 = (::A*) this;  
-   }  
-};  
+
+'identifier' 'class', ' sınıfından ' için 'belirticisi' kullandığından erişilemiyor
+
+`identifier` Özel veya korumalı erişimle bildirilen bir sınıftan devralınır.
+
+Aşağıdaki örnek, C2247 oluşturur:
+
+```
+// C2247.cpp
+class A {
+public:
+   int i;
+};
+class B : private A {};    // B inherits a private A
+class C : public B {} c;   // so even though C's B is public
+int j = c.i;               // C2247, i not accessible
+```
+
+Bu hata için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucu olarak da oluşturulabilir: erişim denetimi ile korumalı üyeler. Korumalı bir üye (n), yalnızca bir üye işlevi, (n) üyesi olduğu sınıfından (A) devralan bir sınıfın (B) üzerinden erişilebilir.
+
+Visual Studio .NET 2003 ve Visual Studio .NET Visual C++ sürümü geçerli kod üyesinin bir arkadaş türü bildirin. Genel devralma de kullanılabilir.
+
+```
+// C2247b.cpp
+// compile with: /c
+// C2247 expected
+class A {
+public:
+   void f();
+   int n;
+};
+
+class B: protected A {
+   // Uncomment the following line to resolve.
+   // friend void A::f();
+};
+
+void A::f() {
+   B b;
+   b.n;
+}
+```
+
+C2247 da oluşturulabilir için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucu: özel temel erişilemez sınıfların artık. Özel bir temel sınıf türüne bir sınıf (A) (C) B bir taban sınıfı olarak kullanan bir türü için erişilebilir olmamalıdır (B).
+
+Visual Studio .NET 2003 ve Visual Studio .NET Visual C++ sürümü geçerli kod kapsamı işlecini kullanın.
+
+```
+// C2247c.cpp
+// compile with: /c
+struct A {};
+
+struct B: private A {};
+
+struct C : B {
+   void f() {
+      A *p1 = (A*) this;   // C2247
+      // try the following line instead
+      // ::A *p2 = (::A*) this;
+   }
+};
 ```

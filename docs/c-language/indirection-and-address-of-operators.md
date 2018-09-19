@@ -1,5 +1,5 @@
 ---
-title: Yöneltmesi ve adresi işleçlerin | Microsoft Docs
+title: Yöneltme ve adres işleçleri | Microsoft Docs
 ms.custom: ''
 ms.date: 02/16/2018
 ms.technology:
@@ -25,37 +25,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75afd44b8c0a31d9f3731a4c6f9fb86c15de4328
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 618a8053bea59896615d23514c2cf8aff29bea93
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389426"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087493"
 ---
 # <a name="indirection-and-address-of-operators"></a>İşleçlerin Yöneltmesi ve Adresi
 
-Birli indirection işleci (__&#42;__) bir değer bir işaretçi dolaylı olarak erişir. İşlenen bir işaretçi türü olmalıdır. İşlemin sonucu, işlenen tarafından ele alınan değerdir; yani işlenenin işaret ettiği adresteki değerdir. Sonucun türü, işlenenin ele aldığı türdür.
+Birli yöneltme işleci (__&#42;__) bir değere işaretçi aracılığıyla dolaylı olarak erişir. İşlenen bir işaretçi türü olmalıdır. İşlemin sonucu, işlenen tarafından ele alınan değerdir; yani işlenenin işaret ettiği adresteki değerdir. Sonucun türü, işlenenin ele aldığı türdür.
 
-İndirection işleci sonucu *türü* işlenenin türü ise *yazmak için işaretçi*. İşlenen bir işleve işaret ediyorsa, sonuç bir işlev göstergesidir. Bir nesneye işaret ediyorsa, nesne atayan bir lvalue sonucudur.
+Yöneltme işlecinin sonucu *türü* işlenenin türü ise *işaretçi türüne*. İşlenen bir işleve işaret ediyorsa, sonuç bir işlev göstergesidir. Bir nesneye işaret ediyorsa sonuç nesneyi gösteren bir lvalue olur.
 
-İndirection işleci sonucunu işaretçi değeri geçerli değil, tanımlanmamıştır. Bu işaretçi değeri geçersiz kılmak en yaygın koşulların bazıları şunlardır:
+İşaretçi değeri geçersizse, yöneltme işlecinin sonucu tanımsızdır. Bir işaretçi değerini geçersiz kılan en yaygın koşulların bazılarını şunlardır:
 
 - İşaretçi, bir null işaretçidir.
 
-- İşaretçinin nesneyi adresini başvurusu aynı anda yaşam süresi (örneğin, bir nesne kapsam dışında gitti veya, serbest) bitişinden sonra belirtir.
+- İşaretçi başvurusu zamanında bir nesnenin adresini (örneğin, bir nesne kapsam dışına gitti veya, serbest bırakılmış) yaşam süresi dolduktan sonra belirtir.
 
 - İşaretçi, işaret edilen nesnenin türü için uygun olmayan bir şekilde hizalanmış bir adresi belirtir.
 
 - İşaretçi, yürütülen program tarafından kullanılmayan bir adresi belirtir.
 
-Address-of birli işleci (**&**), işlenen adresini verir. İşleneni, bildirilmemiş olan bir nesne atayan bir ya da lvalue olmalıdır __kaydetmek__ ve bit alanı ya da bir tekli sonucunu __&#42;__ işleci veya bir dizi başvuru (__&#91; &#93;__) operatör ya da bir işlevi tanımlayıcı. Sonuç türü olan *yazmak için işaretçi* bir işlenen türü için *türü*.
+Birli adres işleci (**&**), işlenenin adresini verir. İşlenen, bildirilmemiş bir nesneyi gösteren bir ya da bir lvalue olmalıdır __kaydetme__ ve bir bit alanına ya da bir tekli sonucunu __&#42;__ işleci veya bir dizi başvurma (__&#91; &#93;__) işleci veya bir işlev göstergesi. Sonuç türünde *işaretçi türüne* türünde bir işlenen için *türü*.
 
-İşlenen bir tekli sonucunu ise __&#42;__ işleci, hiçbiri işleci değerlendirilir ve her ikisi de atlanmış gibi sonucudur. Sonuç bir lvalue değil ve işleçler kısıtlamalar hala geçerlidir. İşlenen sonucu ise bir __&#91; &#93;__ işleci, hiçbiri __&__ ya da birli işleç __&#42;__ tarafındankapsanan __&#91; &#93;__ işleci değerlendirildiği. Sonucu kaldırma aynı etkiye sahip __&__ işleci ve değiştirme __&#91; &#93;__ işleci bir __+__ işleci. Aksi takdirde, sonuç nesnesi veya işlenen tarafından belirlenen işlevi bir işaretçidir.
-
+İşlenen bir tekli sonucunu ise __&#42;__ işleci, hiçbiri işleci değerlendirilir ve her ikisi de atlanmış gibi sonucudur. Sonuç bir lvalue değildir ve işleçler kısıtlamalar hala geçerlidir. İşlenen sonucunu ise bir __&#91; &#93;__ işleci, hiçbiri __&__ ya da birli işleç __&#42;__ tarafındankapsanan __&#91; &#93;__ işleci değerlendirilir. Sonuç kaldırma aynı etkiye sahip __&__ işleci ve değiştirme __&#91; &#93;__ işleci bir __+__ işleci. Aksi halde, sonuç nesne veya işlev işlenen tarafından belirlenen şekilde bir işaretçisidir.
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnekler, bu ortak bildirimleri kullanın:
+Aşağıdaki örnekler, yaygın Bu bildirimler kullanılmaktadır:
 
 ```C
 int *pa, x;
@@ -63,25 +62,25 @@ int a[20];
 double d;
 ```
 
-Address-of işleci bu bildirimi kullanır (**&**) dizisinin altıncı öğesi adresini yapılacak `a`. Sonuç işaretçi değişkende depolanır `pa`:
+Bu deyim adres işlecini kullanır (**&**) dizisinin altıncı öğesinin adresini almak için `a`. Sonuç işaretçi değişkeninde depolanır `pa`:
 
-```C  
+```C
 pa = &a[5];
 ```
 
-İndirection işleci (__&#42;__) erişmek için bu örnekte kullanılan `int` depolanan adresi değerinde `pa`. Değer tamsayı değişkenine atanan `x`:
+Yöneltme işleci (__&#42;__) erişmek için bu örnekte kullanılan `int` değeri depolanan adresteki `pa`. Değer tamsayı değişkenine atanır `x`:
 
 ```C
 x = *pa;
 ```
 
-Bu örnekte gösterilmiştir adresine indirection işleci uygulanıyor sonucunu `x` aynı `x`:
+Bu örnek, gösterir yöneltme işleci adresine sonucu `x` aynı `x`:
 
 ```C
 assert( x == *&x );
 ```
 
-Bu örnek, bir işlev işaretçisi bildirme eşdeğer yollarını gösterir:
+Bu örnek için bir işleve işaretçi bildirme eşdeğer yöntemler gösterilmektedir:
 
 ```C
 int roundup( void );     /* Function declaration */
@@ -89,11 +88,11 @@ int roundup( void );     /* Function declaration */
 int  *proundup  = roundup;
 int  *pround  = &roundup;
 assert( pround == proundup );
-```  
+```
 
 `roundup` işlevi bildirildiğinde, iki `roundup` işaretçisi bildirilir ve başlatılır. İlk işaretçi `proundup` yalnızca işlevin adı kullanılarak başlatılır, ikinci işaretçi `pround` ise başlatma sırasında adres işlecini kullanır. Başlatma işlemleri eşdeğerdir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönlendirme işleci:&#42;](../cpp/indirection-operator-star.md)  
-[Address-of İşleci: &](../cpp/address-of-operator-amp.md)  
+[Yöneltme işleci:&#42;](../cpp/indirection-operator-star.md)<br/>
+[Address-of İşleci: &](../cpp/address-of-operator-amp.md)

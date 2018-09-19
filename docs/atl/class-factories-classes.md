@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41068a81d52c0e30ef95cf364d759f35a39140c9
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 414a37d51d39c94e022c726a5c8ede20504de5eb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760022"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095748"
 ---
 # <a name="class-factories-classes"></a>Sınıf üreteci sınıfları
 
@@ -40,6 +40,6 @@ Aşağıdaki sınıflar uygulamak ya da bir sınıf üreteci destekler:
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfına genel bakış](../atl/atl-class-overview.md)   
+[Sınıfına genel bakış](../atl/atl-class-overview.md)<br/>
 [Toplama ve Sınıf Üreticisi Makroları](../atl/reference/aggregation-and-class-factory-macros.md)
 

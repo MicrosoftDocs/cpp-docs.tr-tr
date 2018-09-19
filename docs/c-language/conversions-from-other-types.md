@@ -15,27 +15,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e919782022ee64f657611a14d6eae6173a67b8c0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b443526248eb09accce8b35133235c71c06c2627
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382685"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094591"
 ---
 # <a name="conversions-from-other-types"></a>Diğer türlerden dönüştürmeler
 
-Bu yana bir **enum** değeri bir **int** tanımı gereği, dönüştürme ve ondan değeri bir **enum** değer için aynı olan **int** türü. İçin Microsoft C derleyicisi bir tamsayı aynı olan bir **uzun**.
+Bu yana bir **enum** değeri bir **int** tanımı gereği, dönüştürme ve ondan değeri bir **enum** değere eşit olanlar için aynı olan **int** türü. Microsoft C derleyicisi için bir tamsayı ile aynı olan bir **uzun**.
 
-**Microsoft özel**
+**Microsoft'a özgü**
 
 Yapı veya birleşim türleri arasında dönüştürme yapılmasına izin verilmez.
 
-Herhangi bir değer türüne dönüştürülebilir **void**, ancak böyle bir dönüştürme sonucu atılan, örn. bir ifade deyimi bir ifade değeri olduğu yalnızca bağlamında kullanılabilir.
+Herhangi bir değer türüne dönüştürülebilir **void**, ancak böyle bir dönüştürme sonucu olarak atılan, bir ifade deyimi olduğu gibi bir ifade değeri olduğu bir bağlamda kullanılabilir.
 
-**Void** türü tanımı tarafından herhangi bir değer içeriyor. Bu nedenle, diğer bir türe dönüştürülemiyor ve diğer türleri dönüştürülemiyor **void** atamaya göre. Ancak, açıkça yazmanız için bir değer çevirebilirsiniz **void**anlatıldığı gibi [tür atama dönüşümleri](../c-language/type-cast-conversions.md).
+**Void** türü tanımı tarafından herhangi bir değer vardır. Bu nedenle, başka bir türe dönüştürülemez ve diğer türleri dönüştürülemez **void** atama. Ancak, açıkça bir değer türüne çevirebilirsiniz **void**bölümünde açıklandığı gibi [tür atama dönüştürmeleri](../c-language/type-cast-conversions.md).
 
-**SON Microsoft özel**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Atama Dönüştürmeleri](../c-language/assignment-conversions.md)  
+[Atama Dönüştürmeleri](../c-language/assignment-conversions.md)

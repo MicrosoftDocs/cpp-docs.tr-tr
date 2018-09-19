@@ -16,36 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69fcacacafba752f77aacd55d5cd57b2c42b5ba9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 375eb419e3f2f492df328a964eeb1bb77bc0d5dd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252690"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106857"
 ---
 # <a name="compiler-error-c3531"></a>Derleyici Hatası C3531
-'simgesi': türü içeren 'auto' bir simge bir başlatıcı olmalıdır  
-  
- Belirtilen değişken Başlatıcısı ifade yok.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
-1.  Eşittir işareti sözdizimi değişkeni bildirirken kullanan basit bir atama gibi bir başlatıcı ifade belirtin.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3531 çünkü verir değişkenleri `x1`, `y1, y2, y3`, ve `z2` başlatılmaz.  
-  
-```  
-// C3531.cpp  
-// Compile with /Zc:auto  
-int main()  
-{  
-   auto x1;                  // C3531  
-   auto y1, y2, y3;          // C3531  
-   auto z1 = 1, z2, z3 = -1; // C3531  
-   return 0;  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)
+
+'symbol': türü, 'auto' içeren bir simgenin bir Başlatıcısı olmalıdır
+
+Belirtilen değişken, bir başlatıcı ifadesinin yok.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+1. Değişken bildirdiğinizde, eşittir işareti sözdizimi kullanan basit bir atama gibi bir başlatıcı ifadesinin belirtin.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, çünkü C3531 verir değişkenleri `x1`, `y1, y2, y3`, ve `z2` başlatılmaz.
+
+```
+// C3531.cpp
+// Compile with /Zc:auto
+int main()
+{
+   auto x1;                  // C3531
+   auto y1, y2, y3;          // C3531
+   auto z1 = 1, z2, z3 = -1; // C3531
+   return 0;
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)

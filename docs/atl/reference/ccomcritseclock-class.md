@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d06b34099ecdb9c61d3580586bcb3bcd73eaf709
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ab3c4b349b64b96b8aeb7a53d6bf8809f41cea7b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755053"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097789"
 ---
 # <a name="ccomcritseclock-class"></a>CComCritSecLock sınıfı
 
@@ -39,7 +39,7 @@ template<class TLock> class CComCritSecLock
 
 #### <a name="parameters"></a>Parametreler
 
-*TLock*  
+*TLock*<br/>
 Kilitli ve kilidi nesne.
 
 ## <a name="members"></a>Üyeler
@@ -76,10 +76,10 @@ CComCritSecLock(TLock& cs, bool bInitialLock = true);
 
 ### <a name="parameters"></a>Parametreler
 
-*cs*  
+*cs*<br/>
 Kritik bölüm nesne.
 
-*bInitialLock*  
+*bInitialLock*<br/>
 İlk kilitleme durumu: **true** kilitli anlamına gelir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -128,5 +128,5 @@ Nesne kilidi zaten açılmış, bir onay hata hata ayıklama yapılarında meyda
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComCriticalSection sınıfı](../../atl/reference/ccomcriticalsection-class.md)   
+[CComCriticalSection Sınıfı](../../atl/reference/ccomcriticalsection-class.md)<br/>
 [CComAutoCriticalSection Sınıfı](../../atl/reference/ccomautocriticalsection-class.md)

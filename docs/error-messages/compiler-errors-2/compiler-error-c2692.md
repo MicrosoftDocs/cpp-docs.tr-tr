@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a02110750a748b5c520df7d202a87957f227a802
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 03a9006889c5853e77b5603484ea9d18f2474241
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231002"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088377"
 ---
 # <a name="compiler-error-c2692"></a>Derleyici Hatası C2692
-'işlev_adı': tam olarak örneklenmiş işlevler C derleyicisi ile gerekli ' / clr' seçeneği  
-  
- Yönetilen kod için .NET derleme C Derleyici ANSI işlev bildirimleri gerektirir. Ayrıca, bir işlev parametre almayan, onu açıkça bildirmelidir `void` parametre türü.
+
+'işlev_adı': gerekli C derleyicisinde tam prototipi oluşturulmuş İşlevler ' / clr' seçeneği
+
+Yönetilen kod için .NET derleme, işlev bildirimleri ANSI C derleyicisi gerektirir. Ayrıca, bir işlev parametre almayan ise, açıkça belirtmesi gerekir `void` parametre türü olarak.

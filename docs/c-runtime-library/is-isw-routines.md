@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98f7edcf115a6fadc741c7f1bcde8f240c93abcc
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: db047c2b16eb67f086bc26976783e829189d4266
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895129"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095111"
 ---
 # <a name="is-isw-routines"></a>is, isw Rutinleri
 
@@ -61,75 +61,75 @@ Bu yordamlar, belirtilen koşullar için karakterleri test edin.
 
 İçin "C" yerel ayarında test koşulları **olduğu** yordamları aşağıdaki gibidir:
 
-`isalnum`  
+`isalnum`<br/>
 Alfasayısal (A - Z, a - z veya 0 - 9).
 
-`isalpha`  
+`isalpha`<br/>
 Alfabetik (A - Z veya a - z).
 
-`__isascii`  
+`__isascii`<br/>
 ASCII karakter (0x00 - 0x7F).
 
-`isblank`  
+`isblank`<br/>
 Yatay sekme veya boşluk karakteri (0x09 veya 0x20).
 
-`iscntrl`  
+`iscntrl`<br/>
 Denetim karakteri (0x00-0x1F veya 0x7F).
 
-`__iscsym`  
+`__iscsym`<br/>
 Harf, alt çizgi veya rakam.
 
-`__iscsymf`  
+`__iscsymf`<br/>
 Harf veya alt çizgi.
 
-`isdigit`  
+`isdigit`<br/>
 Ondalık basamak (0 - 9).
 
-`isgraph`  
+`isgraph`<br/>
 Boşluk () dışında yazdırılabilir karakter.
 
-`islower`  
+`islower`<br/>
 Küçük harf (a - z).
 
-`isprint`  
+`isprint`<br/>
 Boşluk da içinde yazdırılabilir karakter (0x20 - 0x7E).
 
-`ispunct`  
+`ispunct`<br/>
 Noktalama karakteri.
 
-`isspace`  
+`isspace`<br/>
 Boşluk karakteri (0x09-0x0D veya 0x20).
 
-`isupper`  
+`isupper`<br/>
 Büyük harf (A - Z).
 
-`isxdigit`  
+`isxdigit`<br/>
 Onaltılık basamak (A - F, a - f veya 0 - 9).
 
 İçin **isw** rutinleri için belirtilen koşula ilişkin test sonucu yerel ayardan bağımsızdır. Sınama koşulları **isw** işlevleri aşağıdaki gibidir:
 
-`iswalnum`  
+`iswalnum`<br/>
 `iswalpha` veya `iswdigit`.
 
-`iswalpha`  
+`iswalpha`<br/>
 Bir uygulama tanımlı kümesinin öğelerinin hiçbiri biri olan geniş karakter `iswcntrl`, `iswdigit`, `iswpunct`, veya `iswspace` sıfır değil. `iswalpha` geniş karakterler için sıfır olmayan döndüğü `iswupper` veya `iswlower` sıfır değil.
 
-`iswascii`  
+`iswascii`<br/>
 ASCII karakterinin geniş karakter gösterimi (0x0000 - 0x007F).
 
-`iswblank`  
+`iswblank`<br/>
 Geniş karakter standart boşluk karakterine karşılık gelen veya kendisi için geniş karakterlerin uygulama tanımlı bir dizi biri `iswalnum` false'tur. Standart boş karakterler: boşluk (L' ') ve yatay sekmedir (L '\t').
 
-`iswcntrl`  
+`iswcntrl`<br/>
 Geniş karakteri denetleyin.
 
-`__iswcsym`  
+`__iswcsym`<br/>
 Bir geniş karakter `isalnum` doğru ya da '_' karakteri.
 
-`__iswcsymf`  
+`__iswcsymf`<br/>
 Bir geniş karakter `iswalpha` doğru ya da '_' karakteri.
 
-`iswctype`  
+`iswctype`<br/>
 Karakteri tarafından belirtilen özelliğe sahip `desc` bağımsız değişken. Her bir geçerli değerini `desc` bağımsız değişkeni `iswctype`, aşağıdaki tabloda gösterildiği gibi bir eşdeğer bir geniş karakter sınıflandırma rutini olan:
 
 ### <a name="equivalence-of-iswctypec-desc-to-other-isw-testing-routines"></a>İswctype (c, desc) için diğer isw sınama yordamları denkliği
@@ -150,28 +150,28 @@ Karakteri tarafından belirtilen özelliğe sahip `desc` bağımsız değişken.
 |**_UPPER**|**iswupper (** `c` **)**|
 |**_HEX**|**iswxdigit (** `c` **)**|
 
-`iswdigit`  
+`iswdigit`<br/>
 Bir ondalık basamak karakterine karşılık gelen geniş karakter.
 
-`iswgraph`  
+`iswgraph`<br/>
 Boşluk geniş karakteri dışında yazdırılabilir geniş karakteri (L' ').
 
-`iswlower`  
+`iswlower`<br/>
 Küçük Harf ya da bir uygulama tanımlı kümesinin geniş karakterler öğelerinin hiçbiri `iswcntrl`, `iswdigit`, `iswpunct`, veya `iswspace` sıfır değil. `iswlower` küçük harfe karşılık gelen geniş karakterler için sıfır döndürür.
 
-`iswprint`  
+`iswprint`<br/>
 Boşluk geniş karakteri dahil yazdırılabilir geniş karakteri (L' ').
 
-`iswpunct`  
+`iswpunct`<br/>
 Ne boşluk geniş karakteri yazdırılabilir geniş karakteri (L' ') ne de geniş karakter `iswalnum` sıfır değil.
 
-`iswspace`  
+`iswspace`<br/>
 Geniş karakter standart boşluk karakterine karşılık gelen veya uygulama tanımlı olan geniş karakterler kümesi biri `iswalnum` false'tur. Standart beyaz boşluk karakterleri: boşluk (L' '), form besleme (L '\f'), satır başı karakteri (L '\n'), satır başı (L '\r'), yatay sekme (L '\t') ve dikey sekmedir (L '\v').
 
-`iswupper`  
+`iswupper`<br/>
 Geniş karakter, büyük harf ya da hiçbiri geniş karakterlerin uygulama tanımlı bir dizi biri `iswcntrl`, `iswdigit`, `iswpunct`, veya `iswspace` sıfır değil. `iswupper` büyük harf karakterlere karşılık gelen geniş karakterler için sıfır döndürür.
 
-`iswxdigit`  
+`iswxdigit`<br/>
 Bir onaltılık basamak karakterine karşılık gelen geniş karakter.
 
 ## <a name="example"></a>Örnek
@@ -181,16 +181,16 @@ Bir onaltılık basamak karakterine karşılık gelen geniş karakter.
 /* This program tests all characters between 0x0
 * and 0x7F, then displays each character with abbreviations
 * for the character-type codes that apply.
-*/  
+*/
 
 #include <stdio.h>
 #include <ctype.h>
 
-int main( void )  
-{  
+int main( void )
+{
    int ch;
-   for( ch = 0; ch <= 0x7F; ch++ )  
-   {  
+   for( ch = 0; ch <= 0x7F; ch++ )
+   {
       printf( "%.2x  ", ch );
       printf( " %c", isprint( ch )  ? ch   : ' ' );
       printf( "%4s", isalnum( ch )  ? "AN" : "" );
@@ -208,9 +208,9 @@ int main( void )
       printf( "%3s", isupper( ch )  ? "U"  : "" );
       printf( "%3s", isxdigit( ch ) ? "X"  : "" );
       printf( ".\n" );
-   }  
-}  
-```  
+   }
+}
+```
 
 ## <a name="output"></a>Çıkış
 
@@ -347,8 +347,8 @@ int main( void )
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Karakter Sınıflaması](../c-runtime-library/character-classification.md)   
-[Yerel ayar](../c-runtime-library/locale.md)   
-[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)   
-[Çok baytlı karakter sıralarının yorumu](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
+[Karakter Sınıflaması](../c-runtime-library/character-classification.md)<br/>
+[locale](../c-runtime-library/locale.md)<br/>
+[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
+[Çok Baytlı Karakter Sıralarının Yorumu](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [to İşlevleri](../c-runtime-library/to-functions.md)

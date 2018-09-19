@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d584811e056995e19cac0ec68cb58f25ccc921e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f800fc37d41102044c0b8b88921d8bad216d5984
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322006"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101130"
 ---
 # <a name="resource-compiler-warning-rw4003"></a>Kaynak Derleyicisi Uyarısı RW4003
-SHIFT ya da VIRTKEY kullanılan denetimi  
-  
- Hızlandırıcı tablosu kaynağında SHIFT ya da Denetim VIRTKEY gerektirir. KAYDIRMA ve denetim VIRTKEY Türü Hızlandırıcı bayrağı bit olarak gösterilir çünkü bir VIRTKEY bağımsız bulunamaz.
+
+SHIFT veya VIRTKEY'e kullanılan denetimi
+
+Bir Hızlandırıcı tablo kaynağını VIRTKEY'e SHIFT ya da denetimi gerektirir. SHIFT ve denetim VIRTKEY'e Türü Hızlandırıcı bayrağına bit olarak gösterilir çünkü bir VIRTKEY'E'dan bağımsız bulunamaz.

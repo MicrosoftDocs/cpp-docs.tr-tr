@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b1605c7b12a08b0fdb3701a94b2b5cf2e649c98
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 09b26d60968b9befc3bc9b027b46f09c269dd9a9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243963"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091627"
 ---
 # <a name="compiler-error-c2991"></a>Derleyici Hatası C2991
-tür parametresi 'parametresi' yeniden tanımlama  
-  
- İki genel veya şablon tanımlarını bir tür çakışması vardı `parameter`. Birden çok genel veya şablon parametreleri tanımlarken eşdeğer türlerle kullanmanız gerekir.  
-  
- Aşağıdaki örnek C2991 oluşturur:  
-  
-```  
-// C2991.cpp  
-// compile with: /c  
-template<class T, class T> struct TC {};   // C2991  
-// try the following line instead  
-// template<class T, class T2> struct TC {};  
-```  
-  
- Ayrıca C2991 genel türler kullanma ortaya çıkabilir:  
-  
-```  
-// C2991b.cpp  
-// compile with: /clr /c  
-generic<class T,class T> ref struct GC {};   // C2991  
-// try the following line instead  
-// generic<class T,class T2> ref struct GC {};  
+
+'parameter' tür parametresinin yeniden tanımlanması
+
+İki genel veya şablon tanımları arasında türü çakışma oluştu `parameter`. Birden çok genel veya şablon parametreleri tanımlanırken, eşdeğer türlerle kullanmanız gerekir.
+
+Aşağıdaki örnek, C2991 oluşturur:
+
+```
+// C2991.cpp
+// compile with: /c
+template<class T, class T> struct TC {};   // C2991
+// try the following line instead
+// template<class T, class T2> struct TC {};
+```
+
+C2991, genel türler kullanırken da meydana gelebilir:
+
+```
+// C2991b.cpp
+// compile with: /clr /c
+generic<class T,class T> ref struct GC {};   // C2991
+// try the following line instead
+// generic<class T,class T2> ref struct GC {};
 ```

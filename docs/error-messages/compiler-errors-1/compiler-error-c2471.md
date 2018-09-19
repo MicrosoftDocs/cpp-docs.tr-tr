@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3794a8c91a07283747087d6d2a0471d2342a4b9e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 08faa4b1d83cd75cfe588e5ecf4dcb2fdb9c4366
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197552"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107110"
 ---
 # <a name="compiler-error-c2471"></a>Derleyici Hatası C2471
-Program Veritabanı 'dosya' güncelleştirilemiyor  
-  
- Derleyici veritabanı dosyasına yazamıyor.  
-  
-### <a name="to-fix-the-problem"></a>Sorunu gidermek için  
-  
--   Diskte yeterli boş alana sahip olduğundan emin olun.  
-  
--   Dosyanın salt okunur olmadığından emin olun.  
-  
--   Hiçbir paylaşım ihlalleriyle olduğundan emin olun.
+
+Program Veritabanı 'dosyası' güncellenemiyor
+
+Derleyici veritabanı dosyasına yazamıyor.
+
+### <a name="to-fix-the-problem"></a>Sorunu gidermek için
+
+- Disk üzerindeki kullanılabilir alanın yeterli olduğundan emin olun.
+
+- Dosya salt okunur olmadığından emin olun.
+
+- Hiçbir paylaşım ihlali olmadığından emin olun.

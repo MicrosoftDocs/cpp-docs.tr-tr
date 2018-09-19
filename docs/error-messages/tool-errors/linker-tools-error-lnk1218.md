@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0a0596a648c44be928e6bbbae89734911550c27
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a8808a52724aa3dc1bdfd33fec5945ba40680ca3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298895"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095332"
 ---
 # <a name="linker-tools-error-lnk1218"></a>Bağlayıcı Araçları Hatası LNK1218
-hata olarak kabul uyarı; oluşturulan herhangi bir çıktı dosyası  
-  
- İle bağladığınızda **/WX**bağlayıcı uyarılarını hata olarak kabul edilir ve hiçbir çıktı dosyası oluşturulur.  
-  
- Bkz: [/WX (Bağlayıcı uyarıları hata olarak değerlendir)](../../build/reference/wx-treat-linker-warnings-as-errors.md) daha fazla bilgi için.
+
+Uyarı hata olarak değerlendirildi; Çıkış dosyası üretilmedi
+
+İle bağladığınızda **wx**, herhangi bir bağlayıcı uyarılarını hata olarak kabul edilir ve hiçbir çıktı dosyası oluşturulur.
+
+Bkz: [/WX (Bağlayıcı uyarıları hata olarak değerlendir)](../../build/reference/wx-treat-linker-warnings-as-errors.md) daha fazla bilgi için.

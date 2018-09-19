@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3217ccb0a96fbe02e152ff82dedeb7e8e54b89ea
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b10ce6b67fd24b4b8db01177af0225deab9dba4b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292285"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088013"
 ---
 # <a name="compiler-warning-level-4-c4057"></a>Derleyici Uyarısı (düzey 4) C4057
-'işleci': 'identifier2' den biraz farklı temel türleri için 'identifier1' yöneltme  
-  
- İşaretçi ifadeleri iki farklı temel türlere bakın. İfadeler dönüştürme olmadan kullanılır.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  İmzalı ve imzasız türleri karıştırma.  
-  
-2.  Karıştırma **kısa** ve **uzun** türleri.
+
+'operator': 'identifier2' öğesinden 'ıdentifier1' yöneltme için biraz farklı taban türlerden farklı
+
+İşaretçi ifadeleri iki farklı temel türlere başvurur. İfadeler, dönüştürme olmadan kullanılır.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. İmzalı ve imzasız türlerini karıştırmak.
+
+1. Karıştırma **kısa** ve **uzun** türleri.

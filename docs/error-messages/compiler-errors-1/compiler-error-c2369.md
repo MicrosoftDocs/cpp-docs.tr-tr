@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1c97f8451e6807e6b78148a7027c37ccc967bd4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4cce5784c0ff56498922d83ff61350a6c992c76c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195363"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098194"
 ---
 # <a name="compiler-error-c2369"></a>Derleyici Hatası C2369
-'array': şemadaki; farklı alt simgeler  
-  
- Dizi zaten farklı bir alt simge ile bildirilir.  
-  
- Aşağıdaki örnek C2369 oluşturur:  
-  
-```  
-// C2369.cpp  
-// compile with: /c  
-int a[10];  
-int a[20];   // C2369  
-int b[20];   // OK  
+
+'array': yeniden tanımlama; indisler farklı
+
+Dizi ile farklı bir alt simge zaten bildirildi.
+
+Aşağıdaki örnek, C2369 oluşturur:
+
+```
+// C2369.cpp
+// compile with: /c
+int a[10];
+int a[20];   // C2369
+int b[20];   // OK
 ```

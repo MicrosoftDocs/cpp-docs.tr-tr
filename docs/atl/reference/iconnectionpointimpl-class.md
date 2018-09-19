@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2b3e7a0589c0da4d41cab419fa68039e4f0b62c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4b8d3155dd63afa6deb84349c11b0b086d039c4c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763360"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091328"
 ---
 # <a name="iconnectionpointimpl-class"></a>Iconnectionpointımpl sınıfı
 
@@ -38,19 +38,19 @@ Bu sınıf, bir bağlantı noktası uygular.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<class T, const IID* piid, class CDV = CComDynamicUnkArray>  
+template<class T, const IID* piid, class CDV = CComDynamicUnkArray>
 class ATL_NO_VTABLE IConnectionPointImpl : public _ICPLocator<piid>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `IConnectionPointImpl`.
 
-*piid*  
+*piid*<br/>
 Bağlantı noktası nesnesiyle temsil edilen arabirimi Laboratuvardaki bir işaretçi.
 
-*CDV*  
+*CDV*<br/>
 Bağlantıları yöneten bir sınıf. Varsayılan değer [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), sınırsız sayıda bağlantı sağlar. Ayrıca [CComUnkArray](../../atl/reference/ccomunkarray-class.md), sabit sayıda bağlantı belirtir.
 
 ## <a name="members"></a>Üyeler
@@ -167,5 +167,5 @@ Bkz: [IConnectionPoint::Unadvise](/windows/desktop/api/ocidl/nf-ocidl-iconnectio
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint)   
+[IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

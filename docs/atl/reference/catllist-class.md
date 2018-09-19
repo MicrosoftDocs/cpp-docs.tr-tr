@@ -47,12 +47,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5a24a98e7780a98726df29452a9878c8abf3d81
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 596fe8bb4a656eb5ebdc7bef855b5e6db8ab6196
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756450"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090808"
 ---
 # <a name="catllist-class"></a>CAtlList sınıfı
 
@@ -61,16 +61,16 @@ Bu sınıf, oluşturmak ve bir liste nesnesi yönetmek için yöntemler sağlar.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<typename E, class ETraits = CElementTraits<E>>  
+template<typename E, class ETraits = CElementTraits<E>>
 class CAtlList
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*E*  
+*E*<br/>
 Öğe türü.
 
-*ETraits*  
+*ETraits*<br/>
 Kopyalama veya öğeleri taşıma için kullanılan kod. Bkz: [CElementTraits sınıfı](../../atl/reference/celementtraits-class.md) daha fazla ayrıntı için.
 
 ## <a name="members"></a>Üyeler
@@ -144,7 +144,7 @@ POSITION AddHead(INARGTYPE element);
 
 ### <a name="parameters"></a>Parametreler
 
-*Öğesi*  
+*Öğesi*<br/>
 Yeni öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -169,7 +169,7 @@ void AddHeadList(const CAtlList<E, ETraits>* plNew);
 
 ### <a name="parameters"></a>Parametreler
 
-*plNew*  
+*plNew*<br/>
 Eklenecek listesi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -191,7 +191,7 @@ POSITION AddTail(INARGTYPE element);
 
 ### <a name="parameters"></a>Parametreler
 
-*Öğesi*  
+*Öğesi*<br/>
 Eklenecek öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -216,7 +216,7 @@ void AddTailList(const CAtlList<E, ETraits>* plNew);
 
 ### <a name="parameters"></a>Parametreler
 
-*plNew*  
+*plNew*<br/>
 Eklenecek listesi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -253,7 +253,7 @@ CAtlList(UINT nBlockSize = 10) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBlockSize*  
+*nBlockSize*<br/>
 Blok boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -288,10 +288,10 @@ POSITION Find(INARGTYPE element, POSITION posStartAfter = NULL) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Öğesi*  
+*Öğesi*<br/>
 Listesinde bulunacak öğe.
 
-*posStartAfter*  
+*posStartAfter*<br/>
 Arama için başlangıç konumu. Hiçbir değer belirtilmemişse arama head öğesi ile başlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -316,7 +316,7 @@ POSITION FindIndex(size_t iElement) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*IElement*  
+*IElement*<br/>
 Gerekli bir liste öğesinin sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -344,7 +344,7 @@ const E& GetAt(POSITION pos) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Belirli bir öğenin belirten konum değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -435,7 +435,7 @@ const E& GetNext(POSITION& pos) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Önceki bir çağrı tarafından döndürülen bir konum değeri `GetNext`, [CAtlList::GetHeadPosition](#getheadposition), veya diğer `CAtlList` yöntemi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -463,7 +463,7 @@ const E& GetPrev(POSITION& pos) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Önceki bir çağrı tarafından döndürülen bir konum değeri `GetPrev`, [CAtlList::GetTailPosition](#gettailposition), veya diğer `CAtlList` yöntemi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -543,10 +543,10 @@ POSITION InsertAfter(POSITION pos, INARGTYPE element);
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Sonra yeni öğenin ekleneceği konum değeri.
 
-*Öğesi*  
+*Öğesi*<br/>
 Eklenecek öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -571,10 +571,10 @@ POSITION InsertBefore(POSITION pos, INARGTYPE element);
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Yeni bir öğe, bu konum değeri önce listeye eklenir.
 
-*Öğesi*  
+*Öğesi*<br/>
 Eklenecek öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -615,7 +615,7 @@ void MoveToHead(POSITION pos) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Öğeyi taşımak için konum değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -636,7 +636,7 @@ void MoveToTail(POSITION pos) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Öğeyi taşımak için konum değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -673,7 +673,7 @@ void RemoveAt(POSITION pos) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Kaldırılacak öğe konumu değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -768,10 +768,10 @@ void SetAt(POSITION pos, INARGTYPE element);
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 KONUMU değiştirmek için öğenin karşılık gelen değer.
 
-*Öğesi*  
+*Öğesi*<br/>
 Yeni öğe değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -792,10 +792,10 @@ void SwapElements(POSITION pos1, POSITION pos2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pos1*  
+*pos1*<br/>
 İlk konum değeri.
 
-*pos2*  
+*pos2*<br/>
 İkinci konum değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -808,5 +808,5 @@ Belirtilen iki konumlarda öğeleri değiştirir. Hata ayıklama derlemelerinde,
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CList sınıfı](../../mfc/reference/clist-class.md)   
+[CList Sınıfı](../../mfc/reference/clist-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

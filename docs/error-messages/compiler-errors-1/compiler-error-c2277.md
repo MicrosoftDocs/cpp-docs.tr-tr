@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7338efab684e9812704673ece8585cd58c850b23
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 212ae84917e664116c83df3135577e00cda19446
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171737"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101955"
 ---
 # <a name="compiler-error-c2277"></a>Derleyici Hatası C2277
-'tanımlayıcısı': Bu üye işlevi adresini alamıyor  
-  
- Üye işlevi adresini alamıyor.  
-  
- Aşağıdaki örnek C2277 oluşturur:  
-  
-```  
-// C2277.cpp  
-class A {  
-public:  
-   A();  
-};  
-(*pctor)() = &A::A;   // C2277   
+
+'identifier': Bu üye işlevin adresi alınamaz
+
+Bir üye işlevin adresi alınamaz.
+
+Aşağıdaki örnek, C2277 oluşturur:
+
+```
+// C2277.cpp
+class A {
+public:
+   A();
+};
+(*pctor)() = &A::A;   // C2277
 ```

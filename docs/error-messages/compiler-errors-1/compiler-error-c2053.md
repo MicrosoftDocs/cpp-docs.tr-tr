@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ace887e096ca0761f08843a033dc6391cb26aa99
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 711debdfe82db617e7974afbfb75b2116eec0260
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165301"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102011"
 ---
 # <a name="compiler-error-c2053"></a>Derleyici Hatası C2053
-'tanımlayıcısı': geniş dize uyuşmazlığı  
-  
- Geniş dizesi uyumsuz bir tür atanır.  
-  
- Aşağıdaki örnek C2053 oluşturur:  
-  
-```  
-// C2053.c  
-int main() {  
-   char array[] = L"Rika";   // C2053  
-}  
+
+'identifier': geniş dize uyuşmazlığı
+
+Geniş dize uyumsuz bir türe atanır.
+
+Aşağıdaki örnek, C2053 oluşturur:
+
+```
+// C2053.c
+int main() {
+   char array[] = L"Rika";   // C2053
+}
 ```

@@ -16,31 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5803c8fee49c294823da4ecdb2b04638b763c00
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 65d041b9fdb7fb4b01abfadf5010444b0e406220
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277410"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100696"
 ---
 # <a name="compiler-warning-level-1-c4145"></a>Derleyici Uyarısı (düzey 1) C4145
-'İfade1': anahtar ifade; olarak ilişkisel ifade olası Karışıklığı önlemek için 'İfade2' ile  
-  
- A `switch` deyim için bir Boolean değeri sonuçlanır, Denetim ifade olarak ilişkisel bir ifade kullanır **durumda** deyimleri. Şunu mu demek istediniz *İfade2*?  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4145 oluşturur:  
-  
-```  
-// C4145.cpp  
-// compile with: /W1  
-int main() {  
-   int i = 0;  
-   switch(i == 1) {   // C4145, use i instead of i == 1 to resolve  
-      case 1:  
-         break;  
-      default:  
-         break;  
-   }  
-}  
+
+'İfade1': switch ifadesi; olarak ilişkisel ifade kullanıldı 'expression2' ile karıştırılmış
+
+A `switch` deyim için bir Boolean değeri ile sonuçlanır, Denetim ifadesi olarak ilişkisel ifade kullanır **çalışması** deyimleri. Şunu mu demek istediniz *expression2*?
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4145 oluşturur:
+
+```
+// C4145.cpp
+// compile with: /W1
+int main() {
+   int i = 0;
+   switch(i == 1) {   // C4145, use i instead of i == 1 to resolve
+      case 1:
+         break;
+      default:
+         break;
+   }
+}
 ```

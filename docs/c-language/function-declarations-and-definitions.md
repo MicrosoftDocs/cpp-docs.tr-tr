@@ -21,18 +21,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 704e8defa8aac640ce5011e5789d4af36380b7a0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2bb5a6b1f184775b3e67a03b9544e609b33673ba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384999"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106135"
 ---
 # <a name="function-declarations-and-definitions"></a>İşlev Bildirimleri ve Tanımlar (C++)
-İşlev prototipleri; işlevin türünü, dönüş türünü ve biçimsel parametrelerinin türünü ve sayısını belirler. İşlev tanımı işlev gövdesini içerir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- İşlev tanımının içinde veya dışında hem işlev hem de değişken bildirimleri görünebilir. Bir işlev tanımı içerisindeki herhangi bir bildirimin "iç" veya "yerel" düzeyde göründüğü bildirilir. Tüm işlev tanımlarının dışında yer alan bir bildirimin, "dış", "genel" veya "dosya kapsamı" düzeyinde olduğu bildirilir. Bildirimler gibi değişken tanımlar, iç düzeyde (işlev tanımı içerisinde) veya dış düzeyde (tüm işlev tanımlarının dışında) görünebilir. İşlev tanımları her zaman dış düzeyde ortaya çıkar. İşlev tanımları tartışılır daha ayrıntılı olarak [işlev tanımları](../c-language/c-function-definitions.md). İşlev prototipleri ele alınmıştır [işlev prototipleri](../c-language/function-prototypes.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak Dosyalar ve Kaynak Programlar](../c-language/source-files-and-source-programs.md)
+
+İşlev prototipleri; işlevin türünü, dönüş türünü ve biçimsel parametrelerinin türünü ve sayısını belirler. İşlev tanımı işlev gövdesini içerir.
+
+## <a name="remarks"></a>Açıklamalar
+
+İşlev tanımının içinde veya dışında hem işlev hem de değişken bildirimleri görünebilir. Bir işlev tanımı içerisindeki herhangi bir bildirimin "iç" veya "yerel" düzeyde göründüğü bildirilir. Tüm işlev tanımlarının dışında yer alan bir bildirimin, "dış", "genel" veya "dosya kapsamı" düzeyinde olduğu bildirilir. Bildirimler gibi değişken tanımlar, iç düzeyde (işlev tanımı içerisinde) veya dış düzeyde (tüm işlev tanımlarının dışında) görünebilir. İşlev tanımları her zaman dış düzeyde ortaya çıkar. İşlev tanımları açıklanmıştır daha ayrıntılı olarak [işlev tanımları](../c-language/c-function-definitions.md). İşlev prototipleri kapsamdaki [işlev prototipleri](../c-language/function-prototypes.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kaynak Dosyalar ve Kaynak Programlar](../c-language/source-files-and-source-programs.md)

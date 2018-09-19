@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4523fd23f0900172e80cf71fd748a9f939deb044
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 24c01565f03bafa1b0bf1c20c4fb967cde3fc5b7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169081"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091978"
 ---
 # <a name="compiler-error-c2308"></a>Derleyici Hatası C2308
-eşleşmeyen dizeleri birleştirme  
-  
- Her iki geniş ve geniş olmayan karakter dizelerini birleştirme için belirtildi. Geniş karakter dizesi ve geniş olmayan karakter dizesi birleştirme olamaz.
+
+uyumsuz dizeler birleştiriliyor
+
+Her iki geniş ve geniş olmayan karakter dizeleri için birleştirme belirtildi. Bir geniş karakter dizesi ve olmayan geniş karakter dizesi birleştirilemez.

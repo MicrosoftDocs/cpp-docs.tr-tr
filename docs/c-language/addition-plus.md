@@ -14,17 +14,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3fcdb309e65c822e511b9cfd4a9ce7255be235a4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 62ed952113f3d8b3db46ac735ade4d2e9850dc97
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380933"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090860"
 ---
 # <a name="addition-"></a>Toplama (+)
-Toplama işleci (**+**) eklenecek iki işlenenleri neden olur. Her iki işlenen, tamsayı veya kayan türleri veya bir işlenen bir işaretçi ve diğer bir tamsayı olabilir.  
-  
- Bir işaretçi, tamsayı değeri bir tamsayı eklendiğinde (*ı*) işaretçi adresleri değer boyutu tarafından çarparak dönüştürülür. Dönüştürme işleminden sonra tamsayı değeri temsil eden *ı* her konum işaretçi türü tarafından belirtilen uzunluğa sahip olduğu bellek konumlar. Dönüştürülmüş tamsayı değeri işaretçi değeri eklendiğinde adresini temsil eden yeni bir işaretçi değeri sonucudur *ı* özgün adresinden konumlar. Yeni İşaretçi değeri özgün işaretçi değeri ile aynı türde bir değer adresleri ve bu nedenle aynı dizi dizinlemesi (bkz [One-Dimensional diziler](../c-language/one-dimensional-arrays.md) ve [çok boyutlu diziler](../c-language/multidimensional-arrays-c.md)). Dizinin dışına toplam işaretçi işaret ediyorsa, dışındaki yüksek sonundan ilk konumdaki sonucu tanımlanmamıştır. Daha fazla bilgi için bkz: [işaretçi aritmetiği](../c-language/pointer-arithmetic.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Ek İşleçleri](../c-language/c-additive-operators.md)
+
+Toplama işleci (**+**) iki işlenenleri eklenecek neden olur. Her iki işlenen de tamsayı veya kayan türler olabilir veya tek bir işlenen bir işaretçi ve diğer bir tamsayı olabilir.
+
+Bir tamsayı işaretçisi, tamsayı değeri eklendiğinde (*miyim*) boyutunu ele alan bir işaretçi değeri tarafından çarpılarak dönüştürülür. Dönüştürme işleminden sonra temsil eder bir tamsayı değeri *miyim* her konum işaretçi türü tarafından belirtilen uzunluğa sahip olduğu, bellek konumları. Dönüştürülmüş tamsayı değerini işaretçi değerine eklendiğinde adresini temsil eden yeni bir işaretçi değeri sonucudur *miyim* özgün adresinden konumları. Yeni İşaretçi değeri özgün işaretçi değeri olarak aynı türde bir değer adresleri ve bu nedenle aynı dizi dizini oluşturma (bkz [One-Dimensional diziler](../c-language/one-dimensional-arrays.md) ve [çok boyutlu diziler](../c-language/multidimensional-arrays-c.md)). Dizinin dışına toplam işaretçi işaret ediyorsa dışında yüksek sonundan ilk konumda sonuç tanımsızdır. Daha fazla bilgi için [işaretçi aritmetiği](../c-language/pointer-arithmetic.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Ek İşleçleri](../c-language/c-additive-operators.md)

@@ -20,19 +20,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3b86c58c8e5afb53cb02174beb3553378dd0efc8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6d09245bdf05f770e6b0e3161cf71902944b608c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33089372"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103652"
 ---
 # <a name="displaying-and-manipulating-data-in-a-form"></a>Formdaki Verileri Görüntüleme ve Düzenleme
-Birçok veri erişimi uygulamaları verileri seçin ve bir form alanlarında görüntüleyin. Veritabanı sınıfı [CRecordView](../../mfc/reference/crecordview-class.md) size verir bir [Cformview'yu](../../mfc/reference/cformview-class.md) doğrudan bağlı bir kayıt kümesi nesnesi nesne. Kayıt görünümü kullanır [iletişim kutusu veri değişimi (DDX)](../../mfc/dialog-data-exchange-and-validation.md) geçerli kayıt alanların değerlerini form üzerinde denetimleri kayıt kümesinden taşımayı ve güncelleştirilmiş bilgileri kayıt kümesine geri taşımak için. Kayıt kümesi kayıt alanı değişimi (RFX) veri kaynağı üzerinde alan veri üyeleri ve karşılık gelen bir tablo sütunları arasında verileri taşımak için de kullanır.  
+
+Birçok veri erişimi uygulamaları verileri seçin ve form alanlarını görüntüler. Veritabanı sınıfı [CRecordView](../../mfc/reference/crecordview-class.md) size bir [Cformview'yu](../../mfc/reference/cformview-class.md) doğrudan bağlı bir kayıt kümesi nesnesi için nesne. Kayıt görünümü kullanır [iletişim kutusu veri değişimi (DDX)](../../mfc/dialog-data-exchange-and-validation.md) kayıt kümesinden geçerli kaydın alanlarının değerlerini form üzerinde denetimleri taşımak için ve güncelleştirilmiş bilgileri kayıt kümesine geri taşımak için. Kayıt kümesi kayıt alanı değişimi (RFX) veri kaynağını temel alan veri üyeleri ve karşılık gelen bir tabloda sütun arasında veri taşıma için sırasıyla kullanır.  
   
- MFC Uygulama Sihirbazı'nı kullanabilirsiniz veya **sınıfı Ekle** (açıklandığı gibi [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) görünüm ve onun ilişkili kayıt kümesi sınıf oluşturmak için.  
+MFC Uygulama Sihirbazı'nı kullanabilirsiniz veya **sınıfı Ekle** (açıklandığı [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) görünüm sınıfı ve onun ilişkili kayıt kümesi sınıfını oluşturmak için.  
   
- Kayıt görünümü ve onun kayıt kümeleri belgeyi kapattığınızda yok olur. Kayıt görünümleri hakkında daha fazla bilgi için bkz: [kayıt görünümleri](../../data/record-views-mfc-data-access.md). RFX hakkında daha fazla bilgi için bkz: [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
+Kayıt görünümü ve onun kayıt kümesi belge kapattıktan sonra yok edilir. Kayıt görünümleri hakkında daha fazla bilgi için bkz: [kayıt görünümleri](../../data/record-views-mfc-data-access.md). RFX hakkında daha fazla bilgi için bkz: [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ODBC ve MFC](../../data/odbc/odbc-and-mfc.md)
+
+[ODBC ve MFC](../../data/odbc/odbc-and-mfc.md)

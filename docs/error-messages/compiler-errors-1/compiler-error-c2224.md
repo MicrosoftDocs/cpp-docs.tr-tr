@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0830018d514f5a58bdc1f2989ae0f3106483dcce
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4420e0e2f89c50bbc7d0748779efcc0eccf117d1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169536"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098166"
 ---
 # <a name="compiler-error-c2224"></a>Derleyici Hatası C2224
-'.identifier' solundaki struct/union türünde olmalıdır  
-  
- Nokta (.) sol işleneni bir sınıf, yapı veya birleşim değil.  
-  
- Tanımlanmamış bir değişkeni, bir sol işleneni tarafından bu hataya neden olabilir (Bu nedenle yazın `int`).
+
+'.identifier' solundaki yapı/birleşim türünde olmalıdır
+
+Nokta (.) sol işlenen bir sınıf, yapı veya birleşim değil.
+
+Bu hata, tanımlanmamış bir değişkene bir sol işlenen tarafından neden olabilir (Bu nedenle yazın `int`).

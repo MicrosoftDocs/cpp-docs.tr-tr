@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b53fba3743d6d072930e430c15b79e0e31d68d2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7d8deaf8bfb10d3ceb56380560320ebb2cf9a7b8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302613"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090327"
 ---
 # <a name="linker-tools-error-lnk2023"></a>Bağlayıcı Araçları Hatası LNK2023
-hatalı dll ya da giriş noktası \<dll ya da giriş noktası >  
-  
- Bağlayıcı msobj90.dll yanlış sürümünü yüklüyor. Link.exe ve yolda msobj90.dll aynı sürüme sahip olduğunuzdan emin olun.  
-  
- Bağımlılık msobj90.dll olarak mevcut olmayabilir. Msobj90.dll bağımlılık listesi verilmiştir:  
-  
--   Msvcr90.dll  
-  
--   Kernel32.dll  
-  
- Diğer tüm kopyalarını güncel msobj90.dll makinenizi denetleyin.
+
+hatalı dll veya giriş noktası \<dll veya giriş noktası >
+
+Bağlayıcı msobj90.dll yanlış bir sürümünü yüklüyor. Link.exe ve yolda msobj90.dll aynı sürümde olduğundan emin olun.
+
+Bağımlılık msobj90.dll olarak mevcut olmayabilir. Msobj90.dll için bağımlılık listesi verilmiştir:
+
+- Msvcr90.dll
+
+- Kernel32.dll
+
+Herhangi bir eski msobj90.dll kopyalarını makinenizi denetleyin.

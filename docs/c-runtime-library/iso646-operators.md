@@ -12,16 +12,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b94f95a824dfe2e2e0c3e5193ad125dfc9744af2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1105541fc0d048554cfe65408d1bb7451b59a381
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392438"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097724"
 ---
 # <a name="iso646-operators"></a>ISO646 İşleçleri
 
-Belirli işleçlere ve noktalama işaretlerine okunabilir alternatifler sağlar. Standart üstbilgi \<iso646.h > bile bağlantısız uygulamasında kullanılabilir.
+Belirli işleçlere ve noktalama işaretlerine okunabilir alternatifler sağlar. Standart üst bilgiyi \<iso646.h > bağımsız bir uygulamada bile kullanılabilir.
 
 ## <a name="macros"></a>Makrolar
 
@@ -32,7 +32,7 @@ Belirli işleçlere ve noktalama işaretlerine okunabilir alternatifler sağlar.
 |[bitand](../c-runtime-library/reference/bitand.md)|Alternatif & işleci.|
 |[bitor](../c-runtime-library/reference/bitor.md)|Alternatif &#124; işleci.|
 |[compl](../c-runtime-library/reference/compl.md)|~ işleci alternatifi.|
-|[not](../c-runtime-library/reference/not.md)|Alternatif! işleç.|
+|[not](../c-runtime-library/reference/not.md)|Alternatif! işleci.|
 |[not_eq](../c-runtime-library/reference/not-eq.md)|!= işleci alternatifi.|
 |[or](../c-runtime-library/reference/or.md)|Alternatif &#124; &#124; işleci.|
 |[or_eq](../c-runtime-library/reference/or-eq.md)|Alternatif &#124;= işleci.|
@@ -42,4 +42,4 @@ Belirli işleçlere ve noktalama işaretlerine okunabilir alternatifler sağlar.
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Uluslararası duruma getirme](../c-runtime-library/internationalization.md)<br/>
- [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

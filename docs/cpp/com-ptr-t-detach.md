@@ -16,28 +16,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf38e433f7042707b502a4cba2088db9412adb29
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: a7f2f44df96ca339e5d8e4b251b5f2d259cb606b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39405840"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092147"
 ---
 # <a name="comptrtdetach"></a>_com_ptr_t::Detach
-**Microsoft'a özgü**  
-  
- Kapsüllenmiş arabirim işaretçisini ayıklar ve döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-Interface* Detach( ) throw( );  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Ayıklar kapsüllenmiş arabirim işaretçisini döndürür ve ardından kapsüllenmiş işaretçi depolamasını null temizler. Bu, arabirim işaretçisini kapsüllemeden kaldırır. Size kalmıştır çağrılacak olan `Release` döndürülen arabirim işaretçisinde üzerinde.  
-  
- **END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)
+
+**Microsoft'a özgü**
+
+Kapsüllenmiş arabirim işaretçisini ayıklar ve döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+Interface* Detach( ) throw( );
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Ayıklar kapsüllenmiş arabirim işaretçisini döndürür ve ardından kapsüllenmiş işaretçi depolamasını null temizler. Bu, arabirim işaretçisini kapsüllemeden kaldırır. Size kalmıştır çağrılacak olan `Release` döndürülen arabirim işaretçisinde üzerinde.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

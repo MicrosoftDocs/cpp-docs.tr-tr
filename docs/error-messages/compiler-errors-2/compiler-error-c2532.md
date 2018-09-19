@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 78138de907b77d0a770cd606d805f60091ce0fc6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 68a621b093eaf0e706249161dd2b1b4a3fd282be
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198462"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107019"
 ---
 # <a name="compiler-error-c2532"></a>Derleyici Hatası C2532
-'tanımlayıcısı': başvuru için geçersiz değiştirici  
-  
- Başvuru değiştirildi. Başvuruları, başka bir nesneye başvurmak için değiştirilemez. Bunun yerine bir işaretçi kullanın.
+
+'identifier': başvuru için geçersiz değiştirici
+
+Başvuru değiştirildi. Başvurular, başka bir nesneye başvurmak için değiştirilemez. Bunun yerine bir işaretçi kullanın.

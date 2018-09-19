@@ -17,18 +17,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 669c585c637129c1fb6a480d91b31e5a1264fd22
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cb2921013d116b7d8f02e1e29380ca3cd14086b9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298122"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102820"
 ---
 # <a name="expression-evaluator-error-cxx0030"></a>İfade Değerlendirici Hatası CXX0030
-ifade değil evaluatable  
-  
- Hata Ayıklayıcı'nın ifade değerlendiricisi ifade için bir değer yazıldığı şekilde elde edilemedi. Bir olası neden olan ifade programın adres alanı dışında bellek başvurduğu (null işaretçi başvurusunun kaldırılmasının bir örnektir). Windows programın adres alanı dışında bellek erişmesine izin vermiyor.  
-  
- Değerlendirme sırasını denetlemek için parantez kullanma İfadenizde yeniden isteyebilirsiniz.  
-  
- Bu hata için CAN0030 aynıdır.
+
+ifade evaluatable değil
+
+Hata Ayıklayıcı'nın ifade değerlendiricisi, yazıldığı gibi ifade için bir değer alınamadı. Olası nedenlerinden biri olan ifade programın adres alanı dışında bellek gösterir (örnek değer null işaretçisinin başvurusunun kaldırılması). Windows, programın adres alanının dışından bellek erişmesine izin vermez.
+
+İfadeniz Değerlendirme sırasını denetlemek için parantez kullanılarak yeniden yazmak isteyebilirsiniz.
+
+Bu hata için CAN0030 aynıdır.

@@ -15,27 +15,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 310d80f92b2648c0a5711c304b3a1b5bc32413be
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 557c7f3c423821a069f2aff3dff228ce9632c30f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381661"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089534"
 ---
 # <a name="c-constants"></a>C Sabitleri
-Bir "sabit" sayı, karakter ya da bir program değer olarak kullanılan karakter dizesi değil. Kayan nokta temsil etmek için sabitleri, tamsayı, numaralandırma veya değiştirilemez karakter değerleri kullanın.  
-  
-## <a name="syntax"></a>Sözdizimi  
- `constant`:  
- *floating point sabiti*  
-  
- *tamsayı sabiti*  
-  
- *Numaralandırma sabiti*  
-  
- *karakter sabiti*  
-  
- Sabit bir değer ve bir tür sağlayarak belirlenir. [Kayan nokta](../c-language/c-floating-point-constants.md), [tamsayı](../c-language/c-integer-constants.md), ve [karakter sabitleri](../c-language/c-character-constants.md) sonraki üç bölümde ele alınmıştır. Numaralandırma sabitleri açıklanmıştır [numaralandırma bildirimleri](../c-language/c-enumeration-declarations.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Öğeleri](../c-language/elements-of-c.md)
+
+Bir "sabit" sayı, karakter ya da bir programda bir değer olarak kullanılan karakter dizesi değeri. Kayan nokta temsil etmek için sabitler, tamsayı, sabit listesi veya değiştirilemez karakter değerlerini kullanın.
+
+## <a name="syntax"></a>Sözdizimi
+
+`constant`: *kayan noktaya sabiti*
+
+*tamsayı sabiti*
+
+*Numaralandırma sabiti*
+
+*karakter sabiti*
+
+Sabitler, değeri ve türü sağlayarak belirlenir. [Kayan nokta](../c-language/c-floating-point-constants.md), [tamsayı](../c-language/c-integer-constants.md), ve [karakter sabitleri](../c-language/c-character-constants.md) sonraki üç bölümde ele alınmıştır. Numaralandırma sabitlerini açıklanmıştır [numaralandırma bildirimleri](../c-language/c-enumeration-declarations.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Öğeleri](../c-language/elements-of-c.md)

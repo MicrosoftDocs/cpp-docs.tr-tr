@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f23ea5d40ecca7ee47d7eae659bfd3da286d8831
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 71e9baa101eb87ac10171722fa76fc462a154ad2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705399"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087492"
 ---
 # <a name="norm-class"></a>norm Sınıfı
-Norm numarasını temsil eder. Her bir kayan bir öğedir nokta sayısı aralığında [-1.0f, 1.0f].  
+Bir norm numarasını temsil eder. Her bir kayan bir öğedir aralığında nokta sayısı [-1.0f, 1.0f &].  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,7 +38,7 @@ class norm;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Norm Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu. İçin 0.0f başlatır.|  
+|[Norm Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu. İçin 0.0f başlatın.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
@@ -46,9 +46,9 @@ class norm;
 |----------|-----------------|  
 |Norm::operator-||  
 |Norm::operator--||  
-|Norm::operator float|Dönüşüm işleci. Kayan norm sayıya dönüştürme noktası değeri.|  
+|Norm::operator float|Dönüştürme işleci. Kayan norm sayıya dönüştürme noktası değeri.|  
 |Norm::operator * =||  
-|Norm::operator ve =||  
+|Norm::operator / =||  
 |Norm::operator ++||  
 |Norm::operator +=||  
 |norm::operator=||  
@@ -64,7 +64,7 @@ class norm;
   
 ##  <a name="ctor"></a> Norm 
 
- Varsayılan Oluşturucu. İçin 0.0f başlatır.  
+ Varsayılan Oluşturucu. İçin 0.0f başlatın.  
   
 ```  
 norm(
@@ -103,11 +103,11 @@ norm(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_V`  
- Başlatmak için kullanılan değer.  
+*_V*<br/>
+Başlatmak için kullanılan değer.  
   
- `_Other`  
- Başlatmak için kullanılan nesne.  
+*_Diğer*<br/>
+Başlatmak için kullanılan nesne.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

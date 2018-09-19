@@ -16,19 +16,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 048500cbf41eebdbb5a58d6622f7a351172e6f7c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9cd950504297909f9c3839df5781a6db4753f085
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32383023"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095410"
 ---
 # <a name="dll-import-and-export"></a>DLL İçeri ve Dışarı Aktarma
-**Microsoft özel**  
-  
- Dllimport ve dllexport depolama sınıfı değiştiricileri, C diline ilişkin Microsoft'a özgü uzantılardır. Bu değiştiriciler DLL'nin arabirimini istemcisine (çalıştırılabilir dosya veya başka bir DLL) tanımlar. Bu değiştiricileri kullanma hakkında ayrıntılı bilgi için bkz: [dllexport, dllimport](../cpp/dllexport-dllimport.md).  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Genişletilmiş Depolama Sınıfı Öznitelikler](../c-language/c-extended-storage-class-attributes.md)
+
+**Microsoft'a özgü**
+
+Dllimport ve dllexport depolama sınıfı değiştiricileri, C diline ilişkin Microsoft'a özgü uzantılardır. Bu değiştiriciler DLL'nin arabirimini istemcisine (çalıştırılabilir dosya veya başka bir DLL) tanımlar. Bu değiştiricileri kullanma hakkında ayrıntılı bilgi için bkz: [dllexport, dllimport](../cpp/dllexport-dllimport.md).
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Genişletilmiş Depolama Sınıfı Öznitelikler](../c-language/c-extended-storage-class-attributes.md)

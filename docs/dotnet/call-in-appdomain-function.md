@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: a8689254120416e5b2bf5de617fc3f3ef466abb1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 707ee9476ce26de9325337f6f2130e41d19faa3a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111292"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105251"
 ---
 # <a name="callinappdomain-function"></a>call_in_appdomain İşlevi
-Belirtilen uygulama etki alanında bir işlev yürütür.  
+Belirtilen uygulama etki alanında bir işlevi yürütür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -49,23 +49,23 @@ RetType call_in_appdomain(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `appdomainId`  
- Bir işlevi çağırmak üzere appdomain.  
+*appdomainId*<br/>
+Appdomain olan işlevi çağırmak.  
   
- `voidFunc`  
- İşaretçi bir `void` N parametreler isteyen işlevi (0 < = N < = 15).  
+*voidFunc*<br/>
+İşaretçi bir `void` N parametrelerini alan işlev (0 < = N < = 15).  
   
- `nonvoidFunc`  
- Olmayan bir işaretçi`void` N parametreler isteyen işlevi (0 < = N < = 15).  
+*nonvoidFunc*<br/>
+İşaretçi olmayan bir`void` N parametrelerini alan işlev (0 < = N < = 15).  
   
- `arg1...argN`  
- Geçirilecek 15 parametreleri için sıfır `voidFunc` veya `nonvoidFunc` bir appdomain içinde.  
+*... arg1 argN*<br/>
+Geçirilecek 15 parametreleri için sıfır `voidFunc` veya `nonvoidFunc` bir appdomain içinde.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Yürütmenin sonucu `voidFunc` veya `nonvoidFunc` belirtilen uygulama etki alanında.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İşlev bağımsız değişkenleri geçirilen `call_in_appdomain` CLR Türleri olmaması gerekir.  
+ Geçirilen bağımsız değişkenler'işlevinin `call_in_appdomain` CLR Türleri olmamalıdır.  
   
 ## <a name="example"></a>Örnek  
   
@@ -123,6 +123,6 @@ appDomain1 id = 2
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\appdomain.h >  
+ **Üst bilgi dosyası** \<msclr\appdomain.h >  
   
  **Namespace** msclr

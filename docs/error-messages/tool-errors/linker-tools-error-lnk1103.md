@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8211ef39b3524dbb1c0c3e8d25cabb84ee5f6b5e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3abb7472e37edbec80381bbf6b4329d9da718d19
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298226"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095452"
 ---
 # <a name="linker-tools-error-lnk1103"></a>Bağlayıcı Araçları Hatası LNK1103
-hata ayıklama bilgileri bozuk; Modül yeniden derleyin  
-  
- Derleme geçerli nesne dosyası oluşturulmadan önce sonlandırıldığından bu hataya neden.  
-  
- Verilen nesne dosyası yeniden derleyin. Yeniden derlenmesi sorunu gidermezse, hata durumlarda dikkat edin, sorunu yalıtmak ve tekrarlanabilir bir test çalışması oluşturma deneyin. Ardından teknik destek Yardım dosyasına veya birinde, kılavuzları, teknik destek bölümüne bakın.
+
+hata ayıklama bilgileri bozuk; Modülü yeniden derleyin
+
+Geçerli nesne dosyası oluşturulmadan önce derleme sonlandırıldığından bu hataya neden olabilir.
+
+Verilen nesne dosyası yeniden derleyin. Yeniden derlemeden sorunu gidermezse, hatanın koşullara dikkat edin, yalıtmak ve tekrarlanabilir bir test çalışmasının deneyin. Ardından, teknik destek Yardım dosyasını veya birinde, kılavuzları, teknik destek bölümüne başvurun.

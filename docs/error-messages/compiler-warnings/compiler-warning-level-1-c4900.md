@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e58076b070860b31706b4b55a13b881df51db33
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0c27df56ab38224020e9be88787dfaa038ba8f0e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33304755"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103121"
 ---
 # <a name="compiler-warning-level-1-c4900"></a>Derleyici Uyarısı (düzey 1) C4900
-'tool1' Sürüm 'version1' ve 'tool2' Sürüm 'version2' arasında ara dil uyuşmazlığı  
-  
- Kullanılan ara dile *tool1* ve *tool2* eşleşmedi. Her aracı en güncel sürümünün yüklü olduğunu denetleyin.
+
+'tool1' Sürüm 'version1' ve 'tool2' Sürüm 'version2' arasında uyuşmazlık Ara dil
+
+Kullanılan ara dil *tool1* ve *tool2* eşleşmedi. Her aracı en güncel sürümünün yüklü olduğunu denetleyin.

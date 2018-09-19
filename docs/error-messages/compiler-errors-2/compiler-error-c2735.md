@@ -16,21 +16,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ab970aa4e46ed0206f311e100f7ee777907aff8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 732b75c8988f879af230e0513a751b8cd9c4ae67
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33232675"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093135"
 ---
 # <a name="compiler-error-c2735"></a>Derleyici Hatası C2735
-'anahtar sözcüğü' anahtar sözcüğü biçimsel parametresi türü belirticisinin izin verilmiyor  
-  
- Anahtar sözcüğü bu bağlamda geçersiz.  
-  
- Aşağıdaki örnek C2735 oluşturur:  
-  
-```  
-// C2735.cpp  
-void f(inline int){}   // C2735  
+
+'anahtar sözcüğü' anahtar sözcüğü biçimsel parametre türü belirticisi içinde izin verilmiyor
+
+Anahtar sözcüğü bu bağlamda geçersiz.
+
+Aşağıdaki örnek, C2735 oluşturur:
+
+```
+// C2735.cpp
+void f(inline int){}   // C2735
 ```

@@ -16,36 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 748276ed8fa459c41174f23d32bcef127cbdd510
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 335a3976675f36e3da295bc23c8e17440a56a505
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300452"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088661"
 ---
 # <a name="linker-tools-error-lnk1312"></a>Bağlayıcı Araçları Hatası LNK1312
-geçersiz veya bozuk dosya: derleme içeri aktarılamıyor  
-  
- Derleme yaparken bir derleme, modül veya ile derlenmiş derlemeyi başka bir dosya **/CLR** geçirilmedi **/ASSEMBLYMODULE** bağlayıcı seçeneği.  Bir nesne dosyasına aktarılırsa **/ASSEMBLYMODULE**, nesne bağlayıcı doğrudan yerine için geçirmeniz yeterlidir **/ASSEMBLYMODULE**.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek .obj dosyası oluşturulur.  
-  
-```  
-// LNK1312.cpp  
-// compile with: /clr /LD  
-public ref class A {  
-public:  
-   int i;  
-};  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek LNK1312 oluşturur.  
-  
-```  
-// LNK1312_b.cpp  
-// compile with: /clr /LD /link /assemblymodule:LNK1312.obj  
-// LNK1312 error expected  
-public ref class M {};  
+
+dosya geçersiz veya bozuk: derleme içeri aktarılamıyor
+
+Oluşturma sırasında bir derleme, modül veya ile derlenmiş derlemenin dışında bir dosya **/CLR** geçildi **assemblymodule** bağlayıcı seçeneği.  Bir nesne dosyası için geçirilmiş **assemblymodule**, nesne bağlayıcı doğrudan yerine için geçirmeniz yeterlidir **assemblymodule**.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, .obj dosyası oluşturulur.
+
+```
+// LNK1312.cpp
+// compile with: /clr /LD
+public ref class A {
+public:
+   int i;
+};
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, LNK1312 oluşturur.
+
+```
+// LNK1312_b.cpp
+// compile with: /clr /LD /link /assemblymodule:LNK1312.obj
+// LNK1312 error expected
+public ref class M {};
 ```

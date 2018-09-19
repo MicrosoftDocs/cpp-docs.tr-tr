@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 903a24a6007eb8693584cfd4eed96bd12ef3cdda
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 19a4a150b2cdf067802a1220a77640f20a1fea51
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695606"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106200"
 ---
 # <a name="improperlock-class"></a>improper_lock Sınıfı
-Bu sınıf bir kilit yanlış alındığında bir özel durum açıklar.  
+Bu sınıf, bir kilit alınmadığı yanlış olduğunda oluşturulan bir özel durum açıklar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,10 +40,10 @@ class improper_lock : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[improper_lock](#ctor)|Fazla Yüklendi. Oluşturan bir `improper_lock exception`.|  
+|[improper_lock](#ctor)|Fazla Yüklendi. Oluşturur bir `improper_lock exception`.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Genellikle, yeniden girme olmayan kilit yinelemeli olarak aynı bağlamda edinmeye girişiminde bulunulduğunda bu özel durum oluşur.  
+ Genellikle, bir reentrant olmayan kilit yinelemeli olarak aynı içerik üzerinde almaya denemesi yapıldığında bu özel durum oluşturulur.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -57,7 +57,7 @@ class improper_lock : public std::exception;
   
 ##  <a name="ctor"></a> improper_lock 
 
- Oluşturan bir `improper_lock exception`.  
+ Oluşturur bir `improper_lock exception`.  
   
 ```
 explicit _CRTIMP improper_lock(_In_z_ const char* _Message) throw();
@@ -66,8 +66,8 @@ improper_lock() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1d5a6fcf5fa4a1a8451a2d5be9ea188a8d58bd1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 059c8934f8f797af0dd937827e6c52cf06d0cf15
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230896"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102547"
 ---
 # <a name="compiler-error-c2648"></a>Derleyici Hatası C2648
-'tanımlayıcısı': statik üye varsayılan parametre gerektirdiği şekilde üyesi kullanın  
-  
- Statik olmayan üye varsayılan parametre olarak kullanılır.  
-  
- Aşağıdaki örnek C2648 oluşturur:  
-  
-```  
-// C2648.cpp  
-// compile with: /c  
-class C {  
-public:  
-   int i;  
-   static int j;  
-   void func1( int i = i );  // C2648  i is not static  
-   void func2( int i = j );  // OK  
-};  
+
+'identifier': üye statik üyenin varsayılan parametre olarak kullanın
+
+Statik olmayan üye varsayılan parametre olarak kullanılır.
+
+Aşağıdaki örnek, C2648 oluşturur:
+
+```
+// C2648.cpp
+// compile with: /c
+class C {
+public:
+   int i;
+   static int j;
+   void func1( int i = i );  // C2648  i is not static
+   void func2( int i = j );  // OK
+};
 ```

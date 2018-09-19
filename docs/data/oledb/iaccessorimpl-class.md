@@ -48,14 +48,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 73e0b7646da57af679e7b3cbec3b0bb72d4ea8b8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 0fd40d4cac87302a6a636693e0da4480720a2cf3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466085"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098127"
 ---
 # <a name="iaccessorimpl-class"></a>IAccessorImpl Sınıfı
+
 Bir uygulamasını sağlar [IAccessor](/previous-versions/windows/desktop/ms719672\(v=vs.85\)) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -68,17 +69,19 @@ class ATL_NO_VTABLE IAccessorImpl : public IAccessorImplBase<BindType>
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *T*  
- Satır kümesi ya da komut nesne sınıfı.  
+
+*T*<br/>
+Satır kümesi ya da komut nesne sınıfı.  
   
- *BindType*  
- Bağlama bilgileri için depolama birimi. Varsayılan değer `ATLBINDINGS` yapısı (atldb.h bakın).  
+*BindType*<br/>
+Bağlama bilgileri için depolama birimi. Varsayılan değer `ATLBINDINGS` yapısı (atldb.h bakın).  
   
- *BindingVector*  
- Sütun bilgileri için depolama birimi. Varsayılan değer [CAtlMap](../../atl/reference/catlmap-class.md) burada anahtar öğesi HACCESSOR değer, Değer öğesini bir işaretçi ise bir `BindType` yapısı.  
+*BindingVector*<br/>
+Sütun bilgileri için depolama birimi. Varsayılan değer [CAtlMap](../../atl/reference/catlmap-class.md) burada anahtar öğesi HACCESSOR değer, Değer öğesini bir işaretçi ise bir `BindType` yapısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldb.h  
+
+**Başlık:** atldb.h  
 
 ## <a name="members"></a>Üyeler  
   
@@ -98,9 +101,11 @@ class ATL_NO_VTABLE IAccessorImpl : public IAccessorImplBase<BindType>
 |[ReleaseAccessor](#releaseaccessor)|Erişimci serbest bırakır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu satır kümeleri ve komutları zorunludur. OLE DB sağlayıcıları bir HACCESSOR uygulamak gerektiren bir dizi için bir etiket olduğu [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) yapıları. Tarafından sağlanan HACCESSORs `IAccessorImpl` adresleri olan `BindType` yapıları. Varsayılan olarak, `BindType` olarak tanımlanan bir `ATLBINDINGS` içinde `IAccessorImpl`'s şablon tanımı. `BindType` tarafından kullanılan bir mekanizma sağlar `IAccessorImpl` içindeki öğelerin sayısını izlemek için kendi `DBBINDING` dizi yanı sıra bir başvuru sayısı ve erişimci bayrakları.  
+
+Bu satır kümeleri ve komutları zorunludur. OLE DB sağlayıcıları bir HACCESSOR uygulamak gerektiren bir dizi için bir etiket olduğu [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) yapıları. Tarafından sağlanan HACCESSORs `IAccessorImpl` adresleri olan `BindType` yapıları. Varsayılan olarak, `BindType` olarak tanımlanan bir `ATLBINDINGS` içinde `IAccessorImpl`'s şablon tanımı. `BindType` tarafından kullanılan bir mekanizma sağlar `IAccessorImpl` içindeki öğelerin sayısını izlemek için kendi `DBBINDING` dizi yanı sıra bir başvuru sayısı ve erişimci bayrakları.  
 
 ## <a name="iaccessorimpl"></a> IAccessorImpl::IAccessorImpl
+
 Oluşturucu.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -110,6 +115,7 @@ IAccessorImpl();
 ```  
 
 ## <a name="addrefaccessor"></a> IAccessorImpl::addrefaccessor
+
 Başvuru sayısı için mevcut bir erişimci ekler.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -120,9 +126,11 @@ STDMETHOD(AddRefAccessor)(HACCESSOR hAccessor,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::AddRefAccessor](/previous-versions/windows/desktop/ms714978\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
+
+Bkz: [IAccessor::AddRefAccessor](/previous-versions/windows/desktop/ms714978\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="createaccessor"></a> IAccessorImpl::CreateAccessor
+
 Erişimci bağlamaları kümesinden oluşturur.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -137,9 +145,11 @@ STDMETHOD(CreateAccessor)(DBACCESSORFLAGS dwAccessorFlags,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [DBBINDING](/previous-versions/windows/desktop/ms720969\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [DBBINDING](/previous-versions/windows/desktop/ms720969\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="getbindings"></a> IAccessorImpl::getbindings
+
 Temel sütunları bağlamaları erişimci tüketicide döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -152,9 +162,11 @@ STDMETHOD(GetBindings)(HACCESSOR hAccessor,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::GetBindings](/previous-versions/windows/desktop/ms721253\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
+
+Bkz: [IAccessor::GetBindings](/previous-versions/windows/desktop/ms721253\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="releaseaccessor"></a> IAccessorImpl::releaseaccessor
+
 Erişimci serbest bırakır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -165,8 +177,10 @@ STDMETHOD(ReleaseAccessor)(HACCESSOR hAccessor,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IAccessor::ReleaseAccessor](/previous-versions/windows/desktop/ms719717\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
+
+Bkz: [IAccessor::ReleaseAccessor](/previous-versions/windows/desktop/ms719717\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

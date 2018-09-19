@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65a3d399ed6c7f25b849335328550526ecf7a816
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 853e9b8a7741b31a57af172427656be8a78a99f5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236502"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098153"
 ---
 # <a name="compiler-error-c2791"></a>Derleyici Hatası C2791
-Geçersiz 'Süper' kullanımı: 'sınıfı' tüm temel sınıflar yok  
-  
- Anahtar sözcüğü [Süper](../../cpp/super.md) üye işlevi bir sınıfın tüm temel sınıflar yok bağlamında kullanıldı.  
-  
- Aşağıdaki örnek C2791 oluşturur:  
-  
-```  
-// C2791.cpp  
-struct D {  
-   void mf() {  
-      __super::mf();   // C2791  
-   }  
-};  
+
+Geçersiz 'super' kullanımı: 'class', herhangi bir taban sınıfa sahip değil
+
+Anahtar sözcüğü [Süper](../../cpp/super.md) herhangi bir taban sınıfa sahip olmayan bir sınıf üye işlevinin bağlamında kullanıldı.
+
+Aşağıdaki örnek, C2791 oluşturur:
+
+```
+// C2791.cpp
+struct D {
+   void mf() {
+      __super::mf();   // C2791
+   }
+};
 ```

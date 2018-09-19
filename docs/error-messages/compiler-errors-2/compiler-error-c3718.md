@@ -16,65 +16,67 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7116ea8b17d4e342079fe5590464699757e96de
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bb5965ee0c6f19c31a459b14ea9ebcb83fe5f32d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33264213"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098413"
 ---
 # <a name="compiler-error-c3718"></a>Derleyici Hatası C3718
-yalnızca 'event' alıcı sınıfının üye işlevini bağlamında çağırabilir  
-  
- `event` Alıcı sınıfından yalnızca çağrılabilir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3718 oluşturur:  
-  
-```  
-// C3718.cpp  
-#define _ATL_ATTRIBUTES 1  
-#include "atlbase.h"  
-#include "atlcom.h"  
-  
-[module(name="test")];  
-  
-[object, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface I  
-{  
-    HRESULT f();  
-};  
-  
-[event_source(com), coclass, uuid("00000000-0000-0000-0000-000000000002")]  
-struct E  
-{  
-    __event __interface I;  
-};  
-  
-[event_receiver(com)]  
-struct R  
-{  
-    void b()  
-    {  
-        printf_s("B::bar()\n");   
-    }  
-  
-    void HookAndRun(E* pE)  
-    {  
-        __hook(&I::f, pE->GetUnknown(), &R::b);  
-        __raise pE->f();  
-    }  
-};  
-  
-int main()  
-{  
-    CComObject<E>* pE;  
-    CComObject<E>::CreateInstance(&pE);  
-  
-    __hook(&I::f, pE->GetUnknown(), &R::b, &r);   // C3718  
-    __raise pE->f();  
-    // try the following lines instead  
-    // R r;  
-    // r.HookAndRun(pE);  
-}  
+
+'event' yalnızca alıcı sınıfın bir üye işlevinin bağlamında çağrı yapabilir
+
+`event` Yalnızca alan sınıfından çağrılabilir.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3718 oluşturur:
+
+```
+// C3718.cpp
+#define _ATL_ATTRIBUTES 1
+#include "atlbase.h"
+#include "atlcom.h"
+
+[module(name="test")];
+
+[object, uuid("00000000-0000-0000-0000-000000000001")]
+__interface I
+{
+    HRESULT f();
+};
+
+[event_source(com), coclass, uuid("00000000-0000-0000-0000-000000000002")]
+struct E
+{
+    __event __interface I;
+};
+
+[event_receiver(com)]
+struct R
+{
+    void b()
+    {
+        printf_s("B::bar()\n");
+    }
+
+    void HookAndRun(E* pE)
+    {
+        __hook(&I::f, pE->GetUnknown(), &R::b);
+        __raise pE->f();
+    }
+};
+
+int main()
+{
+    CComObject<E>* pE;
+    CComObject<E>::CreateInstance(&pE);
+
+    __hook(&I::f, pE->GetUnknown(), &R::b, &r);   // C3718
+    __raise pE->f();
+    // try the following lines instead
+    // R r;
+    // r.HookAndRun(pE);
+}
 ```

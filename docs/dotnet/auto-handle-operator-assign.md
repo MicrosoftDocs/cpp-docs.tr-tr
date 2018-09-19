@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: db6091772529896f12952163c0838949b8518054
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f41eff9659fd85b21b46560be4c1141152f748f1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104886"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103626"
 ---
 # <a name="autohandleoperator"></a>auto_handle::operator=
 Atama işleci.  
@@ -43,11 +43,11 @@ auto_handle<_element_type> % operator=(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_right`  
- `auto_handle` Geçerli atanacak `auto_handle`.  
+*_right*<br/>
+`auto_handle` Geçerli atanacak `auto_handle`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Geçerli `auto_handle`, şimdi sahibi olan `_right`.  
+ Geçerli `auto_handle`, artık sahip olan `_right`.  
   
 ## <a name="example"></a>Örnek  
   
@@ -111,7 +111,7 @@ in ClassA destructor: second
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\auto_handle.h >  
+ **Üst bilgi dosyası** \<msclr\auto_handle.h >  
   
  **Namespace** msclr  
   

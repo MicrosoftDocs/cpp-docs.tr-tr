@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f8786af730567155ca865440e612bb983e2bea8
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 076ccfcf164eb17e2a855f175c8714cd63a91817
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39402984"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093064"
 ---
 # <a name="alignedmallocdbg"></a>_aligned_malloc_dbg
 
@@ -56,16 +56,16 @@ void * _aligned_malloc_dbg(
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*  
+*Boyutu*<br/>
 İstenen bellek ayırmasının boyutu.
 
-*Hizalama*  
+*Hizalama*<br/>
 Hizalama değeri 2'in tam sayı üssü olması gerekir.
 
-*Dosya adı*  
+*Dosya adı*<br/>
 Ayırma işlemi veya NULL istenen kaynak dosyasının adı için işaretçi.
 
-*LineNumber*  
+*LineNumber*<br/>
 Satır numarası kaynak dosyada ayırma işlemi burada istendi veya NULL.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -96,4 +96,4 @@ Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)  
+[Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)

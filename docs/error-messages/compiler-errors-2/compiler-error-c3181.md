@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33d5c42ce7fec65b2b4481b46590396f3af7d97a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 599fe0afe4bdcdc7b1e2025859d11a38618b1349
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252169"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097347"
 ---
 # <a name="compiler-error-c3181"></a>Derleyici Hatası C3181
-'type': Geçersiz işlecinin işleneni  
-  
-Geçersiz bir parametre geçildi [TypeID](../../windows/typeid-cpp-component-extensions.md) işleci. Parametresi, bir yönetilen türü olmalıdır.  
-  
-Derleyici, ortak dil çalışma zamanı türler için eşleme yerel türleri için diğer adlar kullandığına dikkat edin.  
-  
-Aşağıdaki örnek C3181 oluşturur:  
-  
-```  
-// C3181a.cpp  
-// compile with: /clr  
-using namespace System;  
-  
-int main() {  
-   Type ^pType1 = interior_ptr<int>::typeid;   // C3181  
-   Type ^pType2 = int::typeid;   // OK  
-}  
-```  
+
+'type': işleç için geçersiz işlenen
+
+İçin geçersiz bir parametre geçirildi [TypeID](../../windows/typeid-cpp-component-extensions.md) işleci. Yönetilen tür parametresi olması gerekir.
+
+Derleyicinin ortak dil çalışma zamanı türleriyle eşleme yerel türler için diğer adlar kullandığına dikkat edin.
+
+Aşağıdaki örnek, C3181 oluşturur:
+
+```
+// C3181a.cpp
+// compile with: /clr
+using namespace System;
+
+int main() {
+   Type ^pType1 = interior_ptr<int>::typeid;   // C3181
+   Type ^pType2 = int::typeid;   // OK
+}
+```

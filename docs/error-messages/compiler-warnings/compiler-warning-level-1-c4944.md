@@ -16,46 +16,49 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57ddad7aa383cfd6f8716d6b12fa56627c1ee0e0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bdf155ce5fb53bb4b1b5914d7738c8c12f458888
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290705"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105517"
 ---
 # <a name="compiler-warning-level-1-c4944"></a>Derleyici Uyarısı (düzey 1) C4944
-'simgesi': 'assembly1' simgesini alınamıyor: 'simgesi' geçerli kapsamda zaten mevcut olduğundan  
-  
- Bir simge bir kaynak kod dosyasında tanımlanan ve ardından bir #using başvurulan simgenin tanımlanmış derleme. Derlemesindeki sembolü göz ardı edilir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek bir bileşen ClassA adlı bir türü ile oluşturur.  
-  
-```  
-// C4944.cs  
-// compile with: /target:library  
-// C# source code to create a dll  
-public class ClassA {  
-   public int i;  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekler C4944 oluşturur.  
-  
-```  
-// C4944b.cpp  
-// compile with: /clr /W1  
-class ClassA {  
-public:  
-   int u;  
-};  
-  
-#using "C4944.dll"   // C4944 ClassA also defined C4944.dll  
-  
-int main() {  
-   ClassA * x = new ClassA();  
-   x->u = 9;  
-   System::Console::WriteLine(x->u);  
-}  
+
+'symbol': 'assembly1' değerinden simge alınamıyor: 'symbol' geçerli kapsamda zaten var.
+
+Bir kaynak kodu dosyasında tanımlanan bir simge ve ardından bir #using deyimi başvurulan sembol tanımlanmış bir derleme. Derlemedeki simgesi yok sayılır.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, bir bileşen Türetilme adlı bir tür ile oluşturur.
+
+```
+// C4944.cs
+// compile with: /target:library
+// C# source code to create a dll
+public class ClassA {
+   public int i;
+}
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnekler C4944 oluşturur.
+
+```
+// C4944b.cpp
+// compile with: /clr /W1
+class ClassA {
+public:
+   int u;
+};
+
+#using "C4944.dll"   // C4944 ClassA also defined C4944.dll
+
+int main() {
+   ClassA * x = new ClassA();
+   x->u = 9;
+   System::Console::WriteLine(x->u);
+}
 ```

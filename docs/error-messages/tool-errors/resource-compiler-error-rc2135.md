@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14600b00b1347f7fe63c0bc8b6d1ab5c70b68fad
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8bd510aa4a6045b3e691ba89d05b327d35818b8b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318031"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092994"
 ---
 # <a name="resource-compiler-error-rc2135"></a>Kaynak Derleyicisi Hatası RC2135
-Dosya bulunamadı: dosya adı  
-  
- Kaynak Derleyicisi komut satırında belirtilen dosya bulunamadı. Dosya başka bir dizine taşınmış olan ve dosya adı ve yolu olup doğru yazıldığından denetleyin.  
-  
- Dosyaları kullanmak için aranır **INCLUDE** ortam değişkeni veya Visual C++ **INCLUDE** ayarı.
+
+Soubor nebyl nalezen: dosya adı
+
+Kaynak derleyici komut satırında belirtilen dosya bulunamadı. Dosya başka bir dizine taşınmış olan ve dosya adını ve yolunu olup doğru yazıldığından olmadığını kontrol edin.
+
+Dosyaları kullanmak için aranır **INCLUDE** ortam değişkenine ya da Visual C++ **INCLUDE** ayarı.

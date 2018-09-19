@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcdf854eeeceb1aa3648ff984e3a2c956d973eeb
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: acc8aeb54e98e531756d71d6be389dca8a494f4c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754683"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091464"
 ---
 # <a name="event-handling-global-functions"></a>Olay işleme genel işlevleri
 
@@ -52,7 +52,7 @@ BOOL AtlWaitWithMessageLoop(HANDLE hEvent);
 
 ### <a name="parameters"></a>Parametreler
 
-*hEvent*  
+*hEvent*<br/>
 [in] İşleci nesnenin bekleyin.
 
 ### <a name="return-value"></a>Dönüş Değeri

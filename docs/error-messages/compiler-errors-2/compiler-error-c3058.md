@@ -16,44 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 867dbdead4c4268035b5c34a5ef053b959c822a1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 56862c411a31781f85afb280453c43b3611ff31e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246681"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093980"
 ---
 # <a name="compiler-error-c3058"></a>Derleyici Hatası C3058
-'simgesi': 'copyin' yan tümcesinde kullanılmadan önce 'threadprivate' bildirilmemiş simgesi  
-  
- Bir simge ilk bildirilmelidir [threadprivate](../../parallel/openmp/reference/threadprivate.md) , kullanılmadan önce bir [copyin](../../parallel/openmp/reference/copyin.md) yan tümcesi.  
-  
- Aşağıdaki örnek C3058 oluşturur:  
-  
-```  
-// C3058.cpp  
-// compile with: /openmp  
-int x, y, z;  
-#pragma omp threadprivate(x, z)  
-  
-void test() {  
-   #pragma omp parallel copyin(x, y)   // C3058  
-   {  
-   }  
-}  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C3058b.cpp  
-// compile with: /openmp /LD  
-int x, y, z;  
-#pragma omp threadprivate(x, y)  
-  
-void test() {  
-   #pragma omp parallel copyin(x, y)  
-   {  
-   }  
-}  
+
+'symbol': simge 'copyin'yan içinde kullanılmadan önce 'threadprivate' olarak bildirilmedi
+
+Bir sembol önce bildirilmelidir [threadprivate](../../parallel/openmp/reference/threadprivate.md) içinde kullanılmadan önce bir [copyin](../../parallel/openmp/reference/copyin.md) yan tümcesi.
+
+Aşağıdaki örnek, C3058 oluşturur:
+
+```
+// C3058.cpp
+// compile with: /openmp
+int x, y, z;
+#pragma omp threadprivate(x, z)
+
+void test() {
+   #pragma omp parallel copyin(x, y)   // C3058
+   {
+   }
+}
+```
+
+Olası çözüm:
+
+```
+// C3058b.cpp
+// compile with: /openmp /LD
+int x, y, z;
+#pragma omp threadprivate(x, y)
+
+void test() {
+   #pragma omp parallel copyin(x, y)
+   {
+   }
+}
 ```

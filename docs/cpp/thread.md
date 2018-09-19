@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 148e42a79ef7c20b7b35c3ec570212574782c1f6
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 80ea212f8c888680edf50e269c89e62988a0ee36
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462098"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46104393"
 ---
 # <a name="thread"></a>thread
 
@@ -34,7 +34,7 @@ ms.locfileid: "39462098"
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **__declspec (iş parçacığı)** *bildirimcisi*  
+> **__declspec (iş parçacığı)** *bildirimcisi*
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -96,6 +96,7 @@ Ayrıca, iş parçacığı yerel nesneleri ve değişkenleri bildirirken bu yön
 **END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [__declspec](../cpp/declspec.md)  
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)  
- [İş Parçacığında Yerel Depolama (TLS)](../parallel/thread-local-storage-tls.md)  
+
+[__declspec](../cpp/declspec.md)<br/>
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[İş Parçacığında Yerel Depolama (TLS)](../parallel/thread-local-storage-tls.md)

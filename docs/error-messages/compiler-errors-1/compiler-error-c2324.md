@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7121ca44ed988bf297599b9b3ca021f4d2c83ee2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d9a92b3e97c7484a7aa0126659783ef821730fe4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33222260"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089287"
 ---
 # <a name="compiler-error-c2324"></a>Derleyici Hatası C2324
-'tanımlayıcısı': 'name' nın sağındaki beklenmeyen  
-  
- Bir yıkıcı bir hatalı tanımlayıcı kullanılarak çağrılır.  
-  
- Aşağıdaki örnek C2324 oluşturur:  
-  
-```  
-// C2324.cpp  
-class A {};  
-typedef A* pA_t;  
-int i;  
-  
-int main() {  
-   pA_t * ppa = new pA_t;  
-   ppa->~i;   // C2324  
-   ppa->~pA_t();   // OK  
-}  
+
+'identifier': 'name' sağında beklenmiyor
+
+Yanlış bir tanımlayıcıyı kullanarak bir yok Edicisi çağrılır.
+
+Aşağıdaki örnek, C2324 oluşturur:
+
+```
+// C2324.cpp
+class A {};
+typedef A* pA_t;
+int i;
+
+int main() {
+   pA_t * ppa = new pA_t;
+   ppa->~i;   // C2324
+   ppa->~pA_t();   // OK
+}
 ```

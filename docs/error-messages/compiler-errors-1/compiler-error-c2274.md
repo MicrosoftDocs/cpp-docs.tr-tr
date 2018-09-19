@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfd9bda3f3b0ab267ec008443dd865334e1b765e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0fcc6b0afe78e089c268f69274be1cbfb6f3d32c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33173031"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093215"
 ---
 # <a name="compiler-error-c2274"></a>Derleyici Hatası C2274
-'type': sağ tarafındaki olarak geçersiz '.' işleci  
-  
- Bir tür üye erişimi (.) işlecinin sağ işleneni olarak görünür.  
-  
- Kullanıcı tanımlı tür dönüştürme erişmeye tarafından bu hataya neden. Anahtar sözcüğü kullanmak `operator` dönem arasında ve `type`.  
-  
- Aşağıdaki örnek C2286 oluşturur:  
-  
-```  
-// C2274.cpp  
-struct MyClass {  
-   operator int() {  
-      return 0;  
-   }  
-};  
-  
-int main() {  
-   MyClass ClassName;  
-   int i = ClassName.int();   // C2274  
-   int j = ClassName.operator int();   // OK  
-}  
+
+'type': sağ tarafı olarak geçersizdir '.' işleci
+
+Bir tür, üye erişimi (.) işlecinin sağ işlenen görünür.
+
+Bu hata, bir kullanıcı tanımlı tür dönüştürme erişmeye tarafından kaynaklanabilir. Anahtar sözcüğünü kullanın `operator` dönem arasında ve `type`.
+
+Aşağıdaki örnek, C2286 oluşturur:
+
+```
+// C2274.cpp
+struct MyClass {
+   operator int() {
+      return 0;
+   }
+};
+
+int main() {
+   MyClass ClassName;
+   int i = ClassName.int();   // C2274
+   int j = ClassName.operator int();   // OK
+}
 ```

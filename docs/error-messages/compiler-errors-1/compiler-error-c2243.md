@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16bc95540488b0723869c735b7fc80b15f6e763b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ef5d3a6c20ff147ac2a4b765c7779cec9f19627e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33172595"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102235"
 ---
 # <a name="compiler-error-c2243"></a>Derleyici Hatası C2243
-'type1' öğesinden 'dönüştürme türü' dönüştürme 'type2' var, ancak erişilemiyor  
-  
- Erişim Koruması (`protected` veya `private`) bir işaretçi bir dönüştürme türetilmiş bir sınıf için temel sınıf için bir işaretçi engelledi.  
-  
- Aşağıdaki örnek C2243 oluşturur:  
-  
-```  
-// C2243.cpp  
-// compile with: /c  
-class B {};  
-class D : private B {};  
-class E : public B {};  
-  
-D d;  
-B *p = &d;   // C2243  
-  
-E e;  
-B *p2 = &e;  
-```  
-  
- Temel sınıflar ile `protected` veya `private` erişim türetilmiş sınıf istemciler için erişilebilir değil. Bu düzeyde bir erişim denetimi, temel sınıf istemcilere görünmez olması gereken bir uygulama ayrıntılarını olduğunu belirtmek için kullanılır. Türetilen sınıfın temel sınıfı için bir işaretçi bir türetilmiş sınıf işaretçi örtük dönüştürme erişimi için istemcileri istiyorsanız, ortak türetme kullanın.
+
+'type1' öğesinden 'type2' 'dönüştürme türünü' dönüştürme var, ancak erişilebilir değil
+
+Erişim Koruması (`protected` veya `private`) taban sınıfı işaretçisini bir türetilmiş sınıf işaretçisine dönüştürme engelledi.
+
+Aşağıdaki örnek C2243 oluşturur:
+
+```
+// C2243.cpp
+// compile with: /c
+class B {};
+class D : private B {};
+class E : public B {};
+
+D d;
+B *p = &d;   // C2243
+
+E e;
+B *p2 = &e;
+```
+
+Temel sınıflar ile `protected` veya `private` erişim türetilen sınıfın istemcilere erişilebilir değildir. Bu düzeyde erişim denetimi, temel sınıf istemcilere görünmez olması gereken bir uygulama ayrıntısı olduğunu belirtmek için kullanılır. Taban sınıfı işaretçisini bir türetilmiş sınıf işaretçisine örtük dönüştürme erişimi istemcilerin türetilen sınıfın istiyorsanız ortak türetme kullanın.

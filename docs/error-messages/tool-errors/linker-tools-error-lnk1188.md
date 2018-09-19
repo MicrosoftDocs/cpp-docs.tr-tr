@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e31943ae253a332576fba73102db410b103a0096
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 36b31590d94d809c16ed64d16071db0919f60238
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302626"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098946"
 ---
 # <a name="linker-tools-error-lnk1188"></a>Bağlayıcı Araçları Hatası LNK1188
-BADFIXUPSECTION:: Geçersiz düzeltmesi hedef 'simge'; olası sıfır uzunluk bölümü  
-  
- VxD bağlantı sırasında bir konumu değiştirme hedefi bir bölüme sahip değil. LINK386 ile (eski bir sürümü), (MASM Grup yönergesi tarafından oluşturulan) OMF grubu kaydı başka bir sıfır uzunluk bölüm sıfır uzunluk bölümle birleştirmek için kullanılmış. Sıfır uzunluklu bölümleri ve Grup yönergesi COFF biçimi desteklemiyor. BAĞLANTI otomatik olarak bu OMF nesne türleri COFF'ye dönüştürdüğünde, bu hata oluşabilir.
+
+BADFIXUPSECTION:: Geçersiz düzeltme hedefi 'symbol'; olası sıfır uzunluk bölümü
+
+VxD bağlantı sırasında bir konum değiştirme hedefi bir bölümü yok. LINK386 ile (eski bir sürümü), bir OMF Grup kaydı (MASM grubu yönergesi tarafından oluşturulan) sıfır uzunluk bölümü başka bir sıfır uzunluk bölümü ile birleştirmek için kullanılmış olabilir. COFF biçimi GROUP yönergesi ve sıfır uzunluklu bölümlerin desteklemez. BAĞLANTI otomatik olarak bu tür bir OMF nesnelerini COFF dönüştürülürken, bu hata oluşabilir.

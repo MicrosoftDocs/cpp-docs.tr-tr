@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 985289041f1461ef9486a55fedd9816c1ebb3f35
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 5650707f9c08c144d2f5832744117dfdd06acc08
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752569"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106915"
 ---
 # <a name="window-class-macros"></a>Pencere sınıfı makroları
 
@@ -29,8 +29,8 @@ Bu makrolar pencere sınıfı yardımcı programları tanımlayın.
 
 |||
 |-|-|
-|[DECLARE_WND_CLASS](#declare_wnd_class)|Yeni bir pencere sınıfının adını belirtmenizi sağlar.| 
-|[DECLARE_WND_CLASS2](#declare_wnd_class2)|(Visual Studio 2017) Yeni bir pencere sınıf ve pencere yordamını yeni bir sınıf kullanacağı kapsayan sınıf adını belirtmenizi sağlar.| 
+|[DECLARE_WND_CLASS](#declare_wnd_class)|Yeni bir pencere sınıfının adını belirtmenizi sağlar.|
+|[DECLARE_WND_CLASS2](#declare_wnd_class2)|(Visual Studio 2017) Yeni bir pencere sınıf ve pencere yordamını yeni bir sınıf kullanacağı kapsayan sınıf adını belirtmenizi sağlar.|
 |[DECLARE_WND_SUPERCLASS](#declare_wnd_superclass)|Yeni bir pencere sınıf dayanacak var olan bir pencere sınıfı adını belirtmenizi sağlar.|
 |[DECLARE_WND_CLASS_EX](#declare_wnd_class_ex)|Bir sınıfın parametreleri belirtmenizi sağlar.|  
 
@@ -48,7 +48,7 @@ DECLARE_WND_CLASS( WndClassName )
 
 ### <a name="parameters"></a>Parametreler
 
-*WndClassName*  
+*WndClassName*<br/>
 [in] Yeni pencere sınıfı adı. NULL ise, ATL pencere sınıfı adı oluşturur.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -83,10 +83,10 @@ DECLARE_WND_CLASS2( WndClassName, EnclosingClass )
 
 ### <a name="parameters"></a>Parametreler
 
-*WndClassName*  
+*WndClassName*<br/>
 [in] Yeni pencere sınıfı adı. NULL ise, ATL pencere sınıfı adı oluşturur. 
 
-*Bulunan EnclosingClass*  
+*Bulunan EnclosingClass*<br/>
 [in] Yeni pencere sınıfını barındırır pencere sınıfı adı. NULL olamaz.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -104,10 +104,10 @@ DECLARE_WND_SUPERCLASS( WndClassName, OrigWndClassName )
 
 ### <a name="parameters"></a>Parametreler
 
-*WndClassName*  
+*WndClassName*<br/>
 [in] Pencerenin adını, sınıfın sınıf *OrigWndClassName*. NULL ise, ATL pencere sınıfı adı oluşturur.
 
-*OrigWndClassName*  
+*OrigWndClassName*<br/>
 [in] Var olan bir pencere sınıfı adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -134,13 +134,13 @@ DECLARE_WND_CLASS_EX( WndClassName, style, bkgnd )
 
 ### <a name="parameters"></a>Parametreler
 
-*WndClassName*  
+*WndClassName*<br/>
 [in] Yeni pencere sınıfı adı. NULL ise, ATL pencere sınıfı adı oluşturur.
 
-*Stil*  
+*Stil*<br/>
 [in] Pencere stili.
 
-*arka plan*  
+*arka plan*<br/>
 [in] Pencerenin arka plan rengi.
 
 ### <a name="remarks"></a>Açıklamalar

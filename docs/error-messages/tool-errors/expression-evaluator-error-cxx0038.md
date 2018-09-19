@@ -17,18 +17,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa0b47313e367f73b241ae94c5e022b45e57587d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5695b00dc52737ab3247d59e363a42aecf001ffa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297108"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098841"
 ---
 # <a name="expression-evaluator-error-cxx0038"></a>İfade Değerlendirici Hatası CXX0038
-işlev bağımsız değişken sayısı ve/veya tür uyuşmazlığı  
-  
- Belirtilen işlev çağrısı işlev prototipi eşleşmiyor.  
-  
- Doğru sayıda bağımsız değişken çağrısıyla yeniden yazın. Türe gerektiği gibi prototip eşleştirmek için her bir bağımsız değişkeni olarak belirler.  
-  
- Bu hata için CAN0038 aynıdır.
+
+işlev bağımsız değişken sayısı ve/veya tür uyuşmazlığı
+
+Belirtilen işlev çağrısı, işlev için prototip eşleşmiyor.
+
+Doğru bağımsız değişken sayısı çağrı yeniden yazın. Prototip, gerekli olarak eşleşecek şekilde her bağımsız değişken türü dönüştürün.
+
+Bu hata için CAN0038 aynıdır.

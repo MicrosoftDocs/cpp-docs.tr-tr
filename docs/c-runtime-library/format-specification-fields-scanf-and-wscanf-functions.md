@@ -31,44 +31,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c99b951e0cbbb5d2a295eb336a856bdb6c4cc0e1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0f99d7dac7878f46fceea4435703a55f2199f374
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391954"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094513"
 ---
 # <a name="format-specification-fields-scanf-and-wscanf-functions"></a>Biçim Belirtimi Alanları: scanf ve wscanf İşlevleri
-Burada yer alan bilgiler tüm geçerli `scanf` güvenli sürümleri de dahil olmak üzere işlevlerin ailesi ve bildirmek için kullanılan simgeler açıklar `scanf` Giriş akışı gibi giriş akışı ayrıştırmayı işlevleri `stdin` için`scanf`, program değişkenleri eklenen değerlerinden.  
-  
- Biçim belirtimi aşağıdaki biçime sahiptir:  
-  
- `%`[`*`] [[genişliği](../c-runtime-library/scanf-width-specification.md)] [{[h &#124; l &#124; üm &#124; I64 &#124; L](../c-runtime-library/scanf-width-specification.md)}][türü](../c-runtime-library/scanf-type-field-characters.md)  
-  
- `format` Bağımsız değişkeni giriş yorumu belirtir ve aşağıdakilerden birini veya birkaçını içerebilir:  
-  
--   Boşluk karakterleri: boş (' '); sekme ('\t'); veya yeni satır ('\n'). Bir boşluk karakteri neden `scanf` okuyun, ancak depolama değil tüm ardışık boşluk karakterleri sonraki boşluk olmayan karakter kadar giriş. Herhangi bir sayı (0 dahil) ve boşluk karakterleri giriş birleşimi biçiminde bir boşluk karakterle eşleşir.  
-  
--   Yüzde işaretini dışında boşluk olmayan karakterler (`%`). Bir boşluk olmayan karakter neden `scanf` okuyun, ancak değil depolamak, eşleşen bir boşluk olmayan karakter. Giriş akışı sonraki karakteri eşleşmiyorsa `scanf` sonlandırır.  
-  
--   Biçim belirtimleri, yüzde işaretiyle sunulan (`%`). Biçim belirtimi neden `scanf` okuyup giriş karakter belirtilen bir türün değerlere Dönüştür. Değer bağımsız değişken bağımsız değişken listesinde atanır.  
-  
- Biçim soldan sağa okunur. Giriş akışı karakter dizisi eşleşecek şekilde biçim belirtimleri dışında karakterler beklenen; Giriş akışı eşleşen karakterleri taranan ancak değil depolanır. Giriş akışı karakter biçimi belirtimiyle çakışırsa `scanf` sonlandırır, ve değil okuma değilse gibi karakter Giriş akışı bırakılır.  
-  
- İlk biçim belirtimi karşılaşıldığında, ilk giriş alanının değeri bu belirtimine göre dönüştürülür ve ilk tarafından belirtilen konumda depolanan `argument`. İkinci biçim belirtimi dönüştürülür ve ikinci depolanan için ikinci giriş alanını neden `argument`, vb. sonuna kadar biçim dizesi.  
-  
- Giriş alanını ilk boşluk karakteri (boşluk, sekme ya da yeni satır) kadar tüm karakterleri olarak tanımlı değil veya ilk kadar biçimi belirtimlerine göre ya da alan genişliği kadar (belirtilmişse) dönüştürülemez karakter ulaştı. Verilen özellikleriyle ilgili çok fazla bağımsız değişken varsa, ek bağımsız değişkenler hesaplanan ancak yoksayıldı. Sonuçları biçim belirtimi için yeterli bağımsız değişken varsa öngörülemeyen sonuçlara yol açabilir.  
-  
- Her biçim belirtiminin tek bir karakter ya da belirli biçimlendirme seçeneğini gösterir sayı alanıdır. `type` Sonra son isteğe bağlı biçim alanı görüntülenir, karakteri belirler giriş alanını bir karakter, bir dize veya sayı yorumlanır.  
-  
- En basit biçimi belirtimi yalnızca yüzde işareti içeriyor ve bir `type` karakter (örneğin, `%s`). Yüzde işareti (`%`) karakter ve şu karakterleri (kadar sonraki yüzde oturum) olan bir Denetim Biçimlendir karakter olarak hiçbir anlamı sıradan bir karakter dizisi olarak başka bir deyişle, bir dizi kabul sahip olduğunu sonrasında bir karakteri Giriş eşleşmelidir karakter. Örneğin, bir yüzde işareti karakteri giriş olduğunu belirtmek için kullanın `%%`.  
-  
- Bir yıldız işareti (`*`) yüzde işaretinden belirtilen türde bir alan yorumlanır sonraki giriş alanını atamasının gizler. Alan taranan ancak değil depolanır.  
-  
- Güvenli sürümleri (olanlar `_s` soneki), `scanf` ailesi işlevlerini gerektiren bir arabellek boyutu parametresi hemen her parametre türü geçirilmesi `c`, `C`, `s`, `S`veya `[`. Güvenli sürümleri hakkında daha fazla bilgi için `scanf` ailesi işlevlerini, bkz: [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [sacnf genişlik belirtimi](../c-runtime-library/scanf-width-specification.md)   
- [scanf türü alan karakterleri](../c-runtime-library/scanf-type-field-characters.md)   
- [scanf, _scanf_l, wscanf, _wscanf_l](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)   
- [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)
+
+Tüm bilgileri burada geçerli `scanf` işlevlerin güvenli sürümleri dahil olmak üzere, Aile ve bildirmek için kullanılan simgeler açıklar `scanf` nasıl ayrıştıracağını Giriş akışı gibi bir giriş akışı işlevleri `stdin` için`scanf`, program değişkenlere eklenen değerlerine.
+
+Biçim belirtimi aşağıdaki biçime sahiptir:
+
+`%`[`*`] [[genişliği](../c-runtime-library/scanf-width-specification.md)] [{[h &#124; l &#124; ll &#124; I64 &#124; L](../c-runtime-library/scanf-width-specification.md)}][türü](../c-runtime-library/scanf-type-field-characters.md)
+
+`format` Bağımsız değişkeni giriş yorumu belirtir ve bir veya birkaçını içerebilir:
+
+- Beyaz boşluk karakterleri: boş (' '); sekme ('\t'); veya satır başı karakteri ('\n'). Bir boşluk karakteri neden `scanf` okuyun, ancak saklamadığı, giriş sonraki-boşluk-olmayan karaktere kadar tüm ardışık boşluk karakterleri. Herhangi bir sayı (0 dahil) ve beyaz boşluk karakterleri girişteki bir bileşimini biçimde bir boşluk karakteri eşleşir.
+
+- Yüzde işareti dışında boşluk olmayan karakterler (`%`). Bir boşluk olmayan karakter neden `scanf` okuyun, ancak saklamadığı, eşleşen bir boşluk olmayan karakter. Giriş akışındaki sonraki karakteri ile eşleşmiyorsa `scanf` sonlandırır.
+
+- Biçim belirtimleri, yüzde işareti tarafından sunulan (`%`). Biçim belirtimi neden `scanf` okuyup karakterler belirtilen bir türün değerlerine dönüştüren. Bağımsız değişken listesindeki bağımsız değişken değeri atanır.
+
+Biçim, soldan sağa doğru okunur. Giriş akışındaki karakterlerin dizisiyle eşleşecek şekilde biçim belirtimleri dışındaki karakterleri beklenen; Giriş akışı eşleşen karakterleri taranan ancak depolanmadı. Giriş akışı bir karakterin biçim belirtimi ile çakışırsa `scanf` sonlandırır, ve değil okuma gibi giriş akışında karakter kaldı.
+
+İlk biçim belirtimiyle karşılaştığında ilk giriş alanının değeri bu belirtimine göre dönüştürülür ve ilk tarafından belirtilen konumda depolanan `argument`. İkinci biçim belirtimi ikinci giriş alanı dönüştürülür ve ikinci depolanan neden `argument`, biçim dizesinin sonuna aracılığıyla ve benzeri.
+
+Giriş alanını ilk boşluk karakteri (boşluk, sekme veya yeni satır) kadar tüm karakterleri olarak tanımlı değil veya biçim belirtimine göre veya alan genişliği kadar (belirtilmişse) dönüştürülemez karakter kadar ilk ulaşıldığında. Belirli özellikleri için çok fazla bağımsız değişken varsa, ek bağımsız değişkenler değerlendirilir ancak yoksayıldı. Biçim belirtimi için yeterli bağımsız değişken yoksa sonuçlar tahmin edilemez.
+
+Tek bir karakter veya bir özel biçim seçeneği gösteren bir sayı biçim belirtiminin her bir alan eder. `type` Sonra son isteğe bağlı bir biçim alanın görünen karakteri belirler giriş alan bir karakter, bir dize veya sayı yorumlanır.
+
+En basit biçim belirtimi yalnızca yüzde işareti içeriyor ve `type` karakter (örneğin, `%s`). Yüzde işareti (`%`) karakteri ve şu karakterleri (kadar sonraki yüzde işareti) olan bir biçim denetimi karakter olarak anlamı normal bir karakter dizisi olarak diğer bir deyişle, bir dizi işlem sahip bir karakterin ardından karakter giriş eşleşmelidir. Örneğin, bir yüzde işareti karakteri girdi olmaya uygun olduğunu belirtmek için kullanın `%%`.
+
+Bir yıldız işareti (`*`) yüzde işareti aşağıdaki belirtilen türde bir alan olarak yorumlanır sonraki giriş alanı atamasını engeller. Alan taranan ancak depolanmadı.
+
+Güvenli sürümler (olanlar `_s` soneki), `scanf` işlevler ailesini gerektiren bir arabellek büyüklüğü parametresi hemen her parametre türü geçirilmesi `c`, `C`, `s`, `S`veya `[`. Güvenli sürümleri hakkında daha fazla bilgi için `scanf` işlevler ailesini görmek [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[scanf Genişlik Belirtimi](../c-runtime-library/scanf-width-specification.md)<br/>
+[scanf Türü Alan Karakterleri](../c-runtime-library/scanf-type-field-characters.md)<br/>
+[scanf, _scanf_l, wscanf, _wscanf_l](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
+[scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)
