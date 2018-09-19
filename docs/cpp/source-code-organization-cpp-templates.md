@@ -10,12 +10,12 @@ dev_langs:
 ms.assetid: 50569c5d-0219-4966-9bcf-a8689074ad1d
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: ebfbfde25f0fd95eb69018fe46a9d6e04bd473c2
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: b694ba9324d82eaf0c14912f49f9962062702335
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464125"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103223"
 ---
 # <a name="source-code-organization-c-templates"></a>Kaynak kodu kuruluşu (C++ Şablonları)
 
@@ -52,7 +52,7 @@ public:
     T& operator[](int i)
    {
        return arr[i];
-   } 
+   }
 };
 #endif
 ```

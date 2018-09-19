@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bcc60c09d6fd99e56f0261409099e56713604a76
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6714d356fa2f09bdfce2750ff31432b5b4e14461
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33269744"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109736"
 ---
 # <a name="compiler-error-c3896"></a>Derleyici Hatası C3896
-'member': hatalı Başlatıcı: Bu değişmez değer veri üyesi 'ile nullptr' yalnızca ilk değer atanabilir  
-  
- A [değişmez değer](../../windows/literal-cpp-component-extensions.md) veri üyesi başlatılmış yanlış.  Bkz: [nullptr](../../windows/nullptr-cpp-component-extensions.md) daha fazla bilgi için.  
-  
- Aşağıdaki örnek C3896 oluşturur:  
-  
-```  
-// C3896.cpp  
-// compile with: /clr /c  
-ref class R{};  
-  
-value class V {  
-   literal R ^ r = "test";   // C3896  
-   literal R ^ r2 = nullptr;   // OK  
-};  
+
+'member': hatalı Başlatıcı: Bu sabit değerli veri üyesi yalnızca 'nullptr' ile başlatılabilir
+
+A [değişmez değer](../../windows/literal-cpp-component-extensions.md) veri üyesi başlatılan yanlış.  Bkz: [nullptr](../../windows/nullptr-cpp-component-extensions.md) daha fazla bilgi için.
+
+Aşağıdaki örnek, C3896 oluşturur:
+
+```
+// C3896.cpp
+// compile with: /clr /c
+ref class R{};
+
+value class V {
+   literal R ^ r = "test";   // C3896
+   literal R ^ r2 = nullptr;   // OK
+};
 ```

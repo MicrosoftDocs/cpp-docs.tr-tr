@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43053702b18355c0422a9fc87ac77e0a4ad75b82
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: ddcf0b266b9e305c209bd6b471d44e320f774851
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37335548"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061961"
 ---
 # <a name="cmapstringtoptr-class"></a>CMapStringToPtr sınıfı
 Anahtarlanan void işaretçilerin haritalarını destekler `CString` nesneleri.  
@@ -63,15 +63,11 @@ class CMapStringToPtr : public CObject
 ## <a name="members"></a>Üyeler  
  Üye işlevlerinin `CMapStringToPtr` sınıfın üye işlevleri için benzer [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Bu benzerlik nedeniyle kullanabileceğiniz `CMapStringToOb` başvuru belgeleri üye işlev özellikleri için. Gördüğünüz yerde bir `CObject` işaretçi bir işlev parametre veya dönüş değeri olarak alternatif bir işaretçiye **void**.  
   
- `BOOL CMapStringToOb::Lookup( const char* <key>,`  
-  
- `CObject*& <rValue> ) const;`  
+ `BOOL CMapStringToOb::Lookup( const char* <key>, CObject*& <rValue> ) const;`  
   
  Örneğin, için çevirir  
   
- `BOOL CMapStringToPtr::Lookup( LPCTSTR <key>, void*& <rValue> )`  
-  
- `const;`  
+ `BOOL CMapStringToPtr::Lookup( LPCTSTR <key>, void*& <rValue> ) const;`  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   

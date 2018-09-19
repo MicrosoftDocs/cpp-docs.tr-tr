@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 220c54181c042d51dc0a3317c81978b25b33d936
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9527c7a741c34f9f75967d9d5465b65cbd1dcfe5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301443"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087935"
 ---
 # <a name="linker-tools-error-lnk1189"></a>Bağlayıcı Araçları Hatası LNK1189
-LIBTOOMANYMEMBERS:: kitaplığı sınırı aşıldı sayı nesnelerin  
-  
- 65535 nesne veya bir kitaplık üyeleri sınırı aşıldı.  
-  
- Bu sorunu gidermek için daha az nesne veya üyeleri ile iki veya daha fazla kitaplık, kitaplık bölün.
+
+LIBTOOMANYMEMBERS:: kitaplığı sınırlamak sayı nesnelerin aşıldı
+
+65535 nesneler veya bir kitaplıkta üyelerinin sınırı aşıldı.
+
+Bu sorunu çözmek için iki veya daha fazla kitaplıklarıyla daha az nesne veya üyeleri kitaplığınızı bölün.
