@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54c28bf0918e61f3819865f65458ce78e5cdc4eb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 40c186e222edbb3b141fd13d8a5964e4a696edd8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320593"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087519"
 ---
 # <a name="nmake-warning-u4007"></a>NMAKE Uyarısı U4007
-Dosya adı 'filename' çok uzun; 8.3 kesiliyor  
-  
- Söz konusu dosyanın temel adı sekiz karakterden fazla olan veya üç karakterden fazla uzantısına sahip. NMAKE sekiz karakter tabanı ve üç karakterli bir uzantı adına kesildi.  
-  
- Uzun dosya adları, dosya sistemi tarafından destekleniyorsa, ad çift tırnak işaretleri içine alın (**"**).
+
+filename 'filename' çok uzun; 8.3 kesiliyor
+
+Söz konusu dosyanın temel adı sekiz karakterden daha uzun veya uzantı üçten fazla karakter var. NMAKE sekiz karakter uzunluğundaki tabanı ve üç karakterli bir uzantı adı kesilmiş.
+
+Uzun dosya adları, dosya sistemi tarafından destekleniyorsa, adın çift tırnak içine alın (**"**).

@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f09bafd0bbda8a64b7a60fe6cacf996106385787
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c08387d5c1a2a9b9b757bab7a8112783a3810065
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753018"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097802"
 ---
 # <a name="catlarray-class"></a>CAtlArray sınıfı
 
@@ -55,10 +55,10 @@ class CAtlArray
 
 #### <a name="parameters"></a>Parametreler
 
-*E*  
+*E*<br/>
 Dizide depolanan verinin türü.
 
-*ETraits*  
+*ETraits*<br/>
 Kopyalama veya öğeleri taşıma için kullanılan kod.
 
 ## <a name="members"></a>Üyeler
@@ -124,7 +124,7 @@ size_t Add();
 
 ### <a name="parameters"></a>Parametreler
 
-*Öğesi*  
+*Öğesi*<br/>
 Diziye eklenecek öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -149,7 +149,7 @@ size_t Append(const CAtlArray<E, ETraits>& aSrc);
 
 ### <a name="parameters"></a>Parametreler
 
-*aSrc*  
+*aSrc*<br/>
 Ekleneceği dizi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -222,7 +222,7 @@ void Copy(const CAtlArray<E, ETraits>& aSrc);
 
 ### <a name="parameters"></a>Parametreler
 
-*aSrc*  
+*aSrc*<br/>
 Bir diziye kopyalanacak öğe kaynağı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -265,7 +265,7 @@ E& GetAt(size_t iElement) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*IElement*  
+*IElement*<br/>
 Döndürülecek dizi öğesinin dizin değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -335,10 +335,10 @@ void InsertArrayAt(size_t iStart, const CAtlArray<E, ETraits>* paNew);
 
 ### <a name="parameters"></a>Parametreler
 
-*iStart*  
+*iStart*<br/>
 Diziye eklenecek olan dizini.
 
-*paNew*  
+*paNew*<br/>
 Ekleneceği dizi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -364,13 +364,13 @@ void InsertAt(size_t iElement, INARGTYPE element, size_t nCount = 1);
 
 ### <a name="parameters"></a>Parametreler
 
-*IElement*  
+*IElement*<br/>
 Eklenecek öğe veya öğeleri nerede olduğunuza dizini.
 
-*Öğesi*  
+*Öğesi*<br/>
 Veya birden çok eklenecek öğe değeri.
 
-*nCount*  
+*nCount*<br/>
 Eklenecek öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -414,7 +414,7 @@ const E& operator[](size_t ielement) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*IElement*  
+*IElement*<br/>
 Döndürülecek dizi öğesinin dizin değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -463,10 +463,10 @@ void RemoveAt(size_t iElement, size_t nCount = 1);
 
 ### <a name="parameters"></a>Parametreler
 
-*IElement*  
+*IElement*<br/>
 Kaldırılacak ilk öğenin dizini.
 
-*nCount*  
+*nCount*<br/>
 Kaldırılacak öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -489,10 +489,10 @@ void SetAt(size_t iElement, INARGTYPE element);
 
 ### <a name="parameters"></a>Parametreler
 
-*IElement*  
+*IElement*<br/>
 Ayarlanacak dizi öğesine işaret eden dizini.
 
-*Öğesi*  
+*Öğesi*<br/>
 Belirtilen öğenin yeni değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -513,10 +513,10 @@ bool SetCount(size_t nNewSize, int nGrowBy = - 1);
 
 ### <a name="parameters"></a>Parametreler
 
-*nNewSize*  
+*nNewSize*<br/>
 Dizinin gerekli boyutu.
 
-*nGrowBy*  
+*nGrowBy*<br/>
 Bir değer belirlemek için kullanılan arabellek hale getirmek için ne kadar büyük. -1 değeri, kullanılacak dahili olarak hesaplanmış bir değeri neden olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -543,10 +543,10 @@ void SetAtGrow(size_t iElement, INARGTYPE element);
 
 ### <a name="parameters"></a>Parametreler
 
-*IElement*  
+*IElement*<br/>
 Ayarlanacak dizi öğesine işaret eden dizini.
 
-*Öğesi*  
+*Öğesi*<br/>
 Belirtilen öğenin yeni değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -559,9 +559,9 @@ Belirtilen öğenin yeni değeri.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[MMXSwarm örnek](../../visual-cpp-samples.md)   
-[DynamicConsumer örnek](../../visual-cpp-samples.md)   
-[Oluşturma](../../visual-cpp-samples.md)   
-[Kayan örnek](../../visual-cpp-samples.md)   
-[CArray sınıfı](../../mfc/reference/carray-class.md)   
+[MMXSwarm örnek](../../visual-cpp-samples.md)<br/>
+[DynamicConsumer örnek](../../visual-cpp-samples.md)<br/>
+[Oluşturma](../../visual-cpp-samples.md)<br/>
+[Kayan örnek](../../visual-cpp-samples.md)<br/>
+[CArray Sınıfı](../../mfc/reference/carray-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)
