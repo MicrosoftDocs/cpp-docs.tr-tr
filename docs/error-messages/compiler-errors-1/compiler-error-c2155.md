@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02d3194dcaad982e5e9d4ce758352f7221a389dc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f8622de0beb968a4db9d133e698137bca3e04f14
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168431"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46083203"
 ---
 # <a name="compiler-error-c2155"></a>Derleyici Hatası C2155
-'?': aritmetik sol işleneni, beklenen geçersiz veya işaretçi türü  
-  
- Sol tarafındaki ifade `?` sıfıra karşılaştırılamaz. Sıfıra karşılaştırılabilir bir aritmetik veya işaretçi ifade kullanmanız gerekir.
+
+'?': Geçersiz sol işlenen bekleniyordu; aritmetik veya işaretçi türü
+
+Sol tarafında bir ifade `?` sıfıra karşılaştırılamaz. Sıfır olarak karşılaştırılabilir bir aritmetik veya işaretçi ifadesi kullanmanız gerekir.

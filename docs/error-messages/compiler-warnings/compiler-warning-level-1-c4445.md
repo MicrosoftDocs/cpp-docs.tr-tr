@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abd0d15113373f752bb861d73e48091687b2f0d2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 80b3e13f0f7271a38d71c65efa65f104e44aa475
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274595"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46079953"
 ---
 # <a name="compiler-warning-level-1-c4445"></a>Derleyici Uyarısı (düzey 1) C4445
-'function': WinRT ya da yönetilen türü sanal bir yöntem özel olamaz  
-  
- Bir sanal işleve özel ise, türetilmiş bir tür tarafından erişilemez. Bu hatayı düzeltmek için sanal üye fonksiyonu erişilebilirliğini korumalı veya genel olarak değiştirin.
+
+'function': bir WinRT veya yönetilen türü sanal yöntem özel olamaz
+
+Özel bir sanal işlev ise, türetilmiş bir tür tarafından erişilemez. Bu hatayı düzeltmek için korumalı veya genel olarak sanal üye işlevi erişilebilirliğini değiştirin.

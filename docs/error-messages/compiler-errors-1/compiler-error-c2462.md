@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4ce82ed15bdb8844f69abc260446c1af2fd4a0f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 65df7f4fe7f3822f2723a1709751e3b9b0f23ade
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198566"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082865"
 ---
 # <a name="compiler-error-c2462"></a>Derleyici Hatası C2462
-'tanımlayıcısı': türü bir 'yeni ifadede' tanımlanamıyor  
-  
- İşlenen alanında bir türü tanımlayamazsınız `new` işleci. Tür tanımı ayrı bir deyimde yerleştirin.  
-  
- Aşağıdaki örnek C2462 oluşturur:  
-  
-```  
-// C2462.cpp  
-int main() {  
-   new struct S { int i; };   // C2462  
-}  
+
+'identifier': bir tür bir 'yeni-expression' içinde tanımlanamaz
+
+İşlenen alanında bir tür tanımlanamaz `new` işleci. Tür tanımı içinde ayrı bir deyim koyun.
+
+Aşağıdaki örnek, C2462 oluşturur:
+
+```
+// C2462.cpp
+int main() {
+   new struct S { int i; };   // C2462
+}
 ```

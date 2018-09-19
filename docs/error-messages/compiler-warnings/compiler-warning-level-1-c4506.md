@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12a8778d8c908e05d0679b0e6c7ecaa1ad830cf5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8a454ba35b0ba551cb5eadcb5efe399210b343b0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33278704"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078835"
 ---
 # <a name="compiler-warning-level-1-c4506"></a>Derleyici Uyarısı (düzey 1) C4506
-Satır içi işlev 'function' tanımı yok  
-  
- Verilen işlevin bildirilir ve satır içi kullanım ancak tanımlanmadı için işaretlenmiş.  
-  
- Derleyici hizalı değil işlevi vermedi.  
-  
- Satır içi olarak dış işlevler ile bildirilir emin olun `extern` anahtar sözcüğü.
+
+'function' satır içi işlevinin tanımı yok
+
+Verilen işlevi bildirildi ve satır içi kullanım ancak tanımlanmamış için işaretlenmiş.
+
+Derleyici, işlev satır vermedi.
+
+Dış İşlevler, satır içine alınmayacak kadar ile bildirildiğinden emin olun `extern` anahtar sözcüğü.

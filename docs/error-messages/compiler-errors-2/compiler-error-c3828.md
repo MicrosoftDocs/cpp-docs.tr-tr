@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: adb016c164923e1ac6008e6318e39f8ac8632113
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f91a4a414a881aced6e537c0b98e69896aeeb4c3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33267426"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085491"
 ---
 # <a name="compiler-error-c3828"></a>Derleyici Hatası C3828
-'nesne türü': yerleştirme değişkenler örneklerini oluşturmaya yönetilen sırada izin verilmiyor veya WinRTclasses  
-  
- Bir yönetilen türü veya Windows çalışma zamanı türü bir nesne oluştururken yerleştirme formun işlecinin kullanamazsınız [yeni başvuru, gcnew](../../windows/ref-new-gcnew-cpp-component-extensions.md) veya [yeni](../../cpp/new-operator-cpp.md).  
-  
- Aşağıdaki örnek C3828 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C3828a.cpp  
-// compile with: /clr  
-ref struct M {  
-};  
-  
-ref struct N {  
-   static array<char>^ bytes = gcnew array<char>(256);  
-};  
-  
-int main() {  
-   M ^m1 = new (&N::bytes) M();   // C3828  
-   // The following line fixes the error.  
-   // M ^m1 = gcnew M();  
-}  
+
+'nesne türü': yönetilen örneklerini oluşturmaya izin verilmiyor yerleştirme bağımsız değişkenleri veya WinRTclasses
+
+Yönetilen türü veya Windows çalışma zamanı türünün bir nesnesi oluşturulurken, yerleştirme formun işlecinin kullanamazsınız [yeni başvuru, gcnew](../../windows/ref-new-gcnew-cpp-component-extensions.md) veya [yeni](../../cpp/new-operator-cpp.md).
+
+Aşağıdaki örnek, C3828 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C3828a.cpp
+// compile with: /clr
+ref struct M {
+};
+
+ref struct N {
+   static array<char>^ bytes = gcnew array<char>(256);
+};
+
+int main() {
+   M ^m1 = new (&N::bytes) M();   // C3828
+   // The following line fixes the error.
+   // M ^m1 = gcnew M();
+}
 ```

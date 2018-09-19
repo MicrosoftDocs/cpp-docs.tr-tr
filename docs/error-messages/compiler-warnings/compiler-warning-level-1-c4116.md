@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f17a61dd39c458091216bc2bde89c84ec2307956
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5f91892bd28733761c187705b8f576007862027b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276211"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080707"
 ---
 # <a name="compiler-warning-level-1-c4116"></a>Derleyici Uyarısı (düzey 1) C4116
-Parantez içindeki adlandırılmamış tür tanımı  
-  
- Yapısı, UNION veya numaralandırılmış türü adı olmayan bir parantez ifadesinde tanımlanır. Tür tanımı anlamsız hale gelir.  
-  
- C işlev çağrısında tanımı genel kapsama sahip. Bir C++ işlev çağrısında çağrılan işlev aynı kapsamı tanımı içeriyor.
+
+parantez içinde adsız tür tanımı
+
+Bir yapı, birlik veya numaralandırılmış tür adı olmayan bir parantez ifadesinde tanımlanır. Tür tanımını anlamsız hale gelir.
+
+C işlev çağrısında tanımı genel kapsam vardır. C++ işlev çağrısında, çağrılan işlevin aynı kapsama tanımı içeriyor.

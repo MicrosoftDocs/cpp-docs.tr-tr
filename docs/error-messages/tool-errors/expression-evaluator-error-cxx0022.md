@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 822e07c9173d9010bb8ab63b6ca4837b9c52e066
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1bf067a1024b8ac344c1490bc9ec25b0b7d57540
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297660"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082358"
 ---
 # <a name="expression-evaluator-error-cxx0022"></a>İfade Değerlendirici Hatası CXX0022
-işlev çağrısı _main'den önce  
-  
- Hata ayıklayıcı işlevi geçtiğini önce C ifade değerlendiricisi bir işlevi değerlendirilemiyor **_main'den**. Program kadar düzgün başlatılmadı **_main'den** çağrıldı.  
-  
- Bu hata için CAN0022 aynıdır.
+
+_ana önceki işlev çağrısında
+
+Hata ayıklayıcı işlevi geçtiğini önce C ifade değerlendiricisi bir funkci nejde vyhodnotit **_ana**. Program kadar düzgün başlatılmadı **_ana** çağrıldı.
+
+Bu hata için CAN0022 aynıdır.

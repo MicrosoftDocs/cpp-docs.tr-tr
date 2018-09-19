@@ -16,25 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a27961694bc5fad4080d8aceaf2f1cb65404319c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7bd6c1d641f7476d3c372939b948931a306e0f80
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33251104"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080720"
 ---
 # <a name="compiler-error-c3381"></a>Derleyici Hatası C3381
-'assembly': derleme erişim tanımlayıcıları kullanılabilir yalnızca/CLR seçeneğiyle derlenmiş kod  
-  
- Yerel türü dışında derleme görünebilir, ancak yalnızca içindeki yerel türler için derleme erişimi belirtebilirsiniz bir **/CLR** derleme.  
-  
- Daha fazla bilgi için bkz: [yazın görünürlük](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) ve [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3381 oluşturur.  
-  
-```  
-// C3381.cpp  
-// compile with: /c  
-public class A {};   // C3381  
+
+'derlemenin': derleme erişim belirticileri bulunan ve yalnızca/CLR seçeneğiyle derlenmiş kodda
+
+Yerel türler derlemenin dışında görünür olabilir, ancak yalnızca derleme erişimi için yerel türlerde belirtebilirsiniz bir **/CLR** derleme.
+
+Daha fazla bilgi için [türü görünürlük](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) ve [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3381 oluşturur.
+
+```
+// C3381.cpp
+// compile with: /c
+public class A {};   // C3381
 ```

@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec8f00793fcda748c60d9d8ea775611e3d025cd9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 542c48bd23b3f84ab301404987c77d964f51823e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298736"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082546"
 ---
 # <a name="linker-tools-error-lnk1277"></a>Bağlayıcı Araçları Hatası LNK1277
-Nesne kayıt pgd (dosya adı) bulunamadı  
-  
- Kullanırken [/LTCG:PGOPTIMZE](../../build/reference/ltcg-link-time-code-generation.md), yolun giriş .lib, def veya .obj dosyaları birinin üzerinde bunlar bulundu sırasında /LTCG:PGINSTRUMENT yolu farklıdır. Bu değişikliği LIB ortam değişkeni /LTCG:PGINSTRUMENT sonra açıklanması. Giriş dosyaları tam yolunu .pgd dosyasında depolanır.  
-  
- /LTCG:PGOPTIMIZE girişleri /LTCG:PGINSTRUMENT aşamasına aynı olmasını gerektirir.  
-  
- Bu uyarıyı çözmek için aşağıdakilerden birini yapın:  
-  
--   /LTCG:PGINSTRUMENT çalıştırın, tüm test çalışmalarını Yinele ve /LTCG:PGOPTIMIZE çalıştırın.  
-  
--   LIB ortam değişkeni /LTCG:PGINSTRUMENT çalıştırdığınızda ne olduğu için değiştirin.  
-  
- /LTCG:PGUPDATE kullanarak LNK1277 çözüm önerilmez.
+
+Nesne kaydı pgd'de (dosya adı) bulunamadı
+
+Kullanırken [/LTCG:PGOPTIMZE](../../build/reference/ltcg-link-time-code-generation.md), giriş .lib, def veya .obj dosyaları birinin yolu, bunlar bulundu /LTCG:PGINSTRUMENT sırasında yolundan farklı. Bu değişikliği LIB ortam değişkeni sonra /LTCG:PGINSTRUMENT açıklanması. Giriş dosyalarının tam yolunu .pgd dosyasında depolanır.
+
+/LTCG:PGOPTIMIZE girişleri /LTCG:PGINSTRUMENT aşaması için aynı olmasını gerektirir.
+
+Bu uyarıyı çözmek için şunlardan birini yapın:
+
+- /LTCG:PGINSTRUMENT çalıştırın, tüm test çalışmalarını Yinele ve /LTCG:PGOPTIMIZE çalıştırın.
+
+- LIB ortam değişkeni /LTCG:PGINSTRUMENT çalıştırdığınızda neler olduğu için değiştirin.
+
+Geçici bir çözüm LNK1277 /LTCG:PGUPDATE kullanarak iş önerilmez.

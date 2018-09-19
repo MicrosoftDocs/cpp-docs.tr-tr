@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f2c115ea47f87a59c7412ed057675ccf893467cc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c47d7e99099632313fd561a4e08af52644693c95
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33166367"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077015"
 ---
 # <a name="compiler-error-c2091"></a>Derleyici Hatası C2091
-işlev işlevi döndürür  
-  
- Bir işlev işlevi döndüremez. Bir işaretçi bir işlevi yerine döndür.
+
+işlev işlev döndürüyor
+
+Bir işlev bir işlev döndüremez. Bunun yerine, bir işaretçi bir işleve döndürür.

@@ -19,18 +19,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0107e163a7435a2434852868687b5e386d324d2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f2aa28d8974fe34f9824617a1f2c86181443397e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389799"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084594"
 ---
 # <a name="internationalization"></a>Uluslararası duruma getirme
 
-Microsoft çalışma zamanı kitaplığı, uluslararası pazarlar için bir programın farklı sürümlerini oluşturmak üzere yararlı olan çok sayıda yordam sağlar. Bu içerir [yerel ayar ilgili yordamlar](../c-runtime-library/locale.md), joker karakter düzenleri, çok baytlı karakter yordamları ve genel metin yordamları. Kolaylık sağlaması için, çoğu yerel ayarla ilgili yordam bu başvuruda gerçekleştirdikleri işlemlere göre kategorize edilir. Bu bölümde ve alfabetik bir başvuruda, çok baytlı karakter yordamları ve geniş karakter yordamları mevcut oldukları tek baytlı karakter karşılıklarıyla açıklanır.
+Microsoft çalışma zamanı kitaplığı, uluslararası pazarlar için bir programın farklı sürümlerini oluşturmak üzere yararlı olan çok sayıda yordam sağlar. Bu içerir [yerel ayarla ilgili yordamları](../c-runtime-library/locale.md), geniş karakter yordamlarını, çok baytlı karakter yordamlarını ve genel metin yordamlarını. Kolaylık sağlaması için, çoğu yerel ayarla ilgili yordam bu başvuruda gerçekleştirdikleri işlemlere göre kategorize edilir. Bu bölümde ve alfabetik bir başvuruda, çok baytlı karakter yordamları ve geniş karakter yordamları mevcut oldukları tek baytlı karakter karşılıklarıyla açıklanır.
 
- Ayrıca, ISO646 işleci alternatifleri de içerilir.
+Ayrıca, ISO646 işleci alternatifleri de içerilir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -16,21 +16,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7be7709baadff35c10cec861b4a0bca94c8cbe5f
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 681aa3ef5a1434ab191854f23a9e7bc908b65728
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337176"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082423"
 ---
 # <a name="implementing-a-simple-consumer"></a>Basit Tüketici Uygulama
+
 Aşağıdaki konular, Basit Tüketici oluşturma MFC Uygulama Sihirbazı'nı ve ATL OLE DB Tüketici Sihirbazı tarafından oluşturulan dosyaların nasıl düzenleneceğini gösterir. Bu örnek aşağıdaki bölümleri içerir:  
   
--   "Müşteri ile veri alma" tüm veriler satır temelinde bir veritabanı tablosundan okur tüketicide kod uygulamak nasıl gösterir.  
+- "Müşteri ile veri alma" tüm veriler satır temelinde bir veritabanı tablosundan okur tüketicide kod uygulamak nasıl gösterir.  
   
--   "Tüketiciye ekleme yer işareti desteği" Tüketiciye yer işareti desteği eklemek nasıl gösterir.  
+- "Tüketiciye ekleme yer işareti desteği" Tüketiciye yer işareti desteği eklemek nasıl gösterir.  
   
--   "XML desteği tüketiciye ekleme" XML verileri olarak alınan satır kümesi veri çıkışı için tüketici kodunun nasıl değiştirileceğini gösterir.  
+- "XML desteği tüketiciye ekleme" XML verileri olarak alınan satır kümesi veri çıkışı için tüketici kodunun nasıl değiştirileceğini gösterir.  
   
 > [!NOTE]
 >  Bu bölümde açıklanan tüketici uygulama MyProv ve sağlayıcı örnek sağlayıcıları test etmek için kullanabilirsiniz.  
@@ -45,7 +46,7 @@ Aşağıdaki konular, Basit Tüketici oluşturma MFC Uygulama Sihirbazı'nı ve 
   
 #### <a name="to-modify-the-console-application-to-use-the-ole-db-consumer"></a>OLE DB Tüketici kullanmak için konsol uygulamasını değiştirmek için  
   
-1.  MyCons.cpp içinde kalın metin gibi ekleyerek ana kodu değiştirin:  
+1. MyCons.cpp içinde kalın metin gibi ekleyerek ana kodu değiştirin:  
   
     ```cpp  
     // MyCons.cpp : Defines the entry point for the console application.  
@@ -73,30 +74,31 @@ Aşağıdaki konular, Basit Tüketici oluşturma MFC Uygulama Sihirbazı'nı ve 
     ```  
   
 ## <a name="adding-bookmark-support-to-the-consumer"></a>Tüketiciye yer işareti desteği ekleme  
- Bir yer işareti tablosundaki satırları benzersiz olarak tanımlayan bir sütundur. Genellikle, anahtar sütunu olduğundan ama her zaman kullanılmaz; Sağlayıcı özeldir. Bu bölümde yer işareti desteğini nasıl ekleyeceğinizi gösterir. Bunu yapmak için kullanıcı kayıt sınıfı aşağıdakileri yapmanız gerekir:  
+
+Bir yer işareti tablosundaki satırları benzersiz olarak tanımlayan bir sütundur. Genellikle, anahtar sütunu olduğundan ama her zaman kullanılmaz; Sağlayıcı özeldir. Bu bölümde yer işareti desteğini nasıl ekleyeceğinizi gösterir. Bunu yapmak için kullanıcı kayıt sınıfı aşağıdakileri yapmanız gerekir:  
   
--   Yer işaretleri örneği oluşturur. Türündeki nesneler bunlar [CBookmark](../../data/oledb/cbookmark-class.md).  
+- Yer işaretleri örneği oluşturur. Türündeki nesneler bunlar [CBookmark](../../data/oledb/cbookmark-class.md).  
   
--   Ayarlayarak sağlayıcısından yer işareti sütunu istek `DBPROP_IRowsetLocate` özelliği.  
+- Ayarlayarak sağlayıcısından yer işareti sütunu istek `DBPROP_IRowsetLocate` özelliği.  
   
--   Kullanarak bir yer işareti girişi için sütun eşlemesi eklemek [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md) makrosu.  
+- Kullanarak bir yer işareti girişi için sütun eşlemesi eklemek [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md) makrosu.  
   
- Önceki adımları yer işareti desteği ve çalışmak için yer imi nesneyle verin. Bu kod örneği, bir yer işareti gibi gösterir:  
+Önceki adımları yer işareti desteği ve çalışmak için yer imi nesneyle verin. Bu kod örneği, bir yer işareti gibi gösterir:  
   
--   Yazma için bir dosya açın.  
+- Yazma için bir dosya açın.  
   
--   Satır kümesi veri dosyasına satır satır çıktı.  
+- Satır kümesi veri dosyasına satır satır çıktı.  
   
--   Satır kümesi imleci çağırarak yer işaretine Taşı [MoveToBookmark](../../data/oledb/crowset-movetobookmark.md).  
+- Satır kümesi imleci çağırarak yer işaretine Taşı [MoveToBookmark](../../data/oledb/crowset-movetobookmark.md).  
   
--   Çıkış işaretli satır, dosyanın sonuna ekleniyor.  
+- Çıkış işaretli satır, dosyanın sonuna ekleniyor.  
   
 > [!NOTE]
 >  Bu bölümde açıklanan yer işareti desteği, sağlayıcı örnek sağlayıcısı uygulamasını test etmek için bu tüketici uygulama kullanmanız durumunda bırakın.  
   
 #### <a name="to-instantiate-the-bookmark"></a>Yer işareti oluşturmak için  
   
-1.  Erişimci bir nesne türü içermesi gerekir [CBookmark](../../data/oledb/cbookmark-class.md). *NSize* parametresi yer işareti arabellek boyutu (genellikle 32 bit platformları için 4) ve 64-bit platformları için 8 bayt cinsinden belirtir. Sütun veri üyeleri kullanıcı kaydı sınıfında aşağıdaki bildirimi ekleyin:  
+1. Erişimci bir nesne türü içermesi gerekir [CBookmark](../../data/oledb/cbookmark-class.md). *NSize* parametresi yer işareti arabellek boyutu (genellikle 32 bit platformları için 4) ve 64-bit platformları için 8 bayt cinsinden belirtir. Sütun veri üyeleri kullanıcı kaydı sınıfında aşağıdaki bildirimi ekleyin:  
   
     ```cpp  
     //////////////////////////////////////////////////////////////////////  
@@ -111,7 +113,7 @@ Aşağıdaki konular, Basit Tüketici oluşturma MFC Uygulama Sihirbazı'nı ve 
   
 #### <a name="to-request-a-bookmark-column-from-the-provider"></a>Bir yer işareti sütunu Sağlayıcısı'ndan istemek için  
   
-1.  Aşağıdaki kodu ekleyin `GetRowsetProperties` kullanıcı kayıt sınıfı yöntemi:  
+1. Aşağıdaki kodu ekleyin `GetRowsetProperties` kullanıcı kayıt sınıfı yöntemi:  
   
     ```cpp  
     // Set the DBPROP_IRowsetLocate property.  
@@ -125,7 +127,7 @@ Aşağıdaki konular, Basit Tüketici oluşturma MFC Uygulama Sihirbazı'nı ve 
   
 #### <a name="to-add-a-bookmark-entry-to-the-column-map"></a>Sütun eşlemesi için bir yer işareti giriş eklemek için  
   
-1.  Kullanıcı kayıt sınıfı sütun eşlemesinde şu girişi ekleyin:  
+1. Kullanıcı kayıt sınıfı sütun eşlemesinde şu girişi ekleyin:  
   
     ```cpp  
     // Set a bookmark entry in the column map.  
@@ -139,7 +141,7 @@ Aşağıdaki konular, Basit Tüketici oluşturma MFC Uygulama Sihirbazı'nı ve 
   
 #### <a name="to-use-a-bookmark-in-your-main-code"></a>Bir yer işareti ana kodunuzda kullanmak için  
   
-1.  Daha önce oluşturduğunuz konsol uygulaması MyCons.cpp dosyasından ana kod gibi görünecek şekilde değiştirin. Yer işaretlerini kullanmak için kendi yer işareti nesnesi örneklemek ana kod gerekir (`myBookmark`); bu erişimcisindeki olandan farklı bir yer işareti, (`m_bookmark`).  
+1. Daha önce oluşturduğunuz konsol uygulaması MyCons.cpp dosyasından ana kod gibi görünecek şekilde değiştirin. Yer işaretlerini kullanmak için kendi yer işareti nesnesi örneklemek ana kod gerekir (`myBookmark`); bu erişimcisindeki olandan farklı bir yer işareti, (`m_bookmark`).  
   
     ```cpp  
     ///////////////////////////////////////////////////////////////////////  
@@ -208,14 +210,15 @@ Aşağıdaki konular, Basit Tüketici oluşturma MFC Uygulama Sihirbazı'nı ve 
     }  
     ```  
   
- Yer işaretleri hakkında daha fazla bilgi için bkz. [kullanarak yer işaretleri](../../data/oledb/using-bookmarks.md). Yer işaretleri örnekleri de gösterilir [satır kümelerini güncelleştirme](../../data/oledb/updating-rowsets.md).  
+Yer işaretleri hakkında daha fazla bilgi için bkz. [kullanarak yer işaretleri](../../data/oledb/using-bookmarks.md). Yer işaretleri örnekleri de gösterilir [satır kümelerini güncelleştirme](../../data/oledb/updating-rowsets.md).  
   
 ## <a name="adding-xml-support-to-the-consumer"></a>Tüketiciye XML desteği ekleme  
- Bölümünde açıklandığı gibi [XML verilerine erişim](../../data/oledb/accessing-xml-data.md), XML verileri bir veri kaynağından almak için iki yolu vardır: kullanarak [CStreamRowset](../../data/oledb/cstreamrowset-class.md) veya bu adı kullanıyor [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md). Bu örnekte `CStreamRowset`, daha verimli olur, ancak, bu örnek uygulama yürüttüğünüz bilgisayar üzerinde çalışan SQL Server 2000 olmasını gerektirir.  
+
+Bölümünde açıklandığı gibi [XML verilerine erişim](../../data/oledb/accessing-xml-data.md), XML verileri bir veri kaynağından almak için iki yolu vardır: kullanarak [CStreamRowset](../../data/oledb/cstreamrowset-class.md) veya bu adı kullanıyor [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md). Bu örnekte `CStreamRowset`, daha verimli olur, ancak, bu örnek uygulama yürüttüğünüz bilgisayar üzerinde çalışan SQL Server 2000 olmasını gerektirir.  
   
 #### <a name="to-modify-the-command-class-to-inherit-from-cstreamrowset"></a>Komut sınıfının CStreamRowset devralacak şekilde değiştirmek için  
   
-1.  Daha önce oluşturduğunuz tüketici uygulama, `CCommand` belirtmek için bildirimi `CStreamRowset` satır kümesi sınıfı şu şekilde:  
+1. Daha önce oluşturduğunuz tüketici uygulama, `CCommand` belirtmek için bildirimi `CStreamRowset` satır kümesi sınıfı şu şekilde:  
   
     ```cpp  
     class CProducts : public CCommand<CAccessor<CProductsAccessor>, CStreamRowset >  
@@ -223,7 +226,7 @@ Aşağıdaki konular, Basit Tüketici oluşturma MFC Uygulama Sihirbazı'nı ve 
   
 #### <a name="to-modify-the-main-code-to-retrieve-and-output-the-xml-data"></a>Çıktı XML verilerini alıp ana kod değiştirmek için  
   
-1.  Daha önce oluşturduğunuz konsol uygulaması MyCons.cpp dosyasından ana kod gibi görünecek şekilde değiştirin:  
+1. Daha önce oluşturduğunuz konsol uygulaması MyCons.cpp dosyasından ana kod gibi görünecek şekilde değiştirin:  
   
     ```cpp  
     ///////////////////////////////////////////////////////////////////////  
@@ -279,4 +282,5 @@ Aşağıdaki konular, Basit Tüketici oluşturma MFC Uygulama Sihirbazı'nı ve 
     ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sihirbaz Kullanarak bir OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)
+
+[Sihirbaz Kullanarak bir OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

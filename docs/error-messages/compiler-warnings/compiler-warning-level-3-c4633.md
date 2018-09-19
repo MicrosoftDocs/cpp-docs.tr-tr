@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e77580f0aed27b824805e61c64901bf47604fc7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 54a180bcd135f4614fa6cc67cf7647acdfa1c445
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292720"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085751"
 ---
 # <a name="compiler-warning-level-3-c4633"></a>Derleyici Uyarısı (Düzey 3) C4633
-XML Belge açıklama hedef: hata: nedeni  
-  
- Bir ad geçirilen [ \<param >](../../ide/param-visual-cpp.md) etiket derleyici tarafından bulunamadı.  
-  
- Aşağıdaki örnek C4633 oluşturur:  
-  
-```  
-// C4633.cpp  
-// compile with: /clr /doc /LD /W3  
-  
-/// Text for class MyClass.  
-public ref class MyClass {  
-   // C4633 remove line for Int3  
-   /// <param name="Int1">Used to indicate status.</param>  
-   /// <param name="Int3">Used to indicate status.</param>  
-   void MyMethod(int Int1) {  
-      Int1 = 0;  
-      Int1++;  
-   }  
-};  
+
+XML belgesi yorum hedef: hata: nedeni
+
+Bir ad geçirilen [ \<param >](../../ide/param-visual-cpp.md) etiket derleyici tarafından bulunamadı.
+
+Aşağıdaki örnek, C4633 oluşturur:
+
+```
+// C4633.cpp
+// compile with: /clr /doc /LD /W3
+
+/// Text for class MyClass.
+public ref class MyClass {
+   // C4633 remove line for Int3
+   /// <param name="Int1">Used to indicate status.</param>
+   /// <param name="Int3">Used to indicate status.</param>
+   void MyMethod(int Int1) {
+      Int1 = 0;
+      Int1++;
+   }
+};
 ```

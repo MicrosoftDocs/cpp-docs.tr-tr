@@ -16,22 +16,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07e05e3a1c1b25e87053e15244f3c5fb9db442d9
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 06586d7d4374ec1763e43a1eaf3235c37dc72cd1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404167"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077951"
 ---
 # <a name="nullptr"></a>nullptr
-Bir boş işaretçi sabiti türü belirler `std::nullptr_t`, olan herhangi bir ham işaretçi türüne dönüştürülebilir.  Anahtar sözcüğünü kullanmanız mümkün olmakla birlikte **nullptr** kodunuzu türü kullanıyorsa, tüm üst bilgiler dahil olmadan `std::nullptr_t`, üst bilgisi ekleyerek tanımlamalıdır sonra `<cstddef>`.  
-  
+
+Bir boş işaretçi sabiti türü belirler `std::nullptr_t`, olan herhangi bir ham işaretçi türüne dönüştürülebilir.  Anahtar sözcüğünü kullanmanız mümkün olmakla birlikte **nullptr** kodunuzu türü kullanıyorsa, tüm üst bilgiler dahil olmadan `std::nullptr_t`, üst bilgisi ekleyerek tanımlamalıdır sonra `<cstddef>`.
+
 > [!NOTE]
->  **Nullptr** anahtar sözcüğü de tanımlanan C + +/ CLI için yönetilen kod uygulamaları ve ISO Standard C++ anahtar sözcüğü ile değiştirilebilir değildir. Kodunuzu kullanılarak derlenmiş, [/CLR](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği, yönetilen kod hedefler, ardından kullanmak `__nullptr` herhangi bir satırında kod burada gerekir garanti derleyici yerel C++ yorumu kullanır. Daha fazla bilgi için [nullptr](../windows/nullptr-cpp-component-extensions.md).  
-  
-## <a name="remarks"></a>Açıklamalar  
- NULL veya sıfır kullanmaktan kaçının (`0`) olarak; boş işaretçi sabiti **nullptr** kötüye kullanımı için daha az savunmasızdır ve çoğu durumda daha iyi çalışır.  Örneğin, verilen `func(std::pair<const char *, double>)`, ardından arama `func(std::make_pair(NULL, 3.14))` bir derleyici hatasına neden olur.  NULL genişletilir makrosu `0`, böylece çağrı `std::make_pair(0, 3.14)` döndürür `std::pair<int, double>`, func () olarak ın dönüştürülebilir değil `std::pair<const char *, double>` parametre türü.  Çağırma `func(std::make_pair(nullptr, 3.14))` başarıyla derlenir çünkü `std::make_pair(nullptr, 3.14)` döndürür `std::pair<std::nullptr_t, double>`, dönüştürülebilir olduğu `std::pair<const char *, double>`.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [anahtar sözcükler](../cpp/keywords-cpp.md)   
- [nullptr](../windows/nullptr-cpp-component-extensions.md)
+>  **Nullptr** anahtar sözcüğü de tanımlanan C + +/ CLI için yönetilen kod uygulamaları ve ISO Standard C++ anahtar sözcüğü ile değiştirilebilir değildir. Kodunuzu kullanılarak derlenmiş, [/CLR](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği, yönetilen kod hedefler, ardından kullanmak `__nullptr` herhangi bir satırında kod burada gerekir garanti derleyici yerel C++ yorumu kullanır. Daha fazla bilgi için [nullptr](../windows/nullptr-cpp-component-extensions.md).
+
+## <a name="remarks"></a>Açıklamalar
+
+NULL veya sıfır kullanmaktan kaçının (`0`) olarak; boş işaretçi sabiti **nullptr** kötüye kullanımı için daha az savunmasızdır ve çoğu durumda daha iyi çalışır.  Örneğin, verilen `func(std::pair<const char *, double>)`, ardından arama `func(std::make_pair(NULL, 3.14))` bir derleyici hatasına neden olur.  NULL genişletilir makrosu `0`, böylece çağrı `std::make_pair(0, 3.14)` döndürür `std::pair<int, double>`, func () olarak ın dönüştürülebilir değil `std::pair<const char *, double>` parametre türü.  Çağırma `func(std::make_pair(nullptr, 3.14))` başarıyla derlenir çünkü `std::make_pair(nullptr, 3.14)` döndürür `std::pair<std::nullptr_t, double>`, dönüştürülebilir olduğu `std::pair<const char *, double>`.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[nullptr](../windows/nullptr-cpp-component-extensions.md)

@@ -19,40 +19,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b6f645d474e697bf662a5dd63973dd54c329eb9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8f2cb8e8ca907081e85be03d7576d0252cdf20ad
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409442"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081325"
 ---
 # <a name="signal-action-constants"></a>sinyal Eylemi Sabitleri
-Gerçekleştirilecek eylemi kesme sinyal alındığında değerine bağlıdır `func`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-#include <signal.h>  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- `func` Bağımsız değişkeni bir işlev adresi ya da aşağıda listelenen ve SİNYALİN tanımlanmış bildirim sabitleri biri olmalıdır. H.  
-  
- `SIG_DFL`  
- Sistem varsayılan yanıt kullanır. Akış g/ç çağıran program kullanıyorsa, çalışma zamanı kitaplığı tarafından oluşturulan arabellekleri atılmış değil.  
-  
- `SIG_IGN`  
- Kesme sinyali yok sayar. Bu değer için hiçbir zaman verilmelidir `SIGFPE`, kayan nokta işleminin durumunu sol beri tanımlanmamış.  
-  
- `SIG_SGE`  
- Bir hata oluştu sinyalinin gösterir.  
-  
- `SIG_ACK`  
- Bir bildirim alındı gösterir.  
-  
- `SIG_ERR`  
- Hata belirten bir sinyal dönüş türünden oluştu.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sinyal](../c-runtime-library/reference/signal.md)   
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+Gerçekleştirilecek eylemi Kesme sinyali alındığında değerine bağlıdır `func`.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+#include <signal.h>
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+`func` Bağımsız değişkeni bir işlev adresi veya aşağıda listelenen ve SİNYAL içinde tanımlı bildirim sabitleri biri olmalıdır. H
+
+|||
+|-|-|
+| `SIG_DFL`  | Sistem varsayılan yanıt kullanır. Akış g/ç çağıran program kullanılıyorsa, çalışma zamanı kitaplığı tarafından oluşturulan arabellekler Temizlenen değil.  |
+| `SIG_IGN`  | Kesme sinyali yok sayıyor. Bu değer için hiçbir zaman verilmelidir `SIGFPE`, kayan nokta işleminin durumunu sol beri tanımlanmamış.  |
+| `SIG_SGE`  | Bir hata oluştu sinyal gösterir.  |
+| `SIG_ACK`  | Bir bildirim alındı gösterir.  |
+| `SIG_ERR`  | Bir dönüş türü sinyalinden belirten bir hata oluştu.  |
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[signal](../c-runtime-library/reference/signal.md)<br/>
+[Global Sabitler](../c-runtime-library/global-constants.md)

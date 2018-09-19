@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28f3a9173f1141c055547149bc18b5f96a3a475b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e35be180be7ded6a65585566dff6173a13ba7821
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165915"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46083385"
 ---
 # <a name="compiler-error-c2104"></a>Derleyici Hatası C2104
-' &' göz ardı bit alanı  
-  
- Bir bit alanının adresi alınamıyor.  
-  
- Aşağıdaki örnek C2104 oluşturur:  
-  
-```  
-// C2104.cpp  
-struct X {  
-   int sb : 1;  
-};  
-  
-int main() {  
-   X x;  
-   &x.sb;   // C2104   
-   x.sb;   // OK  
-}  
+
+' &' yoksayıldı bit alanı
+
+Bir bit alanı adresini alamazsınız.
+
+Aşağıdaki örnek, C2104 oluşturur:
+
+```
+// C2104.cpp
+struct X {
+   int sb : 1;
+};
+
+int main() {
+   X x;
+   &x.sb;   // C2104
+   x.sb;   // OK
+}
 ```

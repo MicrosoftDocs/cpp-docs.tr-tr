@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93d1d73a5ab48ed992edafd8f6fe845e7e0f1561
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 975ce5a948305f5b2538496ddef34e18bb6db63c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249417"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46079693"
 ---
 # <a name="compiler-error-c3152"></a>Derleyici Hatası C3152
-'oluşturmak': 'anahtar sözcüğü', yalnızca bir sınıf, yapı ya da sanal üye işlevi uygulanabilir  
-  
- Belirli anahtar sözcükler yalnızca bir C++ sınıfa uygulanabilir.  
-  
- Aşağıdaki örnek C3152 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C3152.cpp  
-// compile with: /clr /c  
-ref class C {  
-   int (*pfn)() sealed;   // C3152  
-   virtual int g() sealed;   // OK  
-};  
-```  
+
+'oluşturmak': 'anahtar sözcüğü', yalnızca bir sınıf, yapı veya sanal üye işleve uygulanabilir
+
+Bazı anahtar sözcükler yalnızca bir C++ sınıfı için uygulanabilir.
+
+Aşağıdaki örnek, C3152 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C3152.cpp
+// compile with: /clr /c
+ref class C {
+   int (*pfn)() sealed;   // C3152
+   virtual int g() sealed;   // OK
+};
+```

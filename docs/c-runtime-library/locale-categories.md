@@ -31,42 +31,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5087fd42a5fd1c104d8587091996e58f78442b1e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 12162e7d6eabfc60b3b4c028b990b720a502f516
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392321"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077886"
 ---
 # <a name="locale-categories"></a>Yerel Ayar Kategorileri
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-#include <locale.h>  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Yerel ayar kategorileri göre yerelleştirme yordamları bir programın yerel ayar bilgileri hangi kısmının kullanılacak belirtmek için kullanılan bildirim sabittir. Yerel ayar programınız belirli yönlerini özelleştirilebilir yerleşim yeri (veya ülke/bölge) ifade eder. Yerel ayara bağımlı alanlar, örneğin, tarihleri parasal değerleri için görüntüleme biçimi ve biçimlendirme içerir.  
-  
-|Yerel ayar kategorisi|Etkilenen program bölümleri|  
-|---------------------|-------------------------------|  
-|`LC_ALL`|Tüm yerel ayarlara özgü davranış (tüm kategorileri)|  
-|`LC_COLLATE`|Davranışını `strcoll` ve `strxfrm` işlevleri|  
-|`LC_CTYPE`|Karakter işleme işlevleri davranışını (dışında **isdigit**, `isxdigit`, `mbstowcs`, ve `mbtowc`, hangi etkilenmez)|  
-|`LC_MAX`|Aynı `LC_TIME`|  
-|`LC_MIN`|Aynı `LC_ALL`|  
-|`LC_MONETARY`|Tarafından döndürülen bilgi biçimlendirme para `localeconv` işlevi|  
-|`LC_NUMERIC`|Karakter biçimlendirilmiş çıktı yordamları için ondalık (örneğin, `printf`), veri dönüştürme yordamları ve tarafından döndürülen parasal biçimlendirme bilgilerini `localeconv` işlevi|  
-|`LC_TIME`|Davranışını `strftime` işlevi|  
-  
- Bkz: [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) bir örnek.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [localeconv](../c-runtime-library/reference/localeconv.md)   
- [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)   
- [strcoll işlevleri](../c-runtime-library/strcoll-functions.md)   
- [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)   
- [strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)   
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+
+#include <locale.h>
+
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Yerel ayar kategorileri yerelleştirme yordamları tarafından kullanılacak olan bir programın yerel ayar bilgilerinin hangi kısmının belirtmek için kullanılan bildirim sabitleri ' dir. Yerel ayar, programınızın bazı yönlerini özelleştirilebilir konumu (veya ülke/bölge) ifade eder. Yerel ayara bağımlı alanları, örneğin, parasal değerlerin görüntülenme biçimini ve tarihleri biçimlendirme içerir.
+
+|Yerel ayar kategorisi|Etkilenen programın bölümlerini|
+|---------------------|-------------------------------|
+|`LC_ALL`|Tüm yerel ayara özgü davranışın (tüm kategoriler)|
+|`LC_COLLATE`|Davranışını `strcoll` ve `strxfrm` işlevleri|
+|`LC_CTYPE`|Karakter işleme işlevleri davranışını (dışında **isdigit**, `isxdigit`, `mbstowcs`, ve `mbtowc`, Etkilenmeyen)|
+|`LC_MAX`|Aynı `LC_TIME`|
+|`LC_MIN`|Aynı `LC_ALL`|
+|`LC_MONETARY`|Biçimlendirme bilgileri tarafından döndürülen para `localeconv` işlevi|
+|`LC_NUMERIC`|Ondalık nokta karakteri biçimlendirilen çıkış rutinleri (örneğin, `printf`), veri dönüştürme rutinleri ve tarafından döndürülen parasal biçimlendirme bilgileri `localeconv` işlevi|
+|`LC_TIME`|Davranışını `strftime` işlevi|
+
+Bkz: [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) örneği.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[localeconv](../c-runtime-library/reference/localeconv.md)<br/>
+[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
+[strcoll İşlevleri](../c-runtime-library/strcoll-functions.md)<br/>
+[strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
+[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
+[Global Sabitler](../c-runtime-library/global-constants.md)

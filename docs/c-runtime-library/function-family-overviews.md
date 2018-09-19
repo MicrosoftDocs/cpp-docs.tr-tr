@@ -1,5 +1,5 @@
 ---
-title: İşlev ailesi genel bakışlar | Microsoft Docs
+title: İşlev ailesine genel bakış | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,18 +8,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be4ca30d42ab4404c5df229a9148d1b4d23dad99
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4aae6f2d901f4b7f0385cf5a78c303250dc0a956
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32385064"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076690"
 ---
-# <a name="function-family-overviews"></a>İşlev ailesi genel bakış
-Açıklamayı buraya ekleyin.  
-  
-## <a name="section-heading"></a>Bölüm Başlığı  
- Gövde bölümünü buraya ekleyin.  
-  
-### <a name="subsection-heading"></a>Alt Bölüm Başlığı  
- Gövde alt bölümünü buraya ekleyin.
+# <a name="function-family-overviews"></a>İşlev ailesine genel bakış
+
+Açıklamayı buraya ekleyin.
+
+## <a name="section-heading"></a>Bölüm Başlığı
+
+Gövde bölümünü buraya ekleyin.
+
+### <a name="subsection-heading"></a>Alt Bölüm Başlığı
+
+Gövde alt bölümünü buraya ekleyin.

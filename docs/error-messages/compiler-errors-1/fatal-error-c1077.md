@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfc2881180fd2b3948c0e9ed7b3125dc03d0f093
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a16d27ab2e2c42ed2f58bbb416df067f01c7ec0d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226369"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081357"
 ---
 # <a name="fatal-error-c1077"></a>Önemli hata C1077
-Derleyici sınırı: olamaz sahip birden fazla sayı komut satırı seçenekleri  
-  
- Komut satırı seçenekleri sayısı sınırı aşıyor.  
-  
- Çok fazla simgeler ile tanımlanmış olması [/D](../../build/reference/d-preprocessor-definitions.md). (Tanımları bunun yerine bir üstbilgi dosyasına yerleştirin.)
+
+Derleyici sınırı: olamaz sahip birden fazla sayı komut satırı seçenekleri
+
+Komut satırı seçenekleri iç sınırı aşıyor.
+
+Çok fazla sembol tanımlanmış olması [/D](../../build/reference/d-preprocessor-definitions.md). (Tanımları yerine bir üstbilgi dosyasında yerleştirin.)

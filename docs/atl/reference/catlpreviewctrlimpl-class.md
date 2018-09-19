@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec4fa860387068dd345c19467583922ebaeb49ab
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ef1469c40de8aae06460f1874905c53e91a47ca1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763679"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46079342"
 ---
 # <a name="catlpreviewctrlimpl-class"></a>Catlpreviewctrlımpl sınıfı
 
@@ -144,10 +144,10 @@ virtual BOOL Create(HWND hWndParent, const RECT* prc);
 
 ### <a name="parameters"></a>Parametreler
 
-*hWndParent*  
+*hWndParent*<br/>
 Kabuk tarafından sağlanan Zengin Önizleme için ana penceresi için bir tanıtıcı.
 
-*ÇHC*  
+*ÇHC*<br/>
 Başlangıç boyutu ve pencerenin konumunu belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -176,7 +176,7 @@ virtual void DoPaint(HDC hdc);
 
 ### <a name="parameters"></a>Parametreler
 
-*hdc*  
+*hdc*<br/>
 Boyama için cihaz bağlamı için bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -235,16 +235,16 @@ LRESULT OnPaint(
 
 ### <a name="parameters"></a>Parametreler
 
-*nMsg*  
+*nMsg*<br/>
 WM_PAINT için ayarlayın.
 
-*wParam*  
+*wParam*<br/>
 Bu parametre kullanılmaz.
 
-*lParam*  
+*lParam*<br/>
 Bu parametre kullanılmaz.
 
-*bHandled*  
+*bHandled*<br/>
 Bu işlev döndürüldüğünde TRUE içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -273,7 +273,7 @@ virtual void SetHost(HWND hWndParent);
 
 ### <a name="parameters"></a>Parametreler
 
-*hWndParent*  
+*hWndParent*<br/>
 Yeni bir ana penceresi için bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -291,13 +291,13 @@ virtual void SetPreviewVisuals(
 
 ### <a name="parameters"></a>Parametreler
 
-*clrBack*  
+*clrBack*<br/>
 Önizleme penceresini arka plan rengi.
 
-*clrText*  
+*clrText*<br/>
 Önizleme penceresini metin rengi.
 
-*plf*  
+*plf*<br/>
 Önizleme metni görüntülemede kullanılacak yazı tipi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -312,10 +312,10 @@ virtual void SetRect(const RECT* prc, BOOL bRedraw);
 
 ### <a name="parameters"></a>Parametreler
 
-*ÇHC*  
+*ÇHC*<br/>
 Yeni boyutunu ve önizleme denetimin konumunu belirtir.
 
-*bRedraw*  
+*bRedraw*<br/>
 Denetim yeniden olup olmadığını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar

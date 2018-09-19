@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4bc7ca0ccf3c973363e4427c89ccf497c20d1791
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 70a38090bcbe1a984e643d6d995abe2c79339163
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33256538"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080629"
 ---
 # <a name="compiler-error-c3252"></a>Derleyici Hatası C3252
-'yöntemi': yönetilen sanal yönteminde veya WinRT türü erişilebilirlik indiremezsiniz  
-  
- Sanal bir yöntem bir taban sınıftan veya herhangi bir arabirim yönteminden uygulayan bir sınıf, bu yöntem erişim indiremezsiniz.  
-  
- Bir arabirimdeki tüm yöntemler ortak olduğunu unutmayın.  
-  
- Aşağıdaki örnek C3252 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C3252.cpp  
-// compile with: /clr /c  
-ref class A {  
-public:  
-   virtual void f1() {}  
-};  
-  
-ref class B : public A {  
-// To fix, uncomment the following line:   
-// public:      
-   virtual void f1() override sealed {}   // C3252, make this method public  
-};  
+
+'method': WinRT türü ya da yönetilen sanal yöntemin erişilebilirliği azaltılamaz
+
+Bir temel sınıftan sanal bir yöntem veya bir arabirimden herhangi bir yöntemini uygulayan bir sınıf, yöntemin erişim indiremezsiniz.
+
+Arabirim içindeki tüm yöntemleri ortak olduğunu unutmayın.
+
+Aşağıdaki örnek, C3252 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C3252.cpp
+// compile with: /clr /c
+ref class A {
+public:
+   virtual void f1() {}
+};
+
+ref class B : public A {
+// To fix, uncomment the following line:
+// public:
+   virtual void f1() override sealed {}   // C3252, make this method public
+};
 ```

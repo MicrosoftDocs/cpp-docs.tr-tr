@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6951d6d56fa0e93e75725c5ce5b13fec7f3d78f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ad39b2a9e3397f97ddc4a900bc45d1983ebbf574
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228881"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085295"
 ---
 # <a name="compiler-error-c2640"></a>Derleyici Hatası C2640
-'tanımlayıcısı': değiştiricisi geçersiz başvuru üzerinde __based  
-  
- `__based` Değiştiricisi yalnızca işaretçileri üzerinde kullanılabilir.  
-  
- Aşağıdaki örnek C2640 oluşturur:  
-  
-```  
-// C2640.cpp  
-void f(int i) {  
-    void *vp;  
-    int _based(vp) &vr = I;  // C2640  
-}  
+
+'identifier': __based değiştiricisi başvuru üzerinde geçersizdir
+
+`__based` Değiştiricisi yalnızca işaretçiler üzerinde kullanılabilir.
+
+Aşağıdaki örnek, C2640 oluşturur:
+
+```
+// C2640.cpp
+void f(int i) {
+    void *vp;
+    int _based(vp) &vr = I;  // C2640
+}
 ```

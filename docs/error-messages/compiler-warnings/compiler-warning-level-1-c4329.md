@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7eca757f361acaa0aeaf90332d33400f5a0ba6d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6f4d250bbd21e55a64009522e5f277493730f7d1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33278011"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084906"
 ---
 # <a name="compiler-warning-level-1-c4329"></a>Derleyici Uyarısı (düzey 1) C4329
-__declspec(align()) enum göz ardı edilir  
-  
- Kullanımı [Hizala](../../cpp/align-cpp.md) anahtar sözcüğünü [__declspec](../../cpp/declspec.md) değiştiricisi üzerinde izin verilmeyen bir `enum`. Aşağıdaki örnek C4329 oluşturur:  
-  
-```  
-// C4329.cpp  
-// compile with: /W1 /LD  
-enum __declspec(align(256)) TestEnum {   // C4329  
-   TESTVAL1,  
-   TESTVAL2,  
-   TESTVAL3  
-};  
-__declspec(align(256)) enum TestEnum1;  
+
+__declspec(align()) numaralandırma üzerinde göz ardı edilir
+
+Kullanım [hizalama](../../cpp/align-cpp.md) anahtar sözcüğünü [__declspec](../../cpp/declspec.md) üzerinde değiştiricisi verilmiyor bir `enum`. Aşağıdaki örnek, C4329 oluşturur:
+
+```
+// C4329.cpp
+// compile with: /W1 /LD
+enum __declspec(align(256)) TestEnum {   // C4329
+   TESTVAL1,
+   TESTVAL2,
+   TESTVAL3
+};
+__declspec(align(256)) enum TestEnum1;
 ```

@@ -14,19 +14,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d9f39f7ce609ea06a2d991ac79c2b1151625bc1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 53498d5a1402d1953df93ea0f2d7c723218174c2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384765"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46079043"
 ---
 # <a name="identifiers-in-primary-expressions"></a>Birincil İfadelerdeki Tanımlayıcılar
-Tanımlayıcıları integral olabilir **float**, `enum`, `struct`, **UNION**, dizi, işaretçi veya işlev türü. (Bu durumda bu, l-değeri'dir) bir nesne belirleme veya bir işlev (Bu durumda bu, bir işlev Belirleyicisi'dir) olarak bildirilmiş bir birincil ifadesi sağlanan bir tanımlayıcıdır. Bkz: [L-değeri ve r değeri ifadeleri](../c-language/l-value-and-r-value-expressions.md) l-değeri tanımının için.  
-  
- Böylece bir dizi tanımlayıcı form sol işleneni bir atama işleminin olamaz ve bu nedenle değiştirilebilir l-değeri değil, bir dizi tanımlayıcı tarafından gösterilen işaretçi değeri bir değişken değil.  
-  
- Bir işlevi olarak bildirilen bir tanımlayıcı değeri işlevi adresidir bir işaretçi temsil eder. Belirtilen türde bir değer döndüren bir işlev işaretçisi giderir. Bu nedenle, işlev tanımlayıcıları l değerleri atama işlemlerinde olamaz. Daha fazla bilgi için bkz: [tanımlayıcıları](../c-language/c-identifiers.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Birincil İfadeler](../c-language/c-primary-expressions.md)
+
+Tanımlayıcılar tam sayı, sahip **float**, `enum`, `struct`, **birleşim**, işaretçi, dizi veya işlev türü. Birincil bir ifade (Bu durumda bu, bir l değeri'dir) bir nesne belirleme veya bir işlev (Bu durumda bu, bir işlev göstergesini'dir) olarak bildirilmiş sağlanan bir tanımlayıcıdır. Bkz: [L-değeri ve r değeri ifadeleri](../c-language/l-value-and-r-value-expressions.md) bir l-değeri tanımı.
+
+Bir dizi tanımlayıcısına bir atama işleminin sol işleneni biçiminin olamaz ve bu nedenle değiştirilebilir bir l-değeri değil, bir dizi tanımlayıcısı tarafından temsil edilen işaretçi değeri bir değişken değil.
+
+Bir işlev olarak bildirilen bir tanımlayıcı işlevi adresi değeri olduğu bir işaretçiyi temsil eder. Belirtilen türde bir değer döndüren bir işlev işaretçisi ele alır. Bu nedenle, işlev tanımlayıcıları l-değerler atama işlemlerinde olamaz. Daha fazla bilgi için [tanımlayıcıları](../c-language/c-identifiers.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Birincil İfadeler](../c-language/c-primary-expressions.md)

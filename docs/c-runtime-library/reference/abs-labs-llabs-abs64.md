@@ -46,12 +46,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b783ee6e4a5ea511a26068ffb89fcc09236f20b1
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 1380a6e56ce444e80feccf3e8306a0a589c98d01
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408134"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085270"
 ---
 # <a name="abs-labs-llabs-abs64"></a>Abs, laboratuvarlar, llabs, _abs64
 
@@ -76,7 +76,7 @@ float abs( float n );   // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*n*  
+*n*<br/>
 Sayısal değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -157,8 +157,8 @@ _abs64(_I64_MIN) returns 0x8000000000000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)  
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)  
-[_cabs](cabs.md)  
-[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)  
-[imaxabs](imaxabs.md)  
+[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[_cabs](cabs.md)<br/>
+[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>
+[imaxabs](imaxabs.md)

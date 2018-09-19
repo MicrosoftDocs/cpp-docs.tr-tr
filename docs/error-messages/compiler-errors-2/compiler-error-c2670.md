@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0579e22906e2acfa2d8aa3f2952ae05a7a44a5f6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7c3c41ff5e8aba8011a4e82c870f53a3f65455b8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33233063"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46083191"
 ---
 # <a name="compiler-error-c2670"></a>Derleyici Hatası C2670
-'tanımlayıcısı': işlev şablonunun numaralı parametre türü 'type' dönüştürülemiyor  
-  
- Bir parametre gereken türe dönüştürülemedi.  
-  
- Açık bir dönüştürme oluşturursanız, bu hata düzeltilebilir.
+
+'identifier': işlev şablonunun parametre numarası 'type' türünden dönüştürülemiyor
+
+Bir parametre gerekli türüne dönüştürülemedi.
+
+Açık bir dönüştürme oluşturursanız, bu hata sabit olamaz.

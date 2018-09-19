@@ -16,57 +16,61 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 593e5509ada926f27243a761da3470eb2d846a22
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 503302d323f45b5f7c3971803fef0547ff28e0c8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33258756"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077704"
 ---
 # <a name="compiler-error-c3490"></a>Derleyici Hatası C3490
-const nesnesi aracılığıyla erişilen için 'var' değiştirilemiyor  
-  
- İçinde bildirilen bir lambda ifadesi bir `const` yöntemi değişebilir olmayan üye verileri değiştiremez.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
--   Kaldırma `const` değiştirici yöntem bildirimi gelen.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, C3490 oluşturur, üye değişkeni değiştirdiğinden `_i` içinde bir `const` yöntemi:  
-  
-```  
-// C3490a.cpp  
-// compile with: /c  
-  
-class C  
-{  
-   void f() const   
-   {  
-      auto x = [=]() { _i = 20; }; // C3490  
-   }  
-  
-   int _i;  
-};  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek kaldırarak C3490 çözümler `const` değiştirici yöntem bildirimi gelen:  
-  
-```  
-// C3490b.cpp  
-// compile with: /c  
-  
-class C  
-{  
-   void f()  
-   {  
-      auto x = [=]() { _i = 20; };  
-   }  
-  
-   int _i;  
-};  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+
+'var' değiştirilemez çünkü bir const nesnesi üzerinden erişiliyor
+
+Bölümünde bildirilen bir lambda ifadesi bir `const` yöntemi değişemeyen üye verilerini değiştiremez.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+- Kaldırma `const` , yöntem bildiriminde'den değiştiricisi.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3490 oluşturur, üye değişkeni değiştirir çünkü `_i` içinde bir `const` yöntemi:
+
+```
+// C3490a.cpp
+// compile with: /c
+
+class C
+{
+   void f() const
+   {
+      auto x = [=]() { _i = 20; }; // C3490
+   }
+
+   int _i;
+};
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, kaldırarak C3490 çözümler `const` değiştirici yöntem bildiriminde'nden:
+
+```
+// C3490b.cpp
+// compile with: /c
+
+class C
+{
+   void f()
+   {
+      auto x = [=]() { _i = 20; };
+   }
+
+   int _i;
+};
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)

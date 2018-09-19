@@ -18,175 +18,177 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1c332bc9b6ca491951ff1c9a7665471078d703e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dbb02f426e839eff20a1dcd37ab41d4a08640599
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32388967"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081539"
 ---
 # <a name="a-sample-generic-text-program"></a>Örnek Genel Metin Programı
-**Microsoft özel**  
-  
- Aşağıdaki programı, GENTEXT. C TCHAR içinde tanımlanan genel metin eşlemeleri kullanımını daha ayrıntılı bir şekilde sağlar. Y:  
-  
-```  
-// GENTEXT.C  
-// use of generic-text mappings defined in TCHAR.H  
-  
-#include <stdio.h>  
-#include <stdlib.h>  
-#include <string.h>  
-#include <direct.h>  
-#include <errno.h>  
-#include <tchar.h>  
-  
-int __cdecl _tmain(int argc, _TCHAR **argv, _TCHAR **envp)  
-{  
-   _TCHAR buff[_MAX_PATH];  
-   _TCHAR *str = _T("Astring");  
-   char *amsg = "Reversed";  
-   wchar_t *wmsg = L"Is";  
-  
-#ifdef _UNICODE  
-   printf("Unicode version\n");  
-#else /* _UNICODE */  
-#ifdef _MBCS  
-   printf("MBCS version\n");  
-#else  
-   printf("SBCS version\n");  
-#endif  
-#endif /* _UNICODE */  
-  
-   if (_tgetcwd(buff, _MAX_PATH) == NULL)  
-       printf("Can't Get Current Directory - errno=%d\n", errno);  
-   else  
-       _tprintf(_T("Current Directory is '%s'\n"), buff);  
-   _tprintf(_T("'%s' %hs %ls:\n"), str, amsg, wmsg);  
-   _tprintf(_T("'%s'\n"), _tcsrev(_tcsdup(str)));  
-   return 0;  
-}  
-  
-```  
-  
- Varsa `_MBCS` bırakıldı tanımlı, GENTEXT. Aşağıdaki MBCS programı C eşlenir:  
-  
-```  
-// crt_mbcsgtxt.c  
-  
-/*   
- * Use of generic-text mappings defined in TCHAR.H  
- * Generic-Text-Mapping example program  
- * MBCS version of GENTEXT.C  
- */  
-  
-#include <stdio.h>  
-#include <stdlib.h>  
-#include <mbstring.h>  
-#include <direct.h>  
-  
-int __cdecl main(int argc, char **argv, char **envp)  
-{  
-   char buff[_MAX_PATH];  
-   char *str = "Astring";  
-   char *amsg = "Reversed";  
-   wchar_t *wmsg = L"Is";  
-  
-   printf("MBCS version\n");  
-  
-   if (_getcwd(buff, _MAX_PATH) == NULL) {  
-       printf("Can't Get Current Directory - errno=%d\n", errno);  
-   }  
-   else {  
-       printf("Current Directory is '%s'\n", buff);  
-   }  
-  
-   printf("'%s' %hs %ls:\n", str, amsg, wmsg);  
-   printf("'%s'\n", _mbsrev(_mbsdup((unsigned char*) str)));  
-   return 0;  
-}  
-```  
-  
- Varsa `_UNICODE` bırakıldı tanımlı, GENTEXT. C programı aşağıdaki Unicode sürümü eşler. Kullanma hakkında daha fazla bilgi için `wmain` yerini almak üzere Unicode programlarda `main`, bkz: [wmain kullanma](../c-language/using-wmain.md) içinde *C dil başvurusu*.  
-  
-```  
-// crt_unicgtxt.c  
-  
-/*   
- * Use of generic-text mappings defined in TCHAR.H  
- * Generic-Text-Mapping example program  
- * Unicode version of GENTEXT.C  
- */  
-  
-#include <stdio.h>  
-#include <stdlib.h>  
-#include <string.h>  
-#include <direct.h>  
-  
-int __cdecl wmain(int argc, wchar_t **argv, wchar_t **envp)  
-{  
-   wchar_t buff[_MAX_PATH];  
-   wchar_t *str = L"Astring";  
-   char *amsg = "Reversed";  
-   wchar_t *wmsg = L"Is";  
-  
-   printf("Unicode version\n");  
-  
-   if (_wgetcwd(buff, _MAX_PATH) == NULL) {  
-      printf("Can't Get Current Directory - errno=%d\n", errno);  
-   }  
-   else {  
-       wprintf(L"Current Directory is '%s'\n", buff);  
-   }  
-  
-   wprintf(L"'%s' %hs %ls:\n", str, amsg, wmsg);  
-   wprintf(L"'%s'\n", wcsrev(wcsdup(str)));  
-   return 0;  
-}  
-```  
-  
- Ne `_MBCS` ya da `_UNICODE` bırakıldı tanımlı, GENTEXT. C tek baytlı ASCII kod, aşağıdaki gibi eşler:  
-  
-```  
-// crt_sbcsgtxt.c  
-/*   
- * Use of generic-text mappings defined in TCHAR.H  
- * Generic-Text-Mapping example program  
- * Single-byte (SBCS) Ascii version of GENTEXT.C  
- */  
-  
-#include <stdio.h>  
-#include <stdlib.h>  
-#include <string.h>  
-#include <direct.h>  
-  
-int __cdecl main(int argc, char **argv, char **envp)  
-{  
-   char buff[_MAX_PATH];  
-   char *str = "Astring";  
-   char *amsg = "Reversed";  
-   wchar_t *wmsg = L"Is";  
-  
-   printf("SBCS version\n");  
-  
-   if (_getcwd(buff, _MAX_PATH) == NULL) {  
-       printf("Can't Get Current Directory - errno=%d\n", errno);  
-   }  
-   else {  
-       printf("Current Directory is '%s'\n", buff);  
-   }  
-  
-   printf("'%s' %hs %ls:\n", str, amsg, wmsg);  
-   printf("'%s'\n", strrev(strdup(str)));  
-   return 0;  
-}  
-```  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md)   
- [Veri türü eşlemeleri](../c-runtime-library/data-type-mappings.md)   
- [Sabit ve Global değişken eşlemeleri](../c-runtime-library/constant-and-global-variable-mappings.md)   
- [Rutin eşlemeler](../c-runtime-library/routine-mappings.md)   
- [Genel Metin Eşlemelerini Kullanma](../c-runtime-library/using-generic-text-mappings.md)
+
+**Microsoft'a özgü**
+
+Aşağıdaki program, GENTEXT. C TCHAR içinde tanımlanan genel metin eşlemeleri kullanımını daha ayrıntılı bir gösterim sağlar. Y:
+
+```
+// GENTEXT.C
+// use of generic-text mappings defined in TCHAR.H
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <direct.h>
+#include <errno.h>
+#include <tchar.h>
+
+int __cdecl _tmain(int argc, _TCHAR **argv, _TCHAR **envp)
+{
+   _TCHAR buff[_MAX_PATH];
+   _TCHAR *str = _T("Astring");
+   char *amsg = "Reversed";
+   wchar_t *wmsg = L"Is";
+
+#ifdef _UNICODE
+   printf("Unicode version\n");
+#else /* _UNICODE */
+#ifdef _MBCS
+   printf("MBCS version\n");
+#else
+   printf("SBCS version\n");
+#endif
+#endif /* _UNICODE */
+
+   if (_tgetcwd(buff, _MAX_PATH) == NULL)
+       printf("Can't Get Current Directory - errno=%d\n", errno);
+   else
+       _tprintf(_T("Current Directory is '%s'\n"), buff);
+   _tprintf(_T("'%s' %hs %ls:\n"), str, amsg, wmsg);
+   _tprintf(_T("'%s'\n"), _tcsrev(_tcsdup(str)));
+   return 0;
+}
+
+```
+
+Varsa `_MBCS` olmuştur GENTEXT tanımlı. Aşağıdaki MBCS program C eşlenir:
+
+```
+// crt_mbcsgtxt.c
+
+/*
+ * Use of generic-text mappings defined in TCHAR.H
+ * Generic-Text-Mapping example program
+ * MBCS version of GENTEXT.C
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <mbstring.h>
+#include <direct.h>
+
+int __cdecl main(int argc, char **argv, char **envp)
+{
+   char buff[_MAX_PATH];
+   char *str = "Astring";
+   char *amsg = "Reversed";
+   wchar_t *wmsg = L"Is";
+
+   printf("MBCS version\n");
+
+   if (_getcwd(buff, _MAX_PATH) == NULL) {
+       printf("Can't Get Current Directory - errno=%d\n", errno);
+   }
+   else {
+       printf("Current Directory is '%s'\n", buff);
+   }
+
+   printf("'%s' %hs %ls:\n", str, amsg, wmsg);
+   printf("'%s'\n", _mbsrev(_mbsdup((unsigned char*) str)));
+   return 0;
+}
+```
+
+Varsa `_UNICODE` olmuştur GENTEXT tanımlı. C programı aşağıdaki Unicode sürümü eşler. Kullanma hakkında daha fazla bilgi için `wmain` bir ardılı olarak Unicode programlarda `main`, bkz: [wmain kullanma](../c-language/using-wmain.md) içinde *C dil başvurusu*.
+
+```
+// crt_unicgtxt.c
+
+/*
+ * Use of generic-text mappings defined in TCHAR.H
+ * Generic-Text-Mapping example program
+ * Unicode version of GENTEXT.C
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <direct.h>
+
+int __cdecl wmain(int argc, wchar_t **argv, wchar_t **envp)
+{
+   wchar_t buff[_MAX_PATH];
+   wchar_t *str = L"Astring";
+   char *amsg = "Reversed";
+   wchar_t *wmsg = L"Is";
+
+   printf("Unicode version\n");
+
+   if (_wgetcwd(buff, _MAX_PATH) == NULL) {
+      printf("Can't Get Current Directory - errno=%d\n", errno);
+   }
+   else {
+       wprintf(L"Current Directory is '%s'\n", buff);
+   }
+
+   wprintf(L"'%s' %hs %ls:\n", str, amsg, wmsg);
+   wprintf(L"'%s'\n", wcsrev(wcsdup(str)));
+   return 0;
+}
+```
+
+Kullanılmazsa `_MBCS` ya da `_UNICODE` olmuştur GENTEXT tanımlı. C gibi tek baytlık ASCII koduna eşler:
+
+```
+// crt_sbcsgtxt.c
+/*
+ * Use of generic-text mappings defined in TCHAR.H
+ * Generic-Text-Mapping example program
+ * Single-byte (SBCS) Ascii version of GENTEXT.C
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <direct.h>
+
+int __cdecl main(int argc, char **argv, char **envp)
+{
+   char buff[_MAX_PATH];
+   char *str = "Astring";
+   char *amsg = "Reversed";
+   wchar_t *wmsg = L"Is";
+
+   printf("SBCS version\n");
+
+   if (_getcwd(buff, _MAX_PATH) == NULL) {
+       printf("Can't Get Current Directory - errno=%d\n", errno);
+   }
+   else {
+       printf("Current Directory is '%s'\n", buff);
+   }
+
+   printf("'%s' %hs %ls:\n", str, amsg, wmsg);
+   printf("'%s'\n", strrev(strdup(str)));
+   return 0;
+}
+```
+
+ **END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Genel Metin Eşlemeleri](../c-runtime-library/generic-text-mappings.md)<br/>
+[Veri Türü Eşlemeleri](../c-runtime-library/data-type-mappings.md)<br/>
+[Sabit ve Global Değişken Eşlemeleri](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
+[Rutin Eşlemeler](../c-runtime-library/routine-mappings.md)<br/>
+[Genel Metin Eşlemelerini Kullanma](../c-runtime-library/using-generic-text-mappings.md)

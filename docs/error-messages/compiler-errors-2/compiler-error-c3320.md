@@ -16,29 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08810d38b74081cfb8573d1e33ea3a8ec4dabd4c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b67d419630d59902270638213ce7a79dd8b9e0c4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33254582"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078445"
 ---
 # <a name="compiler-error-c3320"></a>Derleyici Hatası C3320
-'type': türü module 'name' özelliği aynı ada sahip olamaz  
-  
-Geçirilen parametre olarak yapısı, sınıf, numaralandırma veya birleşim olabilen, bir verilen kullanıcı tanımlı tür (UDT) aynı ada sahip olamaz [Modülü](../../windows/module-cpp.md) özniteliğin adı özelliği.  
-  
-## <a name="example"></a>Örnek  
-Aşağıdaki örnek C3320 oluşturur:  
-  
-```cpp  
-// C3320.cpp  
-#include "unknwn.h"  
-[module(name="xx")];  
-  
-[export] struct xx {   // C3320  
-// Try the following line instead  
-// [export] struct yy {  
-   int i;  
-};  
+
+'type': tür Modül 'name' özelliği aynı ada sahip olamaz
+
+Geçirilen parametre olarak bir yapı, sınıf, enum veya birleşim olabilir, bir verilen kullanıcı tanımlı tür (UDT) aynı ada sahip olamaz [Modülü](../../windows/module-cpp.md) özniteliğin adı özelliği.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3320 oluşturur:
+
+```cpp
+// C3320.cpp
+#include "unknwn.h"
+[module(name="xx")];
+
+[export] struct xx {   // C3320
+// Try the following line instead
+// [export] struct yy {
+   int i;
+};
 ```

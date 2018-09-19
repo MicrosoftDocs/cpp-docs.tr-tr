@@ -15,46 +15,48 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 296ae2e4f535e08924a77b8726b93778a6da5026
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2c3fdededa6e107e15a8c0999d65ba4e0c5cf47f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33092004"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46083047"
 ---
 # <a name="record-field-exchange-using-rfx"></a>Kayıt Alanı Değişimi: RFX Kullanma
-Bu konu RFX framework yaptığı ile ilgili olarak kullanmak için bunu açıklar.  
+
+Bu konuda RFX framework yaptığı ilgili olarak kullanmak için neler açıklanmaktadır.  
   
 > [!NOTE]
->  Bu konu, türetilen sınıflar için geçerlidir [CRecordset](../../mfc/reference/crecordset-class.md) toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız, toplu kayıt alanı değişimi (Toplu RFX) uygulanır. Toplu RFX RFX için benzer. Farkları anlamak için bkz: [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
+>  Bu konu, türetilen sınıflar için geçerlidir. [CRecordset](../../mfc/reference/crecordset-class.md) toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız, toplu kayıt alanı değişimi (Bulk RFX) uygulanır. Toplu RFX RFX için benzerdir. Farkları anlamak için bkz: [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
- Aşağıdaki konular, ilgili bilgiler içerir:  
+Aşağıdaki konular, ilgili bilgileri içerir:  
   
--   [Kayıt Alanı Değişimi: sihirbaz kodu ile çalışma](../../data/odbc/record-field-exchange-working-with-the-wizard-code.md) RFX'in ana bileşenlerini tanıtır ve kod açıklar, MFC Uygulama Sihirbazı'nı ve **sınıfı Ekle** (açıklandığı gibi [MFC ODBC Tüketicisi Ekleme ](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) RFX ve nasıl sihirbaz kodu değiştirmek isteyebilirsiniz desteklemek yazma.  
+- [Kayıt Alanı Değişimi: sihirbaz kodu ile çalışma](../../data/odbc/record-field-exchange-working-with-the-wizard-code.md) RFX ana bileşenlerini tanıtır ve kod açıklar, MFC Uygulama Sihirbazı ve **sınıfı Ekle** (açıklandığı [MFC ODBC Tüketicisi Ekleme ](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) RFX ve nasıl sihirbaz kodu değiştirmek isteyebileceğiniz desteklemek yazma.  
   
--   [Kayıt Alanı Değişimi: RFX işlevlerini kullanma](../../data/odbc/record-field-exchange-using-the-rfx-functions.md) çağrı RFX işlevlerini yazmayı açıklar, `DoFieldExchange` geçersiz kılar.  
+- [Kayıt Alanı Değişimi: RFX işlevlerini kullanma](../../data/odbc/record-field-exchange-using-the-rfx-functions.md) çağrı RFX işlevleri yazmayı açıklar, `DoFieldExchange` geçersiz kılar.  
   
- Aşağıdaki tabloda rolünüze framework sizin için ne yaptığını göre gösterir.  
+Aşağıdaki tabloda rolünüze göre framework sizin için ne yaptığını gösterir.  
   
 ### <a name="using-rfx-you-and-the-framework"></a>RFX kullanma: Siz ve Framework  
   
-|Bunun için,|Çerçeve|  
+|Bunun için,|Framework|  
 |---------|-------------------|  
 
-| Kayıt kümesi sınıflarınızı sihirbaz bildirin. Alan veri üyeleri adları ve veri türlerini belirtin. | Sihirbaz türetilen bir `CRecordset` sınıfı ve yazma işlemleri bir [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) sizin için geçersiz kılma, bir RFX dahil olmak üzere işlev çağrısı için her alan veri üyesi. |  
-| (İsteğe bağlı) El ile tüm gerekli parametre veri üyeleri sınıfına ekleyin. El ile bir RFX işlev çağrısı ekleme `DoFieldExchange` her parametre veri üyesi için bir çağrı ekleyin [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) parametreleri, Grup ve parametrelerinde toplam sayısını belirtin [m_nParams ](../../mfc/reference/crecordset-class.md#m_nparams). Bkz: [kayıt kümesi: kayıt kümesi (ODBC) kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md). ||  
-| (İsteğe bağlı) El ile alan veri üyeleri için ek sütunlar bağlayın. El ile Artır [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields). Bkz: [kayıt kümesi: veri sütunlarını (ODBC) dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md). ||  
+| Kayıt kümesi sınıflarını sihirbazla bildirin. Alan veri üyeleri adları ve veri türlerini belirtin. | Sihirbaz türetilen bir `CRecordset` sınıfı ve yazma işlemleri bir [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) RFX dahil olmak üzere, işlev çağrısı için her alanın veri üyesi, sizin için geçersiz kılın. |  
+| (İsteğe bağlı) El ile tüm gerekli parametre veri üyeleri sınıfına ekleyin. El ile bir RFX işlev çağrısını ekleyin `DoFieldExchange` her parametre veri üyesi için bir çağrı ekleyin [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) parametreleri grubunun ve parametrelerinde toplam sayısını belirtin [m_nParams ](../../mfc/reference/crecordset-class.md#m_nparams). Bkz: [kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md). ||  
+| (İsteğe bağlı) El ile ek sütunlar için alan veri üyeleri bağlayın. El ile Artır [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields). Bkz: [kayıt kümesi: veri sütunlarını (ODBC) dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md). ||  
 
-| Kayıt kümesi sınıfın bir nesnesi oluşturun. Nesne kullanmadan önce kendi parametre veri üyeleri varsa ayarlayın. | Verimlilik için framework parametreleri ODBC kullanarak Önden bağlar. Parametre değerlerini geçirdiğinizde, framework bunları veri kaynağına geçirir. Sıralama ve filtreleme dizeleri değiştirmediğiniz sürece yalnızca parametre değerlerini sorgular için gönderilir. |  
-| Kayıt kümesi nesnesi kullanarak açmak [CRecordset::Open](../../mfc/reference/crecordset-class.md#open). | Kayıt kümesinin sorgusunu çalıştırır, sütunları alan veri üyeleri kayıt kümesi ve çağrıları için bağlar `DoFieldExchange` ilk seçili kayıt kümesinin alan veri üyeleri arasında veri değişimi için. |  
-| Kayıt kümesi kullanarak kaydırma [CRecordset::Move](../../mfc/reference/crecordset-class.md#move) veya menü veya araç komutu. | Çağrıları `DoFieldExchange` yeni geçerli kayıttaki alan veri üyeleri için veri aktarmasına. |  
-| Ekleme, güncelleştirme ve kayıt silme. | Çağrıları `DoFieldExchange` veri kaynağına veri aktarmasına. |  
+| Kayıt kümesi sınıfının bir nesnesi oluşturun. Nesne kullanmadan önce parametre değerlerini veri üyeleri, varsa ayarlayın. | Verimlilik için framework ODBC kullanarak parametreleri, Önden bağlar. Parametre değerlerini geçirmek, framework bunları veri kaynağına geçirir. Sıralama ve filtreleme dizeleri değiştirmediğiniz sürece yalnızca parametre değerlerini sorgular için gönderilir. |  
+| Kayıt kümesi nesnesi kullanılarak açık [CRecordset::Open](../../mfc/reference/crecordset-class.md#open). | Kümesinin sorguyu yürütür, sütunlar için kayıt kümesi ve çağrıları alan veri üyeleri bağlar `DoFieldExchange` ilk seçili kayıt ve kayıt kümesinin alan veri üyeleri arasında veri alışverişi. |  
+| Kayıt kümesi kullanarak kaydırma [CRecordset::Move](../../mfc/reference/crecordset-class.md#move) veya bir menü veya araç çubuğunu komutu. | Çağrıları `DoFieldExchange` veri alan veri üyeleri için yeni geçerli kayıttan aktarmayı. |  
+| Ekleme, güncelleştirme ve kayıtlarını sil. | Çağrıları `DoFieldExchange` veri kaynağına veri aktarmayı. |  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)   
- [Kayıt Alanı Değişimi: RFX nasıl çalışır?](../../data/odbc/record-field-exchange-how-rfx-works.md)   
- [Kayıt kümesi: SUM'ları ve diğer toplama sonuçlarını (ODBC) alma](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)   
- [CRecordset sınıfı](../../mfc/reference/crecordset-class.md)   
- [CFieldExchange sınıfı](../../mfc/reference/cfieldexchange-class.md)   
- [Makrolar, genel işlevler ve genel değişkenler](../../mfc/reference/mfc-macros-and-globals.md)
+
+[Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)<br/>
+[Kayıt Alanı Değişimi: RFX'in Çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md)<br/>
+[Kayıt Kümesi: SUM'ları ve Diğer Toplama Sonuçlarını Alma (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>
+[CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)<br/>
+[CFieldExchange Sınıfı](../../mfc/reference/cfieldexchange-class.md)<br/>
+[Makrolar, genel işlevler ve genel değişkenler](../../mfc/reference/mfc-macros-and-globals.md)
 

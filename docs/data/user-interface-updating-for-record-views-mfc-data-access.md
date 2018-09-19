@@ -1,5 +1,5 @@
 ---
-title: Kayıt görünümleri (MFC veri erişimi) için kullanıcı arabirimi güncelleştirme | Microsoft Docs
+title: Kayıt görünümleri (MFC veri erişimi) için kullanıcı arabirimi güncelleştirilirken | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,24 +17,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1227ba1fe0a14af7013109b336d1d60eda41137e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 43f5d1017b3f89474e9dd7eebce0cf71c8c8c448
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33105822"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086882"
 ---
 # <a name="user-interface-updating-for-record-views--mfc-data-access"></a>Kayıt görünümleri (MFC veri erişimi) için kullanıcı arabirimi güncelleştiriliyor
-`CRecordView` Varsayılan Gezinti komutları için kullanıcı arabirimi güncelleştirme işleyicileri sağlar. Bu işleyiciler etkinleştirme ve kullanıcı arabirimi nesneleri devre dışı bırakma otomatikleştirmek — menü öğeleri ve araç çubuğu düğmeleri. Uygulama Sihirbazı'nı Standart menüler sağlar ve seçerseniz **Dockable Araç çubuğu** seçeneği, bir dizi araç çubuğu düğmesi komutlar için. Kayıt görünümü sınıfını kullanarak oluşturursanız `CRecordView`, uygulamanız için kullanıcı arabirimi nesneleri eklemek isteyebilirsiniz.  
+
+`CRecordView` Varsayılan kullanıcı arabirimini güncelleştirme işleyicileri için Gezinti komutlarını sağlar. Etkinleştirme ve devre dışı kullanıcı arabirimi nesneleri bu işleyicileri otomatik hale getirin; menü öğeleri ve araç çubuğu düğmeleri. Uygulama Sihirbazı'nı Standart menüler sağlar ve seçerseniz **yerleştirilebilir araç** seçeneği, bir dizi komutlar için araç çubuğu düğmesi. Kayıt görünümü sınıfını kullanarak oluşturmak istiyorsanız `CRecordView`, uygulamanıza benzer kullanıcı arabirimi nesneleri eklemek isteyebilirsiniz.  
   
-### <a name="to-create-menu-resources-with-the-menu-editor"></a>Menü düzenleyicisi menüsü kaynaklarını oluşturmak için  
+### <a name="to-create-menu-resources-with-the-menu-editor"></a>Düzenleyici menü menü kaynakları oluşturmak için  
   
-1.  Kullanma hakkında bilgi için başvuran [Menü Düzenleyici](../windows/menu-editor.md), aynı dört komutla kendi menüsü oluşturabilir.  
+1. Kullanma hakkında bilgi için söz konusu [Menü Düzenleyici](../windows/menu-editor.md), kendi menü ile aynı dört komutlar oluşturur.  
   
-#### <a name="to-create-toolbar-buttons-with-the-graphics-editor"></a>Araç çubuğu düğmeleri grafik Düzenleyicisi oluşturmak için  
+#### <a name="to-create-toolbar-buttons-with-the-graphics-editor"></a>Araç çubuğu düğmeleri grafik düzenleyici oluşturmak için  
   
-1.  Kullanma hakkında bilgi için başvuran [araç çubuğu Düzenleyicisi](../windows/toolbar-editor.md), araç çubuğu düğmeleri için kayıt gezinti komutlarınızı eklemek için araç çubuğu kaynağını düzenleyin.  
+1. Kullanma hakkında bilgi için söz konusu [araç çubuğu Düzenleyicisi](../windows/toolbar-editor.md), araç çubuğu düğmeleri için kayıt gezinti komutlarınızı eklemek için araç çubuğu kaynağı düzenleyemez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayıt Görünümünde Gezintiyi Destekleme](../data/supporting-navigation-in-a-record-view-mfc-data-access.md)   
- [Kayıt görünümünü kullanma](../data/using-a-record-view-mfc-data-access.md)
+
+[Kayıt Görünümünde Gezintiyi Destekleme](../data/supporting-navigation-in-a-record-view-mfc-data-access.md)<br/>
+[Kayıt görünümünü kullanma](../data/using-a-record-view-mfc-data-access.md)

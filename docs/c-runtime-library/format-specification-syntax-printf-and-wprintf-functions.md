@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfb885a5d29c26f4a40d5b93490a06652eff1ffc
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6253b52d322982efe8beafc45c9942fb3787818a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216678"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082501"
 ---
 # <a name="format-specification-syntax-printf-and-wprintf-functions"></a>Biçim belirtim Sözdizimi: printf ve wprintf işlevleri
 
@@ -58,8 +58,7 @@ Biçim dizesi izleyen bağımsız değişkenleri karşılık gelen göre yorumla
 Tamsayı türleri gibi `short`, `int`, `long`, `long long`ve bunların `unsigned` çeşitleri kullanılarak belirtilir **d**, **miyim**, **o**, **u**, **x**, ve **X**. Kayan nokta türleri gibi `float`, `double`, ve `long double`, kullanılarak belirtilen **bir**, **A**, **e**, **E**, **f**, **F**, **g**, ve **G**. Varsayılan olarak, tarafından değiştirilmediği sürece bir *boyutu* önek, tamsayı bağımsız değişkenleri için zorlanır `int` türü ve kayan nokta bağımsız değişkenleri zorlanır `double`. 64 bitlik sistemlerde bir `int` 32-bit bir değerdir; sürece çıkış için biçimlendirilir, bu nedenle, 64-bit tamsayıya kesilecek bir *boyutu* öneki **ll** veya **I64**kullanılır. Tarafından belirtilen işaretçi türleri **p** varsayılan işaretçi boyutu platformu kullanın.
 
 > [!NOTE]
-> **Microsoft'a özgü**  
-> **Z** karakter ve davranışını yazın **c**, **C**, **s**, ve **S** karakter türü bunlar ile kullanılan `printf` ve `wprintf` işlevleri, Microsoft genişletmeleridir. ISO C standardı kullanan **c** ve **s** dar karakterler ve dizeler için tutarlı bir şekilde ve **C** ve **S** geniş karakterler ve dizeler için tüm biçimlendirme işlevleri.
+> **Microsoft Specific** **Z** karakter ve davranışını yazın **c**, **C**, **s**, ve **S** ile kullanıldığında karakter yazın `printf` ve `wprintf` işlevleri, Microsoft genişletmeleridir. ISO C standardı kullanan **c** ve **s** dar karakterler ve dizeler için tutarlı bir şekilde ve **C** ve **S** geniş karakterler ve dizeler için tüm biçimlendirme işlevleri.
 
 ### <a name="type-field-characters"></a>Türü alan karakterleri
 
@@ -212,11 +211,10 @@ Visual C++ ' ta rağmen `long double` farklı bir tür aynı iç gösterime sahi
 Bir **hc** veya **hC** tür tanımlayıcısı ile eşanlamlıdır **c** içinde `printf` işlevleri ile **C** içinde `wprintf` işlevleri. Bir **lc**, **lC**, **wc** veya **wC** tür tanımlayıcısı ile eşanlamlıdır **C** içinde `printf` İşlevler ile **c** içinde `wprintf` işlevleri. Bir **hs** veya **hS** tür tanımlayıcısı ile eşanlamlıdır **s** içinde `printf` işlevleri ile **S** içinde `wprintf` işlevleri. Bir **ls**, **lS**, **ws** veya **wS** tür tanımlayıcısı ile eşanlamlıdır **S** içinde `printf` İşlevler ile **s** içinde `wprintf` işlevleri.
 
 > [!NOTE]
-> **Microsoft'a özgü**  
-> **miyim** (büyük harf i), **I32**, **I64**, ve **w** boyut değiştirici önekleri Microsoft uzantılarıdır ve ISO C ile uyumlu olmayan bir bağımsız değişken. **h** önek veri türü ile kullanıldığında `char` ve **l** (Küçük Harf L) veri türü ile kullanıldığında önek `double` Microsoft uzantılarıdır.
+> **Microsoft Specific** **miyim** (büyük harf i), **I32**, **I64**, ve **w** bağımsız değişkeni boyut değiştirici önekleri Microsoft olan Uzantılar ve olan ISO C uyumlu değil. **h** önek veri türü ile kullanıldığında `char` ve **l** (Küçük Harf L) veri türü ile kullanıldığında önek `double` Microsoft uzantılarıdır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)  
-[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)  
-[printf_p Konumsal Parametreler](../c-runtime-library/printf-p-positional-parameters.md)  
+[printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
+[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)<br/>
+[printf_p Konumsal Parametreler](../c-runtime-library/printf-p-positional-parameters.md)

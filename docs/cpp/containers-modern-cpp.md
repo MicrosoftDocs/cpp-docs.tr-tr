@@ -11,12 +11,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d740bb36c1d574e474058c05d900d605c71e55f0
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 1a05eada2b5828cfc654496355bddcabcafc8d60
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406340"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086154"
 ---
 # <a name="containers-modern-c"></a>Kapsayıcılar (Modern C++)
 
@@ -48,6 +48,7 @@ C stili diziler kullanmayın. Doğrudan veri erişim daha eski API'lar için eri
 Kapsayıcıları hakkında daha fazla bilgi için bkz. [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)  
- [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)  
- [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)  
+
+[C++ tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
+[C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

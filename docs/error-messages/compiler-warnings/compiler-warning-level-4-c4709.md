@@ -16,33 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aab1727ab667a4434805f969b32957e654814166
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: df12a377c3d365eaf274e58f9d573753aa1f0a57
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295324"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078991"
 ---
 # <a name="compiler-warning-level-4-c4709"></a>Derleyici Uyarısı (düzey 4) C4709
-dizi dizini ifadesi içinde virgül işleci  
-  
- Bir dizi dizini ifadede virgül ortaya çıktığında derleyici sonra son virgül değeri kullanır.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4709 oluşturur:  
-  
-```  
-// C4709.cpp  
-// compile with: /W4  
-#include <stdio.h>  
-  
-int main()   
-{  
-    int arr[2][2];  
-    arr[0][0] = 10;  
-    arr[0][1] = 11;  
-  
-    // Prints 10, not 11  
-    printf_s("\n%d",arr[0][1,0]);   // C4709  
-}  
+
+dizi dizin ifadesinde virgül işleci
+
+Bir dizi dizin ifadesinde virgül ortaya çıktığında, derleyici değeri son virgülden sonra kullanır.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4709 oluşturur:
+
+```
+// C4709.cpp
+// compile with: /W4
+#include <stdio.h>
+
+int main()
+{
+    int arr[2][2];
+    arr[0][0] = 10;
+    arr[0][1] = 11;
+
+    // Prints 10, not 11
+    printf_s("\n%d",arr[0][1,0]);   // C4709
+}
 ```

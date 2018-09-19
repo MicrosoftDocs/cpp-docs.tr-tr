@@ -59,12 +59,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60541891832a3d466f7396086ac0918108991582
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d95a8f6b28b638b65191bc04ad094cc128f7b247
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753168"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080317"
 ---
 # <a name="cpatht-class"></a>CPathT sınıfı
 
@@ -82,7 +82,7 @@ class CPathT
 
 #### <a name="parameters"></a>Parametreler
 
-*StringType*  
+*StringType*<br/>
 ATL/MFC string sınıfı yolu kullanmak için (bkz [CStringT](../../atl-mfc-shared/reference/cstringt-class.md)).
 
 ## <a name="members"></a>Üyeler
@@ -194,7 +194,7 @@ BOOL AddExtension(PCXSTR pszExtension);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszExtension*  
+*pszExtension*<br/>
 Eklemek için dosya uzantısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -215,7 +215,7 @@ BOOL Append(PCXSTR pszMore);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszMore*  
+*pszMore*<br/>
 Eklenecek dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -236,7 +236,7 @@ void BuildRoot(int iDrive);
 
 ### <a name="parameters"></a>Parametreler
 
-*iDrive*  
+*iDrive*<br/>
 Sürücü sayısı (0, y:, 1, b ve benzeri).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -265,10 +265,10 @@ void Combine(PCXSTR pszDir, PCXSTR  pszFile);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszDir*  
+*pszDir*<br/>
 Dizin yolu.
 
-*pszFile*  
+*pszFile*<br/>
 Dosya yolu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -285,7 +285,7 @@ CPathT<StringType> CommonPrefix(PCXSTR pszOther);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszOther*  
+*pszOther*<br/>
 Karşılaştırma için geçerli bir yol.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -306,10 +306,10 @@ BOOL CompactPath(HDC hDC, UINT nWidth);
 
 ### <a name="parameters"></a>Parametreler
 
-*hDC*  
+*hDC*<br/>
 Yazı tipi ölçümleri için kullanılan cihaz bağlamı.
 
-*nWidth*  
+*nWidth*<br/>
 Piksel cinsinden genişliği, dize sığacak kadar zorlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -330,10 +330,10 @@ BOOL CompactPathEx(UINT nMaxChars, DWORD dwFlags = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*nMaxChars*  
+*nMaxChars*<br/>
 Sondaki NULL karakter de dahil olmak üzere yeni dize içermesi gereken karakter sayısı.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Ayrılmış.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -356,10 +356,10 @@ CPathT() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pszPath*  
+*pszPath*<br/>
 Yol dizesi işaretçisi.
 
-*Yolu*  
+*Yolu*<br/>
 Yol dizesi.
 
 ##  <a name="fileexists"></a>  CPathT::FileExists
@@ -480,7 +480,7 @@ BOOL IsPrefix(PCXSTR pszPrefix) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*pszPrefix*  
+*pszPrefix*<br/>
 Aranacak önek. Bu tür bir önek biridir: "C:\\\\",".","...",".. \\\\".
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -533,7 +533,7 @@ BOOL IsSameRoot(PCXSTR pszOther) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*pszOther*  
+*pszOther*<br/>
 Diğer bir yolu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -630,7 +630,7 @@ BOOL MatchSpec(PCXSTR pszSpec) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*pszSpec*  
+*pszSpec*<br/>
 Aranacak dosya türü ile null ile sonlandırılmış bir dize işaretçisi. Örneğin, bir belge dosyası geçerli yolda bir dosya olup olmadığını sınamak için *pszSpec* ayarlanması gerekir "* .doc".
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -651,7 +651,7 @@ CPathT<StringType>& operator+=(PCXSTR pszMore);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszMore*  
+*pszMore*<br/>
 Eklenecek dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -744,16 +744,16 @@ BOOL RelativePathTo(
 
 ### <a name="parameters"></a>Parametreler
 
-*pszFrom*  
+*pszFrom*<br/>
 Göreli yol başlangıcı.
 
-*dwAttrFrom*  
+*dwAttrFrom*<br/>
 Dosya özniteliklerini *pszFrom*. Bu değer, FILE_ATTRIBUTE_DIRECTORY içeriyorsa *pszFrom* varsayılan bir dizin olması için; Aksi takdirde, *pszFrom* bir dosya olarak kabul edilir.
 
-*pszTo*  
+*pszTo*<br/>
 Bitiş noktası göreli yol.
 
-*dwAttrTo*  
+*dwAttrTo*<br/>
 Dosya özniteliklerini *pszTo*. Bu değer, FILE_ATTRIBUTE_DIRECTORY içeriyorsa *pszTo* varsayılan bir dizin olması için; Aksi takdirde, *pszTo* bir dosya olarak kabul edilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -838,7 +838,7 @@ BOOL RenameExtension(PCXSTR pszExtension);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszExtension*  
+*pszExtension*<br/>
 Yeni dosya adı uzantısı, öncesinde bir "." karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -919,5 +919,5 @@ typedef StringType::XCHAR XCHAR;
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfları](../../atl/reference/atl-classes.md)   
+[Sınıflar](../../atl/reference/atl-classes.md)<br/>
 [CStringT Sınıfı](../../atl-mfc-shared/reference/cstringt-class.md)

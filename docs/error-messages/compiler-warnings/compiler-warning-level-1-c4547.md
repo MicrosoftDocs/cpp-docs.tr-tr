@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4012120f0d8706d3dd067c282dd884faacbe132f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 21263997e7b125978cfe0c37af704de50a5c1e17
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33281111"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086635"
 ---
 # <a name="compiler-warning-level-1-c4547"></a>Derleyici Uyarısı (düzey 1) C4547
-'işleci': virgülle; etkisizdir önce işleci yan etkisi olan beklenen işleci  
-  
- Derleyici hatalı oluşturulmuş virgülle ifade algıladı.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Daha fazla bilgi için bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).  
-  
- Aşağıdaki örnek C4547 oluşturur:  
-  
-```  
-// C4547.cpp  
-// compile with: /W1  
-#pragma warning (default : 4547)  
-int i = 0;  
-int j = 1;  
-int main() {  
-   int l = (i != i,0);   // C4547  
-   // try the following line instead  
-   // int l = (i != i);  
-   // or  
-   // int l = ((void)(i != i),0);  
-}  
+
+'operator': virgülden önceki etkisi yok; işleci yan etkisi olan beklenen işleci
+
+Derleyici, bir virgül yapılı ifade algıladı.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Daha fazla bilgi için [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+
+Aşağıdaki örnek, C4547 oluşturur:
+
+```
+// C4547.cpp
+// compile with: /W1
+#pragma warning (default : 4547)
+int i = 0;
+int j = 1;
+int main() {
+   int l = (i != i,0);   // C4547
+   // try the following line instead
+   // int l = (i != i);
+   // or
+   // int l = ((void)(i != i),0);
+}
 ```

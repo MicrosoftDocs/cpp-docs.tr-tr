@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a77a658f724f701e67968adb7a1310922b9476d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2bcde84e241590b67e3877e3ce415f4cc00e757a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228689"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085946"
 ---
 # <a name="compiler-error-c2630"></a>Derleyici Hatası C2630
-'ne bulunan simge' virgülle ayrılmış bir liste olması gerekir  
-  
- Simgenin virgül gerektiren bir bağlamında görüntülenir.  
-  
- Aşağıdaki örnek C2630 oluşturur:  
-  
-```  
-// C2630.cpp  
-// compile with: /c  
-struct D {  
-   D(int);  
-};  
-  
-struct E {  
-   E(int);  
-};  
-  
-class C : public D, public E {  
-   C();  
-};  
-  
-C::C() : D(0) ; E(0) { }   // C2630  
-C::C() : D(0), E(0) {}   // OK  
+
+'symbol' virgülle ayrılmış bir liste olması gereken yerde bulunamadı
+
+Virgül gerektiren bir bağlamda simgesi görünür.
+
+Aşağıdaki örnek, C2630 oluşturur:
+
+```
+// C2630.cpp
+// compile with: /c
+struct D {
+   D(int);
+};
+
+struct E {
+   E(int);
+};
+
+class C : public D, public E {
+   C();
+};
+
+C::C() : D(0) ; E(0) { }   // C2630
+C::C() : D(0), E(0) {}   // OK
 ```

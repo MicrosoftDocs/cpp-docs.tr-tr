@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac5abdfde314220e8478a524d5b0b2e9ea15dcf4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8aa622d1864a9f302c51fe90bd77f58c2829859b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33327099"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084243"
 ---
 # <a name="resource-compiler-error-rc2175"></a>Kaynak Derleyicisi Hatası RC2175
-Kaynak dosya filename 3.00 biçiminde değil  
-  
- Belirtilen kaynak sürüm 3.00'den önceki bir biçim kullanılır. Kaynak dosyanın dönüştürülmesi gerekir veya 3.00 veya sonraki bir sürümü için aşağıdaki biçimi kullanarak yeniden oluşturulmaz.
+
+kaynak dosyası dosya adının 3.00 biçimde değil.
+
+Belirtilen kaynak sürüm 3.00'den önceki bir biçimi kullanılır. Kaynak dosyası dönüştürülmelidir veya 3.00 veya sonraki bir sürümü için biçimi kullanılarak yeniden oluşturuluyor.

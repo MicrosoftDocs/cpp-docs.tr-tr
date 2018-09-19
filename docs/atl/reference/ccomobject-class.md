@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0600d675d37e2fed1d318645daaedcce5f80ed89
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e7a6f4f014d609e8b650951d459c23b07fd4a006
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752377"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085452"
 ---
 # <a name="ccomobject-class"></a>CComObject sınıfı
 
@@ -36,13 +36,13 @@ Bu sınıfın uyguladığı `IUnknown` toplanmayan bir nesne.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<class Base>  
+template<class Base>
 class CComObject : public Base
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*temel*  
+*temel*<br/>
 Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)iyi herhangi diğer arabirimleri uğradıysa nesnede desteklemek istediğiniz gibi.
 
 ## <a name="members"></a>Üyeler
@@ -101,7 +101,7 @@ CComObject(void* = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-<em>Geçersiz kılma\*</em>  
+<em>Geçersiz kılma\*</em><br/>
 [in] Bu adlandırılmamış parametre kullanılmaz. Simetri diğer için mevcut `CComXXXObjectXXX` oluşturucular.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -132,7 +132,7 @@ static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
 
 ### <a name="parameters"></a>Parametreler
 
-*PP*  
+*PP*<br/>
 [out] Bir işaretçi bir **CComObject <** `Base` **>** işaretçi. Varsa `CreateInstance` başarısız, *pp* NULL olarak ayarlandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -157,19 +157,19 @@ Nesneye doğrudan erişim değildir, ancak yükü olmadan yeni bir nesne oluştu
 
 ```
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
-template <class Q>  
+template <class Q>
 HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] İstenen arabirim tanımlayıcısı.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *IID*. Nesne bu arabirimi desteklemiyorsa *ppvObject* NULL olarak ayarlandı.
 
-*PP*  
+*PP*<br/>
 [out] Türe göre belirlenen arabirim işaretçisi için bir işaretçi `Q`. Nesne bu arabirimi desteklemiyorsa *pp* NULL olarak ayarlandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -190,8 +190,8 @@ Bu işlev, nesne üzerinde yeni indirildiği başvuru sayısını döndürür. H
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComAggObject sınıfı](../../atl/reference/ccomaggobject-class.md)   
-[CComPolyObject sınıfı](../../atl/reference/ccompolyobject-class.md)   
-[DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable)   
-[DECLARE_NOT_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_not_aggregatable)   
+[CComAggObject Sınıfı](../../atl/reference/ccomaggobject-class.md)<br/>
+[CComPolyObject Sınıfı](../../atl/reference/ccompolyobject-class.md)<br/>
+[DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable)<br/>
+[DECLARE_NOT_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_not_aggregatable)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

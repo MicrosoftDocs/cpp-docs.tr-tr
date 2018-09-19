@@ -16,75 +16,76 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81548f5fc8fc4a28a4ad85e4611eba9440d6f107
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ae0707bc56a812af77d30ac9dac8e945ee5e2aa6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33251130"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082864"
 ---
 # <a name="compiler-error-c3203"></a>Derleyici Hatası C3203
-'type': unspecialized sınıf şablonu veya genel bir şablon veya şablon veya genel parametre 'param' için genel bir bağımsız değişken olarak kullanılamaz, gerçek tür bekleniyor  
-  
- Sınıf şablonu veya genel geçersiz bağımsız değişken geçirildi. Sınıf şablonu veya genel bir türü bir parametre bekler.  
-  
- Bu hata için Visual C++ 2005 yapıldığı derleyici uyumluluğu iş sonucunda oluşturulabilir: unspecialized sınıf şablonu bir temel sınıf listesinde şablon bağımsız değişken olarak kullanılamaz. C3203 gidermek için açıkça şablon türü parametreleri şablon sınıf adı için bir temel sınıf listesi bir şablon parametresi olarak kullanırken ekleyin.  
-  
-```  
-// C3203.cpp  
-template< typename T >  
-struct X {  
-   void f(X) {}  
-};  
-  
-template< typename T >  
-struct Y : public X<Y> {   // C3203  
-// try the following line instead  
-// struct Y : public X<Y<T> > {  
-   void f(Y) {}  
-};  
-  
-int main() {  
-   Y<int> y;  
-}  
-```  
-  
- Aşağıdaki örnek C3203 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C3203_b.cpp  
-// compile with: /c  
-template <class T>  
-struct S1 {};  
-  
-template <class T>  
-class C1 {};  
-  
-typedef C1<S1> MyC1;   // C3203  
-  
-// OK  
-template <template <class> class T>  
-class C2 {};  
-  
-typedef C2<S1> MyC1;  
-  
-template <class T>  
-class C3 {};  
-  
-typedef C3<S1<int> > MyC12;  
-```  
-  
- Ayrıca C3203 genel türler kullanma ortaya çıkabilir:  
-  
-```  
-// C3203_c.cpp  
-// compile with: /clr /c  
-generic <class T>  
-value struct GS1 {};  
-  
-generic <class T>  
-value struct GC1 {};  
-  
-typedef GC1<GS1> MyGC1;   // C3203  
-typedef GC1<GS1<int> > MyGC2;   // OK  
+
+'type': uzmanlaşmamış sınıf şablonunun veya genel şablon veya şablon ya da genel parametre 'param' için genel bağımsız değişken olarak kullanılamaz; gerçek tür bekleniyor
+
+Bir sınıf şablonunun veya genel geçersiz bağımsız değişken geçirildi. Sınıf şablonu veya genel bir tür bir parametre bekliyor.
+
+Bu hata için Visual C++ 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak oluşturulan: uzmanlaşmamış sınıf şablonu, bir taban sınıfı listesinde şablon bağımsız değişkeni olarak kullanılamaz. C3203 çözmek için açıkça şablonu tür parametrelerinin şablon sınıf adı için bir taban sınıfı listesinde bir şablon parametresi olarak kullanılırken ekleyin.
+
+```
+// C3203.cpp
+template< typename T >
+struct X {
+   void f(X) {}
+};
+
+template< typename T >
+struct Y : public X<Y> {   // C3203
+// try the following line instead
+// struct Y : public X<Y<T> > {
+   void f(Y) {}
+};
+
+int main() {
+   Y<int> y;
+}
+```
+
+Aşağıdaki örnek, C3203 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C3203_b.cpp
+// compile with: /c
+template <class T>
+struct S1 {};
+
+template <class T>
+class C1 {};
+
+typedef C1<S1> MyC1;   // C3203
+
+// OK
+template <template <class> class T>
+class C2 {};
+
+typedef C2<S1> MyC1;
+
+template <class T>
+class C3 {};
+
+typedef C3<S1<int> > MyC12;
+```
+
+C3203, genel türler kullanırken da meydana gelebilir:
+
+```
+// C3203_c.cpp
+// compile with: /clr /c
+generic <class T>
+value struct GS1 {};
+
+generic <class T>
+value struct GC1 {};
+
+typedef GC1<GS1> MyGC1;   // C3203
+typedef GC1<GS1<int> > MyGC2;   // OK
 ```

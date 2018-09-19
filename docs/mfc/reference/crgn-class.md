@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4ac334221f22dcd80434c1be2f59998709aae5e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: dcf5cbf6522d90b6338b817eebac434c81bf7c9a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204886"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080694"
 ---
 # <a name="crgn-class"></a>CRgn sınıfı
 Bir Windows grafik cihaz arabirimi (GDI) bölgesi kapsüller.  
@@ -326,13 +326,12 @@ BOOL CreatePolygonRgn(
  *lpPoints*  
  İşaret dizilerine `POINT` yapıları veya bir dizi `CPoint` nesneleri. Her yapı x koordinatını ve y koordinatını çokgenin bir köşe belirtir. `POINT` Yapısı aşağıdaki biçime sahiptir:  
   
- `typedef struct tagPOINT {`  
-  
- `int x;`  
-  
- `int y;`  
-  
- `} POINT;`  
+```cpp
+typedef struct tagPOINT {
+    int x;
+    int y;
+} POINT;
+```
   
  *nCount*  
  Sayısını belirten `POINT` yapıları veya `CPoint` dizisindeki nesnelere tarafından işaret edilen *lpPoints*.  
@@ -372,13 +371,12 @@ BOOL CreatePolyPolygonRgn(
  *lpPoints*  
  İşaret dizilerine `POINT` yapıları veya bir dizi `CPoint` çokgenler köşelerini tanımlayan nesne. Sistem otomatik olarak bunları kapatmadığını çünkü her bir Çokgen açıkça kapatılmalıdır. Çokgenler art arda belirtilir. `POINT` Yapısı aşağıdaki biçime sahiptir:  
   
- `typedef struct tagPOINT {`  
-  
- `int x;`  
-  
- `int y;`  
-  
- `} POINT;`  
+```cpp
+typedef struct tagPOINT {
+    int x;
+    int y;
+} POINT;
+```
   
  *lpPolyCounts*  
  Bir dizi noktalarını tamsayı. İlk Çokgendeki ilk tamsayı köşelerin sayısını belirtir *lpPoints* dizinin ikinci tamsayı, ikinci Çokgen ve benzeri köşeler sayısını belirtir.  
@@ -453,17 +451,14 @@ BOOL CreateRectRgnIndirect(LPCRECT lpRect);
  *lpRect*  
  İşaret eden bir `RECT` yapısı veya `CRect` bölge sol ve sağ köşelerinde mantıksal koordinatları içeren nesne. `RECT` Yapısı aşağıdaki biçime sahiptir:  
   
- `typedef struct tagRECT {`  
-  
- `int left;`  
-  
- `int top;`  
-  
- `int right;`  
-  
- `int bottom;`  
-  
- `} RECT;`  
+```cpp
+typedef struct tagRECT {
+    int left;
+    int top;
+    int right;
+    int bottom;
+} RECT;
+```
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlem başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -715,17 +710,14 @@ BOOL RectInRegion(LPCRECT lpRect) const;
  *lpRect*  
  İşaret eden bir `RECT` yapısı veya `CRect` nesne. `RECT` Yapısı aşağıdaki biçime sahiptir:  
   
- `typedef struct tagRECT {`  
-  
- `int left;`  
-  
- `int top;`  
-  
- `int right;`  
-  
- `int bottom;`  
-  
- `} RECT;`  
+```cpp
+typedef struct tagRECT {
+    int left;
+    int top;
+    int right;
+    int bottom;
+} RECT;
+```
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Herhangi bir bölümünü belirtilen dikdörtgen bölge sınırlar içinde yer alıyorsa sıfır; Aksi durumda 0.  

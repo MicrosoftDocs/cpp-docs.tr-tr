@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1dc791cd7782cc758aa51b0c61d87a79570c13c9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 98e1920b2163a318fbdba3b64d56bf74a8cd809f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229567"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085907"
 ---
 # <a name="compiler-error-c2535"></a>Derleyici Hatası C2535
-'tanımlayıcısı': önceden tanımlanmış veya bildirilen üye işlevi  
-  
- Birden fazla tanımı veya aşırı yüklenmiş bir işlevin bildirimi aynı biçimsel parametresi listesini kullanarak bu hataya neden.  
-  
- Dispose işlevi nedeniyle C2535 alırsanız, bkz: [yok ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) daha fazla bilgi için.  
-  
- ATL projesinde derleme, Bilgi Bankası makalesi Q241852 bakın.  
-  
- Aşağıdaki örnek C2535 oluşturur:  
-  
-```  
-// C2535.cpp  
-// compile with: /c  
-class C {  
-public:  
-   void func();   // forward declaration  
-   void func() {}   // C2535  
-};  
+
+'identifier': üye işlev önceden tanımlandı veya bildirildi
+
+Birden fazla tanım veya aşırı yüklenmiş bir işlevin bildirimi aynı biçimsel parametre listesinde kullanarak bu hataya neden.
+
+Dispose işlev nedeniyle C2535 alırsanız, bkz. [yok ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) daha fazla bilgi için.
+
+ATL projesini derleme yapıyorsanız Q241852 Bilgi Bankası makalesine bakın.
+
+Aşağıdaki örnek, C2535 oluşturur:
+
+```
+// C2535.cpp
+// compile with: /c
+class C {
+public:
+   void func();   // forward declaration
+   void func() {}   // C2535
+};
 ```

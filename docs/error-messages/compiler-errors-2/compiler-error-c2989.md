@@ -16,44 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7831f9255485ede8db9d853ca5fe89dc9a4c2a65
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: df67a24fa9bae63bbaf1bba344aa7f684ec91123
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245854"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081916"
 ---
 # <a name="compiler-error-c2989"></a>Derleyici Hatası C2989
-'class': sınıf türü olmayan sınıf türü olarak zaten bildirildikten  
-  
- Genel sınıf veya şablon şablon olmayan veya genel olmayan bir sınıfı yeniden tanımlamaktadır. Üstbilgi dosyaları çakışmaları denetleyin.  
-  
- Sınıf şablonu kısmi özelleştirmeleri kullanıyorsanız, Bilgi Bankası makalesi Q240866 bakın.  
-  
- Aşağıdaki örnek C2989 oluşturur:  
-  
-```  
-// C2989.cpp  
-// compile with: /c  
-class C{};  
-  
-template <class T>  
-class C{};  // C2989  
-class C2{};  
-```  
-  
- Ayrıca C2989 genel türler kullanma ortaya çıkabilir:  
-  
-```  
-// C2989b.cpp  
-// compile with: /clr /c  
-ref class GC1;  
-  
-generic <typename T> ref class GC1;   // C2989  
-template <typename T> ref class GC2;  
-  
-generic <typename T> ref class GC2;   // C2989  
-generic <typename T> ref class GCb;  
-template <typename T> ref class GC2;  
-generic <typename T> ref class GCc;  
+
+'class': sınıf türü zaten sınıf olmayan türü olarak bildirildi
+
+Genel bir sınıf veya şablonu bir şablon olmayan veya genel olmayan sınıf yeniden tanımlar. Çakışmaları için üst bilgi dosyaları denetleyin.
+
+Sınıf şablonu kısmi uzmanlıklar kullanıyorsanız Q240866 Bilgi Bankası makalesine bakın.
+
+Aşağıdaki örnek, C2989 oluşturur:
+
+```
+// C2989.cpp
+// compile with: /c
+class C{};
+
+template <class T>
+class C{};  // C2989
+class C2{};
+```
+
+C2989, genel türler kullanırken da meydana gelebilir:
+
+```
+// C2989b.cpp
+// compile with: /clr /c
+ref class GC1;
+
+generic <typename T> ref class GC1;   // C2989
+template <typename T> ref class GC2;
+
+generic <typename T> ref class GC2;   // C2989
+generic <typename T> ref class GCb;
+template <typename T> ref class GC2;
+generic <typename T> ref class GCc;
 ```

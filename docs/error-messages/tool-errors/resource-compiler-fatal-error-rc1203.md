@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f5267011eea32929b85e6ca60fb26ea34b2c371
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 638af9b85aecdd4eaba712cee68bf4ec96f3ab56
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33321512"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081461"
 ---
 # <a name="resource-compiler-fatal-error-rc1203"></a>Kaynak Derleyicisi Önemli Hatası RC1203
-Geçersiz onaltılık varsayılan dil kimliği belirtildi.  
-  
- Varsayılan dil belirtin (/ l) seçeneği geçersiz onaltılık dil kimliği ile izlenen Bkz: [dil ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md) içinde *çalışma zamanı kitaplığı başvurusu* geçerli dil kimliklerinin listesi.
+
+Geçersiz onaltılık varsayılan dil kimliği belirtildi.
+
+Varsayılan dil belirtin (/ l) seçeneği geçersiz onaltılık dil kimliği tarafından izlenen Bkz: [dil ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md) içinde *çalışma zamanı kitaplığı başvurusu* geçerli dil kimliklerinin bir listesi.

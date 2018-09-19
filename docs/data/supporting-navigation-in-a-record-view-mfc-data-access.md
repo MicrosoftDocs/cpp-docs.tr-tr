@@ -17,20 +17,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 22a3e59a441c6724676521cb50daa523b84d9ee3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e1cb1b6bb4fa69bb89dd7ddd6b9483b36ea5552a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33102390"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078848"
 ---
 # <a name="supporting-navigation-in-a-record-view--mfc-data-access"></a>(MFC veri erişimi) kayıt görünümünde gezintiyi destekleme
-Bu konu, taşıma kayıt kaydı da desteklemek üzere açıklanmaktadır, [CRecordView](../mfc/reference/crecordview-class.md) hakkında bilgiler dahil olmak üzere sınıfı:  
+
+Bu konu başlığında kayıt başka bir kayıt içinde taşıma destekleyecek şekilde açıklanmaktadır, [CRecordView](../mfc/reference/crecordview-class.md) hakkında bilgiler dahil olmak üzere sınıfı:  
   
--   [Komut işleme](../data/command-handlers-for-record-scrolling-mfc-data-access.md) kayıt kaydırma komutları için.  
+- [Komut işleme](../data/command-handlers-for-record-scrolling-mfc-data-access.md) kayıt kaydırma komutları için.  
   
--   [Kaydırma için kullanıcı arabirimi güncelleştirme işleyicileri](../data/user-interface-updating-for-record-views-mfc-data-access.md) komutları.  
+- [Kaydırma için kullanıcı arabirimini güncelleştirme işleyicileri](../data/user-interface-updating-for-record-views-mfc-data-access.md) komutları.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)   
- [ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)
+
+[Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)<br/>
+[ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)

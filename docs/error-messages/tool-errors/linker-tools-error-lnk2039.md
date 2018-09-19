@@ -16,24 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 954ea12eb9b49c2bdf59b31a1ec2ec2e66c124ef
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ac4fdde90911427a1a193bfb6f3a950a7bdcf180
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302103"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081799"
 ---
 # <a name="linker-tools-error-lnk2039"></a>Bağlayıcı Araçları Hatası LNK2039
-ref sınıfı alma\<türü >' another.obj içinde tanımlanan; içeri aktarılan veya tanımlı, ancak her ikisi de olması gerekir  
-  
- Ref sınıfı ' <`type`>' belirtilen .obj dosyasında alınır ancak de başka bir .obj dosyasında belirtilir. Bu durum, çalışma zamanı hatası veya başka beklenmeyen davranışlara neden olabilir.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
-1.  Denetleme olup olmadığını '`type`' diğer .obj dosyasında tanımlanmış olması gerekir ve bunu .winmd dosyasından içe aktarılması gerekir olup olmadığını denetleyin.  
-  
-2.  Tanımı veya içeri aktarma kaldırın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı araçları hataları ve Uyarıları](../../error-messages/tool-errors/linker-tools-errors-and-warnings.md)   
- [Bağlayıcı Araçları Hatası LNK1332](../../error-messages/tool-errors/linker-tools-error-lnk1332.md)
+
+başvuru sınıfı içeri aktarma\<türü >' another.obj içinde tanımlandığından,, içeri aktarılan veya tanımlı, ancak ikisi birden değil olmalıdır
+
+Başvuru sınıfı ' <`type`>' belirtilen .obj dosyasında alınır, ancak ayrıca başka bir .obj dosyasında tanımlı değil. Bu durum, çalışma zamanı hatası ya da diğer beklenmeyen davranışlara neden olabilir.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+1. Denetleme olmadığını '`type`' diğer .obj dosyasında tanımlanmış olmalıdır ve bu .winmd dosyanın aktarılmalıdır olup olmadığını denetleyin.
+
+1. Tanım veya içeri aktarma kaldırın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Araçları Hataları ve Uyarıları](../../error-messages/tool-errors/linker-tools-errors-and-warnings.md)<br/>
+[Bağlayıcı Araçları Hatası LNK1332](../../error-messages/tool-errors/linker-tools-error-lnk1332.md)

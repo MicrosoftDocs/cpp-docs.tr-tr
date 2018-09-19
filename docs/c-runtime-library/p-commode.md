@@ -28,33 +28,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e91c03f619be1d0f1d8ad23f3b8d60e1be30cfb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5f610b26c79201f3431b6263a002b59df7456cfe
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32388071"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082449"
 ---
 # <a name="pcommode"></a>__p__commode
-İşaret `_commode` varsayılan belirtir genel değişkeni *dosya yürütme modu* dosya g/ç işlemleri için.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-int * __p__commode(  
-   );  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- İşaretçi `_commode` genel değişkeni.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `__p__commode` İşlevi yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.  
-  
- Dosya Yürütme modunu belirtir zaman kritik veriler yazılır diske. Daha fazla bilgi için bkz: [fflush](../c-runtime-library/reference/fflush.md).  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
+
+İşaret `_commode` varsayılan belirtir genel değişkeni *dosya işleme modu* dosya g/ç işlemleri için.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+int * __p__commode(
+   );
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+İşaretçi `_commode` genel değişkeni.
+
+## <a name="remarks"></a>Açıklamalar
+
+`__p__commode` İşlevi yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.
+
+Dosya İşleme modunu belirtir, kritik veriler yazılır diske. Daha fazla bilgi için [fflush](../c-runtime-library/reference/fflush.md).
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
 |__p\__commode|internal.h|

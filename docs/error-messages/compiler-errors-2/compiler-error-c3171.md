@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ee6ee02511242e2af87024c741a3c97f3f3724d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 32c58f2ecd9651c347f45c29139ffe0ed65a6e3b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33257057"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082267"
 ---
 # <a name="compiler-error-c3171"></a>Derleyici Hatası C3171
-'module': bir projede farklı modül öznitelikleri belirtilemez  
-  
- [Modül](../../windows/module-cpp.md) farklı parametre listeleri özniteliklerle iki bir derleme dosyalarında bulundu. Yalnızca bir benzersiz `module` derlemesi başına özniteliği belirtilebilir.  
-  
- Aynı `module` öznitelikleri birden fazla kaynak kodu dosyasına belirtilebilir.  
-  
- Örneğin, aşağıdaki `module` öznitelikleri bulundu:  
-  
-```  
-// C3171.cpp  
-[ module(name="MyModule", uuid="373a1a4e-469b-11d3-a6b0-00c04f79ae8f", version="1.0") ];  
-int main() {}  
-```  
-  
- Ardından,  
-  
-```  
-// C3171b.cpp  
-// compile with: C3171.cpp  
-// C3171 expected  
-[ module(name="MyModule", uuid="373a1a4e-469b-11d3-a6b0-00c04f79ae8f", version="1.1") ];  
-```  
-  
- Derleyici C3171 oluşturur (farklı sürüm değerleri unutmayın).
+
+'module': bir projede farklı modül öznitelikleri belirtilemez
+
+[Modül](../../windows/module-cpp.md) farklı parametre listeleri özniteliklerle iki derleme dosyalarında bulundu. Yalnızca bir benzersiz `module` derlemesi başına özniteliği belirtilebilir.
+
+Aynı `module` öznitelikleri birden fazla kaynak kodu dosyasında belirtilebilir.
+
+Örneğin, aşağıdaki `module` öznitelikler bulundu:
+
+```
+// C3171.cpp
+[ module(name="MyModule", uuid="373a1a4e-469b-11d3-a6b0-00c04f79ae8f", version="1.0") ];
+int main() {}
+```
+
+Ardından,
+
+```
+// C3171b.cpp
+// compile with: C3171.cpp
+// C3171 expected
+[ module(name="MyModule", uuid="373a1a4e-469b-11d3-a6b0-00c04f79ae8f", version="1.1") ];
+```
+
+Derleyici C3171 üretir (farklı sürümü değerlerine dikkat edin).

@@ -16,54 +16,56 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 603b947e0f390de5dfb13a46bbe6c66db1d4e804
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 35600fae9a689b32cca9c327645a0e0c1bb91a25
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248317"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084620"
 ---
 # <a name="compiler-error-c3066"></a>Derleyici Hatası C3066
-Bu tür bir nesne çağrılabilir birden çok yolla bu bağımsız değişken  
-  
- Derleyici temsilciler içeren bir belirsiz işlev çağrısı algıladı.  
-  
- Aşağıdaki örnek C3066 oluşturur:  
-  
-```  
-// C3066.cpp  
-template <class T, class U> void func(T*, U*){}  
-  
-typedef void (*PF)(const int*, const char*);  
-typedef void (*PF1)(const int*, volatile char*);  
-  
-struct A {  
-   operator PF() const {  
-      return func;  
-   }  
-  
-   operator PF1() {  
-      return func;  
-   }  
-  
-   operator PF1() const  {  
-      return func;  
-   }  
-  
-};  
-  
-int main() {  
-   A a;  
-   int i;  
-   char c;  
-  
-   a(&i, &c);   // C3066  
-   a(&i, (const char *) &c);   // OK  
-}  
+
+Bu türde bir nesne çağrılabilen birden çok yolla bu bağımsız değişken
+
+Derleyici, temsilciler içeren bir belirsiz işlev çağrısı algıladı.
+
+Aşağıdaki örnek, C3066 oluşturur:
+
+```
+// C3066.cpp
+template <class T, class U> void func(T*, U*){}
+
+typedef void (*PF)(const int*, const char*);
+typedef void (*PF1)(const int*, volatile char*);
+
+struct A {
+   operator PF() const {
+      return func;
+   }
+
+   operator PF1() {
+      return func;
+   }
+
+   operator PF1() const  {
+      return func;
+   }
+
+};
+
+int main() {
+   A a;
+   int i;
+   char c;
+
+   a(&i, &c);   // C3066
+   a(&i, (const char *) &c);   // OK
+}
 ```
 
-## <a name="copy-list-initialization"></a>Kopya listesi başlatma
-Visual Studio 2015'te derleyici yanlışlıkla kopyalama listesi başlatma Normal kopyalama başlatma aynı şekilde ele; yalnızca oluşturucuları aşırı yükleme çözünürlüğü için dönüştürme kabul. Aşağıdaki örnekte, Visual Studio 2015 MyInt(23) ancak Visual Studio 2017 doğru hata başlatır seçer.
+## <a name="copy-list-initialization"></a>Kopya listesi başlatması
+
+Visual Studio 2015'te derleyici deneyebileceğinizi kopya listesi başlatması normal kopya başlatma aynı şekilde ele; yalnızca oluşturucu aşırı yükleme çözümlemesi için dönüştürme kabul. Aşağıdaki örnekte, Visual Studio 2015 MyInt(23) ancak Visual Studio 2017 hata başlatır doğru şekilde seçer.
 
 ```
 // From http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_closed.html#1228

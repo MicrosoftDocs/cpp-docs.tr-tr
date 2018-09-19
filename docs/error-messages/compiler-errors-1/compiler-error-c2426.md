@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48c1cdf36693863c43cbb3d7c709bdbefa07d232
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9c634ac505684a5f0bf30a831668e27078650d70
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33223588"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078640"
 ---
 # <a name="compiler-error-c2426"></a>Derleyici Hatası C2426
-'belirteci': 'context' içinde geçersiz işleci  
-  
- Belirteç, bu bağlamda bir işleç olarak kullanılamaz. Dizin işleçleri, örneğin, iç içe olamaz.
+
+'token': 'context' içinde geçersiz işleç
+
+Belirteç, bu bağlamda bir işleci olarak kullanılamaz. Dizin işleçleri, örneğin, iç içe olamaz.

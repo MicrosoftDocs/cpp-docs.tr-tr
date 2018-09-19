@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc8a926297f9b0762c629f031da6e12cbe528e87
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 11a78b03794da1e8178c7a65bb0ca5f3cc50867b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228819"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46083996"
 ---
 # <a name="compiler-error-c2582"></a>Derleyici Hatası C2582
-'type' 'function' işlevi kullanılamaz  
-  
- Atama işleci sahip olmayan bir nesneye atamak için girişimde bulunuldu.  
-  
- Aşağıdaki örnek C2582 oluşturur:  
-  
-```  
-// C2582.cpp  
-// compile with: /clr  
-using namespace System;  
-  
-struct N {};  
-ref struct O {};  
-ref struct R {  
-   property O prop;   // C2582  
-   property O ^ prop2;   // OK  
-};  
-  
-int main() {  
-   String ^ st1 = gcnew String("");  
-   ^st1 = gcnew String("");   // C2582  
-   st1 = "xxx";   // OK  
-}  
+
+'function' işlevi, 'type' içinde kullanılamıyor
+
+Atama işleci sahip olmayan bir nesneye atamak için girişimde bulunuldu.
+
+Aşağıdaki örnek, C2582 oluşturur:
+
+```
+// C2582.cpp
+// compile with: /clr
+using namespace System;
+
+struct N {};
+ref struct O {};
+ref struct R {
+   property O prop;   // C2582
+   property O ^ prop2;   // OK
+};
+
+int main() {
+   String ^ st1 = gcnew String("");
+   ^st1 = gcnew String("");   // C2582
+   st1 = "xxx";   // OK
+}
 ```

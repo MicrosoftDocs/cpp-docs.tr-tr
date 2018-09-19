@@ -15,24 +15,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7694c511f57b6907227d62f969b61218f836cb14
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 88ae0fb38b7e6af14525906e90486a68ce22ee56
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277829"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086830"
 ---
 # <a name="compiler-warning-level-1-c4305"></a>Derleyici Uyarısı (düzey 1) C4305
 
-> '*bağlamı*': gelen kesilmesi '*type1*'to'*type2*'  
+> '*bağlam*': kesildi '*type1*'to'*type2*'
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu uyarı, bilgi kaybına neden bir küçük türüne bir başlatma veya bir oluşturucu bağımsız değişkeni olarak bir değere dönüştürüldüğünde görüntülenir.
+Bu uyarı, bilgi kaybına kaynaklanan bir küçük türüne bir başlatma veya bir oluşturucu bağımsız değişkeni olarak bir değere dönüştürüldüğünde görüntülenir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek iki yolla bu uyarı görebilirsiniz gösterir:
+Bu örnek gösterir iki yolu bu uyarı görebilirsiniz:
 
 ```cpp
 // C4305.cpp
@@ -51,4 +51,4 @@ int main()
 }
 ```
 
-Bu sorunu gidermek için doğru türde bir değer kullanarak başlatmak veya doğru türü için bir açık atama kullanın. Örneğin, bir **float** değişmez değer yerine 2.71828f gibi bir **çift** (kayan nokta değişmez değerleri için varsayılan türü) başlatmak için bir **float** , değişken veya geçirilecek bir alan oluşturucu bir **float** bağımsız değişkeni.
+Bu sorunu gidermek için doğru türde bir değer kullanarak başlatmak veya doğru tür açık bir tür dönüştürme kullanın. Örneğin, bir **float** değişmez değer yerine 2.71828f gibi bir **çift** (varsayılan kayan noktalı sabit değerleri türü) başlatmak için bir **float** değişkeni veya geçirmek için bir alan oluşturucu bir **float** bağımsız değişken.

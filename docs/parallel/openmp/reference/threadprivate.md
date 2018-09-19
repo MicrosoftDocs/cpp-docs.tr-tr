@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0502528a2db47b8db41437fd7017aece1dc67cde
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 9454b33348fa4e4bc2efaa609001201ea215a8c9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217751"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081994"
 ---
 # <a name="threadprivate"></a>threadprivate
 Bir değişken için bir iş parçacığı özel olduğunu belirtir.  
@@ -32,11 +32,10 @@ Bir değişken için bir iş parçacığı özel olduğunu belirtir.
 #pragma omp threadprivate(var)  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
+### <a name="parameters"></a>Parametreler
   
- `var`  
- Bir iş parçacığına özel yapmak istediğiniz değişkenleri virgülle ayrılmış listesi. `var` Genel veya ad alanı-kapsamlı bir değişken veya yerel bir statik değişken olmalıdır.  
+*var*<br/>
+Bir iş parçacığına özel yapmak istediğiniz değişkenleri virgülle ayrılmış listesi. `var` Genel veya ad alanı-kapsamlı bir değişken veya yerel bir statik değişken olmalıdır.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `threadprivate` Yönergesi yok OpenMP yan tümceleri destekler.  

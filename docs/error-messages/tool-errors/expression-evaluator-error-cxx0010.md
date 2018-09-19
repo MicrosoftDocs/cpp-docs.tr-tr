@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ed62ecba1d25882a95f6555c48d43b3ae405110
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2bcc7231f3dca4c46c2ace410b9444c472880ff7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298414"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086804"
 ---
 # <a name="expression-evaluator-error-cxx0010"></a>İfade Değerlendirici Hatası CXX0010
-sol köşeli ayraç eksik  
-  
- İfade dengesiz köşeli içeriyor. İfade dengeli köşeli parantez ile yeniden yazın.  
-  
- Bu hata için CAN0010 aynıdır.
+
+sol köşeli ayraç eksik
+
+Eşleşmeyen köşeli ayraç ifadesi içerir. Dengeli köşeli ayraç kullanarak ifade yazın.
+
+Bu hata için CAN0010 aynıdır.

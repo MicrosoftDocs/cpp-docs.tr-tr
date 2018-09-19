@@ -1,5 +1,5 @@
 ---
-title: statik depolama sınıfı tanımlayıcısı | Microsoft Docs
+title: static depolama sınıfı tanımlayıcısı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,19 +16,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a7d61e39eb706721ddf936f88f5df02a6eddf96
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d1a58a8c7ab6eeb7d304d84cef15beb9046184fc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32386322"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46079498"
 ---
 # <a name="static-storage-class-specifier"></a>static Depolama Sınıfı Tanımlayıcısı
-Bir değişken bildirilen iç düzeyindeki **statik** depolama sınıfı tanımlayıcısı genel ömrü ancak yalnızca blokta görünür, bildirildiği içinde. Kullanarak sabit dizeleri için **statik** yararlıdır çünkü genellikle adlı işlevlerinde sık başlatma ek yükünü azaltır.  
-  
-## <a name="remarks"></a>Açıklamalar  
-Açıkça başlatılamadı, bir **statik** değişken, onu 0 olarak varsayılan olarak başlatılır. Bir işlev içinde **statik** ayrılacak depolama neden olur ve bir tanımı olarak görev yapar. İç statik değişkenler yalnızca tek bir işlev için görünür özel, kalıcı depolama sağlar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
-[C Depolama Sınıfları](c-storage-classes.md)  
-[Depolama sınıfları (C++)](../cpp/storage-classes-cpp.md)  
+
+İç düzeydeki ile bildirilen bir değişken **statik** depolama sınıfı tanımlayıcısı genel bir ömre sahiptir, ancak yalnızca blok içinde görülebilir içinde bildirildiği. Kullanarak sabit dizeleri için **statik** sık sık çağrılan işlevlerin başlatmada ek yükü azaltır çünkü yararlıdır.
+
+## <a name="remarks"></a>Açıklamalar
+
+Açıkça başlatılamadı, bir **statik** değişken, 0 için varsayılan olarak başlatılır. Bir işlev içinde **statik** ayrılacak depolama neden olur ve bir tanımı görev yapar. İç statik değişkenler yalnızca tek bir işleve görünür özel, kalıcı depolama sağlar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Depolama Sınıfları](c-storage-classes.md)<br/>
+[Depolama sınıfları (C++)](../cpp/storage-classes-cpp.md)

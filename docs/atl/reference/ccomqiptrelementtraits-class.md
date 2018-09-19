@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8af52c0e90f346e99564c839333f85ca396f9fd5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 6dbc0e10f2747b9a9a2ad3ff345a580d4797ea72
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763184"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46079316"
 ---
 # <a name="ccomqiptrelementtraits-class"></a>Ccomqıptrelementtraits sınıfı
 
@@ -32,17 +32,17 @@ Bu sınıf, yöntem, statik işlevler ve tür tanımları yararlı COM arabirim 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<typename I, const IID* piid=& __uuidof(I)>  
+template<typename I, const IID* piid=& __uuidof(I)>
 class CComQIPtrElementTraits : 
    public CDefaultElementTraits<ATL::CComQIPtr<I, piid>>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*I*  
+*I*<br/>
 Depolanacak işaretçi türü belirten bir COM arabirimi.
 
-*piid*  
+*piid*<br/>
 Laboratuvardaki işaretçisi *miyim*.
 
 ## <a name="members"></a>Üyeler
@@ -85,5 +85,5 @@ typedef I* INARGTYPE;
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CDefaultElementTraits sınıfı](../../atl/reference/cdefaultelementtraits-class.md)   
+[CDefaultElementTraits Sınıfı](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

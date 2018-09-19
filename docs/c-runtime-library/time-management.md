@@ -19,18 +19,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d5983795dbb5711452db2f59b07cb6aa8b22a8c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: f63bfe358e3f077bff780e2c5b4436fb841fd145
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200211"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46083983"
 ---
 # <a name="time-management"></a>Zaman Yönetimi
 
 Geçerli saati Al ve Dönüştür, ayarlamak ve gerektiği şekilde depolamak için bu işlevleri kullanın. Geçerli sistem saatini zamandır.
 
- **_Ftime** ve **localtime** kullanmalarını **TZ** ortam değişkeni. Varsa **TZ** ayarlanmazsa işletim sistemi tarafından belirtilen saat dilimi bilgilerini kullanmak çalışma zamanı kitaplığı çalışır. Bu bilgiler kullanılamıyorsa, bu işlevler PST8PDT varsayılan değeri kullanın. Daha fazla bilgi için **TZ**, bakın [_tzset](../c-runtime-library/reference/tzset.md); Ayrıca bkz: [_daylight, saat diliminizi ve _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
+**_Ftime** ve **localtime** kullanmalarını **TZ** ortam değişkeni. Varsa **TZ** ayarlanmazsa işletim sistemi tarafından belirtilen saat dilimi bilgilerini kullanmak çalışma zamanı kitaplığı çalışır. Bu bilgiler kullanılamıyorsa, bu işlevler PST8PDT varsayılan değeri kullanın. Daha fazla bilgi için **TZ**, bakın [_tzset](../c-runtime-library/reference/tzset.md); Ayrıca bkz: [_daylight, saat diliminizi ve _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
 
 ### <a name="time-routines"></a>Zamanı yordamları
 

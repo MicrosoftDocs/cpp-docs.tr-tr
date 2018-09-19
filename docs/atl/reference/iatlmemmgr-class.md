@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c1e04bd31ca1942e5e5fa054cb4991233e2f61c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b772a548054cd9d829356436afe53748c215c193
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762193"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078926"
 ---
 # <a name="iatlmemmgr-class"></a>Iatlmemmgr sınıfı
 
@@ -76,7 +76,7 @@ void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBytes*  
+*nBytes*<br/>
 İstenen bayt yeni bellek bloğu sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -101,7 +101,7 @@ void Free(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -122,7 +122,7 @@ size_t GetSize(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -143,10 +143,10 @@ void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi.
 
-*nBytes*  
+*nBytes*<br/>
 İstenen bayt yeni bellek bloğu sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -173,7 +173,7 @@ STDMETHOD(get_AllowContextMenu)(VARIANT_BOOL* pbAllowContextMenu);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbAllowContextMenu*  
+*pbAllowContextMenu*<br/>
 [out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -194,7 +194,7 @@ STDMETHOD(get_AllowShowUI)(VARIANT_BOOL* pbAllowShowUI);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbAllowShowUI*  
+*pbAllowShowUI*<br/>
 [out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -215,7 +215,7 @@ STDMETHOD(get_AllowWindowlessActivation)(VARIANT_BOOL* pbAllowWindowless);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbAllowWindowless*  
+*pbAllowWindowless*<br/>
 [out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -236,7 +236,7 @@ STDMETHOD(get_BackColor)(OLE_COLOR* pclrBackground);
 
 ### <a name="parameters"></a>Parametreler
 
-*pclrBackground*  
+*pclrBackground*<br/>
 [out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -257,7 +257,7 @@ STDMETHOD(get_DisplayAsDefault)(VARIANT_BOOL* pbDisplayAsDefault);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbDisplayAsDefault*  
+*pbDisplayAsDefault*<br/>
 [out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -278,7 +278,7 @@ STDMETHOD(get_DocHostDoubleClickFlags)(DWORD* pdwDocHostDoubleClickFlags);
 
 ### <a name="parameters"></a>Parametreler
 
-*pdwDocHostDoubleClickFlags*  
+*pdwDocHostDoubleClickFlags*<br/>
 [out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -299,7 +299,7 @@ STDMETHOD(get_DocHostFlags)(DWORD* pdwDocHostFlags);
 
 ### <a name="parameters"></a>Parametreler
 
-*pdwDocHostFlags*  
+*pdwDocHostFlags*<br/>
 [out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -320,7 +320,7 @@ STDMETHOD(get_Font)(IFontDisp** pFont);
 
 ### <a name="parameters"></a>Parametreler
 
-*pFont*  
+*pFont*<br/>
 [out] Adresini bir `IFontDisp` bu özelliğin geçerli değerini almak için kullanılan arabirim işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -341,7 +341,7 @@ STDMETHOD(get_ForeColor)(OLE_COLOR* pclrForeground);
 
 ### <a name="parameters"></a>Parametreler
 
-*pclrForeground*  
+*pclrForeground*<br/>
 [out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -362,7 +362,7 @@ STDMETHOD(get_LocaleID)(LCID* plcidLocaleID);
 
 ### <a name="parameters"></a>Parametreler
 
-*plcidLocaleID*  
+*plcidLocaleID*<br/>
 [out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -385,7 +385,7 @@ STDMETHOD(get_MessageReflect)(VARIANT_BOOL* pbMessageReflect);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbMessageReflect*  
+*pbMessageReflect*<br/>
 [out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -406,7 +406,7 @@ STDMETHOD(get_OptionKeyPath)(BSTR* pbstrOptionKeyPath);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbstrOptionKeyPath*  
+*pbstrOptionKeyPath*<br/>
 [out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -423,7 +423,7 @@ STDMETHOD(get_ShowGrabHandles)(VARIANT_BOOL* pbShowGrabHandles);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbShowGrabHandles*  
+*pbShowGrabHandles*<br/>
 [out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -444,7 +444,7 @@ STDMETHOD(get_ShowHatching)(VARIANT_BOOL* pbShowHatching);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbShowHatching*  
+*pbShowHatching*<br/>
 [out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -465,7 +465,7 @@ STDMETHOD(get_UserMode)(VARIANT_BOOL* pbUserMode);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbUserMode*  
+*pbUserMode*<br/>
 [out] Bu özelliğin geçerli değerini almak için bir değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -486,7 +486,7 @@ STDMETHOD(put_AllowContextMenu)(VARIANT_BOOL bAllowContextMenu);
 
 ### <a name="parameters"></a>Parametreler
 
-*bAllowContextMenu*  
+*bAllowContextMenu*<br/>
 [in] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -507,7 +507,7 @@ STDMETHOD(put_AllowShowUI)(VARIANT_BOOL bAllowShowUI);
 
 ### <a name="parameters"></a>Parametreler
 
-*bAllowShowUI*  
+*bAllowShowUI*<br/>
 [in] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -528,7 +528,7 @@ STDMETHOD(put_AllowWindowlessActivation)(VARIANT_BOOL bAllowWindowless);
 
 ### <a name="parameters"></a>Parametreler
 
-*bAllowWindowless*  
+*bAllowWindowless*<br/>
 [in] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -549,7 +549,7 @@ STDMETHOD(put_BackColor)(OLE_COLOR clrBackground);
 
 ### <a name="parameters"></a>Parametreler
 
-*clrBackground*  
+*clrBackground*<br/>
 [in] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -570,7 +570,7 @@ STDMETHOD(put_DisplayAsDefault)(VARIANT_BOOL bDisplayAsDefault);
 
 ### <a name="parameters"></a>Parametreler
 
-*bDisplayAsDefault*  
+*bDisplayAsDefault*<br/>
 [in] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -591,7 +591,7 @@ STDMETHOD(put_DocHostDoubleClickFlags)(DWORD dwDocHostDoubleClickFlags);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwDocHostDoubleClickFlags*  
+*dwDocHostDoubleClickFlags*<br/>
 [in] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -612,7 +612,7 @@ STDMETHOD(put_DocHostFlags)(DWORD dwDocHostFlags);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwDocHostFlags*  
+*dwDocHostFlags*<br/>
 [in] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -633,7 +633,7 @@ STDMETHOD(put_Font)(IFontDisp* pFont);
 
 ### <a name="parameters"></a>Parametreler
 
-*pFont*  
+*pFont*<br/>
 [in] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -654,7 +654,7 @@ STDMETHOD(put_ForeColor)(OLE_COLOR clrForeground);
 
 ### <a name="parameters"></a>Parametreler
 
-*clrForeground*  
+*clrForeground*<br/>
 [in] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -675,7 +675,7 @@ STDMETHOD(put_LocaleID)(LCID lcidLocaleID);
 
 ### <a name="parameters"></a>Parametreler
 
-*lcidLocaleID*  
+*lcidLocaleID*<br/>
 [in] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -696,7 +696,7 @@ STDMETHOD(put_MessageReflect)(VARIANT_BOOL bMessageReflect);
 
 ### <a name="parameters"></a>Parametreler
 
-*bMessageReflect*  
+*bMessageReflect*<br/>
 [in] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -717,7 +717,7 @@ STDMETHOD(put_OptionKeyPath)(BSTR bstrOptionKeyPath);
 
 ### <a name="parameters"></a>Parametreler
 
-*bstrOptionKeyPath*  
+*bstrOptionKeyPath*<br/>
 [in] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -734,7 +734,7 @@ STDMETHOD(put_UserMode)(VARIANT_BOOL bUserMode);
 
 ### <a name="parameters"></a>Parametreler
 
-*bUserMode*  
+*bUserMode*<br/>
 [in] Bu özelliğin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -755,7 +755,7 @@ virtual HRESULT STDMETHODCALLTYPE SetAmbientDispatch(IDispatch* pDispatch) = 0;
 
 ### <a name="parameters"></a>Parametreler
 
-*pDispatch*  
+*pDispatch*<br/>
 Yeni arabirim işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -776,10 +776,10 @@ STDMETHOD(AttachControl)(IUnknown* pUnkControl, HWND hWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnkControl*  
+*pUnkControl*<br/>
 [in] Bir işaretçi `IUnknown` konak nesnesine eklenecek denetimin arabirimi.
 
-*hWnd*  
+*hWnd*<br/>
 [in] Tanıtıcı penceresine barındırmak için kullanılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -799,13 +799,13 @@ STDMETHOD(CreateControl)(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpTricsData*  
+*lpTricsData*<br/>
 [in] Denetimi oluşturmak için tanımlayan bir dize. (Küme ayraçları içermelidir) CLSID, program kimliği, URL veya ham HTML olabilir (önek **MSHTML:**).
 
-*hWnd*  
+*hWnd*<br/>
 [in] Tanıtıcı penceresine barındırmak için kullanılacak.
 
-*pStream*  
+*pStream*<br/>
 [in] Denetim için başlatma verilerini içeren bir akış için bir arabirim işaretçisi. NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -836,22 +836,22 @@ STDMETHOD(CreateControlEx)(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpTricsData*  
+*lpTricsData*<br/>
 [in] Denetimi oluşturmak için tanımlayan bir dize. (Küme ayraçları içermelidir) CLSID, program kimliği, URL veya ham HTML olabilir (ön eki **MSHTML:**).
 
-*hWnd*  
+*hWnd*<br/>
 [in] Tanıtıcı penceresine barındırmak için kullanılacak.
 
-*pStream*  
+*pStream*<br/>
 [in] Denetim için başlatma verilerini içeren bir akış için bir arabirim işaretçisi. NULL olabilir.
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] Adresi alacak bir işaretçi `IUnknown` arabirimi oluşturulan denetimi. NULL olabilir.
 
-*riidAdvise*  
+*riidAdvise*<br/>
 [in] Kapsanan nesne üzerinde giden bir arabirim arabirimi tanımlayıcısı. IID_NULL olabilir.
 
-*punkAdvise*  
+*punkAdvise*<br/>
 [in] Bir işaretçi `IUnknown` arabirimi tarafından belirtilen kapsanan nesne üzerindeki bağlantı noktasına bağlı havuz nesnenin `iidSink`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -874,10 +874,10 @@ STDMETHOD(QueryControl)(REFIID riid, void** ppvObject);
 
 ### <a name="parameters"></a>Parametreler
 
-*riid*  
+*riid*<br/>
 [in] İstenen denetimin bir arabirim kimliği.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] Oluşturulan denetimi belirtilen arabirim alacak bir işaretçi adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -894,7 +894,7 @@ STDMETHOD(SetExternalDispatch)(IDispatch* pDisp);
 
 ### <a name="parameters"></a>Parametreler
 
-*pDisp*  
+*pDisp*<br/>
 [in] Bir işaretçi bir `IDispatch` arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -911,7 +911,7 @@ STDMETHOD(SetExternalUIHandler)(IDocHostUIHandlerDispatch* pDisp);
 
 ### <a name="parameters"></a>Parametreler
 
-*pDisp*  
+*pDisp*<br/>
 [in] Bir işaretçi bir `IDocHostUIHandlerDispatch` arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -936,7 +936,7 @@ STDMETHOD(CreateControlLic)(
 
 ### <a name="parameters"></a>Parametreler
 
-*bstrLic*  
+*bstrLic*<br/>
 [in] Denetim için lisans anahtarı içeren BSTR.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -966,7 +966,7 @@ STDMETHOD(CreateControlLicEx)(
 
 ### <a name="parameters"></a>Parametreler
 
-*bstrLic*  
+*bstrLic*<br/>
 [in] Denetim için lisans anahtarı içeren BSTR.
 
 ### <a name="remarks"></a>Açıklamalar

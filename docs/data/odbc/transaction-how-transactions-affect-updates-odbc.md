@@ -19,23 +19,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e540b68b820234ee6d30295b40c7e0f4cb7c806d
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 21e6511a66129cb172ff10fedfa563bc4d663d19
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338596"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078523"
 ---
 # <a name="transaction-how-transactions-affect-updates-odbc"></a>İşlem: İşlemlerin Güncelleştirmeleri Etkilemesi (ODBC)
+
 Güncelleştirmeleri [veri kaynağı](../../data/odbc/data-source-odbc.md) sırasında işlem düzenleme arabelleği (işlem dışında kullanılan aynı yönteme) kullanılarak yönetilir. Kayıt alan veri üyeleri topluca kayıt sırasında geçici olarak yedekler geçerli kayıt içeren düzenleme arabelleği görevi gören bir `AddNew` veya `Edit`. Sırasında bir `Delete` işlemi, geçerli kayıt yedeklenmez bir işlem içinde. Düzenleme arabelleği ve nasıl kayıt güncelleştirmeleri depolamak hakkında daha fazla bilgi için bkz. [kayıt kümesi: nasıl kayıt kümelerini güncelleştirme kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).  
   
 > [!NOTE]
 >  Toplu satır getirme uyguladıysanız çağıramazsınız `AddNew`, `Edit`, veya `Delete`. Bunun yerine, veri kaynağı güncelleştirmelerini gerçekleştirmek için kendi işlevleri yazmanız gerekir. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
- İşlem sırasında `AddNew`, `Edit`, ve `Delete` işlem kaydedilmiş veya geri alındı. Etkilerini `CommitTrans` ve `Rollback` geçerli kayıt düzenleme ara yüklenmemesine neden olabilir. Geçerli kayıt düzgün bir şekilde geri yüklendiğinden emin olmak için anlamak önemlidir nasıl `CommitTrans` ve `Rollback` üye işlevleri `CDatabase` güncelleştirme işlevlerini ile çalışmak `CRecordset`.  
+İşlem sırasında `AddNew`, `Edit`, ve `Delete` işlem kaydedilmiş veya geri alındı. Etkilerini `CommitTrans` ve `Rollback` geçerli kayıt düzenleme ara yüklenmemesine neden olabilir. Geçerli kayıt düzgün bir şekilde geri yüklendiğinden emin olmak için anlamak önemlidir nasıl `CommitTrans` ve `Rollback` üye işlevleri `CDatabase` güncelleştirme işlevlerini ile çalışmak `CRecordset`.  
   
 ##  <a name="_core_how_committrans_affects_updates"></a> CommitTrans güncelleştirmeleri nasıl etkiler?  
- Aşağıdaki tablo etkilerini açıklar `CommitTrans` işlemlerle ilgili.  
+
+Aşağıdaki tablo etkilerini açıklar `CommitTrans` işlemlerle ilgili.  
   
 ### <a name="how-committrans-affects-updates"></a>CommitTrans güncelleştirmeleri nasıl etkiler?  
   
@@ -48,7 +50,8 @@ Güncelleştirmeleri [veri kaynağı](../../data/odbc/data-source-odbc.md) sıra
 |`Delete` Ardından `CommitTrans`|Kayıt veri kaynağından silinir.|  
   
 ##  <a name="_core_how_rollback_affects_updates"></a> Geri alma işlemleri etkileme  
- Aşağıdaki tablo etkilerini açıklar `Rollback` işlemlerle ilgili.  
+
+Aşağıdaki tablo etkilerini açıklar `Rollback` işlemlerle ilgili.  
   
 ### <a name="how-rollback-affects-transactions"></a>Geri alma işlemleri etkileme  
   
@@ -61,8 +64,9 @@ Güncelleştirmeleri [veri kaynağı](../../data/odbc/data-source-odbc.md) sıra
 |`Delete` Ardından `Rollback`|Geçerli kayıt içeriğini silinir.|Çağrı `Requery` veri kaynağından geçerli kayıt içeriğini geri yüklemek için.|Veri kaynağı silme işlemi ters çevrilir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşlem (ODBC)](../../data/odbc/transaction-odbc.md)   
- [İşlem (ODBC)](../../data/odbc/transaction-odbc.md)   
- [İşlem: kayıt kümesi (ODBC) bir işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)   
- [CDatabase sınıfı](../../mfc/reference/cdatabase-class.md)   
- [CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)
+
+[İşlem (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
+[İşlem (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
+[İşlem: Kayıt Kümesinde İşlem Gerçekleştirme (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)<br/>
+[CDatabase Sınıfı](../../mfc/reference/cdatabase-class.md)<br/>
+[CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)

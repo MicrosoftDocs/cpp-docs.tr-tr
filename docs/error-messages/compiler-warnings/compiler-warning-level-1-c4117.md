@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3087e7510e4a803d2a47de4a3c36eafdb86b8da8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 675f5465e30977575c018d7c76b2b7516d4c5a56
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33278258"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077249"
 ---
 # <a name="compiler-warning-level-1-c4117"></a>Derleyici Uyarısı (düzey 1) C4117
-Makro adı 'name' ayrılmıştır; 'Komutu göz ardı'  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Tanımlamak veya önceden tanımlanmış makrosu tanımsız çalışılıyor.  
-  
-2.  Tanımlamak veya önişlemci işleci tanımsız çalışılırken **tanımlanan**.  
-  
- Aşağıdaki örnek C4117 oluşturur:  
-  
-```  
-// C4117.cpp  
-// compile with: /W1  
-#define __FILE__ test         // C4117. __FILE__ is a predefined macro  
-#define ValidMacroName test   // ok  
-  
-int main() {  
-}  
+
+Makro adı 'name' ayrılmıştır; 'Command' yoksayıldı
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Tanımlayın veya önceden tanımlanmış bir makro tanımsız çalışılıyor.
+
+1. Tanımlayın veya önişlemci işleci tanımsız **tanımlanan**.
+
+Aşağıdaki örnek, C4117 oluşturur:
+
+```
+// C4117.cpp
+// compile with: /W1
+#define __FILE__ test         // C4117. __FILE__ is a predefined macro
+#define ValidMacroName test   // ok
+
+int main() {
+}
 ```

@@ -17,17 +17,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 699b21eff62c0014ec1b0da51a620bdab2f32281
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cd01cd17dd7c3b0fce2d79b8141c19e651bc5309
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382854"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084490"
 ---
 # <a name="initialization"></a>Başlatma
-Bir "başlatıcı" bir değer veya bildirilen değişkenine atanan değerleri dizisi değil. Değişken bildiriminde bildirimcisi bir başlatıcı uygulayarak bir değişken için bir başlangıç değeri ayarlayabilirsiniz. Değer veya değerlerini Başlatıcı değişkene atanır.  
-  
- Aşağıdaki bölümlerde değişkenlerinin nasıl [skaler](../c-language/initializing-scalar-types.md), [toplama](../c-language/initializing-aggregate-types.md), ve [dize](../c-language/initializing-strings.md) türleri. "Skaler türleri" tüm aritmetik türlerine ek işaretçileri içerir. Diziler, yapılar ve birleşimleri "Toplama türleri" içerir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bildirimler ve Türler](../c-language/declarations-and-types.md)
+
+"Başlatıcı" bir değer ya da bildirilen değişkenin atanacak değerleri dizisi ' dir. Bildirimci Değişken bildiriminde bir başlatıcı uygulayarak bir başlangıç değeri için bir değişken ayarlayabilirsiniz. Değeri veya değerleri başlatıcının değişkenine atanır.
+
+Aşağıdaki bölümlerde, değişkenlerini başlatmak üzere nasıl [skaler](../c-language/initializing-scalar-types.md), [toplama](../c-language/initializing-aggregate-types.md), ve [dize](../c-language/initializing-strings.md) türleri. "Skaler türleri" tüm aritmetik türüne ek olarak işaretçiler içerir. "Toplama türleri", diziler, yapılar ve birleşimler içerir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bildirimler ve Türler](../c-language/declarations-and-types.md)

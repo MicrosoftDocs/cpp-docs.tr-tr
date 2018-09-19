@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28beaad95cc33d8b014b22035f9ed641f1b6ab6d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bd602dcde34aa7cc08486188ab5fb5925eca0eb2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33321031"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081097"
 ---
 # <a name="resource-compiler-error-rc2104"></a>Kaynak Derleyicisi Hatası RC2104
-Tanımsız anahtar veya anahtar adı: anahtar  
-  
- Belirtilen anahtar veya anahtar adı tanımlı değil.  
-  
- Bu hata genellikle kaynak tanımı'ndaki ya da dahil üstbilgi dosyasında bir yazım hatasından kaynaklanır. Eksik üstbilgi dosyası tarafından da oluşabilir.  
-  
- Sorunu düzeltmek için tanımlanmış anahtar veya anahtar adını içeren ve kaynak dosyasında bulunur ve anahtar veya anahtar adının doğru yazıldığından doğrulamanız gerekir üst bilgi dosyasını bulun. Projenizi önceden derlenmiş üstbilgi ile oluşturulan ve daha sonra kaldırmanız, olduğundan emin olun kaynak dosyasının hala gerekli tüm üstbilgileri içerir.  
-  
- Visual Studio'da, kaynak dosyanızdaki anahtar adlarını ve tanımlı anahtar sözcükler doğrulamak için açık **kaynak görünümü** penceresi — menü çubuğunda seçin **Görünüm**, **kaynak görünümü**— ve ardından .rc dosyası için kısayol menüsünü açın ve seçin **kaynak semboller** tanımlanmış simge listesini görüntülemek için. Dahil edilen üstbilgileri değiştirmek için .rc dosyası için kısayol menüsünü açın ve seçin **kaynağını içeren**.  
-  
- Bu ileti karşılaşırsanız:  
-  
-```  
-undefined keyword or key name: MFT_STRING   
-```  
-  
- \MCL\MFC\Include\AfxRes.h açın ve bu ekleyin yönergesi içerir:  
-  
-```  
-#include <winresrc.h>  
+
+tanımlanmamış anahtar veya anahtar adı: anahtar
+
+Belirtilen anahtar veya anahtar adı tanımlı değil.
+
+Bu hata genellikle kaynak tanımı'ndaki veya dahil edilen üstbilgi dosyasında bir yazım yanlışı kaynaklanır. Eksik bir üstbilgi dosyası tarafından da kaynaklanabilir.
+
+Bu sorunu düzeltmek için kaynak dosyasına dahil edilir ve anahtar veya anahtar adının doğru yazıldığından emin olun ve tanımlanmış bir anahtar veya anahtar adını içeren üstbilgi dosyasını bulun. Önceden derlenmiş üstbilgiyle projeniz oluşturuldu ve daha sonra kaldırmak, emin olun, kaynak dosyası hala gerekli üst bilgileri içerir.
+
+Visual Studio'da, kaynak dosyanızdaki anahtar adlarını ve tanımlı anahtar sözcükler doğrulamak için açık **kaynak görünümü** penceresi — menü çubuğunda, **görünümü**, **kaynak görünümü**— ve Ardından, bir .rc dosyası için kısayol menüsünü açın ve seçin **kaynak sembolleri** tanımlanmış sembol listesini görüntülemek için. Dahil edilen üst bilgileri değiştirmek için bir .rc dosyası için kısayol menüsünü açın ve seçin **kaynak içerikleri**.
+
+Bu iletisiyle karşılaşırsanız:
+
+```
+undefined keyword or key name: MFT_STRING
+```
+
+\MCL\MFC\Include\AfxRes.h açın ve bunu ekleyin yönergesi:
+
+```
+#include <winresrc.h>
 ```

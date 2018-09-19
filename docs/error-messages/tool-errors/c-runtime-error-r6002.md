@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50a970ecea4fdd7d397c09672b0548be947cab1e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dc23cf3c692eef37a86b5385d2e9e3a68340374e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298570"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080928"
 ---
 # <a name="c-runtime-error-r6002"></a>C çalışma zamanı hatası R6002
-kayan nokta desteği yüklenmedi  
-  
- Gerekli kayan nokta kitaplığı bağlı değil.  
-  
+
+kayan nokta desteği yüklenmedi
+
+Gerekli kayan nokta kitaplığı bağlı değil.
+
 > [!NOTE]
->  Bir uygulama çalıştırırken bu hata iletisi alırsanız, dahili bir sorun olduğundan uygulama kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak bir üründe uygulamanın koduna veya belirli bir bilgisayar işlemcinizin oluşturulmadı bir uygulamayı çalıştırma denemesi genellikle neden olur.  
->   
->  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:  
->   
->  -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasındaki **Denetim Masası** onarın veya program yeniden yükleyin.  
-> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.  
-> -   Uygulamanın güncelleştirilmiş bir sürümünü denetle. Sorun devam ederse uygulamanın satıcısına başvurun.  
-  
- **Programcıları için bilgi**  
-  
- Kayan nokta kitaplığı bağlanmadı bu hata, uygulamanızda ortaya çıkabilir. Bu nedenlerden birinden dolayı denetleyin:  
-  
--   Bir biçim dizesi için bir `printf_s` veya `scanf_s` işlevi bir kayan nokta biçim belirtimi içeriyordu ve program herhangi bir kayan nokta değerleri veya değişkenleri içermiyordu. Bu sorunu gidermek için kayan nokta biçimi belirtimlerine uygun olmalıdır için kayan nokta bağımsız değişkenini kullanın veya bir kayan nokta ataması başka bir programda gerçekleştirin. Bu, yüklenecek kayan nokta desteği neden olur.  
-  
--   Derleyici kayan nokta desteği yalnızca gerekli olduğunda yükleyerek bir programın boyutu en aza indirir. Gerekli kayan nokta yordamları yüklemez şekilde derleyici biçim dizeleri kayan nokta işlemleri veya kayan nokta biçim belirtimleri algılayamaz. Bu sorunu gidermek için bir kayan nokta biçim belirtimi kullanın ve kayan noktalı bir bağımsız değişken sağlayın veya bir kayan nokta ataması başka bir programda gerçekleştirin. Bu, yüklenecek kayan nokta desteği neden olur.  
-  
--   Karışık dil programında program bağlandığında bir C Kitaplığı FORTRAN kitaplığı önce belirtildi. Yeniden bağlayın ve en son C Kitaplığı belirtin.
+>  Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bir sorun olduğundan uygulaması kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak uygulamanın koddaki bir hata veya belirli bir bilgisayar işlemci için oluşturulan bir uygulamayı çalıştırma denemesi genellikle neden olur.
+>
+>  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
+>
+>  -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
+> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
+> -   Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
+
+**Programcıları için bilgi**
+
+Kayan nokta kitaplığı bağlanmadı, uygulamanızda bu hata oluşabilir. Bu nedenlerden biri için denetleyin:
+
+- Bir biçim dizesi için bir `printf_s` veya `scanf_s` işlevi yer alan bir kayan nokta biçim belirtimi ve programın herhangi bir kayan nokta değerleri veya değişkenleri içermiyordu. Bu sorunu gidermek için kayan nokta biçim belirtimi için karşılık gelen bir kayan noktalı bağımsız değişken kullanın veya bir kayan nokta ataması programda başka bir yerde gerçekleştirin. Bu, kayan nokta desteği yüklenmesine neden olur.
+
+- Derleyici, kayan nokta desteği yalnızca gerekli olduğunda yükleyerek bir programın boyutu en aza indirir. Gerekli kayan nokta yordamları yüklemeyecek şekilde biçim dizeleri, derleyicinin kayan nokta işlemleri veya kayan nokta biçim belirtimleri algılayamaz. Bu sorunu gidermek için bir kayan nokta biçim belirtimi kullanın ve bir kayan noktalı bağımsız değişken sağlayın veya bir kayan nokta ataması programda başka bir yerde gerçekleştirin. Bu, kayan nokta desteği yüklenmesine neden olur.
+
+- Programa bağlandığında bir karma dil programda bir C Kitaplığı FORTRAN kitaplığa önce belirtildi. Yeniden bağlayın ve en son C Kitaplığı belirtin.

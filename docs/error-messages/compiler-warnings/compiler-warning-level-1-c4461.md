@@ -16,39 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2884daeb7497f6664cecf864ec705891cac62f48
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 86c12208c6992b97f30bc36ea821ba26148ff751
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33278639"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081409"
 ---
 # <a name="compiler-warning-level-1-c4461"></a>Derleyici Uyarısı (düzey 1) C4461
-'type': Bu sınıf bir Sonlandırıcısı 'Sonlandırıcı' ancak hiçbir yıkıcı 'dtor' sahiptir  
-  
- Bir türdeki bir sonlandırıcı varlığını silinecek kaynakları anlamına gelir. Bir sonlandırıcı tür Yıkıcı açıkça çağrılan sürece, ortak dil çalışma zamanı ne zaman, nesne kapsam dışında göründükten sonra sonlandırıcıyı çalıştırılacağını belirler.  
-  
- Türünde bir yıkıcı tanımlayın ve sonlandırıcıyı Yıkıcı açıkça çağırın, sonlandırıcıyı belirleyici biçimde çalıştırabilirsiniz.  
-  
- Daha fazla bilgi için bkz: [yok ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4461 oluşturur.  
-  
-```  
-// C4461.cpp  
-// compile with: /W1 /clr /c  
-ref class A {  
-protected:  
-   !A() {}   // C4461  
-};  
-  
-// OK  
-ref struct B {  
-   ~B() {  
-      B::!B();  
-   }  
-  
-   !B() {}  
-};  
+
+'type': Bu sınıf, bir Sonlandırıcı 'Sonlandırıcı' ancak hiçbir yok edici 'dtor' sahiptir
+
+Kaynakları silmek için bir tür içindeki bir sonlandırıcı varlığını gösterir. Sonlandırıcıda tür yok ediciden açıkça çağrılır sürece, ortak dil çalışma zamanı zaman Sonlandırıcı nesnenizin kapsamın dışına çıkıncaya sonra çalıştırılacak belirler.
+
+Türün bir yok ediciyi tanımlayın ve sonlandırıcı yok ediciden açıkça çağırmak, belirleyici, sonlandırıcı çalıştırabilirsiniz.
+
+Daha fazla bilgi için [yok ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4461 oluşturur.
+
+```
+// C4461.cpp
+// compile with: /W1 /clr /c
+ref class A {
+protected:
+   !A() {}   // C4461
+};
+
+// OK
+ref struct B {
+   ~B() {
+      B::!B();
+   }
+
+   !B() {}
+};
 ```

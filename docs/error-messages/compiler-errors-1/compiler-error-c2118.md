@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c27b4b253e2696b88763c2a9f99c0476f9c46dd5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 91e79e396f707dc1462b17d9dd470527f199ad10
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165249"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081643"
 ---
 # <a name="compiler-error-c2118"></a>Derleyici Hatası C2118
-Negatif alt simge  
-  
- Dizi boyutu tanımlama en büyük dizi boyutu daha büyük ya da sıfırdan küçük değerdir.  
-  
- Aşağıdaki örnek C2118 oluşturur:  
-  
-```  
-// C2118.cpp  
-int main() {  
-   int array1[-1];   // C2118  
-   int array2[3];   // OK  
-}  
+
+Negatif indis
+
+Dizi boyutu tanımlama en fazla dizi boyutu daha büyük ya da sıfırdan küçük değerdir.
+
+Aşağıdaki örnek, C2118 oluşturur:
+
+```
+// C2118.cpp
+int main() {
+   int array1[-1];   // C2118
+   int array2[3];   // OK
+}
 ```

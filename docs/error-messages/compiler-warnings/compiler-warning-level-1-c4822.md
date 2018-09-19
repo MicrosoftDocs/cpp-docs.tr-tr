@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9491d522c65eba3599c3618d510c57b55682876
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 33748a39eae4b6f2a84cadb818570f9a311b1fe1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33283034"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078328"
 ---
 # <a name="compiler-warning-level-1-c4822"></a>Derleyici Uyarısı (düzey 1) C4822
-'member': yerel sınıf üye işlevi bir gövde yok  
-  
- Yerel sınıf üye işlevi bildirimi ancak sınıfında tanımlı değil. Yerel sınıf üye işlevi kullanmak için sınıfı tanımlamanız gerekir. Sınıfında bildirin ve sınıf dışında tanımlayın.  
-  
- Herhangi bir sınıf çıkış tanımının yerel sınıf üye işlevi için bir hata olacaktır.  
-  
- Aşağıdaki örnek C4822 oluşturur:  
-  
-```  
-// C4822.cpp  
-// compile with: /W1  
-int main() {  
-   struct C {  
-      void func1(int);   // C4822  
-      // try the following line instead  
-      // void func1(int){}  
-  };  
-}  
+
+'member': yerel sınıf üyesi işlevinde bir gövde yok
+
+Bir yerel sınıf üyesi işlevinde bildirildi, ancak sınıfta tanımlı değil. Bir yerel sınıf üyesi işlevi kullanmak için sınıfta tanımlamanız gerekir. Sınıfında bildirin ve dışında sınıfı tanımlayın.
+
+Bir hata için bir yerel sınıf üyesi işlevinde herhangi bir sınıf çıkış tanımının olacaktır.
+
+Aşağıdaki örnek, C4822 oluşturur:
+
+```
+// C4822.cpp
+// compile with: /W1
+int main() {
+   struct C {
+      void func1(int);   // C4822
+      // try the following line instead
+      // void func1(int){}
+  };
+}
 ```

@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3582f3fff0ee683889e1b0403554c59835293889
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 39a0938f6faadc05b2fdb3d716417a56512768b7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756112"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084568"
 ---
 # <a name="cwindowimpl-class"></a>Cwindowımpl sınıfı
 
@@ -45,19 +45,19 @@ Oluşturma veya bir pencere sınıflara için yöntemler sağlar.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T, class TBase = CWindow, class TWinTraits = CControlWinTraits>  
+template <class T, class TBase = CWindow, class TWinTraits = CControlWinTraits>
 class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Yeni sınıfınıza türetilen `CWindowImpl`.
 
-*Ttemel*  
+*Ttemel*<br/>
 Sınıfın temel sınıf. Varsayılan olarak, temel bir sınıftır [CWindow](../../atl/reference/cwindow-class.md).
 
-*TWinTraits*  
+*TWinTraits*<br/>
 A [nitelikler sınıfı](../../atl/understanding-window-traits.md) stilleri pencerenizin tanımlayan. Varsayılan, `CControlWinTraits` değeridir.
 
 ## <a name="members"></a>Üyeler
@@ -153,25 +153,25 @@ HWND Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] Üst veya sahibi penceresine tanıtıcısı.
 
-*Rect*  
+*Rect*<br/>
 [in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) pencerenin konumunu belirten yapısı. `RECT` İşaretçi veya başvuruya göre geçirilebilir.
 
-*szWindowName*  
+*szWindowName*<br/>
 [in] Pencerenin adını belirtir. Varsayılan değer NULL olur.
 
-*dwStyle*  
+*dwStyle*<br/>
 [in] Pencere stili. Bu değer, pencerenin için nitelikler sınıfı tarafından sağlanan stil ile birleştirilir. Varsayılan değer nitelikler sınıfı stili üzerinde tam denetim verir. Olası değerler listesi için bkz. [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK.
 
-*dwExStyle*  
+*dwExStyle*<br/>
 [in] Genişletilmiş pencere stili. Bu değer, pencerenin için nitelikler sınıfı tarafından sağlanan stil ile birleştirilir. Varsayılan değer nitelikler sınıfı stili üzerinde tam denetim verir. Olası değerler listesi için bkz. [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.
 
-*MenuOrID*  
+*MenuOrID*<br/>
 [in] Alt pencere için pencere tanımlayıcısı. Bir üst düzey pencere için bir pencere için menü tanıtıcısı. Varsayılan değer **0U**.
 
-*lpCreateParam*  
+*lpCreateParam*<br/>
 [in] Pencere oluşturma veri işaretçisi. Tam açıklama için son parametresi açıklamasına bakın [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -205,13 +205,13 @@ LRESULT DefWindowProc();
 
 ### <a name="parameters"></a>Parametreler
 
-*uMsg*  
+*uMsg*<br/>
 [in] Pencereye gönderilen ileti.
 
-*wParam*  
+*wParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
-*lParam*  
+*lParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -300,7 +300,7 @@ virtual void OnFinalMessage(HWND hWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*  
+*hWnd*<br/>
 [in] Yok ediliyor penceresi için bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -317,7 +317,7 @@ BOOL SubclassWindow(HWND hWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*  
+*hWnd*<br/>
 [in] Sınıflandırma penceresine tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -357,16 +357,16 @@ static LRESULT CALLBACK WindowProc(
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*  
+*hWnd*<br/>
 [in] Pencereye tanıtıcısı.
 
-*uMsg*  
+*uMsg*<br/>
 [in] Pencereye gönderilen ileti.
 
-*wParam*  
+*wParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
-*lParam*  
+*lParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -387,6 +387,6 @@ Geçersiz kılabilirsiniz `WindowProc` iletileri işlemek için farklı bir meka
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
-[CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)   
+[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
+[CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d884355d3f1e8b0c4507ff345718628804092b5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2f608d3248f3294178fbabc5c81a6145e4cf3fb2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291511"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086505"
 ---
 # <a name="compiler-warning-level-4-c4053"></a>Derleyici Uyarısı (düzey 4) C4053
-bir void işleneni '?:'  
-  
- `?:` İşleç türü bir ifadenin verilen `void`. Değeri `void` işlenen tanımlanmadı.
+
+için bir void işlenen '?:'
+
+`?:` İşleci türündeki bir ifade, verilen `void`. Değerini `void` işlenen tanımsızdır.

@@ -16,72 +16,73 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e7e5e422206f3ee58b95024a3b96244d848e1b0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e4e5f73016060ccc17dfe0218d8b518b2f5dbdbd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33273611"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081448"
 ---
 # <a name="compiler-error-c3767"></a>Derleyici Hatası C3767
-'function' aday işlev vardı erişilebilir değil  
-  
- Bir sınıf içinde tanımlanan bir arkadaş işlev tanımlı olan ve genel ad alanı kapsamda bildirilen sanki kabul edilmesi için beklenmiyor. Ancak, bağımsız değişkene bağlı arama tarafından bulunan olması, bunu yapabilirsiniz.  
-  
- C3767 da neden olabilir göre önemli bir değişiklik: yerel türleridir artık varsayılan olarak özel bir **/CLR** derleme; bkz: [yazın görünürlük](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) daha fazla bilgi için.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3767 oluşturur:  
-  
-```  
-// C3767a.cpp  
-// compile with: /clr  
-using namespace System;  
-public delegate void TestDel();  
-  
-public ref class MyClass {  
-public:  
-   static event TestDel^ MyClass_Event;  
-};  
-  
-public ref class MyClass2 : public MyClass {  
-public:  
-   void Test() {  
-      MyClass^ patient = gcnew MyClass;  
-      patient->MyClass_Event();  
-    }  
-};  
-  
-int main() {  
-   MyClass^ x = gcnew MyClass;  
-   x->MyClass_Event();   // C3767  
-  
-   // OK  
-   MyClass2^ y = gcnew MyClass2();  
-   y->Test();  
-};  
-```  
-  
- Aşağıdaki örnek C3767 oluşturur:  
-  
-```  
-// C3767c.cpp  
-// compile with: /clr /c  
-  
-ref class Base  {  
-protected:  
-   void Method() {  
-      System::Console::WriteLine("protected");  
-   }  
-};  
-  
-ref class Der : public Base {  
-   void Method() {  
-      ((Base^)this)->Method();   // C3767  
-      // try the following line instead  
-      // Base::Method();  
-   }  
-};  
-```  
-  
- 
+
+'function' aday işlevlere erişilemiyor
+
+Bir sınıfta tanımlanan bir arkadaş işlev tanımlı ve genel ad alanı kapsamı içinde bildirilen yokmuş gibi kabul edilmesi için beklenmiyor. Alabilir, ancak bağımsız değişkene bağlı arama tarafından bulunamadı.
+
+C3767 da neden olabilir bir değişiklik tarafından: Yerel türler varsayılan olarak özel artık bir **/CLR** derleme; bkz: [türü görünürlük](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) daha fazla bilgi için.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3767 oluşturur:
+
+```
+// C3767a.cpp
+// compile with: /clr
+using namespace System;
+public delegate void TestDel();
+
+public ref class MyClass {
+public:
+   static event TestDel^ MyClass_Event;
+};
+
+public ref class MyClass2 : public MyClass {
+public:
+   void Test() {
+      MyClass^ patient = gcnew MyClass;
+      patient->MyClass_Event();
+    }
+};
+
+int main() {
+   MyClass^ x = gcnew MyClass;
+   x->MyClass_Event();   // C3767
+
+   // OK
+   MyClass2^ y = gcnew MyClass2();
+   y->Test();
+};
+```
+
+Aşağıdaki örnek, C3767 oluşturur:
+
+```
+// C3767c.cpp
+// compile with: /clr /c
+
+ref class Base  {
+protected:
+   void Method() {
+      System::Console::WriteLine("protected");
+   }
+};
+
+ref class Der : public Base {
+   void Method() {
+      ((Base^)this)->Method();   // C3767
+      // try the following line instead
+      // Base::Method();
+   }
+};
+```
+

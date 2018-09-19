@@ -16,52 +16,54 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1ed49662b28f2ac84fc8c53f677b2deada974d3
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 3d9754f8b0b218fc4d627eb0e27504e8521bf776
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39403511"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076443"
 ---
 # <a name="restrict"></a>__restrict
-Gibi **__declspec ( [kısıtlama](../cpp/restrict.md) )** değiştiricisi **__restrict** anahtar sözcüğü gösteren bir simge geçerli kapsamda diğer adı değil. **__Restrict** anahtar sözcüğünden farklıdır `__declspec ( restrict )` aşağıdaki yollarla değiştiricisi:  
-  
--   **__Restrict** anahtar sözcüğü yalnızca değişkenler üzerinde geçerlidir ve `__declspec ( restrict )` yalnızca işlev bildirimleri ve tanımları üzerinde geçerlidir.  
-  
--   **__restrict** benzer **kısıtlama** C99 belirtimi gelen ancak **__restrict** C ya da C++ programlarında kullanılabilir.  
-  
--   Zaman **__restrict** olan kullanıldığında, derleyici değişkenin diğer ad olmayan özelliğini yaymayacaktır. Diğer bir deyişle, atarsanız bir **__restrict** olmayan bir değişken **__restrict** değişken, derleyici hala sağlayacak __restrict olmayan değişkenine diğer adı olması. Bu davranışından farklıdır **kısıtlama** C99 belirtimindeki from anahtar sözcüğü.  
-  
- Tüm işlevin davranışını etkilerseniz, genellikle bunu kullanmak en iyisidir `__declspec ( restrict )` daha anahtar sözcüğü.  
-  
- Visual Studio 2015 ve sonraki sürümlerinde, **__restrict** C++ başvuruları üzerinde kullanılabilir.  
-  
+
+Gibi **__declspec ( [kısıtlama](../cpp/restrict.md) )** değiştiricisi **__restrict** anahtar sözcüğü gösteren bir simge geçerli kapsamda diğer adı değil. **__Restrict** anahtar sözcüğünden farklıdır `__declspec ( restrict )` aşağıdaki yollarla değiştiricisi:
+
+- **__Restrict** anahtar sözcüğü yalnızca değişkenler üzerinde geçerlidir ve `__declspec ( restrict )` yalnızca işlev bildirimleri ve tanımları üzerinde geçerlidir.
+
+- **__restrict** benzer **kısıtlama** C99 belirtimi gelen ancak **__restrict** C ya da C++ programlarında kullanılabilir.
+
+- Zaman **__restrict** olan kullanıldığında, derleyici değişkenin diğer ad olmayan özelliğini yaymayacaktır. Diğer bir deyişle, atarsanız bir **__restrict** olmayan bir değişken **__restrict** değişken, derleyici hala sağlayacak __restrict olmayan değişkenine diğer adı olması. Bu davranışından farklıdır **kısıtlama** C99 belirtimindeki from anahtar sözcüğü.
+
+Tüm işlevin davranışını etkilerseniz, genellikle bunu kullanmak en iyisidir `__declspec ( restrict )` daha anahtar sözcüğü.
+
+Visual Studio 2015 ve sonraki sürümlerinde, **__restrict** C++ başvuruları üzerinde kullanılabilir.
+
 > [!NOTE]
->  Ayrıca bir değişken üzerinde kullanıldığında [geçici](../cpp/volatile-cpp.md) anahtar sözcüğü, **geçici** öncelikli olur.  
-  
-## <a name="example"></a>Örnek  
-  
-```cpp 
-// __restrict_keyword.c  
-// compile with: /LD  
-// In the following function, declare a and b as disjoint arrays  
-// but do not have same assurance for c and d.  
-void sum2(int n, int * __restrict a, int * __restrict b,   
-          int * c, int * d) {  
-   int i;  
-   for (i = 0; i < n; i++) {  
-      a[i] = b[i] + c[i];  
-      c[i] = b[i] + d[i];  
-    }  
-}  
-  
-// By marking union members as __restrict, tell compiler that  
-// only z.x or z.y will be accessed in any given scope.  
-union z {  
-   int * __restrict x;  
-   double * __restrict y;  
-};  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)
+>  Ayrıca bir değişken üzerinde kullanıldığında [geçici](../cpp/volatile-cpp.md) anahtar sözcüğü, **geçici** öncelikli olur.
+
+## <a name="example"></a>Örnek
+
+```cpp
+// __restrict_keyword.c
+// compile with: /LD
+// In the following function, declare a and b as disjoint arrays
+// but do not have same assurance for c and d.
+void sum2(int n, int * __restrict a, int * __restrict b,
+          int * c, int * d) {
+   int i;
+   for (i = 0; i < n; i++) {
+      a[i] = b[i] + c[i];
+      c[i] = b[i] + d[i];
+    }
+}
+
+// By marking union members as __restrict, tell compiler that
+// only z.x or z.y will be accessed in any given scope.
+union z {
+   int * __restrict x;
+   double * __restrict y;
+};
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

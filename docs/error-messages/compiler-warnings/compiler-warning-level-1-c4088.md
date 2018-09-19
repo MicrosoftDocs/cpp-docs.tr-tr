@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: baa48d199771f9c4f4a36eb4d86afae0cf4371a0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4ec3c11b5aa8ce0d3e97140ceb2584682c9e6cc7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33278463"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087064"
 ---
 # <a name="compiler-warning-level-1-c4088"></a>Derleyici Uyarısı (düzey 1) C4088
-'function': Gerçek parametresinde 'number', 'numara' biçimsel parametresi işaretçi uyuşmazlığı  
-  
- Karşılık gelen resmi ve gerçek parametreleri yöneltme farklı düzeyine sahip. Gerçek parametre değişiklik geçirilir. Çağrılan işlev değerini bir işaretçi olarak yorumlar.
+
+'function': Gerçek parametre 'number', 'number' biçimsel parametresi içinde işaretçi uyuşmazlığı
+
+Karşılık gelen biçimsel ve fiili parametreleri, farklı bir yöneltme düzeyi vardır. Gerçek parametre değişmeden geçirilir. Çağrılan işlev değerinin bir işaretçi olarak yorumlar.

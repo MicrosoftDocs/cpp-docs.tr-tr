@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37decb55a2f24f7f29d28519e2f87eba90ff56bb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d7f9a8a8a25190163432d5f0dd7826840e7ef7c6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197279"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076911"
 ---
 # <a name="compiler-error-c2469"></a>Derleyici Hatası C2469
-'işleci': 'type' nesnesi ayrılamıyor  
-  
- Bir işleç geçersiz bir tür geçirildi.  
-  
- Aşağıdaki örnek C2469 oluşturur:  
-  
-```  
-// C2469.cpp  
-int main() {  
-   int *i = new void;   // C2469  
-   int *i = new int;   // OK  
-}  
+
+'operator': 'type' nesnesi ayrılamıyor
+
+Bir işleç türü geçersiz geçirildi.
+
+Aşağıdaki örnek, C2469 oluşturur:
+
+```
+// C2469.cpp
+int main() {
+   int *i = new void;   // C2469
+   int *i = new int;   // OK
+}
 ```

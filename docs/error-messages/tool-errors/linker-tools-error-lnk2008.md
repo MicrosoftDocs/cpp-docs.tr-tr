@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4ee6a8a4c4cc6d33f47d5335daa9fccd4e5fd99
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 18eda06e7f133ada4de1b7ec28ac21be205a71f7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299571"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086817"
 ---
 # <a name="linker-tools-error-lnk2008"></a>Bağlayıcı Araçları Hatası LNK2008
-Düzeltmesi hedef hizalanmış 'symbol_name' değil  
-  
- BAĞLANTI bir düzeltmesi hedef nesne dosyanızda düzgün hizalanmış değil bulundu.  
-  
- Bu hataya özel secton hizalama tarafından neden olabilir (örneğin, #pragma [paketi](../../preprocessor/pack.md)), [Hizala](../../cpp/align-cpp.md) değiştiricisi, veya secton hizalama değiştirir derleme dil kodu kullanarak.  
-  
- Kodunuzu yukarıdakilerden herhangi biri kullanmıyorsa bu derleyici tarafından kaynaklanıyor olabilir.
+
+Düzeltme hedefi hizalı 'symbol_name' değil
+
+BAĞLANTI bir düzeltme hedefi düzgün bir şekilde hizalı değil, nesne dosyası bulundu.
+
+Özel secton hizalama tarafından bu hataya neden olabilir (örneğin, #pragma [paketi](../../preprocessor/pack.md)), [hizalama](../../cpp/align-cpp.md) değiştiricisi veya secton hizalama değiştiren derleme dili kodun kullanarak.
+
+Kodunuzu yukarıdakilerden herhangi biri kullanmıyorsa bu derleyici tarafından kaynaklanabilir.

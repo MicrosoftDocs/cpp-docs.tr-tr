@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77869c646e0804b5f3d942ea3acc97b0810196a4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 456fd31e6d618774bff13c9800d6a44ffd3deb73
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199385"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078692"
 ---
 # <a name="compiler-error-c2655"></a>Derleyici Hatası C2655
-'tanımlayıcısı': tanımı veya geçerli kapsamda geçersiz yeniden bildirimi  
-  
- Tanımlayıcı yalnızca genel kapsamda yeniden bildirilen.  
-  
- Aşağıdaki örnek C2655 oluşturur:  
-  
-```  
-// C2655.cpp  
-class A {};  
-class B {  
-public:  
-   static int i;  
-};  
-  
-int B::i;  // OK  
-  
-int main() {  
-   A B::i;  // C2655  
-}  
+
+'identifier': tanım veya geçerli kapsamda geçersiz yeniden bildirimi
+
+Bir tanımlayıcı yalnızca genel kapsamda yeniden tanımlanıyor.
+
+Aşağıdaki örnek, C2655 oluşturur:
+
+```
+// C2655.cpp
+class A {};
+class B {
+public:
+   static int i;
+};
+
+int B::i;  // OK
+
+int main() {
+   A B::i;  // C2655
+}
 ```

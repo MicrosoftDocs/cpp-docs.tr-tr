@@ -16,29 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd6fad304dc4e400d6ca25c7e835b2d0a6935117
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 923e4d5535a1be4f4c8a3f7b60730eb6a656ac33
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247806"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077106"
 ---
 # <a name="compiler-error-c3194"></a>Derleyici Hatası C3194
-'member': değer türü atama işleci sahip olamaz  
-  
- Kopya oluşturucu veya kopya atama işleci gibi derleyici tarafından otomatik çağırma gerektiren özel üye işlevleri değer sınıfı içinde desteklenmez.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3194 oluşturur.  
-  
-```  
-// C3194.cpp  
-// compile with: /clr /c  
-value struct MyStruct {  
-   MyStruct& operator= (const MyStruct& i) { return *this; }   // C3194  
-};  
-  
-ref struct MyStruct2 {  
-   MyStruct2% operator= (const MyStruct2% i) { return *this; }   // OK  
-};  
+
+'member': bir değer türünün bir atama işleci olamaz
+
+Kopya Oluşturucusu veya kopya atama işleci gibi derleyici tarafından otomatik çağırma gerektiren özel üye işlevleri, bir değer sınıfı içinde desteklenmez.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3194 oluşturur.
+
+```
+// C3194.cpp
+// compile with: /clr /c
+value struct MyStruct {
+   MyStruct& operator= (const MyStruct& i) { return *this; }   // C3194
+};
+
+ref struct MyStruct2 {
+   MyStruct2% operator= (const MyStruct2% i) { return *this; }   // OK
+};
 ```

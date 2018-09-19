@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a75fed82a989691bc63911b87b9264ed95512dce
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1ae68bd0fef3f43bfbc430ea2d41cead339424c9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249567"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086716"
 ---
 # <a name="compiler-error-c3619"></a>Derleyici Hatası C3619
-bir şablon yönetilen veya WinRT içinde bildirilemez türü  
-  
-Sınıf şablonları verilmez yönetilen veya WinRT sınıf veya arabirim.  
-  
-C3619 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.  
+
+bir şablonu yönetilen veya WinRT içinde bildirilemez türü
+
+Sınıf şablonlarının izin verilmez yönetilen veya WinRT sınıfı veya arabirim.
+
+C3619 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.

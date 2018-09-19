@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f87b8ce4c8270b8f0d22c2396358e8e1118a4bbd
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 57bd79e1df35f650d78da3108137d58405b33f25
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765063"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082020"
 ---
 # <a name="c-string-literals"></a>C Dize Değişmez Değerleri
 
@@ -29,17 +29,11 @@ Bir "dize sabit değeri" kaynak karakter çift tırnak işaretleri içindeki kar
 
 ## <a name="syntax"></a>Sözdizimi
 
-*dize sabit değeri*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**"** *s karakter dizisi*<sub>iyileştirilmiş</sub> **"**  
-&nbsp;&nbsp;&nbsp;&nbsp;**L"** *s karakter dizisi*<sub>iyileştirilmiş</sub> **"**
+*dize sabit değeri*: &nbsp; &nbsp; &nbsp; &nbsp; **"** *s karakter dizisi*<sub>iyileştirilmiş</sub> **"**  &nbsp; &nbsp; &nbsp; &nbsp; **L "** *s karakter dizisi*<sub>iyileştirilmiş</sub> **"**
 
-*s karakter dizisi*:  
-&nbsp;&nbsp;&nbsp;&nbsp;*s char*  
-&nbsp;&nbsp;&nbsp;&nbsp;*s karakter dizisi* *s char*
+*s karakter dizisi*: &nbsp; &nbsp; &nbsp; &nbsp; *s char* &nbsp; &nbsp; &nbsp; &nbsp;  *s karakter dizisi* *s char*
 
-*s char*:  
-&nbsp;&nbsp;&nbsp;&nbsp;herhangi bir üyesi kaynak karakter kümesi çift tırnak işareti dışında ("), ters eğik çizgi (\\), veya yeni satır karakteri  
-&nbsp;&nbsp;&nbsp;&nbsp;*kaçış sırası*
+*s char*: &nbsp; &nbsp; &nbsp; &nbsp;herhangi bir üyesi kaynak karakter kümesi çift tırnak işareti dışında ("), ters eğik çizgi (\\), veya yeni satır karakteri &nbsp; &nbsp; &nbsp; &nbsp; *kaçış sırası*
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -53,4 +47,4 @@ Tüm çıkış kodları listelenir [kaçış dizileri](../c-language/escape-sequ
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[C Öğeleri](../c-language/elements-of-c.md)  
+[C Öğeleri](../c-language/elements-of-c.md)

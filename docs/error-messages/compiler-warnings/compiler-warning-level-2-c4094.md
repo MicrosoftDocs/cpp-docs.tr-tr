@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9deae6a0e21fcb7dd4f09de07e65445dc9595932
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2b9317cbc31ef8bddb14da11af1087a148fd3188
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290510"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078718"
 ---
 # <a name="compiler-warning-level-2-c4094"></a>Derleyici Uyarısı (Düzey 2) C4094
-Etiketlenmemiş 'belirteci' simge bildirilen  
-  
- Derleyici etiketlenmemiş yapısı, UNION veya sınıfı kullanarak boş bir bildirimi algıladı. Bildirim göz ardı edilir.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4094.cpp  
-// compile with: /W2  
-struct  
-{  
-};   // C4094  
-  
-int main()  
-{  
-}  
-```  
-  
- Bu koşul ANSI Uyumluluğu altında bir hata oluşturur ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
+
+Etiketlenmemiş 'belirteci' hiçbir simge bildirimi yapmadı
+
+Derleyici bir etiketlenmemiş yapı, birlik veya kullanarak boş bir bildirim algıladı. Bildirim yok sayılır.
+
+## <a name="example"></a>Örnek
+
+```
+// C4094.cpp
+// compile with: /W2
+struct
+{
+};   // C4094
+
+int main()
+{
+}
+```
+
+Bu durum, ANSI Uyumluluğu altında bir hata oluşturur ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
