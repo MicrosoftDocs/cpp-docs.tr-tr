@@ -16,48 +16,51 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4030ea3c82c1a893ebf35903d3fbc362c594282
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b560ef96c4fadcb7c5ce57ece13647032ca9e902
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33164744"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118758"
 ---
 # <a name="compiler-error-c2004"></a>Derleyici Hatası C2004
-Beklenen 'defined(id)'  
-  
- Tanımlayıcı önişlemci anahtar sözcüğü parantez içinde yer almalıdır.  
-  
- Bu hata için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucunda da oluşturulabilir: eksik parantez içine önişlemci yönergesi. Önişlemci yönergesi kapatma parantezi yoksa, derleyici bir hata oluşturur.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2004 oluşturur:  
-  
-```  
-// C2004.cpp  
-// compile with: /DDEBUG  
-#include <stdio.h>  
-  
-int main()   
-{  
-    #if defined(DEBUG   // C2004  
-        printf_s("DEBUG defined\n");  
-    #endif  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- Olası çözüm:  
-  
-```  
-// C2004b.cpp  
-// compile with: /DDEBUG  
-#include <stdio.h>  
-  
-int main()   
-{  
-    #if defined(DEBUG)  
-        printf_s("DEBUG defined\n");  
-    #endif  
-}  
+
+'defined(id)' bekleniyor
+
+Bir tanımlayıcının önişlemci anahtar sözcüğünü izleyen parantez içinde görünmesi gerekir.
+
+Bu hata için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucu olarak da oluşturulabilir: önişlemci yönergesi parantezin eksik olması. Bir ön işlemci yönergesinden kaynaklandığından eksik kapatma parantezi ise, derleyici bir hata oluşturur.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2004 oluşturur:
+
+```
+// C2004.cpp
+// compile with: /DDEBUG
+#include <stdio.h>
+
+int main()
+{
+    #if defined(DEBUG   // C2004
+        printf_s("DEBUG defined\n");
+    #endif
+}
+```
+
+## <a name="example"></a>Örnek
+
+Olası çözüm:
+
+```
+// C2004b.cpp
+// compile with: /DDEBUG
+#include <stdio.h>
+
+int main()
+{
+    #if defined(DEBUG)
+        printf_s("DEBUG defined\n");
+    #endif
+}
 ```

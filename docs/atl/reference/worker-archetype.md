@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13f34f7ceca5cf958e981f8390044863a07b4317
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 80bd9984afa3ce1fc6cda4e0b48cfa59e7e84b56
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767171"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118459"
 ---
 # <a name="worker-archetype"></a>Çalışan modeli
 
@@ -68,7 +68,7 @@ Bu şablon parametreleri için bu archetype uymak için sınıf bekler:
 
 Bir iş öğesini işlemek için çağrılır.
 
-```  
+```
 void Execute(
     RequestType request,  
     void* pvWorkerParam,  
@@ -77,25 +77,25 @@ void Execute(
 
 #### <a name="parameters"></a>Parametreler
 
-*İstek*  
+*İstek*<br/>
 İşlenmek üzere çalışma öğesi. İş öğesi aynı türde olan `RequestType`.
 
-*pvWorkerParam*  
+*pvWorkerParam*<br/>
 Çalışan sınıfı tarafından anlaşılan bir özel parametre. Ayrıca geçirilen `WorkerArchetype::Initialize` ve `Terminate`.
 
-*pOverlapped*  
+*pOverlapped*<br/>
 Bir işaretçi [ÇAKIŞAN](/windows/desktop/api/minwinbase/ns-minwinbase-_overlapped) yapısı üzerinde hangi iş öğelerini kuyruğa alındı sırayı oluşturmak için kullanılır.
 
 ## <a name="initialize"></a> WorkerArchetype::Initialize
 
-Tüm istekler için geçirilmeden önce alt nesne başlatmak için çağırılır `WorkerArchetype::Execute`.  
+Tüm istekler için geçirilmeden önce alt nesne başlatmak için çağırılır `WorkerArchetype::Execute`.
 ```
 BOOL Initialize(void* pvParam) throw();
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*pvParam*  
+*pvParam*<br/>
 Çalışan sınıfı tarafından anlaşılan bir özel parametre. Ayrıca geçirilen `WorkerArchetype::Terminate` ve `WorkerArchetype::Execute`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -106,8 +106,8 @@ Başarılıysa TRUE döndürün başarısız olduğunda FALSE.
 
 Çalışan sınıfı tarafından işlenen iş öğesi türü için bir typedef.
 
-```  
-typedef MyRequestType RequestType;    
+```
+typedef MyRequestType RequestType;
 ```
 
 ### <a name="remarks"></a>Açıklamalar
@@ -118,17 +118,17 @@ Bu tür, ilk parametresi olarak kullanılmalıdır `WorkerArchetype::Execute` ve
 
 Alt nesne için tüm istekleri geçildi; sonra kapatmak için çağrılan `WorkerArchetype::Execute`).
 
-``` 
+```
 void Terminate(void* pvParam) throw();
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*pvParam*  
+*pvParam*<br/>
 Çalışan sınıfı tarafından anlaşılan bir özel parametre. Ayrıca geçirilen `WorkerArchetype::Initialize` ve `WorkerArchetype::Execute`.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kavramları](../../atl/active-template-library-atl-concepts.md)   
+[Kavramları](../../atl/active-template-library-atl-concepts.md)<br/>
 [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)
 

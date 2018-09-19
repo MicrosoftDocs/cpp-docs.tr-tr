@@ -16,43 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b84d2976e31d5cc3a9b6547d0c4b02a61327ce0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cb83700bf8ca79960599d85ed3d335f80c9fc7f2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33270444"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117757"
 ---
 # <a name="compiler-warning-c4485"></a>Derleyici Uyarısı C4485
-'override_function': temel ref sınıf yöntemi 'base_class_function' ile eşleşir, ancak işaretlenen 'Yeni' veya 'override'; 'Yeni' (ve 'sanal') kabul edilir  
-  
- Erişimci, ile veya olmadan geçersiz kılmaları `virtual` anahtar sözcük, bir taban sınıf erişimci işlevi ancak `override` veya `new` tanımlayıcısı geçersiz kılma işlev imzası parçası değil. Ekleme `new` veya `override` bu uyarıyı çözümlemek için tanımlayıcısı.  
-  
- Bkz: [geçersiz kılma](../../windows/override-cpp-component-extensions.md) ve [yeni (vtable'de yeni yuva)](../../windows/new-new-slot-in-vtable-cpp-component-extensions.md) daha fazla bilgi için.  
-  
- C4485 her zaman hata olarak verilir. Kullanım [uyarı](../../preprocessor/warning.md) C4485 gizlemek için pragması.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4485 oluşturur  
-  
-```  
-// C4485.cpp  
-// compile with: /clr  
-delegate void Del();  
-  
-ref struct A {  
-   virtual event Del ^E;  
-};  
-  
-ref struct B : A {  
-   virtual event Del ^E;   // C4485  
-};  
-  
-ref struct C : B {  
-   virtual event Del ^E {  
-      void raise() override {}  
-      void add(Del ^) override {}  
-      void remove(Del^) override {}  
-   }  
-};  
+
+'override_function': taban başvuru sınıfı yöntemiyle 'base_class_function' eşleşiyor, ancak işaretlenen 'new' veya 'override'; 'new' (ve 'virtual') varsayıldı
+
+Erişimci, ile veya olmadan geçersiz kılmalar `virtual` anahtar sözcüğü, bir temel sınıf erişimci işlevi ancak `override` veya `new` tanımlayıcısı geçersiz kılma işlevi imzasının bir parçası değildi. Ekleme `new` veya `override` bu uyarıyı çözmek için tanımlayıcısı.
+
+Bkz: [geçersiz kılma](../../windows/override-cpp-component-extensions.md) ve [yeni (vtable'da yeni yuva)](../../windows/new-new-slot-in-vtable-cpp-component-extensions.md) daha fazla bilgi için.
+
+C4485 her zaman hata olarak verilir. Kullanım [uyarı](../../preprocessor/warning.md) C4485 bastırmak için pragması.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek C4485 oluşturur
+
+```
+// C4485.cpp
+// compile with: /clr
+delegate void Del();
+
+ref struct A {
+   virtual event Del ^E;
+};
+
+ref struct B : A {
+   virtual event Del ^E;   // C4485
+};
+
+ref struct C : B {
+   virtual event Del ^E {
+      void raise() override {}
+      void add(Del ^) override {}
+      void remove(Del^) override {}
+   }
+};
 ```

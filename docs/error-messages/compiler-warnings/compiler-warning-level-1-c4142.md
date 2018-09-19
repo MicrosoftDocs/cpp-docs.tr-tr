@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c87b7689cf11ab28c1a6377ff85e1594fd1b5fc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 011f71c1d57f03c2be9bac3df67cd0ed90aa8017
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33284439"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117393"
 ---
 # <a name="compiler-warning-level-1-c4142"></a>Derleyici Uyarısı (düzey 1) C4142
-türü zararsız yeniden tanımlama  
-  
- Oluşturulan kod üzerinde hiçbir etkisi olmaz bir şekilde bir tür tanımlandı.  
-  
- Aşağıdaki olası nedenleri kontrol ederek düzeltmek için:  
-  
--   Üye işlevi türetilmiş bir sınıfın temel sınıfın karşılık gelen üye işlevden farklı dönüş türü olan.  
-  
--   İle tanımlanan bir türü `typedef` komutu yeniden tanımlandı farklı söz dizimini kullanarak.  
-  
- Aşağıdaki örnek C4142 oluşturur:  
-  
-```  
-// C4142.c  
-// compile with: /W1  
-float X2;  
-X2 = 2.0 + 1.0;   // C4142  
-  
-int main() {  
-   float X2;  
-   X2 = 2.0 + 1.0;   // OK  
-}  
+
+tür zararsız olarak yeniden tanımlanması
+
+Bir tür, oluşturulan kod üzerinde hiçbir etkisi bir şekilde tanımlandı.
+
+Aşağıdaki olası nedenleri kontrol ederek düzeltmek için:
+
+- Türetilmiş bir sınıfın üye işlevi, temel sınıfın farklı dönüş türü karşılık gelen bir üye işlevi olan.
+
+- İle tanımlanan bir tür `typedef` komutu yeniden farklı söz dizimini kullanarak.
+
+Aşağıdaki örnek, C4142 oluşturur:
+
+```
+// C4142.c
+// compile with: /W1
+float X2;
+X2 = 2.0 + 1.0;   // C4142
+
+int main() {
+   float X2;
+   X2 = 2.0 + 1.0;   // OK
+}
 ```

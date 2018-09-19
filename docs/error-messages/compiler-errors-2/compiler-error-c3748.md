@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de3d943db70b0e13b727f9c3e680f6cccc7f446e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 31b2d0434ec48f0c1d7ecf767ce2746e2c603401
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274059"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116860"
 ---
 # <a name="compiler-error-c3748"></a>Derleyici Hatası C3748
-'arabirimi': yönetilen arabirimleri olayları değil yangın  
-  
- [__Event](../../cpp/event.md) anahtar sözcüğü bir arabirim içinde yer alamaz.  
-  
- Aşağıdaki örnek C3748 oluşturur:  
-  
-```  
-// C3748.cpp  
-__interface I {  
-// try the following line instead  
-// struct I {  
-   __event void f();   // C3748  
-};  
-  
-int main() {  
-}  
+
+'interface': yönetilen arabirimler olay başlatamaz
+
+[__Event](../../cpp/event.md) anahtar sözcüğü, bir arabirim içinde bulunamaz.
+
+Aşağıdaki örnek, C3748 oluşturur:
+
+```
+// C3748.cpp
+__interface I {
+// try the following line instead
+// struct I {
+   __event void f();   // C3748
+};
+
+int main() {
+}
 ```

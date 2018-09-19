@@ -31,14 +31,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 16ced0ce1d6c5531b7210231315f001cda4c0bc4
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 58e9d70079dce96153076b03acc1aeca87c50433
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337219"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136213"
 ---
 # <a name="cxmlaccessor-class"></a>CXMLAccessor Sınıfı
+
 Veri deposunun şeması (temelindeki) olanağıyla olduğunda dize verileri veri kaynaklarına erişim sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -48,7 +49,8 @@ class CXMLAccessor : public CDynamicStringAccessorW
 ```  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Üst bilgi**: atldbcli.h  
+
+**Üst bilgi**: atldbcli.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -60,16 +62,19 @@ class CXMLAccessor : public CDynamicStringAccessorW
 |[GetXMLRowData](#getxmlrowdata)|Bir tablonun tüm içeriğini satırlara göre alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Ancak, `CXMLAccessor` farklıdır `CDynamicStringAccessorW` içeren XML biçimli (etiketli) veri veri deposundan erişilen tüm verileri dönüştürür. Bu çıkış XML kullanan Web sayfaları için özellikle kullanışlıdır. XML etiket adları veri deposunun sütun adları mümkün olduğunca yakın eşleşir.  
+
+Ancak, `CXMLAccessor` farklıdır `CDynamicStringAccessorW` içeren XML biçimli (etiketli) veri veri deposundan erişilen tüm verileri dönüştürür. Bu çıkış XML kullanan Web sayfaları için özellikle kullanışlıdır. XML etiket adları veri deposunun sütun adları mümkün olduğunca yakın eşleşir.  
   
- Kullanım `CDynamicAccessor` sütun bilgisi edinmek için. Erişimci çalışma zamanında dinamik olarak oluşturmak için bu sütun bilgileri kullanın.  
+Kullanım `CDynamicAccessor` sütun bilgisi edinmek için. Erişimci çalışma zamanında dinamik olarak oluşturmak için bu sütun bilgileri kullanın.  
   
- Sütun bilgisi oluşturulur ve bu sınıf tarafından yönetilen bir arabellek depolanır. Sütun bilgileri kullanarak elde [GetXMLColumnData](#getxmlcolumndata) veya sütun verileri kullanarak satır elde [GetXMLRowData](#getxmlrowdata).  
+Sütun bilgisi oluşturulur ve bu sınıf tarafından yönetilen bir arabellek depolanır. Sütun bilgileri kullanarak elde [GetXMLColumnData](#getxmlcolumndata) veya sütun verileri kullanarak satır elde [GetXMLRowData](#getxmlrowdata).  
   
 ## <a name="example"></a>Örnek  
- [!code-cpp[NVC_OLEDB_Consumer#14](../../data/oledb/codesnippet/cpp/cxmlaccessor-class_1.cpp)]  
+
+[!code-cpp[NVC_OLEDB_Consumer#14](../../data/oledb/codesnippet/cpp/cxmlaccessor-class_1.cpp)]  
 
 ## <a name="getxmlcolumndata"></a> CXMLAccessor::GetXMLColumnData
+
 Sütunu örneğe göre olarak XML biçimli dize verileri, bir tablonun sütun türü bilgisini alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -79,22 +84,26 @@ HRESULT GetXMLColumnData(CSimpleStringW& strOutput) throw();
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *strOutput*  
- [out] Alınacak sütun türü bilgilerini içeren bir dize arabelleğine başvuru. Dize veri deposunun sütun adları eşleşen XML etiket adları ile biçimlendirilir.  
+
+*strOutput*<br/>
+[out] Alınacak sütun türü bilgilerini içeren bir dize arabelleğine başvuru. Dize veri deposunun sütun adları eşleşen XML etiket adları ile biçimlendirilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart HRESULT değerlerinden biri.  
+
+Standart HRESULT değerlerinden biri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Aşağıdaki XML sütun türü bilgisini nasıl biçimlendirildiğini gösterir. `type` sütunun veri türünü belirtir. OLE DB veri türlerini, erişilen veritabanı, veri türleri temel unutmayın.  
+
+Aşağıdaki XML sütun türü bilgisini nasıl biçimlendirildiğini gösterir. `type` sütunun veri türünü belirtir. OLE DB veri türlerini, erişilen veritabanı, veri türleri temel unutmayın.  
   
- `<columninfo>`  
+`<columninfo>`  
   
- `<column type = I2/> ColumnName`  
+`<column type = I2/> ColumnName`  
   
- `</columninfo>` 
+`</columninfo>` 
 
 ## <a name="getxmlrowdata"></a> CXMLAccessor::GetXMLRowData
+
 Tüm içeriğini tablo XML biçimli dize verileri, satır alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -105,31 +114,35 @@ HRESULT GetXMLRowData(CSimpleStringW& strOutput,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *strOutput*  
- [out] Alınacak tablo verilerini içeren bir arabelleği başvuru. Veriler, dize verileri veri deposunun sütun adlarının eşleşmesi XML etiket adlarına sahip olarak biçimlendirilir.  
+
+*strOutput*<br/>
+[out] Alınacak tablo verilerini içeren bir arabelleği başvuru. Veriler, dize verileri veri deposunun sütun adlarının eşleşmesi XML etiket adlarına sahip olarak biçimlendirilir.  
   
- *bAppend*  
- [in] Bir dize çıktı verilerini sonuna belirten bir Boole değeri.  
+*bAppend*<br/>
+[in] Bir dize çıktı verilerini sonuna belirten bir Boole değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart HRESULT değerlerinden biri.  
+
+Standart HRESULT değerlerinden biri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Aşağıdaki XML'de biçimlendirilmiş satır verileri nasıl gösterir. `DATA` Aşağıdaki satır verisini temsil eder. Kullanmak istediğiniz satıra taşımak için yöntemleri taşıyın.  
+
+Aşağıdaki XML'de biçimlendirilmiş satır verileri nasıl gösterir. `DATA` Aşağıdaki satır verisini temsil eder. Kullanmak istediğiniz satıra taşımak için yöntemleri taşıyın.  
   
- `<row>`  
+`<row>`  
   
- `<column name>DATA</column name>`  
+`<column name>DATA</column name>`  
   
- `</row>`   
+`</row>`   
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Tüketici Şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)   
- [CAccessor sınıfı](../../data/oledb/caccessor-class.md)   
- [CDynamicAccessor sınıfı](../../data/oledb/cdynamicaccessor-class.md)   
- [CDynamicParameterAccessor sınıfı](../../data/oledb/cdynamicparameteraccessor-class.md)   
- [CDynamicStringAccessor sınıfı](../../data/oledb/cdynamicstringaccessor-class.md)   
- [CDynamicStringAccessorA sınıfı](../../data/oledb/cdynamicstringaccessora-class.md)   
- [CDynamicStringAccessorW sınıfı](../../data/oledb/cdynamicstringaccessorw-class.md)   
- [CManualAccessor Sınıfı](../../data/oledb/cmanualaccessor-class.md)
+
+[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
+[CAccessor Sınıfı](../../data/oledb/caccessor-class.md)<br/>
+[CDynamicAccessor Sınıfı](../../data/oledb/cdynamicaccessor-class.md)<br/>
+[CDynamicParameterAccessor Sınıfı](../../data/oledb/cdynamicparameteraccessor-class.md)<br/>
+[CDynamicStringAccessor Sınıfı](../../data/oledb/cdynamicstringaccessor-class.md)<br/>
+[CDynamicStringAccessorA Sınıfı](../../data/oledb/cdynamicstringaccessora-class.md)<br/>
+[CDynamicStringAccessorW Sınıfı](../../data/oledb/cdynamicstringaccessorw-class.md)<br/>
+[CManualAccessor Sınıfı](../../data/oledb/cmanualaccessor-class.md)

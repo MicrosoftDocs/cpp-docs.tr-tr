@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af9c0f90c507eebe212a9c3cbfb2f2d21cded43d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a1038ee86f76789451565ab6799795c851c95a95
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320801"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118342"
 ---
 # <a name="nmake-warning-u4011"></a>NMAKE Uyarısı U4011
-'target': tüm bağımlıları kullanılabilir; Hedef oluşturulmadı  
-  
- Verilen hedef bağımlı yoktu veya güncel değil ve bağımlı güncelleştirmek için bir komutu sıfır olmayan çıkış kodu döndürdü. / K seçeneği NMAKE derleme ilgisiz bölümlerini işleme devam etmek ve NMAKE oturum tamamlandığında, çıkış kodu 1 vermek için söylediniz.  
-  
- Bu uyarı uyarı tarafından öncesinde [U4010](../../error-messages/tool-errors/nmake-warning-u4010.md) oluşturulamadı veya başarısız her bağımlı için.
+
+'target': kullanılabilir; tüm bağımlılıklar Hedef oluşturulmadı
+
+Bağımlı bir belirli hedef yoktu veya güncel olmayan ve bağımlı güncelleştirmek için bir komutu bir sıfır olmayan çıkış kodu döndürdü. NMAKE derleme ilgisiz bölümleri işleme devam etmek ve NMAKE oturumu sona erdiğinde bir çıkış kodu 1 verecek /K seçeneği söyledik.
+
+Bu uyarı, uyarı tarafından öncesinde [U4010](../../error-messages/tool-errors/nmake-warning-u4010.md) için oluşturulacak veya güncelleştirilecek için başarısız olan her bağımlı.

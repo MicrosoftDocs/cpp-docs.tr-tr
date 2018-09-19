@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ea024475f824745ac8f99a957b5a75f9f4db22c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4b9c82f1d9b4b1a46d134b94842fffe56f457afa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754805"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118647"
 ---
 # <a name="ccomsafedeletecriticalsection-class"></a>CComSafeDeleteCriticalSection sınıfı
 
@@ -164,5 +164,5 @@ Bu yöntem olsa bile iç çağrılması güvenlidir `CRITICAL_SECTION` nesnesi g
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComCriticalSection sınıfı](../../atl/reference/ccomcriticalsection-class.md)   
+[CComCriticalSection Sınıfı](../../atl/reference/ccomcriticalsection-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

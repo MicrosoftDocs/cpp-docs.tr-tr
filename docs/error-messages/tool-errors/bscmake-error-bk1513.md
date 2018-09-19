@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93664a1224b85ec808805da0172aec408e875bc9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f68f49ce11c95672abd40ecbaf1873a564a3912e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295746"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118810"
 ---
 # <a name="bscmake-error-bk1513"></a>BSCMAKE Hatası BK1513
-nonincremental güncelleştirme tüm gerektirir. SBR dosyaları  
-  
- Bir veya daha fazla .sbr dosyaları kesilmiş olduğundan BSCMAKE yeni bir göz atma bilgi (.bsc) dosyası oluşturulamıyor. Kesilmiş .sbr dosyaları adlarını bulmak için okuma [BK4502](../../error-messages/tool-errors/bscmake-warning-bk4502.md) bu hatayı eşlik uyarıları.  
-  
- BSCMAKE .bsc dosyasını kesilmiş .sbr dosyası ile güncelleştirebilirsiniz, ancak yeni bir tane oluşturamaz. BSCMAKE aşağıdaki nedenlerle yeni .bsc dosyası derleme:  
-  
--   .Bsc dosyası eksik.  
-  
--   .BSC dosyası için belirtilen yanlış bir dosya adı.  
-  
--   Bozuk .bsc dosyası.  
-  
- Bu sorunu gidermek için yeniden oluşturma ve kesilmiş .sbr dosyaları silin veya çözümü temizleyin ve yeniden derleyin. (IDE içinde seçin **yapı**, **temiz çözüm**ve ardından **yapı**, **çözümü yeniden derle**.)
+
+Artımlı olmayan güncelleştirme tüm gerektirir. SBR dosyaları
+
+Bir veya daha fazla .sbr dosyaları kesildi için yeni bir gözatma bilgisi (.bsc) dosyası BSCMAKE oluşturamaz. Kesilen .sbr dosyaları adlarını bulmak için okuma [BK4502](../../error-messages/tool-errors/bscmake-warning-bk4502.md) bu hata ile birlikte gelen uyarıları.
+
+BSCMAKE .bsc dosyasını bir kesilen .sbr dosyası ile güncelleştirebilir ancak yeni bir derleme başlatılamıyor. BSCMAKE aşağıdaki nedenlerle yeni .bsc dosyası derleme:
+
+- .Bsc dosyası eksik.
+
+- .BSC dosyası için belirtilen yanlış dosya adı.
+
+- Bozuk .bsc dosyası.
+
+Bu sorunu çözmek için kesilen .sbr dosyalarını ve yeniden oluşturun, silin veya çözümü Temizle ve yeniden oluşturun. (IDE'de seçin **derleme**, **çözümü Temizle**ve ardından **derleme**, **çözümü yeniden derle**.)

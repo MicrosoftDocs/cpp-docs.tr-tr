@@ -14,15 +14,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d910c24551c8ec47d41f5bd7a3a702853ea17ea
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 9ddbf5b7f354ed7d18f28290482b9ca2673d639a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39465086"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117653"
 ---
 # <a name="variantt-member-functions"></a>_variant_t Üye İşlevleri
-Hakkında bilgi için **_variant_t** üye işlevleri [_variant_t sınıfı](../cpp/variant-t-class.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [_variant_t Sınıfı](../cpp/variant-t-class.md)
+
+Hakkında bilgi için **_variant_t** üye işlevleri [_variant_t sınıfı](../cpp/variant-t-class.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[_variant_t Sınıfı](../cpp/variant-t-class.md)

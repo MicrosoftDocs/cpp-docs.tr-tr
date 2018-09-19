@@ -16,51 +16,52 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdd192ad130a1a1cc1aa96bd8e423b01554b0720
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 117cd6d34ca25aebcfa392efcd95940891491e70
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33279510"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118213"
 ---
 # <a name="compiler-warning-level-1-c4620"></a>Derleyici Uyarısı (düzey 1) C4620
-hiçbir sonek biçiminde ' işleci ++' türü 'type' öneki formunu kullanarak, bulundu  
-  
- Belirtilen tür için tanımlı hiçbir sonek artırma işlecinin yoktur. Derleyici aşırı yüklenmiş önek işleci kullanılır.  
-  
- Bu uyarı bir sonek tanımlayarak önlenebilir `++` işleci. İki bağımsız değişken sürümünü Oluştur `++` aşağıda gösterildiği gibi işleci:  
-  
-```  
-// C4620.cpp  
-// compile with: /W1  
-class A  
-{  
-public:  
-   A(int nData) : m_nData(nData)  
-   {  
-   }  
-  
-   A operator++()  
-   {  
-      m_nData -= 1;  
-      return *this;  
-   }  
-  
-   // A operator++(int)  
-   // {  
-   //    A tmp = *this;  
-   //    m_nData -= 1;  
-   //    return tmp;  
-   // }  
-  
-private:  
-   int m_nData;  
-};  
-  
-int main()  
-{  
-   A a(10);  
-   ++a;  
-   a++;   // C4620  
-}  
+
+hiçbir sonek biçimi ' operator ++' 'type' önek biçimi kullanılıyor, türü için bulunamadı
+
+Verilen tür için tanımlanmış herhangi bir sonek artırma işlecini yoktur. Derleyici, aşırı yüklenmiş bir önek işleci kullanılır.
+
+Bu uyarı, bir sonek tanımlayarak önlenebilir `++` işleci. İki bağımsız değişkenli sürümü oluşturma `++` burada gösterildiği gibi işleç:
+
+```
+// C4620.cpp
+// compile with: /W1
+class A
+{
+public:
+   A(int nData) : m_nData(nData)
+   {
+   }
+
+   A operator++()
+   {
+      m_nData -= 1;
+      return *this;
+   }
+
+   // A operator++(int)
+   // {
+   //    A tmp = *this;
+   //    m_nData -= 1;
+   //    return tmp;
+   // }
+
+private:
+   int m_nData;
+};
+
+int main()
+{
+   A a(10);
+   ++a;
+   a++;   // C4620
+}
 ```

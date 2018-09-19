@@ -17,15 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fed38adbad5289e2693c10f2852247d3ec5f3951
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 884b96ac7f7cf35cd4e6bf19c4b1e9424299a87f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32386858"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118422"
 ---
 # <a name="storage-of-arrays"></a>Dizileri Depolama
-Bir dizi türü ile ilişkilendirilmiş olan depolama, tüm alt öğeleri için gerekli olan depolamadır. Bir dizinin öğeleri, ilk öğeden son öğeye kadar bitişik ve artan bellek konumlarında depolanır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Dizi Bildirimleri](../c-language/array-declarations.md)
+
+Bir dizi türü ile ilişkilendirilmiş olan depolama, tüm alt öğeleri için gerekli olan depolamadır. Bir dizinin öğeleri, ilk öğeden son öğeye kadar bitişik ve artan bellek konumlarında depolanır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Dizi Bildirimleri](../c-language/array-declarations.md)

@@ -26,15 +26,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a37b6d3dce5d41578999aa54c8dff2dd2271fe9e
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 46073d07cbca27256ca169ab94e0fe027bf98b15
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692645"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118862"
 ---
 # <a name="join-class"></a>join Sınıfı
-A `join` ileti bloğu bir tek-hedef, çok kaynaklı, sıralı `propagator_block` bir araya getiren birlikte türden iletileri `T` her kaynaklarının.  
+A `join` ileti bloğu tek-hedef birden çok kaynak, sıralı `propagator_block` bir araya getiren birlikte türden iletileri `T` her kaynakları.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,11 +46,11 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 ```   
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- İletilerin yükü türünü alanına katılmış ve bloğu tarafından yayılır.  
+*T*<br/>
+İletileri yük türü alanına ve blok tarafından yayılır.  
   
- `_Jtype`  
- Türü, `join` ya da bu olduğu blok `greedy` veya `non_greedy`  
+*_Jtype*<br/>
+Tür, `join` ya da bu, blok `greedy` veya `non_greedy`  
   
 ## <a name="members"></a>Üyeler  
   
@@ -58,24 +58,24 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Birleştirme](#ctor)|Fazla Yüklendi. Oluşturan bir `join` ileti bloğu.|  
-|[~join Destructor](#dtor)|Bozar `join` bloğu.|  
+|[Katılın](#ctor)|Fazla Yüklendi. Oluşturur bir `join` ileti bloğu.|  
+|[~join Destructor](#dtor)|Yok eder `join` blok.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[accept_message](#accept_message)|Bu tarafından sunulan bir iletiyi kabul `join` çağırana sahipliğini aktarma ileti bloğu.|  
-|[consume_message](#consume_message)|Daha önce tarafından sunulan bir ileti tüketir `join` blok Mesajlaşma ve çağırana sahipliğini aktarma hedef tarafından ayrılmış.|  
-|[link_target_notification](#link_target_notification)|Yeni bir hedef için bağlayana olduğunu bildiren bir geri çağırma `join` ileti bloğu.|  
-|[propagate_message](#propagate_message)|Zaman uyumsuz olarak bir iletiden geçirmeden bir `ISource` bu bloğuna `join` ileti bloğu. Tarafından çağrılan `propagate` kaynak bloğu tarafından çağrıldığında yöntemi.|  
-|[propagate_to_any_targets](#propagate_to_any_targets)|Tüm bir ileti yayılan her kaynaktan gelen bir giriş iletisi içeren bir çıktı iletisi oluşturur. Her hedeflerine gönderir Bu çıktı iletisi.|  
-|[release_message](#release_message)|Bir önceki iletiyi ayırma serbest bırakır. (Geçersiz kılmaları [source_block::release_message](source-block-class.md#release_message).)|  
-|[reserve_message](#reserve_message)|Daha önce bu tarafından sunulan bir ileti ayırır `join` ileti bloğu. (Geçersiz kılmaları [source_block::reserve_message](source-block-class.md#reserve_message).)|  
-|[resume_propagation](#resume_propagation)|Bir ayırma serbest bırakıldıktan sonra yayma sürdürür. (Geçersiz kılmaları [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
+|[consume_message](#consume_message)|Daha önce tarafından sunulan iletiyi tüketir `join` blok Mesajlaşma ve çağırana sahipliğini aktarma hedefi tarafından ayrılmış.|  
+|[link_target_notification](#link_target_notification)|Yeni bir hedef için bağlandı olduğunu bildiren bir geri çağırma `join` ileti bloğu.|  
+|[propagate_message](#propagate_message)|Zaman uyumsuz olarak bir ileti geçirir bir `ISource` bu blok `join` ileti bloğu. Tarafından çağrılan `propagate` bir kaynak bloğu tarafından çağrıldığında yöntemi.|  
+|[propagate_to_any_targets](#propagate_to_any_targets)|Tüm ileti yayıldıktan her bir kaynaktan gelen bir giriş iletisi içeren bir çıkış iletisi oluşturur. Hedeflerinin her biri için gönderdiği bu çıkış iletisi.|  
+|[release_message](#release_message)|Bir önceki ileti ayırma serbest bırakır. (Geçersiz kılmaları [source_block::release_message](source-block-class.md#release_message).)|  
+|[reserve_message](#reserve_message)|Daha önce bu tarafından sunulan bir iletiyi ayırdıktan `join` ileti bloğu. (Geçersiz kılmaları [source_block::reserve_message](source-block-class.md#reserve_message).)|  
+|[resume_propagation](#resume_propagation)|Rezervasyon piyasaya sürüldükten sonra yayma sürdürür. (Geçersiz kılmaları [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [zaman uyumsuz ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).  
+ Daha fazla bilgi için [zaman uyumsuz ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [Isource](isource-class.md)  
@@ -102,33 +102,33 @@ virtual message<_OutputType>* accept_message(runtime_object_identity _MsgId);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_MsgId`  
- `runtime_object_identity` Sunulan, `message` nesnesi.  
+*_MsgId*<br/>
+`runtime_object_identity` Sunulan, `message` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi `message` çağıran şimdi sahipliği var. nesne.  
+ Bir işaretçi `message` nesne arayan sahipliğini artık sahiptir.  
   
 ##  <a name="consume_message"></a> consume_message 
 
- Daha önce tarafından sunulan bir ileti tüketir `join` blok Mesajlaşma ve çağırana sahipliğini aktarma hedef tarafından ayrılmış.  
+ Daha önce tarafından sunulan iletiyi tüketir `join` blok Mesajlaşma ve çağırana sahipliğini aktarma hedefi tarafından ayrılmış.  
   
 ```
 virtual message<_OutputType>* consume_message(runtime_object_identity _MsgId);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_MsgId`  
- `runtime_object_identity` , `message` Kullanılan nesne.  
+*_MsgId*<br/>
+`runtime_object_identity` , `message` Kullanılan nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi `message` çağıran şimdi sahipliği var. nesne.  
+ Bir işaretçi `message` nesne arayan sahipliğini artık sahiptir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Benzer şekilde `accept`, her zaman için yapılan bir çağrı tarafından öncesinde ancak `reserve`.  
+ Benzer şekilde `accept`, ancak her zaman bir çağrı tarafından öncesinde `reserve`.  
   
-##  <a name="ctor"></a> Birleştirme 
+##  <a name="ctor"></a> Katılın 
 
- Oluşturan bir `join` ileti bloğu.  
+ Oluşturur bir `join` ileti bloğu.  
   
 ```
 join(
@@ -158,26 +158,26 @@ join(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_NumInputs`  
- Bu girdi sayısı `join` blok izin verilir.  
+*_NumInputs*<br/>
+Bu girdi sayısı `join` blok izin verilir.  
   
- `_Filter`  
- Sunulan iletileri kabul edilip edilmeyeceğini belirler bir filtre işlevi.  
+*_Filtreyi*<br/>
+Sunulan iletileri kabul edilip edilmeyeceğini belirleyen bir filtre işlevi.  
   
- `_PScheduler`  
- `Scheduler` İçinde yayma görev için nesne `join` ileti bloğu zamanlandı.  
+*_PScheduler*<br/>
+`Scheduler` İçinde Yayma görevi için nesne `join` ileti bloğu zamanlandı.  
   
- `_PScheduleGroup`  
- `ScheduleGroup` İçinde yayma görev için nesne `join` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından kapsanan.  
+*_PScheduleGroup*<br/>
+`ScheduleGroup` İçinde Yayma görevi için nesne `join` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından belirtilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çalışma zamanı belirtmezseniz varsayılan Zamanlayıcısı'nı kullanıyorsa `_PScheduler` veya `_PScheduleGroup` parametreleri.  
+ Çalışma zamanı belirtmezseniz varsayılan Zamanlayıcı kullanıyorsa `_PScheduler` veya `_PScheduleGroup` parametreleri.  
   
- Türü `filter_method` functor imzaya sahip olduğu `bool (T const &)` hangi çağrılır bu tarafından `join` sunulan iletisine kabul etmelidir olup olmadığını belirlemek için ileti bloğu.  
+ Türü `filter_method` bir functor imzaya sahip olduğu `bool (T const &)` , çağrıldığında bu `join` sunulan bir iletiye kabul etmelidir olup olmadığını belirlemek için ileti bloğu.  
   
-##  <a name="dtor"></a> ~ Birleştirme 
+##  <a name="dtor"></a> ~ join 
 
- Bozar `join` bloğu.  
+ Yok eder `join` blok.  
   
 ```
 ~join();
@@ -185,7 +185,7 @@ join(
   
 ##  <a name="link_target_notification"></a> link_target_notification 
 
- Yeni bir hedef için bağlayana olduğunu bildiren bir geri çağırma `join` ileti bloğu.  
+ Yeni bir hedef için bağlandı olduğunu bildiren bir geri çağırma `join` ileti bloğu.  
   
 ```
 virtual void link_target_notification(_Inout_ ITarget<std::vector<T>> *);
@@ -193,7 +193,7 @@ virtual void link_target_notification(_Inout_ ITarget<std::vector<T>> *);
   
 ##  <a name="propagate_message"></a> propagate_message 
 
- Zaman uyumsuz olarak bir iletiden geçirmeden bir `ISource` bu bloğuna `join` ileti bloğu. Tarafından çağrılan `propagate` kaynak bloğu tarafından çağrıldığında yöntemi.  
+ Zaman uyumsuz olarak bir ileti geçirir bir `ISource` bu blok `join` ileti bloğu. Tarafından çağrılan `propagate` bir kaynak bloğu tarafından çağrıldığında yöntemi.  
   
 ```
 message_status propagate_message(
@@ -202,18 +202,18 @@ message_status propagate_message(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PMessage`  
- Bir işaretçi `message` nesnesi.  
+*_PMessage*<br/>
+Bir işaretçi `message` nesne.  
   
- `_PSource`  
- İleti sunan kaynak bloğu için bir işaretçi.  
+*_PSource*<br/>
+İletiyi sunmayı kaynak blok için işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
+ A [message_status](concurrency-namespace-enums.md) hedef iletinin yapmak karar göstergesi.  
   
 ##  <a name="propagate_to_any_targets"></a> propagate_to_any_targets 
 
- Tüm bir ileti yayılan her kaynaktan gelen bir giriş iletisi içeren bir çıktı iletisi oluşturur. Her hedeflerine gönderir Bu çıktı iletisi.  
+ Tüm ileti yayıldıktan her bir kaynaktan gelen bir giriş iletisi içeren bir çıkış iletisi oluşturur. Hedeflerinin her biri için gönderdiği bu çıkış iletisi.  
   
 ```
 void propagate_to_any_targets(_Inout_opt_ message<_OutputType> *);
@@ -221,37 +221,37 @@ void propagate_to_any_targets(_Inout_opt_ message<_OutputType> *);
   
 ##  <a name="release_message"></a> release_message 
 
- Bir önceki iletiyi ayırma serbest bırakır.  
+ Bir önceki ileti ayırma serbest bırakır.  
   
 ```
 virtual void release_message(runtime_object_identity _MsgId);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_MsgId`  
- `runtime_object_identity` , `message` Yayımlanan nesne.  
+*_MsgId*<br/>
+`runtime_object_identity` , `message` Yayımlanan nesne.  
   
 ##  <a name="reserve_message"></a> reserve_message 
 
- Daha önce bu tarafından sunulan bir ileti ayırır `join` ileti bloğu.  
+ Daha önce bu tarafından sunulan bir iletiyi ayırdıktan `join` ileti bloğu.  
   
 ```
 virtual bool reserve_message(runtime_object_identity _MsgId);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_MsgId`  
- `runtime_object_identity` Sunulan, `message` nesnesi.  
+*_MsgId*<br/>
+`runtime_object_identity` Sunulan, `message` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` İletiyi başarıyla ayrıldı, `false` Aksi takdirde.  
+ `true` iletinin başarıyla ayrıldı, `false` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sonra `reserve` çağrılır, döndürürse `true`, her iki `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.  
+ Sonra `reserve` çağrılır, döndürürse `true`, ya da `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.  
   
 ##  <a name="resume_propagation"></a> resume_propagation 
 
- Bir ayırma serbest bırakıldıktan sonra yayma sürdürür.  
+ Rezervasyon piyasaya sürüldükten sonra yayma sürdürür.  
   
 ```
 virtual void resume_propagation();
@@ -259,5 +259,5 @@ virtual void resume_propagation();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [seçenek sınıfı](choice-class.md)   
+ [choice sınıfı](choice-class.md)   
  [multitype_join Sınıfı](multitype-join-class.md)

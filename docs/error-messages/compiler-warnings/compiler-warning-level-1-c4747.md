@@ -16,39 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 203943f3741d07e278652a7032a6dcdcb305a384
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2d3eb5b83fedc7455cbf1b97119296a6eb6a1ab1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33285830"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118485"
 ---
 # <a name="compiler-warning-level-1-c4747"></a>Derleyici Uyarısı (düzey 1) C4747
-Yönetilen 'entrypoint' çağrılırken: yönetilen kod çalıştıramıyor DLL entrypoint ve DLL entrypoint ulaşıldı çağrıları dahil olmak üzere, yükleyici kilidi altında  
-  
- Derleyici MSIL için derlenmiş (olası) bir DLL giriş noktası bulunamadı.  Giriş noktası için MSIL derlenmiş DLL yüklenirken ile olası sorunları nedeniyle, MSIL DLL giriş noktası işlevine derleme kesinlikle önerilmez.  
-  
- Daha fazla bilgi için bkz: [karışık derlemeleri başlatma](../../dotnet/initialization-of-mixed-assemblies.md) ve [Bağlayıcı araçları hatası LNK1306](../../error-messages/tool-errors/linker-tools-error-lnk1306.md).  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
-1.  Modülüyle derleme değil **/CLR**.  
-  
-2.  Giriş noktası işlevi ile işaretle `#pragma unmanaged`.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4747 oluşturur.  
-  
-```  
-// C4747.cpp  
-// compile with: /clr /c /W1  
-// C4747 expected  
-#include <windows.h>  
-  
-// Uncomment the following line to resolve.  
-// #pragma unmanaged  
-  
-BOOL WINAPI DllMain(HANDLE hInstance, ULONG Command, LPVOID Reserved) {  
-   return TRUE;  
-};  
+
+Çağırma yönetilen 'giriş noktası': yönetilen kod DLL giriş noktası ve DLL giriş noktasından ulaşılan çağrılar dahil olmak üzere, yükleyici kilidi altında çalışmayabilir
+
+Derleyici, MSIL olarak derlenmiş (olası) bir DLL giriş noktası bulunamadı.  Giriş noktası MSIL olarak derlenmiş bir DLL yükleme ile ilgili olası sorunları nedeniyle MSIL DLL giriş noktası işleve derlenmesini kesinlikle önerilmez.
+
+Daha fazla bilgi için [karışık derlemeleri başlatma](../../dotnet/initialization-of-mixed-assemblies.md) ve [Bağlayıcı araçları hatası LNK1306](../../error-messages/tool-errors/linker-tools-error-lnk1306.md).
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+1. Modülüyle derlenmiyor **/CLR**.
+
+1. Giriş noktası işlevini ile işaretle `#pragma unmanaged`.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4747 oluşturur.
+
+```
+// C4747.cpp
+// compile with: /clr /c /W1
+// C4747 expected
+#include <windows.h>
+
+// Uncomment the following line to resolve.
+// #pragma unmanaged
+
+BOOL WINAPI DllMain(HANDLE hInstance, ULONG Command, LPVOID Reserved) {
+   return TRUE;
+};
 ```

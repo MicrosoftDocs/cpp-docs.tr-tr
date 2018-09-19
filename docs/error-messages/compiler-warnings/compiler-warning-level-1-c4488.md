@@ -16,48 +16,51 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a3c5fc64637d989066acfa90715c50504664231
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0d2cccedada47519ada55353cb44faab0e34cf03
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33281528"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118277"
 ---
 # <a name="compiler-warning-level-1-c4488"></a>Derleyici Uyarısı (düzey 1) C4488
-'function': 'interface_method' arabirim yöntemi uygulamak için 'anahtar sözcüğü' anahtar sözcüğü gerektirir  
-  
- Bir sınıfın tüm üyelerini doğrudan devraldığı arabirimi uygulamalıdır. Uygulanan bir üye ortak erişilebilirlik olmalıdır ve sanal olarak işaretlenmelidir.  
-  
-## <a name="example"></a>Örnek  
- C4488 uygulanan bir üye ortak değil ortaya çıkabilir. Aşağıdaki örnek C4488 oluşturur.  
-  
-```  
-// C4488.cpp  
-// compile with: /clr /c /W1 /WX  
-interface struct MyI {  
-   void f1();  
-};  
-  
-// implemented member not public  
-ref class B : MyI { virtual void f1() {} };  // C4488  
-  
-// OK  
-ref class C : MyI {  
-public:  
-   virtual void f1() {}  
-};  
-```  
-  
-## <a name="example"></a>Örnek  
- C4488 uygulanan bir üye sanal işaretlenmemiş ortaya çıkabilir. Aşağıdaki örnek C4488 oluşturur.  
-  
-```  
-// C4488_b.cpp  
-// compile with: /clr /c /W1 /WX  
-interface struct MyI {  
-   void f1();  
-};  
-  
-ref struct B : MyI { void f1() {} };   // C4488  
-ref struct C : MyI { virtual void f1() {} };   // OK  
+
+'function': 'interface_method' arabirim yöntemini uygulamak için 'anahtar sözcüğü' anahtar sözcüğünü gerektiriyor
+
+Bir sınıf tüm üyelerini doğrudan devraldığı arabirim uygulamalıdır. Uygulanan bir üye, genel erişilebilirliği olmalıdır ve sanal olarak işaretlenmelidir.
+
+## <a name="example"></a>Örnek
+
+C4488 uygulanan bir üyesi genel olmadığından ortaya çıkabilir. Aşağıdaki örnek, C4488 oluşturur.
+
+```
+// C4488.cpp
+// compile with: /clr /c /W1 /WX
+interface struct MyI {
+   void f1();
+};
+
+// implemented member not public
+ref class B : MyI { virtual void f1() {} };  // C4488
+
+// OK
+ref class C : MyI {
+public:
+   virtual void f1() {}
+};
+```
+
+## <a name="example"></a>Örnek
+
+Uygulanan bir üye sanal işaretlenmemişse C4488 ortaya çıkabilir. Aşağıdaki örnek, C4488 oluşturur.
+
+```
+// C4488_b.cpp
+// compile with: /clr /c /W1 /WX
+interface struct MyI {
+   void f1();
+};
+
+ref struct B : MyI { void f1() {} };   // C4488
+ref struct C : MyI { virtual void f1() {} };   // OK
 ```

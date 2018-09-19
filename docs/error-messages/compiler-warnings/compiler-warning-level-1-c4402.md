@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 019171730d81697676a935bf3745eb29083fe88a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 395fe8a9621923bbb4e4667921bce2540bfef8b0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274339"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118381"
 ---
 # <a name="compiler-warning-level-1-c4402"></a>Derleyici Uyarısı (düzey 1) C4402
-PTR işleci kullanmanız gerekir  
-  
- Bir tür işleneni başvurma veya satır içi derleme kodunda türüne dönüştürmeyi PTR işleci olmadan kullanılır.  
-  
- PTR işleci derleyici varsayar.
+
+PTR işleci kullanılmalıdır
+
+Bir tür işleneni, başvuru veya bir satır içi derleme kodu türüne atama PTR işleci olmadan kullanılır.
+
+Derleyici, PTR işleci varsayar.

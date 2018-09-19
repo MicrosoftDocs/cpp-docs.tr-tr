@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3face9db98fcf2fc727d2bf8713a014f28ca5ec4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b55ede76c41f4832854d1c4b4c4c4fc2793a5e71
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299474"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118875"
 ---
 # <a name="linker-tools-warning-lnk4216"></a>Bağlayıcı Araçları Uyarısı LNK4216
-Dışarı aktarılan giriş noktası girdisi  
-  
- Bir giriş noktası DLL'den dışarı aktarılmış. DLL giriş noktasını aktarılması gerekmez.
+
+Dışarı aktarılan giriş noktası girişi
+
+DLL'den dışarı bir giriş noktası. Bir DLL giriş noktası aktarılması gerekmez.

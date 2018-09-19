@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab098c240c75fa7b06c9bce73a64c61c1f46f99a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e4f3e5c112d98a3940395599c3084885dfeee149
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302314"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117549"
 ---
 # <a name="compiler-warning-level-4-c4536"></a>Derleyici Uyarısı (düzey 4) C4536
-'tür adı': tür adı meta verileri 'sınırı' karakter sınırını aşıyor  
-  
- Yönetilen tür ise, bir tür adı meta verilerde kesilecektir. Bkz: [C3180](../../error-messages/compiler-errors-2/compiler-error-c3180.md) daha fazla bilgi için.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+'type name': tür adı 'limit' karakter olan meta veri sınırını aşıyor
+
+Yönetilen bir tür ise bir tür adı meta veriler kesilecektir. Bkz: [C3180](../../error-messages/compiler-errors-2/compiler-error-c3180.md) daha fazla bilgi için.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.

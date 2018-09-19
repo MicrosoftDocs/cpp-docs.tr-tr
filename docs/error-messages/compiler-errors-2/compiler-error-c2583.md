@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae9ef120d3dba9bc3c337d02aac302fce85f3905
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3aad4a818d0c8869681f9a2f4c4ace0edb63cd02
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228320"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117536"
 ---
 # <a name="compiler-error-c2583"></a>Derleyici Hatası C2583
-'tanımlayıcısı': ' const/volatile' 'this' işaretçisini oluşturucular/için Yıkıcılar geçersiz  
-  
- Oluşturucunun ya da yıkıcı bildirilmiş `const` veya `volatile`. Bu duruma izin verilmez.  
-  
- Aşağıdaki örnek C2583 oluşturur:  
-  
-```  
-// C2583.cpp  
-// compile with: /c  
-class A {  
-public:  
-   int i;  
-   A() const;   // C2583  
-  
-   // try the following line instead  
-   // A();  
-};  
+
+'identifier': ' const/volatile' 'this' işaretçisi oluşturucular/yok ediciler için geçersizdir
+
+Bir oluşturucu veya yıkıcı bildirilen `const` veya `volatile`. Buna izin verilmez.
+
+Aşağıdaki örnek, C2583 oluşturur:
+
+```
+// C2583.cpp
+// compile with: /c
+class A {
+public:
+   int i;
+   A() const;   // C2583
+
+   // try the following line instead
+   // A();
+};
 ```

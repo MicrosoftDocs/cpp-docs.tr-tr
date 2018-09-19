@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ad4b3159eb83c6dd050bba41032a461716f556a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c0ab2e08878e2172337ef373ebcbc8a37359b85f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294238"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117679"
 ---
 # <a name="compiler-warning-level-4-c4639"></a>Derleyici Uyarısı (düzey 4) C4639
-MSXML hatası, XML belge açıklamaları işlenmeyecek. Nedeni  
-  
- Bu uyarı herhangi birçok nedenden dolayı ortaya çıkabilir.  
-  
- Bu uyarıyı çözmek için:  
-  
--   Yeniden derleyin.  
-  
--   Ortak dil çalışma zamanı yeniden yükleyerek MSXML yeniden yükleyin.  
-  
--   Düzenleyin veya uyarı ve yeniden derleyebilirsiniz neden belgelerine açıklamayı kaldırın.  
-  
- C4639 verildiğinde, tüm sonraki XML açıklama işleme devre dışıdır ve .xdc dosyası değil oluşturulur.
+
+MSXML hatası, XML belgesi açıklamaları işlenmeyecek. Nedeni
+
+Bu uyarı, bir dizi nedenden ötürü ortaya çıkabilir.
+
+Bu uyarıyı çözmek için:
+
+- Yeniden derleyin.
+
+- MSXML ortak dil çalışma zamanı yeniden yükleyerek yeniden yükleyin.
+
+- Düzenleyin veya yeniden derleyin ve uyarı neden olan belge açıklamasının kaldırın.
+
+C4639 verildiğinde, diğer tüm XML yorumu işlemleri devre dışıdır ve .xdc dosyasını oluşturulmuyor.

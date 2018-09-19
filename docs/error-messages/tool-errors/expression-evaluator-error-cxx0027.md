@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1559aa2f3fc43080841810e11ce792db8e13b95
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f728b8eb67c36c8469d1d88e9080e22cba6555d2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33303848"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118797"
 ---
 # <a name="expression-evaluator-error-cxx0027"></a>İfade Değerlendirici Hatası CXX0027
-TP addr l-değeri  
-  
- İfade sözdizimini denetleyin.  
-  
- Bu hata için CAN0027 aynıdır.
+
+TP addr l-değeri
+
+İfade sözdizimini denetleyin.
+
+Bu hata için CAN0027 aynıdır.

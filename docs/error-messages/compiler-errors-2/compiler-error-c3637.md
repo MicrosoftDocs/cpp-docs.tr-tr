@@ -16,66 +16,67 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 29ae2ddb9e55363c54451a0b30199d9ae7503f05
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 958ffc0d3aab641859b13570a94b159de80f2c7d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33263602"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117471"
 ---
 # <a name="compiler-error-c3637"></a>Derleyici Hatası C3637
-'function': arkadaş işlev tanımı bir işlev türü uzmanlaşması olamaz  
-  
- Arkadaş işlevi hatalı bir şablonu veya genel için tanımlandı.  
-  
- Aşağıdaki örnek C3637 oluşturur:  
-  
-```  
-// C3637.cpp  
-template <class T>  
-void f();  
-  
-struct S {  
-   friend void f<int>() {}   // C3637  
-};  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C3637b.cpp  
-// compile with: /c  
-template <class T>  
-void f();  
-  
-struct S {  
-   friend void f() {}  
-};  
-```  
-  
- Ayrıca C3637 genel türler kullanma ortaya çıkabilir:  
-  
-```  
-// C3637c.cpp  
-// compile with: /clr  
-  
-generic <class T>  
-void gf();  
-  
-struct S {  
-   friend void gf<int>() {}   // C3637  
-};  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C3637d.cpp  
-// compile with: /clr /c  
-generic <class T>  
-void gf();  
-  
-struct S {  
-   friend void gf() {}  
-};  
+
+'function': bir arkadaş işlev tanımı bir işlev türü özelleştirmesi olamaz
+
+Bir arkadaş işlev yanlış bir şablon veya genel olarak tanımlandı.
+
+Aşağıdaki örnek, C3637 oluşturur:
+
+```
+// C3637.cpp
+template <class T>
+void f();
+
+struct S {
+   friend void f<int>() {}   // C3637
+};
+```
+
+Olası çözüm:
+
+```
+// C3637b.cpp
+// compile with: /c
+template <class T>
+void f();
+
+struct S {
+   friend void f() {}
+};
+```
+
+C3637, genel türler kullanırken da meydana gelebilir:
+
+```
+// C3637c.cpp
+// compile with: /clr
+
+generic <class T>
+void gf();
+
+struct S {
+   friend void gf<int>() {}   // C3637
+};
+```
+
+Olası çözüm:
+
+```
+// C3637d.cpp
+// compile with: /clr /c
+generic <class T>
+void gf();
+
+struct S {
+   friend void gf() {}
+};
 ```

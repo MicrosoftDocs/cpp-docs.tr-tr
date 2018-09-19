@@ -16,57 +16,58 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2654fca05941ab8c934891a9f95375fca1a6b82
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eb79487c2b0ea4d80d72ba04663543662e4f298c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246747"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117419"
 ---
 # <a name="compiler-error-c3145"></a>Derleyici Hatası C3145
-'object': genel veya statik değişkeni yönetilemeyen veya WinRT 'type'  
-  
- Yalnızca işlev kapsamı içindeki CLR veya WinRT nesneleri tanımlayabilirsiniz.  
-  
- Aşağıdaki örnek C3145 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C3145.cpp  
-// compile with: /clr  
-using namespace System;   
-ref class G {};   
-  
-G ^ ptr;   // C3145  
-G ^ ptr2 = gcnew G;   // C3145  
-  
-ref class GlobalObjects {  
-public:  
-   static G ^ ptr;   // OK  
-   static G ^ ptr2 = gcnew G;   // OK   
-};   
-  
-int main() {  
-   G ^ ptr;   // OK  
-   G ^ ptr2 = gcnew G;   // OK  
-}  
-```  
-  
- Aşağıdaki örnek C3145 oluşturur:  
-  
-```  
-// C3145b.cpp  
-// compile with: /clr  
-ref class MyClass {  
-public:  
-   static int data;  
-};  
-  
-interior_ptr<int> p = &(MyClass::data);   // C3145  
-  
-void Test(interior_ptr<int> x) {}  
-  
-int main() {  
-   MyClass ^ h_MyClass = gcnew MyClass;  
-   interior_ptr<int> p = &(h_MyClass->data);  
-}  
-```  
+
+'object': WinRT türü 'type' ya da genel veya statik değişken yönetilmeyen
+
+Yalnızca CLR veya WinRT nesneleri işlev kapsamı içinde tanımlayabilirsiniz.
+
+Aşağıdaki örnek, C3145 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C3145.cpp
+// compile with: /clr
+using namespace System;
+ref class G {};
+
+G ^ ptr;   // C3145
+G ^ ptr2 = gcnew G;   // C3145
+
+ref class GlobalObjects {
+public:
+   static G ^ ptr;   // OK
+   static G ^ ptr2 = gcnew G;   // OK
+};
+
+int main() {
+   G ^ ptr;   // OK
+   G ^ ptr2 = gcnew G;   // OK
+}
+```
+
+Aşağıdaki örnek, C3145 oluşturur:
+
+```
+// C3145b.cpp
+// compile with: /clr
+ref class MyClass {
+public:
+   static int data;
+};
+
+interior_ptr<int> p = &(MyClass::data);   // C3145
+
+void Test(interior_ptr<int> x) {}
+
+int main() {
+   MyClass ^ h_MyClass = gcnew MyClass;
+   interior_ptr<int> p = &(h_MyClass->data);
+}
+```

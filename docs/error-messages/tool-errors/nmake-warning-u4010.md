@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc8c99bb4a9b5daf7f630771d0f240479aaf5f3a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a640245db460f4cd8cd658c097955a69a59d1fb7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316549"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117510"
 ---
 # <a name="nmake-warning-u4010"></a>NMAKE Uyarısı U4010
-'target': başarısız oldu; derleme Devam etmeden belirtilen/k...  
-  
- Belirtilen hedef için komutları bloğu içinde bir komut sıfır olmayan çıkış kodu döndürdü. / K seçeneği NMAKE derleme ilgisiz bölümlerini işleme devam etmek ve NMAKE oturum tamamlandığında, çıkış kodu 1 vermek için söylediniz.  
-  
- Verilen hedef, kendisine bağımlı başka bir hedef için ise NMAKE uyarısı sorunları [U4011](../../error-messages/tool-errors/nmake-warning-u4011.md) bu uyarı sonra.
+
+'target': derleme başarısız oldu; /K belirtildi, devam etmeden...
+
+Bir komut komutları blok için belirtilen hedef sıfır olmayan çıkış kodu döndürdü. NMAKE derleme ilgisiz bölümleri işleme devam etmek ve NMAKE oturumu sona erdiğinde bir çıkış kodu 1 verecek /K seçeneği söyledik.
+
+Kendisine bağımlı bir başka bir hedef için belirtilen hedef, ise, NMAKE uyarısı sorunları [U4011](../../error-messages/tool-errors/nmake-warning-u4011.md) bu uyarıyı sonra.

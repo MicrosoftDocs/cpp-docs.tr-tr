@@ -16,103 +16,106 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7f4e42d2e44a55c98abdcd5c3e723e2a9269a1e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c7681f78812ef33dce5bd6d7792f8158a8f35ce3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302860"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118667"
 ---
 # <a name="compiler-warning-level-4-c4754"></a>Derleyici Uyarısı (düzey 4) C4754
-Bir karşılaştırma aritmetik işlemler için dönüştürme kurallarını, tek şube yürütülemez anlamına gelir.  
-  
- Karşılaştırmanın sonucu her zaman aynı olduğundan C4754 uyarı görüntülenir. Bu, ilişkili tamsayı ifade yanlış olduğundan koşul dalları birini hiçbir zaman, büyük olasılıkla yerine getirildiğini gösterir. Bu kod hatası genellikle 64-bit mimariyi üzerinde yanlış tamsayı taşma denetimleri gerçekleşir.  
-  
- Tamsayı dönüştürme kurallarını karmaşıktır ve çoğu Zarif Tuzaklar vardır. Her C4754 uyarı düzelttikten alternatif olarak, kullanılacak kodu güncelleştirebilirsiniz [SafeInt Kitaplığı](../../windows/safeint-library.md).  
-  
-## <a name="example"></a>Örnek  
- Bu örnek C4754 oluşturur:  
-  
-```cpp  
-// C4754a.cpp  
-// Compile with: /W4 /c  
-#include "errno.h"  
-  
-int sum_overflow(unsigned long a, unsigned long b)   
-{  
-   unsigned long long x = a + b; // C4754  
-  
-   if (x > 0xFFFFFFFF)   
-   {  
-      // never executes!  
-      return EOVERFLOW;  
-   }  
-   return 0;  
-}  
-```  
-  
- Ek `a + b` sonucu bir 64-bit değerine başvurmanıza önce aritmetik taşma neden olabilir ve 64-bit değişkenine atanan `x`. Bu onay üzerinde anlamına `x` artık kullanılmamaktadır ve hiçbir zaman catch taşma olur. Bu durumda, derleyici, bu uyarıyı gösterir:  
-  
-```Output  
-Warning C4754: Conversion rules for arithmetic operations in the comparison at C4754a.cpp (7) mean that one branch cannot be executed. Cast '(a + ...)' to 'ULONG64' (or similar type of 8 bytes).  
-```  
-  
- Uyarı ortadan kaldırmak için 8-bayt değerleri için işlenen yayınlanamıyor atama deyimi değiştirebilirsiniz:  
-  
-```cpp  
-// Casting one operand is sufficient to force all the operands in   
-// the addition be upcast according to C/C++ conversion rules, but  
-// casting both is clearer.  
-unsigned long long x =   
-   (unsigned long long)a + (unsigned long long)b;  
-```  
-  
-## <a name="example"></a>Örnek  
- Sonraki örnek de C4754 oluşturur.  
-  
-```cpp  
-// C4754b.cpp  
-// Compile with: /W4 /c  
-#include "errno.h"  
-  
-int wrap_overflow(unsigned long a)   
-{  
-   if (a + sizeof(unsigned long) < a) // C4754  
-   {   
-      // never executes!  
-      return EOVERFLOW;  
-   }  
-   return 0;  
-}  
-```  
-  
- `sizeof()` İşleci döndüren bir `size_t`, büyüklüğü mimari bağımlı. Örnek kod, 32-bit mimariler çalışır burada bir `size_t` bir 32 bit türüdür. Ancak, 64 bit mimariyi üzerinde `size_t` bir 64-bit türüdür. Tamsayılara dönüştürme kurallarını anlama `a` ifadesinde bir 64-bit değerine başvurmanıza olan `a + b < a` gibi yazılmışsa `(size_t)a + (size_t)b < (size_t)a`. Zaman `a` ve `b` 32 bit tamsayı olduğunu, 64-bit ek işlemi hiçbir zaman taşabilir ve kısıtlama hiç tutar. Sonuç olarak, kodu, hiçbir zaman bir 64-bit mimariyi tamsayı taşma koşula algılar. Bu örnekte, bu uyarıyı yaymak üzere derleyici neden olur:  
-  
-```Output  
-Warning C4754: Conversion rules for arithmetic operations in the comparison at C4754b.cpp (7) mean that one branch cannot be executed. Cast '4' to 'ULONG' (or similar type of 4 bytes).  
-```  
-  
- Bildirim uyarı iletisi açıkça yerine özgün kaynak dize sabit değeri 4 listeler — zamanına göre uyarı çözümleme soruna neden olan kod karşılaştığında `sizeof(unsigned long)` zaten bir sabite dönüştürüldü. Bu nedenle, izlemek hangi kaynak ifadesinde kod uyarı iletisi sabit değer ile ilişkili çalışmıyor olabilir. C4754 uyarı iletilerini sabitler çözümlendi kodunun en yaygın kaynakları gibi ifadelerini `sizeof(TYPE)` ve `strlen(szConstantString)`.  
-  
- Bu durumda, sabit kod bu benzeyecektir:  
-  
-```cpp  
-// Casting the result of sizeof() to unsigned long ensures  
-// that all the addition operands are 32-bit, so any overflow   
-// is detected by the check.  
-if (a + (unsigned long)sizeof(unsigned long) < a)  
-  
-```  
-  
- **Not** derleyici uyarıları başvurulan satır numarası son bir deyim satırıdır. Birden çok hatları üzerinden yayılan karmaşık bir koşul deyimi hakkında bir uyarı iletisinde bildirilen satırından önce birkaç satır kod hatası olan satır olabilir. Örneğin:  
-  
-```cpp  
-unsigned long a;  
-  
-if (a + sizeof(unsigned long) < a || // incorrect check  
-    condition1() ||   
-    a == 0) {    // C4754 warning reported on this line  
-         // never executes!  
-         return INVALID_PARAMETER;  
-}  
+
+Bir karşılaştırma içindeki aritmetik işlemler için dönüştürme kuralları bir dalın yürütülemez anlamına gelir.
+
+Karşılaştırmanın sonucu her zaman aynı olduğu için C4754 uyarı verilir. Bu, ilişkili tamsayı ifade hatalı olduğu bir koşulun dalların hiçbir zaman, büyük olasılıkla yerine getirildiğini gösterir. Bu kod hatası yanlış tamsayı taşması denetimlerini 64-bit mimarilerde sıklıkla oluşuyor.
+
+Tamsayı dönüştürme kuralları karmaşıktır ve çoğu Zarif Tuzaklar vardır. Her C4754 uyarı düzeltiliyor alternatif olarak kullanmak için kodu güncelleştirebilirsiniz [SafeInt Kitaplığı](../../windows/safeint-library.md).
+
+## <a name="example"></a>Örnek
+
+Bu örnek C4754 oluşturur:
+
+```cpp
+// C4754a.cpp
+// Compile with: /W4 /c
+#include "errno.h"
+
+int sum_overflow(unsigned long a, unsigned long b)
+{
+   unsigned long long x = a + b; // C4754
+
+   if (x > 0xFFFFFFFF)
+   {
+      // never executes!
+      return EOVERFLOW;
+   }
+   return 0;
+}
+```
+
+Ayrıca `a + b` sonucu bir 64-bit değere başvurmanıza önce aritmetik taşmaya neden olabilir ve 64-bit değişkene atanan `x`. Onay üzerinde buna `x` gereksizdir ve asla taşmaya catch olur. Bu durumda derleyici bu uyarıyı gösterir:
+
+```Output
+Warning C4754: Conversion rules for arithmetic operations in the comparison at C4754a.cpp (7) mean that one branch cannot be executed. Cast '(a + ...)' to 'ULONG64' (or similar type of 8 bytes).
+```
+
+Uyarıyı ortadan kaldırmak için 8-bayt değerleri işlenenlere atanacak atama ifadesi değiştirebilirsiniz:
+
+```cpp
+// Casting one operand is sufficient to force all the operands in
+// the addition be upcast according to C/C++ conversion rules, but
+// casting both is clearer.
+unsigned long long x =
+   (unsigned long long)a + (unsigned long long)b;
+```
+
+## <a name="example"></a>Örnek
+
+Sonraki örnek, aynı zamanda C4754 oluşturur.
+
+```cpp
+// C4754b.cpp
+// Compile with: /W4 /c
+#include "errno.h"
+
+int wrap_overflow(unsigned long a)
+{
+   if (a + sizeof(unsigned long) < a) // C4754
+   {
+      // never executes!
+      return EOVERFLOW;
+   }
+   return 0;
+}
+```
+
+`sizeof()` İşleci döndürür bir `size_t`, boyutu mimari bağımlı. Örnek kod, 32-bit mimarilerde çalışır. burada bir `size_t` bir 32-bit türüdür. Ancak, 64-bit mimarilere üzerinde `size_t` bir 64-bit türüdür. Tamsayılar için dönüştürme kuralları anlamına `a` ifadesindeki bir 64-bit değere başvurmanıza olduğu `a + b < a` gibi yazılmışsa `(size_t)a + (size_t)b < (size_t)a`. Zaman `a` ve `b` 32 bit tam sayılar olduğundan, 64-bit toplama işlemi hiçbir zaman taşırabilir ve hiçbir zaman kısıtlaması tutar. Sonuç olarak, kodu asla 64-bit mimarilerde bir tamsayı taşma durumu algılar. Bu örnekte, derleyici bu uyarıyı yaymak neden olur:
+
+```Output
+Warning C4754: Conversion rules for arithmetic operations in the comparison at C4754b.cpp (7) mean that one branch cannot be executed. Cast '4' to 'ULONG' (or similar type of 4 bytes).
+```
+
+Uyarı iletisini açıkça yerine orijinal kaynak dize sabit değeri 4 göz önünde bulundurun — zaman uyarı çözümleme sorunlu kod karşılaştığında `sizeof(unsigned long)` zaten bir sabite dönüştürüldü. Bu nedenle, izlemek hangi kaynak ifadesinde kod uyarı iletisinde sabit değerle ilişkili çalışmıyor olabilir. En yaygın kaynaklardan C4754 uyarı iletilerini sabitlerle çözümlendi kod gibi ifadelerdir `sizeof(TYPE)` ve `strlen(szConstantString)`.
+
+Bu durumda, sabit kod bu benzeyecektir:
+
+```cpp
+// Casting the result of sizeof() to unsigned long ensures
+// that all the addition operands are 32-bit, so any overflow
+// is detected by the check.
+if (a + (unsigned long)sizeof(unsigned long) < a)
+
+```
+
+**Not** son satır deyiminin başvurulan Derleyici uyarılarını satır numarası değil. Çoklu satırlar üzerinde yayılan karmaşık bir koşullu deyim hakkında bir uyarı iletisinde bildirilen satırından önce birkaç satır kod hatası olan satırın olabilir. Örneğin:
+
+```cpp
+unsigned long a;
+
+if (a + sizeof(unsigned long) < a || // incorrect check
+    condition1() ||
+    a == 0) {    // C4754 warning reported on this line
+         // never executes!
+         return INVALID_PARAMETER;
+}
 ```

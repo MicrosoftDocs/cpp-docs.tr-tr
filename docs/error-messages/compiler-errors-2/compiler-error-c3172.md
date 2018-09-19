@@ -16,36 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3feadd9c8fc39edb707e8dbd3a80ed90d078d72
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 25c3b1fd9132c6b170fdf74b1619a35d83959f90
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33254382"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117646"
 ---
 # <a name="compiler-error-c3172"></a>Derleyici Hatası C3172
-'module_name': bir projede farklı idl_module öznitelikleri belirtilemez  
-  
- [idl_module](../../windows/idl-module.md) aynı özniteliklerle ancak farklı ad `dllname` veya `version` parametreleri iki bir derleme dosyalarında bulundu. Yalnızca bir benzersiz `idl_module` derlemesi başına özniteliği belirtilebilir.  
-  
- Aynı `idl_module` öznitelikleri birden fazla kaynak kodu dosyasına belirtilebilir.  
-  
- Örneğin, aşağıdaki `idl_module` öznitelikleri bulundu:  
-  
-```  
-// C3172.cpp  
-[module(name="MyMod")];  
-[ idl_module(name="x", dllname="file.dll", version="1.1") ];  
-int main() {}  
-```  
-  
- Ardından,  
-  
-```  
-// C3172b.cpp  
-// compile with: C3172.cpp  
-// C3172 expected  
-[ idl_module(name="x", dllname="file.dll", version="1.0") ];  
-```  
-  
- Derleyici C3172 oluşturur (farklı sürüm değerleri unutmayın).
+
+'module_name': bir projede farklı idl_module öznitelikleri belirtilemez
+
+[idl_module](../../windows/idl-module.md) öznitelikleri aynı ad ancak farklı `dllname` veya `version` iki derleme dosyalarında parametreler bulundu. Yalnızca bir benzersiz `idl_module` derlemesi başına özniteliği belirtilebilir.
+
+Aynı `idl_module` öznitelikleri birden fazla kaynak kodu dosyasında belirtilebilir.
+
+Örneğin, aşağıdaki `idl_module` öznitelikler bulundu:
+
+```
+// C3172.cpp
+[module(name="MyMod")];
+[ idl_module(name="x", dllname="file.dll", version="1.1") ];
+int main() {}
+```
+
+Ardından,
+
+```
+// C3172b.cpp
+// compile with: C3172.cpp
+// C3172 expected
+[ idl_module(name="x", dllname="file.dll", version="1.0") ];
+```
+
+Derleyici C3172 üretir (farklı sürümü değerlerine dikkat edin).
