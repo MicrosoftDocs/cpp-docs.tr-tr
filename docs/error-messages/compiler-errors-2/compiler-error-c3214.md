@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73141b896088ff286d4b34b3bb3e2a00c2036903
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a4ac7e1e5f07de87d19995e661520ed44fced955
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248733"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135835"
 ---
 # <a name="compiler-error-c3214"></a>Derleyici Hatası C3214
-'type': 'param' genel 'generic_type' ın genel parametresi için geçersiz tür bağımsız değişkeni kısıtlaması 'kısıtlaması' karşılamıyor  
-  
- Genel sınıfının kısıtlaması karşılamıyor genel bir sınıf için bir örnek oluşturma türü belirtildi.  
-  
- Aşağıdaki örnek C3214 oluşturur:  
-  
-```  
-// C3214.cpp  
-// compile with: /clr  
-interface struct A {};  
-  
-generic <class T>   
-where T : A  
-ref class C {};  
-  
-ref class X : public A {};  
-  
-int main() {  
-   C<int>^ c = new C<int>;   // C3214  
-   C<X ^> ^ c2 = new C<X^>;   // OK  
-}  
+
+'type': 'generic_type' genel ' param' genel parametresi için geçersiz tür bağımsız değişkeni 'kısıtlaması' kısıtlamasını karşılamıyor
+
+Türü bir genel sınıfın kısıtlamasını karşılamıyor genel bir sınıf örneğinin için belirtildi.
+
+Aşağıdaki örnek, C3214 oluşturur:
+
+```
+// C3214.cpp
+// compile with: /clr
+interface struct A {};
+
+generic <class T>
+where T : A
+ref class C {};
+
+ref class X : public A {};
+
+int main() {
+   C<int>^ c = new C<int>;   // C3214
+   C<X ^> ^ c2 = new C<X^>;   // OK
+}
 ```

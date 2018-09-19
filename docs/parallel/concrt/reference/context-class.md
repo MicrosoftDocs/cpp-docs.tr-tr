@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c21ce766ed809a93ccf617ab1f76c438ac5be829
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: a4a62f6e569e123b9612e922e2d7c70787371afc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465921"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136185"
 ---
 # <a name="context-class"></a>Bağlam Sınıfı
 Bir yürütme bağlamı için bir soyutlamayı temsil eder.  
@@ -210,8 +210,8 @@ void operator delete(void* _PObject);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PObject`  
- Silinecek nesnenin bir işaretçi.  
+*_PObject*<br/>
+Silinecek nesnenin bir işaretçi.  
   
 ##  <a name="oversubscribe"></a> Oversubscribe 
 
@@ -222,8 +222,8 @@ static void __cdecl Oversubscribe(bool _BeginOversubscription);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_BeginOversubscription`  
- Varsa `true`, aşırı abonelik süresi boyunca bir ek sanal işlemci eklenmelidir göstergesidir. Varsa `false`, gecikmeyi bitmelidir ve önceden eklenmiş sanal işlemci kaldırılmalıdır göstergesidir.  
+*_BeginOversubscription*<br/>
+Varsa `true`, aşırı abonelik süresi boyunca bir ek sanal işlemci eklenmelidir göstergesidir. Varsa `false`, gecikmeyi bitmelidir ve önceden eklenmiş sanal işlemci kaldırılmalıdır göstergesidir.  
   
 ##  <a name="schedulegroupid"></a> ScheduleGroupId 
 

@@ -242,12 +242,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db46ca389272674da215801c0da83f38e7a3ef2b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a0200f15ab7a5c97699165a34d52ec6ce1f239e5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703891"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136341"
 ---
 # <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement sınıfı
 `CMFCRibbonBaseElement` Ekleyebileceğiniz tüm öğeler için temel sınıfı bir [Şerit çubuğuna](../../mfc/reference/cmfcribbonbar-class.md). Şerit öğelerine ait örnekler olan Şerit düğmeleri, Şerit onay kutuları ve Şerit birleşik giriş kutularıdır.  
@@ -568,12 +568,11 @@ virtual void DrawImage(
  Varsayılan olarak, bu yöntemi hiçbir şey yapmaz. Türetilen bir sınıfta Şerit öğesi için resim çizmek için bu yöntemi yok sayın.  
   
  İçin olası değerler aşağıdaki tabloda *türü* parametresi:  
-  
- `RibbonImageLarge`  
- Büyük 32 x 32 piksel resim boyutu.  
-  
- `RibbonImageSmall`  
- Küçük 16 x 16 piksel resim boyutu.  
+
+|||
+|-|-|
+| `RibbonImageLarge`  | Büyük 32 x 32 piksel resim boyutu.  |
+| `RibbonImageSmall`  | Küçük 16 x 16 piksel resim boyutu.  |
   
 ##  <a name="find"></a>  CMFCRibbonBaseElement::Find  
  Geçerli nesneye işaret ediyorsa, belirtilen bir işaretçi döndürür.  

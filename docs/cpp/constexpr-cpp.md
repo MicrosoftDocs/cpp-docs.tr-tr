@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe13dbe61b0a50226f82ae8fb09ab46c922309d1
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 1b9479957fdfb4d6b92ec531941808940765a9e5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406942"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116730"
 ---
 # <a name="constexpr-c"></a>constexpr (C++)
 
@@ -40,16 +40,16 @@ constexpr ctor (params);
 
 ## <a name="parameters"></a>Parametreler
 
- *params*  
+*params*<br/>
 Değişmez değer türü olması gerekir ve kendisine gereken bir veya daha fazla parametre, sabit bir ifade olmalıdır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
- Constexpr değişken veya işlev döndürmelidir bir [değişmez değer türü](trivial-standard-layout-and-pod-types.md#literal_types).
+Constexpr değişken veya işlev döndürmelidir bir [değişmez değer türü](trivial-standard-layout-and-pod-types.md#literal_types).
 
 ## <a name="constexpr-variables"></a>constexpr değişkenlerini
 
- Const ve constexpr değişkenlerini arasındaki birincil fark, bir constexpr değişken derleme zamanında başlatılmalıdır ise, const bir değişkenin başlatılması çalışma zamanına kadar ertelenmiş ' dir.  Tüm constexpr değişkenlerini const.
+Const ve constexpr değişkenlerini arasındaki birincil fark, bir constexpr değişken derleme zamanında başlatılmalıdır ise, const bir değişkenin başlatılması çalışma zamanına kadar ertelenmiş ' dir.  Tüm constexpr değişkenlerini const.
 
 - Bir değişken ile bildirilebilir **constexpr**, değişmez değer türü olan ve başlatılır. Başlatma Oluşturucu tarafından gerçekleştirilirse, oluşturucu olarak bildirilmesi gerekir **constexpr**.
 
@@ -91,7 +91,7 @@ Constexpr işlevleri için aşağıdaki kurallar geçerlidir:
 Aşağıdaki kurallar geçerli **constexpr** işlevleri Visual Studio 2017 ve sonraki sürümler:
 
 - İçerebilir **varsa** ve **geçiş** deyimleri ve dahil tüm döngü deyimi **için**, aralığa dayalı for **sırada**ve **yapın-sırada**.
- 
+
 - Yerel değişken bildirimlerini içerebilir, ancak değişkenin başlatılması gerekir, değişmez değer türü olması gerekir ve statik veya iş parçacığı-yerel olamaz. Yerel olarak bildirilen değişken const olması gerekli değildir ve bulunmamalıdır.
 
 - Constexpr statik olmayan üye işlev örtük olarak const olması gerekli değildir.
@@ -115,7 +115,7 @@ constexpr float exp(float x, int n)
 
 ## <a name="example"></a>Örnek
 
- Aşağıdaki örnekte gösterildiği **constexpr** değişkenler, İşlevler ve kullanıcı tanımlı bir tür. Ana(), işlemdeki son deyim içinde unutmayın **constexpr** üye işlevi GetValue() olduğundan çalışma zamanı arama değeri derleme zamanında bilinen gerekli değildir.
+Aşağıdaki örnekte gösterildiği **constexpr** değişkenler, İşlevler ve kullanıcı tanımlı bir tür. Ana(), işlemdeki son deyim içinde unutmayın **constexpr** üye işlevi GetValue() olduğundan çalışma zamanı arama değeri derleme zamanında bilinen gerekli değildir.
 
 ```cpp
 #include <iostream>
@@ -189,5 +189,6 @@ int main()
 Visual Studio 2015
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Bildirimler ve Tanımlar](../cpp/declarations-and-definitions-cpp.md)  
- [const](../cpp/const-cpp.md)
+
+[Bildirimler ve Tanımlar](../cpp/declarations-and-definitions-cpp.md)<br/>
+[const](../cpp/const-cpp.md)

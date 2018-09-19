@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef417232d62c664b4943a2198ae351a5c443b089
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8fc187cea874d16522955dcd46c2ceac34d29098
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763753"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136172"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>Hata ayıklama ve hata raporlama makroları
 
@@ -97,7 +97,7 @@ ATLASSERT(booleanExpression);
 
 ### <a name="parameters"></a>Parametreler
 
-*booleanDeyimi*  
+*booleanDeyimi*<br/>
 İfade (işaretçileri dahil), sıfır ya da 0 olur.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -119,10 +119,10 @@ ATLENSURE_THROW(booleanExpression, hr);
 
 ### <a name="parameters"></a>Parametreler
 
-*booleanDeyimi*  
+*booleanDeyimi*<br/>
 Test edilecek bir Boole ifadesini belirtir.
 
-*İK*  
+*İK*<br/>
 Döndürülecek bir hata kodunu belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -155,7 +155,7 @@ ATLTRACENOTIMPL(funcname);
 
 ### <a name="parameters"></a>Parametreler
 
-*funcname*  
+*funcname*<br/>
 [in] Henüz uygulanmadı işlevinin adını içeren bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -185,16 +185,16 @@ ATLTRACE(
 
 ### <a name="parameters"></a>Parametreler
 
-*exp*  
+*exp*<br/>
 [in] Visual C++ çıkış penceresine veya bu iletiler yakalar herhangi bir uygulama göndermek için değişkenleri ve dize.
 
-*Kategori*  
+*Kategori*<br/>
 [in] Olay ya da rapora olan yöntem türü. Kategori listesi için açıklamalara bakın.
 
-*düzeyi*  
+*düzeyi*<br/>
 [in] Rapor için izleme düzeyi. Ayrıntılar için açıklamalara bakın.
 
-*lpszFormat*  
+*lpszFormat*<br/>
 [in] Döküm cihaza göndermek için biçimlendirilmiş dize.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -216,16 +216,16 @@ ATLTRACE2(
 
 ### <a name="parameters"></a>Parametreler
 
-*exp*  
+*exp*<br/>
 [in] Visual C++ çıkış penceresine veya bu iletiler yakalar herhangi bir uygulama göndermek için dize.
 
-*Kategori*  
+*Kategori*<br/>
 [in] Olay ya da rapora olan yöntem türü. Kategori listesi için açıklamalara bakın.
 
-*düzeyi*  
+*düzeyi*<br/>
 [in] Rapor için izleme düzeyi. Ayrıntılar için açıklamalara bakın.
 
-*lpszFormat*  
+*lpszFormat*<br/>
 [in] `printf`-Döküm cihaza göndermek için bir dize oluşturmak için kullanılacak biçim dizesi stili.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -295,5 +295,5 @@ ATLTRACE ve ATLTRACE2 aynı davranışa sahip, ATLTRACE geriye dönük uyumluluk
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Makroları](../../atl/reference/atl-macros.md)   
+[Makroları](../../atl/reference/atl-macros.md)<br/>
 [Hata Ayıklama ve Hata Raporlama Genel İşlevleri](../../atl/reference/debugging-and-error-reporting-global-functions.md)

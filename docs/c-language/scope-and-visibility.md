@@ -16,31 +16,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b85f0ca180fc60b1281440845289d2f2a39d71af
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b10902d44d8bc2e24a94123cc198a3b7606dac43
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389195"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136055"
 ---
 # <a name="scope-and-visibility"></a>Kapsam ve Görünürlük
-İçinde başvurulabilir program bölümlerini bir tanımlayıcının "görünürlük" belirler — "kapsamı." Bir görünür bir tanımlayıcıdır (yani, kullanılabilir), (, restrictiveness artan sırada), dosya, işlev, blok veya işlev prototipi göründüğü sınırlı bölümleri kendi "kapsam tarafından" çevrelenmiş bir programın içinde. Tanımlayıcı kapsamını adı kullanılabilir program parçasıdır. Buna bazen "sözcük kapsamı." adı verilir Kapsam dört tür vardır: işlev, dosya, blok ve işlev prototipi.  
-  
- Etiketler dışında tüm tanımlayıcılar bildirimi oluştuğu düzeyine göre belirlendiği kapsamlarına sahip. Her tür bir kapsam için aşağıdaki kuralı bir programdan tanımlayıcıların görünürlüğünü yöneten:  
-  
- Dosya kapsamı  
- Bildirimcisi veya tür belirteci dosya kapsamlı bir tanımlayıcı için herhangi bir blok veya parametrelerin listesi dışında görünür ve bildiriminden sonra çeviri birimindeki herhangi bir yerden erişilebilir. Dosya kapsamlı tanımlayıcı adları genellikle "Genel" veya "dış" adı verilir Genel bir tanımlayıcı kapsamını, tanım veya bildirimi noktasında başlar ve çeviri birim sonunda sonlandırır.  
-  
- İşlev kapsamı  
- Bir etiketi yalnızca işlev kapsamı tanımlayıcısı türüdür. Bir etiket kullanımını bir deyimi tarafından dolaylı olarak bildirildi. Etiket adları bir işlev içinde benzersiz olmalıdır. (Etiketleri ve etiket adları hakkında daha fazla bilgi için bkz: [goto ve etiketli deyimleri](../c-language/goto-and-labeled-statements-c.md).)  
-  
- Blok kapsamı  
- Bildirimcisi veya blok kapsamlı bir tanımlayıcı için tür belirteci bloğunun bir ya da bir işlev tanımı biçimsel parametresi bildirimlerinde listesi içinde görüntülenir. Bunu yalnızca kendi bildirimi veya tanımı noktasından bildirimi veya tanımını içeren blok sonuna görülebilir. Kapsamı bu bloğuna ve o bloğu içinde iç içe geçmiş herhangi bir bloğu ile sınırlıdır ve ilişkili blok kapatır kuşak sona erer. Bu tür tanımlayıcıları adlandırılan "yerel değişkenler."  
-  
- İşlev prototip kapsamı  
- Bildirimcisi veya tür belirteci işlev prototipi kapsamlı bir tanımlayıcı için bir işlev prototipi (işlev bildirimi parçası değil) parametre bildirimlerinde listesi içinde görüntülenir. Kapsamı işlevi bildirimcisi sonunda sonlandırır.  
-  
- Değişkenleri diğer kaynak dosyalarında görünür yapmak için uygun bildirimleri açıklanan [depolama sınıfları](../c-language/c-storage-classes.md). Ancak, değişkenler ve işlevleri bildirilen dış düzeyi ile **statik** depolama sınıfı tanımlayıcısı yalnızca bunlar tanımlı kaynak dosya içinde görünür. Diğer tüm işlevleri genel olarak görünür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Ömür, Kapsam, Görünürlük ve Bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)
+
+Bir tanımlayıcının "görünürlüğünü" içinde bu başvurulabilir programın bölümlerini belirler — "kapsamı." Tanımlayıcının görünür (yani, kullanılabilir) (, restrictiveness artan sırada), dosya, işlev, blok veya işlev prototipi göründüğü sınırlı, "kapsam tarafından" çevrelenmiş bir programın kısımları içinde. Kapsamı bir tanımlayıcının adı kullanılabilir program parçasıdır. Bu bazen "sözcük kapsamı." olarak adlandırılır. Kapsam dört çeşit vardır: işlev, dosya, blok ve işlev prototipi.
+
+Etiketler dışında tüm tanımlayıcılar bildirimi oluştuğu düzeyi tarafından belirlenen kapsamlarına sahip. Her türden bir kapsam için aşağıdaki kurallar, bir program içindeki tanımlayıcıları görünürlüğünü yöneten:
+
+Dosya kapsamı bildirimci veya tür tanımlayıcısında tanımlayıcının dosya kapsamı ile herhangi bir blok veya parametrelerin listesi dışında görünür ve bildiriminden sonra çeviri birimi içinde herhangi bir yerden erişilebilir. Dosya kapsamına sahip tanımlayıcı adları genellikle "Genel" veya "dış" adı verilir Genel tanımlayıcı kapsamını, kendi tanımında veya bildiriminde noktasında başlar ve çeviri biriminde sonunda sona erer.
+
+İşlevi bir kapsam etiketi yalnızca işlev kapsamı tanımlayıcısı türüdür. Bir etiket deyimindeki kullanımı tarafından örtük olarak bildirilmiş. Etiket adları bir işlev içinde benzersiz olmalıdır. (Etiketler ve etiket adları hakkında daha fazla bilgi için bkz: [goto ve etiketli deyimleri](../c-language/goto-and-labeled-statements-c.md).)
+
+Blok kapsamı bildirimcide veya tür tanımlayıcısında blok kapsamı olan bir tanımlayıcı için bir blok içinde veya bir işlev tanımı bildirimlerinde biçimsel parametre listesi içinde görünür. Bunu yalnızca noktasından bildirim veya tanım, bildirim veya tanım içeren bloğun sonuna kadar görülebilir. Kapsamı, o blok ve o blok içinde iç içe geçmiş herhangi bir bloğu sınırlıdır ve ilişkili blok kapatır küme ayracı sona erer. Tür tanımlayıcıları adlandırılan "yerel değişkenler."
+
+İşlev prototipi kapsam bildirimci veya tür tanımlayıcısında işlev prototipi kapsamlı bir tanımlayıcı için bir işlev prototipi (olmayan işlev bildiriminin bir parçası) bildirimlerinde parametre listesi içinde görünür. Kapsamı işlev bildirimcisinden sonunda sona erer.
+
+Değişkenleri başka kaynak dosyalarında görünür yapmak için uygun bildirimleri açıklanan [depolama sınıfları](../c-language/c-storage-classes.md). Ancak, değişkenlerin ve işlevlerin bildirilen dış düzeyi ile **statik** yalnızca bunların tanımlandığı kaynak dosyasında görünür depolama sınıfı tanımlayıcısı. Diğer tüm işlevleri genel olarak görülebilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Ömür, Kapsam, Görünürlük ve Bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)

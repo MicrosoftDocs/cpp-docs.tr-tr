@@ -44,14 +44,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 73be0ee1987aa60d91976c1a4bbb73ebf66e5c1c
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 9619ffdf9fd24bd73548fb3992084eb0a5d437a7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465736"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114481"
 ---
 # <a name="cdbpropidset-class"></a>CDBPropIDSet Sınıfı
+
 Devralınan `DBPROPIDSET` yapısı ve anahtar alanları başlatan bir oluşturucu ekler ve [Addpropertyıd](../../data/oledb/cdbpropidset-addpropertyid.md) erişim yöntemi.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -61,7 +62,8 @@ class CDBPropIDSet : public tagDBPROPIDSET
 ```  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldbcli.h
+
+**Başlık:** atldbcli.h
   
 ## <a name="members"></a>Üyeler  
   
@@ -80,9 +82,11 @@ class CDBPropIDSet : public tagDBPROPIDSET
 |[işleç =](#op_equal)|Başka bir özellik kimliği içeriğini atar ayarlayın.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- OLE DB tüketicileri kullanım `DBPROPIDSET` yapıları için tüketici istediği özellik bilgilerini almak özellik kimlikleri dizisi geçirilecek. Tek bir tanımlanmış özellikler [DBPROPIDSET](/previous-versions/windows/desktop/ms717981\(v=vs.85\)) yapısı bir özellik kümesine ait.  
+
+OLE DB tüketicileri kullanım `DBPROPIDSET` yapıları için tüketici istediği özellik bilgilerini almak özellik kimlikleri dizisi geçirilecek. Tek bir tanımlanmış özellikler [DBPROPIDSET](/previous-versions/windows/desktop/ms717981\(v=vs.85\)) yapısı bir özellik kümesine ait.  
 
 ## <a name="addpropertyid"></a> Cdbpropıdset::addpropertyıd
+
 Özellik kimliği özelliği kimliği kümesine ekler.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -92,10 +96,12 @@ bool AddPropertyID(DBPROPID propid) throw();
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *PROPID*  
- [in] Özellik kimliği için eklenecek özellik kimliği ayarlayın.  
+
+*PROPID*<br/>
+[in] Özellik kimliği için eklenecek özellik kimliği ayarlayın.  
 
 ## <a name="cdbpropidset"></a> Cdbpropıdset::cdbpropıdset
+
 Oluşturucu. Başlatır `rgProperties`, `cProperties`ve (isteğe bağlı olarak) `guidPropertySet` alanlarının [DBPROPIDSET](/previous-versions/windows/desktop/ms717981\(v=vs.85\)) yapısı.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -109,13 +115,15 @@ CDBPropIDSet();
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *GUID*  
- [in] Bir GUID başlatmak için kullanılan `guidPropertySet` alan.  
+
+*GUID*<br/>
+[in] Bir GUID başlatmak için kullanılan `guidPropertySet` alan.  
   
- *propidset*  
- [in] Başka bir `CDBPropIDSet` kopya oluşumuna nesnesi.  
+*propidset*<br/>
+[in] Başka bir `CDBPropIDSet` kopya oluşumuna nesnesi.  
 
 ## <a name="setguid"></a> Cdbpropıdset::setguıd
+
 GUID alanı ayarlar `DBPROPIDSET` yapısı.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -125,13 +133,16 @@ void SetGUID(const GUID& guid) throw();
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *GUID*  
- [in] Ayarlamak için kullanılan bir GUID `guidPropertySet` alanını [DBPROPIDSET](/previous-versions/windows/desktop/ms717981\(v=vs.85\)) yapısı.  
+
+*GUID*<br/>
+[in] Ayarlamak için kullanılan bir GUID `guidPropertySet` alanını [DBPROPIDSET](/previous-versions/windows/desktop/ms717981\(v=vs.85\)) yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu alan ayarlanabilir [Oluşturucusu](../../data/oledb/cdbpropidset-cdbpropidset.md) de. Bu sınıf için varsayılan oluşturucu kullanırsanız, bu işlevi çağırın.  
+
+Bu alan ayarlanabilir [Oluşturucusu](../../data/oledb/cdbpropidset-cdbpropidset.md) de. Bu sınıf için varsayılan oluşturucu kullanırsanız, bu işlevi çağırın.  
 
 ## <a name="op_equal"></a> Cdbpropıdset::operator =
+
 Bir özellik kimliği başka bir kimlik özelliği için set içeriğini atar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -141,5 +152,6 @@ CDBPropIDSet& operator =(CDBPropIDSet& propset) throw();
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+
+[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

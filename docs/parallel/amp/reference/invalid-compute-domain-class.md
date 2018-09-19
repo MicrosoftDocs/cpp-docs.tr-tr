@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 588f12e04f3a2833da6d67c07ab41929d916a4b5
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: def102ecb8063f82d90d41b2b678ff22638b1f8b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705217"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116015"
 ---
 # <a name="invalidcomputedomain-class"></a>invalid_compute_domain Sınıfı
-Çalışma zamanı sırasında belirtilen işlem etki alanı kullanarak bir çekirdek başlatılamıyor olmadığında oluşan özel durum [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each) çağrısı site.  
+Çalışma zamanı sırasında belirtilen hesaplama alanını kullanarak bir çekirdeği başlatamadığında oluşturulan özel durum [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each) çağrı sitesini.  
 
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -70,8 +70,8 @@ invalid_compute_domain() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hatanın açıklaması.  
+*İl_eti*<br/>
+Hatanın açıklaması.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Örneği `invalid_compute_domain` sınıfı  

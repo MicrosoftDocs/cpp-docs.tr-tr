@@ -16,44 +16,44 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c95e0affa9047aa41ee5ff04b011ac0fbd8d63d7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 02a4194d69bf07d27777ad30cf9ed0e5794c04c2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32388058"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136289"
 ---
 # <a name="c-integer-limits"></a>C++ Tamsayı Sınırları
 
-**Microsoft özel**
+**Microsoft'a özgü**
 
-Tamsayı türleri için sınırları aşağıdaki tabloda listelenmiştir. Bu sınırlar da standart üstbilgi tanımlanan dosya SINIRLARI. H. Microsoft C ayrıca boyutu 8-tam sayı türleri olan boyutlu tamsayı değişken bildirimi verir 16 veya 32-bit. Boyutlu tamsayı hakkında daha fazla bilgi için bkz: [boyutlu tamsayı türleri](../c-language/c-sized-integer-types.md).
+Tamsayı türleri için sınırlar aşağıdaki tabloda listelenmiştir. Bu sınırlar standart üstbilgisinde tanımlanan dosya SINIRLARI. H Microsoft C de verir boyutu 8-integral türleridir, boyutlandırılmış tamsayı değişkenlerinin bildirimi 16 veya 32-bit. Boyutlandırılmış tamsayıların hakkında daha fazla bilgi için bkz. [boyutlandırılmış tamsayı türleri](../c-language/c-sized-integer-types.md).
 
 ## <a name="limits-on-integer-constants"></a>Tamsayı sabitleri sınırlamaları
 
-|**sabiti**|Açıklama|Değer|
+|**Sabit**|Açıklama|Değer|
 |------------------|-------------|-----------|
-|**CHAR_BIT**|Bit sayısı kadar küçük değişkeninde bir bit alan değil.|8|
-|**SCHAR_MIN**|Türünde bir değişken için en düşük değer **char imzalı**.|-128|
-|**SCHAR_MAX**|Türünde bir değişken için maksimum değeri **char imzalı**.|127|
-|**UCHAR_MAX**|Türünde bir değişken için maksimum değeri **imzasız char**.|255 (0xff)|
-|**CHAR_MIN**|Türünde bir değişken için en düşük değer **char**.|-128; /J seçeneği kullanılırsa 0|
-|**CHAR_MAX**|Türünde bir değişken için maksimum değeri **char**.|127; /J seçeneği kullanılırsa 255|
-|**MB_LEN_MAX**|En fazla multicharacter sabiti bayt sayısı.|5|
-|**SHRT_MIN**|Türünde bir değişken için en düşük değer **kısa**.|-32768|
-|**SHRT_MAX**|Türünde bir değişken için maksimum değeri **kısa**.|32767|
-|**USHRT_MAX**|Türünde bir değişken için maksimum değeri **kısa imzasız**.|65535 (0xffff)|
-|**INT_MIN**|Türünde bir değişken için en düşük değer **int**.|-2147483647 - 1|
-|**INT_MAX**|Türünde bir değişken için maksimum değeri **int**.|2147483647|
-|**UINT_MAX**|Türünde bir değişken için maksimum değeri **imzasız int**.|4294967295 (0xffffffff)|
-|**LONG_MIN**|Türünde bir değişken için en düşük değer **uzun**.|-2147483647 - 1|
-|**LONG_MAX**|Türünde bir değişken için maksimum değeri **uzun**.|2147483647|
-|**ULONG_MAX**|Türünde bir değişken için maksimum değeri **uzun imzasız**.|4294967295 (0xffffffff)|
+|**CHAR_BIT**|Bir bit alanı olmayan en küçük değişkeni bit sayısı.|8|
+|**SCHAR_MIN**|Türünde bir değişken için minimum değeri **signed char**.|-128|
+|**SCHAR_MAX**|Türünde bir değişken için maksimum değer **signed char**.|127|
+|**UCHAR_MAX**|Türünde bir değişken için maksimum değer **imzasız char**.|255 (0xff)|
+|**CHAR_MIN**|Türünde bir değişken için minimum değeri **char**.|-128; /J seçeneği kullandıysanız 0|
+|**CHAR_MAX**|Türünde bir değişken için maksimum değer **char**.|127; /J seçeneği kullandıysanız 255|
+|**MB_LEN_MAX**|Çoklu karakter sabitindeki bayt sayısı.|5|
+|**SHRT_MIN**|Türünde bir değişken için minimum değeri **kısa**.|-32768|
+|**SHRT_MAX**|Türünde bir değişken için maksimum değer **kısa**.|32767|
+|**USHRT_MAX**|Türünde bir değişken için maksimum değer **işaretsiz**.|65535 (0xffff)|
+|**INT_MIN**|Türünde bir değişken için minimum değeri **int**.|-2147483647 - 1|
+|**INT_MAX**|Türünde bir değişken için maksimum değer **int**.|2147483647|
+|**UINT_MAX**|Türünde bir değişken için maksimum değer **işaretsiz int**.|4294967295 (0xffffffff)|
+|**LONG_MIN**|Türünde bir değişken için minimum değeri **uzun**.|-2147483647 - 1|
+|**LONG_MAX**|Türünde bir değişken için maksimum değer **uzun**.|2147483647|
+|**ULONG_MAX**|Türünde bir değişken için maksimum değer **işaretsiz uzun**.|4294967295 (0xffffffff)|
 
-Bir değer en büyük tamsayı gösterimi aşarsa, Microsoft derleyici bir hata oluşturur.
+Microsoft derleyicisi, bir değeri en büyük tamsayı gösterimi aşarsa, bir hata oluşturur.
 
-**SON Microsoft özel**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Tamsayı Sabitleri](../c-language/c-integer-constants.md)  
+[C Tamsayı Sabitleri](../c-language/c-integer-constants.md)

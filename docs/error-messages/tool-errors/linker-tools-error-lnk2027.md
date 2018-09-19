@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 156310a0d21651b9fd2ee6002ace419db4996681
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 022e363af575e29e3085dcaec21257fa7e4ab5f1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301378"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116855"
 ---
 # <a name="linker-tools-error-lnk2027"></a>Bağlayıcı Araçları Hatası LNK2027
-Çözümlenmemiş modülü Başvurusu 'module'  
-  
- Bağlayıcı için geçirilen dosya ile belirtilen bir modülde bir bağımlılığa sahip **/ASSEMBLYMODULE** veya doğrudan bağlayıcıya geçirildi.  
-  
- LNK2027 gidermek için aşağıdakilerden birini yapın:  
-  
--   Bağlayıcı modülü bağımlılık sahip bir dosya geçmeyin.  
-  
--   Modülüyle belirtin **/ASSEMBLYMODULE**.  
-  
--   Modül güvenli .netmodule ise, modül doğrudan bağlayıcıya geçirme.  
-  
- Daha fazla bilgi için bkz: [/ASSEMBLYMODULE (derlemeye MSIL Modülü Ekle)](../../build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md) ve [bağlayıcı girişi olarak .netmodule dosyaları](../../build/reference/netmodule-files-as-linker-input.md).
+
+Çözümlenmemiş modül başvurusu 'module'
+
+Bağlayıcı için geçirilen dosya tipleri ile belirtilen bir modülde bağımlılığa sahip **assemblymodule** ya da doğrudan bağlayıcıya geçirildi.
+
+LNK2027 çözümlemek için aşağıdakilerden birini yapın:
+
+- Bağlayıcı için modül bağımlılığının dosya geçirmeyin.
+
+- Modülüyle belirtin **assemblymodule**.
+
+- Güvenli bir .netmodule modülü ise modülü bağlayıcıya doğrudan geçirin.
+
+Daha fazla bilgi için [assemblymodule (derlemeye MSIL Modülü Ekle)](../../build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md) ve [bağlayıcı girişi olarak .netmodule dosyaları](../../build/reference/netmodule-files-as-linker-input.md).

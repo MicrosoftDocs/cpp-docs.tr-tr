@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd9d6b2f0a84d43b14b1187fa4ca5698114983e0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 58a78a735b553a0a607f2b3433598117efac9191
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198303"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115248"
 ---
 # <a name="fatal-error-c1023"></a>Önemli hata C1023
-'dosya': pch, beklenmeyen bir hatayla deneyin pch yeniden oluşturma  
-  
- Önceden derlenmiş üst bilgi dosyasını yeniden çözümdür hangi birkaç sorunlardan biri tarafından C1023 kaynaklanabilir.  
-  
- Önceden derlenmiş üstbilgi dosyası üzerinde oluşturulmuş bir dışında bir makinede kullanmayı denerseniz, C1023 neden olabilir.
+
+'file': beklenmeyen pch hatası, pch'yi yeniden oluşturmayı deneyin deneyin
+
+C1023 önceden derlenmiş üst bilgi dosyasının yeniden çözümüdür olan çeşitli sorunları tarafından kaynaklanabilir.
+
+Bir yerleşik farklı bir makinede önceden derlenmiş üst bilgi dosyası kullanmayı denerseniz C1023 neden olabilir.

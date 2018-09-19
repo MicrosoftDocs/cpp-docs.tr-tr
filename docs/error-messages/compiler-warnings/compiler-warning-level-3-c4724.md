@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 351a859dc557e862ee4c22b3a78f8de289bdb053
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 31c65f3ab2dd5e9bfb5c1acd9f183892feebea56
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295275"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135899"
 ---
 # <a name="compiler-warning-level-3-c4724"></a>Derleyici Uyarısı (Düzey 3) C4724
-0 ile olası mod  
-  
- Tanımsız sonuçları vermiş derleme zamanında sıfır olarak değerlendirildiğinden kalan işleminde ikinci işlenen.
+
+olası 0 ile mod
+
+İkinci işlenenin kalan bir işlemle tanımsız sonuçlar vererek sıfır derleme zamanında değerlendirilir.

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 11a2d96f2602c596e6470b310ef274f8c23290d8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 87ae430dabf3a4aac54b77afb0b2ed5c143a8875
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754923"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116041"
 ---
 # <a name="atldrawinfo-structure"></a>Atl_drawınfo yapısı
 
@@ -51,43 +51,43 @@ struct ATL_DRAWINFO {
 
 ## <a name="members"></a>Üyeler
 
-`cbSize`  
+`cbSize`<br/>
 Yapının bayt cinsinden boyutu.
 
-`dwDrawAspect`  
+`dwDrawAspect`<br/>
 Nasıl gösterilemeyecek kadar hedef olduğunu belirtir. Gösterimleri, içerik, simge, küçük resim veya yazdırılan belge içerebilir. Olası değerler listesi için bkz. [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) ve [DVASPECT2](/windows/desktop/api/ocidl/ne-ocidl-tagdvaspect2).
 
-`lindex`  
+`lindex`<br/>
 Çizim işlemi için hedef kısmı. Değerine bağlı olarak yorumlanması değişir `dwDrawAspect` üyesi.
 
-`ptd`  
+`ptd`<br/>
 İşaretçi bir [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) belirtilen boyut bağlı olarak çizim iyileştirmelerini sağlayan yapısı. Yeni nesneleri ve en iyi duruma getirilmiş çizim arabirimleri destekleyen kapsayıcılar bu üyeyi de destekleyip desteklemediğini unutmayın. Eski nesneler ve her zaman en iyi duruma getirilmiş çizim arabirimleri desteklemeyen kapsayıcıları bu üye için NULL belirtin.
 
-`hicTargetDev`  
+`hicTargetDev`<br/>
 Hedef cihaz bağlamının bilgi tarafından işaret edilen `ptd` içinden nesne cihaz ölçümleri ayıklayın ve cihazın özelliklerini test edebilirsiniz. Varsa `ptd` null, nesne değeri sayılmalıdır `hicTargetDev` üyesi.
 
-`hdcDraw`  
+`hdcDraw`<br/>
 Cihaz bağlamı üretileceği çizin. Penceresiz bir nesne için `hdcDraw` üyesiyse `MM_TEXT` pencerenin istemci koordinatları eşleşen mantıksal koordinatları ile eşleme modu. Ayrıca, cihaz bağlam normalde geçirilen aynı duruma olmalıdır bir `WM_PAINT` ileti.
 
-`prcBounds`  
+`prcBounds`<br/>
 İşaretçi bir [RECTL](https://msdn.microsoft.com/library/windows/desktop/dd162907) dikdörtgen belirterek yapısı `hdcDraw` ve nesne çizileceğini. Bu üye, konumlandırma ve nesnenin uzatma denetler. Bu üye penceresiz yerinde etkin nesne çizmek için NULL olmalıdır. Diğer her durumda, NULL geçerli bir değer değil ve neden bir `E_INVALIDARG` hata kodu. Kapsayıcı penceresiz bir nesne için bir NULL olmayan değer geçerse, nesne dikdörtgen ve belirtilen bir cihaz bağlamı içinde istenen boyut işlemesi gerekir. Bir kapsayıcı bir penceresiz nesneden nesnesinin ikinci, etkin olmayan görünüm işlemek için veya nesneyi yazdırmak için bu talep edebilir.
 
-`prcWBounds`  
+`prcWBounds`<br/>
 Varsa `hdcDraw` bir meta dosyası cihaz bağlamı (bkz [GetDeviceCaps](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) Windows SDK), bu işaretçisidir bir `RECTL` yapısı temel alınan meta sınırlayıcı belirtme. Dikdörtgen yapı penceresi başlangıç ve pencere uzantı içeriyor. Bu değerler, meta çizmek için yararlıdır. Tarafından belirtilen dikdörtgen `prcBounds` bu iç içe geçmiş `prcWBounds` dikdörtgen; aynı koordinat alanında oldukları.
 
-`bOptimize`  
+`bOptimize`<br/>
 Çizim denetimi olacak şekilde iyileştirilmiştir, aksi durumda 0 ise sıfır olmayan. Çizim en iyi duruma getirilmiş işiniz bittiğinde durumu cihaz bağlamı otomatik olarak geri yüklenir işleme.
 
-`bZoomed`  
+`bZoomed`<br/>
 Aksi durumda 0 yakınlaştırma faktörünü hedefi varsa, sıfır dışında. Yakınlaştırma faktörünü depolanan `ZoomNum`.
 
-`bRectInHimetric`  
+`bRectInHimetric`<br/>
 Gösterimiyse boyutlarını `prcBounds` HIMETRIC, aksi durumda 0 olan.
 
-`ZoomNum`  
+`ZoomNum`<br/>
 Genişlik ve yükseklik dikdörtgenin içine bir nesne oluşturulur. Yakınlaştırma faktörünü hedefinin (nesnenin geçerli kapsamı doğal boyutuna oranı) x ekseni boyunca değeri `ZoomNum.cx` değeriyle bölünmüş `ZoomDen.cx`. Yakınlaştırma faktörünü y ekseni boyunca benzer şekilde sağlanır.
 
-`ZoomDen`  
+`ZoomDen`<br/>
 Gerçek genişlik ve yükseklik hedef.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -102,6 +102,6 @@ Bu yapı, hedef cihaz için bir nesnenin görünümü işlemek için kullanılan
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıflar ve yapılar](../../atl/reference/atl-classes.md)  
-[IViewObject::Draw](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-draw)  
+[Sınıflar ve yapılar](../../atl/reference/atl-classes.md)<br/>
+[IViewObject::Draw](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-draw)<br/>
 [CComControlBase::OnDrawAdvanced](../../atl/reference/ccomcontrolbase-class.md#ondrawadvanced)

@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4b0867305c56fc551e55680b6ed48bdb701cc09
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4afb08cbe3203ff462f59fec4c1e712aa024c081
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292106"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136068"
 ---
 # <a name="compiler-warning-level-3-c4792"></a>Derleyici Uyarısı (Düzey 3) C4792
-İşlev 'function' SysImport kullanılarak bildirilen ve yerel koddan başvurulan; içeri aktarma kitaplığını bağlamak için gerekli  
-  
- DllImport programla içeri aktarılan yerel bir işlev yönetilmeyen bir işlevden çağrıldı. Bu nedenle, DLL için içeri aktarma kitaplığı'na bağlamanız gerekir.  
-  
- Bu uyarı kodu çözümlenemiyor veya değiştirerek derleyin. Kullanım [uyarı](../../preprocessor/warning.md) bu uyarıyı devre dışı bırakmak için pragması.  
-  
- Aşağıdaki örnek C4792 oluşturur:  
-  
-```  
-// C4792.cpp  
-// compile with: /clr /W3  
-// C4792 expected  
-using namespace System::Runtime::InteropServices;  
-[DllImport("msvcrt")]  
-extern "C" int __cdecl puts(const char *);  
-int main() {}  
-  
-// Uncomment the following line to resolve.  
-// #pragma warning(disable : 4792)  
-#pragma unmanaged  
-void func(void){  
-   puts("test");  
-}  
+
+'function' işlevi sysimport kullanılarak bildirildi ve yerel koddan başvuruldu; bağlanmak için gerekli içeri aktarma kitaplığı
+
+Yönetilmeyen bir işlevden programa DllImport ile içeri aktarılan yerel bir işlev çağrıldı. Bu nedenle, DLL için içeri aktarma kitaplığına bağlamanız gerekir.
+
+Bu uyarı, kod içinde çözümlenemiyor veya değiştirerek derleyin. Kullanım [uyarı](../../preprocessor/warning.md) pragması, bu uyarıyı devre dışı bırakmak için.
+
+Aşağıdaki örnek, C4792 oluşturur:
+
+```
+// C4792.cpp
+// compile with: /clr /W3
+// C4792 expected
+using namespace System::Runtime::InteropServices;
+[DllImport("msvcrt")]
+extern "C" int __cdecl puts(const char *);
+int main() {}
+
+// Uncomment the following line to resolve.
+// #pragma warning(disable : 4792)
+#pragma unmanaged
+void func(void){
+   puts("test");
+}
 ```

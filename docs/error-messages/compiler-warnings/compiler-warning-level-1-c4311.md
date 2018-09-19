@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: adfd27a116ae5747a2dd899ce51c38f01055f356
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7e01aef8ffe6314452ad4644f2192583c89a42ea
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218546"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114429"
 ---
 # <a name="compiler-warning-level-1-c4311"></a>Derleyici Uyarısı (düzey 1) C4311
-'variable' : 'type' öğesinden 'type' öğesine işaretçi kesilmesi  
-  
- Bu uyarı, 64-bit işaretçi kesilmesi sorunları algılar. Bir 64 bit mimari için kod derlenir, atanan, örneğin, bir işaretçi (64 bit) değeri kesilecek bir `int` (32 bit). Daha fazla bilgi için [kullanarak işaretçileri için kuralları](/windows/desktop/WinProg64/rules-for-using-pointers).  
-  
- Uyarı C4311 yaygın nedenleri hakkında ek bilgi için bkz: [Genel derleyici hataları](/windows/desktop/WinProg64/common-compiler-errors).  
-  
- Aşağıdaki kod örneği için 64 bit hedef derlendiğinde C4311 oluşturur ve ardından sorunu gidermek nasıl gösterir:  
-  
-```  
-// C4311.cpp  
-// compile by using: cl /W1 C4311.cpp  
-int main() {  
-   void* p = &p;  
-   unsigned int i = (unsigned int) p;   // C4311 for 64-bit targets  
-   unsigned long long j = (unsigned long long) p;   // OK  
-}  
-  
+
+'variable' : 'type' öğesinden 'type' öğesine işaretçi kesilmesi
+
+Bu uyarı, 64-bit işaretçi kesilmesi sorunları algılar. Bir 64 bit mimari için kod derlenir, atanan, örneğin, bir işaretçi (64 bit) değeri kesilecek bir `int` (32 bit). Daha fazla bilgi için [kullanarak işaretçileri için kuralları](/windows/desktop/WinProg64/rules-for-using-pointers).
+
+Uyarı C4311 yaygın nedenleri hakkında ek bilgi için bkz: [Genel derleyici hataları](/windows/desktop/WinProg64/common-compiler-errors).
+
+Aşağıdaki kod örneği için 64 bit hedef derlendiğinde C4311 oluşturur ve ardından sorunu gidermek nasıl gösterir:
+
+```
+// C4311.cpp
+// compile by using: cl /W1 C4311.cpp
+int main() {
+   void* p = &p;
+   unsigned int i = (unsigned int) p;   // C4311 for 64-bit targets
+   unsigned long long j = (unsigned long long) p;   // OK
+}
+
 ```

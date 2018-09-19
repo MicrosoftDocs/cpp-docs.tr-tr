@@ -18,20 +18,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65278571fabf24011960ad577461347f1dfebf73
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ddfe6660854ae4cbdba2398aa4102fd612d17ddc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200524"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114585"
 ---
 # <a name="handling-ttnneedtext-notification-for-tool-tips"></a>Araç İpuçları için TTN_NEEDTEXT Bildirimini İşleme
 Bir parçası olarak [araç ipuçlarını etkinleştirme](../mfc/enabling-tool-tips.md), ele **TTN_NEEDTEXT** sahibi pencerenin ileti eşlemesi için şu girdiyi ekleyerek, ileti:  
   
  [!code-cpp[NVC_MFCControlLadenDialog#40](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_1.cpp)]  
   
- `memberFxn`  
- Bu düğme için metin gerektiğinde çağrılacak üye işlevi.  
+*memberFxn*<br/>
+Bu düğme için metin gerektiğinde çağrılacak üye işlevi.  
   
  Bir araç ipucu kimliği her zaman olduğuna dikkat edin 0.  
   
@@ -41,14 +41,14 @@ Bir parçası olarak [araç ipuçlarını etkinleştirme](../mfc/enabling-tool-t
   
  Burada italik Parametreler şunlardır:  
   
- `id`  
- Bildirim gönderilen denetim tanımlayıcısı. Kullanılmadı. Denetim Kimliği alınır **NMHDR** yapısı.  
+*id*<br/>
+Bildirim gönderilen denetim tanımlayıcısı. Kullanılmadı. Denetim Kimliği alınır **NMHDR** yapısı.  
   
- `pNMHDR`  
- Bir işaretçi [NMTTDISPINFO](/windows/desktop/api/commctrl/ns-commctrl-tagnmttdispinfoa) yapısı. Bu yapı ayrıca ele alınan ayrıntılı olarak [TOOLTIPTEXT yapısı](../mfc/tooltiptext-structure.md).  
+*pNMHDR*<br/>
+Bir işaretçi [NMTTDISPINFO](/windows/desktop/api/commctrl/ns-commctrl-tagnmttdispinfoa) yapısı. Bu yapı ayrıca ele alınan ayrıntılı olarak [TOOLTIPTEXT yapısı](../mfc/tooltiptext-structure.md).  
   
- `pResult`  
- Sonuç kodu için bir işaretçi, dönmeden önce ayarlayabilirsiniz. **TTN_NEEDTEXT** işleyicileri yok sayabilirsiniz *pResult* parametresi.  
+*pResult*<br/>
+Sonuç kodu için bir işaretçi, dönmeden önce ayarlayabilirsiniz. **TTN_NEEDTEXT** işleyicileri yok sayabilirsiniz *pResult* parametresi.  
   
  Bir form görünümü bildirim işleyici, örneğin:  
   

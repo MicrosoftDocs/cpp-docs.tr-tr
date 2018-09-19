@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3c6db8a46e0b0e8d490019b18fc67dc7bf1e226
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b6eb8c7ed32e780ddaf31dfd6167f59fd55de9da
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763451"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116782"
 ---
 # <a name="ccomcurrency-class"></a>CComCurrency sınıfı
 
@@ -118,45 +118,45 @@ CComCurrency() throw();
 CComCurrency(const CComCurrency& curSrc) throw();
 CComCurrency(CURRENCY cySrc) throw();
 CComCurrency(DECIMAL dSrc);
-CComCurrency(ULONG ulSrc);  
-CComCurrency(USHORT usSrc);  
-CComCurrency(CHAR cSrc);  
-CComCurrency(DOUBLE dSrc);  
-CComCurrency(FLOAT fSrc);  
-CComCurrency(LONG lSrc);  
-CComCurrency(SHORT sSrc);  
-CComCurrency(BYTE bSrc);  
-CComCurrency(LONGLONG nInteger, SHORT nFraction);  
-explicit CComCurrency(LPDISPATCH pDispSrc);  
-explicit CComCurrency(const VARIANT& varSrc);  
-explicit CComCurrency(LPCWSTR szSrc);  
+CComCurrency(ULONG ulSrc);
+CComCurrency(USHORT usSrc);
+CComCurrency(CHAR cSrc);
+CComCurrency(DOUBLE dSrc);
+CComCurrency(FLOAT fSrc);
+CComCurrency(LONG lSrc);
+CComCurrency(SHORT sSrc);
+CComCurrency(BYTE bSrc);
+CComCurrency(LONGLONG nInteger, SHORT nFraction);
+explicit CComCurrency(LPDISPATCH pDispSrc);
+explicit CComCurrency(const VARIANT& varSrc);
+explicit CComCurrency(LPCWSTR szSrc);
 explicit CComCurrency(LPCSTR szSrc);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*curSrc*  
+*curSrc*<br/>
 Varolan bir `CComCurrency` nesnesi.
 
-*cysrc &*  
+*cysrc &*<br/>
 Para birimi türünde bir değişken.
 
-*bSrc*, *dSrc*, *fSrc*, *lSrc*, *sSrc*, *ulSrc, usSrc*  
+*bSrc*, *dSrc*, *fSrc*, *lSrc*, *sSrc*, *ulSrc, usSrc*<br/>
 Üye değişkeni için verilen ilk değer `m_currency`.
 
-*cSrc*  
+*cSrc*<br/>
 Üye değişkeni için verilen ilk değer içeren bir karakter `m_currency`.
 
-*nInteger*, *nFraction*  
+*nInteger*, *nFraction*<br/>
 İlk parasal değerinin kesirli bileşenlerin ve tamsayı. Bkz: [CComCurrency](../../atl/reference/ccomcurrency-class.md) daha fazla bilgi için.
 
-*pdispsrc &*  
+*pdispsrc &*<br/>
 Bir `IDispatch` işaretçi.
 
-*varSrc*  
+*varSrc*<br/>
 DEĞİŞKEN türünde bir değişken. Geçerli iş parçacığının yerel ayarı, dönüştürme gerçekleştirmek için kullanılır.
 
-*szSrc*  
+*szSrc*<br/>
 Başlangıç değeri içeren bir Unicode veya ANSI dize. Geçerli iş parçacığının yerel ayarı, dönüştürme gerçekleştirmek için kullanılır.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -238,7 +238,7 @@ CComCurrency operator-(const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Yinele*  
+*Yinele*<br/>
 A `CComCurrency` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -259,7 +259,7 @@ bool operator!= (const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Yinele*  
+*Yinele*<br/>
 `CComCurrency` Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -281,10 +281,10 @@ CComCurrency operator*(const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nOperand*  
+*nOperand*<br/>
 Çarpan.
 
-*Yinele*  
+*Yinele*<br/>
 `CComCurrency` Çarpanı olarak kullanılan nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -306,10 +306,10 @@ const CComCurrency& operator*= (const CComCurrency& cur);
 
 ### <a name="parameters"></a>Parametreler
 
-*nOperand*  
+*nOperand*<br/>
 Çarpan.
 
-*Yinele*  
+*Yinele*<br/>
 `CComCurrency` Çarpanı olarak kullanılan nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -330,7 +330,7 @@ CComCurrency operator/(long nOperand) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nOperand*  
+*nOperand*<br/>
 Bölen.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -351,7 +351,7 @@ const CComCurrency& operator/= (long nOperand);
 
 ### <a name="parameters"></a>Parametreler
 
-*nOperand*  
+*nOperand*<br/>
 Bölen.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -372,7 +372,7 @@ CComCurrency operator+(const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Yinele*  
+*Yinele*<br/>
 `CComCurrency` Özgün nesneye eklenecek nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -393,7 +393,7 @@ const CComCurrency& operator+= (const CComCurrency& cur);
 
 ### <a name="parameters"></a>Parametreler
 
-*Yinele*  
+*Yinele*<br/>
 `CComCurrency` Nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -414,7 +414,7 @@ bool operator<(const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Yinele*  
+*Yinele*<br/>
 A `CComCurrency` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -435,7 +435,7 @@ bool operator<= (const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Yinele*  
+*Yinele*<br/>
 A `CComCurrency` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -466,13 +466,13 @@ const CComCurrency& operator= (DECIMAL dSrc);
 
 ### <a name="parameters"></a>Parametreler
 
-*curSrc*  
+*curSrc*<br/>
 A `CComCurrency` nesne.
 
-*cysrc &*  
+*cysrc &*<br/>
 Para birimi türünde bir değişken.
 
-*sSrc*, *fSrc*, *lSrc*, *bSrc*, *usSrc*, *dSrc*, *cSrc* , *ulSrc*, *dSrc*  
+*sSrc*, *fSrc*, *lSrc*, *bSrc*, *usSrc*, *dSrc*, *cSrc* , *ulSrc*, *dSrc*<br/>
 Sayısal bir değer atamak için `CComCurrency` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -493,7 +493,7 @@ const CComCurrency& operator-= (const CComCurrency& cur);
 
 ### <a name="parameters"></a>Parametreler
 
-*Yinele*  
+*Yinele*<br/>
 A `CComCurrency` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -514,7 +514,7 @@ bool operator== (const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Yinele*  
+*Yinele*<br/>
 `CComCurrency` Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -535,7 +535,7 @@ bool operator>(const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Yinele*  
+*Yinele*<br/>
 A `CComCurrency` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -556,7 +556,7 @@ bool operator>= (const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Yinele*  
+*Yinele*<br/>
 A `CComCurrency` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -571,7 +571,7 @@ A `CComCurrency` nesne.
 
 Bu işleçler dönüştürmek için kullanılan bir `CComCurrency` bir para birimi veri türüne nesne.
 
-```  
+```
 operator CURRENCY&() throw();
 operator const CURRENCY&() const throw();
 ```
@@ -594,7 +594,7 @@ HRESULT Roundint nDecimals);
 
 ### <a name="parameters"></a>Parametreler
 
-*nDecimals*  
+*nDecimals*<br/>
 Hangi basamak sayısı `m_currency` 0-4 aralığında yuvarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -615,7 +615,7 @@ HRESULT SetFraction(SHORT nFraction);
 
 ### <a name="parameters"></a>Parametreler
 
-*nFraction*  
+*nFraction*<br/>
 Kesirli bileşeninin atanacak değer `m_currency` veri üyesi. Kesirli bileşeni'nin tam sayı bileşenine aynı olmalıdır ve değerin +9999 (CY_MAX_FRACTION) için (CY_MIN_FRACTION) -9999 aralığında olması gerekir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -636,7 +636,7 @@ HRESULT SetInteger(LONGLONG nInteger);
 
 ### <a name="parameters"></a>Parametreler
 
-*nInteger*  
+*nInteger*<br/>
 Tamsayı bileşeni için atanan değer `m_currency` veri üyesi. Varolan kesirli bileşeni'nin tam sayı bileşenine işaretini eşleşmelidir.
 
 *nInteger* CY_MAX_INTEGER kapsamlı için CY_MIN_INTEGER aralığında olması gerekir. Bu değerleri atlcur.h içinde tanımlanır.
@@ -651,6 +651,6 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[COleCurrency sınıfı](../../mfc/reference/colecurrency-class.md)   
-[PARA BİRİMİ](/windows/desktop/api/wtypes/ns-wtypes-tagcy)   
+[COleCurrency Sınıfı](../../mfc/reference/colecurrency-class.md)<br/>
+[PARA BİRİMİ](/windows/desktop/api/wtypes/ns-wtypes-tagcy)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

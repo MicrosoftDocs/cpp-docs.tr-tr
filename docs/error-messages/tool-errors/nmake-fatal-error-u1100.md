@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d4ed57c980813c8539fbffed0e41a35048c0571
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 27ffd33a0a80056ee57f5f088823d7f8f6549c24
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319624"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135775"
 ---
 # <a name="nmake-fatal-error-u1100"></a>NMAKE Önemli Hatası U1100
-Makro 'makroadı' toplu kural 'Kuralı' bağlamında geçersiz  
-  
- NMAKE hatasına neden bu bir toplu iş modu kuralın komut bloğu değil $ bir özel dosya makrosu doğrudan veya dolaylı olarak başvurduğunda <.  
-  
- $< yalnızca makrosu toplu iş modu kuralları için izin verilir.
+
+Makro 'makroadı' batch kural 'Kuralı' bağlamında geçersiz
+
+NMAKE bu hata toplu iş modu kuralının komut bloğu değil $ bir özel dosya makrosu doğrudan veya dolaylı başvuruda bulunduğunda oluşturur <.
+
+$< yalnızca makrosu toplu iş modu kuralları için izin verilir.

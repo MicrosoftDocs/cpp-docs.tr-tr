@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 656ede7c36fae4619cd356421a302b142a08ff19
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 352f3e5ebd9606cc355ea9af65739c3e17894298
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761894"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136302"
 ---
 # <a name="composite-control-macros"></a>Bileşik Denetim makroları
 
@@ -34,7 +34,7 @@ Olay iç havuz eşlemeleri ve girişleri bu makroları tanımlar.
 |[BEGIN_SINK_MAP](#begin_sink_map)|Bileşik denetim için olay havuzu eşlemesi başlangıcını işaretler.|
 |[END_SINK_MAP](#end_sink_map)|Bileşik denetim için olay havuzu eşlemesi sonunu işaretler.|
 |[SINK_ENTRY](#sink_entry)|Olay havuzu eşleme girişi.|
-|[SINK_ENTRY_EX](#sink_entry_ex)|Ek bir parametre ile olay havuzu eşleme girişi.| 
+|[SINK_ENTRY_EX](#sink_entry_ex)|Ek bir parametre ile olay havuzu eşleme girişi.|
 |[SINK_ENTRY_EX_P](#sink_entry_ex)| (Visual Studio 2017) IID için bir işaretçi alır dışında SINK_ENTRY_EX için benzer.|
 |[SINK_ENTRY_INFO](#sink_entry_info)|Olay havuzu eşlemesi ile kullanmak için el ile sağlanan tür bilgileriyle girişe [Idispeventsimpleımpl](../../atl/reference/idispeventsimpleimpl-class.md).|
 |[SINK_ENTRY_INFO_P](#sink_entry_info)| (Visual Studio 2017) IID için bir işaretçi alır dışında SINK_ENTRY_INFO için benzer.|
@@ -53,7 +53,7 @@ BEGIN_SINK_MAP(_class)
 
 ### <a name="parameters"></a>Parametreler
 
-*_sınıfı*  
+*_sınıfı*<br/>
 [in] Denetimi belirtir.
 
 ### <a name="example"></a>Örnek
@@ -90,13 +90,13 @@ SINK_ENTRY( id, dispid, fn )
 
 ### <a name="parameters"></a>Parametreler
 
-*id*  
+*id*<br/>
 [in] Denetimi tanımlar.
 
-*DISPID*  
+*DISPID*<br/>
 [in] Belirtilen olay tanımlar.
 
-*fn*  
+*fn*<br/>
 [in] Olay işleyici işlevinin adı. Bu işlev kullanmalısınız `_stdcall` çağırma kuralı ve uygun dispinterface stili imzaya sahip.
 
 ### <a name="example"></a>Örnek
@@ -118,19 +118,19 @@ SINK_ENTRY_EX_P( id, piid, dispid, fn ) // (Visual Studio 2017)
 
 ### <a name="parameters"></a>Parametreler
 
-*id*  
+*id*<br/>
 [in] Denetimi tanımlar.
 
-*IID*  
+*IID*<br/>
 [in] Dağıtım arabirimi tanımlar.  
 
-*piid*  
+*piid*<br/>
 [in] Gönderme arabirim işaretçisi.
 
-*DISPID*  
+*DISPID*<br/>
 [in] Belirtilen olay tanımlar.
 
-*fn*  
+*fn*<br/>
 [in] Olay işleyici işlevinin adı. Bu işlev kullanmalısınız `_stdcall` çağırma kuralı ve uygun dispinterface stili imzaya sahip.
 
 ### <a name="example"></a>Örnek
@@ -152,22 +152,22 @@ SINK_ENTRY_INFO_P( id, piid, dispid, fn, info ) // (Visual Studio 2017)
 
 ### <a name="parameters"></a>Parametreler
 
-*id*  
+*id*<br/>
 [in] Olay kaynağını belirleme işaretsiz tamsayı. Bu değer eşleşmelidir *nID* şablon parametresi ilgili kullanılan [Idispeventsimpleımpl](../../atl/reference/idispeventsimpleimpl-class.md) temel sınıfı.
 
-*IID*  
+*IID*<br/>
 [in] Bu IID gönderme arabirimi tanımlar.  
 
-*piid*  
+*piid*<br/>
 [in] Gönderme arabirim tanımlayan IID işaretçisi.
 
-*DISPID*  
+*DISPID*<br/>
 [in] DISPID belirtilen olay tanımlama.
 
-*fn*  
+*fn*<br/>
 [in] Olay işleyici işlevinin adı. Bu işlev kullanmalısınız `_stdcall` çağırma kuralı ve uygun dispinterface stili imzaya sahip.
 
-*Bilgileri*  
+*Bilgileri*<br/>
 [in] Olay işleyici işlevi bilgilerini yazın. Bu tür bilgiler için bir işaretçi biçiminde sağlanan bir `_ATL_FUNC_INFO` yapısı. Windows CE sahip alanın için desteklenen tek seçenek CC_CDECL olduğu `_ATL_FUNC_INFO` yapısı. Başka bir değer desteklenmiyor bu nedenle, davranışı tanımsız.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -176,5 +176,5 @@ SINK_ENTRY_INFO_P( id, piid, dispid, fn, info ) // (Visual Studio 2017)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Makroları](../../atl/reference/atl-macros.md)   
+[Makroları](../../atl/reference/atl-macros.md)<br/>
 [Bileşik Denetim Genel İşlevleri](../../atl/reference/composite-control-global-functions.md)

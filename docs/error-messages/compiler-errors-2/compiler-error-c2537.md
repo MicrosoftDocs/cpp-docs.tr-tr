@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6100f77d3a1487bfa1eb12a78ac8187cec43fe64
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 65db4fa66d147cc46c1a6013d07048892dfa0800
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199963"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136029"
 ---
 # <a name="compiler-error-c2537"></a>Derleyici Hatası C2537
-'tanımlayıcısı': Geçersiz bağlantı belirtimi  
-  
- Olası nedenler:  
-  
-1.  Bağlantı belirleyici desteklenmiyor. Yalnızca "C" bağlantı tanımlayıcısı desteklenir.  
-  
-2.  "C" bağlantı birden fazla işlev aşırı yüklenmiş işlevlerin kümesinde için belirtilir. Bu duruma izin verilmez.  
-  
- Aşağıdaki örnek C2537 oluşturur:  
-  
-```  
-// C2537.cpp  
-// compile with: /c  
-extern "c" void func();   // C2537  
-extern "C" void func2();   // OK  
+
+'belirticisi': Geçersiz bağlama belirtimi
+
+Olası nedenler:
+
+1. Bağlantı belirticisi desteklenmiyor. Yalnızca "C" bağlantı belirleyici desteklenir.
+
+1. "C" bağlaması birden fazla işlev, aşırı yüklenmiş işlevler kümesi için belirtilir. Buna izin verilmez.
+
+Aşağıdaki örnek, C2537 oluşturur:
+
+```
+// C2537.cpp
+// compile with: /c
+extern "c" void func();   // C2537
+extern "C" void func2();   // OK
 ```

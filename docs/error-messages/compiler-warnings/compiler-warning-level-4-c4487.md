@@ -16,41 +16,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80008dbcfbebe4e91398e651e361efe7df30b641
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ffc1a25d362cad95f2aad43d626e4918955903f5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293188"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135847"
 ---
 # <a name="compiler-warning-level-4-c4487"></a>Derleyici Uyarısı (düzey 4) C4487
-'derived_class_function': devralınan sanal olmayan yöntemi 'base_class_function' ile eşleşir, ancak açıkça 'new' işaretli değil  
-  
- Türetilmiş bir sınıf işlevinde sanal olmayan taban sınıf işlevi olarak aynı imzaya sahiptir. C4487 türetilmiş sınıf işlevi temel sınıf işlevi kılmaz anımsatır. Açıkça türetilmiş sınıf işlevi işaretleme `new` bu uyarıyı çözümlemek için.  
-  
- Daha fazla bilgi için bkz: [yeni (vtable'de yeni yuva)](../../windows/new-new-slot-in-vtable-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4487 oluşturur.  
-  
-```  
-// C4487.cpp  
-// compile with: /W4 /clr  
-using namespace System;  
-public ref struct B {  
-   void f() { Console::WriteLine("in B::f"); }  
-   void g() { Console::WriteLine("in B::g"); }  
-};  
-  
-public ref struct D : B {  
-   void f() { Console::WriteLine("in D::f"); }   // C4487  
-   void g() new { Console::WriteLine("in D::g"); }   // OK  
-};  
-  
-int main() {  
-   B ^ a = gcnew D;  
-   // will call base class functions  
-   a->f();  
-   a->g();  
-}  
+
+'derived_class_function': 'base_class_function' devralınan sanal olmayan yöntemiyle eşleşiyor ancak açıkça 'new' işaretli değil
+
+Türetilen bir sınıfta bir işleve, sanal olmayan temel sınıf işlevi aynı imzaya sahiptir. C4487 türetilmiş sınıf işlev temel sınıf işlevini geçersiz kılmaz anımsatır. Türetilmiş sınıf işlevi açıkça işaretleyin `new` bu uyarıyı çözmek için.
+
+Daha fazla bilgi için [yeni (vtable'da yeni yuva)](../../windows/new-new-slot-in-vtable-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4487 oluşturur.
+
+```
+// C4487.cpp
+// compile with: /W4 /clr
+using namespace System;
+public ref struct B {
+   void f() { Console::WriteLine("in B::f"); }
+   void g() { Console::WriteLine("in B::g"); }
+};
+
+public ref struct D : B {
+   void f() { Console::WriteLine("in D::f"); }   // C4487
+   void g() new { Console::WriteLine("in D::g"); }   // OK
+};
+
+int main() {
+   B ^ a = gcnew D;
+   // will call base class functions
+   a->f();
+   a->g();
+}
 ```

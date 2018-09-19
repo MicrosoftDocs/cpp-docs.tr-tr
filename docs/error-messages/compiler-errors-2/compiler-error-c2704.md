@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b15eee85b41661c40d3dd40035050a23177aa63
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cc8914e8ad349f9dcd75c5f0c08ee0d55570e89d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231832"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114936"
 ---
 # <a name="compiler-error-c2704"></a>Derleyici Hatası C2704
-'tanımlayıcısı': yalnızca varargs içinde izin __va_start iç  
-  
- `__va_start` İç bir bildiriminde sabit sayıda bağımsız değişken içermeyen bir işlevi için kullanılır.
+
+'identifier': yalnızca vararg'larda __va_start iç öğesi
+
+`__va_start` Bir bildirimde sabit sayıda bağımsız değişkenli bir işleve iç kullanılır.

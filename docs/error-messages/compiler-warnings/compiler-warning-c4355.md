@@ -16,50 +16,51 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13f57b8a7c279b820f4f9fc4a68715804a12e625
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 44833c8e640002f2f94d44938641fa3c1fa33db7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33273812"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115313"
 ---
 # <a name="compiler-warning-c4355"></a>Derleyici Uyarısı C4355
-'this' : taban üye başlatıcı listesinde kullanıldı  
-  
- **Bu** işaretçi yalnızca statik olmayan üye işlevleri içinde geçerlidir. İçin bir taban sınıf Başlatıcı listesinde kullanılamaz.  
-  
- Önce temel sınıf oluşturucular ve sınıf üyesi oluşturucular çağrılır **bu** Oluşturucusu. Aslında, başka bir oluşturucuya unconstructed nesneye bir işaretçi başarıyla geçmenizin. Bu diğer oluşturucular herhangi bir üye erişmek veya üye işlevlerini bu çağırın, sonucu tanımsız olacaktır. Kullanılamaz **bu** tüm yapım tamamlanana kadar işaretçi.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.  
-  
- Aşağıdaki örnek C4355 oluşturur:  
-  
-```  
-// C4355.cpp  
-// compile with: /w14355 /c  
-#include <tchar.h>  
-  
-class CDerived;  
-class CBase {  
-public:  
-   CBase(CDerived *derived): m_pDerived(derived) {};  
-   ~CBase();  
-   virtual void function() = 0;  
-  
-   CDerived * m_pDerived;  
-};  
-  
-class CDerived : public CBase {  
-public:  
-   CDerived() : CBase(this) {};   // C4355 "this" used in derived c'tor  
-   virtual void function() {};  
-};  
-  
-CBase::~CBase() {  
-   m_pDerived -> function();  
-}  
-  
-int main() {  
-   CDerived myDerived;  
-}  
+
+'this' : taban üye başlatıcı listesinde kullanıldı
+
+**Bu** işaretçi yalnızca statik olmayan üye işlevlerinde geçerlidir. Başlatıcı listesinde bir temel sınıf için kullanılamaz.
+
+Önce çağırılır temel sınıf oluşturucuları ve sınıf üye oluşturucuları **bu** Oluşturucusu. Aslında, unconstructed nesneyi başka bir oluşturucu için bir işaretçi geçirildi. Bu diğer oluşturucuların tüm üyelerine erişmek veya üye işlevlerini bu çağırın, sonucu tanımsız olur. Kullanmamalısınız **bu** tüm yapı tamamlanana kadar işaretçi.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+Aşağıdaki örnek, C4355 oluşturur:
+
+```
+// C4355.cpp
+// compile with: /w14355 /c
+#include <tchar.h>
+
+class CDerived;
+class CBase {
+public:
+   CBase(CDerived *derived): m_pDerived(derived) {};
+   ~CBase();
+   virtual void function() = 0;
+
+   CDerived * m_pDerived;
+};
+
+class CDerived : public CBase {
+public:
+   CDerived() : CBase(this) {};   // C4355 "this" used in derived c'tor
+   virtual void function() {};
+};
+
+CBase::~CBase() {
+   m_pDerived -> function();
+}
+
+int main() {
+   CDerived myDerived;
+}
 ```

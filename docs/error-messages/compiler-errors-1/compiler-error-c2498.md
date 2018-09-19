@@ -16,24 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c50596e4e5ca47a0f1bdf3f5ab25405139b66447
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3fbd946158157f76b2fc9bfe6cbd3ea9086d09ff
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196616"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115157"
 ---
 # <a name="compiler-error-c2498"></a>Derleyici Hatası C2498
-'function': 'novtable', yalnızca sınıf bildirimleri ya da tanımları uygulanabilir  
-  
- Kullanarak bu hata oluşabilir `__declspec(novtable)` işleviyle.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2498 oluşturur:  
-  
-```  
-// C2498.cpp  
-// compile with: /c  
-void __declspec(novtable) f() {}   // C2498  
-class __declspec(novtable) A {};   // OK  
+
+'function': 'novtable' yalnızca sınıf bildirimlerine veya tanımlarına uygulanabilir
+
+Kullanarak bu hata oluşabilir `__declspec(novtable)` işleviyle.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2498 oluşturur:
+
+```
+// C2498.cpp
+// compile with: /c
+void __declspec(novtable) f() {}   // C2498
+class __declspec(novtable) A {};   // OK
 ```

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6539167b936efdc4c9f407cd951c9c582b0a138
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: fc3506c35dca469febafe21509064abc1726d633
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692187"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116906"
 ---
 # <a name="ompsetnested"></a>omp_set_nested
 İç içe geçmiş paralellik etkinleştirir.  
@@ -34,22 +34,21 @@ void omp_set_nested(
 );  
 ```  
   
+### <a name="parameters"></a>Parametreler
+  
+*VAL*<br/>
+Sıfır olmayan, iç içe geçmiş paralellik sağlar. Sıfır ise, iç içe geçmiş paralellik devre dışı bırakır.  
+  
 ## <a name="remarks"></a>Açıklamalar  
- Burada,  
+ İç içe geçmiş OMP paralellik açılabilir ile `omp_set_nested`, ayarlayarak [OMP_NESTED](../../../parallel/openmp/reference/omp-nested.md) ortam değişkeni.  
   
- `val`  
- Sıfır olmayan varsa, iç içe geçmiş paralellik etkinleştirir. Sıfır ise, iç içe geçmiş paralellik devre dışı bırakır.  
+ Ayarı `omp_set_nested` ayarını geçersiz kılar `OMP_NESTED` ortam değişkeni.  
   
-## <a name="remarks"></a>Açıklamalar  
- İç içe geçmiş OMP paralellik açılabilir ile `omp_set_nested`, veya ayarlayarak [OMP_NESTED](../../../parallel/openmp/reference/omp-nested.md) ortam değişkeni.  
-  
- İçin ayar `omp_set_nested` ayarını geçersiz kılar `OMP_NESTED` ortam değişkeni.  
-  
- İş parçacığı sayısını katlanarak paralel bölgeler iç içe geçme artırırken çünkü ortam değişkeni etkinleştirildiğinde, aksi takdirde işlem bir program bozulabilir.  Örneğin recurses 6 kereye ile 4'e ayarlayın OMP iş parçacığı sayısını 4.096 (6 gücünü 4) gerektiren bir işlev genel iş parçacıkları, iş parçacığı sayısı işlemci sayısını aşarsa, uygulamanızın performansını bozar. Bunun tek istisnası, g/ç uygulamaları bağlı olacaktır.  
+ Paralel bölgeleri iç içe olduğunda iş parçacığı sayısı katlanarak artar çünkü ortam değişkenini etkin olduğunda, aksi takdirde işletimsel bir programı bozabilir.  Örneğin genel bir işlev recurses 6 kez 4'e ayarlayın OMP iş parçacığı sayısı ile 4.096 (6'ın gücünü 4) gerektiren iş parçacıkları, işlemci sayısını iş parçacığı sayısını aşarsa, uygulamanızın performansını bozar. Bunun tek istisnası, g/ç uygulamaları bağlı olacaktır.  
   
  Kullanım [omp_get_nested](../../../parallel/openmp/reference/omp-get-nested.md) geçerli ayarını görüntülemek için `omp_set_nested`.  
   
- Daha fazla bilgi için bkz: [3.1.9 omp_set_nested işlevi](../../../parallel/openmp/3-1-9-omp-set-nested-function.md).  
+ Daha fazla bilgi için [3.1.9 omp_set_nested işlevi](../../../parallel/openmp/3-1-9-omp-set-nested-function.md).  
   
 ## <a name="example"></a>Örnek  
   

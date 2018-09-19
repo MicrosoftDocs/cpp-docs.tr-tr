@@ -21,27 +21,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9773817337bce2f054b279724db9859cc2faa41
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 85241d9dde87e929b02328a6e7d0c75b5ce068ef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462839"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116236"
 ---
 # <a name="writing-a-termination-handler"></a>Sonlandırma İşleyicisi Yazma
-Bir özel durum işleyicisinin tersine, bir sonlandırma işleyicisi korunan kod bloğunun normal bir şekilde sonlandırılıp sonlandırılmadığına bakılmaksızın her zaman yürütülür. Sonlandırma işleyicisinin temel amacı bellek, tanıtıcılar ve dosyalar gibi kaynakları bir kod bölümünün yürütülmesinin nasıl sona erdiğine bakılmaksızın uygun bir şekilde kapatmaktır.  
-  
- Sonlandırma işleyicileri, try-finally deyimini kullanır.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
-  
--   [Try-finally deyimi](../cpp/try-finally-statement.md)  
-  
--   [Kaynakları temizleme](../cpp/cleaning-up-resources.md)  
-  
--   [Özel Durum İşlemede eylemlerin zamanlaması](../cpp/timing-of-exception-handling-a-summary.md)  
-  
--   [Sonlandırma işleyicileri kısıtlamaları](../cpp/restrictions-on-termination-handlers.md)  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)
+
+Bir özel durum işleyicisinin tersine, bir sonlandırma işleyicisi korunan kod bloğunun normal bir şekilde sonlandırılıp sonlandırılmadığına bakılmaksızın her zaman yürütülür. Sonlandırma işleyicisinin temel amacı bellek, tanıtıcılar ve dosyalar gibi kaynakları bir kod bölümünün yürütülmesinin nasıl sona erdiğine bakılmaksızın uygun bir şekilde kapatmaktır.
+
+Sonlandırma işleyicileri, try-finally deyimini kullanır.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
+
+- [Try-finally deyimi](../cpp/try-finally-statement.md)
+
+- [Kaynakları temizleme](../cpp/cleaning-up-resources.md)
+
+- [Özel Durum İşlemede eylemlerin zamanlaması](../cpp/timing-of-exception-handling-a-summary.md)
+
+- [Sonlandırma işleyicileri kısıtlamaları](../cpp/restrictions-on-termination-handlers.md)
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

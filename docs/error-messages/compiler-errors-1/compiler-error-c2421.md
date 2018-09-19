@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f52545e38207eda1ea941e100a23876e326c2a6e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d35b3249be3805d2f4898c4a8007aaa5f849ca4f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195181"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135953"
 ---
 # <a name="compiler-error-c2421"></a>Derleyici Hatası C2421
-PTR işleci 'context' kayıttaki ile kullanılan  
-  
- `PTR` İle işleci kullanılamaz bir `register` işlenen.
+
+'Context' içinde yazmaç ile PTR işleci kullanılan
+
+`PTR` İşleci kullanılamaz bir `register` işlenen.

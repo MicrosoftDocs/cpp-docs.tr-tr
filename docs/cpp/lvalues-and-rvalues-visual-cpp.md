@@ -15,18 +15,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68f13848c01f91f9302246a763dd478ee8fccdda
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 45558f9546b996d824d8cf9e8782b7323dcb91fb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39403929"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114507"
 ---
 # <a name="lvalues-and-rvalues-visual-c"></a>Lvalues ve Rvalues (Visual C++)
 
 Her bir C++ ifadesi bir türe sahiptir ve ait olduğu bir *değeri kategori*. Değer kategorileri derleyiciler oluşturma, kopyalama ve geçici nesneler ifadesi değerlendirmesi sırasında taşıma sırada izlemelidir kuralları için temelidir.
 
- C ++ 17 standardına ifade değeri kategorileri gibi tanımlar:
+C ++ 17 standardına ifade değeri kategorileri gibi tanımlar:
 
 - A *glvalue* bir ifadedir, değerlendirme, bir nesne, bit alanı veya işlev kimliğini belirler.
 - A *prvalue* ifade, değerlendirme nesneyi ya da bir bit alanına başlatır veya görünür durumda bağlam tarafından belirtildiği gibi bir işlecinin işleneni değerini hesaplar.
@@ -36,40 +36,40 @@ Her bir C++ ifadesi bir türe sahiptir ve ait olduğu bir *değeri kategori*. De
 
 Aşağıdaki diyagramda, kategoriler arasındaki ilişkiler gösterilmektedir:
 
- ![C++ ifade değeri kategorileri](media/value_categories.png "C++ ifade değeri kategorileri")
+![C++ ifade değeri kategorileri](media/value_categories.png "C++ ifade değeri kategorileri")
 
- Lvalue programınızı erişebilen bir adresi vardır. Lvalue örnekleri dahil olmak üzere değişken adları dahil **const** değişkenleri, dizi öğelerinin işlevi bir lvalue başvurusuna, bit alanları, birleşimler ve sınıf üyeleri dönen çağrıları.
+Lvalue programınızı erişebilen bir adresi vardır. Lvalue örnekleri dahil olmak üzere değişken adları dahil **const** değişkenleri, dizi öğelerinin işlevi bir lvalue başvurusuna, bit alanları, birleşimler ve sınıf üyeleri dönen çağrıları.
 
- Programınız tarafından erişilebilir olan adresi bir prvalue ifadesi yok. Değişmez değerler, bir başvuru türü olmayan dönen işlev çağrıları ve ifade evalution sırasında ancak erişilebilir yalnızca derleyici tarafından oluşturulan geçici nesneler prvalue örnekleri içerir.
+Programınız tarafından erişilebilir olan adresi bir prvalue ifadesi yok. Değişmez değerler, bir başvuru türü olmayan dönen işlev çağrıları ve ifade evalution sırasında ancak erişilebilir yalnızca derleyici tarafından oluşturulan geçici nesneler prvalue örnekleri içerir.
 
- Xvalue ifade bir adresi olduğundan, programınız tarafından artık erişilebilir ancak ifade erişim sağlayan bir rvalue başvurusu başlatmak için kullanılabilir. Diziye veya nesneye bir rvalue başvurusu olduğu bir rvalue başvurusu ve dizi indisi, üye ve işaretçi üye ifadeleri dönen işlev çağrıları örneklerindendir.
+Xvalue ifade bir adresi olduğundan, programınız tarafından artık erişilebilir ancak ifade erişim sağlayan bir rvalue başvurusu başlatmak için kullanılabilir. Diziye veya nesneye bir rvalue başvurusu olduğu bir rvalue başvurusu ve dizi indisi, üye ve işaretçi üye ifadeleri dönen işlev çağrıları örneklerindendir.
 
 ## <a name="example"></a>Örnek
 
- Aşağıdaki örnek, çeşitli doğru ve hatalı kullanımları lvalues ve rvalues gösterir:
+Aşağıdaki örnek, çeşitli doğru ve hatalı kullanımları lvalues ve rvalues gösterir:
 
 ```cpp
 // lvalues_and_rvalues2.cpp
 int main()
 {
- int i, j, *p;
+int i, j, *p;
 
- // Correct usage: the variable i is an lvalue and the literal 7 is a prvalue.
- i = 7;
+// Correct usage: the variable i is an lvalue and the literal 7 is a prvalue.
+i = 7;
 
- // Incorrect usage: The left operand must be an lvalue (C2106).`j * 4` is a prvalue.
- 7 = i; // C2106
- j * 4 = 7; // C2106
+// Incorrect usage: The left operand must be an lvalue (C2106).`j * 4` is a prvalue.
+7 = i; // C2106
+j * 4 = 7; // C2106
 
- // Correct usage: the dereferenced pointer is an lvalue.
- *p = i;
+// Correct usage: the dereferenced pointer is an lvalue.
+*p = i;
 
- const int ci = 7;
- // Incorrect usage: the variable is a non-modifiable lvalue (C3892).
- ci = 9; // C3892
+const int ci = 7;
+// Incorrect usage: the variable is a non-modifiable lvalue (C3892).
+ci = 9; // C3892
 
- // Correct usage: the conditional operator returns an lvalue.
- ((i < 3) ? i : j) = 7;
+// Correct usage: the conditional operator returns an lvalue.
+((i < 3) ? i : j) = 7;
 }
 ```
 
@@ -79,6 +79,7 @@ int main()
 Koşulları *lvalue* ve *rvalue* nesne başvuruları başvurduğunuzda sık sık kullanılır. Başvurular hakkında daha fazla bilgi için bkz. [Lvalue başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md) ve [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Temel Kavramlar](../cpp/basic-concepts-cpp.md)  
- [Lvalue Başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md)  
- [Rvalue Başvuru Bildirimcisi: &&](../cpp/rvalue-reference-declarator-amp-amp.md)
+
+[Temel Kavramlar](../cpp/basic-concepts-cpp.md)<br/>
+[Lvalue Başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md)<br/>
+[Rvalue Başvuru Bildirimcisi: &&](../cpp/rvalue-reference-declarator-amp-amp.md)

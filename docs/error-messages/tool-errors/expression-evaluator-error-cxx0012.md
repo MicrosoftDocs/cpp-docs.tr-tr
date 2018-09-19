@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7043eaf6654670935301c1f49ba88aed5745a96
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 024811c13fb27cb2da88bdddc9965d8a124e341a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297036"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135912"
 ---
 # <a name="expression-evaluator-error-cxx0012"></a>İfade Değerlendirici Hatası CXX0012
-sol kaşlı ayraç eksik  
-  
- İfade bir dengesiz kuşak içeriyor. İfade dengeli süslü ayraçlar ile yeniden yazın.  
-  
- Bu hata için CAN0012 aynıdır.
+
+Sol büyük ayraç eksik
+
+İfade dengesiz bir küme ayracı içerir. Dengeli bir küme ayraçları ifadenin yeniden yazın.
+
+Bu hata için CAN0012 aynıdır.

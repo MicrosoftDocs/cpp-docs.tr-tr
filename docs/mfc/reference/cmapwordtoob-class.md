@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9f9554f0ba8daf5a96f0fa2daa32e0e20469bf7
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 7b3487b29122b4a5109a6c0de51cd0e459380aa4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37335411"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117380"
 ---
 # <a name="cmapwordtoob-class"></a>CMapWordToOb sınıfı
 Haritalarını destekler `CObject` 16 bit sözcüklerle Anahtarlanan işaretçileri.  
@@ -63,9 +63,7 @@ class CMapWordToOb : public CObject
 ## <a name="members"></a>Üyeler  
  Üye işlevlerinin `CMapWordToOb` sınıfın üye işlevleri için benzer [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Bu benzerlik nedeniyle kullanabileceğiniz `CMapStringToOb` başvuru belgeleri üye işlev özellikleri için. Gördüğünüz yerde bir `CString` veya **const** işaretçisine **char** WORD işlevi parametre veya dönüş değeri değiştirin.  
   
- `BOOL CMapStringToOb::Lookup( const char* <key>,`  
-  
- `CObject*& <rValue> ) const;`  
+ `BOOL CMapStringToOb::Lookup( const char* <key>,` CObject* & <rValue> ) const;'  
   
  Örneğin, için çevirir  
   

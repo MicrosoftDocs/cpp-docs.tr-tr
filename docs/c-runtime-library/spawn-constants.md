@@ -30,30 +30,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3a069f9f29f6fd15c3ce21111a37757519af229
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8daaf38e60ca48b4a34deb2086bbd14eb45651e4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408756"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116938"
 ---
 # <a name="spawn-constants"></a>oluşturma Sabitleri
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-#include <process.h>  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- `mode` Bağımsız değişkeni önce ve oluşturma işlemi sırasında arama işlemi tarafından gerçekleştirilecek eylemi belirler. Aşağıdaki değerleri `mode` mümkündür:  
-  
-|Sabit|Açıklama|  
-|--------------|-------------|  
-|`_P_OVERLAY`|Yeni bir işlem olan işlem çağrılırken, arama işlemi yok etme yer paylaşımları (aynı efekt olarak `_exec` çağrıları).|  
-|`_P_WAIT`|Yeni işlem yürütme işlemi tamamlanana kadar çağıran iş parçacığı askıya alır (zaman uyumlu `_spawn`).|  
-|`_P_NOWAIT`, `_P_NOWAITO`|Eşzamanlı olarak yeni bir işlem çağırma işlemi yürütmeye devam eder (zaman uyumsuz `_spawn`).|  
-|`_P_DETACH`|Arama işlemi gerçekleştirilmeye devam eder; Yeni işlem konsolunu veya klavye, hiçbir erişim arka planda çalıştırılır. Çağrılar `_cwait` karşı yeni bir işlem başarısız olur. Zaman uyumsuz bir budur `_spawn`.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [_spawn, _wspawn işlevleri](../c-runtime-library/spawn-wspawn-functions.md)   
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+#include <process.h>
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+`mode` Bağımsız değişken önce ve üretme işlemi sırasında arama işlemi tarafından gerçekleştirilecek eylemi belirler. Aşağıdaki değerleri `mode` mümkündür:
+
+|Sabit|Açıklama|
+|--------------|-------------|
+|`_P_OVERLAY`|Çağırma işlemi ile yeni bir işlem, arama işlemi yok etme yer paylaşımları (aynı efekt olarak `_exec` çağırır).|
+|`_P_WAIT`|Yeni işlem yürütme işlemi tamamlanana kadar çağıran iş parçacığını askıya alır (zaman uyumlu `_spawn`).|
+|`_P_NOWAIT`, `_P_NOWAITO`|Yeni işlem aynı anda arama işlemi yürütmeye devam eder (zaman uyumsuz `_spawn`).|
+|`_P_DETACH`|Arama işlemi yürütmeye devam eder; Yeni işlem konsolunda veya klavye erişim olmaksızın arka planda çalıştırılır. Çağrılar `_cwait` karşı yeni bir işlem başarısız olur. Zaman uyumsuz budur `_spawn`.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[_spawn, _wspawn İşlevleri](../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[Global Sabitler](../c-runtime-library/global-constants.md)

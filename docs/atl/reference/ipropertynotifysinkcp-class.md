@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab7e3731132e1b9ed9381a7b97347406b620df70
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 13ddd14ad530fa2b7ce2892ce8838b27e307381f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759671"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135782"
 ---
 # <a name="ipropertynotifysinkcp-class"></a>Ipropertynotifysinkcp sınıfı
 
@@ -36,17 +36,17 @@ Bu sınıf sunan [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-iprop
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<class T, class CDV = CComDynamicUnkArray>  
+template<class T, class CDV = CComDynamicUnkArray>
 class IPropertyNotifySinkCP 
    : public IConnectionPointImpl<T, &IID_IPropertyNotifySink, CDV>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `IPropertyNotifySinkCP`.
 
-*CDV*  
+*CDV*<br/>
 Bir bağlantı noktası ve onun havuz arasındaki bağlantıları yöneten bir sınıf. Varsayılan değer [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), sınırsız sayıda bağlantı sağlar. Ayrıca [CComUnkArray](../../atl/reference/ccomunkarray-class.md), sabit sayıda bağlantı belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -65,6 +65,6 @@ ATL bağlantı noktaları hakkında daha fazla bilgi için bkz [bağlantı nokta
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Iconnectionpointımpl sınıfı](../../atl/reference/iconnectionpointimpl-class.md)   
-[Iconnectionpointcontainerımpl sınıfı](../../atl/reference/iconnectionpointcontainerimpl-class.md)   
+[IConnectionPointImpl Sınıfı](../../atl/reference/iconnectionpointimpl-class.md)<br/>
+[IConnectionPointContainerImpl Sınıfı](../../atl/reference/iconnectionpointcontainerimpl-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

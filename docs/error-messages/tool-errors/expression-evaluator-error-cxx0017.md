@@ -17,26 +17,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7540dc701ffa6e0acb3d2661e1196e5f4552d2c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 431071137fb3f5b1b276327ee7d21f323ac24c5b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300756"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136250"
 ---
 # <a name="expression-evaluator-error-cxx0017"></a>İfade Değerlendirici Hatası CXX0017
-Sembol bulunamadı  
-  
- Bir deyim içinde belirtilen bir simge bulunamadı.  
-  
- Bu hatanın olası bir nedeni bir simge adı büyük/küçük harfe eşleşmemesidir. C ve C++ büyük küçük harfe duyarlı dilleri olduğundan, kaynak olarak tanımlandığı tam durumda bir simge adı verilmesi gerekir.  
-  
- Bu hata, hata ayıklama sırasında değişkeni izlemek için bir değişken typecast çalıştığınızda oluşabilir. `typedef` Bir tür için yeni bir ad bildirir, ancak yeni bir tür tanımlamıyor. Hata ayıklayıcıda çalıştı typecast tanımlanmış bir türü adı gerektirir.  
-  
- Bu hata için CAN0017 aynıdır.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümlere kullanarak düzeltmek için  
-  
-1.  Simgenin zaten burada kullanılıyor programı noktada bildirildiğinden emin olun.  
-  
-2.  Hata Ayıklayıcısı'ndaki değişkenler yayınlanamıyor gerçek tür adı kullanmak yerine bir `typedef`-adı tanımlı.
+
+Sembol bulunamadı
+
+Belirtilen bir ifadede bir sembolü bulunamadı.
+
+Bu hatanın olası nedenlerinden biri, sembol adı büyük/küçük harf uyuşmazlık olmasıdır. C ve C++ dilleri büyük küçük harfe duyarlı olduğundan, kaynak olarak tanımlandığı tam durumda bir sembol adı verilmesi gerekir.
+
+Bu hata, hata ayıklama sırasında değişkeni izlemek için bir değişken türü atayarak çalışırken ortaya çıkabilir. `typedef` Bir türü için yeni bir ad bildirir ancak yeni bir tür tanımlamıyor. Hata ayıklayıcıda çalıştı typecast tanımlanan bir tür adı gerektirir.
+
+Bu hata için CAN0017 aynıdır.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+
+1. Sembol zaten kullanıldığı yerin programda bir noktada bildirildiğinden emin olun.
+
+1. Gerçek tür adı hata ayıklayıcıda değişkenler olarak kullanmak yerine `typedef`-tanımlanan adı.

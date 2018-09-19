@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da0db5c678b257e3039644627e958bd67b8e4e0a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fe111f84a5ebf056cb0a806e90cb660060bbf3b4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226413"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135925"
 ---
 # <a name="fatal-error-c1053"></a>Önemli hata C1053
-'\<tanımlayıcısı >': çok büyük işlevi  
-  
- İşlev derlemek için çok büyük.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümlere kullanarak düzeltmek için  
-  
-1.  En iyi duruma getirme derlemeyi deneyin.  
-  
-2.  İşlev küçük işlevlerini bölün.  
-  
-3.  Satır içi işlevler çağrıları azaltır.
+
+'\<tanımlayıcısı >': işlev çok büyük
+
+İşlev, derlemek için çok büyük.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+
+1. En iyi duruma getirme derlemeyi deneyin.
+
+1. İşlevi, daha küçük işlevlere bölün.
+
+1. Satır içi işlev çağrıları azaltır.
