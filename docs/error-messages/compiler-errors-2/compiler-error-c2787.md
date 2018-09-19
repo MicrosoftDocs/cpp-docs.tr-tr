@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6b45d27c295b37d859d6451281f52c166dc1691
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a4096e5dbd5b885afe3dec136a111ec69a10784f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33234632"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109138"
 ---
 # <a name="compiler-error-c2787"></a>Derleyici Hatası C2787
-'tanımlayıcısı': hiçbir GUID Bu nesneyle ilişkili bırakıldı  
-  
- [__Uuidof](../../cpp/uuidof-operator.md) işleci bağlı bir GUID veya türünde bir nesne gibi bir kullanıcı tarafından tanımlanan kullanıcı tarafından tanımlanan bir türü alır. Bağımsız değişken yok GUID ile kullanıcı tanımlı bir tür olduğunda bu hata oluşur.  
-  
- Aşağıdaki örnek C2787 oluşturur:  
-  
-```  
-// C2787.cpp  
-#include <windows.h>  
-struct F {};  
-  
-struct __declspec(uuid("00000000-0000-0000-c000-000000000046")) F2;  
-  
-int main() {  
-   __uuidof(F);   // C2787  
-   __uuidof(F2);   // OK  
-}  
+
+'identifier': Bu nesneyle ilişkili hiçbir GUID olan
+
+[__Uuidof](../../cpp/uuidof-operator.md) işleci ile bağlı bir GUID veya böyle bir kullanıcı tanımlı türde bir nesne kullanıcı tanımlı bir tür alır. Bağımsız değişken yok GUID'e sahip kullanıcı tanımlı bir tür olduğunda bu hata oluşur.
+
+Aşağıdaki örnek, C2787 oluşturur:
+
+```
+// C2787.cpp
+#include <windows.h>
+struct F {};
+
+struct __declspec(uuid("00000000-0000-0000-c000-000000000046")) F2;
+
+int main() {
+   __uuidof(F);   // C2787
+   __uuidof(F2);   // OK
+}
 ```

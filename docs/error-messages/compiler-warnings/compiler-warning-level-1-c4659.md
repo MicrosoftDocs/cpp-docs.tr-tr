@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 643b599cd11d0935f1769ad37dca4e764f0418e6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d00c54fa77d68722b2e47a9d49832911b398deca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33285622"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110067"
 ---
 # <a name="compiler-warning-level-1-c4659"></a>Derleyici Uyarısı (düzey 1) C4659
-\#pragma 'pragma': ayrılmış segment 'segmenti' kullanımını davranışı tanımlı olmayan, #pragma Açıklama (Bağlayıcı,...) kullanın  
-  
- .Drectve seçeneği bağlayıcı için bir seçenek geçirmek için kullanıldı. Bunun yerine pragma kullanın [açıklama](../../preprocessor/comment-c-cpp.md) bağlayıcı seçeneği geçirme için.  
-  
-```  
-// C4659.cpp  
-// compile with: /W1 /LD  
-#pragma code_seg(".drectve")   // C4659  
+
+\#pragma 'pragma': ayrılmış segment 'segmenti' kullanımını tanımsız davranış, #pragma açıklamasını (Bağlayıcı,...) kullanın
+
+.Drectve seçeneği, bağlayıcıya bir seçenek geçirmek için kullanıldı. Bunun yerine pragması kullanın [yorum](../../preprocessor/comment-c-cpp.md) bağlayıcı seçeneği geçirmek için.
+
+```
+// C4659.cpp
+// compile with: /W1 /LD
+#pragma code_seg(".drectve")   // C4659
 ```

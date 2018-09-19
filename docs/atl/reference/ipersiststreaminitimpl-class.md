@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b31e8c712ef7c395570912224f75036e6249b431
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 85e772b9222f2066259042e551fa393758559ab2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761975"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115885"
 ---
 # <a name="ipersiststreaminitimpl-class"></a>Ipersiststreamınitımpl sınıfı
 
@@ -42,14 +42,14 @@ Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IPer
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<class T>  
+template<class T>
 class ATL_NO_VTABLE IPersistStreamInitImpl 
    : public IPersistStreamInit
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `IPersistStreamInitImpl`.
 
 ## <a name="members"></a>Üyeler
@@ -163,5 +163,5 @@ Bkz: [IPersistStreamInit::Save](/windows/desktop/api/ocidl/nf-ocidl-ipersiststre
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Depolar ve akışlar](/windows/desktop/Stg/storages-and-streams)   
+[Depolar ve akışlar](/windows/desktop/Stg/storages-and-streams)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

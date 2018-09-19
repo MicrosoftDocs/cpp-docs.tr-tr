@@ -55,14 +55,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b7eaba589e729230c0392ac67eff2389d430f842
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 2669f7ff0756c0450e64b1b37624bb95f2c1216e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466363"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111296"
 ---
 # <a name="cdberrorinfo-class"></a>CDBErrorInfo Sınıfı
+
 OLE DB kullanarak OLE DB hata işleme için destek sağlayan [IErrorRecords](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -72,7 +73,8 @@ class CDBErrorInfo
 ``` 
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldbcli.h 
+
+**Başlık:** atldbcli.h 
   
 ## <a name="members"></a>Üyeler  
   
@@ -88,9 +90,11 @@ class CDBErrorInfo
 |[GetErrorRecords](#geterrorrecords)|Belirtilen nesne için hata kayıtları alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu arabirim, kullanıcıya bir veya daha fazla hata kaydı döndürür. Çağrı [Cdberrorınfo::geterrorrecords](../../data/oledb/cdberrorinfo-geterrorrecords.md) hata kaydı sayısını almak için ilk olarak,. Ardından gibi erişim biri işlev çağrısı [Cdberrorınfo::getallerrorınfo](../../data/oledb/cdberrorinfo-getallerrorinfo.md), her kayıt için hata bilgisi alınamıyor.  
+
+Bu arabirim, kullanıcıya bir veya daha fazla hata kaydı döndürür. Çağrı [Cdberrorınfo::geterrorrecords](../../data/oledb/cdberrorinfo-geterrorrecords.md) hata kaydı sayısını almak için ilk olarak,. Ardından gibi erişim biri işlev çağrısı [Cdberrorınfo::getallerrorınfo](../../data/oledb/cdberrorinfo-getallerrorinfo.md), her kayıt için hata bilgisi alınamıyor.  
   
 ## <a name="getallerrorinfo"></a> Cdberrorınfo::getallerrorınfo
+
 Hata bilgilerini bir hata kaydında bulunan tüm türlerini döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -105,38 +109,42 @@ HRESULT GetAllErrorInfo(ULONG ulRecordNum,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *ulRecordNum*  
- [in] Sıfır tabanlı hata bilgilerini döndürülecek kayıt sayısı.  
+
+*ulRecordNum*<br/>
+[in] Sıfır tabanlı hata bilgilerini döndürülecek kayıt sayısı.  
   
- *lcid*  
- [in] Yerel ayar kimliği döndürülen hata bilgileri için.  
+*lcid*<br/>
+[in] Yerel ayar kimliği döndürülen hata bilgileri için.  
   
- *pbstrDescription*  
- [out] Bir metin açıklama hata ya da yerel desteklenmiyorsa NULL bir işaretçi. Açıklamalara bakın.  
+*pbstrDescription*<br/>
+[out] Bir metin açıklama hata ya da yerel desteklenmiyorsa NULL bir işaretçi. Açıklamalara bakın.  
   
- *pbstrSource*  
- [out] Hatayı oluşturan bileşen adını içeren bir dize işaretçisi.  
+*pbstrSource*<br/>
+[out] Hatayı oluşturan bileşen adını içeren bir dize işaretçisi.  
   
- *pguid*  
- [out] GUID hata tanımlı arabiriminin bir işaretçi.  
+*pguid*<br/>
+[out] GUID hata tanımlı arabiriminin bir işaretçi.  
   
- *pdwHelpContext*  
- [out] Hata için Yardım içeriği kimliği için bir işaretçi.  
+*pdwHelpContext*<br/>
+[out] Hata için Yardım içeriği kimliği için bir işaretçi.  
   
- *pbstrHelpFile*  
- [out] Hatayı açıklayan Yardım dosyasının yolunu içeren bir dize işaretçisi.  
+*pbstrHelpFile*<br/>
+[out] Hatayı açıklayan Yardım dosyasının yolunu içeren bir dize işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa S_OK. Bkz: [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* diğer dönüş değerleri için.  
+
+Başarılıysa S_OK. Bkz: [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* diğer dönüş değerleri için.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çıkış değeri *pbstrDescription* dahili olarak çağırılarak alınır `IErrorInfo::GetDescription`, ayarlar değeri NULL olarak yerel ayarı desteklenmiyor veya aşağıdaki koşulların her ikisi de doğruysa:  
+
+Çıkış değeri *pbstrDescription* dahili olarak çağırılarak alınır `IErrorInfo::GetDescription`, ayarlar değeri NULL olarak yerel ayarı desteklenmiyor veya aşağıdaki koşulların her ikisi de doğruysa:  
   
-1.  değerini *LCID* ABD değil İngilizce ve  
+1. değerini *LCID* ABD değil İngilizce ve  
   
-2.  değerini *LCID* olan GetUserDefaultLCID tarafından döndürülen değer eşit değildir. 
+1. değerini *LCID* olan GetUserDefaultLCID tarafından döndürülen değer eşit değildir. 
 
 ## <a name="getbasicerrorinfo"></a> Cdberrorınfo::getbasicerrorınfo
+
 Çağrıları [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) sağlayıcıya özgü hata numarası ve dönüş kodu gibi bir hata ile ilgili temel bilgileri döndürmek için.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -147,12 +155,15 @@ HRESULT GetBasicErrorInfo(ULONG ulRecordNum,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT.  
+
+Standart bir HRESULT.  
 
 ## <a name="getcustomerrorobject"></a> Cdberrorınfo::getcustomerrorobject
+
 Çağrıları [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) bir özel hata nesnesi üzerinde bir arabirim işaretçisi döndürülecek.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -163,12 +174,15 @@ HRESULT GetCustomErrorObject(ULONG ulRecordNum,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT.  
+
+Standart bir HRESULT.  
 
 ## <a name="geterrorinfo"></a> Cdberrorınfo::geterrorınfo
+
 Çağrıları [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) döndürülecek bir [IErrorInfo](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) belirtilen kayıt arabirim işaretçisi.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -179,12 +193,15 @@ HRESULT GetErrorInfo(ULONG ulRecordNum,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT.  
+
+Standart bir HRESULT.  
 
 ## <a name="geterrorparameters"></a> Cdberrorınfo::geterrorparameters
+
 Çağrıları [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) hata parametreleri dönün.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -195,12 +212,15 @@ HRESULT GetErrorParameters(ULONG ulRecordNum,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT.  
+
+Standart bir HRESULT.  
 
 ## <a name="geterrorrecords"></a> Cdberrorınfo::geterrorrecords
+
 Belirtilen nesne için hata kayıtları alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -214,22 +234,26 @@ HRESULT GetErrorRecords(ULONG* pcRecords) throw();
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *pUnk*  
- [in] Hata kaydı alınacağı nesne için arabirim.  
+
+*pUnk*<br/>
+[in] Hata kaydı alınacağı nesne için arabirim.  
   
- *IID*  
- [in] IID hatayla ilişkili arabirimi.  
+*IID*<br/>
+[in] IID hatayla ilişkili arabirimi.  
   
- *pcRecords*  
- [out] Hata Kayıt (bir tabanlı) sayısı için bir işaretçi.  
+*pcRecords*<br/>
+[out] Hata Kayıt (bir tabanlı) sayısı için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT.  
+
+Standart bir HRESULT.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hata bilgileri almak için hangi arabirim kontrol etmek istediğiniz işlevin ilk formu kullanın. Aksi takdirde, ikinci formu kullanın.  
+
+Hata bilgileri almak için hangi arabirim kontrol etmek istediğiniz işlevin ilk formu kullanın. Aksi takdirde, ikinci formu kullanın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [DBVIEWER](../../visual-cpp-samples.md)   
- [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+
+[DBViewer](../../visual-cpp-samples.md)<br/>
+[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

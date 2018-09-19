@@ -1,5 +1,5 @@
 ---
-title: Ömür | Microsoft Docs
+title: Yaşam süresi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -27,29 +27,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1030bf3f0ef907f3904bca92da4e43646d0e1a8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 34873681d0bc33cede9cda994aa9684e04a689e4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387489"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113779"
 ---
 # <a name="lifetime"></a>Ömür
-"Ömrü" olan bir programın yürütülmesini dönemde bulunduğu bir değişken veya işlev içinde. Depolama süresi tanımlayıcının yaşam süresi belirler.  
-  
- Bir tanımlayıcı ile bildirilen *depolama sınıfı tanımlayıcısı* **statik** statik depolama süresi vardır. Tanımlayıcılar ("Genel" da denir) statik depolama süresi ile bir program boyunca depolama ve tanımlı bir değer vardır. Depolama ayrılır ve kimliğinin depolanan değer yalnızca bir kez program başlatma önce başlatılır. Tanımlayıcı bildirilen dış veya iç bağlantı de statik depolama süresi vardır (bkz [bağlantı](../c-language/linkage.md)).  
-  
- Tanımlayıcı olmadan bildirilen **statik** depolama sınıfı tanımlayıcısı varsa otomatik depolama süresi içinde bir işlev bildirilmiş. Otomatik depolama süresi ile bir tanımlayıcı ("yerel tanımlayıcısı") depolama ve burada tanımlayıcısı tanımlı veya bildirilen yalnızca blok içinde tanımlanmış bir değere sahip. Otomatik tanımlayıcı program girer, blok her zaman yeni depolama ayrılır ve depolama alanı (ve değerini) kaybeder program blok çıktığında. Bağlantısı olmayan bir işlev içinde bildirilen tanımlayıcıları da otomatik depolama süresi vardır.  
-  
- Aşağıdaki kuralları bir tanımlayıcı genel (statik) veya yerel (otomatik) ömrü sahip olup olmadığını belirtin:  
-  
--   Tüm işlevleri statik ömrü vardır. Bu nedenle, her zaman program yürütülmesi sırasında kalırlar. Tanımlayıcıları bildirilen dış düzeyinde (diğer bir deyişle, tüm dış işlev tanımları aynı düzeyde programında engeller) her zaman genel (statik) yaşam süresi vardır.  
-  
--   Yerel değişkene bir başlatıcı varsa, her seferinde onu oluşturulur değişkeni başlatılır (olarak bildirilir sürece **statik**). İşlev parametreleri de yerel ömrü vardır. Bir bloğu içinde bir tanımlayıcı için genel yaşam süresini dahil ederek belirtebilirsiniz **statik** bildiriminden depolama sınıfı tanımlayıcısı. Bir kez bildirilen **statik**, bloğun bir giriş değerinden sonraki değişkeni korur.  
-  
- Kaynak program yürütme tanıtıcıya sahip bir genel bulunmasına karşın (örneğin, bir harici olarak bildirilen değişkeni veya ile bildirilen yerel değişken **statik** anahtar sözcüğü), tüm görünür olmayabilir program bölümlerini. Bkz: [kapsam ve görünürlük](../c-language/scope-and-visibility.md) görünürlük ve bakın hakkında bilgi için [depolama sınıfları](../c-language/c-storage-classes.md) bir irdelemesi *depolama sınıfı tanımlayıcısı* nonterminal.  
-  
- Bellek ayrılan kullanımı ile özel kitaplık yordamları gibi oluşturduysanız (dinamik) gerektiği gibi `malloc`. Dinamik bellek ayırma kitaplık yordamları kullandığından, dil parçası dikkate alınmaz. Bkz: [malloc](../c-runtime-library/reference/malloc.md) işlevi *çalışma zamanı kitaplığı başvurusu*.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Ömür, Kapsam, Görünürlük ve Bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)
+
+"Ömür" olan bir programın yürütülmesi sırasında bir süre içinde bir değişken veya işlev yok. Depolama süresi tanımlayıcısının ömrü belirler.
+
+Bildirilmiş bir tanımlayıcı ile *depolama sınıfı tanımlayıcısı* **statik** statik depolama süresine sahip. Tanımlayıcılar ("Genel" da denir) statik depolama süresine sahip, bir program süresince depolama ve tanımlı bir değer sahip. Depolama ayrılır ve tanımlayıcının depolanan değeri yalnızca bir kez, program başlatma önce başlatılır. Bildirilmiş bir tanımlayıcı ile dış veya iç bağlantı ayrıca statik depolama süresine sahip (bkz [bağlantı](../c-language/linkage.md)).
+
+Olmadan bildirilmiş bir tanımlayıcı **statik** depolama sınıfı belirticisi, bir işlev içinde bildirilirse otomatik depolama süresine sahip. Otomatik depolama süresine sahip bir tanımlayıcı depolama ve yalnızca burada tanımlayıcı tanımlandı veya bildirildi bloğu içinde tanımlı bir değer ("Yerel tanımlayıcı") sahiptir. Otomatik bir tanımlayıcı, program o blok girer her zaman yeni depolama ayrılır ve depolamasını (ve değerinin) kaybeder blok çıktığında program. Bağlantısı olmayan adlar bir işlev içinde bildirilen tanımlayıcılar, ayrıca otomatik depolama süresine sahip.
+
+Aşağıdaki kurallar, bir tanımlayıcı genel (statik) veya yerel (otomatik) ömrü olup olmadığını belirleyin:
+
+- Tüm İşlevler statik ömre sahiptir. Bu nedenle bunlar, her zaman program yürütme sırasında mevcut. Tanımlayıcılar dış düzeyinde bildirilen (diğer bir deyişle, dışındaki tüm işlev tanımlarının aynı düzeyde programı engeller) her zaman genel (statik) ömre sahip.
+
+- Yerel bir değişken bir başlatıcı varsa, her zaman oluşturulduğu değişkeni başlatılır (olarak bildirilmedikleri sürece **statik**). İşlev parametreleri de yerel kullanım ömrüne sahip. Dahil ederek bir blok içerisindeki tanımlayıcının genel ömrünü belirtebilirsiniz **statik** kendi bildiriminde depolama sınıfı tanımlayıcısı. Bir kez bildirilen **statik**, değişken blok bir girdi değerinden sonraki korur.
+
+Bir tanımlayıcı ile küresel bir ömrü kaynak programın yürütülmesini mevcut olsa da (örneğin, harici olarak bildirilmiş bir değişken veya ile bildirilen yerel değişken **statik** anahtar sözcüğü), tüm görünür olmayabilir program bölümleri. Bkz: [kapsam ve görünürlük](../c-language/scope-and-visibility.md) görmek ve görünürlüğü hakkında bilgi için [depolama sınıfları](../c-language/c-storage-classes.md) bir irdelemesi *depolama sınıfı tanımlayıcısı* bildirimlere.
+
+Bellek ayrılan (dinamik) gibi özel kitaplık yordamları kullanarak oluşturduysanız, gerektiğinde `malloc`. Dinamik bellek ayırma kitaplık yordamları kullandığından, bu dilinin bir parçası olarak kabul edilmez. Bkz: [malloc](../c-runtime-library/reference/malloc.md) işlevi *çalışma zamanı kitaplığı başvurusu*.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Ömür, Kapsam, Görünürlük ve Bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)

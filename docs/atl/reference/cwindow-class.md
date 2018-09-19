@@ -163,12 +163,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72b27036ffe84ff915bfcda0205469ef79e00255
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 46e3926f31ec7d12da539d868cacb37e18134e96
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757094"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109705"
 ---
 # <a name="cwindow-class"></a>CWindow sınıfı
 
@@ -410,7 +410,7 @@ void Attach(HWND hWndNew) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*hWndNew*  
+*hWndNew*<br/>
 [in] Bir pencere için işleme.
 
 ### <a name="example"></a>Örnek
@@ -459,7 +459,7 @@ BOOL CenterWindow(HWND hWndCenter = NULL) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*hWndCenter*  
+*hWndCenter*<br/>
 [in] Merkezi kendisine karşı penceresine tanıtıcısı. Bu parametre NULL (varsayılan değer) ise, yöntem ayarlayacak *hWndCenter* alt penceresi ise pencerenin üst penceresine. Aksi takdirde, ayarlayacak *hWndCenter* pencerenin sahip penceresine.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -566,28 +566,28 @@ HWND Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpstrWndClass*  
+*lpstrWndClass*<br/>
 [in] Pencere sınıfı için bir işaretçi.
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] Üst veya sahibi penceresine tanıtıcısı.
 
-*Rect*  
+*Rect*<br/>
 [in] Türünde bir değişken [_U_RECT](../../atl/reference/u-rect-class.md) pencerenin konumunu belirtme. Varsayılan değer NULL olur. Bu parametre değeri NULL olduğunda `CWindow::rcDefault` kullanılır.
 
-*szWindowName*  
+*szWindowName*<br/>
 [in] Pencerenin adını belirtir. Varsayılan değer NULL olur.
 
-*dwStyle*  
+*dwStyle*<br/>
 [in] Pencere stili. Varsayılan değer 0'dır, yani herhangi bir stil belirtilir. Olası değerler listesi için bkz. [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK.
 
-*dwExStyle*  
+*dwExStyle*<br/>
 [in] Genişletilmiş pencere stili. Varsayılan değer 0'dır, yani hiçbir genişletilmiş stili belirtildi. Olası değerler listesi için bkz. [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.
 
-*MenuOrID*  
+*MenuOrID*<br/>
 [in] Türünde bir değişken [_u_menuorıd](../../atl/reference/u-menuorid-class.md) bir menü veya bir pencere tanımlayıcısı tanıtıcısını belirtme. 0U varsayılan değerdir.
 
-*lpCreateParam*  
+*lpCreateParam*<br/>
 İçerdiği pencere oluşturma veriler için bir işaretçi bir [CREATESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632603) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -652,7 +652,7 @@ CWindow(HWND hWnd = NULL) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*  
+*hWnd*<br/>
 [in] Bir pencere için işleme.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -911,7 +911,7 @@ HWND GetDescendantWindow(int nID) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nID*  
+*nID*<br/>
 [in] Alınacak alt pencerenin tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -935,13 +935,13 @@ HRESULT GetDlgControl(
 
 ### <a name="parameters"></a>Parametreler
 
-*nID*  
+*nID*<br/>
 [in] Kaynak Kimliği alınıyor denetimi.
 
-*IID*  
+*IID*<br/>
 [in] Denetiminden almak istediğiniz arabirim kimliği.
 
-*ppCtrl*  
+*ppCtrl*<br/>
 [out] Arabirim işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -977,13 +977,13 @@ HRESULT GetDlgHost(
 
 ### <a name="parameters"></a>Parametreler
 
-*nID*  
+*nID*<br/>
 [in] Kaynak Kimliği alınıyor denetimi.
 
-*IID*  
+*IID*<br/>
 [in] Denetiminden almak istediğiniz arabirim kimliği.
 
-*ppHost*  
+*ppHost*<br/>
 [out] Arabirim işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1098,7 +1098,7 @@ HICON GetIcon(BOOL bBigIcon = TRUE) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*bBigIcon*  
+*bBigIcon*<br/>
 [in] TRUE ise (varsayılan değer) yöntem büyük simge döndürür. Aksi takdirde, küçük simge döndürür.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1448,16 +1448,16 @@ int GetWindowText(CSimpleString& strText) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszStringBuf*  
+*lpszStringBuf*<br/>
 Pencere metni yazılacağı için arabellek.
 
-*nMaxCount*  
+*nMaxCount*<br/>
 Arabelleğinin karakter cinsinden boyutunu; Ayrıca en fazla yazılacak karakter sayısı.
 
-*bstrText*  
+*bstrText*<br/>
 Pencere metni depolanacağı bir BSTR.
 
-*strText*  
+*strText*<br/>
 A `CString` depolanacağı pencere metni.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1761,7 +1761,7 @@ BOOL LockWindowUpdate(BOOL bLock = TRUE) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Blok*  
+*Blok*<br/>
 [in] Değilse (varsayılan değer) TRUE, pencerenin kilitlenir. Aksi takdirde, kilidi olacaktır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1833,13 +1833,13 @@ BOOL ModifyStyle(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwRemove*  
+*dwRemove*<br/>
 [in] Pencere stilleri stil değişikliği sırasında kaldırılacak belirtir.
 
-*dwAdd*  
+*dwAdd*<br/>
 [in] Pencere stilleri stilini değiştirme sırasında eklenecek belirtir.
 
-*nFlags*  
+*nFlags*<br/>
 [in] Pencere yerleştirme bayraklar. Olası değerler listesi için bkz. [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK'sında işlev.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1879,13 +1879,13 @@ BOOL ModifyStyleEx(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwRemove*  
+*dwRemove*<br/>
 [in] Genişletilmiş stiller, stil değişikliği sırasında kaldırılacak belirtir.
 
-*dwAdd*  
+*dwAdd*<br/>
 [in] Genişletilmiş stiller stilini değiştirme sırasında eklenecek belirtir.
 
-*nFlags*  
+*nFlags*<br/>
 [in] Pencere yerleştirme bayraklar. Olası değerler listesi için bkz. [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK'sında işlev.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1963,7 +1963,7 @@ Bkz: [OpenClipboard](/windows/desktop/api/winuser/nf-winuser-openclipboard) Wind
 
 Dönüştürür bir `CWindow` HWND için nesne.
 
-```  
+```
 operator HWND() const throw();
 ```
 
@@ -2018,10 +2018,10 @@ void Print(HDC hDC, DWORD dwFlags) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*hDC*  
+*hDC*<br/>
 [in] Bir cihaz bağlamı için tanıtıcı.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 [in] Çizim seçenekleri belirtir. Bir veya daha fazla aşağıdaki bayraklar birleştirebilirsiniz:
 
 - PRF_CHECKVISIBLE penceresi yalnızca görünür durumdaysa çizin.
@@ -2046,10 +2046,10 @@ void PrintClient(HDC hDC, DWORD dwFlags) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*hDC*  
+*hDC*<br/>
 [in] Bir cihaz bağlamı için tanıtıcı.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 [in] Çizim seçenekleri belirtir. Bir veya daha fazla aşağıdaki bayraklar birleştirebilirsiniz:
 
 - PRF_CHECKVISIBLE penceresi yalnızca görünür durumdaysa çizin.
@@ -2122,13 +2122,13 @@ BOOL ResizeClient(
 
 ### <a name="parameters"></a>Parametreler
 
-*nWidth*  
+*nWidth*<br/>
 Yeni pencere piksel cinsinden genişliği.
 
-*nHeight*  
+*nHeight*<br/>
 Yeni pencere piksel cinsinden yüksekliği.
 
-*bRedraw*  
+*bRedraw*<br/>
 Değişiklikleri yeniden çizmek etkinleştirilip etkinleştirilmeyeceğini belirten bayrak. Pencerenin değişiklikleri çizmez belirten FALSE, varsayılan değerdir.
 
 ##  <a name="screentoclient"></a>  CWindow::ScreenToClient
@@ -2236,16 +2236,16 @@ void SendMessageToDescendants(
 
 ### <a name="parameters"></a>Parametreler
 
-*message*  
+*message*<br/>
 [in] Gönderilecek ileti.
 
-*wParam*  
+*wParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
-*lParam*  
+*lParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
-*bDeep*  
+*bDeep*<br/>
 [in] TRUE ise (varsayılan değer) tüm alt windows; mesajı gönderilir Aksi takdirde, yalnızca ilk alt windows gönderilir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2319,7 +2319,7 @@ int SetDlgCtrlID(int nID) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nID*  
+*nID*<br/>
 [in] Pencerenin tanımlayıcısı için ayarlanacak yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2379,10 +2379,10 @@ void SetFont(HFONT hFont, BOOL bRedraw = TRUE) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*hFont*  
+*hFont*<br/>
 [in] Yeni yazı tipi için tanıtıcı.
 
-*bRedraw*  
+*bRedraw*<br/>
 [in] Değilse (varsayılan değer) TRUE, pencereyi yeniden çizilir. Aksi takdirde, bu değildir.
 
 ##  <a name="sethotkey"></a>  CWindow::SetHotKey
@@ -2395,10 +2395,10 @@ int SetHotKey(WORD wVirtualKeyCode, WORD wModifiers) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*wVirtualKeyCode*  
+*wVirtualKeyCode*<br/>
 [in] Kısayol tuşu sanal anahtar kodu. Winuser.h standart sanal anahtar kodlarının listesi için bkz.
 
-*wModifiers*  
+*wModifiers*<br/>
 [in] Kısayol tuşu değiştiriciler. Olası değerler listesi için Windows SDK'sındaki WM_SETHOTKEY bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2415,10 +2415,10 @@ HICON SetIcon(HICON hIcon, BOOL bBigIcon = TRUE) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*hIcon*  
+*hIcon*<br/>
 [in] Rapordaki yeni simge için tanıtıcı.
 
-*bBigIcon*  
+*bBigIcon*<br/>
 [in] Değilse (varsayılan değer) TRUE, büyük bir simge yöntemini ayarlar. Aksi takdirde, küçük simge ayarlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2467,7 +2467,7 @@ void SetRedraw(BOOL bRedraw = TRUE) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*bRedraw*  
+*bRedraw*<br/>
 [in] Güncellenmediğini bayrak durumunu belirtir. Değilse (varsayılan değer) TRUE, yeniden düzenleme bayrağı ayarlanır; FALSE ise, bayrak temizlenir.
 
 ### <a name="remarks"></a>Açıklamalar

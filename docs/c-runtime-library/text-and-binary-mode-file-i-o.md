@@ -25,26 +25,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4be1a3619fcd441dbcca53b0a1c369e30f9fb678
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 133f62347998ad8238c3136c3de03b08ba41346d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411490"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116262"
 ---
 # <a name="text-and-binary-mode-file-io"></a>Metin ve İkili Mod Dosyası G/Ç
 
-Dosya g/ç işlemleri sürer iki çeviri modlarından birini yerinde *metin* veya *ikili*dosya açıldığı mod bağlı olarak. Veri dosyaları genellikle metin modunda işlenir. Dosya çevirisi modu denetlemek için birini yapabilirsiniz:
+Dosya g/ç işlemleri Al iki çeviri modlarından birini yerinde *metin* veya *ikili*dosya açıldığı mod bağlı olarak. Veri dosyaları, genellikle metin modunda işlenir. Dosya çevirisi modu kontrol etmek için birini yapabilirsiniz:
 
-- Geçerli varsayılan ayarı koruyun ve yalnızca seçilen dosyaları açtığınızda alternatif modunu belirtin.
+- Geçerli varsayılan ayar Koru ve yalnızca seçilen dosyalar açıldığında alternatif modu belirtin.
 
-- İşlevini [_set_fmode](../c-runtime-library/reference/set-fmode.md) açılmış dosyaları için yeni varsayılan modunu değiştirmek için. Kullanım [_get_fmode](../c-runtime-library/reference/get-fmode.md) geçerli varsayılan mod bulunamıyor. Metin modunu ilk varsayılan ayardır (**_O_TEXT**).
+- İşlevini [_set_fmode](../c-runtime-library/reference/set-fmode.md) açılmış dosyaları için yeni varsayılan modunu değiştirmek için. Kullanım [_get_fmode](../c-runtime-library/reference/get-fmode.md) geçerli varsayılan modu bulunamıyor. Metin modunu ilk varsayılan ayardır (**_O_TEXT**).
 
-- Doğrudan genel değişkeni ayarlayarak varsayılan çeviri modu değiştirme [_fmode](../c-runtime-library/fmode.md) programınızdaki. İşlev **_set_fmode** Bu değişken, ancak değerini de ayarlanabilir doğrudan ayarlar.
+- Doğrudan genel değişkenini ayarlayarak varsayılan çeviri modunu değiştirmek [_fmode](../c-runtime-library/fmode.md) programınızdaki. İşlev **_set_fmode** Bu değişken, ancak değeri de ayarlanabilir doğrudan ayarlar.
 
-Çağırdığınızda bir dosyanın açılması işlevi gibi [_kurulum Aç](../c-runtime-library/reference/open-wopen.md), [fopen](../c-runtime-library/reference/fopen-wfopen.md), [fopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md), [freopen](../c-runtime-library/reference/freopen-wfreopen.md), [freopen_s](../c-runtime-library/reference/freopen-s-wfreopen-s.md), [_fsopen](../c-runtime-library/reference/fsopen-wfsopen.md) veya [_sopen_s](../c-runtime-library/reference/sopen-s-wsopen-s.md), geçerli varsayılan ayarı geçersiz kılabilirsiniz **_fmode** işlevineuygunbağımsızdeğişkenbelirterek[_set_fmode](../c-runtime-library/reference/set-fmode.md). **Stdin**, **stdout**, ve **stderr** akışları her zaman varsayılan olarak metin modunda açın; Ayrıca bu varsayılan bu dosyalar açılırken geçersiz kılabilirsiniz. Kullanım [_setmode](../c-runtime-library/reference/setmode.md) dosya açıldıktan sonra dosya tanımlayıcısı kullanılarak çeviri modu değiştirmek için.
+Çağırdığınızda bir dosya açma işlevi gibi [_aç](../c-runtime-library/reference/open-wopen.md), [fopen](../c-runtime-library/reference/fopen-wfopen.md), [fopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md), [freopen](../c-runtime-library/reference/freopen-wfreopen.md), [freopen_s](../c-runtime-library/reference/freopen-s-wfreopen-s.md), [_fsopen](../c-runtime-library/reference/fsopen-wfsopen.md) veya [_sopen_s](../c-runtime-library/reference/sopen-s-wsopen-s.md), geçerli varsayılan ayarı geçersiz kılabilirsiniz **_fmode** işleviuygunbağımsızdeğişkenibelirterek[_set_fmode](../c-runtime-library/reference/set-fmode.md). **Stdin**, **stdout**, ve **stderr** akışları her zaman varsayılan olarak metin modunda açın; bu varsayılan bu dosyalar açılırken kılabilirsiniz. Kullanım [_setmode](../c-runtime-library/reference/setmode.md) dosya açıldıktan sonra dosya tanımlayıcısını kullanarak çeviri modunu değiştirmek için.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Girdi ve Çıktı](../c-runtime-library/input-and-output.md)<br/>
- [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

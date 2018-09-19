@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9072728660ca78097a1e36e492670a614bb2b2f8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eb2fc41820165cee2b76a15abc97ab1e0cb79b81
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274709"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116664"
 ---
 # <a name="compiler-warning-level-1-c4074"></a>Derleyici Uyarısı (düzey 1) C4074
-ayrılmış derleyici başlatma alanına yerleştirir başlatıcıları  
-  
- Tarafından belirtilen derleyici başlatma alan [#pragma init_seg](../../preprocessor/init-seg.md), Microsoft tarafından ayrılmış. Bu alandaki kod C çalışma zamanı kitaplığı başlatma önce yürütülen.  
-  
- Aşağıdaki örnek C4074 oluşturur:  
-  
-```  
-// C4074.cpp  
-// compile with: /W1  
-#pragma init_seg( compiler )   // C4074  
-  
-// try this line to resolve the warning  
-// #pragma init_seg(user)  
-  
-int main() {  
-}  
+
+Derleyici için ayrılmış başlatma alanına başlatıcılar yerleştirildi
+
+Tarafından belirtilen derleyici başlatma alanına [#pragma init_seg](../../preprocessor/init-seg.md), Microsoft tarafından ayrılmış. Bu alandaki kodu önce C çalışma zamanı kitaplığı başlatma çalıştırılabilir.
+
+Aşağıdaki örnek, C4074 oluşturur:
+
+```
+// C4074.cpp
+// compile with: /W1
+#pragma init_seg( compiler )   // C4074
+
+// try this line to resolve the warning
+// #pragma init_seg(user)
+
+int main() {
+}
 ```

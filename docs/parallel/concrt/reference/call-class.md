@@ -23,15 +23,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47f72948621e9311f05af74f75d80cd35c1deddc
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 585a490ec64152a1268b7707971ea94e69bf9fbf
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689707"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109723"
 ---
 # <a name="call-class"></a>çağrı Sınıfı
-A `call` ileti bloğu, birden çok kaynak sıralı `target_block` , çağırır belirtilen işlevi bir ileti alırken.  
+A `call` ileti bloğu, bir çok kaynak sıralı `target_block` , çağıran belirtilen işlev bir ileti alındığında.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,11 +41,11 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Bu bloğuna yayılan iletileri yük türü.  
+*T*<br/>
+Bu bloğu yayılan iletileri yük türü.  
   
- `_FunctorType`  
- Bu bloğu kabul edebilir işlevleri imzası.  
+*_FunctorType*<br/>
+Bu bloğu kabul edebilen işlev imzası.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -53,21 +53,21 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Arama](#ctor)|Fazla Yüklendi. Oluşturan bir `call` ileti bloğu.|  
-|[~ call yok Edicisi](#dtor)|Bozar `call` ileti bloğu.|  
+|[Çağrı](#ctor)|Fazla Yüklendi. Oluşturur bir `call` ileti bloğu.|  
+|[~ call yok Edicisi](#dtor)|Yok eder `call` ileti bloğu.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[process_input_messages](#process_input_messages)|Çağrı işlevi, giriş iletilerde yürütür.|  
-|[process_message](#process_message)|Bunu kabul edildi iletisini işler `call` ileti bloğu.|  
-|[propagate_message](#propagate_message)|Zaman uyumsuz olarak bir iletiden geçirmeden bir `ISource` bu bloğuna `call` ileti bloğu. Tarafından çağrılan `propagate` kaynak bloğu tarafından çağrıldığında yöntemi.|  
-|[send_message](#send_message)|İletiyi zaman uyumlu olarak geçirir bir `ISource` bu bloğuna `call` ileti bloğu. Tarafından çağrılan `send` kaynak bloğu tarafından çağrıldığında yöntemi.|  
-|[supports_anonymous_source](#supports_anonymous_source)|Geçersiz kılmaları `supports_anonymous_source` bu bloğu için bağlantılı olmayan bir kaynak tarafından sunulan iletileri kabul ettiğinizi belirtmek için yöntem. (Geçersiz kılmaları [Itarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|  
+|[process_input_messages](#process_input_messages)|Arama işlevi, giriş iletileri yürütür.|  
+|[process_message](#process_message)|Bu tarafından kabul edilen iletiyi işleyen `call` ileti bloğu.|  
+|[propagate_message](#propagate_message)|Zaman uyumsuz olarak bir ileti geçirir bir `ISource` bu blok `call` ileti bloğu. Tarafından çağrılan `propagate` bir kaynak bloğu tarafından çağrıldığında yöntemi.|  
+|[send_message](#send_message)|Eş zamanlı olarak gelen bir ileti geçirir bir `ISource` bu blok `call` ileti bloğu. Tarafından çağrılan `send` bir kaynak bloğu tarafından çağrıldığında yöntemi.|  
+|[supports_anonymous_source](#supports_anonymous_source)|Geçersiz kılmalar `supports_anonymous_source` bu blok için bağlantılı olmayan bir kaynak tarafından sunulan iletileri kabul ettiğinizi belirtmek için yöntemi. (Geçersiz kılmaları [Itarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [zaman uyumsuz ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).  
+ Daha fazla bilgi için [zaman uyumsuz ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [Itarget](itarget-class.md)  
@@ -81,9 +81,9 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="ctor"></a> Arama 
+##  <a name="ctor"></a> Çağrı 
 
- Oluşturan bir `call` ileti bloğu.  
+ Oluşturur bir `call` ileti bloğu.  
   
 ```
 call(
@@ -113,28 +113,28 @@ call(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Func`  
- Kabul edilen her ileti için çağrılacak işlev.  
+*_Func*<br/>
+Kabul edilen her ileti için çağrılacak işlev.  
   
- `_Filter`  
- Sunulan iletileri kabul edilip edilmeyeceğini belirler bir filtre işlevi.  
+*_Filtreyi*<br/>
+Sunulan iletileri kabul edilip edilmeyeceğini belirleyen bir filtre işlevi.  
   
- `_PScheduler`  
- `Scheduler` İçinde yayma görev için nesne `call` ileti bloğu zamanlandı.  
+*_PScheduler*<br/>
+`Scheduler` İçinde Yayma görevi için nesne `call` ileti bloğu zamanlandı.  
   
- `_PScheduleGroup`  
- `ScheduleGroup` İçinde yayma görev için nesne `call` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından kapsanan.  
+*_PScheduleGroup*<br/>
+`ScheduleGroup` İçinde Yayma görevi için nesne `call` ileti bloğu zamanlandı. `Scheduler` Kullanılan nesnesi zamanlama grubu tarafından belirtilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çalışma zamanı belirtmezseniz varsayılan Zamanlayıcısı'nı kullanıyorsa `_PScheduler` veya `_PScheduleGroup` parametreleri.  
+ Çalışma zamanı belirtmezseniz varsayılan Zamanlayıcı kullanıyorsa `_PScheduler` veya `_PScheduleGroup` parametreleri.  
   
- Türü `_Call_method` functor imzaya sahip olduğu `void (T const &)` hangi çağrılır bu tarafından `call` bir iletiyi işlemek için ileti bloğu.  
+ Türü `_Call_method` bir functor imzaya sahip olduğu `void (T const &)` , çağrıldığında bu `call` bir iletiyi, ileti bloğu.  
   
- Türü `filter_method` functor imzaya sahip olduğu `bool (T const &)` hangi çağrılır bu tarafından `call` sunulan iletisine kabul etmelidir olup olmadığını belirlemek için ileti bloğu.  
+ Türü `filter_method` bir functor imzaya sahip olduğu `bool (T const &)` , çağrıldığında bu `call` sunulan bir iletiye kabul etmelidir olup olmadığını belirlemek için ileti bloğu.  
   
 ##  <a name="dtor"></a> ~ çağırın 
 
- Bozar `call` ileti bloğu.  
+ Yok eder `call` ileti bloğu.  
   
 ```
 ~call();
@@ -142,30 +142,31 @@ call(
   
 ##  <a name="process_input_messages"></a> process_input_messages 
 
- Çağrı işlevi, giriş iletilerde yürütür.  
+ Arama işlevi, giriş iletileri yürütür.  
   
 ```
 virtual void process_input_messages(_Inout_ message<T>* _PMessage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PMessage`  
+*_PMessage*<br/>
+İşlenecek ileti için bir işaretçi.  
   
 ##  <a name="process_message"></a> process_message 
 
- Bunu kabul edildi iletisini işler `call` ileti bloğu.  
+ Bu tarafından kabul edilen iletiyi işleyen `call` ileti bloğu.  
   
 ```
 virtual void process_message(_Inout_ message<T>* _PMessage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PMessage`  
- Bir işaretçi işlenecek iletisi.  
+*_PMessage*<br/>
+İşlenecek ileti için bir işaretçi.  
   
 ##  <a name="propagate_message"></a> propagate_message 
 
- Zaman uyumsuz olarak bir iletiden geçirmeden bir `ISource` bu bloğuna `call` ileti bloğu. Tarafından çağrılan `propagate` kaynak bloğu tarafından çağrıldığında yöntemi.  
+ Zaman uyumsuz olarak bir ileti geçirir bir `ISource` bu blok `call` ileti bloğu. Tarafından çağrılan `propagate` bir kaynak bloğu tarafından çağrıldığında yöntemi.  
   
 ```
 virtual message_status propagate_message(
@@ -174,18 +175,18 @@ virtual message_status propagate_message(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PMessage`  
- Bir işaretçi `message` nesnesi.  
+*_PMessage*<br/>
+Bir işaretçi `message` nesne.  
   
- `_PSource`  
- İleti sunan kaynak bloğu için bir işaretçi.  
+*_PSource*<br/>
+İletiyi sunmayı kaynak blok için işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
+ A [message_status](concurrency-namespace-enums.md) hedef iletinin yapmak karar göstergesi.  
   
 ##  <a name="send_message"></a> send_message 
 
- İletiyi zaman uyumlu olarak geçirir bir `ISource` bu bloğuna `call` ileti bloğu. Tarafından çağrılan `send` kaynak bloğu tarafından çağrıldığında yöntemi.  
+ Eş zamanlı olarak gelen bir ileti geçirir bir `ISource` bu blok `call` ileti bloğu. Tarafından çağrılan `send` bir kaynak bloğu tarafından çağrıldığında yöntemi.  
   
 ```
 virtual message_status send_message(
@@ -194,25 +195,25 @@ virtual message_status send_message(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PMessage`  
- Bir işaretçi `message` nesnesi.  
+*_PMessage*<br/>
+Bir işaretçi `message` nesne.  
   
- `_PSource`  
- İleti sunan kaynak bloğu için bir işaretçi.  
+*_PSource*<br/>
+İletiyi sunmayı kaynak blok için işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
+ A [message_status](concurrency-namespace-enums.md) hedef iletinin yapmak karar göstergesi.  
   
 ##  <a name="supports_anonymous_source"></a> supports_anonymous_source 
 
- Geçersiz kılmaları `supports_anonymous_source` bu bloğu için bağlantılı olmayan bir kaynak tarafından sunulan iletileri kabul ettiğinizi belirtmek için yöntem.  
+ Geçersiz kılmalar `supports_anonymous_source` bu blok için bağlantılı olmayan bir kaynak tarafından sunulan iletileri kabul ettiğinizi belirtmek için yöntemi.  
   
 ```
 virtual bool supports_anonymous_source();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` Blok sunulan iletiler erteleyin değil çünkü.  
+ `true` blok, sunulan ileti erteleme değil çünkü.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

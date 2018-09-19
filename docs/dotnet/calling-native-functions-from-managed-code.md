@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 3ef47e3aeb8cfb18dd1eb6497c593d8cec26081b
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 002093a6a9044c65e5780035ad6c19db35d6b648
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678456"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116756"
 ---
 # <a name="calling-native-functions-from-managed-code"></a>Yönetilen Koddan Yerel İşlevleri Çağırma
 Platform çağırma Hizmetleri veya PInvoke sağlar yönetilen kodun yerel dinamik bağlantı kitaplıklarında (DLL'ler) C stili işlevleri çağırmak için ortak dil çalışma zamanı sağlar. Aynı veri sıralama, çalışma zamanı ile ve "It Just Works" öğesi veya IJW, mekanizma için COM birlikte çalışabilirlik için kullanılır.  
@@ -105,7 +105,7 @@ int main() {
   
  Bu örnekte, bir Visual C++ programı Win32 API'ın bir parçası olan MessageBox işleviyle birlikte çalışır.  
   
-```  
+```cpp  
 // platform_invocation_services_4.cpp  
 // compile with: /clr /c  
 using namespace System;  
@@ -132,16 +132,17 @@ int main() {
   
  Bir Visual C++ uygulamasında PInvoke kullanıyoruz, biz aşağıdakine benzer bir şey yazabiliriz:  
   
- `[DllImport("mylib")]`  
-  
- `extern "C" String * MakeSpecial([MarshalAs(UnmanagedType::LPStr)] String ^);`  
+```cpp
+[DllImport("mylib")]
+extern "C" String * MakeSpecial([MarshalAs(UnmanagedType::LPStr)] String ^);
+```
   
  Buradaki zorluk MakeSpecial tarafından döndürülen yönetilmeyen dize için belleği silinemiyor ' dir. PInvoke aracılığıyla çağrılan diğer işlevler kullanıcı tarafından serbest bırakılması sahip olmayan bir iç arabellek bir işaretçi döndürür. Bu durumda, IJW özelliğini kullanarak belirgin bir seçimdir.  
   
 ## <a name="limitations-of-pinvoke"></a>PInvoke sınırlamaları  
  Bir parametre olarak aldığınız yerel bir işlevden işaretçinin aynısını döndüremezsiniz. Yerel bir işlev sıralanmış işaretçiyi için PInvoke tarafından döndürürse, Bellek Bozulması ve özel durumlar oluşması beklenebilir.  
   
-```  
+```cpp  
 __declspec(dllexport)  
 char* fstringA(char* param) {  
    return param;  

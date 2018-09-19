@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe6bb2d14b79e8080815967f3a666808f2b6efcc
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: a63caea7186114244927b9ede4c63ed97871d6e9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33326589"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111270"
 ---
 # <a name="ltparamrefgt-visual-c"></a>&lt;paramref&gt; (Visual C++)
-\<Paramref > etiketi bir sözcük bir parametre olduğunu belirtmek için bir yol sağlar. Bu parametre farklı bir biçimde biçimlendirmek için .xml dosyasını işlenebilir.  
+\<Paramref > etiketi bir sözcüğün bir parametre olduğunu belirtmek için bir yol sağlar. Bu parametreyi belirgin bir şekilde biçimlendirmek için .xml dosyasını işlenebilir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,11 +35,11 @@ ms.locfileid: "33326589"
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `name`  
- Başvurmak için parametresinin adı.  Ad, tek veya çift tırnak işaretleri içine alın.  Derleyici bulamadı, bir uyarı verir `name`.  
+*Adı*<br/>
+Başvurmak için parametrenin adı.  Ad, tek veya çift tırnak içine alın.  Değil bulamazsa, derleyici bir uyarı verir `name`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İle derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) bir dosyaya işlem belgesi açıklamaları için.  
+ Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.  
   
 ## <a name="example"></a>Örnek  
   

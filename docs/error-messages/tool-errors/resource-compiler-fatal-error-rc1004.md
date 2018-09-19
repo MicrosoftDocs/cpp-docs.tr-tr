@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eaa3846d0cf65b3dbca31e04999b955b1d58a4b6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3c86822ea9dcdbb16c437e10cf81bc1c8107da0b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33327544"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113597"
 ---
 # <a name="resource-compiler-fatal-error-rc1004"></a>Kaynak Derleyicisi Önemli Hatası RC1004
-Beklenmeyen bulunan dosya sonu  
-  
- Bu hata, satır besleme eksik oluşabilir ve satır başı karakteri bir metin dosyasının son satırında.
+
+beklenmeyen dosya sonu bulundu
+
+Bu hata satır besleme olmamasından kaynaklanıyor olabilir ve bir metin dosyasının son satırında satır başı karakteri.

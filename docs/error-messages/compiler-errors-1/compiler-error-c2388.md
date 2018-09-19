@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38ce3de47355dea18f2c2deca8cfe07cde4d313f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2b6bcec4f5f218a52981a7770f5fa6e600494d9a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198670"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114156"
 ---
 # <a name="compiler-error-c2388"></a>Derleyici Hatası C2388
-'simgesi': bir simge ile hem __declspec(appdomain) bildirilemez ve \__declspec(process)  
-  
- `appdomain` Ve `process` `__declspec` değiştiricileri aynı simgesinin üzerine kullanılamaz. Bir değişken için depolama işlemi veya uygulama etki alanı başına yok.  
-  
- Daha fazla bilgi için bkz: [appdomain](../../cpp/appdomain.md) ve [işlem](../../cpp/process.md).  
-  
- Aşağıdaki örnek C2388 oluşturur:  
-  
-```  
-// C2388.cpp  
-// compile with: /clr /c  
-__declspec(process) __declspec(appdomain) int i;   // C2388  
-__declspec(appdomain) int i;   // OK  
+
+'symbol': bir simge hem __declspec(appdomain) ile bildirilemez ve \__declspec(process)
+
+`appdomain` Ve `process` `__declspec` değiştiriciler aynı sembol sunucusunda kullanılamaz. Bir değişken için depolama, işlem veya uygulama etki alanı başına bulunmaktadır.
+
+Daha fazla bilgi için [appdomain](../../cpp/appdomain.md) ve [işlem](../../cpp/process.md).
+
+Aşağıdaki örnek, C2388 oluşturur:
+
+```
+// C2388.cpp
+// compile with: /clr /c
+__declspec(process) __declspec(appdomain) int i;   // C2388
+__declspec(appdomain) int i;   // OK
 ```

@@ -16,41 +16,42 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94dffb5f52d84027cd59762478bd7d6b5f6738d6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 2037d64aba025b9acf8279a3da9073611d11ce8e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751780"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107916"
 ---
 # <a name="conditional-expression-operator"></a>Koşullu İfade İşleci
+
 C sahip bir Üçlü işleç: koşullu ifade işleci (**?:**).
 
 ## <a name="syntax"></a>Sözdizimi
 
 *Koşullu ifade*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*mantıksal-veya-ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Mantıksal OR ifadesi***?**   *ifade***:***koşullu ifade* 
+&nbsp;&nbsp;&nbsp;&nbsp;*Mantıksal OR ifadesi***?**  *ifade***:***koşullu ifade*
 
 *Mantıksal-veya-expression* integral, kayan veya işaretçi türünde olmalıdır. 0, denklik açısından değerlendirilir. Bir dizi noktası izleyen *mantıksal-veya-expression*. İşlenenlerin gibi çalışır:
 
--   Varsa *mantıksal-veya-expression* 0'a eşit değil *ifade* değerlendirilir. İfade değerlendirmesinin sonucu bildirimlere verilen *ifade*. (Yani *ifade* yalnızca değerlendirilir *mantıksal-veya-expression* geçerlidir.)
+- Varsa *mantıksal-veya-expression* 0'a eşit değil *ifade* değerlendirilir. İfade değerlendirmesinin sonucu bildirimlere verilen *ifade*. (Yani *ifade* yalnızca değerlendirilir *mantıksal-veya-expression* geçerlidir.)
 
--   Varsa *mantıksal-veya-expression* eşittir 0, *koşullu ifade* değerlendirilir. İfadenin sonucu değeri *koşullu ifade*. (Yani *koşullu ifade* yalnızca değerlendirilir *mantıksal-veya-expression* false'tur.)
+- Varsa *mantıksal-veya-expression* eşittir 0, *koşullu ifade* değerlendirilir. İfadenin sonucu değeri *koşullu ifade*. (Yani *koşullu ifade* yalnızca değerlendirilir *mantıksal-veya-expression* false'tur.)
 
 Ya da unutmayın *ifade* veya *koşullu ifade* değerlendirilir, ancak ikisi birden değil.
 
 Koşullu bir işlemin sonucunu türünü türüne bağlıdır *ifade* veya *koşullu ifade* işleneni aşağıdadır:
 
--   Varsa *ifade* veya *koşullu ifade* integral sahip veya bu (türleri farklı) kayan türü işleç olağan aritmetik dönüştürmeler gerçekleştirir. Sonuç türü dönüştürme işleminden sonra işlenenler türüdür.
+- Varsa *ifade* veya *koşullu ifade* integral sahip veya bu (türleri farklı) kayan türü işleç olağan aritmetik dönüştürmeler gerçekleştirir. Sonuç türü dönüştürme işleminden sonra işlenenler türüdür.
 
--   Her iki *ifade* ve *koşullu ifade* aynı yapı, birleşim veya işaretçi türü sonuç türü, aynı yapıya, birleşim veya işaretçi türüne sahip.
+- Her iki *ifade* ve *koşullu ifade* aynı yapı, birleşim veya işaretçi türü sonuç türü, aynı yapıya, birleşim veya işaretçi türüne sahip.
 
--   Her iki işlenen türü varsa `void`, sonuç türünde `void`.
+- Her iki işlenen türü varsa `void`, sonuç türünde `void`.
 
--   İki işlenenden herhangi türde bir nesne işaretçisidir ve diğer işlenenin işaretçisidir `void`, işaretçiyi nesneye bir işaretçiye dönüştürülür `void` ve sonucu bir işaretçiye `void`.
+- İki işlenenden herhangi türde bir nesne işaretçisidir ve diğer işlenenin işaretçisidir `void`, işaretçiyi nesneye bir işaretçiye dönüştürülür `void` ve sonucu bir işaretçiye `void`.
 
--   Ya da *ifade* veya *koşullu ifade* bir işaretçi ise diğer işlenen değeri 0 ' sonuç türü olan bir sabit ifade ise işaretçi türü.
+- Ya da *ifade* veya *koşullu ifade* bir işaretçi ise diğer işlenen değeri 0 ' sonuç türü olan bir sabit ifade ise işaretçi türü.
 
 İşaretçileri tür Karşılaştırmada niteleyicileri yazın (**const** veya `volatile`) türünde hangi ukazatel ukazuje Önemsiz, ancak sonuç türü niteleyicileri her iki koşul bileşenlerini devralır.
 

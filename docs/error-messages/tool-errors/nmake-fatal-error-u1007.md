@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 988438b952aa1a06be3ec0da1d7337793c704133
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6a1c74cdfe4113cf1fafd242993df27081eb1d28
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322386"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112310"
 ---
 # <a name="nmake-fatal-error-u1007"></a>NMAKE Önemli Hatası U1007
-çift tırnak işareti adına izin verilmiyor  
-  
- Belirtilen hedef adı ya da dosya çift tırnak işareti bulunan (**"**).  
-  
- Çift tırnak işaretleri filename çevreleyen ancak içinde yer alamaz.
+
+adında izin verilmeyen çift tırnak işareti
+
+Belirtilen hedef adı veya dosya adı çift tırnak işareti bulunan (**"**).
+
+Çift tırnak işareti, bir dosya adı çevreleyebilirsiniz ancak içinde kapsayamaz.

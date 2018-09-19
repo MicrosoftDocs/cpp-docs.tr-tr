@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfe2493290c4e4cc5b744136b8e7036c6559220a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 105ebbf62027ac3d9377c513c4f7c59e261b983d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301456"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112531"
 ---
 # <a name="command-line-warning-d9027"></a>Komut Satırı Uyarısı D9027
-kaynak dosyası '\<dosya adı >' yoksayıldı  
-  
- CL.exe giriş kaynak dosyası yoksayıldı.  
-  
- Bu uyarı /Fo seçeneği ile /c seçeneği ile komut satırında bir çıktı filename arasında bir boşluk neden olabilir. Örneğin:  
-  
-```  
-cl /c /Fo output.obj input.c   
-```  
-  
- /Fo arasında bir boşluk olduğundan ve `output.obj`, CL.exe geçen `output.obj` adı olarak giriş dosyası. Sorunu düzeltmek için alanı kaldırın:  
-  
-```  
-cl /c /Fooutput.obj input.c   
+
+Kaynak dosya '\<dosya adı >' yoksayıldı
+
+CL.exe giriş kaynağı dosyası yoksayıldı.
+
+Bu uyarı /Fo seçeneği ve /c seçeneği ile bir komut satırında bir çıkış dosyası adı arasında boşluk neden olabilir. Örneğin:
+
+```
+cl /c /Fo output.obj input.c
+```
+
+/Fo arasında boşluk olmadığından ve `output.obj`, CL.exe alır `output.obj` giriş dosyasının adı. Sorunu gidermek için alanı kaldırın:
+
+```
+cl /c /Fooutput.obj input.c
 ```

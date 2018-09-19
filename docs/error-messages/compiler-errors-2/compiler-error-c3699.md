@@ -16,51 +16,55 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ddbf6ac43b2a3d987faa86fab6d9862068fc0fe0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 64e5a5bb98f9e8a6950bbb279c026f167a2ee92e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33265035"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107724"
 ---
 # <a name="compiler-error-c3699"></a>Derleyici Hatası C3699
-'işleci': Bu yöneltme 'type' türünde kullanamazsınız  
-  
- İzin verilmiyor yöneltme kullanmak için bir girişimde bulunuldu `type`.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3699 oluşturur.  
-  
-```  
-// C3699.cpp  
-// compile with: /clr /c  
-using namespace System;  
-int main() {  
-   String * s;   // C3699  
-   // try the following line instead  
-   // String ^ s2;  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- Önemsiz bir özelliği başvuru türüne sahip olamaz. Bkz: [özelliği](../../windows/property-cpp-component-extensions.md) daha fazla bilgi için. Aşağıdaki örnek C3699 oluşturur.  
-  
-```  
-// C3699_b.cpp  
-// compile with: /clr /c  
-ref struct C {  
-   property System::String % x;   // C3699  
-   property System::String ^ y;   // OK  
-};  
-```  
-  
-## <a name="example"></a>Örnek  
- İzleme başvurusu için bir tanıtıcı "bir işaretçi işaretçi" sözdizimi eşdeğeridir. Aşağıdaki örnek C3699 oluşturur.  
-  
-```  
-// C3699_c.cpp  
-// compile with: /clr /c  
-using namespace System;  
-void Test(String ^^ i);   // C3699  
-void Test2(String ^% i);  
+
+'operator': Bu yöneltme 'type' türü üzerinde kullanılamaz
+
+İzin verilmez yöneltme kullanmak için bir girişimde bulunuldu `type`.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3699 oluşturur.
+
+```
+// C3699.cpp
+// compile with: /clr /c
+using namespace System;
+int main() {
+   String * s;   // C3699
+   // try the following line instead
+   // String ^ s2;
+}
+```
+
+## <a name="example"></a>Örnek
+
+Önemsiz özellik başvuru türüne sahip olamaz. Bkz: [özelliği](../../windows/property-cpp-component-extensions.md) daha fazla bilgi için. Aşağıdaki örnek, C3699 oluşturur.
+
+```
+// C3699_b.cpp
+// compile with: /clr /c
+ref struct C {
+   property System::String % x;   // C3699
+   property System::String ^ y;   // OK
+};
+```
+
+## <a name="example"></a>Örnek
+
+Bir tanıtıcı izleme başvurusu için bir "bir işaretçi işaretçisi" söz dizimi eşdeğerdir. Aşağıdaki örnek, C3699 oluşturur.
+
+```
+// C3699_c.cpp
+// compile with: /clr /c
+using namespace System;
+void Test(String ^^ i);   // C3699
+void Test2(String ^% i);
 ```

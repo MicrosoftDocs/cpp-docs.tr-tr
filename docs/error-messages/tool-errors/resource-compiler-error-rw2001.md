@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 077260b615d0a5adf32278d8857df5b8f74b7e5f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f401ce7c9a96cfeecf195b8872a704b8b1291939
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33321106"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114988"
 ---
 # <a name="resource-compiler-error-rw2001"></a>Kaynak Derleyicisi Hatası RW2001
-Önceden işlenmiş RC dosyasında geçersiz yönergesi  
-  
- RC dosyasını içeren bir **#pragma** yönergesi.  
-  
- Kullanım **#ifndef** önişlemci yönergesiyle **RC_INVOKED** sabit kaynak derleyicisi bir içerme dosyası işlediğinde tanımlar. Yer **#pragma** değil kod bloğunun bir yönerge ne zaman işlenen **RC_INVOKED** sabiti tanımlanır. Kod bloğu içinde yalnızca C/C++ derleyicisi tarafından ve kaynak derleyicisi tarafından işlenir. Aşağıdaki örnek kod, bu tekniği gösterir:  
-  
-```  
-#ifndef RC_INVOKED  
-#pragma pack(2)  // C/C++ only, ignored by Resource Compiler  
-#endif  
-```  
-  
- **#Pragma** önişlemci yönergesi cinsinden hiçbir anlamı olan bir. RC dosyası. **#İnclude** önişlemci yönergesi kullanılır bir. (Bir proje tabanlı özel üstbilgi dosyası veya ürünlerinden biriyle Microsoft tarafından sağlanan standart üstbilgi dosyası) bir üst bilgi dosyasını dahil RC dosyası. Bunlardan bazıları dosyaları dahil etme içeren **#pragma** yönergesi. Bir veya daha fazla diğer üstbilgi dosyaları, sorunlu içeren dosyayı üstbilgi dosyası içerebildiklerinden **#pragma** yönergesi hemen belirgin olmayabilir.  
-  
- **#İfndef RC_INVOKED** teknik proje tabanlı üstbilgi dosyaları üstbilgi dosyaları dahil olmak üzere denetleyebilirsiniz.
+
+Önceden işlenmiş RC dosyasında geçersiz yönerge
+
+RC dosyası içeren bir **#pragma** yönergesi.
+
+Kullanım **#ifndef** önişlemci yönergesi ile **rc_ınvoked** sabit kaynak derleyicisi bir dahil etme dosyasından işlediğinde tanımlar. Bir yerde **#pragma** yönerge olmayan kod bloğu içinde ne zaman işlenen **rc_ınvoked** sabiti tanımlanır. Bloğu içindeki kod, yalnızca C/C++ derleyicisi tarafından ve kaynak derleyicisi tarafından işlenir. Aşağıdaki örnek kod, bu tekniği gösterir:
+
+```
+#ifndef RC_INVOKED
+#pragma pack(2)  // C/C++ only, ignored by Resource Compiler
+#endif
+```
+
+**#Pragma** önişlemci yönergesi hiçbir anlamı bir. RC dosyası. **#İnclude** önişlemci yönergesi de sık kullanılan bir. (Bir proje temelli özel üst bilgi dosyası veya ürünlerinden biri ile Microsoft tarafından sağlanan bir standart üstbilgi dosyası) bir üstbilgi dosyasını eklemek için RC dosyası. Bu dosyaların bazıları içeren **#pragma** yönergesi. Bir veya birden çok diğer üst bilgi dosyaları, sorunlu içeren dosyayı bir üstbilgi dosyası içerebildiklerinden **#pragma** yönergesi hemen belirgin olmayabilir.
+
+**#İfndef rc_ınvoked** teknik proje tabanlı üst bilgi dosyaları, üstbilgi dosyaları dahil olmak üzere denetleyebilirsiniz.

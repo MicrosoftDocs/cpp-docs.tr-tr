@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf937f11118cfbea26db11ba48ea0ed65d903af6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 07949bdf7116f4a0eb1d598f90cb0be78b116259
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217161"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112232"
 ---
 # <a name="coblist-class"></a>CObList sınıfı
 Sipariş edilen listelerini listeler fSupports `CObject` işaretçileri erişilebilir sırayla veya işaretçinin değerine göre.  
@@ -173,11 +173,11 @@ void AddHead(CObList* pNewList);
   
  Bu program sonuçları aşağıdaki gibidir:  
   
- `AddHead example: A CObList with 2 elements`  
-  
- `a CAge at $44A8 40`  
-  
- `a CAge at $442A 21`  
+```Output
+AddHead example: A CObList with 2 elements
+a CAge at $44A8 40
+a CAge at $442A 21
+```
   
 ##  <a name="addtail"></a>  CObList::AddTail  
  Bu liste kuyruğu için yeni bir öğe veya öğe listesi ekler.  
@@ -214,11 +214,11 @@ void AddTail(CObList* pNewList);
   
  Bu program sonuçları aşağıdaki gibidir:  
   
- `AddTail example: A CObList with 2 elements`  
-  
- `a CAge at $444A 21`  
-  
- `a CAge at $4526 40`  
+```Output
+AddTail example: A CObList with 2 elements
+a CAge at $444A 21
+a CAge at $4526 40
+```
   
 ##  <a name="coblist"></a>  CObList::CObList  
  Boş bir yapıları `CObject` işaretçi listesi.  
@@ -458,9 +458,10 @@ const CObject* GetNext(POSITION& rPosition) const;
   
  Bu program sonuçları aşağıdaki gibidir:  
   
- `a CAge at $479C 40`  
-  
- `a CAge at $46C0 21`  
+```Output
+a CAge at $479C 40
+a CAge at $46C0 21
+```
   
 ##  <a name="getprev"></a>  CObList::GetPrev  
  Tarafından tanımlanan liste öğesi alır *rPosition*, ardından ayarlar *rPosition* konumu değerine listesinde önceki girişi.  
@@ -501,9 +502,10 @@ const CObject* GetPrev(POSITION& rPosition) const;
   
  Bu program sonuçları aşağıdaki gibidir:  
   
- `a CAge at $421C 21`  
-  
- `a CAge at $421C 40`  
+```Output
+a CAge at $421C 21
+a CAge at $421C 40
+```
   
 ##  <a name="getsize"></a>  CObList::GetSize  
  Liste öğelerin sayısını döndürür.  
@@ -611,13 +613,12 @@ POSITION InsertAfter(
   
  Bu program sonuçları aşağıdaki gibidir:  
   
- `InsertAfter example: A CObList with 3 elements`  
-  
- `a CAge at $4A44 40`  
-  
- `a CAge at $4A64 65`  
-  
- `a CAge at $4968 21`  
+```Output
+InsertAfter example: A CObList with 3 elements
+a CAge at $4A44 40
+a CAge at $4A64 65
+a CAge at $4968 21
+```
   
 ##  <a name="insertbefore"></a>  CObList::InsertBefore  
  Belirli bir konumda öğesinden önce bu listeye bir öğe ekler.  
@@ -652,13 +653,12 @@ POSITION InsertBefore(
   
  Bu program sonuçları aşağıdaki gibidir:  
   
- `InsertBefore example: A CObList with 3 elements`  
-  
- `a CAge at $4AE2 40`  
-  
- `a CAge at $4B02 65`  
-  
- `a CAge at $49E6 21`  
+```Output
+InsertBefore example: A CObList with 3 elements
+a CAge at $4AE2 40
+a CAge at $4B02 65
+a CAge at $49E6 21
+```
   
 ##  <a name="isempty"></a>  CObList::IsEmpty  
  Bu listeye öğe içerip içermediğini belirtir.  
@@ -827,11 +827,11 @@ void SetAt(
   
  Bu program sonuçları aşağıdaki gibidir:  
   
- `SetAt example: A CObList with 2 elements`  
-  
- `a CAge at $4D98 40`  
-  
- `a CAge at $4DB8 65`  
+```Output
+SetAt example: A CObList with 2 elements
+a CAge at $4D98 40
+a CAge at $4DB8 65
+```
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CObject sınıfı](../../mfc/reference/cobject-class.md)   

@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67eb6362ff55e09b05349d10fcdc2377d8ff2996
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d656dbde06d6052fd10611675f2cff8818cdb6e5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231676"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108579"
 ---
 # <a name="compiler-error-c2588"></a>Derleyici Hatası C2588
-':: ~ tanımlayıcısı ': Geçersiz Genel yok Edicisi  
-  
- Yıkıcı bir şey için sınıf, yapı veya birleşim dışında tanımlanır. Bu duruma izin verilmez.  
-  
- Bu hata eksik sınıf, yapı veya kapsam çözümü sol tarafındaki birleşim adı neden olabilir (`::`) işleci.  
-  
- Aşağıdaki örnek C2588 oluşturur:  
-  
-```  
-// C2588.cpp  
-~F();   // C2588  
+
+':: ~ tanımlayıcı ': Geçersiz Genel yok Edicisi
+
+Yıkıcı bir şey için bir sınıf, yapı veya birleşim dışında tanımlanır. Buna izin verilmez.
+
+Eksik sınıf, yapı veya birleşim adı kapsam çözünürlük sol tarafındaki bu hataya neden olabilir (`::`) işleci.
+
+Aşağıdaki örnek, C2588 oluşturur:
+
+```
+// C2588.cpp
+~F();   // C2588
 ```

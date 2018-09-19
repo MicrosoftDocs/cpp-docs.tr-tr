@@ -17,31 +17,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a7ddaefcf3bd46bf40b03c03d2d1fb00cf8fbbb
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 9d56fcf7faaee9d3b0e02964163aa62372a30a78
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408433"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109306"
 ---
 # <a name="comerrorerror"></a>_com_error::Error
-**Microsoft'a özgü**  
-  
- Oluşturucuya geçirilen HRESULT alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-HRESULT Error( ) const throw( );  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Ham HRESULT öğesi, oluşturucuya geçirilen.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Kapsüllenmiş HRESULT öğeyi alır bir `_com_error` nesne.  
-  
- **END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [_com_error Sınıfı](../cpp/com-error-class.md)
+
+**Microsoft'a özgü**
+
+Oluşturucuya geçirilen HRESULT alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+HRESULT Error( ) const throw( );
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Ham HRESULT öğesi, oluşturucuya geçirilen.
+
+## <a name="remarks"></a>Açıklamalar
+
+Kapsüllenmiş HRESULT öğeyi alır bir `_com_error` nesne.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[_com_error Sınıfı](../cpp/com-error-class.md)

@@ -12,18 +12,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24e467c3ba418bfb0c95a0054e30773301c614f7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 775702c7ecfdb579d8edcfb3e1786f5152dfcc7c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317326"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109424"
 ---
 # <a name="profile-guided-optimization-errors-and-warnings"></a>Profil Temelli İyileştirme Hataları ve Uyarıları
-Bu bölüm, yapı araçları tarafından oluşturulan hatalara bir başvurudur. İle ilgili Yardım için belirli bir hata iletisi, ya da hata numarası çıktı penceresinde tıklatın ve F1 tuşuna basın, hata numarası yazın **Ara** dizinde kutusunda ya da uygun bağlantıyı tıklatın:  
-  
- [Profil Temelli İyileştirme Hatası PG0165](../../error-messages/tool-errors/profile-guided-optimization-error-pg0165.md)  
-  
- [Profil Temelli İyileştirme Uyarısı PG1039](../../error-messages/tool-errors/profile-guided-optimization-warning-pg1039.md)  
-  
- [Profil Temelli İyileştirme Uyarısı PG1087](../../error-messages/tool-errors/profile-guided-optimization-warning-pg1087.md)
+
+Bu bölüm, yapı araçları tarafından oluşturulan hatalara bir başvurudur. Belirli bir hata iletisi hakkında Yardım için ya da çıkış penceresindeki hata numarasına tıklayın ve F1 tuşuna hata numarası yazın **Ara** dizinde kutusuna veya uygun bağlantıyı tıklatın:
+
+[Profil Temelli İyileştirme Hatası PG0165](../../error-messages/tool-errors/profile-guided-optimization-error-pg0165.md)
+
+[Profil Temelli İyileştirme Uyarısı PG1039](../../error-messages/tool-errors/profile-guided-optimization-warning-pg1039.md)
+
+[Profil Temelli İyileştirme Uyarısı PG1087](../../error-messages/tool-errors/profile-guided-optimization-warning-pg1087.md)

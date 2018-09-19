@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70814ce7423bee3147f68d6298babc10eeac56fb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 342b336582b7920756a17b99f0d52dcb28c7173a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231390"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109983"
 ---
 # <a name="compiler-error-c2657"></a>Derleyici Hatası C2657
-' sınıfı:: *' deyiminin başlangıcında bulundu (bir türünü belirtmek unuttunuz mu?)  
-  
- Satır işaretçi-üye tanımlayıcısı ile başlamıştır.  
-  
- Bu hata bir işaretçi bildiriminde eksik bir tür belirleyici bir üyesine neden olabilir.  
-  
- Aşağıdaki örnek C2657 oluşturur:  
-  
-```  
-// C2657.cpp  
-class C {};  
-int main() {  
-   C::* pmc1;        // C2657  
-   int C::* pmc2;   // OK  
-}  
+
+' sınıf:: *' deyiminin başlangıcında bulunamadı (bir tür belirtmeyi unuttunuz mu?)
+
+Satır bir işaretçi-üye tanımlayıcısı başladı.
+
+Bu hata bir işaretçinin bildiriminde tür belirticisi eksik bir üyesine neden olabilir.
+
+Aşağıdaki örnek, C2657 oluşturur:
+
+```
+// C2657.cpp
+class C {};
+int main() {
+   C::* pmc1;        // C2657
+   int C::* pmc2;   // OK
+}
 ```

@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a6fc100bf7cd4a57c5c23630b28c41d92cf43d6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 500dc43dbc4e8d3c5768c6cc71226e5f1025564a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33234960"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110477"
 ---
 # <a name="compiler-error-c2774"></a>Derleyici Hatası C2774
-'tanımlayıcısı': Bu özellik ile ilişkili 'put' yöntemi yok  
-  
- İle bir veri üyesi bildirilen [özelliği](../../cpp/property-cpp.md) hiç `put` işlevi, ancak bir ifadenin değerini ayarlama dener.  
-  
- Aşağıdaki örnek C2774 oluşturur:  
-  
-```  
-// C2774.cpp  
-struct A {  
-   __declspec(property(get=GetProp)) int prop;  
-   int GetProp(void);  
-  
-   __declspec(property(get=GetProp2, put=PutProp2)) int prop2;  
-   int GetProp2(void);  
-   void PutProp2(int);  
-};  
-  
-int main() {  
-   A* pa = new A;  
-   int val = 0;  
-   pa->prop = val;   // C2774  
-   pa->prop++;   // C2774  
-}  
+
+'identifier': Bu özellikle ilişkili hiçbir 'put' yöntemi
+
+Bir veri üyesi ile bildirilen [özelliği](../../cpp/property-cpp.md) hiçbir `put` işlevi, ancak bir ifadenin değerini ayarlama dener.
+
+Aşağıdaki örnek, C2774 oluşturur:
+
+```
+// C2774.cpp
+struct A {
+   __declspec(property(get=GetProp)) int prop;
+   int GetProp(void);
+
+   __declspec(property(get=GetProp2, put=PutProp2)) int prop2;
+   int GetProp2(void);
+   void PutProp2(int);
+};
+
+int main() {
+   A* pa = new A;
+   int val = 0;
+   pa->prop = val;   // C2774
+   pa->prop++;   // C2774
+}
 ```

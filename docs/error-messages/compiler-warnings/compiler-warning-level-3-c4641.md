@@ -16,33 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea8413971353e7ffbe6579412d0eed9c735b91b0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f44e94868f6a7b379fb1a2f75bbd28ce011b54c9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291443"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112115"
 ---
 # <a name="compiler-warning-level-3-c4641"></a>Derleyici Uyarısı (Düzey 3) C4641
-Belirsiz bir çapraz başvuru XML belge yorumu var  
-  
- Derleyici, bir başvuru belirsizliğe çözemedi. Bu uyarıyı çözmek için başvuruyu anlaşılır yapmak gerekli parametre bilgilerini belirtin.  
-  
- Daha fazla bilgi için bkz: [XML belgeleri](../../ide/xml-documentation-visual-cpp.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4641 oluşturur.  
-  
-```  
-// C4641.cpp  
-// compile with: /W3 /doc /clr /c  
-  
-/// <see cref="f" />   // C4641  
-// try the following line instead  
-// /// <see cref="f(int)" />  
-public ref class GR {  
-public:  
-   void f( int ) {}  
-   void f( char ) {}  
-};  
+
+XML belgesi açıklamasında belirsiz bir çapraz başvuru var
+
+Derleyici, bir başvuru dönüştürmelerle çözemedi. Bu uyarıyı çözmek için başvuru anlaşılır hale getirmek için gerekli parametre bilgilerini belirtin.
+
+Daha fazla bilgi için [XML belgeleri](../../ide/xml-documentation-visual-cpp.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4641 oluşturur.
+
+```
+// C4641.cpp
+// compile with: /W3 /doc /clr /c
+
+/// <see cref="f" />   // C4641
+// try the following line instead
+// /// <see cref="f(int)" />
+public ref class GR {
+public:
+   void f( int ) {}
+   void f( char ) {}
+};
 ```

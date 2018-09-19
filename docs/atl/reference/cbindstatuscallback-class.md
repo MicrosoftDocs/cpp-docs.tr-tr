@@ -39,12 +39,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58d18a6b5eae55373be9ddc71a4d856547bf420c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3a816d10a0cb9665938e77ae8c649464b7b6768c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758436"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108488"
 ---
 # <a name="cbindstatuscallback-class"></a>CBindStatusCallback sınıfı
 
@@ -57,17 +57,17 @@ Bu sınıfın uyguladığı `IBindStatusCallback` arabirimi.
 
 ```
 template <class T,
-    int nBindFlags = BINDF_ASYNCHRONOUS | BINDF_ASYNCSTORAGE | BINDF_GETNEWESTVERSION | BINDF_NOWRITECACHE>  
+    int nBindFlags = BINDF_ASYNCHRONOUS | BINDF_ASYNCSTORAGE | BINDF_GETNEWESTVERSION | BINDF_NOWRITECACHE>
 class ATL_NO_VTABLE CBindStatusCallback : public CComObjectRootEx <T ::_ThreadModel::ThreadModelNoCS>,
     public IBindStatusCallbackImpl<T>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Kendi sınıfınızı içeren veri alındı olarak çağrılacak işlev.
 
-*nBindFlags*  
+*nBindFlags*<br/>
 Tarafından döndürülen bağlama bayrakları belirtir [GetBindInfo](#getbindinfo). Varsayılan uygulama bağlama zaman uyumsuz olarak ayarlar, en yeni sürümü veri/nesnesini alır ve disk önbelleğine alınan verileri depolamaz.
 
 ## <a name="members"></a>Üyeler
@@ -162,7 +162,7 @@ Ayrılan tüm kaynakları serbest bırakır.
 Oluşturur bir `CBindStatusCallback` nesne ve çağrıları `StartAsyncDownload` verileri zaman uyumsuz olarak belirtilen URL'den indirmeye başlayın.
 
 ```
-static HRESULT Download(  
+static HRESULT Download(
     T* pT,
     ATL_PDATAAVAILABLE pFunc,
     BSTR bstrURL,
@@ -172,21 +172,21 @@ static HRESULT Download(
 
 ### <a name="parameters"></a>Parametreler
 
-*PT*  
+*PT*<br/>
 [in] Zaman uyumsuz veri aktarımı isteyen nesnesine bir işaretçi. `CBindStatusCallback` Nesne, bu nesnenin sınıfı üzerinde şablonlaştırılır.
 
-*pFunc*  
+*pFunc*<br/>
 [in] Okunan verileri alan işlev işaretçisi. İşlev, nesnenin sınıf türünün bir üyesidir `T`. Bkz: [StartAsyncDownload](#startasyncdownload) söz dizimi ve için.
 
-*bstrURL*  
+*bstrURL*<br/>
 [in] Verileri almak için URL. Herhangi bir geçerli URL veya dosya adı olabilir. NULL olamaz. Örneğin:
 
 `CComBSTR mybstr =_T("http://somesite/data.htm")`
 
-*pUnkContainer*  
+*pUnkContainer*<br/>
 [in] `IUnknown` Kapsayıcının. Varsayılan olarak null değerini DÖNDÜRÜR.
 
-*bRelative*  
+*bRelative*<br/>
 [in] URL göreli veya mutlak olup olmadığını belirten bir bayrak. Mutlak URL anlamına gelir ve varsayılan olarak FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -209,7 +209,7 @@ STDMETHOD(GetBindInfo)(
 
 ### <a name="parameters"></a>Parametreler
 
-*pgrfBSCF*  
+*pgrfBSCF*<br/>
 [out] BINDF numaralandırma değerlerinin nasıl bağlama işlemi gerçekleşmesi gerektiğini gösteren bir işaretçi. Varsayılan olarak, aşağıdaki sabit listesi değerleri ayarlayın:
 
 BINDF_ASYNCHRONOUS zaman uyumsuz indirme.
@@ -220,7 +220,7 @@ BINDF_GETNEWESTVERSION bağlama işlemi, verileri en yeni sürümünü almanız 
 
 Bağlama işlemi değil saklamalısınız BINDF_NOWRITECACHE disk önbellekteki veriler alınır.
 
-*pbindinfo*  
+*pbindinfo*<br/>
 [out içinde] Bir işaretçi `BINDINFO` yapısı nasıl gerçekleşmesi için bağlama nesnesi istediği hakkında daha fazla bilgi verir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -241,7 +241,7 @@ STDMETHOD(GetPriority)(LONG* pnPriority);
 
 ### <a name="parameters"></a>Parametreler
 
-*pnPriority*  
+*pnPriority*<br/>
 [out] Adresi **uzun** değişkeni, başarı, öncelik alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -284,12 +284,12 @@ ATL_PDATAAVAILABLE m_pFunc;
 
 İşlevi tarafından işaret edilen `m_pFunc` nesnenizin sınıf üyesidir ve sözdizimi aşağıdaki gibidir:
 
-```  
-void Function_Name(  
-   CBindStatusCallback<T>* pbsc,  
-   BYTE* pBytes,  
-   DWORD dwSize  
-   );  
+```
+void Function_Name(
+   CBindStatusCallback<T>* pbsc,
+   BYTE* pBytes,
+   DWORD dwSize
+   );
 ```
 
 ##  <a name="m_pt"></a>  CBindStatusCallback::m_pT
@@ -357,7 +357,7 @@ CComPtr<IStream> m_spStream;
 Sistem tarafından sağlanan zaman uyumsuz ad aramaları `OnDataAvailable` kullanılabilir olduğunda, nesne verilerini sağlamak için.
 
 ```
-STDMETHOD(  
+STDMETHOD(
     OnDataAvailable)(DWORD grfBSCF,
     DWORD dwSize,
     FORMATETC* /* pformatetc */,
@@ -366,16 +366,16 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*grfBSCF*  
+*grfBSCF*<br/>
 [in] BSCF numaralandırma değeri. Bir veya daha fazlasını: BSCF_FIRSTDATANOTIFICATION, BSCF_INTERMEDIARYDATANOTIFICATION veya BSCF_LASTDATANOTIFICATION.
 
-*dwSize*  
+*dwSize*<br/>
 [in] Veri bağlama başlangıcından itibaren kullanılabilir toplam miktarı (bayt cinsinden). Veri miktarı ilgili değilse veya hiçbir belirli bir miktarın mevcut geldiğini gösteren sıfır olabilir.
 
-*pformatetc*  
+*pformatetc*<br/>
 [in] İşaretçi [FORMATETC](/windows/desktop/com/the-formatetc-structure) kullanılabilir verilerin biçimini içeren yapısı. Biçim verilmedi CF_NULL olabilir.
 
-*pstgmed*  
+*pstgmed*<br/>
 [in] İşaretçi [STGMEDIUM](/windows/desktop/com/the-stgmedium-structure) sunuldu gerçek verileri tutan yapı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -396,7 +396,7 @@ STDMETHOD(OnLowResource)(DWORD /* dwReserved */);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwReserved*  
+*dwReserved*<br/>
 Ayrılmış.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -413,10 +413,10 @@ STDMETHOD(OnObjectAvailable)(REFID /* riid */, IUnknown* /* punk */);
 
 ### <a name="parameters"></a>Parametreler
 
-*riid*  
+*riid*<br/>
 İstenen arabirim arabirimi tanımlayıcısı. Kullanılmayan.
 
-*Punk*  
+*Punk*<br/>
 IUnknown arabirimi adresi. Kullanılmayan.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -437,16 +437,16 @@ STDMETHOD(OnProgress)(
 
 ### <a name="parameters"></a>Parametreler
 
-*ulProgress*  
+*ulProgress*<br/>
 İşaretsiz uzun tamsayı. Kullanılmayan.
 
-*ulProgressMax*  
+*ulProgressMax*<br/>
 İşaretsiz uzun tamsayı kullanılmayan.
 
-*ulStatusCode*  
+*ulStatusCode*<br/>
 İşaretsiz uzun tamsayı. Kullanılmayan.
 
-*szStatusText*  
+*szStatusText*<br/>
 Bir dize değeri adresi. Kullanılmayan.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -463,10 +463,10 @@ STDMETHOD(OnStartBinding)(DWORD /* dwReserved */, IBinding* pBinding);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwReserved*  
+*dwReserved*<br/>
 Daha sonraki kullanımlar için ayrılmıştır.
 
-*pBinding*  
+*pBinding*<br/>
 [in] Geçerli IBinding arabiriminin adresini bağlama işlemi. Bu, NULL olamaz. İstemci, bağlama nesnesine bir başvuru tutmak için bu işaretçi üzerinde AddRef çağırmalıdır.
 
 ##  <a name="onstopbinding"></a>  CBindStatusCallback::OnStopBinding
@@ -479,11 +479,11 @@ STDMETHOD(OnStopBinding)(HRESULT hresult, LPCWSTR /* szError */);
 
 ### <a name="parameters"></a>Parametreler
 
-*HRESULT*  
+*HRESULT*<br/>
 Bağlama işlemi durum kodunu döndürdü.
 
-szStatusText  
-Bir dize değeri kullanılmayan adresi.
+*szError*<br/>
+Bir dize değeri adresi. Kullanılmayan.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -494,7 +494,7 @@ Bağlama işleminin sonunu belirtmek için sistem tarafından sağlanan zaman uy
 Verileri zaman uyumsuz olarak belirtilen URL'den indirilmeye başlar.
 
 ```
-HRESULT StartAsyncDownload(  
+HRESULT StartAsyncDownload(
     T* pT,
     ATL_PDATAAVAILABLE pFunc,
     BSTR bstrURL,
@@ -504,21 +504,21 @@ HRESULT StartAsyncDownload(
 
 ### <a name="parameters"></a>Parametreler
 
-*PT*  
+*PT*<br/>
 [in] Zaman uyumsuz veri aktarımı isteyen nesnesine bir işaretçi. `CBindStatusCallback` Nesne, bu nesnenin sınıfı üzerinde şablonlaştırılır.
 
-*pFunc*  
+*pFunc*<br/>
 [in] Okunan verilerin alan işlev işaretçisi. İşlev, nesnenin sınıf türünün bir üyesidir `T`. Bkz: **açıklamalar** söz dizimi ve için.
 
-*bstrURL*  
+*bstrURL*<br/>
 [in] Verileri almak için URL. Herhangi bir geçerli URL veya dosya adı olabilir. NULL olamaz. Örneğin:
 
 `CComBSTR mybstr =_T("http://somesite/data.htm")`
 
-*pUnkContainer*  
+*pUnkContainer*<br/>
 [in] `IUnknown` Kapsayıcının. Varsayılan olarak null değerini DÖNDÜRÜR.
 
-*bRelative*  
+*bRelative*<br/>
 [in] URL göreli veya mutlak olup olmadığını belirten bir bayrak. Mutlak URL anlamına gelir ve varsayılan olarak FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri

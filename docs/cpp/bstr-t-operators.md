@@ -14,15 +14,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5db61b6106d34725e2edba8b5681391c6a7147a5
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: ed011a2d6de6b076853c7452e24e116b079655b5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39405687"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107723"
 ---
 # <a name="bstrt-operators"></a>_bstr_t İşleçleri
-Hakkında bilgi için `_bstr_t` işleçleri görmek [_bstr_t sınıfı](../cpp/bstr-t-class.md).  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [_bstr_t Sınıfı](../cpp/bstr-t-class.md)
+
+Hakkında bilgi için `_bstr_t` işleçleri görmek [_bstr_t sınıfı](../cpp/bstr-t-class.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[_bstr_t Sınıfı](../cpp/bstr-t-class.md)

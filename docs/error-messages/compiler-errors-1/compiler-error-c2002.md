@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01124fc839d6e788ff2dccae325f01f7d4337f5d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b87a7fe1513c695344676624ae1968060097c885
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33164872"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116925"
 ---
 # <a name="compiler-error-c2002"></a>Derleyici Hatası C2002
-Geçersiz joker karakter sabiti  
-  
- Çok baytlı karakter sabiti geçerli değil.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Joker karakter sabiti beklenenden daha fazla bayt içerir.  
-  
-2.  Standart üstbilgi STDDEF.h dahil değildir.  
-  
-3.  Geniş karakterler sıradan dize değişmez değerleri ile birleştirilmiş olamaz.  
-  
-4.  Joker karakter sabiti 'L' karakteriyle gelmelidir:  
-  
-    ```  
-    L'mbconst'  
-    ```  
-  
-5.  Microsoft C++ için ASCII önişlemci yönergesi metin bağımsız olması gerekir. Örneğin, yönergesi `#pragma message(L"string")`, geçerli değil.
+
+Geçersiz geniş karakter sabiti
+
+Çok baytlı karakter sabiti, geçerli değil.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Geniş karakter sabiti, beklenenden daha fazla bayt içerir.
+
+1. Standart üstbilgi STDDEF.h dahil değildir.
+
+1. Geniş karakterler, sıradan bir dize değişmez değerleri ile birleştirilmiş olamaz.
+
+1. Bir geniş karakter sabiti 'L' karakteriyle gelmelidir:
+
+    ```
+    L'mbconst'
+    ```
+
+1. Microsoft C++ için ASCII önişlemci yönergesi metin bağımsız olmalıdır. Örneğin, yönergesi `#pragma message(L"string")`, geçerli değil.

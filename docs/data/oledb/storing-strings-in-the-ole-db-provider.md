@@ -15,15 +15,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a5ba289e7e53ba1bcaca550ba84c2d871d215306
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 84ee07f236ac7ec79149b1cb36f358598f9c6c12
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106992"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112700"
 ---
 # <a name="storing-strings-in-the-ole-db-provider"></a>Dizeleri OLE DB Sağlayıcısında Depolama
-MyProviderRS.h öğesinde ATL OLE DB Sağlayıcı Sihirbazı adlı varsayılan kullanıcı kaydı oluşturur `CWindowsFile`. İki dizeyi işlemek için ya da değiştirme `CWindowsFile` veya kendi kullanıcı kaydı aşağıdaki kodda gösterildiği gibi ekleyin:  
+
+MyProviderRS.h içinde ATL OLE DB sağlayıcısı Sihirbazı adlı bir varsayılan kullanıcı kayıt oluşturur. `CWindowsFile`. İki dizenin işlemek için ya da değiştirme `CWindowsFile` veya kendi kullanıcı kaydı aşağıdaki kodda gösterildiği gibi ekleyin:  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
@@ -50,11 +51,12 @@ END_PROVIDER_COLUMN_MAP()
 };  
 ```  
   
- Veri üyeleri `szCommand` ve `szText` ile iki dizeyi temsil eden `szCommand2` ve `szText2` gerekirse ek sütunlar sağlama. Veri üyesi `dwBookmark` bu basit salt okunur sağlayıcı için gerekli değildir, ancak daha sonra eklemek için kullanılan bir `IRowsetLocate` arabirim; bkz [basit salt okunur sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md). `==` İşleci örnekleri karşılaştırır (Bu işleci uygulamak isteğe bağlı).  
+Veri üyeleri `szCommand` ve `szText` ile iki dizeyi temsil eden `szCommand2` ve `szText2` gerekirse ek sütunlar sağlama. Veri üyesi `dwBookmark` bu basit bir salt okunur sağlayıcı için gerekli değildir, ancak daha sonra eklemek için kullanılan bir `IRowsetLocate` arabirim; bkz [basit salt okunur sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md). `==` İşleci örnekleri karşılaştırır (Bu imlecini uygulamadan isteğe bağlı).  
   
- Bu yapıldığında, sağlayıcınız derlemek ve çalıştırmak hazır olmanız gerekir. Sağlayıcı test etmek için eşleşen işlevselliğe sahip bir tüketici gerekir. [Basit Tüketici Uygulama](../../data/oledb/implementing-a-simple-consumer.md) böyle bir test tüketicisinin oluşturulacağını gösterir. Test tüketici sağlayıcı ile çalıştırın. ' I tıklattığınızda test tüketici uygun dizeleri sağlayıcıdan alır olduğunu doğrulayın **çalıştırmak** düğmesini **Test Tüketicisi** iletişim kutusu.  
+Sağlayıcınıza bu yapıldığında, derlemek ve çalıştırmak hazır olması gerekir. Sağlayıcıyı test eşleşen işlevselliğe sahip bir tüketici gerekir. [Basit Tüketici Uygulama](../../data/oledb/implementing-a-simple-consumer.md) bu tür bir test tüketici oluşturma işlemi gösterilmektedir. Test tüketici, sağlayıcı ile çalıştırın. Test tüketici tıkladığınızda sağlayıcısından uygun dizelerden görüntüleyip getirdiğini doğrulayın **çalıştırma** düğmesine **Test tüketici** iletişim kutusu.  
   
- Sağlayıcınıza başarıyla Test ettiğinizde, ek arabirimler uygulayarak işlevselliğini artırmak isteyebilirsiniz. Bir örnek gösterilen [basit salt okunur sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md).  
+Sağlayıcınız başarıyla sınadığınızda ek arabirimlerini uygulayarak işlevselliğini artırmak isteyebilirsiniz. Bir örnek gösterilmiştir [basit salt okunur sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Basit Salt Okunur Sağlayıcıyı Uygulama](../../data/oledb/implementing-the-simple-read-only-provider.md)
+
+[Basit Salt Okunur Sağlayıcıyı Uygulama](../../data/oledb/implementing-the-simple-read-only-provider.md)

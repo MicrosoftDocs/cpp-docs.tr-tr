@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb908bf108bb3ddff375506225b9be97b2898ca5
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 8423985b1c6b7497d332e792af2f6bf67a4a0bbe
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33694020"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110295"
 ---
 # <a name="propagatorblock-class"></a>propagator_block Sınıfı
 `propagator_block` Sınıfı, hem kaynak hem de hedef ileti blokları için Özet temel sınıf. Her ikisi de işlevlerini birleştiren `source_block` ve `target_block` sınıfları.  
@@ -50,54 +50,54 @@ class propagator_block : public source_block<_TargetLinkRegistry,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_TargetLinkRegistry`  
- Hedef bağlantılar tutmak için kullanılacak bağlantı kayıt defteri.  
+*_TargetLinkRegistry*<br/>
+Hedef bağlantıları tutmak için kullanılacak bağlantı kayıt defteri.  
   
- `_SourceLinkRegistry`  
- Kaynak bağlantıları tutmak için kullanılacak bağlantı kayıt defteri.  
+*_SourceLinkRegistry*<br/>
+Kaynak bağlantıları tutmak için kullanılacak bağlantı kayıt defteri.  
   
- `_MessageProcessorType`  
- İleti işleme için işlemci türü.  
+*_MessageProcessorType*<br/>
+İleti işleme için işlemci türü.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`source_iterator`|Yineleyici için tür `source_link_manager` bu `propagator_block`.|  
+|`source_iterator`|İçin bir yineleyici türü `source_link_manager` bu `propagator_block`.|  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[propagator_block](#ctor)|Oluşturan bir `propagator_block` nesnesi.|  
-|[~ propagator_block yok Edicisi](#dtor)|Bozar bir `propagator_block` nesnesi.|  
+|[propagator_block](#ctor)|Oluşturur bir `propagator_block` nesne.|  
+|[~ propagator_block yok Edicisi](#dtor)|Yok eder bir `propagator_block` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Yayma](#propagate)|Zaman uyumsuz olarak bir ileti bu hedef blok kaynak bloğundan geçirir.|  
-|[Gönder](#send)|Zaman uyumlu olarak bu bloğu için bir ileti başlatır. Çağıran bir `ISource` bloğu. Bu işlev tamamlandığında, ileti zaten bloğuna yayılan.|  
+|[Yay](#propagate)|Zaman uyumsuz olarak bir ileti bir kaynak bloktaki bu hedef bloğa aktarır.|  
+|[Gönder](#send)|Bu blok bir iletiyi zaman uyumlu olarak başlatır. Çağıran bir `ISource` blok. Bu işlev tamamlandığında, ileti bloğunun içine zaten yayıldıktan.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[decline_incoming_messages](#decline_incoming_messages)|Blok için yeni ileti reddedildi olduğunu gösterir.|  
-|[initialize_source_and_target](#initialize_source_and_target)|Temel nesneyi başlatır. Özellikle, `message_processor` nesnenin başlatılması gerekiyor.|  
-|[link_source](#link_source)|Belirtilen kaynak blok için bağlantılar `propagator_block` nesnesi.|  
-|[process_input_messages](#process_input_messages)|İşlem iletileri girin. Bu yalnızca source_block türetilen yayılması blokları yararlıdır (geçersiz kılmaları [source_block::process_input_messages](source-block-class.md#process_input_messages).)|  
-|[propagate_message](#propagate_message)|Türetilen bir sınıfta geçersiz kılındığında, bu yöntem bir iletiden zaman uyumsuz olarak aktarır. bir `ISource` bu bloğuna `propagator_block` nesnesi. Tarafından çağrılan `propagate` kaynak bloğu tarafından çağrıldığında yöntemi.|  
-|[register_filter](#register_filter)|Her alınan iletide çağrılacak bir filtre yöntemi kaydeder.|  
-|[remove_network_links](#remove_network_links)|Tüm kaynak ve hedef ağ bağlantıları öğesinden kaldırır `propagator_block` nesnesi.|  
-|[send_message](#send_message)|Türetilen bir sınıfta geçersiz kılındığında, bu yöntem gelen iletiyi zaman uyumlu olarak geçirir. bir `ISource` bu bloğuna `propagator_block` nesnesi. Tarafından çağrılan `send` kaynak bloğu tarafından çağrıldığında yöntemi.|  
-|[unlink_source](#unlink_source)|Belirtilen kaynak blok bu bağlantıyı keser `propagator_block` nesnesi.|  
-|[unlink_sources](#unlink_sources)|Tüm kaynak blokları bu bağlantıyı keser `propagator_block` nesnesi. (Geçersiz kılmaları [Itarget::unlink_sources](itarget-class.md#unlink_sources).)|  
+|[decline_incoming_messages](#decline_incoming_messages)|Blokla yeni iletileri reddedilen olduğunu gösterir.|  
+|[initialize_source_and_target](#initialize_source_and_target)|Temel nesnesini başlatır. Özellikle, `message_processor` nesnenin başlatılması gerekiyor.|  
+|[link_source](#link_source)|Belirtilen kaynak bloğu için bağlantı `propagator_block` nesne.|  
+|[process_input_messages](#process_input_messages)|İşlem giriş iletileri. Yalnızca source_block türetilen Yayıcı bloklar için kullanışlıdır (geçersiz kılmaları [source_block::process_input_messages](source-block-class.md#process_input_messages).)|  
+|[propagate_message](#propagate_message)|Türetilen bir sınıfta geçersiz kılındığında, bu yöntem bir iletiden zaman uyumsuz olarak aktarır. bir `ISource` bu blok `propagator_block` nesne. Tarafından çağrılan `propagate` bir kaynak bloğu tarafından çağrıldığında yöntemi.|  
+|[register_filter](#register_filter)|Alınan her ileti üzerinde çağrılacak bir filtre yöntemi kaydeder.|  
+|[remove_network_links](#remove_network_links)|Tüm kaynak ve hedef ağ bağlantıları buradan kaldırır `propagator_block` nesne.|  
+|[send_message](#send_message)|Türetilen bir sınıfta geçersiz kılındığında, bu yöntem zaman uyumlu olarak gelen bir ileti geçirir bir `ISource` bu blok `propagator_block` nesne. Tarafından çağrılan `send` bir kaynak bloğu tarafından çağrıldığında yöntemi.|  
+|[unlink_source](#unlink_source)|Bu bir belirtilen kaynak blok olan bağlantısını kesen `propagator_block` nesne.|  
+|[unlink_sources](#unlink_sources)|Bu, tüm kaynak bloklar olan bağlantısını kesen `propagator_block` nesne. (Geçersiz kılmaları [Itarget::unlink_sources](itarget-class.md#unlink_sources).)|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Birden çok devralma önlemek için `propagator_block` sınıfının devraldığı `source_block` sınıfı ve `ITarget` soyut sınıf. Uygulamasındaki işlevselliğin çoğu `target_block` sınıfı burada çoğaltılır.  
+ Birden çok devralma önlemek için `propagator_block` sınıfının devraldığı `source_block` sınıfı ve `ITarget` soyut sınıf. İşlevlerin çoğu `target_block` sınıfı burada çoğaltılır.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [Isource](isource-class.md)  
@@ -115,18 +115,18 @@ class propagator_block : public source_block<_TargetLinkRegistry,
   
 ##  <a name="decline_incoming_messages"></a> decline_incoming_messages 
 
- Blok için yeni ileti reddedildi olduğunu gösterir.  
+ Blokla yeni iletileri reddedilen olduğunu gösterir.  
   
 ```
 void decline_incoming_messages();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi yok etme işlemi devam ederken yeni iletiler reddetti emin olmak için yıkıcı tarafından çağrılır.  
+ Bu yöntem, yok etme işlemi devam ederken yeni iletileri reddedilecek emin olmak için yok edici tarafından çağrılır.  
   
 ##  <a name="initialize_source_and_target"></a> initialize_source_and_target 
 
- Temel nesneyi başlatır. Özellikle, `message_processor` nesnenin başlatılması gerekiyor.  
+ Temel nesnesini başlatır. Özellikle, `message_processor` nesnenin başlatılması gerekiyor.  
   
 ```
 void initialize_source_and_target(
@@ -135,38 +135,39 @@ void initialize_source_and_target(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PScheduler`  
- Görevleri planlama için kullanılacak Zamanlayıcı.  
+*_PScheduler*<br/>
+Görevleri zamanlamak için kullanılacak Zamanlayıcı.  
   
- `_PScheduleGroup`  
- Görevleri planlama için kullanılacak zamanlamayı grubu.  
+*_PScheduleGroup*<br/>
+Görevleri zamanlamak için kullanılacak zamanlama grubu.  
   
 ##  <a name="link_source"></a> link_source 
 
- Belirtilen kaynak blok için bağlantılar `propagator_block` nesnesi.  
+ Belirtilen kaynak bloğu için bağlantı `propagator_block` nesne.  
   
 ```
 virtual void link_source(_Inout_ ISource<_Source_type>* _PSource);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PSource`  
- Bir işaretçi `ISource` bağlanacağı bloğu.  
+*_PSource*<br/>
+Bir işaretçi `ISource` bağlanacak bloğu.  
   
 ##  <a name="process_input_messages"></a> process_input_messages 
 
- İşlem iletileri girin. Bu yalnızca source_block türetilen yayılması blokları kullanışlıdır  
+ İşlem giriş iletileri. Yalnızca source_block türetilen Yayıcı bloklar için kullanışlıdır  
   
 ```
 virtual void process_input_messages(_Inout_ message<_Target_type>* _PMessage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PMessage`  
+*_PMessage*<br/>
+İşlenecek iletisi için bir işaretçi.  
   
-##  <a name="propagate"></a> Yayma 
+##  <a name="propagate"></a> Yay 
 
- Zaman uyumsuz olarak bir ileti bu hedef blok kaynak bloğundan geçirir.  
+ Zaman uyumsuz olarak bir ileti bir kaynak bloktaki bu hedef bloğa aktarır.  
   
 ```
 virtual message_status propagate(
@@ -175,23 +176,23 @@ virtual message_status propagate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PMessage`  
- Bir işaretçi `message` nesnesi.  
+*_PMessage*<br/>
+Bir işaretçi `message` nesne.  
   
- `_PSource`  
- İleti sunan kaynak bloğu için bir işaretçi.  
+*_PSource*<br/>
+İletiyi sunmayı kaynak blok için işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
+ A [message_status](concurrency-namespace-enums.md) hedef iletinin yapmak karar göstergesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `propagate` Yöntemi, üzerinde hedef blok bağlantılı kaynak blok tarafından çağrılır. Bir değil sırada zaten iletiyi işlemek için zaman uyumsuz bir görevi veya yürütme yukarı sıralar.  
+ `propagate` Yöntemi, bir hedef bloğu tarafından bağlı kaynak blok üzerinde çağrılır. Biri değil zaten kuyruğa alınmış, iletiyi işlemek için zaman uyumsuz bir görev veya yürütme yukarı kuyruğa alır.  
   
- Yöntem oluşturulur bir [invalid_argument](../../../standard-library/invalid-argument-class.md) her iki özel durum `_PMessage` veya `_PSource` parametresi `NULL`.  
+ Çağırılıyorsa yöntem bir [invalid_argument](../../../standard-library/invalid-argument-class.md) ya da özel durum `_PMessage` veya `_PSource` parametresi `NULL`.  
   
 ##  <a name="propagate_message"></a> propagate_message 
 
- Türetilen bir sınıfta geçersiz kılındığında, bu yöntem bir iletiden zaman uyumsuz olarak aktarır. bir `ISource` bu bloğuna `propagator_block` nesnesi. Tarafından çağrılan `propagate` kaynak bloğu tarafından çağrıldığında yöntemi.  
+ Türetilen bir sınıfta geçersiz kılındığında, bu yöntem bir iletiden zaman uyumsuz olarak aktarır. bir `ISource` bu blok `propagator_block` nesne. Tarafından çağrılan `propagate` bir kaynak bloğu tarafından çağrıldığında yöntemi.  
   
 ```
 virtual message_status propagate_message(
@@ -200,18 +201,18 @@ virtual message_status propagate_message(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PMessage`  
- Bir işaretçi `message` nesnesi.  
+*_PMessage*<br/>
+Bir işaretçi `message` nesne.  
   
- `_PSource`  
- İleti sunan kaynak bloğu için bir işaretçi.  
+*_PSource*<br/>
+İletiyi sunmayı kaynak blok için işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
+ A [message_status](concurrency-namespace-enums.md) hedef iletinin yapmak karar göstergesi.  
   
 ##  <a name="ctor"></a> propagator_block 
 
- Oluşturan bir `propagator_block` nesnesi.  
+ Oluşturur bir `propagator_block` nesne.  
   
 ```
 propagator_block();
@@ -219,7 +220,7 @@ propagator_block();
   
 ##  <a name="dtor"></a> ~ propagator_block 
 
- Bozar bir `propagator_block` nesnesi.  
+ Yok eder bir `propagator_block` nesne.  
   
 ```
 virtual ~propagator_block();
@@ -227,19 +228,19 @@ virtual ~propagator_block();
   
 ##  <a name="register_filter"></a> register_filter 
 
- Her alınan iletide çağrılacak bir filtre yöntemi kaydeder.  
+ Alınan her ileti üzerinde çağrılacak bir filtre yöntemi kaydeder.  
   
 ```
 void register_filter(filter_method const& _Filter);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Filter`  
- Filter yöntemi.  
+*_Filtreyi*<br/>
+Filter yöntemi.  
   
 ##  <a name="remove_network_links"></a> remove_network_links 
 
- Tüm kaynak ve hedef ağ bağlantıları öğesinden kaldırır `propagator_block` nesnesi.  
+ Tüm kaynak ve hedef ağ bağlantıları buradan kaldırır `propagator_block` nesne.  
   
 ```
 void remove_network_links();
@@ -247,7 +248,7 @@ void remove_network_links();
   
 ##  <a name="send"></a> Gönder 
 
- Zaman uyumlu olarak bu bloğu için bir ileti başlatır. Çağıran bir `ISource` bloğu. Bu işlev tamamlandığında, ileti zaten bloğuna yayılan.  
+ Bu blok bir iletiyi zaman uyumlu olarak başlatır. Çağıran bir `ISource` blok. Bu işlev tamamlandığında, ileti bloğunun içine zaten yayıldıktan.  
   
 ```
 virtual message_status send(
@@ -256,21 +257,21 @@ virtual message_status send(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PMessage`  
- Bir işaretçi `message` nesnesi.  
+*_PMessage*<br/>
+Bir işaretçi `message` nesne.  
   
- `_PSource`  
- İleti sunan kaynak bloğu için bir işaretçi.  
+*_PSource*<br/>
+İletiyi sunmayı kaynak blok için işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
+ A [message_status](concurrency-namespace-enums.md) hedef iletinin yapmak karar göstergesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem oluşturulur bir [invalid_argument](../../../standard-library/invalid-argument-class.md) her iki özel durum `_PMessage` veya `_PSource` parametresi `NULL`.  
+ Bu yöntem bir [invalid_argument](../../../standard-library/invalid-argument-class.md) ya da özel durum `_PMessage` veya `_PSource` parametresi `NULL`.  
   
 ##  <a name="send_message"></a> send_message 
 
- Türetilen bir sınıfta geçersiz kılındığında, bu yöntem gelen iletiyi zaman uyumlu olarak geçirir. bir `ISource` bu bloğuna `propagator_block` nesnesi. Tarafından çağrılan `send` kaynak bloğu tarafından çağrıldığında yöntemi.  
+ Türetilen bir sınıfta geçersiz kılındığında, bu yöntem zaman uyumlu olarak gelen bir ileti geçirir bir `ISource` bu blok `propagator_block` nesne. Tarafından çağrılan `send` bir kaynak bloğu tarafından çağrıldığında yöntemi.  
   
 ```
 virtual message_status send_message(
@@ -279,26 +280,26 @@ virtual message_status send_message(
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
+ A [message_status](concurrency-namespace-enums.md) hedef iletinin yapmak karar göstergesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, bu bloğu döndüren `declined` türetilmiş sınıf tarafından geçersiz kılınmadığı sürece.  
   
 ##  <a name="unlink_source"></a> unlink_source 
 
- Belirtilen kaynak blok bu bağlantıyı keser `propagator_block` nesnesi.  
+ Bu bir belirtilen kaynak blok olan bağlantısını kesen `propagator_block` nesne.  
   
 ```
 virtual void unlink_source(_Inout_ ISource<_Source_type>* _PSource);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PSource`  
- Bir işaretçi `ISource` bağlantısız olacak bloğu.  
+*_PSource*<br/>
+Bir işaretçi `ISource` bağlantısının kaldırılması için bloğu.  
   
 ##  <a name="unlink_sources"></a> unlink_sources 
 
- Tüm kaynak blokları bu bağlantıyı keser `propagator_block` nesnesi.  
+ Bu, tüm kaynak bloklar olan bağlantısını kesen `propagator_block` nesne.  
   
 ```
 virtual void unlink_sources();

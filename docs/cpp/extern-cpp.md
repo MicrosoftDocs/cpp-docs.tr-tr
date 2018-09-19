@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8aaf699f2130c94729b8db9cc21dd17b9699d66c
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7b090875b9656fec52e50cb68caf9c2c047d055b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606464"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114260"
 ---
 # <a name="extern-c"></a>extern (C++)
 
@@ -88,9 +88,9 @@ extern constexpr __declspec(selectany) int x = 10;
 
 ## <a name="extern-c-and-extern-c-function-declarations"></a>extern "C" ve extern "C++" işlev bildirimleri
 
- Bir dizeyle kullanıldığında C++ ' ta **extern** Bildirimciler için başka bir dilin bağlantı kurallarının kullanıldığını belirtir. C işlevlerine ve verilerine, yalnızca daha önce C bağlantısına sahip oldukları bildirilmişse erişilebilir. Ancak, ayrı olarak derlenmiş bir çeviri biriminde tanımlanmalıdır.
+Bir dizeyle kullanıldığında C++ ' ta **extern** Bildirimciler için başka bir dilin bağlantı kurallarının kullanıldığını belirtir. C işlevlerine ve verilerine, yalnızca daha önce C bağlantısına sahip oldukları bildirilmişse erişilebilir. Ancak, ayrı olarak derlenmiş bir çeviri biriminde tanımlanmalıdır.
 
- Microsoft C++ dizelerini destekler **"C"** ve **"C++"** içinde *dize sabit değeri* alan. Tüm standart içerme dosyaları **extern** "C" sözdizimini çalışma zamanı kitaplık işlevlerinin C++ programlarında kullanılacak.
+Microsoft C++ dizelerini destekler **"C"** ve **"C++"** içinde *dize sabit değeri* alan. Tüm standart içerme dosyaları **extern** "C" sözdizimini çalışma zamanı kitaplık işlevlerinin C++ programlarında kullanılacak.
 
 ## <a name="example"></a>Örnek
 
@@ -114,7 +114,7 @@ extern "C" {
     char GetChar(void);
 }
 
-//  Define the two functions 
+//  Define the two functions
 //  ShowChar and GetChar with C linkage.
 extern "C" char ShowChar(char ch) {
     putchar(ch);
@@ -131,7 +131,7 @@ extern "C" char GetChar(void) {
 extern "C" int errno;
 ```
 
- Kullanıcının kabul etmesi gereken birden fazla bağlama belirtimi, bir işleve sahiptir Bu işlevler, hem C hem de C++ bağlantısına sahip olarak bildirmek için bir hatadır. Ayrıca, bir işlev için iki bildirimi bir programda gerçekleşmesi durumunda — bir bağlama belirtimi ve görüntü olmadan — bildirimi bağlama belirtimi ile ilk olması gerekir. Bağlama belirtimi zaten işlevlerin yedekli tüm bildirimleri ilk belirtiminde belirtilen bağlantısı verilir. Örneğin:
+Kullanıcının kabul etmesi gereken birden fazla bağlama belirtimi, bir işleve sahiptir Bu işlevler, hem C hem de C++ bağlantısına sahip olarak bildirmek için bir hatadır. Ayrıca, bir işlev için iki bildirimi bir programda gerçekleşmesi durumunda — bir bağlama belirtimi ve görüntü olmadan — bildirimi bağlama belirtimi ile ilk olması gerekir. Bağlama belirtimi zaten işlevlerin yedekli tüm bildirimleri ilk belirtiminde belirtilen bağlantısı verilir. Örneğin:
 
 ```cpp
 extern "C" int CFunc1();
@@ -147,8 +147,9 @@ extern "C" int CFunc2(); // Error: not the first declaration of
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)  
- [Program ve bağlantı](program-and-linkage-cpp.md)  
- [extern depolama sınıfı Belirleyicisi c](../c-language/extern-storage-class-specifier.md)  
- [C'de tanımlayıcıların davranışı](../c-language/behavior-of-identifiers.md)  
- [C adlarda bağlantı](../c-language/linkage.md)
+
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[Program ve bağlantı](program-and-linkage-cpp.md)<br/>
+[extern depolama sınıfı Belirleyicisi c](../c-language/extern-storage-class-specifier.md)<br/>
+[C'de tanımlayıcıların davranışı](../c-language/behavior-of-identifiers.md)<br/>
+[C adlarda bağlantı](../c-language/linkage.md)

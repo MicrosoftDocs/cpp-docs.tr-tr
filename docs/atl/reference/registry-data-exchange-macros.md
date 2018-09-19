@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1864fb953c53cba562856fed24a44b6157a03603
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a8a4ac19f9ead379b66d93a7be031bb53bc50fe5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764221"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109352"
 ---
 # <a name="registry-data-exchange-macros"></a>Kayıt defteri veri değişim makroları
 
@@ -89,19 +89,19 @@ RDX_BINARY(
 
 ### <a name="parameters"></a>Parametreler
 
-*ROOTKEY*  
+*ROOTKEY*<br/>
 Kayıt defteri anahtarı kökü.
 
-*alt*  
+*alt*<br/>
 Kayıt defteri alt anahtarı.
 
-*değer adı*  
+*değer adı*<br/>
 Kayıt defteri anahtarı.
 
-*Üyesi*  
+*Üyesi*<br/>
 Belirtilen kayıt defteri girişi ile ilişkilendirmek için üye değişkeni.
 
-*member_size*  
+*member_size*<br/>
 Üye değişkeni bayt cinsinden boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -123,19 +123,19 @@ RDX_CSTRING_TEXT(
 
 ### <a name="parameters"></a>Parametreler
 
-*ROOTKEY*  
+*ROOTKEY*<br/>
 Kayıt defteri anahtarı kökü.
 
-*alt*  
+*alt*<br/>
 Kayıt defteri alt anahtarı.
 
-*değer adı*  
+*değer adı*<br/>
 Kayıt defteri anahtarı.
 
-*Üyesi*  
+*Üyesi*<br/>
 Belirtilen kayıt defteri girişi ile ilişkilendirmek için üye değişkeni.
 
-*member_size*  
+*member_size*<br/>
 Üye değişkeni bayt cinsinden boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -157,19 +157,19 @@ RDX_DWORD(
 
 ### <a name="parameters"></a>Parametreler
 
-*ROOTKEY*  
+*ROOTKEY*<br/>
 Kayıt defteri anahtarı kökü.
 
-*alt*  
+*alt*<br/>
 Kayıt defteri alt anahtarı.
 
-*değer adı*  
+*değer adı*<br/>
 Kayıt defteri anahtarı.
 
-*Üyesi*  
+*Üyesi*<br/>
 Belirtilen kayıt defteri girişi ile ilişkilendirmek için üye değişkeni.
 
-*member_size*  
+*member_size*<br/>
 Üye değişkeni bayt cinsinden boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -191,19 +191,19 @@ RDX_TEXT(
 
 ### <a name="parameters"></a>Parametreler
 
-*ROOTKEY*  
+*ROOTKEY*<br/>
 Kayıt defteri anahtarı kökü.
 
-*alt*  
+*alt*<br/>
 Kayıt defteri alt anahtarı.
 
-*değer adı*  
+*değer adı*<br/>
 Kayıt defteri anahtarı.
 
-*Üyesi*  
+*Üyesi*<br/>
 Belirtilen kayıt defteri girişi ile ilişkilendirmek için üye değişkeni.
 
-*member_size*  
+*member_size*<br/>
 Üye değişkeni bayt cinsinden boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -212,6 +212,6 @@ Bu makro, bir üye değişkeni bir belirli kayıt defteri girişi ile ilişkilen
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Makroları](../../atl/reference/atl-macros.md)   
+[Makroları](../../atl/reference/atl-macros.md)<br/>
 [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange)
 

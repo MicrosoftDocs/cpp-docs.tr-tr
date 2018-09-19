@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad427c9d8a9091a1eea37b10e1e49ed2d8613c18
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b6349cada597b2089f03169071345a68179b24e3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294420"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114442"
 ---
 # <a name="compiler-warning-level-3-c4554"></a>Derleyici Uyarısı (Düzey 3) C4554
-'işleci': olası hata; İşleç önceliği denetleyin öncelik açıklamak için ayraç kullanın  
-  
- Aşağıdaki örnek C4554 oluşturur:  
-  
-```  
-// C4554.cpp  
-// compile with: /W3 /WX  
-int main() {  
-   int a = 0, b = 0, c = 0;  
-   a = a << b + c;   // C4554  
-   // probably intended (a << b) + c,  
-   // but will get a << (b + c)  
-}  
+
+'operator': olası hata;'için işleç önceliğini denetleyin önceliği netleştirmek için parantez kullanın
+
+Aşağıdaki örnek, C4554 oluşturur:
+
+```
+// C4554.cpp
+// compile with: /W3 /WX
+int main() {
+   int a = 0, b = 0, c = 0;
+   a = a << b + c;   // C4554
+   // probably intended (a << b) + c,
+   // but will get a << (b + c)
+}
 ```

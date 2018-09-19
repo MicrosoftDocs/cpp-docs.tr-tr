@@ -24,22 +24,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e847cff10c7e17185f76b5e790beda3745732312
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 855562b8b6eb5e577914fc6305668ee7305c86e1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406695"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110685"
 ---
 # <a name="customizing-c-command-line-processing"></a>C++ Komut Satırı İşlemini Özelleştirme
-## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Programınızı komut satırı bağımsız değişkenlerini almaz, komut satırı işlemeyi gerçekleştiren yordamı kullanımını gizleme tarafından az miktarda alan kaydedebilirsiniz. Bu yordamı çağrılır `_setargv` ve açıklanan [joker karakter genişletmesi](../cpp/wildcard-expansion.md). Kullanımını engellemek için dosya içeren bir şey yapan bir yordam tanımlamak `main` işlev ve adlandırın `_setargv`. Çağrı `_setargv` ardından tanımınızı tarafından sağlanıyorsa `_setargv`, ve kitaplık sürümü yüklü değil.  
-  
- Benzer şekilde, hiçbir zaman ortam tablosuna aracılığıyla erişiyorsanız `envp` bağımsız değişken yerine kullanılacak boş kendi yordamınızı sağlayabilir `_setenvp`, ortam işleme yordamı. Olduğu gibi `_setargv` işlevi `_setenvp` olarak bildirilmelidir **extern "C"**.  
-  
- Programınızı çağrıları yapabileceğiniz `spawn` veya `exec` C Çalışma Zamanı Kitaplığı'ndaki yordamlara ailesi. Bu durumda, bu yordam bir ortam ana işlemden alt işleme geçmek için kullanıldığından, ortam işleme yordamı göndermeme değil.  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [main: Program Başlatma](../cpp/main-program-startup.md)
+
+## <a name="microsoft-specific"></a>Microsoft'a Özgü
+
+Programınızı komut satırı bağımsız değişkenlerini almaz, komut satırı işlemeyi gerçekleştiren yordamı kullanımını gizleme tarafından az miktarda alan kaydedebilirsiniz. Bu yordamı çağrılır `_setargv` ve açıklanan [joker karakter genişletmesi](../cpp/wildcard-expansion.md). Kullanımını engellemek için dosya içeren bir şey yapan bir yordam tanımlamak `main` işlev ve adlandırın `_setargv`. Çağrı `_setargv` ardından tanımınızı tarafından sağlanıyorsa `_setargv`, ve kitaplık sürümü yüklü değil.
+
+Benzer şekilde, hiçbir zaman ortam tablosuna aracılığıyla erişiyorsanız `envp` bağımsız değişken yerine kullanılacak boş kendi yordamınızı sağlayabilir `_setenvp`, ortam işleme yordamı. Olduğu gibi `_setargv` işlevi `_setenvp` olarak bildirilmelidir **extern "C"**.
+
+Programınızı çağrıları yapabileceğiniz `spawn` veya `exec` C Çalışma Zamanı Kitaplığı'ndaki yordamlara ailesi. Bu durumda, bu yordam bir ortam ana işlemden alt işleme geçmek için kullanıldığından, ortam işleme yordamı göndermeme değil.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[main: Program Başlatma](../cpp/main-program-startup.md)

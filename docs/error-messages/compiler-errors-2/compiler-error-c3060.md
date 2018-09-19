@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c443517edb26258f91497a4d82fcfd7ff26893d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c053f7b92ae12b3e99792603cf7b3c5ac9b49227
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247282"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108605"
 ---
 # <a name="compiler-error-c3060"></a>Derleyici Hatası C3060
-'member': arkadaş işlevi (bunu yalnızca bildirilebilir) bir tam ad kullanmayı bir sınıf içinde tanımlanmamış  
-  
- Arkadaş işlevi izin verilmediğinden bir tam ad kullanmayı tanımlandı.  
-  
- Aşağıdaki örnek C3060 oluşturur:  
-  
-```  
-// C3060.cpp  
-class A {  
-public:  
-   void func();  
-};  
-  
-class C {  
-public:  
-   friend void A::func() { }   // C3060  
-   // Try the following line and the out of class definition:  
-   // friend void A::func();  
-};  
-  
-// void A::func(){}  
+
+'member': bir arkadaş işlev tam adı (Bu yalnızca bildirilebilir) kullanarak bir sınıf içinde tanımlanamaz
+
+İzin bir tam ad kullanılarak bir arkadaş işlev tanımlandı.
+
+Aşağıdaki örnek, C3060 oluşturur:
+
+```
+// C3060.cpp
+class A {
+public:
+   void func();
+};
+
+class C {
+public:
+   friend void A::func() { }   // C3060
+   // Try the following line and the out of class definition:
+   // friend void A::func();
+};
+
+// void A::func(){}
 ```

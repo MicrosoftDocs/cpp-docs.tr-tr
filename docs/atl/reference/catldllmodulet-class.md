@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ec36cddae835d46c5db6245f85e4294aa52225e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 170f46424e8eb4db4c38c91f01a89b53d5cbce0a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766580"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107835"
 ---
 # <a name="catldllmodulet-class"></a>CAtlDllModuleT sınıfı
 
@@ -38,13 +38,13 @@ Bu sınıf, bir DLL için modül temsil eder.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınıza türetilen `CAtlDllModuleT`.
 
 ## <a name="members"></a>Üyeler
@@ -128,13 +128,13 @@ HRESULT DllGetClassObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*rclsid*  
+*rclsid*<br/>
 Oluşturulacak nesnenin CLSID.
 
-*riid*  
+*riid*<br/>
 İstenen arabirim Laboratuvardaki.
 
-*ppv*  
+*ppv*<br/>
 Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppv* NULL olarak ayarlandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -151,10 +151,10 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID /* lpReserved*/) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dwReason*  
+*dwReason*<br/>
 DLL_PROCESS_ATTACH DllMain ve DLL_THREAD_ATTACH bildirim çağrıları kümesine devre dışı ise.
 
-*lpReserved*  
+*lpReserved*<br/>
 Ayrılmış.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -175,7 +175,7 @@ HRESULT DllRegisterServer(BOOL bRegTypeLib = TRUE) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 Tür kitaplığı kayıtlı olması ise TRUE. Varsayılan değer True'dur.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -192,7 +192,7 @@ HRESULT DllUnregisterServer(BOOL bUnRegTypeLib = TRUE) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*bUnRegTypeLib*  
+*bUnRegTypeLib*<br/>
 Tür kitaplığı defterinden kaldırılacak ise TRUE. Varsayılan değer True'dur.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -212,13 +212,13 @@ HRESULT GetClassObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*rclsid*  
+*rclsid*<br/>
 Oluşturulacak nesnenin CLSID.
 
-*riid*  
+*riid*<br/>
 İstenen arabirim Laboratuvardaki.
 
-*ppv*  
+*ppv*<br/>
 Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppv* NULL olarak ayarlandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -231,7 +231,7 @@ Bu yöntemi çağıran [CAtlDllModuleT::DllGetClassObject](#dllgetclassobject) v
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CAtlModuleT sınıfı](../../atl/reference/catlmodulet-class.md)   
-[CAtlExeModuleT sınıfı](../../atl/reference/catlexemodulet-class.md)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[CAtlModuleT Sınıfı](../../atl/reference/catlmodulet-class.md)<br/>
+[CAtlExeModuleT Sınıfı](../../atl/reference/catlexemodulet-class.md)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Modül sınıfları](../../atl/atl-module-classes.md)

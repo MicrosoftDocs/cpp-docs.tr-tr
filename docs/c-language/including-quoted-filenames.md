@@ -1,5 +1,5 @@
 ---
-title: Dahil olmak üzere, dosya adları tırnak içine alınmış | Microsoft Docs
+title: Alıntılanan dosya adlarını dahil olmak üzere | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,19 +12,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80f6afbc503b52d1ef620050bf5592eb84e75fa9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d3e865df95d92dcad6b414da11677b5212e9a9f3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32383234"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109944"
 ---
 # <a name="including-quoted-filenames"></a>Tırnak İşaretli Dosya Adlarını Dahil Etme
-**ANSI 3.8.2** includable kaynak dosyaları için tırnak işaretli adları için destek  
-  
- Dahil edilecek dosya için, çift tırnak (" ") işareti içine alarak belirsiz olmayan, tam bir yol belirtimi belirtirseniz, önişlemci yalnızca bu yol belirtimini arar ve standart dizinleri yoksayar.  
-  
- Olarak belirtilen içerme dosyaları için [#include](../preprocessor/hash-include-directive-c-cpp.md) "spec yolu", dizin arama üst dosya dizinleri ile başlar, ardından iki üst dosyalarla dizinleri ile devam eder. Bu nedenle arama, işlenmekte olan kaynak dosyayı içeren dizine göre başlar. Dosya adı açılı ayraç gibi iki üst varlık dosyası yok ve dosya bulunamadı, aramaya devam eder.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Ön işleme Yönergeleri](../c-language/preprocessing-directives.md)
+
+**ANSI 3.8.2** dahil edilebilecek kaynak dosyalarını tırnak işaretli ad desteği
+
+Dahil edilecek dosya için, çift tırnak (" ") işareti içine alarak belirsiz olmayan, tam bir yol belirtimi belirtirseniz, önişlemci yalnızca bu yol belirtimini arar ve standart dizinleri yoksayar.
+
+Olarak belirtilen dosyaları eklemek için [#include](../preprocessor/hash-include-directive-c-cpp.md) "path-spec", dizin arama ana dosyanın dizinlerle başlar ve daha üst dosyaların dizinleriyle devam eder. Bu nedenle arama, işlenmekte olan kaynak dosyayı içeren dizine göre başlar. Dosya adı köşeli ayraçlar içine alınan iki üst dosya yok ve dosyayı bulunamadı, arama gibi devam eder.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Ön işleme Yönergeleri](../c-language/preprocessing-directives.md)

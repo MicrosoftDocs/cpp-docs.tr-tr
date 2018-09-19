@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d30b2e5c1856a604ae314316cd71d6acc00a7c74
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c0accd68881cccad5e34530a6c157a4e8179b283
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33234766"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111101"
 ---
 # <a name="compiler-error-c2708"></a>Derleyici Hatası C2708
-'tanımlayıcısı': bayt gerçek bir parametre uzunluğu farklı önceki çağrısı veya başvurusu  
-  
- A [__stdcall](../../cpp/stdcall.md) tarafından prototip işlevi öncesinde. Aksi durumda, ilk çağrıda bir prototip olarak işlev derleyici yorumlar ve derleyici ile eşleşmeyen bir çağrı karşılaştığında bu hata oluşur.  
-  
- Bu hatayı gidermek için bir işlev prototipi ekleyin.
+
+'identifier': Gerçek parametrenin bayt uzunluğu önceki çağrıdan veya başvurudan farklı farklıdır
+
+A [__stdcall](../../cpp/stdcall.md) işlevi tarafından bir prototip öncesinde gerekir. Aksi halde, derleyici ilk çağrı işlevine bir prototip olarak yorumlar ve derleyici ile eşleşmeyen bir çağrı karşılaştığında bu hata oluşur.
+
+Bu hatayı düzeltmek için bir işlev prototipi ekleyin.

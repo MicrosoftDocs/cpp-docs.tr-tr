@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 144fa1d85e4dd63fdb9a381fd4285ba905817851
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 31a1164ecd8ce17aec7058525598c68d312f14e0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316270"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113038"
 ---
 # <a name="nmake-fatal-error-u1077"></a>NMAKE Önemli Hatası U1077
-'program': dönüş kodu 'value'  
-  
- Verilen komut veya program başarısız oldu ve belirtilen çıkış kodu döndürdü NMAKE tarafından çağrılır.  
-  
- Bu hatayı bastırmak ve NMAKE oturum devam etmek için /I seçeneğini **. Yoksay** nokta yönergesi veya tire (**-**) komutu değiştiricisi. NMAKE oturum bağımlılığı ağacı ilgisiz bölümleri için devam etmek için / k seçeneğini kullanın.
+
+'program': dönüş kodu 'value'
+
+Söz konusu komut veya program başarısız oldu ve belirtilen çıkış kodu döndürdü NMAKE tarafından çağrılır.
+
+Bu hata gösterme ve NMAKE oturumu devam etmek için /ı seçeneği kullanmak **. Yoksay** yönergesi nokta veya tire (**-**) komut değiştiricisi. Bağımlılık ağacı ilgisiz bölümlerinin NMAKE oturuma devam etmek için /K seçeneğini kullanın.

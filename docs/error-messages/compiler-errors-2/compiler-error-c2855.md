@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68441fad9f6261e01f91c0557eed583a5331e143
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dbdbb2b5498f3312dd12b27755405ee77cc3b1e4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33263546"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108475"
 ---
 # <a name="compiler-error-c2855"></a>Derleyici Hatası C2855
-komut satırı seçeneği 'seçeneği' önceden derlenmiş üst bilgi ile tutarsız  
-  
- Verilen komut satırı seçeneği önceden derlenmiş üst bilgi oluşturmak için kullanılan seçeneğinden farklıdır. Önceden derlenmiş üst bilgi verilen komut satırı seçeneğiyle yeniden oluşturun.
+
+komut satırı seçeneği 'seçeneği' Ön derlenmiş üstbilgiyle tutarsız
+
+Belirtilen komut satırı seçeneği ön derlenmiş üstbilgiyi oluşturmak için kullanılan seçeneğinden farklıdır. Belirtilen komut satırı seçeneği ön derlenmiş üstbilgiyi yeniden oluşturun.

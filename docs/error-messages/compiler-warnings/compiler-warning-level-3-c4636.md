@@ -16,33 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c48c7d93846d4c313fa3a09c22e009f31bdd2224
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cf7dd13e4df2e07df362c04763125dd7954c986b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290497"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113675"
 ---
 # <a name="compiler-warning-level-3-c4636"></a>Derleyici Uyarısı (Düzey 3) C4636
-XML belge açıklaması 'oluşturmak için ' uygulanan: etiketi boş gerekli '' özniteliği.  
-  
- Gibi bir etiket `cref`, bir değere sahip değil.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4636 oluşturur.  
-  
-```  
-// C4636.cpp  
-// compile with: /clr /doc /W3 /c  
-/// <see cref=''/>  
-// /// <see cref='System::Exception'/>  
-ref struct A {   // C4636  
-   void f(int);  
-};  
-  
-// OK  
-/// <see cref='System::Exception'/>  
-ref struct B {  
-   void f(int);  
-};  
+
+XML belgesi açıklaması uygulanan 'oluşturmak için ': Etiket boş olmayan gerektirir '' özniteliği.
+
+Gibi bir etiket `cref`, bir değer yoktu.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4636 oluşturur.
+
+```
+// C4636.cpp
+// compile with: /clr /doc /W3 /c
+/// <see cref=''/>
+// /// <see cref='System::Exception'/>
+ref struct A {   // C4636
+   void f(int);
+};
+
+// OK
+/// <see cref='System::Exception'/>
+ref struct B {
+   void f(int);
+};
 ```

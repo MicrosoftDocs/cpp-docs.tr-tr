@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ee0fd3fa213639e70199cfe5653ee2034bc39b3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4c76173f99dbc2fb415b60212109242845501694
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33233389"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109112"
 ---
 # <a name="compiler-error-c2768"></a>Derleyici Hatası C2768
-'function': Geçersiz bağımsız açık şablon kullanımı  
-  
- Derleyici işlev tanımı bir işlev şablonunun açık alt uzmanlaşması olması gerekiyordu veya işlev tanımı için yeni bir işlev olması gerekiyordu belirleyemedi.  
-  
- Bu hata, Visual Studio .NET 2003'te derleyici uyumluluğu geliştirmeleri bir parçası olarak sunulmuştur.  
-  
- Aşağıdaki örnek C2768 oluşturur:  
-  
-```  
-// C2768.cpp  
-template<typename T>  
-void f(T) {}  
-  
-void f<int>(int) {}   // C2768  
-  
-// an explicit specialization  
-template<>  
-void f<int>(int) {}   
-  
-// global nontemplate function overload  
-void f(int) {}  
+
+'function': açık şablon bağımsız değişkenlerinin geçersiz kullanımı
+
+Derleyici bir işlev tanımı bir işlev şablonunun açık uzmanlığı olması gerekiyordu veya işlev tanımı için yeni bir işlev olması gerekiyordu belirleyemedi.
+
+Bu hata, derleyici uyumluluğu yapılan geliştirmelerin bir parçası olarak Visual Studio .NET 2003'te sunulmuştur.
+
+Aşağıdaki örnek, C2768 oluşturur:
+
+```
+// C2768.cpp
+template<typename T>
+void f(T) {}
+
+void f<int>(int) {}   // C2768
+
+// an explicit specialization
+template<>
+void f<int>(int) {}
+
+// global nontemplate function overload
+void f(int) {}
 ```

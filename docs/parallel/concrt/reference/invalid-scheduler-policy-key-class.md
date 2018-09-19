@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b78bc955b43f3b6650f7a2fe654e5920c9cac971
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 1e7dc90ce1ff04d3d02aed13927f137a2b4f7f75
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705178"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113298"
 ---
 # <a name="invalidschedulerpolicykey-class"></a>invalid_scheduler_policy_key Sınıfı
-Bu sınıf geçersiz bir zaman oluşturulan bir özel tanımlar veya Bilinmeyen anahtar için geçirilen bir `SchedulerPolicy` Nesne oluşturucusu veya `SetPolicyValue` yöntemi bir `SchedulerPolicy` nesnesi gibi başka yöntemler kullanılarak değiştirilmelidir bir anahtar geçirildi `SetConcurrencyLimits` yöntemi.  
+Bu sınıf geçersiz olduğunda oluşturulan bir özel durumu açıklayan veya bilinmeyen anahtarı geçirildiğinde bir `SchedulerPolicy` nesne Oluşturucu, veya `SetPolicyValue` yöntemi bir `SchedulerPolicy` nesnesi gibi diğer araçları kullanarak değiştirmesi gereken bir anahtarı geçirildi `SetConcurrencyLimits` yöntemi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,7 +40,7 @@ class invalid_scheduler_policy_key : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[invalid_scheduler_policy_key](#ctor)|Fazla Yüklendi. Oluşturan bir `invalid_scheduler_policy_key` nesnesi.|  
+|[invalid_scheduler_policy_key](#ctor)|Fazla Yüklendi. Oluşturur bir `invalid_scheduler_policy_key` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -54,7 +54,7 @@ class invalid_scheduler_policy_key : public std::exception;
   
 ##  <a name="ctor"></a> invalid_scheduler_policy_key 
 
- Oluşturan bir `invalid_scheduler_policy_key` nesnesi.  
+ Oluşturur bir `invalid_scheduler_policy_key` nesne.  
   
 ```
 explicit _CRTIMP invalid_scheduler_policy_key(_In_z_ const char* _Message) throw();
@@ -63,8 +63,8 @@ invalid_scheduler_policy_key() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

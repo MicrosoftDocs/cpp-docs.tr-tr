@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0e63d93134d48b1f429b097562805c967911e608
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7596829cc89dcfa335b38d24a57666a430507e27
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103710"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111725"
 ---
 # <a name="autohandlereset"></a>auto_handle::reset
 Geçerli ait bir nesneyi yok ve isteğe bağlı olarak yeni bir nesne elinde gerçekleştirin.  
@@ -40,8 +40,8 @@ void reset();
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_new_ptr`  
- (İsteğe bağlı) Yeni nesne.  
+*_new_ptr*<br/>
+(İsteğe bağlı) Yeni nesne.  
   
 ## <a name="example"></a>Örnek  
   
@@ -94,7 +94,7 @@ done
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\auto_handle.h >  
+ **Üst bilgi dosyası** \<msclr\auto_handle.h >  
   
  **Namespace** msclr  
   

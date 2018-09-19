@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd6bed6fa3722b320e23f5d6da94673ba928c225
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3bade146edd1b83f893af72fc4e760a46187679b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754988"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111712"
 ---
 # <a name="c-storage-classes"></a>C Depolama Sınıfları
 
@@ -60,6 +60,6 @@ Her depolama sınıfı tanımlayıcısı tam anlamı iki etkenlere bağlıdır:
 
 [Dış düzey bildirimleri depolama sınıfı tanımlayıcıları](../c-language/storage-class-specifiers-for-external-level-declarations.md) ve [iç düzey bildirimleri depolama sınıfı tanımlayıcıları](../c-language/storage-class-specifiers-for-internal-level-declarations.md) açıklayan *depolama sınıfı tanımlayıcısı* terminaller her tür bir bildirim ve varsayılan davranışı açıklamak olduğunda *depolama sınıfı tanımlayıcısı* bir değişkeninden atlanırsa. [İşlev bildirimli depolama sınıfı tanımlayıcıları](../c-language/storage-class-specifiers-with-function-declarations.md) işlevleri ile kullanılan depolama sınıfı tanımlayıcıları açıklar.
 
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca Bkz.
 
-[Bildirimler ve Türler](../c-language/declarations-and-types.md)  
+[Bildirimler ve Türler](../c-language/declarations-and-types.md)

@@ -44,14 +44,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1b94898cbe4a041ac1bb9a5d01c55380ee496106
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: c6d62b8d4b033d1b90c753d5de1752f0cb737f0d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465372"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114663"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet Sınıfı
+
 Devralınan `DBPROPSET` yapısı ve anahtar alanları başlatan bir oluşturucu ekler ve `AddProperty` erişim yöntemi.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -61,7 +62,8 @@ class CDBPropSet : public tagDBPROPSET
 ```  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldbcli.h  
+
+**Başlık:** atldbcli.h  
 
 ## <a name="members"></a>Üyeler  
   
@@ -80,9 +82,11 @@ class CDBPropSet : public tagDBPROPSET
 |[işleç =](#op_equal)|Bir özellik kümesinden diğerine içeriğini atar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- OLE DB sağlayıcıları ve tüketiciler kullanım `DBPROPSET` dizileri geçirilecek yapıları `DBPROP` yapıları. Her `DBPROP` yapısı ayarlanabilir tek bir özelliği temsil eder.  
+
+OLE DB sağlayıcıları ve tüketiciler kullanım `DBPROPSET` dizileri geçirilecek yapıları `DBPROP` yapıları. Her `DBPROP` yapısı ayarlanabilir tek bir özelliği temsil eder.  
 
 ## <a name="addproperty"></a> CDBPropSet::AddProperty
+
 Bir özellik için özellik kümesi ekler.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -103,34 +107,37 @@ bool AddProperty(DWORD dwPropertyID,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *dwPropertyID*  
- [in] Eklenecek özelliğin kimliği. Başlatmak için kullanılan `dwPropertyID` , `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
+
+*dwPropertyID*<br/>
+[in] Eklenecek özelliğin kimliği. Başlatmak için kullanılan `dwPropertyID` , `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
   
- *var*  
- [in] Özellik değeri başlatmak için kullanılan bir değişken `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
+*var*<br/>
+[in] Özellik değeri başlatmak için kullanılan bir değişken `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
   
- *szValue*  
- [in] Özellik değeri başlatmak için kullanılan bir dize `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
+*szValue*<br/>
+[in] Özellik değeri başlatmak için kullanılan bir dize `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
   
- *bDeğer*  
- [in] A `BYTE` veya boolean değeri için özellik değerini başlatmak için kullanılan `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
+*bDeğer*<br/>
+[in] A `BYTE` veya boolean değeri için özellik değerini başlatmak için kullanılan `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
   
- *nDeğer*  
- [in] Özellik değeri başlatmak için kullanılan bir tamsayı değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
+*nDeğer*<br/>
+[in] Özellik değeri başlatmak için kullanılan bir tamsayı değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
   
- *fltValue*  
- [in] Özellik değeri başlatmak için kullanılan bir kayan nokta değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
+*fltValue*<br/>
+[in] Özellik değeri başlatmak için kullanılan bir kayan nokta değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
   
- *dblValue*  
- [in] Özellik değeri başlatmak için kullanılan bir çift duyarlıklı kayan nokta değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
+*dblValue*<br/>
+[in] Özellik değeri başlatmak için kullanılan bir çift duyarlıklı kayan nokta değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
   
- *cyValue*  
- [in] Özellik değeri başlatmak için kullanılan CY para birimi değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
+*cyValue*<br/>
+[in] Özellik değeri başlatmak için kullanılan CY para birimi değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- **doğru** varsa özelliği başarıyla eklendi. Aksi takdirde, **false**. 
+
+**doğru** varsa özelliği başarıyla eklendi. Aksi takdirde, **false**. 
 
 ## <a name="cdbpropset"></a> CDBPropSet::CDBPropSet
+
 Oluşturucu. Başlatır `rgProperties`, `cProperties`, ve `guidPropertySet` alanlarının [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) yapısı.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -144,13 +151,15 @@ CDBPropSet();
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *GUID*  
- [in] Bir GUID başlatmak için kullanılan `guidPropertySet` alan.  
+
+*GUID*<br/>
+[in] Bir GUID başlatmak için kullanılan `guidPropertySet` alan.  
   
- *propset*  
- [in] Başka bir `CDBPropSet` kopya oluşumuna nesnesi.  
+*propset*<br/>
+[in] Başka bir `CDBPropSet` kopya oluşumuna nesnesi.  
 
 ## <a name="setguid"></a> CDBPropSet::setguıd
+
 Kümeleri `guidPropertySet` alanındaki `DBPROPSET` yapısı.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -160,13 +169,16 @@ void SetGUID(const GUID& guid) throw();
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *GUID*  
- [in] Ayarlamak için kullanılan bir GUID `guidPropertySet` alanını [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) yapısı.  
+
+*GUID*<br/>
+[in] Ayarlamak için kullanılan bir GUID `guidPropertySet` alanını [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu alan ayarlanabilir [Oluşturucusu](../../data/oledb/cdbpropset-cdbpropset.md) de.  
+
+Bu alan ayarlanabilir [Oluşturucusu](../../data/oledb/cdbpropset-cdbpropset.md) de.  
 
 ## <a name="op_equal"></a> CDBPropSet::operator =
+
 Bir özellik için başka bir özellik set içeriğini atar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -176,8 +188,9 @@ CDBPropSet& operator =(CDBPropSet& propset) throw();
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Tüketici Şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)   
- [Cdbpropıdset sınıfı](../../data/oledb/cdbpropidset-class.md)   
- [DBPROPSET yapısı](/previous-versions/windows/desktop/ms714367\(v=vs.85\))   
- [DBPROP yapısı](/previous-versions/windows/desktop/ms717970\(v=vs.85\))
+
+[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
+[CDBPropIDSet Sınıfı](../../data/oledb/cdbpropidset-class.md)<br/>
+[DBPROPSET yapısı](/previous-versions/windows/desktop/ms714367\(v=vs.85\))   
+[DBPROP yapısı](/previous-versions/windows/desktop/ms717970\(v=vs.85\))

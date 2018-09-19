@@ -16,29 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 78fb928c9e86105c97f1feb37ae8765c5e68b153
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 28371c211238aaabdadcb6c2b21284beb672dbe9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33257263"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111647"
 ---
 # <a name="compiler-error-c3618"></a>Derleyici Hatası C3618
-'function': DllImport işaretli bir yöntem tanımlanamıyor  
-  
- Bir yöntem olarak <xref:System.Runtime.InteropServices.DllImportAttribute> tanımlanır belirtilen. DLL.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3618 oluşturur.  
-  
-```  
-// C3618.cpp  
-// compile with: /clr /c  
-using namespace System;  
-using namespace System::Runtime::InteropServices;  
-  
-[ DllImport("user32.dll", EntryPoint="MessageBox", CharSet=CharSet::Ansi) ]  // CHANGED   
-void Func();   
-  
-void Func() {}   // C3618, remove this function definition to resolve  
+
+'function': DllImport olarak işaretli bir yöntem tanımlanamaz
+
+Bir yöntem ile işaretlenmiş <xref:System.Runtime.InteropServices.DllImportAttribute> tanımlı belirtilen. DLL.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3618 oluşturur.
+
+```
+// C3618.cpp
+// compile with: /clr /c
+using namespace System;
+using namespace System::Runtime::InteropServices;
+
+[ DllImport("user32.dll", EntryPoint="MessageBox", CharSet=CharSet::Ansi) ]  // CHANGED
+void Func();
+
+void Func() {}   // C3618, remove this function definition to resolve
 ```

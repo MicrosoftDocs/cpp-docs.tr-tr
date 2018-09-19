@@ -19,18 +19,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: af8fd53122dcad71fb5ff20298cbd35b4d8ba31c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2eb66b1068e20f4bfc8936e592afbcb5183974a2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33090059"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110958"
 ---
 # <a name="catalog-information--mfc-data-access"></a>Katalog bilgileri (MFC veri erişimi)
-Bir veri kaynağındaki tablolar hakkında bilgi, tablolar ve bunları, tablo ayrıcalıklarını, birincil ve yabancı anahtarlar, önceden tanımlanmış sorgular veya saklı yordamlar, tablolar, dizinler hakkında bilgileri hakkında bilgi adlarını sütun adları içerebilir ve tablolar hakkındaki istatistiklerdir.  
+
+Bir veri kaynağındaki tablolar hakkında bilgi, tablolar ve sütunlar bunları, tablo ayrıcalıkları, birincil ve yabancı anahtarlar, önceden tanımlanmış sorguları veya saklı yordamları, tablolar, dizinler hakkında bilgileri hakkında bilgi adları adlarını içerebilir ve tabloları hakkındaki istatistiklerdir.  
   
- Daha fazla bilgi için bkz: [veri kaynağı: veri kaynağı'nın (ODBC) şemasını belirleme](../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md).  
+Daha fazla bilgi için [veri kaynağı: veri kaynağı'nın (ODBC) şemasını belirleme](../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md).  
   
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri erişimi (MFC/ATL) programlama](../data/data-access-programming-mfc-atl.md)
+
+[Veri erişim programlama (MFC/ATL)](../data/data-access-programming-mfc-atl.md)

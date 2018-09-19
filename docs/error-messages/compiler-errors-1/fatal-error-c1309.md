@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91b6ab39e8a2907b03d1fe8bf6ed6094f6c14238
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6bf033bd134c039cf2f626842e9958abde23d811
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33227088"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108561"
 ---
 # <a name="fatal-error-c1309"></a>Önemli hata C1309
-C2 eşleşmeyen sürümleri. DLL ve PGODB\<sürüm >. DLL  
-  
- Derleme ve kullanmak için kullandığınız araç takımı [Profile-Guided iyileştirmeler](../../build/reference/profile-guided-optimizations.md) eşleşmeyen bileşenleri içerir.  Bu hata el ile çözümleyemiyorsa, Visual C++ yeniden yükleyin.
+
+C2 eşleşmeyen sürümleri. DLL ve PGODB\<sürüm >. DLL
+
+Oluşturma ve kullanma için kullandığınız araç takımı [permutasyonları iyileştirmeleri](../../build/reference/profile-guided-optimizations.md) eşleşmeyen bileşenleri içerir.  Bu hata el ile çözümleyemezse, Visual C++ yeniden yükleyin.

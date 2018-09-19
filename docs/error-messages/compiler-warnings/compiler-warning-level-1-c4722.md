@@ -16,38 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 143a902a4d05ab73df96f3f8ab35f52dab244df4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0f450120ff05c7e13888bf4b4ce4425405525b4c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33282590"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112505"
 ---
 # <a name="compiler-warning-level-1-c4722"></a>Derleyici Uyarısı (düzey 1) C4722
-'function': yıkıcı hiçbir zaman döndürür, olası bellek sızıntısı  
-  
- Denetim akışı bir yıkıcı sonlandırır. İş parçacığı veya tüm programı sonlandırır ve ayrılan kaynakları serbest.  Ayrıca, özel durum işleme sırasında yığını geriye doğru izleme için bir yıkıcı çağrılacağı, yürütülebilir davranışını tanımlanmamıştır.  
-  
- Çözümlemek için değil döndürülecek yıkıcı neden işlev çağrısı kaldırın.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4722 oluşturur:  
-  
-```  
-// C4722.cpp  
-// compile with: /O1 /W1 /c  
-#include <stdlib.h>  
-class C {  
-public:  
-   C();  
-   ~C() { exit(1); };   // C4722  
-};  
-  
-extern void func (C*);  
-  
-void Test(){  
-   C x;  
-   func(&x);  
-   // control will not leave Test because destructor will exit  
-}  
+
+'function': yok edici hiç dönmüyor, olası bellek sızıntısı
+
+Denetim akışı bir yok edici içinde sonlandırır. İş parçacığı veya tüm program sona erer ve ayrılan kaynakları serbest.  Ayrıca, özel durum işleme sırasında yığın geriye doğru izleme için bir yok Edicisi çağrılır, yürütülebilir dosyanın davranış tanımlanmamıştır.
+
+Çözümlemek için yok edici değil döndürmek neden işlev çağrısı kaldırın.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4722 oluşturur:
+
+```
+// C4722.cpp
+// compile with: /O1 /W1 /c
+#include <stdlib.h>
+class C {
+public:
+   C();
+   ~C() { exit(1); };   // C4722
+};
+
+extern void func (C*);
+
+void Test(){
+   C x;
+   func(&x);
+   // control will not leave Test because destructor will exit
+}
 ```

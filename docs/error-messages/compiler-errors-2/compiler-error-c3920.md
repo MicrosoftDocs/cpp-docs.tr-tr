@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ced0a0f8fa2b6694de4dd901d71f6721e12493b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3b85638907f350eb3545a858f1319e56b2459f09
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33270286"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112713"
 ---
 # <a name="compiler-error-c3920"></a>Derleyici Hatası C3920
-' işleci '': bir sonek artırma/azaltma WinRT veya CLR işleci sonek arama tanımlayamazsınız WinRT veya CLR işleci karşılık gelen önek çağıracaktır WinRT veya CLR işleci (op_Increment/op_Decrement), ancak sonek semantiği ile  
-  
- Windows çalışma zamanı ve CLR sonek işleci desteklemez ve kullanıcı tanımlı sonek işleçleri izin verilmez.  Bir önek işleci tanımlama ve önek işleci öncesi ve sonrası artışı işlemleri için kullanılır.  
-  
- Aşağıdaki örnek C3920 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C3920.cpp  
-// compile with: /clr /LD  
-public value struct V {  
-   static V operator ++(V me, int)  
-   // try the following line instead  
-   // static V operator ++(V me)  
-   {   // C3920  
-      me.m_i++;  
-      return me;  
-   }  
-  
-   int m_i;  
-};  
-  
+
+' operator'': bir sonek artırma/azaltma WinRT veya sonek arama CLR işleci tanımlanamaz WinRT veya CLR işleci, karşılık gelen önek çağıracaktır WinRT veya CLR işleci (op_Increment/op_Decrement), ancak sonek semantiğine sahip
+
+Windows çalışma zamanı ve CLR sonek işlecini desteklemez ve kullanıcı tanımlı sonek işleçleri kullanılamaz.  Önek işleci tanımlayabilirsiniz ve önek işleci öncesi ve sonrası artırma işlemleri için kullanılır.
+
+Aşağıdaki örnek, C3920 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C3920.cpp
+// compile with: /clr /LD
+public value struct V {
+   static V operator ++(V me, int)
+   // try the following line instead
+   // static V operator ++(V me)
+   {   // C3920
+      me.m_i++;
+      return me;
+   }
+
+   int m_i;
+};
+
 ```

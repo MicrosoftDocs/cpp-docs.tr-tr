@@ -21,15 +21,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 25b5ec1ab7bb5c429538f312ee3b598d3d1d83ec
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ce9e13e56728216c4a4b16246d4e99117199878c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33137516"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115963"
 ---
 # <a name="locktryacquire"></a>lock::try_acquire
-Belirtilen bir süre bekleyip ve döndüren bir nesne üzerinde bir kilit alır bir `bool` bir özel durum atma yerine edinme başarısını raporlamak için.  
+Belirtilen bir zaman miktarı için bekleyen ve döndüren bir nesne üzerinde bir kilit alması bir `bool` bir özel durum oluşturmaktansa edinme başarısını raporlamak için.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -43,17 +43,17 @@ bool try_acquire(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_timeout`  
- Zaman aşımı değerini milisaniye cinsinden veya farklı bir <xref:System.TimeSpan>.  
+*_Zaman aşımı*<br/>
+Zaman aşımı değerini milisaniye cinsinden veya olarak bir <xref:System.TimeSpan>.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `true` Kilit aldıysanız `false` Aksi takdirde.  
+ `true` Kilit alındıysa `false` Aksi takdirde.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işlev bir kilidi zaten alınmış, hiçbir şey yapmaz.  
+ Bu işlev, bir kilidi zaten alınmış, hiçbir şey yapmaz.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek, birden çok iş parçacıkları arasında bir sınıfın tek bir örneğini kullanır.  Sınıfı bir kilit kendisini iç verilerine erişir her iş parçacığı için tutarlı olduğundan emin olmak için kullanır.  Ana uygulama iş parçacığı bir kilit sınıfı aynı örneğinde hiçbir çalışan iş parçacığı hala var ve tüm çalışan iş parçacığı kadar çıkmak için bekleyeceği görevlerini tamamladınız görmek için düzenli aralıklarla denetlemek için kullanır.  
+ Bu örnek, birden çok iş parçacığı arasında bir sınıfın tek bir örneğini kullanır.  Sınıfı bir kilit kendisine iç verilerine erişen her bir iş parçacığı için tutarlı olmasını sağlamak için kullanır.  Ana uygulama iş parçacığı herhangi bir çalışan iş parçacığı hala mevcut ve kadar tüm çalışan iş parçacığı'ndan çıkmak için beklediği görevlerini tamamladınız görmek için düzenli aralıklarla kontrol etmek için aynı sınıf örneği üzerinde bir kilit kullanır.  
   
 ```  
 // msl_lock_try_acquire.cpp  
@@ -142,7 +142,7 @@ All threads completed.
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\lock.h >  
+ **Üst bilgi dosyası** \<msclr\lock.h >  
   
  **Namespace** msclr  
   

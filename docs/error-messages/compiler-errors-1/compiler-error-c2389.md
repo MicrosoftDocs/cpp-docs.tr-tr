@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eaf2907238294ea34c8dbcd51609434b3328d88
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 73809d0fdd94871ad282042cef22a233ced19a32
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195951"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113246"
 ---
 # <a name="compiler-error-c2389"></a>Derleyici Hatası C2389
-'işleci': Geçersiz işleneni 'nullptr'  
-  
- `nullptr` işleneni olamaz.  
-  
- Aşağıdaki örnek C2389 oluşturur:  
-  
-```  
-// C2389.cpp  
-// compile with: /clr  
-int main() {  
-   throw nullptr;   // C2389  
-}  
+
+'operator': geçersiz işleç 'nullptr'
+
+`nullptr` bir işlenen olamaz.
+
+Aşağıdaki örnek, C2389 oluşturur:
+
+```
+// C2389.cpp
+// compile with: /clr
+int main() {
+   throw nullptr;   // C2389
+}
 ```

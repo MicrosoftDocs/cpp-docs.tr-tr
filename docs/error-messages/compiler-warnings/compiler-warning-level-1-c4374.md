@@ -16,39 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb6304fa921d4b67c5dc33bfa54fbcbb3a722511
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fa4a1372e6a9608781b4f57a10b57641efd02a89
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276678"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116067"
 ---
 # <a name="compiler-warning-level-1-c4374"></a>Derleyici Uyarısı (düzey 1) C4374
-'function1': arabirim yöntemi uygulanmadı sanal olmayan bir yöntemle 'function2'  
-  
- Derleyici bekleniyordu [sanal](../../cpp/virtual-specifier.md) anahtar sözcüğü bir yöntemin tanımı üzerinde.  
-  
- Aşağıdaki örnek C4374 oluşturur:  
-  
-```  
-// C4374.cpp  
-// compile with: /clr /W1 /c /WX  
-public interface class I {  
-   void f();  
-};  
-  
-public ref struct B {  
-   void f() {  
-      System::Console::WriteLine("B::f()");  
-   }  
-};  
-  
-public ref struct C {  
-   virtual void f() {  
-      System::Console::WriteLine("C::f()");  
-   }  
-};  
-  
-public ref struct D : B, I {};   // C4374  
-public ref struct E : C, I {};   // OK  
+
+'function1': arabirim yöntemi sanal olmayan 'function2' yöntemi tarafından uygulanmayacak
+
+Derleyici bekleniyordu [sanal](../../cpp/virtual-specifier.md) anahtar sözcüğü, bir yöntem tanımı.
+
+Aşağıdaki örnek, C4374 oluşturur:
+
+```
+// C4374.cpp
+// compile with: /clr /W1 /c /WX
+public interface class I {
+   void f();
+};
+
+public ref struct B {
+   void f() {
+      System::Console::WriteLine("B::f()");
+   }
+};
+
+public ref struct C {
+   virtual void f() {
+      System::Console::WriteLine("C::f()");
+   }
+};
+
+public ref struct D : B, I {};   // C4374
+public ref struct E : C, I {};   // OK
 ```

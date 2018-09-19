@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be85ad161c719af5dba537a96b2d9c327b06d56e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4a3425ea527299d9594b1d296a41a4eaec4c3951
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196759"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108371"
 ---
 # <a name="compiler-error-c2495"></a>Derleyici Hatası C2495
-'tanımlayıcısı': 'nothrow', yalnızca işlev bildirimleri ya da tanımları uygulanabilir  
-  
- [Nothrow](../../cpp/nothrow-cpp.md) işlev bildirimleri ya da yalnızca tanımları için genişletilmiş öznitelik uygulanabilir.  
-  
- Aşağıdaki örnek C2495 oluşturur:  
-  
-```  
-// C2495.cpp  
-// compile with: /c  
-__declspec(nothrow) class X {   // C2495  
-   int m_data;  
-} x;  
-  
-__declspec(nothrow) void test();   // OK  
+
+'identifier': 'nothrow' yalnızca işlev bildirimlerine veya tanımlarına uygulanabilir
+
+[Nothrow](../../cpp/nothrow-cpp.md) işlev bildirimlerine veya tanımlarına yalnızca genişletilmiş öznitelik uygulanabilir.
+
+Aşağıdaki örnek, C2495 oluşturur:
+
+```
+// C2495.cpp
+// compile with: /c
+__declspec(nothrow) class X {   // C2495
+   int m_data;
+} x;
+
+__declspec(nothrow) void test();   // OK
 ```

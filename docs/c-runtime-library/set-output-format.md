@@ -32,99 +32,104 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de9ce3ad9d5f1a39fb1ed173dc430aa9a5c5127c
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d9d41ae92a829452edebe390723997a67b5cd812
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45701512"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112076"
 ---
 # <a name="setoutputformat"></a>_set_output_format
-Biçimlendirilmiş g/ç işlevleri tarafından kullanılan Çıkış biçimleri özelleştirir.  
-  
+
+Biçimlendirilmiş g/ç işlevleri tarafından kullanılan Çıkış biçimleri özelleştirir.
+
 > [!IMPORTANT]
->  Bu işlev artık kullanılmıyor. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-unsigned int _set_output_format(  
-   unsigned int format  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+>  Bu işlev artık kullanılmıyor. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+unsigned int _set_output_format(
+   unsigned int format
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *Biçim*<br/>
-[in] Kullanılacak biçim temsil eden bir değer.  
-  
-## <a name="return-value"></a>Dönüş değeri  
- Önceki çıkış biçimi.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_set_output_format` biçimlendirilmiş g/ç işlevleri çıktısı gibi yapılandırmak için kullanılan [printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md). Şu anda, bu işlev tarafından değiştirilebilen yalnızca biçimlendirme kayan nokta numarası çıktı üsler görüntülenen basamak sayısı kuralıdır.  
-  
- Varsayılan olarak, kayan bir çıkış noktası numaralarını işlevleri tarafından gibi `printf_s`, `wprintf_s`, ve ilgili işlevleri Visual C++ Standart C Kitaplığı'nda üç basamak değerini temsil etmek için gerekli değildir, bu üç basamak üs için yazdırır Üs. Sıfır, üç basamak değerine paneli için kullanılır. `_set_output_format` Üçüncü basamak üs boyutu tarafından gerekmedikçe üs olarak yalnızca iki basamağı yazdırılır bu davranışı değiştirmenizi sağlar.  
-  
- İki basamaklı üsler etkinleştirmek için bu işlev parametresi ile çağrı `_TWO_DIGIT_EXPONENT`, örnekte gösterildiği gibi. İki basamaklı üsler devre dışı bırakmak için 0 bağımsız bu işlevi çağırın.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_set_output_format`|\<stdio.h >|  
-  
- Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
-  
-```C  
-// crt_set_output_format.c  
-#include <stdio.h>  
-  
-void printvalues(double x, double y)  
-{  
-   printf_s("%11.4e %11.4e\n", x, y);  
-   printf_s("%11.4E %11.4E\n", x, y);  
-   printf_s("%11.4g %11.4g\n", x, y);  
-   printf_s("%11.4G %11.4G\n", x, y);  
-}  
-  
-int main()  
-{  
-   double x = 1.211E-5;  
-   double y = 2.3056E-112;  
-   unsigned int old_exponent_format;  
-  
-   // Use the default format  
-   printvalues(x, y);  
-  
-   // Enable two-digit exponent format  
-   old_exponent_format = _set_output_format(_TWO_DIGIT_EXPONENT);  
-  
-   printvalues(x, y);  
-  
-   // Disable two-digit exponent format  
-   _set_output_format( old_exponent_format );  
-  
-   printvalues(x, y);  
-}  
-```  
-  
-```Output  
-1.2110e-005 2.3056e-112  
-1.2110E-005 2.3056E-112  
- 1.211e-005  2.306e-112  
- 1.211E-005  2.306E-112  
- 1.2110e-05 2.3056e-112  
- 1.2110E-05 2.3056E-112  
-  1.211e-05  2.306e-112  
-  1.211E-05  2.306E-112  
-1.2110e-005 2.3056e-112  
-1.2110E-005 2.3056E-112  
- 1.211e-005  2.306e-112  
- 1.211E-005  2.306E-112  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)   
- [_get_output_format](../c-runtime-library/get-output-format.md)
+[in] Kullanılacak biçim temsil eden bir değer.
+
+## <a name="return-value"></a>Dönüş değeri
+
+Önceki çıkış biçimi.
+
+## <a name="remarks"></a>Açıklamalar
+
+`_set_output_format` biçimlendirilmiş g/ç işlevleri çıktısı gibi yapılandırmak için kullanılan [printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md). Şu anda, bu işlev tarafından değiştirilebilen yalnızca biçimlendirme kayan nokta numarası çıktı üsler görüntülenen basamak sayısı kuralıdır.
+
+Varsayılan olarak, kayan bir çıkış noktası numaralarını işlevleri tarafından gibi `printf_s`, `wprintf_s`, ve ilgili işlevleri Visual C++ Standart C Kitaplığı'nda üç basamak değerini temsil etmek için gerekli değildir, bu üç basamak üs için yazdırır Üs. Sıfır, üç basamak değerine paneli için kullanılır. `_set_output_format` Üçüncü basamak üs boyutu tarafından gerekmedikçe üs olarak yalnızca iki basamağı yazdırılır bu davranışı değiştirmenizi sağlar.
+
+İki basamaklı üsler etkinleştirmek için bu işlev parametresi ile çağrı `_TWO_DIGIT_EXPONENT`, örnekte gösterildiği gibi. İki basamaklı üsler devre dışı bırakmak için 0 bağımsız bu işlevi çağırın.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|`_set_output_format`|\<stdio.h >|
+
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md) giriş.
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_set_output_format.c
+#include <stdio.h>
+
+void printvalues(double x, double y)
+{
+   printf_s("%11.4e %11.4e\n", x, y);
+   printf_s("%11.4E %11.4E\n", x, y);
+   printf_s("%11.4g %11.4g\n", x, y);
+   printf_s("%11.4G %11.4G\n", x, y);
+}
+
+int main()
+{
+   double x = 1.211E-5;
+   double y = 2.3056E-112;
+   unsigned int old_exponent_format;
+
+   // Use the default format
+   printvalues(x, y);
+
+   // Enable two-digit exponent format
+   old_exponent_format = _set_output_format(_TWO_DIGIT_EXPONENT);
+
+   printvalues(x, y);
+
+   // Disable two-digit exponent format
+   _set_output_format( old_exponent_format );
+
+   printvalues(x, y);
+}
+```
+
+```Output
+1.2110e-005 2.3056e-112
+1.2110E-005 2.3056E-112
+1.211e-005  2.306e-112
+1.211E-005  2.306E-112
+1.2110e-05 2.3056e-112
+1.2110E-05 2.3056E-112
+  1.211e-05  2.306e-112
+  1.211E-05  2.306E-112
+1.2110e-005 2.3056e-112
+1.2110E-005 2.3056E-112
+1.211e-005  2.306e-112
+1.211E-005  2.306E-112
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)<br/>
+[_get_output_format](../c-runtime-library/get-output-format.md)

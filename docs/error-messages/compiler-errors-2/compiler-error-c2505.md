@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fac405fc13b7696f752ea6455dcbf464318dca56
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b6bd22d7a25311b14ed599c6693bfa0c7913b304
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33227667"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109177"
 ---
 # <a name="compiler-error-c2505"></a>Derleyici Hatası C2505
-'simgesi': '__declspec(modifer)', yalnızca bildirimleri ya da tanımları genel nesne veya statik veri üyeleri uygulanabilir  
-  
- A `__declspec` yalnızca genel kapsamda kullanılmak üzere tasarlanmış değiştiricisi bir işlevde kullanıldı.  
-  
- Daha fazla bilgi için bkz: [appdomain](../../cpp/appdomain.md) ve [işlem](../../cpp/process.md).  
-  
- Aşağıdaki örnek C2505 oluşturur:  
-  
-```  
-// C2505.cpp  
-// compile with: /clr  
-  
-// OK  
-__declspec(process) int ii;  
-__declspec(appdomain) int jj;  
-  
-int main() {  
-   __declspec(process) int i;   // C2505  
-   __declspec(appdomain) int j;   // C2505  
-}  
+
+'symbol': '__declspec(modifer)', yalnızca bildirimlerine veya tanımlarına genel nesnelerin veya statik veri üyeleri uygulanabilir
+
+A `__declspec` yalnızca genel kapsamda kullanılmak üzere tasarlanmış değiştiricisi, bir işlevde kullanıldı.
+
+Daha fazla bilgi için [appdomain](../../cpp/appdomain.md) ve [işlem](../../cpp/process.md).
+
+Aşağıdaki örnek, C2505 oluşturur:
+
+```
+// C2505.cpp
+// compile with: /clr
+
+// OK
+__declspec(process) int ii;
+__declspec(appdomain) int jj;
+
+int main() {
+   __declspec(process) int i;   // C2505
+   __declspec(appdomain) int j;   // C2505
+}
 ```

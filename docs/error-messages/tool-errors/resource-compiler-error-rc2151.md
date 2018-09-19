@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8349aa14de6aec96fa1b526cbcffbe79036f804d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a15f3f1237df9e4b706a2c2048dddd6d5db395d5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33323478"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109788"
 ---
 # <a name="resource-compiler-error-rc2151"></a>Kaynak Derleyicisi Hatası RC2151
-dize sabitleri yeniden kullanamazsınız  
-  
- İki kez içinde aynı değere kullanarak bir **STRINGTABLE** deyimi. Ondalık ve onaltılık değerler çakışan karıştırma değil emin olun.  
-  
- Her Kimliğinde bir **STRINGTABLE** benzersiz olması gerekir. İçin en yüksek verimlilik kullanım bitişik sabitleri, 16 birden fazla üzerinde başlatın.
+
+Dize sabitleri yeniden kullanamazsınız
+
+İki kez içinde aynı değere kullanmakta olduğunuz bir **STRINGTABLE** deyimi. Ondalık ve onaltılık değerlerini çakışan karıştırma değil emin olun.
+
+Her kimliği bir **STRINGTABLE** benzersiz olması gerekir. En yüksek verimliliğin kullanmak için bitişik sabitler katlarından biri 16 başlar.

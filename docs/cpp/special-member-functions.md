@@ -19,26 +19,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6952210f20e68cb17d0c3d382a2fe84d0bcc17f
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: cdc9ed6f4cae208a7edae412debe0a07870ea06e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462824"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112089"
 ---
-# <a name="special-member-functions"></a>Özel üye işlevleri  
-  
-*Özel üye işlevleri* sınıfı (ya da yapı) bazı durumlarda, derleyicinin otomatik olarak sizin için oluşturur, üye işlevleri olan. Bu işlevler [varsayılan oluşturucu](constructors-cpp.md#default_constructors), [yok Edicisi](destructors-cpp.md), [kopya oluşturucu ve kopya atama işleci](copy-constructors-and-copy-assignment-operators-cpp.md)ve [taşıma oluşturucu ve taşıma atama işlecine](move-constructors-and-move-assignment-operators-cpp.md). Sınıfınızın bir veya daha fazla özel üye işlevleri tanımlamıyorsa, ardından derleyici örtük olarak bildirmek ve kullanılan işlevleri tanımlayın. Derleyici tarafından oluşturulan uygulamaları adlı *varsayılan* özel üye işlevleri. Bunlar gerekli değilse, derleyici işlevleri oluşturmaz.  
-  
-Kullanarak açıkça varsayılan özel üye işlevini bildirebilirsiniz **= default** anahtar sözcüğü. Bu işlevi hiç bildirilmedi gibi yalnızca aynı şekilde gerekirse işlevi tanımlama derleyicinin neden olur. 
+# <a name="special-member-functions"></a>Özel üye işlevleri
 
-Bazı durumlarda, derleyicinin oluşturabilir *silinmiş* özel üye işlevler, tanımlanan ve bu nedenle değil çağrılabilir değildir. Bu, burada bir sınıftaki belirli özel üye işlevi çağrısı sınıfın diğer özelliklerini verilen, anlam ifade etmez durumlarda gerçekleşebilir. Açıkça özel üye işlevini otomatik olarak oluşturulmasını önlemek için onu kullanarak silindi olarak bildirebilirsiniz **= Sil** anahtar sözcüğü.  
-  
-Derleyicinin oluşturduğu bir *varsayılan oluşturucu*, yalnızca diğer bir oluşturucu bildirmemiş olduğunda hiçbir bağımsız değişken alan bir oluşturucu. Varsayılan oluşturucuyu çağırmak için çalışan kod, yalnızca parametreleri alan bir oluşturucu bildirirseniz, derleyici bir hata iletisi oluşturmak üzere neden olur. Derleyicinin ürettiği varsayılan oluşturucuyu member-wise basit gerçekleştirir [başlatma varsayılan](initializers.md#default_initialization) nesne. Varsayılan başlatma tüm üye değişkenleri belirsiz bir durumda bırakır.  
-  
-Varsayılan yıkıcıdan nesnenin member-wise yok etme gerçekleştirir. Yalnızca bir temel sınıf yok edicisini sanal ise sanal.  
-  
-Member-wise bit deseni varsayılan kopyalama ve taşıma oluşturma ve atama işlemleri gerçekleştirmek kopyalar veya statik olmayan veri üyelerine taşır. Herhangi bir yıkıcı veya taşıma veya kopyalama işlemleri bildirildiğinde işlemleri yalnızca oluşturulan taşıyın. Hiçbir kopya Oluşturucusu bildirildiğinde varsayılan bir kopya Oluşturucu yalnızca oluşturulur. Bir taşıma işlemi bildirilirse, örtük olarak silindi. Varsayılan kopya atama işleci, yalnızca hiçbir kopya atama işleci açıkça bildirildiğinde oluşturulur. Bir taşıma işlemi bildirilirse, örtük olarak silindi.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
-[C++ Dil Başvurusu](cpp-language-reference.md)  
+*Özel üye işlevleri* sınıfı (ya da yapı) bazı durumlarda, derleyicinin otomatik olarak sizin için oluşturur, üye işlevleri olan. Bu işlevler [varsayılan oluşturucu](constructors-cpp.md#default_constructors), [yok Edicisi](destructors-cpp.md), [kopya oluşturucu ve kopya atama işleci](copy-constructors-and-copy-assignment-operators-cpp.md)ve [taşıma oluşturucu ve taşıma atama işlecine](move-constructors-and-move-assignment-operators-cpp.md). Sınıfınızın bir veya daha fazla özel üye işlevleri tanımlamıyorsa, ardından derleyici örtük olarak bildirmek ve kullanılan işlevleri tanımlayın. Derleyici tarafından oluşturulan uygulamaları adlı *varsayılan* özel üye işlevleri. Bunlar gerekli değilse, derleyici işlevleri oluşturmaz.
+
+Kullanarak açıkça varsayılan özel üye işlevini bildirebilirsiniz **= default** anahtar sözcüğü. Bu işlevi hiç bildirilmedi gibi yalnızca aynı şekilde gerekirse işlevi tanımlama derleyicinin neden olur.
+
+Bazı durumlarda, derleyicinin oluşturabilir *silinmiş* özel üye işlevler, tanımlanan ve bu nedenle değil çağrılabilir değildir. Bu, burada bir sınıftaki belirli özel üye işlevi çağrısı sınıfın diğer özelliklerini verilen, anlam ifade etmez durumlarda gerçekleşebilir. Açıkça özel üye işlevini otomatik olarak oluşturulmasını önlemek için onu kullanarak silindi olarak bildirebilirsiniz **= Sil** anahtar sözcüğü.
+
+Derleyicinin oluşturduğu bir *varsayılan oluşturucu*, yalnızca diğer bir oluşturucu bildirmemiş olduğunda hiçbir bağımsız değişken alan bir oluşturucu. Varsayılan oluşturucuyu çağırmak için çalışan kod, yalnızca parametreleri alan bir oluşturucu bildirirseniz, derleyici bir hata iletisi oluşturmak üzere neden olur. Derleyicinin ürettiği varsayılan oluşturucuyu member-wise basit gerçekleştirir [başlatma varsayılan](initializers.md#default_initialization) nesne. Varsayılan başlatma tüm üye değişkenleri belirsiz bir durumda bırakır.
+
+Varsayılan yıkıcıdan nesnenin member-wise yok etme gerçekleştirir. Yalnızca bir temel sınıf yok edicisini sanal ise sanal.
+
+Member-wise bit deseni varsayılan kopyalama ve taşıma oluşturma ve atama işlemleri gerçekleştirmek kopyalar veya statik olmayan veri üyelerine taşır. Herhangi bir yıkıcı veya taşıma veya kopyalama işlemleri bildirildiğinde işlemleri yalnızca oluşturulan taşıyın. Hiçbir kopya Oluşturucusu bildirildiğinde varsayılan bir kopya Oluşturucu yalnızca oluşturulur. Bir taşıma işlemi bildirilirse, örtük olarak silindi. Varsayılan kopya atama işleci, yalnızca hiçbir kopya atama işleci açıkça bildirildiğinde oluşturulur. Bir taşıma işlemi bildirilirse, örtük olarak silindi.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C++ Dil Başvurusu](cpp-language-reference.md)

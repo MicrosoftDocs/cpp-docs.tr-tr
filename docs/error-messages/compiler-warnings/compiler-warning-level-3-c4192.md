@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3bae9b7af95de94b8f667cb09710af21044f8b80
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 671a8c83dcadcaa89372e53b6c3d677c5810b4a5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291420"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114416"
 ---
 # <a name="compiler-warning-level-3-c4192"></a>Derleyici Uyarısı (Düzey 3) C4192
-'name' 'Kitaplığı' tür kitaplığını içeri aktarma sırasında otomatik olarak hariç  
-  
- A `#import` kitaplığını içeren bir öğeyi *adı*, diğer bir deyişle Win32 sistem üstbilgilerinde de tanımlanabilir. Tür kitaplıkları sınırlamaları nedeniyle, gibi adları **IUnknown** veya GUID genellikle tanımlanmış bir tür kitaplığı sistem üstbilgileri tanımından çoğaltma. `#import` Bu öğeler algılar ve .tlh ve .tli üstbilgi dosyalarında eklemenizi reddeder.  
-  
- Bu davranışı geçersiz kılmak için kullanın `#import` öznitelikleri [no_auto_exclude](../../preprocessor/no-auto-exclude.md) ve [include()](../../preprocessor/include-parens.md).
+
+otomatik olarak 'library' tür kitaplığı içeri aktarılırken 'name' hariç
+
+A `#import` kitaplığı içeren bir öğe *adı*, yani de Win32 sistem üstbilgisinde tanımlanır. Tür kitaplıkları sınırlamaları nedeniyle, gibi adlar **IUnknown** veya GUID genellikle tanımlanmış bir tür kitaplığı sistem üstbilgileri tanımından çoğaltma. `#import` Bu öğeleri algılar ve bunları .tlh ve .tli üst bilgi dosyalarını birleştirmek reddeder.
+
+Bu davranışı geçersiz kılmak için kullanın `#import` öznitelikleri [no_auto_exclude](../../preprocessor/no-auto-exclude.md) ve [include()](../../preprocessor/include-parens.md).

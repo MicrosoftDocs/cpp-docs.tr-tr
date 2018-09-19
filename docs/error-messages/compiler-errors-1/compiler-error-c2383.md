@@ -16,26 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81624ccd7f4857cb2f7d8474d393a9743ab1a2b3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9c529c22636f112291fa53b852899cad78dac589
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196499"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113233"
 ---
 # <a name="compiler-error-c2383"></a>Derleyici Hatası C2383
-'*sembol*': varsayılan bağımsız değişkenler üzerinde bu simgeyi izin verilmez  
-  
- C++ derleyicisi varsayılan bağımsız değişkenler işaretçileri işlevlere izin vermiyor.  
-  
- Bu kod sürümlerinde Visual Studio 2005 önce Visual C++ derleyicisi tarafından kabul edildi ancak şimdi hata verir. Visual C++ tüm sürümlerinde çalışır kodu için bir işaretçi işlev bağımsız değişkeni için varsayılan bir değer atamayın.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, C2383 oluşturur ve olası bir çözüm gösterilmektedir:  
-  
-```cpp  
-// C2383.cpp  
-// compile with: /c   
-void (*pf)(int = 0);   // C2383  
-void (*pf)(int);   // OK  
+
+'*sembol*': Bu Simgede varsayılan bağımsız değişkenlere izin verilmez
+
+C++ derleyicisi işlev işaretçileri varsayılan bağımsız değişkenler görülmez.
+
+Bu kod, Visual Studio 2005 öncesi sürümlerinde Visual C++ Derleyici tarafından kabul edildi, ancak şimdi bir hata verir. Visual C++'ın tüm sürümlerinde çalışan kod için bir işaretçi işlevi bağımsız değişkeni için varsayılan bir değer atamayın.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2383 oluşturur ve olası bir çözüm gösterilmektedir:
+
+```cpp
+// C2383.cpp
+// compile with: /c
+void (*pf)(int = 0);   // C2383
+void (*pf)(int);   // OK
 ```

@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab3fd1a5eae008785a688bcbade674425fc8b2ef
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 69151b71de84c678c09ecafe099344a08d28a8a8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231614"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114234"
 ---
 # <a name="compiler-error-c2562"></a>Derleyici Hatası C2562
-'tanımlayıcısı': 'void' işlevi bir değer döndürme  
-  
- İşlev olarak bildirilmiş `void` ancak bir değer döndürür.  
-  
- Bu hata yanlış işlev prototipi tarafından neden olabilir.  
-  
- İşlevi bildiriminde dönüş türü belirtirseniz, bu hata düzeltilebilir.  
-  
- Aşağıdaki örnek C2562 oluşturur:  
-  
-```  
-// C2562.cpp  
-// compile with: /c  
-void testfunc() {  
-   int i;  
-   return i;   // C2562 delete the return to resolve  
-}  
+
+'identifier': 'void' işlev değer döndürüyor
+
+Olarak bildirilen işlev `void` ancak bir değer döndürür.
+
+Bu hata bir hatalı işlev prototipi tarafından neden olabilir.
+
+Dönüş türü işlev bildiriminin belirtirseniz, bu hata sabit olamaz.
+
+Aşağıdaki örnek, C2562 oluşturur:
+
+```
+// C2562.cpp
+// compile with: /c
+void testfunc() {
+   int i;
+   return i;   // C2562 delete the return to resolve
+}
 ```

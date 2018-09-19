@@ -37,14 +37,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d07c0e64e969e599393a657d4c41a8dd544901c9
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 542c97c1e13d5979290772668b6dccebe1ece9f9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465079"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113168"
 ---
 # <a name="irowsetinfoimpl-class"></a>IRowsetInfoImpl Sınıfı
+
 Bir uygulamasını sağlar [IRowsetInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\)) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -57,14 +58,16 @@ class ATL_NO_VTABLE IRowsetInfoImpl :
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *T*  
- Sınıfınız, türetilen `IRowsetInfoImpl`.  
+
+*T*<br/>
+Sınıfınız, türetilen `IRowsetInfoImpl`.  
   
- *PropClass*  
- Varsayılan olarak bir kullanıcı tarafından tanımlanabilen özellik sınıfı *T*. 
+*PropClass*<br/>
+Varsayılan olarak bir kullanıcı tarafından tanımlanabilen özellik sınıfı *T*. 
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** altdb.h   
+
+**Başlık:** altdb.h   
   
 ## <a name="members"></a>Üyeler  
   
@@ -77,9 +80,11 @@ class ATL_NO_VTABLE IRowsetInfoImpl :
 |[GetSpecification](#getspecification)|Bu satır kümesini oluşturan nesnede (komut veya oturumu) bir arabirim işaretçisini döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Satır kümeleri üzerinde zorunlu bir arabirim. Kullanarak satır kümesi özelliklerini bu sınıfın uyguladığı [özellik kümesi eşlemesini](../../data/oledb/begin-propset-map.md) komut Sınıfınız içinde tanımlanan. Satır kümesi sınıfı komut sınıf özelliği kullanılmasını ayarlar görünse de, bir komut veya oturum nesnesi oluşturulduğunda satır kümesi kendi çalışma zamanı özellikleri kopyası ile sağlanır.  
+
+Satır kümeleri üzerinde zorunlu bir arabirim. Kullanarak satır kümesi özelliklerini bu sınıfın uyguladığı [özellik kümesi eşlemesini](../../data/oledb/begin-propset-map.md) komut Sınıfınız içinde tanımlanan. Satır kümesi sınıfı komut sınıf özelliği kullanılmasını ayarlar görünse de, bir komut veya oturum nesnesi oluşturulduğunda satır kümesi kendi çalışma zamanı özellikleri kopyası ile sağlanır.  
   
 ## <a name="getproperties"></a> Irowsetınfoımpl::GetProperties
+
 Özellikler için geçerli ayarları döndürür `DBPROPSET_ROWSET` grubu.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -92,9 +97,11 @@ STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowsetInfo::GetProperties](/previous-versions/windows/desktop/ms719611\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
+
+Bkz: [IRowsetInfo::GetProperties](/previous-versions/windows/desktop/ms719611\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="getreferencedrowset"></a> Irowsetınfoımpl::getreferencedrowset
+
 Bir yer işareti uygulandığı satır kümesi için bir arabirim işaretçisini döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -106,9 +113,11 @@ STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. *İOrdinal* parametresi, bir yer işareti sütunu olmalıdır. 
+
+Bkz: [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. *İOrdinal* parametresi, bir yer işareti sütunu olmalıdır. 
 
 ## <a name="getspecification"></a> Irowsetınfoımpl::getspecification
+
 Bu satır kümesini oluşturan nesnede (komut veya oturumu) bir arabirim işaretçisini döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -119,11 +128,14 @@ STDMETHOD (GetSpecification )(REFIID riid,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi kullanmak [Igetdatasourceımpl](../../data/oledb/igetdatasourceimpl-class.md) veri kaynağı nesnesinden özellikleri alınamadı.  
+
+Bu yöntemi kullanmak [Igetdatasourceımpl](../../data/oledb/igetdatasourceimpl-class.md) veri kaynağı nesnesinden özellikleri alınamadı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

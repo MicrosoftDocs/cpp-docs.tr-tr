@@ -1,7 +1,7 @@
 ---
-title: 'İzlenecek yol: Proje (C++) test etme | Microsoft Docs'
+title: 'İzlenecek yol: projeyi (C++) test etme | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/14/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -16,57 +16,60 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a9455fa9bf3c9f903f5018a1263978913aa35b2
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: ef6f2534ca0415ea8b8a17445e9cf9441026f669
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33333570"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110607"
 ---
 # <a name="walkthrough-testing-a-project-c"></a>İzlenecek Yol: Projeyi Test Etme (C++)
-Bir program hata ayıklama modunda çalıştırdığınızda, değişkenler ve nesnelerin durumunu incelemek için programı duraklatmak için kesme noktaları kullanabilirsiniz.  
+Bir programı hata ayıklama modunda çalıştırdığınızda, değişkenlerin ve nesnelerin durumunu incelemek için programı duraklatmak üzere kesme noktaları kullanabilirsiniz.  
   
- Bu kılavuzda, program çalışırken bir değişkenin değerini izleyebilir ve beklediğiniz değerdir neden türetme.  
+Bu izlenecek yolda, program çalışırken bir değişkenin değerini izleyin ve neden beklediğiniz değer olduğunu türetme.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
   
--   Bu kılavuz, C++ dil temelleri anladığınızı varsayar.  
+- Bu izlenecek yol, C++ dili temellerini anladığınızı varsayar.  
   
--   Ayrıca listelenen ilgili daha önce izlenecek tamamladığınızı varsaymaktadır [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
+- Ayrıca, listelenen önceki izlenecek yolları tamamladığınızı varsayar [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
   
-### <a name="to-run-a-program-in-debug-mode"></a>Hata ayıklama modunda bir programı çalıştırmak için  
+### <a name="to-run-a-program-in-debug-mode"></a>Bir programı hata ayıklama modunda çalıştırmak için  
   
-1.  TestGames.cpp düzenlemek için açın.  
+1. Games.cpp düzenleme için açın.  
   
-2.  Bu kod satırı seçin:  
+1. Bu kod satırı seçin:  
   
      `Cardgame.solitaire(1);`  
   
-3.  Menü çubuğunda, o satırdaki bir kesme noktası belirleyerek tercih **hata ayıklama**, **kesme**, veya F9 anahtarı seçin. Kırmızı bir daire satırının sol görünür; Bu, bir kesme noktası ayarlandığını gösterir. Bir kesme noktası kaldırmak için menü komutunu veya F9 anahtarı yeniden seçebilirsiniz.  
+1. Menü çubuğunda, o satıra bir kesme noktası ayarlamak isterseniz **hata ayıklama** > **iki durumlu kesme noktası**, ya da seçin **F9** anahtarı. Satırın solunda kırmızı bir daire görünür; Bu, bir kesme noktasının ayarlandığını belirtir. Bir kesme noktasını kaldırmak için menü komutunu seçebilirsiniz veya **F9** yeniden anahtar.  
   
-     Fare kullanıyorsanız, ayarlama veya bir kesme noktası sol kenar boşluğunda tıklatarak kaldırın.  
+     Fare kullanıyorsanız, ayarlama veya sol kenar boşluğunu tıklayarak kesme noktası kaldırın.  
   
-4.  Menü çubuğunda seçin **hata ayıklama**, **hata ayıklamayı Başlat**, veya F5 tuşuna seçin.  
+1. Menü çubuğunda, **hata ayıklama** > **hata ayıklamayı Başlat**, ya da seçin **F5** anahtarı.  
   
-     Program kesme sahip satır ulaştığında, yürütme programınızı kesme modunda olduğu için geçici olarak durdurur. Bir kod satırı solundaki sarı bir ok yürütülecek sonraki satıra olduğunu gösterir.  
+     Program kesme noktasına sahip bir satıra ulaştığında, programınız kesme modunda olduğundan yürütme geçici olarak durur. Bir kod satırının solunda bir sarı ok yürütülecek sonraki satırı olduğunu gösterir.  
   
-5.  Değerini incelemek için `Cardgame::totalParticipants` değişkeni işaretçiyi `Cardgame` ve ardından üzerine getirin, bu araç ipucu penceresinin sol genişletme denetim. Değişken adı `totalParticipants` ve 12 değeri görüntülenir.  
+1. Değerini incelemek için `Cardgame::totalParticipants` değişkeni, işaretçiyi `Cardgame` taşıyın araç ipucu penceresinin sol konumunda genişletme denetiminin üzerine. Değişken adı `totalParticipants` ve değeri **12** görüntülenir.  
   
-     Kısayol menüsünü açın `Cardgame::totalParticipants` değişkeni ve ardından **Gözcü Ekle** o değişkende görüntülenecek **izleme 1** penceresi. Ayrıca bir değişken seçin ve sürükleyin **izleme 1** penceresi.  
+     Kısayol menüsünü açın `Cardgame::totalParticipants` değişkeni seçip **Gözcü Ekle** bu değişkeni görüntülenecek **Watch 1** penceresi. Ayrıca bir değişken vurgulayın ve sürükleyin **Watch 1** penceresi.  
   
-6.  Kodun sonraki satırında, menü çubuğunda, adım tercih **hata ayıklama**, **Step Over**, veya F10 anahtarı seçin.  
+1. Menü çubuğunda, kodun sonraki satırına adım tercih **hata ayıklama** > **Step Over**, ya da seçin **F10** anahtarı.  
   
-     Değeri `Cardgame::totalParticipants` içinde **izleme 1** penceresi artık 13 görüntülenir.  
+     Değerini `Cardgame::totalParticipants` içinde **Watch 1** penceresi olarak görüntülenen artık **13**.  
   
-7.  Kısayol menüsünü açın `return 0;` deyimi ve ardından **çalıştırmak için imleç**. Sonraki deyim yürütülebilecek kod noktaları soluna sarı oku.  
+1. Kısayol menüsünü açın `return 0;` deyimi seçip **imlece kadar Çalıştır**. Kodun sol tarafındaki sarı ok yürütülecek sonraki deyimi işaret eder.  
   
-8.  `Cardgame::totalParticipants` Kaç bir Cardgame sonlandırıldığında azaltın. Bu noktada, `Cardgame::totalParticipants` Cardgame hepsinin silinmiş olduğundan 0 eşit olmalıdır ancak **izleme 1** penceresi gösterir `Cardgame::totalparticipants` 18'e eşittir. Bu algılama ve düzeltme sonraki Kılavuzu izleyerek, kodda bir hata olduğunu gösterir [izlenecek yol: bir proje (C++) hata ayıklama](../ide/walkthrough-debugging-a-project-cpp.md).  
+1. `Cardgame::totalParticipants` Sayısı ne zaman azalmalıdır bir `Cardgame` sonlandırır. Bu noktada, `Cardgame::totalParticipants` 0 olduğundan eşit olmalı tüm `Cardgame` örnekleri silinmiş, ancak **Watch 1** penceresini gösterir `Cardgame::totalparticipants` eşittir **18**. Bu, Algıla ve Düzelt sonraki izlenecek yolu tamamlayarak, kodda bir hata olduğunu gösterir [izlenecek yol: bir proje (C++) hata ayıklama](../ide/walkthrough-debugging-a-project-cpp.md).  
   
-9. Menü çubuğunda, programı durdurmak için tercih **hata ayıklama**, **durdurma hata ayıklama**, veya Shift + F5 klavye kısayolu seçin.  
+1. Menü çubuğunda, programı durdurmak için seçin **hata ayıklama** > **hata ayıklamayı Durdur**, ya da seçin **Shift**+**F5**klavye kısayol.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
- **Önceki:** [izlenecek yol: Proje derleme (C++)](../ide/walkthrough-building-a-project-cpp.md) &#124; **sonraki:**[izlenecek yol: bir projenin (C++)](../ide/walkthrough-debugging-a-project-cpp.md)  
+
+**Önceki:** [izlenecek yol: Proje derleme (C++)](../ide/walkthrough-building-a-project-cpp.md)<br/>
+**Sonraki:** [izlenecek yol: bir projenin (C++)](../ide/walkthrough-debugging-a-project-cpp.md)<br/>
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
- [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
+[C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)<br/>

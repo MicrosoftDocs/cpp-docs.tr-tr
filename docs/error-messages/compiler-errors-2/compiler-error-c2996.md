@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b70665a767a9ab428336fbfd0cd03bc3da1ff7ca
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c76c72a3bb9694536a9c5ae60f60a87ba9b455c1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243937"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108681"
 ---
 # <a name="compiler-error-c2996"></a>Derleyici Hatası C2996
-'function': özyinelemeli işlev şablonu tanımı  
-  
- Bir işlev tanımı kendi kök şablonlu sınıfının örneği dener. Özyinelemeli şablonu örneklemesi izin verilmiyor.
+
+'function': özyinelemeli işlev şablonu tanımı
+
+Bir işlev tanımı kendi kök şablonlu sınıf örneği dener. Yinelenen şablon örneklemeleri izin verilmez.

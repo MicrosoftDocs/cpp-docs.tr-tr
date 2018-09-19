@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4fb442bbe3252574afd37cac3b0e83fe90aac0da
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fd2f979524187dfe5fd5b18872a6927413ff512e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236272"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108462"
 ---
 # <a name="compiler-error-c2817"></a>Derleyici Hatası C2817
-dönüş türü 'işleci Sil' için 'void' olmalıdır  
-  
-Aşırı yüklenmiş bir [delete işleci](../../standard-library/new-operators.md#op_delete) işlevi bir değer döndüremiyor.
+
+'operator delete' için dönüş türü 'void' olmalıdır
+
+Aşırı yüklenmiş bir [delete işleci](../../standard-library/new-operators.md#op_delete) işlev bir değer döndürür.

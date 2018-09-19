@@ -16,54 +16,56 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 252e2e7bdd011b289dbb3ec6164444bbe0bc7b44
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eecd4dc17724b5c02a8ce8398f5630b691dab320
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300403"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109827"
 ---
 # <a name="linker-tools-warning-lnk4078"></a>Bağlayıcı Araçları Uyarısı LNK4078
-birden çok 'bölüm adı' bölümü farklı özniteliklerle bulundu  
-  
- İki bağlantı bulunamadı veya ancak farklı öznitelikleri aynı olan daha fazla bölüm adı.  
-  
- Bu uyarı bağlantı veya LIB önceki bir sürümü tarafından oluşturulmuş bir içeri aktarma kitaplığı veya dışarı aktarma dosyası neden olabilir.  
-  
- Dosya ve yeniden bağlama yeniden oluşturun.  
-  
-## <a name="example"></a>Örnek  
- LNK4078 göre önemli bir değişiklik de kaynaklanabilir: tarafından adlandırılmış bölüm [init_seg](../../preprocessor/init-seg.md) x86 üzerinde okuma/yazma, artık salt okunur.  
-  
- Aşağıdaki örnek LNK4078 oluşturur.  
-  
-```  
-// LNK4078.cpp  
-// compile with: /W1  
-// LNK4078 expected  
-#include <stdio.h>  
-#pragma warning(disable : 4075)  
-typedef void (__cdecl *PF)(void);  
-int cxpf = 0;   // number of destructors to call  
-PF pfx[200];   // pointers to destructors.  
-  
-struct A { A() {} };  
-  
-int myexit (PF pf) { return 0; }  
-  
-#pragma section(".mine$a", read, write)  
-// try the following line instead  
-// #pragma section(".mine$a", read)  
-__declspec(allocate(".mine$a")) int ii = 1;  
-  
-#pragma section(".mine$z", read, write)  
-// try the following line instead  
-// #pragma section(".mine$z", read)  
-__declspec(allocate(".mine$z")) int i = 1;  
-  
-#pragma data_seg()  
-#pragma init_seg(".mine$m", myexit)  
-A bbbb;   
-A cccc;  
-int main() {}  
+
+birden çok 'bölüm adı' bölümü farklı özniteliklerle bulunamadı
+
+İki bağlantı bulunamadı veya ancak farklı öznitelikleri aynı daha fazla bölüm adı.
+
+Bu uyarı bir bağlantı veya LIB önceki sürüm tarafından oluşturulmuş bir içeri aktarma kitaplığı veya dışarı aktarma dosyası neden olabilir.
+
+Dosya ve yeniden bağlama yeniden oluşturun.
+
+## <a name="example"></a>Örnek
+
+LNK4078 bir değişiklik tarafından da kaynaklanabilir: tarafından adlandırılmış bölüm [init_seg](../../preprocessor/init-seg.md) x86 üzerinde okuma/yazma, artık salt okunur.
+
+Aşağıdaki örnek, LNK4078 oluşturur.
+
+```
+// LNK4078.cpp
+// compile with: /W1
+// LNK4078 expected
+#include <stdio.h>
+#pragma warning(disable : 4075)
+typedef void (__cdecl *PF)(void);
+int cxpf = 0;   // number of destructors to call
+PF pfx[200];   // pointers to destructors.
+
+struct A { A() {} };
+
+int myexit (PF pf) { return 0; }
+
+#pragma section(".mine$a", read, write)
+// try the following line instead
+// #pragma section(".mine$a", read)
+__declspec(allocate(".mine$a")) int ii = 1;
+
+#pragma section(".mine$z", read, write)
+// try the following line instead
+// #pragma section(".mine$z", read)
+__declspec(allocate(".mine$z")) int i = 1;
+
+#pragma data_seg()
+#pragma init_seg(".mine$m", myexit)
+A bbbb;
+A cccc;
+int main() {}
 ```

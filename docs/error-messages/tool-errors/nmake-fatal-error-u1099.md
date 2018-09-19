@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7be09691de4212d07b1452ffe33725a3978fc053
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f3ef75a1435d8c922087fcdd21d1941961bc82cd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322110"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113389"
 ---
 # <a name="nmake-fatal-error-u1099"></a>NMAKE Önemli Hatası U1099
-yığın taşması  
-  
- İşlenmekte olan derleme görevleri dosyası NMAKE içindeki geçerli yığın ayırma için çok karmaşık. NMAKE 0x3000 (12 K) ayırma sahiptir.  
-  
- NMAKE'ın yığın ayırma artırmak için Çalıştır [editbin /stack](../../build/reference/stack.md) yardımcı programı ile daha büyük bir yığın seçeneği:  
-  
- **edıtbın /STACK:reserve NMAKE. EXE**  
-  
- Burada *yedek* bir sayı NMAKE içindeki geçerli yığın ayırma değerinden daha büyük.
+
+yığın taşması
+
+NMAKE içindeki geçerli yığın ayırma için çok karmaşık işlenmekte olan derleme görevleri dosyası. NMAKE 0x3000 (12 K) ayırma vardır.
+
+NMAKE'ün yığın ayırma artırmak için çalıştırma [editbin /stack](../../build/reference/stack.md) yardımcı programı ile daha büyük bir yığın seçeneği:
+
+**edıtbın /STACK:reserve NMAKE. EXE**
+
+Burada *rezerve* geçerli yığın ayırma NMAKE içindeki daha büyük bir sayıdır.

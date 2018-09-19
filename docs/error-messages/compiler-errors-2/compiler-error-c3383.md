@@ -16,31 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b54eda0e29a9876da83b9e3da384a39b9345d5d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e35aa05dd037c7d8a5dfd9f7e8328f3644b901e8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33251166"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109398"
 ---
 # <a name="compiler-error-c3383"></a>Derleyici Hatası C3383
-/ CLR: safe ile 'Yeni ' işleci desteklenmiyor  
-  
- Çıktı dosyası bir **/CLR: safe** derleme doğrulanabilir şekilde güvenli türü olan bir dosya olduğundan ve işaretçiler desteklenmez.  
-  
- Daha fazla bilgi için bkz:  
-  
--   [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)  
-  
--   [Genel Visual C++ 64 Bit Geçiş Sorunları](../../build/common-visual-cpp-64-bit-migration-issues.md)  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3383 oluşturur.  
-  
-```  
-// C3383.cpp  
-// compile with: /clr:safe  
-int main() {  
-   char* pCharArray = new char[256];  // C3383  
-}  
+
+/ CLR: safe ile 'operator new' desteklenmiyor
+
+Çıktı dosyası bir **/CLR: safe** derleme doğrulanabilir şekilde güvenli yazın olan bir dosya olduğu ve işaretçiler desteklenmez.
+
+Daha fazla bilgi için bkz:
+
+- [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)
+
+- [Genel Visual C++ 64 Bit Geçiş Sorunları](../../build/common-visual-cpp-64-bit-migration-issues.md)
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3383 oluşturur.
+
+```
+// C3383.cpp
+// compile with: /clr:safe
+int main() {
+   char* pCharArray = new char[256];  // C3383
+}
 ```

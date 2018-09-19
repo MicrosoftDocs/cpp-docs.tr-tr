@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b58184eef2913fcbcdd0e8c6284d26a2207e6681
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 039ce69f624fdcdd6beba2d6d262f920b7848687
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297722"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115946"
 ---
 # <a name="compiler-warning-level-4-c4254"></a>Derleyici Uyarısı (düzey 4) C4254
-'işleci': 'type1' öğesinden 'type2', olası veri kaybını dönüştürme  
-  
- Daha büyük bir bit alanının daha küçük bir bit alanı atanmıştır. Veri kaybı olabilir.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.  
-  
- Aşağıdaki örnek C4254 oluşturur:  
-  
-```  
-// C4254.cpp  
-// compile with: /W4  
-#pragma warning(default: 4254)  
-  
-struct X {  
-   int a : 20;  
-   int b : 12;  
-};  
-  
-int main() {  
-   X *x = new X();  
-   x->b = 10;  
-   x->a = 4;  
-   x->a = x->b;    // OK  
-   x->b = x->a;    // C4254  
-};  
+
+'operator': 'type1' öğesinden 'type2', olası veri kaybı dönüştürme
+
+Daha büyük bir bit alanı, daha küçük bir bit alanına atandı. Veri kaybı olabilir.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+Aşağıdaki örnek için C4254 oluşturur:
+
+```
+// C4254.cpp
+// compile with: /W4
+#pragma warning(default: 4254)
+
+struct X {
+   int a : 20;
+   int b : 12;
+};
+
+int main() {
+   X *x = new X();
+   x->b = 10;
+   x->a = 4;
+   x->a = x->b;    // OK
+   x->b = x->a;    // C4254
+};
 ```

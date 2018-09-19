@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88a11f9d85d3e4885fd7c4aacf6d71b00a3e32ae
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b273f116c473b73a0cf3e9a5f2184d4dfbf89bd9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33251785"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109749"
 ---
 # <a name="compiler-error-c3248"></a>Derleyici Hatası C3248
-'function1': '__sealed' olarak bildirilen işlevi 'function2' tarafından geçersiz kılınamaz  
-  
-Geçersiz kılmak türetilmiş bir sınıf çalıştı bir **__sealed** sanal yöntemi.  
-  
-C3248 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.  
+
+'function1': '__sealed' olarak bildirilen işlev 'function2' tarafından geçersiz kılınamaz
+
+Bir türetilmiş sınıf geçersiz kılma denedi bir **__sealed** sanal yöntem.
+
+C3248 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.

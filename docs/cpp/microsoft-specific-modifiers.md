@@ -12,27 +12,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3dfc57e1d6af11628b37823f2452ee2b65f8a7f
-ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
+ms.openlocfilehash: 9a1fc13df342b4282ee63c185205c2f2b12ca003
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42465648"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110620"
 ---
 # <a name="microsoft-specific-modifiers"></a>Microsoft'a Özgü Değiştiriciler
-Bu bölüm, C++ aşağıdaki alanlarda Microsoft'a özel uzantıları açıklar:  
-  
--   [Tabanlı adresleme](based-addressing.md), yöntem bir işaretçi, diğer işaretçilerin uzak olabileceği bir temel olarak kullanma  
-  
--   [İşlev çağırma kuralları](calling-conventions.md)  
-  
--   Genişletilmiş depolama sınıfı öznitelikleri ile bildirilen [__declspec](declspec.md) anahtar sözcüğü  
-  
--   [__W64](w64.md) anahtar sözcüğü  
 
-### <a name="microsoft-specific-keywords"></a>Microsoft'a özgü anahtar sözcükler  
+Bu bölüm, C++ aşağıdaki alanlarda Microsoft'a özel uzantıları açıklar:
 
-Microsoft'a özgü anahtar sözcüklerin çoğu, bildirimcileri türetilmiş türler biçimlendirecek şekilde değiştirmek için kullanılabilir. Bildirimciler hakkında daha fazla bilgi için bkz: [Bildirimciler](overview-of-declarators.md).  
+- [Tabanlı adresleme](based-addressing.md), yöntem bir işaretçi, diğer işaretçilerin uzak olabileceği bir temel olarak kullanma
+
+- [İşlev çağırma kuralları](calling-conventions.md)
+
+- Genişletilmiş depolama sınıfı öznitelikleri ile bildirilen [__declspec](declspec.md) anahtar sözcüğü
+
+- [__W64](w64.md) anahtar sözcüğü
+
+### <a name="microsoft-specific-keywords"></a>Microsoft'a özgü anahtar sözcükler
+
+Microsoft'a özgü anahtar sözcüklerin çoğu, bildirimcileri türetilmiş türler biçimlendirecek şekilde değiştirmek için kullanılabilir. Bildirimciler hakkında daha fazla bilgi için bkz: [Bildirimciler](overview-of-declarators.md).
 
 |Anahtar sözcüğü|Açıklama|Türetilmiş türler oluşturmak için kullanılır?|   
 |-------------|-------------|---------------------------------|
@@ -47,4 +48,5 @@ Microsoft'a özgü anahtar sözcüklerin çoğu, bildirimcileri türetilmiş tü
 |[__vectorcall](vectorcall.md)|İzleyen ad, kullanılabilir olduğunda, bağımsız değişken geçirme yığını yerine SSE kayıtları da dahil olmak üzere kayıtları kullanan bir işlev bildirir.|Evet|      
     
 ## <a name="see-also"></a>Ayrıca Bkz.     
- [C++ Dil Başvurusu](cpp-language-reference.md)
+
+[C++ Dil Başvurusu](cpp-language-reference.md)

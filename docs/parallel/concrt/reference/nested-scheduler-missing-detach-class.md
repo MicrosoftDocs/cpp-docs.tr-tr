@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26027693209bc5b4687686efeae5d190ed374607
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: f3887672f9d0934dbcc38d6db549e383f7976b10
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687367"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110984"
 ---
 # <a name="nestedschedulermissingdetach-class"></a>nested_scheduler_missing_detach Sınıfı
-Bu sınıf eşzamanlılık çalışma zamanı çağırmak ihmal algıladığında oluşturulan bir özel tanımlar `CurrentScheduler::Detach` yöntemi kullanarak ikinci bir zamanlayıcı bağlı bir bağlamda `Attach` yöntemi `Scheduler` nesnesi.  
+Bu sınıf, eşzamanlılık çalışma zamanı çağırmaya ihmal algıladığında oluşturulan bir özel tanımlar `CurrentScheduler::Detach` yöntemi kullanarak ikinci bir zamanlayıcı bağlı bir bağlam `Attach` yöntemi `Scheduler` nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,10 +40,10 @@ class nested_scheduler_missing_detach : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[nested_scheduler_missing_detach](#ctor)|Fazla Yüklendi. Oluşturan bir `nested_scheduler_missing_detach` nesnesi.|  
+|[nested_scheduler_missing_detach](#ctor)|Fazla Yüklendi. Oluşturur bir `nested_scheduler_missing_detach` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Çağırarak bir zamanlayıcı iç içe olduğunda bu durum `Attach` yöntemi bir `Scheduler` zaten sahip olduğu veya başka bir zamanlayıcı bağlı bir'context nesnesinde. Senaryo sorunu bulmak için bir yardımcı olarak algılayabildiği zaman eşzamanlılık çalışma zamanı bu özel durum mümkün oluşturur. Her örneğini çağrı ihmal `CurrentScheduler::Detach` yöntemi, bu özel durum için garanti.  
+ Çağırarak bir zamanlayıcı iç içe olduğunda bu durum `Attach` yöntemi bir `Scheduler` üzerinde zaten tarafından sahip olunan veya başka bir zamanlayıcı için bağlı bir bağlam nesnesi. Senaryo, sorun bulma için bir yardımcı olarak algılayabilir, eşzamanlılık çalışma zamanı modülüne bu özel durum oluşturur. Her örneğini çağrılacak önermesinin `CurrentScheduler::Detach` yöntemi için bu özel durum garantisi.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -57,7 +57,7 @@ class nested_scheduler_missing_detach : public std::exception;
   
 ##  <a name="ctor"></a> nested_scheduler_missing_detach 
 
- Oluşturan bir `nested_scheduler_missing_detach` nesnesi.  
+ Oluşturur bir `nested_scheduler_missing_detach` nesne.  
   
 ```
 explicit _CRTIMP nested_scheduler_missing_detach(_In_z_ const char* _Message) throw();
@@ -66,8 +66,8 @@ nested_scheduler_missing_detach() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

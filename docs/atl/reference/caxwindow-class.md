@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eda5fc385f094bd7a18bff521250453ebb66c84
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 39b376d6e65a5002487cbf51186fdab9ccb3fc46
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757942"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110152"
 ---
 # <a name="caxwindow-class"></a>CAxWindow sınıfı
 
@@ -94,10 +94,10 @@ HRESULT AttachControl(
 
 ### <a name="parameters"></a>Parametreler
 
-*pControl*  
+*pControl*<br/>
 [in] Bir işaretçi `IUnknown` denetimi.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 [out] Bir işaretçi `IUnknown` konağın ( `AxWin` nesne).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -118,7 +118,7 @@ CAxWindow(HWND hWnd = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*  
+*hWnd*<br/>
 Var olan bir pencere nesnesi için bir tanıtıcı.
 
 ##  <a name="createcontrol"></a>  CAxWindow::CreateControl
@@ -139,7 +139,7 @@ HRESULT CreateControl(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*  
+*lpszName*<br/>
 Denetimi oluşturmak için bir dize işaretçisi. Aşağıdaki yollardan biriyle biçimlendirilmiş olması gerekir:
 
 - Bir ProgID gibi "MSCAL. Calendar.7 "
@@ -155,13 +155,13 @@ Denetimi oluşturmak için bir dize işaretçisi. Aşağıdaki yollardan biriyle
    > [!NOTE]
    > "MSHTML:" MSHTML stream olacak şekilde atanır böylece HTML parçasını gelmelidir. ProgID ve CLSID yalnızca Windows mobil platformlarda desteklenir. Windows CE Platform katıştırılmış, Windows Mobile CE IE destek desteğiyle dışında ProgID dahil olmak üzere tüm CLSID, URL, başvuru türleri etkin belge ve HTML parçasını.
 
-*pStream*  
+*pStream*<br/>
 [in] Denetimin özelliklerini başlatmak için kullanılan bir akış için bir işaretçi. NULL olabilir.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 [out] Adresi alacak bir işaretçi `IUnknown` kapsayıcının. NULL olabilir.
 
-*dwResID*  
+*dwResID*<br/>
 Bir HTML kaynağının kaynak kimliği. WebBrowser denetimi oluşturulur ve belirtilen kaynak yüklendi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -206,7 +206,7 @@ HRESULT CreateControlEx(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*  
+*lpszName*<br/>
 Denetimi oluşturmak için bir dize işaretçisi. Aşağıdaki yollardan biriyle biçimlendirilmiş olması gerekir:
 
 - Bir ProgID gibi "MSCAL. Calendar.7 "
@@ -222,22 +222,22 @@ Denetimi oluşturmak için bir dize işaretçisi. Aşağıdaki yollardan biriyle
    > [!NOTE]
    > "MSHTML:" MSHTML stream olacak şekilde atanır böylece HTML parçasını gelmelidir. ProgID ve CLSID yalnızca Windows mobil platformlarda desteklenir. Windows CE Platform katıştırılmış, Windows Mobile CE IE destek desteğiyle dışında ProgID dahil olmak üzere tüm CLSID, URL, başvuru türleri etkin belge ve HTML parçasını.
 
-*pStream*  
+*pStream*<br/>
 [in] Denetimin özelliklerini başlatmak için kullanılan bir akış için bir işaretçi. NULL olabilir.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 [out] Adresi alacak bir işaretçi `IUnknown` kapsayıcının. NULL olabilir.
 
-*ppUnkControl*  
+*ppUnkControl*<br/>
 [out] Adresi alacak bir işaretçi `IUnknown` denetimi. NULL olabilir.
 
-*iidSink*  
+*iidSink*<br/>
 [in] Kapsanan nesne üzerinde giden bir arabirim arabirimi tanımlayıcısı. IID_NULL olabilir.
 
-*punkSink*  
+*punkSink*<br/>
 [in] Bir işaretçi `IUnknown` arabirimi tarafından belirtilen kapsanan nesne üzerindeki bağlantı noktasına bağlı havuz nesnenin *iidSink*.
 
-*dwResID*  
+*dwResID*<br/>
 [in] Bir HTML kaynağının kaynak kimliği. WebBrowser denetimi oluşturulur ve belirtilen kaynak yüklendi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -276,7 +276,7 @@ CAxWindow<TBase>& operator=(HWND hWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*  
+*hWnd*<br/>
 Var olan bir pencere için bir tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -295,13 +295,13 @@ HRESULT QueryControl(Q** ppUnk);
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] Denetimin arabirimi Laboratuvardaki belirtir.
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] Denetimin bir arabirim işaretçisi. Bu yöntem şablon sürümünü gerek yoktur başvuru kimliği için belirlenmiş bir arabirim ile ilişkili bir UUID geçirilen sürece.
 
-*Q*  
+*Q*<br/>
 [in] İçin sorgulanan arabirim.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -320,13 +320,13 @@ HRESULT QueryHost(Q** ppUnk);
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] Denetimin arabirimi Laboratuvardaki belirtir.
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] Konak üzerindeki arabirim işaretçisi. Bu yöntem şablon sürümünü gerek yoktur başvuru kimliği için belirlenmiş bir arabirim ile ilişkili bir UUID geçirilen sürece.
 
-*Q*  
+*Q*<br/>
 [in] İçin sorgulanan arabirim.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -347,7 +347,7 @@ HRESULT SetExternalDispatch(IDispatch* pDisp);
 
 ### <a name="parameters"></a>Parametreler
 
-*pDisp*  
+*pDisp*<br/>
 [in] Bir işaretçi bir `IDispatch` arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -364,7 +364,7 @@ HRESULT SetExternalUIHandler(IDocHostUIHandlerDispatch* pUIHandler);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUIHandler*  
+*pUIHandler*<br/>
 [in] Bir işaretçi bir `IDocHostUIHandlerDispatch` arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -377,9 +377,9 @@ Dış `IDocHostUIHandlerDispatch` arabirimi ana bilgisayarın site için sorgu d
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ATLCON örnek](../../visual-cpp-samples.md)   
-[CWindow sınıfı](../../atl/reference/cwindow-class.md)   
-[Bileşik Denetim temelleri](../../atl/atl-composite-control-fundamentals.md)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[ATLCON örnek](../../visual-cpp-samples.md)<br/>
+[CWindow Sınıfı](../../atl/reference/cwindow-class.md)<br/>
+[Bileşik Denetim temelleri](../../atl/atl-composite-control-fundamentals.md)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Denetim kapsamı SSS](../../atl/atl-control-containment-faq.md)
 

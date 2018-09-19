@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 538cdfe6ce8c199a213077e26c16fce65e55b9b4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2a0f1627e19ad3368ad99559b6b576d165347643
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33237022"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110542"
 ---
 # <a name="compiler-error-c2807"></a>Derleyici Hatası C2807
-'işleci işleci' sonek için ikinci biçimsel parametresi 'int' olmalıdır  
-  
- Sonek operatörü ikinci parametresi yanlış türüne sahip.  
-  
- Aşağıdaki örnek C2807 oluşturur:  
-  
-```  
-// C2807.cpp  
-// compile with: /c  
-class X {  
-public:  
-   X operator++ ( X );   // C2807 nonvoid parameter  
-   X operator++ ( int );   // OK, int parameter  
-};  
+
+'operator işleci' sonekinin ikinci biçimsel parametresi 'int' olmalıdır
+
+Sonek operatörü için ikinci parametre yanlış türde.
+
+Aşağıdaki örnek, C2807 oluşturur:
+
+```
+// C2807.cpp
+// compile with: /c
+class X {
+public:
+   X operator++ ( X );   // C2807 nonvoid parameter
+   X operator++ ( int );   // OK, int parameter
+};
 ```

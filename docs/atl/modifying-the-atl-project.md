@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f94a698d9e23d0481daf940fc55fa99616104aa
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 7f7707b3babc84075d84e57a2b610f06225e79e6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763464"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109825"
 ---
 # <a name="modifying-the-atl-project"></a>ATL projesini değiştirme
 
@@ -33,6 +33,6 @@ ActiveX denetimlerini gerekli tüm olayları işlemek için bkz: [bileşik denet
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)   
+[Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)<br/>
 [Nasıl yapılır: Kaynak Betik Dosyası Oluşturma](../windows/how-to-create-a-resource-script-file.md)
 

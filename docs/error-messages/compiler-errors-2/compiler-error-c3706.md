@@ -16,54 +16,55 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8cb54dfce6a6974fcf09886f2d13047cdab53ced
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bbebf5752a9ed42ea4af8d3a13e45c78fc1753ec
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33265252"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110516"
 ---
 # <a name="compiler-error-c3706"></a>Derleyici Hatası C3706
-'function': COM olayları tetiklenecek COM arabirimi olmalıdır  
-  
- COM olayları tetiklenecek kullandığınız olay arabirimi COM arabirimi olması gerekir. Bu durumda, arabirimi kullanarak bir Visual C++ öznitelik ya da tanımlanmalıdır veya kullanılarak içe [#import](../../preprocessor/hash-import-directive-cpp.md) #import's embedded_idl özniteliği olan tür kitaplığından.  
-  
- Unutmayın `#include` COM olayları kullanmak için örnekte gösterildiği ATL üstbilgi dosyaları satırlık gereklidir. Bu hatayı düzeltmek için olun `IEvents` (olay arabirimi) aşağıdakilerden birini uygulayarak COM arabirimi arabirim tanımı öznitelikleri: [nesne](../../windows/object-cpp.md), [çift](../../windows/dual.md), veya [ görüntüleme arabirimi](../../windows/dispinterface.md).  
-  
- Arabirim MIDL tarafından oluşturulan bir üstbilgi dosyası ise, derleyici COM arabirimi olarak bunu tanımaz.  
-  
- Aşağıdaki örnek C3706 oluşturur:  
-  
-```  
-// C3706.cpp  
-// compile with: /c  
-// C3706 expected  
-#define _ATL_ATTRIBUTES 1  
-#include <atlbase.h>  
-#include <atlcom.h>  
-#include <atlctl.h>  
-  
-[module(dll, name="idid", uuid="12341234-1234-1234-1234-123412341234")];  
-  
-// Uncomment the following line to resolve.  
-// [object, uuid="12341234-1234-1234-1234-123412341237"]  
-__interface IEvents : IUnknown {  
-   HRESULT event1(/*[in]*/ int i);   // uncomment [in]  
-};  
-  
-[dual, uuid="12341234-1234-1234-1234-123412341235"]  
-__interface IBase {  
-   HRESULT fireEvents();  
-};  
-  
-[coclass, event_source(com), uuid="12341234-1234-1234-1234-123412341236"]  
-class CEventSrc : public IBase {  
-   public:  
-   __event __interface IEvents;  
-  
-   HRESULT fireEvents() {  
-      HRESULT hr = IEvents_event1(123);  
-      return hr;  
-   }  
-};  
+
+'function': COM olaylarını başlatmak için bir COM arabirimi olması gerekir
+
+COM olaylarını başlatmak için kullandığınız olay arabirim bir COM arabirimi olması gerekir. Bu durumda, arabirim ya da Visual C++ özniteliği kullanılarak tanımlanmalıdır veya kullanılarak içe [#import](../../preprocessor/hash-import-directive-cpp.md) gelen bir tür kitaplığı #import's embedded_idl özniteliğine sahip.
+
+Unutmayın `#include` aşağıdaki örnekte gösterilen ATL üstbilgi dosyalarını satırlarını COM olayları kullanmak için gereklidir. Bu hatayı düzeltmek için olun `IEvents` (olay arabirimi) aşağıdakilerden birini uygulayarak bir COM arabirimi öznitelikleri için arabirim tanımı: [nesne](../../windows/object-cpp.md), [çift](../../windows/dual.md), veya [ dispinterface](../../windows/dispinterface.md).
+
+Bir arabirim MIDL tarafından oluşturulan üstbilgi dosyası ise, derleyici bir COM arabirimi olarak bunu tanımaz.
+
+Aşağıdaki örnek, C3706 oluşturur:
+
+```
+// C3706.cpp
+// compile with: /c
+// C3706 expected
+#define _ATL_ATTRIBUTES 1
+#include <atlbase.h>
+#include <atlcom.h>
+#include <atlctl.h>
+
+[module(dll, name="idid", uuid="12341234-1234-1234-1234-123412341234")];
+
+// Uncomment the following line to resolve.
+// [object, uuid="12341234-1234-1234-1234-123412341237"]
+__interface IEvents : IUnknown {
+   HRESULT event1(/*[in]*/ int i);   // uncomment [in]
+};
+
+[dual, uuid="12341234-1234-1234-1234-123412341235"]
+__interface IBase {
+   HRESULT fireEvents();
+};
+
+[coclass, event_source(com), uuid="12341234-1234-1234-1234-123412341236"]
+class CEventSrc : public IBase {
+   public:
+   __event __interface IEvents;
+
+   HRESULT fireEvents() {
+      HRESULT hr = IEvents_event1(123);
+      return hr;
+   }
+};
 ```

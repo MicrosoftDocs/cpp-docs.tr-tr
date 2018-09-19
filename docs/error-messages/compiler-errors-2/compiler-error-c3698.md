@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b41b0f7360d49891e330277114324aa099900682
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e9ca53e5b614b5e1d85832a7ad437a39ac1c5d87
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33263979"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107905"
 ---
 # <a name="compiler-error-c3698"></a>Derleyici Hatası C3698
-'type': Bu tür 'işleci' bağımsız değişken olarak kullanılamaz  
-  
- Yönetilen bir nesnenin yanlış bildirildi.  
-  
- Aşağıdaki örnek C3698 oluşturur:  
-  
-```  
-// C3698.cpp  
-// compile with: /clr  
-  
-int main() {  
-   array<int>^a = new array<int>^(20);   // C3698  
-   array<int>^a2 = gcnew array<int>(20);   // OK  
-}  
+
+'type': Bu tür 'operator' bağımsız değişkeni olarak kullanılamaz
+
+Yönetilen bir nesnenin yanlış bildirildi.
+
+Aşağıdaki örnek, C3698 oluşturur:
+
+```
+// C3698.cpp
+// compile with: /clr
+
+int main() {
+   array<int>^a = new array<int>^(20);   // C3698
+   array<int>^a2 = gcnew array<int>(20);   // OK
+}
 ```

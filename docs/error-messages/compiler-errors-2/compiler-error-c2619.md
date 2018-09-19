@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05f02026dac06647a8fda1eeb7e67cc3eaa586b0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3bbf372e615c727a619d83daa6b673490edc4172
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231324"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109164"
 ---
 # <a name="compiler-error-c2619"></a>Derleyici Hatası C2619
-'tanımlayıcısı': statik veri üyesi bir anonim yapı ya da UNION izin verilmiyor  
-  
- Anonim yapı veya birleşim üyesi bildirilmiş `static`.  
-  
- Aşağıdaki örnek C2619 oluşturur ve static anahtar sözcüğü kaldırarak düzeltmek gösterilmiştir.  
-  
-```  
-// C2619.cpp  
-int main() {  
-   union { static int j; };  // C2619  
-   union { int j; };  // OK  
-}  
+
+'identifier': bir anonim bir yapı veya birleşim statik veri üyesine izin verilmez
+
+Bir anonim bir yapı veya birleşim üyesi bildirildiği `static`.
+
+Aşağıdaki örnek, C2619 oluşturur ve static anahtar sözcüğü kaldırarak bu sorunun nasıl gösterir.
+
+```
+// C2619.cpp
+int main() {
+   union { static int j; };  // C2619
+   union { int j; };  // OK
+}
 ```

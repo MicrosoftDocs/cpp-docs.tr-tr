@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b9b10af535b0739d480326d616ee7587318bb5a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 821f3c25d195a2c92ac04fdf5f9e5a59b493c257
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33696181"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113844"
 ---
 # <a name="uninitializedobject-class"></a>uninitialized_object Sınıfı
-Başlatılmamış bir nesneye kullanıldığında oluşan özel durum.  
+Başlatılmamış bir nesne kullanıldığında oluşturulan özel durum.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -56,7 +56,7 @@ class uninitialized_object : public runtime_exception;
  **Namespace:** eşzamanlılık  
 ## <a name="uninitialized_object__ctor"></a> unsupported_feature 
 
-Unsupported_feature özel durum yeni bir örneğini oluşturur.  
+Unsupported_feature özel durumunun yeni bir örneğini oluşturur.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -68,11 +68,11 @@ unsupported_feature() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hatanın açıklaması.  
+*İl_eti*<br/>
+Hatanın açıklaması.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `unsupported_feature` Nesnesi. 
+ `unsupported_feature` Nesne. 
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

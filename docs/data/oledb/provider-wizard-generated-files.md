@@ -15,23 +15,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ac23f06bf1ae697ecd627d493aa5902219488138
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 26e20e0417e2253158930a8d3d055171fe767001
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106014"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108410"
 ---
 # <a name="provider-wizard-generated-files"></a>Sağlayıcı Sihirbazı Tarafından Üretilen Dosyalar
-ATL OLE DB Sağlayıcı Sihirbazı aşağıdaki dosyaları oluşturur. Kısa ad "MyProvider" aşağıdaki konuları kullanın, ancak tam dosya isimleri sağlayıcıyı oluştururken yapılan seçiminize bağlıdır.  
+
+ATL OLE DB sağlayıcısı Sihirbazı, aşağıdaki dosyaları oluşturur. Kısa ad "MyProvider" aşağıdaki konuları kullanın, ancak tam dosya adlarını sağlayıcısı oluşturulurken yaptığınız seçiminize bağlıdır.  
   
 |Dosya adı|Açıklama|  
 |---------------|-----------------|  
 |MyProviderRS.cpp|Komut Yardımcısı içeren `Execute` yöntemi ve sağlayıcı sütun eşlemesi.|  
-|MyProviderDS.h üzerinde|Veri kaynağı nesnesi uygular. Bu başlık dosyası veri kaynağı özellikleri için özellik eşlemesi içerir.|  
-|MyProviderRS.h|Komut ve satır kümesi nesneleri uygular. Bu başlık dosyası satır kümesi ve komut özellikleri için özellik eşlemesi içerir.|  
-|MyProviderSess.h|Oturum nesnesi uygular. Bu başlık dosyası oturum özellikleri için özellik eşlemesi içerir.|  
-|MyProvider.rgs|OLE DB Sağlayıcı Sihirbazı tarafından oluşturulan kayıtlı nesneleri içerir.|  
+|MyProviderDS.h üzerinde|Veri kaynağı nesnesinin uygular. Bu başlık dosyasının özellik eşlemesi için veri kaynağı özellikleri içerir.|  
+|MyProviderRS.h|Komut ve rowset nesneleri uygular. Bu başlık dosyasının satır kümesi ve komut özellikleri için özellik eşlemesi içerir.|  
+|MyProviderSess.h|Oturum nesnesi uygular. Bu başlık dosyasının özellik eşlemesi için oturum özellikleri içerir.|  
+|MyProvider.rgs|OLE DB sağlayıcısı Sihirbazı tarafından oluşturulan kayıtlı nesneler içerir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Sağlayıcısı Oluşturma](../../data/oledb/creating-an-ole-db-provider.md)
+
+[OLE DB Sağlayıcısı Oluşturma](../../data/oledb/creating-an-ole-db-provider.md)

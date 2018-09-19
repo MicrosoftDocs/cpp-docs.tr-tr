@@ -12,17 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 504af8f743818965773157f7162f2dc697c44463
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e5e0c06963792cb3904f8f1f612c67d210f704fa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381063"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107894"
 ---
 # <a name="bits-per-character"></a>Karakter Başına Bit
-**ANSI 2.2.4.2.1** BITS bir karakter sayısı  
-  
- Bir karakter bit sayısını bildirim sabit değeri tarafından temsil edilen **char_bıt**. SINIRLAR. H dosyası tanımlar **char_bıt** 8 olarak.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Karakterler](../c-language/characters.md)
+
+**ANSI 2.2.4.2.1** bir karakterdeki bit sayısı
+
+Bir karakterdeki bit sayısı Bildirim sabiti tarafından temsil edilen **char_bıt**. SINIRLAR. H dosyası tanımlar **char_bıt** 8 olarak.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Karakterler](../c-language/characters.md)

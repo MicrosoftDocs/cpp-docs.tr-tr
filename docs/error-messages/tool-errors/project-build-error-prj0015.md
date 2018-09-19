@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c2376ddd22490bf9ce61a8db9b857ce02551b15
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d70c8b4fe35519479056e25455914ac80fc00cb3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316455"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111621"
 ---
 # <a name="project-build-error-prj0015"></a>Proje Derleme Hatası PRJ0015
-NULL aygıt sisteminizden eksik. Bir yapı başlatmak alamıyoruz.  
-  
- Bu hata, sistem kaynaklarının yetersizliği neden olabilir. Bazı uygulamaları kapatın veya yeniden başlatın.  
-  
- Bilgisayarda NULL aygıt için yeterli ayrıcalıkları yoksa da oluşabilir.
+
+NULL cihazı sisteminizde eksik. Bir derlemeyi başlatmak belirleyemiyoruz.
+
+Bu hata, sistem kaynaklarının yetersizliği neden olabilir. Bazı uygulamaları kapatın veya yeniden başlatın.
+
+NULL cihazı için yeterli ayrıcalıkları bilgisayarda yoksa da kaynaklanabilir.

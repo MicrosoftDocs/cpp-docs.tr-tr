@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f873390e9e8c700c6e2089f9eeb52647cc74e98c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9f5570c0cd7e8bcaf464c840f0fc71dbcfd44556
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199738"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108644"
 ---
 # <a name="compiler-error-c2551"></a>Derleyici Hatası C2551
-' void *' türünün açık atama gerekir  
-  
- A `void` işaretçi nonvoid işaretçi örtük dönüşüm tarafından atanır. Bir açık atama kullanmanız gerekir.
+
+' void *' türünün açıkça dönüştürülmesi gerekir
+
+A `void` işaretçisi, örtük dönüştürme nonvoid işaretçisi atanır. Açık bir tür dönüştürme kullanmanız gerekir.

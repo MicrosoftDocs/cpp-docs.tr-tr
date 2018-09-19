@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3edb1a05323187b4a5dfcc2356da4a1ff8b874de
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6f1d135dd69155de39b097d59cf139eb47354d4f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33267096"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107691"
 ---
 # <a name="compiler-error-c3638"></a>Derleyici Hatası C3638
-'işleci': standart kutulama ve kutudan çıkarma dönüşüm işleçleri tanımlanamaz  
-  
- Derleyici örtük kutulama desteklemek için her yönetilen sınıf için bir dönüşüm işleci tanımlar. Bu işleç tanımlanamaz.  
-  
- Daha fazla bilgi için bkz: [örtük kutulama](../../windows/boxing-cpp-component-extensions.md).  
-  
- Aşağıdaki örnek C3638 oluşturur:  
-  
-```  
-// C3638.cpp  
-// compile with: /clr  
-value struct V {  
-   V(){}  
-   static operator V^(V);   // C3638  
-};  
-  
-int main() {  
-   V myV;  
-   V ^ pmyV = myV;   // operator supports implicit boxing  
-}  
+
+'operator': standart kutulama ve kutudan çıkarma dönüştürme işleçleri yeniden tanımlanamaz
+
+Derleyici örtük olarak kutulama desteklemek için her bir yönetilen sınıf için dönüştürme işleci tanımlar. Bu işleci tanımlanamaz.
+
+Daha fazla bilgi için [örtük kutulama](../../windows/boxing-cpp-component-extensions.md).
+
+Aşağıdaki örnek, C3638 oluşturur:
+
+```
+// C3638.cpp
+// compile with: /clr
+value struct V {
+   V(){}
+   static operator V^(V);   // C3638
+};
+
+int main() {
+   V myV;
+   V ^ pmyV = myV;   // operator supports implicit boxing
+}
 ```

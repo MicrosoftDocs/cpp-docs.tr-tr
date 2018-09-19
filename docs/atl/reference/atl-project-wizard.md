@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 139a20eb3db99ce87b2de51aa1ef7602f7b5a36a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d7ac74d1b310f4db7bfc4a558db5b89df5d8df5a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758582"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109853"
 ---
 # <a name="atl-project-wizard"></a>ATL projesi Sihirbazı
 
@@ -58,10 +58,10 @@ Proje özellikleri belirtebilirsiniz (örneğin, [CRT için kitaplıklarla stati
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Visual C++ proje oluşturma ve yönetme](../../ide/creating-and-managing-visual-cpp-projects.md)   
-[Visual C++ proje türleri](../../ide/visual-cpp-project-types.md)   
-[Uygulama sihirbazları kullanarak masaüstü projeleri oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md)   
-[ATL COM nesnelerinin temelleri](../../atl/fundamentals-of-atl-com-objects.md)   
-[ATL ve C çalışma zamanı koduyla programlama](../../atl/programming-with-atl-and-c-run-time-code.md)   
+[Visual C++ proje oluşturma ve yönetme](../../ide/creating-and-managing-visual-cpp-projects.md)<br/>
+[Visual C++ Proje Türleri](../../ide/visual-cpp-project-types.md)<br/>
+[Uygulama Sihirbazları Kullanarak Masaüstü Projeleri Oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
+[ATL ve C Çalışma Zamanı Koduyla Programlama](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Öğretici](../../atl/active-template-library-atl-tutorial.md)
 
