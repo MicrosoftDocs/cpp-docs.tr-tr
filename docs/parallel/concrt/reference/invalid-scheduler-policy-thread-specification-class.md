@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53e2d5ba1c8fd4d8afd4af88c45069b34717a66c
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: ab180a5f52a7645b7ce6cc0f8a04e2ea506f8aa4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695921"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016617"
 ---
 # <a name="invalidschedulerpolicythreadspecification-class"></a>invalid_scheduler_policy_thread_specification Sınıfı
-Bu sınıf eşzamanlılık sınırlarını ayarlamak için bir girişimde zaman oluşturulan bir özel açıklar bir `SchedulerPolicy` nesne şekilde değerini `MinConcurrency` anahtar değerini azdır `MaxConcurrency` anahtarı.  
+Bu sınıf, eşzamanlılık sınırlarını ayarlamak için bir girişimde olduğunda oluşturulan bir özel durum açıklar bir `SchedulerPolicy` nesne gibi değerini `MinConcurrency` anahtar değerini azdır `MaxConcurrency` anahtarı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,7 +38,7 @@ class invalid_scheduler_policy_thread_specification : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[invalid_scheduler_policy_thread_specification] (geçersiz-Zamanlayıcı-ilke-değer-class.md #ctor|Fazla Yüklendi. Oluşturan bir `invalid_scheduler_policy_value` nesnesi.|  
+|[invalid_scheduler_policy_thread_specification] (geçersiz-Zamanlayıcı-ilkeyi-değeri-class.md #ctor|Fazla Yüklendi. Oluşturur bir `invalid_scheduler_policy_value` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -51,7 +51,7 @@ class invalid_scheduler_policy_thread_specification : public std::exception;
  **Namespace:** eşzamanlılık  
 ##  <a name="ctor"></a> invalid_scheduler_policy_thread_specification 
 
- Oluşturan bir `invalid_scheduler_policy_value` nesnesi.  
+ Oluşturur bir `invalid_scheduler_policy_value` nesne.  
   
 ```
 explicit _CRTIMP invalid_scheduler_policy_thread_specification(_In_z_ const char* _Message) throw();
@@ -60,8 +60,8 @@ invalid_scheduler_policy_thread_specification() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

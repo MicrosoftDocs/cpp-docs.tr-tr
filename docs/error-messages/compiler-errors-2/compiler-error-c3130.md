@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9e338ff497ca0674b68ee25ba745d669a10468a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fe26a86b85d6b38283a6ef21d081620237f8788a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248120"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030845"
 ---
 # <a name="compiler-error-c3130"></a>Derleyici Hatası C3130
-Derleyici iç hatası: PDB için eklenen kod bloğu yazılamadı  
-  
- Eklenen kod bloğu .pdb dosyaya yazmak derleyici başarısız olursa bu hata oluşur. Hatanın en yaygın nedeni, yetersiz disk alanı olmasıdır.
+
+Derleyici iç hatası: eklenen kod bloğu PDB'ye yazılamadı
+
+Derleyici .pdb dosyasına eklenen kod bloğu yazılamadı, bu hata meydana gelir. Hatanın en yaygın nedeni, yetersiz disk alanı olmasıdır.

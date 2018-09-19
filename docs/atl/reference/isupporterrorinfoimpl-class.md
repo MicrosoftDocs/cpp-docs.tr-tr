@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed0e105443231853442296748f0e505f3df51b48
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 5a3f912f7ba3a5455f7583ba2a5036548ac65df2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753714"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022181"
 ---
 # <a name="isupporterrorinfoimpl-class"></a>Isupporterrorınfoımpl sınıfı
 
@@ -37,14 +37,14 @@ Bu sınıfın bir varsayılan uygulamayı sağlar [ISupportErrorInfo arabirimi](
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<const IID* piid>  
+template<const IID* piid>
 class ATL_NO_VTABLE ISupportErrorInfoImpl 
    : public ISupportErrorInfo
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*piid*  
+*piid*<br/>
 Laboratuvardaki destekleyen bir arabirim işaretçisi [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo).
 
 ## <a name="members"></a>Üyeler
@@ -95,7 +95,7 @@ STDMETHOD(GetSize)(int* pnNumThreads);
 
 ### <a name="parameters"></a>Parametreler
 
-*pnNumThreads*  
+*pnNumThreads*<br/>
 [out] Değişkeninin adresi, başarı, havuzda iş parçacığı sayısını alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -116,7 +116,7 @@ STDMETHOD(GetTimeout)(DWORD* pdwMaxWait);
 
 ### <a name="parameters"></a>Parametreler
 
-*pdwMaxWait*  
+*pdwMaxWait*<br/>
 [out] Başarı durumunda, iş parçacığı havuzu kapatmak bir iş parçacığı için bekleyeceği milisaniye cinsinden en uzun süreyi alır. değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -137,7 +137,7 @@ STDMETHOD(SetSize)int nNumThreads);
 
 ### <a name="parameters"></a>Parametreler
 
-*nNumThreads*  
+*nNumThreads*<br/>
 İstenen havuzundaki iş parçacığı sayısı.
 
 Varsa *nNumThreads* olan negatif mutlak değerini toplam iş parçacığı sayısını almak için makinede işlemci sayısını çarpılacağı.
@@ -162,7 +162,7 @@ STDMETHOD(SetTimeout)(DWORD dwMaxWait);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwMaxWait*  
+*dwMaxWait*<br/>
 İstenen en uzun süreyi milisaniye kapatmak bir iş parçacığı için iş parçacığı havuzu bekler.
 
 ### <a name="return-value"></a>Dönüş Değeri

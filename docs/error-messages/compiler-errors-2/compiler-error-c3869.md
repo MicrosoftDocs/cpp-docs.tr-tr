@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcb19652f6b9006783cea4cee687156a0c1fb4b7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 84b4ce32f6c4916e0e178d488bf725d257f4d887
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33267518"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020174"
 ---
 # <a name="compiler-error-c3869"></a>Derleyici Hatası C3869
-gcnew kısıtlaması boş parametre listesi '()' eksik  
-  
- `gcnew` Özel kısıtlama boş parametre listesi belirtildi. Bkz: [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md) daha fazla bilgi için.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3869 oluşturur.  
-  
-```  
-// C3869.cpp  
-// compile with: /c /clr  
-using namespace System;  
-generic <typename T>  
-where T : gcnew   // C3869  
-// try the following line instead  
-// where T : gcnew()  
-ref class List {};  
+
+gcnew kısıtlamasında boş parametre listesi '()' eksik
+
+`gcnew` Özel kısıtlaması boş parametre listesi olmadan belirtildi. Bkz: [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md) daha fazla bilgi için.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3869 oluşturur.
+
+```
+// C3869.cpp
+// compile with: /c /clr
+using namespace System;
+generic <typename T>
+where T : gcnew   // C3869
+// try the following line instead
+// where T : gcnew()
+ref class List {};
 ```

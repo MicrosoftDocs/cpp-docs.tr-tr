@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9840b805960f3ebb571dd9cb6a35895364099d3b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d6a9409728f5dbcbb003ecb8d2d9e4f98bc57ede
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294878"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026848"
 ---
 # <a name="expression-evaluator-error-cxx0011"></a>İfade Değerlendirici Hatası CXX0011
-sağ köşeli ayraç eksik  
-  
- İfade dengesiz köşeli içeriyor. İfade dengeli köşeli parantez ile yeniden yazın.  
-  
- Bu hata için CAN0011 aynıdır.
+
+sağ köşeli ayraç eksik
+
+Eşleşmeyen köşeli ayraç ifadesi içerir. Dengeli köşeli ayraç kullanarak ifade yazın.
+
+Bu hata için CAN0011 aynıdır.

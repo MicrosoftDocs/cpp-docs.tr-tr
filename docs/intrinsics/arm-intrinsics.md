@@ -1941,12 +1941,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a504df1dfb2826b5056b5feb5b13ac3555515ae
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e0c2138de2becc7afa9d2392c2fa5240b584b6d3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712809"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018255"
 ---
 # <a name="arm-intrinsics"></a>ARM İç Bilgileri
 Visual C++ derleyici aşağıdaki yapı içlerini ARM mimarisine kullanılabilir hale getirir. ARM hakkında daha fazla bilgi için bkz: [ARM mimarisi başvuru kılavuzlarına](http://go.microsoft.com/fwlink/p/?LinkId=522049) ve [ARM Assembler araçları Kılavuzu](http://go.microsoft.com/fwlink/p/?LinkId=246102) ARM Bilgi Merkezi Web sitesinde.  
@@ -2162,11 +2162,11 @@ void __iso_volatile_store8(volatile __int8 * Location, __int8 Value)
   
  **Parametreler**  
   
- `Location`  
- Bir bellek konumunu okuma veya yazma adresi.  
+*Konum*<br/>
+Bir bellek konumunu okuma veya yazma adresi.  
   
- `Value`  
- (Yalnızca depolama ön tanımlı) belirtilen bellek konumuna yazılacak değer.  
+*Değer*<br/>
+(Yalnızca depolama ön tanımlı) belirtilen bellek konumuna yazılacak değer.  
   
  **Dönüş değeri (yalnızca yük iç)**  
   
@@ -2209,20 +2209,20 @@ int _MoveFromCoprocessor2(
   
  **Parametreler**  
   
- `coproc`  
- 0-15 aralığında eşişlemcisi sayı.  
+*coproc*<br/>
+0-15 aralığında eşişlemcisi sayı.  
   
- `opcode1`  
- 0 ile 7 aralıktaki eşişlemcisi özgü opcode  
+*opcode1*<br/>
+0 ile 7 aralıktaki eşişlemcisi özgü opcode  
   
- `crn`  
- Eşişlemcisi yönergenin ilk işleneni belirten sayı, 0-15 aralığındaki kaydedin.  
+*CRN*<br/>
+Eşişlemcisi yönergenin ilk işleneni belirten sayı, 0-15 aralığındaki kaydedin.  
   
- `crm`  
- Eşişlemcisi belirten bir ek kaynak veya hedef işlenen numarası 0 ila 15 aralığındaki kaydedin.  
+*CRM*<br/>
+Eşişlemcisi belirten bir ek kaynak veya hedef işlenen numarası 0 ila 15 aralığındaki kaydedin.  
   
- `opcode2`  
- ' % S'aralığı 0 ile 7 ek eşişlemcisi özgü opcode.  
+*opcode2*<br/>
+' % S'aralığı 0 ile 7 ek eşişlemcisi özgü opcode.  
   
  **Dönüş değeri**  
   
@@ -2248,14 +2248,14 @@ unsigned __int64 _MoveFromCoprocessor64(
   
  **Parametreler**  
   
- `coproc`  
- 0-15 aralığında eşişlemcisi sayı.  
+*coproc*<br/>
+0-15 aralığında eşişlemcisi sayı.  
   
- `opcode1`  
- 0 ile 15 aralığındaki eşişlemcisi özgü opcode.  
+*opcode1*<br/>
+0 ile 15 aralığındaki eşişlemcisi özgü opcode.  
   
- `crm`  
- Eşişlemcisi belirten bir ek kaynak veya hedef işlenen numarası 0 ila 15 aralığındaki kaydedin.  
+*CRM*<br/>
+Eşişlemcisi belirten bir ek kaynak veya hedef işlenen numarası 0 ila 15 aralığındaki kaydedin.  
   
  **Değeri döndürür**  
   
@@ -2293,23 +2293,23 @@ void _MoveToCoprocessor2(
   
  **Parametreler**  
   
- `value`  
- İşlemcisi için yazılacak değer.  
+*value*<br/>
+İşlemcisi için yazılacak değer.  
   
- `coproc`  
- 0-15 aralığında eşişlemcisi sayı.  
+*coproc*<br/>
+0-15 aralığında eşişlemcisi sayı.  
   
- `opcode1`  
- 0 ile 7 aralıktaki eşişlemcisi özgü opcode.  
+*opcode1*<br/>
+0 ile 7 aralıktaki eşişlemcisi özgü opcode.  
   
- `crn`  
- Eşişlemcisi yönergenin ilk işleneni belirten sayı, 0-15 aralığındaki kaydedin.  
+*CRN*<br/>
+Eşişlemcisi yönergenin ilk işleneni belirten sayı, 0-15 aralığındaki kaydedin.  
   
- `crm`  
- Eşişlemcisi belirten bir ek kaynak veya hedef işlenen numarası 0 ila 15 aralığındaki kaydedin.  
+*CRM*<br/>
+Eşişlemcisi belirten bir ek kaynak veya hedef işlenen numarası 0 ila 15 aralığındaki kaydedin.  
   
- `opcode2`  
- ' % S'aralığı 0 ile 7 ek eşişlemcisi özgü opcode.  
+*opcode2*<br/>
+' % S'aralığı 0 ile 7 ek eşişlemcisi özgü opcode.  
   
  **Dönüş değeri**  
   
@@ -2336,14 +2336,14 @@ void _MoveFromCoprocessor64(
   
  **Parametreler**  
   
- `coproc`  
- 0-15 aralığında eşişlemcisi sayı.  
+*coproc*<br/>
+0-15 aralığında eşişlemcisi sayı.  
   
- `opcode1`  
- 0 ile 15 aralığındaki eşişlemcisi özgü opcode.  
+*opcode1*<br/>
+0 ile 15 aralığındaki eşişlemcisi özgü opcode.  
   
- `crm`  
- Eşişlemcisi belirten bir ek kaynak veya hedef işlenen numarası 0 ila 15 aralığındaki kaydedin.  
+*CRM*<br/>
+Eşişlemcisi belirten bir ek kaynak veya hedef işlenen numarası 0 ila 15 aralığındaki kaydedin.  
   
  **Dönüş değeri**  
   

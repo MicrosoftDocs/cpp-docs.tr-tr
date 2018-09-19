@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5aaf80e3061877c42154ab9ee5ccd30f47f17135
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: c87dfc47f7f2554e75567a1de4ea9cb2e06eaa00
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33696233"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028200"
 ---
 # <a name="lastprivate"></a>lastprivate
-Değişkeni kapsayan bağlamın sürümünü son yineleme (döngü için yapı) ya da son Kısım (#pragma bölümleri) hangi iş parçacığı yürütür özel sürümü için eşit olarak ayarlanır belirtir.  
+Değişkeni kapsayan bir bağlamın sürümü hangi iş parçacığının son yineleme (for-döngüsü yapısı) ya da son bölümdeki (#pragma bölümleri) yürüten özel sürümüne eşit ayarlandığını belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,20 +32,19 @@ Değişkeni kapsayan bağlamın sürümünü son yineleme (döngü için yapı) 
 lastprivate(var)  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
+### <a name="parameters"></a>Parametreler
   
- `var`  
- Hangi iş parçacığı özel sürümüne eşit olarak ayarlanır değişkeni son yineleme (döngü için yapı) ya da son Kısım (#pragma bölümleri) yürütür.  
+*var*<br/>
+Hangi iş parçacığının özel bir sürümünü ayarlanır değişkeni son yineleme (for-döngüsü yapısı) ya da son bölümdeki (#pragma bölümleri) yürütür.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `lastprivate` Aşağıdaki yönergeleri için geçerlidir:  
   
 -   [for](../../../parallel/openmp/reference/for-openmp.md)  
   
--   [Bölümler](../../../parallel/openmp/reference/sections-openmp.md)  
+-   [Bölümleri](../../../parallel/openmp/reference/sections-openmp.md)  
   
- Daha fazla bilgi için bkz: [2.7.2.3 lastprivate](../../../parallel/openmp/2-7-2-3-lastprivate.md).  
+ Daha fazla bilgi için [2.7.2.3 lastprivate](../../../parallel/openmp/2-7-2-3-lastprivate.md).  
   
 ## <a name="example"></a>Örnek  
  Bkz: [zamanlama](../../../parallel/openmp/reference/schedule.md) kullanma örneği için `lastprivate` yan tümcesi.  

@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17661f7497711449397ae2f64c9d6eff52d5f403
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 18666cc619796bc7ee0216eb9cdf020bd8d8a6f7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766931"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035753"
 ---
 # <a name="ccomcontrolbase-class"></a>CComControlBase sınıfı
 
@@ -238,7 +238,7 @@ CComControlBase(HWND& h);
 
 ### <a name="parameters"></a>Parametreler
 
-*h*  
+*h*<br/>
 Denetimle ilişkili penceresine tanıtıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -268,10 +268,10 @@ virtual HRESULT ControlQueryInterface(const IID& iid,
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 İstenen arabiriminin GUID'si.
 
-*ppv*  
+*ppv*<br/>
 Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *IID*, veya arabirim bulunamazsa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -292,7 +292,7 @@ BOOL DoesVerbActivate(LONG iVerb);
 
 ### <a name="parameters"></a>Parametreler
 
-*iVerb*  
+*iVerb*<br/>
 Tarafından gerçekleştirilecek eylemi belirten değer `DoVerb`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -313,7 +313,7 @@ BOOL DoesVerbUIActivate(LONG iVerb);
 
 ### <a name="parameters"></a>Parametreler
 
-*iVerb*  
+*iVerb*<br/>
 Tarafından gerçekleştirilecek eylemi belirten değer `DoVerb`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -330,10 +330,10 @@ HRESULT DoVerbProperties(LPCRECT /* prcPosRect */, HWND hwndParent);
 
 ### <a name="parameters"></a>Parametreler
 
-*prcPosRec*  
+*prcPosRec*<br/>
 Ayrılmış.
 
-*hwndParent*  
+*hwndParent*<br/>
 Denetimi içeren pencere tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -376,7 +376,7 @@ HRESULT GetAmbientAppearance(short& nAppearance);
 
 ### <a name="parameters"></a>Parametreler
 
-*nAppearance*  
+*nAppearance*<br/>
 Özellik DISPID_AMBIENT_APPEARANCE.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -397,7 +397,7 @@ HRESULT GetAmbientAutoClip(BOOL& bAutoClip);
 
 ### <a name="parameters"></a>Parametreler
 
-*bAutoClip*  
+*bAutoClip*<br/>
 Özellik DISPID_AMBIENT_AUTOCLIP.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -414,7 +414,7 @@ HRESULT GetAmbientBackColor(OLE_COLOR& BackColor);
 
 ### <a name="parameters"></a>Parametreler
 
-*Arka plan rengi*  
+*Arka plan rengi*<br/>
 Özellik DISPID_AMBIENT_BACKCOLOR.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -431,7 +431,7 @@ HRESULT GetAmbientCharSet(BSTR& bstrCharSet);
 
 ### <a name="parameters"></a>Parametreler
 
-*bstrCharSet*  
+*bstrCharSet*<br/>
 Özellik DISPID_AMBIENT_CHARSET.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -448,7 +448,7 @@ HRESULT GetAmbientCodePage(ULONG& ulCodePage);
 
 ### <a name="parameters"></a>Parametreler
 
-*ulCodePage*  
+*ulCodePage*<br/>
 Özellik DISPID_AMBIENT_CODEPAGE.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -465,7 +465,7 @@ HRESULT GetAmbientDisplayAsDefault(BOOL& bDisplayAsDefault);
 
 ### <a name="parameters"></a>Parametreler
 
-*bDisplayAsDefault*  
+*bDisplayAsDefault*<br/>
 Özellik DISPID_AMBIENT_DISPLAYASDEFAULT.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -482,7 +482,7 @@ HRESULT GetAmbientDisplayName(BSTR& bstrDisplayName);
 
 ### <a name="parameters"></a>Parametreler
 
-*bstrDisplayName*  
+*bstrDisplayName*<br/>
 Özellik DISPID_AMBIENT_DISPLAYNAME.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -499,7 +499,7 @@ HRESULT GetAmbientFont(IFont** ppFont);
 
 ### <a name="parameters"></a>Parametreler
 
-*ppFont*  
+*ppFont*<br/>
 Kapsayıcı için bir işaretçi ortam [IFont](/windows/desktop/api/ocidl/nn-ocidl-ifont) arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -520,7 +520,7 @@ HRESULT GetAmbientFontDisp(IFontDisp** ppFont);
 
 ### <a name="parameters"></a>Parametreler
 
-*ppFont*  
+*ppFont*<br/>
 Kapsayıcı için bir işaretçi ortam [IFontDisp](https://msdn.microsoft.com/library/windows/desktop/ms692695) gönderme arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -541,7 +541,7 @@ HRESULT GetAmbientForeColor(OLE_COLOR& ForeColor);
 
 ### <a name="parameters"></a>Parametreler
 
-*ForeColor*  
+*ForeColor*<br/>
 Özellik DISPID_AMBIENT_FORECOLOR.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -558,7 +558,7 @@ HRESULT GetAmbientLocaleID(LCID& lcid);
 
 ### <a name="parameters"></a>Parametreler
 
-*lcid*  
+*lcid*<br/>
 Özellik DISPID_AMBIENT_LOCALEID.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -579,7 +579,7 @@ HRESULT GetAmbientMessageReflect(BOOL& bMessageReflect);
 
 ### <a name="parameters"></a>Parametreler
 
-*bMessageReflect*  
+*bMessageReflect*<br/>
 Özellik DISPID_AMBIENT_MESSAGEREFLECT.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -596,7 +596,7 @@ HRESULT GetAmbientPalette(HPALETTE& hPalette);
 
 ### <a name="parameters"></a>Parametreler
 
-*hPalette*  
+*hPalette*<br/>
 Özellik DISPID_AMBIENT_PALETTE.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -613,10 +613,10 @@ HRESULT GetAmbientProperty(DISPID dispid, VARIANT& var);
 
 ### <a name="parameters"></a>Parametreler
 
-*DISPID*  
+*DISPID*<br/>
 Alınacak kapsayıcı özellik tanımlayıcısı.
 
-*var*  
+*var*<br/>
 Özelliği almak için değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -637,7 +637,7 @@ HRESULT GetAmbientRightToLeft(BOOL& bRightToLeft);
 
 ### <a name="parameters"></a>Parametreler
 
-*bRightToLeft*  
+*bRightToLeft*<br/>
 Özellik DISPID_AMBIENT_RIGHTTOLEFT. Sağdan sola görüntüleniyorsa, içerik sağdan sola FALSE görüntüleniyorsa TRUE olarak ayarlayın.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -654,7 +654,7 @@ HRESULT GetAmbientScaleUnits(BSTR& bstrScaleUnits);
 
 ### <a name="parameters"></a>Parametreler
 
-*bstrScaleUnits*  
+*bstrScaleUnits*<br/>
 Özellik DISPID_AMBIENT_SCALEUNITS.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -671,7 +671,7 @@ HRESULT GetAmbientShowGrabHandles(BOOL& bShowGrabHandles);
 
 ### <a name="parameters"></a>Parametreler
 
-*bShowGrabHandles*  
+*bShowGrabHandles*<br/>
 Özellik DISPID_AMBIENT_SHOWGRABHANDLES.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -688,7 +688,7 @@ HRESULT GetAmbientShowHatching(BOOL& bShowHatching);
 
 ### <a name="parameters"></a>Parametreler
 
-*bShowHatching*  
+*bShowHatching*<br/>
 Özellik DISPID_AMBIENT_SHOWHATCHING.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -705,7 +705,7 @@ HRESULT GetAmbientSupportsMnemonics(BOOL& bSupportsMnemonics);
 
 ### <a name="parameters"></a>Parametreler
 
-*bSupportsMnemonics*  
+*bSupportsMnemonics*<br/>
 Özellik DISPID_AMBIENT_SUPPORTSMNEMONICS.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -722,7 +722,7 @@ HRESULT GetAmbientTextAlign(short& nTextAlign);
 
 ### <a name="parameters"></a>Parametreler
 
-*nTextAlign*  
+*nTextAlign*<br/>
 Özellik DISPID_AMBIENT_TEXTALIGN.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -739,7 +739,7 @@ HRESULT GetAmbientTopToBottom(BOOL& bTopToBottom);
 
 ### <a name="parameters"></a>Parametreler
 
-*bTopToBottom*  
+*bTopToBottom*<br/>
 Özellik DISPID_AMBIENT_TOPTOBOTTOM. Metin görüntüleniyorsa TRUE olarak ayarlayın. yukarıdan aşağıya doğru bu ise FALSE alt dön görüntülenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -756,7 +756,7 @@ HRESULT GetAmbientUIDead(BOOL& bUIDead);
 
 ### <a name="parameters"></a>Parametreler
 
-*bUIDead*  
+*bUIDead*<br/>
 Özellik DISPID_AMBIENT_UIDEAD.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -777,7 +777,7 @@ HRESULT GetAmbientUserMode(BOOL& bUserMode);
 
 ### <a name="parameters"></a>Parametreler
 
-*bUserMode*  
+*bUserMode*<br/>
 Özellik DISPID_AMBIENT_USERMODE.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -810,7 +810,7 @@ void GetZoomInfo(ATL_DRAWINFO& di);
 
 ### <a name="parameters"></a>Parametreler
 
-*dı*  
+*dı*<br/>
 Yakınlaştırma faktörünü 's pay ve paydası barındıracak yapısı. Daha fazla bilgi için [atl_drawınfo](../../atl/reference/atl-drawinfo-structure.md).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -827,10 +827,10 @@ HRESULT InPlaceActivate(LONG iVerb, const RECT* prcPosRect = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*iVerb*  
+*iVerb*<br/>
 Tarafından gerçekleştirilecek eylemi belirten değer [IOleObjectImpl::DoVerb](../../atl/reference/ioleobjectimpl-class.md#doverb).
 
-*prcPosRect*  
+*prcPosRect*<br/>
 Yerinde denetimin konumunu işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -853,10 +853,10 @@ HRESULT InternalGetSite(REFIID riid, void** ppUnkSite);
 
 ### <a name="parameters"></a>Parametreler
 
-*riid*  
+*riid*<br/>
 İçinde döndürülmesi gereken arabirim işaretçisi Laboratuvardaki *ppUnkSite*.
 
-*ppUnkSite*  
+*ppUnkSite*<br/>
 İçinde istenen arabirim işaretçisi alır işaretçi değişkeninin adresi *riid*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1259,7 +1259,7 @@ virtual HRESULT OnDraw(ATL_DRAWINFO& di);
 
 ### <a name="parameters"></a>Parametreler
 
-*dı*  
+*dı*<br/>
 Bir başvuru [atl_drawınfo](../../atl/reference/atl-drawinfo-structure.md) denetim sınırları çizim en boy gibi çizim bilgileri içeren yapısı ve çizim veya optimize edilmiştir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1286,7 +1286,7 @@ virtual HRESULT OnDrawAdvanced(ATL_DRAWINFO& di);
 
 ### <a name="parameters"></a>Parametreler
 
-*dı*  
+*dı*<br/>
 Bir başvuru [atl_drawınfo](../../atl/reference/atl-drawinfo-structure.md) denetim sınırları çizim en boy gibi çizim bilgileri içeren yapısı ve çizim veya optimize edilmiştir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1312,16 +1312,16 @@ LRESULT OnKillFocus(UINT /* nMsg */,
 
 ### <a name="parameters"></a>Parametreler
 
-*nMsg*  
+*nMsg*<br/>
 Ayrılmış.
 
-*wParam*  
+*wParam*<br/>
 Ayrılmış.
 
-*lParam*  
+*lParam*<br/>
 Ayrılmış.
 
-*bHandled*  
+*bHandled*<br/>
 Pencere iletisi başarılı bir şekilde işleyip işlemediğini gösteren bayrak. Varsayılan değer false'tur.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1341,16 +1341,16 @@ LRESULT OnMouseActivate(UINT /* nMsg */,
 
 ### <a name="parameters"></a>Parametreler
 
-*nMsg*  
+*nMsg*<br/>
 Ayrılmış.
 
-*wParam*  
+*wParam*<br/>
 Ayrılmış.
 
-*lParam*  
+*lParam*<br/>
 Ayrılmış.
 
-*bHandled*  
+*bHandled*<br/>
 Pencere iletisi başarılı bir şekilde işleyip işlemediğini gösteren bayrak. Varsayılan değer false'tur.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1370,16 +1370,16 @@ LRESULT OnPaint(UINT /* nMsg */,
 
 ### <a name="parameters"></a>Parametreler
 
-*nMsg*  
+*nMsg*<br/>
 Ayrılmış.
 
-*wParam*  
+*wParam*<br/>
 Mevcut bir HDC.
 
-*lParam*  
+*lParam*<br/>
 Ayrılmış.
 
-*lResult*  
+*lResult*<br/>
 Ayrılmış.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1403,16 +1403,16 @@ LRESULT OnSetFocus(UINT /* nMsg */,
 
 ### <a name="parameters"></a>Parametreler
 
-*nMsg*  
+*nMsg*<br/>
 Ayrılmış.
 
-*wParam*  
+*wParam*<br/>
 Ayrılmış.
 
-*lParam*  
+*lParam*<br/>
 Ayrılmış.
 
-*bHandled*  
+*bHandled*<br/>
 Pencere iletisi başarılı bir şekilde işleyip işlemediğini gösteren bayrak. Varsayılan değer false'tur.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1434,10 +1434,10 @@ BOOL PreTranslateAccelerator(LPMSG /* pMsg */,
 
 ### <a name="parameters"></a>Parametreler
 
-*pMsg*  
+*pMsg*<br/>
 Ayrılmış.
 
-*hRet*  
+*hRet*<br/>
 Ayrılmış.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1470,7 +1470,7 @@ HRESULT SendOnDataChange(DWORD advf = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*advf*  
+*advf*<br/>
 Öneri belirten bayrakları nasıl çağrısı [IAdviseSink::OnDataChange](/windows/desktop/api/objidl/nf-objidl-iadvisesink-ondatachange) yapılır. Değerler: gelen [ADVF](/windows/desktop/api/objidl/ne-objidl-tagadvf) sabit listesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1487,7 +1487,7 @@ HRESULT SendOnRename(IMoniker* pmk);
 
 ### <a name="parameters"></a>Parametreler
 
-*PMK*  
+*PMK*<br/>
 Yeni takma denetim işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1524,10 +1524,10 @@ HRESULT SendOnViewChange(DWORD dwAspect, LONG lindex = -1);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwAspect*  
+*dwAspect*<br/>
 En boy veya denetimin görünümü.
 
-*Dizin*  
+*Dizin*<br/>
 Görünümünün değişmiş. Yalnızca -1, geçerli değil.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1548,7 +1548,7 @@ BOOL SetControlFocus(BOOL bGrab);
 
 ### <a name="parameters"></a>Parametreler
 
-*bGrab*  
+*bGrab*<br/>
 TRUE ise, klavye odağı arama denetimi için ayarlar. Odaklanmış sağlanan yanlışsa, klavye odağı arama denetiminden kaldırır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1569,7 +1569,7 @@ void SetDirty(BOOL bDirty);
 
 ### <a name="parameters"></a>Parametreler
 
-*bDirty*  
+*bDirty*<br/>
 Veri üyesinin değerini [CComControlBase::m_bRequiresSave](#m_brequiressave).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1578,5 +1578,5 @@ Veri üyesinin değerini [CComControlBase::m_bRequiresSave](#m_brequiressave).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)   
+[CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

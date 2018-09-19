@@ -14,37 +14,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 561bfa3e307a08c6a3560a6a8b6d3bebd8598343
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 08c92d86cbbfd38ed4ae852ce52e3b70735812e9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751201"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028096"
 ---
 # <a name="understanding-parse-trees"></a>Ayrıştırma ağaçlarını anlama
 
 Bir veya daha fazla ayrıştırma ağaçlarını her ayrıştırma ağacı aşağıdaki biçime sahip olduğu kayıt şirketi betiğinizi içinde tanımlayabilirsiniz:
 
-```  
-<root key>{<registry expression>}+  
+```
+<root key>{<registry expression>}+
 ```
 
 burada:
 
-```  
+```
 <root key> ::= HKEY_CLASSES_ROOT | HKEY_CURRENT_USER |  
     HKEY_LOCAL_MACHINE | HKEY_USERS |  
     HKEY_PERFORMANCE_DATA | HKEY_DYN_DATA |  
     HKEY_CURRENT_CONFIG | HKCR | HKCU |  
-    HKLM | HKU | HKPD | HKDD | HKCC  
-<registry expression> ::= <Add Key> | <Delete Key>  
-<Add Key> ::= [ForceRemove | NoRemove | val]<Key Name> [<Key Value>][{<Add Key>}]  
-<Delete Key> ::= Delete<Key Name>  
-<Key Name> ::= '<AlphaNumeric>+'  
-<AlphaNumeric> ::= any character not NULL, i.e. ASCII 0  
-<Key Value> ::== <Key Type><Key Name>  
-<Key Type> ::= s | d  
-<Key Value> ::= '<AlphaNumeric>'  
+    HKLM | HKU | HKPD | HKDD | HKCC
+<registry expression> ::= <Add Key> | <Delete Key>
+<Add Key> ::= [ForceRemove | NoRemove | val]<Key Name> [<Key Value>][{<Add Key>}]
+<Delete Key> ::= Delete<Key Name>
+<Key Name> ::= '<AlphaNumeric>+'
+<AlphaNumeric> ::= any character not NULL, i.e. ASCII 0
+<Key Value> ::== <Key Type><Key Name>
+<Key Type> ::= s | d
+<Key Value> ::= '<AlphaNumeric>'
 ```
 
 > [!NOTE]
@@ -52,8 +52,8 @@ burada:
 
 Bir ayrıştırma ağacı birden çok anahtar ve anahtarlarına ekleyebilirsiniz \<kök anahtarı >. Ayrıştırıcının tüm alt anahtarlarını ayrıştırma işlemi tamamlanana kadar bunu yaparken, bir alt anahtarının tanıtıcı açık tutar. Bu yaklaşım, aşağıdaki örnekte görüldüğü gibi bir kerede tek bir anahtar işletim değerinden daha verimli olur:
 
-```  
-HKEY_CLASSES_ROOT  
+```
+HKEY_CLASSES_ROOT
 {  
     'MyVeryOwnKey'  
     {  
@@ -61,8 +61,8 @@ HKEY_CLASSES_ROOT
         {  
             'PrettyCool'  
         }  
-    }  
-}  
+    }
+}
 ```
 
 Burada, kayıt şirketi başlangıçta açar (oluşturur) `HKEY_CLASSES_ROOT\MyVeryOwnKey`. Ardından, gördüğünde `MyVeryOwnKey` bir alt anahtarı vardır. Anahtar kapatmak yerine `MyVeryOwnKey`, kayıt şirketi tanıtıcı korur ve açar (oluşturur) `HasASubKey` bu üst tanıtıcı kullanma. (Hiçbir üst tanıtıcı açık olduğunda sistem kayıt defterine daha yavaş olabilir.) Bu nedenle, açma `HKEY_CLASSES_ROOT\MyVeryOwnKey` ve açarak `HasASubKey` ile `MyVeryOwnKey` üst açılış daha hızlı olduğundan `MyVeryOwnKey`, kapanış `MyVeryOwnKey`ve ardından açarak `MyVeryOwnKey\HasASubKey`.

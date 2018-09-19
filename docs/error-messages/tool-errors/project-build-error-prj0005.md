@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b02e831c9adc8d7ff7fce759334263f847d24cf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1be1ac49d5d6fa3b85b327305bc4919d183b962e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33327772"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016520"
 ---
 # <a name="project-build-error-prj0005"></a>Proje Derleme Hatası PRJ0005
-'Dizin' dizininde geçici dosya oluşturulamadı.  
-  
- Geçici bir dosya oluşturma çağrısı başarısız oldu. Nedenler şunlardır:  
-  
--   Geçici dosya adları yetersiz kaldı.  
-  
--   Geçici dizin salt okunurdur.  
-  
--   Temp dizini veya TMP ortam değişkeni yoktur.  
-  
--   Bilgisayarınız yetersiz boş disk alanı olur.
+
+'Dizin' dizininde geçici dosya oluşturulamıyor.
+
+Geçici bir dosya çağrısı başarısız oldu. Hata nedenleri şunlar:
+
+- Geçici dosya adları yetersiz kaldı.
+
+- Geçici dizin salt okunur.
+
+- Geçici dizin veya TMP ortam değişkeni yok.
+
+- Bilgisayarınızın boş disk alanı yetersiz olduğundan.

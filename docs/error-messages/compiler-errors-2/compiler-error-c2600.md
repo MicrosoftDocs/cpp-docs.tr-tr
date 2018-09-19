@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13b4cdf15dca9b3978f8c7855a5f1b07cc86f0b8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c1846cefa78c8df13e8ca3c1a7fbc142ba2bf6ad
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230956"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022090"
 ---
 # <a name="compiler-error-c2600"></a>Derleyici Hatası C2600
-'function': (bildirilmelidir sınıfta ilk) derleyicinin ürettiği özel üye işlevi tanımlanamıyor  
-  
- Oluşturucular veya Yıkıcılar gibi işlevler için bir sınıf tanımlanabilir üye önce bunlar sınıfında bildirilmelidir. Hiçbiri sınıfında tanımlanan varsa derleyici varsayılan oluşturucular ve Yıkıcılar (özel üye işlevleri adı verilir) oluşturabilirsiniz. Ancak, bu işlevler eşleşen bir bildirimi olmadan birini sınıfında tanımlarsanız derleyici bir çakışma algılar.  
-  
- Sınıf bildiriminde bu hatayı düzeltmek için sınıf bildiriminin dışında tanımladığınız her üye işlevi bildirin.  
-  
- Aşağıdaki örnek C2600 oluşturur:  
-  
-```  
-// C2600.cpp  
-// compile with: /c  
-class C {};  
-C::~C() {}   // C2600  
-  
-class D {  
-   D::~D();  
-};  
-  
-D::~D() {}  
+
+'function': (bildirilmiş sınıfta ilk) derleyicinin ürettiği özel üye işlevi tanımlanamıyor
+
+Bir sınıf için oluşturucuları veya yıkıcıları gibi işlevleri tanımlanabilir üye önce bunlar sınıfta bildirilmesi gerekir. Hiçbiri sınıfta bildirilen, derleyici varsayılan oluşturucular ve Yıkıcılar (özel üye işlevleri olarak adlandırılır) oluşturabilir. Ancak, eşleşen bir bildirim olmadan Bu işlevlerden biri sınıfında tanımlarsanız, derleyici bir çakışma algılar.
+
+Sınıf bildirimi içinde bu hatayı düzeltmek için sınıf bildirimi dışında tanımladığınız her üye işlevini bildirin.
+
+Aşağıdaki örnek, C2600 oluşturur:
+
+```
+// C2600.cpp
+// compile with: /c
+class C {};
+C::~C() {}   // C2600
+
+class D {
+   D::~D();
+};
+
+D::~D() {}
 ```

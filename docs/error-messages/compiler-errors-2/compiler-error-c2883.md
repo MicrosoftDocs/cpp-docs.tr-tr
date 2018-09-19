@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc3119db27127521f5078a5753bb82c82da381ed
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 50cc5b2abb34fae21bea78aa146e74b9aa9491c4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244953"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019269"
 ---
 # <a name="compiler-error-c2883"></a>Derleyici Hatası C2883
-'name': 'using bildirimi tarafından sunulan tanımlayıcısı' çakışıyor işlevi bildirimi  
-  
- Bir işlev birden çok kez tanımlayın çalışıldı. İlk tanım içeren bir ad yapılan bir `using` bildirimi. İkinci bir yerel tanımı oluştu.  
-  
- Aşağıdaki örnek C2883 oluşturur:  
-  
-```  
-// C2883.cpp  
-namespace A {  
-   void z(int);  
-}  
-  
-int main() {  
-   using A::z;  
-   void z(int);   // C2883  z is already defined  
-}  
+
+'name': işlev bildirimi bildirim kullanımı ile tanıtılan'identifier ' çakışıyor
+
+Birden çok kez bir fonksiyon tanımlayın denedi. İlk tanımı bir ad alanı ile yapılan bir `using` bildirimi. İkincisi, yerel bir tanım belirtildi.
+
+Aşağıdaki örnek, C2883 oluşturur:
+
+```
+// C2883.cpp
+namespace A {
+   void z(int);
+}
+
+int main() {
+   using A::z;
+   void z(int);   // C2883  z is already defined
+}
 ```

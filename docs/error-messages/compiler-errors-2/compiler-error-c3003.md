@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48e3cdcb4df846414cc231999f85da05e3bb9995
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 749199401e399a21b4b8c2c98532aa5449f2cce1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33241314"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027888"
 ---
 # <a name="compiler-error-c3003"></a>Derleyici Hatası C3003
-'yönergesi': OpenMP yönergesi adı sonra yönerge yan tümcelerinde izin verilmiyor  
-  
- OpenMP yönergesi adı OpenMP yönergesi tümcesi izlenemiyor.  
-  
- Aşağıdaki örnek C3003 oluşturur:  
-  
-```  
-// C3003.c  
-// compile with: /openmp  
-int main()  
-{  
-   int x, y, z;  
-   #pragma omp parallel shared(x, y, z) for   // C3003  
-}  
+
+'yönergesi': OpenMP yönergesi adına yönerge yan tümcelerinden sonra izin verilmiyor
+
+Bir OpenMP yönergesi adı OpenMP yönergesi yan tümcesini izleyemez.
+
+Aşağıdaki örnek, C3003 oluşturur:
+
+```
+// C3003.c
+// compile with: /openmp
+int main()
+{
+   int x, y, z;
+   #pragma omp parallel shared(x, y, z) for   // C3003
+}
 ```

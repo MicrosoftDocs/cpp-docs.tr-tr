@@ -16,22 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65bf672418b49dbf6017374ab7cd18caa61d7403
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d29371e147c693b2aa49f8dcf838841af3c75c8d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294755"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031879"
 ---
 # <a name="command-line-warning-d9043"></a>Komut Satırı Uyarısı D9043
-'compiler_option';'için ' warning_level' değeri geçersiz varsayılarak '4999'; Kod çözümleme uyarıları uyarı düzeyleri ile ilişkili değil  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C9043 oluşturur.  
-  
-```  
-// D9043.cpp  
-// compile with: /analyze /w16001  
-// D9043 warning expected  
-int main() {}  
+
+'compiler_option';'için ' warning_level' değeri geçersiz '4999;' varsayılıyor Kod çözümleme uyarıları, uyarı düzeyleriyle ilişkili değil.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C9043 oluşturur.
+
+```
+// D9043.cpp
+// compile with: /analyze /w16001
+// D9043 warning expected
+int main() {}
 ```

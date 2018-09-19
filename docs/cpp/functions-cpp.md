@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0894ecf767d24f6e5ec5ea385b5aeca6daae41a8
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: aacbb7709daf6952f00276663e20131e967a554d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131759"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022366"
 ---
 # <a name="functions-c"></a>İşlevler [C++]
 
@@ -135,7 +135,7 @@ Bir işlev bildirimi gerekli bölümleri şunlardır:
 
 Aşağıdaki şekil, bir işlev tanımının bölümlerini gösterir. Gölgeli alan işlev gövdesidir.
 
- ![Bir işlev tanımının bölümlerini](../cpp/media/vc38ru1.gif "vc38RU1") bir işlev tanımının bölümleri
+![Bir işlev tanımının bölümlerini](../cpp/media/vc38ru1.gif "vc38RU1") bir işlev tanımının bölümleri
 
 ## <a name="function-definitions"></a>İşlev tanımları
 
@@ -205,7 +205,7 @@ Bir işlevin başvuruya göre geçirilen bağımsız değişken değiştirdiğin
 void DoSomething(const std::string& input){...}
 ```
 
- **C++ 11:** rvalue başvurusu veya lvalue başvuru tarafından geçirilen bağımsız değişkenleri açıkça işlemek için evrensel bir başvuru belirtmek için parametresi bir çift ampersan kullanın:
+**C++ 11:** rvalue başvurusu veya lvalue başvuru tarafından geçirilen bağımsız değişkenleri açıkça işlemek için evrensel bir başvuru belirtmek için parametresi bir çift ampersan kullanın:
 
 ```cpp
 void DoSomething(const std::string&& input){...}
@@ -315,22 +315,22 @@ Bir işlevden birden fazla değer döndürmek için çeşitli yollar vardır:
     ```cpp
     #include <string>
     #include <iostream>
-    
+
     using namespace std;
-    
+
     struct S
     {
         string name;
         int num;
     };
-    
+
     S g()
     {
         string t{ "hello" };
         int u{ 42 };
         return { t, u };
     }
-    
+
     int main()
     {
         S s = g();
@@ -338,16 +338,16 @@ Bir işlevden birden fazla değer döndürmek için çeşitli yollar vardır:
         return 0;
     }
     ```
-    
+
 1. Bir std::tuple veya std::pair nesnesi döndürür:
 
     ```cpp
     #include <tuple>
     #include <string>
     #include <iostream>
-    
+
     using namespace std;
-        
+
     tuple<int, string, double> f()
     {
         int i{ 108 };
@@ -355,20 +355,20 @@ Bir işlevden birden fazla değer döndürmek için çeşitli yollar vardır:
         double d{ .01 };
         return { i,s,d };
     }
-    
+
     int main()
     {
         auto t = f();
         cout << get<0>(t) << " " << get<1>(t) << " " << get<2>(t) << endl;
-     
+
         // --or--
-    
+
         int myval;
         string myname;
         double mydecimal;
         tie(myval, myname, mydecimal) = f();
         cout << myval << " " << myname << " " << mydecimal << endl;
-    
+
         return 0;
     }
     ```
@@ -379,9 +379,9 @@ Bir işlevden birden fazla değer döndürmek için çeşitli yollar vardır:
     #include <tuple>
     #include <string>
     #include <iostream>
-    
+
     using namespace std;
-    
+
     tuple<int, string, double> f()
     {
         int i{ 108 };
@@ -394,25 +394,25 @@ Bir işlevden birden fazla değer döndürmek için çeşitli yollar vardır:
         string name;
         int num;
     };
-    
+
     S g()
     {
         string t{ "hello" };
         int u{ 42 };
         return { t, u };
     }
-    
+
     int main()
     {
         auto[x, y, z] = f(); // init from tuple
         cout << x << " " << y << " " << z << endl;
-    
+
         auto[a, b] = g(); // init from POD struct
         cout << a << " " << b << endl;
         return 0;
     }
     ```
-    
+
 1. Dönüş değeri kullanmanın yanı sıra, "değerleri herhangi bir sayıda başvuru ile geçişi işlevi değiştirebilir veya çağıranın sağlayan nesneleri değerlerini başlatmak için kullanmak üzere parametreleri tanımlayarak dönebilirsiniz". Daha fazla bilgi için [başvuru türü işlev bağımsız değişkenleri](reference-type-function-arguments.md).
 
 ## <a name="function-pointers"></a>İşlev işaretçileri
@@ -435,9 +435,10 @@ int (*myFunction(char* s))(int);
 Yukarıdaki bildirim, yukarıdaki örneği kullanan bildirime eşdeğerdir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [İşlev Aşırı Yüklemesi](../cpp/function-overloading.md)  
- [Değişken Bağımsız Değişken Listeleriyle İşlevler](../cpp/functions-with-variable-argument-lists-cpp.md)  
- [Açıkça Varsayılan Haline Getirilen ve Silinen İşlevler](../cpp/explicitly-defaulted-and-deleted-functions.md)  
- [İşlevlerde Bağımsız Değişkene Bağlı Ad (Koenig) Arama](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)  
- [Varsayılan Bağımsız Değişkenler](../cpp/default-arguments.md)  
- [Satır İçi İşlevler](../cpp/inline-functions-cpp.md)
+
+[İşlev Aşırı Yüklemesi](../cpp/function-overloading.md)<br/>
+[Değişken Bağımsız Değişken Listeleriyle İşlevler](../cpp/functions-with-variable-argument-lists-cpp.md)<br/>
+[Açıkça Varsayılan Haline Getirilen ve Silinen İşlevler](../cpp/explicitly-defaulted-and-deleted-functions.md)<br/>
+[İşlevlerde Bağımsız Değişkene Bağlı Ad (Koenig) Arama](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)<br/>
+[Varsayılan Bağımsız Değişkenler](../cpp/default-arguments.md)<br/>
+[Satır İçi İşlevler](../cpp/inline-functions-cpp.md)

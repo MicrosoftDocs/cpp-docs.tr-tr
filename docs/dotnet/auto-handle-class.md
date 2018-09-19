@@ -18,15 +18,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: bd6675f725e2a987a85cc73d6eec92f2b496df09
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0bddacec4e416173fc60ceb1c2c6ee71b3a198e7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103284"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029721"
 ---
 # <a name="autohandle-class"></a>auto_handle Sınıfı
-Yönetilen tür sanal bir işleyiciyi katıştırmak için kullanılan otomatik kaynak yönetimi.  
+Yönetilen bir türe sanal bir işleyici eklemek için kullanılan otomatik kaynak yönetimi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,11 +36,11 @@ ref class auto_handle;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_element_type`  
- Katıştırılmış yönetilen türü.  
+*_element_type*<br/>
+Katıştırılmış yönetilen türü.  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\auto_handle.h >  
+ **Üst bilgi dosyası** \<msclr\auto_handle.h >  
   
  **Namespace** msclr  
   

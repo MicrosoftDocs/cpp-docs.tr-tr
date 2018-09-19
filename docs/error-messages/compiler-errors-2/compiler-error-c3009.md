@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d96fe2eea79f1b5c292664bf13b70c8bde945c7e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9dd26f94ecb97e578073f2c3991ed13ebdc592fc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33241777"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035247"
 ---
 # <a name="compiler-error-c3009"></a>Derleyici Hatası C3009
-'etiket': OpenMP yapılandırılmış bloğu izin içine atlama  
-  
- Kod içinde veya dışında bir OpenMP bloğu atlama olamaz.  
-  
- Aşağıdaki örnek C3009 oluşturur:  
-  
-```  
-// C3009.c  
-// compile with: /openmp  
-int main() {  
-   #pragma omp parallel   
-   {  
-   lbl2:;  
-   }  
-   goto lbl2;   // C3009  
-}  
+
+'etiketi': OpenMP yapısal bloğunun izin içine atlamaya
+
+Kod içine veya bir OpenMP bloğunun dışına atlama olamaz.
+
+Aşağıdaki örnek, C3009 oluşturur:
+
+```
+// C3009.c
+// compile with: /openmp
+int main() {
+   #pragma omp parallel
+   {
+   lbl2:;
+   }
+   goto lbl2;   // C3009
+}
 ```

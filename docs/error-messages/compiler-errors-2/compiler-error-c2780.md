@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fba3d16284e8f56dd3583cb73d4b8fec56222a38
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a7e0bac3957ece3d2b0363f57a99443e9a3cf992
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33232731"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024079"
 ---
 # <a name="compiler-error-c2780"></a>Derleyici Hatası C2780
-'bildirimi': N bağımsız değişken - M sağlanan bekler  
-  
- İşlev şablonu çok az veya çok fazla sayıda bağımsız değişken yok.  
-  
- Aşağıdaki örnek C2780 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C2780.cpp  
-template<typename T>  
-void f(T, T){}  
-  
-int main() {  
-   f(1);  // C2780  
-   // try the following line instead  
-   // f(1,2);  
-}  
+
+'bildirim': bağımsız N - M sağlanan bekliyor
+
+Bir işlev şablonu çok az veya çok fazla bağımsız değişken var.
+
+Aşağıdaki örnek, C2780 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C2780.cpp
+template<typename T>
+void f(T, T){}
+
+int main() {
+   f(1);  // C2780
+   // try the following line instead
+   // f(1,2);
+}
 ```

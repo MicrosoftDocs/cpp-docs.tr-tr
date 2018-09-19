@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22764705b35b2e882c5a03e819c9812d084dc118
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 50bdceaba2e72312febec4819b96df334b5398c2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300819"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026018"
 ---
 # <a name="linker-tools-warning-lnk4099"></a>Bağlayıcı Araçları Uyarısı LNK4099
-PDB 'filename' ile 'nesne/Kitaplık' veya 'yolunda'; bulunamadı hata ayıklama bilgileri gibi nesne bağlama  
-  
- Bağlayıcı .pdb dosyasını bulamadı. İçerir dizinine kopyalayın `object/library`.  
-  
- Nesne dosyayla ilişkili .pdb dosyasının adını bulmak için:  
-  
-1.  Kitaplıkla nesne dosyasını ayıklamak [lib](../../build/reference/lib-reference.md) **/extract:**`objectname`**.obj** `xyz` **.lib**.  
-  
-2.  .Pdb dosyasıyla yolunu denetlemek **DUMPBIN /section:.debug$ T /rawdata** `objectname` **.obj**.  
-  
- İle derleme [/Z7](../../build/reference/z7-zi-zi-debug-information-format.md), pdb kullanılması ya da kaldırma gerekmez [/DEBUG](../../build/reference/debug-generate-debug-info.md) .pdb dosyaları bağlama nesneler için yoksa bağlayıcı seçeneği.
+
+PDB 'filename', 'nesne/Kitaplık' veya 'path';'konumunda bulunamadı Nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
+
+Bağlayıcı, .pdb dosyasını bulamadı. Dosyayı içeren dizine kopyalayın `object/library`.
+
+Nesne dosyası ile ilişkili .pdb dosyasının adını bulmak için:
+
+1. Bir nesne dosyası kitaplığı ile ayıklamak [LIB](../../build/reference/lib-reference.md) **/ayıklayın:**`objectname`**.obj** `xyz` **.lib**.
+
+1. İle .pdb dosyasının yolunu denetleyin **dumpbin /section:.debug$ T /rawdata** `objectname` **.obj**.
+
+İle derleme [/z7](../../build/reference/z7-zi-zi-debug-information-format.md), pdb kaldırın veya kullanılabilir gerekmez [/DEBUG](../../build/reference/debug-generate-debug-info.md) bağlandığınız nesneler için .pdb dosyası yoksa bağlayıcı seçeneği.

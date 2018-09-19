@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 878f6fa4a36e7de28bfc084f7f716d50b52c363a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 169b24787f1b180c7ba70c5d779e341e60ea2150
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171919"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025197"
 ---
 # <a name="compiler-error-c2133"></a>Derleyici Hatası C2133
-'tanımlayıcısı': Bilinmeyen boyutu  
-  
- Boyutsuz dizi sınıfı, yapısı, UNION veya numaralandırma üyesi olarak bildirildi. /Za (ANSI C) seçeneğini boyutsuz üye dizileri izin vermiyor.  
-  
- Aşağıdaki örnek C2133 oluşturur:  
-  
-```  
-// C2133.cpp  
-// compile with: /Za  
-struct X {  
-   int a[0];   // C2133 unsized array  
-};  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C2133b.cpp  
-// compile with: /c  
-struct X {  
-   int a[0];   // no /Za  
-};  
+
+'identifier': Bilinmeyen boyut
+
+Boyutsuz bir diziyi sınıfı, yapı, birleşim veya numaralandırma üyesi olarak bildirilir. /Za (ANSI C) seçeneğini boyutsuz üye dizileri izin vermez.
+
+Aşağıdaki örnek, C2133 oluşturur:
+
+```
+// C2133.cpp
+// compile with: /Za
+struct X {
+   int a[0];   // C2133 unsized array
+};
+```
+
+Olası çözüm:
+
+```
+// C2133b.cpp
+// compile with: /c
+struct X {
+   int a[0];   // no /Za
+};
 ```

@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27dfb6c1a64d3a4e9df24f3966ec89db1dfbe10c
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: fa27c46db5d23c78d9f433b41f27161f0bc41736
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688771"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028577"
 ---
 # <a name="orderedmessageprocessor-class"></a>ordered_message_processor Sınıfı
-Bir `ordered_message_processor` olan bir `message_processor` sırada alınan iletileri işlemek ileti blokları sağlar.  
+Bir `ordered_message_processor` olduğu bir `message_processor` sırada alınan iletileri işleyecek şekilde ileti blokları sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,39 +42,39 @@ class ordered_message_processor : public message_processor<T>;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- İşlemcisi tarafından işlenen iletiler yük türü.  
+*T*<br/>
+Processor tarafından işlenen iletilerin yük türü.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`type`|İçin bir tür diğer adı `T`.|  
+|`type`|Bir tür diğer adı için `T`.|  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ordered_message_processor](#ctor)|Oluşturan bir `ordered_message_processor` nesnesi.|  
-|[~ ordered_message_processor yok Edicisi](#dtor)|Bozar `ordered_message_processor` nesnesi.|  
+|[ordered_message_processor](#ctor)|Oluşturur bir `ordered_message_processor` nesne.|  
+|[~ ordered_message_processor yok Edicisi](#dtor)|Yok eder `ordered_message_processor` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[async_send](#async_send)|Zaman uyumsuz olarak iletileri kuyruklar ve bu zaten yapılmadıysa bir işlem görevi başlar. (Geçersiz kılmaları [message_processor::async_send](message-processor-class.md#async_send).)|  
-|[başlatma](#initialize)|Başlatır `ordered_message_processor` uygun geri çağırma işlevi, Zamanlayıcı ve zamanlamasını grup nesnesi.|  
-|[initialize_batched_processing](#initialize_batched_processing)|Initialize toplu ileti işleme|  
-|[sync_send](#sync_send)|Zaman uyumlu olarak iletileri kuyruklar ve bu zaten yapılmadıysa bir işlem görevi başlar. (Geçersiz kılmaları [message_processor::sync_send](message-processor-class.md#sync_send).)|  
-|[bekleme](#wait)|Tüm zaman uyumsuz işleme görevlerini bloğu yok etme önce bitirmek için zamana sahip olduğunuzdan emin olmak için ileti blokları yıkıcılarda kullanılan işlemciye özgü döndürme bekleyin. (Geçersiz kılmaları [message_processor::wait](message-processor-class.md#wait).)|  
+|[async_send](#async_send)|Zaman uyumsuz olarak iletileri kuyruğa alır ve bu zaten yapılmadıysa bir işleme görevi başlar. (Geçersiz kılmaları [message_processor::async_send](message-processor-class.md#async_send).)|  
+|[başlatma](#initialize)|Başlatır `ordered_message_processor` uygun geri çağırma işlevi, Zamanlayıcı ve zamanlama grubu nesnesi.|  
+|[initialize_batched_processing](#initialize_batched_processing)|Başlatma toplu ileti işleme|  
+|[sync_send](#sync_send)|Zaman uyumlu iletileri kuyruğa alır ve bu zaten yapılmadıysa bir işleme görevi başlar. (Geçersiz kılmaları [message_processor::sync_send](message-processor-class.md#sync_send).)|  
+|[bekleme](#wait)|İleti blokları yıkıcılarda tüm zaman uyumsuz işleme görevlerini blok yok etme öncesinde tamamlanması zaman sahip olduğunuzdan emin olmak için kullanılan bir işlemciye özgü dönmesini bekleyin. (Geçersiz kılmaları [message_processor::wait](message-processor-class.md#wait).)|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[process_incoming_message](#process_incoming_message)|Çağrılan zaman uyumsuz işleme işlev. İletileri dequeues ve bunları işlemeye başlar. (Geçersiz kılmaları [message_processor::process_incoming_message](message-processor-class.md#process_incoming_message).)|  
+|[process_incoming_message](#process_incoming_message)|Çağrılan zaman uyumsuz işleme işlev. Bu iletileri dequeues ve bunları işlemeye başlar. (Geçersiz kılmaları [message_processor::process_incoming_message](message-processor-class.md#process_incoming_message).)|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [message_processor](message-processor-class.md)  
@@ -88,19 +88,19 @@ class ordered_message_processor : public message_processor<T>;
   
 ##  <a name="async_send"></a> async_send 
 
- Zaman uyumsuz olarak iletileri kuyruklar ve bu zaten yapılmadıysa bir işlem görevi başlar.  
+ Zaman uyumsuz olarak iletileri kuyruğa alır ve bu zaten yapılmadıysa bir işleme görevi başlar.  
   
 ```
 virtual void async_send(_Inout_opt_ message<T>* _Msg);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Msg`  
- Bir ileti için bir işaretçi.  
+*_Msg*<br/>
+Bir ileti için bir işaretçi.  
   
 ##  <a name="initialize"></a> başlatma 
 
- Başlatır `ordered_message_processor` uygun geri çağırma işlevi, Zamanlayıcı ve zamanlamasını grup nesnesi.  
+ Başlatır `ordered_message_processor` uygun geri çağırma işlevi, Zamanlayıcı ve zamanlama grubu nesnesi.  
   
 ```
 void initialize(
@@ -110,18 +110,18 @@ void initialize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PScheduler`  
- Zamanlayıcı'yı hafif görevleri planlama için kullanılacak işaretçi.  
+*_PScheduler*<br/>
+Hafif görevleri zamanlamak için kullanılacak Zamanlayıcı işaretçisi.  
   
- `_PScheduleGroup`  
- Hafif görevleri planlama için kullanılacak zamanlamayı grubu için bir işaretçi.  
+*_PScheduleGroup*<br/>
+Hafif görevleri zamanlamak için kullanılacak zamanlama grubu için bir işaretçi.  
   
- `_Handler`  
- Geri çağırma sırasında çağrılan işleyici functor.  
+*_Handler*<br/>
+Geri çağırma sırasında çağrılan işleyici functor.  
   
 ##  <a name="initialize_batched_processing"></a> initialize_batched_processing 
 
- Initialize toplu ileti işleme  
+ Başlatma toplu ileti işleme  
   
 ```
 virtual void initialize_batched_processing(
@@ -130,37 +130,37 @@ virtual void initialize_batched_processing(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Processor`  
- İşlemci functor geri çağırma sırasında çağrılır.  
+*_Processor*<br/>
+İşlemci functor geri çağırma sırasında çağrılır.  
   
- `_Propagator`  
- Yayılması functor geri çağırma sırasında çağrılır.  
+*_Propagator*<br/>
+Bir Yayıcı functor geri çağırma sırasında çağrılır.  
   
 ##  <a name="ctor"></a> ordered_message_processor 
 
- Oluşturan bir `ordered_message_processor` nesnesi.  
+ Oluşturur bir `ordered_message_processor` nesne.  
   
 ```
 ordered_message_processor();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu `ordered_message_processor` kadar zaman uyumsuz veya zaman uyumlu işleyicileri zamanlamaz `initialize` işlevi çağrılır.  
+ Bu `ordered_message_processor` kadar zaman uyumlu veya zaman uyumsuz işleyiciler zamanlamaz `initialize` işlevi çağrılır.  
   
 ##  <a name="dtor"></a> ~ ordered_message_processor 
 
- Bozar `ordered_message_processor` nesnesi.  
+ Yok eder `ordered_message_processor` nesne.  
   
 ```
 virtual ~ordered_message_processor();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tüm bekleyen zaman uyumsuz işlemleri için işlemci yok etme önce bekler.  
+ İşlemci yok etme önce tüm bekleyen zaman uyumsuz işlemler bekler.  
   
 ##  <a name="process_incoming_message"></a> process_incoming_message 
 
- Çağrılan zaman uyumsuz işleme işlev. İletileri dequeues ve bunları işlemeye başlar.  
+ Çağrılan zaman uyumsuz işleme işlev. Bu iletileri dequeues ve bunları işlemeye başlar.  
   
 ```
 virtual void process_incoming_message();
@@ -168,19 +168,19 @@ virtual void process_incoming_message();
   
 ##  <a name="sync_send"></a> sync_send 
 
- Zaman uyumlu olarak iletileri kuyruklar ve bu zaten yapılmadıysa bir işlem görevi başlar.  
+ Zaman uyumlu iletileri kuyruğa alır ve bu zaten yapılmadıysa bir işleme görevi başlar.  
   
 ```
 virtual void sync_send(_Inout_opt_ message<T>* _Msg);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Msg`  
- Bir ileti için bir işaretçi.  
+*_Msg*<br/>
+Bir ileti için bir işaretçi.  
   
 ##  <a name="wait"></a> bekleme 
 
- Tüm zaman uyumsuz işleme görevlerini bloğu yok etme önce bitirmek için zamana sahip olduğunuzdan emin olmak için ileti blokları yıkıcılarda kullanılan işlemciye özgü döndürme bekleyin.  
+ İleti blokları yıkıcılarda tüm zaman uyumsuz işleme görevlerini blok yok etme öncesinde tamamlanması zaman sahip olduğunuzdan emin olmak için kullanılan bir işlemciye özgü dönmesini bekleyin.  
   
 ```
 virtual void wait();

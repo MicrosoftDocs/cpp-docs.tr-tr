@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c1c6ed120705886c1b0bb4836e851139543f629
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e579c537421eba0f3b9dbcf347e08b6691cddb21
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753918"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022220"
 ---
 # <a name="iaxwinambientdispatchex-interface"></a>Iaxwinambientdispatchex arabirimi
 
@@ -78,7 +78,7 @@ virtual HRESULT STDMETHODCALLTYPE SetAmbientDispatch(IDispatch* pDispatch) = 0;
 
 ### <a name="parameters"></a>Parametreler
 
-*pDispatch*  
+*pDispatch*<br/>
 Yeni arabirim işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri

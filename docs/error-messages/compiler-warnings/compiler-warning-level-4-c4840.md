@@ -13,17 +13,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0baf70ac7fd4d07958478d2eef455c7dc395e221
-ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
+ms.openlocfilehash: c43ce60d319c427877b77a043df7c30bd00edc9b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601791"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025886"
 ---
 # <a name="compiler-warning-level-4-c4840"></a>Derleyici Uyarısı (düzey 4) C4840
 
 > sınıfının taşınabilir olmayan kullanımı*türü*' bir bağımsız değişken içeren işlev bağımsız değişkeni olarak
-  
+
 ## <a name="remarks"></a>Açıklamalar
 
 Sınıf ya da bir bağımsız değişken içeren işleve geçirilen yapının artık önemsiz olarak kopyalanabilir olmalıdır. Bu tür nesneleri geçirirken, derleyici, basit bit düzeyinde bir kopya oluşturur ve oluşturucu veya yıkıcı çağırmaz.

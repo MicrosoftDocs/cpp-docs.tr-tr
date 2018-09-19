@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc98f3f66041b86dcc93459132e3431e271bde5e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3b1b242b0e98e0309e2a98ca2c8e59ecaeff8b7a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247983"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024196"
 ---
 # <a name="compiler-error-c3167"></a>Derleyici Hatası C3167
-.NET Framework başlatılamadı: yüklendiğinden emin olun  
-  
- .NET Framework bu bilgisayarda yüklü değil; .NET Framework'ü yükleyin.
+
+.NET Framework başlatılamıyor: yüklü olduğundan emin olun
+
+.NET Framework, bu bilgisayarda yüklü değil; .NET Framework yükleyin.

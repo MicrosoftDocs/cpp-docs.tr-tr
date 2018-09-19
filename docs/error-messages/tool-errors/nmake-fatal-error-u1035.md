@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bb32f815345b933ad6a65a0c8c1ec8ad59cbe81
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0383bf4742d637d669070efa5370ebda0c7ab159
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322802"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019867"
 ---
 # <a name="nmake-fatal-error-u1035"></a>NMAKE Önemli Hatası U1035
-sözdizimi hatası: beklenen ':' veya '=' ayırıcısı  
-  
- Ya da iki nokta (**:**) veya eşittir işareti (**=**) bekleniyordu.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  İki nokta hedef izleyin değil.  
-  
-2.  Bir tek harfli hedef ardından iki nokta ve boşluk (örneğin, c:). NMAKE sürücü belirtimi yorumlanır.  
-  
-3.  İki nokta çıkarım kuralı izleyin değil.  
-  
-4.  Bir makro tanımı bir eşittir işareti arkasından değil.  
-  
-5.  Ters eğik çizgi karakteri ardından (**\\**) yeni bir satır için bir komut devam etmek için kullanıldı.  
-  
-6.  Bir dize, herhangi bir NMAKE sözdizimi kural izlemeyecek görüldü.  
-  
-7.  Derleme görevleri dosyası bir sözcük işlemci tarafından biçimlendirildi.
+
+sözdizimi hatası: beklenen ':' veya '=' ayracı
+
+Her iki iki nokta (**:**) ya da eşittir işaretini (**=**) bekleniyordu.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Bir iki nokta üst üste bir hedef izleyin değil.
+
+1. Tek harfli hedef ardından, bir virgül ve boşluk (örneğin, c:). NMAKE sürücü belirtimi olarak yorumlanır.
+
+1. Bir iki nokta üst üste çıkarım kuralı izleyin değil.
+
+1. Makro tanımı, bir eşittir işareti izlenmeyen.
+
+1. Bir karakteri ve ardından bir eğik çizgi (**\\**) yeni bir satır komutuna devam etmek için kullanıldı.
+
+1. NMAKE söz dizimi kuralların izleyin değil, bir dize görüntülenmektedir.
+
+1. Derleme görevleri dosyası bir sözcük işlemcisi tarafından biçimlendirildi.

@@ -16,41 +16,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55dc1fc5c2762751762b3798d28245224281ce67
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 024557750def49151d835545eec62bfc6f4727e0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245054"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033205"
 ---
 # <a name="compiler-error-c2942"></a>Derleyici Hatası C2942
-'class': türü sınıfı kimliği bir resmi bir işlev bağımsız değişkeni yeniden tanımlandı  
-  
- Genel veya Şablon sınıfı biçimsel bağımsız değişken olarak kullanamazsınız. Genel oluşturucu veya Şablon sınıfı için bağımsız değişken geçiremezsiniz.  
-  
- Aşağıdaki örnek C2942 oluşturur:  
-  
-```  
-  
-// C2942.cpp  
-// compile with: /c  
-template<class T>  
-struct TC {};   
-void f(int TC<int>) {}   // C2942  
-  
-// OK  
-struct TC2 {};  
-void f(TC2 i) {}  
-```  
-  
- Ayrıca C2942 genel türler kullanma ortaya çıkabilir:  
-  
-```  
-// C2942b.cpp  
-// compile with: /clr /c  
-generic<class T>  
-ref struct GC {};  
-void f(int GC<int>) {}   // C2942  
-ref struct GC2 { };  
-void f(int GC2) {}  
+
+'class': türü sınıf kimliği bir işlevin biçimsel bağımsız değişken yeniden tanımlandı
+
+Genel veya Şablon sınıfı bir biçimsel bağımsız değişken olarak kullanamazsınız. Doğrudan genel Oluşturucusu veya Şablon sınıfı bir bağımsız değişken geçiremezsiniz.
+
+Aşağıdaki örnek, C2942 oluşturur:
+
+```
+
+// C2942.cpp
+// compile with: /c
+template<class T>
+struct TC {};
+void f(int TC<int>) {}   // C2942
+
+// OK
+struct TC2 {};
+void f(TC2 i) {}
+```
+
+C2942, genel türler kullanırken da meydana gelebilir:
+
+```
+// C2942b.cpp
+// compile with: /clr /c
+generic<class T>
+ref struct GC {};
+void f(int GC<int>) {}   // C2942
+ref struct GC2 { };
+void f(int GC2) {}
 ```

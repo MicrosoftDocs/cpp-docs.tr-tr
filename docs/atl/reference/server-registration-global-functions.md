@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d30778524f692e19ffad205dc693dd5afd294c25
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 6fb3febbbaffc7c3a0de945fc9d30b544fd22188
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757994"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023312"
 ---
 # <a name="server-registration-global-functions"></a>Sunucu kaydı genel işlevleri
 
@@ -57,13 +57,13 @@ ATLINLINE ATLAPI AtlComModuleRegisterServer(
 
 ### <a name="parameters"></a>Parametreler
 
-*pComModule*  
+*pComModule*<br/>
 COM modülü için işaretçi.
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 Tür kitaplığı kayıtlı olması ise TRUE.
 
-*pCLSID*  
+*pCLSID*<br/>
 CLSID işaret kaydedilecek nesne. NULL ise, nesne eşlemesindeki tüm nesneler kaydedilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -89,13 +89,13 @@ ATLINLINE ATLAPI AtlComModuleUnregisterServer(
 
 ### <a name="parameters"></a>Parametreler
 
-*pComModule*  
+*pComModule*<br/>
 COM modülü için işaretçi.
 
-*bUnRegTypeLib*  
+*bUnRegTypeLib*<br/>
 Tür kitaplığı kayıtlı olması ise TRUE.
 
-*pCLSID*  
+*pCLSID*<br/>
 CLSID işaret silinmesine izin nesnesi. NULL ise nesne eşlemesindeki tüm nesneleri kaydı silinecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -121,13 +121,13 @@ ATLINLINE ATLAPI AtlComModuleRegisterClassObjects(
 
 ### <a name="parameters"></a>Parametreler
 
-*pComModule*  
+*pComModule*<br/>
 COM modülü için işaretçi.
 
-*dwClsContext*  
+*dwClsContext*<br/>
 Sınıf nesnesi çalıştırılacak bağlamı belirtir. Olası değerler şunlardır: CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER veya CLSCTX_LOCAL_SERVER. Bkz: [CLSCTX](https://msdn.microsoft.com/library/windows/desktop/ms693716) daha fazla ayrıntı için.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Bağlantı türleri sınıf nesnesi belirler. Olası değerler şunlardır: REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE veya REGCLS_MULTI_SEPARATE. Bkz: [REGCLS](/windows/desktop/api/combaseapi/ne-combaseapi-tagregcls) daha fazla ayrıntı için.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -148,7 +148,7 @@ ATLINLINE ATLAPI AtlComModuleRevokeClassObjects(_ATL_COM_MODULE* pComModule);
 
 ### <a name="parameters"></a>Parametreler
 
-*pComModule*  
+*pComModule*<br/>
 COM modülü için işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -173,16 +173,16 @@ ATLINLINE ATLAPI AtlComModuleGetClassObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*pComModule*  
+*pComModule*<br/>
 COM modülü için işaretçi.
 
-*rclsid*  
+*rclsid*<br/>
 Oluşturulacak nesnenin CLSID.
 
-*riid*  
+*riid*<br/>
 İstenen arabirim Laboratuvardaki.
 
-*ppv*  
+*ppv*<br/>
 Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppv* NULL olarak ayarlandı.
 
 ### <a name="return-value"></a>Dönüş Değeri

@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05612664b50c6a51008ab1d78ac1d40145fb593e
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 5c24f09bbad550633c68c403c89362a293265111
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695011"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019932"
 ---
 # <a name="ompdestroylock"></a>omp_destroy_lock
-Kilit uninitializes.  
+Kilit başlamasını iptal eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,14 +34,13 @@ void omp_destroy_lock(
 );  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
+### <a name="parameters"></a>Parametreler
   
- `lock`  
- Türünde bir değişken [omp_lock_t](../../../parallel/openmp/reference/omp-lock-t.md) , başlatılmış ile [omp_init_lock](../../../parallel/openmp/reference/omp-init-lock.md).  
+*lock*<br/>
+Türünde bir değişken [omp_lock_t](../../../parallel/openmp/reference/omp-lock-t.md) , başlatılan ile [omp_init_lock](../../../parallel/openmp/reference/omp-init-lock.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [3.2.2 omp_destroy_lock ve omp_destroy_nest_lock işlevleri](../../../parallel/openmp/3-2-2-omp-destroy-lock-and-omp-destroy-nest-lock-functions.md).  
+ Daha fazla bilgi için [3.2.2 omp_destroy_lock ve omp_destroy_nest_lock işlevleri](../../../parallel/openmp/3-2-2-omp-destroy-lock-and-omp-destroy-nest-lock-functions.md).  
   
 ## <a name="example"></a>Örnek  
  Bkz: [omp_init_lock](../../../parallel/openmp/reference/omp-init-lock.md) kullanma örneği için `omp_destroy_lock`.  

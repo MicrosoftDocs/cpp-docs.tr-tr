@@ -21,52 +21,54 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54529bed25fc60815f80ea8660bcf5786cb2887c
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f737e262d39b99c2c33b7c91bc3d1e234a9f47db
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700693"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018632"
 ---
 # <a name="overloading-unary-operators"></a>Aşırı Yükleme Birli İşleçleri
-Aşırı yüklenebilen birli işleçler şunlardır:  
-  
-1.  `!` ([mantıksal değil](../cpp/logical-negation-operator-exclpt.md))  
-  
-2.  `&` ([adres](../cpp/address-of-operator-amp.md))  
-  
-3.  `~` ([birinin tamamlayıcısı](../cpp/one-s-complement-operator-tilde.md))  
-  
-4.  `*` ([işaretçiye](../cpp/indirection-operator-star.md))  
-  
-5.  `+` ([birli artı](../cpp/additive-operators-plus-and.md))  
-  
-6.  `-` ([tekli olumsuzlama](../cpp/additive-operators-plus-and.md))  
-  
-7.  `++` ([artışı](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))  
-  
-8.  `--` ([azaltma](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))  
-  
-9. dönüştürme işleçleri  
-  
- Sonek artırma ve azaltma işleçleri (`++` ve `--`) içinde ayrı ayrı değerlendirilir [artırmak ve azaltma](../cpp/increment-and-decrement-operator-overloading-cpp.md).  
-  
- Dönüştürme işleçleri de ayrı bir konuda ele alınmıştır; bkz: [kullanıcı tanımlı tür dönüşümleri](../cpp/user-defined-type-conversions-cpp.md).  
-  
- Aşağıdaki kurallar diğer tüm birli işleçler için doğrudur. Birli işleç işlevini statik olmayan bir üye olarak bildirmek için şu biçimde bildirmeniz gerekir:  
-  
-> *ret-type* **işleci** *op* **)**  
-  
- Burada *ret-type* dönüş türü ve *op* yukarıdaki tabloda listelenen işleçlerden.  
-  
- Birli işleç işlevini genel bir işlev olarak bildirmek için şu biçimde bildirmeniz gerekir:  
-  
-> *ret-type* **işleci** *op* **(** *arg* **)**  
-  
- Burada *ret-type* ve *op* üye işleci işlevleri için tanımlanmıştır ve *arg* üzerinde çalışacağı sınıf türünün bir bağımsız değişken.  
-  
+
+Aşırı yüklenebilen birli işleçler şunlardır:
+
+1. `!` ([mantıksal değil](../cpp/logical-negation-operator-exclpt.md))
+
+1. `&` ([adres](../cpp/address-of-operator-amp.md))
+
+1. `~` ([birinin tamamlayıcısı](../cpp/one-s-complement-operator-tilde.md))
+
+1. `*` ([işaretçiye](../cpp/indirection-operator-star.md))
+
+1. `+` ([birli artı](../cpp/additive-operators-plus-and.md))
+
+1. `-` ([tekli olumsuzlama](../cpp/additive-operators-plus-and.md))
+
+1. `++` ([artışı](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
+
+1. `--` ([azaltma](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
+
+9. dönüştürme işleçleri
+
+Sonek artırma ve azaltma işleçleri (`++` ve `--`) içinde ayrı ayrı değerlendirilir [artırmak ve azaltma](../cpp/increment-and-decrement-operator-overloading-cpp.md).
+
+Dönüştürme işleçleri de ayrı bir konuda ele alınmıştır; bkz: [kullanıcı tanımlı tür dönüşümleri](../cpp/user-defined-type-conversions-cpp.md).
+
+Aşağıdaki kurallar diğer tüm birli işleçler için doğrudur. Birli işleç işlevini statik olmayan bir üye olarak bildirmek için şu biçimde bildirmeniz gerekir:
+
+> *ret-type* **işleci** *op* **)**
+
+Burada *ret-type* dönüş türü ve *op* yukarıdaki tabloda listelenen işleçlerden.
+
+Birli işleç işlevini genel bir işlev olarak bildirmek için şu biçimde bildirmeniz gerekir:
+
+> *ret-type* **işleci** *op* **(** *arg* **)**
+
+Burada *ret-type* ve *op* üye işleci işlevleri için tanımlanmıştır ve *arg* üzerinde çalışacağı sınıf türünün bir bağımsız değişken.
+
 > [!NOTE]
->  Birli operatörlerin dönüş türleriyle ilgili bir kısıtlama yoktur. Örneğin, mantıksal değil için mantıklıdır (`!`) bir tamsayı değeri, ancak bu döndürülecek zorlanmaz.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [İşleç Aşırı Yüklemesi](../cpp/operator-overloading.md)
+>  Birli operatörlerin dönüş türleriyle ilgili bir kısıtlama yoktur. Örneğin, mantıksal değil için mantıklıdır (`!`) bir tamsayı değeri, ancak bu döndürülecek zorlanmaz.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleç Aşırı Yüklemesi](../cpp/operator-overloading.md)

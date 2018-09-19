@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ebf50e4672ee2a3398f6c484c42f8e36f231169
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 00110a0e821077231c0f386a0656dc2214b0267d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33325123"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034726"
 ---
 # <a name="ltparagt-visual-c"></a>&lt;para&gt; (Visual C++)
-\<Para > gibi olan bir etiketi kullanmak için etiket [ \<Özet >](../ide/summary-visual-cpp.md), [ \<açıklamalar >](../ide/remarks-visual-cpp.md), veya [ \<döndürür >](../ide/returns-visual-cpp.md)ve yapısı metne eklemenize olanak tanır.  
+\<Para > gibi olan bir etiketi içinde kullanmak için etiket [ \<Özet >](../ide/summary-visual-cpp.md), [ \<remarks >](../ide/remarks-visual-cpp.md), veya [ \<döndürür >](../ide/returns-visual-cpp.md)ve metnin yapısını eklemenizi sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,11 +35,11 @@ ms.locfileid: "33325123"
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `content`  
- Paragraf metni.  
+*İçeriği*<br/>
+Paragraf metni.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İle derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) bir dosyaya işlem belgesi açıklamaları için.  
+ Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.  
   
 ## <a name="example"></a>Örnek  
  Bkz: [ \<Özet >](../ide/summary-visual-cpp.md) kullanma örneği için \<para >.  

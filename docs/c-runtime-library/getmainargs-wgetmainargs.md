@@ -30,60 +30,64 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13707791b78de2c000535d60ed3f298046e4576c
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: c323780308d71158bf717898a05f3454fabf0c3d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451292"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030254"
 ---
 # <a name="getmainargs-wgetmainargs"></a>__getmainargs, __wgetmainargs
-Komut satırı ayrıştırma çağırır ve bağımsız değişkenleri kopyalar `main()` geçirilen işaretçileri geriye doğru.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-int __getmainargs(  
-    int * _Argc,   
-   char *** _Argv,   
-   char *** _Env,   
-   int _DoWildCard,  
-_startupinfo * _StartInfo);  
-  
- int __wgetmainargs (  
-   int *_Argc,  
-   wchar_t ***_Argv,  
-   wchar_t ***_Env,  
-   int _DoWildCard,  
-   _startupinfo * _StartInfo)  
-  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `_Argc`  
- Takip edin bağımsız değişken sayısı içeren bir tamsayı `argv`. `argc` parametresi her zaman 1'e eşit veya daha büyüktür.  
-  
- `_Argv`  
- Programın kullanıcısı tarafından girilen komut satırı bağımsız değişkenlerini temsil eden boş sonlandırılmış bir dize dizisi. Kural tarafından `argv[0]` ile program çağrılan komut, argv [1] ilk komut satırı bağımsız değişkeni ve benzeri argv [argc] kadar her zaman **NULL**. Her zaman ilk komut satırı bağımsız değişkeni olan `argv[1]` ve son `argv[argc - 1]`.  
-  
- `_Env`  
- Kullanıcının ortama değişkenlerini temsil eden bir dizeler dizisi. Bu dizi tarafından sonlandırılır bir **NULL** girişi.  
-  
- `_DoWildCard`  
- Tamsayı, komut satırı bağımsız değişkenleri joker karakter 1 olarak ayarlanırsa genişletir veya 0 olarak ayarlanırsa hiçbir şey yapmaz.  
-  
- `_StartInfo`  
- CRT DLL geçirilecek diğer bilgileri.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- başarılı olursa 0; negatif bir değer başarısız olursa.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Kullanım `__getmainargs` wide olmayan karakter platformlarda ve `__wgetmainargs` joker karakter (Unicode) platformlarda.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|__getmainargs|internal.h|  
+
+Komut satırı Ayrıştırmada çağırır ve bağımsız değişkenleri kopyalar `main()` geçirilen işaretçileri üzerinden geri.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+int __getmainargs(
+    int * _Argc,
+   char *** _Argv,
+   char *** _Env,
+   int _DoWildCard,
+_startupinfo * _StartInfo);
+
+int __wgetmainargs (
+   int *_Argc,
+   wchar_t ***_Argv,
+   wchar_t ***_Env,
+   int _DoWildCard,
+   _startupinfo * _StartInfo)
+
+```
+
+#### <a name="parameters"></a>Parametreler
+
+`_Argc`<br/>
+İçinde izleyen bağımsız değişkenlerin sayısı içeren bir tamsayı `argv`. `argc` parametresi her zaman 1'e eşit veya daha büyüktür.
+
+`_Argv`<br/>
+Programın kullanıcısı tarafından girilen komut satırı bağımsız değişkenlerini temsil eden boş sonlandırılmış bir dize dizisi. Kural olarak, `argv[0]` ile programın çağrıldığı komuttur, argv [1] ilk komut satırı bağımsız değişkeni ve benzeri argv [argc] tarihine kadar her zaman **NULL**. İlk komut satırı bağımsız değişkeni her zaman olduğu `argv[1]` ve sonuncu `argv[argc - 1]`.
+
+`_Env`<br/>
+Kullanıcının ortamında ayarlanmış değişkenleri temsil eden bir dize dizisi. Bu dizi tarafından sonlandırılır bir **NULL** giriş.
+
+`_DoWildCard`<br/>
+Bir tamsayı, komut satırı bağımsız değişkenleri joker karakter kümesi 1 genişletir veya 0 olarak ayarlanırsa, hiçbir şey yapmaz.
+
+`_StartInfo`<br/>
+CRT DLL'ye geçirilecek diğer bilgiler.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+başarılıysa 0; işlem başarısız olursa negatif değer.
+
+## <a name="remarks"></a>Açıklamalar
+
+Kullanım `__getmainargs` olmayan geniş karakter platformlarda ve `__wgetmainargs` platformlarında geniş karakter (Unicode).
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|__getmainargs|internal.h|
 |__wgetmainargs|internal.h|

@@ -17,20 +17,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 996fc46982d809da5e0b37b83f2940102892167e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8ef765286d022b26aeed0ca98c9f43f94f5d17f8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299373"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025782"
 ---
 # <a name="expression-evaluator-error-cxx0021"></a>İfade Değerlendirici Hatası CXX0021
-struct veya union skaler olarak kullanılmış  
-  
- Bir yapının veya birleşimin bir ifadede kullanıldı, ancak hiçbir öğe belirtildi.  
-  
- Bir yapı veya birleşim değişken değiştirirken, değişkenin adını kendisi tarafından alanı niteleyicisi görünebilir. Bir ifadede bir yapının veya birleşimin kullanılırsa, istenen belirli öğeyle nitelenmelidir.  
-  
- İfadede kullanılacak değeri olan öğeyi belirtin.  
-  
- Bu hata için CAN0021 aynıdır.
+
+struct veya union skaler olarak kullanılmış
+
+Bir yapı veya birleşim bir ifade kullanıldı, ancak hiçbir öğe belirtildi.
+
+Değişkenin adını yapı veya birleşim değişkenini işlenirken kendisi tarafından bir alan niteleyici olmadan görünebilir. Bir yapı veya birleşim bir ifadede kullanılırsa, istenen belirli bir öğe ile nitelenmelidir.
+
+İfadede kullanılacak değeri olan öğesi belirtin.
+
+Bu hata için CAN0021 aynıdır.

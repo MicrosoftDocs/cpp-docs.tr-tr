@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3e0ac7cf3a5448a2963aa92c2e275be796c895d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c977ecc1094af37c5e2c2e3ed8f27a6f2bdf1c93
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758345"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033881"
 ---
 # <a name="iprovideclassinfo2impl-class"></a>Iprovideclassınfo2ımpl sınıfı
 
@@ -41,28 +41,28 @@ template <const CLSID* pcoclsid,
     const IID* psrcid,
     const GUID* plibid = &CAtlModule::m_libid,
     WORD wMajor = 1,
-    WORD wMinor = 0, class tihclass = CComTypeInfoHolder>  
+    WORD wMinor = 0, class tihclass = CComTypeInfoHolder>
 class ATL_NO_VTABLE IProvideClassInfo2Impl : public IProvideClassInfo2
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*pcoclsid*  
+*pcoclsid*<br/>
 Coclass tanımlayıcısı için bir işaretçi.
 
-*psrcid*  
+*psrcid*<br/>
 Coclass varsayılan dispinterface giden tanımlayıcısı için bir işaretçi.
 
-*plibid*  
+*plibid*<br/>
 Arabirimi hakkında bilgi içeren tür kitaplığının Kitaplık kimliği için bir işaretçi. Varsayılan olarak, sunucu düzeyinde tür kitaplığı geçirilir.
 
-*wMajor*  
+*wMajor*<br/>
 Tür kitaplığının ana sürümü. Varsayılan değer 1’dir.
 
-*wMinor*  
+*wMinor*<br/>
 Tür kitaplığının bir alt sürümü. Varsayılan değer 0’dır.
 
-*tihclass*  
+*tihclass*<br/>
 Coclass tür bilgilerini yönetmek için kullanılan sınıf. Varsayılan değer `CComTypeInfoHolder` şeklindedir.
 
 ## <a name="members"></a>Üyeler

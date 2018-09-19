@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2f90b127ccee7579304e3963d4edb6ff56ecd95
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0ceed87c62863f9a5150feebf90f67118656d858
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317550"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034115"
 ---
 # <a name="resource-compiler-fatal-error-rc1009"></a>Kaynak Derleyicisi Önemli Hatası RC1009
-Derleyici sınırı: Makro çok fazla iç içe 'makrosu'  
-  
- Dosya makrosu iç içe kaynak derleyicisi sınırını aşıyor. Makroları iç içe geçirme derinliği azaltmak için belirtilen kaynak dosyasını gözden geçirin.
+
+Derleyici sınırı: makrolar çok derin iç içe 'makro'
+
+Dosya makrosu iç içe kaynak derleyici sınırını aşıyor. Makroları iç içe geçmiş derinliğini azaltmak için belirtilen kaynak dosyasını değiştirin.

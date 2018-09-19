@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0bb29fdaff72370ec197fc9b3f651b5ff574c32
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 2739b9306647b1929a0ad51aca8e0b66a65e9d2a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717437"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018268"
 ---
 # <a name="cmfcmaskededit-class"></a>CMFCMaskedEdit sınıfı
 `CMFCMaskedEdit` Sınıfı, kullanıcı girişini maskeye doğrulayan ve doğrulanmış sonuçları bir şablona göre görüntüleyen maskelenmiş düzenleme denetimini destekler.  
@@ -196,18 +196,17 @@ void EnableSelectByGroup(BOOL bEnable=TRUE);
   
  Örneğin, bir telefon numarası doğrulamak için aşağıdaki maskeli düzen denetimi kullanabilirsiniz:  
   
- `m_wndMaskEdit.EnableMask(`  
-  
- `_T(" ddd  ddd dddd"),// Mask string`  
-  
- `_T("(___) ___-____"),// Template string`  
-  
- `_T(' '));// Default char`  
-  
- `m_wndMaskEdit.SetValidChars(NULL); // All characters are valid.`  
-  
- `m_wndMaskEdit.SetWindowText(_T("(425) 555-0187")); // Prompt`  
-  
+```cpp
+m_wndMaskEdit.EnableMask(
+    _T(" ddd  ddd dddd"),  // Mask string
+    _T("(___) ___-____"),  // Template string
+    _T(' '));              // Default char
+
+m_wndMaskEdit.SetValidChars(NULL); // All characters are valid.
+
+m_wndMaskEdit.SetWindowText(_T("(425) 555-0187")); // Prompt
+```
+
  Grup Seçimi etkinleştirilirse, kullanıcının yalnızca "425", "555" veya "0187" dize grupları alabilirsiniz. Grup Seçimi devre dışı bırakılırsa kullanıcı telefon numarasının bütün metni alabilirsiniz: "(425) 555-0187".  
   
 ##  <a name="enablesetmaskedcharsonly"></a>  CMFCMaskedEdit::EnableSetMaskedCharsOnly  
@@ -288,7 +287,16 @@ void SetValidChars(LPCTSTR lpszValid=NULL);
   
  Aşağıdaki kod örneği yalnızca onaltılık sayı kabul eder.  
   
- `//Mask: 0xFFFFm_wndMaskEdit.EnableMask( _T(" AAAA"),                // The mask string. _T("0x____"),               // The literal template string. _T('_'));                   // The default character that replaces the backspace character.// Valid string charactersm_wndMaskEdit.SetValidChars(_T("1234567890ABCDEFabcdef"));m_wndMaskEdit.SetWindowText(_T("0x01AF"));`  
+```cpp
+//Mask: 0xFFFF
+m_wndMaskEdit.EnableMask( 
+    _T(" AAAA"),                // The mask string.
+    _T("0x____"),               // The literal template string.
+    _T('_'));                   // The default character that 
+                                // replaces the backspace character.
+// Valid string characters
+m_wndMaskEdit.SetValidChars(_T("1234567890ABCDEFabcdef"));m_wndMaskEdit.SetWindowText(_T("0x01AF"));
+```
   
 ##  <a name="setwindowtext"></a>  CMFCMaskedEdit::SetWindowText  
  Maskeli düzen denetimi bir istem görüntüler.  

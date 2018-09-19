@@ -17,31 +17,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 345bc66200ea4a1d6d4bbb79313157e81b9a2edb
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: ed2b8d1d8bc3ac516b3d605f13e02bda37bb0122
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336696"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028551"
 ---
 # <a name="dynamically-binding-columns-in-your-provider"></a>Sağlayıcınızdaki Sütunları Dinamik Olarak Bağlama
+
 Dinamik sütun bağlama ihtiyacınız olduğundan emin olun. Çünkü gerekebilir:  
   
--   Derleme zamanında, satır kümesi sütunlarının tanımlı değil.  
+- Derleme zamanında, satır kümesi sütunlarının tanımlı değil.  
   
--   Yer işaretleri gibi sütunları ekler bir öğenin desteklediğiniz.  
+- Yer işaretleri gibi sütunları ekler bir öğenin desteklediğiniz.  
   
 ### <a name="to-implement-dynamic-column-binding"></a>Dinamik sütun bağlama uygulamak için  
   
-1.  Kaldırmak `PROVIDER_COLUMN_MAP`kodunuzdan s.  
+1. Kaldırmak `PROVIDER_COLUMN_MAP`kodunuzdan s.  
   
-2.  Kullanıcı kaydı (yapınızı), aşağıdaki bildirimi ekleyin:  
+1. Kullanıcı kaydı (yapınızı), aşağıdaki bildirimi ekleyin:  
   
     ```cpp  
     static ATLCOLUMNINFO* GetColumnInfo(void* pThis, ULONG* pcCols);  
     ```  
   
-3.  Uygulama `GetColumnInfo` işlevi. Bu işlev, bilgilerin nasıl depolandığını yerleştirir. Özellikleri veya bu işlevi diğer bilgilerini almak gerekebilir. Benzer bir makro oluşturmak isteyebilirsiniz [COLUMN_ENTRY](../../data/oledb/column-entry.md) kendi bilgilerini eklemek için makro.  
+1. Uygulama `GetColumnInfo` işlevi. Bu işlev, bilgilerin nasıl depolandığını yerleştirir. Özellikleri veya bu işlevi diğer bilgilerini almak gerekebilir. Benzer bir makro oluşturmak isteyebilirsiniz [COLUMN_ENTRY](../../data/oledb/column-entry.md) kendi bilgilerini eklemek için makro.  
   
      Aşağıdaki örnekte gösterildiği bir `GetColumnInfo` işlevi.  
   
@@ -97,4 +98,5 @@ Dinamik sütun bağlama ihtiyacınız olduğundan emin olun. Çünkü gerekebili
     ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Sağlayıcı Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-provider-templates.md)
+
+[OLE DB Sağlayıcı Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-provider-templates.md)

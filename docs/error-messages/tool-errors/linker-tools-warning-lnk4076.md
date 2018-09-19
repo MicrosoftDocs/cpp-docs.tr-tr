@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f0e9a85237a47515925a5867b0f26b7321e778c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: de96bdbbc9752cd68ca78728395ad4bfdb4b01a9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301937"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018541"
 ---
 # <a name="linker-tools-warning-lnk4076"></a>Bağlayıcı Araçları Uyarısı LNK4076
-Geçersiz artımlı durum dosyası 'filename'; nonincrementally bağlama  
-  
- BAĞLANTI artımlı durum (.ilk) dosyasına yazamıyor. Her iki `filename` bozuk veya artımlı bir bağlama veritabanı değil. Dosya ve yeniden bağlama kaldırın.
+
+Artımlı durum dosyası 'filename'; artımsız olarak bağlanıyor
+
+BAĞLANTI için artımlı durum (.ilk) dosyası yazılamıyor. Her iki `filename` bozuk veya bir artımlı bağlama veritabanı değil. Yeniden Bağla ve dosyayı kaldırın.

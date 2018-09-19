@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dca56b5114e8c0ec98d65e43edaca19a7e23663
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 07877215a2b230a7ef2f75d83b71b7d03e4e7d34
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295954"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031869"
 ---
 # <a name="expression-evaluator-error-cxx0048"></a>İfade Değerlendirici Hatası CXX0048
-arama sırası desteklenmiyor  
-  
- C ifade değerlendiricisi tarafından desteklenmeyen bir arama sırası ifadesinde belirtilen işlevi kullanır. Bu işlev Gözcü penceresi ifadesinde çağrılamaz.  
-  
- Bu hata için CAN0048 aynıdır.
+
+arama sırası desteklenmiyor
+
+Belirtilen ifade bir işlev C ifade değerlendiricisi tarafından desteklenmeyen bir çağrı sırası kullanır. Bu işlev Gözcü penceresi ifadesini çağrılamıyor.
+
+Bu hata için CAN0048 aynıdır.

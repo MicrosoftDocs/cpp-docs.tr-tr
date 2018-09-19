@@ -17,26 +17,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7964eac628fa89695d1757cff8b7b329fd7fe713
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b16133484af5a2225f79c5d293a2c8edd948bdb2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302142"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025899"
 ---
 # <a name="expression-evaluator-error-cxx0064"></a>İfade Değerlendirici Hatası CXX0064
-kesme noktası üzerinde sanal üye sınır işlevi ayarlanamıyor  
-  
- Bir kesme noktası bir nesne için bir işaretçi aracılığıyla sanal üye işlevi üzerinde gibi ayarlandı:  
-  
-```  
-pClass->vfunc( int );  
-```  
-  
- Bir kesme noktası üzerinde bir sanal işlev sınıfı gibi girerek ayarlanabilir:  
-  
-```  
-Class::vfunc( int );  
-```  
-  
- Bu hata için CAN0064 aynıdır.
+
+bağlı sanal üye işlev üzerinde kesme noktası ayarlanamıyor
+
+Bir kesme noktası üzerinde bir sanal üye işlevi bir nesneye bir işaretçi aracılığıyla gibi ayarlandı:
+
+```
+pClass->vfunc( int );
+```
+
+Bir kesme noktası sınıf girerek bir sanal işlev üzerinde ayarlanabilir:
+
+```
+Class::vfunc( int );
+```
+
+Bu hata için CAN0064 aynıdır.

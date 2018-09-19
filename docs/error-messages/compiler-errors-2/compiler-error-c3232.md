@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a770613c2cd851d48d7424166a90ed8183e5e536
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7e7b3e8c306b8e883fd3edb0b2781b297842bb0a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246561"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018372"
 ---
 # <a name="compiler-error-c3232"></a>Derleyici Hatası C3232
-'param': genel tür parametresi bir tam ad kullanılamaz  
-  
- Genel tür parametresi yanlış kullanıldı.  
-  
- Aşağıdaki örnek C3232 oluşturur:  
-  
-```  
-// C3232.cpp  
-// compile with: /clr  
-generic <class T>  
-ref class C {  
-   typename T::TYPE t;   // C3232  
-};  
+
+'param': genel tür parametresi bir nitelenmiş adda kullanılamaz
+
+Genel tür parametresi yanlış kullanıldı.
+
+Aşağıdaki örnek, C3232 oluşturur:
+
+```
+// C3232.cpp
+// compile with: /clr
+generic <class T>
+ref class C {
+   typename T::TYPE t;   // C3232
+};
 ```

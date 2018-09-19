@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18521113125eb49fa413568b6a62472bb50a7924
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: c3e8ac574ce304238affbab41acc415e1d8de697
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691956"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026913"
 ---
 # <a name="ompsetdynamic"></a>omp_set_dynamic
-Çalışma zamanı tarafından düzenlenip düzenlenmediğini sonraki paralel bölgede kullanılabilir iş parçacığı sayısını gösterir.  
+Sonraki bir paralel bölgenin içinde kullanılabilir iş parçacığı sayısını çalışma zamanı tarafından düzenlenip düzenlenmediğini gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,20 +34,19 @@ void omp_set_dynamic(
 );  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
+### <a name="parameters"></a>Parametreler
   
- `val`  
- Çalışma zamanı tarafından ayarlanabilir sonraki paralel bölgede kullanılabilir iş parçacığı sayısını belirten bir değer.  Sıfır olmayan, çalışma zamanı sıfır ise, iş parçacığı sayısını ayarlayabilirsiniz çalışma zamanı dinamik olarak iş parçacığı sayısını ayarlar değil.  
+*VAL*<br/>
+Çalışma zamanı tarafından ayarlanabilir izleyen bir paralel bölgenin içinde kullanılabilir iş parçacığı sayısını belirten bir değer.  Sıfır olmayan, çalışma zamanı iş parçacığı sayısı sıfır ise ayarlayabilirsiniz, çalışma zamanı dinamik olarak iş parçacığı sayısını ayarlar değil.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İş parçacığı sayısını hiçbir zaman tarafından belirlenen değer aşacak [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) veya [OMP_NUM_THREADS](../../../parallel/openmp/reference/omp-num-threads.md).  
+ İş parçacığı sayısı ayarlanan değer hiçbir zaman aşacak [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) ya da [OMP_NUM_THREADS](../../../parallel/openmp/reference/omp-num-threads.md).  
   
  Kullanım [omp_get_dynamic](../../../parallel/openmp/reference/omp-get-dynamic.md) geçerli ayarını görüntülemek için `omp_set_dynamic`.  
   
- İçin ayar `omp_set_dynamic` ayarını geçersiz kılar [omp_dynamıc](../../../parallel/openmp/reference/omp-dynamic.md) ortam değişkeni.  
+ Ayarı `omp_set_dynamic` ayarını geçersiz kılar [omp_dynamıc](../../../parallel/openmp/reference/omp-dynamic.md) ortam değişkeni.  
   
- Daha fazla bilgi için bkz: [3.1.7 omp_set_dynamic işlevi](../../../parallel/openmp/3-1-7-omp-set-dynamic-function.md).  
+ Daha fazla bilgi için [3.1.7 omp_set_dynamic işlevi](../../../parallel/openmp/3-1-7-omp-set-dynamic-function.md).  
   
 ## <a name="example"></a>Örnek  
   

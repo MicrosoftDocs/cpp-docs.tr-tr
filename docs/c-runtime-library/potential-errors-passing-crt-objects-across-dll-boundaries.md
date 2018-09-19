@@ -14,119 +14,124 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5fc211f47ca7d5c64ee068707f49620cd5e646f6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0b9bc03e0d69492f7e46165f6f754f4a4ca3625d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391265"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031920"
 ---
 # <a name="potential-errors-passing-crt-objects-across-dll-boundaries"></a>CRT Nesnelerini DLL Sınırlarından Geçirirken Olası Hatalar
-C geçirdiğinizde çalışma zamanı (CRT) dosya tanıtıcısı, yerel ve ortam değişkenleri gibi giriş / çıkış (işlev çağrıları DLL sınır arasında), DLL beklenmeyen davranışları DLL'e çağırma dosyaların yanı sıra, DLL farklı kopyalarını kullanırsanız oluşabilir nesneleri CRT kitaplık.  
-  
- Bellek ayırma ilgili bir sorun ortaya çıkabilir (açıkça biriyle `new` veya `malloc`, ya da örtük olarak ile `strdup`, `strstreambuf::str`, vb.) ve ardından boşaltılacak DLL sınır arasında bir işaretçi geçirin. DLL ve kullanıcılarına CRT kitaplıkları farklı kopyalarını kullanıyorsanız bu bellek erişim ihlali veya yığın bozulması neden olabilir.  
-  
- Bu sorunun başka bir belirti gibi hata ayıklama sırasında çıktı penceresinde bir hata olabilir:  
-  
- YIĞIN []: RtlValidateHeap(#,#) için belirtilen geçersiz adres  
-  
-## <a name="causes"></a>Nedenler  
- CRT kitaplık her kopyası iş parçacığı yerel depolaması, uygulama ya da DLL tarafından tutulan ayrı ve farklı bir durum vardır. Bu nedenle, ortam değişkenleri, dosya tanıtıcıları gibi CRT nesnelerini ve yerel ayarlar yalnızca uygulama CRT ya da bu nesneler, ayrılmış veya ayarlama DLL kopyası için geçerlidir. DLL ve uygulama istemcilerine CRT kitaplık farklı kopyalarını kullandığınızda, bu CRT nesnelerini DLL sınırından geçirmek ve bunları diğer tarafta doğru çekilmesi için bekler. Bu, özellikle Visual Studio 2015 ve sonraki sürümlerinde Evrensel CRT önce CRT sürümlerinin geçerlidir. Visual C++ 2013 veya daha önce oluşturulmuş Visual Studio her sürümü için sürüme özgü CRT kitaplık vardı. Örneğin, kendi veri yapılarını ve adlandırma kuralları CRT iç uygulama ayrıntılarını her sürümünde farklı. CRT DLL farklı bir sürümü için CRT bir sürümü için derlenmiş kod dinamik olarak bağlama hiçbir zaman desteklenen, ancak bazen, daha tasarıma göre Şanslar tarafından çalışır.  
-  
- Ayrıca, her kopyası CRT kitaplık kendi yığın Yöneticisi olduğundan, bir CRT kitaplık bellek ayırma ve işaretçiyi CRT kitaplık farklı bir kopyasını boşaltılacak DLL sınır arasında geçirme yığın bozulması olası bir nedeni vardır. Böylece, CRT nesnelerini sınırından geçirmeden veya bellek ayırır ve DLL dışında boşaltılması bekler, DLL tasarlarken, uygulama istemcileri CRT Kitaplık'ın aynı kopyasını DLL olarak kullanmak için dll kısıtlayın. Normalde yalnızca her ikisi de aynı sürüme CRT DLL yükleme zamanında bağlıysa DLL ve istemcilerine CRT Kitaplık'ın aynı kopyasını kullanın. Visual Studio 2015 ve daha sonra Windows 10 tarafından kullanılan Evrensel CRT kitaplık DLL sürümü artık merkezi olarak dağıtılan bir Windows bileşeni olduğundan ucrtbase.dll, onu aynıdır Visual Studio 2015 ve sonraki sürümler ile oluşturulmuş uygulamalara ait. Ancak, hatta CRT kodu aynı olduğunda, bir yığın farklı yığın kullanan bir bileşen için ayrılan bellek kapalı el olamaz.  
-  
-## <a name="example"></a>Örnek  
-  
-### <a name="description"></a>Açıklama  
- Bu örnek, bir dosya tanıtıcısı DLL sınırından geçirir.  
-  
- DLL ve .exe dosyası CRT tek bir kopyasını paylaştıkları şekilde /MD ile yerleşiktir.  
-  
- CRT ayrı bir kopyasını kullanmak için / MT ile yeniden oluşturursanız, sonuçta elde edilen test1Main.exe sonuçları bir erişim ihlali çalışıyor.  
-  
-```cpp  
-// test1Dll.cpp  
-// compile with: cl /EHsc /W4 /MD /LD test1Dll.cpp  
-#include <stdio.h>  
-__declspec(dllexport) void writeFile(FILE *stream)  
-{  
-   char   s[] = "this is a string\n";  
-   fprintf( stream, "%s", s );  
-   fclose( stream );  
-}  
-```  
-  
-```cpp  
-// test1Main.cpp  
-// compile with: cl /EHsc /W4 /MD test1Main.cpp test1Dll.lib  
-#include <stdio.h>  
-#include <process.h>  
-void writeFile(FILE *stream);  
-  
-int main(void)  
-{  
-   FILE  * stream;  
-   errno_t err = fopen_s( &stream, "fprintf.out", "w" );  
-   writeFile(stream);  
-   system( "type fprintf.out" );  
-}  
-```  
-  
-```Output  
-this is a string  
-```  
-  
-## <a name="example"></a>Örnek  
-  
-### <a name="description"></a>Açıklama  
- Bu örnekte, ortam değişkenleri DLL sınırından geçirir.  
-  
-```cpp  
-// test2Dll.cpp  
-// compile with: cl /EHsc /W4 /MT /LD test2Dll.cpp  
-#include <stdio.h>  
-#include <stdlib.h>  
-  
-__declspec(dllexport) void readEnv()  
-{  
-   char *libvar;  
-   size_t libvarsize;  
-  
-   /* Get the value of the MYLIB environment variable. */   
-   _dupenv_s( &libvar, &libvarsize, "MYLIB" );  
-  
-   if( libvar != NULL )  
-      printf( "New MYLIB variable is: %s\n", libvar);  
-   else  
-      printf( "MYLIB has not been set.\n");  
-   free( libvar );  
-}  
-```   
-  
-```cpp  
-// test2Main.cpp  
-// compile with: cl /EHsc /W4 /MT test2Main.cpp test2dll.lib   
-#include <stdlib.h>  
-#include <stdio.h>  
-  
-void readEnv();  
-  
-int main( void )  
-{  
-   _putenv( "MYLIB=c:\\mylib;c:\\yourlib" );  
-   readEnv();  
-}  
-```  
-  
-```Output  
-MYLIB has not been set.  
-```  
-  
- CRT yalnızca bir kopyasını kullanılmasını sağlamak amacıyla DLL ve .exe dosyası ile /MD oluşturulmuştur, programın başarıyla çalıştırır ve şu çıkışı üretir:  
-  
-```  
-New MYLIB variable is: c:\mylib;c:\yourlib  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)
+
+C geçirdiğinizde çalışma zamanı (CRT) dosya tanıtıcıları, yerel ve ortam değişkenleri gibi içine veya dışına bir DLL (DLL sınırı arasında işlev çağrıları), DLL içine çağırmak dosyaları yanı sıra, DLL farklı kopyalarını kullanırsanız beklenmeyen davranış oluşabilir nesneleri CRT kitaplığı.
+
+Bellek ayırma ilgili bir sorun meydana gelebilir (açıkça ile `new` veya `malloc`, veya örtük olarak `strdup`, `strstreambuf::str`, vb.) ve ardından bir işaretçi serbest bırakılacak bir DLL sınırında geçirin. DLL ve onun kullanıcıları farklı kopyalara CRT kitaplık kullanıyorsanız, bu bellek erişim ihlali veya yığın bozulması neden olabilir.
+
+Bu sorunun başka bir belirti gibi hata ayıklama sırasında çıktı penceresinde bir hata olabilir:
+
+YIĞIN []: RtlValidateHeap(#,#) için belirtilen geçersiz adresi
+
+## <a name="causes"></a>Nedenler
+
+CRT kitaplığının her kopyası uygulamanıza veya DLL tarafından iş parçacığı yerel depolama alanında tutulur ayrı ve farklı bir durum vardır. Bu nedenle, ortam değişkenleri, dosya tanıtıcıları gibi CRT nesnelerini ve yerel ayarlar yalnızca uygulamadaki CRT veya bu nesneler burada ayrılan veya ayarlayın DLL kopyası için geçerli olur. Bir DLL ve uygulama istemcileri farklı kopyalarını CRT kitaplığı kullandığınızda, bu CRT nesnelerini DLL sınırında geçirmek ve bunları diğer tarafta doğru işlenmek üzere beklediğiniz olamaz. Bu, özellikle CRT sürümlerinden önce Evrensel CRT Visual Studio 2015 ve sonraki sürümlerde geçerlidir. Visual C++ 2013 veya daha önce oluşturulan Visual Studio'nun her sürümü için sürüme özgü bir CRT kitaplığı vardı. Örneğin, kendi veri yapıları ve adlandırma kuralları, CRT iç uygulama ayrıntıları her sürümde farklı. CRT CRT dll'nin farklı bir sürüme bir sürümü için derlenmiş kod dinamik olarak bağlama hiçbir zaman desteklenen, ancak zaman zaman, daha fazla Şanslar tasarıma göre çalışır.
+
+Ayrıca, kendi yığını Yöneticisi CRT kitaplığının her kopyası olduğundan, bir CRT Kitaplığı'nda Bellek ayırma ve farklı bir kopyasını CRT kitaplığı tarafından serbest bırakılacak bir DLL sınırı arasında işaretçi işleve yığın bozulma olası bir nedeni vardır. CRT nesnelerini sınırında geçirir veya bellek ayırırken ve DLL dışında serbest bırakılacak bekler, DLL dosyanızı tasarlarken, uygulama istemcilerinin aynı kopyasını CRT kitaplığının DLL olarak kullanmak için dll kısıtlayın. Normalde yalnızca her ikisi de aynı sürüme CRT DLL yükleme zamanında bağlıysa DLL ve istemcileri CRT kitaplığı aynı kopyasını kullanın. Visual Studio 2015 ve daha sonra Windows 10 tarafından kullanılan Evrensel CRT kitaplığının DLL sürümü artık merkezi olarak dağıtılan bir Windows bileşeni olduğundan, ucrtbase.dll olduğu aynı Visual Studio 2015 ve sonraki sürümleri ile oluşturulan uygulamalar için. Ancak, hatta CRT kodu aynı olduğunda, farklı bir yığın kullanan bileşen için bir yığında ayrılan bellek kapalı el olamaz.
+
+## <a name="example"></a>Örnek
+
+### <a name="description"></a>Açıklama
+
+Bu örnek, bir DLL sınırında bir dosya tanıtıcısı geçirir.
+
+DLL ve .exe dosyası paylaştıkları CRT tek bir kopyasını dolayısıyla /MD ile oluşturulur.
+
+CRT ayrı bir kopyasını kullanmasını sağlayarak/MT ile yeniden oluşturursanız, sonuçta elde edilen test1Main.exe sonuçları bir erişim ihlali ile çalışıyor.
+
+```cpp
+// test1Dll.cpp
+// compile with: cl /EHsc /W4 /MD /LD test1Dll.cpp
+#include <stdio.h>
+__declspec(dllexport) void writeFile(FILE *stream)
+{
+   char   s[] = "this is a string\n";
+   fprintf( stream, "%s", s );
+   fclose( stream );
+}
+```
+
+```cpp
+// test1Main.cpp
+// compile with: cl /EHsc /W4 /MD test1Main.cpp test1Dll.lib
+#include <stdio.h>
+#include <process.h>
+void writeFile(FILE *stream);
+
+int main(void)
+{
+   FILE  * stream;
+   errno_t err = fopen_s( &stream, "fprintf.out", "w" );
+   writeFile(stream);
+   system( "type fprintf.out" );
+}
+```
+
+```Output
+this is a string
+```
+
+## <a name="example"></a>Örnek
+
+### <a name="description"></a>Açıklama
+
+Bu örnek, bir DLL sınırında ortam değişkenlerini geçirir.
+
+```cpp
+// test2Dll.cpp
+// compile with: cl /EHsc /W4 /MT /LD test2Dll.cpp
+#include <stdio.h>
+#include <stdlib.h>
+
+__declspec(dllexport) void readEnv()
+{
+   char *libvar;
+   size_t libvarsize;
+
+   /* Get the value of the MYLIB environment variable. */
+   _dupenv_s( &libvar, &libvarsize, "MYLIB" );
+
+   if( libvar != NULL )
+      printf( "New MYLIB variable is: %s\n", libvar);
+   else
+      printf( "MYLIB has not been set.\n");
+   free( libvar );
+}
+```
+
+```cpp
+// test2Main.cpp
+// compile with: cl /EHsc /W4 /MT test2Main.cpp test2dll.lib
+#include <stdlib.h>
+#include <stdio.h>
+
+void readEnv();
+
+int main( void )
+{
+   _putenv( "MYLIB=c:\\mylib;c:\\yourlib" );
+   readEnv();
+}
+```
+
+```Output
+MYLIB has not been set.
+```
+
+CRT yalnızca bir kopyasını kullanılmasını sağlamak amacıyla DLL ve .exe dosyası ile /MD oluşturulur, program başarıyla çalıştırır ve aşağıdaki çıktıyı üretir:
+
+```
+New MYLIB variable is: c:\mylib;c:\yourlib
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)

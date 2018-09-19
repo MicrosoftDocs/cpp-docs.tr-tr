@@ -19,14 +19,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6ba5262577fc9176669916a7fc30d299d06770a8
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 9a127b5cd611177c28e6e434b04060edf3bdcb55
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336660"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028642"
 ---
 # <a name="traversing-a-simple-rowset"></a>Basit Bir Satır Kümesinde Geçiş Yapma
+
 Aşağıdaki örnek komutlar içermeyen bir hızlı ve kolay veritabanı erişimi gösterir. ATL projesinde aşağıdaki tüketici kodu adlı tablosundan kayıtları alır *Sanatçılar* bir Microsoft Access veritabanına ODBC için Microsoft OLE DB sağlayıcısı kullanılarak. Kod oluşturur bir [CTable](../../data/oledb/ctable-class.md) tablo nesnesi ile erişimci tabanlı kullanıcı kayıt sınıfı `CArtists`. Bir bağlantı açar, bağlantıda bir oturum açar ve tabloyu oturum açar.  
   
 ```cpp  
@@ -53,7 +54,7 @@ while (artists.MoveNext() == S_OK)
 }  
 ```  
   
- Kullanıcı kaydı, `CArtists`, şöyle görünür:  
+Kullanıcı kaydı, `CArtists`, şöyle görünür:  
   
 ```cpp  
 class CArtists  
@@ -73,4 +74,5 @@ END_COLUMN_MAP()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)
+
+[OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)

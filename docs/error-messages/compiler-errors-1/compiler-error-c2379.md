@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1016bedfa9df0e9dfacb56734ee60397108d046
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ec340a5a48705eb91bf5bf72ec20ad382f4b262c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198082"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032451"
 ---
 # <a name="compiler-error-c2379"></a>Derleyici Hatası C2379
-biçimsel parametresi numarası yükseltilmiş zaman farklı türüne sahip  
-  
- Belirtilen parametre türü önceki bildiriminde türüyle varsayılan promosyonlar aracılığıyla uyumlu değil. Bu bir hatadır ANSI c ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) ve Microsoft uzantılı bir uyarı (**/Ze**).  
-  
- Aşağıdaki örnek C2379 oluşturur:  
-  
-```  
-// C2379.c  
-// compile with: /Za  
-void func();  
-void func(char);   // C2379, char promotes to int  
+
+biçimsel parametre numarası yükseltildiğinde farklı türe sahip
+
+Belirtilen parametre türü aracılığıyla varsayılan promosyonlar, bir önceki bildirimde türüyle uyumlu değil. Bu bir hatadır, ANSI C ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) ve Microsoft uzantılı bir uyarı (**/Ze**).
+
+Aşağıdaki örnek, C2379 oluşturur:
+
+```
+// C2379.c
+// compile with: /Za
+void func();
+void func(char);   // C2379, char promotes to int
 ```

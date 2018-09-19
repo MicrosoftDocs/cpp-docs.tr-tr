@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a78dd5a9c52c9dfc845de43c62ae38180d0d079f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8d0409317cb0cdf6a248554cba2e18d7f9d2e0e0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33266467"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019009"
 ---
 # <a name="compiler-error-c3653"></a>Derleyici Hatası C3653
-'function': adlandırılmış bir geçersiz kılma kullanılamaz: bulundu; kılınmasını değil işlevi işlev açıkça kullanarak ad mi unuttunuz bir:: işleci?  
-  
- Açık geçersiz kılma herhangi arabiriminde bulunamadı bir işlev belirtilmiş. Daha fazla bilgi için bkz: [açık geçersiz kılmalar](../../windows/explicit-overrides-cpp-component-extensions.md).  
-  
- Aşağıdaki örnek C3653 oluşturur:  
-  
-```  
-// C3653.cpp  
-// compile with: /clr  
-public interface struct I {  
-   void h();  
-};  
-  
-public ref struct X : public I {  
-   virtual void f() new sealed = J {};   // C3653 no J in scope  
-   virtual void g() {}   // OK  
-   virtual void h() new sealed = I::h {};   // OK  
-};  
+
+'function': adlandırılmış bir geçersiz kılma olarak kullanılamaz: bulunamadı; kılınan bir işlev kullanarak işlevi açıkça adlandırmayı unuttunuz bir:: işleci?
+
+Açık bir geçersiz kılma herhangi bir arabirimde bulunamadı bir işlev belirtildi. Daha fazla bilgi için [açık geçersiz kılmalar](../../windows/explicit-overrides-cpp-component-extensions.md).
+
+Aşağıdaki örnek, C3653 oluşturur:
+
+```
+// C3653.cpp
+// compile with: /clr
+public interface struct I {
+   void h();
+};
+
+public ref struct X : public I {
+   virtual void f() new sealed = J {};   // C3653 no J in scope
+   virtual void g() {}   // OK
+   virtual void h() new sealed = I::h {};   // OK
+};
 ```

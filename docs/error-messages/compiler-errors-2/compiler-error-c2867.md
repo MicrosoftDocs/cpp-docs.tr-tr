@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 404bc16c77a8d327230744bb4b679e6d13249f7d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ba16c619aa55636db7e52c03162446307bd8b62c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245149"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022259"
 ---
 # <a name="compiler-error-c2867"></a>Derleyici Hatası C2867
-'tanımlayıcısı': bir ad değil  
-  
- A `using` yönergesi için bir ad alanı dışında bir şey uygulanır.  
-  
- Aşağıdaki örnek C2867 oluşturur:  
-  
-```  
-// C2867.cpp  
-// compile with: /c  
-namespace N {  
-   class X {};  
-}  
-using namespace N::X;   // C2867  
+
+'identifier': bir ad alanı değil
+
+A `using` yönergesi, bir ad alanı dışında bir şey uygulanır.
+
+Aşağıdaki örnek, C2867 oluşturur:
+
+```
+// C2867.cpp
+// compile with: /c
+namespace N {
+   class X {};
+}
+using namespace N::X;   // C2867
 ```

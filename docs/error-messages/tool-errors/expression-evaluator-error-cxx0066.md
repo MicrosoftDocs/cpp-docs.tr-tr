@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a4e2f71de2f883e54a17a08aa4735f63f167915
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2985583b24decfbfd2da1a1a4bfb1344f57bac49
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298427"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026745"
 ---
 # <a name="expression-evaluator-error-cxx0066"></a>İfade Değerlendirici Hatası CXX0066
-statik üye yok  
-  
- Statik bir sınıf üyesi bulunamadı veya tanımlı değil. Bu hata oluşabilir statik bir sınıftan bildirilen ancak üye tanımlı, veya yalnızca tanımlı ve hata ayıklama bilgisi içermeyen modülleri başvurulan.  
-  
- Bu hata için CAN0066 aynıdır.
+
+statik üye yok
+
+Bir sınıfın statik bir üye bulunamadı veya tanımlı değil. Bu hataya neden olabilir bir statik sınıfından bildirilmiş ancak üye tanımlanmış, veya yalnızca tanımlanır ve hata ayıklama bilgilerine sahip olmayan modüllerde başvurulan.
+
+Bu hata için CAN0066 aynıdır.

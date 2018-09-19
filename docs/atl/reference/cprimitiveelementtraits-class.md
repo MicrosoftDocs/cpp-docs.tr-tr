@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71dc40a7c2d4fe460f546dbfe4f55d00aff59667
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: aa5f96b8937168126509025735d20fab7b35c2b2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759515"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019205"
 ---
 # <a name="cprimitiveelementtraits-class"></a>CPrimitiveElementTraits sınıfı
 
@@ -33,13 +33,13 @@ Bu sınıfın sağladığı yöntemlerle varsayılan ve işlevleri koleksiyon s�
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <typename T>  
+template <typename T>
 class CPrimitiveElementTraits : public CDefaultElementTraits<T>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Koleksiyon sınıf nesnesinde depolanan verinin türü.
 
 ## <a name="members"></a>Üyeler
@@ -91,5 +91,5 @@ typedef T& OUTARGTYPE;
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CDefaultElementTraits sınıfı](../../atl/reference/cdefaultelementtraits-class.md)   
+[CDefaultElementTraits Sınıfı](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

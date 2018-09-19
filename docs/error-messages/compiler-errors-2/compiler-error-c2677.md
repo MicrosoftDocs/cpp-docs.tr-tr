@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 671be6d7e6acf252b774c4cd379fbc15267e4d94
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1cd7e4b3b454d8611c52bbe88041677434492c0f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33233168"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030787"
 ---
 # <a name="compiler-error-c2677"></a>Derleyici Hatası C2677
-İkili 'işleci': genel bir işleç bulundu türü 'type' aldığı (veya kabul edilebilir bir dönüştürme yok)  
-  
- İşleç kullanmak için belirtilen tür için aşırı yükleme veya işleci tanımlandığı bir türe dönüştürme tanımlayın.  
-  
- Aşağıdaki örnek C2677 oluşturur:  
-  
-```  
-// C2677.cpp  
-class C {  
-public:  
-   C(){}  
-} c;  
-  
-class D {  
-public:  
-   D(){}  
-   operator int(){return 0;}  
-} d;  
-  
-int main() {  
-   int i = 1 >> c;   // C2677  
-   int j = 1 >> d;   // OK operator int() defined  
-}  
+
+İkili 'operator': 'type' türünü alan hiçbir genel işleç bulunamadı (veya hiç kabul edilebilir dönüştürme yok)
+
+İşlecini kullanmak için belirtilen tür için aşırı veya tanımlar işlecin tanımlandığı bir türe dönüştürmeyi gerekir.
+
+Aşağıdaki örnek, C2677 oluşturur:
+
+```
+// C2677.cpp
+class C {
+public:
+   C(){}
+} c;
+
+class D {
+public:
+   D(){}
+   operator int(){return 0;}
+} d;
+
+int main() {
+   int i = 1 >> c;   // C2677
+   int j = 1 >> d;   // OK operator int() defined
+}
 ```

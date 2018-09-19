@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9bc13eb70dd2efc479cef7185ee0cdfa147ec507
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 69411a727c3f590e9a45a46ecb4ea2eb0eab05c8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408054"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029474"
 ---
 # <a name="c-bit-fields"></a>C++ Bit Alanları
 
@@ -38,7 +38,7 @@ Sınıflar ve yapılar, tamsayı türünden daha az depolama alanı kaplayan üy
 > [!NOTE]
 > Adlandırılmamış bir bit alanı genişliği 0'ın sonraki sıradaki bit alanını hizalamasını zorlar **türü** sınır, burada **türü** üyenin türüdür.
 
- Aşağıdaki örnek bit alanlarını içeren bir yapıyı bildirir:
+Aşağıdaki örnek bit alanlarını içeren bir yapıyı bildirir:
 
 ```cpp
 // bit_fields1.cpp
@@ -94,4 +94,5 @@ Bit alanlarındaki hatalı işlemler aşağıdaki listede görülmektedir:
 - Olmayan bir başlatma**const** bit alanı ile başvuru.
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)
+
+[Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)

@@ -16,19 +16,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43301686d5bdb964cf08e8123ff4c55475228567
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: be268dbc153ad0bb140a2adfcfd8ec6385716c48
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32383208"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027569"
 ---
 # <a name="external-linkage"></a>Dış Bağlantı
-İlk bildirim dosyası kapsam düzeyinde bir tanımlayıcı için kullanmıyorsa **statik** depolama sınıfı tanımlayıcısı, nesne dış bağlantı vardır.  
-  
- Bir işlev için bir tanımlayıcı bildirimi Hayır varsa *depolama sınıfı tanımlayıcısı*, tam olarak bunu ile bildirilen gibi kendi bağlantı belirlenir *depolama sınıfı tanımlayıcısı* `extern`. Bir nesne için bir tanımlayıcı bildirimi dosya kapsamı ve no olup olmadığını *depolama sınıfı tanımlayıcısı*, kendi bağlantı dış.  
-  
- Dış bağlantı bir tanımlayıcının adıyla aynı işlevi atar veya veri nesnesi olarak aynı ada sahip dış bağlantı için herhangi bir bildirim yapar. İki bildirimler aynı çeviri birimine veya farklı çeviri birimleri olabilir. Nesne veya işlevi de genel yaşam süresi varsa, nesne veya işlev tüm program tarafından paylaşılır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlantıyı Belirtmek için extern Kullanma](../cpp/using-extern-to-specify-linkage.md)
+
+Tanımlayıcının dosya kapsamı düzeyinde ilk bildirimi kullanmıyorsa **statik** depolama sınıfı tanımlayıcısı, nesne dış bağlantısı vardır.
+
+Tanımlayıcının bir işlev bildirimi Hayır varsa *depolama sınıfı tanımlayıcısı*, tam olarak bunu ile bildirilmiş olup olmadıklarına kendi bağlantı belirlenir *depolama sınıfı tanımlayıcısı* `extern`. Bildirimi bir nesne için bir tanımlayıcının dosya kapsamı ve Hayır varsa *depolama sınıfı tanımlayıcısı*, kendi bağlantısı dış değerdir.
+
+Aynı işlevin bir tanımlayıcının dış bağlantısı adıyla belirtir veya başka bir bildirimin aynı ada sahip dış bağlantısı için veri nesnesi gibi yapar. İki bildirimi, aynı çeviri birimi içinde veya farklı bir çeviri birimi olabilir. Nesne veya işlev, nesne veya işlev de genel yaşam süresi varsa, tüm program tarafından paylaşılır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlantıyı Belirtmek için extern Kullanma](../cpp/using-extern-to-specify-linkage.md)

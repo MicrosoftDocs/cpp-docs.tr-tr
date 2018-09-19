@@ -16,41 +16,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16341412ae5028753b2a542b45da4ea2b549c29e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f60a17d257505752f9d2c791365f537fa02ffc2a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248651"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022602"
 ---
 # <a name="compiler-error-c3219"></a>Derleyici Hatası C3219
-'param': genel parametresi birden çok olmayan-arabirimleri tarafından kısıtlanamaz: 'sınıfı'  
-  
- İki veya daha fazla yönetilen sınıfları tarafından genel bir parametreye sınırlamak için geçerli değil.  
-  
- Aşağıdaki örnek C3219 oluşturur:  
-  
-```  
-// C3219.cpp  
-// compile with: /clr  
-ref class A {};  
-ref class B {};  
-  
-generic <class T>  
-where T : A, B  
-ref class E {};   // C3219  
-```  
-  
- Aşağıdaki örnek, olası bir çözüm gösterilmektedir:  
-  
-```  
-// C3219b.cpp  
-// compile with: /clr /c  
-ref class A {};  
-  
-interface struct C {};  
-  
-generic <class T>  
-where T : A  
-ref class E {};  
+
+'param': genel parametre birden fazla arabirim olmayan öğe tarafından kısıtlanamaz: 'class'
+
+Genel parametre tarafından yönetilen iki veya daha fazla sınıflar sınırlamak için geçerli değil.
+
+Aşağıdaki örnek, C3219 oluşturur:
+
+```
+// C3219.cpp
+// compile with: /clr
+ref class A {};
+ref class B {};
+
+generic <class T>
+where T : A, B
+ref class E {};   // C3219
+```
+
+Aşağıdaki örnek, olası çözümü göstermektedir:
+
+```
+// C3219b.cpp
+// compile with: /clr /c
+ref class A {};
+
+interface struct C {};
+
+generic <class T>
+where T : A
+ref class E {};
 ```

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 147814856e1e447894fd9826b9620ea8d762d48c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4abf96e3850f88b58e138745536ffc40aef11b68
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764985"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024547"
 ---
 # <a name="ca2caex-class"></a>CA2CAEX sınıfı
 
@@ -36,13 +36,13 @@ Bu sınıf, dize dönüşüm makroları CA2CTEX ve CT2CAEX ve typedef CA2CA tara
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<int t_nBufferLength = 128>  
+template<int t_nBufferLength = 128>
 class CA2CAEX
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*t_nBufferLength*  
+*t_nBufferLength*<br/>
 Çeviri işlemde kullanılan arabellek boyutu. Varsayılan uzunluk 128 bayt'tır.
 
 ## <a name="members"></a>Üyeler
@@ -103,10 +103,10 @@ CA2CAEX(LPCSTR psz) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*psz*  
+*psz*<br/>
 Dönüştürülecek metin dizesi.
 
-*nCodePage*  
+*nCodePage*<br/>
 Bu sınıftaki kullanılmayan.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -137,7 +137,7 @@ LPCSTR m_psz;
 
 Dönüştürme işleci.
 
-```  
+```
 operator LPCSTR() const throw();
 ```
 
@@ -147,9 +147,9 @@ Metin dizesi LPCSTR türü olarak döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CA2AEX sınıfı](../../atl/reference/ca2aex-class.md)   
-[CA2WEX sınıfı](../../atl/reference/ca2wex-class.md)   
-[CW2AEX sınıfı](../../atl/reference/cw2aex-class.md)   
-[CW2CWEX sınıfı](../../atl/reference/cw2cwex-class.md)   
-[CW2WEX sınıfı](../../atl/reference/cw2wex-class.md)   
+[CA2AEX Sınıfı](../../atl/reference/ca2aex-class.md)<br/>
+[CA2WEX Sınıfı](../../atl/reference/ca2wex-class.md)<br/>
+[CW2AEX Sınıfı](../../atl/reference/cw2aex-class.md)<br/>
+[CW2CWEX Sınıfı](../../atl/reference/cw2cwex-class.md)<br/>
+[CW2WEX Sınıfı](../../atl/reference/cw2wex-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

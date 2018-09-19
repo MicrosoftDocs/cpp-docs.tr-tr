@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8af4a1b2ee763dfc28288058d27b1b08721fd97
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3bef300671894e054ddf9b1ca0ab9dcf3b135370
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756070"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019434"
 ---
 # <a name="debugging-and-error-reporting-global-functions"></a>Hata ayıklama ve hata raporlama genel işlevleri
 
@@ -63,7 +63,7 @@ AtlHresultFromWin32(DWORD error);
 
 ### <a name="parameters"></a>Parametreler
 
-*Hata*  
+*Hata*<br/>
 Dönüştürülecek hata değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -129,28 +129,28 @@ HRESULT WINAPI AtlReportError(
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*  
+*CLSID*<br/>
 [in] Hata Raporlama nesne CLSID değeri.
 
-*lpszDesc*  
+*lpszDesc*<br/>
 [in] Hatayı açıklayan bir dize. Unicode sürümlerini belirtmek *lpszDesc* değil LPCOLESTR türü; ANSI sürümü LPCSTR türünü belirtir.
 
-*IID*  
+*IID*<br/>
 [in] Hata işletim sistemi tarafından tanımlanmış olması durumunda hata veya GUID_NULL tanımlama arabirimi Laboratuvardaki.
 
-*Xact_s_lastresourcemanager*  
+*Xact_s_lastresourcemanager*<br/>
 [in] İstediğiniz HRESULT arayana döndürülür.
 
-*nID*  
+*nID*<br/>
 [in] Hata açıklaması dizesi depolandığı kaynak tanımlayıcısı. Bu değer 0x0200 ile 0xFFFF arasında aralığında yer alan. Hata ayıklama yapılarında, bir **ASSERT** neden olur *nID* geçerli bir dize dizinini oluşturmaz. Sürüm yapılarında hata açıklama dizesi "İçin bilinmeyen hata." ayarlanır.
 
-*dwHelpID*  
+*dwHelpID*<br/>
 [in] Hata için Yardım içeriği tanımlayıcı.
 
-*lpszHelpFile*  
+*lpszHelpFile*<br/>
 [in] Hatayı açıklayan Yardım dosyasının adı ve yolu.
 
-*hInst*  
+*hInst*<br/>
 [in] Kaynağı için tanıtıcı. Varsayılan olarak, bu parametredir `__AtlBaseModuleModule::GetResourceInstance`burada `__AtlBaseModuleModule` genel örneğinin [CAtlBaseModule](../../atl/reference/catlbasemodule-class.md) veya ondan türetilmiş bir sınıf.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -182,7 +182,7 @@ __declspec(noreturn) inline void AtlThrow(HRESULT hr);
 
 ### <a name="parameters"></a>Parametreler
 
-*İK*  
+*İK*<br/>
 Standart HRESULT değerini.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -233,6 +233,6 @@ _ATL_NO_EXCEPTIONS tanımlanmazsa, işlev bir özel durum oluşturmaktansa bir o
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İşlevleri](../../atl/reference/atl-functions.md)   
+[İşlevler](../../atl/reference/atl-functions.md)<br/>
 [Hata Ayıklama ve Hata Raporlama Makroları](../../atl/reference/debugging-and-error-reporting-macros.md)
 

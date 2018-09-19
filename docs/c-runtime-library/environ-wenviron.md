@@ -23,68 +23,71 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f66e0aa847c0835290895aa7412410b2350d617
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 59ec0a0279c0b43b6ffdc1e5f25616c916624be2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451405"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018359"
 ---
 # <a name="environ-wenviron"></a>_environ, _wenviron
-`_environ` İşlem ortamını oluşturan çok baytlı karakter dizeleri işaretçiler dizisi için bir işaretçi bir değişkendir. Bu genel değişkeni daha güvenli işlevsel sürümleri için kullanım dışı [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md) ve [_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md), hangi kullanılmalıdır yerine genel değişkeni. `_environ` içinde Stdlib.h bildirildi.  
-  
+
+`_environ` Değişken bir dizi işlem ortamını oluşturan bir çok baytlı karakter dizelerine işaretçidir. Bu genel değişkeni daha güvenli işlevsel sürümleri için kullanım dışı [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md) ve [_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md), hangi kullanılmalıdır genel değişken yerine. `_environ` Stdlıb.h içinde bildirilir.
+
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-extern char **_environ;  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Kullanan bir programda `main` işlevi, `_environ` işletim sistemi ortamdan alınan ayarlara göre program başlangıçta başlatıldı. Bir veya daha fazla form girişlerinin ortam oluşur  
-  
- `ENVVARNAME``=string`  
-  
- `getenv_s` ve `putenv_s` kullanmak `_environ` erişme ve ortam Tablo değiştirme değişkeni. Zaman `_putenv` eklemek veya ortam ayarları silmek için adlı ortamı tablo boyutu değişir. Bellek konumunda, programın bellek gereksinimlerine bağlı olarak değişebilir. Değeri `_environ` otomatik olarak uygun şekilde ayarlanır.  
-  
- `_wenviron` Değişken Stdlib.h içinde bildirilen:  
-  
-```  
-extern wchar_t **_wenviron;  
-```  
-  
- bir joker karakter sürümü `_environ`. Kullanan bir programda `wmain` işlevi, `_wenviron` işletim sistemi ortamdan alınan ayarlara göre program başlangıçta başlatıldı.  
-  
- Kullanan bir programda `main`, `_wenviron` başlangıçta **NULL** çok baytlı karakter dizeleri oluşturulan ortam olduğundan. İlk çağrıda `_wgetenv` veya `_wputenv`, karşılık gelen bir joker karakter dizesi ortamı oluşturulur ve işaret ediyor `_wenviron`.  
-  
- Benzer şekilde, kullanan bir programda `wmain`, `_environ` başlangıçta **NULL** joker karakter dizelerini oluşturulan ortam olduğundan. İlk çağrıda `_getenv` veya `_putenv`, karşılık gelen bir çok baytlı karakter dizesi ortamı oluşturulur ve işaret ediyor `_environ`.  
-  
- Ortam (MBCS ve Unicode) iki kopyasını aynı anda bir program varsa, çalışma zamanı sistem kaynaklanan yavaş yürütme süresi içinde her iki kopya bulundurmanız gerekir. Örneğin, her çağırmanız `_putenv`, çağrı `_wputenv` böylece iki ortam dizeleri karşılık da otomatik olarak yürütülür.  
-  
+>  Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+extern char **_environ;
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Kullanan bir programda `main` işlevi `_environ` program başlangıcında işletim sistemi ortamından yapılan ayarlara göre başlatılır. Ortamı bir veya daha fazla form girişlerinden oluşur
+
+`ENVVARNAME``=string`
+
+`getenv_s` ve `putenv_s` kullanın `_environ` erişmek ve ortam tablosuna değiştirmek için değişken. Zaman `_putenv` ekleme veya silme ortam ayarları için çağrılan ortam tablosuna boyutunu değiştirir. Bellek konumunda de, programın bellek gereksinimlerine bağlı olarak değişebilir. Değerini `_environ` otomatik olarak uygun şekilde ayarlanır.
+
+`_wenviron` Değişken bildirimi Stdlıb.h içinde:
+
+```
+extern wchar_t **_wenviron;
+```
+
+geniş karakterli sürümüdür `_environ`. Kullanan bir programda `wmain` işlevi `_wenviron` program başlangıcında işletim sistemi ortamından yapılan ayarlara göre başlatılır.
+
+Kullanan bir programda `main`, `_wenviron` başlangıçta **NULL** çünkü ortam çok baytlı karakter dizeleri kümesinden oluşur. Yapılan ilk çağrıda `_wgetenv` veya `_wputenv`, karşılık gelen bir geniş karakterli dize ortamı oluşturulur ve tarafından işaret edilen `_wenviron`.
+
+Benzer şekilde, kullanan bir programda `wmain`, `_environ` başlangıçta **NULL** çünkü ortam geniş karakter dizeleri kümesinden oluşur. Yapılan ilk çağrıda `_getenv` veya `_putenv`, karşılık gelen bir çok baytlı karakterli dize ortamı oluşturulur ve tarafından işaret edilen `_environ`.
+
+Ortam (MBCS ve Unicode) iki kopyasını aynı anda bir programda varsa, çalışma zamanı sistemi daha yavaş yürütme süresi bunun sonucunda, her iki kopyasında sürdürmeniz gerekir. Örneğin, her çağırmanız `_putenv`, çağrı `_wputenv` böylece iki ortam dizeleri karşılık da otomatik olarak yürütülür.
+
 > [!CAUTION]
->  Çalışma zamanı sistem Unicode sürümü ve ortam, birden çok baytlı sürümü korurken nadir durumlarda, bu iki ortam sürümleri tam olarak karşılık gelmeyebilir. Benzersiz bir UNICODE dizesi herhangi bir benzersiz çok baytlı karakter dizesini eşleştirir ancak çok baytlı karakter dizesi için benzersiz bir UNICODE dizesi eşlemesinden mutlaka benzersiz olmadığından budur. Bu nedenle, iki farklı Unicode dizeleri aynı birden çok baytlı dizeye eşleyebilir.  
-  
- Yoklama `_environ` bir Unicode bağlam anlamsız olduğunda [/MD](../build/reference/md-mt-ld-use-run-time-library.md) veya `/MDd` bağlantı kullanılır. CRT DLL için program türü (geniş veya birden çok baytlı) bilinmiyor. En olası senaryo olduğundan yalnızca birden çok baytlı türü oluşturulur.  
-  
- Aşağıdaki sözde kod nasıl gerçekleşebilir gösterir.  
-  
-```  
-int i, j;  
-i = _wputenv( "env_var_x=string1" );  // results in the implicit call:  
-                                      // putenv ("env_var_z=string1")  
-j = _wputenv( "env_var_y=string2" );  // also results in implicit call:  
-                                      // putenv("env_var_z=string2")  
-```  
-  
- Bu örnek için kullanılan gösterimde karakter dizelerini C dize değişmez değerleri değildir; Unicode ortam dizelerini temsil eden yer tutucular yerine, oldukları `_wputenv` çağrısı ve çok baytlı Ortam dizeleri `putenv` çağırın. Karakter tutucular`x`'ve'`y`' iki ayrı Unicode olarak Ortam dizeleri benzersiz olarak geçerli MBCS karakter eşleme yok. Bunun yerine, her ikisi de bazı MBCS karakterle eşleştirmek '`z`' diğer bir deyişle dizeleri dönüştürme girişimi varsayılan sonucu.  
-  
- Bu nedenle, ortamında birden çok baytlı değerini "`env_var_z`" ilk örtük çağrısından sonra `putenv` olacaktır "`string1`", ancak bu değer ikinci örtük çağrıda yazılmasını `putenv`, ne zaman değerini "`env_var_z`" olan ayarlamak "`string2`". Unicode ortam (içinde `_wenviron`) ve çok baytlı ortamını (içinde `_environ`) bu nedenle bu dizi çağrısı aşağıdaki farklı.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel değişkenler](../c-runtime-library/global-variables.md)   
- [GETENV, _wgetenv](../c-runtime-library/reference/getenv-wgetenv.md)   
- [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md)   
- [_putenv, _wputenv](../c-runtime-library/reference/putenv-wputenv.md)   
- [_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md)
+>  Çalışma zamanı sistemi, hem Unicode sürümü hem de çok baytlı bir sürüm ortamının muhafaza ederken nadir durumlarda, bu iki ortam sürümleri tam olarak karşılık gelmeyebilir. Benzersiz bir çok baytlı karakterli dize benzersiz bir Unicode dizesini eşleştirir ancak bir çok baytlı karakter dizesi benzersiz bir Unicode dize eşleme mutlaka benzersiz olmadığından budur. Bu nedenle, iki ayrı Unicode dizelerini aynı çoklu bayt dizesini eşleyebilir.
+
+Yoklama `_environ` Unicode olarak ne zaman anlamsız bağlamıdır [/MD](../build/reference/md-mt-ld-use-run-time-library.md) veya `/MDd` bağlantı kullanılır. CRT DLL için program türünü (geniş veya çok baytlı) bilinmiyor. En olası senaryo olduğundan, yalnızca çok baytlı türü oluşturulur.
+
+Aşağıdaki sözde kod nasıl oluşabilir gösterir.
+
+```
+int i, j;
+i = _wputenv( "env_var_x=string1" );  // results in the implicit call:
+                                      // putenv ("env_var_z=string1")
+j = _wputenv( "env_var_y=string2" );  // also results in implicit call:
+                                      // putenv("env_var_z=string2")
+```
+
+Bu örnek için kullanılan gösteriminde oluşturan karakter dizelerine C dize değişmez değerleri değildir; ' deki Unicode ortam dize değişmez değerleri temsil eden yer tutucular yerine, oldukları `_wputenv` dizeleri arama ve çok baytlı bir ortam içinde `putenv` çağırın. Karakter tutucuları`x`'ve'`y`' iki ayrı Unicode olarak Ortam dizeleri benzersiz olarak geçerli MBCS karakter eşlemeyin. Bunun yerine, her ikisi de bazı MBCS karakter eşleyin '`z`' diğer bir deyişle denemesi dizeleri dönüştürmek için varsayılan sonucu.
+
+Bu nedenle, ortamda çok baytlı değerini "`env_var_z`" ilk örtük çağrısından sonra `putenv` olacaktır "`string1`", ancak bu değer, ikinci örtük çağrısında belirttikleri `putenv`, değeri "`env_var_z`" olan ayarlamak "`string2`". Unicode ortam (içinde `_wenviron`) ve çok baytlı ortamı (içinde `_environ`) bu nedenle bu dizi çağrıları izleyerek farklı.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Global Değişkenler](../c-runtime-library/global-variables.md)<br/>
+[getenv, _wgetenv](../c-runtime-library/reference/getenv-wgetenv.md)<br/>
+[getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md)<br/>
+[_putenv, _wputenv](../c-runtime-library/reference/putenv-wputenv.md)<br/>
+[_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md)

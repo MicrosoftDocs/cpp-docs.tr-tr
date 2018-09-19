@@ -33,14 +33,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e190f81c0097e707830f7ac09c801929ea3e85e9
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 6283f29455cc3d835babdd83414e9dc98127eacd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464503"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029734"
 ---
 # <a name="icommandtextimpl-class"></a>ICommandTextImpl Sınıfı
+
 Bir uygulamasını sağlar [ICommandText](/previous-versions/windows/desktop/ms714914\(v=vs.85\)) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -52,11 +53,13 @@ class ATL_NO_VTABLE ICommandTextImpl
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *T*  
- Komut sınıfı türetilen `ICommandTextImpl`. 
+
+*T*<br/>
+Komut sınıfı türetilen `ICommandTextImpl`. 
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** altdb.h  
+
+**Başlık:** altdb.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -74,9 +77,11 @@ class ATL_NO_VTABLE ICommandTextImpl
 |[m_strCommandText](#strcommandtext)|Komut metni depolar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Zorunlu bir arabirim açma komutları.  
+
+Zorunlu bir arabirim açma komutları.  
  
 ## <a name="getcommandtext"></a> Icommandtextımpl::getcommandtext
+
 Son çağrısı tarafından ayarlanan metin komutu döndürür [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -87,9 +92,11 @@ STDMETHOD(GetCommandText)(GUID * pguidDialect,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. *PguidDialect* parametre varsayılan olarak sayılır.  
+
+Bkz: [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. *PguidDialect* parametre varsayılan olarak sayılır.  
 
 ## <a name="setcommandtext"></a> Icommandtextımpl::setCommandText
+
 Mevcut komut metni değiştirme komut metni, ayarlar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -100,9 +107,11 @@ STDMETHOD(SetCommandText)(REFGUID rguidDialect,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
+
+Bkz: [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="strcommandtext"></a> Icommandtextımpl::m_strCommandText
+
 Komut metni dizesi depolar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -112,5 +121,6 @@ CComBSTR m_strCommandText;
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

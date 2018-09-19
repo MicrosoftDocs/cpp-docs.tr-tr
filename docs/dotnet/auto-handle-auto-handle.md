@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: af9ca3d472aa3c942b86d338a6b6f8f25a573ca8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 67cc2393feff127e2b4278f5a5257ea2be102237
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104438"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018606"
 ---
 # <a name="autohandleautohandle"></a>auto_handle::auto_handle
 `auto_handle` Oluşturucusu.  
@@ -47,11 +47,11 @@ auto_handle(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_ptr`  
- Kendi nesne.  
+*_ptr*<br/>
+Kendi hedef nesne.  
   
- `_right`  
- Var olan `auto_handle`.  
+*_right*<br/>
+Mevcut bir `auto_handle`.  
   
 ## <a name="example"></a>Örnek  
   
@@ -119,7 +119,7 @@ done
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\auto_handle.h >  
+ **Üst bilgi dosyası** \<msclr\auto_handle.h >  
   
  **Namespace** msclr  
   

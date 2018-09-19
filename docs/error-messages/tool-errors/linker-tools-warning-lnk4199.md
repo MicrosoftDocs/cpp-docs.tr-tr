@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 902a3dfac03766e55a94c0ce801cb99ff6223fed
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4edd0ed57dc8a47069ccf7ecf001f58269de58de
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298544"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033277"
 ---
 # <a name="linker-tools-warning-lnk4199"></a>Bağlayıcı Araçları Uyarısı LNK4199
-Göz ardı /DELAYLOAD:dllname; DLL bulunan hiçbir içeri aktarmalar  
-  
- Bağlayıcı yoksayar `dllname` işlevleri hiçbirini gerekmediği için `dllname` dışa aktarır.
+
+/DELAYLOAD:dllname; yoksayıldı içeri aktarma dll bulunamadı
+
+Bağlayıcı yok sayar `dllname` işlevlerden herhangi birinin gerekmediği için `dllname` dışarı aktarır.

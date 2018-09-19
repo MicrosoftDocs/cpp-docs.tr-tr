@@ -16,25 +16,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be194095b6461eaedd9e814c6130801b431fef5d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7d1e477b04421f7e8920bba47b2eba4e73df34cb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602419"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028538"
 ---
 # <a name="header-files-c"></a>Üst bilgi dosyaları (C++)
 
-Değişkenler, İşlevler, sınıflar ve benzeri gibi program öğelerinin adlarını kullanılabilmesi için önce bildirilmelidir. Örneğin, yalnızca yazdığınız olamaz `x = 42` ilk bildirme 'x' olmadan. 
+Değişkenler, İşlevler, sınıflar ve benzeri gibi program öğelerinin adlarını kullanılabilmesi için önce bildirilmelidir. Örneğin, yalnızca yazdığınız olamaz `x = 42` ilk bildirme 'x' olmadan.
 
 ```cpp
 int x; // declaration
 x = 42; // use x
 ```
 
- Bildirimi mi derleyiciye olduğu bir **int**, **çift**, **işlevi**, **sınıfı** veya başka bir şey.  Ayrıca, her adı (doğrudan veya dolaylı olarak), kullanıldığı her .cpp dosyasında bildirilmelidir. Bir program derlediğinizde, her .cpp dosyası bir derleme birimine bağımsız olarak derlenir. Derleyici, diğer derleme biriminde bildirilen hangi adlar, hiçbir bilgiye sahiptir. Bir sınıf veya işlev ya da genel değişken tanımlarsanız, bu şeyi kullandığı her ek .cpp dosyası bildirimi sağlamalısınız anlamına gelir. Her şey bu bildirimi tüm dosyaların tam olarak aynı olmalıdır. Bağlayıcı, tüm derleme biriminden tek bir programa birleştirme girişiminde bulunduğunda hafif bir tutarsızlık hataları veya beklenmedik davranışlara neden olur.
+Bildirimi mi derleyiciye olduğu bir **int**, **çift**, **işlevi**, **sınıfı** veya başka bir şey.  Ayrıca, her adı (doğrudan veya dolaylı olarak), kullanıldığı her .cpp dosyasında bildirilmelidir. Bir program derlediğinizde, her .cpp dosyası bir derleme birimine bağımsız olarak derlenir. Derleyici, diğer derleme biriminde bildirilen hangi adlar, hiçbir bilgiye sahiptir. Bir sınıf veya işlev ya da genel değişken tanımlarsanız, bu şeyi kullandığı her ek .cpp dosyası bildirimi sağlamalısınız anlamına gelir. Her şey bu bildirimi tüm dosyaların tam olarak aynı olmalıdır. Bağlayıcı, tüm derleme biriminden tek bir programa birleştirme girişiminde bulunduğunda hafif bir tutarsızlık hataları veya beklenmedik davranışlara neden olur.
 
-Hataları olasılığını en aza indirmek için C++ kullanarak kuralı başlamıştır *üst bilgi dosyaları* bildirimleri içerecek. Bir üstbilgi dosyasında bildirimleri olun, ardından kullanmak #include yönergesi her .cpp dosyası içinde veya diğer üst bilgi dosyası bu bildirimi gerektirir. # Yönergesi ekler, .cpp dosyası derleme önce doğrudan üst bilgi dosyasının bir kopyasını include. 
+Hataları olasılığını en aza indirmek için C++ kullanarak kuralı başlamıştır *üst bilgi dosyaları* bildirimleri içerecek. Bir üstbilgi dosyasında bildirimleri olun, ardından kullanmak #include yönergesi her .cpp dosyası içinde veya diğer üst bilgi dosyası bu bildirimi gerektirir. # Yönergesi ekler, .cpp dosyası derleme önce doğrudan üst bilgi dosyasının bir kopyasını include.
 
 ## <a name="example"></a>Örnek
 
@@ -91,7 +91,7 @@ Derleyici .cpp dosyası her .obj dosyasına derleme tamamlandıktan sonra .obj d
 
 ## <a name="include-guards"></a>Cf içerir
 
-Genellikle, üst bilgi dosyalarınız bir *guard dahil* veya `#pragma once` bunlar birden çok kez tek .cpp dosyasına eklenmiyor emin olmak için yönergesi. 
+Genellikle, üst bilgi dosyalarınız bir *guard dahil* veya `#pragma once` bunlar birden çok kez tek .cpp dosyasına eklenmiyor emin olmak için yönergesi.
 
 ```cpp
 // my_class.h
@@ -115,20 +115,20 @@ namespace N
 Bir üstbilgi dosyası potansiyel olarak birden çok dosya tarafından eklenmiş olabilir çünkü bu, aynı ada sahip birden çok tanım üretebilir tanımları içeremez. Aşağıdaki izin verilmeyen veya çok hatalı bir uygulama olarak kabul edilir:
 
 - ad alanı veya genel kapsamlı yerleşik tür tanımları
-- Satır içi işlev tanımları 
+- Satır içi işlev tanımları
 - const olmayan değişken tanımları
 - Toplama tanımları
 - adlandırılmamış ad alanları
 - using yönergeleri
 
-Kullanım **kullanarak** yönergesi mutlaka hataya neden olmaz, ancak bu ad alanı kapsamında doğrudan veya dolaylı olarak söz konusu üst bilgisi içeren her .cpp dosyası getirir çünkü bir soruna neden olabilir. 
+Kullanım **kullanarak** yönergesi mutlaka hataya neden olmaz, ancak bu ad alanı kapsamında doğrudan veya dolaylı olarak söz konusu üst bilgisi içeren her .cpp dosyası getirir çünkü bir soruna neden olabilir.
 
 ## <a name="sample-header-file"></a>Örnek üst bilgi dosyası
 
 Aşağıdaki örnek, çeşitli üstbilgi dosyasında verilen tanımları ve bildirimleri gösterir:
 
 ```cpp
-#pragma once 
+#pragma once
 #include <vector> // #include directive
 #include <string>
 
@@ -157,7 +157,7 @@ namespace N  // namespace declaration
     void print_to_log();
 #endif
 
-    class my_class   // regular class definition, 
+    class my_class   // regular class definition,
     {                // but no non-inline function definitions
 
         friend class other_class;

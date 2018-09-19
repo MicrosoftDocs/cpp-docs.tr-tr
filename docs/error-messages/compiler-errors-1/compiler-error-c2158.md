@@ -16,35 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b1a7151b58d02b582bf0c73fb4bb185f2b3c0ba
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e853e5915756b71b96e50374224b003eca412d99
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171161"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034908"
 ---
 # <a name="compiler-error-c2158"></a>Derleyici Hatası C2158
-'type': #pragma make_public yönergesi yalnızca yerel şablon olmayan türleri şu anda desteklenmiyor  
-  
- [Make_public](../../preprocessor/make-public.md) pragma yalnızca yerel, şablon olmayan türü için uygulanabilir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2158 oluşturur.  
-  
-```  
-// C2158.cpp  
-// compile with: /clr /c  
-ref class A {};  
-#pragma make_public(A)   // C2158  
-  
-template< typename T >  
-class B {};  
-#pragma make_public(B)   // C2158  
-#pragma make_public(B<int>)   // C2158  
-  
-void C () {}  
-#pragma make_public(C)   // C2158  
-  
-class D {};  
-#pragma make_public(D)   // OK  
+
+'type': #pragma make_public yönergesi şu anda yalnızca yerel şablon olmayan türler desteklenmiyor
+
+[Make_public](../../preprocessor/make-public.md) pragma yalnızca yerel, şablon olmayan bir türe uygulanabilir.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2158 oluşturur.
+
+```
+// C2158.cpp
+// compile with: /clr /c
+ref class A {};
+#pragma make_public(A)   // C2158
+
+template< typename T >
+class B {};
+#pragma make_public(B)   // C2158
+#pragma make_public(B<int>)   // C2158
+
+void C () {}
+#pragma make_public(C)   // C2158
+
+class D {};
+#pragma make_public(D)   // OK
 ```

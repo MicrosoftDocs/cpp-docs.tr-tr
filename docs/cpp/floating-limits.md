@@ -19,18 +19,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85a31aea113514651fc3e81ac147b5ea2974920c
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 2ea52c91391800b25ab9a71d977300dd1705fb51
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39604300"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025535"
 ---
 # <a name="floating-limits"></a>Kayan Sınırları
 
 **Microsoft'a özgü**
 
-Aşağıdaki tabloda, kayan nokta sabitleri değerlerini sınırlar listelenmektedir. Bu sınırlar da standart üstbilgi dosyasında tanımlanan \<float.h >.  
+Aşağıdaki tabloda, kayan nokta sabitleri değerlerini sınırlar listelenmektedir. Bu sınırlar da standart üstbilgi dosyasında tanımlanan \<float.h >.
 
 ## <a name="limits-on-floating-point-constants"></a>Kayan Nokta Sabitleri Sınırlamaları
 
@@ -57,4 +57,4 @@ Aşağıdaki tabloda, kayan nokta sabitleri değerlerini sınırlar listelenmekt
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Tamsayı Sınırları](../cpp/integer-limits.md)  
+[Tamsayı Sınırları](../cpp/integer-limits.md)

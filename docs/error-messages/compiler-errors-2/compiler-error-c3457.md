@@ -16,23 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99621cfd4f1827763be8ec84d82871290a04652b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 794c3deb042c383f3802ce32f3f7c4580f6061a6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249473"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021505"
 ---
 # <a name="compiler-error-c3457"></a>Derleyici Hatası C3457
-'öznitelik': öznitelik adı olmayan bağımsız değişkenler desteklemiyor  
-  
- Kaynak ek açıklama özniteliklerini CLR özel öznitelik veya derleyici öznitelikleri farklı olarak, yalnızca adlandırılmış bağımsız değişkenler destekler.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3457 oluşturur.  
-  
-```  
-#include "SourceAnnotations.h"  
-[vc_attributes::Post( 1 )] int f();   // C3457  
-[vc_attributes::Post( Valid=vc_attributes::Yes )] int f2();   // OK  
+
+'attribute': öznitelik adsız bağımsız değişkenleri desteklemiyor
+
+CLR özel öznitelik veya derleyici öznitelikleri farklı kaynak ek açıklama öznitelikleri yalnızca adlandırılmış bağımsız değişkenler de destekler.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3457 oluşturur.
+
+```
+#include "SourceAnnotations.h"
+[vc_attributes::Post( 1 )] int f();   // C3457
+[vc_attributes::Post( Valid=vc_attributes::Yes )] int f2();   // OK
 ```

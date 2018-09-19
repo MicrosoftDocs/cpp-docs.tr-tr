@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16d13dcbc6d15efd7cf3a7ea0a310de4ab7b0c93
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9daaffc4ddfa9a869c2e60e2c05dc2b7e296d94b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302652"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031872"
 ---
 # <a name="linker-tools-warning-lnk4102"></a>Bağlayıcı Araçları Uyarısı LNK4102
-yok Edicisi 'name'; silme dışarı aktarma Görüntü düzgün çalışmayabilir  
-  
- Program silme yıkıcı aktarmaya çalıştı. Bir işlem kendisine ait olmayan belleği boşaltmak, sonuçta elde edilen delete DLL sınırından ortaya çıkabilir. Belirtilen simge .def dosyasında listelenmeyen ve simge bağımsız değişken olarak listelenmediğinden emin olun **/İÇERİ** veya **/dışarı aktarma** bağlayıcı komut satırı seçeneği.  
-  
- C çalışma zamanı kitaplığı yeniden bu iletiyi yoksayabilirsiniz.
+
+silme yıkıcısı 'name';'ın dışarı aktarma Görüntü düzgün çalışmayabilir
+
+Program silme yıkıcısı aktarmaya çalıştı. Bir işlem ait olmayan belleği boşaltabilir, sonuçta elde edilen silme DLL sınırında ortaya çıkabilir. Belirtilen simge, .def dosyasında listelenmeyen ve sembol bağımsız değişken olarak listelenmediğinden emin olun **/İÇE** veya **/dışarı aktarma** bağlayıcı komut satırı seçeneği.
+
+C çalışma zamanı kitaplığı yeniden, bu iletiyi yoksayabilirsiniz.

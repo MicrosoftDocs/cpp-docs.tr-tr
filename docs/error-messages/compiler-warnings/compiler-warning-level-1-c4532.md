@@ -16,50 +16,51 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e37d36f565cc63c7cef9954a78e14ed60d676996
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 717af9626866fb20e92342fe90f4dde2b5030774
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33285866"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025483"
 ---
 # <a name="compiler-warning-level-1-c4532"></a>Derleyici Uyarısı (düzey 1) C4532
-'Devam': atlama __finally/finally bloğu dışında davranış sonlandırma işleme sırasında tanımlanmamış  
-  
- Derleyici şu anahtar sözcüklerden biri karşılaştı:  
-  
--   [continue](../../cpp/continue-statement-cpp.md)  
-  
--   [break](../../cpp/break-statement-cpp.md)  
-  
--   [goto](../../cpp/goto-statement-cpp.md)  
-  
- dışında bir atlama neden bir [__finally](../../cpp/try-finally-statement.md) veya [son](../../dotnet/finally.md) anormal sonlandırma sırasında bloğu.  
-  
- Bir özel durum oluşursa ve yığın sonlandırma işleyicileri yürütülmesi sırasında sapmasına sırada ( `__finally` veya finally blokları), ve işyeri dışında kodunuzu atlar bir `__finally` önce engelle `__finally` davranışı blok sona erdiğinde tanımlanmadı. Özel durum düzgün işlenmemiş şekilde denetim unwinding kodu döndürmeyebilir.  
-  
- İşyeri dışında atlamanız gerekir, bir **__finally** engellemek, anormal sonlandırma için önce kontrol edin.  
-  
- Aşağıdaki örnek C4532 oluşturur; Yalnızca açıklama uyarıları çözümlemek için atlama deyimleri çıkışı.  
-  
-```  
-// C4532.cpp  
-// compile with: /W1  
-// C4532 expected  
-int main() {  
-   int i;  
-   for (i = 0; i < 10; i++) {  
-      __try {  
-      } __finally {  
-         // Delete the following line to resolve.  
-         continue;  
-      }  
-  
-      __try {  
-      } __finally {  
-         // Delete the following line to resolve.  
-         break;  
-      }  
-   }  
-}  
+
+'continue': __finally/finally bloğunun dışına atlama sonlandırma işleme sırasında davranışı tanımsız
+
+Derleyici, aşağıdaki anahtar sözcükler birini karşılaştı:
+
+- [continue](../../cpp/continue-statement-cpp.md)
+
+- [break](../../cpp/break-statement-cpp.md)
+
+- [goto](../../cpp/goto-statement-cpp.md)
+
+dışında bir atlama neden bir [__finally](../../cpp/try-finally-statement.md) veya [son](../../dotnet/finally.md) olağan dışı sonlandırma sırasında blok.
+
+Bir özel durum oluşursa ve yığın sonlandırma işleyicileri yürütülürken sapmasına sırada ( `__finally` veya finally bloklarında), ve kod dışı atlar bir `__finally` önce block `__finally` blok uç, davranış tanımlanmamıştır. Özel durumu düzgün bir şekilde işlenmemiş için denetimi geriye doğru izleme kodu döndürmeyebilir.
+
+/ Atlama, bir **__finally** engelleme, olağan dışı sonlandırma için ilk olarak denetleyin.
+
+Aşağıdaki örnek, C4532 oluşturur; Yalnızca açıklama uyarıları gidermek için atlama deyimleri yerleştirin.
+
+```
+// C4532.cpp
+// compile with: /W1
+// C4532 expected
+int main() {
+   int i;
+   for (i = 0; i < 10; i++) {
+      __try {
+      } __finally {
+         // Delete the following line to resolve.
+         continue;
+      }
+
+      __try {
+      } __finally {
+         // Delete the following line to resolve.
+         break;
+      }
+   }
+}
 ```

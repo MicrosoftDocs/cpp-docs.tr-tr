@@ -20,19 +20,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4fb5daa988614e7e9cb058fce183c6af5b50dd30
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 40b88cd7db95a05edd6174701c04724a6f245223
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33087822"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018723"
 ---
 # <a name="access-to-odbc-and-sql"></a>ODBC'ye ve SQL'e Erişim
-Microsoft Foundation Class Kitaplığı birçok Windows API çağrıları yalıtır ve hala doğrudan herhangi bir Windows API işlev çağrısı olanak tanır. Veritabanı sınıfları ODBC API ile aynı esneklik sağlar. Veritabanı sınıfları ODBC karmaşıklığını çoğunu sizden korurken, ODBC API işlevlerini doğrudan yerden çağırabilirsiniz programınızdaki.  
+
+Microsoft Foundation Class Kitaplığı çok sayıda Windows API çağrıları kapsüller ve yine de herhangi bir Windows API işlevini doğrudan çağrı olanak tanır. Veritabanı sınıfları, ODBC API onaylamaz aynı esnekliğini sunar. Veritabanı sınıfları, ODBC karmaşıklığını çoğunu korurken, ODBC API işlevlerini doğrudan yerden çağırabilirsiniz programınızdaki.  
   
- Benzer şekilde, veritabanı sınıfları, ile çalışmak zorunda kalmaktan kalkanı [SQL](../../data/odbc/sql.md), ancak isterseniz, SQL'i doğrudan kullanabilirsiniz. Özel bir SQL deyimi (veya varsayılan deyimini ayarı bölümlerini) geçirerek kayıt kümesi nesneleri özelleştirebilirsiniz kayıt açtığınızda. Kullanarak doğrudan SQL çağrıları de yapabilirsiniz [ExecuteSQL](../../mfc/reference/cdatabase-class.md#executesql) sınıfının üye işlevini [CDatabase](../../mfc/reference/cdatabase-class.md).  
+Benzer şekilde, veritabanı sınıfları, ile çalışmak zorunda kalmaktan kalkanı [SQL](../../data/odbc/sql.md), ancak isterseniz SQL doğrudan kullanabilirsiniz. Kayıt kümesi nesneleri özel bir SQL deyimi (veya varsayılan deyim ayarı bölümlerini) geçirerek özelleştirebileceğiniz kayıt kümesini açtığınızda. Ayrıca kullanarak doğrudan SQL çağrıları yapabileceğiniz [ExecuteSQL](../../mfc/reference/cdatabase-class.md#executesql) sınıfının üye işlevinde [CDatabase](../../mfc/reference/cdatabase-class.md).  
   
- Daha fazla bilgi için bkz: [ODBC: çağırma ODBC API işlevlerini doğrudan](../../data/odbc/odbc-calling-odbc-api-functions-directly.md) ve [SQL: yapmadan doğrudan SQL çağrıları (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md).  
+Daha fazla bilgi için [ODBC: çağırma ODBC API işlevlerini doğrudan](../../data/odbc/odbc-calling-odbc-api-functions-directly.md) ve [SQL: yapmadan doğrudan SQL çağrıları (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ODBC ve MFC](../../data/odbc/odbc-and-mfc.md)
+
+[ODBC ve MFC](../../data/odbc/odbc-and-mfc.md)

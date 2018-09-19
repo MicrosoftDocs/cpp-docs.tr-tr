@@ -22,44 +22,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c016664bf107b9531553ef372dfc5dc28650ef7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6ae2e7d669edda1ab3069cf3cdb30b79482047e5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389374"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026653"
 ---
 # <a name="file-permission-constants"></a>Dosya İzin Sabitleri
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-#include <sys/stat.h>  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sabitleri biri gereklidir `_O_CREAT` (`_open`, `_sopen`) belirtilir.  
-  
- `pmode` Bağımsız değişkeni aşağıdaki gibi dosyanın izin ayarlarını belirtir.  
-  
-|Sabit|Açıklama|  
-|--------------|-------------|  
-|`_S_IREAD`|Okuma izin verilir|  
-|`_S_IWRITE`|İzin verilen yazma|  
-|`_S_IREAD` &#124; `_S_IWRITE`|Okuma ve yazma izin verilir|  
-  
- Olarak kullanıldığında `pmode` bağımsız değişkeni için `_umask`, Bildirim sabiti izni ayarı gibi ayarlar.  
-  
-|Sabit|Açıklama|  
-|--------------|-------------|  
-|`_S_IREAD`|İzin yazma (dosya salt okunur)|  
-|`_S_IWRITE`|İzin okuma (dosya salt yazılır)|  
-|`_S_IREAD` &#124; `_S_IWRITE`|Ne okuma ne de izin yazma|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [_kurulum Aç, _wopen](../c-runtime-library/reference/open-wopen.md)   
- [_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)   
- [_umask](../c-runtime-library/reference/umask.md)   
- [Standart Türler](../c-runtime-library/standard-types.md)   
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+
+#include <sys/stat.h>
+
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sabitlerden birine gereklidir `_O_CREAT` (`_open`, `_sopen`) belirtilir.
+
+`pmode` Bağımsız değişkeni aşağıdaki gibi dosyanın izin ayarlarını belirtir.
+
+|Sabit|Açıklama|
+|--------------|-------------|
+|`_S_IREAD`|Okuma izin verilir|
+|`_S_IWRITE`|İzin verilen yazma|
+|`_S_IREAD` &#124; `_S_IWRITE`|Okuma ve yazma izin verilir|
+
+Olarak kullanıldığında `pmode` için bağımsız değişken `_umask`, Bildirim sabiti izin ayarının gibi ayarlar.
+
+|Sabit|Açıklama|
+|--------------|-------------|
+|`_S_IREAD`|Yazma izin verilmez (salt okunur dosya)|
+|`_S_IWRITE`|Okuma izin verilmez (dosya salt yazılır)|
+|`_S_IREAD` &#124; `_S_IWRITE`|Okuma ne yazmaya izin verilir|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[_open, _wopen](../c-runtime-library/reference/open-wopen.md)<br/>
+[_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)<br/>
+[_umask](../c-runtime-library/reference/umask.md)<br/>
+[Standart Türler](../c-runtime-library/standard-types.md)<br/>
+[Global Sabitler](../c-runtime-library/global-constants.md)

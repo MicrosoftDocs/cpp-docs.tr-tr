@@ -1,5 +1,5 @@
 ---
-title: Başka bir tablo satır için bir başvuru içerirken sütunu güncelleştirme | Microsoft Docs
+title: Başka bir tablo satır için başvuru içerirken sütunu güncelleştirme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 17d260f522432a78729c9998c518398dfa41275a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6d2d3509b51d083290339514083a541ef9a86b64
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33102891"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030670"
 ---
 # <a name="updating-a-column-when-another-table-contains-a-reference-to-the-row"></a>Başka Bir Tablo Satır için Başvuru İçerirken Sütunu Güncelleştirme
-Bazı sağlayıcılar hangi sütunların satır değişikliği tespit edebilirsiniz, ancak birçok sağlayıcısı olamaz. Sonuç olarak, güncelleştirmeye çalıştığınız satıra bir başvuru olduğunda bir sütunu güncelleştirme hataya neden olabilir. Bu sorunu çözmek için değiştirmek istediğiniz sütunları içeren ayrı bir erişimci oluşturun. Bu erişimcisi sayısı geçirmek `SetData`.  
+
+Bazı sağlayıcılar hangi sütunların değiştiğini tespit edebilir, ancak birçok sağlayıcı bunu yapamaz. Sonuç olarak, güncelleştirmeye çalıştığınız satıra bir başvuru olduğunda bir sütunu güncelleştirme hataya neden. Bu sorunu çözmek için yalnızca değiştirmek istediğiniz sütunları içeren ayrı bir erişimci oluşturun. Geçirmek için bir erişimci sayısını `SetData`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Erişimcileri Kullanma](../../data/oledb/using-accessors.md)
+
+[Erişimcileri Kullanma](../../data/oledb/using-accessors.md)

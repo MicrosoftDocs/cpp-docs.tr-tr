@@ -12,37 +12,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72c29bd6d9ffdb4eabb036c61d85a6572cef8fe2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7c9a69e0d899e1a79c1d91b7c18c0eacaf66d32a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293942"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027303"
 ---
 # <a name="compiler-warning-level-4-c4435"></a>Derleyici Uyarısı (düzey 4) C4435
-'class1' : /vd2 altındaki nesne düzeni 'class2' sanal tabanı nedeniyle değişecek  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.  
-  
- / Vd1 seçeneği altında varsayılan derleme, türetilmiş sınıf sahip olmayan bir `vtordisp` belirtilen sanal temel alan.  Varsa /vd2 veya `#pragma vtordisp(2)` etkin olduğu bir `vtordisp` alan nesne düzenini değiştirme mevcut olacaktır.  Etkileşen modülleri farklı derlenmiş ise bu ikili uyumluluğu sorunlarına yol açabilir `vtordisp` ayarlar.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4435 oluşturur.  
-  
-```cpp  
-// C4435.cpp  
-// compile with: /c /W4  
-#pragma warning(default : 4435)  
-class A  
-{  
-public:  
-    virtual ~A() {}  
-};  
-  
-class B : public virtual A  // C4435  
-{};  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [vtordisp](../../preprocessor/vtordisp.md)   
- [/vd (Yapı Yer Değiştirmelerini Devre Dışı Bırak)](../../build/reference/vd-disable-construction-displacements.md)
+
+'class1' : /vd2 altındaki nesne düzeni 'class2' sanal tabanı nedeniyle değişecek
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+/ Vd1 seçeneği altında varsayılan derliyorsanız, türetilmiş sınıf olmayan bir `vtordisp` için belirtilen sanal temel alan.  Varsa/vd2 veya `#pragma vtordisp(2)` kıyaslandığında geçerli bir `vtordisp` alan nesne düzeni değiştirme mevcut olacaktır.  Etkileşim kuran modülleri ile farklı derlenir, bu ikili uyumluluğu sorunlarına yol açabilecek `vtordisp` ayarları.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4435 oluşturur.
+
+```cpp
+// C4435.cpp
+// compile with: /c /W4
+#pragma warning(default : 4435)
+class A
+{
+public:
+    virtual ~A() {}
+};
+
+class B : public virtual A  // C4435
+{};
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[vtordisp](../../preprocessor/vtordisp.md)<br/>
+[/vd (Yapı Yer Değiştirmelerini Devre Dışı Bırak)](../../build/reference/vd-disable-construction-displacements.md)

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d86adf69aef269e1bde04c0962ca383754fe803e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: dfb5ec444be55d7b595660f7777ae54e19143fd4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764136"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021622"
 ---
 # <a name="adding-an-atl-property-page"></a>ATL özellik sayfası ekleme
 
@@ -44,7 +44,7 @@ Bir denetim için bir özellik sayfası oluşturduktan sonra sağlamanız gereke
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Özellik sayfaları](../../atl/atl-com-property-pages.md)   
-[ATL COM nesnelerinin temelleri](../../atl/fundamentals-of-atl-com-objects.md)   
+[Özellik Sayfaları](../../atl/atl-com-property-pages.md)<br/>
+[ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Örnek: Özellik Sayfası Uygulama](../../atl/example-implementing-a-property-page.md)
 

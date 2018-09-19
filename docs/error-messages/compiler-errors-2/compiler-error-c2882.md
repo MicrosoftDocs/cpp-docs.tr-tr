@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2885d00f31dbb9e057317e12b43b838579b33aa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 59110c6c196bfed2a268484af8a2de1e15552041
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33242199"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025795"
 ---
 # <a name="compiler-error-c2882"></a>Derleyici Hatası C2882
-'name': ifade ad alanı tanımlayıcıda geçersiz kullanımı  
-  
- Bir ifadede bir ad alanı adını kullanmak çalışıldı.  
-  
- Aşağıdaki örnek C2882 oluşturur:  
-  
-```  
-// C2882.cpp  
-// compile with: /c  
-namespace A {  
-   int k;  
-}  
-  
-int i = A;   // C2882, can't assign A to i  
+
+'name': ad alanı tanımlayıcısının ifade içinde geçersiz kullanımı
+
+Bir ifadede bir ad alanı adını kullanmak denedi.
+
+Aşağıdaki örnek, C2882 oluşturur:
+
+```
+// C2882.cpp
+// compile with: /c
+namespace A {
+   int k;
+}
+
+int i = A;   // C2882, can't assign A to i
 ```

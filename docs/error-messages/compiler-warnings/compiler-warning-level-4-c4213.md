@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 407fac636ea33c8cbd31104460442e5ac2aaec65
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 59bb2d8b2c25516558c4810d190f0bec9b98c086
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302912"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025626"
 ---
 # <a name="compiler-warning-level-4-c4213"></a>Derleyici Uyarısı (düzey 4) C4213
-kullanılan standart olmayan uzantısı: l-değeri atama  
-  
- Varsayılan Microsoft Uzantıları (/Ze), Atama ifadesinin sol tarafta atamaları kullanabilirsiniz.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4213.c  
-// compile with: /W4  
-void *a;  
-void f()  
-{  
-   int   i[3];  
-   a = &i;  
-   *(( int * )a )++ = 3;  // C4213  
-}  
-  
-int main()  
-{  
-}  
-```  
-  
- Tür atamaları ANSI Uyumluluğu altında geçersiz ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
+
+Standart olmayan uzantı kullanıldı: lvalue üzerinden dönüştürme
+
+Varsayılan Microsoft Uzantıları (/Ze) ile atama deyiminin sol tarafında yayınları kullanabilirsiniz.
+
+## <a name="example"></a>Örnek
+
+```
+// C4213.c
+// compile with: /W4
+void *a;
+void f()
+{
+   int   i[3];
+   a = &i;
+   *(( int * )a )++ = 3;  // C4213
+}
+
+int main()
+{
+}
+```
+
+Tür atamaları, ANSI Uyumluluğu altında geçersizdir ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).

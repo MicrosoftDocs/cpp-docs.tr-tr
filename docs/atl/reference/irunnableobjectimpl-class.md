@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3526425bac6591b9330e0915d717ba5b47ee7b3a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1ad1efa3badf310a78b69d3abba5b9874e01daf7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755105"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020972"
 ---
 # <a name="irunnableobjectimpl-class"></a>Irunnableobjectımpl sınıfı
 
@@ -43,13 +43,13 @@ Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IRun
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<class T>  
+template<class T>
 class IRunnableObjectImpl
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `IRunnableObjectImpl`.
 
 ## <a name="members"></a>Üyeler
@@ -162,5 +162,5 @@ Bkz: [IRunnableObject::SetContainedObject](/windows/desktop/api/objidl/nf-objidl
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)   
+[CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

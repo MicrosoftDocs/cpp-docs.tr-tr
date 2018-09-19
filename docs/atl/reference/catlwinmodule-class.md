@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e52f21eea272f34bdc6594dcdb8f57c8538ac50
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b516b3a2f1089408688a7db4d131b4569b733755
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761292"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017371"
 ---
 # <a name="catlwinmodule-class"></a>CAtlWinModule sınıfı
 
@@ -80,10 +80,10 @@ void AddCreateWndData(_AtlCreateWndData* pData, void* pObject);
 
 ### <a name="parameters"></a>Parametreler
 
-*pData*  
+*pData*<br/>
 İşaretçi `_AtlCreateWndData` yapısı başlatılamadı ve geçerli modülüne eklendi.
 
-*pObject*  
+*pObject*<br/>
 Bir nesnenin işaretçisine **bu** işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -128,6 +128,6 @@ Bir işaretçi döndürür `_AtlCreateWndData` yapısı ile daha önce eklediği
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Modül sınıfları](../../atl/atl-module-classes.md)

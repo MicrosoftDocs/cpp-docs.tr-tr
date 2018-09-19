@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f03d35e1a3756979d8936647255e2b65afef56d9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3a6f09d8f3396381f34a0fbe3c7150b5948cee01
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33289899"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46015983"
 ---
 # <a name="compiler-warning-level-3-c4290"></a>Derleyici Uyarısı (Düzey 3) C4290
-C++ özel durum belirtimi bir işlevi belirtmek üzere dışında göz ardı __declspec(nothrow) değil  
-  
- Bir işlev Visual C++ kabul eder, ancak uygulamayan özel durum belirtimi kullanılarak bildirildi. Derleme sırasında yok sayılır belirtimleri derlenmesi gerekebilir özel durumla kod ve bağlı olarak gelecekte özel durum belirtimleri destekleyen sürümler yeniden kullanılabilir.  
-  
- Daha fazla bilgi için bkz: [özel durum belirtimleri (throw)](../../cpp/exception-specifications-throw-cpp.md) .  
-  
- Bu uyarı kullanarak önleyebilirsiniz [uyarı](../../preprocessor/warning.md) pragma:  
-  
-```  
-#pragma warning( disable : 4290 )  
-```  
-  
- Aşağıdaki kod örneği C4290 oluşturur:  
-  
-```  
-// C4290.cpp  
-// compile with: /EHs /W3 /c  
-void f1(void) throw(int) {}   // C4290  
-  
-// OK  
-void f2(void) throw() {}  
-void f3(void) throw(...) {}  
+
+C++ özel durum belirtimi bir işlevin dışında göz ardı __declspec(nothrow) olmadığını
+
+Visual C++ kabul eder, ancak uygulamayan özel durum belirtimi kullanılarak bildirilen bir işlev. Kod özel durum ile derleme sırasında yok sayılır belirtimleri derlenmesi gerekebilir ve bağlı olarak gelecekte özel durum belirtimleri destekleyen sürümler yeniden kullanılabilir.
+
+Daha fazla bilgi için [özel durum belirtimleri (throw)](../../cpp/exception-specifications-throw-cpp.md) .
+
+Bu uyarı kullanarak kaçınabilirsiniz [uyarı](../../preprocessor/warning.md) pragma:
+
+```
+#pragma warning( disable : 4290 )
+```
+
+Aşağıdaki kod örneği C4290 oluşturur:
+
+```
+// C4290.cpp
+// compile with: /EHs /W3 /c
+void f1(void) throw(int) {}   // C4290
+
+// OK
+void f2(void) throw() {}
+void f3(void) throw(...) {}
 ```

@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2fb86efbdc70342861a87a233ab687f7564cb48b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: df0a3b6f30733413a0f27c0b8daa07394bb04b07
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300065"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023117"
 ---
 # <a name="linker-tools-warning-lnk4014"></a>Bağlayıcı Araçları Uyarısı LNK4014
-Üye nesnesi "objectname" bulunamıyor  
-  
- LIB bulamadı `objectname` Kitaplığı'nda.  
-  
- **/Kaldır** ve **/EXTRACT** seçenekleri silinmiş veya bir dosyaya kopyalanır üye nesnenin tam adı gerektirir. Tam ad özgün nesne dosyasının yolunu içerir. Üye nesneleri kitaplığında tam adlarını görmek için DUMPBIN kullanın [/ARCHIVEMEMBERS](../../build/reference/archivemembers.md) veya LIB [/LIST](../../build/reference/managing-a-library.md).
+
+"objectname" üye nesnesi bulunamıyor
+
+LIB bulamadı `objectname` Kitaplığı'nda.
+
+**/REMOVE** ve **/EXTRACT** seçenekler silinmiş ya da bir dosyaya kopyalanır olan üye nesne tam adı gerektirir. Tam adı, özgün nesne dosyasının yolunu içerir. Üye nesneleri bir kitaplıkta tam adlarını görmek için DUMPBIN kullanma [/ARCHIVEMEMBERS](../../build/reference/archivemembers.md) veya LIB [/LIST](../../build/reference/managing-a-library.md).

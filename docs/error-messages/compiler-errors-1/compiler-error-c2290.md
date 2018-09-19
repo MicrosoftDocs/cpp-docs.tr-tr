@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb3ce81832f4366add1c8da96623690cd40b3dd9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c96216782994e6491437df82c8bb56d74354622b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169926"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030546"
 ---
 # <a name="compiler-error-c2290"></a>Derleyici Hatası C2290
-C++ asm sözdizimi yoksayıldı. __Asm kullanın.  
-  
- `asm` Sözdizimi, gelecekte kullanılmak üzere ayrılmıştır.
+
+C++ asm sözdizimi yoksayıldı. __Asm kullanın.
+
+`asm` Sözdizimi gelecekte kullanılmak üzere ayrılmıştır.

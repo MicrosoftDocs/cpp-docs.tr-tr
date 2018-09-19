@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 121ec73658527ff03e3cbc4871db78a5d00b50d1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5549cdd40b8287f75f80b0e633ff053a23cdecde
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226437"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034453"
 ---
 # <a name="fatal-error-c1018"></a>Önemli hata C1018
-Beklenmeyen #elif  
-  
- `#elif` Yönergesi görünür dışında bir `#if`, `#ifdef`, veya `#ifndef` oluşturun. Kullanım `#elif` yalnızca bu yapıları birini içinde.  
-  
- Aşağıdaki örnek C1018 oluşturur:  
-  
-```  
-// C1018.cpp  
-#elif      // C1018  
-#endif  
-  
-int main() {}  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C1018b.cpp  
-#if 1  
-#elif  
-#endif  
-  
-int main() {}  
+
+Beklenmeyen #elif
+
+`#elif` Yönergesi görünür dışında bir `#if`, `#ifdef`, veya `#ifndef` oluşturun. Kullanım `#elif` yalnızca bu yapıları biri içinde.
+
+Aşağıdaki örnek, C1018 oluşturur:
+
+```
+// C1018.cpp
+#elif      // C1018
+#endif
+
+int main() {}
+```
+
+Olası çözüm:
+
+```
+// C1018b.cpp
+#if 1
+#elif
+#endif
+
+int main() {}
 ```

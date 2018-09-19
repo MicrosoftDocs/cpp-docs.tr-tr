@@ -16,31 +16,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c592607732eb5558ce74edb7b71adbc023b2ae52
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: f63d81fa8550bd9cbb7c051803c0d1e891cefe15
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39402289"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031065"
 ---
 # <a name="comerrorguid"></a>_com_error::GUID
-**Microsoft'a özgü**  
-  
- Çağrıları `IErrorInfo::GetGUID` işlevi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-GUID GUID( ) const throw( );  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Sonucunu döndürür `IErrorInfo::GetGUID` için `IErrorInfo` nesne kaydedilmiş içinde `_com_error` nesne. Hayır ise `IErrorInfo` nesnesi kaydedilmezse döndürür `GUID_NULL`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Çağrılırken `IErrorInfo::GetGUID` yöntemi göz ardı edilir.  
-  
- **END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [_com_error Sınıfı](../cpp/com-error-class.md)
+
+**Microsoft'a özgü**
+
+Çağrıları `IErrorInfo::GetGUID` işlevi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+GUID GUID( ) const throw( );
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Sonucunu döndürür `IErrorInfo::GetGUID` için `IErrorInfo` nesne kaydedilmiş içinde `_com_error` nesne. Hayır ise `IErrorInfo` nesnesi kaydedilmezse döndürür `GUID_NULL`.
+
+## <a name="remarks"></a>Açıklamalar
+
+Çağrılırken `IErrorInfo::GetGUID` yöntemi göz ardı edilir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[_com_error Sınıfı](../cpp/com-error-class.md)

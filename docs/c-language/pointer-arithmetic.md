@@ -15,19 +15,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0cbaa5d71b0867ff355e194ad6c82c120148d76
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fd80fd88a5924cbedf9a07ee700f16c65b66672f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32385292"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020153"
 ---
 # <a name="pointer-arithmetic"></a>İşaretçi Aritmetiği
-Bir işaretçi ve tamsayı içeren toplama işlemleri yalnızca bir dizi üye işaretçisi işleneni adresleri ve tamsayı değeri aynı dizinin sınırları içinde bir uzaklık üretir anlamlı sonuçlar verin. Tamsayı değeri bir adres uzaklık dönüştürüldüğünde Derleyici yalnızca bellek konumlarını aynı boyutta özgün adresi ve adres artı uzaklık arasında kalan varsayar.  
-  
- Bu varsayım dizi üyeleri için geçerlidir. Tanımı gereği, bir dizi aynı türde değerler dizisidir; öğeleri bitişik bellek konumlarda bulunur. Ancak, depolama dizisi öğeleri dışındaki tüm türleri için aynı türde tanımlayıcıları doldurulması için kesin değildir. Diğer bir deyişle, boşlukları aynı türde bile konumlar bellek konumlar arasında yer alabilir. Bu nedenle, ekleme ya da tüm değerleri ancak dizi öğeleri adreslerinden çıkarılmasıyla sonuçlarını tanımlanmamış.  
-  
- İki işaretçi değeri çıkarılır, benzer şekilde, yalnızca hiçbir boşlukları ile aynı türde değerler tarafından işlenen verilen adresleri arasında kalan dönüştürme varsayar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Ek İşleçleri](../c-language/c-additive-operators.md)
+
+Bir işaretçi ve tamsayı içeren eklenebilir işlemler, yalnızca işaretçi işlenen bir dizi üyesini giderir ve bir uzaklık aynı dizi sınırları içindeki tamsayı değerini üretir anlamlı sonuçlar verir. Tamsayı değeri adresi uzaklık dönüştürüldüğünde, derleyici bellek konumları aynı boyutta yalnızca özgün adresini ve adresini artı uzaklık arasında kalan varsayar.
+
+Bu varsayımı dizi üyeleri için geçerlidir. Tanımı gereği, dizi bir dizi değer aynı türde olması; öğeleri bitişik bellek konumlarda yer alır. Ancak, dizi öğelerinin dışında tüm türler için depolama tanımlayıcıları aynı türde tarafından doldurulacak garanti edilmez. Diğer bir deyişle, boşluklar bile konumları aynı tür bellek konumları arasında görünür. Bu nedenle, tüm değerleri ancak dizi öğelerine adreslerinden çıkararak veya ekleyerek, sonuçlar tanımsızdır.
+
+Benzer şekilde, iki işaretçi değerleri çıkartılır, dönüştürme yalnızca boşluk yok'ile aynı türde değerler tarafından işlenen verilen adresleri arasında kalan varsayar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Ek İşleçleri](../c-language/c-additive-operators.md)

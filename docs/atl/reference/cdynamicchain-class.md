@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6cb05f61d3cd90177fe5e44ce432430ba8f74dd5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: af215609ac9579a357539a0d2d0a85c78f6dbc13
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754819"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017969"
 ---
 # <a name="cdynamicchain-class"></a>CDynamicChain sınıfı
 
@@ -104,22 +104,22 @@ BOOL CallChain(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwChainID*  
+*dwChainID*<br/>
 [in] Zincirleme nesne ve onun ileti eşlemesi ile ilişkilendirilmiş benzersiz tanımlayıcısı.
 
-*hWnd*  
+*hWnd*<br/>
 [in] İletiyi alan pencereye tanıtıcısı.
 
-*uMsg*  
+*uMsg*<br/>
 [in] Pencereye gönderilen ileti.
 
-*wParam*  
+*wParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
-*lParam*  
+*lParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
-*lResult*  
+*lResult*<br/>
 [out] İleti işleme sonucu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -162,7 +162,7 @@ BOOL RemoveChainEntry(DWORD dwChainID);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwChainID*  
+*dwChainID*<br/>
 [in] Zincirleme nesne ve onun ileti eşlemesi ile ilişkilendirilmiş benzersiz tanımlayıcısı. İlk olarak bu değer yapılan bir çağrıyla tanımladığınız [SetChainEntry](#setchainentry).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -182,13 +182,13 @@ BOOL SetChainEntry(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwChainID*  
+*dwChainID*<br/>
 [in] Zincirleme nesne ve onun ileti eşlemesi ile ilişkilendirilmiş benzersiz tanımlayıcısı.
 
-*pObject*  
+*pObject*<br/>
 [in] İleti eşlemesi bildirme zincirleme nesnesine bir işaretçi. Bu nesne öğesinden türetilmelidir [CMessageMap](../../atl/reference/cmessagemap-class.md).
 
-*dwMsgMapID*  
+*dwMsgMapID*<br/>
 [in] İleti eşlemede zincirleme nesne tanımlayıcısı. Varsayılan değer ile bildirilen varsayılan ileti eşlemesi tanımlayan 0 ' dır [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map). Bir diğer ileti eşlemesi belirtmek için bildirilen [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), geçmesi `msgMapID`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -201,5 +201,5 @@ Varsa *dwChainID* değeri zaten koleksiyonda var., ileti eşlemesi ve ilişkili 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Cwindowımpl sınıfı](../../atl/reference/cwindowimpl-class.md)   
+[CWindowImpl Sınıfı](../../atl/reference/cwindowimpl-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

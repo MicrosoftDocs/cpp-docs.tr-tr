@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6563d5faf3a9f050deb3cb7831c1a908739c8532
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 43de917b2a6aff38602a6118e599c0d9df262a70
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291996"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033192"
 ---
 # <a name="compiler-warning-level-4-c4131"></a>Derleyici Uyarısı (düzey 4) C4131
-'function': eski Tarz bildirimcisi kullanır  
-  
- Belirtilen işlev bildirimi prototip biçiminde değil.  
-  
- Eski stil işlev bildirimleri prototip biçimine dönüştürülen.  
-  
- Aşağıdaki örnek, bir eski stil işlev bildirimi gösterir:  
-  
-```  
-// C4131.c  
-// compile with: /W4 /c  
-void addrec( name, id ) // C4131 expected  
-char *name;  
-int id;  
-{ }  
-```  
-  
- Aşağıdaki örnek, bir prototip form gösterir:  
-  
-```  
-void addrec( char *name, int id )  
-{ }  
+
+'function': eski stil bildirimci kullanıyor
+
+Belirtilen işlev bildirimi prototip biçiminde değil.
+
+Eski stil işlev bildirimleri prototip biçimine dönüştürülmelidir.
+
+Aşağıdaki örnek, eski stil işlev bildirimi gösterilmektedir:
+
+```
+// C4131.c
+// compile with: /W4 /c
+void addrec( name, id ) // C4131 expected
+char *name;
+int id;
+{ }
+```
+
+Aşağıdaki örnek, bir prototip form gösterir:
+
+```
+void addrec( char *name, int id )
+{ }
 ```

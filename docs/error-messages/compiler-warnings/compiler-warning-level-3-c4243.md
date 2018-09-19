@@ -16,39 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3e3f616e9eec1785f586b019b0faa752a578f0d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b407939b58d1025698f7c3d82bbe1921b33f90a5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290822"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025691"
 ---
 # <a name="compiler-warning-level-3-c4243"></a>Derleyici Uyarısı (Düzey 3) C4243
-'dönüştürme türü' dönüştürme 'type1' 'type2' var, ancak erişilemiyor  
-  
- Türetilmiş bir sınıf için bir işaretçi bir taban sınıfı için bir işaretçi dönüştürülür, ancak özel veya Korumalı Erişim ile temel sınıfı türetilmiş sınıf devralır.  
-  
- Aşağıdaki örnek C4243 oluşturur:  
-  
-```  
-// C4243.cpp  
-// compile with: /W3  
-// C4243 expected  
-struct B {  
-   int f() {  
-      return 0;  
-   };  
-};  
-  
-struct D : private B {};  
-struct E : public B {};  
-  
-int main() {  
-   // Delete the following 2 lines to resolve.  
-   int (D::* d)() = (int(D::*)()) &B::f;   
-   d;  
-  
-   int (E::* e)() = (int(E::*)()) &B::f; // OK  
-   e;  
-}  
+
+'dönüştürme türünü' dönüştürme 'type1' 'type2' var, ancak erişilebilir değil
+
+Bir taban sınıfı işaretçisini bir türetilmiş sınıf işaretçisine dönüştürülür, ancak türetilen sınıfın temel sınıf özel veya korumalı erişimle devralır.
+
+Aşağıdaki örnek, C4243 oluşturur:
+
+```
+// C4243.cpp
+// compile with: /W3
+// C4243 expected
+struct B {
+   int f() {
+      return 0;
+   };
+};
+
+struct D : private B {};
+struct E : public B {};
+
+int main() {
+   // Delete the following 2 lines to resolve.
+   int (D::* d)() = (int(D::*)()) &B::f;
+   d;
+
+   int (E::* e)() = (int(E::*)()) &B::f; // OK
+   e;
+}
 ```

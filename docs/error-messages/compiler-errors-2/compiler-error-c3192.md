@@ -16,36 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e014e9ad54963212ef580e14870138273e882a47
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 50b639335e0a8ce2f55bb327f3a6a475b1fb770e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250934"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031164"
 ---
 # <a name="compiler-error-c3192"></a>Derleyici Hatası C3192
-sözdizimi hatası: ' ^' öneki işleci değil (şunu mu demek istediniz ' *'?)  
-  
- Bir tanıtıcı başvuru operatör olarak kullanılamaz.  
-  
- Aşağıdaki örnek C3192 oluşturur:  
-  
-```  
-// C3192.cpp  
-// compile with: /clr  
-using namespace System;  
-  
-ref class MyClass {  
-public:  
-   MyClass () {}  
-   MyClass(MyClass%) {}  
-};  
-  
-int main() {  
-   MyClass ^ s = gcnew MyClass;   
-   MyClass b = ^s;   // C3192  
-  
-   // OK  
-   MyClass b2 = *s;  
-}  
+
+sözdizimi hatası: ' ^' bir önek işleç değil (şunu mu demek istediniz ' *'?)
+
+Bir tanıtıcı bir başvuru işleci kullanılamaz.
+
+Aşağıdaki örnek, C3192 oluşturur:
+
+```
+// C3192.cpp
+// compile with: /clr
+using namespace System;
+
+ref class MyClass {
+public:
+   MyClass () {}
+   MyClass(MyClass%) {}
+};
+
+int main() {
+   MyClass ^ s = gcnew MyClass;
+   MyClass b = ^s;   // C3192
+
+   // OK
+   MyClass b2 = *s;
+}
 ```

@@ -16,29 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ecc5f8634505dc8b63cb4cbdbbb9aa31973e7475
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6d2747b001cc81da4edde21f201cd34392c2dcba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33254556"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020898"
 ---
 # <a name="compiler-error-c2917"></a>Derleyici Hatası C2917
-'name': Geçersiz şablon parametresi  
-  
- Şablon parametresi değildi bir tanımlayıcı şablon parametre listesini içerir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2917 oluşturur.  
-  
-```  
-// C2917.cpp  
-// compile with: /c  
-template<class T> class Vector {  
-   void sort();  
-};  
-  
-template<class T*> void Vector<T>::sort() {}   // C2917  
-// try the following line instead  
-// template<class T> void Vector<T>::sort() {}  
+
+'name': Geçersiz şablon parametresi
+
+Bir şablon parametre listesi, bir şablon parametresi olmayan tanımlayıcı içeriyor.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2917 oluşturur.
+
+```
+// C2917.cpp
+// compile with: /c
+template<class T> class Vector {
+   void sort();
+};
+
+template<class T*> void Vector<T>::sort() {}   // C2917
+// try the following line instead
+// template<class T> void Vector<T>::sort() {}
 ```

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22b15185977dfdaa6c6cad154889e95f59ab27c4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 22276d0b3189f93f57f8337b22b5d6070cd3db0c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297956"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034479"
 ---
 # <a name="linker-tools-error-lnk1152"></a>Bağlayıcı Araçları Hatası LNK1152
-bir veya daha fazla ve simgeleri çözümlenemiyor.  
-  
- Bu hata, bir uyarı tarafından öncesinde [LNK4022](../../error-messages/tool-errors/linker-tools-warning-lnk4022.md) çözümlenemedi her ve sembol ve en az iki uyarıları tarafından [LNK4002](../../error-messages/tool-errors/linker-tools-warning-lnk4002.md) ve simge için bulunan yinelenen simgeler için.
+
+bir veya daha fazla tamamlanmamış sembol çözümlenemiyor
+
+Bu hata, bir uyarı tarafından öncesinde [LNK4022](../../error-messages/tool-errors/linker-tools-warning-lnk4022.md) çözümlenemedi her tamamlanmamış sembol ve en az iki uyarı [LNK4002](../../error-messages/tool-errors/linker-tools-warning-lnk4002.md) yinelenen simgelerinin ve simge için bulunamadı.

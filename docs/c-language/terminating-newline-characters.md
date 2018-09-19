@@ -12,17 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 835b59a16927e447cbe462add99baf0c1fa9a241
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fc13b4e8d7f70f107e78dbc8ab679b3fac3bc513
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32385116"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028837"
 ---
 # <a name="terminating-newline-characters"></a>Satırbaşı Karakterlerini Sonlandırma
-**ANSI 4.9.2** olup bir metin akış son satırının sonlandırma yeni satır karakteri gerektirir  
-  
- Akış işlevleri yeni bir satırı veya dosya sonunu bir satır sonlandırıcı karakter olarak kabul eder.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık İşlevleri](../c-language/library-functions.md)
+
+**ANSI 4.9.2** metin akışına son satırının bir sonlandırıcı yeni satır karakteri gerektirip
+
+Akış işlevleri yeni bir satırı veya dosya sonunu bir satır sonlandırıcı karakter olarak kabul eder.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kitaplık İşlevleri](../c-language/library-functions.md)

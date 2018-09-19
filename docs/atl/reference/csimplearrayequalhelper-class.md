@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87b23ba46ee4a8e25c15b4d9e51b87c444da67f1
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 2613a885dd5399c3655ecb853f3977be71928526
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758221"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021063"
 ---
 # <a name="csimplearrayequalhelper-class"></a>CSimpleArrayEqualHelper sınıfı
 
@@ -32,13 +32,13 @@ Bu sınıf için Yardımcısı, [CSimpleArray](../../atl/reference/csimplearray-
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T>  
+template <class T>
 class CSimpleArrayEqualHelper
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-`T`  
+*T*<br/>
 Türetilmiş bir sınıf.
 
 ## <a name="members"></a>Üyeler
@@ -69,10 +69,10 @@ static bool IsEqual(
 
 ### <a name="parameters"></a>Parametreler
 
-*T1*  
+*T1*<br/>
 T türünde bir nesne
 
-*T2*  
+*T2*<br/>
 T türünde bir nesne
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -81,6 +81,6 @@ T türünde bir nesne
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CSimpleArray sınıfı](../../atl/reference/csimplearray-class.md)   
-[CSimpleArrayEqualHelperFalse sınıfı](../../atl/reference/csimplearrayequalhelperfalse-class.md)   
+[CSimpleArray Sınıfı](../../atl/reference/csimplearray-class.md)<br/>
+[CSimpleArrayEqualHelperFalse Sınıfı](../../atl/reference/csimplearrayequalhelperfalse-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

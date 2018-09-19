@@ -16,41 +16,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f0cf68eb75d420a0d23c04687d4f9492910b53f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ea8d392251c8168490d7841ad590731b5a08e7f5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293679"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031840"
 ---
 # <a name="compiler-warning-level-4-c4564"></a>Derleyici Uyarısı (düzey 4) C4564
-desteklenmeyen varsayılan parametre 'parametresi' yöntemi 'sınıfı' sınıfının ' yöntemi' tanımlar  
-  
- Derleyici bir veya daha fazla parametre varsayılan değerlerine sahip olan bir yöntem algıladı. Yöntem çağrıldığında parametreler için varsayılan değerler göz ardı edilir; açıkça bu parametrelerin değerlerini belirtin. Bu parametreler için değerler açıkça belirtmezseniz, C++ derleyicisi bir hata oluşturur.  
-  
- Visual Basic ile oluşturulan aşağıdaki .dll yöntemi bağımsız değişkenler üzerinde varsayılan parametreleri sağlayan:  
-  
-```  
-' C4564.vb  
-' compile with: vbc /t:library C4564.vb  
-Public class TestClass  
-   Public Sub MyMethod (a as Integer, _  
-                        Optional c as Integer=1)  
-   End Sub  
-End class  
-```  
-  
- Ve Visual Basic ile oluşturulan .dll öğesini kullanan aşağıdaki C++ örnek,  
-  
-```  
-// C4564.cpp  
-// compile with: /clr /W4 /WX  
-#using <C4564.dll>  
-  
-int main() {  
-   TestClass ^ myx = gcnew TestClass();   // C4564  
-   myx->MyMethod(9);  
-   // try the following line instead, to avoid an error  
-   // myx->MyMethod(9, 1);  
-}  
+
+desteklenmeyen varsayılan parametre 'parametresi' yöntemi 'class' sınıfının ' yöntemi' tanımlar
+
+Derleyicinin varsayılan değeri olan bir veya daha fazla parametrelere sahip bir yöntemi algılandı. Yöntem çağrıldığında parametreler için varsayılan değerleri göz ardı edilir; açıkça bu parametreler için değerler belirtin. C++ derleyicisi, açıkça bu parametreleri için değer belirtmezseniz, bir hata oluşturur.
+
+Visual Basic ile oluşturulan aşağıdaki .dll yöntem bağımsız değişkenlerine göre varsayılan parametreleri sağlayan:
+
+```
+' C4564.vb
+' compile with: vbc /t:library C4564.vb
+Public class TestClass
+   Public Sub MyMethod (a as Integer, _
+                        Optional c as Integer=1)
+   End Sub
+End class
+```
+
+Ve Visual Basic ile oluşturulan .dll dosyasını kullanan aşağıdaki C++ örneği
+
+```
+// C4564.cpp
+// compile with: /clr /W4 /WX
+#using <C4564.dll>
+
+int main() {
+   TestClass ^ myx = gcnew TestClass();   // C4564
+   myx->MyMethod(9);
+   // try the following line instead, to avoid an error
+   // myx->MyMethod(9, 1);
+}
 ```

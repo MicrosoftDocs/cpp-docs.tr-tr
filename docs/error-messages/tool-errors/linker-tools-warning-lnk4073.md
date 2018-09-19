@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4197d850dbc7a064ebc7c6e33183d83fb9916ebe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eab8643706b3c7468b589bd63c508ec0c2bf5306
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299207"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021921"
 ---
 # <a name="linker-tools-warning-lnk4073"></a>Bağlayıcı Araçları Uyarısı LNK4073
-.ilk dosyası için eşlemesi oluşturulamıyor; nonincrementally bağlama  
-  
- Yoktu büyük bir bağlantının artımlı durum (.ilk) dosyası oluşturmak paylaşılan bellekte bitişik yeterli alan. BAĞLANTI nonincremental yapı gerçekleştirilir.
+
+.ilk dosyası için eşleme oluşturulamıyor; artımsız olarak bağlanıyor
+
+Yoktu büyük bir bağlantının artımlı durum (.ilk) dosyası oluşturmak paylaşılan bellekte bitişik yeterli alan. BAĞLANTI, artımlı olmayan bir derleme gerçekleştirdi.

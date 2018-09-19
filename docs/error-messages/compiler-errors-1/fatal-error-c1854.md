@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e517832720e31bfae88e79ad879f1427b9c25a48
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 83450169ec928bb77e46916619c84b3b9a3443a3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230256"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029396"
 ---
 # <a name="fatal-error-c1854"></a>Önemli hata C1854
-  
-> önceden derlenmiş üst bilgi nesne dosyasına oluşturulması sırasında oluşturulmuş bilgi üzerine yazılamıyor: '*filename*'  
-  
-Belirttiğiniz [/Yu (önceden derlenmiş üst bilgi dosyasını kullanma)](../../build/reference/yu-use-precompiled-header-file.md) belirttikten sonra seçeneği [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md) seçeneği aynı dosya için.  
-  
-Bu sorunu gidermek için genel olarak, yalnızca bir dosya kullanarak derlenecek projenizi kümesindeki **/Yc** seçeneği ve kullanarak derlemek için tüm dosyaları ayarlamak **/Yu** seçeneği. Kullanımı hakkında ayrıntılı bilgi için **/Yc** seçeneği ve Visual Studio IDE içinde ayarlama nasıl [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md). Önceden derlenmiş başlıkları kullanma ile ilgili daha fazla bilgi için bkz: [önceden derlenmiş üst bilgi dosyaları oluşturma](../../build/reference/creating-precompiled-header-files.md).  
+
+> Nesne dosyasındaki Ön derlenmiş üstbilginin oluşturulması sırasında bilgilerin üzerine yazılamaz: '*filename*'
+
+Belirttiğiniz [/Yu (önceden derlenmiş üst bilgi dosyasını kullanma)](../../build/reference/yu-use-precompiled-header-file.md) seçeneği belirttikten sonra [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md) seçeneği aynı dosya için.
+
+Bu sorunu gidermek için genel olarak, yalnızca bir dosya kullanarak derlenmesi için projenizi kümesindeki **/Yc** seçenek ve diğer tüm dosyaları kullanarak derleme **/Yu** seçeneği. Kullanımı hakkında ayrıntılar için **/Yc** seçeneği ve Visual Studio IDE içinde ayarlamak için bkz [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md). Önceden derlenmiş üst bilgileri kullanma hakkında daha fazla bilgi için bkz. [önceden derlenmiş üst bilgi dosyaları oluşturma](../../build/reference/creating-precompiled-header-files.md).

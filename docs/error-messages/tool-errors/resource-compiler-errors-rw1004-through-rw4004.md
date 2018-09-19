@@ -12,12 +12,13 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a7ead1f1dbbf8c1129c81faa8caff31a2a104d6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2e1a17b4609d5cf456030818f3a2112eeb4c7881
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320111"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017840"
 ---
 # <a name="resource-compiler-errors-rw1004-through-rw4004"></a>RW1004 ile RW4004 arasındaki Kaynak Derleyicisi Hataları
-Bu bölüm, yapı araçları tarafından oluşturulan hatalara bir başvurudur. Belirli bir hata iletisi hakkında Yardım almak için fare çıktı penceresinde bir hata numarası tıklatıldığında ve F1'e basın ya da hata numarası yazın **Ara** dizinde kutusu.
+
+Bu bölüm, yapı araçları tarafından oluşturulan hatalara bir başvurudur. Belirli hata iletisi hakkında Yardım almak için çıktı penceresinde bir hata numarası üzerinde fareyle tıklayın ve F1 tuşuna basın veya hata numarası yazın **Ara** dizinde kutusu.

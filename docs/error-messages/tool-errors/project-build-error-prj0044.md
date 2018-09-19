@@ -16,19 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7091025f49343ce0054d6033dc54a3397318b37a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ac5ac11ae8622e2f153effd2cfb5ab0055414331
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33324544"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028499"
 ---
 # <a name="project-build-error-prj0044"></a>Proje Derleme Hatası PRJ0044
-Özel derleme kural 'dosyası 'dosya' atanmış Kuralı' için 'Ek bağımlılıklar' özelliği geçersiz. Özelliği, '' value' değerlendiren dize' içeriyor.  
-  
- **Ek bağımlılıklar** özellik boş bir dize veya geçersiz karakterler (bir dosya veya dizin adı olarak herhangi bir karakter) içeren bir dize sonucu. Özel derleme eylemi çıktısını kuralları gerek oluşturun.  
-  
- Daha fazla bilgi için bkz: [özel derleme araçlarını belirtme](../../ide/specifying-custom-build-tools.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Proje Derleme Hataları ve Uyarıları (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)
+
+Özel derleme kuralının 'Kuralı 'dosya' dosyasına atanan' 'Ek bağımlılıklar' özelliği geçersiz. 'İçerir 'değerine' string' özelliği içeriyor.
+
+**Ek bağımlılıklar** özelliği boş bir dize veya geçersiz karakter (bir dosya veya dizin adı olabilir değil herhangi bir karakterle) içeren bir dize için değerlendirilir. Özel derleme eylemi çıktısını gereksinim kuralları oluşturun.
+
+Daha fazla bilgi için [belirterek özel derleme Araçları](../../ide/specifying-custom-build-tools.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Proje Derleme Hataları ve Uyarıları (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)

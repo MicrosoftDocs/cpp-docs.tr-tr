@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88d24436270156dc86ad074cf8fee8d0272e83c9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 54d913aac76f767728bbe7b4a31d4ea1c8bbd96d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33278089"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027004"
 ---
 # <a name="compiler-warning-level-1-c4384"></a>Derleyici Uyarısı (düzey 1) C4384
-\#pragma 'make_public' yalnızca genel kapsamda kullanılmalıdır  
-  
- [Make_public](../../preprocessor/make-public.md) pragma yanlış uygulandı.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4384 oluşturur.  
-  
-```  
-// C4384.cpp  
-// compile with: /c /W1  
-namespace n {  
-   #pragma make_public(N::C)   // C4384  
-   namespace N {  
-      class C {};  
-   }  
-}  
+
+\#pragma 'make_public' yalnızca genel kapsamda kullanılmalıdır
+
+[Make_public](../../preprocessor/make-public.md) pragma yanlış uygulandı.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4384 oluşturur.
+
+```
+// C4384.cpp
+// compile with: /c /W1
+namespace n {
+   #pragma make_public(N::C)   // C4384
+   namespace N {
+      class C {};
+   }
+}
 ```

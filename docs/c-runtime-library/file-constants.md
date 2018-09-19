@@ -35,49 +35,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31d6deadb3d7cae7ed8717056b632cd46fa79370
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e026de7b18d6809251e49f71d382c741f62be512
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389721"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028980"
 ---
 # <a name="file-constants"></a>Dosya Sabitleri
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-#include <fcntl.h>  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir tamsayı ifade oluşturulmuş ya da bu sabitleri birkaçını okuma veya yazma işlemlerini izin türünü belirler. Bir veya daha fazla sabit bir çeviri modu sabit ile birleştirerek biçimlendirilmemiş.  
-  
- Dosya sabitleri aşağıdaki gibidir:  
-  
- `_O_APPEND`  
- Dosya işaretçisini sonuna kadar her yazma işlemi önce dosyayı yeniden konumlandırır.  
-  
- `_O_CREAT`  
- Oluşturur ve yazmak için yeni bir dosya açar; dosya tarafından belirtilen, bunun hiçbir etkisi olmaz *filename* bulunmaktadır.  
-  
- `_O_EXCL`  
- Belirtilen dosya bir hata değeri döndürür *filename* bulunmaktadır. Yalnızca kullanıldığında geçerlidir `_O_CREAT`.  
-  
- `_O_RDONLY`  
- Yalnızca okumak için dosyayı açar; Bu bayrak, tipleri belirtilmezse `_O_RDWR` ya da `_O_WRONLY` verilebilir.  
-  
- `_O_RDWR`  
- Hem okumak ve yazmak için dosyayı açar; Bu bayrak, tipleri belirtilmezse `_O_RDONLY` ya da `_O_WRONLY` verilebilir.  
-  
- `_O_TRUNC`  
- Açılır ve uzunluğu sıfır olarak varolan bir dosyanın keser; Dosya yazma iznine sahip olmalıdır. Dosya içeriği yok. Bu bayrak verilen varsa belirtemezsiniz `_O_RDONLY`.  
-  
- `_O_WRONLY`  
- Yalnızca yazmak için dosyayı açar; Bu bayrak, tipleri belirtilmezse `_O_RDONLY` ya da `_O_RDWR` verilebilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [_kurulum Aç, _wopen](../c-runtime-library/reference/open-wopen.md)   
- [_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)   
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+
+#include <fcntl.h>
+
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir tamsayı ifade oluşturulmuş ya da bu sabitlerin daha fazla okuma veya yazma işlemlerini izin türünü belirler. Bir veya daha fazla sabit bir çeviri modu sabit ile birleştirerek oluşturulur.
+
+Dosya sabitleri aşağıdaki gibidir:
+
+|Sabit|Açıklama|
+|-|-|
+| `_O_APPEND`  | Dosya işaretçisini dosyanın her yazma işleminden önce sonuna yeniden konumlandırır.  |
+| `_O_CREAT`  | Oluşturur ve yeni bir dosya yazma için açar. dosyayı tarafından belirtilen Bunun hiçbir etkisi *filename* bulunmaktadır.  |
+| `_O_EXCL`  | Belirtilen dosya bir hata değeri döndürür *filename* bulunmaktadır. Yalnızca ile kullanıldığında geçerlidir `_O_CREAT`.  |
+| `_O_RDONLY`  | Yalnızca okuma için dosyayı açar; Bu bayrak, diğerinden belirtilmezse `_O_RDWR` ya da `_O_WRONLY` verilebilir.  |
+| `_O_RDWR`  | Dosyayı hem okuma ve yazma için açar; Bu bayrak, diğerinden belirtilmezse `_O_RDONLY` ya da `_O_WRONLY` verilebilir.  |
+| `_O_TRUNC`  | Açılır ve uzunluğu sıfır olarak mevcut bir dosyayı keser; Dosya yazma iznine sahip olmalıdır. Dosyanın içeriği yok edilir. Bu bayrak verilen varsa belirtemezsiniz `_O_RDONLY`.  |
+| `_O_WRONLY`  | Yalnızca yazma dosyayı açar; Bu bayrak, diğerinden belirtilmezse `_O_RDONLY` ya da `_O_RDWR` verilebilir.  |
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[_open, _wopen](../c-runtime-library/reference/open-wopen.md)<br/>
+[_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)<br/>
+[Global Sabitler](../c-runtime-library/global-constants.md)

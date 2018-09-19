@@ -82,15 +82,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b1372a273f0296b8dc309068c83ffe2607d038f
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 6ecc1939faab978c84f786d90c8693b036d2e938
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688680"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027758"
 ---
 # <a name="double3-class"></a>double_3 Sınıfı
-Üç çiftleri kısa bir vektör temsil eder.  
+Üç çiftten oluşan bir kısa vektörü temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -100,7 +100,7 @@ class double_3;
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
@@ -110,7 +110,7 @@ class double_3;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[double_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|  
+|[double_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -160,7 +160,7 @@ class double_3;
 |double_3::operator-||  
 |double_3::operator--||  
 |double_3::operator * =||  
-|double_3::operator ve =||  
+|double_3::operator / =||  
 |double_3::operator ++||  
 |double_3::operator +=||  
 |double_3::operator =||  
@@ -217,7 +217,7 @@ class double_3;
   
 ##  <a name="ctor"></a> double_3 
 
- Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.  
+ Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.  
   
 ```  
 double_3() restrict(amp,
@@ -267,20 +267,20 @@ explicit inline double_3(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_V0`  
- Öğeyi 0 başlatmak için değer.  
+*_V0*<br/>
+Öğe 0'ı başlatmak için değer.  
   
- `_V1`  
- 1 öğesi başlatmak için değeri.  
+*_V1*<br/>
+1 öğe başlatmak için değer.  
   
- `_V2`  
- Öğe 2 başlatmak için değeri.  
+*_V2*<br/>
+Öğe 2 başlatmak için değer.  
   
- `_V`  
- Başlatma için değer.  
+*_V*<br/>
+Başlatma için değer.  
   
- `_Other`  
- Başlatmak için kullanılan nesne.  
+*_Diğer*<br/>
+Başlatmak için kullanılan nesne.  
   
 ##  <a name="double_3__size"></a> Boyutu 
 

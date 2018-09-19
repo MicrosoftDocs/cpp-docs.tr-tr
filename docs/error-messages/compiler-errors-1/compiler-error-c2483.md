@@ -16,22 +16,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a10fd33ebeef43904db964fc327fb749029f963
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: be2a2caef9e1252bf1ab36253a7f5f715b94d5a3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197981"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031619"
 ---
 # <a name="compiler-error-c2483"></a>Derleyici Hatası C2483
 
->'*tanımlayıcısı*': 'iş parçacığı' Oluşturucusu veya yıkıcı nesnesiyle bildirilemez
+>'*tanımlayıcı*': 'thread' nesnesiyle oluşturucu veya yıkıcı bildirilemez
 
-Bu hata iletisini Visual Studio 2015 ve sonraki sürümlerde kullanımdan kalkmıştır. Önceki sürümlerde ile değişkenleri bildirilen `thread` oluşturucu veya çalışma zamanı değerlendirme gerektiren diğer ifade özniteliği başlatılamıyor. Statik bir ifade başlatmak için gerekli `thread` veri.
+Visual Studio 2015 ve sonraki sürümlerinde, bu hata iletisi geçersiz. Önceki sürümlerde ile bildirilen değişkenlerin `thread` öznitelik, bir oluşturucu veya çalışma zamanı değerlendirme gerektiren diğer ifade ile başlatılamaz. Statik bir ifade başlatmak için gerekli `thread` veri.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, Visual Studio 2013 ve önceki sürümlerinde C2483 oluşturur.
+Aşağıdaki örnek, Visual Studio 2013 veya önceki sürümlerinde C2483 oluşturur.
 
 ```cpp
 // C2483.cpp
@@ -39,7 +39,7 @@ Aşağıdaki örnek, Visual Studio 2013 ve önceki sürümlerinde C2483 oluştur
 __declspec(thread) struct A {
    A(){}
    ~A(){}
-} aa;   // C2483 error  
+} aa;   // C2483 error
 
 __declspec(thread) struct B {} b;   // OK
 ```

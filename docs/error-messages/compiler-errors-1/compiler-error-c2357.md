@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c8739576eced6b831f5c3b72d85417e2daabb06
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2d6468774947ed92630d0e10badc341c5841a5aa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196587"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025444"
 ---
 # <a name="compiler-error-c2357"></a>Derleyici Hatası C2357
-'tanımlayıcısı': 'type' türünde bir işlev olmalıdır  
-  
- Kodunuzu bir sürümünü bildirir `atexit` sürümüyle eşleşmiyor işlevi derleyici tarafından dahili olarak bildirilen. Bildirme `atexit` gibi:  
-  
-```  
-int __cdecl atexit(void (__cdecl *)());  
-```  
-  
- Daha fazla bilgi için bkz: [init_seg](../../preprocessor/init-seg.md).  
-  
- Aşağıdaki örnek C2357 oluşturur:  
-  
-```  
-// C2357.cpp  
-// compile with: /c  
-// C2357 expected  
-#pragma warning(disable : 4075)  
-// Uncomment the following line to resolve.  
-// int __cdecl myexit(void (__cdecl *)());  
-#pragma init_seg(".mine$m",myexit)  
+
+'identifier': 'type' türünde bir işlev olmalıdır
+
+Kodunuzu bir sürümünü bildirir `atexit` sürümü eşleşmiyor işlevi derleyici tarafından dahili olarak bildirilir. Bildirme `atexit` gibi:
+
+```
+int __cdecl atexit(void (__cdecl *)());
+```
+
+Daha fazla bilgi için [init_seg](../../preprocessor/init-seg.md).
+
+Aşağıdaki örnek, C2357 oluşturur:
+
+```
+// C2357.cpp
+// compile with: /c
+// C2357 expected
+#pragma warning(disable : 4075)
+// Uncomment the following line to resolve.
+// int __cdecl myexit(void (__cdecl *)());
+#pragma init_seg(".mine$m",myexit)
 ```

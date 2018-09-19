@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 995693a73fde41a3f5e31d81224b96d12edb2c46
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 85d32a4550c2a7b3522456defc53b9741ea2eb25
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763285"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024235"
 ---
 # <a name="mmc-snap-in-classes"></a>MMC ek bileşeni sınıfları
 
@@ -33,6 +33,6 @@ Aşağıdaki sınıflar, geliştirme Microsoft Yönetim Konsolu (MMC) ek bileşe
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfına genel bakış](../atl/atl-class-overview.md)   
+[Sınıfına genel bakış](../atl/atl-class-overview.md)<br/>
 [Ek Bileşen Nesne Makroları](../atl/reference/snap-in-object-macros.md)
 

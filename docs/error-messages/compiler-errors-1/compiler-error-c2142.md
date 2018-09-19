@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 11fd3cd62b236daa93424f53a0896888a89fe33d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 32301087ac1f06f1958ca8de7d2f66645dafb3d2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170404"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032506"
 ---
 # <a name="compiler-error-c2142"></a>Derleyici Hatası C2142
-işlev bildirimleri farklılık gösterir, yalnızca bunlardan birinin içinde belirtilen değişken parametreleri  
-  
- Bir işlevin bildirimi değişken parametre listesini içerir. Başka bir bildirim yoktur. ANSI C ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) yalnızca.  
-  
- Aşağıdaki örnek C2142 oluşturur:  
-  
-```  
-// C2142.c  
-// compile with: /Za /c  
-void func();  
-void func( int, ... );   // C2142  
-void func2( int, ... );   // OK  
+
+işlev bildirimleri farklı, değişken parametreleri yalnızca biri için belirtildi
+
+Bir işlevin bildirimi değişken parametre listesini içerir. Başka bir bildirimi izin vermez. ANSI C ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) yalnızca.
+
+Aşağıdaki örnek, C2142 oluşturur:
+
+```
+// C2142.c
+// compile with: /Za /c
+void func();
+void func( int, ... );   // C2142
+void func2( int, ... );   // OK
 ```

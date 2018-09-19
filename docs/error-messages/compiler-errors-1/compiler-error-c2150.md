@@ -16,28 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7dc7a84ff666fdc17f0abeec690a548f216ce975
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ef0920c98fe59fe5bca49bba4c62a486a61c0a55
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170154"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024717"
 ---
 # <a name="compiler-error-c2150"></a>Derleyici Hatası C2150
-  
-> '*tanımlayıcısı*': 'int' türü, 'imzalı int' veya 'imzasız int' bit alan olması gerekir  
-  
- Bir bit alanı için temel tür olması gereken `int`, `signed int`, veya `unsigned int`.  
-  
-## <a name="example"></a>Örnek  
-  
- Bu örnek C2150 nasıl karşılaşabileceğiniz ve nasıl düzeltebilirsiniz göstermektedir:  
-  
-```cpp  
-// C2150.cpp  
-// compile with: /c  
-struct A {  
-   float a : 8;    // C2150  
-   int i : 8;      // OK  
-};  
+
+> '*tanımlayıcı*': bit alanının türü 'int', 'signed int' veya 'unsigned int' olmalıdır
+
+Bir bit alanına yönelik temel türü olmasını gerekli `int`, `signed int`, veya `unsigned int`.
+
+## <a name="example"></a>Örnek
+
+Bu örnek nasıl C2150 karşılaşabileceğiniz ve nasıl düzeltebilirsiniz gösterir:
+
+```cpp
+// C2150.cpp
+// compile with: /c
+struct A {
+   float a : 8;    // C2150
+   int i : 8;      // OK
+};
 ```

@@ -16,32 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85b4f80a9f257fa5e5d9ed8701a6ee7cfdf68cfd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 585d9eaaf37b913a0be339ccabd230aa79142526
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249973"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016591"
 ---
 # <a name="compiler-error-c3296"></a>Derleyici Hatası C3296
-'property': Bu ada sahip bir özellik zaten var  
-  
- Derleyici aynı ada sahip birden fazla özellik karşılaştı. Bir türdeki her özellik adları benzersiz olmalıdır.  
-  
- Daha fazla bilgi için bkz: [özelliği](../../windows/property-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3296 oluşturur.  
-  
-```  
-// C3296.cpp  
-// compile with: /clr /c  
-using namespace System;  
-  
-ref class R {  
-public:  
-   property int MyProp[int] { int get(int); }  
-  
-   property String^ MyProp[int] { void set(int, String^); }   // C3296  
-};  
+
+'property': Bu ada sahip bir özellik zaten var.
+
+Derleyici, aynı ada sahip birden fazla özelliğe karşılaşıldı. Bir tür içindeki her bir özellik adları benzersiz olmalıdır.
+
+Daha fazla bilgi için [özelliği](../../windows/property-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3296 oluşturur.
+
+```
+// C3296.cpp
+// compile with: /clr /c
+using namespace System;
+
+ref class R {
+public:
+   property int MyProp[int] { int get(int); }
+
+   property String^ MyProp[int] { void set(int, String^); }   // C3296
+};
 ```

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 524f360f2dcc2e1eaec11723395da0be7058c21a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 69838a690fcdddc58194caf38e3666fef023222c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756509"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028057"
 ---
 # <a name="com-map-macros"></a>COM eşleme makroları
 
@@ -47,7 +47,7 @@ BEGIN_COM_MAP(x)
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 [in] Üzerinde arabirimleri kullanıma sunma sınıfı nesnesinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -70,5 +70,5 @@ END_COM_MAP()
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Makroları](../../atl/reference/atl-macros.md)   
+[Makroları](../../atl/reference/atl-macros.md)<br/>
 [COM Eşlemesi Genel İşlevleri](../../atl/reference/com-map-global-functions.md)

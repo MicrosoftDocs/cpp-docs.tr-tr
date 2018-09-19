@@ -17,28 +17,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52e1679374e105ab06ce245ba68cfe92706689e1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3fba76b75c640917b3b99cd41500d682cb1b32f0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302496"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031814"
 ---
 # <a name="expression-evaluator-error-cxx0019"></a>İfade Değerlendirici Hatası CXX0019
-bozuk tür belirtimi  
-  
- C ifade değerlendiricisi yazıldığı şekilde cast türü gerçekleştiremezsiniz.  
-  
- Bu hata için CAN0019 aynıdır.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Belirtilen türü bilinmiyor.  
-  
-2.  İşaretçi türlerinin çok fazla düzeyleri vardı. Örneğin, atama türü  
-  
-    ```  
-    (char **)h_message  
-    ```  
-  
+
+bozuk tür dönüştürme
+
+C ifade değerlendiricisi yazıldığı gibi cast türü gerçekleştirilemiyor.
+
+Bu hata için CAN0019 aynıdır.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Belirtilen türü bilinmiyor.
+
+1. Çok fazla sayıda iç işaretçi türlerinin vardı. Örneğin, atama türü
+
+    ```
+    (char **)h_message
+    ```
+
      C ifade değerlendiricisi tarafından değerlendirilemez.

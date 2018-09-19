@@ -14,19 +14,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34ed2ec16f579b05a572cf6bfc236cd8d5743f63
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5e6db959e467ea449a66feb3ee07c202f4dee002
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290354"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018957"
 ---
 # <a name="compiler-warning-level-1-c4910"></a>Derleyici Uyarısı (düzey 1) C4910
-'\<tanımlayıcısı >': '__declspec(dllexport)' ve 'extern' üzerinde bir açık örnekleme uyumsuz  
-  
- Adlı açık şablonu örneklemesi  *\<tanımlayıcısı >* her ikisi için de değiştiren `__declspec(dllexport)` ve `extern` anahtar sözcükler. Ancak, bu anahtar sözcükler karşılıklı olarak birbirini dışlar. `__declspec(dllexport)` Anahtar sözcüğü anlamına gelir şablon sınıfının örneği sırada `extern` anahtar sözcüğü anlamına gelir değil otomatik olarak örneği Şablon sınıfı.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Açık örnekleme](../../cpp/explicit-instantiation.md)   
- [dllexport, dllimport](../../cpp/dllexport-dllimport.md)   
- [Genel Kurallar ve Sınırlamalar](../../cpp/general-rules-and-limitations.md)
+
+'\<tanımlayıcısı >': '__declspec(dllexport)' ve 'extern' açık bir örnek oluşturmada uyumsuz
+
+Adlı açık şablon örneklemesi  *\<tanımlayıcısı >* her ikisi için de değiştirilmiş `__declspec(dllexport)` ve `extern` anahtar sözcükleri. Ancak, bu anahtar sözcükler birbirini dışlar. `__declspec(dllexport)` Anahtar sözcüğü, şablon sınıfının örneği anlamına gelir ancak `extern` anahtar sözcüğü anlamına gelir değil otomatik olarak örneğini bir şablon sınıfı.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Açık Örnekleme](../../cpp/explicit-instantiation.md)<br/>
+[dllexport, dllimport](../../cpp/dllexport-dllimport.md)<br/>
+[Genel Kurallar ve Sınırlamalar](../../cpp/general-rules-and-limitations.md)

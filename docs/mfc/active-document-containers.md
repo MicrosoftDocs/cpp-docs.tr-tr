@@ -17,17 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c912b6c703ef7e05825e070d09f0a1b3cd73003
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: de03bc7b08a0fe5ae3b1c34fd1a7ec79c8fb0661
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36932165"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017579"
 ---
 # <a name="active-document-containers"></a>Etkin Belge Kapsayıcıları
-Microsoft Office Binder veya Internet Explorer gibi bir etkin belge kapsayıcısı birkaç belge (yerine oluşturmak ve her biri için birden çok uygulama çerçeveleri kullanmak için zorlama tek çerçevesinde farklı uygulama türleri ile çalışmanıza olanak sağlar Belge türü).  
+Microsoft Office Binder veya Internet Explorer gibi bir etkin belge kapsayıcı birkaç belge (oluşturmanızı ve her biri için birden çok uygulama çerçeveleri kullanın zorlamak yerine tek bir çerçeve içinde farklı uygulama türleri ile çalışmanıza olanak sağlar Belge türü).  
   
- MFC etkin belge kapsayıcıları için tam destek sağlar `COleDocObjectItem` sınıfı. MFC Uygulama Sihirbazı'nı seçerek bir etkin belge kapsayıcısı oluşturmak için kullanabileceğiniz **etkin belge kapsayıcısı** onay kutusunu **bileşik belge desteği** MFC Uygulama Sihirbazı sayfası. Daha fazla bilgi için bkz: [bir etkin belge kapsayıcı uygulaması oluşturma](../mfc/creating-an-active-document-container-application.md).  
+ MFC içinde etkin belge kapsayıcıları için tam destek sağlar `COleDocObjectItem` sınıfı. MFC Uygulama Sihirbazı'nı seçerek bir etkin belge kapsayıcısı oluşturmak için kullanabileceğiniz **etkin belge kapsayıcı** onay kutusunu **bileşik belge desteği** MFC Uygulama Sihirbazı sayfası. Daha fazla bilgi için [bir etkin belge kapsayıcı uygulaması oluşturma](../mfc/creating-an-active-document-container-application.md).  
   
  Etkin belge kapsayıcıları hakkında daha fazla bilgi için bkz:  
   
@@ -46,48 +46,47 @@ Microsoft Office Binder veya Internet Explorer gibi bir etkin belge kapsayıcıs
 -   [Komut Hedefleri](../mfc/message-handling-and-command-targets.md)  
   
 ##  <a name="container_requirements"></a> Kapsayıcı gereksinimleri  
- Etkin belge kapsayıcı etkin belge desteği, çok daha fazlası arabirim uygulamaları olduğu anlamına gelir: de kapsanan bir nesne arabirimleri kullanarak bilgi gerektirir. Etkin belge uzantıları, burada kapsayıcı de bu uzantısı arabirimlerini etkin belgeler üzerinde kendilerini nasıl kullanılacağını bilmeniz gerekir aynı geçerlidir.  
+ Etkin belge desteği etkin belge kapsayıcı arabirim uygulamaları çok daha fazlası anlamına gelir: bağımsız bir nesne arabirimleri kullanarak bilgi de gerektirir. Etkin belge uzantıları burada kapsayıcı de bu uzantı arabirimlerini etkin belgelere kendilerini nasıl kullanılacağını bilmek gerekir, aynı geçerlidir.  
   
- Etkin belgeler tümleşen bir etkin belge kapsayıcısı gerekir:  
+ Etkin belgeler tümleştiren bir etkin belge kapsayıcı gerekir:  
   
--   Nesne depolama aracılığıyla işleyebilen olması `IPersistStorage` arabirimi, diğer bir deyişle, onu sağlamalıdır bir `IStorage` her etkin belgeyi örneğine.  
+-   Nesne depolama aracılığıyla işleyebilir olması `IPersistStorage` arabirimi, diğer bir deyişle, sağlamalıdır bir `IStorage` etkin her belge için örneği.  
   
--   OLE belgeleri, "site" nesneleri (bir belge veya katıştırma başına) araya temel katıştırma özelliklerini destekleyecek uygulayan `IOleClientSite` ve `IAdviseSink`.  
+-   OLE belgeleri, "site" nesneleri (tek başına belge veya ekleme) araya temel ekleme özelliklerinin desteklenmesi uygulayan `IOleClientSite` ve `IAdviseSink`.  
   
--   Yerinde etkinleştirme katıştırılmış nesneler ya da etkin belgeler destekler. Kapsayıcının site nesneleri uygulamalıdır `IOleInPlaceSite` ve kapsayıcının çerçeve nesnesi sağlamalısınız `IOleInPlaceFrame`.  
+-   Katıştırılmış nesneler veya etkin belgeler yerinde etkinleştirme desteği. Kapsayıcının site nesneleri uygulamalıdır `IOleInPlaceSite` ve kapsayıcının çerçeve nesnesi sağlamalısınız `IOleInPlaceFrame`.  
   
--   Etkin belgeler uzantıları uygulayarak desteği `IOleDocumentSite` belgeye konuşun kapsayıcıya mekanizması sağlamak için. İsteğe bağlı olarak, kapsayıcı etkin belgeyi arabirimleri uygulayabilir `IOleCommandTarget` ve `IContinueCallback` yazdırma veya kaydetme gibi basit komutları alması.  
+-   Etkin belgeler uzantıları uygulayarak desteği `IOleDocumentSite` belgeye konuşmaya kapsayıcısı için bir mekanizma sağlamanız. İsteğe bağlı olarak, kapsayıcı etkin belgeyi arabirimleri gerçekleştiren `IOleCommandTarget` ve `IContinueCallback` yazdırma veya kaydetme gibi basit bir komut alması için.  
   
- Çerçeve nesnesi, görünüm nesneleri ve kapsayıcı nesnesinin isteğe bağlı olarak uygulayabileceğiniz `IOleCommandTarget` anlatıldığı gibi bazı komutlar gönderme desteklemek için [komut hedefleri](../mfc/message-handling-and-command-targets.md). Görünüm ve kapsayıcı nesneleri ayrıca isteğe bağlı olarak uygulayabilirsiniz `IPrint` ve `IContinueCallback`anlatıldığı gibi program aracılığıyla yazdırma desteği için [programlı yazdırma](../mfc/programmatic-printing.md).  
+ Çerçeve nesnesi, görünüm nesneleri ve kapsayıcı nesnesi isteğe bağlı olarak uygulayabilirsiniz `IOleCommandTarget` bölümünde açıklandığı gibi belirli bir komut gönderme desteklemek için [komut hedefleri](../mfc/message-handling-and-command-targets.md). Görünüm ve kapsayıcı nesneleri ayrıca isteğe bağlı olarak uygulayabilirsiniz `IPrint` ve `IContinueCallback`anlatıldığı gibi program aracılığıyla yazdırma desteği için [programlı yazdırma](../mfc/programmatic-printing.md).  
   
- Aşağıdaki şekilde bir kapsayıcı ve bileşenlerinin (soldaki) ve etkin belgeyi ve onun görünümlerinde (sağ) arasındaki kavramsal ilişkiyi gösterir. Etkin belge depolama ve veri yönetir ve görünümü görüntüler veya isteğe bağlı olarak bu verileri yazdırır. Kalın yazı tipiyle etkin belgeyi katılım için gerekli olanlar arabirimlerdir; Bu kalın ve italik isteğe bağlıdır. Diğer tüm arabirimler gereklidir.  
+ Aşağıdaki şekil, bir kapsayıcı (soldaki), bileşenleri ve etkin belgeyi ve görünümlerini (en sağ) arasındaki kavramsal ilişkiyi gösterir. Etkin belge depolaması ve veri yönetir ve görünümü görüntüler veya isteğe bağlı olarak bu verileri yazdırır. Kalın arabirimleri etkin belgeyi katılım için gerekli olan; Bu kalın ve italik isteğe bağlıdır. Tüm arabirimleri gereklidir.  
   
- ![Etkin belge kapsayıcısı arabirimleri](../mfc/media/vc37gj1.gif "vc37gj1")  
+ ![Etkin belge kapsayıcı arabirimleri](../mfc/media/vc37gj1.gif "vc37gj1")  
   
- Yalnızca tek bir görünüm destekleyen bir belge görünüm ve belge bileşenleri (diğer bir deyişle, karşılık gelen arabirimlerini) tek bir somut sınıf uygulayabilirsiniz. Ayrıca, yalnızca bir seferde bir görünümü destekleyen bir kapsayıcı sitesi belge ve görünüm siteleri tek somut site sınıfına birleştirebilirsiniz. Kapsayıcının çerçeve nesnesi, ancak ayrı kalmalı ve kapsayıcının belge bileşeni yalnızca burada mimarisi eksiksiz bir görünümünü sağlamak için eklenir; Etkin belge kapsama mimarisi tarafından etkilenmez.  
+ Yalnızca tek bir görünümde destekleyen bir belge görünüm ve belge bileşenleri (diğer bir deyişle, kendi ilgili arabirimlere) tek bir somut sınıf uygulayabilirsiniz. Ayrıca, yalnızca tek bir görünümde bir zaman destekleyen bir kapsayıcı sitesi belge ve görünüm siteleri tek bir somut site sınıfına birleştirebilirsiniz. Kapsayıcının çerçeve nesnesi, ancak farklı kalması gereken ve kapsayıcının belge bileşeni yalnızca burada mimarisi eksiksiz bir görünümünü sağlamak için dahil edilir; Etkin belge kapsama mimari tarafından etkilenmez.  
   
 ##  <a name="document_site_objects"></a> Belge Site nesneleri  
- Etkin belge kapsama mimarisinde, bir belge OLE belgeleri istemci site nesnesinde eklenmesi ile aynı sitesidir `IOleDocument` arabirimi:  
+ Etkin belge kapsama mimaride bir belge sitesinde ek olarak istemci site nesnesi OLE belgelerde aynıdır `IOleDocument` arabirimi:  
+
+```cpp
+interface IOleDocumentSite : IUnknown
+{
+    HRESULT ActivateMe(IOleDocumentView *pViewToActivate);
+}
+```  
   
- `interface IOleDocumentSite : IUnknown`  
-  
- `{`  
-  
- `HRESULT ActivateMe(IOleDocumentView *pViewToActivate);`  
-  
- `}`  
-  
- Belge sitesini kavramsal olarak bir veya daha fazla "görünümü site" nesneleri için kapsayıcıdır. Her görünüm site nesnesi belge site tarafından yönetilen belgesinin ayrı görünüm nesneleri ile ilişkilidir. Kapsayıcı yalnızca belge site başına tek bir görünümde destekliyorsa, ardından bu belge sitesini ve tek bir somut sınıf görünümü sitesiyle uygulayabilirsiniz.  
+ Belge sitesinde kavramsal olarak bir veya daha fazla "görünümü site" nesneleri için kapsayıcıdır. Her görünüm site nesnesi belgesinin Belge site tarafından yönetilen tek görünüm nesneleri ile ilişkilidir. Kapsayıcı yalnızca belge site başına tek bir görünümde destekliyorsa, ardından, belge ve görünüm siteleri tek bir somut sınıf ile uygulayabilirsiniz.  
   
 ##  <a name="view_site_objects"></a> Site nesneleri görüntüle  
- Görüntü alanı bir belgenin belirli bir görünüm için bir kapsayıcının görünümü site nesnesi yönetir. Standart Destek yanı sıra `IOleInPlaceSite` arabirimini uygulayan bir görünüm site ayrıca genellikle `IContinueCallback` programlı yazdırma denetimi için. (Görünüm nesnesi için hiçbir zaman sorgular Not `IContinueCallback` üzerinde gerçekte uygulanabilir şekilde kapsayıcı istediği herhangi bir nesne.)  
+ Bir kapsayıcının görünümü site nesnesi, belirli bir belge görünümü görüntüleme alanı yönetir. Standart Destek yanı sıra `IOleInPlaceSite` sitesini görüntüleme ayrıca genel arabirimi uygulayan `IContinueCallback` yazdırma programlı denetim. (View nesnesinin için hiçbir zaman sorgular Not `IContinueCallback` üzerinde gerçekten uygulanabilir için tüm kapsayıcı istediği nesne.)  
   
- Birden çok görünüm destekleyen bir kapsayıcı birden çok görünüm belge sitedeki site nesneleri oluşturmak mümkün olması gerekir. Bu her görünüm ayrı etkinleştirme ve devre dışı bırakma Hizmetleri ile sağlanan sağlar `IOleInPlaceSite`.  
+ Birden çok görünüm destekleyen bir kapsayıcı belge sitedeki site nesneleri birden çok görünüm oluşturmak mümkün olması gerekir. Bu her görünüm ayrı etkinleştirme ve devre dışı bırakma Hizmetleri ile sağlanan sağlar `IOleInPlaceSite`.  
   
 ##  <a name="frame_object"></a> Çerçeve nesnesi  
- Kapsayıcının çerçeve, çoğunlukla, nesnesidir yerinde etkinleştirme için OLE belgelerde diğer bir deyişle kullanılan aynı çerçeve, menü ve araç çubuğu anlaşma işler. Bir görünüm nesnesi çerçeve nesne üzerinden erişimi `IOleInPlaceSite::GetWindowContext`, (hangi bölmesinde düzeyi araç anlaşması ve içerilen nesne numaralandırma işleyebilir) kapsayıcı belge temsil eden kapsayıcı nesnesinin erişim de sağlar.  
+ Kapsayıcının çerçeve, çoğunlukla, nesnedir yerinde etkinleştirme OLE belgeleri için diğer bir deyişle kullanılır çerçevenin, menü ve araç çubuğu anlaşma işler. Bu çerçeve nesnesi bir görünüm nesnesi erişimi `IOleInPlaceSite::GetWindowContext`, kapsayıcı nesne (bölmesinde düzeyi araç anlaşma ve kapsanan nesne sabit listesini işleyebilir) bir kapsayıcı belgesi temsil eden erişim de sağlar.  
   
- Etkin belge kapsayıcı çerçeve ekleyerek genişletebilirsiniz `IOleCommandTarget`. Bu aynı şekilde bu arabirimi aynı komutları göndermek bir kapsayıcı izin verebilir etkin belgenin kullanıcı arabiriminde kaynaklanan komutları almasına izin verir (gibi **dosya yeni**, **açık**,  **Farklı Kaydet**, **yazdırma**; **Düzenle kopyalama**, **Yapıştır**, **geri**ve diğerleri) etkin bir belge için. Daha fazla bilgi için bkz: [komut hedefleri](../mfc/message-handling-and-command-targets.md).  
+ Etkin belge kapsayıcı çerçeve ekleyerek iyileştirebilirsiniz `IOleCommandTarget`. Bu etkin belgenin kullanıcı arabiriminde aynı şekilde bu arabirimi aynı komutları göndermek bir kapsayıcı izin verebilirsiniz kaynaklanan komutları almasına izin verir (gibi **dosya yeni**, **açık**,  **Farklı Kaydet**, **yazdırma**; **Kopya Düzenle**, **Yapıştır**, **geri**ve diğerleri) etkin bir belge için. Daha fazla bilgi için [komut hedefleri](../mfc/message-handling-and-command-targets.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Etkin Belge Kapsaması](../mfc/active-document-containment.md)

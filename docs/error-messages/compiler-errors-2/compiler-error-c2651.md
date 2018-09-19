@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84628a42934662eef3f830358435cec09b845a8a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2fbd5b7c7dad5ce6128d88e1b41f1dea9169f2f4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199673"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021843"
 ---
 # <a name="compiler-error-c2651"></a>Derleyici Hatası C2651
-'veri türü': 'işleci' solundaki bir sınıf, yapı ya da birleşimi olmalıdır  
-  
- Bir sınıf ise gibi bir şablon parametresini kullanmak için bir sınıf bir tam sayı türü yerine sınıfı şablonla specialize.
+
+'data type': 'işleci' solunda bir sınıf, yapı veya birleşim olmalıdır
+
+Bir sınıf olması gibi bir şablon parametresini kullanmak için bir tamsayı türü yerine bir sınıf ile bir sınıf şablonunda uzmanlaşmıştır.

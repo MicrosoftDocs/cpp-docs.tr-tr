@@ -230,12 +230,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d28eaff98d2af12d24fab91797182c99d33d317d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e2d2bdddd950197406672c59a6577d33985d3a54
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207968"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031515"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase sınıfı
 HTML düzenleme bileşenini temsil eder.  
@@ -361,8 +361,8 @@ template <class T> class CHtmlEditCtrlBase
 |[CHtmlEditCtrlBase::UnorderList](#unorderlist)|Geçerli seçimi sıralı bir listesi ve normal bir bloğu arasında geçiş yapar.|  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Türetilmiş sınıfın adı.  
+*T*<br/>
+Türetilmiş sınıfın adı.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `CHtmlEditCtrlBase` WebBrowser'ın HTML düzenleme gibi komutları, üye işlevleri sağlayan [kalın](#bold). (Alternatif olarak, çağırabilirsiniz [ExecCommand](#execcommand) IDM_BOLD komutu yürütülemedi.)  

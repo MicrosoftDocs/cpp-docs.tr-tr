@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4007e714a69665758a44c5f80c03fd7dbbfe7f8d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e2b65f845ef845648d219c6d0e58a9fcd9068a34
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317368"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018593"
 ---
 # <a name="resource-compiler-error-rc2112"></a>Kaynak Derleyicisi Hatası RC2112
-İletişim kutusunda beklenen BAŞLAMA  
-  
- **Başlamak** anahtar sözcüğü hemen uymalıdır **iletişim** anahtar sözcüğü.
+
+İletişim kutusunda beklenen BEGIN
+
+**Başlamak** anahtar sözcüğü hemen izlemelidir **iletişim** anahtar sözcüğü.

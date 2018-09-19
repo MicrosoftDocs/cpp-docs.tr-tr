@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f99681ff7219c46820da4c909a6f4eddccdabf6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 50103f7445096e553a510da6272dd4be1886b710
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320888"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017943"
 ---
 # <a name="nmake-fatal-error-u1055"></a>NMAKE Önemli Hatası U1055
-Ortam alanı yetersiz  
-  
- Ortam değişkenleri için yeri dışında işletim sistemini çalıştıran.  
-  
- Ortam alanı artırmak ya da daha az ortam değişkenleri ayarlayın.
+
+Ortam alanı yetersiz
+
+İşletim sistemi ortam değişkenlerini yer yetersiz.
+
+Ortam alanı artırın ya da daha az ortam değişkenlerini ayarlayın.

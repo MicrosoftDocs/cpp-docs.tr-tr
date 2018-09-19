@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2068f3a735a14662e10f00af3fc5f81efd037592
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 56e93bf1485cefed9a44e0e6260358650ab8b296
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220767"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032594"
 ---
 # <a name="bitmap-structure"></a>BITMAP Yapısı
 **Bit eşlem** yapısını tanımlayan yükseklik, genişlik, renk biçimi ve mantıksal bir bit eşlem bit değerleri **.**  
@@ -67,19 +67,15 @@ typedef struct tagBITMAP {  /* bm */
   
  Taramaları gibi bir tek renkli yükseklik bit eşlem için düzenlenmiş *n*:  
   
- `Scan 0`  
-  
- `Scan 1`  
-  
- `.`  
-  
- `.`  
-  
- `.`  
-  
- `Scan n-2`  
-  
- `Scan n-1`  
+```
+Scan 0
+Scan 1
+.
+.
+.
+Scan n-2
+Scan n-1
+```
   
  Her iki siyah pikseldir tek renkli bir cihazda veya beyaz. Karşılık gelen bit eşlemde 1 ise, piksel (beyaz) üzerinde etkinleştirilir. Karşılık gelen bit eşlemde 0 ise, piksel (siyah) devre dışı etkinleştirilir.  
   

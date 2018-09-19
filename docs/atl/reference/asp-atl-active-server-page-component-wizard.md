@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10a57271c143a42f9bafaef5fa53f780fa03164f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 31ac9d8ab0200d8dd56bbca3c82eb0ebec32388b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700660"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46015982"
 ---
 # <a name="asp-atl-active-server-page-component-wizard"></a>ASP, ATL Active Server Page bileşeni Sihirbazı
 
@@ -49,6 +49,6 @@ ATL Active Server sayfa bileşeni Sihirbazı bu sayfa, bilgileri ve durum, ASP b
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ATL Active Server Page bileşeni Sihirbazı](../../atl/reference/atl-active-server-page-component-wizard.md)   
+[ATL Active Server Page Bileşeni Sihirbazı](../../atl/reference/atl-active-server-page-component-wizard.md)<br/>
 [ATL Active Server Page bileşeni](../../atl/reference/adding-an-atl-active-server-page-component.md)
 

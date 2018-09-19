@@ -74,12 +74,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 609216b38ab67076b454ac5adad3f331b235b580
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8de0378e34212649f7e1149bd038587f547e4eb2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706036"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032035"
 ---
 # <a name="cstockpropimpl-class"></a>Cstockpropımpl sınıfı
 
@@ -95,7 +95,7 @@ template <class T, class InterfaceName,
     const IID* piid = &_ATL_IIDOF(InterfaceName),
     const GUID* plibid = &CComModule::m_libid,
     WORD wMajor = 1,
-    WORD wMinor = 0, class tihclass = CcomTypeInfoHolder>  
+    WORD wMinor = 0, class tihclass = CcomTypeInfoHolder>
 class ATL_NO_VTABLE CStockPropImpl : public IDispatchImpl<InterfaceName, piid,
 plibid,
     wMajor,
@@ -105,25 +105,25 @@ wMinor,
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Denetimi uygulamak ve türetilen sınıf `CStockPropImpl`.
 
-*InterfaceName*  
+*InterfaceName*<br/>
 Stok özellikleri kullanıma sunan bir çift arabirim.
 
-*piid*  
+*piid*<br/>
 Laboratuvardaki işaretçisi `InterfaceName`.
 
-*plibid*  
+*plibid*<br/>
 Tanımını içeren tür kitaplığının Kitaplık kimliği için bir işaretçi `InterfaceName`.
 
-*wMajor*  
+*wMajor*<br/>
 Tür kitaplığının ana sürümü. Varsayılan değer 1’dir.
 
-*wMinor*  
+*wMinor*<br/>
 Tür kitaplığının bir alt sürümü. Varsayılan değer 0’dır.
 
-*tihclass*  
+*tihclass*<br/>
 İçin tür bilgilerini yönetmek için kullanılan sınıf *T*. Varsayılan değer `CComTypeInfoHolder` şeklindedir.
 
 ## <a name="members"></a>Üyeler
@@ -228,7 +228,7 @@ HRESULT STDMETHODCALLTYPE get_Appearance(SHORT pnAppearance);
 
 ### <a name="parameters"></a>Parametreler
 
-*pnAppearance*  
+*pnAppearance*<br/>
 Değişken, denetimin Boya stilini alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -245,7 +245,7 @@ HRESULT STDMETHODCALLTYPE get_Autosize(VARIANT_BOOL* pbAutoSize);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbAutoSize*  
+*pbAutoSize*<br/>
 Değişken, bayrak durumunu alır. TRUE, denetimin herhangi bir boyutta olamaz gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -262,7 +262,7 @@ HRESULT STDMETHODCALLTYPE get_BackColor(OLE_COLOR* pclrBackColor);
 
 ### <a name="parameters"></a>Parametreler
 
-*pclrBackColor*  
+*pclrBackColor*<br/>
 Değişken, denetimin arka plan rengini alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -279,7 +279,7 @@ HRESULT STDMETHODCALLTYPE get_BackStyle(LONG* pnBackStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*pnBackStyle*  
+*pnBackStyle*<br/>
 Değişken, denetimin arka plan stilini alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -296,7 +296,7 @@ HRESULT STDMETHODCALLTYPE get_BorderColor(OLE_COLOR* pclrBorderColor);
 
 ### <a name="parameters"></a>Parametreler
 
-*pclrBorderColor*  
+*pclrBorderColor*<br/>
 Değişken, denetimin kenarlık rengini alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -313,7 +313,7 @@ HRESULT STDMETHODCALLTYPE get_BorderStyle(LONG* pnBorderStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*pnBorderStyle*  
+*pnBorderStyle*<br/>
 Değişken, bir denetimin kenarlık stilini alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -330,7 +330,7 @@ HRESULT STDMETHODCALLTYPE get_BorderVisible(VARIANT_BOOL* pbBorderVisible);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbBorderVisible*  
+*pbBorderVisible*<br/>
 Değişken, bayrak durumunu alır. TRUE, denetimin kenarlığının görünür olduğunu gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -347,7 +347,7 @@ HRESULT STDMETHODCALLTYPE get_BorderWidth(LONG* pnBorderWidth);
 
 ### <a name="parameters"></a>Parametreler
 
-*pnBorderWidth*  
+*pnBorderWidth*<br/>
 Değişken, denetimin kenarlık genişliğini alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -364,7 +364,7 @@ HRESULT STDMETHODCALLTYPE get_Caption(BSTR* pbstrCaption);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbstrCaption*  
+*pbstrCaption*<br/>
 Denetimle görüntülenecek metin.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -381,7 +381,7 @@ HRESULT STDMETHODCALLTYPE get_DrawMode(LONG* pnDrawMode);
 
 ### <a name="parameters"></a>Parametreler
 
-*pnDrawMode*  
+*pnDrawMode*<br/>
 Değişken, denetimin çizim modunu alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -398,7 +398,7 @@ HRESULT STDMETHODCALLTYPE get_DrawStyle(LONG* pnDrawStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*pnDrawStyle*  
+*pnDrawStyle*<br/>
 Değişken, denetimin çizim stilini alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -415,7 +415,7 @@ HRESULT STDMETHODCALLTYPE get_DrawWidth(LONG* pnDrawWidth);
 
 ### <a name="parameters"></a>Parametreler
 
-*pnDrawWidth*  
+*pnDrawWidth*<br/>
 Değişken, denetimin genişlik değeri piksel cinsinden alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -432,7 +432,7 @@ HRESULT STDMETHODCALLTYPE get_Enabled(VARIANT_BOOL* pbEnabled);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbEnabled*  
+*pbEnabled*<br/>
 Değişken, bayrak durumunu alır. TRUE, denetimin etkinleştirildiğini gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -449,7 +449,7 @@ HRESULT STDMETHODCALLTYPE get_FillColor(OLE_COLOR* pclrFillColor);
 
 ### <a name="parameters"></a>Parametreler
 
-*pclrFillColor*  
+*pclrFillColor*<br/>
 Değişken, denetimin dolgu rengini alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -466,7 +466,7 @@ HRESULT STDMETHODCALLTYPE get_FillStyle(LONG* pnFillStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*pnFillStyle*  
+*pnFillStyle*<br/>
 Değişken, denetimin dolgu stili alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -483,7 +483,7 @@ HRESULT STDMETHODCALLTYPE get_Font(IFontDisp** ppFont);
 
 ### <a name="parameters"></a>Parametreler
 
-*ppFont*  
+*ppFont*<br/>
 Değişken, denetimin yazı tipi özellikleri için bir işaretçi alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -500,7 +500,7 @@ HRESULT STDMETHODCALLTYPE get_ForeColor(OLE_COLOR* pclrForeColor);
 
 ### <a name="parameters"></a>Parametreler
 
-*pclrForeColor*  
+*pclrForeColor*<br/>
 Değişken, denetimleri ön plan rengini alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -517,7 +517,7 @@ HRESULT STDMETHODCALLTYPE get_HWND(LONG_PTR* phWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*phWnd*  
+*phWnd*<br/>
 Denetimle ilişkili pencere tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -534,7 +534,7 @@ HRESULT STDMETHODCALLTYPE get_MouseIcon(IPictureDisp** ppPicture);
 
 ### <a name="parameters"></a>Parametreler
 
-*ppPicture*  
+*ppPicture*<br/>
 Değişken, grafik resim özellikleri için bir işaretçi alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -551,7 +551,7 @@ HRESULT STDMETHODCALLTYPE get_MousePointer(LONG* pnMousePointer);
 
 ### <a name="parameters"></a>Parametreler
 
-*pnMousePointer*  
+*pnMousePointer*<br/>
 Değişken, fare işaretçisini türünü alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -568,7 +568,7 @@ HRESULT STDMETHODCALLTYPE get_Picture(IPictureDisp** ppPicture);
 
 ### <a name="parameters"></a>Parametreler
 
-*ppPicture*  
+*ppPicture*<br/>
 Değişken, resmin özellikleri için bir işaretçi alır. Bkz: [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) daha fazla ayrıntı için.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -585,7 +585,7 @@ HRESULT STDMETHODCALLTYPE get_ReadyState(LONG* pnReadyState);
 
 ### <a name="parameters"></a>Parametreler
 
-*pnReadyState*  
+*pnReadyState*<br/>
 Değişken, denetimin hazır durumunu alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -602,7 +602,7 @@ HRESULT STDMETHODCALLTYPE get_TabStop(VARIANT_BOOL* pbTabStop);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbTabStop*  
+*pbTabStop*<br/>
 Değişken, bayrak durumunu alır. TRUE, denetimin sekme durağı olduğunu gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -619,7 +619,7 @@ HRESULT STDMETHODCALLTYPE get_Text(BSTR* pbstrText);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbstrText*  
+*pbstrText*<br/>
 Denetim ile görüntülenen metin.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -636,7 +636,7 @@ HRESULT STDMETHODCALLTYPE getvalid(VARIANT_BOOL* pbValid);
 
 ### <a name="parameters"></a>Parametreler
 
-*pbValid*  
+*pbValid*<br/>
 Değişken, bayrak durumunu alır. TRUE, denetimin geçerli olduğunu gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -653,7 +653,7 @@ HRESULT STDMETHODCALLTYPE get_Window(LONG_PTR* phWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*phWnd*  
+*phWnd*<br/>
 Denetimle ilişkili pencere tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -670,7 +670,7 @@ HRESULT STDMETHODCALLTYPE put_Appearance(SHORT nAppearance);
 
 ### <a name="parameters"></a>Parametreler
 
-*nAppearance*  
+*nAppearance*<br/>
 Denetim tarafından kullanılmak üzere yeni Boya stili.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -687,7 +687,7 @@ HRESULT STDMETHODCALLTYPE put_AutoSize(VARIANT_BOOL bAutoSize,);
 
 ### <a name="parameters"></a>Parametreler
 
-*bAutoSize*  
+*bAutoSize*<br/>
 Denetim, diğer herhangi bir boyutta olamaz, TRUE.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -704,7 +704,7 @@ HRESULT STDMETHODCALLTYPE put_BackColor(OLE_COLOR clrBackColor);
 
 ### <a name="parameters"></a>Parametreler
 
-*clrBackColor*  
+*clrBackColor*<br/>
 Yeni denetim arka plan rengi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -721,7 +721,7 @@ HRESULT STDMETHODCALLTYPE put_BackStyle(LONG nBackStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*nBackStyle*  
+*nBackStyle*<br/>
 Yeni denetim arka plan stili.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -738,7 +738,7 @@ HRESULT STDMETHODCALLTYPE put_BorderColor(OLE_COLOR clrBorderColor);
 
 ### <a name="parameters"></a>Parametreler
 
-*clrBorderColor*  
+*clrBorderColor*<br/>
 Yeni kenarlık rengi. OLE_COLOR veri türü, dahili olarak bir 32-bit uzun tamsayı olarak temsil edilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -755,7 +755,7 @@ HRESULT STDMETHODCALLTYPE put_BorderStyle(LONG nBorderStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*nBorderStyle*  
+*nBorderStyle*<br/>
 Yeni kenarlık stili.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -772,7 +772,7 @@ HRESULT STDMETHODCALLTYPE put_BorderVisible(VARIANT_BOOL bBorderVisible);
 
 ### <a name="parameters"></a>Parametreler
 
-*bBorderVisible*  
+*bBorderVisible*<br/>
 Kenarlık görünür olması gerekiyorsa TRUE.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -789,7 +789,7 @@ HRESULT STDMETHODCALLTYPE put_BorderWidth(LONG nBorderWidth);
 
 ### <a name="parameters"></a>Parametreler
 
-*nBorderWidth*  
+*nBorderWidth*<br/>
 Yeni Denetimin kenarlık genişliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -806,7 +806,7 @@ HRESULT STDMETHODCALLTYPE put_Caption(BSTR bstrCaption);
 
 ### <a name="parameters"></a>Parametreler
 
-*bstrCaption*  
+*bstrCaption*<br/>
 Denetimle görüntülenecek metin.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -823,7 +823,7 @@ HRESULT STDMETHODCALLTYPE put_DrawMode(LONG nDrawMode);
 
 ### <a name="parameters"></a>Parametreler
 
-*nDrawMode*  
+*nDrawMode*<br/>
 Denetim için yeni çizim modu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -840,7 +840,7 @@ HRESULT STDMETHODCALLTYPE put_DrawStyle(LONG pnDrawStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*nDrawStyle*  
+*nDrawStyle*<br/>
 Denetim için yeni çizim stili.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -857,7 +857,7 @@ HRESULT STDMETHODCALLTYPE put_DrawWidth(LONG nDrawWidth);
 
 ### <a name="parameters"></a>Parametreler
 
-*nDrawWidth*  
+*nDrawWidth*<br/>
 Yöntemleri çizim denetimi tarafından kullanılmak üzere yeni genişliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -874,7 +874,7 @@ HRESULT STDMETHODCALLTYPE put_Enabled(VARIANT_BOOL bEnabled);
 
 ### <a name="parameters"></a>Parametreler
 
-*bEtkin*  
+*bEtkin*<br/>
 Denetimin etkin olması halinde TRUE.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -891,7 +891,7 @@ HRESULT STDMETHODCALLTYPE put_FillColor(OLE_COLOR clrFillColor);
 
 ### <a name="parameters"></a>Parametreler
 
-*clrFillColor*  
+*clrFillColor*<br/>
 Denetim için yeni dolgu rengi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -908,7 +908,7 @@ HRESULT STDMETHODCALLTYPE put_FillStyle(LONG nFillStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*nFillStyle*  
+*nFillStyle*<br/>
 Denetim için yeni dolgu stili.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -925,7 +925,7 @@ HRESULT STDMETHODCALLTYPE put_Font(IFontDisp* pFont);
 
 ### <a name="parameters"></a>Parametreler
 
-*pFont*  
+*pFont*<br/>
 Denetim yazı tipi özellikleri için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -942,7 +942,7 @@ HRESULT STDMETHODCALLTYPE put_ForeColor(OLE_COLOR clrForeColor);
 
 ### <a name="parameters"></a>Parametreler
 
-*clrForeColor*  
+*clrForeColor*<br/>
 Denetim yeni ön plan rengi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -959,7 +959,7 @@ HRESULT STDMETHODCALLTYPE put_HWND(LONG_PTR /* hWnd */);
 
 ### <a name="parameters"></a>Parametreler
 
-*/&ast; hWnd &ast;/*  
+*/&ast; hWnd &ast;/*<br/>
 Ayrılmış.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -980,7 +980,7 @@ HRESULT STDMETHODCALLTYPE put_MouseIcon(IPictureDisp* pPicture);
 
 ### <a name="parameters"></a>Parametreler
 
-*pPicture*  
+*pPicture*<br/>
 Grafik resim özellikleri için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -997,7 +997,7 @@ HRESULT STDMETHODCALLTYPE put_MousePointer(LONG nMousePointer);
 
 ### <a name="parameters"></a>Parametreler
 
-*nMousePointer*  
+*nMousePointer*<br/>
 Fare işaretçisi türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1014,7 +1014,7 @@ HRESULT STDMETHODCALLTYPE put_Picture(IPictureDisp* pPicture);
 
 ### <a name="parameters"></a>Parametreler
 
-*pPicture*  
+*pPicture*<br/>
 Resmin özellikleri için bir işaretçi. Bkz: [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) daha fazla ayrıntı için.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1031,7 +1031,7 @@ HRESULT STDMETHODCALLTYPE put_ReadyState(LONG nReadyState);
 
 ### <a name="parameters"></a>Parametreler
 
-*nReadyState*  
+*nReadyState*<br/>
 Denetimin hazır durumda.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1048,7 +1048,7 @@ HRESULT STDMETHODCALLTYPE put_TabStop(VARIANT_BOOL bTabStop);
 
 ### <a name="parameters"></a>Parametreler
 
-*bTabStop*  
+*bTabStop*<br/>
 Denetimin sekme durağı ise TRUE.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1065,7 +1065,7 @@ HRESULT STDMETHODCALLTYPE put_Text(BSTR bstrText);
 
 ### <a name="parameters"></a>Parametreler
 
-*bstrText*  
+*bstrText*<br/>
 Denetim ile görüntülenen metin.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1082,7 +1082,7 @@ HRESULT STDMETHODCALLTYPE getvalid(VARIANT_BOOL bValid);
 
 ### <a name="parameters"></a>Parametreler
 
-*bValid*  
+*bValid*<br/>
 Denetim geçerli ise TRUE.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1099,7 +1099,7 @@ HRESULT STDMETHODCALLTYPE put_Window(LONG_PTR hWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*  
+*hWnd*<br/>
 Pencere tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1120,7 +1120,7 @@ HRESULT STDMETHODCALLTYPE putref_Font(IFontDisp* pFont);
 
 ### <a name="parameters"></a>Parametreler
 
-*pFont*  
+*pFont*<br/>
 Denetim yazı tipi özellikleri için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1141,7 +1141,7 @@ HRESULT STDMETHODCALLTYPE putref_MouseIcon(IPictureDisp* pPicture);
 
 ### <a name="parameters"></a>Parametreler
 
-*pPicture*  
+*pPicture*<br/>
 Grafik resim özellikleri için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1162,7 +1162,7 @@ HRESULT STDMETHODCALLTYPE putref_Picture(IPictureDisp* pPicture);
 
 ### <a name="parameters"></a>Parametreler
 
-*pPicture*  
+*pPicture*<br/>
 Resmin özellikleri için bir işaretçi. Bkz: [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) daha fazla ayrıntı için.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1175,5 +1175,5 @@ Aynı [CStockPropImpl::put_Picture](#put_picture), ancak bir başvuru sayısı.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [IDispatchImpl Sınıfı](../../atl/reference/idispatchimpl-class.md)

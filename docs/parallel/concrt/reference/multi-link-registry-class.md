@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5fbe52298f267fabb2ba326e3e1c7b66f4ad49ef
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 93d13e7d74a499091a8ad0c592b3cee45a9bbb5e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688940"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029604"
 ---
 # <a name="multilinkregistry-class"></a>multi_link_registry Sınıfı
-`multi_link_registry` Nesne bir `network_link_registry` birden çok kaynak blokları veya birden çok hedef blokları yönetir.  
+`multi_link_registry` Nesnesi bir `network_link_registry` birden çok kaynak bloklar veya birden çok hedef bloğa yönetir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,8 +42,8 @@ class multi_link_registry : public network_link_registry<_Block>;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_Block`  
- Blok veri türü depolanıyor `multi_link_registry` nesnesi.  
+*Girildiğinde _bloğu*<br/>
+Blok veri türü içinde depolanan `multi_link_registry` nesne.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -51,19 +51,19 @@ class multi_link_registry : public network_link_registry<_Block>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[multi_link_registry](#ctor)|Oluşturan bir `multi_link_registry` nesnesi.|  
-|[~ multi_link_registry yok Edicisi](#dtor)|Bozar `multi_link_registry` nesnesi.|  
+|[multi_link_registry](#ctor)|Oluşturur bir `multi_link_registry` nesne.|  
+|[~ multi_link_registry yok Edicisi](#dtor)|Yok eder `multi_link_registry` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[add](#add)|Bir bağlantı ekler `multi_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::add](network-link-registry-class.md#add).)|  
-|[Başlangıç](#begin)|Yineleyici ilk öğe döndürür `multi_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::begin](network-link-registry-class.md#begin).)|  
-|[içerir](#contains)|Aramaları `multi_link_registry` belirtilen bloğu için nesnesi. (Geçersiz kılmaları [network_link_registry::contains](network-link-registry-class.md#contains).)|  
-|[Sayısı](#count)|Öğeleri sayar `multi_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::count](network-link-registry-class.md#count).)|  
-|[remove](#remove)|Bir bağlantıdan kaldırır `multi_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::remove](network-link-registry-class.md#remove).)|  
-|[set_bound](#set_bound)|Bağlantı sayısı üst sınırı ayarlayan `multi_link_registry` hold nesnesi.|  
+|[add](#add)|Bir bağlantı ekler `multi_link_registry` nesne. (Geçersiz kılmaları [network_link_registry::add](network-link-registry-class.md#add).)|  
+|[başlayın](#begin)|İçindeki ilk öğeye bir yineleyici döndüren `multi_link_registry` nesne. (Geçersiz kılmaları [network_link_registry::begin](network-link-registry-class.md#begin).)|  
+|[içerir](#contains)|Aramalar `multi_link_registry` belirtilen bloğu için nesne. (Geçersiz kılmaları [network_link_registry::contains](network-link-registry-class.md#contains).)|  
+|[Sayısı](#count)|Öğeleri sayar `multi_link_registry` nesne. (Geçersiz kılmaları [network_link_registry::count](network-link-registry-class.md#count).)|  
+|[remove](#remove)|Bir bağlantıdan kaldırır `multi_link_registry` nesne. (Geçersiz kılmaları [network_link_registry::remove](network-link-registry-class.md#remove).)|  
+|[set_bound](#set_bound)|Bağlantı sayısı üzerinde bir üst sınır ayarlar `multi_link_registry` nesne tutabilir.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [network_link_registry](network-link-registry-class.md)  
@@ -77,62 +77,62 @@ class multi_link_registry : public network_link_registry<_Block>;
   
 ##  <a name="add"></a> Ekleme 
 
- Bir bağlantı ekler `multi_link_registry` nesnesi.  
+ Bir bağlantı ekler `multi_link_registry` nesne.  
   
 ```
 virtual void add(_EType _Link);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Link`  
- Eklenecek bir bloğu için bir işaretçi.  
+*_Bağla*<br/>
+Eklenecek bir blok için işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yöntem oluşturulur bir [invalid_link_target](invalid-link-target-class.md) özel durum bağlantıyı kayıt defterinde zaten varsa veya bir bağlama zaten ayarlanmış ile `set_bound` işlevi ve bağlantı kaldırılmışsa.  
+ Çağırılıyorsa yöntem bir [invalid_link_target](invalid-link-target-class.md) özel durum bağlantıyı kayıt defterinde zaten varsa veya bir sınır varsa zaten ayarlanmış ile `set_bound` işlevi ve bir bağlantı kaldırılmışsa.  
   
-##  <a name="begin"></a> Başlangıç 
+##  <a name="begin"></a> başlayın 
 
- Yineleyici ilk öğe döndürür `multi_link_registry` nesnesi.  
+ İçindeki ilk öğeye bir yineleyici döndüren `multi_link_registry` nesne.  
   
 ```
 virtual iterator begin();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İlk öğe adresleme yineleyici `multi_link_registry` nesnesi.  
+ İçindeki ilk öğeyi ele alan bir yineleyici `multi_link_registry` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Son durum belirtilir bir `NULL` bağlantı.  
+ Son durum tarafından belirtilen bir `NULL` bağlantı.  
   
 ##  <a name="contains"></a> içerir 
 
- Aramaları `multi_link_registry` belirtilen bloğu için nesnesi.  
+ Aramalar `multi_link_registry` belirtilen bloğu için nesne.  
   
 ```
 virtual bool contains(_EType _Link);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Link`  
- İçinde aranacak bir bloğu için bir işaretçi `multi_link_registry` nesnesi.  
+*_Bağla*<br/>
+İçinde arama yapılacak olan bloğu için bir işaretçi `multi_link_registry` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` Belirtilen blok bulunduysa `false` Aksi takdirde.  
+ `true` Belirtilen bloğu bulunduysa `false` Aksi takdirde.  
   
 ##  <a name="count"></a> Sayısı 
 
- Öğeleri sayar `multi_link_registry` nesnesi.  
+ Öğeleri sayar `multi_link_registry` nesne.  
   
 ```
 virtual size_t count();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Öğelerin sayısı `multi_link_registry` nesnesi.  
+ Öğe sayısını `multi_link_registry` nesne.  
   
 ##  <a name="ctor"></a> multi_link_registry 
 
- Oluşturan bir `multi_link_registry` nesnesi.  
+ Oluşturur bir `multi_link_registry` nesne.  
   
 ```
 multi_link_registry();
@@ -140,44 +140,44 @@ multi_link_registry();
   
 ##  <a name="dtor"></a> ~ multi_link_registry 
 
- Bozar `multi_link_registry` nesnesi.  
+ Yok eder `multi_link_registry` nesne.  
   
 ```
 virtual ~multi_link_registry();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yöntem oluşturulur bir [invalid_operation](invalid-operation-class.md) tüm bağlantılar kaldırılır önce çağırılır, özel durum.  
+ Çağırılıyorsa yöntem bir [invalid_operation](invalid-operation-class.md) tüm bağlantıları kaldırılmadan önce çağrılırsa bir özel durum.  
   
 ##  <a name="remove"></a> Kaldır 
 
- Bir bağlantıdan kaldırır `multi_link_registry` nesnesi.  
+ Bir bağlantıdan kaldırır `multi_link_registry` nesne.  
   
 ```
 virtual bool remove(_EType _Link);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Link`  
- Bir blok, kaldırılması için bir işaretçi bulundu.  
+*_Bağla*<br/>
+Bir blok, kaldırılacak işaretçisi bulunamadı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` bağlantı bulundu ve kaldırıldı, `false` Aksi takdirde.  
+ `true` bağlantıyı bulunan ve kaldırılmış `false` Aksi takdirde.  
   
 ##  <a name="set_bound"></a> set_bound 
 
- Bağlantı sayısı üst sınırı ayarlayan `multi_link_registry` hold nesnesi.  
+ Bağlantı sayısı üzerinde bir üst sınır ayarlar `multi_link_registry` nesne tutabilir.  
   
 ```
 void set_bound(size_t _MaxLinks);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_MaxLinks`  
- En fazla bağlantı `multi_link_registry` hold nesnesi.  
+*_MaxLinks*<br/>
+En fazla bağlantılar `multi_link_registry` nesne tutabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bağımlı ayarlandıktan sonra bir giriş kaynağınızın neden olur `multi_link_registry` değişmez durumuna girmesini nesnesine burada çağrıları daha fazla `add` özel durum oluşturacak bir `invalid_link_target` özel durum.  
+ Bağımlı ayarlandıktan sonra bir giriş bağlantısını neden olacak `multi_link_registry` nesne değişmez bir duruma girmesini çağrıları burada daha fazla `add` oluşturmaz bir `invalid_link_target` özel durum.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5244990d720cd36e0a040e9243067e49716d2549
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 537785bab555bffb5278da27926b4adbb1a6f226
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754771"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022025"
 ---
 # <a name="ccrtheap-class"></a>CCRTHeap sınıfı
 
@@ -77,7 +77,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBytes*  
+*nBytes*<br/>
 İstenen bayt yeni bellek bloğu sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -100,7 +100,7 @@ virtual void Free(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi. NULL, geçerli bir değer ve hiçbir şey yapmaz.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -117,7 +117,7 @@ virtual size_t GetSize(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -138,10 +138,10 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi.
 
-*nBytes*  
+*nBytes*<br/>
 İstenen bayt yeni bellek bloğu sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -154,9 +154,9 @@ Yeni ayrılan bellek bloğu başlangıcı için bir işaretçi döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
-[CComHeap sınıfı](../../atl/reference/ccomheap-class.md)   
-[CWin32Heap sınıfı](../../atl/reference/cwin32heap-class.md)   
-[CLocalHeap sınıfı](../../atl/reference/clocalheap-class.md)   
-[CGlobalHeap sınıfı](../../atl/reference/cglobalheap-class.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[CComHeap Sınıfı](../../atl/reference/ccomheap-class.md)<br/>
+[CWin32Heap Sınıfı](../../atl/reference/cwin32heap-class.md)<br/>
+[CLocalHeap Sınıfı](../../atl/reference/clocalheap-class.md)<br/>
+[CGlobalHeap Sınıfı](../../atl/reference/cglobalheap-class.md)<br/>
 [IAtlMemMgr Sınıfı](../../atl/reference/iatlmemmgr-class.md)

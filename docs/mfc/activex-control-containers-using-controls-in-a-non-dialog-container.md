@@ -18,57 +18,57 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16264e9b072d27349d4375bd7c04d5bbac1be597
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e190eb76702b1c6d246ac2aee9c22021955af7f8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33324908"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028109"
 ---
 # <a name="activex-control-containers-using-controls-in-a-non-dialog-container"></a>ActiveX Denetim Kapsayıcıları: İletişim Kutusu Dışındaki Kapsayıcılarda Denetimleri Kullanma
-Bazı bir SDI gibi uygulamaları veya MDI uygulama uygulama penceresinde bir denetim eklemek istersiniz. **Oluşturma** Visual C++ tarafından eklenen sarmalayıcı sınıfının üye işlevini oluşturabilirsiniz denetim örneği dinamik olarak bir iletişim kutusu gerek kalmadan.  
+Bazı gibi bir SDI uygulamaları veya MDI uygulaması, bir uygulama penceresinde bir denetim eklemek isteyeceksiniz. **Oluştur** Visual C++ tarafından eklenen sarmalayıcı sınıfının üye işlevinde bir örneğini oluşturabilirsiniz denetimi dinamik olarak bir iletişim kutusu gerek kalmadan.  
   
- **Oluşturma** üye işlevi aşağıdaki parametreleri vardır:  
+ **Oluştur** üye işlevi aşağıdaki parametrelere sahiptir:  
   
- `lpszWindowName`  
- (Varsa) denetimin metin veya resim yazısı özelliğini görüntülenecek metni için bir işaretçi.  
+*lpszWindowName*<br/>
+Bir işaretçi (varsa) denetimin metin veya resim yazısı özelliğini görüntülenecek metin.  
   
- `dwStyle`  
- Windows stilleri. Tam bir listesi için bkz: [CWnd::CreateControl](../mfc/reference/cwnd-class.md#createcontrol).  
+*dwStyle*<br/>
+Windows stilleri. Tam bir listesi için bkz. [CWnd::CreateControl](../mfc/reference/cwnd-class.md#createcontrol).  
   
- `rect`  
- Denetimin boyutunu ve konumunu belirtir.  
+*Rect*<br/>
+Denetimin boyutunu ve konumunu belirtir.  
   
- `pParentWnd`  
- Denetimin ana penceresinde, genellikle belirten bir `CDialog`. Değil olmalıdır **NULL**.  
+*pParentWnd*<br/>
+Denetiminin üst penceresine, genellikle belirtir bir `CDialog`. Değil olmalıdır **NULL**.  
   
- `nID`  
- Denetim Kimliği belirtir ve kapsayıcı tarafından denetimine başvurmak için kullanılabilir.  
+*nID*<br/>
+Denetim Kimliği belirtir ve kapsayıcı tarafından denetime başvurmak için kullanılabilir.  
   
- Dinamik olarak bir ActiveX denetimi oluşturmak için bu işlevi kullanarak bir örnek bir SDI uygulama form görünümünde olacaktır. Daha sonra denetimi örneği oluşturabilirsiniz `WM_CREATE` uygulamanın işleyici.  
+ ActiveX denetimi dinamik olarak oluşturmak için bu işlevi kullanarak bir örnek, bir SDI uygulaması form görünümünde olacaktır. Daha sonra denetimi örneği oluşturabilirsiniz `WM_CREATE` uygulamasının işleyicisi.  
   
- Bu örnek için `CMyView` ana görünüm sınıfı `CCirc` sarmalayıcı sınıfı ve CIRC. H ise üstbilgi (. H) sarmalayıcı sınıfı dosyası.  
+ Bu örnekte, `CMyView` ana görünüm sınıfı `CCirc` CIRC. ve sarmalayıcı sınıfı H ise üst bilgisi (. H) dosyası sarmalayıcı sınıf.  
   
- Bu özellik uygulama dört adımlı bir işlemdir.  
+ Bu özelliği uygulamak dört adımlık bir işlemdir.  
   
-### <a name="to-dynamically-create-an-activex-control-in-a-non-dialog-window"></a>Dinamik olarak bir iletişim kutusu dışındaki penceresinde bir ActiveX denetimi oluşturulamıyor  
+### <a name="to-dynamically-create-an-activex-control-in-a-non-dialog-window"></a>Dinamik olarak bir iletişim kutusu dışındaki penceresinde bir ActiveX denetimi oluşturmak için  
   
-1.  CIRC. Ekle CMYVIEW H. H, hemen önce `CMyView` sınıf tanımı:  
+1.  CIRC. Ekle CMYVIEW H. H, hemen önce `CMyView` sınıf tanımını:  
   
      [!code-cpp[NVC_MFC_AxCont#12](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_1.h)]  
   
-2.  Üye değişkeni ekleme (türünde `CCirc`) korumalı bölümüne `CMyView` sınıf tanımının CMYVIEW içinde bulunur. Y:  
+2.  Üye değişkeni ekleme (tür `CCirc`) korumalı bölümüne `CMyView` sınıf tanımını CMYVIEW içinde bulunur. Y:  
   
      [!code-cpp[NVC_MFC_AxCont#13](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_2.h)]  
     [!code-cpp[NVC_MFC_AxCont#14](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_3.h)]  
   
 3.  Ekleme bir `WM_CREATE` sınıfı için ileti işleyicisi `CMyView`.  
   
-4.  İşleyici işlevindeki `CMyView::OnCreate`, denetimin çağırmaya `Create` kullanarak işlev **bu** işaretçi üst pencere olarak:  
+4.  İşleyici işlevindeki `CMyView::OnCreate`, denetimin çağrı yapmak `Create` kullanarak bu işlevi **bu** işaretçi üst pencere olarak:  
   
      [!code-cpp[NVC_MFC_AxCont#15](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_4.cpp)]  
   
-5.  Projeyi yeniden oluşturun. Uygulamanın görünümü oluşturulduğunda Dai denetim dinamik olarak oluşturulur.  
+5.  Projeyi yeniden derleyin. Uygulamanın görünümü oluşturulduğunda Dai denetimi dinamik olarak oluşturulur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)

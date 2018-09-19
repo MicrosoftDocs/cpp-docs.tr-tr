@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18cc222129f3f12b5e7b5c6cb66e090907ff42a3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: adac1e6f6e5f5d58b6091a389537a42f0e496b31
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197383"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020205"
 ---
 # <a name="compiler-error-c2341"></a>Derleyici Hatası C2341
-'bölüm adı': segment #pragma data_seg, code_seg veya önceki bölümde kullanılacak kullanılarak tanımlanması gerekir  
-  
- Bir [tahsis](../../cpp/allocate.md) henüz tarafından tanımlanan segmenti başvurduğu deyimi [code_seg](../../preprocessor/code-seg.md), [data_seg](../../preprocessor/data-seg.md), veya [bölüm](../../preprocessor/section.md) pragmaları.  
-  
- Aşağıdaki örnek C2341 oluşturur:  
-  
-```  
-// C2341.cpp  
-// compile with: /c  
-__declspec(allocate(".test"))   // C2341  
-int j = 1;  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C2341b.cpp  
-// compile with: /c  
-#pragma data_seg(".test")  
-__declspec(allocate(".test"))  
-int j = 1;  
+
+'bölüm adı': kesim kullanmak için kullanılmadan önce #pragma data_seg, code_seg veya section kullanılarak tanımlanmalıdır
+
+Bir [tahsis](../../cpp/allocate.md) deyimi tarafından henüz tanımlanmamış bir segment başvurduğu [code_seg](../../preprocessor/code-seg.md), [data_seg](../../preprocessor/data-seg.md), veya [bölümü](../../preprocessor/section.md) pragmaları.
+
+Aşağıdaki örnek, C2341 oluşturur:
+
+```
+// C2341.cpp
+// compile with: /c
+__declspec(allocate(".test"))   // C2341
+int j = 1;
+```
+
+Olası çözüm:
+
+```
+// C2341b.cpp
+// compile with: /c
+#pragma data_seg(".test")
+__declspec(allocate(".test"))
+int j = 1;
 ```

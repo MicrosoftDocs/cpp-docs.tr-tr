@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 979dcfee8733a7e575170c36e90ec36bbd4ff154
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2ec81b9c720d1dfc5a629faaa74fb321cdf93b4b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170167"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020610"
 ---
 # <a name="compiler-error-c2195"></a>Derleyici Hatası C2195
-'tanımlayıcısı': bir veri kesim  
-  
- `code_seg` Pragma kullanan ile kullanılan bir segment adı `data_seg` pragması.  
-  
- Aşağıdaki örnek C2195 oluşturur:  
-  
-```  
-// C2195.cpp  
-#pragma data_seg("MYDATA")  
-#pragma code_seg("MYDATA")   // C2195  
-#pragma code_seg("MYDATA2")   // OK  
+
+'identifier': bir veri kesimi
+
+`code_seg` Pragma ile kullanılan bir segment adı kullanan `data_seg` pragması.
+
+Aşağıdaki örnek, C2195 oluşturur:
+
+```
+// C2195.cpp
+#pragma data_seg("MYDATA")
+#pragma code_seg("MYDATA")   // C2195
+#pragma code_seg("MYDATA2")   // OK
 ```

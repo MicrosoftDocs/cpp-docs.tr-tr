@@ -35,29 +35,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2780697c1a50e15e170f2096a2841e2c50d844a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 107b759345e221ad8100f11d97b79c5bd9fd2b65
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724691"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031452"
 ---
 # <a name="try-except-statement"></a>try-except Deyimi
 
 **Microsoft'a özgü**
 
-**Deneyin-dışında** ifadesi bir Microsoft uzantısı c ve C++ dilleri destekleyen yapılandırılmış özel durum işleme.  
+**Deneyin-dışında** ifadesi bir Microsoft uzantısı c ve C++ dilleri destekleyen yapılandırılmış özel durum işleme.
 
-## <a name="syntax"></a>Sözdizimi  
-  
-> **__try**   
-> {  
->    Korumalı kod  
-> }  
-> **__except** ( *ifade* )  
-> {  
->    özel durum işleyici kodu  
-> }  
+## <a name="syntax"></a>Sözdizimi
+
+> **__try** {/ / korumalı kod} **__except** ( *ifade* ) {/ / özel durum işleyicisi kodunu}
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -74,7 +67,7 @@ Sonra gelen bileşik deyim **__try** yan tümcesi ise gövdedir veya korunan bö
 
 1. Korunan bölüm yürütülür.
 
-2. Korunan bölümün yürütülmesi sırasında hiçbir özel durum oluşursa yürütme tümcesinden sonraki deyimden devam eder **__except** yan tümcesi.  
+2. Korunan bölümün yürütülmesi sırasında hiçbir özel durum oluşursa yürütme tümcesinden sonraki deyimden devam eder **__except** yan tümcesi.
 
 3. Özel bir durum oluştuğunda korunan bölümün yürütülmesi sırasında veya korunan bölümün çağırdığı herhangi bir yordamda **__except** *ifade* (adlı *filtre* ifade) değerlendirilir ve değer özel durumun nasıl işlendiğini belirler. Üç değer vardır:
 
@@ -88,10 +81,10 @@ Sonra gelen bileşik deyim **__try** yan tümcesi ise gövdedir veya korunan bö
 
 Her uygulamanın kendi özel durum işleyicisi olabilir.
 
-İçine atlanamaz değil bir **__try** deyimi, ancak herhangi birinden dışarı atlanabilir. Özel durum işleyicisi bir işlem yürütülürken sonlandırılırsa sonlandırılırsa çağrılmaz bir **deneyin-dışında** deyimi.  
-  
-Daha fazla bilgi için bkz. Bilgi Bankası makalesi Q315937 : NASIL YAPILIR: Visual C++ Uygulamasında Yığın Taşmasını Yakalama.  
-  
+İçine atlanamaz değil bir **__try** deyimi, ancak herhangi birinden dışarı atlanabilir. Özel durum işleyicisi bir işlem yürütülürken sonlandırılırsa sonlandırılırsa çağrılmaz bir **deneyin-dışında** deyimi.
+
+Daha fazla bilgi için bkz. Bilgi Bankası makalesi Q315937 : NASIL YAPILIR: Visual C++ Uygulamasında Yığın Taşmasını Yakalama.
+
 ## <a name="the-leave-keyword"></a>__leave Anahtar Sözcüğü
 
 **__Leave** anahtar sözcüğü yalnızca korunan bölümünde geçerlidir bir **deneyin-dışında** deyimi ve etkisi korunan bölümün sonuna atlama etmektir. Yürütme, özel durum işleyicisinden sonra ilk deyimde devam eder.
@@ -106,12 +99,12 @@ Yapılandırılmış özel durum işleme ile kullanılabilecek iki iç işlev sa
 
 İç işlevi `GetExceptionInformation` özel durum hakkında ek bilgi içeren bir yapıya bir işaretçi döndürür. Bu işaretçiyle, donanım özel durumu sırasında var olan makine durumuna erişebilirsiniz. Yapı aşağıdaki gibidir:
 
-```cpp  
+```cpp
 typedef struct _EXCEPTION_POINTERS {
     PEXCEPTION_RECORD ExceptionRecord;
     PCONTEXT ContextRecord;
-} EXCEPTION_POINTERS, *PEXCEPTION_POINTERS; 
-```  
+} EXCEPTION_POINTERS, *PEXCEPTION_POINTERS;
+```
 
 İşaretçi türleri `PEXCEPTION_RECORD` ve `PCONTEXT` içerme dosyasında tanımlanır \<winnt.h >, ve `_EXCEPTION_RECORD` ve `_CONTEXT` içerme dosyasında tanımlanır \<excpt.h >
 
@@ -123,10 +116,10 @@ excpt.h, bu iç öğeler için bazı alternatif adlar tanımlar:
 
 `GetExceptionCode` eşdeğerdir `_exception_code`
 
- `GetExceptionInformation` eşdeğerdir `_exception_info`
+`GetExceptionInformation` eşdeğerdir `_exception_info`
 
- `AbnormalTermination` eşdeğerdir `_abnormal_termination`
-  
+`AbnormalTermination` eşdeğerdir `_abnormal_termination`
+
 ## <a name="example"></a>Örnek
 
 ```cpp
@@ -176,24 +169,25 @@ int main()
     puts("world");
 }
 ```
-  
-## <a name="output"></a>Çıkış  
-  
-```Output 
-hello  
-in try  
-in try  
-in filter.  
-caught AV as expected.  
-in finally. termination:  
-        abnormal  
-in except  
-world  
-```  
 
-**END Microsoft özgü**  
+## <a name="output"></a>Çıkış
+
+```Output
+hello
+in try
+in try
+in filter.
+caught AV as expected.
+in finally. termination:
+        abnormal
+in except
+world
+```
+
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Bir özel durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)   
- [Yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)   
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)
+
+[Özel Durum İşleyicisi Yazma](../cpp/writing-an-exception-handler.md)<br/>
+[Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)<br/>
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

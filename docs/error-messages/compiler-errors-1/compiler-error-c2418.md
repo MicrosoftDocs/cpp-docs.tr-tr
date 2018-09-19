@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6943b939fbc7095f8cbdd058ea10a7dc25f84476
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: abbc4e0f0cc74ff704f74bef66a913b37cec5f7b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197019"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024675"
 ---
 # <a name="compiler-error-c2418"></a>Derleyici Hatası C2418
-Tarayıcı dosyası silinemiyor: dosya adı  
-  
- Derleyici tarayıcı dosyası silinemedi.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Dosya salt okunur durumdadır.  
-  
-2.  Dosya başka bir işlem tarafından kullanılıyor.
+
+Tarayıcı dosyası silinemiyor: dosya adı
+
+Derleyici, tarayıcı dosyasını silemedi.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Dosya salt okunur.
+
+1. Dosya başka bir işlem tarafından kullanılıyor.

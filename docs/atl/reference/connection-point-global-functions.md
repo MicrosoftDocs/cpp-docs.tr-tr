@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f68c22ff88ac92357dabfef8076c160271a76378
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 12976bcf796466f959807f7ac2fb52257889454b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756496"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025548"
 ---
 # <a name="connection-point-global-functions"></a>Bağlantı noktası genel işlevleri
 
@@ -59,16 +59,16 @@ HRESULT    AtlAdvise(
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnkCP*  
+*pUnkCP*<br/>
 [in] Bir işaretçi `IUnknown` bağlanmak istemci nesne istemektedir.
 
-*pUnk*  
+*pUnk*<br/>
 [in] İstemcinin bir işaretçiye `IUnknown`.
 
-*IID*  
+*IID*<br/>
 [in] Bağlantı noktası GUİD'si. Genellikle, bu bağlantı noktası tarafından yönetilen giden arabirimi aynıdır.
 
-*PDW*  
+*PDW*<br/>
 [out] Bağlantı benzersiz olarak tanıtan bir tanımlama bilgisi için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -99,13 +99,13 @@ HRESULT    AtlUnadvise(
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnkCP*  
+*pUnkCP*<br/>
 [in] Bir işaretçi `IUnknown` istemci ile bağlı nesne.
 
-*IID*  
+*IID*<br/>
 [in] Bağlantı noktası GUİD'si. Genellikle, bu bağlantı noktası tarafından yönetilen giden arabirimi aynıdır.
 
-*dw*  
+*dw*<br/>
 [in] Bağlantı benzersiz olarak tanımlayan tanımlama bilgisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -129,10 +129,10 @@ HRESULT AtlAdviseSinkMap(T* pT, bool bAdvise);
 
 ### <a name="parameters"></a>Parametreler
 
-*PT*  
+*PT*<br/>
 [in] Havuz harita içeren nesneye bir işaretçi.
 
-*bAdvise*  
+*bAdvise*<br/>
 [in] Tüm havuz girişleri olun gerekiyorsa TRUE; Tüm havuz girişleri unadvised olması gerekiyorsa FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -145,5 +145,5 @@ Standart bir HRESULT değerini.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İşlevleri](../../atl/reference/atl-functions.md)   
+[İşlevler](../../atl/reference/atl-functions.md)<br/>
 [Bağlantı Noktası Makroları](../../atl/reference/connection-point-macros.md)

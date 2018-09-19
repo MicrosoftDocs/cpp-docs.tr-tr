@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62e81b7cab8d7e8774e6ac50c5de5f256d76b232
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: a91cbb816deb18d9c4cf7356faa879c09a9d276c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33686496"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025210"
 ---
 # <a name="tilebarrier-class"></a>tile_barrier Sınıfı
-İş parçacığı grubu (döşeme) kullanarak çalışan iş parçacıklarının yürütülmesine eşitler `wait` yöntemleri. Yalnızca çalışma zamanı bu sınıfın örneğini oluşturabilirsiniz.  
+Kullanarak iş parçacığı grubunda (döşeme) çalışan iş parçacıklarının yürütülmesini eşitler `wait` yöntemleri. Yalnızca çalışma zamanı bu sınıfın örneğini oluşturabilir.  
   
 ### <a name="syntax"></a>Sözdizimi 
   
@@ -50,10 +50,10 @@ class tile_barrier;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[bekleme](#wait)|Tüm iş parçacıklarının grubundaki tüm iş parçacıklarının döşemesinin bekleme bitinceye kadar yürütme durdurmak için iş parçacığı (döşeme) bildirir.|  
-|[wait_with_all_memory_fence](#wait_with_all_memory_fence)|Tüm iş parçacıklarının tüm bellek erişimler tamamlanana kadar döşemesinin ve tüm iş parçacıklarının döşemesinin blokları yürütme bu çağrıyı ulaştı.|  
-|[wait_with_global_memory_fence](#wait_with_global_memory_fence)|Tüm iş parçacıklarının tüm genel bellek erişen kadar döşemesinin blokları yürütülmesi tamamlandı ve tüm iş parçacıklarının bölümünden bu çağrıyı üst sınırına ulaştınız.|  
-|[wait_with_tile_static_memory_fence](#wait_with_tile_static_memory_fence)|Engelleyen bir kutucukta tüm iş parçacıklarının yürütülmesine tüm kadar `tile_static` bellek erişimleri tamamlandı ve tüm iş parçacıklarının bölümünden bu çağrıyı üst sınırına ulaştınız.|  
+|[bekleme](#wait)|Tüm iş parçacıkları iş parçacığı grubunda (döşeme) döşemedeki tüm iş parçacıkları beklemeyi bitirene kadar yürütmeyi durdurmasını söyler.|  
+|[wait_with_all_memory_fence](#wait_with_all_memory_fence)|Tüm bellek erişimleri tamamlanana kadar döşemedeki tüm iş parçacıklarının ve döşemedeki tüm iş parçacıklarının yürütülmesini engeller Bu çağrı sınırına.|  
+|[wait_with_global_memory_fence](#wait_with_global_memory_fence)|Tüm genel bellek erişimleri tamamlanana ve döşemedeki tüm iş parçacıkları bu çağrıya ulaşıncaya kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller.|  
+|[wait_with_tile_static_memory_fence](#wait_with_tile_static_memory_fence)|Tüm kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller `tile_static` bellek erişimleri tamamlanana ve döşemedeki tüm iş parçacıkları bu çağrıya ulaşıncaya.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `tile_barrier`  
@@ -74,11 +74,11 @@ tile_barrier(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Other`  
- `tile_barrier` Kopyalamak için nesne.  
+*_Diğer*<br/>
+`tile_barrier` Kopyalanacak nesne.  
 
 ## <a name="wait"></a>  bekleme 
-Tüm iş parçacıklarının grubundaki tüm iş parçacıklarının döşemesinin bekleme bitinceye kadar yürütmeyi durdurmak için iş parçacığı (döşeme) bildirir.  
+Döşemedeki tüm iş parçacıkları beklemeyi bitirene kadar yürütmeyi durdurmak için iş parçacığı grubunda (döşeme) tüm iş parçacıklarının bildirir.  
   
 ### <a name="syntax"></a>Sözdizimi 
   
@@ -87,7 +87,7 @@ void wait() const restrict(amp);
 ```    
 
 ## <a name="wait_with_all_memory_fence"></a>  wait_with_all_memory_fence   
-Tüm iş parçacıklarının tüm iş parçacıkları bir kutucuk, bu çağrıyı ulaştınız kadar döşemesinin yürütülmesini engeller. Bu, tüm bellek erişimler iş parçacığı döşemesinin başka bir iş parçacığı görünür ve program sırayla yürütülen sağlar.  
+Döşemedeki tüm iş parçacıkları bu çağrıya ulaşıncaya kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, tüm bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından ve program sırasıyla yürütülen sağlar.  
   
 ### <a name="syntax"></a>Sözdizimi 
   
@@ -97,7 +97,7 @@ void wait_with_all_memory_fence() const restrict(amp);
   
 
 ## <a name="wait_with_global_memory_fence"></a>  wait_with_global_memory_fence   
-Tüm iş parçacıklarının tüm iş parçacıkları bir kutucuk, bu çağrıyı ulaştınız kadar döşemesinin yürütülmesini engeller. Bu, tüm genel bellek erişimler iş parçacığı döşemesinin başka bir iş parçacığı görünür ve program sırayla yürütülen sağlar.  
+Döşemedeki tüm iş parçacıkları bu çağrıya ulaşıncaya kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, tüm genel bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından ve program sırasıyla yürütülen sağlar.  
   
 ### <a name="syntax"></a>Sözdizimi 
   
@@ -106,7 +106,7 @@ void wait_with_global_memory_fence() const  restrict(amp);
 ```
 
 ## <a name="wait_with_tile_static_memory_fence"></a>  wait_with_tile_static_memory_fence   
-Tüm iş parçacıklarının tüm iş parçacıkları bir kutucuk, bu çağrıyı ulaştınız kadar döşemesinin yürütülmesini engeller. Bu sağlar `tile_static` erişir iş parçacığı döşemesinin başka bir iş parçacığı görünür ve program sırayla yürütülen bellek.  
+Döşemedeki tüm iş parçacıkları bu çağrıya ulaşıncaya kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, sağlar `tile_static` bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından ve program sırasıyla yürütülen.  
   
 ### <a name="syntax"></a>Sözdizimi 
   

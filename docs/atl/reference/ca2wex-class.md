@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9ac0528f383f1d379699c153a87507a1a292e21
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: eff9e2211d0ddf9cf2d9c4bb0c10040ae20a53e6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767510"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020270"
 ---
 # <a name="ca2wex-class"></a>CA2WEX sınıfı
 
@@ -43,7 +43,7 @@ class CA2WEX
 
 #### <a name="parameters"></a>Parametreler
 
-*t_nBufferLength*  
+*t_nBufferLength*<br/>
 Çeviri işlemde kullanılan arabellek boyutu. Varsayılan uzunluk 128 bayt'tır.
 
 ## <a name="members"></a>Üyeler
@@ -113,10 +113,10 @@ CA2WEX(LPCSTR psz) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*psz*  
+*psz*<br/>
 Dönüştürülecek metin dizesi.
 
-*nCodePage*  
+*nCodePage*<br/>
 Dönüştürme gerçekleştirmek için kullanılan kod sayfası. Windows SDK'sı işlevi için kod sayfası parametresi tartışmalara bakın [MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) daha fazla ayrıntı için.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -155,7 +155,7 @@ wchar_t m_szBuffer[t_nBufferLength];
 
 Dönüştürme işleci.
 
-```  
+```
 operator LPWSTR() const throw();
 ```
 
@@ -165,9 +165,9 @@ Metin dizesi, LPWSTR olarak döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CA2AEX sınıfı](../../atl/reference/ca2aex-class.md)   
-[CA2CAEX sınıfı](../../atl/reference/ca2caex-class.md)   
-[CW2AEX sınıfı](../../atl/reference/cw2aex-class.md)   
-[CW2CWEX sınıfı](../../atl/reference/cw2cwex-class.md)   
-[CW2WEX sınıfı](../../atl/reference/cw2wex-class.md)   
+[CA2AEX Sınıfı](../../atl/reference/ca2aex-class.md)<br/>
+[CA2CAEX Sınıfı](../../atl/reference/ca2caex-class.md)<br/>
+[CW2AEX Sınıfı](../../atl/reference/cw2aex-class.md)<br/>
+[CW2CWEX Sınıfı](../../atl/reference/cw2cwex-class.md)<br/>
+[CW2WEX Sınıfı](../../atl/reference/cw2wex-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

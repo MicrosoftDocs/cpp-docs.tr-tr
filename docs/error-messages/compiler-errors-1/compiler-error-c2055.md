@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f16d9c3948c0211da69142f1b9c7c1a6a32d8c37
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d6c63d79325417fbd9b1f451fb4a51f13957b4df
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169338"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019348"
 ---
 # <a name="compiler-error-c2055"></a>Derleyici Hatası C2055
-Beklenen biçimsel parametresi listesi, tür listesi  
-  
- Bir işlev tanımı biçimsel parametresi listesini yerine parametre türü listesi içerir. ANSI C void veya üç nokta olmadıkça adlı biçimsel parametresi gerektirir (`...`).  
-  
- Aşağıdaki örnek C2055 oluşturur:  
-  
-```  
-// C2055.c  
-// compile with: /c  
-void func(int, char) {}  // C2055  
-void func (int i, char c) {}   // OK  
+
+tür listesi değil biçimsel parametre listesi bekleniyordu
+
+Bir işlev tanımı bir biçimsel parametre listesi yerine bir parametre türü listesi içerir. ANSI C biçimsel parametreler void veya üç nokta olmadıkları sürece olarak adlandırılmasını gerektirir (`...`).
+
+Aşağıdaki örnek, C2055 oluşturur:
+
+```
+// C2055.c
+// compile with: /c
+void func(int, char) {}  // C2055
+void func (int i, char c) {}   // OK
 ```

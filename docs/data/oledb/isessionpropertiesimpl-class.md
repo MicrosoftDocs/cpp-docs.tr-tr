@@ -25,14 +25,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: eca3e25e1476023ef4b7192efd2ffbd4170e88ca
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: b90d89a5a9541f0c3c68efc8031e6cb1dd87ad84
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465075"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019035"
 ---
 # <a name="isessionpropertiesimpl-class"></a>ISessionPropertiesImpl Sınıfı
+
 Bir uygulamasını sağlar [ISessionProperties](/previous-versions/windows/desktop/ms713721\(v=vs.85\)) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -45,14 +46,16 @@ class ATL_NO_VTABLE ISessionPropertiesImpl :
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *T*  
- Sınıfınız, türetilen `ISessionPropertiesImpl`.  
+
+*T*<br/>
+Sınıfınız, türetilen `ISessionPropertiesImpl`.  
   
- *PropClass*  
- Varsayılan olarak bir kullanıcı tarafından tanımlanabilen özellik sınıfı *T*.  
+*PropClass*<br/>
+Varsayılan olarak bir kullanıcı tarafından tanımlanabilen özellik sınıfı *T*.  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldb.h  
+
+**Başlık:** atldb.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -64,9 +67,11 @@ class ATL_NO_VTABLE ISessionPropertiesImpl :
 |[SetProperties](#setproperties)|Oturum özellik grubundaki özellikleri ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Oturumlarının üzerinde zorunlu bir arabirim. Bu sınıf tarafından tanımlanan statik bir işlev çağırarak oturum özellikleri uygulayan [özellik kümesi eşlemesini](../../data/oledb/begin-propset-map.md). Özellik kümesi eşlemesi oturumu Sınıfınız içinde belirtilmelidir.  
+
+Oturumlarının üzerinde zorunlu bir arabirim. Bu sınıf tarafından tanımlanan statik bir işlev çağırarak oturum özellikleri uygulayan [özellik kümesi eşlemesini](../../data/oledb/begin-propset-map.md). Özellik kümesi eşlemesi oturumu Sınıfınız içinde belirtilmelidir.  
   
 ## <a name="getproperties"></a> Isessionpropertiesımpl::GetProperties
+
 Özellikler listesini döndürür `DBPROPSET_SESSION` oturumda ayarlanan özellik grubu.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -79,9 +84,11 @@ STDMETHOD(GetProperties)(ULONG cPropertyIDSets,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [ISessionProperties::GetProperties](/previous-versions/windows/desktop/ms723643\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
+
+Bkz: [ISessionProperties::GetProperties](/previous-versions/windows/desktop/ms723643\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="setproperties"></a> Isessionpropertiesımpl::SetProperties
+
 Ayarlar özellikleri `DBPROPSET_SESSION` özellik grubu.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -92,8 +99,10 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [ISessionProperties::SetProperties](/previous-versions/windows/desktop/ms714405\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [ISessionProperties::SetProperties](/previous-versions/windows/desktop/ms714405\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

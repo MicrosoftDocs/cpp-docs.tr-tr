@@ -17,18 +17,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 216474bbb7a67cb3c435770ab418ab4b7f4e5c4f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 687708db71eedf9b8f62dc88efc1bfe473cde1d4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297329"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017020"
 ---
 # <a name="expression-evaluator-error-cxx0029"></a>İfade Değerlendirici Hatası CXX0029
-struct pointer değil  
-  
- Üye seçim işleci (**->**) bir yapısına yönelik işaretçinin olmayan bir ifade uygulandı.  
-  
- Tüm ifadesi parantez içine alınmış doğru olduğundan veya uygun yapı işaretçi türü adresi ifade türe denetleyin.  
-  
- Bu hata için CAN0029 aynıdır.
+
+yapısı işaretçisi değil
+
+Üye seçme işleci (**->**) bir yapıya bir işaretçi olmayan bir ifade uygulandı.
+
+Tüm ifadeyi parantez içine alınmış doğru olduğundan veya türü adres ifadesine uygun yapı işaretçi türüne dönüştürme kontrol edin.
+
+Bu hata için CAN0029 aynıdır.

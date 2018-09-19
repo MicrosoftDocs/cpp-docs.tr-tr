@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8ee324ebbdbc1d9dc19c6a1323f2f47c370f08b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 052bfdb49e965b0d42a8af2c7cf2e57ee1af6f6c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243531"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020868"
 ---
 # <a name="compiler-error-c2948"></a>Derleyici Hatası C2948
-Açık örnekleme; depolama sınıfı tanımlayıcısı 'tanımlayıcısı uzmanlık üzerinde izin verilmeyen'  
-  
- Depolama sınıfı tanımlayıcıları kullanamazsınız (gibi `extern`) içinde daha önce açıkça örneğinin başlatılmasından bir şablon sınıfı uzmanlaşması.
+
+Açık örnek oluşturma; depolama sınıfı tanımlayıcısı 'belirticisi' özelleştirmede izin verilmez
+
+Depolama sınıfı tanımlayıcıları kullanamazsınız (gibi `extern`) içinde daha önce açıkça örneklenmiş bir şablon sınıfının bir özelleştirmesi.

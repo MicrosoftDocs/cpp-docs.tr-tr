@@ -23,24 +23,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca49fa1d832149dc6c5c920b067edebd42dadb87
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dc775363d980486fd32ba38b0e66d3141a5e5cd3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387921"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028993"
 ---
 # <a name="iob"></a>_iob
-Stdio denetim yapıları dizisi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-FILE _iob[_IOB_ENTRIES];  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- `IOB_ENTRIES` 20 stdio.h'olarak tanımlanır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Global Değişkenler](../c-runtime-library/global-variables.md)
+
+Stdio denetim yapıları dizisi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+FILE _iob[_IOB_ENTRIES];
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+`IOB_ENTRIES` 20 stdio.h'olarak tanımlanır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Global Değişkenler](../c-runtime-library/global-variables.md)

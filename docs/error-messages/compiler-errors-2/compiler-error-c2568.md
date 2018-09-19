@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 480d0ba97417476b192a962321ff4e9d0d18a617
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4a9d03f0dd5a1d7029028b7e5f0d17a5e90e2891
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228744"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021671"
 ---
 # <a name="compiler-error-c2568"></a>Derleyici Hatası C2568
-'identifier1': aşırı yüklenmiş işlevle çözümlenemiyor  
-  
- Derleyici hangi işlevi çağırmak için aşırı yüklü olmadığını belirleyemez. Aşırı yüklenmiş işlevi birini resmi parametrelerini eşleşecek şekilde işleve gerçek parametreleri dönüştürmeniz gerekir, ancak bir eşleşme tüm diğerlerinden daha kesin bir şekilde daha iyi olur.
+
+'ıdentifier1': işlev aşırı yükleme çözümlenemez
+
+Derleyici, çağrılacak işlev aşırı belirlenemiyor. İşleve geçirilen gerçek parametre bir aşırı yüklenen işlevin biçimsel parametreler eşleşecek şekilde dönüştürmeniz gerekir, ancak tüm diğerlerinden daha kesin bir şekilde daha iyi bir eşleşme yok.
