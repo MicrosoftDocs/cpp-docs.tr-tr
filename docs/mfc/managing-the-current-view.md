@@ -21,20 +21,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 09d29f4bc0b62e5824209759d45e63c1d9e2daa6
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: ca9738f9b6083ef88c2f72e1608121f849f8e909
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36928746"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425385"
 ---
 # <a name="managing-the-current-view"></a>Geçerli Görünümü Yönetme
-Çerçeve pencereleri varsayılan uygulaması bir parçası olarak, bir çerçeve penceresinde şu anda etkin bir görünüm izler. Çerçeve penceresi Bölümlendirici pencere örnekte olduğu gibi birden çok görünüm içeriyorsa geçerli görünümü kullanımda en son görünümüdür. Etkin görünüm, etkin pencereyi Windows ya da geçerli giriş odağını bağımsızdır.  
-  
- Etkin görünüm değiştiğinde çağırarak geçerli görünümü framework bildirir, [OnActivateView](../mfc/reference/cview-class.md#onactivateview) üye işlevi. Görünüm yüklenmekte olan olup olmadığını söyleyebilir etkin veya devre dışı inceleyerek `OnActivateView`'s *bActivate* parametresi. Varsayılan olarak, `OnActivateView` odağı etkinleştirme geçerli görünümde ayarlar. Geçersiz kılabilirsiniz `OnActivateView` görünümü devre dışı ya da yeniden hiçbir özel işlem gerçekleştirmek için. Örneğin, etkin görünümü diğer, etkin olmayan görünümleri ayırt etmek için özel görsel Yardım sağlamak isteyebilirsiniz.  
-  
- Bölümünde açıklandığı gibi komutları, geçerli (etkin) görüntülemek için bir çerçeve penceresinde iletir [komut yönlendirme](../mfc/command-routing.md), standart komut yönlendirmeyi bir parçası olarak.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çerçeve Pencerelerini Kullanma](../mfc/using-frame-windows.md)
+
+Çerçeve pencereleri varsayılan uygulaması bir parçası olarak, bir çerçeve penceresi şu anda etkin bir görünüm izler. Çerçeve penceresi bir ayırıcı penceresi örnekte olduğu gibi birden fazla görünümü içeriyorsa, geçerli görünüm kullanımda en son görünümdür. Etkin görünüm, Windows veya giriş odağını geçerli etkin pencereyi bağımsızdır.
+
+Etkin görünüm değiştiğinde framework çağırarak geçerli görünümü bildirir, [OnActivateView](../mfc/reference/cview-class.md#onactivateview) üye işlevi. Görünüm olup olmadığını söyleyebilir etkin veya devre dışı inceleyerek `OnActivateView`'s *bActivate* parametresi. Varsayılan olarak, `OnActivateView` etkinleştirme geçerli görünüm için odak noktası ayarlar. Geçersiz kılabilirsiniz `OnActivateView` görünümü devre dışı veya yeniden etkinleştiren, özel bir işlem gerçekleştirmek için. Örneğin, etkin görünüm, etkin olmayan diğer görünümleri ayırt etmek için özel görsel ipuçlarını sağlama isteyebilirsiniz.
+
+Bölümünde anlatıldığı gibi bir çerçeve penceresi komutları, geçerli (etkin) görünümüne iletir [komut yönlendirme](../mfc/command-routing.md), standart komut yönlendirmeyi bir parçası olarak.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çerçeve Pencerelerini Kullanma](../mfc/using-frame-windows.md)
 

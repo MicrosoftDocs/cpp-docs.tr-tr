@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 047f74a48b2c3f378b81868721b16ecdd22a6379
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 0f3139332c07652b9fbca536d7c21ba4e10ef7dc
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465371"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46414361"
 ---
 # <a name="cpuid-cpuidex"></a>__cpuid, __cpuidex
 
@@ -404,7 +404,6 @@ SYSCALL supported
 TBM not supported
 XOP not supported
 XSAVE supported
-
 ```
 
 **END Microsoft özgü**

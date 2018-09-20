@@ -1,5 +1,5 @@
 ---
-title: Üye işlevleri'yaygın olarak eklenen | Microsoft Docs
+title: Yaygın olarak, üye işlevleri eklenen | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,17 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df1be2fa68f0a7a9ea9e54d500240cc6b5f06048
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0a07c034a15cd0b575dab4cb3b647e64e6ad16c7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341254"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46428575"
 ---
 # <a name="commonly-added-member-functions"></a>Yaygın Olarak Eklenen Üye İşlevleri
-İletişim kutusunda Tamam'ı veya iptal dışında pushbuttons içeriyorsa, ileti işleyicisi iletişim sınıfınızda oluşturdukları denetim bildirimi iletileri yanıtlayın üye işlevleri yazmanız gerekir. Bir örnek için bkz: [karalama](../visual-cpp-samples.md) örnek program. Denetim bildirimi iletileri diğer denetimlerden iletişim kutusunda da işleyebilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutuları](../mfc/dialog-boxes.md)   
- [İletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)   
- [Yaygın Olarak Geçersiz Kılınan Üye İşlevleri](../mfc/commonly-overridden-member-functions.md)
+
+İletişim kutusunda Tamam'ı veya iptal dışında pushbuttons içeriyorsa, iletişim sınıfınızdaki hazırlanmasının denetim bildirimi iletileri cevaplayin üye işlevleri ileti işleyicisi yazmanız gerekir. Bir örnek için bkz. [karalama](../visual-cpp-samples.md) örnek program. Ayrıca, sizin iletişim kutunuzda denetim bildirimi iletileri diğer denetimlerden başa çıkabilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
+[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)<br/>
+[Yaygın Olarak Geçersiz Kılınan Üye İşlevleri](../mfc/commonly-overridden-member-functions.md)

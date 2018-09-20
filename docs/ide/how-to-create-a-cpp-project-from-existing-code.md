@@ -14,36 +14,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1786e5704d7afd07576ab738d907eb841518f8be
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 09b190dbc2670ab94f7952adc188dd43d91fb520
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33330141"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46397292"
 ---
 # <a name="how-to-create-a-c-project-from-existing-code"></a>Nasıl Yapılır: Varolan Koddan C++ Projesi Oluşturma
 
-Visual Studio'da, varolan kod dosyalarınızın bir Visual C++ projeye kullanarak bağlantı noktası **oluşturma yeni proje varolan kod dosyaları** Sihirbazı. Bu sihirbaz, Visual Studio'nun eski Express sürümlerinde kullanılamaz. Bu sihirbaz yeni bir çözüm ve kaynak dosyalarınızı yönetin ve yapılandırması oluşturmak için MSBuild sistem kullanır projesi oluşturur.  
-  
-Varolan kod dosyalarınızın bir Visual C++ projeye bağlantı noktası oluşturma, tüm IDE içinde yerleşik yerel MSBuild proje yönetimi özellikleri kullanmanızı sağlar. Nmake derleme görevleri dosyaları, CMake veya alternatifleri gibi mevcut Yapı sisteminizin kullanmayı tercih ederseniz, bunun yerine klasör Aç seçeneğini kullanabilirsiniz. Daha fazla bilgi için bkz: [Klasör Aç Visual C++ projelerinde](../ide/non-msbuild-projects.md). Her iki seçenek IDE özellikleri gibi kullanmanıza olanak tanır [IntelliSense](/visualstudio/ide/using-intellisense) ve [proje özelliklerini](../ide/working-with-project-properties.md).  
-  
-### <a name="to-create-a-c-project-from-existing-code"></a>Varolan koddan bir C++ projesi oluşturmak için  
-  
-1.  Üzerinde **dosya** menüsündeki **yeni**ve ardından **proje ilk var olan kodu**.  
-  
-1.  İlk sayfasında **varolan kod dosyalarından yeni proje oluştur** seçin **Visual C++** içinde **ne tür bir proje oluşturmak istediğinizi** listesi. Seçin **sonraki** devam etmek için. 
-  
-1.  Proje konumunu ve kaynak dosyaların dizinini belirtin. Bu sayfada daha fazla bilgi için bkz [proje konumunu belirtin ve kaynak dosyaları, yeni projesi oluştur gelen varolan kod dosyaları Sihirbazı](../ide/specify-project-location-and-source-files.md). Seçin **sonraki** devam etmek için.  
-  
-1.  Kullanmak için proje ayarlarını belirtin. Bu sayfada daha fazla bilgi için bkz [proje ayarlarını belirtme, yeni projesi oluştur gelen varolan kod dosyaları Sihirbazı](../ide/specify-project-settings-create-new-project-from-existing-code-files-wizard.md). Seçin **sonraki** devam etmek için.  
+Visual Studio'da, varolan kod dosyalarınızı bir Visual C++ projesine kullanarak bağlantı noktası **oluşturma yeni proje varolan kod dosyalarından** Sihirbazı. Bu sihirbaz, Visual Studio'nun eski Express sürümlerinde kullanılamaz. Bu sihirbaz, yeni çözüm ve kaynak dosyalarını yönetme ve yapılandırma oluşturmak için MSBuild sistemi kullanan proje oluşturur.
 
-1.  Hata ayıklama yapılandırma ayarlarını belirtin. Bu sayfada daha fazla bilgi için bkz [hata ayıklama yapılandırma ayarlarını belirtin, yeni projesi oluştur gelen varolan kod dosyaları Sihirbazı](../ide/specify-debug-configuration-settings.md). Seçin **sonraki** devam etmek için.  
+Varolan kod dosyalarınızı bir Visual C++ projesine taşımak, tüm IDE içine yerleşik yerel MSBuild proje yönetimi özelliklerini kullanmanıza olanak sağlar. Nmake derleme görevleri dosyalarını, CMake veya alternatifleri gibi var olan, derleme sisteminizi kullanmayı tercih ederseniz, bunun yerine klasörü Aç seçeneği kullanabilirsiniz. Daha fazla bilgi için [Klasör Aç Visual C++ projelerinde](../ide/non-msbuild-projects.md). İki seçenek de gibi IDE özelliklerini kullanmanıza izin [IntelliSense](/visualstudio/ide/using-intellisense) ve [proje özellikleri](../ide/working-with-project-properties.md).
 
-1.  Yayın yapılandırma ayarlarını belirtin. Bu sayfada daha fazla bilgi için bkz [yayın yapılandırma ayarlarını belirtin, yeni projesi oluştur gelen varolan kod dosyaları Sihirbazı](../ide/specify-release-configuration.md). Seçin **son** yeni proje oluşturmak için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+### <a name="to-create-a-c-project-from-existing-code"></a>Varolan koddan bir C++ projesi oluşturmak için
 
-[Proje belirtin konumunu ve kaynak dosyaları, yeni proje varolan kod dosyalarından Oluşturma Sihirbazı](../ide/specify-project-location-and-source-files.md)   
-[Proje ayarlarını belirtme, varolan kod dosyaları Sihirbazı'ndan yeni proje oluşturma](../ide/specify-project-settings-create-new-project-from-existing-code-files-wizard.md)   
-[Yapılandırma ayarlarında hata ayıklamayı belirtme, varolan kod dosyaları Sihirbazı'ndan yeni proje oluşturma](../ide/specify-debug-configuration-settings.md)   
+1. Üzerinde **dosya** menüsünde **yeni**ve ardından **varolan koddan proje**.
+
+1. ' Nın ilk sayfasında **varolan kod dosyalarından yeni proje oluştur** seçin **Visual C++** içinde **ne tür bir proje oluşturmak istersiniz** listesi. Seçin **sonraki** devam etmek için.
+
+1. Proje konumunuz ve kaynak dosyalarını dizinini belirtin. Bu sayfa hakkında daha fazla bilgi için bkz: [proje konumu belirtin ve kaynak dosyaları oluşturma yeni proje varolan kod dosyaları sihirbazın](../ide/specify-project-location-and-source-files.md). Seçin **sonraki** devam etmek için.
+
+1. Kullanmak için proje ayarlarını belirtin. Bu sayfa hakkında daha fazla bilgi için bkz: [proje ayarlarını belirtme, oluşturma yeni proje varolan kod dosyaları sihirbazın](../ide/specify-project-settings-create-new-project-from-existing-code-files-wizard.md). Seçin **sonraki** devam etmek için.
+
+1. Hata ayıklama yapılandırma ayarlarını belirtin. Bu sayfa hakkında daha fazla bilgi için bkz: [hata ayıklama yapılandırma ayarlarını belirtin, oluşturma yeni proje varolan kod dosyaları sihirbazın](../ide/specify-debug-configuration-settings.md). Seçin **sonraki** devam etmek için.
+
+1. Sürüm yapılandırma ayarlarını belirtin. Bu sayfa hakkında daha fazla bilgi için bkz: [sürüm yapılandırma ayarlarını belirt, oluşturma yeni proje varolan kod dosyaları sihirbazın](../ide/specify-release-configuration.md). Seçin **son** yeni projeyi oluşturmak için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Proje Konumunu ve Kaynak Dosyaları Belirtme, Varolan Kod Dosyalarından Yeni Proje Oluşturma Sihirbazı](../ide/specify-project-location-and-source-files.md)<br>
+[Proje Ayarlarını Belirtme, Varolan Kod Dosyalarından Yeni Proje Oluşturma Sihirbazı](../ide/specify-project-settings-create-new-project-from-existing-code-files-wizard.md)<br>
+[Yapılandırma Ayarlarında Hata Ayıklamayı Belirtme, Varolan Kod Dosyalarından Yeni Proje Oluşturma Sihirbazı](../ide/specify-debug-configuration-settings.md)<br>
 [Yayın Yapılandırma Ayarlarını Belirtme, Varolan Kod Dosyalarından Yeni Proje Oluşturma Sihirbazı](../ide/specify-release-configuration.md)

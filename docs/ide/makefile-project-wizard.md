@@ -17,23 +17,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4ea6619804c4215ecb53fa0e92a2b12bbdc5e31
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 9dfadd39281143baa35d8a4e30fcef345335cacc
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33334405"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46401933"
 ---
 # <a name="makefile-project-wizard"></a>Derleme Görevleri Dosyası Projesi Sihirbazı
-Bir komut satırı yürütmek yapı altyapısı oluşturmak için bu sihirbazı kullanın. Proje oluşturduktan sonra görüntüleyebilir ve projenin proje özelliklerini Düzenle [özellik sayfası](../ide/working-with-project-properties.md).  
-  
-## <a name="overview"></a>Genel Bakış  
- Bu sihirbaz sayfası oluşturmakta olduğunuz projesi için geçerli proje ayarlarını açıklar. Varsayılan olarak, projeyi hem hata ayıklama oluşturmak ve yapılandırmalarını yayın için ayarlanan *ProjName*.exe.  
-  
- Bu varsayılan değiştirmek için tıklatın. [uygulama ayarları](../ide/application-settings-makefile-project-wizard.md) sekmesinde Sihirbazı'nın sol sütunda ve istediğiniz değişiklikleri yapın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme görevleri dosyası projesi oluşturma](../ide/creating-a-makefile-project.md)   
- [NMAKE başvurusu](../build/nmake-reference.md)   
- [Derleme görevleri dosyasındaki özel karakterler](../build/special-characters-in-a-makefile.md)   
- [Derleme Görevleri Dosyası İçeriği](../build/contents-of-a-makefile.md)
+
+Bir komut satırı yürütmek yapı altyapısı oluşturmak için bu sihirbazı kullanın. Projeyi oluşturduktan sonra görüntüleyebilir ve projenin proje özelliklerini Düzenle [özellik sayfası](../ide/working-with-project-properties.md).
+
+## <a name="overview"></a>Genel Bakış
+
+Bu sihirbaz sayfası oluşturduğunuz proje için geçerli proje ayarlarını açıklar. Varsayılan olarak, projeyi hem hata ayıklama ve yayın yapılandırmaları için ayarlanan *ProjName*.exe.
+
+Bu varsayılan ayarları değiştirmek için tıklayın [uygulama ayarları](../ide/application-settings-makefile-project-wizard.md) sekmesinde sihirbazın sol sütununda ve istediğiniz değişiklikleri yapın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleme Görevleri Dosyası Projesi Oluşturma](../ide/creating-a-makefile-project.md)<br>
+[NMAKE Başvurusu](../build/nmake-reference.md)<br>
+[Derleme Görevleri Dosyasındaki Özel Karakterler](../build/special-characters-in-a-makefile.md)<br>
+[Derleme Görevleri Dosyası İçeriği](../build/contents-of-a-makefile.md)

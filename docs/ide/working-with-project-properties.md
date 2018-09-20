@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9961eaa6529773e8d21d9c953242d1656a6a443
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 85439e191ac8676603c9d7fab8a41bb126e97b9e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211669"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46398670"
 ---
 # <a name="working-with-project-properties"></a>Proje Özellikleriyle Çalışma
 
@@ -141,11 +141,11 @@ Kullanıcı tanımlı makrolar bir özellik sayfasında depolanır. Projenize bi
 
 ##### <a name="to-create-a-user-defined-macro"></a>Kullanıcı tanımlı makro oluşturmak için
 
-1.  İçinde **özellik Yöneticisi** penceresinde (menü çubuğunda, **görünümü**, **özellik Yöneticisi**), bir özellik sayfası (adı .user ile biter) için kısayol menüsünü açın ve ardından Özellikleri. **Özellik sayfaları** bu özellik sayfası iletişim kutusu açılır.
+1. İçinde **özellik Yöneticisi** penceresinde (menü çubuğunda, **görünümü**, **özellik Yöneticisi**), bir özellik sayfası (adı .user ile biter) için kısayol menüsünü açın ve ardından Özellikleri. **Özellik sayfaları** bu özellik sayfası iletişim kutusu açılır.
 
-2.  İletişim kutusunun sol bölmesinde seçin **kullanıcı makroları**. Sağ bölmede seçin **makro Ekle** açmak için düğmeyi **kullanıcı makrosu Ekle** iletişim kutusu.
+1. İletişim kutusunun sol bölmesinde seçin **kullanıcı makroları**. Sağ bölmede seçin **makro Ekle** açmak için düğmeyi **kullanıcı makrosu Ekle** iletişim kutusu.
 
-3.  İletişim kutusunda, makro için bir ad ve değer belirtin. İsteğe bağlı olarak **Bu makroyu yapı ortamında bir ortam değişkeni olarak ayarla** onay kutusu.
+1. İletişim kutusunda, makro için bir ad ve değer belirtin. İsteğe bağlı olarak **Bu makroyu yapı ortamında bir ortam değişkeni olarak ayarla** onay kutusu.
 
 ## <a name="property-editor"></a>Özellik Düzenleyicisi
 

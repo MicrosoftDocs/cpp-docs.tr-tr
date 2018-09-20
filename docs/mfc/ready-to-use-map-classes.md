@@ -18,37 +18,39 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e52cdb6e72825bbb2d4824123837ce9630bcb1b3
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 5fe4a72a4237360f674fabdf0ac992d7fcbd1c68
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931716"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46438671"
 ---
 # <a name="ready-to-use-map-classes"></a>Kullanıma Hazır Eşleme Sınıfları
-Kullanıma hazır eşleme sınıfları sınıflarıdır.  
-  
- [CMapPtrToPtr](../mfc/reference/cmapptrtoptr-class.md)  
- Kullanan **void** işaretçileri diğer bulmak için anahtar olarak **void** işaretçileri.  
-  
- [CMapPtrToWord](../mfc/reference/cmapptrtoword-class.md)  
- Kullanan **void** veri türü bulmak için anahtar olarak işaretçileri **WORD**.  
-  
- [CMapStringToOb](../mfc/reference/cmapstringtoob-class.md)  
- Kullanan `CString` nesneleri bulmak için anahtar olarak `CObject` işaretçileri.  
-  
- [CMapStringToPtr](../mfc/reference/cmapstringtoptr-class.md)  
- Kullanan `CString` nesneleri bulmak için anahtar olarak **void** işaretçileri.  
-  
- [CMapStringToString](../mfc/reference/cmapstringtostring-class.md)  
- Kullanan `CString` nesneleri diğer bulmak için anahtar olarak `CString` nesneleri.  
-  
- [CMapWordToOb](../mfc/reference/cmapwordtoob-class.md)  
- Veri türü kullanan **WORD** bulmak için `CObject` işaretçileri.  
-  
- [CMapWordToPtr](../mfc/reference/cmapwordtoptr-class.md)  
- Veri türü kullanan **WORD** bulmak için **void** işaretçileri.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Kullanıma hazır eşleme sınıfları sınıflardır.
+
+[CMapPtrToPtr](../mfc/reference/cmapptrtoptr-class.md)<br/>
+Kullanan **void** diğer bulmak için anahtarları gibi işaretçiler **void** işaretçileri.
+
+[CMapPtrToWord](../mfc/reference/cmapptrtoword-class.md)<br/>
+Kullanan **void** işaretçileri tür veri bulmak için anahtar olarak **WORD**.
+
+[CMapStringToOb](../mfc/reference/cmapstringtoob-class.md)<br/>
+Kullanan `CString` nesneleri bulmak için anahtar olarak `CObject` işaretçileri.
+
+[CMapStringToPtr](../mfc/reference/cmapstringtoptr-class.md)<br/>
+Kullanan `CString` nesneleri bulmak için anahtar olarak **void** işaretçileri.
+
+[CMapStringToString](../mfc/reference/cmapstringtostring-class.md)<br/>
+Kullanan `CString` nesneleri diğer bulmak için anahtar olarak `CString` nesneleri.
+
+[CMapWordToOb](../mfc/reference/cmapwordtoob-class.md)<br/>
+Veri türü kullanan **WORD** bulmak için `CObject` işaretçileri.
+
+[CMapWordToPtr](../mfc/reference/cmapwordtoptr-class.md)<br/>
+Veri türü kullanan **WORD** bulunacak **void** işaretçileri.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

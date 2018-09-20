@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8b2bc46f916e4aaaedc74e8b6d94faafa1ead3b9
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e2780721d2f0b1a8cda05cb028b36d8d5c926cb1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595493"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46415258"
 ---
 # <a name="asyncbaseputonprogress-method"></a>AsyncBase::PutOnProgress Yöntemi
 
@@ -38,7 +38,7 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*progressHandler*  
+*progressHandler*<br/>
 İstediğiniz ilerleme olay işleyicisinin nasıl ayarlandığını adresi.
 
 ## <a name="return-value"></a>Dönüş Değeri

@@ -16,25 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 436b289c14110dd8f616112a309e757618b6f954
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: eebcb272a07b225aaa249e986f8fac69d0c7edf8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33327417"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405534"
 ---
 # <a name="deployment-examples"></a>Dağıtım Örnekleri
-Bu bölümde Visual C++ uygulamalarını dağıtma gösteren örnekler içerir.  
-  
-## <a name="examples"></a>Örnekler  
- [İzlenecek Yol: Kurulum Projesi Kullanarak Visual C++ Uygulamasını Dağıtma](../ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md)  
-  
- [İzlenecek Yol: Visual C++ Uygulamasını Yerel Uygulama Klasörüne Dağıtma](../ide/walkthrough-deploying-a-visual-cpp-application-to-an-application-local-folder.md)  
-  
- [İzlenecek Yol: Visual C++ Yeniden Dağıtılabilir Paketini Kullanarak Visual C++ Uygulaması Dağıtmak](../ide/deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md)  
-  
- [Yürütülebilir Hata Ayıklamayı Çalıştırmak için Test Makinesi Hazırlama](../ide/preparing-a-test-machine-to-run-a-debug-executable.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)   
- [Masaüstü uygulamaları dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)
+
+Bu bölüm, Visual C++ uygulamalarının nasıl dağıtılacağını gösteren örnekler içerir.
+
+## <a name="examples"></a>Örnekler
+
+[İzlenecek Yol: Kurulum Projesi Kullanarak Visual C++ Uygulamasını Dağıtma](../ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md)
+
+[İzlenecek Yol: Visual C++ Uygulamasını Yerel Uygulama Klasörüne Dağıtma](../ide/walkthrough-deploying-a-visual-cpp-application-to-an-application-local-folder.md)
+
+[İzlenecek Yol: Visual C++ Yeniden Dağıtılabilir Paketini Kullanarak Visual C++ Uygulaması Dağıtmak](../ide/deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md)
+
+[Yürütülebilir Hata Ayıklamayı Çalıştırmak için Test Makinesi Hazırlama](../ide/preparing-a-test-machine-to-run-a-debug-executable.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İzlenecek yol: ClickOnce Uygulamasını El ile Dağıtma](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)<br>
+[Masaüstü uygulamalarını dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)

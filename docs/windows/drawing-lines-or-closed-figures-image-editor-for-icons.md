@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c6c5652f61211ebd4d33de6f2dce07bd49b4f0a0
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 0ab40be4843b33e98daaf0f990e10544cb966a7d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313246"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46404390"
 ---
 # <a name="drawing-lines-or-closed-figures-image-editor-for-icons"></a>Çizgi veya Kapalı Şekiller Çizme (Simgeler İçin Görüntü Düzenleyicisi)
 
@@ -63,7 +63,7 @@ Yok.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)  
-[Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)  
-[Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)  
+[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
+[Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
 [Renklerle çalışma](../windows/working-with-color-image-editor-for-icons.md)

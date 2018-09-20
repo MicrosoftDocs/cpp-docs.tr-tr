@@ -39,12 +39,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3bc016367495be8cc10c09605e8018811bde5ca9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5dfe6622edcd8446b844b5d3d7c03d1fd5d0197c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118914"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379417"
 ---
 # <a name="runtimeclass-class"></a>RuntimeClass Sınıfı
 
@@ -61,10 +61,10 @@ template <unsigned int classFlags, typename ...TInterfaces> class RuntimeClass;
 
 ### <a name="parameters"></a>Parametreler
 
-*classFlags*  
+*classFlags*<br/>
 İsteğe bağlı parametre. Bir veya daha fazla birleşimi [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) sabit listesi değerleri. `__WRL_CONFIGURATION_LEGACY__` ClassFlags projedeki tüm çalışma zamanı sınıflar için varsayılan değeri değiştirmek için makro tanımlanabilir. Tanımlı değilse RuntimeClass varsayılan olmayan Çevik örnekleridir. RuntimeClass örnekleri, tanımlı değil, varsayılan olarak Çevik. Her zaman belirsizlik belirtmeniz önlemek `Microsoft::WRL::FtmBase` içinde `TInterfaces` veya `RuntimeClassType::InhibitFtmBase`. Hem de nesne kullanılan InhibitFtmBase ve FtmBase olup olmadığını Not, Çevik olacaktır.
 
-*TInterfaces*  
+*TInterfaces*<br/>
 Arabirimlerin listesini ötesinde nesne uygulayan `IUnknown`, `IInspectable` veya diğer arabirimleri tarafından denetlenen [RuntimeClassType](../windows/runtimeclasstype-enumeration.md). Diğer sınıflar, özellikle türetilmesi listeleyebilir `Microsoft::WRL::FtmBase` nesne Çevik olun ve uygulamak neden `IMarshal`.
 
 ## <a name="members"></a>Üyeler
@@ -152,10 +152,10 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*Iidcount*  
+*Iidcount*<br/>
 Bu işlem tamamlandığında, toplam sayısı dizideki öğelerin *IID'leri*.
 
-*IID'leri*  
+*IID'leri*<br/>
 Bu işlem tamamlandığında arabirim kimlikleri dizisi için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -174,7 +174,7 @@ STDMETHOD( GetRuntimeClassName )(
 
 ### <a name="parameters"></a>Parametreler
 
-*runtimeName*  
+*runtimeName*<br/>
 Bu işlem tamamlandığında, çalışma zamanı sınıf adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -197,7 +197,7 @@ STDMETHOD(GetTrustLevel)(
 
 ### <a name="parameters"></a>Parametreler
 
-*trustLvl*  
+*trustLvl*<br/>
 Bu işlem tamamlandığında, geçerli güven düzeyine `RuntimeClass` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -220,7 +220,7 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*weakReference*  
+*weakReference*<br/>
 Bu işlem tamamlandığında zayıf başvuru nesnesine bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -253,10 +253,10 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*riid*  
+*riid*<br/>
 Bir arabirim kimliği.
 
-*ppvObject*  
+*ppvObject*<br/>
 Bu opereation tamamlandığında tarafından belirtilen arabirim işaretçisi *riid* parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri

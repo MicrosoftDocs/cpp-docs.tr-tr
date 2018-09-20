@@ -1,28 +1,38 @@
 ---
 title: ClassFactory sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/13/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::ClassFactory
+- module/Microsoft::WRL::ClassFactory::AddRef
+- module/Microsoft::WRL::ClassFactory::ClassFactory
+- module/Microsoft::WRL::ClassFactory::LockServer
+- module/Microsoft::WRL::ClassFactory::QueryInterface
+- module/Microsoft::WRL::ClassFactory::Release
 dev_langs:
 - C++
 helpviewer_keywords:
-- ClassFactory class
+- Microsoft::WRL::ClassFactory class
+- Microsoft::WRL::ClassFactory::AddRef method
+- Microsoft::WRL::ClassFactory::ClassFactory, constructor
+- Microsoft::WRL::ClassFactory::LockServer method
+- Microsoft::WRL::ClassFactory::QueryInterface method
+- Microsoft::WRL::ClassFactory::Release method
 ms.assetid: f13e6bce-722b-4f18-b7cf-3ffa6345c1db
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0f033fc20fac656e6b9fcfa9ac822099ea929d62
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: bfaf95a477917fc417cfe3c296822233eca77c09
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611811"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46413074"
 ---
 # <a name="classfactory-class"></a>ClassFactory Sınıfı
 
@@ -48,18 +58,18 @@ class ClassFactory : public Details::RuntimeClass<
 
 ### <a name="parameters"></a>Parametreler
 
-*I0*  
+*I0*<br/>
 Sıfırıncı arabirim.
 
-*I1*  
+*I1*<br/>
 İlk arabirim.
 
-*I2*  
+*I2*<br/>
 İkinci arabirim.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yazılımınız **ClassFactory** Fabrika kullanıcı tanımlı bir uygulama sağlamak için.
+Yazılımınız `ClassFactory` Fabrika kullanıcı tanımlı bir uygulama sağlamak için.
 
 Aşağıdaki programlama deseni nasıl kullanılacağını gösteren [uygular](../windows/implements-structure.md) yapısı üzerinde bir sınıf üreteci üçten fazla arabirimleri belirtin.
 
@@ -69,18 +79,18 @@ Aşağıdaki programlama deseni nasıl kullanılacağını gösteren [uygular](.
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[ClassFactory::ClassFactory Oluşturucusu](../windows/classfactory-classfactory-constructor.md)||
+Ad                                        | Açıklama
+------------------------------------------- | -----------
+[ClassFactory::ClassFactory](#classfactory) |
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[ClassFactory::AddRef Metodu](../windows/classfactory-addref-method.md)|Geçerli başvuru sayısını artırır **ClassFactory** nesne.|
-|[ClassFactory::LockServer Metodu](../windows/classfactory-lockserver-method.md)|Artırır veya azaltır temel sayısını nesneleri geçerli tarafından izlenen **ClassFactory** nesne.|
-|[ClassFactory::QueryInterface Metodu](../windows/classfactory-queryinterface-method.md)|Parametresi tarafından belirtilen arabirim işaretçisi alır.|
-|[ClassFactory::Release Metodu](../windows/classfactory-release-method.md)|Başvuru için geçerli sayısını azaltır **ClassFactory** nesne.|
+Ad                                            | Açıklama
+----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------
+[ClassFactory::AddRef](#addref)                 | Geçerli başvuru sayısını artırır `ClassFactory` nesne.
+[ClassFactory::LockServer](#lockserver)         | Artırır veya azaltır temel sayısını nesneleri geçerli tarafından izlenen `ClassFactory` nesne.
+[ClassFactory::QueryInterface](#queryinterface) | Parametresi tarafından belirtilen arabirim işaretçisi alır.
+[ClassFactory::Release](#release)               | Başvuru için geçerli sayısını azaltır `ClassFactory` nesne.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -110,7 +120,83 @@ Aşağıdaki programlama deseni nasıl kullanılacağını gösteren [uygular](.
 
 **Namespace:** Microsoft::WRL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="addref"></a>ClassFactory::AddRef
 
-[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)  
-[RuntimeClassType Sabit Listesi](../windows/runtimeclasstype-enumeration.md)
+Geçerli başvuru sayısını artırır `ClassFactory` nesne.
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   AddRef
+)();
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+
+## <a name="classfactory"></a>ClassFactory::ClassFactory
+
+```cpp
+WRL_NOTHROW ClassFactory();
+```
+
+## <a name="lockserver"></a>ClassFactory::LockServer
+
+Artırır veya azaltır temel sayısını nesneleri geçerli tarafından izlenen `ClassFactory` nesne.
+
+```cpp
+STDMETHOD(
+   LockServer
+)(BOOL fLock);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*fLock*<br/>
+`true` izlenen nesne sayısını artırmak için. `false` izlenen nesnelerin sayısını azaltmak için.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, E_FAIL.
+
+### <a name="remarks"></a>Açıklamalar
+
+`ClassFactory` temel alınan örneği nesneleri izler [Modülü](../windows/module-class.md) sınıfı.
+
+## <a name="queryinterface"></a>ClassFactory::QueryInterface
+
+Parametresi tarafından belirtilen arabirim işaretçisi alır.
+
+```cpp
+STDMETHOD(
+   QueryInterface
+)(REFIID riid, _Deref_out_ void **ppvObject);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*riid*<br/>
+Bir arabirim kimliği.
+
+*ppvObject*<br/>
+Bu işlem tamamlandığında, parametre tarafından belirtilen arabirim işaretçisi *riid*.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+
+## <a name="release"></a>ClassFactory::Release
+
+Başvuru için geçerli sayısını azaltır `ClassFactory` nesne.
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   Release
+)();
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.

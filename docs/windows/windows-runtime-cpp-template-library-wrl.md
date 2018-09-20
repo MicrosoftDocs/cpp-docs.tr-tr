@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3c758226935151bd11faec12aed459aeb2606ca9
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 8b220ecd69ce539c03339ac73048efb2750d2e32
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684830"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46401809"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 
@@ -50,43 +50,43 @@ Windows çalışma zamanı C++ Şablon kitaplığı ve C + +/ CX farklı avantaj
 
 Windows çalışma zamanı C++ Şablon kitaplığı ile hemen çalışmaya başlayabilirsiniz yardımcı olabilecek bazı kaynaklar aşağıda verilmiştir.
 
-[Windows çalışma zamanı kitaplığı (WRL)](http://channel9.msdn.com/Events/Windows-Camp/Developing-Windows-8-Metro-style-apps-in-Cpp/The-Windows-Runtime-Library-WRL-)  
+[Windows çalışma zamanı kitaplığı (WRL)](http://channel9.msdn.com/Events/Windows-Camp/Developing-Windows-8-Metro-style-apps-in-Cpp/The-Windows-Runtime-Library-WRL-)<br/>
 Bu kanal 9 videosunda, Windows çalışma zamanı C++ Şablon Kitaplığı'nın nasıl yardımcı olduğu hakkında yazdığınız Evrensel Windows Platformu (UWP) uygulamaları ve yazar ve Windows çalışma zamanı bileşenlerini kullanma hakkında bilgi edinin.
 
-[Nasıl yapılır: bir Windows çalışma zamanı bileşenini etkinleştirme ve kullanma](../windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md)  
+[Nasıl yapılır: bir Windows çalışma zamanı bileşenini etkinleştirme ve kullanma](../windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md)<br/>
 Windows çalışma zamanı C++ Şablon kitaplığı Windows çalışma zamanı başlatma, etkinleştirmek ve bir Windows çalışma zamanı bileşeni kullanmak için nasıl kullanılacağını gösterir.
 
-[Nasıl yapılır: zaman uyumsuz işlemleri tamamlama](../windows/how-to-complete-asynchronous-operations-using-wrl.md)  
+[Nasıl yapılır: zaman uyumsuz işlemleri tamamlama](../windows/how-to-complete-asynchronous-operations-using-wrl.md)<br/>
 Windows çalışma zamanı C++ Şablon kitaplığı zaman uyumsuz işlemler başlatmak ve işlemler tamamlandığında iş gerçekleştirmek için nasıl kullanılacağını gösterir.
 
-[Nasıl yapılır: olayları işleme](../windows/how-to-handle-events-using-wrl.md)  
+[Nasıl yapılır: olayları işleme](../windows/how-to-handle-events-using-wrl.md)<br/>
 Windows çalışma zamanı C++ Şablon kitaplığı abone olup bir Windows çalışma zamanı nesnesi olaylarını işlemek için nasıl kullanılacağını gösterir.
 
-[İzlenecek yol: WRL ve Medya Altyapısı kullanarak UWP uygulaması oluşturma](../windows/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)  
+[İzlenecek yol: WRL ve Medya Altyapısı kullanarak UWP uygulaması oluşturma](../windows/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)<br/>
 Kullanan bir UWP uygulaması oluşturmayı öğrenin [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk).
 
-[Nasıl yapılır: klasik COM bileşeni oluşturma](../windows/how-to-create-a-classic-com-component-using-wrl.md)  
+[Nasıl yapılır: klasik COM bileşeni oluşturma](../windows/how-to-create-a-classic-com-component-using-wrl.md)<br/>
 Temel bir COM bileşeni ve kaydetmek ve bir masaüstü uygulamasından COM bileşeni kullanmak için basit bir yol oluşturmak için Windows çalışma zamanı C++ Şablon kitaplığı kullanmayı gösterir.
 
-[Nasıl yapılır: Doğrudan WRL Bileşenlerinin Örneğini Oluşturma](../windows/how-to-instantiate-wrl-components-directly.md)  
+[Nasıl yapılır: Doğrudan WRL Bileşenlerinin Örneğini Oluşturma](../windows/how-to-instantiate-wrl-components-directly.md)<br/>
 Nasıl kullanacağınızı öğrenin [Microsoft::wrl:: Make](../windows/make-function.md) ve [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md) kendisini tanımlayan modülden bir bileşen örneği oluşturmak için işlevleri.
 
-[Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe programını kullanma](../windows/use-winmdidl-and-midlrt-to-create-h-files-from-windows-metadata.md)  
+[Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe programını kullanma](../windows/use-winmdidl-and-midlrt-to-create-h-files-from-windows-metadata.md)<br/>
 .Winmd meta verisinden bir IDL dosyası oluşturarak özel Windows Runtime bileşenlerinin wrl'den kullanma işlemi gösterilmektedir.
 
-[İzlenecek Yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)  
+[İzlenecek Yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)<br/>
 Nasıl kullanılacağını gösterir [Ixmlhttprequest2](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) ve [Ixmlhttprequest2callback](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) bir UWP uygulamasında bir web hizmetine HTTP GET ve POST istekleri göndermek için görevleri ile birlikte arabirimleri.
 
-[Bing Maps Trip Optimizer örneği](http://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)  
+[Bing Maps Trip Optimizer örneği](http://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)<br/>
 Kullanan `HttpRequest` tanımlanan sınıfı [izlenecek yol: görevleri kullanarak bağlanma ve XML HTTP isteklerini](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) eksiksiz bir UWP uygulaması bağlamında.
 
-[C++ örnek ile bir Windows çalışma zamanı DLL bileşeni oluşturma](http://code.msdn.microsoft.com/windowsapps/Creating-a-Windows-Runtime-6c399797)  
+[C++ örnek ile bir Windows çalışma zamanı DLL bileşeni oluşturma](http://code.msdn.microsoft.com/windowsapps/Creating-a-Windows-Runtime-6c399797)<br/>
 Bir işlemde DLL bileşeni oluşturma ve C + tüketicilerimizin Windows çalışma zamanı C++ Şablon kitaplığı kullanma işlemini gösterir +/ CX, JavaScript ve C#.
 
-[DirectX marble maze oyun örneği](http://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)  
+[DirectX marble maze oyun örneği](http://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)<br/>
 Windows çalışma zamanı C++ Şablon kitaplığı bağlamında, tam bir 3-b oyunda DirectX ve Media Foundation gibi COM bileşenlerinin kullanım ömrünü yönetmek için nasıl kullanılacağını gösterir.
 
-[Masaüstü uygulama örneğinden kutlama bildirimleri gönderme](http://code.msdn.microsoft.com/windowsdesktop/Sending-toast-notifications-71e230a2)  
+[Masaüstü uygulama örneğinden kutlama bildirimleri gönderme](http://code.msdn.microsoft.com/windowsdesktop/Sending-toast-notifications-71e230a2)<br/>
 Bir masaüstü uygulamasından kutlama bildirimleri ile iş için Windows çalışma zamanı C++ Şablon Kitaplığı nasıl yapılacağı açıklanır.
 
 ## <a name="windows-runtime-c-template-library-compared-to-atl"></a>Windows çalışma zamanı C++ Şablon kitaplığı ile ATL karşılaştırması

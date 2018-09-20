@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dbfcedd2bc17e21b94de46c63edd95bf58f576a7
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 836017dcec969db85a0725a49193d7b8e8a88875
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714460"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402856"
 ---
 # <a name="arrays-c-component-extensions"></a>Dizeler (C++ Bileşen Uzantıları)
 
@@ -65,16 +65,16 @@ Sözdiziminin ilk örnekte **yeni başvuru** bir dizi ayırmak için toplam anah
 *niteleyicileri*<br/>
 (İsteğe bağlı) Bir veya daha fazla bu depolama sınıfı tanımlayıcıları: [değişebilir](../cpp/mutable-data-members-cpp.md), [geçici](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [statik](../cpp/static-members-cpp.md).
 
-*dizi türü*  
+*dizi türü*<br/>
 Dizi değişkeni türü. Geçerli türler, Windows çalışma zamanı sınıflar ve temel türler, başvuru sınıfları ve yapıları, değer sınıfları ve yapıları ve yerel işaretçileri olan (`type*`).
 
 *boyut sayısı*<br/>
 (İsteğe bağlı) Dizinin boyut sayısı. 1 olmalıdır.
 
-*tanımlayıcı*  
+*tanımlayıcı*<br/>
 Dizi değişkeni adı.
 
-*başlatma türü*  
+*başlatma türü*<br/>
 Dizi başlatma değerlerin türü. Genellikle, *dizi türü* ve *başlatma türü* aynı türdedir. Türleri dönüştürme ise farklı olabilir ancak *başlatma türü* için *dizi türü*— Örneğin, varsa *başlatma türü* türetilmiş*dizi türü*.
 
 *başlatma listesi*<br/>
@@ -121,19 +121,19 @@ Sözdiziminin ilk örnekte **gcnew** anahtar sözcüğü, bir dizi ayırmak içi
 *niteleyicileri*<br/>
 (İsteğe bağlı) Bir veya daha fazla bu depolama sınıfı tanımlayıcıları: [değişebilir](../cpp/mutable-data-members-cpp.md), [geçici](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [statik](../cpp/static-members-cpp.md).
 
-*dizi türü*  
+*dizi türü*<br/>
 Dizi değişkeni türü. Geçerli türler Windows çalışma zamanı sınıflar ve temel türler, başvuru sınıfları ve yapıları, değer sınıfları ve yapıları, yerel işaretçiler (`type*`) ve yerel POD (düz eski veriler) türleri.
 
 *boyut sayısı*<br/>
 (İsteğe bağlı) Dizinin boyut sayısı. Varsayılan değer 1'dir; en fazla 32'dir. Dizinin her boyutunun kendisi bir dizidir.
 
-*tanımlayıcı*  
+*tanımlayıcı*<br/>
 Dizi değişkeni adı.
 
-*başlatma türü*  
+*başlatma türü*<br/>
 Dizi başlatma değerlerin türü. Genellikle, *dizi türü* ve *başlatma türü* aynı türdedir. Türleri dönüştürme ise farklı olabilir ancak *başlatma türü* için *dizi türü*— Örneğin, varsa *başlatma türü* türetilmiş*dizi türü*.
 
-*derece boyutlarının listesi*  
+*derece boyutlarının listesi*<br/>
 Dizideki her boyutun boyutu virgülle ayrılmış listesi. Alternatif olarak, *başlatma listesi* parametresi belirtildiğinde, derleyici her boyutu çıkarabilir ve *derece boyutlarının listesi* atlanabilir.
 
 *başlatma listesi*<br/>

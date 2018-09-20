@@ -16,16 +16,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2055312c7418b14c9b274649db8faa297554257e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 77b80f66f2956e71b90e4d939a0fb74aef28edb1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340999"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407042"
 ---
 # <a name="creating-modeless-dialog-boxes"></a>Kalıcı Olmayan İletişim Kutuları Oluşturma
-Kalıcı olmayan iletişim kutusu için kendi ortak oluşturucu iletişim sınıfınızı sağlamanız gerekir. Kalıcı olmayan iletişim kutusu oluşturmak için ortak oluşturucu çağırın ve iletişim nesnenin çağrısı [oluşturma](../mfc/reference/cdialog-class.md#create) üye işlevi iletişim kaynağı yüklenemiyor. Çağırabilirsiniz **oluşturma** sırasında veya sonrasında oluşturucu çağrısı. İletişim kaynağını özelliğine sahipse **ws_vısıble**, hemen iletişim kutusu görüntülenir. Değilse, çağırmalısınız, kendi [ShowWindow](../mfc/reference/cwnd-class.md#showwindow) üye işlevi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+
+Kalıcı olmayan iletişim kutusu için kendi Genel oluşturucu iletişim sınıfınızı sağlamanız gerekir. Modsuz iletişim kutusu oluşturmak için ortak oluşturucusunu ve ardından iletişim nesnenin çağrı [Oluştur](../mfc/reference/cdialog-class.md#create) üye işlevi, iletişim kutusu kaynağı yüklenemedi. Çağırabilirsiniz **Oluştur** sırasında veya sonrasında oluşturucu çağrısı. İletişim kaynağını özelliği varsa **ws_vısıble**, hemen iletişim kutusu görüntülenir. Değil, çağırmalıdır, kendi [ShowWindow](../mfc/reference/cwnd-class.md#showwindow) üye işlevi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
 

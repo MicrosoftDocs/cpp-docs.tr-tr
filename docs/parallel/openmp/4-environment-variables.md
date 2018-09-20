@@ -1,5 +1,5 @@
 ---
-title: 4. Ortam değişkenleri | Microsoft Docs
+title: 4. Ortam değişkenlerini | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,33 +12,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: edd4f795a3511358d2b95b93e180b9b21b964dd2
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: aec56dad334dcd27de2068e660ff8ec5a6e72f90
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691007"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46415505"
 ---
 # <a name="4-environment-variables"></a>4. Ortam Değişkenleri
-Bu bölümde, OpenMP C ve C++ API ortam değişkenlerini (veya eşdeğer platforma özgü mekanizmaları) açıklanmaktadır paralel kod yürütmeyi denetlemek.  Ortam değişkenlerinin adları büyük olmalıdır. Atanmış değerler büyük küçük harfe duyarlı ve baştaki ve sondaki boşluk olabilir.  Değerlerin program başlatıldıktan sonra yapılan değişiklikler göz ardı edilir.  
-  
- Ortam değişkenleri aşağıdaki gibidir:  
-  
--   **OMP_SCHEDULE** çalışma zamanı zamanlama türü ve öbek boyutunu belirler.  
-  
--   **OMP_NUM_THREADS** yürütme sırasında kullanılacak iş parçacıklarının sayısını ayarlar.  
-  
--   **Omp_dynamıc** etkinleştirir veya iş parçacığı sayısını dinamik olarak ayarlamayı devre dışı bırakır.  
-  
--   **OMP_NESTED** etkinleştirir veya iç içe geçmiş paralellik devre dışı bırakır.  
-  
- Bu bölümdeki örnekler yalnızca bu değişkenleri UNIX C Kabuğu (csh) ortamlarında nasıl ayarlanabilir gösterir. İçinde Korn kabuk ve DOS ortamları eylemleri benzer, aşağıdaki gibidir:  
-  
- csh:  
- setenv OMP_SCHEDULE "dinamik"  
-  
- ksh:  
- OMP_SCHEDULE dışarı aktarma "dinamik" =  
-  
- DOS:  
- OMP_SCHEDULE Ayarla "dinamik" =
+
+OpenMP C ve C++ API ortam değişkenlerini (veya eşdeğer bir platforma özgü mekanizmaları) Bu bölümde açıklanmaktadır paralel kod yürütme denetimi.  Ortam değişkenlerinin adları büyük olmalıdır. Atanmış değerleri büyük/küçük harfe duyarsızdır ve öndeki ve sondaki boşluk olabilir.  Değerlerin program başlatıldıktan sonra yapılan değişiklikler yok sayılır.
+
+Ortam değişkenleri aşağıdaki gibidir:
+
+- **OMP_SCHEDULE** çalışma zamanı zamanlama türü ve öbek boyutunu ayarlar.
+
+- **OMP_NUM_THREADS** yürütme sırasında kullanılacak iş parçacığı sayısını ayarlar.
+
+- **Omp_dynamıc** etkinleştirir veya iş parçacığı sayısını yerleştirmenin dinamik ayarına devre dışı bırakır.
+
+- **OMP_NESTED** etkinleştirir veya iç içe geçmiş paralellik devre dışı bırakır.
+
+Bu bölümdeki örnekler, yalnızca bu değişkenleri UNIX C Kabuğu (csh) ortamlarda nasıl ayarlanabilir gösterir. Korn içinde kabuk ve DOS ortamları eylemleri benzer, aşağıdaki gibidir:
+
+csh: setenv OMP_SCHEDULE "dinamik"
+
+ksh: OMP_SCHEDULE dışarı aktarma "dinamik" =
+
+DOS: OMP_SCHEDULE Ayarla "dinamik" =

@@ -21,45 +21,50 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1701f6894ba3b44205526c59bad7ef635c1bbbd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 71d2be1c00e518597a5d5121d7a53544bd29067f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369479"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419665"
 ---
 # <a name="cuserexception-class"></a>CUserException sınıfı
-Bir son kullanıcı işlemi durdurmak için oluşturulur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CUserException : public CSimpleException  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Kullanmak `CUserException` throw/catch özel durum mekanizması için uygulamaya özgü özel durumları kullanmak istediğinizde. Sınıf adı "kullanıcı" yorumlanabilen "Benim Kullanıcı işlemek gereken olağanüstü bir şey gibi."  
-  
- A `CUserException` genellikle genel işlevi çağırdıktan sonra atılır `AfxMessageBox` bir işlem başarısız oldu kullanıcıya bildirmek için. Özel durum işleyicisi yazma, özel kullanıcı genellikle zaten hata bildirildi beri özel durumu işler. Framework bazı durumlarda bu özel durum oluşturur. Throw için bir `CUserException` kendiniz kullanıcıyı uyarmak ve genel işlevini çağırın `AfxThrowUserException`.  
-  
- Aşağıdaki örnekte, başlatılamayabilir işlemleri içeren bir işlev kullanıcıyı uyarır ve oluşturur bir `CUserException`. Çağıran işlev özel durum yakalar ve özel işler:  
-  
- [!code-cpp[NVC_MFCExceptions#24](../../mfc/codesnippet/cpp/cuserexception-class_1.cpp)]  
-  
- Kullanma hakkında daha fazla bilgi için `CUserException`, makaleye bakın [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md).  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- [CException](../../mfc/reference/cexception-class.md)  
-  
- [CSimpleException](../../mfc/reference/csimpleexception-class.md)  
-  
- `CUserException`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxwin.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CException Sınıfı](../../mfc/reference/cexception-class.md)
+
+Son kullanıcı işlemini durdurmak için oluşturulur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CUserException : public CSimpleException
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Kullanma `CUserException` throw/catch özel durum mekanizması için uygulamaya özgü özel durumlar kullanmak istediğinizde. Sınıf adı "kullanıcı", "my kullanıcı işlemek gereken olağanüstü bir sorun oldu."olarak yorumlanabilir
+
+A `CUserException` genellikle genel işlev çağrıldıktan sonra durum `AfxMessageBox` bir işlem başarısız oldu kullanıcıya bildirmek için. Özel durum işleyicisi yazdığınızda, özel kullanıcı genellikle zaten hata bildirildi olduğundan özel durumu işle. Framework, bazı durumlarda bu özel durum oluşturur. Oluşturulacak bir `CUserException` kendiniz kullanıcıyı uyarmak ve ardından genel işlev çağrısı `AfxThrowUserException`.
+
+Aşağıdaki örnekte, başarısız işlemler içeren bir işlev kullanıcıyı uyarır ve oluşturur bir `CUserException`. Çağıran işlevin özel durumu yakalar ve özel olarak işler:
+
+[!code-cpp[NVC_MFCExceptions#24](../../mfc/codesnippet/cpp/cuserexception-class_1.cpp)]
+
+Kullanma hakkında daha fazla bilgi için `CUserException`, makaleye göz atın [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md).
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+[CException](../../mfc/reference/cexception-class.md)
+
+[CSimpleException](../../mfc/reference/csimpleexception-class.md)
+
+`CUserException`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxwin.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CException Sınıfı](../../mfc/reference/cexception-class.md)

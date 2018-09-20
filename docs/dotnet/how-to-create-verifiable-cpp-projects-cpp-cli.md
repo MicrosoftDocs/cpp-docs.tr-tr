@@ -17,59 +17,59 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 36e7ee85d97639df6298a346ae83bb090e81bf87
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: a84fcd660f8cc7ef5686fe0e03f9b520d1251bc4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704769"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408940"
 ---
 # <a name="how-to-create-verifiable-c-projects-ccli"></a>Nasıl yapılır: doğrulanabilir C++ projeleri oluşturma (C + +/ CLI)
 
-Visual C++ Uygulama Sihirbazı doğrulanabilen projeler oluşturmayın.
+Visual C++ uygulama sihirbazları doğrulanabilir projeleri oluşturabilirsiniz.
 
 > [!IMPORTANT]
-> Visual Studio 2015 kullanım ve Visual Studio 2017 desteklemiyor **/CLR: pure** ve **/CLR: safe** doğrulanabilen projeler oluşturma. Doğrulanabilen kod gerektiriyorsa, C# kodunuzu Çevir öneririz.
+> Visual Studio 2015 kullanım dışı ve Visual Studio 2017'yi desteklemez **/CLR: pure** ve **/CLR: safe** doğrulanabilir projeleri oluşturma. Doğrulanabilen kod gerekiyorsa, C# kodunuzda Çevir öneririz.
 
-Ancak, destekleyen Visual C++ Derleyici araç setini daha eski bir sürümü kullanıyorsanız **/CLR: pure** ve **/CLR: safe**, projeler doğrulanabilir dönüştürülebilir. Bu konu, proje özelliklerini ayarlamak ve doğrulanabilen uygulamaları oluşturmak için Visual C++ projeleri dönüştürmek için proje kaynak dosyaları değiştirmek açıklar.
+Ancak, destekleyen Visual C++ Derleyici araç setini daha eski bir sürümünü kullanıyorsanız **/CLR: pure** ve **/CLR: safe**, projeleri doğrulanabilir dönüştürülebilir. Bu konuda, proje özelliklerini ayarlama ve doğrulanabilir uygulamalar oluşturmak için Visual C++ projeleriniz dönüştürmek için proje kaynak dosyalarında değişiklik açıklar.
 
 ## <a name="compiler-and-linker-settings"></a>Derleyici ve bağlayıcı ayarları
 
- Varsayılan olarak, .NET projeleri/CLR derleyici bayrağını kullanın ve hedef x86 donanım bağlayıcıya yapılandırın. Doğrulanabilen kod/CLR: safe bayrağı kullanmanız gerekir ve yerel makine yönergeler yerine MSIL oluşturmak için bağlayıcı istemeniz gerekir.
+Varsayılan olarak, .NET projeleri, / CLR derleyici bayrağını kullanın ve hedef x86 donanım bağlayıcıya yapılandırın. Doğrulanabilir kod için/CLR: safe bayrağı kullanmanız gerekir ve yerel makine yönergelerine yerine MSIL oluşturma konusunda talimat vermelisiniz.
 
-### <a name="to-change-the-compiler-and-linker-settings"></a>Derleyici ve bağlayıcı ayarlarını değiştirmek için
+### <a name="to-change-the-compiler-and-linker-settings"></a>Derleyici ve bağlayıcı ayarları değiştirmek için
 
-1. Proje özellik sayfasını görüntüleyin. Daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).
+1. ' % S'proje özelliği sayfasında görüntüler. Daha fazla bilgi için [Working with Project Properties](../ide/working-with-project-properties.md).
 
-1. Üzerinde **genel** altında sayfa **yapılandırma özellikleri** düğüm, kümesi **ortak dil çalışma zamanı desteği** özelliğine **Güvenli MSIL Ortak dil Çalışma zamanı desteği (/ CLR: safe)**.
+1. Üzerinde **genel** altındaki **yapılandırma özellikleri** , düğüm kümesi **ortak dil çalışma zamanı desteği** özelliğini **Güvenli MSIL Ortak dil Çalışma zamanı desteği (/ CLR: safe)**.
 
-1. Üzerinde **Gelişmiş** altında sayfa **bağlayıcı** düğüm, kümesi **CLR görüntü türünü** özelliğine **zorla Güvenli IL görüntüsünü (/ CLRIMAGETYPE)**.
+1. Üzerinde **Gelişmiş** altındaki **bağlayıcı** , düğüm kümesi **CLR imaj türü** özelliğini **Güvenli IL imajını zorla (/ CLRIMAGETYPE: safe)**.
 
 ## <a name="removing-native-data-types"></a>Yerel veri türlerini kaldırma
 
-Gerçekte kullanımda olsa bile yerel veri türleri doğrulanabilir olduğundan yerel türler içeren tüm üst bilgi dosyaları kaldırmanız gerekir.
+Yerel veri türleri doğrulanabilir olduğundan, aslında kullanılmazlar bile yerel türler içeren tüm üst bilgi dosyaları kaldırmanız gerekir.
 
 > [!NOTE]
 > Aşağıdaki yordam Windows Forms uygulaması (.NET) ve konsol uygulaması (.NET) projeler için geçerlidir.
 
 ### <a name="to-remove-references-to-native-data-types"></a>Yerel veri türleri başvuruları kaldırmak için
 
-1. Stdafx.h dosyasındaki her şeyin açıklama.
+1. Stdafx.h dosyadaki her şeyi açıklama.
 
 ## <a name="configuring-an-entry-point"></a>Bir giriş noktası yapılandırma
 
-Doğrulanabilen uygulamalar C çalışma zamanı kitaplıkları (CRT) kullanamadığından, standart giriş noktası olarak ana işlevi çağırmak için CRT üzerinde bağımlı olamaz. Başka bir deyişle, bağlayıcı başlangıçta çağrılacak işlevin adını açıkça sağlamanız gerekir. (Bu durumda, Main() main() veya _tmain() yerine CRT olmayan giriş noktasını belirtmek için kullanılır, ancak giriş noktası açıkça belirtilmesi gerekir çünkü bu adı isteğe bağlıdır.)
+C çalışma zamanı kitaplıkları (CRT) doğrulanabilir uygulamaları kullanamazsınız çünkü ana işlevi standart giriş noktası olarak çağırmak için CRT üzerinde bağımlı olamaz. Başka bir deyişle, açıkça için bağlayıcı başlangıçta çağrılacak işlevin adını sağlamanız gerekir. (Bu durumda, Main() main() veya _tmain() yerine bir CRT olmayan giriş noktasını belirtmek için kullanılan, ancak giriş noktası açıkça belirtilmesi gerektiğinden, bu rastgele bir addır.)
 
 > [!NOTE]
-> Aşağıdaki yordamlar konsol uygulaması (.NET) projeler için geçerlidir.
+> Aşağıdaki yordamlar, konsol uygulaması (.NET) projeler için geçerlidir.
 
 #### <a name="to-configure-an-entry-point"></a>Bir giriş noktası yapılandırmak için
 
-1. Projenin Main.cpp dosyasında Main() _tmain() değiştirin.
+1. _Tmain() Main() projenin ana .cpp dosyası ile değiştirin.
 
-1. Proje özellik sayfasını görüntüleyin. Daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).
+1. ' % S'proje özelliği sayfasında görüntüler. Daha fazla bilgi için [Working with Project Properties](../ide/working-with-project-properties.md).
 
-1. Üzerinde **Gelişmiş** altında sayfa **bağlayıcı** düğümü girin `Main` olarak **giriş noktası** özellik değeri.
+1. Üzerinde **Gelişmiş** altındaki **bağlayıcı** düğümünü girin `Main` olarak **giriş noktası** özellik değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

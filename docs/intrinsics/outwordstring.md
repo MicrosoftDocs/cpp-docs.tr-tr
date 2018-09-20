@@ -18,50 +18,54 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c49f76175ced83fb9a9b7e72e1c1fc7dbb68e20
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d148f6b2b6078693e5e05c02310c3e52e710b3e7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45720674"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392703"
 ---
 # <a name="outwordstring"></a>__outwordstring
-**Microsoft'a özgü**  
-  
- Oluşturur `rep outsw` gönderen yönerge `Count` başlayan sözcükleri `Buffer` çıkış tarafından belirtilen g/ç bağlantı noktasına `Port`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void __outwordstring(   
-   unsigned short Port,   
-   unsigned short* Buffer,   
-   unsigned long Count   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+**Microsoft'a özgü**
+
+Oluşturur `rep outsw` gönderen yönerge `Count` başlayan sözcükleri `Buffer` çıkış tarafından belirtilen g/ç bağlantı noktasına `Port`.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void __outwordstring( 
+   unsigned short Port, 
+   unsigned short* Buffer, 
+   unsigned long Count 
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *Bağlantı noktası*<br/>
-[in] Veri göndermek için bağlantı noktası.  
-  
+[in] Veri göndermek için bağlantı noktası.
+
 *Arabellek*<br/>
-[in] Belirtilen bağlantı noktasına gönderilecek verileri için bir işaretçi.  
-  
+[in] Belirtilen bağlantı noktasına gönderilecek verileri için bir işaretçi.
+
 *Sayısı*<br/>
-[in] Gönderilecek sözcük sayısı.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|  
-|---------------|------------------|  
-|`__outwordstring`|x86, x64|  
-  
- **Üst bilgi dosyası** \<intrin.h >  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[in] Gönderilecek sözcük sayısı.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|
+|---------------|------------------|
+|`__outwordstring`|x86, x64|
+
+**Üst bilgi dosyası** \<intrin.h >
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

@@ -20,53 +20,55 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d153d73889520deaff12b64da36567a8b9a4087
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dee0fd14e2e2d87155bfafefca6fa17e1d77135f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381788"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46375391"
 ---
 # <a name="servers"></a>Sunucular
-Bir sunucu uygulaması (veya bileşen uygulama) OLE öğeleri (veya bileşenleri) kullanmak için kapsayıcı uygulamaları tarafından oluşturur. Görsel düzenleme sunucu uygulaması, görsel düzenleme veya yerinde etkinleştirme de destekler. OLE sunucu başka bir biçimidir bir [Otomasyon sunucusu](../mfc/automation-servers.md). Bazı sunucu uygulamaları yalnızca katıştırılmış öğeleri oluşturulmasını destekler; Başkalarının katıştırılmış ve bağlantılı öğeler oluşturulmasını destekler. Bu nadir olmasına rağmen bazı yalnızca bağlama destekler. Kullanıcı bir öğeyi düzenlemek istediğinde tüm sunucu uygulamaları tarafından kapsayıcı uygulamaları etkinleştirme desteklemesi gerekir. Bir uygulama, bir kapsayıcı ve bir sunucu olabilir. Diğer bir deyişle, onu hem de kendi belgelerine verileri birleştirmek ve diğer uygulamaların belgelerine öğeleri olarak birleştirilebilir veri oluşturun.  
-  
- Bir miniserver yalnızca kapsayıcı tarafından başlatılan sunucu uygulaması özel bir türde değil. Microsoft Draw ve Microsoft Graph miniservers örnekleridir. Bir miniserver diskteki dosyaları olarak belgeleri depolamaz. Bunun yerine, kendi belgelerini okur ve onları kapsayıcılara ait belgelerde öğelerine yazar. Sonuç olarak, bir miniserver, bağlama değil yalnızca katıştırma destekler.  
-  
- Tam sunucu, tek başına bir uygulama olarak çalıştırın veya bir kapsayıcı uygulama tarafından başlatılan. Tam sunucu belgeleri diskteki dosyaları olarak depolayabilirsiniz. Yalnızca her iki katıştırma katıştırma ve bağlama ya da yalnızca bağlama destekleyebilir. Bir kapsayıcı uygulama kullanıcı, sunucu ve kapsayıcısında Yapıştır komut kesme veya kopyalama komutu seçerek katıştırılmış bir öğe oluşturabilirsiniz. Bağlantılı bir öğe kopyalama sunucusu ve Bağlantı Yapıştır komutunu kapsayıcısında seçerek oluşturulur. Alternatif olarak, kullanıcı bir katıştırılmış veya bağlantılı bir öğe Nesne Ekle iletişim kutusunu kullanarak oluşturabilirsiniz.  
-  
- Aşağıdaki tabloda sunucuları farklı türdeki özellikleri özetlenmektedir:  
-  
-### <a name="server-characteristics"></a>Sunucu Özellikleri  
-  
-|Sunucu türü|Birden çok örneği destekler|Belge başına öğe sayısı|Örneği başına belgeleri|  
-|--------------------|---------------------------------|------------------------|----------------------------|  
-|Miniserver|Evet|1.|1.|  
-|SDI tam sunucu|Evet|1 (bağlama destekleniyorsa, 1 veya daha fazla)|1.|  
-|MDI tam sunucu|Hayır (gerekli değil)|1 (bağlama destekleniyorsa, 1 veya daha fazla)|0 veya daha fazla|  
-  
- Birden fazla kapsayıcı katıştırılmış veya bağlantılı bir öğe düzenlemek için kullanılan olay, bir sunucu uygulaması aynı anda birden çok kapsayıcı desteklemelidir. Sunucu bir SDI uygulama (veya bir iletişim kutusu arabirimle miniserver) ise, sunucunun birden çok örneği aynı anda çalıştırabilirsiniz olması gerekir. Bu uygulamanın her kapsayıcı isteği işlemek için ayrı bir örneğini sağlar.  
-  
- Sunucu bir MDI uygulama ise, bir kapsayıcı öğe düzenlemek için gereken her zaman yeni bir MDI alt pencere oluşturabilirsiniz. Bu şekilde, birden çok kapsayıcı uygulama tek bir örneğini destekler.  
-  
- Sunucu uygulamanızı OLE sistem DLL'leri başka bir kapsayıcı hizmetlerini istediğinde sunucunun bir örneği zaten çalışıyor olursa Yapılacaklar söylemelisiniz: olup, sunucu yeni bir örneğini başlatabilir veya bir örneğine tüm kapsayıcıları isteklerini doğrudan Sunucu.  
-  
- Sunucuları hakkında daha fazla bilgi için bkz:  
-  
--   [Sunucular: Sunucu Uygulama](../mfc/servers-implementing-a-server.md)  
-  
--   [Sunucular: Sunucu Belgeleri Uygulama](../mfc/servers-implementing-server-documents.md)  
-  
--   [Sunucular: Yerinde Çerçeve Pencereleri Uygulama](../mfc/servers-implementing-in-place-frame-windows.md)  
-  
--   [Sunucular: Sunucu Öğeleri](../mfc/servers-server-items.md)  
-  
--   [Sunucular: Kullanıcı Arabirimi Sorunları](../mfc/servers-user-interface-issues.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE](../mfc/ole-in-mfc.md)   
- [Kapsayıcıları](../mfc/containers.md)   
- [Kapsayıcılar: Gelişmiş Özellikler](../mfc/containers-advanced-features.md)   
- [Menüler ve kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)   
- [Kayıt](../mfc/registration.md)   
- [Otomasyon Sunucuları](../mfc/automation-servers.md)
+
+OLE öğeleri (veya bileşenleri) kullanmak için bir sunucu uygulaması (veya uygulama bileşeni) kapsayıcı uygulamalar tarafından oluşturur. Görsel düzenleme sunucu uygulaması, görsel düzenleme veya yerinde etkinleştirmeyi de destekler. OLE server'ın başka bir formu bir [Otomasyon sunucusu](../mfc/automation-servers.md). Bazı sunucu uygulamaları, yalnızca katıştırılmış öğeler oluşturulmasını destekler; Başkalarının katıştırılmış ve bağlantılı öğeler oluşturulmasını destekler. Bu ender olsa bazı yalnızca bağlamayı destekler. Kullanıcı bir öğeyi düzenlemek istediğinde tüm sunucu uygulamaları, kapsayıcı uygulamalar tarafından etkinleştirme desteklemelidir. Bir uygulama bir kapsayıcı hem bir sunucu olabilir. Diğer bir deyişle, bu her ikisi de kendi belgelerine verileri birleştirmek ve oluşturabilirsiniz diğer uygulamaları belgelerine öğeleri olarak dahil edilebilir veri.
+
+Bir miniserver, yalnızca bir kapsayıcı tarafından başlatılabilen sunucu uygulaması özel türüdür. Microsoft Draw ve Microsoft Graph miniservers örnekleridir. Bir miniserver diskteki dosyaları olarak belgeleri depolamaz. Bunun yerine, kendi belgelerini okur ve kapsayıcılarına ait öğeler için yazar. Sonuç olarak, bir miniserver, bağlama değil yalnızca ekleme destekler.
+
+Tam sunucu, tek başına bir uygulama olarak çalıştırın veya bir kapsayıcı uygulama tarafından başlatılan. Tam sunucu belgeleri, diskteki dosyaları olarak depolayabilirsiniz. Yalnızca her iki katıştırma ekleme ve bağlama veya yalnızca bağlama destekleyebilir. Bir kapsayıcı uygulamasının kullanıcı, sunucu ve Yapıştır komut kapsayıcısında Kes veya Kopyala komutunu seçerek gömülü bir öğe oluşturabilirsiniz. Kopyalama komutu sunucusundaki ve Yapıştır komut kapsayıcısında seçerek bağlantılı bir öğe oluşturulur. Alternatif olarak, kullanıcı bir gömülü veya bağlantılı öğe Nesne Ekle iletişim kutusunu kullanarak oluşturabilirsiniz.
+
+Sunucuları farklı türlerdeki özellikler aşağıdaki tabloda özetlenmiştir:
+
+### <a name="server-characteristics"></a>Sunucu Özellikleri
+
+|Sunucu türü|Birden çok örneği destekler|Belge başına öğe sayısı|Örnek başına belgeleri|
+|--------------------|---------------------------------|------------------------|----------------------------|
+|Miniserver|Evet|1.|1.|
+|SDI tam sunucu|Evet|1 (bağlama destekleniyorsa, 1 veya daha fazla)|1.|
+|MDI tam sunucu|Hayır (gerekli değildir)|1 (bağlama destekleniyorsa, 1 veya daha fazla)|0 veya daha fazla|
+
+Birden fazla kapsayıcı bir gömülü veya bağlantılı öğeyi düzenlemek için kullanılan olay, bir sunucu uygulaması aynı anda birden çok kapsayıcı desteklemelidir. Sunucu bir SDI uygulaması (veya bir iletişim kutusu arabirimi ile bir miniserver) ise, birden fazla sunucunun aynı anda çalıştırabilirsiniz olması gerekir. Bu, uygulamanın her bir kapsayıcı isteği işlemek için ayrı bir örneğini sağlar.
+
+Sunucu bir MDI uygulaması ise, bir öğeyi düzenlemek için bir kapsayıcı her durumda yeni bir MDI alt penceresi oluşturabilirsiniz. Bu şekilde, birden çok kapsayıcı uygulamanın tek bir örneğini destekler.
+
+Sunucu uygulamasının OLE sistem DLL'lerini başka bir kapsayıcı hizmetlerinin istediğinde sunucunun bir örneği zaten çalışıyorsa yapmanız gerekenler bildirmeniz gerekir: olup sunucunun yeni bir örneğini başlatmak veya bir örneğinin tüm kapsayıcıları istekleri Sunucu.
+
+Sunucuları hakkında daha fazla bilgi için bkz:
+
+- [Sunucular: Sunucu Uygulama](../mfc/servers-implementing-a-server.md)
+
+- [Sunucular: Sunucu Belgeleri Uygulama](../mfc/servers-implementing-server-documents.md)
+
+- [Sunucular: Yerinde Çerçeve Pencereleri Uygulama](../mfc/servers-implementing-in-place-frame-windows.md)
+
+- [Sunucular: Sunucu Öğeleri](../mfc/servers-server-items.md)
+
+- [Sunucular: Kullanıcı Arabirimi Sorunları](../mfc/servers-user-interface-issues.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[OLE](../mfc/ole-in-mfc.md)<br/>
+[Kapsayıcılar](../mfc/containers.md)<br/>
+[Kapsayıcılar: Gelişmiş Özellikler](../mfc/containers-advanced-features.md)<br/>
+[Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)<br/>
+[Kayıt](../mfc/registration.md)<br/>
+[Otomasyon Sunucuları](../mfc/automation-servers.md)
 

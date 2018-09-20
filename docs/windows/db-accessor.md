@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: efca93e2e9b52ce646ef07465682815978550414
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 61c20647d96a66cf4b50e6f0b031cc04353553e5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607783"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410656"
 ---
 # <a name="dbaccessor"></a>db_accessor
 
@@ -39,10 +39,10 @@ Grupları `db_column` katılmak öznitelikleri `IAccessor`-bağlama dayalı.
 
 #### <a name="parameters"></a>Parametreler
 
-*sayı*  
+*sayı*<br/>
 Erişimci (bir tamsayı sıfır tabanlı dizini) belirtir. Artan erişimci sayıları tamsayı kullanarak azalan veya tanımlı değerler belirtmeniz gerekir.
 
-*auto*  
+*auto*<br/>
 Erişimci otomatik olarak alınır (TRUE) veya (FALSE) alınmamış olduğunu belirten bir Boole değeri.
 
 ## <a name="remarks"></a>Açıklamalar

@@ -16,17 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6dca289631f3289a7976b6dc3482770bf5f3fe7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 9f755ee59c7f0b6e4ae9897535cdc536537ba32f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200624"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446518"
 ---
 # <a name="support-for-ansi"></a>ANSI Desteği
-MFC çerçevesi bir bütün olarak yalnızca Unicode desteklemeye doğru giderek gelişen olsa da çoğu MFC sınıfları ve yöntemleri ANSI karakter kümesi desteği karakter kümesi. Windows Vista ve Windows ortak denetimleri sürüm 6.1 sürekli geliştirmeler nedeniyle birkaç ANSI sınıflar ve yöntemler için destek kullanım dışı bırakılmıştır.  Daha fazla bilgi için [kullanım dışı ANSI API'ları](../mfc/deprecated-ansi-apis.md) ve [Unicode desteği](../text/support-for-unicode.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Unicode desteği](../text/support-for-unicode.md)   
- [Kullanım dışı ANSI API'leri](../mfc/deprecated-ansi-apis.md)   
- [Kabuk ve ortak denetimleri sürümleri](https://msdn.microsoft.com/library/windows/desktop/bb776779)
+
+MFC çerçevesi bir bütün olarak yalnızca Unicode desteklemeye doğru giderek gelişen olsa da çoğu MFC sınıfları ve yöntemleri ANSI karakter kümesi desteği karakter kümesi. Windows Vista ve Windows ortak denetimleri sürüm 6.1 sürekli geliştirmeler nedeniyle birkaç ANSI sınıflar ve yöntemler için destek kullanım dışı bırakılmıştır.  Daha fazla bilgi için [kullanım dışı ANSI API'ları](../mfc/deprecated-ansi-apis.md) ve [Unicode desteği](../text/support-for-unicode.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Unicode Desteği](../text/support-for-unicode.md)<br/>
+[Kullanım Dışı ANSI API'leri](../mfc/deprecated-ansi-apis.md)<br/>
+[Kabuk ve ortak denetimleri sürümleri](https://msdn.microsoft.com/library/windows/desktop/bb776779)

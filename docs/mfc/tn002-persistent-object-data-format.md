@@ -20,98 +20,105 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: deca5e0913013e73188e505935d5b2c9b8bf79db
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: a23ade068fa0d71715a76d3a99a393cc5458947c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36952215"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46399970"
 ---
 # <a name="tn002-persistent-object-data-format"></a>TN002: Kalıcı Nesne Veri Biçimi
-Bu Not bir dosyada depolandığında destekleyen kalıcı C++ nesneleri ve nesne veri biçimi MFC yordamları açıklar. Bu, yalnızca sınıflarıyla uygulanır [declare_serıal](../mfc/reference/run-time-object-model-services.md#declare_serial) ve [ımplement_serıal](../mfc/reference/run-time-object-model-services.md#implement_serial) makroları.  
-  
-## <a name="the-problem"></a>Sorun  
- MFC uygulaması kalıcı veri için bir dosya bir tek bitişik bölümünde birçok nesne verilerini depolar. Nesnenin `Serialize` yöntemi nesnenin veri sıkıştırılmış bir ikili biçimine çevirir.  
-  
- Tüm verilerin kaydedildiğinden emin aynı biçimde kullanarak uygulama garanti [CArchive sınıfı](../mfc/reference/carchive-class.md). Kullandığı bir `CArchive` nesnesi Çevirmen olarak. Bu nesne, oluşturulduğunda, çağrısı tamamlanana kadar saati devam ederse [CArchive::Close](../mfc/reference/carchive-class.md#close). Program içeren kapsamı çıktığında bu yöntem Programcı tarafından açıkça ya da örtük olarak yıkıcı tarafından çağrılabilir `CArchive`.  
-  
- Bu Not uygulamasını açıklar `CArchive` üyeleri [CArchive::ReadObject](../mfc/reference/carchive-class.md#readobject) ve [CArchive::WriteObject](../mfc/reference/carchive-class.md#writeobject). Bu işlevler Arcobj.cpp ve ana uygulamasını için kodu bulacaksınız `CArchive` Arccore.cpp içinde. Kullanıcı kodu çağırmaz `ReadObject` ve `WriteObject` doğrudan. Bunun yerine, bu nesneler declare_serıal ve ımplement_serıal makroları tarafından otomatik olarak oluşturulan sınıfa özgü tür kullanımı uyumlu ekleme ve çıkarma işleçleri tarafından kullanılır. Aşağıdaki kodda gösterildiği nasıl `WriteObject` ve `ReadObject` örtük olarak adlandırılır:  
-  
-```  
-class CMyObject : public CObject  
-{  
-    DECLARE_SERIAL(CMyObject) 
-};  
- 
-IMPLEMENT_SERIAL(CMyObj, CObject, 1)  
- 
-// example usage (ar is a CArchive&)  
-CMyObject* pObj;  
-CArchive& ar;  
-ar <<pObj;        // calls ar.WriteObject(pObj)  
-ar>> pObj;        // calls ar.ReadObject(RUNTIME_CLASS(CObj))  
-```  
-  
-## <a name="saving-objects-to-the-store-carchivewriteobject"></a>Nesneler (CArchive::WriteObject) depoya kaydetme  
- Yöntem `CArchive::WriteObject` nesne yeniden oluşturmak için kullanılan üstbilgi verileri yazar. Bu veriler iki bölümden oluşur: türünü nesneyi ve nesnenin durumu. Bu yöntem, böylece yalnızca tek bir kopya işaretçileri (döngüsel işaretçileri dahil), bu nesneye sayısından bağımsız olarak kaydedilir, yazılmakta nesnenin kimliği sürdürmek için sorumludur.  
-  
- (Ekleme) kaydetme ve geri yükleme (ayıklanan) nesneleri kullanır. birkaç "bildirim sabitleri üzerinde." Bu ikili biçimde depolanır ve Arşiv (Not "w" önekini 16 bit miktarları gösterir) için önemli bilgiler sağlayan değerleri şunlardır:  
-  
-|Etiket|Açıklama|  
-|---------|-----------------|  
-|wNullTag|NULL nesne işaretçileri (0) kullanılır.|  
-|wNewClassTag|Aşağıdaki sınıf tanımına bu arşiv içeriği (-1) için yeni olduğunu gösterir.|  
-|wOldClassTag|Okunan nesne sınıfı bu bağlamda (0x8000) görülen gösterir.|  
-  
- Arşiv nesneleri depolarken tutan bir [CMapPtrToPtr](../mfc/reference/cmapptrtoptr-class.md) ( *m_pStoreMap*) depolanan bir nesneden eşleme 32-bit kalıcı tanımlayıcısına (PID) olduğu. PID benzersiz her nesne ve Arşiv bağlamında kaydedilen her benzersiz sınıf adı atanır. Bu PID 1'den başlayarak sıralı olarak verilir. Bu PID arşiv kapsamı dışında önemi yoktur ve özellikle, kaydı sayılar veya diğer kimlik öğeler ile karıştırılmamalıdır üzeresiniz.  
-  
- İçinde `CArchive` sınıfı, PID 32-bit, ancak 0x7FFE büyük olmadıkça 16 bit yazıldığı. Büyük PID 32-bit PID tarafından izlenen 0x7FFF olarak yazılır. Önceki sürümlerde oluşturulan projeleri ile uyumluluk tutar.  
-  
- Bir nesne (genellikle genel ekleme işlecini kullanarak) arşive kaydetmek için bir istek yapıldığında, bir NULL bir denetim gerçekleştirilir [CObject](../mfc/reference/cobject-class.md) işaretçi. İşaretçi NULL ise *wNullTag* arşiv akışa eklenir.  
-  
- İşaretçi NULL olmayan ve seri hale getirilebilir (sınıfı bir `DECLARE_SERIAL` sınıfı), kod denetimleri *m_pStoreMap* nesne zaten kaydedilip kaydedilmediğini görmek için. Varsa, kodu 32 bit PID arşiv akışa Bu nesneyle ilişkili ekler.  
-  
- Nesne önce kaydedilmemiş olan, dikkate alınması gereken iki olasılık vardır: hem nesnenin hem de tam (diğer bir deyişle, sınıfı) nesnenin türünü bu arşiv bağlamı için yeni olan ya da nesne zaten görülen bir tam türüdür. Türü görüldü olup olmadığını, belirlemek için kod sorguları *m_pStoreMap* için bir [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) eşleşen nesne `CRuntimeClass` kaydedilmesini nesneyle ilişkili nesne. Bir eşleşme varsa `WriteObject` temelinde bir etiket ekler `OR` , *wOldClassTag* ve bu dizin. Varsa `CRuntimeClass` bu arşiv bağlamı için yeni `WriteObject` o sınıfın yeni bir PID atar ve öncesinde arşiv ekler *wNewClassTag* değeri.  
-  
- Bu sınıf tanımlayıcısı Arşiv kullanarak daha sonra eklenen `CRuntimeClass::Store` yöntemi. `CRuntimeClass::Store` sınıf (aşağıya bakın) şema sayısı ve sınıfın ASCII metin adını ekler. ASCII metin adı kullanımını arşiv benzersizliğini uygulamalarda garanti etmez olduğunu unutmayın. Bu nedenle, veri dosyalarınızı bozulmasını önlemek için etiket. Sınıf bilgileri ekleme arşiv nesnesine koyar *m_pStoreMap* ve çağırır `Serialize` sınıfı özgü verileri eklemek için yöntem. Nesnesine yerleştirme *m_pStoreMap* çağırmadan önce `Serialize` deposuna kaydedildi nesne birden çok kopyası engeller.  
-  
- İlk çağıran (genellikle ağ nesneleri, kök) döndürülürken çağırmalısınız [CArchive::Close](../mfc/reference/carchive-class.md#close). Diğer yapmayı planlıyorsanız [CFile](../mfc/reference/cfile-class.md)işlemleri çağırmalıdır `CArchive` yöntemi [Flush](../mfc/reference/carchive-class.md#flush) arşiv bozulmasını önlemek için.  
-  
+
+Bu Not, bir dosyada depolandığında, kalıcı C++ nesneleri ve nesne veri biçimi destekleyen MFC yordamları açıklar. Bu yalnızca sınıflarıyla geçerlidir [declare_serıal](../mfc/reference/run-time-object-model-services.md#declare_serial) ve [ımplement_serıal](../mfc/reference/run-time-object-model-services.md#implement_serial) makroları.
+
+## <a name="the-problem"></a>Sorun
+
+Kalıcı veri için MFC uygulaması, bir dosya bitişik tek bir parçası birçok nesne verilerini depolar. Nesnenin `Serialize` yöntemi nesnenin veri sıkıştırılmış bir ikili biçimine çevirir.
+
+Tüm verileri kaydedilir, aynı biçimde kullanarak uygulama garanti [CArchive sınıfı](../mfc/reference/carchive-class.md). Bunu kullanan bir `CArchive` bir translator olarak nesnesi. Bu nesne, çağırana kadar oluşturulduğu zamandan devam ederse [CArchive::Close](../mfc/reference/carchive-class.md#close). İçeren kapsamı program çıkış yaptığı andaki bu yöntem programcısı tarafından açıkça veya dolaylı olarak yok edici tarafından çağrılabilir `CArchive`.
+
+Bu Not uygulamasını açıklar `CArchive` üyeleri [CArchive::ReadObject](../mfc/reference/carchive-class.md#readobject) ve [CArchive::WriteObject](../mfc/reference/carchive-class.md#writeobject). Bu işlevler Arcobj.cpp ve ana uygulama için kod bulabilirsiniz `CArchive` Arccore.cpp içinde. Kullanıcı kodu çağırmaz `ReadObject` ve `WriteObject` doğrudan. Bunun yerine, bu nesneler declare_serıal ve ımplement_serıal makroları tarafından otomatik olarak oluşturulan sınıfa özgü tür kullanımı uyumlu ekleme ve çıkarma işleçleri tarafından kullanılır. Aşağıdaki kodda gösterildiği nasıl `WriteObject` ve `ReadObject` örtük olarak çağırılamaz:
+
+```
+class CMyObject : public CObject
+{
+    DECLARE_SERIAL(CMyObject)
+};
+
+IMPLEMENT_SERIAL(CMyObj, CObject, 1)
+
+// example usage (ar is a CArchive&)
+CMyObject* pObj;
+CArchive& ar;
+ar <<pObj;        // calls ar.WriteObject(pObj)
+ar>> pObj;        // calls ar.ReadObject(RUNTIME_CLASS(CObj))
+```
+
+## <a name="saving-objects-to-the-store-carchivewriteobject"></a>Nesneleri Store (CArchive::WriteObject) kaydediliyor
+
+Yöntem `CArchive::WriteObject` nesnesini yeniden oluşturmak için kullanılan üstbilgi verileri yazar. Bu veriler iki bölümden oluşur: türü nesneyi ve nesnenin durumu. Bu yöntem, böylece (döngüsel işaretçileri dahil), nesne işaretçileri sayısından bağımsız olarak yalnızca tek bir kopyası kaydedilir, yazılmakta olan nesne kimliği bakımından sorumludur.
+
+(Eklemek) kaydetme ve (ayıklanan) nesneleri geri yüklemek, çeşitli "bildirim sabitleri üzerinde." dayanır İkili dosyada depolanır ve Arşiv (16-bit miktarlar "w" ön ekini belirtir. Not) için önemli bilgiler sağlayan değerleri şunlardır:
+
+|Etiket|Açıklama|
+|---------|-----------------|
+|wNullTag|NULL nesne işaretçileri (0) için kullanılır.|
+|wNewClassTag|Aşağıdaki sınıf tanımı bu arşiv içeriği (-1) yeni olduğunu gösterir.|
+|wOldClassTag|Okunan nesne sınıfı bu bağlamda (0x8000) görüldü gösterir.|
+
+Arşiv nesneleri depolarken, tutan bir [CMapPtrToPtr](../mfc/reference/cmapptrtoptr-class.md) ( *m_pStoreMap*) 32-bit kalıcı tanımlayıcısını (PID) depolanan nesne bir eşleme olduğu. Her benzersiz nesne ve Arşiv bağlamında kaydedilen her benzersiz sınıf adı için bir PID atanır. Bu PIDs 1'den başlayarak sıralı olarak verilir. Bu PIDs arşiv kapsamı dışında önemi yoktur ve özellikle, kayıt sayılarını veya diğer kimlik öğeleri ile karıştırılmamalıdır üzeresiniz.
+
+İçinde `CArchive` sınıfı PIDs 32-bit, ancak 0x7FFE daha büyük olmadıkları sürece 16-bit yazıldığı. Büyük PIDs 32-bit PID tarafından izlenen 0x7FFF olarak yazılır. Bu, önceki sürümlerde oluşturulmuş projeler ile uyumluluk tutar.
+
+Bir nesne için bir arşiv (genellikle genel ekleme işleci kullanılarak) kaydetmek için bir istek yapıldığında, bir NULL bir onay yapılır [CObject](../mfc/reference/cobject-class.md) işaretçi. NULL işaretçi ise *wNullTag* arşiv akışa eklenir.
+
+İşaretçisi NULL değil ve seri hale getirilebilir (sınıf bir `DECLARE_SERIAL` sınıfı), kod denetimleri *m_pStoreMap* nesne zaten kaydedilip kaydedilmediğini görmek için. Varsa, kodu arşiv akışa o nesne ile ilişkili 32-bit PID ekler.
+
+Önce nesne kaydedilmedi, dikkate alınması gereken iki olasılık vardır: hem nesne hem de tam (diğer bir deyişle, sınıfı) nesnenin türünü bu arşiv içeriği için yeni veya zaten görüldü tam bir tür olan nesnesidir. Türü görüldü olup olmadığını, belirlemek için kod sorguları *m_pStoreMap* için bir [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) eşleşen nesne `CRuntimeClass` kaydedilmesini nesnesiyle ilişkili nesne. Bir eşleşme varsa `WriteObject` temelinde olan bir etiketi ekler `OR` , *wOldClassTag* ve bu dizini. Varsa `CRuntimeClass` bu arşiv içeriği için yeni `WriteObject` koyarak arşiv ekler ve o sınıfın yeni bir PID atar *wNewClassTag* değeri.
+
+Arşiv kullanarak bu sınıf için bir tanımlayıcı eklenir `CRuntimeClass::Store` yöntemi. `CRuntimeClass::Store` ' % s'sınıfı (aşağıya bakın) şema sayısı ve sınıfın ASCII metin adını ekler. ASCII metin adı kullanımını uygulamalarda arşiv benzersizliğini garantilemez unutmayın. Bu nedenle, bozulmasını önlemek için veri dosyalarını etiketlemelisiniz. Sınıf Bilgisi öğesinin eklenmesi, arşiv nesnesine koyar *m_pStoreMap* ve `Serialize` sınıfa özgü verileri eklemek için yöntemi. Nesnesine yerleştirme *m_pStoreMap* çağırmadan önce `Serialize` depoya kaydedilmiş nesne birden çok kopyasını engeller.
+
+İlk çağıranın (genellikle kök ağ nesnelerini) döndürürken çağırmalısınız [CArchive::Close](../mfc/reference/carchive-class.md#close). Diğer yapmayı planlıyorsanız [CFile](../mfc/reference/cfile-class.md)işlemleri çağırmalıdır `CArchive` yöntemi [Temizleme](../mfc/reference/carchive-class.md#flush) arşiv bozulmasını önlemek için.
+
 > [!NOTE]
->  Bu uygulama 0x3FFFFFFE dizinlerini arşiv bağlam başına sabit sınırı uygular. Bu sayı benzersiz nesneler ve tek bir arşivde kaydedilebilmesi için sınıflar en büyük sayısını temsil eder, ancak tek bir disk dosyası arşiv bağlamları sınırsız sayıda olabilir.  
-  
-## <a name="loading-objects-from-the-store-carchivereadobject"></a>Nesneler (CArchive::ReadObject) deposundan yükleniyor  
- Nesneleri kullanır (ayıklanıyor) yükleme `CArchive::ReadObject` yöntemi ve, ters `WriteObject`. İle `WriteObject`, `ReadObject` kullanıcı kodu tarafından doğrudan; çağrılmaz kullanıcı kodu çağırır tür kullanımı uyumlu ayıklama işleci çağrı `ReadObject` beklenen ile `CRuntimeClass`. Bu ayıklama işlemi türü bütünlüğünü oluşturmasını sağlar.  
-  
- Bu yana `WriteObject` uygulama atanan 1'den başlayarak, artan PID (0 önceden tanımlanmış NULL nesnesi olarak), `ReadObject` uygulama arşiv bağlamının durumunu korumak için bir dizi kullanabilirsiniz. Ne zaman bir PID okunur Mağaza'dan PID geçerli üst sınırdan daha büyükse *m_pLoadArray*, `ReadObject` yeni bir nesne (veya sınıf tanımına) izlediğini bilir.  
-  
-## <a name="schema-numbers"></a>Şema numaraları  
- Sınıfa atadığınız şema numarasını olduğunda `IMPLEMENT_SERIAL` sınıfının yöntemi ile karşılaşıldı, "" sınıf uygulamasını sürümüdür. Şema sınıfı uyarlamasını anlamına gelir, değil sayısı için belirli bir nesne (genellikle nesne sürüm olarak adlandırılır) kalıcı yapıldı.  
-  
- Zaman içinde aynı sınıfın birkaç farklı uygulamaları korumak istiyorsanız, nesnenin gözden gibi şema artırma `Serialize` yöntemi uygulama yükleyebilir ve daha eski sürümleri kullanılarak depolanan nesneler kod yazmanıza etkinleştirecek uygulaması.  
-  
- `CArchive::ReadObject` Yöntemi oluşturur bir [CArchiveException](../mfc/reference/carchiveexception-class.md) bellek sınıfının açıklamasında şema sayısı farklıdır kalıcı depo şeması numarasında karşılaştığında. Bu özel durumdan kurtarmak kolay değildir.  
-  
- Kullanabileceğiniz `VERSIONABLE_SCHEMA` birlikte (bit düzeyinde **veya**) bu özel durumlar gelen tutmak için şema sürümü. Kullanarak `VERSIONABLE_SCHEMA`, kodunuzu uygun eylemi gerçekleştirin kendi `Serialize` yönteminden döndürülen değer denetleyerek işlevi [CArchive::GetObjectSchema](../mfc/reference/carchive-class.md#getobjectschema).  
-  
-## <a name="calling-serialize-directly"></a>Seri doğrudan çağırma  
- Genel nesne arşiv düzeni yükü çoğunda durumlarda `WriteObject` ve `ReadObject` gerekli değildir. Bu, verileri seri hale getirme, ortak durumda bir [CDocument](../mfc/reference/cdocument-class.md). Bu durumda, `Serialize` yöntemi `CDocument` değil extract veya INSERT işleçlerle doğrudan çağrılır. Belgesinin içeriğini de daha genel nesne arşiv düzeni kullanabilir.  
-  
- Çağırma `Serialize` doğrudan aşağıdaki avantajları ve dezavantajları vardır:  
-  
--   Hiçbir ek bayt önce arşiv veya nesne seri sonra eklenir. Bu yalnızca kaydedilmiş veri küçültür, ancak uygulamak sağlar `Serialize` herhangi işleyebilir yordamları dosya biçimleri.  
-  
--   MFC olarak ayarlanmış şekilde `WriteObject` ve `ReadObject` uygulamaları ve ilgili koleksiyonları bağlı değil uygulamanıza başka bir amaç için daha fazla genel nesne arşiv düzeni gerekmedikçe.  
-  
--   Kodunuzu eski şema noktalarından kurtarmak mevcut değil. Bu belge serileştirme kodunuzu kodlama şema sayı, dosya biçimi sürüm numaralarını veya hangi tanımlama sayılar sorumlu hale getirir, veri dosyalarınızı başlangıcında kullanın.  
-  
--   Doğrudan çağrısıyla serileştirilmiş herhangi bir nesne `Serialize` değil kullanmalısınız `CArchive::GetObjectSchema` veya gerekir tanıtıcısı (UINT) -1 dönüş değeri belirten sürümü bilinmiyor.  
-  
- Çünkü `Serialize` çağrılır doğrudan belgenize, genellikle kendi üst belge başvuruları arşivlemek için belgenin alt nesneler için yoktur. Bu nesneler bir işaretçi kendi kapsayıcı belge açıkça verilmelidir veya kullanmalısınız [CArchive::MapObject](../mfc/reference/carchive-class.md#mapobject) eşlemek için işlevi `CDocument` bu geri işaretçileri arşivlenmiş önce PID işaretçi.  
-  
- Daha önce belirtildiği gibi sürüm kodlamak ve çağırdığınızda bilgileri kendiniz sınıf `Serialize` doğrudan, daha sonra hala eski dosyaları ile geriye dönük uyumluluk korurken biçimini olanak sağlar. `CArchive::SerializeClass` İşlevi çağrılamaz açıkça doğrudan bir nesneyi seri hale getirme önce ya da bir taban sınıf çağırmadan önce.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+>  Bu uygulama 0x3FFFFFFE dizinlerini arşiv bağlam başına sabit bir sınır uygular. Bu sayı, maksimum sayısı benzersiz nesneleri ve tek bir Arşiv'de kaydedilebilir sınıfları temsil eder, ancak tek disk dosyası arşiv bağlamları sınırsız sayıda olabilir.
+
+## <a name="loading-objects-from-the-store-carchivereadobject"></a>' % S'Store (CArchive::ReadObject) nesnelerden yükleniyor
+
+Nesneleri kullanır (ayıklanıyor) yüklenirken `CArchive::ReadObject` yöntemi ve listesiyse, `WriteObject`. Olduğu gibi `WriteObject`, `ReadObject` kullanıcı kodu tarafından doğrudan; çağrılmaz kullanıcı kodu çağıran tür kullanımı uyumlu ayıklama işleci çağırmalıdır `ReadObject` beklenen ile `CRuntimeClass`. Bu ayıklama işlemi türü bütünlüğünü oluşturmasını sağlar.
+
+Bu yana `WriteObject` uygulama 1'den başlayarak, artan PIDs atanan (0 önceden tanımlı olarak NULL nesne) `ReadObject` uygulama arşiv bağlamının durumunu korumak üzere bir dizi kullanabilirsiniz. Ne zaman bir PID okuma Mağaza'dan PID geçerli üst sınırdan büyük olması durumunda *m_pLoadArray*, `ReadObject` yeni nesne (veya sınıf açıklaması) izlediğini bilir.
+
+## <a name="schema-numbers"></a>Şema numaraları
+
+Sınıfa atadığınız şema numarasını olduğunda `IMPLEMENT_SERIAL` sınıfının yöntemi karşılaşılırsa, sınıf uygulamasının "Sürüm". Değil sayısı için belirli bir nesne (genellikle nesne sürümü adlandırılır) kalıcı duruma getirildi, sınıfın uygulaması için şema'anlamına gelir.
+
+Zaman içinde aynı sınıfın birkaç farklı uygulamalarını sağlamak istiyorsanız, nesnenizin gözden geçirme gibi şema artan `Serialize` yöntem uygulaması, eski sürümleri kullanılarak depolanan nesnelere yükleyebilir ve kod yazmanıza olanak etkinleştirilir uygulaması.
+
+`CArchive::ReadObject` Yöntemi oluşturur bir [CArchiveException](../mfc/reference/carchiveexception-class.md) bellek sınıf tanımı şema sayısından farklı kalıcı depoya bir şema sayı karşılaştığında. Bu özel durumdan kurtarmak kolay değildir.
+
+Kullanabileceğiniz `VERSIONABLE_SCHEMA` birlikte (bit düzeyinde **veya**) öğesinden oluşturulan bu özel durumun tutmak için şema sürümü. Kullanarak `VERSIONABLE_SCHEMA`, kodunuzu uygun eylemi gerçekleştirin kendi `Serialize` işlevi dönüş değerini denetleyerek [CArchive::GetObjectSchema](../mfc/reference/carchive-class.md#getobjectschema).
+
+## <a name="calling-serialize-directly"></a>Serileştirilecek doğrudan çağırma
+
+Çoğu durumda genel nesne arşiv düzeni yükü `WriteObject` ve `ReadObject` gerekli değildir. Verileri seri hale getirme, sık karşılaşılan durum budur bir [CDocument](../mfc/reference/cdocument-class.md). Bu durumda, `Serialize` yöntemi `CDocument` değil ayıklama veya INSERT işleçleri ile doğrudan çağrılır. Belgenin içeriğini sırayla daha genel bir nesne arşiv düzeni kullanabilir.
+
+Çağırma `Serialize` doğrudan aşağıdaki avantajları ve dezavantajları vardır:
+
+- Hiçbir ek bayt arşivlemeden önce veya sonra nesnenin serileştirildiği eklenir. Bu yalnızca kaydedilen verilerin daha küçük olmasını sağlar, ancak olanak tanır `Serialize` herhangi işleme rutinleri dosya biçimleri.
+
+- MFC ayarlanan böylece `WriteObject` ve `ReadObject` uygulamaları ve ilgili koleksiyonlarda bağlı değil uygulamanıza başka bir amaç için daha genel bir nesne arşiv düzeni gerekmedikçe.
+
+- Kodunuzu eski şema noktalarından kurtarmak yok. Bu belge serileştirme kodunuzu kodlama şema sayı, dosya biçimi sürüm numaraları veya hangi tanımlama numaraları sorumlu hale getirir, veri dosyalarını başlangıcında kullanın.
+
+- Doğrudan çağrı ile seri herhangi bir nesne `Serialize` değil kullanmalısınız `CArchive::GetObjectSchema` veya gerekir tanıtıcısı (birim) -1 değerinin döndürüldüğünü belirten sürümü bilinmiyor.
+
+Çünkü `Serialize` çağrılır, belge üzerinde doğrudan genellikle mümkün kendi üst belge başvuruları arşivlemek için belgenin alt nesneler için değildir. Bu nesneler bir işaretçi, kapsayıcı belgeye açıkça verilmelidir veya kullanmalısınız [CArchive::MapObject](../mfc/reference/carchive-class.md#mapobject) eşlemek için işlev `CDocument` bu geri işaretçileri arşivlenmiş önce bir PID işaretçisi.
+
+Daha önce belirtildiği gibi sürüm kodlama ve çağırdığınızda bilgileri kendiniz sınıfı `Serialize` doğrudan, daha sonra hala eski dosyaları ile geriye dönük uyumluluğu koruyarak biçimini imkan tanır. `CArchive::SerializeClass` İşlevi çağrılabilir açıkça önce doğrudan bir nesneyi serileştirmek veya bir temel sınıfı çağırmadan önce.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

@@ -12,14 +12,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a73a822e3cf6daa9d9d7c3ebdabbcd4671fc5c7e
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: a8230cf66fd3cc8cdce017c07f05f58b381ebd14
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42464690"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400919"
 ---
 # <a name="porting-guide-mfc-scribble"></a>Taşıma Kılavuzu: MFC Scribble
+
 Bu konu Visual Studio 2017 için Visual Studio'nun eski sürümlerinde oluşturulmuş Visual C++ projeleri için yükseltme yordamını dağıtır çeşitli konular, davranıştır. Bu konular yükseltme işlemi çok basit bir proje ile başlayan ve biraz daha karmaşık ayarlara taşıma örnek tarafından tanıtmaktadır. Bu konu başlığında, yükseltme işlemi için belirli bir proje, MFC karalama üzerinden çalışıyoruz. C++ projeleri için yükseltme işlemi için temel bir giriş olarak uygun.  
   
 Visual Studio'nun her sürümü Visual Studio'nun daha eski bir sürümden daha yeni bir tane taşıma kodu karmaşıklaştırabilir olası uyumsuzluklar tanıtır. Bazen gerekli kodunuzda derleyin ve kodunuzu güncelleştirmeniz gerekir ve bazen proje dosyaları için gerekli değişiklikleri olan değişikliklerdir. Visual Studio'nun önceki bir sürümüyle oluşturulmuş bir projeyi açtığınızda Visual Studio otomatik olarak bir proje veya çözüm en son sürüme güncelleştirilip güncelleştirilmeyeceğini ister. Bu araçlar, genellikle yalnızca proje dosyalarını yükseltme; Kaynak kodunuzu değiştirmeyin.  
@@ -37,6 +38,7 @@ Son olarak, yükseltme belirli yönteme karar vermek ihtiyacımız var. Daha kar
 Komut satırında devenv da çalıştırabileceğinizi unutmayın kullanarak `/Upgrade` projelerinizi Yükseltme Sihirbazı'nı kullanmak yerine seçeneği. Bkz: [Upgrade (devenv.exe)](/visualstudio/ide/reference/upgrade-devenv-exe). Bu, çok sayıda projeleri için yükseltme işlemini otomatikleştirme yardımcı olabilir.  
   
 ### <a name="step-1-converting-the-project-file"></a>Adım 1. Proje dosyası dönüştürülüyor  
+
 Visual Studio 2017'deki eski bir proje dosyasını açtığınızda, proje dosyası biz kabul en son sürüme dönüştürmek üzere Visual Studio sunar. Aşağıdaki iletişim kutusu görüntülendiğinde:  
   
 ![Proje ve çözüm değişikliklerini gözden](../porting/media/scribbleprojectupgrade.PNG "ScribbleProjectUpgrade")  
@@ -56,6 +58,7 @@ Visual Studio, ardından tüm sorunların eski proje dosyasıyla birlikte listel
 Bu durumda, tüm uyarıları sorunları olan ve Visual Studio Proje dosyasında yapılan uygun değişiklikler. Proje endişe kadar derleme aracını MSBuild'e vcbuild değiştiğini büyük fark ise. Bu değişiklik, ilk Visual Studio 2010'da sunulmuştur. Diğer değişiklikler, proje dosyasının kendisini bazı yeniden öğelerin dizisi içerir. Sorunlarından hiçbiri, daha fazla dikkat bu basit proje için gereklidir.  
   
 ### <a name="step-2-getting-it-to-build"></a>Adım 2. Derleme için alma  
+
 Proje sistemi kullanarak hangi derleme sürümünün biliyoruz şekilde yapılandırmadan önce biz platform araç takımını denetleyin. Proje Özellikleri iletişim kutusunda, altında **yapılandırma özellikleri**, **genel** kategori göz **Platform araç takımını** özelliği. Bu sürümü Visual Studio ve bu durumda v141 araçları Visual Studio 2017 sürümü için platform Aracı sürüm numarasını içerir. Visual C++ 2010 ile derlenmiş bir proje dönüştürdüğünüzde, 2012, 2013 veya 2015 araç takımı otomatik olarak Visual Studio 2017 araç takımını güncelleştirilmez.   
   
 Unicode'a geçiş yapmak için projenin özelliklerini açmak **yapılandırma özellikleri**, seçin **genel** bölümünde ve bulun **karakter kümesi** özelliği. Bu değişiklik **çok baytlı karakter kümesi kullanan** için **Unicode karakter kümesini Kullandırır**. Bu değişikliğin etkilerini o artık _UNICODE ve UNICODE makroları tanımlanır ve _MBCS değil, Özellikler iletişim kutusunda altında doğrulayabilirsiniz **C/C++** kategori **komut satırı** özelliği.  
@@ -72,18 +75,20 @@ Artık çözümü oluşturun. Çıktı penceresinde, bize bu _WINNT32_WINNT tan�
 _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)  
 ```  
   
- Bu uyarı, bir hata ve Visual C++ proje yükseltme sırasında yaygın olarak görülür. Uygulamamızı üzerinde çalışacak Windows en düşük sürümünü tanımlayan makro budur. Şu uyarıyı yoksay, biz geçerli Windows sürümü anlamına _WIN32_WINNT_MAXVER varsayılan değeri kabul edin. Olası değerler tablo için bkz: [Windows üst bilgileri kullanma](/windows/desktop/WinProg/using-the-windows-headers). Örneğin, size tüm sürümlerde Vista ve sonraki sürümlerde çalıştırmak için ayarlayabilirsiniz.  
+Bu uyarı, bir hata ve Visual C++ proje yükseltme sırasında yaygın olarak görülür. Uygulamamızı üzerinde çalışacak Windows en düşük sürümünü tanımlayan makro budur. Şu uyarıyı yoksay, biz geçerli Windows sürümü anlamına _WIN32_WINNT_MAXVER varsayılan değeri kabul edin. Olası değerler tablo için bkz: [Windows üst bilgileri kullanma](/windows/desktop/WinProg/using-the-windows-headers). Örneğin, size tüm sürümlerde Vista ve sonraki sürümlerde çalıştırmak için ayarlayabilirsiniz.  
   
-```  
+```cpp
 #define _WIN32_WINNT _WIN32_WINNT_VISTA  
 ```  
   
 Kodu Windows API ile bu makroyu belirttiğiniz Windows sürümünde kullanılamayan bölümleri kullanıyorsa, bir derleyici hatası görmeniz gerekir. Karalama kod söz konusu olduğunda, hata yoktur.  
   
 ### <a name="step-3-testing-and-debugging"></a>Adım 3. Test ve hata ayıklama  
+
 Hiçbir test paketi için uygulamayı kullanmaya yeni özellikleri kullanıcı Arabirimi aracılığıyla el ile test yok. Hiçbir sorun gözlemlenmedi.  
   
 ### <a name="step-4-improve-the-code"></a>4. adımı. Kodu geliştirecek  
+
 Visual Studio 2017'ye geçiş yaptıktan sonra yeni C++ özellikleri yararlanmak için bazı değişiklikler yapmak isteyebilirsiniz. Geçerli C++ derleyicisi C++ Standart sonra önceki sürümleri için çok daha fazla uyumlu bir göz önünde varsa, kodunuzu daha güvenli ve daha taşınabilir hale getirmek için diğer derleyiciler için bazı kod değişiklikleri ve işletim sistemleri, bazı düşünmelisiniz sürümüdür geliştirmeleri.  
   
 ## <a name="next-steps"></a>Sonraki adımlar  
@@ -92,5 +97,5 @@ Karalama küçük ve basit Windows masaüstü uygulaması olduğundan ve dönü�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[Taşıma ve yükseltme: örnekler ve örnek olay incelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)   
+[Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
 [Sonraki örnek: COM Spy](../porting/porting-guide-com-spy.md)

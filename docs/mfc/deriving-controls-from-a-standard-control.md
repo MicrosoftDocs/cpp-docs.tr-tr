@@ -19,39 +19,41 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4ae7fb09e1f453b6d7bc82a7fb038567809f872
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: bc1b0b047bc8d594a34177cabf1081c0a1c67970
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36932253"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46399775"
 ---
 # <a name="deriving-controls-from-a-standard-control"></a>Standart Bir Denetimden Denetim Türetme
-Herhangi bir olduğu gibi [CWnd](../mfc/reference/cwnd-class.md)-türetilmiş sınıf, var olan bir denetim sınıfından yeni bir sınıf türetme tarafından bir denetimin davranışı değiştirebilirsiniz.  
-  
-### <a name="to-create-a-derived-control-class"></a>Bir türetilmiş denetim sınıfı oluşturmak için  
-  
-1.  Sınıfınızda var olan bir denetim sınıfından türetilen ve isteğe bağlı olarak geçersiz kılma `Create` üye gördüğünü gerekli bağımsız değişkenler için temel sınıf sağlar `Create` işlevi.  
-  
-2.  İleti işleyicisi üye işlevleri ve belirli Windows iletilere yanıt olarak denetimin davranışını değiştirmek için ileti eşlemesi girişleri sağlar. Bkz: [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md).  
-  
-3.  (İsteğe bağlı) denetim işlevselliğini genişletmek için yeni üye işlevleri sağlar.  
-  
- Türetilen bir denetim bir iletişim kutusunu kullanarak ek iş gerektirir. Normalde türleri ve bir iletişim kutusu denetimleri konumda bir iletişim şablonunu kaynak olarak belirtilir. Bir türetilmiş denetim sınıfı oluşturursanız, kaynak derleyici, türetilmiş bir sınıf hakkında hiçbir şey bilmez olduğundan, bir iletişim şablonunu belirtemezsiniz.  
-  
-#### <a name="to-place-your-derived-control-in-a-dialog-box"></a>Bir iletişim kutusunda, türetilmiş denetim yerleştirmek için  
-  
-1.  Türetilmiş denetim sınıfın bir nesnesi türetilmiş iletişim sınıfınızı bildiriminde ekleyin.  
-  
-2.  Geçersiz kılma `OnInitDialog` üye işlevi çağırmak için iletişim sınıfınızda `SubclassDlgItem` üye işlevi türetilmiş denetim için.  
-  
- `SubclassDlgItem` "dinamik olarak alt sınıfların" bir denetim bir iletişim kutusu şablondan oluşturuldu. Denetim dinamik olarak oluşturulduğunda, pencerelere kanca, kendi uygulama içinde bazı iletileri işlemek ve sonra Windows kalan iletileri geçirin. Daha fazla bilgi için bkz: [SubclassDlgItem](../mfc/reference/cwnd-class.md#subclassdlgitem) sınıfının üye işlevini `CWnd` içinde *MFC başvurusu*. Aşağıdaki örnek, bir geçersiz kılma nasıl yazabilir gösterir `OnInitDialog` çağırmak için `SubclassDlgItem`:  
-  
- [!code-cpp[NVC_MFCControlLadenDialog#3](../mfc/codesnippet/cpp/deriving-controls-from-a-standard-control_1.cpp)]  
-  
- Türetilmiş denetim iletişim kutusu sınıfında gömülü olduğundan iletişim kutusu oluşturulur ve iletişim kutusunu bozulduğunda yok edilir oluşturulur. Bu örnekte kodla karşılaştırın [ekleme denetimlerini By el](../mfc/adding-controls-by-hand.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri yapma ve kullanma](../mfc/making-and-using-controls.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Herhangi bir olarak [CWnd](../mfc/reference/cwnd-class.md)-türetilmiş sınıf, var olan bir denetim sınıfından yeni bir sınıf türetilerek, denetimin davranışını değiştirebilirsiniz.
+
+### <a name="to-create-a-derived-control-class"></a>Türetilen denetim sınıfı oluşturmak için
+
+1. Sınıfınızı varolan bir denetimi sınıftan türetilen ve isteğe bağlı olarak geçersiz kılma `Create` üye işlevini gerekli bağımsız değişkenler için temel sınıf sağlar, böylece `Create` işlevi.
+
+1. İleti işleyicisi üye işlevleri ve belirli Windows iletilere yanıt olarak denetimin davranışını değiştirmek için ileti eşlemesi girişleri sağlar. Bkz: [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md).
+
+1. (İsteğe bağlı) denetimi işlevlerini genişletmek için yeni üye işlevleri sağlar.
+
+Türetilmiş bir denetim iletişim kutusunda kullanmak için ek çalışma gerekir. Normalde türlerini ve bir iletişim kutusu denetimleri konumda bir iletişim şablonunu kaynak olarak belirtilir. Türetilen denetim sınıfı oluşturursanız, kaynak derleyicisi, türetilmiş sınıf hakkında hiçbir şey bilir olduğundan bir iletişim şablonunu belirtemezsiniz.
+
+#### <a name="to-place-your-derived-control-in-a-dialog-box"></a>İletişim kutusunda, türetilen denetim yerleştirmek için
+
+1. Denetim türetilmiş sınıfın bir nesnesi, türetilmiş bir iletişim kutusu sınıfı bildiriminde ekleyin.
+
+1. Geçersiz kılma `OnInitDialog` üye işlevini çağırmak için iletişim sınıfınızı `SubclassDlgItem` türetilmiş denetimi için üye işlevi.
+
+`SubclassDlgItem` "dinamik olarak kılabileceği" iletişim kutusu şablonundan bir denetim oluşturuldu. Bir denetimi dinamik olarak oluşturulduğunda, Windows bağlama, kendi uygulama içinde bazı iletileri işlemek ve ardından Windows açın kalan iletileri geçirmek. Daha fazla bilgi için [SubclassDlgItem](../mfc/reference/cwnd-class.md#subclassdlgitem) sınıfının üye işlevinde `CWnd` içinde *MFC başvurusu*. Aşağıdaki örnek, geçersiz kılma nasıl yazabilirsiniz gösterir `OnInitDialog` çağrılacak `SubclassDlgItem`:
+
+[!code-cpp[NVC_MFCControlLadenDialog#3](../mfc/codesnippet/cpp/deriving-controls-from-a-standard-control_1.cpp)]
+
+Türetilen denetim iletişim kutusu sınıfında gömülü olduğundan, iletişim kutusu oluşturulur ve iletişim kutusunu yok edildiğinde edileceği oluşturulur. Bu örnekte kodla karşılaştırın [ekleme denetimleri Yan taraftaki](../mfc/adding-controls-by-hand.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Denetimleri Yapma ve Kullanma](../mfc/making-and-using-controls.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

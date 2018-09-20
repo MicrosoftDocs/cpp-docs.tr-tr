@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bf6ca06ffbd3912ac3545bc3c014224412c01bc1
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4bbb5c62fb53d1246c1b8cc282b4ee36f0fcf58e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221176"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46377324"
 ---
 # <a name="aggregates"></a>toplamlar
 
@@ -42,10 +42,10 @@ Nesne CLSID değeri tarafından belirtilen nesnede toplayan gösterir.
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*  
+*CLSID*<br/>
 Toplanabilir nesne CLSID değeri belirtir.
 
-*deðiþken_adý*  
+*deðiþken_adý*<br/>
 Eklenecek değişkenin adı. Bu değişken içeren `IUnknown` toplanmakta olan nesne.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -106,9 +106,9 @@ struct CObject : IObject
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[COM Öznitelikleri](../windows/com-attributes.md)  
-[Sınıf Öznitelikleri](../windows/class-attributes.md)  
-[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  
-[Toplama](/windows/desktop/com/aggregation)  
-[Toplanabilir](/windows/desktop/Midl/aggregatable)  
+[COM Öznitelikleri](../windows/com-attributes.md)<br/>
+[Sınıf Öznitelikleri](../windows/class-attributes.md)<br/>
+[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[Toplama](/windows/desktop/com/aggregation)<br/>
+[Toplanabilir](/windows/desktop/Midl/aggregatable)<br/>
 [COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)  

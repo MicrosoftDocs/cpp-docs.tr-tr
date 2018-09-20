@@ -14,26 +14,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 143fc93fb07d9ac7c4e803bbce426c114c02bfeb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7598449539fffdc2a8a4248fe02b29c83a2d2dfe
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349980"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387106"
 ---
 # <a name="overview-of-the-rich-edit-control"></a>Zengin Düzenleme Denetimine Genel Bakış
+
 > [!IMPORTANT]
->  Bir iletişim kutusunda bir zengin düzenleme denetimine kullanıyorsanız (uygulamanızın SDI, MDI, olmasına bakılmaksızın veya iletişim tabanlı), çağırmalısınız [Afxınitrichedit](../mfc/reference/application-information-and-management.md#afxinitrichedit) önce iletişim kutusu görüntülendiğinde. Bu işlevi çağırmak için bir tipik programınızın içinde yerdir `InitInstance` üye işlevi. Her zaman yalnızca ilk kez iletişim kutusunu görüntülemek için çağrı gerekmez. Çağrı gerekmez `AfxInitRichEdit` ile çalışıyorsanız `CRichEditView`.  
-  
- Zengin düzenleme denetimleri ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) metin biçimlendirme için bir programlama arabirimi sağlar. Ancak, bir uygulamanın tüm biçimlendirme işlemlerini kullanıcı için kullanılabilir hale getirmek için gerekli olan kullanıcı arabirimi bileşenlerini uygulamalıdır. Diğer bir deyişle, zengin denetim destekler seçili metnin karakter veya paragraf özniteliklerini değiştirme düzenleyin. Bazı örnekler öznitelikleri karakterinin kalın, italik, yazı tipi ailesi ve nokta boyutu. Hizalama, kenar boşluklarını ve sekme durakları paragraf özniteliklerini örneklerindendir. Araç çubuğu düğmeleri, menü öğelerini veya biçimi karakter iletişim kutusu olup olmadığını ancak, kullanıcı arabirimi sağlamak için size bağlıdır. Zengin düzenleme denetimine öznitelikleri geçerli seçim için sorgu işlevleri de vardır. Bu işlevler öznitelikleri için geçerli ayarları görüntülemek için örneğin, seçim kalın karakter özniteliği biçimlendirme varsa onay işareti UI komutunda ayarı kullanın.  
-  
- Karakter ve paragraf biçimlendirme hakkında daha fazla bilgi için bkz: [karakter biçimlendirme](../mfc/character-formatting-in-rich-edit-controls.md) ve [paragraf biçimlendirmesini](../mfc/paragraph-formatting-in-rich-edit-controls.md) bu konuda daha sonra.  
-  
- Zengin denetimleri destek neredeyse tüm işlemleri ve çok satırlı düzenleme denetimleri ile kullanılan bildirim iletilerini düzenleyin. Bu nedenle, zaten düzenleme denetimleri kullan kolayca zengin kullanmak için değiştirilebileceği uygulamaları denetimleri düzenleyin. Ek iletiler ve bildirimler uygulamaların işlevselliğini benzersiz zengin düzenleme denetimlerinde erişimini etkinleştirin. Düzenleme denetimleri hakkında daha fazla bilgi için bkz: [CEdit](../mfc/reference/cedit-class.md).  
-  
- Bildirimleri hakkında daha fazla bilgi için bkz: [bir zengin düzenleme denetiminden bildirim](../mfc/notifications-from-a-rich-edit-control.md) bu konuda daha sonra.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CRichEditCtrl kullanma](../mfc/using-cricheditctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+>  İletişim kutusunda bir zengin düzenleme denetimi kullanıyorsanız (SDI, MDI, uygulamanızın olmasına bakılmaksızın veya iletişim kutusu tabanlı), çağırmanız gerekir [Afxınitrichedit](../mfc/reference/application-information-and-management.md#afxinitrichedit) sonra önce iletişim kutusu görüntülenir. Bu işlevi çağırmak için tipik bir yerde programınıza ait olduğu `InitInstance` üye işlevi. Her zaman yalnızca uygulamayı ilk kez iletişim kutusunu görüntülemek için çağrı gerekmez. Çağrı gerekmez `AfxInitRichEdit` ile çalışıyorsanız `CRichEditView`.
+
+Zengin düzenleme denetimleri ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) metin biçimlendirmesi için bir programlama arabirimi sağlar. Ancak, bir uygulamanın tüm biçimlendirme işlemlerini kullanıcı tarafından kullanılabilir hale getirmek için gerekli olan kullanıcı arabirimi bileşenleri uygulamalıdır. Diğer bir deyişle, seçili metni karakter veya paragraf özniteliklerini değiştirme denetimi destekleyen zengin düzenleme. Bazı örnekler öznitelikler karakterin kalın, italik yazı tipi ailesi ve nokta boyutu. Hizalama, kenar boşlukları ve sekme durakları paragraf öznitelikleri örnekleridir. Araç çubuğu düğmeleri, menü öğeleri ve bir biçim karakteri iletişim kutusu olup olmadığını ancak kullanıcı arabirimi sağlayan size olur. Zengin Düzenleme denetiminin öznitelikleri geçerli seçimi, sorgu işlevleri vardır. Bu işlevler öznitelikler için geçerli ayarları görüntülemek için örneğin, öznitelik biçimlendirme kalın karakter seçimi varsa, bir onay işareti komutu kullanıcı Arabirimi ayarı kullanın.
+
+Karakter ve paragraf biçimlendirme hakkında daha fazla bilgi için bkz. [karakter biçimlendirme](../mfc/character-formatting-in-rich-edit-controls.md) ve [paragraf biçimlendirme](../mfc/paragraph-formatting-in-rich-edit-controls.md) bu konuda.
+
+Zengin denetimleri destek neredeyse tüm işlemleri ve çok satırlı düzenleme denetimleri ile kullanılan bildirim iletilerini düzenleyin. Bu nedenle, denetimleri zaten kullanım düzenleme denetimleriyle kolayca zengin kullanmak için değiştirilebileceği uygulamaları düzenleyin. Ek iletileri ve bildirimleri uygulamaların işlevselliğini benzersiz zengin düzenleme denetimlerinde erişimini etkinleştirin. Düzenleme denetimleri hakkında daha fazla bilgi için bkz. [CEdit](../mfc/reference/cedit-class.md).
+
+Bildirimleri hakkında daha fazla bilgi için bkz. [bir zengin düzenleme denetiminden bildirim](../mfc/notifications-from-a-rich-edit-control.md) bu konuda.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CRichEditCtrl Kullanma](../mfc/using-cricheditctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

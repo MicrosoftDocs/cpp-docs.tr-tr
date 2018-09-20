@@ -20,50 +20,52 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbf2b7c26b7fc44a526381f4fb3e4dee5c94ba8d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e06f10114b896e2728e5a017281e54f75ce534e5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381042"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46404637"
 ---
 # <a name="testing-properties-and-events-with-test-container"></a>Test Kapsayıcısı ile Özellikleri ve Olayları Test Etme
-Visual C++'da, gönderilen Test kapsayıcısı, test ve ActiveX denetimlerinde hata ayıklama için bir ActiveX denetimi kapsayıcısı uygulamasıdır. Test kapsayıcısı özelliklerini değiştirme yöntemlerini çağırma ve olaylarını tetikleme denetimin işlevselliğini sınamak denetim Geliştirici sağlar. Test kapsayıcısı veri bağlama bildirimleri günlüklerini görüntüleyebilir ve ayrıca bir ActiveX denetiminin Kalıcılık işlevselliğini test etme için olanakları sağlar: akış veya substorage özelliklerini kaydetmek, bunları yeniden ve saklı akış verilerini inceleyin. Bu bölümde, Test kapsayıcısı temel özelliklerini kullanmayı açıklar. Ek bilgi için seçin **yardımcı** Test kapsayıcısı çalıştırılırken menüsü.  
-  
-### <a name="to-access-the-activex-control-test-container"></a>ActiveX denetimi Test kapsayıcısı erişmek için  
-  
-1.  Yapı [TSTCON örnek: ActiveX denetimi Test kapsayıcısı](../visual-cpp-samples.md).  
-  
-### <a name="to-test-your-activex-control"></a>ActiveX denetimi test etmek için  
-  
-1.  Üzerinde **Düzenle** Test kapsayıcısı menüsünü **yeni denetimi Ekle**.  
-  
-2.  İçinde **ekler denetimi** kutusuna istenen denetimi seçin ve tıklatın **Tamam**. Denetimi denetim kapsayıcısında görünür.  
-  
+
+Visual C++'da sevk Test kapsayıcısı, test ve hata ayıklama ActiveX denetimleri için bir ActiveX denetimi kapsayıcısı uygulamasıdır. Test kapsayıcısı özelliklerini değiştirme yöntemlerini çağırma ve kendi olayları tetikleme denetiminin işlevselliğini test etmek denetim geliştiricinin sağlar. Test kapsayıcısı veri bağlama bildirimleri günlüklerini görüntüleyebilir ve ayrıca bir ActiveX denetiminin Kalıcılık işlevselliğini test etme için olanakları sağlar: akış veya substorage özelliklerini kaydetmek, bunları yeniden ve saklı akış verilerini inceleyin. Bu bölümde, Test kapsayıcı'nın temel özelliklerinin nasıl kullanılacağını açıklar. Ek bilgi için seçin **yardımcı** Test kapsayıcısı çalışırken menüsü.
+
+### <a name="to-access-the-activex-control-test-container"></a>ActiveX denetimi Test kapsayıcısı erişmek için
+
+1. Derleme [TSTCON örnek: ActiveX denetimi Test kapsayıcısı](../visual-cpp-samples.md).
+
+### <a name="to-test-your-activex-control"></a>ActiveX denetimi test etmek için
+
+1. Üzerinde **Düzenle** Test kapsayıcısının menüsünü **yeni denetimi Ekle**.
+
+1. İçinde **ekler denetimi** kutusunda, istediğiniz denetimi seçin ve tıklayın **Tamam**. Denetim denetim kapsayıcısında görünür.
+
     > [!NOTE]
-    >  Denetim içinde listelenmemişse **Denetimi Ekle** iletişim kutusunda, kendisiyle kaydettirdiğiniz emin olun **denetimleri Kaydet** komutunu **dosya** Test menüsü Kapsayıcı.  
-  
- Bu noktada denetiminizin özellikleri veya olayları test edebilirsiniz.  
-  
-#### <a name="to-test-properties"></a>Özelliklerini sınamak için  
-  
-1.  Üzerinde **denetim** menüsünde tıklatın **çağırma yöntemleri**.  
-  
-2.  İçinde **yöntem adı** aşağı açılan listesinde, test etmek istediğiniz özelliği PropPut yöntemi seçin.  
-  
-3.  Değiştirme **parametre değeri** veya **parametre türü** ve tıklayın **değeri ayarlanmış** düğmesi.  
-  
-4.  Tıklatın **Invoke** yeni değer nesneye uygulamak için.  
-  
-     Özelliği artık yeni bir değer içerir.  
-  
-#### <a name="to-test-events-and-specify-the-destination-of-event-information"></a>Olayları sınamak ve olay bilgilerini hedef belirtmek için.  
-  
-1.  Üzerinde **seçenekleri** menüsünde tıklatın **günlüğü**.  
-  
-2.  Olay bilgilerini hedefi belirtin.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)   
- [Nasıl yapılır: bir ActiveX denetimi hata ayıklama](/visualstudio/debugger/how-to-debug-an-activex-control)
+    >  Denetiminiz olarak listelenmemişse **ekler denetimi** iletişim kutusunda, kendisiyle kaydettiğiniz emin olun **denetimleri Kaydet** komutunu **dosya** Test menüsü Kapsayıcı.
+
+Bu noktada, denetimin özellikleri veya etkinlikleri test edebilirsiniz.
+
+#### <a name="to-test-properties"></a>Özelliklerini test etmek için
+
+1. Üzerinde **denetimi** menüsünde tıklatın **çağırma yöntemleri**.
+
+1. İçinde **yöntem adı** aşağı açılan listesinde, test etmek istediğiniz bir özellik için PropPut yöntemi seçin.
+
+1. Değiştirme **parametre değeri** veya **parametre türü** tıklayın **değer kümesi** düğmesi.
+
+1. Tıklayın **Invoke** nesnesine yeni bir değer uygulamak için.
+
+     Özelliği artık yeni bir değer içerir.
+
+#### <a name="to-test-events-and-specify-the-destination-of-event-information"></a>İçin test olayları ve olay bilgilerini hedefini belirtin.
+
+1. Üzerinde **seçenekleri** menüsünde tıklatın **günlüğü**.
+
+1. Olay bilgilerini hedefini belirtin.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)<br/>
+[Nasıl Yapılır: ActiveX Denetiminde Hata Ayıklama](/visualstudio/debugger/how-to-debug-an-activex-control)
 

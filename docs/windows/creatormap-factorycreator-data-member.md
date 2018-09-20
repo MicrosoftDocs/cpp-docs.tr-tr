@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 90367a21d76fe7fe735d1174bc9b9d40900dec78
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 12d4fdd415ab37c9af0b0b34651e7cd2f00cf31b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600836"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405287"
 ---
 # <a name="creatormapfactorycreator-data-member"></a>CreatorMap::factoryCreator Veri Üyesi
 
@@ -35,21 +35,21 @@ HRESULT (*factoryCreator)(
    unsigned int* currentflags,
    const CreatorMap* entry,
    REFIID iidClassFactory,
- IUnknown** factory);
+IUnknown** factory);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*currentflags*  
+*currentflags*<br/>
 Aşağıdakilerden birini [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırıcılar.
 
-*entry*  
+*entry*<br/>
 CreatorMap bir.
 
-*iidClassFactory*  
+*iidClassFactory*<br/>
 Bir sınıf üreteci arabirim kimliği.
 
-*Fabrika*  
+*Fabrika*<br/>
 İşlem tamamlandığında bir sınıf üreteci adresidir.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -68,5 +68,5 @@ Belirtilen CreatorMap için bir üreteci oluşturur.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CreatorMap Yapısı](../windows/creatormap-structure.md)  
+[CreatorMap Yapısı](../windows/creatormap-structure.md)<br/>
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

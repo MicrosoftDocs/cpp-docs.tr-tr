@@ -16,25 +16,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab7d4f434bf958c3bf47dc1f91101d35cf04add7
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 12de4065774c4813eeb10fab902551db14d10d3a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36954965"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420848"
 ---
 # <a name="working-with-a-tab-control"></a>Sekme Denetimiyle Çalışma
-Sekme denetimi kullanmak için en kolay yolu ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) ile iletişim kutusu Düzenleyicisi iletişim şablonu kaynak ekleyerek değil. Ayrıca tek başına bir sekme denetimi kullanabilirsiniz. MFC çağrıları `InitCommonControls` sizin için. En önemli görevler şunlardır:  
-  
--   [Sekme denetimi oluşturma](../mfc/creating-the-tab-control.md)  
-  
--   [Sekme denetimine sekmeler ekleme](../mfc/adding-tabs-to-a-tab-control.md)  
-  
--   [Sekme denetimi bildirim iletilerini işleme](../mfc/processing-tab-control-notification-messages.md)  
-  
- Sekme denetim nesnesi bir üst görünümü ya da iletişim sınıfta eklendiyse üst bozulduğunda denetim yok.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CTabCtrl kullanma](../mfc/using-ctabctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Sekme denetimi kullanmak için en kolay yolu ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) iletişim kutusu Düzenleyicisi ile bir iletişim şablonunu kaynağına ekleyerek olduğu. Ayrıca tek başına bir sekme denetimi kullanabilirsiniz. MFC çağrıları `InitCommonControls` sizin için. En önemli görevler şunlardır:
+
+- [Sekme denetimi oluşturma](../mfc/creating-the-tab-control.md)
+
+- [Sekme denetimine sekmeler ekleme](../mfc/adding-tabs-to-a-tab-control.md)
+
+- [Sekme denetimi bildirim iletilerini işleme](../mfc/processing-tab-control-notification-messages.md)
+
+Sekme denetim nesnesi bir ana görünümünde veya iletişim sınıfta eklendiyse, bu üst yok edildiğinde denetimin yok edilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CTabCtrl Kullanma](../mfc/using-ctabctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

@@ -19,47 +19,51 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 9223c52e4ef831a9a1ff657db1a0d7859dd6ce6c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ce27ac6e5194842ab0b9cf2237fbde1a1b636fba
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33164056"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46415999"
 ---
 # <a name="performance-considerations-for-interop-c"></a>Birlikte Çalışabilirlik için Başarım Düşünceleri (C++)
-Bu konu, yönetilen ve yönetilmeyen birlikte çalışma geçişleri çalışma zamanı performans üzerindeki etkisini azaltmak için yönergeler sağlar.  
-  
- Visual C++, Visual Basic ve C# (P/Invoke) gibi diğer .NET dilleri ile aynı birlikte çalışabilirlik düzeneklerini destekler, ancak ayrıca Visual C++ (C++ birlikte çalışması) özgü birlikte çalışma desteği sağlar. Performans açısından kritik uygulamalar için her birlikte çalışma teknik performans etkilerini anlamak önemlidir.  
-  
- Kullanılan birlikte çalışma teknik bağımsız olarak dönüştürücüler, denen özel geçiş dizileri bir yönetilmeyen işlevi tersi yönetilen bir işlev çağrıları her zaman gereklidir. Bu dönüştürücüler Visual C++ derleyicisi tarafından otomatik olarak eklenir, ancak üst üste, bu geçişleri performans açısından pahalı olabileceğini göz önünde bulundurmanız önemlidir.  
-  
-## <a name="reducing-transitions"></a>Geçişleri azaltma  
- Önlemenize veya birlikte çalışma dönüştürücüler maliyetini azaltmak için bir yönetilen ve yönetilmeyen geçişleri en aza indirmek söz konusu arabirimleri yeniden düzenlemeniz yoldur. Önemli ölçüde performans iyileştirmeleri, yönetilen ve yönetilmeyen sınırından sık çağrıları ilgili olanlardır chatty arabirimleri hedefleyerek yapılabilir. Sıkı bir döngüde yönetilmeyen işlev çağıran bir yönetilen Örneğin, iyi bir aday yeniden düzenleme için işlevdir. Döngü yönetilmeyen tarafa taşıdıysanız veya yönetilen bir alternatif, yönetilmeyen çağrı oluşturulur (belki yönetilen tarafta queuing veriler ve ardından aynı anda döngüden sonra yönetilmeyen API için hazırlama), geçiş sayısı olabilir oturum azaltılmış ificantly.  
-  
-## <a name="pinvoke-vs-c-interop"></a>P/Invoke vs. C++ Birlikte Çalışma  
- Visual Basic ve C# gibi .NET dilleri için yerel bileşenleriyle birlikte önceden belirlenen P/Invoke yöntemdir. P/Invoke .NET Framework tarafından desteklenmediği için Visual C++, de destekler, ancak Visual C++, C++ birlikte çalışması adlandırılan kendi birlikte çalışabilirlik desteği de sağlar. C++ birlikte çalışabilirliği P/Invoke tür kullanımı uyumlu olmadığından P/Invoke tercih edilir. Sonuç olarak, öncelikle çalışma zamanında rapor hata ancak C++ birlikte çalışabilirliği de P/Invoke performans avantajları vardır.  
-  
- Her iki tekniği birkaç şeyin yönetilen bir işlev yönetilmeyen işlev çağırdığında yapılmasını gerektirir:  
-  
--   İşlev çağrısı bağımsız değişkenleri CLR yerel türleri için hazırlanırlar.  
-  
--   Yönetilmeyen bir dönüştürücü yürütülür.  
-  
--   Yönetilmeyen işlevi (bağımsız değişkenler yerel sürümleri kullanarak) adı verilir.  
-  
--   Yönetilen için yönetilmeyen bir dönüştürücü yürütülür.  
-  
--   Dönüş türü ve tüm "out" veya "ın, out" bağımsız değişkenleri CLR'den CLR türleri için yerel.  
-  
- Yönetilen ve yönetilmeyen dönüştürücüler çalışması birlikte çalışması için gerekli olan, ancak söz konusu veri türlerine, işlev imzası ve verilerin nasıl kullanılacağını gerekli verileri hazırlama bağlıdır.  
-  
- C++ birlikte çalışabilirliği tarafından gerçekleştirilen veri hazırlama basit olası formdur: parametreleri yalnızca yönetilen ve yönetilmeyen sınır Bitsel bir şekilde; arasında kopyalanır hiçbir dönüştürme hiç gerçekleştirilir. P/Invoke için bu yalnızca tüm parametreleri basit ise geçerlidir blittable türleri. Aksi takdirde, P/Invoke her yönetilen parametreyi uygun yerel bir tür için dönüştürmek için güçlü adımlar gerçekleştirir ve tersi bağımsız değişkenler "dışı" işaretlenmişse veya "ın, out".  
-  
- Diğer bir deyişle, C++ birlikte çalışabilirliği veri hazırlama olası en hızlı yöntemi kullanır, ancak P/Invoke en güçlü yöntemi kullanır. C++ birlikte çalışabilirliği (C++ için normal bir şekilde) varsayılan olarak en iyi performans sağlar ve Programcı Bu davranış güvenli veya uygun olduğu durumlarda adreslemek için sorumlu olduğu anlamına gelir.  
-  
- C++ birlikte çalışması, bu nedenle verileri hazırlama açıkça sağlanması gerekir, ancak avantajı Programcı uygun, veri yapısı nedir ve nasıl kullanılacak olan karar vermek ücretsiz olmasıdır gerektirir. Ayrıca, P/Invoke verileri hazırlama davranışı konumundaki bir dereceye özelleştirilmiş değiştirilebilir rağmen C++ birlikte çalışabilirliği veri bir çağrı tarafından çağrı temelinde özelleştirilmek üzere hazırlama sağlar. Bu P/Invoke ile mümkün değildir.  
-  
- C++ birlikte çalışma hakkında daha fazla bilgi için bkz: [C++ Çalışabilirliği kullanarak (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Karışık (Yerel ve Yönetilen) Derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)
+
+Bu konu, yönetilen veya yönetilmeyen birlikte çalışma geçişleri çalışma zamanı performansı üzerindeki etkisini azaltmak için yönergeler sağlar.
+
+Visual C++, Visual Basic ve C# (P/Invoke) gibi diğer .NET dilleri olarak birlikte çalışabilirlik mekanizmalarının aynısını destekler, ancak Visual C++ (C++ birlikte çalışması) özgü birlikte çalışabilirlik desteği de sağlar. Performans açısından kritik uygulamalar için birlikte çalışma her tekniğin performans etkilerini anlamak önemlidir.
+
+Kullanılan birlikte çalışabilirlik teknik bağımsız olarak, dönüştürücüler denen özel geçiş dizileri, yönetilmeyen bir işlev veya tersine yönetilen bir işlev çağırır her zaman gereklidir. Bu dönüştürücüleri Visual C++ Derleyici tarafından otomatik olarak eklenir, ancak üst üste, bu geçiş performans açısından pahalı olabileceğini göz önünde tutmak önemlidir.
+
+## <a name="reducing-transitions"></a>Geçişleri azaltma
+
+Birlikte çalışma dönüştürücüleri maliyetini azaltmak veya önlemek için bir yol, yönetilen veya yönetilmeyen geçişleri en aza indirmek ilgili arabirimler yeniden düzenlemektir. Yönetilen veya yönetilmeyen sınırında sık çağrıları katılan onlar sık iletişim kuran arabirimler hedefleyerek önemli ölçüde performans yapılabilir. Sıkı bir döngüde yönetilmeyen bir işlev çağıran bir yönetilen Örneğin, iyi bir aday yeniden düzenleme için işlevidir. Döngü yönetilmeyen tarafa taşınır veya yönetilen bir alternatif, yönetilmeyen çağrı oluşturulur (belki de yönetilen tarafında veri olması ve ardından tümünü tek seferde döngüsünden sonra yönetilmeyen API için hazırlama), geçiş sayısı olabilir oturum azaltıldı ificantly.
+
+## <a name="pinvoke-vs-c-interop"></a>P/Invoke vs. C++ Birlikte Çalışma
+
+.NET Visual Basic ve C# gibi diller için yerel bileşenleriyle birlikte önceden belirlenmiş P/Invoke yöntemdir. P/Invoke .NET Framework tarafından desteklenmediği için Visual C++, de destekler, ancak Visual C++ C++ birlikte çalışması adlandırılan kendi birlikte çalışabilirlik desteği de sağlar. P/Invoke tür kullanımı uyumlu olmadığı için C++ birlikte çalışması P/Invoke tercih edilir. Sonuç olarak, hataları çalışma zamanında öncelikli olarak rapor edilir, ancak C++ birlikte çalışması P/Invoke performans avantajları da vardır.
+
+Her iki tekniği, yönetilen bir işlev yönetilmeyen bir işlev çağırdığında gereken birkaç şey gerektirir:
+
+- İşlev çağırma bağımsız değişkenlerinde CLR'den yerel türler için hazırlanırlar.
+
+- Yönetilmeyen bir dönüştürücü yürütülür.
+
+- Yönetilmeyen işlev (bağımsız değişkenler yerel sürümlerini kullanarak) adı verilir.
+
+- Yönetilen için yönetilmeyen bir dönüştürücü yürütülür.
+
+- Dönüş türü ve "dışarı" veya "içinde out" bağımsız değişkenleri CLR'den CLR türleri için yerel.
+
+Yönetilen veya yönetilmeyen dönüştürücüleri çalışması birlikte çalışması için gerekli olan, ancak söz konusu veri türlerine, işlev imzası ve veriler nasıl kullanılacak gerekli olan veri hazırlama bağlıdır.
+
+C++ birlikte çalışması tarafından gerçekleştirilen veri hazırlama basit olası formu şöyledir: parametreler yalnızca yönetilen ve yönetilmeyen sınır bit düzeyinde bir biçimde; arasında kopyalanır hiçbir dönüştürme hiç gerçekleştirilir. P/Invoke için yalnızca basit, tüm parametrelerin doğru budur blittable türleri. Aksi takdirde, yönetilen her parametreyi uygun yerel bir tür için dönüştürmek için güçlü adımlar P/Invoke gerçekleştirir ve tam tersi bağımsız değişkenler "çıkış" işaretlenmişse veya "içinde out".
+
+Diğer bir deyişle, P/Invoke en güçlü yöntemi kullanan C++ birlikte çalışması veri hazırlama, olası en hızlı yöntemi kullanır. C++ birlikte çalışabilirliği (C++ için tipik bir biçimde), varsayılan olarak en iyi performans sağlar, ve Programcı bu davranışı güvenli ve uygun olduğu durumlarda ele almak için sorumlu olduğu anlamına gelir.
+
+C++ birlikte çalışması, bu nedenle veri hazırlama açıkça girilmesi gerekir, ancak avantajı Programcı uygun, veri yapısını nedir ve nasıl kullanılacak olan karar vermek ücretsiz olmasıdır gerektirir. Ayrıca, P/Invoke veri hazırlama davranışını konumunda bir dereceye değiştirilebilir ancak C++ birlikte çalışması veri hazırlama çağrı çağrısı bazında özelleştirilmesine olanak sağlar. Bu, P/Invoke ile mümkün değildir.
+
+C++ birlikte çalışması hakkında daha fazla bilgi için bkz: [C++ Çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Karışık (Yerel ve Yönetilen) Derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)

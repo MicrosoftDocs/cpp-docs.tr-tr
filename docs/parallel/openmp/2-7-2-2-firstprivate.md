@@ -12,26 +12,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b8e44ca52ba1f76d5b3791a1d08301bf06e7eab
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 0d3e6ad966f4cf895da9374798f6c9a4079ccc2f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687406"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400971"
 ---
 # <a name="2722-firstprivate"></a>2.7.2.2 firstprivate
-**Firstprivate** yan tümcesi tarafından sağlanan işlevleri bir alt kümesi sağlar **özel** yan tümcesi. Söz dizimi **firstprivate** yan tümcesi aşağıdaki gibidir:  
-  
-```  
-firstprivate(variable-list)  
-```  
-  
- Belirtilen değişkenleri *değişken listesi* sahip **özel** açıklandığı gibi yan tümcesinde semantiği [bölüm 2.7.2.1](../../parallel/openmp/2-7-2-1-private.md) sayfasında 25. Bir kez yapısı iş parçacığının yürütülmesi önce iş parçacığı başına yapıldığını gibi başlatma veya yapım olur. İçin bir **firstprivate** paralel yapı yan tümcesi, ilk yeni özel nesne değeri paralel yapı karşılaştığı iş parçacığı için hemen önce mevcut özgün nesnenin değeri. İçin bir **firstprivate** iş paylaşım yapı yan tümcesi, ilk iş paylaşım yapı yürütür her bir iş parçacığı için yeni özel nesnesi değeri süre önce noktası var özgün nesne değeri, iş parçacığı iş paylaşım yapı karşılaşır. Ayrıca, C++ nesneleri için her iş parçacığı için yeni özel nesnesi özgün nesnesinden oluşturulan kopyasıdır.  
-  
- Kısıtlamaları **firstprivate** yan tümcesi aşağıdaki gibidir:  
-  
--   Belirtilen değişken bir **firstprivate** yan tümcesi eksik bir türü veya bir başvuru türü değil olmalıdır.  
-  
--   Olarak belirtilen bir sınıf türü sahip bir değişken **firstprivate** erişilebilir, anlaşılır kopyalama oluşturucuya sahip olmalıdır.  
-  
--   Paralel bir bölge içinde özel olan veya görünen değişkenleri **azaltma** yan tümcesinde bir **paralel** yönergesi belirtilemez bir **firstprivate** yan tümcesi bir Paralel yapı bağlar iş paylaşım yönergesi.
+
+**Firstprivate** yan tümcesi tarafından sağlanan bir işlevselliğin sağlar **özel** yan tümcesi. Söz dizimi **firstprivate** yan tümcesi şu şekildedir:
+
+```
+firstprivate(variable-list)
+```
+
+Belirtilen değişkenler *değişken listesi* sahip **özel** açıklandığı yan tümcesi semantiğini [bölümü 2.7.2.1](../../parallel/openmp/2-7-2-1-private.md) sayfasında 25. Yapı iş parçacığının yürütülmesini önce iş parçacığı başına bir kez yapıldığını gibi oluşturma ve başlatma gerçekleşir. İçin bir **firstprivate** paralel bir yapısı yan tümcesi, ilk yeni özel nesne değeri karşılaştığı iş parçacığı için paralel yapı hemen önce var olan orijinal nesnenin değeri. İçin bir **firstprivate** yan tümcesi bir iş paylaşımı yapısı, ilk iş paylaşımı yapısı yürütülen her bir iş parçacığı için yeni özel nesne değeri zaman içinde önceki bir noktaya var. orijinal nesnenin değeri, aynı iş parçacığında iş paylaşımı yapısı karşılaşır. Ayrıca, C++ nesneler için yeni özel her iş parçacığı için orijinal nesnenin kopya nesnedir.
+
+Kısıtlamaları **firstprivate** yan tümcesi aşağıdaki gibidir:
+
+- Belirtilen bir değişken bir **firstprivate** yan tümcesi eksik bir türü veya bir başvuru türü değil olmalıdır.
+
+- Bir değişken olarak belirtilen sınıf türüyle **firstprivate** erişilebilir, açık bir kopya oluşturucuya sahip olmalıdır.
+
+- Bir paralel bölgenin içinde özel olmayan veya, görünen değişkenleri **azaltma** yan tümcesi bir **paralel** yönergesi belirtilemez bir **firstprivate** yan tümcesi bir Paralel yapısı için bağlar iş paylaşım yönergesi.

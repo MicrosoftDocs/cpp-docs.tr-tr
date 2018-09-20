@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dca97238310c42b9a537baa4056563b25c20c617
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 98734522410b867d735d0af25f440d5b45874563
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895233"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46393288"
 ---
 # <a name="hint-files"></a>İpucu Dosyaları
 
@@ -52,9 +52,9 @@ Aşağıdaki makro tanımları ayrı üstbilgi dosyasındadır.
 
 ```cpp
 // Header file.
-#define STDMETHOD(method) HRESULT (STDMETHODCALLTYPE * method)  
+#define STDMETHOD(method) HRESULT (STDMETHODCALLTYPE * method)
 #define STDMETHODCALLTYPE __stdcall
-#define HRESULT void*  
+#define HRESULT void*
 ```
 
 Adlı bir işlev için kaynak kodu ayrıştırma sistem yorumlanamıyor `STDMETHOD` bildirilmesi için görünür ve iki parametre listeleri olduğundan bildirimi sözdizimsel olarak yanlış. Tanımları için keşfetmek için üst bilgi dosyasını ayrıştırma sistem açmaz `STDMETHOD`, `STDMETHODCALLTYPE`, ve `HRESULT` makroları. Ayrıştırma sistem yorumlanamıyor çünkü `STDMETHOD` makrosu, tüm deyimi yoksayar ve daha sonra ayrıştırma devam eder.
@@ -127,21 +127,21 @@ Bazı makrolar ayrıştırma sistem kaynak kodu hatalı yorumlayan neden, ancak 
 
 Aşağıdaki kaynak kodunda tür parametresi için `FormatWindowClassName()` işlevi `PXSTR`, ve parametre adı `szBuffer`. Ancak, ayrıştırma sistem hataları `_Pre_notnull_` ve `_Post_z_` SAL ek açıklamalarını parametre türü veya parametre adı.
 
-**Kaynak kodu:**  
+**Kaynak kodu:**
 
-```  
-static void FormatWindowClassName(_Pre_notnull__Post_z_ PXSTR szBuffer)  
-```  
+```cpp
+static void FormatWindowClassName(_Pre_notnull__Post_z_ PXSTR szBuffer)
+```
 
 **Stratejisi:** tanımı Null
 
-Bu durumda bunlar yok edildiğinde SAL ek açıklamalarını değerlendirilecek stratejisidir. Bunu yapmak için bir değiştirme dizesi null bir ipucu belirtin. Sonuç olarak, ayrıştırma, ek açıklamalar yoksayar ve **sınıf görünümü** tarayıcı bunları göstermez. (Visual C++ SAL ek açıklaması gizleyen bir yerleşik ipucu dosyası içerir.)  
+Bu durumda bunlar yok edildiğinde SAL ek açıklamalarını değerlendirilecek stratejisidir. Bunu yapmak için bir değiştirme dizesi null bir ipucu belirtin. Sonuç olarak, ayrıştırma, ek açıklamalar yoksayar ve **sınıf görünümü** tarayıcı bunları göstermez. (Visual C++ SAL ek açıklaması gizleyen bir yerleşik ipucu dosyası içerir.)
 
-**İpucu dosyası:**  
+**İpucu dosyası:**
 
-```  
+```cpp.hint
 #define _Pre_notnull_
-```  
+```
 
 ### <a name="concealed-cc-language-elements"></a>C/C++ altına gizlenmiş dil öğeleri
 
@@ -149,11 +149,11 @@ Makro C/C++ gizler, ayrıştırma sistem kaynak kodu misinterprets sık karşıl
 
 Aşağıdaki kaynak kodundaki `START_NAMESPACE` makro gizler eşlenmemiş bir sol ayraç (`{`).
 
-**Kaynak kodu:**  
+**Kaynak kodu:**
 
-```  
+```cpp
 #define START_NAMESPACE namespace MyProject {
-```  
+```
 
 **Stratejisi:** doğrudan kopyalama
 
@@ -161,11 +161,11 @@ Makro semantiği için gözatma deneyimini kritik, makro için aynı olan bir ip
 
 Kaynak dosyadaki makrosu diğer makroları içeriyorsa, etkili ipuçları kümesinde zaten yalnızca olmaları durumunda bu makroları yorumlanmasını unutmayın.
 
-**İpucu dosyası:**  
+**İpucu dosyası:**
 
-```  
+```cpp.hint
 #define START_NAMESPACE namespace MyProject {
-```  
+```
 
 ### <a name="maps"></a>Haritalar
 
@@ -173,9 +173,9 @@ Bir eşleme bir başlangıç öğesi, bitiş öğesi ve sıfır veya daha fazla 
 
 Aşağıdaki kaynak kodunu tanımlayan `BEGIN_CATEGORY_MAP`, `IMPLEMENTED_CATEGORY`, ve `END_CATEGORY_MAP` makroları.
 
-**Kaynak kodu:**  
+**Kaynak kodu:**
 
-```  
+```cpp
 #define BEGIN_CATEGORY_MAP(x)\
 static const struct ATL::_ATL_CATMAP_ENTRY* GetCategoryMap() throw() {\
 static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
@@ -183,15 +183,15 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
 #define END_CATEGORY_MAP()\
    { _ATL_CATMAP_ENTRY_END, NULL } };\
    return( pMap ); }
-```  
+```
 
 **Stratejisi:** harita öğelerine tanımlayın
 
 İpuçları başlangıç, Orta (varsa) ve bitiş için belirtin bir eşlemin öğelerini. Özel Harita değiştirme dizelerini kullanma `@<`, `@=`, ve `@>`. Daha fazla bilgi için `Syntax` bölümüne bakın.
 
-**İpucu dosyası:**  
+**İpucu dosyası:**
 
-```  
+```cpp.hint
 // Start of the map.
 #define BEGIN_CATEGORY_MAP(x) @<
 // Intermediate map element.
@@ -200,7 +200,7 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
 #define REQUIRED_CATEGORY( catid ) @=
 // End of the map.
 #define END_CATEGORY_MAP() @>
-```  
+```
 
 ### <a name="composite-macros"></a>Bileşik makroları
 
@@ -208,11 +208,11 @@ Bileşik makrolar, bir veya daha fazla ayrıştırma sistem işlemlerini birbiri
 
 Aşağıdaki kaynak kodunu içeren `START_NAMESPACE` ad alanı kapsamında başlangıcını belirtir, makro ve `BEGIN_CATEGORY_MAP` makrosu olarak bir harita başlangıcını belirtir.
 
-**Kaynak kodu:**  
+**Kaynak kodu:**
 
-```  
+```cpp
 #define NSandMAP START_NAMESPACE BEGIN_CATEGORY_MAP
-```  
+```
 
 **Stratejisi:** doğrudan kopyalama
 
@@ -220,31 +220,31 @@ Aşağıdaki kaynak kodunu içeren `START_NAMESPACE` ad alanı kapsamında başl
 
 Bu örnekte, varsayalım `START_NAMESPACE` ipucu bu konuda açıklandığı zaten `Concealed C/C++ Language Elements` alt başlığı. Ve varsayar `BEGIN_CATEGORY_MAP` daha önce açıklandığı gibi bir ipucu sahip `Maps`.
 
-**İpucu dosyası:**  
+**İpucu dosyası:**
 
-```  
+```cpp.hint
 #define NSandMAP START_NAMESPACE BEGIN_CATEGORY_MAP
-```  
+```
 
 ### <a name="inconvenient-macros"></a>Kullanışsız makroları
 
 Bazı makrolar ayrıştırma sistem tarafından yorumlanabilir, ancak kaynak kodunu makrosu uzun veya çok karmaşık olduğu için okuma zordur. Okunabilirlik açısından, makro görüntülenmesini basitleştiren bir ipucu sağlar.
 
-**Kaynak kodu:**  
+**Kaynak kodu:**
 
-```  
-#define STDMETHOD(methodName) HRESULT (STDMETHODCALLTYPE * methodName)  
-```  
+```cpp
+#define STDMETHOD(methodName) HRESULT (STDMETHODCALLTYPE * methodName)
+```
 
 **Stratejisi:** basitleştirme
 
 Daha basit bir makro tanımı görüntüleyen bir ipucu oluşturun.
 
-**İpucu dosyası:**  
+**İpucu dosyası:**
 
-```  
+```cpp.hint
 #define STDMETHOD(methodName) void* methodName
-```  
+```
 
 ## <a name="example"></a>Örnek
 
@@ -254,7 +254,7 @@ Aşağıdaki çizimde, bir Visual C++ projesinde fiziksel dizinlerle bazıları 
 
 ### <a name="hint-file-directories"></a>İpucu dosyası dizinleri
 
-![Ortak ve proje&#45;belirli ipucu dosyası dizinleri. ](../ide/media/hintfile.png "HintFile")  
+![Ortak ve proje&#45;belirli ipucu dosyası dizinleri. ](../ide/media/hintfile.png "HintFile")
 
 ### <a name="directories-and-hint-file-contents"></a>Dizinler ve ipucu dosyası içeriği
 
@@ -262,41 +262,41 @@ Aşağıdaki listede, bu projede ipucu dosyaları ve bu ipucu dosyaların içeri
 
 - vcpackages
 
-    ```  
-    // vcpackages (partial list)  
+    ```cpp.hint
+    // vcpackages (partial list)
     #define _In_
     #define _In_opt_
     #define _In_z_
     #define _In_opt_z_
-    #define _In_count_(size)  
-    ```  
+    #define _In_count_(size)
+    ```
 
 - Hata ayıklama
 
-    ```  
+    ```cpp.hint
     // Debug
     #undef _In_
     #define OBRACE {
     #define CBRACE }
-    #define RAISE_EXCEPTION(x) throw (x)  
+    #define RAISE_EXCEPTION(x) throw (x)
     #define START_NAMESPACE namespace MyProject {
     #define END_NAMESPACE }
-    ```  
+    ```
 
 - A1
 
-    ```  
+    ```cpp.hint
     // A1
     #define START_NAMESPACE namespace A1Namespace {
-    ```  
+    ```
 
 - A2
 
-    ```  
+    ```cpp.hint
     // A2
     #undef OBRACE
     #undef CBRACE
-    ```  
+    ```
 
 ### <a name="effective-hints"></a>Etkili ipuçları
 
@@ -306,19 +306,19 @@ Aşağıdaki tabloda, bu projede kaynak dosyaları için etkili ipuçları liste
 
 - Etkili ipuçları:
 
-    ```  
-    // vcpackages (partial list)  
+    ```cpp.hint
+    // vcpackages (partial list)
     #define _In_opt_
     #define _In_z_
     #define _In_opt_z_
-    #define _In_count_(size)  
+    #define _In_count_(size)
     // Debug...
-    #define RAISE_EXCEPTION(x) throw (x)  
+    #define RAISE_EXCEPTION(x) throw (x)
     // A1
     #define START_NAMESPACE namespace A1Namespace {
     // ...Debug
     #define END_NAMESPACE }
-    ```  
+    ```
 
 Aşağıdaki notlar, yukarıdaki listeye geçerlidir.
 
@@ -332,10 +332,10 @@ Aşağıdaki notlar, yukarıdaki listeye geçerlidir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Visual C++ projeleri için oluşturulan dosya türleri](../ide/file-types-created-for-visual-cpp-projects.md)    
-[#define yönergesi (C/C++)](../preprocessor/hash-define-directive-c-cpp.md)   
-[#undef yönergesi (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md)   
-[SAL ek açıklamaları](../c-runtime-library/sal-annotations.md)   
-[İleti eşlemeleri](../mfc/reference/message-maps-mfc.md)   
-[İleti eşleme makroları](../atl/reference/message-map-macros-atl.md)   
+[Visual C++ Projeleri için Oluşturulan Dosya Türleri](../ide/file-types-created-for-visual-cpp-projects.md)<br>
+[#define Yönergesi (C/C++)](../preprocessor/hash-define-directive-c-cpp.md)<br>
+[#undef Yönergesi (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md)<br>
+[SAL Ek Açıklamaları](../c-runtime-library/sal-annotations.md)<br>
+[İleti eşlemeleri](../mfc/reference/message-maps-mfc.md)<br>
+[İleti eşleme makroları](../atl/reference/message-map-macros-atl.md)<br>
 [Nesne İşleme Makroları](../atl/reference/object-map-macros.md)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 85d0adfd03b6822b949523643aa97f7a7d8b088b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 020632ff17ade10e7fcb9cd46d245849189b6860
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607636"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46416792"
 ---
 # <a name="synclockwithstatustsynclockwithstatust-constructor"></a>SyncLockWithStatusT::SyncLockWithStatusT Oluşturucusu
 
@@ -43,13 +43,13 @@ explicit SyncLockWithStatusT(
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*  
+*Diğer*<br/>
 Diğer bir rvalue başvurusuna **SyncLockWithStatusT** nesne.
 
-*Eşitleme*  
+*Eşitleme*<br/>
 Başka bir başvuru **SyncLockWithStatusT** nesne.
 
-*Durumu*  
+*Durumu*<br/>
 Değerini [status_](../windows/synclockwithstatust-status-data-member.md) veri üyesi *diğer* parametresi veya *eşitleme* parametresi.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -66,5 +66,5 @@ Yeni bir örneğini başlatır **SyncLockWithStatusT** sınıfı.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[SyncLockWithStatusT Sınıfı](../windows/synclockwithstatust-class.md)  
+[SyncLockWithStatusT Sınıfı](../windows/synclockwithstatust-class.md)<br/>
 [SyncLockWithStatusT::GetStatus Metodu](../windows/synclockwithstatust-getstatus-method.md)

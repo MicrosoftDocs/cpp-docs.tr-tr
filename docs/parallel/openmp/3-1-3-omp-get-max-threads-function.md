@@ -12,40 +12,41 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2afa797cc74a50041f2ea24f76fa07ffe109072b
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: c439dc0203fa3435c62e9669da40b5b092556492
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687517"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400828"
 ---
 # <a name="313-ompgetmaxthreads-function"></a>3.1.3 omp_get_max_threads İşlevi
-**Omp_get_max_threads** işlevi, en az, paralel bir bölge olmadan, ekip oluşturmak için kullanılacak iş parçacığı sayısı kadar büyük olması garanti bir tamsayı döndürür bir **num_threads** yan tümcesi Bu noktada kodda karşılaştı için yoktu. Biçimi aşağıdaki gibidir:  
-  
-```  
-#include <omp.h>  
-int omp_get_max_threads(void);  
-```  
-  
- Aşağıdaki alt sınır değeri üzerinde yoğunlaştıracaklardır **omp_get_max_threads**:  
-  
-```  
-  
-threads-used-for-next-team  
- <= omp_get_max_threads  
-  
-```  
-  
- Bir sonraki paralel bölgesi kullanıyorsa unutmayın **num_threads** iş parçacıklarını garanti sonucu çoğulluğun alt sınırı üzerinde belirli sayıda istek için yan tümceyi **omp_get_max_threads** uzun hiçbir ayrı tutma.  
-  
- **Omp_get_max_threads** işlevin dönüş değeri, dinamik olarak sonraki paralel bölge biçimlendirilmiş ekibindeki tüm iş parçacıkları için yeterli depolama alanı ayırmak için kullanılabilir.  
-  
-## <a name="cross-references"></a>Çapraz referanslar:  
-  
--   **omp_get_num_threads** işlev, bkz: [bölüm 3.1.2](../../parallel/openmp/3-1-2-omp-get-num-threads-function.md) sayfasında 37'si.  
-  
--   **omp_set_num_threads** işlev, bkz: [bölüm 3.1.1](../../parallel/openmp/3-1-1-omp-set-num-threads-function.md) sayfasında 36.  
-  
--   **omp_set_dynamic** işlev, bkz: [bölüm 3.1.7](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) sayfasında 39.  
-  
--   **num_threads** yan tümcesi, bkz: [bölüm 2.3](../../parallel/openmp/2-3-parallel-construct.md) sayfasında 8.
+
+**Omp_get_max_threads** işlevi en az kadar büyük bir paralel bölgenin olmadan, bir takım oluşturmak için kullanılacak iş parçacığı sayısını olması garanti bir tamsayı döndürür bir **num_threads** yan tümcesi Bu noktada kod ile karşılaşılan şekilde yapılandırılmış. Biçimi aşağıdaki gibidir:
+
+```
+#include <omp.h>
+int omp_get_max_threads(void);
+```
+
+Aşağıdaki alt sınırı değeri temel ifade **omp_get_max_threads**:
+
+```
+
+threads-used-for-next-team
+<= omp_get_max_threads
+
+```
+
+Sonraki bir paralel bölgenin kullanıyorsa unutmayın **num_threads** iş parçacıklarını garanti sonucunu alt sınırı üzerinde belirli sayıda istek yan tümcesini **omp_get_max_threads** hiçbir uzun tutar.
+
+**Omp_get_max_threads** işlevin dönüş değeri, dinamik olarak izleyen bir paralel bölgenin oluşturulmuş takım tüm iş parçacıkları için yeterli depolama alanı ayırmak için kullanılabilir.
+
+## <a name="cross-references"></a>Başvuruları çapraz:
+
+- **omp_get_num_threads** çalışması için bkz: [bölümü 3.1.2](../../parallel/openmp/3-1-2-omp-get-num-threads-function.md) 37 sayfasında.
+
+- **omp_set_num_threads** çalışması için bkz: [bölümü 3.1.1](../../parallel/openmp/3-1-1-omp-set-num-threads-function.md) 36 sayfasında.
+
+- **omp_set_dynamic** çalışması için bkz: [bölümü 3.1.7](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) sayfasında 39.
+
+- **num_threads** yan tümcesi bkz [bölümü 2.3](../../parallel/openmp/2-3-parallel-construct.md) 8 sayfasında.

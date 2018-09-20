@@ -19,22 +19,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 229b4a5ffb32f4a167dcc8393a269bbb2e35b500
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 83c1208d3001739ca78186972c629ea8a094c8d8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344886"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430897"
 ---
 # <a name="dialog-data-validation"></a>İletişim Verisi Doğrulama
-Veri değişimi ek doğrulama DDV işlevlerini çağırarak örnekte gösterildiği gibi belirtebilirsiniz [iletişim kutusu veri değişimi](../mfc/dialog-data-exchange.md). `DDV_MaxChars` Örnek çağrısında doğrular, metin kutusu denetimi girilen dize 20 karakterden uzun değil. Doğrulama başarısız olursa ve kullanıcı verileri yeniden girebilmek için sorunlu denetimi odağı koyar DDV işlevi genellikle bir ileti kutusu kullanıcıyla uyarır. Belirli bir denetim için DDV işlevi hemen sonra DDX işlevi için aynı denetim çağrılmalıdır.  
-  
- Ayrıca, kendi özel DDX ve DDV rutinleri tanımlayabilirsiniz. Bu ve diğer yönlerini DDX ve DDV hakkında daha fazla bilgi için bkz: [MFC Teknik Not 26](../mfc/tn026-ddx-and-ddv-routines.md).  
-  
- [Üye değişkeni ekleme](../ide/add-member-variable-wizard.md) tüm DDX yazılır ve DDV sizin için veri eşlemesinde çağırır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md)   
- [İletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)   
- [İletişim Kutusu Veri Değişimi](../mfc/dialog-data-exchange.md)
+
+Veri değişimi ek doğrulama DDV işlevleri çağırarak örnekte gösterildiği gibi belirtebilirsiniz [iletişim kutusu veri değişimi](../mfc/dialog-data-exchange.md). `DDV_MaxChars` Örnek çağrıda metin kutusu denetimine girilen dize 20 karakterden uzun olduğunu doğrular. Doğrulama başarısız olursa ve kullanıcı verileri yeniden girebilmek için odak sorunlu denetimde koyar DDV işlevi genellikle bir ileti kutusu ile kullanıcıyı uyarır. DDV işlevi belirli bir denetim için aynı denetim için hemen DDX işlevinden sonra çağrılmalıdır.
+
+Ayrıca, kendi özel DDX ve DDV rutinleri tanımlayabilirsiniz. Bu ve diğer yönleri DDX ve DDV hakkında daha fazla bilgi için bkz: [MFC Teknik Notu 26](../mfc/tn026-ddx-and-ddv-routines.md).
+
+[Ekleme üye değişkeni Sihirbazı](../ide/add-member-variable-wizard.md) tüm DDX yazılır ve DDV, verilerin haritada çağırır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İletişim Kutusu Veri Değişimi ve Doğrulaması](../mfc/dialog-data-exchange-and-validation.md)<br/>
+[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)<br/>
+[İletişim Kutusu Veri Değişimi](../mfc/dialog-data-exchange.md)
 

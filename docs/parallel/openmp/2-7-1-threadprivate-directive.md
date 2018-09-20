@@ -12,70 +12,71 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c9912ccbfa6f5773ec1e523245f75e675bb82244
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 31c9c70940b558d0b4cc3f77677665235417694d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692658"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46398150"
 ---
 # <a name="271-threadprivate-directive"></a>2.7.1 threadprivate Yönergesi
-`threadprivate` Yönergesi yapar adlandırılmış dosya kapsamı, ad alanı kapsamı veya statik blok kapsamı değişkenleri belirtilen *değişken listesi* özel bir iş parçacığı için. *değişken listesi* tamamlanmamış bir türleri olmadığı değişkenleri virgülle ayrılmış listesi. Söz dizimi `threadprivate` yönergesi aşağıdaki gibidir:  
-  
-```  
-#pragma omp threadprivate(variable-list) new-line  
-```  
-  
- Her kopyası bir `threadprivate` değişkeni başlatılır yüklenirse, bu kopyayı ilk referansı önce programında ve normal şekilde belirtilmeyen bir noktada (yani, ana kopyayı seri bir programın yürütülmesini içinde başlatılması gibi). Bir nesne açık bir başlatıcı başvuruda bulunulan gerçekleştiriyorsanız bir `threadprivate` değişkeni ve değeri nesnenin değiştiren değişkeni bir kopyasını ilk referansı önce ve sonra belirtilmeyen bir davranıştır.  
-  
- Herhangi bir özel değişken ile başka bir iş parçacığının kopyasını bir iş parçacığı başvurmaması gibi bir `threadprivate` nesnesi. Seri bölgeler ve ana bölge programının sırasında başvuruları ana iş parçacığının nesne kopyasına olacaktır.  
-  
- İlk paralel bölge yürütüldükten sonra verileri `threadprivate` nesneleri, yalnızca dinamik mekanizması iş parçacıkları, devre dışı bırakıldı ve iş parçacığı sayısı için tüm paralel bölgeler değişmeden kalır, devam etmek için garanti.  
-  
- Kısıtlamaları `threadprivate` yönergesi aşağıdaki gibidir:  
-  
--   A `threadprivate` yönergesi dosya kapsamı veya ad alanı kapsam değişkenleri için herhangi bir tanım veya bildirimi dışında görünmesi gerekir ve tüm başvuruları herhangi bir değişken kendi listesinde sözcüksel olarak gelmelidir.  
-  
--   Her bir değişken *değişken listesi* , bir `threadprivate` yönergesi dosya veya ad alanı kapsamında bir değişken bildirimi sözcüksel olarak yönergesi önündeki dosya veya ad alanı kapsamda başvurmalıdır.  
-  
--   A `threadprivate` yönergesi statik blok kapsamı değişkenler için değişkenin kapsamını ve iç içe geçmiş kapsamdaki değil görünmelidir. Yönergesi sözcüksel olarak kendi listesinde değişkenlerden herhangi birini yapılan tüm başvuruları gelmelidir.  
-  
--   Her bir değişken *değişken listesi* , bir `threadprivate` yönergesi blok kapsamında bir değişken bildirimi sözcüksel olarak yönergesi önündeki aynı kapsamda başvurmalıdır. Değişken bildirimi statik depolama sınıfı tanımlayıcısı kullanmanız gerekir.  
-  
--   Bir değişken belirtilmişse bir `threadprivate` yönerge bir çeviri birimi de belirtilmelidir bir `threadprivate` onu bildirilen her çeviri biriminde yönergesi.  
-  
--   A `threadprivate` değişkeni gerekir görünmüyor tüm yan tümcesinde `copyin`, `copyprivate`, `schedule`, `num_threads`, veya **varsa** yan tümcesi.  
-  
--   Adresini bir `threadprivate` değişken bir adres sabiti değil.  
-  
--   A `threadprivate` değişkeni tamamlanmamış bir tür veya bir başvuru türü değil olmalıdır.  
-  
--   A `threadprivate` değişkeni POD olmayan sınıf türü ile açık bir başlatıcı bildirilirse erişilebilir, anlaşılır kopya Oluşturucu olması gerekir.  
-  
- Aşağıdaki örnek, nasıl bir başlatıcı görünür bir değişken değiştirme belirtilmeyen davranışı neden olabilir ve aynı zamanda bir yardımcı nesnesini ve bir kopya Oluşturucu kullanarak bu sorundan kaçınmak nasıl gösterilmektedir.  
-  
-```  
-int x = 1;  
-T a(x);  
-const T b_aux(x); /* Capture value of x = 1 */  
-T b(b_aux);  
-#pragma omp threadprivate(a, b)  
-  
-void f(int n) {  
-   x++;  
-   #pragma omp parallel for  
-   /* In each thread:  
-   * Object a is constructed from x (with value 1 or 2?)  
-   * Object b is copy-constructed from b_aux  
-   */  
-   for (int i=0; i<n; i++) {  
-      g(a, b); /* Value of a is unspecified. */  
-   }  
-}  
-```  
-  
-## <a name="cross-references"></a>Çapraz referanslar:  
-  
--   Dinamik zincirlerini görmek [bölüm 3.1.7](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) sayfasında 39.  
-  
--   `OMP_DYNAMIC` ortam değişkeni, bkz: [bölüm 4.3](../../parallel/openmp/4-3-omp-dynamic.md) sayfasında 49.
+
+`threadprivate` Yönergesi yapar adlandırılmış dosya kapsam, ad alanı kapsamında veya belirtilen blok kapsamı statik değişkenler *değişken listesi* özel bir iş parçacığına. *değişken listesi* tamamlanmamış bir türleri olmadığı değişkenlerin virgülle ayrılmış listesidir. Söz dizimi `threadprivate` yönerge aşağıdaki gibidir:
+
+```
+#pragma omp threadprivate(variable-list) new-line
+```
+
+Her bir kopyasını bir `threadprivate` değişkeni başlatılır bir kez bu kopyayı olan ilk başvurunun önce program ve her zamanki şekilde belirtilmeyen bir noktada (yani, ana kopyayı programının bir seri yürütme başlatılması gibi). Bir nesnenin açık bir Başlatıcısı içinde başvuruluyorsa unutmayın bir `threadprivate` değişkenin bir kopyası olan ilk başvurunun önce değişken ve nesnenin değeri değiştirildiğinde, ardından davranıştır belirtilmemiş.
+
+Herhangi bir özel değişken ile başka bir iş parçacığının kopyasını bir iş parçacığı başvurmamalıdır gibi bir `threadprivate` nesne. Seri bölgelerde ve programın ana bölge sırasında başvuruları ana iş parçacığının Kopyala nesnesinin olur.
+
+İlk paralel bölgenin yürütüldükten sonra verileri `threadprivate` nesneleri yalnızca dinamik mekanizması iş parçacıkları, devre dışı bırakıldı ve iş parçacığı sayısı için tüm paralel bölgeleri değişmeden kalır kalıcı hale getirmek için garantisi.
+
+Kısıtlamaları `threadprivate` yönerge aşağıdaki gibidir:
+
+- A `threadprivate` yönergesi dosya kapsam veya isim uzayı kapsam değişkenleri için herhangi bir tanım veya bildirimi dışında görünmelidir ve tüm başvuruları herhangi bir değişken, listesinde sözcüksel olarak gelmelidir.
+
+- Her bir değişken *değişken listesi* , bir `threadprivate` yönergesi dosya veya ad alanı kapsamında bir Değişken bildiriminde sözcüksel olarak yönergesi önündeki dosya veya ad alanı kapsamında başvurmalıdır.
+
+- A `threadprivate` blok kapsamı statik değişkenler yönergesi bir değişkenin kapsamını ve iç içe kapsam içinde değil görünmesi gerekir. Yönergesi, tüm başvuruları herhangi bir değişken sözcüksel olarak kendi listesinde gelmelidir.
+
+- Her bir değişken *değişken listesi* , bir `threadprivate` yönergesi blok kapsamında aynı kapsamda yönergesi sözcüksel olarak önce gelen bir Değişken bildiriminde başvurmalıdır. Değişken bildirimi statik depolama sınıfı tanımlayıcısı kullanmanız gerekir.
+
+- Bir değişken belirtilmişse bir `threadprivate` bir çeviri birimindeki yönergesi içinde belirtilmelidir bir `threadprivate` bunu bildirilen her çeviri biriminde yönergesi.
+
+- A `threadprivate` değişkeni dışında herhangi bir yan tümcesinde değil görünmelidir `copyin`, `copyprivate`, `schedule`, `num_threads`, veya **varsa** yan tümcesi.
+
+- Adresini bir `threadprivate` değişkenin adresi sabit değil.
+
+- A `threadprivate` değişken tamamlanmamış bir türü veya bir başvuru türü değil olmalıdır.
+
+- A `threadprivate` açık bir başlatıcı ile bildirilirse, değişken POD harici sınıf türünde bir erişilebilir, açık bir kopya Oluşturucu olması gerekir.
+
+Aşağıdaki örnek nasıl, bir başlatıcı içinde görüntülenen bir değişken değiştirme belirtilmeyen davranışlara neden olabilir ve ayrıca bir yardımcı nesnesi ve bir kopya Oluşturucusu kullanarak bu sorunu önlemek nasıl gösterir.
+
+```
+int x = 1;
+T a(x);
+const T b_aux(x); /* Capture value of x = 1 */
+T b(b_aux);
+#pragma omp threadprivate(a, b)
+
+void f(int n) {
+   x++;
+   #pragma omp parallel for
+   /* In each thread:
+   * Object a is constructed from x (with value 1 or 2?)
+   * Object b is copy-constructed from b_aux
+   */
+   for (int i=0; i<n; i++) {
+      g(a, b); /* Value of a is unspecified. */
+   }
+}
+```
+
+## <a name="cross-references"></a>Başvuruları çapraz:
+
+- Dinamik dizileri gör [bölümü 3.1.7](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) sayfasında 39.
+
+- `OMP_DYNAMIC` ortam değişkeni, bkz: [bölümü 4.3](../../parallel/openmp/4-3-omp-dynamic.md) 49 sayfasında.

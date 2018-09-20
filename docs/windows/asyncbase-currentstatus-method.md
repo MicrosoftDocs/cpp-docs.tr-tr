@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 193f4d26f7e163707092f3d0bc8f981a02611a22
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 792f9f6c6d76097459498c43068f46d86b2e2349
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603708"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46401491"
 ---
 # <a name="asyncbasecurrentstatus-method"></a>AsyncBase::CurrentStatus Yöntemi
 
@@ -38,7 +38,7 @@ inline void CurrentStatus(
 
 ### <a name="parameters"></a>Parametreler
 
-*Durumu*  
+*Durumu*<br/>
 Bu işlem geçerli durumu depoladığı konum.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -53,5 +53,5 @@ Bu işlem, iş parçacığı açısından güvenlidir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[AsyncBase Sınıfı](../windows/asyncbase-class.md)  
+[AsyncBase Sınıfı](../windows/asyncbase-class.md)<br/>
 [AsyncStatusInternal Sabit Listesi](../windows/asyncstatusinternal-enumeration.md)

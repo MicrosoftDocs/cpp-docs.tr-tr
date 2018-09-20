@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e6734391e56f076f247bd8887a7fdb61142b3669
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: fa4d894fb3fc436abab84bfee11199f59bd66f78
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317868"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402401"
 ---
 # <a name="defining-member-variables-for-dialog-controls-c"></a>(C++) iletişim kutusu denetimleri için üye değişkenleri tanımlama
 
@@ -55,11 +55,11 @@ MFC
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İletileri İşlevlere Eşleme](../mfc/reference/mapping-messages-to-functions.md)  
-[Kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md)  
-[MFC Sınıf Sihirbazı](../mfc/reference/mfc-class-wizard.md)  
-[Sınıf ekleme](../ide/adding-a-class-visual-cpp.md)  
-[Üye işlevi ekleme](../ide/adding-a-member-function-visual-cpp.md)  
-[Üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md)  
-[Bir sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)  
+[İletileri İşlevlere Eşleme](../mfc/reference/mapping-messages-to-functions.md)<br/>
+[Kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
+[MFC Sınıf Sihirbazı](../mfc/reference/mfc-class-wizard.md)<br/>
+[Sınıf ekleme](../ide/adding-a-class-visual-cpp.md)<br/>
+[Üye işlevi ekleme](../ide/adding-a-member-function-visual-cpp.md)<br/>
+[Üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md)<br/>
+[Bir sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
 [MFC ileti işleyicisi](../mfc/reference/adding-an-mfc-message-handler.md)

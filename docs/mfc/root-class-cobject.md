@@ -19,22 +19,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2398f1e775dfa8b9331a4abc0137207c85531aff
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0804397888d64ac5b6cab9a60f9912b27358bc43
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385076"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46373327"
 ---
 # <a name="root-class-cobject"></a>Kök Sınıf: CObject
-Microsoft Foundation Class (MFC) Kitaplığı'nda sınıfların çoğu bir tek temel sınıfından sınıf hiyerarşisinin kökü türetilir. `CObject` bir dizi yararlı kapasiteye çok düşük yükü ile bu sınıftan türetilen tüm sınıflar sağlar. Hakkında daha fazla bilgi için `CObject` ve onun özelliklerini görmek [kullanarak CObject](../mfc/using-cobject.md).  
-  
- [CObject](../mfc/reference/cobject-class.md)  
- Çoğu MFC sınıfları ultimate temel sınıf. Verileri seri hale getirme ve bir sınıf hakkında çalışma zamanı bilgilerini alma destekler.  
-  
- [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md)  
- Çalışma zamanında bir nesnenin tam sınıfını belirlemek için kullanılan yapısı.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Microsoft Foundation Class (MFC) Kitaplığı'ndaki sınıfları çoğunu tek temel sınıftan sınıf hiyerarşisinin kökü türetilir. `CObject` birkaç faydalı özelliği kendisinden çok düşük yüklerle türetilmiş tüm sınıflara sağlar. Hakkında daha fazla bilgi için `CObject` uygulamanın özelliklerini görüp [kullanarak CObject](../mfc/using-cobject.md).
+
+[CObject](../mfc/reference/cobject-class.md)<br/>
+Çoğu MFC sınıfları ultimate temel sınıf. Verileri seri hale getirme ve bir sınıf hakkında çalışma zamanı bilgilerini destekler.
+
+[CRuntimeClass](../mfc/reference/cruntimeclass-structure.md)<br/>
+Çalışma zamanında tam bir nesnenin sınıfını belirlemek için kullanılan yapısı.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

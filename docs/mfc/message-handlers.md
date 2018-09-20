@@ -19,22 +19,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be4ccf9ec33e5ddf497193c1942e9f300f8cae57
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 22dde243bb6d8e8a283e670804d4b8b6cad9082c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347636"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46406756"
 ---
 # <a name="message-handlers"></a>İleti İşleyicileri
-MFC'de, ayrılmış bir *işleyici* işlevi ayrı her ileti işler. İleti işleyici işlevleri, bir sınıfın üye işlevlerdir. Bu belge koşullarını kullanır *ileti işleyicisi üye işlevi*, *ileti işleyicisi işlevi*, *ileti işleyicisi*, ve *işleyicisi*birbirinin yerine. İleti işleyicileri bazı tür "komut işleyicileri." olarak da bilinir  
-  
- İleti işleyicileri hesapları çalışmanızı büyük bir kısmının için framework uygulaması yazma yazma. Bu makale ailesi ileti işleme mekanizması nasıl çalıştığı açıklanmaktadır.  
-  
- Bunu bir ileti işleyicisi yaptığı o iletisine yanıt olarak Bitti'yi istediğiniz yapar. Sınıfının Özellikler penceresini kullanarak işleyicileri oluşturun ve ardından kaynak kod düzenleyicisini kullanarak işleyicinin kodunu doldurun.  
-  
- Tüm Microsoft Visual C++ MFC ve olanaklarının, işleyicileri yazmak için kullanabilirsiniz. Tüm sınıflar listesi için bkz: [sınıf kitaplığına genel bakış](../mfc/class-library-overview.md) içinde *MFC başvurusu*.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
+
+MFC'de, ayrılmış bir *işleyici* işlevi her ayrı ileti işler. İleti işleyicisi, bir sınıfın üye işlevleri işlevlerdir. Bu belgede koşulları kullanılır *ileti işleyicisi üye işlevi*, *ileti işleyicisi işlevi*, *ileti işleyicisi*, ve *işleyici*birbirinin yerine. İleti işleyicileri bazı tür "komut işleyicileri" olarak da adlandırılır
+
+İleti işleyicileri hesapları iş büyük bir kısmı için bir framework uygulaması yazma yazma. Bu makalede ailesi, ileti işleme mekanizması nasıl çalıştığını açıklar.
+
+Bunu bir ileti işleyicisini yaptığı bu iletiye yanıt olarak yapılan istediğiniz yapar. Sınıf Özellikler penceresini kullanarak işleyicileri oluşturabilir ve ardından kaynak kod Düzenleyicisi'ni kullanarak işleyicinin kodunu doldurun.
+
+Microsoft Visual C++ ve MFC akreditasyonlu tümünün İşleyicileriniz yazmak için kullanabilirsiniz. Tüm sınıflar listesi için bkz. [sınıf kitaplığına genel bakış](../mfc/class-library-overview.md) içinde *MFC başvurusu*.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
 

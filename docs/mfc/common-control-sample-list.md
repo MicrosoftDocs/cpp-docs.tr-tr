@@ -14,22 +14,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3175463de0539f56aba3f38f373e19f11cf2388f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f9108f2fbc7196a5c3110cf4a12bf4f225e454e9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341045"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46417325"
 ---
 # <a name="common-control-sample-list"></a>Ortak Denetim Örneği Listesi
-Ortak Denetimler gösteren aşağıdaki örnek programlar bakın:  
-  
--   [CMNCTRL1](../visual-cpp-samples.md)  
-  
--   [CMNCTRL2](../visual-cpp-samples.md)  
-  
--   [CTRLTEST](../visual-cpp-samples.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimler](../mfc/controls-mfc.md)
+
+Ortak Denetimler gösteren aşağıdaki örnek programlardan bakın:
+
+- [CMNCTRL1](../visual-cpp-samples.md)
+
+- [CMNCTRL2](../visual-cpp-samples.md)
+
+- [CTRLTEST](../visual-cpp-samples.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Denetimler](../mfc/controls-mfc.md)
 

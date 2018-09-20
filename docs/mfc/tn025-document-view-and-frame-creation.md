@@ -1,5 +1,5 @@
 ---
-title: 'TN025: Belge, Görünüm ve çerçeve oluşturma | Microsoft Docs'
+title: 'TN025: Belge, görüntülemek ve çerçeve oluşturma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,62 +17,68 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97db14dcb8c0b8b5b71823cf39d6bf36f0d19f25
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 75530d8133806357dba7a30862095ea08bd022b9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36956700"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422018"
 ---
 # <a name="tn025-document-view-and-frame-creation"></a>TN025: Belge, Görünüm ve Çerçeve Oluşturma
+
 > [!NOTE]
->  İlk çevrimiçi belgelerinde eklenmiştir beri aşağıdaki Teknik Not güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konuları güncel veya yanlış olması olabilir. En son bilgiler için çevrimiçi belgeleri dizindeki ilgi konuyu aramak önerilir.  
-  
- Bu Not WinApps, DocTemplates, belgeler, çerçeve ve görünümler oluşturma ve sahipliği sorunları açıklar.  
-  
-## <a name="winapp"></a>WinApp  
- Bir `CWinApp` sistem nesnesi.  
-  
- Bu statik olarak oluşturulur ve framework'ün iç uygulaması tarafından başlatılan `WinMain`. Öğesinden türetilmelidir `CWinApp` faydalı bir şey için (özel durum: MFC uzantı DLL'leri olmamalıdır bir `CWinApp` örneği — başlatma yapılır `DllMain` yerine).  
-  
- Bir `CWinApp` nesnenin sahibi belge şablonları listesini (bir `CPtrList`). Uygulama başına bir veya birden çok belge şablonu yoktur. DocTemplates genellikle yüklenir (diğer bir deyişle, bir dize dizisi) kaynak dosyasından `CWinApp::InitInstance`.  
-  
-```  
+>  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
+
+Bu Not, WinApps, DocTemplates, belgeler, çerçeveler ve görünümler oluşturma ve sahiplik sorunlarını açıklar.
+
+## <a name="winapp"></a>WinApp
+
+Bir `CWinApp` sistem nesnesi.
+
+Bu statik olarak oluşturulur ve framework'ün iç uygulaması tarafından başlatılan `WinMain`. Öğesinden türetilmelidir `CWinApp` faydalı bir şey için (özel durum: MFC uzantısı DLL'leri olmamalıdır bir `CWinApp` örneği — başlatma gerçekleştirilir `DllMain` yerine).
+
+Bir `CWinApp` nesneye sahip bir belge şablonları listesi (bir `CPtrList`). Uygulama başına bir veya birden çok belge şablonu yoktur. DocTemplates genellikle yüklenir (diğer bir deyişle, bir dize dizisi) kaynak dosyasından `CWinApp::InitInstance`.
+
+```
 pTemplate = new CDocTemplate(IDR_MYDOCUMENT, ...);
 
 AddDocTemplate(pTemplate);
-```  
-  
- Bir `CWinApp` nesnenin sahibi uygulamadaki tüm çerçeve pencereleri. Uygulama için ana çerçeve penceresi depolanması gereken `CWinApp::m_pMainWnd`; genellikle ayarladığınız *m_pMainWnd* içinde `InitInstance` bunu sizin adınıza AppWizard vermez, uygulama. Tek belge arabirimi (SDI) bu biridir `CFrameWnd` yalnızca belge çerçeve penceresi yanı sıra ana uygulama çerçeve penceresi sunar. Birden çok belge arabirimi (MDI) için bir MDI çerçevesi budur (sınıfı `CMDIFrameWnd`) tüm alt içeren ana uygulama çerçeve penceresi hizmet veren `CFrameWnd`s. Her alt pencere sınıfıdır `CMDIChildWnd` (türetilmiş `CFrameWnd`) ve potansiyel olarak birçok belge çerçeve pencereleri biri olarak görev yapar.  
-  
-## <a name="doctemplates"></a>DocTemplates  
- `CDocTemplate` Oluşturan ve belgelerin yöneticisidir. Oluşturduğu belgeleri sahibidir. Uygulamanızın kaynak tabanlı bir yaklaşım aşağıda açıklanan kullanıyorsa, bu öğesinden türetilen gerekmez `CDocTemplate`.  
-  
- SDI uygulamanın sınıfı `CSingleDocTemplate` açık bir belge izler. MDI uygulamanın sınıfı `CMultiDocTemplate` listesini tutar (bir `CPtrList`) Bu şablondan oluşturulan tüm belgelerin şu anda açık. `CDocTemplate::AddDocument` ve `CDocTemplate::RemoveDocument` sanal üye eklemek veya bir belge şablonu kaldırmak için işlevleri sağlar. `CDocTemplate` bir arkadaşınız `CDocument` böylece biz korumalı ayarlayabilirsiniz `CDocument::m_pDocTemplate` geri belge oluşturulan belge şablonu için işaret edecek şekilde geri işaretçi.  
-  
- `CWinApp` varsayılan işleme `OnFileOpen` tüm belge şablonları sırayla sorgulayacak uygulama. Uygulama zaten açık belgeleri mi arıyorsunuz ve hangi yeni belgelerde açmak için biçimi karar içerir.  
-  
- `CDocTemplate` belgeler ve çerçeveler için kullanıcı Arabirimi bağlama yönetir.  
-  
- `CDocTemplate` adlandırılmamış belgeleri sayısını tutar.  
-  
-## <a name="cdocument"></a>CDocument  
- A `CDocument` tarafından sahip olunan bir `CDocTemplate`.  
-  
- Dosyalarınız görünümleri açık bir listesini (türetilmiş `CView`) belgeyi görüntüleme (bir `CPtrList`).  
-  
- Belgeler oluşturma/görünümleri yok değil, ancak oluşturulduktan sonra bunların birbirlerine bağlı. Bir belge kapatıldığı (diğer bir deyişle, ile Dosya/Kapat), tüm ekli görünümleri kapatılacak. Son görünümü belgesinde kapalı olduğunda (diğer bir deyişle, pencere/Kapat) belge kapatılacak.  
-  
- `CDocument::AddView`, `RemoveView` Arabirimi görünüm listesini korumak için kullanılır. `CDocument` bir arkadaşınız `CView` biz ayarlayabilirsiniz `CView::m_pDocument` geri işaretçi.  
-  
-## <a name="cframewnd"></a>CFrameWnd  
- A `CFrameWnd` (çerçeve olarak da bilinir) ancak şimdi MFC 1.0, olduğu gibi aynı rol oynar `CFrameWnd` sınıfı, çoğu durumda yeni bir sınıf türetme olmadan kullanılmak üzere tasarlanmıştır. Türetilen sınıflar `CMDIFrameWnd` ve `CMDIChildWnd` standart komutların çoğu zaten uygulanan şekilde de geliştirilmiştir.  
-  
- `CFrameWnd` Çerçeve istemci alanında windows oluşturulmasından sorumludur. Normalde çerçeve istemci alanını doldurma bir ana penceresi yok.  
-  
- Bir MDI çerçeve penceresi için istemci alanını tüm MDI alt çerçeve Pencereleri üst sırayla olan MDICLIENT denetimi ile doldurulur. SDI çerçeve penceresi veya bir MDI alt çerçeve penceresi için istemci alanını genellikle doldurulup bir `CView`-pencere nesnesi türetilmiş. Durumunda `CSplitterWnd`, görünümün istemci alanını doldurulup `CSplitterWnd` pencere nesnesi ve `CView`-türetilen pencere nesneleri (bölme bölmesinde her bir tane) alt öğe pencerelerini oluşturulur `CSplitterWnd`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+```
+
+Bir `CWinApp` nesneye sahip tüm çerçeve pencereleri uygulama. Ana çerçeve penceresidir depolanması gereken `CWinApp::m_pMainWnd`; genellikle ayarladığınız *m_pMainWnd* içinde `InitInstance` sizin yerinize yapmasını AppWizard bulunmamasını, uygulama. Tek Belgeli Arabirim (SDI) için bu biridir `CFrameWnd` yalnızca belge çerçeve penceresi yanı sıra uygulamanın ana çerçeve penceresi sunar. Birden Çok Belgeli Arabirim (MDI) için bir MDI çerçeve budur (sınıfı `CMDIFrameWnd`) tüm alt içeren ana uygulama çerçeve penceresi hizmet veren `CFrameWnd`s. Her alt penceresi sınıfıdır `CMDIChildWnd` (türetilen `CFrameWnd`) ve potansiyel olarak birçok belge çerçeve pencereleri biri olarak görev yapar.
+
+## <a name="doctemplates"></a>DocTemplates
+
+`CDocTemplate` Oluşturan ve belgelerin yöneticisidir. Oluşturduğu belgeler sahibidir. Uygulamanız aşağıda açıklanan kaynak tabanlı yaklaşımı kullanıyorsa, türetilen gerekmez `CDocTemplate`.
+
+Sınıfı bir SDI uygulaması `CSingleDocTemplate` açık bir belge izler. Bir MDI uygulaması sınıfı için `CMultiDocTemplate` listesini tutar (bir `CPtrList`) Bu şablondan oluşturulan tüm açık belgeleri. `CDocTemplate::AddDocument` ve `CDocTemplate::RemoveDocument` sanal üye ekleme veya bir belge şablonu kaldırmak için işlevleri sağlar. `CDocTemplate` bir arkadaşınız, `CDocument` böylece biz korumalı ayarlayabilirsiniz `CDocument::m_pDocTemplate` geri belgeyi oluşturan belge şablonu için işaret edecek şekilde geri işaretçisi.
+
+`CWinApp` varsayılan işleme `OnFileOpen` uygulama, tüm belge şablonları sırayla sorgular. Uygulama zaten açık belgeleri mi arıyorsunuz ve yeni belgeleri açmak için hangi biçimi karar içerir.
+
+`CDocTemplate` belgeler ve çerçeveler için kullanıcı Arabirimi bağlama yönetir.
+
+`CDocTemplate` Adsız belgelerin sayısını tutar.
+
+## <a name="cdocument"></a>CDocument
+
+A `CDocument` tarafından sahip olunan bir `CDocTemplate`.
+
+Belgeleriniz görünümleri açık bir listesini (türetilen `CView`) belge görüntüleme (bir `CPtrList`).
+
+Belgeleri oluşturun/görünümler yok değil, ancak oluşturulduktan sonra birbirine bağlı. Bir belge kapatıldığı (diğer bir deyişle, ile Dosya/Kapat), ekli tüm görünümlere kapatılacak. Bir belgeyi son görünümü kapalı olduğunda (diğer bir deyişle, pencere/Kapat) belge kapatılacak.
+
+`CDocument::AddView`, `RemoveView` Arabirimi görünüm listesini korumak için kullanılır. `CDocument` bir arkadaşınız, `CView` ayarlayabilirsiniz bu nedenle `CView::m_pDocument` geri işaretçisi.
+
+## <a name="cframewnd"></a>CFrameWnd
+
+A `CFrameWnd` (çerçeve olarak da bilinir) ancak şimdi MFC 1.0, olduğu gibi aynı rol oynar `CFrameWnd` sınıfı çoğu durumda, yeni bir sınıf türetmek olmadan kullanılmak üzere tasarlanmıştır. Türetilen sınıfların `CMDIFrameWnd` ve `CMDIChildWnd` birçok standart komut zaten uygulanmış şekilde de geliştirilmiştir.
+
+`CFrameWnd` Çerçevenin istemci alanının windows oluşturmaktan sorumludur. Normalde çerçevenin istemci alanını dolduran bir ana penceresi yok.
+
+Bir MDI çerçeve penceresi tüm MDI alt çerçeve Pencereleri üst sırayla olan MDICLIENT denetimi ile istemci alanını doldurulur. Bir SDI çerçeve penceresinin veya MDI alt çerçeve için istemci alanını genellikle renkle doldurulup bir `CView`-türetilmiş pencere nesnesi. Durumunda, `CSplitterWnd`, görünüm istemci alanının doldurulup `CSplitterWnd` pencere nesnesi ve `CView`-türetilen pencere nesneleri (tek başına parçalı bölme) alt pencereler gibi oluşturulur `CSplitterWnd`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

@@ -18,31 +18,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd7a61593a1024c00c0fd0de6bd62ff3ee9323b3
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 451e7fc6e2a7b4a72188da6b69888bf04b605842
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33338688"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46412372"
 ---
 # <a name="editing-a-com-interface"></a>COM Arabirimini Düzenleme
-Sınıf Görünümü kısayol menüsünden komutlarını kullanarak Visual C++ projelerinde yeni yöntemlerini ve COM arabirimleri özelliklerini tanımlayabilirsiniz. Ayrıca, araç kutusu'ndan ActiveX denetimleri için olaylar tanımlayabilirsiniz.  
-  
- ATL ve MFC tabanlı COM nesne sınıfları için sınıf uygulamasını arabirimi düzenlemek aynı zamanda düzenleyebilirsiniz.  
-  
+
+Sınıf Görünümü kısayol menüsünden komutlarını kullanarak, Visual C++ projelerine yeni yöntemleri ve özellikleri COM arabirimlerinin tanımlayabilirsiniz. Ayrıca, araç kutusundan ActiveX denetimleri için olayları tanımlayabilirsiniz.
+
+ATL ve MFC tabanlı COM nesne sınıfları için sınıf uygulamasını arabirimi Düzen aynı zamanda düzenleyebilirsiniz.
+
 > [!NOTE]
->  Dışında tanımladığınız arabirimleri için **sınıfı Ekle** iletişim kutusu, Visual C++ .idl dosyanın özelliklerini ve yöntemlerini ekler ve arabirimler el ile eklense bile yöntemlerini uygulayan sınıflar için yer tutucular ekleyin.  
-  
- Aşağıdaki üç sihirbazları varolan arabirimler özelleştirmenize yardımcı olur. Bunlar, sınıf görünümünden kullanılabilir:  
-  
-|Sihirbazı|Proje türü|  
-|------------|------------------|  
-|[Ekleme özelliği Sihirbazı](../ide/names-add-property-wizard.md)|ATL veya MFC destekleyen ATL projeleri Özellik eklemek istediğiniz bir arabirime sağ tıklayın.<br /><br /> Visual C++ proje türü algılar ve Özellik Ekleme Sihirbazı'nı seçeneklerinde buna uygun olarak değiştirir:<br /><br /> -İçin dispinterfaces kullanılarak oluşturulmuş projelerde [MFC Uygulama Sihirbazı'nı](../mfc/reference/mfc-application-wizard.md), Özellik Ekleme Sihirbazı'nı harekete, MFC için belirli seçenekleri sağlar.<br />-MFC ActiveX denetim arabirimleri için Özellik Ekleme Sihirbazı'nı stok yöntemleri ve sağlanan kullanması veya denetiminiz için özelleştirme özellikleri listesini sağlar.<br />-Diğer tüm arabirimler için ekleme özelliği sihirbazlar çoğu durumlarda yararlı seçenekleri sağlar.|  
-|[Yöntem Ekleme Sihirbazı](../ide/add-method-wizard.md)|ATL veya MFC destekleyen ATL projeleri Yöntem eklemek istediğiniz bir arabirime sağ tıklayın.<br /><br /> Visual C++ proje türü algılar ve yöntem Ekleme Sihirbazı'nı seçeneklerinde buna uygun olarak değiştirir:<br /><br /> -İçin dispinterfaces kullanılarak oluşturulmuş projelerde [MFC Uygulama Sihirbazı'nı](../mfc/reference/mfc-application-wizard.md), yöntem Ekleme Sihirbazı'nı harekete, MFC için belirli seçenekleri sağlar.<br />-MFC ActiveX denetim arabirimleri için yöntem Ekleme Sihirbazı'nı stok yöntemleri ve sağlanan kullanması veya denetiminiz için özelleştirme özellikleri listesini sağlar.<br />-Diğer tüm arabirimler için **ekleme yöntemi** sihirbazlar çoğu durumlarda yararlı seçenekleri sağlar.|  
-  
- Ayrıca, nesnenin control sınıfı Sınıf Görünümü'nde sağ tıklatıp, COM denetimi yeni arabirimleri uygulayabileceğiniz [arabirimini uygulayan](../ide/implement-interface-wizard.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak dosyaları ile çalışma](../windows/working-with-resource-files.md)   
- [Kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md)   
- [Visual C++ proje türleri](../ide/visual-cpp-project-types.md)
+>  Dışında tanımlanan arabirimleri için **sınıfı Ekle** iletişim kutusunda, Visual C++ özellikleri ve yöntemleri .idl dosyasına ekler ve bile arabirimler el ile eklendiğinde yöntemlerini uygulayan sınıflar için saplamalar ekleyin.
+
+Aşağıdaki üç sihirbazlar, var olan arabirimler özelleştirmenize yardımcı olur. Bunlar, sınıf görünümünden kullanılabilir:
+
+|Sihirbazı|Proje türü|
+|------------|------------------|
+|[Özellik Ekleme Sihirbazı](../ide/names-add-property-wizard.md)|ATL destekleyen ATL veya MFC projeleri Özellik eklemek istediğiniz bir arabirime sağ tıklayın.<br /><br /> Visual C++ proje türü algılar ve Özellik Ekleme Sihirbazı'nı seçenekleri uygun şekilde değiştirir:<br /><br /> -Görüntü arabirimlerinde bulunan kullanılarak oluşturulan projeler için [MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md), Özellik Ekleme Sihirbazı'nı çağrılırken, MFC'ye belirli seçenekler sunar.<br />-MFC ActiveX denetim arabirimleri için Özellik Ekleme Sihirbazı'nı stok yöntemleri ve sağladığı biçimde kullanmanız veya denetim için özelleştirme özellikleri listesini sağlar.<br />-Diğer tüm arabirimleri için ekleme özelliği sihirbazları çoğu durumlarda kullanışlı seçenekler sağlar.|
+|[Yöntem Ekleme Sihirbazı](../ide/add-method-wizard.md)|ATL destekleyen ATL veya MFC projeleri Yöntem eklemek istediğiniz bir arabirime sağ tıklayın.<br /><br /> Visual C++ proje türü algılar ve buna uygun şekilde yöntem Ekleme Sihirbazı'nı seçenekleri değiştirir:<br /><br /> -Görüntü arabirimlerinde bulunan kullanılarak oluşturulan projeler için [MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md), yöntem Ekleme Sihirbazı'nı çağrılırken, MFC'ye belirli seçenekler sunar.<br />-MFC ActiveX denetim arabirimleri için yöntem Ekleme Sihirbazı'nı stok yöntemleri ve sağladığı biçimde kullanmanız veya denetim için özelleştirme özellikleri listesini sağlar.<br />-Diğer tüm arabirimler için **Ekle yöntemi** sihirbazlar çoğu durumlarda kullanışlı seçenekler sağlar.|
+
+Ayrıca, nesnenin denetim sınıf Sınıf Görünümü'nde sağ tıklatıp COM denetiminizi yeni arabirim uygulayabilir [arabirimi uygulayan](../ide/implement-interface-wizard.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)<br>
+[Kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md)<br>
+[Visual C++ Proje Türleri](../ide/visual-cpp-project-types.md)

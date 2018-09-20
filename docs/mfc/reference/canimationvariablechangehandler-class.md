@@ -20,88 +20,98 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58646efaaa0087be2bd73e45acd8ade4a16e9767
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 23521a9ee9706787df0568547fe3419fe7e4fae5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36957097"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46424605"
 ---
 # <a name="canimationvariablechangehandler-class"></a>CAnimationVariableChangeHandler sınıfı
-Bir animasyon değişkeninin değeri değiştiğinde animasyon API tarafından çağrılan bir geri çağırma uygular.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CAnimationVariableChangeHandler : public CUIAnimationVariableChangeHandlerBase<CAnimationVariableChangeHandler>;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`CAnimationVariableChangeHandler::CAnimationVariableChangeHandler`|Oluşturan bir `CAnimationVariableChangeHandler` nesnesi.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`CAnimationVariableChangeHandler::CreateInstance`|Bir örneğini oluşturur `CAnimationVariableChangeHandler` nesnesi.|  
-|[CAnimationVariableChangeHandler::OnValueChanged](#onvaluechanged)|Bir animasyon değişkenin değerini değiştirildiğinde çağrılır. (Geçersiz kılmaları `CUIAnimationVariableChangeHandlerBase::OnValueChanged`.)|  
-|[CAnimationVariableChangeHandler::SetAnimationController](#setanimationcontroller)|Animasyon denetleyicisi rota olayları gösteren bir işaretçi depolar.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu olay işleyicisi oluşturulur ve geçirilen `IUIAnimationVariable::SetVariableChangeHandler` yöntemi çağırdığınızda, `CAnimationVariable::EnableValueChangedEvent` veya `CAnimationBaseObject::EnableValueChangedEvent` (sağlayan bir animasyon nesnesinde kapsüllenmiş tüm animasyon değişkenler için bu olay).  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `CUIAnimationCallbackBase`  
-  
- `CUIAnimationVariableChangeHandlerBase`  
-  
- `CAnimationVariableChangeHandler`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxanimationcontroller.h  
-  
-##  <a name="onvaluechanged"></a>  CAnimationVariableChangeHandler::OnValueChanged  
- Bir animasyon değişkenin değerini değiştirildiğinde çağrılır.  
-  
-```  
+
+Animasyon değişkeninin bir değeri değiştiğinde animasyon API'sı tarafından çağrılan bir geri arama gerçekleştirir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CAnimationVariableChangeHandler : public CUIAnimationVariableChangeHandlerBase<CAnimationVariableChangeHandler>;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`CAnimationVariableChangeHandler::CAnimationVariableChangeHandler`|Oluşturur bir `CAnimationVariableChangeHandler` nesne.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`CAnimationVariableChangeHandler::CreateInstance`|Örneği oluşturur `CAnimationVariableChangeHandler` nesne.|
+|[CAnimationVariableChangeHandler::OnValueChanged](#onvaluechanged)|Bir animasyon değişkeninin bir değeri değiştirildiğinde çağırılır. (Geçersiz kılmaları `CUIAnimationVariableChangeHandlerBase::OnValueChanged`.)|
+|[CAnimationVariableChangeHandler::SetAnimationController](#setanimationcontroller)|Animasyon denetleyicisini rota olaylar için bir işaretçi depolar.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu olay işleyicisi oluşturulur ve geçirilen `IUIAnimationVariable::SetVariableChangeHandler` yöntemi çağırdığınızda, `CAnimationVariable::EnableValueChangedEvent` veya `CAnimationBaseObject::EnableValueChangedEvent` (Bu olay için bir animasyon nesnesinde tüm animasyon değişkenleri sağlar).
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`CUIAnimationCallbackBase`
+
+`CUIAnimationVariableChangeHandlerBase`
+
+`CAnimationVariableChangeHandler`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxanimationcontroller.h
+
+##  <a name="onvaluechanged"></a>  CAnimationVariableChangeHandler::OnValueChanged
+
+Bir animasyon değişkeninin bir değeri değiştirildiğinde çağırılır.
+
+```
 IFACEMETHOD(OnValueChanged) (
     __in IUIAnimationStoryboard* storyboard,
     __in IUIAnimationVariable* variable,
     __in DOUBLE newValue,
     __in DOUBLE previousValue);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *görsel taslak haline getirme*  
- Değişkeni animasyonu Film şeridi.  
-  
- *Değişken*  
- Güncelleştirildi animasyon değişkeni.  
-  
- *newValue*  
- Yeni değer.  
-  
- *previousValue*  
- Önceki değeri.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
-  
-##  <a name="setanimationcontroller"></a>  CAnimationVariableChangeHandler::SetAnimationController  
- Animasyon denetleyicisi rota olayları gösteren bir işaretçi depolar.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*görsel taslak*<br/>
+Değişken animasyon film şeridi.
+
+*Değişkeni*<br/>
+Animasyon değişkenin güncelleştirildi.
+
+*newValue*<br/>
+Yeni değeri.
+
+*previousValue*<br/>
+Önceki değer.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+
+##  <a name="setanimationcontroller"></a>  CAnimationVariableChangeHandler::SetAnimationController
+
+Animasyon denetleyicisini rota olaylar için bir işaretçi depolar.
+
+```
 void SetAnimationController(CAnimationController* pAnimationController);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pAnimationController*  
- Olayları alacak animasyon denetleyici için bir işaretçi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıflar](../../mfc/reference/mfc-classes.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pAnimationController*<br/>
+Olayları alacaksınız animasyon denetleyicisini bir işaretçi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıflar](../../mfc/reference/mfc-classes.md)

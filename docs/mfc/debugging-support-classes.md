@@ -22,22 +22,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 942302a07a55adf7d7a1a89ac2b518e3dcaefe2d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9d513eb8d51f5161e70b168bb541fe899b74f41c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342611"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419080"
 ---
 # <a name="debugging-support-classes"></a>Destek Sınıflarında Hata Ayıklama
-MFC dinamik bellek ayırma sorunlarını hata ayıklamaya yardımcı olması için aşağıdaki sınıflar sağlar.  
-  
- [CDumpContext](../mfc/reference/cdumpcontext-class.md)  
- Tanılama aktarımları için bir hedef sağlar.  
-  
- [CMemoryState](../mfc/reference/cmemorystate-structure.md)  
- Bellek kullanımı anlık görüntüleri sağlar yapısı. Önceki ve sonraki bellek anlık görüntüleri karşılaştırmak için de kullanılır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+MFC dinamik bellek ayırma sorunlarını hatalarını ayıklamanıza yardımcı olması için aşağıdaki sınıflar sağlar.
+
+[CDumpContext](../mfc/reference/cdumpcontext-class.md)<br/>
+Tanılama dökümleri için bir hedef sağlar.
+
+[CMemoryState](../mfc/reference/cmemorystate-structure.md)<br/>
+Bellek kullanımı anlık görüntüleri sağlar yapısı. Ayrıca, önceki ve sonraki bellek anlık görüntüsünü karşılaştırmak için kullanılır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

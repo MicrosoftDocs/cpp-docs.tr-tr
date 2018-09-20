@@ -10,269 +10,280 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6e8d2a198105e9cd63581dd8ed8445b681da2e0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d5844afa476510e4b4984ae69c75193fdf048ddd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46026939"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46382368"
 ---
 # <a name="concurrency-namespace-operators-amp"></a>Eşzamanlılık ad alanı işleçleri (AMP)
-||||  
-|-|-|-|  
-|[operator!=](#operator_neq)|[operator%](#operator_mod)|[operator *](#operator_star)|  
-|[operator +](#operator_add)|[operator-](#operator-)|[operator /](#operator_div)|  
-|[operator==](#operator_eq_eq)|  
-  
-##  <a name="operator_eq_eq"></a>  işleç ==   
- Belirtilen bağımsız değişkenlerin eşit olup olmadığını belirler.  
-  
-```  
+
+||||
+|-|-|-|
+|[operator!=](#operator_neq)|[operator%](#operator_mod)|[operator *](#operator_star)|
+|[operator +](#operator_add)|[operator-](#operator-)|[operator /](#operator_div)|
+|[operator==](#operator_eq_eq)|
+
+##  <a name="operator_eq_eq"></a>  işleç ==
+
+Belirtilen bağımsız değişkenlerin eşit olup olmadığını belirler.
+
+```
 template <
-    int _Rank,  
-    template <int> class _Tuple_type  
->  
+    int _Rank,
+    template <int> class _Tuple_type
+>
 bool operator== (
-    const _Tuple_type<_Rank>& _Lhs,  
+    const _Tuple_type<_Rank>& _Lhs,
     const _Tuple_type<_Rank>& _Rhs) restrict(amp);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *_Dizin*<br/>
-Tanımlama grubu bağımsız boyut.  
-  
+Tanımlama grubu bağımsız boyut.
+
 *_Lhs*<br/>
-Karşılaştırılacak tanımlama gruplarından biri.  
-  
+Karşılaştırılacak tanımlama gruplarından biri.
+
 *_Rhs*<br/>
-Karşılaştırılacak tanımlama gruplarından biri.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- `true` Kayıt düzenleri eşitse; Aksi takdirde, `false`.  
-  
-##  <a name="operator_neq"></a>  işleç! =   
- Belirtilen bağımsız değişkenlerin eşit olup olmadığını belirler.  
-  
-```  
+Karşılaştırılacak tanımlama gruplarından biri.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+`true` Kayıt düzenleri eşitse; Aksi takdirde, `false`.
+
+##  <a name="operator_neq"></a>  işleç! =
+
+Belirtilen bağımsız değişkenlerin eşit olup olmadığını belirler.
+
+```
 template <
-    int _Rank,  
-    template <int> class _Tuple_type  
->  
+    int _Rank,
+    template <int> class _Tuple_type
+>
 bool operator!= (
-    const _Tuple_type<_Rank>& _Lhs,  
+    const _Tuple_type<_Rank>& _Lhs,
     const _Tuple_type<_Rank>& _Rhs) restrict(amp);
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*_Dizin*<br/>
-Tanımlama grubu bağımsız boyut.  
-  
-*_Lhs*<br/>
-Karşılaştırılacak tanımlama gruplarından biri.  
-  
-*_Rhs*<br/>
-Karşılaştırılacak tanımlama gruplarından biri.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- `true` Kayıt düzenleri eşit değilse, Aksi takdirde, `false`.  
-  
-##  <a name="operator_add"></a>  operator +   
+```
 
- Belirtilen bağımsız değişkenlerin bileşen odaklı toplamını hesaplar.  
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+*_Dizin*<br/>
+Tanımlama grubu bağımsız boyut.
+
+*_Lhs*<br/>
+Karşılaştırılacak tanımlama gruplarından biri.
+
+*_Rhs*<br/>
+Karşılaştırılacak tanımlama gruplarından biri.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+`true` Kayıt düzenleri eşit değilse, Aksi takdirde, `false`.
+
+##  <a name="operator_add"></a>  operator +
+
+Belirtilen bağımsız değişkenlerin bileşen odaklı toplamını hesaplar.
+
+```
 template <
-    int _Rank,  
-    template <int> class _Tuple_type  
->  
+    int _Rank,
+    template <int> class _Tuple_type
+>
 class _Tuple_type> _Tuple_type<_Rank>   operator+(
-    const _Tuple_type<_Rank>& _Lhs,  
+    const _Tuple_type<_Rank>& _Lhs,
     const _Tuple_type<_Rank>& _Rhs) restrict(amp,cpu);
 
- 
 template <
-    int _Rank,  
-    template <int> class _Tuple_type  
->  
+    int _Rank,
+    template <int> class _Tuple_type
+>
 class _Tuple_type> _Tuple_type<_Rank>   operator+(
-    const _Tuple_type<_Rank>& _Lhs,  
+    const _Tuple_type<_Rank>& _Lhs,
     typename _Tuple_type<_Rank>::value_type _Rhs) restrict(amp,cpu);
 
- 
 template <
-    int _Rank,  
-    template <int> class _Tuple_type  
->  
+    int _Rank,
+    template <int> class _Tuple_type
+>
 class _Tuple_type> _Tuple_type<_Rank>   operator+(
-    typename _Tuple_type<_Rank>::value_type _Lhs,  
+    typename _Tuple_type<_Rank>::value_type _Lhs,
     const _Tuple_type<_Rank>& _Rhs) restrict(amp,cpu);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *_Dizin*<br/>
-Tanımlama grubu bağımsız boyut.  
-  
-*_Lhs*<br/>
-Toplanacak bağımsız değişkenlerden biri.  
-  
-*_Rhs*<br/>
-Toplanacak bağımsız değişkenlerden biri.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen bağımsız değişkenlerin bileşen düzeyinde toplamı.  
-  
-##  <a name="operator-"></a>  operator-   
+Tanımlama grubu bağımsız boyut.
 
- Belirtilen bağımsız değişkenlerin bileşen odaklı farkı hesaplar.  
-  
-```  
+*_Lhs*<br/>
+Toplanacak bağımsız değişkenlerden biri.
+
+*_Rhs*<br/>
+Toplanacak bağımsız değişkenlerden biri.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Belirtilen bağımsız değişkenlerin bileşen düzeyinde toplamı.
+
+##  <a name="operator-"></a>  operator-
+
+Belirtilen bağımsız değişkenlerin bileşen odaklı farkı hesaplar.
+
+```
 template <
-    int _Rank,  
-    template <int> class _Tuple_type  
->  
+    int _Rank,
+    template <int> class _Tuple_type
+>
 _Tuple_type<_Rank>   operator-(
-    const _Tuple_type<_Rank>& _Lhs,  
+    const _Tuple_type<_Rank>& _Lhs,
     const _Tuple_type<_Rank>& _Rhs) restrict(amp,cpu);
 
- 
 template <
-    int _Rank,  
-    template <int> class _Tuple_type  
->  
+    int _Rank,
+    template <int> class _Tuple_type
+>
 _Tuple_type<_Rank>   operator-(
-    const _Tuple_type<_Rank>& _Lhs,  
+    const _Tuple_type<_Rank>& _Lhs,
     typename _Tuple_type<_Rank>::value_type _Rhs) restrict(amp,cpu);
 
- 
 template <
-    int _Rank,  
-    template <int> class _Tuple_type  
->  
+    int _Rank,
+    template <int> class _Tuple_type
+>
 _Tuple_type<_Rank>   operator-(
-    typename _Tuple_type<_Rank>::value_type _Lhs,  
+    typename _Tuple_type<_Rank>::value_type _Lhs,
     const _Tuple_type<_Rank>& _Rhs) restrict(amp,cpu);
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*_Dizin*<br/>
-Tanımlama grubu bağımsız boyut.  
-  
-*_Lhs*<br/>
-Çıkarmanın yapılacağı bağımsız değişken.  
-  
-*_Rhs*<br/>
-Çıkarılacak bağımsız değişken.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen bağımsız değişkenlerin bileşen odaklı farkı.  
-  
-##  <a name="operator_star"></a>  operator *   
+```
 
- Belirtilen bağımsız değişkenlerin bileşen odaklı çarpımını hesaplar.  
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+*_Dizin*<br/>
+Tanımlama grubu bağımsız boyut.
+
+*_Lhs*<br/>
+Çıkarmanın yapılacağı bağımsız değişken.
+
+*_Rhs*<br/>
+Çıkarılacak bağımsız değişken.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Belirtilen bağımsız değişkenlerin bileşen odaklı farkı.
+
+##  <a name="operator_star"></a>  operator *
+
+Belirtilen bağımsız değişkenlerin bileşen odaklı çarpımını hesaplar.
+
+```
 template <
-    int _Rank,  
-    template <int> class _Tuple_type  
->  
+    int _Rank,
+    template <int> class _Tuple_type
+>
 _Tuple_type<_Rank>   operator*(
-    const _Tuple_type<_Rank>& _Lhs,  
+    const _Tuple_type<_Rank>& _Lhs,
     typename _Tuple_type<_Rank>::value_type _Rhs) restrict(amp,cpu);
 
- 
 template <
-    int _Rank,  
-    template <int> class _Tuple_type  
->  
+    int _Rank,
+    template <int> class _Tuple_type
+>
 _Tuple_type<_Rank>   operator*(
-    typename _Tuple_type<_Rank>::value_type _Lhs,  
+    typename _Tuple_type<_Rank>::value_type _Lhs,
     const _Tuple_type<_Rank>& _Rhs) restrict(amp, cpu);
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*_Dizin*<br/>
-Tanımlama grubu bağımsız boyut.  
-  
-*_Lhs*<br/>
-Çarpılacak dizlerden biri.  
-  
-*_Rhs*<br/>
-Çarpılacak dizlerden biri.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen bağımsız değişkenlerin bileşen odaklı çarpımı.  
-  
+```
 
-##  <a name="operator_div"></a>  operator /   
- Belirtilen bağımsız değişkenlerin bileşen odaklı bölümünü hesaplar.  
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+*_Dizin*<br/>
+Tanımlama grubu bağımsız boyut.
+
+*_Lhs*<br/>
+Çarpılacak dizlerden biri.
+
+*_Rhs*<br/>
+Çarpılacak dizlerden biri.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Belirtilen bağımsız değişkenlerin bileşen odaklı çarpımı.
+
+##  <a name="operator_div"></a>  operator /
+
+Belirtilen bağımsız değişkenlerin bileşen odaklı bölümünü hesaplar.
+
+```
 template <
-    int _Rank,  
-    template <int> class _Tuple_type  
->  
+    int _Rank,
+    template <int> class _Tuple_type
+>
 _Tuple_type<_Rank>   operator/(
-    const _Tuple_type<_Rank>& _Lhs,  
+    const _Tuple_type<_Rank>& _Lhs,
     typename _Tuple_type<_Rank>::value_type _Rhs) restrict(amp,cpu);
 
- 
 template <
-    int _Rank,  
-    template <int> class _Tuple_type  
->  
+    int _Rank,
+    template <int> class _Tuple_type
+>
 _Tuple_type<_Rank>   operator/(
-    typename _Tuple_type<_Rank>::value_type _Lhs,  
+    typename _Tuple_type<_Rank>::value_type _Lhs,
     const _Tuple_type<_Rank>& _Rhs) restrict(amp,cpu);
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*_Dizin*<br/>
-Tanımlama grubu bağımsız boyut.  
-  
-*_Lhs*<br/>
-Bölünecek kayıt düzeni.  
-  
-*_Rhs*<br/>
-Bölmede kullanılacak kayıt düzeni.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen bağımsız değişkenlerin bileşen odaklı bölümü.  
-  
-##  <a name="operator_mod"></a>  operator %   
+```
 
- İkinci belirtilen bağımsız değişken tarafından belirtilen ilk bağımsız değişken modüllerini hesaplar.  
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+*_Dizin*<br/>
+Tanımlama grubu bağımsız boyut.
+
+*_Lhs*<br/>
+Bölünecek kayıt düzeni.
+
+*_Rhs*<br/>
+Bölmede kullanılacak kayıt düzeni.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Belirtilen bağımsız değişkenlerin bileşen odaklı bölümü.
+
+##  <a name="operator_mod"></a>  operator %
+
+İkinci belirtilen bağımsız değişken tarafından belirtilen ilk bağımsız değişken modüllerini hesaplar.
+
+```
 template <
-    int _Rank,  
-    template <int> class _Tuple_type  
->  
+    int _Rank,
+    template <int> class _Tuple_type
+>
 _Tuple_type<_Rank>   operator%(
-    const _Tuple_type<_Rank>& _Lhs,  
+    const _Tuple_type<_Rank>& _Lhs,
     typename _Tuple_type<_Rank>::value_type _Rhs) restrict(amp,cpu);
 
- 
 template <
-    int _Rank,  
-    template <int> class _Tuple_type  
->  
+    int _Rank,
+    template <int> class _Tuple_type
+>
 _Tuple_type<_Rank>   operator%(
-    typename _Tuple_type<_Rank>::value_type _Lhs,  
+    typename _Tuple_type<_Rank>::value_type _Lhs,
     const _Tuple_type<_Rank>& _Rhs) restrict(amp,cpu);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *_Dizin*<br/>
-Tanımlama grubu bağımsız boyut.  
-  
+Tanımlama grubu bağımsız boyut.
+
 *_Lhs*<br/>
-Kayıt düzeni hesaplanmasında kullanılan.  
-  
+Kayıt düzeni hesaplanmasında kullanılan.
+
 *_Rhs*<br/>
-Ölçeklemede kullanılacak kayıt düzeni tarafından.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- İlk belirtilen bağımsız değişken modulus belirtilen ikinci bağımsız değişken sonucu.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace ](concurrency-namespace-cpp-amp.md)
+Ölçeklemede kullanılacak kayıt düzeni tarafından.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+İlk belirtilen bağımsız değişken modulus belirtilen ikinci bağımsız değişken sonucu.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Namespace ](concurrency-namespace-cpp-amp.md)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f4b231aa38b0146e40f779e0fa8d75c71ec5d0a6
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0a7583fe9cc73320b56ccb53903f5c2c4edcb57b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606339"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422005"
 ---
 # <a name="creatormapfactorycache-data-member"></a>CreatorMap::factoryCache Veri Üyesi
 
@@ -46,5 +46,5 @@ FactoryCache* factoryCache;
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CreatorMap Yapısı](../windows/creatormap-structure.md)  
+[CreatorMap Yapısı](../windows/creatormap-structure.md)<br/>
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0e87ea3b0e44732d4271385073c48fd92e1aa114
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 995594ee48e6ca408e88d9ab14968d88b536d309
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608933"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46403522"
 ---
 # <a name="modulegetactivationfactory-method"></a>Module::GetActivationFactory Metodu
 
@@ -40,13 +40,13 @@ WRL_NOTHROW HRESULT GetActivationFactory(
 
 ### <a name="parameters"></a>Parametreler
 
-*pActivatibleClassId*  
+*pActivatibleClassId*<br/>
 Laboratuvardaki bir çalışma zamanı sınıf.
 
-*ppIFactory*  
+*ppIFactory*<br/>
 Belirtilen çalışma zamanı sınıfının IActivationFactory.
 
-*SunucuAdı*  
+*SunucuAdı*<br/>
 Sınıf üreteçlerini geçerli modüldeki bir alt kümesi adı. Kullanılan sunucu adını belirtmek [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) makro veya belirtin **nullptr** varsayılan sunucu adı alınamıyor.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -61,5 +61,5 @@ Başarılıysa S_OK; Aksi takdirde GetActivationFactory tarafından döndürüle
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Modül Sınıfı](../windows/module-class.md)  
+[Modül Sınıfı](../windows/module-class.md)<br/>
 [ActivatableClass Makroları](../windows/activatableclass-macros.md)

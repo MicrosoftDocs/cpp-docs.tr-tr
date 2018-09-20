@@ -19,32 +19,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acee0508243f468f41c645a0cde825ca7c828657
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 24d40ea26a6ff52490b4a501a8b62c0aace660b1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931600"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407640"
 ---
 # <a name="header-control-and-list-control"></a>Üstbilgi Denetimi ve Liste Denetimi
-Çoğu durumda, katıştırılmış üstbilgi denetimi kullanacağı bir [CListCtrl](../mfc/reference/clistctrl-class.md) veya [CListView](../mfc/reference/clistview-class.md) nesnesi. Ancak, ayrı bir üstbilgi denetim nesnesi olduğu arzu sütunlara veya satırlara, düzenlenmiş veri düzenleme gibi durumlarda vardır bir [CView](../mfc/reference/cview-class.md)-türetilmiş bir nesne içermelidir. Bu durumlarda, katıştırılmış üstbilgi denetimi varsayılan davranışı ve görünümü üzerinde daha fazla denetim gerekir.  
-  
- Standart sağlamak için bir üstbilgi denetimi istediğiniz ortak durumda varsayılan davranışı, kullanmak istediğiniz [CListCtrl](../mfc/reference/clistctrl-class.md) veya [CListView](../mfc/reference/clistview-class.md) yerine. Kullanım `CListCtrl` katıştırılmış bir liste görünümü ortak denetiminde varsayılan üstbilgi denetimi işlevselliğini istediğinizde. Kullanım [CListView](../mfc/reference/clistview-class.md) bir görünüm nesnesini embedded varsayılan üstbilgi denetimi işlevselliğini istediğinizde.  
-  
+
+Çoğu durumda, katıştırılmış üstbilgi denetimi kullanacağınız bir [CListCtrl](../mfc/reference/clistctrl-class.md) veya [CListView](../mfc/reference/clistview-class.md) nesne. Ancak, ayrı üstbilgi denetim nesnesi olduğu istenen sütun veya satır içinde düzenlenmiş bir veri düzenleme gibi durumlar vardır bir [CView](../mfc/reference/cview-class.md)-türetilmiş bir nesneye. Bu durumlarda, katıştırılmış üst denetimin varsayılan davranışını ve görünümünü üzerinde daha fazla denetime ihtiyacınız var.
+
+Standart sağlamak için bir üst bilgi denetiminin istediğiniz ortak durumda da, varsayılan davranışı, kullanmak istediğiniz [CListCtrl](../mfc/reference/clistctrl-class.md) veya [CListView](../mfc/reference/clistview-class.md) yerine. Kullanım `CListCtrl` katıştırılmış bir liste görünümü ortak denetiminde varsayılan üstbilgi denetimi işlevlerini istediğinizde. Kullanım [CListView](../mfc/reference/clistview-class.md) bir görünüm nesnesini katıştırılmış bir varsayılan üstbilgi denetimi işlevlerini istediğinizde.
+
 > [!NOTE]
->  Liste Görünümü denetimi kullanarak oluşturduysanız, bu denetimlerin yalnızca yerleşik üstbilgi denetimi dahil **LVS_REPORT** stili.  
-  
- Çoğu durumda, katıştırılmış üstbilgi denetiminin görünümünü içeren liste görünümü denetimi stilleri değiştirerek değiştirilebilir. Ayrıca, üstbilgi denetimi hakkında bilgi üst liste görünümü denetimi üye işlevleri alınabilir. Ancak, tam denetim ve erişim katıştırılmış üstbilgi denetimi stillerini ve öznitelikleri için üstbilgi denetim nesnesi için bir işaretçi alınması önerilir.  
-  
- Katıştırılmış üstbilgi denetim nesnesi herhangi birinden erişilebilir `CListCtrl` veya `CListView` ilgili sınıfın çağrısıyla `GetHeaderCtrl` üye işlevi. Aşağıdaki kod bu gösterir:  
-  
- [!code-cpp[NVC_MFCControlLadenDialog#14](../mfc/codesnippet/cpp/header-control-and-list-control_1.cpp)]  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Üstbilgi denetimleriyle resim listeleri kullanma](../mfc/using-image-lists-with-header-controls.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CHeaderCtrl kullanma](../mfc/using-cheaderctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+>  Liste Görünümü denetimi kullanarak oluşturduysanız, bu denetimlerin yalnızca yerleşik üstbilgi denetimi dahil **LVS_REPORT** stili.
+
+Çoğu durumda, katıştırılmış üst bilgi denetiminin görünümünü içeren liste görünümü denetimi stillerini değiştirme tarafından değiştirilebilir. Ayrıca, üst liste görünümü denetimi üye işlevleri aracılığıyla üstbilgi denetimi ile ilgili bilgi elde edilebilir. Ancak, tam denetim ve erişim, öznitelikleri ve katıştırılmış üstbilgi denetim stilleri, üst bilgi denetimi nesneye bir işaretçi alınması önerilir.
+
+Katıştırılmış üstbilgi denetim nesnesi'nden ya da erişilebilir `CListCtrl` veya `CListView` çağrısıyla ilgili sınıfın `GetHeaderCtrl` üye işlevi. Aşağıdaki kod bunu göstermektedir:
+
+[!code-cpp[NVC_MFCControlLadenDialog#14](../mfc/codesnippet/cpp/header-control-and-list-control_1.cpp)]
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Üstbilgi denetimleriyle görüntü listeleri kullanma](../mfc/using-image-lists-with-header-controls.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CHeaderCtrl Kullanma](../mfc/using-cheaderctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

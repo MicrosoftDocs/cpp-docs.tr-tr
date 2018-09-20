@@ -14,32 +14,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c322493a0ee1aebd068ffe1fedb695445b6274aa
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 9394a3c161b82fa95de0e2ae0c590aec87493a85
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929500"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46418742"
 ---
 # <a name="providing-mouse-interaction-while-inactive"></a>Devre Dışı İken Fare Etkileşimi Sağlama
-Denetiminizi hemen etkinleştirilmemişse, kendi pencere denetim olmasına rağmen işleme WM_SETCURSOR ve WM_MOUSEMOVE iletileri isteyebilirsiniz. Bu etkinleştirerek gerçekleştirilebilir `COleControl`'s uyarlamasını `IPointerInactive` varsayılan olarak devre dışıdır arabirimi. (Bkz *ActiveX SDK* bu arabirim açıklaması.) Etkinleştirmek için tarafından döndürülen bayraklar kümesi pointerInactive bayrağı dahil [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags):  
-  
- [!code-cpp[NVC_MFC_AxOpt#5](../mfc/codesnippet/cpp/providing-mouse-interaction-while-inactive_1.cpp)]  
-[!code-cpp[NVC_MFC_AxOpt#10](../mfc/codesnippet/cpp/providing-mouse-interaction-while-inactive_2.cpp)]  
-[!code-cpp[NVC_MFC_AxOpt#7](../mfc/codesnippet/cpp/providing-mouse-interaction-while-inactive_3.cpp)]  
-  
- Seçerseniz bu bayrak eklemek için kodu otomatik olarak oluşturulan **fare işaretçisini bildirimleri, etkin olmayan** seçeneği [denetim ayarlarını](../mfc/reference/control-settings-mfc-activex-control-wizard.md) sayfasında denetiminizi ile oluştururken**MFC ActiveX Denetim Sihirbazı**.  
-  
- Zaman `IPointerInactive` arabirimi etkinleştirildiğinde, kapsayıcı WM_SETCURSOR ve WM_MOUSEMOVE iletileri ona atar. `COleControl`kişinin uyarlamasını `IPointerInactive` fare ayarlama uygun şekilde düzenler sonra denetiminizin ileti eşlemesi üzerinden ileti gönderir. İleti eşlemesi karşılık gelen girdilere ekleyerek sıradan pencere iletileri gibi iletileri işleyebilir. Bu iletiler, işleyicileri kullanmaktan kaçının *m_hWnd* üye değişkeni (veya bunu kullanan herhangi bir üye işlevini) denetlemeden ilk değeri olmayan **NULL**.  
-  
- OLE sürükle ve bırak işlemi hedefi için etkin olmayan bir denetimi de isteyebilirsiniz. Bu denetimin penceresi bir bırakma hedefi olarak kaydedilebilir böylece kullanıcı bir nesne bunun üzerine sürüklediği anda denetimi etkinleştirme gerektirir. Etkinleştirme sırasında bir Sürükle oluşmasına neden olmak için geçersiz kılma [COleControl::GetActivationPolicy](../mfc/reference/colecontrol-class.md#getactivationpolicy)ve POINTERINACTIVE_ACTIVATEONDRAG bayrağı döndürür:  
-  
- [!code-cpp[NVC_MFC_AxOpt#11](../mfc/codesnippet/cpp/providing-mouse-interaction-while-inactive_4.cpp)]  
-  
- Etkinleştirme `IPointerInactive` arabirimi genellikle anlamına gelir denetim her zaman fare iletileri işleyebilen istiyor. Desteklemeyen bir kapsayıcıda bu davranışı elde etmek üzere `IPointerInactive` arabirimi, denetiminizi görünür olduğunda, her zaman etkin olması gerekir denetimi başka bir deyişle, çeşitli bayraklarının arasında OLEMISC_ACTIVATEWHENVISIBLE bayrağı içermelidir. Ancak, bu bayrağı önlemek için etkili bir kapsayıcıda alma desteğini `IPointerInactive`, OLEMISC_IGNOREACTIVATEWHENVISIBLE bayrağını da belirtebilirsiniz:  
-  
- [!code-cpp[NVC_MFC_AxOpt#12](../mfc/codesnippet/cpp/providing-mouse-interaction-while-inactive_5.cpp)]  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)
+
+Denetiminiz hemen etkinleştirilmemesi halinde denetimi penceresi kendi sahip olsa da işlem WM_SETCURSOR ve WM_MOUSEMOVE iletileri isteyebilirsiniz. Bu etkinleştirerek gerçekleştirilebilir `COleControl`'s uygulaması `IPointerInactive` arabirimi, varsayılan olarak devre dışıdır. (Bkz *ActiveX SDK* bu arabirim açıklaması.) Bunu etkinleştirmek için bayrakları tarafından döndürülen dizi pointerInactive bayrağını ekleyin. [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags):
+
+[!code-cpp[NVC_MFC_AxOpt#5](../mfc/codesnippet/cpp/providing-mouse-interaction-while-inactive_1.cpp)]
+[!code-cpp[NVC_MFC_AxOpt#10](../mfc/codesnippet/cpp/providing-mouse-interaction-while-inactive_2.cpp)]
+[!code-cpp[NVC_MFC_AxOpt#7](../mfc/codesnippet/cpp/providing-mouse-interaction-while-inactive_3.cpp)]
+
+Seçerseniz bu bayrak eklenecek kodu otomatik olarak oluşturulan **fare işaretçisi bildirimleri, etkin olmayan** seçeneğini [denetim ayarları](../mfc/reference/control-settings-mfc-activex-control-wizard.md) sayfasında denetiminiz ileoluştururken**MFC ActiveX Denetim Sihirbazı**.
+
+Zaman `IPointerInactive` arabirimi etkin olduğunda, kapsayıcı WM_SETCURSOR ve WM_MOUSEMOVE iletileri buna atar. `COleControl`ın uygulaması `IPointerInactive` fare ayarlama uygun şekilde düzenler sonra denetiminizin ileti eşlemesi aracılığıyla iletileri gönderir. İleti eşlemesi için karşılık gelen girişler ekleyerek iletileri sıradan pencere iletileri gibi işleyebilir. Bu iletiler, işleyicilerindeki kullanmaktan kaçının *m_hWnd* üye değişkeni (veya onu kullanan herhangi bir üye işlevini) değerini değil olmadığını denetlemeden **NULL**.
+
+OLE sürükle ve bırak işleminin hedefi için etkin olmayan bir denetimi de isteyebilirsiniz. Bu, böylece bir bırakma hedefi denetim pencere kaydedilebilir kullanıcı nesnenin üzerine sürüklediğinde anda denetimi etkinleştirme gerektirir. Bir sürükleme sırasında etkinleştirme neden olmak için geçersiz kılma [COleControl::GetActivationPolicy](../mfc/reference/colecontrol-class.md#getactivationpolicy)ve POINTERINACTIVE_ACTIVATEONDRAG bayrağı döndürür:
+
+[!code-cpp[NVC_MFC_AxOpt#11](../mfc/codesnippet/cpp/providing-mouse-interaction-while-inactive_4.cpp)]
+
+Etkinleştirme `IPointerInactive` arabirimi genellikle anlamına gelir her zaman fare iletileri işleyebilme yeteneği olmasını istiyor. Desteklemeyen bir kapsayıcıda bu davranışı elde etmek üzere `IPointerInactive` arabirimi denetiminiz görünür olduğunda, her zaman etkin olması gerekir denetimi başka bir deyişle, çeşitli bayraklarının arasında OLEMISC_ACTIVATEWHENVISIBLE bayrak içermelidir. Ancak, bu bayrağı önlemek için etkili bir kapsayıcıda alma destekliyor mu `IPointerInactive`, OLEMISC_IGNOREACTIVATEWHENVISIBLE bayrağı da belirtebilirsiniz:
+
+[!code-cpp[NVC_MFC_AxOpt#12](../mfc/codesnippet/cpp/providing-mouse-interaction-while-inactive_5.cpp)]
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)
 

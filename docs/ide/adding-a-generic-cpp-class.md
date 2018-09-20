@@ -18,27 +18,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2773c38561a36ab72dfe33dccc5d98ea9d09ebce
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: c870768ff438e556f11cc0f6e101710c658010f5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33326478"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405911"
 ---
 # <a name="adding-a-generic-c-class"></a>Genel C++ Sınıfı Ekleme
-Genel C++ sınıfı kullanarak ekleyebileceğiniz **sınıf görünümü**. Genel C++ sınıfı tanımladığınız ya da tanımladığınız bir sınıftan türetilen bir sınıftır.  
-  
-### <a name="to-add-a-generic-c-class-to-a-project"></a>Genel C++ sınıfı bir projeye eklemek için  
-  
-1.  İçinde **sınıf görünümü**, yeni sınıf eklemek istediğiniz projeye sağ **Ekle**ve ardından **sınıfı**.  
-  
-2.  İçinde [sınıfı Ekle](../ide/add-class-dialog-box.md) Şablonlar bölmesinde iletişim kutusu **C++ sınıfı**. Tıklatın **Ekle** görüntülemek için [genel C++ sınıfı Sihirbazı](../ide/generic-cpp-class-wizard.md).  
-  
-3.  Sihirbazı'nda, bir sınıf adı sağlayın ve ayarlarını tanımlamak veya Varsayılanları kabul edin.  
-  
-4.  Sihirbazı kapatmak ve yeni genel C++ sınıfı projede görüntülemek için tıklatın **son**.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıf ekleme](../ide/adding-a-class-visual-cpp.md)   
- [MFC sınıfı](../mfc/reference/adding-an-mfc-class.md)   
- [ATL Basit Nesne](../atl/reference/adding-an-atl-simple-object.md)
+
+Genel C++ sınıfı kullanarak ekleyebilirsiniz **sınıf görünümü**. Genel C++ sınıfı, tanımladığınız veya tanımladığınız bir sınıftan türetilen bir sınıftır.
+
+### <a name="to-add-a-generic-c-class-to-a-project"></a>Genel C++ sınıfı bir projeye eklemek için
+
+1. İçinde **sınıf görünümü**, yeni sınıfa eklemek istediğiniz projeye sağ tıklayıp **Ekle**ve ardından **sınıfı**.
+
+1. İçinde [sınıfı Ekle](../ide/add-class-dialog-box.md) Şablonlar bölmesinde, iletişim kutusu **C++ sınıfı**. Tıklayın **Ekle** görüntülenecek [genel C++ sınıfı Sihirbazı](../ide/generic-cpp-class-wizard.md).
+
+1. Sihirbazı'nda, bir sınıf adı sağlayın ve ayarlarını tanımlayın veya Varsayılanları kabul edin.
+
+1. Sihirbazı kapatmak ve yeni genel C++ sınıfı projesinde görüntülemek için tıklayın **son**.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıf ekleme](../ide/adding-a-class-visual-cpp.md)<br>
+[MFC sınıfı](../mfc/reference/adding-an-mfc-class.md)<br>
+[ATL Basit Nesne](../atl/reference/adding-an-atl-simple-object.md)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 73047962daf32eae6c01bb0ea6f6688a83e19402
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 0539275a09a64e31a9ecad17cab899368701e353
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715539"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46412222"
 ---
 # <a name="idlmodule"></a>idl_module
 
@@ -46,31 +46,31 @@ function declaration
 
 ### <a name="parameters"></a>Parametreler
 
-*Adı*  
+*Adı*<br/>
 Kullanıcı tanımlı bir ad .idl dosyasında görünür kod bloğu için.
 
-*dll adı*  
+*dll adı*<br/>
 (İsteğe bağlı) Dışarı aktarma içeren .dll dosyası.
 
-*uuid*  
+*uuid*<br/>
 (İsteğe bağlı) Benzersiz kimliği
 
-*helpstring*  
+*helpstring*<br/>
 (İsteğe bağlı) Tür kitaplığını açıklamak için kullanılan bir karakter dizesi.
 
-*helpstringcontext*  
+*helpstringcontext*<br/>
 (İsteğe bağlı) Bir Yardım konusu .hlp veya .chm dosyasındaki kimliği.
 
-*helpcontext*  
+*helpcontext*<br/>
 (İsteğe bağlı) Bu tür kitaplığı Yardım kimliği.
 
-*hidden*  
+*hidden*<br/>
 (İsteğe bağlı) Kitaplık görüntülenmesini engeller. bir parametre. Bkz: [gizli](/windows/desktop/Midl/hidden) daha fazla bilgi için MIDL özniteliği.
 
-*restricted*  
+*restricted*<br/>
 (İsteğe bağlı) Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](/windows/desktop/Midl/restricted) daha fazla bilgi için MIDL özniteliği.
 
-*işlev bildirimi*  
+*işlev bildirimi*<br/>
 Tanımladığınız bir işlev.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -111,6 +111,6 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)<br/>
 [entry](../windows/entry.md)  

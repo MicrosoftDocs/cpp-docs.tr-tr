@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6c3cb141576598aa39c718316048900622c4df41
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: 39a7684337e7666613bcd824b29417ca5ba0b021
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691464"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46438060"
 ---
 # <a name="runtimeclassflags-structure"></a>RuntimeClassFlags Yapısı
 
@@ -41,7 +41,7 @@ struct RuntimeClassFlags;
 
 ### <a name="parameters"></a>Parametreler
 
-*bayrakları*  
+*bayrakları*<br/>
 A [RuntimeClassType numaralandırması](../windows/runtimeclasstype-enumeration.md) değeri.
 
 ## <a name="members"></a>Üyeler

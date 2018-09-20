@@ -1,5 +1,5 @@
 ---
-title: Belirli uygulama etki alanında işlevleri çağırma | Microsoft Docs
+title: Belirli bir uygulama etki alanında işlevleri çağırma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,18 +16,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: fc6765e7a96b2d2775d1dd729a43e89cec876e19
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 269225967ff63e98c1efe8a4ff38cd980d3485f7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104912"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46409772"
 ---
 # <a name="calling-functions-in-a-specific-application-domain"></a>Belirli Bir Uygulama Etki Alanında İşlevleri Çağırma
-Belirli uygulama etki alanında işlevleri çağırma destekler.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [call_in_appdomain İşlevi](../dotnet/call-in-appdomain-function.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Support Library](../dotnet/cpp-support-library.md)
+
+Belirli bir uygulama etki alanında işlevleri çağırma destekler.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[call_in_appdomain İşlevi](../dotnet/call-in-appdomain-function.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C++ Support Library](../dotnet/cpp-support-library.md)

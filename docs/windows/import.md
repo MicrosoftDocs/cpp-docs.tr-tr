@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 78bfc20bd88aa9691c80483c8c315cd5305d7b96
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a9e2ee577c3285a7e4c3db2fb19d934417bbe26d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216597"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46411566"
 ---
 # <a name="import"></a>içeri aktar
 
@@ -38,7 +38,7 @@ ms.locfileid: "43216597"
 
 ### <a name="parameters"></a>Parametreler
 
-*idl_file*  
+*idl_file*<br/>
 Geçerli proje türü kitaplığına içeri aktarılan istediğiniz bir .idl dosyasının adı.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -86,9 +86,9 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)  
-[importidl](../windows/importidl.md)  
-[importlib](../windows/importlib.md)  
-[İçerir](../windows/include-cpp.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)<br/>
+[importidl](../windows/importidl.md)<br/>
+[importlib](../windows/importlib.md)<br/>
+[İçerir](../windows/include-cpp.md)<br/>
 [includelib](../windows/includelib-cpp.md)  

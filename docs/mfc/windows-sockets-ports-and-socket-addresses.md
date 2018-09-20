@@ -20,43 +20,47 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42ea9b8a39de8d36ecb621164d98e072a4041211
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7f97bfa42e379f0806eb85e3f030465b2a181d01
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383993"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379677"
 ---
 # <a name="windows-sockets-ports-and-socket-addresses"></a>Windows Yuvaları: Bağlantı Noktaları ve Yuva Adresleri
-Bu makalede koşulları "port" ve "Windows Yuvaları ile kullanılan adresi" olarak açıklanmaktadır.  
-  
-##  <a name="_core_port"></a> Bağlantı noktası  
- Bir bağlantı noktası, bir hizmet sağlanabilir benzersiz bir işlemi tanımlar. Mevcut bağlamda Windows Sockets destekleyen bir uygulama ile ilişkili bir bağlantı noktasıdır. Böylece, aynı anda bir makine üzerinde çalışan birden fazla Windows Sockets uygulama her Windows Sockets uygulama benzersiz şekilde tanımlamak için kullanılan uygulamadır.  
-  
- Belirli bağlantı noktalarını, FTP gibi ortak Hizmetleri için ayrılmıştır. Bu tür bir hizmeti sağlayan sürece bu bağlantı noktalarını kullanarak kaçınmalısınız. Windows Yuvaları belirtimi bu ayrılmış bağlantı noktaları ayrıntılarını verir. WINSOCK dosya. H bunları listeler.  
-  
- Windows Yuvaları kullanılabilir bir bağlantı noktası seçtiğiniz DLL izin vermek için 0 bağlantı noktası değeri geçirin. MFC 1.024 ondalık büyük bir bağlantı noktası değeri seçer. MFC çağırarak seçilen bağlantı noktası değeri alabilir [CAsyncSocket::GetSockName](../mfc/reference/casyncsocket-class.md#getsockname) üye işlevi.  
-  
-##  <a name="_core_socket_address"></a> Yuva adresi  
- Her yuva nesnesi ağ üzerinde bir Internet Protokolü (IP) adresi ile ilişkilidir. Genellikle, "ftp.microsoft.com" gibi bir makine adı veya "128.56.22.8" gibi bir noktalı sayı adresidir.  
-  
- Bir yuva oluşturmak aradığınızda, genellikle kendi adresini belirtmek gerekmez.  
-  
+
+Bu makalede, koşulları "bağlantı noktası" ve "Windows Sockets ile kullanılan adresi" olarak açıklanmaktadır.
+
+##  <a name="_core_port"></a> Bağlantı noktası
+
+Bir bağlantı noktası, bir hizmet sağlanması benzersiz bir işlemi tanımlar. Mevcut bağlamda bir bağlantı noktası Windows Sockets destekleyen bir uygulama ile ilişkilidir. Her Windows Sockets uygulama çalıştıran bir makinede aynı anda birden fazla Windows Sockets uygulama denetlenebilmesi benzersiz şekilde tanımlamak için kullanılan olur.
+
+Belirli bağlantı noktalarını, FTP gibi sık kullanılan hizmetler için ayrılmıştır. Size, bu tür bir hizmet sağlanması sürece bu bağlantı noktalarını kullanarak kaçınmanız gerekir. Windows Yuvaları belirtimi bu ayrılmış bağlantı noktaları ayrıntıları. WINSOCK dosya. H bunları listeler.
+
+Windows Yuvaları kullanılabilir bir bağlantı noktası seçtiğiniz DLL izin vermek için 0 bağlantı noktası değeri geçirin. MFC 1024 ondalık büyük bir bağlantı noktası değeri seçer. MFC çağırarak seçilen bağlantı noktası değeri alabilir [CAsyncSocket::GetSockName](../mfc/reference/casyncsocket-class.md#getsockname) üye işlevi.
+
+##  <a name="_core_socket_address"></a> Yuva adresi
+
+Her yuva nesnesi, ağ üzerinde bir Internet Protokolü (IP) adresi ile ilişkilidir. Genellikle, "ftp.microsoft.com" gibi bir makine adı veya "128.56.22.8" gibi noktalı bir sayı adresidir.
+
+Yuva oluşturma arama yaparken, genellikle kendi adresinizi belirtin gerekmez.
+
 > [!NOTE]
->  Makinenizde birden çok ağ kartları (veya uygulamanızın gün böyle bir makinede çalıştırın,), mümkünse her farklı bir ağ temsil eden. Bu durumda, yuva kullanacağı hangi ağ kartı belirtmek için bir adres sağlamak gerekebilir. Gelişmiş kullanım ve olası taşınabilirlik sorunu belirli budur.  
-  
- Daha fazla bilgi için bkz.:  
-  
--   [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)  
-  
--   [Windows Yuvaları: Yuvaları Arşivlerle Kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)  
-  
--   [Windows Yuvaları: Yuvaların Arşivlerle Çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)  
-  
--   [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)  
-  
--   [Windows Yuvaları: Veri Birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)
+>  Makinenizde birden çok ağ bağdaştırıcısı olan (veya uygulamanızı gün gibi bir makinede çalıştırmak), her farklı bir ağ temsil eden. Bu durumda, hangi ağ kartı yuva kullanacağı belirtmek için bir adres sağlamak gerekebilir. Gelişmiş bir kullanım ve olası taşınabilirlik sorunu belirli budur.
+
+Daha fazla bilgi için bkz.:
+
+- [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
+
+- [Windows Yuvaları: Yuvaları Arşivlerle Kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
+
+- [Windows Yuvaları: Yuvaların Arşivlerle Çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)
+
+- [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)
+
+- [Windows Yuvaları: Veri Birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)
 

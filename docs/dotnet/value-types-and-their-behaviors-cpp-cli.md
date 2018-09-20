@@ -15,29 +15,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 9c05d6198b57eeee473ab7a5ec467083a5783a55
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4d2d980e48a6f948c35faf0c4e42969795ef8dc7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169549"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46404663"
 ---
 # <a name="value-types-and-their-behaviors-ccli"></a>Değer Türleri ve Davranışları (C++/CLI)
-Değer türleri çeşitli yollarla Yönetilen Uzantılar'dan C++ için Visual C++ için değiştirilmiştir. Bu bölümde, CLR numaralandırma türü ve değeri sınıf türü, iç ve sabitleme işaretçileri göz yanı sıra kutulama ve CLR yığınındaki Kutulu örneğine erişim göz birlikte ele. Bu alanda kapsamlı dil değişiklikleri olmuştur.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [CLR Numaralandırma Türü](../dotnet/value-types-and-their-behaviors-cpp-cli.md)  
- Bildirim ve numaralandırmaları davranışını değişiklikleri anlatır.  
-  
- [Değer Türlerini Örtük Olarak Kutulama](../dotnet/implicit-boxing-of-value-types.md)  
- Değer türleri ve davranış bilgilerde yapılan değişiklikler örtük kutulama gerekçesi açıklanmaktadır.  
-  
- [Paketlenmiş Değere İzleme İşleyicisi](../dotnet/a-tracking-handle-to-a-boxed-value.md)  
- Nasıl örtük kutulama anlatılmaktadır değerini türleri çevirir paketlenmiş değer nesnesi izleme işleyicisi için.  
-  
- [Değer Türü Anlamları](../dotnet/value-type-semantics.md)  
- Değer türü anlamları dahil devralınan sanal yöntemler, sınıf varsayılan Oluşturucular, iç işaretçiler ve işaretçileri sabitleme değişiklikler açıklanır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C + +/ CLI geçiş öncüsü](../dotnet/cpp-cli-migration-primer.md)   
- [Sınıflar ve Yapılar](../windows/classes-and-structs-cpp-component-extensions.md)
+
+Değer türleri çeşitli yollarla Yönetilen Uzantılar'dan C++ için Visual C++ için değiştirilmiştir. Bu bölümde, CLR numaralandırma türü ve değer sınıfı türü, iç ve sabitleme işaretçileri göz yanı sıra, kutulama ve CLR yığınındaki paketlenmiş örneğine erişim göz birlikte bakacağız. Bu alanda kapsamlı bir dil değişiklikler yapıldı.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[CLR Numaralandırma Türü](../dotnet/value-types-and-their-behaviors-cpp-cli.md)<br/>
+Bildirimler ve numaralandırmalar davranışını değişiklikleri anlatır.
+
+[Değer Türlerini Örtük Olarak Kutulama](../dotnet/implicit-boxing-of-value-types.md)<br/>
+Örtük kutulama hacktivism değer türleri ve davranışı değişiklikleri izleyen açıklanır.
+
+[Paketlenmiş Değere İzleme İşleyicisi](../dotnet/a-tracking-handle-to-a-boxed-value.md)<br/>
+Nasıl örtük kutulama anlatılmaktadır kutulanmış değer nesnesi izleme işleyicisi değerine çeviren türleri.
+
+[Değer Türü Anlamları](../dotnet/value-type-semantics.md)<br/>
+Değer türü anlamları dahil devralınan sanal yöntemler, sınıf varsayılan oluşturucuları, iç işaretçiler ve sabitleme işaretçileri değişiklikler açıklanır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C++/CLI Geçiş Öncüsü](../dotnet/cpp-cli-migration-primer.md)<br/>
+[Sınıflar ve Yapılar](../windows/classes-and-structs-cpp-component-extensions.md)

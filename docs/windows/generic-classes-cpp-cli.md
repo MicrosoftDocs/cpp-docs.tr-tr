@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 09390e25ffe06ce6702aef68d73c352e063a48ef
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3dbf6d861dd446745ba0cc3581c7e3e5511c01d3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716787"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46409369"
 ---
 # <a name="generic-classes-ccli"></a>Genel Sınıflar (C++/CLI)
 
@@ -47,38 +47,38 @@ class-body
 
 Yukarıdaki söz diziminde aşağıdaki terimler kullanılır:
 
-*Öznitelikleri*  
+*Öznitelikleri*<br/>
 (İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.
 
-*sınıf anahtarı*  
+*sınıf anahtarı*<br/>
 Her iki **sınıfı** veya **typename**
 
 *tür-parametresi-tanımlayıcıları*, tür parametrelerinin adlarını belirten tanımlayıcıları virgülle ayrılmış listesi.
 
-*kısıtlama yan tümceleri*  
+*kısıtlama yan tümceleri*<br/>
 (Değil virgülle ayrılmış) listesi **burada** yan tümceleri tür parametreleri için kısıtlamalar belirtme. Şu biçimi alır:
 
 > **Burada** *türü parametre tanımlayıcısı* **:** *sınırlama listesi***...** 
 
-*sınırlama listesi*  
+*sınırlama listesi*<br/>
 *sınıf veya arabirim*[`,` *...* ]
 
-*erişilebilirlik değiştiricileri*  
+*erişilebilirlik değiştiricileri*<br/>
 Genel bir sınıf için erişilebilirlik değiştiricileri. Windows çalışma zamanı için yalnızca izin verilen değiştiricidir **özel**. Ortak dil çalışma zamanı için izin verilen değiştiricilerdir **özel** ve **genel**.
 
-*tanımlayıcı*  
+*tanımlayıcı*<br/>
 Geçerli bir C++ tanımlayıcısı genel sınıfın adı.
 
-*Değiştiriciler*  
+*Değiştiriciler*<br/>
 (İsteğe bağlı) Değiştiriciler dahil izin **korumalı** ve **soyut**.
 
-*temel-liste*  
+*temel-liste*<br/>
 Virgülle ayrılmış tüm arabirimleri ve herhangi bir temel sınıf içeren bir liste uygulanır.
 
-*sınıf-gövdesi*  
+*sınıf-gövdesi*<br/>
 Alanlar, üye işlevleri, vb. içeren sınıfın gövdesi.
 
-*Bildirimciler*  
+*Bildirimciler*<br/>
 Bu türün tüm değişkenlerin bildirimleri. Örneğin: `^` *tanımlayıcı*[`,` ...]
 
 Genel sınıflar şunlar gibi bildirebilirsiniz (unutmayın anahtar sözcüğü **sınıfı** yerine kullanılabilir **typename**). Bu örnekte, `ItemType`, `KeyType` ve `ValueType` noktada belirtilen bilinmeyen türleri burada türü. `HashTable<int, int>` genel tür bir oluşturulmuş tür `HashTable<KeyType, ValueType>`. Tek bir genel türü bir dizi farklı oluşturulan türler oluşturulabilir. Oluşturulan türler genel sınıflardan oluşturulmuş gibi başka bir başvuru sınıfı türü kabul edilir.

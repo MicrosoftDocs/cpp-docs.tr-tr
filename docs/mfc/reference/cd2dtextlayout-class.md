@@ -38,241 +38,272 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: facfa4d9f98100666f267920cbd18c24ae516e72
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: a699744955088ad49c0e701166cf368695354fac
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36951617"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402206"
 ---
 # <a name="cd2dtextlayout-class"></a>CD2DTextLayout sınıfı
-IDWriteTextLayout için sarmalayıcı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CD2DTextLayout : public CD2DResource;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CD2DTextLayout::CD2DTextLayout](#cd2dtextlayout)|CD2DTextLayout nesnesi oluşturur.|  
-|[CD2DTextLayout:: ~ CD2DTextLayout](#cd2dtextlayout__~cd2dtextlayout)|Yok Edicisi. D2D metin düzeni nesnesi yok çağrılır.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CD2DTextLayout::Create](#create)|Bir CD2DTextLayout oluşturur. (Geçersiz kılmaları [CD2DResource::Create](../../mfc/reference/cd2dresource-class.md#create).)|  
-|[CD2DTextLayout::Destroy](#destroy)|CD2DTextLayout nesnesini yok eder. (Geçersiz kılmaları [CD2DResource::Destroy](../../mfc/reference/cd2dresource-class.md#destroy).)|  
-|[CD2DTextLayout::get](#get)|Döndürür IDWriteTextLayout arabirimi|  
-|[CD2DTextLayout::GetFontFamilyName](#getfontfamilyname)|Belirli bir konumda metin yazı tipi ailesinin adı kopyalar.|  
-|[CD2DTextLayout::GetLocaleName](#getlocalename)|Belirtilen konumda metin yerel ayar adını alır.|  
-|[CD2DTextLayout::IsValid](#isvalid)|Kaynak geçerlilik denetler (geçersiz kılmaları [CD2DResource::IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|  
-|[CD2DTextLayout::ReCreate](#recreate)|Bir CD2DTextLayout yeniden oluşturur. (Geçersiz kılmaları [CD2DResource::ReCreate](../../mfc/reference/cd2dresource-class.md#recreate).)|  
-|[CD2DTextLayout::SetFontFamilyName](#setfontfamilyname)|Kümeleri null ile sonlandırılmış yazı tipi ailesinin adı belirtilen metin aralığı içinde metin|  
-|[CD2DTextLayout::SetLocaleName](#setlocalename)|Belirtilen metin aralığı içinde metni için yerel ad ayarlar|  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CD2DTextLayout::operator IDWriteTextLayout *](#operator_idwritetextlayout_star)|Döndürür IDWriteTextLayout arabirimi|  
-  
-### <a name="protected-data-members"></a>Korumalı veri üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CD2DTextLayout::m_pTextLayout](#m_ptextlayout)|Bir IDWriteTextLayout gösteren bir işaretçi.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- [CD2DResource](../../mfc/reference/cd2dresource-class.md)  
-  
- [CD2DTextLayout](../../mfc/reference/cd2dtextlayout-class.md)  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxrendertarget.h  
-  
-##  <a name="_dtorcd2dtextlayout"></a>  CD2DTextLayout:: ~ CD2DTextLayout  
- Yok Edicisi. D2D metin düzeni nesnesi yok çağrılır.  
-  
-```  
+
+IDWriteTextLayout için sarmalayıcı.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CD2DTextLayout : public CD2DResource;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CD2DTextLayout::CD2DTextLayout](#cd2dtextlayout)|CD2DTextLayout bir nesne oluşturur.|
+|[CD2DTextLayout:: ~ CD2DTextLayout](#cd2dtextlayout__~cd2dtextlayout)|Yıkıcı. D2D metin düzeni nesnesi yok ediliyorken çağırılır.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CD2DTextLayout::Create](#create)|Bir CD2DTextLayout oluşturur. (Geçersiz kılmaları [CD2DResource::Create](../../mfc/reference/cd2dresource-class.md#create).)|
+|[CD2DTextLayout::Destroy](#destroy)|CD2DTextLayout nesnesini yok eder. (Geçersiz kılmaları [CD2DResource::Destroy](../../mfc/reference/cd2dresource-class.md#destroy).)|
+|[CD2DTextLayout::get](#get)|Döndürür IDWriteTextLayout arabirimi|
+|[CD2DTextLayout::GetFontFamilyName](#getfontfamilyname)|Belirtilen konumda metin yazı tipi ailesinin adı kopyalar.|
+|[CD2DTextLayout::GetLocaleName](#getlocalename)|Belirtilen konumda metin yerel ayar adını alır.|
+|[CD2DTextLayout::IsValid](#isvalid)|Kaynak geçerlilik denetler (geçersiz kılmaları [CD2DResource::IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|
+|[CD2DTextLayout::ReCreate](#recreate)|Bir CD2DTextLayout yeniden oluşturur. (Geçersiz kılmaları [CD2DResource::ReCreate](../../mfc/reference/cd2dresource-class.md#recreate).)|
+|[CD2DTextLayout::SetFontFamilyName](#setfontfamilyname)|Belirtilen metin aralığı içinde metin ayarlar null ile sonlandırılmış yazı tipi ailesi adı|
+|[CD2DTextLayout::SetLocaleName](#setlocalename)|Belirtilen metin aralığı içinde metin için yerel ayar adına ayarlar|
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CD2DTextLayout::operator IDWriteTextLayout *](#operator_idwritetextlayout_star)|Döndürür IDWriteTextLayout arabirimi|
+
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CD2DTextLayout::m_pTextLayout](#m_ptextlayout)|Bir IDWriteTextLayout işaretçisi.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+[CD2DResource](../../mfc/reference/cd2dresource-class.md)
+
+[CD2DTextLayout](../../mfc/reference/cd2dtextlayout-class.md)
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxrendertarget.h
+
+##  <a name="_dtorcd2dtextlayout"></a>  CD2DTextLayout:: ~ CD2DTextLayout
+
+Yıkıcı. D2D metin düzeni nesnesi yok ediliyorken çağırılır.
+
+```
 virtual ~CD2DTextLayout();
-```  
-  
-##  <a name="cd2dtextlayout"></a>  CD2DTextLayout::CD2DTextLayout  
- CD2DTextLayout nesnesi oluşturur.  
-  
-```  
+```
+
+##  <a name="cd2dtextlayout"></a>  CD2DTextLayout::CD2DTextLayout
+
+CD2DTextLayout bir nesne oluşturur.
+
+```
 CD2DTextLayout(
-    CRenderTarget* pParentTarget,  
-    const CString& strText,  
-    CD2DTextFormat& textFormat,  
-    const CD2DSizeF& sizeMax,  
+    CRenderTarget* pParentTarget,
+    const CString& strText,
+    CD2DTextFormat& textFormat,
+    const CD2DSizeF& sizeMax,
     BOOL bAutoDestroy = TRUE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pParentTarget*  
- İşleme hedefi için bir işaretçi.  
-  
- *strText*  
- Yeni bir CD2DTextLayout nesne oluşturmak için dizesi içeren bir CString nesnesi.  
-  
- *textFormat*  
- Dizeye uygulanacak biçimini içeren bir CString nesnesi.  
-  
- *sizeMax*  
- Düzen kutusunun boyutu.  
-  
- *bAutoDestroy*  
- Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
-  
-##  <a name="create"></a>  CD2DTextLayout::Create  
- Bir CD2DTextLayout oluşturur.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pParentTarget*<br/>
+İşleme hedefi için bir işaretçi.
+
+*strText*<br/>
+Yeni bir CD2DTextLayout nesne oluşturmak için dizeyi içeren bir CString nesne.
+
+*textFormat*<br/>
+Dize geçerli biçimde içeren bir CString nesne.
+
+*sizeMax*<br/>
+Düzen kutusunun boyutu.
+
+*bAutoDestroy*<br/>
+Nesne sahibi tarafından (pParentTarget) edileceği gösterir.
+
+##  <a name="create"></a>  CD2DTextLayout::Create
+
+Bir CD2DTextLayout oluşturur.
+
+```
 virtual HRESULT Create(CRenderTarget* */);
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
-  
-##  <a name="destroy"></a>  CD2DTextLayout::Destroy  
- CD2DTextLayout nesnesini yok eder.  
-  
-```  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+
+##  <a name="destroy"></a>  CD2DTextLayout::Destroy
+
+CD2DTextLayout nesnesini yok eder.
+
+```
 virtual void Destroy();
-```  
-  
-##  <a name="get"></a>  CD2DTextLayout::get  
- Döndürür IDWriteTextLayout arabirimi  
-  
-```  
+```
+
+##  <a name="get"></a>  CD2DTextLayout::get
+
+Döndürür IDWriteTextLayout arabirimi
+
+```
 IDWriteTextLayout* Get();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- İşaretçi bir IDWriteTextLayout arabirimi veya nesnesi henüz başlatılmadı yoksa NULL.  
-  
-##  <a name="getfontfamilyname"></a>  CD2DTextLayout::GetFontFamilyName  
- Belirli bir konumda metin yazı tipi ailesinin adı kopyalar.  
-  
-```  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Bir IDWriteTextLayout arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+
+##  <a name="getfontfamilyname"></a>  CD2DTextLayout::GetFontFamilyName
+
+Belirtilen konumda metin yazı tipi ailesinin adı kopyalar.
+
+```
 CString GetFontFamilyName(
-    UINT32 currentPosition,  
-    DWRITE_TEXT_RANGE* textRange = NULL) const;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *currentPosition*  
- İncelemek için metin konumu.  
-  
- *textRange*  
- CurrentPosition tarafından belirtilen konumdaki metin olarak aynı olan metin aralığını biçimlendirme. Bu konumu belirtildi, ancak bunlarla sınırlı olmamak yazı tipi ailesinin adı dahil olmak üzere tam biçimlendirmeleri Çalıştır olduğu anlamına gelir.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Geçerli yazı tipi ailesinin adı içeren CString nesne.  
-  
-##  <a name="getlocalename"></a>  CD2DTextLayout::GetLocaleName  
- Belirtilen konumda metin yerel ayar adını alır.  
-  
-```  
+    UINT32 currentPosition,
+    DWRITE_TEXT_RANGE* textRange = NULL) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*currentPosition*<br/>
+İncelemek için metin konumu.
+
+*TextRange*<br/>
+CurrentPosition tarafından belirtilen konumdaki metni olarak aynı metin aralığını biçimlendirme. Bu, çalışma konumu belirtildi, ancak bunlarla sınırlı olmamak yazı tipi ailesinin adı dahil olmak üzere tam biçimlendirme olduğu anlamına gelir.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Geçerli yazı tipi ailesinin adı içeren CString nesne.
+
+##  <a name="getlocalename"></a>  CD2DTextLayout::GetLocaleName
+
+Belirtilen konumda metin yerel ayar adını alır.
+
+```
 CString GetLocaleName(
-    UINT32 currentPosition,  
-    DWRITE_TEXT_RANGE* textRange = NULL) const;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *currentPosition*  
- İncelenecek metin konumu.  
-  
- *textRange*  
- CurrentPosition tarafından belirtilen konumdaki metin olarak aynı olan metin aralığını biçimlendirme. Bu konumu belirtildi, ancak bunlarla sınırlı olmamak yerel ayar adı dahil olmak üzere tam biçimlendirmeleri Çalıştır olduğu anlamına gelir.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Geçerli yerel ayar adını içeren CString nesne.  
-  
-##  <a name="isvalid"></a>  CD2DTextLayout::IsValid  
- Denetimleri kaynak geçerlilik  
-  
-```  
-virtual BOOL IsValid() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Kaynağın geçerli ise TRUE; Aksi takdirde FALSE.  
-  
-##  <a name="m_ptextlayout"></a>  CD2DTextLayout::m_pTextLayout  
- Bir IDWriteTextLayout gösteren bir işaretçi.  
-  
-```  
-IDWriteTextLayout* m_pTextLayout;  
-```  
-  
-##  <a name="operator_idwritetextlayout_star"></a>  CD2DTextLayout::operator IDWriteTextLayout *  
- Döndürür IDWriteTextLayout arabirimi  
-  
-```  
+    UINT32 currentPosition,
+    DWRITE_TEXT_RANGE* textRange = NULL) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*currentPosition*<br/>
+İncelemek için metin konumu.
+
+*TextRange*<br/>
+CurrentPosition tarafından belirtilen konumdaki metni olarak aynı metin aralığını biçimlendirme. Bu, çalışma konumu belirtildi, ancak bunlarla sınırlı olmamak yerel ayar adı dahil olmak üzere tam biçimlendirme olduğu anlamına gelir.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Geçerli yerel ayar adını içeren CString nesne.
+
+##  <a name="isvalid"></a>  CD2DTextLayout::IsValid
+
+Kaynak geçerlilik denetimleri
+
+```
+virtual BOOL IsValid() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Kaynak geçerli ise TRUE; Aksi durumda FALSE.
+
+##  <a name="m_ptextlayout"></a>  CD2DTextLayout::m_pTextLayout
+
+Bir IDWriteTextLayout işaretçisi.
+
+```
+IDWriteTextLayout* m_pTextLayout;
+```
+
+##  <a name="operator_idwritetextlayout_star"></a>  CD2DTextLayout::operator IDWriteTextLayout *
+
+Döndürür IDWriteTextLayout arabirimi
+
+```
 operator IDWriteTextLayout*();
-```   
-  
-### <a name="return-value"></a>Dönüş Değeri  
- İşaretçi bir IDWriteTextLayout arabirimi veya nesnesi henüz başlatılmadı yoksa NULL.  
-  
-##  <a name="recreate"></a>  CD2DTextLayout::ReCreate  
- Bir CD2DTextLayout yeniden oluşturur.  
-  
-```  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Bir IDWriteTextLayout arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+
+##  <a name="recreate"></a>  CD2DTextLayout::ReCreate
+
+Bir CD2DTextLayout yeniden oluşturur.
+
+```
 virtual HRESULT ReCreate(CRenderTarget* */);
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
-  
-##  <a name="setfontfamilyname"></a>  CD2DTextLayout::SetFontFamilyName  
- Kümeleri null ile sonlandırılmış yazı tipi ailesinin adı belirtilen metin aralığı içinde metin  
-  
-```  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+
+##  <a name="setfontfamilyname"></a>  CD2DTextLayout::SetFontFamilyName
+
+Belirtilen metin aralığı içinde metin ayarlar null ile sonlandırılmış yazı tipi ailesi adı
+
+```
 BOOL SetFontFamilyName(
-    LPCWSTR pwzFontFamilyName,  
+    LPCWSTR pwzFontFamilyName,
     DWRITE_TEXT_RANGE textRange);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pwzFontFamilyName*  
- Tüm metin dizesini textRange tarafından belirtilen aralıkta uygulandığı yazı tipi ailesinin adı  
-  
- *textRange*  
- Bu değişiklik uygulandığı metin aralığı  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa TRUE değerini döndürür. Aksi takdirde FALSE değerini döndürür  
-  
-##  <a name="setlocalename"></a>  CD2DTextLayout::SetLocaleName  
- Belirtilen metin aralığı içinde metni için yerel ad ayarlar  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pwzFontFamilyName*<br/>
+Metin dizesinin tamamı textRange tarafından belirtilen aralık içinde uygulandığı yazı tipi ailesi adı
+
+*TextRange*<br/>
+Bu değişiklik geçerli olduğu metin aralığı
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür
+
+##  <a name="setlocalename"></a>  CD2DTextLayout::SetLocaleName
+
+Belirtilen metin aralığı içinde metin için yerel ayar adına ayarlar
+
+```
 BOOL SetLocaleName(
-    LPCWSTR pwzLocaleName,  
+    LPCWSTR pwzLocaleName,
     DWRITE_TEXT_RANGE textRange);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pwzLocaleName*  
- Sonlandırılmış yerel ad dizesi  
-  
- *textRange*  
- Bu değişiklik uygulandığı metin aralığı  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa TRUE değerini döndürür. Aksi takdirde FALSE değerini döndürür  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıflar](../../mfc/reference/mfc-classes.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pwzLocaleName*<br/>
+Bir yerel ayar null ile sonlandırılmış dize
+
+*TextRange*<br/>
+Bu değişiklik geçerli olduğu metin aralığı
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Yöntem başarılı olursa TRUE döndürür. Aksi takdirde FALSE döndürür
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıflar](../../mfc/reference/mfc-classes.md)

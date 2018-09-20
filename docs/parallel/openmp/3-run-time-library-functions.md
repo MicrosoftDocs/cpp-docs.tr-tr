@@ -1,5 +1,5 @@
 ---
-title: 3. Çalışma Zamanı Kitaplığı işlevleri | Microsoft Docs
+title: 3. Çalışma zamanı kitaplık işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,24 +12,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d747f775509c6b3b2b95be51d95ea937816d3cd1
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 5c1a05df3b47c2bbf345bc0101f30ffb83b84967
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688121"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46401855"
 ---
-# <a name="3-run-time-library-functions"></a>3. Çalışma Zamanı Kitaplığı işlevleri
-Bu bölümde OpenMP C ve C++ çalışma zamanı kitaplığı işlevleri açıklanmaktadır. Üstbilgi  **\<omp.h >** iki tür, veri erişimi eşitlemek için kullanılan işlevler kilitleyin denetlemek ve Paralel yürütme ortamı sorgulamak için kullanılan bazı işlevler bildirir.  
-  
- Türü **omp_lock_t** bir nesne türü bir kilit kullanılabilir olduğunu temsil etme özelliğine sahiptir veya bir iş parçacığı bir kilit sahibi. Bu kilit denir *basit kilitleri*.  
-  
- Türü **omp_nest_lock_t** ya da bu temsil etme özelliğine sahip bir nesne türü bir kilit kullanılabilir veya kimliğe iş parçacığının, sahibi kilit ve *sayısı iç içe geçme* (aşağıda açıklanmıştır). Bu kilit denir *nestable kilitleri*.  
-  
- Kitaplık işlevleri "C" bağlantı ile dış işlevlerdir.  
-  
- Bu bölümde açıklamaları aşağıdaki konulara ayrılır:  
-  
--   Yürütme Ortamı işlevleri (bkz [bölüm 3.1](../../parallel/openmp/3-1-execution-environment-functions.md) sayfasında 35).  
-  
--   İşlevler kilitleyin (bkz [bölüm 3.2](../../parallel/openmp/3-2-lock-functions.md) sayfasında 41).
+# <a name="3-run-time-library-functions"></a>3. Çalışma zamanı kitaplık işlevleri
+
+Bu bölümde OpenMP C ve C++ çalışma zamanı kitaplık işlevleri açıklanmaktadır. Üst bilgi  **\<omp.h >** iki tür, denetlemek ve Paralel yürütme ortamı sorgu ve veri erişimi eşitlemek için kullanılan işlevleri kilitlemek için kullanılan çeşitli işlevleri bildirir.
+
+Türü **omp_lock_t** bir nesne türü bir kilit kullanılabilir gösterebilen ya da bir iş parçacığı bir kilit sahibi. Bu kilitleri olarak ifade edilir *basit kilit*.
+
+Türü **omp_nest_lock_t** ya da, gösterebilen bir nesne türü bir kilit kullanılabilir veya her iki iş parçacığı kimliğine sahip olan kilidi ve *sayısı iç içe* (aşağıda açıklanmıştır). Bu kilitleri olarak ifade edilir *nestable kilit*.
+
+Kitaplık işlevleri, "C" bağlaması olan dış işlevlerdir.
+
+Açıklamalar bu bölümdeki aşağıdaki konularla ayrılır:
+
+- Yürütme Ortamı işlevleri (bkz [bölümü 3.1](../../parallel/openmp/3-1-execution-environment-functions.md) sayfasında 35).
+
+- Kilit işlevleri (bkz [bölümü 3.2](../../parallel/openmp/3-2-lock-functions.md) sayfasında 41).

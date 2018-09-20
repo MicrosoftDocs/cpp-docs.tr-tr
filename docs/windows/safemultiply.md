@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 003f2c9241a4ba81e370204ce2102b60e420df04
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: c0eb1b8b37737d1c0c36af28da9b0c656e26de7d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700550"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396758"
 ---
 # <a name="safemultiply"></a>SafeMultiply
 
@@ -71,7 +71,7 @@ Bu yöntem, parçasıdır [SafeInt Kitaplığı](../windows/safeint-library.md) 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[SafeInt İşlevleri](../windows/safeint-functions.md)  
-[SafeInt Kitaplığı](../windows/safeint-library.md)  
-[SafeInt Sınıfı](../windows/safeint-class.md)  
+[SafeInt İşlevleri](../windows/safeint-functions.md)<br/>
+[SafeInt Kitaplığı](../windows/safeint-library.md)<br/>
+[SafeInt Sınıfı](../windows/safeint-class.md)<br/>
 [SafeDivide](../windows/safedivide.md)

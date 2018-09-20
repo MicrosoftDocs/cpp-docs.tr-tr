@@ -16,257 +16,261 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 12cead3a142c69da56390ca6f5bf32cecc3b0075
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f3e8ec6407e12d0c26331d45dc1659277feed016
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33112021"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444586"
 ---
 # <a name="declaration-of-a-clr-reference-class-object"></a>CLR Başvuru Sınıf Nesnesi Bildirimi
-Bildirme ve başvuru sınıfı türünde bir nesne örneği sözdizimi için Visual C++ C++ için Yönetilen Uzantılar'dan değiştirdi.  
-  
- Yönetilen Uzantılar'da, isteğe bağlı bir kullanımı ile ISO-C++ işaretçi sözdizimini kullanarak bir başvuru sınıf türü nesnesi bildirilmiş `__gc` yıldız solundaki anahtar sözcüğü (`*`). Örneğin, sınıf türü nesnesi bildirimi Yönetilen Uzantılar sözdizimi altında çeşitli başvuru şunlardır:  
-  
-```  
-public __gc class Form1 : public System::Windows::Forms::Form {  
-private:  
-   System::ComponentModel::Container __gc *components;  
-   Button __gc *button1;  
-   DataGrid __gc *myDataGrid;     
-   DataSet __gc *myDataSet;  
-  
-   void PrintValues( Array* myArr ) {  
-      System::Collections::IEnumerator* myEnumerator =   
-         myArr->GetEnumerator();  
-  
-      Array *localArray;  
-      myArr->Copy(myArr, localArray, myArr->Length);  
-   }  
-};  
-```  
-  
- Yeni sözdizimi altında bir başvuru sınıf türü nesnesi yeni bildirim belirteci kullanarak bildirme (`^`) resmi olarak adlandırılan bir *izleme işleyicisi* ve daha az resmi olarak bir *hat*. (İzleme gelen bir başvuru türü CLR yığınında bulunduğu ve bu nedenle konumları yığın sıkıştırma atık toplama sırasında saydam taşıyabilirsiniz anlamına gelir. İzleme işleyicisi saydam çalışma zamanı sırasında güncelleştirilir. İki benzer kavram olan *izleme başvurusu* (`%`) ve *iç işaretçi* (`interior_ptr<>`), ele [değer türü anlamları](../dotnet/value-type-semantics.md).  
-  
- ISO-C++ işaretçi sözdizimi tekrar Tanımlayıcı Sözdizimi taşımak için en önemli nedenlerinden aşağıdaki gibidir:  
-  
--   İşaretçi sözdizimi kullanımı için başvuru nesnesi doğrudan uygulanacak aşırı yüklenmiş işleçler izin vermez. Bunun yerine, bir iç adını kullanarak işleci çağırmak vardı `rV1->op_Addition(rV2)` daha sezgisel yerine `rV1+rV2`.  
-  
--   Toplanan yığında atık depolanan nesneler için izin verilmiyor atama ve işaretçi aritmetiği, gibi işaretçi işlemlerinin sayısı. Daha iyi izleme işleyicisi kavramı CLR başvuru türü yapısını yakalar.  
-  
- `__gc` İzleme işleyicisi değiştiricisi gereksizdir ve desteklenmiyor. Nesnesinin kullanımını değiştirilmez; hala işaretçi üye seçimi işlecinden üyeleri erişir (`->`). Örneğin, yeni sözdizimine çevrilmiş önceki Yönetilen Uzantılar kod örneği şöyledir:  
-  
-```  
-public ref class Form1: public System::Windows::Forms::Form {  
-private:  
-   System::ComponentModel::Container^ components;  
-   Button^ button1;  
-   DataGrid^ myDataGrid;  
-   DataSet^ myDataSet;  
-  
-   void PrintValues( Array^ myArr ) {  
-      System::Collections::IEnumerator^ myEnumerator =  
-         myArr->GetEnumerator();  
-  
-      Array ^localArray;  
-      myArr->Copy(myArr, localArray, myArr->Length);   }  
-};  
-```  
-  
-## <a name="dynamic-allocation-of-an-object-on-the-clr-heap"></a>CLR yığınındaki nesnenin dinamik ayırma  
- Yönetilen Uzantılar, iki varlığını `new` ifadeleri yerel ve yönetilen yığın arasında ayırma için büyük ölçüde saydam. Neredeyse tüm örneklerde derleyici bağlamı yerel veya yönetilen yığınından bellek ayıramadı belirlemek için kullanabilirsiniz. Örneğin,  
-  
-```  
-Button *button1 = new Button; // OK: managed heap  
-int *pi1 = new int;           // OK: native heap  
-Int32 *pi2 = new Int32;       // OK: managed heap  
-```  
-  
- Bağlamsal yığın ayırma istemediğinizde derleyicisi ile ya da yönlendirebilir `__gc` veya `__nogc` anahtar sözcüğü. Yeni sözdiziminde, iki yeni ifadeler ayrı yapısını sunumuyla açık hale `gcnew` anahtar sözcüğü. Örneğin, önceki üç bildirim yeni sözdiziminde aşağıdaki gibi görünür:  
-  
-```  
-Button^ button1 = gcnew Button;        // OK: managed heap  
-int * pi1 = new int;                   // OK: native heap  
-Int32^ pi2 = gcnew Int32; // OK: managed heap  
-```  
-  
- Yönetilen Uzantılar başlatılması işte `Form1` üyeleri olarak bildirilen önceki bölümde:  
-  
-```  
-void InitializeComponent() {  
-   components = new System::ComponentModel::Container();  
-   button1 = new System::Windows::Forms::Button();  
-   myDataGrid = new DataGrid();  
-  
-   button1->Click +=   
-      new System::EventHandler(this, &Form1::button1_Click);  
-}  
-```  
-  
- Burada, yeni sözdizimine yeniden aynı başlatma verilmiştir. Hedefi olduğunda hat başvuru türünün gerekli olmadığını unutmayın bir `gcnew` ifade.  
-  
-```  
-void InitializeComponent() {  
-   components = gcnew System::ComponentModel::Container;  
-   button1 = gcnew System::Windows::Forms::Button;  
-   myDataGrid = gcnew DataGrid;  
-  
-   button1->Click +=   
-      gcnew System::EventHandler( this, &Form1::button1_Click );  
-}  
-```  
-  
-## <a name="a-tracking-reference-to-no-object"></a>Bir izleme başvuru nesnesi yok  
- Yeni sözdiziminde `0` artık boş bir adresi temsil eder, ancak bir tamsayı olarak aynı kabul `1`, `10`, veya `100`. Yeni özel bir belirteç izleme başvurusu null değerini temsil eder. Örneğin, Yönetilen Uzantılar'nesnesi yok gibi adresi için bir başvuru türü şu başlatın:  
-  
-```  
-// OK: we set obj to refer to no object  
-Object * obj = 0;  
-  
-// Error: no implicit boxing  
-Object * obj2 = 1;  
-```  
-  
- Yeni sözdiziminde herhangi bir değer atanması veya başlatma türü için bir `Object` bu değer türü örtük olarak kutulama neden olur. Yeni sözdiziminde, her ikisi de `obj` ve `obj2` ele sırasıyla 0 ve 1 değerlerini tutan Kutulu Int32 nesnesine başlatılır. Örneğin:  
-  
-```  
-// causes the implicit boxing of both 0 and 1  
-Object ^ obj = 0;  
-Object ^ obj2 = 1;  
-```  
-  
- Bu nedenle, açık başlatma, atama ve izleme işleyicisi null karşılaştırma gerçekleştirmek için yeni bir anahtar sözcük kullanın `nullptr`.  Özgün örnek doğru sürümünü şu şekilde görünür:  
-  
-```  
-// OK: we set obj to refer to no object  
-Object ^ obj = nullptr;  
-  
-// OK: we initialize obj2 to a Int32^  
-Object ^ obj2 = 1;  
-```  
-  
- Bu biraz var olan kod yeni sözdizimine taşıma karmaşık hale getirir. Örneğin, aşağıdaki değer sınıf bildirimini göz önünde bulundurun:  
-  
-```  
-__value struct Holder {  
-   Holder( Continuation* c, Sexpr* v ) {  
-      cont = c;  
-      value = v;  
-      args = 0;  
-      env = 0;  
-   }  
-  
-private:  
-   Continuation* cont;  
-   Sexpr * value;  
-   Environment* env;  
-   Sexpr * args __gc [];  
-};  
-```  
-  
- Burada, her ikisi de `args` ve `env` CLR başvuru türüdür. Bu iki üyenin başlatma `0` oluşturucuda yeni sözdizimine geçişte değişmeden kalamaz. Bunun yerine, bunlar için değiştirilmelidir `nullptr`:  
-  
-```  
-value struct Holder {  
-   Holder( Continuation^ c, Sexpr^ v )  
-   {  
-      cont = c;  
-      value = v;  
-      args = nullptr;  
-      env = nullptr;  
-   }  
-  
-private:  
-   Continuation^ cont;  
-   Sexpr^ value;  
-   Environment^ env;  
-   array<Sexpr^>^ args;  
-};  
-```  
-  
- Benzer şekilde, test için karşılaştırma bu üyeler karşı `0` üyelerine Karşılaştırılacak değiştirilmelidir `nullptr`. Yönetilen Uzantılar sözdizimi şöyledir:  
-  
-```  
-Sexpr * Loop (Sexpr* input) {  
-   value = 0;  
-   Holder holder = Interpret(this, input, env);  
-  
-   while (holder.cont != 0) {  
-      if (holder.env != 0) {  
-         holder=Interpret(holder.cont,holder.value,holder.env);  
-      }  
-      else if (holder.args != 0) {  
-         holder =   
-         holder.value->closure()->  
-         apply(holder.cont,holder.args);  
-      }  
-   }  
-  
-   return value;  
-}  
-```  
-  
- Her değiştirerek düzeltme, işte `0` örneği bir `nullptr`. Dahil olmak üzere tüm oluşumlarını kullanımı değilse çoğunu otomatikleştirerek bu dönüşümünde çeviri aracı yardımcı `NULL` makrosu.  
-  
-```  
-Sexpr ^ Loop (Sexpr^ input) {  
-   value = nullptr;  
-   Holder holder = Interpret(this, input, env);  
-  
-   while ( holder.cont != nullptr ) {  
-      if ( holder.env != nullptr ) {  
-         holder=Interpret(holder.cont,holder.value,holder.env);  
-      }  
-      else if (holder.args != nullptr ) {  
-         holder =   
-         holder.value->closure()->  
-         apply(holder.cont,holder.args);  
-      }  
-   }  
-  
-   return value;  
-}  
-```  
-  
- `nullptr` Herhangi bir işaretçiye veya izleme tanıtıcı dönüştürülür ancak bir tam sayı türüne yükseltilmez. Örneğin, kümesinde aşağıdaki başlatmaları, `nullptr` sadece ilk iki için bir başlangıç değeri geçerli değil.  
-  
-```  
-// OK: we set obj and pstr to refer to no object  
-Object^ obj = nullptr;  
-char*   pstr = nullptr; // 0 would also work here  
-  
-// Error: no conversion of nullptr to 0  
-int ival = nullptr;  
-```  
-  
- Benzer şekilde, aşırı yüklenmiş bir dizi yöntem aşağıdaki gibi verilir:  
-  
-```  
-void f( Object^ ); // (1)  
-void f( char* );   // (2)  
-void f( int );     // (3)  
-```  
-  
- İle bir çağrı `nullptr` aşağıdaki gibi değişmez değer  
-  
-```  
-// Error: ambiguous: matches (1) and (2)  
-f(  nullptr );  
-```  
-  
- belirsiz olduğundan `nullptr` izleme işleyicisi ve bir işaretçi eşleşen ve tür diğer verilen tercih yoktur. (Bu durum belirsizliği ortadan kaldırmak için bir açık atama gerektirir.)  
-  
- İle bir çağrı `0` tam olarak eşleşir (3):  
-  
-```  
-// OK: matches (3)  
-f( 0 );  
-```  
-  
- çünkü `0` integer türündedir. Olan `f(int)` yok, çağrı belirsizliğe eşleşir `f(char*)` standart dönüştürme aracılığıyla. Eşleştirme kuralları standart dönüştürme üzerine tam bir eşleşme öncelik verin. Tam bir eşleşme olmaması durumunda, standart dönüştürme bir değer türü üzerinden bir örtük kutulama öncelik verilir. Belirsizlik olmaz olmasının olmasıdır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönetilen türler (C + +/ CL)](../dotnet/managed-types-cpp-cl.md)   
- [Sınıflar ve yapılar](../windows/classes-and-structs-cpp-component-extensions.md)   
- [Nesne işleci (^) işleme](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)   
- [nullptr](../windows/nullptr-cpp-component-extensions.md)
+
+Bildirme ve başvuru sınıfı türü bir nesne oluşturmak için sözdizimi, C++ için Visual C++ için Yönetilen Uzantılar'dan değişti.
+
+Yönetilen Uzantılar'başvuru sınıfı türü nesnesi ile isteğe bağlı bir kullanımı ISO-C++ işaretçisi sözdizimi kullanılarak bildirilen `__gc` sol tarafındaki yıldız anahtar sözcüğü (`*`). Örneğin, sınıf türü nesne bildirimleri altında yönetilen uzantıları söz dizimi başvurusu çeşitli şunlardır:
+
+```
+public __gc class Form1 : public System::Windows::Forms::Form {
+private:
+   System::ComponentModel::Container __gc *components;
+   Button __gc *button1;
+   DataGrid __gc *myDataGrid;
+   DataSet __gc *myDataSet;
+
+   void PrintValues( Array* myArr ) {
+      System::Collections::IEnumerator* myEnumerator =
+         myArr->GetEnumerator();
+
+      Array *localArray;
+      myArr->Copy(myArr, localArray, myArr->Length);
+   }
+};
+```
+
+Yeni sözdiziminde, bir başvuru sınıfı türü yeni bir bildirim temelli belirteç kullanarak nesne bildirme (`^`) resmi olarak adlandırılan bir *izleme işleyicisi* ve daha basit olarak bir *hat*. (İzleme sıfat bir başvuru türü CLR yığında yer alan ve bu nedenle konumları yığın sıkıştırma atık toplama sırasında saydam bir şekilde taşıyabilirsiniz anlamına gelir. İzleme işleyicisi, çalışma zamanı sırasında saydam bir şekilde güncelleştirilir. İki benzer kavramlardır *yönelik izleme başvurusuna* (`%`) ve *işaretçiye* (`interior_ptr<>`), ele [değer türü anlamları](../dotnet/value-type-semantics.md).
+
+Bildirim temelli söz dizimi ISO-C++ işaretçi sözdizimi tekrar taşımak için en önemli nedenlerinden aşağıdaki gibidir:
+
+- Başvuru nesnesine doğrudan uygulanması için aşırı yüklenmiş işleçler işaretçi sözdizimi kullanılmasına izin vermez. Bunun yerine, kendi iç adı gibi kullanarak işlecini çağırmak bir sahip `rV1->op_Addition(rV2)` daha sezgisel yerine `rV1+rV2`.
+
+- Toplanan yığında atık depolanan nesneler için izin verilmez, atama ve işaretçi aritmetiğini, gibi işaretçi işlemleri sayısı. CLR başvuru türünün yapısını daha iyi izleme işleyicisi kavramı yakalar.
+
+`__gc` İzleme işleyicisi değiştiricisi gereksizdir ve desteklenmiyor. Nesne kullanımını değiştirilmedi; yine de işaretçi üye seçme işlecinden üyeleri erişir (`->`). Örneğin, yeni sözdizimine çevrilmiş önceki Yönetilen Uzantılar kod örneği aşağıdadır:
+
+```
+public ref class Form1: public System::Windows::Forms::Form {
+private:
+   System::ComponentModel::Container^ components;
+   Button^ button1;
+   DataGrid^ myDataGrid;
+   DataSet^ myDataSet;
+
+   void PrintValues( Array^ myArr ) {
+      System::Collections::IEnumerator^ myEnumerator =
+         myArr->GetEnumerator();
+
+      Array ^localArray;
+      myArr->Copy(myArr, localArray, myArr->Length);   }
+};
+```
+
+## <a name="dynamic-allocation-of-an-object-on-the-clr-heap"></a>CLR yığındaki bir nesnenin dinamik ayırma
+
+Yönetilen Uzantılar, iki varlığını `new` arasında yerel ve yönetilen yığın ayrılacak ifadeleri neredeyse şeffaftır. Hemen hemen tüm durumlarda, derleyicinin bağlam, yerel veya yönetilen yığından bellek ayırmak belirlemek için kullanabilirsiniz. Örneğin,
+
+```
+Button *button1 = new Button; // OK: managed heap
+int *pi1 = new int;           // OK: native heap
+Int32 *pi2 = new Int32;       // OK: managed heap
+```
+
+Bağlamsal yığın ayırma istemediğinizde, derleyici ile ya da yönlendirebilir `__gc` veya `__nogc` anahtar sözcüğü. Yeni sözdiziminde, iki yeni ifade ayrı yapısını sunulmasıyla birlikte açık hale `gcnew` anahtar sözcüğü. Örneğin, önceki üç bildirimleri gibi yeni sözdiziminde görünür:
+
+```
+Button^ button1 = gcnew Button;        // OK: managed heap
+int * pi1 = new int;                   // OK: native heap
+Int32^ pi2 = gcnew Int32; // OK: managed heap
+```
+
+Yönetilen Uzantılar başlatma işte `Form1` üyeleri bildirilen önceki bölümde:
+
+```
+void InitializeComponent() {
+   components = new System::ComponentModel::Container();
+   button1 = new System::Windows::Forms::Button();
+   myDataGrid = new DataGrid();
+
+   button1->Click +=
+      new System::EventHandler(this, &Form1::button1_Click);
+}
+```
+
+Aynı başlatma yeni sözdizimine dönüştürülmüş hali aşağıdadır. Hedefi olduğunda hat başvuru türünün gerekli olmadığını unutmayın bir `gcnew` ifade.
+
+```
+void InitializeComponent() {
+   components = gcnew System::ComponentModel::Container;
+   button1 = gcnew System::Windows::Forms::Button;
+   myDataGrid = gcnew DataGrid;
+
+   button1->Click +=
+      gcnew System::EventHandler( this, &Form1::button1_Click );
+}
+```
+
+## <a name="a-tracking-reference-to-no-object"></a>Bir nesne için izleme başvurusu
+
+Yeni sözdiziminde `0` artık boş bir adresi temsil eder, ancak bir tamsayı, aynı olarak kabul edilir `1`, `10`, veya `100`. Yeni özel bir belirteç bir izleme başvurusuna null değerini temsil eder. Örneğin, Yönetilen Uzantılar'nesnesi yok gibi ele almak için bir başvuru türü biz başlatın:
+
+```
+// OK: we set obj to refer to no object
+Object * obj = 0;
+
+// Error: no implicit boxing
+Object * obj2 = 1;
+```
+
+Yeni sözdiziminde, herhangi bir başlatma veya değer türü için bir `Object` o değer türü örtük olarak kutulama neden olur. Yeni sözdiziminde, her ikisi de `obj` ve `obj2` ele için 0 ve 1 değerlerini sırasıyla tutan paketlenmiş Int32 nesneleri başlatılır. Örneğin:
+
+```
+// causes the implicit boxing of both 0 and 1
+Object ^ obj = 0;
+Object ^ obj2 = 1;
+```
+
+Bu nedenle, açık başlatma, atama ve izleme işleyicisi null karşılaştırma gerçekleştirmek için yeni bir anahtar sözcüğünü kullanın. `nullptr`.  Doğru düzeltilmesi özgün örnek şu şekilde görünür:
+
+```
+// OK: we set obj to refer to no object
+Object ^ obj = nullptr;
+
+// OK: we initialize obj2 to a Int32^
+Object ^ obj2 = 1;
+```
+
+Bu biraz var olan kod yeni söz dizimini taşıma karmaşık hale getirir. Örneğin, aşağıdaki değer sınıfı bildirimi göz önünde bulundurun:
+
+```
+__value struct Holder {
+   Holder( Continuation* c, Sexpr* v ) {
+      cont = c;
+      value = v;
+      args = 0;
+      env = 0;
+   }
+
+private:
+   Continuation* cont;
+   Sexpr * value;
+   Environment* env;
+   Sexpr * args __gc [];
+};
+```
+
+Burada, her ikisi de `args` ve `env` CLR başvuru türleridir. Bu iki üyenin başlatılması `0` oluşturucuda yeni söz dizimini geçişte değişmeden kalamaz. Bunun yerine, bunlar için değiştirilmelidir `nullptr`:
+
+```
+value struct Holder {
+   Holder( Continuation^ c, Sexpr^ v )
+   {
+      cont = c;
+      value = v;
+      args = nullptr;
+      env = nullptr;
+   }
+
+private:
+   Continuation^ cont;
+   Sexpr^ value;
+   Environment^ env;
+   array<Sexpr^>^ args;
+};
+```
+
+Benzer şekilde, test için karşılaştırma bu üyelere karşı `0` üyelerine Karşılaştırılacak değiştirilmelidir `nullptr`. Yönetilen Uzantıları söz dizimi şu şekildedir:
+
+```
+Sexpr * Loop (Sexpr* input) {
+   value = 0;
+   Holder holder = Interpret(this, input, env);
+
+   while (holder.cont != 0) {
+      if (holder.env != 0) {
+         holder=Interpret(holder.cont,holder.value,holder.env);
+      }
+      else if (holder.args != 0) {
+         holder =
+         holder.value->closure()->
+         apply(holder.cont,holder.args);
+      }
+   }
+
+   return value;
+}
+```
+
+Her değiştirerek düzeltme işte `0` ile örnek bir `nullptr`. Kullanım dahil olmak üzere tüm oluşumları değilse çeviri aracı, çoğu otomatik hale getirerek bu dönüşümünde yardımcı olur `NULL` makrosu.
+
+```
+Sexpr ^ Loop (Sexpr^ input) {
+   value = nullptr;
+   Holder holder = Interpret(this, input, env);
+
+   while ( holder.cont != nullptr ) {
+      if ( holder.env != nullptr ) {
+         holder=Interpret(holder.cont,holder.value,holder.env);
+      }
+      else if (holder.args != nullptr ) {
+         holder =
+         holder.value->closure()->
+         apply(holder.cont,holder.args);
+      }
+   }
+
+   return value;
+}
+```
+
+`nullptr` Herhangi bir işaretçi ya da izleme tanıtıcı dönüştürülür ancak bir integral türe yükseltilmez. Örneğin, aşağıdaki başlatmalar, kümesi içinde `nullptr` yalnızca ilk iki için bir başlangıç değeri olarak geçerlidir.
+
+```
+// OK: we set obj and pstr to refer to no object
+Object^ obj = nullptr;
+char*   pstr = nullptr; // 0 would also work here
+
+// Error: no conversion of nullptr to 0
+int ival = nullptr;
+```
+
+Benzer şekilde, aşağıdaki gibi yöntemler aşırı yüklenmiş bir dizi verilen:
+
+```
+void f( Object^ ); // (1)
+void f( char* );   // (2)
+void f( int );     // (3)
+```
+
+Bir çağrı ile `nullptr` aşağıdaki gibi değişmez değeri
+
+```
+// Error: ambiguous: matches (1) and (2)
+f(  nullptr );
+```
+
+belirsiz olduğundan `nullptr` izleme işleyicisi hem bir işaretçi ile eşleşen ve bir tür diğer verilen tercih yoktur. (Bu durumda ayırt etmek için bir açık tür dönüştürme gerektiriyor.)
+
+Bir çağrı ile `0` tam olarak eşleşir (3):
+
+```
+// OK: matches (3)
+f( 0 );
+```
+
+çünkü `0` integer türündedir. Olan `f(int)` yok, çağrı dönüştürmelerle BC `f(char*)` aracılığıyla standart bir dönüştürme. Eşleştirme kuralları tam bir eşleşme önceliğini standart bir dönüştürme sağlar. Tam bir eşleşme olmaması durumunda, standart bir dönüştürme, bir örtük olarak kutulama bir değer türü üzerinde öncelik verilir. Belirsizlik olmaz olmasının olmasıdır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yönetilen türler (C + +/ CL)](../dotnet/managed-types-cpp-cl.md)<br/>
+[Sınıflar ve Yapılar](../windows/classes-and-structs-cpp-component-extensions.md)<br/>
+[İşlenecek nesne işleci (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)<br/>
+[nullptr](../windows/nullptr-cpp-component-extensions.md)

@@ -15,16 +15,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69d698a0350a8a61f4247f79b40f3f070c4885eb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 21b4d93d5a6d7a31f7f305f8530f734f023753d4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346321"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46406847"
 ---
 # <a name="html-help-context-sensitive-help-for-your-programs"></a>HTML Yardımı: Programlarınız için Bağlama Duyarlı Yardım
+
 > [!IMPORTANT]
->  HTML Yardımı MFC bu sürümünde desteklenmiyor.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)
+>  HTML Yardımı MFC'ın bu sürümünde desteklenmiyor.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)

@@ -17,32 +17,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 6bf712e960cbf96ccef6c3a3e4efebdad9045818
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fc3399ee088a0430ca857c3e421742ee484d337a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33137000"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46413322"
 ---
 # <a name="marshalcontext-class"></a>marshal_context Sınıfı
-Bu sınıf, yerel ve yönetilen ortamlar arasında veri dönüştürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class marshal_context  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Kullanım `marshal_context` bir bağlam gerektiren veri dönüşümleri için sınıf. Bkz: [, genel bakış hazırlama c++](../dotnet/overview-of-marshaling-in-cpp.md) bir bağlam hangi dönüşümleri gerektirir ve dahil edilecek hazırlama hangi dosya sahip hakkında daha fazla bilgi. Bir bağlam kullandığınızda hazırlama sonucunu yalnızca geçerliliğinin `marshal_context` nesne yok. Sonuç kümenizi korumak için verileri kopyalamanız gerekir.  
-  
- Aynı `marshal_context` birden çok veri dönüştürmeleri için kullanılabilir. Bu şekilde bağlamda yeniden önceki hazırlama çağrıları sonuçlarından etkilemez.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası:** \<msclr\marshal.h >, \<msclr\marshal_windows.h >, \<msclr\marshal_cppstd.h >, veya \<msclr\marshal_atl.h >  
-  
- **Namespace:** msclr::interop  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++'da hazırlamaya genel bakış](../dotnet/overview-of-marshaling-in-cpp.md)   
- [marshal_as](../dotnet/marshal-as.md)
+
+Bu sınıf, yerel ve yönetilen ortamlar arasında verileri dönüştürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class marshal_context
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Kullanım `marshal_context` sınıfı için bir bağlam gerektiren veri dönüştürme. Bkz: [Overview of Marshaling c++](../dotnet/overview-of-marshaling-in-cpp.md) hangi dönüştürmeler bir bağlamda gerektirir ve hangi hazırlama dosyasını dahil olmak zorundadır hakkında daha fazla bilgi. Bir bağlam kullandığınızda hazırlama sonucu yalnızca kadar geçerli olan `marshal_context` nesnesi yok edildiğinde. Sonuç korumak için verileri kopyalamanız gerekir.
+
+Aynı `marshal_context` birden çok veri dönüştürme için kullanılabilir. Bu şekilde bağlamı yeniden sıralama önceki çağrılarının sonucunu etkilemez.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Üst bilgi dosyası:** \<msclr\marshal.h >, \<msclr\marshal_windows.h >, \<msclr\marshal_cppstd.h >, veya \<msclr\marshal_atl.h >
+
+**Namespace:** msclr::interop
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md)<br/>
+[marshal_as](../dotnet/marshal-as.md)

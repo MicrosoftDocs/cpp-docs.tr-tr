@@ -20,20 +20,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0657b05619a966ed171630d00adcd9303af7e18b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6691e4935d46b32bc8f433823888bb7f53a36890
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347035"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46398839"
 ---
 # <a name="oncmdmsg-handler"></a>OnCmdMsg İşleyicisi
-Komut yönlendirme gerçekleştirmek için her komut hedefi çağırır `OnCmdMsg` dizisindeki sonraki komut hedefinin üye işlevi. Komutu kullanım hedefler `OnCmdMsg` bunlar bir komut işlenip işlenmeyeceğini belirler ve yönlendirmek için başka bir komut hedefinin bunlar yürütemiyorsa.  
-  
- Her komut hedefi sınıfı geçersiz kılabilir `OnCmdMsg` üye işlevi. Geçersiz kılmalar her sınıf rota komutları belirli bir sonraki hedef sağlar. Bir çerçeve penceresinde, örneğin, her zaman komutları, geçerli alt pencere veya görünümü, tabloda gösterilen yönlendirir [standart komut rota](../mfc/command-routing.md).  
-  
- Varsayılan `CCmdTarget` uyarlamasını `OnCmdMsg` aldığı her komut iletisi için bir işleyici işlevi aramak için ileti eşlemesi komutu hedef sınıfın kullanır — aynı şekilde standart iletilerini aranır. Bir eşleşme bulursa işleyiciyi çağırır. İleti eşleme arama açıklanmıştır içinde [nasıl Framework aramaları ileti eşlemeleri](../mfc/how-the-framework-searches-message-maps.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
+
+Komut yönlendirme gerçekleştirmek için her komut hedefi çağırır `OnCmdMsg` dizideki sonraki komut hedefinin bir üye işlevi. Komut hedefleyen kullanım `OnCmdMsg` komut başa çıkabilir olup olmadığını belirlemek için ve yönlendirmek için başka bir komut hedefinin bunlar yürütemiyorsa.
+
+Her komut hedefi sınıfı geçersiz kılabilir `OnCmdMsg` üye işlevi. Geçersiz kılmalar, her sınıf rota komutları belirli bir sonraki hedefe olanak tanır. Çerçeve penceresi, örneğin, her zaman komutları, geçerli bir alt pencere ya da görünümü tabloda gösterildiği gibi yönlendirir [standart komut yönlendirme](../mfc/command-routing.md).
+
+Varsayılan `CCmdTarget` uygulaması `OnCmdMsg` aldığı her komut iletisi için bir işleyici işlevi aramak için komut hedef sınıfın ileti eşlemesi kullanır; aynı şekilde standart iletileri aranır. Bu bir eşleşme bulunursa, işleyici çağırır. İleti eşleme arama bölümünde açıklanmıştır [nasıl Framework arar ileti eşlemeleri](../mfc/how-the-framework-searches-message-maps.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
 

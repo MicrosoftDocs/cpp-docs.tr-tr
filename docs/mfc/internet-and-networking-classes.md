@@ -17,22 +17,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c890803573f1acb45f511676cccdcc027c43223
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dcce5cc8265140c8f939c17389aef1ffc82404ac
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345097"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46445574"
 ---
 # <a name="internet-and-networking-classes"></a>İnternet ve Ağ Sınıfları
-Bu sınıfları, bir Windows yuva veya Win32 Internet (WinINet) kullanarak başka bir bilgisayarla bilgi alışverişi olanak tanır. Var olan Windows Sockets düzenleme için sınıflar kümesi de.  
-  
- Sınıfların ve aşağıdaki kategorilerin bağlantısını destekler.  
-  
--   [Windows Yuvaları: Sınıflar](../mfc/windows-sockets-classes.md)  
-  
--   [Win32 Internet Sınıfları](../mfc/win32-internet-classes.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Bu sınıflar, bir Windows Socket veya Win32 Internet (WinINet) kullanarak başka bir bilgisayarla bilgi alışverişi olanak tanır. Vardır da Windows Sockets düzenlemek için sınıf kümesi.
+
+Aşağıdaki sınıfları kategorilerine bağlantısını destekler.
+
+- [Windows Yuvaları: Sınıflar](../mfc/windows-sockets-classes.md)
+
+- [Win32 Internet Sınıfları](../mfc/win32-internet-classes.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

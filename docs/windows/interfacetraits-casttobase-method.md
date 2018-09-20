@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 55a4d7487be5b3565ba3945630cab4388f287a68
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 473656f25c4ba08e011bef8f938cea54bdc51d6d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611830"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46424914"
 ---
 # <a name="interfacetraitscasttobase-method"></a>InterfaceTraits::CastToBase Yöntemi
 
@@ -39,10 +39,10 @@ static __forceinline Base* CastToBase(
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Parametresinin türü *ptr*.
 
-*ptr*  
+*ptr*<br/>
 Bir tür işaretçisi *T*.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -63,5 +63,5 @@ Hakkında daha fazla bilgi için `Base`, genel tür tanımları bölümüne bak�
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[InterfaceTraits Yapısı](../windows/interfacetraits-structure.md)  
+[InterfaceTraits Yapısı](../windows/interfacetraits-structure.md)<br/>
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

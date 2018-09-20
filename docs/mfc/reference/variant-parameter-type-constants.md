@@ -45,53 +45,56 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d61930bda4560baaf628ce018cc0161527d9d07e
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 64b68fb930c6de732e009a251c5e8363bace80ec
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885955"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374743"
 ---
 # <a name="variant-parameter-type-constants"></a>Değişken Parametre Türü Sabitleri
-Bu konu, Microsoft Foundation Class Kitaplığı OLE denetim sınıfları ile kullanılmak üzere tasarlanmış değişken parametre türü gösteren yeni sabitleri listeler.  
-  
- Sınıf sabit listesi verilmiştir:  
-  
-##  <a name="_mfc_variant_data_constants"></a> Değişken veri sabitleri  
-  
--   VTS_COLOR bir 32 bit tamsayı RGB renk değerleri temsil etmek için kullanılır.  
-  
--   VTS_FONT bir işaretçi `IFontDisp` OLE yazı tipi nesnesinin arabirimi.  
-  
--   VTS_HANDLE A Windows tanıtıcı değeri.  
-  
--   Vts_pıcture bir işaretçi `IPictureDisp` arabirimi OLE Resim nesnesi.  
-  
--   Bir grup radyo düğmeleri gibi denetimleri kullanılmak üzere tasarlanan bir denetim için kullanılan vts_optexclusıve bir 16 bitlik değer. Bu tür bir denetim grubundaki TRUE değeri varsa, diğerlerini FALSE olmalıdır kapsayıcı söyler.  
-  
--   Vts_trıstate bir 16 bitlik işaretli tamsayı üç olası değer (Seçilen temizlenmiş, kullanılamaz), örneğin, bir onay kutusu birine sahip özellikler için kullanılır.  
-  
--   HIMETRIC birimleri x ekseni boyunca bir konumu temsil etmek için kullanılan vts_xpos_hımetrıc bir 32-bit işaretsiz tamsayı.  
-  
--   Y ekseni boyunca HIMETRIC birimleri bir konumu temsil etmek için kullanılan vts_ypos_hımetrıc bir 32-bit işaretsiz tamsayı.  
-  
--   Piksel olarak x ekseni boyunca bir konumu temsil etmek için kullanılan vts_xpos_pıxels bir 32-bit işaretsiz tamsayı.  
-  
--   Piksel olarak y ekseni boyunca bir konumu temsil etmek için kullanılan vts_ypos_pıxels bir 32-bit işaretsiz tamsayı.  
-  
--   Bir ekran nesnesinin piksel cinsinden genişliği temsil etmek için kullanılan vts_xsıze_pıxels bir 32-bit işaretsiz tamsayı.  
-  
--   Bir ekran nesnesinin piksel cinsinden yüksekliğini temsil etmek için kullanılan vts_ysıze_pıxels bir 32-bit işaretsiz tamsayı.  
-  
--   Bir ekran nesnesi HIMETRIC biriminde genişliğini temsil etmek için kullanılan vts_xsıze_hımetrıc bir 32-bit işaretsiz tamsayı.  
-  
--   Bir ekran nesnesi HIMETRIC biriminde yüksekliğini temsil etmek için kullanılan vts_ysıze_hımetrıc bir 32-bit işaretsiz tamsayı.  
-  
+
+Bu konu, Microsoft Foundation Class Kitaplığı OLE denetim sınıfları ile kullanılmak üzere tasarlanmış değişken parametre türü gösteren yeni sabitleri listeler.
+
+Sınıf sabit listesi verilmiştir:
+
+##  <a name="_mfc_variant_data_constants"></a> Değişken veri sabitleri
+
+- VTS_COLOR bir 32 bit tamsayı RGB renk değerleri temsil etmek için kullanılır.
+
+- VTS_FONT bir işaretçi `IFontDisp` OLE yazı tipi nesnesinin arabirimi.
+
+- VTS_HANDLE A Windows tanıtıcı değeri.
+
+- Vts_pıcture bir işaretçi `IPictureDisp` arabirimi OLE Resim nesnesi.
+
+- Bir grup radyo düğmeleri gibi denetimleri kullanılmak üzere tasarlanan bir denetim için kullanılan vts_optexclusıve bir 16 bitlik değer. Bu tür bir denetim grubundaki TRUE değeri varsa, diğerlerini FALSE olmalıdır kapsayıcı söyler.
+
+- Vts_trıstate bir 16 bitlik işaretli tamsayı üç olası değer (Seçilen temizlenmiş, kullanılamaz), örneğin, bir onay kutusu birine sahip özellikler için kullanılır.
+
+- HIMETRIC birimleri x ekseni boyunca bir konumu temsil etmek için kullanılan vts_xpos_hımetrıc bir 32-bit işaretsiz tamsayı.
+
+- Y ekseni boyunca HIMETRIC birimleri bir konumu temsil etmek için kullanılan vts_ypos_hımetrıc bir 32-bit işaretsiz tamsayı.
+
+- Piksel olarak x ekseni boyunca bir konumu temsil etmek için kullanılan vts_xpos_pıxels bir 32-bit işaretsiz tamsayı.
+
+- Piksel olarak y ekseni boyunca bir konumu temsil etmek için kullanılan vts_ypos_pıxels bir 32-bit işaretsiz tamsayı.
+
+- Bir ekran nesnesinin piksel cinsinden genişliği temsil etmek için kullanılan vts_xsıze_pıxels bir 32-bit işaretsiz tamsayı.
+
+- Bir ekran nesnesinin piksel cinsinden yüksekliğini temsil etmek için kullanılan vts_ysıze_pıxels bir 32-bit işaretsiz tamsayı.
+
+- Bir ekran nesnesi HIMETRIC biriminde genişliğini temsil etmek için kullanılan vts_xsıze_hımetrıc bir 32-bit işaretsiz tamsayı.
+
+- Bir ekran nesnesi HIMETRIC biriminde yüksekliğini temsil etmek için kullanılan vts_ysıze_hımetrıc bir 32-bit işaretsiz tamsayı.
+
     > [!NOTE]
-    >  Değişken veri sabit bir işaretçi sağlayan tüm değişken türleri için VTS_FONT ve vts_pıcture, hariç olmak üzere ek değişken sabitleri tanımlanmadı. VTS_P kullanarak bu sabitleri adlı`constantname` kuralı. Örneğin, VTS_PCOLOR VTS_COLOR sabiti bir işaretçisidir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxdisp.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
+    >  Değişken veri sabit bir işaretçi sağlayan tüm değişken türleri için VTS_FONT ve vts_pıcture, hariç olmak üzere ek değişken sabitleri tanımlanmadı. VTS_P kullanarak bu sabitleri adlı`constantname` kuralı. Örneğin, VTS_PCOLOR VTS_COLOR sabiti bir işaretçisidir.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxdisp.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)

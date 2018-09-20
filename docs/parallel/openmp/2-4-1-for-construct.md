@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac142c628f3c2bef0bc29a2ffd50df8a9efda400
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cb9a554d9141223be7a5f6bc741c86b8f03511e2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216543"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46428555"
 ---
 # <a name="241-for-construct"></a>2.4.1 Yapı için
 
@@ -115,28 +115,28 @@ Sonunda örtük bir engel olan bir **için** sürece oluşturmak bir **nowait** 
 
 Kısıtlamaları **için** yönerge aşağıdaki gibidir:
 
--   **İçin** döngü yapısal bloğunun olmalıdır ve ayrıca, yürütme ile bitmelidir değil bir **sonu** deyimi.
+- **İçin** döngü yapısal bloğunun olmalıdır ve ayrıca, yürütme ile bitmelidir değil bir **sonu** deyimi.
 
--   Döngü değerlerini denetim ifadeleri **için** döngü ile ilişkili bir **için** yönergesi takım iş parçacıkları için aynı olması gerekir.
+- Döngü değerlerini denetim ifadeleri **için** döngü ile ilişkili bir **için** yönergesi takım iş parçacıkları için aynı olması gerekir.
 
--   **İçin** döngüsünün yineleme değişkeni işaretli bir tamsayı türü olmalıdır.
+- **İçin** döngüsünün yineleme değişkeni işaretli bir tamsayı türü olmalıdır.
 
--   Yalnızca tek bir **zamanlama** yan tümcesi görüntülenebilir bir **için** yönergesi.
+- Yalnızca tek bir **zamanlama** yan tümcesi görüntülenebilir bir **için** yönergesi.
 
--   Yalnızca tek bir **sıralı** yan tümcesi görüntülenebilir bir **için** yönergesi.
+- Yalnızca tek bir **sıralı** yan tümcesi görüntülenebilir bir **için** yönergesi.
 
--   Yalnızca tek bir **nowait** yan tümcesi görüntülenebilir bir **için** yönergesi.
+- Yalnızca tek bir **nowait** yan tümcesi görüntülenebilir bir **için** yönergesi.
 
--   Belirtilmeyen if veya ne sıklıkta içindeki tüm yan etkiler olan *chunk_size*, *lb*, *b*, veya *ıncr* ifadeleri oluşur.
+- Belirtilmeyen if veya ne sıklıkta içindeki tüm yan etkiler olan *chunk_size*, *lb*, *b*, veya *ıncr* ifadeleri oluşur.
 
--   Değerini *chunk_size* ifade takımın tüm iş parçacıkları için aynı olması gerekir.
+- Değerini *chunk_size* ifade takımın tüm iş parçacıkları için aynı olması gerekir.
 
 ## <a name="cross-references"></a>Başvuruları çapraz:
 
--   **özel**, **firstprivate**, **lastprivate**, ve **azaltma** yan tümcesi bkz [bölümü 2.7.2](../../parallel/openmp/2-7-2-data-sharing-attribute-clauses.md) sayfasında 25.
+- **özel**, **firstprivate**, **lastprivate**, ve **azaltma** yan tümcesi bkz [bölümü 2.7.2](../../parallel/openmp/2-7-2-data-sharing-attribute-clauses.md) sayfasında 25.
 
--   **OMP_SCHEDULE** ortam değişkeni, bkz: [bölümü 4.1](../../parallel/openmp/4-1-omp-schedule.md) sayfasında 48.
+- **OMP_SCHEDULE** ortam değişkeni, bkz: [bölümü 4.1](../../parallel/openmp/4-1-omp-schedule.md) sayfasında 48.
 
--   **Sıralı** oluşturmak için bkz: [bölümü 2.6.6](../../parallel/openmp/2-6-6-ordered-construct.md) sayfasında 22.
+- **Sıralı** oluşturmak için bkz: [bölümü 2.6.6](../../parallel/openmp/2-6-6-ordered-construct.md) sayfasında 22.
 
--   [Ek D](../../parallel/openmp/d-using-the-schedule-clause.md), sayfa 93, zamanlama yan tümcesini hakkında daha fazla bilgi sağlar.
+- [Ek D](../../parallel/openmp/d-using-the-schedule-clause.md), sayfa 93, zamanlama yan tümcesini hakkında daha fazla bilgi sağlar.

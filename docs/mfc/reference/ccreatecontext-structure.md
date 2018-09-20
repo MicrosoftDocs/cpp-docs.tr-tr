@@ -16,65 +16,69 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af6e81b9215aa6e7bc9e5f294a1d95aee4b51321
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 320f84a8c423c16c4647108af0154fe7c07ce653
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33352050"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46447303"
 ---
 # <a name="ccreatecontext-structure"></a>CCreateContext yapısı
-Çerçeve kullanır `CCreateContext` belge ile ilişkili görünümler ve çerçeve pencereleri oluşturduğunda yapısı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-struct CCreateContext  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- `CCreateContext` bir yapıdır ve bir taban sınıfı yok.  
-  
- Bir pencere oluşturduğunuzda, bu yapıyı değerleri kendi veri görünümüne bir belge bileşenlerinin bağlanmak için kullanılan bilgiler sağlar. Yalnızca kullanmak zorunda `CCreateContext` bölümleri oluşturma işleminin kılıyorsa.  
-  
- A `CCreateContext` yapısı belge, çerçeve penceresi, Görünüm ve belge şablonu işaretçiler içerir. Bir işaretçi de içeren bir `CRuntimeClass` oluşturmak için görünüm türünü tanımlar. Çalışma zamanı sınıf bilgileri ve geçerli belge işaretçisi dinamik olarak yeni bir görünüm oluşturmak için kullanılır. Aşağıdaki tabloda nasıl ve ne zaman önerilse her `CCreateContext` üye kullanılan:  
-  
-|Üye|Tür|İçin nedir|  
-|------------|----------|--------------------|  
-|`m_pNewViewClass`|`CRuntimeClass*`|`CRuntimeClass` Oluşturulacak yeni görünümü.|  
-|`m_pCurrentDoc`|`CDocument*`|Yeni görünümü ile ilişkilendirilecek mevcut belge.|  
-|`m_pNewDocTemplate`|`CDocTemplate*`|Belge şablonu yeni bir MDI çerçeve penceresi oluşturma ile ilişkilendirilmiş.|  
-|`m_pLastView`|`CView*`|Üzerinde ek görünümler, bölümlendirici pencere görünümleri oluşturma veya bir belge üzerinde ikinci bir görünüm oluşturma gibi Modellenen özgün görüntüleyin.|  
-|`m_pCurrentFrame`|`CFrameWnd*`|Üzerinde ek çerçeve pencereleri, bir belge üzerinde ikinci bir çerçeve penceresi oluşturma gibi Modellenen çerçeve penceresi.|  
-  
- Belge şablonu bir belge ve ilişkili bileşenlerini oluşturduğunda, depolanan bilgileri doğruladığı `CCreateContext` yapısı. Örneğin, bir görünüm için varolmayan bir belge oluşturulamaz.  
-  
+
+Framework kullanan `CCreateContext` çerçeve pencereleri ve belge ile ilişkili olan görünümleri oluşturduğunda, yapı.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+struct CCreateContext
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+`CCreateContext` bir yapı olduğunu ve bir temel sınıfa sahip değil.
+
+Bir pencere oluşturduğunuzda, bu yapı değerleri belgenin bileşenleri kendi veri görünümüne bağlanmak için kullanılan bilgileri sağlayın. Yalnızca kullanmak zorunda `CCreateContext` oluşturma işlemini bölümlerini kılıyorsa.
+
+A `CCreateContext` yapısı, belge, çerçeve penceresi, Görünüm ve belge şablonunu işaretçileri içerir. Ayrıca bir işaretçi içeren bir `CRuntimeClass` oluşturmak için görünüm türünü tanımlar. Çalışma süresi sınıf bilgilerine ve geçerli belge işaretçisi, dinamik olarak yeni bir görünüm oluşturmak için kullanılır. Aşağıdaki tabloda, nasıl ve ne zaman önerir her `CCreateContext` üyesi kullanılan:
+
+|Üye|Tür|Ne işe yaradığını|
+|------------|----------|--------------------|
+|`m_pNewViewClass`|`CRuntimeClass*`|`CRuntimeClass` Oluşturulacak yeni görünümü.|
+|`m_pCurrentDoc`|`CDocument*`|Yeni Görünüm ile ilişkilendirilecek varolan belge.|
+|`m_pNewDocTemplate`|`CDocTemplate*`|Yeni bir MDI çerçeve penceresi oluşturma ile ilişkili belge şablonu.|
+|`m_pLastView`|`CView*`|Orijinal görünümde üzerinde ek görünümler, bölümlendirici pencere görünümleri oluşturma ya da bir belge üzerinde ikinci bir görünüm oluşturulmasını olduğu gibi modellenir.|
+|`m_pCurrentFrame`|`CFrameWnd*`|Çerçeve penceresi üzerinde ek çerçeve pencereleri, bir belge ikinci bir çerçeve penceresinde oluşturulmasını olduğu gibi modellenir.|
+
+Bir belge şablonu, bir belge ve ilişkili bileşenlerinin oluşturduğunda, depolanan bilgileri doğrular. `CCreateContext` yapısı. Örneğin, bir görünüm için varolmayan bir belge oluşturulmalı değil.
+
 > [!NOTE]
->  Tüm İşaretçiler `CCreateContext` isteğe bağlıdır ve olabilir `NULL` belirtilmemiş ya da bilinmiyor.  
-  
- `CCreateContext` altında listelenen üye işlevleri tarafından kullanılan "Ayrıca bkz." Geçersiz kılmadığınız planlıyorsanız, bu işlevler açıklamalarını özel bilgiler için başvurun.  
-  
- Birkaç genel kurallar şunlardır:  
-  
--   Pencere oluşturulması için bağımsız değişken olarak olarak geçirildiğinde `CWnd::Create`, `CFrameWnd::Create`, ve `CFrameWnd::LoadFrame`, ne yeni pencere bağlanması gerektiği Oluştur bağlam belirtir. Çoğu windows için tüm yapısını isteğe bağlıdır ve bir `NULL` işaretçi geçirilebilir.  
-  
--   Geçersiz kılınabilir üye işlevleri için gibi `CFrameWnd::OnCreateClient`, `CCreateContext` bağımsız değişken isteğe bağlıdır.  
-  
--   Söz konusu üye işlevleri için Görünüm oluşturma, görünüm oluşturmak için yeterli bilgi sağlamanız gerekir. Örneğin, bir Bölümlendirici pencere ilk görünüm için sınıf bilgileri görüntüleyin ve geçerli belge sağlamalısınız.  
-  
- Genel olarak, framework varsayılanları kullanın, yoksayabilirsiniz `CCreateContext`. Daha gelişmiş değişiklikler, Microsoft Foundation Class Kitaplığı kaynak kodu veya VIEWEX gibi örnek programlar çalışırsanız size yol gösterecektir. Gerekli parametre unutursanız, framework onaylama ne unuttunuz söyler.  
-  
- Daha fazla bilgi için `CCreateContext`, MFC örnek bkz [VIEWEX](../../visual-cpp-samples.md).  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxext.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CFrameWnd::Create](../../mfc/reference/cframewnd-class.md#create)   
- [CFrameWnd::LoadFrame](../../mfc/reference/cframewnd-class.md#loadframe)   
- [CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient)   
- [CSplitterWnd::Create](../../mfc/reference/csplitterwnd-class.md#create)   
- [CSplitterWnd::CreateView](../../mfc/reference/csplitterwnd-class.md#createview)   
- [CWnd::Create](../../mfc/reference/cwnd-class.md#create)
+>  Tüm işaretçi `CCreateContext` isteğe bağlıdır ve olabilir `NULL` belirtilmemiş veya bilinmeyen.
+
+`CCreateContext` altında listelenen üye işlevleri tarafından kullanılan "Ayrıca bkz." Bu işlevlerin açıklamaları bunları geçersiz kılmak planlama için belirli bilgiler danışın.
+
+Bazı genel yönergeler şunlardır:
+
+- Pencere oluşturma için bağımsız değişken olarak geçirilen zaman `CWnd::Create`, `CFrameWnd::Create`, ve `CFrameWnd::LoadFrame`, oluşturma bağlamı ne yeni pencere bağlanması gerektiğini belirtir. Yapının tamamını çoğu windows için isteğe bağlıdır ve `NULL` işaretçi geçirilebilir.
+
+- Geçersiz kılınabilir üye işlevleri için gibi `CFrameWnd::OnCreateClient`, `CCreateContext` bağımsız değişken isteğe bağlıdır.
+
+- Dahil olan üye işlevleri için Görünüm oluşturma, görünümü oluşturmak için yeterli bilgi sağlamalısınız. Örneğin, bir ayırıcı penceresi ilk görünümü için sınıf bilgilerini görüntüle ve geçerli belgede sağlamalısınız.
+
+Framework Varsayılanları kullanırsanız, genel olarak, yoksayabilirsiniz `CCreateContext`. Daha gelişmiş değişiklikler, Microsoft Foundation Class Kitaplığı kaynak kodunu veya örnek programlardan VIEWEX gibi çalışırsanız size yol gösterir. Gerekli parametre unutursanız, framework onaylama, unuttum bildirir.
+
+Daha fazla bilgi için `CCreateContext`, MFC örnek görmek [VIEWEX](../../visual-cpp-samples.md).
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxext.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CFrameWnd::Create](../../mfc/reference/cframewnd-class.md#create)<br/>
+[CFrameWnd::LoadFrame](../../mfc/reference/cframewnd-class.md#loadframe)<br/>
+[CFrameWnd::OnCreateClient](../../mfc/reference/cframewnd-class.md#oncreateclient)<br/>
+[CSplitterWnd::Create](../../mfc/reference/csplitterwnd-class.md#create)<br/>
+[CSplitterWnd::CreateView](../../mfc/reference/csplitterwnd-class.md#createview)<br/>
+[CWnd::Create](../../mfc/reference/cwnd-class.md#create)
 

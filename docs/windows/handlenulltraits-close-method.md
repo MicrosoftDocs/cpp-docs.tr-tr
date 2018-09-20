@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 155fb5a07f747e4107e630b0db65d321ee726e2c
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 1041fc03a565592784131102a48ffe2ded0e159c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602222"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430650"
 ---
 # <a name="handlenulltraitsclose-method"></a>HANDLENullTraits::Close Yöntemi
 
@@ -38,7 +38,7 @@ inline static bool Close(
 
 ### <a name="parameters"></a>Parametreler
 
-*h*  
+*h*<br/>
 Kapatmak için tanıtıcı.
 
 ## <a name="return-value"></a>Dönüş Değeri

@@ -18,25 +18,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 523b3e8d3f9c04a933f37032fcea670d75dafccf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fcba36fdf280cef31efb9a84288475fcbb82b291
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33162442"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400433"
 ---
 # <a name="requirements-for-stlclr-container-elements"></a>STL/CLR Kapsayıcı Öğeleri için Gereksinimler
-STL/CLR kapsayıcıları eklenen tüm başvuru türleri, en azından aşağıdaki öğeleri olması gerekir:  
-  
--   Ortak kopya Oluşturucu.  
-  
--   Bir ortak atama işleci.  
-  
--   Bir ortak yıkıcı.  
-  
- Ayrıca, ilişkilendirilebilir kapsayıcıları gibi [ayarlamak](../dotnet/set-stl-clr.md) ve [harita](../dotnet/map-stl-clr.md) olan tanımlanan, bir ortak karşılaştırma işleci olmalıdır `operator<` varsayılan olarak. Bazı işlemler kapsayıcılarında ortak varsayılan bir oluşturucu ve tanımlanması için bir ortak eşdeğer işleci de gerektirebilir.  
-  
- Başvuru türleri, değer türleri ve tanıtıcıları gibi başvurmak için ilişkilendirilebilir bir kapsayıcıya eklenecek olan türlerini bir karşılaştırma işleci gibi gerekir `operator<` tanımlanmış. Değer türleri veya türleri başvurmak için tanıtıcıları için ortak kopya Oluşturucu, ortak atama işleci ve bir ortak yıkıcı gereksinimleri yok.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
+
+STL/CLR kapsayıcılarına eklenen tüm başvuru türleri, en azından aşağıdaki öğelere sahip olmanız gerekir:
+
+- Genel bir kopya Oluşturucu.
+
+- Bir ortak atama işleci.
+
+- Genel bir yıkıcı.
+
+Ayrıca, ilişkili kapsayıcılar gibi [ayarlamak](../dotnet/set-stl-clr.md) ve [harita](../dotnet/map-stl-clr.md) olan tanımlanan, bir genel karşılaştırma işlecine sahip olmalıdır `operator<` varsayılan olarak. Kapsayıcılarda yapılan bazı işlemler de genel bir varsayılan oluşturucu ve tanımlanması için genel bir denklik işleci gerektirebilir.
+
+Başvuru türleri, değer türleri ve tanıtıcılar gibi başvurmak için bir karşılaştırma işleci gibi ilişkilendirilebilir bir kapsayıcı eklenecek türlere sahip olmalıdır `operator<` tanımlı. Başvuru türleri değer türleri veya tanıtıcıları için ortak bir kopya Oluşturucu, ortak bir atama işleci ve ortak yıkıcısı gereksinimlerini yok.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

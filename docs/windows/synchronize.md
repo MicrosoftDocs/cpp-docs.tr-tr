@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a72d305cfae3ba76a7c61ee7f2a6a604e6832631
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: dc056b59bc2d98ab4dcee030024e6f4a4b883dfe
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604702"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448005"
 ---
 # <a name="synchronize"></a>eşitle
 
@@ -56,10 +56,10 @@ Eşitleme için aşağıdaki kodu sağlar `UpdateBalance` yöntemi `CMyClass` ne
 [module(name="SYNC")];
 
 [coclass,
- threading(both),
- vi_progid("MyProject.MyClass"),
- progid("MyProject.MyClass.1"),
- uuid("7a7baa0d-59b8-4576-b754-79d07e1d1cc3")  
+threading(both),
+vi_progid("MyProject.MyClass"),
+progid("MyProject.MyClass.1"),
+uuid("7a7baa0d-59b8-4576-b754-79d07e1d1cc3")  
 ]
 class CMyClass {
    float m_nBalance;

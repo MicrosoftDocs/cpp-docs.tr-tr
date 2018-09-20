@@ -17,17 +17,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51904ac06ae6c2db5586f8dc405f85145c5b1f30
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ec080e556b57afadbc3d958f4dba5ac6393108aa
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343066"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408914"
 ---
 # <a name="do-i-have-to-derive-new-classes-from-cobject"></a>CObject'ten Yeni Sınıflar Türetmem Gerekiyor mu?
-Hayır, yok.  
-  
- Öğesinden bir sınıf türetin [CObject](../mfc/reference/cobject-class.md) sağladığı seri hale getirme veya dinamik creatability gibi özellikleri gerektiğinde. Birçok veri sınıfları genellikle aktarımlar için iyi bir fikir nedenle dosyalara, seri hale gerek `CObject`. Türetilmiş bir sınıf örneği için `CObject`, bkz: [karalama örnek](../visual-cpp-samples.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CObject Sınıfı: Sık Sorulan Sorular](../mfc/cobject-class-frequently-asked-questions.md)
+
+Hayır, gerekmez.
+
+Öğesinden bir sınıf türetin [CObject](../mfc/reference/cobject-class.md) sağladığı, serileştirme veya dinamik creatability gibi özellikleri gerektiğinde. Birçok veri sınıfları aktarımlar için iyi bir fikir genellikle, bu nedenle, dosyaya seri hale gerek `CObject`. Türetilen bir sınıf örneği için `CObject`, bkz: [Scribble örneğinin](../visual-cpp-samples.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CObject Sınıfı: Sık Sorulan Sorular](../mfc/cobject-class-frequently-asked-questions.md)

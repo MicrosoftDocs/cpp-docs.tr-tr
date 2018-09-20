@@ -17,28 +17,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89f87c33abfec7b9d055b589726639fcd741e59d
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 874c7eb29f1908e6098ee4a9095f17a4dae00006
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36930280"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402128"
 ---
 # <a name="-implementation-comment"></a>// Uygulama Açıklaması
-`// Implementation` Bölüm herhangi MFC sınıf bildiriminin en önemli parçasıdır.  
-  
- Bu bölümde, tüm uygulama ayrıntılarını barındırır. Üye değişkenleri ve üye işlevleri bu bölümde yer alabilir. MFC gelecekteki bir sürümde bu satırın altındaki her şeyi değiştirebilir. Bunu yoksayılamaz sürece, aşağıdaki Ayrıntılar güvenmemelisiniz `// Implementation` satır. Bazı uygulama teknik notları ele alınmıştır ancak ek olarak, uygulama satır olarak bildirilen üyeler, açıklanmamıştır. Taban sınıf içinde sanal işlevleri geçersiz kılma bir işlevi temel sınıf uygulamasını geçersiz kılmaları olgu bir uygulama ayrıntılarını olduğu kabul edildiği için bağımsız olarak hangi bölümde temel sınıf işlevi, tanımlanan bu bölümünde bulunur. Genellikle, bu üyeler korunur, ancak her zaman değil.  
-  
- Gelen fark `CStdioFile` altında listeleme [açıklamalara bir örnek](../mfc/an-example-of-the-comments.md) üyeleri aşağıda bildirilen `// Implementation` açıklama olarak bildirilebilir **ortak**, **korumalı**, veya **özel**. Gelecekte değişebilir olduğundan dikkatli bir şekilde, bu üyeler yalnızca kullanmanız gerekir. Bir grup üyeleri bildirme **ortak** sınıfı kitaplık uygulaması düzgün çalışması gerekli olabilir. Ancak, bu nedenle bildirilen üyeleri güvenle kullanabilir anlamına gelmez.  
-  
+
+`// Implementation` Bölümü herhangi bir MFC sınıf bildiriminin en önemli parçasıdır.
+
+Bu bölümde, tüm uygulama ayrıntılarını barındırır. Bu bölümde, hem üye değişkenleri ve üye işlevleri görünebilir. Bu satırın altındaki her şeyi MFC gelecekteki bir sürümde değişebilir. Bunu yoksayılamaz sürece ayrıntıları aşağıda doğrulamamalısınız `// Implementation` satır. Bazı uygulama teknik notları ele alınmıştır, ancak Ayrıca, uygulama satırın altına bildirilen üyeler, açıklanmamıştır. Bir işlev temel sınıf uygulamasına geçersiz kılmalar olgu bir uygulama ayrıntısı olduğu kabul edildiği için bağımsız olarak hangi bölümde temel sınıf işlevi, tanımlanan bu bölümde, temel sınıfta sanal işlevleri geçersiz kılmalarına bulunur. Genellikle, bu üyeler korunur, ama her zaman kullanılmaz.
+
+Gelen fark `CStdioFile` altında listeleme [açıklamalara bir örnek](../mfc/an-example-of-the-comments.md) aşağıda bildirilen üyeler `// Implementation` yorum olarak belirtilebilir **genel**, **korumalı**, veya **özel**. Gelecekte değişebilir olduğundan yalnızca bu üyeleri, dikkatli kullanmanız gerekir. Bir grubu üye olarak bildirmek **genel** için sınıf kitaplığı uygulamasının düzgün çalışması gerekli olabilir. Ancak, bu şekilde bildirilen üyeler güvenli bir şekilde kullanıyor olabileceği anlamına gelmez.
+
 > [!NOTE]
->  Üzerinde veya altında kalan türlerinin açıklamaları bulabilirsiniz `// Implementation` açıklama. Her iki durumda da, bunlar bunları bildirilen üyeleri türlerini açıklar. Aşağıda oluşursa `// Implementation` açıklama varsayalım üyeleri MFC sürümleri gelecekte değişebilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC kaynak dosyalarını kullanma](../mfc/using-the-mfc-source-files.md)   
- [Açıklamalara bir örnek](../mfc/an-example-of-the-comments.md)   
- [/ / Oluşturucu açıklaması](../mfc/decrement-constructors-comment.md)   
- [Özniteliklerle ilgili açıklama](../mfc/decrement-attributes-comment.md)   
- [/ / İşlem açıklaması](../mfc/decrement-operations-comment.md)   
- [Geçersiz kılınabilir açıklama](../mfc/decrement-overridables-comment.md)
+>  Üzerinde veya altında kalan türlerinin açıklamaları bulabilirsiniz `// Implementation` açıklaması. Her iki durumda da, bunlar bunları bildirilen üyeler türlerini açıklar. Aşağıda oluşursa `// Implementation` açıklama varsayar üyeleri sürümlerdeki MFC gelecekte değişebilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC Kaynak Dosyalarını Kullanma](../mfc/using-the-mfc-source-files.md)<br/>
+[Açıklamalara Bir Örnek](../mfc/an-example-of-the-comments.md)<br/>
+[/ / Oluşturucu açıklaması](../mfc/decrement-constructors-comment.md)<br/>
+[Özniteliklerle ilgili açıklama](../mfc/decrement-attributes-comment.md)<br/>
+[/ / İşlem açıklaması](../mfc/decrement-operations-comment.md)<br/>
+[Geçersiz kılınabilen öğelerle ilgili açıklama](../mfc/decrement-overridables-comment.md)
 

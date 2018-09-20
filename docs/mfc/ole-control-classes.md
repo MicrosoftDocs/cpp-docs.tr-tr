@@ -22,57 +22,59 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5dcbda85c33bab37babe5da861067d25cf31e32c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ad9ab489506964266b28a38563c366db2b0d54fa
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33355368"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439087"
 ---
 # <a name="ole-control-classes"></a>OLE Denetim Sınıfları
-Bunlar, OLE denetimleri yazarken kullanmak, birincil sınıflarıdır. `COleControlModule` OLE denetim modülü sınıfında benzer [CWinApp](../mfc/reference/cwinapp-class.md) bir uygulamada sınıfı. Her modül bir veya daha fazla OLE denetimleri uygular; Bu denetimler tarafından temsil edilen `COleControl` nesneleri. Bu denetimleri kullanarak kapsayıcılarına ile iletişim `CConnectionPoint` nesneleri.  
-  
- `CPictureHolder` Ve `CFontHolder` sınıfların resimler ve yazı tipleri için COM arabirimleri kapsülleyen sırada `COlePropertyPage` ve `CPropExchange` sınıfları özellik sayfaları ve denetim özelliği kalıcılığını uygulamanıza yardımcı olur.  
-  
- [COleControlModule](../mfc/reference/colecontrolmodule-class.md)  
- Değiştirir `CWinApp` OLE denetim modülü için sınıf. Öğesinden türetilen `COleControlModule` OLE denetim modülü nesnesi geliştirmek için sınıf. Üye işlevleri OLE denetiminizin modülü başlatılırken sağlar.  
-  
- [COleControl](../mfc/reference/colecontrol-class.md)  
- Öğesinden türetilen `COleControl` OLE denetimi geliştirmek için sınıf. Türetilmiş `CWnd`, bu sınıf Windows pencere nesnesi tüm işlevselliğini artı olay tetikleme ve yöntemleri ve özellikleri destekleme özelliği gibi ek OLE özgü işlevsellik devralır.  
-  
- [CConnectionPoint](../mfc/reference/cconnectionpoint-class.md)  
- `CConnectionPoint` Sınıfı bir özel tür bir bağlantı noktası olarak adlandırılan diğer OLE nesneleri ile iletişim kurmak için kullanılan arabirim tanımlar. Bir bağlantı noktası Eylemler olaylarını tetikleme gibi diğer nesneler üzerinde başlatmak ve bildirimleri değiştirin yapabiliyor bir giden arabirimini uygular.  
-  
- [CPictureHolder](../mfc/reference/cpictureholder-class.md)  
- Windows Resim nesnesi işlevselliği kapsar ve `IPicture` COM arabirimi; OLE denetimi özel resim özelliği uygulamak için kullanılır.  
-  
- [CFontHolder](../mfc/reference/cfontholder-class.md)  
- Bir Windows yazı tipi nesnesi işlevselliği kapsar ve `IFont` COM arabirimi; stok Font özelliği bir OLE denetimi gerçekleştirmek için kullanılır.  
-  
- [COlePropertyPage](../mfc/reference/colepropertypage-class.md)  
- Bir iletişim kutusu için benzer bir grafik arabiriminde denetimi bir OLE özelliklerini görüntüler.  
-  
- [CPropExchange](../mfc/reference/cpropexchange-class.md)  
- OLE denetimleri için özellik Kalıcılık uyarlamasını destekler. Benzer [CDataExchange](../mfc/reference/cdataexchange-class.md) iletişim kutuları için.  
-  
- [CMonikerFile](../mfc/reference/cmonikerfile-class.md)  
- Bir ad veya takma yapabilen bir dize gösterimi alır ve özniteliğinde bir ad olduğu akışa zaman uyumlu olarak bağlar.  
-  
- [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md)  
- Benzer şekilde çalışır `CMonikerFile`; ancak, akışa özniteliğinde bir ad olduğu bilinen ad zaman uyumsuz olarak bağlar.  
-  
- [CDataPathProperty](../mfc/reference/cdatapathproperty-class.md)  
- Implements bir OLE zaman uyumsuz olarak yüklenen özelliğini denetler.  
-  
- [CCachedDataPathProperty](../mfc/reference/ccacheddatapathproperty-class.md)  
- Implements bir OLE zaman uyumsuz olarak aktarılır ve bellek dosyasında önbelleğe özelliğini denetler.  
-  
- [COleCmdUI](../mfc/reference/colecmdui-class.md)  
- Kapsayıcısının kullanıcı arabiriminde (örneğin, dosya yeni, Aç, yazdırma vb.) kaynaklanan komutları almak için etkin bir belge sağlar ve etkin belgenin kullanıcı arabiriminde kaynaklanan komutları almak için bir kapsayıcı sağlar.  
-  
- [COleSafeArray](../mfc/reference/colesafearray-class.md)  
- Diziler rasgele tür ve boyut çalışır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Bunlar, OLE denetimleri yazarken kullanmak, birincil sınıflardır. `COleControlModule` Bir OLE denetim modülü sınıfında benzer [CWinApp](../mfc/reference/cwinapp-class.md) uygulama içindeki. Her modül bir veya daha fazla OLE denetimlerini uygular; Bu denetimler tarafından temsil edilen `COleControl` nesneleri. Bu denetimleri kullanarak kendi kapsayıcılarla iletişim `CConnectionPoint` nesneleri.
+
+`CPictureHolder` Ve `CFontHolder` sınıfları, resimleri ve yazı tipleri için COM arabirimleri Kapsüller sırada `COlePropertyPage` ve `CPropExchange` sınıflar özellik sayfaları ve özellik Kalıcılık denetiminiz için uygulamanıza yardımcı olur.
+
+[COleControlModule](../mfc/reference/colecontrolmodule-class.md)<br/>
+Değiştirir `CWinApp` , bir OLE denetim modülü için sınıf. Öğesinden türetilen `COleControlModule` bir OLE denetim modülü nesnesi geliştirmek için sınıf. OLE denetim modülü başlatmak için bu üye işlevleri sağlar.
+
+[COleControl](../mfc/reference/colecontrol-class.md)<br/>
+Öğesinden türetilen `COleControl` bir OLE denetim geliştirmek için sınıf. Türetilmiş `CWnd`, bu sınıf Windows pencere nesnesi tüm işlevselliğinin yanı sıra olay tetikleyicisinin tetikleme ve yöntemleri ve özellikleri destekleme özelliği gibi ek OLE özel işlevler devralır.
+
+[CConnectionPoint](../mfc/reference/cconnectionpoint-class.md)<br/>
+`CConnectionPoint` Sınıf, arabirim bir bağlantı noktası olarak adlandırılan diğer OLE nesneleri ile iletişim kurmak için kullanılan özel bir tür tanımlar. Bir bağlantı noktası olayları tetikleme gibi diğer nesneler üzerinde eylem başlatmak ve değişiklik bildirimleri giden bir arabirim uygular.
+
+[CPictureHolder](../mfc/reference/cpictureholder-class.md)<br/>
+Bir Windows Resim nesnesi işlevselliğini kapsüller ve `IPicture` COM arabirimi; özel resim özelliği bir OLE denetimi gerçekleştirmek için kullanılır.
+
+[CFontHolder](../mfc/reference/cfontholder-class.md)<br/>
+Bir Windows yazı tipi nesnesinin işlevselliğini kapsüller ve `IFont` COM arabirimi; stok yazı tipi özellik bir OLE denetimi gerçekleştirmek için kullanılır.
+
+[COlePropertyPage](../mfc/reference/colepropertypage-class.md)<br/>
+İletişim kutusuna benzer bir grafik arabiriminde denetimi bir OLE özelliklerini görüntüler.
+
+[CPropExchange](../mfc/reference/cpropexchange-class.md)<br/>
+OLE denetimleriniz için özellik sürekliliğin uygulanmasını destekler. Alınmak üzere [CDataExchange](../mfc/reference/cdataexchange-class.md) iletişim kutuları için.
+
+[CMonikerFile](../mfc/reference/cmonikerfile-class.md)<br/>
+Bir bilinen ad veya bir bilinen adına yapabilen bir dize gösterimini alır ve takma ad olan akışa zaman uyumlu olarak bağlar.
+
+[CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md)<br/>
+Benzer şekilde çalışır `CMonikerFile`; ancak, takma ad olan akış için bilinen ad zaman uyumsuz olarak bağlar.
+
+[CDataPathProperty](../mfc/reference/cdatapathproperty-class.md)<br/>
+Uygulayan bir OLE denetim zaman uyumsuz olarak yüklenebilen özelliği.
+
+[CCachedDataPathProperty](../mfc/reference/ccacheddatapathproperty-class.md)<br/>
+Uygulayan bir OLE denetim, zaman uyumsuz olarak aktarılabilen ve bir bellek dosyasında önbelleğe özelliği.
+
+[Colecmduı](../mfc/reference/colecmdui-class.md)<br/>
+Kapsayıcısının kullanıcı arabiriminde (örneğin, dosya yeni, açık, yazdırma ve benzeri) kaynaklanan komutları almak üzere bir etkin belgeyi sağlar ve etkin belgenin kullanıcı arabiriminde kaynaklanan komutları almak bir kapsayıcı sağlar.
+
+[COleSafeArray](../mfc/reference/colesafearray-class.md)<br/>
+Rastgele tür ve boyut dizileri ile çalışır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

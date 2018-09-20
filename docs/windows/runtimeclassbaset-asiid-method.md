@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b50466fc2c357c1d57fca272ff343cd56f3689c5
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7092153e49fdb40fc32fb1cbee5bc2376080ff4e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604272"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391884"
 ---
 # <a name="runtimeclassbasetasiid-method"></a>RuntimeClassBaseT::AsIID Yöntemi
 
@@ -41,16 +41,16 @@ __forceinline static HRESULT AsIID(
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Parametresi tarafından belirtilen arabirim kimliği uygulayan bir tür *riid*.
 
-*Uygulayan*  
+*Uygulayan*<br/>
 Şablon parametresi tarafından belirtilen türde bir değişken *T*.
 
-*riid*  
+*riid*<br/>
 Alınacak arabirim kimliği.
 
-*ppvObject*  
+*ppvObject*<br/>
 Bu işlem başarılı olursa, bir işaretçi bir-işaretçiye arabirimi için belirtilen parametre tarafından *riid*.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -69,5 +69,5 @@ Belirtilen arabirim kimliği. bir işaretçi alır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[RuntimeClassBaseT Yapısı](../windows/runtimeclassbaset-structure.md)  
+[RuntimeClassBaseT Yapısı](../windows/runtimeclassbaset-structure.md)<br/>
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

@@ -22,30 +22,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b9003ba503e0a78e5f223e766346d63679d9959
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2ac60fb8d1b12708c7e64a91beb224ca436e5005
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347892"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46404533"
 ---
 # <a name="frame-window-classes"></a>Çerçeve Penceresi Sınıfları
-Her uygulama bir "ana çerçeve penceresi", genellikle kendi başlıkta uygulama adına sahip bir masaüstü penceresi sahiptir. Her bir belgenin genellikle bir "belge çerçeve penceresi." sahip Belge çerçeve penceresi belgenin verileri sunan en az bir görünümü içerir.  
-  
-## <a name="frame-windows-in-sdi-and-mdi-applications"></a>Çerçeve pencereleri SDI ve MDI uygulamaları  
- SDI uygulamaya ait sınıfından türetilen bir çerçeve penceresi yok [CFrameWnd](../mfc/reference/cframewnd-class.md). Bu, ana çerçeve penceresi ve belge çerçeve penceresi penceredir. MDI uygulamaya ait ana çerçeve penceresi sınıfından türetilir [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md), ve MDI alt pencereleri olan belge çerçeve pencereleri sınıfından türetilen [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md).  
-  
-## <a name="use-the-frame-window-class-or-derive-from-it"></a>Çerçeve pencere sınıfı kullanın ya da bundan türetir  
- Bu sınıfların çoğu uygulamalarınız için gereksinim duyduğunuz çerçeve penceresi işlevsellik sağlar. Normal koşullar altında varsayılan davranış ve görünümünü sağladıkları gereksinimlerinize uygun. Ek işlevler gerekiyorsa, bu sınıflardan türetilir.  
-  
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Uygulama Sihirbazı tarafından oluşturulan çerçeve pencere sınıfları](../mfc/frame-window-classes-created-by-the-application-wizard.md)  
-  
--   [Çerçeve pencere stilleri](../mfc/frame-window-styles-cpp.md)  
-  
--   [MFC tarafından oluşturulan pencerenin stillerini değiştirme](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çerçeve Pencereleri](../mfc/frame-windows.md)
+
+Her uygulamanın bir "ana çerçeve penceresinin", genellikle kendi yazısında uygulama adı olan bir masaüstü pencere vardır. Her belge genellikle bir "Belge çerçevesi penceresinin." sahiptir Bir belge çerçevesi penceresinin belgenin verilerini sunan en az bir görünüm içerir.
+
+## <a name="frame-windows-in-sdi-and-mdi-applications"></a>SDI ve MDI uygulamaları çerçeve Windows
+
+Bir SDI uygulaması için sınıfından türetilen bir çerçeve penceresi yok [CFrameWnd](../mfc/reference/cframewnd-class.md). Bu, hem ana çerçeve penceresi ve belge çerçeve penceresi penceredir. Bir MDI uygulaması için ana çerçeve penceresinin sınıfından türetilir [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md), ve MDI alt pencereleri olan belge çerçeve pencereleri sınıfından türetilen [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md).
+
+## <a name="use-the-frame-window-class-or-derive-from-it"></a>Çerçeve pencere sınıfını kullanın veya bundan türetilmiş
+
+Bu sınıfların çoğu uygulamalarınız için ihtiyacınız olan çerçeve pencere işlevleri sağlar. Normal koşullar altında varsayılan davranış ve görünümünü sağladıkları ihtiyaçlarınıza en uygun. Ek işlevler gerekiyorsa, bu sınıflardan türetilir.
+
+### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Uygulama Sihirbazı tarafından oluşturulan çerçeve pencere sınıfları](../mfc/frame-window-classes-created-by-the-application-wizard.md)
+
+- [Çerçeve pencere stilleri](../mfc/frame-window-styles-cpp.md)
+
+- [MFC tarafından oluşturulan pencerenin stillerini değiştirme](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çerçeve Pencereleri](../mfc/frame-windows.md)
 

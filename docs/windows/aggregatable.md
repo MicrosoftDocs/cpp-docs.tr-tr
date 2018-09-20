@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3670924bace1d76f02da816dc061616a4c39e199
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e46bcd45040ffb50ec8bbd10d8d583211d0a3316
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719218"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400503"
 ---
 # <a name="aggregatable"></a>toplanabilir
 
@@ -38,7 +38,7 @@ Sınıf toplama desteklediğini belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*value*  
+*value*<br/>
 (İsteğe bağlı) COM nesnesinin ne zaman toplanabilir belirtmek için bir parametre:
 
 - `never` COM nesnesi toplanamaz.
@@ -94,7 +94,7 @@ class CMyClass {};
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Sınıf Öznitelikleri](../windows/class-attributes.md)  
-[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Sınıf Öznitelikleri](../windows/class-attributes.md)<br/>
+[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
 [Toplama](/windows/desktop/com/aggregation)  

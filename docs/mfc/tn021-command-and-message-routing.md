@@ -18,91 +18,91 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e31a35878564fc09fa6c045566811a3ff9e4b0ef
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 4d10fc56363a9ef460e0aaafadf300a2f649d5b2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37122023"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46412346"
 ---
 # <a name="tn021-command-and-message-routing"></a>TN021: Komut ve İleti Yönlendirme
 
 > [!NOTE]
->  İlk çevrimiçi belgelerinde eklenmiştir beri aşağıdaki Teknik Not güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konuları güncel veya yanlış olması olabilir. En son bilgiler için çevrimiçi belgeleri dizindeki ilgi konuyu aramak önerilir.
+>  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
 
-Bu Not genel pencere ileti akışında Gelişmiş konular yanı sıra komut Yönlendirme ve gönderme mimarisini açıklar.
+Bu Not, Gelişmiş konularına genel bir pencere ileti yönlendirme yanı sıra komut Yönlendirme ve gönderme mimarisini açıklar.
 
-Lütfen Visual C++ için burada açıklanan mimarileri hakkında genel bilgi için özellikle Windows iletiler, Denetim bildirimleri ve komutlar arasında ayrım bakın. Bu Not yazdırılan belgelerinde açıklanan sorunları çok bilginiz ve yalnızca çok Gelişmiş konular ele varsayar.
+Lütfen Visual C++ için genel ayrıntılar için burada açıklanan mimarilerde özellikle Windows iletileri, Denetim bildirimleri ve komutlar arasında ayrım bakın. Bu Not yazdırılan belgelerinde açıklanan sorunları çok aşina olduğu ve yalnızca çok Gelişmiş konular ele varsayar.
 
-## <a name="command-routing-and-dispatch-mfc-10-functionality-evolves-to-mfc-20-architecture"></a>Komut Yönlendirme ve gönderme MFC 1.0 işlevselliği dönüşmesi MFC 2.0 mimarisi
+## <a name="command-routing-and-dispatch-mfc-10-functionality-evolves-to-mfc-20-architecture"></a>Komut Yönlendirme ve gönderme MFC 1.0 işlevselliği geliştikçe MFC'ye 2.0 mimarisi
 
-Windows menü komutlarını Hızlandırıcı tuşları ve iletişim denetim bildirimleri bildirimleri sağlamak için aşırı WM_COMMAND ileti sahiptir.
+Windows, menü komutlarını Hızlandırıcı tuşları ve iletişim denetim bildirimleri bildirimleri sağlamak için aşırı yüklenmiş WM_COMMAND ileti vardır.
 
-MFC 1.0 üzerinde biraz bir komut işleyici (örneğin, "OnFileNew") vererek içinde yerleşik bir `CWnd` türetilmiş sınıf belirli WM_COMMAND yanıt olarak adlandırılan. Bu ileti eşlemesi adlı bir veri yapısı birlikte yapışmış ve çok verimli alanı komutu mekanizması olur.
+MFC 1.0 yerleşik üzerinde biraz bir komut işleyici (örneğin, "OnFileNew") sağlayarak bir `CWnd` yanıt olarak belirli bir WM_COMMAND çağrılmadığı türetilmiş. Bu ileti eşlemesi adlı bir veri yapısı ile birlikte yapışmış ve çok verimli alan komut mekanizması sonuçlanır.
 
-MFC 1.0 denetimi bildirimleri komutunun iletilerinde ayırmak için ek işlevler de sağlanır. Komutları bazen bir komut kimliği bilinen bir 16 bit kimliği ile temsil edilir Komutları normal olarak başlatmak bir `CFrameWnd` (diğer bir deyişle, menüsünü seçin veya çevrilmiş Hızlandırıcı) ve diğer windows çeşitli yönlendirilen.
+MFC 1.0 de komut iletilerini denetim bildirimleri ayırmak için ek işlevler sağlanır. Komutlar, bazen bir komut kimliği bilinen 16-bit kimliği tarafından temsil edilir Komutlar normal şekilde başlatın bir `CFrameWnd` (diğer bir deyişle, bir menü seçeneğini belirleyin veya çevrilmiş bir Hızlandırıcı) ve diğer windows çeşitli yönlendirilir.
 
-MFC 1.0 birden çok belge arabirimi (MDI) uygulaması için sınırlı bir fikir komut yönlendirme kullanılır. (Bir MDI çerçeve penceresi temsilci kendi etkin MDI alt pencere komutlarına.)
+MFC 1.0 Çok Belgeli Arabirim (MDI) uygulaması için sınırlı anlamda komut yönlendirme kullanılır. (Bir MDI çerçeve penceresinin temsilci komutları, etkin MDI alt penceresine.)
 
-Bu işlev genelleştirilmiş ve MFC 2. 0'ı geniş bir grup nesneleri (yalnızca penceresi) tarafından işlenecek komutlarına izin vermek için genişletilmiş. Daha fazla resmi sağlar ve yönlendirme için genişletilebilir mimari iletilerini ve komut hedefi için yalnızca komutların işleme, aynı zamanda bir komutu geçerli kullanılabilirliğini yansıtacak şekilde (örneğin, menü öğeleri ve araç çubuğu düğmeleri) kullanıcı Arabirimi nesnelerini güncelleştirme yönlendirme yeniden kullanır .
+Bu işlev, genelleştirilmiş ve MFC 2. 0'ı geniş bir grup nesneleri (yalnızca pencere nesneleri) tarafından işlenecek komutlarına izin vermek için genişletilmiş. Daha fazla resmi sağlar ve genişletilebilir mimari Yönlendirme iletilerini ve komut hedef yalnızca komutların işleme için aynı zamanda kullanıcı Arabirimi nesneleri (örneğin, menü öğeleri ve araç çubuğu düğmeleri) bir komut geçerli kullanılabilirliğini yansıtacak şekilde güncelleştirmek için yönlendirme kullanır .
 
 ## <a name="command-ids"></a>Komut Kimlikleri
 
-Visual C++ Yönlendirme ve bağlama işlemi komutu bir açıklaması için bkz. [Teknik Not 20](../mfc/tn020-id-naming-and-numbering-conventions.md) kimliği adlandırma hakkında bilgi içerir.
+Visual C++, Yönlendirme ve model bağlama işleminden komutu bir açıklaması için bkz. [Teknik Not 20](../mfc/tn020-id-naming-and-numbering-conventions.md) kimliği adlandırma hakkında bilgi içerir.
 
-Komut kimlikleri için genel önek "ID_" kullanırız. Komut kimlikleri > = 0x8000. İleti satırı veya durum çubuğunda komut açıklama dizesi Komut kimliği ile aynı kimliğiyle STRINGTABLE kaynak olup olmadığını gösterir
+Komut kimlikleri için genel ön eki "ID_" kullanırız. Komut kimlikleri > = 0x8000. İleti satırı veya durum çubuğu komut açıklama dizesi olarak komut kimliği. aynı kimlikleri STRINGTABLE kaynak olup olmadığını gösterir
 
-Uygulamanızı kaynaklarında kimliği için bir komut birçok yerde görüntülenir:
+Kaynakları, uygulamanızın kimliği için bir komut çeşitli yerlerde görünür:
 
--   İleti satırı istemi aynı Kimliğe sahip bir STRINGTABLE kaynak.
+- Satır içi iletisi istemi aynı Kimliğe sahip bir STRINGTABLE kaynakta.
 
--   Aynı komut çağırma menü öğelerini bağlı büyük olasılıkla birçok menü kaynakları.
+- Aynı komutu çağıran menü öğelerine bağlı muhtemelen çoğu menü kaynakları.
 
--   Aç iletişim düğmesini GOSUB komutu için (Gelişmiş).
+- Bir iletişim düğmesinde GOSUB komutu için (Gelişmiş).
 
-Uygulamanızın kaynak kodunu kimliği için bir komut birçok yerde görüntülenir:
+Uygulamanızın kaynak kodunda kimliği için bir komut çeşitli yerlerde görünür:
 
--   KAYNAĞINIZ. Y (veya diğer ana sembol üstbilgi dosyası) uygulamaya özgü komut kimlikleri tanımlamak için.
+- KAYNAĞINIZDA. Y (veya diğer ana sembol başlık dosyası) uygulamaya özgü komut kimlikleri tanımlamak için.
 
--   Araç çubuğu oluşturmak için kullanılan belki de bir kimliği dizide.
+- Araç çubuğu oluşturmak için kullanılan belki de bir kimliği dizide.
 
--   ON_COMMAND makrosu içinde.
+- ON_COMMAND makrosu içinde.
 
--   BELKİ de bir on_update_command_uı makrosu.
+- BELKİ de bir on_update_command_uı makrosu.
 
-Şu anda, yalnızca komut kimlikleri gerektirir MFC uygulamasında olması > = 0x8000 GOSUB iletişim kutuları/komutları uygulamasıdır.
+Şu anda yalnızca komut kimlikleri gerektiren bir MFC uygulamasında olması > = 0x8000 GOSUB iletişim kutuları/komutları uygulamasıdır.
 
-## <a name="gosub-commands-using-command-architecture-in-dialogs"></a>İletişim kutuları komutu mimarisinde kullanarak GOSUB komutları
+## <a name="gosub-commands-using-command-architecture-in-dialogs"></a>İletişim kutularındaki komut mimarisi kullanarak, GOSUB komutları
 
-Çerçeve pencereleri, menü öğeleri, araç çubuğu düğmeleri, iletişim çubuğu düğmelerini, diğer denetim çubukları ve isteğe bağlı ve rota komutları güncelleştirmek veya bir ana kimlikleri denetlemek için tasarlanan diğer kullanıcı arabirimi öğeleri ile Yönlendirme ve komutları etkinleştirme komutu mimarisi çalışır komut hedefi (genellikle ana çerçeve penceresi). Ana komutu hedefleyen uygun olarak diğer komutu hedef nesnelere komut veya denetim bildirimleri yol.
+Çerçeve pencereleri, menü öğeleri, araç çubuğu düğmeleri, iletişim çubuğu düğmelerinin, diğer denetim çubuklarını ve isteğe bağlı ve rota komutları güncelleştirmesi veya bir ana kimlikleri denetlemek için tasarlanmış diğer kullanıcı arabirimi öğeleri ile Yönlendirme ve komutları etkinleştirme komut mimarisi çalışır komut hedefi (genellikle ana çerçeve penceresinin). Komut veya denetim bildirimleri ana komutu hedefleyen diğer komut hedef nesneleri uygun şekilde yönlendirmek.
 
-İletişim denetimi denetim kimliği için uygun komut kimliği atadığınızda, bir iletişim kutusu (kalıcı veya geçici) komutu mimarisinin özelliklerinden bazıları yararlanabilir İletişim kutuları için destek otomatik, değil, bu nedenle birkaç ek kod yazmanız gerekir.
+Denetim Kimliği iletişim denetimi için uygun komut kimliği atarsanız (kalıcı veya kısıtlayıcı olmayan) bir iletişim komutu mimarisinin özelliklerinden bazıları yararlanabilir İletişim kutuları için destek otomatik, değil, birkaç ek kod yazmanız gerekebilir.
 
-Düzgün çalışması Bu, tüm özellikler için komut kimlikleri olması gerektiğini unutmayın > = 0x8000. Birçok iletişim kutuları için aynı çerçeve yönlendirilen için paylaşılan komutları olmalıdır > 0x8000, belirli bir iletişim kutusu paylaşılmayan IDCs olması gereken sırada = < 0x7FFF =.
+Düzgün çalışması tüm bu özellikler için komut kimlikleri olması gerektiğini unutmayın > = 0x8000. Birçok iletişim kutuları için aynı çerçeve yönlendirilen olduğundan, paylaşılan komutları olmalıdır > 0x8000, belirli bir iletişim kutusu paylaşılmayan IDCs olmalıdır ancak = < 0x7FFF =.
 
-Normal bir modal iletişim için uygun komut kimliği kümesi düğmesini IDC ile normal bir düğme yerleştirin Kullanıcı düğmesini seçtiğinde (genellikle ana çerçeve penceresi) iletişim sahibi diğer komutu gibi komutu alır. (İlk iletişim GOSUB) başka bir iletişim kutusunu açmak için genellikle kullanıldığından bu GOSUB komutu çağrılır.
+IDC için uygun komut Kimliği Ayarla düğmesi ile normal kalıcı iletişim kutusu, normal bir düğme yerleştirebilirsiniz Kullanıcı düğmeyi seçtiğinde, iletişim kutusu (genellikle ana çerçeve penceresinin) sahibi olduğu gibi başka bir komut komutu alır. (İlk iletişim GOSUB) başka bir iletişim kutusunu açmak için genellikle kullanıldığından bu GOSUB komut adı verilir.
 
-Ayrıca işlev çağırıp `CWnd::UpdateDialogControls` , iletişim kutusundaki ve ana çerçeve penceresi adresini geçirin. Bu işlevi etkinleştirmek veya komut işleyicileri çerçevede olup olmadığını göre iletişim kutusu denetimleri devre dışı. Bu işlev otomatik olarak, Denetim çubuklarını uygulamanızın boşta döngü için çağrılır, ancak bu özelliğe sahip olmasını istediğiniz doğrudan normal iletişim kutuları için çağırmanız gerekir.
+İşlevi ayrıca çağırabilir `CWnd::UpdateDialogControls` , iletişim kutusunda, ana çerçeve penceresinin adres geçirin. Bu işlevi etkinleştirmek veya komut işleyicileri çerçevede olup olmadığını göre iletişim kutusu denetimleri devre dışı bırakın. Bu işlev otomatik olarak sizin için uygulamanızın boşta döngü denetim çubukları için çağrılır, ancak bu özelliğe sahip olmasını istediğiniz doğrudan normal iletişim kutuları için çağırmanız gerekir.
 
 ## <a name="when-onupdatecommandui-is-called"></a>On_update_command_uı olduğunda çağrılır
 
-Her zaman bir programın tüm menü öğelerini etkin ve kullanıma durumunu korumak pkı'ya pahalı bir sorun olabilir. Yalnızca kullanıcı açılan seçtiğinde menü öğelerini etkinleştir/denetimi için ortak bir tekniktir. MFC 2.0 uyarlamasını `CFrameWnd` WM_INITMENUPOPUP ileti işleme ve komut yönlendirme mimarisi on_update_command_uı işleyicileri menülerde durumunu belirlemek için kullanır.
+Her zaman bir programın tüm menü öğelerini etkin ve kullanıma durumunu korumak için hesaplama açısından pahalı bir sorun olabilir. Yalnızca kullanıcı açılan seçtiğinde menü öğeleri etkinleştirme/denetimi için ortak bir tekniktir. MFC 2.0 uygulamasını `CFrameWnd` WM_INITMENUPOPUP ileti işleme ve komut yönlendirme mimarisi on_update_command_uı işleyicileri menülerde durumlarını belirlemek için kullanır.
 
-`CFrameWnd` Ayrıca durum çubuğunda (ileti satırı olarak da bilinir) öğesinin seçili geçerli menü açıklamak için WM_ENTERIDLE yapılacak işler.
+`CFrameWnd` Ayrıca durum çubuğunda (ileti satırı olarak da bilinir) seçili öğe geçerli menü açıklamak için WM_ENTERIDLE ileti işler.
 
-Visual C++ tarafından düzenlenen bir uygulamanın menü yapısı WM_INITMENUPOPUP aynı anda kullanılabilen olası komutları temsil etmek için kullanılır. On_update_command_uı işleyicileri durumu veya menü metni değiştirmek veya menü çizilmeden önce (dosya MRU Listesi veya OLE Fiiller açılır menü gibi) Gelişmiş kullanımları gerçekte menü yapısı değiştirin.
+Uygulama menüsü yapısı, Visual C++ tarafından düzenlenemez WM_INITMENUPOPUP zaman kullanılabilir olası komutları temsil etmek için kullanılır. On_update_command_uı işleyicileri, durum veya bir menü metnini değiştirme veya menü çizilmeden önce (dosya MRU Listesi veya OLE fiilleri açılan menü gibi) Gelişmiş kullanımları gerçekten menüsü yapısı değiştirin.
 
-On_update_command_uı işleme aynı tür araç çubukları (ve diğer denetim çubukları) yapılır uygulama boşta döngü girdiğinde. Bkz: *sınıf kitaplığı başvurusu* ve [Teknik Not 31](../mfc/tn031-control-bars.md) denetim çubukları hakkında daha fazla bilgi için.
+Araç çubukları (ve diğer denetim çubukları) on_update_command_uı işleme aynı sıralama yapılır, boşta döngü girdiğinde uygulama. Bkz: *sınıf kitaplığı başvurusu* ve [Teknik Not 31](../mfc/tn031-control-bars.md) denetim çubukları hakkında daha fazla bilgi için.
 
-## <a name="nested-pop-up-menus"></a>İç içe geçmiş açılır menüler
+## <a name="nested-pop-up-menus"></a>İç içe açılır menüler
 
-İç içe geçmiş menü yapısı kullanıyorsanız, açılır menüde ilk menü öğesi için on_update_command_uı işleyicisi iki farklı durumlarda çağrılır fark edeceksiniz.
+İç içe geçmiş menüsü yapısı kullanıyorsanız, ilk açılan menü öğesi için on_update_command_uı işleyicisi iki farklı durumlarda çağrılır fark edeceksiniz.
 
-İlk olarak, bu açılır menü için kendisini adı verilir. Açılır menüler kimlikleri yoktur ve tüm açılır menüyü başvurmak için açılır menüyü ilk menü öğesi Kimliğini kullanırız olduğundan bu işlem gereklidir. Bu durumda, *m_pSubMenu* üye değişken `CCmdUI` nesnesi NULL olmamalıdır ve açılır menüyü işaret edecek.
+İlk olarak, açılan menü için kendisini adlandırılır. Bu, açılır menüler kimliklere sahip olmadığınızdan ve açılır menüsünden ilk menü öğesinin kimliği tüm menüye başvurmak için kullandığımız için gereklidir. Bu durumda, *m_pSubMenu* üye değişkeninin `CCmdUI` nesnesi NULL olmayan olacaktır ve açılır menüyü işaret edecek.
 
-İkinci olarak, yalnızca açılır menüde menü öğeleri çizilecek önce çağrılır. Bu durumda, yalnızca ilk menü öğesine Kimliğine başvuruyor ve *m_pSubMenu* üye değişken `CCmdUI` nesnesi, NULL olur.
+İkinci olarak, yalnızca çizilecek menü öğelerinin açılan menüden çıkmadan önce çağrılır. Bu durumda, kimliği yalnızca ilk menü öğesine başvurur ve *m_pSubMenu* üye değişkeninin `CCmdUI` nesnesi NULL olacaktır.
 
-Bu açılır menü menü öğelerinden farklı etkinleştirmenize olanak sağlar, ancak bazı menü kullanan kodlar yazmak gerektirir. Örneğin, bir iç içe geçmiş menüde şu yapıda:
+Bu, açılan menüyü menü öğelerinden farklı etkinleştirmenize izin verir, ancak bazı menü uyumlu kod yazmanız gerekir. Örneğin, bir iç içe geçmiş menüde aşağıdaki yapıya sahip:
 
 ```Output
 File>
@@ -111,9 +111,9 @@ File>
     Chart (ID_NEW_CHART)
 ```
 
-ID_NEW_SHEET ve ID_NEW_CHART komutlar bağımsız olarak devre dışı veya etkinleştirilebilir. **Yeni** iki ya da etkinse açılır menü'nin etkinleştirilmesi gerekir.
+ID_NEW_SHEET ve ID_NEW_CHART komutlar bağımsız olarak devre dışı bırakabilir veya etkinleştirilebilir. **Yeni** iki ya da etkinse açılır menü'nin etkinleştirilmesi gerekir.
 
-Komut işleyici ID_NEW_SHEET (açılan ilk komutu) için şöyle görünür:
+Komut işleyici ID_NEW_SHEET (açılan ilk komut) için şunun gibi görünür:
 
 ```cpp
 void CMyApp::OnUpdateNewSheet(CCmdUI* pCmdUI)
@@ -125,7 +125,7 @@ void CMyApp::OnUpdateNewSheet(CCmdUI* pCmdUI)
         // CCmdUI::Enable is a no-op for this case, so we
         // must do what it would have done.
         pCmdUI->m_pMenu->EnableMenuItem(pCmdUI->m_nIndex,
-            MF_BYPOSITION | 
+            MF_BYPOSITION |
             (bEnable  MF_ENABLED : (MF_DISABLED | MF_GRAYED)));
 
         return;
@@ -135,7 +135,7 @@ void CMyApp::OnUpdateNewSheet(CCmdUI* pCmdUI)
 }
 ```
 
-ID_NEW_CHART komut işleyici normal güncelleştirme komut işleyici ve görünüm şuna benzer olacaktır:
+Komut işleyici ID_NEW_CHART için normal güncelleştirme komut işleyicisi ve görünüm şuna benzer olacaktır:
 
 ```cpp
 void CMyApp::OnUpdateNewChart(CCmdUI* pCmdUI)
@@ -146,30 +146,30 @@ void CMyApp::OnUpdateNewChart(CCmdUI* pCmdUI)
 
 ## <a name="oncommand-and-onbnclicked"></a>ON_COMMAND ve ON_BN_CLICKED
 
-İleti eşleme makroları için **ON_COMMAND** ve **ON_BN_CLICKED** aynıdır. MFC komut ve denetim bildirim yönlendirme yalnızca komut kimliği yönlendirmek yere karar verme için mekanizması kullanır. Denetim bildirimleri denetim bildirim koduyla sıfır (**BN_CLICKED**) komutları olarak yorumlanır.
+İleti eşleme makroları için **ON_COMMAND** ve **ON_BN_CLICKED** aynıdır. MFC komut ve denetim bildirimi yönlendirme mekanizması yalnızca yönlendirmek nereye iletileceğine karar veren komut Kimliğini kullanır. Denetim bildirimleri denetim bildirimi koduyla sıfır (**BN_CLICKED**) komutları yorumlanır.
 
 > [!NOTE]
-> Aslında, tüm denetimi bildirim iletileri komut işleyici zinciri gidin. Örneğin, bir denetim bildirim işleyicisi yazmanız için teknik olarak olası olmakla **EN_CHANGE** belge sınıfınızda. Bu, bu özelliğin pratik uygulamalar birkaç olduğundan, özelliği ClassWizard tarafından desteklenmez ve özelliğinin kırılacak kodda sonuçlanabilir genellikle önerilmez.
+> Aslında, tüm denetimi bildirim iletileri komut işleyicisi domainproperty'leri gidin. Örneğin, bir denetim bildirimi işleyicisi yazmanız için teknik olarak mümkün **EN_CHANGE** belge sınıfınızdaki. Bu pratik uygulamalar, bu özelliğin birkaç özellik ClassWizard tarafından desteklenmez ve kırılgan kodda özelliğinin kullanımına neden olabilir çünkü genellikle önerilmez.
 
-## <a name="disabling-the-automatic-disabling-of-button-controls"></a>Otomatik düğmesi denetimleri devre dışı bırakma devre dışı bırakma
+## <a name="disabling-the-automatic-disabling-of-button-controls"></a>Otomatik düğme denetimleri devre dışı bırakma devre dışı bırakma
 
-Bir iletişim çubuğu düğme denetimi yerleştirin ya da nerede kullanarak bir iletişim kutusunda, aradığınız **CWnd::UpdateDialogControls** kendi kendinize, olmayan bu düğmeler görürsünüz **ON_COMMAND** veya **On_update_command_uı** işleyicileri otomatik olarak devre dışı bırakılacak sizin için çerçevesi tarafından. Bazı durumlarda, bir işleyiciye sahip gerekmez, ancak etkin kalmaya devam düğmesine isteyeceksiniz. Bunu elde etmenin en kolay yolu (ClassWizard ile yapmak kolay) bir kukla komut işleyici eklemektir ve boş yapın.
+Bir iletişim çubuğu üzerindeki bir düğme denetimi getirin ya da nereye kullanarak iletişim kutusunda, aradığınız **CWnd::UpdateDialogControls** sizin olmayan düğmeler görürsünüz **ON_COMMAND** veya **On_update_command_uı** işleyicileri otomatik olarak devre dışı bırakılacak sizin için framework tarafından. Bazı durumlarda, bir işleyici olması gerekmez, ancak etkin kalmaya devam düğmesine isteyeceksiniz. Bunu yapmanın en kolay yolu (ClassWizard ile kolayca) bir işlevsiz bir komut işleyici eklemektir ve boş yapın.
 
 ## <a name="window-message-routing"></a>Pencere ileti yönlendirme
 
-Aşağıdaki MFC sınıfları ve nasıl ileti Windows Yönlendirme ve diğer konular etkileyen bazı daha gelişmiş konular açıklar. Burada yer alan bilgiler yalnızca kısaca açıklanmıştır. Başvurmak *sınıf kitaplığı başvurusu* ortak API'ler hakkında ayrıntılı bilgi için. MFC kitaplık kaynak kodu uygulama ayrıntıları hakkında daha fazla bilgi için lütfen bakın.
+Aşağıdaki MFC sınıflarını ve nasıl Windows ileti yönlendirme ve diğer konular etkileyen bazı daha ileri seviyeli konulara açıklar. Buradaki bilgiler yalnızca kısaca açıklanmıştır. Başvurmak *sınıf kitaplığı başvurusu* genel API'ler ile ilgili ayrıntılar için. MFC Kitaplığı kaynak kodunu uygulama ayrıntıları hakkında daha fazla bilgi için bkz.
 
-Lütfen [Teknik Not 17](../mfc/tn017-destroying-window-objects.md) penceresi temizleme hakkında ayrıntılar, tüm için çok önemli bir konu için **CWnd**-türetilmiş sınıfları.
+Lütfen [Teknik Not 17](../mfc/tn017-destroying-window-objects.md) penceresi temizleme hakkında ayrıntılı bilgi, tüm için çok önemli bir konu **CWnd**-türetilmiş sınıflar.
 
 ## <a name="cwnd-issues"></a>CWnd sorunları
 
-Uygulama üye fonksiyonu **CWnd::OnChildNotify** kanca veya aksi halde, iletileri, komutlar ve denetim haberdar olmak alt windows (denetimleri olarak da bilinir) için güçlü ve Genişletilebilir bir mimari sağlar kendi üst (veya "sahip") için gönderilen bildirimler. Varsa alt pencere (/ kontrol) bir C++ olan **CWnd** kendisini sanal işlev nesnesi **OnChildNotify** parametrelerle özgün iletiden önce çağırılır (diğer bir deyişle, bir **MSG**yapısı). Alt pencere ileti bırakır, onu yemek veya üst (nadir) iletiyi değiştirin.
+Uygulama üye işlevi **CWnd::OnChildNotify** kanca veya iletileri, komutlar ve denetim Aksi takdirde bilgilendirilmek alt pencereler (denetimleri olarak da bilinir) için güçlü ve Genişletilebilir bir mimari sağlar. kendi üst (veya "sahip") Git bildirimleri. Varsa alt penceresi (/ Denetim) bir c++ **CWnd** kendisi, sanal işlev nesnesi **OnChildNotify** parametrelerle özgün iletiden önce çağırılır (diğer bir deyişle, bir **MSG**yapısı). Alt pencere iletiyi bırakır, Yemek veya üst (nadir) iletiyi değiştirin.
 
-Varsayılan **CWnd** uygulama kullanır ve aşağıdaki iletileri işler **OnChildNotify** kanca alt windows (denetimler) ilk erişimi iletiye izin ver:
+Varsayılan **CWnd** uygulama aşağıdaki iletileri işler ve kullandığı **OnChildNotify** kanca alt iletiye ilk erişmek için windows (denetimler) izin vermek için:
 
-- **WM_MEASUREITEM** ve **WM_DRAWITEM** (için kendi kendine çizin)
+- **WM_MEASUREITEM** ve **WM_DRAWITEM** (için kendi kendine çizmek)
 
-- **WM_COMPAREITEM** ve **WM_DELETEITEM** (için kendi kendine çizin)
+- **WM_COMPAREITEM** ve **WM_DELETEITEM** (için kendi kendine çizmek)
 
 - **WM_HSCROLL** ve **WM_VSCROLL**
 
@@ -177,43 +177,43 @@ Varsayılan **CWnd** uygulama kullanır ve aşağıdaki iletileri işler **OnChi
 
 - **WM_PARENTNOTIFY**
 
-Fark edeceksiniz **OnChildNotify** kanca sahip çizim iletileri kendi kendine çizin iletilere değiştirmek için kullanılır.
+Fark edeceksiniz **OnChildNotify** kanca, sahip çizim iletileri kendi kendine çizmek iletilere değiştirmek için kullanılır.
 
-Ek olarak **OnChildNotify** kanca, kaydırma iletileriniz daha fazla davranış yönlendirme. Lütfen aşağıda kaydırma çubukları ve kaynaklarıyla ilgili daha ayrıntılı bilgi için bkz: **WM_HSCROLL** ve **WM_VSCROLL** iletileri.
+Ek olarak **OnChildNotify** kanca, kaydırma iletileriniz davranışını daha fazla yönlendirme. Lütfen aşağıda kaydırma çubukları ve kaynakları hakkında daha fazla bilgi için bkz **WM_HSCROLL** ve **WM_VSCROLL** iletileri.
 
 ## <a name="cframewnd-issues"></a>CFrameWnd sorunları
 
-**CFrameWnd** SAX komut Yönlendirme ve kullanıcı arabirimi çoğu uygulama güncelleştiriliyor. Bu uygulamanın ana çerçeve penceresi için öncelikle kullanılır (**CWinApp::m_pMainWnd**), ancak tüm çerçeve windows için geçerlidir.
+**CFrameWnd** SAX komut Yönlendirme ve kullanıcı arabirimi çoğu uygulama güncelleştiriliyor. Bu uygulamanın ana çerçeve penceresi için öncelikli olarak kullanılır (**CWinApp::m_pMainWnd**) ancak tüm çerçeve pencereleri için geçerlidir.
 
-Ana çerçeve penceresi menü çubuğu penceresiyle ve durum çubuğunun üst ya da ileti satır. Komut yönlendirme yukarıdaki tartışma için lütfen bakın ve **WM_INITMENUPOPUP.**
+Ana çerçeve penceresinin menü çubuğunu penceresiyle ve durum çubuğunun üst veya ileti satır. Komut yönlendirme yukarıdaki bilgi edinmek ve **WM_INITMENUPOPUP.**
 
-**CFrameWnd** sınıfı etkin görünüm yönetimini sağlar. Aşağıdaki iletileri etkin görünüm üzerinden yönlendirilir:
+**CFrameWnd** sınıfı etkin görünüm yönetimini sağlar. Şu iletilerden etkin görünüm yönlendirilir:
 
-- Tüm komut iletileri (Etkin görünüm ilk erişmesini alır).
+- Tüm komut iletileri (ilk erişim sağlaması için etkin görünüm alır).
 
 - **WM_HSCROLL** ve **WM_VSCROLL** eşdüzey iletilerden kaydırma çubukları (aşağıya bakın).
 
-- **WM_ACTIVATE** (ve **WM_MDIACTIVATE** MDI için) sanal işlev çağrıları içine açık **CView::OnActivateView**.
+- **WM_ACTIVATE** (ve **WM_MDIACTIVATE** MDI için) sanal işlev için çağrılar içine açık **CView::OnActivateView**.
 
 ## <a name="cmdiframewndcmdichildwnd-issues"></a>CMDIFrameWnd/Cmdıchildwnd sorunları
 
-Her iki MDI çerçeve penceresi sınıfları türetin **CFrameWnd** ve bu nedenle her ikisi de aynı sıralama komut yönlendirme etkinleştirilir ve kullanıcı arabirimi güncelleştirme sağlanan **CFrameWnd**. Bir uygulamada tipik MDI, yalnızca ana çerçeve penceresi (diğer bir deyişle, **CMDIFrameWnd** nesnesi) menü çubuğu ve durum çubuğu tutar ve bu nedenle ana komut yönlendirme uygulama kaynağıdır.
+Her iki MDI çerçeve penceresi sınıfları türetilmesi **CFrameWnd** ve bu nedenle her ikisi de aynı sıralama komut yönlendirme etkinleştirilir ve kullanıcı arabirimi güncelleştirilirken karşılaşılan **CFrameWnd**. Tipik bir MDI uygulamasında yalnızca ana çerçeve penceresi (diğer bir deyişle, **CMDIFrameWnd** nesnesi) menü çubuğu ve durum çubuğu tutar ve bu nedenle komut yönlendirme uygulamasının ana kaynağı.
 
-Genel Yönlendirme etkin MDI alt pencere komutları ilk erişim alır düzenidir. Varsayılan **PreTranslateMessage** işlevleri işlemek için her iki MDI alt pencereleri Hızlandırıcı tabloları (ilk) ve MDI çerçevesi tarafından normal olarak ele standart MDI sistem komutu Hızlandırıcıları yanı sıra (ikinci)  **TranslateMDISysAccel** (son).
+Genel Yönlendirme etkin MDI alt penceresine ilk komutlarına erişimi alır düzenidir. Varsayılan **PreTranslateMessage** işlevleri işlemek için her iki MDI alt pencereleri Hızlandırıcı tabloları (ilk) ve MDI çerçeve tarafından normal olarak ele standart MDI sistem komutu Hızlandırıcıları yanı sıra (saniye)  **TranslateMDISysAccel** (son).
 
 ## <a name="scroll-bar-issues"></a>Kaydırma çubuğu sorunları
 
-Kaydırma iletiyi işlerken (**WM_HSCROLL**/**OnHScroll** ve/veya **WM_VSCROLL**/**OnVScroll**), burada kaydırma çubuğu iletinin geldiği kalmaz şekilde işleyici kod yazmaya denemelisiniz. Kaydırma iletileri doğru kaydırma çubuğu denetimleri ya da gelebilir beri bu yalnızca bir genel Windows sorun değil **WS_HSCROLL**/**WS_VSCROLL** kaydırma çubuğu denetimleri olmayan Çubukları'e gidin.
+Kaydırma iletisi işlenirken (**WM_HSCROLL**/**OnHScroll** ve/veya **WM_VSCROLL**/**OnVScroll**), burada kaydırma çubuğu iletinin geldiği kullanmayan şekilde işleyicisi kodu yazmak çalışmanız gerekir. Kaydırma iletileri doğru kaydırma çubuğu denetimleri veya gelen gelebilir olduğundan bu yalnızca bir genel Windows sorunu değildir **WS_HSCROLL**/**WS_VSCROLL** kaydırma çubuğu denetimleri olmayan Çubukları'e gidin.
 
-MFC genişletir, alt veya eşdüzey kaydırılan penceresinin kaydırma çubuğu denetimleri için izin vermek için (aslında, kaydırma çubuğu ve pencere kaydırılan üst/alt ilişkisi herhangi bir şey olabilir). Bu, özellikle Bölümlendirici pencereler ile paylaşılan kaydırma çubukları için önemlidir. Lütfen [Teknik Not 29](../mfc/tn029-splitter-windows.md) uygulanması hakkında ayrıntılı bilgi için **CSplitterWnd** daha fazla bilgi dahil olmak üzere paylaşılan kaydırma çubuğu sorunları.
+MFC, alt veya eşdüzey kaydırılan pencerenin gibi kaydırma çubuğu denetimleri için izin verecek şekilde genişletir (aslında, üst/alt ilişkisi kaydırılan penceresi ve kaydırma çubuğu arasında herhangi bir şey olabilir). Bu, özellikle Bölümlendirici pencereler ile paylaşılan kaydırma çubukları için önemlidir. Lütfen [Teknik Not 29](../mfc/tn029-splitter-windows.md) uygulanışı hakkında ayrıntılı bilgi için **CSplitterWnd** paylaşılan kaydırma çubuğu sorunları dahil daha fazla bilgi.
 
-Yan Not üzerinde var olan iki **CWnd** burada konumunda belirtilen kaydırma çubuğu stilleri oluşturma süresi türetilen sınıflar yakalanan ve Windows geçmedi. Oluşturma yordamına geçirildiğinde **WS_HSCROLL** ve **WS_VSCROLL** bağımsız olarak ayarlanabilir, ancak oluşturma değiştirilemez. Elbette, doğrudan test veya gerekir oluşturuldukları penceresinin WS_SCROLL stili biti ayarlanmış.
+Yan Not üzerinde var olan iki **CWnd** durum belirtilen kaydırma çubuğu stilleri oluşturduğunuz zaman türetilen sınıfların yakalanan ve Windows için geçmedi. Bir oluşturma yordamına geçirildiğinde **WS_HSCROLL** ve **WS_VSCROLL** bağımsız olarak ayarlanabilir, ancak oluşturulduktan değiştirilemez. Elbette, doğrudan test veya gerekir oluşturdukları penceresinin WS_SCROLL stili BITS ayarlayın.
 
-İçin **CMDIFrameWnd** kaydırma çubuğu stilleri için ilettiğiniz **oluşturma** veya **LoadFrame** MDICLIENT oluşturmak için kullanılır. Ayarladığınızdan emin olun bir kaydırılabilir MDICLIENT alanı (gibi Windows programı Yöneticisi) sahip isterseniz, her ikisi de kaydırma stilleri (**WS_HSCROLL** &#124; **WS_VSCROLL**) oluşturmakiçinkullanılanstiliiçin**CMDIFrameWnd**.
+İçin **CMDIFrameWnd** kaydırma çubuğu stilleri, için geçirdiğiniz **Oluştur** veya **LoadFrame** MDICLIENT oluşturmak için kullanılır. Ayarladığınızdan emin olun kaydırılabilir bir MDICLIENT alanı (gibi Windows programı Yöneticisi) sahip olmasını isterseniz, her ikisi de kaydırma stilleri (**WS_HSCROLL** &#124; **WS_VSCROLL**) oluşturmakiçinkullanılanstil**CMDIFrameWnd**.
 
-İçin **CSplitterWnd** Bölümlendirici bölgeler için özel paylaşılan kaydırma çubukları kaydırma çubuğu stilleri uygulamak. Statik Bölümlendirici pencereler için her iki kaydırma çubuğu stilini ayarlamanız normalde değil. Dinamik Bölümlendirici pencereler için kaydırma çubuğu, bölme, diğer bir deyişle, yön için stil kümesi genellikle olacaktır **WS_HSCROLL** satır bölerseniz **WS_VSCROLL** sütunları bölerseniz.
+İçin **CSplitterWnd** kaydırma çubuğu stilleri özel paylaşılan kaydırma çubuklarının Bölümlendirici bölgeleri için geçerlidir. Statik Bölümlendirici pencereler için ya da kaydırma çubuğu stili olarak normalde. Dinamik Bölümlendirici pencereler için kaydırma çubuğunu stil kümesi ikiye bölerek, diğer bir deyişle, yön için genellikle olacaktır **WS_HSCROLL** satır bölmeniz **WS_VSCROLL** sütunları bölmeniz.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)  
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)  
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)

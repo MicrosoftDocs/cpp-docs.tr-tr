@@ -20,24 +20,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e88a26c96564a75a41f221302169dd1f1e46e9e2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3883a28e58e023630955cc1385e2a9c2db460fb2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33367178"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46447901"
 ---
 # <a name="child-window-notification-message-handlers"></a>Alt Pencere Bildirim İletisi İşleyicileri
-Alt pencere bildirim iletileri beş kategoriye ayrılır:  
-  
-|Kategori|Açıklama|  
-|--------------|-----------------|  
-|[Genel Denetim İşleyicisi](../../mfc/reference/generic-control-handler.md)|Genel Denetim bildirim kodları için işleyici.|  
-|[Kullanıcı Düğmesi İşleyicileri](../../mfc/reference/user-button-handlers.md)|Kullanıcı düğmesi bildirim kodları için işleyiciler.|  
-|[Birleşik Giriş Kutusu İşleyicileri](../../mfc/reference/combo-box-handlers.md)|Birleşik giriş kutusu bildirim kodları için işleyiciler.|  
-|[Denetim İşleyicilerini Düzenleme](../../mfc/reference/edit-control-handlers.md)|Düzenle denetim bildirim kodları için işleyiciler.|  
-|[Liste Kutusu İşleyicileri](../../mfc/reference/list-box-handlers.md)|Liste kutusu bildirim kodları için işleyiciler.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)
+
+Alt pencere bildirim iletileri beş kategorisi vardır:
+
+|Kategori|Açıklama|
+|--------------|-----------------|
+|[Genel Denetim İşleyicisi](../../mfc/reference/generic-control-handler.md)|Bildirim kodları genel denetim işleyicisi.|
+|[Kullanıcı Düğmesi İşleyicileri](../../mfc/reference/user-button-handlers.md)|Kullanıcı düğmesi bildirim kodları için işleyiciler.|
+|[Birleşik Giriş Kutusu İşleyicileri](../../mfc/reference/combo-box-handlers.md)|Birleşik giriş kutusu bildirim kodları için işleyiciler.|
+|[Denetim İşleyicilerini Düzenleme](../../mfc/reference/edit-control-handlers.md)|İşleyicileri için Denetim bildirimi düzenleyin.|
+|[Liste Kutusu İşleyicileri](../../mfc/reference/list-box-handlers.md)|Liste kutusu bildirim kodları için işleyiciler.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)
 

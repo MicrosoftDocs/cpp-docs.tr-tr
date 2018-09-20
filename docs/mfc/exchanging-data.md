@@ -16,24 +16,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e503bd9268423fbe63ec76de4bcb5443a7d52696
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 504d2ff9f011770f75db73a63fa77b821281269b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345826"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435564"
 ---
 # <a name="exchanging-data"></a>Veri Değişimi
-Çoğu iletişim kutuları gibi özellik sayfasında ve uygulama arasında veri alışverişi özellik sayfasının en önemli işlevleri biridir. Bu makalede, bu görevi gerçekleştirmek açıklar.  
-  
- Bir özellik sayfası ile veri değişimi özellik sayfası tek tek özellik sayfaları ile veri değişimi, aslında bir konudur. Özellik sayfası ile veri değişimi yordamı beri bir iletişim kutusu veri değişimi aynıdır bir [CPropertyPage](../mfc/reference/cpropertypage-class.md) nesnesidir yalnızca özel [CDialog](../mfc/reference/cdialog-class.md) nesnesi. Yordam, bir iletişim kutusu ve üye değişkenleri iletişim kutusu nesnesinin denetimlerinde arasında veri alış verişleri framework'ün iletişim kutusu veri değişimi (DDX) özelliği, yararlanır.  
-  
- Bir özellik sayfası ile normal iletişim kutusu veri değişimi arasındaki en önemli fark, özellik sayfasında tüm sayfaları ile veri değişimi gerekir böylece özellik sayfasını birden çok sayfa sahip olur. DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md).  
-  
- Aşağıdaki örnek, bir görünüm ve özellik sayfasının iki sayfaları arasında veri değiş tokuşu gösterilmektedir:  
-  
- [!code-cpp[NVC_MFCDocView#4](../mfc/codesnippet/cpp/exchanging-data_1.cpp)]  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özellik sayfaları](../mfc/property-sheets-mfc.md)
+
+Çoğu iletişim kutuları gibi olan özellik sayfası ve uygulama arasında veri alışverişi, özellik sayfasının en önemli işlevleri biridir. Bu makalede, bu görevi nasıl gerçekleştireceğinizi açıklar.
+
+Bir özellik sayfası ile veri değişimi özellik sayfasının tek tek özellik sayfaları ile veri değişimi, aslında bir konudur. Özellik sayfası ile veri değişimi yordamı beri bir iletişim kutusu veri değişimi aynıdır bir [CPropertyPage](../mfc/reference/cpropertypage-class.md) nesnedir yalnızca özelleştirilmiş [CDialog](../mfc/reference/cdialog-class.md) nesne. Yordamı, bir iletişim kutusu ve üye değişkenleri iletişim kutusu nesnenin denetimlerin arasında veri framework'ün iletişim kutusu veri değişimi (DDX) özelliği, yararlanır.
+
+Bir özellik sayfası ve normal bir iletişim kutusu veri değişimi arasındaki en önemli fark, özellik sayfasında tüm sayfaları ile veri değişimi gerekir böylece birden fazla sayfa özellik sayfası sahip olur. DDX hakkında daha fazla bilgi için bkz. [iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md).
+
+Aşağıdaki örnek bir görünümü ve bir özellik sayfası iki sayfaları arasında veri değiş tokuşu gösterilmektedir:
+
+[!code-cpp[NVC_MFCDocView#4](../mfc/codesnippet/cpp/exchanging-data_1.cpp)]
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Özellik sayfaları](../mfc/property-sheets-mfc.md)
 

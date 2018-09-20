@@ -29,37 +29,38 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2385efcef9949eab60b1542b2039e3ff2ac80e38
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: ae80d7e74c44367b608329ee86633fef6cb510b6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36930865"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405729"
 ---
 # <a name="dialog-data-exchange"></a>İletişim Kutusu Veri Değişimi
-DDX mekanizması kullanırsanız, iletişim kutusunun Başlangıç değerlerini nesnenin üye değişkenleri, genellikle ayarlamak, `OnInitDialog` işleyicisi veya iletişim Oluşturucusu. İletişim kutusu görüntülenmeden önce framework'ün DDX mekanizması nerede göründüklerinden iletişim kutusu denetimleri için üye değişkenlerin değerleri aktarır hemen iletişim kutusu görüntülendiğinde yanıt olarak `DoModal` veya `Create`. Varsayılan uygulaması `OnInitDialog` içinde `CDialog` çağrıları `UpdateData` sınıfının üye işlevini `CWnd` iletişim kutusu denetimleri başlatılamadı.  
-  
- Kullanıcı Tamam düğmesine tıkladığında aynı mekanizmayı değerleri denetimleri için üye değişkenleri aktarır (veya çağırmanız her `UpdateData` üye işlevi bağımsız değişkeniyle **TRUE**). İletişim kutusu veri doğrulama mekanizmasını doğrulama kuralları belirtilen tüm veri öğelerinin doğrular.  
-  
- Aşağıdaki şekilde iletişim kutusu veri değişimi gösterilmektedir.  
-  
- ![İletişim kutusu veri değişimi](../mfc/media/vc379d1.gif "vc379d1")  
-İletişim Kutusu Veri Değişimi  
-  
- `UpdateData` Her iki yönde belirtildiği gibi çalışır **BOOL** kendisine geçirilen parametre. Exchange taşımak için `UpdateData` ayarlayan bir `CDataExchange` nesne ve çağrıları iletişim sınıfınızın geçersiz kılmak `CDialog`'s `DoDataExchange` üye işlevi. `DoDataExchange` bir bağımsız değişken türü `CDataExchange`. `CDataExchange` Nesne geçirilen `UpdateData` gibi bilgileri exchange yönünü tanımlama exchange bağlamını temsil eder.  
-  
- Ne zaman sizin (veya bir kod sihirbaz) geçersiz kılma `DoDataExchange`, veri üyesi (Denetim) başına bir DDX işlevi çağrısı belirtin. Her DDX işlevi tarafından sağlanan bağlam göre her iki yönde veri değişimi bildiği `CDataExchange` geçirilen bağımsız değişken, `DoDataExchange` tarafından `UpdateData`.  
-  
- MFC exchange farklı türde pek çok DDX işlevleri sağlar. Aşağıdaki örnekte gösterildiği bir `DoDataExchange` geçersiz kılma hangi iki DDX işlevleri ve bir DDV işlevi çağrılır:  
-  
- [!code-cpp[NVC_MFCControlLadenDialog#49](../mfc/codesnippet/cpp/dialog-data-exchange_1.cpp)]  
-  
- `DDX_` Ve `DDV_` satırlar mevcut bir veri eşleme. Gösterilen örnek DDX ve DDV bir onay kutusu ve bir düzenleme kutusu denetimi için sırasıyla işlevlerdir.  
-  
- Kalıcı iletişim kutusu, kullanıcı iptal ederse `OnCancel` üye işlevi iletişim kutusunu sonlandırır ve `DoModal` değeri döndürür **IDCANCEL**. Bu durumda, veri iletişim kutusu ile iletişim nesnesi arasında değiştirilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md)   
- [İletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)   
- [İletişim Verisi Doğrulama](../mfc/dialog-data-validation.md)
+
+DDX mekanizması kullanırsanız, iletişim kutusunun Başlangıç değerlerini nesnenin üye değişkenleri genellikle içinde ayarladığınız, `OnInitDialog` işleyicisi ya da iletişim Oluşturucusu. İletişim kutusu görüntülenmeden önce framework'ün DDX mekanizması göründüğü iletişim kutusu denetimleri için üye değişkenlerinin değerlerini aktarır hemen iletişim kutusu göründüğünde yanıt olarak `DoModal` veya `Create`. Varsayılan uygulaması `OnInitDialog` içinde `CDialog` çağrıları `UpdateData` sınıfının üye işlevinde `CWnd` iletişim kutusu denetimleri başlatılamadı.
+
+Kullanıcı Tamam düğmesine tıkladığında mekanizma değerleri denetimleri için üye değişkenleri aktarır (veya çağırmanızı her `UpdateData` üye işlevi bağımsız değişken ile **TRUE**). İletişim kutusu veri doğrulama mekanizmasını doğrulama kuralları belirtilen tüm veri öğeleri doğrular.
+
+Aşağıdaki şekil, iletişim kutusu veri değişimi gösterir.
+
+![İletişim kutusu veri değişimi](../mfc/media/vc379d1.gif "vc379d1") iletişim kutusu veri değişimi
+
+`UpdateData` Her iki yönde belirtildiği gibi çalışır **BOOL** kendisine geçirilen parametre. Exchange taşımak için `UpdateData` ayarlayan bir `CDataExchange` iletişim sınıfınızın geçersiz nesne ve çağrıları `CDialog`'s `DoDataExchange` üye işlevi. `DoDataExchange` türünde bir bağımsız değişken `CDataExchange`. `CDataExchange` Geçirilen nesne `UpdateData` gibi bilgiler exchange yönünü tanımlama exchange bağlamını temsil eder.
+
+Ne zaman (veya bir kod Sihirbazı) geçersiz kılma `DoDataExchange`, veri üyesi (Denetim) başına tek bir DDX işlevi çağrısı belirtin. Her DDX işlevi tarafından sağlanan bağlam göre her iki yönde veri değişimi nasıl bilir `CDataExchange` geçirilen bağımsız değişken, `DoDataExchange` tarafından `UpdateData`.
+
+MFC exchange farklı türde birçok DDX işlevleri sağlar. Aşağıdaki örnekte gösterildiği bir `DoDataExchange` geçersiz kılma iki hangi DDX işlevleri ve bir DDV işlevi çağrılır:
+
+[!code-cpp[NVC_MFCControlLadenDialog#49](../mfc/codesnippet/cpp/dialog-data-exchange_1.cpp)]
+
+`DDX_` Ve `DDV_` satırla veri eşlemesi. Gösterilen örnek DDX ve DDV işlevleri sırasıyla bir onay kutusu denetimi ve bir düzenleme kutusu denetim içindir.
+
+Kalıcı bir iletişim kutusu, kullanıcı iptal ederse `OnCancel` üye işlevi iletişim kutusunu sonlandırır ve `DoModal` değeri döndürür **IDCANCEL**. Bu durumda, veri iletişim nesnesi iletişim kutusu arasında değiştirilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İletişim Kutusu Veri Değişimi ve Doğrulaması](../mfc/dialog-data-exchange-and-validation.md)<br/>
+[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)<br/>
+[İletişim Verisi Doğrulama](../mfc/dialog-data-validation.md)
 

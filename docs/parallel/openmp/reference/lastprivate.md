@@ -16,38 +16,42 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c87dfc47f7f2554e75567a1de4ea9cb2e06eaa00
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7124e51b604a55d049be13d3bbcccc4e5810ca67
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46028200"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46412840"
 ---
 # <a name="lastprivate"></a>lastprivate
-Değişkeni kapsayan bir bağlamın sürümü hangi iş parçacığının son yineleme (for-döngüsü yapısı) ya da son bölümdeki (#pragma bölümleri) yürüten özel sürümüne eşit ayarlandığını belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-lastprivate(var)  
-```  
-  
+
+Değişkeni kapsayan bir bağlamın sürümü hangi iş parçacığının son yineleme (for-döngüsü yapısı) ya da son bölümdeki (#pragma bölümleri) yürüten özel sürümüne eşit ayarlandığını belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+lastprivate(var)
+```
+
 ### <a name="parameters"></a>Parametreler
-  
+
 *var*<br/>
-Hangi iş parçacığının özel bir sürümünü ayarlanır değişkeni son yineleme (for-döngüsü yapısı) ya da son bölümdeki (#pragma bölümleri) yürütür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `lastprivate` Aşağıdaki yönergeleri için geçerlidir:  
-  
--   [for](../../../parallel/openmp/reference/for-openmp.md)  
-  
--   [Bölümleri](../../../parallel/openmp/reference/sections-openmp.md)  
-  
- Daha fazla bilgi için [2.7.2.3 lastprivate](../../../parallel/openmp/2-7-2-3-lastprivate.md).  
-  
-## <a name="example"></a>Örnek  
- Bkz: [zamanlama](../../../parallel/openmp/reference/schedule.md) kullanma örneği için `lastprivate` yan tümcesi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yan Tümceler](../../../parallel/openmp/reference/openmp-clauses.md)
+Hangi iş parçacığının özel bir sürümünü ayarlanır değişkeni son yineleme (for-döngüsü yapısı) ya da son bölümdeki (#pragma bölümleri) yürütür.
+
+## <a name="remarks"></a>Açıklamalar
+
+`lastprivate` Aşağıdaki yönergeleri için geçerlidir:
+
+- [for](../../../parallel/openmp/reference/for-openmp.md)
+
+- [Bölümleri](../../../parallel/openmp/reference/sections-openmp.md)
+
+Daha fazla bilgi için [2.7.2.3 lastprivate](../../../parallel/openmp/2-7-2-3-lastprivate.md).
+
+## <a name="example"></a>Örnek
+
+Bkz: [zamanlama](../../../parallel/openmp/reference/schedule.md) kullanma örneği için `lastprivate` yan tümcesi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yan Tümceler](../../../parallel/openmp/reference/openmp-clauses.md)

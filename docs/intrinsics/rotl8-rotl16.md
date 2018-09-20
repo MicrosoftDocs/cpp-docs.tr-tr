@@ -18,94 +18,99 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ec83d862c119645582a552b7685e5ca364be6f9
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6b70e3df22e4503d1e1a66d071c33aea7f2aef52
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709150"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46412138"
 ---
 # <a name="rotl8-rotl16"></a>_rotl8, _rotl16
-**Microsoft'a özgü**  
-  
- Giriş değerleri bit konumları belirtilen sayıda (MSB) en önemli bite Sola Döndür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-unsigned char _rotl8(   
-   unsigned char value,   
-   unsigned char shift   
-);  
-unsigned short _rotl16(   
-   unsigned short value,   
-   unsigned char shift   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+**Microsoft'a özgü**
+
+Giriş değerleri bit konumları belirtilen sayıda (MSB) en önemli bite Sola Döndür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+unsigned char _rotl8( 
+   unsigned char value, 
+   unsigned char shift 
+);
+unsigned short _rotl16( 
+   unsigned short value, 
+   unsigned char shift 
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *value*<br/>
-[in] Döndürülecek değer.  
-  
+[in] Döndürülecek değer.
+
 *Kaydırma*<br/>
-[in] Döndürmek için bit sayısı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Döndürülen değer.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|  
-|---------------|------------------|  
-|`_rotl8`|x86, ARM, x64|  
-|`_rotl16`|x86, ARM, x64|  
-  
- **Üst bilgi dosyası** \<intrin.h >  
-  
-## <a name="remarks"></a>Açıklamalar  
- Sola kaydırma işleminin aksine, sol döndürme yürütülürken, yüksek sona kalan yüksek sıra bitleri en az önemli bit konumlarına taşınır.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// rotl.cpp  
-#include <stdio.h>  
-#include <intrin.h>  
-  
-#pragma intrinsic(_rotl8, _rotl16)  
-  
-int main()  
-{  
-    unsigned char c = 'A', c1, c2;  
-  
-    for (int i = 0; i < 8; i++)  
-    {  
-       printf_s("Rotating 0x%x left by %d bits gives 0x%x\n", c,  
-               i, _rotl8(c, i));  
-    }  
-  
-    unsigned short s = 0x12;  
-    int nBit = 10;  
-  
-    printf_s("Rotating unsigned short 0x%x left by %d bits gives 0x%x\n",  
-            s, nBit, _rotl16(s, nBit));  
-}  
-```  
-  
-```Output  
-Rotating 0x41 left by 0 bits gives 0x41  
-Rotating 0x41 left by 1 bits gives 0x82  
-Rotating 0x41 left by 2 bits gives 0x5  
-Rotating 0x41 left by 3 bits gives 0xa  
-Rotating 0x41 left by 4 bits gives 0x14  
-Rotating 0x41 left by 5 bits gives 0x28  
-Rotating 0x41 left by 6 bits gives 0x50  
-Rotating 0x41 left by 7 bits gives 0xa0  
-Rotating unsigned short 0x12 left by 10 bits gives 0x4800  
-```  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [_rotr8, _rotr16](../intrinsics/rotr8-rotr16.md)   
- [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[in] Döndürmek için bit sayısı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Döndürülen değer.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|
+|---------------|------------------|
+|`_rotl8`|x86, ARM, x64|
+|`_rotl16`|x86, ARM, x64|
+
+**Üst bilgi dosyası** \<intrin.h >
+
+## <a name="remarks"></a>Açıklamalar
+
+Sola kaydırma işleminin aksine, sol döndürme yürütülürken, yüksek sona kalan yüksek sıra bitleri en az önemli bit konumlarına taşınır.
+
+## <a name="example"></a>Örnek
+
+```
+// rotl.cpp
+#include <stdio.h>
+#include <intrin.h>
+
+#pragma intrinsic(_rotl8, _rotl16)
+
+int main()
+{
+    unsigned char c = 'A', c1, c2;
+
+    for (int i = 0; i < 8; i++)
+    {
+       printf_s("Rotating 0x%x left by %d bits gives 0x%x\n", c,
+               i, _rotl8(c, i));
+    }
+
+    unsigned short s = 0x12;
+    int nBit = 10;
+
+    printf_s("Rotating unsigned short 0x%x left by %d bits gives 0x%x\n",
+            s, nBit, _rotl16(s, nBit));
+}
+```
+
+```Output
+Rotating 0x41 left by 0 bits gives 0x41
+Rotating 0x41 left by 1 bits gives 0x82
+Rotating 0x41 left by 2 bits gives 0x5
+Rotating 0x41 left by 3 bits gives 0xa
+Rotating 0x41 left by 4 bits gives 0x14
+Rotating 0x41 left by 5 bits gives 0x28
+Rotating 0x41 left by 6 bits gives 0x50
+Rotating 0x41 left by 7 bits gives 0xa0
+Rotating unsigned short 0x12 left by 10 bits gives 0x4800
+```
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[_rotr8, _rotr16](../intrinsics/rotr8-rotr16.md)<br/>
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

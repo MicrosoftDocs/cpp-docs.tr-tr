@@ -18,61 +18,66 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b57e27647f61b551f8ea5c2770290e1ae9627014
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3da944d519964105bd43135d61b5874ad96a6670
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070931"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378832"
 ---
 # <a name="outofmemory-class"></a>out_of_memory Sınıfı
-Bir yöntem sistem ya da cihaz belleği olmaması nedeniyle başarısız olduğunda oluşturulan özel durum.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class out_of_memory : public runtime_exception;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[out_of_memory Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `out_of_memory` sınıfı.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `exception`  
-  
- `runtime_exception`  
-  
- `out_of_memory`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** amprt.h  
-  
- **Namespace:** eşzamanlılık  
-## <a name="ctor"></a> out_of_memory 
 
- Sınıfının yeni bir örneğini başlatır.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```  
-explicit out_of_memory(  
-    const char * _Message ) throw();  
-  
-out_of_memory () throw();  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+Bir yöntem sistem ya da cihaz belleği olmaması nedeniyle başarısız olduğunda oluşturulan özel durum.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class out_of_memory : public runtime_exception;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[out_of_memory Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `out_of_memory` sınıfı.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`exception`
+
+`runtime_exception`
+
+`out_of_memory`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** amprt.h
+
+**Namespace:** eşzamanlılık
+## <a name="ctor"></a> out_of_memory
+
+Sınıfının yeni bir örneğini başlatır.
+
+### <a name="syntax"></a>Sözdizimi
+
+```
+explicit out_of_memory(
+    const char * _Message ) throw();
+
+out_of_memory () throw();
+```
+
+### <a name="parameters"></a>Parametreler
+
 *İl_eti*<br/>
-Hatanın açıklaması.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Yeni bir örneğini `out_of_memory` sınıfı.  
-  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)
+Hatanın açıklaması.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Yeni bir örneğini `out_of_memory` sınıfı.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

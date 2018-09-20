@@ -18,33 +18,38 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 508f6b41c791cdb3a62e7c6e3de8a8a633dff3e9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bb68594ad5f8b845d05d57b0599a969ef4cdf0ad
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038886"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46443767"
 ---
 # <a name="ltcodegt-visual-c"></a>&lt;kod&gt; (Visual C++)
-\<Kod > etiketini bir veya daha fazla kod olarak göstermek için bir yol sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-<code>content</code>  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+\<Kod > etiketini bir veya daha fazla kod olarak göstermek için bir yol sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+<code>content</code>
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *İçeriği*<br/>
-Kod olarak işaretlenmiş istediğiniz metin.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Kullanım [ \<c >](../ide/c-visual-cpp.md) metnin bir bölümünü kod olarak işaretlenmemelidir belirtmek için.  
-  
- Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.  
-  
-## <a name="example"></a>Örnek  
- Bkz: [ \<örnek >](../ide/example-visual-cpp.md) nasıl kullanılacağına ilişkin bir örnek için konu \<kod > etiketi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)
+Kod olarak işaretlenmiş istediğiniz metin.
+
+## <a name="remarks"></a>Açıklamalar
+
+Kullanım [ \<c >](../ide/c-visual-cpp.md) metnin bir bölümünü kod olarak işaretlenmemelidir belirtmek için.
+
+Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.
+
+## <a name="example"></a>Örnek
+
+Bkz: [ \<örnek >](../ide/example-visual-cpp.md) nasıl kullanılacağına ilişkin bir örnek için konu \<kod > etiketi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

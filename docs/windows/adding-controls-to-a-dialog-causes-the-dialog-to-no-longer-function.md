@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 88990595fdf1f6cbb88efd40ec6247b70d90c586
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 89e4a639ad953593195401fe2eadeb5d7877a160
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314905"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46445873"
 ---
 # <a name="adding-controls-to-a-dialog-causes-the-dialog-to-no-longer-function-c"></a>Bir iletişim kutusuna denetimler ekleme iletişim bundan böyle işlevi (C++) neden olur
 
@@ -70,5 +70,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İletişim Kutusu Düzenleyicisinde Sorun Giderme](../windows/troubleshooting-the-dialog-editor.md)  
+[İletişim Kutusu Düzenleyicisinde Sorun Giderme](../windows/troubleshooting-the-dialog-editor.md)<br/>
 [İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)

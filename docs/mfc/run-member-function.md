@@ -14,19 +14,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a658af47723a9c19218b205a17cb46919d7abd59
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 446b1b6fc2a5265e2c4eb8a608ff8b4f0028c57d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36932292"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408238"
 ---
 # <a name="run-member-function"></a>Üye İşlevini Çalıştırma
-Framework uygulamanın kendi zamanı çoğunu geçirdiği [çalıştırmak](../mfc/reference/cwinapp-class.md#run) sınıfının üye işlevini [CWinApp](../mfc/reference/cwinapp-class.md). Başlatma sonra `WinMain` çağrıları `Run` ileti döngüsü işlenemiyor.  
-  
- `Run` ileti sırası kullanılabilir iletiler için denetimi bir ileti döngüsü arasında geçiş yapar. Bir ileti olup olmadığını `Run` için eylem gönderir. Hiçbir ileti varsa, hangi doğruysa genellikle `Run` çağrıları `OnIdle` Bitti, veya framework gereken boşta kalma süresi işlem yapmadan yapmak için. Hiçbir iletiler ve boşta hiçbir işlem yapmak için varsa, uygulamanın bir şey kadar bekler. Uygulama sonlandırıldığında `Run` çağrıları `ExitInstance`. Şekil [ONIDLE üye işlevi](../mfc/onidle-member-function.md) ileti döngüde eylemlerin sırasını gösterir.  
-  
- İleti gönderilirken ileti türüne bağlıdır. Daha fazla bilgi için bkz: [iletiler ve komutlar Framework'te](../mfc/messages-and-commands-in-the-framework.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)
+
+Çoğu, zaman içinde bir framework uygulamasına geçirdiği [çalıştırma](../mfc/reference/cwinapp-class.md#run) sınıfının üye işlevinde [CWinApp](../mfc/reference/cwinapp-class.md). Başlatma sonra `WinMain` çağrıları `Run` ileti döngüsü işlenecek.
+
+`Run` mesaj kuyruğu kullanılabilir iletiler için denetimi bir ileti döngüsü arasında geçiş yapar. Bir ileti olup olmadığını `Run` eylemi için gönderir. İleti kullanılabilir değilse, genellikle true ise `Run` çağrıları `OnIdle` Bitti, veya framework gereken tüm boşta kalma süresi işleme yapmak için. Hiçbir iletiler ve boşta hiçbir işleme yapmak için varsa, uygulama bir şey kadar bekler. Uygulama sonlandırıldığında `Run` çağrıları `ExitInstance`. Aşağıdaki şekilde [ONIDLE üye işlevi](../mfc/onidle-member-function.md) ileti döngüsü eylemlerin sırasını gösterir.
+
+İleti gönderme, ileti türüne bağlıdır. Daha fazla bilgi için [iletiler ve komutlar Framework](../mfc/messages-and-commands-in-the-framework.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)

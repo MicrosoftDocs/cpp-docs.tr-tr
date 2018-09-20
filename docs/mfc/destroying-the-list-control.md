@@ -15,21 +15,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01cdbc0f404c34a8c5ebc3ae09adf30e0cea0851
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 25642357e3dd9117ae2817307ed5fa3c4a0921d0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215048"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46424551"
 ---
 # <a name="destroying-the-list-control"></a>Listesi Denetimini Yok Etme
-Eklerseniz, [CListCtrl](../mfc/reference/clistctrl-class.md) bunu edildiğinde sahibi kaldırıldığında görünümü veya iletişim kutusu sınıfı veri üyesi olarak nesnesi. Kullanıyorsanız bir [CListView](../mfc/reference/clistview-class.md), Görünüm yok eder, framework denetim yok eder.  
-  
- Liste denetimi yerine uygulama depolanacak listesi verilerinizden bazıları için düzenleme, düzenleme, kaldırma için gerekecektir. Daha fazla bilgi için [geri çağrı öğeleri ve geri çağrı maskesi](/windows/desktop/Controls/using-list-view-controls) Windows SDK.  
-  
- Ayrıca, oluşturduğunuz ve liste denetimi nesneyle ilişkili görüntü listeleri ayırmayı kaldırma için yükümlü olursunuz.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CListCtrl kullanma](../mfc/using-clistctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Eklerseniz, [CListCtrl](../mfc/reference/clistctrl-class.md) bunu edildiğinde sahibi kaldırıldığında görünümü veya iletişim kutusu sınıfı veri üyesi olarak nesnesi. Kullanıyorsanız bir [CListView](../mfc/reference/clistview-class.md), Görünüm yok eder, framework denetim yok eder.
+
+Liste denetimi yerine uygulama depolanacak listesi verilerinizden bazıları için düzenleme, düzenleme, kaldırma için gerekecektir. Daha fazla bilgi için [geri çağrı öğeleri ve geri çağrı maskesi](/windows/desktop/Controls/using-list-view-controls) Windows SDK.
+
+Ayrıca, oluşturduğunuz ve liste denetimi nesneyle ilişkili görüntü listeleri ayırmayı kaldırma için yükümlü olursunuz.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CListCtrl Kullanma](../mfc/using-clistctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

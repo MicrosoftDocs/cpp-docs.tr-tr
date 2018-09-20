@@ -20,14 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18217b1d4574f6591287ab6cb83e28c67fe95537
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a5dddac6d5e8b5be1b99d9c8004fcaa36d6b0b30
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218130"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394042"
 ---
 # <a name="porting-from-unix-to-win32"></a>UNIX'ten Win32'ye Bağlantı Noktası Oluşturma
+
 Uygulamalar için Windows UNIX içinden geçiş için birkaç seçeneğiniz vardır:  
   
 - UNIX'ten Win32 uygulamalarına bağlantı noktası UNIX kitaplıklarını kullanma  
@@ -84,6 +85,6 @@ Başka bir seçenek UNIX programcılar göz Windows POSIX alt sistemi ' dir. Anc
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[Visual C++ taşıma ve yükseltme Kılavuzu](visual-cpp-change-history-2003-2015.md)   
-[UNIX](../c-runtime-library/unix.md)   
+[Visual C++ Taşıma ve Yükseltme Kılavuzu](visual-cpp-change-history-2003-2015.md)<br/>
+[UNIX](../c-runtime-library/unix.md)<br/>
 [Çıkarım Kuralları](../build/inference-rules.md)

@@ -12,29 +12,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df01d571b67ff6d252d85128fcc8c1d26a6e94a9
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 512c09b0cf71a7fd9c7438b6f9cceb9f16126718
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687445"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46424992"
 ---
 # <a name="312-ompgetnumthreads-function"></a>3.1.2 omp_get_num_threads İşlevi
-**Omp_get_num_threads** işlevi döndürür iş parçacığı sayısı şu anda içinden çağırıldığında paralel bölge yürütme takım. Biçimi aşağıdaki gibidir:  
-  
-```  
-#include <omp.h>  
-int omp_get_num_threads(void);  
-```  
-  
- **Num_threads** yan tümcesi **omp_set_num_threads** işlevini ve **OMP_NUM_THREADS** ortam değişkeni denetleyen bir takım içindeki iş parçacığı sayısı.  
-  
- İş parçacığı sayısı kullanıcı tarafından açıkça ayarlanmadı, uygulama tanımlı varsayılandır. Bu işlev en yakın kapsayan bağlar **paralel** yönergesi. Bir program seri bir kısmı veya serileştirilir iç içe geçmiş bir paralel bölge çağırdıysanız, bu işlev 1 döndürür.  
-  
-## <a name="cross-references"></a>Çapraz referanslar:  
-  
--   **OMP_NUM_THREADS** ortam değişkeni, bkz: [bölüm 4.2](../../parallel/openmp/4-2-omp-num-threads.md) sayfasında 48.  
-  
--   **num_threads** yan tümcesi, bkz: [bölüm 2.3](../../parallel/openmp/2-3-parallel-construct.md) sayfasında 8.  
-  
--   **Paralel** oluşturmak için bkz: [bölüm 2.3](../../parallel/openmp/2-3-parallel-construct.md) sayfasında 8.
+
+**Omp_get_num_threads** işlevi döndürür iş parçacığı sayısını şu anda takım içinden çağırıldığında bir paralel bölgenin yürütme. Biçimi aşağıdaki gibidir:
+
+```
+#include <omp.h>
+int omp_get_num_threads(void);
+```
+
+**Num_threads** yan tümcesi **omp_set_num_threads** işlevi ve **OMP_NUM_THREADS** ortam değişkeni denetimi bir takım olarak iş parçacığı sayısı.
+
+İş parçacığı sayısı kullanıcı tarafından açıkça ayarlanmadı, uygulama tanımlı varsayılandır. Bu işlev en yakın kapsayan bağlar **paralel** yönergesi. Bu işlev, bir program seri bir kısmını veya serileştirilmiş bir iç içe geçmiş bir paralel bölgenin çağrılırsa, 1 döndürür.
+
+## <a name="cross-references"></a>Başvuruları çapraz:
+
+- **OMP_NUM_THREADS** ortam değişkeni, bkz: [bölümü 4.2](../../parallel/openmp/4-2-omp-num-threads.md) sayfasında 48.
+
+- **num_threads** yan tümcesi bkz [bölümü 2.3](../../parallel/openmp/2-3-parallel-construct.md) 8 sayfasında.
+
+- **Paralel** oluşturmak için bkz: [bölümü 2.3](../../parallel/openmp/2-3-parallel-construct.md) 8 sayfasında.

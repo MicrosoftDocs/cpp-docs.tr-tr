@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d700f19235ac18af27fa958420aa4ed467807624
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: e5798c7515c411b9abf9d10229a6185e01bb92f7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42464466"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400204"
 ---
 # <a name="exclude-import"></a>exclude (#import)
 **C++ özgü**  
@@ -49,5 +49,5 @@ Tür kitaplıkları, sistem üstbilgileri veya diğer tür kitaplıklarında tan
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

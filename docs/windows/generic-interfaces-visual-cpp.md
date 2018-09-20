@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: abad906c7fcc5c86a6901757ddfbb5dfeff2ec29
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 2065b96875f2c441b24eb69f8ca51b06fe5717f0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45704906"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444501"
 ---
 # <a name="generic-interfaces-visual-c"></a>Genel Arabirimler (Visual C++)
 
@@ -42,31 +42,31 @@ Arabirimleri hakkında daha fazla bilgi için bkz. [arabirim sınıfı](../windo
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Öznitelikleri*  
+*Öznitelikleri*<br/>
 (İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikler ve öznitelik sınıfları hakkında daha fazla bilgi için bkz. **öznitelikleri**.
 
-*sınıf anahtarı*  
+*sınıf anahtarı*<br/>
 **sınıf** veya **typename**
 
-*tür-parametresi-tanımlayıcıları*  
+*tür-parametresi-tanımlayıcıları*<br/>
 Tanımlayıcıları virgülle ayrılmış listesi.
 
-*tür parametresi kısıtlamaları tümceleri*  
+*tür parametresi kısıtlamaları tümceleri*<br/>
 Belirtilen biçimi alır [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)
 
-*erişilebilirlik değiştiricileri*  
+*erişilebilirlik değiştiricileri*<br/>
 (İsteğe bağlı) Erişilebilirlik değiştiricileri (örneğin **genel ve özel**).
 
-*tanımlayıcı*  
+*tanımlayıcı*<br/>
 Arabirim adı.
 
-*temel-liste*  
+*temel-liste*<br/>
 (İsteğe bağlı) Virgülle ayırarak bir veya daha fazla açık temel arabirimlerini içeren liste.
 
-*Arabirim-gövdesi*  
+*Arabirim-gövdesi*<br/>
 Arabirim üyelerinin bildirimleri.
 
-*Bildirimciler*  
+*Bildirimciler*<br/>
 (İsteğe bağlı) Bu türe dayanan değişkenlerin bildirimleri.
 
 ## <a name="example"></a>Örnek

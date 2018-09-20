@@ -1,5 +1,5 @@
 ---
-title: Rebar denetimiyle birlikte bir resim listesi kullanma | Microsoft Docs
+title: Rebar denetimiyle birlikte bir görüntü listesi kullanma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,35 +15,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1786c89f4ec9cf1c0908dac5d81858d5b2e6b7db
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 9ff524f1f29e4db2ac5bb4628064583f0fe7583e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36950712"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46372372"
 ---
 # <a name="using-an-image-list-with-a-rebar-control"></a>Rebar Denetimiyle Birlikte Bir Görüntü Listesi Kullanma
-Her rebar bant, bunun yanı sıra, ilişkili resim listesi görüntüden içerebilir. Aşağıdaki yordam bir rebar bant görüntüyü görüntülemek için gerekli adımları ayrıntılarını verir.  
-  
-### <a name="to-display-images-in-a-rebar-band"></a>Bir rebar bant görüntüleri göstermek için  
-  
-1.  Çağrı yaparak rebar denetimi nesnesine bir resim listesi ekleme [SetImageList](../mfc/reference/crebarctrl-class.md#setimagelist), varolan bir görüntü listesi bir işaretçi geçirme.  
-  
-2.  Değiştirme **REBARBANDINFO** yapısı görüntünün bir rebar bant atamak için:  
-  
-    -   Ayarlama *fMask* üyesine `RBBIM_IMAGE`, gerektiği gibi ek bayrakları dahil edilecek bit düzeyinde OR işleci kullanarak.  
-  
-    -   Ayarlama *iImage* görüntünün görüntü listesi dizini üyesine görüntülenecek.  
-  
-3.  Boyut, metin ve gerekli bilgilerin Kapsanan alt pencere tanıtıcısı gibi kalan tüm veri üyeleri başlatır.  
-  
-4.  (Resimli) yeni bant çağrısıyla Ekle [CReBarCtrl::InsertBand](../mfc/reference/crebarctrl-class.md#insertband), geçen **REBARBANDINFO** yapısı.  
-  
- Aşağıdaki örnekte, iki görüntü varolan bir görüntü listesi nesnesiyle rebar denetimi nesneye iliştirilmiş olduğu varsayılır (`m_wndReBar`). Yeni bir rebar bant (tarafından tanımlanan `rbi`), ilk resmi içeren, çağrısıyla eklenen `InsertBand`:  
-  
- [!code-cpp[NVC_MFCControlLadenDialog#28](../mfc/codesnippet/cpp/using-an-image-list-with-a-rebar-control_1.cpp)]  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CReBarCtrl kullanma](../mfc/using-crebarctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Her çubuk barınağı bant, diğerlerinin yanı sıra bir görüntüden bir ilişkili görüntü listesini içerebilir. Aşağıdaki yordam bir görüntü bir çubuk barınağı bandı görüntülemek için gerekli adımları ayrıntılı olarak açıklanmaktadır.
+
+### <a name="to-display-images-in-a-rebar-band"></a>Bir rebar bant resimleri görüntülemek için
+
+1. Görüntü listesi, çubuk barınağı denetimi nesneye bir çağrı yaparak ekleme [SetImageList](../mfc/reference/crebarctrl-class.md#setimagelist), varolan bir görüntü listesinin bir işaretçi geçirme.
+
+1. Değiştirme **REBARBANDINFO** yapısı bir çubuk barınağı bant için bir görüntü atamak için:
+
+   - Ayarlama *fMask* üyesine `RBBIM_IMAGE`, gerektiği gibi ek bayrakları dahil etmek için bit düzeyinde OR işleci kullanarak.
+
+   - Ayarlama *iImage* görüntülenecek üye görüntünün görüntü listesi dizin.
+
+1. Boyut, metin ve gerekli bilgileri içerdiği alt pencere tanıtıcısı gibi kalan tüm veri üyeleri başlatın.
+
+1. Çağrısıyla (Resimli) yeni bant ekleme [CReBarCtrl::InsertBand](../mfc/reference/crebarctrl-class.md#insertband), geçen **REBARBANDINFO** yapısı.
+
+Aşağıdaki örnek iki görüntü sahip mevcut bir görüntü listesi nesnesi çubuk barınağı denetimi nesneye iliştirilmiş olduğu varsayılır (`m_wndReBar`). Yeni bir çubuk barınağı bant (tarafından tanımlanan `rbi`), ilk görüntü içeren, bir çağrı ile eklenen `InsertBand`:
+
+[!code-cpp[NVC_MFCControlLadenDialog#28](../mfc/codesnippet/cpp/using-an-image-list-with-a-rebar-control_1.cpp)]
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CReBarCtrl Kullanma](../mfc/using-crebarctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

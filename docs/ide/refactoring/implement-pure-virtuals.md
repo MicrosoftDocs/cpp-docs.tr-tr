@@ -1,5 +1,5 @@
 ---
-title: Saf sanalların uygulamak | Microsoft Docs
+title: Saf sanalları Uygula | Microsoft Docs
 ms.custom: ''
 ms.date: 11/16/2016
 ms.technology:
@@ -10,32 +10,32 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: afce516f2718a76658846ed4f992aeabff75330b
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 234ae9a67bcbc60ea156fbacb5169d0bd1573a91
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33328032"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442766"
 ---
-# <a name="implement-pure-virtuals"></a>Saf sanalların uygulama
-**Ne:** hemen bir sınıfta tüm saf sanal yöntemleri uygulamak için gereken kodu oluşturmanıza olanak sağlar. 
+# <a name="implement-pure-virtuals"></a>Saf sanalları Uygula
+**Ne:** hemen bir sınıfta tüm saf sanal yöntemleri uygulamak için gereken kodu oluşturmanıza olanak tanır.
 
-**Ne zaman:** saf sanal işlevlerle sınıfından devralan istiyor.  
+**Ne zaman:** saf sanal işlevler içeren bir sınıfından devralmasına izin istiyor.
 
-**Neden:** bu özellik tüm yöntemi imzaları otomatik olarak oluşturur ancak tüm saf sanal işlevler birer birer kendiniz uygulamak.
+**Neden:** bu özellik otomatik olarak tüm yöntem imzaları oluşturur ancak tüm saf sanal işlevler birer birer el ile uygulayabilirsiniz.
 
 **Nasıl:**
 
-1. Metin veya fare imlecinizi saf sanal işlevler temel sınıfın uygulamak istediğinize sınıfı yerleştirin.
+1. Sınıf temel sınıfın saf sanal işlevler uygulamak istediğiniz metin veya fare imleci yerleştirin.
 
    ![Vurgulanmış kodu](images/virtuals_highlight.png)
 
 1. Ardından, aşağıdakilerden birini yapın:
    * **Klavye**
-     * Tuşuna **Ctrl +.** Tetikleyici için **hızlı Eylemler ve yapan yeniden düzenlemeler** menü ve select **sınıfı için tüm saf sanalların uygulamak*ClassName*'** ve bağlam menüsünden nerede  *ClassName* seçilen sınıfın adı.
+     * Tuşuna **Ctrl +.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **sınıf için tüm saf sanalları Uygula*ClassName*'** bağlam menüsünden burada  *ClassName* seçilen bir sınıf adıdır.
    * **Fare**
-     * Sağ tıklatın ve seçin **hızlı Eylemler ve yapan yeniden düzenlemeler** menü ve select **sınıfı için tüm saf sanalların uygulamak*ClassName*'** ve bağlam menüsünden nerede  *ClassName* seçilen sınıfın adı.
+     * Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **sınıf için tüm saf sanalları Uygula*ClassName*'** bağlam menüsünden burada  *ClassName* seçilen bir sınıf adıdır.
 
-1. Saf sanal yöntemi imzalar, otomatik olarak oluşturulan, uygulanması için hazır olacaktır.
+1. Saf sanal yöntem imzaları, otomatik olarak oluşturulan, uygulanmak hazır olacaktır.
 
-   ![Saf sanalların sonuç uygulama](images/virtuals_result.png)
+   ![Saf sanalları neden](images/virtuals_result.png)

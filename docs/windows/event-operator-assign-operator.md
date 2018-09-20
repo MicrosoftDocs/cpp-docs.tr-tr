@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7c95ac2e16ef4f4b279f0da287a4ca2a3d0f18a7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 072d4af94e4889d49d9b4876daa27cb4801d60d0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610469"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46447017"
 ---
 # <a name="eventoperator-operator"></a>Event::operator= İşleci
 
@@ -38,7 +38,7 @@ WRL_NOTHROW Event& operator=(
 
 ### <a name="parameters"></a>Parametreler
 
-*h*  
+*h*<br/>
 Bir rvalue başvurusuna bir **olay** örneği.
 
 ## <a name="return-value"></a>Dönüş Değeri

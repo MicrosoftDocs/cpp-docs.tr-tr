@@ -18,54 +18,58 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05232aa954a9ded7d2ab3a26ae4e1524610c3d04
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: a2bb62d76733e77c2528a80dfc4e9ef358878895
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705451"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425417"
 ---
 # <a name="autopartitioner-class"></a>auto_partitioner Sınıfı
-`auto_partitioner` Sınıfı temsil eder, varsayılan yöntemi `parallel_for`, `parallel_for_each` ve `parallel_transform` tekrarlanan üzerinden aralığı bölüm için kullanın. Employes bölümlendirme, bu yöntem Yük Dengeleme için çalarak aralığı yanı sıra başına-iptal yineleme.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+`auto_partitioner` Sınıfı temsil eder, varsayılan yöntemi `parallel_for`, `parallel_for_each` ve `parallel_transform` yinelenir üzerinden aralık bölümleme için kullanın. Employes bölümleme bu yöntemi Yük Dengeleme için çalma aralığı yanı sıra başına-iptal yineleyin.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 class auto_partitioner;
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[auto_partitioner](#ctor)|Oluşturan bir `auto_partitioner` nesnesi.|  
-|[~ auto_partitioner yok Edicisi](#dtor)|Bozar bir `auto_partitioner` nesnesi.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `auto_partitioner`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** ppl.h  
-  
- **Namespace:** eşzamanlılık  
-  
-##  <a name="dtor"></a> ~ auto_partitioner 
+```
 
- Bozar bir `auto_partitioner` nesnesi.  
-  
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[auto_partitioner](#ctor)|Oluşturur bir `auto_partitioner` nesne.|
+|[~ auto_partitioner yok Edicisi](#dtor)|Yok eder bir `auto_partitioner` nesne.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`auto_partitioner`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** ppl.h
+
+**Namespace:** eşzamanlılık
+
+##  <a name="dtor"></a> ~ auto_partitioner
+
+Yok eder bir `auto_partitioner` nesne.
+
 ```
 ~auto_partitioner();
-```  
-  
-##  <a name="ctor"></a> auto_partitioner 
+```
 
- Oluşturan bir `auto_partitioner` nesnesi.  
-  
+##  <a name="ctor"></a> auto_partitioner
+
+Oluşturur bir `auto_partitioner` nesne.
+
 ```
 auto_partitioner();
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Ad Alanı](concurrency-namespace.md)

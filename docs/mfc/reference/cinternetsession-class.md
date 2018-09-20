@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83ff74a460c7cb34a50d0fbdf338eccc3da27f98
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a519d9b978f5b48377b1a85d52274cba35c9d075
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197445"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46401816"
 ---
 # <a name="cinternetsession-class"></a>Cınternetsession sınıfı
 
@@ -115,7 +115,7 @@ Temel Internet programlama görevleri hakkında daha fazla bilgi için bkz [Inte
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CObject](../../mfc/reference/cobject-class.md)  
+[CObject](../../mfc/reference/cobject-class.md)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;`CInternetSession`
 
 ## <a name="requirements"></a>Gereksinimler
@@ -138,13 +138,13 @@ CInternetSession(
 
 ### <a name="parameters"></a>Parametreler
 
-*pstrAgent*  
+*pstrAgent*<br/>
 Uygulama veya Internet işlevleri (örneğin, "Microsoft Internet tarayıcısı") çağırma varlık adını tanımlayan bir dize işaretçisi. Varsa *pstrAgent* (varsayılan), framework çağrıları genel işlev null [AfxGetAppName](application-information-and-management.md#afxgetappname), bir uygulamanın adını içeren null ile sonlandırılmış bir dize döndürür. Bazı protokoller, uygulamanızı sunucuya tanımlamak için şu dizeyi kullanın.
 
-*dwContext*  
+*dwContext*<br/>
 İşlem bağlamı tanımlayıcısı. *dwContext* tarafından döndürülen işlem durumu bilgilerini tanımlayan [CInternetSession::OnStatusCallback](#onstatuscallback). Varsayılan değer 1 olarak ayarlanır; Ancak, belirli bir bağlam kimliği işlemi için açıkça atayabilirsiniz. Nesne ve mevcut herhangi bir iş, bir bağlam kimliği ile ilişkilendirilecek
 
-*dwAccessType*  
+*dwAccessType*<br/>
 Gerekli erişim türü. Bunlardan biri sağlanacak geçerli değerler şunlardır:
 
 - INTERNET_OPEN_TYPE_PRECONFIG Connect kullanarak kayıt defteri ayarları önceden yapılandırılmış. Bu erişim türü varsayılan olarak ayarlanır. TIS proxy üzerinden bağlanması ayarı *dwAccessType* bu değere; ardından kayıt defteri uygun şekilde ayarlayın.
@@ -155,13 +155,13 @@ Gerekli erişim türü. Bunlardan biri sağlanacak geçerli değerler şunlardı
 
 Farklı türde proxy ile bağlanma hakkında daha fazla bilgi için bkz. [tipik bir FTP istemci uygulamasında adımları](../../mfc/steps-in-a-typical-ftp-client-application.md).
 
-*pstrProxyName*  
+*pstrProxyName*<br/>
 Tercih edilen CERN proxy adını, *dwAccessType* INTERNET_OPEN_TYPE_PROXY ayarlanır. Varsayılan NULL olur.
 
-*pstrProxyBypass*  
+*pstrProxyBypass*<br/>
 İsteğe bağlı bir sunucu adresleri listesi içeren bir dize işaretçisi. Proxy erişimi kullanırken bu adresleri atlanmasına. Bir NULL değer sağlanmazsa, atlama listesi kayıt defterinden okunacak. Bu parametre anlamlı yalnızca *dwAccessType* INTERNET_OPEN_TYPE_PROXY için ayarlanır.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Çeşitli önbellek seçeneklerini gösterir. Varsayılan değer 0 olarak ayarlanır. Olası değerler şunlardır:
 
 - INTERNET_FLAG_DONT_CACHE önbelleğe almaz verileri yerel olarak veya herhangi bir ağ geçidi sunucusu.
@@ -200,7 +200,7 @@ BOOL EnableStatusCallback(BOOL bEnable = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bSistemlerde*  
+*bSistemlerde*<br/>
 Geri çağırma etkin mi yoksa devre dışı mı olduğunu belirtir. Varsayılan değer True'dur.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -255,16 +255,16 @@ static BOOL GetCookie(
 
 ### <a name="parameters"></a>Parametreler
 
-*pstrUrl*  
+*pstrUrl*<br/>
 URL içeren bir dize işaretçisi.
 
-*pstrCookieName*  
+*pstrCookieName*<br/>
 Belirtilen URL'ye almak için tanımlama bilgisi adını içeren bir dize işaretçisi.
 
-*pstrCookieData*  
+*pstrCookieData*<br/>
 İlk aşırı, tanımlama bilgisi verileri alan arabellek adresi içeren bir dize işaretçisi. Bu değer NULL olabilir. İkinci aşırı yükleme, bir başvuru olarak bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) tanımlama bilgisi verisi almak için nesne.
 
-*dwBufLen*  
+*dwBufLen*<br/>
 Boyutun belirtmek değişkeni *pstrCookieData* arabellek. İşlev başarılı olursa, arabellek kopyalanan verileri miktarını alır *pstrCookieData* arabellek. Varsa *pstrCookieData* NULL ise bu parametre tanımlama bilgisi verileri kopyalamak gerekli arabellek boyutunu belirten bir değeri alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -291,10 +291,10 @@ static DWORD GetCookieLength(
 
 ### <a name="parameters"></a>Parametreler
 
-*pstrUrl*  
+*pstrUrl*<br/>
 URL içeren bir dize işaretçisi
 
-*pstrCookieName*  
+*pstrCookieName*<br/>
 Tanımlama bilgisinin adını içeren bir dize işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -320,13 +320,13 @@ CFtpConnection* GetFtpConnection(
 
 ### <a name="parameters"></a>Parametreler
 
-*pstrServer*  
+*pstrServer*<br/>
 FTP sunucusu adını içeren bir dize işaretçisi.
 
-*pstrUserName*  
+*pstrUserName*<br/>
 Oturum açmak için kullanıcı adını belirten bir null ile sonlandırılmış dize işaretçisi. NULL ise, anonim bir varsayılandır.
 
-*pstrPassword*  
+*pstrPassword*<br/>
 Oturum açmak için kullanılacak parolayı belirten bir boş sonlandırılmış dizeye bir işaretçi. Her iki *pstrPassword* ve *pstrUserName* NULL, varsayılan anonim kullanıcı e-posta adını paroladır. Varsa *pstrPassword* boş (veya boş bir dize) ancak *pstrUserName* NULL değil boş bir parola kullanılır. Aşağıdaki tabloda dört olası ayarlarını davranışını açıklar *pstrUserName* ve *pstrPassword*:
 
 |*pstrUserName*|*pstrPassword*|FTP sunucusuna gönderilen kullanıcı adı|FTP sunucusuna gönderilen parola|
@@ -336,10 +336,10 @@ Oturum açmak için kullanılacak parolayı belirten bir boş sonlandırılmış
 |NULL|BOŞ olmayan bir dize|HATA|HATA||
 |BOŞ olmayan bir dize|BOŞ olmayan bir dize|*pstrUserName*|*pstrPassword*|
 
-*nbağlantı noktası*  
+*nbağlantı noktası*<br/>
 Sunucu üzerinde kullanılacak TCP/IP bağlantı noktasını tanımlayan bir sayı.
 
-*bPassive*  
+*bPassive*<br/>
 Bu FTP oturumu için pasif veya etkin modunu belirtir. TRUE olarak ayarlanırsa, Win32 API kümelerini `dwFlag` INTERNET_FLAG_PASSIVE için.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -368,16 +368,16 @@ CGopherConnection* GetGopherConnection(
 
 ### <a name="parameters"></a>Parametreler
 
-*pstrServer*  
+*pstrServer*<br/>
 Gopher sunucu adını içeren bir dize işaretçisi.
 
-*pstrUserName*  
+*pstrUserName*<br/>
 Kullanıcı adını içeren bir dize işaretçisi.
 
-*pstrPassword*  
+*pstrPassword*<br/>
 Erişim parola içeren bir dize işaretçisi.
 
-*nbağlantı noktası*  
+*nbağlantı noktası*<br/>
 Sunucu üzerinde kullanılacak TCP/IP bağlantı noktasını tanımlayan bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -409,19 +409,19 @@ CHttpConnection* GetHttpConnection(
 
 ### <a name="parameters"></a>Parametreler
 
-*pstrServer*  
+*pstrServer*<br/>
 HTTP sunucu adını içeren bir dize işaretçisi.
 
-*nbağlantı noktası*  
+*nbağlantı noktası*<br/>
 Sunucu üzerinde kullanılacak TCP/IP bağlantı noktasını tanımlayan bir sayı.
 
-*pstrUserName*  
+*pstrUserName*<br/>
 Kullanıcı adını içeren bir dize işaretçisi.
 
-*pstrPassword*  
+*pstrPassword*<br/>
 Erişim parola içeren bir dize işaretçisi.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Herhangi bir birleşimini `INTERNET_FLAG_*` bayrakları. Bölümündeki tabloya bakın **açıklamalar** bölümünü [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest) açıklamasını *CertOpenStore* değerleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -446,16 +446,16 @@ virtual void OnStatusCallback(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwContext*  
+*dwContext*<br/>
 Uygulama tarafından sağlanan içerik değeri.
 
-*dwInternetStatus*  
+*dwInternetStatus*<br/>
 Geri çağırma neden yapıldığı gösteren bir durum kodu. Bkz: **açıklamalar** için olası değerler tablosu.
 
-*lpvStatusInformation*  
+*lpvStatusInformation*<br/>
 Bu geri çağırma için testlerinizle ilgili olabilecek bilgilere içeren arabellek için işaretçi.
 
-*dwStatusInformationLength*  
+*dwStatusInformationLength*<br/>
 Boyutu *lpvStatusInformation*.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -484,7 +484,7 @@ Durumu geri çağırma yordamı gerçekleştirilmeden önce bazı eylemler zorun
 > [!NOTE]
 > Durum geri çağırmaları iş parçacığı durumu koruması gerekir. MFC içinde paylaşılan bir kitaplık kullanıyorsanız, geçersiz kılma başlangıcına aşağıdaki satırı ekleyin:
 
- [!code-cpp[NVC_MFCHtmlHttp#8](../../mfc/reference/codesnippet/cpp/cinternetsession-class_1.cpp)]
+[!code-cpp[NVC_MFCHtmlHttp#8](../../mfc/reference/codesnippet/cpp/cinternetsession-class_1.cpp)]
 
 Zaman uyumsuz işlemler hakkında daha fazla bilgi için bkz [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md).
 
@@ -503,13 +503,13 @@ CStdioFile* OpenURL(
 
 ### <a name="parameters"></a>Parametreler
 
-*pstrURL*  
+*pstrURL*<br/>
 Okumanın başlatılacağı URL adı için bir işaretçi. Yalnızca URL'lere dosya ile başlayan:, ftp:, gopher:, veya http: desteklenir. Varsa onaylar *pstrURL* null.
 
-*dwContext*  
+*dwContext*<br/>
 Geri döndürülen tutamacın ile uygulama tanımlı bir değer geçirildi.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Bu bağlantı ne yapılacağını tanımlayan bayraklar. Bkz: **açıklamalar** geçerli bayrakları hakkında daha fazla bilgi. Geçerli bayraklar:
 
 - Varsayılan INTERNET_FLAG_TRANSFER_ASCII. Dosya ASCII metni olarak aktarın.
@@ -526,10 +526,10 @@ Bu bağlantı ne yapılacağını tanımlayan bayraklar. Bkz: **açıklamalar** 
 
 - INTERNET_FLAG_PASSIVE bir FTP sitesi için kullanılır. Pasif FTP semantiğini kullanıyor. İle kullanılan [Cınternetconnection](../../mfc/reference/cinternetconnection-class.md) , `OpenURL`.
 
-*pstrHeaders*  
+*pstrHeaders*<br/>
 HTTP sunucusuna gönderilmesi gereken üstbilgileri içeren bir dize işaretçisi.
 
-*dwHeadersLength*  
+*dwHeadersLength*<br/>
 Ek üst karakter cinsinden uzunluğu. Bu,-1 L ise ve *pstrHeaders* NULL olmayan, ise *pstrHeaders* sona sıfır olmalıdır ve uzunluğu hesaplanan kabul edilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -574,13 +574,13 @@ static BOOL SetCookie(
 
 ### <a name="parameters"></a>Parametreler
 
-*pstrUrl*  
+*pstrUrl*<br/>
 Tanımlama bilgisi ayarlanmalıdır URL'sini belirtir bir null ile sonlandırılmış dizeye bir işaretçi.
 
-*pstrCookieName*  
+*pstrCookieName*<br/>
 Tanımlama bilgisinin adını içeren bir dize işaretçisi.
 
-*pstrCookieData*  
+*pstrCookieData*<br/>
 URL ile ilişkilendirilecek gerçek dize verileri içeren bir dize işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -611,19 +611,19 @@ BOOL SetOption(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwOption*  
+*dwOption*<br/>
 Ayarlanacak Internet seçeneği. Bkz: [seçeneği bayrakları](/windows/desktop/WinInet/option-flags) içinde Windows SDKfor olası seçeneklerin bir listesi.
 
-*lpBuffer*  
+*lpBuffer*<br/>
 Seçenek ayarı içeren bir arabelleği.
 
-*dwBufferLength*  
+*dwBufferLength*<br/>
 Uzunluğunu *lpBuffer* veya boyutunu *dwValue*.
 
-*dwValue*  
+*dwValue*<br/>
 Seçenek ayarları içeren bir DWORD.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Çeşitli önbellek seçeneklerini gösterir. Varsayılan değer 0 olarak ayarlanır. Olası değerler şunlardır:
 
 - INTERNET_FLAG_DONT_CACHE önbelleğe almaz verileri yerel olarak veya herhangi bir ağ geçidi sunucusu.
@@ -636,9 +636,9 @@ Seçenek ayarları içeren bir DWORD.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CObject Sınıfı](../../mfc/reference/cobject-class.md)  
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)  
-[CInternetConnection Sınıfı](../../mfc/reference/cinternetconnection-class.md)  
-[CHttpConnection Sınıfı](../../mfc/reference/chttpconnection-class.md)  
-[CFtpConnection Sınıfı](../../mfc/reference/cftpconnection-class.md)  
-[CGopherConnection Sınıfı](../../mfc/reference/cgopherconnection-class.md)  
+[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CInternetConnection Sınıfı](../../mfc/reference/cinternetconnection-class.md)<br/>
+[CHttpConnection Sınıfı](../../mfc/reference/chttpconnection-class.md)<br/>
+[CFtpConnection Sınıfı](../../mfc/reference/cftpconnection-class.md)<br/>
+[CGopherConnection Sınıfı](../../mfc/reference/cgopherconnection-class.md)

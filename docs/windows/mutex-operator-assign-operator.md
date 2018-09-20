@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1b7cc38d595c6f6ad1aa92e584068ccb852dbbd4
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ea5aee6f248487097462028a763a98b4e814a17a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42578694"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396798"
 ---
 # <a name="mutexoperator-operator"></a>Mutex::operator= İşleci
 
@@ -38,7 +38,7 @@ Mutex& operator=(
 
 ### <a name="parameters"></a>Parametreler
 
-*h*  
+*h*<br/>
 Bir rvalue başvurusuna bir **Mutex** nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -56,4 +56,5 @@ Daha fazla bilgi için **taşıma semantiği** bölümünü [Rvalue başvuru Bil
 **Namespace:** Microsoft::wrl:: Wrappers
 
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 [Mutex sınıfı](../windows/mutex-class1.md)

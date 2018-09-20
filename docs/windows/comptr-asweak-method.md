@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d8de0ee1bf4d879490002d3483f0340714b989ac
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: cfb237996a086abb6f334515b449953ef82cd83a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42581230"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390675"
 ---
 # <a name="comptrasweak-method"></a>ComPtr::AsWeak Yöntemi
 
@@ -38,7 +38,7 @@ HRESULT AsWeak(
 
 ### <a name="parameters"></a>Parametreler
 
-*pWeakRef*  
+*pWeakRef*<br/>
 Bu işlem tamamlandığında zayıf başvuru nesnesine bir işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri

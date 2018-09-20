@@ -22,114 +22,128 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ceba9da99585cb9a88b5fa7fa43d10c9fe02836
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: debe4c271d2a6e6a82cde9acc75eaa28404ebb43
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218805"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46443884"
 ---
 # <a name="coleipframewnd-class"></a>Coleıpframewnd sınıfı
-Uygulamanızın yerinde düzenleme penceresi için taban dizini.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class COleIPFrameWnd : public CFrameWnd  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[COleIPFrameWnd::COleIPFrameWnd](#coleipframewnd)|Oluşturur bir `COleIPFrameWnd` nesne.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[COleIPFrameWnd::OnCreateControlBars](#oncreatecontrolbars)|Yerinde düzenleme için bir öğe etkinleştirildiğinde framework tarafından çağırılır.|  
-|[COleIPFrameWnd::RepositionFrame](#repositionframe)|Yerinde düzenleme penceresi yeniden konumlandırmak için framework tarafından çağırılır.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sınıf oluşturur ve kapsayıcı uygulamasının belge penceresi içinde çubukları konumları denetleyin. Ayrıca katıştırılmış tarafından oluşturulan bildirimleri işleme [COleResizeBar](../../mfc/reference/coleresizebar-class.md) yerinde düzenleme penceresi kullanıcı yeniden boyutlandırdığında nesne.  
-  
- Kullanma hakkında daha fazla bilgi için `COleIPFrameWnd`, makaleye göz atın [etkinleştirme](../../mfc/activation-cpp.md).  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- [CCmdTarget](../../mfc/reference/ccmdtarget-class.md)  
-  
- [CWnd](../../mfc/reference/cwnd-class.md)  
-  
- [CFrameWnd](../../mfc/reference/cframewnd-class.md)  
-  
- `COleIPFrameWnd`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxole.h  
-  
-##  <a name="coleipframewnd"></a>  COleIPFrameWnd::COleIPFrameWnd  
- Oluşturur bir `COleIPFrameWnd` nesnesi ve bir tür OLEINPLACEFRAMEINFO yapısı içinde depolanan yerinde durum bilgilerini, başlatır.  
-  
-```  
+
+Uygulamanızın yerinde düzenleme penceresi için taban dizini.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class COleIPFrameWnd : public CFrameWnd
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[COleIPFrameWnd::COleIPFrameWnd](#coleipframewnd)|Oluşturur bir `COleIPFrameWnd` nesne.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[COleIPFrameWnd::OnCreateControlBars](#oncreatecontrolbars)|Yerinde düzenleme için bir öğe etkinleştirildiğinde framework tarafından çağırılır.|
+|[COleIPFrameWnd::RepositionFrame](#repositionframe)|Yerinde düzenleme penceresi yeniden konumlandırmak için framework tarafından çağırılır.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sınıf oluşturur ve kapsayıcı uygulamasının belge penceresi içinde çubukları konumları denetleyin. Ayrıca katıştırılmış tarafından oluşturulan bildirimleri işleme [COleResizeBar](../../mfc/reference/coleresizebar-class.md) yerinde düzenleme penceresi kullanıcı yeniden boyutlandırdığında nesne.
+
+Kullanma hakkında daha fazla bilgi için `COleIPFrameWnd`, makaleye göz atın [etkinleştirme](../../mfc/activation-cpp.md).
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+
+[CWnd](../../mfc/reference/cwnd-class.md)
+
+[CFrameWnd](../../mfc/reference/cframewnd-class.md)
+
+`COleIPFrameWnd`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxole.h
+
+##  <a name="coleipframewnd"></a>  COleIPFrameWnd::COleIPFrameWnd
+
+Oluşturur bir `COleIPFrameWnd` nesnesi ve bir tür OLEINPLACEFRAMEINFO yapısı içinde depolanan yerinde durum bilgilerini, başlatır.
+
+```
 COleIPFrameWnd();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [OLEINPLACEFRAMEINFO](/windows/desktop/api/oleidl/ns-oleidl-tagoifi) Windows SDK.  
-  
-##  <a name="oncreatecontrolbars"></a>  COleIPFrameWnd::OnCreateControlBars  
- Framework çağrıları `OnCreateControlBars` yerinde düzenleme için bir öğe etkinleştirildiğinde işlev.  
-  
-```  
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Daha fazla bilgi için [OLEINPLACEFRAMEINFO](/windows/desktop/api/oleidl/ns-oleidl-tagoifi) Windows SDK.
+
+##  <a name="oncreatecontrolbars"></a>  COleIPFrameWnd::OnCreateControlBars
+
+Framework çağrıları `OnCreateControlBars` yerinde düzenleme için bir öğe etkinleştirildiğinde işlev.
+
+```
 virtual BOOL OnCreateControlBars(
-    CWnd* pWndFrame,  
+    CWnd* pWndFrame,
     CWnd* pWndDoc);
 
- 
+
 virtual BOOL OnCreateControlBars(
-    CFrameWnd* pWndFrame,  
+    CFrameWnd* pWndFrame,
     CFrameWnd* pWndDoc);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pWndFrame*  
- Kapsayıcı uygulamasının çerçeve işaretçisi.  
-  
- *pWndDoc*  
- Kapsayıcının belge düzeyi pencere işaretçisi. Kapsayıcı bir SDI uygulaması ise NULL olabilir.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır; Aksi takdirde 0.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama, hiçbir şey yapmaz. Bu işlev, herhangi bir özel denetim çubukları oluştururken gerekli işlemi gerçekleştirmek için geçersiz kılın.  
-  
-##  <a name="repositionframe"></a>  COleIPFrameWnd::RepositionFrame  
- Framework çağrıları `RepositionFrame` denetim çubukları düzenlemek ve tümünün görünür olmasını yerinde düzenleme penceresi yeniden konumlandırmak için üye işlevi.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pWndFrame*<br/>
+Kapsayıcı uygulamasının çerçeve işaretçisi.
+
+*pWndDoc*<br/>
+Kapsayıcının belge düzeyi pencere işaretçisi. Kapsayıcı bir SDI uygulaması ise NULL olabilir.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa sıfır; Aksi takdirde 0.
+
+### <a name="remarks"></a>Açıklamalar
+
+Varsayılan uygulama, hiçbir şey yapmaz. Bu işlev, herhangi bir özel denetim çubukları oluştururken gerekli işlemi gerçekleştirmek için geçersiz kılın.
+
+##  <a name="repositionframe"></a>  COleIPFrameWnd::RepositionFrame
+
+Framework çağrıları `RepositionFrame` denetim çubukları düzenlemek ve tümünün görünür olmasını yerinde düzenleme penceresi yeniden konumlandırmak için üye işlevi.
+
+```
 virtual void RepositionFrame(
-    LPCRECT lpPosRect,  
+    LPCRECT lpPosRect,
     LPCRECT lpClipRect);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *lpPosRect*  
- İşaretçi bir `RECT` yapısı veya `CRect` çerçeve pencerenin geçerli konumu koordinatları, piksel cinsinden istemci alanına göre yerinde içeren nesne.  
-  
- *lpClipRect*  
- İşaretçi bir `RECT` yapısı veya `CRect` çerçeve pencerenin geçerli dikdörtgen kırpımını koordinatları piksel cinsinden istemci alanına göre yerinde içeren nesne.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Denetim çubukları kapsayıcı penceresinde düzenini farklıdır bir OLE dışı çerçeve penceresi tarafından gerçekleştirilen. OLE dışı çerçeve penceresi, Denetim çubuklarını ve belirtilen çerçeve pencere boyutu, bir çağrı olduğu gibi diğer nesnelerden konumlarını hesaplar [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout). Denetim çubukları ve diğer nesneler için boşluk çıkarılır sonra kalan istemci alanıdır. A `COleIPFrameWnd` penceresi, diğer taraftan, araç çubukları bir verilen istemci alanını uygun olarak yerleştirir. Diğer bir deyişle, `CFrameWnd::RecalcLayout` çalışır "dışarıdan," ise `COleIPFrameWnd::RepositionFrame` çalışır "Inside out."  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC örnek HIERSVR](../../visual-cpp-samples.md)   
- [CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CFrameWnd Sınıfı](../../mfc/reference/cframewnd-class.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*lpPosRect*<br/>
+İşaretçi bir `RECT` yapısı veya `CRect` çerçeve pencerenin geçerli konumu koordinatları, piksel cinsinden istemci alanına göre yerinde içeren nesne.
+
+*lpClipRect*<br/>
+İşaretçi bir `RECT` yapısı veya `CRect` çerçeve pencerenin geçerli dikdörtgen kırpımını koordinatları piksel cinsinden istemci alanına göre yerinde içeren nesne.
+
+### <a name="remarks"></a>Açıklamalar
+
+Denetim çubukları kapsayıcı penceresinde düzenini farklıdır bir OLE dışı çerçeve penceresi tarafından gerçekleştirilen. OLE dışı çerçeve penceresi, Denetim çubuklarını ve belirtilen çerçeve pencere boyutu, bir çağrı olduğu gibi diğer nesnelerden konumlarını hesaplar [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout). Denetim çubukları ve diğer nesneler için boşluk çıkarılır sonra kalan istemci alanıdır. A `COleIPFrameWnd` penceresi, diğer taraftan, araç çubukları bir verilen istemci alanını uygun olarak yerleştirir. Diğer bir deyişle, `CFrameWnd::RecalcLayout` çalışır "dışarıdan," ise `COleIPFrameWnd::RepositionFrame` çalışır "Inside out."
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC örnek HIERSVR](../../visual-cpp-samples.md)<br/>
+[CFrameWnd Sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CFrameWnd Sınıfı](../../mfc/reference/cframewnd-class.md)

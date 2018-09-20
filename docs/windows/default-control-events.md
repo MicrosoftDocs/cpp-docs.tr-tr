@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7a57cb6c72d7d444c345140f4a738a3d4a3232c0
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 95c3d15414dbb312c60029a86707c1d32df56adc
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315619"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405521"
 ---
 # <a name="default-control-events"></a>Varsayılan Denetim Olayları
 
@@ -63,9 +63,9 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İletişim Kutusu Denetimleri için Üye Değişkenleri Tanımlama](../windows/defining-member-variables-for-dialog-controls.md)  
-[Kullanıcı Arabirimi Nesneleri ile İlişkili İleti Türleri](../mfc/reference/message-types-associated-with-user-interface-objects.md)  
-[İleti İşleyicisini Düzenleme](../mfc/reference/editing-a-message-handler.md)  
-[Yansımış Bir İleti İçin İleti İşleyicisi Tanımlama](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md)  
-[Yeni Denetim Sınıfınıza Dayalı Değişken Bildirme](../mfc/reference/declaring-a-variable-based-on-your-new-control-class.md)  
+[İletişim Kutusu Denetimleri için Üye Değişkenleri Tanımlama](../windows/defining-member-variables-for-dialog-controls.md)<br/>
+[Kullanıcı Arabirimi Nesneleri ile İlişkili İleti Türleri](../mfc/reference/message-types-associated-with-user-interface-objects.md)<br/>
+[İleti İşleyicisini Düzenleme](../mfc/reference/editing-a-message-handler.md)<br/>
+[Yansımış Bir İleti İçin İleti İşleyicisi Tanımlama](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md)<br/>
+[Yeni Denetim Sınıfınıza Dayalı Değişken Bildirme](../mfc/reference/declaring-a-variable-based-on-your-new-control-class.md)<br/>
 [Bir sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)

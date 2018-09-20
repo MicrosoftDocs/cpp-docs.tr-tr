@@ -12,23 +12,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af7755173ab884a40a5f8a41f432f265cc1e6c32
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 2c30f49eaf91353d6a7cd9bd26e0e10e95cb6acd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33686197"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46426789"
 ---
 # <a name="318-ompgetdynamic-function"></a>3.1.8 omp_get_dynamic İşlevi
-**Omp_get_dynamic** işlevi, iş parçacıklarının dinamik ayarlama etkinleştirilmişse ve 0 döndürür sıfır olmayan bir değer döndürür. Biçimi aşağıdaki gibidir:  
-  
-```  
-#include <omp.h>  
-int omp_get_dynamic(void);  
-```  
-  
- Uygulama iş parçacığı sayısını dinamik olarak ayarlamayı uygulamadığında bu işlev, her zaman 0 döndürür.  
-  
-## <a name="cross-references"></a>Çapraz referanslar:  
-  
--   Dinamik iş parçacığı ayarlama açıklaması için bkz: [bölüm 3.1.7](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) sayfasında 39.
+
+**Omp_get_dynamic** işlevi, iş parçacıkları yerleştirmenin dinamik ayarına etkinleştirilmişse ve 0 döndürür sıfır olmayan bir değer döndürür. Biçimi aşağıdaki gibidir:
+
+```
+#include <omp.h>
+int omp_get_dynamic(void);
+```
+
+Uygulama iş parçacığı sayısını yerleştirmenin dinamik ayarına uygulamaz, bu işlev her zaman 0 değerini döndürür.
+
+## <a name="cross-references"></a>Başvuruları çapraz:
+
+- Dinamik iş parçacığı ayarlama ile ilgili açıklama için bkz: [bölümü 3.1.7](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) sayfasında 39.

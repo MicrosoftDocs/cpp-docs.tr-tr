@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 528c66da24c4cbf6c22af5b1b5f8dd3afffff64f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8b5cf858ae3fb3974898428b8437784ac3ce324e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604652"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46416285"
 ---
 # <a name="roinitializewrapperroinitializewrapper-constructor"></a>RoInitializeWrapper::RoInitializeWrapper Oluşturucusu
 
@@ -34,7 +34,7 @@ RoInitializeWrapper(   RO_INIT_TYPE flags)
 
 ### <a name="parameters"></a>Parametreler
 
-*bayrakları*  
+*bayrakları*<br/>
 Windows çalışma zamanı tarafından sağlanan desteğin belirtir RO_INIT_TYPE numaralandırmalardan biri.
 
 ## <a name="remarks"></a>Açıklamalar

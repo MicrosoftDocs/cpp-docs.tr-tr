@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9753578de006ed46719d94d5861035ab77dbca6c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 90317405f09695c57c907e94306623d5b3e2386d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752258"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419974"
 ---
 # <a name="date-and-time"></a>Tarih ve Saat
 
@@ -44,6 +44,6 @@ MFC, tarihler ve saatler ile çalışma birkaç farklı yolunu destekler. Bu gü
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kavramları](../mfc/mfc-concepts.md)   
+[Kavramları](../mfc/mfc-concepts.md)<br/>
 [Genel MFC Konuları](../mfc/general-mfc-topics.md)
 

@@ -19,34 +19,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfbc9ce7b99efc1f8d99f5735c16c252ff613c59
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a92660223c84c5f53bc848e72b03316602180d36
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332133"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430299"
 ---
 # <a name="accessing-the-embedded-month-calendar-control"></a>Katıştırılmış Aylık Takvim Denetimine Erişme
-Katıştırılmış aylık takvim denetimi nesnesi erişilebilen `CDateTimeCtrl` çağrısıyla nesne [GetMonthCalCtrl](../mfc/reference/cdatetimectrl-class.md#getmonthcalctrl) üye işlevi.  
-  
+
+Katıştırılmış aylık takvim denetimi nesnesi erişilebilir `CDateTimeCtrl` nesne çağrısıyla [GetMonthCalCtrl](../mfc/reference/cdatetimectrl-class.md#getmonthcalctrl) üye işlevi.
+
 > [!NOTE]
->  Katıştırılmış aylık takvim denetiminin yalnızca tarih ve Saat Seçici denetimini olmadığı zaman kullanılan **DTS_UPDOWN** stil kümesi.  
-  
- Katıştırılmış denetime görüntülenmeden önce belirli öznitelikler değiştirmek istiyorsanız kullanışlıdır. Bunu gerçekleştirmek için tanıtıcı **DTN_DROPDOWN** bildirim, aylık takvim denetiminin almak (kullanarak [CDateTimeCtrl::GetMonthCalCtrl](../mfc/reference/cdatetimectrl-class.md#getmonthcalctrl)) ve değişikliklerinizi yapın. Ne yazık ki, aylık takvim denetiminin kalıcı değildir.  
-  
- Diğer bir deyişle, yeni aylık takvim denetiminin kullanıcı aylık takvim denetiminin görünümünü istediğinde, oluşturulan (önce **DTN_DROPDOWN** bildirim). Denetim yok (sonra **DTN_CLOSEUP** bildirim) kullanıcı tarafından kapatıldığında olduğunda. Başka bir deyişle, katıştırılmış denetime kapatıldığında, katıştırılmış denetime görüntülenmeden önce değiştirme öznitelikleri kaybolur.  
-  
- Bu yordamı için bir işleyici kullanarak, aşağıdaki örnekte gösterilmiştir **DTN_DROPDOWN** bildirim. Aylık takvim denetiminin çağrısıyla arka plan rengini kodunu değiştirir [SetMonthCalColor](../mfc/reference/cdatetimectrl-class.md#setmonthcalcolor), gri. Kod aşağıdaki gibidir:  
-  
- [!code-cpp[NVC_MFCControlLadenDialog#5](../mfc/codesnippet/cpp/accessing-the-embedded-month-calendar-control_1.cpp)]  
-  
- Katıştırılmış denetime kapatıldığında daha önce belirtildiği gibi aylık takvim denetiminin özelliklerini yapılan tüm değişiklikler, iki istisnalar kaybolur. Aylık takvim denetiminin renkleri ilk özel durum zaten açıklanmıştır. Ay takvim denetimi tarafından kullanılan yazı tipi ikinci istisnadır. Varsayılan yazı tipi için bir çağrı yaparak değiştirebileceğiniz [CDateTimeCtrl::SetMonthCalFont](../mfc/reference/cdatetimectrl-class.md#setmonthcalfont), var olan bir yazıtipi tanıtıcısı geçirme. Aşağıdaki örnekte (burada `m_dtPicker` tarih ve saat denetim nesnesidir) olası bir yöntemi gösterir:  
-  
- [!code-cpp[NVC_MFCControlLadenDialog#6](../mfc/codesnippet/cpp/accessing-the-embedded-month-calendar-control_2.cpp)]  
-  
- Yazı tipi, çağrısıyla değiştirilmişse `CDateTimeCtrl::SetMonthCalFont`, yeni yazı tipi depolanır ve bir ay Takvim olan görüntülenecek sonraki açışınızda kullanılır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CDateTimeCtrl kullanma](../mfc/using-cdatetimectrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+>  Katıştırılmış aylık takvim denetiminin tarih ve Saat Seçici denetimini yoksa yalnızca kullanılan **DTS_UPDOWN** stil kümesi.
+
+Bu özellik, eklenen denetimin görüntülenmeden önce belirli öznitelikleri değiştirmek istiyorsanız kullanışlıdır. Bunu gerçekleştirmek için tanıtıcı **DTN_DROPDOWN** bildirim, aylık takvim denetiminin almak (kullanarak [CDateTimeCtrl::GetMonthCalCtrl](../mfc/reference/cdatetimectrl-class.md#getmonthcalctrl)) ve değişikliklerinizi yapın. Ne yazık ki, aylık takvim denetiminin kalıcı değil.
+
+Diğer bir deyişle, yeni aylık takvim denetiminin kullanıcı aylık takvim denetiminin görünümünü istediğinde, oluşturulan (önce **DTN_DROPDOWN** bildirim). Denetim yok (sonra **DTN_CLOSEUP** bildirim), kullanıcı tarafından kapatıldı. Başka bir deyişle, eklenen denetimin kapatıldığında işlenecek kodu yerleştirin, eklenen denetimin görüntülenmeden önce değişiklik herhangi bir özniteliği kaybolur.
+
+Aşağıdaki örnek, bir işleyici için kullanarak, bu yordamı gösterir **DTN_DROPDOWN** bildirim. Kodu çağrısı, aylık takvim denetiminin arka plan rengini değiştirir [SetMonthCalColor](../mfc/reference/cdatetimectrl-class.md#setmonthcalcolor), gri. Kod aşağıdaki gibidir:
+
+[!code-cpp[NVC_MFCControlLadenDialog#5](../mfc/codesnippet/cpp/accessing-the-embedded-month-calendar-control_1.cpp)]
+
+Eklenen denetimin kapatıldı daha önce belirtildiği gibi aylık takvim denetiminin özelliklerini yapılan tüm değişiklikler, iki özel durum ile kaybolur. Aylık takvim denetiminin renklerini ilk özel durum zaten değindik. Ay takvim denetimi tarafından kullanılan yazı tipi ikinci istisnadır. Varsayılan yazı tipi için bir çağrı yaparak değiştirebilirsiniz [CDateTimeCtrl::SetMonthCalFont](../mfc/reference/cdatetimectrl-class.md#setmonthcalfont), var olan bir yazı tipi tanıtıcısını geçirmekten. Aşağıdaki örnek (burada `m_dtPicker` tarih ve saat denetimini nesnedir) bir olası yöntemi gösterir:
+
+[!code-cpp[NVC_MFCControlLadenDialog#6](../mfc/codesnippet/cpp/accessing-the-embedded-month-calendar-control_2.cpp)]
+
+Yazı tipi, çağrısıyla değiştirilmişse `CDateTimeCtrl::SetMonthCalFont`, yeni yazı tipi depolanır ve bir ay takvimi görüntülenecek olduğunda kullanılır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CDateTimeCtrl Kullanma](../mfc/using-cdatetimectrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

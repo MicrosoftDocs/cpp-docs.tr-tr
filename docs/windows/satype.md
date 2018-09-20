@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 462dba3caaef53e49203eab6d006ea59d7b23c0e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6562721cfdf1fb963a6af71e8a8665887fa4d4ae
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590379"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46413113"
 ---
 # <a name="satype"></a>satype
 
@@ -38,7 +38,7 @@ Veri türü belirtir `SAFEARRAY` yapısı.
 
 ### <a name="parameters"></a>Parametreler
 
-*data_type*  
+*data_type*<br/>
 Veri türü için `SAFEARRAY` arabirim yöntemi için parametre olarak geçirilen veri yapısı.
 
 ## <a name="requirements"></a>Gereksinimler
@@ -74,7 +74,7 @@ __interface A {
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Derleyici Öznitelikleri](../windows/compiler-attributes.md)  
-[Parametre Öznitelikleri](../windows/parameter-attributes.md)  
-[Yöntem Öznitelikleri](../windows/method-attributes.md)  
+[Derleyici Öznitelikleri](../windows/compiler-attributes.md)<br/>
+[Parametre Öznitelikleri](../windows/parameter-attributes.md)<br/>
+[Yöntem Öznitelikleri](../windows/method-attributes.md)<br/>
 [id](../windows/id.md)  

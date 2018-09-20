@@ -12,24 +12,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45f6206960b023bac7b99b867966703a210d7b1e
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: f3812f698f034b5610f90c57b94b56f0b8648417
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33694439"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46403807"
 ---
 # <a name="openmp-library-reference"></a>OpenMP Kitaplık Başvurusu
-OpenMP API çağrısında kullanılan yapılar bağlantılar sağlar.  
-  
- OpenMP standart Visual C++ uygulaması aşağıdaki yapılar içerir.  
-  
-|Oluştur|Açıklama|  
-|---------------|-----------------|  
-|[Kitaplıkları](../../../parallel/openmp/reference/openmp-libraries.md)|Visual C++'ta OpenMP çalışma zamanı kitaplıkları oluşturan .lib dosyaları açıklanır.|  
-|[Veri Türleri](../../../parallel/openmp/reference/openmp-data-types.md)|OpenMP API çağrısında kullanılan veri türleri için bağlantılar sağlar.|  
-|[Ortam Değişkenleri](../../../parallel/openmp/reference/openmp-environment-variables.md)|OpenMP API çağrısında kullanılan ortam değişkenleri için bağlantılar sağlar.|  
-|[İşlevler](../../../parallel/openmp/reference/openmp-functions.md)|OpenMP API çağrısında kullanılan işlevler için bağlantılar sağlar.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [OpenMP](../../../parallel/openmp/openmp-in-visual-cpp.md)
+
+OpenMP API çağrısında kullanılan yapıları bağlantılar sağlar.
+
+Visual C++ uygulaması OpenMP standart aşağıdaki yapıları içerir.
+
+|Oluştur|Açıklama|
+|---------------|-----------------|
+|[Kitaplıkları](../../../parallel/openmp/reference/openmp-libraries.md)|Visual c++ OpenMP çalışma zamanı kitaplıklarının oluşturan .lib dosyaları açıklar.|
+|[Veri Türleri](../../../parallel/openmp/reference/openmp-data-types.md)|OpenMP API çağrısında kullanılan veri türlerine bağlantılar sağlar.|
+|[Ortam Değişkenleri](../../../parallel/openmp/reference/openmp-environment-variables.md)|OpenMP API çağrısında kullanılan ortam değişkenlerini bağlantılar sağlar.|
+|[İşlevler](../../../parallel/openmp/reference/openmp-functions.md)|OpenMP API çağrısında kullanılan işlevlere bağlantılar sağlar.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[OpenMP](../../../parallel/openmp/openmp-in-visual-cpp.md)

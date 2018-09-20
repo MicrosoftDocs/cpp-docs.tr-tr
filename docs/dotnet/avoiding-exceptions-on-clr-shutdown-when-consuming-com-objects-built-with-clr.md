@@ -20,17 +20,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0efd2af7eb4bf8a70bff983d627f802f1976c6ba
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 687585d0b25c64f5575646de3cd4823e0a89988e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103518"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408992"
 ---
 # <a name="avoiding-exceptions-on-clr-shutdown-when-consuming-com-objects-built-with-clr"></a>CLR Kapatmasında /clr ile Oluşturulan COM Nesnelerini Tüketirken Özel Durumları Önleme
-Ortak dil çalışma zamanı (CLR) kapatma moduna girdikten sonra yerel işlevler CLR hizmetlerine erişiminiz sınırlanır. Yayın çağırmak girişimi sırasında bir COM nesnesi ile derlenmiş **/CLR**, CLR geçişler için yerel kod ve geçişleri geri (yönetilen kodda tanımlanır) IUnknown::Release çağrısını hizmet vermek için yönetilen koda. CLR kapatma modunda olduğundan geri yönetilen koda çağrı engeller.  
-  
- Bu sorunu çözmek için yayın yöntemlerinden çağırılan yıkıcıların yalnızca yerel kodu içeren emin olun.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Karışık (Yerel ve Yönetilen) Derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)
+
+Ortak dil çalışma zamanı (CLR) kapatma girdikten sonra yerel işlevleri CLR hizmetlere erişimi sınırlı. Yayın çağırma girişimi sırasında bir COM nesnesi ile derlenmiş **/CLR**, CLR geçişleri için yerel kod ve geçişleri geri yönetilen koda hizmet (yönetilen kod içinde tanımlanmıştır) IUnknown::Release çağrısı. Kapatma modunda olduğundan CLR, yönetilen kod uygulamasına geri çağrı engeller.
+
+Bu sorunu çözmek için yayın yöntemlerinden çağırılan yıkıcıların yalnızca yerel kod içeren emin olun.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Karışık (Yerel ve Yönetilen) Derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)

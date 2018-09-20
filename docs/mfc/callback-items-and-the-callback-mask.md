@@ -15,35 +15,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f3608fbc0c7e34de4ae67ae60a12af23e9ac885
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 0711fccb142d9774c37f2cb2d8f576bf7fddd128
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931694"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422850"
 ---
 # <a name="callback-items-and-the-callback-mask"></a>Geri Çağrı Öğeleri ve Geri Çağrı Maskesi
-Her öğelerinden biri için bir liste görünümü denetimi genellikle etiket metnini, öğenin simgelerin görüntü listesi dizini depolar ve bit kümesi için öğesi'nin durumu bayrakları. Uygulama zaten bir öğe için bilgilerin bazıları depoluyorsa yararlı geri çağrı öğeleri olarak ayrı öğeleri tanımlayabilirsiniz.  
-  
- Bir öğe için uygun değerleri belirterek bir geri çağırma öğesi olarak tanımlamak `pszText` ve `iImage` üyeleri **LV_ITEM** yapısı (bkz [CListCtrl::GetItem](../mfc/reference/clistctrl-class.md#getitem)). Uygulama öğenin veya alt'ın metin koruyorsa, belirtin **LPSTR_TEXTCALLBACK** değerini `pszText` üyesi. Uygulama öğenin simgesini izler belirtebilmeniz **I_IMAGECALLBACK** değerini `iImage` üyesi.  
-  
- Geri çağrı öğeleri tanımlamanın yanı sıra, denetimin geri çağrı maskesi de değiştirebilirsiniz. Bir dizi denetim yerine uygulama geçerli verileri depoladığı öğesi durumları belirtin bit bayrakları maskesidir. Geri çağrı maskesi, belirli bir öğeye uygular geri çağırma öğesi ataması aksine denetimin öğelerin tümünü uygular. Geri çağrı maskesi denetimi tüm öğesi durumları izler anlamı varsayılan sıfırdır. Bu varsayılan davranışı değiştirmek için aşağıdaki değerlerden herhangi bir bileşimini maskeye başlatın:  
-  
--   **LVIS_CUT** öğe kesme ve yapıştırma işlemi için işaretlenmiş.  
-  
--   **LVIS_DROPHILITED** öğesi bir Sürükle ve bırak hedefi olarak vurgulanır.  
-  
--   **LVIS_FOCUSED** öğenin odağa sahip.  
-  
--   **LVIS_SELECTED** öğe seçilir.  
-  
--   **LVIS_OVERLAYMASK** geçerli katmana görüntünün her öğe için resim listesi dizinini uygulamayı depolar.  
-  
--   **LVIS_STATEIMAGEMASK** uygulamayı şu anki durumu görüntü her öğe için resim listesi dizinini depolar.  
-  
- Bu maskesi ayarlama ve alma hakkında daha fazla bilgi için bkz: [CListCtrl::GetCallbackMask](../mfc/reference/clistctrl-class.md#getcallbackmask) ve [CListCtrl::SetCallbackMask](../mfc/reference/clistctrl-class.md#setcallbackmask).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CListCtrl kullanma](../mfc/using-clistctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Her alt öğeleri için bir liste görünümü denetimi etiket metni, öğenin simgeler, görüntü listesi dizinini genellikle depolar ve öğenin durumu için bir dizi bit bayrakları. Uygulamanız zaten bazı öğenin bilgileri depoluyorsa yararlı olan geri çağrı öğeleri olarak tek tek öğeleri tanımlayabilirsiniz.
+
+Bir öğe için uygun değerleri belirtilerek bir geri çağırma öğesi olarak tanımlamak `pszText` ve `iImage` üyeleri **LV_ITEM** yapısı (bkz [CListCtrl::GetItem](../mfc/reference/clistctrl-class.md#getitem)). Uygulama öğenin veya alt'ın metin tutuyorsa belirtin **LPSTR_TEXTCALLBACK** değerini `pszText` üyesi. Uygulamanın öğe için simge izler belirtebilmeniz **I_IMAGECALLBACK** değerini `iImage` üyesi.
+
+Geri çağrı öğeleri tanımlanmasına ek olarak, denetimin geri çağrı maskesi de değiştirebilirsiniz. Bu maskesi için denetimi yerine, uygulamanın geçerli verileri depolayan öğesi durumları belirtin bit bayrakları kümesidir. Geri çağrı maskesi, belirli bir ögeye uygulanan geri çağırma öğesi atamasını aksine denetimin öğelerin tümünü uygular. Geri çağrı maskesi varsayılan olarak denetim tüm öğesi durumları izler anlamına gelen sıfırdır. Bu varsayılan davranışı değiştirmek için aşağıdaki değerlerden herhangi bir birleşimini maskeye başlatın:
+
+- **LVIS_CUT** öğe kesme ve yapıştırma işlemi için işaretlenmiş.
+
+- **LVIS_DROPHILITED** öğenin bir sürükleme ve bırakma hedefi olarak vurgulanır.
+
+- **LVIS_FOCUSED** öğenin odağa sahip.
+
+- **LVIS_SELECTED** öğe seçilir.
+
+- **LVIS_OVERLAYMASK** uygulamayı her öğe için geçerli kaplama görüntünün görüntü listesi dizini depolar.
+
+- **LVIS_STATEIMAGEMASK** uygulamayı geçerli durumu görüntünün her öğe için resim listesi dizinini depolar.
+
+Alınıyor ve bu maskesini ayarlama hakkında daha fazla bilgi için bkz. [CListCtrl::GetCallbackMask](../mfc/reference/clistctrl-class.md#getcallbackmask) ve [CListCtrl::SetCallbackMask](../mfc/reference/clistctrl-class.md#setcallbackmask).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CListCtrl Kullanma](../mfc/using-clistctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

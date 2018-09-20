@@ -1,5 +1,5 @@
 ---
-title: Framework kodunuzu çağırması | Microsoft Docs
+title: Framework'ün kodunuzu çağırması | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,24 +22,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f746ce3c3d658ab1dccc098939410b52d91b1188
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 68db9107a8d2d113e9118c9cf125acb2798edcd4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348185"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46373876"
 ---
 # <a name="how-the-framework-calls-your-code"></a>Framework'ün Kodunuzu Çağırması
-Kaynak kodunuz ve MFC çerçevesi kodda arasındaki ilişkiyi anlamak önemlidir. Uygulamanızı çalıştığında, denetim akışını çoğunu framework'ün kodda yer alıyor. Framework'te kullanıcı komutları seçer ve bir görünümündeki verileri düzenler gibi Windows iletilerini alır ileti döngüsü yönetir. Framework tek başına işleyebilir olayları kodunuz üzerinde hiç kullanmayın. Örneğin, çerçeve pencereleri kapatın ve kullanıcı komutlarına yanıt olarak uygulamadan çıkmak bilir. Bu görevleri işleme gibi framework fırsatlar bu olaylarına yanıt vermek için ileti işleyicileri ve C++ sanal işlevleri kullanır. Kodunuz denetiminde değildir, ancak:; çerçevedir.  
-  
- Framework kodunuz için uygulamaya özgü olaylar çağırır. Örneğin, kullanıcı menü komutu seçtiğinde framework komut C++ nesnelerinin bir dizisi boyunca yönlendirir: Geçerli Görünüm ve çerçeve penceresi, görünüm, belgenin belge şablonu ve uygulama nesnesi ile ilişkili belge. Bu nesnelerden birini komutu işleyebilecek varsa, bunu, yapar uygun ileti işleyicisi işlevi çağırma. Verilen her komut için çağrılan kodu size ait olabilir veya framework'ün olabilir.  
-  
- Bu düzenlemenin Windows için geleneksel programlama veya olay kaynaklı programlama ile karşılaşmış programcıları için biraz bilgi sahibi olur.  
-  
- İlgili Konular bölümünde ne framework olarak başlatır ve uygulamayı çalıştırır ve ardından uygulama sonlanana gibi temizler okur. Ayrıca, burada yazdığınız kodları sığacak anlayacaksınız.  
-  
- Daha fazla bilgi için bkz: [sınıfı CWinApp: uygulama sınıfı](../mfc/cwinapp-the-application-class.md) ve [belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework'te Derleme](../mfc/building-on-the-framework.md)
+
+Kaynak kodunuzu ve MFC çerçevesi kodda arasındaki ilişkiyi anlamak önemlidir. Uygulamanız çalışırken, denetim akışı çoğunu framework'ün kodda yer alıyor. Kullanıcı komutları seçer ve bir görünümdeki veriler düzenler, Windows iletileri alır ileti döngüsü framework yönetir. Framework, tek başına işleyebileceği olayları kodunuz üzerinde hiç güvenmeyin. Örneğin, çerçeve pencereleri kapatın ve yanıt kullanıcı komutları için uygulamadan çıkın bilir. Bu görevleri işler gibi framework fırsatlar de bu olaylara yanıt vermek için ileti işleyicileri ve C++ sanal işlevleri kullanır. Kodunuz denetiminde değildir, ancak:; çerçevedir.
+
+Framework, uygulamaya özgü olaylar için kodunuzu çağırır. Örneğin, kullanıcı bir menü komutu seçtiğinde framework komut C++ nesnelerinin bir dizisi boyunca yönlendirir: Geçerli Görünüm ve çerçeve penceresi, görünüm, belgenin belge şablonu ve uygulama nesnesi ile ilişkili belge. Bu nesnelerden birini komutu işleyebilir, bunu mu uygun ileti işleyicisi işlevini çağırarak. Verilen komutlardan herhangi birine, çağrılan kodu size ait olabileceğini veya framework'ün olabilir.
+
+Bu düzenleme Windows için geleneksel programlama veya olay kaynaklı programlama ile karşılaşmış programcıları için biraz bilgi sahibi olur.
+
+İlgili konulardaki ne framework olarak başlatır ve uygulamayı çalıştırır ve ardından uygulama sonlanana olarak temizler okur. Ayrıca, yazdığınız kodun nereye sığacak anlayacaksınız.
+
+Daha fazla bilgi için [sınıfı CWinApp: uygulama sınıfı](../mfc/cwinapp-the-application-class.md) ve [belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Framework'te Derleme](../mfc/building-on-the-framework.md)
 

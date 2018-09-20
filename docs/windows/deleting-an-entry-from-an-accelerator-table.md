@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 747e0db32a73a277ef26e18e787e3e5a31f69578
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 9543f33895e112634bf9c62b00652760313af97f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315125"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46397201"
 ---
 # <a name="deleting-an-entry-from-an-accelerator-table-c"></a>(C++) Hızlandırıcı tablosundan giriş silme
 
@@ -48,5 +48,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Hızlandırıcı Tablolarını Düzenleme](../windows/editing-accelerator-tables.md)  
+[Hızlandırıcı Tablolarını Düzenleme](../windows/editing-accelerator-tables.md)<br/>
 [Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)

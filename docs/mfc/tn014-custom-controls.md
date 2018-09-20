@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3838fc2888567fa700eebd127bc7990175bdbc8
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: bacba9ea15598e4c722682a081b64b80db34e00b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693594"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430572"
 ---
 # <a name="tn014-custom-controls"></a>TN014: Özel Denetimler
 
@@ -144,5 +144,5 @@ Bkz: [CTRLTEST](../visual-cpp-samples.md) ne zaman kullanılacağı çeşitli ö
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)  
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)  
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)

@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d81fb8f8f41a57fc2bd1a87c6726b92756bf26b5
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 58f3be857e0a77a62a5f2d4d1d0b650f02fd391b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42464469"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425528"
 ---
 # <a name="macros-and-c"></a>Makrolar ve C++
 C++, bazıları ANSI C önişlemcisi tarafından sunulanların yerini alan yeni işlevler sunmaktadır. Bu yeni işlevler tür güvenliğini ve dilin öngörülebilirliğini geliştirir:  
@@ -39,5 +39,5 @@ Geriye dönük uyumluluk için, ANSI C ve önceki C++'ta varolan tüm önişlemc
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[Önceden tanımlanmış makrolar](../preprocessor/predefined-macros.md)   
+[Önceden Tanımlanmış Makrolar](../preprocessor/predefined-macros.md)<br/>
 [Makrolar (C/C++)](../preprocessor/macros-c-cpp.md)

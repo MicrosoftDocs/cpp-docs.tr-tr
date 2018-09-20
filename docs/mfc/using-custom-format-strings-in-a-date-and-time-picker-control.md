@@ -16,31 +16,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9aeb6c02041a4ba90f9721f23a1397e17a4cdf81
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: a8dcfe39a3054d998cf5116ef125a3791d8c4a47
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36955764"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405053"
 ---
 # <a name="using-custom-format-strings-in-a-date-and-time-picker-control"></a>Tarih ve Saat Seçici Denetiminde Özel Biçim Dizeleri Kullanma
-Varsayılan olarak, geçerli tarih ve saati görüntülemek için üç türleri (için benzersiz bir stil karşılık gelen her biçim) biçiminde tarih ve Saat Seçici denetimleri sağlar:  
-  
--   **DTS_LONGDATEFORMAT** uzun biçiminde, "Çarşamba, Ocak 3 2000" gibi bir çıktı üretir tarihi görüntüler.  
-  
--   **DTS_SHORTDATEFORMAT** "3/1/00" gibi bir çıktı üretir kısa biçimindeki tarihi görüntüler.  
-  
--   **DTS_TIMEFORMAT** "5:31:42 PM" gibi bir çıktı üretir uzun biçiminde saati görüntüler.  
-  
- Ancak, özel bir biçim dizesi kullanarak tarih veya saat görünümünü özelleştirebilirsiniz. Bu özel bir dize, varolan biçimi karakterleri, nonformat karakter veya her ikisinin birleşimini yapılır. Özel bir dize oluşturulduktan sonra çağırmaya [CDateTimeCtrl::SetFormat](../mfc/reference/cdatetimectrl-class.md#setformat) , özel dizeye geçiliyor. Tarih ve Saat Seçici denetimini sonra özel biçim dizesini kullanarak geçerli değeri görüntüler.  
-  
- Aşağıdaki örnek kod (burada *m_dtPicker* olan `CDateTimeCtrl` nesnesi) olası bir çözüm gösterilmektedir:  
-  
- [!code-cpp[NVC_MFCControlLadenDialog#7](../mfc/codesnippet/cpp/using-custom-format-strings-in-a-date-and-time-picker-control_1.cpp)]  
-  
- Özel biçim dizeleri yanı sıra tarih ve Saat Seçici desteği de denetimleri [geri arama alanları](../mfc/using-callback-fields-in-a-date-and-time-picker-control.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CDateTimeCtrl kullanma](../mfc/using-cdatetimectrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Varsayılan olarak, geçerli tarih ve saati görüntülemek için üç türleri (benzersiz stiline karşılık gelen her biçim) biçimlendirmek tarih ve Saat Seçici denetimleri sağlayın:
+
+- **DTS_LONGDATEFORMAT** uzun biçimde, "Çarşamba, 3 Şubat 2000" gibi bir çıktı üretir tarihi görüntüler.
+
+- **DTS_SHORTDATEFORMAT** "1/3/00" gibi bir çıktı üretir kısa biçimindeki tarihi görüntüler.
+
+- **DTS_TIMEFORMAT** "-17:31:42" gibi bir çıktı üretir uzun biçimde süreyi görüntüler.
+
+Ancak, bir özel biçim dizesi kullanarak tarih ve saati görünümünü özelleştirebilirsiniz. Bu özel bir dize, var olan biçim karakterleri, nonformat karakter veya her ikisinin bir birleşimi yapılır. Özel bir dize oluşturulduktan sonra bir çağrı yapmak [CDateTimeCtrl::SetFormat](../mfc/reference/cdatetimectrl-class.md#setformat) geçirme, özel bir dize. Tarih ve Saat Seçici denetimini daha sonra özel biçim dizesi kullanarak geçerli değeri görüntüler.
+
+Aşağıdaki kod örneği (burada *m_dtPicker* olduğu `CDateTimeCtrl` nesnesi) bir olası çözümü göstermektedir:
+
+[!code-cpp[NVC_MFCControlLadenDialog#7](../mfc/codesnippet/cpp/using-custom-format-strings-in-a-date-and-time-picker-control_1.cpp)]
+
+Özel biçim dizelerine ek olarak, tarih ve Saat Seçici desteği de denetimleri [geri çağrı alanlarını](../mfc/using-callback-fields-in-a-date-and-time-picker-control.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CDateTimeCtrl Kullanma](../mfc/using-cdatetimectrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

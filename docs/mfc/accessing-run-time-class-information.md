@@ -1,5 +1,5 @@
 ---
-title: Çalışma zamanı sınıf bilgilerine erişme | Microsoft Docs
+title: Çalışma süresi sınıf bilgilerine erişme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -26,50 +26,52 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 947102f17a5f35b7e6b5266f637375982d4cd55f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b92f634e120bf40fe2355a4c09e0e0fb68e9ec2c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334067"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407458"
 ---
 # <a name="accessing-run-time-class-information"></a>Çalışma Süresi Sınıf Bilgilerine Erişme
-Bu makalede, çalışma zamanında bir nesne sınıfının hakkındaki bilgilere erişmek açıklanmaktadır.  
-  
+
+Bu makalede, çalışma zamanında bir nesnenin sınıfını hakkında bilgilere erişmek açıklanmaktadır.
+
 > [!NOTE]
->  MFC kullanmayan [çalışma zamanı türü bilgileri](../cpp/run-time-type-information.md) Visual C++ 4.0 sunulan (RTTI) desteği.  
-  
- Sınıfından türetilen durumunda [CObject](../mfc/reference/cobject-class.md) ve kullanılan **DECLARE**_**dinamik** ve `IMPLEMENT_DYNAMIC`, `DECLARE_DYNCREATE` ve `IMPLEMENT_DYNCREATE`, veya `DECLARE_SERIAL` ve `IMPLEMENT_SERIAL` makroları makalesinde açıklanan [CObject'ten sınıf türetme](../mfc/deriving-a-class-from-cobject.md), `CObject` sınıfının kesin bir nesne sınıfının çalışma zamanında belirleme olanağı vardır.  
-  
- Bu yetenek, ek tür işlev bağımsız değişkenleri denetlemesi gerektiğinde ve bir nesne sınıfına göre özel amaçlı kodu yazarken gerekir en yararlı olur. Sanal işlevler işlevselliğini çoğaltır ancak, bu yöntem genellikle önerilmez.  
-  
- `CObject` Üye işlevi `IsKindOf` belirli bir nesne için belirli bir sınıf aitse veya belirli bir sınıftan türetildiği durumda olduğu belirlemek için kullanılabilir. Bağımsız değişkeni `IsKindOf` olan bir `CRuntimeClass` kullanarak elde nesne `RUNTIME_CLASS` makrosu sınıfı adı.  
-  
-### <a name="to-use-the-runtimeclass-macro"></a>RUNTIME_CLASS makrosu kullanmak için  
-  
-1.  Kullanım `RUNTIME_CLASS` sınıfı için aşağıda gösterildiği gibi sınıfın adı ile `CObject`:  
-  
-     [!code-cpp[NVC_MFCCObjectSample#4](../mfc/codesnippet/cpp/accessing-run-time-class-information_1.cpp)]  
-  
- Nadiren çalışma zamanı sınıf nesnesi doğrudan erişmek gerekir. Çalışma zamanı sınıf nesnesine geçirmek için daha yaygın bir kullanımdır `IsKindOf` sonraki yordamda gösterildiği gibi işlev. `IsKindOf` İşlevi bir nesne için belirli bir sınıfın ait olup olmadığını görmek için sınar.  
-  
-#### <a name="to-use-the-iskindof-function"></a>Iskindof işlevi kullanmak için  
-  
-1.  Çalışma zamanı sınıf desteği sınıfı olduğundan emin olun. Diğer bir deyişle, doğrudan veya dolaylı olarak öğesinden türetilmiş sınıf gerekir `CObject` ve kullanılan **DECLARE**_**dinamik** ve `IMPLEMENT_DYNAMIC`, `DECLARE_DYNCREATE` ve `IMPLEMENT_DYNCREATE`, veya `DECLARE_SERIAL` ve `IMPLEMENT_SERIAL` makroları makalesinde açıklanan [CObject'ten sınıf türetme](../mfc/deriving-a-class-from-cobject.md).  
-  
-2.  Çağrı `IsKindOf` bu sınıfındaki nesneler için üye işlevi kullanarak `RUNTIME_CLASS` oluşturmak için makrosu `CRuntimeClass` bağımsız değişkeni, aşağıda gösterildiği gibi:  
-  
-     [!code-cpp[NVC_MFCCObjectSample#2](../mfc/codesnippet/cpp/accessing-run-time-class-information_2.h)]  
-  
-     [!code-cpp[NVC_MFCCObjectSample#5](../mfc/codesnippet/cpp/accessing-run-time-class-information_3.cpp)]  
-  
+>  MFC kullanmayan [çalışma zamanı türü bilgileri](../cpp/run-time-type-information.md) Visual C++ 4.0 sunulan (RTTI) desteği.
+
+Varsa, sınıfından türetilmiş [CObject](../mfc/reference/cobject-class.md) ve kullanılan **DECLARE**_**dinamik** ve `IMPLEMENT_DYNAMIC`, `DECLARE_DYNCREATE` ve `IMPLEMENT_DYNCREATE`, veya `DECLARE_SERIAL` ve `IMPLEMENT_SERIAL` makroları makalesinde açıklanan [CObject'ten sınıf türetme](../mfc/deriving-a-class-from-cobject.md), `CObject` sınıfında özelliği çalışma zamanında tam bir nesnenin sınıfını belirler.
+
+Bu özellik, ek türü işlev bağımsız değişkenleri denetimini gerektiğinde ve bir nesne sınıfına göre özel amaçlı kod yazmanız gerekir en yararlı olur. Ancak, sanal işlevler işlevselliğini yineleyen çünkü bu yöntem genellikle önerilmez.
+
+`CObject` Üye işlevi `IsKindOf` belirli bir nesne için belirli bir sınıf dahilse veya belirli bir sınıftan türetilmişse belirlemek için kullanılabilir. Bağımsız değişkeni `IsKindOf` olduğu bir `CRuntimeClass` kullanarak elde nesnesi `RUNTIME_CLASS` sınıfın adı ile makrosu.
+
+### <a name="to-use-the-runtimeclass-macro"></a>RUNTIME_CLASS makrosunu kullanmak için
+
+1. Kullanım `RUNTIME_CLASS` sınıf için burada gösterildiği gibi sınıfın adıyla `CObject`:
+
+     [!code-cpp[NVC_MFCCObjectSample#4](../mfc/codesnippet/cpp/accessing-run-time-class-information_1.cpp)]
+
+Nadiren, çalışma zamanı sınıf nesneye doğrudan erişim gerekir. Daha yaygın bir kullanım için çalışma zamanı sınıf nesnesi geçirmektir `IsKindOf` sonraki yordamda gösterildiği gibi işlev. `IsKindOf` İşlevi, bir nesne belirli bir sınıfa ait olup olmadığını görmek için sınar.
+
+#### <a name="to-use-the-iskindof-function"></a>Iskindof işlevi kullanmak için
+
+1. Çalışma zamanı sınıf destek sınıfı olduğundan emin olun. Diğer bir deyişle, sınıfı doğrudan veya dolaylı olarak elde gerekir `CObject` ve kullanılan **DECLARE**_**dinamik** ve `IMPLEMENT_DYNAMIC`, `DECLARE_DYNCREATE` ve `IMPLEMENT_DYNCREATE`, veya `DECLARE_SERIAL` ve `IMPLEMENT_SERIAL` makroları makalesinde açıklanan [CObject'ten sınıf türetme](../mfc/deriving-a-class-from-cobject.md).
+
+1. Çağrı `IsKindOf` üye işlevi için bu sınıfın nesneleri kullanarak `RUNTIME_CLASS` oluşturulacak makrosu `CRuntimeClass` bağımsız değişkeni, burada gösterildiği gibi:
+
+     [!code-cpp[NVC_MFCCObjectSample#2](../mfc/codesnippet/cpp/accessing-run-time-class-information_2.h)]
+
+     [!code-cpp[NVC_MFCCObjectSample#5](../mfc/codesnippet/cpp/accessing-run-time-class-information_3.cpp)]
+
     > [!NOTE]
-    >  Iskindof döndürür **TRUE** nesne belirtilen sınıf veya belirtilen sınıfından türetilmiş bir sınıf üyesi ise. `IsKindOf` Gerekirse, türetilen Microsoft Foundation sınıflar için birden çok devralma kullanabilmenize karşın, birden çok devralma veya sanal taban sınıflar desteklemez.  
-  
- Bir çalışma zamanı sınıf bilgileri nesneleri dinamik oluşturulmasında kullanılır. Bu işlem makalesinde açıklanan [dinamik Nesne oluşturma](../mfc/dynamic-object-creation.md).  
-  
- Daha ayrıntılı seri hale getirme hakkında bilgi ve çalışma zamanı sınıf bilgileri için makalelerine bakın [MFC'deki dosyalar](../mfc/files-in-mfc.md) ve [seri hale getirme](../mfc/serialization-in-mfc.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CObject Kullanma](../mfc/using-cobject.md)
+    >  Iskindof döndürür **TRUE** nesnenin belirtilen sınıfın veya belirtilen sınıftan türetilmiş bir sınıfın üye ise. `IsKindOf` Gerekirse, türetilmiş Microsoft Foundation sınıfları için birden çok devralma kullanabilirsiniz, ancak birden çok devralma veya sanal temel sınıflar desteklemez.
+
+Bir çalışma süresi sınıf bilgilerine nesnelerin dinamik oluşturmada kullanılır. Bu işlem makalesinde açıklanan [dinamik Nesne oluşturma](../mfc/dynamic-object-creation.md).
+
+Daha ayrıntılı çalışma zamanı sınıf bilgileri ve seri hale getirme hakkında bilgi için makalelerine bakın [MFC'deki dosyalar](../mfc/files-in-mfc.md) ve [serileştirme](../mfc/serialization-in-mfc.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CObject Kullanma](../mfc/using-cobject.md)
 

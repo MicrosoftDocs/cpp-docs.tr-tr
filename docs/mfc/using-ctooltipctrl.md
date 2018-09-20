@@ -17,27 +17,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b08f2dfcff0c4df17def326e3a047507bb2a3c4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 85a32ab9dd944a412dd5dc3a01295047d5ae6ceb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385637"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430416"
 ---
 # <a name="using-ctooltipctrl"></a>CToolTipCtrl Kullanma
-[CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md) sınıfı bir araç ipucunu denetimini tek satırlık bir uygulamada bir aracı amacını açıklayan metin görüntüler küçük bir açılır pencere işlevselliğini yalıtır. Araç İpucu çoğu yalnızca kullanıcı aracını kullanarak imleci koyar ve onu var. yaklaşık yarısı için ikinci bırakır görünmesini zaman gizlenir. Araç İpucu imlecin yanında görünür ve kullanıcı fare düğmesini tıklattığında ya da imleci aracı dışına taşır kaybolur.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Araç İpuçları Oluşturma Yöntemleri](../mfc/methods-of-creating-tool-tips.md)  
-  
--   [Araç İpucu Denetimi için Ayarlar](../mfc/settings-for-the-tool-tip-control.md)  
-  
--   [CToolTipCtrl Kullanarak bir CToolTipCtrl Nesnesi Oluşturma ve Düzenleme](../mfc/using-ctooltipctrl-to-create-and-manipulate-a-ctooltipctrl-object.md)  
-  
--   [Araç İpucunu Denetimini Düzenleme](../mfc/manipulating-the-tool-tip-control.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CToolBarCtrl kullanma](../mfc/using-ctoolbarctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+[CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md) sınıfı, bir uygulamada bir aracın amacını açıklayan metnin tek bir çizgi görüntüler küçük bir açılır pencere bir araç ipucunu denetimini işlevselliğini kapsüller. Çoğu zaman, yalnızca kullanıcı imleci bir aracı üzerinde koyar ve veriler var. yaklaşık yarısı için ikinci dışına görünen bir araç ipucu gizlenir. Araç ipucu, imlecin yanında görünür ve kullanıcı fare düğmesine tıklar veya imleç aracı dışına gider kaybolur.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Araç İpuçları Oluşturma Yöntemleri](../mfc/methods-of-creating-tool-tips.md)
+
+- [Araç İpucu Denetimi için Ayarlar](../mfc/settings-for-the-tool-tip-control.md)
+
+- [CToolTipCtrl Kullanarak bir CToolTipCtrl Nesnesi Oluşturma ve Düzenleme](../mfc/using-ctooltipctrl-to-create-and-manipulate-a-ctooltipctrl-object.md)
+
+- [Araç İpucunu Denetimini Düzenleme](../mfc/manipulating-the-tool-tip-control.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CToolBarCtrl Kullanma](../mfc/using-ctoolbarctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

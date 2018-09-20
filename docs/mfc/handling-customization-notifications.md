@@ -57,34 +57,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c9931ae6bb83cb6801ac1bcc89359d9d7f468f2
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 34d9a0fad325c95b9de43e28269b00ad7ced4b95
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706049"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46416714"
 ---
 # <a name="handling-customization-notifications"></a>Özelleştirme Bildirimlerini İşleme
-Windows araç çubuğu ortak denetim eklemek, silmek veya yeniden düzenleme araç çubuğu düğmeleri kullanıcıya izin veren bir sistem tarafından tanımlanan özelleştirme iletişim kutusunda da dahil olmak üzere yerleşik özelleştirme özelliklerine sahiptir. Uygulamayı özelleştirme özellikleri mevcuttur ve kullanıcı araç çubuğunu özelleştirme uzantı denetimlerini belirler.  
-  
- Bu özelleştirme özellikleri kullanılabilir kullanıcıya araç vererek yapabileceğiniz **CCS_ADJUSTABLE** stili. Özelleştirme özellikleri, kullanıcının bir düğmeyi yeni bir konuma sürükleyin ya da düğme araç çubuğundan sürükleyerek kaldırmak için verin. Ayrıca, kullanıcının görüntülemek için araç çubuğunda çift tıklayabilirsiniz **araç çubuğunu Özelleştir** iletişim kutusunu eklemek, silmek ve araç çubuğu düğmeleri yeniden izin verir. Uygulamayı kullanarak iletişim kutusunu görüntüleyebilirsiniz [Özelleştir](../mfc/reference/ctoolbarctrl-class.md#customize) üye işlevi.  
-  
- Araç çubuğu denetimi bildirim iletilerini özelleştirme işlemi her bir adımı üst penceresine gönderir. Kullanıcı tutan SHIFT tuşunu ve bir düğmeyi sürükleyip başlar, araç sürükleme işlemi otomatik olarak işler. Araç gönderir **TBN_QUERYDELETE** düğmenin silinmiş olabileceğini belirlemek için bildirim iletisi üst pencere. Sürükleme işlemi sonlandırır üst pencere döndürürse **FALSE**. Aksi takdirde, araç fare girişi yakalar ve kullanıcının fare düğmesini serbest bırakmak bekler.  
-  
- Kullanıcı fare düğmesini bıraktığında araç çubuğu denetimi fare imlecini konumunu belirler. İmleç bir araç çubuğu ise, düğmeyi silinir. İmleç başka bir araç çubuğu düğmesini ise, araç gönderir **tbn_queryınsert** belirtilen düğmenin soluna bir düğme eklenen olmadığını belirlemek için bildirim iletisi üst pencere. Üst pencere döndürürse düğme eklenir **TRUE**; Aksi takdirde, bu değildir. Araç gönderir **TBN_TOOLBARCHANGE** sürükleme işlemi sonuna belirten uyarı iletisi.  
-  
- Kullanıcı bir sürükleme işlemi SHIFT tuşunu basılı tutulmadan başlıyorsa, araç çubuğu denetimi gönderir **tbn_begındrag** sahip penceresine bir bildirim iletisi. Düğme sürükleyerek kendi kod uygulayan bir uygulama bu iletiyi bir sürükleme işlemi başlatmak için bir sinyal kullanabilirsiniz. Araç gönderir **TBN_ENDDRAG** sürükleme işlemi sonuna belirten uyarı iletisi.  
-  
- Kullanıcı bir araç kullanarak özelleştirir araç çubuğu denetimi bildirim iletilerini gönderir **araç çubuğunu Özelleştir** iletişim kutusu. Araç gönderir **tbn_begınadjust** araç çubuğu kullanıcı çift tıkladığında, ancak önce iletişim kutusu oluşturulduktan sonra bildirim iletisi. Ardından, bir dizi gönderme araç başlar **tbn_queryınsert** araç çubuğu düğmeleri eklenecek izin verip vermeyeceğini belirlemek için bildirim iletileri. Üst pencere döndürdüğünde **TRUE**, araç durdurur gönderme **tbn_queryınsert** bildirim iletileri. Üst pencere oluşmazsa **TRUE** herhangi bir düğmesini araç çubuğu iletişim kutusunu yok eder.  
-  
- Ardından, herhangi bir düğme araç çubuğundan bir göndererek silinebilir, araç çubuğu denetimi belirler **TBN_QUERYDELETE** araç çubuğunda her düğme için bildirim iletisi. Üst pencereyi döndürür **TRUE** bir düğme olabileceğini Silinen; aksi takdirde belirtmek için döndürdüğü **FALSE**. Araç çubuğu iletişim kutusuna tüm araç çubuğu düğmeleri ekler, ancak silinemez o gri görüntüler.  
-  
- Araç çubuğu denetimi araç çubuğu özelleştirme iletişim kutusunda bir düğme hakkında bilgi gerektiğinde, gönderdiği **tbn_getbuttonınfo** bilgi ihtiyaç düğmesi dizinini belirten bir bildirim iletisi ve adresini bir **TBNOTIFY** yapısı. Üst pencere yapısıyla ilgili bilgileri doldurmanız gerekir.  
-  
- **Araç çubuğunu Özelleştir** iletişim kutusunda Yardım düğmesine ve Sıfırla düğmesi içerir. Kullanıcı Yardım düğmesini seçtiğinde, araç çubuğu denetimi gönderir **TBN_CUSTHELP** bildirim iletisi. Üst pencere Yardım bilgilerini görüntüleyerek yanıt vermesi gerekir. İletişim kutusu gönderir **TBN_RESET** kullanıcı Sıfırla düğmesini seçtiğinde bildirim iletisi. Bu ileti hakkında iletişim kutusunu başlatmak için araç olduğunu bildirir.  
-  
- Bu iletiler tüm **wm_notıfy** iletileri ve işlenebilir sahibi pencerenizde sahibi pencerenin ileti eşlemesi için ileti eşlemesi girişleri aşağıdaki biçimde ekleyerek:  
-  
+
+Windows araç çubuğu ortak denetim eklemek, silmek veya yeniden düzenleme araç çubuğu düğmeleri kullanıcıya izin veren bir sistem tarafından tanımlanan özelleştirme iletişim kutusunda da dahil olmak üzere yerleşik özelleştirme özelliklerine sahiptir. Uygulamayı özelleştirme özellikleri mevcuttur ve kullanıcı araç çubuğunu özelleştirme uzantı denetimlerini belirler.
+
+Bu özelleştirme özellikleri kullanılabilir kullanıcıya araç vererek yapabileceğiniz **CCS_ADJUSTABLE** stili. Özelleştirme özellikleri, kullanıcının bir düğmeyi yeni bir konuma sürükleyin ya da düğme araç çubuğundan sürükleyerek kaldırmak için verin. Ayrıca, kullanıcının görüntülemek için araç çubuğunda çift tıklayabilirsiniz **araç çubuğunu Özelleştir** iletişim kutusunu eklemek, silmek ve araç çubuğu düğmeleri yeniden izin verir. Uygulamayı kullanarak iletişim kutusunu görüntüleyebilirsiniz [Özelleştir](../mfc/reference/ctoolbarctrl-class.md#customize) üye işlevi.
+
+Araç çubuğu denetimi bildirim iletilerini özelleştirme işlemi her bir adımı üst penceresine gönderir. Kullanıcı tutan SHIFT tuşunu ve bir düğmeyi sürükleyip başlar, araç sürükleme işlemi otomatik olarak işler. Araç gönderir **TBN_QUERYDELETE** düğmenin silinmiş olabileceğini belirlemek için bildirim iletisi üst pencere. Sürükleme işlemi sonlandırır üst pencere döndürürse **FALSE**. Aksi takdirde, araç fare girişi yakalar ve kullanıcının fare düğmesini serbest bırakmak bekler.
+
+Kullanıcı fare düğmesini bıraktığında araç çubuğu denetimi fare imlecini konumunu belirler. İmleç bir araç çubuğu ise, düğmeyi silinir. İmleç başka bir araç çubuğu düğmesini ise, araç gönderir **tbn_queryınsert** belirtilen düğmenin soluna bir düğme eklenen olmadığını belirlemek için bildirim iletisi üst pencere. Üst pencere döndürürse düğme eklenir **TRUE**; Aksi takdirde, bu değildir. Araç gönderir **TBN_TOOLBARCHANGE** sürükleme işlemi sonuna belirten uyarı iletisi.
+
+Kullanıcı bir sürükleme işlemi SHIFT tuşunu basılı tutulmadan başlıyorsa, araç çubuğu denetimi gönderir **tbn_begındrag** sahip penceresine bir bildirim iletisi. Düğme sürükleyerek kendi kod uygulayan bir uygulama bu iletiyi bir sürükleme işlemi başlatmak için bir sinyal kullanabilirsiniz. Araç gönderir **TBN_ENDDRAG** sürükleme işlemi sonuna belirten uyarı iletisi.
+
+Kullanıcı bir araç kullanarak özelleştirir araç çubuğu denetimi bildirim iletilerini gönderir **araç çubuğunu Özelleştir** iletişim kutusu. Araç gönderir **tbn_begınadjust** araç çubuğu kullanıcı çift tıkladığında, ancak önce iletişim kutusu oluşturulduktan sonra bildirim iletisi. Ardından, bir dizi gönderme araç başlar **tbn_queryınsert** araç çubuğu düğmeleri eklenecek izin verip vermeyeceğini belirlemek için bildirim iletileri. Üst pencere döndürdüğünde **TRUE**, araç durdurur gönderme **tbn_queryınsert** bildirim iletileri. Üst pencere oluşmazsa **TRUE** herhangi bir düğmesini araç çubuğu iletişim kutusunu yok eder.
+
+Ardından, herhangi bir düğme araç çubuğundan bir göndererek silinebilir, araç çubuğu denetimi belirler **TBN_QUERYDELETE** araç çubuğunda her düğme için bildirim iletisi. Üst pencereyi döndürür **TRUE** bir düğme olabileceğini Silinen; aksi takdirde belirtmek için döndürdüğü **FALSE**. Araç çubuğu iletişim kutusuna tüm araç çubuğu düğmeleri ekler, ancak silinemez o gri görüntüler.
+
+Araç çubuğu denetimi araç çubuğu özelleştirme iletişim kutusunda bir düğme hakkında bilgi gerektiğinde, gönderdiği **tbn_getbuttonınfo** bilgi ihtiyaç düğmesi dizinini belirten bir bildirim iletisi ve adresini bir **TBNOTIFY** yapısı. Üst pencere yapısıyla ilgili bilgileri doldurmanız gerekir.
+
+**Araç çubuğunu Özelleştir** iletişim kutusunda Yardım düğmesine ve Sıfırla düğmesi içerir. Kullanıcı Yardım düğmesini seçtiğinde, araç çubuğu denetimi gönderir **TBN_CUSTHELP** bildirim iletisi. Üst pencere Yardım bilgilerini görüntüleyerek yanıt vermesi gerekir. İletişim kutusu gönderir **TBN_RESET** kullanıcı Sıfırla düğmesini seçtiğinde bildirim iletisi. Bu ileti hakkında iletişim kutusunu başlatmak için araç olduğunu bildirir.
+
+Bu iletiler tüm **wm_notıfy** iletileri ve işlenebilir sahibi pencerenizde sahibi pencerenin ileti eşlemesi için ileti eşlemesi girişleri aşağıdaki biçimde ekleyerek:
+
 ```cpp
 ON_NOTIFY( wNotifyCode, idControl, memberFxn )
 ```
@@ -99,20 +100,20 @@ ON_NOTIFY( wNotifyCode, idControl, memberFxn )
 
 - **memberFxn**
 
-   Bu bildirim alındığında çağrılacak üye işlevi.  
-  
-Aşağıdaki prototip ile üye işlevi bildirilmesi:  
-  
+   Bu bildirim alındığında çağrılacak üye işlevi.
+
+Aşağıdaki prototip ile üye işlevi bildirilmesi:
+
 ```cpp
 afx_msg void memberFxn( NMHDR * pNotifyStruct, LRESULT * result );
 ```
 
- Bildirim ileti işleyicisi bir değer döndürüyorsa, bunu, koymak **LRESULT** işaret ettiği *sonucu*.  
-  
- Her ileti için `pNotifyStruct` işaret ya da bir **NMHDR** yapısı veya **TBNOTIFY** yapısı. Bu yapılar, aşağıda açıklanmıştır:  
-  
- **NMHDR** yapısı aşağıdaki üyeleri içerir:  
-  
+Bildirim ileti işleyicisi bir değer döndürüyorsa, bunu, koymak **LRESULT** işaret ettiği *sonucu*.
+
+Her ileti için `pNotifyStruct` işaret ya da bir **NMHDR** yapısı veya **TBNOTIFY** yapısı. Bu yapılar, aşağıda açıklanmıştır:
+
+**NMHDR** yapısı aşağıdaki üyeleri içerir:
+
 ```cpp
 typedef struct tagNMHDR {
     HWND hwndFrom;  // handle of control sending message
@@ -123,34 +124,34 @@ typedef struct tagNMHDR {
 
 - **hwndFrom**
 
-   Bildirim göndererek denetim pencere tanıtıcısı. Bu tanıtıcıya dönüştürmek için bir `CWnd` işaretçisi, kullanım [CWnd::FromHandle](../mfc/reference/cwnd-class.md#fromhandle).  
-  
+   Bildirim göndererek denetim pencere tanıtıcısı. Bu tanıtıcıya dönüştürmek için bir `CWnd` işaretçisi, kullanım [CWnd::FromHandle](../mfc/reference/cwnd-class.md#fromhandle).
+
 - **idFrom**
 
-   Bildirim göndererek denetim tanımlayıcısı.  
-  
+   Bildirim göndererek denetim tanımlayıcısı.
+
 - **Kod**
 
-   Uyarı kodu. Bu üye gibi bir denetim türü için belirli bir değer olabilir **tbn_begınadjust** veya **TTN_NEEDTEXT**, aşağıda listelenen yaygın bildirim değerlerden biri olabilir:  
-  
-   - **Nm_clıck** kullanıcı denetiminde farenin sol düğmesine tıkladı.  
-  
-   - **NM_DBLCLK** kullanıcı denetiminde farenin sol düğmesine çift tıklandığında.  
-  
-   - **Nm_kıllfocus** denetim, giriş odağını kaybetmiş.  
-  
-   - **NM_OUTOFMEMORY** denetimi yeterli bellek olmadığından bir işlem tamamlanamadı.  
-  
-   - **Nm_rclıck** kullanıcı denetiminde sağ fare düğmesine tıkladı.  
-  
-   - **NM_RDBLCLK** kullanıcı denetiminde sağ fare düğmesine çift tıklandığında.  
-  
-   - **NM_RETURN** denetimin Girintiyi aldığını ve kullanıcının ENTER tuşuna bastığını.  
-  
-   - **NM_SETFOCUS** denetimin Girintiyi aldı.  
-  
-**TBNOTIFY** yapısı aşağıdaki üyeleri içerir:  
-  
+   Uyarı kodu. Bu üye gibi bir denetim türü için belirli bir değer olabilir **tbn_begınadjust** veya **TTN_NEEDTEXT**, aşağıda listelenen yaygın bildirim değerlerden biri olabilir:
+
+   - **Nm_clıck** kullanıcı denetiminde farenin sol düğmesine tıkladı.
+
+   - **NM_DBLCLK** kullanıcı denetiminde farenin sol düğmesine çift tıklandığında.
+
+   - **Nm_kıllfocus** denetim, giriş odağını kaybetmiş.
+
+   - **NM_OUTOFMEMORY** denetimi yeterli bellek olmadığından bir işlem tamamlanamadı.
+
+   - **Nm_rclıck** kullanıcı denetiminde sağ fare düğmesine tıkladı.
+
+   - **NM_RDBLCLK** kullanıcı denetiminde sağ fare düğmesine çift tıklandığında.
+
+   - **NM_RETURN** denetimin Girintiyi aldığını ve kullanıcının ENTER tuşuna bastığını.
+
+   - **NM_SETFOCUS** denetimin Girintiyi aldı.
+
+**TBNOTIFY** yapısı aşağıdaki üyeleri içerir:
+
 ```cpp
 typedef struct {
     NMHDR hdr; // information common to all WM_NOTIFY messages
@@ -160,70 +161,71 @@ typedef struct {
     LPSTR lpszText;// address of button text
 } TBNOTIFY, FAR* LPTBNOTIFY;
 ```
-  
+
 - **HDR**
 
-   Tüm ortak bilgiler **wm_notıfy** iletileri.  
-  
+   Tüm ortak bilgiler **wm_notıfy** iletileri.
+
 - **iItem**
 
-   Bildirim ile ilişkilendirilmiş düğmesi dizini.  
-  
+   Bildirim ile ilişkilendirilmiş düğmesi dizini.
+
 - **tbButton**
 
-   **TBBUTTON** araç çubuğu düğmesini hakkında bilgi içeren yapı bildirim ile ilişkili.  
-  
+   **TBBUTTON** araç çubuğu düğmesini hakkında bilgi içeren yapı bildirim ile ilişkili.
+
 - **cchText**
 
-   Düğme metnini karakter sayısı.  
-  
+   Düğme metnini karakter sayısı.
+
 - **lpszText**
 
-   Düğme metnini işaretçisi.  
-  
-Araç gönderir bildirimleri aşağıdaki gibidir:  
-  
+   Düğme metnini işaretçisi.
+
+Araç gönderir bildirimleri aşağıdaki gibidir:
+
 - **TBN_BEGINADJUST**
 
-   Kullanıcı bir araç çubuğu denetimini özelleştirme başladığında gönderilir. İşaretçi işaret bir **NMHDR** bildirim hakkında bilgi içeren yapısı. İşleyicinin belirli bir değer gerektirmez.  
-  
+   Kullanıcı bir araç çubuğu denetimini özelleştirme başladığında gönderilir. İşaretçi işaret bir **NMHDR** bildirim hakkında bilgi içeren yapısı. İşleyicinin belirli bir değer gerektirmez.
+
 - **TBN_BEGINDRAG**
 
-   Kullanıcı bir düğmeyi bir araç çubuğu denetiminde sürükleme başladığında gönderilir. İşaretçi işaret bir **TBNOTIFY** yapısı. **İItem** üyeyi içeren sürüklenen düğmesi sıfır tabanlı dizini. İşleyicinin belirli bir değer gerektirmez.  
-  
+   Kullanıcı bir düğmeyi bir araç çubuğu denetiminde sürükleme başladığında gönderilir. İşaretçi işaret bir **TBNOTIFY** yapısı. **İItem** üyeyi içeren sürüklenen düğmesi sıfır tabanlı dizini. İşleyicinin belirli bir değer gerektirmez.
+
 - **TBN_CUSTHELP**
 
-   Kullanıcı araç çubuğunu Özelleştir iletişim kutusundaki Yardım düğmesini seçtiğinde gönderilir. Dönüş değeri yok. İşaretçi işaret bir **NMHDR** bildirim iletisi hakkında bilgi içeren yapısı. İşleyicinin belirli bir değer gerektirmez.  
-  
+   Kullanıcı araç çubuğunu Özelleştir iletişim kutusundaki Yardım düğmesini seçtiğinde gönderilir. Dönüş değeri yok. İşaretçi işaret bir **NMHDR** bildirim iletisi hakkında bilgi içeren yapısı. İşleyicinin belirli bir değer gerektirmez.
+
 - **TBN_ENDADJUST**
 
-   Kullanıcı bir araç çubuğu denetimini özelleştirme durduğunda gönderilir. İşaretçi işaret bir **NMHDR** bildirim iletisi hakkında bilgi içeren yapısı. İşleyicinin belirli bir değer gerektirmez.  
-  
+   Kullanıcı bir araç çubuğu denetimini özelleştirme durduğunda gönderilir. İşaretçi işaret bir **NMHDR** bildirim iletisi hakkında bilgi içeren yapısı. İşleyicinin belirli bir değer gerektirmez.
+
 - **TBN_ENDDRAG**
 
-   Kullanıcı bir düğmeyi bir araç çubuğu denetiminde sürükleme durduğunda gönderilir. İşaretçi işaret bir **TBNOTIFY** yapısı. **İItem** üyeyi içeren sürüklenen düğmesi sıfır tabanlı dizini. İşleyicinin belirli bir değer gerektirmez.  
-  
+   Kullanıcı bir düğmeyi bir araç çubuğu denetiminde sürükleme durduğunda gönderilir. İşaretçi işaret bir **TBNOTIFY** yapısı. **İItem** üyeyi içeren sürüklenen düğmesi sıfır tabanlı dizini. İşleyicinin belirli bir değer gerektirmez.
+
 - **TBN_GETBUTTONINFO**
 
-   Kullanıcı bir araç çubuğu denetiminin özelleştirirken gönderilir. Araç çubuğu araç çubuğunu Özelleştir iletişim kutusu tarafından gerekli bilgileri almak için bu bildirim iletisi kullanır. İşaretçi işaret bir **TBNOTIFY** yapısı. **İItem** üye bir düğme sıfır tabanlı dizini belirtir. **PszText** ve **cchText** üyeleri, geçerli düğme metnini karakter uzunluğu ve adresi belirtin. Uygulama düğmesi hakkında bilgi içeren yapı doldurmanız gerekir. Dönüş **TRUE** düğme bilgisi yapısına kopyalanmadıysa veya **FALSE** Aksi takdirde.  
-  
+   Kullanıcı bir araç çubuğu denetiminin özelleştirirken gönderilir. Araç çubuğu araç çubuğunu Özelleştir iletişim kutusu tarafından gerekli bilgileri almak için bu bildirim iletisi kullanır. İşaretçi işaret bir **TBNOTIFY** yapısı. **İItem** üye bir düğme sıfır tabanlı dizini belirtir. **PszText** ve **cchText** üyeleri, geçerli düğme metnini karakter uzunluğu ve adresi belirtin. Uygulama düğmesi hakkında bilgi içeren yapı doldurmanız gerekir. Dönüş **TRUE** düğme bilgisi yapısına kopyalanmadıysa veya **FALSE** Aksi takdirde.
+
 - **TBN_QUERYDELETE**
 
-   Kullanıcı bir düğmeyi bir araç çubuğu denetimi silinebilir olup olmadığını belirlemek için bir araç çubuğunu özelleştiriyorken gönderilir. İşaretçi işaret bir **TBNOTIFY** yapısı. **İItem** üyeyi içeren silinecek düğmenin sıfır tabanlı dizini. Dönüş **TRUE** silinmesi için düğmesine izin vermek veya **FALSE** düğme silinmesini önlemek için.  
-  
+   Kullanıcı bir düğmeyi bir araç çubuğu denetimi silinebilir olup olmadığını belirlemek için bir araç çubuğunu özelleştiriyorken gönderilir. İşaretçi işaret bir **TBNOTIFY** yapısı. **İItem** üyeyi içeren silinecek düğmenin sıfır tabanlı dizini. Dönüş **TRUE** silinmesi için düğmesine izin vermek veya **FALSE** düğme silinmesini önlemek için.
+
 - **TBN_QUERYINSERT**
 
-   Kullanıcı, belirtilen düğmenin soluna bir düğme takılı olup olmadığını belirlemek için bir araç çubuğu denetimi özelleştirme Gönder. İşaretçi işaret bir **TBNOTIFY** yapısı. **İItem** üyeyi içeren düğmeye eklenecek sıfır tabanlı dizini. Dönüş **TRUE** önüne belirli düğmesi eklenecek bir düğme izin vermek veya **FALSE** düğme önlemek için.  
-  
+   Kullanıcı, belirtilen düğmenin soluna bir düğme takılı olup olmadığını belirlemek için bir araç çubuğu denetimi özelleştirme Gönder. İşaretçi işaret bir **TBNOTIFY** yapısı. **İItem** üyeyi içeren düğmeye eklenecek sıfır tabanlı dizini. Dönüş **TRUE** önüne belirli düğmesi eklenecek bir düğme izin vermek veya **FALSE** düğme önlemek için.
+
 - **TBN_RESET**
 
-   Kullanıcı araç çubuğunu Özelleştir iletişim kutusu içeriği sıfırlandıktan sonra gönderilir. İşaretçi işaret bir **NMHDR** bildirim iletisi hakkında bilgi içeren yapısı. İşleyicinin belirli bir değer gerektirmez.  
-  
+   Kullanıcı araç çubuğunu Özelleştir iletişim kutusu içeriği sıfırlandıktan sonra gönderilir. İşaretçi işaret bir **NMHDR** bildirim iletisi hakkında bilgi içeren yapısı. İşleyicinin belirli bir değer gerektirmez.
+
 - **TBN_TOOLBARCHANGE**
 
-   Kullanıcı bir araç çubuğu denetiminin özelleştirdi sonra gönderilir. İşaretçi işaret bir **NMHDR** bildirim iletisi hakkında bilgi içeren yapısı. İşleyicinin belirli bir değer gerektirmez.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CToolBarCtrl kullanma](../mfc/using-ctoolbarctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+   Kullanıcı bir araç çubuğu denetiminin özelleştirdi sonra gönderilir. İşaretçi işaret bir **NMHDR** bildirim iletisi hakkında bilgi içeren yapısı. İşleyicinin belirli bir değer gerektirmez.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CToolBarCtrl Kullanma](../mfc/using-ctoolbarctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

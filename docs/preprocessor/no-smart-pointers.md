@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 345da5de492c33107effffb9c97b2fe60906e899
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: a01e6cf423aece9fba74c4b81fa247d57844e107
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42465601"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439893"
 ---
 # <a name="nosmartpointers"></a>no_smart_pointers
 **C++ özgü**  
@@ -42,5 +42,5 @@ Varsayılan olarak kullandığınızda, `#import`, bir tür kitaplığındaki t�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

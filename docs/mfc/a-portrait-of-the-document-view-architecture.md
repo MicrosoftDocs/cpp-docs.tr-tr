@@ -1,5 +1,5 @@
 ---
-title: Belge görünüm mimarisinin bir özeti | Microsoft Docs
+title: Belge-görünüm mimarisinin bir özeti | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -24,33 +24,38 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d903d183675ae4b79d4610fe4413cfd8bf0e704c
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 4bd07bf521e1dcfc59b1d3f213f513b1d361b8a6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36928950"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46409525"
 ---
 # <a name="a-portrait-of-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Bir Özeti
-Belgeler ve görünümler tipik bir MFC uygulamasında eşleştirilmelidir. Veri belgesinde depolanır, ancak görünümü ayrıcalıklı veri erişimi. Belge ayrımı görünümünden depolama ve veri Bakımı kendi görüntüden ayırır.  
-  
-## <a name="gaining-access-to-document-data-from-the-view"></a>Veri görünümünden belge erişimini  
- Görünümü ile ya da kendi belgenin verilere erişen [GetDocument](../mfc/reference/cview-class.md#getdocument) işaretçi belgeye ya da C++ sınıf görünümü yaparak döndüren işlev `friend` belge sınıfının. Görünüm veri erişimini çizin veya aksi halde işlemek hazır olduğunda veri almak için sonra kullanır.  
-  
- Örneğin, Görünüm'ün gelen [OnDraw](../mfc/reference/cview-class.md#ondraw) görünümü üye işlevini kullanır `GetDocument` bir belge işaretçi elde edilir. Bu işaretçi erişmek için kullandığı sonra bir `CString` belgedeki veri üyesi. Görünüm dizeye geçirir `TextOut` işlevi. Bu örnek kodu görmek için bkz: [bir görünümde çizim yapma](../mfc/drawing-in-a-view.md).  
-  
-## <a name="user-input-to-the-view"></a>Kullanıcı girişi görüntülemek için  
- Görünümün seçim veya veri düzenleme olarak kendi içinde bir fare tıklatma de yorumlayabilir. Benzer şekilde, tuş vuruşlarınızı veri girişi veya düzenleme olarak yorumlayabilir. Kullanıcı türleri metin yöneten bir görünümde bir dize varsayalım. Görünüm belge için bir işaretçi alır ve bazı veri yapısında depolar belgeye yeni veri iletmek için işaretçiyi kullanır.  
-  
-## <a name="updating-multiple-views-of-the-same-document"></a>Aynı belgenin birden çok görünüm güncelleştiriliyor  
- Bir uygulamada aynı belgenin birden çok görünümlerle — bir metin düzenleyicisinde Bölümlendirici pencere gibi — görünümü, yeni verileri ilk belgeye geçirir. Belgenin çağırır sonra [UpdateAllViews](../mfc/reference/cdocument-class.md#updateallviews) kendileri yeni verileri yansıtacak şekilde güncelleştirmek için belgenin tüm görünümleri söyler üye işlevi. Bu görünümler eşitler.  
-  
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Belge/görünüm mimarisinin avantajları](../mfc/advantages-of-the-document-view-architecture.md)  
-  
--   [Belge/görünüm mimarisinin alternatifleri](../mfc/alternatives-to-the-document-view-architecture.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Belge/görünüm mimarisi](../mfc/document-view-architecture.md)
+
+Belgeler ve görünümler tipik bir MFC uygulamasında eşleştirilmelidir. Belge içinde depolanan veri ancak görünüm ayrıcalıklı erişimi verilere. Belge ayrımı görünümünden veri Bakım ve depolama, ekrandan ayırır.
+
+## <a name="gaining-access-to-document-data-from-the-view"></a>Belge görünümünden verilerine erişim elde etme
+
+Görünüm, belgenin verilerini ile erişir [GetDocument](../mfc/reference/cview-class.md#getdocument) işlevi, belgeye veya bir C++ sınıf görünümü yaparak bir işaretçi döndürür `friend` belge sınıfı. Görünümü, veri erişimini ardından çizin veya aksi halde işlemek hazır olduğunda verileri almak için kullanır.
+
+Örneğin, Görünüm'den [OnDraw](../mfc/reference/cview-class.md#ondraw) görünümü üye işlevini kullanır `GetDocument` belge işaretçisi elde edilir. Sonra işaretçiyle erişmek için kullandığı bir `CString` belgedeki veri üyesi. Görünüm dizesine geçirir `TextOut` işlevi. Örnek kodu görmek için bkz: [bir görünümde çizim yapma](../mfc/drawing-in-a-view.md).
+
+## <a name="user-input-to-the-view"></a>Görüntülenecek kullanıcı girişi
+
+Görünüm ayrıca seçim veya veri düzenleme olarak kendi içinde bir fare tıklaması yorumlayabilir. Benzer şekilde, tuş vuruşlarınızı veri girişi veya düzenleme olarak yorumlayabilir. Kullanıcı türleri metin yöneten bir görünümde bir dize varsayalım. Görünüm, belge için bir işaretçi alır ve bazı veri yapıda depolar belgenin yeni verileri geçirmek için işaretçi kullanır.
+
+## <a name="updating-multiple-views-of-the-same-document"></a>Aynı belgede birden çok görünüm güncelleştiriliyor
+
+Uygulamada aynı belgenin birden çok görünüm — bir metin düzenleyicisinde bir ayırıcı penceresi gibi — görünümü belgeye ilk yeni verileri geçirir. Belgenin çağırdığı sonra [UpdateAllViews](../mfc/reference/cdocument-class.md#updateallviews) kendileri yeni verileri yansıtacak şekilde güncelleştirmek için belgedeki tüm görünümleri belirten üye işlevi. Bu görünümler eşitler.
+
+### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Belge/görünüm mimarisinin avantajları](../mfc/advantages-of-the-document-view-architecture.md)
+
+- [Belge/görünüm mimarisinin alternatifleri](../mfc/alternatives-to-the-document-view-architecture.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Belge/görünüm mimarisi](../mfc/document-view-architecture.md)
 

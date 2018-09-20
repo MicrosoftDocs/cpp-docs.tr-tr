@@ -12,26 +12,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f376fe639d9bca58b6e2bd55fd081b88921a7342
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: c15fa9d8c9d86b736bfc577a3b17e9809ec9baaf
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33686678"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439204"
 ---
 # <a name="43-ompdynamic"></a>4.3 OMP_DYNAMIC
-**Omp_dynamıc** ortam değişkeni etkinleştirir veya dinamik ayarlama açıkça etkin veya devre dışı çağıraraksüreceparalelbölgeleryürütmeiçinkullanılabilirişparçacığısayısınıdinamikolarakayarlamayıdevredışıbırakır**omp_set_dynamic** kitaplığı yordamı. Değeri olmalıdır **TRUE** veya **FALSE**.  
-  
- Varsa kümesine **doğru**, paralel bölgeler yürütmek için kullanılan iş parçacıklarının en iyi sistem kaynaklarını kullanmak için çalışma zamanı ortamı tarafından ayarlanmış.  Varsa kümesine **yanlış**, dinamik ayarlama devre dışıdır. Varsayılan uygulama tanımlı bir durumdur.  
-  
- Örnek:  
-  
-```  
-setenv OMP_DYNAMIC TRUE  
-```  
-  
-## <a name="cross-references"></a>Çapraz referanslar:  
-  
--   Paralel bölgeler hakkında daha fazla bilgi için bkz: [bölüm 2.3](../../parallel/openmp/2-3-parallel-construct.md) sayfasında 8.  
-  
--   **omp_set_dynamic** işlev, bkz: [bölüm 3.1.7](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) sayfasında 39.
+
+**Omp_dynamıc** ortam değişkeni etkinleştirir veya yerleştirmenin dinamik ayarına açıkça etkin veya devre dışı çağıraraksüreceparalelbölgeleriyürütülmesiiçinkullanılabilirişparçacığısayısınıyerleştirmenindinamikayarınadevredışıbırakır.**omp_set_dynamic** yordamı. Değeri olmalıdır **TRUE** veya **FALSE**.
+
+Varsa kümesine **TRUE**, paralel bölgeleri yürütmek için kullanılan iş parçacıklarının sayısını sistem kaynakları en iyi şekilde yararlanmak için çalışma zamanı ortamı tarafından ayarlanmış.  Varsa kümesine **FALSE**, yerleştirmenin dinamik ayarına devre dışı bırakıldı. Uygulama tanımlı varsayılan durumdur.
+
+Örnek:
+
+```
+setenv OMP_DYNAMIC TRUE
+```
+
+## <a name="cross-references"></a>Başvuruları çapraz:
+
+- Paralel bölgeleri hakkında daha fazla bilgi için bkz. [bölümü 2.3](../../parallel/openmp/2-3-parallel-construct.md) 8 sayfasında.
+
+- **omp_set_dynamic** çalışması için bkz: [bölümü 3.1.7](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) sayfasında 39.

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06a9f4275ff6acfcef7b7173fbfc6f9abf89b4f3
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8c69a45ec56c5ee6f1c8d7a48be2cac2d158dc6e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766012"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46381939"
 ---
 # <a name="cfiletimespan-class"></a>CFileTimeSpan sınıfı
 
@@ -317,8 +317,8 @@ Milisaniye cinsinden zaman aralığı için yeni değer.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)   
-[CFileTime sınıfı](../../atl-mfc-shared/reference/cfiletime-class.md)   
-[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
+[FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)<br/>
+[CFileTime Sınıfı](../../atl-mfc-shared/reference/cfiletime-class.md)<br/>
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 

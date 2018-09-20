@@ -33,12 +33,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 08347b4ccfa44d8645acc2bd5e96775bab4e7740
-ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
+ms.openlocfilehash: cd9ab28ccce14c5ac0975b7050588ee6524cfcc9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601502"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408355"
 ---
 # <a name="eventsource-class"></a>EventSource Sınıfı
 
@@ -53,7 +53,7 @@ class EventSource;
 
 ### <a name="parameters"></a>Parametreler
 
-*TDelegateInterface*  
+*TDelegateInterface*<br/>
 Bir olay işleyicisi temsil eden bir temsilci için arabirim.
 
 ## <a name="members"></a>Üyeler
@@ -104,10 +104,10 @@ HRESULT Add(
 
 ### <a name="parameters"></a>Parametreler
 
-*delegateInterface*  
+*delegateInterface*<br/>
 Bir olay işleyicisi temsil eden bir temsilci nesnesi için arabirim.
 
-*Belirteç*  
+*Belirteç*<br/>
 Bu işlem tamamlandığında, olayı temsil eden bir işleyici. Parametre olarak bu belirteci kullanmasına [foreach()](#remove) olay işleyicisi atmak için yöntemi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -302,64 +302,64 @@ void InvokeAll(
 
 ### <a name="parameters"></a>Parametreler
 
-*T0*  
+*T0*<br/>
 Sıfırıncı olay işleyicisi bağımsız değişken türü.
 
-*T1*  
+*T1*<br/>
 İlk olay işleyicisi bağımsız değişken türü.
 
-*T2*  
+*T2*<br/>
 İkinci olay işleyicisi bağımsız değişken türü.
 
-*T3*  
+*T3*<br/>
 Üçüncü olay işleyicisi bağımsız değişken türü.
 
-*T4*  
+*T4*<br/>
 Dördüncü olay işleyicisi bağımsız değişken türü.
 
-*T5*  
+*T5*<br/>
 Beşinci olay işleyicisi bağımsız değişken türü.
 
-*T6*  
+*T6*<br/>
 Altıncı olay işleyicisi bağımsız değişken türü.
 
-*T7*  
+*T7*<br/>
 Yedinci olay işleyicisi bağımsız değişken türü.
 
-*T8*  
+*T8*<br/>
 Sekizinci olay işleyicisi bağımsız değişken türü.
 
-*T9*  
+*T9*<br/>
 Dokuzuncu olay işleyicisi bağımsız değişken türü.
 
-*arg0*  
+*arg0*<br/>
 Sıfırıncı olay işleyicisi bağımsız değişken.
 
-*arg1*  
+*arg1*<br/>
 İlk olay işleyicisi bağımsız değişken.
 
-*arg2*  
+*arg2*<br/>
 İkinci olay işleyicisi bağımsız değişken.
 
-*Arg3*  
+*Arg3*<br/>
 Üçüncü olay işleyicisi bağımsız değişken.
 
-*Arg4*  
+*Arg4*<br/>
 Dördüncü olay işleyicisi bağımsız değişken.
 
-*arg5*  
+*arg5*<br/>
 Beşinci olay işleyicisi bağımsız.
 
-*arg6*  
+*arg6*<br/>
 Altıncı olay işleyicisi bağımsız değişken.
 
-*arg7*  
+*arg7*<br/>
 Yedinci olay işleyicisi bağımsız değişken.
 
-*arg8*  
+*arg8*<br/>
 Sekizinci olay işleyicisi bağımsız değişken.
 
-*arg9*  
+*arg9*<br/>
 Dokuzuncu olay işleyicisi bağımsız değişken.
 
 ## <a name="remove"></a>EventSource::Remove
@@ -374,7 +374,7 @@ HRESULT Remove(
 
 ### <a name="parameters"></a>Parametreler
 
-*Belirteç*  
+*Belirteç*<br/>
 Bir olay işleyicisi temsil eden bir tanıtıcı. Olay işleyicisi tarafından kaydedildiğinde bu belirteci döndürüldü [Add()](#add) yöntemi.
 
 ### <a name="return-value"></a>Dönüş Değeri

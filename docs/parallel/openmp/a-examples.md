@@ -12,12 +12,13 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c67c29bbded76f4ef44337e557b58b6bad828947
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 3747b8a73c372ae3226b1f0c4f762da34dc40eab
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695424"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446250"
 ---
 # <a name="a-examples"></a>BİR. Örnekler
-Bu belgede tanımlanan yapıları örnekleri verilmiştir. Bir yönerge aşağıdaki deyimi yalnızca gerekli olduğunda bileşik olduğunu ve bir bileşik olmayan deyimi, önceki bir yönerge göre girintili unutmayın.
+
+Bu belgede tanımlanan yapıları örnekleri aşağıda verilmiştir. Yalnızca gerekli olduğunda bileşik bir yönergesinden sonra bir deyim ve olmayan bileşik deyim, önceki yönerge göre girintilenir unutmayın.

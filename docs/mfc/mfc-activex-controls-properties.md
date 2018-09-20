@@ -16,34 +16,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac9d9e4f5e7d777bd147ce36e970e7a30fd875b2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 27cdbd548366bcf02e2d6282b309402cf25af2d1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347113"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46401621"
 ---
 # <a name="mfc-activex-controls-properties"></a>MFC ActiveX Denetimleri: Özellikler
-ActiveX denetimi denetim kapsayıcısı ile iletişim kurmak için olay tetikler. Kapsayıcı, buna karşılık, yöntemleri ve özellikleri denetimi ile iletişim kurmak için kullanır. Yöntemleri ve özellikleri sırasıyla üye işlevleri ve C++ sınıfının üye değişkenleri için kullanım ve amacı, benzerdir. Herhangi bir kapsayıcıya sunulan veri üyeleri ActiveX denetiminin özelliklerdir. Özellikler, Otomasyon istemcileri ve ActiveX denetimi kapsayıcıları gibi ActiveX denetimlerini içeren uygulamalar için arabirim sağlar.  
-  
- Özellikler öznitelikler de denir.  
-  
- ActiveX denetimi yöntemleri hakkında daha fazla bilgi için bkz: [MFC ActiveX denetimleri: yöntemler](../mfc/mfc-activex-controls-methods.md).  
-  
- ActiveX denetimleri, stock ve özel yöntemler ve Özellikler uygulayabilirsiniz. Sınıf `COleControl` stok özellikleri için bir uygulama sağlar. (Stok özellikleri tam bir listesi için bkz: [MFC ActiveX denetimleri: stok Özellikler ekleme](../mfc/mfc-activex-controls-adding-stock-properties.md).) Özel özellikler, geliştirici tarafından tanımlanan bir ActiveX denetimine özel özellikleri ekleyin. Daha fazla bilgi için bkz: [MFC ActiveX denetimleri: özel özellikler ekleme](../mfc/mfc-activex-controls-adding-custom-properties.md).  
-  
- Yöntemleri gibi hem özel hem de stok özellikleri, özellikleri ve yöntemleri ve varolan üye işlevlerini işleyen gönderme haritasını oluşan bir mekanizma tarafından desteklenir `COleControl` sınıfı. Ayrıca, bu özellikleri Geliştirici denetime ek bilgi aktarmak için kullandığı parametreler olabilir.  
-  
- Aşağıdaki makaleler ActiveX denetimi özellikleri daha ayrıntılı ele alınmıştır:  
-  
--   [MFC ActiveX Denetimleri: Stok Özellikler Ekleme](../mfc/mfc-activex-controls-adding-stock-properties.md)  
-  
--   [MFC ActiveX Denetimleri: Özel Özellikler Ekleme](../mfc/mfc-activex-controls-adding-custom-properties.md)  
-  
--   [MFC ActiveX Denetimleri: Gelişmiş Özellik Uygulama](../mfc/mfc-activex-controls-advanced-property-implementation.md)  
-  
--   [MFC ActiveX Denetimleri: Ortam Özelliklerine Erişme](../mfc/mfc-activex-controls-accessing-ambient-properties.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
+
+ActiveX denetimi denetim kapsayıcısı ile iletişim kurmak için olayları tetikler. Kapsayıcı, buna karşılık, yöntemleri ve özellikleri denetimi ile iletişim kurmak için kullanır. Yöntemleri ve özellikleri sırasıyla üye işlevleri ve üye değişkenleri bir C++ sınıfı için kullanın ve amacı, benzerdir. Herhangi bir kapsayıcıya gösterilen ActiveX denetiminin veri üyeleri özelliklerdir. Özellikler, Otomasyon istemcilerine ve ActiveX denetim kapsayıcıları gibi ActiveX denetimlerini içeren uygulamalar için bir arabirim sağlar.
+
+Özellikler, öznitelikleri olarak da adlandırılır.
+
+ActiveX denetim yöntemleri hakkında daha fazla bilgi için bkz [MFC ActiveX denetimleri: yöntemler](../mfc/mfc-activex-controls-methods.md).
+
+ActiveX denetimlerini, stok ve özel yöntemleri ve özellikleri uygulayabilir. Sınıf `COleControl` stok özellikleri bir uygulamasını sağlar. (Stok özelliklerinin tam listesi için bkz [MFC ActiveX denetimleri: stok Özellikler ekleme](../mfc/mfc-activex-controls-adding-stock-properties.md).) Özel özellikler, geliştirici tarafından tanımlanan özel özellikleri bir ActiveX denetimine ekleyin. Daha fazla bilgi için [MFC ActiveX denetimleri: özel özellikler ekleme](../mfc/mfc-activex-controls-adding-custom-properties.md).
+
+Özel ve stok özelliklerini yöntemler gibi özellikleri ve yöntemleri ve var olan üye işlevlerini işleyen gönderme haritasını oluşan bir mekanizma tarafından desteklenen `COleControl` sınıfı. Ayrıca, bu özelliklerin Geliştirici denetimine ek bilgi geçirmek için kullandığı parametreleri olabilir.
+
+Aşağıdaki makaleler ActiveX denetimi özelliklerini daha ayrıntılı açıklanmaktadır:
+
+- [MFC ActiveX Denetimleri: Stok Özellikler Ekleme](../mfc/mfc-activex-controls-adding-stock-properties.md)
+
+- [MFC ActiveX Denetimleri: Özel Özellikler Ekleme](../mfc/mfc-activex-controls-adding-custom-properties.md)
+
+- [MFC ActiveX Denetimleri: Gelişmiş Özellik Uygulama](../mfc/mfc-activex-controls-advanced-property-implementation.md)
+
+- [MFC ActiveX Denetimleri: Ortam Özelliklerine Erişme](../mfc/mfc-activex-controls-accessing-ambient-properties.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
 

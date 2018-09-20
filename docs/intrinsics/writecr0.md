@@ -16,42 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7340d91d9d91171c073b5acebb282fbd1cff3bf1
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5542dc1c4aeff873f14d8ab9498025c8852dfbd9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702849"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46409317"
 ---
 # <a name="writecr0"></a>__writecr0
-**Microsoft'a özgü**  
-  
- Değeri Yazar `Data` CR0 kaydının kaydı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void writecr0(   
-   unsigned __int64 Data   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+**Microsoft'a özgü**
+
+Değeri Yazar `Data` CR0 kaydının kaydı.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void writecr0( 
+   unsigned __int64 Data 
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *Veri*<br/>
-[in] CR0 kaydının kasaya yazılacak değer.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|  
-|---------------|------------------|  
-|`__writecr0`|x86, x64|  
-  
- **Üst bilgi dosyası** \<intrin.h >  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[in] CR0 kaydının kasaya yazılacak değer.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|
+|---------------|------------------|
+|`__writecr0`|x86, x64|
+
+**Üst bilgi dosyası** \<intrin.h >
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

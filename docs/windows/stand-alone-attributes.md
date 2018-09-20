@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5d395053231f54570e1bf86ba79f6237b89681fc
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 1c44223dad2ac4d6306bf3896cd8ec7be84a5a2b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315554"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407770"
 ---
 # <a name="stand-alone-attributes"></a>Tek Başına Öznitelikler
 Tek başına öznitelik C++ anahtar sözcüğü çalışmaz, ancak bir kod satırı gibi daha fazla. Tek başına öznitelik deyimleri noktalı virgül satırın sonunda gerektirir.
@@ -45,4 +45,5 @@ Tek başına öznitelik C++ anahtar sözcüğü çalışmaz, ancak bir kod satı
 |[pragma](../windows/pragma.md)|Belirtilen dizeyi tırnak karakterleri olmadan oluşturulan .idl dosyasına yayar.|
   
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Kullanıma Göre Öznitelikler](../windows/attributes-by-usage.md)
+
+[Kullanıma Göre Öznitelikler](../windows/attributes-by-usage.md)

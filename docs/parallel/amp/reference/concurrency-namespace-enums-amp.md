@@ -1,5 +1,5 @@
 ---
-title: Eşzamanlılık ad alanı numaralandırmalar (AMP) | Microsoft Docs
+title: Eşzamanlılık ad alanı sabit listeleri (AMP) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,47 +13,50 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a67b5e77b8ab8c52e55dea96e64a3f16a4d70e39
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d4f842b799a81179fa1a612e652aae391ca3375d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695674"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435668"
 ---
-# <a name="concurrency-namespace-enums-amp"></a>Eşzamanlılık ad alanı numaralandırmalar (AMP)
-|||  
-|-|-|  
-|[access_type numaralandırması](#access_type)|[queuing_mode numaralandırması](#queuing_mode)|  
-  
-##  <a name="access_type"></a>  access_type numaralandırması  
- Veri erişimi çeşitli türlerde belirtmek için kullanılan numaralandırma türü.  
-  
-```  
-enum access_type;  
-```  
-### <a name="values"></a>Değerler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`access_type_auto`|Otomatik olarak en iyi seçin `access_type` Hızlandırıcı için.|  
-|`access_type_none`|Ayrılmış. Ayırma Hızlandırıcı ve CPU değil, yalnızca erişilebilir.|  
-|`access_type_read`|Paylaşılan. Ayırma Hızlandırıcı üzerinde erişilebilir olduğundan ve CPU üzerinde okunabilir.|  
-|`access_type_read_write`|Paylaşılan. Ayırma Hızlandırıcı üzerinde erişilebilir olduğundan ve CPU üzerinde yazılabilir.|  
-|`access_type_write`|Paylaşılan. Ayırma Hızlandırıcı üzerinde erişilebilir olduğundan ve okunabilir ve yazılabilir CPU üzerinde.|  
+# <a name="concurrency-namespace-enums-amp"></a>Eşzamanlılık ad alanı sabit listeleri (AMP)
 
-  
-##  <a name="queuing_mode"></a>  queuing_mode numaralandırması  
- Hızlandırıcı üzerinde desteklenen sıralama modları belirtir.  
-  
-```  
-enum queuing_mode;  
-``` 
-### <a name="values"></a>Değerler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`queuing_mode_immediate`|Örneğin, herhangi bir belirten bir sıralama modu komutları [parallel_for_each işlevi (C++ AMP)](concurrency-namespace-functions-amp.md#parallel_for_each), karşılık gelen Hızlandırıcı aygıta çağırana döndürmeleri hemen sonra gönderilir.|  
-|`queuing_mode_automatic`|Komutları karşılık gelen bir komut sırasına sıraya olduğunu belirten bir sıralama modu [accelerator_view](accelerator-view-class.md) nesnesi. Komutları cihaza gönderilen zaman [accelerator_view::flush](accelerator-view-class.md#flush) olarak adlandırılır.|   
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)
+|||
+|-|-|
+|[access_type numaralandırması](#access_type)|[queuing_mode numaralandırması](#queuing_mode)|
+
+##  <a name="access_type"></a>  access_type numaralandırması
+
+Çeşitli veri erişimi belirtmek için kullanılan numaralandırma türü.
+
+```
+enum access_type;
+```
+### <a name="values"></a>Değerler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`access_type_auto`|Otomatik olarak en iyi seçin `access_type` Hızlandırıcı için.|
+|`access_type_none`|Ayrılmış. Ayırma, yalnızca Hızlandırıcı ve CPU üzerinde erişilebilir.|
+|`access_type_read`|Paylaşılan. Tahsisat, hızlandırıcıda erişilebilirdir ve CPU üzerinde okunabilir.|
+|`access_type_read_write`|Paylaşılan. Tahsisat, hızlandırıcıda erişilebilirdir ve CPU üzerinde yazılabilir.|
+|`access_type_write`|Paylaşılan. Tahsisat, hızlandırıcıda erişilebilirdir ve hem okunabilir, hem de CPU üzerinde yazılabilir.|
+
+##  <a name="queuing_mode"></a>  queuing_mode numaralandırması
+
+Hızlandırıcı üzerinde desteklenen sıralama modlarını belirtir.
+
+```
+enum queuing_mode;
+```
+### <a name="values"></a>Değerler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`queuing_mode_immediate`|Örneğin, herhangi bir belirten bir sıralama modu komutları [parallel_for_each işlevi (C++ AMP)](concurrency-namespace-functions-amp.md#parallel_for_each), bunlar çağırana dönmez ilgili Hızlandırıcı cihaza gönderilir.|
+|`queuing_mode_automatic`|Komutları için karşılık gelen bir komut sırası üzerinde sırada olduğunu belirten bir sıralama modu [accelerator_view](accelerator-view-class.md) nesne. Komutları cihaza gönderilen zaman [accelerator_view::flush](accelerator-view-class.md#flush) çağrılır.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

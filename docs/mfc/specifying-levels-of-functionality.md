@@ -20,69 +20,71 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 425cbf2f9c769dbbb6cd054b9af6b7f6f5fc9d52
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: c4b5ed392850fac97e8671774dee0905bf3417eb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36954471"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46375896"
 ---
 # <a name="specifying-levels-of-functionality"></a>İşlevsellik Düzeylerini Belirtme
-Bu makalede aşağıdaki işlevsellik düzeylerini eklemeyi açıklar, [CObject](../mfc/reference/cobject-class.md)-türetilmiş sınıf:  
-  
--   [Çalışma zamanı sınıf bilgileri](#_core_to_add_run.2d.time_class_information)  
-  
--   [Dinamik oluşturma desteği](#_core_to_add_dynamic_creation_support)  
-  
--   [Serileştirme desteği](#_core_to_add_serialization_support)  
-  
- Genel bir açıklaması için `CObject` işlevselliği makalesine bakın [CObject'ten sınıf türetme](../mfc/deriving-a-class-from-cobject.md).  
-  
--   [Çalışma zamanı sınıf bilgileri](#_core_to_add_run.2d.time_class_information)  
-#### <a name="_core_to_add_run.2d.time_class_information"></a> Çalışma zamanı sınıf bilgileri eklemek için  
-  
-1.  Sınıfından türetilen `CObject`açıklandığı gibi [CObject'ten sınıf türetme](../mfc/deriving-a-class-from-cobject.md) makalesi.  
-  
-2.  DECLARE_DYNAMIC makrosu, aşağıda gösterildiği gibi sınıfı bildiriminde kullanın:  
-  
-     [!code-cpp[NVC_MFCCObjectSample#2](../mfc/codesnippet/cpp/specifying-levels-of-functionality_1.h)]  
-  
-3.  Uygulama dosyasında ımplement_dynamıc makrosu kullanın (. CPP) sınıfınızın. Bu makrosu bağımsız değişken olarak sınıfı ve temel sınıfın adını şu şekilde yapar:  
-  
-     [!code-cpp[NVC_MFCCObjectSample#3](../mfc/codesnippet/cpp/specifying-levels-of-functionality_2.cpp)]  
-  
+
+Bu makalede aşağıdaki işlevsellik düzeylerini eklemeyi açıklar, [CObject](../mfc/reference/cobject-class.md)-türetilmiş sınıf:
+
+- [Çalışma zamanı sınıf bilgileri](#_core_to_add_run.2d.time_class_information)
+
+- [Dinamik oluşturma desteği](#_core_to_add_dynamic_creation_support)
+
+- [Serileştirme desteği](#_core_to_add_serialization_support)
+
+Genel bir açıklamasını `CObject` işlevselliği makaleye göz atın [CObject'ten sınıf türetme](../mfc/deriving-a-class-from-cobject.md).
+
+- [Çalışma zamanı sınıf bilgileri](#_core_to_add_run.2d.time_class_information)
+#### <a name="_core_to_add_run.2d.time_class_information"></a> Çalışma zamanı sınıf bilgileri eklemek için
+
+1. Öğesinden, bir sınıf türetin `CObject`anlatılan şekilde [CObject'ten sınıf türetme](../mfc/deriving-a-class-from-cobject.md) makalesi.
+
+1. DECLARE_DYNAMIC makrosu, burada gösterildiği gibi sınıfı bildiriminde kullanın:
+
+     [!code-cpp[NVC_MFCCObjectSample#2](../mfc/codesnippet/cpp/specifying-levels-of-functionality_1.h)]
+
+1. Implement_dynamıc makrosu uygulama dosyasında kullanın (. CPP) sınıfınızın. Bu makro bağımsız değişken olarak sınıfı ve temel sınıfın adını aşağıdaki gibi alır:
+
+     [!code-cpp[NVC_MFCCObjectSample#3](../mfc/codesnippet/cpp/specifying-levels-of-functionality_2.cpp)]
+
 > [!NOTE]
->  Her zaman ımplement_dynamıc uygulama dosyasında put (. CPP) sınıfınız için. Implement_dynamıc makrosu derleme sırasında yalnızca bir kez değerlendirilmesi ve bu nedenle bir arabirim dosyasında kullanılmamalıdır (. H), büyük olasılıkla birden fazla dosyasına dahil.  
-  
-#### <a name="_core_to_add_dynamic_creation_support"></a> Dinamik oluşturma desteği eklemek için  
-  
-1.  Sınıfından türetilen `CObject`.  
-  
-2.  DECLARE_DYNCREATE makrosu sınıfı bildiriminde kullanın.  
-  
-3.  Bağımsız değişkenler (varsayılan bir oluşturucu) bir oluşturucu tanımlar.  
-  
-4.  IMPLEMENT_DYNCREATE makrosu sınıfı uygulama dosyasını kullanın.  
-  
-#### <a name="_core_to_add_serialization_support"></a> Seri hale getirme desteği eklemek için  
-  
-1.  Sınıfından türetilen `CObject`.  
-  
-2.  Geçersiz kılma `Serialize` üye işlevi.  
-  
+>  Her zaman uygulama dosyasında ımplement_dynamıc yerleştirin (. CPP) sınıfınız için. Implement_dynamıc makrosu derleme sırasında yalnızca bir kez değerlendirilir ve bu nedenle bir arabirim dosyasında kullanılmamalıdır (. H), büyük olasılıkla birden fazla dosyasına dahil.
+
+#### <a name="_core_to_add_dynamic_creation_support"></a> Dinamik oluşturma desteği eklemek için
+
+1. Öğesinden, bir sınıf türetin `CObject`.
+
+1. DECLARE_DYNCREATE makrosu, sınıf bildirimi içinde kullanın.
+
+1. Bir oluşturucu bağımsız değişken olmadan (varsayılan bir oluşturucu) tanımlayın.
+
+1. IMPLEMENT_DYNCREATE makrosu sınıf uygulama dosyasında kullanın.
+
+#### <a name="_core_to_add_serialization_support"></a> Serileştirme desteği eklemek için
+
+1. Öğesinden, bir sınıf türetin `CObject`.
+
+1. Geçersiz kılma `Serialize` üye işlevi.
+
     > [!NOTE]
-    >  Çağırırsanız `Serialize` doğrudan, diğer bir deyişle, istemediğiniz biçimli işaretçi üzerinden nesneyi serileştirmek 3 ile 5 arasındaki adımları atlayın.  
-  
-3.  Declare_serıal makrosu sınıfı bildiriminde kullanın.  
-  
-4.  Bağımsız değişkenler (varsayılan bir oluşturucu) bir oluşturucu tanımlar.  
-  
-5.  Implement_serıal makrosu sınıfı uygulama dosyasını kullanın.  
-  
+    >  Eğer `Serialize` doğrudan diğer bir deyişle, istemediğiniz çok biçimli bir işaretçiyle nesneyi serileştirmek 3 ile 5 arasındaki adımları atlayın.
+
+1. Declare_serıal makrosu, sınıf bildirimi içinde kullanın.
+
+1. Bir oluşturucu bağımsız değişken olmadan (varsayılan bir oluşturucu) tanımlayın.
+
+1. Implement_serıal makrosu sınıf uygulama dosyasında kullanın.
+
 > [!NOTE]
->  Bir sınıfın bir nesnesi için "Çok biçimli işaretçinin" işaret (çağrısından A) veya bir (say, B) türetilmiş herhangi bir sınıfın bir nesnesi. Çok biçimli bir işaretçi serileştirmek için framework çalışma zamanı sınıf bazı temel sınıfından (A) türetilen sınıfın bir nesnesi olabileceğinden, (B) serileştiren nesnesinin belirlemeniz gerekir.  
-  
- Seri hale getirme, sınıfından türetilen zaman etkinleştirme hakkında daha fazla ayrıntı için `CObject`, makalelerine bakın [MFC'deki dosyalar](../mfc/files-in-mfc.md) ve [seri hale getirme](../mfc/serialization-in-mfc.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CObject'ten Sınıf Türetme](../mfc/deriving-a-class-from-cobject.md)
+>  Bir sınıfın bir nesnesi için bir "çok biçimli işaretçinin" işaret (çağrısından A) veya bir (örneğin, B) türetilmiş sınıfın bir nesnesi. Çerçevesi çok biçimli bir işaretçi ile seri hale getirmek için bazı temel sınıftan (A) herhangi bir sınıfın bir nesnesi olabileceğinden, (B) serileştiren bir nesnenin çalışma zamanı sınıfının belirlemeniz gerekir.
+
+Öğesinden, bir sınıf türetin olduğunda serileştirme etkinleştirme hakkında daha fazla ayrıntı için `CObject`, makalelere göz atın [MFC'deki dosyalar](../mfc/files-in-mfc.md) ve [serileştirme](../mfc/serialization-in-mfc.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CObject'ten Sınıf Türetme](../mfc/deriving-a-class-from-cobject.md)

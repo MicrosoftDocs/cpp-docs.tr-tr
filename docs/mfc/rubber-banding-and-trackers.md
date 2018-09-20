@@ -18,26 +18,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4f36a634e4e5e6d4ee6c2618d0d43313c7c8094
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: ed6e649309acf86e24c52bf8b50a859d0ac066ad
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931742"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46428206"
 ---
 # <a name="rubber-banding-and-trackers"></a>Rubber-Banding ve İzleyiciler
-Başka bir özellik izleyicileri ile sağlanan seçilecek öğeleri etrafında boyutlandırma dikdörtgen sürükleyerek birden çok OLE öğeleri seçmek bir kullanıcının "bant dışı pencere" seçim değildir. Kullanıcı sol fare düğmesini bıraktığında, kullanıcı tarafından seçilen bölge içindeki öğeler seçilir ve kullanıcı tarafından yönetilebilir. Örneğin, kullanıcı seçimi sürükleyin ve bu da başka bir kapsayıcı uygulamasına.  
-  
- Bu özellik uygulama bazı ek kod, uygulamanızın WM_LBUTTONDOWN işleyici işlevi gerektirir.  
-  
- Aşağıdaki kod örneği, bant dışı pencere seçimi ve ek özellikler uygular.  
-  
- [!code-cpp[NVC_MFCOClient#6](../mfc/codesnippet/cpp/rubber-banding-and-trackers_1.cpp)]  
-  
- İzleyici ters çevrilebilir yönünü rubber-banding sırasında izin vermek istiyorsanız, çağırmalıdır [CRectTracker::TrackRubberBand](../mfc/reference/crecttracker-class.md#trackrubberband) kümesine üçüncü parametre ile **doğru**. Ters çevrilebilir yönlendirmesini izin vererek bazen neden olacak unutmayın [CRectTracker::m_rect](../mfc/reference/crecttracker-class.md#m_rect) ters hale için. Bu bir çağrı tarafından düzeltilebilir [CRect::NormalizeRect](../atl-mfc-shared/reference/crect-class.md#normalizerect).  
-  
- Daha fazla bilgi için bkz: [kapsayıcı istemci öğeleri](../mfc/containers-client-items.md) ve [özelleştirme sürükle ve bırak](../mfc/drag-and-drop-customizing.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İzleyiciler: OLE uygulamanızda izleyicileri uygulama](../mfc/trackers-implementing-trackers-in-your-ole-application.md)   
- [CRectTracker Sınıfı](../mfc/reference/crecttracker-class.md)
+
+Başka bir özellik izleyicileri ile sağlanan boyutlandırma dikdörtgen etrafında seçilecek öğeleri sürükleyerek birden çok OLE öğelerini seçmek bir kullanıcı izin veren "Lastik bant" seçimdir. Kullanıcının sol fare düğmesini bıraktığında, kullanıcı tarafından seçilen bölge içindeki öğeleri seçili olduğundan ve kullanıcı tarafından yönetilebilir. Örneğin, kullanıcı seçimi başka bir kapsayıcı uygulamasına sürükleyin.
+
+Bu özelliği uygulamak, uygulamanızın WM_LBUTTONDOWN işleyici işlevi içinde ek kod gerektirir.
+
+Aşağıdaki kod örneği, Lastik bant seçimi ve ek özellikler uygular.
+
+[!code-cpp[NVC_MFCOClient#6](../mfc/codesnippet/cpp/rubber-banding-and-trackers_1.cpp)]
+
+İzleyici ters çevrilebilir yönünü rubber-banding sırasında izin vermek istiyorsanız, çağırmalıdır [CRectTracker::TrackRubberBand](../mfc/reference/crecttracker-class.md#trackrubberband) kümesine üçüncü parametresi **TRUE**. Ters yönlendirme izin vererek bazen neden olacağını unutmayın [CRectTracker::m_rect](../mfc/reference/crecttracker-class.md#m_rect) ters haline için. Bu, bir çağrı tarafından düzeltilebilir [CRect::NormalizeRect](../atl-mfc-shared/reference/crect-class.md#normalizerect).
+
+Daha fazla bilgi için [kapsayıcı istemci öğeleri](../mfc/containers-client-items.md) ve [özelleştirme sürükle ve bırak](../mfc/drag-and-drop-customizing.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İzleyiciler: OLE Uygulamanızda İzleyicileri Uygulama](../mfc/trackers-implementing-trackers-in-your-ole-application.md)<br/>
+[CRectTracker Sınıfı](../mfc/reference/crecttracker-class.md)

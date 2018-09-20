@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b2336562abb82ae89bd2f6864d0678023a3ccf69
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 87516cf45a39602bea462b8e94f17d3ef64ad0eb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600534"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46431625"
 ---
 # <a name="interfacelisthelper-structure"></a>InterfaceListHelper Yapısı
 
@@ -53,34 +53,34 @@ struct InterfaceListHelper<T0, Nil, Nil, Nil, Nil, Nil, Nil, Nil, Nil>;
 
 ### <a name="parameters"></a>Parametreler
 
-*T0*  
+*T0*<br/>
 Gerekli şablon parametresi, 0.
 
-*T1*  
+*T1*<br/>
 Belirtilmezse, varsayılan şablon parametresi 1.
 
-*T2*  
+*T2*<br/>
 Belirtilmezse, varsayılan şablon parametresi 2 '. Üçüncü şablon parametresi.
 
-*T3*  
+*T3*<br/>
 Belirtilmezse, varsayılan şablon parametresi, 3.
 
-*T4*  
+*T4*<br/>
 Belirtilmezse, varsayılan şablon parametresi, 4.
 
-*T5*  
+*T5*<br/>
 Belirtilmezse, varsayılan şablon parametresi, 5.
 
-*T6*  
+*T6*<br/>
 Belirtilmezse, varsayılan şablon parametresi, 6.
 
-*T7*  
+*T7*<br/>
 Belirtilmezse, varsayılan şablon parametresi, 7.
 
-*T8*  
+*T8*<br/>
 Belirtilmezse, varsayılan şablon parametresi 8.
 
-*T9*  
+*T9*<br/>
 Belirtilmezse, varsayılan şablon parametresi 9.
 
 ## <a name="remarks"></a>Açıklamalar

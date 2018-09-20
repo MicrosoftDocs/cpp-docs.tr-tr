@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a291b7a2cd8c33e743a31d53c6330f67e915662a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f9de4e5f5ef8d3007cd60710617977e00f92679c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713069"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46380912"
 ---
 # <a name="safelessthanequals"></a>SafeLessThanEquals
 
@@ -69,9 +69,9 @@ Bu yöntem, parçasıdır [SafeInt Kitaplığı](../windows/safeint-library.md) 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[SafeInt İşlevleri](../windows/safeint-functions.md)  
-[SafeInt Kitaplığı](../windows/safeint-library.md)  
-[SafeInt Sınıfı](../windows/safeint-class.md)  
-[SafeGreaterThan](../windows/safegreaterthan.md)  
-[SafeLessThan](../windows/safelessthan.md)  
+[SafeInt İşlevleri](../windows/safeint-functions.md)<br/>
+[SafeInt Kitaplığı](../windows/safeint-library.md)<br/>
+[SafeInt Sınıfı](../windows/safeint-class.md)<br/>
+[SafeGreaterThan](../windows/safegreaterthan.md)<br/>
+[SafeLessThan](../windows/safelessthan.md)<br/>
 [SafeGreaterThanEquals](../windows/safegreaterthanequals.md)

@@ -18,29 +18,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f2e3661f2c0fee43a8e8b25b9cf90b105e84308
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 50ad8fe96a1c18f45dbc118e29c73453f806f110
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345169"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46376557"
 ---
 # <a name="hierarchy-chart"></a>Hiyerarşi Grafiği
-Türetilmiş MFC sınıfları aşağıdaki çizimde `CObject`:  
-  
- ![CObject'ten türetilmiş sınıfları](../mfc/media/mfc_heirarchy_chart1of3.png "mfc_heirarchy_chart1of3")  
-  
- Türetilmiş MFC sınıfları aşağıdaki çizimde `CWnd` ve `CCmdTarget`:  
-  
- ![Türetilmiş sınıflar CCmdTarget veya CWnd](../mfc/media/mfc_heirarchy_chart2of3.png "mfc_heirarchy_chart2of3")  
-  
- Aşağıdaki çizimde gelen türetilmemiş MFC sınıfları `CObject`:  
-  
- ![CObject'ten türetilmemiş sınıflar](../mfc/media/mfc_heirarchy_chart3of3.png "mfc_heirarchy_chart3of3")  
-  
- Tam grafik aşağıdaki konumdan yükleyebilirsiniz: [MFC hiyerarşisi grafikleri karşıdan](https://aka.ms/hxgg8e).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hiyerarşi grafiği kategorileri](../mfc/hierarchy-chart-categories.md)   
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Aşağıdaki çizim ile türetilmiş MFC sınıflarını temsil eder `CObject`:
+
+![CObject'ten Türetilmiş sınıflar](../mfc/media/mfc_heirarchy_chart1of3.png "mfc_heirarchy_chart1of3")
+
+Aşağıdaki çizim ile türetilmiş MFC sınıflarını temsil eder `CWnd` ve `CCmdTarget`:
+
+![Türetilmiş sınıflar CCmdTarget veya CWnd'den](../mfc/media/mfc_heirarchy_chart2of3.png "mfc_heirarchy_chart2of3")
+
+Aşağıdaki çizim türetilmemiş MFC sınıflarını temsil eder `CObject`:
+
+![CObject'ten türetilmemiş sınıfları](../mfc/media/mfc_heirarchy_chart3of3.png "mfc_heirarchy_chart3of3")
+
+Grafiğin tamamını şu konumdan indirebilirsiniz: [MFC hiyerarşi grafikleri indirme](https://aka.ms/hxgg8e).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hiyerarşi Grafiği Kategorileri](../mfc/hierarchy-chart-categories.md)<br/>
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

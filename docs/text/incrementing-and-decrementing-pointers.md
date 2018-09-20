@@ -17,54 +17,56 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4fff5d7ec20ce052e4d831f1556432186ebc7bb
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e220c138ebcbb9010aef78931b07c2b04b095ea7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603366"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46447671"
 ---
 # <a name="incrementing-and-decrementing-pointers"></a>İşaretçileri Artırma ve Azaltma
-Aşağıdaki ipuçlarını kullanın:  
-  
--   İşaret baytlara değil, ön baytlar. Sondaki baytı işaretçiniz güvenli değil. Genellikle ileri yerine ters bir dizesini tara daha güvenlidir.  
-  
--   İşaretçi artırma/azaltma işlevleri ve tam bir karakter üzerinden taşınan makroları vardır:  
-  
-    ```  
-    sz1++;  
-    ```  
-  
-     olur:  
-  
-    ```  
-    sz1 = _mbsinc( sz1 );  
-    ```  
-  
-     `_mbsinc` Ve `_mbsdec` işlevleri doğru bir şekilde artırın ve içinde azaltma `character` birimi, karakter boyutundan bağımsız olarak.  
-  
--   Azaltır için bir işaretçi olduğu aşağıdaki gibi dize karşılaştırması gerekir:  
-  
-    ```  
-    sz2--;  
-    ```  
-  
-     olur:  
-  
-    ```  
-    sz2 = _mbsdec( sz2Head, sz2 );  
-    ```  
-  
-     Alternatif olarak, geçerli bir karakter dizesi, baş işaretçinizi olabilir gibi:  
-  
-    ```  
-    sz2Head < sz2  
-    ```  
-  
-     Bilinen geçerli baytı için bir işaretçi olması gerekir.  
-  
--   Daha hızlı çağrılar için önceki karaktere bir işaretçi korumak isteyebileceğiniz `_mbsdec`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MBCS programlama ipuçları](../text/mbcs-programming-tips.md)   
- [Bayt Endeksleri](../text/byte-indices.md)
+
+Aşağıdaki ipuçlarını kullanın:
+
+- İşaret baytlara değil, ön baytlar. Sondaki baytı işaretçiniz güvenli değil. Genellikle ileri yerine ters bir dizesini tara daha güvenlidir.
+
+- İşaretçi artırma/azaltma işlevleri ve tam bir karakter üzerinden taşınan makroları vardır:
+
+    ```cpp
+    sz1++;
+    ```
+
+   olur:
+
+    ```cpp
+    sz1 = _mbsinc( sz1 );
+    ```
+
+   `_mbsinc` Ve `_mbsdec` işlevleri doğru bir şekilde artırın ve içinde azaltma `character` birimi, karakter boyutundan bağımsız olarak.
+
+- Azaltır için bir işaretçi olduğu aşağıdaki gibi dize karşılaştırması gerekir:
+
+    ```cpp
+    sz2--;
+    ```
+
+   olur:
+
+    ```cpp
+    sz2 = _mbsdec( sz2Head, sz2 );
+    ```
+
+   Alternatif olarak, geçerli bir karakter dizesi, baş işaretçinizi olabilir gibi:
+
+    ```cpp
+    sz2Head < sz2
+    ```
+
+   Bilinen geçerli baytı için bir işaretçi olması gerekir.
+
+- Daha hızlı çağrılar için önceki karaktere bir işaretçi korumak isteyebileceğiniz `_mbsdec`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MBCS Programlama İpuçları](../text/mbcs-programming-tips.md)<br/>
+[Bayt Endeksleri](../text/byte-indices.md)

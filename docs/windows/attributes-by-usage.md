@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 037200c509574199dbecf56c950590e00e7aa71f
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 875bc3163bc579c7d6da8055a0a24275e8be92a1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313617"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46393860"
 ---
 # <a name="attributes-by-usage"></a>Kullanıma Göre Öznitelikler
 
@@ -43,7 +43,7 @@ Bu konu, özniteliklere göre uygulandıkları C++ Dil öğelerini listeler.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[C++ Öznitelikleri Başvurusu](../windows/cpp-attributes-reference.md)  
-[Kavramları](../windows/attributed-programming-concepts.md)  
-[Gruplara Göre Öznitelikler](../windows/attributes-by-group.md)  
+[C++ Öznitelikleri Başvurusu](../windows/cpp-attributes-reference.md)<br/>
+[Kavramları](../windows/attributed-programming-concepts.md)<br/>
+[Gruplara Göre Öznitelikler](../windows/attributes-by-group.md)<br/>
 [Öznitelikler Alfabetik Başvurusu](../windows/attributes-alphabetical-reference.md)

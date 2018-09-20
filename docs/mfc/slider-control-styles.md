@@ -17,27 +17,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f76fbe9f85d978a5c2865b48720588b620508a07
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 8ddc96133f07011969e3d2afc4b1707e9f395e6b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36951058"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46424124"
 ---
 # <a name="slider-control-styles"></a>Kaydırıcı Denetim Stilleri
-Kaydırıcı denetimleri ([CSliderCtrl](../mfc/reference/csliderctrl-class.md)) dikey veya yatay yönlendirme olabilir. Değer çizgilerinin iki tarafında olabilir hem kenara veya hiçbiridir. Ardışık değerlerin aralığını belirtmek için de kullanılabilir. Bu özellikler, kaydırıcı denetimi oluşturduğunuzda, belirttiğiniz kaydırıcı denetim stilleri kullanılarak denetlenir.  
-  
- TBS_HORZ ve TBS_VERT stilleri kaydırıcı denetimi yönünü belirler. Kaydırıcı denetimi yatay yön belirtmezseniz, yönlendirilmiş demektir.  
-  
- TBS_AUTOTICKS stil çizgisi her artış için değerler aralığında olan kaydırıcı denetimi oluşturur. Bu değer çizgilerinin çağırdığınızda otomatik olarak eklenen [SetRange](../mfc/reference/csliderctrl-class.md#setrange) üye işlevi. TBS_AUTOTICKS belirtmezseniz, üye işlevleri gibi kullanabilir [SetTic](../mfc/reference/csliderctrl-class.md#settic) ve [SetTicFreq](../mfc/reference/csliderctrl-class.md#setticfreq)çizgilerinin konumlarını belirtmek için. Değer çizgilerinin görüntülemez kaydırıcı denetimi oluşturmak için TBS_NOTICKS stili kullanabilirsiniz.  
-  
- Kaydırıcı denetimi biri veya her iki tarafta çizgilerinin görüntüleyebilirsiniz. Yatay kaydırıcı denetimleri için TBS_BOTTOM veya TBS_TOP stili belirtebilirsiniz. Dikey kaydırıcı denetimleri için TBS_RIGHT veya TBS_LEFT stili belirtebilirsiniz. (TBS_BOTTOM ve TBS_RIGHT varsayılan ayarlarıdır.) Kaydırıcı denetimi herhangi bir yönde her iki tarafında değer çizgileri için TBS_BOTH stilini belirtin.  
-  
- Kaydırıcı denetimi oluşturduğunuzda yalnızca TBS_ENABLESELRANGE stili belirtirseniz, seçim aralığı görüntüleyebilirsiniz. Kaydırıcı denetimi bu stili olduğunda, bir seçim aralığının başlangıç ve bitiş konumlarda değer çizgilerinin üçgenler (yerine, dikey çizgi) olarak görüntülenir ve seçim aralığı vurgulanır. Örneğin, seçim aralıkları basit bir zamanlama uygulama yararlı olabilir. Kullanıcının zamanlanmış Toplantı zamanını tanımlamak için bir gündeki saat sayısıyla karşılık gelen değer çizgilerinin aralığını seçebilirsiniz.  
-  
- Varsayılan olarak, kaydırıcıyı denetimin kaydırıcı uzunluğu seçimi aralığı değişiklikleri olarak değişir. Kaydırıcı denetimi TBS_FIXEDLENGTH stili varsa, kaydırıcıyı uzunluğu seçim aralığı değişse bile aynı kalır. TBS_NOTHUMB stili içeren bir kaydırıcı denetimi kaydırıcıyı içermez.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CSliderCtrl kullanma](../mfc/using-csliderctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Kaydırıcı denetimleri ([CSliderCtrl](../mfc/reference/csliderctrl-class.md)) dikey veya yatay hizalama olabilir. Değer çizgilerinin iki tarafında olabilir hem yüz veya hiçbiridir. Art arda değer aralığını belirtmek için de kullanılabilir. Bu özellikler, kaydırıcı denetimi oluşturduğunuzda, belirttiğiniz kaydırıcı denetim stilleri kullanarak denetlenir.
+
+TBS_HORZ ve TBS_VERT stilleri kaydırıcı denetiminin yönünü belirleyin. Kaydırıcı denetimi yatay yönlendirme belirtmezseniz, yönlendirilmiş demektir.
+
+TBS_AUTOTICKS stili değer aralığındaki her artış için onay işareti olan bir kaydırıcı denetimi oluşturur. Bu değer çizgilerinin çağırdığınızda otomatik olarak eklenen [SetRange](../mfc/reference/csliderctrl-class.md#setrange) üye işlevi. TBS_AUTOTICKS belirtmezseniz, üye işlevleri gibi kullanabileceğiniz [SetTic](../mfc/reference/csliderctrl-class.md#settic) ve [SetTicFreq](../mfc/reference/csliderctrl-class.md#setticfreq)çizgilerinin konumlarını belirtmek için. Değer çizgilerinin görüntülemez bir kaydırıcı denetimi oluşturmak için TBS_NOTICKS stilini kullanabilirsiniz.
+
+Değer çizgilerinin kaydırıcı denetimi veya her iki tarafta da görüntüleyebilirsiniz. Yatay kaydırıcı denetimleri için TBS_BOTTOM veya TBS_TOP stili belirtebilirsiniz. Dikey kaydırıcı denetimleri için TBS_RIGHT veya TBS_LEFT stili belirtebilirsiniz. (Varsayılan ayarlar TBS_BOTTOM ve TBS_RIGHT gösterir.) Çizginiz için herhangi bir yönde kaydırıcı denetimi iki tarafındaki TBS_BOTH stilini belirtin.
+
+Bir kaydırıcı denetimi, yalnızca oluşturduğunuzda TBS_ENABLESELRANGE stili belirtirseniz, bir seçim aralığını görüntüleyebilirsiniz. Bir kaydırıcı denetimi bu stilde, değer çizgilerinin seçimi aralığının başlangıç ve bitiş konumlarda (yerine, dikey çizgi) üçgenler olarak görüntülenir ve seçenek aralığındaki vurgulanır. Örneğin, seçim aralıkları basit bir zamanlama uygulama yararlı olabilir. Kullanıcı bir zamanlanan toplantı saati tanımlamak için bir gündeki saat karşılık gelen değer çizgileri aralığı seçebilirsiniz.
+
+Varsayılan olarak, bir kaydırıcı denetiminin kaydırıcı uzunluğunu seçimi aralığı değişiklikleri olarak değişir. Kaydırıcı denetimi TBS_FIXEDLENGTH stili varsa, kaydırıcıyı uzunluğunu seçenek aralığındaki değişse bile aynı kalır. Bir kaydırıcı TBS_NOTHUMB stilde bir kaydırıcı denetimi içermez.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CSliderCtrl Kullanma](../mfc/using-csliderctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

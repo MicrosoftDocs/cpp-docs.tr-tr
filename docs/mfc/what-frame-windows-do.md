@@ -1,5 +1,5 @@
 ---
-title: Çerçeve pencerelerinin görevi | Microsoft Docs
+title: Çerçeve Windows neler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,34 +16,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ed903238a812188d73093211265c9c8c028b0ab
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b86b65d43fee16a0a2a8f03353c9700d6f0a5428
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382573"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423604"
 ---
 # <a name="what-frame-windows-do"></a>Çerçeve Pencerelerinin Görevi
-Yalnızca bir görünüm çerçeveleme yanı sıra, çerçeve pencereleri çok sayıda görevleri çerçevenin kendi Görünüm ve uygulama ile iletişime katılan sorumludur. [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) ve [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md) devralınmalıdır [CFrameWnd](../mfc/reference/cframewnd-class.md), sahip oldukları için `CFrameWnd` ekledikleri yeni özellikler yanı sıra özellikleri. Alt pencereler örnekleri görünümleri, düğmeler ve liste kutuları ve araç çubukları, durum çubukları ve iletişim kutusu çubukları gibi denetim çubukları gibi denetimleri içerir.  
-  
- Çerçeve penceresi, kendi alt öğe pencerelerini düzenini yönetilmesinden sorumludur. MFC çerçevesi bir çerçeve penceresinde kendi istemci alanı içinde herhangi bir denetim çubukları, görünümleri ve diğer alt windows yerleştirir.  
-  
- Çerçeve penceresi de görünümlerini komutları iletir ve bildirim iletileri için Denetim Windows'dan yanıt verebilir.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Denetim çubukları (nasıl bunlar çerçeve penceresine sığacak)](../mfc/control-bars.md)  
-  
--   [Menüleri, Denetim çubuklarını ve Hızlandırıcıları (nasıl bunlar çerçeve penceresine sığacak) yönetme](../mfc/managing-menus-control-bars-and-accelerators.md)  
-  
--   [Komut yönlendirme (penceresinden çerçeve kendi görüntülemek ve diğer komut hedefleri için)](../mfc/command-routing.md)  
-  
--   [Belge/View mimarisi](../mfc/document-view-architecture.md)  
-  
--   [Denetim çubukları](../mfc/control-bars.md)  
-  
--   [Denetimler](../mfc/controls-mfc.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çerçeve Pencereleri](../mfc/frame-windows.md)
+
+Yalnızca bir görünüm çerçeveleme yanı sıra, çerçeve pencereleri uygulama ve onun görünümü ile çerçeve koordine içinde çeşitli görevleri sorumludur. [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) ve [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md) devralınacak [CFrameWnd](../mfc/reference/cframewnd-class.md), sahip oldukları `CFrameWnd` özellikleri ve bunun yanı sıra, eklediğiniz yeni özellikler. Alt öğe pencerelerini örnekleri, görünümler, düğmeler ve liste kutuları ve araç çubuklarını ve durum çubukları iletişim kutusu çubukları dahil olmak üzere, Denetim çubukları gibi denetimler içerir.
+
+Çerçeve penceresi, kendi alt pencereleri düzenini yönetmekten sorumludur. MFC çerçevesi içinde kendi istemci alanı içinde herhangi bir denetim çubukları, görünümler ve diğer alt pencereleri bir çerçeve penceresi yerleştirir.
+
+Çerçeve penceresi görünümlerini komutları da iletir ve bildirim iletileri için Denetim Windows'dan yanıt verebilir.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Denetim çubukları (nasıl bunlar çerçeve penceresine sığacak)](../mfc/control-bars.md)
+
+- [Menüleri, Denetim çubuklarını ve Hızlandırıcıları (nasıl bunlar çerçeve penceresine sığacak) yönetme](../mfc/managing-menus-control-bars-and-accelerators.md)
+
+- [Komut yönlendirme (Başlangıç, çerçeve penceresinin görünümünü ve diğer komut hedefleri için)](../mfc/command-routing.md)
+
+- [Belge/View mimarisi](../mfc/document-view-architecture.md)
+
+- [Denetim çubukları](../mfc/control-bars.md)
+
+- [Denetimler](../mfc/controls-mfc.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çerçeve Pencereleri](../mfc/frame-windows.md)
 

@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a918866710575ecc091fcce4564a7617d28a102d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f0751b218fe540a49c2cf0efde1dcf8976f2ebf6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752781"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387321"
 ---
 # <a name="strings-atlmfc"></a>Dizeler (ATL/MFC)
 
@@ -44,18 +44,18 @@ Neredeyse tüm programlar dize verileri ile çalışma. Visual C++ Bu dize veril
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[CStringT kullanma](../atl-mfc-shared/using-cstringt.md)  
+[CStringT kullanma](../atl-mfc-shared/using-cstringt.md)<br/>
 Şablon sınıfı CStringT kullanarak programlama açıklar.
 
-[CString Kullanma](../atl-mfc-shared/using-cstring.md)  
+[CString Kullanma](../atl-mfc-shared/using-cstring.md)<br/>
 CString, CStringT varsayılan uygulamasını kullanarak programlama açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[CStringT genel bakış](../atl-mfc-shared/reference/cstringt-class.md)  
+[CStringT genel bakış](../atl-mfc-shared/reference/cstringt-class.md)<br/>
 Paylaşılan hakkında başvuru bilgileri sağlar `CStringT` sınıfı.
 
-[MFC Kavramları](../mfc/mfc-concepts.md)  
+[MFC Kavramları](../mfc/mfc-concepts.md)<br/>
 Yardımcı olacak kavramsal ve görev tabanlı konular sunar MFC Kitaplığı kullanarak programlama.
 
 ## <a name="see-also"></a>Ayrıca Bkz.

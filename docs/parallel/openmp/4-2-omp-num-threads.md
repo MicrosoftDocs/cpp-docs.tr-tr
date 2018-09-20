@@ -12,30 +12,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6b4208d7fe7d453dd1f701d820a85fce5cd68ba
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 9996a09661d962eb5e936fdb484c9dd534e46904
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687653"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46445197"
 ---
 # <a name="42-ompnumthreads"></a>4.2 OMP_NUM_THREADS
-**OMP_NUM_THREADS** ortam değişkeni, bu sayı, açıkça çağırarak değiştirilmediği sürece yürütme sırasında kullanılacak iş parçacıklarının varsayılan sayısını ayarlar **omp_set_num_threads** kitaplığı yordamı veya açık bir tarafından **num_threads** yan tümcesi bir **paralel** yönergesi.  
-  
- Değeri **OMP_NUM_THREADS** ortam değişkeni, pozitif bir tamsayı olmalıdır. İş parçacığı sayısını dinamik olarak ayarlamayı etkinleştirilip etkinleştirilmediği bağlı etkisini bağlıdır. Kuralları arasındaki etkileşimi hakkında kapsamlı bir kümesini için **OMP_NUM_THREADS** ortam değişken ve dinamik düzeltmesi iş parçacığı, 8 sayfasında bölüm 2.3 bakın.  
-  
- İçin herhangi bir değer belirtilmişse **OMP_NUM_THREADS** ortam değişkeni veya belirtilen değer pozitif bir tamsayı değil veya değer en fazla iş parçacığı sayısından büyükse, sistem için destek, kullanılacak iş parçacığı sayısı uygulama tanımlı değil.  
-  
- Örnek:  
-  
-```  
-setenv OMP_NUM_THREADS 16  
-```  
-  
-## <a name="cross-references"></a>Çapraz referanslar:  
-  
--   **num_threads** yan tümcesi, bkz: [bölüm 2.3](../../parallel/openmp/2-3-parallel-construct.md) sayfasında 8.  
-  
--   **omp_set_num_threads** işlev, bkz: [bölüm 3.1.1](../../parallel/openmp/3-1-1-omp-set-num-threads-function.md) sayfasında 36.  
-  
--   **omp_set_dynamic** işlev, bkz: [bölüm 3.1.7](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) sayfasında 39.
+
+**OMP_NUM_THREADS** ortam değişkenini bu sayıyı çağrılarak açıkça değiştirmediğiniz sürece varsayılan yürütme sırasında kullanılacak iş parçacığı sayısını ayarlar **omp_set_num_threads** yordamı veya açık bir tarafından **num_threads** yan tümcesi bir **paralel** yönergesi.
+
+Değerini **OMP_NUM_THREADS** ortam değişkeni, pozitif bir tamsayı olmalıdır. İş parçacığı sayısını yerleştirmenin dinamik ayarına etkin bağlı etkisini bağlıdır. Kurallar arasındaki etkileşimi hakkında kapsamlı bir dizi için **OMP_NUM_THREADS** ortam değişken ve dinamik düzeltmesi iş parçacığı, bölüm 2.3 8 sayfasında bakın.
+
+İçin hiçbir değer belirtilmemişse **OMP_NUM_THREADS** ortam değişkeni veya belirtilen değer bir pozitif tamsayı değil veya değer en fazla iş parçacığı sayısından büyükse, sistem için destek, kullanılacak iş parçacığı sayısı uygulama tarafından tanımlanır.
+
+Örnek:
+
+```
+setenv OMP_NUM_THREADS 16
+```
+
+## <a name="cross-references"></a>Başvuruları çapraz:
+
+- **num_threads** yan tümcesi bkz [bölümü 2.3](../../parallel/openmp/2-3-parallel-construct.md) 8 sayfasında.
+
+- **omp_set_num_threads** çalışması için bkz: [bölümü 3.1.1](../../parallel/openmp/3-1-1-omp-set-num-threads-function.md) 36 sayfasında.
+
+- **omp_set_dynamic** çalışması için bkz: [bölümü 3.1.7](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) sayfasında 39.

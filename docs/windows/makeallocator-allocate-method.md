@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4422dea0b0bfb07904d0c4defad8f33281a51bec
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c4dd68a3c678b7877db63167fd2c0d48a1daa7ad
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609868"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46411839"
 ---
 # <a name="makeallocatorallocate-method"></a>MakeAllocator::Allocate Yöntemi
 
@@ -54,5 +54,5 @@ Yalnızca geçersiz kılmak bir geliştiricinin ihtiyaç duyduğu **Allocate()**
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[MakeAllocator Sınıfı](../windows/makeallocator-class.md)  
+[MakeAllocator Sınıfı](../windows/makeallocator-class.md)<br/>
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

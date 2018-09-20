@@ -18,37 +18,39 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45f1898addfff37744301c0d3cdac71b9909ec02
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a9d81f3051450f060a82bbd3a192ad387332922a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349219"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408888"
 ---
 # <a name="drawing-tool-classes"></a>Çizim Aracı Sınıfları
-Bu sınıfları, bir cihaz bağlamı çizmek için kullanılan çizim araçları kapsüller.  
-  
- [CGdiObject](../mfc/reference/cgdiobject-class.md)  
- Çizim Araçları GDI için temel sınıf.  
-  
- [CBrush](../mfc/reference/cbrush-class.md)  
- Bir cihaz bağlamı içinde geçerli fırça olarak seçilen bir GDI fırça yalıtır. Fırçalar evin içindekiler çizilen nesnelerin doldurmak için kullanılır.  
-  
- [CPen](../mfc/reference/cpen-class.md)  
- Bir cihaz bağlamı içinde geçerli kalem olarak seçilen GDI kalem yalıtır. Kalemler nesnelerin kenarlık çizgilerini çizmek için kullanılır.  
-  
- [CFont](../mfc/reference/cfont-class.md)  
- Bir cihaz bağlamı içinde geçerli yazı tipi olarak seçilen bir GDI yazı tipi yalıtır.  
-  
- [CBitmap](../mfc/reference/cbitmap-class.md)  
- Bit eşlemler yönlendirmek için bir arabirim sağlayan bir GDI bit eşlem yalıtır.  
-  
- [CPalette](../mfc/reference/cpalette-class.md)  
- Uygulama ve bir görüntü gibi bir renk çıktı aygıtı arasında bir arabirim olarak kullanmak için GDI renk paleti yalıtır.  
-  
- [CRectTracker](../mfc/reference/crecttracker-class.md)  
- Yeniden boyutlandırma ve dikdörtgen nesneleri taşıma için kullanılan kullanıcı arabirimi işler ve görüntüler.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Bu sınıflar, bir cihaz bağlamı üzerinde çizmek için kullanılan çizim araçlarını kapsüller.
+
+[CGdiObject](../mfc/reference/cgdiobject-class.md)<br/>
+Çizim Araçları GDI için temel sınıf.
+
+[CBrush](../mfc/reference/cbrush-class.md)<br/>
+Bir cihaz bağlamı içinde geçerli fırça olarak seçilebilecek GDI Fırçası kapsüller. Fırçalar evin içindekiler çizilen nesnelerin doldurmak için kullanılır.
+
+[CPen](../mfc/reference/cpen-class.md)<br/>
+Bir cihaz bağlamı geçerli kalem olarak seçilebilecek GDI kalemi kapsüller. Kalemler, nesnelerin kenarlık çizgilerini çizmek için kullanılır.
+
+[CFont](../mfc/reference/cfont-class.md)<br/>
+Bir cihaz bağlamı içinde geçerli yazı tipi olarak seçilebilir bir GDI yazı tipi kapsüller.
+
+[CBitmap](../mfc/reference/cbitmap-class.md)<br/>
+Bit eşlemler işlemek için bir arabirim sağlayan bir GDI bit eşlemi kapsüller.
+
+[CPalette](../mfc/reference/cpalette-class.md)<br/>
+Uygulama ve bir görüntü gibi bir renk çıktı cihazına arasında bir arabirim olarak kullanılmak üzere GDI renk paleti kapsüller.
+
+[CRectTracker](../mfc/reference/crecttracker-class.md)<br/>
+Görüntüler ve yeniden boyutlandırma ve dikdörtgen nesneleri taşımak için kullanıcı arabirimi işler.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

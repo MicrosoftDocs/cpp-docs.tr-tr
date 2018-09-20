@@ -21,43 +21,45 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f59dcfbdac4a2d5da732c5e7f8cfc78083bf843
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cdc1efa9d2284a48e4f906a326efcd62dd6c61b9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346369"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46412957"
 ---
 # <a name="initializing-and-cleaning-up-documents-and-views"></a>Belgeleri ve Görünümleri Başlatma ve Temizleme
-Başlatma ve sonra belgeleri ve görünümleri Temizleme için aşağıdaki kılavuzları kullanın:  
-  
--   MFC çerçevesi belgeler ve görünümler başlatır; bunları Ekle herhangi bir veri başlatır.  
-  
--   Belgeleri olarak framework temizler ve görünümleri kapatın; yığınından bu belgeler ve görünümler üzerinde üye işlevleri içinde ayrılmış bellek ayırması gerekir.  
-  
+
+Başlatma ve, belgeler ve görünümler sonra Temizleme için aşağıdaki yönergeleri kullanın:
+
+- MFC çerçevesi, belgeler ve görünümler başlatır; bunları Ekle herhangi bir veri başlatır.
+
+- Framework belgeleri olarak temizler ve görünümleri kapatın; yığından bu belgeleri ve görünümleri içindeki üye işlevleri ayrılan herhangi bir bellek ayırması gerekir.
+
 > [!NOTE]
->  Tüm uygulama geçersiz kılmada en iyi şekilde yapılır için o başlatma geri çağırma [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) sınıfının üye işlevini `CWinApp`, ve temizleme tüm uygulama için en iyi ,geçersizkılmadayapılır`CWinApp`üye işlevi [ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance).  
-  
- Bir belge (ve kendi çerçeve penceresi ve görünüm veya Görünüm) MDI yaşam döngüsünü uygulama aşağıdaki gibidir:  
-  
-1.  Dinamik oluşturma sırasında belge Oluşturucusu çağrılır.  
-  
-2.  Her yeni bir belgenin, belge için [OnNewDocument](../mfc/reference/cdocument-class.md#onnewdocument) veya [OnOpenDocument](../mfc/reference/cdocument-class.md#onopendocument) olarak adlandırılır.  
-  
-3.  Kullanıcı belge yaşam süresi boyunca ile etkileşim kurar. Genellikle kullanıcı belgeyi veri görünümü aracılığıyla seçme ve veri düzenleme çalışır gibi bu gerçekleşir. Görünümü açın ve belge depolama ve diğer görünümlere güncelleştirmek için değişiklikleri geçirir. Bu süre boyunca, belge ve görünüm komutları işleyebilirsiniz.  
-  
-4.  Framework çağrıları [DeleteContents](../mfc/reference/cdocument-class.md#deletecontents) bir belge için belirli veri silmek için.  
-  
-5.  Belgenin yıkıcı olarak adlandırılır.  
-  
- Belge ilk oluşturulduğunda sonra SDI uygulamada 1. adım gerçekleştirilir. Ardından 2-4 arası adımlar sürekli olarak yeni bir belge her açıldığında gerçekleştirilir. Yeni belge varolan belge nesnesi yeniden kullanır. Son olarak, uygulama bittiğinde 5. adım gerçekleştirilir.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Belgeleri ve Görünümleri Başlatma](../mfc/initializing-documents-and-views.md)  
-  
--   [Belgeleri ve Görünümleri Temizleme](../mfc/cleaning-up-documents-and-views.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Belge/görünüm mimarisi](../mfc/document-view-architecture.md)
+>  Tüm uygulama geçersiz kılmada en iyi şekilde yapılır için o başlatma geri çağırma [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) sınıfının üye işlevinde `CWinApp`, ve temizleme tüm uygulama için en iyi geçersiz Bitti`CWinApp`üye işlevi [ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance).
+
+Bir belge (ve alt çerçeve penceresi ve görünümü veya görünümlerde) bir MDI yaşam döngüsünü uygulama aşağıdaki gibidir:
+
+1. Belge Oluşturucu dinamik oluşturma sırasında çağrılır.
+
+1. Her yeni belgenin, belge için [OnNewDocument](../mfc/reference/cdocument-class.md#onnewdocument) veya [OnOpenDocument](../mfc/reference/cdocument-class.md#onopendocument) çağrılır.
+
+1. Belgenin ömrü boyunca kullanıcının etkileşime. Seçme ve veri düzenleme belge verilerine görünüm aracılığıyla kullanıcı çalışıyor gibi genellikle bu gerçekleşir. Görünüm, belge depolama ve diğer görünümleri güncelleştirme için değişiklikleri geçirir. Bu süre boyunca, hem belge ve görünüm komutları işleyebilir.
+
+1. Framework çağrıları [DeleteContents](../mfc/reference/cdocument-class.md#deletecontents) belgeye özgü verileri silmek için.
+
+1. Belgenin yok Edicisi çağrılır.
+
+Belge ilk oluşturulduğunda sonra bir SDI uygulamasında, 1. adım gerçekleştirilir. Daha sonra 2 ile 4 arasındaki adımları her bir yeni belge açıldığında sürekli olarak gerçekleştirilir. Yeni belge mevcut belge nesnesi kullanır. Son olarak, uygulama sona erdiğinde 5. adım gerçekleştirilir.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Belgeleri ve Görünümleri Başlatma](../mfc/initializing-documents-and-views.md)
+
+- [Belgeleri ve Görünümleri Temizleme](../mfc/cleaning-up-documents-and-views.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Belge/görünüm mimarisi](../mfc/document-view-architecture.md)
 

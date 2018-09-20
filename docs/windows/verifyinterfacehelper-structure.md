@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c8ac728c70b160b64b66ddc697c54e4c488320db
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 62914b6e46b1fe98c95fba3ab96821c961888db8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607881"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46413659"
 ---
 # <a name="verifyinterfacehelper-structure"></a>VerifyInterfaceHelper Yapısı
 
@@ -45,7 +45,7 @@ struct VerifyInterfaceHelper<false, I>;
 
 ### <a name="parameters"></a>Parametreler
 
-*I*  
+*I*<br/>
 Doğrulamak için bir arabirim.
 
 *isWinRTInterface*
