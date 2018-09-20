@@ -14,34 +14,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ab1ed04b9890fbed8de8b59354ab36d7be063e7
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 0cb9518f60db98bd590cecdffa09ee7d814241ac
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33340235"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46447914"
 ---
 # <a name="mfc-program-or-control-source-and-header-files"></a>MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları
-Oluşturduğunuz proje için belirttiğiniz seçeneklere bağlı olarak Visual Studio'da bir MFC projesi oluşturduğunuzda, aşağıdaki dosyaları oluşturulur. Örneğin, projenizi içeren *Projname*dlg.cpp ve *Projname*dlg.h dosyaları yalnızca proje iletişim tabanlı ya da sınıf oluşturursanız.  
-  
- Tüm bu dosyaları bulunan *Projname* dizin ve başlık dosyaları (.h dosyaları) klasör ya da Çözüm Gezgini kaynak dosyaları (.cpp) klasöründe.  
-  
-|Dosya adı|Açıklama|  
-|---------------|-----------------|  
-|*PROJNAME*.h|Program ya da DLL için ana içerme dosyası. Tüm genel simgeler içeriyor ve `#include` diğer üstbilgi dosyaları için yönergeleri. Bunu türetilen `CPrjnameApp` sınıfıyla `CWinApp` ve bildiren bir `InitInstance` üye işlevi. Bir denetim için `CPrjnameApp` sınıfı türetilir `COleControlModule`.|  
-|*PROJNAME*.cpp|Ana program kaynak dosyası. Sınıfın bir nesnesi oluşturur `CPrjnameApp`, türetilen `CWinApp`ve geçersiz kılmalar `InitInstance` üye işlevi.<br /><br /> Yürütülebilir dosyalar için `CPrjnameApp::InitInstance` birkaç işlemi yapar. Belgeler ve görünümler arasında bir bağlantı olarak hizmet şablonların kaydeder; bir ana çerçeve penceresi oluşturur; ve boş bir belge oluşturur (veya uygulama için komut satırı bağımsız değişkeni olarak belirtilmişse, bir belge açılır).<br /><br /> DLL'ler ve (önceki adıyla OLE) ActiveX denetimleri için `CProjNameApp::InitInstance` çağırarak ile OLE denetimin nesne üreteci kaydeder `COleObjectFactory::RegisterAll` ve çağrıda `AfxOLEInit`. Ayrıca, üye fonksiyonu `CProjNameApp::ExitInstance` çağrısıyla bellek denetiminden kaldırmak için kullanılan **AfxOleTerm**.<br /><br /> Bu dosya ayrıca kaydeder ve Windows kayıt veritabanını denetiminde uygulayarak kaydını siler `DllRegisterServer` ve `DllUnregisterServer` işlevleri.|  
-|*PROJNAME*ctrl.h, *Projname*ctrl.cpp|Bildirme ve uygulama `CProjnameCtrl` sınıfı. `CProjnameCtrl` türetilmiş `COleControl`, ve bazı üye işlevleri, iskelet uygulamalarını başlatmak, çizme ve seri tanımlanır (yükleme ve kaydetme) denetimi. İleti, olay ve eşlemeleri dağıtma de tanımlanır.|  
-|*PROJNAME*dlg.cpp, *Projname*dlg.h|İletişim tabanlı bir uygulama seçerseniz oluşturulur. Dosyaları türetmek ve adlı iletişim sınıf uygulama `CProjnameDlg`ve bir iletişim kutusu başlatılmaya ve iletişim kutusu veri değişimi (DDX) gerçekleştirmek için iskelet üye işlevlerini içerir. Hakkında iletişim sınıfınızı yerine, bu dosyaları da yerleştirilir *Projname*.cpp.|  
-|Dlgproxy.cpp, Dlgproxy.h|Bir iletişim tabanlı program, uygulama ve üstbilgi dosyasında projenin Otomasyon proxy sınıfı için ana iletişim için. Bu, yalnızca Otomasyon desteği seçtiyseniz kullanılır.|  
-|*PROJNAME*doc.cpp, *Projname*doc.h|Türetirseniz ve adlı belgeyi sınıf uygulama `CProjnameDoc`ve bir belgeyi başlatmak, seri hale getirmek için iskelet üye işlevleri dahil (kaydetme ve yükleme) bir belge ve uygulama tanılama hata ayıklama.|  
-|*PROJNAME*set.h/.cpp|Bir veritabanı destekler ve kayıt kümesi sınıfı içeren bir program oluşturursanız, oluşturulan.|  
-|*PROJNAME*view.cpp, *Projname*view.h|Türetilen ve adlı görünüm sınıf uygulama `CProjnameView`, görüntülemek ve belge verileri yazdırmak için kullanılır. `CProjnameView` Sınıfı aşağıdaki MFC sınıfları birinden elde edilmiştir:<br /><br /> -   [CEditView](../mfc/reference/ceditview-class.md)<br />-   [Cformview'yu](../mfc/reference/cformview-class.md)<br />-   [CRecordView](../mfc/reference/crecordview-class.md)<br />-   [COleDBRecordView](../mfc/reference/coledbrecordview-class.md)<br />-   [CTreeView](../mfc/reference/ctreeview-class.md)<br />-   [CListView](../mfc/reference/clistview-class.md)<br />-   [CRichEditView](../mfc/reference/cricheditview-class.md)<br />-   [CScrollView](../mfc/reference/cscrollview-class.md)<br />-   [CView](../mfc/reference/cview-class.md)<br />-   [CHTMLView](../mfc/reference/chtmlview-class.md)<br />-   [CHTMLEditView](../mfc/reference/chtmleditview-class.md)<br /><br /> Projenin görünüm sınıfı Görünüm ve uygulama tanılama hata ayıklama çizmek için iskelet üye işlevlerini içerir. Yazdırma desteğini etkinleştirdiyseniz, ardından ileti eşleme girişleri yazdırma, yazdırma kurulumu için eklenir ve önizleme komut iletileri yazdırın. Bu girişler temel view sınıfında karşılık gelen üye işlevleri çağırma.|  
-|*PROJNAME*PropPage.h, *Projname*PropPage.cpp|Bildirme ve uygulama `CProjnamePropPage` sınıfı. `CProjnamePropPage` türetilmiş `COlePropertyPage` ve bir iskelet üye fonksiyonu `DoDataExchange`, veri değişimi ve doğrulaması uygulamak için sağlanır.|  
-|IPframe.cpp, IPframe.h|Uygulama Sihirbazı'nda 's Mini sunucu veya tam sunucu seçeneği seçili değilse oluşturulan **Otomasyon seçenekleri** sayfa (adım 3 / 6). Dosyaları türetmek ve adlı yerinde çerçeve penceresi sınıf uygulama **CInPlaceFrame**, sunucunun bir kapsayıcı program tarafından etkinleştirilen yerinde olduğunda kullanılır.|  
-|Mainfrm.cpp, Mainfrm.h|Türetilen **CMainFrame** ya da sınıfından [CFrameWnd](../mfc/reference/cframewnd-class.md) (için SDI uygulamaları) veya [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) (için MDI uygulamaları). **CMainFrame** sınıfı, karşılık gelen seçenekleri Uygulama Sihirbazı'nda 's seçtiyseniz oluşturulmasını araç çubuğu düğmeleri ve durum çubuğu işler **uygulama seçenekleri** sayfa (4. adım 6). Kullanma hakkında bilgi için **CMainFrame**, bkz: [çerçeve penceresi sınıfları tarafından oluşturulan Uygulama Sihirbazı'nı](../mfc/frame-window-classes-created-by-the-application-wizard.md).|  
-|Childfrm.cpp, Childfrm.h|Türetilen **CChildFrame** sınıfıyla [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md). **CChildFrame** sınıfı MDI belge çerçeve pencereleri için kullanılır. MDI seçeneğini belirlerseniz bu dosyaları her zaman oluşturulur.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++ projeleri için oluşturulan dosya türleri](../ide/file-types-created-for-visual-cpp-projects.md)   
- [ATL programı veya Denetim Kaynağı ve başlık dosyaları](../ide/atl-program-or-control-source-and-header-files.md)   
- [CLR projeleri](../ide/files-created-for-clr-projects.md)
+
+Oluşturduğunuz proje için belirlediğiniz seçeneklere bağlı olarak Visual Studio'da bir MFC projesi oluşturduğunuzda, aşağıdaki dosyalar oluşturulur. Örneğin, projenizi içeren *Projname*dlg.cpp ve *Projname*dlg.h dosyaları yalnızca bir iletişim kutusu tabanlı proje ya da sınıf oluşturun.
+
+Bu dosyaların tümünün bulunan *Projname* dizin ve üst bilgi dosyaları (.h) klasör ya da Çözüm Gezgini'nde klasörü kaynak dosyaları (.cpp).
+
+|Dosya adı|Açıklama|
+|---------------|-----------------|
+|*PROJNAME*.h|Program veya DLL için ana içerme dosyası. Tüm genel simgeler içeriyor ve `#include` yönergeleri için diğer üst bilgi dosyaları. Türetilen `CPrjnameApp` gelen sınıfı `CWinApp` ve bildiren bir `InitInstance` üye işlevi. Bir denetim için `CPrjnameApp` sınıfı türetilen `COleControlModule`.|
+|*PROJNAME*.cpp|Ana program kaynak dosyası. Sınıfın bir nesnesi oluşturur `CPrjnameApp`, türetilen `CWinApp`ve geçersiz kılmaları `InitInstance` üye işlevi.<br /><br /> Yürütülebilir dosyaları için `CPrjnameApp::InitInstance` çeşitli işlemler yapar. Bu belge şablonları, belgeleri ve görünümleri arasında bir bağlantı işlevi görür; kaydeder bir ana çerçeve penceresi oluşturur. ve boş bir belge oluşturur (veya uygulama için komut satırı bağımsız değişkeni olarak belirtilmişse, bir belgeyi açar).<br /><br /> DLL'ler ve (eski adı OLE) ActiveX denetimleri için `CProjNameApp::InitInstance` çağırarak OLE ile denetimin nesne üreteci kaydettirir `COleObjectFactory::RegisterAll` ve çağrıda `AfxOLEInit`. Ayrıca, üye işlevi `CProjNameApp::ExitInstance` bellek çağrısıyla denetiminden kaldırmak için kullanılan **AfxOleTerm**.<br /><br /> Bu dosya ayrıca kaydeder ve uygulayarak Windows kayıt defteri veritabanında denetim kaydını `DllRegisterServer` ve `DllUnregisterServer` işlevleri.|
+|*PROJNAME*ctrl.h, *Projname*ctrl.cpp|Bildirme ve uygulama `CProjnameCtrl` sınıfı. `CProjnameCtrl` türetilen `COleControl`, ve bazı üye işlevleri, çatı uygulamalarını başlatmak, çizme ve seri hale getirme tanımlanır (yükleme ve kaydetme) denetimi. İleti ve olay gönderme eşlemeleri de tanımlanır.|
+|*PROJNAME*dlg.cpp, *Projname*dlg.h|İletişim tabanlı bir uygulama seçtiğinizde oluşturulur. Dosyaları türetilir ve adlı iletişim kutusu sınıfı uygulamak `CProjnameDlg`ve bir iletişim kutusu başlatılmaya ve iletişim kutusu veri değişimi (DDX) gerçekleştirmek için iskelet üye işlevleri içerir. Hakkında iletişim sınıfınızı de yerine bu dosyalar da yerleştirilir *Projname*.cpp.|
+|Dlgproxy.cpp, Dlgproxy.h|Bir iletişim kutusu tabanlı programı, uygulama ve üst bilgi dosyasında ana iletişim kutusu için proje Otomasyon proxy sınıfı. Bu, yalnızca Otomasyon desteği seçtiyseniz kullanılır.|
+|*PROJNAME*doc.cpp, *Projname*doc.h|Türetilir ve adlı belge sınıfı uygulamak `CProjnameDoc`ve bir belgeyi başlatın, seri hale getirmek için iskelet üye işlevleri içerir (kaydetme ve yükleme) bir belge ve hata ayıklama ve tanılama uygulayın.|
+|*PROJNAME*set.h/.cpp|Bir veritabanı destekler ve kayıt kümesi sınıfı içeren bir program oluşturursanız oluşturuldu.|
+|*PROJNAME*view.cpp, *Projname*view.h|Türetilir ve adlı görünüm sınıfı uygulamak `CProjnameView`, görüntülemek ve belge verilerini yazdırmak için kullanılır. `CProjnameView` Sınıfı aşağıdaki MFC sınıflarının birinden türetilir:<br /><br /> -   [CEditView](../mfc/reference/ceditview-class.md)<br />-   [CFormView](../mfc/reference/cformview-class.md)<br />-   [CRecordView](../mfc/reference/crecordview-class.md)<br />-   [COleDBRecordView](../mfc/reference/coledbrecordview-class.md)<br />-   [CTreeView](../mfc/reference/ctreeview-class.md)<br />-   [CListView](../mfc/reference/clistview-class.md)<br />-   [CRichEditView](../mfc/reference/cricheditview-class.md)<br />-   [CScrollView](../mfc/reference/cscrollview-class.md)<br />-   [CView](../mfc/reference/cview-class.md)<br />-   [CHTMLView](../mfc/reference/chtmlview-class.md)<br />-   [CHTMLEditView](../mfc/reference/chtmleditview-class.md)<br /><br /> Projenin görünümü sınıf görünümü ve hata ayıklama ve tanılama uygulamanıza çizmek için iskelet üye işlevleri içerir. Yazdırma desteği etkinleştirilirse, ardından ileti eşlemesi girişleri için yazdırma, Yazdırma Kurulumu eklenir ve önizleme komut iletilerini yazdırma. Bu girişlerin karşılık gelen üye işlevleri temel görünümü sınıfında çağırın.|
+|*PROJNAME*PropPage.h, *Projname*PropPage.cpp|Bildirme ve uygulama `CProjnamePropPage` sınıfı. `CProjnamePropPage` türetilen `COlePropertyPage` ve bir çatı üye işlevini `DoDataExchange`, veri değişimi ve doğrulaması uygulamak için sağlanır.|
+|IPframe.cpp, IPframe.h|Mini sunucu veya tam sunucu seçeneği Uygulama Sihirbazı'nda kişinin seçtiyseniz oluşturulan **Otomasyon seçenekleri** sayfa (adım 3 / 6). Dosyaları türetilir ve adlı yerinde çerçeve penceresini sınıf uygulama **CInPlaceFrame**, sunucunun bir kapsayıcı program tarafından etkinleştirilen bir yerde olduğunda kullanılır.|
+|Mainfrm.cpp, Mainfrm.h|Türetilen **CMainFrame** ya da bir sınıftan [CFrameWnd](../mfc/reference/cframewnd-class.md) (için SDI uygulamaları) veya [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) (için MDI uygulamaları). **CMainFrame** sınıfı işler araç çubuğu düğmeleri ve durum çubuğu oluşturma Uygulama Sihirbazı'nda kişinin ilgili seçenekleri seçtiyseniz **uygulama seçenekleri** sayfa (adım 4 / 6). Kullanma hakkında bilgi için **CMainFrame**, bkz: [çerçeve pencere sınıfları tarafından oluşturulan Uygulama Sihirbazı'nı](../mfc/frame-window-classes-created-by-the-application-wizard.md).|
+|Childfrm.cpp, Childfrm.h|Türetilen **CChildFrame** gelen sınıfı [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md). **CChildFrame** sınıfı MDI belge çerçeve pencereleri için kullanılır. MDI seçeneğini belirlerseniz bu dosyaları her zaman oluşturulur.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Visual C++ Projeleri için Oluşturulan Dosya Türleri](../ide/file-types-created-for-visual-cpp-projects.md)<br>
+[ATL Programı veya Denetim Kaynağı ve Başlık Dosyaları](../ide/atl-program-or-control-source-and-header-files.md)<br>
+[CLR projeleri](../ide/files-created-for-clr-projects.md)

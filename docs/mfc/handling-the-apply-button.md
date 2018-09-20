@@ -15,32 +15,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acbbd4ec8e075abbcbbeeaf199cae0d3a8d3c41a
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 8286bc15d3bbc3716263bf76b0eea953366b0947
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36930458"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405924"
 ---
 # <a name="handling-the-apply-button"></a>Uygula Düğmesini İşleme
-Özellik sayfaları standart iletişim kutuları bulunmayan bir özelliği vardır: yapmış özellik sayfasını kapatmadan önce değişiklikleri uygulamak kullanıcı sağlarlar. Bu yapılır Uygula düğmesini kullanarak. Bu makalede, bu özelliği düzgün bir şekilde uygulamak için kullanabileceğiniz yöntemler açıklanmaktadır.  
-  
- Kullanıcı iletişim kutusunu kapatmak için Tamam'ı tıklattığında kalıcı iletişim kutuları için dış nesne genellikle ayarlarını uygular. Aynı özellik sayfası için geçerlidir: kullanıcı Tamam tıkladığında, özellik sayfasında yeni ayarlar geçerli olur.  
-  
- Ancak, özellik sayfası iletişim kutusunu kapatmak zorunda kalmadan ayarlarını kaydetmek kullanıcı izin vermek isteyebilirsiniz. Uygula düğmesini işlevi budur. Uygula düğmesini yalnızca geçerli ayarları şu anda etkin sayfanın uygulama aksine dış nesnenin özellik sayfaları tümünde geçerli ayarlarını uygular.  
-  
- Varsayılan olarak, her zaman Uygula düğmesi devre dışıdır. Uygula düğmesini uygun zamanlarda etkinleştirmek için kod yazmanız gerekir ve aşağıda açıklandığı gibi Uygula etkisini uygulamak için kod yazmanız gerekir.  
-  
- Kullanıcıya Uygula işlevselliğini sunmaya istemiyorsanız Uygula düğmesini kaldırmak gerekli değildir. Standart özellik sayfası desteği gelecekteki Windows sürümlerinde kullanılabilir kullanan uygulamalar arasında genel olarak, devre dışı bırakabilirsiniz.  
-  
- Değiştirilen olarak bir sayfa rapor ve Uygula düğmesini etkinleştirmek için arama `CPropertyPage::SetModified( TRUE )`. Varsa değiştirilen sayfaları rapor Uygula düğmesini, olup şu anda etkin sayfa değiştirildi bağımsız olarak, etkin kalır.  
-  
- Çağırmalısınız [CPropertyPage::SetModified](../mfc/reference/cpropertypage-class.md#setmodified) her kullanıcı sayfasında tüm ayarlarını değiştirir. Bir kullanıcı bir sayfasında ayarını değiştirdiğinde belirlemek için bir yoldur gibi değişikliği bildirim işleyicileri her özellik sayfası denetimlerinde uygulamak için **EN_CHANGE** veya **BN_CLICKED**.  
-  
- Uygula düğmesini etkisini uygulamak için özellik sayfasını, sahibi ya da başka bir dış nesnenin özellik sayfaları geçerli ayarları uygulamak için bu uygulamada bildirmeniz gerekir. Aynı anda özellik sayfasında Uygula düğmesini çağırarak devre dışı bırakmanız gerekir `CPropertyPage::SetModified( FALSE )` dış nesne kendi değişiklikler uygulanan tüm sayfalar için.  
-  
- MFC genel örnek bu işlem bir örnek için bkz [PROPDLG](../visual-cpp-samples.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özellik sayfaları](../mfc/property-sheets-mfc.md)
+
+Özellik sayfaları, standart iletişim kutuları bulunmayan bir özellik vardır: yapmış özellik sayfasını kapatmadan önce değişiklikleri uygulamak kullanıcı sağlarlar. Bu yapılır Uygula düğmesini kullanarak. Bu makalede, bu özelliği düzgün şekilde uygulamak için kullanabileceğiniz yöntemler açıklanır.
+
+Kullanıcı iletişim kutusunu kapatmak için Tamam'ı tıkladığında kalıcı iletişim kutuları ayarları genellikle dış bir nesneye uygulayın. Aynı bir özellik sayfası için geçerlidir: kullanıcı Tamam tıkladığında, özellik sayfasında yeni ayarları etkili.
+
+Ancak, kullanıcının özellik sayfası iletişim kutusu kapatmaya gerek kalmadan ayarları kaydetmesine olanak tanıyan isteyebilirsiniz. Uygula düğmesini işlev budur. Uygula düğmesini yalnızca şu anda etkin sayfa geçerli ayarlarını uygulamak yerine dış nesne tüm özellik sayfalarının geçerli ayarlarını uygular.
+
+Varsayılan olarak, Uygula düğmesine her zaman devre dışıdır. Uygun zamanlarda Uygula düğmesini etkinleştirmek için kod yazmanız gerekir ve aşağıda açıklandığı gibi Uygula etkisini uygulamak için kod yazmanız gerekir.
+
+Kullanıcıya Uygula işlevselliği sunmak istemiyorsanız Uygula düğmesini kaldırmak gerekli değildir. Standart özellik sayfası destek gelecekteki Windows sürümlerinde kullanan uygulamalar arasında yaygın olarak, devre dışı bırakılabilir.
+
+Rapor olarak değiştirilen bir sayfası ve Uygula düğmesini etkinleştirmek için çağrı `CPropertyPage::SetModified( TRUE )`. Varsa değiştirilen sayfaların rapor Uygula düğmesini, olup şu anda etkin sayfa değiştirilmiş bağımsız olarak, etkin kalmaya devam eder.
+
+Çağırmalısınız [CPropertyPage::SetModified](../mfc/reference/cpropertypage-class.md#setmodified) her kullanıcı sayfasında herhangi bir ayarı değiştirir. Bir kullanıcı bir ayar sayfasında değiştiğini Algıla yollarından biri açıklanmıştır değişiklik bildirimi işleyicileri her özellik sayfası denetimleri gibi uygulamak için **EN_CHANGE** veya **BN_CLICKED**.
+
+Uygula düğmesini etkisini uygulamak için özellik sayfası sahibi veya başka bir dış nesne özellik sayfalarındaki geçerli ayarları uygulamak için bu uygulamada söylemeniz gerekir. Aynı zamanda, özellik sayfasında Uygula düğmesini çağırarak devre dışı bırakmanız gerekir `CPropertyPage::SetModified( FALSE )` kendi değişikliklerini dış nesne için uygulanan tüm sayfalar için.
+
+Bu işlemin bir örneği için bkz: MFC genel örnek [PROPDLG](../visual-cpp-samples.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Özellik sayfaları](../mfc/property-sheets-mfc.md)
 

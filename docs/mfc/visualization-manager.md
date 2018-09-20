@@ -14,40 +14,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 590c21c3a628af3d8e4c7fc3e5cb0330a0af439a
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: fce4b036c6a6ae3692353ae02e7d36eb5ddfd1e1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37123350"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46398500"
 ---
 # <a name="visualization-manager"></a>Seri Hale Getirme Yöneticisi
 
-Görsel Yöneticisi tüm uygulama görünümünü denetleyen bir nesnedir. Tek bir sınıf olarak burada, uygulamanız için tüm çizim kodu koyabilirsiniz yapar. MFC kitaplığını birkaç visual yöneticileri içerir. Uygulamanız için özel görünüm oluşturmak istiyorsanız visual yöneticiniz de oluşturabilirsiniz. Farklı görsel yöneticileri etkinleştirildiğinde aşağıdaki görüntüleri aynı uygulama göster:
+Görsel yöneticiyi tüm uygulama görünümünü denetleyen bir nesnedir. Bu, tek bir sınıf uygulamanız için çizim kodunu yere koyabilirsiniz işlevi görür. MFC kitaplığını birçok görsel Yöneticiler içerir. Uygulamanız için özel görünüm oluşturmak istiyorsanız, ayrıca kendi görsel yöneticiyi oluşturabilirsiniz. Farklı görsel Yöneticiler etkin olduğunda, aşağıdaki resimlerde aynı uygulama göster:
 
- ![CMFCVisualManagerWindows tarafından işlenen olarak Uygulamam](../mfc/media/vmwindows.png "vmwindows") CMFCVisualManagerWindows visual Yöneticisi'ni kullanan Uygulamam
+![CMFCVisualManagerWindows tarafından işlenen olarak MyApp](../mfc/media/vmwindows.png "vmwindows") CMFCVisualManagerWindows görsel yöneticiyi kullanan Uygulamam
 
- ![CMFCVisualManagerVS2005 tarafından işlenen olarak Uygulamam](../mfc/media/vmvs2005.png "vmvs2005") CMFCVisualManagerVS2005 visual Yöneticisi'ni kullanan Uygulamam
+![CMFCVisualManagerVS2005 tarafından işlenen olarak MyApp](../mfc/media/vmvs2005.png "vmvs2005") CMFCVisualManagerVS2005 görsel yöneticiyi kullanan Uygulamam
 
- ![CMFCVisualManagerOfficeXP tarafından işlenen olarak Uygulamam](../mfc/media/vmofficexp.png "vmofficexp") CMFCVisualManagerOfficeXP visual Yöneticisi'ni kullanan Uygulamam
+![CMFCVisualManagerOfficeXP tarafından işlenen olarak MyApp](../mfc/media/vmofficexp.png "vmofficexp") CMFCVisualManagerOfficeXP görsel yöneticiyi kullanan Uygulamam
 
- ![CMFCVisualManagerOffice2003 tarafından işlenen Uygulamam](../mfc/media/vmoffice2003.png "vmoffice2003") CMFCVisualManagerOffice2003 visual Yöneticisi'ni kullanan Uygulamam
+![CMFCVisualManagerOffice2003 tarafından işlenen Uygulamam](../mfc/media/vmoffice2003.png "vmoffice2003") CMFCVisualManagerOffice2003 görsel yöneticiyi kullanan Uygulamam
 
- ![CMFCVisualManagerOffice2007 tarafından işlenen Uygulamam](../mfc/media/msoffice2007.png "msoffice2007") CMFCVisualManagerOffice2007 visual Yöneticisi'ni kullanan Uygulamam
+![CMFCVisualManagerOffice2007 tarafından işlenen Uygulamam](../mfc/media/msoffice2007.png "msoffice2007") CMFCVisualManagerOffice2007 görsel yöneticiyi kullanan Uygulamam
 
-Varsayılan olarak, visual Yöneticisi birkaç GUI öğesi çizim kodunu bulundurur. Özel kullanıcı Arabirimi öğeleri sağlamak için visual Yöneticisi'nin ilgili çizim yöntemleri geçersiz kılmanız gerekir. Bu yöntemlerin listesi için bkz: [CMFCVisualManager sınıfı](../mfc/reference/cmfcvisualmanager-class.md). Özel bir görünümünü sağlamak için geçersiz kılabilirsiniz yöntemleri ile başlayan tüm yöntemler şunlardır `OnDraw`.
+Varsayılan olarak görsel yöneticiyi çeşitli GUI öğelerin çizim kodunu korur. Özel kullanıcı Arabirimi öğeleri sağlamak için görsel yöneticiyi ilgili çizim yöntemleri geçersiz kılmanız gerekir. Bu yöntemlerin listesi için bkz: [CMFCVisualManager sınıfı](../mfc/reference/cmfcvisualmanager-class.md). Özel bir görünümünü sağlamak için geçersiz kılabilirsiniz yöntemleri ile başlayan tüm yöntemlerin olması `OnDraw`.
 
-Uygulamanızı yalnızca bir bulunabilir `CMFCVisualManager` nesnesi. Visual Yöneticisi, uygulamanız için bir işaretçi elde etmek için statik işlev çağrısı [CMFCVisualManager::GetInstance](../mfc/reference/cmfcvisualmanager-class.md#getinstance). Tüm visual yöneticileri öğesinden devraldığı `CMFCVisualManager`, `CMFCVisualManager::GetInstance` yöntemi alırsınız bir işaretçi uygun visual Yöneticisi için özel bir görsel Yöneticisi oluşturmak olsa bile.
+Yalnızca bir uygulamanız olabilir `CMFCVisualManager` nesne. Görsel yöneticiyi uygulamanız için bir işaretçi alma için statik işlev çağrısı [CMFCVisualManager::GetInstance](../mfc/reference/cmfcvisualmanager-class.md#getinstance). Tüm görsel Yöneticiler devralınacak çünkü `CMFCVisualManager`, `CMFCVisualManager::GetInstance` yöntemi alacak bir işaretçi uygun görsel yöneticiyi için bile özel bir görsel yöneticiyi oluşturun.
 
-Özel bir görsel Yöneticisi oluşturmak istiyorsanız, zaten varolan bir visual Yöneticisi'nden türetilmesi gerekir. Öğesinden türetilen için varsayılan sınıf `CMFCVisualManager`. Ancak, daha iyi uygulamanız için istediğiniz benzer ise farklı bir görsel Yöneticisi kullanabilirsiniz. Örneğin, kullanmak isterse `CMFCVisualManagerOffice2007` visual Yöneticisi, ancak istediği yalnızca ayırıcılar nasıl göründüğünü değiştirmek, özel sınıfından türetilen `CMFCVisualManagerOffice2007`. Bu senaryoda, yalnızca ayırıcılar çizim yöntemleri üzerine yazmanız gerekir.
+Özel bir görsel yöneticiyi oluşturmak istiyorsanız, zaten bir görsel yöneticiyi türetilmesi gerekir. Varsayılan sınıf türetmek için `CMFCVisualManager`. Ancak, uygulamanız için istediğinize daha iyi benzer, farklı bir görsel yöneticiyi kullanabilirsiniz. Örneğin kullanmayı istiyorlardı, `CMFCVisualManagerOffice2007` , özel bir sınıftan türetilen, ancak görsel yöneticiyi istiyordu yalnızca ayırıcılar nasıl göründüğünü değiştirmek `CMFCVisualManagerOffice2007`. Bu senaryoda yalnızca ayırıcılar çizmek için yöntemleri üzerine yazmalıdır.
 
-Uygulamanız için bir özel görsel Yöneticisi'ni kullanmak için iki olası yolu vardır. Tek yönlü çağırmaktır [CMFCVisualManager::SetDefaultManager](../mfc/reference/cmfcvisualmanager-class.md#setdefaultmanager) yöntemi ve uygun visual Yöneticisi bir parametre olarak geçirin. Aşağıdaki kod örneğinde nasıl kullanacağınız gösterilmiştir `CMFCVisualManagerVS2005` visual Yöneticisi bu yöntem ile:
+Uygulamanız için belirli bir görsel yöneticiyi kullanmak için olası iki yolu vardır. Çağrılacak yollarından biri olduğunu [CMFCVisualManager::SetDefaultManager](../mfc/reference/cmfcvisualmanager-class.md#setdefaultmanager) yöntemi ve pass uygun görsel yöneticiyi bir parametre olarak. Aşağıdaki kod örneği, nasıl kullanacağınız gösterilir `CMFCVisualManagerVS2005` bu yöntemle görsel yöneticiyi:
 
 ```cpp
 CMFCVisualManager::SetDefaultManager (RUNTIME_CLASS (CMFCVisualManagerVS2005));
 ```
 
-Uygulamanızda bir görsel Yöneticisi'ni kullanmak için diğer el ile oluşturmak için yoludur. Uygulama için tüm işlemeyi sonra bu yeni visual Yöneticisi'ni kullanır. Ancak, olabilir çünkü tek `CMFCVisualManager` nesne uygulama başına yenisini oluşturmadan önce geçerli visual Yöneticisi silmek olacaktır. Aşağıdaki örnekte, `CMyVisualManager` türetilen özel bir görsel Yöneticisi `CMFCVisualManager`. Aşağıdaki yöntem, visual Yöneticisi'ne bağlı olarak bir dizin uygulamanızı görüntülemek için kullanılan değişir:
+Bir görsel yöneticiyi kullanmak için başka bir şekilde el ile oluşturmanız sağlamaktır. Uygulama, daha sonra bu yeni görsel yöneticiyi işleme için kullanır. Ancak, çünkü tek olabilir `CMFCVisualManager` nesne uygulama başına yeni bir tane oluşturmadan önce geçerli görsel yöneticiyi silmeye olacaktır. Aşağıdaki örnekte, `CMyVisualManager` türetilen özel bir görsel Yöneticisi `CMFCVisualManager`. Aşağıdaki yöntem, hangi görsel yöneticiyi dizin bağlı olarak uygulamanızı görüntülemek için kullanılan değişir:
 
 ```cpp
 void CMyApp::SetSkin (int index)
@@ -59,7 +59,7 @@ void CMyApp::SetSkin (int index)
 
     switch (index)
     {
-    case DEFAULT_STYLE: 
+    case DEFAULT_STYLE:
         // The following statement creates a new CMFCVisualManager
         CMFCVisualManager::GetInstance();
         break;
@@ -79,5 +79,5 @@ void CMyApp::SetSkin (int index)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)  
-[CMFCVisualManager Sınıfı](../mfc/reference/cmfcvisualmanager-class.md)  
+[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)<br/>
+[CMFCVisualManager Sınıfı](../mfc/reference/cmfcvisualmanager-class.md)

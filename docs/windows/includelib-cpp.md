@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 551ae176504e3bbbca034ca91894ef793ea268fd
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5f15fcefe1a18156e4cbe8180138d7b6c1d944e2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42584348"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46398592"
 ---
 # <a name="includelib-c"></a>includelib (C++)
 
@@ -38,7 +38,7 @@ Oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası neden olur.
 
 ### <a name="parameters"></a>Parametreler
 
-*Name.idl*  
+*Name.idl*<br/>
 Oluşturulan .idl dosyasının bir parçası olarak dahil istediğiniz .idl dosyasının adı.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -71,9 +71,9 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)  
-[import](../windows/import.md)  
-[importidl](../windows/importidl.md)  
-[İçerir](../windows/include-cpp.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)<br/>
+[import](../windows/import.md)<br/>
+[importidl](../windows/importidl.md)<br/>
+[İçerir](../windows/include-cpp.md)<br/>
 [importlib](../windows/importlib.md)  

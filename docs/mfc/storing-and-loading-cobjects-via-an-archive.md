@@ -20,33 +20,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a2dc227815f8888b85784ea92e58b3e91ffc83a
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: e19626fab2e44bf88b4a378d094daaf7c377ad5d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36954981"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46436968"
 ---
 # <a name="storing-and-loading-cobjects-via-an-archive"></a>Bir Arşiv Kullanarak CObject'leri Depolama ve Yükleme
-Depolama ve yükleme `CObject`s bir arşiv aracılığıyla ek göz önünde bulundurarak gerektirir. Bazı durumlarda, çağırmalısınız `Serialize` nesnesinin işlevi burada `CArchive` nesnesidir bir parametresi `Serialize` kullanarak aksine, çağrısı **< \<** veya **>>** işleci `CArchive`. Dikkate alınması gereken önemli olgu olan `CArchive` **>>** işleci yapıları `CObject` göre bellekte `CRuntimeClass` bilgileri önceden tarafından depolanmasını arşiv dosyasına yazılır.  
-  
- Kullanıp bu nedenle, `CArchive` **< \<** ve **>>** arama karşı işleçleri `Serialize`, bağlıdır, *gerek* Arşiv yüklenirken dinamik olarak nesne yeniden oluşturmak için temel alarak önceden depolanan `CRuntimeClass` bilgi. Kullanım `Serialize` işlevi aşağıdaki durumlarda:  
-  
--   Nesne seri durumdan çıkarılırken, nesnenin tam sınıfı önceden biliyor.  
-  
--   Nesne seri durumdan çıkarılırken, önceden kendisi için ayrılan bellek yok.  
-  
+
+Depolama ve yükleme `CObject`s bir arşiv aracılığıyla ek göz önünde bulundurarak gerektirir. Bazı durumlarda, çağırması gerekir `Serialize` nesnenin işlevi burada `CArchive` nesnedir parametre `Serialize` sınıfını kullanarak çağrısı **< \<** veya **>>** işleci `CArchive`. Akılda tutulması gereken önemli olgu olan `CArchive` **>>** işleci yapıları `CObject` göre bellekte `CRuntimeClass` bilgi dosyasına depolanmasını arşiv tarafından önceden yazılmış.
+
+Kullanıp bu nedenle, `CArchive` **< \<** ve **>>** çağırmak yerine, işleçler `Serialize`, bağlıdır, *gereksinim* Arşiv yüklenirken nesneye dinamik olarak yeniden oluşturmak için temel alarak daha önce depolanan `CRuntimeClass` bilgileri. Kullanım `Serialize` işlevi aşağıdaki durumlarda:
+
+- Nesneyi seri durumdan çıkarmak olduğunda, tam nesnenin sınıfını önceden bilmeniz.
+
+- Nesneyi seri durumdan çıkarmak olduğunda, kendisi için ayrılan bellek zaten sahip.
+
 > [!CAUTION]
->  Nesnesini kullanarak yüklerseniz `Serialize` işlevi, nesnesini kullanarak depolamalısınız `Serialize` işlevi. Kullanarak depolamayın `CArchive` **<<** işleci ve sonra Yük kullanma `Serialize` işlev veya kullanılarak `Serialize` işlev ve kullanarak yük `CArchive >>` işleci.  
-  
- Aşağıdaki örnek durumlarda gösterilmektedir:  
-  
- [!code-cpp[NVC_MFCSerialization#36](../mfc/codesnippet/cpp/storing-and-loading-cobjects-via-an-archive_1.h)]  
-  
- [!code-cpp[NVC_MFCSerialization#37](../mfc/codesnippet/cpp/storing-and-loading-cobjects-via-an-archive_2.cpp)]  
-  
- Seri hale getirilebilir sınıfınız katıştırılmış tanımlıyorsa Özet olarak, `CObject` bir üye olarak gereken *değil* kullanmak `CArchive` **< \<** ve **>>** o nesnenin işleç ancak çağırmalıdır `Serialize` yerine işlev. Ayrıca, seri hale getirilebilir bir sınıf için bir işaretçi tanımlıyorsa bir `CObject` (veya bir nesne türetilmiş `CObject`) üyesi, ancak yapıları bu bir kendi Oluşturucusu nesnesinde de çağırmanız gerekir `Serialize`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Seri hale getirme: Bir Nesneyi Seri Hale Getirme](../mfc/serialization-serializing-an-object.md)
+>  Nesnesini kullanarak yüklerseniz `Serialize` işlevi nesnesini kullanarak depolamalısınız `Serialize` işlevi. Kullanarak depolama `CArchive` **<<** işleci ve sonra Yük kullanarak `Serialize` işlev veya deposunda `Serialize` işlevi ve ardından kullanarak yük `CArchive >>` işleci.
+
+Aşağıdaki örnek durumları gösterir:
+
+[!code-cpp[NVC_MFCSerialization#36](../mfc/codesnippet/cpp/storing-and-loading-cobjects-via-an-archive_1.h)]
+
+[!code-cpp[NVC_MFCSerialization#37](../mfc/codesnippet/cpp/storing-and-loading-cobjects-via-an-archive_2.cpp)]
+
+Özet olarak, seri hale getirilebilir bir sınıf katıştırılmış tanımlıyorsa, `CObject` bir üyesi olarak gerektiğini *değil* kullanın `CArchive` **< \<** ve **>>** işleçleri söz konusu nesnenin ancak çağırmalıdır `Serialize` işlevini. Ayrıca, seri hale getirilebilir bir sınıf için bir işaretçi tanımlıyorsa bir `CObject` (veya bir nesne öğesinden türetilen `CObject`) üyesi, ancak yapıları kendi Oluşturucusu bu diğer nesne de çağırmanız gerekir `Serialize`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Seri hale getirme: Bir Nesneyi Seri Hale Getirme](../mfc/serialization-serializing-an-object.md)
 

@@ -28,47 +28,49 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cae180ca71b89732e073b9039483b8b46366a42a
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 1ada8731be176368e1503118597fa4d6df38e3ef
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929640"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378380"
 ---
 # <a name="menus-and-resources-ole"></a>Menüler ve Kaynaklar (OLE)
-Bu grubun makalelerin menüleri ve kaynakları MFC OLE belge uygulamaları kullanımını açıklar.  
-  
- OLE görsel düzenleme ek gereksinimler menü ve hangi hem kapsayıcı modlarında sayısı olduğundan OLE belge uygulamaları tarafından sağlanan diğer kaynakları yerleştirir ve sunucu (Bileşen) uygulamaları kullanmaya ve kullanılır. Örneğin, bir tam sunucu uygulaması bu üç modlarından birini çalıştırabilirsiniz:  
-  
--   Tek başına.  
-  
--   Yerinde bağlamında bir öğe kapsayıcı düzenlemek için.  
-  
--   Genellikle ayrı bir pencerede kapsayıcısı bağlamı dışında bir öğe düzenleme için açma.  
-  
- Bu, bir uygulamanın olası her modu için üç ayrı menü düzenlerini gerektirir. Hızlandırıcı tabloları, ayrıca her yeni modu için gereklidir. Bir kapsayıcı uygulaması olabilir veya yerinde etkinleştirme desteklemiyor olabilir; destekliyorsa, yeni bir menü yapısı gerekir ve Hızlandırıcı tabloları ilişkili.  
-  
- Yerinde etkinleştirme kapsayıcı ve sunucu uygulamaları için menü, araç çubuğu ve durum çubuğu alanı anlaşmaları gerekir gerektirir. Tüm kaynaklar bu göz önünde tasarlanmalıdır. Makaleyi [menüler ve kaynaklar: menü birleştirme](../mfc/menus-and-resources-menu-merging.md) ayrıntı bu konuda ele alınmaktadır.  
-  
- Bu sorunları nedeniyle, en fazla dört ayrı menüleri ve Hızlandırıcı tablosu kaynakları OLE belge uygulamaları Uygulama Sihirbazı'yla oluşturulmuş olabilir. Bunlar şu nedenlerden dolayı kullanılır:  
-  
-|Kaynak adı|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|  
-|-------------------|---------|  
-|IDR_MAINFRAME|Hiçbir dosya açıksa MDI uygulama veya bir SDI uygulamada açık dosyalar bağımsız olarak kullanılır. OLE dışı uygulamalarda kullanılan standart menü budur.|  
-|IDR_\<Proje > türü|MDI uygulamada açık dosya varsa kullanılır. Bir uygulama bağımsız olarak çalışırken kullanılır. OLE dışı uygulamalarda kullanılan standart menü budur.|  
-|IDR_\<Proje > TYPE_SRVR_IP|Bir nesne yerinde açık olduğunda sunucu veya kapsayıcı tarafından kullanılır.|  
-|IDR_\<Proje > TYPE_SRVR_EMB|Yerinde etkinleştirme kullanmadan bir nesne açtıysanız bir sunucu uygulaması tarafından kullanılır.|  
-  
- Bu kaynak adlarının her biri bir menü ve genellikle Hızlandırıcı tablosunu temsil eder. Uygulama Sihirbazı'nı oluşturulmaz MFC uygulamalarında benzer bir düzeni kullanılmalıdır.  
-  
- Aşağıdaki makaleler kapsayıcıları, sunucuları ve yerinde etkinleştirme uygulanması için gerekli birleştirme menüsü ile ilgili konuları ele alınmıştır:  
-  
--   [Menüler ve Kaynaklar: Kapsayıcı Ekleme](../mfc/menus-and-resources-container-additions.md)  
-  
--   [Menüler ve Kaynaklar: Sunucu Ekleme](../mfc/menus-and-resources-server-additions.md)  
-  
--   [Menüler ve Kaynaklar: Menü Birleştirme](../mfc/menus-and-resources-menu-merging.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE](../mfc/ole-in-mfc.md)
+
+Bu grubu makaleler, menüler ve kaynaklar MFC OLE belge uygulamaları içinde kullanılmasını açıklar.
+
+OLE görsel düzenleme ek gereksinimler menü ve hangi iki kapsayıcı modlarında sayısı olduğundan OLE belge uygulamaları tarafından sağlanan diğer kaynakları yerleştirir ve sunucu (bileşen için) uygulamaları kullanmaya ve kullanılır. Örneğin, bir tam sunucu uygulaması aşağıdaki üç modun herhangi birinde çalıştırabilirsiniz:
+
+- Tek başına duramaz.
+
+- Yerinde düzenleme bağlamı içinde bir öğe kapsayıcı.
+
+- Açık, genellikle ayrı bir pencerede onun kapsayıcısının bağlamı dışındaki bir öğeyi düzenlemek için kullanılır.
+
+Bu, bir uygulamanın olası her modu için üç ayrı menü düzenlerini gerektirir. Hızlandırıcı tablolarını, ayrıca her yeni modu için gereklidir. Kapsayıcılı bir uygulama olabilir veya yerinde etkinleştirme desteklemiyor olabilir; varsa, yeni bir menüsü yapısı gerekir ve Hızlandırıcı tablolarını ilişkili.
+
+Yerinde etkinleştirme kapsayıcı ve sunucu uygulamaları için menüsü araç çubuğu ve durum çubuğu alanı anlaşmaları gerekir gerektirir. Tüm kaynaklar bunu aklınızda tasarlanmalıdır. Makaleyi [menüler ve kaynaklar: menü birleştirme](../mfc/menus-and-resources-menu-merging.md) bu konuda ayrıntılı ele alınmıştır.
+
+Bu sorunları nedeniyle uygulama Sihirbazı ile oluşturulan OLE belge uygulamaları en fazla dört ayrı menülerini ve Hızlandırıcı tablo kaynaklarını olabilir. Bunlar, aşağıdaki nedenlerden dolayı kullanılır:
+
+|Kaynak adı|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
+|-------------------|---------|
+|IDR_MAINFRAME|Hiçbir dosya açık değilse bir MDI uygulamasında veya bir SDI uygulamasında açık dosyalar bağımsız olarak kullanılır. OLE dışı uygulamalarda kullanılan standart menü budur.|
+|IDR_\<Proje > türü|Bir MDI uygulamasında açık dosya varsa kullanılır. Bir uygulama bağımsız olarak çalışırken kullanılır. OLE dışı uygulamalarda kullanılan standart menü budur.|
+|IDR_\<Proje > TYPE_SRVR_IP|Bir nesne yerinde açık olduğunda sunucu ya da kapsayıcı tarafından kullanılır.|
+|IDR_\<Proje > TYPE_SRVR_EMB|Yerinde etkinleştirme kullanmadan bir nesne açıldığında bir sunucu uygulaması tarafından kullanılır.|
+
+Bu kaynak adlarının her biri bir menü ve genellikle Hızlandırıcı tablosunu temsil eder. Benzer bir düzen Uygulama Sihirbazı'nı oluşturulmaz MFC uygulamalarında kullanılması gerekir.
+
+Aşağıdaki makaleler, kapsayıcılar, sunucuları ve menü yerinde etkinleştirme uygulamak için gerekli birleştirme ile ilgili konular açıklanmaktadır:
+
+- [Menüler ve Kaynaklar: Kapsayıcı Ekleme](../mfc/menus-and-resources-container-additions.md)
+
+- [Menüler ve Kaynaklar: Sunucu Ekleme](../mfc/menus-and-resources-server-additions.md)
+
+- [Menüler ve Kaynaklar: Menü Birleştirme](../mfc/menus-and-resources-menu-merging.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[OLE](../mfc/ole-in-mfc.md)
 

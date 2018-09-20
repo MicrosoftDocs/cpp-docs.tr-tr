@@ -17,40 +17,43 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98ef4509e7e7570d8c07013f0287fe01105e154a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 97bbdb74d122e633574dcf76876f0907de8ef2c4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348146"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400591"
 ---
 # <a name="odbc-classes"></a>ODBC Sınıfları
-Bu sınıfları, çok çeşitli açık veritabanı bağlantısı (ODBC) sürücüler kullanılabilir veritabanları için kolay erişim sağlamak için diğer uygulama framework sınıfları birlikte çalışın.  
-  
- ODBC veritabanları kullanan programlar olacaktır en az bir `CDatabase` nesne ve `CRecordset` nesne.  
-  
- [CDatabase](../mfc/reference/cdatabase-class.md)  
- Bir bağlantı veri kaynağı üzerinde çalışabilir, bir veri kaynağına yalıtır.  
-  
- [CRecordset](../mfc/reference/crecordset-class.md)  
- Bir veri kaynağından seçilen kayıt kümesini yalıtır. Seçimi sıralama kayıt kümeleri kaydı başka bir kayıt kaydırma, (ekleme, düzenleme ve kayıt silme) kayıtları güncelleştirme, bir filtre ile seçimi niteleme etkinleştirin ve alınan bilgilerle seçim kümesini parametreleştirme veya çalışma zamanında hesaplanan.  
-  
- [CRecordView](../mfc/reference/crecordview-class.md)  
- Bir form sağlar doğrudan bağlı bir kayıt kümesi nesnesi görünümü. İletişim verisi (DDX) mekanizması kayıt kümesi ve kayıt görünümü denetimleri arasında veri değişimi. Tüm form görünümleri gibi bir kayıt görünümü bir iletişim şablon kaynağını temel alır. Kayıt görünümleri de kayıt kaydı kayıt kümesinde taşıma kayıtları güncelleştirme ve kayıt görünümü kapandığında ilişkili kayıt kümesi kapatma destekler.  
-  
- [CDBException](../mfc/reference/cdbexception-class.md)  
- Veri erişim hatalarına işlem kaynaklanan bir özel durum. Bu sınıf, sınıf kitaplığı özel durum işleme mekanizması içinde diğer özel durum sınıfları aynı amaca hizmet eder.  
-  
- [CFieldExchange](../mfc/reference/cfieldexchange-class.md)  
- Hangi alan veri üyeleri ve parametre veri üyeleri bir kayıt kümesi nesnesi ve veri kaynağı üzerinde karşılık gelen tablo sütunları arasında veri alış verişleri kayıt alanı değişimi (RFX) desteklemek için bağlam bilgisi sağlar. Sınıfı için benzer [CDataExchange](../mfc/reference/cdataexchange-class.md), kullanılan benzer şekilde iletişim kutusu veri değişimi (DDX).  
-  
-## <a name="related-classes"></a>İlgili sınıflar  
- [CLongBinary](../mfc/reference/clongbinary-class.md)  
- İkili büyük nesne (BLOB) için depolama alanı için bir tanıtıcı bir bit eşlem gibi yalıtır. `CLongBinary` nesneleri veritabanı tablolarında depolanan büyük veri nesneleri yönetmek için kullanılır.  
-  
- [CDBVariant](../mfc/reference/cdbvariant-class.md)  
- Bir değer değerinin veri türü hakkında endişelenmeden depolamanıza olanak sağlar. `CDBVariant` veri türü bir birleşim içinde depolanan geçerli değeri izler.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Bu sınıflar, çok çeşitli veritabanları açık veritabanı bağlantısı (ODBC) sürücüleri kullanılabilir kolay erişim vermek için diğer uygulama framework sınıfları ile çalışır.
+
+ODBC veritabanı kullanan programlar olacaktır en az bir `CDatabase` nesnesi ve bir `CRecordset` nesne.
+
+[CDatabase](../mfc/reference/cdatabase-class.md)<br/>
+Veri kaynağı üzerinde çalışabileceğiniz bir veri kaynağına bağlantı kapsüller.
+
+[CRecordset](../mfc/reference/crecordset-class.md)<br/>
+Bir veri kaynağından seçilen kayıt kümesini yalıtır. Seçimi sıralama kayıt kümeleri kaydı başka bir kayıt kaydırma (ekleme, düzenleme ve silme kayıtlarını) kayıtlarınızı güncelleştirirken, seçime uygun bir filtre ile etkinleştirin ve elde edilen bilgilerle seçimi kümesini parametreleştirme veya çalışma zamanında hesaplanan.
+
+[CRecordView](../mfc/reference/crecordview-class.md)<br/>
+Bir form sağlar doğrudan bağlı bir kayıt kümesi nesnesi için görünümü. İletişim kutusu veri değişimi (DDX) mekanizmasını kayıt ve kayıt görünümü denetimler arasında veri yapar. Tüm form görünümleri gibi bir iletişim şablon kaynağında bir kayıt görünümü temel alır. Kayıt görünümleri kaydı başka bir kayıt kümenize taşıma, kayıtları güncelleştirmek ve kayıt görünümü kapandığında ilişkili kayıt kapatma de destekler.
+
+[CDBException](../mfc/reference/cdbexception-class.md)<br/>
+Veri erişimi hataları işleme kaynaklanan bir özel durum. Bu sınıf, sınıf kitaplığı yer alan özel durum işleme mekanizması diğer özel durum sınıfları aynı amaca hizmet eder.
+
+[CFieldExchange](../mfc/reference/cfieldexchange-class.md)<br/>
+Hangi veri alan veri üyeleri ve ilgili tablo sütunları veri kaynağında bir kayıt kümesi nesnesi ve parametre veri üyeleri arasında kayıt alanı değişimi (RFX) desteklemek için bağlam bilgilerini sağlar. Sınıfına benzer [CDataExchange](../mfc/reference/cdataexchange-class.md), kullanılan benzer şekilde için iletişim kutusu veri değişimi (DDX).
+
+## <a name="related-classes"></a>İlgili sınıflar
+
+[CLongBinary](../mfc/reference/clongbinary-class.md)<br/>
+İkili büyük nesne (BLOB) depolama birimi için bir tanıtıcı gibi bir bit eşlemi kapsüller. `CLongBinary` nesneler, veritabanı tablolarında depolanan büyük veri nesnelerini yönetmek için kullanılır.
+
+[CDBVariant](../mfc/reference/cdbvariant-class.md)<br/>
+bir değeri, değerin veri türü hakkında endişelenmeden depolamanıza olanak tanır. `CDBVariant` veri türü bir birleşim içinde depolanan geçerli değer izler.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

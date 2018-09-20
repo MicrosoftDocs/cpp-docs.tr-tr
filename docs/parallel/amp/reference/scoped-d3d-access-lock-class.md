@@ -16,105 +16,107 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cbddd9181f48477de285e65b966aea354a55fa74
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1bfa8867f405b5a3fa67046a1341d5b4848b8a72
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46059606"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423096"
 ---
 # <a name="scopedd3daccesslock-class"></a>scoped_d3d_access_lock Sınıfı
-Hızlandırıcı görünümü nesnesindeki D3D erişim kilidi için RAII sarmalayıcı.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```  
-class scoped_d3d_access_lock;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[scoped_d3d_access_lock Constructor](#ctor)|Fazla Yüklendi. Oluşturur bir `scoped_d3d_access_lock` nesne. Bu nesne kapsam dışına çıktığında kilidi serbest bırakılır.|  
-|[~ scoped_d3d_access_lock yok Edicisi](#dtor)|İlişkili D3D erişim kilidi serbest `accelerator_view` nesne.|  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[operator=](#operator_eq)|Başka bir kilidi sahipliğini `scoped_d3d_access_lock`.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `scoped_d3d_access_lock`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** amprt.h  
-  
- **Namespace:** concurrency::direct3d  
 
-##  <a name="ctor"></a> scoped_d3d_access_lock 
+Hızlandırıcı görünümü nesnesindeki D3D erişim kilidi için RAII sarmalayıcı.
 
- Oluşturur bir `scoped_d3d_access_lock` nesne. Bu nesne kapsam dışına çıktığında kilidi serbest bırakılır.  
- 
-```  
-explicit scoped_d3d_access_lock(// [1] constructor  
+### <a name="syntax"></a>Sözdizimi
+
+```
+class scoped_d3d_access_lock;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[scoped_d3d_access_lock Constructor](#ctor)|Fazla Yüklendi. Oluşturur bir `scoped_d3d_access_lock` nesne. Bu nesne kapsam dışına çıktığında kilidi serbest bırakılır.|
+|[~ scoped_d3d_access_lock yok Edicisi](#dtor)|İlişkili D3D erişim kilidi serbest `accelerator_view` nesne.|
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[operator=](#operator_eq)|Başka bir kilidi sahipliğini `scoped_d3d_access_lock`.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`scoped_d3d_access_lock`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** amprt.h
+
+**Namespace:** concurrency::direct3d
+
+##  <a name="ctor"></a> scoped_d3d_access_lock
+
+Oluşturur bir `scoped_d3d_access_lock` nesne. Bu nesne kapsam dışına çıktığında kilidi serbest bırakılır.
+
+```
+explicit scoped_d3d_access_lock(// [1] constructor
     accelerator_view& _Av);
 
- 
-explicit scoped_d3d_access_lock(// [2] constructor  
-    accelerator_view& _Av,  
+explicit scoped_d3d_access_lock(// [2] constructor
+    accelerator_view& _Av,
     adopt_d3d_access_lock_t _T);
 
- 
-scoped_d3d_access_lock(// [3] move constructor  
+scoped_d3d_access_lock(// [3] move constructor
     scoped_d3d_access_lock&& _Other);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *_Av*<br/>
-`accelerator_view` Benimsenecek kilit için.  
-  
+`accelerator_view` Benimsenecek kilit için.
+
 *_T*<br/>
-`adopt_d3d_access_lock_t` Nesne.  
-  
+`adopt_d3d_access_lock_t` Nesne.
+
 *_Diğer*<br/>
-`scoped_d3d_access_lock` Varolan bir kilidin kaldırılacağı nesne.  
-  
-## <a name="construction"></a>Oluşturma  
- [1] Oluşturucusu  
- Bir D3D erişim kilidini alır verilen [accelerator_view](accelerator-view-class.md) nesne. Kilit alınıncaya kadar oluşturma blokedir.  
-  
- [2] Oluşturucusu  
- Bir D3D erişim kilidi edinin verilen [accelerator_view](accelerator-view-class.md) nesne.  
-  
- [3] taşıma Oluşturucu  
- Varolan D3D erişim kilidini başka bir alan `scoped_d3d_access_lock` nesne. Oluşturma bloke değildir.  
+`scoped_d3d_access_lock` Varolan bir kilidin kaldırılacağı nesne.
 
-  
-##  <a name="dtor"></a> ~scoped_d3d_access_lock 
+## <a name="construction"></a>Oluşturma
 
- İlişkili D3D erişim kilidi serbest `accelerator_view` nesne.  
-  
-```  
+[1] oluşturucu üzerinde D3D erişim kilidi edinme verilen [accelerator_view](accelerator-view-class.md) nesne. Kilit alınıncaya kadar oluşturma blokedir.
+
+[2] Oluşturucusu bir D3D erişim kilidi benimseyin verilen [accelerator_view](accelerator-view-class.md) nesne.
+
+[3] taşıma Oluşturucu, varolan bir D3D erişim kilidini başka bir alan `scoped_d3d_access_lock` nesne. Oluşturma bloke değildir.
+
+##  <a name="dtor"></a> ~scoped_d3d_access_lock
+
+İlişkili D3D erişim kilidi serbest `accelerator_view` nesne.
+
+```
 ~scoped_d3d_access_lock();
-```  
-## <a name="operator_eq"></a> işleç = 
+```
+## <a name="operator_eq"></a> işleç =
 
-Başka bir D3D erişim kilidi sahipliğini `scoped_d3d_access_lock` nesnesi ve önceki kilidi açar.  
- 
-```  
+Başka bir D3D erişim kilidi sahipliğini `scoped_d3d_access_lock` nesnesi ve önceki kilidi açar.
+
+```
 scoped_d3d_access_lock& operator= (scoped_d3d_access_lock&& _Other);
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*_Diğer*<br/>
-D3D erişim kilidinin taşınacağı, accelerator_view.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Bu başvuru `scoped_accelerator_view_lock`.  
+```
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Concurrency::direct3d Ad Alanı](concurrency-direct3d-namespace.md)
+### <a name="parameters"></a>Parametreler
+
+*_Diğer*<br/>
+D3D erişim kilidinin taşınacağı, accelerator_view.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Bu başvuru `scoped_accelerator_view_lock`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Concurrency::direct3d Ad Alanı](concurrency-direct3d-namespace.md)

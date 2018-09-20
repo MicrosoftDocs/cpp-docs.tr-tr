@@ -10,23 +10,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a064527f6afcbf91be3fb4e51180be647c1f506
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 7a00eed341e0fc1ca8573e2f66744ea04055f259
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33339819"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46399218"
 ---
 # <a name="rename"></a>Rename
-**Ne:** alanları, yerel değişkenleri, yöntemleri, ad alanları, özellikleri ve türleri gibi kodu sembolleri tanımlayıcıları yeniden adlandır olanak sağlar.
+**Ne:** alanlar, yerel değişkenler, yöntemleri, ad alanları, özellikler ve türler gibi kod simgeleri tanımlayıcıları yeniden adlandırın olanak tanır.
 
-**Ne zaman:** güvenli bir şekilde bir şey tüm örneklerini bulun ve yeni bir ad kopyala/yapıştır zorunda kalmadan yeniden adlandırmak istediğiniz.  
+**Ne zaman:** güvenli bir şekilde bir şey tüm örneklerini bulun ve yeni adı kopyala/yapıştır gerekmeden yeniden adlandırmak istiyor.
 
-**Neden:** Kopyala ve yeni bir ad arasında projenin tamamında yapıştırma misiniz olasılıkla neden hatalar.  Bu yeniden düzenleme aracı doğru bir şekilde yeniden adlandırma eylemi gerçekleştirir.
+**Neden:** kopyalayıp yeni bir ad, bir projenin tamamı yapıştırarak musunuz büyük olasılıkla hatalara neden.  Bu yeniden düzenleme aracı doğru yeniden adlandırma eylemi gerçekleştirir.
 
 **Nasıl:**
 
-1. Vurgula veya metin imleci yeniden adlandırılacak öğesi içinde:
+1. Vurgulama veya yeniden adlandırılacak öğe metin imleci yerleştirin:
 
    ![Vurgulanmış kodu](images/rename_highlight.png)
 
@@ -34,18 +34,18 @@ ms.locfileid: "33339819"
    * **Klavye**
      * Tuşuna **Ctrl + R**, ardından **Ctrl + R**.  (Bağlı olarak hangi profilinde seçtiğiniz klavye kısayolu farklı olabileceğini unutmayın.)
    * **Fare**
-     * Seçin **Düzenle > yeniden düzenlemeniz > yeniden adlandırma**.
-     * Kod sağ tıklatıp **yeniden adlandırma**.
+     * Seçin **Düzenle > yeniden düzenleyin > Yeniden Adlandır**.
+     * Kod sağ tıklayıp **Yeniden Adlandır**.
 
-1. İçinde **yeniden adlandırma** , açılır penceresi tıklatın ve seçili öğe için yeni bir ad girin **Önizleme** düğmesi.  Değişiklik **arama kapsamı** genişletebilir veya yeniden adlandırma kapsamını daraltmak gerekiyorsa.
+1. İçinde **Yeniden Adlandır** , açılır penceresini tıklatın ve seçili öğe için yeni bir ad girin **Önizleme** düğmesi.  Değişiklik **arama kapsamı** yeniden adlandırma kapsamını daraltmak veya genişletmek istiyorsanız.
 
-   ![iletişim yeniden adlandırma](images/rename_dialog.png)
+   ![yeniden adlandırma iletişim kutusu](images/rename_dialog.png)
 
    > [!TIP]
-   > Denetleyerek Önizleme atlayabilirsiniz **başvuruları tüm onaylanır Atla Önizleme değişirse** seçeneği.
+   > Önizleme denetleyerek atlayabilirsiniz **Atla Önizleme değişiklikleri başvurular tüm onaylanırsa** seçeneği.
 
-1. Zaman **Değişiklikleri Önizle - yeniden adlandırma** penceresi görüntülenir, emin isteyen değişiklikleri yapılan uygun şekilde.  Etkinleştirmek veya devre dışı herhangi bir öğeyi yeniden adlandırmak için pencerenin üst yarısında onay kutularını kullanın.
+1. Zaman **Değişiklikleri Önizle - Yeniden Adlandır** penceresi görüntülenirse, sağlamak istediğiniz değişiklikleri uygun şekilde yapılmıştır.  Onay kutularını penceresinin üst yarısında etkinleştirmek veya devre dışı herhangi bir öğesinin yeniden adlandırılması için kullanın.
 
-   ![Önizleme yeniden adlandırma](images/rename_preview.png)
+   ![Önizleme yeniden adlandır](images/rename_preview.png)
 
-1. Her şey iyi göründüğünde tıklatın **Uygula** düğmesi ve öğesi, kaynak kodunuzda adlandırılacak.
+1. Her şey iyi görünüyor, tıklayın **Uygula** düğmesi ve öğenin kaynak kodunuzu yeniden adlandırılacak.

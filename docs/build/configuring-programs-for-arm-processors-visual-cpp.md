@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ce0e7e1f7c0936daed0fa6a51f6e254403205e0
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: fbdf882367deb34570dd5b5ebb1b4001be739297
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714967"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46373863"
 ---
 # <a name="configure-visual-c-for-arm-processors"></a>Visual C++ ARM işlemcileri için yapılandırma
 
@@ -25,16 +25,22 @@ Belgelerinin bu bölümü, ARM donanım hedeflemek için Visual C++ derleme ara�
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[ARM ABI kurallarına genel bakış](../build/overview-of-arm-abi-conventions.md) çağırma kuralları ve özel durum işleme yazmaç kullanımı için ARM üzerinde Windows tarafından kullanılan uygulama ikili arabirimi açıklar.
+[ARM ABI Kurallarına Genel Bakış](../build/overview-of-arm-abi-conventions.md)<br/>
+ARM üzerinde Windows tarafından çağırma kuralları ve özel durum işleme yazmaç kullanımı için kullanılan uygulama ikili arabirimi açıklar.
 
-[ARM64 ABI kurallarına genel bakış](../build/arm64-windows-abi-conventions.md) ARM64 üzerinde Windows tarafından kayıt kullanımı çağırma kuralları ve özel durum işleme için kullanılan uygulama ikili arabirimi açıklar.
+[ARM64 ABI Kurallarına Genel Bakış](../build/arm64-windows-abi-conventions.md)<br/>
+ARM64 üzerinde Windows tarafından kayıt kullanımı çağırma kuralları ve özel durum işleme için kullanılan uygulama ikili arabirimi açıklar.
 
-[Genel Visual C++ ARM geçiş sorunları](../build/common-visual-cpp-arm-migration-issues.md) , yaygın olarak kabul mimariler arasında taşınabilir, ancak hangi sonuçlar farklı x86 ve x64 ARM için kod öğeleri C++ açıklar.
+[Genel Visual C++ ARM Geçiş Sorunları](../build/common-visual-cpp-arm-migration-issues.md)<br/>
+Genellikle mimariler arasında taşınabilir olarak kabul edilir, ancak hangi x86 ve x64 ARM için farklı sonuçlar üreten C++ kod öğelerini açıklar.
 
-[ARM özel durum işleme](../build/arm-exception-handling.md) yığını geriye doğru izleme sırasında Windows ARM üzerinde işleme, yapılandırılmış özel durum için kodlama düzenini açıklar.
+[ARM Özel Durum İşleme](../build/arm-exception-handling.md)<br/>
+Yığını geriye doğru izleme sırasında Windows ARM üzerinde işleme, yapılandırılmış özel durum için kodlama düzenini açıklar.
 
-[ARM64 özel durum işleme](../build/arm64-exception-handling.md) yığını geriye doğru izleme sırasında Windows ARM64 üzerinde işleme, yapılandırılmış özel durum için kodlama düzenini açıklar.
+[ARM64 Özel Durum İşleme](../build/arm64-exception-handling.md)<br/>
+Yığını geriye doğru izleme sırasında Windows ARM64 üzerinde yapılandırılmış özel durum işlemesi için kodlama düzenini açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[ARM iç bilgileri](../intrinsics/arm-intrinsics.md) ARM mimarisini kullanan işlemciler için iç derleyicileri açıklar.
+[ARM İç Bilgileri](../intrinsics/arm-intrinsics.md)<br/>
+ARM mimarisini kullanan işlemciler için iç derleyicileri açıklar.

@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 81f5136ab18143f91a94525f6797e7711abc426a
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 0ed41f7025b3564ab05fe13e77d3e9400cd0f385
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318115"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420237"
 ---
 # <a name="how-to-include-resources-at-compile-time"></a>Nasıl Yapılır: Derleme Sırasında Kaynak Ekleme
 
@@ -63,5 +63,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kaynak dosyaları](../windows/resource-files-visual-studio.md)  
+[Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)

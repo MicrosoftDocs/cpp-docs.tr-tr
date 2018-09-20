@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3cecffa8505aaead738007e2a0872c3f1bc5a6d6
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c1d7c3741af7f5a0ea3a66d491f4aecc2afc8cb9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593654"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392196"
 ---
 # <a name="createclassfactory-function"></a>CreateClassFactory İşlevi
 
@@ -42,16 +42,16 @@ inline HRESULT STDMETHODCALLTYPE CreateClassFactory(
 
 ### <a name="parameters"></a>Parametreler
 
-*bayrakları*  
+*bayrakları*<br/>
 Bir veya daha fazla birleşimi [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) sabit listesi değerleri.
 
-*entry*  
+*entry*<br/>
 İşaretçi bir [CreatorMap](../windows/creatormap-structure.md) parametresi başlatma ve kayıt bilgilerini içeren *riid*.
 
-*riid*  
+*riid*<br/>
 Başvuru için bir arabirim kimliği.
 
-*ppFactory*  
+*ppFactory*<br/>
 Bu işlem bir sınıf üreteci için bir işaretçi başarıyla tamamlanırsa.
 
 ## <a name="return-value"></a>Dönüş Değeri

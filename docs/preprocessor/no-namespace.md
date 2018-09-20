@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6eded6b4d543248cc7bf53a0e4ba622b2b74c8b3
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: a02919e1e96717c1accc6343ecff32a66968cbcc
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42464861"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378831"
 ---
 # <a name="nonamespace"></a>no_namespace
 **C++ özgü**  
@@ -44,5 +44,5 @@ Farklı bir ad kullanmak istiyorsanız, ardından kullanmak [rename_namespace](.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

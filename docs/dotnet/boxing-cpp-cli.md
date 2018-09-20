@@ -13,22 +13,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 3b9898b4a640d2f3aa4e38ceb621521ffb301fed
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4c513b0148e2553440e02f9b0d255a0d5750e2d1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33105897"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46372518"
 ---
 # <a name="boxing-ccli"></a>Kutulama (C++/CLI)
-Kutulama olan bir değer türü türe dönüştürme işlemi `object` veya değer türü tarafından uygulanan herhangi bir arabirim türü. Ortak dil çalışma zamanı (CLR) bir değer türü kutular, değeri sarar bir `System.Object` ve yönetilen yığında depolar. Kutudan çıkarma değer türü nesneden ayıklar. Örtük kutulama; kutudan çıkarma açık değil.  
-  
-## <a name="related-articles"></a>İlgili Makaleler  
-  
-|Başlık|Açıklama|  
-|-----------|-----------------|  
-|[Nasıl yapılır: Açık Şekilde İstek Paketleme](../dotnet/how-to-explicitly-request-boxing.md)|Açık şekilde istek paketleme bir değişken açıklar.|  
-|[Nasıl yapılır: Değer Türleri Oluşturmak için gcnew Kullanma ve Örtük Kutulamayı Kullanma](../dotnet/how-to-use-gcnew-to-create-value-types-and-use-implicit-boxing.md)|Nasıl kullanılacağını gösterir `gcnew` yönetilen, atık toplanan yığında yerleştirilebilecek bir paketlenmiş değer türü oluşturun.|  
-|[Nasıl yapılır: Açma](../dotnet/how-to-unbox.md)|Unbox ve değeri değiştirmek gösterilmiştir.|  
-|[Standart Dönüştürmeler ve Örtük Kutulama](../dotnet/standard-conversions-and-implicit-boxing.md)|Standart dönüştürme kutulama gerektiren dönüştürme derleyici tarafından seçilen gösterir.|  
-|[C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)|Visual C++ belgelerinde .NET programlama için üst düzey makalesi.|
+
+Kutulama olan bir değer türü türüne dönüştürme işlemi `object` veya değer türü tarafından uygulanan herhangi bir arabirim türüne. Ortak dil çalışma zamanı (CLR) bir değer türünü kutu, değeri sarar. bir `System.Object` ve Yönetilen öbekte depolar. Kutudan çıkarma, değer türünü nesneden çıkarır. Örtük kutulama; kutudan çıkarma açıktır.
+
+## <a name="related-articles"></a>İlgili Makaleler
+
+|Başlık|Açıklama|
+|-----------|-----------------|
+|[Nasıl yapılır: Açık Şekilde İstek Paketleme](../dotnet/how-to-explicitly-request-boxing.md)|Açık şekilde istek paketleme bir değişken üzerinde açıklar.|
+|[Nasıl yapılır: Değer Türleri Oluşturmak için gcnew Kullanma ve Örtük Kutulamayı Kullanma](../dotnet/how-to-use-gcnew-to-create-value-types-and-use-implicit-boxing.md)|Nasıl kullanılacağını gösterir `gcnew` yönetilen, atık olarak toplanmış yığındaki yerleştirilebilir bir kutulanmış değer türü oluşturmak için.|
+|[Nasıl yapılır: Açma](../dotnet/how-to-unbox.md)|Açma ve bir değer değiştirme işlemi gösterilmektedir.|
+|[Standart Dönüştürmeler ve Örtük Kutulama](../dotnet/standard-conversions-and-implicit-boxing.md)|Standart bir dönüşüm kutulama gerektiren bir dönüştürme derleyici tarafından seçmiş gösterir.|
+|[C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)|Visual C++ belgelerinin .NET programlama için üst düzey makale.|

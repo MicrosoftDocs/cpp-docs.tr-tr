@@ -18,22 +18,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9eab52d09e9910cb4cce92d487c26fdb90d5647
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6f9169f0548bb58ffa063f3b3e947f16e877758e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33380584"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439997"
 ---
 # <a name="tool-tips"></a>Araç İpuçları
-MFC sınıfından türetilen Windows'da bulunan denetimler için araç ipuçları ekleme için yordamlar ayrı [CFrameWnd](../mfc/reference/cframewnd-class.md) ve windows olmayan türetilen `CFrameWnd`.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
- Bir pencereyi denetimler için araç ipuçları:  
-  
--   [Araç çubuğu araç ipuçları (cframewnd'den)](../mfc/toolbar-tool-tips.md)  
-  
--   [Cframewnd'den türetilmemiş Windows araç ipuçları](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)
+
+MFC sınıfından türetilen Windows'ta bulunan denetimler için araç ipuçları ekleme için yordamlar ayrı [CFrameWnd](../mfc/reference/cframewnd-class.md) ve windows olmayan türetilmiş `CFrameWnd`.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+Bir pencereyi denetimler için araç ipuçları:
+
+- [Araç çubuğu araç ipuçları (cframewnd'den)](../mfc/toolbar-tool-tips.md)
+
+- [Cframewnd'den türetilmemiş Windows ipuçlarında](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)

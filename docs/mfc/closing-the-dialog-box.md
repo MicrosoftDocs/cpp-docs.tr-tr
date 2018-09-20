@@ -15,18 +15,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c800c204fd09057585064397d459f92c9ded272d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e9ad4b8af63b68912c232767bf1fd14070fda261
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341751"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46409057"
 ---
 # <a name="closing-the-dialog-box"></a>İletişim Kutusunu Kapatma
-Kullanıcı düğmeleri, genellikle Tamam düğmesine veya iptal düğmesi seçtiğinde modal bir iletişim kutusu kapanır. Neden olan Windows iletişim nesnesi göndermek Tamam'ı veya İptal düğmesini seçerek bir **BN_CLICKED** düğme denetim bildirimi iletisiyle kullanıcının kimliği, ya da **IDOK** veya **IDCANCEL**. `CDialog` Varsayılan bu iletiler için işleyici işlevleri sağlar: `OnOK` ve `OnCancel`. Varsayılan işleyicileri çağrısı `EndDialog` üye işlevi iletişim penceresini kapatın. Ayrıca, çağırabilirsiniz `EndDialog` kendi kodundan. Daha fazla bilgi için bkz: [EndDialog](../mfc/reference/cdialog-class.md#enddialog) sınıfının üye işlevini `CDialog` içinde *MFC başvurusu*.  
-  
- Kapatma ve kalıcı olmayan iletişim kutusu silmek için düzenlemek için geçersiz kılma `PostNcDestroy` ve çağırma **silmek** işlecinin **bu** işaretçi. [İletişim kutusunu yok etme](../mfc/destroying-the-dialog-box.md) ne olacağını açıklar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+
+Kullanıcı düğmeleri, genellikle Tamam düğmesine veya İptal düğmesini seçtiğinde, kalıcı bir iletişim kutusu kapanır. Neden olan iletişim nesnesi göndermek Windows Tamam'ı veya İptal düğmesini seçerek bir **BN_CLICKED** düğmesi denetimi bildirim iletisi kimliği ya da kullanıcının **IDOK** veya **IDCANCEL**. `CDialog` Varsayılan için bu ileti işleyici işlevleri sağlar: `OnOK` ve `OnCancel`. Varsayılan işleyicileri çağrı `EndDialog` iletişim penceresini kapatmak için üye işlevi. Ayrıca, çağırabilirsiniz `EndDialog` kendi kod. Daha fazla bilgi için [EndDialog](../mfc/reference/cdialog-class.md#enddialog) sınıfının üye işlevinde `CDialog` içinde *MFC başvurusu*.
+
+Kapatma ve modsuz iletişim kutusu silme için düzenlemek için geçersiz kılma `PostNcDestroy` ve çağırma **Sil** işlecinin **bu** işaretçi. [İletişim kutusunu yok etme](../mfc/destroying-the-dialog-box.md) ne olacağını açıklar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
 

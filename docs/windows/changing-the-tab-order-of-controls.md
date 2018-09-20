@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 330fe056a4b06e006d69e630cc933b4402eeb0c0
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 822e0c5ac0232ac30e4db63b3605fda0126959de
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316607"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46434602"
 ---
 # <a name="changing-the-tab-order-of-controls"></a>Denetimlerin Sekme Sırasını Değiştirme
 
@@ -84,6 +84,6 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İletişim Kutularındaki Denetimlerin Düzenlenmesi](../windows/arrangement-of-controls-on-dialog-boxes.md)  
-[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)  
+[İletişim Kutularındaki Denetimlerin Düzenlenmesi](../windows/arrangement-of-controls-on-dialog-boxes.md)<br/>
+[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)

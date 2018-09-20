@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 715ed5bf12c424c49e96012c5391dfe334e44db4
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3e2975e200a65ccaf57dab3170bb1854ccb4e53b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45705893"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387463"
 ---
 # <a name="custom-color-selector-dialog-box-c-image-editor-for-icons"></a>Özel Renk Seçici iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++)
 
@@ -71,6 +71,6 @@ Yok.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Görüntü menüsü](../windows/image-menu-image-editor-for-icons.md)  
-[Renkleri özelleştirme veya değiştirme](../windows/customizing-or-changing-colors-image-editor-for-icons.md)  
+[Görüntü menüsü](../windows/image-menu-image-editor-for-icons.md)<br/>
+[Renkleri özelleştirme veya değiştirme](../windows/customizing-or-changing-colors-image-editor-for-icons.md)<br/>
 [Renkler penceresi](../windows/colors-window-image-editor-for-icons.md)

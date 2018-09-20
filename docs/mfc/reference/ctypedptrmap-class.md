@@ -24,188 +24,211 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f312d7e829657f2cc9c7c41c65afad8d8f8b343
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 85f44473237a17a83aae2377e63a4e35d43483b9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37121870"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46433798"
 ---
 # <a name="ctypedptrmap-class"></a>CTypedPtrMap sınıfı
-Tür kullanımı uyumlu işaretçi eşleme sınıfların nesneler için "sarmalayıcı" sağlar `CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, ve `CMapStringToPtr`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-template<class BASE_CLASS, class KEY, class VALUE>  
-class CTypedPtrMap : public BASE_CLASS  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *BASE_CLASS*  
- Yazılan işaretçi harita sınıfın temel sınıf; bir işaretçi eşleme sınıf olmalıdır ( `CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, veya `CMapStringToPtr`).  
-  
- *KEY*  
- Eşleme için anahtar olarak kullanılan nesne sınıfı.  
-  
- *DEĞER*  
- Eşlemesinde depolanan nesne sınıfı.  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CTypedPtrMap::GetNextAssoc](#getnextassoc)|Yineleme için sonraki öğeyi alır.|  
-|[CTypedPtrMap::Lookup](#lookup)|Döndürür bir `KEY` dayalı bir `VALUE`.|  
-|[CTypedPtrMap::RemoveKey](#removekey)|Bir anahtar tarafından belirtilen bir öğeyi kaldırır.|  
-|[CTypedPtrMap::SetAt](#setat)|Bir öğenin eşlemeye ekler; eşleşen bir anahtarı bulunursa, var olan öğenin yerini alır.|  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CTypedPtrMap::operator]](#operator_at)|Bir öğenin eşlemeye ekler.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Kullandığınızda `CTypedPtrMap`, C++ tür denetleme olanağı eşleşmeyen işaretçi türlerine göre neden olduğu hata ortadan kaldırmanıza yardımcı olur.  
-  
- Çünkü tüm `CTypedPtrMap` işlevler satır içi, bu şablonu kullanımını boyutunu veya kodunuzu hızına önemli ölçüde etkilemez.  
-  
- Kullanma hakkında daha fazla bilgi için `CTypedPtrMap`, makalelerine bakın [koleksiyonları](../../mfc/collections.md) ve [şablona dayalı sınıflar](../../mfc/template-based-classes.md).  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `BASE_CLASS`  
-  
- `CTypedPtrMap`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxtempl.h  
-  
-##  <a name="getnextassoc"></a>  CTypedPtrMap::GetNextAssoc  
- Harita öğesi alır `rNextPosition`, ardından güncelleştirmeleri `rNextPosition` harita sonraki öğe başvurmak için.  
-  
-```  
+
+Bir tür açısından güvenli, işaretçi eşleme sınıflarındaki nesneler için "sarmalayıcı" sağlar `CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, ve `CMapStringToPtr`.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+template<class BASE_CLASS, class KEY, class VALUE>
+class CTypedPtrMap : public BASE_CLASS
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*$BASE_CLASS*<br/>
+Türü belirtilmiş işaretçi eşleme sınıfının temel sınıfı; bir işaretçi eşlem sınıfı olmalıdır ( `CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, veya `CMapStringToPtr`).
+
+*KEY*<br/>
+Harita anahtarı olarak kullanılan nesne sınıfı.
+
+*DEĞER*<br/>
+Eşlem içinde depolan bir nesne sınıfı.
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CTypedPtrMap::GetNextAssoc](#getnextassoc)|Yineleme için sonraki öğeyi alır.|
+|[CTypedPtrMap::Lookup](#lookup)|Döndürür bir `KEY` dayalı bir `VALUE`.|
+|[CTypedPtrMap::RemoveKey](#removekey)|Bir anahtar tarafından belirtilen bir öğeyi kaldırır.|
+|[CTypedPtrMap::SetAt](#setat)|Haritayı bir öğe ekler; eşleşen bir anahtar bulunursa, var olan öğenin yerini alır.|
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CTypedPtrMap::operator]](#operator_at)|Haritayı bir öğe ekler.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Kullanırken `CTypedPtrMap`, C++ tür denetimi olanağı eşleşmeyen işaretçi türleri tarafından neden olduğu hata ortadan yardımcı olur.
+
+Çünkü tüm `CTypedPtrMap` satır içi işlevlerdir, bu şablonun kullanımını boyut veya hız kodunuzun önemli ölçüde etkilemez.
+
+Kullanma hakkında daha fazla bilgi için `CTypedPtrMap`, makalelere göz atın [koleksiyonları](../../mfc/collections.md) ve [şablona dayalı sınıflar](../../mfc/template-based-classes.md).
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`BASE_CLASS`
+
+`CTypedPtrMap`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxtempl.h
+
+##  <a name="getnextassoc"></a>  CTypedPtrMap::GetNextAssoc
+
+Harita öğe alır `rNextPosition`, ardından güncelleştirmeleri `rNextPosition` haritadaki sonraki öğeye başvurmak için.
+
+```
 void GetNextAssoc(
     POSITION& rPosition,
     KEY& rKey,
-    VALUE& rValue) const;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *rPosition*  
- Önceki tarafından döndürülen bir konum değeri başvuru belirtir `GetNextAssoc` veya `BASE_CLASS` **:: GetStartPosition** çağırın.  
-  
- *KEY*  
- Haritanın anahtarları türünü belirten bir şablon parametre.  
-  
- *rKey*  
- Alınan öğenin döndürülen anahtarı belirtir.  
-  
- *DEĞER*  
- Haritanın değerlerin türünü belirten bir şablon parametre.  
-  
- *rValue*  
- Alınan öğenin döndürülen değerini belirtir.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bu işlev eşlemesi tüm öğeler üzerinden yineleme için kullanışlıdır. Konum sırası mutlaka anahtar değeri dizisi ile aynı olduğunu unutmayın.  
-  
- Alınan öğe Haritası son sonra yeni değeri ise `rNextPosition` NULL olarak ayarlandı.  
-  
- Bu satır içi işlev çağrılarını `BASE_CLASS` **:: GetNextAssoc**.  
-  
-##  <a name="lookup"></a>  CTypedPtrMap::Lookup  
- `Lookup` map öğesi tam olarak eşleşen bir anahtara hızla bulmak için bir karma algoritması kullanır.  
-  
-```  
-BOOL Lookup(BASE_CLASS ::BASE_ARG_KEY key, VALUE& rValue) const;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *BASE_CLASS*  
- Bu haritanın sınıfın temel sınıf belirten bir şablon parametre.  
-  
- *Anahtarı*  
- Bakılacak öğenin anahtarı.  
-  
- *DEĞER*  
- Bu eşlemesinde depolanan değerlerin türü belirten bir şablon parametre.  
-  
- *rValue*  
- Alınan öğenin döndürülen değerini belirtir.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Öğesi bulunmazsa sıfır olmayan; Aksi takdirde 0.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bu satır içi işlev çağrılarını `BASE_CLASS` **:: arama**.  
-  
-##  <a name="operator_at"></a>  CTypedPtrMap::operator]  
- Bu işleci yalnızca bir atama deyimi (bir l-değeri) sol tarafta kullanılabilir.  
-  
-```  
+    VALUE& rValue) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*rPosition*<br/>
+Bir önceki tarafından döndürülen bir konum değeri bir başvuru belirtir `GetNextAssoc` veya `BASE_CLASS` **:: GetStartPosition** çağırın.
+
+*KEY*<br/>
+Haritanın anahtarları türünü belirten bir şablon parametre.
+
+*rKey*<br/>
+Alınan öğenin döndürülen anahtarını belirtir.
+
+*DEĞER*<br/>
+Şablon parametresi türü haritanın değerler belirtme.
+
+*rValue*<br/>
+Alınan öğenin döndürülen değeri belirtir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu işlev bir eşlem içindeki tüm öğeleri arasında yineleme için kullanışlıdır. Konumu sıranın mutlaka anahtar değeri serisi ile aynı olmadığını unutmayın.
+
+Alınan öğe eşlem içindeki son öğesinin yeni değeri ise `rNextPosition` NULL olarak ayarlandı.
+
+Bu satır içi işlev çağrıları `BASE_CLASS` **:: GetNextAssoc**.
+
+##  <a name="lookup"></a>  CTypedPtrMap::Lookup
+
+`Lookup` eşleme öğesi tam olarak eşleşen bir anahtar ile hızla bulmak için bir karma algoritma kullanır.
+
+```
+BOOL Lookup(BASE_CLASS ::BASE_ARG_KEY key, VALUE& rValue) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*$BASE_CLASS*<br/>
+Şablon parametresi bu haritanın sınıfın temel sınıfına belirtme.
+
+*Anahtarı*<br/>
+Bakılacak öğenin anahtarı.
+
+*DEĞER*<br/>
+Şablon parametresi bu eşlemesinde depolanan değerlerin türü belirtme.
+
+*rValue*<br/>
+Alınan öğenin döndürülen değeri belirtir.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Öğesi bulundu; olursa sıfır dışı; Aksi durumda 0.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu satır içi işlev çağrıları `BASE_CLASS` **:: arama**.
+
+##  <a name="operator_at"></a>  CTypedPtrMap::operator]
+
+Bu işleç, yalnızca (lvalue) atama deyiminin sol tarafında kullanılabilir.
+
+```
 VALUE& operator[ ](base_class ::base_arg_key key);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *DEĞER*  
- Bu eşlemesinde depolanan değerlerin türü belirten bir şablon parametre.  
-  
- *BASE_CLASS*  
- Bu haritanın sınıfın temel sınıf belirten bir şablon parametre.  
-  
- *Anahtarı*  
- Aranan veya eşlemesinde oluşturulan öğenin anahtarı.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Belirtilen anahtarı içeren herhangi bir harita öğe varsa, yeni bir öğe oluşturulur. Yoktur yok "sağ tarafında" (r) bu işleci için eşdeğer bir anahtar eşlemesinde bulunamayabilir olasılığı olduğundan. Kullanım `Lookup` öğesi alma için üye işlevi.  
-  
-##  <a name="removekey"></a>  CTypedPtrMap::RemoveKey  
- Bu üye işlevi çağırır `BASE_CLASS` **:: RemoveKey**.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*DEĞER*<br/>
+Şablon parametresi bu eşlemesinde depolanan değerlerin türü belirtme.
+
+*$BASE_CLASS*<br/>
+Şablon parametresi bu haritanın sınıfın temel sınıfına belirtme.
+
+*Anahtarı*<br/>
+Aranan ya da haritada oluşturulan öğenin anahtarı.
+
+### <a name="remarks"></a>Açıklamalar
+
+Ardından, belirtilen anahtara sahip herhangi bir harita öğe varsa, yeni bir öğe oluşturulur. Yoktur yok "sağ tarafında" (r) bu operatörü için eşdeğeri anahtar haritada bulunamamış olabilir bir olasılık olduğundan. Kullanım `Lookup` öğesi alma için üye işlevi.
+
+##  <a name="removekey"></a>  CTypedPtrMap::RemoveKey
+
+Bu üye işlevini çağırır `BASE_CLASS` **:: RemoveKey**.
+
+```
 BOOL RemoveKey(KEY key);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *KEY*  
- Haritanın anahtarları türünü belirten bir şablon parametre.  
-  
- *Anahtarı*  
- Kaldırılacak öğenin anahtarı.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Giriş bulundu ve başarıyla kaldırıldı, sıfır olmayan; Aksi takdirde 0.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Daha ayrıntılı açıklamalar için bkz: [CMapStringToOb::RemoveKey](../../mfc/reference/cmapstringtoob-class.md#removekey).  
-  
-##  <a name="setat"></a>  CTypedPtrMap::SetAt  
- Bu üye işlevi çağırır `BASE_CLASS` **:: SetAt**.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*KEY*<br/>
+Haritanın anahtarları türünü belirten bir şablon parametre.
+
+*Anahtarı*<br/>
+Kaldırılacak öğenin anahtarı.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Giriş bulundu ve başarıyla kaldırıldı olursa sıfır dışı; Aksi durumda 0.
+
+### <a name="remarks"></a>Açıklamalar
+
+Daha ayrıntılı açıklamalar için bkz. [CMapStringToOb::RemoveKey](../../mfc/reference/cmapstringtoob-class.md#removekey).
+
+##  <a name="setat"></a>  CTypedPtrMap::SetAt
+
+Bu üye işlevini çağırır `BASE_CLASS` **:: SetAt**.
+
+```
 void SetAt(KEY key, VALUE newValue);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *KEY*  
- Haritanın anahtarları türünü belirten bir şablon parametre.  
-  
- *Anahtarı*  
- NewValue anahtar değerini belirtir.  
-  
- *newValue*  
- Yeni öğe değeri nesne işaretçisi belirtir.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Daha ayrıntılı açıklamalar için bkz: [CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#setat).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC örnek Topla](../../visual-cpp-samples.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CMapPtrToPtr sınıfı](../../mfc/reference/cmapptrtoptr-class.md)   
- [CMapPtrToWord Class](../../mfc/reference/cmapptrtoword-class.md)   
- [CMapWordToPtr sınıfı](../../mfc/reference/cmapwordtoptr-class.md)   
- [CMapStringToPtr Sınıfı](../../mfc/reference/cmapstringtoptr-class.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*KEY*<br/>
+Haritanın anahtarları türünü belirten bir şablon parametre.
+
+*Anahtarı*<br/>
+NewValue anahtar değerini belirtir.
+
+*newValue*<br/>
+Yeni öğe değeri nesne işaretçisi belirtir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Daha ayrıntılı açıklamalar için bkz. [CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#setat).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC örnek Topla](../../visual-cpp-samples.md)<br/>
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CMapPtrToPtr Sınıfı](../../mfc/reference/cmapptrtoptr-class.md)<br/>
+[CMapPtrToWord Sınıfı](../../mfc/reference/cmapptrtoword-class.md)<br/>
+[CMapWordToPtr Sınıfı](../../mfc/reference/cmapwordtoptr-class.md)<br/>
+[CMapStringToPtr Sınıfı](../../mfc/reference/cmapstringtoptr-class.md)

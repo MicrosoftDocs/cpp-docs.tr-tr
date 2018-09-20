@@ -17,58 +17,66 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f28c0c166bcbf13181161d6afce484fe4a45b80
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8cf54992896559f1b143247746ef9f9e0e8d8979
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369908"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46404013"
 ---
 # <a name="dao-database-engine-initialization-and-termination"></a>DAO Veritabanı Motoru Başlatma ve Sonlandırma
-MFC DAO nesneleri kullanılırken DAO veritabanı motoru ilk olmalıdır başlatılmadı ve sonra sonlandırılan uygulamanızı veya DLL sonlandırılmadan önce. İki işlevleri `AfxDaoInit` ve `AfxDaoTerm`, bu görevleri gerçekleştirin.  
-  
-### <a name="dao-database-engine-initialization-and-termination"></a>DAO Veritabanı Motoru Başlatma ve Sonlandırma  
-  
-|||  
-|-|-|  
-|[Afxdaoınit](#afxdaoinit)|DAO veritabanı motoru başlatır.|  
-|[AfxDaoTerm](#afxdaoterm)|DAO veritabanı motoru sonlandırır.|  
-  
-##  <a name="afxdaoinit"></a>  Afxdaoınit  
- Bu işlev DAO veritabanı motoru başlatır.  
-  
-```  
- 
+
+MFC DAO nesneleri kullanırken DAO veritabanı motoru ilk olarak başlatılır ve ardından sona uygulamanızı veya DLL sonlandırılmadan önce. İki işlev `AfxDaoInit` ve `AfxDaoTerm`, şu görevleri gerçekleştirebilirsiniz.
+
+### <a name="dao-database-engine-initialization-and-termination"></a>DAO Veritabanı Motoru Başlatma ve Sonlandırma
+
+|||
+|-|-|
+|[Afxdaoınit](#afxdaoinit)|DAO veritabanı motoru başlatır.|
+|[AfxDaoTerm](#afxdaoterm)|DAO veritabanı motoru sonlandırır.|
+
+##  <a name="afxdaoinit"></a>  Afxdaoınit
+
+Bu işlev DAO veritabanı motoru başlatır.
+
+```
+
 void AfxDaoInit();
 
-throw(CDaoException*);  
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Çoğu durumda, çağrı gerekmez `AfxDaoInit` çünkü gerektiğinde uygulama otomatik olarak çağırır.  
-  
- Çağırma örneği ve ilgili bilgiler için `AfxDaoInit`, bkz: [Teknik Not 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).  
-  
-### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdao.h  
-  
-##  <a name="afxdaoterm"></a>  AfxDaoTerm  
- Bu işlev DAO veritabanı motoru sonlandırır.  
-  
-```  
- 
-void AfxDaoTerm();  
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Genellikle, yalnızca Normal MFC DLL bu işlevi çağırmak gerekir; bir uygulamayı otomatik olarak çağıracaktır `AfxDaoTerm` ne zaman yapılması gerekiyor.  
-  
- Normal MFC DLL'lerde çağrısı `AfxDaoTerm` önce `ExitInstance` işlevi, ancak tüm MFC DAO nesneler yok.  
-  
- İlgili bilgi için bkz: [Teknik Not 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).  
+throw(CDaoException*);
+```
 
-### <a name="requirements"></a>Gereksinimler  
-  **Üstbilgi** afxdao.h  
+### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
+Çoğu durumda, çağrı gerekmez `AfxDaoInit` çünkü gerektiğinde uygulama otomatik olarak çağırır.
+
+İlgili bilgi ve arama örneği için `AfxDaoInit`, bkz: [Teknik Not 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).
+
+### <a name="requirements"></a>Gereksinimler
+
+  **Üst bilgi** afxdao.h
+
+##  <a name="afxdaoterm"></a>  AfxDaoTerm
+
+Bu işlev DAO veritabanı motoru sonlandırır.
+
+```
+
+void AfxDaoTerm();
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Genellikle, bir Normal MFC DLL bu işlevi çağırın yeterlidir; bir uygulamayı otomatik olarak çağıran `AfxDaoTerm` ne zaman yapılması gerekiyor.
+
+Normal MFC DLL'lerinde çağrı `AfxDaoTerm` önce `ExitInstance` işlevi, ancak tüm MFC DAO nesneleri yok edildikten sonra sonra.
+
+İlgili bilgiler için bkz. [Teknik Not 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).
+
+### <a name="requirements"></a>Gereksinimler
+
+  **Üst bilgi** afxdao.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)

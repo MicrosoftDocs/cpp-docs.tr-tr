@@ -19,19 +19,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57aa0dc35d2cc47eea4df072a9df7efde9812c23
-ms.sourcegitcommit: 9ad287c88bdccee2747832659fe50c2e5d682a0b
+ms.openlocfilehash: 6d85f98fd72567d2481e3a9f9e643b2d736eea92
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39034708"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46397708"
 ---
 # <a name="setting-the-dialog-boxs-background-color"></a>İletişim Kutusunun Arka Plan Rengini Ayarlama
+
 İletişim kutusu penceresini WM_CTLCOLOR iletileri işleyerek, iletişim kutuları arka plan rengini ayarlayabilirsiniz. Renk kümesi, yalnızca belirtilen iletişim kutusu için kullanılır.
 
-Bkz: [codexpert blog](http://codexpert.ro/blog/2013/03/13/painting-the-dialog-backround/) örneği.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir iletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)   
- [İletişim Kutunuzda Windows İletilerini İşleme](../mfc/handling-windows-messages-in-your-dialog-box.md)
+Bkz: [codexpert blog](http://codexpert.ro/blog/2013/03/13/painting-the-dialog-backround/) örneği.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)<br/>
+[İletişim Kutunuzda Windows İletilerini İşleme](../mfc/handling-windows-messages-in-your-dialog-box.md)
 

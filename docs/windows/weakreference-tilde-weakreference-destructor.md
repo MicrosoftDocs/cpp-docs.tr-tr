@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b26d58f13e819ce4bb605beba9beecbbc1fa94a6
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4240ae1b9c4930ed0925db2607ff6e20f698b0a6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596313"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394328"
 ---
 # <a name="weakreferenceweakreference-destructor"></a>WeakReference::~WeakReference Yok Edicisi
 
@@ -48,5 +48,5 @@ Geçerli örneğinin başlatmasını geri alır **WeakReference** sınıfı.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Microsoft::wrl:: details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)<br/>
 [WeakReference sınıfı](../windows/weakreference-class1.md)

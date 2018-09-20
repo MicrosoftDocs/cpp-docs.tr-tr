@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6ab44d406d71eb1cc23c803f1074636e9e5cc38a
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 6d707b0205c3f13954681eb4f6a033496a2997ce
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316243"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425801"
 ---
 # <a name="defining-mnemonics-access-keys"></a>Anımsatıcıları Tanımlama (Erişim Tuşları)
 
@@ -68,5 +68,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)  
+[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)

@@ -15,22 +15,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97bd910ae4cb514cda07dd319f37a05a32712909
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9c392ef728e1d796a02cfa32edc2c3e8c74d083b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341032"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46426243"
 ---
 # <a name="closing-files"></a>Dosyaları Kapatma
-Bir dosyayla tamamladıktan sonra her zamanki gibi g/ç işlemlerinde, onu kapatmanız gerekir.  
-  
-#### <a name="to-close-a-file"></a>Bir dosyayı kapatmak için  
-  
-1.  Kullanım **Kapat** üye işlevi. Bu işlev, dosya sistemi dosyasını kapatır ve gerekirse arabelleklerini alır.  
-  
- Ayırdığınızda [CFile](../mfc/reference/cfile-class.md) çerçeve nesnesinde (gösterilen örnekte olduğu gibi [dosyaları açma](../mfc/opening-files.md)), nesne otomatik olarak ayarlanır kapatılacak ve kapsam dışına çıktığında sonra yok. Bu silme Not `CFile` nesnesi dosya sistemindeki fiziksel dosya silinmez.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Dosyalar](../mfc/files-in-mfc.md)
+
+Bir dosya ile işiniz bittiğinde her zaman olduğu gibi g/ç işlemlerinde kapatmalısınız.
+
+#### <a name="to-close-a-file"></a>Bir dosyayı kapatmak için
+
+1. Kullanım **Kapat** üye işlevi. Bu işlev, dosya sistemi dosyayı kapatır ve gerekirse arabelleklerini boşaltır.
+
+Ayırdığınızda, [CFile](../mfc/reference/cfile-class.md) çerçevesinde nesne (gösterilen örnekte olduğu gibi [dosyaları açma](../mfc/opening-files.md)), otomatik olarak nesne olacak kapatılmasını ve ardından kapsam dışına çıktığında yok. Bu silme Not `CFile` nesnesi dosya sistemindeki fiziksel dosya silinmez.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Dosyalar](../mfc/files-in-mfc.md)
 

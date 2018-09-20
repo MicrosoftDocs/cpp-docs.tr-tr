@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8d160a042263f783b88c7ff2d9dfd03c46759079
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: fe7cad7fccabd7acc8af7ecf1f3711d5b0d636ce
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318817"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379196"
 ---
 # <a name="image-editor-for-icons"></a>Simgeler İçin Görüntü Düzenleyicisi
 
@@ -67,5 +67,5 @@ Yok.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kaynak Düzenleyicileri](../windows/resource-editors.md)  
+[Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
 [Simgeler](https://msdn.microsoft.com/library/windows/desktop/ms646973.aspx)

@@ -13,310 +13,299 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a31a205a90480ae91740ecaf859f411c331bd69
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8aa9c59a190a0fdcc8c6d7557feea4bc19061480
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46037989"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46398007"
 ---
 # <a name="concurrencygraphics-namespace-functions"></a>CONCURRENCY::Graphics ad alanı işlevleri
-|||  
-|-|-|  
-|[kopyalama](#copy)|[copy_async](#copy_async)|  
-  
-##  <a name="copy"></a>  copy işlevi (Concurrency::graphics Namespace)  
- Bir kaynak dokuyu hedef arabellek içine kopyalar veya kaynak arabelleği hedef arabellek içine kopyalar. Bu işlevin genel formu `copy(src, dest)`.  
-  
-```  
+
+|||
+|-|-|
+|[kopyalama](#copy)|[copy_async](#copy_async)|
+
+##  <a name="copy"></a>  copy işlevi (Concurrency::graphics Namespace)
+
+Bir kaynak dokuyu hedef arabellek içine kopyalar veya kaynak arabelleği hedef arabellek içine kopyalar. Bu işlevin genel formu `copy(src, dest)`.
+
+```
 template <
-    typename _Src_type,  
-    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture, void>::type>  
->  
+    typename _Src_type,
+    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture, void>::type>
+>
 void copy (
-    const _Src_type& _Src,  
-    _Out_ void* _Dst,  
+    const _Src_type& _Src,
+    _Out_ void* _Dst,
     unsigned int _Dst_byte_size);
 
- 
 template <
-    typename _Src_type,  
-    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture, void>::type  
->  
+    typename _Src_type,
+    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture, void>::type
+>
 void copy(
-    const _Src_type& _Src,  
-    const index<_Src_type::rank>& _Src_offset,  
-    const extent<_Src_type::rank>& _Copy_extent,  
-    _Out_ void* _Dst,  
+    const _Src_type& _Src,
+    const index<_Src_type::rank>& _Src_offset,
+    const extent<_Src_type::rank>& _Copy_extent,
+    _Out_ void* _Dst,
     unsigned int _Dst_byte_size);
 
- 
 template <
-    typename _Dst_type,  
-    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type  
->  
+    typename _Dst_type,
+    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type
+>
 void copy(
-    const void* _Src,  
+    const void* _Src,
     unsigned int _Src_byte_size, _Dst_type& _Dst);
 
- 
 template <
-    typename _Dst_type,  
-    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type  
->  
+    typename _Dst_type,
+    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type
+>
 void copy(
-    const void* _Src,  
-    unsigned int _Src_byte_size,  
-    _Dst_type& _Dst,  
-    const index<_Dst_type::rank>& _Dst_offset,  
+    const void* _Src,
+    unsigned int _Src_byte_size,
+    _Dst_type& _Dst,
+    const index<_Dst_type::rank>& _Dst_offset,
     const extent<_Dst_type::rank>& _Copy_extent);
 
- 
 template <
-    typename InputIterator,  
-    typename _Dst_type,  
-    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type  
->  
+    typename InputIterator,
+    typename _Dst_type,
+    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type
+>
 void copy(InputIterator first, InputIterator last, _Dst_type& _Dst);
 
- 
 template <
-    typename InputIterator,  
-    typename _Dst_type,  
-    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type  
->void copy(InputIterator first, InputIterator last, _Dst_type& _Dst,  
-    const index<_Dst_type::rank>& _Dst_offset,  
+    typename InputIterator,
+    typename _Dst_type,
+    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type
+>void copy(InputIterator first, InputIterator last, _Dst_type& _Dst,
+    const index<_Dst_type::rank>& _Dst_offset,
     const extent<_Dst_type::rank>& _Copy_extent);
 
- 
 template <
-    typename _Src_type,  
-    typename OutputIterator,  
-    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& !details::texture_traits<OutputIterator>::is_texture, void>::type  
->  
+    typename _Src_type,
+    typename OutputIterator,
+    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& !details::texture_traits<OutputIterator>::is_texture, void>::type
+>
 void copy(
     const _Src_type& _Src, OutputIterator _Dst);
 
- 
 template <
-    typename _Src_type,  
-    typename OutputIterator,  
-    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& !details::texture_traits<OutputIterator>::is_texture, void>::type  
->  
+    typename _Src_type,
+    typename OutputIterator,
+    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& !details::texture_traits<OutputIterator>::is_texture, void>::type
+>
 void copy (
-    const _Src_type& _Src,  
-    const index<_Src_type::rank>& _Src_offset,  
+    const _Src_type& _Src,
+    const index<_Src_type::rank>& _Src_offset,
     const extent<_Src_type::rank>& _Copy_extent, OutputIterator _Dst);
 
- 
 template <
-    typename _Src_type,  
-    typename _Dst_type,  
-    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& details::texture_traits<_Dst_type>::is_texture, void>::type  
->  
+    typename _Src_type,
+    typename _Dst_type,
+    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& details::texture_traits<_Dst_type>::is_texture, void>::type
+>
 void copy (
     const _Src_type& _Src, _Dst_type& _Dst);
 
- 
 template <
-    typename _Src_type,  
-    typename _Dst_type,  
-    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& details::texture_traits<_Dst_type>::is_texture,  
-    void>::type 
->  
+    typename _Src_type,
+    typename _Dst_type,
+    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& details::texture_traits<_Dst_type>::is_texture,
+    void>::type
+>
 void copy (
-    const _Src_type& _Src,  
-    const index<_Src_type::rank>& _Src_offset, _Dst_type& _Dst,  
-    const index<_Dst_type::rank>& _Dst_offset,  
+    const _Src_type& _Src,
+    const index<_Src_type::rank>& _Src_offset, _Dst_type& _Dst,
+    const index<_Dst_type::rank>& _Dst_offset,
     const extent<_Src_type::rank>& _Copy_extent);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *_Copy_extent*<br/>
-Kopyalanacak doku bölümü faturalandırılırsınız.  
-  
+Kopyalanacak doku bölümü faturalandırılırsınız.
+
 *_Dst*<br/>
-Üstüne kopyalanacak nesne.  
-  
+Üstüne kopyalanacak nesne.
+
 *_Dst_byte_size*<br/>
-Hedefteki bayt sayısı.  
-  
+Hedefteki bayt sayısı.
+
 *_Dst_type*<br/>
-Hedef nesne türü.  
-  
+Hedef nesne türü.
+
 *_Dst_offset*<br/>
-Kopyalamanın başlayacağı hedefe olan uzaklık.  
-  
+Kopyalamanın başlayacağı hedefe olan uzaklık.
+
 *Inputıterator*<br/>
-Giriş yineleyicisinin türü.  
-  
+Giriş yineleyicisinin türü.
+
 *Outputıterator*<br/>
-Çıkış yineleyici türü.  
-  
+Çıkış yineleyici türü.
+
 *_Src*<br/>
-Kopyalanacak nesneye için.  
-  
+Kopyalanacak nesneye için.
+
 *_Src_byte_size*<br/>
-Kaynaktaki bayt sayısı.  
-  
+Kaynaktaki bayt sayısı.
+
 *_Src_type*<br/>
-Kaynak nesne türü.  
-  
+Kaynak nesne türü.
+
 *_Src_offset*<br/>
-Kopyalamanın başlayacağı kaynağa olan uzaklık.  
-  
+Kopyalamanın başlayacağı kaynağa olan uzaklık.
+
 *ilk*<br/>
-Kaynak kapsayıcı içine bir başlangıç yineleyicisi.  
-  
+Kaynak kapsayıcı içine bir başlangıç yineleyicisi.
+
 *Son*<br/>
-Kaynak kapsayıcı içine bir bitiş yineleyicisi.  
-  
-##  <a name="copy_async"></a>  copy_async işlevi (Concurrency::graphics Namespace)  
- Zaman uyumsuz olarak kaynak dokuyu hedef arabellek içine kopyalar veya kaynak arabelleği hedef arabellek içine kopyalar ve ardından döndürür bir [completion_future](completion-future-class.md) üzerinde beklenen nesne. Kod hızlandırıcıda çalışıyor olduğunda veriler kopyalanamaz. Bu işlevin genel formu `copy(src, dest)`.  
-  
-```  
+Kaynak kapsayıcı içine bir bitiş yineleyicisi.
+
+##  <a name="copy_async"></a>  copy_async işlevi (Concurrency::graphics Namespace)
+
+Zaman uyumsuz olarak kaynak dokuyu hedef arabellek içine kopyalar veya kaynak arabelleği hedef arabellek içine kopyalar ve ardından döndürür bir [completion_future](completion-future-class.md) üzerinde beklenen nesne. Kod hızlandırıcıda çalışıyor olduğunda veriler kopyalanamaz. Bu işlevin genel formu `copy(src, dest)`.
+
+```
 template<
-    typename _Src_type,  
-    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture, void>::type  
->  
+    typename _Src_type,
+    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture, void>::type
+>
 concurrency::completion_future copy_async(
-    const _Src_type& _Src,  
-    _Out_ void* _Dst,  
+    const _Src_type& _Src,
+    _Out_ void* _Dst,
     unsigned int _Dst_byte_size);
 
- 
 template<
-    typename _Src_type,  
-    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture, void>::type  
->  
+    typename _Src_type,
+    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture, void>::type
+>
 concurrency::completion_future copy_async(
-    const _Src_type& _Src,  
-    const index<_Src_type::rank>& _Src_offset,  
-    const extent<_Src_type::rank>& _Copy_extent,  
-    _Out_ void* _Dst,  
+    const _Src_type& _Src,
+    const index<_Src_type::rank>& _Src_offset,
+    const extent<_Src_type::rank>& _Copy_extent,
+    _Out_ void* _Dst,
     unsigned int _Dst_byte_size);
 
- 
 template <
-    typename _Dst_type,  
-    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type  
->  
+    typename _Dst_type,
+    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type
+>
 concurrency::completion_future copy_async(
-    const void* _Src,  
+    const void* _Src,
     unsigned int _Src_byte_size, _Dst_type& _Dst);
 
- 
 template <
-    typename _Dst_type,  
-    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type  
->  
+    typename _Dst_type,
+    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type
+>
 concurrency::completion_future copy_async(
-    const void* _Src,  
-    unsigned int _Src_byte_size, _Dst_type& _Dst,  
-    const index<_Dst_type::rank>& _Dst_offset,  
+    const void* _Src,
+    unsigned int _Src_byte_size, _Dst_type& _Dst,
+    const index<_Dst_type::rank>& _Dst_offset,
     const extent<_Dst_type::rank>& _Copy_extent);
 
- 
 template <
-    typename InputIterator,  
-    typename _Dst_type,  
-    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type  
->  
+    typename InputIterator,
+    typename _Dst_type,
+    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type
+>
 concurrency::completion_future copy_async(InputIterator first, InputIterator last, _Dst_type& _Dst);
 
- 
 template <
-    typename InputIterator,  
-    typename _Dst_type,  
-    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type  
->  
-concurrency::completion_future copy_async(InputIterator first, InputIterator last, _Dst_type& _Dst,  
-    const index<_Dst_type::rank>& _Dst_offset,  
+    typename InputIterator,
+    typename _Dst_type,
+    typename = typename std::enable_if<details::texture_traits<_Dst_type>::is_texture, void>::type
+>
+concurrency::completion_future copy_async(InputIterator first, InputIterator last, _Dst_type& _Dst,
+    const index<_Dst_type::rank>& _Dst_offset,
     const extent<_Dst_type::rank>& _Copy_extent);
 
- 
 template <
-    typename _Src_type,  
-    typename OutputIterator,  
-    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& !details::texture_traits<OutputIterator>::is_texture, void>::type  
->  
+    typename _Src_type,
+    typename OutputIterator,
+    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& !details::texture_traits<OutputIterator>::is_texture, void>::type
+>
 concurrency::completion_future copy_async(_Src_type& _Src, OutputIterator _Dst);
 
- 
 template <
-    typename _Src_type,  
-    typename OutputIterator,  
-    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& !details::texture_traits<OutputIterator>::is_texture, void>::type  
->  
-concurrency::completion_future copy_async(_Src_type& _Src,  
-    const index<_Src_type::rank>& _Src_offset,  
-    const extent<_Src_type::rank>& _Copy_extent,  
+    typename _Src_type,
+    typename OutputIterator,
+    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& !details::texture_traits<OutputIterator>::is_texture, void>::type
+>
+concurrency::completion_future copy_async(_Src_type& _Src,
+    const index<_Src_type::rank>& _Src_offset,
+    const extent<_Src_type::rank>& _Copy_extent,
     OutputIterator _Dst);
 
- 
 template <
-    typename _Src_type,  
-    typename _Dst_type,  
-    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& details::texture_traits<_Dst_type>::is_texture, void>::type  
->  
+    typename _Src_type,
+    typename _Dst_type,
+    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& details::texture_traits<_Dst_type>::is_texture, void>::type
+>
 concurrency::completion_future copy_async(_Src_type& _Src, _Dst_type& _Dst);
 
- 
 template <
-    typename _Src_type,  
-    typename _Dst_type,  
-    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& details::texture_traits<_Dst_type>::is_texture, void>::type  
->  
-concurrency::completion_future copy_async(_Src_type& _Src,  
-    const index<_Src_type::rank>& _Src_offset, _Dst_type &_Dst,  
-    const index<_Dst_type::rank>& _Dst_offset,  
+    typename _Src_type,
+    typename _Dst_type,
+    typename = typename std::enable_if<details::texture_traits<_Src_type>::is_texture&& details::texture_traits<_Dst_type>::is_texture, void>::type
+>
+concurrency::completion_future copy_async(_Src_type& _Src,
+    const index<_Src_type::rank>& _Src_offset, _Dst_type &_Dst,
+    const index<_Dst_type::rank>& _Dst_offset,
     const extent<_Src_type::rank>& _Copy_extent);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *_Copy_extent*<br/>
-Kopyalanacak doku bölümü faturalandırılırsınız.  
-  
+Kopyalanacak doku bölümü faturalandırılırsınız.
+
 *_Dst*<br/>
-Üstüne kopyalanacak nesne.  
-  
+Üstüne kopyalanacak nesne.
+
 *_Dst_byte_size*<br/>
-Hedefteki bayt sayısı.  
-  
+Hedefteki bayt sayısı.
+
 *_Dst_type*<br/>
-Hedef nesne türü.  
-  
+Hedef nesne türü.
+
 *_Dst_offset*<br/>
-Kopyalamanın başlayacağı hedefe olan uzaklık.  
-  
+Kopyalamanın başlayacağı hedefe olan uzaklık.
+
 *Inputıterator*<br/>
-Giriş yineleyicisinin türü.  
-  
+Giriş yineleyicisinin türü.
+
 *Outputıterator*<br/>
-Çıkış yineleyici türü.  
-  
+Çıkış yineleyici türü.
+
 *_Src*<br/>
-Kopyalanacak nesneye için.  
-  
+Kopyalanacak nesneye için.
+
 *_Src_byte_size*<br/>
-Kaynaktaki bayt sayısı.  
-  
+Kaynaktaki bayt sayısı.
+
 *_Src_type*<br/>
-Kaynak nesne türü.  
-  
+Kaynak nesne türü.
+
 *_Src_offset*<br/>
-Kopyalamanın başlayacağı kaynağa olan uzaklık.  
-  
+Kopyalamanın başlayacağı kaynağa olan uzaklık.
+
 *ilk*<br/>
-Kaynak kapsayıcı içine bir başlangıç yineleyicisi.  
-  
+Kaynak kapsayıcı içine bir başlangıç yineleyicisi.
+
 *Son*<br/>
-Kaynak kapsayıcı içine bir bitiş yineleyicisi.  
+Kaynak kapsayıcı içine bir bitiş yineleyicisi.
 
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** amp_graphics.h  
-  
- **Namespace:** Concurrency::graphics 
+## <a name="requirements"></a>Gereksinimler
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)
+**Başlık:** amp_graphics.h
+
+**Namespace:** Concurrency::graphics
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

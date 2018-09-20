@@ -16,76 +16,81 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 853666f6dee7bae68b03ccc1d9d9c23ce765925b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f9393026814e8f3f7dd90704cd08ea96dfb9a35a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45699967"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407328"
 ---
 # <a name="mulh"></a>__mulh
-**Microsoft'a özgü**  
-  
- Yüksek 64 bit ürünün iki 64-bit imzalı tamsayı döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-__int64 __mulh(   
-   __int64 a,   
-   __int64 b   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+**Microsoft'a özgü**
+
+Yüksek 64 bit ürünün iki 64-bit imzalı tamsayı döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+__int64 __mulh( 
+   __int64 a, 
+   __int64 b 
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *a*<br/>
-[in] Çarpılacak ilk sayı.  
-  
+[in] Çarpılacak ilk sayı.
+
 *b*<br/>
-[in] Çarpılacak ikinci sayı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Çarpma 128-bit sonucunu yüksek 64 bit.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|  
-|---------------|------------------|  
-|`__mulh`|X64|  
-  
- **Üst bilgi dosyası** \<intrin.h >  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// mulh.cpp  
-// processor: x64  
-#include <stdio.h>  
-#include <intrin.h>  
-  
-#pragma intrinsic (__mulh)  
-  
-int main()  
-{  
-    __int64 a = 0x0fffffffffffffffI64;  
-    __int64 b = 0xf0000000I64;  
-  
-    __int64 result = __mulh(a, b); // the high 64 bits  
-    __int64 result2 = a * b; // the low 64 bits  
-  
-    printf_s(" %#I64x * %#I64x = %#I64x%I64x\n",  
-             a, b, result, result2);  
-}  
-```  
-  
-```Output  
-0xfffffffffffffff * 0xf0000000 = 0xeffffffffffffff10000000  
-```  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[in] Çarpılacak ikinci sayı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Çarpma 128-bit sonucunu yüksek 64 bit.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|
+|---------------|------------------|
+|`__mulh`|X64|
+
+**Üst bilgi dosyası** \<intrin.h >
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+
+## <a name="example"></a>Örnek
+
+```
+// mulh.cpp
+// processor: x64
+#include <stdio.h>
+#include <intrin.h>
+
+#pragma intrinsic (__mulh)
+
+int main()
+{
+    __int64 a = 0x0fffffffffffffffI64;
+    __int64 b = 0xf0000000I64;
+
+    __int64 result = __mulh(a, b); // the high 64 bits
+    __int64 result2 = a * b; // the low 64 bits
+
+    printf_s(" %#I64x * %#I64x = %#I64x%I64x\n",
+             a, b, result, result2);
+}
+```
+
+```Output
+0xfffffffffffffff * 0xf0000000 = 0xeffffffffffffff10000000
+```
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9c0b2c53bf06a748be522606f5904f307cc00df8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 555dcfe83ab114db48942a5be604ff344dafa8ed
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591362"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46398728"
 ---
 # <a name="cominterfaceentry-c"></a>com_interface_entry (C++)
 
@@ -38,7 +38,7 @@ COM eşlemesi hedef sınıfın arabirim giriş ekler.
 
 ### <a name="parameters"></a>Parametreler
 
-*com_interface_entry*  
+*com_interface_entry*<br/>
 Girişinin gerçek metni içeren bir dize. Olası değerler listesi için bkz. [COM_INTERFACE_ENTRY makroları](../atl/reference/com-interface-entry-macros.md).
 
 ## <a name="remarks"></a>Açıklamalar
@@ -130,6 +130,6 @@ END_COM_MAP()
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[COM Öznitelikleri](../windows/com-attributes.md)  
-[Sınıf Öznitelikleri](../windows/class-attributes.md)  
+[COM Öznitelikleri](../windows/com-attributes.md)<br/>
+[Sınıf Öznitelikleri](../windows/class-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  

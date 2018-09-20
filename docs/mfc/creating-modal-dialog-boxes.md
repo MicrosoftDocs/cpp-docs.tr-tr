@@ -16,16 +16,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a8bc947dbaf9cecc680f3cdbd8e6b429d2bcd5f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3fcc449a376091c07a7fb26b81fe19752bc3bcd6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342435"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46376650"
 ---
 # <a name="creating-modal-dialog-boxes"></a>Kalıcı İletişim Kutuları Oluşturma
-Modal bir iletişim kutusu oluşturmak için bildirilen iki ortak oluşturucu birini çağırın [CDialog](../mfc/reference/cdialog-class.md). Ardından, iletişim nesnenin çağrısı [DoModal](../mfc/reference/cdialog-class.md#domodal) üye işlevi iletişim kutusunu görüntülemek ve kullanıcı Tamam seçer kadar onunla etkileşimi yönetmek veya iptal edin. Bu yönetim tarafından `DoModal` ne iletişim kutusu kalıcı kılan unsurdur. Kalıcı iletişim kutuları için `DoModal` iletişim kutusu kaynağı yükler.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+
+Kalıcı bir iletişim kutusu oluşturmak için çağırın ya da bildirilen iki genel oluşturucular [CDialog](../mfc/reference/cdialog-class.md). Ardından, iletişim nesnenin çağrı [DoModal](../mfc/reference/cdialog-class.md#domodal) iletişim kutusunu görüntülemek ve onunla etkileşim Tamam kullanıcının seçtiği kadar yönetmek veya iptal üye işlevi. Bu yönetim tarafından `DoModal` ne iletişim kutusu kalıcı olmasını sağlar. Kalıcı iletişim kutuları için `DoModal` iletişim kutusu kaynağı yükler.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
 

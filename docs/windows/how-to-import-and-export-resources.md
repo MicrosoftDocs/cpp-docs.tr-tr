@@ -27,12 +27,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a6b975b932545d62b62db0b44bad549a3570a602
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: e2fcbd51e472614104cd74df4bf5697512a2e0df
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318557"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419447"
 ---
 # <a name="how-to-import-and-export-resources"></a>Nasıl Yapılır: Kaynakları İçeri ve Dışarı Aktarma
 
@@ -70,5 +70,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kaynak dosyaları](../windows/resource-files-visual-studio.md)  
+[Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)

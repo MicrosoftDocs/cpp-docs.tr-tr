@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0e71c43ca9222b350c07dae5f299f4a6f469bf84
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2cc4e8f272838e5fa1de3eac8bd04a4ec3407dee
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42578563"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400678"
 ---
 # <a name="enableif-structure"></a>EnableIf Yapısı
 
@@ -45,10 +45,10 @@ struct EnableIf<true, T>;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Bir tür.
 
-*b*  
+*b*<br/>
 Bir Boolean ifadesi.
 
 ## <a name="remarks"></a>Açıklamalar

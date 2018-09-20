@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5bb6bc06f65f53f919197b5350db8aacc268013f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0e2af57b698558a33115cfcfc20ebc7136e72dc6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602965"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400749"
 ---
 # <a name="comptrrefoperator-operator"></a>ComPtrRef::operator* İşleci
 
@@ -50,5 +50,5 @@ Geçerli tarafından temsil edilen arabirim işaretçisi alır **ComPtrRef** nes
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ComPtrRef Sınıfı](../windows/comptrref-class.md)  
+[ComPtrRef Sınıfı](../windows/comptrref-class.md)<br/>
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

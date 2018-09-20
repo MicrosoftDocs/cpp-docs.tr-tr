@@ -12,34 +12,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7abe5a637a2a32c696f19f5ab9988f1be361f647
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: afd0a8f66f9b0d027671629998597955b3aa69e9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692844"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378341"
 ---
 # <a name="openmp-clauses"></a>OpenMP Yan Tümceleri
-OpenMP API çağrısında kullanılan yan tümceleri bağlantılar sağlar.  
-  
- Visual C++ aşağıdaki OpenMP yan tümceleri destekler:  
-  
-|Yan Tümce|Açıklama|  
-|------------|-----------------|  
-|[copyin](../../../parallel/openmp/reference/copyin.md)|Ana iş parçacığının değeri erişmek iş parçacığı sağlayan bir [threadprivate](../../../parallel/openmp/reference/threadprivate.md) değişkeni.|  
-|[copyprivate](../../../parallel/openmp/reference/copyprivate.md)|Bir veya daha fazla değişken tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.|  
-|[default](../../../parallel/openmp/reference/default-openmp.md)|Paralel bir bölgede dizininden kapsam dışı değişkenleri davranışını belirtir.|  
-|[firstprivate](../../../parallel/openmp/reference/firstprivate.md)|Paralel yapı önce mevcut olduğundan her iş parçacığı bir değişken örneğini olmalıdır ve değişkeni değişken değeri ile başlatılmış olduğunu belirtir.|  
-|[Eğer](../../../parallel/openmp/reference/if-openmp.md)|Döngü paralel veya seri gerçekleştirilip gerçekleştirilmeyeceğini belirtir.|  
-|[lastprivate](../../../parallel/openmp/reference/lastprivate.md)|Değişkeni kapsayan bağlamın sürümünü son yineleme (döngü için yapı) ya da son Kısım (#pragma bölümleri) hangi iş parçacığı yürütür özel sürümü için eşit olarak ayarlanır belirtir.|  
-|[nowait](../../../parallel/openmp/reference/nowait.md)|Bir yönerge örtük engel geçersiz kılar.|  
-|[num_threads](../../../parallel/openmp/reference/num-threads.md)|İş parçacığı sayısı, iş parçacığı ekip olarak ayarlar.|  
-|[sıralı](../../../parallel/openmp/reference/ordered-openmp-clauses.md)|Üzerinde bir paralel gerekli [için](../../../parallel/openmp/reference/for-openmp.md) deyimi, bir [sıralı](../../../parallel/openmp/reference/ordered-openmp-directives.md) yönergesi olup döngüde kullanılacak.|  
-|[private](../../../parallel/openmp/reference/private-openmp.md)|Her iş parçacığı bir değişken örneğini olması gerektiğini belirtir.|  
-|[reduction](../../../parallel/openmp/reference/reduction.md)|Her iş parçacığı için özel bir veya daha fazla değişken azaltma işlemi paralel bölge sonundaki konu olduğunu belirtir.|  
-|[schedule](../../../parallel/openmp/reference/schedule.md)|Uygulandığı öğe [için](../../../parallel/openmp/reference/for-openmp.md) yönergesi.|  
-|[Paylaşılan](../../../parallel/openmp/reference/shared-openmp.md)|Bir veya daha fazla değişken tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [OpenMP](../../../parallel/openmp/openmp-in-visual-cpp.md)   
- [Yönergeler](../../../parallel/openmp/reference/openmp-directives.md)
+
+Yan tümceleri OpenMP API çağrısında kullanılan bağlantılar sağlar.
+
+Visual C++ aşağıdaki OpenMP yan tümceleri destekler:
+
+|Yan Tümce|Açıklama|
+|------------|-----------------|
+|[copyin](../../../parallel/openmp/reference/copyin.md)|Ana iş parçacığının değere erişmek iş parçacığı sağlayan bir [threadprivate](../../../parallel/openmp/reference/threadprivate.md) değişkeni.|
+|[copyprivate](../../../parallel/openmp/reference/copyprivate.md)|Bir veya daha fazla değişkenlerini tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.|
+|[default](../../../parallel/openmp/reference/default-openmp.md)|Bir paralel bölgenin içinde kapsamsız değişkenleri davranışını belirtir.|
+|[firstprivate](../../../parallel/openmp/reference/firstprivate.md)|Paralel yapı önce mevcut olduğundan, her iş parçacığı bir değişkenin kendi örneği olmalıdır ve değişken değişkenin değerini ile başlatılmalıdır belirtir.|
+|[Eğer](../../../parallel/openmp/reference/if-openmp.md)|Bir döngü paralel veya seri gerçekleştirilip gerçekleştirilmeyeceğini belirtir.|
+|[lastprivate](../../../parallel/openmp/reference/lastprivate.md)|Değişkeni kapsayan bir bağlamın sürümü hangi iş parçacığının son yineleme (for-döngüsü yapısı) ya da son bölümdeki (#pragma bölümleri) yürüten özel sürümüne eşit ayarlandığını belirtir.|
+|[nowait](../../../parallel/openmp/reference/nowait.md)|Bir yönergesinde örtük engel geçersiz kılar.|
+|[num_threads](../../../parallel/openmp/reference/num-threads.md)|Bir iş parçacığı takıma iş parçacığı sayısını ayarlar.|
+|[Sıralı](../../../parallel/openmp/reference/ordered-openmp-clauses.md)|Üzerinde paralel gerekli [için](../../../parallel/openmp/reference/for-openmp.md) deyimi, bir [sıralı](../../../parallel/openmp/reference/ordered-openmp-directives.md) yönergesiyse döngüde kullanılacak.|
+|[private](../../../parallel/openmp/reference/private-openmp.md)|Her iş parçacığı bir değişkenin kendi örnek olması gerektiğini belirtir.|
+|[reduction](../../../parallel/openmp/reference/reduction.md)|Her iş parçacığı için özel bir veya daha fazla değişken bir paralel bölgenin sonunda azaltma işlemi konusunu olduğunu belirtir.|
+|[schedule](../../../parallel/openmp/reference/schedule.md)|Uygulandığı [için](../../../parallel/openmp/reference/for-openmp.md) yönergesi.|
+|[Paylaşılan](../../../parallel/openmp/reference/shared-openmp.md)|Bir veya daha fazla değişkenlerini tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[OpenMP](../../../parallel/openmp/openmp-in-visual-cpp.md)<br/>
+[Yönergeler](../../../parallel/openmp/reference/openmp-directives.md)

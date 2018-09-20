@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a4721cec6ebc11cf2107afe0048da90164c0f47f
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 31bb19a0854bd28573d474a65781808eaecd7ce2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315567"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407575"
 ---
 # <a name="specifying-the-dominant-control"></a>Baskın Denetimi Belirtme
 
@@ -48,6 +48,6 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Birden Çok Denetim Seçme](../windows/selecting-multiple-controls.md)  
-[Denetim Seçme](../windows/selecting-controls.md)  
+[Birden Çok Denetim Seçme](../windows/selecting-multiple-controls.md)<br/>
+[Denetim Seçme](../windows/selecting-controls.md)<br/>
 [İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)

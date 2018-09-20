@@ -18,39 +18,41 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa2628df5f446105e6b7881709a0c72c19fe230e
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: c881e31d178d6303939c94d68e2824fb11ec2cbd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36950496"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425410"
 ---
 # <a name="using-a-dialog-bar-with-a-rebar-control"></a>Rebar Denetimiyle Birlikte Bir İletişim Çubuğu Kullanma
-Bölümünde belirtildiği gibi [Rebar denetimleri ve bantları](../mfc/rebar-controls-and-bands.md), her bant yalnızca bir alt pencere (veya Denetim) içerebilir. Bant başına birden fazla alt pencere sahip olmak istiyorsanız bu bir sınırlama olabilir. Bir iletişim çubuğu kaynak sahip birden çok denetim oluşturma ve rebar denetimi (iletişim kutusu çubuğunu içeren) bir rebar bant eklemek için kullanışlı bir geçici bir çözüm değildir.  
-  
- Normalde, saydam görünmesini iletişim çubuğu bant istediyseniz, genişletilmiş Stili iletişim çubuğu nesnesinin WS_EX_TRANSPARENT ayarlamanız gerekir. Ancak, WS_EX_TRANSPARENT düzgün bir iletişim çubuğu arka plan boyama bazı sorunlar olduğundan, istenen etkiyi elde etmek için biraz ek iş yapmanız gerekir.  
-  
- Aşağıdaki yordam ayrıntıları WS_EX_TRANSPARENT kullanmadan saydamlık elde etmek için gerekli adımları genişletilmiş stili.  
-  
-### <a name="to-implement-a-transparent-dialog-bar-in-a-rebar-band"></a>Bir rebar bant saydam iletişim çubuğu uygulamak için  
-  
-1.  Kullanarak [Sınıf Ekle iletişim kutusu](../mfc/reference/adding-an-mfc-class.md), yeni bir sınıf ekleyin (örneğin, `CMyDlgBar`) iletişim çubuğu nesnenizin uygular.  
-  
-2.  WM_ERASEBKGND iletisi için bir işleyici ekleyin.  
-  
-3.  Yeni işleyicisinde aşağıdaki örnekle eşleşmesi için var olan kodu değiştirin:  
-  
-     [!code-cpp[NVC_MFCControlLadenDialog#29](../mfc/codesnippet/cpp/using-a-dialog-bar-with-a-rebar-control_1.cpp)]  
-  
-4.  WM_MOVE iletisi için bir işleyici ekleyin.  
-  
-5.  Yeni işleyicisinde aşağıdaki örnekle eşleşmesi için var olan kodu değiştirin:  
-  
-     [!code-cpp[NVC_MFCControlLadenDialog#30](../mfc/codesnippet/cpp/using-a-dialog-bar-with-a-rebar-control_2.cpp)]  
-  
- Yeni işleyicileri iletişim çubuğu saydamlığını üst pencere WM_ERASEBKGND iletiyi iletme ve iletişim çubuğu nesne taşındı her zaman yeniden çizmeyi zorlama benzetimini yapma.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CReBarCtrl kullanma](../mfc/using-crebarctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Belirtildiği gibi [Rebar denetimleri ve bantları](../mfc/rebar-controls-and-bands.md), her bant yalnızca bir alt pencere (veya Denetim) içerebilir. Bant başına birden fazla alt penceresi istiyorsanız bu bir kısıtlama olabilir. Uygun bir geçici çözüm, birden çok denetimleri ile bir iletişim çubuğu kaynağı oluşturma ve ardından çubuk barınağı denetimi (iletişim çubuğu içeren) bir çubuk barınağı bant eklemektir.
+
+Normalde, saydam görünmesine iletişim çubuğu bant istediyseniz, iletişim çubuğu nesnesi için genişletilmiş WS_EX_TRANSPARENT ayarlayın. Ancak, düzgün bir iletişim çubuğu arka plan boyama bazı sorunlar WS_EX_TRANSPARENT sahip olduğundan, istenilen etkiyi elde etmek için küçük bir ek iş yapması gerekir.
+
+Aşağıdaki yordam ayrıntıları WS_EX_TRANSPARENT kullanmadan saydamlık sağlamak için gerekli adımları genişletilmiş stili.
+
+### <a name="to-implement-a-transparent-dialog-bar-in-a-rebar-band"></a>Bir rebar bant saydam iletişim çubuğu uygulamak için
+
+1. Kullanarak [Sınıf Ekle iletişim kutusu](../mfc/reference/adding-an-mfc-class.md), yeni bir sınıf ekleyin (örneğin, `CMyDlgBar`), iletişim çubuğu nesnenizin uygular.
+
+1. WM_ERASEBKGND ileti işleyicisi ekleyin.
+
+1. Yeni işleyicisinde varolan kodu aşağıdaki örnekle eşleşecek şekilde değiştirin:
+
+     [!code-cpp[NVC_MFCControlLadenDialog#29](../mfc/codesnippet/cpp/using-a-dialog-bar-with-a-rebar-control_1.cpp)]
+
+1. WM_MOVE ileti işleyicisi ekleyin.
+
+1. Yeni işleyicisinde varolan kodu aşağıdaki örnekle eşleşecek şekilde değiştirin:
+
+     [!code-cpp[NVC_MFCControlLadenDialog#30](../mfc/codesnippet/cpp/using-a-dialog-bar-with-a-rebar-control_2.cpp)]
+
+Yeni işleyicileri, ana pencereyi WM_ERASEBKGND iletiyi iletme ve iletişim çubuğu nesne taşındı her zaman yeniden çizmeyi zorlama iletişim çubuğu saydamlığını benzetimini yapın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CReBarCtrl Kullanma](../mfc/using-crebarctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

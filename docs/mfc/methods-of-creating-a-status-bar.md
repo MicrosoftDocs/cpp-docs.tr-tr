@@ -19,27 +19,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0428bfc906ba6e8a1ecc7bd7c198327e8c31505
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 784cd7f5768b899388978e6715ff6ca071bf439e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346935"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46397884"
 ---
 # <a name="methods-of-creating-a-status-bar"></a>Durum Çubuğu Oluşturma Yöntemleri
-MFC durum çubukları oluşturmak için iki sınıflar sağlar: [CStatusBar](../mfc/reference/cstatusbar-class.md) ve [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md) (hangi sarmalar Windows ortak denetim API'si). `CStatusBar` tüm işlevleri sağlayan ortak denetim çubuğu durumunu, otomatik olarak menüleri ve araç çubuklarını ile etkileşim kurar ve, gerekli ortak denetim ayarlarını ve yapıları birçoğu sizin için; işleme Ancak, sonuçta elde edilen yürütülebilir dosyanın genellikle kullanılarak oluşturulan büyük olacaktır `CStatusBarCtrl`.  
-  
- `CStatusBarCtrl` genellikle daha küçük bir yürütülebilir dosya ve sonuçları kullanmayı tercih edebilirsiniz `CStatusBarCtrl` MFC mimariye durum çubuğunun bütünleştirmek düşünmüyorsanız. Kullanmayı planlıyorsanız, `CStatusBarCtrl` ve durum çubuğu MFC mimariye tümleştirmek, durum çubuğu denetim işlemeleri MFC iletişim kurmak için ek dikkat edin gerekir. Bu iletişim zor değil; Ancak, kullandığınızda, gereksiz ek iş olduğu `CStatusBar`.  
-  
- Visual C++ durum çubuğu ortak denetimi yararlanmak için iki yöntem sunar.  
-  
--   Durum çubuğunda kullanarak oluşturmak `CStatusBar`ve ardından arama [CStatusBar::GetStatusBarCtrl](../mfc/reference/cstatusbar-class.md#getstatusbarctrl) erişmek için `CStatusBarCtrl` üye işlevleri.  
-  
--   Durum çubuğunda kullanarak oluşturmak [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md)'s Oluşturucusu.  
-  
- Her iki yöntem durum çubuğu denetimi üye işlevleri için erişim sahibi olursunuz. Çağırdığınızda `CStatusBar::GetStatusBarCtrl`, bir başvuru döndürür bir `CStatusBarCtrl` ya da kümesi üye işlevlerini kullanabilmeniz için nesne. Bkz: [CStatusBar](../mfc/reference/cstatusbar-class.md) oluşturma ve bir durum kullanarak çubuğunda oluşturma hakkında bilgi için `CStatusBar`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CStatusBarCtrl kullanma](../mfc/using-cstatusbarctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+MFC durum çubukları oluşturmak için iki sınıflar sağlar: [CStatusBar](../mfc/reference/cstatusbar-class.md) ve [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md) (hangi sarmalar Windows ortak denetim API'si). `CStatusBar` tüm işlevleri sağlayan ortak denetim çubuğunun durumunu, otomatik olarak menüleri ve araç çubuklarını ile etkileşim kurar ve sizin için; birçok gerekli ortak denetim ayarları ve yapıları işlediği Ancak, elde edilen çalıştırılabilir dosyayı genellikle kullanılarak oluşturulan büyük olacaktır `CStatusBarCtrl`.
+
+`CStatusBarCtrl` genellikle daha küçük bir yürütülebilir dosyayı ve sonuçları kullanmayı tercih edebilirsiniz `CStatusBarCtrl` durum çubuğunda bir MFC mimari olarak tümleştirmek düşünmüyorsanız. Kullanmayı planlıyorsanız `CStatusBarCtrl` ve durum çubuğunda bir MFC mimari olarak tümleştirin, durum çubuğu denetimi işlemeleri MFC iletişim kurmak için daha da dikkatli göz önüne almanız gerekir. Bu iletişim zor değildir; Ancak, kullandığınızda, gereksiz ek çalışma gerekir `CStatusBar`.
+
+Visual C++, durum çubuğu ortak denetim yararlanmak için iki yol sunar.
+
+- Durum çubuğunda kullanarak oluşturma `CStatusBar`ve sonra çağrı [CStatusBar::GetStatusBarCtrl](../mfc/reference/cstatusbar-class.md#getstatusbarctrl) erişim elde etmek için `CStatusBarCtrl` üye işlevleri.
+
+- Durum çubuğunda kullanarak oluşturma [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md)'s Oluşturucusu.
+
+Her iki yöntem için durum çubuğu denetimi üye işlevleri sürümlere erişmenizi sağlayacaktır. Çağırdığınızda `CStatusBar::GetStatusBarCtrl`, bir başvuru döndürür bir `CStatusBarCtrl` ayarlayın ya da üye işlevleri kullanabilmeniz için nesne. Bkz: [CStatusBar](../mfc/reference/cstatusbar-class.md) oluşturmak ve bir durum çubuğu kullanarak oluşturma hakkında bilgi `CStatusBar`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CStatusBarCtrl Kullanma](../mfc/using-cstatusbarctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

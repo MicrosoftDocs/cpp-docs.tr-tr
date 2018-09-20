@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: özel durum paralel bir döngüden kurtulmak için işleme kullanın | Microsoft Docs'
+title: 'Nasıl yapılır: özel durum paralel bir döngüden kurtulmak için işlemeyi kullanma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,70 +15,76 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bacb9ea6a451026f7a515878cb649090ed9cbf4
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: a15910885b26c8026a6e504ef36d492cf63445e8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691852"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379833"
 ---
 # <a name="how-to-use-exception-handling-to-break-from-a-parallel-loop"></a>Nasıl yapılır: Paralel Bir Döngüden Kurtulmak için Özel Durum İşlemeyi Kullanma
-Bu konuda, temel ağaç yapısı için bir arama algoritması yazma gösterilmektedir.  
-  
- Konu [iptal](cancellation-in-the-ppl.md) iptal paralel desen Kitaplığı'ndaki rolünü açıklar. Özel durum işleme kullanımını kullanımını daha paralel iş iptal daha az verimli yoludur [concurrency::task_group::cancel](reference/task-group-class.md#cancel) ve [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) yöntemleri. Görevler veya paralel algoritmalar kullanır ancak sağlamaz bir üçüncü taraf kitaplık içine çağırdığınızda ancak, iş iptal etmek için özel durum işleme kullanımını olduğu uygun bir senaryodur bir `task_group` veya `structured_task_group` iptal etmek için nesne.  
 
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, temel bir gösterir `tree` bir veri öğesi ve alt düğümleri listesini içeren türü. Aşağıdaki bölümde gövdesini gösterilmektedir `for_all` yöntemi, art arda her alt düğümünde iş işlevi gerçekleştirir.  
-  
- [!code-cpp[concrt-task-tree-search#2](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_1.cpp)]  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte gösterildiği `for_all` yöntemi. Kullandığı [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritmasını paralel ağacının her düğümde bir iş işlevi gerçekleştirir.  
-  
- [!code-cpp[concrt-task-tree-search#1](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_2.cpp)]  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte gösterildiği `search_for_value` sağlanan değer arar işlevi `tree` nesnesi. Bu işlev geçirir `for_all` sağlanan değer içeren bir ağaç düğümü bulduğunda, oluşturur çalışma işlevi bir yöntem.  
-  
- Varsayımında `tree` sınıfı bir üçüncü taraf kitaplığı tarafından sağlanan ve onu değiştiremezsiniz. Bu durumda, özel durum işleme uygun kullanılır çünkü `for_all` yöntem sağlamaz bir `task_group` veya `structured_task_group` çağırana nesnesi. Bu nedenle, iş işlevi doğrudan kendi üst görev grubu iptal etmek alamıyor.  
-  
- Bir görev grubuna sağladığınız çalışma işlevi bir özel durum oluşturduğunda, çalışma zamanı (tüm alt görev grupları dahil) görev grubundaki tüm görevler durdurur ve henüz başlatılmamış herhangi bir görevi atar. `search_for_value` İşlev kullanan bir `try` - `catch` blok özel durum yakalama ve sonucu konsola yazdırır.  
-  
- [!code-cpp[concrt-task-tree-search#3](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_3.cpp)]  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte bir `tree` nesne ve paralel çeşitli değerleri arar. `build_tree` İşlevi, bu konunun devamında gösterilir.  
-  
- [!code-cpp[concrt-task-tree-search#4](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_4.cpp)]  
-  
- Bu örnekte [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) değerleri paralel arama algoritması. Bu algoritma hakkında daha fazla bilgi için bkz: [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki tam bir örnek değerleri temel ağaç yapısındaki aramak için özel durum işleme kullanır.  
-  
- [!code-cpp[concrt-task-tree-search#5](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_5.cpp)]  
-  
- Bu örnekte aşağıdaki örnek çıkışı üretir.  
-  
-```Output  
-Found a node with value 32614.  
-Found a node with value 86131.  
-Did not find node with value 17522.  
-```  
-  
-## <a name="compiling-the-code"></a>Kod Derleniyor  
- Örnek kodu kopyalayın ve bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `task-tree-search.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
-  
- **cl.exe /EHsc görev-ağaç-search.cpp**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [PPL'de iptal](cancellation-in-the-ppl.md)   
- [Özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)   
- [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)   
- [Paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md)   
- [task_group sınıfı](reference/task-group-class.md)   
- [structured_task_group sınıfı](../../parallel/concrt/reference/structured-task-group-class.md)   
- [parallel_for_each işlevi](reference/concurrency-namespace-functions.md#parallel_for_each)
+Bu konu, temel ağaç yapısı için bir arama algoritması yazma işlemi gösterilmektedir.
 
+Konu [iptal](cancellation-in-the-ppl.md) paralel desen Kitaplığı'ndaki iptal rolünü açıklar. Özel durum işleme kullanımını daha paralel işi iptal etmek için daha az verimli bir şekilde kullanımıdır [concurrency::task_group::cancel](reference/task-group-class.md#cancel) ve [CONCURRENCY::structured_task_group:: Cancel](reference/structured-task-group-class.md#cancel) yöntemleri. Görevler veya paralel algoritmalar kullanır ancak sağlamaz bir üçüncü taraf kitaplığına çağırdığınızda ancak, özel durum işleme işi iptal etmek için kullanımını olduğu uygun bir senaryodur bir `task_group` veya `structured_task_group` iptal etmek için nesne.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, bir temel gösterir `tree` veri öğesinin ve alt düğümlerin listesini içeren bir tür. Aşağıdaki bölümde gövdesinin gösterir `for_all` yöntemi, art arda, her bir alt düğümde bir iş işlevi gerçekleştirir.
+
+[!code-cpp[concrt-task-tree-search#2](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_1.cpp)]
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnekte gösterildiği `for_all` yöntemi. Kullandığı [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) her düğümde ağacı paralel bir iş işlevi gerçekleştirmek için algoritma.
+
+[!code-cpp[concrt-task-tree-search#1](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_2.cpp)]
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnekte gösterildiği `search_for_value` belirtilen bir değeri arar işlevi `tree` nesne. Bu işleve geçirir `for_all` sağlanan değer içeren bir ağaç düğümü bulduğunda oluşturan iş işlevi bir yöntem.
+
+Varsayımında `tree` sınıfı bir üçüncü taraf kitaplığı tarafından sağlanan ve üzerinde değişiklik yapamazsınız. Bu durumda, özel durum işleme kullanmak uygundur çünkü `for_all` yöntemi sağlamaz bir `task_group` veya `structured_task_group` çağırana nesne. Bu nedenle, iş işlevi doğrudan kendi üst görev grubunu iptal etmek silemiyor.
+
+Bir görev grubuna sağladığınız çalışma işlevi bir özel durum oluşturduğunda, çalışma zamanı (herhangi bir alt görev grupları dahil) görev grubu içinde olan tüm görevleri durdurur ve henüz başlamamış herhangi bir görevi atar. `search_for_value` İşlevini kullanan bir `try` - `catch` bloğu özel durumu yakalayıp sonucu konsola yazdırır.
+
+[!code-cpp[concrt-task-tree-search#3](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_3.cpp)]
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, oluşturur bir `tree` nesne ve paralel değerlerden arar. `build_tree` İşlevi bu konunun ilerleyen bölümlerinde gösterilmektedir.
+
+[!code-cpp[concrt-task-tree-search#4](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_4.cpp)]
+
+Bu örnekte [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algoritmasını paralel değerlerde arayın. Bu algoritma hakkında daha fazla bilgi için bkz: [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki tam bir örnek değerler temel ağaç yapısında aramak için özel durum işleme kullanır.
+
+[!code-cpp[concrt-task-tree-search#5](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_5.cpp)]
+
+Bu örnek, aşağıdaki örnek çıktısı üretir.
+
+```Output
+Found a node with value 32614.
+Found a node with value 86131.
+Did not find node with value 17522.
+```
+
+## <a name="compiling-the-code"></a>Kod Derleniyor
+
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `task-tree-search.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+
+**cl.exe/ehsc görev-ağaç-search.cpp**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[PPL'de İptal](cancellation-in-the-ppl.md)<br/>
+[Özel Durum İşleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
+[Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
+[Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)<br/>
+[task_group sınıfı](reference/task-group-class.md)<br/>
+[structured_task_group Sınıfı](../../parallel/concrt/reference/structured-task-group-class.md)<br/>
+[parallel_for_each işlevi](reference/concurrency-namespace-functions.md#parallel_for_each)
 

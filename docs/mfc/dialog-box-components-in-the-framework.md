@@ -18,25 +18,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a92846dc1d7b950d1eccfa4cd42b01ac84d96b34
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9fb72e2961eec53b2dea8e37cfc39ccbcc0c5f27
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343973"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46397175"
 ---
 # <a name="dialog-box-components-in-the-framework"></a>Framework'te İletişim Kutusu Bileşenleri
-MFC çerçevesi bir iletişim kutusu iki bileşenden oluşur:  
-  
--   İletişim kutusunun denetimleri ve yatırımlarından belirten bir iletişim şablon kaynağı.  
-  
-     İletişim kaynağını içinden Windows iletişim kutusu penceresinin oluşturur ve görüntüler bir iletişim şablonunu depolar. Şablon boyutuna, konum, stil ve türleri ve iletişim kutusunun denetimleri konumlarını dahil olmak üzere, iletişim kutusunun özellikleri belirtir. Genellikle bir kaynak olarak saklanan bir iletişim şablonunu kullanır, ancak, aynı zamanda bellekte kendi şablonunuzu oluşturabilirsiniz.  
-  
--   Bir iletişim kutusu sınıfı türetilen [CDialog](../mfc/reference/cdialog-class.md), iletişim kutusu yönetmek için programlı bir arabirim sağlar.  
-  
-     Bir iletişim kutusu bir penceredir ve bir Windows pencere görünür olduğunda bağlı. İletişim penceresi oluşturulduğunda, iletişim şablon kaynağı alt iletişim kutusu için pencere denetimleri oluşturmak için şablon olarak kullanılır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutuları](../mfc/dialog-boxes.md)   
- [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+
+MFC çerçevesi içinde bir iletişim kutusu iki bileşenden oluşur:
+
+- İletişim kutusunun denetimleri ve bunların yerleştirme belirten bir iletişim şablonunu kaynağıdır.
+
+     İletişim kaynağını Windows iletişim kutusu penceresini oluşturur ve görüntüler, bir iletişim şablonunu depolar. Şablonu, boyutunu, konumu, stil ve türleri ve iletişim kutusunun denetimleri konumlarını dahil olmak üzere, iletişim kutusunun özelliklerini belirtir. Genellikle, bir kaynak olarak depolanan bir iletişim şablonunu kullanır, ancak ayrıca bellekte kendi şablonunuzu oluşturabilirsiniz.
+
+- Bir iletişim kutusu sınıfı türetilen [CDialog](../mfc/reference/cdialog-class.md), iletişim kutusu yönetmek için bir programlama arabirimi sağlar.
+
+     Bir iletişim kutusu, bir pencere ve bir Windows penceresi görünür olduğunda eklenir. İletişim kutusu penceresi oluşturulurken iletişim şablon kaynağı alt iletişim kutusu için pencere denetimleri oluşturmak için şablon olarak kullanılır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
+[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
 

@@ -1,5 +1,5 @@
 ---
-title: InvokeModeOptions yapısı | Microsoft Docs
+title: Invokemodeoptions yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 03/22/2018
 ms.technology:
@@ -17,16 +17,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5b1eb0e7f6cf49a7c6ac12a4810ae1622e263e2f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ea549db29f7fcb67e4d59e341bf7d5ad085b6d7f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33882843"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392716"
 ---
-# <a name="invokemodeoptions-structure"></a>InvokeModeOptions yapısı
+# <a name="invokemodeoptions-structure"></a>Invokemodeoptions yapısı
 
-Temsilci sırasındaki tüm olay harekete veya bir hata yükseltildikten sonra tetikleme durdurmayı belirtir. İzin verilen değerler belirtilen `InvokeMode` enum.
+Temsilci sırasındaki tüm olaylarını başlatmak için ya da bir hata oluştuktan sonra tetikleme durdurmak için belirtir. İzin verilen değerler belirtilen `InvokeMode` sabit listesi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,5 +51,5 @@ struct InvokeModeOptions
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)<br/>
 [Microsoft::WRL::AgileEventSource sınıfı](../windows/agileeventsource-class.md)

@@ -1,5 +1,5 @@
 ---
-title: CMFCToolBarInfo sınıfı | Microsoft Docs
+title: Cmfctoolbarınfo sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -32,103 +32,116 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de968fe53348b4cfa3f46e999da37cdca6f88c90
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7825983fbc70dafbbcc96221b8a38c3ae4e939c5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369368"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435447"
 ---
-# <a name="cmfctoolbarinfo-class"></a>CMFCToolBarInfo sınıfı
-Kaynak kimlikleri araç görüntülerinin çeşitli durumlarını içerir. `CMFCToolBarInfo` bir parametresi olarak kullanılan bir yardımcı sınıf olan [CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) yöntemi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CMFCToolBarInfo  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="data-members"></a>Veri üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CMFCToolBarInfo::m_uiColdResID](#m_uicoldresid)|Normal (cold) araç görüntüleri içeren araç bit eşlem kaynak kimliği.|  
-|[CMFCToolBarInfo::m_uiDisabledResID](#m_uidisabledresid)|Devre dışı bırakılmış araç görüntüleri içeren araç bit eşlem kaynak kimliği.|  
-|[CMFCToolBarInfo::m_uiHotResID](#m_uihotresid)|Seçili (etkin) araç görüntüleri içeren araç bit eşlem kaynak kimliği.|  
-|[CMFCToolBarInfo::m_uiLargeColdResID](#m_uilargecoldresid)|Büyük, normal araç görüntüleri içeren araç bit eşlem kaynak kimliği.|  
-|[CMFCToolBarInfo::m_uiLargeDisabledResID](#m_uilargedisabledresid)|Kaynak Kimliği büyük içeren araç bit eşlem araç görüntüleri devre dışı.|  
-|[CMFCToolBarInfo::m_uiLargeHotResID](#m_uilargehotresid)|Büyük, seçilen araç görüntüleri içeren araç bit eşlem kaynak kimliği.|  
-|[CMFCToolBarInfo::m_uiMenuDisabledResID](#m_uimenudisabledresid)|Devre dışı bırakılmış menü görüntüsü yer araç bit eşlem kaynak kimliği.|  
-|[CMFCToolBarInfo::m_uiMenuResID](#m_uimenuresid)|Menü görüntüsü yer araç bit eşlem kaynak kimliği.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Tam araç çubuğu bit eşlem küçük araç görüntülerini sabit bir boyuta (düğme) oluşur. Depolanan her kaynak kimliği bir `CMFCToolBarInfo` (örneğin, seçili, devre dışı bırakıldı, büyük veya menü görüntüler için) tek bir durumda araç görüntülerinin tam kümesi içeren bir bit eşlem nesnesidir.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CMFCToolBarInfo](../../mfc/reference/cmfctoolbarinfo-class.md)  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxtoolbar.h  
-  
-##  <a name="m_uicoldresid"></a>  CMFCToolBarInfo::m_uiColdResID  
- Araç çubuğunun tüm normal düğmesi görüntüleri için kaynak Kimliğini belirtir.  
-  
-```  
-UINT m_uiColdResID;  
-```  
-  
-##  <a name="m_uidisabledresid"></a>  CMFCToolBarInfo::m_uiDisabledResID  
- Araç çubuğu düğmesi kullanılamıyor görüntüler için bir kaynak kimliği belirtir.  
-  
-```  
-UINT m_uiDisabledResID;  
-```  
-  
-##  <a name="m_uihotresid"></a>  CMFCToolBarInfo::m_uiHotResID  
- Araç çubuğunun tüm vurgulanan düğmesi görüntüleri için kaynak Kimliğini belirtir.  
-  
-```  
-UINT m_uiHotResID  
-```  
-  
-##  <a name="m_uilargecoldresid"></a>  CMFCToolBarInfo::m_uiLargeColdResID  
- Tüm büyük normal düğme görüntülerini bir araç için bir kaynak kimliği belirtir.  
-  
-```  
-UINT m_uiLargeColdResID  
-```  
-  
-##  <a name="m_uilargedisabledresid"></a>  CMFCToolBarInfo::m_uiLargeDisabledResID  
- Araç çubuğunun tüm büyük devre dışı düğme görüntüleri için kaynak Kimliğini belirtir.  
-  
-```  
-UINT m_uiLargeDisabledResID;  
-```  
-  
-##  <a name="m_uilargehotresid"></a>  CMFCToolBarInfo::m_uiLargeHotResID  
- Tüm büyük vurgulanan görüntüleri bir araç için bir kaynak kimliği belirtir.  
-  
-```  
-UINT m_uiLargeHotResID;  
-```  
-  
-##  <a name="m_uimenudisabledresid"></a>  CMFCToolBarInfo::m_uiMenuDisabledResID  
- Araç çubuğu komutu kullanılamaz görüntüler için bir kaynak kimliği belirtir.  
-  
-```  
-UINT m_uiMenuDisabledResID;  
-```  
-  
-##  <a name="m_uimenuresid"></a>  CMFCToolBarInfo::m_uiMenuResID  
- Tüm normal menü öğesi görüntülerini bir araç için bir kaynak kimliği belirtir.  
-  
-```  
-UINT m_uiMenuResID;  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMFCToolBar Sınıfı](../../mfc/reference/cmfctoolbar-class.md)
+# <a name="cmfctoolbarinfo-class"></a>Cmfctoolbarınfo sınıfı
+
+Kaynak araç çubuğu görüntülerinin çeşitli durumlarda kimliklerini içerir. `CMFCToolBarInfo` bir parametre olarak kullanılan bir yardımcı sınıftır [CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) yöntemi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CMFCToolBarInfo
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="data-members"></a>Veri üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CMFCToolBarInfo::m_uiColdResID](#m_uicoldresid)|Normal (durağan) araç çubuğu görüntülerini içeren araç çubuğu bit eşlemi kaynak kimliği.|
+|[CMFCToolBarInfo::m_uiDisabledResID](#m_uidisabledresid)|Devre dışı bırakılmış bir araç çubuğu görüntülerini içeren araç çubuğu bit eşlemi kaynak kimliği.|
+|[CMFCToolBarInfo::m_uiHotResID](#m_uihotresid)|Seçili (etkin) araç çubuğu görüntülerini içeren araç çubuğu bit eşlemi kaynak kimliği.|
+|[CMFCToolBarInfo::m_uiLargeColdResID](#m_uilargecoldresid)|Büyük, normal bir araç çubuğu görüntülerini içeren araç çubuğu bit eşlemi kaynak kimliği.|
+|[CMFCToolBarInfo::m_uiLargeDisabledResID](#m_uilargedisabledresid)|Büyük içeren araç çubuğu bit eşlemi Kaynak Kimliğine araç çubuğu görüntülerini devre dışı.|
+|[CMFCToolBarInfo::m_uiLargeHotResID](#m_uilargehotresid)|Büyük, seçilen araç çubuğu görüntülerini içeren araç çubuğu bit eşlemi kaynak kimliği.|
+|[CMFCToolBarInfo::m_uiMenuDisabledResID](#m_uimenudisabledresid)|Devre dışı bırakılmış menü görüntüsü yer araç çubuğu bit eşlemi kaynak kimliği.|
+|[CMFCToolBarInfo::m_uiMenuResID](#m_uimenuresid)|Menü görüntüsü yer araç çubuğu bit eşlemi kaynak kimliği.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Tam araç çubuğu bit eşlem küçük araç çubuğu görüntülerini sabit bir boyuta (düğme) oluşur. Depolanan her kaynak kimliği bir `CMFCToolBarInfo` araç çubuğu görüntülerini tek bir durumda (örneğin, seçili, devre dışı, büyük veya menü görüntüsü için) tam bir dizi içeren bir bit eşlem nesnedir.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[Cmfctoolbarınfo](../../mfc/reference/cmfctoolbarinfo-class.md)
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxtoolbar.h
+
+##  <a name="m_uicoldresid"></a>  CMFCToolBarInfo::m_uiColdResID
+
+Bir kaynak kimliği için bir araç çubuğu tüm normal bir düğme görüntülerini belirtir.
+
+```
+UINT m_uiColdResID;
+```
+
+##  <a name="m_uidisabledresid"></a>  CMFCToolBarInfo::m_uiDisabledResID
+
+Bir kaynak kimliği için bir araç çubuğu düğmesi kullanılamıyor görüntülerini belirtir.
+
+```
+UINT m_uiDisabledResID;
+```
+
+##  <a name="m_uihotresid"></a>  CMFCToolBarInfo::m_uiHotResID
+
+Bir araç çubuğunun tüm vurgulanan düğmesi görüntüler için bir kaynak Kimliğini belirtir.
+
+```
+UINT m_uiHotResID
+```
+
+##  <a name="m_uilargecoldresid"></a>  CMFCToolBarInfo::m_uiLargeColdResID
+
+Bir kaynak kimliği için bir araç tüm büyük normal düğme görüntülerini belirtir.
+
+```
+UINT m_uiLargeColdResID
+```
+
+##  <a name="m_uilargedisabledresid"></a>  CMFCToolBarInfo::m_uiLargeDisabledResID
+
+Bir kaynak kimliği için bir araç tüm büyük devre dışı düğme görüntülerini belirtir.
+
+```
+UINT m_uiLargeDisabledResID;
+```
+
+##  <a name="m_uilargehotresid"></a>  CMFCToolBarInfo::m_uiLargeHotResID
+
+Bir kaynak kimliği için tüm büyük vurgulanan görüntüleri bir araç çubuğunun belirtir.
+
+```
+UINT m_uiLargeHotResID;
+```
+
+##  <a name="m_uimenudisabledresid"></a>  CMFCToolBarInfo::m_uiMenuDisabledResID
+
+Bir kaynak kimliği için bir araç çubuğu komut kullanılamaz görüntülerini belirtir.
+
+```
+UINT m_uiMenuDisabledResID;
+```
+
+##  <a name="m_uimenuresid"></a>  CMFCToolBarInfo::m_uiMenuResID
+
+Bir kaynak kimliği için bir araç çubuğunun tüm normal menü öğesi resimlerinin belirtir.
+
+```
+UINT m_uiMenuResID;
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
+[CMFCToolBar Sınıfı](../../mfc/reference/cmfctoolbar-class.md)

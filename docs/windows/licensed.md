@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e57e0cd60ee1d07f29c3aba5540980cd5f4ae02b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b03a98ead4fd59052394fe8994dfe9ff51e04090
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209908"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46381263"
 ---
 # <a name="licensed"></a>lisanslı
 
@@ -74,5 +74,5 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
 [Sınıf Öznitelikleri](../windows/class-attributes.md)  

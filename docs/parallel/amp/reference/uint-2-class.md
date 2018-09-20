@@ -38,167 +38,164 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 375e9c8ce4c2060e41fbebc51f6512d293a15517
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ee6c51a084b3fca7a5665fe943cfeaff3a48afce
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46059309"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391858"
 ---
 # <a name="uint2-class"></a>uint_2 Sınıfı
-İki işaretsiz tam sayı oluşan bir kısa vektörü temsil eder.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class uint_2;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-typedefs"></a>Genel Typedefler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`value_type`||  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[uint_2 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|uint_2::get_x||  
-|uint_2::get_xy||  
-|uint_2::get_y||  
-|uint_2::get_yx||  
-|uint_2::ref_g_Method||  
-|uint_2::ref_r_Method||  
-|uint_2::ref_x_Method||  
-|uint_2::ref_y_Method||  
-|uint_2::set_x||  
-|uint_2::set_xy||  
-|uint_2::set_y||  
-|uint_2::set_yx||  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|uint_2::operator--||  
-|uint_2::operator%=||  
-|uint_2::operator & =||  
-|uint_2::operator * =||  
-|uint_2::operator / =||  
-|uint_2::operator^=||  
-|uint_2::operator&#124;=||  
-|uint_2::operator ~||  
-|uint_2::operator ++||  
-|uint_2::operator+=||  
-|uint_2::operator <\<=||  
-|uint_2::operator=||  
-|uint_2::operator-=||  
-|uint_2::operator >> =||  
-  
-### <a name="public-constants"></a>Genel sabitler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[boyutu sabiti](#uint_2__size)||  
-  
-### <a name="public-data-members"></a>Ortak Veri Üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|uint_2::g||  
-|uint_2::Gr||  
-|uint_2::r||  
-|uint_2::rg||  
-|uint_2::x||  
-|uint_2::xy||  
-|uint_2::y||  
-|uint_2::yx||  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `uint_2`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** amp_short_vectors.h  
-  
- **Namespace:** Concurrency::graphics  
-  
-##  <a name="ctor"></a> uint_2 
 
- Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.  
-  
-```  
+İki işaretsiz tam sayı oluşan bir kısa vektörü temsil eder.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class uint_2;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-typedefs"></a>Genel Typedefler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`value_type`||
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[uint_2 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|uint_2::get_x||
+|uint_2::get_xy||
+|uint_2::get_y||
+|uint_2::get_yx||
+|uint_2::ref_g_Method||
+|uint_2::ref_r_Method||
+|uint_2::ref_x_Method||
+|uint_2::ref_y_Method||
+|uint_2::set_x||
+|uint_2::set_xy||
+|uint_2::set_y||
+|uint_2::set_yx||
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|uint_2::operator--||
+|uint_2::operator%=||
+|uint_2::operator & =||
+|uint_2::operator * =||
+|uint_2::operator / =||
+|uint_2::operator^=||
+|uint_2::operator&#124;=||
+|uint_2::operator ~||
+|uint_2::operator ++||
+|uint_2::operator+=||
+|uint_2::operator <\<=||
+|uint_2::operator=||
+|uint_2::operator-=||
+|uint_2::operator >> =||
+
+### <a name="public-constants"></a>Genel sabitler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[boyutu sabiti](#uint_2__size)||
+
+### <a name="public-data-members"></a>Ortak Veri Üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|uint_2::g||
+|uint_2::Gr||
+|uint_2::r||
+|uint_2::rg||
+|uint_2::x||
+|uint_2::xy||
+|uint_2::y||
+|uint_2::yx||
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`uint_2`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** amp_short_vectors.h
+
+**Namespace:** Concurrency::graphics
+
+##  <a name="ctor"></a> uint_2
+
+Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+
+```
 uint_2() restrict(amp,
     cpu);
 
- 
 uint_2(
-    unsigned int _V0,  
+    unsigned int _V0,
     unsigned int _V1) restrict(amp,
     cpu);
 
- 
 uint_2(
     unsigned int _V) restrict(amp,
     cpu);
 
- 
 uint_2(
     const uint_2& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline uint_2(
     const int_2& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline uint_2(
     const float_2& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline uint_2(
     const unorm_2& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline uint_2(
     const norm_2& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline uint_2(
     const double_2& _Other) restrict(amp,
     cpu);
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*_V0*<br/>
-Öğe 0'ı başlatmak için değer.  
-  
-*_V1*<br/>
-1 öğe başlatmak için değer.  
-  
-*_V*<br/>
-Başlatma için değer.  
-  
-*_Diğer*<br/>
-Başlatmak için kullanılan nesne.  
-  
-##  <a name="uint_2__size"></a> Boyutu 
+```
 
-```  
-static const int size = 2;  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)
+### <a name="parameters"></a>Parametreler
+
+*_V0*<br/>
+Öğe 0'ı başlatmak için değer.
+
+*_V1*<br/>
+1 öğe başlatmak için değer.
+
+*_V*<br/>
+Başlatma için değer.
+
+*_Diğer*<br/>
+Başlatmak için kullanılan nesne.
+
+##  <a name="uint_2__size"></a> Boyutu
+
+```
+static const int size = 2;
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

@@ -16,53 +16,57 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b87b0c8c179e2982c450d244c50ea89dad2a596a
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 913a87383e617f331043751c4e3089acac744c7f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848612"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374650"
 ---
 # <a name="cmfcimagepaintareaimageeditmode-enumeration"></a>CMFCImagePaintArea::IMAGE_EDIT_MODE Numaralandırması
-Bir Resim Düzenleyicisi iletişim kutusunu görüntüdeki değiştirmek için kullandığınız bir çizim modunu belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-enum IMAGE_EDIT_MODE  
-{  
-    IMAGE_EDIT_MODE_PEN = 0,  
-    IMAGE_EDIT_MODE_FILL, 
-    IMAGE_EDIT_MODE_LINE, 
-    IMAGE_EDIT_MODE_RECT, 
-    IMAGE_EDIT_MODE_ELLIPSE, 
-    IMAGE_EDIT_MODE_COLOR 
-};  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-|||  
-|-|-|  
-|Ad|Açıklama|  
-|IMAGE_EDIT_MODE_PEN|Tek tek her piksel çizmek için kullanılır.|  
-|IMAGE_EDIT_MODE_FILL|Geçerli imleç konumu rengi içeren tüm bitişik alanları doldurmak için kullanılır.|  
-|IMAGE_EDIT_MODE_LINE|Bir çizgi çizmek için kullanılır.|  
-|IMAGE_EDIT_MODE_RECT|Bir dikdörtgen çizmek için kullanılır.|  
-|IMAGE_EDIT_MODE_ELLIPSE|Elips çizin için kullanılır.|  
-|IMAGE_EDIT_MODE_COLOR|Geçerli renk geçerli İmleç konumuna rengini ayarlamak için kullanılır.|  
-  
-### <a name="remarks"></a>Açıklamalar  
- `CMFCImagePaintArea` Ve `CMFCImageEditorDialog` sınıfları bu sabit listesi geçerli çizim modu ayarlamak için kullanın. Geçerli renk ve çizim modu, bir Resim Düzenleyicisi iletişim kutusu resim alanı değiştirmek için kullanılır. Hakkında daha fazla bilgi için `CMFCImagePaintArea` ve `CMFCImageEditorDialog`, bkz: [Cmfcımagepaintarea sınıfı](../../mfc/reference/cmfcimagepaintarea-class.md) ve [CMFCImageEditorDialog sınıfı](../../mfc/reference/cmfcimageeditordialog-class.md).  
-  
- IMAGE_EDIT_MODE_COLOR çizim modu kullanarak görüntüden bir renk seçtiğinizde, framework IMAGE_EDIT_MODE_PEN için geçerli çizim modu ayarlar.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afximagepaintarea.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [Cmfcımagepaintarea sınıfı](../../mfc/reference/cmfcimagepaintarea-class.md)   
- [CMFCImageEditorDialog Sınıfı](../../mfc/reference/cmfcimageeditordialog-class.md)
+
+Bir Resim Düzenleyicisi iletişim kutusunu görüntüdeki değiştirmek için kullandığınız bir çizim modunu belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+enum IMAGE_EDIT_MODE
+{
+    IMAGE_EDIT_MODE_PEN = 0,
+    IMAGE_EDIT_MODE_FILL,
+    IMAGE_EDIT_MODE_LINE,
+    IMAGE_EDIT_MODE_RECT,
+    IMAGE_EDIT_MODE_ELLIPSE,
+    IMAGE_EDIT_MODE_COLOR
+};
+```
+
+## <a name="members"></a>Üyeler
+
+|||
+|-|-|
+|Ad|Açıklama|
+|IMAGE_EDIT_MODE_PEN|Tek tek her piksel çizmek için kullanılır.|
+|IMAGE_EDIT_MODE_FILL|Geçerli imleç konumu rengi içeren tüm bitişik alanları doldurmak için kullanılır.|
+|IMAGE_EDIT_MODE_LINE|Bir çizgi çizmek için kullanılır.|
+|IMAGE_EDIT_MODE_RECT|Bir dikdörtgen çizmek için kullanılır.|
+|IMAGE_EDIT_MODE_ELLIPSE|Elips çizin için kullanılır.|
+|IMAGE_EDIT_MODE_COLOR|Geçerli renk geçerli İmleç konumuna rengini ayarlamak için kullanılır.|
+
+### <a name="remarks"></a>Açıklamalar
+
+`CMFCImagePaintArea` Ve `CMFCImageEditorDialog` sınıfları bu sabit listesi geçerli çizim modu ayarlamak için kullanın. Geçerli renk ve çizim modu, bir Resim Düzenleyicisi iletişim kutusu resim alanı değiştirmek için kullanılır. Hakkında daha fazla bilgi için `CMFCImagePaintArea` ve `CMFCImageEditorDialog`, bkz: [Cmfcımagepaintarea sınıfı](../../mfc/reference/cmfcimagepaintarea-class.md) ve [CMFCImageEditorDialog sınıfı](../../mfc/reference/cmfcimageeditordialog-class.md).
+
+IMAGE_EDIT_MODE_COLOR çizim modu kullanarak görüntüden bir renk seçtiğinizde, framework IMAGE_EDIT_MODE_PEN için geçerli çizim modu ayarlar.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afximagepaintarea.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)<br/>
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
+[CMFCImagePaintArea Sınıfı](../../mfc/reference/cmfcimagepaintarea-class.md)<br/>
+[CMFCImageEditorDialog Sınıfı](../../mfc/reference/cmfcimageeditordialog-class.md)

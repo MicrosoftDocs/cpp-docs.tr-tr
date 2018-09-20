@@ -26,115 +26,132 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83ae0a746e31c211517563a018e5b7da18e3350a
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 0e8cde676795067005406f3eba86bdda7082f272
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36955602"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435603"
 ---
 # <a name="cdockstate-class"></a>CDockState sınıfı
-Seri hale getirilmiş bir `CObject` yükler, kaldırır ya da bir veya daha fazla yerleştirme denetim durumunu temizler sınıfı çubuklarını kalıcı bellek (dosya).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CDockState : public CObject  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CDockState::Clear](#clear)|Yerleştirme durum bilgilerini temizler.|  
-|[CDockState::GetVersion](#getversion)|Depolanan sürüm numarasını alır çubuk durumu.|  
-|[CDockState::LoadState](#loadstate)|Durum bilgilerini kayıt defterinden alır veya. INI dosyası.|  
-|[CDockState::SaveState](#savestate)|Durum bilgileri kayıt defteri veya INI dosyası kaydeder.|  
-  
-### <a name="public-data-members"></a>Ortak Veri Üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CDockState::m_arrBarInfo](#m_arrbarinfo)|İşaretçileri saklı dizisi her denetim çubuğu için bir giriş durum bilgileriyle yerleştirme.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Yerleştirme durumu boyutunu ve konumunu çubuğu ve desteklemediğini yerleşik içerir. Ne zaman alınırken saklı izin ver yerleştirme durumu, `CDockState` çubuğunun denetler konumu ve çubuğu geçerli ekran ayarlarla görünür değilse `CDockState` çubuğunun ölçeklendirir böylece görünür getirin. Ana amacı `CDockState` bir dizi denetim çubukları tüm durumunu tutacak ve kaydedilmesi bu duruma izin vermek için ve ya da kayıt defterindeki, uygulama yüklenir. INI dosyası veya ikili biçimde bir parçası olarak bir `CArchive` nesnenin içeriği.  
-  
- Çubuğunun çubuk, araç, durum çubuğu ya da iletişim çubuğu dahil olmak üzere herhangi bir dockable denetimi olabilir. `CDockState` nesneleri yazılmış ve okuma için veya bir dosyadan bir `CArchive` nesnesi.  
-  
- [CFrameWnd::GetDockState](../../mfc/reference/cframewnd-class.md#getdockstate) tüm çerçeve pencere durumu bilgilerini alır `CControlBar` nesneleri ve içine yerleştirir `CDockState` nesnesi. Ardından içeriğini yazmak `CDockState` depolama ile nesnesine [serileştirme](../../mfc/reference/cobject-class.md#serialize) veya [CDockState::SaveState](#savestate). Daha sonra çerçeve penceresindeki denetim çubukları durumunu geri yüklemek istiyorsanız, durumuyla yükleyebilir `Serialize` veya [CDockState::LoadState](#loadstate), ardından [CFrameWnd::SetDockState](../../mfc/reference/cframewnd-class.md#setdockstate) kaydedilen uygulamak için çerçeve pencere denetim çubukları durumuna.  
-  
- Denetim çubukları yerleştirme daha fazla bilgi için makalelerine bakın [denetim çubukları](../../mfc/control-bars.md), [araç çubukları: yerleşen ve kayan](../../mfc/docking-and-floating-toolbars.md), ve [çerçeve pencereleri](../../mfc/frame-windows.md).  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- `CDockState`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxadv.h  
-  
-##  <a name="clear"></a>  CDockState::Clear  
- İçinde depolanan tüm takma bilgilerini temizlemek için bu işlevi çağırmak `CDockState` nesnesi.  
-  
-```  
+
+Seri hale getirilmiş bir `CObject` yükler, kaldırır veya bir veya daha fazla yerleştirme denetim durumunu temizler sınıfı çubuklarını kalıcı bellekte (bir dosya).
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CDockState : public CObject
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CDockState::Clear](#clear)|Dock durum bilgilerini temizler.|
+|[CDockState::GetVersion](#getversion)|Depolanan sürüm numarasını alır. durum çubuğu.|
+|[CDockState::LoadState](#loadstate)|Durum bilgilerini kayıt defterinden alır veya. INI dosyası.|
+|[CDockState::SaveState](#savestate)|INI dosya ve kayıt defteri için durum bilgilerini kaydeder.|
+
+### <a name="public-data-members"></a>Ortak Veri Üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CDockState::m_arrBarInfo](#m_arrbarinfo)|Her denetim çubuğu için bir giriş olan durum bilgilerini dock saklı işaretçiler dizisi.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Dock durumu, boyutunu ve konumunu çubuğu ve yerleştirilmiş olup olmadığını içerir. Ne zaman saklı alınırken izin ver dock durumu `CDockState` çubuğunun denetler konumu ve geçerli ekran ayarlarla çubuğu görünmüyorsa `CDockState` çubuğunun ölçeklendirir görünür olması getirin. Ana amacı, `CDockState` ya da kayıt defterindeki, uygulama yüklendi ve bir dizi denetim çubukları tüm durumu tutacak ve kaydedilmesi bu duruma izin vermek için. INI dosyası veya bir parçası olarak ikili biçimde bir `CArchive` nesnenin içeriğini.
+
+Çubuk çubuğu, araç, durum çubuğu veya iletişim çubuğu gibi herhangi bir yerleştirilebilir denetimi olabilir. `CDockState` nesneleri yazılır ve okuma için veya bir dosyadan bir `CArchive` nesne.
+
+[CFrameWnd::GetDockState](../../mfc/reference/cframewnd-class.md#getdockstate) tüm çerçeve penceresinin durumu bilgilerini alır `CControlBar` nesneleri ve içine yerleştirir `CDockState` nesne. Ardından içeriğini yazabileceğiniz `CDockState` ile depolama nesnesine [serileştirme](../../mfc/reference/cobject-class.md#serialize) veya [CDockState::SaveState](#savestate). Daha sonra Denetim çubukları çerçeve penceresindeki durumunu geri yüklemek istiyorsanız, durumuyla yükleyebilir `Serialize` veya [CDockState::LoadState](#loadstate), ardından [CFrameWnd::SetDockState](../../mfc/reference/cframewnd-class.md#setdockstate) kaydedilen uygulamak için Çerçeve penceresinin denetim çubukları durumu.
+
+Denetim çubukları yerleştirme daha fazla bilgi için makalelere göz atın [denetim çubukları](../../mfc/control-bars.md), [araç çubukları: yerleşen ve kayan](../../mfc/docking-and-floating-toolbars.md), ve [çerçeve Windows](../../mfc/frame-windows.md).
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+`CDockState`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxadv.h
+
+##  <a name="clear"></a>  CDockState::Clear
+
+İçinde depolanan tüm yerleştirme bilgilerini temizlemek için bu işlevi çağırın `CDockState` nesne.
+
+```
 void Clear();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bu, yalnızca çubuğu ya da değildir, çubuğunun boyutunu ve konumunu yerleştirilmiş olup olmadığını ve görünür olup olmadığını içerir.  
-  
-##  <a name="getversion"></a>  CDockState::GetVersion  
- Depolanan sürüm numarasını almak için bu işlevi çağırmak çubuk durumu.  
-  
-```  
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu çubuk veya olmasın çubuğunun boyutunu ve konumunu yerleştirildiğini olup olmadığını ve yalnızca görünür olup olmadığını içerir.
+
+##  <a name="getversion"></a>  CDockState::GetVersion
+
+Depolanan sürüm numarasını almak için bu işlevi çağırın durum çubuğu.
+
+```
 DWORD GetVersion();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- 1 IF saklı çubuğu bilgidir sürümden geçerli durumu; çubuğu 2 IF saklı çubuğu bilgi aynıdır geçerli çubuk durumu.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Yeni kalıcı özellikleri ekleyin ve yine algılayıp çubuğu önceki bir sürümü tarafından oluşturulmuş kalıcı durumunu yüklemek için yeniden düzenlenen çubuğu sürüm desteği sağlar.  
-  
-##  <a name="loadstate"></a>  CDockState::LoadState  
- Kayıt defterinden durum bilgilerini almak için bu işlevi çağırmak veya. INI dosyası.  
-  
-```  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+1 ise saklı Çubuğu Bilgi çubuğu durumu; geçerli daha eski 2 ise saklı çubuğu bilgi aynıdır geçerli durum çubuğu.
+
+### <a name="remarks"></a>Açıklamalar
+
+Sürekli yeni özellikler ekleyebilir ve hala algılamak ve çubuk önceki bir sürümü tarafından oluşturulmuş durumunu sürekli yükleme için düzeltilmiş çubuğu sürüm desteği sağlar.
+
+##  <a name="loadstate"></a>  CDockState::LoadState
+
+Kayıt defterinden durum bilgilerini almak için bu işlevi çağırın veya. INI dosyası.
+
+```
 void LoadState(LPCTSTR lpszProfileName);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *lpszProfileName*  
- Noktaları bir null teminated dizeye başlatma dosyası ya da durum bilgilerini depolandığı Windows kayıt defteri anahtarında bölümün adını belirtir.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Profil adı uygulamanın bölümüdür. INI dosyası veya çubukları durum bilgilerini içeren kayıt defteri. Denetim çubuğu durum bilgilerini kayıt defterine kaydedebilirsiniz veya. INI dosyası ile `SaveState`.  
-  
-##  <a name="m_arrbarinfo"></a>  CDockState::m_arrBarInfo  
- A `CPtrArray` durum bilgilerini kaydetti her denetim çubuğu depolanan denetim çubuğu bilgilerini işaretçiler bir dizi nesnesi `CDockState` nesnesi.  
-  
-```  
-CPtrArray m_arrBarInfo;  
-```  
-  
-##  <a name="savestate"></a>  CDockState::SaveState  
- Durum bilgilerini kayıt defterine kaydetmek için bu işlevi çağırmak veya. INI dosyası.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*lpszProfileName*<br/>
+Başlatma dosyası ya da durum bilgisi depolandığı Windows kayıt defteri anahtarında bir bölümün adını belirten bir null teminated dizeyi işaret eder.
+
+### <a name="remarks"></a>Açıklamalar
+
+Profil adı uygulamanın bölümüdür. INI dosyası veya çubukları durum bilgilerini içeren kayıt. Denetim çubuğu durum bilgilerini kayıt defterine Kaydet veya. INI dosyasıyla `SaveState`.
+
+##  <a name="m_arrbarinfo"></a>  CDockState::m_arrBarInfo
+
+A `CPtrArray` bir durum bilgilerini kaydetti her denetim çubuğu için depolanan denetim çubuğu bilgi işaretçiler dizisi nesnesini `CDockState` nesnesi.
+
+```
+CPtrArray m_arrBarInfo;
+```
+
+##  <a name="savestate"></a>  CDockState::SaveState
+
+Durum bilgileri kayıt defterine kaydetmek için bu işlevi çağırın veya. INI dosyası.
+
+```
 void SaveState(LPCTSTR lpszProfileName);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *lpszProfileName*  
- Noktaları bir null teminated dizeye başlatma dosyası ya da durum bilgilerini depolandığı Windows kayıt defteri anahtarında bölümün adını belirtir.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Profil adı uygulamanın bölümüdür. INI dosyası veya kayıt içeren denetim çubuğu durum bilgileri. `SaveState` Ayrıca geçerli ekran boyutu kaydeder. Denetim çubuğu bilgileri kayıt defterinden alabilir veya. INI dosyası ile `LoadState`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CObject sınıfı](../../mfc/reference/cobject-class.md)   
- [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*lpszProfileName*<br/>
+Başlatma dosyası ya da durum bilgisi depolandığı Windows kayıt defteri anahtarında bir bölümün adını belirten bir null teminated dizeyi işaret eder.
+
+### <a name="remarks"></a>Açıklamalar
+
+Profil adı uygulamanın bölümüdür. INI dosyası veya kayıt defteri içeren denetim çubuğunun durum bilgileri. `SaveState` Geçerli ekran boyutu de kaydeder. Denetim çubuğu bilgileri kayıt defterinden alabilir veya. INI dosyasıyla `LoadState`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 

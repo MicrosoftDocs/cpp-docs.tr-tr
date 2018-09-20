@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a73d5bb3ef67469ad1cc12b2a2c2757cf1ce137
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a2e61616ae6a481925bdb8b9b135f0a6a9fdfff7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712846"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407952"
 ---
 # <a name="ctabbedpane-class"></a>CTabbedPane sınıfı
 
@@ -183,9 +183,9 @@ virtual BOOL DetachPane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*  
+[in] *pBar*
 
-[in] *bHide*  
+[in] *bHide*
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -225,9 +225,9 @@ virtual BOOL FloatTab(
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-[in] [in] *nTabID*  
+[in] [in] *nTabID*
 *dockMethod*<br/>
-[in] [in] *bHide*  
+[in] [in] *bHide*
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -308,6 +308,7 @@ Sekmeli bir bölmeye oluşturmadan önce bu değeri ayarlamanız gerekir.
 Varsayılan değer FALSE olur.
 
 ##  <a name="m_ptabwndrtc"></a>  CTabbedPane::m_pTabWndRTC
+
 Özel bir çalışma zamanı sınıf bilgileri `CMFCTabCtrl`-türetilmiş bir nesneye.
 
 ```
@@ -351,8 +352,8 @@ Kullanım [CTabbedPane::EnableTabAutoColor](#enabletabautocolor) etkinleştirme 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)  
-[Sınıflar](../../mfc/reference/mfc-classes.md)  
-[CDockablePane Sınıfı](../../mfc/reference/cdockablepane-class.md)  
-[CBaseTabbedPane Sınıfı](../../mfc/reference/cbasetabbedpane-class.md)  
-[CMFCOutlookBar Sınıfı](../../mfc/reference/cmfcoutlookbar-class.md)  
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
+[CDockablePane Sınıfı](../../mfc/reference/cdockablepane-class.md)<br/>
+[CBaseTabbedPane Sınıfı](../../mfc/reference/cbasetabbedpane-class.md)<br/>
+[CMFCOutlookBar Sınıfı](../../mfc/reference/cmfcoutlookbar-class.md)

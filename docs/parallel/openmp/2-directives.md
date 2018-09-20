@@ -12,12 +12,13 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b1c56bb4daaa6b87cf8e59e072cb73a746712f9
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: ab664bf15dd098b9d3e3bd7d6bd9c73db47fff2e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695895"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46436916"
 ---
 # <a name="2-directives"></a>2. Yönergeler
-Yönergeleri temel **#pragma** yönergeleri C ve C++ standartlarında tanımlanmış.  OpenMP C ve C++ API desteği derleyicileri etkinleştirir ve tüm OpenMP derleyici yönergeleri yorumu sağlayan bir komut satırı seçeneğini dahil edilir.
+
+Yönergeleri temel **#pragma** C ve C++ standartlarında tanımlanmış yönergeleri.  OpenMP C ve C++ API destekleyen derleyiciler etkinleştirir ve tüm OpenMP derleyici yönergeleri yorumu izin veren bir komut satırı seçeneği içerir.

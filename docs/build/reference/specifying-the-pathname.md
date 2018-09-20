@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d86052d6ca6e40926ed8d99990520044cef351d3
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 636326e5af577b4e26c61a2094fe73dd4a680f2d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719322"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402479"
 ---
 # <a name="specifying-the-pathname"></a>Yol Adını Belirtme
 
@@ -48,6 +48,6 @@ CL /FmPRN HELLO.CPP
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)
-[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Çıktı Dosyası (/F) Seçenekleri](../../build/reference/output-file-f-options.md)<br/>
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

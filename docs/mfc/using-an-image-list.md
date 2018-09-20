@@ -16,28 +16,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5722a2ef8c4e93e4996ee243b3c01b6dd6aeca78
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4dc30d418ae57205e4566dad7f490a773321768e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381611"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391676"
 ---
 # <a name="using-an-image-list"></a>Görüntü Listesi Kullanma
-Görüntü listesi tipik kullanımını deseni izler:  
-  
--   Oluşturmak bir [Cımagelist](../mfc/reference/cimagelist-class.md) nesne ve aşırı birini çağırın kendi [oluşturma](../mfc/reference/cimagelist-class.md#create) resim listesi oluşturmak ve ona eklemek için işlevi `CImageList` nesnesi.  
-  
--   Resim listesi oluşturduğunuzda görüntüleri eklemezseniz, görüntüleri için resim listesi çağırarak ekleme [Ekle](../mfc/reference/cimagelist-class.md#add) veya [okuma](../mfc/reference/cimagelist-class.md#read) üye işlevi.  
-  
--   Görüntü listesi denetimi uygun üye işlevini çağırarak bir denetimle ilişkilendirme veya görüntüleri görüntü listesinden görüntü listenin kullanarak kendiniz çizmek [çizin](../mfc/reference/cimagelist-class.md#draw) üye işlevi.  
-  
--   Belki de sürükleme için görüntü listenin yerleşik destek kullanarak bir görüntü sürükleme izin verin.  
-  
+
+Görüntü listesi tipik kullanımını aşağıdaki deseni izler:
+
+- Oluşturmak bir [Cımagelist](../mfc/reference/cimagelist-class.md) nesnesi ve bir aşırı yüklemelerinden birini çağırın, [Oluştur](../mfc/reference/cimagelist-class.md#create) bir görüntü listesi oluşturma ve buna eklemek için işlevi `CImageList` nesne.
+
+- Görüntü listesi oluşturduğunuzda görüntüleri eklemezseniz, görüntüleri görüntü listeye çağırarak eklemek [Ekle](../mfc/reference/cimagelist-class.md#add) veya [okuma](../mfc/reference/cimagelist-class.md#read) üye işlevi.
+
+- Görüntü listesi denetimin uygun üye işlevini çağırarak bir denetimle ilişkilendirme veya görüntü listesinden görüntü listenin kullanarak kendiniz görüntüler çizme [çizmek](../mfc/reference/cimagelist-class.md#draw) üye işlevi.
+
+- Belki de sürüklemek için görüntü listesinin yerleşik desteği kullanarak görüntü, sürükleyin izin verin.
+
 > [!NOTE]
->  Resim listesi ile oluşturulmuşsa, **yeni** işleci gerekir destroy `CImageList` nesnesi ile bittiğinde.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Cımagelist kullanma](../mfc/using-cimagelist.md)   
- [Denetimler](../mfc/controls-mfc.md)
+>  Görüntü listesi oluşturulurken **yeni** işleci gerekir yok `CImageList` ile işiniz bittiğinde nesne.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CImageList Kullanma](../mfc/using-cimagelist.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

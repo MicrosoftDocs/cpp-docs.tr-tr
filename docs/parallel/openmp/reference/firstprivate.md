@@ -16,45 +16,49 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10b5a270feb638a98c060b58e90af8146ff97325
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d070b8de3cf0382447c3b8e756140892dcd85edc
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691709"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387126"
 ---
 # <a name="firstprivate"></a>firstprivate
-Paralel yapı önce mevcut olduğundan her iş parçacığı bir değişken örneğini olmalıdır ve değişkeni değişken değeri ile başlatılmış olduğunu belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-firstprivate(var)  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
-  
-|Parametre|Açıklama|  
-|---------------|-----------------|  
-|`var`|Paralel yapı önce mevcut olduğundan ve her iş parçacığı örnekleri için değişken değişken değerle başlatılır. Birden fazla değişken belirtilirse, değişken adları virgül ile ayırın.|  
-  
-## <a name="remarks"></a>Açıklamalar  
-  
-## <a name="remarks"></a>Açıklamalar  
- `firstprivate` Aşağıdaki yönergeleri için geçerlidir:  
-  
--   [for](../../../parallel/openmp/reference/for-openmp.md)  
-  
--   [parallel](../../../parallel/openmp/reference/parallel.md)  
-  
--   [Bölümler](../../../parallel/openmp/reference/sections-openmp.md)  
-  
--   [single](../../../parallel/openmp/reference/single.md)  
-  
- Daha fazla bilgi için bkz: [2.7.2.2 firstprivate](../../../parallel/openmp/2-7-2-2-firstprivate.md).  
-  
-## <a name="example"></a>Örnek  
- Kullanarak bir örnek için `firstprivate`, örnekte bkz [özel](../../../parallel/openmp/reference/private-openmp.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yan Tümceler](../../../parallel/openmp/reference/openmp-clauses.md)
+
+Paralel yapı önce mevcut olduğundan, her iş parçacığı bir değişkenin kendi örneği olmalıdır ve değişken değişkenin değerini ile başlatılmalıdır belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+firstprivate(var)
+```
+
+#### <a name="parameters"></a>Parametreler
+
+|Parametre|Açıklama|
+|---------------|-----------------|
+|`var`|Paralel yapı önce mevcut olduğundan ve her bir iş parçacığı Örneğiniz için değişkeni değişkenin değeriyle başlatılır. Birden fazla değişken belirtilirse, değişken adları virgül ile ayırın.|
+
+## <a name="remarks"></a>Açıklamalar
+
+## <a name="remarks"></a>Açıklamalar
+
+`firstprivate` Aşağıdaki yönergeleri için geçerlidir:
+
+- [for](../../../parallel/openmp/reference/for-openmp.md)
+
+- [parallel](../../../parallel/openmp/reference/parallel.md)
+
+- [Bölümleri](../../../parallel/openmp/reference/sections-openmp.md)
+
+- [single](../../../parallel/openmp/reference/single.md)
+
+Daha fazla bilgi için [2.7.2.2 firstprivate](../../../parallel/openmp/2-7-2-2-firstprivate.md).
+
+## <a name="example"></a>Örnek
+
+Kullanma örneği için `firstprivate`, örneğe bakın [özel](../../../parallel/openmp/reference/private-openmp.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yan Tümceler](../../../parallel/openmp/reference/openmp-clauses.md)

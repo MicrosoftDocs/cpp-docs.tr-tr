@@ -15,22 +15,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 716c045fc10b4dd5f3dede20a233d958e669bbd7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f025c9fa564bcd37c585db6ea5c5cd0f5be83e0d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346343"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46432146"
 ---
 # <a name="activex-control-containers-inserting-a-control-into-a-control-container-application"></a>ActiveX Denetim Kapsayıcıları: Bir Denetim Kapsayıcısı Uygulamasına Denetim Ekleme
-Bir ActiveX denetimi kapsayıcısı uygulamasından bir ActiveX denetimini erişebilmeniz için önce bir kapsayıcı kullanılarak uygulama ActiveX denetimini eklemelisiniz [ActiveX denetimi Ekle](../windows/insert-activex-control-dialog-box.md) iletişim kutusu.  
-  
- Bir ActiveX denetimini ActiveX denetimi kapsayıcısı projesine eklemek için bkz: [görüntüleme ve ActiveX denetimlerine ekleme iletişim kutusu](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md).  
-  
- Denetim ekledikten sonra iletişim kutusu sınıfına bir üye değişkenine (türünde ActiveX denetimi) eklemeniz gerekir. Bu yordam hakkında daha fazla bilgi için bkz: [üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md).  
-  
- Sarmalayıcı sınıfı başvurulan üye değişkeni bir sınıf otomatik olarak oluşturulur ve projenize eklenen ekledikten sonra. Bu sınıf, denetimi kapsayıcısı ve katıştırılmış denetimi arasında bir arabirim olarak kullanılır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
+
+Bir ActiveX denetimini ActiveX denetimi kapsayıcısı uygulamasından erişebilmeniz için önce kapsayıcı kullanılarak uygulama ActiveX denetimini eklemelisiniz [ActiveX denetimi Ekle](../windows/insert-activex-control-dialog-box.md) iletişim kutusu.
+
+Bir ActiveX denetimini ActiveX denetimi kapsayıcısı projeye eklemek için bkz [görüntüleme ve iletişim kutusuna ActiveX denetimleri ekleme](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md).
+
+Denetimi ekledikten sonra iletişim kutusu sınıfı için bir üye değişkeni (ActiveX denetim türündeki) eklemeniz gerekir. Bu yordamı hakkında daha fazla bilgi için bkz. [bir üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md).
+
+Üye değişkeni bir sınıf için bir sarmalayıcı sınıfı adlandırılan otomatik olarak oluşturulur ve projenize eklenir ekledikten sonra. Bu sınıf, Denetim kapsayıcısı ile eklenen denetimin arasında bir arabirim olarak kullanılır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
 

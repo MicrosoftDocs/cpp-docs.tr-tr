@@ -18,29 +18,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: caf4c74f2263505ad5d7112021003f92c85a4b84
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2d794b8bf762503900dad18c7457c31101ea6d62
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33380376"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46377727"
 ---
 # <a name="sequence-of-operations-for-creating-activex-controls"></a>ActiveX Denetimleri Oluşturmak için İşlem Dizisi
-Aşağıdaki tabloda, ActiveX denetimleri (önceden OLE denetimleri biliniyordu) oluşturmada rolünüze ve framework'ün rol gösterir.  
-  
-### <a name="creating-activex-controls"></a>ActiveX denetimleri oluşturma  
-  
-|Görev|Bunu|Framework mu|  
-|----------|------------|------------------------|  
-|ActiveX denetimi framework oluşturun.|Denetim oluşturmak için MFC ActiveX Denetim Sihirbazı'nı çalıştırın. Seçenekler sayfalarında istediğiniz seçenekleri belirtin. Seçenekler, proje, lisans, sınıflara ve hakkında kutusunu yöntemi denetiminin adını ve türünü dahil.|MFC ActiveX Denetim Sihirbazı'nı dosyaları bir ActiveX denetimi için uygulamanızı, Denetim ve özellik sayfası veya sayfaları için kaynak dosyaları içeren temel işlevsellikten oluşturur; kaynak dosyası; bir proje dosyası; ve diğer tüm uyarlanmış, belirtimleri.|  
-|Bkz. satır kendi kodunuzu eklemeden ne denetimi ve ActiveX Denetim Sihirbazı'nı sunar.|ActiveX denetimi oluşturmak ve Internet Explorer ile test veya [TSTCON örnek](../visual-cpp-samples.md).|Çalışan denetimi yeniden boyutlandırılabilir ve taşınmış özelliğine sahiptir. Ayrıca sahip bir **hakkında kutusunu** çağrılabilir (seçilirse) yöntemi.|  
-|Denetimin yöntemleri ve özellikleri uygular.|Özel denetim yöntemleri ve özellikleri denetimin verileri için sunulan bir arabirim sağlamak için üye işlevleri ekleyerek uygulayın. Veri yapıları tutun ve siz karar verirken olayları tetiklenecek olay işleyicilerini kullanmak için üye değişkenleri ekleyin.|Çerçeve denetim olayları, özellikleri ve yöntemleri, nasıl özellikleri ve yöntemleri uygulanan üzerinde odaklanmanızı bırakarak desteklemek için bir harita zaten tanımlanmış. Varsayılan özellik sayfasında görüntülenebilir ve varsayılan bir hakkında kutusunu yöntemi sağlanır.|  
-|Denetimin özellik sayfa veya sayfaları oluşturun.|Visual C++ kaynak düzenleyicileri görsel olarak denetimin özellik sayfası arabirimini düzenlemek için kullanın:<br /><br /> -Ek özellik sayfaları oluşturun.<br />-Oluşturun ve bit eşlemler, simgeler ve İmleçler düzenleyin.<br /><br /> Özellik sayfaları iletişim kutusu Düzenleyicisi'nde de test edebilirsiniz.|MFC Uygulama Sihirbazı tarafından oluşturulan varsayılan kaynak dosyası ihtiyacınız olan kaynakları çoğunu sağlar. Visual C++, var olan kaynakların düzenleyebilir ve kolayca ve görsel olarak yeni kaynakları ekleyebilirsiniz olanak tanır.|  
-|Denetim olayları, yöntemleri ve özellikleri sınayın.|Denetim yeniden oluşturun ve Test kapsayıcısı, işleyicilerin doğru şekilde çalıştığını sınamak için kullanın.|Denetimin yöntemleri çağırma ve özelliklerini Test kapsayıcısı veya özellik sayfasında arabirimi aracılığıyla arabirimidir. Ayrıca, Test kapsayıcısı izleme denetimden tetiklenen olayları ve bildirimleri denetimin kapsayıcı tarafından alınan için kullanın.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework'te derleme](../mfc/building-on-the-framework.md)   
- [MFC uygulamaları oluşturmak için işlem dizisi](../mfc/sequence-of-operations-for-building-mfc-applications.md)   
- [OLE uygulamaları oluşturmak için işlem dizisi](../mfc/sequence-of-operations-for-creating-ole-applications.md)   
- [Veritabanı Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-database-applications.md)
+
+Aşağıdaki tabloda, rol ve framework'ün rol (önceki adıyla OLE denetimleri da bilinir) ActiveX denetimleri oluşturmak gösterir.
+
+### <a name="creating-activex-controls"></a>ActiveX denetimleri oluşturma
+
+|Görev|Bunu|Framework yok|
+|----------|------------|------------------------|
+|Bir ActiveX denetim çerçevesi oluşturun.|Denetim oluşturmak için MFC ActiveX Denetim Sihirbazı'nı çalıştırın. Seçenekleri sayfalarında istediğiniz seçenekleri belirtin. Seçenekler, proje, lisanslama, sınıflara ve hakkında kutusu yöntemi denetimin adını ve türünü içerir.|MFC ActiveX Denetim Sihirbazı'nı temel işlevlerini uygulama, Denetim ve özellik sayfası veya sayfaları için kaynak dosyaları dahil olmak üzere, bir ActiveX denetimi için dosyaları oluşturur; bir kaynak dosyası; bir proje dosyası; ve diğer tüm uyarlanmış, belirtime uygun.|
+|Kendi kod satırını eklemeden ne Denetim ve ActiveX Denetim Sihirbazı'nı teklif bakın.|ActiveX denetimi oluşturun ve Internet Explorer ile test veya [TSTCON örnek](../visual-cpp-samples.md).|Çalışan denetimi yeniden boyutlandırılabilir ve taşınabilir özelliğine sahiptir. Ayrıca bir **hakkında kutusu** çağrılabilir (seçilmişse) yöntemi.|
+|Denetimin yöntemleri ve özellikleri uygulayın.|Denetimin özel yöntemleri ve özellikleri denetimin verilere açık bir arabirim sağlayacağı şekilde üye işlevleri ekleyerek uygulayın. Veri yapıları basılı tutun ve olay işleyicileri, karar verirken olaylarını başlatmak için kullanmak için üye değişkenleri ekleyin.|Framework zaten bir harita denetimin olayları, özellikleri ve yöntemleri nasıl özellikleri ve yöntemleri uygulandığı üzerinde odaklanabilirsiniz bırakarak desteklemek için tanımlanır. Varsayılan özellik sayfası görüntülenebilir ve varsayılan hakkında kutusu yöntemi sağlanır.|
+|Denetimin özellik sayfa veya sayfaları oluşturun.|Görsel olarak denetimin özellik sayfası arabirimini düzenlemek için Visual C++ kaynak düzenleyicileri kullanın:<br /><br /> -Ek özellik sayfaları oluşturun.<br />-Oluşturma ve bit eşlemler, simgeler ve İmleçler düzenleyin.<br /><br /> Özellik sayfaları iletişim kutusu Düzenleyicisi'nde de test edebilirsiniz.|MFC Uygulama Sihirbazı tarafından oluşturulan varsayılan kaynak dosyası, ihtiyacınız olan kaynakları çoğunu sağlar. Visual C++ mevcut kaynakları düzenlemek ve yeni kaynakları kolayca ve görsel olarak eklemenize olanak tanır.|
+|Denetim olaylarını, yöntemlerini ve özelliklerini test edin.|Denetimi yeniden oluşturun ve test İşleyicileriniz düzgün çalışması için Test kapsayıcısını kullanın.|Denetimin yöntemlerini çağırabilir ve Test kapsayıcı veya özellik sayfasında arabirimi aracılığıyla özelliklerini düzenleme. Ayrıca, Test kapsayıcısı denetiminden harekete geçirilen olayları izlemek ve denetimin kapsayıcı tarafından alınan bildirimler için kullanın.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Framework'te Derleme](../mfc/building-on-the-framework.md)<br/>
+[MFC Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-building-mfc-applications.md)<br/>
+[OLE Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-ole-applications.md)<br/>
+[Veritabanı Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-database-applications.md)
 

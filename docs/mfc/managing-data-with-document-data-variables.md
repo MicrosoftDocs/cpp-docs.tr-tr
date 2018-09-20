@@ -21,24 +21,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ca7c673f47510282e129eab2538008400eb2fb9
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: e0a1db1e15733a0a3cd217c44aaaa325c146ee64
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929438"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435889"
 ---
 # <a name="managing-data-with-document-data-variables"></a>Belge Verisi Değişkenleri ile Verileri Yönetme
-Belgenizin veri belge sınıfı üye değişkenleri olarak uygular. Örneğin, karalama program türü veri üyesi bildirir `CObList` — işaretçileri depolar bağlantılı bir liste `CObject` nesneleri. Bu liste, bir serbest çizgi çizme noktalar dizileri depolamak için kullanılır.  
-  
- Belgenizin üye verileri nasıl uygulayacağınıza uygulamanızı yapısına bağlıdır. MFC çıkışı yardımcı olmak için bir grup "koleksiyon sınıflarının" temin eder — diziler, listeler ve eşlemeler C++ şablonlar temelinde koleksiyonları dahil olmak üzere (sözlükler) — ortak veri türleri çeşitli gibi kapsülleyen sınıfları birlikte `CString`, `CRect`, `CPoint`, `CSize`, ve `CTime`. Bu sınıfları hakkında daha fazla bilgi için bkz: [sınıf kitaplığına genel bakış](../mfc/class-library-overview.md) içinde *MFC başvurusu*.  
-  
- Belgenizin üye verileri tanımladığınızda, genellikle üye işlevleri ayarlamak ve veri öğelerini almak ve bunları yararlı diğer işlemleri gerçekleştirmek için belge sınıfı ekler.  
-  
- Kendi görünümlerinizi belge nesnesi, görünümün işaretçi oluşturma zamanında görünümünde yüklü belgeye kullanarak erişir. Bir görünümün üye işlevleri üzerinde this işaretçisi çağırarak alabilir `CView` üye işlevi `GetDocument`. Bu işaretçinin kendi belge türüne yayınlanamıyor emin olun. Ardından işaretçiyi ortak belge üyeleri erişebilir.  
-  
- Sık veri aktarımı doğrudan erişim gerektirir ya da belge sınıfının ortak olmayan üyeler kullanmak istiyorsanız, arkadaşınızın (C++ koşullarını) belge sınıfının sınıf görünümünüzü yapmak isteyebilirsiniz.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Belgeleri Kullanma](../mfc/using-documents.md)
+
+Belgenizin veri belge sınıfınızın üye değişkenleri olarak uygulayın. Örneğin, karalama program türünün veri üyesi bildirir `CObList` — işaretçileri depolar bağlı bir liste `CObject` nesneleri. Bu liste, serbest çizim noktalar dizileri depolamak için kullanılır.
+
+Belgenizin üye verileri nasıl uygulayacağınıza uygulamanızın doğası hakkında bağlıdır. Çıkış yardımcı olmak için bir grup "koleksiyon sınıflarının" MFC sağlar — diziler, listeler ve eşlemeler (sözlük), C++ şablonları temel alan koleksiyonlar da dahil olmak üzere — çeşitli ortak veri türleri gibi yalıtan sınıflar birlikte `CString`, `CRect`, `CPoint`, `CSize`, ve `CTime`. Bu sınıflar hakkında daha fazla bilgi için bkz. [sınıf kitaplığına genel bakış](../mfc/class-library-overview.md) içinde *MFC başvurusu*.
+
+Belgenizin üye veri tanımladığınızda, ayarlayın ve veri öğelerini alın ve bunları kullanışlı diğer işlemleri gerçekleştirmek için belge sınıfa üye işlevleri genellikle ekleyeceksiniz.
+
+Kendi görünümlerinizi görünümün oluşturma zamanında yüklenen belge, görünüm işaretçisi kullanılarak belge nesnesi erişin. Bu işaretçiyi bir görünümün üye işlevlerini çağırarak alabilirsiniz `CView` üye işlevi `GetDocument`. Bu belge türü kendi işaretçiye emin olun. Daha sonra işaretçiyle public belge üyeleri erişebilir.
+
+Sık kullanılan veri aktarımı doğrudan erişim gerektiren ya da belge sınıfının ortak olmayan üyeler kullanmak istediğiniz belge sınıfı (C++ koşullarında) bir arkadaş sınıf görünümü yapmak isteyebilirsiniz.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Belgeleri Kullanma](../mfc/using-documents.md)
 

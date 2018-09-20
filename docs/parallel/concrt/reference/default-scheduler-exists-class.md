@@ -18,53 +18,58 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 488f1d08c089b159971834729596d74b4e3dab22
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a72365cf44c1d1ac92dfc4acde378567668ebdb8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106071"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394899"
 ---
 # <a name="defaultschedulerexists-class"></a>default_scheduler_exists Sınıfı
-Bu sınıf oluşan bir özel durumu anlatmaktadır `Scheduler::SetDefaultSchedulerPolicy` varsayılan Zamanlayıcı işlem içinde zaten mevcut olduğunda yöntemi çağrılır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Bu sınıf oluşan bir özel durumu anlatmaktadır `Scheduler::SetDefaultSchedulerPolicy` varsayılan Zamanlayıcı işlem içinde zaten mevcut olduğunda yöntemi çağrılır.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 class default_scheduler_exists : public std::exception;
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[default_scheduler_exists](#ctor)|Fazla Yüklendi. Oluşturur bir `default_scheduler_exists` nesne.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `exception`  
-  
- `default_scheduler_exists`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** concrt.h  
-  
- **Namespace:** eşzamanlılık  
-  
-##  <a name="ctor"></a> default_scheduler_exists 
+```
 
- Oluşturur bir `default_scheduler_exists` nesne.  
-  
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[default_scheduler_exists](#ctor)|Fazla Yüklendi. Oluşturur bir `default_scheduler_exists` nesne.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`exception`
+
+`default_scheduler_exists`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** concrt.h
+
+**Namespace:** eşzamanlılık
+
+##  <a name="ctor"></a> default_scheduler_exists
+
+Oluşturur bir `default_scheduler_exists` nesne.
+
 ```
 explicit _CRTIMP default_scheduler_exists(_In_z_ const char* _Message) throw();
 
 default_scheduler_exists() throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *İl_eti*<br/>
-Hatanın açıklayıcı bir iletisi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+Hatanın açıklayıcı bir iletisi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Ad Alanı](concurrency-namespace.md)

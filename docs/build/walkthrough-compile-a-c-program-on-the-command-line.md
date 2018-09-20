@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f1390259838302a56e58397afa79fa8c458b939
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 2da1b645e85542631ce3e656ccaebdfbccf01137
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710339"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46397907"
 ---
 # <a name="walkthrough-compile-a-c-program-on-the-command-line"></a>İzlenecek yol: komut satırında C programı derleme
 
@@ -169,7 +169,7 @@ Visual C++ C Derleyici ISO C99 standardı ile uyumlu genellikle, ancak tamamen u
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İzlenecek yol: standart bir C++ programını (C++) oluşturma](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)
+[İzlenecek yol: Standart C++ Programı Oluşturma](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)<br/>
 [C Dil Başvurusu](../c-language/c-language-reference.md)<br/>
 [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)<br/>
 [Uyumluluk](../c-runtime-library/compatibility.md)

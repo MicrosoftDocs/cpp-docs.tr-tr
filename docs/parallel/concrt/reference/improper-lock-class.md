@@ -18,58 +18,64 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19a4a150b2cdf067802a1220a77640f20a1fea51
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 655776543a0c368bf5d13719d10b507c941a0fa9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106200"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46404702"
 ---
 # <a name="improperlock-class"></a>improper_lock Sınıfı
-Bu sınıf, bir kilit alınmadığı yanlış olduğunda oluşturulan bir özel durum açıklar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Bu sınıf, bir kilit alınmadığı yanlış olduğunda oluşturulan bir özel durum açıklar.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 class improper_lock : public std::exception;
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[improper_lock](#ctor)|Fazla Yüklendi. Oluşturur bir `improper_lock exception`.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Genellikle, bir reentrant olmayan kilit yinelemeli olarak aynı içerik üzerinde almaya denemesi yapıldığında bu özel durum oluşturulur.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `exception`  
-  
- `improper_lock`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** concrt.h  
-  
- **Namespace:** eşzamanlılık  
-  
-##  <a name="ctor"></a> improper_lock 
+```
 
- Oluşturur bir `improper_lock exception`.  
-  
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[improper_lock](#ctor)|Fazla Yüklendi. Oluşturur bir `improper_lock exception`.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Genellikle, bir reentrant olmayan kilit yinelemeli olarak aynı içerik üzerinde almaya denemesi yapıldığında bu özel durum oluşturulur.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`exception`
+
+`improper_lock`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** concrt.h
+
+**Namespace:** eşzamanlılık
+
+##  <a name="ctor"></a> improper_lock
+
+Oluşturur bir `improper_lock exception`.
+
 ```
 explicit _CRTIMP improper_lock(_In_z_ const char* _Message) throw();
 
 improper_lock() throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *İl_eti*<br/>
-Hatanın açıklayıcı bir iletisi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [critical_section sınıfı](critical-section-class.md)   
- [reader_writer_lock Sınıfı](reader-writer-lock-class.md)
+Hatanın açıklayıcı bir iletisi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
+[critical_section Sınıfı](critical-section-class.md)<br/>
+[reader_writer_lock Sınıfı](reader-writer-lock-class.md)

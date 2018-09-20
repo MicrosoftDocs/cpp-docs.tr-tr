@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 936777adf9863c233303c4b78ffd9e45aa0f3b95
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ce3bf5b229baa953a8e3431a35f4449fbae87a4d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209537"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405651"
 ---
 # <a name="lcid"></a>lcid
 
@@ -68,5 +68,5 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
 [Parametre Öznitelikleri](../windows/parameter-attributes.md)  

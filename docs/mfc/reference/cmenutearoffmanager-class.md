@@ -34,191 +34,209 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ca3af6aba4c208672038de2ca663efdb2cc9d9a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: dc4a6ee892c70a53e28031ff8dd9ef874d252a86
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700940"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46380886"
 ---
 # <a name="cmenutearoffmanager-class"></a>CMenuTearOffManager sınıfı
-Etiket menülerini yönetir. Bir etiket menü menü çubuğunda bir menü ' dir. Kullanıcının bir etiket menü menü çubuğundan kaydırmak ayrılabilir menüyü menü neden kaldırabilirsiniz.  
-  
-   Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
-   
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CMenuTearOffManager : public CObject  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CMenuTearOffManager::CMenuTearOffManager](#cmenutearoffmanager)|Oluşturur bir `CMenuTearOffManager` nesne.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CMenuTearOffManager::Build](#build)||  
-|[CMenuTearOffManager::GetRegPath](#getregpath)||  
-|[CMenuTearOffManager::Initialize](#initialize)|Başlatan bir `CMenuTearOffManager` nesne.|  
-|[CMenuTearOffManager::IsDynamicID](#isdynamicid)||  
-|[CMenuTearOffManager::Parse](#parse)||  
-|[CMenuTearOffManager::Reset](#reset)||  
-|[CMenuTearOffManager::SetInUse](#setinuse)||  
-|[CMenuTearOffManager::SetupTearOffMenus](#setuptearoffmenus)||  
-  
-## <a name="remarks"></a>Açıklamalar  
- Etiket menülerini kullanmak için olmalıdır bir `CMenuTearOffManager` nesne. Çoğu durumda, oluşturduğunuz başlatmak veya olmaz bir `CMenuTearOffManager` doğrudan nesne. Çağırdığınızda bu sizin için işlenir [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus) işlevi.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, oluşturmak ve başlatmak gösterilmiştir bir `CMenuTearOffManager` çağırarak `CWinAppEX::EnableTearOffMenus` yöntemi. Bu kod parçacığı parçasıdır [Word paneli örnek](../../visual-cpp-samples.md).  
-  
- [!code-cpp[NVC_MFC_WordPad#12](../../mfc/reference/codesnippet/cpp/cmenutearoffmanager-class_1.cpp)]  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- `CMenuTearOffManager`   
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxmenutearoffmanager.h  
-  
-##  <a name="build"></a>  CMenuTearOffManager::Build  
 
-  
-```  
+Etiket menülerini yönetir. Bir etiket menü menü çubuğunda bir menü ' dir. Kullanıcının bir etiket menü menü çubuğundan kaydırmak ayrılabilir menüyü menü neden kaldırabilirsiniz.
+
+   Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CMenuTearOffManager : public CObject
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CMenuTearOffManager::CMenuTearOffManager](#cmenutearoffmanager)|Oluşturur bir `CMenuTearOffManager` nesne.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CMenuTearOffManager::Build](#build)||
+|[CMenuTearOffManager::GetRegPath](#getregpath)||
+|[CMenuTearOffManager::Initialize](#initialize)|Başlatan bir `CMenuTearOffManager` nesne.|
+|[CMenuTearOffManager::IsDynamicID](#isdynamicid)||
+|[CMenuTearOffManager::Parse](#parse)||
+|[CMenuTearOffManager::Reset](#reset)||
+|[CMenuTearOffManager::SetInUse](#setinuse)||
+|[CMenuTearOffManager::SetupTearOffMenus](#setuptearoffmenus)||
+
+## <a name="remarks"></a>Açıklamalar
+
+Etiket menülerini kullanmak için olmalıdır bir `CMenuTearOffManager` nesne. Çoğu durumda, oluşturduğunuz başlatmak veya olmaz bir `CMenuTearOffManager` doğrudan nesne. Çağırdığınızda bu sizin için işlenir [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus) işlevi.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, oluşturmak ve başlatmak gösterilmiştir bir `CMenuTearOffManager` çağırarak `CWinAppEX::EnableTearOffMenus` yöntemi. Bu kod parçacığı parçasıdır [Word paneli örnek](../../visual-cpp-samples.md).
+
+[!code-cpp[NVC_MFC_WordPad#12](../../mfc/reference/codesnippet/cpp/cmenutearoffmanager-class_1.cpp)]
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+`CMenuTearOffManager`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxmenutearoffmanager.h
+
+##  <a name="build"></a>  CMenuTearOffManager::Build
+
+
+```
 void Build(
-    UINT uiTearOffBarID,  
+    UINT uiTearOffBarID,
     CString& strText);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *uiTearOffBarID*<br/>
-[in] [in] *strText*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="cmenutearoffmanager"></a>  CMenuTearOffManager::CMenuTearOffManager  
- Oluşturur bir [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) nesne.  
-  
-```  
+[in] [in] *strText*
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="cmenutearoffmanager"></a>  CMenuTearOffManager::CMenuTearOffManager
+
+Oluşturur bir [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) nesne.
+
+```
 CMenuTearOffManager();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Çoğu durumda, değil oluşturmalısınız bir `CMenuTearOffManager` el ile. Uygulama Framework'ü oluşturur `CMenuTearOffManager` nesne çağırdığınızda [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus).  
-  
-##  <a name="getregpath"></a>  CMenuTearOffManager::GetRegPath  
+```
 
-  
-```  
-LPCTSTR GetRegPath() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="initialize"></a>  CMenuTearOffManager::Initialize  
- Başlatan bir [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) nesne.  
-  
-```  
+### <a name="remarks"></a>Açıklamalar
+
+Çoğu durumda, değil oluşturmalısınız bir `CMenuTearOffManager` el ile. Uygulama Framework'ü oluşturur `CMenuTearOffManager` nesne çağırdığınızda [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus).
+
+##  <a name="getregpath"></a>  CMenuTearOffManager::GetRegPath
+
+
+```
+LPCTSTR GetRegPath() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="initialize"></a>  CMenuTearOffManager::Initialize
+
+Başlatan bir [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) nesne.
+
+```
 BOOL Initialize(
-    LPCTSTR lpszRegEntry,  
-    UINT uiTearOffMenuFirst,  
+    LPCTSTR lpszRegEntry,
+    UINT uiTearOffMenuFirst,
     UINT uiTearOffMenuLast);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *lpszRegEntry*<br/>
-[in] Bir kayıt defteri girişi yolunu içeren bir dize. Uygulamalarınız bu kayıt defteri girdisi etkinleştiriliyorken çubukları için ayarları depolar.  
-  
+[in] Bir kayıt defteri girişi yolunu içeren bir dize. Uygulamalarınız bu kayıt defteri girdisi etkinleştiriliyorken çubukları için ayarları depolar.
+
 *uiTearOffMenuFirst*<br/>
-[in] Bir etiket menü ilk menü kimliği.  
-  
+[in] Bir etiket menü ilk menü kimliği.
+
 *uiTearOffMenuLast*<br/>
-[in] Bir etiket menü son menü kimliği.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Menü kimlikleri aralığını *uiTearOffMenuFirst* için *uiTearOffMenuLast* sürekli aralığı olmalıdır. Aralık, uygulamanın aynı anda görünen etiket menülerini sayısını tanımlar.  
-  
-##  <a name="isdynamicid"></a>  CMenuTearOffManager::IsDynamicID  
+[in] Bir etiket menü son menü kimliği.
 
-  
-```  
-BOOL IsDynamicID(UINT uiID) const;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *uiID*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="parse"></a>  CMenuTearOffManager::Parse  
+### <a name="return-value"></a>Dönüş Değeri
 
-  
-```  
+Başarılı olursa sıfır dışı; Aksi durumda 0.
+
+### <a name="remarks"></a>Açıklamalar
+
+Menü kimlikleri aralığını *uiTearOffMenuFirst* için *uiTearOffMenuLast* sürekli aralığı olmalıdır. Aralık, uygulamanın aynı anda görünen etiket menülerini sayısını tanımlar.
+
+##  <a name="isdynamicid"></a>  CMenuTearOffManager::IsDynamicID
+
+
+```
+BOOL IsDynamicID(UINT uiID) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
+[in] *uiID*
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="parse"></a>  CMenuTearOffManager::Parse
+
+
+```
 UINT Parse(CString& str);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *str*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="reset"></a>  CMenuTearOffManager::Reset  
+```
 
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+[in] *str*
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="reset"></a>  CMenuTearOffManager::Reset
+
+
+```
 void Reset(HMENU hmenu);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *hmenu*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="setinuse"></a>  CMenuTearOffManager::SetInUse  
+```
 
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+[in] *hmenu*
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="setinuse"></a>  CMenuTearOffManager::SetInUse
+
+
+```
 void SetInUse(
-    UINT uiCmdId,  
+    UINT uiCmdId,
     BOOL bUse = TRUE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*uiCmdId*<br/>
-[in] [in] *bBilinmeyen*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="setuptearoffmenus"></a>  CMenuTearOffManager::SetupTearOffMenus  
+```
 
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+*uiCmdId*<br/>
+[in] [in] *bBilinmeyen*
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="setuptearoffmenus"></a>  CMenuTearOffManager::SetupTearOffMenus
+
+
+```
 void SetupTearOffMenus(HMENU hMenu);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *hMenu*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CWinAppEx Sınıfı](../../mfc/reference/cwinappex-class.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+[in] *hMenu*
+
+### <a name="remarks"></a>Açıklamalar
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
+[CWinAppEx Sınıfı](../../mfc/reference/cwinappex-class.md)

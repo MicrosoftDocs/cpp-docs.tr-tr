@@ -19,47 +19,49 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 29dea08d778ba91c5b8ab3a10aaff998095e7123
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 5bd59cc19c80e305a7e57fb711a49f59a024d528
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36928775"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46434771"
 ---
 # <a name="exceptions-catching-and-deleting-exceptions"></a>Özel Durumlar: Özel Durumları Yakalama ve Silme
-Aşağıdaki yönergeler ve örnekler catch ve özel durumları silme gösterir. Daha fazla bilgi için **deneyin**, **catch**, ve **throw** anahtar sözcükler, bkz: [C++ özel durum işleme](../cpp/cpp-exception-handling.md).  
-  
- Bu kod bir özel durum yakalar her özel durum silme hatası bellek sızıntısı neden olduğundan, özel durum işleyicileri bunlar işlemek, özel durum nesneleri silmeniz gerekir.  
-  
- **Catch** blok, bir özel durum silmelisiniz zaman:  
-  
--   **Catch** blok yeni bir özel durum oluşturur.  
-  
-     Elbette, tekrar aynı özel durum, özel durum silmemeniz gerekir:  
-  
-     [!code-cpp[NVC_MFCExceptions#3](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_1.cpp)]  
-  
--   Yürütme döndürür içinden **catch** bloğu.  
-  
+
+Aşağıdaki yönergeler ve örnekler catch ve özel durumları silme işlemini göstermektedir. Daha fazla bilgi için **deneyin**, **catch**, ve **throw** anahtar bkz [C++ özel durum işleme](../cpp/cpp-exception-handling.md).
+
+Bu kod bir özel durumu yakalar her bir bellek sızıntısı özel durum silme hatası neden olduğundan, özel durum işleyicileri işledikleri, özel durum nesneleri silmeniz gerekir.
+
+**Catch** blok, bir özel durum silmelisiniz olduğunda:
+
+- **Catch** bloğu yeni bir özel durum oluşturur.
+
+     Elbette, tekrar aynı özel durum, özel durum silmemelisiniz:
+
+     [!code-cpp[NVC_MFCExceptions#3](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_1.cpp)]
+
+- Yürütme döndürür içinden **catch** blok.
+
 > [!NOTE]
->  Silerken bir `CException`, kullanın `Delete` özel silmek için üye işlevi. Kullanmayın **silmek** anahtar sözcüğü, çünkü özel öbek üzerinde değilse, başarısız.  
-  
-#### <a name="to-catch-and-delete-exceptions"></a>Catch ve özel durumları silme  
-  
-1.  Kullanım **deneyin** ayarlamak için anahtar sözcüğü bir **deneyin** bloğu. İçinde bir özel durum yaratabilir herhangi program deyimlerini yürütmek bir **deneyin** bloğu.  
-  
-     Kullanım **catch** ayarlamak için anahtar sözcüğü bir **catch** bloğu. Özel durum işleme kodda yerleştirin bir **catch** bloğu. Kodda **catch** yalnızca blok yürütüldüğünde içindeki kod **deneyin** bloğu içinde belirtilen türde bir özel durum oluşturur **catch** deyimi.  
-  
-     Aşağıdaki iskelet gösterdiği nasıl **deneyin** ve **catch** blokları normal şekilde düzenlenmiştir:  
-  
-     [!code-cpp[NVC_MFCExceptions#4](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_2.cpp)]  
-  
-     Bir özel durum, Denetim geçirir ilk **catch** özel durum bildirimi eşleşen özel durum türü blok. Sıralı istisnalar farklı türlerde seçmeli olarak işleyebilir **catch** aşağıda listelenen engeller:  
-  
-     [!code-cpp[NVC_MFCExceptions#5](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_3.cpp)]  
-  
- Daha fazla bilgi için bkz: [özel durumlar: MFC özel durum makrolarından dönüştürme](../mfc/exceptions-converting-from-mfc-exception-macros.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
+>  Silerken bir `CException`, kullanın `Delete` üye işlevi, özel durumu silinemedi. Kullanmayın **Sil** anahtar sözcüğü, çünkü özel durum yığın üzerinde değilse başarısız.
+
+#### <a name="to-catch-and-delete-exceptions"></a>Catch ve özel durumları Sil
+
+1. Kullanım **deneyin** ayarlamak için anahtar sözcüğü bir **deneyin** blok. İçinde bir özel durum oluşturabilecek herhangi bir programı deyim yürütme bir **deneyin** blok.
+
+     Kullanım **catch** ayarlamak için anahtar sözcüğü bir **catch** blok. Özel durum işleme kodu yerleştirin bir **catch** blok. Kodda **catch** blokesi yalnızca içindeki kod **deneyin** blok, belirtilen türde bir özel durum oluşturursa **catch** deyimi.
+
+     Aşağıdaki çatı gösterildiği nasıl **deneyin** ve **catch** blokları normal şekilde düzenlenmiştir:
+
+     [!code-cpp[NVC_MFCExceptions#4](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_2.cpp)]
+
+     Bir özel durum oluştuğunda denetim geçer ilk **catch** blok özel durum bildirimi eşleşen özel durumun türü. Farklı türde özel durum ile sıralı seçmeli olarak işleyebilir **catch** aşağıda listelenen engeller:
+
+     [!code-cpp[NVC_MFCExceptions#5](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_3.cpp)]
+
+Daha fazla bilgi için [özel durumlar: MFC özel durum makrolarından dönüştürme](../mfc/exceptions-converting-from-mfc-exception-macros.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
 

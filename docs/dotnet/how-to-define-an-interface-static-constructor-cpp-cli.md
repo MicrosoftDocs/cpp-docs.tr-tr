@@ -17,52 +17,54 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0c47efbf364f5ddacb7ce534b0dfd7853534acb1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e2da339259efd77ea7992e63e6137a15017fdc31
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33127461"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402843"
 ---
 # <a name="how-to-define-an-interface-static-constructor-ccli"></a>Nasıl yapılır: Arabirim Statik Oluşturucusunu Tanımlama (C++/CLI)
-Arabirim statik veri üyeleri başlatmak için kullanılan bir statik oluşturucuya sahip olabilir.  Statik Oluşturucu en fazla bir kez çağrılır ve bir statik arabirim üyesini erişilen ilk önce çağrılır.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// mcppv2_interface_class2.cpp  
-// compile with: /clr  
-using namespace System;  
-  
-interface struct MyInterface {  
-   static int i;  
-   static void Test() {  
-      Console::WriteLine(i);  
-   }  
-  
-   static MyInterface() {   
-      Console::WriteLine("in MyInterface static constructor");  
-      i = 99;  
-   }  
-};  
-  
-ref class MyClass : public MyInterface {};  
-  
-int main() {  
-   MyInterface::Test();  
-   MyClass::MyInterface::Test();  
-  
-   MyInterface ^ mi = gcnew MyClass;  
-   mi->Test();  
-}  
-```  
-  
-```Output  
-in MyInterface static constructor  
-99  
-99  
-99  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [arabirim sınıfı](../windows/interface-class-cpp-component-extensions.md)
+
+Bir arabirim statik veri üyeleri başlatmak için kullanılan bir statik Oluşturucu olabilir.  Statik Oluşturucu en fazla bir kez çağrılır ve bir statik arabirim üyesini erişilen ilk önce çağrılır.
+
+## <a name="example"></a>Örnek
+
+```
+// mcppv2_interface_class2.cpp
+// compile with: /clr
+using namespace System;
+
+interface struct MyInterface {
+   static int i;
+   static void Test() {
+      Console::WriteLine(i);
+   }
+
+   static MyInterface() {
+      Console::WriteLine("in MyInterface static constructor");
+      i = 99;
+   }
+};
+
+ref class MyClass : public MyInterface {};
+
+int main() {
+   MyInterface::Test();
+   MyClass::MyInterface::Test();
+
+   MyInterface ^ mi = gcnew MyClass;
+   mi->Test();
+}
+```
+
+```Output
+in MyInterface static constructor
+99
+99
+99
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[arabirim sınıfı](../windows/interface-class-cpp-component-extensions.md)

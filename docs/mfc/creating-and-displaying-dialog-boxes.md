@@ -18,25 +18,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f464efcc76d688ec753395876ebc0841ec4b2cfa
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 437fb934e95ce527a77038d643e9cee86b6f1f2c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931079"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387750"
 ---
 # <a name="creating-and-displaying-dialog-boxes"></a>İletişim Kutuları Oluşturma ve Görüntüleme
-İletişim nesnesi oluşturma iki aşamalı bir işlemdir. İlk olarak, iletişim nesnesi oluşturun, sonra iletişim penceresi oluşturun. Kalıcı ve kalıcı olmayan iletişim kutuları oluşturmak ve bunları görüntülemek için kullanılan işleminde biraz farklılık gösterir. Aşağıdaki tabloda nasıl kalıcı ve kalıcı olmayan iletişim kutuları normal olarak oluşturulur ve görüntülenir listeler.  
-  
-### <a name="dialog-creation"></a>İletişim kutusu oluşturma  
-  
-|İletişim türü|Bu oluşturma|  
-|-----------------|----------------------|  
-|[Engelleyici olmayan](../mfc/creating-modeless-dialog-boxes.md)|Oluşturmak `CDialog`, ardından çağıran `Create` üye işlevi.|  
-|[Kalıcı](../mfc/creating-modal-dialog-boxes.md)|Oluşturmak `CDialog`, ardından çağıran `DoModal` üye işlevi.|  
-  
- İsterseniz, iletişim kutusundan oluşturabilirsiniz bir [bellek içi iletişim şablonu](../mfc/using-a-dialog-template-in-memory.md) oluşturulan yerine bir iletişim kutusu şablon kaynağı. Bu ileri düzeyde, ancak bir konudur.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+
+İletişim nesnesi oluşturulurken iki aşamalı bir işlemdir. İlk olarak, iletişim nesnesi oluşturun ve ardından iletişim penceresi oluştur. Kalıcı ve kalıcı olmayan iletişim kutuları oluşturmak ve bunları görüntülemek için kullanılan işlem olarak biraz farklılık gösterir. Aşağıdaki tablo nasıl kalıcı ve kalıcı olmayan iletişim kutuları normalde oluşturulur ve görüntülenir listeler.
+
+### <a name="dialog-creation"></a>İletişim kutusu oluşturma
+
+|İletişim türü|Bu oluşturma|
+|-----------------|----------------------|
+|[Engelleyici olmayan](../mfc/creating-modeless-dialog-boxes.md)|Oluşturmak `CDialog`, ardından çağırın `Create` üye işlevi.|
+|[Kalıcı](../mfc/creating-modal-dialog-boxes.md)|Oluşturmak `CDialog`, ardından çağırın `DoModal` üye işlevi.|
+
+İsterseniz, iletişim kutusundan oluşturabilirsiniz bir [bellek içi iletişim şablonu](../mfc/using-a-dialog-template-in-memory.md) oluşturulan yerine bir iletişim şablon kaynağı. Gelişmiş bir konu, ancak budur.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
 
