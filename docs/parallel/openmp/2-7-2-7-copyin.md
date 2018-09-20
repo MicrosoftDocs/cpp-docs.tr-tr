@@ -12,26 +12,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ee711bfb24e7a2a1cbada1a7e01a243e204f4a8
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 94b4c529b7ad6fd717be1e1dee0edd3ff9ac3ff5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689382"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46426893"
 ---
 # <a name="2727-copyin"></a>2.7.2.7 copyin
-**Copyin** yan tümcesi için aynı değer atamak için bir mekanizma sağlar **threadprivate** paralel bölge yürütme Ekipteki her bir iş parçacığı için değişkenleri. Belirtilen her bir değişken için bir **copyin** yan tümcesi, takım ana iş parçacığı değişkeninin değerini kopyalanır, atama gibi paralel bölge başına iş parçacığı özel kopya tarafından. Söz dizimi **copyin** yan tümcesi aşağıdaki gibidir:  
-  
-```  
-  
-copyin(  
-variable-list  
-)  
-  
-```  
-  
- Kısıtlamaları **copyin** yan tümcesi aşağıdaki gibidir:  
-  
--   Belirtilen bir değişken **copyin** yan tümcesi erişilebilir, anlaşılır kopya atama işleci olması gerekir.  
-  
--   Belirtilen bir değişken **copyin** yan tümcesi olmalıdır bir **threadprivate** değişkeni.
+
+**Copyin** yan tümcesi için aynı değer atamak için bir mekanizma sağlar **threadprivate** paralel bölgenin yürütme takım içindeki her iş parçacığı için değişkenleri. Belirtilen her bir değişken için bir **copyin** yan tümcesi, takımın ana iş parçacığında bir değişkenin değerini kopyalanır, atama gibi paralel bölge başına iş parçacığı özel kopya tarafından. Söz dizimi **copyin** yan tümcesi şu şekildedir:
+
+```
+
+copyin(
+variable-list
+)
+
+```
+
+Kısıtlamaları **copyin** yan tümcesi aşağıdaki gibidir:
+
+- Belirtilen değişken **copyin** yan tümcesi bir erişilebilir, açık kopya atama işleci olması gerekir.
+
+- Belirtilen değişken **copyin** yan tümcesi olmalıdır bir **threadprivate** değişkeni.

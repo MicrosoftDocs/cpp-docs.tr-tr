@@ -15,35 +15,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6903a7ec6b833f7591afe79dc91d453b3905cc79
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: b3c476d9cf633ce9b676dc8f658c94bd0b240461
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705256"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46384305"
 ---
 # <a name="how-to-send-a-message-at-a-regular-interval"></a>Nasıl yapılır: Düzenli Aralıkla İleti Gönderme
-Bu örnek eşzamanlılık kullanmayı gösterir::[timer sınıfı](../../parallel/concrt/reference/timer-class.md) düzenli aralıklarla ileti göndermek için.  
-  
-## <a name="example"></a>Örnek  
 
- Aşağıdaki örnek kullanan bir `timer` uzun bir işlem sırasında ilerleme durumunu raporlamak nesnesi. Bu örnek bağlantılar `timer` nesnesine bir [concurrency::call](../../parallel/concrt/reference/call-class.md) nesnesi. `call` Nesne düzenli aralıklarla bir İlerleme göstergesi konsola yazdırır. [Concurrency::timer::start](reference/timer-class.md#start) yöntemi ayrı bir bağlamda Zamanlayıcı çalıştırır. `perform_lengthy_operation` İşlev çağrıları [concurrency::wait](reference/concurrency-namespace-functions.md#wait) uzun süren işlem benzetimini yapmak için ana içerik üzerinde işlevi.  
+Bu örnek, eşzamanlılık kullanmayı gösterir.::[timer sınıfı](../../parallel/concrt/reference/timer-class.md) düzenli aralıkla ileti göndermek için.
 
-  
- [!code-cpp[concrt-report-progress#1](../../parallel/concrt/codesnippet/cpp/how-to-send-a-message-at-a-regular-interval_1.cpp)]  
-  
- Bu örnekte aşağıdaki örnek çıkışı üretir:  
-  
-```Output  
-Performing a lengthy operation..........done.  
-```  
-  
-## <a name="compiling-the-code"></a>Kod Derleniyor  
- Örnek kodu kopyalayın ve bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `report-progress.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
-  
- **cl.exe /EHsc rapor-progress.cpp**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Zaman uyumsuz aracılar kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)   
- [Zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)   
- [İleti Geçirme İşlevleri](../../parallel/concrt/message-passing-functions.md)
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnekte bir `timer` uzun bir işlem sırasında ilerleme durumunu raporlamak nesne. Bu örnek bağlantıları `timer` nesnesini bir [concurrency::call](../../parallel/concrt/reference/call-class.md) nesne. `call` Nesne düzenli aralıklarla bir İlerleme göstergesi konsola yazdırır. [Concurrency::timer::start](reference/timer-class.md#start) yöntemi Zamanlayıcı ayrı bir bağlamda çalışır. `perform_lengthy_operation` İşlev çağrılarında [concurrency::wait](reference/concurrency-namespace-functions.md#wait) uzun süren bir işlem benzetimini yapmak için ana içerik işlevi.
+
+[!code-cpp[concrt-report-progress#1](../../parallel/concrt/codesnippet/cpp/how-to-send-a-message-at-a-regular-interval_1.cpp)]
+
+Bu örnek, örnek aşağıdaki çıktıyı üretir:
+
+```Output
+Performing a lengthy operation..........done.
+```
+
+## <a name="compiling-the-code"></a>Kod Derleniyor
+
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `report-progress.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+
+**cl.exe/ehsc rapor progress.cpp**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
+[Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
+[İleti Geçirme İşlevleri](../../parallel/concrt/message-passing-functions.md)

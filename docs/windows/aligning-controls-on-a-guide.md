@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2790d9fc3bd4e0af6c86bdbd71be236d8980ab4a
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 648d78466b912f5f1f8c6a83065a07861ab9a7f3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314995"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374431"
 ---
 # <a name="aligning-controls-on-a-guide"></a>Kılavuzdaki Denetimleri Hizalama
 
@@ -62,5 +62,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İletişim Kutusu Düzenleyicisi Durumları (Kılavuzlar ve Izgaralar)](../windows/dialog-editor-states-guides-and-grids.md)  
+[İletişim Kutusu Düzenleyicisi Durumları (Kılavuzlar ve Izgaralar)](../windows/dialog-editor-states-guides-and-grids.md)<br/>
 [İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)

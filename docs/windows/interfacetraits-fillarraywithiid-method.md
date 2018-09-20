@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9fc4679d9e6d3a4fdfc112d8a8b471ceb2646ecc
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c5163ea5922141faf0c4b28deb147672938997a1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583734"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46375436"
 ---
 # <a name="interfacetraitsfillarraywithiid-method"></a>InterfaceTraits::FillArrayWithIid Yöntemi
 
@@ -39,10 +39,10 @@ __forceinline static void FillArrayWithIid(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*  
+*Dizin*<br/>
 Sıfır tabanlı dizin değeri içeren bir alan için işaretçi.
 
-*IID'leri*  
+*IID'leri*<br/>
 Arabirim kimlikleri dizisi.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -61,5 +61,5 @@ Hakkında daha fazla bilgi için `Base`, genel tür tanımları bölümüne bak�
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[InterfaceTraits Yapısı](../windows/interfacetraits-structure.md)  
+[InterfaceTraits Yapısı](../windows/interfacetraits-structure.md)<br/>
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

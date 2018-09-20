@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c7bdf5c17fc9364eb69d86f067bbb00cf40ebc5d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2f0a9116e9abe07628d2b205bd5249d9354d6f88
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595322"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46413919"
 ---
 # <a name="hstringattach-method"></a>HString::Attach Yöntemi
 
@@ -36,7 +36,7 @@ void Attach(
 
 ### <a name="parameters"></a>Parametreler
 
-*HSTR*  
+*HSTR*<br/>
 Mevcut bir **Hstrıng** nesne.
 
 ## <a name="requirements"></a>Gereksinimler

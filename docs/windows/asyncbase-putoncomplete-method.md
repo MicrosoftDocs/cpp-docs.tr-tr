@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c62119b87183fe6a60c0ed4d987cbd12788d8a0d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5b37b11f409e46496dc90389b16cffda848389ba
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602692"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423239"
 ---
 # <a name="asyncbaseputoncomplete-method"></a>AsyncBase::PutOnComplete Yöntemi
 
@@ -38,7 +38,7 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*completeHandler*  
+*completeHandler*<br/>
 İstediğiniz tamamlama olay işleyicisinin nasıl ayarlandığını adresi.
 
 ## <a name="return-value"></a>Dönüş Değeri

@@ -16,43 +16,48 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5be39336f3da839dc9b1c7be6a64db54b59f99bd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5a9bbece0773c14a4a8b545bc56209bf682e22c0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33351621"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46375422"
 ---
 # <a name="abcfloat-structure"></a>ABCFLOAT Yapısı
-`ABCFLOAT` Yapısı bir yazı tipi karakteri A, B ve C genişliğini içerir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-typedef struct _ABCFLOAT { /* abcf */  
-    FLOAT abcfA;  
-    FLOAT abcfB;  
-    FLOAT abcfC;  
-} ABCFLOAT;  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *abcfA*  
- Karakter A aralığını belirtir. Bir aralık uzaklığı karakter simgesi çizmeden önce geçerli konuma eklemek için ' dir.  
-  
- *abcfB*  
- Karakter B aralığını belirtir. B boşluk karakteri karakter çizilmiş kısmının genişliğini olabilir.  
-  
- *abcfC*  
- Karakter C aralığını belirtir. C aralığı uzaklığı boşluk karakteri karakter sağındaki sağlamak için geçerli konumu eklemek için ' dir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- A, B ve C genişlikleri taban çizgisinin yazı tipi ölçülür. Bir karakterin karakter artırma (toplam genişlik) A, B ve C alanları toplamıdır. A veya C alanı underhangs veya overhangs göstermek için negatif olabilir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** wingdi.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CDC::GetCharABCWidths](../../mfc/reference/cdc-class.md#getcharabcwidths)
+
+`ABCFLOAT` Yapı A, B ve C genişlikleri yazı tipi karakterinin içerir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+typedef struct _ABCFLOAT { /* abcf */
+    FLOAT abcfA;
+    FLOAT abcfB;
+    FLOAT abcfC;
+} ABCFLOAT;
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*abcfA*<br/>
+Karakteri bir boşluğu belirtir. Bir aralık uzaklığı için geçerli konumun karakter simgesi çizmeden önce ekleme ' dir.
+
+*abcfB*<br/>
+Karakter B aralığını belirtir. B boşluk karakteri glif çizilen kısmının genişliğidir.
+
+*abcfC*<br/>
+C karakter aralığını belirtir. C boşluk, boşluk karakteri glif sağındaki sağlamak için geçerli konumun eklemek için uzaklık olabilir.
+
+## <a name="remarks"></a>Açıklamalar
+
+A, B ve C genişlikleri yazı tipinin taban çizgisinin ölçülür. Bir karakterin karakter artırma (toplam genişlik) A, B ve C alanları toplamıdır. Bir ya da C alanı underhangs veya overhangs göstermek için negatif olabilir.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** wingdi.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
+[CDC::GetCharABCWidths](../../mfc/reference/cdc-class.md#getcharabcwidths)
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 94504cea86059f835d9cbda7cbf2bcdeafab589b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: db09d139227104ea15666e7333ae74943801a1b7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214116"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46384058"
 ---
 # <a name="wiremarshal"></a>wire_marshal
 
@@ -73,5 +73,5 @@ Aşağıdaki kod, bir kullanımını göstermektedir. **wire_marshal**:
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  

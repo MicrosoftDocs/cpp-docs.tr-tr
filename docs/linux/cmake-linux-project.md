@@ -15,12 +15,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 346e83461fd9dbfb7635b85e8765d241564d3157
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 88f5ef5379d597a81456dab7f3dd28a73a4df84b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45708012"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394926"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake projesi yapılandırma
 
@@ -164,5 +164,5 @@ cmake -E capabilities
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)  
+[Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)<br/>
 [Visual C++ için CMake araçları](../ide/cmake-tools-for-visual-cpp.md)  

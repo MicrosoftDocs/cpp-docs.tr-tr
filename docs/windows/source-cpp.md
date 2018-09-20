@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ccd5f5220a49ddb63554b4c3b96533a3066d4d4b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d3f4cacd380a86138095b0f8b3bf67f860d45cda
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214599"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390545"
 ---
 # <a name="source-c"></a>kaynak (C++)
 
@@ -38,7 +38,7 @@ Sınıfta, COM nesnesinin kaynak arabirimleri için bağlantı noktalarını bel
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabirimleri*  
+*Arabirimleri*<br/>
 Kaynak uyguladığınızda belirttiğiniz bir veya daha fazla arabirim bir sınıfa öznitelik. Kaynak bir özellik veya yöntem uygulandığında, bu parametre kullanılmaz.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -96,7 +96,7 @@ class NN : public b
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Sınıf Öznitelikleri](../windows/class-attributes.md)  
-[Yöntem Öznitelikleri](../windows/method-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Sınıf Öznitelikleri](../windows/class-attributes.md)<br/>
+[Yöntem Öznitelikleri](../windows/method-attributes.md)<br/>
 [coclass](../windows/coclass.md)  

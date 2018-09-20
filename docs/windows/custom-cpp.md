@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 848ea415d0638b6135c69cd14e442f45dab40237
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ec3ba8280ab481211d98c9dc5256c94e76e193e2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220367"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396455"
 ---
 # <a name="custom-c"></a>özel (C++)
 
@@ -39,10 +39,10 @@ Bir nesne için meta verileri tür kitaplığındaki tanımlar.
 
 ### <a name="parameters"></a>Parametreler
 
-*uuid*  
+*uuid*<br/>
 Benzersiz kimliği
 
-*value*  
+*value*<br/>
 Bir değişken koyabilirsiniz bir değer.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -66,10 +66,10 @@ Bir değişken koyabilirsiniz bir değer.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)  
-[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  
-[Parametre Öznitelikleri](../windows/parameter-attributes.md)  
-[Yöntem Öznitelikleri](../windows/method-attributes.md)  
-[Sınıf Öznitelikleri](../windows/class-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)<br/>
+[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[Parametre Öznitelikleri](../windows/parameter-attributes.md)<br/>
+[Yöntem Öznitelikleri](../windows/method-attributes.md)<br/>
+[Sınıf Öznitelikleri](../windows/class-attributes.md)<br/>
 [Arabirim Öznitelikleri](../windows/interface-attributes.md)  

@@ -1,5 +1,5 @@
 ---
-title: 'CObject sınıfı: Sık sorulan sorular | Microsoft Docs'
+title: 'CObject sınıfı: Sıkça sorulan sorular | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,21 +16,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7487d8fdc016642e56a469d45c8063e764823ff
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 987ae71b556abea1279605f42f5c633083221554
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343573"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46433965"
 ---
 # <a name="cobject-class-frequently-asked-questions"></a>CObject Sınıfı: Sıkça Sorulan Sorular
-Bu bölümde ele alınmaktadır sınıfı hakkında sorular `CObject`.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [CObject'ten yeni sınıflar türetmem gerekiyor mu](do-i-have-to-derive-new-classes-from-cobject-q.md)  
-  
--   [Ne onu CObject'ten sınıf Türetmenin bana maliyeti](what-does-it-cost-me-to-derive-a-class-from-cobject-q.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CObject Kullanma](../mfc/using-cobject.md)
+
+Bu bölümde, sınıf ilgili soruları ele alınmaktadır `CObject`.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Yeni sınıflar türetmem gerekiyor mu](do-i-have-to-derive-new-classes-from-cobject-q.md)
+
+- [CObject'ten sınıf Türetmenin bana maliyeti nedir](what-does-it-cost-me-to-derive-a-class-from-cobject-q.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CObject Kullanma](../mfc/using-cobject.md)

@@ -19,61 +19,70 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: adb456315b2c6d15b7a3696df9a6845a2bd2b899
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 60a0097aded73e3e0251d38daf5da71197668d3a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33686483"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46383798"
 ---
 # <a name="itopologyexecutionresource-structure"></a>ITopologyExecutionResource Yapısı
-Kaynak Yöneticisi tarafından tanımlanan bir yürütme kaynak bir arabirim.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Kaynak Yöneticisi tarafından tanımlanan bir yürütme kaynağı arabirim.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 struct ITopologyExecutionResource;
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[Itopologyexecutionresource::GetID](#getid)|Bu yürütme kaynak için Resource Manager'ın benzersiz tanımlayıcısını döndürür.|  
-|[Itopologyexecutionresource::GetNext](#getnext)|Numaralandırma sırasında sonraki yürütme kaynak için bir arabirim döndürür.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu arabirim, genellikle kaynak yöneticisi tarafından gözlemlenen sistemin topolojisi yürütmek için kullanılır.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `ITopologyExecutionResource`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** concrtrm.h  
-  
- **Namespace:** eşzamanlılık  
-  
-##  <a name="getid"></a>  Itopologyexecutionresource::GetID yöntemi  
- Bu yürütme kaynak için Resource Manager'ın benzersiz tanımlayıcısını döndürür.  
-  
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[Itopologyexecutionresource::GetID](#getid)|Bu yürütme kaynak için Resource Manager'ın benzersiz tanımlayıcısını döndürür.|
+|[Itopologyexecutionresource::GetNext](#getnext)|Sonraki yürütme kaynak numaralandırma sırasında arasında bir arabirim döndürür.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu arabirim, genellikle kaynak yöneticisi tarafından gözlemlenen sistemin topolojisi yürütmek için kullanılır.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`ITopologyExecutionResource`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** concrtrm.h
+
+**Namespace:** eşzamanlılık
+
+##  <a name="getid"></a>  Itopologyexecutionresource::GetID metodu
+
+Bu yürütme kaynak için Resource Manager'ın benzersiz tanımlayıcısını döndürür.
+
 ```
 virtual unsigned int GetId() const = 0;
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Resource Manager'ın bu yürütme kaynak için benzersiz tanımlayıcı.  
-  
-##  <a name="getnext"></a>  Itopologyexecutionresource::GetNext yöntemi  
- Numaralandırma sırasında sonraki yürütme kaynak için bir arabirim döndürür.  
-  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Resource Manager'ın bu yürütme kaynağın benzersiz tanımlayıcısı.
+
+##  <a name="getnext"></a>  Itopologyexecutionresource::GetNext metodu
+
+Sonraki yürütme kaynak numaralandırma sırasında arasında bir arabirim döndürür.
+
 ```
 virtual ITopologyExecutionResource *GetNext() const = 0;
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Sonraki yürütme kaynak numaralandırma sırasında bir arabirim. Bu yürütme kaynağa ait olduğu düğümü numaralandırma sırasına göre daha fazla düğüm varsa, bu yöntem değeri döndürür `NULL`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Sonraki yürütme kaynak numaralandırma sırasında bir arabirim. Bu yürütme kaynağın ait olduğu düğüm sabit listesi sırasına göre daha fazla düğüm varsa, bu yöntem değeri döndüreceği `NULL`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Ad Alanı](concurrency-namespace.md)

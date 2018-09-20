@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5d21348d9c252fbcd3024ca6531671979d8834eb
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 138921cfb635125210e5f5bf9305c91243c4489c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605824"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387230"
 ---
 # <a name="implements-c"></a>uygulamalar (C++)
 
@@ -39,10 +39,10 @@ IDL coclass'ı üyesi olmaya zorlanıp dağıtma arabirimleri belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabirimleri*  
+*Arabirimleri*<br/>
 Virgülle ayrılmış bir IDL coclass'ı üyesi olacak arabirimlerin listesi. Tek bir arabirim belirtmek için bir toplu yöntemi **uygular (** *interface_name* **)**.
 
-*görüntüleme*  
+*görüntüleme*<br/>
 Virgülle ayrılmış bir IDL coclass'ı üyesi olacak dispinterface listesi. Tek bir dispinterface belirtmek için bir toplu yöntemi **uygular (görüntü arabirimlerinde =** *dispinterface_name* **)**.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -558,5 +558,5 @@ public:
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Derleyici Öznitelikleri](../windows/compiler-attributes.md)  
+[Derleyici Öznitelikleri](../windows/compiler-attributes.md)<br/>
 [Sınıf Öznitelikleri](../windows/class-attributes.md)  

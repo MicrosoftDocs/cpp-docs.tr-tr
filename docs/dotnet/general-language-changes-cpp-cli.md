@@ -13,32 +13,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: aede6cc0d4bd8e50d8662f301ffdfb7b6179a230
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9b48ebdf0bf25399b08f8a1cb1240a857cfad352
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33109144"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46418469"
 ---
 # <a name="general-language-changes-ccli"></a>Genel Dil Değişiklikleri (C++/CLI)
-Visual C++ için C++ için Yönetilen Uzantılar'dan değiştirilen CLR dil özellikleri sayısı.  
-  
- Bu bölümde açıklanan tür dil derlemesidir değişir. Dize değişmez değerleri, bir üç nokta arasında aşırı yükleme çözünürlüğü değişikliği işlemedeki bir değişiklik içerir ve `Param` özniteliği, değişikliği `typeof` için `typeid`, bir değişiklik oluşturucu başlatıcı listeleri, arama ve Yeni atama gösterimi giriş, `safe_cast`.  
-  
- [Değişmez Dize Değeri](../dotnet/string-literal.md)  
- Dize değişmez değerleri işleme nasıl değiştiğini ele alır.  
-  
- [Param Dizisi ve Üç Nokta](../dotnet/param-array-and-ellipsis.md)  
- Anlatılmaktadır nasıl `ParamArray` artık üç nokta üzerinde öncelik verilir (`...`) değişken sayıda bağımsız değişken kullanarak işlev çağrılarını çözmek için.  
-  
- [typeof T::typeid'e gider](../dotnet/typeof-goes-to-t-typeid.md)  
- Anlatılmaktadır nasıl `typeof` işleci supplanted tarafından `typeid`.  
-  
- [Başlatıcı Listeleri](../dotnet/initializer-lists.md)  
- Başlatıcı Listeleri arama sırasına değişiklikleri açıklar.  
-  
- [Dönüştürme Gösterimi ve safe_cast<> Konusuna Giriş](../dotnet/cast-notation-and-introduction-of-safe-cast-angles.md)  
- Giriş dönüştürme gösterimi ve belirli değişiklikler tartışılır `safe_cast`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++/CLI Geçiş Öncüsü](../dotnet/cpp-cli-migration-primer.md)
+
+Yönetilen Uzantılar'dan C++ için Visual C++ için değiştirildi. CLR dil özellikleri sayısı.
+
+Bu bölümde açıklanan bir tür dil derlemesidir değişikliklerdir. Dize değişmez değerleri, üç nokta arasında aşırı yükleme çözünürlüğü içinde bir değişiklik işleme bir değişiklik içerir ve `Param` özniteliği, değişikliği `typeof` için `typeid`, arama oluşturucu başlatıcı listelerinin bir değişikliği ve Yeni bir atama gösterimi sunulmasıyla, `safe_cast`.
+
+[Değişmez Dize Değeri](../dotnet/string-literal.md)<br/>
+Dize değişmez değerleri işlenmesini nasıl değiştiğini açıklanır.
+
+[Param Dizisi ve Üç Nokta](../dotnet/param-array-and-ellipsis.md)<br/>
+Açıklar nasıl `ParamArray` artık, üç nokta üzerinde öncelik verilir (`...`) değişen sayıda bağımsız değişkenler kullanarak işlev çağrılarını çözümlemek için.
+
+[typeof T::typeid'e gider](../dotnet/typeof-goes-to-t-typeid.md)<br/>
+Açıklar nasıl `typeof` işleci supplanted tarafından `typeid`.
+
+[Başlatıcı Listeleri](../dotnet/initializer-lists.md)<br/>
+Başlatıcı Listeleri arama sırası değişiklikleri anlatır.
+
+[Dönüştürme Gösterimi ve safe_cast<> Konusuna Giriş](../dotnet/cast-notation-and-introduction-of-safe-cast-angles.md)<br/>
+Değişiklikler atama gösterimi ve belirli sunulmasıyla tartışılır `safe_cast`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C++/CLI Geçiş Öncüsü](../dotnet/cpp-cli-migration-primer.md)

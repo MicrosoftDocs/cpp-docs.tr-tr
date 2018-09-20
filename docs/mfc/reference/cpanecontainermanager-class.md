@@ -116,796 +116,826 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 679445f9d80a971f0febe2ba92e7826c3ada5ca1
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 06d5947899ad73e02d665cbefedd7efbab85f875
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721623"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46409018"
 ---
 # <a name="cpanecontainermanager-class"></a>CPaneContainerManager sınıfı
-`CPaneContainerManager` Sınıfı, depolama ve geçerli yerleştirme düzeni görünümünü yönetir.  
- Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CPaneContainerManager : public CObject  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CPaneContainerManager::AddPane](#addpane)||  
-|[CPaneContainerManager::AddPaneContainerManager](#addpanecontainermanager)||  
-|[CPaneContainerManager::AddPaneContainerManagerToDockablePane](#addpanecontainermanagertodockablepane)||  
-|[CPaneContainerManager::AddPanesToList](#addpanestolist)||  
-|[CPaneContainerManager::AddPaneToList](#addpanetolist)||  
-|[CPaneContainerManager::AddPaneToRecentPaneContainer](#addpanetorecentpanecontainer)||  
-|[CPaneContainerManager::CalcRects](#calcrects)||  
-|[CPaneContainerManager::CanBeAttached](#canbeattached)||  
-|[CPaneContainerManager::CheckAndRemoveNonValidPane](#checkandremovenonvalidpane)||  
-|[CPaneContainerManager::CheckForMiniFrameAndCaption](#checkforminiframeandcaption)||  
-|[CPaneContainerManager::Create](#create)||  
-|[CPaneContainerManager::DoesAllowDynInsertBefore](#doesallowdyninsertbefore)||  
-|[CPaneContainerManager::DoesContainFloatingPane](#doescontainfloatingpane)||  
-|[CPaneContainerManager::EnableGrippers](#enablegrippers)||  
-|[CPaneContainerManager::FindPaneContainer](#findpanecontainer)||  
-|[CPaneContainerManager::FindTabbedPane](#findtabbedpane)||  
-|[CPaneContainerManager::GetAvailableSpace](#getavailablespace)||  
-|[CPaneContainerManager::GetDefaultPaneDivider](#getdefaultpanedivider)||  
-|[CPaneContainerManager::GetDockSiteFrameWnd](#getdocksiteframewnd)||  
-|[CPaneContainerManager::GetFirstPane](#getfirstpane)||  
-|[CPaneContainerManager::GetFirstVisiblePane](#getfirstvisiblepane)||  
-|[CPaneContainerManager::GetMinMaxOffset](#getminmaxoffset)||  
-|[CPaneContainerManager::GetMinSize](#getminsize)||  
-|[CPaneContainerManager::GetNodeCount](#getnodecount)||  
-|[CPaneContainerManager::GetPaneContainerRTC](#getpanecontainerrtc)||  
-|[CPaneContainerManager::GetPaneCount](#getpanecount)||  
-|[CPaneContainerManager::GetTotalRefCount](#gettotalrefcount)||  
-|[CPaneContainerManager::GetVisiblePaneCount](#getvisiblepanecount)||  
-|[CPaneContainerManager::GetWindowRect](#getwindowrect)||  
-|[CPaneContainerManager::HideAll](#hideall)||  
-|[CPaneContainerManager::InsertPane](#insertpane)||  
-|[CPaneContainerManager::IsAutoHideMode](#isautohidemode)||  
-|[CPaneContainerManager::IsEmpty](#isempty)||  
-|[CPaneContainerManager::IsRootPaneContainerVisible](#isrootpanecontainervisible)||  
-|[CPaneContainerManager::NotifyPaneDivider](#notifypanedivider)||  
-|[CPaneContainerManager::OnPaneDividerMove](#onpanedividermove)||  
-|[CPaneContainerManager::OnShowPane](#onshowpane)||  
-|[CPaneContainerManager::PaneFromPoint](#panefrompoint)||  
-|[CPaneContainerManager::ReleaseEmptyPaneContainers](#releaseemptypanecontainers)||  
-|[CPaneContainerManager::RemoveAllPanesAndPaneDividers](#removeallpanesandpanedividers)||  
-|[CPaneContainerManager::RemoveNonValidPanes](#removenonvalidpanes)||  
-|[CPaneContainerManager::RemovePaneDivider](#removepanedivider)||  
-|[CPaneContainerManager::RemovePaneFromPaneContainer](#removepanefrompanecontainer)||  
-|[CPaneContainerManager::ReplacePane](#replacepane)||  
-|[CPaneContainerManager::ResizePaneContainers](#resizepanecontainers)||  
-|[CPaneContainerManager::Serialize](#serialize)|Okur veya ya da bir arşivden bu nesneyi yazar. (Geçersiz kılmaları [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize).)|  
-|[CPaneContainerManager::SetDefaultPaneDividerForPanes](#setdefaultpanedividerforpanes)||  
-|[CPaneContainerManager::SetPaneContainerRTC](#setpanecontainerrtc)||  
-|[CPaneContainerManager::SetResizeMode](#setresizemode)||  
-|[CPaneContainerManager::StoreRecentDockSiteInfo](#storerecentdocksiteinfo)||  
-  
-### <a name="remarks"></a>Açıklamalar  
- Framework örneklerini otomatik olarak oluşturur. `CPaneContainerManager` nesneleri ve ya da katıştırır içine [CPaneDivider sınıfı](../../mfc/reference/cpanedivider-class.md) nesneleri veya [CMultiPaneFrameWnd sınıfı](../../mfc/reference/cmultipaneframewnd-class.md) nesneleri.  
-  
- `CPaneContainerManager` Sınıfı oluşturulur bir ikili ağaç kökünde bir işaretçi depolar [CPaneContainer](../../mfc/reference/cpanecontainer-class.md) nesneleri.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir başvuru almak gösterilmiştir bir `CPaneContainerManager` nesne. Bu kod parçacığı parçasıdır [bölme boyutunu ayarlayın örnek](../../visual-cpp-samples.md).  
-  
- [!code-cpp[NVC_MFC_SetPaneSize#5](../../mfc/reference/codesnippet/cpp/cpanecontainermanager-class_1.cpp)]  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- [CPaneContainerManager](../../mfc/reference/cpanecontainermanager-class.md)  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxpanecontainermanager.h  
-  
-##  <a name="addpane"></a>  CPaneContainerManager::AddPane  
 
-  
-```  
+`CPaneContainerManager` Sınıfı, depolama ve geçerli yerleştirme düzeni görünümünü yönetir.
+Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CPaneContainerManager : public CObject
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CPaneContainerManager::AddPane](#addpane)||
+|[CPaneContainerManager::AddPaneContainerManager](#addpanecontainermanager)||
+|[CPaneContainerManager::AddPaneContainerManagerToDockablePane](#addpanecontainermanagertodockablepane)||
+|[CPaneContainerManager::AddPanesToList](#addpanestolist)||
+|[CPaneContainerManager::AddPaneToList](#addpanetolist)||
+|[CPaneContainerManager::AddPaneToRecentPaneContainer](#addpanetorecentpanecontainer)||
+|[CPaneContainerManager::CalcRects](#calcrects)||
+|[CPaneContainerManager::CanBeAttached](#canbeattached)||
+|[CPaneContainerManager::CheckAndRemoveNonValidPane](#checkandremovenonvalidpane)||
+|[CPaneContainerManager::CheckForMiniFrameAndCaption](#checkforminiframeandcaption)||
+|[CPaneContainerManager::Create](#create)||
+|[CPaneContainerManager::DoesAllowDynInsertBefore](#doesallowdyninsertbefore)||
+|[CPaneContainerManager::DoesContainFloatingPane](#doescontainfloatingpane)||
+|[CPaneContainerManager::EnableGrippers](#enablegrippers)||
+|[CPaneContainerManager::FindPaneContainer](#findpanecontainer)||
+|[CPaneContainerManager::FindTabbedPane](#findtabbedpane)||
+|[CPaneContainerManager::GetAvailableSpace](#getavailablespace)||
+|[CPaneContainerManager::GetDefaultPaneDivider](#getdefaultpanedivider)||
+|[CPaneContainerManager::GetDockSiteFrameWnd](#getdocksiteframewnd)||
+|[CPaneContainerManager::GetFirstPane](#getfirstpane)||
+|[CPaneContainerManager::GetFirstVisiblePane](#getfirstvisiblepane)||
+|[CPaneContainerManager::GetMinMaxOffset](#getminmaxoffset)||
+|[CPaneContainerManager::GetMinSize](#getminsize)||
+|[CPaneContainerManager::GetNodeCount](#getnodecount)||
+|[CPaneContainerManager::GetPaneContainerRTC](#getpanecontainerrtc)||
+|[CPaneContainerManager::GetPaneCount](#getpanecount)||
+|[CPaneContainerManager::GetTotalRefCount](#gettotalrefcount)||
+|[CPaneContainerManager::GetVisiblePaneCount](#getvisiblepanecount)||
+|[CPaneContainerManager::GetWindowRect](#getwindowrect)||
+|[CPaneContainerManager::HideAll](#hideall)||
+|[CPaneContainerManager::InsertPane](#insertpane)||
+|[CPaneContainerManager::IsAutoHideMode](#isautohidemode)||
+|[CPaneContainerManager::IsEmpty](#isempty)||
+|[CPaneContainerManager::IsRootPaneContainerVisible](#isrootpanecontainervisible)||
+|[CPaneContainerManager::NotifyPaneDivider](#notifypanedivider)||
+|[CPaneContainerManager::OnPaneDividerMove](#onpanedividermove)||
+|[CPaneContainerManager::OnShowPane](#onshowpane)||
+|[CPaneContainerManager::PaneFromPoint](#panefrompoint)||
+|[CPaneContainerManager::ReleaseEmptyPaneContainers](#releaseemptypanecontainers)||
+|[CPaneContainerManager::RemoveAllPanesAndPaneDividers](#removeallpanesandpanedividers)||
+|[CPaneContainerManager::RemoveNonValidPanes](#removenonvalidpanes)||
+|[CPaneContainerManager::RemovePaneDivider](#removepanedivider)||
+|[CPaneContainerManager::RemovePaneFromPaneContainer](#removepanefrompanecontainer)||
+|[CPaneContainerManager::ReplacePane](#replacepane)||
+|[CPaneContainerManager::ResizePaneContainers](#resizepanecontainers)||
+|[CPaneContainerManager::Serialize](#serialize)|Okur veya ya da bir arşivden bu nesneyi yazar. (Geçersiz kılmaları [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize).)|
+|[CPaneContainerManager::SetDefaultPaneDividerForPanes](#setdefaultpanedividerforpanes)||
+|[CPaneContainerManager::SetPaneContainerRTC](#setpanecontainerrtc)||
+|[CPaneContainerManager::SetResizeMode](#setresizemode)||
+|[CPaneContainerManager::StoreRecentDockSiteInfo](#storerecentdocksiteinfo)||
+
+### <a name="remarks"></a>Açıklamalar
+
+Framework örneklerini otomatik olarak oluşturur. `CPaneContainerManager` nesneleri ve ya da katıştırır içine [CPaneDivider sınıfı](../../mfc/reference/cpanedivider-class.md) nesneleri veya [CMultiPaneFrameWnd sınıfı](../../mfc/reference/cmultipaneframewnd-class.md) nesneleri.
+
+`CPaneContainerManager` Sınıfı oluşturulur bir ikili ağaç kökünde bir işaretçi depolar [CPaneContainer](../../mfc/reference/cpanecontainer-class.md) nesneleri.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, bir başvuru almak gösterilmiştir bir `CPaneContainerManager` nesne. Bu kod parçacığı parçasıdır [bölme boyutunu ayarlayın örnek](../../visual-cpp-samples.md).
+
+[!code-cpp[NVC_MFC_SetPaneSize#5](../../mfc/reference/codesnippet/cpp/cpanecontainermanager-class_1.cpp)]
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+[CPaneContainerManager](../../mfc/reference/cpanecontainermanager-class.md)
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxpanecontainermanager.h
+
+##  <a name="addpane"></a>  CPaneContainerManager::AddPane
+
+
+```
 virtual void AddPane(CDockablePane* pControlBarToAdd);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *pControlBarToAdd*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="addpanecontainermanager"></a>  CPaneContainerManager::AddPaneContainerManager  
+```
 
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+[in] *pControlBarToAdd*
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="addpanecontainermanager"></a>  CPaneContainerManager::AddPaneContainerManager
+
+
+```
 virtual BOOL AddPaneContainerManager(
-    CPaneContainerManager& srcManager,  
+    CPaneContainerManager& srcManager,
     BOOL bOuterEdge);
 
- 
+
 virtual BOOL AddPaneContainerManager(
-    CDockablePane* pTargetControlBar,  
-    DWORD dwAlignment,  
-    CPaneContainerManager& srcManager,  
+    CDockablePane* pTargetControlBar,
+    DWORD dwAlignment,
+    CPaneContainerManager& srcManager,
     BOOL bCopy);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *srcManager*<br/>
-[in] [in] *bOuterEdge*  
+[in] [in] *bOuterEdge*
 *pTargetControlBar*<br/>
-[in] [in] *dwAlignment*  
- [in] *bCopy*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="addpanecontainermanagertodockablepane"></a>  CPaneContainerManager::AddPaneContainerManagerToDockablePane  
+[in] [in] *dwAlignment* [in] *bCopy*
 
-  
-```  
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="addpanecontainermanagertodockablepane"></a>  CPaneContainerManager::AddPaneContainerManagerToDockablePane
+
+
+```
 virtual BOOL AddPaneContainerManagerToDockablePane(
-    CDockablePane* pTargetControlBar,  
+    CDockablePane* pTargetControlBar,
     CPaneContainerManager& srcManager);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pTargetControlBar*<br/>
-[in] [in] *srcManager*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="addpanestolist"></a>  CPaneContainerManager::AddPanesToList  
+[in] [in] *srcManager*
 
-  
-```  
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="addpanestolist"></a>  CPaneContainerManager::AddPanesToList
+
+
+```
 void AddPanesToList(
-    CObList* plstControlBars,  
+    CObList* plstControlBars,
     CObList* plstSliders);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *plstControlBars*<br/>
-[in] [in] *plstSliders*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="addpanetolist"></a>  CPaneContainerManager::AddPaneToList  
+[in] [in] *plstSliders*
 
-  
-```  
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="addpanetolist"></a>  CPaneContainerManager::AddPaneToList
+
+
+```
 void AddPaneToList(CDockablePane* pControlBarToAdd);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *pControlBarToAdd*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="addpanetorecentpanecontainer"></a>  CPaneContainerManager::AddPaneToRecentPaneContainer  
+```
 
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+[in] *pControlBarToAdd*
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="addpanetorecentpanecontainer"></a>  CPaneContainerManager::AddPaneToRecentPaneContainer
+
+
+```
 virtual CDockablePane* AddPaneToRecentPaneContainer(
-    CDockablePane* pBarToAdd,  
+    CDockablePane* pBarToAdd,
     CPaneContainer* pRecentContainer);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pBarToAdd*<br/>
-[in] [in] *pRecentContainer*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="calcrects"></a>  CPaneContainerManager::CalcRects  
+[in] [in] *pRecentContainer*
 
-  
-```  
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="calcrects"></a>  CPaneContainerManager::CalcRects
+
+
+```
 void CalcRects(
-    CRect& rectOriginal,  
-    CRect& rectInserted,  
-    CRect& rectSlider,  
-    DWORD& dwSliderStyle,  
-    DWORD dwAlignment,  
-    CSize sizeMinOriginal,  
+    CRect& rectOriginal,
+    CRect& rectInserted,
+    CRect& rectSlider,
+    DWORD& dwSliderStyle,
+    DWORD dwAlignment,
+    CSize sizeMinOriginal,
     CSize sizeMinInserted);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *rectOriginal*<br/>
-[in] [in] *rectInserted*  
+[in] [in] *rectInserted*
 *rectSlider*<br/>
-[in] [in] *dwSliderStyle*  
+[in] [in] *dwSliderStyle*
 *dwAlignment*<br/>
-[in] [in] *sizeMinOriginal*  
- [in] *sizeMinInserted*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="canbeattached"></a>  CPaneContainerManager::CanBeAttached  
+[in] [in] *sizeMinOriginal* [in] *sizeMinInserted*
 
-  
-```  
-virtual BOOL CanBeAttached() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="checkandremovenonvalidpane"></a>  CPaneContainerManager::CheckAndRemoveNonValidPane  
+### <a name="remarks"></a>Açıklamalar
 
-  
-```  
+##  <a name="canbeattached"></a>  CPaneContainerManager::CanBeAttached
+
+
+```
+virtual BOOL CanBeAttached() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="checkandremovenonvalidpane"></a>  CPaneContainerManager::CheckAndRemoveNonValidPane
+
+
+```
 BOOL CheckAndRemoveNonValidPane(CWnd* pWnd);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *pWnd*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="checkforminiframeandcaption"></a>  CPaneContainerManager::CheckForMiniFrameAndCaption  
+```
 
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+[in] *pWnd*
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="checkforminiframeandcaption"></a>  CPaneContainerManager::CheckForMiniFrameAndCaption
+
+
+```
 virtual BOOL CheckForMiniFrameAndCaption(
-    CPoint point,  
+    CPoint point,
     CDockablePane** ppTargetControlBar);
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*Noktası*<br/>
-[in] [in] *ppTargetControlBar*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="create"></a>  CPaneContainerManager::Create  
+```
 
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+*Noktası*<br/>
+[in] [in] *ppTargetControlBar*
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="create"></a>  CPaneContainerManager::Create
+
+
+```
 virtual BOOL Create(
-    CWnd* pParentWnd,  
-    CPaneDivider* pDefaultSlider,  
+    CWnd* pParentWnd,
+    CPaneDivider* pDefaultSlider,
     CRuntimeClass* pContainerRTC = NULL);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pParentWnd*<br/>
-[in] [in] *pDefaultSlider*  
- [in] *pContainerRTC*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="doesallowdyninsertbefore"></a>  CPaneContainerManager::DoesAllowDynInsertBefore  
+[in] [in] *pDefaultSlider* [in] *pContainerRTC*
 
-  
-```  
-virtual BOOL DoesAllowDynInsertBefore() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="doescontainfloatingpane"></a>  CPaneContainerManager::DoesContainFloatingPane  
+### <a name="return-value"></a>Dönüş Değeri
 
-  
-```  
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="doesallowdyninsertbefore"></a>  CPaneContainerManager::DoesAllowDynInsertBefore
+
+
+```
+virtual BOOL DoesAllowDynInsertBefore() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="doescontainfloatingpane"></a>  CPaneContainerManager::DoesContainFloatingPane
+
+
+```
 virtual BOOL DoesContainFloatingPane();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="enablegrippers"></a>  CPaneContainerManager::EnableGrippers  
+```
 
-  
-```  
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="enablegrippers"></a>  CPaneContainerManager::EnableGrippers
+
+
+```
 virtual void EnableGrippers(BOOL bEnable);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="findpanecontainer"></a>  CPaneContainerManager::FindPaneContainer  
+```
 
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+[in] *bSistemlerde*
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="findpanecontainer"></a>  CPaneContainerManager::FindPaneContainer
+
+
+```
 virtual CPaneContainer* FindPaneContainer(
-    CDockablePane* pBar,  
+    CDockablePane* pBar,
     BOOL& bLeftBar);
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*pBar*<br/>
-[in] [in] *bLeftBar*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="findtabbedpane"></a>  CPaneContainerManager::FindTabbedPane  
+```
 
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+*pBar*<br/>
+[in] [in] *bLeftBar*
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="findtabbedpane"></a>  CPaneContainerManager::FindTabbedPane
+
+
+```
 CDockablePane* FindTabbedPane(UINT nID);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *nID*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getavailablespace"></a>  CPaneContainerManager::GetAvailableSpace  
+```
 
-  
-```  
-virtual void GetAvailableSpace(CRect& rect) const;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *dikdörtgen*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getdefaultpanedivider"></a>  CPaneContainerManager::GetDefaultPaneDivider  
+### <a name="parameters"></a>Parametreler
 
-  
-```  
-CPaneDivider* GetDefaultPaneDivider() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getdocksiteframewnd"></a>  CPaneContainerManager::GetDockSiteFrameWnd  
+[in] *nID*
 
-  
-```  
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="getavailablespace"></a>  CPaneContainerManager::GetAvailableSpace
+
+
+```
+virtual void GetAvailableSpace(CRect& rect) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
+[in] *dikdörtgen*
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="getdefaultpanedivider"></a>  CPaneContainerManager::GetDefaultPaneDivider
+
+
+```
+CPaneDivider* GetDefaultPaneDivider() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="getdocksiteframewnd"></a>  CPaneContainerManager::GetDockSiteFrameWnd
+
+
+```
 virtual CWnd* GetDockSiteFrameWnd();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getfirstpane"></a>  CPaneContainerManager::GetFirstPane  
+```
 
-  
-```  
-virtual CBasePane* GetFirstPane() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getfirstvisiblepane"></a>  CPaneContainerManager::GetFirstVisiblePane  
+### <a name="return-value"></a>Dönüş Değeri
 
-  
-```  
-virtual CWnd* GetFirstVisiblePane() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getminmaxoffset"></a>  CPaneContainerManager::GetMinMaxOffset  
+### <a name="remarks"></a>Açıklamalar
 
-  
-```  
+##  <a name="getfirstpane"></a>  CPaneContainerManager::GetFirstPane
+
+
+```
+virtual CBasePane* GetFirstPane() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="getfirstvisiblepane"></a>  CPaneContainerManager::GetFirstVisiblePane
+
+
+```
+virtual CWnd* GetFirstVisiblePane() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="getminmaxoffset"></a>  CPaneContainerManager::GetMinMaxOffset
+
+
+```
 virtual void GetMinMaxOffset(
-    CPaneDivider* pSlider,  
-    int& nMinOffset,  
-    int& nMaxOffset,  
+    CPaneDivider* pSlider,
+    int& nMinOffset,
+    int& nMaxOffset,
     int& nStep);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pSlider*<br/>
-[in] [in] *nMinOffset*  
+[in] [in] *nMinOffset*
 *nMaxOffset*<br/>
-[in] [in] *nStep*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getminsize"></a>  CPaneContainerManager::GetMinSize  
+[in] [in] *nStep*
 
-  
-```  
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="getminsize"></a>  CPaneContainerManager::GetMinSize
+
+
+```
 virtual void GetMinSize(CSize& size);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *boyutu*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getnodecount"></a>  CPaneContainerManager::GetNodeCount  
+```
 
-  
-```  
-int GetNodeCount() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getpanecontainerrtc"></a>  CPaneContainerManager::GetPaneContainerRTC  
+### <a name="parameters"></a>Parametreler
 
-  
-```  
-CRuntimeClass* GetPaneContainerRTC() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getpanecount"></a>  CPaneContainerManager::GetPaneCount  
+[in] *boyutu*
 
-  
-```  
-int GetPaneCount() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="gettotalrefcount"></a>  CPaneContainerManager::GetTotalRefCount  
+### <a name="remarks"></a>Açıklamalar
 
-  
-```  
-int GetTotalRefCount() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getvisiblepanecount"></a>  CPaneContainerManager::GetVisiblePaneCount  
+##  <a name="getnodecount"></a>  CPaneContainerManager::GetNodeCount
 
-  
-```  
-virtual int GetVisiblePaneCount() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getwindowrect"></a>  CPaneContainerManager::GetWindowRect  
 
-  
-```  
-virtual void GetWindowRect(CRect& rect) const;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *dikdörtgen*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="hideall"></a>  CPaneContainerManager::HideAll  
+```
+int GetNodeCount() const;
+```
 
-  
-```  
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="getpanecontainerrtc"></a>  CPaneContainerManager::GetPaneContainerRTC
+
+
+```
+CRuntimeClass* GetPaneContainerRTC() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="getpanecount"></a>  CPaneContainerManager::GetPaneCount
+
+
+```
+int GetPaneCount() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="gettotalrefcount"></a>  CPaneContainerManager::GetTotalRefCount
+
+
+```
+int GetTotalRefCount() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="getvisiblepanecount"></a>  CPaneContainerManager::GetVisiblePaneCount
+
+
+```
+virtual int GetVisiblePaneCount() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="getwindowrect"></a>  CPaneContainerManager::GetWindowRect
+
+
+```
+virtual void GetWindowRect(CRect& rect) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
+[in] *dikdörtgen*
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="hideall"></a>  CPaneContainerManager::HideAll
+
+
+```
 virtual void HideAll();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="insertpane"></a>  CPaneContainerManager::InsertPane  
+```
 
-  
-```  
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="insertpane"></a>  CPaneContainerManager::InsertPane
+
+
+```
 virtual BOOL InsertPane(
-    CDockablePane* pControlBarToInsert,  
-    CDockablePane* pTargetControlBar,  
-    DWORD dwAlignment,  
-    LPCRECT lpRect = NULL,  
+    CDockablePane* pControlBarToInsert,
+    CDockablePane* pTargetControlBar,
+    DWORD dwAlignment,
+    LPCRECT lpRect = NULL,
     AFX_DOCK_METHOD dockMethod = DM_UNKNOWN);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pControlBarToInsert*<br/>
-[in] [in] *pTargetControlBar*  
+[in] [in] *pTargetControlBar*
 *dwAlignment*<br/>
-[in] [in] *lpRect*  
- [in] *dockMethod*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="isautohidemode"></a>  CPaneContainerManager::IsAutoHideMode  
+[in] [in] *lpRect* [in] *dockMethod*
 
-  
-```  
-BOOL IsAutoHideMode() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="isempty"></a>  CPaneContainerManager::IsEmpty  
+### <a name="return-value"></a>Dönüş Değeri
 
-  
-```  
-BOOL IsEmpty() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="isrootpanecontainervisible"></a>  CPaneContainerManager::IsRootPaneContainerVisible  
+### <a name="remarks"></a>Açıklamalar
 
-  
-```  
-virtual BOOL IsRootPaneContainerVisible() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="notifypanedivider"></a>  CPaneContainerManager::NotifyPaneDivider  
+##  <a name="isautohidemode"></a>  CPaneContainerManager::IsAutoHideMode
 
-  
-```  
+
+```
+BOOL IsAutoHideMode() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="isempty"></a>  CPaneContainerManager::IsEmpty
+
+
+```
+BOOL IsEmpty() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="isrootpanecontainervisible"></a>  CPaneContainerManager::IsRootPaneContainerVisible
+
+
+```
+virtual BOOL IsRootPaneContainerVisible() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="notifypanedivider"></a>  CPaneContainerManager::NotifyPaneDivider
+
+
+```
 void NotifyPaneDivider();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="onpanedividermove"></a>  CPaneContainerManager::OnPaneDividerMove  
+```
 
-  
-```  
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="onpanedividermove"></a>  CPaneContainerManager::OnPaneDividerMove
+
+
+```
 virtual int OnPaneDividerMove(
-    CPaneDivider* pSlider,  
-    UINT uFlags,  
-    int nOffset,  
+    CPaneDivider* pSlider,
+    UINT uFlags,
+    int nOffset,
     HDWP& hdwp);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pSlider*<br/>
-[in] [in] *uFlags*  
+[in] [in] *uFlags*
 *nOffset*<br/>
-[in] [in] *hdwp*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="onshowpane"></a>  CPaneContainerManager::OnShowPane  
+[in] [in] *hdwp*
 
-  
-```  
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="onshowpane"></a>  CPaneContainerManager::OnShowPane
+
+
+```
 virtual BOOL OnShowPane(
-    CDockablePane* pBar,  
+    CDockablePane* pBar,
     BOOL bShow);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pBar*<br/>
-[in] [in] *bBilgi Göster*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="panefrompoint"></a>  CPaneContainerManager::PaneFromPoint  
+[in] [in] *bBilgi Göster*
 
-  
-```  
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="panefrompoint"></a>  CPaneContainerManager::PaneFromPoint
+
+
+```
 virtual CDockablePane* PaneFromPoint(
-    CPoint point,  
-    int nSensitivity,  
-    BOOL bExactBar,  
-    BOOL& bIsTabArea,  
+    CPoint point,
+    int nSensitivity,
+    BOOL bExactBar,
+    BOOL& bIsTabArea,
     BOOL& bCaption);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *Noktası*<br/>
-[in] [in] *nSensitivity*  
+[in] [in] *nSensitivity*
 *bExactBar*<br/>
-[in] [in] *bIsTabArea*  
- [in] *bCaption*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="releaseemptypanecontainers"></a>  CPaneContainerManager::ReleaseEmptyPaneContainers  
+[in] [in] *bIsTabArea* [in] *bCaption*
 
-  
-```  
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="releaseemptypanecontainers"></a>  CPaneContainerManager::ReleaseEmptyPaneContainers
+
+
+```
 void ReleaseEmptyPaneContainers();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="removeallpanesandpanedividers"></a>  CPaneContainerManager::RemoveAllPanesAndPaneDividers  
+```
 
-  
-```  
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="removeallpanesandpanedividers"></a>  CPaneContainerManager::RemoveAllPanesAndPaneDividers
+
+
+```
 void RemoveAllPanesAndPaneDividers();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="removenonvalidpanes"></a>  CPaneContainerManager::RemoveNonValidPanes  
+```
 
-  
-```  
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="removenonvalidpanes"></a>  CPaneContainerManager::RemoveNonValidPanes
+
+
+```
 void RemoveNonValidPanes();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="removepanedivider"></a>  CPaneContainerManager::RemovePaneDivider  
+```
 
-  
-```  
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="removepanedivider"></a>  CPaneContainerManager::RemovePaneDivider
+
+
+```
 virtual void RemovePaneDivider(CPaneDivider* pSlider);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *pSlider*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="removepanefrompanecontainer"></a>  CPaneContainerManager::RemovePaneFromPaneContainer  
+```
 
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+[in] *pSlider*
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="removepanefrompanecontainer"></a>  CPaneContainerManager::RemovePaneFromPaneContainer
+
+
+```
 virtual BOOL RemovePaneFromPaneContainer(CDockablePane* pControlBar);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *pControlBar*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="replacepane"></a>  CPaneContainerManager::ReplacePane  
+```
 
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+[in] *pControlBar*
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="replacepane"></a>  CPaneContainerManager::ReplacePane
+
+
+```
 virtual BOOL ReplacePane(
-    CDockablePane* pBarOld,  
+    CDockablePane* pBarOld,
     CDockablePane* pBarNew);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pBarOld*<br/>
-[in] [in] *pBarNew*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="resizepanecontainers"></a>  CPaneContainerManager::ResizePaneContainers  
+[in] [in] *pBarNew*
 
-  
-```  
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="resizepanecontainers"></a>  CPaneContainerManager::ResizePaneContainers
+
+
+```
 virtual void ResizePaneContainers(
-    UINT nSide,  
-    BOOL bExpand,  
-    int nOffset,  
+    UINT nSide,
+    BOOL bExpand,
+    int nOffset,
     HDWP& hdwp);
 
- 
+
 virtual void ResizePaneContainers(
-    CRect rect,  
+    CRect rect,
     HDWP& hdwp);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *nSide*<br/>
-[in] [in] *bExpand*  
+[in] [in] *bExpand*
 *nOffset*<br/>
-[in] [in] *hdwp*  
- [in] *dikdörtgen*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="serialize"></a>  CPaneContainerManager::Serialize  
+[in] [in] *hdwp* [in] *dikdörtgen*
 
-  
-```  
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="serialize"></a>  CPaneContainerManager::Serialize
+
+
+```
 void Serialize(CArchive& ar);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *ar*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="setdefaultpanedividerforpanes"></a>  CPaneContainerManager::SetDefaultPaneDividerForPanes  
+```
 
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+[in] *ar*
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="setdefaultpanedividerforpanes"></a>  CPaneContainerManager::SetDefaultPaneDividerForPanes
+
+
+```
 void SetDefaultPaneDividerForPanes(CPaneDivider* pSlider);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *pSlider*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="setpanecontainerrtc"></a>  CPaneContainerManager::SetPaneContainerRTC  
+```
 
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+[in] *pSlider*
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="setpanecontainerrtc"></a>  CPaneContainerManager::SetPaneContainerRTC
+
+
+```
 void SetPaneContainerRTC(CRuntimeClass* pContainerRTC);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *pContainerRTC*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="setresizemode"></a>  CPaneContainerManager::SetResizeMode  
+```
 
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+[in] *pContainerRTC*
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="setresizemode"></a>  CPaneContainerManager::SetResizeMode
+
+
+```
 virtual void SetResizeMode(BOOL bResize);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *bResize*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="storerecentdocksiteinfo"></a>  CPaneContainerManager::StoreRecentDockSiteInfo  
+```
 
-  
-```  
+### <a name="parameters"></a>Parametreler
+
+[in] *bResize*
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="storerecentdocksiteinfo"></a>  CPaneContainerManager::StoreRecentDockSiteInfo
+
+
+```
 virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *pBar*  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CObject sınıfı](../../mfc/reference/cobject-class.md)   
- [CPaneContainer sınıfı](../../mfc/reference/cpanecontainer-class.md)   
- [CPaneDivider Sınıfı](../../mfc/reference/cpanedivider-class.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+[in] *pBar*
+
+### <a name="remarks"></a>Açıklamalar
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
+[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[CPaneContainer Sınıfı](../../mfc/reference/cpanecontainer-class.md)<br/>
+[CPaneDivider Sınıfı](../../mfc/reference/cpanedivider-class.md)

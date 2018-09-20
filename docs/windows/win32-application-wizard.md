@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bdcd101759b35490451bf46bd6e222db469a3fba
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 26282ef73f6a979cd564bd7597f8418c6535179a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42581248"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390525"
 ---
 # <a name="win32-application-wizard"></a>Win32 Uygulama Sihirbazı
 
@@ -62,5 +62,5 @@ Projeniz için sihirbazın oluşturduğu dosyaları görüntüleyebilirsiniz **�
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Boş Windows Masaüstü Uygulaması Oluşturma](../windows/creating-an-empty-windows-desktop-application.md)  
-[Visual C++ proje türleri](../ide/visual-cpp-project-types.md)
+[Boş Windows Masaüstü Uygulaması Oluşturma](../windows/creating-an-empty-windows-desktop-application.md)<br/>
+[Visual C++ Proje Türleri](../ide/visual-cpp-project-types.md)

@@ -18,16 +18,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9a438c2bbdae64e17715aa398685e6600d9886a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: da8c1e6e524771c3176b17a26bd639f36a9e867e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382547"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423253"
 ---
 # <a name="windows-sockets"></a>Windows Yuvaları
-Bu makaleler ailesi Windows Sockets MFC uygulaması kapsar. MFC Windows Sockets API ile programlama ağ uygulamaları desteklemek için iki sınıflar sağlar. Sınıf [CAsyncSocket](../mfc/reference/casyncsocket-class.md) Windows Sockets API aşağıdakilerden biri için Gelişmiş Ağ programcıları en gücü ve esnekliği vermiş yalıtır. Sınıf [CSocket](../mfc/reference/csocket-class.md) ve ondan veri serileştirmek için basitleştirilmiş bir arabirim sağlayan bir [CArchive](../mfc/reference/carchive-class.md) nesnesi.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)
+
+Bu makaleler ailesi Windows Sockets MFC uygulamasını kapsar. MFC Windows Sockets API'si ile programlama ağ uygulamaları desteklemek için iki sınıflar sağlar. Sınıf [Casyncsocket'ini](../mfc/reference/casyncsocket-class.md) Windows Sockets API'SİNİN bir biri için Gelişmiş Ağ programcılar en çok, gücü ve esnekliği vererek kapsüller. Sınıf [CSocket](../mfc/reference/csocket-class.md) ve ondan veri serileştirmek için basitleştirilmiş bir arabirim sağlayan bir [CArchive](../mfc/reference/carchive-class.md) nesne.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)
 

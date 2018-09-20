@@ -15,63 +15,65 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 066c032a18b2fedc88884b7e6eee55f07fcf43ad
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 46fa8b115dd01a9ee11442a0701cd719cc6d389e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36930081"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394367"
 ---
 # <a name="containers-implementing-a-container"></a>Kapsayıcılar: Bir Kapsayıcı Uygulama
-Bu makalede, bir kapsayıcı uygulama yordamı özetler ve açıklamalarının kapsayıcıları uygulama hakkında ayrıntılı sağlayan diğer makalelere işaret eder. Ayrıca, uygulamak istediğiniz isteğe bağlı bazı OLE özellikleri ve bu özellikler açıklayan makaleleri listeler.  
-  
-#### <a name="to-prepare-your-cwinapp-derived-class"></a>CWinApp türetilmiş sınıf hazırlamak için  
-  
-1.  OLE kitaplıklarının çağırarak başlatma `AfxOleInit` içinde `InitInstance` üye işlevi.  
-  
-2.  Çağrı `CDocTemplate::SetContainerInfo` içinde `InitInstance` menü ve Hızlandırıcı atamak için yerinde katıştırılmış öğeyi olduğunda kullanılan kaynaklar etkinleştirildi. Bu konu hakkında daha fazla bilgi için bkz: [etkinleştirme](../mfc/activation-cpp.md).  
-  
- Bir kapsayıcı uygulaması oluşturmak için MFC Uygulama Sihirbazı'nı kullandığınızda, bu özellikleri sizin için otomatik olarak sağlanır. Bkz: [bir MFC EXE Program oluşturma](../mfc/reference/mfc-application-wizard.md).  
-  
-#### <a name="to-prepare-your-view-class"></a>View sınıfı hazırlamak için  
-  
-1.  Seçilen öğeleri bir işaretçi tutarak izlemek ya da liste, seçili öğeler için birden çok seçim destekliyorsa işaretçileri. `OnDraw` İşlevi tüm OLE öğeleri çizin gerekir.  
-  
-2.  Geçersiz kılma `IsSelected` kendisine geçirilen öğe şu anda seçili olup olmadığını denetlemek için.  
-  
-3.  Uygulama bir `OnInsertObject` görüntülenecek ileti işleyicisi **Nesne Ekle** iletişim kutusu.  
-  
-4.  Uygulama bir `OnSetFocus` odak görünümünden bir yerinde etkin OLE aktarmak için işleyici katıştırılmış öğesi ileti.  
-  
-5.  Uygulama bir `OnSize` içeren görünümünün boyutundaki değişikliği yansıtacak şekilde kendi dikdörtgeni değiştirmek için ihtiyaç duyduğu bir OLE bildirmek için ileti işleyicisi öğesi katıştırılmış.  
-  
- Bu özellikler uyarlamasını önemli ölçüde sonraki bir uygulamadan değiştiğinden, Uygulama Sihirbazı'nı temel bir uygulama sağlar. Büyük olasılıkla düzgün çalışması için uygulamanızın almak için bu işlevler özelleştirme gerekecektir. Bu örneği için bkz: [KAPSAYICI](../visual-cpp-samples.md) örnek.  
-  
-#### <a name="to-handle-embedded-and-linked-items"></a>Katıştırılmış ve bağlantılı öğeler işlemek için  
-  
-1.  Öğesinden bir sınıf türetin [COleClientItem](../mfc/reference/coleclientitem-class.md). Bu sınıfın nesnelerini katıştırılmış veya OLE belgenize bağlantılı bir öğeyi temsil eder.  
-  
-2.  Geçersiz kılma `OnChange`, `OnChangeItemPosition`, ve `OnGetItemPosition`. Bu işlevler boyutlandırma, konumlandırma ve katıştırılmış ve bağlantılı öğeler değiştirme işleyin.  
-  
- Uygulama Sihirbazı'nı sizin için sınıf elde ancak büyük olasılıkla geçersiz kılma gerekecek `OnChange` ve diğer işlevleri önceki yordamda 2. adımda ile listelenir. Bu işlevler farklı bir uygulamadan diğerine uygulanır için iskelet uygulamaları çoğu uygulama için özelleştirilmiş gerekiyor. Bu örnekler için MFC bkz [DRAWCLI](../visual-cpp-samples.md) ve [KAPSAYICI](../visual-cpp-samples.md).  
-  
- OLE desteği için kapsayıcı uygulamanın menü yapısının bir öğe sayısı eklemeniz gerekir. Bunlar hakkında daha fazla bilgi için bkz: [menüler ve kaynaklar: kapsayıcı ekleme](../mfc/menus-and-resources-container-additions.md).  
-  
- Aşağıdaki özelliklerden bazıları kapsayıcı uygulamanızda desteklemeyi isteyebilirsiniz:  
-  
--   Katıştırılmış öğeyi düzenlerken yerinde etkinleştirme.  
-  
-     Daha fazla bilgi için bkz: [etkinleştirme](../mfc/activation-cpp.md).  
-  
--   Bir sunucu uygulamasından bir seçim bırakarak oluşturma OLE öğeleri.  
-  
-     Daha fazla bilgi için bkz: [sürükleme ve bırakma (OLE)](../mfc/drag-and-drop-ole.md).  
-  
--   Katıştırılmış nesneler ya da birleşimi kapsayıcı/sunucu uygulamaları bağlantılar.  
-  
-     Daha fazla bilgi için bkz: [kapsayıcılar: Gelişmiş Özellikler](../mfc/containers-advanced-features.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kapsayıcıları](../mfc/containers.md)   
- [Kapsayıcılar: İstemci Öğeleri](../mfc/containers-client-items.md)
+
+Bu makalede, bir kapsayıcı uygulama yordamı özetler ve açıklamalar kapsayıcılar uygulama hakkında daha ayrıntılı sağlayan diğer makalelere gösterir. Ayrıca, uygulamak istediğiniz bazı isteğe bağlı OLE özellikleri ve bu özellikleri açıklayan makaleleri listeler.
+
+#### <a name="to-prepare-your-cwinapp-derived-class"></a>CWinApp türetilmiş sınıfınızın hazırlamak için
+
+1. Çağırarak OLE kitaplıklarını Başlat `AfxOleInit` içinde `InitInstance` üye işlevi.
+
+1. Çağrı `CDocTemplate::SetContainerInfo` içinde `InitInstance` gömülü bir öğe olduğunda kullanılan kaynakları yerinde etkin menü ve Hızlandırıcı atamak için. Bu konu hakkında daha fazla bilgi için bkz. [etkinleştirme](../mfc/activation-cpp.md).
+
+Bu özellikler, MFC Uygulama Sihirbazı kapsayıcılı bir uygulama oluşturmak için kullandığınızda sizin için otomatik olarak sağlanır. Bkz: [MFC EXE Program oluşturma](../mfc/reference/mfc-application-wizard.md).
+
+#### <a name="to-prepare-your-view-class"></a>Görünüm sınıfınıza hazırlamak için
+
+1. Seçilen öğeleri bir işaretçi tutarak izlemek veya listesinde seçilen öğeler için birden fazla seçimi destekler, işaretçiler. `OnDraw` İşlevi, tüm OLE öğelerini çizmek gerekir.
+
+1. Geçersiz kılma `IsSelected` geçirilen öğe şu anda seçili olup olmadığını denetlemek için.
+
+1. Uygulama bir `OnInsertObject` görüntülenecek ileti işleyicisi **Nesne Ekle** iletişim kutusu.
+
+1. Uygulama bir `OnSetFocus` ileti işleyicisi odak görünümünden bir yerinde active OLE aktarmak için katıştırılmış öğesi.
+
+1. Uygulama bir `OnSize` , kendi dikdörtgeni içeren görünümündeki boyutundaki değişikliği yansıtacak şekilde değiştirmek için gerekli bir OLE bildirmek için ileti işleyicisi öğesi katıştırılmış.
+
+Uygulama bu özelliklerin bir uygulamadan diğerine önemli ölçüde değişir olduğundan, Uygulama Sihirbazı'nı yalnızca temel bir uygulamasını sağlar. Büyük olasılıkla uygulamanızı düzgün çalışması için bu işlevleri özelleştirmek gerekecektir. Bu örnek için bkz [KAPSAYICI](../visual-cpp-samples.md) örnek.
+
+#### <a name="to-handle-embedded-and-linked-items"></a>Katıştırılmış ve bağlantılı öğeler işlemek için
+
+1. Öğesinden bir sınıf türetin [Coleclientıtem](../mfc/reference/coleclientitem-class.md). Bu sınıfın nesneleri, gömülü veya bağlantılı OLE belgenize öğelerini temsil eder.
+
+1. Geçersiz kılma `OnChange`, `OnChangeItemPosition`, ve `OnGetItemPosition`. Bu işlevler, katıştırılmış ve bağlantılı iş öğelerini değiştirme boyutlandırma ve konumlandırma işleyin.
+
+Uygulama Sihirbazı'nı sizin için sınıf derleyeceği fakat geçersiz kılmak büyük olasılıkla gerekir `OnChange` ve diğer işlevler önceki yordamdaki 2. adımda birlikte listelenir. Bu işlevleri farklı bir uygulamadan diğerine uygulanır nedeniyle iskelet uygulamaları çoğu uygulama için özelleştirilmiş gerekir. Bu örnekler için bkz. MFC örnekleri [DRAWCLI](../visual-cpp-samples.md) ve [KAPSAYICI](../visual-cpp-samples.md).
+
+OLE desteklemek için kapsayıcı uygulama menüsü yapısı birçok öğe eklemeniz gerekir. Bunlar hakkında daha fazla bilgi için bkz: [menüler ve kaynaklar: kapsayıcı ekleme](../mfc/menus-and-resources-container-additions.md).
+
+Aşağıdaki özelliklerden bazıları kapsayıcı uygulamanızı desteklemek isteyebilirsiniz:
+
+- Gömülü bir öğe düzenlenirken yerinde etkinleştirme.
+
+     Daha fazla bilgi için [etkinleştirme](../mfc/activation-cpp.md).
+
+- Bir sunucu uygulamasından bir seçim sürükleyip bırakarak oluşturma OLE öğeleri.
+
+     Daha fazla bilgi için [sürükleme ve bırakma (OLE)](../mfc/drag-and-drop-ole.md).
+
+- Katıştırılmış nesneler ya da birlikte kapsayıcı/sunucu uygulamaları bağlar.
+
+     Daha fazla bilgi için [kapsayıcılar: Gelişmiş Özellikler](../mfc/containers-advanced-features.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kapsayıcılar](../mfc/containers.md)<br/>
+[Kapsayıcılar: İstemci Öğeleri](../mfc/containers-client-items.md)
 

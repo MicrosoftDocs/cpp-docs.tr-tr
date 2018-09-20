@@ -16,69 +16,73 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 247793199b1e865941659b970e4e59a688137a8e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 167ddb7fd6beabe734eb58e8b17355166b86445d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712237"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385424"
 ---
 # <a name="document-template-strings-mfc-add-class-wizard"></a>Belge Şablonu Dizeleri, MFC Sınıf Ekleme Sihirbazı
-Sihirbazın bu sayfası yalnızca aşağıdaki ölçütleri karşılayan sınıflar için kullanılabilir:  
-  
--   MFC projesinin belge/görünüm mimarisinin destekler.  
-  
--   Yeni sınıfın temel sınıf [CFormView](../../mfc/reference/cformview-class.md).  
-  
--   Onay kutusunu **oluşturmak DocTemplate kaynakları** üzerinde teslim edildi **adları** bölümünü [MFC Sınıf Sihirbazı](../../mfc/reference/mfc-add-class-wizard.md).  
-  
- Sihirbaz, Form görünümü tasarımı, yönetim ve yerelleştirme ile yardımcı olması aşağıdaki değerleri için varsayılan değerleri sağlar. Çoğu belge şablonu dizeleri, görünür ve form denetiminin kullanıcı tarafından kullanılan olduğundan, bunlar içine yerelleştirilmiş olduğunu **kaynak dili** belirtilen [uygulama türleri](../../mfc/reference/application-type-mfc-application-wizard.md) MFC Uygulama Sihirbazı sayfası Projenin oluşturulduğu zaman.  
-  
+
+Sihirbazın bu sayfası yalnızca aşağıdaki ölçütleri karşılayan sınıflar için kullanılabilir:
+
+- MFC projesinin belge/görünüm mimarisinin destekler.
+
+- Yeni sınıfın temel sınıf [CFormView](../../mfc/reference/cformview-class.md).
+
+- Onay kutusunu **oluşturmak DocTemplate kaynakları** üzerinde teslim edildi **adları** bölümünü [MFC Sınıf Sihirbazı](../../mfc/reference/mfc-add-class-wizard.md).
+
+Sihirbaz, Form görünümü tasarımı, yönetim ve yerelleştirme ile yardımcı olması aşağıdaki değerleri için varsayılan değerleri sağlar. Çoğu belge şablonu dizeleri, görünür ve form denetiminin kullanıcı tarafından kullanılan olduğundan, bunlar içine yerelleştirilmiş olduğunu **kaynak dili** belirtilen [uygulama türleri](../../mfc/reference/application-type-mfc-application-wizard.md) MFC Uygulama Sihirbazı sayfası Projenin oluşturulduğu zaman.
+
 > [!NOTE]
->  Türetilmiş sınıflar için sihirbaz otomatik yazdırma desteği sağlamaz `CFormView`.  
-  
- Bkz: [belge şablonları ve belge/görünüm oluşturma işlemi](../../mfc/document-templates-and-the-document-view-creation-process.md) daha fazla bilgi için.  
-  
-## <a name="nonlocalized-strings"></a>Yerelleştirilmemiş dizeleri  
- Kullanıcı belgeleri oluşturma ve uygulamaları için geçerlidir. Kullanıcılar açabilir ve belge türü bir dosya uzantısı ve dosya türü kimliği varsa belgeleri daha kolayca kaydedin Sistemi yerine kullanıcı tarafından kullanıldığı için bu öğeleri yerelleştirilmedi.  
-  
+>  Türetilmiş sınıflar için sihirbaz otomatik yazdırma desteği sağlamaz `CFormView`.
+
+Bkz: [belge şablonları ve belge/görünüm oluşturma işlemi](../../mfc/document-templates-and-the-document-view-creation-process.md) daha fazla bilgi için.
+
+## <a name="nonlocalized-strings"></a>Yerelleştirilmemiş dizeleri
+
+Kullanıcı belgeleri oluşturma ve uygulamaları için geçerlidir. Kullanıcılar açabilir ve belge türü bir dosya uzantısı ve dosya türü kimliği varsa belgeleri daha kolayca kaydedin Sistemi yerine kullanıcı tarafından kullanıldığı için bu öğeleri yerelleştirilmedi.
+
 - **Dosya uzantısı**
 
-   Bu form uygulama için belge türü ile ilişkili dosya uzantısı belirler. Dosya uzantısı varsayılan sınıf adını temel alarak. Örneğin, yeni MFC sınıfı adlandırılmışsa `CWidget`, varsayılan olarak, dosya uzantısıdır. WID Dosya uzantısı dosya filtreleri kullanılır ve **açık** ve **Kaydet** iletişim kutuları.  
-  
-   Dosya uzantısı değiştirirseniz, değişikliğin yansıtılır **filtre adı** kutusu.  
-  
+   Bu form uygulama için belge türü ile ilişkili dosya uzantısı belirler. Dosya uzantısı varsayılan sınıf adını temel alarak. Örneğin, yeni MFC sınıfı adlandırılmışsa `CWidget`, varsayılan olarak, dosya uzantısıdır. WID Dosya uzantısı dosya filtreleri kullanılır ve **açık** ve **Kaydet** iletişim kutuları.
+
+   Dosya uzantısı değiştirirseniz, değişikliğin yansıtılır **filtre adı** kutusu.
+
    > [!NOTE]
-   > Varsayılan dosya uzantısını değiştirirseniz, süre dahil değildir.  
-  
+   > Varsayılan dosya uzantısını değiştirirseniz, süre dahil değildir.
+
 - **Dosya türü kimliği**
 
-   Etiket, belge türü için sistem kayıt defterinde ayarlar.  
-  
-## <a name="localized-strings"></a>Yerelleştirilmiş dizeleri  
- Formlar ve okuma ve uygulamanın kullanıcı tarafından kullanılan dizelerin yerelleştirilmiş belgelerin ilişkili dizeleri üretir.  
-  
+   Etiket, belge türü için sistem kayıt defterinde ayarlar.
+
+## <a name="localized-strings"></a>Yerelleştirilmiş dizeleri
+
+Formlar ve okuma ve uygulamanın kullanıcı tarafından kullanılan dizelerin yerelleştirilmiş belgelerin ilişkili dizeleri üretir.
+
 - **Belge türü adı**
 
-   Bir belge uygulamasının altında gruplandırılabilir belge türünü tanımlar. Varsayılan olarak, sınıfın adını temel alır. Örneğin, yeni MFC sınıfı adlandırılmışsa **CWidget**, varsayılan olarak, belge türü pencere öğesi adıdır. Varsayılan değiştirilmesi, bu iletişim kutusunda diğer seçenekleri değiştirmez.  
-  
+   Bir belge uygulamasının altında gruplandırılabilir belge türünü tanımlar. Varsayılan olarak, sınıfın adını temel alır. Örneğin, yeni MFC sınıfı adlandırılmışsa **CWidget**, varsayılan olarak, belge türü pencere öğesi adıdır. Varsayılan değiştirilmesi, bu iletişim kutusunda diğer seçenekleri değiştirmez.
+
 - **Filtre adı**
 
-   Belirtilen dosya türlerinin bulmak için kullanıcıları belirtebilir adını ayarlar. Bu seçenek kullanılabilir **dosya türü** ve **farklı kaydetme türü** standart Windows seçeneklerinde **açık** ve **Kaydet** iletişim kutuları. Varsayılan olarak, ad proje adına dayalı yanı sıra dosya, uzantısı tarafından izlenen gösterilir **dosya uzantısı**. Örneğin, projeniz pencere öğesi olarak adlandırılır ve .wid, dosya uzantısı ise **filtre adı** pencere öğesi dosyaları (*.wid) varsayılan olarak açıktır.  
-  
+   Belirtilen dosya türlerinin bulmak için kullanıcıları belirtebilir adını ayarlar. Bu seçenek kullanılabilir **dosya türü** ve **farklı kaydetme türü** standart Windows seçeneklerinde **açık** ve **Kaydet** iletişim kutuları. Varsayılan olarak, ad proje adına dayalı yanı sıra dosya, uzantısı tarafından izlenen gösterilir **dosya uzantısı**. Örneğin, projeniz pencere öğesi olarak adlandırılır ve .wid, dosya uzantısı ise **filtre adı** pencere öğesi dosyaları (*.wid) varsayılan olarak açıktır.
+
 - **Dosya yeni kısa adı**
 
-   Standart Windows içinde görünen adını ayarlar **yeni** iletişim kutusunda, projeyi birden çok belge şablonu varsa. Uygulamanız bir [Otomasyon sunucusu](../../mfc/automation-servers.md), bu ad, Otomasyon nesnesi kısa adı olarak kullanılır. Varsayılan olarak, bu ad sınıf adına göre temel alır.  
-  
+   Standart Windows içinde görünen adını ayarlar **yeni** iletişim kutusunda, projeyi birden çok belge şablonu varsa. Uygulamanız bir [Otomasyon sunucusu](../../mfc/automation-servers.md), bu ad, Otomasyon nesnesi kısa adı olarak kullanılır. Varsayılan olarak, bu ad sınıf adına göre temel alır.
+
 - **Dosya türü uzun adı**
 
-   Dosya türü adı, sistem kayıt defterinde ayarlar. Uygulamanız Otomasyon sunucusu ise, bu ad, Otomasyon nesnesi uzun adı olarak kullanılır. Varsayılan olarak, bu ad, sınıf adı artı temel alır. Belge. Örneğin, sınıf adı ise `CWidget`, **dosya türü uzun adı** pencere öğesi belgesi.  
-  
+   Dosya türü adı, sistem kayıt defterinde ayarlar. Uygulamanız Otomasyon sunucusu ise, bu ad, Otomasyon nesnesi uzun adı olarak kullanılır. Varsayılan olarak, bu ad, sınıf adı artı temel alır. Belge. Örneğin, sınıf adı ise `CWidget`, **dosya türü uzun adı** pencere öğesi belgesi.
+
 - **Belge sınıfı**
 
-   Projenin belge sınıfı gösterir. Varsayılan olarak, bu sınıf ana uygulamanın belge sınıfı bağlantısında listelendiği gibi [gözden geçirme oluşturulan sınıflar](../../mfc/reference/generated-classes-mfc-application-wizard.md) MFC Uygulama Sihirbazı sayfası. Projede diğer belge sınıfları eklediyseniz başka bir belge sınıfı listeden seçebilirsiniz.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC sınıf Ekleme Sihirbazı](../../mfc/reference/mfc-add-class-wizard.md)   
- [MFC sınıfı](../../mfc/reference/adding-an-mfc-class.md)   
- [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)
+   Projenin belge sınıfı gösterir. Varsayılan olarak, bu sınıf ana uygulamanın belge sınıfı bağlantısında listelendiği gibi [gözden geçirme oluşturulan sınıflar](../../mfc/reference/generated-classes-mfc-application-wizard.md) MFC Uygulama Sihirbazı sayfası. Projede diğer belge sınıfları eklediyseniz başka bir belge sınıfı listeden seçebilirsiniz.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC Sınıf Ekleme Sihirbazı](../../mfc/reference/mfc-add-class-wizard.md)<br/>
+[MFC sınıfı](../../mfc/reference/adding-an-mfc-class.md)<br/>
+[Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)

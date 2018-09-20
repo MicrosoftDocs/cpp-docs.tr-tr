@@ -24,15 +24,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0ff10b12d9c77c1e17e278276d0ab7f334f2f9ce
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8177029bb114dfa0a2dc826d45ec948599902f55
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33132914"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390831"
 ---
 # <a name="msclr-namespace"></a>msclr ad alanı
-`msclr` Ad alanı C++ destek kitaplığı tüm sınıflar içerir. Bu sınıfları hakkında daha fazla bilgi için bkz: [C++ destek kitaplığı](../dotnet/cpp-support-library.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Support Library](../dotnet/cpp-support-library.md)
+
+`msclr` Ad alanı, tüm C++ destek kitaplığı sınıflarını içerir. Bu sınıflar hakkında daha fazla bilgi için bkz. [C++ destek kitaplığı](../dotnet/cpp-support-library.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C++ Support Library](../dotnet/cpp-support-library.md)

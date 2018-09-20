@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df30bdea71a890eed25f546a53e7f329fa330762
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: d4e7742afd3fecc4dd115624da0c1650dc662004
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43132026"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46412528"
 ---
 # <a name="ide-and-tools-for-visual-c-development"></a>Visual C++ geliştirme araçları ve IDE
 
@@ -29,7 +29,7 @@ Visual Studio IDE'de paylaşılan araçlara ek olarak, MSVC yerel kod geliştirm
 
 ## <a name="creating-a-solution-and-projects"></a>Çözüm ve projeleri oluşturma
 
-A *proje* temel bir kaynak kodu dosyaları ve yürütülebilir bir dosyada yerleşik görüntüleri veya veri dosyaları gibi kaynakları kümesidir. 
+A *proje* temel bir kaynak kodu dosyaları ve yürütülebilir bir dosyada yerleşik görüntüleri veya veri dosyaları gibi kaynakları kümesidir.
 
 Visual Studio 2015, MSBuild projeleri için destek sağlar. Qt veya CMake gibi diğer yapı sistemleri için Visual Studio uzantıları karşıdan yükleyebilirsiniz.
 
@@ -119,7 +119,7 @@ Tuşuna basarak, programınızın hatalarını ayıklayabilir **F5** hata ayıkl
 
 ## <a name="deploy-completed-applications"></a>Tamamlanan uygulamalar dağıtma
 
-Bir UWP uygulaması Microsoft Store aracılığıyla müşterilere dağıttığınız **proje** > **Store** menü seçeneği. CRT dağıtımını arka planda otomatik olarak gerçekleştirilir. Daha fazla bilgi için [yayımlama Windows uygulamaları ve oyunları](/windows/uwp/publish/). 
+Bir UWP uygulaması Microsoft Store aracılığıyla müşterilere dağıttığınız **proje** > **Store** menü seçeneği. CRT dağıtımını arka planda otomatik olarak gerçekleştirilir. Daha fazla bilgi için [yayımlama Windows uygulamaları ve oyunları](/windows/uwp/publish/).
 
 C++ yerel bir masaüstü uygulamasını başka bir bilgisayara dağıttığınızda, uygulama ve uygulamanın bağlı olduğu kitaplık dosyalarını yüklemeniz gerekir. Evrensel C++ çalışma zamanı (UCRT)'ile bir uygulama dağıtmanın üç yolu vardır: merkezi dağıtım, yerel dağıtım ya da statik bağlama. Daha fazla bilgi için [Masaüstü uygulamaları dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md).
 

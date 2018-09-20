@@ -18,27 +18,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50d21675d913211026a2077a0830b7d8ed1225c9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 73ddb010aeb8190c063d2691806e3ebd89d0f744
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382830"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46417975"
 ---
 # <a name="using-a-common-control-as-a-child-window"></a>Bir Ortak Denetimi Alt Pencere Olarak Kullanma
-Windows ortak denetimleri herhangi bir başka bir pencere alt pencere olarak kullanılabilir. Aşağıdaki yordam, bir ortak denetimi dinamik olarak oluşturabilir ve sonra çalışma açıklar.  
-  
-### <a name="to-use-a-common-control-as-a-child-window"></a>Bir ortak denetimi alt pencere olarak kullanmak için  
-  
-1.  Denetim ilgili sınıf veya işleyici tanımlayın.  
-  
-2.  Denetimin geçersiz kılmasını kullanın [CWnd::Create](../mfc/reference/cwnd-class.md#create) Windows denetimi oluşturmak için yöntemi.  
-  
-3.  Denetim oluşturulduktan sonra (olarak erken `OnCreate` işleyici durumunda denetimi alt), kendi üye işlevleri kullanarak denetimi değiştirebilirsiniz. Tek tek denetimleri açıklamalarına bakın [denetimleri](../mfc/controls-mfc.md) yöntemleri hakkında ayrıntılı bilgi için.  
-  
-4.  Denetimi ile işiniz bittiğinde, kullanın [CWnd::DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow) denetimi yok etmek için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri yapma ve kullanma](../mfc/making-and-using-controls.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Windows ortak denetimleri başka bir pencere bir alt pencere olarak kullanılabilir. Aşağıdaki yordam, ortak bir denetimi dinamik olarak oluşturmak ve onunla çalışan açıklar.
+
+### <a name="to-use-a-common-control-as-a-child-window"></a>Bir ortak denetimi alt pencere olarak kullanmak için
+
+1. Denetim, ilgili sınıf veya işleyici tanımlayın.
+
+1. Denetimin geçersiz kılmasını kullanın [CWnd::Create](../mfc/reference/cwnd-class.md#create) Windows denetimi oluşturmak için yöntemi.
+
+1. Denetim oluşturulduktan sonra (olarak erken `OnCreate` işleyicisi, denetimin alt), üye işlevleri kullanarak denetimi işleyebilirsiniz. Tek denetimleri açıklamaları görmek [denetimleri](../mfc/controls-mfc.md) yöntemleri hakkında ayrıntılı bilgi için.
+
+1. Denetim ile işiniz bittiğinde, kullanın [CWnd::DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow) kontrol edilecek.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Denetimleri Yapma ve Kullanma](../mfc/making-and-using-controls.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

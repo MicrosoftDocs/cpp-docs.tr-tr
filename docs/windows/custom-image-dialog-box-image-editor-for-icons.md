@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1e5aff6796804d7868b4d61c94e4a181b88e9ab6
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8376db7eb824856d84e8c742d8a187604f939455
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45704846"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46384721"
 ---
 # <a name="custom-image-dialog-box-c-image-editor-for-icons"></a>Özel görüntü iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++)
 
@@ -41,8 +41,10 @@ ms.locfileid: "45704846"
    Bir alan için özel görüntü için renk sayısını seçmenize olanak sağlar: 2, 16 veya 256.
   
 ## <a name="requirements"></a>Gereksinimler
- Yok.
+
+Yok.
   
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Yeni \<cihaz > görüntü türü iletişim kutusu](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md)  
- [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
+
+[Yeni \<cihaz > görüntü türü iletişim kutusu](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md)<br/>
+[Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)

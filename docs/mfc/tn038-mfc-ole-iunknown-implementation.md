@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df624c04b1fd5a80b6e54928adb8f3ca7424920a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c6bf8f299ef46166c5b09a716e5bed21fd3b9b01
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215182"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387113"
 ---
 # <a name="tn038-mfcole-iunknown-implementation"></a>TN038: MFC/OLE IUnknown Uygulaması
 
@@ -414,7 +414,7 @@ CAggrExample::CAggrExample()
 }
 
 BOOL CAggrExample::OnCreateAggregates()
-{ 
+{
     // wire up aggregate with correct controlling unknown
     m_lpAggrInner = CoCreateInstance(CLSID_Example,
         GetControllingUnknown(), CLSCTX_INPROC_SERVER,
@@ -471,10 +471,10 @@ DWORD ExternalQueryInterface(
 
 #### <a name="parameters"></a>Parametreler
 
-*lpIID*  
+*lpIID*<br/>
 (Queryınterface'in ilk bağımsız değişken) IID öğesine Uzak İşaretçi
 
-*ppvObj*  
+*ppvObj*<br/>
 Bir IUnknown * işaretçi (Queryınterface'in ikinci bağımsız değişkeni)
 
 #### <a name="remarks"></a>Açıklamalar
@@ -520,10 +520,10 @@ END_INTERFACE_PART(localClass)
 
 #### <a name="parameters"></a>Parametreler
 
-*localClass*  
+*localClass*<br/>
 Arabirimini uygulayan sınıfın adı
 
-*iface*  
+*iface*<br/>
 Bu sınıfın uyguladığı arabirimin adı
 
 #### <a name="remarks"></a>Açıklamalar
@@ -560,10 +560,10 @@ END_INTERFACE_MAP
 
 #### <a name="parameters"></a>Parametreler
 
-*Sınıfın*  
+*Sınıfın*<br/>
 Arabirim eşlemesi tanımlanmış olduğu sınıfı
 
-*baseClass*  
+*baseClass*<br/>
 Sınıf *sınıfın* türetir.
 
 #### <a name="remarks"></a>Açıklamalar
@@ -578,13 +578,13 @@ INTERFACE_PART(theClass, iid, localClass)
 
 #### <a name="parameters"></a>Parametreler
 
-*Sınıfın*  
+*Sınıfın*<br/>
 Arabirim eşlemesini içeren sınıfın adı.
 
-*IID*  
+*IID*<br/>
 `IID` Katıştırılmış sınıfla eşleştirilecek olmasıdır.
 
-*localClass*  
+*localClass*<br/>
 (' X') daha az yerel sınıfın adı.
 
 #### <a name="remarks"></a>Açıklamalar
@@ -626,10 +626,10 @@ INTERFACE_AGGREGATE(theClass, theAggr)
 
 #### <a name="parameters"></a>Parametreler
 
-*Sınıfın*  
+*Sınıfın*<br/>
 Arabirim eşlemesini içeren sınıfın adı,
 
-*theAggr*  
+*theAggr*<br/>
 Toplanacak üye değişkeninin adı.
 
 #### <a name="remarks"></a>Açıklamalar
@@ -638,5 +638,5 @@ Bu makro, framework sınıfın bir toplama nesnesi kullandığını söylemek i�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)  
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)  
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)

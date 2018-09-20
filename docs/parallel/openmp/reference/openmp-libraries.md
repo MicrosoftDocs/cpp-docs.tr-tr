@@ -12,28 +12,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46bd287ff8a020a4d5d7775afdb12f5571d43294
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: c9a4ccfefeaeb9446731027db44b849233bfefd6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33694777"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391221"
 ---
 # <a name="openmp-libraries"></a>OpenMP Kitaplıkları
-Visual C++'ta OpenMP çalışma zamanı kitaplıkları oluşturan .lib dosyaları açıklanır.  
-  
- Aşağıdaki kitaplıkları Visual C++ OpenMP çalışma zamanı kitaplığı işlevleri içerir.  
-  
-|OpenMP çalışma zamanı kitaplığı|Özellikler|  
-|------------------------------|---------------------|  
-|VCOMP. LIB|Birden çok iş parçacıklı, dinamik bağlantı (VCOMP için içeri aktarma kitaplığı. LIB).|  
-|VCOMPD. LIB|Birden çok iş parçacıklı, dinamik bağlantı (VCOMPD için içeri aktarma kitaplığı. Kapak) (hata ayıklama)|  
-  
- _DEBUG bir derlemede tanımlanan bulunuyorsa ve `#include omp.h` VCOMPD, kaynak kodu verilmiştir. LIB varsayılan lib olacaktır. Aksi takdirde VCOMP. LIB kullanılır.  
-  
- Kullanabileceğiniz [/NODEFAULTLIB (kitaplıkları yoksay)](../../../build/reference/nodefaultlib-ignore-libraries.md) varsayılan lib kaldırmak ve tercih ettiğiniz lib ile açıkça bağlanmak için.  
-  
- OpenMP DLL'leri Visual C++ yeniden dağıtılabilir dizinde bulunan ve OpenMP kullanan uygulamaları ile dağıtılması gerekir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık Başvurusu](../../../parallel/openmp/reference/openmp-library-reference.md)
+
+Visual c++ OpenMP çalışma zamanı kitaplıklarının oluşturan .lib dosyaları açıklar.
+
+Aşağıdaki kitaplıklar, Visual C++ OpenMP çalışma zamanı kitaplık işlevleri içerir.
+
+|OpenMP çalışma zamanı kitaplığı|Özellikler|
+|------------------------------|---------------------|
+|VCOMP. LIB|Çok iş parçacıklı ve dinamik bağlantı (VCOMP için içeri aktarma kitaplığı. LIB).|
+|VCOMPD. LIB|Çok iş parçacıklı ve dinamik bağlantı (VCOMPD için içeri aktarma kitaplığı. Kapak) (hata ayıklama)|
+
+_DEBUG, bir derlemede tanımlı değilse ve `#include omp.h` VCOMPD, kaynak kodu verilmiştir. Varsayılan lib, LIB olacaktır. Aksi takdirde, VCOMP. LIB kullanılır.
+
+Kullanabileceğiniz [/nodefaultlıb (kitaplıkları yoksay)](../../../build/reference/nodefaultlib-ignore-libraries.md) varsayılan LIB kaldırıp dilediğiniz lib ile açıkça bir bağlantı.
+
+OpenMP DLL'leri Visual C++ yeniden dağıtılabilir dizinde bulunan ve OpenMP kullanan uygulamalar ile dağıtılması gerekir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kitaplık Başvurusu](../../../parallel/openmp/reference/openmp-library-reference.md)

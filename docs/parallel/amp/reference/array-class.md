@@ -32,24 +32,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abf907fe12f55b44e7f2e184b8752d2e09a326f8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8e0d0fde53cc7ffb885e8435fc82cbb899a3bc89
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071737"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46389570"
 ---
 # <a name="array-class"></a>array Sınıfı
+
 Verileri bir hızlandırıcıya taşımakta kullanılan veri depolayıcıyı temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```  
+```
 template <typename value_type, int _Rank>
 friend class array;
-```  
+```
 
 #### <a name="parameters"></a>Parametreler
+
 *value_type*<br/>
 Veri öğesi türü.
 
@@ -103,6 +105,7 @@ Dizinin boyut.
 |[Kapsam](#extent)|Dizi şeklini tanımlayan kapsamı alır.|
 
 ## <a name="remarks"></a>Açıklamalar
+
 Türü `array<T,N>` temsil yoğun ve düzenli (pürüzsüz) *N*-Hızlandırıcı veya CPU gibi belirli bir konumda bulunan boyutlu bir dizi. Dizideki öğelerin veri türü `T`, hedef Hızlandırıcı ile uyumlu bir türde olması gerekir. Ancak, boyut `N`, (, dizi türü bir parçasıdır ve statik olarak belirlenir, dizinin kapsamı çalışma zamanıyla belirlenir ve sınıfıyla ifade `extent<N>`.
 
 Bazı işlevler için özelleştirilmiş bir dizi boyutları, herhangi bir sayıda sahip olabilir ancak `array` biri derece, iki ve üç nesneleri. Bağımsız değişkenin boyutunu atlarsanız, varsayılan değer 1'dir.
@@ -113,16 +116,18 @@ Diziyi başka diziye kopyalandığında derin kopyalama yapıldığından dizile
 
 `array<T,N>` Türü, çeşitli senaryolarda kullanılır:
 
--   Bir veri depolayıcı olarak Hızlandırıcı hesaplamalarında kullanılabilir.
+- Bir veri depolayıcı olarak Hızlandırıcı hesaplamalarında kullanılabilir.
 
--   (Diğer diziler ve kopyalamak için kullanılabilir) bellek ana CPU üzerinde tutmak için bir veri depolayıcı olarak.
+- (Diğer diziler ve kopyalamak için kullanılabilir) bellek ana CPU üzerinde tutmak için bir veri depolayıcı olarak.
 
--   Konak cihaz kopyaları hızlı bir aracı gibi davranan bir hazırlama nesnesi.
+- Konak cihaz kopyaları hızlı bir aracı gibi davranan bir hazırlama nesnesi.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
-`array`  
+
+`array`
 
 ## <a name="requirements"></a>Gereksinimler
+
 **Başlık:** amp.h
 
 **Namespace:** eşzamanlılık
@@ -131,54 +136,53 @@ Diziyi başka diziye kopyalandığında derin kopyalama yapıldığından dizile
 
 Yok eder `array` nesne.
 
-```  
+```
 ~array() restrict(cpu);
-```  
+```
 
 ##  <a name="accelerator_view"></a> accelerator_view
 
 Alır [accelerator_view](accelerator-view-class.md) dizinin ayrıldığı konumu temsil eden nesne. Bu özellik sadece CPU üzerinden erişilebilir.
 
-```  
+```
 __declspec(property(get= get_accelerator_view)) Concurrency::accelerator_view accelerator_view;
-```  
+```
 
 ##  <a name="ctor"></a> Dizi
 
 Yeni bir örneğini başlatır [array sınıfı](array-class.md). Hiçbir varsayılan oluşturucu yok `array<T,N>`. Bütün oluşturucular yalnızca CPU üzerinde çalışır. Bir Direct3D hedef üzerinde çalıştırılamaz.
 
-```  
-explicit array(  
+```
+explicit array(
     const Concurrency::extent<_Rank>& _Extent) restrict(cpu);
 
-explicit array(  
+explicit array(
     int _E0) restrict(cpu);
 
-explicit array(  
+explicit array(
     int _E0,
     int _E1) restrict(cpu);
 
-explicit array(  
+explicit array(
     int _E0,
     int _E1,
     int _E2) restrict(cpu);
 
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     Concurrency::accelerator_view _Av
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
-array(  
+array(
     int _E0,
     Concurrency::accelerator_view _Av
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
-array(  
+array(
     int _E0,
     int _E1,
     Concurrency::accelerator_view _Av
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
-
 
 array(
     int _E0,
@@ -187,23 +191,23 @@ array(
     Concurrency::accelerator_view _Av
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     Concurrency::accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
-array(  
+array(
     int _E0,
     accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
-array(  
+array(
     int _E0,
     int _E1,
     Concurrency::accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
-array(  
+array(
     int _E0,
     int _E1,
     int _E2,
@@ -211,42 +215,42 @@ array(
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     _InputIterator _Src_first,
     _InputIterator _Src_last) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     _InputIterator _Src_first) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     _InputIterator _Src_first,
     _InputIterator _Src_last) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     _InputIterator _Src_first) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     _InputIterator _Src_first,
     _InputIterator _Src_last) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     _InputIterator _Src_first) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     int _E2,
@@ -254,14 +258,14 @@ array(
     _InputIterator _Src_last) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     int _E2,
     _InputIterator _Src_first) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     _InputIterator _Src_first,
     _InputIterator _Src_last,
@@ -269,14 +273,14 @@ array(
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     _InputIterator _Src_first,
     Concurrency::accelerator_view _Av
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     _InputIterator _Src_first,
     _InputIterator _Src_last,
@@ -284,14 +288,14 @@ array(
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     _InputIterator _Src_first,
     Concurrency::accelerator_view _Av
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     _InputIterator _Src_first,
@@ -308,7 +312,7 @@ array(
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     int _E2,
@@ -318,7 +322,7 @@ array(
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     int _E2,
@@ -327,7 +331,7 @@ array(
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     _InputIterator _Src_first,
     _InputIterator _Src_last,
@@ -335,14 +339,14 @@ array(
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     _InputIterator _Src_first,
     Concurrency::accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     _InputIterator _Src_first,
     _InputIterator _Src_last,
@@ -350,27 +354,27 @@ array(
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0, _InputIterator _Src_first,
     Concurrency::accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1, _InputIterator _Src_first, _InputIterator _Src_last,
     Concurrency::accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1, _InputIterator _Src_first,
     Concurrency::accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     int _E2, _InputIterator _Src_first, _InputIterator _Src_last,
@@ -378,17 +382,17 @@ array(
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     int _E2, _InputIterator _Src_first,
     Concurrency::accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
-explicit array(  
+explicit array(
     const array_view<const value_type, _Rank>& _Src) restrict(cpu);
 
-array(  
+array(
     const array_view<const value_type, _Rank>& _Src,
     accelerator_view _Av
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
@@ -401,9 +405,10 @@ array(
 array(const array& _Other) restrict(cpu);
 
 array(array&& _Other) restrict(cpu);
-```  
+```
 
 ### <a name="parameters"></a>Parametreler
+
 *_Associated_Av*<br/>
 Dizinin hedef konumunu belirten bir accelerator_view.
 
@@ -450,23 +455,24 @@ Kopyalanan öğelerin veri türü.
 
 İkinci alır [accelerator_view](accelerator-view-class.md) örneklemek için bir hazırlama Oluşturucu çağrıldığında parametre olarak geçirilen nesne `array` nesne.
 
-```  
+```
 __declspec(property(get= get_associated_accelerator_view)) Concurrency::accelerator_view associated_accelerator_view;
-```  
+```
 
 ##  <a name="copy_to"></a> copy_to
 
 İçeriğini kopyalar `array` diğerine `array`.
 
-```  
+```
 void copy_to(
     array<value_type, _Rank>& _Dest) const ;
 
 void copy_to(
     array_view<value_type, _Rank>& _Dest) const ;
-```  
+```
 
 ### <a name="parameters"></a>Parametreler
+
 *_Dest*<br/>
 [Array_view](array-view-class.md) üstüne kopyalanacak nesne.
 
@@ -474,60 +480,63 @@ void copy_to(
 
 Bu dizi için izin verilen CPU access_type alır.
 
-```  
+```
 __declspec(property(get= get_cpu_access_type)) access_type cpu_access_type;
-```  
+```
 
 ##  <a name="data"></a> Veri
 
 Öğesinin ham verisine bir işaretçi döndürür `array`.
 
-```  
+```
 value_type* data() restrict(amp, cpu);
 
 const value_type* data() const restrict(amp, cpu);
-```  
+```
 
 ### <a name="return-value"></a>Dönüş Değeri
+
 Dizinin ham verisine bir işaretçi.
 
 ##  <a name="extent"></a> Kapsam
 
 Alır [uzantı](extent-class.md) şeklini tanımlayan nesnesi `array`.
 
-```  
+```
 __declspec(property(get= get_extent)) Concurrency::extent<_Rank> extent;
-```  
+```
 
 ##  <a name="get_accelerator_view"></a> get_accelerator_view
 
 Döndürür [accelerator_view](accelerator-view-class.md) konumu temsil eden bir nesne burada `array` nesne ayrılır. Bu özellik sadece CPU üzerinden erişilebilir.
 
-```  
+```
 Concurrency::accelerator_view get_accelerator_view() const;
-```    
+```
 
 ### <a name="return-value"></a>Dönüş Değeri
+
 `accelerator_view` Konumu temsil eden bir nesne burada `array` nesne ayrılır.
 
 ##  <a name="get_associated_accelerator_view"></a> get_associated_accelerator_view
 
 İkinci alır [accelerator_view](accelerator-view-class.md) örneklemek için bir hazırlama Oluşturucu çağrıldığında parametre olarak geçirilen nesne `array` nesne.
 
-```  
+```
 Concurrency::accelerator_view get_associated_accelerator_view() const ;
-```  
+```
 
 ### <a name="return-value"></a>Dönüş Değeri
+
 İkinci [accelerator_view](accelerator-view-class.md) hazırlama oluşturucuya nesnesi geçirildi.
 
 ##  <a name="get_cpu_access_type"></a> get_cpu_access_type
 
 Bu dizi için izin verilen CPU access_type döndürür.
 
-```  
+```
 access_type get_cpu_access_type() const restrict(cpu);
-```  
+```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -535,33 +544,36 @@ access_type get_cpu_access_type() const restrict(cpu);
 
 Döndürür [uzantı](extent-class.md) nesnesinin `array`.
 
-```  
+```
 Concurrency::extent<_Rank> get_extent() const restrict(amp,cpu);
-```  
+```
 
 ### <a name="return-value"></a>Dönüş Değeri
+
 `extent` Nesnesinin `array`.
 
 ##  <a name="operator_vec"></a> işleç std::vector&lt;value_type&gt;
 
 Kullanan `copy(*this, vector)` örtük olarak dizi std::vector nesnesine dönüştürmek için.
 
-```  
+```
 operator std::vector<value_type>() const restrict(cpu);
-```  
+```
 
 ### <a name="parameters"></a>Parametreler
+
 *value_type*<br/>
 Vector öğelerinin veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
+
 Bir nesne türü `vector<T>` dizisinde bulunan verilerin bir kopyasını içerir.
 
-##  <a name="operator_call"></a> operator() 
+##  <a name="operator_call"></a> operator()
 
 Parametreler ile belirtilen öğe değeri döndürür.
 
-```  
+```
 value_type& operator() (const index<_Rank>& _Index) restrict(amp,cpu);
 
 const value_type& operator() (const index<_Rank>& _Index) cons  t restrict(amp,cpu);
@@ -577,9 +589,10 @@ const value_type& operator() (int _I0, int _I1, int _I2) const restrict(amp,cpu)
 typename details::_Projection_result_type<value_type,_Rank>::_Result_type operator()(int _I) restrict(amp,cpu);
 
 typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type operator()(int _I) const restrict(amp,cpu);
-```  
+```
 
 ### <a name="parameters"></a>Parametreler
+
 *_Index*<br/>
 Öğenin konumu.
 
@@ -596,13 +609,14 @@ Bu bölümün kaynağının ikinci en az önemli bileşeni.
 Öğenin konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
+
 Parametreler ile belirtilen öğe değeri.
 
 ##  <a name="operator_at"></a> operator]
 
 Belirtilen dizindeki öğeyi döndürür.
 
-```  
+```
 value_type& operator[](const index<_Rank>& _Index) restrict(amp,cpu);
 
 const value_type& operator[]
@@ -611,9 +625,10 @@ const value_type& operator[]
 typename details::_Projection_result_type<value_type,_Rank>::_Result_type operator[](int _i) restrict(amp,cpu);
 
 typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type operator[](int _i) const restrict(amp,cpu);
-```  
+```
 
 ### <a name="parameters"></a>Parametreler
+
 *_Index*<br/>
 Dizini.
 
@@ -621,22 +636,24 @@ Dizini.
 Dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
+
 Belirtilen dizindeki öğe.
 
 ##  <a name="operator_eq"></a> işleç =
 
 Belirtilen içeriğini kopyalar `array` nesne.
 
-```  
+```
 array& operator= (const array& _Other) restrict(cpu);
 
 array& operator= (array&& _Other) restrict(cpu);
 
-array& operator= (  
+array& operator= (
     const array_view<const value_type, _Rank>& _Src) restrict(cpu);
-```  
+```
 
 ### <a name="parameters"></a>Parametreler
+
 *_Diğer*<br/>
 `array` Kopyalanacak nesne.
 
@@ -644,27 +661,29 @@ array& operator= (
 `array` Kopyalanacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
+
 Bu başvuru `array` nesne.
 
 ##  <a name="rank"></a> boyut sayısı
 
 Boyut sayısını tutar `array`.
 
-```  
+```
 static const int rank = _Rank;
-```  
+```
 ## <a name="reinterpret_as"></a> reinterpret_as
 
 İsteğe bağlı olarak farklı bir değer türü kaynak diziden sahip olabilecek tek boyutlu bir array_view dizi yeniden yorumlar.
 
 ### <a name="syntax"></a>Sözdizimi
-``` 
+
+```
 template <typename _Value_type2>
 array_view<_Value_type2,1> reinterpret_as() restrict(amp,cpu);
 
 template <typename _Value_type2>
 array_view<const _Value_type2, 1> reinterpret_as() const restrict(amp,cpu);
-``` 
+```
 
 ### <a name="parameters"></a>Parametreler
 
@@ -672,9 +691,11 @@ array_view<const _Value_type2, 1> reinterpret_as() const restrict(amp,cpu);
 Döndürülen verileri veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
+
 Bir array_view veya dizisine, ElementType ve 1 ile N azaltılmış boyut bağlantısını düşürülen öğe türü ile göre const array_view nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
+
 Bazen bir doğrusal, tek boyutlu dizi büyük olasılıkla kaynak diziden farklı bir değer türüne sahip olduğu gibi çok boyutlu bir dizi görüntülemek kullanışlıdır. Bunu başarmak için bu yöntemi kullanabilirsiniz.
 **Uyarı** farklı bir değer türü kullanarak bir dizi nesnesi yeniden yorumlamak güvenli olmayabilecek olan güvensiz bir işlemi. Bu işlevleri dikkatli kullanmanızı öneririz.
 
@@ -687,13 +708,13 @@ array<RGB,3>  a = ...;
 array_view<float,1> v = a.reinterpret_as<float>();
 
 assert(v.extent == 3*a.extent);
-```  
+```
 
 ##  <a name="section"></a> Bölüm
 
 Uzantıda alt bölümlerini döndürür `array` nesnesinin Belirtilen kaynak ve, isteğe bağlı olarak belirtilen kapsama sahip.
 
-```  
+```
 array_view<value_type,_Rank> section(
     const Concurrency::index<_Rank>& _Section_origin,
     const Concurrency::extent<_Rank>& _Section_extent) restrict(amp,cpu);
@@ -749,9 +770,10 @@ array_view<const value_type,3> section(
     int _E0,
     int _E1,
     int _E2) const restrict(amp,cpu);
-```  
+```
 
 ### <a name="parameters"></a>Parametreler
+
 *_E0*<br/>
 Bu bölümün kapsamının ikinci en önemli bileşeni.
 
@@ -789,24 +811,25 @@ Bölümün boyut sayısı.
 Kopyalanan öğelerin veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
+
 Uzantıda alt bölümlerini döndürür `array` nesnesinin Belirtilen kaynak ve, isteğe bağlı olarak belirtilen kapsama sahip. Yalnızca `index` nesnesi belirtildiğinde, Altbölüm ilişkili kılavuzundaki öğelerin dizinleri daha büyük dizinlere sahip tüm öğeleri içeren `index` nesne.
 
 ##  <a name="view_as"></a> view_as
 
 Bu dizi olarak derecenin bir [array_view](array-view-class.md) bir.
 
-```  
+```
 template <int _New_rank>
 array_view<value_type,_New_rank> view_as(
     const Concurrency::extent<_New_rank>& _View_extent) restrict(amp,cpu);
 
-
 template <int _New_rank>
 array_view<const value_type,_New_rank> view_as(
     const Concurrency::extent<_New_rank>& _View_extent) const restrict(amp,cpu);
-```  
+```
 
 ### <a name="parameters"></a>Parametreler
+
 *_New_rank*<br/>
 Boyut sayısı `extent` nesnesi bir parametre olarak geçirilir.
 
@@ -817,7 +840,9 @@ Yeni oluşturmak için kullanılan uzantı [array_view](array-view-class.md) nes
 Hem özgün öğelerin veri türü `array` nesne ve döndürülen `array_view` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
+
 [Array_view](array-view-class.md) oluşturulan nesne.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

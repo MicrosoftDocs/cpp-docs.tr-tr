@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c375a10d1c8dadca643ac428422eb388c16cdae6
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 2bda23b6847c08096b27516fcc955e4bf68c38ba
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313942"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385839"
 ---
 # <a name="new-ltdevicegt-image-type-dialog-box-c-image-editor-for-icons"></a>Yeni &lt;cihaz&gt; görüntü türü iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++)
 
@@ -54,6 +54,6 @@ Yok.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Simgeler ve İmleçler: görüntüleme cihazları için görüntü kaynakları](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)  
-[Görüntü menüsü](../windows/image-menu-image-editor-for-icons.md)  
+[Simgeler ve İmleçler: görüntüleme cihazları için görüntü kaynakları](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)<br/>
+[Görüntü menüsü](../windows/image-menu-image-editor-for-icons.md)<br/>
 [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)

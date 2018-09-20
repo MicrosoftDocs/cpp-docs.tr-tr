@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: eeaaedeb4c3806af888f36e62c8fa8e54c47eb46
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d5b50c57a80b2a9aca2681c3ade3c6d4fc3568e0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595700"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385995"
 ---
 # <a name="creatormapactivationid-data-member"></a>CreatorMap::activationId Veri Üyesi
 
@@ -39,10 +39,10 @@ union {
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*  
+*CLSID*<br/>
 Bir arabirim kimliği.
 
-*getRuntimeName*  
+*getRuntimeName*<br/>
 Windows çalışma zamanı adı bir nesne alır. bir işlev.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -57,5 +57,5 @@ Bir klasik COM sınıfı kimliği veya bir Windows çalışma zamanı adı tanı
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CreatorMap Yapısı](../windows/creatormap-structure.md)  
+[CreatorMap Yapısı](../windows/creatormap-structure.md)<br/>
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

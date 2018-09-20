@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 68cfd7eb96cbf19f5675cec17a9270b9b37b2105
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 340b8827e10e4b539ee34e7dde998b18a34e2414
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599825"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46384409"
 ---
 # <a name="supporterrorinfo"></a>support_error_info
 
@@ -38,7 +38,7 @@ Uygular, ayrıntılı hatalar döndürmek için destek.
 
 ### <a name="parameters"></a>Parametreler
 
-*error_interface*  
+*error_interface*<br/>
 Arabirimi uygulama tanımlayıcısını `IErrorInfo`.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -86,5 +86,5 @@ class CMyClass
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[COM Öznitelikleri](../windows/com-attributes.md)  
+[COM Öznitelikleri](../windows/com-attributes.md)<br/>
 [Sınıf Öznitelikleri](../windows/class-attributes.md)  

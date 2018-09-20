@@ -17,74 +17,77 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3b369cfbd68edd32b644c9a4ec0520329507b6e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 32dab6784e4265432f596b585e098f6a77687117
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45708038"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46421550"
 ---
 # <a name="sections-openmp"></a>sections (OpenMP)
-Tüm iş parçacıkları arasında bölünmesi için kod bölümleri tanımlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-#pragma omp [parallel] sections [clauses]  
-{  
-   #pragma omp section  
-   {  
-      code_block   
-   }   
-}  
-```  
-  
+
+Tüm iş parçacıkları arasında bölünmesi için kod bölümleri tanımlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+#pragma omp [parallel] sections [clauses]
+{
+   #pragma omp section
+   {
+      code_block
+   } 
+}
+```
+
 ## <a name="arguments"></a>Arguments
 
 *Yan tümcesi*<br/>
 (İsteğe bağlı) Sıfır veya daha fazla tümceciği. Tarafından desteklenen yan tümce listesi için Açıklamalar bölümüne bakın **bölümleri**.
 
-## <a name="remarks"></a>Açıklamalar  
- **Bölümleri** yönergesi, sıfır veya daha fazla içerebilir **bölümü** yönergeleri.  
-  
- **Bölümleri** yönergesi aşağıdaki OpenMP yan tümceleri destekler:  
-  
--   [firstprivate](../../../parallel/openmp/reference/firstprivate.md)  
-  
--   [lastprivate](../../../parallel/openmp/reference/lastprivate.md)  
-  
--   [nowait](../../../parallel/openmp/reference/nowait.md)  
-  
--   [private](../../../parallel/openmp/reference/private-openmp.md)  
-  
--   [reduction](../../../parallel/openmp/reference/reduction.md)  
-  
- Varsa **paralel** de belirtilirse, `clause` herhangi yan tümcesi tarafından kabul edilebilen **paralel** veya **bölümleri** yönergeleri dışında `nowait`.  
-  
- Daha fazla bilgi için [2.4.2 sections yapı](../../../parallel/openmp/2-4-2-sections-construct.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// omp_sections.cpp  
-// compile with: /openmp   
-#include <stdio.h>  
-#include <omp.h>  
-  
-int main() {  
-    #pragma omp parallel sections num_threads(4)  
-    {  
-        printf_s("Hello from thread %d\n", omp_get_thread_num());  
-        #pragma omp section  
-        printf_s("Hello from thread %d\n", omp_get_thread_num());  
-    }  
-}  
-```  
-  
-```Output  
-Hello from thread 0  
-Hello from thread 0  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler](../../../parallel/openmp/reference/openmp-directives.md)
+## <a name="remarks"></a>Açıklamalar
+
+**Bölümleri** yönergesi, sıfır veya daha fazla içerebilir **bölümü** yönergeleri.
+
+**Bölümleri** yönergesi aşağıdaki OpenMP yan tümceleri destekler:
+
+- [firstprivate](../../../parallel/openmp/reference/firstprivate.md)
+
+- [lastprivate](../../../parallel/openmp/reference/lastprivate.md)
+
+- [nowait](../../../parallel/openmp/reference/nowait.md)
+
+- [private](../../../parallel/openmp/reference/private-openmp.md)
+
+- [reduction](../../../parallel/openmp/reference/reduction.md)
+
+Varsa **paralel** de belirtilirse, `clause` herhangi yan tümcesi tarafından kabul edilebilen **paralel** veya **bölümleri** yönergeleri dışında `nowait`.
+
+Daha fazla bilgi için [2.4.2 sections yapı](../../../parallel/openmp/2-4-2-sections-construct.md).
+
+## <a name="example"></a>Örnek
+
+```
+// omp_sections.cpp
+// compile with: /openmp
+#include <stdio.h>
+#include <omp.h>
+
+int main() {
+    #pragma omp parallel sections num_threads(4)
+    {
+        printf_s("Hello from thread %d\n", omp_get_thread_num());
+        #pragma omp section
+        printf_s("Hello from thread %d\n", omp_get_thread_num());
+    }
+}
+```
+
+```Output
+Hello from thread 0
+Hello from thread 0
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yönergeler](../../../parallel/openmp/reference/openmp-directives.md)

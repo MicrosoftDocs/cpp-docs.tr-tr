@@ -16,42 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ab6941e891d75e06aaea1ca492a3c64e509b0f7
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: fd03b9371c4026282ff9e01d16b937c73bc495ce
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711678"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390506"
 ---
 # <a name="writecr4"></a>__writecr4
-**Microsoft'a özgü**  
-  
- Değeri Yazar `Data` CR4 kaydı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void writecr4(   
-   unsigned __int64 Data   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+**Microsoft'a özgü**
+
+Değeri Yazar `Data` CR4 kaydı.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void writecr4( 
+   unsigned __int64 Data 
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *Veri*<br/>
-[in] CR4 kasaya yazılacak değer.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|  
-|---------------|------------------|  
-|`__writecr4`|x86, x64|  
-  
- **Üst bilgi dosyası** \<intrin.h >  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[in] CR4 kasaya yazılacak değer.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|
+|---------------|------------------|
+|`__writecr4`|x86, x64|
+
+**Üst bilgi dosyası** \<intrin.h >
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

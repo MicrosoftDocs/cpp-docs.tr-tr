@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bf8cec4505c7b981920ed8af946e668d3d0f16ca
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: bace548d72829229d40a9b890d686efb132e0e87
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315723"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388478"
 ---
 # <a name="moving-a-toolbar-button"></a>Araç Çubuğu Düğmesini Taşıma
 
@@ -37,5 +37,5 @@ MFC veya ATL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Araç Çubuğu Düğmelerini Oluşturma, Taşıma ve Düzenleme](../windows/creating-moving-and-editing-toolbar-buttons.md)  
+[Araç Çubuğu Düğmelerini Oluşturma, Taşıma ve Düzenleme](../windows/creating-moving-and-editing-toolbar-buttons.md)<br/>
 [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)

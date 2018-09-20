@@ -15,18 +15,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: a16fa84f250175b188ffd492fed40477d76c9d00
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 86eae14b61c985d3657781a7b641e9972ce76fdb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33166692"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408335"
 ---
 # <a name="synchronization-lock-class"></a>Eşitleme (lock Sınıfı)
-Bir nesneye erişimi eşitleyen kilit almayı otomatikleştirmek için bir mekanizma sağlar.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [lock](../dotnet/lock.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Support Library](../dotnet/cpp-support-library.md)
+
+Bir nesneye erişimi eşitleyen bir kilit almayı otomatikleştirmek için bir mekanizma sağlar.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[lock](../dotnet/lock.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C++ Support Library](../dotnet/cpp-support-library.md)

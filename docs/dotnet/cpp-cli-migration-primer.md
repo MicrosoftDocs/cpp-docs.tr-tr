@@ -19,37 +19,40 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: add55156b23dd2f9eb746f032d8406bad3b9db56
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 88b32ea226971c0fa5b6d269a8992629c3c4de77
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33108692"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385437"
 ---
 # <a name="ccli-migration-primer"></a>C++/CLI Geçiş Öncüsü
-Bu, Visual C++ programları Yönetilen Uzantılar'dan C++ için Visual C++'ye geçmek için bir kılavuzdur. 
-  
- C + +/ CLI dinamik bileşen programlama kip ISO-C++ standart dili genişletir. Yeni dil yönetilen uzantılara göre birkaç önemli geliştirmeler sunar. Bu bölümde, olduğu gibi bir eşleme var olduğundan ve hiçbir eşleme bulunduğu bu yapıları gösterir Visual c++ C++ dil özellikleri için Yönetilen Uzantılar numaralandırılmış bir listesini ve bunların eşleme sağlar.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Değişikliklerin Anahattı (C++/CLI)](../dotnet/outline-of-changes-cpp-cli.md)  
- İleri düzey bir özeti için hızlı başvuru, beş genel kategori altında değişikliklerin bir listesi sağlama.  
-  
- [Dil Anahtar Sözcükleri (C++/CLI)](../dotnet/language-keywords-cpp-cli.md)  
- Dil anahtar sözcükleri çift alt çizgi kaldırılmasını ve bağlamsal ve boşluklu anahtar sözcükleri giriş dahil olmak üzere, değişiklikleri anlatır.  
-  
- [Yönetilen türler (C + +/ CL)](../dotnet/managed-types-cpp-cl.md)  
- Bakar, ortak tür sistemi (CTS) - bildirim bildirimlerindeki değişiklikleri, bu sınıfları, diziler (parametre dizisi dahil), numaralandırmalar ve benzeri bildiriminde değişiklikleri içerir.  
-  
- [Sınıfta veya Arabirimde Üye Bildirimleri (C++/CLI)](../dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md)  
- Sınıf üyeleri skaler özellikler, dizin özelliklerini, işleçleri, temsilciler ve olaylar gibi içeren değişiklikleri gösterir.  
-  
- [Değer Türleri ve Davranışları (C++/CLI)](../dotnet/value-types-and-their-behaviors-cpp-cli.md)  
- Değer türleri ve iç ve sabitleme işaretçileri yeni ailesi odaklanır. Ayrıca, bir dizi giriş örtük kutulama, girişi paketlenmiş değer türleri ve değer sınıflardaki varsayılan oluşturucular desteğinin kaldırılması gibi önemli semantiği değişiklikleri anlatılmaktadır.  
-  
- [Genel Dil Değişiklikleri (C++/CLI)](../dotnet/general-language-changes-cpp-cli.md)  
- Dönüştürme gösterimi desteği gibi ayrıntıları anlamsal değişiklikler dize değişmez değeri davranışı ve değişiklikleri semantiğini arasındaki ISO-C++ C + +/ CLI.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)   
- [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+
+Bu, Visual C++ programınızı C++ için Yönetilen Uzantılar'dan, Visual C++'a taşıma. bir kılavuzdur.
+
+C + +/ CLI, dinamik bileşen programlama modelini ISO-C++ Standart diline genişletir. Yeni dil yönetilen uzantılara göre önemli geliştirmeler sunar. Bu bölüm, olduğu gibi bir eşleme var olduğundan ve kendisi için hiçbir eşleme var olmayan yapıları gösterir Visual c++ için Yönetilen Uzantılar C++ dil özelliklerinin numaralandırılmış listesini ve bunların eşleme sağlar.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[Değişikliklerin Anahattı (C++/CLI)](../dotnet/outline-of-changes-cpp-cli.md)<br/>
+Beş genel kategori altında değişikliklerin listesini sağlayan, hızlı başvuru için İleri düzey bir özeti.
+
+[Dil Anahtar Sözcükleri (C++/CLI)](../dotnet/language-keywords-cpp-cli.md)<br/>
+Dil anahtar sözcükleri çift alt çizginin kaldırılmasını ve bağlamsal ve boşluklu anahtar sözcüklerin Tanıtımı da dahil olmak üzere, değişiklikleri anlatır.
+
+[Yönetilen türler (C + +/ CL)](../dotnet/managed-types-cpp-cl.md)<br/>
+Ortak tür sistemi (CTS) - bildirimindeki söz dizimi değişikliklerine bakar bu sınıfların, dizilerin (parametre dizisi dahil), numaralandırmalar ve benzeri bildiriminde değişiklikler içerir.
+
+[Sınıfta veya Arabirimde Üye Bildirimleri (C++/CLI)](../dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md)<br/>
+Ölçekli özellikler, dizin özellikleri, işleçler, temsilciler ve olaylar gibi sınıf üyelerini içeren değişiklikleri gösterir.
+
+[Değer Türleri ve Davranışları (C++/CLI)](../dotnet/value-types-and-their-behaviors-cpp-cli.md)<br/>
+Değer türleri ve yeni iç ve sabitleme işaretçileri ailesinin odaklanır. Ayrıca, birçok önemli anlamsal değişiklikleri örtük kutulama, kutulanan değer türlerinin değiştirilemezlik ve değer sınıfları dahilindeki varsayılan oluşturucu desteğinin kaldırılması gibi anlatılmaktadır.
+
+[Genel Dil Değişiklikleri (C++/CLI)](../dotnet/general-language-changes-cpp-cli.md)<br/>
+Anlamsal değişiklikleri atama gösterimi desteği gibi dize değişmez değeri davranışı ve ISO-C++ ve C + arasında anlamlarında yapılan değişiklikler +/ CLI.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Karışık (Yerel ve Yönetilen) Derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)<br/>
+[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

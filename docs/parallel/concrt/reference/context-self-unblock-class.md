@@ -18,54 +18,58 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90774b304a4649c72b6232b5908bf9ff14a4412d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 36bfc6053ddbfb68598e1465896f94bb0a895f1b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057359"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435902"
 ---
 # <a name="contextselfunblock-class"></a>context_self_unblock Sınıfı
-Bu sınıf oluşan bir özel durumu anlatmaktadır `Unblock` yöntemi bir `Context` nesnesi aynı bağlamdan çağrılır. Bu tarafından belirtilen bir bağlamda kendisini engelini kaldırmak için girişiminde bulunulduğunu.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class context_self_unblock : public std::exception;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[context_self_unblock](#ctor)|Fazla Yüklendi. Oluşturur bir `context_self_unblock` nesne.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `exception`  
-  
- `context_self_unblock`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** concrt.h  
-  
- **Namespace:** eşzamanlılık  
-  
-##  <a name="ctor"></a> context_self_unblock 
 
- Oluşturur bir `context_self_unblock` nesne.  
-  
-```  
+Bu sınıf oluşan bir özel durumu anlatmaktadır `Unblock` yöntemi bir `Context` nesnesi aynı bağlamdan çağrılır. Bu tarafından belirtilen bir bağlamda kendisini engelini kaldırmak için girişiminde bulunulduğunu.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class context_self_unblock : public std::exception;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[context_self_unblock](#ctor)|Fazla Yüklendi. Oluşturur bir `context_self_unblock` nesne.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`exception`
+
+`context_self_unblock`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** concrt.h
+
+**Namespace:** eşzamanlılık
+
+##  <a name="ctor"></a> context_self_unblock
+
+Oluşturur bir `context_self_unblock` nesne.
+
+```
 explicit _CRTIMP context_self_unblock(_In_z_ const char* _Message) throw();
 
- 
 context_self_unblock() throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *İl_eti*<br/>
-Hatanın açıklayıcı bir iletisi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+Hatanın açıklayıcı bir iletisi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Ad Alanı](concurrency-namespace.md)

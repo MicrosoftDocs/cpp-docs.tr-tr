@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fe80ae0d4045514c22c40af38deeeecbbfecc363
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 9246d7a26c9764e31cca9c861ec0a15d4792c115
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316386"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46389105"
 ---
 # <a name="setting-a-cursor39s-hot-spot-image-editor-for-icons"></a>Bir imleç ayarlama&#39;s etkin nokta (simgeler için görüntü Düzenleyicisi)
 
@@ -48,5 +48,5 @@ Yok.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [Simgeler ve İmleçler: görüntüleme cihazları için görüntü kaynakları](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)

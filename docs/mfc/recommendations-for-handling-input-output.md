@@ -18,43 +18,45 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ee88b7784abb6ca622e72a9dfb31efc39fa7816
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 5a8d0d2c7e560338bbef5cbe432c325385734c56
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36930946"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385033"
 ---
 # <a name="recommendations-for-handling-inputoutput"></a>Giriş/Çıkış İşleme için Öneriler
-Veya dosya tabanlı g/ç kullanıp nasıl aşağıdaki karar ağacı sorulara yanıt üzerinde bağlıdır:  
-  
- **Uygulamanızdaki birincil veri disk dosyasında bulunur**  
-  
--   Evet, birincil veri disk dosyasında bulunur:  
-  
-     **Yapar uygulama Dosya Aç belleğe dosyanın tamamını okuyun ve geri dosyanın tamamını dosyasını kaydetmek için disk yazma**  
-  
-    -   Evet: Varsayılan MFC belge böyledir. Kullanım `CDocument` seri hale getirme.  
-  
-    -   Hayır: Bu genellikle dosyanın güncelleştirme işlem tabanlı bir durumdur. İşlem başına temelinde dosyasını güncelleştirin ve gerekmeyen `CDocument` seri hale getirme.  
-  
--   Hayır, birincil veri disk dosyasında bulunan değil:  
-  
-     **Verileri bir ODBC veri kaynağında bulunan**  
-  
-    -   Evet, verileri bir ODBC veri kaynağında bulunur:  
-  
-         MFC'nin veritabanı desteği kullanın. Bu durumda standart MFC uygulaması içeren bir `CDatabase` makalesinde ele alındığı gibi nesne [MFC: belgeler ve görünümler ile veritabanı sınıflarını kullanarak](../data/mfc-using-database-classes-with-documents-and-views.md). Uygulamayı da okuma ve yazma bir yedek dosya — Uygulama Sihirbazı'nı "bir veritabanı görünümü ve dosya desteği" seçeneği amacı. Bu durumda, serileştirme için yardımcı dosyasını kullanırsınız.  
-  
-    -   Hayır, verileri bir ODBC veri kaynağında bulunan değil.  
-  
-         Bu durumda örnekleri: veri olmayan bir-ODBC DBMS; içinde bulunan OLE veya DDE gibi diğer bazı mekanizması aracılığıyla verilerini okur.  
-  
-         Böyle durumlarda, serileştirme kullanmaz ve uygulamanızı olmaz ve açık menü öğeleri kaydedin. Hala kullanmak isteyebileceği bir `CDocument` giriş temel olarak, yalnızca bir MFC ODBC uygulama belge depolamak için kullandığı `CRecordset` nesneleri. Ancak framework'ün varsayılan dosya Aç/Kaydet Belge Serileştirme kullanmaz.  
-  
- Dosya menüsünde komutlar olarak kaydetme ve kaydedin, açık desteklemek için Belge Serileştirme çerçevesi sağlar. Seri hale getirme okur ve nesneleri dahil olmak üzere sınıfından türetilen verileri Yazar `CObject`, çok kalıcı depolama, normal bir disk dosyası. Serileştirme kullanımı kolaydır ve gereksinimlerinizi çoğunu sunar, ancak birçok veri erişimi uygulamaları uygun olabilir. Veri erişimi uygulamaları genellikle veri işlem başına temelinde güncelleştirin. Bunlar işlem yerine okuma ve aynı anda tüm veri dosyası yazılırken tarafından etkilenen kayıtlarını güncelleştirin.  
-  
- Seri hale getirme hakkında daha fazla bilgi için bkz: [seri hale getirme](../mfc/serialization-in-mfc.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Seri Hale Getirme: Seri Hale Getirme ile Veritabanı giriş/çıkış](../mfc/serialization-serialization-vs-database-input-output.md)
+
+Veya dosya tabanlı g/ç kullanıp nasıl karar ağacı aşağıdaki sorulara yanıt üzerinde bağlıdır:
+
+**Birincil veri uygulamanızdaki bir disk dosyasında yer almıyor**
+
+- Evet, birincil veri disk dosyasında bulunur:
+
+     **Uygulamanın Dosya Aç belleğe dosyanın tamamını okuyun ve diske geri yazma dosya maliyet tasarrufu dosyanın tamamı**
+
+   - Evet: Varsayılan MFC belge durum budur. Kullanım `CDocument` seri hale getirme.
+
+   - Hayır: Genellikle işlem tabanlı dosyanın güncelleştirme durum budur. İşlem başına temelinde dosyasını güncelleştirin ve gerekmeyen `CDocument` seri hale getirme.
+
+- Hayır, birincil veri disk dosyasında bulunan değil:
+
+     **Verileri bir ODBC veri kaynağında yer almıyor**
+
+   - Evet, verileri bir ODBC veri kaynağında yer alıyor:
+
+         Use MFC's database support. The standard MFC implementation for this case includes a `CDatabase` object, as discussed in the article [MFC: Using Database Classes with Documents and Views](../data/mfc-using-database-classes-with-documents-and-views.md). The application might also read and write an auxiliary file — the purpose of the application wizard "both a database view and file support" option. In this case, you'd use serialization for the auxiliary file.
+
+   - Hayır, verileri bir ODBC veri kaynağında bulunan değil.
+
+         Examples of this case: the data resides in a non-ODBC DBMS; the data is read via some other mechanism, such as OLE or DDE.
+
+         In such cases, you won't use serialization, and your application won't have Open and Save menu items. You might still want to use a `CDocument` as a home base, just as an MFC ODBC application uses the document to store `CRecordset` objects. But you won't use the framework's default File Open/Save document serialization.
+
+Dosya menüsünde komutları kaydedip, kaydetme açık desteklemek için Belge Serileştirme framework sağlar. Serileştirme okur ve nesneleri dahil olmak üzere sınıftan türetilen veri Yazar `CObject`, kadar kalıcı depolama alanı, normalde bir disk dosyası. Seri hale getirme gereksinimlerinizi birçoğu derler ve kullanımı kolaydır, ancak birçok veri erişim uygulamada uygun olabilir. Veri erişimi uygulamaları genellikle veri işlem başına temelinde güncelleştirin. Bunlar, işlem yerine okuma ve tüm veri dosyasını tek seferde yazma tarafından etkilenen kayıtları güncelleştirir.
+
+Seri hale getirme hakkında daha fazla bilgi için bkz. [serileştirme](../mfc/serialization-in-mfc.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Seri Hale Getirme: Seri Hale Getirme ile Veritabanı giriş/çıkışı](../mfc/serialization-serialization-vs-database-input-output.md)

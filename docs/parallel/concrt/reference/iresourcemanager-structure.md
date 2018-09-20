@@ -24,153 +24,174 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d1032b2db7d1552beb40eb724b9953142b9b2ac
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 26181c12bd3775a4fee0086be8459251ddf25afd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46027420"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46413672"
 ---
 # <a name="iresourcemanager-structure"></a>IResourceManager Yapısı
-Eşzamanlılık Çalışma zamanı kaynak yöneticisi için arabirim. Bu, zamanlayıcılar Resource Manager ile iletişim kurmak arabirimidir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Eşzamanlılık Çalışma zamanı kaynak yöneticisi için arabirim. Bu, zamanlayıcılar Resource Manager ile iletişim kurmak arabirimidir.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 struct IResourceManager;
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-enumerations"></a>Ortak numaralandırmalar  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[Iresourcemanager::osversion](#osversion)|İşletim sistemi sürümünü temsil eden numaralandırılmış tür.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[Iresourcemanager::createnodetopology](#createnodetopology)|Yalnızca hata ayıklama içinde mevcut çalışma zamanı oluşturur, bu yöntem kaynak gerçek donanım yapılandırması ile eşleşen gerek kalmadan donanım topolojileri değişen şirket Yöneticisi'nin test kolaylaştırmak için tasarlanmış bir sınama kancası. Herhangi bir işlem yapmadan ile perakende derlemeleri çalışma zamanı bu yöntemi döndürür.|  
-|[Iresourcemanager::getavailablenodecount](#getavailablenodecount)|Kaynak Yöneticisi için kullanılabilir düğüm sayısını döndürür.|  
-|[Iresourcemanager::getfirstnode](#getfirstnode)|Kaynak Yöneticisi tarafından tanımlandığı gibi ilk düğümü numaralandırma sırada döndürür.|  
-|[Iresourcemanager::Reference](#reference)|Resource Manager örneğindeki başvuru sayısını artırır.|  
-|[Iresourcemanager::registerscheduler](#registerscheduler)|Bir Zamanlayıcı'yı Resource Manager ile kaydeder. Zamanlayıcı kaydedildikten sonra bunu kullanarak Resource Manager ile iletişim kurmanız gerekir `ISchedulerProxy` döndürülen arabirimi.|  
-|[Iresourcemanager::Release](#release)|Resource Manager örneğinde başvuru sayısını azaltır. Resource Manager, başvuru sayısı görünümüne döndüğünde edildiğinde `0`.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Kullanım [CreateResourceManager](concurrency-namespace-functions.md) işlevini tekil Resource Manager örneği için bir arabirim alabilirsiniz. Yöntemi Resource Manager üzerindeki bir başvuru sayısını artırır ve çağırması gereken [Iresourcemanager::Release](#release) Resource Manager ile işiniz bittiğinde başvuru serbest bırakmak için yöntemi. Genellikle, oluşturduğunuz her bir zamanlayıcı oluşturma sırasında bu yöntemini çağırmak ve bunu kapandıktan sonra Resource Manager'a başvuru bırakın.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `IResourceManager`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** concrtrm.h  
-  
- **Namespace:** eşzamanlılık  
-  
-##  <a name="createnodetopology"></a>  Iresourcemanager::createnodetopology yöntemi  
- Yalnızca hata ayıklama içinde mevcut çalışma zamanı oluşturur, bu yöntem kaynak gerçek donanım yapılandırması ile eşleşen gerek kalmadan donanım topolojileri değişen şirket Yöneticisi'nin test kolaylaştırmak için tasarlanmış bir sınama kancası. Herhangi bir işlem yapmadan ile perakende derlemeleri çalışma zamanı bu yöntemi döndürür.  
-  
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-enumerations"></a>Ortak numaralandırmalar
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[Iresourcemanager::osversion](#osversion)|İşletim sistemi sürümünü temsil eden numaralandırılmış tür.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[Iresourcemanager::createnodetopology](#createnodetopology)|Yalnızca hata ayıklama içinde mevcut çalışma zamanı oluşturur, bu yöntem kaynak gerçek donanım yapılandırması ile eşleşen gerek kalmadan donanım topolojileri değişen şirket Yöneticisi'nin test kolaylaştırmak için tasarlanmış bir sınama kancası. Herhangi bir işlem yapmadan ile perakende derlemeleri çalışma zamanı bu yöntemi döndürür.|
+|[Iresourcemanager::getavailablenodecount](#getavailablenodecount)|Kaynak Yöneticisi için kullanılabilir düğüm sayısını döndürür.|
+|[Iresourcemanager::getfirstnode](#getfirstnode)|Kaynak Yöneticisi tarafından tanımlandığı gibi ilk düğümü numaralandırma sırada döndürür.|
+|[Iresourcemanager::Reference](#reference)|Resource Manager örneğindeki başvuru sayısını artırır.|
+|[Iresourcemanager::registerscheduler](#registerscheduler)|Bir Zamanlayıcı'yı Resource Manager ile kaydeder. Zamanlayıcı kaydedildikten sonra bunu kullanarak Resource Manager ile iletişim kurmanız gerekir `ISchedulerProxy` döndürülen arabirimi.|
+|[Iresourcemanager::Release](#release)|Resource Manager örneğinde başvuru sayısını azaltır. Resource Manager, başvuru sayısı görünümüne döndüğünde edildiğinde `0`.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Kullanım [CreateResourceManager](concurrency-namespace-functions.md) işlevini tekil Resource Manager örneği için bir arabirim alabilirsiniz. Yöntemi Resource Manager üzerindeki bir başvuru sayısını artırır ve çağırması gereken [Iresourcemanager::Release](#release) Resource Manager ile işiniz bittiğinde başvuru serbest bırakmak için yöntemi. Genellikle, oluşturduğunuz her bir zamanlayıcı oluşturma sırasında bu yöntemini çağırmak ve bunu kapandıktan sonra Resource Manager'a başvuru bırakın.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`IResourceManager`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** concrtrm.h
+
+**Namespace:** eşzamanlılık
+
+##  <a name="createnodetopology"></a>  Iresourcemanager::createnodetopology yöntemi
+
+Yalnızca hata ayıklama içinde mevcut çalışma zamanı oluşturur, bu yöntem kaynak gerçek donanım yapılandırması ile eşleşen gerek kalmadan donanım topolojileri değişen şirket Yöneticisi'nin test kolaylaştırmak için tasarlanmış bir sınama kancası. Herhangi bir işlem yapmadan ile perakende derlemeleri çalışma zamanı bu yöntemi döndürür.
+
 ```
 virtual void CreateNodeTopology(
     unsigned int nodeCount,
     _In_reads_(nodeCount) unsigned int* pCoreCount,
     _In_reads_opt_(nodeCount) unsigned int** pNodeDistance,
     _In_reads_(nodeCount) unsigned int* pProcessorGroups) = 0;
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *NodeCount*<br/>
-Benzetimli işlemci düğüm sayısı.  
-  
+Benzetimli işlemci düğüm sayısı.
+
 *pCoreCount*<br/>
-Her bir düğümünde çekirdek sayısını belirten bir dizi.  
-  
+Her bir düğümünde çekirdek sayısını belirten bir dizi.
+
 *pNodeDistance*<br/>
-Her iki düğüm arasındaki düğüm uzaklık belirterek bir matris. Bu parametre değerini alabilir `NULL`.  
-  
+Her iki düğüm arasındaki düğüm uzaklık belirterek bir matris. Bu parametre değerini alabilir `NULL`.
+
 *pProcessorGroups*<br/>
-İşlemci grubu belirtir bir dizi her düğüme ait.  
-  
-### <a name="remarks"></a>Açıklamalar  
- [invalid_argument](../../../standard-library/invalid-argument-class.md) oluşturulur parametresi `nodeCount` değerine sahip `0` , geçirilen veya parametre `pCoreCount` değerine sahip `NULL`.  
-  
- [invalid_operation](invalid-operation-class.md) işlemdeki diğer zamanlayıcılar mevcut olsa da bu yöntemi çağrılırsa oluşturulur.  
-  
-##  <a name="getavailablenodecount"></a>  Iresourcemanager::getavailablenodecount metodu  
- Kaynak Yöneticisi için kullanılabilir düğüm sayısını döndürür.  
-  
+İşlemci grubu belirtir bir dizi her düğüme ait.
+
+### <a name="remarks"></a>Açıklamalar
+
+[invalid_argument](../../../standard-library/invalid-argument-class.md) oluşturulur parametresi `nodeCount` değerine sahip `0` , geçirilen veya parametre `pCoreCount` değerine sahip `NULL`.
+
+[invalid_operation](invalid-operation-class.md) işlemdeki diğer zamanlayıcılar mevcut olsa da bu yöntemi çağrılırsa oluşturulur.
+
+##  <a name="getavailablenodecount"></a>  Iresourcemanager::getavailablenodecount metodu
+
+Kaynak Yöneticisi için kullanılabilir düğüm sayısını döndürür.
+
 ```
 virtual unsigned int GetAvailableNodeCount() const = 0;
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Kaynak Yöneticisi için kullanılabilir düğüm sayısı.  
-  
-##  <a name="getfirstnode"></a>  Iresourcemanager::getfirstnode metodu  
- Kaynak Yöneticisi tarafından tanımlandığı gibi ilk düğümü numaralandırma sırada döndürür.  
-  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Kaynak Yöneticisi için kullanılabilir düğüm sayısı.
+
+##  <a name="getfirstnode"></a>  Iresourcemanager::getfirstnode metodu
+
+Kaynak Yöneticisi tarafından tanımlandığı gibi ilk düğümü numaralandırma sırada döndürür.
+
 ```
 virtual ITopologyNode* GetFirstNode() const = 0;
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Kaynak Yöneticisi tarafından tanımlanan numaralandırma sırasında ilk düğümü.  
-  
-##  <a name="iresourcemanager__osversion"></a>  Iresourcemanager::osversion numaralandırması  
- İşletim sistemi sürümünü temsil eden numaralandırılmış tür.  
-  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Kaynak Yöneticisi tarafından tanımlanan numaralandırma sırasında ilk düğümü.
+
+##  <a name="iresourcemanager__osversion"></a>  Iresourcemanager::osversion numaralandırması
+
+İşletim sistemi sürümünü temsil eden numaralandırılmış tür.
+
 ```
 enum OSVersion;
-```  
-  
-##  <a name="reference"></a>  Iresourcemanager::Reference yöntemi  
- Resource Manager örneğindeki başvuru sayısını artırır.  
-  
+```
+
+##  <a name="reference"></a>  Iresourcemanager::Reference yöntemi
+
+Resource Manager örneğindeki başvuru sayısını artırır.
+
 ```
 virtual unsigned int Reference() = 0;
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Sonuçta elde edilen başvuru sayısı.  
-  
-##  <a name="registerscheduler"></a>  Iresourcemanager::registerscheduler yöntemi  
- Bir Zamanlayıcı'yı Resource Manager ile kaydeder. Zamanlayıcı kaydedildikten sonra bunu kullanarak Resource Manager ile iletişim kurmanız gerekir `ISchedulerProxy` döndürülen arabirimi.  
-  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Sonuçta elde edilen başvuru sayısı.
+
+##  <a name="registerscheduler"></a>  Iresourcemanager::registerscheduler yöntemi
+
+Bir Zamanlayıcı'yı Resource Manager ile kaydeder. Zamanlayıcı kaydedildikten sonra bunu kullanarak Resource Manager ile iletişim kurmanız gerekir `ISchedulerProxy` döndürülen arabirimi.
+
 ```
 virtual ISchedulerProxy *RegisterScheduler(
     _Inout_ IScheduler* pScheduler,
     unsigned int version) = 0;
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pScheduler*<br/>
-Bir `IScheduler` kaydedilecek Zamanlayıcı arabirimi.  
-  
+Bir `IScheduler` kaydedilecek Zamanlayıcı arabirimi.
+
 *Sürüm*<br/>
-Resource Manager ile iletişim kurmak için Zamanlayıcı iletişim arabirimi sürümü kullanıyor. Bir sürümü kullanılarak Resource Manager, erişimi için eski özellikleri elde zamanlayıcılar verirken yönelik iletişim arabirimi gelişmesi sağlar. Visual Studio 2010'da mevcut bir kaynak yöneticisi özellikleri kullanmak isteyen zamanlayıcılar sürümü kullanması gereken `CONCRT_RM_VERSION_1`.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- `ISchedulerProxy` Kaynak Yöneticisi scheduler ile ilişkili arabirimi. Scheduler, üzerinde bu noktadan itibaren Resource Manager ile iletişim kurmak için bu arabirimi kullanmanız gerekir.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Resource Manager ile iletişim başlatmak için bu yöntemi kullanın. Yöntem ilişkilendirir `IScheduler` ile scheduler arabirimdeki bir `ISchedulerProxy` arabirimi ve size geri uygulamalı. Döndürülen arabirim, Zamanlayıcı tarafından kullanılmak üzere yürütme kaynakları isteği ya da Resource Manager ile iş parçacığı abone olmak için kullanabilirsiniz. Kaynak Yöneticisi tarafından döndürülen Zamanlayıcı ilkesini ilke öğelerden kullanacağı [Ischeduler::getpolicy](ischeduler-structure.md#getpolicy) yöntemi Zamanlayıcı iş parçacıklarının ne tür belirlemek için iş yürütme gerekecektir. Varsa, `SchedulerKind` ilke anahtarı değerine sahip `UmsThreadDefault` ve ilke değeri olarak dışında geri değer okunur `UmsThreadDefault`, `IScheduler` yönteme arabirimi olmalıdır bir `IUMSScheduler` arabirimi.  
-  
- Çağırılıyorsa yöntem bir `invalid_argument` özel durum, parametre `pScheduler` değerine sahip `NULL` veya parametre `version` iletişim arabirimi için geçerli bir sürüm değil.  
-  
-##  <a name="release"></a>  Iresourcemanager::Release yöntemi  
- Resource Manager örneğinde başvuru sayısını azaltır. Resource Manager, başvuru sayısı görünümüne döndüğünde edildiğinde `0`.  
-  
+Resource Manager ile iletişim kurmak için Zamanlayıcı iletişim arabirimi sürümü kullanıyor. Bir sürümü kullanılarak Resource Manager, erişimi için eski özellikleri elde zamanlayıcılar verirken yönelik iletişim arabirimi gelişmesi sağlar. Visual Studio 2010'da mevcut bir kaynak yöneticisi özellikleri kullanmak isteyen zamanlayıcılar sürümü kullanması gereken `CONCRT_RM_VERSION_1`.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+`ISchedulerProxy` Kaynak Yöneticisi scheduler ile ilişkili arabirimi. Scheduler, üzerinde bu noktadan itibaren Resource Manager ile iletişim kurmak için bu arabirimi kullanmanız gerekir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Resource Manager ile iletişim başlatmak için bu yöntemi kullanın. Yöntem ilişkilendirir `IScheduler` ile scheduler arabirimdeki bir `ISchedulerProxy` arabirimi ve size geri uygulamalı. Döndürülen arabirim, Zamanlayıcı tarafından kullanılmak üzere yürütme kaynakları isteği ya da Resource Manager ile iş parçacığı abone olmak için kullanabilirsiniz. Kaynak Yöneticisi tarafından döndürülen Zamanlayıcı ilkesini ilke öğelerden kullanacağı [Ischeduler::getpolicy](ischeduler-structure.md#getpolicy) yöntemi Zamanlayıcı iş parçacıklarının ne tür belirlemek için iş yürütme gerekecektir. Varsa, `SchedulerKind` ilke anahtarı değerine sahip `UmsThreadDefault` ve ilke değeri olarak dışında geri değer okunur `UmsThreadDefault`, `IScheduler` yönteme arabirimi olmalıdır bir `IUMSScheduler` arabirimi.
+
+Çağırılıyorsa yöntem bir `invalid_argument` özel durum, parametre `pScheduler` değerine sahip `NULL` veya parametre `version` iletişim arabirimi için geçerli bir sürüm değil.
+
+##  <a name="release"></a>  Iresourcemanager::Release yöntemi
+
+Resource Manager örneğinde başvuru sayısını azaltır. Resource Manager, başvuru sayısı görünümüne döndüğünde edildiğinde `0`.
+
 ```
 virtual unsigned int Release() = 0;
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Sonuçta elde edilen başvuru sayısı.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [Ischedulerproxy yapısı](ischedulerproxy-structure.md)   
- [IScheduler Yapısı](ischeduler-structure.md)
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Sonuçta elde edilen başvuru sayısı.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
+[ISchedulerProxy Yapısı](ischedulerproxy-structure.md)<br/>
+[IScheduler Yapısı](ischeduler-structure.md)

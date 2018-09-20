@@ -29,12 +29,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6f9b121b75e31fdd79313e36b9e1e19c1cf3200e
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: 12fd66c7ff5a6f6fee7588aa7bd51ae2053ba7e8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691542"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46386983"
 ---
 # <a name="weakref-class"></a>WeakRef Sınıfı
 
@@ -141,10 +141,10 @@ HRESULT As(
 
 ### <a name="parameters"></a>Parametreler
 
-*U*  
+*U*<br/>
 Bir arabirim kimliği.
 
-*ptr*  
+*ptr*<br/>
 Bu işlem tamamlandığında, parametre temsil eden bir nesne *U*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -176,10 +176,10 @@ HRESULT AsIID(
 
 ### <a name="parameters"></a>Parametreler
 
-*riid*  
+*riid*<br/>
 Bir arabirim kimliği.
 
-*ptr*  
+*ptr*<br/>
 Bu işlem tamamlandığında, parametre temsil eden bir nesne *riid*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -220,13 +220,13 @@ HRESULT CopyTo(
 
 ### <a name="parameters"></a>Parametreler
 
-*U*  
+*U*<br/>
 İşaretçi bir `IInspectable` arabirimi. Bir hata varsa yayıldığını *U* türünden türetilmediğinden `IInspectable`.
 
-*riid*  
+*riid*<br/>
 Bir arabirim kimliği. Bir hata varsa yayıldığını *riid* türünden türetilmediğinden `IWeakReference`.
 
-*ptr*  
+*ptr*<br/>
 Karakteriyle dolaylı bir işaretçiye `IInspectable` veya `IWeakReference`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -284,7 +284,7 @@ WeakRef(
 
 ### <a name="parameters"></a>Parametreler
 
-*ptr*  
+*ptr*<br/>
 Bir işaretçi, başvuru veya rvalue başvurusunu geçerli başlatır, varolan bir nesneye `WeakRef` nesne.
 
 ### <a name="remarks"></a>Açıklamalar

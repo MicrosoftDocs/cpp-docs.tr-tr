@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ffb84fd072f4ddd3dc76445c720debef5c364642
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 33f81412ef9580768269663aa23afe06ad4d62f7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590441"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374689"
 ---
 # <a name="comptras-method"></a>ComPtr::As Yöntemi
 
@@ -44,10 +44,10 @@ HRESULT As(
 
 ### <a name="parameters"></a>Parametreler
 
-*U*  
+*U*<br/>
 Parametresi tarafından temsil edilmesini arabirimi *p*.
 
-*p*  
+*p*<br/>
 A **ComPtr** parametresi tarafından belirtilen arabirim temsil eden nesne *U*. Parametre *p* geçerli entityset'e başvurmadığından **ComPtr** nesne.
 
 ## <a name="remarks"></a>Açıklamalar

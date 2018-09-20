@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 061b3be0e642bb8e7406f54a469723c70559d85a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ebc8632d273e650cf11e70177bbfbeb0e90e8601
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610167"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394861"
 ---
 # <a name="hstringmakereference-method"></a>HString::MakeReference Yöntemi
 
@@ -41,13 +41,13 @@ template<unsigned int sizeDest>
 
 ### <a name="parameters"></a>Parametreler
 
-*sizeDest*  
+*sizeDest*<br/>
 Hedef boyutunu belirten bir şablon parametresi `HStringReference` arabellek.
 
-*str*  
+*str*<br/>
 Bir geniş karakter dizesi bir başvuru.
 
-*Len*  
+*Len*<br/>
 En büyük uzunluğunu *str* parametre arabelleği bu işlemi kullanmak için. Varsa *len* parametresi belirtilmediyse, tüm *str* parametresi kullanılır.
 
 ## <a name="return-value"></a>Dönüş Değeri

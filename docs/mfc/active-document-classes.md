@@ -16,25 +16,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0805e77e674a68d5fd81c8628407bcd77e164e07
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0cd4cce7f2e31e084224848f348dd4e5f408de67
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33325922"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385371"
 ---
 # <a name="active-document-classes"></a>Etkin Belge Sınıfları
-Etkin belgeler, Internet Explorer 5.5 gibi bir Web tarayıcısı, tüm istemci penceresinde veya etkin belgeler destekleyen Microsoft Office Binder gibi etkin bir kapsayıcı görüntülenebilir.  
-  
- [CDocObjectServer](../mfc/reference/cdocobjectserver-class.md)  
- Etkin belge arabirimleri eşler ve başlatır ve etkin belgeyi nesneyi etkinleştirir.  
-  
- [CDocObjectServerItem](../mfc/reference/cdocobjectserveritem-class.md)  
- Etkin belge sunucuları için özel olarak OLE sunucu fiilleri uygular.  
-  
- [COleDocObjectItem](../mfc/reference/coledocobjectitem-class.md)  
- Etkin belge kapsaması uygular.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Etkin belgeler, tüm istemci Internet Explorer 5.5 gibi bir Web tarayıcısı penceresi veya etkin belgeler destekleyen Microsoft Office Binder gibi etkin bir kapsayıcı içinde görüntülenebilir.
+
+[CDocObjectServer](../mfc/reference/cdocobjectserver-class.md)<br/>
+Etkin belge arabirimleri eşler, başlatır ve etkin belgeyi nesneyi etkinleştirir.
+
+[Cdocobjectserverıtem](../mfc/reference/cdocobjectserveritem-class.md)<br/>
+Etkin belge sunucuları için özel OLE sunucu fiilleri uygular.
+
+[Coledocobjectıtem](../mfc/reference/coledocobjectitem-class.md)<br/>
+Etkin belge kapsamı uygular.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

@@ -18,33 +18,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74c95c8e8364630416025242633126f91cafbc30
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: bd101d5cbea106c356fcfab5b556dc3f49fe8e87
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45699940"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385046"
 ---
 # <a name="xml-data-generator-tool-property-page"></a>XML Verileri Oluşturma Aracı Özellik Sayfası
-**XML verileri oluşturma aracı** özellik sayfası, bir veri kümesi için bir proje eklediğinizde kullanılabilir.  
-  
-**XML verileri oluşturma aracı** özellik sayfası, aşağıdaki özellikleri içerir:  
-  
+
+**XML verileri oluşturma aracı** özellik sayfası, bir veri kümesi için bir proje eklediğinizde kullanılabilir.
+
+**XML verileri oluşturma aracı** özellik sayfası, aşağıdaki özellikleri içerir:
+
 - **Çıkış dosyası**
 
-   Kullanılacak çıkış dosyası adını belirtir.  
-  
+   Kullanılacak çıkış dosyası adını belirtir.
+
 - **Başlangıç başlığını gösterme**
 
-   Başlangıç başlığının ve bilgi iletilerinin görüntülenmesini bastırır.  
-  
+   Başlangıç başlığının ve bilgi iletilerinin görüntülenmesini bastırır.
+
 - **Oluşturulmuş Proxy dili**
 
-   Yönetilen kod yayma gerekip gerekmediğini belirler.  
-  
-Erişim hakkında daha fazla bilgi için **XML verileri oluşturma aracı** özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
-  
-Bu nesnenin üyeleri programlamayla erişme hakkında daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCXMLDataGeneratorTool>  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özellik Sayfaları](../ide/property-pages-visual-cpp.md)
+   Yönetilen kod yayma gerekip gerekmediğini belirler.
+
+Erişim hakkında daha fazla bilgi için **XML verileri oluşturma aracı** özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).
+
+Bu nesnenin üyeleri programlamayla erişme hakkında daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCXMLDataGeneratorTool>
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Özellik Sayfaları](../ide/property-pages-visual-cpp.md)

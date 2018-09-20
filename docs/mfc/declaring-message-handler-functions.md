@@ -14,24 +14,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4556323236897c6b3a48aa60d96a01c909a0576d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 82a95cea3a2674ca00c8a1dd20361e5b6a176d9b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341716"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385163"
 ---
 # <a name="declaring-message-handler-functions"></a>İleti İşleyici İşlevlerini Bildirme
-Belirli kurallar ve kuralları, ileti işleyicisi işlevlerin adları yönetir. Aşağıdaki konularda açıklandığı gibi bu ileti kategorisine göre değişir:  
-  
--   [Standart Windows iletileri işleyicileri](../mfc/handlers-for-standard-windows-messages.md)  
-  
--   [Komutlar ve denetim bildirimleri için işleyiciler](../mfc/handlers-for-commands-and-control-notifications.md)  
-  
--   [İleti aralıkları için işleyiciler](../mfc/handlers-for-message-map-ranges.md)  
-  
--   [Yansımış iletileri işleme](../mfc/handling-reflected-messages.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İleti İşleme ve Eşleme](../mfc/message-handling-and-mapping.md)
+
+Belirli kurallar ve kuralları, ileti işleyici işlevlerini adlarını kapsar. Aşağıdaki konularda açıklandığı gibi bu ileti kategoriye göre değişir:
+
+- [Standart Windows iletileri işleyicileri](../mfc/handlers-for-standard-windows-messages.md)
+
+- [Komutlar ve denetim bildirimleri için işleyiciler](../mfc/handlers-for-commands-and-control-notifications.md)
+
+- [İleti aralıkları için işleyiciler](../mfc/handlers-for-message-map-ranges.md)
+
+- [Yansımış iletileri işleme](../mfc/handling-reflected-messages.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İleti İşleme ve Eşleme](../mfc/message-handling-and-mapping.md)
 

@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 656739ad000612f130f5cdfb1a53a6de2d67c4c8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 81349135fa822627cb40bdcd2570276d8040e50e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761374"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385527"
 ---
 # <a name="cstring-exception-cleanup"></a>CString özel durum temizleme
 
@@ -30,6 +30,6 @@ Artık MFC kullanan C++ özel durum işleme mekanizmasını altında bir özel d
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
+[Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
 

@@ -16,42 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7369261efb43cdf9cd92f0924d1043cde50ac440
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a06b34ee7d38e5c0e99181c4af81d925b681ce75
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45704021"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46417312"
 ---
 # <a name="writecr8"></a>__writecr8
-**Microsoft'a özgü**  
-  
- Değeri Yazar `Data` CR8 kaydı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void writecr8(   
-   unsigned __int64 Data   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+**Microsoft'a özgü**
+
+Değeri Yazar `Data` CR8 kaydı.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void writecr8( 
+   unsigned __int64 Data 
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *Veri*<br/>
-[in] CR8 kasaya yazılacak değer.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|  
-|---------------|------------------|  
-|`__writecr8`|X64|  
-  
- **Üst bilgi dosyası** \<intrin.h >  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[in] CR8 kasaya yazılacak değer.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|
+|---------------|------------------|
+|`__writecr8`|X64|
+
+**Üst bilgi dosyası** \<intrin.h >
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

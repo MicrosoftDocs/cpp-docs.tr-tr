@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6a7b101091cefcdca65518c2a62bd274f7af4607
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ddd358c3eb20439f87de8614d80af01537ae31e6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610261"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396584"
 ---
 # <a name="verifyinheritancehelper-structure"></a>VerifyInheritanceHelper Yapısı
 
@@ -44,10 +44,10 @@ struct VerifyInheritanceHelper<I, Nil>;
 
 ### <a name="parameters"></a>Parametreler
 
-*I*  
+*I*<br/>
 Bir tür.
 
-*temel*  
+*temel*<br/>
 Başka bir tür.
 
 ## <a name="remarks"></a>Açıklamalar

@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6972d76127bccf839c7778e9050e11ec10b6ac2f
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 1e52d78de0026fa4a589877ee0a591da26107fde
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315255"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391552"
 ---
 # <a name="how-to-open-a-resource-script-file-outside-of-a-c-project-standalone"></a>Nasıl yapılır: C++ proje (tek başına) dışındaki kaynak betik dosyasını açın
 
@@ -74,5 +74,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kaynak dosyaları](../windows/resource-files-visual-studio.md)  
+[Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)

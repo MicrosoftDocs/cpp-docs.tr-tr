@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c51c8a5dc321d61b6167fb6a1e5b71d52145d81d
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 0bb329b60b72aae268252ae3ddbcc2c63d4a18f6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316958"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46389701"
 ---
 # <a name="toolbar-editor-c"></a>Araç çubuğu Düzenleyicisi (C++)
 
@@ -56,5 +56,5 @@ MFC veya ATL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kaynak Düzenleyicileri](../windows/resource-editors.md)  
+[Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
 [Menüler ve diğer kaynaklar](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

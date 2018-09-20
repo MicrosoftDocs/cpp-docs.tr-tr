@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a4f84684c5d8f8feb8595da628976c90a2593c96
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 80b8546e461930ac184e0f5b3ed2b34499cc8d3c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201357"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46384228"
 ---
 # <a name="range-c"></a>aralık (C++)
 
@@ -39,10 +39,10 @@ Bağımsız değişkenler veya değerleri çalışma zamanında ayarlanır alanl
 
 ### <a name="parameters"></a>Parametreler
 
-*Düşük*  
+*Düşük*<br/>
 Düşük aralık değeri.
 
-*Yüksek*  
+*Yüksek*<br/>
 Yüksek bir aralık değeri.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -80,7 +80,7 @@ __interface ICustom {
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Yöntem Öznitelikleri](../windows/method-attributes.md)  
-[Parametre Öznitelikleri](../windows/parameter-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Yöntem Öznitelikleri](../windows/method-attributes.md)<br/>
+[Parametre Öznitelikleri](../windows/parameter-attributes.md)<br/>
 [Veri Üyesi Öznitelikleri](../windows/data-member-attributes.md)  
