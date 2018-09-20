@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 775fbe39edc9478b1fce3afb39ee2bf1f6d5ed36
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 0c7ebdf83730b661cbd855ba730da1abeee936c5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714317"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46377077"
 ---
 # <a name="interface-class--c-component-extensions"></a>arabirim sınıfı (C++ Bileşen Uzantıları)
 
@@ -36,21 +36,21 @@ Bir arabirim bildirir.  Yerel arabirimleri hakkında daha fazla bilgi için bkz:
 ```cpp
 interface_access
 interface class
- name :  inherit_accessbase_interface{};interface_accessinterface structname :  inherit_accessbase_interface{};
+name :  inherit_accessbase_interface{};interface_accessinterface structname :  inherit_accessbase_interface{};
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*interface_access*  
+*interface_access*<br/>
 Bir arabirimin derleme dışından erişilebilirlik.  Olası değerler **genel** ve **özel**.  **özel** varsayılandır. İç içe geçmiş arabirimleri sahip bir *interface_access* tanımlayıcısı.
 
-*Adı*  
+*Adı*<br/>
 Arabirimin adı.
 
-*inherit_access*  
+*inherit_access*<br/>
 Erişilebilirliğini *base_interface*.  Yalnızca izin verilen erişilebilirlik için temel arabirim **genel** (varsayılan).
 
-*base_interface*  
+*base_interface*<br/>
 (İsteğe bağlı) Arabirim için temel bir arabirim *adı*.
 
 ### <a name="remarks"></a>Açıklamalar

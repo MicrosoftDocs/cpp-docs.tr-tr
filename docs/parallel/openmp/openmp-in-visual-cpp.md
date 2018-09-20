@@ -16,32 +16,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bfcf0d83aeffbb4f40e5786b867afcf87aa84cb
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 6905fd7db56fce26dee01ad5e1c69e89d439b436
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691150"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46428297"
 ---
 # <a name="openmp-in-visual-c"></a>Visual C++'da OpenMP
-OpenMP C ve C++ uygulaması program arabirimi etkili bir şekilde birden çok işlemci kullanacak uygulamaları yazmanızı sağlar. Visual C++ OpenMP 2.0 standart destekler.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Yönergeler](../../parallel/openmp/reference/openmp-directives.md)  
- OpenMP API çağrısında kullanılan yönergeleri bağlantılar sağlar.  
-  
- [Yan Tümceler](../../parallel/openmp/reference/openmp-clauses.md)  
- OpenMP API çağrısında kullanılan yan tümceleri bağlantılar sağlar.  
-  
- [Kitaplık Başvurusu](../../parallel/openmp/reference/openmp-library-reference.md)  
- OpenMP API çağrısında kullanılan yapılar bağlantılar sağlar.  
-  
- [C ve C++ uygulaması Program arabirimi](../../parallel/openmp/openmp-c-and-cpp-application-program-interface.md)  
- OpenMP C ve C++ API OpenMP mimarisi gözden geçirme Kurulunun sürüm 2.0 belirtiminden açıklandığı gibi açıklanır.  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [/openmp (OpenMP 2.0 Desteğini Etkinleştir)](../../build/reference/openmp-enable-openmp-2-0-support.md)  
- İşlenecek derleyici neden `#pragma omp`.  
-  
- [Önceden Tanımlanmış Makrolar](../../preprocessor/predefined-macros.md)  
- Önceden tanımlanmış ANSI C ve C++ Microsoft uygulaması makroları adları. _OPENMP makrosu bakın.
+
+OpenMP C ve C++ uygulaması program arabirimi etkili bir şekilde birden fazla işlemci kullanan uygulamalar yazmanıza olanak sağlar. Visual C++, OpenMP 2.0 standart destekler.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[Yönergeler](../../parallel/openmp/reference/openmp-directives.md)<br/>
+OpenMP API çağrısında kullanılan yönergelere bağlantılar sağlar.
+
+[Yan Tümceler](../../parallel/openmp/reference/openmp-clauses.md)<br/>
+Yan tümceleri OpenMP API çağrısında kullanılan bağlantılar sağlar.
+
+[Kitaplık Başvurusu](../../parallel/openmp/reference/openmp-library-reference.md)<br/>
+OpenMP API çağrısında kullanılan yapıları bağlantılar sağlar.
+
+[C ve C++ uygulaması Program arabirimi](../../parallel/openmp/openmp-c-and-cpp-application-program-interface.md)<br/>
+OpenMP C ve C++ API sürüm 2.0 belirtimi OpenMP mimarisini gözden geçirme panosundan açıklandığı gibi ele alınmaktadır.
+
+## <a name="related-sections"></a>İlgili Bölümler
+
+[/openmp (OpenMP 2.0 Desteğini Etkinleştir)](../../build/reference/openmp-enable-openmp-2-0-support.md)<br/>
+İşlenecek derleyicinin `#pragma omp`.
+
+[Önceden Tanımlanmış Makrolar](../../preprocessor/predefined-macros.md)<br/>
+Önceden tanımlanmış ANSI C ve Microsoft C++ uygulama makrolarını adları. _OPENMP makrosu bakın.

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e5f87a0daa13d26775f105b36a1fc076270af705
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: dd77ffd1f5757b87b210e94399945ea8e42d3e2b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608260"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435395"
 ---
 # <a name="mutextraitsunlock-method"></a>MutexTraits::Unlock Yöntemi
 
@@ -38,7 +38,7 @@ inline static void Unlock(
 
 ### <a name="parameters"></a>Parametreler
 
-*h*  
+*h*<br/>
 Mutex nesnesi için işler.
 
 ## <a name="return-value"></a>Dönüş Değeri

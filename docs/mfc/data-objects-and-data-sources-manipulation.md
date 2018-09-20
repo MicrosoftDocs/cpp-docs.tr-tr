@@ -22,81 +22,87 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f276e85be33f3042b19ab7dc6158a4e9f856fb2e
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: a5b44dd343c068a6a98765f9740dcd96b68bd323
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929867"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46415504"
 ---
 # <a name="data-objects-and-data-sources-manipulation"></a>Veri Nesneleri ve Veri Kaynakları: Düzenleme
-Bir veri nesnesi veya veri kaynağı oluşturulduktan sonra birkaç ortak işlem verileri ekleme ve kaldırma verileri, verilerin bulunduğu biçimleri numaralandırma gibi ve daha fazlasını gerçekleştirebilirsiniz. Bu makale, en yaygın işlemleri tamamlamak gerekli teknikleri açıklar. Konular şunlardır:  
-  
--   [Bir veri kaynağına veri ekleme](#_core_inserting_data_into_a_data_source)  
-  
--   [Bir veri nesnesi içinde kullanılabilir biçimleri belirleme](#_core_determining_the_formats_available_in_a_data_object)  
-  
--   [Bir veri nesnesinden veriyi geri alma](#_core_retrieving_data_from_a_data_object)  
-  
-##  <a name="_core_inserting_data_into_a_data_source"></a> Bir veri kaynağına veri ekleme  
- Veriler bir veri kaynağına nasıl eklenir olup verileri hemen sağlanır üzerinde bağlıdır veya isteğe bağlı ve hangi Orta sağlanır. Olanakları aşağıdaki gibidir.  
-  
-### <a name="supplying-data-immediately-immediate-rendering"></a>Sağlama verileri hemen (anlık görüntü oluşturma)  
-  
--   Çağrı `COleDataSource::CacheGlobalData` art arda içinde sağladığını veri her Pano biçimi. Kullanılmak üzere Pano biçimi geçirmek verileri içeren bellek için bir tanıtıcı ve isteğe bağlı olarak bir **FORMATETC** açıklayan veri yapısı.  
-  
-     veya  
-  
--   İle doğrudan çalışmak isterseniz **STGMEDIUM** yapıları çağırmanız `COleDataSource::CacheData` yerine `COleDataSource::CacheGlobalData` yukarıdaki seçeneği.  
-  
-### <a name="supplying-data-on-demand-delayed-rendering"></a>(Gecikmeli işleme) istek üzerine veri sağlama  
- Bu gelişmiş bir konudur.  
-  
--   Çağrı `COleDataSource::DelayRenderData` art arda içinde sağladığını veri her Pano biçimi. Kullanılacak Pano biçimi geçirmek ve isteğe bağlı olarak bir **FORMATETC** açıklayan veri yapısı. Verileri istendiğinde framework çağıracak `COleDataSource::OnRenderData`, hangi geçersiz kılmanız gerekir.  
-  
-     veya  
-  
--   Kullanırsanız, bir `CFile` veri sağlamak için nesne çağrısı `COleDataSource::DelayRenderFileData` yerine `COleDataSource::DelayRenderData` önceki seçeneği. Verileri istendiğinde framework çağıracak `COleDataSource::OnRenderFileData`, hangi geçersiz kılmanız gerekir.  
-  
-##  <a name="_core_determining_the_formats_available_in_a_data_object"></a> Bir veri nesnesi içinde kullanılabilir biçimleri belirleme  
- Bir uygulama veri yapıştırın kullanıcıya vermeden önce bunu işleyebileceği panoya biçimleri olup olmadığını bilmek ister. Bunu yapmak için uygulamanızın şunları yapmalıdır:  
-  
-1.  Oluşturma bir `COleDataObject` nesne ve **FORMATETC** yapısı.  
-  
-2.  Veri nesnesinin çağrı `AttachClipboard` Panodaki veriler veri nesnesi ilişkilendirmek için üye işlevi.  
-  
-3.  Aşağıdakilerden birini yapın:  
-  
-    -   Veri nesnesinin çağrı `IsDataAvailable` yalnızca bir veya iki biçimleri, üye işlevi gerekir. Bu durumlarda, Panodaki veriler uygulamanızı daha önemli ölçüde daha fazla destekler zaman kazanabilirsiniz.  
-  
-         veya  
-  
-    -   Veri nesnesinin çağrı `BeginEnumFormats` Pano'ya biçimlerinden numaralandırma başlatmak için üye işlevi. ' I çağırın `GetNextFormat` Pano dönene kadar uygulamanızın bir biçimini destekler veya daha fazla hiçbir biçimleri vardır.  
-  
- Kullanıyorsanız **on_update_command_uı**, yapıştırma ve muhtemelen Düzenle menüsündeki Özel Yapıştır öğeleri artık etkinleştirebilirsiniz. Bunu yapmak için ya da çağrısı `CMenu::EnableMenuItem` veya `CCmdUI::Enable`. Hangi kapsayıcı hakkında daha fazla bilgi için uygulamaları menü öğeleriyle yapın ve gerekir, gördüğünüzde [menüler ve kaynaklar: kapsayıcı ekleme](../mfc/menus-and-resources-container-additions.md).  
-  
-##  <a name="_core_retrieving_data_from_a_data_object"></a> Bir veri nesnesinden veriyi geri alma  
- Veri biçimi karar verdikten sonra kalan tek şey veri nesnesinden verileri almak üzere. Bunu yapmak için kullanıcı verileri nereye karar ve uygulama uygun işlevi çağırır. Veriler aşağıdaki ortamlarının birinde kullanılabilir:  
-  
-|Orta|Çağrılacak işlevi|  
-|------------|----------------------|  
-|Genel bellek (`HGLOBAL`)|`COleDataObject::GetGlobalData`|  
-|Dosya (`CFile`)|`COleDataObject::GetFileData`|  
-|**STGMEDIUM** yapısı (`IStorage`)|`COleDataObject::GetData`|  
-  
- Genellikle, Orta, Pano biçimi birlikte belirtilir. Örneğin, bir **CF_EMBEDDEDSTRUCT** nesne içinde her zaman bir `IStorage` gerektirir Orta bir **STGMEDIUM** yapısı. Bu nedenle, kullanacağınız `GetData` kabul edebilir bu işlevler yalnızca biri olduğundan bir **STGMEDIUM** yapısı.  
-  
- Pano biçimi olduğu durumlarda bir `IStream` veya `HGLOBAL` framework Orta, sağlayabilen bir `CFile` verilere başvuruda işaretçi. Uygulama daha sonra dosya bir dosyadan veri alabilir gibi aynı şekilde çok veri almak için okuma kullanabilirsiniz. Esas olarak, bu istemci tarafı için arabirimidir `OnRenderData` ve `OnRenderFileData` veri kaynağındaki yordamları.  
-  
- Kullanıcı verileri belgeye Ekle aynı biçimde diğer verilerin için olduğu gibi artık açabilir.  
-  
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Sürükleme ve bırakma](../mfc/drag-and-drop-ole.md)  
-  
--   [Pano](../mfc/clipboard.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri nesneleri ve veri kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md)   
- [COleDataObject sınıfı](../mfc/reference/coledataobject-class.md)   
- [COleDataSource Sınıfı](../mfc/reference/coledatasource-class.md)
+
+Bir veri nesnesi veya veri kaynağı oluşturulduktan sonra ekleme ve kaldırma verileri, verilerin bulunduğu biçimleri numaralandırma gibi verileri ve daha fazla yaygın işlemlerin sayısı gerçekleştirebilirsiniz. Bu makalede, en yaygın işlemlerin tamamlanması gereken teknikleri açıklar. Konular şunlardır:
+
+- [Bir veri kaynağına veri ekleme](#_core_inserting_data_into_a_data_source)
+
+- [Bir veri nesnesi içinde kullanılabilir biçimleri belirleme](#_core_determining_the_formats_available_in_a_data_object)
+
+- [Bir veri nesnesinden veriyi geri alma](#_core_retrieving_data_from_a_data_object)
+
+##  <a name="_core_inserting_data_into_a_data_source"></a> Bir veri kaynağına veri ekleme
+
+Veriler bir veri kaynağına nasıl eklenir olup verileri hemen sağlanan üzerinde bağlıdır veya isteğe bağlı ve hangi ortamda sağlanır. Olasılık aşağıdaki gibidir.
+
+### <a name="supplying-data-immediately-immediate-rendering"></a>Hemen veri (anlık görüntü oluşturma) sağlama
+
+- Çağrı `COleDataSource::CacheGlobalData` art arda içinde sağladığınız verileri her Pano biçimi. Kullanılacak, Pano biçimi geçirmek verileri içeren bellek için bir tanıtıcı ve isteğe bağlı olarak bir **FORMATETC** açıklayan veri yapısı.
+
+     veya
+
+- İle doğrudan çalışmak istiyorsanız **STGMEDIUM** yapıları çağırmanızı `COleDataSource::CacheData` yerine `COleDataSource::CacheGlobalData` yukarıdaki seçeneği.
+
+### <a name="supplying-data-on-demand-delayed-rendering"></a>Verileri isteğe bağlı (Gecikmeli işleme) sağlama
+
+Bu gelişmiş bir konudur.
+
+- Çağrı `COleDataSource::DelayRenderData` art arda içinde sağladığınız verileri her Pano biçimi. Pano biçimi kullanılacak geçirin ve isteğe bağlı olarak bir **FORMATETC** açıklayan veri yapısı. Veri istendiğinde, çerçeve çağıracak `COleDataSource::OnRenderData`, hangi geçersiz kılmanız gerekir.
+
+     veya
+
+- Kullanıyorsanız bir `CFile` veri sağlamak için nesne çağrısı `COleDataSource::DelayRenderFileData` yerine `COleDataSource::DelayRenderData` önceki seçeneği. Veri istendiğinde, çerçeve çağıracak `COleDataSource::OnRenderFileData`, hangi geçersiz kılmanız gerekir.
+
+##  <a name="_core_determining_the_formats_available_in_a_data_object"></a> Bir veri nesnesi içinde kullanılabilir biçimleri belirleme
+
+Bir uygulama veri yapıştırın kullanıcıya vermeden önce işleyebileceği panoya biçimleri olup olmadığını bilmek ister. Bunu yapmak için uygulamanızı şunları yapmalıdır:
+
+1. Oluşturma bir `COleDataObject` nesnesi ve bir **FORMATETC** yapısı.
+
+1. Veri nesnesinin çağrı `AttachClipboard` Panodaki veriler veri nesnesi ilişkilendirmek için üye işlevi.
+
+1. Aşağıdakilerden birini yapın:
+
+   - Veri nesnesinin çağrı `IsDataAvailable` üye işlevi, yalnızca bir veya iki biçimler gerekir. Bu durumda burada Panodaki veriler, uygulamanızın daha önemli ölçüde daha fazla destekler zaman kazanabilirsiniz.
+
+         -or-
+
+   - Veri nesnesinin çağrı `BeginEnumFormats` panoya biçimlerinden numaralandırma başlatmak için üye işlevi. Ardından çağırın `GetNextFormat` Pano dönene kadar uygulamanızın bir biçimini destekler veya daha fazla hiçbir biçimi vardır.
+
+Kullanıyorsanız **on_update_command_uı**, yapıştırma ve muhtemelen, Düzen menüsündeki Özel Yapıştır öğeler artık etkinleştirebilirsiniz. Bunu yapmak için çağırın ya da `CMenu::EnableMenuItem` veya `CCmdUI::Enable`. Hangi kapsayıcı hakkında daha fazla bilgi için uygulamalar ile menü öğesi yapın ve gerekir, bkz [menüler ve kaynaklar: kapsayıcı ekleme](../mfc/menus-and-resources-container-additions.md).
+
+##  <a name="_core_retrieving_data_from_a_data_object"></a> Bir veri nesnesinden veriyi geri alma
+
+Veri biçimi verdikten sonra kalan tek şey veri nesneden verileri almak üzere. Bunu yapmak için kullanıcı verileri nereye karar ve uygulama uygun işlevi çağırır. Veriler aşağıdaki ortamları birinde kullanılabilir olacak:
+
+|Orta|Çağrılacak işlevi|
+|------------|----------------------|
+|Genel bellek (`HGLOBAL`)|`COleDataObject::GetGlobalData`|
+|Dosya (`CFile`)|`COleDataObject::GetFileData`|
+|**STGMEDIUM** yapısı (`IStorage`)|`COleDataObject::GetData`|
+
+Yaygın olarak, ortam, Pano biçimi ile birlikte belirtilir. Örneğin, bir **CF_EMBEDDEDSTRUCT** nesnesi içinde her zaman bir `IStorage` gerektiren Orta bir **STGMEDIUM** yapısı. Bu nedenle, kullanacağınız `GetData` kabul edebilen bu işlevler yalnızca biri olduğundan bir **STGMEDIUM** yapısı.
+
+Pano biçimi olduğu durumlarda bir `IStream` veya `HGLOBAL` Orta, çerçeve sağlayabilir bir `CFile` verilerine başvuran bir işaretçi. Uygulama, daha sonra dosya okuma gibi bir dosyadan veri içeri aktarabilir verilerin aynı şekilde almak için kullanabilirsiniz. Esas olarak, istemci tarafı arabirimi budur `OnRenderData` ve `OnRenderFileData` veri kaynağındaki yordamları.
+
+Belgeye verileri Ekle, diğer tüm veriler aynı biçimde için olduğu gibi artık kullanıcı geçirebilirsiniz.
+
+### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Sürükle ve bırak](../mfc/drag-and-drop-ole.md)
+
+- [Pano](../mfc/clipboard.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Veri Nesneleri ve Veri Kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md)<br/>
+[COleDataObject Sınıfı](../mfc/reference/coledataobject-class.md)<br/>
+[COleDataSource Sınıfı](../mfc/reference/coledatasource-class.md)

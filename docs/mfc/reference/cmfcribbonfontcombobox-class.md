@@ -32,208 +32,230 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79facf2498769c0f4385f6dbc84133c3773fe0e7
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 50094e9caaf712588c12a259f4886360374e430e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45705711"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46376793"
 ---
 # <a name="cmfcribbonfontcombobox-class"></a>CMFCRibbonFontComboBox sınıfı
-Yazı tiplerinin bir listesini içeren bir birleşik giriş kutusu uygular. Bir Şerit panel üzerine birleşik giriş kutusu yerleştirin.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CMFCRibbonFontComboBox : public CMFCRibbonComboBox  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`CMFCRibbonFontComboBox::~CMFCRibbonFontComboBox`|Yıkıcı.|  
-  
-### <a name="protected-constructors"></a>Korumalı Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CMFCRibbonFontComboBox::CMFCRibbonFontComboBox](#cmfcribbonfontcombobox)|Oluşturur ve başlatır bir `CMFCRibbonFontComboBox` nesne.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CMFCRibbonFontComboBox::BuildFonts](#buildfonts)|Şerit yazı tipi birleşik giriş kutusunun yazı tipleri ile belirtilen yazı tipi, karakter kümesi aralığı ve ailesi doldurur.|  
-|`CMFCRibbonFontComboBox::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|  
-|[CMFCRibbonFontComboBox::GetCharSet](#getcharset)|Belirtilen karakter kümesini döndürür.|  
-|[CMFCRibbonFontComboBox::GetFontDesc](#getfontdesc)||  
-|[CMFCRibbonFontComboBox::GetFontType](#getfonttype)|Birleşik giriş kutusu içinde görüntülemek için hangi yazıtiplerini döndürür. DEVICE_FONTTYPE, RASTER_FONTTYPE ve TRUETYPE_FONTTYPE ya da bir bit düzeyinde birleşimlere geçerli seçenekler şunlardır.|  
-|[CMFCRibbonFontComboBox::GetPitchAndFamily](#getpitchandfamily)|Aralık ve birleşik giriş kutusunda görüntülenen yazı tipi ailesi döndürür.|  
-|`CMFCRibbonFontComboBox::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|  
-|[CMFCRibbonFontComboBox::RebuildFonts](#rebuildfonts)|Şerit yazı tipi birleşik giriş kutusunun yazı tipleri ile daha önce belirtilen yazı tipi, karakter kümesi aralığı ve ailesi doldurur.|  
-|[CMFCRibbonFontComboBox::SetFont](#setfont)|Belirtilen yazı tipi birleşik giriş kutusunda seçer.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Oluşturduktan sonra bir `CMFCRibbonFontComboBox` nesne, çağırarak bir Şerit paneline Ekle [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)  
-  
- [CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md)  
-  
- [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md)  
-  
- [CMFCRibbonComboBox](../../mfc/reference/cmfcribboncombobox-class.md)  
-  
- [CMFCRibbonFontComboBox](../../mfc/reference/cmfcribbonfontcombobox-class.md)  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxRibbonComboBox.h  
-  
-##  <a name="buildfonts"></a>  CMFCRibbonFontComboBox::BuildFonts  
- Yazı tipleri ile Şerit birleşik giriş kutusunu doldurur.  
-  
-```  
+
+Yazı tiplerinin bir listesini içeren bir birleşik giriş kutusu uygular. Bir Şerit panel üzerine birleşik giriş kutusu yerleştirin.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CMFCRibbonFontComboBox : public CMFCRibbonComboBox
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`CMFCRibbonFontComboBox::~CMFCRibbonFontComboBox`|Yıkıcı.|
+
+### <a name="protected-constructors"></a>Korumalı Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CMFCRibbonFontComboBox::CMFCRibbonFontComboBox](#cmfcribbonfontcombobox)|Oluşturur ve başlatır bir `CMFCRibbonFontComboBox` nesne.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CMFCRibbonFontComboBox::BuildFonts](#buildfonts)|Şerit yazı tipi birleşik giriş kutusunun yazı tipleri ile belirtilen yazı tipi, karakter kümesi aralığı ve ailesi doldurur.|
+|`CMFCRibbonFontComboBox::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|
+|[CMFCRibbonFontComboBox::GetCharSet](#getcharset)|Belirtilen karakter kümesini döndürür.|
+|[CMFCRibbonFontComboBox::GetFontDesc](#getfontdesc)||
+|[CMFCRibbonFontComboBox::GetFontType](#getfonttype)|Birleşik giriş kutusu içinde görüntülemek için hangi yazıtiplerini döndürür. DEVICE_FONTTYPE, RASTER_FONTTYPE ve TRUETYPE_FONTTYPE ya da bir bit düzeyinde birleşimlere geçerli seçenekler şunlardır.|
+|[CMFCRibbonFontComboBox::GetPitchAndFamily](#getpitchandfamily)|Aralık ve birleşik giriş kutusunda görüntülenen yazı tipi ailesi döndürür.|
+|`CMFCRibbonFontComboBox::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|
+|[CMFCRibbonFontComboBox::RebuildFonts](#rebuildfonts)|Şerit yazı tipi birleşik giriş kutusunun yazı tipleri ile daha önce belirtilen yazı tipi, karakter kümesi aralığı ve ailesi doldurur.|
+|[CMFCRibbonFontComboBox::SetFont](#setfont)|Belirtilen yazı tipi birleşik giriş kutusunda seçer.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Oluşturduktan sonra bir `CMFCRibbonFontComboBox` nesne, çağırarak bir Şerit paneline Ekle [CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+[CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)
+
+[CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md)
+
+[CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md)
+
+[CMFCRibbonComboBox](../../mfc/reference/cmfcribboncombobox-class.md)
+
+[CMFCRibbonFontComboBox](../../mfc/reference/cmfcribbonfontcombobox-class.md)
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxRibbonComboBox.h
+
+##  <a name="buildfonts"></a>  CMFCRibbonFontComboBox::BuildFonts
+
+Yazı tipleri ile Şerit birleşik giriş kutusunu doldurur.
+
+```
 void BuildFonts(
-    int nFontType = DEVICE_FONTTYPE | RASTER_FONTTYPE | TRUETYPE_FONTTYPE,  
-    BYTE nCharSet = DEFAULT_CHARSET,  
+    int nFontType = DEVICE_FONTTYPE | RASTER_FONTTYPE | TRUETYPE_FONTTYPE,
+    BYTE nCharSet = DEFAULT_CHARSET,
     BYTE nPitchAndFamily = DEFAULT_PITCH);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *nFontType*<br/>
-[in] Yazı tipi eklemek için yazı tipini belirtir.  
-  
+[in] Yazı tipi eklemek için yazı tipini belirtir.
+
 *nCharSet*<br/>
-[in] Eklenecek yazı tiplerinin karakter kümesini belirtir.  
-  
+[in] Eklenecek yazı tiplerinin karakter kümesini belirtir.
+
 *nPitchAndFamily*<br/>
-[in] Eklenecek yazı tipi ailesi ve sıklıktaki değişimi belirtir.  
-  
-##  <a name="cmfcribbonfontcombobox"></a>  CMFCRibbonFontComboBox::CMFCRibbonFontComboBox  
- Oluşturur ve başlatır bir [CMFCRibbonFontComboBox](../../mfc/reference/cmfcribbonfontcombobox-class.md) nesne.  
-  
-```  
+[in] Eklenecek yazı tipi ailesi ve sıklıktaki değişimi belirtir.
+
+##  <a name="cmfcribbonfontcombobox"></a>  CMFCRibbonFontComboBox::CMFCRibbonFontComboBox
+
+Oluşturur ve başlatır bir [CMFCRibbonFontComboBox](../../mfc/reference/cmfcribbonfontcombobox-class.md) nesne.
+
+```
 CMFCRibbonFontComboBox(
-    UINT nID,  
-    int nFontType = DEVICE_FONTTYPE | RASTER_FONTTYPE | TRUETYPE_FONTTYPE,  
-    BYTE nCharSet = DEFAULT_CHARSET,  
-    BYTE nPitchAndFamily = DEFAULT_PITCH,  
+    UINT nID,
+    int nFontType = DEVICE_FONTTYPE | RASTER_FONTTYPE | TRUETYPE_FONTTYPE,
+    BYTE nCharSet = DEFAULT_CHARSET,
+    BYTE nPitchAndFamily = DEFAULT_PITCH,
     int nWidth = -1);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *nID*<br/>
-[in] Kullanıcı birleşik giriş kutusundan bir öğe seçtiğinde yürüten komutu komut kimliği.  
-  
+[in] Kullanıcı birleşik giriş kutusundan bir öğe seçtiğinde yürüten komutu komut kimliği.
+
 *nFontType*<br/>
-[in] Yazı tipi birleşik giriş kutusunda görüntülenecek türlerini belirtir. DEVICE_FONTTYPE, RASTER_FONTTYPE ve TRUETYPE_FONTTYPE ya da bir bit düzeyinde birleşimlere geçerli seçenekler şunlardır.  
-  
+[in] Yazı tipi birleşik giriş kutusunda görüntülenecek türlerini belirtir. DEVICE_FONTTYPE, RASTER_FONTTYPE ve TRUETYPE_FONTTYPE ya da bir bit düzeyinde birleşimlere geçerli seçenekler şunlardır.
+
 *nCharSet*<br/>
-[in] Yazı tipi birleşik giriş kutusunda belirtilen karakter kümesine ait olanlar filtreler...  
-  
+[in] Yazı tipi birleşik giriş kutusunda belirtilen karakter kümesine ait olanlar filtreler...
+
 *nPitchAndFamily*<br/>
-[in] Aralık ve birleşik giriş kutusunda görüntülenen yazı tipi ailesini belirtir.  
-  
+[in] Aralık ve birleşik giriş kutusunda görüntülenen yazı tipi ailesini belirtir.
+
 *nWidth*<br/>
-[in] Birleşik giriş kutusu piksel cinsinden genişliğini belirtir.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Olası hakkında daha fazla bilgi için *nFontType* parametre değerleri görmek [EnumFontFamProc](https://msdn.microsoft.com/library/windows/desktop/dd162621) Windows SDK belgelerinde.  
-  
- Atanabilir geçerli karakter kümeleri hakkında daha fazla bilgi için *nCharSet*ve atanabilir geçerli değerleri *nPitchAndFamily*, bkz: [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) içinde Windows SDK Belgeleri.  
-  
-##  <a name="getfontdesc"></a>  CMFCRibbonFontComboBox::GetFontDesc  
- Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
-  
-```  
-const CMFCFontInfo* GetFontDesc(int iIndex = -1) const;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- [in] *İIndex*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="rebuildfonts"></a>  CMFCRibbonFontComboBox::RebuildFonts  
- Yazı tipleri ile Şerit birleşik giriş kutusunu bir daha önce belirtilen yazı tipi, karakter kümesi aralığı ve ailesi doldurur.  
-  
-```  
+[in] Birleşik giriş kutusu piksel cinsinden genişliğini belirtir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Olası hakkında daha fazla bilgi için *nFontType* parametre değerleri görmek [EnumFontFamProc](https://msdn.microsoft.com/library/windows/desktop/dd162621) Windows SDK belgelerinde.
+
+Atanabilir geçerli karakter kümeleri hakkında daha fazla bilgi için *nCharSet*ve atanabilir geçerli değerleri *nPitchAndFamily*, bkz: [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) içinde Windows SDK Belgeleri.
+
+##  <a name="getfontdesc"></a>  CMFCRibbonFontComboBox::GetFontDesc
+
+Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
+
+```
+const CMFCFontInfo* GetFontDesc(int iIndex = -1) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
+[in] *İIndex*
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="rebuildfonts"></a>  CMFCRibbonFontComboBox::RebuildFonts
+
+Yazı tipleri ile Şerit birleşik giriş kutusunu bir daha önce belirtilen yazı tipi, karakter kümesi aralığı ve ailesi doldurur.
+
+```
 void RebuildFonts();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Yazı tipi, karakter kümesini belirtebilirsiniz ve aralık ve Şerit yazı tipi birleşik giriş eklenecek yazı tipi ailesi kutusunda [Oluşturucusu](#cmfcribbonfontcombobox) bu sınıfın veya çağırarak [CMFCRibbonFontComboBox::BuildFonts](#buildfonts).  
-  
-##  <a name="setfont"></a>  CMFCRibbonFontComboBox::SetFont  
- Belirtilen yazı tipi birleşik giriş kutusunda seçer.  
-  
-```  
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Yazı tipi, karakter kümesini belirtebilirsiniz ve aralık ve Şerit yazı tipi birleşik giriş eklenecek yazı tipi ailesi kutusunda [Oluşturucusu](#cmfcribbonfontcombobox) bu sınıfın veya çağırarak [CMFCRibbonFontComboBox::BuildFonts](#buildfonts).
+
+##  <a name="setfont"></a>  CMFCRibbonFontComboBox::SetFont
+
+Belirtilen yazı tipi birleşik giriş kutusunda seçer.
+
+```
 BOOL SetFont(
-    LPCTSTR lpszName,  
-    BYTE nCharSet = DEFAULT_CHARSET,  
+    LPCTSTR lpszName,
+    BYTE nCharSet = DEFAULT_CHARSET,
     BOOL bExact = FALSE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- ' lpszName *  
- Seçmek için yazı tipinin adını belirtir.  
-  
- *nCharSet*  
- Karakter kümesi için seçili yazı tipini belirtir.  
-  
- *bExact*  
- Karakter kümesi bir yazı tipi seçerken eşleşmesi gerektiğini belirtmek için TRUE; Karakter kümesi belirtmek için yanlış bir yazı tipi seçerken yoksayılabilir.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen yazı tipi bulundu ve seçili olursa sıfır dışı; Aksi takdirde sıfır.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getcharset"></a>  CMFCRibbonFontComboBox::GetCharSet  
- Belirtilen karakter kümesini döndürür.  
-  
-```  
-BYTE GetCharSet() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- (Windows SDK belgelerinde LOGFONT bakın) karakter kümesi.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getfonttype"></a>  CMFCRibbonFontComboBox::GetFontType  
- Birleşik giriş kutusu içinde görüntülemek için hangi yazıtiplerini döndürür. DEVICE_FONTTYPE, RASTER_FONTTYPE ve TRUETYPE_FONTTYPE ya da bir bit düzeyinde birleşimlere geçerli seçenekler şunlardır.  
-  
-```  
-int GetFontType() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Yazı tipi türleri (Windows SDK belgelerinde EnumFontFamProc bakın).  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getpitchandfamily"></a>  CMFCRibbonFontComboBox::GetPitchAndFamily  
- Aralık ve birleşik giriş kutusunda görüntülenen yazı tipi ailesi döndürür.  
-  
-```  
-BYTE GetPitchAndFamily() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Aralık ve ailesi (Windows SDK belgelerinde LOGFONT bakın).  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMFCRibbonComboBox Sınıfı](../../mfc/reference/cmfcribboncombobox-class.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+' lpszName * seçmek için yazı tipinin adını belirtir.
+
+*nCharSet*<br/>
+Karakter kümesi için seçili yazı tipini belirtir.
+
+*bExact*<br/>
+Karakter kümesi bir yazı tipi seçerken eşleşmesi gerektiğini belirtmek için TRUE; Karakter kümesi belirtmek için yanlış bir yazı tipi seçerken yoksayılabilir.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Belirtilen yazı tipi bulundu ve seçili olursa sıfır dışı; Aksi takdirde sıfır.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="getcharset"></a>  CMFCRibbonFontComboBox::GetCharSet
+
+Belirtilen karakter kümesini döndürür.
+
+```
+BYTE GetCharSet() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+(Windows SDK belgelerinde LOGFONT bakın) karakter kümesi.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="getfonttype"></a>  CMFCRibbonFontComboBox::GetFontType
+
+Birleşik giriş kutusu içinde görüntülemek için hangi yazıtiplerini döndürür. DEVICE_FONTTYPE, RASTER_FONTTYPE ve TRUETYPE_FONTTYPE ya da bir bit düzeyinde birleşimlere geçerli seçenekler şunlardır.
+
+```
+int GetFontType() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Yazı tipi türleri (Windows SDK belgelerinde EnumFontFamProc bakın).
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="getpitchandfamily"></a>  CMFCRibbonFontComboBox::GetPitchAndFamily
+
+Aralık ve birleşik giriş kutusunda görüntülenen yazı tipi ailesi döndürür.
+
+```
+BYTE GetPitchAndFamily() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Aralık ve ailesi (Windows SDK belgelerinde LOGFONT bakın).
+
+### <a name="remarks"></a>Açıklamalar
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
+[CMFCRibbonComboBox Sınıfı](../../mfc/reference/cmfcribboncombobox-class.md)

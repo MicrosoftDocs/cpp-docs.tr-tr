@@ -1,5 +1,5 @@
 ---
-title: Paralel bölümleri belirtme A.8 | Microsoft Docs
+title: A.8 paralel bölümleri belirtme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,24 +12,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acb28f4e7e99ea09696d116ab031778fcf9ff919
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 9d969f1a0e9d9b282104ee00a3b2d06610533ad4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33694062"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46440426"
 ---
 # <a name="a8---specifying-parallel-sections"></a>A.8   Paralel Bölümleri Belirtme
-Aşağıdaki örnekte, (için [bölüm 2.4.2](../../parallel/openmp/2-4-2-sections-construct.md) sayfasında 14) işlevleri *xaxis*, *yaxis*, ve *zaxis* aynı anda çalıştırılabilecek. İlk `section` yönergesi isteğe bağlıdır.  Unutmayın tüm `section` yönergeleri gereksinim içinde sözcük kapsamını görünmesi `parallel sections` oluşturun.  
-  
-```  
-#pragma omp parallel sections  
-{  
-    #pragma omp section  
-        xaxis();  
-    #pragma omp section  
-        yaxis();  
-    #pragma omp section  
-        zaxis();  
-}  
+
+Aşağıdaki örnekte, (için [bölümü 2.4.2](../../parallel/openmp/2-4-2-sections-construct.md) sayfasında 14) işlevleri *xaxis*, *yaxis*, ve *zaxis* eşzamanlı olarak yürütülebilir. İlk `section` yönergesi, isteğe bağlıdır.  Unutmayın tüm `section` sözcük kapsamı içinde görünür gereken yönergeleri `parallel sections` oluşturun.
+
+```
+#pragma omp parallel sections
+{
+    #pragma omp section
+        xaxis();
+    #pragma omp section
+        yaxis();
+    #pragma omp section
+        zaxis();
+}
 ```

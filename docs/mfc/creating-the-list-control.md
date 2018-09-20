@@ -15,33 +15,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42457e223bb7e12da64be54d757e05d0bac3a028
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c0586b28d2a772456d7efc8068b171bf37c9ba41
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342052"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420783"
 ---
 # <a name="creating-the-list-control"></a>Liste Denetimi Oluşturma
-Listenin nasıl kontrol ([CListCtrl](../mfc/reference/clistctrl-class.md)) oluşturulan denetimi kullanarak doğrudan mı sınıfını kullanarak üzerinde bağlıdır [CListView](../mfc/reference/clistview-class.md) yerine. Kullanırsanız `CListView`, çerçeve, belge/görünüm oluşturma dizisi bir parçası olarak görünümü oluşturur. Liste görünümü oluşturma (ikisi de aynı olan) liste denetimi de oluşturur. Denetim görünümün içinde oluşturulan [OnCreate](../mfc/reference/cwnd-class.md#oncreate) işleyici işlevi. Bu durumda, Denetim çağrısıyla öğeler eklemek hazır [GetListCtrl](../mfc/reference/clistview-class.md#getlistctrl).  
-  
-### <a name="to-use-clistctrl-directly-in-a-dialog-box"></a>CListCtrl doğrudan iletişim kutusunda kullanmak için  
-  
-1.  İletişim kutusu Düzenleyicisi'nde, liste denetimi, iletişim şablon kaynağı ekleyin. Denetim kimliği belirtin.  
-  
-2.  Kullanım [üye değişkeni Ekleme Sihirbazı'nı](../ide/adding-a-member-variable-visual-cpp.md) türündeki üye değişkeni eklemek için `CListCtrl` denetim özelliğine sahip. Bu üye çağırmak için kullanabileceğiniz `CListCtrl` üye işlevleri.  
-  
-3.  Tanıtıcı gereken herhangi bir liste denetimi bildirim iletileri için iletişim kutusu sınıfı işleyici işlevlerde eşlemek için Özellikler penceresini kullanın (bkz [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md)).  
-  
-4.  İçinde [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog), stilleri ayarlama `CListCtrl`. Bkz: [liste denetim stillerini değiştirme](../mfc/changing-list-control-styles.md). Görünümü daha sonra değiştirebilirsiniz, ancak bu tür bir "denetiminde alma Görünüm" belirler.  
-  
-### <a name="to-use-clistctrl-in-a-nondialog-window"></a>CListCtrl nondialog penceresinde kullanmak için  
-  
-1.  Denetim görünüm veya penceresi sınıfında tanımlayın.  
-  
-2.  Denetimin çağrısı [oluşturma](../mfc/reference/clistctrl-class.md#create) üye işlev, büyük olasılıkla buna [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate), büyük olasılıkla, üst pencerenin olabildiğince erken [OnCreate](../mfc/reference/cwnd-class.md#oncreate) (kullanıcısıysanız işleyici işlevi denetimini alt sınıf yapma). Denetimi için stiller ayarlayın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CListCtrl kullanma](../mfc/using-clistctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Listenin nasıl kontrol ([CListCtrl](../mfc/reference/clistctrl-class.md)) oluşturulur, denetimi kullanarak, doğrudan veya sınıfını kullanarak üzerinde bağlıdır [CListView](../mfc/reference/clistview-class.md) yerine. Kullanırsanız `CListView`, framework görünüm, belge/görünüm oluşturma dizisinin bir parçası oluşturur. Liste görünümü oluşturma (ikisi de aynı olan) listesi denetimi de oluşturur. Görünüme ait denetim oluşturulur [OnCreate](../mfc/reference/cwnd-class.md#oncreate) işleyicisi işlevi. Bu durumda, denetim için bir çağrı yoluyla bir öğe eklemek hazır [GetListCtrl](../mfc/reference/clistview-class.md#getlistctrl).
+
+### <a name="to-use-clistctrl-directly-in-a-dialog-box"></a>CListCtrl doğrudan iletişim kutusunda kullanmak için
+
+1. İletişim kutusu Düzenleyicisi'nde iletişim şablonu kaynağınıza liste denetimi ekleyin. Denetim kimliğini belirtin
+
+1. Kullanım [üye değişkeni Ekleme Sihirbazı'nı](../ide/adding-a-member-variable-visual-cpp.md) türündeki üye değişkeni eklemek için `CListCtrl` denetimi özelliğine sahip. Bu üye çağırmak için kullanabileceğiniz `CListCtrl` üye işlevleri.
+
+1. Özellikler penceresinde, herhangi bir liste denetimi bildirim iletileri için iletişim kutusu sınıfı işleyici işlevleri eşleştirmek için gereken işlemek için kullanın (bkz [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md)).
+
+1. İçinde [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog), stillerini ayarlama `CListCtrl`. Bkz: [liste denetim stillerini değiştirme](../mfc/changing-list-control-styles.md). Görünüm daha sonra değiştirebilirsiniz ancak bu "Görünüm denetiminde Al" türünü belirler.
+
+### <a name="to-use-clistctrl-in-a-nondialog-window"></a>CListCtrl nondialog penceresinde kullanmak için
+
+1. Denetim görünüm veya pencere sınıfı tanımlayın.
+
+1. Denetimin çağrı [Oluştur](../mfc/reference/clistctrl-class.md#create) üye işlev, büyük olasılıkla buna [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate), büyük olasılıkla, ana pencerenin olabildiğince erken [OnCreate](../mfc/reference/cwnd-class.md#oncreate) (kullanıcısıysanız işleyici işlevi denetimini alt sınıf yapma). Denetimi için stiller ayarlayın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CListCtrl Kullanma](../mfc/using-clistctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

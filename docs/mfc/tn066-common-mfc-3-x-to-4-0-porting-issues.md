@@ -18,17 +18,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d7e439224357f5c352fa96c06cfde639c413655
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a25bb22dcd809c199bf00f57137208141627a434
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381796"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46421875"
 ---
 # <a name="tn066-common-mfc-3x-to-40-porting-issues"></a>TN066: Genel MFC 3.x - 4.0 Bağlantı Noktası Oluşturma Sorunları
-MFC ile yazılmış bir uygulama bağlantı noktası çalışırken oluşabilecek en sık karşılaşılan bu Teknik Not açıklandığı 3.x (Visual C++ ile dahil MFC 2.x) MFC 4.0.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+
+Bu teknik Not MFC ile yazılmış bir uygulama bağlantı noktası çalışırken oluşabilecek en yaygın sorunlar açıklanan 3.x (Visual C++ ile eklenen MFC 2.x) MFC 4.0.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2cc6b296684c13c2cf9c538a226fb440a2e50349
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 121d3bf1fd7d59f36362a034216e0728b2fc25b0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599269"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448356"
 ---
 # <a name="generics--c-component-extensions"></a>Genel Türler (C++ Bileşen Uzantıları)
 
@@ -33,35 +33,35 @@ Genel türler parametreli türler ve yöntemlerin ' dir. Bu bölümde, Windows �
 
 ### <a name="supported-by-the-windows-runtime-and-the-common-language-runtime"></a>Windows çalışma zamanı ve ortak dil çalışma zamanı tarafından desteklenen
 
-[Visual C++'de Genel Türlere Genel Bakış](../windows/overview-of-generics-in-visual-cpp.md)  
+[Visual C++'de Genel Türlere Genel Bakış](../windows/overview-of-generics-in-visual-cpp.md)<br/>
 Genel türler hakkında bilgi olan, dil özelliği, genel türler ve kullanımı hakkında genel türler için tür parametreleri olarak bilgi başvuru türleri ve değer türleri tanımlamak için kullanılan terimlerin tanımları için motivasyon.
 
-[Genel Arabirimler (Visual C++)](../windows/generic-interfaces-visual-cpp.md)  
+[Genel Arabirimler (Visual C++)](../windows/generic-interfaces-visual-cpp.md)<br/>
 Genel arabirimleri tanımlama ve kullanma hakkında bilgiler.
 
-[Genel Temsilciler (Visual C++)](../windows/generic-delegates-visual-cpp.md)  
+[Genel Temsilciler (Visual C++)](../windows/generic-delegates-visual-cpp.md)<br/>
 Tanımlama ve genel temsilcileri kullanma hakkında bilgiler.
 
-[Genel Tür Parametrelerindeki Kısıtlamalar (C++/CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)  
+[Genel Tür Parametrelerindeki Kısıtlamalar (C++/CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)<br/>
 Sınırlamalar genel türleri kullanma hakkında bilgiler.
 
-[Genel Türleri Kullanma (C++/CLI)](../windows/consuming-generics-cpp-cli.md)  
+[Genel Türleri Kullanma (C++/CLI)](../windows/consuming-generics-cpp-cli.md)<br/>
 .NET derlemeleri, büyük olasılıkla Visual C++'ta diğer dillerde yazılmış tanımlanan genel türler kullanma hakkında bilgiler.
 
-[Genel Türler ve Temsilciler (Visual C++)](../windows/generics-and-templates-visual-cpp.md)  
+[Genel Türler ve Temsilciler (Visual C++)](../windows/generics-and-templates-visual-cpp.md)<br/>
 Genel türler ve Temsilciler, her ve nasıl usefully birleştirileceğini olduğunda karşılaştırması.
 
 ### <a name="supported-by-the-common-language-runtime"></a>Ortak dil çalışma zamanı tarafından desteklenen
 
-[Genel İşlevler (C++/CLI)](../windows/generic-functions-cpp-cli.md)  
+[Genel İşlevler (C++/CLI)](../windows/generic-functions-cpp-cli.md)<br/>
 Tanımlama ve genel işlevler ve yöntemler kullanma hakkında bilgiler.
 
-[Genel Sınıflar (C++/CLI)](../windows/generic-classes-cpp-cli.md)  
+[Genel Sınıflar (C++/CLI)](../windows/generic-classes-cpp-cli.md)<br/>
 Tanımlama ve Genel sınıflar kullanma hakkında bilgiler.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[Nasıl yapılır: foreach ile Bir Genel Koleksiyon Üzerinden Yineleme Yapma](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)  
+[Nasıl yapılır: foreach ile Bir Genel Koleksiyon Üzerinden Yineleme Yapma](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)<br/>
 Kullanarak [her, içinde](../dotnet/for-each-in.md) anahtar sözcüğü, bir genel koleksiyon.
 
 ## <a name="see-also"></a>Ayrıca Bkz.

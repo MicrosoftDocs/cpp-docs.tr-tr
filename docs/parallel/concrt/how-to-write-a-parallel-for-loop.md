@@ -15,47 +15,52 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4f3121130cd4b2871e3e3df73dd4117f946caca
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 0cd9f10f473ae72c32b11fe648abe693568b34a6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689824"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46395461"
 ---
 # <a name="how-to-write-a-parallelfor-loop"></a>Nasıl yapılır: parallel_for Döngüsü Yazma
-Bu örnek nasıl kullanılacağı ortaya [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) iki matrisi çarpımını hesaplar için.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte gösterildiği `matrix_multiply` iki kare matrisi çarpımını hesaplar işlevi.  
-  
- [!code-cpp[concrt-parallel-matrix-multiply#1](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-loop_1.cpp)]  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte gösterildiği `parallel_matrix_multiply` kullanan işlevi `parallel_for` paralel olarak dış döngü gerçekleştirmek için algoritması.  
-  
- [!code-cpp[concrt-parallel-matrix-multiply#2](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-loop_2.cpp)]  
-  
- Bu örnek yalnızca paralel işleme yükünü yararlanmasını yeterli iş gerçekleştirdiğinden dış döngü parallelizes. İç döngü paralel hale, iç döngü gerçekleştiren iş az miktarda paralel işleme yükünü üstesinden değil çünkü, kazanç performansı alırsınız. Bu nedenle, dış döngü parallelizing yalnızca çoğu sistemlerde eşzamanlılık yararlarını en üst düzeye çıkarmak için en iyi yoludur.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki daha kapsamlı örnek performansını karşılaştırır `matrix_multiply` karşı işlev `parallel_matrix_multiply` işlevi.  
-  
- [!code-cpp[concrt-parallel-matrix-multiply#3](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-loop_3.cpp)]  
-  
- Aşağıdaki örnek çıkış dört işlemciye sahip bir bilgisayar için ' dir.  
-  
-```Output  
-serial: 3853  
-parallel: 1311  
-```  
-  
-## <a name="compiling-the-code"></a>Kod Derleniyor  
- Kodu derlemek için kopyalayın ve ardından bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `parallel-matrix-multiply.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
-  
- **cl.exe /EHsc paralel-matris-multiply.cpp**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md)   
- [parallel_for işlevi](reference/concurrency-namespace-functions.md#parallel_for)
 
+Bu örnek nasıl kullanılacağını gösterir [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) iki matrislerde çarpımını için.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnekte gösterildiği `matrix_multiply` işlevin iki kare matrisler çarpımını hesaplar.
+
+[!code-cpp[concrt-parallel-matrix-multiply#1](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-loop_1.cpp)]
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnekte gösterildiği `parallel_matrix_multiply` kullanan işlevi `parallel_for` dış döngü paralel olarak gerçekleştirmenin algoritması.
+
+[!code-cpp[concrt-parallel-matrix-multiply#2](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-loop_2.cpp)]
+
+Bu örnekte, yalnızca yeterli iş yükü paralel işleme için yararlanmasını gerçekleştirdiğinden dış döngü parallelizes. İç döngü paralel hale getirmek, iç döngü gerçekleştiren iş az miktarda ek yükü paralel işleme için üstesinden değildir çünkü, kazanç performansını almazsınız. Bu nedenle, dış döngü paralelleştirmek yalnızca çoğu sistemde yararlarını en üst düzeye çıkarmak için en iyi yoludur.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki daha eksiksiz bir örnek performansını karşılaştırır `matrix_multiply` karşı işlev `parallel_matrix_multiply` işlevi.
+
+[!code-cpp[concrt-parallel-matrix-multiply#3](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-loop_3.cpp)]
+
+Aşağıdaki örnek çıktıda dört işlemciye sahip bir bilgisayar içindir.
+
+```Output
+serial: 3853
+parallel: 1311
+```
+
+## <a name="compiling-the-code"></a>Kod Derleniyor
+
+Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `parallel-matrix-multiply.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+
+**cl.exe/ehsc paralel-matris-multiply.cpp**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)<br/>
+[parallel_for işlevi](reference/concurrency-namespace-functions.md#parallel_for)
 

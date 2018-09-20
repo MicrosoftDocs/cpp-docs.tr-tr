@@ -16,21 +16,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 254d7532b83a4f30c0029b2488bb0b2111cce31d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0c634f9eac562be2b22f79e6a71c3010e3ea3e24
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219403"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435242"
 ---
 # <a name="setting-a-hot-key"></a>Sık Kullanılan Tuş Ayarlama
-Uygulamanız bir kısayol tuşu tarafından sağlanan bilgileri kullanabilir ([CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)) iki yoldan biriyle denetimi:  
-  
--   Göndererek nonchild penceresi etkinleştirdiğiniz için genel sık kullanılan tuş ayarlama bir [WM_SETHOTKEY](/windows/desktop/inputdev/wm-sethotkey) etkinleştirilmesi için ileti penceresine.  
-  
--   Windows işlevini çağırarak iş parçacığına özgü sık kullanılan tuş ayarlamak [RegisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646309).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CHotKeyCtrl kullanma](../mfc/using-chotkeyctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Uygulamanız bir kısayol tuşu tarafından sağlanan bilgileri kullanabilir ([CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)) iki yoldan biriyle denetimi:
+
+- Göndererek nonchild penceresi etkinleştirdiğiniz için genel sık kullanılan tuş ayarlama bir [WM_SETHOTKEY](/windows/desktop/inputdev/wm-sethotkey) etkinleştirilmesi için ileti penceresine.
+
+- Windows işlevini çağırarak iş parçacığına özgü sık kullanılan tuş ayarlamak [RegisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646309).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CHotKeyCtrl Kullanma](../mfc/using-chotkeyctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

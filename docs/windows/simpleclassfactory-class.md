@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b20cbb906676705113bd1a84884cc5719b8272bf
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: 4a3e262567927b818072c1e05acd18aa64cbaa6c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691451"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446523"
 ---
 # <a name="simpleclassfactory-class"></a>SimpleClassFactory Sınıfı
 
@@ -39,7 +39,7 @@ class SimpleClassFactory : public ClassFactory<>;
 
 ### <a name="parameters"></a>Parametreler
 
-*temel*  
+*temel*<br/>
 Temel sınıf.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -102,15 +102,15 @@ STDMETHOD( CreateInstance )(
 
 #### <a name="parameters"></a>Parametreler
 
-*pUnkOuter*  
+*pUnkOuter*<br/>
 Olmalıdır `nullptr`; Aksi takdirde CLASS_E_NOAGGREGATION dönüş değeridir.
 
 SimpleClassFactory toplama desteklemiyor. Oluşturulan nesne bir toplamanın parçası toplama desteklenen ve *pUnkOuter* denetlemek için bir işaretçi olabilir `IUnknown` toplamanın arabirimi.
 
-*riid*  
+*riid*<br/>
 Nesnenin kimliği oluşturmak için arabirim.
 
-*ppvObject*  
+*ppvObject*<br/>
 Bu işlem tamamlandığında, işaretçi tarafından belirtilen nesnede örneğine *riid* parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri

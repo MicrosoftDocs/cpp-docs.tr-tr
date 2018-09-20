@@ -24,136 +24,155 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bcc5290b08b6a0b6159c1ba9b0b5b05d02a178ba
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 5fea49ab46f55f4236194ebb811032d9351402d9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37122075"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430286"
 ---
 # <a name="csyncobject-class"></a>CSyncObject sınıfı
-Win32 eşitleme nesneleri için ortak işlevselliği sağlayan bir saf sanal sınıf.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CSyncObject : public CObject  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CSyncObject::CSyncObject](#csyncobject)|Oluşturan bir `CSyncObject` nesnesi.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CSyncObject::Lock](#lock)|Eşitleme nesnesi erişim elde eder.|  
-|[CSyncObject::Unlock](#unlock)|Eşitleme nesnesi erişim elde eder.|  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CSyncObject::operator TANITICISI](#operator_handle)|Eşitleme nesnesi erişim sağlar.|  
-  
-### <a name="public-data-members"></a>Ortak Veri Üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CSyncObject::m_hObject](#m_hobject)|Eşitleme nesnesini için tanıtıcı.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Microsoft Foundation Class Kitaplığı türetilmiş çeşitli sınıflar sağlar `CSyncObject`. Bunlar [CEvent](../../mfc/reference/cevent-class.md), [CMutex](../../mfc/reference/cmutex-class.md), [CCriticalSection](../../mfc/reference/ccriticalsection-class.md), ve [CSemaphore](../../mfc/reference/csemaphore-class.md).  
-  
- Makale eşitleme nesneleri kullanma hakkında daha fazla bilgi için bkz [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- `CSyncObject`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxmt.h  
-  
-##  <a name="csyncobject"></a>  CSyncObject::CSyncObject  
- Verilen ada sahip bir eşitleme nesnesi oluşturur.  
-  
-```  
-explicit CSyncObject(LPCTSTR pstrName);  
+
+Win32'de eşitleme nesneleriyle ortak işlevselliği sağlayan saf sanal sınıf.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CSyncObject : public CObject
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CSyncObject::CSyncObject](#csyncobject)|Oluşturur bir `CSyncObject` nesne.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CSyncObject::Lock](#lock)|Erişim için eşitleme nesnesi.|
+|[CSyncObject::Unlock](#unlock)|Erişim için eşitleme nesnesi.|
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CSyncObject::operator TANITICISI](#operator_handle)|Eşitleme nesnesi erişim sağlar.|
+
+### <a name="public-data-members"></a>Ortak Veri Üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CSyncObject::m_hObject](#m_hobject)|Temel alınan eşitleme nesnesi için tanıtıcı.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Microsoft Foundation Class Kitaplığı ile türetilmiş birkaç sınıflarını sağlar `CSyncObject`. Bunlar [CEvent](../../mfc/reference/cevent-class.md), [CMutex](../../mfc/reference/cmutex-class.md), [CCriticalSection](../../mfc/reference/ccriticalsection-class.md), ve [CSemaphore](../../mfc/reference/csemaphore-class.md).
+
+Eşitleme nesneleri kullanma hakkında daha fazla bilgi için bkz [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+`CSyncObject`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxmt.h
+
+##  <a name="csyncobject"></a>  CSyncObject::CSyncObject
+
+Belirtilen ada sahip bir eşitleme nesnesi oluşturur.
+
+```
+explicit CSyncObject(LPCTSTR pstrName);
 virtual ~CSyncObject();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pstrName*  
- Nesnenin adı. NULL ise *pstrName* null olur.  
-  
-##  <a name="lock"></a>  CSyncObject::Lock  
- Eşitleme nesnesi tarafından denetlenen kaynak erişim kazanmak için bu işlevini çağırın.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pstrName*<br/>
+Nesne adı. NULL ise, *pstrName* null olacaktır.
+
+##  <a name="lock"></a>  CSyncObject::Lock
+
+Eşitleme nesnesi tarafından denetlenen bir kaynağa erişim elde etmek için bu işlevi çağırın.
+
+```
 virtual BOOL Lock(DWORD dwTimeout = INFINITE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *dwTimeout*  
- Eşitleme nesnenin kullanılabilir olması için beklenecek süreyi milisaniye olarak süre miktarını belirtir (işaret). SONSUZ, `Lock` nesne döndürmeden önce işaret kadar bekler.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- İşlev başarılı olduğunda sıfır olmayan; Aksi takdirde 0.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Eşitleme nesnesi işaret edildiyse `Lock` başarıyla döndürür ve iş parçacığı şimdi nesnenin sahibi. Eşitleme nesnesi nonsignaled ise (kullanılamaz), `Lock` eşitleme nesne belirtilen milisaniye sayısı kadar işaret hale bekleyecek *dwTimeOut* parametresi. Eşitleme nesnesi belirtilen sürede, işaret hale değil, `Lock` hatasını döndürür.  
-  
-##  <a name="m_hobject"></a>  CSyncObject::m_hObject  
- Eşitleme nesnesini için tanıtıcı.  
-  
-```  
-HANDLE m_hObject;  
-```  
-  
-##  <a name="operator_handle"></a>  CSyncObject::operator TANITICISI  
- İşleyicisini almak için bu işleci kullanın `CSyncObject` nesnesi.  
-  
-```  
-operator HANDLE() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, eşitleme nesnesi; tanıtıcısı Aksi takdirde NULL.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Windows API'larını doğrudan çağırmak için tanıtıcı kullanabilirsiniz.  
-  
-##  <a name="unlock"></a>  CSyncObject::Unlock  
- Bildirimi `Unlock` saf sanal işlevi parametresiz olduğu ve türetme tüm sınıflar tarafından geçersiz kılınmalıdır `CSyncObject`.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*dwTimeout*<br/>
+Eşitleme nesnesi kullanılabilir olması beklenecek milisaniye cinsinden süre miktarını belirtir. (işareti). SONSUZ ise `Lock` döndürmeden önce nesne sinyal kadar bekler.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+İşlev başarılı olursa sıfır dışı; Aksi durumda 0.
+
+### <a name="remarks"></a>Açıklamalar
+
+Eşitleme nesnesi sinyal vermediyse, `Lock` başarıyla döndürür ve iş parçacığı nesneye artık sahip. Eşitleme nesnesi nonsignaled ise (kullanılamıyor) `Lock` belirtilen milisaniye sayısı kadar sinyal haline eşitleme nesnesi için bekleyeceği *dwTimeOut* parametresi. Eşitleme nesnesi belirtilen sürede, sinyal haline değil, `Lock` hatası döndürür.
+
+##  <a name="m_hobject"></a>  CSyncObject::m_hObject
+
+Temel alınan eşitleme nesnesi için tanıtıcı.
+
+```
+HANDLE m_hObject;
+```
+
+##  <a name="operator_handle"></a>  CSyncObject::operator TANITICISI
+
+Tanıtıcısını almak için bu işleci kullanın `CSyncObject` nesne.
+
+```
+operator HANDLE() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılı olursa, eşitleme nesnesi; tanıtıcısı Aksi takdirde NULL.
+
+### <a name="remarks"></a>Açıklamalar
+
+Tanıtıcı, doğrudan Windows API çağırmak için kullanabilirsiniz.
+
+##  <a name="unlock"></a>  CSyncObject::Unlock
+
+Bildirimi `Unlock` hiçbir parametre olmadan saf sanal işlevi olan ve türetilen tüm sınıflar tarafından geçersiz kılınmalıdır `CSyncObject`.
+
+```
 virtual BOOL Unlock() = 0; virtual BOOL Unlock(
-    LONG lCount,  
+    LONG lCount,
     LPLONG lpPrevCount = NULL);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *lCount*  
- Varsayılan uygulama tarafından kullanılmaz.  
-  
- *lpPrevCount*  
- Varsayılan uygulama tarafından kullanılmaz.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Varsayılan uygulama her zaman TRUE değerini döndürür.  
-  
-### <a name="remarks"></a>Açıklamalar  
- İki parametre bildirimi her zaman varsayılan uygulaması TRUE değerini döndürür. Bu işlev, çağıran iş parçacığı tarafından sahip olunan eşitleme nesneye erişimi serbest bırakmak için çağrılır. İkinci bildirim eşitleme nesneleri kontrollü bir kaynağa birden fazla erişime semafor gibi sağlanır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CObject sınıfı](../../mfc/reference/cobject-class.md)   
- [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*lCount*<br/>
+Varsayılan uygulama tarafından kullanılmaz.
+
+*lpPrevCount*<br/>
+Varsayılan uygulama tarafından kullanılmaz.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Varsayılan uygulama her zaman TRUE değerini döndürür.
+
+### <a name="remarks"></a>Açıklamalar
+
+Varsayılan uygulama bildirimi iki parametre ile her zaman TRUE değerini döndürür. Bu işlev, çağıran iş parçacığına ait eşitleme nesnesi erişimi serbest bırakmak için çağrılır. Denetlenen bir kaynağın birden fazla erişim izni semaforlar gibi eşitleme nesneleri için ikinci bildirim sağlanır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 
 
 

@@ -14,24 +14,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b9b1cc957dbc32978902d6efd072f032ae7508a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cb28fb0b842cb551f3a53f126122b1ccddad4a75
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344314"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422031"
 ---
 # <a name="menu-sample-list"></a>Menü Örnek Listesi
-Oluşturma, düzenleme ve menüleri güncelleştirme gösteren aşağıdaki örnek programlar bakın:  
-  
- *MDI örnek: Etkinleştirme ve menü öğelerini devre dışı*  
-  
--   [KARALAMA](../visual-cpp-samples.md)  
-  
- *Dinamik menüler değiştirme*  
-  
--   [DYNAMENU](../visual-cpp-samples.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Menüler](../mfc/menus-mfc.md)
+
+Oluşturma, düzenleme ve menüler güncelleştirme gösteren aşağıdaki örnek programlardan bakın:
+
+*MDI örneği: Etkinleştirme ve menü öğelerini devre dışı bırak*
+
+- [KARALAMA](../visual-cpp-samples.md)
+
+*Menüler dinamik olarak değiştirme*
+
+- [DYNAMENU](../visual-cpp-samples.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Menüler](../mfc/menus-mfc.md)
 

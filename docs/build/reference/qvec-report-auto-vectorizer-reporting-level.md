@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c11beb3f8a5b9b189fff237012580765f8858fc0
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f7ee7ed9fbbe48477aecb51ca489fe2ad9609e41
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717567"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408109"
 ---
 # <a name="qvec-report-auto-vectorizer-reporting-level"></a>/Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)
 
@@ -53,7 +53,7 @@ Neden kodları ve iletiler hakkında daha fazla bilgi için bkz. [vektör yapıc
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md)
-[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[/Q Seçenekler (Düşük Düzey İşlemler)](../../build/reference/q-options-low-level-operations.md)<br/>
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
 [Yerel kodda paralel programlama](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)

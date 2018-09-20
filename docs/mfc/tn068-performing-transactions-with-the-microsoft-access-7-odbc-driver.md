@@ -18,41 +18,41 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b3db4c30eceb47d0f9169195fd131b4334d25cd
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 4006ee6953342fd55b644eeb2a8e8f30c1d80285
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37122352"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46395849"
 ---
 # <a name="tn068-performing-transactions-with-the-microsoft-access-7-odbc-driver"></a>TN068: Microsoft Access 7 ODBC Sürücüsü ile İşlem Yapma
 
 > [!NOTE]
-> İlk çevrimiçi belgelerinde eklenmiştir beri aşağıdaki Teknik Not güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konuları güncel veya yanlış olması olabilir. En son bilgiler için çevrimiçi belgeleri dizindeki ilgi konuyu aramak önerilir.
+> Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
 
-Bu Not Microsoft ODBC Masaüstü Sürücü paketi sürüm 3.0 dahil Microsoft Access 7.0 ODBC sürücüsü MFC ODBC veritabanı sınıflarını kullanırken işlemleri gerçekleştirmeyi açıklar.
+Bu Not, MFC ODBC veritabanı sınıfları ve Microsoft ODBC Masaüstü Sürücü paketi sürüm 3.0 Microsoft Access 7.0 ODBC sürücüsü kullanılırken işlemleri gerçekleştirmeyi açıklar.
 
 ## <a name="overview"></a>Genel Bakış
 
-Veritabanı uygulamanızı işlemleri gerçekleştirirse, çağırmak dikkatli olmalısınız `CDatabase::BeginTrans` ve `CRecordset::Open` uygulamanızda doğru sırada. Microsoft Access 7.0 sürücü Microsoft Jet veritabanı altyapısı kullanır ve uygulamanızın açık bir imleç sahip herhangi bir veritabanı üzerinde bir işlemi başlamaz Jet gerektirir. MFC ODBC veritabanı sınıfları için açık bir imleç açık karşılık gelir `CRecordset` nesnesi.
+Veritabanı uygulamanızı işlemler gerçekleştirirse çağırmak dikkatli olmanız gerekir `CDatabase::BeginTrans` ve `CRecordset::Open` uygulamanızdaki doğru sırada. Microsoft Access 7.0 sürücü Microsoft Jet veritabanı motorunu kullanır ve uygulamanızı bir işlem açık bir imleç sahip herhangi bir veritabanı üzerinde başlamaz Jet gerektirir. MFC ODBC veritabanı sınıfları için açık bir imleç açık karşılık gelmektedir `CRecordset` nesne.
 
-Kayıt kümesi çağırmadan önce açarsanız `BeginTrans`, herhangi bir hata iletisi görüntülenebilir. Ancak, herhangi bir kayıt çağrıldıktan sonra kalıcı olur, uygulama yapar güncelleştirmeleri `CRecordset::Update`, ve güncelleştirmeleri geri çağırarak alınacak değil `Rollback`. Bu sorunu önlemek için çağırmalısınız `BeginTrans` ilk ve kayıt kümesi'ni açın.
+Bir kayıt kümesi çağırmadan önce açarsanız `BeginTrans`, herhangi bir hata iletisi görüntülenebilir. Ancak, herhangi bir kayıt çağırdıktan sonra kalıcı olur, uygulama yapar güncelleştirmeleri `CRecordset::Update`, ve güncelleştirmeleri geri çağırarak alınmaz `Rollback`. Bu sorunu önlemek için çağırmalıdır `BeginTrans` ilk kayıt kümesini açın.
 
-MFC sürücü işlevselliği için imleç kaydetme ve geri alma davranışını denetler. Sınıf `CDatabase` iki üye işlevleri sağlar `GetCursorCommitBehavior` ve `GetCursorRollbackBehavior`, açık herhangi bir işlem etkisini belirlemek için `CRecordset` nesnesi. Microsoft Access 7.0 ODBC sürücüsü için bu üye işlevleri dönmek `SQL_CB_CLOSE` erişim sürücü imleç korunması desteklemediğinden. Bu nedenle, çağırmalısınız `CRecordset::Requery` aşağıdaki bir `CommitTrans` veya `Rollback` işlemi.
+MFC sürücü işlevleri için imleç kaydetme ve geri alma davranışını denetler. Sınıf `CDatabase` iki üye işlevini sağlar `GetCursorCommitBehavior` ve `GetCursorRollbackBehavior`, açık herhangi bir işlem etkisini belirlemek için `CRecordset` nesne. Microsoft Access 7.0 ODBC sürücüsü, bu üye işlevleri dönüş `SQL_CB_CLOSE` erişim sürücü imleç korunması desteklemediği için. Bu nedenle, çağırmalıdır `CRecordset::Requery` aşağıdaki bir `CommitTrans` veya `Rollback` işlemi.
 
-Birden çok işlem birbiri ardından gerçekleştirmeniz gerektiğinde çağıramazsınız `Requery` ilk işlem ve bir sonraki başlatın. Kayıt kümesi sonraki çağırmadan önce kapatmalısınız `BeginTrans` Jet'ın gereksinimi karşılamak için. Bu teknik Not Bu durum işleme için iki yöntem açıklanmaktadır:
+Birden çok işlem birbiri ardına gerçekleştirmeniz gerektiğinde, çağıramazsınız `Requery` ilk işlem ve bir sonraki başlatın. Sonraki çağırmadan önce kayıt kapatmalısınız `BeginTrans` Jet'ın gereksinimi karşılamak için. Bu teknik Not, bu durum işleme için iki yöntem açıklar:
 
-- Kayıt kümesi her komuttan sonra kapatma `CommitTrans` veya `Rollback` işlemi.
+- Kayıt kümesi her birinden sonra kapanış `CommitTrans` veya `Rollback` işlemi.
 
 - ODBC API işlevini kullanarak `SQLFreeStmt`.
 
-## <a name="closing-the-recordset-after-each-committrans-or-rollback-operation"></a>Kayıt kümesi her CommitTrans veya geri alma işlemi sonra kapatma
+## <a name="closing-the-recordset-after-each-committrans-or-rollback-operation"></a>Kayıt kümesi her CommitTrans ya da geri alma işlemi kapatma
 
-Bir işlem başlatmadan önce kayıt kümesi nesnesi kapalı olduğundan emin olun. Çağırdıktan sonra `BeginTrans`, kayıt kümesinin çağrı `Open` üye işlevi. Kayıt kümesi hemen çağrıldıktan sonra kapatın `CommitTrans` veya `Rollback`. Art arda açma ve kayıt kapatma uygulamanın performansını yavaşlatabilir unutmayın.
+Bir işlem başlatmadan önce kayıt kümesi nesnesi kapalı olduğundan emin olun. Arama sonra `BeginTrans`, kayıt kümesinin çağrı `Open` üye işlevi. Kayıt kümesi çağırdıktan hemen sonra kapatmak `CommitTrans` veya `Rollback`. Tekrar tekrar açma ve kapatma kayıt uygulamanın performansını yavaşlatabilir unutmayın.
 
 ## <a name="using-sqlfreestmt"></a>SQLFreeStmt kullanma
 
-ODBC API işlevini de kullanabilirsiniz `SQLFreeStmt` açıkça imleci bir işlem bitiş sonra kapatın. Başka bir işlem başlatmaya çağrısı `BeginTrans` arkasından `CRecordset::Requery`. Çağrılırken `SQLFreeStmt`, kayıt kümesinin HSTMT ilk parametre olarak belirtmeniz gerekir ve *SQL_CLOSE* ikinci parametre olarak. Bu yöntem kapatmak ve her işlem başlangıcında kayıt kümesi açmak daha hızlıdır. Aşağıdaki kod, bu teknik uygulamak gösterilmiştir:
+ODBC API işlevini de kullanabilirsiniz `SQLFreeStmt` açıkça İmleç bir işlem bitiş sonra kapatın. Başka bir işlem başlatmak için çağrı `BeginTrans` ardından `CRecordset::Requery`. Çağrılırken `SQLFreeStmt`, kayıt kümesinin HSTMT ilk parametre olarak belirtmeniz gerekir ve *SQL_CLOSE* ikinci parametre olarak. Bu yöntem kapatıp açarak her işlem başlangıcında kayıt daha hızlıdır. Aşağıdaki kod, bu teknik uygulama gösterilmektedir:
 
 ```cpp
 CMyDatabase db;
@@ -86,7 +86,7 @@ rs.Close();
 db.Close();
 ```
 
-Bu teknik uygulamak için başka bir yolu, yeni bir işlev yazmaktır `RequeryWithBeginTrans`, daha sonraki işlem yürüttükten sonra başlatmak için çağırabilir veya geri alma ilk. Bu tür bir işlevi yazmak için aşağıdaki adımları uygulayın:
+Bu teknik uygulamak için başka bir yolu, yeni bir işlev yazmaktır `RequeryWithBeginTrans`, hangi kaydetmeyi tamamladıktan sonraki işlemi başlatmak için çağırabileceğiniz ya da geri alma ilk öğe. Böyle bir işlevi yazmak için aşağıdaki adımları uygulayın:
 
 1. Kodu Kopyala `CRecordset::Requery( )` yeni işlev.
 
@@ -94,7 +94,7 @@ Bu teknik uygulamak için başka bir yolu, yeni bir işlev yazmaktır `RequeryWi
 
    `m_pDatabase->BeginTrans( );`
 
-Şimdi bu işlevi işlemleri çiftleri arasındaki çağırabilirsiniz:
+Artık işlemlerin arasındaki bu işlevi çağırabilirsiniz:
 
 ```cpp
 // start transaction 1 and
@@ -119,9 +119,9 @@ db.CommitTrans();   // or Rollback()
 ```
 
 > [!NOTE]
-> Kayıt kümesi üye değişkenleri değiştirmeniz gerekirse, bu teknik kullanmayın *m_strFilter* veya *m_strSort* işlemleri arasında. Bu durumda, kayıt kümesinin her komuttan sonra kapatmalısınız `CommitTrans` veya `Rollback` işlemi.
+> Kayıt kümesi üye değişkenleri değiştirmeniz gerekirse, bu tekniği kullanmayın *m_strFilter* veya *m_strSort* işlemleri arasında. Bu durumda, kayıt kümesinin her birinden sonra kapatmalısınız `CommitTrans` veya `Rollback` işlemi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)  
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)  
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)

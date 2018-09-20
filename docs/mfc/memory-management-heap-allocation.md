@@ -21,20 +21,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7ef166201103b1544d0a36d82452b485af75418
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: cc158ceda21bfb04053bbc490a3333a76e2d7afe
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36928615"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46383824"
 ---
 # <a name="memory-management-heap-allocation"></a>Bellek Yönetimi: Öbek Ayırma
-Yığın bellek ayırma gereksinimlerine program için ayrılmıştır. Program kodunu ve yığını dışında bir alandır. Tipik C programları işlevleri kullanmak **malloc** ve **ücretsiz** ayırmak ve yığın bellek ayırması için. MFC hata ayıklama sürümü C++ yerleşik işleçleri değiştirilmiş sürümlerini sağlar **yeni** ve **silmek** ayrılamadı ve yığın bellek nesneleri serbest bırakma.  
-  
- Kullandığınızda **yeni** ve **silmek** yerine **malloc** ve **ücretsiz**, sınıf kitaplığının yararlanmak için bellek sızıntıları algılama yararlı olabilecek bellek yönetimi hata ayıklama geliştirmeler. MFC, standart sürümleri sürümünü programınızla oluşturduğunuzda **yeni** ve **silmek** işleçleri ayırmak ve bellek (sürümünü MFC ayırması için etkili bir yol sağlayın Bu işleçlere değiştirilmiş sürümlerini sağlamaz).  
-  
- Toplam boyutu yığında ayrılmış nesneleri, yalnızca, sisteminizin kullanılabilir sanal bellek tarafından sınırlı olduğunu unutmayın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bellek Yönetimi](../mfc/memory-management.md)
+
+Yığın, program bellek ayırma ihtiyaçları için ayrılmıştır. Program kodu ve yığın dışında bir alandır. Tipik C programları işlevleri kullanmak **malloc** ve **ücretsiz** ayırmak ve yığın bellek serbest bırakın. MFC hata ayıklama sürümünü C++ yerleşik işleçler değiştirilmiş sürümlerini sağlar **yeni** ve **Sil** ayırmak ve yığın bellek nesneleri serbest bırakın.
+
+Kullanırken **yeni** ve **Sil** yerine **malloc** ve **ücretsiz**, Sınıf Kitaplığı'nızın yararlanmak için bellek sızıntılarını algılama içinde yararlı olabilecek bellek yönetimi hata ayıklama geliştirmeleri. MFC, standart sürümlerini sürümü ile programınızın oluşturduğunuzda **yeni** ve **Sil** işleçleri ayırma ve serbest bellek (sürümünü MFC için etkili bir yol sağlayın Bu işleçler değiştirilmiş sürümlerini sağlamaz).
+
+Yalnızca sistem kullanılabilir sanal bellek tarafından yığında ayrılan nesnelerin toplam boyutu sınırlı olduğunu unutmayın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bellek Yönetimi](../mfc/memory-management.md)
 

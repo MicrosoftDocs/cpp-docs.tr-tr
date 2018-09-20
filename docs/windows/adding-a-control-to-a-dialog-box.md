@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e60c64777ea4b5726721a267bcdd700cd71b4214
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 9ad87e80d3301eaeda7a0599c3e484046092ed60
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317907"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446471"
 ---
 # <a name="adding-a-control-to-a-dialog-box-c"></a>Denetim ekleme iletişim kutusu (C++)
 
@@ -52,6 +52,6 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)  
-[İletişim Kutusu Denetimleri için Olay İşleyicileri Ekleme](../windows/adding-event-handlers-for-dialog-box-controls.md)  
+[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)<br/>
+[İletişim Kutusu Denetimleri için Olay İşleyicileri Ekleme](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
 [İletişim Kutusu Denetimleri ve Değişken Türleri](../ide/dialog-box-controls-and-variable-types.md)

@@ -23,31 +23,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec786277432ab1ce47614c3afac627733edc4985
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 8dcd3117d50d2d8905e5382cf226ba487c13a7c7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37121163"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46414218"
 ---
 # <a name="tn057-localization-of-mfc-components"></a>TN057: MFC Bileşenlerini Yerelleştirme
 
 > [!NOTE]
-> İlk çevrimiçi belgelerinde eklenmiştir beri aşağıdaki Teknik Not güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konuları güncel veya yanlış olması olabilir. En son bilgiler için çevrimiçi belgeleri dizindeki ilgi konuyu aramak önerilir.
+> Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
 
-Bu Not tasarımları ve bir uygulama veya bir OLE denetlerseniz, bileşen yerelleştirme için kullanabileceğiniz yordamları veya MFC kullanan bir DLL bazıları açıklanmaktadır.
+Bu Not tasarımları ve bir uygulama ya da bir OLE denetimi, bileşeninizin yerelleştirmek için kullanabileceğiniz yordamları veya MFC kullanan bir DLL bazılarını açıklar.
 
 ## <a name="overview"></a>Genel Bakış
 
-Gerçekten ne zaman çözümlemek için iki sorunları vardır, MFC kullanan bir bileşeni yerelleştirme. İlk olarak, kendi kaynakları yerelleştirme — dizeler, iletişim kutuları ve bileşeniniz için özel kaynaklar. MFC ayrıca kullanılarak oluşturulan çoğu bileşenleri içerir ve MFC tarafından tanımlanan kaynak sayısı kullanın. Yerelleştirilmiş MFC kaynakları de sağlamanız gerekir. Neyse ki, çeşitli diller MFC tarafından zaten sağlanır.
+Bir sorun kalmadığını gerçekten ne zaman çözmek için iki MFC kullanan bileşen yerelleştirme. İlk olarak, kendi kaynaklarını yerelleştirmesine gerekir — dizeleri, iletişim kutuları ve bileşeninize özgü diğer kaynaklar. MFC ayrıca kullanılarak oluşturulan çoğu bileşenleri içerir ve MFC tarafından tanımlanan kaynakları kullanma. Yerelleştirilmiş MFC kaynağı da sağlamanız gerekir. Neyse ki, çeşitli diller, MFC tarafından zaten sağlanır.
 
-Ayrıca, bileşeniniz, hedef ortamda (Avrupa veya DBCS etkin ortamı) çalıştırmak için hazırlıklı olmalıdır. Çoğunlukla, bu uygulamanızın yüksek bit kümesiyle karakterleri doğru şekilde davranma ve çift baytlı karakter dizeleri işleme bağlıdır. Kurulum sırasında prize takılı yalnızca farklı kaynaklar tüm platformlarda kullanılan tek bir dünya çapında ikili olması mümkündür gibi MFC, varsayılan olarak, her ikisi de bu ortamlar için etkinleştirilir.
+Ayrıca, bileşeninizin, hedef ortamda (Avrupa veya DBCS özellikli ortamı) çalıştırmak için hazırlıklı olmalıdır. Çoğunlukla, bu uygulamanızın yüksek bit kümesiyle karakterleri doğru bir şekilde değerlendirmek ve çift baytlık karakterler içeren dizeleri işleme bağlıdır. Kurulum sırasında prize takılı yalnızca farklı kaynaklar ile tüm platformlarda kullanılan tek bir dünya çapında ikili olması mümkündür, MFC, varsayılan olarak, hem de bu ortamların etkindir.
 
-## <a name="localizing-your-components-resources"></a>Bileşenin kaynakları yerelleştirme
+## <a name="localizing-your-components-resources"></a>Bileşeninizin kaynakları yerelleştirme
 
-Uygulama veya DLL yerelleştirme yalnızca kaynakları hedef dil karşılayan kaynakları ile değiştirerek içermelidir. Kendi kaynaklar için bu oldukça basittir: kaynakları kaynak düzenleyicisinde düzenleyin ve uygulamanızı oluşturun. Kodunuzun doğru hiçbir dizeleri veya yerelleştirme sabit kodlanmış C++ kaynak kodu içine - istediğiniz metin olacaktır yazılmışsa tüm yerelleştirme kaynaklarını değiştirerek yapılabilir. Aslında, tüm sağlama yerelleştirilmiş bir sürümün bile özgün kod derleme içermeyen şekilde bileşeniniz uygulayabilirsiniz. Bu daha karmaşıktır, ancak iyi, ve MFC için seçilen mekanizmadır. Bir uygulamanın kaynak düzenleyicisine EXE veya DLL dosyasını yüklerken ve kaynakları doğrudan düzenleme yerelleştirme mümkündür. Olası sırasında uygulama yapılamıyorsa, uygulamanızın yeni bir sürümünü oluşturmak her zaman bu değişikliklerin gerektirir.
+Uygulamanızı veya DLL yerelleştirme kaynakları ile eşleşen hedef dil kaynakları yalnızca değiştirme içermelidir. Kendi kaynakları için bu oldukça basittir: Kaynak Düzenleyicisi kaynakları düzenlemek ve uygulamanızı. Kodunuzu hiçbir dizeler veya yerelleştirmek için sabit kodlanmış C++ kaynak kodunuza - istediğiniz metin düzgün bir şekilde yazılmış tüm yerelleştirme kaynaklarını değiştirerek gerçekleştirilebilir. Aslında, tüm yerelleştirilmiş bir sürümünü sağlama bile özgün koda yapısı içermeyen, bileşeninizin uygulayabilirsiniz. Bu daha karmaşıktır, ancak iyi etkiliyorsa ve MFC için seçilen mekanizmadır. Kaynak Düzenleyicisi'ne EXE veya DLL dosyasını yüklerken ve kaynakları doğrudan düzenleyerek bir uygulamayı yerelleştirme da mümkündür. Olası sırasında uygulamanızın yeni bir sürümünü oluşturmak her zaman yeniden bu değişiklikleri gerektirir.
 
-Bunu önlemek için bir uydu DLL olarak da adlandırılan ayrı bir DLL içinde tüm kaynakları bulmak için yoludur. Bu DLL ardından dinamik olarak çalışma zamanında yüklenir ve kaynakları yerine bu DLL'in tüm kodunuz ile ana modülden yüklenir. MFC doğrudan bu yaklaşım destekler. UYGULAMAM adlı bir uygulamayı göz önünde bulundurun. EXE; MYRES adlı DLL'de bulunan kaynaklarının tümü olabilir. DLL. Uygulamanın içinde `InitInstance` bu DLL yüklenemedi ve MFC kaynakları o konumdan yüklemek neden aşağıdaki gerçekleştirmelisiniz:
+Bunu önlemek için bir yol, bir uydu DLL olarak da adlandırılır ayrı bir DLL içinde tüm kaynaklar bulmaktır. Bu DLL ardından dinamik olarak çalışma zamanında yüklendiği ve kaynakları yerine bu DLL ile tüm kodunuzu ana modülünden gelen yüklenir. MFC, doğrudan bu yaklaşım da destekler. MYAPP adlı bir uygulamayı düşünün. EXE; MYRES adlı bir DLL içinde yer alan, kaynaklarının tümünü olabilir. DLL. İçinde uygulamanın `InitInstance` bu DLL'yi ve MFC kaynakları o konumdan yüklemek aşağıdaki gerçekleştirmelisiniz:
 
 ```cpp
 CMyApp::InitInstance()
@@ -63,26 +63,26 @@ CMyApp::InitInstance()
 }
 ```
 
-Daha sonra MFC kaynakları yerine bu DLL myapp.exe dosyasından yüklemek. Tüm kaynaklar, ancak bu DLL'deki mevcut olması gerekir; MFC Uygulama örneği belirli bir kaynak aramak üzere aranamaz. Bu teknik OLE denetimleri yanı sıra eşit için iyi Normal MFC DLL'leri geçerlidir. Kurulum programı MYRES'ün uygun sürümüne kopyalamak. DLL hangi kaynak yerel ayara bağlı olarak, kullanıcı ister.
+Daha sonra MFC kaynakları myapp.exe yerine bu DLL'ndan yüklenir. Tüm kaynaklar, ancak bu DLL içinde mevcut olması gerekir; MFC uygulamanın örnek saldırılar belirli bir kaynağın aramaz. Bu teknik OLE denetimlerin yanı sıra eşit derecede iyi kadar Normal MFC DLL'leri için geçerlidir. Kurulum programınıza uygun sürümünü MYRES kopyalanır. DLL hangi kaynak yerel ayara olarak kullanıcı istersiniz.
 
-Bir kaynak oluşturmak oldukça kolaydır yalnızca DLL. DLL projesi oluşturma, ekleme. RC için dosya ve gerekli kaynakları ekleyin. Bu teknik kullanmayan varolan projesini varsa, bu projeden kaynakları kopyalayabilirsiniz. Kaynak dosyası projeye eklendikten sonra projeyi derlemek neredeyse hazırsınız demektir. Bağlayıcı dahil etmek için seçenekleri ayarlayın tek şey yapmanız gerekir **/NOENTRY**. Bu bağlayıcı DLL hiçbir giriş noktası - olduğunu söyler kod olduğundan, hiçbir giriş noktası yok.
+Bir kaynak oluşturmak oldukça kolaydır yalnızca DLL. Bir DLL projesi oluşturma, ekleme. RC için dosya ve gerekli kaynakları ekleyin. Bu teknik kullanmayan var olan bir proje varsa, bu projeden kaynakları kopyalayabilirsiniz. Kaynak dosyasını projeye ekledikten sonra projeyi derlemek neredeyse hazırsınız demektir. Yapmanız gereken tek şey bağlayıcı seçenekleri içerecek şekilde ayarlandıysa **/NOENTRY**. Bu DLL giriş noktası yok - olduğunu söyler kod olduğundan, hiç giriş noktası yok.
 
 > [!NOTE]
-> Visual C++ 4.0 ve üzeri Kaynak Düzenleyici başına birden çok dili destekler. RC dosyası. Bu tek bir projede yerelleştirme yönetmek çok kolay hale. Her dil için kaynakları kaynak Düzenleyicisi tarafından oluşturulan önişlemci yönergeleri tarafından denetlenir.
+> Kaynak Düzenleyicisi Visual C++ 4.0 ve üzeri başına birden çok dili destekler. RC dosyası. Bu, tek bir projede yerelleştirme Yönetimi çok kolay zorlaştırabilir. Her dil için kaynaklar, önişlemci yönergeleri kaynak düzenleyici tarafından oluşturulan tarafından denetlenir.
 
 ## <a name="using-the-provided-mfc-localized-resources"></a>Yerelleştirilmiş kaynakları sağlanan MFC kullanma
 
-MFC gelen iki şey, oluşturduğunuz herhangi bir MFC Uygulama kullanır: kod ve kaynakları. Diğer bir deyişle, MFC çeşitli hata iletileri, yerleşik iletişim kutuları ve MFC sınıfları tarafından kullanılan kaynaklar vardır. Tamamen uygulamanızı yerelleştirme için yalnızca değil, uygulamanızın kaynakları, aynı zamanda doğrudan MFC'den gelen kaynakları yerelleştirme gerekir. MFC birkaç farklı dildeki kaynak dosyaları, hedeflediğiniz dil MFC zaten desteklediği dillerden biriyle ise, bu yerelleştirilmiş kaynakları kullanmasını sağlamak yeterlidir böylece otomatik olarak sağlar.
+Oluşturduğunuz herhangi bir MFC uygulaması iki şey MFC'den yeniden kullanır: kod ve kaynaklar. Diğer bir deyişle, MFC, çeşitli hata iletileri, yerleşik iletişim kutuları ve MFC sınıfları tarafından kullanılan diğer kaynaklar vardır. Uygulamanızı tamamen yerelleştirmek için yalnızca uygulamanızın kaynakları, aynı zamanda doğrudan MFC'den gelen kaynakları yerelleştirmek gerekir. MFC birkaç farklı dil kaynak dosyaları hedeflediğiniz dil MFC zaten desteklediği dillerden biriyle ise, bu yerelleştirilmiş kaynakların kullanmasını sağlamak yeterlidir, böylece otomatik olarak sağlar.
 
-Bu makalenin yazıldığı sırada MFC Çince, Almanca, İspanyolca, Fransızca, İtalyanca, Japonca ve Kore dili destekler. Bu yerelleştirilmiş sürümleri içeren MFC\INCLUDE\L.* dosyalardır ('L' anlamına gelir yerelleştirilmiş) dizinler. Almanca MFC\INCLUDE\L.DEU örneğin dosyalardır. MFC\INCLUDE içinde bulunan dosyalar yerine RC bu dosyaları kullanmak uygulamanızı neden ekleyin bir `/IC:\PROGRAM FILES\MICROSOFT VISUAL STUDIO .NET 2003\VC7\MFC\INCLUDE\L.DEU` RC komut satırı için (yalnızca bir örnek; bölgeniz, Visual C yüklediğiniz dizin yanı sıra seçim yerine gerekir ++).
+Bu makalenin yazıldığı tarih itibarıyla, Çince, Almanca, İspanyolca, Fransızca, İtalyanca, Japonca ve Korece MFC destekler. Bu yerelleştirilmiş sürümlerini içeren içinde MFC\INCLUDE\L.* dosyalardır (yerelleştirilmiş temsil 'L') dizinleri. Alman MFC\INCLUDE\L.DEU örneğin dosyalarıdır. Neden MFC\INCLUDE içinde bulunan dosyalar yerine bu RC dosyaları kullanmak uygulamanızı ekleyin bir `/IC:\PROGRAM FILES\MICROSOFT VISUAL STUDIO .NET 2003\VC7\MFC\INCLUDE\L.DEU` RC, komut satırı için (Bu yalnızca bir örnektir; Visual C yüklediğiniz dizine yanı sıra seçim bölgeniz yerine gerekir ++).
 
-MFC ile uygulamanızı statik olarak bağlanıyorsa yukarıdaki yönergeler çalışır. Dinamik olarak (Bu AppWizard varsayılan olduğundan) uygulamaların çoğu bağlayın. Bu senaryoda, yalnızca dinamik olarak kodudur bağlı - kadar kaynak yok. Sonuç olarak, uygulamanızda kaynaklarınızı yerelleştirebilirsiniz, ancak varsa MFC uygulaması kaynakları hala MFC7x.DLL (veya sonraki bir sürümünü) veya MFC7xLOC.DLL yüklenecek. Bu iki farklı açıları yaklaşımını.
+Uygulamanız MFC ile statik olarak bağlanıyorsa yukarıdaki yönergeler çalışır. Çoğu uygulama, dinamik olarak (Bu AppWizard varsayılan olduğundan) bağlayın. Bu senaryoda, yalnızca dinamik olarak kodudur bağlı - böylece kaynak olarak kullanılabilir. Sonuç olarak, uygulamanızda kaynaklarınızı yerelleştirebilirsiniz ancak varsa MFC uygulaması kaynakları hala MFC7x.DLL (veya sonraki bir sürümü) veya MFC7xLOC.DLL yüklenir. Bu iki farklı açıları yaklaşımını.
 
-Daha karmaşık yaklaşım sevk yerelleştirilmiş MFC7xLOC.DLLs birini (örneğin, Almanca için MFC7xDEU, İspanyolca, vb. için MFC7xESP.DLL) veya sonraki bir sürümünü ve kullanıcı uygulamanızı yüklendiğinde uygun MFC7xLOC.DLL sistem dizinine yükler. Bu, geliştirici ve son kullanıcı için çok karmaşık olabilir ve bu nedenle önerilmez. Bkz: [Teknik Not 56](../mfc/tn056-installation-of-localized-mfc-components.md) Bu teknik ve onun uyarılar hakkında daha fazla bilgi için.
+Daha karmaşık bir yaklaşım sevk yerelleştirilmiş MFC7xLOC.DLLs birini (örneğin, Almanca için MFC7xDEU, MFC7xESP.DLL İspanyolca, vb.) veya sonraki bir sürümünü ve kullanıcı uygulamanızı yüklendiğinde uygun MFC7xLOC.DLL sistem dizine yükleyin. Bu, geliştirici ve son kullanıcı için çok karmaşık olabilir ve bu nedenle önerilmez. Bkz: [Teknik Not 56](../mfc/tn056-installation-of-localized-mfc-components.md) Bu teknik ve kendi uyarılar hakkında daha fazla bilgi için.
 
-Kolay ve güvenli bir yaklaşım, uygulama veya DLL kendisini (veya kendi uydu birini kullanıyorsanız, DLL) yerelleştirilmiş MFC kaynakları eklemektir. Bu MFC7xLOC.DLL düzgün yükleme sorunları önler. Aynı yönergeleri (düzgün yerelleştirilmiş kaynaklar işaret edecek şekilde RC komut satırı ayarlama yukarıda) verilen statik çalışması için bunu yapmak için ayrıca kaldırmalısınız dışındaki `/D_AFXDLL` tanımlayan AppWizard tarafından eklendi. Zaman `/D_AFXDLL` olan tanımlı, AFXRES. Gerçekte (bunlar MFC DLL'leri yerine çekebilir çünkü) H (ve diğer MFC RC dosyaları) herhangi bir kaynağa tanımlamayın.
+Basit ve güvenli bir yaklaşım, uygulamanızın veya kendisine (veya kendi uydu DLL birini kullanmanız durumunda) bir DLL içinde yerelleştirilmiş MFC kaynakları dahil etmektir. Bu MFC7xLOC.DLL düzgün yükleme sorunları önler. Aynı yönergeleri (düzgün yerelleştirilmiş kaynakları işaret edecek şekilde RC komut satırı ayarlayarak yukarıda) verilen statik çalışması için bunu yapmak için ayrıca kaldırmalısınız dışındaki `/D_AFXDLL` tanımlayan AppWizard tarafından eklendi. Zaman `/D_AFXDLL` olan AFXRES tanımlı. (Bunlar MFC DLL'leri yerine çekilir çünkü) H (ve diğer MFC RC dosyaları) gerçekte herhangi bir kaynağa tanımlamaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)  
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)  
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)

@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6749b59a1c12b5d7c3116a925adc727ad6f7ab5
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6ef4f8b418edcdb903fa8f807cb5e08d63eaeeed
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721844"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46441635"
 ---
 # <a name="idlout-name-midl-output-files"></a>/IDLOUT (MIDL Çıktı Dosyalarını Adlandır)
 
@@ -82,6 +82,6 @@ MIDL derleyicisi olan projelerin bağlanırken Visual C++ bağlayıcı tarafınd
 
 [Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
 [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)<br/>
-[/ IGNOREIDL (öznitelikleri Mıdl'ye işleme)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)
-[/MIDL (MIDL komut satırı seçeneklerini belirt)](../../build/reference/midl-specify-midl-command-line-options.md)
-[öznitelikli Program derleme](../../windows/building-an-attributed-program.md)
+[/IGNOREIDL (Öznitelikleri MIDL'ye İşleme)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)<br/>
+[/MIDL (MIDL Komut Satırı Seçeneklerini Belirt)](../../build/reference/midl-specify-midl-command-line-options.md)<br/>
+[Öznitelikli Program Derleme](../../windows/building-an-attributed-program.md)

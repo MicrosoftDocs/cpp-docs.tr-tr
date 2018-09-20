@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb47b64277aea568cf3cad8e2c4b6203e43f1b2f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5175d89925ddc09fdcd552aa57d2967071e750f7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723262"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46376973"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>İzlenecek yol: Oluşturup kendi dinamik bağlantı kitaplığı (C++)
 
@@ -411,5 +411,5 @@ Uygulamanızı dağıtırken de kullandığı DLL'leri dağıtmanız gerekir. Ol
 
 [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)<br/>
 [Masaüstü uygulamalarını dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)<br/>
-[İzlenecek yol: Programınızı (C++) dağıtma](../ide/walkthrough-deploying-your-program-cpp.md)
-[Visual Basic uygulamalarından DLL işlevleri çağırma](../build/calling-dll-functions-from-visual-basic-applications.md)
+[İzlenecek Yol: Programınızı Dağıtma (C++)](../ide/walkthrough-deploying-your-program-cpp.md)<br/>
+[Visual Basic Uygulamalarından DLL İşlevleri Çağırma](../build/calling-dll-functions-from-visual-basic-applications.md)

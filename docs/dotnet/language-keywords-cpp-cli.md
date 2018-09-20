@@ -15,32 +15,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 241205ad25314034d8d36fa7ad1b156b13080fd6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0b9deb25e203ea805b1430b2ec8e56f17a50123b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33134419"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46445444"
 ---
 # <a name="language-keywords-ccli"></a>Dil Anahtar Sözcükleri (C++/CLI)
-Visual C++ için C++ için Yönetilen Uzantılar'dan değiştirilen çeşitli dil anahtar sözcükleri.  
-  
- Yeni Visual C++ sözdiziminde tüm anahtar sözcükleri önekten olarak çift alt çizgi kaldırılır (tek bir istisna: `__identifier` tutulur). Örneğin, bir özelliği şimdi olarak bildirilmiş `property`değil `__property`.  
-  
- Yönetilen Uzantılar'çift alt çizgi önek kullanarak iki birincil nedeni vardı:  
-  
--   Bu yerel uzantılara ISO-C++ Standart sağlama uyumluluğunu yöntemdir. Yeni anahtar sözcüklerin ve belirteçleri gibi standart dil ile uyumsuzlukları değil tanıtmak için Yönetilen Uzantılar tasarımının birincil amacı oluştu. Bu nedenle, işaretçi sözdizimi için yönetilen başvuru türündeki nesnelerin bildirimi seçimi motive büyük bölümü içindeydi.  
-  
--   Kılması dışında çift alt çizgi de bozucu dil kullanıcılarının varolan kod tabanıyla olma makul bir garanti kullanımıdır. Yönetilen Uzantılar tasarımı ikinci birincil amacı, bu.  
-  
- Çift alt çizgi kaldırma tüm Microsoft uyumlu olmaya kararlı kalır. Ancak, yeni ve güçlü bir programlama modeli CLR dinamik Nesne modelini gösteren desteği. Bu yeni kip desteği, kendi üst düzey anahtar sözcükleri ve belirteçleri gerektirir. Bu tümleştirme ve standart dili desteklerken sırasında bu yeni kip birinci sınıf bir ifade sağlamak Aranan. Yeni sözdizimi tasarımı bu iki farklı nesne modeline birinci sınıf bir programlama deneyimi sağlar.  
-  
- Benzer şekilde, bu yeni dil anahtar bozucu yapısını en üst düzeye çıkarma ile ilgilenen duyuyoruz. Bu bağlamsal ya da aralıklı anahtar kullanımı ile gerçekleştirilir. Biz gerçek yeni dil sözdizimine göz önce bu iki özel anahtar sözcüğü özellikleri anlamlı deneyelim.  
-  
- Bağlamsal anahtar sözcüğü belirli program bağlamları içinde özel bir anlamı yoktur. Genel program için içinde `sealed` normal bir tanımlayıcı olarak kabul edilir. Ancak, yönetilen başvuru sınıf türü bildirimi kısmı içinde oluştuğunda, bu sınıf bildirimi bağlamında bir anahtar olarak kabul edilir. Bu en aza indiren yeni bir anahtar sözcük dilde bir şey Tanıtımı olası bozucu etkisini, varolan bir kod tabanına sahip kullanıcılar için çok önemli eşitleyerek. Aynı anda ek dil özelliğinin - Yönetilen Uzantılar ile mümkün olmayan bir şey birinci sınıf bir deneyim sağlamak kullanıcıların yeni işlevsellik sağlar. Bir örnek için nasıl `sealed` kullanılan bkz [bir yönetilen sınıf türü bildirimi](../dotnet/declaration-of-a-managed-class-type.md).  
-  
- Aralıklı bir anahtar kelime gibi `value class`, bağlamsal bir anahtar sözcük özel bir durumdur. Varolan bir anahtar sözcük, boşlukla ayrılmış bir bağlamsal değiştirici ile çiftleri. Çift tek bir birim olarak yerine iki ayrı anahtar olarak kabul edilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C + +/ CLI geçiş öncüsü](../dotnet/cpp-cli-migration-primer.md)   
- [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+
+Yönetilen Uzantılar'dan C++ için Visual C++ için değiştirildi. birden çok dil anahtar sözcükleri.
+
+Yeni Visual C++ söz diziminde tüm anahtar sözcükler önekten olarak çift alt çizgi kaldırılır (bir özel durum: `__identifier` tutulur). Örneğin, bir özelliği artık olarak bildirilir `property`değil `__property`.
+
+Yönetilen Uzantılar ' çift alt çizgi önekini kullanarak iki birincil nedeni vardı:
+
+- Bu yerel uzantılara ISO C++ standardı ile sağlama uyumlu yöntemdir. Yeni anahtar sözcükleri ve belirteçleri gibi standart dil uyumsuzluklar İstemediğimiz için Yönetilen Uzantılar tasarım işleminin birincil amacı, oldu. Bu nedenle, yönetilen başvuru türündeki nesnelerin bildirimi için işaretçi sözdizimi seçimi motive büyük bölümü içindeydi.
+
+- Kılması dışında çift alt çizgi kullanımı, aynı zamanda müdahaleci dil kullanıcılar var olan kod tabanı ile olma makul bir garanti sağlar. Bu Yönetilen Uzantılar tasarımı ikinci birincil amacı değildi.
+
+Çift alt çizgi kaldırma artma Microsoft uyumlu olmak için kaydedilmiş kalır. Ancak, yeni ve güçlü bir programlama modelini CLR dinamik Nesne modelini gösteren için destek. Bu yeni paradigma desteği, kendi üst düzey anahtar sözcükleri ve belirteçleri gerektirir. Tümleştirip standart dili destekleyen bu yeni paradigma birinci sınıf bir ifade sağlamanız amaçladık. Yeni sözdizimi tasarımı, bu iki farklı nesne modeli, birinci sınıf bir programlama deneyimi sağlar.
+
+Benzer şekilde, bu yeni dil anahtar sözcükleri müdahaleci yapısını en üst düzeye ile ilgili duyuyoruz. Bu bağlamsal ve boşluklu anahtar sözcüklerin kullanımı ile gerçekleştirilir. Gerçek yeni dil sözdizimine baktığımızda önce bu iki özel anahtar sözcüğü özellikleri anlamlı deneyelim.
+
+Bağlamsal anahtar sözcük belirli bir programı bağlamları içinde özel bir anlamı vardır. Genel programda, örneğin, `sealed` normal bir tanımlayıcı olarak kabul edilir. Ancak, bir yönetilen başvuru sınıfı türü bildirimi bölümü içinde ortaya çıktığında, bir anahtar sözcüğü, sınıf bildirimi bağlamında olarak kabul edilir. Bu en aza indirir dilde yeni bir anahtar sözcüğü bir şey ile tanışın olası bozucu etkisi, varolan bir kod tabanına sahip kullanıcılar için çok önemli olduğunu düşünüyor. Aynı anda ek dil özelliği - Yönetilen Uzantılar'ile mümkün olmayan bir şey için birinci sınıf bir deneyim sağlamak kullanıcıların yeni işlevleri sağlar. İlişkin bir örnek için `sealed` kullanılan bkz [bir yönetilen sınıf türü bildirimi](../dotnet/declaration-of-a-managed-class-type.md).
+
+Boşluklu anahtar sözcüğü gibi `value class`, bağlamsal anahtar sözcüğü, özel bir durumdur. Bir boşluk ile ayrılan bağlamsal bir değiştiricisi var olan bir anahtar çiftlerini. Çifti tek bir birim yerine iki ayrı anahtar olarak kabul edilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C++/CLI Geçiş Öncüsü](../dotnet/cpp-cli-migration-primer.md)<br/>
+[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

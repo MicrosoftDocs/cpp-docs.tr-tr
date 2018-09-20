@@ -22,88 +22,99 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc7e4104e6555ada88483336917708db943be2a0
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6d35234c6f39c95a879ae092f79b6357065216f7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210585"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446289"
 ---
 # <a name="cconstanttransition-class"></a>CConstantTransition sınıfı
-Bir sabit geçişi kapsüller.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CConstantTransition : public CBaseTransition;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CConstantTransition::CConstantTransition](#cconstanttransition)|Bir geçiş nesnesi oluşturur ve süresinin başlatır.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CConstantTransition::Create](#create)|Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır. (Geçersiz kılmaları [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|  
-  
-### <a name="public-data-members"></a>Ortak Veri Üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CConstantTransition::m_duration](#m_duration)|Geçiş süresi.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir sabit geçişi sırasında bir animasyon değişkeninin değeri ilk değer geçiş süresi boyunca kalır. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işleci kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Üye değişkenleri tüketimi bu COM nesnesi oluşturulmasını etkisi yoktur.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- [CBaseTransition](../../mfc/reference/cbasetransition-class.md)  
-  
- `CConstantTransition`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxanimationcontroller.h  
-  
-##  <a name="cconstanttransition"></a>  CConstantTransition::CConstantTransition  
- Bir geçiş nesnesi oluşturur ve süresinin başlatır.  
-  
-```  
-CConstantTransition (UI_ANIMATION_SECONDS duration);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Süresi*  
- Geçiş süresi.  
-  
-##  <a name="create"></a>  CConstantTransition::Create  
- Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır.  
-  
-```  
-virtual BOOL Create(
-    IUIAnimationTransitionLibrary* pLibrary,  
-    IUIAnimationTransitionFactory* \*not used*\);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pLibrary*  
- Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), standart geçişleri kitaplığını tanımlar.  
 
-### <a name="return-value"></a>Dönüş Değeri  
- Geçiş başarıyla oluşturulursa TRUE; Aksi durumda FALSE.  
-  
-##  <a name="m_duration"></a>  CConstantTransition::m_duration  
- Geçiş süresi.  
-  
-```  
-UI_ANIMATION_SECONDS m_duration;  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıflar](../../mfc/reference/mfc-classes.md)
+Bir sabit geçişi kapsüller.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CConstantTransition : public CBaseTransition;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CConstantTransition::CConstantTransition](#cconstanttransition)|Bir geçiş nesnesi oluşturur ve süresinin başlatır.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CConstantTransition::Create](#create)|Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır. (Geçersiz kılmaları [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|
+
+### <a name="public-data-members"></a>Ortak Veri Üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CConstantTransition::m_duration](#m_duration)|Geçiş süresi.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir sabit geçişi sırasında bir animasyon değişkeninin değeri ilk değer geçiş süresi boyunca kalır. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işleci kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Üye değişkenleri tüketimi bu COM nesnesi oluşturulmasını etkisi yoktur.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+[CBaseTransition](../../mfc/reference/cbasetransition-class.md)
+
+`CConstantTransition`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxanimationcontroller.h
+
+##  <a name="cconstanttransition"></a>  CConstantTransition::CConstantTransition
+
+Bir geçiş nesnesi oluşturur ve süresinin başlatır.
+
+```
+CConstantTransition (UI_ANIMATION_SECONDS duration);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Süresi*<br/>
+Geçiş süresi.
+
+##  <a name="create"></a>  CConstantTransition::Create
+
+Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır.
+
+```
+virtual BOOL Create(
+    IUIAnimationTransitionLibrary* pLibrary,
+    IUIAnimationTransitionFactory* \*not used*\);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pLibrary*<br/>
+Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), standart geçişleri kitaplığını tanımlar.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Geçiş başarıyla oluşturulursa TRUE; Aksi durumda FALSE.
+
+##  <a name="m_duration"></a>  CConstantTransition::m_duration
+
+Geçiş süresi.
+
+```
+UI_ANIMATION_SECONDS m_duration;
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıflar](../../mfc/reference/mfc-classes.md)

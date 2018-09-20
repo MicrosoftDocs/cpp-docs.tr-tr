@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 423a66b698f4e421ff29e6ac3dfddd11fa11c58f
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 3ae69e26077692188b8e013e949592df26d7701a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42466258"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420406"
 ---
 # <a name="rawpropertyprefixes"></a>raw_property_prefixes
 **C++ özgü**  
@@ -52,5 +52,5 @@ Varsayılan olarak, `propget`, `propput`, ve `propputref` yöntemleri önekleriy
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

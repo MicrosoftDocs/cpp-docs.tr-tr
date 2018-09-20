@@ -19,35 +19,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ff2a9ccec1dac6be41727b4a829bf4e63669f40
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 568dfc1b925254bec792138c59ff7f1b3e19cb28
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45699653"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442077"
 ---
 # <a name="web-references-property-page"></a>Web Başvuruları Özellik Sayfası
-**Web başvuruları** özellik sayfası XML Web hizmeti proxy sınıfı oluşturulan nasıl belirtir. Bir web başvurusu projenize eklediğiniz bir XML Web hizmeti proxy sınıfı oluşturulur.  
-  
- **Web başvuruları** özellik sayfası, aşağıdaki özellikleri içerir:  
-  
+
+**Web başvuruları** özellik sayfası XML Web hizmeti proxy sınıfı oluşturulan nasıl belirtir. Bir web başvurusu projenize eklediğiniz bir XML Web hizmeti proxy sınıfı oluşturulur.
+
+**Web başvuruları** özellik sayfası, aşağıdaki özellikleri içerir:
+
 - **Çıkış dosyası**
 
-   XML Web hizmeti proxy sınıfı içeren dosyanın adı.  
-  
+   XML Web hizmeti proxy sınıfı içeren dosyanın adı.
+
 - **Başlangıç başlığını gösterme**
 
-   Web Hizmetleri Açıklama Dili Aracı (Wsdl.exe) için başlığı görüntüleme.  
-  
+   Web Hizmetleri Açıklama Dili Aracı (Wsdl.exe) için başlığı görüntüleme.
+
 - **Namespace**
 
-   Oluşturulan web Ara sunucusu adını belirtir.  
-  
+   Oluşturulan web Ara sunucusu adını belirtir.
+
 - **Ek başvurular**
 
-   DLL proxy tarafından başvurulan ek DLL'leri belirtir.  
-  
-Erişim hakkında daha fazla bilgi için **Web başvurusu** özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özellik Sayfaları](../ide/property-pages-visual-cpp.md)
+   DLL proxy tarafından başvurulan ek DLL'leri belirtir.
+
+Erişim hakkında daha fazla bilgi için **Web başvurusu** özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Özellik Sayfaları](../ide/property-pages-visual-cpp.md)

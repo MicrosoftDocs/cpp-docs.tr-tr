@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 07c37dbf1629461141d592eb1987ce071324e22c
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: 111015fdd8887ae779aeb8fecc8274cfcf7c6c68
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691477"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46441284"
 ---
 # <a name="simpleactivationfactory-class"></a>SimpleActivationFactory Sınıfı
 
@@ -43,7 +43,7 @@ class SimpleActivationFactory : public ActivationFactory<>;
 
 ### <a name="parameters"></a>Parametreler
 
-*temel*  
+*temel*<br/>
 Temel sınıf.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -106,7 +106,7 @@ STDMETHOD( ActivateInstance )(
 
 #### <a name="parameters"></a>Parametreler
 
-*ppvObject*  
+*ppvObject*<br/>
 Bu işlem tamamlandığında, işaretçi tarafından belirtilen nesnede örneğine `Base` sınıfı şablon parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -129,7 +129,7 @@ STDMETHOD( GetRuntimeClassName )(
 
 #### <a name="parameters"></a>Parametreler
 
-*runtimeName*  
+*runtimeName*<br/>
 Bu işlem tamamlandığında, çalışma zamanı sınıf adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -152,7 +152,7 @@ STDMETHOD(
 
 #### <a name="parameters"></a>Parametreler
 
-*trustLvl*  
+*trustLvl*<br/>
 Bu işlem tamamlandığında geçerli sınıf nesnesi güven düzeyi.
 
 ### <a name="return-value"></a>Dönüş Değeri

@@ -18,75 +18,83 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a7a2449fe65a0b17bf770ea2bfb8f3fe750cba0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 431b7caf3efcf9e569d6eee3c309b409d8479730
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366964"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46443325"
 ---
 # <a name="cmfcdisablemenuanimation-class"></a>CMFCDisableMenuAnimation sınıfı
-Açılır menü animasyon devre dışı bırakır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CMFCDisableMenuAnimation  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|||  
-|-|-|  
-|Ad|Açıklama|  
-|`CMFCDisableMenuAnimation::CMFCDisableMenuAnimation`|Oluşturan bir `CMFCDisableMenuAnimation` nesnesi.|  
-|`CMFCDisableMenuAnimation::~CMFCDisableMenuAnimation`|Yok Edicisi.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|||  
-|-|-|  
-|Ad|Açıklama|  
-|[CMFCDisableMenuAnimation::Restore](#restore)|Framework açılır menü görüntülemek için kullanılan önceki animasyon geri yükler.|  
-  
-### <a name="data-members"></a>Veri üyeleri  
-  
-|||  
-|-|-|  
-|Ad|Açıklama|  
-|`CMFCDisableMenuAnimation::m_animType`|Önceki açılır menü animasyon türü depolar.|  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bu yardımcı sınıf geçici olarak (örneğin, fare veya klavye komutları işlerken) açılır menü animasyon devre dışı bırakmak için kullanın.  
-  
- A `CMFCDisableMenuAnimation` nesne yaşam süresi sırasında açılır menü animasyon devre dışı bırakır. Geçerli açılır menü animasyon türü Oluşturucusu depolar `m_animType` alan ve geçerli animasyon türü için ayarlar `CMFCPopupMenu::NO_ANIMATION`. Yok Edicisi önceki animasyon türü geri yükler.  
-  
- Oluşturabileceğiniz bir `CMFCDisableMenuAnimation` açılır menü animasyon tek bir işlevi boyunca devre dışı bırakmak için yığında nesnesi. Açılan menü animasyon işlevleri arasındaki devre dışı bırakmak istiyorsanız, oluşturma bir `CMFCDisableMenuAnimation` nesne öbek üzerinde ve açılır menü animasyon geri yüklemek istediğinizde silin.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek yığın geçici olarak menü animasyon devre dışı bırakmak için nasıl kullanılacağını gösterir.  
-  
- [!code-cpp[NVC_MFC_Misc#1](../../mfc/reference/codesnippet/cpp/cmfcdisablemenuanimation-class_1.h)]  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CMFCDisableMenuAnimation](../../mfc/reference/cmfcdisablemenuanimation-class.md)  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxpopupmenu.h  
-  
-##  <a name="restore"></a>  CMFCDisableMenuAnimation::Restore  
- Framework açılır menü görüntülemek için kullanılan önceki animasyon geri yükler.  
-  
-```  
+
+Açılır menü animasyon devre dışı bırakır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CMFCDisableMenuAnimation
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|||
+|-|-|
+|Ad|Açıklama|
+|`CMFCDisableMenuAnimation::CMFCDisableMenuAnimation`|Oluşturur bir `CMFCDisableMenuAnimation` nesne.|
+|`CMFCDisableMenuAnimation::~CMFCDisableMenuAnimation`|Yıkıcı.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|||
+|-|-|
+|Ad|Açıklama|
+|[CMFCDisableMenuAnimation::Restore](#restore)|Framework'açılır menüyü görüntülemek için kullanılan önceki animasyon geri yükler.|
+
+### <a name="data-members"></a>Veri üyeleri
+
+|||
+|-|-|
+|Ad|Açıklama|
+|`CMFCDisableMenuAnimation::m_animType`|Önceki açılır menü animasyon türü depolar.|
+
+### <a name="remarks"></a>Açıklamalar
+
+Geçici olarak (örneğin, fare ve klavye komutları işlemek) açılır menüsünden animasyon devre dışı bırakmak için bu yardımcı sınıfını kullanın.
+
+A `CMFCDisableMenuAnimation` nesne ömrü boyunca açılır menü animasyon devre dışı bırakır. Geçerli açılır menü animasyon türü Oluşturucu depolar `m_animType` alan ve geçerli animasyon türü için kümeleri `CMFCPopupMenu::NO_ANIMATION`. Yok edici, önceki animasyon türü geri yükler.
+
+Oluşturabileceğiniz bir `CMFCDisableMenuAnimation` açılır menü animasyon tek bir işlev boyunca devre dışı bırakmak için yığında nesne. Açılan menü animasyon işlevler arası devre dışı bırakmak isterseniz, bir `CMFCDisableMenuAnimation` yığında nesne ve açılır menüyü animasyon geri yüklemek istediğinizde Sil.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, geçici olarak menü animasyon devre dışı bırakmak için yığın kullanmayı gösterir.
+
+[!code-cpp[NVC_MFC_Misc#1](../../mfc/reference/codesnippet/cpp/cmfcdisablemenuanimation-class_1.h)]
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CMFCDisableMenuAnimation](../../mfc/reference/cmfcdisablemenuanimation-class.md)
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxpopupmenu.h
+
+##  <a name="restore"></a>  CMFCDisableMenuAnimation::Restore
+
+Framework'açılır menüyü görüntülemek için kullanılan önceki animasyon geri yükler.
+
+```
 void Restore ();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bu yöntem tarafından çağrılır `CMFCDisableMenuAnimation` yıkıcı framework açılır menü görüntülemek için kullanılan önceki animasyon geri yüklemek için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMFCPopupMenu Sınıfı](../../mfc/reference/cmfcpopupmenu-class.md)
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu yöntemi çağıran `CMFCDisableMenuAnimation` framework açılan menüyü görüntülemek için kullanılan önceki animasyon geri yüklemek için yıkıcı.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
+[CMFCPopupMenu Sınıfı](../../mfc/reference/cmfcpopupmenu-class.md)

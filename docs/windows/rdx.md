@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 00ef28954a686dac72c8b7f55b86c88313e74643
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 566b21c911ba99d19fb16b564d0748cfcfd1eb71
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719726"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435980"
 ---
 # <a name="rdx"></a>rdx
 
@@ -40,13 +40,13 @@ Bir kayıt defteri anahtarı oluşturur veya mevcut bir kayıt defteri anahtarı
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Açılan veya oluşturulacak anahtar adı.
 
-*değer adı*  
+*değer adı*<br/>
 (İsteğe bağlı) Ayarlanacak değer alanını belirtir. Bu ada sahip bir değer alanı anahtarı zaten mevcut değilse eklenir.
 
-*regtype*  
+*regtype*<br/>
 Eklenen kayıt defteri anahtarı türü. Aşağıdakilerden biri olabilir: `text`, `dword`, `binary`, veya `CString`.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -93,5 +93,5 @@ public:
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[COM Öznitelikleri](../windows/com-attributes.md)  
+[COM Öznitelikleri](../windows/com-attributes.md)<br/>
 [registration_script](../windows/registration-script.md)  

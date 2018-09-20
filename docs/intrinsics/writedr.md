@@ -16,43 +16,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b559edf26c847404d718440e86037cab4026297b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5fd9bd5145947711c245f552672843d604160d06
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45704957"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402180"
 ---
 # <a name="writedr"></a>__writedr
-Belirtilen değer, belirtilen hata ayıklama kaydı için yazar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void __writedr(unsigned DebugRegister, unsigned DebugValue);  
-void __writedr(unsigned DebugRegister, unsigned __int64 DebugValue);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+Belirtilen değer, belirtilen hata ayıklama kaydı için yazar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void __writedr(unsigned DebugRegister, unsigned DebugValue);
+void __writedr(unsigned DebugRegister, unsigned __int64 DebugValue);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *DebugRegister*<br/>
-[in] Hata ayıklama tanımlayan 0 ile 7 arasında bir sayı kaydedin.  
-  
+[in] Hata ayıklama tanımlayan 0 ile 7 arasında bir sayı kaydedin.
+
 *DebugValue*<br/>
-[in] Yazma hata ayıklama için bir değer kaydedin.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu iç öğeler yalnızca çekirdek modunda kullanılabilir ve yordamlar yalnızca iç öğe olarak kullanılabilir.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|  
-|---------------|------------------|  
-|`__writedr`|x86, x64|  
-  
- **Üst bilgi dosyası** \<intrin.h >  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   
- [__readdr](../intrinsics/readdr.md)
+[in] Yazma hata ayıklama için bir değer kaydedin.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu iç öğeler yalnızca çekirdek modunda kullanılabilir ve yordamlar yalnızca iç öğe olarak kullanılabilir.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|
+|---------------|------------------|
+|`__writedr`|x86, x64|
+
+**Üst bilgi dosyası** \<intrin.h >
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[__readdr](../intrinsics/readdr.md)

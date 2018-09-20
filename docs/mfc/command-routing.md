@@ -18,40 +18,42 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ecb836f8fee1efab7f5f925c6ec3ce0f470d666b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 543b9e34c881285c295fb7ab7ee2107e36c99a9c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346288"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46418326"
 ---
 # <a name="command-routing"></a>Komut Yönlendirme
-İleti eşleme bağlantıları işleyici işlevlerini Özellikler penceresini kullanın görev ve komutları arasında yapmaya komutları ile çalışırken sizin sorumluluğunuzdadır sınırlıdır. Ayrıca, çoğu komut işleyicileri yazmanız gerekir.  
-  
- Windows iletileri genellikle ana çerçeve penceresi gönderilir ancak komut iletileri sonra diğer nesnelere yönlendirilir. Framework biri komutu için bir işleyici sahip olması beklenir standart bir dizi komut hedefi nesnelerin komutları yönlendirir. Her komut hedefi nesnesi gelen ileti işleme olmadığını görmek için kendi ileti eşlemesi denetler.  
-  
- Farklı komut hedefi sınıfları farklı zamanlarda kendi ileti eşlemeleri denetleyin. Genellikle, bir sınıfı diğer belirli nesnelere bunları ilk komut şansı komutu yönlendirir. Bu nesnelerden hiçbirinin komutu işliyorsa, özgün sınıf kendi ileti eşlemesi denetler. Bir işleyici bilmiyorsanız, daha sonra bu komut için henüz daha fazla komut hedefleri yol. Tablo [standart komut rota](#_core_standard_command_route) aşağıda gösterilmektedir nasıl sınıfların her biri bu sırası yapıları. Komut hedefi bir komut yönlendirir genel sırası şöyledir:  
-  
-1.  Şu anda etkin alt komutu hedef nesnesi için.  
-  
-2.  Kendisi için.  
-  
-3.  Diğer komut hedefleri için.  
-  
- Yönlendirme maliyeti, pahalı bir komutuna yanıt olarak işleyicinizi ne için bu yönlendirme ile karşılaştırıldığında mekanizmasıdır nasıl düşüktür. Yalnızca kullanıcı bir kullanıcı arabirimi nesnesi ile etkileşim olduğunda framework komutları oluşturur aklınızda size aittir.  
-  
-### <a name="_core_standard_command_route"></a> Standart komut yönlendirme  
-  
-|Ne zaman bir komutu bu tür bir nesne alır. biçimindeki telefon numarasıdır. biçimindeki telefon numarasıdır.|Kendisi ve diğer komut hedefi nesneleri bu sırada komutu işlemek için bir fırsat sunar:|  
-|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------|  
-|MDI çerçeve penceresi (`CMDIFrameWnd`)|1.  Etkin `CMDIChildWnd`<br />2.  Bu çerçeve penceresi<br />3.  Uygulama (`CWinApp` nesne)|  
-|Belge çerçeve penceresi (`CFrameWnd`, `CMDIChildWnd`)|1.  Etkin görünümü<br />2.  Bu çerçeve penceresi<br />3.  Uygulama (`CWinApp` nesne)|  
-|Görüntüle|1.  Bu görünüm<br />2.  Görünüme bağlı belge|  
-|Belge|1.  Bu belgede<br />2.  Belgeye ekli belge şablonu|  
-|İletişim kutusu|1.  Bu iletişim kutusu<br />2.  İletişim kutusu sahibi penceresi<br />3.  Uygulama (`CWinApp` nesne)|  
-  
- Önceki tabloda ikinci sütundaki numaralı girişleri Bahsediyor burada bir belge gibi diğer nesneler ilk sütununda karşılık gelen öğe bakın. Görünümü, belge için bir komut iletir ikinci sütunda okurken örneği için daha fazla yönlendirme izlemek için ilk sütunda "Belge" girişine bakın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
+
+İleti eşleme bağlantıları komutları ve Özellikler penceresini kullanın görev bunların işleyici işlevlerine arasında yapmaya komutları ile çalışırken sizin sorumluluğunuzdadır sınırlıdır. Ayrıca, çoğu komut işleyicisi yazmanız gerekir.
+
+Windows iletileri, genellikle ana çerçeve penceresine gönderilir, ancak komut iletilerini sonra diğer nesnelere yönlendirilir. Framework biri de komut için bir işleyici sahip olması bekleniyor standart bir dizi komut hedefi nesnelerin komutları yönlendirir. Her komut hedefi nesnesi gelen ileti başa durumunda görmek için ileti eşlemesi denetler.
+
+Farklı komut hedefi sınıfları, farklı zamanlarda, kendi ileti eşlemeleri denetleyin. Genellikle, bir sınıf, diğer bazı nesnelere bunları komutunun ilk şans verin komutu yönlendirir. Bu nesneler hiçbiri komutu işliyorsa, özgün sınıf kendi ileti eşlemesi denetler. Bir işleyici bilmiyorsanız, ardından, bu komut için henüz daha fazla komut hedefleri yol. Tablo [standart komut yönlendirme](#_core_standard_command_route) aşağıda sınıfların her birini nasıl bu dizisi yapıları gösterir. İçinde komut hedefi bir komut yolları genel sırası şöyledir:
+
+1. Şu anda etkin alt komut hedef nesnesi için.
+
+1. Kendisi için.
+
+1. Diğer komut hedefleri için.
+
+Yönlendirme maliyeti, pahalı bir komutuna yanıt olarak işleyicinizi yaptığı için yönlendirme Bu mekanizma ile karşılaştırıldığında ne düşüktür. Aklınızda yalnızca kullanıcı bir kullanıcı arabirimi nesnesi ile etkileşim kurduğunda framework komutları oluşturur size aittir.
+
+### <a name="_core_standard_command_route"></a> Standart komut yönlendirme
+
+|Bu türde bir nesne bir komutunu aldığında. biçimindeki telefon numarasıdır. biçimindeki telefon numarasıdır.|Kendisi ve diğer komut hedef nesnesi bu sırayla komutunu işlemek için bir fırsat sunar:|
+|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+|MDI çerçeve penceresinin (`CMDIFrameWnd`)|1.  Etkin `CMDIChildWnd`<br />2.  Bu çerçeve penceresi<br />3.  Uygulama (`CWinApp` nesne)|
+|Belge çerçeve penceresi (`CFrameWnd`, `CMDIChildWnd`)|1.  Etkin görünüm<br />2.  Bu çerçeve penceresi<br />3.  Uygulama (`CWinApp` nesne)|
+|Görüntüle|1.  Bu görünüm<br />2.  Görünüme iliştirilmiş belgeye|
+|Belge|1.  Bu belge<br />2.  Belgeye ekli belge şablonu|
+|İletişim kutusu|1.  Bu iletişim kutusu<br />2.  İletişim kutusuna sahip penceresi<br />3.  Uygulama (`CWinApp` nesne)|
+
+Önceki tablonun ikinci sütunda numaralı girişleri bahsetmek burada ilk sütununda karşılık gelen öğe bir belge gibi diğer nesneler bakın. Örneğin, ikinci sütun, görünüm, belge için bir komut iletir okurken, daha fazla yönlendirme izlemek için ilk sütunda "Belge" girdisine bakın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
 

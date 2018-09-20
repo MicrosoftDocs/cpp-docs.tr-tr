@@ -344,14 +344,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3c5f68d35c4cf77073de3f8d2e6090f62a6dae2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 292121e95b20061e95e85b49c60d4758bd18a568
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050105"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435538"
 ---
 # <a name="colecontrol-class"></a>COleControl sınıfı
+
 OLE denetimleri geliştirmek için güçlü bir temel sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
@@ -1440,15 +1441,13 @@ void FireReadyStateChange();
 
 Hazır durumu aşağıdaki değerlerden biri olabilir:
 
-READYSTATE_UNINITIALIZED varsayılan başlatma durumu
-
-Şu anda READYSTATE_LOADING denetim özelliklerini yükleniyor
-
-READYSTATE_LOADED denetim başlatıldı
-
-Etkileşimli olması için yeterli veri READYSTATE_INTERACTIVE denetiminin gerekiyor ancak değil tüm zaman uyumsuz veri henüz yüklenmedi
-
-Tüm veri READYSTATE_COMPLETE denetime sahiptir
+|||
+|-|-|
+|READYSTATE_UNINITIALIZED|Varsayılan başlatma durumu|
+|READYSTATE_LOADING|Denetim özelliklerini şu anda yükleniyor|
+|READYSTATE_LOADED|Denetim başlatıldı|
+|READYSTATE_INTERACTIVE|Etkileşimli olması için yeterli veri denetiminin gerekiyor ancak değil tüm zaman uyumsuz veri henüz yüklenmedi|
+|READYSTATE_COMPLETE|Tüm veri denetime sahiptir|
 
 Kullanım [GetReadyState](#getreadystate) denetimin geçerli hazırlık belirlemek için.
 
@@ -1466,11 +1465,11 @@ virtual DWORD GetActivationPolicy();
 
 POINTERINACTIVE numaralandırma bayrakları birleşimi. Olası bayraklar:
 
-Yerinde bir fare taşıma işlemi sırasında fare geçirilmeden etkinleştirdim POINTERINACTIVE_ACTIVATEONENTRY nesne olmalıdır.
-
-Taşıma işleminin POINTERINACTIVE_DEACTIVATEONLEAVE fare sırasında fare nesne ayrıldığında nesne devre dışı.
-
-POINTERINACTIVE_ACTIVATEONDRAG nesne yerinde fareyi üzerine sürükleyin sırasında sürüklendiğinde etkinleştirilmiş olması ve bırakma işlemi gerekir.
+|||
+|-|-|
+|POINTERINACTIVE_ACTIVATEONENTRY|Nesne yerinde, fare taşıma işlemi sırasında fare girdiğinde, etkinleştirilmiş olmalıdır.|
+|POINTERINACTIVE_DEACTIVATEONLEAVE|Fare taşıma işlemi sırasında fare nesne ayrıldığında nesne devre dışı.|
+|POINTERINACTIVE_ACTIVATEONDRAG|Nesne, yerinde fareyi üzerine sürükleyin sırasında sürüklendiğinde etkinleştirilmiş olması ve bırakma işlemi.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1915,15 +1914,13 @@ long GetReadyState();
 
 Hazırlık durumu denetimi aşağıdaki değerlerden biri:
 
-READYSTATE_UNINITIALIZED varsayılan başlatma durumu
-
-Şu anda READYSTATE_LOADING denetim özelliklerini yükleniyor
-
-READYSTATE_LOADED denetim başlatıldı
-
-Etkileşimli olması için yeterli veri READYSTATE_INTERACTIVE denetiminin gerekiyor ancak değil tüm zaman uyumsuz veri henüz yüklenmedi
-
-Tüm veri READYSTATE_COMPLETE denetime sahiptir
+|||
+|-|-|
+|READYSTATE_UNINITIALIZED|Varsayılan başlatma durumu|
+|READYSTATE_LOADING|Denetim özelliklerini şu anda yükleniyor|
+|READYSTATE_LOADED|Denetim başlatıldı|
+|READYSTATE_INTERACTIVE|Etkileşimli olması için yeterli veri denetiminin gerekiyor ancak değil tüm zaman uyumsuz veri henüz yüklenmedi|
+|READYSTATE_COMPLETE|Tüm veri denetime sahiptir|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2065,15 +2062,13 @@ void InternalSetReadyState(long lNewReadyState);
 *lNewReadyState*<br/>
 Denetim için aşağıdaki değerlerden birini ayarlamak için hazır olma durumu:
 
-READYSTATE_UNINITIALIZED varsayılan başlatma durumu
-
-Şu anda READYSTATE_LOADING denetim özelliklerini yükleniyor
-
-READYSTATE_LOADED denetim başlatıldı
-
-Etkileşimli olması için yeterli veri READYSTATE_INTERACTIVE denetiminin gerekiyor ancak değil tüm zaman uyumsuz veri henüz yüklenmedi
-
-Tüm veri READYSTATE_COMPLETE denetime sahiptir
+|||
+|-|-|
+|READYSTATE_UNINITIALIZED|Varsayılan başlatma durumu|
+|READYSTATE_LOADING|Denetim özelliklerini şu anda yükleniyor|
+|READYSTATE_LOADED|Denetim başlatıldı|
+|READYSTATE_INTERACTIVE|Etkileşimli olması için yeterli veri denetiminin gerekiyor ancak değil tüm zaman uyumsuz veri henüz yüklenmedi|
+|READYSTATE_COMPLETE|Tüm veri denetime sahiptir|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2848,13 +2843,12 @@ virtual DWORD OnGetViewStatus();
 
 Başarılı olursa VIEWSTATUS numaralandırma değerlerinden birini; Aksi durumda 0. Olası değerler aşağıdaki herhangi bir birleşimini şunlardır:
 
-VIEWSTATUS_OPAQUE nesne tamamen donuktur. Bu biti ayarlanmazsa, nesne saydam bölümleri içerir. Bu bit yalnızca içeriğiyle ilgili yönünü ve DVASPECT_ICON veya DVASPECT_ICON geçerlidir.
-
-VIEWSTATUS_SOLIDBKGND nesne (bir düz renkli fırça deseni oluşan) sağlam bir arka plana sahip. Yalnızca VIEWSTATUS_OPAQUE ayarlanır ve yalnızca içeriğiyle ilgili yönünü ve DVASPECT_ICON veya DVASPECT_ICON geçerlidir, bu bit anlam ifade eder.
-
-VIEWSTATUS_DVASPECTOPAQUE nesne DVASPECT_OPAQUE destekler. Bu yönü bir parametre çağrılabilir gibi bir çizimin görünüş bilgisini tarif ele tüm IViewObjectEx yöntemleri.
-
-VIEWSTATUS_DVASPECTTRANSPARENT nesne DVASPECT_TRANSPARENT destekler. Tüm `IViewObjectEx` bu yönü bir parametre çağrılabilir gibi bir çizimin görünüş bilgisini tarif ele yöntemleri.
+|||
+|-|-|
+|VIEWSTATUS_OPAQUE|Tamamen opak nesnedir. Bu biti ayarlanmazsa, nesne saydam bölümleri içerir. Bu bit yalnızca içeriğiyle ilgili yönünü ve DVASPECT_ICON veya DVASPECT_ICON geçerlidir.|
+|VIEWSTATUS_SOLIDBKGND|Nesne (bir düz renkli fırça deseni oluşan) sağlam bir arka plana sahip. Yalnızca VIEWSTATUS_OPAQUE ayarlanır ve yalnızca içeriğiyle ilgili yönünü ve DVASPECT_ICON veya DVASPECT_ICON geçerlidir, bu bit anlam ifade eder.|
+|VIEWSTATUS_DVASPECTOPAQUE|Nesne DVASPECT_OPAQUE destekler. Bu yönü bir parametre çağrılabilir gibi bir çizimin görünüş bilgisini tarif ele tüm IViewObjectEx yöntemleri.|
+|VIEWSTATUS_DVASPECTTRANSPARENT|Nesne DVASPECT_TRANSPARENT destekler. Tüm `IViewObjectEx` bu yönü bir parametre çağrılabilir gibi bir çizimin görünüş bilgisini tarif ele yöntemleri.|
 
 ### <a name="remarks"></a>Açıklamalar
 

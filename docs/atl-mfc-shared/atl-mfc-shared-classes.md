@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2080aae34a69b18286953bfa48a269b81a5a5e65
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1d6feb80c93298d5fe3d2cb23f9b34727bced57d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761819"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442233"
 ---
 # <a name="atlmfc-shared-classes"></a>ATL/MFC Paylaşılan Sınıfları
 
@@ -44,16 +44,16 @@ Bu yardımcı sınıflar, herhangi bir MFC DLL gerek kalmadan herhangi bir yerel
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[MFC ve ATL arasında paylaşılan sınıfları](../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md)  
+[MFC ve ATL arasında paylaşılan sınıfları](../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md)<br/>
 MFC ve ATL arasında paylaşılan sınıfların bağlantılarını sağlar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[Etkin Şablon kitaplığı (ATL) başvurusu](../atl/atl-com-desktop-components.md)  
+[Etkin Şablon kitaplığı (ATL) başvurusu](../atl/atl-com-desktop-components.md)<br/>
 COM nesnelerinin programlamasını basitleştiren, şablona dayalı bir küme C++ sınıfı olan ATL kitaplığı için bir başvuru malzemesi sağlar.
 
-[Microsoft Foundation Class (MFC) kitaplığı başvurusu](../mfc/mfc-desktop-applications.md)  
+[Microsoft Foundation Class (MFC) kitaplığı başvurusu](../mfc/mfc-desktop-applications.md)<br/>
 Sınıflar, bir dizi oluşturan Windows API için yazılan uygulamanın çerçevesi bir uygulama çerçevesi olan MFC Kitaplığı için başvuru materyalleri sağlar.
 
-[Hata Ayıklama](/visualstudio/debugger/debugging-in-visual-studio)  
+[Hata Ayıklama](/visualstudio/debugger/debugging-in-visual-studio)<br/>
 Uygulamanızdaki veya saklı yordamları mantık hatalarını düzeltmek için Visual Studio hata ayıklayıcı kullanımına ilişkin bağlantılar sağlar.

@@ -16,20 +16,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 580c11d19a1d2ea5510390296a80589cce988f12
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 54a9f68c1cd750cd3d0e5c638d1ab101a8588a61
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33327817"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46416896"
 ---
 # <a name="command-line-property-pages"></a>Komut Satırı Özellik Sayfaları
-Çoğu özellik sayfası klasörleri içeren bir **komut satırı** özellik sayfası. Hangi özellikler klasöründe ayarlanır bu sayfa görüntülenir. **Komut satırı** özellik sayfası de içeren bir **ek seçenekler** aracı için geçerli olan özellikler belirtebileceğiniz kutusu ancak kendisi için bir özellik yok klasöründe.  
-  
- Düzenleme kutusuna girdiğiniz komutu aracılığıyla klasörü için aracı geçirilir. Hiçbir doğrulama veya denetim girdisi yapılır ya da devam eder herhangi bir bağımlılık denetimi.  
-  
- Nasıl erişileceği hakkında bilgi için **komut satırı** özellik sayfalarına bakın [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özellik sayfaları](../ide/property-pages-visual-cpp.md)   
- [Bağlayıcı Girişi olarak .Lib Dosyaları](../build/reference/dot-lib-files-as-linker-input.md)
+
+Çoğu özellik sayfası klasörleri içeren bir **komut satırı** özellik sayfası. Klasörde hangi özellikler ayarlanır bu sayfa görüntülenir. **Komut satırı** özellik sayfası da içeren bir **ek seçenekler** araç için geçerli olan özellikleri belirleyebileceğiniz kutusu ancak kendisi için bir özellik yok klasöründe.
+
+Düzenleme kutusuna girin herhangi bir komutu aracılığıyla klasörü için aracına geçirilir. Hiçbir doğrulama veya denetimleri giriş yapılır ya da olacak herhangi bir bağımlılık denetimi.
+
+Erişim hakkında daha fazla bilgi için **komut satırı** özellik sayfalarına bakın [Working with Project Properties](../ide/working-with-project-properties.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Özellik Sayfaları](../ide/property-pages-visual-cpp.md)<br>
+[Bağlayıcı Girişi olarak .Lib Dosyaları](../build/reference/dot-lib-files-as-linker-input.md)

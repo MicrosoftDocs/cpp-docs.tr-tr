@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 49fada071661bd647e012bfdfac2aeedabba68fa
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 47afe841a2a8e4a1c41baf68dfd139a70b320c7d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206608"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394471"
 ---
 # <a name="helpstringcontext"></a>helpstringcontext
 
@@ -38,7 +38,7 @@ Bir .hlp veya .chm dosyasında bir Yardım konusu Kimliğini belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*Contextıd*  
+*Contextıd*<br/>
 Bir 32-bit Yardım bağlamı tanımlayıcıda **yardımcı** dosya.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -79,8 +79,8 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Arabirim Öznitelikleri](../windows/interface-attributes.md)  
-[Sınıf Öznitelikleri](../windows/class-attributes.md)  
-[Yöntem Öznitelikleri](../windows/method-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Arabirim Öznitelikleri](../windows/interface-attributes.md)<br/>
+[Sınıf Öznitelikleri](../windows/class-attributes.md)<br/>
+[Yöntem Öznitelikleri](../windows/method-attributes.md)<br/>
 [Modülü](../windows/module-cpp.md)  

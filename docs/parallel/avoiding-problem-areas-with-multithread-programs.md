@@ -17,21 +17,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97a69c52adb5094c7c7841a93b73b1a83cd786d9
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 4da775a8b068db830d161936a1ca93890d54a1f2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131068"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425424"
 ---
 # <a name="avoiding-problem-areas-with-multithread-programs"></a>Çoklu İş Parçacığı Kullanan Programlarda Sorun Alanlarından Kaçınma
-Oluşturma, bağlama veya çoklu iş parçacığı kullanan C programı yürütme karşılaşabileceğiniz bazı sorunlar vardır. Aşağıdaki tabloda bazı yaygın sorunlar açıklanmaktadır. (MFC açısından benzer bir tartışma için bkz: [çoklu iş parçacığı kullanımı: programlama ipuçları](multithreading-programming-tips.md).)  
-  
-|Sorun|Olası neden|  
-|-------------|--------------------|  
-|Programınızı koruma ihlaline neden olduğunu gösteren bir ileti kutusu sahip olursunuz.|Birçok Win32 programlama hatalarını koruma ihlallerine neden. Yaygın bir nedeni, koruma ihlalleri, null işaretçi veri dolaylı atamadır. Kendisine ait olmayan belleğe erişmeye çalışırken programınızı sonuçlanır olduğundan koruma ihlali verilir.<br /><br /> Koruma ihlalinin nedeni algılamak için kolay bir yolu, programınızın hata ayıklama bilgileri ile derleyin ve çalıştırın hata ayıklayıcıyla Visual C++ ortamında sağlamaktır. Koruma hatası oluştuğunda, Windows hata ayıklayıcısı için Denetim aktarır ve imleci soruna neden satırda konumlandırılır.|  
-|Programınız, çok sayıda derleme ve bağlama hataları oluşturur.|Derleyicinin uyarı düzeyi bir en yüksek değerleri ayarlama ve uyarı iletilerini önemseyerek birçok olası sorunları ortadan kaldırabilir. Düzey 4 uyarısı düzeyi seçenekleri ve Düzey 3'ı kullanarak yanlışlıkla veri dönüşümleri, eksik işlev prototipleri ve ANSI olmayan özelliklerinin kullanımını da algılayabilir.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+
+Oluşturma, bağlama veya çoklu iş parçacığı kullanan C programı yürütme karşılaşabileceğiniz bazı sorunlar vardır. Aşağıdaki tabloda bazı yaygın sorunlar açıklanmaktadır. (MFC açısından benzer bir tartışma için bkz: [çoklu iş parçacığı kullanımı: programlama ipuçları](multithreading-programming-tips.md).)
+
+|Sorun|Olası neden|
+|-------------|--------------------|
+|Programınızı koruma ihlaline neden olduğunu gösteren bir ileti kutusu sahip olursunuz.|Birçok Win32 programlama hatalarını koruma ihlallerine neden. Yaygın bir nedeni, koruma ihlalleri, null işaretçi veri dolaylı atamadır. Kendisine ait olmayan belleğe erişmeye çalışırken programınızı sonuçlanır olduğundan koruma ihlali verilir.<br /><br /> Koruma ihlalinin nedeni algılamak için kolay bir yolu, programınızın hata ayıklama bilgileri ile derleyin ve çalıştırın hata ayıklayıcıyla Visual C++ ortamında sağlamaktır. Koruma hatası oluştuğunda, Windows hata ayıklayıcısı için Denetim aktarır ve imleci soruna neden satırda konumlandırılır.|
+|Programınız, çok sayıda derleme ve bağlama hataları oluşturur.|Derleyicinin uyarı düzeyi bir en yüksek değerleri ayarlama ve uyarı iletilerini önemseyerek birçok olası sorunları ortadan kaldırabilir. Düzey 4 uyarısı düzeyi seçenekleri ve Düzey 3'ı kullanarak yanlışlıkla veri dönüşümleri, eksik işlev prototipleri ve ANSI olmayan özelliklerinin kullanımını da algılayabilir.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](multithreading-with-c-and-win32.md)

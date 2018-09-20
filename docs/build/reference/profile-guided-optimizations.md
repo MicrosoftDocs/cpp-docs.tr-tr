@@ -15,93 +15,94 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7d6de281097232b1b8abc10a103af9c186e3550
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b4914b809e8e88ca07cf97af2f4d5405087cf549
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379412"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46417416"
 ---
 # <a name="profile-guided-optimizations"></a>Profil Temelli İyileştirmeler
 
-Profil temelli iyileştirme burada iyileştirici test çalışmalarını .exe veya .dll dosyasının verilerini kullanır bir çıktı dosyası en iyi hale getirmenize olanak tanır. Verileri nasıl program bir üretim ortamında gerçekleştirmek büyük olasılıkla temsil eder.
+Profil temelli iyileştirme burada iyileştirici .exe veya .dll dosyasının test çalıştırmalarını verileri kullanan bir çıktı dosyası iyileştirmenize olanak tanır. Verilerin nasıl program bir üretim ortamında gerçekleştirmek büyük olasılıkla temsil eder.
 
-Profil temelli iyileştirmeler yalnızca x86 veya x64 yerel hedefler için kullanılabilir. Profil temelli iyileştirmeler, ortak dil çalışma zamanı üzerinde çıktı dosyaları kullanılabilir değil. Karışık yerel ve yönetilen kod ile bir derlemeyi üretmek olsa bile (kullanarak **/CLR** derleyici seçeneği), yalnızca yerel kod profil temelli iyileştirme kullanamazsınız. IDE içinde ayarlama Bu seçeneklere sahip bir projeyi derleme çalışırsanız, bir derleme hatası oluşur.
+Profil temelli iyileştirmeler yalnızca x86 veya x64 yerel hedefler için kullanılabilir. Profil temelli iyileştirmeler, ortak dil çalışma zamanı üzerinde çalışan Çıkış dosyalarını kullanılabilir değil. Bir derleme ile karışık yerel ve yönetilen kod üretmek olsa bile (kullanarak **/CLR** derleyici seçeneği), yalnızca yerel kod profil temelli iyileştirme kullanamazsınız. IDE içinde ayarlamak Bu seçeneklere sahip bir projeyi oluşturmayı denerseniz, bir yapı hatası oluşur.
 
 > [!NOTE]
-> Test çalışmaları profil toplanan bilgileri geçersiz kılmalar belirtirseniz, aksi takdirde etkili olacak en iyi duruma getirme **/Ob**, **/Os**, veya **/Ot**. Daha fazla bilgi için bkz: [/Ob (satır içi işlev genişletmesi)](../../build/reference/ob-inline-function-expansion.md) ve [/Os, /Ot (küçük koda, ayrıcalık hızlı koda ayrıcalık tanı)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md).
+> Test çalıştırmalarını profil oluşturmadan toplanan bilgileri geçersiz kılar belirtirseniz, aksi takdirde etkili olacak en iyi duruma getirme **/Ob**, **/Os**, veya **/Ot**. Daha fazla bilgi için [/Ob (satır içi işlev genişletmesi)](../../build/reference/ob-inline-function-expansion.md) ve [/Os, /Ot (küçük koda, ayrıcalık hızlı koda ayrıcalık tanı)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md).
 
-## <a name="steps-to-optimize-your-app"></a>Uygulamanızı en iyi duruma getirme adımları
+## <a name="steps-to-optimize-your-app"></a>Uygulamanızı iyileştirme adımları
 
 Profil temelli iyileştirme kullanmak için uygulamanızı en iyi duruma getirmek için aşağıdaki adımları izleyin:
 
-- Bir veya daha fazla kaynak kodu dosyaları ile derleme [/GL](../../build/reference/gl-whole-program-optimization.md).
+- Bir veya daha fazla kaynak kod dosyalarını içeren derleme [/GL](../../build/reference/gl-whole-program-optimization.md).
 
-   İle oluşturulan her modül **/GL** çalışma zamanı davranışını yakalamak için profil temelli iyileştirme test çalışmaları sırasında incelenebilir. Her bir profil temelli iyileştirme yapı modülünde ile derlenmek zorunda değildir **/GL**. Ancak, yalnızca bu ile koda derlenmiş modüller **/GL** Araçlı ve daha sonra kullanılabilir profil temelli iyileştirmeler.
+   Her modülü ile oluşturulmuş **/GL** çalışma zamanı davranışını yakalamak için profil temelli iyileştirme test çalıştırmaları sırasında incelenebilir. Profil temelli iyileştirme derlemedeki her bir modüle ile derlenmiş gerekmez **/GL**. İle derlenmiş Modüller yalnızca ancak **/GL** profil temelli iyileştirmeler belgelenmiş ve daha sonra kullanılabilir.
 
-- Kullanarak bağlantı [/LTCG](../../build/reference/ltcg-link-time-code-generation.md) ve [/GENPROFILE veya /FASTGENPROFILE](../../build/reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md).
+- Kullanarak bağlantıyı [/LTCG](../../build/reference/ltcg-link-time-code-generation.md) ve [/genprofıle veya fastgenprofıle](../../build/reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md).
 
-   Her ikisini de kullanarak **/LTCG** ve **/GENPROFILE** veya **/FASTGENPROFILE** Araçlı uygulama çalıştırıldığında bir .pgd dosyası oluşturur. Test çalıştırma veri .pgd dosyasına eklendikten sonra sonraki bağlantı adım (en iyi duruma getirilmiş görüntü oluşturma) giriş olarak kullanılabilir. Belirtirken **/GENPROFILE**, isteğe bağlı olarak ekleyebileceğiniz bir **PGD =**_filename_ değişkenini kullanarak bir varsayılan olmayan adı veya .pgd dosyası için konumu belirtin. Birleşimi **/LTCG** ve **/GENPROFILE** veya **/FASTGENPROFILE** bağlayıcı seçenekleri değiştirir kullanım dışı **/LTCG:PGINSTRUMENT** bağlayıcı seçeneği.
+   Her ikisini de kullanarak **/LTCG** ve **/genprofıle** veya **fastgenprofıle** izleme eklenmiş uygulama çalıştırıldığında bir .pgd dosyası oluşturur. .Pgd dosyası için test çalıştırması veri eklendikten sonra sonraki bağlantı adım (en iyi duruma getirilmiş görüntü oluşturma) giriş olarak kullanılabilir. Belirtirken **/genprofıle**, isteğe bağlı olarak ekleyebileceğiniz bir **PGD =**_filename_ bağımsız değişkenin bir varsayılan olmayan ad veya konum için .pgd dosyası belirtin. Birleşimi **/LTCG** ve **/genprofıle** veya **fastgenprofıle** bağlayıcı seçenekleri değiştirir kullanım dışı **/LTCG:PGINSTRUMENT** bağlayıcı seçeneği.
 
 - Uygulama profili.
 
-   Her zaman bir profili EXE oturumu sona erer veya profili DLL kaldırılmadan bir *appname*! # .pgc dosyası oluşturulur. .Pgc dosya belirli bir uygulama testi hakkında bilgi içerir. # olduğu diğer numarasına göre artırılır 1 ile başlayan bir sayı *appname*! dizinindeki # .pgc dosyaları. Test çalışmasını en iyi duruma getirmek istediğiniz bir senaryoyu temsil etmeyen .pgc dosya silebilirsiniz.
+   Her zaman, profili oluşturulmuş bir EXE oturumu sona erer veya profili oluşturulmuş bir DLL yüklenmemiş bir *appname*! # .pgc dosyası oluşturulur. .Pgc dosyası, belirli uygulama testi hakkında bilgi içerir. #, diğer sayısına göre artırılır 1 ile başlayan bir sayıdır *appname*! # .pgc dosyaları dizini. Test çalıştırması en iyi duruma getirmek istediğiniz bir senaryoyu temsil etmeyen bir .pgc dosyası silebilirsiniz.
 
-   Testi sırasında şu anda açık .pgc dosyasının Kapatılmak üzere ve yeni bir .pgc dosya ile oluşturulmasını zorlayabilirsiniz [pgosweep](../../build/reference/pgosweep.md) (örneğin, bir test senaryosu sonuna uygulama kapatma değil çakıştığında) yardımcı programı.
+   Bir test çalıştırması sırasında açık .pgc dosyası kapatılmasını ve yeni bir .pgc dosyası ile oluşturulmasını zorlayabilirsiniz [pgosweep](../../build/reference/pgosweep.md) (örneğin, bir testi senaryosu sonuna uygulama kapatma değil çakıştığında) yardımcı programı.
 
-   Uygulamanız da doğrudan PGO işlevi çağırma [PgoAutoSweep](pgoautosweep.md).pgc dosyası olarak çağrı noktasında profil verilerini yakalamak için. Bu, yakalanan verileri .pgc dosyalarında kapsamındaki kod üzerinde daha hassas denetim verebilirsiniz. Bu işlevi kullanmak nasıl bir örnek için bkz: [PgoAutoSweep](pgoautosweep.md) belgeleri.
+   Uygulamanız da doğrudan bir PGO işlevi çağırabilirsiniz [PgoAutoSweep](pgoautosweep.md).pgc dosyası olarak çağrısı noktasında profil verilerini yakalamak için. Bu, yakalanan verileri .pgc dosyaları tarafından kapsanan kod üzerinde daha ince denetim verebilirsiniz. Bu işlevi kullanmak nasıl bir örnek için bkz [PgoAutoSweep](pgoautosweep.md) belgeleri.
 
-   Varsayılan olarak işaretlenmiş yapınızın oluşturduğunuzda, veri toplama hızlıdır ancak tamamen doğru olmayabilir iş parçacığı güvenli modda gerçekleştirilir. Kullanarak **tam** bağımsız değişkeni **/GENPROFILE** veya **/FASTGENPROFILE**, ancak daha yavaş daha doğru iş parçacığı açısından güvenli modda veri toplama belirtebilirsiniz. Bu seçenek ayrıca kullanım dışı ayarlarsanız kullanılabilir [PogoSafeMode](environment-variables-for-profile-guided-optimizations.md#pogosafemode) ortam değişkeni veya kullanım dışı **/POGOSAFEMODE** Araçlı yapınızın oluşturduğunuzda, bağlayıcı seçeneği.
+   Varsayılan olarak, izleme eklenmiş bir derleme oluşturduğunuzda, daha hızlıdır ancak tamamen doğru olmayabilir, iş parçacığı güvenli olmayan modda veri toplama gerçekleştirilir. Kullanarak **EXACT** bağımsız değişkeni **/genprofıle** veya **fastgenprofıle**, daha yavaş ancak daha doğru olan iş parçacığı açısından güvenli modda veri koleksiyonu belirtin. Bu seçenek, ayrıca kullanım dışı ayarlarsanız kullanılabilir [PogoSafeMode](environment-variables-for-profile-guided-optimizations.md#pogosafemode) ortam değişkeni veya kullanım dışı **/POGOSAFEMODE** Araçlı derlemenizi oluştururken bağlayıcı seçeneği.
 
-- Kullanarak bağlantı **/LTCG** ve **/USEPROFILE**.
+- Kullanarak bağlantıyı **/LTCG** ve **/USEPROFILE**.
 
-   Her ikisini de kullanmanız **/LTCG** ve [/USEPROFILE](useprofile.md) en iyi duruma getirilmiş görüntüsü oluşturmak için bağlayıcı seçenekleri. Bu adım alır giriş .pgd dosyası. Belirttiğinizde **/USEPROFILE**, isteğe bağlı olarak ekleyebileceğiniz bir **PGD =**_filename_ değişkenini kullanarak bir varsayılan olmayan adı veya .pgd dosyası için konumu belirtin. Kullanım dışı kullanarak bu ad ayrıca belirtebilirsiniz **/PGD** bağlayıcı seçeneği. Birleşimi **/LTCG** ve **/USEPROFILE** kullanım dışı değiştirir **/LTCG:PGOPTIMIZE** ve **/LTCG:PGUPDATE** bağlayıcı seçenekleri.
+   İkisi de **/LTCG** ve [/USEPROFILE](useprofile.md) iyileştirilmiş görüntü oluşturmak için bağlayıcı seçenekleri. Bu adım alır .pgd dosyası girin. Belirttiğinizde **/USEPROFILE**, isteğe bağlı olarak ekleyebileceğiniz bir **PGD =**_filename_ bağımsız değişkenin bir varsayılan olmayan ad veya konum için .pgd dosyası belirtin. Kullanım dışı'ı kullanarak bu ad ayrıca belirtebilirsiniz **/PGD** bağlayıcı seçeneği. Birleşimi **/LTCG** ve **/USEPROFILE** kullanım dışı değiştirir **/LTCG:PGOPTIMIZE** ve **/LTCG:PGUPDATE** bağlayıcı seçenekleri.
 
-En iyi duruma getirilmiş çıktı dosyası oluşturun ve daha sonra ek profil daha iyileştirilmiş bir görüntü oluşturmak yararlı olabilecek olduğunu belirlemek bile mümkündür. İzleme eklenmiş görüntü ve .pgd dosyası varsa, ek test çalışmalarını yapın ve en iyi duruma getirilmiş görüntünün aynı kullanarak, daha yeni .pgd dosyasıyla yeniden oluşturulması **/LTCG** ve **/USEPROFILE** bağlayıcı seçenekleri .
+En iyi duruma getirilmiş çıkış dosyası oluşturmak ve daha sonra ek profil oluşturma daha iyileştirilmiş bir görüntü oluşturmak kullanışlı olurdu olduğunu belirlemek bile mümkündür. Alet düzeni görüntüsü ve .pgd dosyası varsa, ek test çalıştırmaları yapın ve aynı kullanarak yeni .pgd dosyası ile iyileştirilmiş görüntü yeniden **/LTCG** ve **/USEPROFILE** bağlayıcı seçenekleri .
 
-## <a name="optimizations-performed-by-pgo"></a>PGO tarafından gerçekleştirilen en iyi duruma getirme
+## <a name="optimizations-performed-by-pgo"></a>PGO tarafından gerçekleştirilen iyileştirmeleri
 
-Profil temelli iyileştirmeler listesi aşağıdadır:
+Profil temelli iyileştirmeler listesi verilmiştir:
 
-- **Satır içi kullanım** - Örneğin, bir işlev B, sık işlev çağrıları ve B işlevi görece küçük ardından profil temelli iyileştirmeler olacak A. işlevindeki satır içi işlev B A varsa
+- **Satır içi kullanım** - Örneğin, bir işlev sık B, işlev çağrıları ve B işlevi görece küçük sonra profil temelli iyileştirmeler olacak işlevde A. B satır içi işlevi bir varsa
 
-- **Sanal çağrısı Spekülasyon** -belirli bir işlevi veya diğer yapılan bir işlev işaretçisi aracılığıyla sanal bir çağrı sık hedefler, profil temelli iyileştirme sık hedeflenen işlevi koşullu yürütülebilir doğrudan çağrısı ekleyebilirsiniz ve doğrudan çağrı içermesinden olabilir.
+- **Sanal çağrı Spekülasyon** -belirli bir işlev sanal bir çağrı veya diğer çağrı bir işlev işaretçisi aracılığıyla sık olmasını istiyorsanız, bir profil temelli iyileştirme sık hedeflenen işlevi koşullu olarak yürütülen doğrudan çağrı ekleyebilirsiniz ve doğrudan çağrı satır içine alınmış olabilir.
 
-- **Ayırma kaydetmek** - profili verisi sonuçlarının daha iyi yazmaç ayırma ile en iyi duruma getirme.
+- **Ayırma kaydetme** - daha iyi register ayırma profil verisi sonuçlarının ile en iyi duruma getirme.
 
-- **Temel blok iyileştirme** -temel blok iyileştirme sayfaları (konum) aynı kümesinde yerleştirilecek verilen çerçevesinde geçici olarak execute yaygın olarak yürütülen temel blokları sağlar. Bu nedenle bellek yükünü en aza kullanıldığında, sayfa sayısını en aza indirir.
+- **Temel blok iyileştirme** -temel blok iyileştirme düşünülebilir (konumu) sayfaların aynı kümesine yerleştirilmesi için belirli bir çerçeve içinde yürütülen yaygın olarak yürütülen temel blokları sağlar. Bu nedenle bellek yükünü en aza kullanılan sayfa sayısını en aza indirir.
 
-- **Boyutu/hızı en iyi duruma getirme** -burada program harcadığı çok zaman işlevler hızı için iyileştirilebilir.
+- **Boyutu/hızını en iyi duruma getirme** -burada çok zaman harcadığı program işlevleri hızı iyileştirilebilir.
 
-- **İşlev düzeni** - çağrı grafik üzerinde temel ve arayan/aranan davranış profili aynı yürütme yol boyunca olma eğilimindedir işlevleri, aynı bölümde yerleştirilir.
+- **İşlev Düzen** - çağrı graf üzerinde temel ve çağıran/çağrılan davranış profili aynı yürütme yolda olma eğilimindedir işlevleri aynı bölümde yerleştirilir.
 
-- **Koşullu dal iyileştirme** - profil temelli değeri araştırmalar ile en iyi duruma getirme, anahtar deyimi içinde belirli bir değeri diğer değerleri daha sık kullanılan bulabilir.  Bu değer daha sonra switch deyimi dışında çekebilir.  Aynı, eğer/else yönergeleri burada iyileştirici sıralayabilirsiniz yapılabilir IF/başka böylece ya da Eğer veya başka blok yerleştirilir ilk bağlı olarak hangi blok daha sık true.
+- **Koşullu dalı iyileştirme** - değer araştırmaları, profil temelli iyileştirmeler, belirli bir değeri bir switch deyiminde diğer değerlere daha sık kullanılan bulabilirsiniz.  Bu değer, ardından switch deyimini çekilebilir.  Aynı ile if/else yönergeleri burada iyileştirici sıralayabilirsiniz yapılabilir if/else böylece ya da Eğer veya başka bir blok yerleştirilir ilk bağlı olarak hangi blok daha sık değer true şeklindedir.
 
-- **Ölü kod ayrımı** -bölümleri kümesinin sonuna eklenen özel bir bölüm için profil oluşturma sırasında çağrılmaz kod taşındı. Bu etkili bir şekilde bu bölümde sık kullanılan sayfaları dışında tutar.
+- **Ölü kod ayırma** -bölümleri kümesini sonuna eklenen özel bir bölümü için profil oluşturma sırasında çağrılmaz kod taşınır. Bu etkili bir şekilde bu bölümde sık kullanılan sayfaları dışında tutar.
 
-- **EH kod ayrımı** -EH kod, olağanüstü yürütülmekte genellikle değiştirilebileceği için ayrı bir bölümde profil temelli iyileştirmeler özel durumlar yalnızca olağanüstü koşullara ortaya karar verirken.
+- **EH kod ayırma** -EH kod olağanüstü yürütülmekte olan, genellikle taşınabilir ayrı bir bölüme profil temelli iyileştirmeler özel durumlar'ın üzerinde yalnızca özel durumları ortaya karar verirken.
 
-- **Bellek iç bilgileri** -bir iç sık çağrıldıysa belirlenemediğinden, iç bilgileri genişletme daha iyi karar. Bir iç da taşır veya kopya blok boyutuna göre iyileştirilebilir.
+- **Bellek yapı içleri** -bir iç öğe genellikle çağrılırsa belirlenebilir, yapı içleri genişletilmesi daha iyi karar. Bir iç öğe Ayrıca taşıma veya kopya blok boyutuna göre iyileştirilebilir.
 
-Visual Studio 2013 kullanıyorsanız, otomatik kullanabilirsiniz [profil temelli iyileştirme eklentisi](../../build/reference/profile-guided-optimization-in-the-performance-and-diagnostics-hub.md) performans ve tanılama hub'ı basitleştirmek ve Visual Studio içinde en iyi duruma getirme işlemini kolaylaştırmak için Visual C++ için. Bu eklenti Visual Studio sonraki sürümlerinde kullanılabilir değil.
+Visual Studio 2013 kullanıyorsanız, otomatik kullanabilirsiniz [profil destekli iyileştirme eklentisi](../../build/reference/profile-guided-optimization-in-the-performance-and-diagnostics-hub.md) performans ve tanılama hub'ı Visual Studio'dan en iyi duruma getirme işlemini kolaylaştırmak ve Visual C++ için. Bu eklenti, Visual Studio'nun sonraki sürümlerinde kullanılamaz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu ortam değişkenleri, İşlevler ve araçları hakkında daha fazla profil temelli iyileştirmeler kullanabilirsiniz:
+Bu ortam değişkenleri, İşlevler ve araçlar hakkında daha fazla profil temelli iyileştirmeler kullanabilirsiniz:
 
 [Profil Temelli İyileştirmeler için Ortam Değişkenleri](../../build/reference/environment-variables-for-profile-guided-optimizations.md)<br/>
-Bu değişkenler senaryolarınızı test çalışma zamanı davranışını belirtmek için kullanılabilir. Bunlar lehinde kaldıran yeni bağlayıcı seçenekleri kullanım dışı bırakıldı; ortam değişkenlerinin bağlayıcı seçenekleri taşımanıza yardımcı olmak için bunu okuyun.
+Bu değişkenler senaryoları test çalışma zamanı davranışını belirtmek için kullanılabilir. Yeni bağlayıcı seçenekleri yerine kaldırılmıştır; Bu, bağlayıcı seçenekleri ortam değişkenlerinden taşımanıza yardımcı olmak için okuyun.
 
 [PgoAutoSweep](pgoautosweep.md)<br/>
-Bir işlev hassas .pgc dosya veri yakalama denetimi sağlamak için uygulamanızın ekleyebilirsiniz.
+Bir işlev ayrıntılı .pgc dosyası veri yakalama denetim sağlamak için uygulamanıza ekleyebilirsiniz.
 
 [pgosweep](../../build/reference/pgosweep.md)<br/>
-Tüm profil verilerini .pgc dosyasına yazar bir komut satırı yardımcı programı .pgc dosyayı kapatır ve yeni bir .pgc dosyası açar.
+Tüm profil verilerini yazar .pgc dosyası için bir komut satırı yardımcı programını .pgc dosyası kapatır ve yeni bir .pgc dosyası açılır.
 
 [pgomgr](../../build/reference/pgomgr.md)<br/>
-Profil verileri bir veya daha fazla .pgc dosyalarından .pgd dosyasına ekler. bir komut satırı yardımcı programı.
+Profil verileri, bir veya daha fazla .pgc dosyaları için .pgd dosyası ekler. bir komut satırı yardımcı programı.
 
-[Nasıl yapılır: birleştirme birden çok PGO profilini tek profilde içine](../../build/reference/how-to-merge-multiple-pgo-profiles-into-a-single-profile.md) örnekleri **pgomgr** kullanımı.
+[Nasıl Yapılır: Birden Çok PGO Profilini Tek Profilde Birleştirme](../../build/reference/how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)<br/>
+Örnekleri **pgomgr** kullanım.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

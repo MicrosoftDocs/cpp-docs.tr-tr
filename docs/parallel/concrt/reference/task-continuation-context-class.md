@@ -22,135 +22,149 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37b218a6db251123513ca155fd491fee7ebabd13
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d0b1cff6dbb816d3dddc6b3ad8090fd30413e336
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689187"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392638"
 ---
 # <a name="taskcontinuationcontext-class"></a>task_continuation_context Sınıfı
-`task_continuation_context` Sınıfı yürütülecek bir devamlılık oluşturulacağı yeri belirtmenize olanak verir. Yalnızca, bu sınıftan bir Windows çalışma zamanı uygulamasını kullanmak kullanışlıdır. Olmayan - Windows çalışma zamanı uygulamaları için görev devamlılığı 's yürütme bağlamı çalışma zamanı tarafından belirlenen ve yapılandırılamaz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+`task_continuation_context` Sınıfı bir devamlılığın yürütülmesini istediğiniz belirtmenize olanak verir. Yalnızca, bu sınıftan bir Windows çalışma zamanı uygulamasını kullanmak kullanışlıdır. Windows Runtime uygulamalar için görev devamlılığı yürütme içeriği, çalışma zamanı tarafından belirlenen ve yapılandırılabilir.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 class task_continuation_context : public details::_ContextCallback;
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[get_current_winrt_context](#get_current_winrt_context)|Geçerli winrt iş parçacığı bağlamı temsil eden bir görev devamlılığı bağlam nesnesi döndürür.|  
-|[use_arbitrary](#use_arbitrary)|Bir devamlılık yürütme bağlamı seçmek çalışma zamanı veren bir görev devamlılığı bağlamı oluşturur.|  
-|[use_current](#use_current)|Geçerli yürütme bağlamı temsil eden bir görev devamlılığı bağlam nesnesi döndürür.|  
-|[use_default](#use_default)|Varsayılan görev devamlılığı bağlamı oluşturur.|  
-|[use_synchronous_execution](#use_synchronous_execution)|Zaman uyumlu yürütme bağlamı temsil eden bir görev devamlılığı bağlam nesnesi döndürür.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `_ContextCallback`  
-  
- `task_continuation_context`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** ppltasks.h  
-  
- **Namespace:** eşzamanlılık  
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[get_current_winrt_context](#get_current_winrt_context)|Geçerli winrt iş parçacığı bağlamını temsil eden bir görev devamlılığı bağlam nesnesi döndürür.|
+|[use_arbitrary](#use_arbitrary)|Çalışma zamanı bir devamlılık için Yürütme bağlamını seçmesine izin veren bir görev devamlılığı bağlamını oluşturur.|
+|[use_current](#use_current)|Geçerli Yürütme bağlamını temsil eden bir görev devamlılığı bağlam nesnesi döndürür.|
+|[use_default](#use_default)|Varsayılan görev devamlılığı bağlamını oluşturur.|
+|[use_synchronous_execution](#use_synchronous_execution)|Zaman uyumlu yürütme bağlamı temsil eden bir görev devamlılığı bağlam nesnesi döndürür.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`_ContextCallback`
+
+`task_continuation_context`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** ppltasks.h
+
+**Namespace:** eşzamanlılık
 
 ## <a name="get_current_winrt_context"></a> get_current_winrt_context
- Geçerli WinRT iş parçacığı bağlamı temsil eden bir görev devamlılığı bağlam nesnesi döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-static task_continuation_context get_current_winrt_context();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Geçerli Windows çalışma zamanı iş parçacığı bağlamı. Bir Windows Runtime bağlamından adlı boş bir task_continuation_context döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `get_current_winrt_context` Yöntemi çağıranın Windows çalışma zamanı iş parçacığının içeriği yakalar. Bu, Windows Runtime arayanlara boş bir bağlamını döndürür.  
-  
- Tarafından döndürülen değer `get_current_winrt_context` devamlılık yakalanan bağlam (STA vs MTA), Grup modelinde öncül görev grup kullanan, bağımsız olarak yürütülecek çalışma zamanına göstermek için kullanılır. Windows çalışma zamanı açar bir görev bir görevdir kullanan bir grup `IAsyncInfo` arabirimi ya da böyle bir görevden descended bir görev.  
-  
- Bu yöntem benzer `use_current` yöntemi, ancak kullanılabilir ayrıca yerel C++ kodu olmadan C + +/ CX uzantısı desteği. Yazma C + deneyimli kullanıcılar tarafından kullanım için tasarlanmıştır +/ CX belirsiz kitaplık kodu hem yerel hem de Windows çalışma zamanı arayanlar. Bu işlev gerekmedikçe öneririz `use_current` yalnızca C + kullanılabilir yöntemi +/ CX istemciler.  
-  
-  
-##  <a name="use_arbitrary"></a> use_arbitrary 
 
- Bir devamlılık yürütme bağlamı seçmek çalışma zamanı veren bir görev devamlılığı bağlamı oluşturur.  
-  
+Geçerli WinRT iş parçacığı bağlamını temsil eden bir görev devamlılığı bağlam nesnesi döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+static task_continuation_context get_current_winrt_context();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Geçerli Windows çalışma zamanı iş parçacığı bağlamı. Bir Windows Runtime bağlamından çağrıldığı bir boş task_continuation_context döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+
+`get_current_winrt_context` Yöntemi çağıranın Windows çalışma zamanı iş parçacığının içeriği yakalar. Boş bir bağlamda Windows Runtime arayanlara döndürür.
+
+Tarafından döndürülen değer `get_current_winrt_context` öncül görevin bölmeye duyarlı olup bağımsız olarak devamlılığın yakalanan bağlam (STA vs MTA), Grup modelinde yürütüleceğini çalışma zamanına belirtmek için kullanılabilir. Bir bölmeye duyarlı görev, bir Windows çalışma zamanı sarmalanmış olmaktan çıkaran görev `IAsyncInfo` arabirimi veya böyle bir görevden gelen görevdir bir görev.
+
+Bu yöntem benzer `use_current` yöntemi, ancak kullanılabilir de yerel C++ kod olmadan C + +/ CX uzantısı desteği. Yazma C + Gelişmiş kullanıcıların kullanımına için tasarlanmıştır +/ CX geçişte sorun yaşamaz kitaplık kodunu hem yerel hem de Windows çalışma zamanı arayanlar. Bu işlev gerekmedikçe öneririz `use_current` yalnızca C + için kullanılabilir olan yöntemi +/ CX istemciler.
+
+##  <a name="use_arbitrary"></a> use_arbitrary
+
+Çalışma zamanı bir devamlılık için Yürütme bağlamını seçmesine izin veren bir görev devamlılığı bağlamını oluşturur.
+
 ```
 static task_continuation_context use_arbitrary();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Rastgele bir konumu temsil eden bir görev devamlılığı bağlamı.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bu devamlılık bağlam kullanıldığında devamlılık öncül görev grup kullanan olsa bile çalışma zamanı seçer bir bağlamda yürütülür.  
-  
- `use_arbitrary` Bir STA oluşturulan bir grup kullanan görevde bir devamlılık varsayılan davranışı devre dışı bırakmak için kullanılabilir  
-  
- Bu yöntem yalnızca Windows çalışma zamanı uygulamaları için kullanılabilir.  
-  
-##  <a name="use_current"></a> use_current 
+```
 
- Geçerli yürütme bağlamı temsil eden bir görev devamlılığı bağlam nesnesi döndürür.  
-  
+### <a name="return-value"></a>Dönüş Değeri
+
+Rasgele bir konumu temsil eden bir görev devamlılığı bağlamı.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu devamlılık içeriği kullanıldığında, devamlılık, öncül görev grubun farkında olsa bile, çalışma zamanının seçtiği bir içerikte yürütülür.
+
+`use_arbitrary` STA'da duyarlı bir görevde devamlılık için varsayılan davranışı devre dışı bırakmak için kullanılabilir
+
+Bu yöntem yalnızca Windows çalışma zamanı uygulamaları için kullanılabilir.
+
+##  <a name="use_current"></a> use_current
+
+Geçerli Yürütme bağlamını temsil eden bir görev devamlılığı bağlam nesnesi döndürür.
+
 ```
 static task_continuation_context use_current();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Geçerli yürütme bağlamı.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Böylece devamlılıklar doğru grupta yürütülebilir. Bu yöntem çağıranın Windows çalışma zamanı içeriği yakalar.  
-  
- Tarafından döndürülen değer `use_current` devamlılık öncül görev grup farkında olsun veya olmasın, bağımsız olarak yakalanan bağlamında (STA vs MTA) yürütülecek çalışma zamanına göstermek için kullanılır. Windows çalışma zamanı açar bir görev bir görevdir kullanan bir grup `IAsyncInfo` arabirimi ya da böyle bir görevden descended bir görev.  
-  
- Bu yöntem yalnızca Windows çalışma zamanı uygulamaları için kullanılabilir.  
-  
-##  <a name="use_default"></a> use_default 
+```
 
- Varsayılan görev devamlılığı bağlamı oluşturur.  
-  
+### <a name="return-value"></a>Dönüş Değeri
+
+Geçerli yürütme bağlamı.
+
+### <a name="remarks"></a>Açıklamalar
+
+Böylece devamlılıklar sağ apartmanda yürütülebilecek bu yöntem çağıranın Windows Çalışma Zamanı Modülü içeriği yakalar.
+
+Tarafından döndürülen değer `use_current` devamlılık, öncül görevin bölmeye duyarlı olup olmadığını olup bağımsız olarak yakalanan bağlamda (STA vs MTA) yürütüleceğini çalışma zamanına belirtmek için kullanılabilir. Bir bölmeye duyarlı görev, bir Windows çalışma zamanı sarmalanmış olmaktan çıkaran görev `IAsyncInfo` arabirimi veya böyle bir görevden gelen görevdir bir görev.
+
+Bu yöntem yalnızca Windows çalışma zamanı uygulamaları için kullanılabilir.
+
+##  <a name="use_default"></a> use_default
+
+Varsayılan görev devamlılığı bağlamını oluşturur.
+
 ```
 static task_continuation_context use_default();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Varsayılan devamlılık bağlamı.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Varsayılan bağlam çağırdığınızda kısa bir devamlılık bağlamı yapmazsanız kullanılır `then` yöntemi. Windows uygulamaları için Windows 7 ve altında aynı zamanda Masaüstü uygulamaları Windows 8 ve üzeri, görev devamlılıklar burada yürütecek çalışma zamanı belirler. Ancak, bir Windows çalışma zamanı uygulamasını varsayılan devamlılık Grup kullanan görevde devam etmesi için Grup bağlamdır nerede `then` çağrılır.  
-  
- Windows çalışma zamanı açar bir görev bir görevdir kullanan bir grup `IAsyncInfo` arabirimi ya da böyle bir görevden descended bir görev. Bu nedenle, bir devamlılık Windows çalışma zamanı STA içinde bir grup kullanan görevde zamanlarsanız, o STA devamlılık yürütecek  
-  
- Bir grup olmayan kullanan görevde bir devamlılık çalışma zamanı seçer bir bağlamda yürütülür.  
+```
 
-## <a name="use_synchronous_execution"></a> task_continuation_context::use_synchronous_execution  
-Zaman uyumlu yürütme bağlamı temsil eden bir görev devamlılığı bağlam nesnesi döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-static task_continuation_context use_synchronous_execution();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Zaman uyumlu yürütme bağlamı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `use_synchronous_execution` Yöntemi kendi öncül görevin tamamlanma neden içeriğine eş zamanlı olarak çalıştırmak için devamlılık görevi zorlar.  
-  
- Devamlılık iliştirildiğinde öncül görev zaten tamamlandı, devamlılık devamlılık iliştirir içeriğine eş zamanlı olarak çalışır.  
-  
- 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+### <a name="return-value"></a>Dönüş Değeri
+
+Varsayılan görev devamlılık bağlamı.
+
+### <a name="remarks"></a>Açıklamalar
+
+Çağırdığınızda kısa bir devamlılık bağlamı belirtmezseniz varsayılan bağlam kullanılır `then` yöntemi. Aşağıda ve Windows 7 için Windows uygulamaları, aynı zamanda Masaüstü uygulamalarını Windows 8 ve üzeri, görev devamlılıklarının nerede yürütüleceği çalışma zamanı belirler. Ancak, bir Windows çalışma zamanı uygulamasında duyarlı bir görevde devamlılık için varsayılan devamlılık bağlamı grup olduğu yere `then` çağrılır.
+
+Bir bölmeye duyarlı görev, bir Windows çalışma zamanı sarmalanmış olmaktan çıkaran görev `IAsyncInfo` arabirimi veya böyle bir görevden gelen görevdir bir görev. Bu nedenle, bir devamlılık duyarlı bir görevde bir Windows çalışma zamanı STA'de içinde zamanlarsanız, devamlılık o STA içinde yürütülür
+
+Grup olmayan kullanan bir görev bir devamlılık çalışma zamanının seçtiği bir içerikte yürütülür.
+
+## <a name="use_synchronous_execution"></a> task_continuation_context::use_synchronous_execution
+
+Zaman uyumlu yürütme bağlamı temsil eden bir görev devamlılığı bağlam nesnesi döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+static task_continuation_context use_synchronous_execution();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Zaman uyumlu yürütme bağlamı.
+
+## <a name="remarks"></a>Açıklamalar
+
+`use_synchronous_execution` Yöntemi devamlılık görevi, öncül görevin tamamlanma neden içeriğine eşzamanlı çalışacak biçimde zorlar.
+
+Devamlılığın iliştirildiğinde öncül görev zaten tamamlandıysa, devamlılık devamlılığın bağlayan bağlamda zaman uyumlu olarak çalışır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Ad Alanı](concurrency-namespace.md)

@@ -18,24 +18,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9cce98e4a3b3ffd506607529b9fea6f0c1114cc3
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: f17dff6680209664e9d029404e4ef012b9f12046
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36951274"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392365"
 ---
 # <a name="using-tooltips-in-a-cstatusbarctrl-object"></a>Bir CStatusBarCtrl Nesnesinde Araç İpuçları Kullanma
-Durum çubuğu denetimi için araç ipuçları'ı etkinleştirmek üzere oluşturduğunuz `CStatusBarCtrl` SBT_TOOLTIPS stiliyle nesnesi.  
-  
+
+Durum çubuğu denetimi için araç ipuçları etkinleştirmek için oluşturma `CStatusBarCtrl` SBT_TOOLTIPS stiliyle nesne.
+
 > [!NOTE]
->  Kullanıyorsanız bir `CStatusBar` durum çubuğu uygulamak, kullanmak için nesne `CStatusBar::CreateEx` işlevi. Katıştırılmış için ek stiller belirtmenize olanak tanır `CStatusBarCtrl` nesnesi.  
-  
- Bir kez `CStatusBarCtrl` nesne başarıyla oluşturuldu, kullanın [CStatusBarCtrl::SetTipText](../mfc/reference/cstatusbarctrl-class.md#settiptext) ve [CStatusBarCtrl::GetTipText](../mfc/reference/cstatusbarctrl-class.md#gettiptext) ayarlamak ve belirli bir bölme ipucu metnini almak için.  
-  
- Araç İpucu ayarladıktan sonra yalnızca bölüm bir simge ve metin varsa ya da tüm metni bölümü görüntülenemiyor görüntülenir. Araç ipuçları basit modunda desteklenmez.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CStatusBarCtrl kullanma](../mfc/using-cstatusbarctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+>  Kullanıyorsanız bir `CStatusBar` kullanın, durum çubuğu uygulamak için nesne `CStatusBar::CreateEx` işlevi. Embedded için ek stilleri belirtmenize olanak tanır `CStatusBarCtrl` nesne.
+
+Bir kez `CStatusBarCtrl` nesne başarıyla oluşturuldu, kullanın [CStatusBarCtrl::SetTipText](../mfc/reference/cstatusbarctrl-class.md#settiptext) ve [CStatusBarCtrl::GetTipText](../mfc/reference/cstatusbarctrl-class.md#gettiptext) ayarlayın ve belirli bir bölme ipucu metnini almak için.
+
+Araç İpucu ayarladıktan sonra bu bölümü yalnızca bir simge ve metin varsa ya da tüm metin bölümü içinde görüntülenemiyor görüntülenir. Araç ipuçları, basit modunda desteklenmez.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CStatusBarCtrl Kullanma](../mfc/using-cstatusbarctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

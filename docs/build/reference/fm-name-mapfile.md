@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e69a273d523a78adc2b71652e5f13fb9141d3b1
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: bce549cd782c8d79066b16d2e3791ba906e9c4f9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45699915"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410541"
 ---
 # <a name="fm-name-mapfile"></a>/Fm (Eşlem Dosyasını Adlandır)
 
@@ -63,7 +63,7 @@ Derleyici bir alt çizgi değişken adlarına eklediğinden bir eşlem içindeki
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)
-[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Çıktı Dosyası (/F) Seçenekleri](../../build/reference/output-file-f-options.md)<br/>
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
 [Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)

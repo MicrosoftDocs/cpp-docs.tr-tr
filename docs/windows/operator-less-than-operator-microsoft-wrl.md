@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5d24968f4c076605a698e1af02c8e3fa3f556610
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 077f21c92ea1d731b1427635ce5b60c45af0f5f3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589718"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46443364"
 ---
 # <a name="operatorlt-operator-microsoftwrl"></a>İşleç&lt; işleci (Microsoft::WRL)
 
@@ -37,10 +37,10 @@ bool operator<(const Details::ComPtrRef<ComPtr<T>>& a, const Details::ComPtrRef<
 
 ### <a name="parameters"></a>Parametreler
 
-*a*  
+*a*<br/>
 Sol nesne.
 
-*b*  
+*b*<br/>
 Doğru nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri

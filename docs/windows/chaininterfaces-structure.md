@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f0fc65d2aeab01de022e23d0645682800a7d555d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 88ddd3dd59000b629f6e72933b1a0b02cc582c89
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602371"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46409877"
 ---
 # <a name="chaininterfaces-structure"></a>ChainInterfaces Yapısı
 
@@ -63,43 +63,43 @@ struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, 
 
 ### <a name="parameters"></a>Parametreler
 
-*I0*  
+*I0*<br/>
 (Gerekli) Arabirim Kimliği: 0.
 
-*I1*  
+*I1*<br/>
 (Gerekli) Arabirim kimliği 1.
 
-*I2*  
+*I2*<br/>
 (İsteğe bağlı) Arabirim kimliği 2.
 
-*I3*  
+*I3*<br/>
 (İsteğe bağlı) Arabirim Kimliği 3.
 
-*I4*  
+*I4*<br/>
 (İsteğe bağlı) Arabirim Kimliği 4.
 
-*I5*  
+*I5*<br/>
 (İsteğe bağlı) Arabirim kimliği 5.
 
-*I6*  
+*I6*<br/>
 (İsteğe bağlı) Arabirim kimliği 6.
 
-*I7*  
+*I7*<br/>
 (İsteğe bağlı) Arabirim kimliği 7.
 
-*I8*  
+*I8*<br/>
 (İsteğe bağlı) 8 arabirim kimliği.
 
-*I9*  
+*I9*<br/>
 (İsteğe bağlı) Arabirim Kimliği 9.
 
-*DerivedType*  
+*DerivedType*<br/>
 Türetilmiş bir tür.
 
-*BaseType*  
+*BaseType*<br/>
 Türetilmiş türün temel türü.
 
-*hasImplements*  
+*hasImplements*<br/>
 Bir Boole değeri olması durumunda **true**, kullanamazsınız anlamına gelir. bir [MixIn](../windows/mixin-structure.md) türünden türemez bir sınıf ile yapı [uygular](../windows/implements-structure.md) yapıda.
 
 ## <a name="members"></a>Üyeler

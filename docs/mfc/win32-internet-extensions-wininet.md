@@ -17,47 +17,49 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 32e4f236977884924e611eed45136a76c1ad6527
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 35d3805ee88cca048ac44dc15426cb35eb52bb5b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383967"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374768"
 ---
 # <a name="win32-internet-extensions-wininet"></a>Win32 Internet Uzantıları (WinInet)
-Internet istemci uygulaması gopher, FTP veya HTTP gibi Internet protokolleri kullanarak bir ağ veri kaynağından (sunucu) bilgi erişen bir programdır. Internet istemci uygulaması, örneğin hava durumu eşlemeleri, hisse senedi fiyatları veya gazete başlıkları gibi veri almak için bir sunucu erişebilir. Internet istemcisi sunucunun bir dış ağa (Internet) veya (bazen intranet denir) bir iç ağ erişebilirsiniz.  
-  
- MFC Internet istemci uygulaması oluşturmak için Win32 Internet Uzantıları veya WinINet, içerir. MFC Internet uzantılara, standart, kullanımı kolay sınıfları kümesi yalıtır. WinINet istemci uygulaması Win32 işlevlerini doğrudan çağırma veya MFC WinINet sınıfları kullanarak yazabilirsiniz.  
-  
- Microsoft Win32 Internet işlevleri (WinINet) bütünleyici herhangi bir uygulama Internet yaparken yardımcı. WİNINET içinde bulunan yeni işlevleri. DLL, HTTP (Köprü Metni Aktarım Protokolü), FTP (Dosya Aktarım Protokolü) ve gopher kullanarak Internet'e erişme basitleştirin.  
-  
- Aşağıdaki konular Internet istemci uygulaması oluşturma işleminin ele alınmıştır:  
-  
--   [WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](../mfc/how-wininet-makes-it-easier-to-create-internet-client-applications.md)  
-  
--   [MFC'nin Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](../mfc/how-mfc-makes-it-easier-to-create-internet-client-applications.md)  
-  
--   [Internet İstemci Uygulamaları Oluşturmak için MFC Sınıfları](../mfc/mfc-classes-for-creating-internet-client-applications.md)  
-  
--   [Internet İstemci Sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)  
-  
--   [MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)  
-  
- Aşağıdaki konular, tipik WinINet görevleri gerçekleştirmek için adımlar sağlar:  
-  
--   [Tipik Bir Internet İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-internet-client-application.md)  
-  
--   [Tipik Bir FTP İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-ftp-client-application.md)  
-  
--   [Dosya Silmek için Tipik Bir FTP İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-ftp-client-application-to-delete-a-file.md)  
-  
--   [Tipik Bir Gopher İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-gopher-client-application.md)  
-  
--   [Tipik Bir HTTP İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-http-client-application.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC Internet Programlama temelleri](../mfc/mfc-internet-programming-basics.md)   
- [WinInet Temelleri](../mfc/wininet-basics.md)
+
+Internet istemci uygulaması gopher, FTP veya HTTP gibi Internet protokollerini kullanarak bir ağ veri kaynağından (sunucu) bilgi erişen bir programdır. Internet istemci uygulaması, örneğin hava durumu haritalar, hisse senedi fiyatlarına veya gazete başlıkları gibi veri almak için bir sunucu erişebilir. Internet İstemci, sunucunun bir dış ağa (Internet) veya (bazen intranet olarak adlandırılır) bir iç ağ erişebilir.
+
+MFC Internet istemci uygulaması oluşturmak için Win32 Internet Uzantıları veya WinINet, içerir. MFC Internet uzantılara bir dizi standart, kullanımı kolay sınıfı kapsüller. Win32 işlevlerini doğrudan çağırma veya MFC WinINet sınıfları kullanarak WinINet istemci uygulaması yazabilirsiniz.
+
+Microsoft Win32 Internet (WinINet) işlevleri bütünleyici herhangi bir uygulamanın Internet yaparken yardımcı. WİNINET içinde bulunan yeni işlevleri. DLL (Köprü Metni Aktarım Protokolü) HTTP, FTP (Dosya Aktarım Protokolü) ve gopher Internet erişimi basitleştirin.
+
+Aşağıdaki konular, Internet istemci uygulaması oluşturma işlemi açıklanmaktadır:
+
+- [WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](../mfc/how-wininet-makes-it-easier-to-create-internet-client-applications.md)
+
+- [MFC'nin Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](../mfc/how-mfc-makes-it-easier-to-create-internet-client-applications.md)
+
+- [Internet İstemci Uygulamaları Oluşturmak için MFC Sınıfları](../mfc/mfc-classes-for-creating-internet-client-applications.md)
+
+- [Internet İstemci Sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)
+
+- [MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+
+Aşağıdaki konular, tipik WinINet görevlerini gerçekleştirmek için adımları sağlar:
+
+- [Tipik Bir Internet İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-internet-client-application.md)
+
+- [Tipik Bir FTP İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-ftp-client-application.md)
+
+- [Dosya Silmek için Tipik Bir FTP İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-ftp-client-application-to-delete-a-file.md)
+
+- [Tipik Bir Gopher İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-gopher-client-application.md)
+
+- [Tipik Bir HTTP İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-http-client-application.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)<br/>
+[WinInet Temelleri](../mfc/wininet-basics.md)
 
 
 

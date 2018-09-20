@@ -15,52 +15,55 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9efa40d24ed4eaee5b9fd3995a4cf9ed696eb39a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 5205f46a6be872a1065dfafc38ae8cbefec7b49b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33685742"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444898"
 ---
 # <a name="how-to-create-agents-that-use-specific-scheduler-policies"></a>Nasıl yapılır: Belirli Zamanlayıcı İlkelerini Kullanan Aracılar Oluşturma
-Bir aracı zaman uyumsuz olarak daha büyük hesaplama görevlerini çözümlemek için diğer bileşenlerle birlikte çalışan bir uygulama bileşendir. Bir aracı tipik olarak ayarlanmış bir yaşam döngüsü sahiptir ve durumu korur.  
-  
- Her aracı benzersiz uygulama gereksinimleri olabilir. Örneğin, (girişi alma veya çıkış görüntüleme) kullanıcı etkileşimi sağlayan bir aracı bilgi işlem kaynakları yüksek öncelikli erişimi gerektirebilir. Zamanlayıcı ilkeleri Zamanlayıcısı görevleri yönettiğinde kullanan stratejisi denetlemenize olanak verir. Bu konuda, belirli Zamanlayıcı ilkelerini kullanan aracılar oluşturma gösterilir.  
-  
- Zaman uyumsuz ileti blokları birlikte özel Zamanlayıcı ilkeleri kullanan temel bir örnek için bkz: [nasıl yapılır: belirli Zamanlayıcı ilkeleri belirtme](../../parallel/concrt/how-to-specify-specific-scheduler-policies.md).  
-  
- Bu konuda aracıları, ileti blokları ve ileti geçirme işlevleri gibi zaman uyumsuz aracılar kitaplığı işlerini yapmak için ana kadar işlevi kullanır. Zaman uyumsuz aracılar Kitaplığı hakkında daha fazla bilgi için bkz: [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, türetilen iki sınıf tanımlar [concurrency::agent](../../parallel/concrt/reference/agent-class.md): `permutor` ve `printer`. `permutor` Sınıfı, belirli bir giriş dizesi tüm permütasyon hesaplar. `printer` Sınıfı ilerleme durumu iletilerini konsola yazdırır. `permutor` Sınıfı, tüm kullanılabilir bilgi işlem kaynakları kullanabilir pkı'ya yoğun bir işlem gerçekleştirir. Yararlı olacak şekilde `printer` sınıfı zamanında her ilerleme iletisi yazdırma gerekir.  
-  
- Sağlamak için `printer` sınıfı Orta bilgi işlem kaynaklarına erişim Bu örnekte açıklanan adımları [nasıl yapılır: Zamanlayıcı örneğini yönetme](../../parallel/concrt/how-to-manage-a-scheduler-instance.md) özel bir ilke olan Zamanlayıcı örneğini oluşturmak için. Özel ilke en yüksek öncelik sınıf olmak için iş parçacığı önceliği belirtir.  
-  
- Özel bir ilke bir Zamanlayıcı kullanmanın avantajları göstermek için bu örnek iki kez genel görevi gerçekleştirir. Örnek, varsayılan Zamanlayıcı ilk iki görev zamanlama için kullanır. Örnek zamanlamak için varsayılan Zamanlayıcı sonra kullanır `permutor` nesne ve zamanlamak için özel bir ilke bir zamanlayıcı `printer` nesnesi.  
-  
- [!code-cpp[concrt-permute-strings#1](../../parallel/concrt/codesnippet/cpp/how-to-create-agents-that-use-specific-scheduler-policies_1.cpp)]  
-  
- Bu örnek şu çıkışı üretir.  
-  
-```Output  
-With default scheduler:  
-Computing all permutations of 'Grapefruit'...  
-100% complete...  
- 
-With higher context priority:  
-Computing all permutations of 'Grapefruit'...  
-100% complete...  
-```  
-  
- İki görevlerin aynı sonucu verir ancak özel bir ilke kullanan sürüm etkinleştirir `printer` daha responsively davranması yükseltilmiş öncelikli olarak çalıştırmak için nesne.  
-  
-## <a name="compiling-the-code"></a>Kod Derleniyor  
- Örnek kodu kopyalayın ve bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `permute-strings.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
-  
- **permute cl.exe /EHsc-strings.cpp**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Zamanlayıcı ilkeleri](../../parallel/concrt/scheduler-policies.md)   
- [Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)   
- 
+
+Zaman uyumsuz olarak daha büyük bilgi işlem görevlerini çözümlemek için diğer bileşenlerle birlikte çalışan bir uygulama bileşeni aracısıdır. Bir aracı genellikle ayarlanmış bir ömrü vardır ve durumu korur.
+
+Her aracı benzersiz uygulama gereksinimleri olabilir. Örneğin, kullanıcı etkileşimi (girişi alma ya da çıktıyı görüntülerken) sağlayan bir aracı, bilgi işlem kaynaklarını daha yüksek öncelikli erişimi gerektirebilir. Zamanlayıcı ilkeleri görevleri yönettiğinde, Zamanlayıcı kullanan stratejisi denetlemenize olanak tanır. Bu konuda, belirli Zamanlayıcı ilkelerini kullanan aracılar oluşturma işlemini gösterir.
+
+Zaman uyumsuz ileti blokları birlikte özel Zamanlayıcı ilkelerini kullanan temel bir örnek için bkz. [nasıl yapılır: belirli Zamanlayıcı ilkeleri belirtme](../../parallel/concrt/how-to-specify-specific-scheduler-policies.md).
+
+Bu konuda çalışmayı gerçekleştirmek için aracıları ve ileti blokları ileti geçirme işlevleri gibi zaman uyumsuz aracılar Kitaplığı'ndan işlevselliğini kullanır. Zaman uyumsuz aracılar Kitaplığı hakkında daha fazla bilgi için bkz: [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, türetilen iki sınıf tanımlar [concurrency::agent](../../parallel/concrt/reference/agent-class.md): `permutor` ve `printer`. `permutor` Sınıfı belirli bir Giriş dizesinin tüm permütasyon hesaplar. `printer` Sınıfı ilerleme durumu iletilerini konsola yazdırır. `permutor` Sınıfı, tüm kullanılabilir bilgi işlem kaynakları kullanabilir işlem bakımından yoğun bir işlem gerçekleştirir. Yararlı olması için `printer` sınıfı her ilerleme iletisi zamanında yazdırma gerekir.
+
+Sağlamak `printer` sınıf bilgi işlem kaynaklarına adil erişim, bu örnekte açıklanan adımları [nasıl yapılır: Zamanlayıcı örneğini yönetme](../../parallel/concrt/how-to-manage-a-scheduler-instance.md) özel bir ilke bir zamanlayıcı örneği oluşturulamadı. Özel ilke, iş parçacığı önceliği en yüksek öncelikli sınıf olduğunu belirtir.
+
+Bu örnek özel bir ilke bir Zamanlayıcı kullanmanın avantajları göstermek için iki kez genel görev gerçekleştirir. Örnek, ilk iki görevleri zamanlamak için varsayılan Zamanlayıcı kullanır. Örnek daha sonra zamanlamak için varsayılan Zamanlayıcı kullanır `permutor` nesnesi ve bir özel ilke zamanlamak için bir zamanlayıcı `printer` nesne.
+
+[!code-cpp[concrt-permute-strings#1](../../parallel/concrt/codesnippet/cpp/how-to-create-agents-that-use-specific-scheduler-policies_1.cpp)]
+
+Bu örnek aşağıdaki çıktıyı üretir.
+
+```Output
+With default scheduler:
+Computing all permutations of 'Grapefruit'...
+100% complete...
+
+With higher context priority:
+Computing all permutations of 'Grapefruit'...
+100% complete...
+```
+
+İki görev aynı sonucu üretir, özel bir ilke kullanan bir sürüm etkinleştirir `printer` nesne yükseltilmiş bir öncelikli olarak çalıştırın, böylece daha duyarlı bir şekilde davranır.
+
+## <a name="compiling-the-code"></a>Kod Derleniyor
+
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `permute-strings.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+
+**permute cl.exe/ehsc-strings.cpp**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Scheduler İlkeleri](../../parallel/concrt/scheduler-policies.md)<br/>
+[Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)
 

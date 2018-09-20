@@ -8,12 +8,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2411c5deb3a14ee3eaebb76fc69b6f36fa3bed42
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: bdfa82580ba61ab276d6d64a9424d7043c2822f1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465376"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46393782"
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>Olası yükseltme sorunlarına (Visual C++) genel bakış
 
@@ -187,5 +187,5 @@ Daha fazla bilgi için [MBCS, Unicode taşıma](porting-guide-spy-increment.md#p
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
+[Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md)  

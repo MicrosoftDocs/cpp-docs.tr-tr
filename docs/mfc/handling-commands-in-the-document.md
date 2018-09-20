@@ -19,16 +19,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a1e848827b46d40c1ec39f2af4788e6957932c5
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 8845ea7c44fd5a34774db0508302f5959987cdc9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929118"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46441271"
 ---
 # <a name="handling-commands-in-the-document"></a>Belgedeki Komutları İşleme
-Belge sınıfı ayrıca menü öğeleri, araç çubuğu düğmeleri veya kısayol tuşları tarafından oluşturulan belirli komutları işleyebilir. Varsayılan olarak, `CDocument` Kaydet Dosya menüsünden komutları kullanarak seri hale getirme ve kaydetme işler. Veri etkileyen diğer komutlar da belgenizi üye işlevleri tarafından işlenebilir. Örneğin, karalama programında sınıf `CScribDoc` belgede şu anda depolanan verilerin tümünü siler Tümünü Temizle Düzenle komutu için bir işleyici sağlar. Belgeler, ileti eşlemeleri olamaz, ancak görünümleri farklı olarak, standart Windows iletileri belgeleri işleyemiyor — yalnızca **WM_COMMAND** iletileri ya da "komutları."  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Belgeleri Kullanma](../mfc/using-documents.md)
+
+Belge sınıfınıza da menü öğeleri, araç çubuğu düğmeleri veya kısayol tuşları tarafından oluşturulan belirli komutları işleyebilir. Varsayılan olarak, `CDocument` kaydetme işler ve farklı kaydet Dosya menüsünde komutları kullanarak seri hale getirme. Verileri etkileyen diğer komutlar da belgenizin üye işlevleri tarafından işlenebilir. Örneğin, karalama programında sınıfı `CScribDoc` belgede şu anda depolanan verilerin tümünü siler Tümünü Temizle Düzenle komutu için bir işleyici sağlar. Belgeler, ileti eşlemeleri olabilir, ancak görünümler, belgeleri standart Windows iletileri işleyemez — yalnızca **WM_COMMAND** iletileri ya da "komutları."
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Belgeleri Kullanma](../mfc/using-documents.md)
 

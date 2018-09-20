@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1d8a4eb57996bcc2afd9ddc92a9eecf354f88116
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: b953343fa14d35ab387b0fd133d6e53db4551e1d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313709"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46429259"
 ---
 # <a name="version-information-editor-c"></a>Sürüm bilgileri Düzenleyicisi (C++)
 
@@ -56,5 +56,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kaynak Düzenleyicileri](../windows/resource-editors.md)  
+[Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
 [Menüler ve diğer kaynaklar](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

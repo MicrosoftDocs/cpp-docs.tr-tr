@@ -14,34 +14,38 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3f483d266b8150dfd4aaa5299ffec280d447157
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 401bc3cd9933f44b92f5f361b1a1aaad24bc79ce
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46037625"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46436955"
 ---
 # <a name="makeexceptionptr-function"></a>make_exception_ptr İşlevi
-## <a name="syntax"></a>Sözdizimi  
-  
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 template<class _E>
 exception_ptr make_exception_ptr(_E _Except);
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *_E*<br/>
 Özel durum türü.
 
 *_Except*<br/>
 Özel durum değeri.
-  
-## <a name="return-value"></a>Dönüş Değeri  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** ppltasks.h  
-  
- **Namespace:** std  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [std Ad Alanı](std-namespace.md)
+
+## <a name="return-value"></a>Dönüş Değeri
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** ppltasks.h
+
+**Namespace:** std
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[std Ad Alanı](std-namespace.md)

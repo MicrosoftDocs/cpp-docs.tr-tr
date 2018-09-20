@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 38bd11620f8d403bbd1667ab6fa4f3f827362c88
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8bb04b8be33f81931106574152d0ccb6ba535295
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600879"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427842"
 ---
 # <a name="mutexlock-method"></a>Mutex::Lock Yöntemi
 
@@ -43,10 +43,10 @@ static SyncLock Lock(
 
 ### <a name="parameters"></a>Parametreler
 
-*Milisaniye*  
+*Milisaniye*<br/>
 Milisaniye cinsinden zaman aşımı aralığı. Varsayılan değer süresiz olarak bekler sonsuzdur.
 
-*h*  
+*h*<br/>
 Tanıtıcısını bir **Mutex** nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -58,4 +58,5 @@ Tanıtıcısını bir **Mutex** nesne.
 **Namespace:** Microsoft::wrl:: Wrappers
 
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 [Mutex sınıfı](../windows/mutex-class1.md)

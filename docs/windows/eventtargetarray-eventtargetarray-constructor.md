@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2bbf6cb67973d7538aa7aea0d846cbadf030d585
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: dc59b9c93cebb622f40881d961709079abcd9166
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590658"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388637"
 ---
 # <a name="eventtargetarrayeventtargetarray-constructor"></a>EventTargetArray::EventTargetArray Oluşturucusu
 
@@ -39,7 +39,7 @@ EventTargetArray(
 
 ### <a name="parameters"></a>Parametreler
 
-*İK*  
+*İK*<br/>
 Bu oluşturucu işlemlerinden sonra parametre *ik* dizinin ayırma başarılı veya başarısız olduğunu gösterir. İçin olası değerler aşağıdaki tabloda *ik*.
 
 S_OK işlemi başarılı oldu.
@@ -48,7 +48,7 @@ Dizi için E_OUTOFMEMORY bellek ayrılamıyor.
 
 S_FALSE parametresi *öğeleri* sıfırdan küçük veya ona eşit.
 
-*Öğeleri*  
+*Öğeleri*<br/>
 Ayrılacak dizi öğelerinin sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -65,5 +65,5 @@ Yeni bir örneğini başlatır **EventTargetArray** sınıfı.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[EventTargetArray Sınıfı](../windows/eventtargetarray-class.md)  
+[EventTargetArray Sınıfı](../windows/eventtargetarray-class.md)<br/>
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

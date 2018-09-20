@@ -18,47 +18,52 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26fb2637c5a92a430d72e496cabeb8f5749ccaa1
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d21d33d1e90d7c4aac9ea833d0c5bd80f5172312
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711808"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46416610"
 ---
 # <a name="readmsr"></a>__readmsr
-**Microsoft'a özgü**  
-  
- Oluşturur `rdmsr` tarafından belirtilen modele özgü yazmacını okuyarak yönerge `register` ve değerini döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-__int64 __readmsr(   
-   int register   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+**Microsoft'a özgü**
+
+Oluşturur `rdmsr` tarafından belirtilen modele özgü yazmacını okuyarak yönerge `register` ve değerini döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+__int64 __readmsr( 
+   int register 
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *Kaydolun*<br/>
-[in] Okuma modeli belirli kaydetme.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Belirtilen kayıt değeri.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|  
-|---------------|------------------|  
-|`__readmsr`|x86, x64|  
-  
- **Üst bilgi dosyası** \<intrin.h >  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu işlev yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.  
-  
- Daha fazla bilgi için AMD belgelerine bakın.  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[in] Okuma modeli belirli kaydetme.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Belirtilen kayıt değeri.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|
+|---------------|------------------|
+|`__readmsr`|x86, x64|
+
+**Üst bilgi dosyası** \<intrin.h >
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu işlev yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.
+
+Daha fazla bilgi için AMD belgelerine bakın.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

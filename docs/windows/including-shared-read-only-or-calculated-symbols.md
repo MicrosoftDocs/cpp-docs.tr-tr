@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 63da1f6ffb684cd2971808f4a56167e19f7bd347
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 329f1d21489b57130531db20014e249588f101a6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313409"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400516"
 ---
 # <a name="including-shared-read-only-or-calculated-symbols"></a>Paylaşılan (Salt Okunur) veya Hesaplanan Sembolleri Ekleme
 
@@ -82,7 +82,7 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sembol Adı Kısıtlamaları](../windows/symbol-name-restrictions.md)  
-[Sembol Değeri Kısıtlamaları](../windows/symbol-value-restrictions.md)  
-[Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)  
+[Sembol Adı Kısıtlamaları](../windows/symbol-name-restrictions.md)<br/>
+[Sembol Değeri Kısıtlamaları](../windows/symbol-value-restrictions.md)<br/>
+[Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)<br/>
 [Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)

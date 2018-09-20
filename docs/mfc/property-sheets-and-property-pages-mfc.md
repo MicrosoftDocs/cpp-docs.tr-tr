@@ -18,27 +18,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 882b2d93ba7938017f64b1ad8fb8e680e0af42db
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cfb5bd849c79d64769cb13d854605292689dfe73
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348995"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46441992"
 ---
 # <a name="property-sheets-and-property-pages-mfc"></a>Özellik Bölümleri ve Özellik Sayfaları (MFC)
-Bir MFC [iletişim kutusu](../mfc/dialog-boxes.md) "iletişim sekmesinde" bir görünüm üzerinde özellik bölümleri ve özellik sayfaları ekleme alabilir. "Özellik sayfası" adı verilen MFC'de dosya klasörleri yedeklemek için ön veya bir grup art arda windows görülen yığınını benzediğini sekmeli sayfaları yığınını içerecek şekilde bu tür bir Microsoft Word, Excel ve Visual C++, birçok iletişim kutularında benzer iletişim kutusu görüntülenir. Ön sekmesindeki denetimleri görünür; Yalnızca etiketli sekme arka sekmelerde görülebilir. Özellik sayfaları çok sayıda özellikleri veya oldukça düzgün çeşitli gruplar halinde kalan ayarlarını yönetmek için özellikle yararlıdır. Genellikle, bir özellik sayfasını, birçok ayrı iletişim kutuları değiştirerek bir kullanıcı arabirimi basitleştirebilir.  
-  
- MFC sürüm 4. 0'dan sonra özellik bölümleri ve özellik sayfaları Windows 95 ve Windows NT sürüm ile 3.51 ve daha sonra gelen ortak denetimleri kullanma uygulanır.  
-  
- Özellik sayfaları sınıflarıyla uygulanır [CPropertySheet](../mfc/reference/cpropertysheet-class.md) ve [CPropertyPage](../mfc/reference/cpropertypage-class.md) (açıklanan *MFC başvurusu*). `CPropertySheet` "birden çok sayfa temel" içerebilir genel iletişim kutusu, tanımlar `CPropertyPage`.  
-  
- Oluşturma ve özellik sayfaları ile çalışma hakkında daha fazla bilgi için Ek Yardım konusuna [özellik sayfalarını](../mfc/property-sheets-mfc.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutuları](../mfc/dialog-boxes.md)   
- [İletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)   
- [Özellik sayfaları ve MFC'de özellik sayfaları](../mfc/property-sheets-and-property-pages-in-mfc.md)   
- [Veri Değişimi](../mfc/exchanging-data.md)   
- [Kalıcı olmayan özellik sayfası oluşturma](../mfc/creating-a-modeless-property-sheet.md)   
- [Uygula Düğmesini İşleme](../mfc/handling-the-apply-button.md)
+
+Bir MFC [iletişim kutusu](../mfc/dialog-boxes.md) "iletişim sekmesindeki" üzerinde özellik bölümleri ve özellik sayfaları ekleyerek göz. MFC'de "özellik sayfası" adlı dosya klasörleri önden arkaya veya bir grup art arda windows görülen yığını gibi çok sekmeli sayfalar yığınını içerecek şekilde bu tür bir Microsoft Word, Excel ve Visual C++, birçok iletişim kutularını benzer iletişim kutusu görünür. Ön sekmesindeki denetimleri görünür; Yalnızca etiketli sekmesini arka sekmeleri görünür olur. Özellik sayfaları, çok sayıda özellikleri veya çeşitli gruplar halinde oldukça düzgünce kalan ayarları yönetmek için özellikle yararlıdır. Genellikle, tek bir özellik sayfası, birçok ayrı iletişim kutusu değiştirerek bir kullanıcı arabirimi basitleştirebilir.
+
+MFC sürüm 4.0 itibariyle özellik bölümleri ve özellik sayfaları Windows 95 ve Windows NT'de sürümüyle 3.51 sürümü ve üzeri gelen ortak denetimleri kullanma uygulanır.
+
+Özellik sayfaları sınıflarıyla uygulanan [CPropertySheet](../mfc/reference/cpropertysheet-class.md) ve [CPropertyPage](../mfc/reference/cpropertypage-class.md) (açıklanan *MFC başvurusu*). `CPropertySheet` "birden çok sayfa göre" genel iletişim kutusu tanımlar `CPropertyPage`.
+
+Konu oluşturma ve özellik sayfaları ile çalışma hakkında daha fazla bilgi için bkz. [özellik sayfalarını](../mfc/property-sheets-mfc.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
+[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)<br/>
+[MFC'de Özellik Bölümleri ve Özellik Sayfaları](../mfc/property-sheets-and-property-pages-in-mfc.md)<br/>
+[Veri Değişimi](../mfc/exchanging-data.md)<br/>
+[Kalıcı Olmayan Özellik Sayfası Oluşturma](../mfc/creating-a-modeless-property-sheet.md)<br/>
+[Uygula Düğmesini İşleme](../mfc/handling-the-apply-button.md)
 

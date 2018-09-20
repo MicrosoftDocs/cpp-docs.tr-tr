@@ -20,32 +20,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 766148494c6b8693f8d9e65f27e157b58d8e8689
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f933a8eb75c25921c3025f8ca1bc03a2c72fc81b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342985"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46443949"
 ---
 # <a name="data-objects-and-data-sources-ole"></a>Veri Nesneleri ve Veri Kaynakları (OLE)
-Veri aktarımı, Pano veya sürükle ve bırak, kullanarak ya da gerçekleştirdiğinizde verileri bir kaynak ve hedef sahiptir. Başka bir uygulamaya yapıştırma için kabul ettiği ve kopyalamak için verileri bir uygulama sağlar. Aynı veri aktarımı başarılı olması için farklı işlemler gerçekleştirmek her iki tarafı aktarım gerekir. Microsoft Foundation Class (MFC) kitaplığı, bu Aktarım her iki tarafındaki temsil eden iki sınıflar sağlar:  
-  
--   Veri kaynakları (tarafından uygulanan `COleDataSource` nesneler) veri aktarımı kaynak tarafı temsil eder. Veriler panoya kopyalanacak olduğunda ya da veri için bir Sürükle ve bırak işlemi sağlandığında bunlar kaynak uygulama tarafından oluşturulur.  
-  
--   Veri nesneleri (tarafından uygulanan `COleDataObject` nesneler) veri aktarımı hedef tarafı temsil eder. Hedef uygulama içine veya Pano'dan yapıştırma işlemi gerçekleştirmek için sorulduğunda bırakılan veri olduğunda oluşturulur.  
-  
- Aşağıdaki makaleler veri nesneleri ve veri kaynaklarında uygulamalarınızı nasıl kullanılacağı açıklanmaktadır. Her ikisi de bağlı verileri kopyalama ve yapıştırma için çağrılabilir çünkü bu bilgiler kapsayıcı ve sunucu uygulamaları için geçerlidir.  
-  
--   [Veri Nesneleri ve Veri Kaynakları: Oluşturma ve Yok Etme](../mfc/data-objects-and-data-sources-creation-and-destruction.md)  
-  
--   [Veri Nesneleri ve Veri Kaynakları: Düzenleme](../mfc/data-objects-and-data-sources-manipulation.md)  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Sürükleme ve Bırakma](../mfc/drag-and-drop-ole.md)  
-  
- [Pano](../mfc/clipboard.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE](../mfc/ole-in-mfc.md)   
- [COleDataObject sınıfı](../mfc/reference/coledataobject-class.md)   
- [COleDataSource Sınıfı](../mfc/reference/coledatasource-class.md)
+
+Veri aktarımı, Pano veya sürükle ve bırak kullanılarak gerçekleştirirken verileri kaynak ve hedef vardır. Kopyalamak için bir uygulama veri sağlar ve başka bir uygulamaya yapıştırma için bunu kabul eder. Aynı veri aktarımı başarılı olması için farklı işlemleri gerçekleştirmek her iki tarafındaki aktarım gerekir. Microsoft Foundation Class (MFC) kitaplığı, bu aktarımı her iki tarafındaki temsil eden iki sınıfları sağlar:
+
+- Veri kaynakları (tarafından uygulanan `COleDataSource` nesneleri) veri aktarımı kaynak tarafı temsil eder. Veriler panoya kopyalanmak üzere olduğunda veya bir Sürükle ve bırak işlemi için veri sağlanmadığında bunlar kaynak uygulama tarafından oluşturulur.
+
+- Veri nesneleri (tarafından uygulanan `COleDataObject` nesneleri) veri aktarımı hedef tarafı temsil eder. Hedef uygulama içine veya panodan yapıştırma işlemi gerçekleştirmek için sorulduğunda bırakılan veri sahip olduğunda oluşturulur.
+
+Aşağıdaki makaleler veri nesneleri ve veri kaynakları, uygulamalarınızda nasıl kullanılacağını açıklar. Bu bilgiler, hem de bağlı verileri kopyalama ve yapıştırma için çağrılabilir çünkü kapsayıcı hem de sunucu uygulamaları için geçerlidir.
+
+- [Veri Nesneleri ve Veri Kaynakları: Oluşturma ve Yok Etme](../mfc/data-objects-and-data-sources-creation-and-destruction.md)
+
+- [Veri Nesneleri ve Veri Kaynakları: Düzenleme](../mfc/data-objects-and-data-sources-manipulation.md)
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[Sürükleme ve Bırakma](../mfc/drag-and-drop-ole.md)
+
+[Pano](../mfc/clipboard.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[OLE](../mfc/ole-in-mfc.md)<br/>
+[COleDataObject Sınıfı](../mfc/reference/coledataobject-class.md)<br/>
+[COleDataSource Sınıfı](../mfc/reference/coledatasource-class.md)

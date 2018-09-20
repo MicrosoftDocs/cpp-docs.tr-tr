@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 424c6b642bba04a22ee4dedd59e38761260ac8eb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 66cd89c28ea01c3a75d0cb25aa6f96a234e379b2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221935"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46418209"
 ---
 # <a name="helpfile"></a>helpfile
 
@@ -38,7 +38,7 @@ Bir tür kitaplığı için Yardım dosyasına adını ayarlar.
 
 ### <a name="parameters"></a>Parametreler
 
-*Dosya adı*  
+*Dosya adı*<br/>
 Yardım konuları içeren dosyanın adı.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -64,10 +64,10 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Arabirim Öznitelikleri](../windows/interface-attributes.md)  
-[Sınıf Öznitelikleri](../windows/class-attributes.md)  
-[Yöntem Öznitelikleri](../windows/method-attributes.md)  
-[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  
-[helpcontext](../windows/helpcontext.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Arabirim Öznitelikleri](../windows/interface-attributes.md)<br/>
+[Sınıf Öznitelikleri](../windows/class-attributes.md)<br/>
+[Yöntem Öznitelikleri](../windows/method-attributes.md)<br/>
+[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[helpcontext](../windows/helpcontext.md)<br/>
 [helpstring](../windows/helpstring.md)  

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d73c9f99eec3fd3ec01d4ae5d41418c67cb472f9
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f6ab085e1bed3909090990cfa8e265bea792a483
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597471"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46447030"
 ---
 # <a name="removereference-structure"></a>RemoveReference Yapısı
 
@@ -41,7 +41,7 @@ struct RemoveReference<T&&>;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Bir sınıf.
 
 ## <a name="remarks"></a>Açıklamalar

@@ -12,30 +12,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6f7a84e322cb273733c6a724ee2563928df8362
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 073d0561fe4bfbb96ed88681a077da6fc985c963
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689486"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402336"
 ---
 # <a name="252-parallel-sections-construct"></a>2.5.2 parallel sections Yapısı
-**Paralel bölümleri** yönergesi belirtmek için bir kısayol form sağlayan bir **paralel** içeren tek bir bölge **bölümleri** yönergesi. Semantiğini açıkça belirtilmesi için özdeş bir **paralel** hemen sonrasında yönergesi bir **bölümleri** yönergesi. Söz dizimi **paralel bölümleri** yönergesi aşağıdaki gibidir:  
-  
-```  
-#pragma omp parallel sections  [clause[[,] clause] ...] new-line  
-   {  
-   [#pragma omp section new-line]  
-      structured-block  
-   [#pragma omp section new-linestructured-block  ]  
-   ...  
-}  
-```  
-  
- *Yan tümcesi* tarafından kabul yan tümceleri biri olabilir **paralel** ve **bölümleri** yönergeleri, dışında **nowait** yan tümcesi.  
-  
-## <a name="cross-references"></a>Çapraz referanslar:  
-  
--   **Paralel** yönerge, bkz: [bölüm 2.3](../../parallel/openmp/2-3-parallel-construct.md) sayfasında 8.  
-  
--   **bölümler** yönerge, bkz: [bölüm 2.4.2](../../parallel/openmp/2-4-2-sections-construct.md) sayfasında 14.
+
+**Paralel bölümleri** yönergesi belirtmek için bir kısayol form sağlar bir **paralel** içeren tek bir bölge **bölümleri** yönergesi. Semantiği açıkça belirtilmesi için özdeş bir **paralel** yönergesi hemen arkasından bir **bölümleri** yönergesi. Söz dizimi **paralel bölümleri** yönerge aşağıdaki gibidir:
+
+```
+#pragma omp parallel sections  [clause[[,] clause] ...] new-line
+   {
+   [#pragma omp section new-line]
+      structured-block
+   [#pragma omp section new-linestructured-block  ]
+   ...
+}
+```
+
+*Yan tümcesi* kabul eden yan tümceleri herhangi birini **paralel** ve **bölümleri** yönergeleri dışında **nowait** yan tümcesi.
+
+## <a name="cross-references"></a>Başvuruları çapraz:
+
+- **Paralel** yönergesine bakın [bölümü 2.3](../../parallel/openmp/2-3-parallel-construct.md) 8 sayfasında.
+
+- **bölümler** yönergesine bakın [bölümü 2.4.2](../../parallel/openmp/2-4-2-sections-construct.md) sayfasında 14.

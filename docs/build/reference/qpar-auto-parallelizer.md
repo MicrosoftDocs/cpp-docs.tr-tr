@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a701183becc7a561ca778dea383fdb57181d8da4
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 9e69bc999721bf833f100418442315fc8bb69e6c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710781"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46413906"
 ---
 # <a name="qpar-auto-parallelizer"></a>/Qpar (Otomatik Paralel Hale Getirici)
 
@@ -53,9 +53,9 @@ Derleyicinin otomatik olarak kod Döngülerde parallelizes, hesaplama arasında 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md)
-[(otomatik paralel hale getirici düzeyi raporlama) /Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)
-[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[/Q Seçenekler (Düşük Düzey İşlemler)](../../build/reference/q-options-low-level-operations.md)<br/>
+[/Qpar-report (Otomatik Paralel Hale Getirici Raporlama Düzeyi)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[#pragma loop()](../../preprocessor/loop.md)
-[yerel kodda paralel programlama](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)
+[#pragma loop()](../../preprocessor/loop.md)<br/>
+[Yerel kodda paralel programlama](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)

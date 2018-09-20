@@ -16,15 +16,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ffff35cdef6cf2f730687334bbb56bc078371a7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e41f9060ce24b89a0a7faae54ca6207c740475f3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381683"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46443247"
 ---
 # <a name="what-does-it-cost-me-to-derive-a-class-from-cobject"></a>CObject'ten Sınıf Türetmenin Bana Maliyeti Nedir?
-Sınıfından türetilen içinde ek yükü [CObject](../mfc/reference/cobject-class.md) en alt düzeydedir. Yalnızca dört sanal işlevler ve tek bir türetilmiş sınıf devralır [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) nesnesi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CObject Sınıfı: Sık Sorulan Sorular](../mfc/cobject-class-frequently-asked-questions.md)
+
+Sınıftan türetme içinde ek yükü [CObject](../mfc/reference/cobject-class.md) düzeydedir. Yalnızca dört sanal işlevler ve tek bir türetilmiş sınıfınızın devralır [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) nesne.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CObject Sınıfı: Sık Sorulan Sorular](../mfc/cobject-class-frequently-asked-questions.md)

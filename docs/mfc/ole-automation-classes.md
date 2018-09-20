@@ -20,22 +20,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d8316030ba65796d0e9811ca35384c8a4a2a3afa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ea35e51296b2fc528657c4dd9f9b9b76b84aae83
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342884"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391520"
 ---
 # <a name="ole-automation-classes"></a>OLE Otomasyon Sınıfları
-Bu sınıfların Otomasyon istemcileri (diğer uygulamaları denetleme uygulamaları) destekler. Otomasyon sunucuları (diğer uygulamalar tarafından denetlenen uygulamalar) aracılığıyla desteklenir [gönderme eşlemeleri](../mfc/reference/dispatch-maps.md).  
-  
- [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md)  
- Otomasyon sunucuları otomasyon istemcinizden çağırmak için kullanılır. Bir sınıf eklerken, bu sınıf bir tür kitaplığı sağlayan otomasyon sunucuları için tür kullanımı uyumlu sınıfları oluşturmak için kullanılır.  
-  
- [COleDispatchException](../mfc/reference/coledispatchexception-class.md)  
- OLE Otomasyon sırasında bir hatayla sonuçlanan bir özel durum. Otomasyon özel durumlar otomasyon sunucuları tarafından oluşturulan ve Otomasyon istemcileri tarafından yakalandı.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Bu sınıfların Otomasyon istemcileri (diğer uygulamaları denetleyen uygulamalar) destekler. Otomasyon sunucuları (diğer uygulamalar tarafından denetlenen uygulamalar) üzerinden desteklenmektedir [gönderme eşlemeleri](../mfc/reference/dispatch-maps.md).
+
+[COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md)<br/>
+Otomasyon sunucuları otomasyon istemcinizden çağırmak için kullanılır. Sınıf ekleme, bu sınıf, bir tür kitaplığı sağlayan otomasyon sunucuları için tür açısından güvenli sınıflar oluşturmak için kullanılır.
+
+[COleDispatchException](../mfc/reference/coledispatchexception-class.md)<br/>
+OLE Otomasyonu nesnesi etkin sırasında bir hatayla sonuçlanan bir özel durum. Otomasyon özel durumları otomasyon sunucuları tarafından oluşturulan ve Otomasyon istemcileri tarafından yakalandı.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

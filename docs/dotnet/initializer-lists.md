@@ -15,18 +15,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 6634b749480e5108548de0c8b53f8b09cc5a42c2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 981f2737d370dc25ca4e7dc6c20947b3867a0c65
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33127958"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394614"
 ---
 # <a name="initializer-lists"></a>Başlatıcı Listeleri
-Başlatıcı Listeleri artık önce temel sınıf oluşturucu olarak adlandırılır.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Visual C++ 2005 önce temel sınıf oluşturucu başlatıcı listesinden önce C++ için Yönetilen Uzantılar ile derleme yapılırken çağrıldı. Şimdi, ile derleme yapılırken **/CLR**, başlatıcı listesi önce çağırılır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel Dil Değişiklikleri (C++/CLI)](../dotnet/general-language-changes-cpp-cli.md)
+
+Başlatıcı Listeleri artık temel sınıf oluşturucusu önce çağrılır.
+
+## <a name="remarks"></a>Açıklamalar
+
+Visual C++ 2005'ten önce temel sınıf oluşturucusu, C++ için Yönetilen Uzantılar'ile derleme yaparken başlatıcı listesi önce çağrıldı. Şimdi, ile derleme yaparken **/CLR**, başlatıcı listesi önce çağrılır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Genel Dil Değişiklikleri (C++/CLI)](../dotnet/general-language-changes-cpp-cli.md)

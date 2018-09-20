@@ -1,5 +1,5 @@
 ---
-title: Kritik yönergesi kullanarak A.5 | Microsoft Docs
+title: A.5 critical yönergesini kullanma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,24 +12,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1a41e9664faaca24b6708c737a044828eb460bd
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 99f9ab513ae1df5a7e1e62cfefcefe404637c063
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33686262"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444573"
 ---
 # <a name="a5---using-the-critical-directive"></a>A.5   critical Yönergesini Kullanma
-Aşağıdaki örnek, birkaç içerir `critical` yönergeleri ([bölüm 2.6.2](../../parallel/openmp/2-6-2-critical-construct.md) sayfasında 18). Örnek bir görev kuyruktan çıkarıldı ve üzerinde çalışılan queuing bir modeli gösterilmektedir. Aynı görevi kuyruktan alma birden çok iş parçacığı karşı koruma sağlamak için dequeuing işlemi olmalıdır bir `critical` bölümü. Bu örnekte iki sıraları bağımsız olduğundan, bunlar tarafından korunur `critical` farklı adlara sahip yönergeleri *xaxis* ve *yaxis*.  
-  
-```  
-#pragma omp parallel shared(x, y) private(x_next, y_next)  
-{  
-    #pragma omp critical ( xaxis )  
-        x_next = dequeue(x);  
-    work(x_next);  
-    #pragma omp critical ( yaxis )  
-        y_next = dequeue(y);  
-    work(y_next);  
-}  
+
+Aşağıdaki örnek birkaç içerir `critical` yönergeleri ([bölümü 2.6.2](../../parallel/openmp/2-6-2-critical-construct.md) sayfasında 18). Örnekte, bir görev sıradan çıkarılan ve üzerinde çalıştığınız bir kuyruğa alma modeli gösterilmektedir. Aynı görevi kuyruktan çıkarma işlemlerini birden çok iş parçacığı karşı koruma sağlamak için sıradan çıkarmak işlemi olmalıdır bir `critical` bölümü. Bu örnekte iki kuyrukları bağımsız olduğundan, bunlar tarafından korunur `critical` yönergeleri farklı adlarla *xaxis* ve *yaxis*.
+
+```
+#pragma omp parallel shared(x, y) private(x_next, y_next)
+{
+    #pragma omp critical ( xaxis )
+        x_next = dequeue(x);
+    work(x_next);
+    #pragma omp critical ( yaxis )
+        y_next = dequeue(y);
+    work(y_next);
+}
 ```

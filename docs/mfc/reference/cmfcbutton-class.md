@@ -90,833 +90,936 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ded79786aaed0bf917ef57f445882c3f7d05719
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6d9acae5f87223a3b23c492f02596452fabb745f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709962"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46441297"
 ---
 # <a name="cmfcbutton-class"></a>CMFCButton sınıfı
-`CMFCButton` Sınıfı işlevsellik ekler [CButton](../../mfc/reference/cbutton-class.md) düğme metnini hizalama, düğme metni ve görüntüyü birleştirme, imleç seçme ve araç ipuçları belirleme gibi sınıf.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CMFCButton : public CButton  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`CMFCButton::CMFCButton`|Varsayılan Oluşturucu.|  
-|`CMFCButton::~CMFCButton`|Yıkıcı.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CMFCButton::CleanUp](#cleanup)|İç değişkenler sıfırlar ve görüntüler, bit eşlemler ve simgeler gibi ayrılan kaynakları serbest bırakır.|  
-|`CMFCButton::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|  
-|`CMFCButton::DrawItem`|Sahip tarafından çizilmiş bir düğmenin görsel bir özelliği değiştiğinde framework tarafından çağırılır. (Geçersiz kılmaları [CButton::DrawItem](../../mfc/reference/cbutton-class.md#drawitem).)|  
-|[CMFCButton::EnableFullTextTooltip](#enablefulltexttooltip)|Tam bir araç ipucu metninin büyük araç ipucu penceresi veya metinde küçük bir araç ipucu penceresi kesilmiş sürümünün görüntülenip görüntülenmeyeceğini belirtir.|  
-|[CMFCButton::EnableMenuFont](#enablemenufont)|Düğme metin yazı tipi uygulama menüsünden yazı tipi ile aynı olup olmadığını belirtir.|  
-|[CMFCButton::EnableWindowsTheming](#enablewindowstheming)|Düğme kenarlığın stili geçerli Windows teması için karşılık gelen olup olmadığını belirtir.|  
-|`CMFCButton::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|  
-|[CMFCButton::GetToolTipCtrl](#gettooltipctrl)|Temel alınan araç ipucu denetimi için bir başvuru döndürür.|  
-|[CMFCButton::IsAutoCheck](#isautocheck)|Onay kutusunun veya radyo düğmesinin bir otomatik düğmenin olup olmadığını belirtir.|  
-|[CMFCButton::IsAutorepeatCommandMode](#isautorepeatcommandmode)|Bir düğme otomatik yineleme moduna ayarlanmış olup olmadığını gösterir.|  
-|[CMFCButton::IsCheckBox](#ischeckbox)|Bir düğme, onay kutusu düğmesi olup olmadığını gösterir.|  
-|[CMFCButton::IsChecked](#ischecked)|Geçerli düğmenin işaretli olup olmadığını gösterir.|  
-|[CMFCButton::IsHighlighted](#ishighlighted)|Bir düğme vurgulanmış olup olmadığını gösterir.|  
-|[CMFCButton::IsPressed](#ispressed)|Bir düğme gönderildi mi, yoksa vurgulanır ve olup olmadığını gösterir.|  
-|[CMFCButton::IsPushed](#ispushed)|Bir düğme gönderildiğinde olup olmadığını gösterir.|  
-|[CMFCButton::IsRadioButton](#isradiobutton)|Bir düğmeye bir radyo düğmesi olup olmadığını belirtir.|  
-|[CMFCButton::IsWindowsThemingEnabled](#iswindowsthemingenabled)|Düğme kenarlığın stili geçerli Windows teması için karşılık gelen olup olmadığını gösterir.|  
-|`CMFCButton::OnDrawParentBackground`|Belirtilen alanda bir düğmenin üst arka planı çizer. (Geçersiz kılmaları [AFX_GLOBAL_DATA::DrawParentBackground](../../mfc/reference/afx-global-data-structure.md)|  
-|`CMFCButton::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
-|[CMFCButton::SetAutorepeatMode](#setautorepeatmode)|Bir düğme otomatik yineleme modunu ayarlar.|  
-|[CMFCButton::SetCheckedImage](#setcheckedimage)|İşaretli bir düğme için resim ayarlar.|  
-|[CMFCButton::SetFaceColor](#setfacecolor)|Düğme metnini arka plan rengini ayarlar.|  
-|[CMFCButton::SetImage](#setimage)|Bir düğme için resim ayarlar.|  
-|[CMFCButton::SetMouseCursor](#setmousecursor)|İmleç görüntü ayarlar.|  
-|[CMFCButton::SetMouseCursorHand](#setmousecursorhand)|İmleç el görüntüyü ayarlar.|  
-|[CMFCButton::SetStdImage](#setstdimage)|Kullanan bir `CMenuImages` nesne düğmesi ayarlayın.|  
-|[CMFCButton::SetTextColor](#settextcolor)|Seçili olmayan bir düğmenin düğme metni rengini ayarlar.|  
-|[CMFCButton::SetTextHotColor](#settexthotcolor)|Seçilen bir düğmenin düğme metni rengini ayarlar.|  
-|[CMFCButton::SetTooltip](#settooltip)|Bir araç ipucu, bir düğme ile ilişkilendirir.|  
-|[CMFCButton::SizeToContent](#sizetocontent)|Bir düğme, düğme metni ve görüntüyü içerecek şekilde yeniden boyutlandırır.|  
-  
-### <a name="protected-methods"></a>Korumalı Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CMFCButton::OnDraw](#ondraw)|Bir düğme çizmek için framework tarafından çağırılır.|  
-|[CMFCButton::OnDrawBorder](#ondrawborder)|Düğmenin kenarlık çizmek için framework tarafından çağırılır.|  
-|[CMFCButton::OnDrawFocusRect](#ondrawfocusrect)|Bir düğme odak dikdörtgeni çizilmesi gerektiğinde framework tarafından çağırılır.|  
-|[CMFCButton::OnDrawText](#ondrawtext)|Düğme metnini çizmek için framework tarafından çağırılır.|  
-|[CMFCButton::OnFillBackground](#onfillbackground)|Düğme metnini arka planının çizilmesi gerektiğinde framework tarafından çağırılır.|  
-|[CMFCButton::SelectFont](#selectfont)|Belirtilen bir cihaz bağlamı ile ilişkili olan yazı tipini alır.|  
-  
-### <a name="data-members"></a>Veri üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CMFCButton::m_nAlignStyle](#m_nalignstyle)|Düğme metnini hizalamasını belirtir.|  
+
+`CMFCButton` Sınıfı işlevsellik ekler [CButton](../../mfc/reference/cbutton-class.md) düğme metnini hizalama, düğme metni ve görüntüyü birleştirme, imleç seçme ve araç ipuçları belirleme gibi sınıf.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CMFCButton : public CButton
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`CMFCButton::CMFCButton`|Varsayılan Oluşturucu.|
+|`CMFCButton::~CMFCButton`|Yıkıcı.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CMFCButton::CleanUp](#cleanup)|İç değişkenler sıfırlar ve görüntüler, bit eşlemler ve simgeler gibi ayrılan kaynakları serbest bırakır.|
+|`CMFCButton::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|
+|`CMFCButton::DrawItem`|Sahip tarafından çizilmiş bir düğmenin görsel bir özelliği değiştiğinde framework tarafından çağırılır. (Geçersiz kılmaları [CButton::DrawItem](../../mfc/reference/cbutton-class.md#drawitem).)|
+|[CMFCButton::EnableFullTextTooltip](#enablefulltexttooltip)|Tam bir araç ipucu metninin büyük araç ipucu penceresi veya metinde küçük bir araç ipucu penceresi kesilmiş sürümünün görüntülenip görüntülenmeyeceğini belirtir.|
+|[CMFCButton::EnableMenuFont](#enablemenufont)|Düğme metin yazı tipi uygulama menüsünden yazı tipi ile aynı olup olmadığını belirtir.|
+|[CMFCButton::EnableWindowsTheming](#enablewindowstheming)|Düğme kenarlığın stili geçerli Windows teması için karşılık gelen olup olmadığını belirtir.|
+|`CMFCButton::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|
+|[CMFCButton::GetToolTipCtrl](#gettooltipctrl)|Temel alınan araç ipucu denetimi için bir başvuru döndürür.|
+|[CMFCButton::IsAutoCheck](#isautocheck)|Onay kutusunun veya radyo düğmesinin bir otomatik düğmenin olup olmadığını belirtir.|
+|[CMFCButton::IsAutorepeatCommandMode](#isautorepeatcommandmode)|Bir düğme otomatik yineleme moduna ayarlanmış olup olmadığını gösterir.|
+|[CMFCButton::IsCheckBox](#ischeckbox)|Bir düğme, onay kutusu düğmesi olup olmadığını gösterir.|
+|[CMFCButton::IsChecked](#ischecked)|Geçerli düğmenin işaretli olup olmadığını gösterir.|
+|[CMFCButton::IsHighlighted](#ishighlighted)|Bir düğme vurgulanmış olup olmadığını gösterir.|
+|[CMFCButton::IsPressed](#ispressed)|Bir düğme gönderildi mi, yoksa vurgulanır ve olup olmadığını gösterir.|
+|[CMFCButton::IsPushed](#ispushed)|Bir düğme gönderildiğinde olup olmadığını gösterir.|
+|[CMFCButton::IsRadioButton](#isradiobutton)|Bir düğmeye bir radyo düğmesi olup olmadığını belirtir.|
+|[CMFCButton::IsWindowsThemingEnabled](#iswindowsthemingenabled)|Düğme kenarlığın stili geçerli Windows teması için karşılık gelen olup olmadığını gösterir.|
+|`CMFCButton::OnDrawParentBackground`|Belirtilen alanda bir düğmenin üst arka planı çizer. (Geçersiz kılmaları [AFX_GLOBAL_DATA::DrawParentBackground](../../mfc/reference/afx-global-data-structure.md)|
+|`CMFCButton::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|
+|[CMFCButton::SetAutorepeatMode](#setautorepeatmode)|Bir düğme otomatik yineleme modunu ayarlar.|
+|[CMFCButton::SetCheckedImage](#setcheckedimage)|İşaretli bir düğme için resim ayarlar.|
+|[CMFCButton::SetFaceColor](#setfacecolor)|Düğme metnini arka plan rengini ayarlar.|
+|[CMFCButton::SetImage](#setimage)|Bir düğme için resim ayarlar.|
+|[CMFCButton::SetMouseCursor](#setmousecursor)|İmleç görüntü ayarlar.|
+|[CMFCButton::SetMouseCursorHand](#setmousecursorhand)|İmleç el görüntüyü ayarlar.|
+|[CMFCButton::SetStdImage](#setstdimage)|Kullanan bir `CMenuImages` nesne düğmesi ayarlayın.|
+|[CMFCButton::SetTextColor](#settextcolor)|Seçili olmayan bir düğmenin düğme metni rengini ayarlar.|
+|[CMFCButton::SetTextHotColor](#settexthotcolor)|Seçilen bir düğmenin düğme metni rengini ayarlar.|
+|[CMFCButton::SetTooltip](#settooltip)|Bir araç ipucu, bir düğme ile ilişkilendirir.|
+|[CMFCButton::SizeToContent](#sizetocontent)|Bir düğme, düğme metni ve görüntüyü içerecek şekilde yeniden boyutlandırır.|
+
+### <a name="protected-methods"></a>Korumalı Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CMFCButton::OnDraw](#ondraw)|Bir düğme çizmek için framework tarafından çağırılır.|
+|[CMFCButton::OnDrawBorder](#ondrawborder)|Düğmenin kenarlık çizmek için framework tarafından çağırılır.|
+|[CMFCButton::OnDrawFocusRect](#ondrawfocusrect)|Bir düğme odak dikdörtgeni çizilmesi gerektiğinde framework tarafından çağırılır.|
+|[CMFCButton::OnDrawText](#ondrawtext)|Düğme metnini çizmek için framework tarafından çağırılır.|
+|[CMFCButton::OnFillBackground](#onfillbackground)|Düğme metnini arka planının çizilmesi gerektiğinde framework tarafından çağırılır.|
+|[CMFCButton::SelectFont](#selectfont)|Belirtilen bir cihaz bağlamı ile ilişkili olan yazı tipini alır.|
+
+### <a name="data-members"></a>Veri üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CMFCButton::m_nAlignStyle](#m_nalignstyle)|Düğme metnini hizalamasını belirtir.|
 |[CMFCButton::m_bDontUseWinXPTheme](#m_bDontUseWinXPTheme)|Windows XP temalarını kullanılıp kullanılmayacağını belirtir.|
-|[CMFCButton::m_bDrawFocus](#m_bdrawfocus)|Geçici bir düğme odak dikdörtgen çizmek görüntülenip görüntülenmeyeceğini gösterir.| 
-|[CMFCButton::m_nFlatStyle](#m_nflatstyle)|Kenarlıksız, düz, noktalı düz veya 3B gibi bir düğmenin stilini belirtir.|  
+|[CMFCButton::m_bDrawFocus](#m_bdrawfocus)|Geçici bir düğme odak dikdörtgen çizmek görüntülenip görüntülenmeyeceğini gösterir.|
+|[CMFCButton::m_nFlatStyle](#m_nflatstyle)|Kenarlıksız, düz, noktalı düz veya 3B gibi bir düğmenin stilini belirtir.|
 |[CMFCButton::m_bGrayDisabled](#m_bGrayDisabled)|TRUE olduğunda grileştirilmiş olarak çizilecek devre dışı bırakılmış bir düğme etkinleştirir.|
-|[CMFCButton::m_bHighlightChecked](#m_bhighlightchecked)|İmleci üzerine geldiğinde bir BS_CHECKBOX stili düğme vurgulamak görüntülenip görüntülenmeyeceğini gösterir.|  
+|[CMFCButton::m_bHighlightChecked](#m_bhighlightchecked)|İmleci üzerine geldiğinde bir BS_CHECKBOX stili düğme vurgulamak görüntülenip görüntülenmeyeceğini gösterir.|
 |[CMFCButton::m_bResponseOnButtonDown](#m_bResponseOnButtonDown)|Düğme basılıyken olayları yanıtlamak görüntülenip görüntülenmeyeceğini gösterir.|
 |[CMFCButton::m_bRightImage](#m_brightimage)|Düğmenin sağ tarafında bir görüntü görüntülenip görüntülenmeyeceğini gösterir.|
 |[CMFCButton::m_bTopImage](#m_bTopImage)| Görüntüyü düğme üzerinde olup olmadığını gösterir.|
-|[CMFCButton::m_bTransparent](#m_btransparent)|Düğme saydam olup olmadığını belirtir.|  
+|[CMFCButton::m_bTransparent](#m_btransparent)|Düğme saydam olup olmadığını belirtir.|
 |[CMFCButton::m_bWasDblClk](#m_bWasDblClk)| Son tıklayın olup olmadığını, çift tıklama olay olmadığını belirtir.|
-  
-## <a name="remarks"></a>Açıklamalar  
- Düğmeleri diğer tür türetilir `CMFCButton` gibi sınıf [CMFCURLLinkButton](../../mfc/reference/cmfclinkctrl-class.md) köprüler destekleyen bir sınıf ve `CMFCColorButton` sınıfını, bir Renk Seçici iletişim kutusunu destekler.  
-  
- Stilini bir `CMFCButton` nesnesi olabilir *3B*, *düz*, *noktalı sabit* veya *hiçbir kenarlık*. Düğme metnini, sol, üst veya merkezi bir düğmeye hizalanabilir. Çalışma zamanında, düğme metin, görüntü veya metin ve resim görüntüler kontrol edebilirsiniz. Ayrıca, belirli bir imleç görüntü İmleç bir düğmenin üzerine getirildiğinde gösterilecek belirtebilirsiniz.  
-  
- Kodunuzda doğrudan veya kullanarak bir düğme denetimi oluşturmak **MFC Sınıf Sihirbazı** aracı ve bir iletişim kutusu şablonu. Bir düğme denetimi doğrudan oluşturursanız, ekleme bir `CMFCButton` uygulama ve sonra çağrı Oluşturucu değişken ve `Create` yöntemlerinin `CMFCButton` nesne. Kullanırsanız **MFC Sınıf Sihirbazı**, ekleme bir `CButton` değişken, uygulamanıza ve ardından değişkenin türünü değiştirme `CButton` için `CMFCButton`.  
-  
- Bir iletişim kutusu uygulama bildirim iletilerini işlemek için bir ileti eşleme girişi ve her uyarı için bir olay işleyicisi ekleyin. Tarafından gönderilen bildirimleri bir `CMFCButton` nesne tarafından gönderilen bu aynı olan bir `CButton` nesne.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, çeşitli yöntemlerle kullanarak düğmesi özelliklerini yapılandırma işlemi gösterilmektedir `CMFCButton` sınıfı. Bir örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).  
-  
- [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]  
-[!code-cpp[NVC_MFC_NewControls#31](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_2.cpp)]  
-[!code-cpp[NVC_MFC_NewControls#32](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_3.cpp)]  
-[!code-cpp[NVC_MFC_NewControls#33](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_4.cpp)]  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- [CCmdTarget](../../mfc/reference/ccmdtarget-class.md)  
-  
- [CWnd](../../mfc/reference/cwnd-class.md)  
-  
- [CButton](../../mfc/reference/cbutton-class.md)  
-  
- [CMFCButton](../../mfc/reference/cmfcbutton-class.md)  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxbutton.h  
-  
-##  <a name="cleanup"></a>  CMFCButton::CleanUp  
- İç değişkenler sıfırlar ve görüntüler, bit eşlemler ve simgeler gibi ayrılan kaynakları serbest bırakır.  
-  
-```  
+
+## <a name="remarks"></a>Açıklamalar
+
+Düğmeleri diğer tür türetilir `CMFCButton` gibi sınıf [CMFCURLLinkButton](../../mfc/reference/cmfclinkctrl-class.md) köprüler destekleyen bir sınıf ve `CMFCColorButton` sınıfını, bir Renk Seçici iletişim kutusunu destekler.
+
+Stilini bir `CMFCButton` nesnesi olabilir *3B*, *düz*, *noktalı sabit* veya *hiçbir kenarlık*. Düğme metnini, sol, üst veya merkezi bir düğmeye hizalanabilir. Çalışma zamanında, düğme metin, görüntü veya metin ve resim görüntüler kontrol edebilirsiniz. Ayrıca, belirli bir imleç görüntü İmleç bir düğmenin üzerine getirildiğinde gösterilecek belirtebilirsiniz.
+
+Kodunuzda doğrudan veya kullanarak bir düğme denetimi oluşturmak **MFC Sınıf Sihirbazı** aracı ve bir iletişim kutusu şablonu. Bir düğme denetimi doğrudan oluşturursanız, ekleme bir `CMFCButton` uygulama ve sonra çağrı Oluşturucu değişken ve `Create` yöntemlerinin `CMFCButton` nesne. Kullanırsanız **MFC Sınıf Sihirbazı**, ekleme bir `CButton` değişken, uygulamanıza ve ardından değişkenin türünü değiştirme `CButton` için `CMFCButton`.
+
+Bir iletişim kutusu uygulama bildirim iletilerini işlemek için bir ileti eşleme girişi ve her uyarı için bir olay işleyicisi ekleyin. Tarafından gönderilen bildirimleri bir `CMFCButton` nesne tarafından gönderilen bu aynı olan bir `CButton` nesne.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, çeşitli yöntemlerle kullanarak düğmesi özelliklerini yapılandırma işlemi gösterilmektedir `CMFCButton` sınıfı. Bir örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+
+[!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
+[!code-cpp[NVC_MFC_NewControls#31](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_2.cpp)]
+[!code-cpp[NVC_MFC_NewControls#32](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_3.cpp)]
+[!code-cpp[NVC_MFC_NewControls#33](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_4.cpp)]
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+
+[CWnd](../../mfc/reference/cwnd-class.md)
+
+[CButton](../../mfc/reference/cbutton-class.md)
+
+[CMFCButton](../../mfc/reference/cmfcbutton-class.md)
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxbutton.h
+
+##  <a name="cleanup"></a>  CMFCButton::CleanUp
+
+İç değişkenler sıfırlar ve görüntüler, bit eşlemler ve simgeler gibi ayrılan kaynakları serbest bırakır.
+
+```
 virtual void CleanUp();
-```  
-  
-##  <a name="enablefulltexttooltip"></a>  CMFCButton::EnableFullTextTooltip  
- Tam bir araç ipucu metninin büyük araç ipucu penceresi veya metinde küçük bir araç ipucu penceresi kesilmiş sürümünün görüntülenip görüntülenmeyeceğini belirtir.  
-  
-```  
+```
+
+##  <a name="enablefulltexttooltip"></a>  CMFCButton::EnableFullTextTooltip
+
+Tam bir araç ipucu metninin büyük araç ipucu penceresi veya metinde küçük bir araç ipucu penceresi kesilmiş sürümünün görüntülenip görüntülenmeyeceğini belirtir.
+
+```
 void EnableFullTextTooltip(BOOL bOn=TRUE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *İyi*<br/>
-[in] Metnin tamamını görüntülemek için TRUE; Kesilmiş görüntüleme metni için FALSE.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="enablemenufont"></a>  CMFCButton::EnableMenuFont  
- Düğme metin yazı tipi uygulama menüsünden yazı tipi ile aynı olup olmadığını belirtir.  
-  
-```  
+[in] Metnin tamamını görüntülemek için TRUE; Kesilmiş görüntüleme metni için FALSE.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="enablemenufont"></a>  CMFCButton::EnableMenuFont
+
+Düğme metin yazı tipi uygulama menüsünden yazı tipi ile aynı olup olmadığını belirtir.
+
+```
 void EnableMenuFont(
-    BOOL bOn=TRUE,  
+    BOOL bOn=TRUE,
     BOOL bRedraw=TRUE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *İyi*<br/>
-[in] Uygulama menüsü yazı tipi düğme metin yazı tipi kullanmak için TRUE; Sistem yazı tipini kullan için FALSE. Varsayılan değer True'dur.  
-  
+[in] Uygulama menüsü yazı tipi düğme metin yazı tipi kullanmak için TRUE; Sistem yazı tipini kullan için FALSE. Varsayılan değer True'dur.
+
 *bRedraw*<br/>
-[in] Hemen ekranı yeniden çizmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Düğme metin yazı tipi belirtmek için bu yöntemi kullanmayın, yazı tipiyle belirtebilirsiniz [CWnd::SetFont](../../mfc/reference/cwnd-class.md#setfont) yöntemi. Bir yazı tipi hiç belirtmezseniz varsayılan yazı tipi framework ayarlar.  
-  
-##  <a name="enablewindowstheming"></a>  CMFCButton::EnableWindowsTheming  
- Düğme kenarlığın stili geçerli Windows teması için karşılık gelen olup olmadığını belirtir.  
-  
-```  
+[in] Hemen ekranı yeniden çizmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.
+
+### <a name="remarks"></a>Açıklamalar
+
+Düğme metin yazı tipi belirtmek için bu yöntemi kullanmayın, yazı tipiyle belirtebilirsiniz [CWnd::SetFont](../../mfc/reference/cwnd-class.md#setfont) yöntemi. Bir yazı tipi hiç belirtmezseniz varsayılan yazı tipi framework ayarlar.
+
+##  <a name="enablewindowstheming"></a>  CMFCButton::EnableWindowsTheming
+
+Düğme kenarlığın stili geçerli Windows teması için karşılık gelen olup olmadığını belirtir.
+
+```
 static void EnableWindowsTheming(BOOL bEnable = TRUE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *bSistemlerde*<br/>
-[in] Düğme Kenarlıkları çizmek için geçerli Windows teması kullanmak için TRUE; Windows teması kullanmak için FALSE. Varsayılan değer True'dur.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bu yöntem türetilmiş uygulamanızdaki tüm düğmeleri etkiler `CMFCButton` sınıfı.  
-  
-##  <a name="gettooltipctrl"></a>  CMFCButton::GetToolTipCtrl  
- Temel alınan araç ipucu denetimi için bir başvuru döndürür.  
-  
-```  
+[in] Düğme Kenarlıkları çizmek için geçerli Windows teması kullanmak için TRUE; Windows teması kullanmak için FALSE. Varsayılan değer True'dur.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu yöntem türetilmiş uygulamanızdaki tüm düğmeleri etkiler `CMFCButton` sınıfı.
+
+##  <a name="gettooltipctrl"></a>  CMFCButton::GetToolTipCtrl
+
+Temel alınan araç ipucu denetimi için bir başvuru döndürür.
+
+```
 CToolTipCtrl& GetToolTipCtrl();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Temel alınan araç ipucu denetimi için bir başvuru.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="isautocheck"></a>  CMFCButton::IsAutoCheck  
- Onay kutusunun veya radyo düğmesinin bir otomatik düğmenin olup olmadığını belirtir.  
-  
-```  
-BOOL IsAutoCheck() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Düğmeyi bir stile sahipse TRUE BS_AUTOCHECKBOX veya bs_autoradıobutton; Aksi takdirde FALSE.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="isautorepeatcommandmode"></a>  CMFCButton::IsAutorepeatCommandMode  
- Bir düğme otomatik yineleme moduna ayarlanmış olup olmadığını gösterir.  
-  
-```  
-BOOL IsAutorepeatCommandMode() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Düğme otomatik yineleme moduna olarak ayarlanmışsa TRUE; Aksi takdirde FALSE.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Kullanım [CMFCButton::SetAutorepeatMode](#setautorepeatmode) otomatik yineleme moduna bir düğme ayarlamak için yöntemi.  
-  
-##  <a name="ischeckbox"></a>  CMFCButton::IsCheckBox  
- Bir düğme, onay kutusu düğmesi olup olmadığını gösterir.  
-  
-```  
-BOOL IsCheckBox() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Düğme BS_CHECKBOX ya da BS_AUTOCHECKBOX bir stile sahipse TRUE; Aksi takdirde FALSE.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="ischecked"></a>  CMFCButton::IsChecked  
- Geçerli düğmenin işaretli olup olmadığını gösterir.  
-  
-```  
-BOOL IsChecked() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Geçerli bir düğme işaretlendiğinde TRUE; Aksi takdirde FALSE.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Çerçeve farklı türde düğmeleri seçili olduğunu göstermek için farklı yöntemler kullanır. Örneğin, bir nokta içeren bir radyo düğmesi denetlenir; içerdiği durumlarda bir onay kutusu işaretli bir **X**.  
-  
-##  <a name="ishighlighted"></a>  CMFCButton::IsHighlighted  
- Bir düğme vurgulanmış olup olmadığını gösterir.  
-  
-```  
-BOOL IsHighlighted() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Düğmesi vurgulanmış TRUE; Aksi takdirde FALSE.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Düğmenin üzerine fare geldiğinde bir düğme vurgulanmış olur.  
-  
-##  <a name="ispressed"></a>  CMFCButton::IsPressed  
- Bir düğme gönderildi mi, yoksa vurgulanır ve olup olmadığını gösterir.  
-  
-```  
-BOOL IsPressed() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Düğme denetimine basıldıysa TRUE; Aksi takdirde FALSE.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="ispushed"></a>  CMFCButton::IsPushed  
- Bir düğme gönderildiğinde olup olmadığını gösterir.  
-  
-```  
-BOOL IsPushed() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Düğme gönderildiğinde TRUE; Aksi takdirde FALSE.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="isradiobutton"></a>  CMFCButton::IsRadioButton  
- Bir düğmeye bir radyo düğmesi olup olmadığını belirtir.  
-  
-```  
-BOOL IsRadioButton() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Düğme stilini bs_radıobutton veya bs_autoradıobutton ise TRUE; Aksi takdirde FALSE.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="iswindowsthemingenabled"></a>  CMFCButton::IsWindowsThemingEnabled  
- Düğme kenarlığın stili geçerli Windows teması için karşılık gelen olup olmadığını gösterir.  
-  
-```  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Temel alınan araç ipucu denetimi için bir başvuru.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="isautocheck"></a>  CMFCButton::IsAutoCheck
+
+Onay kutusunun veya radyo düğmesinin bir otomatik düğmenin olup olmadığını belirtir.
+
+```
+BOOL IsAutoCheck() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Düğmeyi bir stile sahipse TRUE BS_AUTOCHECKBOX veya bs_autoradıobutton; Aksi takdirde FALSE.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="isautorepeatcommandmode"></a>  CMFCButton::IsAutorepeatCommandMode
+
+Bir düğme otomatik yineleme moduna ayarlanmış olup olmadığını gösterir.
+
+```
+BOOL IsAutorepeatCommandMode() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Düğme otomatik yineleme moduna olarak ayarlanmışsa TRUE; Aksi takdirde FALSE.
+
+### <a name="remarks"></a>Açıklamalar
+
+Kullanım [CMFCButton::SetAutorepeatMode](#setautorepeatmode) otomatik yineleme moduna bir düğme ayarlamak için yöntemi.
+
+##  <a name="ischeckbox"></a>  CMFCButton::IsCheckBox
+
+Bir düğme, onay kutusu düğmesi olup olmadığını gösterir.
+
+```
+BOOL IsCheckBox() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Düğme BS_CHECKBOX ya da BS_AUTOCHECKBOX bir stile sahipse TRUE; Aksi takdirde FALSE.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="ischecked"></a>  CMFCButton::IsChecked
+
+Geçerli düğmenin işaretli olup olmadığını gösterir.
+
+```
+BOOL IsChecked() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Geçerli bir düğme işaretlendiğinde TRUE; Aksi takdirde FALSE.
+
+### <a name="remarks"></a>Açıklamalar
+
+Çerçeve farklı türde düğmeleri seçili olduğunu göstermek için farklı yöntemler kullanır. Örneğin, bir nokta içeren bir radyo düğmesi denetlenir; içerdiği durumlarda bir onay kutusu işaretli bir **X**.
+
+##  <a name="ishighlighted"></a>  CMFCButton::IsHighlighted
+
+Bir düğme vurgulanmış olup olmadığını gösterir.
+
+```
+BOOL IsHighlighted() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Düğmesi vurgulanmış TRUE; Aksi takdirde FALSE.
+
+### <a name="remarks"></a>Açıklamalar
+
+Düğmenin üzerine fare geldiğinde bir düğme vurgulanmış olur.
+
+##  <a name="ispressed"></a>  CMFCButton::IsPressed
+
+Bir düğme gönderildi mi, yoksa vurgulanır ve olup olmadığını gösterir.
+
+```
+BOOL IsPressed() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Düğme denetimine basıldıysa TRUE; Aksi takdirde FALSE.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="ispushed"></a>  CMFCButton::IsPushed
+
+Bir düğme gönderildiğinde olup olmadığını gösterir.
+
+```
+BOOL IsPushed() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Düğme gönderildiğinde TRUE; Aksi takdirde FALSE.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="isradiobutton"></a>  CMFCButton::IsRadioButton
+
+Bir düğmeye bir radyo düğmesi olup olmadığını belirtir.
+
+```
+BOOL IsRadioButton() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Düğme stilini bs_radıobutton veya bs_autoradıobutton ise TRUE; Aksi takdirde FALSE.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="iswindowsthemingenabled"></a>  CMFCButton::IsWindowsThemingEnabled
+
+Düğme kenarlığın stili geçerli Windows teması için karşılık gelen olup olmadığını gösterir.
+
+```
 static BOOL IsWindowsThemingEnabled();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Düğme kenarlığın stili karşılık gelen geçerli Windows teması için TRUE; Aksi takdirde FALSE.  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Düğme kenarlığın stili karşılık gelen geçerli Windows teması için TRUE; Aksi takdirde FALSE.
 
 
 
 ## <a name="a-namembdontusewinxptheme-cmfcbuttonmbdontusewinxptheme"></a><a name="m_bDontUseWinXPTheme"/> CMFCButton::m_bDontUseWinXPTheme
+
 Windows XP temalarını düğme çizerken kullanılıp kullanılmayacağını belirtir.
 
-```  
-BOOL m_bDontUseWinXPTheme;  
+```
+BOOL m_bDontUseWinXPTheme;
 ```
 
-##  <a name="m_bdrawfocus"></a>  CMFCButton::m_bDrawFocus  
- Geçici bir düğme odak dikdörtgen çizmek görüntülenip görüntülenmeyeceğini gösterir.  
-  
-```  
-BOOL m_bDrawFocus;  
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Ayarlama `m_bDrawFocus` framework düğmenin metninin çevresindeki odak dikdörtgen çizme ve düğme odak alırsa görüntü belirtmek için true üyesi.  
-  
- `CMFCButton` Oluşturucu, bu üye true başlatır.  
+##  <a name="m_bdrawfocus"></a>  CMFCButton::m_bDrawFocus
+
+Geçici bir düğme odak dikdörtgen çizmek görüntülenip görüntülenmeyeceğini gösterir.
+
+```
+BOOL m_bDrawFocus;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Ayarlama `m_bDrawFocus` framework düğmenin metninin çevresindeki odak dikdörtgen çizme ve düğme odak alırsa görüntü belirtmek için true üyesi.
+
+`CMFCButton` Oluşturucu, bu üye true başlatır.
 
 ##  <a name="m_bGrayDisabled"></a>  CMFCButton::m_bGrayDisabled
+
 TRUE olduğunda grileştirilmiş olarak çizilecek devre dışı bırakılmış bir düğme etkinleştirir.
 
 
-```  
-BOOL m_bGrayDisabled;  
+```
+BOOL m_bGrayDisabled;
 ```
 
-##  <a name="m_bhighlightchecked"></a>  CMFCButton::m_bHighlightChecked  
- İmleci üzerine geldiğinde bir BS_CHECKBOX stili düğme vurgulamak görüntülenip görüntülenmeyeceğini gösterir.  
-  
-```  
-BOOL m_bHighlightChecked;  
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Ayarlama `m_bHighlightChecked` üye üzerine fare geldiğinde framework BS_CHECKBOX stili düğme vurgular belirtmek için true.  
+##  <a name="m_bhighlightchecked"></a>  CMFCButton::m_bHighlightChecked
+
+İmleci üzerine geldiğinde bir BS_CHECKBOX stili düğme vurgulamak görüntülenip görüntülenmeyeceğini gösterir.
+
+```
+BOOL m_bHighlightChecked;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Ayarlama `m_bHighlightChecked` üye üzerine fare geldiğinde framework BS_CHECKBOX stili düğme vurgular belirtmek için true.
 
 ##  <a name="m_bResponseOnButtonDown"></a> CMFCButton::m_bResponseOnButtonDown
+
 Düğme basılıyken olayları yanıtlamak görüntülenip görüntülenmeyeceğini gösterir.
 
-```  
-BOOL m_bResponseOnButtonDown;  
-```  
+```
+BOOL m_bResponseOnButtonDown;
+```
 
-##  <a name="m_brightimage"></a>  CMFCButton::m_bRightImage  
- Düğmenin sağ tarafında bir görüntü görüntülenip görüntülenmeyeceğini gösterir.  
-  
-```  
-BOOL m_bRightImage;  
-```  
+##  <a name="m_brightimage"></a>  CMFCButton::m_bRightImage
+
+Düğmenin sağ tarafında bir görüntü görüntülenip görüntülenmeyeceğini gösterir.
+
+```
+BOOL m_bRightImage;
+```
 
 
 ##  <a name="m_bTopImage"></a>  CMFCButton::m_bTopImage](#m_bTopImage)
+
 Görüntüyü düğme üzerinde olup olmadığını gösterir.
 
-```  
-BOOL m_bTopImage;  
+```
+BOOL m_bTopImage;
 ```
 
-### <a name="remarks"></a>Açıklamalar  
- Ayarlama `m_bRightImage` üye düğmenin resim framework tarafından düğmenin metin etiketinin sağında görüntüleneceğini belirtmek için true.  
-  
-##  <a name="m_btransparent"></a>  CMFCButton::m_bTransparent  
- Düğme saydam olup olmadığını belirtir.  
-  
-```  
-BOOL m_bTransparent;  
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Ayarlama `m_bTransparent` üye framework düğme saydam yapar belirtmek için true. `CMFCButton` Oluşturucu, bu üye yanlış başlatır.  
-  
-##  <a name="m_nalignstyle"></a>  CMFCButton::m_nAlignStyle  
- Düğme metnini hizalamasını belirtir.  
-  
-```  
-AlignStyle m_nAlignStyle;  
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Aşağıdakilerden birini kullanın `CMFCButton::AlignStyle` numaralandırma değerlerinin düğme metnini hizalama belirtmek için:  
-  
-|Değer|Açıklama|  
-|-----------|-----------------|  
-|ALIGN_CENTER|(Varsayılan) Orta düğmenin düğme metnini hizalar.|  
-|ALIGN_LEFT|Düğme metnini düğmenin sol tarafıyla hizalar.|  
-|ALIGN_RIGHT|Düğmenin sağ tarafında düğme metnini hizalar.|  
-  
- `CMFCButton` Oluşturucu bu üyeye ALIGN_CENTER başlatır.  
+### <a name="remarks"></a>Açıklamalar
 
-##  <a name="m_bWasDblClk"></a>  CMFCButton::m_bWasDblClk](#m_bWasDblClk) | 
+Ayarlama `m_bRightImage` üye düğmenin resim framework tarafından düğmenin metin etiketinin sağında görüntüleneceğini belirtmek için true.
+
+##  <a name="m_btransparent"></a>  CMFCButton::m_bTransparent
+
+Düğme saydam olup olmadığını belirtir.
+
+```
+BOOL m_bTransparent;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Ayarlama `m_bTransparent` üye framework düğme saydam yapar belirtmek için true. `CMFCButton` Oluşturucu, bu üye yanlış başlatır.
+
+##  <a name="m_nalignstyle"></a>  CMFCButton::m_nAlignStyle
+
+Düğme metnini hizalamasını belirtir.
+
+```
+AlignStyle m_nAlignStyle;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Aşağıdakilerden birini kullanın `CMFCButton::AlignStyle` numaralandırma değerlerinin düğme metnini hizalama belirtmek için:
+
+|Değer|Açıklama|
+|-----------|-----------------|
+|ALIGN_CENTER|(Varsayılan) Orta düğmenin düğme metnini hizalar.|
+|ALIGN_LEFT|Düğme metnini düğmenin sol tarafıyla hizalar.|
+|ALIGN_RIGHT|Düğmenin sağ tarafında düğme metnini hizalar.|
+
+`CMFCButton` Oluşturucu bu üyeye ALIGN_CENTER başlatır.
+
+##  <a name="m_bWasDblClk"></a>  CMFCButton::m_bWasDblClk](#m_bWasDblClk) |
+
 Son tıklayın olup olmadığını olay çift tıklama oluştuğunu gösterir. |
 
-```  
-BOOL m_bWasDblClk;  
-```  
+```
+BOOL m_bWasDblClk;
+```
 
-##  <a name="m_nflatstyle"></a>  CMFCButton::m_nFlatStyle  
- Kenarlıksız, düz, noktalı düz veya 3B gibi bir düğmenin stilini belirtir.  
-  
-```  
-FlatStyle  m_nFlatStyle;  
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Aşağıdaki tabloda `CMFCButton::m_nFlatStyle` bir düğmenin görünümünü belirten sabit listesi değerleri.  
-  
-|Değer|Açıklama|  
-|-----------|-----------------|  
-|BUTTONSTYLE_3D|(Varsayılan) Yüksek, üç boyutlu yüz için düğmesi görünür. Düğmesine tıklandığında, derin bir girinti basılmasını düğmesi görünür.|  
-|BUTTONSTYLE_FLAT|Düğmenin üzerine fare duraklamamasını, düğmenin iki boyutlu gibi görünüyor ve yükseltilmiş yüz sahip değil. Düğmenin üzerine fare duraklatır, düşük, üç boyutlu yüz için düğmesi görünür. Düğmesine tıklandığında, basit bir girinti basılmasını düğmesi görünür.|  
-|BUTTONSTYLE_SEMIFLAT|Düşük, üç boyutlu yüz için düğmesi görünür. Düğmesine tıklandığında, derin bir girinti basılmasını düğmesi görünür.|  
-|BUTTONSTYLE_NOBORDERS|Düğme sahip oluşmaz yüz ve her zaman iki boyutlu görünür. Düğme tıklandığında bir girinti basıldığında görünmüyor.|  
-  
- `CMFCButton` Oluşturucu bu üyeye BUTTONSTYLE_3D başlatır.  
-  
-### <a name="example"></a>Örnek  
- Aşağıdaki örnek, değerlerini ayarlamak gösterilmiştir `m_nFlatStyle` üye değişkeni `CMFCButton` sınıfı. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).  
-  
- [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]  
-[!code-cpp[NVC_MFC_NewControls#29](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_5.cpp)]  
-  
-##  <a name="ondraw"></a>  CMFCButton::OnDraw  
- Bir düğme çizmek için framework tarafından çağırılır.  
-  
-```  
+##  <a name="m_nflatstyle"></a>  CMFCButton::m_nFlatStyle
+
+Kenarlıksız, düz, noktalı düz veya 3B gibi bir düğmenin stilini belirtir.
+
+```
+FlatStyle  m_nFlatStyle;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Aşağıdaki tabloda `CMFCButton::m_nFlatStyle` bir düğmenin görünümünü belirten sabit listesi değerleri.
+
+|Değer|Açıklama|
+|-----------|-----------------|
+|BUTTONSTYLE_3D|(Varsayılan) Yüksek, üç boyutlu yüz için düğmesi görünür. Düğmesine tıklandığında, derin bir girinti basılmasını düğmesi görünür.|
+|BUTTONSTYLE_FLAT|Düğmenin üzerine fare duraklamamasını, düğmenin iki boyutlu gibi görünüyor ve yükseltilmiş yüz sahip değil. Düğmenin üzerine fare duraklatır, düşük, üç boyutlu yüz için düğmesi görünür. Düğmesine tıklandığında, basit bir girinti basılmasını düğmesi görünür.|
+|BUTTONSTYLE_SEMIFLAT|Düşük, üç boyutlu yüz için düğmesi görünür. Düğmesine tıklandığında, derin bir girinti basılmasını düğmesi görünür.|
+|BUTTONSTYLE_NOBORDERS|Düğme sahip oluşmaz yüz ve her zaman iki boyutlu görünür. Düğme tıklandığında bir girinti basıldığında görünmüyor.|
+
+`CMFCButton` Oluşturucu bu üyeye BUTTONSTYLE_3D başlatır.
+
+### <a name="example"></a>Örnek
+
+Aşağıdaki örnek, değerlerini ayarlamak gösterilmiştir `m_nFlatStyle` üye değişkeni `CMFCButton` sınıfı. Bu örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+
+[!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
+[!code-cpp[NVC_MFC_NewControls#29](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_5.cpp)]
+
+##  <a name="ondraw"></a>  CMFCButton::OnDraw
+
+Bir düğme çizmek için framework tarafından çağırılır.
+
+```
 virtual void OnDraw(
-    CDC* pDC,  
-    const CRect& rect,  
+    CDC* pDC,
+    const CRect& rect,
     UINT uiState);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi.  
-  
+[in] Bir cihaz bağlamı için bir işaretçi.
+
 *Rect*<br/>
-[in] Düğme sınırların bir dikdörtgen bir başvuru.  
-  
+[in] Düğme sınırların bir dikdörtgen bir başvuru.
+
 *uiState*<br/>
-[in] Geçerli düğme durumu. Daha fazla bilgi için `itemState` üyesi [DRAWITEMSTRUCT yapısı](../../mfc/reference/drawitemstruct-structure.md) konu.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bir düğme çizmek için kendi kodunuzu kullanmak için bu yöntemi yok sayın.  
-  
-##  <a name="ondrawborder"></a>  CMFCButton::OnDrawBorder  
- Düğmenin kenarlık çizmek için framework tarafından çağırılır.  
-  
-```  
+[in] Geçerli düğme durumu. Daha fazla bilgi için `itemState` üyesi [DRAWITEMSTRUCT yapısı](../../mfc/reference/drawitemstruct-structure.md) konu.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bir düğme çizmek için kendi kodunuzu kullanmak için bu yöntemi yok sayın.
+
+##  <a name="ondrawborder"></a>  CMFCButton::OnDrawBorder
+
+Düğmenin kenarlık çizmek için framework tarafından çağırılır.
+
+```
 virtual void OnDrawBorder(
-    CDC* pDC,  
-    CRect& rectClient,  
+    CDC* pDC,
+    CRect& rectClient,
     UINT uiState);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi.  
-  
+[in] Bir cihaz bağlamı için bir işaretçi.
+
 *rectClient*<br/>
-[in] Düğme sınırların bir dikdörtgen bir başvuru.  
-  
+[in] Düğme sınırların bir dikdörtgen bir başvuru.
+
 *uiState*<br/>
-[in] Geçerli düğme durumu. Daha fazla bilgi için `itemState` üyesi [DRAWITEMSTRUCT yapısı](../../mfc/reference/drawitemstruct-structure.md) konu.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Kenarlık çizmek için kendi kodunuzu kullanmak için bu yöntemi yok sayın.  
-  
-##  <a name="ondrawfocusrect"></a>  CMFCButton::OnDrawFocusRect  
- Bir düğme odak dikdörtgeni çizilmesi gerektiğinde framework tarafından çağırılır.  
-  
-```  
+[in] Geçerli düğme durumu. Daha fazla bilgi için `itemState` üyesi [DRAWITEMSTRUCT yapısı](../../mfc/reference/drawitemstruct-structure.md) konu.
+
+### <a name="remarks"></a>Açıklamalar
+
+Kenarlık çizmek için kendi kodunuzu kullanmak için bu yöntemi yok sayın.
+
+##  <a name="ondrawfocusrect"></a>  CMFCButton::OnDrawFocusRect
+
+Bir düğme odak dikdörtgeni çizilmesi gerektiğinde framework tarafından çağırılır.
+
+```
 virtual void OnDrawFocusRect(
-    CDC* pDC,  
+    CDC* pDC,
     const CRect& rectClient);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi.  
-  
+[in] Bir cihaz bağlamı için bir işaretçi.
+
 *rectClient*<br/>
-[in] Düğme sınırların bir dikdörtgen bir başvuru.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Odak dikdörtgen çizmek için kendi kodunuzu kullanmak için bu yöntemi yok sayın.  
-  
-##  <a name="ondrawtext"></a>  CMFCButton::OnDrawText  
- Düğme metnini çizmek için framework tarafından çağırılır.  
-  
-```  
+[in] Düğme sınırların bir dikdörtgen bir başvuru.
+
+### <a name="remarks"></a>Açıklamalar
+
+Odak dikdörtgen çizmek için kendi kodunuzu kullanmak için bu yöntemi yok sayın.
+
+##  <a name="ondrawtext"></a>  CMFCButton::OnDrawText
+
+Düğme metnini çizmek için framework tarafından çağırılır.
+
+```
 virtual void OnDrawText(
-    CDC* pDC,  
-    const CRect& rect,  
-    const CString& strText,  
-    UINT uiDTFlags,  
+    CDC* pDC,
+    const CRect& rect,
+    const CString& strText,
+    UINT uiDTFlags,
     UINT uiState);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi.  
-  
+[in] Bir cihaz bağlamı için bir işaretçi.
+
 *Rect*<br/>
-[in] Düğme sınırların bir dikdörtgen bir başvuru.  
-  
+[in] Düğme sınırların bir dikdörtgen bir başvuru.
+
 *strText*<br/>
-[in] Çizmek için metin.  
-  
+[in] Çizmek için metin.
+
 *uiDTFlags*<br/>
-[in] Metnin nasıl biçimlendirileceğini belirten bayraklar. Daha fazla bilgi için *nFormat* parametresinin [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) yöntemi.  
-  
+[in] Metnin nasıl biçimlendirileceğini belirten bayraklar. Daha fazla bilgi için *nFormat* parametresinin [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) yöntemi.
+
 *uiState*<br/>
 [in] Ayrılmış.
-  
-### <a name="remarks"></a>Açıklamalar  
- Düğme metnini çizmek için kendi kodunuzu kullanmak için bu yöntemi yok sayın.  
-  
-##  <a name="onfillbackground"></a>  CMFCButton::OnFillBackground  
- Düğme metnini arka planının çizilmesi gerektiğinde framework tarafından çağırılır.  
-  
-```  
+
+### <a name="remarks"></a>Açıklamalar
+
+Düğme metnini çizmek için kendi kodunuzu kullanmak için bu yöntemi yok sayın.
+
+##  <a name="onfillbackground"></a>  CMFCButton::OnFillBackground
+
+Düğme metnini arka planının çizilmesi gerektiğinde framework tarafından çağırılır.
+
+```
 virtual void OnFillBackground(
-    CDC* pDC,  
+    CDC* pDC,
     const CRect& rectClient);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi.  
-  
+[in] Bir cihaz bağlamı için bir işaretçi.
+
 *rectClient*<br/>
-[in] Düğme sınırların bir dikdörtgen bir başvuru.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bir düğmenin arka planı çizmek için kendi kodunuzu kullanmak için bu yöntemi yok sayın.  
-  
-##  <a name="selectfont"></a>  CMFCButton::SelectFont  
- Belirtilen bir cihaz bağlamı ile ilişkili olan yazı tipini alır.  
-  
-```  
+[in] Düğme sınırların bir dikdörtgen bir başvuru.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bir düğmenin arka planı çizmek için kendi kodunuzu kullanmak için bu yöntemi yok sayın.
+
+##  <a name="selectfont"></a>  CMFCButton::SelectFont
+
+Belirtilen bir cihaz bağlamı ile ilişkili olan yazı tipini alır.
+
+```
 virtual CFont* SelectFont(CDC* pDC);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Yazı tipi almak için kendi kodunuzu kullanmak için bu yöntemi yok sayın.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="setautorepeatmode"></a>  CMFCButton::SetAutorepeatMode  
- Bir düğme otomatik yineleme modunu ayarlar.  
-  
-```  
+[in] Bir cihaz bağlamı için bir işaretçi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Yazı tipi almak için kendi kodunuzu kullanmak için bu yöntemi yok sayın.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="setautorepeatmode"></a>  CMFCButton::SetAutorepeatMode
+
+Bir düğme otomatik yineleme modunu ayarlar.
+
+```
 void SetAutorepeatMode(int nTimeDelay=500);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *nTimeDelay*<br/>
-[in] Üst penceresine gönderilen iletiler arasındaki zaman aralığını belirten negatif olmayan bir sayı. Aralığı milisaniye cinsinden ölçülür ve varsayılan değer 500 milisaniyedir. Otomatik-repeat mesajı modunu devre dışı bırakmak için sıfır belirtin.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bu yöntem düğmesi serbest bırakıldığında kadar üst penceresine sürekli WM_COMMAND ileti göndermek düğme neden veya *nTimeDelay* parametresi, sıfır olarak ayarlanır.  
-  
-##  <a name="setcheckedimage"></a>  CMFCButton::SetCheckedImage  
- İşaretli bir düğme için resim ayarlar.  
-  
-```  
+[in] Üst penceresine gönderilen iletiler arasındaki zaman aralığını belirten negatif olmayan bir sayı. Aralığı milisaniye cinsinden ölçülür ve varsayılan değer 500 milisaniyedir. Otomatik-repeat mesajı modunu devre dışı bırakmak için sıfır belirtin.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu yöntem düğmesi serbest bırakıldığında kadar üst penceresine sürekli WM_COMMAND ileti göndermek düğme neden veya *nTimeDelay* parametresi, sıfır olarak ayarlanır.
+
+##  <a name="setcheckedimage"></a>  CMFCButton::SetCheckedImage
+
+İşaretli bir düğme için resim ayarlar.
+
+```
 void SetCheckedImage(
-    HICON hIcon,  
-    BOOL bAutoDestroy=TRUE,  
-    HICON hIconHot=NULL,  
-    HICON hIconDisabled=NULL,  
+    HICON hIcon,
+    BOOL bAutoDestroy=TRUE,
+    HICON hIconHot=NULL,
+    HICON hIconDisabled=NULL,
     BOOL bAlphaBlend=FALSE);
 
- 
+
 void SetCheckedImage(
-    HBITMAP hBitmap,  
-    BOOL bAutoDestroy=TRUE,  
-    HBITMAP hBitmapHot=NULL,  
-    BOOL bMap3dColors=TRUE,  
+    HBITMAP hBitmap,
+    BOOL bAutoDestroy=TRUE,
+    HBITMAP hBitmapHot=NULL,
+    BOOL bMap3dColors=TRUE,
     HBITMAP hBitmapDisabled=NULL);
 
- 
+
 void SetCheckedImage(
-    UINT uiBmpResId,  
-    UINT uiBmpHotResId=0,  
+    UINT uiBmpResId,
+    UINT uiBmpHotResId=0,
     UINT uiBmpDsblResID=0);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *hIcon*<br/>
-[in] Bit eşlem ve yeni görüntüyü maskesinin içeren simgesine işleyin.  
-  
+[in] Bit eşlem ve yeni görüntüyü maskesinin içeren simgesine işleyin.
+
 *bAutoDestroy*<br/>
-[in] Bit eşlem kaynakları otomatik olarak yok edilecek belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.  
-  
+[in] Bit eşlem kaynakları otomatik olarak yok edilecek belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.
+
 *hIconHot*<br/>
-[in] Seçilen durum görüntüsünü içeren simgesine işleyin.  
-  
+[in] Seçilen durum görüntüsünü içeren simgesine işleyin.
+
 *Hbıtmap*<br/>
-[in] Seçili olmayan durum görüntüsünü içeren bir bit eşlemi işleyin.  
-  
+[in] Seçili olmayan durum görüntüsünü içeren bir bit eşlemi işleyin.
+
 *hBitmapHot*<br/>
-[in] Seçilen durum görüntüsünü içeren bir bit eşlemi işleyin.  
-  
+[in] Seçilen durum görüntüsünü içeren bir bit eşlemi işleyin.
+
 *bMap3dColors*<br/>
-[in] Bir düğme arka saydam rengini belirtir. diğer bir deyişle, yüz tanıma düğmesi. (192, 192, 192); RGB renk değeri TRUE Tarafından tanımlanan renk değeri FALSE `AFX_GLOBAL_DATA::clrBtnFace`.  
-  
+[in] Bir düğme arka saydam rengini belirtir. diğer bir deyişle, yüz tanıma düğmesi. (192, 192, 192); RGB renk değeri TRUE Tarafından tanımlanan renk değeri FALSE `AFX_GLOBAL_DATA::clrBtnFace`.
+
 *uiBmpResId*<br/>
-[in] Görüntü seçildi kaynak kimliği.  
-  
+[in] Görüntü seçildi kaynak kimliği.
+
 *uiBmpHotResId*<br/>
-[in] Seçili görüntü için kaynak kimliği.  
-  
+[in] Seçili görüntü için kaynak kimliği.
+
 *hIconDisabled*<br/>
-[in] Devre dışı görüntü için simgesine işleyin.  
-  
+[in] Devre dışı görüntü için simgesine işleyin.
+
 *hBitmapDisabled*<br/>
-[in] Devre dışı görüntüsünü içeren bir bit eşlem için işler.  
-  
+[in] Devre dışı görüntüsünü içeren bir bit eşlem için işler.
+
 *uiBmpDsblResID*<br/>
-[in] Devre dışı bırakılmış bir bit eşlemi kaynak kimliği.  
-  
+[in] Devre dışı bırakılmış bir bit eşlemi kaynak kimliği.
+
 *bAlphaBlend*<br/>
-[in] Alfa kanalını kullanma kullanımı yalnızca 32-bit görüntüleri için true; Yalnızca alfa kanal resimleri kullanmak için FALSE. Varsayılan değer false'tur.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="setfacecolor"></a>  CMFCButton::SetFaceColor  
- Düğme metnini arka plan rengini ayarlar.  
-  
-```  
+[in] Alfa kanalını kullanma kullanımı yalnızca 32-bit görüntüleri için true; Yalnızca alfa kanal resimleri kullanmak için FALSE. Varsayılan değer false'tur.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="setfacecolor"></a>  CMFCButton::SetFaceColor
+
+Düğme metnini arka plan rengini ayarlar.
+
+```
 void SetFaceColor(
-    COLORREF crFace,  
+    COLORREF crFace,
     BOOL bRedraw=TRUE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *crFace*<br/>
-[in] Bir RGB renk değeri.  
-  
+[in] Bir RGB renk değeri.
+
 *bRedraw*<br/>
-[in] Ekranın hemen yeniden çizmek için TRUE; Aksi takdirde FALSE.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Yeni bir dolgu rengi düğmesi arka planının (yüz) tanımlamak için bu yöntemi kullanın. Arka plan olmadığına dikkat edin doldurulmuş [CMFCButton::m_bTransparent](#m_btransparent) üye değişkeni ise TRUE.  
-  
-##  <a name="setimage"></a>  CMFCButton::SetImage  
- Bir düğme için resim ayarlar.  
-  
-```  
+[in] Ekranın hemen yeniden çizmek için TRUE; Aksi takdirde FALSE.
+
+### <a name="remarks"></a>Açıklamalar
+
+Yeni bir dolgu rengi düğmesi arka planının (yüz) tanımlamak için bu yöntemi kullanın. Arka plan olmadığına dikkat edin doldurulmuş [CMFCButton::m_bTransparent](#m_btransparent) üye değişkeni ise TRUE.
+
+##  <a name="setimage"></a>  CMFCButton::SetImage
+
+Bir düğme için resim ayarlar.
+
+```
 void SetImage(
-    HICON hIcon,  
-    BOOL bAutoDestroy=TRUE,  
-    HICON hIconHot=NULL,  
-    HICON hIconDisabled=NULL,  
+    HICON hIcon,
+    BOOL bAutoDestroy=TRUE,
+    HICON hIconHot=NULL,
+    HICON hIconDisabled=NULL,
     BOOL bAlphaBlend=FALSE);
 
- 
+
 void SetImage(
-    HBITMAP hBitmap,  
-    BOOL bAutoDestroy=TRUE,  
-    HBITMAP hBitmapHot=NULL,  
-    BOOL bMap3dColors=TRUE,  
+    HBITMAP hBitmap,
+    BOOL bAutoDestroy=TRUE,
+    HBITMAP hBitmapHot=NULL,
+    BOOL bMap3dColors=TRUE,
     HBITMAP hBitmapDisabled=NULL);
 
- 
+
 void SetImage(
-    UINT uiBmpResId,  
-    UINT uiBmpHotResId=0,  
+    UINT uiBmpResId,
+    UINT uiBmpHotResId=0,
     UINT uiBmpDsblResID=0);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *hIcon*<br/>
-[in] Bit eşlem ve yeni görüntüyü maskesinin içeren simgesine işleyin.  
-  
+[in] Bit eşlem ve yeni görüntüyü maskesinin içeren simgesine işleyin.
+
 *bAutoDestroy*<br/>
-[in] Bit eşlem kaynakları otomatik olarak yok edilecek belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.  
-  
+[in] Bit eşlem kaynakları otomatik olarak yok edilecek belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.
+
 *hIconHot*<br/>
-[in] Seçilen durum görüntüsünü içeren simgesine işleyin.  
-  
+[in] Seçilen durum görüntüsünü içeren simgesine işleyin.
+
 *Hbıtmap*<br/>
-[in] Seçili olmayan durum görüntüsünü içeren bir bit eşlemi işleyin.  
-  
+[in] Seçili olmayan durum görüntüsünü içeren bir bit eşlemi işleyin.
+
 *hBitmapHot*<br/>
-[in] Seçilen durum görüntüsünü içeren bir bit eşlemi işleyin.  
-  
+[in] Seçilen durum görüntüsünü içeren bir bit eşlemi işleyin.
+
 *uiBmpResId*<br/>
-[in] Görüntü seçildi kaynak kimliği.  
-  
+[in] Görüntü seçildi kaynak kimliği.
+
 *uiBmpHotResId*<br/>
-[in] Seçili görüntü için kaynak kimliği.  
-  
+[in] Seçili görüntü için kaynak kimliği.
+
 *bMap3dColors*<br/>
-[in] Bir düğme arka saydam rengini belirtir. diğer bir deyişle, yüz tanıma düğmesi. (192, 192, 192); RGB renk değeri TRUE Tarafından tanımlanan renk değeri FALSE `AFX_GLOBAL_DATA::clrBtnFace`.  
-  
+[in] Bir düğme arka saydam rengini belirtir. diğer bir deyişle, yüz tanıma düğmesi. (192, 192, 192); RGB renk değeri TRUE Tarafından tanımlanan renk değeri FALSE `AFX_GLOBAL_DATA::clrBtnFace`.
+
 *hIconDisabled*<br/>
-[in] Devre dışı görüntü için simgesine işleyin.  
-  
+[in] Devre dışı görüntü için simgesine işleyin.
+
 *hBitmapDisabled*<br/>
-[in] Devre dışı görüntüsünü içeren bir bit eşlem için işler.  
-  
+[in] Devre dışı görüntüsünü içeren bir bit eşlem için işler.
+
 *uiBmpDsblResID*<br/>
-[in] Devre dışı bırakılmış bir bit eşlemi kaynak kimliği.  
-  
+[in] Devre dışı bırakılmış bir bit eşlemi kaynak kimliği.
+
 *bAlphaBlend*<br/>
-[in] Alfa kanalını kullanma kullanımı yalnızca 32-bit görüntüleri için true; Yalnızca alfa kanal resimleri kullanmak için FALSE. Varsayılan değer false'tur.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-### <a name="example"></a>Örnek  
- Aşağıdaki örnek, çeşitli sürümlerini kullanma işlemini gösterir `SetImage` yönteminde `CMFCButton` sınıfı. Bir örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).  
-  
- [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]  
-[!code-cpp[NVC_MFC_NewControls#31](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_2.cpp)]  
-  
-##  <a name="setmousecursor"></a>  CMFCButton::SetMouseCursor  
- İmleç görüntü ayarlar.  
-  
-```  
+[in] Alfa kanalını kullanma kullanımı yalnızca 32-bit görüntüleri için true; Yalnızca alfa kanal resimleri kullanmak için FALSE. Varsayılan değer false'tur.
+
+### <a name="remarks"></a>Açıklamalar
+
+### <a name="example"></a>Örnek
+
+Aşağıdaki örnek, çeşitli sürümlerini kullanma işlemini gösterir `SetImage` yönteminde `CMFCButton` sınıfı. Bir örneğin parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+
+[!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
+[!code-cpp[NVC_MFC_NewControls#31](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_2.cpp)]
+
+##  <a name="setmousecursor"></a>  CMFCButton::SetMouseCursor
+
+İmleç görüntü ayarlar.
+
+```
 void SetMouseCursor(HCURSOR hcursor);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *hcursor*<br/>
-[in] İmleç tanıtıcı.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Elle imleci gibi bir imleç görüntü düğme ile ilişkilendirmek için bu yöntemi kullanın. İmleç uygulama kaynaklarından yüklenir.  
-  
-### <a name="example"></a>Örnek  
- Aşağıdaki örnek nasıl kullanılacağını gösterir `SetMouseCursor` yönteminde `CMFCButton` sınıfı. Örneğin kodda bir parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).  
-  
- [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]  
-[!code-cpp[NVC_MFC_NewControls#30](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_6.cpp)]  
-  
-##  <a name="setmousecursorhand"></a>  CMFCButton::SetMouseCursorHand  
- İmleç el görüntüyü ayarlar.  
-  
-```  
+[in] İmleç tanıtıcı.
+
+### <a name="remarks"></a>Açıklamalar
+
+Elle imleci gibi bir imleç görüntü düğme ile ilişkilendirmek için bu yöntemi kullanın. İmleç uygulama kaynaklarından yüklenir.
+
+### <a name="example"></a>Örnek
+
+Aşağıdaki örnek nasıl kullanılacağını gösterir `SetMouseCursor` yönteminde `CMFCButton` sınıfı. Örneğin kodda bir parçasıdır [yeni denetimler örnek](../../visual-cpp-samples.md).
+
+[!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
+[!code-cpp[NVC_MFC_NewControls#30](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_6.cpp)]
+
+##  <a name="setmousecursorhand"></a>  CMFCButton::SetMouseCursorHand
+
+İmleç el görüntüyü ayarlar.
+
+```
 void SetMouseCursorHand();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- İmleç görüntü el ile düğme ilişkilendirmek için bu yöntemi kullanın. İmleç uygulama kaynaklarından yüklenir.  
-  
-##  <a name="setstdimage"></a>  CMFCButton::SetStdImage  
- Kullanan bir `CMenuImages` nesne düğmesi ayarlayın.  
-  
-```  
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+İmleç görüntü el ile düğme ilişkilendirmek için bu yöntemi kullanın. İmleç uygulama kaynaklarından yüklenir.
+
+##  <a name="setstdimage"></a>  CMFCButton::SetStdImage
+
+Kullanan bir `CMenuImages` nesne düğmesi ayarlayın.
+
+```
 void SetStdImage(
-    CMenuImages::IMAGES_IDS id,  
-    CMenuImages::IMAGE_STATE state=CMenuImages::ImageBlack,  
+    CMenuImages::IMAGES_IDS id,
+    CMenuImages::IMAGE_STATE state=CMenuImages::ImageBlack,
     CMenuImages::IMAGES_IDS idDisabled=(CMenuImages::IMAGES_IDS)0);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *id*<br/>
-[in] Tanımlanan düğmesine görüntü tanımlayıcılarından birini `CMenuImage::IMAGES_IDS` sabit listesi. Resim değerleri görüntüleri oklar, PIN ve radyo düğmeleri gibi belirtin.  
-  
+[in] Tanımlanan düğmesine görüntü tanımlayıcılarından birini `CMenuImage::IMAGES_IDS` sabit listesi. Resim değerleri görüntüleri oklar, PIN ve radyo düğmeleri gibi belirtin.
+
 *durumu*<br/>
-[in] Tanımlanan düğmesine görüntü durum tanımlayıcılarından birini `CMenuImages::IMAGE_STATE` sabit listesi. Görüntü durumları gibi siyah, gri, açık gri, beyaz ve koyu gri düğme renkleri belirtin. Varsayılan değer `CMenuImages::ImageBlack` şeklindedir.  
-  
+[in] Tanımlanan düğmesine görüntü durum tanımlayıcılarından birini `CMenuImages::IMAGE_STATE` sabit listesi. Görüntü durumları gibi siyah, gri, açık gri, beyaz ve koyu gri düğme renkleri belirtin. Varsayılan değer `CMenuImages::ImageBlack` şeklindedir.
+
 *idDisabled*<br/>
-[in] Tanımlanan düğmesine görüntü tanımlayıcılarından birini `CMenuImage::IMAGES_IDS` sabit listesi. Görüntüyü düğme devre dışı olduğunu gösterir. İlk düğme resminin varsayılan değer: ( `CMenuImages::IdArrowDown`).  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="settextcolor"></a>  CMFCButton::SetTextColor  
- Seçili olmayan bir düğmenin düğme metni rengini ayarlar.  
-  
-```  
+[in] Tanımlanan düğmesine görüntü tanımlayıcılarından birini `CMenuImage::IMAGES_IDS` sabit listesi. Görüntüyü düğme devre dışı olduğunu gösterir. İlk düğme resminin varsayılan değer: ( `CMenuImages::IdArrowDown`).
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="settextcolor"></a>  CMFCButton::SetTextColor
+
+Seçili olmayan bir düğmenin düğme metni rengini ayarlar.
+
+```
 void SetTextColor(COLORREF clrText);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *clrText*<br/>
-[in] Bir RGB renk değeri.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="settexthotcolor"></a>  CMFCButton::SetTextHotColor  
- Seçilen bir düğmenin düğme metni rengini ayarlar.  
-  
-```  
+[in] Bir RGB renk değeri.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="settexthotcolor"></a>  CMFCButton::SetTextHotColor
+
+Seçilen bir düğmenin düğme metni rengini ayarlar.
+
+```
 void SetTextHotColor(COLORREF clrTextHot);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *clrTextHot*<br/>
-[in] Bir RGB renk değeri.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="settooltip"></a>  CMFCButton::SetTooltip  
- Bir araç ipucu, bir düğme ile ilişkilendirir.  
-  
-```  
+[in] Bir RGB renk değeri.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="settooltip"></a>  CMFCButton::SetTooltip
+
+Bir araç ipucu, bir düğme ile ilişkilendirir.
+
+```
 void SetTooltip(LPCTSTR lpszToolTipText);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *lpszToolTipText*<br/>
-[in] Araç ipucu metnini işaretçisi. Araç İpucu devre dışı bırakmak için NULL belirtin.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="sizetocontent"></a>  CMFCButton::SizeToContent  
- Bir düğme, düğme metni ve görüntüyü içerecek şekilde yeniden boyutlandırır.  
-  
-```  
+[in] Araç ipucu metnini işaretçisi. Araç İpucu devre dışı bırakmak için NULL belirtin.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="sizetocontent"></a>  CMFCButton::SizeToContent
+
+Bir düğme, düğme metni ve görüntüyü içerecek şekilde yeniden boyutlandırır.
+
+```
 virtual CSize SizeToContent(BOOL bCalcOnly=FALSE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *bCalcOnly*<br/>
-[in] Hesaplar, ancak, yeni düğmeyi boyutunu değiştirilmemesi için TRUE; Düğmenin boyutunu değiştirmek için FALSE. Varsayılan değer false'tur.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- A `CSize` düğme yeni boyutunu içeren nesne.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, bu yöntem bir yatay boşluğu 10 piksel ve 5 piksel dikey bir kenar boşluğu içeren yeni bir boyut hesaplar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMFCLinkCtrl sınıfı](../../mfc/reference/cmfclinkctrl-class.md)   
- [CMFCColorButton sınıfı](../../mfc/reference/cmfccolorbutton-class.md)   
- [CMFCMenuButton Sınıfı](../../mfc/reference/cmfcmenubutton-class.md)
+[in] Hesaplar, ancak, yeni düğmeyi boyutunu değiştirilmemesi için TRUE; Düğmenin boyutunu değiştirmek için FALSE. Varsayılan değer false'tur.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+A `CSize` düğme yeni boyutunu içeren nesne.
+
+### <a name="remarks"></a>Açıklamalar
+
+Varsayılan olarak, bu yöntem bir yatay boşluğu 10 piksel ve 5 piksel dikey bir kenar boşluğu içeren yeni bir boyut hesaplar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
+[CMFCLinkCtrl Sınıfı](../../mfc/reference/cmfclinkctrl-class.md)<br/>
+[CMFCColorButton Sınıfı](../../mfc/reference/cmfccolorbutton-class.md)<br/>
+[CMFCMenuButton Sınıfı](../../mfc/reference/cmfcmenubutton-class.md)

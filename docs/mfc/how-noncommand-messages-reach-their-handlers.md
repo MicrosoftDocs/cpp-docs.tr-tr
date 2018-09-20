@@ -1,5 +1,5 @@
 ---
-title: Komut dışı iletilerin işleyicilerine erişmesi | Microsoft Docs
+title: Komut dışı iletilerin işleyicilerine erişmesi nasıl | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,18 +17,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3999c74bf7a612acb998e7a044c12948d7679d9b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b5c38a1d4294993170cfeff64be6a83700fa7497
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343888"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46373444"
 ---
 # <a name="how-noncommand-messages-reach-their-handlers"></a>Komut Dışı İletilerin İşleyicilerine Erişmesi
-Komutları, aksine standart Windows iletileri komuta zincirini hedefleri yönlendirilmedi ancak genellikle, Windows ileti gönderdiği pencere tarafından işlenir. Pencerenin ana çerçeve penceresi, bir MDI alt pencere, standart bir denetimde, bir iletişim kutusu, bir görünüm veya başka türde bir alt pencere olabilir.  
-  
- Çalışma zamanında her Windows pencereyi bir pencere nesnesi bağlı olduğu (doğrudan veya dolaylı olarak türetilen `CWnd`), kendi ilişkili ileti eşlemesi ve işleyici işlevleri vardır. İleti eşlemesi çerçevesi kullanır — bir komut ettirilmesi — gelen iletileri için işleyiciler eşlemek için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
+
+Komutlarından farklı olarak standart Windows iletileri bir komuta zincirini hedefleri yönlendirilir değil, ancak genellikle, Windows iletinin gönderdiği pencere tarafından işlenir. Pencere, bir ana çerçeve penceresi, MDI alt penceresi, standart bir denetimde, bir iletişim kutusu, bir görünüm veya başka türde bir alt pencere olabilir.
+
+Çalışma zamanında, her Windows penceresi bir pencere nesnesi için bağlı (doğrudan veya dolaylı olarak türetilmiş `CWnd`) kendi ilişkili ileti eşlemesi ve işleyici işlevlerine sahip. Çerçeve ileti eşlemesi kullanır; bir komut için — gelen iletileri için işleyiciler eşlemek için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
 

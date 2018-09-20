@@ -24,44 +24,46 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb5e6ad4cfcc1e14d3b6accc1e5adaf4037669a4
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 6f039b2e81b52c753a1fb065572d4eac53d55ec9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36950220"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46428713"
 ---
 # <a name="using-documents"></a>Belgeleri Kullanma
-Birlikte, belgeleri ve görünümleri çalışma:  
-  
--   İçeren, yönetmek ve görüntülemek, uygulamaya özgü [veri](../mfc/managing-data-with-document-data-variables.md).  
-  
--   Oluşan bir arabirim sağlayacağı [belge verisi değişkenleri](../mfc/managing-data-with-document-data-variables.md) verileri işlemek için.  
-  
--   Katılan [dosyaları okuma ve yazma](../mfc/serializing-data-to-and-from-files.md).  
-  
--   Katılan [yazdırma](../mfc/role-of-the-view-in-printing.md).  
-  
--   [Tanıtıcı](../mfc/handling-commands-in-the-document.md) uygulamanızın komutları ve iletileri çoğu.  
-  
- Belge verileri yönetme özellikle karmaşıktır. Verilerinizi, normalde, belge sınıfı üye değişkenleri depolar. Görünümü, görüntü verilere erişme ve güncelleştirmek için bu değişkenleri kullanır. Belgenin varsayılan seri hale getirme mekanizmasını okuma ve veri dosyalarını gelen ve giden yazma yönetir. Belgeleri de komutları (ancak değil Windows iletilerini WM_COMMAND dışında) işleyebilir.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Cdocument'ten belge sınıfı türetme](../mfc/deriving-a-document-class-from-cdocument.md)  
-  
--   [Belge verisi değişkenleri ile verileri yönetme](../mfc/managing-data-with-document-data-variables.md)  
-  
--   [Verileri ve dosyaları gelen seri hale getirme](../mfc/serializing-data-to-and-from-files.md)  
-  
--   [Seri hale getirme mekanizmasını atlama](../mfc/bypassing-the-serialization-mechanism.md)  
-  
--   [Belgedeki komutları işleme](../mfc/handling-commands-in-the-document.md)  
-  
--   [OnNewDocument üye işlevi](../mfc/reference/cdocument-class.md#onnewdocument)  
-  
--   [DeleteContents üye işlevi](../mfc/reference/cdocument-class.md#deletecontents)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Belge/görünüm mimarisi](../mfc/document-view-architecture.md)
+
+Bu arada, belgeler ve görünümler çalışma:
+
+- İçeren, yönetmek ve görüntülemek, uygulamaya özgü [veri](../mfc/managing-data-with-document-data-variables.md).
+
+- Oluşan bir arabirim sağlayacağı [belge verisi değişkenleri](../mfc/managing-data-with-document-data-variables.md) verileri işlemek için.
+
+- Katılmak [dosyaları okuma ve yazma](../mfc/serializing-data-to-and-from-files.md).
+
+- Katılmak [yazdırma](../mfc/role-of-the-view-in-printing.md).
+
+- [Tanıtıcı](../mfc/handling-commands-in-the-document.md) uygulamanızın komutları ve iletilerin çoğu.
+
+Belge veri yönetme konusunda özellikle karmaşıktır. Verilerinizi, normalde, belge sınıfı üye değişkenlerinde Store. Görünümü, görüntü verilerine erişmek ve güncelleştirmek için bu değişkenleri kullanır. Belgenin varsayılan seri hale getirme mekanizmasını okuma ve dosyaları gelen ve giden veri yazma yönetir. Belgeler, ayrıca komutları (ancak değil Windows iletileri WM_COMMAND dışında) işleyebilir.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Cdocument'ten belge sınıfı türetme](../mfc/deriving-a-document-class-from-cdocument.md)
+
+- [Belge verisi değişkenleri ile verileri yönetme](../mfc/managing-data-with-document-data-variables.md)
+
+- [Gelen dosyaları ve verileri seri hale getirme](../mfc/serializing-data-to-and-from-files.md)
+
+- [Seri hale getirme mekanizmasını atlama](../mfc/bypassing-the-serialization-mechanism.md)
+
+- [Belgedeki komutları işleme](../mfc/handling-commands-in-the-document.md)
+
+- [OnNewDocument üye işlevi](../mfc/reference/cdocument-class.md#onnewdocument)
+
+- [DeleteContents üye işlevi](../mfc/reference/cdocument-class.md#deletecontents)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Belge/görünüm mimarisi](../mfc/document-view-architecture.md)
 

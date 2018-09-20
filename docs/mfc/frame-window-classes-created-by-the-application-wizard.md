@@ -1,5 +1,5 @@
 ---
-title: Uygulama Sihirbazı tarafından oluşturulan çerçeve penceresi sınıfları | Microsoft Docs
+title: Çerçeve penceresi sınıfları Uygulama Sihirbazı tarafından oluşturulan | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -24,25 +24,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3446de072266fdf7661d2e8d8ca0fc968279646
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: aff98636c723de17056f4bef337b46f4a686ddec
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345058"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420614"
 ---
 # <a name="frame-window-classes-created-by-the-application-wizard"></a>Uygulama Sihirbazı Tarafından Oluşturulan Çerçeve Pencere Sınıfları
-Kullandığınızda [Uygulama Sihirbazı](../ide/creating-desktop-projects-by-using-application-wizards.md) uygulama, belge ve görünüm sınıfları, ek bir iskelet uygulama oluşturmak için Uygulama Sihirbazı'nı, uygulamanızın ana çerçeve penceresi için bir türetilmiş çerçeve pencere sınıfı oluşturur. Sınıf adı verilen `CMainFrame` varsayılan ve onu içeren dosyaları tarafından MAINFRM olarak adlandırılır. H ve MAINFRM. CPP.  
-  
- Uygulamanız SDI, ise, `CMainFrame` sınıfından türetilmiş sınıf [CFrameWnd](../mfc/reference/cframewnd-class.md).  
-  
- Uygulamanız MDI, ise `CMainFrame` sınıfından türetilen [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md). Bu durumda `CMainFrame` menü, araç çubuğu ve durum çubuğu tutan ana çerçeve uygular. Uygulama Sihirbazı'nı sizin için yeni bir belge çerçeve penceresi sınıfında türemiyor. Bunun yerine, varsayılan uygulamasında kullanan [Cmdıchildwnd sınıfı](../mfc/reference/cmdichildwnd-class.md). MFC çerçevesi her görünüm içerecek şekilde alt pencere oluşturur (türü olabilir `CScrollView`, `CEditView`, `CTreeView`, `CListView`, vb.), uygulama gerektiriyor. Belge çerçeve penceresi özelleştirmeniz gerekiyorsa, yeni bir belge çerçeve penceresi sınıfında oluşturabilirsiniz (bkz [sınıf ekleme](../ide/adding-a-class-visual-cpp.md)).  
-  
- Araç çubuğu desteklemek seçerseniz, sınıfı ayrıca türündeki üye değişkeni yok [CToolBar](../mfc/reference/ctoolbar-class.md) ve [CStatusBar](../mfc/reference/cstatusbar-class.md) ve bir `OnCreate` iki başlatmak için ileti işleyicisi işlevi [ Denetim çubukları](../mfc/control-bars.md).  
-  
- Bu çerçeve penceresi sınıfları oluşturuldu olarak çalışır, ancak bunların işlevselliğini geliştirmek için üye değişkenleri ve üye işlevleri eklemeniz gerekir. Diğer Windows iletilerini işleme, pencere sınıfları olmasını isteyebilirsiniz. Daha fazla bilgi için bkz: [miktar MFC tarafından oluşturulan bir pencere stillerini değiştirme](../mfc/changing-the-styles-of-a-window-created-by-mfc.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çerçeve penceresi sınıfları](../mfc/frame-window-classes.md)   
- [MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları](../ide/mfc-program-or-control-source-and-header-files.md)
+
+Kullanırken [Uygulama Sihirbazı](../ide/creating-desktop-projects-by-using-application-wizards.md) uygulama, belge ve görünüm sınıfları, ek bir çatı uygulaması oluşturmak için bir türetilen çerçeve-pencere sınıf, uygulamanızın ana çerçeve penceresi için Uygulama Sihirbazı oluşturur. Sınıf `CMainFrame` varsayılan ve içerdiği dosyalar MAINFRM adlandırılır. H ve MAINFRM. CPP.
+
+Uygulamanız, SDI ise, `CMainFrame` sınıfından türetilmiş sınıf [CFrameWnd](../mfc/reference/cframewnd-class.md).
+
+Uygulamanız, MDI ise `CMainFrame` sınıfından türetilen [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md). Bu durumda `CMainFrame` menüsü araç çubuğu ve durum çubuklarını tutan ana çerçeve uygular. Uygulama Sihirbazı'nı sizin için yeni bir belge çerçeve penceresi sınıfında türemiyor. Bunun yerine, varsayılan uygulamasında kullanır [Cmdıchildwnd sınıfı](../mfc/reference/cmdichildwnd-class.md). MFC çerçevesi her görünümü içerecek bir alt pencere oluşturur (türünde olabilir `CScrollView`, `CEditView`, `CTreeView`, `CListView`, vb.), uygulama gerektiriyor. Belge çerçeve penceresinin özelleştirmek gerekiyorsa, yeni bir belge çerçeve penceresi sınıfında oluşturabilirsiniz (bkz [sınıf ekleme](../ide/adding-a-class-visual-cpp.md)).
+
+Bir araç desteği seçerseniz, sınıf türünün üye değişkenleri de vardır. [CToolBar](../mfc/reference/ctoolbar-class.md) ve [CStatusBar](../mfc/reference/cstatusbar-class.md) ve `OnCreate` iki başlatmak için ileti işleyicisi işlevi [ Denetim çubukları](../mfc/control-bars.md).
+
+Bu çerçeve penceresi sınıfları oluşturulduğu şekilde çalışır ancak bunların işlevselliğini geliştirmek için üye değişkenleri ve üye işlevleri eklemeniz gerekir. Diğer Windows iletilerini işleme pencere sınıflarınızı olmasını isteyebilirsiniz. Daha fazla bilgi için [penceresinde oluşturulan MFC tarafından stillerini değiştirme](../mfc/changing-the-styles-of-a-window-created-by-mfc.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çerçeve Penceresi Sınıfları](../mfc/frame-window-classes.md)<br/>
+[MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları](../ide/mfc-program-or-control-source-and-header-files.md)
 

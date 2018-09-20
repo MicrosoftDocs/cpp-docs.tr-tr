@@ -20,25 +20,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5dc7a5770c98323187dbabcd8c2a7bb9eb652de
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2d4456e5210b2ec1e142c7ddeddd7b0e7fab9f31
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347285"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46445912"
 ---
 # <a name="ole-background-linking-and-embedding"></a>OLE Arka Planı: Bağlama ve Katıştırma
-Bir kapsayıcı uygulamasında Yapıştır komutunu kullanarak bir katıştırılmış bileşeni veya katıştırılmış öğesi oluşturabilirsiniz. Katıştırılmış bir öğe için kaynak verilerini içerdiği OLE belge bir parçası olarak depolanır. Bu şekilde bir belge dosyasını bir sözcük işlemci belge için metin içerebilir ve bit eşlemler, grafikler, formüller veya herhangi bir veri türünü de içerebilir.  
-  
- OLE verileri başka bir uygulamadan birleştirmek için başka bir yöntem sunar: bağlı bir bileşen veya bağlantılı öğesi veya bir bağlantı oluşturuluyor. Bağlantı Yapıştır komut Yapıştır komutu yerine dışında kullanmasını bağlantılı bir öğe oluşturma adımlarını katıştırılmış bir öğe oluşturmak için benzerdir. Katıştırılmış bir bileşen farklı olarak ayrı bir dosyaya görülür özgün veri yoluna bağlı bir bileşen depolar.  
-  
- Örneğin, bir sözcük işlemci belge çalışma ve bazı elektronik tablo hücreleri bağlantılı bir öğesiyle oluşturursanız, veriler bağlantılı öğesi için özgün elektronik belgede depolanır. Sözcük işlemci belge yalnızca öğe, başka bir deyişle, özgün elektronik belge için bir bağlantı içeren bulunabileceği belirtme bilgilerini içerir. Hücreleri çift tıkladığınızda, elektronik tablo uygulaması başlatılır ve özgün elektronik belge depolandığı gelen yüklenir.  
-  
- Her OLE öğesi katıştırılmış ya da bağlantılı, oluşturulduğu uygulamaya göre ilişkili bir türe sahip. Örneğin, bir türde öğe bir Microsoft Paintbrush öğesidir ve Microsoft Excel öğesi başka bir türdür. Bazı uygulamalar, ancak, birden fazla öğesi türü oluşturabilirsiniz. Örneğin, Microsoft Excel çalışma öğeleri, grafik öğeleri ve makro sayfası öğeleri oluşturabilirsiniz. Bu öğelerin her biri bir sınıf tanımlayıcısını kullanarak sistem tarafından benzersiz olarak tanımlanabilir veya **CLSID**.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE arka planı](../mfc/ole-background.md)   
- [OLE arka planı: Kapsayıcılar ve sunucular](../mfc/ole-background-containers-and-servers.md)   
- [Kapsayıcılar: İstemci öğeleri](../mfc/containers-client-items.md)   
- [Sunucular: Sunucu Öğeleri](../mfc/servers-server-items.md)
+
+Bir kapsayıcı uygulamasında Paste komutu kullanarak, bir katıştırılmış bileşen veya gömülü bir öğe oluşturabilirsiniz. Gömülü bir öğe için kaynak verilerini içerdiği OLE belgesi bir parçası olarak depolanır. Bu şekilde, dosyanın bir sözcük işlemcisi belge için metin içerebilir ve bit eşlemler, grafikler, formülleri veya herhangi bir veri türünü de içerebilir.
+
+OLE başka bir uygulamadan verileri birleştirmek için başka bir yol sağlar: bağlı bir bileşen veya bağlantılı öğe veya bağlantı oluşturma. Paste komutu yerine Yapıştır komutunu dışında bağlantılı bir öğe oluşturma adımlarını gömülü bir öğe oluşturmaya benzerdir. Katıştırılmış bir bileşen farklı olarak, genellikle ayrı bir dosyada olan özgün veri yoluna bağlı bir bileşen depolar.
+
+Örneğin, bir sözcük işlemcisi belge çalışıyorsanız ve bazı elektronik hücrelere bağlantılı bir öğe oluşturun, bağlantılı öğe için veriler özgün elektronik belge depolanır. Sözcük işlemcisi belgeyi yalnızca öğesi, diğer bir deyişle, özgün elektronik belge bağlantısını içeren bulunabileceği belirten bilgileri içerir. Hücreleri çift tıkladığınızda, elektronik tablo uygulama başlatılır ve özgün elektronik belge depolandığı gelen yüklenir.
+
+Tüm OLE öğesini gömülü veya bağlantılı, oluşturduğu uygulamaya göre ilişkili bir türü vardır. Örneğin, bir Microsoft Paintbrush öğe bir türde öğe ve bir Microsoft Excel öğesi başka bir türdür. Bazı uygulamalar, ancak birden fazla öğe türü oluşturabilirsiniz. Örneğin, Microsoft Excel çalışma öğeleri ve grafik öğeleri makro sayfası öğeleri oluşturabilirsiniz. Bu öğelerin her biri bir sınıf tanımlayıcısını kullanarak sistem tarafından benzersiz şekilde tanımlanabilir veya **CLSID**.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[OLE Arka Planı](../mfc/ole-background.md)<br/>
+[OLE Arka Planı: Kapsayıcılar ve Sunucular](../mfc/ole-background-containers-and-servers.md)<br/>
+[Kapsayıcılar: İstemci Öğeleri](../mfc/containers-client-items.md)<br/>
+[Sunucular: Sunucu Öğeleri](../mfc/servers-server-items.md)
 

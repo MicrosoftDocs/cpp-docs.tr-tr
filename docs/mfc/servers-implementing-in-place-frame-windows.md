@@ -1,5 +1,5 @@
 ---
-title: 'Sunucular: Yerinde çerçeve pencereleri uygulama | Microsoft Docs'
+title: 'Sunucular: Yerinde çerçeve Windows uygulama | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,49 +18,51 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0f03d66fac6d58bdb48aa9b7a6d8aafe18a74ea
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 24c63c10feff624abe399952b682303a6e262d35
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36956440"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425021"
 ---
 # <a name="servers-implementing-in-place-frame-windows"></a>Sunucular: Yerinde Çerçeve Pencereleri Uygulama
-Bu makalede, sunucu uygulamanızı oluşturmak için Uygulama Sihirbazı'nı kullanmazsanız, görsel düzenleme server uygulamanızda yerinde çerçeve pencereleri uygulamak için yapmanız gerekir açıklanmaktadır. Bu makalede açıklanan yordamı izlemek yerine, varolan bir yerinde çerçeve pencere sınıfı Uygulama Sihirbazı tarafından oluşturulan bir uygulama veya Visual C++ ile sağlanan bir örnek kullanabilirsiniz.  
-  
-#### <a name="to-declare-an-in-place-frame-window-class"></a>Yerinde çerçeve pencere sınıfı bildirmek için  
-  
-1.  Yerinde çerçeve penceresi sınıfından türetilen `COleIPFrameWnd`.  
-  
-    -   DECLARE_DYNCREATE makrosu sınıfı üst bilgi dosyanızda kullanın.  
-  
-    -   IMPLEMENT_DYNCREATE makrosu sınıf uygulama (.cpp) dosyanızda kullanın. Bu çerçevesi tarafından oluşturulacak bu sınıfın nesnelerini sağlar.  
-  
-2.  Bildirme bir `COleResizeBar` çerçeve penceresi sınıfında üye. Sunucu uygulamalarında yerinde yeniden boyutlandırma desteklemek istiyorsanız bu gereklidir.  
-  
-     Bildirme bir `OnCreate` ileti işleyicisi (kullanarak **özellikleri** penceresi) ve arama `Create` için `COleResizeBar` varsa, tanımlanan üye,.  
-  
-3.  Araç çubuğu varsa, bildirme bir `CToolBar` çerçeve penceresi sınıfında üye.  
-  
-     Geçersiz kılma `OnCreateControlBars` sunucu yerinde etkin olduğunda bir araç çubuğu oluşturmak için üye işlevi. Örneğin:  
-  
-     [!code-cpp[NVC_MFCOleServer#1](../mfc/codesnippet/cpp/servers-implementing-in-place-frame-windows_1.cpp)]  
-  
-     5. adım aşağıdaki bu kodu tartışması bakın.  
-  
-4.  Bu yerinde çerçeve pencere sınıfı için üstbilgi dosyası Main.cpp dosyanıza ekleyin.  
-  
-5.  İçinde `InitInstance` çağrı, uygulama sınıfı için `SetServerInfo` yerinde çerçeve penceresi açın ve yerinde düzenleme kullanılacak ve kaynakları belirtmek için belge şablonu nesnesinin işlevi.  
-  
- İşlevi bir dizi çağrıları **varsa** deyimi kaynaklardan araç sağlanan server oluşturur. Bu noktada, araç kapsayıcının penceresi hiyerarşi parçasıdır. Bu araç türetildiği için `CToolBar`, sahibi değiştirmediğiniz sürece sahibi, kapsayıcı uygulamanın çerçeve penceresi, kendi iletileri geçer. İşte çağrısı `SetOwner` gereklidir. Bu çağrı komutları sunucunun yerinde çerçeve penceresi, sunucuya geçirilmesi için iletilerini neden olacak şekilde gönderildiği penceresini değiştirir. Bu, sunucunun sağladığı araç çubuğunda işlemleri tepki sağlar.  
-  
- Araç çubuğu bit eşlem kimliği server uygulamanızda tanımlanan diğer yerinde kaynakları ile aynı olmalıdır. Bkz: [menüler ve kaynaklar: sunucu ekleme](../mfc/menus-and-resources-server-additions.md) Ayrıntılar için.  
-  
- Daha fazla bilgi için bkz: [COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md), [COleResizeBar](../mfc/reference/coleresizebar-class.md), ve [CDocTemplate::SetServerInfo](../mfc/reference/cdoctemplate-class.md#setserverinfo) içinde *sınıf kitaplığı başvurusu*.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sunucuları](../mfc/servers.md)   
- [Sunucular: sunucu uygulama](../mfc/servers-implementing-a-server.md)   
- [Sunucular: Sunucu belgeleri uygulama](../mfc/servers-implementing-server-documents.md)   
- [Sunucular: Sunucu Öğeleri](../mfc/servers-server-items.md)
+
+Bu makalede, sunucu uygulamanızı oluşturmak için Uygulama Sihirbazı'nı kullanmıyorsanız, yerinde çerçeve pencereleri, bir görsel düzenleme sunucu uygulaması uygulamak için yapılması gereken açıklanmaktadır. Bu makalede açıklanan yordamı izleyerek yerine bir uygulama Sihirbazı tarafından oluşturulan bir uygulama ya da Visual C++ ile sağlanan bir örnek var olan bir yerinde çerçeve pencere sınıfı kullanabilirsiniz.
+
+#### <a name="to-declare-an-in-place-frame-window-class"></a>Yerinde çerçeve pencere sınıf tanımlamak için
+
+1. Bir yerinde çerçeve pencere sınıfından türetilir `COleIPFrameWnd`.
+
+   - DECLARE_DYNCREATE makrosu sınıfı üst bilgi dosyanızda kullanın.
+
+   - IMPLEMENT_DYNCREATE makrosu, sınıf uygulama (.cpp) dosyasında kullanın. Bu çerçeve tarafından oluşturulması, bu sınıfın nesneleri sağlar.
+
+1. Bildirme bir `COleResizeBar` çerçeve penceresi sınıfında üyesi. Bu, sunucu uygulamalarında yerinde yeniden boyutlandırma desteklemek istiyorsanız gereklidir.
+
+     Bildirme bir `OnCreate` ileti işleyicisi (kullanarak **özellikleri** pencere) ve çağrı `Create` için `COleResizeBar` varsa, tanımlanan üye.
+
+1. Araç çubuğu varsa bildirmek bir `CToolBar` çerçeve penceresi sınıfında üyesi.
+
+     Geçersiz kılma `OnCreateControlBars` sunucu yerinde etkin olduğunda, bir araç çubuğu oluşturmak için üye işlevi. Örneğin:
+
+     [!code-cpp[NVC_MFCOleServer#1](../mfc/codesnippet/cpp/servers-implementing-in-place-frame-windows_1.cpp)]
+
+     5. adım aşağıdaki Bu kod tartışmalara bakın.
+
+1. Bu yerinde çerçeve-pencere sınıfı için üst bilgi dosyası ana .cpp dosyanıza ekleyin.
+
+1. İçinde `InitInstance` uygulama sınıfınız için çağrı `SetServerInfo` belge şablon nesnesinin açık ve yerinde düzenleme kullanılacak yerinde çerçeve penceresini ve kaynakları belirtmek için işlev.
+
+Bir dizi işlev çağrıları **varsa** deyimi kaynaklardan araç sağlanan sunucu oluşturur. Bu noktada, araç kapsayıcının pencere hiyerarşisi parçasıdır. Bu araç türetilmiş olduğundan `CToolBar`, sahibi değiştirmediğiniz sürece sahibi, kapsayıcı uygulamasının çerçeve penceresini, iletileri geçer. İşte bu çağrı `SetOwner` gereklidir. Bu çağrı, sunucunun yerinde çerçeve penceresi, sunucuya geçirilecek iletileri neden olacak şekilde komutları nereye gönderileceğini penceresini değiştirir. Bu işlemleri sağlar araç çubuğundaki tepki vermek sağlar.
+
+Araç çubuğu bit eşlem kimliği server uygulamanızda tanımlanan diğer yerinde kaynakları aynı olması gerekir. Bkz: [menüler ve kaynaklar: sunucu ekleme](../mfc/menus-and-resources-server-additions.md) Ayrıntılar için.
+
+Daha fazla bilgi için [Coleıpframewnd](../mfc/reference/coleipframewnd-class.md), [COleResizeBar](../mfc/reference/coleresizebar-class.md), ve [CDocTemplate::SetServerInfo](../mfc/reference/cdoctemplate-class.md#setserverinfo) içinde *sınıf kitaplığı başvurusu*.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sunucular](../mfc/servers.md)<br/>
+[Sunucular: Sunucu Uygulama](../mfc/servers-implementing-a-server.md)<br/>
+[Sunucular: Sunucu Belgeleri Uygulama](../mfc/servers-implementing-server-documents.md)<br/>
+[Sunucular: Sunucu Öğeleri](../mfc/servers-server-items.md)
 

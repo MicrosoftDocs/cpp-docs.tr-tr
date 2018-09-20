@@ -17,39 +17,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14d7ab3f1a61dc0644bf5683376ac676fbfcd6b9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 97820367f0960925dfcac1db339260cd3f52b8bc
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322620"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430221"
 ---
 # <a name="noop"></a>__noop
-**Microsoft özel**  
-  
- `__noop` İç işlev yoksayılmalıdır belirtir ve bağımsız değişken listesi Ayrıştırılan ancak hiçbir kod bağımsız değişkenleri oluşturulmuş. Değişken sayıda bağımsız değişken almayan genel hata ayıklama işlevleri kullanmak için tasarlanmıştır.  
-  
- Derleyici dönüştürür `__noop` 0 derleme zamanında iç.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod nasıl kullanabileceğinizi gösterir `__noop`.  
-  
-```  
-// compiler_intrinsics__noop.cpp  
-// compile with or without /DDEBUG  
-#include <stdio.h>  
-  
-#if DEBUG  
-   #define PRINT   printf_s  
-#else  
-   #define PRINT   __noop  
-#endif  
-  
-int main() {  
-   PRINT("\nhello\n");  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)
+
+**Microsoft'a özgü**
+
+`__noop` İç işlev yoksayılıp yoksayılmaması gerektiğini belirtir ve bağımsız değişken listesi ayrıştırılır ancak kod üretilmedi bağımsız değişkenleri. Değişken sayıda bağımsız değişken genel hata ayıklama işlevlerini kullanmak için tasarlanmıştır.
+
+Derleyici dönüştürür `__noop` 0 derleme zamanında iç.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki kod nasıl kullanabileceğinizi gösterir `__noop`.
+
+```
+// compiler_intrinsics__noop.cpp
+// compile with or without /DDEBUG
+#include <stdio.h>
+
+#if DEBUG
+   #define PRINT   printf_s
+#else
+   #define PRINT   __noop
+#endif
+
+int main() {
+   PRINT("\nhello\n");
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

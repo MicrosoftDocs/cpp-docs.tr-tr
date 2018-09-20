@@ -20,50 +20,50 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2cec232bb4e4f2f6ac1ab9af703b368eec0ba5dd
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: eec1620d9ae84e5c0b957b7426ad388c70626813
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33331525"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379222"
 ---
 # <a name="linker-property-pages"></a>Bağlayıcı Özellik Sayfaları
 
-Bu konu, üzerinde aşağıdaki özellikleri açıklar. **genel** bağlayıcı özellik sayfası. Bu sayfayı Linux sürümü için bkz: [bağlayıcı Özellikleri (Linux C++)](../linux/prop-pages/linker-linux.md).
+Bu konuda, üzerinde aşağıdaki özellikleri anlatılmaktadır **genel** bağlayıcı özellik sayfası. Bu sayfa Linux sürümü için bkz: [bağlayıcı Özellikleri (Linux C++)](../linux/prop-pages/linker-linux.md).
 
 ## <a name="general-page-properties"></a>Genel sayfa özellikleri
 
 ### <a name="ignore-import-library"></a>İçeri aktarma kitaplığını yoksay
 
-Bu özellik bu yapıdan tüm bağımlı projesine oluşturulan herhangi bir .lib çıktı bağlamayan için bağlayıcı söyler. Bu yapılandırıldığında .lib dosyası üretmez .dll dosyalarını işlemek proje sistemi sağlar. Bir proje DLL üreten başka bir projeye bağlıdır, proje sistemi o alt projesi tarafından üretilen .lib dosyası otomatik olarak bağlar. Bu COM DLL veya yalnızca kaynak DLL'ler oluşturan projeleri göre gerekli olmayabilir; Bu DLL'ler herhangi anlamlı dışarı gerekmez. DLL hiçbir dışarı aktarma varsa, bağlayıcı .lib dosyası oluşturmaz. Hiçbir dışa aktarma .lib dosyasının disk üzerinde mevcut olduğundan ve bu (eksik) DLL ile bağlamak için bağlayıcı proje sistemi söyler, bağlantı başarısız olur. Kullanım **yoksay içeri aktarma kitaplığını** bu sorunu gidermek için özellik. Ayarlandığında **Evet**, proje sistemi varlığının veya yokluğunun .lib dosyanın yoksayar ve bu proje varolmayan .lib dosyasıyla bağlamayan bağımlı herhangi bir projeye neden olur.
+Bu özellik bu yapının bağımlı bir proje içinde oluşturulan herhangi bir .lib çıktı bağlamayan söyler. Bu, oluşturulduğunda bir .lib dosyası üretmez .dll dosyalarını işlemek proje sistemi sağlar. Bir DLL üreten başka bir projeye bir proje bağlıdır, proje sistemi bu alt proje tarafından üretilen .lib dosyası otomatik olarak bağlar. Bu COM DLL'leri veya yalnızca kaynak DLL'lerine üretme projeleri tarafından gerekmeyebilir; Bu DLL'leri herhangi anlamlı dışarı aktarma yok. Bağlayıcı, DLL hiçbir dışarı varsa, bir .lib dosyası oluşturmaz. Hiçbir dışarı aktarma .lib dosyası disk üzerinde mevcut olduğundan ve proje sistemi ile (eksik) bu DLL'yi bağlamak için söyler, bağlantı başarısız olur. Kullanım **içeri aktarma kitaplığını Yoksay** bu sorunu çözmek için özellik. Ayarlandığında **Evet**, proje sistemi varlığı veya yokluğu bu .lib dosyası yoksayar ve bu proje ile varolmayan .lib dosyası bağlamayan bağımlı projeler neden olur.
 
-Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreImportLibrary%2A>.
+Bu özelliğe program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreImportLibrary%2A>.
 
-### <a name="register-output"></a>YAZMAÇ çıktı
+### <a name="register-output"></a>Çıkışı Kaydet
 
-Çalıştırır `regsvr32.exe /s $(TargetPath)` yapı Çıkışta olduğu yalnızca .dll projelerde geçerli. .Exe projeleri için bu özellik yoksayılır. Bir .exe çıktı kaydetmek için her zaman kayıtlı .exe dosyaları için gerekli olan özel kaydını yapmak için yapılandırma postbuild olay ayarlayın.
+Çalıştırmaları `regsvr32.exe /s $(TargetPath)` yapı çıktı, geçerli .dll projelerde. .Exe projeleri için bu özellik yoksayılır. Bir .exe çıkış kaydetmek için postbuild olay her zaman kayıtlı .exe dosyaları için gerekli olan özel bir kayıt yapmak için yapılandırma ayarlayın.
 
-Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.RegisterOutput%2A>.
+Bu özelliğe program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.RegisterOutput%2A>.
 
-### <a name="per-user-redirection"></a>Kullanıcı başına yeniden yönlendirme
+### <a name="per-user-redirection"></a>Bağımsız kullanıcı yönlendirmesi
 
-Visual Studio'da kayıt HKEY_CLASSES_ROOT (HKCR) geleneksel yapmıştır. HKCR erişmek için Windows Vista ve sonraki işletim sistemleri ile Visual Studio yükseltilmiş modda çalıştırmanız gerekir. Geliştiriciler, her zaman yükseltilmiş modda çalıştırın istemediğiniz ancak hala kaydı çalışmanız gerekir. Kullanıcı başına yeniden yönlendirme, bu modda çalıştırmak zorunda kalmadan kaydetmenize olanak sağlar.
+Visual Studio'da kayıt geleneksel HKEY_CLASSES_ROOT (HKCR) yapılmıştır. Windows Vista ve sonraki işletim sistemleri ile HKCR erişmek için Visual Studio'nun yükseltilmiş modda çalıştırmanız gerekir. Geliştiriciler her zaman yükseltilmiş modda çalıştırmak istemiyorsanız, ancak hala kayıt ile çalışması gerekir. Bağımsız kullanıcı yönlendirmesi, bu modda çalıştırmak zorunda kalmadan kaydetmenize olanak sağlar.
 
-Kullanıcı başına yeniden yönlendirme için HKEY yönlendirilecek HKCR herhangi yazma zorlar\_geçerli\_kullanıcı (HKCU). Kullanıcı başına yeniden yönlendirme kapalıysa, neden olabilir [proje derleme hatası PRJ0050](../error-messages/tool-errors/project-build-error-prj0050.md) program HKCR için yazma çalıştığında.
+Bağımsız kullanıcı yönlendirmesi için HKEY yönlendirilmesi HKCR herhangi bir yazma zorlar\_geçerli\_kullanıcı (HKCU). Bağımsız kullanıcı yönlendirmesi devre dışı bırakılırsa, neden olabilir [proje derleme hatası PRJ0050](../error-messages/tool-errors/project-build-error-prj0050.md) program için HKCR yazma çalıştığında.
 
-### <a name="link-library-dependencies"></a>Bağlantı kitaplık bağımlılıkları
+### <a name="link-library-dependencies"></a>Bağlantı kitaplığı bağımlılıkları
 
-Bağımlı projeler tarafından üretilen .lib dosyaları bağlamak belirtir. Genellikle, .lib dosyaları bağlamak istediğiniz, ancak bu durumda belirli DLL'ler için geçerli olmayabilir.
+Bağımlı projeleri tarafından üretilen .lib dosyaları bağlamak belirtir. Genellikle, .lib dosyaları bağlamak istediğiniz, ancak bu durum belirli DLL'ler için geçerli olmayabilir.
 
-Örneğin, göreli yol ve dosya adını sağlayarak .obj dosya belirtebilirsiniz ".. \\.. \MyLibProject\MyObjFile.obj". .Obj dosyası için kaynak kodunu # örneğin pch.h, önceden derlenmiş üst bilgi includes pch.obj dosyası MyObjFile.obj ile aynı klasörde bulunur ve pch.obj ek bir bağımlılık olarak da eklemelisiniz.
+Göreli yol ve dosya adı örneğin sağlayarak bir .obj dosyası da belirtebilirsiniz ".. \\.. \MyLibProject\MyObjFile.obj". .Obj dosyası için kaynak kodu # örneğin pch.h, önceden derlenmiş üst bilgi pch.obj dosyası MyObjFile.obj aynı klasörde bulunur ve pch.obj ek bir bağımlılık olarak da eklemelisiniz includes.
 
-### <a name="use-library-dependency-inputs"></a>Kitaplık bağımlılık girişleri kullanın
+### <a name="use-library-dependency-inputs"></a>Kitaplık bağımlılığı girişlerini kullan
 
-Bağımlı bir proje .lib dosyası vermediğinde büyük bir projede artımlı bağlantılandırma devre dışı bırakılır. .Lib dosyaları üretmek birçok bağımlı projeler varsa, uygulama oluşturma uzun zaman alabilir. Bu özellik ayarlandığında **Evet**, .libs .obj dosyaları proje sistem bağlantıları böylece artımlı bağlantılandırma etkinleştirme bağımlı projeler tarafından üretilen.
+Bağımlı bir proje bir .lib dosyasına oluşturursa, büyük bir projenin artımlı bağlamayı devre dışı bırakıldı. .Lib dosyaları oluşturan birçok bağımlı projeler varsa, uygulama oluşturma, uzun zaman alabilir. Bu özelliği ayarlandığında **Evet**, proje sistemi bağlantıları .libs .obj dosyaları böylece artımlı bağlamasına olanak bağımlı projeleri tarafından üretilen.
 
-Nasıl erişileceği hakkında bilgi için **genel** bağlayıcı özellik sayfası, bkz: [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).
+Nasıl erişileceği hakkında daha fazla bilgi için **genel** bağlayıcı özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[VC ++ proje ayarları, projeler ve çözümler, Seçenekler iletişim kutusu](/visualstudio/ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box)  
-[Özellik Sayfaları](../ide/property-pages-visual-cpp.md)  
+[VC++ Proje Ayarları, Projeler ve Çözümler, Seçenekler İletişim Kutusu](/visualstudio/ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box)<br>
+[Özellik Sayfaları](../ide/property-pages-visual-cpp.md)

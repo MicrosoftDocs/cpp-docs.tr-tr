@@ -17,133 +17,135 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 47914a73880f5cea13f1bc64c231604a0d5d05dd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2355a5341259978e402ecc6f8de5c684c9435e3a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46073822"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46433068"
 ---
 # <a name="hosting-a-windows-form-user-control-as-an-mfc-dialog-box"></a>MFC İletişim Kutusu Olarak Windows Formu Kullanıcı Denetimi Barındırma
-MFC sağlayan Şablon sınıfı [CWinFormsDialog](../mfc/reference/cwinformsdialog-class.md) bir Windows Forms kullanıcı denetimi barındırabilmesi (<xref:System.Windows.Forms.UserControl>) kalıcı veya geçici bir MFC iletişim kutusunda. `CWinFormsDialog` MFC sınıfından türetilen [CDialog](../mfc/reference/cdialog-class.md), iletişim kutusu kalıcı veya kısıtlayıcı olmayan başlatılabilir.  
-  
- İşlem, `CWinFormsDialog` kullanıcı denetimini barındırmak için kullandığı benzer açıklanan [MFC iletişim kutusu bir Windows formu kullanıcı denetimi barındırma](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md). Ancak, `CWinFormsDialog` başlatma ve böylece, el ile programlanmak zorunda değildir, kullanıcı denetimi barındırma yönetir.  
-  
- MFC'de Windows formlarını gösteren örnek bir uygulama için bkz. [MFC ve Windows Forms tümleştirme](http://www.microsoft.com/downloads/details.aspx?FamilyID=987021bc-e575-4fe3-baa9-15aa50b0f599&displaylang=en).  
-  
-### <a name="to-create-the-mfc-host-application"></a>MFC konak uygulaması oluşturmak için  
-  
-1.  MFC Uygulama projesi oluşturun.  
-  
-     Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**. İçinde **Visual C++** klasörüne **MFC uygulaması**.  
-  
-     İçinde **adı** kutusuna `MFC03` ve çözüm ayarını değiştirme **eklemek için çözüm**. Tıklayın **Tamam**.  
-  
-     İçinde **MFC Uygulama Sihirbazı**tüm Varsayılanları kabul edin ve ardından **son**. Bu, bir Çoklu Belge Arabirimiyle beraber bir MFC uygulaması oluşturur.  
-  
-2.  Projeyi yapılandırın.  
-  
-     İçinde **Çözüm Gezgini**, sağ **MFC03** proje düğümünü ve seçin **özellikleri**. **Özellik sayfaları** iletişim kutusu görüntülenir.  
-  
-     İçinde **özellik sayfaları** iletişim kutusundaki **yapılandırma özellikleri** ağaç denetiminden, select **genel**, ardından **Proje Varsayılanları**bölümünde, **ortak dil çalışma zamanı desteği** için **ortak dil çalışma zamanı desteği (/ clr)**. **Tamam**'ı tıklatın.  
-  
-3.  .NET denetimine bir başvuru ekleyin.  
-  
-     İçinde **Çözüm Gezgini**, sağ **MFC03** projesini düğümünü ve ardından **Ekle**, **başvuruları**. İçinde **özellik sayfası**, tıklayın **Yeni Başvuru Ekle**, WindowsControlLibrary1'ı seçin (altında **projeleri** sekmesinde), tıklatıp **Tamam**. Bu biçimde bir başvuru ekler bir [/FU](../build/reference/fu-name-forced-hash-using-file.md) derleyici seçeneği, böylece programın derleyeceği; ayrıca WindowsControlLibrary1.dll öğesini kopyalar `MFC03` proje dizinine, böylece program çalışacaktır.  
-  
-4.  Ekleme `#include <afxwinforms.h>` varolan sonundaki stdafx.H'ye `#include` deyimleri.  
-  
-5.  Alt sınıflara ayıran yeni bir sınıf ekleyin `CDialog`.  
-  
-     Proje adına sağ tıklayın ve alt sınıflara ayıran bir MFC sınıfı (CHostForWinForm adında) ekleyin `CDialog`. İletişim kutusu kaynağına gerekmediğinden, kaynak Kimliğini silebilirsiniz (kaynak görünümünü seçin, iletişim kutusu klasörünü genişletin ve IDD_HOSTFORWINFORM kaynağını silin.  Daha sonra tüm başvuruları kimliğine kodda kaldırın.).  
-  
-6.  Değiştirin `CDialog` ile CHostForWinForm.h ve CHostForWinForm.cpp dosyalarındaki `CWinFormsDialog<WindowsControlLibrary1::UserControl1>`.  
-  
-7.  CHostForWinForm sınıfındaki DoModal çağırın.  
-  
-     MFC03.cpp öğesinde ekleme `#include "HostForWinForm.h"`.  
-  
-     Mfc03app::InitInstance öğesinin tanımındaki dönüş deyiminden önce ekleyin:  
-  
+
+MFC sağlayan Şablon sınıfı [CWinFormsDialog](../mfc/reference/cwinformsdialog-class.md) bir Windows Forms kullanıcı denetimi barındırabilmesi (<xref:System.Windows.Forms.UserControl>) kalıcı veya geçici bir MFC iletişim kutusunda. `CWinFormsDialog` MFC sınıfından türetilen [CDialog](../mfc/reference/cdialog-class.md), iletişim kutusu kalıcı veya kısıtlayıcı olmayan başlatılabilir.
+
+İşlem, `CWinFormsDialog` kullanıcı denetimini barındırmak için kullandığı benzer açıklanan [MFC iletişim kutusu bir Windows formu kullanıcı denetimi barındırma](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md). Ancak, `CWinFormsDialog` başlatma ve böylece, el ile programlanmak zorunda değildir, kullanıcı denetimi barındırma yönetir.
+
+MFC'de Windows formlarını gösteren örnek bir uygulama için bkz. [MFC ve Windows Forms tümleştirme](http://www.microsoft.com/downloads/details.aspx?FamilyID=987021bc-e575-4fe3-baa9-15aa50b0f599&displaylang=en).
+
+### <a name="to-create-the-mfc-host-application"></a>MFC konak uygulaması oluşturmak için
+
+1. MFC Uygulama projesi oluşturun.
+
+     Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**. İçinde **Visual C++** klasörüne **MFC uygulaması**.
+
+     İçinde **adı** kutusuna `MFC03` ve çözüm ayarını değiştirme **eklemek için çözüm**. Tıklayın **Tamam**.
+
+     İçinde **MFC Uygulama Sihirbazı**tüm Varsayılanları kabul edin ve ardından **son**. Bu, bir Çoklu Belge Arabirimiyle beraber bir MFC uygulaması oluşturur.
+
+1. Projeyi yapılandırın.
+
+     İçinde **Çözüm Gezgini**, sağ **MFC03** proje düğümünü ve seçin **özellikleri**. **Özellik sayfaları** iletişim kutusu görüntülenir.
+
+     İçinde **özellik sayfaları** iletişim kutusundaki **yapılandırma özellikleri** ağaç denetiminden, select **genel**, ardından **Proje Varsayılanları**bölümünde, **ortak dil çalışma zamanı desteği** için **ortak dil çalışma zamanı desteği (/ clr)**. **Tamam**'ı tıklatın.
+
+1. .NET denetimine bir başvuru ekleyin.
+
+     İçinde **Çözüm Gezgini**, sağ **MFC03** projesini düğümünü ve ardından **Ekle**, **başvuruları**. İçinde **özellik sayfası**, tıklayın **Yeni Başvuru Ekle**, WindowsControlLibrary1'ı seçin (altında **projeleri** sekmesinde), tıklatıp **Tamam**. Bu biçimde bir başvuru ekler bir [/FU](../build/reference/fu-name-forced-hash-using-file.md) derleyici seçeneği, böylece programın derleyeceği; ayrıca WindowsControlLibrary1.dll öğesini kopyalar `MFC03` proje dizinine, böylece program çalışacaktır.
+
+1. Ekleme `#include <afxwinforms.h>` varolan sonundaki stdafx.H'ye `#include` deyimleri.
+
+1. Alt sınıflara ayıran yeni bir sınıf ekleyin `CDialog`.
+
+     Proje adına sağ tıklayın ve alt sınıflara ayıran bir MFC sınıfı (CHostForWinForm adında) ekleyin `CDialog`. İletişim kutusu kaynağına gerekmediğinden, kaynak Kimliğini silebilirsiniz (kaynak görünümünü seçin, iletişim kutusu klasörünü genişletin ve IDD_HOSTFORWINFORM kaynağını silin.  Daha sonra tüm başvuruları kimliğine kodda kaldırın.).
+
+1. Değiştirin `CDialog` ile CHostForWinForm.h ve CHostForWinForm.cpp dosyalarındaki `CWinFormsDialog<WindowsControlLibrary1::UserControl1>`.
+
+1. CHostForWinForm sınıfındaki DoModal çağırın.
+
+     MFC03.cpp öğesinde ekleme `#include "HostForWinForm.h"`.
+
+     Mfc03app::InitInstance öğesinin tanımındaki dönüş deyiminden önce ekleyin:
+
     ```cpp
     CHostForWinForm m_HostForWinForm;
     m_HostForWinForm.DoModal();
     ```
-  
-8.  Derleme ve projeyi çalıştırın.  
-  
-     Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
-  
-     Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**.  
-  
-     Ardından MFC uygulamasından Windows Forms üzerindeki bir denetimin durumunu izlemek için kod ekleyeceksiniz.  
-  
-9. OnInitDialog için bir işleyici ekleyin.  
-  
-     Görüntü **özellikleri** penceresini (F4). İçinde **sınıf görünümü**, CHostForWinForm öğesini seçin. İçinde **özellikleri** penceresinde seçin geçersiz kılar ve OnInitDialog satırında, sol taraftaki sütunu tıklatın ve seçin \< Ekle >. Bu, CHostForWinForm.h öğesine aşağıdaki satırı ekler:  
-  
-    ```cpp  
-    virtual BOOL OnInitDialog();  
-    ```  
-  
-10. Aşağıdaki şekilde OnInitDialog (in CHostForWinForm.cpp) tanımlayın:  
-  
-    ```  
-    BOOL CHostForWinForm::OnInitDialog() {  
-       CWinFormsDialog<WindowsControlLibrary1::UserControl1>::OnInitDialog();  
-       GetControl()->button1->Click += MAKE_DELEGATE(System::EventHandler, OnButton1);  
-       return TRUE;  
-    }  
-    ```  
-  
-11. Daha sonra OnButton1 işleyicisini ekleyin. Aşağıdaki satırları CHostForWinForm.h'deki CHostForWinForm sınıfının ortak bölümüne ekleyin:  
-  
-    ```  
-    virtual void OnButton1( System::Object^ sender, System::EventArgs^ e );  
-  
-    BEGIN_DELEGATE_MAP( CHostForWinForm )  
-       EVENT_DELEGATE_ENTRY( OnButton1, System::Object^, System::EventArgs^ );  
-    END_DELEGATE_MAP()  
-    ```  
-  
-     CHostForWinForm.cpp öğesine bu tanımı ekleyin:  
-  
-    ```  
-    void CHostForWinForm::OnButton1( System::Object^ sender, System::EventArgs^ e )   
-    {  
-       System::Windows::Forms::MessageBox::Show("test");  
-    }  
-    ```  
-  
-12. Derleme ve projeyi çalıştırın. Windows Form üzerinde olan düğmeyi tıklattığınızda MFC uygulamasındaki kod çalışacaktır.  
-  
-     Sonraki Windows Form üzerinde metin kutusunun değerini MFC kodundan görüntülemek için kod ekleyeceksiniz.  
-  
-13. CHostForWinForm.h'deki CHostForWinForm sınıfının ortak bölümüne aşağıdaki bildirimi ekleyin:  
-  
-    ```  
-    CString m_sEditBoxOnWinForm;  
-    ```  
-  
-14. CHostForWinForm.cpp içinde DoDataExchange tanımında, aşağıdaki üç satırı işlevin sonuna ekleyin:  
-  
-    ```  
-    if (pDX->m_bSaveAndValidate)  
-       m_sEditBoxOnWinForm = CString( GetControl()->textBox1->Text);  
-    else  
-       GetControl()->textBox1->Text = gcnew System::String(m_sEditBoxOnWinForm);  
-    ```  
-  
-15. CHostForWinForm.cpp içinde OnButton1 tanımında, aşağıdaki üç satırı işlevin sonuna ekleyin:  
-  
-    ```  
-    this->UpdateData(TRUE);  
-    System::String ^ z = gcnew System::String(m_sEditBoxOnWinForm);  
-    System::Windows::Forms::MessageBox::Show(z);  
-    ```  
-  
-16. Derleme ve projeyi çalıştırın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- <xref:System.Windows.Forms.UserControl?displayProperty=fullName>   
- [MFC içinde Windows Formu Kullanıcı Denetimi Kullanma](../dotnet/using-a-windows-form-user-control-in-mfc.md)
+
+1. Derleme ve projeyi çalıştırın.
+
+     Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
+
+     Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**.
+
+     Ardından MFC uygulamasından Windows Forms üzerindeki bir denetimin durumunu izlemek için kod ekleyeceksiniz.
+
+9. OnInitDialog için bir işleyici ekleyin.
+
+     Görüntü **özellikleri** penceresini (F4). İçinde **sınıf görünümü**, CHostForWinForm öğesini seçin. İçinde **özellikleri** penceresinde seçin geçersiz kılar ve OnInitDialog satırında, sol taraftaki sütunu tıklatın ve seçin \< Ekle >. Bu, CHostForWinForm.h öğesine aşağıdaki satırı ekler:
+
+    ```cpp
+    virtual BOOL OnInitDialog();
+    ```
+
+10. Aşağıdaki şekilde OnInitDialog (in CHostForWinForm.cpp) tanımlayın:
+
+    ```
+    BOOL CHostForWinForm::OnInitDialog() {
+       CWinFormsDialog<WindowsControlLibrary1::UserControl1>::OnInitDialog();
+       GetControl()->button1->Click += MAKE_DELEGATE(System::EventHandler, OnButton1);
+       return TRUE;
+    }
+    ```
+
+11. Daha sonra OnButton1 işleyicisini ekleyin. Aşağıdaki satırları CHostForWinForm.h'deki CHostForWinForm sınıfının ortak bölümüne ekleyin:
+
+    ```
+    virtual void OnButton1( System::Object^ sender, System::EventArgs^ e );
+
+    BEGIN_DELEGATE_MAP( CHostForWinForm )
+       EVENT_DELEGATE_ENTRY( OnButton1, System::Object^, System::EventArgs^ );
+    END_DELEGATE_MAP()
+    ```
+
+     CHostForWinForm.cpp öğesine bu tanımı ekleyin:
+
+    ```
+    void CHostForWinForm::OnButton1( System::Object^ sender, System::EventArgs^ e )
+    {
+       System::Windows::Forms::MessageBox::Show("test");
+    }
+    ```
+
+12. Derleme ve projeyi çalıştırın. Windows Form üzerinde olan düğmeyi tıklattığınızda MFC uygulamasındaki kod çalışacaktır.
+
+     Sonraki Windows Form üzerinde metin kutusunun değerini MFC kodundan görüntülemek için kod ekleyeceksiniz.
+
+13. CHostForWinForm.h'deki CHostForWinForm sınıfının ortak bölümüne aşağıdaki bildirimi ekleyin:
+
+    ```
+    CString m_sEditBoxOnWinForm;
+    ```
+
+14. CHostForWinForm.cpp içinde DoDataExchange tanımında, aşağıdaki üç satırı işlevin sonuna ekleyin:
+
+    ```
+    if (pDX->m_bSaveAndValidate)
+       m_sEditBoxOnWinForm = CString( GetControl()->textBox1->Text);
+    else
+       GetControl()->textBox1->Text = gcnew System::String(m_sEditBoxOnWinForm);
+    ```
+
+15. CHostForWinForm.cpp içinde OnButton1 tanımında, aşağıdaki üç satırı işlevin sonuna ekleyin:
+
+    ```
+    this->UpdateData(TRUE);
+    System::String ^ z = gcnew System::String(m_sEditBoxOnWinForm);
+    System::Windows::Forms::MessageBox::Show(z);
+    ```
+
+16. Derleme ve projeyi çalıştırın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+<xref:System.Windows.Forms.UserControl?displayProperty=fullName>
+[MFC içinde Windows formu kullanıcı denetimi kullanma](../dotnet/using-a-windows-form-user-control-in-mfc.md)

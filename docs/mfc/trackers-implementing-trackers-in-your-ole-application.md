@@ -19,22 +19,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0936c760c9528e5ed4220c2a4c46a170b84041a8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 26fe49a9932ded22dbc1f0d4600f57b1f0eb6f14
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381556"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46441414"
 ---
 # <a name="trackers-implementing-trackers-in-your-ole-application"></a>İzleyiciler: OLE Uygulamanızda İzleyicileri Uygulama
-İzleyicileri OLE istemci öğeleri ile etkileşim kullanıcılar etkinleştirmek için bir grafik arabirim sağlar. Farklı İzleyici stilleri kullanarak OLE öğeleri taranmış Kenarlıklar ile görüntülenebilir istemci yeniden boyutlandırın tanıtıcıları veya diğer görsel efektler çeşitli. Bu makalede açıklanır:  
-  
--   [Kodunuzda izleme uygulama](../mfc/how-to-implement-tracking-in-your-code.md).  
-  
--   [Rubber-Banding ve izleyiciler](../mfc/rubber-banding-and-trackers.md).  
-  
- Makaleyi stilleri izleyicileri ile kullanımını da kapsar. Ayrıca, MFC OLE örnek birkaç başvurular yapar [OCLIENT](../visual-cpp-samples.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İzleyiciler](../mfc/trackers.md)
+
+İzleyicileri OLE istemci öğeleri ile etkileşim kurmak kullanıcıları etkinleştirmek için bir grafik arabirim sağlar. Farklı İzleyici stilleri kullanarak, OLE taranmış kenarlıklar, görüntülenebilecek öğe istemci yeniden boyutlandırma tutamaçları veya diğer görsel efektler çeşitli. Bu makalede açıklanır:
+
+- [Kodunuzda izleme uygulama](../mfc/how-to-implement-tracking-in-your-code.md).
+
+- [Rubber-Banding ve izleyiciler](../mfc/rubber-banding-and-trackers.md).
+
+Makaleyi izleyicileri stillerle kullanımını da kapsar. MFC OLE örnek birkaç başvuruları buna kolaylaştırır [OCLIENT](../visual-cpp-samples.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İzleyiciler](../mfc/trackers.md)
 

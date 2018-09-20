@@ -25,63 +25,65 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf25b84c4ee9808210d2dbf2f5115319a517c71b
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 320457928ef8bc1a03d86b3a898bc0b719e116a2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931944"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442883"
 ---
 # <a name="accessing-all-members-of-a-collection"></a>Bir Koleksiyonun Tüm Üyelerine Erişme
-MFC dizi koleksiyon sınıfları — hem şablona dayalı ve — dizinleri öğelerini erişmek için kullanın. MFC liste ve eşleme koleksiyon sınıfları — hem şablona dayalı ve — türünün bir göstergesi kullanın **konumu** koleksiyonundaki belirli bir konuma açıklamak için. Bu koleksiyonun bir veya daha fazla üyelerini erişmek için ilk konumu göstergesi başlatmak sürekli olarak o konumdan koleksiyonuna geçirmek ve sonraki öğeye dönmek için isteyin. Koleksiyon yinelemeyi ilerleme durumu ile ilgili durum bilgilerini korumak için sorumlu değildir. Bu bilgiler konumu göstergesi tutulur. Ancak, belirli bir konuma göz önüne alındığında, koleksiyon sonraki öğeye döndürmek için sorumludur.  
-  
- Aşağıdaki yordamlar MFC ile sağlanan koleksiyonları üç ana tür üzerinden yineleme gösterir:  
-  
--   [Bir dizi yineleme](#_core_to_iterate_an_array)  
-  
--   [Bir liste yineleme](#_core_to_iterate_a_list)  
-  
--   [Bir harita yineleme](#_core_to_iterate_a_map)  
-  
-### <a name="_core_to_iterate_an_array"></a> Bir dizi yinelemek için  
-  
-1.  İle sıralı dizin numaralarını kullanın `GetAt` üye fonksiyonu:  
-  
-     [!code-cpp[NVC_MFCCollections#12](../mfc/codesnippet/cpp/accessing-all-members-of-a-collection_1.cpp)]  
-  
-     Bu örnek işaretçileri içeren yazılan işaretçi bir dizi kullanır `CPerson` nesneleri. Dizi sınıfından türetilen `CObArray`, önceden tanımlı bir şablon Olmayandan sınıfları. `GetAt` bir işaretçi döndüren bir `CPerson` nesnesi. Yazılan işaretçi koleksiyon sınıfları için — diziler veya listeleri — ilk parametresi, temel sınıf; belirtir. İkinci parametre depolamak için türünü belirtir.  
-  
-     `CTypedPtrArray` Sınıfı ayrıca aşırı **[]** işleci böylece her zamanki dizi erişim öğelerini dizi alt simge sözdizimine kullanabilirsiniz. Alternatif gövdesini deyiminde **için** yukarıdaki döngüsü  
-  
-     [!code-cpp[NVC_MFCCollections#13](../mfc/codesnippet/cpp/accessing-all-members-of-a-collection_2.cpp)]  
-  
-     Bu işleci hem de mevcut **const** ve olmayan-**const** sürümleri. **Const** için çağrılan sürüm **const** dizileri, yalnızca sağ tarafta Atama ifadesinin görünebilir.  
-  
-### <a name="_core_to_iterate_a_list"></a> Bir liste yinelemek için  
-  
-1.  Üye işlevlerini `GetHeadPosition` ve `GetNext` yolunuzu listesi kullanılarak çalışmak için:  
-  
-     [!code-cpp[NVC_MFCCollections#14](../mfc/codesnippet/cpp/accessing-all-members-of-a-collection_3.cpp)]  
-  
-     Bu örnek, işaretçileri içeren için yazılan işaretçi listesini kullanır. `CPerson` nesneleri. Liste bildirimi yordamda dizi benzer [bir dizi yinelemek için](#_core_to_iterate_an_array) sınıfından türetilen ancak `CObList`. `GetNext` bir işaretçi döndüren bir `CPerson` nesnesi.  
-  
-### <a name="_core_to_iterate_a_map"></a> Bir harita yinelemek için  
-  
-1.  Kullanım `GetStartPosition` harita başlangıcına almak için ve `GetNextAssoc` art arda sonraki anahtar ve değer eşlemesinden aşağıdaki örnekte gösterildiği gibi almak için:  
-  
-     [!code-cpp[NVC_MFCCollections#15](../mfc/codesnippet/cpp/accessing-all-members-of-a-collection_4.cpp)]  
-  
-     Bu örnek bir basit harita şablonunu kullanır (yazılan işaretçi koleksiyonu yerine) kullanan `CString` anahtarları ve işaretçiler depolar `CPerson` nesneleri. Erişim işlevleri gibi kullandığınızda `GetNextAssoc`, sınıf işaretçileri sağlar `CPerson` nesneleri. Şablon Olmayandan eşleme koleksiyonları birini yerine kullanırsanız döndürülen atamalısınız `CObject` gösteren bir işaretçi işaretçi bir `CPerson`.  
-  
+
+MFC dizi koleksiyon sınıfları — şablon tabanlı değil; öğeleri erişmek için dizinler kullanın. MFC liste ve eşleme koleksiyon sınıfları — şablon tabanlı ve — türünün bir göstergesi kullanın **konumu** koleksiyonundaki belirli bir pozisyon tanımlamak için. Bir veya daha fazla bu koleksiyonların üyelerinin erişmek için ilk konum göstergesi başlatmak ve daha sonra tekrar tekrar o konumdan koleksiyona geçirin ve sonraki öğeyi döndürmek için isteyin. Toplama ilerleme durumu ile ilgili durum bilgilerini yinelemenin bakımından sorumlu değildir. Bu bilgileri, Konum göstergesi tutulur. Ancak, belirli bir konuma göz önünde bulundurulduğunda, koleksiyon sonraki öğeye döndürmekten sorumludur.
+
+Aşağıdaki yordamlar, başlıca üç türdeki MFC ile sağlanan koleksiyon üzerinden yineleme yapma gösterilmektedir:
+
+- [Bir dizi yineleme](#_core_to_iterate_an_array)
+
+- [Bir liste yineleme](#_core_to_iterate_a_list)
+
+- [Bir harita yineleme](#_core_to_iterate_a_map)
+
+### <a name="_core_to_iterate_an_array"></a> Bir dizi yineleme yapmak için
+
+1. İle sıralı dizin numaralarını kullanın `GetAt` üye işlevi:
+
+     [!code-cpp[NVC_MFCCollections#12](../mfc/codesnippet/cpp/accessing-all-members-of-a-collection_1.cpp)]
+
+     Bu örnek, işaretçileri içeren bir işaretçi türü belirlenmiş dizi kullanır `CPerson` nesneleri. Dizi sınıfından türetilir `CObArray`, önceden tanımlanmış bir şablon Olmayandan sınıfları. `GetAt` bir işaretçi döndüren bir `CPerson` nesne. İşaretçi türü belirlenmiş koleksiyon sınıfları için — diziler veya listeleri — temel sınıf; ilk parametre belirtir İkinci parametre depolamak için türünü belirtir.
+
+     `CTypedPtrArray` Sınıfı da aşırı **[]** işleci dizi öğelerine erişim için her zamanki dizi indisi sözdizimi kullanabilmesi için. Deyim gövdesine alternatif **için** yukarıdaki döngü
+
+     [!code-cpp[NVC_MFCCollections#13](../mfc/codesnippet/cpp/accessing-all-members-of-a-collection_2.cpp)]
+
+     Bu işleç ikisi de mevcut **const** ve olmayan-**const** sürümleri. **Const** için çağrılan sürüm **const** diziler, yalnızca sağ tarafta Atama ifadesinin görünebilir.
+
+### <a name="_core_to_iterate_a_list"></a> Bir liste yinelemek için
+
+1. Üye işlevlerini `GetHeadPosition` ve `GetNext` listesinde istediğiniz şekilde çalışmak için:
+
+     [!code-cpp[NVC_MFCCollections#14](../mfc/codesnippet/cpp/accessing-all-members-of-a-collection_3.cpp)]
+
+     Bu örnek, işaretçileri içeren için türü belirtilmiş işaretçi listesini kullanır. `CPerson` nesneleri. Bir dizi yordamın listesi bildirimini benzer [bir dizi yineleme yapmak için](#_core_to_iterate_an_array) sınıfından türetilen ancak `CObList`. `GetNext` bir işaretçi döndüren bir `CPerson` nesne.
+
+### <a name="_core_to_iterate_a_map"></a> Bir harita yinelemek için
+
+1. Kullanım `GetStartPosition` eşleme başına almak ve `GetNextAssoc` art arda sonraki anahtar ve değer haritasında, aşağıdaki örnekte gösterildiği gibi almak için:
+
+     [!code-cpp[NVC_MFCCollections#15](../mfc/codesnippet/cpp/accessing-all-members-of-a-collection_4.cpp)]
+
+     Bu örnekte basit harita şablonu (yazılan işaretçi koleksiyonu yerine) kullanan `CString` anahtarları ve işaretçileri depolar `CPerson` nesneleri. Erişim işlevleri gibi kullandığınızda `GetNextAssoc`, sınıf işaretçileri sağlar `CPerson` nesneleri. Şablon Olmayandan harita koleksiyonlardan biri bunun yerine kullanırsanız döndürülen dönüştürmelisiniz `CObject` işaretçisinin işaretçisi için bir `CPerson`.
+
     > [!NOTE]
-    >  Şablon Olmayandan maps için bir başvuru derleyici gerektiren bir `CObject` son parametresindeki işaretçi `GetNextAssoc`. Giriş, sonraki örnekte gösterildiği gibi bu türü işaretçileri dönüştürmeniz gerekir.  
-  
-     Şablonu çözümü daha kolaydır ve daha iyi türü güvenliğini sağlamaya yardımcı olur. Şablon Olmayandan kodu daha karmaşık aynıdır burada görebilirsiniz:  
-  
-     [!code-cpp[NVC_MFCCollections#16](../mfc/codesnippet/cpp/accessing-all-members-of-a-collection_5.cpp)]  
-  
- Daha fazla bilgi için bkz: [CObject koleksiyonundaki tüm nesneleri silme](../mfc/deleting-all-objects-in-a-cobject-collection.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Koleksiyonlar](../mfc/collections.md)
+    >  Şablon Olmayandan eşlemeleri için derleyici başvurusu gerektirir. bir `CObject` son parametresi içinde işaretçi `GetNextAssoc`. Giriş, sonraki örnekte gösterildiği gibi işaretçiler o türe dönüştürmeniz gerekir.
+
+     Şablon çözüm basittir ve daha iyi tür güvenliği sağlamaya yardımcı olur. Burada gördüğünüz gibi şablon Olmayandan kod daha karmaşık bir işlemdir:
+
+     [!code-cpp[NVC_MFCCollections#16](../mfc/codesnippet/cpp/accessing-all-members-of-a-collection_5.cpp)]
+
+Daha fazla bilgi için [CObject koleksiyonundaki tüm nesneleri silme](../mfc/deleting-all-objects-in-a-cobject-collection.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Koleksiyonlar](../mfc/collections.md)
 

@@ -18,54 +18,58 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b4e1eaf4bfca27ef22af103a5696ca2a34265d6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e62dc4ad1600b2e5cc7f955c4a419d27482bb557
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069191"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46433224"
 ---
 # <a name="invalidoversubscribeoperation-class"></a>invalid_oversubscribe_operation Sınıfı
-Bu sınıf oluşan bir özel durumu anlatmaktadır `Context::Oversubscribe` yöntemi çağrıldığında `_BeginOversubscription` parametresini `false` çağrıda olmadan `Context::Oversubscribe` yöntemiyle `_BeginOversubscription` parametresini `true`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class invalid_oversubscribe_operation : public std::exception;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[invalid_oversubscribe_operation](#ctor)|Fazla Yüklendi. Oluşturur bir `invalid_oversubscribe_operation` nesne.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `exception`  
-  
- `invalid_oversubscribe_operation`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** concrt.h  
-  
- **Namespace:** eşzamanlılık  
-  
-##  <a name="ctor"></a> invalid_oversubscribe_operation 
 
- Oluşturur bir `invalid_oversubscribe_operation` nesne.  
-  
-```  
+Bu sınıf oluşan bir özel durumu anlatmaktadır `Context::Oversubscribe` yöntemi çağrıldığında `_BeginOversubscription` parametresini `false` çağrıda olmadan `Context::Oversubscribe` yöntemiyle `_BeginOversubscription` parametresini `true`.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class invalid_oversubscribe_operation : public std::exception;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[invalid_oversubscribe_operation](#ctor)|Fazla Yüklendi. Oluşturur bir `invalid_oversubscribe_operation` nesne.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`exception`
+
+`invalid_oversubscribe_operation`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** concrt.h
+
+**Namespace:** eşzamanlılık
+
+##  <a name="ctor"></a> invalid_oversubscribe_operation
+
+Oluşturur bir `invalid_oversubscribe_operation` nesne.
+
+```
 explicit _CRTIMP invalid_oversubscribe_operation(_In_z_ const char* _Message) throw();
 
- 
 invalid_oversubscribe_operation() throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *İl_eti*<br/>
-Hatanın açıklayıcı bir iletisi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+Hatanın açıklayıcı bir iletisi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Ad Alanı](concurrency-namespace.md)

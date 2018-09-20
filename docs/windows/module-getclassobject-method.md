@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3e0c8996823de35bbfd85d595556db933f34238a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 90a1b527d12e581c42fc9519e56d453f845e0b63
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599228"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419730"
 ---
 # <a name="modulegetclassobject-method"></a>Module::GetClassObject Metodu
 
@@ -31,7 +31,7 @@ Sınıf üreteçlerini önbelleğini Retreives.
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
- HRESULT GetClassObject(
+HRESULT GetClassObject(
    REFCLSID clsid,
    REFIID riid,
    _Deref_out_ void **ppv,
@@ -41,16 +41,16 @@ Sınıf üreteçlerini önbelleğini Retreives.
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*  
+*CLSID*<br/>
 Sınıf kimliği
 
-*riid*  
+*riid*<br/>
 İstek, arabirim kimliği.
 
-*ppv*  
+*ppv*<br/>
 Döndürülen nesne işaretçisi.
 
-*SunucuAdı*  
+*SunucuAdı*<br/>
 Ya da belirtilen sunucu adı `ActivatableClassWithFactory`, `ActivatableClassWithFactoryEx`, veya `ActivatableClass` makrosu; veya **nullptr** varsayılan sunucu adı alınamıyor.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -66,4 +66,5 @@ Yalnızca COM için değil Windows çalışma zamanı bu yöntemi kullanın. Bu 
 **Namespace:** Microsoft::WRL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 [Modül Sınıfı](../windows/module-class.md)

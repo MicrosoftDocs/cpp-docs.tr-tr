@@ -21,18 +21,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f521145599a3d734a22dd3b2707ad4dd16df8e80
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7324da5eaff15d240cabbaede2c2982021361257
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345992"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410987"
 ---
 # <a name="mapping-messages"></a>Eşleme İletileri
-Kendi "ileti eşlemesi." iletileri veya komutları alabilir her framework sınıf sahiptir Çerçeve ileti eşlemeleri iletiler ve komutlar kendi işleyici işlevlerine bağlanma kullanır. Herhangi bir sınıf sınıfından türetilen `CCmdTarget` ileti eşlemesi olabilir. Diğer makaleler ayrıntılı ileti eşlemeleri açıklar ve bunların nasıl kullanılacağını açıklar.  
-  
- Her ikisi de tanıtıcı eşlemeleri ileti adı "ileti eşlemesi," tüm iletileri ve komutları — tüm üç kategoride yer iletilerinin [ileti kategorileri](../mfc/message-categories.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
+
+İletileri veya komutları alabilir her framework sınıfı olan kendi "ileti eşlemesi." Çerçeve, iletiler ve komutlar bunların işleyici işlevlerine nasıl bağlanacağını ileti eşlemelerini kullanır. Herhangi bir sınıfın türetilmiş sınıftan `CCmdTarget` ileti eşlemesi olabilir. Diğer makaleler ayrıntılı ileti eşlemeleri açıklar ve bunların nasıl kullanılacağını açıklar.
+
+Her ikisi de tanıtıcı eşlemeleri ileti adı "ileti eşlemesi," artma iletileri ve komutları — iletilerinin listelenen üç kategorinin tümü [ileti kategorileri](../mfc/message-categories.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
 

@@ -16,27 +16,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6450d99b8df436c64337e52fc14244ecbb0edfc
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0eb06a15cac87b063ada1cbe8f130b3464be0b0a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206153"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46447186"
 ---
 # <a name="adding-items-to-the-header-control"></a>Üstbilgi Denetimine Öğe Ekleme
-Sonra üstbilgi denetimi oluşturma ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) kendi üst penceresinde "gereksinim duyduğunuz kadar çok üstbilgi öğeleri" ekleyin: genellikle bir sütun başına.  
-  
-### <a name="to-add-a-header-item"></a>Üstbilgi öğesi eklemek için  
-  
-1.  Hazırlama bir [HD_ITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) yapısı.  
-  
-2.  Çağrı [CHeaderCtrl::InsertItem](../mfc/reference/cheaderctrl-class.md#insertitem), yapısı geçirme.  
-  
-3.  Adım 1 ve 2 ek öğeler için yineleyin.  
-  
- Daha fazla bilgi için [bir üstbilgi denetimine öğe ekleme](/windows/desktop/Controls/header-controls) Windows SDK.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CHeaderCtrl kullanma](../mfc/using-cheaderctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Sonra üstbilgi denetimi oluşturma ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) kendi üst penceresinde "gereksinim duyduğunuz kadar çok üstbilgi öğeleri" ekleyin: genellikle bir sütun başına.
+
+### <a name="to-add-a-header-item"></a>Üstbilgi öğesi eklemek için
+
+1. Hazırlama bir [HD_ITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) yapısı.
+
+1. Çağrı [CHeaderCtrl::InsertItem](../mfc/reference/cheaderctrl-class.md#insertitem), yapısı geçirme.
+
+1. Adım 1 ve 2 ek öğeler için yineleyin.
+
+Daha fazla bilgi için [bir üstbilgi denetimine öğe ekleme](/windows/desktop/Controls/header-controls) Windows SDK.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CHeaderCtrl Kullanma](../mfc/using-cheaderctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

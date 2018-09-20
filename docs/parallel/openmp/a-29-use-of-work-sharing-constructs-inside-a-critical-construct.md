@@ -1,5 +1,5 @@
 ---
-title: A.29 kullanın, iş paylaşım yapıları içinde critical yapı | Microsoft Docs
+title: A.29 iş paylaşım yapıları içindeki critical yapı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,35 +12,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ccbb39a9067adf545339d02fe0c05e24fbcdb0a4
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 8574687d8fa037e0adca908e3aa761a2619d26a8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691358"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46424150"
 ---
 # <a name="a29---use-of-work-sharing-constructs-inside-a-critical-construct"></a>A.29   İş Paylaşım Yapılarının critical Yapı İçinde Kullanımı
-Aşağıdaki örnek, bir iş paylaşım yapısı içinde kullanarak gösterir bir `critical` oluşturun. İş paylaşım oluşturmak için bu örnek uyumludur ve `critical` yapı aynı paralel bölgeye bağlama.  
-  
-```  
-void f()  
-{  
-  int i = 1;  
-  #pragma omp parallel sections  
-  {  
-    #pragma omp section  
-    {  
-      #pragma omp critical (name)  
-      {  
-        #pragma omp parallel  
-        {  
-          #pragma omp single  
-          {  
-            i++;  
-          }  
-        }  
-      }  
-    }  
-  }  
-}  
+
+Aşağıdaki örnek, bir iş paylaşımı yapısı içinde kullanarak gösterir. bir `critical` oluşturun. İş paylaşım oluşturmak için bu örnek uyumludur ve `critical` yapısı paralel aynı bölgeye bağlama.
+
+```
+void f()
+{
+  int i = 1;
+  #pragma omp parallel sections
+  {
+    #pragma omp section
+    {
+      #pragma omp critical (name)
+      {
+        #pragma omp parallel
+        {
+          #pragma omp single
+          {
+            i++;
+          }
+        }
+      }
+    }
+  }
+}
 ```

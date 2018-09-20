@@ -17,39 +17,42 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 422abd1c4c60b0094165587d25b7ebe825fabc38
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 55787ef1f1e3daeb8c85783958f000a2166e4e18
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695648"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46447992"
 ---
 # <a name="concurrency-runtime-best-practices"></a>Eşzamanlılık Çalışma Zamanı En İyi Yöntemleri
-Bu bölümde eşzamanlılık çalışma zamanı etkili kullanımını yapmanıza yardımcı olabilecek en iyi uygulamaları açıklar. Bu en iyi uygulamaları uygulamak [paralel Desen kitaplığı](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL) [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)ve [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Paralel Desen Kitaplığı'ndaki En İyi Yöntemler](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)  
- Paralel Desen kitaplığı (PPL) kullandığınızda izlemek için en iyi uygulamaları açıklar.  
-  
- [Zaman Uyumsuz Aracılar Kitaplığı'ndaki En İyi Yöntemler](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)  
- Zaman uyumsuz aracılar kitaplığı kullandığınızda izlemek için en iyi uygulamaları açıklar.  
-  
- [Eşzamanlılık Çalışma Zamanındaki Genel En İyi Yöntemler](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)  
- Eşzamanlılık Çalışma zamanı birden çok alanlarına uygulanan en iyi uygulamaları açıklar.  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)  
- Eşzamanlılık Çalışma zamanı C++ için eşzamanlılık çerçevesi tanıtır.  
-  
- [Paralel Desen Kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)  
- Uygulamalarınızda çeşitli paralel desen, örneğin, paralel algoritmalar kullanmayı açıklar.  
-  
- [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)  
- Uygulamalarınızda zaman uyumsuz aracılar kullanmayı açıklar.  
-  
- [Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)  
- Eşzamanlılık Çalışma zamanı sağlayan çeşitli eşitleme temelleri açıklanır.  
-  
- [Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)  
- Uygulamalarınızın performansını ayarlamak için Görev Zamanlayıcısı'nı kullanmayı açıklar.
+
+Bu bölümde, eşzamanlılık çalışma zamanı etkili kullanımını yapmanıza yardımcı olabilecek en iyi uygulamalar açıklanmaktadır. Bu en iyi yöntemleri uygulamak [paralel desenler Kitaplığı](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL) [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)ve [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[Paralel Desen Kitaplığı'ndaki En İyi Yöntemler](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)<br/>
+Paralel Desen kitaplığı (PPL) kullandığınızda uygulanacak en iyi uygulamaları açıklar.
+
+[Zaman Uyumsuz Aracılar Kitaplığı'ndaki En İyi Yöntemler](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)<br/>
+Zaman uyumsuz aracılar Kitaplığı'nı kullandığınızda izlemek için en iyi uygulamaları açıklar.
+
+[Eşzamanlılık Çalışma Zamanındaki Genel En İyi Yöntemler](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)<br/>
+Eşzamanlılık Çalışma zamanı birden çok alanlarına uygulanan en iyi uygulamaları açıklar.
+
+## <a name="related-sections"></a>İlgili Bölümler
+
+[Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)<br/>
+Eşzamanlılık Çalışma zamanı C++ için eşzamanlılık çerçevesi ortaya çıkarır.
+
+[Paralel Desen Kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>
+Çeşitli paralel desenler, örneğin, paralel algoritmalar uygulamalarınıza kullanmayı açıklar.
+
+[Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
+Zaman uyumsuz aracılar uygulamalarınızda kullanmayı açıklar.
+
+[Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)<br/>
+Eşzamanlılık Çalışma zamanı sağlayan çeşitli eşitleme temellerine açıklar.
+
+[Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
+Uygulamalarınızın performansını ayarlamak için Görev Zamanlayıcısı'nı kullanmayı açıklar.
 

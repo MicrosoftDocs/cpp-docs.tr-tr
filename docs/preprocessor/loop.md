@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e4881dfdcb92e778501982482abc13cc91836b0
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 0850a30c0e0e85cd1d90ba5b2399a295a482a3ce
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42465414"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444677"
 ---
 # <a name="loop"></a>loop
 Döngü kodunun otomatik paralel hale getirici tarafından nasıl kullanılacağını denetler ve/veya bir döngünün otomatik vektör hale getirici tarafından dikkate alınmamasını sağlar.  
@@ -57,5 +57,5 @@ Kullanılacak **döngü** pragması, hemen öncesine yerleştirin — değil; bi
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[Otomatik Paralelleştirme ve otomatik Vektörleştirme](../parallel/auto-parallelization-and-auto-vectorization.md)   
+[Otomatik Paralelleştirme ve Otomatik Vektörleştirme](../parallel/auto-parallelization-and-auto-vectorization.md)<br/>
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

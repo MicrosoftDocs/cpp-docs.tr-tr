@@ -21,54 +21,56 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74e63faf5b1cac5e0cb841a28fd59ecee47c9970
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c5b5bb50c99efc2a7b18fbbbabba394ec5330661
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383899"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378208"
 ---
 # <a name="using-property-sheets-in-your-application"></a>Uygulamanızdaki Özellik Sayfalarını Kullanma
-Özellik sayfasını, uygulamanızda kullanmak için aşağıdaki adımları tamamlayın:  
-  
-1.  Her özellik sayfası için bir iletişim şablonunu kaynağı oluşturun. Her çıkışı yerleşim sayfasında olarak tutarlı bir şekilde olabildiğince, böylece kullanıcı bir sayfadan diğerine geçişi göz önünde bulundurun.  
-  
-     Tüm sayfalar için iletişim kutusu şablonları aynı boyutta olması gerekmez. Çerçeve en büyük sayfa boyutu özellik sayfaları için özellik sayfasındaki ayırmak için ne kadar alan belirlemek için kullanır.  
-  
-     Özellik sayfası iletişim şablon kaynağı oluşturduğunuzda, aşağıdaki stiller iletişim özelliklerini özellik sayfasında belirtmeniz gerekir:  
-  
-    -   Ayarlama **resim yazısı** üzerinde düzenleme kutusu **genel** sayfa için bu sayfayı sekmesindeki görünmesini istediğiniz metin.  
-  
-    -   Ayarlama **stili** liste kutusunu **stilleri** sayfasına **alt**.  
-  
-    -   Ayarlama **kenarlık** liste kutusunu **stilleri** sayfasına **ince**.  
-  
-    -   Emin **Titlebar** onay kutusunu **stilleri** sayfa seçilidir.  
-  
-    -   Emin **devre dışı** onay kutusunu **daha fazla stil** sayfa seçilidir.  
-  
-2.  Oluşturma bir [CPropertyPage](../mfc/reference/cpropertypage-class.md)-türetilmiş her bir özellik sayfası iletişim şablon karşılık gelen sınıf. Bkz: [sınıf ekleme](../ide/adding-a-class-visual-cpp.md). Seçin `CPropertyPage` temel sınıf olarak.  
-  
-3.  Üye bu özellik sayfası için değerleri tutması için değişkenleri oluşturun. Özelleştirilmiş bir iletişim kutusu bir özellik sayfası olduğu için üye değişkenleri için özellik sayfası ekleme işlemi tam olarak bir iletişim kutusu için üye değişkenleri ekleme aynıdır. Daha fazla bilgi için bkz: [iletişim kutusu denetimleri için üye değişkenleri tanımlama](../windows/defining-member-variables-for-dialog-controls.md).  
-  
-4.  Oluşturmak bir [CPropertySheet](../mfc/reference/cpropertysheet-class.md) kaynak kodunuzu nesne. Genellikle, oluşturmak `CPropertySheet` özellik sayfasını görüntüler komut işleyici nesnesi. Bu nesnenin tüm özellik sayfasını temsil eder. Kalıcı özellik sayfası ile oluşturursanız [DoModal](../mfc/reference/cpropertysheet-class.md#domodal) işlevi, framework varsayılan olarak üç komut düğmesi sağlar: Tamam, iptal et ve Uygula. Kalıcı olmayan özellik sayfaları ile oluşturulan için hiçbir komut düğmeleri framework oluşturur [oluşturma](../mfc/reference/cpropertysheet-class.md#create) işlevi. Öğesinden bir sınıf türetin gerekmez `CPropertySheet` (örneğin, bir önizleme penceresi) diğer denetimleri ekleme ya da kalıcı olmayan özellik sayfasını görüntülemek istediğiniz sürece. Özellik sayfasını kapatmak için kullanılabilir tüm varsayılan denetimler içermediğinden kalıcı olmayan özellik sayfaları için bu adım gereklidir.  
-  
-5.  Özellik sayfasına eklenecek her bir sayfa için aşağıdakileri yapın:  
-  
-    -   Her biri için bir nesne oluşturmak `CPropertyPage`-türetilen bu işlemde daha önce oluşturduğunuz sınıfı.  
-  
-    -   Çağrı [CPropertySheet::AddPage](../mfc/reference/cpropertysheet-class.md#addpage) her sayfa için.  
-  
-     Genellikle, oluşturur nesne `CPropertySheet` da oluşturur `CPropertyPage` Bu adımda nesneleri. Ancak, uygulamanız varsa bir `CPropertySheet`-türetilmiş sınıf, katıştırmak `CPropertyPage` nesnelerini `CPropertySheet` nesne ve çağrı `AddPage` her sayfasından için `CPropertySheet`-türetilmiş sınıf oluşturucu. `AddPage` ekler `CPropertyPage` nesne özelliği sayfanın sayfaları listesine ancak aslında bu sayfa için pencere oluşturmaz. Bu nedenle, çağırmak için özellik sayfası penceresi oluşturma kadar beklenecek gerekli değil `AddPage`; çağırabilirsiniz `AddPage` özelliği sayfanın oluşturucusundan.  
-  
-     Bir özellik sayfası özellik sayfasını, tek bir satır sığmayacak kadar çok daha fazla sekme varsa, varsayılan olarak, birden çok satır sekmeleri yığın. Yığınlama devre dışı bırakmak için çağrı [CPropertySheet::EnableStackedTabs](../mfc/reference/cpropertysheet-class.md#enablestackedtabs) kümesine parametresiyle **FALSE**. Çağırmalısınız `EnableStackedTabs` özellik sayfası oluşturduğunuzda.  
-  
-6.  Çağrı [CPropertySheet::DoModal](../mfc/reference/cpropertysheet-class.md#domodal) veya [oluşturma](../mfc/reference/cpropertysheet-class.md#create) özellik sayfasını görüntülemek için. Çağrı `DoModal` modal bir iletişim kutusu olarak bir özellik sayfası oluşturmak için. Çağrı **oluşturma** kalıcı olmayan iletişim kutusu olarak özellik sayfası oluşturmak için.  
-  
-7.  Özellik sayfaları ve özellik sayfasını sahibi arasında veri değişimi. Bu makalede açıklanan [veri değişimi](../mfc/exchanging-data.md).  
-  
- MFC genel örnek özellik sayfalarını kullanma örneği için bkz: [PROPDLG](../visual-cpp-samples.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özellik sayfaları](../mfc/property-sheets-mfc.md)
+
+Bir özellik sayfası kullanmak için aşağıdaki adımları tamamlayın:
+
+1. Her bir özellik sayfası için bir iletişim şablonunu kaynağı oluşturun. Her çıkış yerleşim sayfası olarak tutarlı bir şekilde olabildiğince, böylece kullanıcı bir sayfadan diğerine geçiş göz önünde bulundurun.
+
+     Tüm sayfalar için iletişim kutusu şablonları aynı boyutta olması gerekmez. Framework, özellik sayfaları için özellik sayfası ayırmak için ne kadar alan belirlemek için sayfanın en büyük boyutunu kullanır.
+
+     Özellik sayfası iletişim şablon kaynağı oluşturduğunuzda, aşağıdaki stilleri Dialog özellikleri özellik sayfasında belirtmeniz gerekir:
+
+   - Ayarlama **açıklamalı alt yazı** üzerinde düzenleme kutusu **genel** sayfasına bu sayfa için sekmesinde görünmesini istediğiniz metin.
+
+   - Ayarlama **stili** liste kutusunu **stilleri** sayfasına **alt**.
+
+   - Ayarlama **kenarlık** liste kutusunu **stilleri** sayfasına **ince**.
+
+   - Emin **Titlebar** onay kutusunu **stilleri** sayfası seçili.
+
+   - Emin **devre dışı bırakılmış** onay kutusunu **daha fazla stil** sayfası seçili.
+
+1. Oluşturma bir [CPropertyPage](../mfc/reference/cpropertypage-class.md)-türetilmiş sınıf karşılık gelen her bir özellik sayfası iletişim şablonu. Bkz: [sınıf ekleme](../ide/adding-a-class-visual-cpp.md). Seçin `CPropertyPage` temel sınıf olarak.
+
+1. Üye, bu özellik sayfası için değerleri tutması için değişkenleri oluşturun. Özelleştirilmiş bir iletişim kutusu bir özellik sayfası olduğu için üye değişkenleri için özellik sayfası ekleme işlemi tam olarak bir iletişim kutusu için üye değişkenleri ekleme aynıdır. Daha fazla bilgi için [iletişim kutusu denetimleri için üye değişkenleri tanımlama](../windows/defining-member-variables-for-dialog-controls.md).
+
+1. Oluşturmak bir [CPropertySheet](../mfc/reference/cpropertysheet-class.md) , kaynak kodunuzdaki nesne. Genellikle, işlevi `CPropertySheet` özellik sayfası görüntüler komut işleyicisi nesnesi. Bu nesne tüm özellik sayfasını temsil eder. Bir kalıcı özellik sayfasını ile oluşturursanız [DoModal](../mfc/reference/cpropertysheet-class.md#domodal) işlevi, framework, varsayılan olarak üç komut düğmeleri sağlar: Tamam, iptal et ve Uygula. Kalıcı olmayan özellik sayfaları ile oluşturulan hiçbir komut düğmeleri framework oluşturur [Oluştur](../mfc/reference/cpropertysheet-class.md#create) işlevi. Öğesinden bir sınıf türetin gerekmez `CPropertySheet` diğer denetimler (örneğin, bir önizleme penceresi) ekleyebilir veya kalıcı olmayan özellik sayfası görüntülemek istediğiniz sürece. Özellik sayfasını kapatmak için kullanılabilecek herhangi bir varsayılan denetim içermez çünkü kalıcı olmayan özellik sayfaları için bu adım gereklidir.
+
+1. Özellik sayfasına eklenecek her sayfa için aşağıdakileri yapın:
+
+   - Her biri için bir nesne oluşturmak `CPropertyPage`-türetilmiş bu işlemde daha önce oluşturduğunuz sınıfı.
+
+   - Çağrı [CPropertySheet::AddPage](../mfc/reference/cpropertysheet-class.md#addpage) her sayfa için.
+
+     Genellikle, oluşturan nesne `CPropertySheet` da oluşturur `CPropertyPage` Bu adımda nesneleri. Ancak, uygularsanız bir `CPropertySheet`-türetilmiş sınıf, katıştırabilirsiniz `CPropertyPage` nesneler `CPropertySheet` nesne ve çağrı `AddPage` her sayfadan için `CPropertySheet`-türetilmiş sınıf oluşturucu. `AddPage` ekler `CPropertyPage` nesne özelliği sayfanın sayfalar listesine ancak aslında bu sayfanın penceresini oluşturmaz. Bu nedenle, çağırmak için özellik sayfası pencerenin oluşturulmasını kadar beklenecek gerekli değil `AddPage`; çağırabilirsiniz `AddPage` özelliği sayfanın oluşturucudan.
+
+     Özellik sayfasını, tek bir satır sığmayacak kadar çok daha fazla sekme bir özellik sayfası varsa, varsayılan olarak, sekmeleri birden çok satır yığın. Yığınlama devre dışı bırakmak için çağrı [CPropertySheet::EnableStackedTabs](../mfc/reference/cpropertysheet-class.md#enablestackedtabs) ayarlanan parametre ile **FALSE**. Çağırmalısınız `EnableStackedTabs` özellik sayfası oluşturduğunuzda.
+
+1. Çağrı [CPropertySheet::DoModal](../mfc/reference/cpropertysheet-class.md#domodal) veya [Oluştur](../mfc/reference/cpropertysheet-class.md#create) özellik sayfasını görüntülemek için. Çağrı `DoModal` kalıcı bir iletişim kutusu olarak bir özellik sayfası oluşturmak için. Çağrı **Oluştur** modsuz iletişim kutusu olarak özellik sayfası oluşturma.
+
+1. Özellik sayfaları ve özellik sayfasının sahibi arasında veri değişimi. Bu makalede açıklanan [veri değişimi](../mfc/exchanging-data.md).
+
+MFC genel örnek özellik sayfalarını kullanma örneği için bkz. [PROPDLG](../visual-cpp-samples.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Özellik sayfaları](../mfc/property-sheets-mfc.md)
 

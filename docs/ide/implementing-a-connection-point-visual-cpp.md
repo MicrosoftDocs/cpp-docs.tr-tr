@@ -1,5 +1,5 @@
 ---
-title: Bir bağlantı noktası (Visual C++) uygulama | Microsoft Docs
+title: (Visual C++) bağlantı noktasını uygulama | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,53 +15,55 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b75bf145da401ad9889353a1e65448831c602c9
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 9bba7fdfd44b0a0a97a6d110d2a44b492e1ca449
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33328353"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46429337"
 ---
 # <a name="implementing-a-connection-point-visual-c"></a>Bağlantı Noktasını Uygulama (Visual C++)
-Uygulama bağlantı noktası Sihirbazı'nı kullanarak bir bağlantı noktası uygulamak için bir proje ATL COM uygulamanın veya ATL desteği içeren bir MFC uygulaması olarak oluşturmuş olmanız gerekir. Kullanabileceğiniz [ATL Proje Sihirbazı](../atl/reference/atl-project-wizard.md) bir ATL uygulama oluşturmak için veya [ATL nesne MFC uygulamanıza eklemek](../mfc/reference/adding-atl-support-to-your-mfc-project.md) MFC uygulaması için ATL desteği uygulamak için.  
-  
+
+Uygulama bağlantı noktası Sihirbazı'nı kullanarak bir bağlantı noktası uygulamak için bir proje ATL desteği içeren bir MFC uygulaması olarak veya bir ATL COM uygulaması oluşturmuş olmanız gerekir. Kullanabileceğiniz [ATL projesi Sihirbazı](../atl/reference/atl-project-wizard.md) bir ATL uygulama oluşturmak için veya [MFC uygulamanıza bir ATL nesnesi eklemek](../mfc/reference/adding-atl-support-to-your-mfc-project.md) bir MFC uygulaması için ATL desteği uygulamak için.
+
 > [!NOTE]
->  Bağlantı noktaları için bir MFC projesine uygulama hakkında daha fazla bilgi için bkz: [bağlantı noktaları](../mfc/connection-points.md).  
-  
- Bir bağlantı noktası uygulama projesi oluşturduktan sonra bir ATL nesne eklemeniz gerekir. Bkz: [nesneleri ekleme ve denetimleri için ATL projesinde](../atl/reference/adding-objects-and-controls-to-an-atl-project.md) nesneleri ATL projenize ekleyin sihirbazları listesi.  
-  
+>  Bağlantı noktaları için bir MFC projesine uygulanması hakkında daha fazla bilgi için bkz: [bağlantı noktaları](../mfc/connection-points.md).
+
+Bir bağlantı noktası uygulamak için projeyi oluşturduktan sonra ATL nesneyi eklemeniz gerekir. Bkz [nesneler ekleme ve denetimleri için ATL projesinde](../atl/reference/adding-objects-and-controls-to-an-atl-project.md) , ATL projesine nesne eklemek sihirbazları listesi.
+
 > [!NOTE]
->  Sihirbaz ATL iletişim kutuları, ATL Sunucu, performans nesneleri ve performans sayaçları ile oluşturulan XML Web Hizmetleri desteklemiyor.  
-  
- Bağlanılabilirlik nesne (diğer bir deyişle, bir kaynak) bir bağlantı noktası her giden arabirimlerinden getirebilir. Her giden arabirimi, bir nesne (diğer bir deyişle, bir havuz) istemci tarafından uygulanabilir. Daha fazla bilgi için bkz: [ATL bağlantı noktaları](../atl/atl-connection-points.md).  
-  
-### <a name="to-implement-a-connection-point"></a>Bir bağlantı noktası uygulamak için  
-  
-1.  Sınıf Görünümü'nde ATL nesnesi için sınıf adını sağ tıklatın.  
-  
-2.  Tıklatın **Ekle** kısayol menüsünden ve ardından **bağlantı noktası ekleme** görüntülemek için [bağlantı noktası Uygulama Sihirbazı](../ide/implement-connection-point-wizard.md).  
-  
-3.  ' I tıklatın ve uygun tür kitaplıklarından uygulanması için bağlantı noktası arabirimi seçin **son**.  
-  
-4.  Sınıf Görünümü'nde, her bağlantı noktası için oluşturulan proxy sınıfları inceleyin. Sınıflar CProxy görünür*InterfaceName*\<T > ve türetilmiş [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md).  
-  
-5.  Bağlantı noktası sınıfı bağlantı noktasının sınıfının tanımını görüntülemek için çift tıklayın.  
-  
-    -   Kendi projenin arabirimi için bir bağlantı noktası uygularsanız, aşağıdaki tanımını görüntülenir  
-  
-        ```  
-        template< class T >  
-        class CProxyInterfaceName :  
-           public IConnectionPointImpl< T, &IID_InterfaceName >  
-        {  
-        public:  
-        };  
-        ```  
-  
-         Bir yerel arabirime uygularsanız, yöntemleri ve özellikleri sınıfı gövdesinde yer.  
-  
-    -   Bir bağlantı noktası başka bir arabirim için uygularsanız, arabirimin yöntem tanımını içerir, her önünde `Fire_`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md)   
- [Bir Nesneye Bağlantı Noktaları Ekleme](../atl/adding-connection-points-to-an-object.md)
+>  ATL iletişim kutuları, ATL Sunucu, performans nesneleri ve performans sayaçları ile oluşturulan XML Web Hizmetleri Sihirbazı'nı desteklemez.
+
+Bağlanılabilirlik bir nesne (diğer bir deyişle, bir kaynak), her giden arabirimlerinden biri için bir bağlantı noktası kullanıma sunabilirsiniz. Giden her arabirim bir istemcide bir nesnenin (diğer bir deyişle, bir havuz) tarafından uygulanabilir. Daha fazla bilgi için [ATL bağlantı noktaları](../atl/atl-connection-points.md).
+
+### <a name="to-implement-a-connection-point"></a>Bir bağlantı noktası uygulamak için
+
+1. Sınıf Görünümü'nde, ATL nesneniz için sınıf adına sağ tıklayın.
+
+1. Tıklayın **Ekle** kısayol menüsünü ve ardından **bağlantı noktası Ekle** görüntülenecek [bağlantı noktası Uygulama Sihirbazı](../ide/implement-connection-point-wizard.md).
+
+1. Uygun tür kitaplıklarından uygulamak ve bağlantı noktası arabirimleri seçin **son**.
+
+1. Sınıf Görünümü'nde, oluşturulan her bağlantı noktası için proxy sınıfları inceleyin. Sınıflar CProxy görünür*InterfaceName*\<T > ve türetilmiş [Iconnectionpointımpl](../atl/reference/iconnectionpointimpl-class.md).
+
+1. Bağlantı noktası sınıfı bağlantı noktasının sınıfının tanımını görüntülemek için çift tıklayın.
+
+   - Kendi projenin arabirimi için bir bağlantı noktası uygularsanız, aşağıdaki tanımını görünür.
+
+        ```
+        template< class T >
+        class CProxyInterfaceName :
+           public IConnectionPointImpl< T, &IID_InterfaceName >
+        {
+        public:
+        };
+        ```
+
+         If you implement a local interface, methods and properties appear in the class body.
+
+   - Başka bir arabirim için bir bağlantı noktası uygularsanız, arabirimin yöntemlerinin tanımı içerir, her önüne `Fire_`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md)<br>
+[Bir Nesneye Bağlantı Noktaları Ekleme](../atl/adding-connection-points-to-an-object.md)

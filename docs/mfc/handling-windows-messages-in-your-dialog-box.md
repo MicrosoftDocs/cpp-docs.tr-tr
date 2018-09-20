@@ -16,18 +16,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7adaa21be5aada2de4cb5a4dd883e591e066185
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b8773f7b93c67441fdf1cf6b6b992b152da14619
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343814"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46401023"
 ---
 # <a name="handling-windows-messages-in-your-dialog-box"></a>İletişim Kutunuzda Windows İletilerini İşleme
-Uygun işleyici işlevleri sağlarsanız Windows iletileri işleyebilmesi için windows, iletişim kutusu vardır. İletişim sınıfınızı sınıf Ekleme Sihirbazı'nı oluşturduğunuzda, sihirbaz sınıfına bir boş ileti eşlemesi ekler. Herhangi bir Windows iletilerini veya işlemek için sınıfınız istediğiniz komutlarını eşlemek için Özellikler penceresini kullanın.  
-  
- Bkz: [eşleme Windows iletilerini bilgisayarınızı iletişim kutusu sınıflarına](../mfc/mapping-windows-messages-to-your-class.md) daha fazla bilgi için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+
+İletişim kutuları windows olduğundan, uygun bir işleyici işlevleri sağlarsanız Windows iletileri işleyebilir. İletişim sınıfınızı sınıf Ekleme Sihirbazı'nı oluşturduğunuzda, sihirbaz sınıfına bir boş ileti eşlemesi ekler. Windows iletileri ya da komutları işlemek için kendi sınıfınızı istediğiniz eşlemek için Özellikler penceresini kullanın.
+
+Bkz: [bilgisayarınızı iletişim kutusu sınıfı Windows iletilerini eşleme](../mfc/mapping-windows-messages-to-your-class.md) daha fazla bilgi için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
 

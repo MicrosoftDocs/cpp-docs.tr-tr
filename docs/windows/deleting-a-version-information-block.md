@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b3d7a3b64a612000eb25f2f72cd289caf7692f7b
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 6951904f0a579017c5a5a76f7fd8ba798017a34b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315008"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425060"
 ---
 # <a name="deleting-a-version-information-block-c"></a>Sürüm bilgi bloğu (C++) siliniyor
 
@@ -47,5 +47,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sürüm Bilgileri Düzenleyicisi](../windows/version-information-editor.md)  
+[Sürüm Bilgileri Düzenleyicisi](../windows/version-information-editor.md)<br/>
 [Sürüm bilgileri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)

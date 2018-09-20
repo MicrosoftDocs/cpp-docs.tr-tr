@@ -16,36 +16,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee629d9dcffc80ce20306989cad72d466722af87
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: bbac4b372f06f288eede8c578372d45334a5d707
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37123337"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427530"
 ---
 # <a name="dhtmlurleventmapentry-structure"></a>DHtmlUrlEventMapEntry Yapısı
-`DHtmlUrlEventMapEntry` Yapısı çok URL olay eşlemesi desteği sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-struct DHtmlUrlEventMapEntry  
-{  
-LPCTSTR szUrl;  
-const DHtmlEventMapEntry *pEventMap;  
-};  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *szUrl*  
- URL.  
-  
- *pEventMap*  
- URL ile ilişkili olay eşlemesi.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxdhtml.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
+
+`DHtmlUrlEventMapEntry` Yapısı çok URL'li olay eşleme desteği sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+struct DHtmlUrlEventMapEntry
+{
+LPCTSTR szUrl;
+const DHtmlEventMapEntry *pEventMap;
+};
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*szUrl*<br/>
+URL.
+
+*pEventMap*<br/>
+Olay eşlemesi URL'si ile ilişkili.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxdhtml.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
 

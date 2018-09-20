@@ -16,47 +16,49 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d76717e68e37769cf55dceb4492ed78031c49e10
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 5db5170b6c946e4bfeda99a3275f045a07fc9beb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36928230"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435226"
 ---
 # <a name="containers-client-item-notifications"></a>Kapsayıcılar: İstemci Öğesi Bildirimleri
-Bu makalede, sunucu uygulamaları istemci uygulamanızın belge öğelerini değiştirdiğinizde, MFC çerçevesi çağıran geçersiz kılınabilir işlevler açıklanmaktadır.  
-  
- [COleClientItem](../mfc/reference/coleclientitem-class.md) sunucu uygulaması olarak da bilinir bileşen uygulamasından isteklerine yanıt olarak adlandırılan birden fazla geçersiz kılınabilir işlevler tanımlar. Bu geçersiz kılınabilir genellikle bildirimleri olarak davranır. Bunlar, kaydırma, etkinleştirme gibi çeşitli olayları veya bir değişiklik konumunu ve kullanıcı düzenlerken veya aksi halde öğesi düzenleme yaptığı değişiklikler kapsayıcı uygulamasının bildirin.  
-  
- Kapsayıcı uygulamanızı çağrısıyla değişiklikleri framework bildirir `COleClientItem::OnChange`, geçersiz kılınabilir bir işlevi olan uygulaması gereklidir. Bu korumalı işlevi iki bağımsız değişkeni alır. İlk öğe sunucu değişti nedenini belirtir:  
-  
-|Bildirim|Açıklama|  
-|------------------|-------------|  
-|**OLE_CHANGED**|OLE öğesi'nin görünümü değiştirilmiştir.|  
-|**OLE_SAVED**|OLE öğesi kaydedildi.|  
-|**OLE_CLOSED**|OLE öğesi kapatıldı.|  
-|**OLE_RENAMED**|OLE öğesi içeren sunucu belgeyi yeniden adlandırıldı.|  
-|**OLE_CHANGED_STATE**|OLE öğesi bir durumdan diğerine değişti.|  
-|**OLE_CHANGED_ASPECT**|OLE öğesi'nin çizim en boy çerçevesi tarafından değiştirildi.|  
-  
- Bu değerleri arasındadır **OLE_NOTIFICATION** AFXOLE içinde tanımlanan numaralandırması. H.  
-  
- Bu işlevin ikinci bağımsız değişken öğe nasıl değiştiğini veya ne girilen durum belirtir:  
-  
-|İlk bağımsız değişken olduğunda|İkinci bağımsız değişken|  
-|----------------------------|---------------------|  
-|**OLE_SAVED** veya **OLE_CLOSED**|Kullanılmaz.|  
-|**OLE_CHANGED**|Değişti OLE öğesi yönünü belirtir.|  
-|**OLE_CHANGED_STATE**|Girilen durumu açıklar (*emptyState*, *loadedState*, *openState*, *activeState*, veya  *activeUIState*).|  
-  
- Bir istemci öğesi varsayabilirsiniz durumları hakkında daha fazla bilgi için bkz: [kapsayıcılar: istemci öğesi durumları](../mfc/containers-client-item-states.md).  
-  
- Framework çağrıları `COleClientItem::OnGetItemPosition` ne zaman bir öğe etkinleştiriliyor yerinde düzenleme için. Uygulama yerinde düzenleme destekleyen uygulamalar için gereklidir. MFC Uygulama Sihirbazı'nı öğesi'nin koordinatlara atar temel bir uygulama sağlar `CRect` bağımsız değişken olarak geçirilen nesne `OnGetItemPosition`.  
-  
- OLE öğenin konum veya boyut yerinde düzenleme sırasında değişirse, kapsayıcının bilgilerini öğesi'nin konumu ve kırpma dikdörtgenler güncelleştirilmesi gerekir ve sunucu değişiklikler hakkında bilgi alması gerekir. Framework çağrıları `COleClientItem::OnChangeItemPosition` bu amaç için. MFC Uygulama Sihirbazı'nı temel sınıfın işlevi çağıran bir geçersiz kılma sağlar. İçin Uygulama Sihirbazı'nı Yazar işlevi düzenlemeniz gerekir, `COleClientItem`-işlevi istemci öğesi nesnesi tarafından korunduğunu herhangi bir bilgi güncelleştirilebilmesi için türetilmiş sınıf.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kapsayıcıları](../mfc/containers.md)   
- [Kapsayıcılar: İstemci öğesi durumları](../mfc/containers-client-item-states.md)   
- [COleClientItem::OnChangeItemPosition](../mfc/reference/coleclientitem-class.md#onchangeitemposition)
+
+Bu makalede, sunucu uygulamaları, istemci uygulamanızın belgedeki öğelerini değiştirdiğinizde, MFC çerçevesi çağıran geçersiz kılınabilir işlevler açıklanmaktadır.
+
+[Coleclientıtem](../mfc/reference/coleclientitem-class.md) sunucu uygulaması olarak da bilinir bileşeni uygulamadan gelen isteklere yanıt olarak adlandırılan birden fazla geçersiz kılınabilir işlevler tanımlar. Bu geçersiz kılınabilen öğelerle ilgili genellikle bildirimleri olarak davranır. Bunlar, kaydırma, etkinleştirme gibi çeşitli olayları ya da bir değişiklik konumu ve düzenlerken veya aksi halde öğe düzenleme kullanıcının yaptığı değişiklikleri kapsayıcı uygulaması bildirin.
+
+Kapsayıcı uygulamanızı değişiklik yapılan bir çağrıyla framework bildirir `COleClientItem::OnChange`, bir geçersiz kılınabilir işlevi uygulaması gereklidir. Bu korumalı işlevi iki bağımsız değişken alır. İlk öğe değiştirdik nedeni belirtir:
+
+|Bildirim|Açıklama|
+|------------------|-------------|
+|**OLE_CHANGED**|OLE öğesinin görünümünü değişti.|
+|**OLE_SAVED**|OLE öğesini kaydedildi.|
+|**OLE_CLOSED**|OLE öğesini kapatıldı.|
+|**OLE_RENAMED**|OLE öğesini içeren sunucu belgeyi yeniden adlandırıldı.|
+|**OLE_CHANGED_STATE**|OLE öğesini bir durumdan diğerine değişti.|
+|**OLE_CHANGED_ASPECT**|OLE öğesinin çizim en boy framework tarafından değiştirildi.|
+
+Bu değerleri arasındadır **OLE_NOTIFICATION** AFXOLE içinde tanımlanan sabit listesi. H
+
+Bu işlevin ikinci bağımsız değişkeni, öğe nasıl değiştiğini veya ne geçtiğinde tüketilen durum belirtir:
+
+|İlk bağımsız değişken olduğunda|İkinci bağımsız değişkeni|
+|----------------------------|---------------------|
+|**OLE_SAVED** veya **OLE_CLOSED**|Kullanılmaz.|
+|**OLE_CHANGED**|OLE öğesinin değişmiş en boy belirtir.|
+|**OLE_CHANGED_STATE**|Girilen durumunu açıklar (*emptyState*, *loadedState*, *openState*, *activeState*, veya  *activeUIState*).|
+
+İstemci öğesi varsayabilirsiniz durumları hakkında daha fazla bilgi için bkz. [kapsayıcılar: istemci öğesi durumları](../mfc/containers-client-item-states.md).
+
+Framework çağrıları `COleClientItem::OnGetItemPosition` ne zaman bir öğe etkinleştirilmekte yerinde düzenleme için. Uygulama, yerinde düzenleme destekleyen uygulamalar için gereklidir. MFC Uygulama Sihirbazı öğenin koordinatlarına atar temel uygulamaları sağlar `CRect` bağımsız değişken olarak geçirilen nesne `OnGetItemPosition`.
+
+Bir OLE öğesinin konumunu veya boyutu yerinde düzenleme sırasında değişirse, öğenin konumunu ve kırpma dikdörtgenler hakkında kapsayıcının bilgilerinin güncelleştirilmesi ve sunucu değişiklikleri konusunda bilgi alması gerekir. Framework çağrıları `COleClientItem::OnChangeItemPosition` bu amaç için. MFC Uygulama Sihirbazı, temel sınıfın işlevi çağıran bir geçersiz kılma sağlar. Uygulama Sihirbazı için yazar işlevi düzenlemeniz gerekir, `COleClientItem`-işlevi, istemci öğesi nesne tarafından tutulan herhangi bir bilgi güncelleştirilebilmesi için türetilmiş sınıf.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kapsayıcılar](../mfc/containers.md)<br/>
+[Kapsayıcılar: İstemci Öğesi Durumları](../mfc/containers-client-item-states.md)<br/>
+[COleClientItem::OnChangeItemPosition](../mfc/reference/coleclientitem-class.md#onchangeitemposition)
 

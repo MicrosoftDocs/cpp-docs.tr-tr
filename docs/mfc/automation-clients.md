@@ -17,36 +17,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a29b11028df84a7e5e67adb7588386f77adcff06
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: cca4818d0ace6270b986ddb9b99068ca9532f1b2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929045"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46395524"
 ---
 # <a name="automation-clients"></a>Otomasyon İstemcileri
-Otomasyon nesneleri başka bir uygulamaya uygulanan işlemek için ya da bunlar işlenebilir nesnelerini ortaya çıkarmak için uygulamanız için mümkün kılar. Bir otomasyon istemci, başka bir uygulamaya ait gösterilen nesneleri işleyebileceğiniz bir uygulamadır. Nesneleri gösteren uygulama Otomasyon sunucusu adı verilir. İstemci, bu nesnelerin özelliklerini ve işlevlerini erişerek sunucu uygulamasının nesneleri yönetir.  
-  
-### <a name="types-of-automation-clients"></a>Otomasyon istemcileri türleri  
- Otomasyon istemcileri iki tür vardır:  
-  
--   İstemciler, dinamik olarak (çalışma zamanında) özelliklerini ve sunucu işlemlerini hakkında bilgi edinin.  
-  
--   Özelliklerini ve sunucu işlemlerini belirtir statik bilgileri (derleme zamanında sağlanır) sahip istemciler.  
-  
- İlk tür istemcileri OLE sistemin sorgulayarak sunucunun yöntemleri ve özellikleri hakkında bilgi alma `IDispatch` mekanizması. Dinamik istemciler için kullanmak yeterli olmakla `IDispatch` burada güdümlü gereken bilinen adresindeki nesneleri derleme zamanı statik istemciler için kullanılacak zordur. Statik bağlı istemciler için Microsoft Foundation sınıfları sağlayan [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md) sınıfı.  
-  
- Statik bağımlı istemciler istemci uygulama ile statik olarak bağlantılı bir proxy sınıfını kullanın. Bu sınıf, bir tür kullanımı uyumlu C++ kapsülleme sunucu uygulamasının özelliklerini ve işlemlerin sağlar.  
-  
- Sınıf `COleDispatchDriver` asıl otomasyon istemci tarafı desteği sağlar. Kullanarak **Yeni Öğe Ekle** iletişim kutusunda, oluşturduğunuz türetilmiş bir sınıf `COleDispatchDriver`.  
-  
- Ardından, özelliklerini ve işlevlerini sunucu uygulamasının nesnesinin açıklayan tür kitaplığı dosya de belirtin. Öğe Ekle iletişim kutusunda bu dosyasını okur ve oluşturur `COleDispatchDriver`-türetilmiş bir tür kullanımı uyumlu şekilde c++ sunucu uygulamasının nesnelere erişmek için uygulamanız çağırabilir üye işlevleri ile sınıf. Ek işlevsellik devralınan `COleDispatchDriver` uygun Otomasyon sunucusu çağırma işlemini basitleştirir.  
-  
-### <a name="handling-events-in-automation-clients"></a>Otomasyon istemcileri olayları işleme  
- Otomasyon İstemcisi'nde olayları işlemek istiyorsanız, bir havuz arabirimi eklemeniz gerekir. MFC ActiveX denetimleri için havuz arabirimlerini ekleyin, ancak diğer COM sunucuları için desteklemiyor için sihirbaz desteği sağlar. COM sunucuları tarafından tanımlanan kaynak arabirimleri için MFC istemcisinde bir havuz arabirimi ekleme hakkında daha fazla bilgi için bkz: nasıl yapılır: MFC-Based COM istemcisi (KB 181845) havuz arabiriminde oluşturmak [ http://support.microsoft.com/default.aspxscid=kb; en-us; 181845](http://support.microsoft.com/default.aspxscid=kb;en-us;181845).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Otomasyon istemcileri: Tür kitaplıklarını kullanma](../mfc/automation-clients-using-type-libraries.md)   
- [Otomasyon](../mfc/automation.md)   
- [MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md)
+
+Otomasyon, uygulamanız nesneleri başka bir uygulamaya uygulanan değiştirmek ya da bunlar işlenebilir nesneleri kullanıma sunmak için mümkün kılar. Bir otomasyon istemci, sunulan nesneleri başka bir uygulamaya ait işleyebileceğiniz bir uygulamadır. Nesneleri ortaya koyan uygulamayı Otomasyon sunucusu olarak adlandırılır. İstemci, sunucu uygulamasının nesneleri bu nesnelerin özellikleri ve işlevleri erişerek yönetir.
+
+### <a name="types-of-automation-clients"></a>Otomasyon istemcileri türleri
+
+Otomasyon istemcileri iki tür vardır:
+
+- İstemciler, dinamik olarak (çalışma zamanında) işlem sunucusunun ve özellikleri hakkında bilgi edinin.
+
+- Özellik ve sunucu işlemlerini belirtir (derleme zamanında sağlanan) statik bilgilerini sahip istemcilerin.
+
+İlk tür istemcileri OLE sistemin sorgulayarak sunucunun yöntemleri ve özellikleri hakkında bilgi edinme `IDispatch` mekanizması. Dinamik istemciler için yeterli olmakla `IDispatch` temelli gerekir bilinir, nesneleri derleme zamanı burada statik istemciler için kullanılacak zordur. Statik bağlı istemciler için Microsoft Foundation sınıfları sağlayan [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md) sınıfı.
+
+Statik bağlı istemciler, istemci uygulaması ile statik olarak bağlanan bir proxy sınıfı kullanır. Bu sınıf, bir tür kullanımı uyumlu C++ kapsülleme sunucu uygulamasının özellikleri ve işlemleri sağlar.
+
+Sınıf `COleDispatchDriver` asıl otomasyon istemci tarafı desteği sağlar. Kullanarak **Yeni Öğe Ekle** iletişim kutusu, türetilen bir sınıf oluşturma `COleDispatchDriver`.
+
+Ardından sunucu uygulamasının nesnesinin işlevlerini ve özelliklerini açıklayan tür kitaplığı dosyası belirtin. Öğe Ekle iletişim kutusunda bu dosyasını okur ve oluşturur `COleDispatchDriver`-türetilmiş bir tür kullanımı uyumlu şekilde sunucu uygulamasının nesnelerinin C++ erişmek için uygulamanızı çağırabilir üye işlevleri ile bir sınıf. Ek işlevler öğesinden devralınan `COleDispatchDriver` uygun Otomasyon sunucusu çağırma işlemini basitleştirir.
+
+### <a name="handling-events-in-automation-clients"></a>Otomasyon istemcileri olayları işleme
+
+Otomasyon istemcinizi olayları işlemek istiyorsanız, bir havuzu arabirimini eklemeniz gerekir. MFC ActiveX denetimleri için havuz arabirimler, ancak diğer COM sunucuları için desteklemiyor için sihirbaz desteği sağlar. COM sunucuları tarafından tanımlanan kaynak arabirimleri için MFC istemcisinde havuzu arabirimini ekleme hakkında daha fazla bilgi için bkz: nasıl yapılır: MFC-Based COM istemcisi (KB 181845) havuz arabiriminde oluşturmak [ http://support.microsoft.com/default.aspxscid=kb; en-us; 181845](http://support.microsoft.com/default.aspxscid=kb;en-us;181845).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma](../mfc/automation-clients-using-type-libraries.md)<br/>
+[Otomatikleştirme](../mfc/automation.md)<br/>
+[MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md)
 

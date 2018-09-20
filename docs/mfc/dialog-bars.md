@@ -18,28 +18,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7c68ca2725d25b493003ad7d847176c7dd8d17d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ed0e773dda8a1a31a028a0b6c5e349b2e3655982
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348813"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46401504"
 ---
 # <a name="dialog-bars"></a>İletişim Kutusu Çubukları
-Bir iletişim çubuğu araç, bir tür olduğundan, [denetim çubuğu](../mfc/control-bars.md) herhangi bir tür denetimi içerebilir. Kalıcı olmayan iletişim kutusunun özelliklere sahip olduğu bir [CDialogBar](../mfc/reference/cdialogbar-class.md) nesnesi, daha güçlü bir araç sağlar.  
-  
- Araç çubuğu arasında birkaç önemli farklılıklar vardır ve bir `CDialogBar` nesnesi. A `CDialogBar` nesnesi ile Visual C++ iletişim kutusu Düzenleyicisi oluşturabilir ve herhangi bir tür Windows denetimi içerebilir bir iletişim şablonunu kaynaktan, oluşturulur. Kullanıcı denetimine denetiminden sekmesinde. Ve bir hizalama stili üst çerçeve penceresi herhangi bir kısmını ile iletişim çubuğu hizalama veya üst boyutlandırılır durumunda bile yerinde bırakın belirtebilirsiniz. Bir iletişim çubuğu denetimleri çeşitli ile aşağıdaki şekilde gösterilmiştir.  
-  
- ![VC iletişim çubuğu](../mfc/media/vc378t1.gif "vc378t1")  
-Bir iletişim çubuğu  
-  
- İle çalışma diğer bakımlardan bir `CDialogBar` nesnesidir kalıcı olmayan iletişim kutusu ile çalışmayı gibi. Tasarım ve iletişim kutusu kaynağı oluşturmak için iletişim kutusu düzenleyicisi kullanın.  
-  
- İletişim kutusu çubukları virtues düğmeleri dışında denetimlerini içerebilir biridir.  
-  
- Kendi iletişim sınıflarından normal olsa `CDialog`, genellikle bir iletişim çubuğu için kendi sınıf türetin değil. İletişim kutusu çubukları olan bir ana penceresi ve herhangi bir iletişim çubuğu denetim bildirimi iletileri uzantılar gibi **BN_CLICKED** veya **EN_CHANGE**, iletişim kutusu çubuğu, ana pencereyi üst gönderilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)   
- [Örnek](../visual-cpp-samples.md)
+
+Bir iletişim çubuğu bir araç, bir tür olduğundan, [denetim çubuğu](../mfc/control-bars.md) herhangi bir denetim türü içerebilir. Modsuz iletişim kutusu, özelliklerine sahip olduğu bir [CDialogBar](../mfc/reference/cdialogbar-class.md) nesnesi, daha güçlü bir araç sağlar.
+
+Araç çubuğu arasında bazı önemli farklılıklar vardır ve bir `CDialogBar` nesne. A `CDialogBar` nesnesi, Visual C++ iletişim kutusu Düzenleyicisi ile oluşturabileceğiniz ve herhangi bir Windows Denetim türü içerebilecek bir iletişim şablonunu kaynaktan, oluşturulur. Kullanıcı denetiminden denetlemek için sekmesinde. Ve bir hizalama Stili iletişim çubuğu ana çerçeve penceresinin herhangi bir bölümü ile hizalamak için veya hatta bunu yerinde bırakmanız üst boyutlandırılırsa belirtebilirsiniz. Aşağıdaki şekilde bir iletişim çubuğu çeşitli denetimleri gösterir.
+
+![VC iletişim çubuğu](../mfc/media/vc378t1.gif "vc378t1") bir iletişim çubuğu
+
+İle çalışma, diğer bakımdan bir `CDialogBar` nesnedir modsuz iletişim kutusu ile çalışmak gibidir. Tasarım ve iletişim kaynağını oluşturma iletişim kutusu düzenleyicisini kullanın.
+
+İletişim kutusu çubukları, virtues düğmeleri dışında denetimleri içerebilir biridir.
+
+Kendi iletişim sınıflarından normal olsa `CDialog`, genellikle bir iletişim çubuğu için kendi sınıfınızı türetilen değil. İletişim kutusu çubukları olan ana pencere ve herhangi bir iletişim çubuğu denetim bildirimi iletileri için uzantıları gibi **BN_CLICKED** veya **EN_CHANGE**, çubuk, ana pencereyi iletişim kutusunun üst gönderilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)<br/>
+[Örnek](../visual-cpp-samples.md)
 

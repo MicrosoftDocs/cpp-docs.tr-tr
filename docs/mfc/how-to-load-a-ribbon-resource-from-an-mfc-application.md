@@ -14,38 +14,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b014e1725ae6c5043c051242a74e29338c3ef2d6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1643989a96a9003847fb53de624bff12cd51cd88
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344197"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46434303"
 ---
 # <a name="how-to-load-a-ribbon-resource-from-an-mfc-application"></a>Nasıl yapılır: Bir MFC Uygulamasından Şerit Kaynağı Yükleme
-Şerit kaynağı, uygulamanızda kullanmak için uygulamanın Şerit kaynağı yükleme için değiştirin.  
-  
-### <a name="to-load-a-ribbon-resource"></a>Şerit kaynağı yüklenemiyor  
-  
-1.  Bildirme `Ribbon Control` nesnesinde `CMainFrame` sınıfı.  
-  
- ```  
-    CMFCRibbonBar m_wndRibbonBar;   
- ```  
-  
-2.  İçinde `CMainFrame::OnCreate`oluşturun ve Şerit denetimi başlatılamıyor.  
-  
- ```  
-    if (!m_wndRibbonBar.Create (this))  
- {  
-    return -1;  
- }  
- 
-    if (!m_wndRibbonBar.LoadFromResource(IDR_RIBBON))  
- {  
-    return -1;  
- }  
- ```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md)
+
+Şerit kaynağını kullanmak için Şerit kaynağı yükleme için değiştirin.
+
+### <a name="to-load-a-ribbon-resource"></a>Bir Şerit kaynağı yükleme için
+
+1. Bildirme `Ribbon Control` nesnesine `CMainFrame` sınıfı.
+
+```
+    CMFCRibbonBar m_wndRibbonBar;
+```
+
+1. İçinde `CMainFrame::OnCreate`, oluşturun ve Şerit denetimi başlatılamıyor.
+
+```
+    if (!m_wndRibbonBar.Create (this))
+{
+    return -1;
+}
+
+    if (!m_wndRibbonBar.LoadFromResource(IDR_RIBBON))
+{
+    return -1;
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md)
 

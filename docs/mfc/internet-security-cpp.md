@@ -23,22 +23,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4454eceae2cc5f2e6b46510fe95889c664a568a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1f5beba4f9a33a5bd9ee93baae6176d3ea592d2e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348857"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46445821"
 ---
 # <a name="internet-security-c"></a>Internet Güvenliği (C++)
-Kod güvenliği bir Internet uygulamaları kullanıcılarının ve geliştiriciler için başlıca sorunudur. Riskleri vardır: kötü amaçlı kod, üzerinde oynanmış kodu ve bilinmeyen siteleri veya yazarları koddan.  
-  
- Internet için geliştirirken güvenlik temel iki yaklaşım vardır. İlk "korumalı alan." olarak adlandırılır Bu yaklaşım, uygulamanın belirli bir API kümesi kısıtlanmış ve bir programı bir kullanıcının bilgisayarında verileri nerede yok edebilir dosya g/ç gibi potansiyel olarak tehlikeli olabilecek olanlar dışında tutulması. İkincisi, dijital imzalar kullanılarak uygulanır. Bu yaklaşım için "shrinkwrap" Internet'te denir. Kod doğrulanır ve özel anahtarı/ortak anahtar teknolojisini kullanarak imzalanmış. Kod çalıştırmadan önce dijital imzası kodun bilinen bir kimliği doğrulanmış kaynaktan olduğunu ve oturumunuz kapatıldı beri'nın kodunu değiştirilmediğini emin olmak için doğrulanır.  
-  
- İlk durumda uygulama herhangi bir zarar ne yapacağını ve uygulama kökeni güven güven. İkinci, dijital imzalar orijinalliğini doğrulamak için kullanılır. Dijital imza tanımlamak ve kod yayımcısı hakkındaki ayrıntıları sağlamak için kullanılan bir endüstri standardıdır. Kendi teknolojisi RSA ve X.509 dahil olmak üzere standartlarını temel alır. Tarayıcılar, genellikle kullanıcıların bunlar indirin ve bilinmeyen kaynak kodu çalıştırmak isteyip istemediğinizi seçin izin verin.  
-  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC Internet programlama görevleri](../mfc/mfc-internet-programming-tasks.md)   
- [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)
+
+Kod güvenliği geliştiriciler ve kullanıcılar Internet uygulamaları için önemli bir sorun var. Riskleri vardır: kötü amaçlı kod, üzerinde oynanmış kod ve bilinmeyen siteleri veya yazarlar koddan.
+
+İnternet'e geliştirirken güvenlik için iki temel yaklaşım vardır. İlk "korumalı alana alma." olarak adlandırılır Bu yaklaşımda, bir uygulama belirli bir API kümesi için kısıtlı ve potansiyel olarak tehlikeli olabilecek olanlar gibi bir program, verileri bir kullanıcının bilgisayarında nereye yok edebilir ve dosya g/ç dışında tutulması. İkincisi, dijital imzalar kullanılarak uygulanır. Bu yaklaşım için "shrinkwrap" İnternet'e adlandırılır. Kod doğrulanır ve özel anahtarı/genel anahtar teknolojisi kullanılarak imzalanmış. Kod çalıştırmadan önce kodu bilinen bir kimliği doğrulanmış kaynaktan olduğunu ve imzalanmış olduğundan'ın kodunu değiştirilmediğinden emin olmak için dijital imzasını doğrulandı.
+
+Bu durumda, uygulamanın herhangi bir zarar yapmaz ve uygulama kaynağı güven güven. İkinci, dijital imzalar, orjinalliği doğrulamak için kullanılır. Dijital imza tanımlamak ve kod yayımcısı ayrıntılarını sağlamak için kullanılan bir endüstri standardıdır. Bu teknoloji, RSA ve X.509 dahil olmak üzere standartlarını temel alır. Tarayıcılar, genellikle bunlar indirip bilinmeyen kaynaklardan gelen kodu çalıştırmak isteyip istemediklerini açmasına imkan tanıyın.
+
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)<br/>
+[MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)
 

@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d301f2bc7464d52be643d252e4febf7049657c2b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f001f61a9425a064d3b899beb6cbb689471da5bf
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724782"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442597"
 ---
 # <a name="event--c-component-extensions"></a>olay (C++ Bileşen Uzantıları)
 
@@ -50,19 +50,19 @@ modifiereventdelegate^ event_name
 
 ### <a name="parameters"></a>Parametreler
 
-*Değiştiricisi*  
+*Değiştiricisi*<br/>
 Olay bildirimi ya da bir olay erişimci yöntemi kullanılabilir değiştiricisi.  Olası değerler **statik** ve **sanal**.
 
-*delegate*  
+*delegate*<br/>
 [Temsilci](../windows/delegate-cpp-component-extensions.md), imzası olan olay işleyicisi eşleşmesi gerekir.
 
-*EVENT_NAME*  
+*EVENT_NAME*<br/>
 Olayın adı.
 
-*return_value*  
+*return_value*<br/>
 Olay erişimci yöntemi dönüş değeri.  Doğrulanabilir için dönüş türü olmalıdır **void**.
 
-*Parametreleri*  
+*Parametreleri*<br/>
 (isteğe bağlı) Parametreler için `raise` imzası eşleşen yöntemi *temsilci* parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -71,10 +71,10 @@ Bir olay bir temsilci olayı harekete yanıt verir ve imza ile uyumlu ve dönü�
 
 Olay bildirimleri iki tür vardır:
 
-*olay veri üyesi*  
+*olay veri üyesi*<br/>
 Derleyicinin otomatik olarak depolama olayı için temsilci türünün üyesi biçiminde oluşturur ve iç oluşturur `add()`, `remove()`, ve `raise()` üye işlevleri. Bir olay veri üyesi bir sınıf içinde bildirilmesi gerekir. Dönüş türünü temsilcinin dönüş türünü dönüş türü olay işleyicisinin eşleşmesi gerekir.
 
-*Olay bloğu*  
+*Olay bloğu*<br/>
 Açıkça bildirmek ve davranışını özelleştirmek bir olay bloğu sağlar `add()`, `remove()`, ve `raise()` yöntemleri.
 
 Kullanabileceğiniz **işleçleri +=** ve **-= işleci** ekleme ve kaldırma olay işleyicisi veya çağrı `add()` ve `remove()` yöntemleri açıkça.
@@ -114,19 +114,19 @@ modifiereventdelegate^ event_name
 
 ### <a name="parameters"></a>Parametreler
 
-*Değiştiricisi*  
+*Değiştiricisi*<br/>
 Olay bildirimi ya da bir olay erişimci yöntemi kullanılabilir değiştiricisi.  Olası değerler **statik** ve **sanal**.
 
-*delegate*  
+*delegate*<br/>
 [Temsilci](../windows/delegate-cpp-component-extensions.md), imzası olan olay işleyicisi eşleşmesi gerekir.
 
-*EVENT_NAME*  
+*EVENT_NAME*<br/>
 Olayın adı.
 
-*return_value*  
+*return_value*<br/>
 Olay erişimci yöntemi dönüş değeri.  Doğrulanabilir için dönüş türü olmalıdır **void**.
 
-*Parametreleri*  
+*Parametreleri*<br/>
 (isteğe bağlı) Parametreler için `raise` imzası eşleşen yöntemi *temsilci* parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -137,10 +137,10 @@ Temsilci, kodunuzu olayın oluştuğunu gösteriyorsa, çağrılacak bir veya da
 
 Olay bildirimleri iki tür vardır:
 
-*olay veri üyesi*  
+*olay veri üyesi*<br/>
 Temsilci türünün üyesi biçiminde bir olay için depolama, veri üyesi olayları için derleyici tarafından oluşturulur.  Bir olay veri üyesi bir sınıf içinde bildirilmesi gerekir. Önemsiz bir olay olarak da bilinen budur (aşağıdaki kod örneğine bakın.)
 
-*Olay blokları*  
+*Olay blokları*<br/>
 Olay blokları Ekle, remove ve raise yöntemleri uygulayarak Ekle, remove ve raise yöntemleri davranışını özelleştirmenizi sağlar. İmza Ekle, Kaldır ve raise yöntemlerinin temsilcisinin imzasıyla eşleşmelidir.  Olay bloğu olaylar veri üyesi olmayan ve herhangi bir kullanımından veri üyesi olarak bir derleme hatasına neden olur.
 
 Olay işleyicisi dönüş türünü temsilcinin dönüş türü eşleşmelidir.

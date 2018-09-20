@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7abdc8f2deee962dc6ee5bcfa9857efb6f0bd847
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e0c6e860fa5d7633bd334d0c0a35d25936104636
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593910"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427712"
 ---
 # <a name="constraints-on-generic-type-parameters-ccli"></a>Genel Tür Parametrelerindeki Kısıtlamalar (C++/CLI)
 
@@ -39,10 +39,10 @@ where type-parameter: constraint list
 
 ### <a name="parameters"></a>Parametreler
 
-*tür-parametresi*  
+*tür-parametresi*<br/>
 Kısıtlı için tür parametrelerinden biri.
 
-*sınırlama listesi*  
+*sınırlama listesi*<br/>
 *sınırlama listesi* kısıtlaması belirtimleri, virgülle ayrılmış listesidir. Liste türü parametresi tarafından uygulanacak arabirim içerebilir.
 
 Listeden bir sınıf de içerebilir. Bir taban sınıfı kısıtlamasını karşılamak tür bağımsız değişkeni, kısıtlama aynı sınıfta olması veya kısıtlamasından türetilen olmalıdır.

@@ -12,14 +12,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 019e63009706fd5d0ab22044642449c5bce3c3a6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 84aded46176c1c286ce5270254a0455dfce39d5d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222387"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427887"
 ---
 # <a name="porting-guide-spy"></a>Taşıma Kılavuzu: Spy++
+
 Bu taşıma örnek olay incelemesi, hangi normal bir taşıma projesinin benzer bir fikir vermek için tasarlanmıştır, karşılaşabileceğiniz sorunları türlerini ve bazı genel ipuçları ve püf noktaları bağlantı noktası oluşturma sorunları ele almak için. Bu proje taşıma deneyimi kod ayrıntılarına bağlı çok bağlı olduğundan taşıma için eksiksiz bir kılavuz olacak şekilde tasarlanmış değil.  
   
 ## <a name="spy"></a>Spy++  
@@ -74,7 +75,7 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxv_w32.h
   
 Onu hedefleyen Visual Studio 2015'te kullanılabilir olsa bile,, uygulamalarınızda desteği geçirebileceğinizden ve kullanıcılarınızın Windows yeni sürümlerini benimsemeye teşvik Windows XP artık Microsoft tarafından desteklenir.  
   
- Hatadan kurtulmak için WINVER güncelleştirerek tanımlamanız **proje özellikleri** şu anda hedeflemek istediğiniz Windows için en düşük sürümünü ayarlama. Çeşitli Windows sürümleri için değerlerinin bir tablosunu bulun [burada](/windows/desktop/WinProg/using-the-windows-headers).  
+Hatadan kurtulmak için WINVER güncelleştirerek tanımlamanız **proje özellikleri** şu anda hedeflemek istediğiniz Windows için en düşük sürümünü ayarlama. Çeşitli Windows sürümleri için değerlerinin bir tablosunu bulun [burada](/windows/desktop/WinProg/using-the-windows-headers).  
   
 Bu makro tanımları bazıları stdafx.h dosyası içeriyor.  
   
@@ -551,7 +552,7 @@ wsprintf(szTmp, _T("%d.%2.2d.%4.4d"), rmj, rmm, rup);
   
 _T makro bir dize sabit değeri derleme olarak yapma etkisi bir **char** dize veya bir **wchar_t** UNICODE ve MBCS ayara bağlı olarak bir dize. Visual Studio'da _T tüm dizeleri değiştirmek için önce açın **hızlı Değiştir** (klavye: **Ctrl**+**F**) kutusunu veya **dosyalarda Değiştir**  (Klavye: **Ctrl**+**Shift**+**H**), ardından **normal kullanım İfadeleri** onay kutusu. Girin `((\".*?\")|('.+?'))` arama metni olarak ve `_T($1)` yerine konacak metin olarak. Zaten sahip olduğunuz bazı dizeler _T makrosu, bu yordamı, yeniden ekleyeceksiniz ve kullandığınızda gibi _T, istediğiniz durumlarda da bulabilirsiniz `#include`, kullanmak en iyisidir **Değiştir** yerine  **Tümünü Değiştir**.  
   
- Bu belirli işlev [wsprintf](/windows/desktop/api/winuser/nf-winuser-wsprintfa), bu, olası arabellek taşması nedeniyle kullanılmaması önerir için gerçekten Windows üstbilgiler ve belgeleri tanımlanır. Boyut için verilen `szTmp` arabellek vardır, bu nedenle arabellek için yazılmış veri tutabilen denetlenecek işlevine yönelik bir yolu yoktur. Güvenliğini size benzer diğer sorunları gidermek CRT'ye, taşıma hakkında sonraki bölüme bakın. İle değiştirerek sona [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md).  
+Bu belirli işlev [wsprintf](/windows/desktop/api/winuser/nf-winuser-wsprintfa), bu, olası arabellek taşması nedeniyle kullanılmaması önerir için gerçekten Windows üstbilgiler ve belgeleri tanımlanır. Boyut için verilen `szTmp` arabellek vardır, bu nedenle arabellek için yazılmış veri tutabilen denetlenecek işlevine yönelik bir yolu yoktur. Güvenliğini size benzer diğer sorunları gidermek CRT'ye, taşıma hakkında sonraki bölüme bakın. İle değiştirerek sona [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md).  
   
 Başka bir yaygın hata Unicode'a dönüştürürken göreceğiniz budur.  
   
@@ -680,5 +681,5 @@ Spy ++ son derleyicinin özgün Visual C++ 6.0 kod taşıma zamanı çalıştıy
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
-[Taşıma ve yükseltme: örnekler ve örnek olay incelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)   
+[Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
 [Önceki örnek olay incelemesi: COM Spy](../porting/porting-guide-com-spy.md)

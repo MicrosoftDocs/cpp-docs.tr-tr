@@ -18,109 +18,118 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51e9b34252b2a3fa7d097914360b9ee24baa8301
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 53ea81b7668f9d0786cf84a5e46cc9d86f429b44
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850871"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46383616"
 ---
 # <a name="cmultipagedhtmldialog-class"></a>CMultiPageDHtmlDialog sınıfı
-Birden çok sayfa iletişim birden çok HTML sayfasını sıralı olarak görüntüler ve her sayfadaki olayları işler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CMultiPageDHtmlDialog : public CDHtmlDialog  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CMultiPageDHtmlDialog::CMultiPageDHtmlDialog](#cmultipagedhtmldialog)|Birden çok sayfa (Sihirbazı stili) DHTML iletişim nesnesi oluşturur.|  
-|[CMultiPageDHtmlDialog:: ~ CMultiPageDHtmlDialog](#cmultipagedhtmldialog__~cmultipagedhtmldialog)|Bir çok sayfalı DHTML iletişim nesnesini yok eder.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bunu yapmak için bir mekanizma bir [DHTML ve URL olay eşlemesi](dhtml-event-maps.md), her sayfa için olay eşlemeleri içeren katıştırılmış.  
-  
-## <a name="example"></a>Örnek  
- Bu çok sayfalı iletişim basit Sihirbazı benzeri işlevsellik tanımlayan üç HTML kaynak varsayar. İlk sayfanın bir **sonraki** düğme, ikinci bir **önceki** ve **sonraki** düğmesi ve üçüncü bir **önceki** düğmesi. Düğmelerden birine basıldığında işleyici işlevi çağıran [CDHtmlDialog::LoadFromResource](../../mfc/reference/cdhtmldialog-class.md#loadfromresource) uygun yeni sayfa yüklenemiyor.  
-  
- Sınıf bildiriminde (CMyMultiPageDlg.h) ilgili bölümleri:  
-  
- [!code-cpp[NVC_MFCDocView#181](../../mfc/codesnippet/cpp/cmultipagedhtmldialog-class_1.h)]  
-  
- Sınıf uygulamasında (CMyMultipageDlg.cpp) ilgili bölümleri:  
-  
- [!code-cpp[NVC_MFCDocView#182](../../mfc/codesnippet/cpp/cmultipagedhtmldialog-class_2.cpp)]  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- `CDHtmlSinkHandlerBase2`  
-  
- `CDHtmlSinkHandlerBase1`  
-  
- [CCmdTarget](../../mfc/reference/ccmdtarget-class.md)  
-  
- `CDHtmlSinkHandler`  
-  
- [CWnd](../../mfc/reference/cwnd-class.md)  
-  
- `CDHtmlEventSink`  
-  
- [CDialog](../../mfc/reference/cdialog-class.md)  
-  
- [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md)  
-  
- `CMultiPageDHtmlDialog`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxdhtml.h  
-  
-##  <a name="cmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog::CMultiPageDHtmlDialog  
- Birden çok sayfa (Sihirbazı stili) DHTML iletişim nesnesi oluşturur.  
-  
-```  
+
+Birden çok sayfa iletişim birden çok HTML sayfasını sıralı olarak görüntüler ve her sayfadaki olayları işler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CMultiPageDHtmlDialog : public CDHtmlDialog
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CMultiPageDHtmlDialog::CMultiPageDHtmlDialog](#cmultipagedhtmldialog)|Birden çok sayfa (Sihirbazı stili) DHTML iletişim nesnesi oluşturur.|
+|[CMultiPageDHtmlDialog:: ~ CMultiPageDHtmlDialog](#cmultipagedhtmldialog__~cmultipagedhtmldialog)|Bir çok sayfalı DHTML iletişim nesnesini yok eder.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bunu yapmak için bir mekanizma bir [DHTML ve URL olay eşlemesi](dhtml-event-maps.md), her sayfa için olay eşlemeleri içeren katıştırılmış.
+
+## <a name="example"></a>Örnek
+
+Bu çok sayfalı iletişim basit Sihirbazı benzeri işlevsellik tanımlayan üç HTML kaynak varsayar. İlk sayfanın bir **sonraki** düğme, ikinci bir **önceki** ve **sonraki** düğmesi ve üçüncü bir **önceki** düğmesi. Düğmelerden birine basıldığında işleyici işlevi çağıran [CDHtmlDialog::LoadFromResource](../../mfc/reference/cdhtmldialog-class.md#loadfromresource) uygun yeni sayfa yüklenemiyor.
+
+Sınıf bildiriminde (CMyMultiPageDlg.h) ilgili bölümleri:
+
+[!code-cpp[NVC_MFCDocView#181](../../mfc/codesnippet/cpp/cmultipagedhtmldialog-class_1.h)]
+
+Sınıf uygulamasında (CMyMultipageDlg.cpp) ilgili bölümleri:
+
+[!code-cpp[NVC_MFCDocView#182](../../mfc/codesnippet/cpp/cmultipagedhtmldialog-class_2.cpp)]
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+`CDHtmlSinkHandlerBase2`
+
+`CDHtmlSinkHandlerBase1`
+
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+
+`CDHtmlSinkHandler`
+
+[CWnd](../../mfc/reference/cwnd-class.md)
+
+`CDHtmlEventSink`
+
+[CDialog](../../mfc/reference/cdialog-class.md)
+
+[CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md)
+
+`CMultiPageDHtmlDialog`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxdhtml.h
+
+##  <a name="cmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog::CMultiPageDHtmlDialog
+
+Birden çok sayfa (Sihirbazı stili) DHTML iletişim nesnesi oluşturur.
+
+```
 CMultiPageDHtmlDialog(
-    LPCTSTR lpszTemplateName,  
-    LPCTSTR szHtmlResID = NULL,  
+    LPCTSTR lpszTemplateName,
+    LPCTSTR szHtmlResID = NULL,
     CWnd* pParentWnd = NULL);
 
- 
+
 CMultiPageDHtmlDialog(
-    UINT nIDTemplate,  
-    UINT nHtmlResID = 0,  
-    CWnd* pParentWnd = NULL);  
-  
+    UINT nIDTemplate,
+    UINT nHtmlResID = 0,
+    CWnd* pParentWnd = NULL);
+
 CMultiPageDHtmlDialog();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *lpszTemplateName*  
- Bir iletişim kutusu şablonu kaynak adı null ile sonlandırılmış bir dize.  
-  
- *szHtmlResID*  
- Bir HTML kaynak adı null ile sonlandırılmış bir dize.  
-  
- *pParentWnd*  
- Üst veya sahibi pencere nesnesi için bir işaretçi (tür [CWnd](../../mfc/reference/cwnd-class.md)) ait olduğu iletişim nesnesi. NULL ise, ana uygulama penceresini iletişim nesnenin üst penceresine ayarlanır.  
-  
- *nIDTemplate*  
- Bir iletişim kutusu şablon kaynağı kimliği numarasını içerir.  
-  
- *nHtmlResID*  
- Bir HTML kaynağının kimliği numarasını içerir.  
-  
-##  <a name="_dtorcmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog:: ~ CMultiPageDHtmlDialog  
- Bir çok sayfalı DHTML iletişim nesnesini yok eder.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*lpszTemplateName*<br/>
+Bir iletişim kutusu şablonu kaynak adı null ile sonlandırılmış bir dize.
+
+*szHtmlResID*<br/>
+Bir HTML kaynak adı null ile sonlandırılmış bir dize.
+
+*pParentWnd*<br/>
+Üst veya sahibi pencere nesnesi için bir işaretçi (tür [CWnd](../../mfc/reference/cwnd-class.md)) ait olduğu iletişim nesnesi. NULL ise, ana uygulama penceresini iletişim nesnenin üst penceresine ayarlanır.
+
+*nIDTemplate*<br/>
+Bir iletişim kutusu şablon kaynağı kimliği numarasını içerir.
+
+*nHtmlResID*<br/>
+Bir HTML kaynağının kimliği numarasını içerir.
+
+##  <a name="_dtorcmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog:: ~ CMultiPageDHtmlDialog
+
+Bir çok sayfalı DHTML iletişim nesnesini yok eder.
+
+```
 virtual ~CMultiPageDHtmlDialog();
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CDHtmlDialog Sınıfı](../../mfc/reference/cdhtmldialog-class.md)
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CDHtmlDialog Sınıfı](../../mfc/reference/cdhtmldialog-class.md)

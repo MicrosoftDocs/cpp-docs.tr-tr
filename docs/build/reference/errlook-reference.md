@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8646ad544b6c481ea394add9e6e8faa82919e15
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 09db7dbb2af9294e215ab60c716f73eee821b29a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725042"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46438580"
 ---
 # <a name="errlook-reference"></a>ERRLOOK Başvurusu
 
@@ -30,14 +30,19 @@ Hızlandırıcı tuşları kopyala (CTRL + C), Kes (CTRL + X) ve Yapıştır (CT
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Değer düzenleme denetimi](../../build/reference/value-edit-control.md) ERRLOOK değer düzenleme denetimi açıklar.
+[Değer Düzenleme Denetimi](../../build/reference/value-edit-control.md)<br/>
+ERRLOOK değer düzenleme denetimi açıklar.
 
-[Hata iletisi düzenleme denetimi](../../build/reference/error-message-edit-control.md) ERRLOOK hata iletisi düzenleme denetimi açıklar.
+[Hata İletisi Düzenleme Denetimi](../../build/reference/error-message-edit-control.md)<br/>
+ERRLOOK hata iletisi düzenleme denetimi açıklar.
 
-[Modüller düğmesi](../../build/reference/modules-button.md) ERRLOOK modülleri düğmeye açıklar.
+[Modüller Düğmesi](../../build/reference/modules-button.md)<br/>
+Modüller düğmesi ERRLOOK açıklar.
 
-[Düğme Ara](../../build/reference/look-up-button.md) ERRLOOK Ara düğmesine açıklar.
+[Ara Düğmesi](../../build/reference/look-up-button.md)<br/>
+ERRLOOK Ara düğmesine açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[C/C++ derleme Araçları](../../build/reference/c-cpp-build-tools.md) derleme araçları Visual C++'da sağlanan C/C++ açıklayan konulara bağlantılar sağlar.
+[C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)<br/>
+Derleme araçları Visual C++'da sağlanan C/C++ açıklayan konulara bağlantılar sağlar.

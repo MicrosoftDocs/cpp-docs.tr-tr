@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f554d6d3369f94c5f4e9409d9f6af9a65935fc42
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: dcf9e9a6264f7c58cd0f44573e3b0be81b15f068
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313540"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446536"
 ---
 # <a name="changing-the-properties-of-a-toolbar-button-c"></a>(C++) araç çubuğu düğmesi özelliklerini değiştirme
 
@@ -41,6 +41,6 @@ MFC veya ATL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Araç Çubuğu Düğmesi Özellikleri](../windows/toolbar-button-properties.md)  
-[Araç Çubuğu Düğmelerini Oluşturma, Taşıma ve Düzenleme](../windows/creating-moving-and-editing-toolbar-buttons.md)  
+[Araç Çubuğu Düğmesi Özellikleri](../windows/toolbar-button-properties.md)<br/>
+[Araç Çubuğu Düğmelerini Oluşturma, Taşıma ve Düzenleme](../windows/creating-moving-and-editing-toolbar-buttons.md)<br/>
 [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)

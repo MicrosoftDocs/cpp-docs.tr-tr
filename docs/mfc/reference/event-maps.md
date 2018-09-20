@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 21b9efe8fc1ce5cb7ab90edd30b38253d44dabc0
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 2f937c2cdaa4bb7f31b39b8a28c657274830fc36
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106814"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446614"
 ---
 # <a name="event-maps"></a>Olay Eşlemeleri
 
@@ -89,10 +89,10 @@ BEGIN_EVENT_MAP(theClass,  baseClass)
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*  
+*Sınıfın*<br/>
 Bu olayı harita denetimi sınıfın adını belirtir.
 
-*baseClass*  
+*baseClass*<br/>
 Taban sınıfının adını belirtir *sınıfın*.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -127,13 +127,13 @@ EVENT_CUSTOM(pszName, pfnFire,  vtsParams)
 
 ### <a name="parameters"></a>Parametreler
 
-*pszName*  
+*pszName*<br/>
 Olayın adı.
 
-*pfnFire*  
+*pfnFire*<br/>
 İşlev olay adı.
 
-*vtsParams*  
+*vtsParams*<br/>
 İşlevin parametre listesi belirten bir veya daha fazla sabitleri boşlukla ayrılmış listesi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -197,16 +197,16 @@ EVENT_CUSTOM_ID(
 
 ### <a name="parameters"></a>Parametreler
 
-*pszName*  
+*pszName*<br/>
 Olayın adı.
 
-*DISPID*  
+*DISPID*<br/>
 Olay tetikleme denetim tarafından kullanılan dağıtım kimliği.
 
-*pfnFire*  
+*pfnFire*<br/>
 İşlev olay adı.
 
-*vtsParams*  
+*vtsParams*<br/>
 Olay tetiklendiğinde parametrelerinin bir değişken listesi denetimi kapsayıcıya geçirildi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -268,10 +268,10 @@ ON_STDOLEVERB(iVerb, memberFxn)
 
 ### <a name="parameters"></a>Parametreler
 
-*iVerb*  
+*iVerb*<br/>
 Geçersiz kılınmasını fiil için standart fiili dizini.
 
-*memberFxn*  
+*memberFxn*<br/>
 Framework tarafından fiil çağrıldığında çağrılan işlev.
 
 ### <a name="remarks"></a>Açıklamalar

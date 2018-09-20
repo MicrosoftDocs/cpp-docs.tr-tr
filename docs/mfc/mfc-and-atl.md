@@ -12,28 +12,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 081414d3835a8a6efcc831b6c303b774361b743b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e6533738100f68c1133e21e0fc8c537e1cd7d270
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347740"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46384266"
 ---
 # <a name="mfc-and-atl"></a>MFC ve ATL
-Microsoft Foundation sınıfları (MFC) yerel Masaüstü uygulamaları hızlı geliştirme için Win32 nesne yönelimli bir C++ kapsayıcı sağlar. Etkin Şablon kitaplığı (ATL), COM Geliştirme basitleştirir ve ActiveX denetimleri oluşturmak için yaygın kullanılan bir sarmalayıcı kitaplıktır.  
-  
-MFC veya ATL programı Visual Studio Community sürümü veya üzeri oluşturabilirsiniz. Express sürümleri MFC ve ATL desteklemez 
 
-Visual Studio 2015 ' te Visual C++ isteğe bağlı bir bileşenidir ve MFC ve ATL bileşenleri isteğe bağlı alt Visual C++ altında bileşenlerdir. Visual Studio'ı ilk yüklediğinizde bu bileşenlerin seçmezseniz bir MFC ya da ATL projesi oluşturma veya açma girişiminde ilk kez yüklerken istenir.  
+Microsoft Foundation Classes (MFC) Win32 C++ nesne yönelimli bir sarmalayıcı yerel Masaüstü uygulamaları için hızlı geliştirme sağlar. Etkin Şablon kitaplığı (ATL) COM geliştirmesini basitleştiren ve yaygın olarak ActiveX denetimleri oluşturmak için kullanılan bir sarmalayıcı kitaplıktır.
 
-Visual Studio 2017 ve daha sonra MFC ve ATL isteğe bağlı alt altında bileşenleridir **C++ ile masaüstü geliştirme** Visual Studio yükleyici program iş yükü. ATL desteği MFC olmadan yükleyebilirsiniz veya birleştirilmiş MFC ve ATL desteği (MFC üzerinde ATL bağlıdır). İş yükleri ve bileşenleri hakkında daha fazla bilgi için bkz: [yükleme Visual Studio 2017](/visualstudio/install/install-visual-studio).
-  
-## <a name="related-articles"></a>İlgili Makaleler  
-  
-|Başlık|Açıklama|  
-|-----------|-----------------|  
-|[MFC Masaüstü Uygulamaları](../mfc/mfc-desktop-applications.md)|C++'ta GUI uygulamalarının hızlı geliştirme etkinleştirmek için Win32 üzerinden basit bir nesne yönelimli sarmalayıcı Microsoft Foundation sınıflar sağlar.|  
-|[ATL COM Masaüstü Bileşenleri](../atl/atl-com-desktop-components.md)|Sınıf şablonları ATL sağlar ve c++ COM nesneleri oluşturma işlemini basitleştirmek için diğer kullanım oluşturur.|  
-|[ATL/MFC sınıfları paylaşılan](../atl-mfc-shared/atl-mfc-shared-classes.md)|İçin başvuran [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md) ve MFC ve ATL tarafından paylaşılan diğer sınıflar|  
-|[Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)|Kaynak Düzenleyici dizeler, görüntüler ve iletişim kutuları gibi UI kaynakları düzenlemenize olanak tanır.|  
-|[Visual C++](../visual-cpp-in-visual-studio.md)|MSDN Kitaplığı'ndaki tüm C++ içerik için üst konu.|
+Visual Studio Community Edition veya sonrası MFC veya ATL programları oluşturabilirsiniz. Express sürümler MFC veya ATL'yi desteklemez.
+
+Visual Studio 2015'te Visual C++ isteğe bağlı bir bileşendir ve isteğe bağlı alt bileşenler altında Visual C++ MFC ve ATL bileşenleri şunlardır. Visual Studio'yu ilk kez yüklediğinizde bu bileşenlerin seçmezseniz, bir MFC veya ATL projesi oluşturun veya açın girişimi ilk kez yüklemeye istenir.
+
+Visual Studio 2017 ve sonraki sürümlerinde, isteğe bağlı alt bileşenler altında olan MFC ve ATL **C++ ile masaüstü geliştirme** Visual Studio yükleyicisi programdaki iş yükü. ATL desteği MFC olmadan yükleyebilirsiniz veya birleştirilmiş MFC ve ATL desteği (MFC, ATL üzerinde bağlıdır). İş yükleri ve bileşenleri hakkında daha fazla bilgi için bkz. [Visual Studio 2017'yi yükleme](/visualstudio/install/install-visual-studio).
+
+## <a name="related-articles"></a>İlgili Makaleler
+
+|Başlık|Açıklama|
+|-----------|-----------------|
+|[MFC Masaüstü Uygulamaları](../mfc/mfc-desktop-applications.md)|Microsoft Foundation sınıfları, GUI uygulamalarının C++ hızlı geliştirilmesini sağlamak için Win32 üzerinde ince bir nesne odaklı sarmalayıcı sağlar.|
+|[ATL COM Masaüstü Bileşenleri](../atl/atl-com-desktop-components.md)|ATL sınıf şablonları sağlar ve COM nesnelerinin C++ oluşturulmasını kolaylaştırmak için diğer kullanım oluşturur.|
+|[ATL/MFC paylaşılan sınıfları](../atl-mfc-shared/atl-mfc-shared-classes.md)|Başvuruları [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md) ve MFC ve ATL tarafından paylaşılan diğer sınıfları|
+|[Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)|Kaynak Düzenleyicisi UI kaynakları dizeleri, resimler ve iletişim kutuları gibi düzenlemenize olanak tanır.|
+|[Visual C++](../visual-cpp-in-visual-studio.md)|MSDN kitaplığındaki tüm C++ içeriği için üst konu.|

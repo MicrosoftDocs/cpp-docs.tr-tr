@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d2f1259227fa8d27778dbf0e40b13f5460b7041
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2395cb7b1f3d719fd64494ee9b9c7c64ba222bac
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218791"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46381835"
 ---
 # <a name="tn061-onnotify-and-wmnotify-messages"></a>TN061: ON_NOTIFY ve WM_NOTIFY İletileri
 
@@ -104,14 +104,14 @@ ON_NOTIFY(wNotifyCode, id, memberFxn)
 
 burada parametreler şunlardır:
 
-*wNotifyCode*  
- Bildirim iletisi LVN_KEYDOWN gibi ele kodu.
+*wNotifyCode*<br/>
+Bildirim iletisi LVN_KEYDOWN gibi ele kodu.
 
-*id*  
- Bildirimin gönderildiği denetim alt tanımlayıcısı.
+*id*<br/>
+Bildirimin gönderildiği denetim alt tanımlayıcısı.
 
-*memberFxn*  
- Bu bildirimi gönderirken çağrılacak üye işlevi.
+*memberFxn*<br/>
+Bu bildirimi gönderirken çağrılacak üye işlevi.
 
 Aşağıdaki prototip ile üye işlevi bildirilmelidir:
 
@@ -121,11 +121,11 @@ afx_msg void memberFxn(NMHDR* pNotifyStruct, LRESULT* result);
 
 burada parametreler şunlardır:
 
-*pNotifyStruct*  
- Yukarıdaki bölümde açıklandığı gibi bildirim yapısı işaretçisi.
+*pNotifyStruct*<br/>
+Yukarıdaki bölümde açıklandığı gibi bildirim yapısı işaretçisi.
 
-*Sonuç*  
- Sonuç kodu için bir işaretçi, dönmeden önce ayarlarsınız.
+*Sonuç*<br/>
+Sonuç kodu için bir işaretçi, dönmeden önce ayarlarsınız.
 
 ## <a name="example"></a>Örnek
 
@@ -141,7 +141,7 @@ Yukarıdaki örnekte, ClassWizard tarafından sağlanan bir işlevdir:
 void CMessageReflectionDlg::OnKeydownList1(NMHDR* pNMHDR, LRESULT* pResult)
 {
     LV_KEYDOWN* pLVKeyDow = (LV_KEYDOWN*)pNMHDR;
-    
+
     // TODO: Add your control notification handler
     //       code here
 
@@ -167,17 +167,17 @@ ON_NOTIFY_RANGE(wNotifyCode, id, idLast, memberFxn)
 
 burada parametreler şunlardır:
 
-*wNotifyCode*  
- Bildirim iletisi LVN_KEYDOWN gibi ele kodu.
+*wNotifyCode*<br/>
+Bildirim iletisi LVN_KEYDOWN gibi ele kodu.
 
-*id*  
- Tanımlayıcıların bitişik aralıktaki ilk tanımlayıcısı.
+*id*<br/>
+Tanımlayıcıların bitişik aralıktaki ilk tanımlayıcısı.
 
-*idLast*  
- Tanımlayıcıların bitişik aralıktaki son tanımlayıcısı.
+*idLast*<br/>
+Tanımlayıcıların bitişik aralıktaki son tanımlayıcısı.
 
-*memberFxn*  
- Bu bildirimi gönderirken çağrılacak üye işlevi.
+*memberFxn*<br/>
+Bu bildirimi gönderirken çağrılacak üye işlevi.
 
 Aşağıdaki prototip ile üye işlevi bildirilmelidir:
 
@@ -187,14 +187,14 @@ afx_msg void memberFxn(UINT id, NMHDR* pNotifyStruct, LRESULT* result);
 
 burada parametreler şunlardır:
 
-*id*  
- Bildirim gönderilen denetim alt tanımlayıcısı.
+*id*<br/>
+Bildirim gönderilen denetim alt tanımlayıcısı.
 
-*pNotifyStruct*  
- Yukarıda açıklandığı gibi bildirim yapısı işaretçisi.
+*pNotifyStruct*<br/>
+Yukarıda açıklandığı gibi bildirim yapısı işaretçisi.
 
-*Sonuç*  
- Sonuç kodu için bir işaretçi, dönmeden önce ayarlarsınız.
+*Sonuç*<br/>
+Sonuç kodu için bir işaretçi, dönmeden önce ayarlarsınız.
 
 ##  <a name="_mfcnotes_tn061_on_notify_ex.2c_.on_notify_ex_range"></a> ON_NOTIFY_EX, ON_NOTIFY_EX_RANGE
 
@@ -221,5 +221,5 @@ Her iki durumda da *kimliği* bildirimi tarafından gönderilen denetim alt tan�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)  
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)  
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)

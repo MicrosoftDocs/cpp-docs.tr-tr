@@ -29,12 +29,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0b5a352d10c1fd1f825cecbe3d6a1083f6efd425
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: af227712e3ac64d69836f5cf83b6629bdbffe834
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212175"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46432732"
 ---
 # <a name="reflection-ccli"></a>Yansıma (C++/CLI)
 
@@ -78,7 +78,7 @@ Değer türleri ile kullanılabilir `GetType` de çalışır, ancak önce paketl
 // compile with: /clr
 using namespace System;
 int main() {
-   Int32 i = 100; 
+   Int32 i = 100;
    Object ^ o = i;
    Console::WriteLine("type of i = '{0}'", o->GetType());
 }
@@ -106,7 +106,7 @@ enum class Options {   // not a native enum
 int main() {
    array<String^>^ names = Enum::GetNames(Options::typeid);
 
-   Console::WriteLine("there are {0} options in enum '{1}'", 
+   Console::WriteLine("there are {0} options in enum '{1}'",
                names->Length, Options::typeid);
 
    for (int i = 0 ; i < names->Length ; i++)
@@ -156,7 +156,7 @@ int main() {
 
 ```Output
 type information for 'String':
-assembly name: mscorlib, Version=1.0.5000.0, Culture=neutral, 
+assembly name: mscorlib, Version=1.0.5000.0, Culture=neutral,
 PublicKeyToken=b77a5c561934e089
 namespace: System
 base type: System.Object
@@ -177,7 +177,7 @@ public ref class TestClass {
 public:
    TestClass() {}
    void SimpleTestMember1() {}
-   String ^ SimpleMember2(String ^ s) { return s; } 
+   String ^ SimpleMember2(String ^ s) { return s; }
    int TestMember(int i) { return i; }
    property int Member {
       int get() { return m_i; }
@@ -227,10 +227,10 @@ int main() {
       // retrieve array of member descriptions
       array<MemberInfo^>^ member = typeArray[i]->GetMembers();
 
-      Console::WriteLine("  members of {0} ({1} members):", 
+      Console::WriteLine("  members of {0} ({1} members):",
       typeArray[i]->FullName, member->Length);
       for (int j = 0 ; j < member->Length ; j++) {
-         Console::Write("       ({0})", 
+         Console::Write("       ({0})",
          member[j]->MemberType.ToString() );
          Console::Write("{0}  ", member[j]);
          Console::WriteLine("");
@@ -244,165 +244,169 @@ int main() {
 ```
 
 ## <a name="implement"></a> Nasıl yapılır: yansıma kullanarak eklenti bileşeni mimarisi uygulama
-Aşağıdaki kod örnekleri, basit bir "eklentisi" mimarisi uygulama yansıma kullanımını gösterir. İlk liste uygulamadır ve ikinci eklentidir. Uygulamanın kendisi bir komut satırı bağımsız değişken olarak sağlanan eklentisi dll bulunan herhangi bir form tabanlı sınıflar dolduran bir birden çok belge biçimidir.  
-  
- Uygulamayı kullanarak sağlanan derlemesini yükleme girişiminde <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> yöntemi. Başarılı olursa derleme içindeki türler kullanılarak numaralandırılır, <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=fullName> yöntemi. Uyumluluk kullanmak için her tür denetlenir <xref:System.Type.IsAssignableFrom%2A?displayProperty=fullName> yöntemi. Bu örnekte, belirtilen derlemede bulunan sınıflar nesnesinden türetilmesi gerekir <xref:System.Windows.Forms.Form> bir eklenti nitelemek için sınıf.  
-  
- Uyumlu sınıflar ile ardından oluşturulur <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> kabul eden yöntemi bir <xref:System.Type> bağımsız değişken olarak ve yeni bir örneğine bir işaretçi döndürür. Her yeni örnek daha sonra forma eklenir ve görüntülenir.  
-  
- Unutmayın <xref:System.Reflection.Assembly.Load%2A> yöntemi dosya uzantısı içeren derleme adları kabul etmez. Aşağıdaki kod örneği her iki durumda da çalışır. Bu nedenle uygulama main işlevi herhangi bir sağlanan uzantısı kırpar.  
-  
-### <a name="example"></a>Örnek  
- Aşağıdaki kod eklentileri kabul eden uygulama tanımlar. İlk bağımsız değişken olarak bir derleme adı sağlanmalıdır. Bu derlemenin en az bir ortak içermelidir <xref:System.Windows.Forms.Form> türetilmiş tür.  
-  
+
+Aşağıdaki kod örnekleri, basit bir "eklentisi" mimarisi uygulama yansıma kullanımını gösterir. İlk liste uygulamadır ve ikinci eklentidir. Uygulamanın kendisi bir komut satırı bağımsız değişken olarak sağlanan eklentisi dll bulunan herhangi bir form tabanlı sınıflar dolduran bir birden çok belge biçimidir.
+
+Uygulamayı kullanarak sağlanan derlemesini yükleme girişiminde <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> yöntemi. Başarılı olursa derleme içindeki türler kullanılarak numaralandırılır, <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=fullName> yöntemi. Uyumluluk kullanmak için her tür denetlenir <xref:System.Type.IsAssignableFrom%2A?displayProperty=fullName> yöntemi. Bu örnekte, belirtilen derlemede bulunan sınıflar nesnesinden türetilmesi gerekir <xref:System.Windows.Forms.Form> bir eklenti nitelemek için sınıf.
+
+Uyumlu sınıflar ile ardından oluşturulur <xref:System.Activator.CreateInstance%2A?displayProperty=fullName> kabul eden yöntemi bir <xref:System.Type> bağımsız değişken olarak ve yeni bir örneğine bir işaretçi döndürür. Her yeni örnek daha sonra forma eklenir ve görüntülenir.
+
+Unutmayın <xref:System.Reflection.Assembly.Load%2A> yöntemi dosya uzantısı içeren derleme adları kabul etmez. Aşağıdaki kod örneği her iki durumda da çalışır. Bu nedenle uygulama main işlevi herhangi bir sağlanan uzantısı kırpar.
+
+### <a name="example"></a>Örnek
+
+Aşağıdaki kod eklentileri kabul eden uygulama tanımlar. İlk bağımsız değişken olarak bir derleme adı sağlanmalıdır. Bu derlemenin en az bir ortak içermelidir <xref:System.Windows.Forms.Form> türetilmiş tür.
+
 ```cpp
-// plugin_application.cpp  
-// compile with: /clr /c  
-#using <system.dll>  
-#using <system.drawing.dll>  
-#using <system.windows.forms.dll>  
-  
-using namespace System;  
-using namespace System::Windows::Forms;  
-using namespace System::Reflection;  
-  
-ref class PluggableForm : public Form  {  
-public:  
-   PluggableForm() {}  
-   PluggableForm(Assembly^ plugAssembly) {  
-      Text = "plug-in example";  
-      Size = Drawing::Size(400, 400);  
-      IsMdiContainer = true;  
-  
-      array<Type^>^ types = plugAssembly->GetTypes( );  
-      Type^ formType = Form::typeid;  
-  
-      for (int i = 0 ; i < types->Length ; i++) {  
-         if (formType->IsAssignableFrom(types[i])) {  
-            // Create an instance given the type description.  
-            Form^ f = dynamic_cast<Form^> (Activator::CreateInstance(types[i]));  
-            if (f) {  
-               f->Text = types[i]->ToString();  
-               f->MdiParent = this;  
-               f->Show();  
-            }  
-         }  
-      }  
-   }  
-};  
-  
-int main() {  
-   Assembly^ a = Assembly::LoadFrom("plugin_application.exe");  
-   Application::Run(gcnew PluggableForm(a));  
-}  
-```  
-  
-### <a name="example"></a>Örnek  
- Aşağıdaki kod öğelerinden türetilen üç sınıfları tanımlar <xref:System.Windows.Forms.Form>. Elde edilen derlemenin adı, önceki listede bulunan yürütülebilir geçirildiğinde, bu üç sınıfların her birini bulunur ve barındırma uygulaması derleme zamanında bilinmeyen tüm olgu rağmen örneği.  
-  
-```cpp  
-// plugin_assembly.cpp  
-// compile with: /clr /LD  
-#using <system.dll>  
-#using <system.drawing.dll>  
-#using <system.windows.forms.dll>  
-  
-using namespace System;  
-using namespace System::Windows::Forms;  
-using namespace System::Reflection;  
-using namespace System::Drawing;  
-  
-public ref class BlueForm : public Form {  
-public:  
-   BlueForm() {  
-      BackColor = Color::Blue;  
-   }  
-};  
-  
-public ref class CircleForm : public Form {  
-protected:  
-   virtual void OnPaint(PaintEventArgs^ args) override {  
-      args->Graphics->FillEllipse(Brushes::Green, ClientRectangle);  
-   }  
-};  
-  
-public ref class StarburstForm : public Form {  
-public:  
-   StarburstForm(){  
-      BackColor = Color::Black;  
-   }  
-protected:  
-   virtual void OnPaint(PaintEventArgs^ args) override {  
-      Pen^ p = gcnew Pen(Color::Red, 2);  
-      Random^ r = gcnew Random( );  
-      Int32 w = ClientSize.Width;  
-      Int32 h = ClientSize.Height;  
-      for (int i=0; i<100; i++) {  
-         float x1 = w / 2;  
-         float y1 = h / 2;  
-         float x2 = r->Next(w);  
-         float y2 = r->Next(h);  
-         args->Graphics->DrawLine(p, x1, y1, x2, y2);  
-      }  
-   }  
-};  
-```  
+// plugin_application.cpp
+// compile with: /clr /c
+#using <system.dll>
+#using <system.drawing.dll>
+#using <system.windows.forms.dll>
+
+using namespace System;
+using namespace System::Windows::Forms;
+using namespace System::Reflection;
+
+ref class PluggableForm : public Form  {
+public:
+   PluggableForm() {}
+   PluggableForm(Assembly^ plugAssembly) {
+      Text = "plug-in example";
+      Size = Drawing::Size(400, 400);
+      IsMdiContainer = true;
+
+      array<Type^>^ types = plugAssembly->GetTypes( );
+      Type^ formType = Form::typeid;
+
+      for (int i = 0 ; i < types->Length ; i++) {
+         if (formType->IsAssignableFrom(types[i])) {
+            // Create an instance given the type description.
+            Form^ f = dynamic_cast<Form^> (Activator::CreateInstance(types[i]));
+            if (f) {
+               f->Text = types[i]->ToString();
+               f->MdiParent = this;
+               f->Show();
+            }
+         }
+      }
+   }
+};
+
+int main() {
+   Assembly^ a = Assembly::LoadFrom("plugin_application.exe");
+   Application::Run(gcnew PluggableForm(a));
+}
+```
+
+### <a name="example"></a>Örnek
+
+Aşağıdaki kod öğelerinden türetilen üç sınıfları tanımlar <xref:System.Windows.Forms.Form>. Elde edilen derlemenin adı, önceki listede bulunan yürütülebilir geçirildiğinde, bu üç sınıfların her birini bulunur ve barındırma uygulaması derleme zamanında bilinmeyen tüm olgu rağmen örneği.
+
+```cpp
+// plugin_assembly.cpp
+// compile with: /clr /LD
+#using <system.dll>
+#using <system.drawing.dll>
+#using <system.windows.forms.dll>
+
+using namespace System;
+using namespace System::Windows::Forms;
+using namespace System::Reflection;
+using namespace System::Drawing;
+
+public ref class BlueForm : public Form {
+public:
+   BlueForm() {
+      BackColor = Color::Blue;
+   }
+};
+
+public ref class CircleForm : public Form {
+protected:
+   virtual void OnPaint(PaintEventArgs^ args) override {
+      args->Graphics->FillEllipse(Brushes::Green, ClientRectangle);
+   }
+};
+
+public ref class StarburstForm : public Form {
+public:
+   StarburstForm(){
+      BackColor = Color::Black;
+   }
+protected:
+   virtual void OnPaint(PaintEventArgs^ args) override {
+      Pen^ p = gcnew Pen(Color::Red, 2);
+      Random^ r = gcnew Random( );
+      Int32 w = ClientSize.Width;
+      Int32 h = ClientSize.Height;
+      for (int i=0; i<100; i++) {
+         float x1 = w / 2;
+         float y1 = h / 2;
+         float x2 = r->Next(w);
+         float y2 = r->Next(h);
+         args->Graphics->DrawLine(p, x1, y1, x2, y2);
+      }
+   }
+};
+```
 
 ## <a name="enumerate"></a> Nasıl yapılır: yansıma kullanarak derlemelerde veri türlerini numaralandırma
-Aşağıdaki kod, genel türler ve üyeler kullanarak numaralandırmasını gösterir <xref:System.Reflection>.  
-  
- Aşağıdaki kod, bir derlemenin adını yerel dizindeki veya GAC'deki göz önünde bulundurulduğunda, derleme açın ve açıklamaları almak çalışır. Başarılı olursa, her tür genel üyeleri görüntülenir.  
-  
- Unutmayın <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> dosyanın uzantısı kullanılmasını gerektirir. Yalnızca "mscorlib" kullanarak .NET Framework türleri görüntülenmesini neden olur bu nedenle, bir komut satırı bağımsız değişkeni "mscorlib.dll" kullanarak, başarısız olur. Bütünleştirilmiş kod adı sağlanmazsa, kod algılamak ve geçerli derlemedeki türleri (Bu koddan oluşan EXE) bildirin.  
-  
-### <a name="example"></a>Örnek  
-  
-```cpp  
-// self_reflection.cpp  
-// compile with: /clr  
-using namespace System;  
-using namespace System::Reflection;  
-using namespace System::Collections;  
-  
-public ref class ExampleType {  
-public:  
-   ExampleType() {}  
-   void Func() {}  
-};  
-  
-int main() {  
-   String^ delimStr = " ";  
-   array<Char>^ delimiter = delimStr->ToCharArray( );  
-   array<String^>^ args = Environment::CommandLine->Split( delimiter );  
-  
-// replace "self_reflection.exe" with an assembly from either the local  
-// directory or the GAC  
-   Assembly^ a = Assembly::LoadFrom("self_reflection.exe");  
-   Console::WriteLine(a);  
-  
-   int count = 0;  
-   array<Type^>^ types = a->GetTypes();  
-   IEnumerator^ typeIter = types->GetEnumerator();  
-  
-   while ( typeIter->MoveNext() ) {  
-      Type^ t = dynamic_cast<Type^>(typeIter->Current);  
-      Console::WriteLine("   {0}", t->ToString());  
-  
-      array<MemberInfo^>^ members = t->GetMembers();  
-      IEnumerator^ memberIter = members->GetEnumerator();  
-      while ( memberIter->MoveNext() ) {  
-         MemberInfo^ mi = dynamic_cast<MemberInfo^>(memberIter->Current);  
-         Console::Write("      {0}", mi->ToString( ) );  
-         if (mi->MemberType == MemberTypes::Constructor)  
-            Console::Write("   (constructor)");  
-  
-         Console::WriteLine();  
-      }  
-      count++;  
-   }  
-   Console::WriteLine("{0} types found", count);  
-}  
-```  
+
+Aşağıdaki kod, genel türler ve üyeler kullanarak numaralandırmasını gösterir <xref:System.Reflection>.
+
+Aşağıdaki kod, bir derlemenin adını yerel dizindeki veya GAC'deki göz önünde bulundurulduğunda, derleme açın ve açıklamaları almak çalışır. Başarılı olursa, her tür genel üyeleri görüntülenir.
+
+Unutmayın <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> dosyanın uzantısı kullanılmasını gerektirir. Yalnızca "mscorlib" kullanarak .NET Framework türleri görüntülenmesini neden olur bu nedenle, bir komut satırı bağımsız değişkeni "mscorlib.dll" kullanarak, başarısız olur. Bütünleştirilmiş kod adı sağlanmazsa, kod algılamak ve geçerli derlemedeki türleri (Bu koddan oluşan EXE) bildirin.
+
+### <a name="example"></a>Örnek
+
+```cpp
+// self_reflection.cpp
+// compile with: /clr
+using namespace System;
+using namespace System::Reflection;
+using namespace System::Collections;
+
+public ref class ExampleType {
+public:
+   ExampleType() {}
+   void Func() {}
+};
+
+int main() {
+   String^ delimStr = " ";
+   array<Char>^ delimiter = delimStr->ToCharArray( );
+   array<String^>^ args = Environment::CommandLine->Split( delimiter );
+
+// replace "self_reflection.exe" with an assembly from either the local
+// directory or the GAC
+   Assembly^ a = Assembly::LoadFrom("self_reflection.exe");
+   Console::WriteLine(a);
+
+   int count = 0;
+   array<Type^>^ types = a->GetTypes();
+   IEnumerator^ typeIter = types->GetEnumerator();
+
+   while ( typeIter->MoveNext() ) {
+      Type^ t = dynamic_cast<Type^>(typeIter->Current);
+      Console::WriteLine("   {0}", t->ToString());
+
+      array<MemberInfo^>^ members = t->GetMembers();
+      IEnumerator^ memberIter = members->GetEnumerator();
+      while ( memberIter->MoveNext() ) {
+         MemberInfo^ mi = dynamic_cast<MemberInfo^>(memberIter->Current);
+         Console::Write("      {0}", mi->ToString( ) );
+         if (mi->MemberType == MemberTypes::Constructor)
+            Console::Write("   (constructor)");
+
+         Console::WriteLine();
+      }
+      count++;
+   }
+   Console::WriteLine("{0} types found", count);
+}
+```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

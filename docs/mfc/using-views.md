@@ -23,41 +23,43 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4094f41f00266b229c755232f534e9c35d29fe7a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fcf4af038617cce8326a3e63ba9b4ea66c277f66
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384068"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442103"
 ---
 # <a name="using-views"></a>Görünümleri Kullanma
-Görünümün sorumlulukları belgenin veri kullanıcıya grafik görüntüleme ve kabul edin ve belge üzerinde işlemler olarak kullanıcı girişini yorumlama üzeresiniz. View sınıfı yazma görevleri vardır:  
-  
--   Görünüm sınıfınızın yazma [OnDraw](../mfc/reference/cview-class.md#ondraw) belgenin veri işler üye işlevi.  
-  
--   View sınıfında ileti işleyicisi üye işlevleri uygun Windows iletileri ve menü öğeleri gibi kullanıcı arabirimi nesneleri bağlayın.  
-  
--   Kullanıcı girişini yorumlama bu işleyicileri uygulayın.  
-  
- Ayrıca, diğer geçersiz kılmanız gerekebilir `CView` türetilmiş görünüm sınıfınız içindeki üye işlevleri. Özellikle, geçersiz kılmak isteyebilirsiniz [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) özel başlatma için görünümü gerçekleştirmek için ve [in](../mfc/reference/cview-class.md#onupdate) görünümü kendisi yalnızca yeniden çizer önce gerekli herhangi bir özel işlem yapmak için. Birden çok belge için geçersiz kılmalısınız [OnPreparePrinting](../mfc/reference/cview-class.md#onprepareprinting) yazdırmak için sayfa sayısı ve diğer bilgileri Yazdır iletişim kutusu başlatılamadı. Geçersiz kılma hakkında daha fazla bilgi için `CView` üye işlevleri bkz sınıfı [CView](../mfc/reference/cview-class.md) içinde *MFC başvurusu*.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [MFC'de kullanılabilen türetilmiş görünüm sınıfları](../mfc/derived-view-classes-available-in-mfc.md)  
-  
--   [Bir görünümde çizim yapma](../mfc/drawing-in-a-view.md)  
-  
--   [Bir görünüm kullanıcı girişini yorumlama](../mfc/interpreting-user-input-through-a-view.md)  
-  
--   [Yazdırmada görünümün rolü](../mfc/role-of-the-view-in-printing.md)  
-  
--   [Görünümleri kaydırma ve ölçeklendirme](../mfc/scrolling-and-scaling-views.md)  
-  
--   [Başlatma ve belgeleri ve görünümleri temizleme](../mfc/initializing-and-cleaning-up-documents-and-views.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Belge/görünüm mimarisi](../mfc/document-view-architecture.md)   
- [Cformview'yu sınıfı](../mfc/reference/cformview-class.md)   
- [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)   
- [Seri Hale Getirme Mekanizmasını Atlama](../mfc/bypassing-the-serialization-mechanism.md)
+
+Görünümün sorumlulukları, belgenin verilerini grafik kullanıcıya göstermek ve kabul edin ve belge işlemleri olarak kullanıcı girişini yorumlama üzeresiniz. Görünüm sınıfınıza yazma görevleri vardır:
+
+- Görünüm sınıfınızın yazma [OnDraw](../mfc/reference/cview-class.md#ondraw) belgenin verilerini işleyen üye işlevi.
+
+- Uygun Windows iletilerini ve kullanıcı arabirimi nesneleri menü öğeleri gibi ileti işleyicisi üye işlevleri view sınıfında bağlanın.
+
+- Kullanıcı girişini yorumlama bu işleyicileri uygulayın.
+
+Ayrıca, diğer geçersiz kılmanız gerekebilir `CView` türetilmiş görünüm sınıfınızdaki üye işlevleri. Özellikle, geçersiz kılmak isteyebilirsiniz [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) görünüm için özel başlatma gerçekleştirme ve [OnUpdate](../mfc/reference/cview-class.md#onupdate) görünümü kendisi yalnızca yeniden çizer önce gerekli olan herhangi bir özel işlemi yapmak için. Birden fazla belge için geçersiz kılmalısınız [OnPreparePrinting](../mfc/reference/cview-class.md#onprepareprinting) yazdırmak için sayfa sayısı ve diğer bilgileri Yazdır iletişim kutusu başlatılamadı. Geçersiz kılma hakkında daha fazla bilgi için `CView` üye işlevleri, bkz: sınıf [CView](../mfc/reference/cview-class.md) içinde *MFC başvurusu*.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [MFC'de kullanılabilen türetilmiş görünüm sınıfları](../mfc/derived-view-classes-available-in-mfc.md)
+
+- [Bir görünümde çizim yapma](../mfc/drawing-in-a-view.md)
+
+- [Bir görünüm aracılığıyla kullanıcı girişini yorumlama](../mfc/interpreting-user-input-through-a-view.md)
+
+- [Yazdırmada görünümün rolü](../mfc/role-of-the-view-in-printing.md)
+
+- [Görünümleri kaydırma ve ölçeklendirme](../mfc/scrolling-and-scaling-views.md)
+
+- [Başlatma ve belgeleri ve görünümleri temizleme](../mfc/initializing-and-cleaning-up-documents-and-views.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Belge/görünüm mimarisi](../mfc/document-view-architecture.md)<br/>
+[CFormView Sınıfı](../mfc/reference/cformview-class.md)<br/>
+[Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)<br/>
+[Seri Hale Getirme Mekanizmasını Atlama](../mfc/bypassing-the-serialization-mechanism.md)
 

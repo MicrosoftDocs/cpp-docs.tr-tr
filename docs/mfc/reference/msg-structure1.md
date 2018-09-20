@@ -16,51 +16,55 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5fe629c2f279b6b258f4824229490f7b72b4ce4d
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 2819faa25e2dbd41d6578d60780d13011bb645c0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338818"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388400"
 ---
 # <a name="msg-structure1"></a>MSG yapısı1
-`MSG` Yapısı, bir iş parçacığının ileti kuyruğundan ileti bilgileri içerir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-typedef struct tagMSG {     // msg    
-    HWND hwnd;  
-    UINT message;  
-    WPARAM wParam;  
-    LPARAM lParam;  
-    DWORD time;  
-    POINT pt;  
-} MSG;  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *HWND*  
- Pencere yordamı olan iletiyi alır penceresi tanımlar.  
-  
- *message*  
- İleti sayısını belirtir.  
-  
- *wParam*  
- İleti hakkında ek bilgi belirtir. Tam anlamı değerine bağlıdır `message` üyesi.  
-  
- *lParam*  
- İleti hakkında ek bilgi belirtir. Tam anlamı değerine bağlıdır `message` üyesi.  
-  
- *saat*  
- Başlangıçtan iletinin gönderildiği saati belirtir.  
-  
- *PT*  
- İletinin gönderildiği sırada ekran koordinatlarında imleç konumu belirtir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** winuser.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
+
+`MSG` Yapısı, bir iş parçacığının ileti kuyruğundan ileti bilgileri içerir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+typedef struct tagMSG {     // msg
+    HWND hwnd;
+    UINT message;
+    WPARAM wParam;
+    LPARAM lParam;
+    DWORD time;
+    POINT pt;
+} MSG;
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*HWND*<br/>
+Pencere yordamı olan iletiyi alır penceresi tanımlar.
+
+*message*<br/>
+İleti sayısını belirtir.
+
+*wParam*<br/>
+İleti hakkında ek bilgi belirtir. Tam anlamı değerine bağlıdır `message` üyesi.
+
+*lParam*<br/>
+İleti hakkında ek bilgi belirtir. Tam anlamı değerine bağlıdır `message` üyesi.
+
+*saat*<br/>
+Başlangıçtan iletinin gönderildiği saati belirtir.
+
+*PT*<br/>
+İletinin gönderildiği sırada ekran koordinatlarında imleç konumu belirtir.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** winuser.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
 

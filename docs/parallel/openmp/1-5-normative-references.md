@@ -12,18 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc062a1902e8e3c8f64a98af84fed54c272dc727
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 1be82b922d673d173daabf9185b6936111abc3b8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33685599"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444625"
 ---
 # <a name="15-normative-references"></a>1.5 Örnek Oluşturan Başvurular
--   ISO/IEC 9899:1999 *bilgi teknolojisi - programlama dilleri - C*. Bu OpenMP API belirtimine ISO/IEC 9899:1999 C99 ifade eder.  
-  
--   ISO/IEC 9899:1990 *bilgi teknolojisi - programlama dilleri - C*. Bu OpenMP API belirtimine ISO/IEC 9899:1990 C90 ifade eder.  
-  
--   ISO/IEC 14882:1998 *bilgi teknolojisi - programlama dilleri - C++*. Bu OpenMP API belirtimine ISO/IEC 14882:1998 C++ ifade eder.  
-  
- Bu OpenMP API belirtimine C başvuruyor burada başvuru uygulaması tarafından desteklenen temel dil için yapılır.
+
+- ISO/IEC 9899:1999 *bilgi teknolojisi - programlama dilleri - C*. Bu OpenMP API belirtimi için ISO/IEC 9899:1999 C99 ifade eder.
+
+- ISO/IEC 9899:1990 *bilgi teknolojisi - programlama dilleri - C*. Bu OpenMP API belirtimi için ISO/IEC 9899:1990 C90 ifade eder.
+
+- ISO/IEC 14882:1998 *bilgi teknolojisi - programlama dilleri - C++*. Bu OpenMP API belirtimine C++ için ISO/IEC 14882:1998 ifade eder.
+
+Bu OpenMP API belirtimine C'ye başvuran olduğunda, uygulama tarafından desteklenen temel dil için başvuru yapılır.

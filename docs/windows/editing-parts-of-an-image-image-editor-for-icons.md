@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0380fd6fc9b37c4d7458453398cfbd2ce6699234
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9340180049d85b1b5385d49c7b358c3fd791ce9d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607839"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391481"
 ---
 # <a name="editing-parts-of-an-image-image-editor-for-icons"></a>Görüntünün Parçalarını Düzenleme (Simgeler İçin Görüntü Düzenleyicisi)
 
@@ -85,6 +85,6 @@ Yok.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)  
-[Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)  
+[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
 [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)

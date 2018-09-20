@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9586c0f15dc098688020acae0fb96c0e363ad285
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ad98923c21a28976b54c2251f2da83eb0ec4cf5f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756382"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408147"
 ---
 # <a name="iatlstringmgr-class"></a>Iatlstringmgr sınıfı
 
@@ -193,6 +193,6 @@ Mevcut bellek bloğu tarafından belirtilen yeniden boyutlandırmak için bu iş
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 

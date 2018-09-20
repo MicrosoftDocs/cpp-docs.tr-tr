@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f0b9c290cb8e5ced7537fb377d6e7ac52f20d089
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 5abae461b4298d8a6300f5d7ad9f3e162a5b21c8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314553"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46447394"
 ---
 # <a name="creating-a-dialog-box-c-that-users-cannot-exit"></a>Çıkamayacağı iletişim kutusu (C++), kullanıcıları oluşturma
 
@@ -51,6 +51,6 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Nasıl yapılır: Kaynak Oluşturma](../windows/how-to-create-a-resource.md)  
-[Kaynak dosyaları](../windows/resource-files-visual-studio.md)  
+[Nasıl yapılır: Kaynak Oluşturma](../windows/how-to-create-a-resource.md)<br/>
+[Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
 [İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)

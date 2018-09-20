@@ -18,63 +18,67 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15133673a33930222d5bf4c621c9ec9361e31f24
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2ac136ac009f9597c3773e210aaabf4adcb6b738
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46046413"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46433256"
 ---
 # <a name="ltlistgt-visual-c"></a>&lt;Liste&gt; (Visual C++)
-\<Listheader > blok satırında bir tablo veya tanım listesi tanımlamak için kullanılır. Bir tablo tanımlarken, yalnızca bir giriş başlığı hükmün sağlamanız gerekir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-<list type="bullet" | "number" | "table">  
-   <listheader>  
-      <term>term</term>  
-      <description>description</description>  
-   </listheader>  
-   <item>  
-      <term>term</term>  
-      <description>description</description>  
-   </item>  
-</list>  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+\<Listheader > blok satırında bir tablo veya tanım listesi tanımlamak için kullanılır. Bir tablo tanımlarken, yalnızca bir giriş başlığı hükmün sağlamanız gerekir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+<list type="bullet" | "number" | "table">
+   <listheader>
+      <term>term</term>
+      <description>description</description>
+   </listheader>
+   <item>
+      <term>term</term>
+      <description>description</description>
+   </item>
+</list>
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *Terim*<br/>
-İçinde tanımlanan tanımlamak için bir terim `description`.  
-  
+İçinde tanımlanan tanımlamak için bir terim `description`.
+
 *Açıklaması*<br/>
-Bir ya da öğe bir madde işareti veya numaralı liste tanımını bir `term`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Listedeki her bir öğe ile belirtilen bir \<öğesi > bloğu. Tanım listesi oluştururken, her ikisi de belirtmeniz gerekir `term` ve `description`. Ancak, bir tablo, madde işaretli liste veya numaralı liste için bir giriş sağlamanız yeterlidir `description`.  
-  
- Bir listeyi veya tabloyu kadar olabilir \<öğesi > gerektiğinde engeller.  
-  
- Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.  
-  
-## <a name="example"></a>Örnek  
-  
-```cpp  
-// xml_list_tag.cpp  
-// compile with: /doc /LD  
-// post-build command: xdcmake xml_list_tag.dll  
-/// <remarks>Here is an example of a bulleted list:  
-/// <list type="bullet">  
-/// <item>  
-/// <description>Item 1.</description>  
-/// </item>  
-/// <item>  
-/// <description>Item 2.</description>  
-/// </item>  
-/// </list>  
-/// </remarks>  
-class MyClass {};  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)
+Bir ya da öğe bir madde işareti veya numaralı liste tanımını bir `term`.
+
+## <a name="remarks"></a>Açıklamalar
+
+Listedeki her bir öğe ile belirtilen bir \<öğesi > bloğu. Tanım listesi oluştururken, her ikisi de belirtmeniz gerekir `term` ve `description`. Ancak, bir tablo, madde işaretli liste veya numaralı liste için bir giriş sağlamanız yeterlidir `description`.
+
+Bir listeyi veya tabloyu kadar olabilir \<öğesi > gerektiğinde engeller.
+
+Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.
+
+## <a name="example"></a>Örnek
+
+```cpp
+// xml_list_tag.cpp
+// compile with: /doc /LD
+// post-build command: xdcmake xml_list_tag.dll
+/// <remarks>Here is an example of a bulleted list:
+/// <list type="bullet">
+/// <item>
+/// <description>Item 1.</description>
+/// </item>
+/// <item>
+/// <description>Item 2.</description>
+/// </item>
+/// </list>
+/// </remarks>
+class MyClass {};
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e56e3f48a3a58f25d03053867c195d11970893f9
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f844d63bc04deb4294203f04aef30db48f195fd9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601413"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46438073"
 ---
 # <a name="terminatemap-function"></a>TerminateMap İşlevi
 
@@ -39,13 +39,13 @@ inline bool TerminateMap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Modülü*  
+*Modülü*<br/>
 A [Modülü](../windows/module-class.md).
 
-*SunucuAdı*  
+*SunucuAdı*<br/>
 Sınıf üreteçlerini parametresi tarafından belirtilen modüldeki bir alt kümesi adını *Modülü*.
 
-*forceTerminate*  
+*forceTerminate*<br/>
 **doğru** sınıfı sonlandırmak için bunlar bağımsız olarak fabrikaları; etkindir **false** herhangi bir Fabrika etkinse sınıf üreteçlerini sona erdirmek.
 
 ## <a name="return-value"></a>Dönüş Değeri

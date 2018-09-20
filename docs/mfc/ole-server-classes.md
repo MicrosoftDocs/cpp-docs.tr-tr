@@ -19,41 +19,43 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9d0c75325c62a92f65c56f2c76350bf752228fd
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 9994cdadb0ca2924a3ac773752ae40f3a750b74f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36932227"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442896"
 ---
 # <a name="ole-server-classes"></a>OLE Sunucu Sınıfları
-Bu sınıfların sunucu uygulamaları tarafından kullanılır. Sunucu belgeleri türetilir `COleServerDoc` yerine `CDocument`. Çünkü unutmayın `COleServerDoc` türetildiği `COleLinkingDoc`, sunucu belgeleri bağlama desteği kapsayıcıları de olabilir.  
-  
- `COleServerItem` Bir belge veya başka bir belgede gömülü veya bağlı bir belge bölümü sınıfı temsil eder.  
-  
- `COleIPFrameWnd` ve `COleResizeBar` nesne bir kapsayıcıda durumdayken yerinde düzenlemeyi desteklemek ve `COleTemplateServer` OLE nesneleri diğer uygulamalardan gelen düzenlenebilir belge/görünüm çiftleri oluşturmayı destekler.  
-  
- [COleServerDoc](../mfc/reference/coleserverdoc-class.md)  
- Sunucu uygulaması belge sınıfları için temel sınıf olarak kullanılır. `COleServerDoc` nesneler sağlayın sunucu desteği ile etkileşim aracılığıyla toplu `COleServerItem` nesneleri. Görsel düzenleme yeteneğini sınıf kitaplığının belge/görünüm mimarisi kullanarak sağlanır.  
-  
- [CDocItem](../mfc/reference/cdocitem-class.md)  
- Soyut taban sınıfı `COleClientItem` ve `COleServerItem`. Sınıfların nesnelerini türetilen `CDocItem` belge parçalarını temsil eder.  
-  
- [COleServerItem](../mfc/reference/coleserveritem-class.md)  
- OLE arabirimi temsil etmek için kullanılan `COleServerDoc` öğeleri. Genellikle bir olduğundan `COleServerDoc` bir belgenin katıştırılmış bölümünü temsil eden nesne. Destek belgeleri bölümlerine bağlantılar sunucuları olabilir birçok `COleServerItem` nesneleri, belgeyi bir kısmı için her biri gösteren bir bağlantı.  
-  
- [COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md)  
- Bir sunucu belge yerinde düzenlendiğinde çerçeve penceresi için bir görünüm sağlar.  
-  
- [COleResizeBar](../mfc/reference/coleresizebar-class.md)  
- Yerinde yeniden boyutlandırma için standart kullanıcı arabirimi sağlar. Bu sınıfın nesneleri ile birlikte kullanılan her zaman `COleIPFrameWnd` nesneleri.  
-  
- [COleTemplateServer](../mfc/reference/coletemplateserver-class.md)  
- Framework'ün belge/görünüm mimarisi kullanarak belgeleri oluşturmak için kullanılır. A `COleTemplateServer` nesne temsilciler kendi iş ilişkili bir çoğunu `CDocTemplate` nesnesi.  
-  
- [COleException](../mfc/reference/coleexception-class.md)  
- OLE işlenirken bir hata kaynaklanan bir özel durum. Bu sınıf, kapsayıcılar ve sunucular tarafından kullanılır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Bu sınıflar, sunucu uygulamaları tarafından kullanılır. Sunucu belgeleri türetilir `COleServerDoc` yerine `CDocument`. Dikkat edin çünkü `COleServerDoc` türetilir `COleLinkingDoc`, sunucu belgeleri bağlamayı destekleyen kapsayıcılar da olabilir.
+
+`COleServerItem` Bir belge veya başka bir belgeye gömülü veya bağlantılı bir belge bölümü sınıfı temsil eder.
+
+`COleIPFrameWnd` ve `COleResizeBar` nesne bir kapsayıcıda olsa da, yerinde düzenleme desteği ve `COleTemplateServer` diğer uygulamalardan OLE nesneleri düzenlenebilir belge/görünüm çiftleri oluşturmayı destekler.
+
+[COleServerDoc](../mfc/reference/coleserverdoc-class.md)<br/>
+Sunucu uygulaması belge sınıfları için temel sınıf olarak kullanılır. `COleServerDoc` nesneleri sağlar sunucu desteği ile etkileşim aracılığıyla toplu `COleServerItem` nesneleri. Görsel düzenleme özelliği, Sınıf Kitaplığı'nızın belge/görünüm mimarisi kullanılarak sağlanır.
+
+[Cdocıtem](../mfc/reference/cdocitem-class.md)<br/>
+Soyut taban sınıfı `COleClientItem` ve `COleServerItem`. Sınıfından türetilen sınıfların nesnelerini `CDocItem` belge parçalarını temsil eder.
+
+[Coleserverıtem](../mfc/reference/coleserveritem-class.md)<br/>
+OLE arabirimi temsil etmek için kullanılan `COleServerDoc` öğeleri. Olur ve genellikle `COleServerDoc` belgeye katıştırılmış bölümünü temsil eden nesne. Belge parçalarını bağlantılarını destekleyen sunucularda olabilir birçok `COleServerItem` her biri temsil eden bir bağlantı bir kısmını serileştirmeniz nesneleri.
+
+[Coleıpframewnd](../mfc/reference/coleipframewnd-class.md)<br/>
+Sunucu belgesinin yerinde düzenlenirken çerçeve penceresi için bir görünüm sağlar.
+
+[COleResizeBar](../mfc/reference/coleresizebar-class.md)<br/>
+Yerinde yeniden boyutlandırma için standart kullanıcı arabirimi sağlar. Bu sınıfın nesneleri ile birlikte kullanılan her zaman `COleIPFrameWnd` nesneleri.
+
+[Coletemplateserver'ı](../mfc/reference/coletemplateserver-class.md)<br/>
+Framework'ün belge/görünüm mimarisi kullanarak belgeleri oluşturmak için kullanılır. A `COleTemplateServer` nesne için ilişkili bir çalışmasının çoğunu Temsilciler `CDocTemplate` nesne.
+
+[COleException](../mfc/reference/coleexception-class.md)<br/>
+OLE işlenirken bir hata kaynaklanan bir özel durum. Bu sınıf, kapsayıcılar ve sunucular tarafından kullanılır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

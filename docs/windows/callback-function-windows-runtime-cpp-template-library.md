@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 57d1a3adc160323726bcdd31808cf82bc8da2e7f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 19bb77128eee9cc8af514e60730c3a39115695cc
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609260"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46426548"
 ---
 # <a name="callback-function-windows-runtime-c-template-library"></a>Callback İşlevi (Windows Çalışma Zamanı C++ Şablon Kitaplığı)
 
@@ -201,49 +201,49 @@ ComPtr<TDelegateInterface> Callback(
 
 ### <a name="parameters"></a>Parametreler
 
-*TDelegateInterface*  
+*TDelegateInterface*<br/>
 Şablon parametresi bir olay oluştuğunda çağrılacak temsilci arabirimini belirtir.
 
-*TCallback*  
+*TCallback*<br/>
 Şablon parametresi bir nesne ve onun üye geri çağırma işlevini temsil eden bir nesne türünü belirtir.
 
-*TCallbackObject*  
+*TCallbackObject*<br/>
 Şablon parametresi, üye işlevi olay oluştuğunda çağrılacak yöntem olan nesneyi belirtir.
 
-*TArg1*  
+*TArg1*<br/>
 Şablon parametresi ilk geri çağırma yöntemi bağımsız değişken türünü belirtir.
 
-*TArg2*  
+*TArg2*<br/>
 Şablon parametresi ikinci geri çağırma yöntemi bağımsız değişken türünü belirtir.
 
-*TArg3*  
+*TArg3*<br/>
 Şablon parametresi üçüncü geri çağırma yöntemi bağımsız değişken türünü belirtir.
 
-*TArg4*  
+*TArg4*<br/>
 Şablon parametresi dördüncü geri çağırma yöntemi bağımsız değişken türünü belirtir.
 
-*TArg5*  
+*TArg5*<br/>
 Şablon parametresi beşinci geri çağırma yöntemi bağımsız değişken türünü belirtir.
 
-*TArg6*  
+*TArg6*<br/>
 Şablon parametresi altıncı geri çağırma yöntemi bağımsız değişken türünü belirtir.
 
-*TArg7*  
+*TArg7*<br/>
 Şablon parametresi yedinci geri çağırma yöntemi bağımsız değişken türünü belirtir.
 
-*TArg8*  
+*TArg8*<br/>
 Şablon parametresi sekizinci geri çağırma yöntemi bağımsız değişken türünü belirtir.
 
-*TArg9*  
+*TArg9*<br/>
 Şablon parametresi dokuzuncu geri çağırma yöntemi bağımsız değişken türünü belirtir.
 
-*geri çağırma*  
+*geri çağırma*<br/>
 Geri çağırma nesnesi ve onun üye işlevini temsil eden bir nesne.
 
-*object*  
+*object*<br/>
 Bir olay oluştuğunda üye işlevi çağrılan nesne.
 
-*Yöntemi*  
+*Yöntemi*<br/>
 Bir olay oluştuğunda çağrılacak üye işlevi.
 
 ## <a name="return-value"></a>Dönüş Değeri

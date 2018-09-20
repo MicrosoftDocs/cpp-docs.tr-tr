@@ -16,57 +16,61 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca7948a1258ac1b5193d379dd37f426360edc42e
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 3102947009780f6f4e735b70506c5b2dc02f416b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687198"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46438970"
 ---
 # <a name="how-to-provide-work-functions-to-the-call-and-transformer-classes"></a>Nasıl yapılır: call ve transformer Sınıflarına İş İşlevleri Sağlama
-Bu konuda iş işlevleri sağlamak için çeşitli yollar gösterilmektedir [concurrency::call](../../parallel/concrt/reference/call-class.md) ve [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) sınıfları.  
-  
- İlk örnek bir lambda ifadesi geçirmek nasıl gösterir bir `call` nesnesi. İkinci örnek işlevi nesnesine geçirmek nasıl gösterir bir `call` nesnesi. Üçüncü örnek bir sınıf yönteme bağlama gösterilmektedir bir `call` nesnesi.  
-  
- Çizim için bu konudaki her örnek kullanan `call` sınıfı. Kullanan bir örnek `transformer` sınıfı için bkz: [nasıl yapılır: veri ardışık düzeninde transformer kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek kullanmak için en yaygın yolu gösterir `call` sınıfı. Bu örnek bir lambda işleve geçirir `call` Oluşturucusu.  
-  
- [!code-cpp[concrt-call-lambda#1](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_1.cpp)]  
-  
- Bu örnek şu çıkışı üretir.  
-  
-```Output  
-13 squared is 169.  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek önceki bir benzer kullandığı `call` işlev nesnesi (functor) ile birlikte sınıfı.  
-  
- [!code-cpp[concrt-call-functor#1](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_2.cpp)]  
-  
-## <a name="example"></a>Örnek  
 
- Aşağıdaki örnek önceki bir benzer kullandığı [std::bind1st](../../standard-library/functional-functions.md#bind1st) ve [std::mem_fun](../../standard-library/functional-functions.md#mem_fun) bağlamak için işlevleri bir `call` bir sınıf yöntemi nesnesine.  
+Bu konuda iş işlevleri sağlama için çeşitli yollar gösterir [concurrency::call](../../parallel/concrt/reference/call-class.md) ve [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) sınıfları.
 
-  
- Eğer bağlamak bu tekniği kullanın bir `call` veya `transformer` işlev çağırma işleci yerine belirli bir sınıf yöntemi nesnesine `operator()`.  
-  
- [!code-cpp[concrt-call-method#1](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_3.cpp)]  
-  
- Ayrıca sonucu atayabilirsiniz `bind1st` için işlev bir [std::function](../../standard-library/function-class.md) nesne veya kullanmak `auto` aşağıdaki örnekte gösterildiği gibi anahtar sözcüğü,.  
-  
- [!code-cpp[concrt-call-method#2](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_4.cpp)]  
-  
-## <a name="compiling-the-code"></a>Kod Derleniyor  
- Örnek kodu kopyalayın ve bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `call.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
-  
- **cl.exe /EHsc call.cpp**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Zaman uyumsuz aracılar kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)   
- [Zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)   
- [Nasıl yapılır: veri ardışık düzeninde transformer kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)   
- [Çağrı sınıfı](../../parallel/concrt/reference/call-class.md)   
- [transformer Sınıfı](../../parallel/concrt/reference/transformer-class.md)
+İlk örnek, bir lambda ifadesi geçirilecek gösterilmiştir bir `call` nesne. İkinci örnek, bir işlev nesnesi geçirilecek gösterilmiştir bir `call` nesne. Üçüncü örnek, bir sınıf yönteme bağlama işlemi gösterilmektedir bir `call` nesne.
+
+Çizim için bu konudaki her örnekte `call` sınıfı. Kullanan bir örnek için `transformer` sınıfı [nasıl yapılır: veri ardışık düzeninde transformer kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md).
+
+## <a name="example"></a>Örnek
+
+Kullanmak için en yaygın yolu aşağıdaki örnekte `call` sınıfı. Bu örnekte bir lambda işleve geçirir `call` Oluşturucusu.
+
+[!code-cpp[concrt-call-lambda#1](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_1.cpp)]
+
+Bu örnek aşağıdaki çıktıyı üretir.
+
+```Output
+13 squared is 169.
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek Öncekine benzer kullandığı `call` birlikte bir işlev nesnesi (functor) sınıfı.
+
+[!code-cpp[concrt-call-functor#1](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_2.cpp)]
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek Öncekine benzer kullanır [std::bind1st](../../standard-library/functional-functions.md#bind1st) ve [std::mem_fun](../../standard-library/functional-functions.md#mem_fun) bağlamak için işlevleri bir `call` nesne için bir sınıf yöntemi.
+
+Bağlamak varsa, bu tekniği bir `call` veya `transformer` nesne işlev çağrısı işleci, yerine belirli bir sınıf yönteme `operator()`.
+
+[!code-cpp[concrt-call-method#1](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_3.cpp)]
+
+Sonucunu da atayabilirsiniz `bind1st` işlevi bir [std::function](../../standard-library/function-class.md) kullanın ya da nesne `auto` anahtar sözcüğü, aşağıdaki örnekte gösterildiği gibi.
+
+[!code-cpp[concrt-call-method#2](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_4.cpp)]
+
+## <a name="compiling-the-code"></a>Kod Derleniyor
+
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `call.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+
+**cl.exe/ehsc call.cpp**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
+[Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
+[Nasıl yapılır: Veri İşlem Hattında transformer Kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)<br/>
+[call Sınıfı](../../parallel/concrt/reference/call-class.md)<br/>
+[transformer Sınıfı](../../parallel/concrt/reference/transformer-class.md)

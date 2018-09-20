@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2e9e13f7b5838cb13497dd874f7f0cf42f34e98
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6ec12275291321751c539d095c60fa9dabffa2b7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200152"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46445184"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet sınıfı
 
@@ -181,7 +181,7 @@ void AddPage(CPropertyPage* pPage);
 
 ### <a name="parameters"></a>Parametreler
 
-*fsayfa*  
+*fsayfa*<br/>
 Özellik sayfasına eklenecek sayfayı işaret eder. NULL olamaz.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -237,25 +237,25 @@ void Construct(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDCaption*  
+*nIDCaption*<br/>
 Özellik sayfası için kullanılacak resim yazısı kimliği.
 
-*pParentWnd*  
+*pParentWnd*<br/>
 Özellik sayfasının üst pencere işaretçisi. NULL ise, ana pencereyi uygulamanın ana pencere olacaktır.
 
-*iSelectPage*  
+*iSelectPage*<br/>
 Başlangıçta en üstte olacak sayfasının dizini. Varsayılan sayfasına eklenen ilk sayfa verilmiştir.
 
-*pszCaption*  
+*pszCaption*<br/>
 Özellik sayfası için kullanılacak resim yazısını içeren bir dize işaretçisi. NULL olamaz.
 
-*hbmWatermark*  
+*hbmWatermark*<br/>
 Özellik sayfasının Filigran bit eşlem işleyin.
 
-*hpalWatermark*  
+*hpalWatermark*<br/>
 Filigran bit eşlem ve/veya üst bilgi bit eşlem paleti işleyin.
 
-*hbmHeader*  
+*hbmHeader*<br/>
 Özellik sayfasının başlığı bit eşlem işleyin.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -312,25 +312,25 @@ CPropertySheet(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDCaption*  
+*nIDCaption*<br/>
 Özellik sayfası için kullanılacak resim yazısı kimliği.
 
-*pParentWnd*  
+*pParentWnd*<br/>
 Özellik sayfasının üst pencere işaret. NULL ise, ana pencereyi uygulamanın ana pencere olacaktır.
 
-*iSelectPage*  
+*iSelectPage*<br/>
 Başlangıçta en üstte olacak sayfasının dizini. Varsayılan sayfasına eklenen ilk sayfa verilmiştir.
 
-*pszCaption*  
+*pszCaption*<br/>
 Özellik sayfası için kullanılacak resim yazısını içeren bir dize işaret eder. NULL olamaz.
 
-*hbmWatermark*  
+*hbmWatermark*<br/>
 Arka plan bit eşlem özellik sayfası için bir tanıtıcı.
 
-*hpalWatermark*  
+*hpalWatermark*<br/>
 Filigran bit eşlem ve/veya üst bilgi bit eşlem paletini işleyici.
 
-*hbmHeader*  
+*hbmHeader*<br/>
 Özellik sayfasının başlığı bit eşlem işleyici.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -357,13 +357,13 @@ virtual BOOL Create(CWnd* pParentWnd = NULL,
 
 ### <a name="parameters"></a>Parametreler
 
-*pParentWnd*  
+*pParentWnd*<br/>
 Üst penceresine işaret eder. NULL ise, Masaüstü üst öğesidir.
 
-*dwStyle*  
+*dwStyle*<br/>
 Özellik sayfası için pencere stilleri. Kullanılabilir stiller tam bir listesi için bkz. [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).
 
-*dwExStyle*  
+*dwExStyle*<br/>
 Özellik sayfası için genişletilmiş pencere stilleri. Kullanılabilir stiller tam bir listesi için bkz. [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -445,7 +445,7 @@ void EnableStackedTabs(BOOL bStacked);
 
 ### <a name="parameters"></a>Parametreler
 
-*bStacked*  
+*bStacked*<br/>
 Yığılmış sekmeleri ve özellik sayfasında etkin olup olmadığını gösterir. Yığılmış satır etiket ayarlayarak devre dışı bırakmanız *bStacked* false.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -468,7 +468,7 @@ void EndDialog(int nEndID);
 
 ### <a name="parameters"></a>Parametreler
 
-*nEndID*  
+*nEndID*<br/>
 Özellik sayfası dönüş değeri olarak kullanılacak tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -527,7 +527,7 @@ CPropertyPage* GetPage(int nPage) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nPage*  
+*nPage*<br/>
 İstenen sayfanın dizini 0'dan başlayan. 0 ile bir özellik sayfasını, kapsamlı sayfalarında sayısından küçük olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -564,7 +564,7 @@ int GetPageIndex(CPropertyPage* pPage);
 
 ### <a name="parameters"></a>Parametreler
 
-*fsayfa*  
+*fsayfa*<br/>
 Dizini bulunacak sayfasıyla işaret eder. NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -623,7 +623,7 @@ void MapDialogRect(LPRECT lpRect) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*  
+*lpRect*<br/>
 İşaret eden bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) iletişim kutusu içeren nesne koordinatları dönüştürülecek.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -664,7 +664,7 @@ void PressButton(int nButton);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ndüğme*  
+*Ndüğme*<br/>
 Ndüğme: düğmesine basıldığında tanımlar. Bu parametre aşağıdaki değerlerden biri olabilir:
 
 - PSBTN_BACK geri düğmesini seçer.
@@ -702,10 +702,10 @@ void RemovePage(int nPage);
 
 ### <a name="parameters"></a>Parametreler
 
-*fsayfa*  
+*fsayfa*<br/>
 Özellik sayfasından kaldırılması için sayfayı işaret eder. NULL olamaz.
 
-*nPage*  
+*nPage*<br/>
 Kaldırılacak sayfanın dizini. 0 ile bir özellik sayfasını, kapsamlı sayfalarında sayısından küçük olmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -723,10 +723,10 @@ BOOL SetActivePage(CPropertyPage* pPage);
 
 ### <a name="parameters"></a>Parametreler
 
-*nPage*  
+*nPage*<br/>
 Ayarlanacak sayfasının dizini. 0 ile bir özellik sayfasını, kapsamlı sayfalarında sayısından daha az arasında olmalıdır.
 
-*fsayfa*  
+*fsayfa*<br/>
 Özellik sayfasında ayarlamak için sayfayı işaret eder. NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -751,7 +751,7 @@ void SetFinishText(LPCTSTR lpszText);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszText*  
+*lpszText*<br/>
 Son komut düğmesini görüntülenecek metni işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -774,10 +774,10 @@ void SetTitle(
 
 ### <a name="parameters"></a>Parametreler
 
-*nStyle*  
+*nStyle*<br/>
 Özellik sayfası başlığı stilini belirtir. Stil, 0 veya PSH_PROPTITLE olarak belirtilmelidir. Stil PSH_PROPTITLE ayarlanırsa, resim yazısı olarak belirtilen metin sonra "Özellikler" sözcüğü görünür. Örneğin, çağırma `SetTitle`("Basit", PSH_PROPTITLE) "Basit özellikler." bir özellik sayfası başlığı neden olur
 
-*lpszText*  
+*lpszText*<br/>
 Başlık çubuğunda özellik sayfasının başlığı olarak kullanılacak metin işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -798,7 +798,7 @@ void SetWizardButtons(DWORD dwFlags);
 
 ### <a name="parameters"></a>Parametreler
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Sihirbazı düğmelerin görünümünü ve işlevini Özelleştir bayrak kümesi. Bu parametre aşağıdaki değerleri birleşimi olabilir:
 
 - PSWIZB_BACK geri düğmesi
@@ -847,9 +847,9 @@ Bir anahtar Özellik Sayfası Sihirbazı kullanıcı kullanarak ileri gider veya
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[MFC örnek CMNCTRL1](../../visual-cpp-samples.md)  
-[MFC örnek CMNCTRL2](../../visual-cpp-samples.md)  
-[MFC örnek PROPDLG](../../visual-cpp-samples.md)  
-[MFC örnek SNAPVW](../../visual-cpp-samples.md)  
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)  
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)  
+[MFC örnek CMNCTRL1](../../visual-cpp-samples.md)<br/>
+[MFC örnek CMNCTRL2](../../visual-cpp-samples.md)<br/>
+[MFC örnek PROPDLG](../../visual-cpp-samples.md)<br/>
+[MFC örnek SNAPVW](../../visual-cpp-samples.md)<br/>
+[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

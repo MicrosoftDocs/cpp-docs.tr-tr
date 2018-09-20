@@ -15,39 +15,41 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ae83c3e41ebabf62ad98211f3943af2b535c806
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 988b16bb58462b42b8d4412a821cfc3fac5b4878
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929513"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46443988"
 ---
 # <a name="rebar-controls-and-bands"></a>Rebar Denetimleri ve Bantları
-Alt pencereler, ortak iletişim kutusu denetimleri, menüler, araç çubukları ve benzeri için kapsayıcı olarak hareket edecek bir rebar denetimi ana amacı budur. Bu kapsama bir "bant." kavramı tarafından desteklenir Her rebar bant Mandal çubuğu, bir bit eşlem, bir metin etiketi ve alt pencere herhangi bir birleşimini içerebilir.  
-  
- Sınıf `CReBarCtrl` almak için kullanın ve işlemek, bilgi belirli rebar bant için çok sayıda üye işlevleri vardır:  
-  
--   [GetBandCount](../mfc/reference/crebarctrl-class.md#getbandcount) rebar denetiminde geçerli Bantların sayısı alır.  
-  
--   [GetBandInfo](../mfc/reference/crebarctrl-class.md#getbandinfo) başlatır bir **REBARBANDINFO** belirtilen bant bilgileriyle yapısı. Var olan bir karşılık gelen [SetBandInfo](../mfc/reference/crebarctrl-class.md#setbandinfo) üye işlevi.  
-  
--   [GetRect](../mfc/reference/crebarctrl-class.md#getrect) belirtilen bant sınırlayıcı dikdörtgenini alır.  
-  
--   [GetRowCount](../mfc/reference/crebarctrl-class.md#getrowcount) bir rebar denetiminde bant satır sayısını alır.  
-  
--   [IDToIndex](../mfc/reference/crebarctrl-class.md#idtoindex) belirtilen bant dizinini alır.  
-  
--   [GetBandBorders](../mfc/reference/crebarctrl-class.md#getbandborders) bir bant Kenarlıklar alır.  
-  
- İşleme ek olarak, belirli rebar bantları üzerinde çalışmasına izin veren birkaç üye işlevleri sağlanır.  
-  
- [InsertBand](../mfc/reference/crebarctrl-class.md#insertband) ve [DeleteBand](../mfc/reference/crebarctrl-class.md#deleteband) ekleme ve rebar bantları kaldırma. [MinimizeBand](../mfc/reference/crebarctrl-class.md#minimizeband) ve [MaximizeBand](../mfc/reference/crebarctrl-class.md#maximizeband) belirli rebar bant boyutunu etkiler. [MoveBand](../mfc/reference/crebarctrl-class.md#moveband) belirli rebar bant dizinini değiştirir. [ShowBand](../mfc/reference/crebarctrl-class.md#showband) gösterir veya rebar bant kullanıcıdan gizler.  
-  
- Aşağıdaki örnek, bir araç bant ekleme gösterir (*m_wndToolBar*) var olan bir rebar denetimi (*m_wndReBar*). Bant başlatarak açıklanan `rbi` yapısı ve ardından çağırma `InsertBand` üye fonksiyonu:  
-  
- [!code-cpp[NVC_MFCControlLadenDialog#27](../mfc/codesnippet/cpp/rebar-controls-and-bands_1.cpp)]  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CReBarCtrl kullanma](../mfc/using-crebarctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Rebar denetimiyle ana amacı, alt pencereler, ortak iletişim kutusu denetimleri, menüler, araç çubukları ve benzeri için kapsayıcı olarak davranır sağlamaktır. Bu kapsama bir "bant." kavramı tarafından desteklenir Her çubuk barınağı bant kavrayıcı çubuğu, bir bit eşlem, bir metin etiketi ve alt pencere herhangi bir birleşimini içerebilir.
+
+Sınıf `CReBarCtrl` almak için kullanın ve işlemek, bilgi belirli çubuk barınağı bant için birçok üye işlevleri vardır:
+
+- [GetBandCount](../mfc/reference/crebarctrl-class.md#getbandcount) rebar denetiminde geçerli bantları sayısını alır.
+
+- [GetBandInfo](../mfc/reference/crebarctrl-class.md#getbandinfo) başlatan bir **REBARBANDINFO** belirtilen bant bilgileriyle yapısı. Var olan bir karşılık gelen [SetBandInfo](../mfc/reference/crebarctrl-class.md#setbandinfo) üye işlevi.
+
+- [GetRect](../mfc/reference/crebarctrl-class.md#getrect) belirtilen bant sınırlayıcı dikdörtgenini alır.
+
+- [GetRowCount](../mfc/reference/crebarctrl-class.md#getrowcount) bir rebar denetiminde bant satır sayısını alır.
+
+- [IDToIndex](../mfc/reference/crebarctrl-class.md#idtoindex) belirtilen bant dizinini alır.
+
+- [GetBandBorders](../mfc/reference/crebarctrl-class.md#getbandborders) bir bant kenarlıklarını alır.
+
+İşleme ek olarak, belirli rebar bantları üzerinde çalışmasına izin veren çeşitli üye işlevleri sağlanır.
+
+[InsertBand](../mfc/reference/crebarctrl-class.md#insertband) ve [DeleteBand](../mfc/reference/crebarctrl-class.md#deleteband) ekleyip rebar bantları kaldırabilirsiniz. [MinimizeBand](../mfc/reference/crebarctrl-class.md#minimizeband) ve [MaximizeBand](../mfc/reference/crebarctrl-class.md#maximizeband) belirli çubuk barınağı bant geçerli boyutunu etkiler. [MoveBand](../mfc/reference/crebarctrl-class.md#moveband) belirli çubuk barınağı bant dizinini değiştirir. [ShowBand](../mfc/reference/crebarctrl-class.md#showband) gösterir veya gizler kullanıcıdan bir çubuk barınağı bant.
+
+Aşağıdaki örnek, bir araç çubuğu bant ekleme gösterir (*m_wndToolBar*) var olan bir çubuk barınağı denetimi (*m_wndReBar*). Bant başlatarak açıklanan `rbi` yapısı ve ardından arama `InsertBand` üye işlevi:
+
+[!code-cpp[NVC_MFCControlLadenDialog#27](../mfc/codesnippet/cpp/rebar-controls-and-bands_1.cpp)]
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CReBarCtrl Kullanma](../mfc/using-crebarctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

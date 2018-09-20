@@ -1,5 +1,5 @@
 ---
-title: --Geçersiz kılınabilir yorum | Microsoft Docs
+title: --Geçersiz kılınabilen öğelerle ilgili açıklama | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,32 +17,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a1b9b04647717fc5892421f2b45947ebd079a0c
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: d50fb62767f2130e89cb75df5d66f8c18ce2a097
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36928733"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46428063"
 ---
 # <a name="-overridables-comment"></a>// Geçersiz Kılınabilen Öğelerle İlgili Açıklama
-`// Overridables` Bir MFC sınıf bildirimi bölümü temel sınıf davranışını değiştirmek gerektiğinde, türetilen bir sınıfta geçersiz kılabilirsiniz sanal işlevler içerir. Kesinlikle gerekli olmasa da bunlar genellikle "ile", başlangıç olarak adlandırılır. Burada işlevleri geçersiz kılınması, genellikle uygulamak veya "geri çağırma" veya "bağlayın." çeşit sağlamak için tasarlanmıştır Genellikle, bu üyeler korunur.  
-  
- MFC'de kendisi, saf sanal işlevler her zaman bu bölümde yerleştirilir. Saf sanal işlevi c++ formun biridir:  
-  
- `virtual void OnDraw( ) = 0;`  
-  
- Sınıfından listeleme örnekteki `CStdioFile`, [açıklamalara bir örnek](../mfc/an-example-of-the-comments.md), liste geçersiz kılınabilir bölüm içerir. Sınıf `CDocument`, diğer yandan, yaklaşık olarak 10 geçersiz kılınabilir üye işlevleri listeler.  
-  
- Bazı sınıflarda açıklama da görebilirsiniz `// Advanced Overridables`. Yalnızca gelişmiş işlevler bunlar programcıları geçersiz kılmak denemesi. Büyük olasılıkla asla kılınacağını gerekecektir.  
-  
+
+`// Overridables` Bölümü bir MFC sınıf bildiriminin temel sınıf davranışını değiştirmek, ihtiyacınız olduğunda, türetilen bir sınıfta geçersiz kılabilirsiniz sanal işlevler içerir. Kesinlikle gerekli olmasa da bunlar genellikle "ile", başlangıç olarak adlandırılır. Burada işlevleri geçersiz kılınması, genellikle uygulamak veya "geri" veya "kanca" çeşit sağlamak için tasarlanmıştır Genellikle, bu üyeler korunur.
+
+MFC'de kendisi, saf sanal işlevler, her zaman bu bölümde yerleştirilir. C++'ta saf sanal işlevi, formu biridir:
+
+`virtual void OnDraw( ) = 0;`
+
+Sınıf listesi örneği'nde `CStdioFile`, [açıklamalara bir örnek](../mfc/an-example-of-the-comments.md), liste geçersiz kılınabilen öğelerle ilgili bölüm içerir. Sınıf `CDocument`, diğer taraftan, yaklaşık 10 geçersiz kılınabilir üye işlevleri listeler.
+
+Bazı sınıflarda da yorumu görebilirsiniz `// Advanced Overridables`. Bunlar yalnızca gelişmiş işlevleri programcılar geçersiz kılma girişiminde. Muhtemelen hiçbir zaman bunları geçersiz kılmak gerekir.
+
 > [!NOTE]
->  Bu makalede açıklanan kuralları aynı zamanda da genel olarak, otomasyon (önceki adıyla OLE Otomasyon bilinir) yöntemleri ve özellikleri için çalışır. Otomasyon yöntemleri MFC işlemleri benzerdir. Otomasyon özellikleri, MFC öznitelikleri benzerdir. MFC geçersiz kılınabilir üye işlevleri (eski adıyla OLE denetimleri ActiveX denetimleri için desteklenir) Otomasyon olayları benzerdir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC kaynak dosyalarını kullanma](../mfc/using-the-mfc-source-files.md)   
- [Açıklamalara bir örnek](../mfc/an-example-of-the-comments.md)   
- [Uygulama açıklaması](../mfc/decrement-implementation-comment.md)   
- [/ / Oluşturucu açıklaması](../mfc/decrement-constructors-comment.md)   
- [Özniteliklerle ilgili açıklama](../mfc/decrement-attributes-comment.md)   
- [/ / İşlem açıklaması](../mfc/decrement-operations-comment.md)
+>  Bu makalede açıklanan kuralları aynı zamanda da genel olarak, otomasyon (eski adıyla OLE Otomasyonu da bilinir) yöntemleri ve özellikleri için çalışır. Otomasyon yöntemleri MFC işlemlerine benzer. Otomasyon özellikleri, MFC öznitelikleri benzerdir. Otomasyon olaylarına (eski adı OLE denetimleri bilinen, ActiveX denetimleri için desteklenir) için MFC geçersiz kılınabilir üye işlevleri benzerdir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC Kaynak Dosyalarını Kullanma](../mfc/using-the-mfc-source-files.md)<br/>
+[Açıklamalara Bir Örnek](../mfc/an-example-of-the-comments.md)<br/>
+[Uygulama açıklaması](../mfc/decrement-implementation-comment.md)<br/>
+[/ / Oluşturucu açıklaması](../mfc/decrement-constructors-comment.md)<br/>
+[Özniteliklerle ilgili açıklama](../mfc/decrement-attributes-comment.md)<br/>
+[/ / İşlem açıklaması](../mfc/decrement-operations-comment.md)
 

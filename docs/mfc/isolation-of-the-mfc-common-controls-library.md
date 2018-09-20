@@ -1,5 +1,5 @@
 ---
-title: MFC ortak yalıtım denetimleri kitaplığı | Microsoft Docs
+title: MFC ortak yalıtım kitaplığı denetimleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,21 +14,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 193a0ea527cda3819a585f5b7149c823a7eb8ef7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3189b2e3db594801fe417ca43867da7db2e18fd7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346821"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423786"
 ---
 # <a name="isolation-of-the-mfc-common-controls-library"></a>MFC Ortak Denetimler Kitaplığını Yalıtma
-Ortak Denetimler kitaplığı şimdi farklı modülleri (örneğin, kullanıcı DLL'ler) izin vererek MFC içinde için yalıtılmış olduğundan kendi bildirimleri sürümü belirterek ortak denetimler kitaplığı farklı sürümlerini kullanın.  
-  
- Bir MFC uygulaması (veya kullanıcı kodu tarafından MFC denir) ortak denetimler kitaplığı API'leri sarmalayıcı işlevleri aracılığıyla adlı çağrılar `Afx` *FunctionName*, burada *FunctionName* bir ortak adı API denetler. Bu sarmalayıcı işlevleri afxcomctl32.h ve afxcomctl32.inl tanımlanır.  
-  
- Kullanabileceğiniz [afx_comctl32_ıf_exısts](reference/run-time-object-model-services.md#afx_comctl32_if_exists) ve [afx_comctl32_ıf_exısts2](reference/run-time-object-model-services.md#afx_comctl32_if_exists2) ortak denetimler kitaplığı çağırmak yerine belirli bir API uygulayan olup olmadığını belirlemek için makroları (tanımlıysa afxcomctl32.h) [GetProcAddress](../build/getprocaddress.md).  
-  
- Ortak Denetimler kitaplığı API çağrıları bir sarmalayıcı sınıfı aracılığıyla teknik olarak, yaptığınız `CComCtlWrapper` (afxcomctl32.h içinde tanımlanmış). `CComCtlWrapper` Ayrıca yükleme ve comctl32.dll eklentiyi sorumludur. MFC modül durumu örneği için bir işaretçi içeriyor `CComCtlWrapper`. Sarmalayıcı sınıfı kullanarak erişebilirsiniz `afxComCtlWrapper` makrosu.  
-  
- Çağırmanın Not doğrudan ortak denetimleri API (MFC sarmalayıcı işlevleri kullanarak değil) MFC Uygulama veya kullanıcı DLL kendi bildiriminde istenen ortak denetimler kitaplığı bağlı olduğundan, bir MFC'den uygulama veya kullanıcıya DLL çoğu durumda, çalışır). Ancak, MFC kodu kullanıcı DLL'leri farklı ortak denetimler kitaplığı sürümleriyle öğesinden çağrılması çünkü sarmalayıcıları kullanmak MFC kodu vardır.
+
+Ortak Denetimler kitaplığını artık MFC, farklı modülleri (örneğin, kullanıcı DLL'ler) izin içinde için yalıtılmış olduğundan, bildirimlerinde sürüm belirterek farklı sürümleri ortak denetimler kitaplığını kullanın.
+
+Bir MFC uygulaması (veya MFC tarafından çağrılan kullanıcı kodu) API'leri sarmalayıcı işlevleri aracılığıyla adlı ortak denetimler kitaplığını çağrılar `Afx` *FunctionName*burada *FunctionName* ortak adı API denetimlerin. Bu sarmalayıcı işlevleri afxcomctl32.h ve afxcomctl32.inl tanımlanır.
+
+Kullanabileceğiniz [afx_comctl32_ıf_exısts](reference/run-time-object-model-services.md#afx_comctl32_if_exists) ve [afx_comctl32_ıf_exısts2](reference/run-time-object-model-services.md#afx_comctl32_if_exists2) ortak denetimler kitaplığını çağırmak yerine belirli bir API'yi uygulayan olup olmadığını belirlemek için makroları (tanımlıysa afxcomctl32.h) [GetProcAddress](../build/getprocaddress.md).
+
+Ortak Denetimler kitaplığı API'lere giden çağrıların bir sarmalayıcı sınıfı aracılığıyla teknik olarak yaptığınız `CComCtlWrapper` (afxcomctl32.h içinde tanımlanmıştır). `CComCtlWrapper` Ayrıca yükleme ve kaldırma comctl32.dll için sorumlu değildir. MFC modül durumunda örneğine bir işaretçi içeren `CComCtlWrapper`. Sarmalayıcı sınıfı kullanarak erişebileceğiniz `afxComCtlWrapper` makrosu.
+
+Çağırmanın Not doğrudan ortak denetimleri API (MFC sarmalayıcı işlevleri kullanarak değil), bildirimde istenen ortak denetimler kitaplığını MFC Uygulama veya kullanıcıya DLL bağlı olduğundan bir MFC'den uygulama veya kullanıcıya DLL çoğu durumda çalışır). MFC kodu farklı ortak denetimleri kitaplık sürümleri ile kullanıcı DLL'leri öğesinden çağrılması çünkü ancak, MFC kodu sarmalayıcıları kullanması gerekir.
 

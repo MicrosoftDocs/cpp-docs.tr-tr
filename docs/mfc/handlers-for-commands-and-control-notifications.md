@@ -20,29 +20,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60c66beb3c0c8874bd3d678bfc4331dc766c443a
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: bda42393cd55b60ab787665b51957bb2f94c5df3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929137"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430091"
 ---
 # <a name="handlers-for-commands-and-control-notifications"></a>Komutlar ve Denetim Bildirimleri için İşleyiciler
-Komutları veya denetim bildirimi iletileri için hiçbir varsayılan işleyiciler vardır. Bu nedenle, bu kategorilerdeki iletileri için işleyicileri adlandırma, yalnızca kural tarafından bağlıdır. Bir işleyiciye komut veya denetim bildirim eşlediğinizde özellikleri windows komut kimliği veya denetim bildirimi koduna göre bir ad önerir. Önerilen adı kabul edin veya değiştirmek.  
-  
- Kuralı, hem kategorilerdeki işleyicileri temsil ettikleri kullanıcı arabirimi nesnesi için ad önerir. Bu nedenle Düzen menüsünde kesme komutu için bir işleyici adlandırılmış olabilir  
-  
- [!code-cpp[NVC_MFCMessageHandling#4](../mfc/codesnippet/cpp/handlers-for-commands-and-control-notifications_1.h)]  
-  
- Cut komutu kadar sık uygulamalarda uygulanan çünkü framework Kes komut olarak komut kimliği önceden belirler **ıd_edıt_cut**. Tüm önceden tanımlanmış komut kimlikleri listesi için AFXRES dosyasına bakın. H. Daha fazla bilgi için bkz: [standart komutları](../mfc/standard-commands.md).  
-  
- Buna ek olarak, kural için bir işleyici öneren **BN_CLICKED** "My Button" etiketli bir düğme bildirim iletisi adlandırılmış  
-  
- [!code-cpp[NVC_MFCMessageHandling#5](../mfc/codesnippet/cpp/handlers-for-commands-and-control-notifications_2.h)]  
-  
- Bu komut kimliği atayabilecek **IDC_MY_BUTTON** , uygulamaya özgü kullanıcı arabirimi nesneye eşdeğer olduğundan.  
-  
- Her iki kategorilerdeki iletileri bağımsız değişkenler almayan ve herhangi bir değer döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İleti İşleyici İşlevlerini Bildirme](../mfc/declaring-message-handler-functions.md)
+
+Komutları veya denetim bildirimi iletileri için hiçbir varsayılan işleyicileri vardır. Bu nedenle, bu iletileri kategoriler için İşleyicileriniz adlandırma, yalnızca kural tarafından bağlıdır. Komut veya denetim bildirimi için bir işleyici eşlemesini özellikleri windows komut kimliği veya denetim bildirimi koduna göre adları önerir. Önerilen adını kabul edin veya değiştirin.
+
+Her iki kategoriye işleyicileri için kullanıcı arabirimi nesnesi temsil ettikleri ad kuralı önerir. Bu nedenle Düzen menüsünde Cut komutu için bir işleyici adlandırılmış olabilir
+
+[!code-cpp[NVC_MFCMessageHandling#4](../mfc/codesnippet/cpp/handlers-for-commands-and-control-notifications_1.h)]
+
+Cut komutu uygulamalarında yaygın olarak bu nedenle uygulandığından framework kesme komutu için komut Kimliğini önceden belirler **ıd_edıt_cut**. Tüm önceden tanımlanmış komut kimlikleri listesi için ' % s'dosyasına AFXRES bakın. H Daha fazla bilgi için [standart komutlar](../mfc/standard-commands.md).
+
+Ayrıca, kural için bir işleyici önerir **BN_CLICKED** "Düğmem" etiketli bir düğme bildirim iletisinden adlandırılmış
+
+[!code-cpp[NVC_MFCMessageHandling#5](../mfc/codesnippet/cpp/handlers-for-commands-and-control-notifications_2.h)]
+
+Bu komut kimliği atayabilirsiniz **IDC_MY_BUTTON** uygulamaya özel kullanıcı arabirimi nesneye eşdeğer olduğundan.
+
+Her iki türdeki iletileri bağımsız değişken almaz ve herhangi bir değer döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İleti İşleyici İşlevlerini Bildirme](../mfc/declaring-message-handler-functions.md)

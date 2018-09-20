@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6976669127dca79be59b85efbd15273b0f580a1
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 08fc6f6a5b93851468d412e34b3ee0a85ab534e5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43132068"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46413256"
 ---
 # <a name="dynamic-layout"></a>Dinamik Düzen
 
@@ -153,8 +153,8 @@ Dinamik düzen davranışı bir iletişim kutusu için kaynak düzenleyicisini k
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CMFCDynamicLayout Sınıfı](../mfc/reference/cmfcdynamiclayout-class.md)  
-[Denetim Sınıfları](../mfc/control-classes.md)  
-[İletişim Kutusu Sınıfları](../mfc/dialog-box-classes.md)  
-[İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)  
+[CMFCDynamicLayout Sınıfı](../mfc/reference/cmfcdynamiclayout-class.md)<br/>
+[Denetim Sınıfları](../mfc/control-classes.md)<br/>
+[İletişim Kutusu Sınıfları](../mfc/dialog-box-classes.md)<br/>
+[İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)<br/>
 [Visual C++ 2015'te MFC için dinamik iletişim düzeni](https://mariusbancila.ro/blog/2015/07/27/dynamic-dialog-layout-for-mfc-in-visual-c-2015/)
