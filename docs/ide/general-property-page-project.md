@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6be3ef7609819c34209a9b8959bfd883a836db04
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 4d68cf6be3a512d478f4d7808ce321f18c0efd84
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716366"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422279"
 ---
 # <a name="general-property-page-project"></a>Genel Özellik Sayfası (Proje)
 
@@ -127,7 +127,7 @@ Proje varsayılanı bölümündeki özellikler değiştirebileceğiniz varsayıl
       Bağlayıcı araç takımını (C/C++ Derleyici, MIDL, kaynak derleyici, bağlayıcı, BSCMake, XML Web Hizmeti Proxy üreticisi, özel yapı, prebuild, prelink, postbuild olayları) görüntüler.
 
    - **Dinamik kitaplık (.dll)**
-   
+
       Bağlayıcı araç takımını görüntüler, / DLL bağlayıcı seçeneğini belirtir ve _wındll öğesini CL öğesine ekler.
 
    - **Derleme görevleri dosyası**
@@ -139,7 +139,7 @@ Proje varsayılanı bölümündeki özellikler değiştirebileceğiniz varsayıl
       Kitaplıkçı araç kümesini (bağlayıcı araç takımını, kitaplıkçı bağlayıcı için yedek ve XML Web Hizmeti Proxy üreticisi çıkarın dışında aynı) görüntüler.
 
    - **yardımcı programı**
-   
+
       Yardımcı araç takımını (MIDL, özel yapı, prebuild, postbuild olayları) görüntüler.
 
    Bu özelliğe program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType%2A>.
@@ -182,4 +182,4 @@ Proje varsayılanı bölümündeki özellikler değiştirebileceğiniz varsayıl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özellik Sayfaları](../ide/property-pages-visual-cpp.md)  
+[Özellik Sayfaları](../ide/property-pages-visual-cpp.md)

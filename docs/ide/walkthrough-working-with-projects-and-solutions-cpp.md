@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d33e01ff455e47a94356dab455e9a4628cc68178
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: abd65d209bf24fb9285937cc998bd82d5ef3cb4f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017788"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46418170"
 ---
 # <a name="walkthrough-working-with-projects-and-solutions-c"></a>İzlenecek Yol: Projelerle ve Çözümlerle Çalışma (C++)
 
@@ -177,7 +177,7 @@ Yeni işlevleri test uygulamanıza kod ekleyin.
        return 0;
    }
    ```
-Bu kod, bir test işlevi ekler `PlayGames`kaynak kodu ve çağrı içinde `main`. 
+Bu kod, bir test işlevi ekler `PlayGames`kaynak kodu ve çağrı içinde `main`.
 
 ## <a name="build-and-run-your-app-project"></a>Derleme ve uygulama projenizi çalıştırma
 
