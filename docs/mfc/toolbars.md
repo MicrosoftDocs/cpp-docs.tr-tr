@@ -15,31 +15,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4477a06e6b181da01eea0e1636406b0cd7023912
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bcd7e0a1b2786a92d7a0e64b85417ddb82c82871
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381354"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46437800"
 ---
 # <a name="toolbars"></a>Araç Çubukları
-MFC araç çubukları ve oluşturmak ve bunları nasıl makaleleri araç ailesi açıklar.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [MFC araç çubuğu uygulaması](../mfc/mfc-toolbar-implementation.md)  
-  
--   [Araç çubuğu temelleri](../mfc/toolbar-fundamentals.md)  
-  
--   [Güncelleştirme kullanıcı arabirimi (etkinleştir/araç çubuğu düğmelerini devre dışı bırak) nesnelerini nasıl](../mfc/how-to-update-user-interface-objects.md)  
-  
--   [CToolBar](../mfc/reference/ctoolbar-class.md) ve [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) sınıfları  
-  
--   [Örnek](../mfc/toolbar-sample-list.md)  
-  
- MFC araç çubukları hakkında daha fazla bilgi için makale Q232017, "Nasıl yapılır: ekleme metin için araç çubuğu düğmeleri," adresindeki Microsoft Bilgi Bankası'nda bkz. http://support.microsoft.com.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)   
- [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
+
+MFC araç çubukları ve oluşturmak ve bunları kullanmak nasıl makaleleri araç ailesi açıklar.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [MFC araç çubuğu uygulaması](../mfc/mfc-toolbar-implementation.md)
+
+- [Araç çubuğu temelleri](../mfc/toolbar-fundamentals.md)
+
+- [Kullanıcı Arabirimi (etkinleştir/araç çubuğu düğmeleri devre dışı bırak) nesnelerini güncelleştirme](../mfc/how-to-update-user-interface-objects.md)
+
+- [CToolBar](../mfc/reference/ctoolbar-class.md) ve [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) sınıfları
+
+- [Örnek](../mfc/toolbar-sample-list.md)
+
+MFC araç çubukları hakkında daha fazla bilgi için makalede Q232017, "Nasıl yapılır: ekleme metin için araç çubuğu düğmeleri," adresindeki Microsoft Bilgi Bankası'nda bkz. http://support.microsoft.com.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)<br/>
+[Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
 

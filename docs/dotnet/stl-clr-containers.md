@@ -16,298 +16,310 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: ce6a2f096e5ee24716fcffd89411ffdf926a59aa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 40fe43accafb6fa9e217f5d7835d7533e7674e72
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33173144"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46418560"
 ---
 # <a name="stlclr-containers"></a>STL/CLR Kapsayıcıları
-STL/CLR kitaplığı için C++ Standart Kitaplığı'nda bulunan aynı kapsayıcıları olsa da, .NET Framework yönetilen ortamında çalışır. C++ Standart kitaplığı ile bilginiz varsa, STL/CLR hedef ortak dil çalışma zamanı (CLR) kodunuzu yükseltirken zaten geliştirdik becerileri kullanmaya devam etmek için en iyi yoludur.  
-  
- Bu belge kapsayıcıları STL/CLR kapsayıcı öğeleri, kapsayıcılarına ekleyebilir ve sahipliği kapsayıcılarında öğeleri sorunlar öğelerinin türleri için gereksinimler gibi genel bir bakış sağlar. Uygun olan yerlerde, yerel C++ Standart Kitaplığı ve STL/CLR arasındaki farklar anlatılmaktadır.  
-  
-## <a name="requirements-for-container-elements"></a>Kapsayıcı öğeleri için gereksinimler  
- C++ Standart Kitaplığı kapsayıcılarına eklenen tüm öğeleri belirli yönergeleri uyma gerekir. Daha fazla bilgi için bkz: [STL/CLR kapsayıcı öğeleri için gereksinimler](../dotnet/requirements-for-stl-clr-container-elements.md).  
-  
-## <a name="valid-container-elements"></a>Geçerli kapsayıcı öğeler  
- STL/CLR kapsayıcı öğeleri iki tür birini içerebilir:  
-  
--   Başvuru türleri için işler.  
-  
--   Başvuru türleri.  
-  
--   Sarmalanmamış değer türleri.  
-  
- Paketlenmiş değer türleri STL/CLR kapsayıcıları hiçbirine ekleyemiyor.  
-  
-### <a name="handles-to-reference-types"></a>Başvuru türleri tanıtıcıları  
- STL/CLR kapsayıcısına bir başvuru türü için bir tanıtıcı ekleyebilirsiniz. Bir tanıtıcı CLR'yi hedefleyen C++'ta, yerel C++'ta bir işaretçi benzerdir. Daha fazla bilgi için bkz: [işlemek nesne işleci (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md).  
-  
-#### <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir çalışan nesnesine işleyici eklemek gösterilmiştir bir [cliext::set](../dotnet/set-stl-clr.md).  
-  
-```  
-// cliext_container_valid_reference_handle.cpp  
-// compile with: /clr  
-  
-#include <cliext/set>  
-  
-using namespace cliext;  
-using namespace System;  
-  
-ref class Employee  
-{  
-public:  
-    // C++ Standard Library containers might require a public constructor, so it  
-    // is a good idea to define one.  
-    Employee() :  
-        name(nullptr),  
-        employeeNumber(0) { }  
-  
-    // All C++ Standard Library containers require a public copy constructor.  
-    Employee(const Employee% orig) :  
-        name(orig.name),  
-        employeeNumber(orig.employeeNumber) { }  
-  
-    // All C++ Standard Library containers require a public assignment operator.  
-    Employee% operator=(const Employee% orig)  
-    {  
-        if (this != %orig)  
-        {  
-            name = orig.name;  
-            employeeNumber = orig.employeeNumber;  
-        }  
-  
-        return *this;  
-    }  
-  
-    // All C++ Standard Library containers require a public destructor.  
-    ~Employee() { }  
-  
-    // Associative containers such as maps and sets  
-    // require a comparison operator to be defined  
-    // to determine proper ordering.  
-    bool operator<(const Employee^ rhs)  
-    {  
-        return (employeeNumber < rhs->employeeNumber);  
-    }  
-  
-    // The employee's name.  
-    property String^ Name  
-    {  
-        String^ get() { return name; }  
-        void set(String^ value) { name = value; }  
-    }  
-  
-    // The employee's employee number.  
-    property int EmployeeNumber  
-    {  
-        int get() { return employeeNumber; }  
-        void set(int value) { employeeNumber = value; }  
-    }  
-  
-private:  
-    String^ name;  
-    int employeeNumber;  
-};  
-  
-int main()  
-{  
-    // Create a new employee object.  
-    Employee^ empl1419 = gcnew Employee();  
-    empl1419->Name = L"Darin Lockert";  
-    empl1419->EmployeeNumber = 1419;  
-  
-    // Add the employee to the set of all employees.  
-    set<Employee^>^ emplSet = gcnew set<Employee^>();  
-    emplSet->insert(empl1419);  
-  
-    // List all employees of the company.  
-    for each (Employee^ empl in emplSet)  
-    {  
-        Console::WriteLine("Employee Number {0}: {1}",  
-            empl->EmployeeNumber, empl->Name);  
-    }  
-  
-    return 0;  
-}  
-```  
-  
-### <a name="reference-types"></a>Başvuru Türleri  
- STL/CLR kapsayıcısına bir başvuru türü (bir başvuru türü için bir tanıtıcı yerine) eklemek mümkündür. Ana burada yıkıcı bir kapsayıcı başvurusu türlerinin silindiğinde, bu kapsayıcı içindeki tüm öğeler için çağrıldığından emin farktır. Başvuru türleri işleyicilerine kapsayıcısında bu öğeler için Yıkıcılar çağrılması değil.  
-  
-#### <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir çalışan nesnesine eklemek gösterilmiştir bir `cliext::set`.  
-  
-```  
-// cliext_container_valid_reference.cpp  
-// compile with: /clr  
-  
-#include <cliext/set>  
-  
-using namespace cliext;  
-using namespace System;  
-  
-ref class Employee  
-{  
-public:  
-    // C++ Standard Library containers might require a public constructor, so it  
-    // is a good idea to define one.  
-    Employee() :  
-        name(nullptr),  
-        employeeNumber(0) { }  
-  
-    // All C++ Standard Library containers require a public copy constructor.  
-    Employee(const Employee% orig) :  
-        name(orig.name),  
-        employeeNumber(orig.employeeNumber) { }  
-  
-    // All C++ Standard Library containers require a public assignment operator.  
-    Employee% operator=(const Employee% orig)  
-    {  
-        if (this != %orig)  
-        {  
-            name = orig.name;  
-            employeeNumber = orig.employeeNumber;  
-        }  
-  
-        return *this;  
-    }  
-  
-    // All C++ Standard Library containers require a public destructor.  
-    ~Employee() { }  
-  
-    // Associative containers such as maps and sets  
-    // require a comparison operator to be defined  
-    // to determine proper ordering.  
-    bool operator<(const Employee^ rhs)  
-    {  
-        return (employeeNumber < rhs->employeeNumber);  
-    }  
-  
-    // The employee's name.  
-    property String^ Name  
-    {  
-        String^ get() { return name; }  
-        void set(String^ value) { name = value; }  
-    }  
-  
-    // The employee's employee number.  
-    property int EmployeeNumber  
-    {  
-        int get() { return employeeNumber; }  
-        void set(int value) { employeeNumber = value; }  
-    }  
-  
-private:  
-    String^ name;  
-    int employeeNumber;  
-};  
-  
-int main()  
-{  
-    // Create a new employee object.  
-    Employee empl1419;  
-    empl1419.Name = L"Darin Lockert";  
-    empl1419.EmployeeNumber = 1419;  
-  
-    // Add the employee to the set of all employees.  
-    set<Employee>^ emplSet = gcnew set<Employee>();  
-    emplSet->insert(empl1419);  
-  
-    // List all employees of the company.  
-    for each (Employee^ empl in emplSet)  
-    {  
-        Console::WriteLine("Employee Number {0}: {1}",  
-            empl->EmployeeNumber, empl->Name);  
-    }  
-  
-    return 0;  
-}  
-```  
-  
-### <a name="unboxed-value-types"></a>Sarmalanmamış değer türleri  
- STL/CLR kapsayıcısına sarmalanmamış değer türü de ekleyebilirsiniz. Sarmalanmamış değer türü değiştirilmediğinden bir değer türüdür *Kutulu* içine bir başvuru türü.  
-  
- Değer türü öğesini standart değer türleri gibi biri olabilir bir `int`, veya bir kullanıcı tanımlı bir değer türü gibi bir `value class`. Daha fazla bilgi için bkz: [sınıflar ve yapılar](../windows/classes-and-structs-cpp-component-extensions.md)  
-  
-#### <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir değer türü sınıf çalışan yaparak ilk örnek değiştirir. Bu değer türü sonra içine eklenen bir `cliext::set` yalnızca ilk örnekte olduğu gibi.  
-  
-```  
-// cliext_container_valid_valuetype.cpp  
-// compile with: /clr  
-  
-#include <cliext/set>  
-  
-using namespace cliext;  
-using namespace System;  
-  
-value class Employee  
-{  
-public:  
-    // Associative containers such as maps and sets  
-    // require a comparison operator to be defined  
-    // to determine proper ordering.  
-    bool operator<(const Employee^ rhs)  
-    {  
-        return (employeeNumber < rhs->employeeNumber);  
-    }  
-  
-    // The employee's name.  
-    property String^ Name  
-    {  
-        String^ get() { return name; }  
-        void set(String^ value) { name = value; }  
-    }  
-  
-    // The employee's employee number.  
-    property int EmployeeNumber  
-    {  
-        int get() { return employeeNumber; }  
-        void set(int value) { employeeNumber = value; }  
-    }  
-  
-private:  
-    String^ name;  
-    int employeeNumber;  
-};  
-  
-int main()  
-{  
-    // Create a new employee object.  
-    Employee empl1419;  
-    empl1419.Name = L"Darin Lockert";  
-    empl1419.EmployeeNumber = 1419;  
-  
-    // Add the employee to the set of all employees.  
-    set<Employee>^ emplSet = gcnew set<Employee>();  
-    emplSet->insert(empl1419);  
-  
-    // List all employees of the company.  
-    for each (Employee empl in emplSet)  
-    {  
-        Console::WriteLine("Employee Number {0}: {1}",  
-            empl.EmployeeNumber, empl.Name);  
-    }  
-  
-    return 0;  
-}  
-```  
-  
- Bir kapsayıcıya bir değer türü için bir tanıtıcı eklemeye çalışırsanız [derleyici hatası C3225](../error-messages/compiler-errors-2/compiler-error-c3225.md) oluşturulur.  
-  
-### <a name="performance-and-memory-implications"></a>Performans ve bellek etkileri  
- Tanıtıcıları türleri veya değer türleri kapsayıcı öğeler olarak başvurmak için kullanılıp kullanılmayacağını belirlerken pek çok etken dikkate almanız gerekir. Değer türleri kullanmaya karar verirseniz, öğenin kapsayıcıya eklenen her zaman öğenin bir kopyasını yapıldığını unutmayın. Küçük nesneleri için bu bir sorun olmamalıdır, ancak eklenen nesneleri büyükse, performans düşebilir. Ayrıca, değer türleri kullanıyorsanız, her kapsayıcı öğenin kendi kopyasını gerekir çünkü bir öğe aynı anda birden çok kapsayıcı depolamak mümkün değildir.  
-  
- Türleri yerine başvurmak için tanıtıcıları kullanmaya karar verirseniz kapsayıcısında eklendiğinde, öğenin bir kopyasını oluşturmak için gerekli olmadığından performansı artırabilir. Ayrıca, farklı değer türleriyle aynı öğesi birden çok kapsayıcı bulunabilir. Ancak, tanıtıcıları kullanmaya karar verirseniz, tanıtıcı geçerli değil ve başvurduğu nesne başka bir programda silinmediğinden emin olmak için dikkatli olun gerekir.  
-  
-## <a name="ownership-issues-with-containers"></a>Kapsayıcıları sahipliği sorunları  
- STL/CLR kapsayıcıları değeri semantiği üzerinde çalışır. Bir kapsayıcıya bir öğe eklemek her zaman, o öğenin bir kopyasını eklenir. Başvuru benzeri semantiği almak istiyorsanız, nesnenin kendisini yerine bir nesne için bir tanıtıcı ekleyebilirsiniz.  
-  
- Açık bir çağrı ya da erase tanıtıcı nesnelerin kapsayıcı yöntemi işleyiciler başvurmak nesneleri bellekten serbest bırakılmaz. Açıkça nesneyi silmek, veya, çünkü bu nesneler yönetilen yığında bulunurlar nesne artık kullanılmakta olduğunu belirledikten sonra belleği boşaltmak atık toplayıcı izin.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
+
+STL/CLR kitaplığı C++ Standart Kitaplığı'nda bulunan kapsayıcılar aynı olsa da, .NET Framework yönetilen ortamı içinde çalışır. Zaten bir C++ Standart kitaplığı ile ilgili bilgi sahibi olduğunuz, STL/CLR zaten ortak dil çalışma zamanı (CLR) hedefine kodunuzu yükseltilirken geliştirdik becerilerini kullanmaya devam etmek için en iyi yoludur.
+
+Bu belge kapsayıcılarda STL/CLR kapsayıcı öğeleri, kapsayıcılara ekleyebilirsiniz ve kapsayıcılarında öğeleri sahiplik sorunlarını öğe türleri için gereksinimler gibi genel bir bakış sağlar. Yerel C++ Standart Kitaplığı ve STL/CLR arasındaki farklılıklar uygun yerlerde belirtilmiştir.
+
+## <a name="requirements-for-container-elements"></a>Kapsayıcı öğeleri için gereksinimler
+
+C++ Standart Kitaplığı kapsayıcılarına eklenen tüm öğeleri belirli yönergeleri uyulmadığı gerekir. Daha fazla bilgi için [STL/CLR kapsayıcı öğeleri için gereksinimler](../dotnet/requirements-for-stl-clr-container-elements.md).
+
+## <a name="valid-container-elements"></a>Geçerli kapsayıcı öğeler
+
+STL/CLR kapsayıcı öğeleri iki türlerinden birini içerebilir:
+
+- Başvuru türleri için işler.
+
+- Başvuru türleri.
+
+- Kutulanmamış değer türleri.
+
+Paketlenmiş değer türleri herhangi bir STL/CLR kapsayıcıları INSERT yapılamıyor.
+
+### <a name="handles-to-reference-types"></a>Başvuru türleri tanıtıcıları
+
+Bir STL/CLR kapsayıcısına bir başvuru türü için bir tanıtıcı ekleyebilirsiniz. Yerel C++'ta bir işaretçi için bir tanıtıcı CLR'yi hedefleyen c++ benzerdir. Daha fazla bilgi için [işlemek nesne işleci (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md).
+
+#### <a name="example"></a>Örnek
+
+Aşağıdaki örnek bir çalışan nesnesine yönelik bir tanıtıcı nasıl ekleneceğini gösterir. bir [cliext::set](../dotnet/set-stl-clr.md).
+
+```
+// cliext_container_valid_reference_handle.cpp
+// compile with: /clr
+
+#include <cliext/set>
+
+using namespace cliext;
+using namespace System;
+
+ref class Employee
+{
+public:
+    // C++ Standard Library containers might require a public constructor, so it
+    // is a good idea to define one.
+    Employee() :
+        name(nullptr),
+        employeeNumber(0) { }
+
+    // All C++ Standard Library containers require a public copy constructor.
+    Employee(const Employee% orig) :
+        name(orig.name),
+        employeeNumber(orig.employeeNumber) { }
+
+    // All C++ Standard Library containers require a public assignment operator.
+    Employee% operator=(const Employee% orig)
+    {
+        if (this != %orig)
+        {
+            name = orig.name;
+            employeeNumber = orig.employeeNumber;
+        }
+
+        return *this;
+    }
+
+    // All C++ Standard Library containers require a public destructor.
+    ~Employee() { }
+
+    // Associative containers such as maps and sets
+    // require a comparison operator to be defined
+    // to determine proper ordering.
+    bool operator<(const Employee^ rhs)
+    {
+        return (employeeNumber < rhs->employeeNumber);
+    }
+
+    // The employee's name.
+    property String^ Name
+    {
+        String^ get() { return name; }
+        void set(String^ value) { name = value; }
+    }
+
+    // The employee's employee number.
+    property int EmployeeNumber
+    {
+        int get() { return employeeNumber; }
+        void set(int value) { employeeNumber = value; }
+    }
+
+private:
+    String^ name;
+    int employeeNumber;
+};
+
+int main()
+{
+    // Create a new employee object.
+    Employee^ empl1419 = gcnew Employee();
+    empl1419->Name = L"Darin Lockert";
+    empl1419->EmployeeNumber = 1419;
+
+    // Add the employee to the set of all employees.
+    set<Employee^>^ emplSet = gcnew set<Employee^>();
+    emplSet->insert(empl1419);
+
+    // List all employees of the company.
+    for each (Employee^ empl in emplSet)
+    {
+        Console::WriteLine("Employee Number {0}: {1}",
+            empl->EmployeeNumber, empl->Name);
+    }
+
+    return 0;
+}
+```
+
+### <a name="reference-types"></a>Başvuru Türleri
+
+STL/CLR kapsayıcısına bir başvuru türü (bir başvuru türü için bir tanıtıcı yerine) eklemek mümkündür. Burada ana fark başvuru türlerinin bir kapsayıcı silindiğinde, yok edici bu kapsayıcı içindeki tüm öğeler için çağrı yapılmasıdır. Başvuru türleri tanıtıcıları kapsayıcıda bu öğeler için Yıkıcılar çağırılan değil.
+
+#### <a name="example"></a>Örnek
+
+Aşağıdaki örnek bir çalışan nesnesine nasıl ekleneceğini gösterir. bir `cliext::set`.
+
+```
+// cliext_container_valid_reference.cpp
+// compile with: /clr
+
+#include <cliext/set>
+
+using namespace cliext;
+using namespace System;
+
+ref class Employee
+{
+public:
+    // C++ Standard Library containers might require a public constructor, so it
+    // is a good idea to define one.
+    Employee() :
+        name(nullptr),
+        employeeNumber(0) { }
+
+    // All C++ Standard Library containers require a public copy constructor.
+    Employee(const Employee% orig) :
+        name(orig.name),
+        employeeNumber(orig.employeeNumber) { }
+
+    // All C++ Standard Library containers require a public assignment operator.
+    Employee% operator=(const Employee% orig)
+    {
+        if (this != %orig)
+        {
+            name = orig.name;
+            employeeNumber = orig.employeeNumber;
+        }
+
+        return *this;
+    }
+
+    // All C++ Standard Library containers require a public destructor.
+    ~Employee() { }
+
+    // Associative containers such as maps and sets
+    // require a comparison operator to be defined
+    // to determine proper ordering.
+    bool operator<(const Employee^ rhs)
+    {
+        return (employeeNumber < rhs->employeeNumber);
+    }
+
+    // The employee's name.
+    property String^ Name
+    {
+        String^ get() { return name; }
+        void set(String^ value) { name = value; }
+    }
+
+    // The employee's employee number.
+    property int EmployeeNumber
+    {
+        int get() { return employeeNumber; }
+        void set(int value) { employeeNumber = value; }
+    }
+
+private:
+    String^ name;
+    int employeeNumber;
+};
+
+int main()
+{
+    // Create a new employee object.
+    Employee empl1419;
+    empl1419.Name = L"Darin Lockert";
+    empl1419.EmployeeNumber = 1419;
+
+    // Add the employee to the set of all employees.
+    set<Employee>^ emplSet = gcnew set<Employee>();
+    emplSet->insert(empl1419);
+
+    // List all employees of the company.
+    for each (Employee^ empl in emplSet)
+    {
+        Console::WriteLine("Employee Number {0}: {1}",
+            empl->EmployeeNumber, empl->Name);
+    }
+
+    return 0;
+}
+```
+
+### <a name="unboxed-value-types"></a>Kutulanmamış değer türleri
+
+Kutulanmamış değer türü bir STL/CLR kapsayıcısına da ekleyebilirsiniz. Kutulanmamış değer türü değişmediğinden bir değer türüdür *Kutulu* içine bir başvuru türü.
+
+Bir değer türü öğesi standart türlerin biri gibi olabilir bir `int`, veya bir kullanıcı tanımlı değer türü gibi olabilir bir `value class`. Daha fazla bilgi için [sınıflar ve yapılar](../windows/classes-and-structs-cpp-component-extensions.md)
+
+#### <a name="example"></a>Örnek
+
+Aşağıdaki örnek, bir değer türü sınıf çalışan yaparak ilk örnek değiştirir. Bu değer türü ardından eklendiği bir `cliext::set` ilk örnekte olduğu gibi.
+
+```
+// cliext_container_valid_valuetype.cpp
+// compile with: /clr
+
+#include <cliext/set>
+
+using namespace cliext;
+using namespace System;
+
+value class Employee
+{
+public:
+    // Associative containers such as maps and sets
+    // require a comparison operator to be defined
+    // to determine proper ordering.
+    bool operator<(const Employee^ rhs)
+    {
+        return (employeeNumber < rhs->employeeNumber);
+    }
+
+    // The employee's name.
+    property String^ Name
+    {
+        String^ get() { return name; }
+        void set(String^ value) { name = value; }
+    }
+
+    // The employee's employee number.
+    property int EmployeeNumber
+    {
+        int get() { return employeeNumber; }
+        void set(int value) { employeeNumber = value; }
+    }
+
+private:
+    String^ name;
+    int employeeNumber;
+};
+
+int main()
+{
+    // Create a new employee object.
+    Employee empl1419;
+    empl1419.Name = L"Darin Lockert";
+    empl1419.EmployeeNumber = 1419;
+
+    // Add the employee to the set of all employees.
+    set<Employee>^ emplSet = gcnew set<Employee>();
+    emplSet->insert(empl1419);
+
+    // List all employees of the company.
+    for each (Employee empl in emplSet)
+    {
+        Console::WriteLine("Employee Number {0}: {1}",
+            empl.EmployeeNumber, empl.Name);
+    }
+
+    return 0;
+}
+```
+
+Bir kapsayıcının içine bir değer türü için bir tanıtıcı eklemeyi denerseniz [derleyici hatası C3225](../error-messages/compiler-errors-2/compiler-error-c3225.md) oluşturulur.
+
+### <a name="performance-and-memory-implications"></a>Performans ve bellek etkileri
+
+Tanıtıcıları türleri veya değer türleri kapsayıcı öğesi olarak başvurmak için kullanılıp kullanılmayacağını belirleme konusunda birkaç faktör dikkate almanız gerekir. Değer türleri kullanmaya karar verirseniz, her zaman bir öğeyi bir kapsayıcıya eklenir, öğenin kopyasını yapılan unutmayın. Küçük nesneleri için bu bir sorun olmamalıdır, ancak eklenmiş nesneler büyükse, performans düşebilir. Ayrıca, değer türleri kullanıyorsanız, her kapsayıcı öğenin kendi kopyasını yeterli olacağından bir öğe aynı anda birden çok kapsayıcıda depolamak mümkün değildir.
+
+Bunun yerine, başvuru türleri için tutamaçları kullanmaya karar verirseniz, kapsayıcıda eklendiğinde, öğenin bir kopyasını oluşturmak için gerekli olmadığından performansı artırabilir. Ayrıca, farklı değer türleri ile birden çok kapsayıcıda aynı öğesi var olabilir. Ancak, tanıtıcıları kullanmaya karar verirseniz, tanıtıcı geçerli olduğunu ve başvurduğu nesneyi başka bir programda silinmediğinden emin olmak için ilgileniriz gerekir.
+
+## <a name="ownership-issues-with-containers"></a>Kapsayıcıları sahipliği sorunları
+
+STL/CLR kapsayıcıları değeri semantiği çalışır. Her seferinde bir kapsayıcının içine bir öğe eklemek, o öğenin bir kopyasını eklenir. Başvuru benzeri semantiği almak istiyorsanız, bir tanıtıcı nesnesi yerine bir nesne ekleyebilirsiniz.
+
+Açık bir çağrı ya da yöntemi tanıtıcı nesnelerin bir kapsayıcısını silme tanıtıcıları başvuran nesnelerin bellekten serbest bırakılmaz. Açıkça nesneyi silmek, veya gerekir, çünkü bu nesneler yönetilen yığında bulunurlar atık toplayıcı nesne artık kullanılmakta olduğunu belirledikten sonra belleği boşaltmak izin verin.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

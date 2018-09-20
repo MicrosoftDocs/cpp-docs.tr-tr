@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 46b09b5cbe74849c3dc08e8faee3ee4ca645a55b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 13ce7d2a35245716adc70b9e84532ea7d1a4a440
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602940"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46432418"
 ---
 # <a name="delegate--c-component-extensions"></a>temsilci (C++ Bileşen Uzantıları)
 
@@ -57,16 +57,16 @@ delegate-type-identifier
 
 ### <a name="parameters"></a>Parametreler
 
-*Erişim*  
+*Erişim*<br/>
 (isteğe bağlı) Olabilir temsilci erişilebilirliğini **genel** (varsayılan) veya **özel**. İşlev prototipi ile de nitelendirilmesi **const** veya **geçici** anahtar sözcükleri.
 
-*dönüş türü*  
+*dönüş türü*<br/>
 İşlev prototipi dönüş türü.
 
-*temsilci türü tanımlayıcısı*  
+*temsilci türü tanımlayıcısı*<br/>
 Bildirilen temsilci türünün adı.
 
-*Parametreleri*  
+*Parametreleri*<br/>
 (İsteğe bağlı) Türleri ve işlev prototipi tanımlayıcıları.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -91,10 +91,10 @@ function_declaration
 
 ### <a name="parameters"></a>Parametreler
 
-*Erişim*  
+*Erişim*<br/>
 (isteğe bağlı) Derlemenin dışında temsilci erişilebilirliğini genel veya özel olabilir.  Varsayılan büyük/küçük harf özeldir.  Bir sınıf içinde bir temsilci, herhangi bir erişilebilirlik sahip olabilir.
 
-*function_declaration*  
+*function_declaration*<br/>
 Temsilciye bağlanabilir işlev imzası. Bir temsilcinin dönüş türü, herhangi bir yönetilen türü olabilir. Birlikte çalışabilirlik nedeniyle, bir temsilcinin dönüş türü CLS türü olması önerilir.
 
 Bağlanmamış bir temsilci, ilk parametreyi tanımlamak için *function_declaration* türünde olmalıdır **bu** nesne işaretçisi.

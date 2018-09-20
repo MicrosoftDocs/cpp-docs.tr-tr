@@ -1,5 +1,5 @@
 ---
-title: OLE sürükle ve bırak ve veri aktarımı sınıfları | Microsoft Docs
+title: OLE sürükle/bırak ve veri aktarımı sınıfları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,28 +20,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d55d6d171f490631afe17a605f50607fb55f070b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a4b5d694d0081fbe2d852884c4a379e962c22f2a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347048"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444144"
 ---
 # <a name="ole-drag-and-drop-and-data-transfer-classes"></a>OLE Sürükle/Bırak ve Veri Aktarımı Sınıfları
-Bu sınıfların OLE veri aktarımları kullanılır. Bunlar, uygulamalar Pano kullanarak ya da sürükle ve bırak arasında aktarılacak veri izin verin.  
-  
- [COleDropSource](../mfc/reference/coledropsource-class.md)  
- Sürükle ve bırak işlemi başlangıçtan bitişe kadar denetler. Bu sınıf, sürükleme işlemi başlatıldığında ve sona erdiğinde belirler. Ayrıca sürükle ve bırak işlemi sırasında imleç geri bildirim görüntüler.  
-  
- [COleDataSource](../mfc/reference/coledatasource-class.md)  
- Bir uygulama için bir veri aktarımı veri sağladığında kullanılır. `COleDataSource` Nesne Odaklı Pano nesnesi olarak görüntülenmesine.  
-  
- [COleDropTarget](../mfc/reference/coledroptarget-class.md)  
- Sürükle ve bırak işlemi hedefi temsil eder. A `COleDropTarget` ekranında bir pencere nesnesi karşılık gelir. Tüm veriler sürüklediğinizde bırakılan ve gerçek bırakma işlemi uygulayan kabul edilip edilmeyeceğini belirler.  
-  
- [COleDataObject](../mfc/reference/coledataobject-class.md)  
- Alıcı tarafında olarak kullanılan `COleDataSource`. `COleDataObject` nesneleri tarafından depolanan verilere erişim sağlayan bir `COleDataSource` nesnesi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Bu sınıfların OLE veri aktarımlarında kullanılır. Bunlar, verilerin uygulamalar Pano kullanarak ya da sürükle ve bırak arasında aktarılmasına izin verin.
+
+[COleDropSource](../mfc/reference/coledropsource-class.md)<br/>
+Sürükle ve bırak işlemi baştan sona denetler. Bu sınıf, sürükleme işlemi başladığında ve sona erdiğinde belirler. Sürükle ve bırak işlemi sırasında imleç geri bildirim de görüntüler.
+
+[COleDataSource](../mfc/reference/coledatasource-class.md)<br/>
+Uygulama verileri için bir veri aktarımı sağlar. olduğunda kullanılır. `COleDataSource` nesne yönelimli bir Pano nesne olarak görüntülenen.
+
+[COleDropTarget](../mfc/reference/coledroptarget-class.md)<br/>
+Bir Sürükle ve bırak işlemi hedefi temsil eder. A `COleDropTarget` nesne bir pencereyi ekranda karşılık gelir. Tüm veriler sürüklediğinizde bırakılmış ve gerçek bırakma işlemi uygulayan kabul edilip edilmeyeceğini belirler.
+
+[COleDataObject](../mfc/reference/coledataobject-class.md)<br/>
+Alıcı tarafı olarak kullanılan `COleDataSource`. `COleDataObject` nesneleri tarafından depolanan verilere erişim sağlayan bir `COleDataSource` nesne.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

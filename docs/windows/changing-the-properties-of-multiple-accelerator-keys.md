@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bf70622dc901842a74cf8718d9447f899defb57d
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 56deca345915c5736cb15e7ce5d8d0e0ee0b7062
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313526"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400801"
 ---
 # <a name="changing-the-properties-of-multiple-accelerator-keys-c"></a>(C++) birden çok hızlandırma tuşunun özelliklerini değiştirme
 
@@ -47,5 +47,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Hızlandırıcı Tablolarını Düzenleme](../windows/editing-accelerator-tables.md)  
+[Hızlandırıcı Tablolarını Düzenleme](../windows/editing-accelerator-tables.md)<br/>
 [Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)

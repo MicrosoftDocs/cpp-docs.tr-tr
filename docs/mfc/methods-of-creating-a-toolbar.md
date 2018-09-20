@@ -19,27 +19,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 052f1578386746f9a4d9892576f09b3b61547289
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fb7e73df0944a7a6c0c7b28c04e43008fcd70b39
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348641"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46401075"
 ---
 # <a name="methods-of-creating-a-toolbar"></a>Araç Çubuğu Oluşturma Yöntemleri
-MFC araç çubukları oluşturmak için iki sınıflar sağlar: [CToolBar](../mfc/reference/ctoolbar-class.md) ve [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) (hangi sarmalar Windows ortak denetim API'si). `CToolBar` Tüm araç ortak denetim işlevselliğini sağlar ve, gerekli ortak denetim ayarlarını ve yapıları birçoğu sizin için; işleme Ancak, sonuçta elde edilen yürütülebilir dosyanın genellikle kullanılarak oluşturulan büyük olacaktır `CToolBarCtrl`.  
-  
- `CToolBarCtrl` genellikle daha küçük bir yürütülebilir dosya ve sonuçları kullanmayı tercih edebilirsiniz `CToolBarCtrl` MFC mimariye araç çubuğunun bütünleştirmek düşünmüyorsanız. Kullanmayı planlıyorsanız, `CToolBarCtrl` ve MFC mimariye araç tümleştirmek, MFC araç çubuğu denetimi işlemeleri iletişim kurmak için ek dikkat edin gerekir. Bu iletişim zor değil; Ancak, kullandığınızda, gereksiz ek iş olduğu `CToolBar`.  
-  
- Visual C++ araç yaygın bir denetim yararlanmak için iki yöntem sunar.  
-  
--   Araç çubuğunu kullanarak oluşturmak `CToolBar`ve ardından arama [CToolBar::GetToolBarCtrl](../mfc/reference/ctoolbar-class.md#gettoolbarctrl) erişmek için `CToolBarCtrl` üye işlevleri.  
-  
--   Araç çubuğunu kullanarak oluşturmak [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)'s Oluşturucusu.  
-  
- Her iki yöntem araç çubuğu denetimi üye işlevleri için erişim sahibi olursunuz. Çağırdığınızda `CToolBar::GetToolBarCtrl`, bir başvuru döndürür bir `CToolBarCtrl` ya da kümesi üye işlevlerini kullanabilmeniz için nesne. Bkz: [CToolBar](../mfc/reference/ctoolbar-class.md) oluşturma ve bir araç kullanarak oluşturma hakkında bilgi için `CToolBar`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CToolBarCtrl kullanma](../mfc/using-ctoolbarctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+MFC araç çubukları oluşturmak için iki sınıflar sağlar: [CToolBar](../mfc/reference/ctoolbar-class.md) ve [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) (hangi sarmalar Windows ortak denetim API'si). `CToolBar` Tüm araç çubuğu ortak denetim işlevlerini sağlar ve sizin için; birçok gerekli ortak denetim ayarları ve yapıları işlediği Ancak, elde edilen çalıştırılabilir dosyayı genellikle kullanılarak oluşturulan büyük olacaktır `CToolBarCtrl`.
+
+`CToolBarCtrl` genellikle daha küçük bir yürütülebilir dosyayı ve sonuçları kullanmayı tercih edebilirsiniz `CToolBarCtrl` MFC mimarisine araç tümleştirmek düşünmüyorsanız. Kullanmayı planlıyorsanız `CToolBarCtrl` ve MFC mimarisine araç tümleştirme, MFC araç çubuğu denetimi işlemeleri iletişim kurmak için daha da dikkatli göz önüne almanız gerekir. Bu iletişim zor değildir; Ancak, kullandığınızda, gereksiz ek çalışma gerekir `CToolBar`.
+
+Visual C++ araç çubuğu ortak denetim yararlanmak için iki yol sunar.
+
+- Araç çubuğunu kullanarak oluşturma `CToolBar`ve sonra çağrı [CToolBar::GetToolBarCtrl](../mfc/reference/ctoolbar-class.md#gettoolbarctrl) erişim elde etmek için `CToolBarCtrl` üye işlevleri.
+
+- Araç çubuğunu kullanarak oluşturma [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)'s Oluşturucusu.
+
+Her iki yöntem araç çubuğu denetimi üye işlevleri için sürümlere erişmenizi sağlayacaktır. Çağırdığınızda `CToolBar::GetToolBarCtrl`, bir başvuru döndürür bir `CToolBarCtrl` ayarlayın ya da üye işlevleri kullanabilmeniz için nesne. Bkz: [CToolBar](../mfc/reference/ctoolbar-class.md) oluşturmak ve bir araç kullanarak oluşturma hakkında bilgi `CToolBar`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CToolBarCtrl Kullanma](../mfc/using-ctoolbarctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

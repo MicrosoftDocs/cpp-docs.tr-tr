@@ -12,22 +12,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f33666b35f45bb668ab135941a0d15297442408a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: b41eaf7012c1d119071281f98177e4a4d841890b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33690952"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410080"
 ---
 # <a name="openmp-data-types"></a>OpenMP Veri Türleri
-OpenMP API çağrısında kullanılan veri türleri için bağlantılar sağlar.  
-  
- Standart OpenMP Visual C++ uygulaması, aşağıdaki veri türlerini içerir.  
-  
-|Veri türü|Açıklama|  
-|---------------|-----------------|  
-|[omp_lock_t](../../../parallel/openmp/reference/omp-lock-t.md)|Kilit, kilit olup veya bir iş parçacığı bir kilit sahibi, durumunu tutan türü.|  
-|[omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md)|Kilit hakkında bilgi aşağıdaki parçalarını birini içeren bir türü: kilit kullanılabilir ve iş parçacığı kimliği, sahibi kilit ve iç içe geçmiş sayı olup olmadığını.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık Başvurusu](../../../parallel/openmp/reference/openmp-library-reference.md)
+
+OpenMP API çağrısında kullanılan veri türlerine bağlantılar sağlar.
+
+Standart OpenMP Visual C++ uygulaması, aşağıdaki veri türlerini içerir.
+
+|Veri türü|Açıklama|
+|---------------|-----------------|
+|[omp_lock_t](../../../parallel/openmp/reference/omp-lock-t.md)|Bir kilit, kilit olup veya bir iş parçacığının bir kilidi sahibi, durumu tutan bir türü.|
+|[omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md)|Bir kilitleme hakkında bilgi aşağıdaki parçalarını birini tutan bir türü: kilit kullanılabilir ve iş parçacığı kimliğine sahip olan kilidi ve iç içe geçme sayı olup olmadığını.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kitaplık Başvurusu](../../../parallel/openmp/reference/openmp-library-reference.md)

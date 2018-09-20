@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d89fef6c2ed3f8ff1a4211cdf8da59d8406e7031
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: bde6909716b55298a515aac32580a24f26c823fc
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715409"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46406652"
 ---
 # <a name="dbcolumn"></a>db_column
 
@@ -43,7 +43,7 @@ Belirtilen sütun, satır kümesindeki bir değişkene bağlar.
 
 #### <a name="parameters"></a>Parametreler
 
-*Sıra*  
+*Sıra*<br/>
 Sıralı sütun sayısı (`DBCOLUMNINFO` sıralı) veya satır kümesi veri bağlanacak bir alana karşılık gelen sütun adı (ANSI veya Unicode dize). Sayı kullanıyorsanız, ardışık sıra sayıları atlayabilirsiniz (örneğin: 1, 2, 3, 5). OLE DB sağlayıcı destekliyorsa ad boşluk içeremez. Örneğin, aşağıdaki biçimlerden birini kullanabilirsiniz:
 
 ```cpp
@@ -51,19 +51,19 @@ Sıralı sütun sayısı (`DBCOLUMNINFO` sıralı) veya satır kümesi veri bağ
 [db_column(L"city_name")] TCHAR szCity[30];
 ```
 
-*DbType*  
+*DbType*<br/>
 (İsteğe bağlı) Bir OLE DB [türü göstergesi](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) sütun girişi.
 
-*Duyarlık*  
+*Duyarlık*<br/>
 (İsteğe bağlı) Sütun girişini kullanılacak hassasiyet. Ayrıntılar için açıklamasını görmek `bPrecision` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
 
-*Ölçek*  
+*Ölçek*<br/>
 (İsteğe bağlı) Sütun girişi için kullanılacak ölçek. Ayrıntılar için açıklamasını görmek `bScale` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
 
-*Durumu*  
+*Durumu*<br/>
 (İsteğe bağlı) Bu sütun durumunu tutmak için kullanılan bir üye değişkeni. Durum sütun değeri veri değeri NULL gibi diğer bazı değeri olup olmadığını gösterir. Olası değerler için bkz. [durumu](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
 
-*Uzunluğu*  
+*Uzunluğu*<br/>
 (İsteğe bağlı) Sütun boyutunu bayt cinsinden tutmak için kullanılan bir üye değişkeni.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -131,5 +131,5 @@ class CProducts {
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[OLE DB Tüketici Öznitelikleri](../windows/ole-db-consumer-attributes.md)  
+[OLE DB Tüketici Öznitelikleri](../windows/ole-db-consumer-attributes.md)<br/>
 [Sınıf Öznitelikleri](../windows/class-attributes.md)  

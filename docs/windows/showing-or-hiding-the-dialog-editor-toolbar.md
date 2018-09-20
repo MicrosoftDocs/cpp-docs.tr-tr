@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9b7b6c8b01665da1effb1b3bd056c99bd82163c0
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 02deeeed3eecf717cff380e43317e5a75c1fddf7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316022"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46381250"
 ---
 # <a name="showing-or-hiding-the-dialog-editor-toolbar-c"></a>Gösterme veya gizleme (C++) iletişim kutusu Düzenleyicisi araç çubuğu
 
@@ -60,7 +60,7 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İletişim Kutularındaki Denetimlerin Düzenlenmesi](../windows/arrangement-of-controls-on-dialog-boxes.md)  
-[Nasıl yapılır: Kaynak Oluşturma](../windows/how-to-create-a-resource.md)  
-[Kaynak dosyaları](../windows/resource-files-visual-studio.md)  
+[İletişim Kutularındaki Denetimlerin Düzenlenmesi](../windows/arrangement-of-controls-on-dialog-boxes.md)<br/>
+[Nasıl yapılır: Kaynak Oluşturma](../windows/how-to-create-a-resource.md)<br/>
+[Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
 [İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)

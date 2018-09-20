@@ -30,78 +30,83 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa2aa8fb79a0590c437699bcf887f2a7e1c1bb21
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 881d8dbdb7563197beaea66c4c83d7dbc7921a3f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45705022"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390948"
 ---
 # <a name="interlockedexchangepointer-intrinsic-functions"></a>_Interlockedexchangepointer iç işlevleri
-**Microsoft'a özgü**  
-  
- İkinci bağımsız değişken olarak geçirilen ilk adresi kopyalar ve ilk özgün adresini döndüren bir atomik değiştirme işlemi gerçekleştirin.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void * _InterlockedExchangePointer(  
-   void * volatile * Target,  
-   void * Value  
-);   
-void * _InterlockedExchangePointer_acq(  
-   void * volatile * Target,  
-   void * Value  
-);   
-void * _InterlockedExchangePointer_rel(  
-   void * volatile * Target,  
-   void * Value  
-);   
-void * _InterlockedExchangePointer_nf(  
-   void * volatile * Target,  
-   void * Value  
-);   
-void * _InterlockedExchangePointer_HLEAcquire(  
-   void * volatile * Target,  
-   void * Value  
-);   
-void * _InterlockedExchangePointer_HLERelease(  
-   void * volatile * Target,  
-   void * Value  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+**Microsoft'a özgü**
+
+İkinci bağımsız değişken olarak geçirilen ilk adresi kopyalar ve ilk özgün adresini döndüren bir atomik değiştirme işlemi gerçekleştirin.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void * _InterlockedExchangePointer(
+   void * volatile * Target,
+   void * Value
+);
+void * _InterlockedExchangePointer_acq(
+   void * volatile * Target,
+   void * Value
+);
+void * _InterlockedExchangePointer_rel(
+   void * volatile * Target,
+   void * Value
+);
+void * _InterlockedExchangePointer_nf(
+   void * volatile * Target,
+   void * Value
+);
+void * _InterlockedExchangePointer_HLEAcquire(
+   void * volatile * Target,
+   void * Value
+);
+void * _InterlockedExchangePointer_HLERelease(
+   void * volatile * Target,
+   void * Value
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *Hedef*<br/>
-[out içinde] Exchange değere işaretçi işaretçisi. İşlev bir değer ayarlar `Value` ve önceki değerini döndürür.  
-  
+[out içinde] Exchange değere işaretçi işaretçisi. İşlev bir değer ayarlar `Value` ve önceki değerini döndürür.
+
 *Değer*<br/>
-[in] Değeri ile değiştirilecek değeri tarafından işaret edilen `Target`.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- İşlevi tarafından işaret ilk değerini döndürür `Target`.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|Üstbilgi|  
-|---------------|------------------|------------|  
-|`_InterlockedExchangePointer`|x86, ARM, x64|\<intrin.h >|  
-|`_InterlockedExchangePointer_acq`, `_InterlockedExchangePointer_rel`, `_InterlockedExchangePointer_nf`|ARM|\<intrin.h >|  
-|`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|x64 HLE desteği|\<immintrin.h >|  
-  
- X86 mimari `_InterlockedExchangePointer` çağıran bir makro `_InterlockedExchange`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir 64-bit sistemde parametreleri 64 bit ve 64-bit sınırlardaki hizalanması gerekir; Aksi takdirde işlev başarısız olur. Bir 32-bit sistemde parametreleri 32 bit ve 32-bit sınırlardaki hizalanması gerekir. Daha fazla bilgi için [hizalama](../cpp/align-cpp.md).  
-  
- ARM platformlarında, yapı içleri ile kullanmak `_acq` ve `_rel` almak ve yayın semantiğini gibi kritik bir bölüm başında ve sonunda sonekleri. İç bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel davranmaz.  
-  
- Donanım kilit eleme (HLE) yönergeleri yapı içleri ile destekleyen Intel platformlarında `_HLEAcquire` ve `_HLERelease` sonekleri kapsayacak performans donanım kilit yazma adımda ortadan kaldırarak hızlandırabilir işlemci bir ipucu verir. Bu iç HLE desteklemeyen platformları üzerinde çağrılırsa ipucu yoksayıldı.  
-  
- Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   
- [x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)
+[in] Değeri ile değiştirilecek değeri tarafından işaret edilen `Target`.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+İşlevi tarafından işaret ilk değerini döndürür `Target`.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|Üstbilgi|
+|---------------|------------------|------------|
+|`_InterlockedExchangePointer`|x86, ARM, x64|\<intrin.h >|
+|`_InterlockedExchangePointer_acq`, `_InterlockedExchangePointer_rel`, `_InterlockedExchangePointer_nf`|ARM|\<intrin.h >|
+|`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|x64 HLE desteği|\<immintrin.h >|
+
+X86 mimari `_InterlockedExchangePointer` çağıran bir makro `_InterlockedExchange`.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir 64-bit sistemde parametreleri 64 bit ve 64-bit sınırlardaki hizalanması gerekir; Aksi takdirde işlev başarısız olur. Bir 32-bit sistemde parametreleri 32 bit ve 32-bit sınırlardaki hizalanması gerekir. Daha fazla bilgi için [hizalama](../cpp/align-cpp.md).
+
+ARM platformlarında, yapı içleri ile kullanmak `_acq` ve `_rel` almak ve yayın semantiğini gibi kritik bir bölüm başında ve sonunda sonekleri. İç bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel davranmaz.
+
+Donanım kilit eleme (HLE) yönergeleri yapı içleri ile destekleyen Intel platformlarında `_HLEAcquire` ve `_HLERelease` sonekleri kapsayacak performans donanım kilit yazma adımda ortadan kaldırarak hızlandırabilir işlemci bir ipucu verir. Bu iç HLE desteklemeyen platformları üzerinde çağrılırsa ipucu yoksayıldı.
+
+Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)

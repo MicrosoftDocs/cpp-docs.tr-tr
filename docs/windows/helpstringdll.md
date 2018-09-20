@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bc10f86a8fa646a1072de8b7c5e30121d98750cf
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 1eecedca8988c95466a3f257fbc77768b7c67b3b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219958"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392872"
 ---
 # <a name="helpstringdll"></a>helpstringdll
 
@@ -38,7 +38,7 @@ Belge dize arama (yerelleştirme) gerçekleştirmek için kullanılacak DLL'in a
 
 ### <a name="parameters"></a>Parametreler
 
-*string*  
+*string*<br/>
 Belge dize arama gerçekleştirmek için kullanılacak DLL.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -75,7 +75,7 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Arabirim Öznitelikleri](../windows/interface-attributes.md)  
-[Sınıf Öznitelikleri](../windows/class-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Arabirim Öznitelikleri](../windows/interface-attributes.md)<br/>
+[Sınıf Öznitelikleri](../windows/class-attributes.md)<br/>
 [Yöntem Öznitelikleri](../windows/method-attributes.md)  

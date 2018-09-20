@@ -19,28 +19,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 102b3a4c8372a53aada23ad448ce5dc1cf323a97
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7f0e4bde874fc563535b661108cb68edefd8d977
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343767"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385020"
 ---
 # <a name="frame-window-styles-c"></a>Çerçeve Pencere Stilleri (C++)
-Çerçevesiyle alma çerçeve pencereleri çoğu program için uygun olan, ancak Gelişmiş işlevlerini kullanarak ek esneklik kazanmadan [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) ve MFC genel işlevi [AfxRegisterWndClass ](../mfc/reference/application-information-and-management.md#afxregisterwndclass). `PreCreateWindow` bir üye işlevidir `CWnd`.  
-  
- Uygularsanız **WS_HSCROLL** ve **WS_VSCROLL** ana çerçeve pencere stilleri, bunların yerine uygulanır **MDICLIENT** kullanıcılar kaydırabilirsinizşekildepenceresi**MDICLIENT** alanı.  
-  
- Varsa pencerenin **fws_addtotıtle** stili biti ayarlanmış (hangi varsayılan olarak etkindir), görünüm çerçeve penceresi penceresinin başlık çubuğunda görünümün belge adına göre görüntülemek için hangi başlık söyler.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [MDI alt pencereleri (MDICLIENT) yönetme](../mfc/managing-mdi-child-windows.md), MDI alt pencereleri içeren MDI çerçevesinde penceresi  
-  
--   [MFC tarafından oluşturulan pencerenin stillerini değiştirme](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)  
-  
--   [Pencere stilleri](../mfc/reference/styles-used-by-mfc.md#window-styles)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çerçeve Pencereleri](../mfc/frame-windows.md)
+
+Framework ile alma çerçeve pencereleri programlarının çoğu için uygundur, ancak gelişmiş işlevleri kullanarak daha fazla esneklik elde edebilirsiniz [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) ve MFC genel işlev [AfxRegisterWndClass ](../mfc/reference/application-information-and-management.md#afxregisterwndclass). `PreCreateWindow` bir üye işlevidir `CWnd`.
+
+Uygularsanız, **WS_HSCROLL** ve **WS_VSCROLL** stilleri ana çerçeve penceresine, bunun yerine uygulanır **MDICLIENT** kullanıcıların kaydırabileceğişekildepenceresi**MDICLIENT** alan.
+
+Varsa pencerenin **fws_addtotıtle** stili biti ayarlanmış (Bu varsayılan olarak etkindir), görünüm çerçeve penceresi pencerenin başlık çubuğunda Görünüm'ün belge adına göre görüntülemek için hangi başlık söyler.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [MDI alt pencereleri (MDICLIENT) yönetme](../mfc/managing-mdi-child-windows.md), içinde içeren MDI alt pencereleri bir MDI çerçeve penceresi
+
+- [MFC tarafından oluşturulan pencerenin stillerini değiştirme](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)
+
+- [Pencere stilleri](../mfc/reference/styles-used-by-mfc.md#window-styles)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çerçeve Pencereleri](../mfc/frame-windows.md)
 

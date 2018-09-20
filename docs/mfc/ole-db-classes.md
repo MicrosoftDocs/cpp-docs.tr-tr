@@ -17,16 +17,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7831b06d116828cf5a4e6b714661082555899cd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: efdc77adac947af81be9595ffabc313610e11ce9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345110"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425229"
 ---
 # <a name="ole-db-classes"></a>OLE DB Sınıfları
-MFC'de OLE DB desteği şu anda sınıfının oluşur [COLEDBRecordView](../mfc/reference/coledbrecordview-class.md). `COleDBRecordView` doğrudan bağlı bir form görünümü aracılığıyla denetimlerindeki veritabanı kayıtlarını görüntüler bir [CRowset](../data/oledb/crowset-class.md) nesnesi. OLE DB Tüketici Şablonları hakkında daha fazla bilgi için bkz: [listesi, OLE DB Tüketici Şablonları](../data/oledb/ole-db-consumer-templates-reference.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+MFC'de OLE DB desteği şu anda sınıfının oluşur [COLEDBRecordView](../mfc/reference/coledbrecordview-class.md). `COleDBRecordView` aracılığıyla doğrudan bağlı bir formu görüntüle denetimlerinde veritabanı kayıtlarını görüntüleyen bir [CRowset](../data/oledb/crowset-class.md) nesne. OLE DB Tüketici Şablonları hakkında daha fazla bilgi için bkz: [listesi, OLE DB Tüketici Şablonları](../data/oledb/ole-db-consumer-templates-reference.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

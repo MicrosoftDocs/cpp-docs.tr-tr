@@ -1,5 +1,5 @@
 ---
-title: 'TN040: MFC OLE yeniden boyutlandırma ve yakınlaştırma yerinde | Microsoft Docs'
+title: 'TN040: MFC-OLE yeniden boyutlandırma ve yakınlaştırma yerinde | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,75 +19,83 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dbd817e6bcb9c7ff526bef98bd5c2c8c1f1bb3e
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 5b8e43969389d26645ef987e9c96996d2cdea3b0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36955176"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46434758"
 ---
 # <a name="tn040-mfcole-in-place-resizing-and-zooming"></a>TN040: MFC/OLE Yerinde Yeniden Boyutlandırma ve Yakınlaştırma
+
 > [!NOTE]
->  İlk çevrimiçi belgelerinde eklenmiştir beri aşağıdaki Teknik Not güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konuları güncel veya yanlış olması olabilir. En son bilgiler için çevrimiçi belgeleri dizindeki ilgi konuyu aramak önerilir.  
-  
- Bu Not yerinde düzenleme ile ilgili sorunları ve bir sunucu doğru yakınlaştırma gerçekleştirmek ve yerinde yeniden boyutlandırma ele alınacaktır. Yerinde etkinleştirme WYSIWYG kavramı bir adım bu kapsayıcılardaki alınır ve sunucuları birbirleri ile işbirliği yapar ve özellikle çok OLE belirtimi aynı şekilde yorumlayabilir.  
-  
- Bir kapsayıcı ve yerinde etkinleştirme destekleyen sunucusu arasındaki Kapat etkileşim nedeniyle saklanması gereken son kullanıcı gelen beklentilerini sayısı vardır:  
-  
--   Sunu görüntüleme (çizilmiş meta dosyası `COleServerItem::OnDraw` geçersiz kılmak) tam olarak aynı zaman (düzenleme araçları görünmez olduğunu dışında) düzenleme için çizildiğinde olarak görünmelidir.  
-  
--   Kapsayıcı yakınlaştırır, sunucu penceresi çok gerekir!  
-  
--   Aynı ölçümleri kullanarak düzenleme için nesneleri kapsayıcı ve sunucu görüntülemelidir. Sayısına göre bir eşleme modunu kullanarak yani *mantıksal* inç başına piksel — fiziksel inç başına piksel görüntü cihazında oluşturulurken,.  
-  
+>  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
+
+Bu Not, yerinde düzenleme için ilgili sorunları ve bir sunucu doğru yakınlaştırma gerçekleştirmek ve bunları nasıl yerinde yeniden boyutlandırma ele alınacaktır. Yerinde etkinleştirme WYSIWYG kavramı kapsayıcıların içinde bir adım daha ileri alınır ve sunucuları birbiriyle iş Birliği ve özellikle çok OLE belirtiminde aynı şekilde yorumlayabilir.
+
+Bir kapsayıcı ve yerinde etkinleştirme destekleyen sunucusu arasındaki Kapat etkileşim nedeniyle bir dizi öğesinden saklanması gereken son kullanıcı beklentileri vardır:
+
+- Sunu görüntüleme (çizilmiş meta `COleServerItem::OnDraw` geçersiz kılmak) tam olarak aynı zaman dışında (düzenleme araçlarını görünmez) düzenleme için çizildiğinde olarak görünmelidir.
+
+- Kapsayıcı yakınlaştırır, sunucu penceresi çok gerekir!
+
+- Nesneleri aynı ölçümleri kullanarak düzenlemek için kapsayıcı ve sunucu görüntülemelidir. Yani sayısına göre bir eşleme modunu kullanarak *mantıksal* inç başına piksel — görüntü cihazında işlenirken inç başına fiziksel piksel.
+
 > [!NOTE]
->  Yerinde etkinleştirme (bağlı değil) katıştırılmış öğeleri için yalnızca uygulandığından yakınlaştırma katıştırılmış nesnelere yalnızca uygulanır. İkisi de API'leri görürsünüz `COleServerDoc` ve `COleServerItem` yakınlaştırma için kullanılır. Bağlantılı ve katıştırılmış öğeleri için geçerli olan işlevler olduğundan bu dichotomy sebebi `COleServerItem` (Bu, yaygın olarak görülen bir uygulama bulunmasına izin verir) ve yalnızca katıştırılmış nesneler için geçerli olan işlevler içinde bulunur `COleServerDoc` sınıf (sunucunun açısından olduğu **belge** katıştırılmış).  
-  
- Yük çoğunu sunucu kapsayıcının yakınlaştırma faktörünü farkında olmalı ve düzenleme arabirimiyle uygun şekilde değiştirin, sunucu uygulayan üzerinde yerleştirilir. Ancak sunucu kapsayıcısı kullanarak yakınlaştırma faktörünü nasıl olmadığını belirler  
-  
-## <a name="mfc-support-for-zooming"></a>Yakınlaştırma için MFC desteği  
- Geçerli yakınlaştırma faktörünü çağırarak belirlenebilir `COleServerDoc::GetZoomFactor`. Belge yerinde etkin olmadığında bu çağırma her zaman bir % 100 yakınlaştırma faktörünü (veya 1:1 oranında) neden olur. Yerinde etkin % 100'den bir şey döndürebilir sırada çağrılıyor.  
-  
- MFC OLE örnek doğru yakınlaştırma örneği için bkz: [HIERSVR](../visual-cpp-samples.md). Metni görüntüleyen ve doğrusal bir şekilde (ipuçlarını, tipografi kuralları, tasarım genişlikleri ve konuyu karmaşık hale yükseklikte tüm) metin, genel olarak, ölçeklenmez olarak HIERSVR içinde yakınlaştırma karmaşık. Yine de, HIERSVR doğru yakınlaştırma uygulamak için makul bir başvuru ve bu nedenle MFC öğretici [KARALAMA](../visual-cpp-samples.md) (adım 7).  
-  
- `COleServerDoc::GetZoomFactor` farklı ölçümleri kullanılabilir kapsayıcısından veya uygulanması sayısına dayalı yakınlaştırma faktörünü belirler, `COleServerItem` ve `COleServerDoc` sınıfları. Kısacası, geçerli yakınlaştırma faktörünü aşağıdaki formülde belirlenir:  
-  
-```  
-Position Rectangle (PR) / Container Extent (CE)  
-```  
-  
- Konum DİKDÖRTGEN kapsayıcı tarafından belirlenir. Yerinde etkinleştirme sırasında sunucuya döndürülür zaman `COleClientItem::OnGetItemPosition` olarak adlandırılır ve kapsayıcı sunucunun çağırdığında güncelleştirilmiş `COleServerDoc::OnSetItemRects` (çağrısıyla `COleClientItem::SetItemRects`).  
-  
- KAPSAYICI ölçüde hesaplamak için biraz daha karmaşıktır. Kapsayıcı çağrıldıklarında `COleServerItem::OnSetExtent` (çağrısıyla `COleClientItem::SetExtent`), KAPSAYICI ölçüde mantıksal inç başına piksel sayısına dayalı piksel dönüştürülen bu değeri olur. Kapsayıcı (genellikle söz konusu olduğu) SetExtent çağırmadı sonra KAPSAYICI ölçüde döndürülen boyutudur `COleServerItem::OnGetExtent`. Kapsayıcı SetExtent çağırmadı sahipse, bu nedenle, framework olsaydı kapsayıcı % 100'ile doğal ölçüde adlı olduğunu varsayar (döndürülen değer `COleServerItem::GetExtent`). Başka bir yolu, belirtilen kapsayıcı öğenin % (artık, daha az) 100 görüntülüyor framework varsayar.  
-  
- Ancak unutmayın önemlidir `COleServerItem::OnSetExtent` ve `COleServerItem::OnGetExtent` benzer adlara sahip aynı öznitelik öğenin işlemek değil. `OnSetExtent` nesnenin ne kadar kapsayıcısındaki (bağımsız olarak yakınlaştırma faktörünü) görünür olduğunu biliyorsanız sunucu izin vermek için çağrılır ve `OnGetExtent` nesnesinin ideal boyutunu belirlemek için kapsayıcı tarafından çağrılır.  
-  
- Her ilgili API'leri bakarak NET bir resim elde edebilirsiniz:  
-  
-## <a name="coleserveritemongetextent"></a>COleServerItem::OnGetExtent  
- Bu işlev "doğal boyutu" öğesinin HIMETRIC birimlerinde döndürmelidir. "Doğal boyutu" düşünülecek iyi yazdırıldığında görünebilir boyutu tanımlamak için yoludur. Burada döndürülen boyut, bir maddeyi içeriği (çok belirli bir öğe için sabittir meta dosyası gibi) için sabittir. Yakınlaştırma öğesine uygulandığında bu boyutunu değiştirmez. Kapsayıcı öğe daha fazla veya az alan çağırarak verdiğinde genellikle değiştirmez `OnSetExtent`. Bir değişiklik örneği, basit bir metin düzenleyicisi kapsayıcı tarafından gönderilen son ölçüde göre metin kaydırılan yok "kenar boşluğu" özelliğine sahip olabilir. Bir sunucu değiştirirseniz, bu sunucunun sistem kayıt defterinde bit OLEMISC_RECOMPOSEONRESIZE büyük olasılıkla ayarlamanız gerekir (Bu seçenek hakkında daha fazla bilgi için OLE SDK belgelerine bakın).  
-  
-## <a name="coleserveritemonsetextent"></a>COleServerItem::OnSetExtent  
- Bu işlev, kapsayıcı "fazla veya az" nesnesinin gösterdiği durumlarda çağrılır. Çoğu kapsayıcıları bu hiç çağırmayacaktır. Varsayılan uygulaması içinde kullanılan 'm_sizeExtent' kapsayıcısında alınan son değerini depolar `COleServerDoc::GetZoomFactor` yukarıda açıklanan KAPSAYICI ölçüde değeri hesaplanırken.  
-  
-## <a name="coleserverdoconsetitemrects"></a>COleServerDoc::OnSetItemRects  
- Yalnızca belge yerinde etkin olduğunda bu işlev çağrılır. Kapsayıcı öğesi'nin konumu veya öğeye uygulanan kırpma güncelleştirildiğinde çağrılır. Konum DİKDÖRTGEN, yukarıda açıklanan şekilde pay yakınlaştırma faktörünü hesaplamasını sağlar. Bir sunucu öğe konumu çağırarak değiştirilmesi isteği `COleServerDoc::RequestPositionChange`. Kapsayıcı olabilir veya bu isteği çağırarak yanıt vermeyebilir `OnSetItemRects` (çağrısıyla `COleServerItem::SetItemRects`).  
-  
-## <a name="coleserverdocondraw"></a>COleServerDoc::OnDraw  
- Meta dosyası, geçersiz kılma tarafından oluşturulan bilmeniz önemlidir `COleServerItem::OnDraw` geçerli yakınlaştırma faktörünü bağımsız olarak tam olarak aynı meta üretir. Kapsayıcı meta dosyası uygun şekilde ölçeklendirir. Görünümün arasında önemli bir fark budur `OnDraw` ve sunucu öğesi'nin `OnDraw`. Yakınlaştırma görünümü tanıtıcıları öğesi yalnızca oluşturur bir *yakınlaştırılabilir* meta dosyası ve uygun yakınlaştırma yapmak için kapsayıcı kadar bırakır.  
-  
- Sunucunuz düzgün şekilde davranan güvence altına almaya en iyi yolu uyarlamasını kullanmaktır `COleServerDoc::GetZoomFactor` belgenizi yerinde etkin ise.  
-  
-## <a name="mfc-support-for-in-place-resizing"></a>Yerinde yeniden boyutlandırma için MFC desteği  
- MFC tam olarak OLE 2 belirtiminde açıklandığı gibi yerinde yeniden boyutlandırma arabirimini uygular. Kullanıcı arabirimi tarafından desteklenen `COleResizeBar` sınıfı, özel ileti WM_SIZECHILD ve bu iletinin özel işleme `COleIPFrameWnd`.  
-  
- Bu iletinin çerçevesi tarafından sağlanan daha farklı işleme uygulamak isteyebilirsiniz. Yukarıda açıklandığı gibi en fazla kapsayıcı yerinde yeniden boyutlandırma sonuçlarını framework bırakır — sunucu yakınlaştırma faktörünü değişikliği yanıt verir. Her ikisi de ayarlayarak kapsayıcı tepki verdiğini, KAPSAYICI kapsamını ve konumu DİKDÖRTGEN işlenmesi sırasında kendi `COleClientItem::OnChangeItemPosition` (yapılan bir çağrı sonucunda adlı `COleServerDoc::RequestPositionChange`) yerinde yeniden boyutlandırma düzenleme "fazla veya az" öğesinin gösterilmesine yol sonra penceresini açın. Kapsayıcı KONUMUNU DİKDÖRTGEN işlenmesi sırasında yalnızca ayarlayarak tepki verdiğini varsa `COleClientItem::OnChangeItemPosition`yakınlaştırma faktörünü değiştirin ve "veya uzaklaştırılacağını." öğe gösterilir  
-  
- Bir sunucu (dereceye kadar) bu anlaşması sırasında neler kontrol edebilirsiniz. Elektronik tablo, örneğin seçmediğiniz kullanıcı öğesi düzenlenirken yeniden boyutlandırır yerinde az veya daha fazla hücre göstermek. Bir word-processor penceresi aynıdır ve metin yeni kenar boşluğuna yeniden kaydırması "Sayfa kenar boşluklarını" değiştirme bırakmayı. Sunucuları uygulamak bu doğal ölçüde değiştirerek (döndürülen boyutu `COleServerItem::OnGetExtent`) ne zaman yeniden boyutlandırma yapılır. Bu, aynı yakınlaştırma faktörünü, ancak daha büyük bir kaynaklanan ya da daha küçük görüntüleme alanında aynı miktarda değiştirmek için KAPSAYICI ölçüde ve konumu DİKDÖRTGEN neden olur. Ayrıca, daha az veya belgenin tarafından oluşturulan meta dosyası içinde görünür olacak `OnDraw`. Bu durumda, kullanıcı yalnızca görüntüleme alanı yerine öğeyi yeniden boyutlandırır zaman belge değiştiriyor.  
-  
- Özel yeniden boyutlandırma uygulamak ve hala tarafından sağlanan kullanıcı arabirimi yararlanan `COleResizeBar` WM_SIZECHILD iletisinde kılarak, `COleIPFrameWnd` sınıfı. WM_SIZECHILD özellikleri hakkında daha fazla bilgi için bkz: [Teknik Not 24](../mfc/tn024-mfc-defined-messages-and-resources.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+>  Yerinde etkinleştirme yalnızca (bağlı değil) katıştırılmış öğeleri için geçerli olduğundan, yakınlaştırma katıştırılmış nesnelere yalnızca uygulanır. Her ikisinde de API görürsünüz `COleServerDoc` ve `COleServerItem` yakınlaştırma için kullanılır. Hem bağlantılı hem de katıştırılmış öğeler için geçerli olan işlevler olduğundan bu dichotomy sebebi `COleServerItem` (Bu, sık kullanılan bir uygulamasını olmasını sağlar) ve yalnızca katıştırılmış nesneler için geçerli olan işlevler yerleştirilir `COleServerDoc` sınıf (sunucunun açısından olduğu **belge** hangi gömüldüğü).
+
+Yük çoğunu sunucu kapsayıcının yakınlaştırma faktörünü unutmayın ve düzenleme arabirimiyle uygun şekilde değiştirmek sunucu uygulayan üzerinde yerleştirilir. Ancak sunucu kapsayıcısı kullanarak yakınlaştırma faktörünü nasıl belirliyor
+
+## <a name="mfc-support-for-zooming"></a>Yakınlaştırma için MFC desteği
+
+Geçerli yakınlaştırma faktörünü çağırarak belirlenebilir `COleServerDoc::GetZoomFactor`. Belge yerinde etkin olmadığında bu çağrı, her zaman bir % 100 yakınlaştırma faktörünü (veya 1:1 oranını) sonuçlanır. Yerinde etkin % 100'dışında bir şey döndürebilir sırasında bunu çağırma.
+
+MFC OLE örnek doğru yakınlaştırma örneği için bkz. [HIERSVR](../visual-cpp-samples.md). Metni görüntüler ve metin, genel olarak, doğrusal bir şekilde (ipuçları, tipografi kuralları, tasarım genişlikleri ve karmaşık olursa olsun tüm yüksekliklerini) ölçeklenmez olarak HIERSVR içinde yakınlaştırma karmaşık. Yine de HIERSVR doğru yakınlaştırma uygulamak için makul bir başvuru ve bu nedenle MFC öğreticidir [KARALAMA](../visual-cpp-samples.md) (7. adım).
+
+`COleServerDoc::GetZoomFactor` Yakınlaştırma faktörünü farklı mevcut olan ölçümler kapsayıcısından veya uygulanması sayısına göre belirler, `COleServerItem` ve `COleServerDoc` sınıfları. Kısacası, geçerli yakınlaştırma faktörünü aşağıdaki formül tarafından belirlenir:
+
+```
+Position Rectangle (PR) / Container Extent (CE)
+```
+
+Konum DİKDÖRTGEN kapsayıcı tarafından belirlenir. Yerinde etkinleştirme sırasında bu sunucuya döndürülür olduğunda `COleClientItem::OnGetItemPosition` olarak adlandırılır ve kapsayıcı sunucunun çağırdığında güncelleştirilir `COleServerDoc::OnSetItemRects` (çağrısıyla `COleClientItem::SetItemRects`).
+
+KAPSAYICI ölçüde hesaplamak için biraz daha karmaşıktır. Kapsayıcı çağrılırsa `COleServerItem::OnSetExtent` (çağrısıyla `COleClientItem::SetExtent`), KAPSAYICI ölçüde mantıksal inç başına piksel göre piksel dönüştürülen bu değeridir. Kapsayıcı (Bu genellikle böyledir) SetExtent çağırmadı sonra KAPSAYICI ölçüde döndürüldüğü boyutudur `COleServerItem::OnGetExtent`. Kapsayıcı SetExtent çağırmadı, bu nedenle, framework olsaydı kapsayıcı, doğal kapsamın %100 çağrısı yapmanız, olduğunu varsayar (döndürülen değer `COleServerItem::GetExtent`). Başka bir deyişle, belirtilen kapsayıcı öğenin %100 (daha fazla, az) görüntülüyor framework varsayar.
+
+Ancak dikkat etmeniz önemlidir `COleServerItem::OnSetExtent` ve `COleServerItem::OnGetExtent` benzer adlara sahip aynı öğenin özniteliğini değiştirmek değil. `OnSetExtent` nesnenin ne kadar (bağımsız olarak yakınlaştırma faktörünü) kapsayıcısında görünür olduğunu biliyorsanız sunucu izin vermek için çağrılır ve `OnGetExtent` ideal bir nesnenin boyutunu belirlemek için kapsayıcı tarafından çağrılır.
+
+Her biri ilgili API'leri bakarak NET bir resim elde edebilirsiniz:
+
+## <a name="coleserveritemongetextent"></a>COleServerItem::OnGetExtent
+
+Bu işlev "doğal boyutu" öğesi HIMETRIC birimleri cinsinden döndürmelidir. "Doğal boyutu" düşünmenin en iyi yolu, onu yazdırıldığında görünebilir boyutu tanımlamaktır. Burada döndürülen boyutla bir belirli öğe içeriği (çok belirli bir öğe için sabit meta dosyası gibi) için sabittir. Yakınlaştırma öğesine uygulandığında, bu boyut değişmez. Kapsayıcı öğe daha fazla veya daha az boş alan çağırarak verdiğinde genellikle değişmez `OnSetExtent`. Bir değişiklik örneği, bir basit metin düzenleyicisi kapsayıcı tarafından gönderilen son ölçüde göre metin sarılan yok "kenar boşluğu" özelliğine sahip olabilir. Bir sunucu değiştirirseniz, bu sunucunun sistem kayıt defterinde bit OLEMISC_RECOMPOSEONRESIZE büyük olasılıkla ayarlamanız gerekir (Bu seçenek hakkında daha fazla bilgi OLE SDK belgelerine bakın).
+
+## <a name="coleserveritemonsetextent"></a>COleServerItem::OnSetExtent
+
+Kapsayıcı "daha az veya" nesne gösterdiği durumlarda bu işlev çağrılır. Çoğu kapsayıcıları bu hiç çağırmayacaktır. Varsayılan uygulamada kullanılan 'm_sizeExtent' kapsayıcısında alınan son değeri depolar `COleServerDoc::GetZoomFactor` yukarıda açıklanan KAPSAYICI kapsam değeri hesaplanırken.
+
+## <a name="coleserverdoconsetitemrects"></a>COleServerDoc::OnSetItemRects
+
+Yalnızca belgenin yerinde etkin olduğunda bu işlev çağrılır. Kapsayıcı öğenin konumunu veya öğeye uygulanan kırpma güncelleştirildiğinde çağrılır. Konum DİKDÖRTGEN, yukarıda açıklandığı gibi yakınlaştırma faktörünü hesaplama için pay sağlar. Bir sunucu öğesi konumu çağırarak değiştirilmesi isteği `COleServerDoc::RequestPositionChange`. Kapsayıcı olabilir ya da çağırarak bu istek için yanıt vermeyebilir `OnSetItemRects` (çağrısıyla `COleServerItem::SetItemRects`).
+
+## <a name="coleserverdocondraw"></a>COleServerDoc::OnDraw
+
+Meta dosyası, geçersiz kılma tarafından oluşturulan bilmeniz önemlidir `COleServerItem::OnDraw` bakılmaksızın geçerli yakınlaştırma faktörünü tam olarak aynı meta üretir. Kapsayıcı meta uygun şekilde ölçeklendirir. Görünüm arasında önemli bir fark budur `OnDraw` ve sunucu öğenin `OnDraw`. Yakınlaştırma görünümü tanıtıcıları öğenin yalnızca oluşturur bir *yakınlaştırılabilir* meta dosyası ve uygun yakınlaştırma yapmak için kapsayıcı kadar bırakır.
+
+En iyi yolu, sunucunuzun düzgün şekilde davranan Sigortası uyarlamasını kullanmaktır `COleServerDoc::GetZoomFactor` belgenizi yerinde etkin ise.
+
+## <a name="mfc-support-for-in-place-resizing"></a>Yerinde yeniden boyutlandırma için MFC desteği
+
+MFC, OLE 2 Belirtimi'nde açıklanan yerinde yeniden boyutlandırma arabirimi tam olarak uygular. Kullanıcı arabirimi tarafından desteklenen `COleResizeBar` sınıfı, bir özel ileti WM_SIZECHILD ve bu iletiye özel işlenmesini `COleIPFrameWnd`.
+
+Bu iletinin framework tarafından sağlanan değerinden farklı işleme uygulamak isteyebilirsiniz. Yukarıda açıklandığı gibi framework kadar kapsayıcı yerinde yeniden boyutlandırma sonuçlarını bırakır; yakınlaştırma faktörünü değiştirmeyi sunucu yanıt verir. Kapsayıcı hem ayarlayarak tepki verir, KAPSAYICI kapsamını ve konumu DİKDÖRTGEN işlenmesi sırasında kendi `COleClientItem::OnChangeItemPosition` (çağrı sonucunda adlı `COleServerDoc::RequestPositionChange`) sonra yerinde yeniden boyutlandırma düzenleme "fazla veya az" öğesinin gösterirken neden olur pencere. Kapsayıcı KONUMUNU DİKDÖRTGEN işlenmesi sırasında yalnızca ayarlayarak tepki verir durumunda `COleClientItem::OnChangeItemPosition`yakınlaştırma faktörünü değişir ve öğeyi "veya uzaklaştırılacağını." gösterilir.
+
+Bir sunucu (dereceye kadar), bu anlaşması sırasında neler denetleyebilirsiniz. Elektronik tablo, örneğin seçmediğiniz kullanıcı pencere öğesi düzenlerken boyutlandırdığında az veya daha fazla hücre yerinde gösterilecek. Bir word-processor penceresi ile aynıdır ve metin yeni kenar boşluğuna yeniden sarmalamanız "kenar boşluklarını" değiştirmek seçmeniz. Hizmetleri uygulayan bu doğal ölçüde değiştirerek (öğesinden döndürülen boyutla `COleServerItem::OnGetExtent`) ne zaman yeniden boyutlandırma gerçekleştirilir. Bu, aynı yakınlaştırma faktörünü, ancak daha büyük bir kaynaklanan ya da daha küçük görüntüleme alanının aynı miktarda değiştirmek için KAPSAYICI ölçüde ve konumu DİKDÖRTGEN neden olur. Ayrıca, daha az veya belgenin tarafından oluşturulan meta dosyası içinde görünür olacak `OnDraw`. Bu durumda, yalnızca görüntüleme alanı yerine bir öğenin kullanıcı yeniden boyutlandırdığında belge değişiyor.
+
+Özel yeniden boyutlandırma uygular ve hala tarafından sağlanan kullanıcı arabirimi yararlanarak `COleResizeBar` WM_SIZECHILD iletisinde kılarak, `COleIPFrameWnd` sınıfı. WM_SIZECHILD özellikleri hakkında daha fazla bilgi için bkz. [Teknik Not 24](../mfc/tn024-mfc-defined-messages-and-resources.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

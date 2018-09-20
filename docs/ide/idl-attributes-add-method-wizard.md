@@ -17,52 +17,54 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea2f0cd3ae445c4804738567b5bd9265363995e3
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ce9042a980190bf1fe3da06fb4a9843f73294dee
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45705178"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46398852"
 ---
 # <a name="idl-attributes-add-method-wizard"></a>IDL Öznitelikleri, Yöntem Ekleme Sihirbazı
-Yöntem için arabirim tanımlama dili (IDL) ayarlarını belirtmek için bu sayfanın bir yöntem Ekleme Sihirbazı'nı kullanın.  
-  
+
+Yöntem için arabirim tanımlama dili (IDL) ayarlarını belirtmek için bu sayfanın bir yöntem Ekleme Sihirbazı'nı kullanın.
+
 - **id**
 
-   Yükleme yöntemini tanımlayan sayısal bir kimlik ayarlar. Bkz: [kimliği](/windows/desktop/Midl/id) içinde *MIDL başvuru*.  
-  
-   Bu kutu özel arabirimler için kullanılamaz ve MFC görüntüleme için kullanılamıyor.  
-  
+   Yükleme yöntemini tanımlayan sayısal bir kimlik ayarlar. Bkz: [kimliği](/windows/desktop/Midl/id) içinde *MIDL başvuru*.
+
+   Bu kutu özel arabirimler için kullanılamaz ve MFC görüntüleme için kullanılamıyor.
+
 - **call_as**
 
-   Bu yerel yöntemi eşlenebilir uzak bir yöntem adını belirtir. Bkz: [call_as](/windows/desktop/Midl/call-as) içinde *MIDL başvuru*.  
-  
-   MFC görüntüleme için kullanılamaz.  
-  
+   Bu yerel yöntemi eşlenebilir uzak bir yöntem adını belirtir. Bkz: [call_as](/windows/desktop/Midl/call-as) içinde *MIDL başvuru*.
+
+   MFC görüntüleme için kullanılamaz.
+
 - **helpcontext**
 
-   Yardım dosyasında bu yöntem kullanıcı görünümü bilgi sağlayan bir bağlam kimliği belirtir. Bkz: [helpcontext](/windows/desktop/Midl/helpcontext) içinde *MIDL başvuru*.  
-  
-   MFC görüntüleme için kullanılamaz.  
-  
+   Yardım dosyasında bu yöntem kullanıcı görünümü bilgi sağlayan bir bağlam kimliği belirtir. Bkz: [helpcontext](/windows/desktop/Midl/helpcontext) içinde *MIDL başvuru*.
+
+   MFC görüntüleme için kullanılamaz.
+
 - **helpstring**
 
-   Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir. Varsayılan olarak ayarlanmış "yöntemi *yöntem adı*." Bkz: [helpstring](/windows/desktop/Midl/helpstring) içinde *MIDL başvuru*.  
-  
-   MFC görüntüleme için kullanılamaz.  
-  
+   Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir. Varsayılan olarak ayarlanmış "yöntemi *yöntem adı*." Bkz: [helpstring](/windows/desktop/Midl/helpstring) içinde *MIDL başvuru*.
+
+   MFC görüntüleme için kullanılamaz.
+
 - **Ek öznitelikler**
 
-   MFC görüntüleme için kullanılamaz.  
-  
-   |Öznitelik|Açıklama|  
-   |---------------|-----------------|  
-   |**hidden**|Yöntem var ancak kullanıcıya dayalı tarayıcıda görüntülenmemesi gerektiğini belirtir. Bkz: [gizli](/windows/desktop/Midl/hidden) içinde *MIDL başvuru*.|  
-   |**Kaynak**|Bir olay kaynağı yöntemi üyesi olduğunu gösterir. Bkz: [kaynak](/windows/desktop/Midl/source) içinde *MIDL başvuru*.|  
-   |`local`|MIDL derleyicisine yöntemi uzak olmadığını belirtir. Bkz: [yerel](/windows/desktop/Midl/local) içinde *MIDL başvuru*.|  
-   |**restricted**|Yöntemi rasgele çağrılamaz belirtir. Bkz: [kısıtlı](/windows/desktop/Midl/restricted) içinde *MIDL başvuru*.|  
-   |**vararg**|Yöntemi, değişken sayıda bağımsız değişken aldığını belirtir. Bunu yapmak için son bağımsız değişken bir güvenli dizisi olmalıdır **değişken** kalan tüm bağımsız değişkenleri içeren bir tür. Bkz: [vararg](/windows/desktop/Midl/vararg) içinde *MIDL başvuru*.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yöntem ekleme](../ide/adding-a-method-visual-cpp.md)   
- [Yöntem Ekleme Sihirbazı](../ide/add-method-wizard.md)
+   MFC görüntüleme için kullanılamaz.
+
+   |Öznitelik|Açıklama|
+   |---------------|-----------------|
+   |**hidden**|Yöntem var ancak kullanıcıya dayalı tarayıcıda görüntülenmemesi gerektiğini belirtir. Bkz: [gizli](/windows/desktop/Midl/hidden) içinde *MIDL başvuru*.|
+   |**Kaynak**|Bir olay kaynağı yöntemi üyesi olduğunu gösterir. Bkz: [kaynak](/windows/desktop/Midl/source) içinde *MIDL başvuru*.|
+   |`local`|MIDL derleyicisine yöntemi uzak olmadığını belirtir. Bkz: [yerel](/windows/desktop/Midl/local) içinde *MIDL başvuru*.|
+   |**restricted**|Yöntemi rasgele çağrılamaz belirtir. Bkz: [kısıtlı](/windows/desktop/Midl/restricted) içinde *MIDL başvuru*.|
+   |**vararg**|Yöntemi, değişken sayıda bağımsız değişken aldığını belirtir. Bunu yapmak için son bağımsız değişken bir güvenli dizisi olmalıdır **değişken** kalan tüm bağımsız değişkenleri içeren bir tür. Bkz: [vararg](/windows/desktop/Midl/vararg) içinde *MIDL başvuru*.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yöntem ekleme](../ide/adding-a-method-visual-cpp.md)<br>
+[Yöntem Ekleme Sihirbazı](../ide/add-method-wizard.md)

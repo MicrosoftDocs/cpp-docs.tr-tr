@@ -15,19 +15,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 89a6b3392491ad36a0b0c9d542ffac4738b7c0f6
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: eb3f501a2653c4d25adb195e9de9abf082179f3a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605365"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46421914"
 ---
 # <a name="id-property"></a>ID Özelliği
+
 ID özelliği her Hızlandırıcı tablosu girişini program kodunda başvuruyor. Bu kullanıcı kısayol tuşunu ya da bir tuş bileşimi bastığında, program alırsınız komut değerdir. (Hızlandırıcı tablosu kimliği menüsü kaynak kimliği ile aynı olduğu sürece) bir kısayol menü öğesi ile aynı yapmak için kimlikleri aynı yapın.
   
 ## <a name="requirements"></a>Gereksinimler
- Win32
+
+Win32
   
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Hızlandırıcı Özelliklerini Ayarlama](../windows/setting-accelerator-properties.md)  
- [Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)
+
+[Hızlandırıcı Özelliklerini Ayarlama](../windows/setting-accelerator-properties.md)<br/>
+[Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)

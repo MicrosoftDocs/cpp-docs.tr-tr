@@ -17,17 +17,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 954d2248061ec571d9d2ba8804c1f7c97275cbfc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: da411fbecdea0a1e7b8976ca119057204693a9bd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343505"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387867"
 ---
 # <a name="exitinstance-member-function"></a>ExitInstance Üye İşlevi
-[ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance) sınıfının üye işlevini [CWinApp](../mfc/reference/cwinapp-class.md) uygulamanız bir kopyasını sonlandırır, genellikle uygulama çıkma kullanıcı sonucunda her zaman çağrılır.  
-  
- Geçersiz kılma `ExitInstance` grafik cihaz arabirimi (GDI) kaynakları serbest bırakma veya program yürütülmesi sırasında kullanılan bellek ayırmayı kaldırma gibi özel temizleme işleme ihtiyacınız varsa. Belgeler ve görünümler gibi standart öğelerinin temizleme ancak, bu nesnelerle belirli özel temizleme yapmak için diğer geçersiz kılınabilir işlevlerle framework tarafından sağlanır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)
+
+[ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance) sınıfının üye işlevinde [CWinApp](../mfc/reference/cwinapp-class.md) uygulamanızı bir kopyasını sonlandırır, genellikle bir kullanıcı uygulamadan çıkmayı sonucu olarak her zaman çağrılır.
+
+Geçersiz kılma `ExitInstance` grafik cihaz arabirimi (GDI) kaynakları serbest bırakma veya program yürütme sırasında kullanılan belleğini gibi özel bir temizleme işlemi gerekiyorsa. Belgeler ve görünümler gibi standart öğelerinin temizleme, ancak bu nesnelere belirli özel temizleme yapmak için başka geçersiz kılınabilir işlevler ile framework tarafından sağlanır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)

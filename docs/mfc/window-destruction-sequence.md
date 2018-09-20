@@ -19,22 +19,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b1c67d5a6391bbfc91bbce0d06a6bb58350e9a0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 04ef1aa9dadbbe965ab17945da681a0e1189c404
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382615"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446664"
 ---
 # <a name="window-destruction-sequence"></a>Pencere Yok Etme Dizisi
-MFC Framework'teki kullanıcı pencerenin varsayılan çerçeve penceresi kapatıldığında [OnClose](../mfc/reference/cwnd-class.md#onclose) işleyicisi çağrılarını [DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow). Windows penceresi bozulduğunda adlı son üye işlevi [OnNcDestroy](../mfc/reference/cwnd-class.md#onncdestroy), hangi bazı temizleme mu çağırır [varsayılan](../mfc/reference/cwnd-class.md#default) üye Windows temizlenmesini işlev ve son olarak çağırır sanal üye işlevi [PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy). [CFrameWnd](../mfc/reference/cframewnd-class.md) uyarlamasını `PostNcDestroy` C++ pencere nesnesi siler.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Ayırma ve pencere belleği serbest bırakma](../mfc/allocating-and-deallocating-window-memory.md)  
-  
--   [Bir CWND'i hwnd'inden ayırma](../mfc/detaching-a-cwnd-from-its-hwnd.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Pencere Nesnelerini Yok Etme](../mfc/destroying-window-objects.md)
+
+Kullanıcı, pencerenin varsayılan çerçeve penceresi kapandığında MFC çerçevesi içinde [OnClose](../mfc/reference/cwnd-class.md#onclose) işleyicisi çağrılarını [DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow). Windows penceresini yok edildiğinde adlı son bir üye işlevidir [OnNcDestroy](../mfc/reference/cwnd-class.md#onncdestroy), bazı temizleme işlemleri yapar, çağıran [varsayılan](../mfc/reference/cwnd-class.md#default) üye Windows temizleme işlemini gerçekleştirmek için işlevi ve son olarak çağırır sanal üye işlevi [PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy). [CFrameWnd](../mfc/reference/cframewnd-class.md) uygulaması `PostNcDestroy` C++ pencere nesnesi siler.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Pencere belleğini ayırma ve](../mfc/allocating-and-deallocating-window-memory.md)
+
+- [Bir cwnd'i hwnd'inden ayırma](../mfc/detaching-a-cwnd-from-its-hwnd.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Pencere Nesnelerini Yok Etme](../mfc/destroying-window-objects.md)
 

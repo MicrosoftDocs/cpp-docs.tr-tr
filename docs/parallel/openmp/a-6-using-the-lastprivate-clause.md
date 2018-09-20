@@ -1,5 +1,5 @@
 ---
-title: Lastprivate yan tümcesini kullanarak A.6 | Microsoft Docs
+title: A.6 lastprivate yan tümcesini kullanma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,24 +12,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eec6ddc46aab36671e767963e5aaf6e25c4d25cd
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 03d18d3aaf5c5d1cbe03282710ae4f4e2bb613f3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33690549"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390585"
 ---
 # <a name="a6---using-the-lastprivate-clause"></a>A.6   lastprivate Yan Tümcesini Kullanma
-Bazen doğru yürütme son yineleme döngüsü bir değişkene atar değere bağlıdır. Programlara tür değişkenlerinin bağımsız değişken olarak listelenmelidir bir `lastprivate` yan tümcesi ([bölüm 2.7.2.3](../../parallel/openmp/2-7-2-3-lastprivate.md) sayfasında 27) böylece değişkenlerin değerleri zaman döngü sırayla yürütülen ile aynı olur.  
-  
-```  
-#pragma omp parallel  
-{  
-   #pragma omp for lastprivate(i)  
-      for (i=0; i<n-1; i++)  
-         a[i] = b[i] + b[i+1];  
-}  
-a[i]=b[i];  
-```  
-  
- Değerini önceki örnekte `i` paralel bölge sonunda eşit olur `n-1`, gibi sıralı durumda.
+
+Bazı durumlarda doğru yürütme son yineleme döngüsü bir değişkene atar değere bağlıdır. Programlara tür bağımsız değişkenleri olarak tüm değişkenleri listelemelidir bir `lastprivate` yan tümcesi ([bölümü 2.7.2.3](../../parallel/openmp/2-7-2-3-lastprivate.md) sayfasında 27) değişkenlerin değerleri, döngü sırayla yürütülen aynı olacak şekilde.
+
+```
+#pragma omp parallel
+{
+   #pragma omp for lastprivate(i)
+      for (i=0; i<n-1; i++)
+         a[i] = b[i] + b[i+1];
+}
+a[i]=b[i];
+```
+
+Yukarıdaki örnekte, değerini `i` paralel bölgenin sonunda eşit olacaktır `n-1`, sıralı bir durumda gibi.

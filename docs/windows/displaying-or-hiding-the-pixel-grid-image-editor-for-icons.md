@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 911810a53df47e9ea7eb0485724d23a41eef3349
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 1a31d0ce8ec68e0b27d5ebc7de096e52162561cd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589602"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46438996"
 ---
 # <a name="displaying-or-hiding-the-pixel-grid-image-editor-for-icons"></a>Piksel Kılavuzunu Görüntüleme veya Gizleme (Simgeler İçin Görüntü Düzenleyicisi)
 
@@ -47,5 +47,5 @@ Yok.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [Pencere bölmeleri](../windows/window-panes-image-editor-for-icons.md)

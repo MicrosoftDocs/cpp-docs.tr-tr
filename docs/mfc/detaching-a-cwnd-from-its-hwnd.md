@@ -1,5 +1,5 @@
 ---
-title: Bir CWND'i hwnd'inden ayırma | Microsoft Docs
+title: Bir Cwnd'i hwnd'inden ayırma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,24 +20,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a776b4ff4799750c89a322379a063030db748eec
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c69703d8c528d82a696fc94be76ac4a569628b4e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342686"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392655"
 ---
 # <a name="detaching-a-cwnd-from-its-hwnd"></a>Bir CWnd'i HWND'inden Ayırma
-Nesne - sağlamasına gerekiyorsa`HWND` ilişki, MFC sağlar başka `CWnd` üye işlevi [ayırma](../mfc/reference/cwnd-class.md#detach), Windows penceresinden C++ pencere nesnesi keser. Bu nesne bozulduğunda Windows pencere yok etme yıkıcı önler.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Pencereler oluşturma](../mfc/creating-windows.md)  
-  
--   [Pencere yok etme dizisi](../mfc/window-destruction-sequence.md)  
-  
--   [Ayırma ve pencere belleği serbest bırakma](../mfc/allocating-and-deallocating-window-memory.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Pencere Nesneleri](../mfc/window-objects.md)
+
+Nesne - aşmak gerekiyorsa`HWND` ilişki, MFC başka sağlar `CWnd` üye işlevini [ayırma](../mfc/reference/cwnd-class.md#detach), Windows penceresinden C++ pencere nesnesi keser. Bu, yok edici nesnesi yok edildiğinde Windows penceresini yok etme engeller.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Pencereler oluşturma](../mfc/creating-windows.md)
+
+- [Pencere yok etme dizisi](../mfc/window-destruction-sequence.md)
+
+- [Pencere belleğini ayırma ve](../mfc/allocating-and-deallocating-window-memory.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Pencere Nesneleri](../mfc/window-objects.md)
 

@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5077d2dcd426182495cc7a414aca7ca411d1fa60
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: fe7831c12a9ea68525334a55aec5a1fa2ecb847d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605382"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405118"
 ---
 # <a name="making-controls-the-same-width-height-or-size"></a>Denetimleri Aynı Genişliğe, Yüksekliğe veya Boyuta Getirme
 
@@ -49,5 +49,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)  
+[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)

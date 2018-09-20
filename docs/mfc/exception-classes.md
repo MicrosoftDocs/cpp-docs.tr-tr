@@ -18,51 +18,53 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ce4085d0f5f2dcc73d126d04b7560ef8360ffd9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dd666f96ed694b57bf02eb3ad239783828b69e48
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344902"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439269"
 ---
 # <a name="exception-classes"></a>Özel Durum Sınıfları
-Sınıf kitaplığı sınıfına dayalı bir özel durum işleme mekanizması sağlar `CException`. Uygulama Çerçevesi kendi kodunda özel durumları kullanır; Ayrıca bunları sizin kullanabilirsiniz. Daha fazla bilgi için bkz: [özel durumları](../mfc/exception-handling-in-mfc.md). Kendi özel durum türlerini türetmek `CException`.  
-  
- MFC özel durum sınıfları yanı sıra kendi özel türetilen bir özel durum sınıfına tüm desteklediği özel durumlar için sağlar.  
-  
- [CException](../mfc/reference/cexception-class.md)  
- Özel durumlar için temel sınıf.  
-  
- [CArchiveException](../mfc/reference/carchiveexception-class.md)  
- Arşiv özel durum.  
-  
- [CDaoException](../mfc/reference/cdaoexception-class.md)  
- DAO veritabanı işlemi bir hata kaynaklanan bir özel durum.  
-  
- [CDBException](../mfc/reference/cdbexception-class.md)  
- ODBC veritabanı işlem hatasından kaynaklanan bir özel durum.  
-  
- [CFileException](../mfc/reference/cfileexception-class.md)  
- Bir dosya odaklı özel durumu.  
-  
- [CMemoryException](../mfc/reference/cmemoryexception-class.md)  
- Bir bellek yetersiz özel durum.  
-  
- [CNotSupportedException](../mfc/reference/cnotsupportedexception-class.md)  
- Desteklenmeyen bir özellik kullanımından kaynaklanan bir özel durum.  
-  
- [COleException](../mfc/reference/coleexception-class.md)  
- OLE işlenirken bir hata kaynaklanan bir özel durum. Bu sınıf, kapsayıcılar ve sunucular tarafından kullanılır.  
-  
- [COleDispatchException](../mfc/reference/coledispatchexception-class.md)  
- Otomasyon sırasında bir hatayla sonuçlanan bir özel durum. Otomasyon özel durumlar otomasyon sunucuları tarafından oluşturulan ve Otomasyon istemcileri tarafından yakalandı.  
-  
- [CResourceException](../mfc/reference/cresourceexception-class.md)  
- Bir Windows kaynağı yüklemek için bir hatadan kaynaklanan bir özel durum.  
-  
- [CUserException](../mfc/reference/cuserexception-class.md)  
- Bir kullanıcı tarafından başlatılan işlemi durdurmak için kullanılan bir özel durum. Genellikle, bu özel durum önce kullanıcı sorun bildirildi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Sınıf kitaplığı sağlar sınıfını esas bir özel durum işleme mekanizması `CException`. Uygulama Çerçevesi kendi kodunda özel durumları kullanır; Ayrıca bunları sizin kullanabilirsiniz. Daha fazla bilgi için bkz [özel durumları](../mfc/exception-handling-in-mfc.md). Kendi özel durum türlerinden türetebilirsiniz `CException`.
+
+MFC destekleyen özel durumların tüm özel durum sınıfları yanı sıra, kendi özel durum türetilen bir özel durum sınıfı sağlar.
+
+[CException](../mfc/reference/cexception-class.md)<br/>
+Özel durumlar için temel sınıf.
+
+[CArchiveException](../mfc/reference/carchiveexception-class.md)<br/>
+Arşiv özel durum.
+
+[CDaoException](../mfc/reference/cdaoexception-class.md)<br/>
+DAO veritabanı işlemi başarısız kaynaklanan bir özel durum.
+
+[CDBException](../mfc/reference/cdbexception-class.md)<br/>
+Bir ODBC veritabanı işlem hatası kaynaklanan bir özel durum.
+
+[CFileException](../mfc/reference/cfileexception-class.md)<br/>
+Bir dosya odaklı özel durumu.
+
+[CMemoryException](../mfc/reference/cmemoryexception-class.md)<br/>
+Bir bellek yetersiz özel durum.
+
+[CNotSupportedException](../mfc/reference/cnotsupportedexception-class.md)<br/>
+Desteklenmeyen bir özellik kullanımından kaynaklanan bir özel durum.
+
+[COleException](../mfc/reference/coleexception-class.md)<br/>
+OLE işlenirken bir hata kaynaklanan bir özel durum. Bu sınıf, kapsayıcılar ve sunucular tarafından kullanılır.
+
+[COleDispatchException](../mfc/reference/coledispatchexception-class.md)<br/>
+Otomasyon işlemi sırasında bir hatayla sonuçlanan bir özel durum. Otomasyon özel durumları otomasyon sunucuları tarafından oluşturulan ve Otomasyon istemcileri tarafından yakalandı.
+
+[CResourceException](../mfc/reference/cresourceexception-class.md)<br/>
+Bir Windows kaynağı yüklemek için bir hatasından kaynaklanan bir özel durum.
+
+[CUserException](../mfc/reference/cuserexception-class.md)<br/>
+Kullanıcı tarafından başlatılan bir işlemin durdurmak için kullanılan bir özel durum. Genellikle, bu özel durum önce kullanıcı sorun bildirildi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e2353b952964ffe6b8078f688b4ac8e129d891d7
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 258875f488dd0d3460513ba285b894f114093077
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314696"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448226"
 ---
 # <a name="attributes-alphabetical-reference"></a>Öznitelikler Alfabetik Başvurusu
 
@@ -138,7 +138,7 @@ Aşağıdaki öznitelikler, Visual C++'da kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[C++ Öznitelikleri Başvurusu](../windows/cpp-attributes-reference.md)  
-[Kavramları](../windows/attributed-programming-concepts.md)  
-[Gruplara Göre Öznitelikler](../windows/attributes-by-group.md)  
+[C++ Öznitelikleri Başvurusu](../windows/cpp-attributes-reference.md)<br/>
+[Kavramları](../windows/attributed-programming-concepts.md)<br/>
+[Gruplara Göre Öznitelikler](../windows/attributes-by-group.md)<br/>
 [Kullanıma Göre Öznitelikler](../windows/attributes-by-usage.md)

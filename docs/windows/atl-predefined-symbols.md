@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6b1ee8da2ea13eb5a095193af94a9253e53c865f
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 965eb339295b86c223b5081dede8e33dd282b95d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318011"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46386606"
 ---
 # <a name="atl-predefined-symbols"></a>ATL Önceden Tanımlanmış Semboller
 
@@ -46,5 +46,5 @@ ATL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)  
+[Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)<br/>
 [Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)

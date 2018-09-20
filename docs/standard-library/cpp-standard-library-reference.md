@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dcf760219f06ab71684d9d67240712fa501b3c00
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 0c38485e84f0b06e79e02ba780926b6e08378220
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722611"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392924"
 ---
 # <a name="c-standard-library-reference"></a>C++ Standart Kitaplığı Başvurusu
 
@@ -32,10 +32,13 @@ Visual C++ çalışma zamanı kitaplıkları hakkında daha fazla bilgi için bk
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[C++ Standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md) C++ Standart Kitaplığı'nın Microsoft uygulaması için genel bir bakış sağlar.
+[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)<br/>
+C++ Standart Kitaplığı'nın Microsoft uygulaması için genel bir bakış sağlar.
 
-[iostream programlama](../standard-library/iostream-programming.md) iostream programlaması genel bir bakış sağlar.
+[iostream Programlaması](../standard-library/iostream-programming.md)<br/>
+İostream programlaması genel bir bakış sağlar.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md) C++ Standart Kitaplığı üst bilgi dosyaları, kod örnekleri ile görüştükten başvuru konulara bağlantılar sağlar.
+[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
+C++ Standart Kitaplığı üst bilgi dosyaları, kod örnekleri ile açıklayan başvuru konulara bağlantılar sağlar.
 
 

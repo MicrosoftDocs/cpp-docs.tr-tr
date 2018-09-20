@@ -1,5 +1,5 @@
 ---
-title: CTreeCtrl vs. CTreeView | Microsoft Docs
+title: CTreeCtrl ile CTreeView | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,21 +20,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d71048b6f03f7f1b4400c0a88c178d1b97acdf2f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e8acaecbdfb99b8ae0b27023145a0ef6aee1f219
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342039"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46399158"
 ---
-# <a name="ctreectrl-vs-ctreeview"></a>CTreeCtrl vs. CTreeView
-Ağaç denetimleri kapsülleyen iki sınıf MFC sağlar: [CTreeCtrl](../mfc/reference/ctreectrl-class.md) ve [CTreeView](../mfc/reference/ctreeview-class.md). Her sınıf farklı durumlarda yararlıdır.  
-  
- Kullanım `CTreeCtrl` düz alt pencere denetim; gerektiğinde bir iletişim kutusunda örneği için. Özellikle kullanmak isteyebilirsiniz `CTreeCtrl` olacaksa diğer alt denetimleri penceresinde, olduğu gibi tipik iletişim kutusu.  
-  
- Kullanım `CTreeView` belge/görünüm mimarisinin bir Görünüm penceresinde gibi davranacak şekilde Ağaç denetimi ve aynı zamanda ağaç denetimi istediğinizde. A `CTreeView` bir çerçeve penceresi veya Bölümlendirici pencere tüm istemci alanını kaplar. Bu, kendi üst penceresi boyutlandırılır ve menüleri, Hızlandırıcı tuşları ve araç çubuklarını komut iletileri işleyebilmesi için otomatik olarak boyutlandırılır. Ağaç denetimi ağaç görüntülemek gereken verileri içerdiğinden, ilgili belge nesnesi karmaşık olması gerekmez — bile kullanabileceğinizi [CDocument](../mfc/reference/cdocument-class.md) belge türü, belge şablonu olarak.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CTreeCtrl kullanma](../mfc/using-ctreectrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+# <a name="ctreectrl-vs-ctreeview"></a>CTreeCtrl ile CTreeView
+
+MFC ağaç denetimleri kapsayan iki sınıflar sağlar: [CTreeCtrl](../mfc/reference/ctreectrl-class.md) ve [CTreeView](../mfc/reference/ctreeview-class.md). Her sınıf, farklı durumlarda kullanışlıdır.
+
+Kullanım `CTreeCtrl` düz bir alt pencere denetimi; gerektiğinde örneği için bir iletişim kutusu içinde. Özellikle kullanmak isteyebilirsiniz `CTreeCtrl` olacaksa diğer alt denetimler gibi tipik iletişim kutusu penceresinde.
+
+Kullanım `CTreeView` belge/görünüm mimarisinin bir Görünüm penceresinde gibi davranmasını ağaç denetimi yanı sıra bir ağaç denetimi istediğinizde. A `CTreeView` bir çerçeve penceresinin veya ayırıcı penceresi tüm istemci alanını kaplar. Otomatik olarak üst pencereye boyutlandırılır ve menülerini ve Hızlandırıcı tuşları araç çubukları komut iletileri işleyebilir boyutlandırılır. Ağaç denetimi ağaç görüntülemek gereken verileri içerdiğinden, karşılık gelen belge nesnesi karmaşık olması gerekmez; bile kullanabilir [CDocument](../mfc/reference/cdocument-class.md) belge şablonunuzdaki belge türü olarak.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CTreeCtrl Kullanma](../mfc/using-ctreectrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

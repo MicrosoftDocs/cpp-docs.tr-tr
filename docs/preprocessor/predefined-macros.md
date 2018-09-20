@@ -152,12 +152,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c2419925896112eb235bcdfe77d9916373f0091
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: b9a1472cba13f477143c9b9ace27cb2555f41406
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42465715"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408433"
 ---
 # <a name="predefined-macros"></a>Önceden Tanımlı Makrolar
 
@@ -443,6 +443,6 @@ Microsoft Visual C++ bu ek önceden tanımlı makrolar destekler.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Makrolar (C/C++)](../preprocessor/macros-c-cpp.md)   
-[Ön İşlemci işleçleri](../preprocessor/preprocessor-operators.md)   
+[Makrolar (C/C++)](../preprocessor/macros-c-cpp.md)<br/>
+[Ön İşlemci İşleçleri](../preprocessor/preprocessor-operators.md)<br/>
 [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)

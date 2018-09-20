@@ -12,20 +12,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae7070fcc590307e71b0c34259bcbe1c12200550
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: e51bd425999081c7a06a7d5692dbea16c887fa0b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689603"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46417858"
 ---
 # <a name="262-critical-construct"></a>2.6.2 critical Yapı
-**Kritik** yönergesi ilişkili yapılandırılmış blok yürütülmesi için tek bir iş parçacığı aynı anda kısıtlayan bir yapı tanımlar. Söz dizimi **kritik** yönergesi aşağıdaki gibidir:  
-  
-```  
-#pragma omp critical [(name)]  new-linestructured-block  
-```  
-  
- İsteğe bağlı bir *adı* kritik bölge tanımlamak için kullanılabilir. Kritik bir bölge tanımlamak için kullanılan tanımlayıcıları dış bağlantı varsa ve etiketleri, etiketler, üyeleri ve sıradan tanımlayıcıları tarafından kullanılan ad alanları ayrı olan bir ad alanında.  
-  
- Bir iş parçacığı bir kritik bölgede (herhangi bir yere programı) aynı ada sahip başka bir iş parçacığı yürütüyor kritik bir bölge başında bekler. Adlandırılmamış tüm **kritik** yönergeleri aynı belirtilmeyen adına eşleyin.
+
+**Kritik** yönergesi ilişkili yapısal bloğunun yürütülmesi için tek bir iş parçacığı aynı anda kısıtlayan bir yapı tanımlar. Söz dizimi **kritik** yönerge aşağıdaki gibidir:
+
+```
+#pragma omp critical [(name)]  new-linestructured-block
+```
+
+İsteğe bağlı *adı* kritik bölge tanımlamak için kullanılabilir. Kritik bir bölge tanımlamak için kullanılan tanımlayıcıları dış bağlantısı vardır ve etiketler, etiketler, üyeleri ve sıradan tanımlayıcıları tarafından kullanılan ad alanları'ndan ayrı bir ad alanı bulunan.
+
+Bir iş parçacığı bir kritik bölgede (herhangi bir yere program) aynı ada sahip başka bir iş parçacığı yürütülmekte olan kritik bir bölge başında bekler. Adlandırılmamış tüm **kritik** yönergeleri aynı belirtilmeyen adına eşleyin.

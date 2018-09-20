@@ -16,98 +16,97 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71e9baa101eb87ac10171722fa76fc462a154ad2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 362ad3a2676fa1a7c8f965a6750782617d6a3203
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087492"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425736"
 ---
 # <a name="norm-class"></a>norm Sınıfı
-Bir norm numarasını temsil eder. Her bir kayan bir öğedir aralığında nokta sayısı [-1.0f, 1.0f &].  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class norm;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[Norm Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu. İçin 0.0f başlatın.|  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|Norm::operator-||  
-|Norm::operator--||  
-|Norm::operator float|Dönüştürme işleci. Kayan norm sayıya dönüştürme noktası değeri.|  
-|Norm::operator * =||  
-|Norm::operator / =||  
-|Norm::operator ++||  
-|Norm::operator +=||  
-|norm::operator=||  
-|Norm::operator-=||  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `norm`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** amp_short_vectors.h  
-  
- **Namespace:** Concurrency::graphics  
-  
-##  <a name="ctor"></a> Norm 
 
- Varsayılan Oluşturucu. İçin 0.0f başlatın.  
-  
-```  
+Bir norm numarasını temsil eder. Her bir kayan bir öğedir aralığında nokta sayısı [-1.0f, 1.0f &].
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class norm;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[Norm Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu. İçin 0.0f başlatın.|
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|Norm::operator-||
+|Norm::operator--||
+|Norm::operator float|Dönüştürme işleci. Kayan norm sayıya dönüştürme noktası değeri.|
+|Norm::operator * =||
+|Norm::operator / =||
+|Norm::operator ++||
+|Norm::operator +=||
+|norm::operator=||
+|Norm::operator-=||
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`norm`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** amp_short_vectors.h
+
+**Namespace:** Concurrency::graphics
+
+##  <a name="ctor"></a> Norm
+
+Varsayılan Oluşturucu. İçin 0.0f başlatın.
+
+```
 norm(
     void) restrict(amp,
     cpu);
 
- 
 explicit norm(
     float _V) restrict(amp,
     cpu);
 
- 
 explicit norm(
     unsigned int _V) restrict(amp,
     cpu);
 
- 
 explicit norm(
     int _V) restrict(amp,
     cpu);
 
- 
 explicit norm(
     double _V) restrict(amp,
     cpu);
 
- 
 norm(
     const norm& _Other) restrict(amp,
     cpu);
 
- 
 norm(
     const unorm& _Other) restrict(amp,
     cpu);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *_V*<br/>
-Başlatmak için kullanılan değer.  
-  
+Başlatmak için kullanılan değer.
+
 *_Diğer*<br/>
-Başlatmak için kullanılan nesne.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)
+Başlatmak için kullanılan nesne.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f6adf0f2eaf61c3a280c8ca248cffea2f05bda6f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 5c8d9038fc8ded02afe02169731692b290466df6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213175"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442818"
 ---
 # <a name="propput"></a>propput
 
@@ -57,7 +57,7 @@ Bir özellik ayarı işlevi belirtir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Yöntem Öznitelikleri](../windows/method-attributes.md)  
-[propget](../windows/propget.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Yöntem Öznitelikleri](../windows/method-attributes.md)<br/>
+[propget](../windows/propget.md)<br/>
 [propputref](../windows/propputref.md)

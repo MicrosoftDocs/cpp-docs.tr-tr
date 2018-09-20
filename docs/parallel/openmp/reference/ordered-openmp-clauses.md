@@ -16,29 +16,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91cdc9b51eb548d6b918bd2b48f9de0795dcc0bd
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: be8987cd889537eaa12ea3f548c4cc8cc9e589c8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691657"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419457"
 ---
 # <a name="ordered-openmp-clauses"></a>ordered (OpenMP Yan Tümceleri)
-Üzerinde bir paralel gerekli [için](../../../parallel/openmp/reference/for-openmp.md) deyimi, bir [sıralı](../../../parallel/openmp/reference/ordered-openmp-directives.md) yönergesi olup döngüde kullanılacak.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-ordered  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- `ordered` uygulandığı öğe [için](../../../parallel/openmp/reference/for-openmp.md) yönergesi.  
-  
- Daha fazla bilgi için bkz: [2.4.1 yapı için](../../../parallel/openmp/2-4-1-for-construct.md).  
-  
-## <a name="example"></a>Örnek  
- Bkz: [sıralı](../../../parallel/openmp/reference/ordered-openmp-directives.md) kullanma örneği için `ordered` yan tümcesi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yan Tümceler](../../../parallel/openmp/reference/openmp-clauses.md)
+
+Üzerinde paralel gerekli [için](../../../parallel/openmp/reference/for-openmp.md) deyimi, bir [sıralı](../../../parallel/openmp/reference/ordered-openmp-directives.md) yönergesiyse döngüde kullanılacak.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+ordered
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+`ordered` uygulandığı [için](../../../parallel/openmp/reference/for-openmp.md) yönergesi.
+
+Daha fazla bilgi için [2.4.1 yapı için](../../../parallel/openmp/2-4-1-for-construct.md).
+
+## <a name="example"></a>Örnek
+
+Bkz: [sıralı](../../../parallel/openmp/reference/ordered-openmp-directives.md) kullanma örneği için `ordered` yan tümcesi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yan Tümceler](../../../parallel/openmp/reference/openmp-clauses.md)

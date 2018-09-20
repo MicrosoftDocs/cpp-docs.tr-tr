@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8a1a0b16ebee0ebac141d5c1675d7ff7560b374b
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: c3bbcc774115311cd4ed0f302e4d9812ecfc6505
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318219"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422278"
 ---
 # <a name="symbols-resource-identifiers-c"></a>Semboller: Kaynak Tanımlayıcıları (C++)
 
@@ -75,6 +75,6 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Nasıl yapılır: Sembolleri Kaynaklarda Arama](../windows/how-to-search-for-symbols-in-resources.md)  
-[Kaynak Düzenleyicileri](../windows/resource-editors.md)  
+[Nasıl yapılır: Sembolleri Kaynaklarda Arama](../windows/how-to-search-for-symbols-in-resources.md)<br/>
+[Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
 [Kaynak dosyaları](../windows/resource-files-visual-studio.md)

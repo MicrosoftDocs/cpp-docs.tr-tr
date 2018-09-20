@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ac6968a688c50ad665e8b28a883eaf62255aaf28
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 264a5ccbda8100e7e7fb951a2a8d30e983105efa
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700116"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46375339"
 ---
 # <a name="safesubtract"></a>SafeSubtract
 
@@ -71,7 +71,7 @@ Bu yöntem, parçasıdır [SafeInt Kitaplığı](../windows/safeint-library.md) 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[SafeInt İşlevleri](../windows/safeint-functions.md)  
-[SafeInt Kitaplığı](../windows/safeint-library.md)  
-[SafeInt Sınıfı](../windows/safeint-class.md)  
+[SafeInt İşlevleri](../windows/safeint-functions.md)<br/>
+[SafeInt Kitaplığı](../windows/safeint-library.md)<br/>
+[SafeInt Sınıfı](../windows/safeint-class.md)<br/>
 [SafeAdd](../windows/safeadd.md)

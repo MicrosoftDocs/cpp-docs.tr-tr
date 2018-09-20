@@ -12,18 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c1bde41491f456ff99b0cd0d1ccc8ab98508412
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 1a332d8fb5de172c363c6f9c1bebba65d6fa0ff8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687237"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46381822"
 ---
 # <a name="14-compliance"></a>1.4 Uyumluluk
-OpenMP C/C++ API uygulamasıdır *OpenMP uyumlu* tanır ve bu belirtimi tüm öğeleri semantiği bölüm 1, 2, 3, 4, düzenlendiği şekilde korur ve ek c ekler A, B, D, E ve F içindir bilgiler yalnızca amacıyla ve belirtiminin bir parçası değildir. Yalnızca bir alt API dahil uygulamaları OpenMP uyumlu değildir.  
-  
- OpenMP C ve C++ API uygulaması tarafından desteklenen temel dil için bir uzantısıdır. Temel dil bu belgede bir dil yapısı veya görünür uzantısı desteklemiyorsa, OpenMP uygulaması bunu desteklemek için gerekli değildir.  
-  
- Tüm standart C ve C++ Kitaplık işlevleri ve yerleşik işlevler (diğer bir deyişle, derleyici belirli bilgi olan işlevler) iş parçacığı açısından güvenli olması gerekir. İş parçacığı işlevleri paralel bir bölge içinde farklı iş parçacıkları tarafından eşitlenmemiş kullanımını tanımsız davranış üretmez. Ancak, davranışı seri bölge ile aynı olmayabilir. (Bir rastgele sayı oluşturma işlevi bir örnektir.)  
-  
- OpenMP C/C++ API belirli bir davranış belirtir *uygulama tanımlı.* Uyumlu bir OpenMP uygulaması tanımlamak ve bu gibi durumlarda davranışını belgelemek için gereklidir. Bkz: [ek E](../../parallel/openmp/e-implementation-defined-behaviors-in-openmp-c-cpp.md), sayfa 97, uygulama tanımlı davranış listesi.
+
+OpenMP C/C++ API uygulamasıdır *OpenMP uyumlu* tanır ve bu belirtim tüm öğelerini semantiği olarak bölümlerde 1, 2, 3, 4, normal bir kutudur korur ve ek c ek A, B, D, E ve F içindir bilgiler yalnızca amacıyla ve belirtiminin parçası değildir. Yalnızca bir API alt kümesini içeren uygulamalar OpenMP uyumlu değildir.
+
+OpenMP C ve C++ API uygulaması tarafından desteklenen temel dil için bir uzantısıdır. Temel dil dil yapısı veya görüntülenen uzantısı bu belgede desteklemiyorsa, OpenMP uygulaması bunu desteklemek için gerekli değildir.
+
+Tüm standart C ve C++ Kitaplığı işlevleri ve yerleşik işlevler (diğer bir deyişle, İşlevler derleyici belirli bilgi olduğu) iş parçacığı açısından güvenli olması gerekir. Bir paralel bölgenin içinde farklı iş parçacıkları tarafından iş parçacığı açısından güvenli işlevlerin eşitlenmemiş kullanımını tanımsız davranış üretmez. Ancak, davranışı seri bir bölge ile aynı olmayabilir. (Bir rastgele sayı oluşturma işlevi, örnek verilebilir.)
+
+OpenMP C/C++ API belirli bir davranış belirtir *uygulama tanımlı.* Uyumlu bir OpenMP uygulama tanımlamak ve bu gibi durumlarda davranışını belge için gereklidir. Bkz: [ek E](../../parallel/openmp/e-implementation-defined-behaviors-in-openmp-c-cpp.md), sayfa 97, uygulama tanımlı davranışlar listesi.

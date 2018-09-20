@@ -18,46 +18,48 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 677006d441c940f478b3d23744d1057667307e1a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e3cdf60f614b95c22b4b3c40b5528a7daf885bed
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370620"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388755"
 ---
 # <a name="declaring-a-variable-based-on-your-new-control-class"></a>Yeni Denetim Sınıfınıza Dayalı Değişken Bildirme
-MFC denetim sınıfı oluşturduktan sonra dayalı bir değişken bildirebilirsiniz. Yeni değişken için bir bağlam sağlamak için iletişim kutusu Düzenleyicisi'ni açın ve yeniden kullanılabilir denetiminizi kullanmak istediğiniz iletişim kutusu düzenleyin. Ayrıca, iletişim kutusu zaten kendisiyle ilişkilendirilmiş bir sınıf olmalıdır. İletişim kutusu düzenleyicisini kullanma hakkında daha fazla bilgi için bkz: [iletişim kutusu Düzenleyicisi](../../windows/dialog-editor.md).  
-  
-### <a name="to-declare-a-variable-based-on-your-reusable-class"></a>Yeniden kullanılabilir sınıfınıza dayalı değişken bildirme  
-  
-1.  İletişim kutusu düzenlerken, yeni denetiminizin temel sınıf olarak aynı türde bir denetim iletişim kutusu denetimleri araç çubuğuna sürükleyin.  
-  
-2.  Fare işaretçisini bırakılan denetime yerleştirin.  
-  
-3.  CTRL tuşunu basılı tutarken denetimi çift tıklatın.  
-  
-     [Üye değişkeni ekleme](../../ide/add-member-variable-wizard.md) iletişim kutusu görüntülenir.  
-  
-4.  İçinde **erişim** kutusunda, doğru erişimi denetlemek için seçin.  
-  
-5.  Tıklatın **denetim değişkeni** onay kutusu.  
-  
-6.  İçinde **değişken adı** bir ad yazın.  
-  
-7.  Altında **kategori**, tıklatın **denetim**.  
-  
-8.  İçinde **denetim kimliği** listesinde, eklediğiniz denetimi seçin. **Değişken türü** listesi doğru değişken türünü görüntülemesi gereken ve **denetim türü** kutusu doğru denetim türü görüntülenmelidir.  
-  
-9. İçinde **açıklama** kutusunda, kodunuzda görünmesini istediğiniz herhangi bir yorum ekleyin.  
-  
-10. **Tamam**'ı tıklatın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İletileri işlevlere eşleme](../../mfc/reference/mapping-messages-to-functions.md)   
- [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)   
- [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)   
- [Üye işlevi ekleme](../../ide/adding-a-member-function-visual-cpp.md)   
- [Üye değişkeni ekleme](../../ide/adding-a-member-variable-visual-cpp.md)   
- [Sanal işlevi geçersiz kılma](../../ide/overriding-a-virtual-function-visual-cpp.md)   
- [MFC ileti işleyicisi](../../mfc/reference/adding-an-mfc-message-handler.md)   
- [Sınıf yapısında gezinme](../../ide/navigating-the-class-structure-visual-cpp.md)
+
+MFC denetim sınıfı oluşturduktan sonra bunu temel alan bir değişken bildirebilirsiniz. Yeni değişken için bir bağlam sağlamak için iletişim kutusu düzenleyicisini açın ve yeniden kullanılabilir denetiminizi kullanmak istediğiniz iletişim kutusu düzenlemeniz gerekir. Ayrıca, iletişim kutusu zaten kendisiyle ilişkilendirilmiş bir sınıf olması gerekir. İletişim kutusu düzenleyicisini kullanma hakkında daha fazla bilgi için bkz: [iletişim kutusu Düzenleyicisi](../../windows/dialog-editor.md).
+
+### <a name="to-declare-a-variable-based-on-your-reusable-class"></a>Yeniden kullanılabilir sınıfınıza dayalı değişken bildirme
+
+1. İletişim kutusu düzenlerken, yeni denetiminizin temel sınıf olarak aynı türde bir denetim iletişim kutusunun denetimleri araç çubuğuna sürükleyin.
+
+1. Fare işaretçisini bırakılan denetimin üzerine getirin.
+
+1. CTRL tuşunu basılı tutarak denetimi çift tıklatın.
+
+     [Üye değişkeni ekleme](../../ide/add-member-variable-wizard.md) iletişim kutusu görüntülenir.
+
+1. İçinde **erişim** kutusunda, denetiminiz için doğru erişim'i seçin.
+
+1. Tıklayın **denetim değişkeni** onay kutusu.
+
+1. İçinde **değişken adı** bir ad yazın.
+
+1. Altında **kategori**, tıklayın **denetim**.
+
+1. İçinde **denetim kimliği** listesinde, eklediğiniz denetimin seçin. **Değişken türü** listesi doğru değişken türü olarak görüntülenmelidir ve **denetim türü** doğru denetim türünü kutusu görüntülenmelidir.
+
+9. İçinde **yorum** kutusunda, kodunuzda görünmesini istediğiniz herhangi bir yorum ekleyin.
+
+10. **Tamam**'ı tıklatın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İletileri İşlevlere Eşleme](../../mfc/reference/mapping-messages-to-functions.md)<br/>
+[Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
+[Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
+[Üye işlevi ekleme](../../ide/adding-a-member-function-visual-cpp.md)<br/>
+[Üye değişkeni ekleme](../../ide/adding-a-member-variable-visual-cpp.md)<br/>
+[Bir sanal işlevi geçersiz kılma](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
+[MFC ileti işleyicisi](../../mfc/reference/adding-an-mfc-message-handler.md)<br/>
+[Sınıf yapısında gezinme](../../ide/navigating-the-class-structure-visual-cpp.md)

@@ -1,5 +1,5 @@
 ---
-title: Temsilci ile arabirimi eşleme makroları (MFC) | Microsoft Docs
+title: Temsilci ve arabirim eşleme makroları (MFC) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/30/2017
 ms.technology:
@@ -16,238 +16,287 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d817ec62734b3646c4df0977daa8161601e5c592
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 2f44d362fc30503b062221c358dde6b2c10b9bd3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37122698"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423760"
 ---
-|||  
-|-|-|  
+|||
+|-|-|
 |[BEGIN_DELEGATE_MAP](#begin_delegate_map)|Bir temsilci harita başlar.|
-|[BEGIN_INTERFACE_MAP](#begin_interface_map)|İnterfaced harita tanımını başlar.|
-|[CommandHandler temsilcisi](#commandhandler)|Geri arama yöntemleri komut kaynağı ile kaydeder.  |
+|[BEGIN_INTERFACE_MAP](#begin_interface_map)|Tanımı interfaced harita başlar.|
+|[CommandHandler temsilcisi](#commandhandler)|Geri çağırma yöntemleri ile bir komut kaynak kaydeder.  |
 |[END_DELEGATE_MAP](#end_delegate_map)|Bir temsilci harita sona erer.|
-|[END_INTERFACE_MAP](#end_interface_map)|Uygulama dosyasını arabirimi eşlemesinde sona erer. |
-|[EVENT_DELEGATE_ENTRY](#event_delegate_entry)|Bir giriş temsilci eşlemesinde oluşturur.|
-|[INTERFACE_PART](#interface_part)|Begın_ınterface_map makrosu ve end_ınterface_map makrosu arasında nesnenizin destekleyecek her arabirim için kullanılır.|
-|[MAKE_DELEGATE](#make_delegate)|Bir olay işleyicisi için yönetilen bir denetimin ekler.|
+|[END_INTERFACE_MAP](#end_interface_map)|Arabirim eşlemesini uygulama dosyasında sona erer. |
+|[EVENT_DELEGATE_ENTRY](#event_delegate_entry)|Temsilci haritada bir giriş oluşturur.|
+|[INTERFACE_PART](#interface_part)|Nesnenizin destekleyeceği her arabirim için makro begın_ınterface_map ve end_ınterface_map makrosu arasında kullanılır.|
+|[MAKE_DELEGATE](#make_delegate)|Yönetilen bir denetim için bir olay işleyicisi ekler.|
 
 
 ## <a name="begin_delegate_map"></a> BEGIN_DELEGATE_MAP
-Bir temsilci harita başlar.  
-   
-### <a name="syntax"></a>Sözdizimi    
-```  
-BEGIN_DELEGATE_MAP(  CLASS );  
+
+Bir temsilci harita başlar.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```
-### <a name="parameters"></a>Parametreler  
- *SINIFI*  
- Yönetilen denetim barındırılan sınıf.  
-   
-### <a name="remarks"></a>Açıklamalar  
- Bu makrosu bir temsilci eşlemesi oluşturma temsilci girişlerinin listesini başlangıcını işaretler. Bu makrosu nasıl kullanıldığına ilişkin bir örnek için bkz: [EVENT_DELEGATE_ENTRY](#event_delegate_entry).  
-   
-### <a name="requirements"></a>Gereksinimler  
- **Başlık:** msclr\event.h  
-   
-### <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: Yerel C++ Sınıflarından İç Havuz Windows Forms Olayları](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
- 
+BEGIN_DELEGATE_MAP(  CLASS );
+```
+### <a name="parameters"></a>Parametreler
+
+*SINIFI*<br/>
+Yönetilen denetim barındıran sınıf.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu makro bir temsilci harita oluşturma temsilci girişlerinin listesini başlangıcını işaretler. Bu makro nasıl kullanıldığına dair bir örnek için bkz: [EVENT_DELEGATE_ENTRY](#event_delegate_entry).
+
+### <a name="requirements"></a>Gereksinimler
+
+**Başlık:** msclr\event.h
+
+### <a name="see-also"></a>Ayrıca Bkz.
+
+[Nasıl yapılır: Yerel C++ Sınıflarından İç Havuz Windows Forms Olayları](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
+
 ##  <a name="begin_interface_map"></a>BEGIN_INTERFACE_MAP
-Uygulama dosyasında kullanıldığında interfaced harita tanımını başlar.  
-   
-### <a name="syntax"></a>Sözdizimi    
+
+V souboru implementace kullanıldığında interfaced eşleme tanımı başlar.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```
-BEGIN_INTERFACE_MAP( theClass, baseClass )  
+BEGIN_INTERFACE_MAP( theClass, baseClass )
 ```
-### <a name="parameters"></a>Parametreler  
- *Sınıfın*  
- Arabirim eşlemesi tanımlanacak olduğu sınıfı  
-  
- *baseClass*  
- Sınıfından *sınıfın* türetir.  
-   
-### <a name="remarks"></a>Açıklamalar  
- Uygulanan her arabirim için bir veya daha fazla ınterface_part makrosu çağrılarını yoktur. Sınıfını kullanan her toplama için bir INTERFACE_AGGREGATE makrosu çağırma yoktur.  
-  
- Arabirim eşlemeleri hakkında daha fazla bilgi için bkz: [Teknik Not 38](../tn038-mfc-ole-iunknown-implementation.md).  
-   
-### <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxwin.h  
- 
+### <a name="parameters"></a>Parametreler
+
+*Sınıfın*<br/>
+Arabirim eşlemesi tanımlanmış olduğu sınıfı
+
+*baseClass*<br/>
+Sınıf *sınıfın* türetir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Uygulanan her arabirim için bir veya daha fazla ınterface_part makrosu çağrılarını yoktur. Sınıfın kullandığı her toplama için bir ınterface_aggregate makro çağrısı vardır.
+
+Arabirim eşlemeleri hakkında daha fazla bilgi için bkz. [Teknik Not 38](../tn038-mfc-ole-iunknown-implementation.md).
+
+### <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxwin.h
+
 ##  <a name="commandhandler"></a>CommandHandler temsilcisi
-Geri arama yöntemleri komut kaynağı ile kaydeder.  
-   
-### <a name="syntax"></a>Sözdizimi    
-```  
-delegate void CommandHandler(  UINT^ cmdID  );  
+
+Geri çağırma yöntemleri ile bir komut kaynak kaydeder.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```
-### <a name="parameters"></a>Parametreler  
- *cmdID*  
- Komut kimliği.  
-   
-### <a name="remarks"></a>Açıklamalar  
- Bu temsilci geri arama yöntemleri komut kaynağı ile kaydeder. Komut kaynak nesnesi için bir temsilci eklediğinizde, geri çağırma yöntemi belirtilen kaynağından gelen komutları için bir işleyici haline gelir.  
-  
- Daha fazla bilgi için bkz: [nasıl yapılır: Windows Forms denetimi için komut yönlendirme eklemek](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md).  
-  
- Windows Forms kullanma hakkında daha fazla bilgi için bkz: [MFC içinde Windows formu kullanıcı denetimi kullanarak](../../dotnet/using-a-windows-form-user-control-in-mfc.md).  
-   
-### <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll tanımlanan)  
-   
-### <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)
- 
+delegate void CommandHandler(  UINT^ cmdID  );
+```
+### <a name="parameters"></a>Parametreler
+
+*cmdID*<br/>
+Komut kimliği.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu temsilci, geri çağırma yöntemleri ile bir komut kaynak kaydeder. Komut kaynak nesnesine bir temsilci eklediğinizde, geri çağırma yöntemi, belirtilen kaynaktan gelen komutların için bir işleyici haline gelir.
+
+Daha fazla bilgi için [nasıl yapılır: Windows Forms denetimi için komut yönlendirme ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md).
+
+Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
+
+### <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll içinde tanımlanmıştır)
+
+### <a name="see-also"></a>Ayrıca Bkz.
+
+[Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)
+
 ##  <a name="commanduihandler"></a>Commanduıhandler
-Geri arama yöntemleri içeren bir kullanıcı arabirimi güncelleştirme komut ileti kaydeder.  
-   
-### <a name="syntax"></a>Sözdizimi    
-```  
-delegate void CommandUIHandler(  unsigned int cmdID, ICommandUI^ cmdUI);  
+
+Geri çağırma yöntemleri ile bir kullanıcı arabirimi güncelleştirme komut iletisi kaydeder.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```
-### <a name="parameters"></a>Parametreler  
- *cmdID*  
- Komut kimliği.  
-  
- *cmdUI*  
- Komut ileti kimliği.  
-   
-### <a name="remarks"></a>Açıklamalar  
- Bu temsilci geri arama yöntemleri içeren bir kullanıcı arabirimi güncelleştirme komut ileti kaydeder. `CommandUIHandler` benzer [CommandHandler](#commandhandler) dışında bu temsilciyi kullanıcı arabirimi nesne güncelleştirme komutları ile kullanılır. Kullanıcı arabirimi güncelleştirme komutları bire bir ileti işleyicisi yöntemleri ile eşlenmelidir.  
-  
- Windows Forms kullanma hakkında daha fazla bilgi için bkz: [MFC içinde Windows formu kullanıcı denetimi kullanarak](../../dotnet/using-a-windows-form-user-control-in-mfc.md).  
-   
-### <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll tanımlanan)  
-   
-### <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: komut ekleme yönlendirme Windows Forms denetimi](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)   
- [CommandHandler](#commandhandler)
+delegate void CommandUIHandler(  unsigned int cmdID, ICommandUI^ cmdUI);
+```
+### <a name="parameters"></a>Parametreler
+
+*cmdID*<br/>
+Komut kimliği.
+
+*cmdUI*<br/>
+Komut ileti kimliği.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu temsilci, geri çağırma yöntemleri ile bir kullanıcı arabirimi güncelleştirme komut iletisi kaydeder. `CommandUIHandler` benzer [CommandHandler](#commandhandler) dışında bu temsilci kullanıcı arabirimi nesnesi güncelleştirme komutları ile kullanılır. Kullanıcı arabirimini güncelleştirme komutları bire bir ileti işleyicisi yöntemleri ile eşlenmelidir.
+
+Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
+
+### <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll içinde tanımlanmıştır)
+
+### <a name="see-also"></a>Ayrıca Bkz.
+
+[Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
+[CommandHandler](#commandhandler)
 
 ##  <a name="end_delegate_map"></a>END_DELEGATE_MAP
-Bir temsilci harita sona erer.  
-   
-### <a name="syntax"></a>Sözdizimi    
-```  
-END_DELEGATE_MAP();  
-```  
-   
-### <a name="remarks"></a>Açıklamalar  
- Bu makrosu bir temsilci eşlemesi oluşturma temsilci girişlerinin listesini sonunu işaretler. Bu makrosu nasıl kullanıldığına ilişkin bir örnek için bkz: [EVENT_DELEGATE_ENTRY](#event_delegate_entry).  
-   
-### <a name="requirements"></a>Gereksinimler  
- **Başlık:** msclr\event.h  
-   
-### <a name="see-also"></a>Ayrıca Bkz.  
 
- [Nasıl yapılır: Yerel C++ Sınıflarından İç Havuz Windows Forms Olayları](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
+Bir temsilci harita sona erer.
 
- 
-##  <a name="end_interface_map"></a>END_INTERFACE_MAP
-Uygulama dosyasını arabirimi eşlemesinde sona erer.  
-   
-### <a name="syntax"></a>Sözdizimi    
+### <a name="syntax"></a>Sözdizimi
+
 ```
-END_INTERFACE_MAP( )    
-```  
-   
-### <a name="remarks"></a>Açıklamalar  
- Arabirim eşlemeleri hakkında daha fazla bilgi için bkz: [Teknik Not 38](../tn038-mfc-ole-iunknown-implementation.md).  
-   
-### <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxwin.h  
-   
-### <a name="see-also"></a>Ayrıca Bkz.  
- [Makroları ve genel öğeleri](mfc-macros-and-globals.md)   
- [BEGIN_INTERFACE_MAP](#begin_interface_map)
- 
+END_DELEGATE_MAP();
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu makro, bir temsilci harita oluşturma temsilci girişlerinin listesini sonunu işaretler. Bu makro nasıl kullanıldığına dair bir örnek için bkz: [EVENT_DELEGATE_ENTRY](#event_delegate_entry).
+
+### <a name="requirements"></a>Gereksinimler
+
+**Başlık:** msclr\event.h
+
+### <a name="see-also"></a>Ayrıca Bkz.
+
+[Nasıl yapılır: Yerel C++ Sınıflarından İç Havuz Windows Forms Olayları](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
+
+
+##  <a name="end_interface_map"></a>END_INTERFACE_MAP
+
+Arabirim eşlemesini uygulama dosyasında sona erer.
+
+### <a name="syntax"></a>Sözdizimi
+
+```
+END_INTERFACE_MAP( )
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Arabirim eşlemeleri hakkında daha fazla bilgi için bkz: [Teknik Not 38](../tn038-mfc-ole-iunknown-implementation.md).
+
+### <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxwin.h
+
+### <a name="see-also"></a>Ayrıca Bkz.
+
+[Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
+[BEGIN_INTERFACE_MAP](#begin_interface_map)
+
 
 ##  <a name="event_delegate_entry"></a>EVENT_DELEGATE_ENTRY
-Bir giriş temsilci eşlemesinde oluşturur.  
-   
-### <a name="syntax"></a>Sözdizimi    
-```  
-EVENT_DELEGATE_ENTRY(MEMBER, ARG0, ARG1);  
+
+Temsilci haritada bir giriş oluşturur.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```
-### <a name="parameters"></a>Parametreler  
- *ÜYE*  
- Denetime ekli olay işleyicisi yöntemi.  
-  
- *ARG0*  
- Yönetilen olay işleyicisi yönteminin ilk bağımsız değişkeni gibi `Object^`.  
-  
- *ARG1*  
- Yönetilen olay işleyicisi yönteminin ikinci bağımsız değişkeni gibi `EventArgs^`.  
-   
-### <a name="remarks"></a>Açıklamalar  
- Her giriş temsilci eşlemesindeki tarafından oluşturulan bir yönetilen olay işleyici temsilcisi karşılık gelen [MAKE_DELEGATE](#make_delegate).  
-   
-### <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde EVENT_DELEGATE_ENTRY bir girdi için temsilci eşlemesi oluşturmak için nasıl kullanılacağını gösterir `OnClick` olay işleyicisi; ayrıca MAKE_DELEGATE kod örneğinde bakın. Daha fazla bilgi için bkz: [nasıl yapılır: Windows Forms olayları yerel C++ sınıflarından havuzu](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md).  
-  
- ```cpp
+EVENT_DELEGATE_ENTRY(MEMBER, ARG0, ARG1);
+```
+### <a name="parameters"></a>Parametreler
+
+*ÜYESİ*<br/>
+Denetimine eklenecek olay işleyicisi yöntemi.
+
+*ARG0*<br/>
+Yönetilen bir olay işleyicisi yönteminde, ilk bağımsız değişkeni gibi `Object^`.
+
+*ARG1*<br/>
+Yönetilen bir olay işleyicisi yönteminde, ikinci bağımsız değişkeni gibi `EventArgs^`.
+
+### <a name="remarks"></a>Açıklamalar
+
+Temsilci eşlemedeki her giriş tarafından oluşturulan bir yönetilen bir olay işleyici temsilcisini karşılık gelen [MAKE_DELEGATE](#make_delegate).
+
+### <a name="example"></a>Örnek
+
+Aşağıdaki kod örneği için temsilci eşlemesindeki bir giriş oluşturmak için EVENT_DELEGATE_ENTRY kullanmayı gösterir `OnClick` olay işleyicisi; ayrıca aşağıdaki kod örneğinde MAKE_DELEGATE bakın. Daha fazla bilgi için [nasıl yapılır: Windows Forms olayları yerel C++ sınıflarından havuz](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md).
+
+```cpp
 BEGIN_DELEGATE_MAP(CMyView)
    EVENT_DELEGATE_ENTRY(OnClick, System::Object^, System::EventArgs^)
 END_DELEGATE_MAP()
 
-```  
-   
-### <a name="requirements"></a>Gereksinimler  
- **Başlık:** msclr\event.h  
-   
-### <a name="see-also"></a>Ayrıca Bkz.  
- [MAKE_DELEGATE](#make_delegate)   
- [BEGIN_DELEGATE_MAP](#begin_delegate_map)   
- [END_DELEGATE_MAP](#end_delegate_map)
- 
+```
+
+### <a name="requirements"></a>Gereksinimler
+
+**Başlık:** msclr\event.h
+
+### <a name="see-also"></a>Ayrıca Bkz.
+
+[MAKE_DELEGATE](#make_delegate)<br/>
+[BEGIN_DELEGATE_MAP](#begin_delegate_map)<br/>
+[END_DELEGATE_MAP](#end_delegate_map)
+
 
 ##  <a name="interface_part"></a>INTERFACE_PART
-Begın_ınterface_map makrosu ve end_ınterface_map makrosu arasında nesnenizin destekleyecek her arabirim için kullanılır.  
-   
-### <a name="syntax"></a>Sözdizimi    
+
+Nesnenizin destekleyeceği her arabirim için makro begın_ınterface_map ve end_ınterface_map makrosu arasında kullanılır.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```
-INTERFACE_PART( theClass, iid, localClass)  
+INTERFACE_PART( theClass, iid, localClass)
 ```
-### <a name="parameters"></a>Parametreler  
- *Sınıfın*  
- Arabirim eşlemesi içeren sınıfın adı.    
- *IID*  
- Katıştırılmış sınıfına eşlenecek IID.    
- *localClass*  
- Yerel sınıfın adı.  
-   
-### <a name="remarks"></a>Açıklamalar  
- Belirtilen sınıf üyesi için bir IID eşlemenizi sağlar *sınıfın* ve *localClass*.  
-  
- Arabirim eşlemeleri hakkında daha fazla bilgi için bkz: [Teknik Not 38](../tn038-mfc-ole-iunknown-implementation.md).  
-   
-### <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxwin.h  
-   
- 
+### <a name="parameters"></a>Parametreler
+
+*Sınıfın*<br/>
+Arabirim eşlemesini içeren sınıfın adı.
+*IID*<br/>
+Katıştırılmış sınıfla eşleştirilecek olan IID.
+*localClass*<br/>
+Yerel sınıfın adı.
+
+### <a name="remarks"></a>Açıklamalar
+
+Tarafından belirtilen bir sınıf üyesi için bir IID eşlemenizi sağlar *sınıfın* ve *localClass*.
+
+Arabirim eşlemeleri hakkında daha fazla bilgi için bkz. [Teknik Not 38](../tn038-mfc-ole-iunknown-implementation.md).
+
+### <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxwin.h
+
+
 ##  <a name="make_delegate"></a>MAKE_DELEGATE
-Bir olay işleyicisi için yönetilen bir denetimin ekler.  
-   
-### <a name="syntax"></a>Sözdizimi    
-```  
-MAKE_DELEGATE( DELEGATE,  MEMBER) ;  
+
+Yönetilen bir denetim için bir olay işleyicisi ekler.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```
-### <a name="parameters"></a>Parametreler  
- *TEMSİLCİ*  
- Gibi yönetilen olay işleyicisinin türü temsilci [EventHandler](assetId:///T:System.EventHandler?qualifyHint=False&autoUpgrade=True).  
-  
- *ÜYE*  
- Denetime ekli olay işleyicisi yöntemi adı.  
-   
-### <a name="remarks"></a>Açıklamalar  
- Bu makrosu türü bir yönetilen olay işleyici temsilcisi oluşturur *TEMSİLCİ* ve adının *üye*. Yönetilen olay işleyici temsilcisi yönetilen olayları işlemek için yerel bir sınıf sağlar.  
-   
-### <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde nasıl çağrılacağını gösterir `MAKE_DELEGATE` eklemek için bir `OnClick` bir MFC denetlemek için olay işleyicisini `MyControl`. Bir MFC uygulamasında bu makrosu nasıl çalıştığını daha geniş açıklaması için bkz [nasıl yapılır: Windows Forms olayları yerel C++ sınıflarından havuzu](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md).  
-  
+MAKE_DELEGATE( DELEGATE,  MEMBER) ;
+```
+### <a name="parameters"></a>Parametreler
+
+*TEMSİLCİ*<br/>
+Yönetilen bir olay işleyicisinin türü temsilcisi, gibi [EventHandler](assetId:///T:System.EventHandler?qualifyHint=False&autoUpgrade=True).
+
+*ÜYESİ*<br/>
+Denetimine eklenecek olay işleyicisi yönteminin adı.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu makro türü bir yönetilen bir olay işleyici temsilcisini oluşturur *TEMSİLCİ* ve adının *üye*. Yönetilen bir olay işleyici temsilcisini yönetilen olayları işlemek bir yerel sınıf sağlar.
+
+### <a name="example"></a>Örnek
+
+Aşağıdaki kod örneğinde nasıl çağrılacağını gösterir `MAKE_DELEGATE` eklemek için bir `OnClick` MFC denetimi olay işleyicisi `MyControl`. Bu makro bir MFC uygulamasında nasıl çalıştığına ilişkin daha kapsamlı açıklaması için bkz [nasıl yapılır: Windows Forms olayları yerel C++ sınıflarından havuz](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md).
+
 ```cpp
 // CMyView derives from CWinFormsView.
 void CMyView::OnInitialUpdate()
@@ -257,15 +306,17 @@ void CMyView::OnInitialUpdate()
    GetControl()->Click += MAKE_DELEGATE(System::EventHandler, OnClick);
 }
 ```
-   
-### <a name="requirements"></a>Gereksinimler  
- **Başlık:** msclr\event.h  
-   
-### <a name="see-also"></a>Ayrıca Bkz.  
- [BEGIN_DELEGATE_MAP](#begin_delegate_map)   
- [END_DELEGATE_MAP](#end_delegate_map)   
- [EVENT_DELEGATE_ENTRY](#event_delegate_entry)
- 
+
+### <a name="requirements"></a>Gereksinimler
+
+**Başlık:** msclr\event.h
+
+### <a name="see-also"></a>Ayrıca Bkz.
+
+[BEGIN_DELEGATE_MAP](#begin_delegate_map)<br/>
+[END_DELEGATE_MAP](#end_delegate_map)<br/>
+[EVENT_DELEGATE_ENTRY](#event_delegate_entry)
+
 
 
 

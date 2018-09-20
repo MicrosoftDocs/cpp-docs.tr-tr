@@ -16,17 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ae6939a480b58744d949b136c8fc244def90e32
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 162b9f3f16c496a7ab027499d7b0d58123fd48fc
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379881"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46383785"
 ---
 # <a name="tn036-using-cformview-with-appwizard-and-classwizard"></a>TN036: CFormView'yu AppWizard ve ClassWizard ile Kullanma
-Bu teknik Not nasıl kullanılacağını oluşturulan AppWizard uygulamanın değiştirileceği açıklandığı bir `CFormView` varsayılan yerine `CView` kendi ana görünüm sınıfı olarak. Bu, doğrudan Visual C++ bu sürümü ile desteklenmiyor.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+
+Bu teknik Not, nasıl kullanıldıkları AppWizard tarafından oluşturulan uygulama değiştirileceğini açıklanan bir `CFormView` varsayılan yerine `CView` ana görünüm sınıfı olarak. Bu, doğrudan Visual C++ bu sürümü ile desteklenir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

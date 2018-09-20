@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98dc9416ecee69bca285ff54d6321144c4a3fd02
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: cad23ebdd2289791b50b0e956368b934fe0f1087
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724431"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385202"
 ---
 # <a name="qimprecisefwaits-remove-fwaits-inside-try-blocks"></a>/Qimprecise_fwaits (Try Blokları İçindeki fwaits'i Kaldır)
 
@@ -54,6 +54,6 @@ Bu seçenek, hiçbir etkisi olmaz **/FP: except** de ayrıca belirtilmemişse. B
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md)
-[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[/Q Seçenekler (Düşük Düzey İşlemler)](../../build/reference/q-options-low-level-operations.md)<br/>
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34030a8ef91e5a25bdb1a13981925c5ddf1f05df
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a32106dd9802643a827f8a3e97298f389d31d3b4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721558"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430676"
 ---
 # <a name="u-u-undefine-symbols"></a>/U, /u (Simge Tanımlarını Kaldır)
 
@@ -83,7 +83,7 @@ Varsayılan olarak, derleyici aşağıdaki Microsoft'a özgü simgeleri tanımla
 
 [Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[/J (varsayılan karakter türü imzasız)](../../build/reference/j-default-char-type-is-unsigned.md)
-[/GR (çalışma zamanı türü bilgileri etkinleştir)](../../build/reference/gr-enable-run-time-type-information.md)
-[/EH (özel durum işleme modeli)](../../build/reference/eh-exception-handling-model.md) 
- [/MD, / MT, /LD (çalışma zamanı kitaplığını kullan)](../../build/reference/md-mt-ld-use-run-time-library.md)
+[/J (Varsayılan Karakter Türü İmzasız)](../../build/reference/j-default-char-type-is-unsigned.md)<br/>
+[/GR (Çalışma Zamanı Türü Bilgileri Etkinleştir)](../../build/reference/gr-enable-run-time-type-information.md)<br/>
+[/EH (Özel Durum İşleme Modeli)](../../build/reference/eh-exception-handling-model.md)<br/>
+[/MD, /MT, /LD (Çalışma Zamanı Kitaplığını Kullan)](../../build/reference/md-mt-ld-use-run-time-library.md)

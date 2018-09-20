@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 11751bf4e6f43e18fddb71a5ba2fd331a6d36977
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 81892b624425032c8f0e69fe667ad24026c40ca4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599377"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410279"
 ---
 # <a name="removeiunknown-class"></a>RemoveIUnknown Sınıfı
 
@@ -42,7 +42,7 @@ class RemoveIUnknown : public T;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Bir sınıf.
 
 ## <a name="remarks"></a>Açıklamalar

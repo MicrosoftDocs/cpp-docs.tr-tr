@@ -17,24 +17,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3e05046ac6754dd585bb1fbf51420ef862af7be
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4b467a85aca4bb1d0405f9bbddee5cb5e4f5b790
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341968"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391557"
 ---
 # <a name="command-routing-classes"></a>Komut Yönlendirme Sınıfları
-Menüleri veya denetim çubuğu düğmelerini fareyle seçerek kullanıcı uygulama ile etkileşim gibi uygulamanın uygun komut hedefi nesneye etkilenen kullanıcı arabirimi nesnesinden iletileri gönderir. Komut hedefi sınıfları türetilen `CCmdTarget` dahil [CWinApp](../mfc/reference/cwinapp-class.md), [CWnd](../mfc/reference/cwnd-class.md), [CDocTemplate](../mfc/reference/cdoctemplate-class.md), [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), ve bunlardan türetilmiş sınıfları. Böylece komutları uygulama şu anda etkin en uygun nesnesi tarafından işlenip otomatik komut yönlendirme framework destekler.  
-  
- Sınıfın bir nesnesi `CCmdUI` komut hedefleri update komutunun UI geçirilen ([on_update_command_uı](reference/message-map-macros-mfc.md#on_update_command_ui)), belirli bir komut için kullanıcı arabirimi durumunu güncelleştirmek izin vermek için işleyiciler (örneğin, için onay veya kaldırma onay menü öğelerinden). Üye işlevlerini çağırın `CCmdUI` UI nesnenin durumunu güncelleştirmek için nesne. Menü öğesi veya bir düğme veya her ikisi de belirli bir komutla ilişkili kullanıcı Arabirimi nesnesi olup olmadığını bu işlemi aynıdır.  
-  
- [CCmdTarget](../mfc/reference/ccmdtarget-class.md)  
- Alabilir ve iletileri yanıtlayın nesnelerin tüm sınıflar için temel sınıf olarak görev yapar.  
-  
- [Ccmduı](../mfc/reference/ccmdui-class.md)  
- Menü öğeleri veya denetim çubuğu düğmelerini gibi kullanıcı arabirimi nesnelerini güncelleştirme için programa dayalı bir arabirim sağlar. Komut hedef nesnesi etkinleştirir, devre dışı bırakır, denetler ve/veya bu nesne kullanıcı arabirimi nesnesiyle temizler.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Kullanıcı fare ile denetim çubuğu düğme veya menüler seçerek uygulamayla etkileşim içinde gibi uygulamanın uygun komut hedef nesneye etkilenen kullanıcı arabirimi nesnesinden iletileri gönderir. Türetilen sınıflar komut hedefi `CCmdTarget` dahil [CWinApp](../mfc/reference/cwinapp-class.md), [CWnd](../mfc/reference/cwnd-class.md), [CDocTemplate](../mfc/reference/cdoctemplate-class.md), [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), ve bunlardan türetilmiş sınıflar. Framework, böylece komutları uygulamada o anda etkin olan en uygun nesne tarafından işlenebilen otomatik komut yönlendirmeyi destekler.
+
+Sınıfın bir nesnesi `CCmdUI` kullanıcı Arabirimi, komut hedefleri güncelleştirme komutuna geçirilir ([on_update_command_uı](reference/message-map-macros-mfc.md#on_update_command_ui)), belirli bir komut için kullanıcı arabirimi durumu güncelleştirmek izin vermek için işleyiciler (örneğin, için onay veya kaldırma denetimden menü öğeleri). Üye işlevlerini çağırın `CCmdUI` kullanıcı Arabirimi nesnesi durumunu güncelleştirmek için nesne. Belirli bir komut ile ilişkili kullanıcı Arabirimi nesnesi bir menü öğesi veya bir düğme veya her ikisini de olup bu işlemi aynıdır.
+
+[CCmdTarget](../mfc/reference/ccmdtarget-class.md)<br/>
+Alabilir ve iletileri cevaplayin nesnelerin tüm sınıflar için taban sınıf görevi görür.
+
+[Ccmduı](../mfc/reference/ccmdui-class.md)<br/>
+Menü öğeleri ya da denetim çubuğu düğmeleri gibi kullanıcı arabirimi nesnelerini güncelleştirme için bir programlama arabirimi sağlar. Komut hedef nesnesi sağlar, devre dışı bırakır, denetler ve/veya kullanıcı arabirimi nesne bu nesne temizler.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

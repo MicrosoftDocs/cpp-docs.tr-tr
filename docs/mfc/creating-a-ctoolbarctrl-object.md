@@ -17,31 +17,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c5e2ee8c0e2239de86252b3d0fb8ec0ab7cc182
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c98f99ef7ff26fed7d7df89881d2148af6bc993a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341700"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46421654"
 ---
 # <a name="creating-a-ctoolbarctrl-object"></a>CToolBarCtrl Nesnesi Oluşturma
-[CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesneleri içeren birkaç iç veri yapılarını — düğmesi görüntü bit eşlemler listesini, düğmesi etiketi dizelerinin listesini ve listesini `TBBUTTON` yapıları —, görüntüyü ilişkilendirmek ve/veya konumu, stil, durum, dize ve düğmenin komut kimliği. Bu veri yapıları öğelerin her biri sıfır tabanlı dizini adlandırılır. Kullanabilmeniz için önce bir `CToolBarCtrl` nesnesi, bu veri yapıları ayarlamanız gerekir. Veri yapıları listesi için bkz: [araç çubuğu denetimleri](controls-mfc.md) Windows SDK. Dize listesi yalnızca düğme etiketleri için kullanılabilir; araç çubuğundan dizeleri alınamıyor.  
-  
- Kullanılacak bir `CToolBarCtrl` nesnesi, genellikle şu adımları izleyin:  
-  
-### <a name="to-use-a-ctoolbarctrl-object"></a>CToolBarCtrl nesnesi kullanmak için  
-  
-1.  Oluşturmak [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesnesi.  
-  
-2.  Çağrı [oluşturma](../mfc/reference/ctoolbarctrl-class.md#create) Windows araç yaygın bir denetim oluşturmak ve ona eklemek için `CToolBarCtrl` nesnesi. Bit eşlem görüntüleri için düğmeler istiyorsanız, düğme bit eşlemler araç çubuğuna çağırarak eklemek [AddBitmap](../mfc/reference/ctoolbarctrl-class.md#addbitmap). Dize etiketleri için düğmeler istiyorsanız dizeleri araç çubuğuna çağırarak eklemek [AddString](../mfc/reference/ctoolbarctrl-class.md#addstring) ve/veya [AddStrings](../mfc/reference/ctoolbarctrl-class.md#addstrings). Çağırdıktan sonra `AddString` ve/veya `AddStrings`, çağırmalısınız [AutoSize](../mfc/reference/ctoolbarctrl-class.md#autosize) dize veya dizelerin görünmesine alabilmek için.  
-  
-3.  Düğme yapıları çağırarak araç çubuğuna ekleme [AddButtons](../mfc/reference/ctoolbarctrl-class.md#addbuttons).  
-  
-4.  Araç ipuçları istiyorsanız, işleme **TTN_NEEDTEXT** açıklandığı gibi araç çubuğunun sahibi penceresinde iletileri [araç ipucu bildirimlerini işleme](../mfc/handling-tool-tip-notifications.md).  
-  
-5.  Araç çubuğunu özelleştirme yapabilmek için kullanıcının istiyorsanız, açıklandığı gibi sahip penceresinde özelleştirme bildirim iletilerini işleme [özelleştirme bildirimlerini işleme](../mfc/handling-customization-notifications.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CToolBarCtrl kullanma](../mfc/using-ctoolbarctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+[CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesneleri içeren birkaç iç veri yapılarını — listesini düğmesine görüntü bit eşlem düğmesi etiketi dizelerinin listesini ve listesini `TBBUTTON` yapılarına —, görüntü ilişkilendirmek ve/veya konum, stil, durumu, dize ve düğmenin komut kimliği. Bu veri yapılarının öğelerin her biri sıfır tabanlı bir dizin adlandırılır. Kullanabilmeniz için önce bir `CToolBarCtrl` nesnesi, bu veri yapıları ayarlamanız gerekir. Veri yapıları listesi için bkz. [araç çubuğu denetimleri](controls-mfc.md) Windows SDK. Dizeleri listesini yalnızca düğme etiketleri için kullanılabilir; araç çubuğundan dizeleri alınamıyor.
+
+Kullanılacak bir `CToolBarCtrl` nesnesi, genellikle şu adımları izleyin:
+
+### <a name="to-use-a-ctoolbarctrl-object"></a>CToolBarCtrl nesnesi kullanmak için
+
+1. Oluşturmak [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesne.
+
+1. Çağrı [Oluştur](../mfc/reference/ctoolbarctrl-class.md#create) Windows araç çubuğu ortak denetim oluşturma ve buna eklemek için `CToolBarCtrl` nesne. Bit eşlem resimleri için düğmeler istiyorsanız, düğme bit eşlemleri araç çubuğuna çağırarak eklemek [AddBitmap](../mfc/reference/ctoolbarctrl-class.md#addbitmap). Düğmeleri için dize etiketlerini istiyorsanız, dizeleri araç çubuğuna çağırarak eklemek [AddString](../mfc/reference/ctoolbarctrl-class.md#addstring) ve/veya [AddStrings](../mfc/reference/ctoolbarctrl-class.md#addstrings). Arama sonra `AddString` ve/veya `AddStrings`, çağırmalısınız [AutoSize](../mfc/reference/ctoolbarctrl-class.md#autosize) dize veya dizeler görünmesini alabilmek için.
+
+1. Düğme yapıları çağırarak araç çubuğuna ekleme [AddButtons](../mfc/reference/ctoolbarctrl-class.md#addbuttons).
+
+1. Araç ipuçları istiyorsanız işlemek **TTN_NEEDTEXT** açıklandığı gibi araç çubuğunun sahibi penceresinde iletileri [araç ipucu bildirimlerini işleme](../mfc/handling-tool-tip-notifications.md).
+
+1. Kullanıcı araç çubuğunu özelleştirme yapmak istiyorsanız, sahip penceresine özelleştirme bildirim iletilerini açıklandığı işlemek [özelleştirme bildirimlerini işleme](../mfc/handling-customization-notifications.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CToolBarCtrl Kullanma](../mfc/using-ctoolbarctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

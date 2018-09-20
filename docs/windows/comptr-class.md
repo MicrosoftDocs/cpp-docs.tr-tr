@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1a20dd5e2fb43dd5caae7a5185260d8c88637d33
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 88d3af154993bea6df509a69b832223aede7ad81
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597968"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46386515"
 ---
 # <a name="comptr-class"></a>ComPtr Sınıfı
 
@@ -40,10 +40,10 @@ friend class ComPtr;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Arabirimi, **ComPtr** temsil eder.
 
-*U*  
+*U*<br/>
 Bir sınıfa geçerli **ComPtr** arkadaş olur. (Bu parametre kullanan bir şablonu korunuyor.)
 
 ## <a name="remarks"></a>Açıklamalar

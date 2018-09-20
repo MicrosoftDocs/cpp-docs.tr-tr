@@ -14,67 +14,69 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2394516773f428ae62fb9e8e39dd78dd790bebd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 44d867f9bc33c56bf57f55d75a4f8babbbf70748
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46033921"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46401764"
 ---
 # <a name="delimiters-for-visual-c-documentation-tags"></a>Visual C++ Belge Etiketleri için Sınırlayıcılar
-Belge etiketleri gösteren bir belge açıklaması burada başlar ve biter derleyici sınırlayıcılar gerektirir.  
-  
- Aşağıdaki türde sınırlayıcıları ile XML belge etiketleri kullanabilirsiniz:  
+
+Belge etiketleri gösteren bir belge açıklaması burada başlar ve biter derleyici sınırlayıcılar gerektirir.
+
+Aşağıdaki türde sınırlayıcıları ile XML belge etiketleri kullanabilirsiniz:
 |||
 |-|-|
 |`///`  | Bu belge örneklerde gösterildiği ve Visual C++ proje şablonları tarafından kullanılan biçimidir.  |
 | `/** */`  | Çok satırlı sınırlayıcı olarak bu kullanılır.  |
-  
-Var olan bazı biçimlendirme kurallarını kullanarak `/** */` sınırlayıcılar:  
-  
--   İçeren bir satır için `/**` ayırıcı, boşluk, satır satır geri kalanında ise açıklamalarına işlenmedi. İlk karakterin boşluk varsa bu boşluk karakteri göz ardı edilir ve satırın geri kalanını işlenir. Aksi takdirde, tüm metin satırının sonra `/**` sınırlayıcı açıklamayı bir parçası olarak işlenir.  
-  
--   İçeren bir satır için `*/` varsa yalnızca boşluk kadar sınırlayıcı `*/` sınırlayıcı, o satırdaki göz ardı edilir. Aksi takdirde, en fazla bir satırındaki metin `*/` sınırlayıcı desen eşleştirme kuralları aşağıdaki maddede açıklandığı tabi açıklamayı bir parçası olarak işlenir.  
-  
--   İle başlayan bir sonraki satırların için `/**` sınırlayıcı, derleyici, isteğe bağlı beyaz boşluk ve yıldız oluşan her satırın başında yaygın bir düzen arar (`*`) ve ardından daha fazla isteğe bağlı beyaz boşluk. Derleyici, ortak bir karakter kümesi, her satırın başında bulursa, sonra tüm satırlar için bu düzeni yoksayacak `/**` sınırlayıcı, en fazla ve büyük olasılıkla içeren satırı dahil olmak üzere `*/` sınırlayıcı.  
-  
-Bazı örnekler:  
-  
--   Yalnızca işlenecek şu açıklama ile başlayan satırı parçasıdır `<summary>`. Aşağıdaki iki etiket biçimlerini aynı açıklamaları oluşturacak:  
-  
-    ```  
-    /**  
-    <summary>text</summary>   
-    */  
-    /** <summary>text</summary> */  
-    ```  
-  
--   Derleyici desenini uygular " \* " ikinci ve üçüncü satır başında yok sayılacak.  
-  
-    ```  
-    /**  
-     * <summary>  
-     *  text </summary>*/  
-    ```  
-  
--   İkinci satırda hiçbir yıldız işareti olduğundan derleyici Bu açıklamada yok desenini bulur. Bu nedenle, tüm metin ikinci ve üçüncü satırlardaki yukarı kasa `*/`, yorum bir parçası olarak işlenir.  
-  
-    ```  
-    /**  
-     * <summary>  
-       text </summary>*/  
-    ```  
-  
--   Derleyici, iki nedenden dolayı bu açıklamada yok desenini bulur. İlk olarak, tutarlı bir yıldız işareti önceki boşluklar sayısı ile başlayan satırı yok yoktur. İkinci olarak, beşinci satır alanları eşleşmiyor bir sekme ile başlar. Bu nedenle, tüm metin kadar ikinci satırında `*/` açıklamayı bir parçası olarak işlenir.  
-  
-    ```  
-    /**  
-      * <summary>  
-      * text   
-     *  text2  
-       *  </summary>  
-    */  
-    ```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)
+
+Var olan bazı biçimlendirme kurallarını kullanarak `/** */` sınırlayıcılar:
+
+- İçeren bir satır için `/**` ayırıcı, boşluk, satır satır geri kalanında ise açıklamalarına işlenmedi. İlk karakterin boşluk varsa bu boşluk karakteri göz ardı edilir ve satırın geri kalanını işlenir. Aksi takdirde, tüm metin satırının sonra `/**` sınırlayıcı açıklamayı bir parçası olarak işlenir.
+
+- İçeren bir satır için `*/` varsa yalnızca boşluk kadar sınırlayıcı `*/` sınırlayıcı, o satırdaki göz ardı edilir. Aksi takdirde, en fazla bir satırındaki metin `*/` sınırlayıcı desen eşleştirme kuralları aşağıdaki maddede açıklandığı tabi açıklamayı bir parçası olarak işlenir.
+
+- İle başlayan bir sonraki satırların için `/**` sınırlayıcı, derleyici, isteğe bağlı beyaz boşluk ve yıldız oluşan her satırın başında yaygın bir düzen arar (`*`) ve ardından daha fazla isteğe bağlı beyaz boşluk. Derleyici, ortak bir karakter kümesi, her satırın başında bulursa, sonra tüm satırlar için bu düzeni yoksayacak `/**` sınırlayıcı, en fazla ve büyük olasılıkla içeren satırı dahil olmak üzere `*/` sınırlayıcı.
+
+Bazı örnekler:
+
+- Yalnızca işlenecek şu açıklama ile başlayan satırı parçasıdır `<summary>`. Aşağıdaki iki etiket biçimlerini aynı açıklamaları oluşturacak:
+
+    ```cpp
+    /**
+    <summary>text</summary>
+    */
+    /** <summary>text</summary> */
+    ```
+
+- Derleyici desenini uygular " \* " ikinci ve üçüncü satır başında yok sayılacak.
+
+    ```cpp
+    /**
+     * <summary>
+     *  text </summary>*/
+    ```
+
+- İkinci satırda hiçbir yıldız işareti olduğundan derleyici Bu açıklamada yok desenini bulur. Bu nedenle, tüm metin ikinci ve üçüncü satırlardaki yukarı kasa `*/`, yorum bir parçası olarak işlenir.
+
+    ```cpp
+    /**
+     * <summary>
+       text </summary>*/
+    ```
+
+- Derleyici, iki nedenden dolayı bu açıklamada yok desenini bulur. İlk olarak, tutarlı bir yıldız işareti önceki boşluklar sayısı ile başlayan satırı yok yoktur. İkinci olarak, beşinci satır alanları eşleşmiyor bir sekme ile başlar. Bu nedenle, tüm metin kadar ikinci satırında `*/` açıklamayı bir parçası olarak işlenir.
+
+    ```cpp
+    /**
+      * <summary>
+      * text
+     *  text2
+       *  </summary>
+    */
+    ```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

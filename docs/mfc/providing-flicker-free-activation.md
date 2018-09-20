@@ -16,24 +16,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9d9c0108ce4afd2e65678280248488181ad34f2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bd9f780472b8256f6d8332ecbde08138d85c8ebd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33356560"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378333"
 ---
 # <a name="providing-flicker-free-activation"></a>Titreşimsiz Etkinleştirme Sağlama
-Denetiminiz kendisini aynı etkin ve etkin durumda çizer (ve penceresiz etkinleştirme kullanmaz varsa), çizim işlemleri ve etkin olmayan arasında geçiş yaparken, normal olarak ortaya eşlik eden visual titreşimi çıkarabilirsiniz ve etkin durumları. Bunu yapmak için dahil **noFlickerActivate** tarafından döndürülen bayraklar kümesi bayrağı [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags). Örneğin:  
-  
- [!code-cpp[NVC_MFC_AxOpt#5](../mfc/codesnippet/cpp/providing-flicker-free-activation_1.cpp)]  
-[!code-cpp[NVC_MFC_AxOpt#13](../mfc/codesnippet/cpp/providing-flicker-free-activation_2.cpp)]  
-[!code-cpp[NVC_MFC_AxOpt#7](../mfc/codesnippet/cpp/providing-flicker-free-activation_3.cpp)]  
-  
- Seçerseniz bu bayrak eklemek için kodu otomatik olarak oluşturulan **titreşimsiz etkinleştirme** seçeneği [denetim ayarlarını](../mfc/reference/control-settings-mfc-activex-control-wizard.md) sayfasında denetiminizi MFC ActiveX Denetim Sihirbazı ile oluştururken.  
-  
- Penceresiz etkinleştirme kullanıyorsanız, bu en iyi duruma getirme bir etkisi yoktur.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)
+
+Denetim kendisini etkin ve etkin durumda aynı şekilde çizer (ve penceresiz etkinleştirme kullanmaz varsa), çizim işlemlerini ve normalde devre dışı arasında geçiş yaparken ortaya eşlik eden görsel titreşimini ortadan kaldırabilir ve etkin durumları. Bunu yapmak için dahil **noFlickerActivate** bayrağı tarafından döndürülen bayrakları kümesini [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags). Örneğin:
+
+[!code-cpp[NVC_MFC_AxOpt#5](../mfc/codesnippet/cpp/providing-flicker-free-activation_1.cpp)]
+[!code-cpp[NVC_MFC_AxOpt#13](../mfc/codesnippet/cpp/providing-flicker-free-activation_2.cpp)]
+[!code-cpp[NVC_MFC_AxOpt#7](../mfc/codesnippet/cpp/providing-flicker-free-activation_3.cpp)]
+
+Seçerseniz bu bayrak eklenecek kodu otomatik olarak oluşturulan **titreşimsiz etkinleştirme** seçeneğini [denetim ayarları](../mfc/reference/control-settings-mfc-activex-control-wizard.md) denetiminiz MFC ActiveX Denetim Sihirbazı ile oluştururken sayfasında.
+
+Penceresiz etkinleştirme kullanıyorsanız, bu en iyi duruma getirme bir etkisi yoktur.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)
 

@@ -17,58 +17,61 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f43595ca5f688372a70999231ceebec5282cd3b6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c5af80f7a264a15f24ced0be37102802771dc6f2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348932"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46416688"
 ---
 # <a name="dao-classes"></a>DAO Sınıfları
-Microsoft Visual Basic ve Microsoft Access aynı veritabanı altyapısı'nı kullanan veri erişim nesnesi (DAO) veritabanları kolay erişim sağlamak için diğer uygulama framework sınıfları ile bu sınıfların çalışır. DAO sınıfları, çok çeşitli açık veritabanı bağlantısı (ODBC) sürücüler kullanılabilir veritabanlarını da erişebilirsiniz.  
-  
- DAO veritabanı kullanan programlar olacaktır en az bir `CDaoDatabase` nesne ve `CDaoRecordset` nesne.  
-  
+
+Bu sınıflar, Microsoft Visual Basic ve Microsoft Access aynı veritabanı motorunu kullanan veri erişim nesnesi (DAO) veritabanları kolay erişim vermek için diğer uygulama framework sınıfları ile çalışır. DAO sınıfları, çok çeşitli açık veritabanı bağlantısı (ODBC) sürücüleri kullanılabilir veritabanları da erişebilirsiniz.
+
+DAO veritabanı kullanan programlar olacaktır en az bir `CDaoDatabase` nesnesi ve bir `CDaoRecordset` nesne.
+
 > [!NOTE]
->  Artık Visual C++ ortamı ve sihirbazları DAO (DAO sınıfları dahil edilmiştir ve bunları kullanmaya devam edebilirsiniz ancak) destekler. Microsoft, yeni MFC projeleri için ODBC kullanma önerir. Yalnızca var olan uygulamaları sürdürmek DAO kullanmanız gerekir.  
-  
- [CDaoWorkspace](../mfc/reference/cdaoworkspace-class.md)  
- Bir adlandırılmış, parola korumalı veritabanı oturum kapatma için oturumu açma yönetir. Çoğu program varsayılan çalışma alanını kullanın.  
-  
- [CDaoDatabase](../mfc/reference/cdaodatabase-class.md)  
- Bir bağlantı verilerin çalışabilir veritabanına.  
-  
- [CDaoRecordset](../mfc/reference/cdaorecordset-class.md)  
- Bir veri kaynağından seçilen kayıt kümesini temsil eder.  
-  
- [CDaoRecordView](../mfc/reference/cdaorecordview-class.md)  
- Veritabanı kayıtlarını denetimlerinde görüntüleyen bir görünüm.  
-  
- [CDaoQueryDef](../mfc/reference/cdaoquerydef-class.md)  
- Sorgu tanımı, genellikle bir veritabanında kaydedilmiş temsil eder.  
-  
- [CDaoTableDef](../mfc/reference/cdaotabledef-class.md)  
- Temel tablo veya ekli bir tablo saklı tanımını temsil eder.  
-  
- [CDaoException](../mfc/reference/cdaoexception-class.md)  
- DAO sınıfları kaynaklanan bir özel durum koşulu temsil eder.  
-  
- [CDaoFieldExchange](../mfc/reference/cdaofieldexchange-class.md)  
- DAO veritabanı sınıfları tarafından kullanılan DAO kayıt alanı değişimi (DFX) yordamları destekler. Doğrudan bu sınıfı kullanacağınız normalde değil.  
-  
-## <a name="related-classes"></a>İlgili sınıflar  
- [CLongBinary](../mfc/reference/clongbinary-class.md)  
- İkili büyük nesne (BLOB) için depolama alanı için bir tanıtıcı bir bit eşlem gibi yalıtır. `CLongBinary` nesneleri veritabanı tablolarında depolanan büyük veri nesneleri yönetmek için kullanılır.  
-  
- [COleCurrency](../mfc/reference/colecurrency-class.md)  
- OLE Otomasyon türü için sarmalayıcı **para birimi**, 15 basamağa ondalık ayırıcıdan önce ve sonra 4 basamaklı bir sabit noktalı aritmetik türü.  
-  
- [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md)  
- OLE Otomasyon türü için sarmalayıcı **tarih**. Tarih ve saat değerlerini temsil eder.  
-  
- [COleVariant](../mfc/reference/colevariant-class.md)  
- OLE Otomasyon türü için sarmalayıcı **değişken**. Verileri **değişken**s birçok biçimlerinde depolanabilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+>  Artık Visual C++ ortamına ve sihirbazlar DAO (DAO sınıflarına eklenmiştir ve bunları kullanmaya devam edebilirsiniz ancak) destekler. Microsoft, yeni MFC projeleri için ODBC kullanma önerir. Yalnızca var olan uygulamaları sürdürmek DAO kullanmanız gerekir.
+
+[CDaoWorkspace](../mfc/reference/cdaoworkspace-class.md)<br/>
+Adlandırılmış, parola korumalı veritabanı oturumunu, oturum açma işlemi için kapatma yönetir. Çoğu program varsayılan çalışma alanını kullanın.
+
+[CDaoDatabase](../mfc/reference/cdaodatabase-class.md)<br/>
+Veriler üzerinde çalışabileceğiniz bir veritabanına bir bağlantı.
+
+[CDaoRecordset](../mfc/reference/cdaorecordset-class.md)<br/>
+Bir veri kaynağından seçilen kayıt kümesini temsil eder.
+
+[CDaoRecordView](../mfc/reference/cdaorecordview-class.md)<br/>
+Denetimlerde veritabanı kayıtlarını görüntüleyen bir görünüm.
+
+[CDaoQueryDef](../mfc/reference/cdaoquerydef-class.md)<br/>
+Sorgu tanımı, genellikle bir bir veritabanında kayıtlı temsil eder.
+
+[CDaoTableDef](../mfc/reference/cdaotabledef-class.md)<br/>
+Temel tablonun veya eklenen tablonun saklı tanımını temsil eder.
+
+[CDaoException](../mfc/reference/cdaoexception-class.md)<br/>
+DAO sınıflarından kaynaklanan bir özel durum koşulunu temsil eder.
+
+[CDaoFieldExchange](../mfc/reference/cdaofieldexchange-class.md)<br/>
+DAO veritabanı sınıfları tarafından kullanılan DAO kayıt alanı değişimi (DFX) yordamlarını destekler. Doğrudan bu sınıfı kullanın normalde değil.
+
+## <a name="related-classes"></a>İlgili sınıflar
+
+[CLongBinary](../mfc/reference/clongbinary-class.md)<br/>
+İkili büyük nesne (BLOB) depolama birimi için bir tanıtıcı gibi bir bit eşlemi kapsüller. `CLongBinary` nesneler, veritabanı tablolarında depolanan büyük veri nesnelerini yönetmek için kullanılır.
+
+[COleCurrency](../mfc/reference/colecurrency-class.md)<br/>
+OLE Otomasyon türü için sarmalayıcı **para birimi**, ondalık ayırıcıdan önce 15 basamakla ve 4 rakamdan sonra sabit nokta aritmetik türü.
+
+[COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md)<br/>
+OLE Otomasyon türü için sarmalayıcı **tarih**. Tarih ve saat değerlerini temsil eder.
+
+[COleVariant](../mfc/reference/colevariant-class.md)<br/>
+OLE Otomasyon türü için sarmalayıcı **değişken**. Verileri **değişken**s birçok biçimlerinde depolanabilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

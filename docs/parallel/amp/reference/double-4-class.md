@@ -278,413 +278,410 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92f0a8ed6842986e7f64279ab0c6b23a80dab293
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 209f21da57b8b188ceee643d9ac63a0f7cf90ba2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46028447"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46421578"
 ---
 # <a name="double4-class"></a>double_4 Sınıfı
-Dört çiftten oluşan bir kısa vektörü temsil eder.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class double_4;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-typedefs"></a>Genel Typedefler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`value_type`||  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[double_4 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|double_4::get_w||  
-|double_4::get_wx||  
-|double_4::get_wxy||  
-|double_4::get_wxyz||  
-|double_4::get_wxz||  
-|double_4::get_wxzy||  
-|double_4::get_wy||  
-|double_4::get_wyx||  
-|double_4::get_wyxz||  
-|double_4::get_wyz||  
-|double_4::get_wyzx||  
-|double_4::get_wz||  
-|double_4::get_wzx||  
-|double_4::get_wzxy||  
-|double_4::get_wzy||  
-|double_4::get_wzyx||  
-|double_4::get_x||  
-|double_4::get_xw||  
-|double_4::get_xwy||  
-|double_4::get_xwyz||  
-|double_4::get_xwz||  
-|double_4::get_xwzy||  
-|double_4::get_xy||  
-|double_4::get_xyw||  
-|double_4::get_xywz||  
-|double_4::get_xyz||  
-|double_4::get_xyzw||  
-|double_4::get_xz||  
-|double_4::get_xzw||  
-|double_4::get_xzwy||  
-|double_4::get_xzy||  
-|double_4::get_xzyw||  
-|double_4::get_y||  
-|double_4::get_yw||  
-|double_4::get_ywx||  
-|double_4::get_ywxz||  
-|double_4::get_ywz||  
-|double_4::get_ywzx||  
-|double_4::get_yx||  
-|double_4::get_yxw||  
-|double_4::get_yxwz||  
-|double_4::get_yxz||  
-|double_4::get_yxzw||  
-|double_4::get_yz||  
-|double_4::get_yzw||  
-|double_4::get_yzwx||  
-|double_4::get_yzx||  
-|double_4::get_yzxw||  
-|double_4::get_z||  
-|double_4::get_zw||  
-|double_4::get_zwx||  
-|double_4::get_zwxy||  
-|double_4::get_zwy||  
-|double_4::get_zwyx||  
-|double_4::get_zx||  
-|double_4::get_zxw||  
-|double_4::get_zxwy||  
-|double_4::get_zxy||  
-|double_4::get_zxyw||  
-|double_4::get_zy||  
-|double_4::get_zyw||  
-|double_4::get_zywx||  
-|double_4::get_zyx||  
-|double_4::get_zyxw||  
-|double_4::ref_a||  
-|double_4::ref_b||  
-|double_4::ref_g||  
-|double_4::ref_r||  
-|double_4::ref_w||  
-|double_4::ref_x||  
-|double_4::ref_y||  
-|double_4::ref_z||  
-|double_4::set_w||  
-|double_4::set_wx||  
-|double_4::set_wxy||  
-|double_4::set_wxyz||  
-|double_4::set_wxz||  
-|double_4::set_wxzy||  
-|double_4::set_wy||  
-|double_4::set_wyx||  
-|double_4::set_wyxz||  
-|double_4::set_wyz||  
-|double_4::set_wyzx||  
-|double_4::set_wz||  
-|double_4::set_wzx||  
-|double_4::set_wzxy||  
-|double_4::set_wzy||  
-|double_4::set_wzyx||  
-|double_4::set_x||  
-|double_4::set_xw||  
-|double_4::set_xwy||  
-|double_4::set_xwyz||  
-|double_4::set_xwz||  
-|double_4::set_xwzy||  
-|double_4::set_xy||  
-|double_4::set_xyw||  
-|double_4::set_xywz||  
-|double_4::set_xyz||  
-|double_4::set_xyzw||  
-|double_4::set_xz||  
-|double_4::set_xzw||  
-|double_4::set_xzwy||  
-|double_4::set_xzy||  
-|double_4::set_xzyw||  
-|double_4::set_y||  
-|double_4::set_yw||  
-|double_4::set_ywx||  
-|double_4::set_ywxz||  
-|double_4::set_ywz||  
-|double_4::set_ywzx||  
-|double_4::set_yx||  
-|double_4::set_yxw||  
-|double_4::set_yxwz||  
-|double_4::set_yxz||  
-|double_4::set_yxzw||  
-|double_4::set_yz||  
-|double_4::set_yzw||  
-|double_4::set_yzwx||  
-|double_4::set_yzx||  
-|double_4::set_yzxw||  
-|double_4::set_z||  
-|double_4::set_zw||  
-|double_4::set_zwx||  
-|double_4::set_zwxy||  
-|double_4::set_zwy||  
-|double_4::set_zwyx||  
-|double_4::set_zx||  
-|double_4::set_zxw||  
-|double_4::set_zxwy||  
-|double_4::set_zxy||  
-|double_4::set_zxyw||  
-|double_4::set_zy||  
-|double_4::set_zyw||  
-|double_4::set_zywx||  
-|double_4::set_zyx||  
-|double_4::set_zyxw||  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|double_4::operator-||  
-|double_4::operator--||  
-|double_4::operator * =||  
-|double_4::operator / =||  
-|double_4::operator ++||  
-|double_4::operator +=||  
-|double_4::operator =||  
-|double_4::operator-=||  
-  
-### <a name="public-constants"></a>Genel sabitler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[boyutu sabiti](#double_4__size)||  
-  
-### <a name="public-data-members"></a>Ortak Veri Üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|double_4::a||  
-|double_4::AB||  
-|double_4::abg||  
-|double_4::abgr||  
-|double_4::ABR||  
-|double_4::abrg||  
-|double_4::AG||  
-|double_4::agb||  
-|double_4::agbr||  
-|double_4::agr||  
-|double_4::agrb||  
-|double_4::ar||  
-|double_4::arb||  
-|double_4::arbg||  
-|double_4::arg||  
-|double_4::ARGB||  
-|double_4::b||  
-|double_4::BA||  
-|double_4::BAG||  
-|double_4::bagr||  
-|double_4::bar||  
-|double_4::barg||  
-|double_4::BG||  
-|double_4::BGA||  
-|double_4::bgar||  
-|double_4::BGR||  
-|double_4::bgra||  
-|double_4::br||  
-|double_4::BRA||  
-|double_4::brag||  
-|double_4::brg||  
-|double_4::brga||  
-|double_4::g||  
-|double_4::GA||  
-|double_4::gab||  
-|double_4::gabr||  
-|double_4::gar||  
-|double_4::garb||  
-|double_4::GB||  
-|double_4::Gba||  
-|double_4::gbar||  
-|double_4::GBR||  
-|double_4::gbra||  
-|double_4::Gr||  
-|double_4::Gra||  
-|double_4::Grab||  
-|double_4::Grb||  
-|double_4::grba||  
-|double_4::r||  
-|double_4::ra||  
-|double_4::rab||  
-|double_4::rabg||  
-|double_4::rag||  
-|double_4::ragb||  
-|double_4::RB||  
-|double_4::rba||  
-|double_4::rbag||  
-|double_4::rbg||  
-|double_4::rbga||  
-|double_4::rg||  
-|double_4::rga||  
-|double_4::rgab||  
-|double_4::RGB||  
-|double_4::rgba||  
-|double_4::w||  
-|double_4::wx||  
-|double_4::WXY||  
-|double_4::wxyz||  
-|double_4::wxz||  
-|double_4::wxzy||  
-|double_4::wy||  
-|double_4::wyx||  
-|double_4::wyxz||  
-|double_4::WYZ||  
-|double_4::wyzx||  
-|double_4::wZ||  
-|double_4::wzx||  
-|double_4::wzxy||  
-|double_4::wzy||  
-|double_4::wzyx||  
-|double_4::x||  
-|double_4::xw||  
-|double_4::xwy||  
-|double_4::xwyz||  
-|double_4::xwz||  
-|double_4::xwzy||  
-|double_4::xy||  
-|double_4::xyw||  
-|double_4::xywz||  
-|double_4::xyz||  
-|double_4::xyzw||  
-|double_4::xz||  
-|double_4::xzw||  
-|double_4::xzwy||  
-|double_4::xzy||  
-|double_4::xzyw||  
-|double_4::y||  
-|double_4::yw||  
-|double_4::ywx||  
-|double_4::ywxz||  
-|double_4::ywz||  
-|double_4::ywzx||  
-|double_4::yx||  
-|double_4::yxw||  
-|double_4::yxwz||  
-|double_4::yxz||  
-|double_4::yxzw||  
-|double_4::YZ||  
-|double_4::yzw||  
-|double_4::yzwx||  
-|double_4::yzx||  
-|double_4::yzxw||  
-|double_4::z||  
-|double_4::ZW||  
-|double_4::zwx||  
-|double_4::zwxy||  
-|double_4::zwy||  
-|double_4::zwyx||  
-|double_4::ZX||  
-|double_4::zxw||  
-|double_4::zxwy||  
-|double_4::zxy||  
-|double_4::zxyw||  
-|double_4::ZY||  
-|double_4::zyw||  
-|double_4::zywx||  
-|double_4::zyx||  
-|double_4::zyxw||  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `double_4`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** amp_short_vectors.h  
-  
- **Namespace:** Concurrency::graphics  
-  
-##  <a name="ctor"></a> double_4 
 
- Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.  
-  
-```  
+Dört çiftten oluşan bir kısa vektörü temsil eder.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class double_4;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-typedefs"></a>Genel Typedefler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`value_type`||
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[double_4 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|double_4::get_w||
+|double_4::get_wx||
+|double_4::get_wxy||
+|double_4::get_wxyz||
+|double_4::get_wxz||
+|double_4::get_wxzy||
+|double_4::get_wy||
+|double_4::get_wyx||
+|double_4::get_wyxz||
+|double_4::get_wyz||
+|double_4::get_wyzx||
+|double_4::get_wz||
+|double_4::get_wzx||
+|double_4::get_wzxy||
+|double_4::get_wzy||
+|double_4::get_wzyx||
+|double_4::get_x||
+|double_4::get_xw||
+|double_4::get_xwy||
+|double_4::get_xwyz||
+|double_4::get_xwz||
+|double_4::get_xwzy||
+|double_4::get_xy||
+|double_4::get_xyw||
+|double_4::get_xywz||
+|double_4::get_xyz||
+|double_4::get_xyzw||
+|double_4::get_xz||
+|double_4::get_xzw||
+|double_4::get_xzwy||
+|double_4::get_xzy||
+|double_4::get_xzyw||
+|double_4::get_y||
+|double_4::get_yw||
+|double_4::get_ywx||
+|double_4::get_ywxz||
+|double_4::get_ywz||
+|double_4::get_ywzx||
+|double_4::get_yx||
+|double_4::get_yxw||
+|double_4::get_yxwz||
+|double_4::get_yxz||
+|double_4::get_yxzw||
+|double_4::get_yz||
+|double_4::get_yzw||
+|double_4::get_yzwx||
+|double_4::get_yzx||
+|double_4::get_yzxw||
+|double_4::get_z||
+|double_4::get_zw||
+|double_4::get_zwx||
+|double_4::get_zwxy||
+|double_4::get_zwy||
+|double_4::get_zwyx||
+|double_4::get_zx||
+|double_4::get_zxw||
+|double_4::get_zxwy||
+|double_4::get_zxy||
+|double_4::get_zxyw||
+|double_4::get_zy||
+|double_4::get_zyw||
+|double_4::get_zywx||
+|double_4::get_zyx||
+|double_4::get_zyxw||
+|double_4::ref_a||
+|double_4::ref_b||
+|double_4::ref_g||
+|double_4::ref_r||
+|double_4::ref_w||
+|double_4::ref_x||
+|double_4::ref_y||
+|double_4::ref_z||
+|double_4::set_w||
+|double_4::set_wx||
+|double_4::set_wxy||
+|double_4::set_wxyz||
+|double_4::set_wxz||
+|double_4::set_wxzy||
+|double_4::set_wy||
+|double_4::set_wyx||
+|double_4::set_wyxz||
+|double_4::set_wyz||
+|double_4::set_wyzx||
+|double_4::set_wz||
+|double_4::set_wzx||
+|double_4::set_wzxy||
+|double_4::set_wzy||
+|double_4::set_wzyx||
+|double_4::set_x||
+|double_4::set_xw||
+|double_4::set_xwy||
+|double_4::set_xwyz||
+|double_4::set_xwz||
+|double_4::set_xwzy||
+|double_4::set_xy||
+|double_4::set_xyw||
+|double_4::set_xywz||
+|double_4::set_xyz||
+|double_4::set_xyzw||
+|double_4::set_xz||
+|double_4::set_xzw||
+|double_4::set_xzwy||
+|double_4::set_xzy||
+|double_4::set_xzyw||
+|double_4::set_y||
+|double_4::set_yw||
+|double_4::set_ywx||
+|double_4::set_ywxz||
+|double_4::set_ywz||
+|double_4::set_ywzx||
+|double_4::set_yx||
+|double_4::set_yxw||
+|double_4::set_yxwz||
+|double_4::set_yxz||
+|double_4::set_yxzw||
+|double_4::set_yz||
+|double_4::set_yzw||
+|double_4::set_yzwx||
+|double_4::set_yzx||
+|double_4::set_yzxw||
+|double_4::set_z||
+|double_4::set_zw||
+|double_4::set_zwx||
+|double_4::set_zwxy||
+|double_4::set_zwy||
+|double_4::set_zwyx||
+|double_4::set_zx||
+|double_4::set_zxw||
+|double_4::set_zxwy||
+|double_4::set_zxy||
+|double_4::set_zxyw||
+|double_4::set_zy||
+|double_4::set_zyw||
+|double_4::set_zywx||
+|double_4::set_zyx||
+|double_4::set_zyxw||
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|double_4::operator-||
+|double_4::operator--||
+|double_4::operator * =||
+|double_4::operator / =||
+|double_4::operator ++||
+|double_4::operator +=||
+|double_4::operator =||
+|double_4::operator-=||
+
+### <a name="public-constants"></a>Genel sabitler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[boyutu sabiti](#double_4__size)||
+
+### <a name="public-data-members"></a>Ortak Veri Üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|double_4::a||
+|double_4::AB||
+|double_4::abg||
+|double_4::abgr||
+|double_4::ABR||
+|double_4::abrg||
+|double_4::AG||
+|double_4::agb||
+|double_4::agbr||
+|double_4::agr||
+|double_4::agrb||
+|double_4::ar||
+|double_4::arb||
+|double_4::arbg||
+|double_4::arg||
+|double_4::ARGB||
+|double_4::b||
+|double_4::BA||
+|double_4::BAG||
+|double_4::bagr||
+|double_4::bar||
+|double_4::barg||
+|double_4::BG||
+|double_4::BGA||
+|double_4::bgar||
+|double_4::BGR||
+|double_4::bgra||
+|double_4::br||
+|double_4::BRA||
+|double_4::brag||
+|double_4::brg||
+|double_4::brga||
+|double_4::g||
+|double_4::GA||
+|double_4::gab||
+|double_4::gabr||
+|double_4::gar||
+|double_4::garb||
+|double_4::GB||
+|double_4::Gba||
+|double_4::gbar||
+|double_4::GBR||
+|double_4::gbra||
+|double_4::Gr||
+|double_4::Gra||
+|double_4::Grab||
+|double_4::Grb||
+|double_4::grba||
+|double_4::r||
+|double_4::ra||
+|double_4::rab||
+|double_4::rabg||
+|double_4::rag||
+|double_4::ragb||
+|double_4::RB||
+|double_4::rba||
+|double_4::rbag||
+|double_4::rbg||
+|double_4::rbga||
+|double_4::rg||
+|double_4::rga||
+|double_4::rgab||
+|double_4::RGB||
+|double_4::rgba||
+|double_4::w||
+|double_4::wx||
+|double_4::WXY||
+|double_4::wxyz||
+|double_4::wxz||
+|double_4::wxzy||
+|double_4::wy||
+|double_4::wyx||
+|double_4::wyxz||
+|double_4::WYZ||
+|double_4::wyzx||
+|double_4::wZ||
+|double_4::wzx||
+|double_4::wzxy||
+|double_4::wzy||
+|double_4::wzyx||
+|double_4::x||
+|double_4::xw||
+|double_4::xwy||
+|double_4::xwyz||
+|double_4::xwz||
+|double_4::xwzy||
+|double_4::xy||
+|double_4::xyw||
+|double_4::xywz||
+|double_4::xyz||
+|double_4::xyzw||
+|double_4::xz||
+|double_4::xzw||
+|double_4::xzwy||
+|double_4::xzy||
+|double_4::xzyw||
+|double_4::y||
+|double_4::yw||
+|double_4::ywx||
+|double_4::ywxz||
+|double_4::ywz||
+|double_4::ywzx||
+|double_4::yx||
+|double_4::yxw||
+|double_4::yxwz||
+|double_4::yxz||
+|double_4::yxzw||
+|double_4::YZ||
+|double_4::yzw||
+|double_4::yzwx||
+|double_4::yzx||
+|double_4::yzxw||
+|double_4::z||
+|double_4::ZW||
+|double_4::zwx||
+|double_4::zwxy||
+|double_4::zwy||
+|double_4::zwyx||
+|double_4::ZX||
+|double_4::zxw||
+|double_4::zxwy||
+|double_4::zxy||
+|double_4::zxyw||
+|double_4::ZY||
+|double_4::zyw||
+|double_4::zywx||
+|double_4::zyx||
+|double_4::zyxw||
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`double_4`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** amp_short_vectors.h
+
+**Namespace:** Concurrency::graphics
+
+##  <a name="ctor"></a> double_4
+
+Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+
+```
 double_4() restrict(amp,
     cpu);
 
- 
 double_4(
-    double _V0,  
-    double _V1,  
-    double _V2,  
+    double _V0,
+    double _V1,
+    double _V2,
     double _V3) restrict(amp,
     cpu);
 
- 
 double_4(
     double _V) restrict(amp,
     cpu);
 
- 
 double_4(
     const double_4& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline double_4(
     const uint_4& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline double_4(
     const int_4& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline double_4(
     const float_4& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline double_4(
     const unorm_4& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline double_4(
     const norm_4& _Other) restrict(amp,
     cpu);
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*_V0*<br/>
-Öğe 0'ı başlatmak için değer.  
-  
-*_V1*<br/>
-1 öğe başlatmak için değer.  
-  
-*_V2*<br/>
-Öğe 2 başlatmak için değer.  
-  
-*_V3*<br/>
-Öğeyi 3 başlatmak için değer.  
-  
-*_V*<br/>
-Başlatma için değer.  
-  
-*_Diğer*<br/>
-Başlatmak için kullanılan nesne.  
-  
-##  <a name="double_4__size"></a> Boyutu 
+```
 
-```  
-static const int size = 4;  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)
+### <a name="parameters"></a>Parametreler
+
+*_V0*<br/>
+Öğe 0'ı başlatmak için değer.
+
+*_V1*<br/>
+1 öğe başlatmak için değer.
+
+*_V2*<br/>
+Öğe 2 başlatmak için değer.
+
+*_V3*<br/>
+Öğeyi 3 başlatmak için değer.
+
+*_V*<br/>
+Başlatma için değer.
+
+*_Diğer*<br/>
+Başlatmak için kullanılan nesne.
+
+##  <a name="double_4__size"></a> Boyutu
+
+```
+static const int size = 4;
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

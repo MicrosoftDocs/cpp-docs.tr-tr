@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a1117ba3933d714486f314510d0288f0c63bf4b8
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 029528baabcc32c14fb6b35e4a13f4118602d5d5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202382"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46417806"
 ---
 # <a name="asyncuuid"></a>async_uuid
 
@@ -38,7 +38,7 @@ COM arabirimi zaman uyumlu ve zaman uyumsuz sürümlerini tanımlamak için MIDL
 
 ### <a name="parameters"></a>Parametreler
 
-*uuid*  
+*uuid*<br/>
 Arabirimi sürümünü tanımlar UUID'si.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -74,5 +74,5 @@ __interface ICustom {
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](../windows/interface-attributes.md)  

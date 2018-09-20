@@ -20,27 +20,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1df0d00aa6356fa1741e7f4fc34d8063782da859
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: b2ca182da3a0300604415b790c0aba138c8fd7a2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36930680"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439113"
 ---
 # <a name="mapi"></a>MAPI
-Bu makalede, istemci ileti uygulama geliştiricileri için Microsoft ileti uygulama programlama arabirimi (MAPI) açıklanmaktadır. MFC sağlayan bir MAPI alt sınıfında desteği `CDocument` tüm API'larını değil ancak. Daha fazla bilgi için bkz: [MFC içinde MAPI desteği](../mfc/mapi-support-in-mfc.md).  
-  
- MAPI, posta etkinleştirilmiş ve posta algılayan uygulamaları oluşturmak, yönetmek, aktarım ve posta iletileri depolamak için kullandığınız işlevleri kümesidir. Uygulama geliştiricilerinin amacı ve posta iletileri içeriğini tanımlamak için Araçlar verir ve bunları kendi saklı posta iletileri Yönetimi'nde esnekliği sağlar. MAPI uygulama geliştiricileri, posta etkinleştirilmiş oluşturmak için kullanabileceğiniz ortak bir arabirim ve posta kullanan uygulamalar temel alınan ileti sistemi bağımsız de sağlar.  
-  
- İleti sistemi istemcileri ile Microsoft Windows ileti sistemi (WMS) etkileşim için İnsan bir arabirim sağlar. Bu etkileşimi genellikle ileti depolar ve adres defterleri gibi MAPI uyumlu sağlayıcılardan Hizmetleri isteyen içerir.  
-  
- MAPI hakkında daha fazla bilgi için Windows SDK'ın altında Kılavuzu Win32 ileti (MAPI) içinde makalelerine bakın.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [MFC’de MAPI Desteği](../mfc/mapi-support-in-mfc.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CDocument::OnFileSendMail](../mfc/reference/cdocument-class.md#onfilesendmail)   
- [CDocument::OnUpdateFileSendMail](../mfc/reference/cdocument-class.md#onupdatefilesendmail)   
- [COleDocument::OnFileSendMail](../mfc/reference/coledocument-class.md#onfilesendmail)
+
+Bu makalede, istemci ileti uygulaması geliştiricileri için Microsoft ileti uygulama programlama arabirimi (MAPI) açıklanmaktadır. MFC MAPI sınıfındaki bir alt kümesi için destek sağlayan `CDocument` tüm API'larını değil ancak. Daha fazla bilgi için [MFC'de MAPI desteği](../mfc/mapi-support-in-mfc.md).
+
+MAPI, posta etkinleştirilmiş ve posta kullanan uygulamalar oluşturma, düzenleme, aktarımı ve e-posta iletilerini kullanan işlevler kümesidir. Uygulama geliştiricileri amacı ve posta mesajlarının içeriğini tanımlamak için gereken araçları sağlar ve bunları kendi saklı posta iletilerini Yönetimi'nde esnekliği sağlar. MAPI Ayrıca uygulama geliştiricilerin, posta özellikli oluşturmak için kullanabileceğiniz ortak bir arabirim ve temel alınan bir Mesajlaşma sistemi bağımsız posta kullanan uygulamalar sağlar.
+
+İleti sistemi istemcileri ile Microsoft Windows ileti sistemi (WMS) etkileşim için bir insan arabirimi sağlar. Bu etkileşimi genellikle MAPI uyumlu sağlayıcılarından adres defterlerini ve ileti depoları gibi hizmetleri isteyen içerir.
+
+Windows SDK'sı Kılavuzu Win32 Mesajlaşma (MAPI) içinde altında makalelerinin MAPI hakkında daha fazla bilgi için bkz.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[MFC’de MAPI Desteği](../mfc/mapi-support-in-mfc.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CDocument::OnFileSendMail](../mfc/reference/cdocument-class.md#onfilesendmail)<br/>
+[CDocument::OnUpdateFileSendMail](../mfc/reference/cdocument-class.md#onupdatefilesendmail)<br/>
+[COleDocument::OnFileSendMail](../mfc/reference/coledocument-class.md#onfilesendmail)
 

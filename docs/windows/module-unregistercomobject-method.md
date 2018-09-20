@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3409e0e2c1cac5f3934902523edd2653839989ed
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 46450142c0455dd4eb96f627abd077e478d96fea
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42575764"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46383512"
 ---
 # <a name="moduleunregistercomobject-method"></a>Module::UnregisterCOMObject Yöntemi
 
@@ -39,13 +39,13 @@ virtual HRESULT UnregisterCOMObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*SunucuAdı*  
+*SunucuAdı*<br/>
 (Kullanılmayan)
 
-*Tanımlama bilgileri*  
+*Tanımlama bilgileri*<br/>
 Sınıf nesneleri silinmesine izin değerleri için işaretçiler dizisi. Dizi tarafından oluşturulan [RegisterCOMObject](../windows/module-registercomobject-method.md) yöntemi.
 
-*Sayısı*  
+*Sayısı*<br/>
 Sınıfların kaydını sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -59,4 +59,5 @@ Bu işlem başarılı olursa S_OK; Aksi takdirde bir hata nedenini belirten HRES
 **Namespace:** Microsoft::WRL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 [Modül Sınıfı](../windows/module-class.md)

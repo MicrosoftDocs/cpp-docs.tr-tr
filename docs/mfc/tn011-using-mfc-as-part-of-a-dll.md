@@ -20,102 +20,110 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b558bb373416338f4136a6142ca6d491b28b510
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: bc30248fda9c179b22769230d5e09bf1da474d3b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36951464"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435616"
 ---
 # <a name="tn011-using-mfc-as-part-of-a-dll"></a>TN011: Bir DLL'in bir Parçası Olarak MFC Kullanma
-Bu Not MFC kitaplığını Windows dinamik bağlantı kitaplığı (DLL) bir parçası olarak kullanmanıza olanak sağlayan Normal MFC DLL'leri açıklar. Bu, Windows DLL'leri ve bunları oluşturma konusunda bilgi sahibi olduğunuzu varsayar. MFC uzantı DLL'leri hakkında daha fazla bilgi için hangi oluşturabileceğiniz ile MFC kitaplığına uzantılarını görmek [, DLL sürümü MFC](../mfc/tn033-dll-version-of-mfc.md).  
-  
-## <a name="dll-interfaces"></a>DLL arabirimleri  
- arabirimler uygulama ve DLL arasında C benzeri işlevler veya açıkça dışarı aktarılan sınıfları belirtilen Normal MFC DLL'leri varsayalım. MFC sınıf arabirimleri verilemez.  
-  
- DLL ve uygulama MFC kullanmak istiyorsanız hem ya da MFC kitaplıkları paylaşılan sürümü kullanmak için veya bir kopyasını kitaplıkları için statik olarak bağlamak için bir seçenek sahiptir. Uygulama ve DLL hem standart MFC kitaplık sürümleri birini kullanabilirsiniz.  
-  
- Normal MFC DLL'leri çeşitli avantajları vardır:  
-  
--   DLL kullanan uygulama MFC kullanmak zorunda değildir ve bir Visual C++ uygulaması olması gerekmez.  
-  
--   Normal MFC statik olarak MFC'ye DLL'leri ile DLL kullanılan ve bağlı yalnızca MFC ve C çalışma zamanı yordamları üzerinde boyutuna bağlıdır.  
-  
--   Normal MFC dinamik olarak MFC'ye DLL'leri ile MFC paylaşılan sürümünü kullanarak bellekte tasarruf önemli olabilir. Bununla birlikte, paylaşılan DLL'ler, Mfc dağıtmalısınız*\<sürüm >*.dll ve Msvvcrt*\<sürüm >* DLL ile .dll.  
-  
--   DLL tasarım sınıfları nasıl uygulandığını bağımsızdır. DLL tasarımınızı istediğiniz API'leri yalnızca dışa aktarır. Sonuç olarak, uygulama değişirse, Normal MFC DLL'leri hala geçerli.  
-  
--   Statik olarak MFC'ye, bağlantı Normal MFC DLL'leri ile MFC DLL ve uygulama kullanırsanız, MFC DLL daha veya farklı bir sürümü istiyorsa uygulama ile herhangi bir sorun vardır. MFC Kitaplığı her bir DLL veya EXE statik olarak bağlantılı olduğundan, elinizde hangi sürümü hakkında bir soru yok yok.  
-  
-## <a name="api-limitations"></a>API sınırlamaları  
- MFC işlevselliğinin teknik sınırlamaları nedeniyle ya da DLL sürümü için geçerli değildir veya bu hizmetlerin genellikle uygulama tarafından sağlanır. MFC geçerli sürümü ile geçerli değil yalnızca işlevidir `CWinApp::SetDialogBkColor`.  
-  
-## <a name="building-your-dll"></a>DLL oluşturma  
- Statik olarak MFC'ye, simgeler bağlantı Normal MFC DLL derlenirken `_USRDLL` ve `_WINDLL` tanımlanması gerekir. DLL kodunuzu ayrıca aşağıdaki derleyici anahtarları ile derlenmiş gerekir:  
-  
-- **/ D_WINDLL** derleme bir DLL için olduğunu belirtir  
-  
-- **/ D_USRDLL** normal bir MFC DLL oluşturduğunuz belirtir  
-  
- Ayrıca bu simgeleri tanımlayın ve dinamik olarak MFC'ye Normal MFC DLL'leri derlediğinizde Bu derleyici anahtarları kullanmanız gerekir. Ayrıca, simge `_AFXDLL` tanımlanmalıdır ve DLL kodunuzu ile derlenmiş gerekir:  
-  
-- **/ D_AFXDLL** dinamik olarak MFC'ye bağlanan normal bir MFC DLL oluşturma belirtir  
-  
- Uygulama ve DLL arasında arabirimleri (API) açıkça verilmelidir. Düşük bant genişliğine sahip olacak şekilde arabirimlerinizi tanımlama ve yapabiliyorsanız yalnızca C arabirimleri kullanma öneririz. Doğrudan C arabirimleri daha karmaşık C++ sınıfları bakımı daha kolay olur.  
-  
- C ve C++ dosyaları tarafından eklenebilir ayrı bir üstbilgi Apı'lerinizi koyun. MFC Gelişmiş kavramları örnek ScreenCap.h üstbilgisinde bkz [ile ilgili](../visual-cpp-samples.md) bir örnek. İşlevlerinizi dışarı aktarmak için bunları girin `EXPORTS` bölümünde modül tanım dosyası (. DEF) veya dahil `__declspec(dllexport)` işlev tanımları üzerinde. Kullanım `__declspec(dllimport)` bu işlevler yürütülebilir istemcisine içeri aktarmak için.  
-  
- Dinamik olarak MFC'ye Normal MFC DLL'leri dışarı aktarılan işlevler başındaki AFX_MANAGE_STATE makrosu eklemeniz gerekir. Bu makrosu DLL için geçerli modül durumunu ayarlar. Bu makrosu kullanmak için DLL'den dışarı aktarılan işlevlerin başına aşağıdaki kod satırını ekleyin:  
-  
- `AFX_MANAGE_STATE(AfxGetStaticModuleState( ))`  
-  
-## <a name="winmain---dllmain"></a>WinMain DllMain ->  
- MFC kitaplığını standart Win32 tanımlar `DllMain` başlatır giriş noktası, [CWinApp](../mfc/reference/cwinapp-class.md) türetilmiş nesnesinin tipik bir MFC uygulaması olduğu gibi. Tüm DLL özgü başlatma yerleştirin [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) tipik bir MFC uygulaması yönteminizdeki.  
-  
- Unutmayın [CWinApp::Run](../mfc/reference/cwinapp-class.md#run) mekanizması uygulamanın ana ileti göndericisi olduğundan bir DLL için uygulanmaz. DLL kalıcı olmayan iletişim kutuları görüntüler ya da kendi ana penceresi varsa, uygulamanızın ana ileti göndericisi çağıran DLL dışarı aktarılan bir yordam çağırmalıdır [CWinApp::PreTranslateMessage](../mfc/reference/cwinapp-class.md#pretranslatemessage).  
-  
- Bu işlev kullanımı ile ilgili örnek bakın.  
-  
- `DllMain` Çağıracaktır MFC sağlar işlevi [CWinApp::ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance) yöntemi sınıfınızın türetildiği `CWinApp` DLL kaldırılmadan önce.  
-  
-## <a name="linking-your-dll"></a>DLL bağlama  
- Normal MFC statik olarak MFC'ye DLL'leri ile DLL Nafxcwd.lib veya Nafxcw.lib ve Libcmt.lib adlı C çalışma zamanları sürümü ile bağlamanız gerekir. Bu kitaplıklar, önceden oluşturulmuş ve Visual C++ Kurulumu çalıştırdığınızda bunları belirterek yüklü olabilir.  
-  
-## <a name="sample-code"></a>Örnek kod  
- İle ilgili tam bir örnek için program MFC Gelişmiş kavramları örneğine bakın. Bu örnekte dikkat edilecek birkaç ilginç noktalar aşağıdaki gibidir:  
-  
--   DLL derleyici bayraklarını ve bu uygulamanın farklıdır.  
-  
--   Bağlantı çizgileri ve. DEF dosyaları DLL için ve bu uygulama için farklıdır.  
-  
--   DLL kullanan uygulama C++'da olmak zorunda değildir.  
-  
--   C veya C++ tarafından kullanılabilir ve dışa aktarılan bir API DLLScreenCap.def ile uygulama ve DLL arasındaki arabirimdir.  
-  
- Aşağıdaki örnek, normal MFC'ye MFC DLL tanımlanan bir API gösterilmektedir. Bu örnekte, bildirimi sınırlanan bir `extern "C" { }` C++ kullanıcıları için bloğu. Bu, çeşitli avantajları vardır. İlk olarak, DLL Apı'lerinizi kullanılabilir C++ dışı istemci uygulamaları tarafından kolaylaştırır. İkinci olarak, ad C++ bozma dışarı aktarılan adına uygulanmaz çünkü DLL ek yükünü azaltır. Son olarak, açıkça eklemek kolaylaştırır bir. DEF dosya (sıralı olarak dışa aktarmak için) ad bozma hakkında endişelenmeye gerek kalmadan.  
-  
-```  
-#ifdef __cplusplus  
-extern "C" {  
-#endif  /* __cplusplus */  
- 
-struct TracerData  
-{  
-    BOOL bEnabled;  
-    UINT flags;  
-};  
- 
+
+Bu Not, MFC kitaplığını Windows dinamik bağlantı kitaplığı (DLL) bir parçası olarak kullanmanıza olanak sağlayan Normal MFC DLL'leri açıklar. Bu, Windows DLL'leri ve bunları oluşturma konusunda bilgi sahibi olduğunuzu varsayar. MFC uzantı DLL'leri hakkında daha fazla bilgi için oluşturabileceğiniz ile MFC Kitaplığı için uzantıları bakın [MFC DLL sürümü](../mfc/tn033-dll-version-of-mfc.md).
+
+## <a name="dll-interfaces"></a>DLL arabirimi
+
+Normal MFC DLL'leri C gibi işlevleri veya açıkça dışa aktarılan sınıfları arabirimler uygulama ve DLL arasında belirtilen varsayılır. MFC sınıf arabirimleri dışarı aktarılamaz.
+
+Bir DLL hem uygulamanın MFC kullanmak istiyorsanız, her ikisini ya da MFC kitaplıkları paylaşılan sürümünü kullanın veya bir kopyasını kitaplıkları için kitaplıklarla statik bağlantılar oluşturabilir vardır. Uygulama ve DLL hem MFC Kitaplığı'nın standard sürümlerinden birini kullanabilir.
+
+Normal MFC DLL'leri çeşitli avantajları vardır:
+
+- DLL kullanan uygulama MFC kullanmak zorunda değildir ve Visual C++ uygulaması olması gerekmez.
+
+- Normal MFC, MFC DLL'lerine DLL'ler ile kullanılan ve bağlı olan yalnızca MFC ve C çalışma zamanı yordamları üzerinde DLL boyutuna bağlıdır.
+
+- Normal MFC dinamik olarak MFC'ye bağlanan DLL'ler ile tasarruf kullanarak MFC'nin paylaşılan sürümünden belleğe önemli olabilir. Bununla birlikte, paylaşılan dll, Mfc dağıtmanız gerekir*\<sürüm >*.dll ve Msvvcrt*\<sürüm >*.dll, DLL dosyanız ile.
+
+- DLL tasarım sınıfları nasıl uygulandığını bağımsızdır. DLL tasarımınızı istediğiniz API'leri yalnızca dışarı aktarır. Sonuç olarak, uygulama değişirse, Normal MFC DLL'leri hala geçerli.
+
+- MFC'ye statik olarak bağlanan normal MFC DLL'leri ile MFC DLL hem uygulama kullanırsanız, MFC DLL veya tam tersi farklı bir sürümü istiyorsa uygulama ile herhangi bir sorun vardır. MFC Kitaplığı her bir DLL veya EXE statik olarak bağlı olduğundan elinizde hangi sürümü hakkında bir soru yok.
+
+## <a name="api-limitations"></a>API sınırlamaları
+
+DLL sürümü, ya da teknik sınırlamaları nedeniyle bazı MFC işlevleri uygulanmaz veya bu hizmetleri genellikle uygulama tarafından sağlanır. MFC geçerli sürümü ile geçerli değil yalnızca işlevidir `CWinApp::SetDialogBkColor`.
+
+## <a name="building-your-dll"></a>DLL oluşturma
+
+MFC, simgeler statik olarak bağlanan normal MFC DLL'leri derlenirken `_USRDLL` ve `_WINDLL` tanımlanması gerekir. DLL kodunuzu ayrıca aşağıdaki derleyici anahtarları ile derlenmiş olmalıdır:
+
+- **/ D_WINDLL** derleme bir DLL için olduğunu belirtir
+
+- **/ D_USRDLL** Normal MFC DLL'SİNİN oluşturuyor olduğunuz belirtir
+
+Ayrıca bu sembolleri tanımlayın ve bu derleyici anahtarları, dinamik olarak MFC'ye bağlanan normal MFC DLL'leri derlerken kullanmanız gerekir. Ayrıca, sembol `_AFXDLL` tanımlanmalıdır ve DLL kodunuzu ile derlenmelidir:
+
+- **/ D_AFXDLL** dinamik olarak MFC'ye bağlı normal MFC DLL'SİNİN oluşturulmasını belirtir
+
+' % S'arabirimleri (API) uygulama ve DLL arasında açıkça verilmelidir. Düşük bant genişliği olacak şekilde, arabirimler tanımlar ve yalnızca C arabirimleri yapabiliyorsanız kullanın öneririz. Doğrudan C arabirimleri korumak daha karmaşık C++ sınıfları kolaydır.
+
+Apı'lerinizi hem C hem de C++ dosyaları dahil edilebilmesi için ayrı bir üstbilgi yerleştirin. MFC Gelişmiş kavramlar örneği üstbilgisinde ScreenCap.h bkz [ile ilgili](../visual-cpp-samples.md) örneği. İşlevlerinizi dışarı aktarmak için bunları girin `EXPORTS` bölümünü, modül tanım dosyası (. DEF) veya dahil `__declspec(dllexport)` , işlev tanımları üzerinde. Kullanım `__declspec(dllimport)` bu işlevler yürütülebilir istemci içeri aktarmak için.
+
+Dinamik olarak MFC'ye bağlanan normal MFC DLL'leri dışarı aktarılan işlevlerin başında AFX_MANAGE_STATE makrosuna eklemeniz gerekir. Bu makro, bir DLL için geçerli modül durumunu ayarlar. Bu makroyu kullanmak için işlevleri bir DLL'den dışarı başlangıcına aşağıdaki kod satırını ekleyin:
+
+`AFX_MANAGE_STATE(AfxGetStaticModuleState( ))`
+
+## <a name="winmain---dllmain"></a>WinMain DllMain ->
+
+MFC Kitaplığı standart Win32 tanımlar `DllMain` başlatır giriş noktası, [CWinApp](../mfc/reference/cwinapp-class.md) türetilmiş bir nesneye tipik bir MFC uygulaması olduğu gibi. Tüm DLL'ye özgü başlatmada yerleştirin [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) yöntemi tipik bir MFC uygulaması olduğu gibi.
+
+Unutmayın [CWinApp::Run](../mfc/reference/cwinapp-class.md#run) mekanizması uygulamanın ana ileti göndericisi çünkü bir DLL için uygulanmaz. DLL'niz kalıcı olmayan iletişim kutuları görüntüler veya kendi ana penceresi, uygulamanızın ana ileti pompası çağıran bir DLL dışarı yordam çağırmalıdır [CWinApp::PreTranslateMessage](../mfc/reference/cwinapp-class.md#pretranslatemessage).
+
+Bu işlev kullanım ile ilgili örnek bakın.
+
+`DllMain` Çağıracaktır MFC sağlayan işlev [CWinApp::ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance) yöntemi türetilmiş sınıfınızın `CWinApp` DLL kaldırılmadan önce.
+
+## <a name="linking-your-dll"></a>DLL bağlama
+
+Normal MFC, MFC DLL'lerine DLL'ler ile DLL dosyanızı Nafxcwd.lib veya Nafxcw.lib ve LIBCMT.lib adlı C çalışma zamanı sürümü ile bağlanması gerekir. Bu kitaplıklar, önceden oluşturulmuş ve Visual C++ Kurulum'u çalıştırdığınızda bunları belirterek yüklenebilir.
+
+## <a name="sample-code"></a>Örnek kod
+
+MFC Gelişmiş kavramlar örneği ile ilgili eksiksiz bir örnek için program bakın. Bu örnekte dikkat edilecek bazı ilgi çekici noktalar aşağıdaki gibidir:
+
+- Derleyici bayraklarına dll ve bu uygulamanın farklıdır.
+
+- Çizgileri ve. DEF dosyaları DLL için ve bu uygulama için farklıdır.
+
+- DLL kullanan uygulama c++'ta olması gerekmez.
+
+- C veya C++ tarafından kullanılabilir ve dışa aktarılan bir API DLLScreenCap.def ile uygulama ve DLL arasında arabirimidir.
+
+Aşağıdaki örnek, bir normal MFC'ye MFC DLL içinde tanımlanan bir API gösterir. Bu örnekte bildirimi içinde alınmış bir `extern "C" { }` C++ kullanıcılar için blok. Bu, çeşitli avantajları vardır. İlk olarak, DLL Apı'lerinizi kullanılabilir olmayan bir C++ istemci uygulamalar tarafından kolaylaştırır. İkinci olarak, C++ ad değiştirmeyi dışarı aktarılan adına uygulanmaz çünkü DLL yükünü azaltır. Son olarak, açıkça eklemek kolaylaştırır bir. DEF dosyası (sıralı olarak dışa aktarmak için) ad değiştirmeyi hakkında endişelenmenize gerek kalmadan.
+
+```
+#ifdef __cplusplus
+extern "C" {
+#endif  /* __cplusplus */
+
+struct TracerData
+{
+    BOOL bEnabled;
+    UINT flags;
+};
+
 BOOL PromptTraceFlags(TracerData FAR* lpData);
 
- 
-#ifdef __cplusplus  
-}  
-#endif  
-```  
-  
- API tarafından kullanılan yapılar MFC sınıfları türetilmemiş ve API başlığında tanımlanır. Bu DLL ve uygulama arasındaki arabirim karmaşıklığını azaltır ve DLL C programlar tarafından kullanılabilir hale getirir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+
+#ifdef __cplusplus
+}
+#endif
+```
+
+API'sı tarafından kullanılan yapılara, MFC sınıflarından türetilmiş değil ve API üstbilgisinde tanımlanır. Bu DLL ve uygulama arasındaki arabirim karmaşıklığını azaltır ve DLL C programları tarafından kullanılabilir hale getirir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

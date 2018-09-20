@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cda24d58e26157b8730ae5d010e0874195151b79
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c7047161a059432b43d4ff1a92e9c4d10dc01d51
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756934"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387022"
 ---
 # <a name="cstring-operations-relating-to-c-style-strings"></a>C stili dizelerle ilgili CString işlemleri
 
@@ -111,6 +111,6 @@ Biçimsel parametre bir sabit dize başvuru belirtebilirsiniz (diğer bir deyiş
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
+[Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [CString Bağımsız Değişken Geçirme](../atl-mfc-shared/cstring-argument-passing.md)
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bbb5bfb19d56ae41d743de795788961690f327b0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d6e507fbb352279d406861b7ae1b2cf29aaa943c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583422"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394913"
 ---
 # <a name="cropping-or-extending-an-entire-image-image-editor-for-icons"></a>Görüntünün Tümünü Kırpma veya Genişletme (Simgeler İçin Görüntü Düzenleyicisi)
 
@@ -46,5 +46,5 @@ Yok.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [Görüntüyü yeniden boyutlandırma](../windows/resizing-an-image-image-editor-for-icons.md)

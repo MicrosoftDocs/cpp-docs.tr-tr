@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6fc8d8100786f78d516bb5f880e4238b7e3a2388
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d2dfcf61ced958519e7255bd241d3c0ea911824e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611870"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408927"
 ---
 # <a name="eventsource"></a>event_source
 
@@ -45,7 +45,7 @@ Olay kaynağı oluşturur.
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*  
+*Türü*<br/>
 Sabit listesi aşağıdaki değerlerden biri:
 
 - `native` Yönetilmeyen C/C++ kodu için (yönetilmeyen sınıflar için varsayılan).
@@ -58,10 +58,10 @@ Sabit listesi aşağıdaki değerlerden biri:
     #include <atlcom.h>
     ```
 
-*optimize*  
+*optimize*<br/>
 Zaman *türü* olduğu `native`, belirtebilirsiniz `optimize=size`olduğunu depolamanın 4 bayt (en az) için tüm olayları bir sınıfta belirtmek için veya `optimize=speed` (4 olduğunu göstermek için varsayılan) * (olay sayısı) depolama baytı.
 
-*İşaretleme*  
+*İşaretleme*<br/>
 Zaman *türü* olduğu `native`, belirtebileceğiniz `decorate=false`, birleştirilmiş (.mrg) dosyasında genişletilmiş adının kapsayan sınıf adını içermemelidir belirtmek için. [/FX](../build/reference/fx-merge-injected-code.md) .mrg dosyaları oluşturmanıza olanak tanır. `decorate=false`, varsayılan değer, tam olarak nitelenmiş tür adlarını birleştirilmiş dosya sonuçlanıyor.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -88,9 +88,9 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Derleyici Öznitelikleri](../windows/compiler-attributes.md)  
-[event_receiver](../windows/event-receiver.md)  
-[__event](../cpp/event.md)  
-[__hook](../cpp/hook.md)  
-[__unhook](../cpp/unhook.md)  
+[Derleyici Öznitelikleri](../windows/compiler-attributes.md)<br/>
+[event_receiver](../windows/event-receiver.md)<br/>
+[__event](../cpp/event.md)<br/>
+[__hook](../cpp/hook.md)<br/>
+[__unhook](../cpp/unhook.md)<br/>
 [Sınıf Öznitelikleri](../windows/class-attributes.md)  

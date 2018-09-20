@@ -20,30 +20,32 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c484231eb87144a6546ff2b8b7061a5339820ee
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 63b21e4d7f40d87b35d2ea5650f86801294affaa
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33331080"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425723"
 ---
 # <a name="activation-verbs"></a>Etkinleştirme: Fiiller
-Bu makalede OLE rol birincil ve ikincil fiiller oyunda açıklanmaktadır [etkinleştirme](../mfc/activation-cpp.md).  
-  
- Genellikle, katıştırılmış bir öğeyi çift düzenlemek kullanıcının sağlar. Ancak, belirli öğeleri bu şekilde davranır değil. Örneğin, Ses Kaydedicisi uygulama ile oluşturulan bir öğeyi çift sunucu ayrı bir pencerede açılmaz; Bunun yerine, ses yürütür.  
-  
- Bu davranış fark Ses Kaydedicisi öğeleri farklı "birincil fiil." sahip nedeni Birincil fiil kullanıcı OLE öğeyi tıklattığında gerçekleştirilen bir eylemdir. OLE öğeleri çoğu türleri için birincil fiil öğesini oluşturan sunucusu başlatan Düzenle ' dir. Ses Kaydedicisi öğeleri gibi öğeleri bazı türleri birincil fiil Play içindir.  
-  
- OLE öğeleri türlerde yalnızca bir fiil destekler ve düzenleme en yaygın adrestir. Ancak, bazı türlerde öğeleri birden çok fiilleri destekler. Örneğin, Ses Kaydedicisi öğeleri destekler, ikincil bir fiil olarak düzenleyin.  
-  
- Sık kullanılan başka bir fiil Aç ' dir. Sunucu uygulaması ayrı bir pencerede başlatılır dışında açık fiili Düzenle için aynıdır. Kapsayıcı uygulama veya sunucu uygulaması yerinde etkinleştirme desteklemediğinde bu fiil kullanılmalıdır.  
-  
- Öğe seçildiğinde birincil fiil dışındaki tüm fiiller alt komutu aracılığıyla çağrılması gerekir. Bu alt öğe tarafından desteklenen tüm fiiller içerir ve genellikle tarafından sınırına *typename* **nesne** komutunu **Düzenle** menüsü. Hakkında bilgi için *typename* **nesne** komutu, makaleye bakın [menüler ve kaynaklar: kapsayıcı ekleme](../mfc/menus-and-resources-container-additions.md).  
-  
- Sunucu uygulamasının desteklediği fiiller Windows kayıt veritabanı'nda listelenir. Sunucu uygulamanızı Microsoft Foundation Class Kitaplığı ile yazılmışsa sunucusu başlatıldığında otomatik olarak tüm fiiller kaydeder. Aksi durumda, sunucu uygulamasının başlangıç aşamasında kaydetmeniz. Daha fazla bilgi için bkz: [kayıt](../mfc/registration.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkinleştirme](../mfc/activation-cpp.md)   
- [Kapsayıcıları](../mfc/containers.md)   
- [Sunucular](../mfc/servers.md)
+
+Bu makalede rol birincil ve ikincil fiilleri play ole'deki açıklanmaktadır [etkinleştirme](../mfc/activation-cpp.md).
+
+Genellikle, gömülü bir öğe çift düzenlemek kullanıcının sağlar. Ancak, bazı öğeler bu şekilde davranmayabilir. Örneğin, Ses Kaydedicisi uygulama ile oluşturduğunuz bir öğeye çift sunucu ayrı bir pencerede açmaz; Bunun yerine, ses çalar.
+
+Ses Kaydedicisi'ni öğelerin farklı "birincil fiil." bulunduğunu bu davranışı fark sebebi Birincil fiil kullanıcı OLE öğesini tıkladığında gerçekleşen eylemi var. OLE öğeleri çoğu türleri için birincil fiil öğeyi oluşturan sunucu başlatan Düzenle ' dir. Ses Kaydedicisi'ni öğeleri gibi öğeleri bazı türleri birincil fiil Play içindir.
+
+Yalnızca bir fiil türlerde OLE öğeleri destekler ve en yaygın bir düzen olduğunu. Ancak, bazı türleri öğeleri birden çok fiilleri destekler. Örneğin, Ses Kaydedicisi öğeyi destekler, ikincil bir fiili düzenleyin.
+
+Sık kullanılan başka bir fiil, açık olur. Sunucu uygulaması ayrı bir pencerede başlatılan dışında açık fiili düzenleme için aynıdır. Kapsayıcı uygulaması ya da sunucu uygulaması yerinde etkinleştirme desteklemediğinde bu fiili kullanılmalıdır.
+
+Öğe seçildiğinde birincil fiil dışındaki tüm fiiller alt menü komutu aracılığıyla çağrılması gerekir. Bu alt öğe tarafından desteklenen tüm fiiller içerir ve genellikle tarafından ulaşıldığında *typename* **nesne** komutunu **Düzenle** menüsü. Hakkında bilgi için *typename* **nesne** komutu, makaleye göz atın [menüler ve kaynaklar: kapsayıcı ekleme](../mfc/menus-and-resources-container-additions.md).
+
+Windows kayıt defteri veritabanındaki sunucu uygulaması destekler fiilleri listelenir. Sunucu uygulamanızı Microsoft Foundation Class Kitaplığı ile yazılmışsa, sunucu yeniden başlatıldığında, otomatik olarak tüm fiiller kaydeder. Aksi durumda, sunucu uygulamasının başlangıç aşamasında kaydolmalıdır. Daha fazla bilgi için bkz [kayıt](../mfc/registration.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Etkinleştirme](../mfc/activation-cpp.md)<br/>
+[Kapsayıcılar](../mfc/containers.md)<br/>
+[Sunucular](../mfc/servers.md)
 

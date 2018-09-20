@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6f24c01c225cf971592083162fbebddd99700814
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2e6d5d832cd051c8e527b1d161158483d8fcaed1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209120"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46428765"
 ---
 # <a name="pragma"></a>pragması
 
@@ -38,7 +38,7 @@ Belirtilen dizeyi tırnak işaretleri kullanmanıza gerek kalmadan oluşturulan 
 
 ### <a name="parameters"></a>Parametreler
 
-*pragma_statement*  
+*pragma_statement*<br/>
 Oluşturulan .idl dosyasına gitmek istiyorsanız pragması.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -76,6 +76,6 @@ __interface A
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)<br/>
 [pack](../preprocessor/pack.md)  

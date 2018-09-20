@@ -17,18 +17,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9adf6a585771336de9fb33abbebdd6bab97383ed
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4b7c88c5d12f56318bbb37a825e28c2bfcbc132d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341767"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46418183"
 ---
 # <a name="debugging-and-exception-classes"></a>Hata Ayıklama ve Özel Durum Sınıfları
-Bu sınıfların dinamik bellek ayırma hata ayıklama ve burada işlev için burada Yakalanan özel durum özel durum bilgilerini işlevinden geçirme için destek sağlar.  
-  
- Sınıfları kullanan [CDumpContext](../mfc/reference/cdumpcontext-class.md) ve [CMemoryState](../mfc/reference/cmemorystate-structure.md) açıklandığı gibi hata ayıklama ile yardımcı olmak için geliştirme sırasında [hata ayıklama MFC uygulamaları](/visualstudio/debugger/mfc-debugging-techniques). Kullanım [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) makalesinde açıklandığı gibi herhangi bir nesne sınıfının çalışma zamanında belirlemek için [çalışma zamanı sınıf bilgilerine erişme](../mfc/accessing-run-time-class-information.md). Çerçeve kullanır `CRuntimeClass` belirli bir sınıfın nesnelerini dinamik olarak oluşturmak için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Bu sınıflar, dinamik bellek ayırma hatalarını ayıklama ve özel durum bilgilerini işlevden burada işleve burada Yakalanan özel durum geçirme için destek sağlar.
+
+Sınıfları kullanan [CDumpContext](../mfc/reference/cdumpcontext-class.md) ve [CMemoryState](../mfc/reference/cmemorystate-structure.md) açıklandığı gibi hata ayıklama ile yardımcı olmak için geliştirme sırasında [hata ayıklama MFC uygulamaları](/visualstudio/debugger/mfc-debugging-techniques). Kullanım [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) makalesinde açıklandığı gibi çalışma zamanında, herhangi bir nesnenin sınıfını belirlemek için [çalışma süresi sınıf bilgilerine erişme](../mfc/accessing-run-time-class-information.md). Framework kullanan `CRuntimeClass` belirli bir sınıfın nesnelerini dinamik olarak oluşturmak için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

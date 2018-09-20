@@ -14,110 +14,115 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f64acda5fe11cae3a40e4affc403ebb61d876de
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 8f6a57495fdd5084b3ac329f45aa816eea9274f2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33693812"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46436201"
 ---
 # <a name="synchronization-data-structures"></a>Eşitleme Veri Yapıları
-Eşzamanlılık Çalışma zamanı birden çok iş parçacığı tarafından paylaşılan verilere erişim eşitlemenize olanak birkaç veri yapılarını sağlar. Bu veri yapıları seyrek değiştirmek veri paylaşılan olduğunda yararlıdır. Eşitleme nesnesi, örneğin, önemli bir bölümü, paylaşılan kaynağı kullanılabilir hale gelene kadar beklenecek başka bir iş parçacığı neden olur. Bu nedenle, sık kullanılan veri erişimi eşitlemek için böyle bir nesnenin kullanırsanız, uygulamanızda ölçeklenebilirlik kaybedebilir. [Paralel Desen kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) sağlar [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) çeşitli iş parçacıkları ve eşitleme gerek kalmadan görevler arasında kaynak paylaşımı sağlayan sınıf. Hakkında daha fazla bilgi için `combinable` sınıfı için bkz: [paralel kapsayıcılar ve nesneler](../../parallel/concrt/parallel-containers-and-objects.md).  
-  
-##  <a name="top"></a> Bölümler  
- Bu konuda aşağıdaki zaman uyumsuz ileti bloğu türleri ayrıntılı açıklanmıştır:  
-  
--   [critical_section](#critical_section)  
-  
--   [reader_writer_lock](#reader_writer_lock)  
-  
--   [scoped_lock ve scoped_lock_read](#scoped_lock)  
-  
--   [event](#event)  
-  
-##  <a name="critical_section"></a> critical_section  
- [Concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) sınıfı, bunları preempting yerine diğer görevlere verir işbirlikçi karşılıklı dışlama nesneyi temsil eder. Kritik bölümler, birden çok iş parçacığı özel okuma ve yazma erişimi Paylaşılan verilere gerektiğinde faydalıdır.  
 
- `critical_section` Yeniden girme olmayan bir sınıftır. [Concurrency::critical_section::lock](reference/critical-section-class.md#lock) yöntemi türünde bir özel durum atar [concurrency::improper_lock](../../parallel/concrt/reference/improper-lock-class.md) kilidi zaten sahip iş parçacığı tarafından çağrıldıklarında.  
+Eşzamanlılık Çalışma zamanı birden fazla iş parçacığından Paylaşılan verilere erişimi eşitleme olanak tanıyan çeşitli veri yapıları sağlar. Bu veri yapıları, paylaşılan sık değişiklik verilerine sahip olduğunda yararlıdır. Bir eşitleme nesnesi olan kritik bölümü gibi diğer iş parçacıklarını paylaşılan kaynağı kullanılabilir hale gelene kadar beklenecek neden olur. Bu nedenle, sık kullanılan veri erişimi eşitlemek için böyle bir nesnenin kullanırsanız, uygulamanızda ölçeklenebilirlik kaybedebilir. [Paralel desenler kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) sağlar [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) sınıfını, bir kaynağın birden çok iş parçacığı veya eşitleme gerek kalmadan görevler arasında paylaşmanıza olanak tanır. Hakkında daha fazla bilgi için `combinable` sınıfı [paralel kapsayıcılar ve nesneler](../../parallel/concrt/parallel-containers-and-objects.md).
 
+##  <a name="top"></a> Bölümleri
 
-  
-### <a name="methods-and-features"></a>Yöntemleri ve özellikleri  
- Aşağıdaki tabloda tarafından tanımlanan önemli yöntemleri gösterir `critical_section` sınıfı.  
-  
-|Yöntem|Açıklama|  
-|------------|-----------------|  
-|[lock](reference/critical-section-class.md#lock)|Kritik bölüm edinir. Kilit alır kadar çağıran bağlamını engeller.|  
-|[try_lock](reference/critical-section-class.md#try_lock)|Kritik bölüm almaya çalışır, ancak değil engeller.|  
-|[kilidini aç](reference/critical-section-class.md#unlock)|Kritik bölüm serbest bırakır.|  
-  
- [[Üst](#top)]  
-  
-##  <a name="reader_writer_lock"></a> reader_writer_lock  
- [Concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) sınıfı, iş parçacığı okuma/yazma işlemleri Paylaşılan verilere sağlar. Birden çok iş parçacığı bir paylaşılan kaynağa eşzamanlı okuma erişimi gerektiren ama bu paylaşılan kaynağa nadiren yazma Okuyucu/Yazıcı kilitleri kullanın. Bu sınıf, herhangi bir zamanda bir nesneye yalnızca bir iş parçacığı yazma erişim sağlar.  
-  
- `reader_writer_lock` Sınıfı gerçekleştirebilir daha iyi `critical_section` çünkü sınıf bir `critical_section` nesne eşzamanlı okuma erişimi engelleyen bir paylaşılan kaynağa özel erişim edinir.  
-  
- Gibi `critical_section` sınıfı, `reader_writer_lock` sınıfı, bunları preempting yerine diğer görevlere verir işbirlikçi karşılıklı dışlama nesneyi temsil eder.  
-  
- Paylaşılan kaynağa yazmalısınız bir iş parçacığı bir Okuyucu/Yazıcı kilit alır, yazıcı kilidi serbest kadar kaynak da erişmesi gereken başka bir iş parçacığı engellenir. `reader_writer_lock` Sınıf örneği, bir *yazma tercih* bekleme okuyucular engelini kaldırır önce bekleme yazıcılarının engelini kaldırır kilit kilidinin.  
-  
- Gibi `critical_section` sınıfı, `reader_writer_lock` yeniden girme olmayan bir sınıftır. [Concurrency::reader_writer_lock::lock](reference/reader-writer-lock-class.md#lock) ve [concurrency::reader_writer_lock::lock_read](reference/reader-writer-lock-class.md#lock_read) yöntemleri throw türünde bir özel durum `improper_lock` zaten sahip olan bir iş parçacığı tarafından çağrıldıklarında Kilit.  
+Bu konuda ayrıntılı aşağıdaki zaman uyumsuz ileti blok türleri açıklanmaktadır:
 
+- [critical_section](#critical_section)
 
-  
+- [reader_writer_lock](#reader_writer_lock)
+
+- [scoped_lock ve scoped_lock_read](#scoped_lock)
+
+- [event](#event)
+
+##  <a name="critical_section"></a> critical_section
+
+[Concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) sınıfı temsil eder bir işbirlikçi karşılıklı dışlama nesnesini bunları öncelik verme yerine diğer görevlere verir. Kritik bölümler birden çok iş parçacığı özel okuma ve yazma erişimi Paylaşılan verilere gerektiğinde kullanışlıdır.
+
+`critical_section` Reentrant olmayan bir sınıftır. [Concurrency::critical_section::lock](reference/critical-section-class.md#lock) yöntemi türünde bir özel durum atar [concurrency::improper_lock](../../parallel/concrt/reference/improper-lock-class.md) kilidi zaten sahip olan bir iş parçacığı tarafından çağrılırsa.
+
+### <a name="methods-and-features"></a>Yöntemleri ve özellikleri
+
+Aşağıdaki tabloda tanımlanır önemli yöntemler gösterilmektedir `critical_section` sınıfı.
+
+|Yöntem|Açıklama|
+|------------|-----------------|
+|[lock](reference/critical-section-class.md#lock)|Kritik bölüm devralır. Kilit alması kadar arama bağlamı engeller.|
+|[try_lock](reference/critical-section-class.md#try_lock)|Kritik bölüm almaya çalışır ancak engelleme yapmadığından.|
+|[Kilit açma](reference/critical-section-class.md#unlock)|Kritik bölüm serbest bırakır.|
+
+[[Üst](#top)]
+
+##  <a name="reader_writer_lock"></a> reader_writer_lock
+
+[Concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) sınıfı, Paylaşılan verilere iş parçacığı açısından güvenli okuma/yazma işlemleri sağlar. Birden çok iş parçacığı paylaşılan bir kaynağa eş zamanlı okuma erişimi gerektirir, ancak paylaşılan bir kaynağa nadiren yazma Okuyucu/Yazıcı kilitleri kullanın. Bu sınıf, bir nesneye herhangi bir zamanda yalnızca bir iş parçacığı yazma erişim sağlar.
+
+`reader_writer_lock` Sınıfı gerçekleştirebilir daha iyi `critical_section` çünkü bir `critical_section` nesne eş zamanlı okuma erişimi engelleyen bir paylaşılan kaynağa özel erişim alır.
+
+Gibi `critical_section` sınıfı `reader_writer_lock` sınıfı temsil eder bir işbirlikçi karşılıklı dışlama nesnesini bunları öncelik verme yerine diğer görevlere verir.
+
+Paylaşılan bir kaynağa yazmanız gereken bir iş parçacığı bir Okuyucu/Yazıcı kilidi alır, ayrıca kaynağa erişmesi gereken başka iş parçacıklarının yazıcı kilidi serbest bırakır kadar engellenir. `reader_writer_lock` Sınıfı, örneği bir *yazma tercih* önce bekleyen okuyucular kaldırır, bekleme yazıcılar engellemesinin kaldırıldığı bir kilidi kilidinin süresidir.
+
+Gibi `critical_section` sınıfı `reader_writer_lock` reentrant olmayan bir sınıftır. [Concurrency::reader_writer_lock::lock](reference/reader-writer-lock-class.md#lock) ve [concurrency::reader_writer_lock::lock_read](reference/reader-writer-lock-class.md#lock_read) yöntemleri türünde bir özel durum throw `improper_lock` sahibi zaten bir iş parçacığı tarafından çağrılırsa Kilit.
+
 > [!NOTE]
->  Çünkü `reader_writer_lock` sınıfı yeniden girme olmayan, salt okunur kilit Okuyucu/Yazıcı kilit yükseltme veya bir salt okunur kilidi Okuyucu/Yazıcı kilit düşürmek. Bu işlemlerin gerçekleştirme belirtilmeyen davranışı üretir.  
-  
-### <a name="methods-and-features"></a>Yöntemleri ve özellikleri  
- Aşağıdaki tabloda tarafından tanımlanan önemli yöntemleri gösterir `reader_writer_lock` sınıfı.  
-  
-|Yöntem|Açıklama|  
-|------------|-----------------|  
-|[lock](reference/reader-writer-lock-class.md#lock)|Okuma/yazma erişimi kilidi edinir.|  
-|[try_lock](reference/reader-writer-lock-class.md#try_lock)|Okuma/yazma erişimi kilidi almaya çalışır, ancak değil engeller.|  
-|[lock_read](reference/reader-writer-lock-class.md#lock_read)|Salt okunur erişim kilidi edinir.|  
-|[try_lock_read](reference/reader-writer-lock-class.md#try_lock_read)|Kilit salt okunur erişim kazanmak çalışır, ancak değil engeller.|  
-|[kilidini aç](reference/reader-writer-lock-class.md#unlock)|Kilidi serbest bırakır.|  
-  
- [[Üst](#top)]  
-  
-##  <a name="scoped_lock"></a> scoped_lock ve scoped_lock_read  
- `critical_section` Ve `reader_writer_lock` sınıfları karşılıklı dışlama nesneleriyle çalışma biçimini basitleştirmek iç içe geçmiş yardımcı sınıfları sağlar. Bu yardımcı sınıfları olarak da bilinir *kilitleri kapsamlı*.  
-  
- `critical_section` Sınıfı içeren [concurrency::critical_section::scoped_lock](reference/critical-section-class.md#critical_section__scoped_lock_class) sınıfı. Sağlanan erişim Oluşturucusu edinir `critical_section` nesne; söz konusu nesne yıkıcı sürümleri erişimi. `reader_writer_lock` Sınıfı içeren [concurrency::reader_writer_lock::scoped_lock](reference/reader-writer-lock-class.md#scoped_lock_class) benzer sınıfı `critical_section::scoped_lock`, sağlanan yazma erişimini yönetir ancak bu `reader_writer_lock` nesnesi. `reader_writer_lock` Sınıfı ayrıca içerir [concurrency::reader_writer_lock::scoped_lock_read](reference/reader-writer-lock-class.md#scoped_lock_read_class) sınıfı. Bu sınıf sağlanan okuma erişimi yöneten `reader_writer_lock` nesnesi.  
+>  Çünkü `reader_writer_lock` sınıftır reentrant olmayan, bir salt okunur kilidi için bir Okuyucu/Yazıcı kilidi yükseltme veya düşürme bir salt okunur kilidi için bir Okuyucu/Yazıcı kilidi. Bu işlemlerin gerçekleştirme belirtilmeyen bir davranış üretir.
 
-  
- Kapsamlı kilitleri sağlayan birkaç avantaj ile çalışırken `critical_section` ve `reader_writer_lock` el ile nesneleri. Genellikle, kapsamlı bir kilit yığında ayırın. Bunu bozulduğunda kapsamlı bir kilidi karşılıklı dışlama nesneye erişimi otomatik olarak açar; Bu nedenle, el ile temel alınan nesnenin kilidini açma değil. Birden çok işlevi içeriyor gerektiğinde bu faydalıdır `return` deyimleri. Kapsamlı kilitleri de uyumlu özel kod yazmanıza yardımcı olabilir. Zaman bir `throw` deyimi neden bırakma için yığın, tüm etkin kapsamlı LOCK yok Edicisi adı verilir ve bu nedenle karşılıklı dışlama nesne her zaman doğru serbest.  
-  
+### <a name="methods-and-features"></a>Yöntemleri ve özellikleri
+
+Aşağıdaki tabloda tanımlanır önemli yöntemler gösterilmektedir `reader_writer_lock` sınıfı.
+
+|Yöntem|Açıklama|
+|------------|-----------------|
+|[lock](reference/reader-writer-lock-class.md#lock)|Okuma/yazma erişimi kilidi alır.|
+|[try_lock](reference/reader-writer-lock-class.md#try_lock)|Kilit okuma/yazma erişim kazanmak çalışır, ancak engelleme yapmadığından.|
+|[lock_read](reference/reader-writer-lock-class.md#lock_read)|Salt okunur kilidi alır.|
+|[try_lock_read](reference/reader-writer-lock-class.md#try_lock_read)|Kilit salt okunur erişim kazanmak çalışır, ancak engelleme yapmadığından.|
+|[Kilit açma](reference/reader-writer-lock-class.md#unlock)|Kilidi serbest bırakır.|
+
+[[Üst](#top)]
+
+##  <a name="scoped_lock"></a> scoped_lock ve scoped_lock_read
+
+`critical_section` Ve `reader_writer_lock` sınıfları karşılıklı dışlama nesneleriyle çalışma biçiminizi basitleştirin. iç içe geçmiş yardımcı sınıfları sağlar. Bu yardımcı sınıfları olarak bilinen *kilit kapsamı*.
+
+`critical_section` Sınıfı içeren [concurrency::critical_section::scoped_lock](reference/critical-section-class.md#critical_section__scoped_lock_class) sınıfı. Erişim için sağlanan Oluşturucu edinme `critical_section` nesne; o nesnenin yok Edicisi yayınlar erişim. `reader_writer_lock` Sınıfı içeren [concurrency::reader_writer_lock::scoped_lock](reference/reader-writer-lock-class.md#scoped_lock_class) benzer sınıfı `critical_section::scoped_lock`sağlanan yazma erişimi yönetir, dışında `reader_writer_lock` nesne. `reader_writer_lock` Sınıfı da içeren [concurrency::reader_writer_lock::scoped_lock_read](reference/reader-writer-lock-class.md#scoped_lock_read_class) sınıfı. Bu sınıf sağlanan okuma erişimini yönetir `reader_writer_lock` nesne.
+
+Kapsamlı kilit ile çalışırken çeşitli avantajlar sağlayan `critical_section` ve `reader_writer_lock` el ile nesneleri. Genellikle, kapsamlı bir kilit yığında ayırın. Bunu kaldırıldığında kapsamlı bir kilit, karşılıklı dışlama nesnesine erişimi otomatik olarak serbest bırakır; Bu nedenle, el ile temel alınan nesnede kilidini değil. Birden çok işlevi içeriyor gerektiğinde bu faydalıdır `return` deyimleri. Kapsamlı kilitleri da özel durum-güvenli kod yazmanıza yardımcı olabilir. Olduğunda bir `throw` deyimi neden olan yığının geriye doğru izlemek, herhangi bir etkin kapsamlı kilidi yok Edicisi çağrılır ve bu nedenle karşılıklı dışlama nesne her zaman doğru bir şekilde serbest.
+
 > [!NOTE]
->  Kullandığınızda `critical_section::scoped_lock`, `reader_writer_lock::scoped_lock`, ve `reader_writer_lock::scoped_lock_read` sınıfları değil el ile serbest karşılıklı dışlama nesnesini erişimi. Bu, çalışma zamanı'ı geçersiz bir durumda koyabilirsiniz.  
-  
-##  <a name="event"></a> Olay  
- [Concurrency::event](../../parallel/concrt/reference/event-class.md) sınıfı durumu sinyal ya da işareti olmayan bir eşitleme nesnesi temsil eder. Paylaşılan verilere erişimi korumanın amacı olan, kritik bölümler gibi eşitleme nesneleri aksine akışını olayları eşitleyin.  
-  
- `event` Sınıfı, başka bir görev için iş bir görev tamamlandığında yararlıdır. Örneğin, bir görev, verileri bir ağ bağlantısı veya bir dosyadan okuma izni olduğunu başka bir görev sinyal.  
-  
-### <a name="methods-and-features"></a>Yöntemleri ve özellikleri  
- Aşağıdaki tabloda birkaç tarafından tanımlanan önemli yöntemleri gösterilmektedir `event` sınıfı.  
-  
-|Yöntem|Açıklama|  
-|------------|-----------------|  
-|[bekleme](reference/event-class.md#wait)|Olay işaret hale bekler.|  
-|[set](reference/event-class.md#set)|Olay iş durumuna ayarlar.|  
-|[Sıfırla](reference/event-class.md#reset)|Olay işaret olmayan durumuna ayarlar.|  
-|[wait_for_multiple](reference/event-class.md#wait_for_multiple)|Birden çok olay işaret hale bekler.|  
+>  Kullanırken `critical_section::scoped_lock`, `reader_writer_lock::scoped_lock`, ve `reader_writer_lock::scoped_lock_read` sınıfları değil el ile sürüm temel alınan karşılıklı dışlama nesnesine erişim. Bu, çalışma zamanı geçersiz bir durumda koyabilirsiniz.
 
-  
-### <a name="example"></a>Örnek  
- Nasıl kullanılacağını gösteren bir örnek için `event` sınıfı için bkz: [eşitleme veri yapılarını Windows API karşılaştırma](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md).  
-  
- [[Üst](#top)]  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [Eşitleme Veri Yapılarını Windows API ile Karşılaştırma](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md)  
- Eşitleme veri yapılarını Windows API tarafından sağlanan davranışını karşılaştırır.  
-  
- [Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)  
- Paralel Programlama basitleştiren ve ilgili konulara bağlantılar içerir eşzamanlılık çalışma, açıklar.
+##  <a name="event"></a> Olay
+
+[Concurrency::event](../../parallel/concrt/reference/event-class.md) sınıf durumu sinyal ya da verilmemiş bir eşitleme nesnesi temsil eder. Paylaşılan verilere erişimi korumanın amacı olan, kritik bölüm gibi eşitleme nesneleri aksine, yürütmenin akışını olayları eşitleyin.
+
+`event` Sınıfı, başka bir görev için iş bir görev tamamlandığında yararlıdır. Örneğin, bir görev, verileri bir ağ bağlantısı veya bir dosyadan okuma izni olduğunu başka bir görevi sinyal.
+
+### <a name="methods-and-features"></a>Yöntemleri ve özellikleri
+
+Aşağıdaki tabloda çeşitli tarafından tanımlanan önemli yöntemler gösterilmektedir `event` sınıfı.
+
+|Yöntem|Açıklama|
+|------------|-----------------|
+|[bekleme](reference/event-class.md#wait)|Olayın sinyal haline bekler.|
+|[set](reference/event-class.md#set)|Olayın sinyal durumuna ayarlar.|
+|[Sıfırlama](reference/event-class.md#reset)|Olay verilmemiş durumuna ayarlar.|
+|[wait_for_multiple](reference/event-class.md#wait_for_multiple)|Birden fazla olayın sinyal haline bekler.|
+
+### <a name="example"></a>Örnek
+
+Nasıl kullanılacağını gösteren bir örnek için `event` sınıfı [eşitleme veri yapılarını Windows API ile karşılaştırma](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md).
+
+[[Üst](#top)]
+
+## <a name="related-sections"></a>İlgili Bölümler
+
+[Eşitleme Veri Yapılarını Windows API ile Karşılaştırma](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md)<br/>
+Eşitleme veri yapılarını Windows API'sı tarafından sağlanan davranışını karşılaştırır.
+
+[Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)<br/>
+Eşzamanlılık paralel programlama basitleştirir ve ilgili konulara bağlantılar içeren çalışma zamanı, açıklar.
 

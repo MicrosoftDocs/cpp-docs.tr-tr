@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b7e4976065d32a2f88550e5f89fc464da2dbc00e
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: ae58ae7cf09257b399fd21d7c34890b829394b98
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316711"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430598"
 ---
 # <a name="colors-window-image-editor-for-icons"></a>Renkler Penceresi (Simgeler İçin Görüntü Düzenleyicisi)
 
@@ -50,8 +50,8 @@ Yok.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Renkler penceresini görüntüleme veya gizleme](../windows/displaying-or-hiding-the-colors-window-image-editor-for-icons.md)  
-[Cihaz görüntülerinde saydam veya ters bölgeler oluşturma](../windows/creating-transparent-or-inverse-regions-in-device-images.md)  
-[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)  
-[Özel Renk Seçici iletişim kutusu](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)  
+[Renkler penceresini görüntüleme veya gizleme](../windows/displaying-or-hiding-the-colors-window-image-editor-for-icons.md)<br/>
+[Cihaz görüntülerinde saydam veya ters bölgeler oluşturma](../windows/creating-transparent-or-inverse-regions-in-device-images.md)<br/>
+[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[Özel Renk Seçici iletişim kutusu](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)<br/>
 [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)

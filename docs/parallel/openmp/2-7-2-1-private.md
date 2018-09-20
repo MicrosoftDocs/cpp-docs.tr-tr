@@ -12,30 +12,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 25ada9c89243ccc23201eb1939337068e77263c7
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d06650a784b5b59405f446f4701918393b21fa3b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687471"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387243"
 ---
 # <a name="2721-private"></a>2.7.2.1 private
-`private` Yan tümcesi bir ekip her iş parçacığı için özel olarak değişken listesinde değişkenleri bildirir. Söz dizimi `private` yan tümcesi aşağıdaki gibidir:  
-  
-```  
-private(variable-list)  
-```  
-  
- Belirtilen değişken davranışını bir `private` yan tümcesi aşağıdaki gibidir. Otomatik depolama süre ile yeni bir nesne için yapı tahsis edilir. Yeni nesne hizalamasını ve boyutu değişkeni türüne göre belirlenir. Bu ayırma Ekipteki her bir iş parçacığı için bir kez gerçekleşir ve varsayılan bir oluşturucu sınıfı için bir nesne gerekirse çağrılır; Aksi takdirde ilk belirsiz değerdir.  Değişkeni tarafından başvurulan özgün nesne yapı girişte belirsiz bir değere sahip, yapı dinamik kapsam içinde değiştirilmemelidir ve yapı gelen Çıkışta belirsiz bir değere sahip.  
-  
- Yönerge yapı sözcük kapsamını iş parçacığı tarafından ayrılan yeni özel nesne değişkenine başvuruyor.  
-  
- Kısıtlamaları `private` yan tümcesi aşağıdaki gibidir:  
-  
--   Belirtilen bir sınıf türü sahip bir değişken bir `private` yan tümcesi, erişilebilir, anlaşılır varsayılan oluşturucusu olmalıdır.  
-  
--   Belirtilen değişken bir `private` yan tümcesi değil olmalıdır bir **const**-yazın bir sınıf olmadıkça türü tam bir `mutable` üye.  
-  
--   Belirtilen değişken bir `private` yan tümcesi eksik bir türü veya bir başvuru türü değil olmalıdır.  
-  
--   Görünen değişkenleri `reduction` yan tümcesinde bir **paralel** yönergesi belirtilemez bir `private` paralel yapı bağlar iş paylaşım bir yönergesi yan tümcesi.
+
+`private` Yan tümcesi bir takım içindeki her iş parçacığı için özel olarak değişken listesi değişkenlerinde bildirir. Söz dizimi `private` yan tümcesi şu şekildedir:
+
+```
+private(variable-list)
+```
+
+Belirtilen değişken davranışını bir `private` yan tümcesi aşağıdaki gibidir. Otomatik depolama süresine sahip yeni bir nesne için yapı ayrılır. Boyutu ve hizalama yeni nesnenin değişken türüne göre belirlenir. Bu ayırma, takım içindeki her iş parçacığı için bir kez gerçekleşir ve sınıf nesnesi için gerekirse bir varsayılan oluşturucu çağrılır. Aksi takdirde ilk belirsiz değerdir.  Değişkeni tarafından başvurulan özgün nesne girişte yapısı için belirsiz bir değere sahip, yapı dinamik kapsam içinde değiştirilmemelidir ve yapı gelen Çıkışta belirsiz bir değere sahip.
+
+Yönerge yapısı sözcük kapsamını, iş parçacığı tarafından ayrılan yeni özel nesne değişkeni başvuruyor.
+
+Kısıtlamaları `private` yan tümcesi aşağıdaki gibidir:
+
+- Belirtilen sınıf türüne sahip bir değişken bir `private` yan tümcesi bir erişilebilir, açık bir varsayılan oluşturucusu olmalıdır.
+
+- Belirtilen bir değişken bir `private` yan tümcesi değil olmalıdır bir **const**-yetkili türü tür bir sınıf sahip olmadığı sürece bir `mutable` üyesi.
+
+- Belirtilen bir değişken bir `private` yan tümcesi eksik bir türü veya bir başvuru türü değil olmalıdır.
+
+- Görünen değişkenleri `reduction` yan tümcesi bir **paralel** yönergesi belirtilemez bir `private` iş paylaşım için paralel yapı bağlayan bir yönerge yan tümcesi.

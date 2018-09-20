@@ -23,266 +23,280 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 835c3a0473ffc68a2b1e32780fc2eb376f0ceee6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ac3072e3fafe317e0517c36b375259c3c98a1a41
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118157"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46438489"
 ---
 # <a name="completionfuture-class"></a>completion_future Sınıfı
-Gelecekteki karşılık gelen bir C++ AMP zaman uyumsuz işlemi temsil eder.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```  
-class completion_future;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[completion_future Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `completion_future` sınıfı.|  
-|[~ completion_future yok Edicisi](#dtor)|Yok eder `completion_future` nesne.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[get](#get)|İlişkili zaman uyumsuz işlem tamamlanana kadar bekler.|  
-|[Ardından](#then)|Bir geri çağırma işlevi nesnesine zincir `completion_future` ilişkili zaman uyumsuz işlemin yürütülmesi tamamlandığında yürütülecek nesne.|  
-|[to_task](#to_task)|Döndürür bir `task` nesnesini ilişkili asenkron işleme karşı.|  
-|[valid](#valid)|Nesnenin bir zaman uyumsuz işlemle ilişkili olup olmadığını gösteren bir Boole değeri alır.|  
-|[bekleme](#wait)|İlişkili zaman uyumsuz işlem tamamlanıncaya kadar engeller.|  
-|[wait_for](#wait_for)|İlişkili zaman uyumsuz işlem tamamlanıncaya kadar engeller ya da tarafından belirlenen süre `_Rel_time` geçti.|  
-|[wait_until](#wait_until)|İlişkili zaman uyumsuz işlem tamamlanıncaya kadar veya geçerli saati tarafından belirtilen değeri aşana kadar engeller `_Abs_time`.|  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[işleç std::shared_future\<void >](#operator_shared_future)|Örtük olarak dönüştürür `completion_future` nesnesini bir `std::shared_future` nesne.|  
-|[operator=](#operator_eq)|Belirtilen içeriğini kopyalar `completion_future` bu nesne içine.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `completion_future`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** amprt.h  
-  
- **Namespace:** eşzamanlılık  
 
+Gelecekteki karşılık gelen bir C++ AMP zaman uyumsuz işlemi temsil eder.
 
-## <a name="ctor"></a> completion_future 
+### <a name="syntax"></a>Sözdizimi
 
-Yeni bir örneğini başlatır `completion_future` sınıfı.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```  
-completion_future();  
-  
-completion_future(  
-    const completion_future& _Other );  
-  
-completion_future(  
-    completion_future&& _Other );  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+class completion_future;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[completion_future Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `completion_future` sınıfı.|
+|[~ completion_future yok Edicisi](#dtor)|Yok eder `completion_future` nesne.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[get](#get)|İlişkili zaman uyumsuz işlem tamamlanana kadar bekler.|
+|[Ardından](#then)|Bir geri çağırma işlevi nesnesine zincir `completion_future` ilişkili zaman uyumsuz işlemin yürütülmesi tamamlandığında yürütülecek nesne.|
+|[to_task](#to_task)|Döndürür bir `task` nesnesini ilişkili asenkron işleme karşı.|
+|[valid](#valid)|Nesnenin bir zaman uyumsuz işlemle ilişkili olup olmadığını gösteren bir Boole değeri alır.|
+|[bekleme](#wait)|İlişkili zaman uyumsuz işlem tamamlanıncaya kadar engeller.|
+|[wait_for](#wait_for)|İlişkili zaman uyumsuz işlem tamamlanıncaya kadar engeller ya da tarafından belirlenen süre `_Rel_time` geçti.|
+|[wait_until](#wait_until)|İlişkili zaman uyumsuz işlem tamamlanıncaya kadar veya geçerli saati tarafından belirtilen değeri aşana kadar engeller `_Abs_time`.|
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[işleç std::shared_future\<void >](#operator_shared_future)|Örtük olarak dönüştürür `completion_future` nesnesini bir `std::shared_future` nesne.|
+|[operator=](#operator_eq)|Belirtilen içeriğini kopyalar `completion_future` bu nesne içine.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`completion_future`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** amprt.h
+
+**Namespace:** eşzamanlılık
+
+## <a name="ctor"></a> completion_future
+
+Yeni bir örneğini başlatır `completion_future` sınıfı.
+
+### <a name="syntax"></a>Sözdizimi
+
+```
+completion_future();
+
+completion_future(
+    const completion_future& _Other );
+
+completion_future(
+    completion_future&& _Other );
+```
+
+### <a name="parameters"></a>Parametreler
+
 *_Diğer*<br/>
-`completion_future` Kopyalamak veya taşımak için nesne.  
-  
-### <a name="overloads-list"></a>Aşırı yükler listesi  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`completion_future();`|Yeni bir örneğini başlatır `completion_future` sınıfı|  
-|`completion_future(const completion_future& _Other);`|Yeni bir örneğini başlatır `completion_future` bir oluşturucu kopyalayarak sınıfı.|  
-|`completion_future(completion_future&& _Other);`|Yeni bir örneğini başlatır `completion_future` bir oluşturucu taşıyarak sınıfı.|  
-  
-## <a name="get"></a> Al 
+`completion_future` Kopyalamak veya taşımak için nesne.
 
-İlişkili zaman uyumsuz işlem tamamlanana kadar bekler. Bir zaman uyumsuz işlemi sırasında karşılaşılan depolanan özel durum oluşturur.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```  
-void get() const;  
-```  
-  
-## <a name="operator_shared_future"></a> işleç std::shared_future<void> 
+### <a name="overloads-list"></a>Aşırı yükler listesi
 
-Örtük olarak dönüştürür `completion_future` nesnesini bir `std::shared_future` nesne.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```  
-operator std::shared_future<void>() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Bir `std::shared_future` nesne.  
-  
-## <a name="operator_eq"></a> işleç = 
+|Ad|Açıklama|
+|----------|-----------------|
+|`completion_future();`|Yeni bir örneğini başlatır `completion_future` sınıfı|
+|`completion_future(const completion_future& _Other);`|Yeni bir örneğini başlatır `completion_future` bir oluşturucu kopyalayarak sınıfı.|
+|`completion_future(completion_future&& _Other);`|Yeni bir örneğini başlatır `completion_future` bir oluşturucu taşıyarak sınıfı.|
 
-Belirtilen içeriğini kopyalar `completion_future` bu nesne içine.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```  
-completion_future&  operator= (const completion_future& _Other );    
-completion_future&  operator= (completion_future&& _Other );  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+## <a name="get"></a> Al
+
+İlişkili zaman uyumsuz işlem tamamlanana kadar bekler. Bir zaman uyumsuz işlemi sırasında karşılaşılan depolanan özel durum oluşturur.
+
+### <a name="syntax"></a>Sözdizimi
+
+```
+void get() const;
+```
+
+## <a name="operator_shared_future"></a> işleç std::shared_future<void>
+
+Örtük olarak dönüştürür `completion_future` nesnesini bir `std::shared_future` nesne.
+
+### <a name="syntax"></a>Sözdizimi
+
+```
+operator std::shared_future<void>() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Bir `std::shared_future` nesne.
+
+## <a name="operator_eq"></a> işleç =
+
+Belirtilen içeriğini kopyalar `completion_future` bu nesne içine.
+
+### <a name="syntax"></a>Sözdizimi
+
+```
+completion_future&  operator= (const completion_future& _Other );
+completion_future&  operator= (completion_future&& _Other );
+```
+
+### <a name="parameters"></a>Parametreler
+
 *_Diğer*<br/>
-Kopyalanacak nesne.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Bu başvuru `completion_future` nesne.  
-  
-## <a name="overloads-list"></a>Aşırı yükler listesi  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`completion_future& operator=(const completion_future& _Other);`|Belirtilen içeriğini kopyalar `completion_future` içine derin kopya kullanarak bu nesne.|  
-|`completion_future& operator=(completion_future&& _Other);`|Belirtilen içeriğini kopyalar `completion_future` içine bir taşıma ataması kullanarak bu nesne.|  
-  
-## <a name="then"></a> Ardından 
+Kopyalanacak nesne.
 
-Bir geri çağırma işlevi nesnesine zincir `completion_future` ilişkili zaman uyumsuz işlemin yürütülmesi tamamlandığında yürütülecek nesne.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```  
-template <typename _Functor>  
-void then(const _Functor & _Func ) const;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+### <a name="return-value"></a>Dönüş Değeri
+
+Bu başvuru `completion_future` nesne.
+
+## <a name="overloads-list"></a>Aşırı yükler listesi
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`completion_future& operator=(const completion_future& _Other);`|Belirtilen içeriğini kopyalar `completion_future` içine derin kopya kullanarak bu nesne.|
+|`completion_future& operator=(completion_future&& _Other);`|Belirtilen içeriğini kopyalar `completion_future` içine bir taşıma ataması kullanarak bu nesne.|
+
+## <a name="then"></a> Ardından
+
+Bir geri çağırma işlevi nesnesine zincir `completion_future` ilişkili zaman uyumsuz işlemin yürütülmesi tamamlandığında yürütülecek nesne.
+
+### <a name="syntax"></a>Sözdizimi
+
+```
+template <typename _Functor>
+void then(const _Functor & _Func ) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
 *_Functor*<br/>
-İşlev nesnesini geri çağırma.  
-  
+İşlev nesnesini geri çağırma.
+
 *_Func*<br/>
-Geri çağırma işlevi nesnesi.  
-  
-## <a name="to_task"></a> to_task 
+Geri çağırma işlevi nesnesi.
 
-Döndürür bir `task` nesnesini ilişkili asenkron işleme karşı.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```  
-concurrency::task<void> to_task() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- A `task` nesnesini ilişkili asenkron işleme karşı.  
-  
-## <a name="valid"></a> Geçerli 
+## <a name="to_task"></a> to_task
 
-Nesnenin bir zaman uyumsuz işlemle ilişkili olup olmadığını gösteren bir Boole değeri alır.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```  
-bool valid() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- `true` bir zaman uyumsuz işlemle ilişkili bir nesnedir Aksi takdirde, `false`.  
-  
-## <a name="wait"></a> bekleme 
+Döndürür bir `task` nesnesini ilişkili asenkron işleme karşı.
 
-İlişkili zaman uyumsuz işlem tamamlanıncaya kadar engeller.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```  
-void wait() const;  
-```  
-  
-## <a name="wait_for"></a> wait_for 
+### <a name="syntax"></a>Sözdizimi
 
-İlişkili zaman uyumsuz işlem tamamlanıncaya kadar engeller veya tarafından belirtilen zaman `_Rel_time` geçti.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```  
-template <  
-    class _Rep,  
-    class _Period  
->  
-std::future_status::future_status wait_for(  
-    const std::chrono::duration< _Rep, _Period>& _Rel_time ) const;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+concurrency::task<void> to_task() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+A `task` nesnesini ilişkili asenkron işleme karşı.
+
+## <a name="valid"></a> Geçerli
+
+Nesnenin bir zaman uyumsuz işlemle ilişkili olup olmadığını gösteren bir Boole değeri alır.
+
+### <a name="syntax"></a>Sözdizimi
+
+```
+bool valid() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+`true` bir zaman uyumsuz işlemle ilişkili bir nesnedir Aksi takdirde, `false`.
+
+## <a name="wait"></a> bekleme
+
+İlişkili zaman uyumsuz işlem tamamlanıncaya kadar engeller.
+
+### <a name="syntax"></a>Sözdizimi
+
+```
+void wait() const;
+```
+
+## <a name="wait_for"></a> wait_for
+
+İlişkili zaman uyumsuz işlem tamamlanıncaya kadar engeller veya tarafından belirtilen zaman `_Rel_time` geçti.
+
+### <a name="syntax"></a>Sözdizimi
+
+```
+template <
+    class _Rep,
+    class _Period
+>
+std::future_status::future_status wait_for(
+    const std::chrono::duration< _Rep, _Period>& _Rel_time ) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
 *_Rep*<br/>
-İşaret sayısını gösteren aritmetik türü.  
-  
+İşaret sayısını gösteren aritmetik türü.
+
 *_Period*<br/>
-Değer çizgisi beklenecek saniye sayısını gösteren std::ratio.  
-  
+Değer çizgisi beklenecek saniye sayısını gösteren std::ratio.
+
 *_Rel_time*<br/>
-En fazla işlemin tamamlanması için beklenecek süre miktarı.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- döndürür:  
-  
--   `std::future_status::deferred` ilişkili zaman uyumsuz işlem çalışmıyorsa.  
-  
--   `std::future_status::ready` ilişkili zaman uyumsuz işlem tamamlandıysa.  
-  
--   `std::future_status::timeout` Belirtilen süre dolduysa durumunda.  
-  
-## <a name="wait_until"></a> wait_until 
+En fazla işlemin tamamlanması için beklenecek süre miktarı.
 
-İlişkili zaman uyumsuz işlem tamamlanıncaya kadar veya geçerli saati tarafından belirtilen değeri aşana kadar engeller `_Abs_time`.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```  
-template <  
-    class _Clock,  
-    class _Duration  
->  
-std::future_status::future_status wait_until(  
-    const std::chrono::time_point< _Clock, _Duration>& _Abs_time ) const;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+### <a name="return-value"></a>Dönüş Değeri
+
+döndürür:
+
+- `std::future_status::deferred` ilişkili zaman uyumsuz işlem çalışmıyorsa.
+
+- `std::future_status::ready` ilişkili zaman uyumsuz işlem tamamlandıysa.
+
+- `std::future_status::timeout` Belirtilen süre dolduysa durumunda.
+
+## <a name="wait_until"></a> wait_until
+
+İlişkili zaman uyumsuz işlem tamamlanıncaya kadar veya geçerli saati tarafından belirtilen değeri aşana kadar engeller `_Abs_time`.
+
+### <a name="syntax"></a>Sözdizimi
+
+```
+template <
+    class _Clock,
+    class _Duration
+>
+std::future_status::future_status wait_until(
+    const std::chrono::time_point< _Clock, _Duration>& _Abs_time ) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
 *_Clock*<br/>
-Bu zaman noktasının ölçüldüğü saat.  
-  
-*_Duration*<br/>
-Zaman aralığı başladığından bu yana `_Clock`'s dönem, işlev sonra zaman aşımına gösterir.  
-  
-*_Abs_time*<br/>
-Sonrasında işlevin zaman aşımına uğrayacağı zaman içinde nokta.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- döndürür:  
-  
-1.  `std::future_status::deferred` ilişkili zaman uyumsuz işlem çalışmıyorsa.  
-  
-2.  `std::future_status::ready` ilişkili zaman uyumsuz işlem tamamlandıysa.  
-  
-3.  `std::future_status::timeout` Eğer belirtilen süre geçti.  
-  
-## <a name="dtor"></a> ~ completion_future 
+Bu zaman noktasının ölçüldüğü saat.
 
-Yok eder `completion_future` nesne.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```  
-~completion_future();  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)
+*_Duration*<br/>
+Zaman aralığı başladığından bu yana `_Clock`'s dönem, işlev sonra zaman aşımına gösterir.
+
+*_Abs_time*<br/>
+Sonrasında işlevin zaman aşımına uğrayacağı zaman içinde nokta.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+döndürür:
+
+1. `std::future_status::deferred` ilişkili zaman uyumsuz işlem çalışmıyorsa.
+
+1. `std::future_status::ready` ilişkili zaman uyumsuz işlem tamamlandıysa.
+
+1. `std::future_status::timeout` Eğer belirtilen süre geçti.
+
+## <a name="dtor"></a> ~ completion_future
+
+Yok eder `completion_future` nesne.
+
+### <a name="syntax"></a>Sözdizimi
+
+```
+~completion_future();
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

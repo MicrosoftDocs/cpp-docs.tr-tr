@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74f1f0f88828b5d6355c692aa8eaeecd5869bf57
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 708825ddda9becc51d9009d0d6a03a22c48f8007
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202940"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46432483"
 ---
 # <a name="unicode-and-multibyte-character-set-mbcs-support"></a>Unicode ve çok baytlı karakter kümesi (MBCS) desteği
 
@@ -105,5 +105,5 @@ Benzer şekilde, `CString` yöntemleri, genel veri türü eşlemeleri kullanıla
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)  
+[Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [Dize düzenlemesi](../c-runtime-library/string-manipulation-crt.md)  

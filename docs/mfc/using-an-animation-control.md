@@ -16,29 +16,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d6b6b07040fbece5fae24fb2ca6be8985695eb0
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 3da9684d0218c631cbd745475d48f1cf23addde5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36950543"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46404572"
 ---
 # <a name="using-an-animation-control"></a>Animasyon Denetimi Kullanma
-Animasyon denetimi tipik kullanımını deseni izler:  
-  
--   Denetim oluşturulur. Denetim bir iletişim kutusu şablonunda belirtilirse, iletişim kutusu oluşturulurken oluşturma otomatik olarak yapılır. (Olması bir [CAnimateCtrl](../mfc/reference/canimatectrl-class.md) üye iletişim sınıfınızda animasyon denetimi karşılık gelir.) Alternatif olarak, kullanabileceğiniz [oluşturma](../mfc/reference/canimatectrl-class.md#create) denetimi penceresi alt pencere olarak oluşturmak için üye işlevi.  
-  
--   Çağırarak animasyon denetime AVI küçük yük [açık](../mfc/reference/canimatectrl-class.md#open) üye işlevi. Animasyon denetimi iletişim kutusunda, bunu yapmak için uygun bir yerdir iletişim sınıfının ise [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) işlevi.  
-  
--   Küçük çağırarak yürütmek [Yürüt](../mfc/reference/canimatectrl-class.md#play) üye işlevi. Animasyon denetimi iletişim kutusunda, bunu yapmak için uygun bir yerdir iletişim sınıfının ise `OnInitDialog` işlevi. Çağırma `Play` animasyon denetimi ACS_AUTOPLAY stil kümesi varsa gerekli değildir.  
-  
--   Küçük bölümlerini görüntülemek veya kare kare kullanım oynatmak istiyorsanız `Seek` üye işlevi. Yürütülen bir küçük durdurmak için kullanma `Stop` üye işlevi.  
-  
--   Denetim hemen yok etmek için yapmayacağınız, küçük bellekten çağırarak kaldırmak `Close` üye işlevi.  
-  
--   Animasyon denetimi iletişim kutusunda, varsa onu ve `CAnimateCtrl` nesne yok otomatik olarak. Her iki denetimi emin olmak ihtiyacınız olmayan, varsa ve `CAnimateCtrl` nesne düzgün yok. Otomatik olarak denetimini yok etme AVI küçük kapatır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CAnimateCtrl kullanma](../mfc/using-canimatectrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Animasyon denetimi tipik kullanımını aşağıdaki deseni izler:
+
+- Denetim oluşturulur. Denetim bir iletişim kutusu şablonunda belirtilmezse, iletişim kutusu oluşturulurken oluşturma otomatik olarak gerçekleşir. (Olması bir [CAnimateCtrl](../mfc/reference/canimatectrl-class.md) animasyon denetimi için karşılık gelen iletişim sınıfınızı üye.) Alternatif olarak, [Oluştur](../mfc/reference/canimatectrl-class.md#create) herhangi bir pencerenin alt pencere olarak denetimi oluşturmak için üye işlevi.
+
+- Çağırarak animasyon denetime AVI klibi yük [açık](../mfc/reference/canimatectrl-class.md#open) üye işlevi. İletişim kutusunda, animasyon denetimi ise bunu yapmak için uygun bir iletişim kutusu sınıfının yerdir [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) işlevi.
+
+- Çağırarak klibi [Play](../mfc/reference/canimatectrl-class.md#play) üye işlevi. İletişim kutusunda, animasyon denetimi ise bunu yapmak için uygun bir iletişim kutusu sınıfının yerdir `OnInitDialog` işlevi. Çağırma `Play` animasyon denetimi ACS_AUTOPLAY stil kümesi varsa gerekli değildir.
+
+- Küçük bölümlerini görüntülemek veya kare kare kullanım yürütmek isterseniz `Seek` üye işlevi. Yürütülen bir küçük resim durdurmak için kullanın `Stop` üye işlevi.
+
+- Hemen kontrol edilecek kullanmayacaksanız küçük bellekten çağırarak kaldırmak `Close` üye işlevi.
+
+- Animasyon denetimi bir iletişim kutusunda, varsa onu ve `CAnimateCtrl` nesne otomatik olarak silinecektir. Her iki denetim sağlamak ihtiyacınız değil, varsa ve `CAnimateCtrl` nesne düzgün bir şekilde yok. Otomatik olarak denetim yok etme AVI klibi kapatır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CAnimateCtrl Kullanma](../mfc/using-canimatectrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

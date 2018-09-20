@@ -16,75 +16,79 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6884face758cd7f7b9b507405f41f4fcbac8f188
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f6ca4db1103494c8c55d792391ac714311a3a7cd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721311"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444088"
 ---
 # <a name="umul128"></a>_umul128
-**Microsoft'a özgü**  
-  
- İlk iki bağımsız değişken olarak geçirilen iki 64-bit işaretsiz tam sayı ile çarpar ve ürünün yüksek 64 bit işaret ettiği 64-bit işaretsiz tamsayı koyar `HighProduct` ve ürünün düşük 64 bit döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-unsigned __int64 _umul128(   
-   unsigned __int64 Multiplier,   
-   unsigned __int64 Multiplicand,   
-   unsigned __int64 *HighProduct   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+**Microsoft'a özgü**
+
+İlk iki bağımsız değişken olarak geçirilen iki 64-bit işaretsiz tam sayı ile çarpar ve ürünün yüksek 64 bit işaret ettiği 64-bit işaretsiz tamsayı koyar `HighProduct` ve ürünün düşük 64 bit döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+unsigned __int64 _umul128( 
+   unsigned __int64 Multiplier, 
+   unsigned __int64 Multiplicand, 
+   unsigned __int64 *HighProduct 
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *Çarpanı*<br/>
-[in] Çarpılacak ilk 64-bit tamsayı.  
-  
+[in] Çarpılacak ilk 64-bit tamsayı.
+
 *Çarpan*<br/>
-[in] Çarpılacak ikinci 64-bit tamsayı.  
-  
+[in] Çarpılacak ikinci 64-bit tamsayı.
+
 *HighProduct*<br/>
-[out] Ürünün yüksek 64 bit.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Ürünün düşük 64 bit.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|Üstbilgi|  
-|---------------|------------------|------------|  
-|`_umul128`|ARM, x64|\<intrin.h >|  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// umul128.c  
-// processor: IPF, x64  
-  
-#include <stdio.h>  
-#include <intrin.h>  
-  
-#pragma intrinsic(_umul128)  
-  
-int main()  
-{  
-    unsigned __int64 a = 0x0fffffffffffffffI64;  
-    unsigned __int64 b = 0xf0000000I64;  
-    unsigned __int64 c, d;  
-  
-    d = _umul128(a, b, &c);  
-  
-    printf_s("%#I64x * %#I64x = %#I64x%I64x\n", a, b, c, d);  
-}  
-```  
-  
-```Output  
-0xfffffffffffffff * 0xf0000000 = 0xeffffffffffffff10000000  
-```  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[out] Ürünün yüksek 64 bit.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Ürünün düşük 64 bit.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|Üstbilgi|
+|---------------|------------------|------------|
+|`_umul128`|ARM, x64|\<intrin.h >|
+
+## <a name="example"></a>Örnek
+
+```
+// umul128.c
+// processor: IPF, x64
+
+#include <stdio.h>
+#include <intrin.h>
+
+#pragma intrinsic(_umul128)
+
+int main()
+{
+    unsigned __int64 a = 0x0fffffffffffffffI64;
+    unsigned __int64 b = 0xf0000000I64;
+    unsigned __int64 c, d;
+
+    d = _umul128(a, b, &c);
+
+    printf_s("%#I64x * %#I64x = %#I64x%I64x\n", a, b, c, d);
+}
+```
+
+```Output
+0xfffffffffffffff * 0xf0000000 = 0xeffffffffffffff10000000
+```
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

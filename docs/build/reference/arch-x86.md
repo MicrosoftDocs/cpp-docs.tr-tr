@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f255c8c178d063c040dca4ed6da52c65370c96b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 819d95883cecb4d219fd11c4ab83e18afa2dbbd4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702670"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444937"
 ---
 # <a name="arch-x86"></a>/arch (x86)
 
@@ -90,6 +90,6 @@ r = t + d;     // This should produce the same overall result
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[/ arch (en düşük CPU Mimarisi)](../../build/reference/arch-minimum-cpu-architecture.md)
-[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[/arch (En Düşük CPU Mimarisi)](../../build/reference/arch-minimum-cpu-architecture.md)<br/>
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

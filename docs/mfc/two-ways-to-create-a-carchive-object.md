@@ -23,58 +23,62 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cba1596e1dd114dcd46610b824405740a783c21e
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 10b87f57daaf510252fe6f07dc3ba2d9d0a8650d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36954799"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46409345"
 ---
 # <a name="two-ways-to-create-a-carchive-object"></a>CArchive Nesnesi Oluşturmanın İki Yolu
-Oluşturmanın iki yolu vardır bir `CArchive` nesnesi:  
-  
--   [CArchive nesnesi çerçevesi aracılığıyla örtük oluşturma](#_core_implicit_creation_of_a_carchive_object_via_the_framework)  
-  
--   [CArchive nesnesi açık oluşturma](#_core_explicit_creation_of_a_carchive_object)  
-  
-##  <a name="_core_implicit_creation_of_a_carchive_object_via_the_framework"></a> CArchive nesnesi çerçevesi aracılığıyla örtük oluşturma  
- Oluşturduğunuz iskelet izin vermek için en yaygın ve kolay bir yol olduğu bir `CArchive` Kaydet, Farklı Kaydet ve Aç komutlarını Dosya menüsünde adına belgeniz için nesne.  
-  
- Kullanıcı, uygulamanızın Dosya menüsünden Kaydet komutu verdiğinde framework yaptığı aşağıda verilmiştir:  
-  
-1.  Sunan **Kaydet** iletişim kutusu ve kullanıcıdan dosya adını alır.  
-  
-2.  Kullanıcı tarafından adlı dosyayı açar bir `CFile` nesnesi.  
-  
-3.  Oluşturur bir `CArchive` için işaret nesnesi `CFile` nesnesi. Oluşturma `CArchive` nesne framework ayarlar "depolamak için" modunu (yazma, seri hale), "Yük" aksine (okuma, seri durumdan).  
-  
-4.  Çağrıları `Serialize` tanımlanan işlevi, `CDocument`-türetilmiş sınıf başvurusu geçirme, `CArchive` nesnesi.  
-  
- Belgenizin `Serialize` işlevi sonra verileri Yazar `CArchive` kısa süre içinde açıklandığı gibi nesne. Dönüş bağlı, `Serialize` framework işlevi, bozar `CArchive` nesnesi ve ardından `CFile` nesnesi.  
-  
- Bu nedenle, oluşturduğunuz iskelet izin verirseniz `CArchive` nesne belgeniz için tüm yapmanız gereken belgenin uygulamak olduğu `Serialize` yazar ve okur ve Arşiv gelen işlev. Uygulamak de `Serialize` herhangi `CObject`-türetilmiş nesneleri, belgenin `Serialize` işlevi sırayla doğrudan veya dolaylı olarak serileştirir.  
-  
-##  <a name="_core_explicit_creation_of_a_carchive_object"></a> CArchive nesnesi açık oluşturma  
- Belge çerçeve aracılığıyla seri hale getirme yanı sıra zaman ihtiyacınız olabilecek diğer durumlar vardır bir `CArchive` nesnesi. Örneğin, verileri için ve panodan tarafından temsil edilen seri hale getirmek isteyebilirsiniz bir `CSharedFile` nesnesi. Veya, bir kullanıcı arabirimi çerçevesi tarafından sunulan olandan farklı bir dosya kaydetmek için kullanmak isteyebilirsiniz. Bu durumda, açıkça oluşturabileceğiniz bir `CArchive` nesnesi. Bunu, framework değil, aynı şekilde, aşağıdaki yordamı kullanarak yapabilirsiniz.  
-  
-#### <a name="to-explicitly-create-a-carchive-object"></a>Açıkça CArchive nesnesi oluşturmak için  
-  
-1.  Oluşturmak bir `CFile` veya nesneyi türetilen `CFile`.  
-  
-2.  Geçirmek `CFile` Oluşturucusu nesnesine `CArchive`, aşağıdaki örnekte gösterildiği gibi:  
-  
-     [!code-cpp[NVC_MFCSerialization#5](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_1.cpp)]  
-  
-     İkinci bağımsız değişkeni `CArchive` Oluşturucusu arşive depolama ve veri ya da yükleme dosyasından kullanılıp kullanılmayacağını belirten bir Enum değeri değil. `Serialize` Bir nesnenin işlevini çağırarak bu durum denetler `IsStoring` arşiv nesnesinin işlevi.  
-  
- Depolama veya yerel bilgisayardan veya veri yükleme tamamlandığında, `CArchive` nesne, kapatın. Ancak `CArchive` (ve `CFile`) nesneleri otomatik olarak kapatılacak arşiv (ve dosya), Kurtarma hataları kolaylaştırır beri açıkça Bunun iyi bir uygulamadır. Hata işleme hakkında daha fazla bilgi için bkz: [özel durumlar: çalýþýrçalýþma yakalama ve silme özel durumları](../mfc/exceptions-catching-and-deleting-exceptions.md).  
-  
-#### <a name="to-close-the-carchive-object"></a>CArchive nesnesi kapatmak için  
-  
-1.  Aşağıdaki örnekte nasıl kapatılacağını gösterilmektedir `CArchive` nesnesi:  
-  
-     [!code-cpp[NVC_MFCSerialization#6](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_2.cpp)]  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Seri hale getirme: Bir Nesneyi Seri Hale Getirme](../mfc/serialization-serializing-an-object.md)
+
+Oluşturmanın iki yolu vardır. bir `CArchive` nesnesi:
+
+- [CArchive nesnesi framework aracılığıyla örtük oluşturma](#_core_implicit_creation_of_a_carchive_object_via_the_framework)
+
+- [CArchive nesnesi açık oluşturma](#_core_explicit_creation_of_a_carchive_object)
+
+##  <a name="_core_implicit_creation_of_a_carchive_object_via_the_framework"></a> CArchive nesnesi Framework aracılığıyla örtük oluşturma
+
+En yaygın ve kolay bir şekilde oluşturma framework izin vermek için olan bir `CArchive` kaydetme, Farklı Kaydet ve Aç komutları Dosya menüsündeki adına belgeniz için nesne.
+
+İşte, uygulamanızın kullanıcı Dosya menüsünden Kaydet komutunu verdiğinde framework yapar:
+
+1. Sunan **Kaydet** iletişim kutusu ve kullanıcıdan dosya adını alır.
+
+1. Kullanıcı tarafından adlı dosyayı açar bir `CFile` nesne.
+
+1. Oluşturur bir `CArchive` için işaret eden bir nesne `CFile` nesne. Oluşturma `CArchive` framework "Mağaza" modunu ayarlar nesnesi (yazma, seri hale getirmek), "Yükle" ın aksine (okuma, seri durumdan).
+
+1. Çağrıları `Serialize` tanımlanan işlevi, `CDocument`-türetilmiş sınıf başvurusu geçirme, `CArchive` nesne.
+
+Belgenizin `Serialize` işlevi sonra verileri Yazar `CArchive` kısa süre içinde açıklandığı gibi nesne. Geri döndürme işlevi üzerine, `Serialize` işlevi, framework yok eder `CArchive` nesnesi ve ardından `CFile` nesne.
+
+Bu nedenle, oluşturma framework izin verirseniz `CArchive` belgeniz için tüm yapmanız gereken belgenin uygulamak olan nesne `Serialize` yazar ve okur ve Arşiv gelen işlevi. Uygulamak de `Serialize` herhangi `CObject`-türetilmiş nesneler, belgenin `Serialize` işlevi sırayla doğrudan veya dolaylı olarak serileştirir.
+
+##  <a name="_core_explicit_creation_of_a_carchive_object"></a> CArchive nesnesi açık oluşturma
+
+Bir belge çerçevesi aracılığıyla serileştirmek yanı sıra, ne zaman ihtiyacınız olabilecek başka durumlar vardır bir `CArchive` nesne. Örneğin, verilerini ve panodan tarafından temsil edilen seri hale getirmek isteyebilirsiniz bir `CSharedFile` nesne. Veya, bir kullanıcı arabirimi çerçevesi tarafından sunulan olandan farklı bir dosyaya kaydetmek için kullanmak isteyebilirsiniz. Bu durumda, açıkça oluşturabileceğiniz bir `CArchive` nesne. Bu, framework mu, aynı şekilde, aşağıdaki yordamı kullanarak yapın.
+
+#### <a name="to-explicitly-create-a-carchive-object"></a>CArchive nesnesi açıkça oluşturmak için
+
+1. Oluşturmak bir `CFile` veya nesneyi türetilen `CFile`.
+
+1. Geçirmek `CFile` için oluşturucusuna `CArchive`, aşağıdaki örnekte gösterildiği gibi:
+
+     [!code-cpp[NVC_MFCSerialization#5](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_1.cpp)]
+
+     İkinci bağımsız değişkeni `CArchive` oluşturucudur arşiv depolama ve veri ya da yükleme dosyasından kullanılıp kullanılmayacağını belirten bir numaralandırılmış değeri. `Serialize` Bir nesnenin işlev çağırarak bu durumu denetler `IsStoring` arşiv nesne için işlevi.
+
+Depolama veya veri yüklemeyi tamamladıktan sonra `CArchive` nesne, kapatın. Ancak `CArchive` (ve `CFile`) nesneleri otomatik olarak kapatılır arşiv (ve dosya), açıkça kurtarma hataları kolaylaştırır olduğundan Bunu yapmak için iyi bir uygulamadır. Hata işleme hakkında daha fazla bilgi için bkz [özel durumlar: çalýþýrçalýþma yakalama ve silme özel durumları](../mfc/exceptions-catching-and-deleting-exceptions.md).
+
+#### <a name="to-close-the-carchive-object"></a>CArchive nesnesi kapatmak için
+
+1. Aşağıdaki örnekte nasıl kapatılacağını `CArchive` nesnesi:
+
+     [!code-cpp[NVC_MFCSerialization#6](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_2.cpp)]
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Seri hale getirme: Bir Nesneyi Seri Hale Getirme](../mfc/serialization-serializing-an-object.md)
 

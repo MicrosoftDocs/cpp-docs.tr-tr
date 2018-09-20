@@ -17,37 +17,41 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fc39951270138e9bd243172b289e7bd96190f14
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 4ea32f473d96c8f48c6628d8f71212269bd6d345
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692327"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392624"
 ---
 # <a name="default-openmp"></a>default (OpenMP)
-Paralel bir bölgede dizininden kapsam dışı değişkenleri davranışını belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-default(shared | none)  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- `shared`, geçerli olduğu varsa `default` yan tümcesi belirtilmezse, ile belirtilmiş olması durumunda gibi paralel bir bölgedeki herhangi bir değişken kabul edilecek anlamına gelir [paylaşılan](../../../parallel/openmp/reference/shared-openmp.md) yan tümcesi. `none` ile kapsamlı olmayan paralel bir bölgede kullanılan değişkenler anlamına [özel](../../../parallel/openmp/reference/private-openmp.md), [paylaşılan](../../../parallel/openmp/reference/shared-openmp.md), [azaltma](../../../parallel/openmp/reference/reduction.md), [firstprivate](../../../parallel/openmp/reference/firstprivate.md), veya [lastprivate](../../../parallel/openmp/reference/lastprivate.md) yan tümcesi derleyici hatası neden olur.  
-  
- `default` Aşağıdaki yönergeleri için geçerlidir:  
-  
--   [parallel](../../../parallel/openmp/reference/parallel.md)  
-  
--   [for](../../../parallel/openmp/reference/for-openmp.md)  
-  
--   [Bölümler](../../../parallel/openmp/reference/sections-openmp.md)  
-  
- Daha fazla bilgi için bkz: [2.7.2.5 varsayılan](../../../parallel/openmp/2-7-2-5-default.md).  
-  
-## <a name="example"></a>Örnek  
- Bkz: [özel](../../../parallel/openmp/reference/private-openmp.md) kullanma örneği için `default`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yan Tümceler](../../../parallel/openmp/reference/openmp-clauses.md)
+
+Bir paralel bölgenin içinde kapsamsız değişkenleri davranışını belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+default(shared | none)
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+`shared`, etkin olduğu, `default` yan tümcesi belirtilmediyse, sanki ile belirtilmiş bir paralel bölgenin içinde herhangi bir değişken değerlendirilir anlamına gelir [paylaşılan](../../../parallel/openmp/reference/shared-openmp.md) yan tümcesi. `none` ile kapsamlı olmayan bir paralel bölgenin içinde kullanılan tüm değişkenler anlamına [özel](../../../parallel/openmp/reference/private-openmp.md), [paylaşılan](../../../parallel/openmp/reference/shared-openmp.md), [azaltma](../../../parallel/openmp/reference/reduction.md), [firstprivate](../../../parallel/openmp/reference/firstprivate.md), veya [lastprivate](../../../parallel/openmp/reference/lastprivate.md) yan tümcesi, bir derleyici hatasına neden olur.
+
+`default` Aşağıdaki yönergeleri için geçerlidir:
+
+- [parallel](../../../parallel/openmp/reference/parallel.md)
+
+- [for](../../../parallel/openmp/reference/for-openmp.md)
+
+- [Bölümleri](../../../parallel/openmp/reference/sections-openmp.md)
+
+Daha fazla bilgi için [2.7.2.5 varsayılan](../../../parallel/openmp/2-7-2-5-default.md).
+
+## <a name="example"></a>Örnek
+
+Bkz: [özel](../../../parallel/openmp/reference/private-openmp.md) kullanma örneği için `default`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yan Tümceler](../../../parallel/openmp/reference/openmp-clauses.md)

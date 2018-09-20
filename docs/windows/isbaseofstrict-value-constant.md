@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e7159e75b03c6440dfc5742de9f98d93da47d904
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 65b69c974e74ff68a1af2e17ff1fc8f03e03e3af
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583860"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439295"
 ---
 # <a name="isbaseofstrictvalue-constant"></a>IsBaseOfStrict::value Sabiti
 
@@ -48,5 +48,5 @@ Başka bir taban bir türü olup olmadığını gösterir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IsBaseOfStrict Yapısı](../windows/isbaseofstrict-structure.md)  
+[IsBaseOfStrict Yapısı](../windows/isbaseofstrict-structure.md)<br/>
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

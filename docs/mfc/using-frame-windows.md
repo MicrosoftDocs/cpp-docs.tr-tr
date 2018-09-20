@@ -1,5 +1,5 @@
 ---
-title: Çerçeve pencerelerini kullanma | Microsoft Docs
+title: Çerçeve Windows kullanarak | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,40 +16,42 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 636762ae7e1b1d1a5dd109bb71b98c81b51fe50b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3cb895c50d7265c0fd1478ba421f2da860d49a19
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381923"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400451"
 ---
 # <a name="using-frame-windows"></a>Çerçeve Pencerelerini Kullanma
-MFC çerçevesi belge çerçeve pencereleri oluşturur — ve görünümler ve belgeleri — uygulaması Dosya menüsünden Aç komutlarını ve yeni bir parçası olarak. Framework çerçeve penceresi işlerin çoğunu sizin yerinize yaptığından, oluşturma, kullanma ve bu pencereleri yok etme yalnızca küçük bir rol oynar. Ancak açıkça kendi çerçeve pencereleri ve alt öğe pencerelerini özel amaçlar için oluşturabilirsiniz.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Belge çerçeve pencereleri oluşturma](../mfc/creating-document-frame-windows.md)  
-  
--   [CWnd Nesneleri Ne Zaman Başlatılır?](../mfc/when-to-initialize-cwnd-objects.md)  
-  
--   [Çerçeve pencerelerini yok etme](../mfc/destroying-frame-windows.md)  
-  
--   [MDI alt öğe pencerelerini yönetme](../mfc/managing-mdi-child-windows.md)  
-  
--   [Geçerli görünümü yönetme](../mfc/managing-the-current-view.md)  
-  
--   [Menüleri, Denetim çubuklarını ve Hızlandırıcıları yönetme](../mfc/managing-menus-control-bars-and-accelerators.md)  
-  
--   [Sürükleme ve bir çerçeve penceresinde dosyaları bırakma](../mfc/dragging-and-dropping-files-in-a-frame-window.md)  
-  
--   [Dinamik veri değişimine (DDE) yanıt verme](../mfc/responding-to-dynamic-data-exchange-dde.md)  
-  
--   [Diğer pencere işlemlerini yönetme](../mfc/orchestrating-other-window-actions.md)  
-  
--   [Bağlama duyarlı Yardım yönetme](../mfc/orchestrating-other-window-actions.md)  
-  
--   [Çerçeve pencere rol yazdırmayı ve Baskı Önizleme](../mfc/orchestrating-other-window-actions.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çerçeve Pencereleri](../mfc/frame-windows.md)
+
+MFC çerçevesi belge çerçeve pencereleri oluşturur — ve görünümler ile belgeleri — uygulaması Dosya menüsündeki açık komutları ve yeni bir parçası olarak. Framework çerçeve pencere işin çoğunu sizin için gerçekleştirdiğinden, oluşturma, kullanma ve bu pencerelerini yok etme yalnızca küçük bir rol yürütün. Ancak açıkça kendi çerçeve pencereleri ve alt öğe pencerelerini özel amaçlar için oluşturabilirsiniz.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Belge çerçeve pencereleri oluşturma](../mfc/creating-document-frame-windows.md)
+
+- [CWnd Nesneleri Ne Zaman Başlatılır?](../mfc/when-to-initialize-cwnd-objects.md)
+
+- [Çerçeve pencerelerini yok etme](../mfc/destroying-frame-windows.md)
+
+- [MDI alt öğe pencerelerini yönetme](../mfc/managing-mdi-child-windows.md)
+
+- [Geçerli görünümü yönetme](../mfc/managing-the-current-view.md)
+
+- [Menüleri, Denetim çubuklarını ve Hızlandırıcıları yönetme](../mfc/managing-menus-control-bars-and-accelerators.md)
+
+- [Sürükleme ve bir çerçeve penceresinde dosyaları bırakma](../mfc/dragging-and-dropping-files-in-a-frame-window.md)
+
+- [Dinamik veri değişimine (DDE) yanıt verme](../mfc/responding-to-dynamic-data-exchange-dde.md)
+
+- [Diğer pencere işlemlerini yönetme](../mfc/orchestrating-other-window-actions.md)
+
+- [Bağlama duyarlı Yardım'ı yönetme](../mfc/orchestrating-other-window-actions.md)
+
+- [Çerçeve penceresinin rol yazdırmayı ve Baskı Önizleme](../mfc/orchestrating-other-window-actions.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çerçeve Pencereleri](../mfc/frame-windows.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Önceden derlenmiş üstbilgi dosyaları | Microsoft Docs
+title: Önceden derlenmiş üst bilgi dosyaları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,23 +20,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4595ea9ce27c40fb798ac050ce456c4d43b2cacb
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 8d2e2bab9da3d19347577f0b1d1e8ab2ed6bb0dc
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33328093"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46404027"
 ---
 # <a name="precompiled-header-files"></a>Önceden Derlenmiş Üst Bilgi Dosyaları
-Bu dosyalar önceden derlenmiş üst bilgi dosyasını oluşturmak için kullanılan *Projname*Stdafx.obj dosya .pch ve önceden derlenmiş türleri.  
-  
- Bu dosyalar bulunur *Projname* dizini. Çözüm Gezgini'nde, Stdafx.h üstbilgi dosyaları klasördür ve Stdafx.cpp kaynak dosyaları klasöründe bulunur.  
-  
-|Dosya adı|Açıklama|  
-|---------------|-----------------|  
-|Stdafx.h|Bir içerme dosyası olduğu standart sistem dosyaları ve sık kullanılan ancak seyrek değişen dosyaları projeye özgü Ekle.<br /><br /> Tanımlayın veya gerekir stdafx.h _AFX_NO_XXX makrolarındaki hiçbirini tanımsız; Bilgi Bankası makalesi "sorun: sorun _AFX_NO_XXX tanımlarken". MSDN Kitaplığı'nda veya Bilgi Bankası makaleleri bulabilirsiniz [http:// support.microsoft.com/](http://%20support.microsoft.com/).|  
-|Stdafx.cpp|Önişlemci yönergeyi içeren `#include "stdafx.h"` ve ekler önceden derlenmiş türleri için dosyaları içerir. Önceden derlenmiş üstbilgi dosyaları dahil olmak üzere herhangi bir türü dosyalarının derleme gerektiren dosyaları kısıtlayarak daha hızlı derleme sürelerini destekler. İlk kez projeniz oluşturulduktan sonra çok daha hızlı kez sonraki sürümlerde önceden derlenmiş üstbilgi dosyaları varlığı nedeniyle yapı fark edeceksiniz.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++ projeleri için oluşturulan dosya türleri](../ide/file-types-created-for-visual-cpp-projects.md)   
- [Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)
+
+Bu dosyaları Ön derlenmiş üstbilgi dosyası oluşturmak için kullanılan *Projname*Stdafx.obj dosya .pch ve önceden derlenmiş türler.
+
+Bu dosyalar bulunur *Projname* dizin. Çözüm Gezgini'nde üst bilgi dosyaları klasöründedir Stdafx.h ve Stdafx.cpp kaynak dosyalar klasöründe bulunur.
+
+|Dosya adı|Açıklama|
+|---------------|-----------------|
+|Stdafx.h|İçerik dosyası standart sistem ekleme dosyaları için ve sık sık kullanılır, ancak seyrek değiştirilen projeye özgü ekleme dosyaları.<br /><br /> Tanımlayın veya gerekir herhangi stdafx.h _AFX_NO_XXX makroların tanımlarını Kaldır; Bilgi Bankası makalesine bakın "sorun: sorun _AFX_NO_XXX tanımlarken". MSDN Kitaplığı'nda veya Tabanı makalelerini bulabilirsiniz [http:// support.microsoft.com/](http://%20support.microsoft.com/).|
+|Stdafx.cpp|Önişlemci yönergesi içeren `#include "stdafx.h"` ve ekler önceden derlenmiş türler için dosyaları ekleme. Önceden derlenmiş dosyalar başlık dosyaları dahil olmak üzere herhangi bir tür, derleme gerektiren dosyaları kısıtlayarak daha hızlı derleme sürelerini destekler. İlk projeniz oluşturulduktan sonra süreleri sonraki sürümlerde önceden derlenmiş üst bilgi dosyalarının varlığı nedeniyle çok daha hızlı derleme fark edeceksiniz.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Visual C++ Projeleri için Oluşturulan Dosya Türleri](../ide/file-types-created-for-visual-cpp-projects.md)<br>
+[Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)

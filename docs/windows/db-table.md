@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6e084a0f876d0b2598a5317e15057162c602474a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: aa64b7b4785f8865a372a256ecc5c9d3f8738dcb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717126"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385865"
 ---
 # <a name="dbtable"></a>db_table
 
@@ -41,16 +41,16 @@ Bir OLE DB tablosu açılır.
 
 #### <a name="parameters"></a>Parametreler
 
-*db_table*  
+*db_table*<br/>
 Bir veritabanı tablosu (örneğin, "Ürünler") adını belirten dize.
 
-*Adı*  
+*Adı*<br/>
 (İsteğe bağlı) Tablo ile çalışmak için kullandığınız işleyici adı. Birden fazla satır sonuçlarını döndürmek istiyorsanız bu parametreyi belirtmelisiniz. **db_table** belirtilen sahip bir değişken oluşturur *adı* çapraz satır kümesi veya birden çok eylem sorguları yürütmek için kullanılabilir.
 
-*source_name*  
+*source_name*<br/>
 (İsteğe bağlı) `CSession` Değişkeni veya bir sınıf örneğini `db_source` özniteliği uygulanmış komutu yürütür. Bkz: [db_source](../windows/db-source.md).
 
-*HRESULT*  
+*HRESULT*<br/>
 (İsteğe bağlı) Bu veritabanı komutunun HRESULT alacak değişkeni tanımlar. Değişkeni mevcut değilse özniteliği tarafından otomatik olarak eklenecek.
 
 ## <a name="remarks"></a>Açıklamalar

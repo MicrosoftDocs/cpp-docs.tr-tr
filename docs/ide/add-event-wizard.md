@@ -16,57 +16,59 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3c12be98fa94e5109d5113ef65901972bff59a5
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f83ff02329a373e6ba65315cf33f7cb21145eb48
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703618"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402675"
 ---
 # <a name="add-event-wizard"></a>Olay Ekleme Sihirbazı
-Bu sihirbaz, MFC ActiveX denetimi projesi için bir olay ekler. Kendi olay belirtebilirsiniz, genellikle stok olayı özelleştirebilirsiniz veya stok olaylar listesinden seçebilirsiniz.  
-  
-- **Olay adı**  
 
-   Sınıftan olay istemek için Otomasyon istemcileri tarafından kullanılan adını ayarlar. Bir ad girin veya listeden birini seçin.  
-  
-- **Olay türü**  
+Bu sihirbaz, MFC ActiveX denetimi projesi için bir olay ekler. Kendi olay belirtebilirsiniz, genellikle stok olayı özelleştirebilirsiniz veya stok olaylar listesinden seçebilirsiniz.
 
-   Eklenecek olay türünü belirtir. Yalnızca gelen seçerseniz kullanılabilir **olay adı** listesi.  
-  
+- **Olay adı**
+
+   Sınıftan olay istemek için Otomasyon istemcileri tarafından kullanılan adını ayarlar. Bir ad girin veya listeden birini seçin.
+
+- **Olay türü**
+
+   Eklenecek olay türünü belirtir. Yalnızca gelen seçerseniz kullanılabilir **olay adı** listesi.
+
    |Seçenek|Açıklama|
    |------------|-----------------|
    |**Hisse senedi**|Bir düğmeye tıklatma gibi bir stok olayı Bu sınıf için uygulanacak belirtir. Stok olaylar, Microsoft Foundation Class (MFC) Kitaplığı'nda tanımlanır.|
    |**Özel**|Olayın kendi uygulamanız sağlama belirtir.|
 
-- **İç adı**  
+- **İç adı**
 
-   Olayı gönderen üye işlevinin adını ayarlar. Yalnızca özel olaylar için kullanılabilir. Ad temel **olay adı**. Farklı bir ad verin istiyorsanız iç adını değiştirebilirsiniz **olay adı**.  
-  
-- **Parametre türü**  
+   Olayı gönderen üye işlevinin adını ayarlar. Yalnızca özel olaylar için kullanılabilir. Ad temel **olay adı**. Farklı bir ad verin istiyorsanız iç adını değiştirebilirsiniz **olay adı**.
 
-   Tür için ayarlar **parametre adı**. Türü listeden seçin.  
-  
-- **Parametre adı**  
+- **Parametre türü**
 
-   Etkinliğiniz geçmek için bir parametre adını ayarlar. Adını yazdıktan sonra tıklamanız **Ekle** parametre listesi eklemek için.  
-  
-   ' A tıkladığınızda **Ekle**, parametre adı görünür **parametre listesi**.  
-  
+   Tür için ayarlar **parametre adı**. Türü listeden seçin.
+
+- **Parametre adı**
+
+   Etkinliğiniz geçmek için bir parametre adını ayarlar. Adını yazdıktan sonra tıklamanız **Ekle** parametre listesi eklemek için.
+
+   ' A tıkladığınızda **Ekle**, parametre adı görünür **parametre listesi**.
+
    > [!NOTE]
-   > Parametre adı sağlayın ve ardından **son** tıklamadan önce **Ekle**, sonra parametre olaya eklenmez. Yöntemini bulun ve parametre el ile Ekle gerekir. **Parametre listesi**  
-  
-- **Add**  
+   > Parametre adı sağlayın ve ardından **son** tıklamadan önce **Ekle**, sonra parametre olaya eklenmez. Yöntemini bulun ve parametre el ile Ekle gerekir. **Parametre listesi**
 
-   Belirttiğiniz parametre ekler **parametre adı**ve onun türü için **parametre listesi**. ' A tıklamalıdır **Ekle** parametre listesine eklenecek.  
-  
-- **Kaldır**  
+- **Add**
 
-   Seçtiğiniz parametre kaldırır **parametre listesi** listeden.  
-  
-- **Parametre listesi**  
+   Belirttiğiniz parametre ekler **parametre adı**ve onun türü için **parametre listesi**. ' A tıklamalıdır **Ekle** parametre listesine eklenecek.
 
-   Tüm parametreler ve şu anda yöntemi için eklenen türleri görüntüler. Parametre ekleme gibi sihirbaz güncelleştirir **parametre listesi** her parametre türü ile görüntülenecek.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Olay ekleme](../ide/adding-an-event-visual-cpp.md)
+- **Kaldır**
+
+   Seçtiğiniz parametre kaldırır **parametre listesi** listeden.
+
+- **Parametre listesi**
+
+   Tüm parametreler ve şu anda yöntemi için eklenen türleri görüntüler. Parametre ekleme gibi sihirbaz güncelleştirir **parametre listesi** her parametre türü ile görüntülenecek.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Olay ekleme](../ide/adding-an-event-visual-cpp.md)

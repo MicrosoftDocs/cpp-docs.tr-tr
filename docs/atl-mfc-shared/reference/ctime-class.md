@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 758a62b0d93b93798004470de47af2fd3a7ca2eb
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9893ce2ef34e1c708c450e410e44167d22d58898
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765216"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387153"
 ---
 # <a name="ctime-class"></a>CTime sınıfı
 
@@ -663,12 +663,12 @@ Güncelleştirilmiş `CArchive` nesne.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)   
-[_ftime_s, _ftime32_s, _ftime64_s](../../c-runtime-library/reference/ftime-s-ftime32-s-ftime64-s.md)   
-[gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)   
-[localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)   
-[strftime, wcsftime, _strftime_l, _wcsftime_l](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)   
-[_time64 _time32, saat](../../c-runtime-library/reference/time-time32-time64.md)   
-[CTimeSpan sınıfı](../../atl-mfc-shared/reference/ctimespan-class.md)   
-[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
+[asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)<br/>
+[_ftime_s, _ftime32_s, _ftime64_s](../../c-runtime-library/reference/ftime-s-ftime32-s-ftime64-s.md)<br/>
+[gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
+[localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)<br/>
+[strftime, wcsftime, _strftime_l, _wcsftime_l](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
+[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
+[CTimeSpan Sınıfı](../../atl-mfc-shared/reference/ctimespan-class.md)<br/>
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)

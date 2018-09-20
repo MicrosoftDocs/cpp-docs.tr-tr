@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 62e4cb9d6eebee4235db2bc38b2cd20935493b02
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: bd4a25b208232c8a0923e33156730fc5612219a5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607986"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388205"
 ---
 # <a name="creating-a-custom-brush-image-editor-for-icons"></a>Özel Fırça Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 
@@ -76,6 +76,6 @@ Yok.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)  
-[Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)  
+[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
 [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)

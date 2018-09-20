@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e3eade86404bcd4fef7ce3356d36a43ac6a59a8f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 047754338566d476fa8e832d58dd2d4cd0776a63
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597761"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46418404"
 ---
 # <a name="argtraits-structure"></a>ArgTraits Yapısı
 
@@ -120,37 +120,37 @@ struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2,
 
 ### <a name="parameters"></a>Parametreler
 
-*TMemberFunction*  
+*TMemberFunction*<br/>
 TypeName parametresi herhangi eşleşemez bir ArgTraits yapısı için `Invoke` metodu imzası.
 
-*TDelegateInterface*  
+*TDelegateInterface*<br/>
 Bir temsilci arabirimi.
 
-*TArg1*  
+*TArg1*<br/>
 İlk bağımsız değişkeninin türü `Invoke` yöntemi.
 
-*TArg2*  
+*TArg2*<br/>
 İkinci bağımsız değişkeni türünü `Invoke` yöntemi.
 
-*TArg3*  
+*TArg3*<br/>
 Üçüncü bağımsız değişkeninin türü `Invoke` yöntemi.
 
-*TArg4*  
+*TArg4*<br/>
 Dördüncü bağımsız değişkeninin türü `Invoke` yöntemi.
 
-*TArg5*  
+*TArg5*<br/>
 Beşinci bağımsız değişkeninin türü `Invoke` yöntemi.
 
-*TArg6*  
+*TArg6*<br/>
 Altıncı bağımsız değişkeninin türü `Invoke` yöntemi.
 
-*TArg7*  
+*TArg7*<br/>
 Yedinci bağımsız değişkeninin türü `Invoke` yöntemi.
 
-*TArg8*  
+*TArg8*<br/>
 Sekizinci bağımsız değişkeninin türü `Invoke` yöntemi.
 
-*TArg9*  
+*TArg9*<br/>
 Dokuzuncu bağımsız değişkeninin türü `Invoke` yöntemi.
 
 ## <a name="remarks"></a>Açıklamalar

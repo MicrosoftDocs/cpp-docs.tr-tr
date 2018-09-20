@@ -18,60 +18,67 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12971af6bed7c04c6f6f214f0b583a4f7e6eb7a1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 028c74bdc0c937fe59b621b81fb6abb8def63707
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33366310"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385111"
 ---
 # <a name="cmemoryexception-class"></a>CMemoryException sınıfı
-Bir bellek yetersiz özel durumu temsil eder.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CMemoryException : public CSimpleException  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CMemoryException::CMemoryException](#cmemoryexception)|Oluşturan bir `CMemoryException` nesnesi.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Başka hiçbir niteliğe gerekli veya olası değil. Bellek özel durumlar tarafından otomatik olarak **yeni**. Kendi bellek işlevleri yazarsanız, kullanarak `malloc`, örnek olduktan sonra bellek özel durumları atma için sorumlu için.  
-  
- Daha fazla bilgi için `CMemoryException`, makaleye bakın [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md).  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- [CException](../../mfc/reference/cexception-class.md)  
-  
- [CSimpleException](../../mfc/reference/csimpleexception-class.md)  
-  
- `CMemoryException`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afx.h  
-  
-##  <a name="cmemoryexception"></a>  CMemoryException::CMemoryException  
- Oluşturan bir `CMemoryException` nesnesi.  
-  
-```  
-CMemoryException();  
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bu oluşturucu doğrudan kullanmayın, ancak bunun yerine genel bir işlevi çağırmak [AfxThrowMemoryException](exception-processing.md#afxthrowmemoryexception). Bu genel işlevi, önceden ayrılmış belleğe özel durum nesnesi oluşturur çünkü bir bellek yetersiz durumda başarılı olabilir. özel durum işleme hakkında daha fazla bilgi için bkz: [özel durumları](../exception-handling-in-mfc.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CException sınıfı](cexception-class.md)   
- [Hiyerarşi Grafiği](../hierarchy-chart.md)
+
+Bellek yetersiz özel durum koşulunu temsil eder.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CMemoryException : public CSimpleException
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CMemoryException::CMemoryException](#cmemoryexception)|Oluşturur bir `CMemoryException` nesne.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Başka hiçbir nitelik gerekli veya mümkün değil. Bellek özel durumlar tarafından otomatik olarak **yeni**. Kendi bellek işlevleri yazarsanız kullanarak `malloc`için örnek, ardından bellek özel durumları atma için sorumludur.
+
+Daha fazla bilgi için `CMemoryException`, makaleye göz atın [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md).
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+[CException](../../mfc/reference/cexception-class.md)
+
+[CSimpleException](../../mfc/reference/csimpleexception-class.md)
+
+`CMemoryException`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afx.h
+
+##  <a name="cmemoryexception"></a>  CMemoryException::CMemoryException
+
+Oluşturur bir `CMemoryException` nesne.
+
+```
+CMemoryException();
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu oluşturucu doğrudan kullanmaz, bunun yerine genel işlev çağrısı [AfxThrowMemoryException](exception-processing.md#afxthrowmemoryexception). Bu genel işlev, önceden ayrılmış bellek içinde özel durum nesnesi oluşturur çünkü bir bellek yetersiz duruma başarılı olabilir. özel durum işleme hakkında daha fazla bilgi için bkz [özel durumları](../exception-handling-in-mfc.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CException Sınıfı](cexception-class.md)<br/>
+[Hiyerarşi Grafiği](../hierarchy-chart.md)
 
 
 

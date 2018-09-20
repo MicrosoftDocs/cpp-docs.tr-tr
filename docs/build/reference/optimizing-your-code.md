@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 180586f55ea57100286c3c598ac62eb83107d7c9
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: b715f3cc6bc505d9698484ad7c47b8262f2bc728
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714382"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444417"
 ---
 # <a name="optimizing-your-code"></a>Kodunuzu iyileştirme
 
@@ -33,11 +33,14 @@ Yürütülebilir hale getirerek, Hızlı yürütme hızını ve küçük kod boy
 
 Aşağıdaki konularda C/C++ dilinde iyileştirme özelliklerinden bazıları açıklanmaktadır.
 
-[En iyi duruma getirme pragmaları ve anahtar sözcükleri](../../build/reference/optimization-pragmas-and-keywords.md) anahtar sözcükler ve pragmalar performansını artırmak için kodunuzda kullanabileceğiniz bir listesi.
+[Pragmaları ve Anahtar Sözcükleri İyileştirme](../../build/reference/optimization-pragmas-and-keywords.md)<br/>
+Anahtar sözcükler ve pragmalar performansını artırmak için kodunuzda kullanabileceğiniz listesi.
 
-[Kategoriye göre listelenmiş derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md) listesini **/O** derleyici seçenekleri, özellikle yürütme hızını veya kod boyutunu etkiler.
+[Kategorilere Göre Listelenen Derleyici Seçenekleri](../../build/reference/compiler-options-listed-by-category.md)<br/>
+Listesini **/O** derleyici seçenekleri, özellikle yürütme hızını veya kod boyutunu etkiler.
 
-[Rvalue başvuru Bildirimcisi: & &](../../cpp/rvalue-reference-declarator-amp-amp.md) uygulamasını Rvalue başvurularını destekler *taşıma semantiği*. Taşıma semantiği Şablon Kütüphanesi, bu şablonları kullanan uygulamaların performansını uygulamak için kullanılan önemli ölçüde artırabilir.
+[Rvalue Başvuru Bildirimcisi: &&](../../cpp/rvalue-reference-declarator-amp-amp.md)<br/>
+Rvalue başvuruları uygulamasını destekler *taşıma semantiği*. Taşıma semantiği Şablon Kütüphanesi, bu şablonları kullanan uygulamaların performansını uygulamak için kullanılan önemli ölçüde artırabilir.
 
 ### <a name="the-optimize-pragma"></a>Optimize pragması
 
@@ -59,9 +62,11 @@ Paradoxically, bir program hızını en iyi duruma getirme, kodun daha yavaş ç
 
 Aşağıdaki konular, iyi bir programlama uygulamalarını tartışın.
 
-[Zamana bağlı kodu geliştirme ipuçları](../../build/reference/tips-for-improving-time-critical-code.md) teknikleri daha iyi kodlama daha iyi performans yield. Bu konuda, zaman açısından kritik kod bölümlerini tatmin edici bir şekilde gerçekleştirdiğinizden emin olun yardımcı olabilecek teknikleri kodlama önerir.
+[Zamana Bağlı Kodu Geliştirme İpuçları](../../build/reference/tips-for-improving-time-critical-code.md)<br/>
+Teknikleri daha iyi kodlama daha iyi performans sağlayabilir. Bu konuda, zaman açısından kritik kod bölümlerini tatmin edici bir şekilde gerçekleştirdiğinizden emin olun yardımcı olabilecek teknikleri kodlama önerir.
 
-[En iyi uygulamaları iyileştirme](../../build/reference/optimization-best-practices.md) uygulamanızı en iyi duruma getirmek en iyi nasıl hakkında genel yönergeler sağlar.
+[En İyi Uygulamaları İyileştirme](../../build/reference/optimization-best-practices.md)<br/>
+Uygulamanızı en iyi duruma getirmek en iyi nasıl hakkında genel yönergeler sağlar.
 
 ## <a name="debugging-optimized-code"></a>En iyi duruma getirilmiş kodda hata ayıklama
 

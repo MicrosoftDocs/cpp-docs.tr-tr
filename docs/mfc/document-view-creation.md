@@ -1,5 +1,5 @@
 ---
-title: Belge görünüm oluşturma | Microsoft Docs
+title: Belge-görünüm oluşturma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,28 +22,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 894bb5a0b3a4c86d764fc6f4a0e4b9ae18422669
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 0deb187a6540af71a1dc72b730347374bc25f963
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931859"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423082"
 ---
 # <a name="documentview-creation"></a>Belge/Görünüm Oluşturma
-Uygulamaları framework sağlayan **yeni** ve **açık** komutları (diğerlerinin arasında) üzerinde **dosya** menüsü. Yeni bir belge ve ilişkili görünüm ve çerçeve penceresi oluşturma işbirlikçi çaba uygulama nesnesi, bir belge şablonu, yeni oluşturulan belge ve yeni oluşturulan çerçeve penceresi arasında ' dir. Aşağıdaki tabloda, hangi nesnelerin ne oluşturmak özetler.  
-  
-### <a name="object-creators"></a>Nesne oluşturucuları  
-  
-|Oluşturucu|Oluşturur|  
-|-------------|-------------|  
-|Uygulama nesnesi|Belge şablonu|  
-|Belge şablonu|Belge|  
-|Belge şablonu|Çerçeve penceresi|  
-|Çerçeve penceresi|Görüntüle|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)   
- [Belge şablonu oluşturma](../mfc/document-template-creation.md)   
- [MFC nesneleri arasındaki ilişki](../mfc/relationships-among-mfc-objects.md)   
- [Yeni Belgeler, Pencereler ve Görünümler Oluşturma](../mfc/creating-new-documents-windows-and-views.md)
+
+Framework uygulamalarında kaynakları **yeni** ve **açık** komutları (diğerlerinin arasında) üzerinde **dosya** menüsü. Yeni bir belge ve ilişkili görünüm ve çerçeve penceresi oluşturma, uygulama nesnesi, bir belge şablonu, yeni oluşturulan belge ve yeni oluşturulan çerçeve penceresi arasında işbirliği yapan bir işlemdir. Aşağıdaki tabloda, hangi nesnelerin ne oluşturma özetlenmektedir.
+
+### <a name="object-creators"></a>Nesne oluşturucuları
+
+|Oluşturucu|Oluşturur|
+|-------------|-------------|
+|Uygulama nesnesi|Belge şablonu|
+|Belge şablonu|Belge|
+|Belge şablonu|Çerçeve penceresi|
+|Çerçeve penceresi|Görüntüle|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
+[Belge Şablonu Oluşturma](../mfc/document-template-creation.md)<br/>
+[FC Nesneleri Arasındaki İlişki](../mfc/relationships-among-mfc-objects.md)<br/>
+[Yeni Belgeler, Pencereler ve Görünümler Oluşturma](../mfc/creating-new-documents-windows-and-views.md)
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a79f731ef0080e38e2c1b60d8e4924a5bf75089e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: fdea60808118ecd7caa04fab3421c481d908e833
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600301"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391819"
 ---
 # <a name="idlquote"></a>idl_quote
 
@@ -38,7 +38,7 @@ Visual C++'ın geçerli sürümünde desteklenmeyen IDL yapıları kullanmanıza
 
 ### <a name="parameters"></a>Parametreler
 
-*Metin*  
+*Metin*<br/>
 Visual C++ derleyicisi aracılığıyla oluşturulan .idl dosyasına bir derleyici hatası dönmeden iletmek için istediğinize öznitelik adı.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -99,5 +99,5 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
 [Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)  

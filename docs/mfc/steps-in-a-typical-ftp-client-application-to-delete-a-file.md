@@ -17,29 +17,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 220d1d38c6be33652a8613c60c4e4baa053a8296
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 1d1db3418aa96fa779ac3341e12d90d66ba657c4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36951926"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46384539"
 ---
 # <a name="steps-in-a-typical-ftp-client-application-to-delete-a-file"></a>Dosya Silmek için Tipik Bir FTP İstemci Uygulamasındaki Adımlar
-Aşağıdaki tabloda, bir dosya sildiğinde bir tipik FTP istemci uygulamasında gerçekleştirebileceğiniz adımlar gösterilmektedir.  
-  
-|Amacınız|Eylemleri|Etkiler|  
-|---------------|----------------------|-------------|  
-|Bir FTP oturumunun başlayın.|Oluşturma bir [CInternetSession](../mfc/reference/cinternetsession-class.md) nesnesi.|WinINet başlatır ve sunucusuna bağlanır.|  
-|Bir FTP sunucusuna bağlanın.|Kullanım [CInternetSession::GetFtpConnection](../mfc/reference/cinternetsession-class.md#getftpconnection).|Döndürür bir [CFtpConnection](../mfc/reference/cftpconnection-class.md) nesnesi.|  
-|FTP sunucusunda doğru dizinde olduğunuzdan emin olmak için kontrol edin.|Kullanım [CFtpConnection::GetCurrentDirectory](../mfc/reference/cftpconnection-class.md#getcurrentdirectory) veya [CFtpConnection::GetCurrentDirectoryAsURL](../mfc/reference/cftpconnection-class.md#getcurrentdirectoryasurl).|Adı veya şu anda seçili üye işlevi bağlı olarak sunucuya bağlı dizininin URL'sini döndürür.|  
-|Sunucuda yeni bir FTP dizinine geçin.|Kullanım [CFtpConnection::SetCurrentDirectory](../mfc/reference/cftpconnection-class.md#setcurrentdirectory).|Şu anda sunucu üzerinde bağlı dizini değiştirir.|  
-|İlk dosya FTP dizinde bulun.|Kullanım [CFtpFileFind::FindFile](../mfc/reference/cftpfilefind-class.md#findfile).|İlk dosyayı bulur. Hiçbir dosya bulunamazsa FALSE döndürür.|  
-|Sonraki dosyasını FTP dizinde bulun.|Kullanım [CFtpFileFind::FindNextFile](../mfc/reference/cftpfilefind-class.md#findnextfile).|Sonraki dosyayı bulur. Dosya bulunamazsa FALSE döndürür.|  
-|Tarafından bulunan dosya silme `FindFile` veya `FindNextFile`.|Kullanım [CFtpConnection::Remove](../mfc/reference/cftpconnection-class.md#remove), dosya adını kullanarak döndürülen `FindFile` veya `FindNextFile`.|Okuma veya yazma için dosya sunucusunda siler.|  
-|Özel durumları işleme.|Kullanım [CInternetException](../mfc/reference/cinternetexception-class.md) sınıfı.|Tüm ortak Internet özel durum türleri işler.|  
-|FTP oturumunu sonlandırın.|Elden [CInternetSession](../mfc/reference/cinternetsession-class.md) nesnesi.|Otomatik olarak açık dosya tanıtıcıları ve bağlantıları temizler.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Win32 Internet Uzantıları (WinINet)](../mfc/win32-internet-extensions-wininet.md)   
- [Internet İstemci sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)   
- [MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+
+Aşağıdaki tabloda, bir dosyayı silen bir tipik FTP istemci uygulamasında gerçekleştirebileceğiniz adımlar gösterilmektedir.
+
+|Amacınız|İşlemlerde|Etkiler|
+|---------------|----------------------|-------------|
+|Bir FTP oturumunun başlayın.|Oluşturma bir [Cınternetsession](../mfc/reference/cinternetsession-class.md) nesne.|WinINet başlatır ve sunucusuna bağlanır.|
+|Bir FTP sunucusuna bağlanın.|Kullanım [CInternetSession::GetFtpConnection](../mfc/reference/cinternetsession-class.md#getftpconnection).|Döndürür bir [CFtpConnection](../mfc/reference/cftpconnection-class.md) nesne.|
+|FTP sunucusunun doğru dizininde olduğunuzdan emin olmak için kontrol edin.|Kullanım [CFtpConnection::GetCurrentDirectory](../mfc/reference/cftpconnection-class.md#getcurrentdirectory) veya [CFtpConnection::GetCurrentDirectoryAsURL](../mfc/reference/cftpconnection-class.md#getcurrentdirectoryasurl).|Adı veya URL'si şu anda sunucuda seçilen üye işlevi bağlı olarak, bağlı olduğunuz bir dizinin döndürür.|
+|Sunucuda yeni bir FTP dizinine geçin.|Kullanım [CFtpConnection::SetCurrentDirectory](../mfc/reference/cftpconnection-class.md#setcurrentdirectory).|Şu anda sunucu üzerinde bağlıyken dizinini değiştirir.|
+|FTP dizin ilk dosyayı bulun.|Kullanım [CFtpFileFind::FindFile](../mfc/reference/cftpfilefind-class.md#findfile).|İlk dosya bulur. Dosya bulunamazsa false değerini döndürür.|
+|FTP dizin sonraki dosyasını bulun.|Kullanım [CFtpFileFind::FindNextFile](../mfc/reference/cftpfilefind-class.md#findnextfile).|Sonraki dosya bulur. Dosya bulunamazsa false değerini döndürür.|
+|Tarafından bulunan dosya silme `FindFile` veya `FindNextFile`.|Kullanım [CFtpConnection::Remove](../mfc/reference/cftpconnection-class.md#remove), tarafından döndürülen dosya adını kullanarak `FindFile` veya `FindNextFile`.|Okuma veya yazma için dosya sunucusunda siler.|
+|Özel durumları işler.|Kullanım [Cınternetexception](../mfc/reference/cinternetexception-class.md) sınıfı.|Tüm ortak Internet özel durum türlerini işler.|
+|FTP oturumunu sonlandırın.|Elden [Cınternetsession](../mfc/reference/cinternetsession-class.md) nesne.|Dosya tanıtıcılarını Aç ve bağlantıları tarafından otomatik olarak temizlenir.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
+[Internet İstemci Sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)<br/>
+[MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)

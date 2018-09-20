@@ -12,24 +12,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3ce31abf56dac70a2a55ae09866d6de1bfedbbf
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 408f9340ac71b0e57996cdc0d1c3f87ed5dcfa79
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695437"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46415245"
 ---
 # <a name="26-master-and-synchronization-directives"></a>2.6 Ana ve Eşitleme Yönergeleri
-Aşağıdaki bölümlerde açıklanmaktadır:  
-  
--   **ana** oluşturun.  
-  
--   **kritik** oluşturun.  
-  
--   **engel** yönergesi.  
-  
--   **atomik** oluşturun.  
-  
--   **flush** yönergesi.  
-  
--   **sıralı** oluşturun.
+
+Aşağıdaki bölümlerde açıklanmıştır:
+
+- **ana** oluşturun.
+
+- **kritik** oluşturun.
+
+- **engel** yönergesi.
+
+- **atomik** oluşturun.
+
+- **Temizleme** yönergesi.
+
+- **sıralı** oluşturun.

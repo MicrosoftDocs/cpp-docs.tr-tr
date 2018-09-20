@@ -12,22 +12,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba24e923051eb887db2a81c1d9765d31a4ef7b24
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 792b95baef2821bb693d9a90fc228d2b0c508e1f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689720"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420367"
 ---
 # <a name="323-ompsetlock-and-ompsetnestlock-functions"></a>3.2.3 omp_set_lock ve omp_set_nest_lock İşlevleri
-Bu işlevlerin her biri belirtilen kilit kullanılabilir ve kilidi ayarlar kadar işlevi yürütme iş parçacığı engeller. Basit bir kilit kilidi olduğunda kullanılabilir. Kilitli olması veya işlev yürütme iş parçacığı tarafından zaten sahip olduğu nestable kilit kullanılabilir. Biçimi aşağıdaki gibidir:  
-  
-```  
-#include <omp.h>  
-void omp_set_lock(omp_lock_t *lock);  
-void omp_set_nest_lock(omp_nest_lock_t *lock);  
-```  
-  
- Bağımsız değişkeni için basit bir kilitleme `omp_set_lock` işlevi bir başlatılmış kilit değişkenine işaret etmelidir. Kilit sahipliğini işlevi yürütme iş parçacığına verilir.  
-  
- Nestable kilit, bağımsız değişkeni için `omp_set_nest_lock` işlevi bir başlatılmış kilit değişkenine işaret etmelidir. İç içe geçmiş sayısı artar ve iş parçacığı verilir veya kilidi sahipliğini korur.
+
+Bu işlevlerin her biri, belirtilen kilit kullanılabilir ve ardından kilit ayarlar kadar işlevi yürütme iş parçacığını engeller. Basit bir kilit kilidi ise kullanılabilir. Nestable kilit kilitli olup olmadığını veya işlev yürütme iş parçacığı tarafından zaten aitse kullanılabilir. Biçimi aşağıdaki gibidir:
+
+```
+#include <omp.h>
+void omp_set_lock(omp_lock_t *lock);
+void omp_set_nest_lock(omp_nest_lock_t *lock);
+```
+
+Basit bir kilit, bağımsız değişkeni için `omp_set_lock` işlevi bir başlatılmış kilit değişkene işaret etmelidir. Kilidi sahipliğini, işlevi yürütme iş parçacığı için verilir.
+
+Nestable kilit, bağımsız değişkeni için `omp_set_nest_lock` işlevi bir başlatılmış kilit değişkene işaret etmelidir. İç içe geçme sayısının artırılması ve iş parçacığı verilir veya kilidi sahipliğini korur.

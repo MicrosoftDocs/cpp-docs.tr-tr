@@ -12,26 +12,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef2732c4f8713466d282346ea240bd3c41886ce0
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: cfff3b0c17dd098b5d802af61a7ca1f81cb02845
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687159"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46373967"
 ---
 # <a name="251-parallel-for-construct"></a>2.5.1 Yapı için parallel
-**İçin paralel** yönergesi olup bir kısayol bir **paralel** içeren tek bir bölge **için** yönergesi. Söz dizimi **için paralel** yönergesi aşağıdaki gibidir:  
-  
-```  
-#pragma omp parallel for [clause[[,] clause] ...] new-linefor-loop  
-```  
-  
- Bu yönerge tüm yan tümcelerinde izin verir **paralel** yönergesi ve **için** yönerge dışında `nowait` ile aynı anlamı ve kısıtlamaları yan tümcesi. Semantiğini açıkça belirtilmesi için özdeş bir **paralel** hemen sonrasında yönergesi bir **için** yönergesi.  
-  
-## <a name="cross-references"></a>Çapraz referanslar:  
-  
--   **Paralel** yönerge, bkz: [bölüm 2.3](../../parallel/openmp/2-3-parallel-construct.md) sayfasında 8.  
-  
--   **için** yönerge, bkz: [bölüm 2.4.1](../../parallel/openmp/2-4-1-for-construct.md) sayfasında 11.  
-  
--   Veri öznitelik yan tümceleri, bkz: [2.7.2 veri paylaşım öznitelik yan tümceleri](../../parallel/openmp/2-7-2-data-sharing-attribute-clauses.md) sayfasında 25.
+
+**İçin paralel** yönergesi olduğu için bir kısayol bir **paralel** içeren tek bir bölge **için** yönergesi. Söz dizimi **için paralel** yönerge aşağıdaki gibidir:
+
+```
+#pragma omp parallel for [clause[[,] clause] ...] new-linefor-loop
+```
+
+Bu yönerge yan tümcesinden sağlayan **paralel** yönergesi ve **için** dışında yönerge `nowait` aynı anlamlara ve kısıtlamalar yan tümcesi. Semantiği açıkça belirtilmesi için özdeş bir **paralel** yönergesi hemen arkasından bir **için** yönergesi.
+
+## <a name="cross-references"></a>Başvuruları çapraz:
+
+- **Paralel** yönergesine bakın [bölümü 2.3](../../parallel/openmp/2-3-parallel-construct.md) 8 sayfasında.
+
+- **için** yönergesine bakın [bölümü 2.4.1](../../parallel/openmp/2-4-1-for-construct.md) sayfasında 11.
+
+- Veri özniteliği yan tümcesi bkz [2.7.2 veri paylaşım öznitelik yan tümceleri](../../parallel/openmp/2-7-2-data-sharing-attribute-clauses.md) sayfasında 25.

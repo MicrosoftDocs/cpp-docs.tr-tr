@@ -12,14 +12,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 434acbaa23826636a221deb77f1930283e43e9de
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: d8a4278d89727f47e85d20809060fc8cef421998
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42464967"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427218"
 ---
 # <a name="porting-guide-com-spy"></a>Taşıma Kılavuzu: COM Spy
+
 Bu konuda, daha eski Visual C++ projelerini Visual Studio'nun en son sürüme yükseltme işlemini gösteren makaleler serisinin saniyedir. Bu konudaki örnek kod, en son Visual Studio 2005 ile derlendi.  
   
 ## <a name="comspy"></a>COMSpy  
@@ -175,6 +176,6 @@ Bu sorunları olmadan ve COM Spy çalışmaya çalıştı ve izlemek için yapı
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
-[Taşıma ve yükseltme: örnekler ve örnek olay incelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)   
-[Sonraki örnek: Spy ++](../porting/porting-guide-spy-increment.md)   
+[Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
+[Sonraki örnek: Spy ++](../porting/porting-guide-spy-increment.md)<br/>
 [Önceki örnek: MFC Scribble](../porting/porting-guide-mfc-scribble.md)

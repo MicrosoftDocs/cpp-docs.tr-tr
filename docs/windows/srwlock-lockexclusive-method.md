@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6218bfe1bbdc27749bed1395108b7a30533c50b7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b8aa6927acc165870ebb8f2a6128eaabbb1b144c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596889"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46413048"
 ---
 # <a name="srwlocklockexclusive-method"></a>SRWLock::LockExclusive Yöntemi
 
@@ -40,7 +40,7 @@ static SyncLockExclusive LockExclusive(
 
 ### <a name="parameters"></a>Parametreler
 
-*lock*  
+*lock*<br/>
 İşaretçi bir **SRWLock** nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri

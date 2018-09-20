@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bf01f1d4b1c687ed919b94f651ef7ccf4b0bf45d
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 97ad11f7982fd5a413c6740fe969c5edc20636a7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313461"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46389388"
 ---
 # <a name="adding-version-information-for-another-language-c"></a>Başka bir dil (C++) için sürüm bilgileri ekleme
 
@@ -51,5 +51,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sürüm Bilgileri Düzenleyicisi](../windows/version-information-editor.md)  
+[Sürüm Bilgileri Düzenleyicisi](../windows/version-information-editor.md)<br/>
 [Sürüm bilgileri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)

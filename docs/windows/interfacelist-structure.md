@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 61a8e7b36448a485705b914fbb37892271d7d9fc
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7ce497c621f116c4755e8b47d148e24a9043b46b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597172"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374756"
 ---
 # <a name="interfacelist-structure"></a>InterfaceList Yapısı
 
@@ -40,10 +40,10 @@ struct InterfaceList;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Arabirim adı; özyinelemeli listedeki ilk arabirim.
 
-*U*  
+*U*<br/>
 Arabirim adı; özyinelemeli listesinde kalan arabirimler.
 
 ## <a name="remarks"></a>Açıklamalar

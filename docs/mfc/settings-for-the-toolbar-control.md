@@ -15,19 +15,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03ff905b76ba4a215f6993c1bb0002dd1f87e06b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 81631ba25f898e3740b82c0fab9d5af5da930117
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379713"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46373366"
 ---
 # <a name="settings-for-the-toolbar-control"></a>Araç Çubuğu Denetimi için Ayarlar
-Araç çubuğundaki düğmeler bir bit eşlem, bir dize ya da her ikisini de görüntüleyebilirsiniz. Varsayılan olarak, görüntü boyutu 16 tarafından 15 piksel boyutları için ayarlanır. Tüm düğmeleri varsayılan 24 x 22 piksel aynı genişliğe değildir. Bir araç çubuğunun yüksekliği düğmeleri yüksekliğini tarafından belirlenir ve bir araç çubuğunun genişliği de varsayılan olarak üst pencerenin istemci alanını genişliğini ile aynıdır.  
-  
- Araç çubuğu eklemek, silmek veya araç çubuğu düğmeleri yeniden düzenlemek kullanıcı izin veren bir sistem tanımlı özelleştirme iletişim kutusu içeren yerleşik özelleştirme özellikleri olabilir. Bir uygulama özelleştirme özelliklerini kullanıcı tarafından kullanılabilir ve kullanıcı araç çubuğunu özelleştirebilirsiniz ölçüde denetimleri olup olmadığını belirler. Araç çubuğunu özelleştirme hakkında daha fazla bilgi için bkz [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) içinde *MFC başvurusu*.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CToolBarCtrl kullanma](../mfc/using-ctoolbarctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Araç çubuğundaki düğmeler, bit eşlem, bir dize veya her ikisini de görüntüleyebilirsiniz. Varsayılan olarak, görüntü boyutu 16 tarafından 15 piksel boyutları için ayarlanır. Tüm düğmeleri aynı genişliğe, varsayılan 24 22 piksel değildir. Bir araç çubuğunun yüksekliği düğmeleri yüksekliğini tarafından belirlenir ve bir araç çubuğunun genişliği Ayrıca varsayılan ana pencerenin istemci alanının genişliği ile aynıdır.
+
+Araç çubuğu eklemek, silmek veya araç çubuğu düğmeleri yeniden düzenlemek kullanıcının olanak tanıyan bir sistem tarafından tanımlanan özelleştirme iletişim kutusunda da dahil olmak üzere yerleşik özelleştirme özelliklerine sahip olabilir. Bir uygulamayı özelleştirme özelliklerini kullanıcı tarafından kullanılabilir ve kullanıcı araç çubuğunu özelleştirme uzantı denetimlerini belirler. Araç çubuğunu özelleştirme hakkında daha fazla bilgi için bkz. [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) içinde *MFC başvurusu*.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CToolBarCtrl Kullanma](../mfc/using-ctoolbarctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8de7bbfb2f00f5e1a909a83a5399e2d564747962
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: fafdb99296e19318f183b6c0893d9b4e91f0cd7b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214001"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422642"
 ---
 # <a name="appobject"></a>appobject
 
@@ -72,6 +72,6 @@ class A : public ICustom {
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Sınıf Öznitelikleri](../windows/class-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Sınıf Öznitelikleri](../windows/class-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  

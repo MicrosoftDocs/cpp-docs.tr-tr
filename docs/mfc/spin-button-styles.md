@@ -17,34 +17,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 223b7e0875a5382edf5f4d350c9343d117768c41
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 71da44858ea018d0393af6267e4bb522a2c57391
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36953784"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46393600"
 ---
 # <a name="spin-button-styles"></a>Döndür Düğmesi Stilleri
-Değer değiştirme düğmesi ayarlarını birçok ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)) stilleri tarafından denetlenir. Kullanarak aşağıdaki stiller ayarlayabilirsiniz **özellikleri** iletişim kutusu Düzenleyicisi penceresinde.  
-  
--   **Yönlendirme** dikey veya yatay. Ok düğmelerini yönünü denetler. UDS_HORZ stili ile ilişkilendirilmiş.  
-  
--   **Hizalama** eklenmemiş, sol veya sağ biri. Değer değiştirme düğmesi konumunu kontrol eder. Sol ve sağ değer değiştirme düğmesi yanındaki arkadaş penceresi getirin. Değer değiştirme düğmesi uyum sağlayacak şekilde arkadaş penceresinin genişliğini azalır. UDS_ALIGNLEFT ve UDS_ALIGNRIGHT stilleri ile ilişkilendirilmiş.  
-  
--   **Arkadaş otomatik** otomatik olarak değer değiştirme düğmesi arkadaş penceresine olarak Z-sırası önceki pencere seçer. Bir iletişim şablonunu, değer değiştirme düğmesi sekme sırası önündeki denetimi budur. UDS_AUTOBUDDY stili ile ilişkilendirilmiş.  
-  
--   **Arkadaş tamsayı ayarlamak** artırmak ve geçerli konumu değiştikçe arkadaş penceresinin başlık azaltma döndürme denetimi neden olur. UDS_SETBUDDYINT stili ile ilişkilendirilmiş.  
-  
--   **Hiçbir binlerce** binlerce eklemez arkadaş penceresinin başlık değerindeki ayırıcı. UDS_NOTHOUSANDS stili ile ilişkilendirilmiş.  
-  
+
+Birçok değer değiştirme düğmesi için ayarları ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)) stilleri tarafından denetlenir. Aşağıdaki stilleri kullanarak ayarlayabilirsiniz **özellikleri** iletişim kutusu Düzenleyicisi penceresinde.
+
+- **Yönlendirme** dikey veya yatay. Ok düğmelerini yönünü denetler. UDS_HORZ stil ile ilişkili.
+
+- **Hizalama** eklenmemiş, sola veya sağa biri. Değer değiştirme düğmesi konumunu denetler. Sol ve sağda değer değiştirme düğmesi yanındaki buddy penceresindeki getirin. Buddy penceresinin genişliğini değer değiştirme düğmesi uyum sağlayacak şekilde azalır. UDS_ALIGNLEFT ve UDS_ALIGNRIGHT stilleri ile ilişkili.
+
+- **Otomatik Buddy** otomatik buddy penceresindeki Değer değiştirme düğmesi için olarak Z düzeninde önceki pencereyi seçer. Bir iletişim şablonunda sekme sırasının değer değiştirme düğmesi önündeki denetim budur. UDS_AUTOBUDDY stil ile ilişkili.
+
+- **Arkadaş tamsayı ayarlamak** artırmak ve geçerli konumu değiştikçe buddy penceresinin başlık azaltma döndürme denetimi neden olur. UDS_SETBUDDYINT stil ile ilişkili.
+
+- **Binler** binlik eklemez buddy penceresinin başlık değerindeki ayırıcı. UDS_NOTHOUSANDS stil ile ilişkili.
+
     > [!NOTE]
-    >  Arkadaş denetimden tamsayı değeri almak için iletişim kutusu veri değişimi (DDX) kullanmak istiyorsanız, bu stili ayarlayın. `DDX_Text` Katıştırılmış binlik basamak ayırıcıları kabul etmiyor.  
-  
--   **Kaydırma** "değer artırılır veya indirildiği denetimi aralığının dışında olduğundan sarmalamak için" konumunu neden olur. UDS_WRAP stili ile ilişkilendirilmiş.  
-  
--   **Ok tuşları** artırın veya yukarı ve aşağı ok tuşları basıldığında konumu azaltma değer değiştirme düğmesi neden olur. UDS_ARROWKEYS stili ile ilişkilendirilmiş.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CSpinButtonCtrl kullanma](../mfc/using-cspinbuttonctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+    >  Arkadaş denetiminden tamsayı değerini almak için iletişim kutusu veri değişimi (DDX) kullanmak istiyorsanız bu stilini ayarlayın. `DDX_Text` Katıştırılmış binlik basamak ayırıcıları kabul etmiyor.
+
+- **Kaydırma** "değer artırılması veya azaltılması denetim aralığının dışında olduğundan sarmalamak için" konumun neden olur. UDS_WRAP stil ile ilişkili.
+
+- **Ok tuşları** artırın veya konumu yukarı ok ve aşağı ok tuşlarına basıldığında azaltma değer değiştirme düğmesi neden olur. UDS_ARROWKEYS stil ile ilişkili.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CSpinButtonCtrl Kullanma](../mfc/using-cspinbuttonctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2fa16a2cf15d5004ff80dda3188d79ffcba72ec1
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 4b6e05e654b66c2178b7dc6e772c95df89512d1d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316217"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46399853"
 ---
 # <a name="dialog-editor-tab-toolbox-c"></a>İletişim kutusu Düzenleyicisi sekmesi, araç kutusu (C++)
 
@@ -100,10 +100,10 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Denetimler](../mfc/controls-mfc.md)  
-[Denetim Sınıfları](../mfc/control-classes.md)  
-[İletişim Kutusu Sınıfları](../mfc/dialog-box-classes.md)  
-[Kaydırma çubuğu stilleri](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles)  
-[Zengin Düzenleme Denetimine Örnekler](../mfc/rich-edit-control-examples.md)  
-[İletişim Kutusu Denetimleri için Olay İşleyicileri Ekleme](../windows/adding-event-handlers-for-dialog-box-controls.md)  
+[Denetimler](../mfc/controls-mfc.md)<br/>
+[Denetim Sınıfları](../mfc/control-classes.md)<br/>
+[İletişim Kutusu Sınıfları](../mfc/dialog-box-classes.md)<br/>
+[Kaydırma çubuğu stilleri](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles)<br/>
+[Zengin Düzenleme Denetimine Örnekler](../mfc/rich-edit-control-examples.md)<br/>
+[İletişim Kutusu Denetimleri için Olay İşleyicileri Ekleme](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
 [İletişim Kutusu Denetimleri ve Değişken Türleri](../ide/dialog-box-controls-and-variable-types.md)

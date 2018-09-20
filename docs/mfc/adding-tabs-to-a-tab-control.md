@@ -17,27 +17,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb8caad0b7d1f632a2d97e4ea6bda7c93a2b4d74
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d5f9a9ab897a91fe886a1ba3ad46fe8fab94d94c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218303"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46416597"
 ---
 # <a name="adding-tabs-to-a-tab-control"></a>Sekme Denetimine Sekmeler Ekleme
-Sekme denetimi oluşturduktan sonra ([CTabCtrl](../mfc/reference/ctabctrl-class.md)), ihtiyacınız kadar sekme ekleyin.  
-  
-### <a name="to-add-a-tab-item"></a>Sekme öğesi eklemek için  
-  
-1.  Hazırlama bir [TCITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtcitema) yapısı.  
-  
-2.  Çağrı [CTabCtrl::InsertItem](../mfc/reference/ctabctrl-class.md#insertitem), yapısı geçirme.  
-  
-3.  Adım 1 ve 2 ek sekme öğeleri için yineleyin.  
-  
- Daha fazla bilgi için [sekme denetimi oluşturma](/windows/desktop/Controls/tab-controls) Windows SDK.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CTabCtrl kullanma](../mfc/using-ctabctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Sekme denetimi oluşturduktan sonra ([CTabCtrl](../mfc/reference/ctabctrl-class.md)), ihtiyacınız kadar sekme ekleyin.
+
+### <a name="to-add-a-tab-item"></a>Sekme öğesi eklemek için
+
+1. Hazırlama bir [TCITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtcitema) yapısı.
+
+1. Çağrı [CTabCtrl::InsertItem](../mfc/reference/ctabctrl-class.md#insertitem), yapısı geçirme.
+
+1. Adım 1 ve 2 ek sekme öğeleri için yineleyin.
+
+Daha fazla bilgi için [sekme denetimi oluşturma](/windows/desktop/Controls/tab-controls) Windows SDK.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CTabCtrl Kullanma](../mfc/using-ctabctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

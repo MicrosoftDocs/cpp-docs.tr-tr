@@ -16,17 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6626f9be05c9c6bd3cb583a27eefcb29eede6871
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0028d7b2f2121f9463dcb45b13bf34305c39f3d4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381484"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388990"
 ---
 # <a name="tn060-the-new-windows-common-controls"></a>TN060: Yeni Windows Ortak Denetimleri
-Teknik Not 60, yeni Windows ortak denetimleri ve bunların, nasıl kullanılacağını açıklayan içine edilmiştir [denetimleri](../mfc/controls-mfc.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+
+Teknik Not 60 yeni Windows ortak denetimleri ve bunların, nasıl kullanılacağını açıklayan, içine edilmiştir [denetimleri](../mfc/controls-mfc.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

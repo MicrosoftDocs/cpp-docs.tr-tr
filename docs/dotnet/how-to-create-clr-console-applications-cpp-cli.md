@@ -16,61 +16,62 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 60804b3863a4b44bc963f289b1d6a8c2f2d5cbf7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a650d62a53fa6cada535119cb8897f1f97870ea1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211163"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46421264"
 ---
 # <a name="how-to-create-clr-console-applications-ccli"></a>Nasıl yapılır: CLR Konsol Uygulamaları Oluşturma (C++/CLI)
-Konsol uygulaması şablonu, temel proje başvuruları ve dosyalarını zaten bir konsol uygulaması projesi oluşturmak için kullanabilirsiniz.  
-  
- Genellikle, bir konsol uygulaması bir tek başına yürütülebilir dosyasına derlenir, ancak bir grafik kullanıcı arabirimi yok. Bir kullanıcı, bir komut isteminde konsol uygulaması çalışır ve sorunu yönergeleri çalıştırılan uygulama için komut istemine kullanır. Uygulamayı komut isteminde çıkış bilgi de sağlar. Bir konsol uygulamasının immediacy kullanıcı arabirimini uygulamak için kaygısı olmadan programlama teknikleri öğrenmek için harika bir yöntemdir kolaylaştırır.  
-  
- Bir proje oluşturmak için konsol uygulaması şablonunu kullandığınızda, otomatik olarak bu başvuruları ve dosyalarını ekler:  
-  
--   Bu .NET Framework ad alanlarına başvurular:  
-  
-    -   [Sistem](https://msdn.microsoft.com/library/system.appdomainmanager.appdomainmanager.aspx)— temel sınıfları içerir ve yaygın olarak tanımladığınız temel sınıflar kullanılan değerleri ve başvuru veri türleri, olayları ve olay işleyicileri, arabirimler, öznitelikleri ve işleme özel durumlar.  
-  
-    -   mscorlib — derleme DLL, .NET Framework için geliştirmeyi destekler.  
-  
--   Kaynak dosyaları:  
-  
-    -   Konsolu (.cpp dosyası) — yeni oluşturduğunuz uygulamayı ana kaynak dosya ve giriş noktası. Bu proje .dll dosyası ve proje ad alanı tanımlar. Bu dosyadaki kendi kodunu sağlayın.  
-  
-    -   AssemblyInfo.cpp—Contains öznitelikleri, dosyaları, kaynaklar, türleri, sürüm oluşturma bilgilerini, imza bilgilerini ve projenin derleme meta verilerini değiştirmek için kullanabileceğiniz benzeri. Daha fazla bilgi için [derleme içerikleri](/dotnet/framework/app-domains/assembly-contents).  
-  
-    -   Stdafx.cpp—Used Win32.pch adlı bir ön derlenmiş üstbilgi dosyası ve adlı StdAfx.obj önceden derlenmiş türler dosyası oluşturmak için.  
-  
--   Üst bilgi dosyaları:  
-  
-    -   Stdafx.h—Used Win32.pch adlı bir ön derlenmiş üstbilgi dosyası ve adlı StdAfx.obj önceden derlenmiş türler dosyası oluşturmak için.  
-  
-    -   oluşturulan resource.h—A app.rc dosyası içerir.  
-  
--   Kaynak dosyaları:  
-  
-    -   bir programın App.rc—the kaynak betik dosyası.  
-  
-    -   bir programın App.ico—the simge dosyası.  
-  
--   ReadMe.txt—Describes projesindeki dosyalar.  
-  
-## <a name="to-create-a-common-language-runtime-clr-console-app-project"></a>Ortak dil çalışma zamanı (CLR) konsol uygulaması projesi oluşturmak için  
-  
-1.  Menü çubuğunda, **dosya**, **yeni**, **proje**.  
-  
-2.  İçinde **yeni proje** iletişim kutusunun **yüklü şablonlar**seçin **Visual C++** düğümünü **CLR** düğümüne tıklayın ve ardından Konsol uygulaması şablonu.  
-  
-3.  İçinde **adı** kutusuna, uygulamanız için benzersiz bir ad girin.  
-  
-     Diğer proje ve çözüm ayarlarını belirtebilirsiniz, ancak gerekli değildir.  
-  
-4.  Seçin **Tamam** düğmesi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CLR projeleri](../ide/files-created-for-clr-projects.md)   
 
+Konsol uygulaması şablonu, temel proje başvuruları ve dosyalarını zaten bir konsol uygulaması projesi oluşturmak için kullanabilirsiniz.
+
+Genellikle, bir konsol uygulaması bir tek başına yürütülebilir dosyasına derlenir, ancak bir grafik kullanıcı arabirimi yok. Bir kullanıcı, bir komut isteminde konsol uygulaması çalışır ve sorunu yönergeleri çalıştırılan uygulama için komut istemine kullanır. Uygulamayı komut isteminde çıkış bilgi de sağlar. Bir konsol uygulamasının immediacy kullanıcı arabirimini uygulamak için kaygısı olmadan programlama teknikleri öğrenmek için harika bir yöntemdir kolaylaştırır.
+
+Bir proje oluşturmak için konsol uygulaması şablonunu kullandığınızda, otomatik olarak bu başvuruları ve dosyalarını ekler:
+
+- Bu .NET Framework ad alanlarına başvurular:
+
+   - [Sistem](https://msdn.microsoft.com/library/system.appdomainmanager.appdomainmanager.aspx)— temel sınıfları içerir ve yaygın olarak tanımladığınız temel sınıflar kullanılan değerleri ve başvuru veri türleri, olayları ve olay işleyicileri, arabirimler, öznitelikleri ve işleme özel durumlar.
+
+   - mscorlib — derleme DLL, .NET Framework için geliştirmeyi destekler.
+
+- Kaynak dosyaları:
+
+   - Konsolu (.cpp dosyası) — yeni oluşturduğunuz uygulamayı ana kaynak dosya ve giriş noktası. Bu proje .dll dosyası ve proje ad alanı tanımlar. Bu dosyadaki kendi kodunu sağlayın.
+
+   - AssemblyInfo.cpp—Contains öznitelikleri, dosyaları, kaynaklar, türleri, sürüm oluşturma bilgilerini, imza bilgilerini ve projenin derleme meta verilerini değiştirmek için kullanabileceğiniz benzeri. Daha fazla bilgi için [derleme içerikleri](/dotnet/framework/app-domains/assembly-contents).
+
+   - Stdafx.cpp—Used Win32.pch adlı bir ön derlenmiş üstbilgi dosyası ve adlı StdAfx.obj önceden derlenmiş türler dosyası oluşturmak için.
+
+- Üst bilgi dosyaları:
+
+   - Stdafx.h—Used Win32.pch adlı bir ön derlenmiş üstbilgi dosyası ve adlı StdAfx.obj önceden derlenmiş türler dosyası oluşturmak için.
+
+   - oluşturulan resource.h—A app.rc dosyası içerir.
+
+- Kaynak dosyaları:
+
+   - bir programın App.rc—the kaynak betik dosyası.
+
+   - bir programın App.ico—the simge dosyası.
+
+- ReadMe.txt—Describes projesindeki dosyalar.
+
+## <a name="to-create-a-common-language-runtime-clr-console-app-project"></a>Ortak dil çalışma zamanı (CLR) konsol uygulaması projesi oluşturmak için
+
+1. Menü çubuğunda, **dosya**, **yeni**, **proje**.
+
+1. İçinde **yeni proje** iletişim kutusunun **yüklü şablonlar**seçin **Visual C++** düğümünü **CLR** düğümüne tıklayın ve ardından Konsol uygulaması şablonu.
+
+1. İçinde **adı** kutusuna, uygulamanız için benzersiz bir ad girin.
+
+     Diğer proje ve çözüm ayarlarını belirtebilirsiniz, ancak gerekli değildir.
+
+1. Seçin **Tamam** düğmesi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CLR projeleri](../ide/files-created-for-clr-projects.md)
 

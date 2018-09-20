@@ -18,29 +18,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59ec5a5a493106750fa7bb8c7ec31b8dbb011070
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7dd7e88d6843ec3d95538e482c6c05a3d853f4d1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344249"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390778"
 ---
 # <a name="drag-and-drop-customizing"></a>Sürükle ve Bırak: Özelleştirme
-Sürükle ve bırak özelliğinin varsayılan uygulama, çoğu uygulama için yeterlidir. Ancak, bazı uygulamalarda bu standart davranış değiştirilmesi gerekebilir. Bu makalede bu varsayılanları değiştirmek için gerekli adımları açıklanmaktadır. Ayrıca, bileşik belgeler açılan kaynakları olarak desteklemeyen uygulamalar oluşturmak için bu tekniği kullanabilirsiniz.  
-  
- Standart OLE sürükle ve bırak davranışını özelleştirme veya OLE dışı uygulama varsa, oluşturmalısınız bir `COleDataSource` verileri içeren nesne. Kullanıcı bir Sürükle ve bırak işlemi başladığında, kodunuzu çağırmalıdır `DoDragDrop` sürükle ve bırak işlemleri destekleyen diğer sınıflardan yerine bu nesneden işlevi.  
-  
- İsteğe bağlı olarak, oluşturabileceğiniz bir `COleDropSource` açılır denetlemek ve bazı işlevlerini değiştirmek istediğiniz davranışı türüne bağlı olarak geçersiz kılmak için nesne. Bu açılan kaynak nesnesi sonra geçirilir `COleDataSource::DoDragDrop` bu işlevler varsayılan davranışını değiştirmek için. Bu farklı seçenekler, uygulamanızda sürükle ve bırak işlemleri desteklemek nasıl esneklik büyük bir bölümünü izin verin. Veri kaynakları hakkında daha fazla bilgi için bkz: [veri nesneleri ve veri kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md).  
-  
- Sürükle ve bırak işlemleri özelleştirmek için aşağıdaki işlevleri geçersiz kılabilirsiniz:  
-  
-|Geçersiz kıl|Özelleştirmek için|  
-|--------------|------------------|  
-|`OnBeginDrag`|Çağırdıktan sonra nasıl sürükleyerek başlatılan `DoDragDrop`.|  
-|`GiveFeedback`|Farklı açılan sonuçlar için imlecin görünümü gibi görsel geri bildirim.|  
-|`QueryContinueDrag`|Sürükle ve bırak işlemi sonlandırma. Bu işlev sürükleme işlemi sırasında değiştiricisi anahtar durumlar denetlemenizi sağlar.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sürükleme ve bırakma (OLE)](../mfc/drag-and-drop-ole.md)   
- [COleDropSource sınıfı](../mfc/reference/coledropsource-class.md)   
- [COleDataSource Sınıfı](../mfc/reference/coledatasource-class.md)
+
+Sürükle ve bırak özelliğinin varsayılan uygulama, çoğu uygulama için yeterlidir. Ancak, bazı uygulamaların standart Bu davranışın değiştirilmesi gerekebilir. Bu makalede, bu varsayılan ayarları değiştirmek için gerekli adımları açıklanmaktadır. Ayrıca, bileşik belgeler bırakma kaynağı olarak desteklemeyen uygulamalar oluşturmak için bu tekniği kullanabilirsiniz.
+
+Standart OLE sürükle ve bırak davranışını özelleştirme veya olmayan OLE uygulama varsa oluşturmalısınız bir `COleDataSource` verileri içeren nesne. Kullanıcı bir Sürükle ve bırak işlemi başlatıldığında, kodunuzu çağırmalıdır `DoDragDrop` sürükle ve bırak işlemleri destekleyen diğer sınıfları yerine bu nesne bir işlevden.
+
+İsteğe bağlı olarak oluşturabileceğiniz bir `COleDropSource` bırakma denetlemenizi ve bazı işlevlerini değiştirmek istediğiniz davranışı türüne bağlı olarak geçersiz kılma nesne. Bu açılan kaynaklı bir nesne sonra geçirilen `COleDataSource::DoDragDrop` bu işlevlerin varsayılan davranışı değiştirmek için. Bu farklı seçenekler, bir büyük ölçüde esneklik uygulamanızda sürükle ve bırak işlemleri nasıl destek sağlar. Veri kaynakları hakkında daha fazla bilgi için bkz [veri nesneleri ve veri kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md).
+
+Sürükle ve bırak işlemleri özelleştirmek için aşağıdaki işlevleri geçersiz kılabilirsiniz:
+
+|Geçersiz kıl|Özelleştirmek için|
+|--------------|------------------|
+|`OnBeginDrag`|Çağırdıktan sonra nasıl sürükleyerek başlatılır `DoDragDrop`.|
+|`GiveFeedback`|Farklı bir bırakma sonuçları için imlecin görünümü gibi görsel geri bildirim.|
+|`QueryContinueDrag`|Bir Sürükle ve bırak işleminin sonlandırılması. Bu işlev değiştiricisi anahtar durumlar sürükleme işlemi sırasında denetlemenizi sağlar.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sürükleme ve Bırakma (OLE)](../mfc/drag-and-drop-ole.md)<br/>
+[COleDropSource Sınıfı](../mfc/reference/coledropsource-class.md)<br/>
+[COleDataSource Sınıfı](../mfc/reference/coledatasource-class.md)

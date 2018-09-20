@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'da C++ Linux projesi yapılandırma | Microsoft Docs
 ms.custom: ''
-ms.date: 09/05/2018
+ms.date: 09/18/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: a66e2f6b6506d995859c89d9588b59056047220e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 17597ae7497288312b8ddcfcf53a77130fbbf2d8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713589"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46383252"
 ---
 # <a name="configure-a-linux-project"></a>Linux projesi yapılandırma
 
@@ -33,9 +33,11 @@ Visual Studio ile Linux projesi için çeşitli seçenekler yapılandırılabili
 
 Varsayılan olarak, bir yürütülebilir dosya (.out) aracı ile yerleşik hale getirilmiştir.  Bir statik veya dinamik kitaplığını oluşturmak veya mevcut bir derleme görevleri dosyası kullanmak için **yapılandırma türü** seçimi.
 
+Özellik sayfaları seçenekler hakkında daha fazla bilgi için bkz. [Linux projesi özellik Sayfa başvurusu](prop-pages-linux.md).
+
 ## <a name="remote-settings"></a>Uzak bağlantı ayarları
 
-Uzak Linux bilgisayara ilgili ayarları değiştirmek için görünen Uzak seçenekleri yapılandırma **genel** ayarları:
+Uzak Linux bilgisayara ilgili ayarları değiştirmek için görünen Uzak seçenekleri yapılandırma [genel](prop-pages/general-linux.md) ayarları:
 
 - Hedef Linux bilgisayarı değiştirmek için kullanın **uzak derleme makinesi** girişi.  Bu, daha önce oluşturduğunuz bağlantılardan birini seçmenize olanak sağlar.  Yeni bir giriş oluşturmak için lütfen bkz [için Uzak Linux bilgisayarınıza bağlanma](connect-to-your-remote-linux-computer.md) bölümü.
 
@@ -44,7 +46,7 @@ Uzak Linux bilgisayara ilgili ayarları değiştirmek için görünen Uzak seçe
 - **Uzaktan derleme proje dizini** burada uzak Linux bilgisayarda bu belirli proje oluşturulacak olan.  Bu varsayılan **$(RemoteRootDir)/$(ProjectName)**, yukarıda kök dizininin altındaki şu anki proje sonra adlandırılmış bir dizine genişletin.
 
 > [!NOTE]
-> ' % S'varsayılan C ve C++ Derleyicileri, veya bağlayıcı ve projeyi derlemek için kullanılan Arşivleyicide değiştirmek için uygun girdileri kullanmak **C/C++ > Genel** bölümü ve **bağlayıcı > Genel** bölümü.  Bunlar, örneğin belirli bir sürümü GCC veya hatta Clang derleyici kullanmak için ayarlanabilir.
+> ' % S'varsayılan C ve C++ Derleyicileri, veya bağlayıcı ve projeyi derlemek için kullanılan Arşivleyicide değiştirmek için uygun girdileri kullanmak **C/C++ > Genel** bölümü ve **bağlayıcı > Genel** bölümü.  Bunlar, örneğin belirli bir sürümü GCC veya hatta Clang derleyici kullanmak için ayarlanabilir. Daha fazla bilgi için [C/C++ özellikleri (Linux C++)](prop-pages/c-cpp-linux.md) ve [bağlayıcı Özellikleri (Linux C++)](prop-pages/linker-linux.md).
 
 ## <a name="include-directories-and-intellisense-support"></a>Dizinleri ve IntelliSense desteğini içerir
 
@@ -99,8 +101,8 @@ apt install zip
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)  
-[C++ genel özellikleri (Linux C++)](../linux/prop-pages/general-linux.md)  
-[VC ++ dizinleri (Linux C++)](../linux/prop-pages/directories-linux.md)  
-[Kopyalama kaynakları proje özellikleri (Linux C++)](../linux/prop-pages/copy-sources-project.md)  
+[Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)<br/>
+[C++ genel özellikleri (Linux C++)](../linux/prop-pages/general-linux.md)<br/>
+[VC ++ dizinleri (Linux C++)](../linux/prop-pages/directories-linux.md)<br/>
+[Kopyalama kaynakları proje özellikleri (Linux C++)](../linux/prop-pages/copy-sources-project.md)<br/>
 [Derleme olay özellikleri (Linux C++)](../linux/prop-pages/build-events-linux.md)

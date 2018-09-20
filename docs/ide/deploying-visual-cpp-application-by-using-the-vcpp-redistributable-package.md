@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 569c5c8adcb57ae92f111929efca544c76412a4b
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 2e213d5d91c229f7f07bc383f0a0158d85c05cf2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895285"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46434511"
 ---
 # <a name="walkthrough-deploying-a-visual-c-application-by-using-the-visual-c-redistributable-package"></a>İzlenecek Yol: Visual C++ Yeniden Dağıtılabilir Paketini Kullanarak Visual C++ Uygulaması Dağıtmak
 
@@ -44,7 +44,7 @@ Bu bileşenler, bu izlenecek yolu tamamlamak için aşağıdakiler gereklidir:
     vcredist_x86.exe
     mkdir "C:\Program Files\MyMFCApplication"
     copy MyMFCApplication.exe "C:\Program Files\MyMFCApplication"
-    ```  
+    ```
 
 3. Kendi kendine ayıklanan bir kurulum dosyası oluşturun:
 
@@ -70,7 +70,7 @@ Bu bileşenler, bu izlenecek yolu tamamlamak için aşağıdakiler gereklidir:
 
    8. Üzerinde **yükleme programı başlatmak için** sayfasında **yükleme programı** metin kutusunda, aşağıdaki komut satırını girin ve ardından **sonraki**.
 
-      **cmd.exe /c "setup.bat"**  
+      **cmd.exe /c "setup.bat"**
 
    9. Üzerinde **Göster penceresi** sayfasında **varsayılan** seçip **sonraki**.
 

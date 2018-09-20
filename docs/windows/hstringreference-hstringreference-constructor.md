@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c13635f4b73ee34de11b8c18b0cdd9943b261a29
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6123f87abb9922a9736ac56f64d28e78887a0fdd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591191"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46403593"
 ---
 # <a name="hstringreferencehstringreference-constructor"></a>HStringReference::HStringReference Oluşturucusu
 
@@ -41,16 +41,16 @@ HStringReference(HStringReference&& other) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*sizeDest*  
+*sizeDest*<br/>
 Hedef boyutunu belirten bir şablon parametresi **HStringReference** arabellek.
 
-*str*  
+*str*<br/>
 Bir geniş karakter dizesi bir başvuru.
 
-*Len*  
+*Len*<br/>
 En büyük uzunluğunu *str* parametre arabelleği bu işlemi kullanmak için. Varsa *len* parametresi belirtilmediyse, tüm *str* parametresi kullanılır. Varsa *len* büyüktür *sizeDest*, *len* ayarlanır *sizeDest*-1.
 
-*Diğer*  
+*Diğer*<br/>
 Başka bir **HStringReference** nesne.
 
 ## <a name="remarks"></a>Açıklamalar

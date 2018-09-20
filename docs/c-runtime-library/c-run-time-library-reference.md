@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9be5b7665b84a26492d7cfc33141206e380eb020
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 38326a76c884d180e4337626a4efec6d52fa24af
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46064340"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430494"
 ---
 # <a name="c-run-time-library-reference"></a>C Çalışma Zamanı Kitaplığı Başvurusu
 
@@ -33,26 +33,37 @@ Microsoft çalışma zamanı kitaplığı, Microsoft Windows işletim sistemi i�
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[C çalışma zamanı kitaplıkları](../c-runtime-library/crt-library-features.md) C çalışma zamanı kitaplıkları oluşturan .lib dosyaları açıklanır.
+[C çalışma zamanı kitaplıkları](../c-runtime-library/crt-library-features.md)<br/>
+C çalışma zamanı kitaplıkları oluşturan .lib dosyaları açıklar.
 
-[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md) kategorilere göre çalışma zamanı kitaplığı bağlantılar sağlar.
+[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+Kategoriye göre çalışma zamanı kitaplığı için bağlantılar sağlar.
 
-[Genel değişkenler ve standart türler](../c-runtime-library/global-variables-and-standard-types.md) genel değişkenler ve standart türler çalışma zamanı kitaplığı tarafından sağlanan bağlantılar sağlar.
+[Global Değişkenler ve Standart Türler](../c-runtime-library/global-variables-and-standard-types.md)<br/>
+Global değişkenler ve standart türler çalışma zamanı kitaplığı tarafından sağlanan bağlantılar sağlar.
 
-[Global sabitler](../c-runtime-library/global-constants.md) çalışma zamanı kitaplığı tarafından tanımlanan global sabitler bağlantılar sağlar.
+[Global Sabitler](../c-runtime-library/global-constants.md)<br/>
+Çalışma Zamanı Kitaplığı tarafından tanımlanan global sabitler bağlantılar sağlar.
 
-[Alfabetik işlev başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md) tüm C çalışma zamanı kitaplık işlevleri alfabetik bir listesi halinde içeriği giriş noktası tablosunu sağlar.
+[Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+Tüm C çalışma zamanı kitaplık işlevleri alfabetik bir listesi halinde içeriği giriş noktası tablosunu sağlar.
 
-[Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md) Tchar.h içinde tanımlanan genel metin eşlemeleri bağlantılar sağlar.
+[Genel Metin Eşlemeleri](../c-runtime-library/generic-text-mappings.md)<br/>
+Tchar.h içinde tanımlanan genel metin eşlemeleri bağlantılar sağlar.
 
-[Dil ve ülke/bölge dizeleri](../c-runtime-library/locale-names-languages-and-country-region-strings.md) nasıl kullanılacağını açıklar `setlocale` dil ve ülke/bölge dizeleri ayarlamak için işlevi.
+[Dil ve ülke/bölge dizeleri](../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
+Nasıl kullanılacağını açıklar `setlocale` dil ve ülke/bölge dizeleri ayarlamak için işlevi.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[Hata ayıklama yordamları](../c-runtime-library/debug-routines.md) çalışma zamanı kitaplık yordamları debug sürümleri için bağlantılar sağlar.
+[Hata Ayıklama Yordamları](../c-runtime-library/debug-routines.md)<br/>
+Çalışma zamanı kitaplık yordamları debug sürümleri için bağlantılar sağlar.
 
-[Çalışma zamanı hata denetimini](../c-runtime-library/run-time-error-checking.md) bağlantılar çalışma zamanı hata denetimleri destekleyen işlevleri sağlar.
+[Çalışma Zamanı Hata Denetimi](../c-runtime-library/run-time-error-checking.md)<br/>
+Çalışma zamanı hata denetimleri destekleyen işlevlere bağlantılar sağlar.
 
-[DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../build/run-time-library-behavior.md) bir DLL için kullanılan giriş noktası ve başlangıç kodu ele alınmaktadır.
+[DLL’ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../build/run-time-library-behavior.md)<br/>
+Bir DLL için kullanılan giriş noktası ve başlangıç kodu açıklanır.
 
-[Hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio) , veya saklı yordamlarınızdaki mantık hataları düzeltmek için Visual Studio hata ayıklayıcı kullanımına ilişkin bağlantılar sağlar.
+[Hata Ayıklama](/visualstudio/debugger/debugging-in-visual-studio)<br/>
+Uygulamanızdaki veya saklı yordamları mantık hatalarını düzeltmek için Visual Studio hata ayıklayıcı kullanımına ilişkin bağlantılar sağlar.

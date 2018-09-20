@@ -17,17 +17,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 373a30ed4a327cff99cb3cfce873707314608b57
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f012897d968d108cb366126fc38992ff1dd11d0a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382966"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46424618"
 ---
 # <a name="word-breaks-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Sözcük Sonları
-Bir zengin düzenleme denetiminden ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) "word sonu yordamı" adlı bir işlev çağrılarını sözcükler arasındaki kesmeler bulmak ve burada satırları bölünebilir belirlemek için. Denetimi, sözcük kaydırma işlemleri yaparken ve CTRL + sol ve CTRL + sağ tuş bileşimlerini işlerken bu bilgileri kullanır. Bir uygulama, sözcük ayırma bilgilerini almak ve hangi belirli bir karakter satır belirlemek için varsayılan sözcük ayırma yordamı değiştirmek için bir zengin düzenleme denetimine iletileri döner gönderebilirsiniz.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CRichEditCtrl kullanma](../mfc/using-cricheditctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Bir zengin düzenleme denetiminden ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) "sözcük sonu yordamı" adında bir işlev çağırır sözcükler arasındaki kesmeler bulunacak ve burada satırları bozabilir belirlemek için. Denetim, sözcük kaydırma işlemleri gerçekleştirirken ve CTRL + sol ve CTRL + sağ tuş bileşimlerini işleme sırasında bu bilgileri kullanır. Sözcük ayırma bilgilerini almak ve hangi belirli bir karakterin satır belirlemek için varsayılan sözcük ayırma yordamı değiştirilecek iletileri bir zengin düzenleme denetimine denk bir uygulama gönderebilirsiniz.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CRichEditCtrl Kullanma](../mfc/using-cricheditctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

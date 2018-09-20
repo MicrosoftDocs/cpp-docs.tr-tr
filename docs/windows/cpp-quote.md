@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: da9e378ff75ec67660b0c29a5765be88a2c06496
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 00dd1042195bd7593676021cc4f2f1153ec47844
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205672"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46432860"
 ---
 # <a name="cppquote"></a>cpp_quote
 
@@ -38,7 +38,7 @@ Belirtilen dizeyi tırnak karakterleri olmadan oluşturulan .idl dosyasına yaya
 
 ### <a name="parameters"></a>Parametreler
 
-*Deyimi*  
+*Deyimi*<br/>
 Bir C yönergesi.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -68,5 +68,5 @@ Ayrıca **cpp_quote** ve MIDL derlemenin bir parçası bir .h dosyası oluşturu
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
 [Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)  

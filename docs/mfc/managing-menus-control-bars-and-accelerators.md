@@ -22,31 +22,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e19cda1869938a854ff03ea83cdda747e8120a0
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 1bd7a6515e943351980051d5f2344e80119cc9d4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929536"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46428661"
 ---
 # <a name="managing-menus-control-bars-and-accelerators"></a>Menüleri, Denetim Çubuklarını ve Hızlandırıcıları Yönetme
-Çerçeve penceresi menüleri, araç çubuğu düğmeleri, durum çubuğu ve Hızlandırıcıları dahil olmak üzere, kullanıcı arabirimi nesnelerini güncelleştirme yönetir. MDI uygulamaları menü çubuğunda paylaşımı yönetir.  
-  
-## <a name="managing-menus"></a>Menüleri yönetme  
- Çerçeve penceresi açıklanan on_update_command_uı mekanizmasını kullanarak kullanıcı arabirimi öğeleri güncelleştirilirken katılan [güncelleştirme kullanıcı arabirimi nesnelerini nasıl](../mfc/how-to-update-user-interface-objects.md). Araç çubukları ve diğer denetim çubukları düğmeleri boşta döngü sırasında güncelleştirilir. Menü öğeleri menü çubuğundaki aşağı açılır menüler yalnızca menüyü aşağı bırakır önce güncelleştirilir.  
-  
- MDI uygulamaları için menü çubuğundaki ve resim yazısı MDI çerçeve penceresi yönetir. MDI çerçeve penceresi hiçbir etkin MDI alt pencereleri olduğunda, menü çubuğu olarak kullanılan bir varsayılan menüsünü sahip olur. Etkin alt olduğunda MDI çerçeve pencere menü çubuğu etkin MDI alt pencere menüsü tarafından ele alınır. Grafik ve çalışma belgeler gibi birden çok belge türü MDI uygulama destekliyorsa, her tür kendi menüleri menü çubuğuna koyar ve ana çerçeve penceresinin başlık değiştirir.  
-  
- [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) MDI uygulamaları için Pencere menüsünden standart komutlar için varsayılan uygulamaları sağlar. Özellikle, yeni pencere komutu (ıd_wındow_new) yeni çerçeve penceresi ve geçerli belge görünümü oluşturmak için uygulanır. Yalnızca Gelişmiş özelleştirme gerekiyorsa bu uygulamaları geçersiz kılmanız gerekir.  
-  
- Belge türü birden çok MDI alt pencereleri menü kaynakları paylaşır. Birkaç MDI alt pencereleri aynı belge şablonu tarafından oluşturduysanız, tüm Windows sistem kaynağı kaydetme aynı menü kaynağı kullanabilirsiniz.  
-  
-## <a name="managing-the-status-bar"></a>Durum çubuğu yönetme  
- Çerçeve penceresi de kendi istemci alanı içinde durum çubuğunu yerleştirir ve durum yönetir çubuğunun göstergeleri. Çerçeve penceresi temizler ve durum çubuğu ileti alanına gerektiği şekilde güncelleştirir ve kullanıcı menü öğesi veya araç çubuğu düğmeleri seçer açıklandığı gibi komut istemi dizeleri görüntüler [durum çubuğunda komut bilgilerini görüntüle nasıl](../mfc/how-to-display-command-information-in-the-status-bar.md).  
-  
-## <a name="managing-accelerators"></a>Hızlandırıcıları yönetme  
- Her çerçeve penceresi Hızlandırıcı çeviri sizin için otomatik olarak klavye bir isteğe bağlı Hızlandırıcı tablosu tutar. Bu mekanizma çağırma menü komutlarını Hızlandırıcı tuşları (kısayol tuşları olarak da bilinir) tanımlamak kolaylaştırır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çerçeve Pencerelerini Kullanma](../mfc/using-frame-windows.md)
+
+Çerçeve penceresi menüleri, araç çubuğu düğmeleri, durum çubuğu ve Hızlandırıcıları dahil olmak üzere, kullanıcı arabirimi nesnelerini güncelleştirme yönetir. MDI uygulamaları menü çubuğundaki paylaşımı yönetir.
+
+## <a name="managing-menus"></a>Menüler yönetme
+
+Çerçeve penceresi açıklanan on_update_command_uı mekanizması kullanarak kullanıcı arabirimi öğeleri güncelleştirilirken katıldığı [kullanıcı arabirimi nesnelerini güncelleştirme](../mfc/how-to-update-user-interface-objects.md). Boşta döngü sırasında araç çubukları ve diğer denetim çubukları düğmeleri güncelleştirildi. Menü öğelerinin açılan menüler menü çubuğunda bir menü açılır önce güncelleştirildi.
+
+MDI uygulamaları için MDI çerçeve penceresinin menü çubuğu ve açıklamalı alt yazı yönetir. Bir MDI çerçeve penceresinin hiçbir etkin MDI alt pencereleri olduğunda, menü çubuğu olarak kullanılan bir varsayılan menü sahip. Etkin alt olduğunda, MDI çerçeve penceresinin menü çubuğunu menüsünü etkin MDI alt penceresi tarafından ele alınır. Bir MDI uygulaması grafiği ve çalışma, belgeler gibi birden çok belge türü destekliyorsa her türü kendi menü menü çubuğuna yerleştirir ve ana çerçeve penceresinin başlık değiştirir.
+
+[CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) standart komutlar için varsayılan uygulamaları MDI uygulamaları için Pencere menüsünden sağlar. Özellikle, yeni bir çerçeve penceresi ve geçerli belge görünümü oluşturmak için yeni bir pencere komut (ıd_wındow_new) uygulanır. Gelişmiş özelleştirme gerekiyorsa bu uygulamaları geçersiz kılmak gerekir.
+
+Aynı belge türü birden çok MDI alt pencereleri, menü kaynakları paylaşır. Birkaç MDI alt pencereleri aynı belge şablonu tarafından oluşturulmadıysa, tüm Windows sistem kaynakları kaydetme aynı menü kaynağı kullanabilirsiniz.
+
+## <a name="managing-the-status-bar"></a>Durum çubuğu yönetme
+
+Çerçeve penceresi de kendi istemci alanı içinde durum çubuğuna yerleştirir ve durumunu yöneten çubuğunun göstergeleri. Çerçeve penceresi temizler ve durum çubuğundaki ileti alanı gereken şekilde güncelleştiren ve menü öğeleri veya araç çubuğu düğmeleri, kullanıcının seçtiği olarak açıklandığı gibi komut istemi dizeleri görüntüler [durum çubuğunda komut bilgilerini görüntüleme nasıl](../mfc/how-to-display-command-information-in-the-status-bar.md).
+
+## <a name="managing-accelerators"></a>Hızlandırıcıları yönetme
+
+Her bir çerçeve penceresi Hızlandırıcı çeviri sizin için otomatik olarak klavye ile bir isteğe bağlı Hızlandırıcı tablosu tutar. Bu mekanizma, menü komutlarını çağırma hızlandırma tuşları (kısayol tuşları olarak da bilinir) tanımlamak kolaylaştırır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çerçeve Pencerelerini Kullanma](../mfc/using-frame-windows.md)
 

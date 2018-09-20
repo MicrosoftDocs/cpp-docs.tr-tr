@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ce21958dbb928a29debe21fb7cfaed4b9036141
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 6f188cd833551542e636e764e76784635ae2ccf2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42465420"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422772"
 ---
 # <a name="highpropertyprefixes"></a>high_property_prefixes
 **C++ özgü**  
@@ -52,5 +52,5 @@ Varsayılan olarak, üst düzey hata işleme `propget`, `propput`, ve `propputre
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

@@ -82,217 +82,214 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe59fc6f956c0e88cae1e5c737d3fe33d10d10b6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 82e7c5e73c8003b8696a97b1d664c0670ba05c51
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052679"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46386204"
 ---
 # <a name="uint3-class"></a>uint_3 Sınıfı
-Üç işaretsiz tam sayı oluşan bir kısa vektörü temsil eder.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class uint_3;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-typedefs"></a>Genel Typedefler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`value_type`||  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[uint_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|uint_3::get_x||  
-|uint_3::get_xy||  
-|uint_3::get_xyz||  
-|uint_3::get_xz||  
-|uint_3::get_xzy||  
-|uint_3::get_y||  
-|uint_3::get_yx||  
-|uint_3::get_yxz||  
-|uint_3::get_yz||  
-|uint_3::get_yzx||  
-|uint_3::get_z||  
-|uint_3::get_zx||  
-|uint_3::get_zxy||  
-|uint_3::get_zy||  
-|uint_3::get_zyx||  
-|uint_t::ref_b||  
-|uint_t::ref_g||  
-|uint_t::ref_r||  
-|uint_t::ref_x||  
-|uint_t::ref_y||  
-|uint_t::ref_z||  
-|uint_3::set_x||  
-|uint_3::set_xy||  
-|uint_3::set_xyz||  
-|uint_3::set_xz||  
-|uint_3::set_xzy||  
-|uint_3::set_y||  
-|uint_3::set_yx||  
-|uint_3::set_yxz||  
-|uint_3::set_yz||  
-|uint_3::set_yzx||  
-|uint_3::set_z||  
-|uint_3::set_zx||  
-|uint_3::set_zxy||  
-|uint_3::set_zy||  
-|uint_3::set_zyx||  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|uint_3::operator--||  
-|uint_3::operator%=||  
-|uint_3::operator & =||  
-|uint_3::operator * =||  
-|uint_3::operator / =||  
-|uint_3::operator^=||  
-|uint_3::operator&#124;=||  
-|uint_3::operator ~||  
-|uint_3::operator ++||  
-|uint_3::operator +=||  
-|uint_3::operator <\<=||  
-|uint_3::operator =||  
-|uint_3::operator-=||  
-|uint_3::operator >> =||  
-  
-### <a name="public-constants"></a>Genel sabitler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[boyutu sabiti](#uint_3__size)||  
-  
-### <a name="public-data-members"></a>Ortak Veri Üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|uint_3::b||  
-|uint_3::bg||  
-|uint_3::BGR||  
-|uint_3::br||  
-|uint_3::brg||  
-|uint_3::g||  
-|uint_3::GB||  
-|uint_3::gbr||  
-|uint_3::Gr||  
-|uint_3::grb||  
-|uint_3::r||  
-|uint_3::RB||  
-|uint_3::rbg||  
-|uint_3::rg||  
-|uint_3::rgb||  
-|uint_3::x||  
-|uint_3::xy||  
-|uint_3::xyz||  
-|uint_3::xz||  
-|uint_3::xzy||  
-|uint_3::y||  
-|uint_3::yx||  
-|uint_3::yxz||  
-|uint_3::YZ||  
-|uint_3::yzx||  
-|uint_3::z||  
-|uint_3::zx||  
-|uint_3::zxy||  
-|uint_3::zy||  
-|uint_3::zyx||  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `uint_3`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** amp_short_vectors.h  
-  
- **Namespace:** Concurrency::graphics  
-  
-##  <a name="ctor"></a> uint_3 
 
- Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.  
-  
-```  
+Üç işaretsiz tam sayı oluşan bir kısa vektörü temsil eder.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class uint_3;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-typedefs"></a>Genel Typedefler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`value_type`||
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[uint_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|uint_3::get_x||
+|uint_3::get_xy||
+|uint_3::get_xyz||
+|uint_3::get_xz||
+|uint_3::get_xzy||
+|uint_3::get_y||
+|uint_3::get_yx||
+|uint_3::get_yxz||
+|uint_3::get_yz||
+|uint_3::get_yzx||
+|uint_3::get_z||
+|uint_3::get_zx||
+|uint_3::get_zxy||
+|uint_3::get_zy||
+|uint_3::get_zyx||
+|uint_t::ref_b||
+|uint_t::ref_g||
+|uint_t::ref_r||
+|uint_t::ref_x||
+|uint_t::ref_y||
+|uint_t::ref_z||
+|uint_3::set_x||
+|uint_3::set_xy||
+|uint_3::set_xyz||
+|uint_3::set_xz||
+|uint_3::set_xzy||
+|uint_3::set_y||
+|uint_3::set_yx||
+|uint_3::set_yxz||
+|uint_3::set_yz||
+|uint_3::set_yzx||
+|uint_3::set_z||
+|uint_3::set_zx||
+|uint_3::set_zxy||
+|uint_3::set_zy||
+|uint_3::set_zyx||
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|uint_3::operator--||
+|uint_3::operator%=||
+|uint_3::operator & =||
+|uint_3::operator * =||
+|uint_3::operator / =||
+|uint_3::operator^=||
+|uint_3::operator&#124;=||
+|uint_3::operator ~||
+|uint_3::operator ++||
+|uint_3::operator +=||
+|uint_3::operator <\<=||
+|uint_3::operator =||
+|uint_3::operator-=||
+|uint_3::operator >> =||
+
+### <a name="public-constants"></a>Genel sabitler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[boyutu sabiti](#uint_3__size)||
+
+### <a name="public-data-members"></a>Ortak Veri Üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|uint_3::b||
+|uint_3::bg||
+|uint_3::BGR||
+|uint_3::br||
+|uint_3::brg||
+|uint_3::g||
+|uint_3::GB||
+|uint_3::gbr||
+|uint_3::Gr||
+|uint_3::grb||
+|uint_3::r||
+|uint_3::RB||
+|uint_3::rbg||
+|uint_3::rg||
+|uint_3::rgb||
+|uint_3::x||
+|uint_3::xy||
+|uint_3::xyz||
+|uint_3::xz||
+|uint_3::xzy||
+|uint_3::y||
+|uint_3::yx||
+|uint_3::yxz||
+|uint_3::YZ||
+|uint_3::yzx||
+|uint_3::z||
+|uint_3::zx||
+|uint_3::zxy||
+|uint_3::zy||
+|uint_3::zyx||
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`uint_3`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** amp_short_vectors.h
+
+**Namespace:** Concurrency::graphics
+
+##  <a name="ctor"></a> uint_3
+
+Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+
+```
 uint_3() restrict(amp,
     cpu);
 
- 
 uint_3(
-    unsigned int _V0,  
-    unsigned int _V1,  
+    unsigned int _V0,
+    unsigned int _V1,
     unsigned int _V2) restrict(amp,
     cpu);
 
- 
 uint_3(
     unsigned int _V) restrict(amp,
     cpu);
 
- 
 uint_3(
     const uint_3& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline uint_3(
     const int_3& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline uint_3(
     const float_3& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline uint_3(
     const unorm_3& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline uint_3(
     const norm_3& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline uint_3(
     const double_3& _Other) restrict(amp,
     cpu);
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*_V0*<br/>
-Öğe 0'ı başlatmak için değer.  
-  
-*_V1*<br/>
-1 öğe başlatmak için değer.  
-  
-*_V2*<br/>
-Öğe 2 başlatmak için değer.  
-  
-*_V*<br/>
-Başlatma için değer.  
-  
-*_Diğer*<br/>
-Başlatmak için kullanılan nesne.  
-  
-##  <a name="uint_3__size"></a> Boyutu 
+```
 
-```  
-static const int size = 3;  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)
+### <a name="parameters"></a>Parametreler
+
+*_V0*<br/>
+Öğe 0'ı başlatmak için değer.
+
+*_V1*<br/>
+1 öğe başlatmak için değer.
+
+*_V2*<br/>
+Öğe 2 başlatmak için değer.
+
+*_V*<br/>
+Başlatma için değer.
+
+*_Diğer*<br/>
+Başlatmak için kullanılan nesne.
+
+##  <a name="uint_3__size"></a> Boyutu
+
+```
+static const int size = 3;
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

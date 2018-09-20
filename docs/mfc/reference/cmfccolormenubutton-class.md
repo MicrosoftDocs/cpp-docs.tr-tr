@@ -54,453 +54,512 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab793b8c758b95c259c717a794436b59057d4273
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 075fcf0433e925c45e8fd06938b231c62ec77352
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712991"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423314"
 ---
 # <a name="cmfccolormenubutton-class"></a>CMFCColorMenuButton sınıfı
-`CMFCColorMenuButton` Sınıfı, bir menü komutu veya bir Renk Seçici iletişim kutusunu başlatan bir araç çubuğu düğmesini destekler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CMFCColorMenuButton : public CMFCToolBarMenuButton  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CMFCColorMenuButton::CMFCColorMenuButton](#cmfccolormenubutton)|Oluşturur bir `CMFCColorMenuButton` nesne.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CMFCColorMenuButton::EnableAutomaticButton](#enableautomaticbutton)|Sağlar ve normal renk düğmeleri konumlandırılmış bir "Otomatik" düğmesini devre dışı bırakır. (Standart sistem otomatik düğme **otomatik**.)|  
-|[CMFCColorMenuButton::EnableDocumentColors](#enabledocumentcolors)|Sistem renkleri yerine belgeye özgü renkleri görüntülenmesini sağlar.|  
-|[CMFCColorMenuButton::EnableOtherButton](#enableotherbutton)|Sağlar ve normal renk düğmelerin altında konumlandırılmış bir "diğer" düğmesini devre dışı bırakır. ("Diğer" düğmesi olarak etiketlenmiş standart sistem **daha fazla renk**.)|  
-|[CMFCColorMenuButton::EnableTearOff](#enabletearoff)|Bir renk bölmesi ayırma olanağı sağlar.|  
-|[CMFCColorMenuButton::GetAutomaticColor](#getautomaticcolor)|Geçerli otomatik rengini alır.|  
-|[CMFCColorMenuButton::GetColor](#getcolor)|Geçerli düğmenin rengini alır.|  
-|[CMFCColorMenuButton::GetColorByCmdID](#getcolorbycmdid)|Belirtilen komut kimliğine karşılık gelen rengi alır.|  
-|[CMFCColorMenuButton::OnChangeParentWnd](#onchangeparentwnd)|Ana pencereyi değiştiğinde framework tarafından çağırılır.|  
-|[CMFCColorMenuButton::OpenColorDialog](#opencolordialog)|Bir renk seçimi iletişim kutusunu açar.|  
-|[CMFCColorMenuButton::SetColor](#setcolor)|Geçerli renk düğmesi rengini ayarlar.|  
-|[CMFCColorMenuButton::SetColorByCmdID](#setcolorbycmdid)|Belirtilen renk menü düğmesi rengini ayarlar.|  
-|[CMFCColorMenuButton::SetColorName](#setcolorname)|Belirtilen "rengin" yeni adını ayarlar.|  
-|[CMFCColorMenuButton::SetColumnsNumber](#setcolumnsnumber)|Tarafından görüntülenen sütunların sayısını ayarlar bir `CMFCColorBar` nesne.|  
-  
-### <a name="protected-methods"></a>Korumalı Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CMFCColorMenuButton::CopyFrom](#copyfrom)|Başka bir araç çubuğu düğmesi geçerli düğmeyi kopyalar.|  
-|[CMFCColorMenuButton::CreatePopupMenu](#createpopupmenu)|Bir Renk Seçici iletişim kutusu oluşturur.|  
-|[CMFCColorMenuButton::IsEmptyMenuAllowed](#isemptymenuallowed)|Boş Menü desteklenip desteklenmediğini gösterir.|  
-|[CMFCColorMenuButton::OnDraw](#ondraw)|Görüntü üzerindeki bir düğme görüntülemek için framework tarafından çağırılır.|  
-|[CMFCColorMenuButton::OnDrawOnCustomizeList](#ondrawoncustomizelist)|Önce framework tarafından çağırılır bir `CMFCColorMenuButton` nesnesi, bir araç çubuğu özelleştirme iletişim kutusunda listede görüntülenir.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Orijinal menü komut veya araç çubuğu düğmesi ile değiştirmek için bir `CMFCColorMenuButton` nesne, oluşturma `CMFCColorMenuButton` her uygun ayarlanmış nesnesi, [CMFCColorBar sınıfı](../../mfc/reference/cmfccolorbar-class.md) stilleri ve sonra çağrı `ReplaceButton` yöntemi[CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md) sınıfı. Bir araç çubuğunu özelleştirme, çağrı [CMFCToolBarsCustomizeDialog::ReplaceButton](../../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton) yöntemi.  
-  
- Renk Seçici iletişim kutusu işlenmesi sırasında oluşturulan [CMFCColorMenuButton::CreatePopupMenu](#createpopupmenu) olay işleyicisi. Olay işleyicisi ana çerçeve WM_COMMAND ileti ile uyarır. `CMFCColorMenuButton` Özgün menü komut veya araç çubuğu düğmesi atanan denetim kimliği nesneyi gönderir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, oluşturmak ve çeşitli yöntemleri kullanarak bir renk menü düğmesi yapılandırmak gösterilmiştir `CMFCColorMenuButton` sınıfı. Örnekte, bir `CPalette` nesne ilk oluşturulduğunda ve ardından bir nesne oluşturmak için kullanılan `CMFCColorMenuButton` sınıfı. `CMFCColorMenuButton` Nesne ardından yapılandırılmış, otomatik ve diğer düğmeleri etkinleştirme ve rengini ve sütun sayısını ayarlama. Bu kod parçası olan [Word paneli örnek](../../visual-cpp-samples.md).  
-  
- [!code-cpp[NVC_MFC_WordPad#5](../../mfc/reference/codesnippet/cpp/cmfccolormenubutton-class_1.h)]  
-[!code-cpp[NVC_MFC_WordPad#6](../../mfc/reference/codesnippet/cpp/cmfccolormenubutton-class_2.cpp)]  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)  
-  
- [CMFCToolBarMenuButton](../../mfc/reference/cmfctoolbarmenubutton-class.md)  
-  
- [CMFCColorMenuButton](../../mfc/reference/cmfccolormenubutton-class.md)  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxcolormenubutton.h  
-  
-##  <a name="cmfccolormenubutton"></a>  CMFCColorMenuButton::CMFCColorMenuButton  
- Oluşturur bir `CMFCColorMenuButton` nesne.  
-  
-```  
+
+`CMFCColorMenuButton` Sınıfı, bir menü komutu veya bir Renk Seçici iletişim kutusunu başlatan bir araç çubuğu düğmesini destekler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CMFCColorMenuButton : public CMFCToolBarMenuButton
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CMFCColorMenuButton::CMFCColorMenuButton](#cmfccolormenubutton)|Oluşturur bir `CMFCColorMenuButton` nesne.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CMFCColorMenuButton::EnableAutomaticButton](#enableautomaticbutton)|Sağlar ve normal renk düğmeleri konumlandırılmış bir "Otomatik" düğmesini devre dışı bırakır. (Standart sistem otomatik düğme **otomatik**.)|
+|[CMFCColorMenuButton::EnableDocumentColors](#enabledocumentcolors)|Sistem renkleri yerine belgeye özgü renkleri görüntülenmesini sağlar.|
+|[CMFCColorMenuButton::EnableOtherButton](#enableotherbutton)|Sağlar ve normal renk düğmelerin altında konumlandırılmış bir "diğer" düğmesini devre dışı bırakır. ("Diğer" düğmesi olarak etiketlenmiş standart sistem **daha fazla renk**.)|
+|[CMFCColorMenuButton::EnableTearOff](#enabletearoff)|Bir renk bölmesi ayırma olanağı sağlar.|
+|[CMFCColorMenuButton::GetAutomaticColor](#getautomaticcolor)|Geçerli otomatik rengini alır.|
+|[CMFCColorMenuButton::GetColor](#getcolor)|Geçerli düğmenin rengini alır.|
+|[CMFCColorMenuButton::GetColorByCmdID](#getcolorbycmdid)|Belirtilen komut kimliğine karşılık gelen rengi alır.|
+|[CMFCColorMenuButton::OnChangeParentWnd](#onchangeparentwnd)|Ana pencereyi değiştiğinde framework tarafından çağırılır.|
+|[CMFCColorMenuButton::OpenColorDialog](#opencolordialog)|Bir renk seçimi iletişim kutusunu açar.|
+|[CMFCColorMenuButton::SetColor](#setcolor)|Geçerli renk düğmesi rengini ayarlar.|
+|[CMFCColorMenuButton::SetColorByCmdID](#setcolorbycmdid)|Belirtilen renk menü düğmesi rengini ayarlar.|
+|[CMFCColorMenuButton::SetColorName](#setcolorname)|Belirtilen "rengin" yeni adını ayarlar.|
+|[CMFCColorMenuButton::SetColumnsNumber](#setcolumnsnumber)|Tarafından görüntülenen sütunların sayısını ayarlar bir `CMFCColorBar` nesne.|
+
+### <a name="protected-methods"></a>Korumalı Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CMFCColorMenuButton::CopyFrom](#copyfrom)|Başka bir araç çubuğu düğmesi geçerli düğmeyi kopyalar.|
+|[CMFCColorMenuButton::CreatePopupMenu](#createpopupmenu)|Bir Renk Seçici iletişim kutusu oluşturur.|
+|[CMFCColorMenuButton::IsEmptyMenuAllowed](#isemptymenuallowed)|Boş Menü desteklenip desteklenmediğini gösterir.|
+|[CMFCColorMenuButton::OnDraw](#ondraw)|Görüntü üzerindeki bir düğme görüntülemek için framework tarafından çağırılır.|
+|[CMFCColorMenuButton::OnDrawOnCustomizeList](#ondrawoncustomizelist)|Önce framework tarafından çağırılır bir `CMFCColorMenuButton` nesnesi, bir araç çubuğu özelleştirme iletişim kutusunda listede görüntülenir.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Orijinal menü komut veya araç çubuğu düğmesi ile değiştirmek için bir `CMFCColorMenuButton` nesne, oluşturma `CMFCColorMenuButton` her uygun ayarlanmış nesnesi, [CMFCColorBar sınıfı](../../mfc/reference/cmfccolorbar-class.md) stilleri ve sonra çağrı `ReplaceButton` yöntemi[CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md) sınıfı. Bir araç çubuğunu özelleştirme, çağrı [CMFCToolBarsCustomizeDialog::ReplaceButton](../../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton) yöntemi.
+
+Renk Seçici iletişim kutusu işlenmesi sırasında oluşturulan [CMFCColorMenuButton::CreatePopupMenu](#createpopupmenu) olay işleyicisi. Olay işleyicisi ana çerçeve WM_COMMAND ileti ile uyarır. `CMFCColorMenuButton` Özgün menü komut veya araç çubuğu düğmesi atanan denetim kimliği nesneyi gönderir.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, oluşturmak ve çeşitli yöntemleri kullanarak bir renk menü düğmesi yapılandırmak gösterilmiştir `CMFCColorMenuButton` sınıfı. Örnekte, bir `CPalette` nesne ilk oluşturulduğunda ve ardından bir nesne oluşturmak için kullanılan `CMFCColorMenuButton` sınıfı. `CMFCColorMenuButton` Nesne ardından yapılandırılmış, otomatik ve diğer düğmeleri etkinleştirme ve rengini ve sütun sayısını ayarlama. Bu kod parçası olan [Word paneli örnek](../../visual-cpp-samples.md).
+
+[!code-cpp[NVC_MFC_WordPad#5](../../mfc/reference/codesnippet/cpp/cmfccolormenubutton-class_1.h)]
+[!code-cpp[NVC_MFC_WordPad#6](../../mfc/reference/codesnippet/cpp/cmfccolormenubutton-class_2.cpp)]
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+[CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)
+
+[CMFCToolBarMenuButton](../../mfc/reference/cmfctoolbarmenubutton-class.md)
+
+[CMFCColorMenuButton](../../mfc/reference/cmfccolormenubutton-class.md)
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxcolormenubutton.h
+
+##  <a name="cmfccolormenubutton"></a>  CMFCColorMenuButton::CMFCColorMenuButton
+
+Oluşturur bir `CMFCColorMenuButton` nesne.
+
+```
 CMFCColorMenuButton();
 
- 
+
 CMFCColorMenuButton(
-    UINT uiCmdID,  
-    LPCTSTR lpszText,  
+    UINT uiCmdID,
+    LPCTSTR lpszText,
     CPalette* pPalette=NULL);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *uiCmdID*<br/>
-[in] Bir düğme komut kimliği.  
-  
+[in] Bir düğme komut kimliği.
+
 *lpszText*<br/>
-[in] Düğme metni.  
-  
+[in] Düğme metni.
+
 *pPalette*<br/>
-[in] Düğmenin renk paletini işaretçisi.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
-### <a name="remarks"></a>Açıklamalar  
- İlk Oluşturucu varsayılan oluşturucudur. Nesnenin geçerli ve otomatik rengi siyah (RGB (0, 0, 0))'olarak başlatılır.  
-  
- İkinci Oluşturucu, belirtilen komut kimliğine karşılık gelen renk düğmeyi başlatır  
-  
-##  <a name="copyfrom"></a>  CMFCColorMenuButton::CopyFrom  
- Bir kopyalar [CMFCToolBarMenuButton sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md)-başka bir nesne türetilmiş.  
-  
-```  
+[in] Düğmenin renk paletini işaretçisi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+### <a name="remarks"></a>Açıklamalar
+
+İlk Oluşturucu varsayılan oluşturucudur. Nesnenin geçerli ve otomatik rengi siyah (RGB (0, 0, 0))'olarak başlatılır.
+
+İkinci Oluşturucu, belirtilen komut kimliğine karşılık gelen renk düğmeyi başlatır
+
+##  <a name="copyfrom"></a>  CMFCColorMenuButton::CopyFrom
+
+Bir kopyalar [CMFCToolBarMenuButton sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md)-başka bir nesne türetilmiş.
+
+```
 virtual void CopyFrom(const CMFCToolBarButton& src);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *src*<br/>
-[in] Kopyalanacak kaynak düğmesi.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Öğesinden türetilen kopyalama nesneler bu yöntemi geçersiz kılın `CMFCColorMenuButton` nesne.  
-  
-##  <a name="createpopupmenu"></a>  CMFCColorMenuButton::CreatePopupMenu  
- Bir Renk Seçici iletişim kutusu oluşturur.  
-  
-```  
+[in] Kopyalanacak kaynak düğmesi.
+
+### <a name="remarks"></a>Açıklamalar
+
+Öğesinden türetilen kopyalama nesneler bu yöntemi geçersiz kılın `CMFCColorMenuButton` nesne.
+
+##  <a name="createpopupmenu"></a>  CMFCColorMenuButton::CreatePopupMenu
+
+Bir Renk Seçici iletişim kutusu oluşturur.
+
+```
 virtual CMFCPopupMenu* CreatePopupMenu();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Bir Renk Seçici iletişim kutusunu temsil eden bir nesne.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, kullanıcı renk menü düğmesine bastığında çerçevesi tarafından çağrılır.  
-  
-##  <a name="enableautomaticbutton"></a>  CMFCColorMenuButton::EnableAutomaticButton  
- Sağlar ve normal renk düğmeleri konumlandırılmış bir "Otomatik" düğmesini devre dışı bırakır. (Standart sistem otomatik düğme **otomatik**.)  
-  
-```  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Bir Renk Seçici iletişim kutusunu temsil eden bir nesne.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu yöntem, kullanıcı renk menü düğmesine bastığında çerçevesi tarafından çağrılır.
+
+##  <a name="enableautomaticbutton"></a>  CMFCColorMenuButton::EnableAutomaticButton
+
+Sağlar ve normal renk düğmeleri konumlandırılmış bir "Otomatik" düğmesini devre dışı bırakır. (Standart sistem otomatik düğme **otomatik**.)
+
+```
 void EnableAutomaticButton(
-    LPCTSTR lpszLabel,  
-    COLORREF colorAutomatic,  
+    LPCTSTR lpszLabel,
+    COLORREF colorAutomatic,
     BOOL bEnable=TRUE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *lpszLabel*<br/>
-[in] Düğme otomatik hale geldiğinde görüntülenen düğme metnini belirtir.  
-  
+[in] Düğme otomatik hale geldiğinde görüntülenen düğme metnini belirtir.
+
 *colorAutomatic*<br/>
-[in] Yeni bir otomatik rengini belirtir.  
-  
+[in] Yeni bir otomatik rengini belirtir.
+
 *bSistemlerde*<br/>
-[in] Düğme otomatik olup olmadığını belirtir.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Otomatik düğmenin geçerli varsayılan rengi uygular.  
-  
-##  <a name="enabledocumentcolors"></a>  CMFCColorMenuButton::EnableDocumentColors  
- Sistem renkleri yerine belgeye özgü renkleri görüntülenmesini sağlar.  
-  
-```  
+[in] Düğme otomatik olup olmadığını belirtir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Otomatik düğmenin geçerli varsayılan rengi uygular.
+
+##  <a name="enabledocumentcolors"></a>  CMFCColorMenuButton::EnableDocumentColors
+
+Sistem renkleri yerine belgeye özgü renkleri görüntülenmesini sağlar.
+
+```
 void EnableDocumentColors(
-    LPCTSTR lpszLabel,  
+    LPCTSTR lpszLabel,
     BOOL bEnable=TRUE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *lpszLabel*<br/>
-[in] Düğme metnini belirtir.  
-  
+[in] Düğme metnini belirtir.
+
 *bSistemlerde*<br/>
-[in] Belgeye özgü renkleri ya da sistem renkleri görüntülemek için yanlış görüntülemek için TRUE.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Kullanıcı bir renk menü düğmesine tıkladığında, geçerli belge renkleri veya sistem palet renkleri görüntülemek için bu yöntemi kullanın.  
-  
-##  <a name="enableotherbutton"></a>  CMFCColorMenuButton::EnableOtherButton  
- Sağlar ve normal renk düğmelerin altında konumlandırılmış bir "diğer" düğmesini devre dışı bırakır. ("Diğer" düğmesi olarak etiketlenmiş standart sistem **daha fazla renk**.)  
-  
-```  
+[in] Belgeye özgü renkleri ya da sistem renkleri görüntülemek için yanlış görüntülemek için TRUE.
+
+### <a name="remarks"></a>Açıklamalar
+
+Kullanıcı bir renk menü düğmesine tıkladığında, geçerli belge renkleri veya sistem palet renkleri görüntülemek için bu yöntemi kullanın.
+
+##  <a name="enableotherbutton"></a>  CMFCColorMenuButton::EnableOtherButton
+
+Sağlar ve normal renk düğmelerin altında konumlandırılmış bir "diğer" düğmesini devre dışı bırakır. ("Diğer" düğmesi olarak etiketlenmiş standart sistem **daha fazla renk**.)
+
+```
 void EnableOtherButton(
-    LPCTSTR lpszLabel,  
-    BOOL bAltColorDlg=TRUE,  
+    LPCTSTR lpszLabel,
+    BOOL bAltColorDlg=TRUE,
     BOOL bEnable=TRUE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *lpszLabel*<br/>
-[in] Düğme metnini belirtir.  
-  
+[in] Düğme metnini belirtir.
+
 *bAltColorDlg*<br/>
-[in] Görüntülemek için TRUE belirtin `CMFCColorDialog` iletişim kutusu ya da standart sistem renk iletişim kutusu görüntülemek için FALSE.  
-  
+[in] Görüntülemek için TRUE belirtin `CMFCColorDialog` iletişim kutusu ya da standart sistem renk iletişim kutusu görüntülemek için FALSE.
+
 *bSistemlerde*<br/>
-[in] "Diğer" bir düğme görüntülemek için TRUE; belirtin. Aksi takdirde FALSE. Varsayılan değer True'dur.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="enabletearoff"></a>  CMFCColorMenuButton::EnableTearOff  
- Bir renk bölmesi ayırma olanağı sağlar.  
-  
-```  
+[in] "Diğer" bir düğme görüntülemek için TRUE; belirtin. Aksi takdirde FALSE. Varsayılan değer True'dur.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="enabletearoff"></a>  CMFCColorMenuButton::EnableTearOff
+
+Bir renk bölmesi ayırma olanağı sağlar.
+
+```
 void EnableTearOff(
-    UINT uiID,  
-    int nVertDockColumns=-1,  
+    UINT uiID,
+    int nVertDockColumns=-1,
     int nHorzDockRows=-1);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *uiID*<br/>
-[in] Bölünmüş bölmesinde Kimliğini belirtir.  
-  
+[in] Bölünmüş bölmesinde Kimliğini belirtir.
+
 *nVertDockColumns*<br/>
-[in] Bölünmüş durumundayken dikey yerleşik renk bölmesinde sütun sayısını belirtir.  
-  
+[in] Bölünmüş durumundayken dikey yerleşik renk bölmesinde sütun sayısını belirtir.
+
 *nHorzDockRows*<br/>
-[in] Yatay olarak yerleşik renk bölmesi etkinleştiriliyorken durumundayken için satır sayısını belirtir.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Zaman POP renk bölmesi için "etkinleştiriliyorken" özelliğini etkinleştirmek için bu yöntemi çağırın `CMFCColorMenuButton` düğmesine basıldığında.  
-  
-##  <a name="getautomaticcolor"></a>  CMFCColorMenuButton::GetAutomaticColor  
- Geçerli otomatik rengini alır.  
-  
-```  
-COLORREF GetAutomaticColor() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Geçerli otomatik rengi temsil eden bir RGB renk değeri.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Ayarlama tarafından otomatik renk elde etmek için bu yöntemi çağırın [CMFCColorMenuButton::EnableAutomaticButton](#enableautomaticbutton).  
-  
-##  <a name="getcolor"></a>  CMFCColorMenuButton::GetColor  
- Geçerli düğmenin rengini alır.  
-  
-```  
-COLORREF GetColor() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Düğme rengi.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="getcolorbycmdid"></a>  CMFCColorMenuButton::GetColorByCmdID  
- Belirtilen komut kimliğine karşılık gelen rengi alır.  
-  
-```  
+[in] Yatay olarak yerleşik renk bölmesi etkinleştiriliyorken durumundayken için satır sayısını belirtir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Zaman POP renk bölmesi için "etkinleştiriliyorken" özelliğini etkinleştirmek için bu yöntemi çağırın `CMFCColorMenuButton` düğmesine basıldığında.
+
+##  <a name="getautomaticcolor"></a>  CMFCColorMenuButton::GetAutomaticColor
+
+Geçerli otomatik rengini alır.
+
+```
+COLORREF GetAutomaticColor() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Geçerli otomatik rengi temsil eden bir RGB renk değeri.
+
+### <a name="remarks"></a>Açıklamalar
+
+Ayarlama tarafından otomatik renk elde etmek için bu yöntemi çağırın [CMFCColorMenuButton::EnableAutomaticButton](#enableautomaticbutton).
+
+##  <a name="getcolor"></a>  CMFCColorMenuButton::GetColor
+
+Geçerli düğmenin rengini alır.
+
+```
+COLORREF GetColor() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Düğme rengi.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="getcolorbycmdid"></a>  CMFCColorMenuButton::GetColorByCmdID
+
+Belirtilen komut kimliğine karşılık gelen rengi alır.
+
+```
 static COLORREF GetColorByCmdID(UINT uiCmdID);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *uiCmdID*<br/>
-[in] Komut kimliği.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen komut kimliğine karşılık gelen rengi  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bir uygulamada birkaç renk düğmesi varsa, bu yöntemi kullanın. Kullanıcı bir renk düğmesine tıkladığında, düğmeyi komut Kimliğini kendi üst öğesine WM_COMMAND ileti gönderir. `GetColorByCmdID` Yöntemi, karşılık gelen renk almak için komut Kimliğini kullanır.  
-  
-##  <a name="isemptymenuallowed"></a>  CMFCColorMenuButton::IsEmptyMenuAllowed  
- Boş Menü desteklenip desteklenmediğini gösterir.  
-  
-```  
-virtual BOOL IsEmptyMenuAllowed() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Boş ise sıfır olmayan menüleri izin verilir; Aksi takdirde sıfır.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Boş menü, varsayılan olarak desteklenir. Türetilmiş sınıf içinde bu davranışı değiştirmek için bu yöntemi yok sayın.  
-  
-##  <a name="onchangeparentwnd"></a>  CMFCColorMenuButton::OnChangeParentWnd  
- Ana pencereyi değiştiğinde framework tarafından çağırılır.  
-  
-```  
+[in] Komut kimliği.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Belirtilen komut kimliğine karşılık gelen rengi
+
+### <a name="remarks"></a>Açıklamalar
+
+Bir uygulamada birkaç renk düğmesi varsa, bu yöntemi kullanın. Kullanıcı bir renk düğmesine tıkladığında, düğmeyi komut Kimliğini kendi üst öğesine WM_COMMAND ileti gönderir. `GetColorByCmdID` Yöntemi, karşılık gelen renk almak için komut Kimliğini kullanır.
+
+##  <a name="isemptymenuallowed"></a>  CMFCColorMenuButton::IsEmptyMenuAllowed
+
+Boş Menü desteklenip desteklenmediğini gösterir.
+
+```
+virtual BOOL IsEmptyMenuAllowed() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Boş ise sıfır olmayan menüleri izin verilir; Aksi takdirde sıfır.
+
+### <a name="remarks"></a>Açıklamalar
+
+Boş menü, varsayılan olarak desteklenir. Türetilmiş sınıf içinde bu davranışı değiştirmek için bu yöntemi yok sayın.
+
+##  <a name="onchangeparentwnd"></a>  CMFCColorMenuButton::OnChangeParentWnd
+
+Ana pencereyi değiştiğinde framework tarafından çağırılır.
+
+```
 virtual void OnChangeParentWnd(CWnd* pWndParent);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pWndParent*<br/>
-[in] Yeni üst penceresine bir işaretçi.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="ondraw"></a>  CMFCColorMenuButton::OnDraw  
- Görüntü üzerindeki bir düğme görüntülemek için framework tarafından çağırılır.  
-  
-```  
+[in] Yeni üst penceresine bir işaretçi.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="ondraw"></a>  CMFCColorMenuButton::OnDraw
+
+Görüntü üzerindeki bir düğme görüntülemek için framework tarafından çağırılır.
+
+```
 virtual void OnDraw(
-    CDC* pDC,  
-    const CRect& rect,  
-    CMFCToolBarImages* pImages,  
-    BOOL bHorz=TRUE,  
-    BOOL bCustomizeMode=FALSE,  
-    BOOL bHighlight=FALSE,  
-    BOOL bDrawBorder=TRUE,  
+    CDC* pDC,
+    const CRect& rect,
+    CMFCToolBarImages* pImages,
+    BOOL bHorz=TRUE,
+    BOOL bCustomizeMode=FALSE,
+    BOOL bHighlight=FALSE,
+    BOOL bDrawBorder=TRUE,
     BOOL bGrayDisabledButtons=TRUE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi.  
-  
+[in] Bir cihaz bağlamı için bir işaretçi.
+
 *Rect*<br/>
-[in] Alan çizilmesini sınırların bir dikdörtgen.  
-  
+[in] Alan çizilmesini sınırların bir dikdörtgen.
+
 *pImages*<br/>
-[in] Araç çubuğu görüntülerinin listesine yönlendirir.  
-  
+[in] Araç çubuğu görüntülerinin listesine yönlendirir.
+
 *bHorz*<br/>
-[in] Araç bir yatay takılı durumda olduğunu belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.  
-  
+[in] Araç bir yatay takılı durumda olduğunu belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.
+
 *bCustomizeMode*<br/>
-[in] Uygulamayı özelleştirme modunda olduğunu belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer false'tur.  
-  
+[in] Uygulamayı özelleştirme modunda olduğunu belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer false'tur.
+
 *bHighlight*<br/>
-[in] Düğme vurgulanana belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer false'tur.  
-  
+[in] Düğme vurgulanana belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer false'tur.
+
 *bDrawBorder*<br/>
-[in] Düğmenin kenarlık görüntüleneceğini belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.  
-  
+[in] Düğmenin kenarlık görüntüleneceğini belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.
+
 *bGrayDisabledButtons*<br/>
-[in] Çıkış devre dışı düğme gri (devre dışı) olduğunu belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="ondrawoncustomizelist"></a>  CMFCColorMenuButton::OnDrawOnCustomizeList  
- Önce framework tarafından çağırılır bir `CMFCColorMenuButton` nesnesi, bir araç çubuğu özelleştirme iletişim kutusunda listede görüntülenir.  
-  
-```  
+[in] Çıkış devre dışı düğme gri (devre dışı) olduğunu belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="ondrawoncustomizelist"></a>  CMFCColorMenuButton::OnDrawOnCustomizeList
+
+Önce framework tarafından çağırılır bir `CMFCColorMenuButton` nesnesi, bir araç çubuğu özelleştirme iletişim kutusunda listede görüntülenir.
+
+```
 virtual int OnDrawOnCustomizeList(
-    CDC* pDC,  
-    const CRect& rect,  
+    CDC* pDC,
+    const CRect& rect,
     BOOL bSelected);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pDC*<br/>
-[in] Bir cihaz bağlamı için bir işaretçi.  
-  
+[in] Bir cihaz bağlamı için bir işaretçi.
+
 *Rect*<br/>
-[in] Çizilecek düğme sınırların bir dikdörtgen.  
-  
+[in] Çizilecek düğme sınırların bir dikdörtgen.
+
 *bSelected*<br/>
-[in] TRUE, düğme seçili durumda olduğunu belirtir. Aksi takdirde FALSE.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Düğmenin genişliği.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bu yöntem çerçeve tarafından çağrılır, bir `CMFCColorMenuButton` araç çubuğu özelleştirme işlemi sırasında nesne liste kutusunda görüntülenir.  
-  
-##  <a name="opencolordialog"></a>  CMFCColorMenuButton::OpenColorDialog  
- Bir renk seçimi iletişim kutusunu açar.  
-  
-```  
+[in] TRUE, düğme seçili durumda olduğunu belirtir. Aksi takdirde FALSE.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Düğmenin genişliği.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu yöntem çerçeve tarafından çağrılır, bir `CMFCColorMenuButton` araç çubuğu özelleştirme işlemi sırasında nesne liste kutusunda görüntülenir.
+
+##  <a name="opencolordialog"></a>  CMFCColorMenuButton::OpenColorDialog
+
+Bir renk seçimi iletişim kutusunu açar.
+
+```
 virtual BOOL OpenColorDialog(
-    const COLORREF colorDefault,  
+    const COLORREF colorDefault,
     COLORREF& colorRes);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *colorDefault*<br/>
-[in] Renk iletişim kutusunda seçili varsayılan rengi.  
-  
+[in] Renk iletişim kutusunda seçili varsayılan rengi.
+
 *colorRes*<br/>
-[out] Renk iletişim kutusundan kullanıcının seçtiği bir renk döndürür.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Yeni bir renk kullanıcının seçtiği olursa sıfır dışı; Aksi takdirde sıfır.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Menü düğmesine tıklandığında, bir renk iletişim kutusu açmak için bu yöntemi çağırın. Dönüş değeri sıfır değilse, kullanıcının seçtiği bir renk depolanan *colorRes* parametresi. Kullanım [CMFCColorMenuButton::EnableOtherButton](#enableotherbutton) standart renk iletişim kutusu arasında geçiş yapmak için gereken yöntemini ve [CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md) iletişim kutusu.  
-  
-##  <a name="setcolor"></a>  CMFCColorMenuButton::SetColor  
- Geçerli renk düğmesi rengini ayarlar.  
-  
-```  
+[out] Renk iletişim kutusundan kullanıcının seçtiği bir renk döndürür.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Yeni bir renk kullanıcının seçtiği olursa sıfır dışı; Aksi takdirde sıfır.
+
+### <a name="remarks"></a>Açıklamalar
+
+Menü düğmesine tıklandığında, bir renk iletişim kutusu açmak için bu yöntemi çağırın. Dönüş değeri sıfır değilse, kullanıcının seçtiği bir renk depolanan *colorRes* parametresi. Kullanım [CMFCColorMenuButton::EnableOtherButton](#enableotherbutton) standart renk iletişim kutusu arasında geçiş yapmak için gereken yöntemini ve [CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md) iletişim kutusu.
+
+##  <a name="setcolor"></a>  CMFCColorMenuButton::SetColor
+
+Geçerli renk düğmesi rengini ayarlar.
+
+```
 virtual void SetColor(
-    COLORREF clr,  
+    COLORREF clr,
     BOOL bNotify=TRUE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *CLR*<br/>
-[in] Bir RGB renk değeri.  
-  
+[in] Bir RGB renk değeri.
+
 *bNotify*<br/>
-[in] DOĞRU uygulamak için *clr* parametresi renge herhangi ilişkili menü veya araç çubuğu düğmesini; Aksi takdirde FALSE.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Geçerli renk düğmesi rengini değiştirmek için bu yöntemi çağırın. Varsa *bNotify* parametresi, sıfır olmayan, herhangi bir ilişkili açılan menü veya araç karşılık gelen bir düğme rengi tarafından belirtilen renk değiştirilecek *clr* parametresi.  
-  
-##  <a name="setcolorbycmdid"></a>  CMFCColorMenuButton::SetColorByCmdID  
- Belirtilen renk menü düğmesi rengini ayarlar.  
-  
-```  
+[in] DOĞRU uygulamak için *clr* parametresi renge herhangi ilişkili menü veya araç çubuğu düğmesini; Aksi takdirde FALSE.
+
+### <a name="remarks"></a>Açıklamalar
+
+Geçerli renk düğmesi rengini değiştirmek için bu yöntemi çağırın. Varsa *bNotify* parametresi, sıfır olmayan, herhangi bir ilişkili açılan menü veya araç karşılık gelen bir düğme rengi tarafından belirtilen renk değiştirilecek *clr* parametresi.
+
+##  <a name="setcolorbycmdid"></a>  CMFCColorMenuButton::SetColorByCmdID
+
+Belirtilen renk menü düğmesi rengini ayarlar.
+
+```
 static void SetColorByCmdID(
-    UINT uiCmdID,  
+    UINT uiCmdID,
     COLORREF color);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *uiCmdID*<br/>
-[in] Renk menü düğmesi kaynak kimliği.  
-  
+[in] Renk menü düğmesi kaynak kimliği.
+
 *Renk*<br/>
-[in] Bir RGB renk değeri.  
-  
-##  <a name="setcolorname"></a>  CMFCColorMenuButton::SetColorName  
- Belirtilen "rengin" yeni adını ayarlar.  
-  
-```  
+[in] Bir RGB renk değeri.
+
+##  <a name="setcolorname"></a>  CMFCColorMenuButton::SetColorName
+
+Belirtilen "rengin" yeni adını ayarlar.
+
+```
 static void SetColorName(
-    COLORREF color,  
+    COLORREF color,
     const CString& strName);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *Renk*<br/>
-[in] Adı değişiklikleri renk RGB değeri.  
-  
+[in] Adı değişiklikleri renk RGB değeri.
+
 *strName*<br/>
-[in] Renk yeni adı.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-##  <a name="setcolumnsnumber"></a>  CMFCColorMenuButton::SetColumnsNumber  
- Bir renk seçimi denetiminde görüntülenecek sütun sayısını ayarlar ( [CMFCColorBar](../../mfc/reference/cmfccolorbar-class.md) nesne).  
-  
-```  
+[in] Renk yeni adı.
+
+### <a name="remarks"></a>Açıklamalar
+
+##  <a name="setcolumnsnumber"></a>  CMFCColorMenuButton::SetColumnsNumber
+
+Bir renk seçimi denetiminde görüntülenecek sütun sayısını ayarlar ( [CMFCColorBar](../../mfc/reference/cmfccolorbar-class.md) nesne).
+
+```
 void SetColumnsNumber(int nColumns);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *nColumns*<br/>
-[in] Görüntülenecek sütun sayısı.  
-  
-### <a name="remarks"></a>Açıklamalar  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMFCColorBar sınıfı](../../mfc/reference/cmfccolorbar-class.md)   
- [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md)   
- [CMFCToolBarsCustomizeDialog sınıfı](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)   
- [CMFCColorButton Sınıfı](../../mfc/reference/cmfccolorbutton-class.md)
+[in] Görüntülenecek sütun sayısı.
+
+### <a name="remarks"></a>Açıklamalar
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
+[CMFCColorBar Sınıfı](../../mfc/reference/cmfccolorbar-class.md)<br/>
+[CMFCToolBar Sınıfı](../../mfc/reference/cmfctoolbar-class.md)<br/>
+[CMFCToolBarsCustomizeDialog Sınıfı](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)<br/>
+[CMFCColorButton Sınıfı](../../mfc/reference/cmfccolorbutton-class.md)

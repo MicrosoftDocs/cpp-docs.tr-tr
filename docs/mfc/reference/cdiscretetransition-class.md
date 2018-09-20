@@ -26,113 +26,125 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c8cc3c6ad476f0a1d69c81dad4eabfed3cc34bd
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 98deeff0e6b39a52002416c1b234434623f31b6a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219912"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46416220"
 ---
 # <a name="cdiscretetransition-class"></a>CDiscreteTransition sınıfı
-Bir ayrık geçişi kapsüller.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CDiscreteTransition : public CBaseTransition;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CDiscreteTransition::CDiscreteTransition](#cdiscretetransition)|Bir ayrık geçişi nesnesi oluşturur ve parametrelerini başlatır.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CDiscreteTransition::Create](#create)|Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır. (Geçersiz kılmaları [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|  
-  
-### <a name="public-data-members"></a>Ortak Veri Üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CDiscreteTransition::m_dblFinalValue](#m_dblfinalvalue)|Geçiş sonunda animasyon değişkeninin değeri.|  
-|[CDiscreteTransition::m_delay](#m_delay)|Son değer anlık geçiş gecikme, süre miktarı.|  
-|[CDiscreteTransition::m_hold](#m_hold)|Değişkenin son değerini tutmak saat miktarı.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir ayrık geçişi sırasında animasyon değişkenin ilk değer belirtilen gecikme süresi ve ardından anahtarlara anında belirtilen son değer ve bu değer, kalan için bir verilen Durma süresini kalır. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işleci kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Üye değişkenleri tüketimi bu COM nesnesi oluşturulmasını etkisi yoktur.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- [CBaseTransition](../../mfc/reference/cbasetransition-class.md)  
-  
- [CDiscreteTransition](../../mfc/reference/cdiscretetransition-class.md)  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxanimationcontroller.h  
-  
-##  <a name="cdiscretetransition"></a>  CDiscreteTransition::CDiscreteTransition  
- Bir ayrık geçişi nesnesi oluşturur ve parametrelerini başlatır.  
-  
-```  
-CDiscreteTransition(
-    UI_ANIMATION_SECONDS delay,  
-    DOUBLE dblFinalValue,  
-    UI_ANIMATION_SECONDS hold);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *gecikme*  
- Son değer anlık geçiş gecikme, süre miktarı.  
-  
- *dblFinalValue*  
- Geçiş sonunda animasyon değişkeninin değeri.  
-  
- *tutun*  
- Değişkenin son değerini tutmak saat miktarı.  
-  
-##  <a name="create"></a>  CDiscreteTransition::Create  
- Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır.  
-  
-```  
-virtual BOOL Create(
-    IUIAnimationTransitionLibrary* pLibrary,  
-    IUIAnimationTransitionFactory* \*not used*\);
-```  
-  
-*pLibrary*  
- Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), standart geçişleri kitaplığını tanımlar.  
 
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Geçiş başarıyla oluşturulursa TRUE; Aksi durumda FALSE.  
-  
-##  <a name="m_dblfinalvalue"></a>  CDiscreteTransition::m_dblFinalValue  
- Geçiş sonunda animasyon değişkeninin değeri.  
-  
-```  
-DOUBLE m_dblFinalValue;  
-```  
-  
-##  <a name="m_delay"></a>  CDiscreteTransition::m_delay  
- Son değer anlık geçiş gecikme, süre miktarı.  
-  
-```  
-UI_ANIMATION_SECONDS m_delay;  
-```  
-  
-##  <a name="m_hold"></a>  CDiscreteTransition::m_hold  
- Değişkenin son değerini tutmak saat miktarı.  
-  
-```  
-UI_ANIMATION_SECONDS m_hold;  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıflar](../../mfc/reference/mfc-classes.md)
+Bir ayrık geçişi kapsüller.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CDiscreteTransition : public CBaseTransition;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CDiscreteTransition::CDiscreteTransition](#cdiscretetransition)|Bir ayrık geçişi nesnesi oluşturur ve parametrelerini başlatır.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CDiscreteTransition::Create](#create)|Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır. (Geçersiz kılmaları [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|
+
+### <a name="public-data-members"></a>Ortak Veri Üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CDiscreteTransition::m_dblFinalValue](#m_dblfinalvalue)|Geçiş sonunda animasyon değişkeninin değeri.|
+|[CDiscreteTransition::m_delay](#m_delay)|Son değer anlık geçiş gecikme, süre miktarı.|
+|[CDiscreteTransition::m_hold](#m_hold)|Değişkenin son değerini tutmak saat miktarı.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir ayrık geçişi sırasında animasyon değişkenin ilk değer belirtilen gecikme süresi ve ardından anahtarlara anında belirtilen son değer ve bu değer, kalan için bir verilen Durma süresini kalır. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işleci kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Üye değişkenleri tüketimi bu COM nesnesi oluşturulmasını etkisi yoktur.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+[CBaseTransition](../../mfc/reference/cbasetransition-class.md)
+
+[CDiscreteTransition](../../mfc/reference/cdiscretetransition-class.md)
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxanimationcontroller.h
+
+##  <a name="cdiscretetransition"></a>  CDiscreteTransition::CDiscreteTransition
+
+Bir ayrık geçişi nesnesi oluşturur ve parametrelerini başlatır.
+
+```
+CDiscreteTransition(
+    UI_ANIMATION_SECONDS delay,
+    DOUBLE dblFinalValue,
+    UI_ANIMATION_SECONDS hold);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*gecikme*<br/>
+Son değer anlık geçiş gecikme, süre miktarı.
+
+*dblFinalValue*<br/>
+Geçiş sonunda animasyon değişkeninin değeri.
+
+*tutun*<br/>
+Değişkenin son değerini tutmak saat miktarı.
+
+##  <a name="create"></a>  CDiscreteTransition::Create
+
+Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır.
+
+```
+virtual BOOL Create(
+    IUIAnimationTransitionLibrary* pLibrary,
+    IUIAnimationTransitionFactory* \*not used*\);
+```
+
+*pLibrary*<br/>
+Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), standart geçişleri kitaplığını tanımlar.
+
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Geçiş başarıyla oluşturulursa TRUE; Aksi durumda FALSE.
+
+##  <a name="m_dblfinalvalue"></a>  CDiscreteTransition::m_dblFinalValue
+
+Geçiş sonunda animasyon değişkeninin değeri.
+
+```
+DOUBLE m_dblFinalValue;
+```
+
+##  <a name="m_delay"></a>  CDiscreteTransition::m_delay
+
+Son değer anlık geçiş gecikme, süre miktarı.
+
+```
+UI_ANIMATION_SECONDS m_delay;
+```
+
+##  <a name="m_hold"></a>  CDiscreteTransition::m_hold
+
+Değişkenin son değerini tutmak saat miktarı.
+
+```
+UI_ANIMATION_SECONDS m_hold;
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıflar](../../mfc/reference/mfc-classes.md)

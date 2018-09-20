@@ -17,25 +17,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e370c8a5f9cb2fb42c3199dbc0d56b69d93dc35
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 893fa525b04376cde0e96f280c95e6bfd1243946
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382134"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439984"
 ---
 # <a name="windows-sockets-classes"></a>Windows Yuvaları: Sınıflar
-Windows Yuvaları iki bilgisayar arasında iletişim kurmak için bir ağ protokolü bağımsız bir yol sağlar. Bu yuva zaman uyumlu olabilir (programınızı iletişimi yapılana kadar bekler) veya zaman uyumsuz (programınızı iletişimi sürerken çalışmaya devam eder).  
-  
- [CAsyncSocket](../mfc/reference/casyncsocket-class.md)  
- Basit bir sarmalayıcı Windows Sockets API'de yalıtır.  
-  
- [CSocket](../mfc/reference/csocket-class.md)  
- Daha yüksek düzey soyutlama türetilen `CAsyncSocket`. Zaman uyumlu olarak çalışır.  
-  
- [CSocketFile](../mfc/reference/csocketfile-class.md)  
- Sağlayan bir `CFile` Windows yuva için arabirim.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Windows Yuvaları iki bilgisayar arasında iletişim kurmak için bir ağ protokolü bağımsız bir yol sağlar. Bu yuva zaman uyumlu olabilir (programınızı iletişimi tamamlanana kadar bekler) veya zaman uyumsuz (programınızı iletişimi devam ederken çalışmaya devam eder).
+
+[CAsyncSocket](../mfc/reference/casyncsocket-class.md)<br/>
+Basit bir kapsayıcı içinde Windows Sockets API'si kapsüller.
+
+[CSocket](../mfc/reference/csocket-class.md)<br/>
+Daha yüksek düzey Özet türetilen `CAsyncSocket`. Zaman uyumlu olarak çalışır.
+
+[CSocketFile](../mfc/reference/csocketfile-class.md)<br/>
+Sağlar bir `CFile` Windows yuva için arabirim.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

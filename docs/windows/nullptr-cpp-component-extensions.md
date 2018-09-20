@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 73ebfdf9bea9f200279cb3cd2352a88878d8ebe8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0596276589790ee6fae8e071e50b4d9b55dd8b85
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591906"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439620"
 ---
 # <a name="nullptr--c-component-extensions"></a>nullptr (C++ Bileşen Uzantıları)
 
@@ -235,5 +235,5 @@ Derleyici seçeneği: (gerekli; dahil olmak üzere tüm kod oluşturma seçenekl
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)  
+[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [nullptr](../cpp/nullptr.md)

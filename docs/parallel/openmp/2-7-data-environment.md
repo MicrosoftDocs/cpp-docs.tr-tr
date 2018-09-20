@@ -12,16 +12,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1b0f253ce14ffc5d3740e582a9a51feea56ad32
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 17c60c621defa15c034f57d0af8f14637db54f03
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33690071"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378143"
 ---
 # <a name="27-data-environment"></a>2.7 Veri Ortamı
-Bu bölüm bir yönerge ve veri ortamı gibi paralel bölgeler, yürütme sırasında denetleme birkaç yan tümceleri sunar:  
-  
--   A **threadprivate** yönergesi dosya kapsamı, ad alanı kapsamı veya statik blok kapsamı değişkenleri bir iş parçacığı yerel yapmak için sağlanır (aşağıdaki bölüme bakın).  
-  
--   Paralel veya iş paylaşım yapıları süresince değişkenleri paylaşım özniteliklerini denetlemek için yönergeleri üzerinde belirtilebilir yan tümceleri içinde açıklanmıştır [bölüm 2.7.2](../../parallel/openmp/2-7-2-data-sharing-attribute-clauses.md) sayfasında 25.
+
+Bu bölüm, bir yönerge ve veri ortamı paralel bölgeleri yürütülmesi sırasında şu şekilde denetlemek için birkaç yan tümceleri sunar:
+
+- A **threadprivate** yönergesi dosya kapsam, ad alanı kapsamında veya blok kapsamı statik değişkenleri bir iş parçacığına yerel hale getirmek için sağlanır (aşağıdaki bölüme bakın).
+
+- Paralel veya iş paylaşım yapıları süresi boyunca değişkenlerin paylaşım öznitelikleri denetlemek için yönergeleri belirtilebilir yan tümceleri içinde açıklanmıştır [bölümü 2.7.2](../../parallel/openmp/2-7-2-data-sharing-attribute-clauses.md) sayfasında 25.

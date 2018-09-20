@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c222a939ccb00dc3b7466a1cb1a83abe7ea4036
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 496971736e1f303d61b83e15b2ba1c03083f8d53
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42465155"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422798"
 ---
 # <a name="intrinsic"></a>içi
 
@@ -100,5 +100,5 @@ Bkz: [#pragma işlevi](../preprocessor/function-c-cpp.md) için bilgi ve örnek 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)  
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)  

@@ -16,17 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18382d305c8128a70e17651de913f38303286885
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 539486ac1bce56fdc972943abcf8c7de72635f72
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379677"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46445561"
 ---
 # <a name="servers-user-interface-issues"></a>Sunucular: Kullanıcı Arabirimi Sorunları
-Bir sunucu uygulaması çok sayıda OLE kapsayıcı uygulamaları öğelerine sağlamak için kullanıcı arabirimi eklenmeli özelliği vardır. Menüleri ve bir sunucu uygulaması eklenmesi gereken ek kaynakları hakkında daha fazla bilgi için bkz: [menüler ve kaynaklar: sunucu ekleme](../mfc/menus-and-resources-server-additions.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sunucuları](../mfc/servers.md)   
- [Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)
+
+Bir sunucu uygulaması, birkaç kullanıcı arabirimi OLE öğelerine kapsayıcı uygulamaları sağlamak için eklenmelidir özellik vardır. Menüler ve bir sunucu uygulaması için eklenmesi gereken ek kaynaklar üzerinde daha fazla bilgi için bkz: [menüler ve kaynaklar: sunucu ekleme](../mfc/menus-and-resources-server-additions.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sunucular](../mfc/servers.md)<br/>
+[Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)
 

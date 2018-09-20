@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8fb9178bc315385bab97cea473430745ad66d973
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: fc2a37f587d3b5ac2b695171f5620db6521693d2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42465597"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439685"
 ---
 # <a name="rawmethodprefix"></a>raw_method_prefix
 **C++ özgü**  
@@ -49,5 +49,5 @@ Varsayılan öneki ile adlandırılan üye işlevleri tarafından düşük düze
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

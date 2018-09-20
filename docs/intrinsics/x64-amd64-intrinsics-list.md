@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eedbc29b5012c3a4355178d0fbd83aad81e9cb95
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 006b6ce67182b698a1f6d0bb5d87d8165fba9cde
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680418"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46406873"
 ---
 # <a name="x64-amd64-intrinsics-list"></a>x64 (amd64) İç Bilgi Listesi
 
@@ -1282,6 +1282,6 @@ Aşağıdaki tabloda x64 üzerinde kullanılabilir yapı içlerini listeler işl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)  
-[ARM İç Bilgileri](../intrinsics/arm-intrinsics.md)  
-[x86 iç bilgileri](../intrinsics/x86-intrinsics-list.md)    
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[ARM İç Bilgileri](../intrinsics/arm-intrinsics.md)<br/>
+[x86 iç bilgileri](../intrinsics/x86-intrinsics-list.md)

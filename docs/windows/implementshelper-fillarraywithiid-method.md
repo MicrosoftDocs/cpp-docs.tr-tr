@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 876f2bde68c53a27c1c40e9206b6285b8562bd91
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d570eaf3872f5d281d769e77298f9186d35e5a26
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591145"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410435"
 ---
 # <a name="implementshelperfillarraywithiid-method"></a>ImplementsHelper::FillArrayWithIid Yöntemi
 
@@ -38,10 +38,10 @@ void FillArrayWithIid(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*  
+*Dizin*<br/>
 Bu işlem için başlangıç dizi öğesini gösteren sıfır tabanlı dizini. Bu işlem tamamlandığında *dizin* 1 azaltılır.
 
-*IID'leri*  
+*IID'leri*<br/>
 IID'leri türünde bir dizi.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -56,5 +56,5 @@ Belirtilen bir dizi öğesine geçerli sıfırıncı şablon parametresi tarafı
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ImplementsHelper Yapısı](../windows/implementshelper-structure.md)  
+[ImplementsHelper Yapısı](../windows/implementshelper-structure.md)<br/>
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

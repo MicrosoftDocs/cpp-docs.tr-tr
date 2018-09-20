@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ee7ccca718a05529e5ebc88bccc7d23d258810c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f313b659629f824828c52948b9a73c50f86b5e40
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758368"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46434186"
 ---
 # <a name="coledatetimespan-class"></a>COleDateTimeSpan sınıfı
 
@@ -763,9 +763,9 @@ Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md)   
-[CTime sınıfı](../../atl-mfc-shared/reference/ctime-class.md)   
-[CTimeSpan sınıfı](../../atl-mfc-shared/reference/ctimespan-class.md)   
-[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
+[COleDateTime Sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md)<br/>
+[CTime Sınıfı](../../atl-mfc-shared/reference/ctime-class.md)<br/>
+[CTimeSpan Sınıfı](../../atl-mfc-shared/reference/ctimespan-class.md)<br/>
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 

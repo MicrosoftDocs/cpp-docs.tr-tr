@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6faa29858e94c7d80d6039e35278b6a7ae263a85
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 69aecab15ffb1914dbc8a6a6ae15fca307bc77ef
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213983"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46386258"
 ---
 # <a name="tn006-message-maps"></a>TN006: İleti Eşlemeleri
 
@@ -87,7 +87,7 @@ Standart işlev imzasına Windows mesajların parametreleri açılmasını ve t�
 > [!NOTE]
 > ClassWizard gerektirir kullanmanızı **afx_msg** ileti eşlemesi işleyici bildirimlerinizde anahtar sözcük.
 
- Bu işlev imzası, basit bir kuralı kullanarak elde edilmiştir. İşlev adı ile her zaman başlar `"On`". Bu, "kaldırıldı WM_" Windows iletinin adını ve büyük harfli her sözcüğün ilk harfini tarafından izlenir. Parametreleri sıralamadır *wParam* ardından `LOWORD`(*lParam*) sonra `HIWORD`(*lParam*). Kullanılmayan parametreleri geçmedi. MFC sınıfları tarafından Sarmalanan tanıtıcıları uygun MFC nesne işaretçileri dönüştürülür. Aşağıdaki örnek, WM_PAINT iletisini işlemek ve neden gösterilmektedir `CMyWnd::OnPaint` çağrılacak işlev:
+Bu işlev imzası, basit bir kuralı kullanarak elde edilmiştir. İşlev adı ile her zaman başlar `"On`". Bu, "kaldırıldı WM_" Windows iletinin adını ve büyük harfli her sözcüğün ilk harfini tarafından izlenir. Parametreleri sıralamadır *wParam* ardından `LOWORD`(*lParam*) sonra `HIWORD`(*lParam*). Kullanılmayan parametreleri geçmedi. MFC sınıfları tarafından Sarmalanan tanıtıcıları uygun MFC nesne işaretçileri dönüştürülür. Aşağıdaki örnek, WM_PAINT iletisini işlemek ve neden gösterilmektedir `CMyWnd::OnPaint` çağrılacak işlev:
 
 ```cpp
 BEGIN_MESSAGE_MAP(CMyWnd, CMyParentWndClass)
@@ -97,7 +97,7 @@ BEGIN_MESSAGE_MAP(CMyWnd, CMyParentWndClass)
 END_MESSAGE_MAP()
 ```
 
- İleti eşleme tablosu herhangi bir işlev veya sınıf tanımının kapsamı dışında tanımlanmış olması gerekir. Bu bir extern "C" bloğunda sokulmalıdır değil.
+İleti eşleme tablosu herhangi bir işlev veya sınıf tanımının kapsamı dışında tanımlanmış olması gerekir. Bu bir extern "C" bloğunda sokulmalıdır değil.
 
 > [!NOTE]
 > ClassWizard arasında gerçekleşen ileti eşlemesi girişleri Değiştir / / {{ve / /}} açıklama köşeli ayraç.
@@ -223,7 +223,7 @@ Bu formlar örnekleri:
     }
     ```
 
- İleri düzey kullanıcılar tek bir komut işleyicisi kullanarak bir dizi komutları işleyebilir: [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range) veya ON_COMMAND_RANGE_EX. Bu makrolar hakkında daha fazla bilgi için ürün belgelerine bakın.
+İleri düzey kullanıcılar tek bir komut işleyicisi kullanarak bir dizi komutları işleyebilir: [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range) veya ON_COMMAND_RANGE_EX. Bu makrolar hakkında daha fazla bilgi için ürün belgelerine bakın.
 
 > [!NOTE]
 > ClassWizard oluşturma ON_COMMAND ve on_update_command_uı işleyicileri destekler, ancak oluşturma ON_COMMAND_EX veya ON_COMMAND_RANGE işleyicileri desteklemez. Ancak, sınıf Sihirbazı ayrıştırma ve tüm dört komut işleyicisi çeşitleri göz atmanıza olanak tanır.
@@ -251,5 +251,5 @@ Windows ortak denetimleri daha güçlü kullanın [wm_notıfy](https://msdn.micr
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)  
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)  
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)

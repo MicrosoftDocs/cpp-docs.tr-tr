@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 80918d2ab783472b37a9739045fd7539a92bd3e7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5cfb8249d228b5a8e609952e1118bc23a75b9c98
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605638"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46426451"
 ---
 # <a name="handletattach-method"></a>HandleT::Attach Yöntemi
 
@@ -38,7 +38,7 @@ void Attach(
 
 #### <a name="parameters"></a>Parametreler
 
-*h*  
+*h*<br/>
 Tanıtıcı.
 
 ## <a name="requirements"></a>Gereksinimler

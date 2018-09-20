@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2c4b19cc2bf1ed60f02687b82a57745c328fc114
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: c8ee38503698f6f4553ced630e996f58c76e08c0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44312698"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46436565"
 ---
 # <a name="deleting-unassigned-symbols"></a>Atanmamış Sembolleri Silme
 
@@ -39,7 +39,7 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Atanmamış Sembolleri Değiştirme](../windows/changing-unassigned-symbols.md)  
-[Sembol Adı Kısıtlamaları](../windows/symbol-name-restrictions.md)  
-[Sembol Değeri Kısıtlamaları](../windows/symbol-value-restrictions.md)  
+[Atanmamış Sembolleri Değiştirme](../windows/changing-unassigned-symbols.md)<br/>
+[Sembol Adı Kısıtlamaları](../windows/symbol-name-restrictions.md)<br/>
+[Sembol Değeri Kısıtlamaları](../windows/symbol-value-restrictions.md)<br/>
 [Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)

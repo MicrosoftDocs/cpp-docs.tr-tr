@@ -14,56 +14,58 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7263d764014fa3532c3234bd4c7a0d4f1ff8d3c3
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 2bbed984f20c01544a972317f787a00abf6c7b94
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691547"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46382537"
 ---
 # <a name="parallel-patterns-library-ppl"></a>Paralel Desen Kitaplığı (PPL)
-Paralel Desen kitaplığı (PPL), ölçeklenebilirlik ve kolaylığı eşzamanlı uygulamaları geliştirmek için kullanım yükseltir kesinlik temelli bir programlama modeli sağlar. PPL'de zamanlama ve kaynak yönetimi bileşenlerine eşzamanlılık çalışma zamanı oluşturur. Uygulama kodunuz ve temel iş parçacığı mekanizması arasında Özet düzeyine genel, tür kullanımı uyumlu algoritmaları ve hareket kapsayıcıları verileri paralel sağlayarak başlatır. PPL'de ayrıca paylaşılan durum alternatifleri sağlayarak ölçeklendirme uygulamaları geliştirmenize olanak tanır.  
-  
- PPL'de aşağıdaki özellikleri sağlar:  
-  
-- *Görev Paralelliği*: paralel olarak birden fazla iş öğeleri (Görevler) yürütmek için Windows iş parçacığı havuzu üzerinde çalıştığı bir mekanizma  
-  
-- *Paralel algoritmalar*: paralel veri toplulukları yapması eşzamanlılık çalışma üstünde çalışır genel algoritmaları  
-  
-- *Paralel kapsayıcılar ve nesneler*: öğelerini eşzamanlı güvenli erişim sağlayan genel kapsayıcı türleri  
-  
-## <a name="example"></a>Örnek  
- PPL'de C++ Standart Kitaplığı benzeyen bir programlama modelidir. Aşağıdaki örnek, PPL'de özelliklerinin çoğu gösterir. Seri olarak ve paralel birkaç Fibonacci numarası hesaplar. Her iki hesaplamalar hareket bir [std::array](../../standard-library/array-class-stl.md) nesnesi. Örnek, ayrıca her iki hesaplamalar gerçekleştirmek için gereken süreyi konsola yazdırır.  
-  
- C++ Standart Kitaplığı seri sürümünü kullanır [std::for_each](../../standard-library/algorithm-functions.md#for_each) dizi gezinmesine algoritması ve sonuçları depolayan bir [std::vector](../../standard-library/vector-class.md) nesnesi. Paralel sürüm aynı görevi gerçekleştirir, ancak PPL'de kullanır [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritması ve sonuçları depolayan bir [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) nesnesi. `concurrent_vector` Sınıfı eşzamanlı olarak kapsayıcıya yazma erişimi eşitleme gereksinimi olmadan öğeler eklemek, her döngü tekrarında sağlar.  
-  
- Çünkü `parallel_for_each` paralel sürümü bu örnek, aynı anda sıralama gerekir davranır `concurrent_vector` nesne seri sürümle aynı sonucu verir.  
-  
- Örnek Fibonacci sayıları hesaplamak için naïve yöntemini kullandığını unutmayın; Ancak, bu yöntem eşzamanlılık çalışma zamanı uzun hesaplamalar performansını geliştirebilirsiniz nasıl gösterilmektedir.  
-  
- [!code-cpp[concrt-parallel-fibonacci#1](../../parallel/concrt/codesnippet/cpp/parallel-patterns-library-ppl_1.cpp)]  
-  
- Aşağıdaki örnek çıkış dört işlemciye sahip bir bilgisayar için ' dir.  
-  
-```Output  
-serial time: 9250 ms  
-parallel time: 5726 ms  
- 
-fib(24): 46368  
-fib(26): 121393  
-fib(41): 165580141  
-fib(42): 267914296  
-```  
-  
- Her döngü tekrarında tamamlamak için farklı bir süre gerektirir. Performansını `parallel_for_each` son bittikten işlemi tarafından sınırlıdır. Bu nedenle, bu örnek seri ve paralel sürümleri arasında doğrusal performans iyileştirmeleri beklememeniz gerekir.  
-  
-## <a name="related-topics"></a>İlgili Konular  
-  
-|Başlık|Açıklama|  
-|-----------|-----------------|  
-|[Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)|Görevler ve görev grupları ppl'de rolü açıklanmaktadır.|  
-|[Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)|Paralel algoritmalar gibi kullanmayı açıklar `parallel_for` ve `parallel_for_each`.|  
-|[Paralel Kapsayıcılar ve Nesneler](../../parallel/concrt/parallel-containers-and-objects.md)|Çeşitli paralel kapsayıcılar ve PPL tarafından sağlanan nesneleri açıklar.|  
-|[PPL'de İptal](cancellation-in-the-ppl.md)|Paralel bir algoritma tarafından gerçekleştirilen işi iptal etme açıklanmaktadır.|  
-|[Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)|Paralel Programlama basitleştiren ve ilgili konulara bağlantılar içerir eşzamanlılık çalışma, açıklar.|
+
+Paralel Desen kitaplığı (PPL), ölçeklenebilirlik ve kolayca eş zamanlı uygulamalar geliştirmeye yönelik kullanım yükseltir zorunlu programlama modeli sağlar. PPL, zamanlama ve kaynak yönetimi bileşenlerine eşzamanlılık çalışma zamanı oluşturur. Paralel veri çubuğunda genel, tür kullanımı uyumlu algoritmalar ve hareket kapsayıcılar sağlayarak uygulama kodunuzu ve temel iş parçacığı mekanizması arasında soyutlama düzeyinde yükseltir. PPL de paylaşılan durum alternatifleri sağlayarak ölçeklendirilen uygulamalar geliştirmenize olanak tanır.
+
+PPL, aşağıdaki özellikleri sağlar:
+
+- *Görev Paralelliği*: bazı iş öğeleri (Görevler) paralel olarak yürütmek için Windows iş parçacığı havuzu üzerinde çalışan bir mekanizma
+
+- *Paralel algoritmalar*: eşzamanlılık yapacak çalışma zamanı üzerinde paralel veri koleksiyonlarının çalışır genel algoritmalar
+
+- *Paralel kapsayıcılar ve nesneler*: öğelerini eşzamanlı güvenli erişim sağlayan genel kapsayıcı türleri
+
+## <a name="example"></a>Örnek
+
+PPL, C++ Standart Kitaplığı benzeyen bir programlama modeli sağlar. Aşağıdaki örnek PPL birçok özelliklerini gösterir. Seri olarak ve paralel birkaç Fibonacci sayı hesaplar. Her iki hesaplamalar üzerinde işlem bir [std::array](../../standard-library/array-class-stl.md) nesne. Örnek ayrıca, her iki hesaplamalar gerçekleştirmek için gerekli olduğu süre konsola yazdırır.
+
+C++ Standart Kitaplığı seri sürümü kullanan [std::for_each](../../standard-library/algorithm-functions.md#for_each) dizi geçirmek için algoritma ve sonuçlarda depolar bir [std::vector](../../standard-library/vector-class.md) nesne. Paralel sürüm aynı görevi gerçekleştirir, ancak PPL kullanan [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritması ve sonuçlarda depolayan bir [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) nesne. `concurrent_vector` Eşzamanlı olarak kapsayıcıya yazma erişimi eşitleme gereksinimini olmadan öğeleri eklemek, her döngü tekrarında sınıfı sağlar.
+
+Çünkü `parallel_for_each` paralel sürümü bu örnek, aynı anda sıralama gerekir davranır `concurrent_vector` seri sürümü aynı sonuçları üretmek için nesne.
+
+Örnek Fibonacci sayıları hesaplamak için naïve yöntemi kullandığına dikkat edin; Ancak, bu yöntem, eşzamanlılık çalışma zamanı uzun hesaplamalar performansını nasıl geliştireceğiniz gösterilmektedir.
+
+[!code-cpp[concrt-parallel-fibonacci#1](../../parallel/concrt/codesnippet/cpp/parallel-patterns-library-ppl_1.cpp)]
+
+Aşağıdaki örnek çıktıda dört işlemciye sahip bir bilgisayar içindir.
+
+```Output
+serial time: 9250 ms
+parallel time: 5726 ms
+
+fib(24): 46368
+fib(26): 121393
+fib(41): 165580141
+fib(42): 267914296
+```
+
+Döngünün her yinelemesinden tamamlamak için farklı bir süre gerektirir. Performansını `parallel_for_each` son sona eren işlemi tarafından sınırlıdır. Bu nedenle, bu örnekte seri ve paralel sürümleri arasında doğrusal performans iyileştirmeleri beklememeniz gerekir.
+
+## <a name="related-topics"></a>İlgili Konular
+
+|Başlık|Açıklama|
+|-----------|-----------------|
+|[Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)|Görevler ve görev grupları ppl'de rolünü açıklar.|
+|[Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)|Paralel algoritmalar gibi kullanmayı açıklar `parallel_for` ve `parallel_for_each`.|
+|[Paralel Kapsayıcılar ve Nesneler](../../parallel/concrt/parallel-containers-and-objects.md)|Çeşitli paralel kapsayıcılar ve ppl Yapıları tarafından sağlanan nesneler açıklar.|
+|[PPL'de İptal](cancellation-in-the-ppl.md)|Bir paralel algoritma tarafından gerçekleştirilen işi iptal etmek açıklanmaktadır.|
+|[Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)|Eşzamanlılık paralel programlama basitleştirir ve ilgili konulara bağlantılar içeren çalışma zamanı, açıklar.|
 

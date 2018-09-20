@@ -24,46 +24,50 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f040978c898dae3bfd4ca21c2cf9886fde9b5238
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 429ac52218af2e158df91c6c79f8ec67bcac3f5d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36951285"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46395589"
 ---
 # <a name="window-objects"></a>Pencere Nesneleri
-MFC sınıf sağlayan [CWnd](../mfc/reference/cwnd-class.md) yalıtılacak `HWND` bir pencere tanıtıcısı. `CWnd` Nesnesidir ayrı bir C++ pencere nesnesi, `HWND` temsil eden bir Windows penceresi ancak onu içeren. Kullanmak `CWnd` kendi alt pencere türetilen sınıflar ya da birçok MFC sınıfları birini kullanın türetilen `CWnd`. Sınıf `CWnd` çerçeve pencereleri, iletişim kutuları, alt öğe pencerelerini, denetimleri ve denetim çubukları araç çubukları gibi dahil olmak üzere tüm windows için temel sınıftır. İyi anlamış [bir C++ pencere nesnesi ile bir HWND arasındaki ilişkiyi](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md) etkili programlama MFC için önemlidir.  
-  
- MFC bazı varsayılan işlevselliği ve windows yönetim sağlar, ancak kendi sınıfından türetilen `CWnd` ve onun üye işlevleri sağlanan işlevselliği özelleştirmek için kullanın. Oluşturarak windows alt oluşturabilirsiniz bir `CWnd` nesne ve arama kendi [oluşturma](../mfc/reference/cwnd-class.md#create) üye işlev sonra kullanarak alt windows özelleştirme `CWnd` üye işlevleri. Öğesinden türetilen nesneler eklenebilir [CView](../mfc/reference/cview-class.md)form görünümleri veya bir çerçeve penceresinde ağaç görünümler gibi. Ve belgelerinizi sınıfı tarafından sağlanan Bölümlendirici bölmeleri aracılığıyla birden çok görünüm destekleyebilir [CSplitterWnd](../mfc/reference/csplitterwnd-class.md).  
-  
- Her nesne sınıfından türetilen `CWnd` üzerinden Windows ileti eşlemesi veya kendi işleyicilerinizi komut kimlikleri bir ileti eşlemesi içerir.  
-  
- Windows nasıl kullanılacağını öğrenmek için iyi bir kaynak için programlama üzerinde genel belgeleri `CWnd` kapsülleyen üye işlevleri `HWND` API'leri.  
-  
-## <a name="functions-for-operating-on-a-cwnd"></a>CWnd üzerinde işletim işlevleri  
- `CWnd` ve kendi [türetilen pencere sınıfları](../mfc/derived-window-classes.md) Oluşturucular, yok ediciler ve nesneyi başlatmak için üye işlevleri temel alınan Windows yapıları oluşturmak ve kapsüllenmiş erişim sağlayan `HWND`. `CWnd` Ayrıca Windows API'ları pencerenin durumu, güncelleştirme, koordinatları dönüştürme erişme ileti göndermek için kapsülleyen üye işlevleri sağlar kaydırma, Pano ve diğer pek çok görev erişme. Ele çoğu Windows pencere yönetimi API'leri bir `HWND` bağımsız değişkeni üye işlevlerini kapsüllenmiş `CWnd`. İşlevleri ve bunların parametrelerini adları olarak korunur `CWnd` üye işlevi. Windows API'larını yalıtılan hakkındaki ayrıntılar için `CWnd`, sınıfına bakın [CWnd](../mfc/reference/cwnd-class.md).  
-  
-## <a name="cwnd-and-windows-messages"></a>CWnd ve Windows iletileri  
- Birincil amaçlarından biri `CWnd` WM_PAINT veya WM_MOUSEMOVE gibi Windows iletilerini işleme için bir arabirim sağlar. Üye işlevlerini birçoğu `CWnd` standart iletileri için işleyiciler — bu tanımlayıcı ile başlayan **afx_msg** ve önek "," gibi `OnPaint` ve `OnMouseMove`. [İleti işleme ve eşleme](../mfc/message-handling-and-mapping.md) iletileri ve ileti işleme ayrıntılı olarak ele alınmaktadır. Bilgi var. framework'ün windows hem de özel amaçlar için kendiniz oluşturmanız için eşit oranda geçerlidir.  
-  
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Bir C++ pencere nesnesi ile bir HWND arasındaki ilişki](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md)  
-  
--   [Türetilen pencere sınıfları](../mfc/derived-window-classes.md)  
-  
--   [Pencereler oluşturma](../mfc/creating-windows.md)  
-  
--   [Pencere nesnelerini yok etme](../mfc/destroying-window-objects.md)  
-  
--   [Bir CWnd'i HWND'inden Ayırma](../mfc/detaching-a-cwnd-from-its-hwnd.md)  
-  
--   [Pencere nesneleriyle çalışma](../mfc/working-with-window-objects.md)  
-  
--   [Cihaz bağlamları](../mfc/device-contexts.md): cihaz çizim Windows bağımsız duruma nesneleri  
-  
--   [Grafik nesneleri](../mfc/graphic-objects.md): kalemler, Fırçalar, yazı tipleri, bit eşlemler, paletler, bölgeler  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows](../mfc/windows.md)
+
+MFC sağlar sınıfını [CWnd](../mfc/reference/cwnd-class.md) yalıtılacak `HWND` pencere tanıtıcısı. `CWnd` Nesnedir, farklı bir C++ pencere nesnesi, `HWND` temsil eden bir Windows penceresi ancak içeren. Kullanma `CWnd` kendi alt penceresi türetmek için sınıflar veya birçok MFC sınıflarını birini türetilen `CWnd`. Sınıf `CWnd` çerçeve pencereleri, iletişim kutuları, alt pencereler, denetimler ve denetim çubukları araç çubukları gibi dahil olmak üzere tüm pencereler için temel sınıftır. İyi bir anlayış [bir C++ pencere nesnesi ile bir HWND arasındaki ilişkiyi](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md) MFC ile etkili programlama için önemlidir.
+
+MFC, bazı varsayılan işlevselliği ve windows yönetimi sağlar, ancak kendi sınıftan türetilip `CWnd` ve onun üye işlevleri sağlanan işlevselliği özelleştirmek için kullanın. Windows alt oluşturarak oluşturabilirsiniz bir `CWnd` nesne ve arama kendi [Oluştur](../mfc/reference/cwnd-class.md#create) üye işlev ve alt öğe pencerelerini kullanarak özelleştirme `CWnd` üye işlevleri. Öğesinden türetilen nesneler katıştırabilirsiniz [CView](../mfc/reference/cview-class.md)form görünümleri ya da bir çerçeve penceresindeki ağaç görünümleri gibi. Birden çok belgelerinizi sınıfı tarafından sağlanan Bölümlendirici bölmeleri üzerinden görünümlerini destekleyebilir [CSplitterWnd](../mfc/reference/csplitterwnd-class.md).
+
+Her nesne sınıfından türetilmiş `CWnd` üzerinden Windows ileti eşlemesi veya komut kimlikleri için kendi işleyicilerinizi bir ileti eşlemesi içerir.
+
+Windows için nasıl kullanılacağını öğrenmek için iyi bir kaynaktır programlama hakkında genel belgeleri `CWnd` kapsülleyen üye işlevleri, `HWND` API'leri.
+
+## <a name="functions-for-operating-on-a-cwnd"></a>Bir CWnd üzerinde çalışmak işlevleri
+
+`CWnd` ve kendi [türetilen pencere sınıfları](../mfc/derived-window-classes.md) oluşturucular ve Yıkıcılar nesnesini başlatmak için üye işlevleri Windows yapılar oluşturmak ve kapsüllenmiş erişim sağlayan `HWND`. `CWnd` Ayrıca, pencerenin durumu, güncelleştirme, koordinatları, dönüştürme erişme iletileri göndermek için Windows API'ları kapsülleyen işlevleri sağlar kaydırma, Pano ve diğer birçok görevi erişme. Alan çoğu Windows pencere yönetimi API'leri bir `HWND` bağımsız değişken üye işlevleri kapsüllenmiş `CWnd`. İşlevleri ve bunların parametrelerini adlarını saklanır `CWnd` üye işlevi. Windows tarafından Kapsüllenen API'ler ile ilgili bilgiler için `CWnd`, sınıfına bakın [CWnd](../mfc/reference/cwnd-class.md).
+
+## <a name="cwnd-and-windows-messages"></a>CWnd ve Windows iletileri
+
+Birincil amaçlarından biri `CWnd` WM_PAINT ya da WM_MOUSEMOVE gibi Windows iletileri işlemek için bir arabirim sağlar. Üye işlevlerinin çoğu `CWnd` standart iletileri için işleyiciler — bu tanımlayıcısıyla başlayarak **afx_msg** ve ön ek "," gibi `OnPaint` ve `OnMouseMove`. [İleti işleme ve eşleme](../mfc/message-handling-and-mapping.md) iletileri ve ileti işleme ayrıntılı olarak ele alınır. Bilgi vardır, framework'ün windows hem de özel amaçlar için kendiniz oluşturmanız için eşit oranda geçerlidir.
+
+### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Bir C++ pencere nesnesi ile bir HWND arasındaki ilişki](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md)
+
+- [Türetilen pencere sınıfları](../mfc/derived-window-classes.md)
+
+- [Pencereler oluşturma](../mfc/creating-windows.md)
+
+- [Pencere nesnelerini yok etme](../mfc/destroying-window-objects.md)
+
+- [Bir CWnd'i HWND'inden Ayırma](../mfc/detaching-a-cwnd-from-its-hwnd.md)
+
+- [Pencere nesneleriyle çalışma](../mfc/working-with-window-objects.md)
+
+- [Cihaz bağlamları](../mfc/device-contexts.md): Windows cihaz çizim bağımsız nesneleri
+
+- [Grafik nesneler](../mfc/graphic-objects.md): kalemler, Fırçalar, yazı tipleri, bit eşlemler, paletler, bölgeler
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Windows](../mfc/windows.md)
 

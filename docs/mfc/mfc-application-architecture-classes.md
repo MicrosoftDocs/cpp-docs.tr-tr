@@ -19,34 +19,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1174a994f345f4b7733e82603b5a49ed8977651
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 32a842d69e227633f8fbd2291a47296d384a75c6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33351436"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46438632"
 ---
 # <a name="mfc-application-architecture-classes"></a>MFC Uygulama Mimarisi Sınıfları
-Bu kategorideki sınıfları framework uygulaması mimarisini katkıda. Bunların çoğu uygulamaları için ortak işlevselliği sağlar. Uygulamaya özel işlevsellik eklemek için Framework'te doldurun. Genellikle, yeni sınıflar mimarisi sınıflarından türetme ve yeni üye ekleme veya var olan üye işlevlerini geçersiz kılma bunu.  
-  
- [Uygulama sihirbazları](../mfc/reference/mfc-application-wizard.md) çeşitli uygulamaları, farklı şekillerde tümü kullanan uygulama çerçevesi oluşturur. (Tek belge arabirimi) SDI ve MDI (birden çok belge arabirimi) uygulamaları belge/görünüm mimarisinin adlı framework'ün bir parçası tam kullanılmasını sağlamak. İletişim tabanlı uygulamalar, form tabanlı uygulamalar ve DLL'ler gibi uygulamalarının diğer türleri yalnızca bazı belge/görünüm mimarisi özellikleri kullanın.  
-  
- Belge/görünüm uygulamaları bir veya daha fazla kümesi belgeler, görünümler ve çerçeve pencereleri içerir. Belge şablonu nesnesi için her bir belge/görünüm/çerçeve kümesi sınıfları ilişkilendirir.  
-  
- Belge/görünüm mimarisinin MFC uygulamanızda kullanmak zorunda değil olmasa da, çok sayıda Bunun yapılması için avantaj vardır. MFC OLE kapsayıcı ve sunucu desteği, yazdırmayı ve baskı önizlemeyi desteği gibi belge/görünüm mimarisi hakkında temel alır.  
-  
- En az iki nesnelerinin tüm MFC uygulamaları vardır: uygulama nesnesi türetilmiş [CWinApp](../mfc/reference/cwinapp-class.md)ve bazı sıralama (genellikle dolaylı olarak) türetilmiş ana penceresi nesnesinin [CWnd](../mfc/reference/cwnd-class.md). (Genellikle, ana pencereyi türetildiği [CFrameWnd](../mfc/reference/cframewnd-class.md), [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md), veya [CDialog](../mfc/reference/cdialog-class.md), her biri türetilmiş `CWnd`.)  
-  
- Belge/görünüm mimarisi kullanan uygulamaları ek nesneleri içerir. Asıl nesneler şunlardır:  
-  
--   Uygulama nesnesi sınıfından türetilen [CWinApp](../mfc/reference/cwinapp-class.md), önceden belirtildiği gibi.  
-  
--   Bir veya daha fazla belge sınıfı nesneleri sınıfından türetilen [CDocument](../mfc/reference/cdocument-class.md). Belge sınıfı nesneleri görünümünde yönetilen veri iç gösterimini sorumludur. Bunlar, bir veri dosyası ile ilişkili olabilir.  
-  
--   Bir veya daha fazla görünüm nesneleri sınıfından türetilen [CView](../mfc/reference/cview-class.md). Her görünüm, bir belgeye eklenmiş ve çerçeve penceresi ile ilişkili bir penceredir. Görünümleri görüntülemek ve bir belge sınıfı nesnesinde bulunan verileri arabirimidir.  
-  
- Belge/görünüm uygulamaları da içeren çerçeve pencereleri (türetilmiş [CFrameWnd](../mfc/reference/cframewnd-class.md)) ve belge şablonları (türetilmiş [CDocTemplate](../mfc/reference/cdoctemplate-class.md)).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Sınıfları bu kategoriye giren bir framework uygulamasının mimariye katkıda bulunur. Bunlar, çoğu uygulama için ortak işlevselliği sağlar. Uygulamaya özgü işlevselliği eklemek için framework doldurun. Genellikle, yeni sınıflar mimarisi sınıflardan türetme ve ardından yeni üyeler eklemek veya var olan üye işlevleri geçersiz kılma bunu.
+
+[Uygulama sihirbazları](../mfc/reference/mfc-application-wizard.md) çeşitli uygulama türleri farklı şekillerde tümü kullanan uygulama çerçevesi oluşturun. (Tek Belgeli Arabirim) SDI ve MDI (birden çok belge arabirimi) uygulamaları tam kullanımını belge/görünüm mimarisi olarak adlandırılan framework'ün bir parçası olun. İletişim tabanlı uygulamalar, form tabanlı uygulamalar ve DLL'ler gibi uygulamalarının diğer türleri yalnızca belge/görünüm mimarisi özelliklerden bazıları kullanın.
+
+Belge/görünüm uygulamaları bir veya daha fazla kümesi belgeler, görünümler ve çerçeve pencereleri içerir. Bir belge şablonu nesnesi, her bir belge/görünüm/çerçeve kümesi sınıflarını ilişkilendirir.
+
+Belge/görünüm mimarisi MFC uygulamanızda kullanmak zorunda değil ancak bunun yapılması avantajları sayısı vardır. Yazdırma ve yazdırma önizleme desteği gibi MFC OLE kapsayıcı ve sunucu desteği belge/görünüm mimarisini temel alır.
+
+Tüm MFC uygulamaları en az iki nesne vardır: uygulama nesnesi türetilen [CWinApp](../mfc/reference/cwinapp-class.md)ve ana pencere nesnesi, (genellikle dolaylı olarak) türetilen tür [CWnd](../mfc/reference/cwnd-class.md). (Çoğu zaman ana pencerenin türetilir [CFrameWnd](../mfc/reference/cframewnd-class.md), [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md), veya [CDialog](../mfc/reference/cdialog-class.md), her biri türetilmiştir `CWnd`.)
+
+Belge/görünüm mimarisini kullanan uygulamalar, ek nesneler içerir. Asıl nesneleri şunlardır:
+
+- Uygulama nesnesi sınıfından türetilmiş [CWinApp](../mfc/reference/cwinapp-class.md), daha önce belirtildiği gibi.
+
+- Bir veya daha fazla belge sınıfı nesneleri sınıfından türetilmiş [CDocument](../mfc/reference/cdocument-class.md). Belge sınıfı nesneleri, veri görünümü'nde yönetilen iç gösterimine sorumludur. Bunlar, bir veri dosyası ile ilişkili olabilir.
+
+- Bir veya daha fazla görünüm nesneleri sınıfından türetilmiş [CView](../mfc/reference/cview-class.md). Her görünüm, bir belgeye ekli ve bir çerçeve penceresi ile ilişkili bir penceredir. Görünümleri görüntüleyebilir ve bir belge sınıf nesnesinde yer alan verileri.
+
+Belge/görünüm uygulamaları da içeren çerçeve pencereleri (türetilen [CFrameWnd](../mfc/reference/cframewnd-class.md)) ve belge şablonları (türetilen [CDocTemplate](../mfc/reference/cdoctemplate-class.md)).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

@@ -16,41 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: adece31c6123a21931436809d4405f258f4341b1
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: f989c7bd6cc74a688e8694ed59899c59c50cb0d4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466273"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430663"
 ---
 # <a name="readcr0"></a>__readcr0
-**Microsoft'a özgü**  
-  
- CR0 kaydının yazmacını okuyarak ve değerini döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-unsigned long __readcr0(void);  /* X86 */  
-unsigned __int64 __readcr0(void);  /* X64 */  
-  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- CR0 kaydının kayıttaki değeri.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|  
-|---------------|------------------|  
-|`__readcr0`|x86, x64|  
-  
- **Üst bilgi dosyası** \<intrin.h >  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+
+**Microsoft'a özgü**
+
+CR0 kaydının yazmacını okuyarak ve değerini döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+unsigned long __readcr0(void);  /* X86 */
+unsigned __int64 __readcr0(void);  /* X64 */
+
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+CR0 kaydının kayıttaki değeri.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|
+|---------------|------------------|
+|`__readcr0`|x86, x64|
+
+**Üst bilgi dosyası** \<intrin.h >
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

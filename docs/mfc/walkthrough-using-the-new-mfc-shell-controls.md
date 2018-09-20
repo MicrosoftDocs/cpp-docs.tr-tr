@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6fbf10ef749df0ce5e5984ac773e0d2c00106b82
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 81925cfa31c394a1b307a184388fb0d331d31fdd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464670"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46432496"
 ---
 # <a name="walkthrough-using-the-new-mfc-shell-controls"></a>İzlenecek yol: Yeni MFC Kabuk Denetimlerini Kullanma
 
@@ -186,4 +186,4 @@ Bu izlenecek yol, Visual Studio'yu kullanmak için ayarladığınız varsayılma
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İzlenecek Yollar](../mfc/walkthroughs-mfc.md)  
+[İzlenecek Yollar](../mfc/walkthroughs-mfc.md)

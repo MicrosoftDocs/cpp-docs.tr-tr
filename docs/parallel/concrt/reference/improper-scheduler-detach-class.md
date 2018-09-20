@@ -18,54 +18,59 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd492f28f2aba76e9d6e6d3b381d4d0de4c30202
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 680aa7fc6a3b1216148bb74ce0f0d19eb06294e6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46059213"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420835"
 ---
 # <a name="improperschedulerdetach-class"></a>improper_scheduler_detach Sınıfı
-Bu sınıf oluşan bir özel durumu anlatmaktadır `CurrentScheduler::Detach` yöntemi kullanarak herhangi bir zamanlayıcı için bağlı olmayan bir bağlamı çağrıldığında `Attach` yöntemi bir `Scheduler` nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Bu sınıf oluşan bir özel durumu anlatmaktadır `CurrentScheduler::Detach` yöntemi kullanarak herhangi bir zamanlayıcı için bağlı olmayan bir bağlamı çağrıldığında `Attach` yöntemi bir `Scheduler` nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 class improper_scheduler_detach : public std::exception;
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[improper_scheduler_detach](#ctor)|Fazla Yüklendi. Oluşturur bir `improper_scheduler_detach` nesne.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `exception`  
-  
- `improper_scheduler_detach`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** concrt.h  
-  
- **Namespace:** eşzamanlılık  
-  
-##  <a name="ctor"></a> improper_scheduler_detach 
+```
 
- Oluşturur bir `improper_scheduler_detach` nesne.  
-  
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[improper_scheduler_detach](#ctor)|Fazla Yüklendi. Oluşturur bir `improper_scheduler_detach` nesne.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`exception`
+
+`improper_scheduler_detach`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** concrt.h
+
+**Namespace:** eşzamanlılık
+
+##  <a name="ctor"></a> improper_scheduler_detach
+
+Oluşturur bir `improper_scheduler_detach` nesne.
+
 ```
 explicit _CRTIMP improper_scheduler_detach(_In_z_ const char* _Message) throw();
 
 improper_scheduler_detach() throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *İl_eti*<br/>
-Hatanın açıklayıcı bir iletisi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [Zamanlayıcı Sınıfı](scheduler-class.md)
+Hatanın açıklayıcı bir iletisi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
+[Zamanlayıcı Sınıfı](scheduler-class.md)

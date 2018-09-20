@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9f91474ec4c435b6fb2a005b47c67210a54d0804
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: abe76a4153ecfb0e4db4ce9e92eb63f5b00067ff
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317270"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394653"
 ---
 # <a name="attributed-programming-concepts"></a>Öznitelikli Programlama Kavramları
 
@@ -32,27 +32,27 @@ Visual C++ öznitelikleri programlarınızda kullanmanıza yardımcı olacak çe
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Özniteliklerin Amacı](../windows/purpose-of-attributes.md)  
+[Özniteliklerin Amacı](../windows/purpose-of-attributes.md)<br/>
 Öznitelikli Programlama genel bir bakış sunar.
 
-[Özniteliklerin Temel Mekanikleri](../windows/basic-mechanics-of-attributes.md)  
+[Özniteliklerin Temel Mekanikleri](../windows/basic-mechanics-of-attributes.md)<br/>
 Öznitelikleri projenize nasıl çalıştığını açıklar.
 
-[Öznitelikli Program Derleme](../windows/building-an-attributed-program.md)  
+[Öznitelikli Program Derleme](../windows/building-an-attributed-program.md)<br/>
 Projenizde C++ derleyici seçenekleri kullanma hakkında bilgi sağlar.
 
-[Öznitelik Kategorileri](../windows/attribute-categories.md)  
+[Öznitelik Kategorileri](../windows/attribute-categories.md)<br/>
 Visual C++'da kullanılan öznitelikler kategorilerini bağlantılar sağlar.
 
-[Öznitelik Programmming SSS](../windows/attribute-programming-faq.md)  
+[Öznitelik Programmming SSS](../windows/attribute-programming-faq.md)<br/>
 Öznitelikli programlama hakkında sık sorulan soruları yanıtlar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[Öznitelik başvurusu](../windows/cpp-attributes-reference.md)  
+[Öznitelik başvurusu](../windows/cpp-attributes-reference.md)<br/>
 Tek tek öznitelikler ve bunların kullanımını açıklayan başvuru konularına bağlantılar sağlar.
 
-[Eklenen kodu hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code)  
+[Eklenen kodu hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code)<br/>
 Hata ayıklama öznitelikli programları açıklar.
 
 [__super](../cpp/super.md)ve [__interface](../cpp/interface.md)  

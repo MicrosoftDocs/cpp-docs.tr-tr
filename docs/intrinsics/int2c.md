@@ -19,33 +19,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23727ed40b12506ddd47a03055eaf8514d5685c5
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: fcb8859f00724eb7865198c662850a60314ffdc3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465543"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419990"
 ---
 # <a name="int2c"></a>__int2c
-**Microsoft'a özgü**  
-  
- Oluşturur `int 2c` tetikleyen bir yönerge, `2c` kesme.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void __int2c(void);  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|  
-|---------------|------------------|  
-|`__int2c`|x86, x64|  
-  
- **Üst bilgi dosyası** \<intrin.h >  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+
+**Microsoft'a özgü**
+
+Oluşturur `int 2c` tetikleyen bir yönerge, `2c` kesme.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void __int2c(void);
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|
+|---------------|------------------|
+|`__int2c`|x86, x64|
+
+**Üst bilgi dosyası** \<intrin.h >
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

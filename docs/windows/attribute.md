@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 54699888fc2988dd9b4ccec2a57b6d9df0d4e79e
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 335b22b015bf244e39d67781eae21b3c43328256
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314779"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379794"
 ---
 # <a name="attribute"></a>özniteliği
 
@@ -43,13 +43,13 @@ ms.locfileid: "44314779"
 
 ### <a name="parameters"></a>Parametreler
 
-*AllowOn*  
+*AllowOn*<br/>
 Özel öznitelik uygulanabilir dil öğelerini belirtir. Varsayılan değer `System::AttributeTargets::All` (bkz [System::AttributeTargets](https://msdn.microsoft.com/library/system.attributetargets.aspx)).
 
-*AttributeUsage*  
+*AttributeUsage*<br/>
 Özel öznitelik için bir yapı art arda uygulanabilir olup olmadığını belirtir. FALSE varsayılan değerdir.
 
-*Devralınan*  
+*Devralınan*<br/>
 Öznitelik alt sınıflar tarafından devralınmaz olup olmadığını gösterir. Derleyici, bu işlev için hiçbir özel destek sağlar; öznitelik tüketici iş (`Reflection`, örneğin) bu bilgileri uygular. Varsa *devralınan* doğru ise, öznitelik devralınır. Varsa *AttributeUsage* doğru ise, öznitelik ise türetilen üyesinde; birikir *AttributeUsage* yanlış, öznitelik geçersiz kılma (Değiştir Devralmada veya). Varsa *devralınan* yanlış, öznitelik devralınmaz. Varsayılan değer True'dur.
 
 ## <a name="remarks"></a>Açıklamalar

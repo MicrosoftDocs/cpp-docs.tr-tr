@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d8e029b1ffc4e17e55f2cb69405bb272b92e94e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6d8d4b0f740e69b57944cb35f2213ae0fd54b511
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221400"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46386294"
 ---
 # <a name="tn071-mfc-iolecommandtarget-implementation"></a>TN071: MFC IOleCommandTarget Uygulaması
 
@@ -59,11 +59,11 @@ Bu makro sınıfı bildiriminde komut eşlemesini içeren sınıfın içinde (ge
 BEGIN_OLECMD_MAP(theClass, baseClass)
 ```
 
-*Sınıfın*  
- Komut eşlemesini içeren sınıfın adı.
+*Sınıfın*<br/>
+Komut eşlemesini içeren sınıfın adı.
 
-*baseClass*  
- Komut eşlemesini içeren sınıfın temel sınıfının adı.
+*baseClass*<br/>
+Komut eşlemesini içeren sınıfın temel sınıfının adı.
 
 Bu makro, komut eşleme başına işaretler. Bu makro, komut eşlemesini içeren sınıf için uygulama dosyasında kullanın.
 
@@ -77,14 +77,14 @@ Bu makro, komut harita sonunu işaretler. Bu makro, komut eşlemesini içeren s�
 ON_OLECMD(pguid, olecmdid, id)
 ```
 
-*pguid*  
- OLE, komutun komut grubu GUID işaretçisi. Bu parametre **NULL** standart OLE komut grubu.
+*pguid*<br/>
+OLE, komutun komut grubu GUID işaretçisi. Bu parametre **NULL** standart OLE komut grubu.
 
-*olecmdid*  
- Çağrılacak komutun OLE komut kimliği.
+*olecmdid*<br/>
+Çağrılacak komutun OLE komut kimliği.
 
-*id*  
- Bu OLE komut çağrıldığında komut harita içeren uygulamaya gönderilecek WM_COMMAND ileti kimliği.
+*id*<br/>
+Bu OLE komut çağrıldığında komut harita içeren uygulamaya gönderilecek WM_COMMAND ileti kimliği.
 
 ON_OLECMD makrosu komut haritada kullanmak istediğiniz OLE komutları girdileri eklemek üzere kullanın. OLE komutlar alındığında, bunlar için belirtilen WM_COMMAND ileti dönüştürülür ve standart komut yönlendirmeyi MFC mimarisi kullanarak uygulamanın ileti eşlemesi üzerinden yönlendirilir.
 
@@ -158,5 +158,5 @@ void CContainerCntrItem::DoOleCmd()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)  
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)  
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
