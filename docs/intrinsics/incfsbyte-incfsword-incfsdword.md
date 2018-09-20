@@ -23,51 +23,55 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a80dc66f9626c87cef78a79b1c46a62afd0957d3
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d72fc5c130f9e92cc4575510fe7565da5199a996
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719361"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46380288"
 ---
 # <a name="incfsbyte-incfsword-incfsdword"></a>__incfsbyte, __incfsword, __incfsdword
-**Microsoft'a özgü**  
-  
- Bir değere başlangıcına göre bir uzaklık tarafından belirtilen bellek konumunda ekleme `FS` kesimi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void __incfsbyte(   
-   unsigned long Offset   
-);  
-void __incfsword(   
-   unsigned long Offset   
-);  
-void __incfsdword(   
-   unsigned long Offset  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+**Microsoft'a özgü**
+
+Bir değere başlangıcına göre bir uzaklık tarafından belirtilen bellek konumunda ekleme `FS` kesimi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void __incfsbyte(
+   unsigned long Offset
+);
+void __incfsword(
+   unsigned long Offset
+);
+void __incfsdword(
+   unsigned long Offset
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *uzaklık*<br/>
-[in] Başından uzaklık `FS`.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|  
-|---------------|------------------|  
-|`__incfsbyte`|x86|  
-|`__incfsword`|x86|  
-|`__incfsdword`|x86|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu iç öğeler yalnızca çekirdek modunda kullanılabilir ve yordamlar yalnızca iç öğe olarak kullanılabilir.  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [__addfsbyte, \__addfsword, \__addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)   
- [__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)   
- [__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)   
- [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[in] Başından uzaklık `FS`.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|
+|---------------|------------------|
+|`__incfsbyte`|x86|
+|`__incfsword`|x86|
+|`__incfsdword`|x86|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu iç öğeler yalnızca çekirdek modunda kullanılabilir ve yordamlar yalnızca iç öğe olarak kullanılabilir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[__addfsbyte, \__addfsword, \__addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)<br/>
+[__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)<br/>
+[__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)<br/>
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

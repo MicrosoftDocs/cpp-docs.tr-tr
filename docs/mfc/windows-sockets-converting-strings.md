@@ -16,33 +16,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bad57be68ce716cddf2ce44f12e94c545a7bbfd6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6b23d2149659cdad320a58bdff0f42ba113b5696
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383766"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378949"
 ---
 # <a name="windows-sockets-converting-strings"></a>Windows Yuvaları: Dizeleri Dönüştürme
-Bu makale ve iki yardımcı makaleler Windows Sockets programlamada çeşitli sorunlar açıklanmaktadır. Bu makalede, dizeleri dönüştürme yer almaktadır. Diğer sorunlar ele alınmaktadır [Windows Yuvaları: engelleme](../mfc/windows-sockets-blocking.md) ve [Windows Yuvaları: bayt sıralama](../mfc/windows-sockets-byte-ordering.md).  
-  
- Kullanıyorsanız veya sınıfından türetilen [CAsyncSocket](../mfc/reference/casyncsocket-class.md), bu sorunları kendiniz yönetmeniz gerekir. Kullanıyorsanız veya sınıfından türetilen [CSocket](../mfc/reference/csocket-class.md), MFC yönetir bunları sizin için.  
-  
-## <a name="converting-strings"></a>Dizeleri dönüştürme  
- Unicode ya da birden çok baytlı karakter (MBCS) ayarlar gibi farklı joker karakter biçimlerde depolanan dizeleri kullanan uygulamalar arasında ya da bunlardan birini ve ANSI karakter dizelerini kullanarak bir uygulama arasındaki iletişim halinde dönüşümleri yönetmeniz gerekir kendiniz altında `CAsyncSocket`. `CArchive` İle kullanılan nesnesi bir `CSocket` nesnesi yönetir bu dönüştürme için özellikleri aracılığıyla sınıfının [CString](../atl-mfc-shared/reference/cstringt-class.md). Daha fazla bilgi için bkz: Windows SDK'da bulunan Windows Sockets belirtimi.  
-  
- Daha fazla bilgi için bkz.:  
-  
--   [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)  
-  
--   [Windows Yuvaları: Yuvaları Arşivlerle Kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)  
-  
--   [Windows Yuvaları: Arka Plan](../mfc/windows-sockets-background.md)  
-  
--   [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)  
-  
--   [Windows Yuvaları: Veri Birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)
+
+Bu makale ve iki Yardımcısı makaleler Windows Sockets programlamada çeşitli sorunlar açıklanmaktadır. Bu makale, dizeleri dönüştürme kapsar. Diğer sorunlar ele alınmaktadır [Windows Yuvaları: engelleme](../mfc/windows-sockets-blocking.md) ve [Windows Yuvaları: bayt sıralama](../mfc/windows-sockets-byte-ordering.md).
+
+Kullanıyorsanız veya sınıfından türetilir [Casyncsocket'ini](../mfc/reference/casyncsocket-class.md), bu sorunları kendiniz yönetmeniz gerekecek. Kullanıyorsanız veya sınıfından türetilir [CSocket](../mfc/reference/csocket-class.md), MFC yönetir bunlar sizin için.
+
+## <a name="converting-strings"></a>Dizeleri dönüştürme
+
+Veya bunlardan birini ve ANSI karakter dizeleri kullanan bir uygulamanın farklı geniş karakter biçimlerinde depolanan dizeleri Unicode veya çok baytlı karakter (MBCS) ayarlar gibi kullanan uygulamalar arasında iletişim kurmak, dönüştürmeler yönetmelidir kendiniz altında `CAsyncSocket`. `CArchive` Nesne ile kullanılan bir `CSocket` nesnesi yönetir, bu dönüştürme için özellikleri sınıfın [CString](../atl-mfc-shared/reference/cstringt-class.md). Daha fazla bilgi için bkz: Windows SDK'da bulunan Windows yuva belirtimi.
+
+Daha fazla bilgi için bkz.:
+
+- [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)
+
+- [Windows Yuvaları: Yuvaları Arşivlerle Kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)
+
+- [Windows Yuvaları: Arka Plan](../mfc/windows-sockets-background.md)
+
+- [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)
+
+- [Windows Yuvaları: Veri Birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)
 

@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5691a87f7350c7816e8ddb58d5591e16cc18189
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6afcd4aa8ba2e86d687739bc3891f45f2da5672c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709617"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379172"
 ---
 # <a name="fr-fr-create-sbr-file"></a>/FR, /Fr (.Sbr Dosyası Oluştur)
 
@@ -70,7 +70,7 @@ Siz belirtmezseniz `filename`, kaynak dosyası olarak aynı temel adlı .sbr dos
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)
-[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Çıktı Dosyası (/F) Seçenekleri](../../build/reference/output-file-f-options.md)<br/>
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
 [Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)

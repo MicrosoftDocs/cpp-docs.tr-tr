@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 72c312bdec9248cdc38150163d914b2ac7036ab8
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 993f0e190d87b140fba0008872d57f2a34b6a5cb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711093"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46377272"
 ---
 # <a name="enum-class--c-component-extensions"></a>enum sınıfı (C++ Bileşen Uzantıları)
 
@@ -44,23 +44,23 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 
 ### <a name="parameters"></a>Parametreler
 
-*Erişim*  
+*Erişim*<br/>
 Erişilebilirlik olabilir numaralandırma **genel** veya **özel**.
 
-*Numaralandırma tanımlayıcı*  
+*Numaralandırma tanımlayıcı*<br/>
 Sabit listesinin adı.
 
-*temel alınan türü*  
+*temel alınan türü*<br/>
 (İsteğe bağlı) Sabit listesinin temel alınan türü.
 
 (İsteğe bağlı. Yalnızca Windows Runtime) olabilir sabit listesi türünü temel **bool**, **char**, `char16`, `int16`, `uint16`, **int**, `uint32`, `int64`, veya `uint64`.
 
-*Numaralandırıcı-listesi*  
+*Numaralandırıcı-listesi*<br/>
 Numaralandırıcı adları virgülle ayrılmış listesi.
 
 Her Numaralayıcı ya da örtük olarak derleyici tarafından veya açık olarak gösterimi tarafından tanımlanan sabit bir ifade değeri *Numaralandırıcı*`=`*sabit-ifade*. Örtük tanımlanırsa, varsayılan olarak, ilk Numaralandırıcı değeri sıfırdır. Örtük olarak tanımlı sonraki her Numaralandırıcı değerini, önceki numaralandırıcıların + 1 değerdir.
 
-*var*  
+*var*<br/>
 (İsteğe bağlı) Sabit listesi türünde bir değişken adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -92,19 +92,19 @@ accessenum structname [:type] { enumerator-list } var;
 
 ### <a name="parameters"></a>Parametreler
 
-*Erişim*  
+*Erişim*<br/>
 Sabit listesinin erişilebilirlik. Olabilir **genel** veya **özel**.
 
-*Numaralandırıcı-listesi*  
+*Numaralandırıcı-listesi*<br/>
 Sabit tanımlayıcıları (Numaralandırıcı) virgülle ayrılmış listesi.
 
-*Adı*  
+*Adı*<br/>
 Sabit listesinin adı. Anonim yönetilen numaralandırmalar izin verilmez.
 
-*Türü*  
+*Türü*<br/>
 (İsteğe bağlı) Temel alınan türü *tanımlayıcıları*. Bu imzalı veya imzasız sürümleri gibi herhangi bir skalar türü olabilir **int**, **kısa**, veya **uzun**.  **bool** veya **char** da izin verilir.
 
-*var*  
+*var*<br/>
 (İsteğe bağlı) Sabit listesi türünde bir değişken adı.
 
 ### <a name="remarks"></a>Açıklamalar
