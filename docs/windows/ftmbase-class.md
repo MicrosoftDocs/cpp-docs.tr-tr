@@ -35,12 +35,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 687fd4f4bd77043bd0b74c7bcc39fb6a496b60be
-ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
+ms.openlocfilehash: e8a1dcd96ab42f48c91bbed2057475fa412c8925
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601463"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46432812"
 ---
 # <a name="ftmbase-class"></a>FtmBase Sınıfı
 
@@ -106,7 +106,7 @@ static HRESULT CreateGlobalInterfaceTable(
 
 ### <a name="parameters"></a>Parametreler
 
-*Git*  
+*Git*<br/>
 Bu işlem tamamlandığında bir genel arabirim tablosu işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -129,7 +129,7 @@ STDMETHODIMP DisconnectObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwReserved*  
+*dwReserved*<br/>
 Gelecekte kullanılmak üzere ayrılmış; sıfır olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -161,26 +161,26 @@ STDMETHODIMP GetMarshalSizeMax(
 
 ### <a name="parameters"></a>Parametreler
 
-*riid*  
+*riid*<br/>
 Sıralanması arabirimi tanımlayıcısını başvuru.
 
-*BD*  
+*BD*<br/>
 Arabirim işaretçisi; sıralanması NULL olabilir.
 
-*dwDestContext*  
+*dwDestContext*<br/>
 Belirtilen arabirim iptal edilecek olduğu hedef bağlamı.
 
 Bir veya daha fazla MSHCTX numaralandırma değerlerini belirtin.
 
 Şu anda unmarshaling geçerli işlemin (MSHCTX_INPROC) başka bir grup veya geçerli işlem (MSHCTX_LOCAL) ile aynı bilgisayarda başka bir işlem içinde ortaya çıkabilir.
 
-*pvDestContext*  
+*pvDestContext*<br/>
 Gelecekte kullanılmak üzere ayrılmış; NULL olmalıdır.
 
-*mshlflags*  
+*mshlflags*<br/>
 İstemci işlemine aktarılacak veri sıralanması olup olmadığını belirten bayrak — genellikle bu durum — burada, alınabilir birden çok istemci tarafından genel bir tablo yazılamaz veya okunamaz. Bir veya daha fazla MSHLFLAGS numaralandırma değerlerini belirtin.
 
-*pSize*  
+*pSize*<br/>
 Bu işlem tamamlandığında hazırlama akışa yazılacak veri miktarına üst sınırı için işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -204,23 +204,23 @@ STDMETHODIMP GetUnmarshalClass(
 
 ### <a name="parameters"></a>Parametreler
 
-*riid*  
+*riid*<br/>
 Sıralanması arabirimi tanımlayıcısını başvuru.
 
-*BD*  
+*BD*<br/>
 Sıralanması arabirim işaretçisi; çağıranın istendiği arayüz işaretçisi yoksa NULL olabilir.
 
-*dwDestContext*  
+*dwDestContext*<br/>
 Belirtilen arabirim iptal edilecek olduğu hedef bağlamı.
 
 Bir veya daha fazla MSHCTX numaralandırma değerlerini belirtin.
 
 Unmarshaling ya da geçerli işlemin (MSHCTX_INPROC) başka bir grup veya geçerli işlem (MSHCTX_LOCAL) ile aynı bilgisayarda başka bir işlemde ortaya çıkabilir.
 
-*pvDestContext*  
+*pvDestContext*<br/>
 Gelecekte kullanılmak üzere ayrılmış; NULL olmalıdır.
 
-*mshlflags*  
+*mshlflags*<br/>
 Bu işlem tamamlandığında CLSID istemci işlemini bir ara sunucu oluşturmak için kullanılacak işaretçi.
 
 *Pcıd*
@@ -246,26 +246,26 @@ STDMETHODIMP MarshalInterface(
 
 ### <a name="parameters"></a>Parametreler
 
-*pStm*  
+*pStm*<br/>
 Hazırlama sırasında kullanılmak üzere stream işaretçisi.
 
-*riid*  
+*riid*<br/>
 Sıralanması arabirimi tanımlayıcısını başvuru. Bu arabirim nesnesinden türetilmesi `IUnknown` arabirimi.
 
-*BD*  
+*BD*<br/>
 İşaretçi sıralanması arabirim işaretçisi için; çağıranın istendiği arayüz işaretçisi yoksa NULL olabilir.
 
-*dwDestContext*  
+*dwDestContext*<br/>
 Belirtilen arabirim iptal edilecek olduğu hedef bağlamı.
 
 Bir veya daha fazla MSHCTX numaralandırma değerlerini belirtin.
 
 Unmarshaling, geçerli işlemin (MSHCTX_INPROC) başka bir grup veya geçerli işlem (MSHCTX_LOCAL) ile aynı bilgisayarda başka bir işlemde ortaya çıkabilir.
 
-*pvDestContext*  
+*pvDestContext*<br/>
 Gelecekte kullanılmak üzere ayrılmış; sıfır olmalıdır.
 
-*mshlflags*  
+*mshlflags*<br/>
 İstemci işlemine aktarılacak veri sıralanması olup olmadığını belirtir: genellikle bu durum — burada da alınabilir birden çok istemci tarafından genel bir tablo yazılamaz veya okunamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -298,7 +298,7 @@ STDMETHODIMP ReleaseMarshalData(
 
 ### <a name="parameters"></a>Parametreler
 
-*pStm*  
+*pStm*<br/>
 Yok edilecek veri paketi içeren bir akışa yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -319,13 +319,13 @@ STDMETHODIMP UnmarshalInterface(
 
 ### <a name="parameters"></a>Parametreler
 
-*pStm*  
+*pStm*<br/>
 Arabirim işaretçisi iptal edilecek olduğu akışa yönelik işaretçi.
 
-*riid*  
+*riid*<br/>
 İptal edilecek arabirimi tanımlayıcısını başvuru.
 
-*ppv*  
+*ppv*<br/>
 Bu işlem tamamlandığında, istenen arabirim işaretçisi alır bir işaretçi değişkeninin adresini *riid*. Bu işlem başarılı olursa **ppv* iptal edilecek arabiriminin istenen arabirim işaretçisi içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri

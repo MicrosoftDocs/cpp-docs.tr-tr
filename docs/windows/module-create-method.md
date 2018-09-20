@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9ae4f50e6d2d614e444766babf8e55f5c9f83932
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a8b84bcaec7dbadfb7b735264df12f7e958dcd20
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609550"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444703"
 ---
 # <a name="modulecreate-method"></a>Module::Create Yöntemi
 
@@ -45,16 +45,16 @@ WRL_NOTHROW static Module& Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Modül türü.
 
-*geri çağırma*  
+*geri çağırma*<br/>
 Son örnek nesnesi modülünün bırakıldığında çağırılır.
 
-*object*  
+*object*<br/>
 *Nesne* ve *yöntemi* parametreleri birlikte kullanılır. Son örnek nesne modülünde yayımlandığında son örnek nesnesi işaret eder.
 
-*Yöntemi*  
+*Yöntemi*<br/>
 *Nesne* ve *yöntemi* parametreleri birlikte kullanılır. Nesnenin son örnek nesne modülünde yayımlandığında son örneği noktaları yöntemi.
 
 ## <a name="return-value"></a>Dönüş Değeri

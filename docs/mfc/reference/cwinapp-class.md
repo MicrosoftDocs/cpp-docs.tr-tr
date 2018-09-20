@@ -202,12 +202,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1236cbdaca396aa6d52d4e30095d9a0df5379142
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8a901b7bd102736bfbeec95a1afe8e44dc26ae3b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712042"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46412190"
 ---
 # <a name="cwinapp-class"></a>CWinApp sınıfı
 
@@ -393,7 +393,7 @@ void AddDocTemplate(CDocTemplate* pTemplate);
 
 ### <a name="parameters"></a>Parametreler
 
-*pTemplate*  
+*pTemplate*<br/>
 Bir işaretçi `CDocTemplate` eklenecek.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -414,7 +414,7 @@ virtual void AddToRecentFileList(LPCTSTR lpszPathName);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszPathName*  
+*lpszPathName*<br/>
 Dosya yolu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -462,7 +462,7 @@ void CloseAllDocuments(BOOL bEndSession);
 
 ### <a name="parameters"></a>Parametreler
 
-*bEndSession*  
+*bEndSession*<br/>
 Windows oturum sona olup olmadığını belirtir. Oturum sona erdi, TRUE ise. Aksi durumda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -479,7 +479,7 @@ BOOL CreatePrinterDC(CDC& dc);
 
 ### <a name="parameters"></a>Parametreler
 
-*DC*  
+*DC*<br/>
 Bir yazıcı cihaz bağlamına başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -502,7 +502,7 @@ CWinApp(LPCTSTR lpszAppName = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszAppName*  
+*lpszAppName*<br/>
 Windows kullanan uygulama adını içeren bir null ile sonlandırılmış dize. Bu bağımsız değişken sağlanmazsa veya NULL ise `CWinApp` AFX_IDS_APP_TITLE kaynak dizesi veya yürütülebilir dosyasının dosya adını kullanır.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -526,13 +526,13 @@ LONG DelRegTree(
 
 ### <a name="parameters"></a>Parametreler
 
-*hParentKey*  
+*hParentKey*<br/>
 Kayıt defteri anahtarına işleyin.
 
-*strKeyName*  
+*strKeyName*<br/>
 Silinecek kayıt defteri anahtarı adı.
 
-*pTM*  
+*pTM*<br/>
 CAtlTransactionManager nesne işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -556,13 +556,13 @@ virtual int DoMessageBox(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszPrompt*  
+*lpszPrompt*<br/>
 İleti kutusu metni adresi.
 
-*nTür*  
+*nTür*<br/>
 İleti kutusu [stil](../../mfc/reference/styles-used-by-mfc.md#message-box-styles).
 
-*nIDPrompt*  
+*nIDPrompt*<br/>
 Yardım içerik dizesi için bir dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -585,7 +585,7 @@ virtual void DoWaitCursor(int nCode);
 
 ### <a name="parameters"></a>Parametreler
 
-*nCode*  
+*nCode*<br/>
 Bu parametre, 1 ise, bekleme imlecini görünür. 0 ise, bekleme imleci başvuru sayısını artırmadan geri yüklenir. -1, bekleme imleci sona erer.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -614,10 +614,10 @@ BOOL EnableD2DSupport(
 
 ### <a name="parameters"></a>Parametreler
 
-*d2dFactoryType*  
+*d2dFactoryType*<br/>
 D2D Fabrika ve kaynakları iş parçacığı modeli oluşturur.
 
-*writeFactoryType*  
+*writeFactoryType*<br/>
 Yazma üretecini paylaşılan veya yalıtılmış olup olmadığını belirten bir değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -660,7 +660,7 @@ BOOL EnableTaskbarInteraction(BOOL bEnable = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bSistemlerde*  
+*bSistemlerde*<br/>
 Windows 7 görev etkileşim (TRUE) etkinleştirilmesi gerekir veya devre dışı (FALSE) olup olmadığını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -767,7 +767,7 @@ HKEY GetAppRegistryKey(CAtlTransactionManager* pTM = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*pTM*  
+*pTM*<br/>
 İşaretçi bir `CAtlTransactionManager` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -834,7 +834,7 @@ CDocTemplate* GetNextDocTemplate(POSITION& pos) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*POS*  
+*POS*<br/>
 Önceki bir çağrı tarafından döndürülen bir konum değeri başvurusu `GetNextDocTemplate` veya [GetFirstDocTemplatePosition](#getfirstdoctemplateposition). Değer, bu çağrı tarafından sonraki konumuna güncelleştirilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -859,7 +859,7 @@ BOOL GetPrinterDeviceDefaults(struct tagPDA* pPrintDlg);
 
 ### <a name="parameters"></a>Parametreler
 
-*pPrintDlg*  
+*pPrintDlg*<br/>
 Bir işaretçi bir [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -888,16 +888,16 @@ BOOL GetProfileBinary(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszSection*  
+*lpszSection*<br/>
 Giriş içeren bölümü belirten bir boş sonlandırılmış dizeye işaret eder.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 Değeri alınacak girdisi içeren bir boş sonlandırılmış dizeye işaret eder.
 
-*ppData*  
+*ppData*<br/>
 Verilerin adresi alacak bir işaretçi işaret eder.
 
-*pBytes*  
+*pBytes*<br/>
 Veri (bayt cinsinden) boyutunu alacak bir UINT işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -933,13 +933,13 @@ UINT GetProfileInt(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszSection*  
+*lpszSection*<br/>
 Giriş içeren bölümü belirten bir boş sonlandırılmış dizeye işaret eder.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 Değeri alınacak girdisi içeren bir boş sonlandırılmış dizeye işaret eder.
 
-*Nvarsayılan*  
+*Nvarsayılan*<br/>
 Framework giriş bulamazsanız, döndürülecek varsayılan bir değer belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -974,13 +974,13 @@ CString GetProfileString(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszSection*  
+*lpszSection*<br/>
 Giriş içeren bölümü belirten bir boş sonlandırılmış dizeye işaret eder.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 Alınacak olan dize girdisi içeren bir boş sonlandırılmış dizeye işaret eder. Bu değer NULL olmamalıdır.
 
-*lpszDefault*  
+*lpszDefault*<br/>
 Giriş başlatma dosyası bulunamazsa belirtilen giriş için varsayılan dize değerini işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1010,10 +1010,10 @@ HKEY GetSectionKey(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszSection*  
+*lpszSection*<br/>
 Alınacağı anahtarın adı.
 
-*pTM*  
+*pTM*<br/>
 İşaretçi bir `CAtlTransactionManager` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1042,10 +1042,10 @@ virtual void HtmlHelp(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwData*  
+*dwData*<br/>
 Ek veri belirtir. Kullanılan değer değerine bağlıdır *nCmd* parametresi.
 
-*nCmd*  
+*nCmd*<br/>
 Yardım talep türünü belirtir. Olası değerler ve bunların nasıl etkileyeceğini listesini *dwData* parametresi bkz *uCommand* hakkında HTMLHelp API işlevi Windows SDK'sındaki açıklanan parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1105,10 +1105,10 @@ HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nID
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszResourceName*  
+*lpszResourceName*<br/>
 İmleç kaynağının adını içeren bir boş sonlandırılmış dizeye işaret eder. Kullanabileceğiniz bir `CString` bu bağımsız değişkeni.
 
-*nIDResource*  
+*nIDResource*<br/>
 İmleç kaynağının kimliği. Kaynakların listesi için bkz. [LoadCursor](/windows/desktop/api/winuser/nf-winuser-loadcursora) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1135,10 +1135,10 @@ HICON LoadIcon(LPCTSTR lpszResourceName) const;  HICON LoadIcon(UINT nIDResource
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszResourceName*  
+*lpszResourceName*<br/>
 Simge kaynağının adını içeren bir boş sonlandırılmış dizeye işaret eder. Ayrıca bir `CString` bu bağımsız değişkeni.
 
-*nIDResource*  
+*nIDResource*<br/>
 Simge kaynağı kimliği sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1164,7 +1164,7 @@ HCURSOR LoadOEMCursor(UINT nIDCursor) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDCursor*  
+*nIDCursor*<br/>
 Bir **OCR_** önceden tanımlanmış bir Windows imleç belirten sabit tanımlayıcısı bildirim. Olmalıdır `#define OEMRESOURCE` önce `#include \<afxwin.h>` erişim kazanmak için **OCR_** Windows sabitler. H
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1191,7 +1191,7 @@ HICON LoadOEMIcon(UINT nIDIcon) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDIcon*  
+*nIDIcon*<br/>
 Bir **OIC_** önceden tanımlanmış bir Windows simge belirten sabit tanımlayıcısı bildirim. Olmalıdır `#define OEMRESOURCE` önce `#include \<afxwin.h>` erişimi **OIC_** Windows sabitler. H
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1212,7 +1212,7 @@ HCURSOR LoadStandardCursor(LPCTSTR lpszCursorName) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszCursorName*  
+*lpszCursorName*<br/>
 Bir **IDC_** önceden tanımlanmış bir Windows imleç belirten sabit tanımlayıcısı bildirim. Bu tanımlayıcılar, WİNDOWS'da tanımlanır. H Aşağıdaki liste önceden tanımlanmış değerlerden ve anlamı gösterir *lpszCursorName*:
 
 - IDC_ARROW standart ok imleci
@@ -1261,7 +1261,7 @@ HICON LoadStandardIcon(LPCTSTR lpszIconName) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszIconName*  
+*lpszIconName*<br/>
 Önceden tanımlanmış bir Windows simge belirten bir bildirim sabit tanımlayıcısı. Bu tanımlayıcılar, WİNDOWS'da tanımlanır. H Önceden tanımlanmış değerlerden ve açıklamalarının listesi için bkz. *lpIconName* parametresinde [LoadIcon](/windows/desktop/api/winuser/nf-winuser-loadicona) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1282,7 +1282,7 @@ void LoadStdProfileSettings(UINT nMaxMRU = _AFX_MRU_COUNT);
 
 ### <a name="parameters"></a>Parametreler
 
-*nMaxMRU*  
+*nMaxMRU*<br/>
 İzlemek için son kullanılan dosya sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1558,7 +1558,7 @@ virtual BOOL OnDDECommand(LPTSTR lpszCommand);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszCommand*  
+*lpszCommand*<br/>
 Uygulama tarafından alınan DDE komut dizesi işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1697,7 +1697,7 @@ virtual BOOL OnIdle(LONG lCount);
 
 ### <a name="parameters"></a>Parametreler
 
-*lCount*  
+*lCount*<br/>
 Her bir sayaç artırılır `OnIdle` uygulamanın ileti kuyruğu boş olduğunda çağrılır. Bu sayı, yeni bir ileti işlendiği her zaman 0 olarak sıfırlanır. Kullanabileceğiniz *lCount* göreli uygulama işlenirken boş bir ileti olmadan sürenin uzunluğunu belirlemek için parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1773,7 +1773,7 @@ void ParseCommandLine(CCommandLineInfo& rCmdInfo);
 
 ### <a name="parameters"></a>Parametreler
 
-*rCmdInfo*  
+*rCmdInfo*<br/>
 Bir başvuru bir [Ccommandlineınfo](../../mfc/reference/ccommandlineinfo-class.md) nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1802,7 +1802,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### <a name="parameters"></a>Parametreler
 
-*pMsg*  
+*pMsg*<br/>
 Bir işaretçi bir [MSG](../../mfc/reference/msg-structure1.md) işlemek için bir ileti içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1821,10 +1821,10 @@ virtual BOOL ProcessMessageFilter(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kod*  
+*Kod*<br/>
 Kanca kodu belirtir. Bu üye işlevi kod nasıl işleneceğini belirlemek için kullanır. *lpMsg.*
 
-*lpMsg*  
+*lpMsg*<br/>
 Bir Windows işaretçisi [MSG](../../mfc/reference/msg-structure1.md) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1847,7 +1847,7 @@ BOOL ProcessShellCommand(CCommandLineInfo& rCmdInfo);
 
 ### <a name="parameters"></a>Parametreler
 
-*rCmdInfo*  
+*rCmdInfo*<br/>
 Bir başvuru bir [Ccommandlineınfo](../../mfc/reference/ccommandlineinfo-class.md) nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1892,10 +1892,10 @@ virtual LRESULT ProcessWndProcException(
 
 ### <a name="parameters"></a>Parametreler
 
-*e*  
+*e*<br/>
 Yakalanmayan bir özel durum işaretçisi.
 
-*pMsg*  
+*pMsg*<br/>
 A [MSG](../../mfc/reference/msg-structure1.md) bir özel durum için framework neden windows iletisi hakkında bilgi içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2127,13 +2127,13 @@ void SelectPrinter(
 
 ### <a name="parameters"></a>Parametreler
 
-*hDevNames*  
+*hDevNames*<br/>
 İçin bir tanıtıcı bir [DEVNAMES](../../mfc/reference/devnames-structure.md) sürücü, cihaz ve çıkış bağlantı noktası adları belirli bir yazıcı tanımlayan yapısı.
 
-*hDevMode*  
+*hDevMode*<br/>
 İçin bir tanıtıcı bir [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) cihaz başlatma ve yazıcı ortamı hakkında bilgi belirten yapısı.
 
-*bFreeOld*  
+*bFreeOld*<br/>
 Önceden seçilen yazıcı serbest bırakır.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2150,7 +2150,7 @@ void SetHelpMode(AFX_HELP_TYPE eHelpType);
 
 ### <a name="parameters"></a>Parametreler
 
-*eHelpType*  
+*eHelpType*<br/>
 Kullanılacak Yardım türünü belirtir. Bkz: [CWinApp::m_eHelpType](#m_ehelptype) daha fazla bilgi için.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2170,10 +2170,10 @@ void SetRegistryKey(UINT nIDRegistryKey);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszRegistryKey*  
+*lpszRegistryKey*<br/>
 Anahtar adını içeren bir dize işaretçisi.
 
-*nIDRegistryKey*  
+*nIDRegistryKey*<br/>
 Kayıt defteri anahtarı adını içeren dize kaynağının kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2266,10 +2266,10 @@ virtual void WinHelp(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwData*  
+*dwData*<br/>
 Ek veri belirtir. Kullanılan değer değerine bağlıdır *nCmd* parametresi.
 
-*nCmd*  
+*nCmd*<br/>
 Yardım talep türünü belirtir. Olası değerler ve bunların nasıl etkileyeceğini listesini *dwData* parametresi bkz [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2296,16 +2296,16 @@ BOOL WriteProfileBinary(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszSection*  
+*lpszSection*<br/>
 Giriş içeren bölümü belirten bir boş sonlandırılmış dizeye işaret eder. Bölüm yoksa, oluşturulur. Bölüm çalışması bağımsız adıdır; dize, herhangi bir bileşimini büyük ve küçük harf olabilir.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 Değeri yazılacak giriş içeren null ile sonlandırılmış bir dize işaret eder. Giriş belirtilen bölümde yoksa, oluşturulur.
 
-*pData*  
+*pData*<br/>
 Yazılacak veri işaret eder.
 
-*nBytes*  
+*nBytes*<br/>
 Yazılacak bayt sayısını içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2333,13 +2333,13 @@ BOOL WriteProfileInt(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszSection*  
+*lpszSection*<br/>
 Giriş içeren bölümü belirten bir boş sonlandırılmış dizeye işaret eder. Bölüm yoksa, oluşturulur. Bölüm çalışması bağımsız adıdır; dize, herhangi bir bileşimini büyük ve küçük harf olabilir.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 Değeri yazılacak giriş içeren null ile sonlandırılmış bir dize işaret eder. Giriş belirtilen bölümde yoksa, oluşturulur.
 
-*nDeğer*  
+*nDeğer*<br/>
 Yazılacak değer içeriyor.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2367,13 +2367,13 @@ BOOL WriteProfileString(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszSection*  
+*lpszSection*<br/>
 Giriş içeren bölümü belirten bir boş sonlandırılmış dizeye işaret eder. Bölüm yoksa, oluşturulur. Bölüm çalışması bağımsız adıdır; dize, herhangi bir bileşimini büyük ve küçük harf olabilir.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 Değeri yazılacak giriş içeren null ile sonlandırılmış bir dize işaret eder. Giriş belirtilen bölümde yoksa, oluşturulur. Bu parametre NULL ise, bölümü tarafından belirtilen *lpszSection* silinir.
 
-*lpszValue*  
+*lpszValue*<br/>
 Yazılacak dize işaret eder. Bu parametre NULL ise, giriş tarafından belirtilen *lpszEntry* parametresi silinir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -2396,13 +2396,13 @@ void SetAppID(LPCTSTR lpcszAppID);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpcszAppID*  
+*lpcszAppID*<br/>
 Uygulama kullanıcı Model kimliğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CWinThread Sınıfı](../../mfc/reference/cwinthread-class.md)  
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)  
-[Nasıl yapılır: Yeniden Başlatma Yöneticisi Desteği Ekleme](../../mfc/how-to-add-restart-manager-support.md)  
+[CWinThread Sınıfı](../../mfc/reference/cwinthread-class.md)<br/>
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Nasıl yapılır: Yeniden Başlatma Yöneticisi Desteği Ekleme](../../mfc/how-to-add-restart-manager-support.md)

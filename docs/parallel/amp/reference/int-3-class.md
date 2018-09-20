@@ -82,205 +82,210 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d1f0f26856d6da002f5ba74bbfa8e98f27e4f02
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 69dd5e5080735c1b347b164887fdfab76aa9b178
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46042591"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46428402"
 ---
 # <a name="int3-class"></a>int_3 Sınıfı
-Üç tamsayıdan oluşan bir kısa vektörü temsil eder.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class int_3;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-typedefs"></a>Genel Typedefler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`value_type`||  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[int_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|int_3::get_x||  
-|int_3::get_xy||  
-|int_3::get_xyz||  
-|int_3::get_xz||  
-|int_3::get_xzy||  
-|int_3::get_y||  
-|int_3::get_yx||  
-|int_3::get_yxz||  
-|int_3::get_yz||  
-|int_3::get_yzx||  
-|int_3::get_z||  
-|int_3::get_zx||  
-|int_3::get_zxy||  
-|int_3::get_zy||  
-|int_3::get_zyx||  
-|int_3::ref_b||  
-|int_3::ref_g||  
-|int_3::ref_r||  
-|int_3::ref_x||  
-|int_3::ref_y||  
-|int_3::ref_z||  
-|int_3::set_x||  
-|int_3::set_xy||  
-|int_3::set_xyz||  
-|int_3::set_xz||  
-|int_3::set_xzy||  
-|int_3::set_y||  
-|int_3::set_yx||  
-|int_3::set_yxz||  
-|int_3::set_yz||  
-|int_3::set_yzx||  
-|int_3::set_z||  
-|int_3::set_zx||  
-|int_3::set_zxy||  
-|int_3::set_zy||  
-|int_3::set_zyx||  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|int_3::operator-||  
-|int_3::operator--||  
-|int_3::operator%=||  
-|int_3::operator & =||  
-|int_3::operator * =||  
-|int_3::operator / =||  
-|int_3::operator^=||  
-|int_3::operator&#124;=||  
-|int_3::operator ~||  
-|int_3::operator ++||  
-|int_3::operator +=||  
-|int_3::operator <\<=||  
-|int_3::operator=||  
-|int_3::operator-=||  
-|int_3::operator >> =||  
-  
-### <a name="public-constants"></a>Genel sabitler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[boyutu sabiti](#size)||  
-  
-### <a name="public-data-members"></a>Ortak Veri Üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|int_3::b||  
-|int_3::bg||  
-|int_3::bgr||  
-|int_3::br||  
-|int_3::brg||  
-|int_3::g||  
-|int_3::gb||  
-|int_3::gbr||  
-|int_3::Gr||  
-|int_3::grb||  
-|int_3::r||  
-|int_3::rb||  
-|int_3::rbg||  
-|int_3::rg||  
-|int_3::rgb||  
-|int_3::x||  
-|int_3::xy||  
-|int_3::xyz||  
-|int_3::xz||  
-|int_3::xzy||  
-|int_3::y||  
-|int_3::yx||  
-|int_3::yxz||  
-|int_3::yz||  
-|int_3::yzx||  
-|int_3::z||  
-|int_3::zx||  
-|int_3::zxy||  
-|int_3::zy||  
-|int_3::zyx||  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `int_3`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** amp_short_vectors.h  
-  
- **Namespace:** Concurrency::graphics  
 
-## <a name="ctor"></a> int_3 
+Üç tamsayıdan oluşan bir kısa vektörü temsil eder.
 
-Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int_3() restrict(amp,cpu);  
-int_3(  
-   int _V0,  
-   int _V1,  
-   int _V2  
-) restrict(amp,cpu);  
-int_3(  
-   int _V  
-) restrict(amp,cpu);  
-int_3(  
-   const int_3& _Other  
-) restrict(amp,cpu);  
-explicit inline int_3(  
-   const uint_3& _Other  
-) restrict(amp,cpu);  
-explicit inline int_3(  
-   const float_3& _Other  
-) restrict(amp,cpu);  
-explicit inline int_3(  
-   const unorm_3& _Other  
-) restrict(amp,cpu);  
-explicit inline int_3(  
-   const norm_3& _Other  
-) restrict(amp,cpu);  
-explicit inline int_3(  
-   const double_3& _Other  
-) restrict(amp,cpu);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+## <a name="syntax"></a>Sözdizimi
+
+```
+class int_3;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-typedefs"></a>Genel Typedefler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`value_type`||
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[int_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|int_3::get_x||
+|int_3::get_xy||
+|int_3::get_xyz||
+|int_3::get_xz||
+|int_3::get_xzy||
+|int_3::get_y||
+|int_3::get_yx||
+|int_3::get_yxz||
+|int_3::get_yz||
+|int_3::get_yzx||
+|int_3::get_z||
+|int_3::get_zx||
+|int_3::get_zxy||
+|int_3::get_zy||
+|int_3::get_zyx||
+|int_3::ref_b||
+|int_3::ref_g||
+|int_3::ref_r||
+|int_3::ref_x||
+|int_3::ref_y||
+|int_3::ref_z||
+|int_3::set_x||
+|int_3::set_xy||
+|int_3::set_xyz||
+|int_3::set_xz||
+|int_3::set_xzy||
+|int_3::set_y||
+|int_3::set_yx||
+|int_3::set_yxz||
+|int_3::set_yz||
+|int_3::set_yzx||
+|int_3::set_z||
+|int_3::set_zx||
+|int_3::set_zxy||
+|int_3::set_zy||
+|int_3::set_zyx||
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|int_3::operator-||
+|int_3::operator--||
+|int_3::operator%=||
+|int_3::operator & =||
+|int_3::operator * =||
+|int_3::operator / =||
+|int_3::operator^=||
+|int_3::operator&#124;=||
+|int_3::operator ~||
+|int_3::operator ++||
+|int_3::operator +=||
+|int_3::operator <\<=||
+|int_3::operator=||
+|int_3::operator-=||
+|int_3::operator >> =||
+
+### <a name="public-constants"></a>Genel sabitler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[boyutu sabiti](#size)||
+
+### <a name="public-data-members"></a>Ortak Veri Üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|int_3::b||
+|int_3::bg||
+|int_3::bgr||
+|int_3::br||
+|int_3::brg||
+|int_3::g||
+|int_3::gb||
+|int_3::gbr||
+|int_3::Gr||
+|int_3::grb||
+|int_3::r||
+|int_3::rb||
+|int_3::rbg||
+|int_3::rg||
+|int_3::rgb||
+|int_3::x||
+|int_3::xy||
+|int_3::xyz||
+|int_3::xz||
+|int_3::xzy||
+|int_3::y||
+|int_3::yx||
+|int_3::yxz||
+|int_3::yz||
+|int_3::yzx||
+|int_3::z||
+|int_3::zx||
+|int_3::zxy||
+|int_3::zy||
+|int_3::zyx||
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`int_3`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** amp_short_vectors.h
+
+**Namespace:** Concurrency::graphics
+
+## <a name="ctor"></a> int_3
+
+Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+int_3() restrict(amp,cpu);
+int_3(
+   int _V0,
+   int _V1,
+   int _V2
+) restrict(amp,cpu);
+int_3(
+   int _V
+) restrict(amp,cpu);
+int_3(
+   const int_3& _Other
+) restrict(amp,cpu);
+explicit inline int_3(
+   const uint_3& _Other
+) restrict(amp,cpu);
+explicit inline int_3(
+   const float_3& _Other
+) restrict(amp,cpu);
+explicit inline int_3(
+   const unorm_3& _Other
+) restrict(amp,cpu);
+explicit inline int_3(
+   const norm_3& _Other
+) restrict(amp,cpu);
+explicit inline int_3(
+   const double_3& _Other
+) restrict(amp,cpu);
+```
+
+### <a name="parameters"></a>Parametreler
+
 *_V0*<br/>
-Öğe 0'ı başlatmak için değer.  
-  
-*_V1*<br/>
-1 öğe başlatmak için değer.  
-  
-*_V2*<br/>
-Öğe 2 başlatmak için değer.  
-  
-*_V*<br/>
-Başlatma için değer.  
-  
-*_Diğer*<br/>
-Başlatmak için kullanılan nesne.  
-  
-## <a name="size"></a> Boyutu 
+Öğe 0'ı başlatmak için değer.
 
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-static const int size = 3;  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)
+*_V1*<br/>
+1 öğe başlatmak için değer.
+
+*_V2*<br/>
+Öğe 2 başlatmak için değer.
+
+*_V*<br/>
+Başlatma için değer.
+
+*_Diğer*<br/>
+Başlatmak için kullanılan nesne.
+
+## <a name="size"></a> Boyutu
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+static const int size = 3;
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

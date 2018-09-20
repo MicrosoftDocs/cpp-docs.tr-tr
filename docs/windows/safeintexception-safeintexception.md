@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 749ef965520732c37457613f44e0a23e213023db
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 24138db5ab772990f050fc8fcb6e5dad640a662d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700979"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396785"
 ---
 # <a name="safeintexceptionsafeintexception"></a>SafeIntException::SafeIntException
 
@@ -63,6 +63,6 @@ Olası değerler için *kod* Safeint.h dosyasında tanımlanır. Kolaylık olmas
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[SafeInt Kitaplığı](../windows/safeint-library.md)  
-[SafeIntException Sınıfı](../windows/safeintexception-class.md)  
+[SafeInt Kitaplığı](../windows/safeint-library.md)<br/>
+[SafeIntException Sınıfı](../windows/safeintexception-class.md)<br/>
 [SafeInt Sınıfı](../windows/safeint-class.md)

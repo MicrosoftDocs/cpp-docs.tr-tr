@@ -15,61 +15,62 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b96273589fb4e7d7e73e7bc72da03a92d5587de8
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: a5df38ada13e06f773a19436e80112946cc96157
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687809"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387334"
 ---
 # <a name="how-to-convert-an-openmp-loop-that-uses-exception-handling-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için Özel Durum İşleme Kullanan bir OpenMP Döngüsünü Dönüştürme
-Bu örnek bir OpenMP dönüştürülmesi gösterilmektedir [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[için](../../parallel/openmp/reference/for-openmp.md) döngü eşzamanlılık çalışma zamanı özel durum mekanizması işleme kullanmak için özel durum işleme gerçekleştirir.  
-  
- OpenMP, paralel bir bölgede oluşturulan bir özel durum yakalandı ve aynı bölgede aynı iş parçacığı tarafından işlenir. Varsayılan olarak işlemi sonlandırır işlenmeyen bir özel durum işleyici tarafından paralel bölge çıkışları bir özel durum yakalandı.  
-  
 
- Eşzamanlılık görev grubuna gibi geçirdiğiniz iş işlevi gövdesinde bir özel durum, çalışma zamanında, bir [concurrency::task_group](reference/task-group-class.md) veya [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) nesnesi veya gibi paralel algoritmalar için [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for), çalışma zamanı bu özel durum depolar ve görev grubu veya sonlandırmak için algoritma için bekler bağlamını sıralar. Görev grupları için bekleme bağlam çağıran bağlamdır [concurrency::task_group::wait](reference/task-group-class.md#wait), [concurrency::structured_task_group::wait](reference/structured-task-group-class.md#wait), [concurrency::task_group::run_and _wait](reference/task-group-class.md#run_and_wait), veya [concurrency::structured_task_group::run_and_wait](reference/structured-task-group-class.md#run_and_wait). Paralel bir algoritma için o algoritması olarak da bilinir bağlam bekleme bağlamdır. Çalışma zamanı de alt görev grupları dahil görev grubunda yer alan tüm etkin görevleri durdurur ve henüz başlatılmamış herhangi bir görevi atar.  
+Bu örnek bir OpenMP dönüştürülmesi gösterilmektedir [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[için](../../parallel/openmp/reference/for-openmp.md) eşzamanlılık çalışma zamanı özel durum işleme mekanizmasını kullanmak için özel durum işleme gerçekleştiren bir döngü.
 
+OpenMP içinde bir paralel bölgenin içinde oluşturulan bir özel durum yakalandı ve aynı bölgede aynı iş parçacığı tarafından işlenir. Varsayılan olarak işlemi sonlandıran yakalanamayan özel durum işleyicisi tarafından paralel bölgenin çıkışları bir özel durum yakalandı.
 
-  
-## <a name="example"></a>Örnek  
- Bu örnek bir OpenMP özel durumları nasıl ele alınacağını gösterir `parallel` bölge ve çağrıda `parallel_for`. `do_work` İşlevi gerçekleştiren başarılı olmaz ve bu nedenle türünde bir özel durum atar bellek ayırma isteği [std::bad_alloc](../../standard-library/bad-alloc-class.md). OpenMP kullanan sürümünü, özel durum oluşturur iş parçacığı de onu catch gerekir. Diğer bir deyişle, her bir yineleme OpenMP paralel döngüsü özel durum işlemesi gerekir. Eşzamanlılık Çalışma zamanı kullanan sürümünde başka bir iş parçacığı tarafından oluşturulan bir özel durum ana iş parçacığı yakalar.  
-  
- [!code-cpp[concrt-openmp#3](../../parallel/concrt/codesnippet/cpp/convert-an-openmp-loop-that uses-exception-handling_1.cpp)]  
-  
- Bu örnek şu çıkışı üretir.  
-  
-```Output  
-Using OpenMP...  
-An error of type 'class std::bad_alloc' occurred.  
-An error of type 'class std::bad_alloc' occurred.  
-An error of type 'class std::bad_alloc' occurred.  
-An error of type 'class std::bad_alloc' occurred.  
-An error of type 'class std::bad_alloc' occurred.  
-An error of type 'class std::bad_alloc' occurred.  
-An error of type 'class std::bad_alloc' occurred.  
-An error of type 'class std::bad_alloc' occurred.  
-An error of type 'class std::bad_alloc' occurred.  
-An error of type 'class std::bad_alloc' occurred.  
-Using the Concurrency Runtime...  
-An error of type 'class std::bad_alloc' occurred.  
-```  
-  
- OpenMP kullanan bu örnek sürümünde, özel durum oluşur ve her döngü tekrarında tarafından gerçekleştirilir. Eşzamanlılık Çalışma zamanı kullanan sürümünde, çalışma zamanı özel depolar, tüm etkin görevleri durdurur, sahip değilse henüz başlatılan tüm görevler atar ve özel durum çağıran bağlamını sıralar `parallel_for`.  
-  
- Özel durum oluştu sonra OpenMP kullanan sürüm sonlandırır gerektiriyorsa, diğer döngü yinelemelere hata oluştuğunu göstermek için bir Boole bayrağı kullanabilirsiniz. Konu örnekte olduğu gibi [nasıl yapılır: Bu kullanan eşzamanlılık çalışma zamanı kullanmak için İptali bir OpenMP döngüsünü dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-cancellation.md), sonraki döngüsü yinelemeleri aşağıdakini yapın hiçbir şey bayrağı ayarlanmışsa. Özel durum gerçekleştikten sonra eşzamanlılık çalışma zamanı kullanır döngünün devam gerektiriyorsa, buna karşılık, paralel döngü gövdesine özel durumu işler.  
-  
- Eşzamanlılık Çalışma zamanı, zaman uyumsuz aracılar ve Basit görevler gibi diğer bileşenlerden özel durumlar aktarım değil. Bunun yerine, varsayılan olarak işlemi sonlandırır işlenmeyen bir özel durum işleyici tarafından işlenmeyen özel durumlar yakalanır. Özel durum işleme hakkında daha fazla bilgi için bkz: [özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).  
-  
- Hakkında daha fazla bilgi için `parallel_for` ve diğer paralel algoritmalar için bkz: [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).  
-  
-## <a name="compiling-the-code"></a>Kod Derleniyor  
- Örnek kodu kopyalayın ve bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `concrt-omp-exceptions.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
-  
- **cl.exe /EHsc/OpenMP concrt-omp-exceptions.cpp**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [OpenMP öğesinden eşzamanlılık çalışma zamanına geçiş](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)   
- [Özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)   
- [Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)
+Eşzamanlılık gibi bir görev grubuna başarılı bir iş işlevin gövdesinde bir durum olduğunda çalışma zamanında, bir [concurrency::task_group](reference/task-group-class.md) veya [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) nesnesi veya gibi paralel algoritma için [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for), çalışma zamanı bu özel durum depolar ve görev grubu veya algoritması tamamlanması için bekleyeceği bağlam sürekliliğe devreder. Görev grupları için çağıran bağlamını bekleme bağlamıdır [CONCURRENCY::task_group:: wait](reference/task-group-class.md#wait), [CONCURRENCY::structured_task_group](reference/structured-task-group-class.md#wait), [concurrency::task_group::run_and _wait](reference/task-group-class.md#run_and_wait), veya [CONCURRENCY::structured_task_group:: run_and_wait](reference/structured-task-group-class.md#run_and_wait). Bir paralel algoritma için bu algoritmayı adlı bağlam bekleme bağlamdır. Çalışma zamanı ayrıca alt görev grupları de dahil olmak üzere görev grubunda olan tüm etkin görevleri durdurur ve henüz başlamamış herhangi bir görevi atar.
+
+## <a name="example"></a>Örnek
+
+Bu örnek, bir OpenMP özel durumların nasıl işleneceğini gösterir. `parallel` bölge ve çağrıda `parallel_for`. `do_work` İşlevi başarılı olmaz ve bu nedenle türünde bir özel durum oluşturur, bir bellek ayırma isteği gerçekleştirir [std::bad_alloc](../../standard-library/bad-alloc-class.md). OpenMP kullanan sürümünde özel durum oluşturan iş parçacığı da bunu yakalayıp yakalamayacağınıza gerekir. Diğer bir deyişle, her bir yinelemesini paralel bir OpenMP döngüsünü özel durum işlemesi gerekir. Eşzamanlılık Çalışma zamanı kullanan sürümünde başka bir iş parçacığı tarafından oluşturulan bir özel durum ana iş parçacığı yakalar.
+
+[!code-cpp[concrt-openmp#3](../../parallel/concrt/codesnippet/cpp/convert-an-openmp-loop-that uses-exception-handling_1.cpp)]
+
+Bu örnek aşağıdaki çıktıyı üretir.
+
+```Output
+Using OpenMP...
+An error of type 'class std::bad_alloc' occurred.
+An error of type 'class std::bad_alloc' occurred.
+An error of type 'class std::bad_alloc' occurred.
+An error of type 'class std::bad_alloc' occurred.
+An error of type 'class std::bad_alloc' occurred.
+An error of type 'class std::bad_alloc' occurred.
+An error of type 'class std::bad_alloc' occurred.
+An error of type 'class std::bad_alloc' occurred.
+An error of type 'class std::bad_alloc' occurred.
+An error of type 'class std::bad_alloc' occurred.
+Using the Concurrency Runtime...
+An error of type 'class std::bad_alloc' occurred.
+```
+
+OpenMP kullanan bu örnek sürümünde, özel durum oluşur ve her döngü yinelemesinin tarafından gerçekleştirilir. Eşzamanlılık Çalışma zamanı sürümünde, çalışma zamanı özel depolar, tüm etkin görevleri durdurur, yok henüz kullanmaya herhangi bir görevi atar ve özel durumu çağıran bağlamını sürekliliğe devreder `parallel_for`.
+
+Özel durum oluştuktan sonra OpenMP kullanan sürüm sonlandırır gerekiyorsa, diğer döngü yinelemesi için hata oluştuğunu belirten bir Boole bayrağı kullanabilirsiniz. Konudaki örnekte olduğu gibi [nasıl yapılır: bir OpenMP döngüsünü dönüştürme bu kullanan eşzamanlılık çalışma zamanı kullanmak için İptali](../../parallel/concrt/convert-an-openmp-loop-that-uses-cancellation.md), sonraki döngü yinelemesi yaptığınız şey bayrağı ayarlandıysa. Özel durum oluştuktan sonra eşzamanlılık çalışma zamanı kullanan döngü devam etmesini gerektiriyorsa, buna karşılık, paralel döngü gövdesi içinde özel durumu işle.
+
+Eşzamanlılık Çalışma zamanı zaman uyumsuz aracılar ve Basit görevler gibi diğer bileşenlerden özel durumları taşıma değil. Bunun yerine, varsayılan olarak işlemi sonlandıran yakalanamayan özel durum işleyici tarafından işlenmeyen özel durumları yakalanır. Özel durum işleme hakkında daha fazla bilgi için bkz. [özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).
+
+Hakkında daha fazla bilgi için `parallel_for` ve diğer paralel algoritmalar için bkz: [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
+
+## <a name="compiling-the-code"></a>Kod Derleniyor
+
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `concrt-omp-exceptions.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+
+**cl.exe/ehsc/OpenMP concrt-omp-exceptions.cpp**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[OpenMP döngüsünden Eşzamanlılık Çalışma Zamanına geçiş](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)<br/>
+[Özel Durum İşleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
+[Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)
 

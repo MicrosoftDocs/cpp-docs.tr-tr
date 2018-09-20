@@ -17,39 +17,41 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c02fb9e695fe206912f360dd1ad9907c6714cf1b
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: e482123207c287c33a36406ba961747545af7c73
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929724"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378070"
 ---
 # <a name="containers-client-item-states"></a>Kapsayıcılar: İstemci Öğesi Durumları
-Bu makalede, bir istemci öğesi ömrü geçtiği farklı durumlara açıklanmaktadır.  
-  
- Oluşturulan, etkin, değişiklik, kaydedilmiş ve gibi bir istemci öğesi birkaç durumları arasında aktarır. Her öğenin durumunu, framework çağrıları değiştiğinde [COleClientItem::OnChange](../mfc/reference/coleclientitem-class.md#onchange) ile **OLE_CHANGED_STATE** bildirim. Bir değerdir ikinci parametre `COleClientItem::ItemState` numaralandırması. Aşağıdakilerden biri olabilir:  
-  
--   *COleClientItem::emptyState*  
-  
--   *COleClientItem::loadedState*  
-  
--   *COleClientItem::openState*  
-  
--   *COleClientItem::activeState*  
-  
--   *COleClientItem::activeUIState*  
-  
- Boş durumunda bir istemci madde henüz tamamen bir öğe değil. Bellek için ayrıldı, ancak bunu henüz OLE öğesi'nin verilerle başlatılmadı. Bu istemci öğesi olduğundan, bir çağrıyla oluşturulduğunda durumdur **yeni** henüz tipik iki aşamalı oluşturma ikinci adım geçmemiştir ancak.  
-  
- İkinci adımda çağrısıyla gerçekleştirilen `COleClientItem::CreateFromFile` veya başka bir `CreateFrom` *xxxx* işlevi, öğe tamamen oluşturuldu. OLE verilerden (bir dosyayı veya başka bir kaynaktan, Pano gibi) ile ilişkili `COleClientItem`-türetilmiş bir nesne içermelidir. Şimdi öğesi yüklü durumda.  
-  
- Bir öğe sunucunun pencerede açıldı yerine, kapsayıcının belge yerinde açılan Aç (veya tam olarak açık) durumda değil. Bu durumda, geçici tarama genellikle öğesi başka bir yerde etkin olduğunu belirtmek için kapsayıcının pencere öğesinde gösterimini üzerinden çizilir.  
-  
- Bir öğe yerinde etkinleştirildiğinde, bunu, genellikle yalnızca geçirir kısaca, etkin durumdaki aracılığıyla. Ardından, sunucu menülerini, araç çubukları ve diğer kullanıcı arabirimi bileşenlerini kapsayıcısının olanla birleştirildi UI etkin durumuna girer. Bu kullanıcı arabirimi bileşenlerini varlığını etkin durumdaki kullanıcı Arabirimi etkin durumundan ayırır. Aksi durumda, etkin durumdaki kullanıcı Arabirimi etkin durumu benzer. Sunucunun geri alma destekliyorsa, sunucunun yüklenmedi veya açık durumu ulaşana kadar OLE öğesi'nin geri alma işlemi durum bilgilerini korumak için gereklidir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kapsayıcıları](../mfc/containers.md)   
- [Etkinleştirme](../mfc/activation-cpp.md)   
- [Kapsayıcılar: İstemci öğesi bildirimleri](../mfc/containers-client-item-notifications.md)   
- [İzleyicileri](../mfc/trackers.md)   
- [CRectTracker Sınıfı](../mfc/reference/crecttracker-class.md)
+
+Bu makalede, yaşam sürelerinin başlarında istemci öğesi geçtiği farklı durumları açıklanmaktadır.
+
+Bu, etkin, değişiklik, oluşturup kaydettikten gibi bir istemci öğesi çeşitli durumları arasında geçirir. Her öğenin durum değişikliklerini framework çağrıların zaman [COleClientItem::OnChange](../mfc/reference/coleclientitem-class.md#onchange) ile **OLE_CHANGED_STATE** bildirim. Bir değerdir ikinci parametre `COleClientItem::ItemState` sabit listesi. Aşağıdakilerden biri olabilir:
+
+- *COleClientItem::emptyState*
+
+- *COleClientItem::loadedState*
+
+- *COleClientItem::openState*
+
+- *COleClientItem::activeState*
+
+- *COleClientItem::activeUIState*
+
+Boş bir durumda, istemci öğesi henüz tamamen bir öğe değil. Bellek için ayrıldı, ancak, henüz OLE öğesinin verilerle başlatılmadı. Bu istemci öğesi olan içinde yapılan bir çağrıyla oluşturulduğunda durumdur **yeni** ancak henüz tipik iki aşamalı oluşturma ikinci adım gerçekleştirmedi.
+
+İkinci adımda yapılan bir çağrıyla gerçekleştirilen `COleClientItem::CreateFromFile` veya başka bir `CreateFrom` *xxxx* işlevi öğesi tamamen oluşturuldu. OLE verilerden (bir dosya ya da Pano gibi diğer bazı kaynak) ile ilişkili `COleClientItem`-türetilmiş bir nesneye. Şimdi öğeyi yüklü durumda.
+
+Bir öğenin sunucunun penceresinde açılan yerine, kapsayıcının belge yerinde açılır, açık (veya tamamen açık) durumdadır. Bu durumda, geçici tarama genellikle öğe başka bir yerde etkin olduğunu belirtmek için kapsayıcının pencere öğesinde gösterimini üzerinden çizilir.
+
+Bir öğenin yerinde etkinleştirildiğinde, genellikle yalnızca arabimini kısaca, etkin duruma aracılığıyla. Ardından, sunucu, menüleri, araç çubukları ve diğer kullanıcı arabirimi bileşenleri kapsayıcının değerlerle birleştirildi UI etkin duruma girer. Bu kullanıcı arabirimi bileşenleri varlığını etkin duruma kullanıcı Arabirimi etkin durumdan ayırır. Aksi takdirde, etkin duruma kullanıcı Arabirimi etkin duruma benzer. Sunucunun geri destekliyorsa, sunucuya yüklenmedi veya açık durumuna ulaşana kadar OLE öğesinin geri alma-durum bilgilerini korumak için gereklidir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kapsayıcılar](../mfc/containers.md)<br/>
+[Etkinleştirme](../mfc/activation-cpp.md)<br/>
+[Kapsayıcılar: İstemci Öğesi Bildirimleri](../mfc/containers-client-item-notifications.md)<br/>
+[İzleyiciler](../mfc/trackers.md)<br/>
+[CRectTracker Sınıfı](../mfc/reference/crecttracker-class.md)

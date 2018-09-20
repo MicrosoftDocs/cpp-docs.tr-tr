@@ -16,25 +16,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c683b7f9d021056b88bbddb43e7da085356755d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8d0d47a9aa7547e12c77a0fe824f27336c9807d0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341195"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46372385"
 ---
 # <a name="containers-user-interface-issues"></a>Kapsayıcılar: Kullanıcı Arabirimi Sorunları
-Yeterli bağlantılı ve katıştırılmış öğelerini yönetmek için bir kapsayıcı uygulamanın kullanıcı arabirimine bir dizi özellik eklemeniz gerekir. Bu özellikler menüsü yapısına yönelik işaretçinin ve uygulama işleme olayları değişiklikleri içerir. Bunları hakkında ayrıntılı bilgi için aşağıdaki makalelere bakın:  
-  
-|Hakkında bilgi için|Bkz. |  
-|------------------------|---------|  
-|Menü eklemeleri kapsayıcıları için|[Menüler ve Kaynaklar: Kapsayıcı Ekleme](../mfc/menus-and-resources-container-additions.md)|  
-|Kapsayıcıları için ek kaynaklar|[Menüler ve Kaynaklar: Kapsayıcı Ekleme](../mfc/menus-and-resources-container-additions.md)|  
-|Boyama bağlı veya katıştırılmış öğeleri|[Kapsayıcı örnek](../visual-cpp-samples.md)|  
-|Kapsayıcıları için yeni iletişim kutuları|[OLE'deki İletişim Kutuları](../mfc/dialog-boxes-in-ole.md)|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kapsayıcıları](../mfc/containers.md)   
- [Kapsayıcılar: Gelişmiş Özellikler](../mfc/containers-advanced-features.md)   
- [Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)
+
+Yeterince bağlantılı veya katıştırılmış öğelerini yönetmek için bir kapsayıcı uygulamasının kullanıcı arabirimi için bir dizi özellik eklemeniz gerekir. Bu özellikler menüsü yapısı ve işleyen uygulama olayları için değişiklikleri içerir. Bunlar hakkında ayrıntılı bilgi için aşağıdaki makalelere bakın:
+
+|Hakkında bilgi için|Bkz. |
+|------------------------|---------|
+|Kapsayıcılar için menü eklemeleri|[Menüler ve Kaynaklar: Kapsayıcı Ekleme](../mfc/menus-and-resources-container-additions.md)|
+|Kapsayıcılar için ek kaynaklar|[Menüler ve Kaynaklar: Kapsayıcı Ekleme](../mfc/menus-and-resources-container-additions.md)|
+|Boyama bağlantılı veya katıştırılmış öğeleri|[Kapsayıcı örneği](../visual-cpp-samples.md)|
+|Kapsayıcılar için yeni iletişim kutuları|[OLE'deki İletişim Kutuları](../mfc/dialog-boxes-in-ole.md)|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kapsayıcılar](../mfc/containers.md)<br/>
+[Kapsayıcılar: Gelişmiş Özellikler](../mfc/containers-advanced-features.md)<br/>
+[Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)
 

@@ -18,34 +18,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 059e239f549f8da79207e5ff6a485643252d6d6b
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 4c0ed5c1bc73f58bec1f9ad0d6a790fe3d3c0239
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37123363"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444692"
 ---
 # <a name="tn016-using-c-multiple-inheritance-with-mfc"></a>TN016: MFC'de C++ Birden Çok Devralmayı Kullanma
 
-Bu Not Microsoft Foundation sınıflarıyla birden çok devralma (mı) kullanmayı açıklar. MI kullanımını MFC ile gerekli değildir. Her MFC sınıf kullanılmaz ve bir sınıf kitaplığı yazmak için gerekli değildir.
+Bu Not, birden çok devralma (mı) ile Microsoft Foundation sınıfları kullanmayı açıklar. MI kullanımı ile MFC gerekli değildir. Her MFC sınıf kullanılmaz ve bir sınıf kitaplığı yazmak için gerekli değildir.
 
-Aşağıdaki alt konuları mı genel MFC deyimleri yanı sıra bazı mı kısıtlamalarını kapsayan kullanımını nasıl etkilediğini açıklar. Bu kısıtlamalar genel C++ kısıtlamaları bazılarıdır. Diğer MFC mimarisi tarafından kullanılan.
+MI genel MFC deyimleri yanı sıra bazı kısıtlamalar mı, kapsayan kullanımını nasıl etkilediğini aşağıdaki alt konuları açıklanmaktadır. Bu sınırlamalar genel C++ kısıtlamalar bazılarıdır. Diğer MFC mimarisi tarafından uygulanmaktadır.
 
-Bu teknik Not sonunda mı kullandığı tam bir MFC uygulaması bulacaksınız.
+Bu teknik Not sonunda mı kullanan tam bir MFC uygulaması bulabilirsiniz.
 
 ## <a name="cruntimeclass"></a>CRuntimeClass
 
-Kalıcılığı ve dinamik Nesne oluşturma mekanizmaları MFC kullanım [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) sınıfları benzersiz şekilde tanımlamak için veri yapısı. MFC bu yapıları birini uygulamanızdaki her dinamik ve/veya serileştirilebilir sınıf ile ilişkilendirir. Özel statik nesne türü kullanarak uygulama başlatıldığında, bu yapıları başlatılmış `AFX_CLASSINIT`.
+Kalıcılığı ve dinamik Nesne oluşturma mekanizmaları MFC kullanımı [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) sınıfları benzersiz olarak tanımlanabilmesi için veri yapısı. MFC biri bu yapılar, uygulamanızdaki her dinamik ve/veya serileştirilebilir sınıf ile ilişkilendirir. Bu yapılar, özel bir statik nesne türü kullanarak uygulama başlatıldığında başlatılır `AFX_CLASSINIT`.
 
-Geçerli `CRuntimeClass` mı çalışma zamanı türü bilgileri desteklemiyor. Bu, MFC uygulamanızda mı kullanamazsınız gelmez. Ancak, birden fazla temel sınıfı olan nesneler ile çalışırken bazı sorumlulukları vardır.
+Geçerli uygulaması `CRuntimeClass` mı çalışma zamanı türü bilgileri desteklemez. Bu, MFC uygulamanızda mı kullanamazsınız gelmez. Ancak, birden fazla temel sınıf olan nesneleri ile çalışırken, belirli sorumlulukları gerekir.
 
-[CObject::IsKindOf](../mfc/reference/cobject-class.md#iskindof) yöntemi olmayan doğru belirleyecektir bir nesne türü birden çok taban sınıfı varsa. Bu nedenle, kullanamazsınız [CObject](../mfc/reference/cobject-class.md) sanal bir temel sınıf ve tüm çağrıları olarak `CObject` üye işlevleri gibi [CObject::Serialize](../mfc/reference/cobject-class.md#serialize) ve [CObject::operator yeni](../mfc/reference/cobject-class.md#operator_new)bu C++ uygun işlev çağrısı ayırt etmek için kapsam niteleyicileri olması gerekir. Bir program mı MFC içinde kullandığında içeren sınıf `CObject` temel sınıf listenin en solundaki sınıfında temel sınıflarının olması gerekir.
+[CObject::IsKindOf](../mfc/reference/cobject-class.md#iskindof) yöntemi değil doğru şekilde belirler bir nesne türü birden çok temel sınıf varsa. Bu nedenle, kullanamazsınız [CObject](../mfc/reference/cobject-class.md) sanal bir temel sınıf ve tüm çağrıları olarak `CObject` üye işlevleri gibi [CObject::Serialize](../mfc/reference/cobject-class.md#serialize) ve [CObject::operator yeni](../mfc/reference/cobject-class.md#operator_new)için bu C++ uygun işlev çağrısını netleştirmek kapsam niteleyicileri olması gerekir. Bir program mı MFC içinde kullandığında, sınıfı içeren `CObject` temel sınıf temel sınıflar listesinde en soldaki sınıfının olması gerekir.
 
-Alternatif kullanmaktır `dynamic_cast` işleci. MI, temel sınıflarından biri için olan bir nesne atama işlevleri sağlanan taban sınıf içinde kullanmak için derleyicisi zorlar. Daha fazla bilgi için bkz: [dynamic_cast işleci](../cpp/dynamic-cast-operator.md).
+Kullanmaya alternatiftir `dynamic_cast` işleci. MI, temel sınıflarından birine sahip bir nesne atama sağlanan temel sınıfta işlevleri kullanmak için derleyicinin zorlar. Daha fazla bilgi için [dynamic_cast işleci](../cpp/dynamic-cast-operator.md).
 
-## <a name="cobject---the-root-of-all-classes"></a>CObject - tüm sınıflar kök
+## <a name="cobject---the-root-of-all-classes"></a>CObject - tüm sınıflar kökü
 
-Tüm önemli sınıfları doğrudan veya dolaylı olarak sınıfından türetilen `CObject`. `CObject` mu herhangi bir üye veri sahip değilse, ancak bazı varsayılan işlevselliğe sahiptir. MI kullandığınızda, genellikle iki veya daha fazla devralır `CObject`-türetilmiş sınıfları. Aşağıdaki örnek öğesinden bir sınıf nasıl devrettiği gösterilmektedir bir [CFrameWnd](../mfc/reference/cframewnd-class.md) ve [CObList](../mfc/reference/coblist-class.md):
+Tüm önemli sınıflar sınıfından doğrudan veya dolaylı olarak türetilir `CObject`. `CObject` mu herhangi bir üye veri yok, ancak bazı varsayılan işlevselliğe sahiptir. MI kullandığınızda, genellikle iki veya daha fazla devralır `CObject`-türetilmiş sınıflar. Öğesinden bir sınıf nasıl devralabilir aşağıdaki örnekte gösterildiği bir [CFrameWnd](../mfc/reference/cframewnd-class.md) ve [CObList](../mfc/reference/coblist-class.md):
 
 ```cpp
 class CListWnd : public CFrameWnd, public CObList
@@ -55,7 +55,7 @@ class CListWnd : public CFrameWnd, public CObList
 CListWnd myListWnd;
 ```
 
-Bu durumda `CObject` iki kez bulunur. Bu herhangi bir referans belirsizliğini ortadan kaldırmak için bir yol gerektiği anlamına gelir `CObject` yöntemleri ya da işleçler. **New işleci** ve [delete işleci](../mfc/reference/cobject-class.md#operator_delete) disambiguated gereken iki işleçler. Başka bir örnek olarak, aşağıdaki kod, derleme zamanında bir hataya neden olur:
+Bu durumda `CObject` iki kez dahildir. Herhangi bir referans ayırt etmek için bir yol gerekir yani `CObject` yöntemleri veya işleçler. **New işleci** ve [delete işleci](../mfc/reference/cobject-class.md#operator_delete) disambiguated gereken iki işleçleridir. Başka bir örnek olarak, aşağıdaki kod, derleme zamanında bir hataya neden olur:
 
 ```cpp
 myListWnd.Dump(afxDump); // compile time error, CFrameWnd::Dump or CObList::Dump
@@ -63,7 +63,7 @@ myListWnd.Dump(afxDump); // compile time error, CFrameWnd::Dump or CObList::Dump
 
 ## <a name="reimplementing-cobject-methods"></a>CObject yöntemleri reimplementing
 
-İki veya daha yeni bir sınıf oluştururken sahip `CObject` türetilmiş temel sınıfları, yeniden uygulamalı `CObject` diğer kişilerin kullanmasını istediğiniz yöntemleri. İşleçler **yeni** ve **silmek** zorunludur ve [dökümü](../mfc/reference/cobject-class.md#dump) önerilir. Aşağıdaki örnek reimplements **yeni** ve **silmek** işleçler ve `Dump` yöntemi:
+İki veya daha fazla olduğundan, yeni bir sınıf oluşturduğunuzda `CObject` temel sınıflar türetilmiş yeniden uygulayın `CObject` diğer kişilerin kullanmasını istediğiniz yöntemleri. İşleçler **yeni** ve **Sil** zorunludur ve [dökümü](../mfc/reference/cobject-class.md#dump) önerilir. Aşağıdaki örnek reimplements **yeni** ve **Sil** işleçler ve `Dump` yöntemi:
 
 ```cpp
 class CListWnd : public CFrameWnd, public CObList
@@ -88,13 +88,13 @@ public:
 
 ## <a name="virtual-inheritance-of-cobject"></a>CObject sanal devralma
 
-Bu devralma neredeyse görünebilir `CObject` işlevi belirsizlik sorunu, ancak bu durumda değil. Hiçbir üye verileri olduğundan `CObject`, bir temel sınıf üyesi verilerinin birden çok kopya önlemek için sanal devralma gerekmez. Daha önce gösterilen ilk örnekte `Dump` sanal yöntemi olduğundan hala belirsiz içinde farklı uygulanan `CFrameWnd` ve `CObList`. Belirsizliğini kaldırmak için en iyi yolu, önceki bölümde sunulan önerileri izlemektir.
+Bu sanal devralmayı görünebilir `CObject` işlevi belirsizlik sorunu, ancak bu durum geçerli değildir. Hiçbir üye verileri olduğundan `CObject`, bir temel sınıf üye verileri birden çok kopyasını önlemek için sanal devralma gerekmez. Daha önce gösterilen ilk örnekte `Dump` sanal yöntemi belirsiz hala içinde farklı uygulandığından `CFrameWnd` ve `CObList`. Belirsizliğini kaldırmak için en iyi yolu, önceki bölümde verilen önerileri takip etmektir.
 
 ## <a name="cobjectiskindof-and-run-time-typing"></a>CObject::IsKindOf ve çalışma zamanı yazma
 
-MFC'de tarafından desteklenen çalışma zamanı yazarak mekanizması `CObject` DECLARE_DYNAMIC, ımplement_dynamıc, DECLARE_DYNCREATE, IMPLEMENT_DYNCREATE, declare_serıal ve ımplement_serıal makroları kullanır. Bu makroları güvenli downcasts güvence altına almak için bir çalışma zamanı tür denetimi gerçekleştirebilir.
+MFC'de tarafından desteklenen çalışma zamanı yazma mekanizması `CObject` DECLARE_DYNAMIC, ımplement_dynamıc, DECLARE_DYNCREATE, IMPLEMENT_DYNCREATE, declare_serıal ve ımplement_serıal makrolarını kullanır. Bu makrolar güvenli alt türe çevirme işlemleri güvence altına almak için bir çalışma zamanı tür denetimi gerçekleştirebilir.
 
-Bu makroları yalnızca tek bir temel sınıf desteklemek ve Çarp devralınan sınıflar için sınırlı bir şekilde çalışır. Implement_dynamıc veya ımplement_serıal belirtin temel sınıf ilk (veya en solundaki) temel sınıf olmalıdır. Bu yerleştirme tür en solundaki için temel sınıfı yalnızca denetleme olanak sağlar. Çalışma zamanı tür sistemi ek temel sınıfları hakkında hiçbir şey bilirsiniz. Aşağıdaki örnekte, çalışma zamanı sistemleri ne yapacağını yazın karşı denetimi `CFrameWnd`, ancak hiçbir şey hakkında bilirsiniz `CObList`.
+Bu makrolar, yalnızca tek bir temel sınıf destekler ve birden çok kez devralınan sınıflar için sınırlı bir şekilde çalışır. Belirlediğiniz ımplement_dynamıc veya ımplement_serıal temel sınıf ilk (veya en soldaki) taban sınıfı olmalıdır. Bu yerleştirme en soldaki yalnızca temel sınıf için denetimi yazmanıza olanak tanır. Çalışma zamanı tür sistemine ek temel sınıflar ile ilgili hiçbir şey öğrenmiş olacaksınız. Aşağıdaki örnekte, çalışma zamanı sistemlerin yapacağı tür karşı denetimini `CFrameWnd`, ancak hiçbir şey hakkında öğrenmiş olacaksınız `CObList`.
 
 ```cpp
 class CListWnd : public CFrameWnd, public CObList
@@ -107,13 +107,13 @@ IMPLEMENT_DYNAMIC(CListWnd, CFrameWnd)
 
 ## <a name="cwnd-and-message-maps"></a>CWnd ve ileti eşlemeleri
 
-Doğru çalışması MFC ileti eşlemesi sistemi için iki ek gereksinimler vardır:
+Doğru çalışması MFC ileti eşlemesi sistem için iki ek gereksinimi vardır:
 
-- Koyulmalıdır tek `CWnd`-türetilen temel sınıfı.
+- Olmalıdır tek `CWnd`-türetilmiş bir temel sınıf.
 
-- `CWnd`-Türetilen temel sınıf ilk (veya en solundaki) temel sınıf olması gerekir.
+- `CWnd`-Türetilmiş temel sınıfın ilk (veya en soldaki) bir temel sınıf olması gerekir.
 
-Çalışmaz bazı örnekler şunlardır:
+Çalışmaz bazı örnekleri aşağıda verilmiştir:
 
 ```cpp
 class CTwoWindows : public CFrameWnd, public CEdit
@@ -123,9 +123,9 @@ class CListEdit : public CObList, public CEdit
 { /* ... */ }; // error : CEdit (derived from CWnd) must be first
 ```
 
-## <a name="a-sample-program-using-mi"></a>Örnek mı kullanarak programı
+## <a name="a-sample-program-using-mi"></a>Örnek programı mı kullanma
 
-Aşağıdaki örnek türetilmiş bir sınıf oluşan tek başına bir uygulamadır `CFrameWnd` ve [CWinApp](../mfc/reference/cwinapp-class.md). Bu şekilde bir uygulamada yapısı, ancak bu, tek bir sınıf olan en küçük MFC Uygulama örneğidir önermiyoruz.
+Aşağıdaki örnek, türetilen bir sınıf içeren tek başına uygulamadır `CFrameWnd` ve [CWinApp](../mfc/reference/cwinapp-class.md). Uygulamanın bu şekilde yapılandırın, ancak bu, bir sınıfı olan küçük bir MFC uygulaması örneğidir önermiyoruz.
 
 ```cpp
 #include <afxwin.h>
@@ -194,5 +194,5 @@ CHelloAppAndFrame theHelloAppAndFrame;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)  
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)  
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)

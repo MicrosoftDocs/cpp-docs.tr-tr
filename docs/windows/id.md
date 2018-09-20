@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9b5250a730b0ce80cbbe9698b4b5e636a85986b6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 13ddef5b6bb83de16c72438e2b9f2bb3d4e8d635
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43223192"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46386359"
 ---
 # <a name="id"></a>kimlik
 
@@ -38,7 +38,7 @@ Belirtir bir *DISPID* (bir özellik veya bir arabirim veya dispinterface bir yö
 
 ### <a name="parameters"></a>Parametreler
 
-*DISPID*  
+*DISPID*<br/>
 Arabirim yöntemi için gönderme kimliği.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -64,9 +64,9 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Yöntem Öznitelikleri](../windows/method-attributes.md)  
-[Veri Üyesi Öznitelikleri](../windows/data-member-attributes.md)  
-[defaultvalue](../windows/defaultvalue.md)  
-[in](../windows/in-cpp.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Yöntem Öznitelikleri](../windows/method-attributes.md)<br/>
+[Veri Üyesi Öznitelikleri](../windows/data-member-attributes.md)<br/>
+[defaultvalue](../windows/defaultvalue.md)<br/>
+[in](../windows/in-cpp.md)<br/>
 [out](../windows/out-cpp.md)  

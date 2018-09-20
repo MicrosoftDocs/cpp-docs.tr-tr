@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: af0cfe6f3a94aa1bc2afc4e4857864f81099567e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: de7f4c94ec0d9cb5a9a57315ebda015b7737132c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591737"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392768"
 ---
 # <a name="pinptr-ccli"></a>pin_ptr (C++/CLI)
 
@@ -51,16 +51,16 @@ A *sabitleme işaretçisi* nesne engelleyen bir işaretçiye atık toplanan yı�
 
 ### <a name="parameters"></a>Parametreler
 
-*cv_qualifier*  
+*cv_qualifier*<br/>
 **const** veya **geçici** niteleyicileri. Varsayılan olarak, bir sabitleme işaretçisi olan **geçici**. Bir sabitleme işaretçisi bildirmek için bir hatayı değil gereksizdir **geçici**.
 
-*Türü*  
+*Türü*<br/>
 Türünü *Başlatıcı*.
 
-*var*  
+*var*<br/>
 Adını **pin_ptr** değişkeni.
 
-*Başlatıcı*  
+*Başlatıcı*<br/>
 Bir başvuru türü, yönetilen bir diziyi veya yerel bir işaretçiye atayabilirsiniz herhangi bir nesne öğesi üyesi.
 
 ### <a name="remarks"></a>Açıklamalar

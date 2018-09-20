@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fdd8e54ced5fedc5bbc1e28b8c77357c4210108b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7016a535eb420894d33cd46475ad8c1a75a10c59
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608907"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46395472"
 ---
 # <a name="evening-the-spacing-between-controls"></a>Denetimler Arasındaki Boşlukları Eşitleme
 
@@ -46,6 +46,6 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İletişim Kutularındaki Denetimlerin Düzenlenmesi](../windows/arrangement-of-controls-on-dialog-boxes.md)  
-[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)  
+[İletişim Kutularındaki Denetimlerin Düzenlenmesi](../windows/arrangement-of-controls-on-dialog-boxes.md)<br/>
+[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)

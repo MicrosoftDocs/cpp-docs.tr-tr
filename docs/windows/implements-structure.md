@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 18616b1010dfe6a23861c512b1113c30fe5251ce
-ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
+ms.openlocfilehash: 27a2cfaaf4ddb5ae58cdcd212b5fdcb7ded73bb0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45535359"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46434732"
 ---
 # <a name="implements-structure"></a>Implements Yapısı
 
@@ -69,37 +69,37 @@ struct __declspec(novtable) Implements<RuntimeClassFlags<flags>, I0, I1, I2, I3,
 
 ### <a name="parameters"></a>Parametreler
 
-*I0*  
+*I0*<br/>
 Sıfırıncı arabirim kimliği. (Zorunlu)
 
-*I1*  
+*I1*<br/>
 İlk arabirim kimliği. (İsteğe bağlı)
 
-*I2*  
+*I2*<br/>
 İkinci arabirim kimliği. (İsteğe bağlı)
 
-*I3*  
+*I3*<br/>
 Üçüncü arabirim kimliği. (İsteğe bağlı)
 
-*I4*  
+*I4*<br/>
 Dördüncü arabirim kimliği. (İsteğe bağlı)
 
-*I5*  
+*I5*<br/>
 Beşinci arabirim kimliği. (İsteğe bağlı)
 
-*I6*  
+*I6*<br/>
 Altıncı arabirim kimliği. (İsteğe bağlı)
 
-*I7*  
+*I7*<br/>
 Yedinci arabirim kimliği. (İsteğe bağlı)
 
-*I8*  
+*I8*<br/>
 Sekizinci arabirim kimliği. (İsteğe bağlı)
 
-*I9*  
+*I9*<br/>
 Dokuzuncu arabirim kimliği. (İsteğe bağlı)
 
-*bayrakları*  
+*bayrakları*<br/>
 Sınıfı için yapılandırma bayraklar. Bir veya daha fazla [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) belirtilmiş numaralandırmalar bir [RuntimeClassFlags](../windows/runtimeclassflags-structure.md) yapısı.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -163,10 +163,10 @@ __forceinline HRESULT CanCastTo(
 
 ### <a name="parameters"></a>Parametreler
 
-*riid*  
+*riid*<br/>
 Başvuru için bir arabirim kimliği.
 
-*ppv*  
+*ppv*<br/>
 Başarılı bir arabirim işaretçisi tarafından belirttiyseniz *riid*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -206,10 +206,10 @@ __forceinline static void FillArrayWithIid(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*  
+*Dizin*<br/>
 Bu işlem için başlangıç dizi öğesini gösteren sıfır tabanlı dizini. Bu işlem tamamlandığında *dizin* 1 azaltılır.
 
-*IID'leri*  
+*IID'leri*<br/>
 IID türünde bir dizi.
 
 ### <a name="remarks"></a>Açıklamalar

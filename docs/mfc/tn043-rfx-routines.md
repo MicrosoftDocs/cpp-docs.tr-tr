@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1266097f9d548630459a3fb45ed75edb811deea
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: a35fc217b6600fd701dcc1750c327ffc7f241e8e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317348"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46376661"
 ---
 # <a name="tn043-rfx-routines"></a>TN043: RFX Rutinleri
 
@@ -170,5 +170,5 @@ Kendi yazarken **RFX_** işlevi, genellikle oluşturabileceksiniz kullanılacak 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)  
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)  
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)

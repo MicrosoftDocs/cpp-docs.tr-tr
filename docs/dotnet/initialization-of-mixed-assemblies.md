@@ -21,19 +21,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 9004d62caa5368294a5a53e4e2587da05d1d495c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ba9f3143fb110b25f384e462e7dfcd69c0140802
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204548"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439581"
 ---
 # <a name="initialization-of-mixed-assemblies"></a>Karışık Derlemeleri Başlatma
 
 Windows geliştiricileri her zaman olmalıdır yükleyici kilidi temkinli sırasında kod çalıştırırken `DllMain`. Ancak, C + ile ilgilenirken oyuna gelen bazı ek hususlar vardır +/ clr karma mod derlemeleri.
 
 İçinde kod [DllMain](/windows/desktop/Dlls/dllmain) CLR erişmemelidir. Diğer bir deyişle `DllMain` yönetilen işlevlerine çağrı yapmanız gerekir, doğrudan veya dolaylı olarak; yönetilen kod yok bildirilemez veya uygulanan `DllMain`; ve çöp toplama ya da otomatik kitaplık yükleme içinde gerçekleşmesi gereken `DllMain` .
-  
+
 ## <a name="causes-of-loader-lock"></a>Yükleyici kilidi nedenleri
 
 .NET platformu sunulmasıyla birlikte bir yürütme Modülü (EXE veya DLL) yüklenmesi için iki farklı mekanizma vardır: biri yönetilmeyen modüller için kullanılan Windows ve diğeri için .NET ortak dil çalışma zamanı (.NET derlemeleri yükleyen CLR). Karışık DLL yükleme sorunu Microsoft Windows işletim sistemi yükleyicisi çevresinde toplanır.
@@ -130,7 +130,7 @@ Aynı üst bilgiyi olabileceği için C++ dosyaları ile her ikisini de dahil **
 Yükleyici kilidi ile ilgilenen kullanıcılar için bir kolaylık olarak sunulduğunda yönetilen üzerinden yerel uygulama bağlayıcı seçersiniz. Bu, yukarıdaki sorunları önler. Ancak, bu kuralın derleyicisi ile iki çözülmemiş sorunları nedeniyle bu sürümde iki istisna mevcuttur:
 
 - Satır içi bir çağrıdır işlevi, bir genel statik işlev işaretçisi kullanılabilir. Sanal işlevler genel işlev işaretçileri olarak adlandırılır çünkü bu özellikle önemli bir senaryodur. Örneğin,
-  
+
 ```cpp
 #include "definesmyObject.h"
 #include "definesclassC.h"
@@ -170,15 +170,15 @@ Geliştiriciler, yükleyici kilidi altında çağrıldı belirli bir MSIL işlev
    Bunu yapmak için açık **özellikleri** çözüm başlangıç projesi için kılavuz. Seçin **yapılandırma özellikleri** > **hata ayıklama**. Ayarlama **hata ayıklayıcı türü** için **yalnızca yerel**.
 
 1. Hata ayıklayıcı (F5) başlatın.
-  
+
 1. Zaman **/CLR** tanılama oluşturulur, seçin **yeniden** seçip **sonu**.
-  
+
 1. Çağrı yığını penceresini açın. (Menü çubuğunda, **hata ayıklama** > **Windows** > **çağrı yığını**.) Sorunlu `DllMain` veya statik Başlatıcı, yeşil bir ok ile tanımlanır. Sorunlu işlevi tanımlanmamışsa bulmak için aşağıdaki adımları alınması gerekir.
 
 1. Açık **hemen** penceresinde (menü çubuğunda, **hata ayıklama** > **Windows** > **hemen**.)
 
 1. .Load sos.dll içine yazın **hemen** penceresi hata ayıklama hizmetini yüklemek için.
-  
+
 1. Tür! dumpstack **hemen** iç tam listesini almak için pencere **/CLR** yığını.
 
 1. İlk örneğinin ya da _CorDllMain için (en yakın yığın altına) bakın (varsa `DllMain` soruna neden olan) _VTableBootstrapThunkInitHelperStub ya da oluyorsa (statik bir başlatıcı soruna neden olursa). Yükleyici kilidi altında yürütülmeye çalışıldı işlevin MSIL çağırmayı uygulanan hemen altındaki Bu çağrı yığını girdisi var.

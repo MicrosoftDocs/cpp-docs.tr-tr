@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 80519b17fc5d9aee963ec3718cf82c7fe44d686b
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: b2fb77dc73686a6765d9102cd31fa1399ad21044
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316374"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396083"
 ---
 # <a name="menu-editor"></a>Menü Düzenleyicisi
 
@@ -73,8 +73,8 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)  
-[Kaynak Düzenleyicileri](../windows/resource-editors.md)  
-[Kullanıcı Arabirimi Nesneleri ve Komut Kimlikleri](../mfc/user-interface-objects-and-command-ids.md)  
-[Menüler](../mfc/menus-mfc.md)  
+[Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)<br/>
+[Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
+[Kullanıcı Arabirimi Nesneleri ve Komut Kimlikleri](../mfc/user-interface-objects-and-command-ids.md)<br/>
+[Menüler](../mfc/menus-mfc.md)<br/>
 [Menüler](https://msdn.microsoft.com/library/windows/desktop/ms646977.aspx)

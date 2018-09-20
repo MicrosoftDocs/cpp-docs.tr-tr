@@ -1,5 +1,5 @@
 ---
-title: Görünürken etkinleştir seçeneğini devre dışı kapatma | Microsoft Docs
+title: Görünürken etkinleştir seçeneğini kapatma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,24 +15,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5625e7d05ea09188aaa2ea50ca629204a4bacc07
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7cb585496e6acf1c0ad94a43500e6d9a4830a2ac
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33384787"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46381289"
 ---
 # <a name="turning-off-the-activate-when-visible-option"></a>Görünürken Etkinleştir Seçeneğini Kapatma
-Bir denetim iki temel durumlara sahiptir: etkin ve etkin değil. Geleneksel olarak, bu durumu denetimi bir pencere kaldı tarafından ayırt. Etkin bir denetim bir pencere vardı; Etkin olmayan denetimi belirtmiyor. Penceresiz etkinleştirme giriş, bu ayrım artık Evrensel değil, ancak birçok denetimleri için hala geçerlidir.  
-  
- Genellikle bir ActiveX denetimi tarafından gerçekleştirilen başlatma geri kalanı ile karşılaştırıldığında, bir pencere oluşturma bir çok pahalı bir işlemdir. İdeal olarak, bir denetim onun penceresi kesinlikle gerekli kadar erteleme.  
-  
- Çoğu denetim bir kapsayıcıda görünür tüm zaman etkin olması gerekmez. Genellikle, kullanıcı bunu (örneğin fareyle tıklatarak veya TAB tuşuna basarak) etkin olmasını gerektiren bir işlem gerçekleştirdiğinde kadar denetim devre dışı durumda kalabilir. Bir denetimi etkinleştirmek kapsayıcı gereken kadar devre dışı kalmasına neden için kaldırın **OLEMISC_ACTIVATEWHENVISIBLE** denetimin çeşitli bayrakları bayrağı:  
-  
- [!code-cpp[NVC_MFC_AxOpt#9](../mfc/codesnippet/cpp/turning-off-the-activate-when-visible-option_1.cpp)]  
-  
- **OLEMISC_ACTIVATEWHENVISIBLE** bayrağı kapatılırsa otomatik olarak atlanmış **etkinleştirme görünürken** seçeneğini [denetim ayarlarını](../mfc/reference/control-settings-mfc-activex-control-wizard.md) MFC ActiveX sayfası Denetim oluşturduğunuzda Denetim Sihirbazı.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)
+
+Bir denetimi iki temel durum vardır: etkin ve etkin değil. Geleneksel olarak, bu durumları denetimi bir pencere kaldı tarafından ayırt. Etkin bir denetim bir pencere vardı; Etkin olmayan bir denetim belirtmiyor. Penceresiz etkinleştirme tanıtımıyla Bu ayrım artık Evrensel değildir ancak yine de birçok denetim için geçerlidir.
+
+Genellikle bir ActiveX denetimi tarafından gerçekleştirilen başlatma geri kalanı ile karşılaştırıldığında, bir pencere oluşturulmasını son derece pahalı bir işlemdir. İdeal olarak, bir denetimi kesinlikle gerekli kadar penceresi oluşturma erteleme.
+
+Pek çok denetimi bir kapsayıcıda görünür oldukları tüm zaman etkin olması gerekmez. Genellikle, kullanıcı (örneğin fare ile tıklandığında veya SEKME tuşuna basarak) etkin olmasını gerektiren bir işlem başarılı olana dek denetim etkin olmayan bir durumda kalabilir. Bir denetimin, kapsayıcı etkinleştirmek gereken kadar devre dışı kalmasına neden için kaldırın **OLEMISC_ACTIVATEWHENVISIBLE** denetimin çeşitli bayrakları bayrağı:
+
+[!code-cpp[NVC_MFC_AxOpt#9](../mfc/codesnippet/cpp/turning-off-the-activate-when-visible-option_1.cpp)]
+
+**OLEMISC_ACTIVATEWHENVISIBLE** bayrağı otomatik olarak devre dışı bırakırsanız atlanmış **etkinleştirme olduğunda görünür** seçeneğini [denetim ayarları](../mfc/reference/control-settings-mfc-activex-control-wizard.md) MFC ActiveX sayfası Denetiminizi oluşturduğunuzda denetimi Sihirbazı.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)
 

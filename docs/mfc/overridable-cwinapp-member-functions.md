@@ -18,25 +18,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d454ce65a2068a00f9b2c7f5934951f295738c12
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ced9d7d5f7f49df50e028a299f83ddebdc9fc2d1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347717"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46395140"
 ---
 # <a name="overridable-cwinapp-member-functions"></a>Geçersiz Kılınabilir CWinApp Üye İşlevleri
-[CWinApp](../mfc/reference/cwinapp-class.md) birkaç anahtar geçersiz kılınabilir üye işlevleri sağlar (`CWinApp` sınıfından bu üyeleri geçersiz kılar [CWinThread](../mfc/reference/cwinthread-class.md), içinden `CWinApp` türetilen):  
-  
--   [InitInstance](../mfc/initinstance-member-function.md)  
-  
--   [çalıştırma](../mfc/run-member-function.md)  
-  
--   [ExitInstance](../mfc/exitinstance-member-function.md)  
-  
--   [ONIDLE](../mfc/onidle-member-function.md)  
-  
- Yalnızca `CWinApp` geçersiz kılmanız gerekir üye işlevi `InitInstance`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)
+
+[CWinApp](../mfc/reference/cwinapp-class.md) birkaç anahtar geçersiz kılınabilir üye işlevleri sağlar (`CWinApp` sınıfından bu üyeleri geçersiz kılar [CWinThread](../mfc/reference/cwinthread-class.md), içinden `CWinApp` türetilir):
+
+- [InitInstance](../mfc/initinstance-member-function.md)
+
+- [Çalıştırma](../mfc/run-member-function.md)
+
+- [ExitInstance](../mfc/exitinstance-member-function.md)
+
+- [ONIDLE](../mfc/onidle-member-function.md)
+
+Yalnızca `CWinApp` geçersiz kılmanız gerekir üye işlevi olan `InitInstance`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)

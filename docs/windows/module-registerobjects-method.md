@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8c9a44fed853fe2f4dcd3196e926b3848566ab4e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d332d59ed821e433e0ec1ba025f882b4339ad69a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597032"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46440907"
 ---
 # <a name="moduleregisterobjects-method"></a>Module::RegisterObjects Yöntemi
 
@@ -38,10 +38,10 @@ HRESULT RegisterObjects(
 
 ### <a name="parameters"></a>Parametreler
 
-*Modülü*  
+*Modülü*<br/>
 COM veya Windows çalışma zamanı nesneleri dizisi.
 
-*SunucuAdı*  
+*SunucuAdı*<br/>
 Nesneleri oluşturan sunucunun adı.
 
 ## <a name="return-value"></a>Dönüş Değeri

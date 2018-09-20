@@ -21,24 +21,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b56babf0e42dde521a6bda3a7d9713db519182c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e8a61699ddd2c48e36bdfd5936fb4ab7aa56e0a9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385605"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46416129"
 ---
 # <a name="user-interface-objects-and-command-ids"></a>Kullanıcı Arabirimi Nesneleri ve Komut Kimlikleri
-Menü öğeleri, araç çubuğu düğmeleri ve Hızlandırıcı tuşları olan "kullanıcı arabirimi nesneleri" komutları oluşturma yeteneği. Böyle bir kullanıcı arabirimi nesne her bir kimliği vardır. Bir kullanıcı arabirimi nesnesi nesne ve komutu aynı kimliği atayarak komutu ile ilişkilendirin. İçinde anlatıldığı gibi [iletileri](../mfc/messages.md), komutları, özel iletileri olarak uygulanır. "Komutları içinde Framework" Aşağıda şekil framework komutları nasıl yönettiğini gösterir. Bir kullanıcı arabirimi nesnesi oluşturduğunda bir komut gibi `ID_EDIT_CLEAR_ALL`, uygulamanızda nesnelerden işleme komutu — Aşağıda, belge nesnesinin şekildeki `OnEditClearAll` işlevi, belgenin ileti eşlemesi çağrılır.  
-  
- ![Framework'te komutları](../mfc/media/vc385p1.gif "vc385p1")  
-Framework'te komutları  
-  
- "Komutu güncelleştirme içinde Framework" aşağıdaki şekilde MFC menü öğeleri ve araç çubuğu düğmeleri gibi kullanıcı arabirimi nesnelerini güncelleştirme biçimini gösterilmektedir. Bir menüyü aşağı veya araç çubuğu düğmeleri söz konusu olduğunda boşta döngü sırasında bırakır önce MFC bir güncelleştirme komutu yönlendirir. Aşağıdaki şekilde belge nesnesi, güncelleştirme komut işleyici çağırır `OnUpdateEditClearAll`, etkinleştirme veya kullanıcı arabirimi nesne devre dışı.  
-  
- ![Komut Framework güncelleştirme](../mfc/media/vc385p2.png "vc385p2")  
-Komutunu Framework güncelleştiriliyor  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
+
+Menü öğeleri, araç çubuğu düğmeleri ve kısayol tuşları olan "kullanıcı arabirimi nesneleri" komutları oluşturma yeteneği. Her tür kullanıcı arabirimi nesnesi, bir kimliği vardır. Bir kullanıcı arabirimi nesnesi nesne ve komut aynı kimliği atayarak bir komut ile ilişkilendirin. İçinde anlatıldığı gibi [iletileri](../mfc/messages.md), komutları, özel ileti olarak uygulanır. "Komutları, Framework" Aşağıdaki şekil, framework komutları nasıl yönettiğini gösterir. Ne zaman bir kullanıcı arabirimi nesnesi oluşturur, komut gibi `ID_EDIT_CLEAR_ALL`, uygulamanızdaki nesneleri birini işler komutu — Aşağıda, belge nesnenin şekildeki `OnEditClearAll` belgenin ileti eşlemesi çağrılan işlev.
+
+![Framework'te komutları](../mfc/media/vc385p1.gif "vc385p1") Framework komutları
+
+"Komut güncelleştirme içinde Framework" aşağıdaki şekilde, MFC menü öğeleri ve araç çubuğu düğmeleri gibi kullanıcı arabirimi nesneleri güncelleştirmeleri nasıl gösterilmektedir. Önce aşağı doğru açılır menü veya araç çubuğu düğmeleri söz konusu olduğunda boşta döngü sırasında güncelleştirme komutu MFC yönlendirir. Aşağıdaki çizimde, belge nesnesi güncelleştirme komut işleyicisi, çağıran `OnUpdateEditClearAll`, etkinleştirme veya devre dışı kullanıcı arabirimi nesnesi.
+
+![Komutu Framework güncelleştirme](../mfc/media/vc385p2.png "vc385p2") Framework komut güncelleştiriliyor
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bcacfb8d5cd6d15cf9ca5f9f5bb8e937119dc863
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 4ff40e03bf464d4c6f434b491c8b48d2b797d72b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691580"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46440543"
 ---
 # <a name="implementshelper-structure"></a>ImplementsHelper Yapısı
 
@@ -41,13 +41,13 @@ friend struct Details::ImplementsHelper;
 
 ### <a name="parameters"></a>Parametreler
 
-*RuntimeClassFlagsT*  
+*RuntimeClassFlagsT*<br/>
 Bir veya daha fazla belirten bayraklar alanı [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırıcılar.
 
-*ILst*  
+*ILst*<br/>
 Arabirim kimlikleri listesi.
 
-*IsDelegateToClass*  
+*IsDelegateToClass*<br/>
 Belirtin **true** varsa geçerli örneğini `Implements` ilk arabirim kimliği taban sınıfıdır *ILst*; Aksi takdirde **false**.
 
 ## <a name="remarks"></a>Açıklamalar

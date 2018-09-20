@@ -16,30 +16,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 11c326de6b30668265ff57de73021bcd526baa5c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dc09dcb36d7d1ec1abd2f51fd13b6daadd74601f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375428"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46403857"
 ---
 # <a name="uicheckstate-enumeration"></a>UICheckState Numaralandırması
-Komut için bir kullanıcı arabirimi öğesi onay durumunu açıklar.  
-   
-### <a name="syntax"></a>Sözdizimi   
-```  
-public enum class 
-{  
-   [DefaultValue(typeid<Microsoft::VisualC::MFC::UICheckState>, "Checked")]  
-   Unchecked,   
-   Checked,   
-   Indeterminate 
-};  
-```  
-   
-### <a name="remarks"></a>Açıklamalar  
- [ICommandUI::Check](icommandui-interface.md#check) bir kullanıcı arabirimi öğesi durumu tanımlamak için bu değerleri kullanır.    
- Windows Forms kullanma hakkında daha fazla bilgi için bkz: [MFC içinde Windows formu kullanıcı denetimi kullanarak](../../dotnet/using-a-windows-form-user-control-in-mfc.md).  
-   
-### <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll tanımlanan)  
+Bir kullanıcı arabirimi öğesi komutu için onay durumunu açıklar.
+
+### <a name="syntax"></a>Sözdizimi
+
+```
+public enum class
+{
+   [DefaultValue(typeid<Microsoft::VisualC::MFC::UICheckState>, "Checked")]
+   Unchecked,
+   Checked,
+   Indeterminate
+};
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+[ICommandUI::Check](icommandui-interface.md#check) bir kullanıcı arabirimi öğesinin durumunu tanımlamak için bu değerleri kullanır.
+Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
+
+### <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll içinde tanımlanmıştır)

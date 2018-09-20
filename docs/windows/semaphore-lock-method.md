@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 47925bcc647d253775e4dd61f6a7f5d5fb586dde
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2083992bcb444a10b495b7007c698499f9cd9628
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599289"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419171"
 ---
 # <a name="semaphorelock-method"></a>Semaphore::Lock Yöntemi
 
@@ -43,10 +43,10 @@ static SyncLock Lock(
 
 ### <a name="parameters"></a>Parametreler
 
-*Milisaniye*  
+*Milisaniye*<br/>
 Milisaniye cinsinden zaman aşımı aralığı. Varsayılan değer süresiz olarak bekler sonsuzdur.
 
-*h*  
+*h*<br/>
 İçin bir tanıtıcı bir **semafor** nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri

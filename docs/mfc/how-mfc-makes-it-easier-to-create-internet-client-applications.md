@@ -16,31 +16,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d04a27a51645fc44296db7f5fd84bc2524804c4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 26380dc7e01449e4700ddf403c7395714287ed38
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346119"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407172"
 ---
 # <a name="how-mfc-makes-it-easier-to-create-internet-client-applications"></a>MFC'nin Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması
-Microsoft Foundation sınıfları MFC programcıları için tanıdık bir bağlam sağlar bir şekilde Win32 Internet uzantısı (WinINet) işlevleri kapsüller. MFC üç Internet dosya sınıfları sağlar ([CInternetFile](../mfc/reference/cinternetfile-class.md), [CHttpFile](../mfc/reference/chttpfile-class.md), ve [CGopherFile](../mfc/reference/cgopherfile-class.md)) türetilen [CStdioFile](../mfc/reference/cstdiofile-class.md) sınıfı . Yalnızca bu alma ve Internet veri düzenleme kullanmış olan programcıları sınıflarının `CStdioFile` yerel dosyalar için ancak bu sınıflarla yerel dosyaları ve Internet dosyaları tutarlı ve saydam bir şekilde işleyebilir.  
-  
- MFC WinINet sınıfları ile aynı işlevselliği sağlayan `CStdioFile` Internet üzerinden aktarılan veriler için. Bu sınıfların Internet protokolleri, bir üst düzey uygulama programlama arabirimi, Internet kullanan uygulamalar yapmak için hızlı ve kolay bir yol sağlayan HTTP, FTP ve gopher soyut. Örneğin, bir FTP sunucusuna bağlanırken hala en düşük düzeyde birkaç adım gerektiriyor, ancak bir MFC geliştiricisi olarak, yalnızca yapılan bir çağrı yapmanız gereken `CInternetSession::GetFTPConnection` o bağlantı oluşturmak için.  
-  
- Ek olarak, MFC WinINet sınıfları aşağıdaki avantajları sağlar:  
-  
--   Arabelleğe alınan g/ç  
-  
--   Tür kullanımı uyumlu verileriniz için işleme  
-  
--   Birçok işlevleri için varsayılan parametreleri  
-  
--   Özel durum için ortak Internet hataları işleme  
-  
--   Otomatik temizleme açık tanıtıcıların ve bağlantıları  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Win32 Internet Uzantıları (WinINet)](../mfc/win32-internet-extensions-wininet.md)   
- [WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](../mfc/how-wininet-makes-it-easier-to-create-internet-client-applications.md)
+
+Microsoft Foundation sınıfları MFC programcıları için tanıdık bir bağlam sağlar bir şekilde Win32 Internet uzantısı (WinINet) işlevleri kapsüller. MFC üç Internet dosya sınıfları sağlar ([Cınternetfile](../mfc/reference/cinternetfile-class.md), [CHttpFile](../mfc/reference/chttpfile-class.md), ve [CGopherFile](../mfc/reference/cgopherfile-class.md)) türetilen [CStdioFile](../mfc/reference/cstdiofile-class.md) sınıfı . Yalnızca bu alma ve Internet veri düzenleme kullanmış olan programcıları sınıflarının `CStdioFile` bu sınıfların ancak yerel dosyaları için yerel dosya ve Internet dosyaları tutarlı ve şeffaf bir biçimde işleyebilirsiniz.
+
+MFC WinINet sınıfları aynı işlevleri sağlar `CStdioFile` Internet üzerinden aktarılan veriler için. Bu sınıfların bir üst düzey uygulama programlama arabirimi, uygulamaların Internet uyumlu hale getirme için hızlı ve kolay bir yol sağlayan HTTP, FTP ve gopher Internet protokolleri soyut. Örneğin, bir FTP sunucusuna bağlanan yine de düşük bir düzeyde birkaç adım gerektirir, ancak bir MFC geliştirici olarak, yalnızca bir çağrı yapmak ihtiyacınız `CInternetSession::GetFTPConnection` bu bağlantıyı oluşturmak için.
+
+Ayrıca, MFC WinINet sınıfları aşağıdaki avantajları sağlar:
+
+- Arabelleğe alınan g/ç
+
+- Verileriniz için tür açısından güvenli tanıtıcıları
+
+- Birçok işlev için varsayılan parametreleri
+
+- Özel durum için genel Internet hatalarını işleme
+
+- Otomatik temizleme açık tanıtıcıları ve bağlantılar
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
+[WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](../mfc/how-wininet-makes-it-easier-to-create-internet-client-applications.md)
 

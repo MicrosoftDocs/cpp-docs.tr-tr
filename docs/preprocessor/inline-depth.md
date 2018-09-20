@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a6c8d05d326e11ecfef4df8d22cbf2b8d92bd77
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: cbb90d36ea3da8e443eede8a3d74a35246077d52
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42466259"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410277"
 ---
 # <a name="inlinedepth"></a>inline_depth
 Bir derinlikteyse (çağrı grafında içinde) daha büyük ise, hiçbir işlevin satır içine alınmış şekilde satır içi buluşsal arama derinliğini belirtir *n*.  
@@ -53,5 +53,5 @@ Satır içi derinlik, genişletme sırasında azaltılabilir, ancak artırılmaz
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[Pragma yönergeleri ve __Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)   
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [inline_recursion](../preprocessor/inline-recursion.md)

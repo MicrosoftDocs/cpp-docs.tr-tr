@@ -17,22 +17,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 598583360eca2a65a5352fc9d284d8d359ac021c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 968d31b49c6d2b2fe5a5f69e04f58f17de8df5a2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346142"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46440491"
 ---
 # <a name="enabling-tool-tips"></a>Araç İpuçlarını Etkinleştirme
-(Örneğin, bir form görünümü veya iletişim kutusu denetimleri) penceresinin alt denetimler için araç ipucu destek etkinleştirebilirsiniz.  
-  
-### <a name="to-enable-tool-tips-for-the-child-controls-of-a-window"></a>Pencerenin alt denetimler için araç ipuçları etkinleştirmek için  
-  
-1.  Çağrı `EnableToolTips` araç ipuçları sağlamak istediğiniz penceresi.  
-  
-2.  Her denetim için bir dize girin, [TTN_NEEDTEXT bildirimini](../mfc/handling-ttn-needtext-notification-for-tool-tips.md) işleyicisi. Alt denetimler (örneğin, form görünümü sınıfı) içeren bir pencere ileti haritasını işleyicisidir. Bu işleyici, bir işlev çağırmalıdır denetimi tanımlar ve ayarlar **pszText** araç ipucunu denetimini tarafından kullanılan metin belirtmek için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CFrameWnd'den Türetilmemiş Pencerelerde Araç İpuçları](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
+
+(Örneğin, bir form görünümü veya iletişim kutusu denetimleri) pencerenin alt denetimler için araç ipucu desteği etkinleştirebilirsiniz.
+
+### <a name="to-enable-tool-tips-for-the-child-controls-of-a-window"></a>Pencerenin alt denetimler için araç ipuçları etkinleştirmek için
+
+1. Çağrı `EnableToolTips` araç ipuçları sağlamak istediğiniz penceresi.
+
+1. Her denetim için bir dize sağlayın, [TTN_NEEDTEXT bildirimini](../mfc/handling-ttn-needtext-notification-for-tool-tips.md) işleyici. Alt denetimler (örneğin, form görünümü sınıfı) içeren bir pencere ileti eşlemede işleyicidir. Bu işleyici, bir işlev çağırmalıdır denetimi tanımlar ve ayarlar **pszText** araç ipucu denetimi tarafından kullanılan gösterilen yazıyı belirtmek için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CFrameWnd'den Türetilmemiş Pencerelerde Araç İpuçları](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
 

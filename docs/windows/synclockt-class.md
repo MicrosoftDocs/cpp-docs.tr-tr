@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e8589c43d49709842a745464d2727860ccd2c1e2
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d557b7ee6e6a0ae627ec7cc9a6b40b5b9dbb872c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609683"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379573"
 ---
 # <a name="synclockt-class"></a>SyncLockT Sınıfı
 
@@ -39,7 +39,7 @@ class SyncLockT;
 
 ### <a name="parameters"></a>Parametreler
 
-*SyncTraits*  
+*SyncTraits*<br/>
 Bir kaynağın sahipliğini türü.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -88,5 +88,5 @@ Bir kaynağın sahipliğini türü.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Microsoft::WRL::Wrappers::Details Ad Alanı](../windows/microsoft-wrl-wrappers-details-namespace.md)  
+[Microsoft::WRL::Wrappers::Details Ad Alanı](../windows/microsoft-wrl-wrappers-details-namespace.md)<br/>
 [SRWLock Sınıfı](../windows/srwlock-class.md)

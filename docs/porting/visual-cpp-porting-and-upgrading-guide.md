@@ -12,14 +12,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06350e851501cfa26d1ea4d326c26d7a37270889
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: a0be5d4cc09dbb5753bd8889ad880364ebd228bf
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42466448"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46433666"
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ taşıma ve yükseltme Kılavuzu
+
 Bu konuda, Visual C++ kod yükseltmek için bir kılavuz sağlar. Bu, yeni dil ve Visual Studio özelliklerinden yararlanarak yanı sıra Kodu derlemek ve Araçları'nın daha yeni bir yayın üzerinde doğru çalışması için alma içerir. Bu konu ayrıca daha modern platformlara geçirme eski uygulamaları hakkında bilgi içerir.  
   
 ## <a name="reasons-to-upgrade-visual-c-code"></a>Visual C++ Kod yükseltme nedenleri  

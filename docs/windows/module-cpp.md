@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ac443927c2dcbb00cc01dd3cd63a95441a4a1bf0
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ea891ce5ee5c3570577edf7c2122b2cd39b5c64d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711821"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378572"
 ---
 # <a name="module-c"></a>modül (C++)
 
@@ -52,7 +52,7 @@ Kitaplık blok .idl dosyasında tanımlar.
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*  
+*Türü*<br/>
 (İsteğe bağlı) Aşağıdakilerden biri olabilir:
 
 - `dll` İşlevleri ve işlemde COM sunucusu olarak çalışabilmesi ortaya çıkan DLL'yi izin sınıflar ekler. Varsayılan değer budur.
@@ -63,50 +63,50 @@ Kitaplık blok .idl dosyasında tanımlar.
 
 - `unspecified` Modül özniteliği için ilgili ATL kod ekleme devre dışı bırakır: ekleme ATL modül sınıfı, genel örnek _AtlModule ve giriş noktası işlevleri. ATL kod projesinde diğer öznitelikleri nedeniyle ekleme devre dışı bırakmaz.
 
-*Adı*  
+*Adı*<br/>
 (İsteğe bağlı) Kitaplık blok adı.
 
-*Sürüm*  
+*Sürüm*<br/>
 (İsteğe bağlı) Kitaplığını bloğuna atamak istediğiniz sürüm numarası. 1.0 varsayılan değerdir.
 
-*uuid*  
+*uuid*<br/>
 Kitaplık için benzersiz kimliği. Bu parametreyi unutursanız, kitaplık için bir kimliği otomatik olarak oluşturulur. Almanız gerekebilir *UUID* tanımlayıcısını kullanarak bunu yapabilirsiniz, kitaplık bloğunun **__uuidof (** *libraryname* **)**.
 
-*lcid*  
+*lcid*<br/>
 Yerelleştirme parametre. Bkz: [LCID](/windows/desktop/Midl/lcid) daha fazla bilgi için.
 
-*control*  
+*control*<br/>
 (İsteğe bağlı) Kitaplığı'nda, tüm coclass'ları denetimleri olduğunu belirtir.
 
-*helpstring*  
+*helpstring*<br/>
 Tür kitaplığını belirtir.
 
-*helpstringdll*  
+*helpstringdll*<br/>
 (İsteğe bağlı) Bir belge dize araması gerçekleştirmek için kullanılacak .dll dosyasının adını ayarlar. Bkz: [helpstringdll](/windows/desktop/Midl/helpstringdll) daha fazla bilgi için.
 
-*helpfile*  
+*helpfile*<br/>
 (İsteğe bağlı) Adını **yardımcı** tür kitaplığı dosyası.
 
-*helpcontext*  
+*helpcontext*<br/>
 (İsteğe bağlı) **Yardımcı kimliği** bu tür kitaplığı için.
 
-*helpstringcontext*  
+*helpstringcontext*<br/>
 (İsteğe bağlı) Bkz: [helpstringcontext](../windows/helpstringcontext.md) daha fazla bilgi için.
 
-*hidden*  
+*hidden*<br/>
 (İsteğe bağlı) Tüm Kitaplığı görüntülenmesini engeller. Bu kullanım denetimleri ile kullanıma yöneliktir. Genişletilmiş özelliklere sahip bir denetim sarmalayan yeni bir tür kitaplığı oluşturmak konakları gerekir. Bkz: [gizli](/windows/desktop/Midl/hidden) daha fazla bilgi için MIDL özniteliği.
 
-*restricted*  
+*restricted*<br/>
 (İsteğe bağlı) Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](/windows/desktop/Midl/restricted) daha fazla bilgi için MIDL özniteliği.
 
-*Özel*  
+*Özel*<br/>
 (İsteğe bağlı) Bir veya daha fazla öznitelik varsa Bu benzer [özel](../windows/custom-cpp.md) özniteliği. İlk parametre olarak *özel* özniteliğinin GUID'dir. Örneğin:
 
 ```
 [module(custom={guid,1}, custom={guid1,2})]
 ```
 
-*resource_name*  
+*resource_name*<br/>
 Uygulama Kimliği dll, yürütülebilir veya hizmet kaydetmek için kullanılan .rgs dosya dize kaynak kimliği. Modül türü hizmetidir, bu bağımsız değişken hizmet adını içeren dize Kimliğini almak için de kullanılır.
 
 > [!NOTE]
@@ -188,13 +188,13 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Sınıf Öznitelikleri](../windows/class-attributes.md)  
-[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)  
-[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  
-[usesgetlasterror](../windows/usesgetlasterror.md)  
-[Kitaplık](/windows/desktop/Midl/library)  
-[helpcontext](../windows/helpcontext.md)  
-[helpstring](../windows/helpstring.md)  
-[helpfile](../windows/helpfile.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Sınıf Öznitelikleri](../windows/class-attributes.md)<br/>
+[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)<br/>
+[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[usesgetlasterror](../windows/usesgetlasterror.md)<br/>
+[Kitaplık](/windows/desktop/Midl/library)<br/>
+[helpcontext](../windows/helpcontext.md)<br/>
+[helpstring](../windows/helpstring.md)<br/>
+[helpfile](../windows/helpfile.md)<br/>
 [Sürüm](../windows/version-cpp.md)  

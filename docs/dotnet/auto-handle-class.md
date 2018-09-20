@@ -18,33 +18,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0bddacec4e416173fc60ceb1c2c6ee71b3a198e7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6509eaf8797d20303100c9886590bb2971e6c640
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46029721"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419158"
 ---
 # <a name="autohandle-class"></a>auto_handle Sınıfı
-Yönetilen bir türe sanal bir işleyici eklemek için kullanılan otomatik kaynak yönetimi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-template<typename _element_type>  
-ref class auto_handle;  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+Yönetilen bir türe sanal bir işleyici eklemek için kullanılan otomatik kaynak yönetimi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+template<typename _element_type>
+ref class auto_handle;
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *_element_type*<br/>
-Katıştırılmış yönetilen türü.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Üst bilgi dosyası** \<msclr\auto_handle.h >  
-  
- **Namespace** msclr  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [auto_handle](../dotnet/auto-handle.md)   
- [auto_handle üyeleri](../dotnet/auto-handle-members.md)   
- [auto_gcroot Class](../dotnet/auto-gcroot-class.md)
+Katıştırılmış yönetilen türü.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Üst bilgi dosyası** \<msclr\auto_handle.h >
+
+**Namespace** msclr
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[auto_handle](../dotnet/auto-handle.md)<br/>
+[auto_handle Members](../dotnet/auto-handle-members.md)<br/>
+[auto_gcroot Class](../dotnet/auto-gcroot-class.md)

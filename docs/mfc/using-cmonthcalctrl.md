@@ -16,29 +16,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 30c6a25cdb2bd61ec9346108ca5b4587b70ef870
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e9160afd1d9885f9bc9b928b5654abedf0fcaf11
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382385"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46380518"
 ---
 # <a name="using-cmonthcalctrl"></a>CMonthCalCtrl Kullanma
-Aylık takvim denetiminin ([CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md)) bir takvim benzeri kullanıcı arabirimini uygular. Bu kullanıcı girmek veya bir tarih seçme çok sezgisel ve tanınabilir yöntemini sağlar. Denetim Ayrıca uygulama ile elde ve var olan veri türleri kullanılarak denetiminde tarih bilgisini ayarlamak için araçlar sağlar. Varsayılan olarak, ay ve gün geçerli ay Takvim denetimi görüntüler. Ancak, kullanıcı önceki ve sonraki ay boyunca kaydırma yapın ve belirli ayı ve/veya yıl mümkün değil.  
-  
+
+Aylık takvim denetiminin ([CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md)) bir takvim benzeri kullanıcı arabirimini uygular. Bu kullanıcı girerek veya bir tarih seçmek çok sezgisel ve tanınabilir yöntemini sağlar. Denetim, uygulama edinmek ve var olan veri türleri kullanılarak denetiminde tarih bilgisini ayarlamak için Araçlar ile de sağlar. Varsayılan olarak, geçerli gün ve ay aylık takvim denetimi görüntüler. Ancak, kullanıcı belirli bir ay ve/veya yıl önceki ve sonraki aylarda kaydırın ve mümkün değil.
+
 > [!NOTE]
->  Kullanılacak `CMonthCalCtrl` sınıfı, projenizdeki AFXDTCTL eklemeniz gerekir. H, genellikle STDAFX. H.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Aylık Takvim Denetimi Oluşturma](../mfc/creating-the-month-calendar-control.md)  
-  
--   [Aylık Takvim Denetimine Örnekler](../mfc/month-calendar-control-examples.md)  
-  
--   [Aylık Takvim Denetimlerinde Bildirim İletilerini İşleme](../mfc/processing-notification-messages-in-month-calendar-controls.md)  
-  
--   [Aylık Takvim Denetiminin Gün Durumunu Ayarlama](../mfc/setting-the-day-state-of-a-month-calendar-control.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimler](../mfc/controls-mfc.md)
+>  Kullanılacak `CMonthCalCtrl` sınıfı, projenizdeki AFXDTCTL eklemeniz gerekir. Genellikle, STDAFX H. H
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Aylık Takvim Denetimi Oluşturma](../mfc/creating-the-month-calendar-control.md)
+
+- [Aylık Takvim Denetimine Örnekler](../mfc/month-calendar-control-examples.md)
+
+- [Aylık Takvim Denetimlerinde Bildirim İletilerini İşleme](../mfc/processing-notification-messages-in-month-calendar-controls.md)
+
+- [Aylık Takvim Denetiminin Gün Durumunu Ayarlama](../mfc/setting-the-day-state-of-a-month-calendar-control.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Denetimler](../mfc/controls-mfc.md)
 

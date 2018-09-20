@@ -18,58 +18,60 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a717ca80d84b884014a2567228829ffd87c5178
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 9019b8f2314cfefa5b952994e7fa7c3e9d8d459e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36930306"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442781"
 ---
 # <a name="form-views-mfc"></a>Form Görünümleri (MFC)
-Formlar dahil olmak üzere MFC kitaplıkları destekleyen Visual C++ uygulamasını ekleyebilirsiniz bir [forms tabanlı uygulama](../mfc/reference/creating-a-forms-based-mfc-application.md) (biri olan Görünüm sınıfı türetilir `CFormView`). Forms desteklemek için uygulamanızın başlangıçta oluşturmadıysanız, Visual C++ yeni bir form eklediğinizde, bu desteği ekler. SDI veya MDI bir uygulamada varsayılan uygulayan [belge/görünüm mimarisi](../mfc/document-view-architecture.md), kullanıcı seçtiğinde **yeni** komutu (varsayılan olarak, üzerinde **dosya** menüsü), Visual C++ kullanılabilir formlardan seçmek için kullanıcıya sorar.  
-  
- Kullanıcı seçtiğinde bir uygulamayla SDI, **yeni** komutu, formun geçerli örneği çalışmaya devam eder ancak biri bulunamazsa, seçili form uygulamayla yeni bir örneğini oluşturulur. MDI uygulamada formu geçerli örneği kullanıcı seçtiğinde çalıştırmaya devam **yeni** komutu.  
-  
+
+Forms dahil olmak üzere MFC kitaplıkları destekleyen tüm Visual C++ uygulamasına ekleyebilirsiniz bir [forms tabanlı uygulama](../mfc/reference/creating-a-forms-based-mfc-application.md) (bir, görünüm sınıfı türetilen `CFormView`). Forms desteklemek üzere uygulamanızı başlangıçta oluşturmadıysanız, Visual C++, yeni bir form eklediğinizde bu desteğini ekler. Bir SDI veya MDI uygulamasında varsayılan uygulayan [belge/görünüm mimarisi](../mfc/document-view-architecture.md), kullanıcı seçtiğinde **yeni** komut (varsayılan olarak, üzerinde **dosya** menüsü), Visual C++ kullanılabilir formlardan seçmenizi ister.
+
+Kullanıcı seçtiğinde bir SDI uygulaması ile **yeni** komutu, formun geçerli örneğini çalışmaya devam eder ancak biri bulunamazsa, seçili form uygulamasıyla yeni bir örneğini oluşturulur. Bir MDI uygulamasında, formun geçerli örneğini kullanıcı seçtiğinde çalışmaya devam **yeni** komutu.
+
 > [!NOTE]
->  Form iletişim tabanlı bir uygulamaya ekleyebilirsiniz (iletişim kutusu sınıfı, temel bir `CDialog` ve hangi hiçbir görünümünde sınıfı uygulanır). Ancak, belge/görünüm mimarisinin Visual C++ otomatik olarak uygulamayan **dosya**&#124;**yeni** işlevselliği. Kullanıcının çeşitli özellik sayfaları sekmeli iletişim kutusuyla uygulayarak gibi başka biçimlerde görüntülemek bir yol oluşturmanız gerekir.  
-  
- Yeni bir form uygulamanıza eklediğinizde, Visual C++ şunları yapar:  
-  
--   Seçtiğiniz form Stil sınıfları birini temel alan bir sınıf oluşturur (`CFormView`, `CRecordView`, `CDaoRecordView`, veya `CDialog`).  
-  
--   Bir iletişim kutusu kaynağı uygun stilleri ile oluşturur (veya henüz bir sınıf ile ilişkilendirilmemiş var olan bir iletişim kutusu kaynağı kullanabilirsiniz).  
-  
-     Varolan bir iletişim kutusu kaynağı seçerseniz, bu stiller iletişim kutusu için Özellikler sayfasını kullanarak ayarlamanız gerekebilir. Bir iletişim kutusu stilleri şunları içermelidir:  
-  
-     **WS_CHILD**= açık  
-  
-     **WS_BORDER**= kapalı  
-  
-     **Ws_vısıble**= kapalı  
-  
-     **Ws_captıon =** devre dışı  
-  
- Belge/görünüm mimarisine bağlı uygulamalar için **yeni bir Form** komutu (sağ tıklatma Sınıf Görünümü'nde) de:  
-  
--   Oluşturur bir `CDocument`-temel sınıfı  
-  
-     Oluşturulan yeni bir sınıf sahip olmak yerine var olan kullanabilirsiniz `CDocument`-projenizdeki sınıfı tabanlı.  
-  
--   Belge şablonu oluşturur (türetilmiş `CDocument`) dizesi, menü ve simge kaynaklara sahip.  
-  
-     Yeni bir sınıf şablona bağlanacağı de oluşturabilirsiniz.  
-  
--   Çağrı ekler `AddDocumentTemplate` , uygulamanızın içinde `InitInstance` kodu.  
-  
-     Visual C++ ekler kullanıcı seçtiğinde, formun kullanılabilir Formlar listesine ekler oluşturduğunuz her yeni form için bu kodu **yeni** komutu. Bu kod formun ilişkili kaynak kimliği ile ilişkili belge, Görünüm ve birlikte yeni form nesnesi olun çerçeve sınıfları adlarını içerir.  
-  
-     Belge şablonları belgeler, çerçeve pencereler ve görünümler arasındaki bağlantıyı işlevini görür. Tek bir belge için birçok şablonu oluşturabilirsiniz.  
-  
- Daha fazla bilgi için bkz.:  
-  
--   [Form tabanlı bir uygulama oluşturma](../mfc/reference/creating-a-forms-based-mfc-application.md)  
-  
--   [Bir Projeye Form Ekleme](../mfc/inserting-a-form-into-a-project.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)
+>  Bir formu bir iletişim kutusu tabanlı uygulamaya ekleyebilirsiniz (bir iletişim kutusu sınıfı, temel `CDialog` ve hangi hiçbir görünümünde sınıfı uygulanır). Ancak, belge/görünüm mimarisi Visual C++ otomatik olarak uygulamıyor **dosya**&#124;**yeni** işlevselliği. Kullanıcının, çeşitli özellik sayfaları sekmeli iletişim kutusuyla uygulayarak gibi başka biçimlerde görüntülemek bir yol oluşturmanız gerekir.
+
+Yeni bir form uygulamanıza eklediğinizde, Visual C++ şunları yapar:
+
+- Seçtiğiniz form-style sınıflarının biri üzerinde temel bir sınıf oluşturur (`CFormView`, `CRecordView`, `CDaoRecordView`, veya `CDialog`).
+
+- Uygun stilleriyle bir iletişim kaynağı oluşturur (veya henüz bir sınıf ile ilişkilendirilmemiş mevcut bir iletişim kaynağı kullanabilirsiniz).
+
+     Var olan bir iletişim kaynağı seçerseniz, iletişim kutusu için Özellikler sayfasını kullanarak bu stiller ayarlamak gerekebilir. Bir iletişim kutusu stilleri şunları içermelidir:
+
+     **WS_CHILD**= açık
+
+     **WS_BORDER**= kapalı
+
+     **Ws_vısıble**= kapalı
+
+     **Ws_captıon =** kapalı
+
+Belge/görünüm mimarisini temel alan uygulamalar için **yeni formu** komut (Sınıf Görünümü'nde sağ tıklama) da:
+
+- Oluşturur bir `CDocument`-temel sınıfı
+
+     Oluşturulan yeni bir sınıf olması yerine var olan tüm kullanabilirsiniz `CDocument`-tabanlı projenizdeki sınıfı.
+
+- Bir belge şablonu oluşturur (türetilen `CDocument`) dizesi, menü ve simge kaynaklara sahip.
+
+     Yeni bir sınıf şablonunun temel de oluşturabilirsiniz.
+
+- Bir çağrı ekler `AddDocumentTemplate` uygulamanızın `InitInstance` kod.
+
+     Visual C++ için kullanıcı seçtiğinde, form kullanılabilir Formlar listesine ekler. oluşturduğunuz her yeni formu bu kodu ekler **yeni** komutu. Bu kod, formun ilişkili kaynak kimliği ile ilişkili belge, görünüm ile birlikte yeni form nesne olun çerçeve sınıfları adlarını içerir.
+
+     Belge şablonları, belge çerçeve pencereleri ve görünümleri arasında bağlantı görür. Tek bir belge için birçok şablonu oluşturabilirsiniz.
+
+Daha fazla bilgi için bkz.:
+
+- [Form tabanlı bir uygulama oluşturma](../mfc/reference/creating-a-forms-based-mfc-application.md)
+
+- [Bir Projeye Form Ekleme](../mfc/inserting-a-form-into-a-project.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)

@@ -32,152 +32,172 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1848e0fe6d3e09ea4707279e83293ae2dc0feb64
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 1e2ee4f7f5f1e3e6126cee6e5822468a7487eb1f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36950683"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442272"
 ---
 # <a name="cd2dresource-class"></a>CD2DResource sınıfı
-Bir soyut sınıf oluşturmak ve Fırçalar, Katmanlar ve metinler gibi D2D kaynakları yönetmek için bir arabirim sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CD2DResource : public CObject;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="protected-constructors"></a>Korumalı Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CD2DResource::CD2DResource](#cd2dresource)|CD2DResource nesnesi oluşturur.|  
-|[CD2DResource:: ~ CD2DResource](#cd2dresource__~cd2dresource)|Yok Edicisi. D2D kaynak nesnesi yok çağrılır.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CD2DResource::Create](#create)|Bir CD2DResource oluşturur.|  
-|[CD2DResource::Destroy](#destroy)|CD2DResource nesnesini yok eder.|  
-|[CD2DResource::IsValid](#isvalid)|Denetimleri kaynak geçerlilik|  
-  
-### <a name="protected-methods"></a>Korumalı Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CD2DResource::IsAutoDestroy](#isautodestroy)|Onay otomatik bayrağı yok.|  
-|[CD2DResource::ReCreate](#recreate)|Bir CD2DResource yeniden oluşturur.|  
-  
-### <a name="protected-data-members"></a>Korumalı veri üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CD2DResource::m_bIsAutoDestroy](#m_bisautodestroy)|Kaynak sahibi (CRenderTarget) tarafından destoyed olacaktır|  
-|[CD2DResource::m_pParentTarget](#m_pparenttarget)|İşaretçi CRenderTarget üst)|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- `CD2DResource`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxrendertarget.h  
-  
-##  <a name="_dtorcd2dresource"></a>  CD2DResource:: ~ CD2DResource  
- Yok Edicisi. D2D kaynak nesnesi yok çağrılır.  
-  
-```  
+
+Oluşturma ve Fırçalar, Katmanlar ve metinler gibi D2D kaynakları yönetmek için bir arabirim sunan bir soyut sınıf.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CD2DResource : public CObject;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="protected-constructors"></a>Korumalı Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CD2DResource::CD2DResource](#cd2dresource)|CD2DResource bir nesne oluşturur.|
+|[CD2DResource:: ~ CD2DResource](#cd2dresource__~cd2dresource)|Yıkıcı. D2D kaynak nesnesi yok ediliyorken çağırılır.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CD2DResource::Create](#create)|Bir CD2DResource oluşturur.|
+|[CD2DResource::Destroy](#destroy)|CD2DResource nesnesini yok eder.|
+|[CD2DResource::IsValid](#isvalid)|Kaynak geçerlilik denetimleri|
+
+### <a name="protected-methods"></a>Korumalı Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CD2DResource::IsAutoDestroy](#isautodestroy)|Onay otomatik bayrağı yok.|
+|[CD2DResource::ReCreate](#recreate)|Bir CD2DResource yeniden oluşturur.|
+
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CD2DResource::m_bIsAutoDestroy](#m_bisautodestroy)|Kaynak sahibi (CRenderTarget) tarafından destoyed olacaktır|
+|[CD2DResource::m_pParentTarget](#m_pparenttarget)|CRenderTarget üst işaretçisi)|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+`CD2DResource`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxrendertarget.h
+
+##  <a name="_dtorcd2dresource"></a>  CD2DResource:: ~ CD2DResource
+
+Yıkıcı. D2D kaynak nesnesi yok ediliyorken çağırılır.
+
+```
 virtual ~CD2DResource();
-```  
-  
-##  <a name="cd2dresource"></a>  CD2DResource::CD2DResource  
- CD2DResource nesnesi oluşturur.  
-  
-```  
+```
+
+##  <a name="cd2dresource"></a>  CD2DResource::CD2DResource
+
+CD2DResource bir nesne oluşturur.
+
+```
 CD2DResource(
-    CRenderTarget* pParentTarget,  
+    CRenderTarget* pParentTarget,
     BOOL bAutoDestroy);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pParentTarget*  
- İşleme hedefi için bir işaretçi.  
-  
- *bAutoDestroy*  
- Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
-  
-##  <a name="create"></a>  CD2DResource::Create  
- Bir CD2DResource oluşturur.  
-  
-```  
-virtual HRESULT Create(CRenderTarget* pRenderTarget) = 0;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pRenderTarget*  
- İşleme hedefi için bir işaretçi.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
-  
-##  <a name="destroy"></a>  CD2DResource::Destroy  
- CD2DResource nesnesini yok eder.  
-  
-```  
-virtual void Destroy() = 0;  
-```  
-  
-##  <a name="isautodestroy"></a>  CD2DResource::IsAutoDestroy  
- Onay otomatik bayrağı yok.  
-  
-```  
-BOOL IsAutoDestroy() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Nesne sahibi tarafından yok edilmesi TRUE; Aksi takdirde FALSE.  
-  
-##  <a name="isvalid"></a>  CD2DResource::IsValid  
- Denetimleri kaynak geçerlilik  
-  
-```  
-virtual BOOL IsValid() const = 0;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Kaynağın geçerli ise TRUE; Aksi takdirde FALSE.  
-  
-##  <a name="m_bisautodestroy"></a>  CD2DResource::m_bIsAutoDestroy  
- Kaynak sahibi (CRenderTarget) tarafından destoyed olacaktır  
-  
-```  
-BOOL m_bIsAutoDestroy;  
-```  
-  
-##  <a name="m_pparenttarget"></a>  CD2DResource::m_pParentTarget  
- İşaretçi CRenderTarget üst)  
-  
-```  
-CRenderTarget* m_pParentTarget;  
-```  
-  
-##  <a name="recreate"></a>  CD2DResource::ReCreate  
- Bir CD2DResource yeniden oluşturur.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pParentTarget*<br/>
+İşleme hedefi için bir işaretçi.
+
+*bAutoDestroy*<br/>
+Nesne sahibi tarafından (pParentTarget) edileceği gösterir.
+
+##  <a name="create"></a>  CD2DResource::Create
+
+Bir CD2DResource oluşturur.
+
+```
+virtual HRESULT Create(CRenderTarget* pRenderTarget) = 0;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pRenderTarget*<br/>
+İşleme hedefi için bir işaretçi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+
+##  <a name="destroy"></a>  CD2DResource::Destroy
+
+CD2DResource nesnesini yok eder.
+
+```
+virtual void Destroy() = 0;
+```
+
+##  <a name="isautodestroy"></a>  CD2DResource::IsAutoDestroy
+
+Onay otomatik bayrağı yok.
+
+```
+BOOL IsAutoDestroy() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Nesne sahibi tarafından edileceği TRUE; Aksi durumda FALSE.
+
+##  <a name="isvalid"></a>  CD2DResource::IsValid
+
+Kaynak geçerlilik denetimleri
+
+```
+virtual BOOL IsValid() const = 0;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Kaynak geçerli ise TRUE; Aksi durumda FALSE.
+
+##  <a name="m_bisautodestroy"></a>  CD2DResource::m_bIsAutoDestroy
+
+Kaynak sahibi (CRenderTarget) tarafından destoyed olacaktır
+
+```
+BOOL m_bIsAutoDestroy;
+```
+
+##  <a name="m_pparenttarget"></a>  CD2DResource::m_pParentTarget
+
+CRenderTarget üst işaretçisi)
+
+```
+CRenderTarget* m_pParentTarget;
+```
+
+##  <a name="recreate"></a>  CD2DResource::ReCreate
+
+Bir CD2DResource yeniden oluşturur.
+
+```
 virtual HRESULT ReCreate(CRenderTarget* pRenderTarget);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pRenderTarget*  
- İşleme hedefi için bir işaretçi.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıflar](../../mfc/reference/mfc-classes.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pRenderTarget*<br/>
+İşleme hedefi için bir işaretçi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıflar](../../mfc/reference/mfc-classes.md)

@@ -17,53 +17,56 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7df782e3c30b9120fe7eb6728f1b622750d160f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e03e750941be02385ac4d5b7463d5b6f32997b6a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348243"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46373954"
 ---
 # <a name="printing"></a>Yazdırma
-Microsoft Windows aygıt bağımsız görüntü uygular. MFC içinde aynı çizim çağrıları içinde buna `OnDraw` üye işlevi görünüm sınıfınızın çizim görüntüleme ve yazıcılar gibi diğer cihazları sorumlu. Baskı Önizleme için görüntülenecek benzetimli yazıcı çıktısından hedef aygıttır.  
-  
-##  <a name="_core_your_role_in_printing_vs.._the_framework.92.s_role"></a> Framework'ün rol karşılaştırması yazdırmada rolünüz  
- Görünüm sınıfınıza aşağıdaki sorumlulukları vardır:  
-  
--   Belgede kaç sayfalarıdır framework bildirin.  
-  
--   Belirtilen bir sayfa yazdırmak için sorulduğunda, bu belgenin bölümünü çizin.  
-  
--   Ayırma ve tüm yazı tiplerini veya yazdırma için gerekli diğer grafik cihaz arabirimi (GDI) kaynakları serbest bırakma.  
-  
--   Gerekirse, herhangi bir gönderme çıkış kodları örneğin belirli bir sayfa yazdırma önce yazıcı modunu değiştirmek için sayfa başına temelinde Yazdırma yönünü değiştirmek için gerekli.  
-  
- Framework'ün Sorumluluklar aşağıdaki gibidir:  
-  
--   Görüntü **yazdırma** iletişim kutusu.  
-  
--   Oluşturma bir [CDC](../mfc/reference/cdc-class.md) yazıcı nesnesi.  
-  
--   Çağrı [StartDoc](../mfc/reference/cdc-class.md#startdoc) ve [EndDoc](../mfc/reference/cdc-class.md#enddoc) üye işlevlerini `CDC` nesnesi.  
-  
--   Art arda çağrısı [StartPage](../mfc/reference/cdc-class.md#startpage) üye işlevini `CDC` nesnesi, görünüm sınıfı hangi sayfa yazdırılması ve çağırın bildirin [EndPage](../mfc/reference/cdc-class.md#endpage) üye işlevini `CDC` nesnesi.  
-  
--   Geçersiz kılınabilir işlevler uygun zamanlarda görünümünde çağırın.  
-  
- Aşağıdaki makaleler framework yazdırmayı ve baskı önizlemeyi nasıl destekler? ele alınmıştır:  
-  
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Varsayılan yazdırmayı yapma](../mfc/how-default-printing-is-done.md)  
-  
--   [Birden çok belge](../mfc/multipage-documents.md)  
-  
--   [Üstbilgiler ve altbilgiler](../mfc/headers-and-footers.md)  
-  
--   [Yazdırma için GDI kaynaklarını ayırma](../mfc/allocating-gdi-resources.md)  
-  
--   [Baskı Önizleme](../mfc/print-preview-architecture.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [{1&gt;Yazdırma ve yazdırma önizleme&lt;1}](../mfc/printing-and-print-preview.md)
+
+CİHAZDAN bağımsız görüntü Microsoft Windows uygular. MFC içinde aynı çizim çağrıları, yani `OnDraw` çizim ekranı ve yazıcılar gibi diğer cihazları sorumlu görünümü sınıfınızın bir üye işlevi. Baskı Önizleme için görüntülenecek sanal yazıcı çıktı hedef cihazdır.
+
+##  <a name="_core_your_role_in_printing_vs.._the_framework.92.s_role"></a> Framework'ün rol karşılaştırması yazdırmada rolünüz
+
+Görünüm sınıfınıza aşağıdaki sorumluluklara sahiptir:
+
+- Framework, belgede kaç sayfalarıdır bildirin.
+
+- Belirtilen bir sayfa yazdırmak için sorulduğunda, bu kısmını serileştirmeniz çizin.
+
+- Ayırma ve tüm yazı tiplerini veya yazdırma için gerekli diğer grafik cihaz arabirimi (GDI) kaynaklarını serbest bırakın.
+
+- Gerekirse, tüm gönderme çıkış kodları, örneğin belirli bir sayfa yazdırmadan önce yazıcı modu değiştirmek için sayfa başına temelinde Yazdırma yönünü değiştirmek için gerekli.
+
+Framework'ün Sorumluluklar aşağıdaki gibidir:
+
+- Görüntü **yazdırma** iletişim kutusu.
+
+- Oluşturma bir [CDC](../mfc/reference/cdc-class.md) yazıcı nesnesi.
+
+- Çağrı [StartDoc](../mfc/reference/cdc-class.md#startdoc) ve [EndDoc](../mfc/reference/cdc-class.md#enddoc) üye işlevleri `CDC` nesne.
+
+- Tekrar tekrar çağırmak [StartPage](../mfc/reference/cdc-class.md#startpage) üye işlevinin `CDC` nesne, hangi sayfa yazdırılıp ve arama görünüm sınıfını bildirin [EndPage](../mfc/reference/cdc-class.md#endpage) üye işlevinin `CDC` nesne.
+
+- Geçersiz kılınabilir işlevler görünümünde uygun zamanlarda çağırın.
+
+Aşağıdaki makaleler framework yazdırmayı ve baskı önizlemeyi nasıl desteklediği açıklanmaktadır:
+
+### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Varsayılan yazdırmayı yapma](../mfc/how-default-printing-is-done.md)
+
+- [Birden fazla belge](../mfc/multipage-documents.md)
+
+- [Üstbilgiler ve altbilgiler](../mfc/headers-and-footers.md)
+
+- [Yazdırma için GDI kaynaklarını ayırma](../mfc/allocating-gdi-resources.md)
+
+- [Baskı Önizleme](../mfc/print-preview-architecture.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[{1&gt;Yazdırma ve yazdırma önizleme&lt;1}](../mfc/printing-and-print-preview.md)
 

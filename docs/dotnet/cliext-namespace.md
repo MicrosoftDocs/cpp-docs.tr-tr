@@ -20,15 +20,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 20c36b4e3326ef8010558b4b99729ec8643b5af5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 07433d1abe9fae109ee7a7be90219ce726f22eeb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104158"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419093"
 ---
 # <a name="cliext-namespace"></a>cliext Ad Alanı
-`cliext` Ad alanı, STL/CLR kitaplığı tüm türleri içerir. Tüm bu türleri ve STL/CLR türleri hakkında daha fazla bilgi için bağlantılar listesi için bkz: [STL/CLR kitaplık başvurusu](../dotnet/stl-clr-library-reference.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [STL/CLR Kitaplık Başvurusu](../dotnet/stl-clr-library-reference.md)
+
+`cliext` Ad alanı, STL/CLR kitaplığının tüm türlerini içerir. Tüm bu türler ve STL/CLR türleri hakkında daha fazla bilgi için bağlantılar listesi için bkz. [STL/CLR kitaplık başvurusu](../dotnet/stl-clr-library-reference.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[STL/CLR Kitaplık Başvurusu](../dotnet/stl-clr-library-reference.md)

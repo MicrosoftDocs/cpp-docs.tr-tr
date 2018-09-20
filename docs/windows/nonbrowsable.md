@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d7a888ac987e8928a0e9667f2011ef7afe3075ca
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e8527f2d35de6591bf49f0fd32cc0df64a059e02
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209059"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371946"
 ---
 # <a name="nonbrowsable"></a>nonbrowsable
 
@@ -69,5 +69,5 @@ __interface IMyI
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
 [Yöntem Öznitelikleri](../windows/method-attributes.md)  

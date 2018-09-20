@@ -1,5 +1,5 @@
 ---
-title: Barındırma bir Windows Forms kullanıcı denetimi MFC görünümü olarak | Microsoft Docs
+title: Forms kullanıcı denetimi MFC görünümü olarak bir Windows barındırma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,29 +17,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: bf9e54b3e2808a232bc13052c885a341cb51297f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b80b3a9d206ef48df1219d60afdc344874d3bab4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33137633"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374522"
 ---
 # <a name="hosting-a-windows-forms-user-control-as-an-mfc-view"></a>MFC Görünümü Olarak Windows Forms Kullanıcı Denetimi Barındırma
-MFC MFC görünümü olarak Windows Forms kullanıcı denetimi barındırma CWinFormsView sınıfını kullanır. MFC Windows Forms ActiveX denetimlerini görünümlerdir. Kullanıcı denetimi doğal görünümün alt sitesi olarak barındırılan ve yerel görünümün tüm istemci alanı kaplar.  
-  
- Tarafından kullanılan model sonuç benzer [Cformview'yu sınıfı](../mfc/reference/cformview-class.md). Bu, Windows Form Tasarımcısı ve çalışma zamanı zengin form tabanlı görünümler oluşturmak için yararlanmanızı sağlar.  
-  
- MFC Windows Forms görünümleri ActiveX denetimleri olduğundan, aynı olmadığı `hwnd` MFC görünümleri olarak. Ayrıca, bir işaretçi olarak geçirilemez bir [CView](../mfc/reference/cview-class.md) görünümü. Genel olarak, daha az Win32 kullanır ve Windows Forms görünümlerle çalışma için .NET Framework yöntemlerini kullanın.  
-  
- MFC'de Windows Forms gösteren örnek bir uygulama için bkz: [MFC ve Windows Forms tümleştirme](http://www.microsoft.com/downloads/details.aspx?FamilyID=987021bc-e575-4fe3-baa9-15aa50b0f599&displaylang=en).  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: Kullanıcı Denetim ve Konak MDI Görünümü Oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md)  
-  
- [Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme](../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)  
-  
- [Nasıl yapılır: Windows Forms Denetiminin Çağrı Özellikleri ve Yöntemleri](../dotnet/how-to-call-properties-and-methods-of-the-windows-forms-control.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC içinde Windows formu kullanıcı denetimi kullanma](../dotnet/using-a-windows-form-user-control-in-mfc.md)   
- [Nasıl yapılır: Bileşik Denetimler Yazma](/dotnet/framework/winforms/controls/how-to-author-composite-controls)
+
+MFC CWinFormsView sınıfı MFC görünümü olarak bir Windows Forms kullanıcı denetimini barındırmak için kullanır. MFC Windows Forms ActiveX denetimlerini görünümleridir. Kullanıcı denetimi yerel görünümün alt sitesi olarak barındırılan ve yerel görünümün tüm istemci alanını kaplar.
+
+Sonuç modeli tarafından kullanılan benzer [CFormView sınıfı](../mfc/reference/cformview-class.md). Bu Windows Form Tasarımcısı ve çalışma zamanı form tabanlı zengin görünümler oluşturmak için avantajlarından yararlanmanıza imkan sağlar.
+
+MFC Windows formlar görünümlerini ActiveX denetimlerini olduğundan, aynı olmadığı `hwnd` MFC görünüm olarak. Ayrıca bunlar için bir işaretçi olarak geçirilemez bir [CView](../mfc/reference/cview-class.md) görünümü. Genel olarak, daha az Win32 kullanır ve Windows Forms görünümlerle çalışma için .NET Framework yöntemlerini kullanın.
+
+MFC'de Windows formlarını gösteren örnek bir uygulama için bkz. [MFC ve Windows Forms tümleştirme](http://www.microsoft.com/downloads/details.aspx?FamilyID=987021bc-e575-4fe3-baa9-15aa50b0f599&displaylang=en).
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[Nasıl yapılır: Kullanıcı Denetim ve Konak MDI Görünümü Oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md)
+
+[Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme](../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)
+
+[Nasıl yapılır: Windows Forms Denetiminin Çağrı Özellikleri ve Yöntemleri](../dotnet/how-to-call-properties-and-methods-of-the-windows-forms-control.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC içinde Windows Formu Kullanıcı Denetimi Kullanma](../dotnet/using-a-windows-form-user-control-in-mfc.md)<br/>
+[Nasıl yapılır: Bileşik Denetimler Yazma](/dotnet/framework/winforms/controls/how-to-author-composite-controls)

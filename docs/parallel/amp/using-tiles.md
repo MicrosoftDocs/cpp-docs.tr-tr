@@ -12,34 +12,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c02b5d558ccf2c1353e96dd1990b6d4178457aa
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: df2f449cce01dc2d0903ff802ffb94914b68bceb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37121955"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46386274"
 ---
 # <a name="using-tiles"></a>Döşemeleri Kullanma
 
-Döşeme uygulamanızı ivmesini en üst düzeye çıkarmak için kullanabilirsiniz. Döşeme böler iş parçacığı eşit dikdörtgen alt kümeler veya *kutucukları*. Uygun döşeme boyutunu ve döşeli algoritması kullanırsanız, C++ AMP kodunuzdan daha da fazla hızlandırma alabilirsiniz. Döşeme temel bileşeni vardır:
+Döşeme hızlandırma uygulamanızın en üst düzeye çıkarmak için kullanabilirsiniz. Döşeme iş parçacıklarını eşit dikdörtgen altkümelere, böler veya *kutucukları*. Bir uygun döşeme boyutu ve döşemeli algoritma kullanırsanız, C++ AMP kodunuzdan daha fazla hızlandırma alabilirsiniz. Döşeme temel bileşenleri şunlardır:
 
-- `tile_static` değişkenleri. Döşeme birincil avantajı gelen performans kazancı var mı `tile_static` erişim. Veri erişimi `tile_static` bellek genel alan veri erişimi önemli ölçüde daha hızlı olabilir (`array` veya `array_view` nesneleri). Örneği bir `tile_static` değişken her bölme için oluşturulur ve tüm iş parçacıklarının döşemesinin değişkeni erişimi. Veri kopyalanır tipik döşeli algoritmada `tile_static` genel bellek kez bellekten ve birçok kez sonra erişilen `tile_static` bellek.
+- `tile_static` değişkenler. Birincil döşeme performans kazancı avantajdır `tile_static` erişim. Veri erişimi `tile_static` bellek erişim genel alandaki verilere kıyasla önemli ölçüde daha hızlı olabilir (`array` veya `array_view` nesneleri). Örneği bir `tile_static` değişken her döşeme için oluşturulur ve döşemedeki tüm iş parçacıkları değişkene erişimi vardır. Tipik bir döşemeli algoritmada veri yoluna kopyalanır `tile_static` genel bellek kez bellekten ve birden çok kez ardından erişilen `tile_static` bellek.
 
-- [tile_barrier::wait yöntemi](reference/tile-barrier-class.md#wait). Çağrı `tile_barrier::wait` tüm iş parçacıklarının aynı döşemesinin çağrısı ulaşana kadar geçerli iş parçacığının durduran `tile_barrier::wait`. İş parçacığı çalıştıracak, yalnızca o iş parçacığı döşemesinin çağrısı geçmiş yürütecek sırayı garanti edemez `tile_barrier::wait` kadar tüm iş parçacıklarının çağrı üst sınırına ulaştınız. Kullanarak buna `tile_barrier::wait` yöntemi, bir iş parçacığı tarafından iş parçacığı başına yerine döşemesi tarafından döşeme temel görevleri gerçekleştirebilir. Başlatmak için kod tipik döşeme algoritmasına sahip `tile_static` bir çağrı tarafından izlenen tüm döşeme için bellek `tile_barrer::wait`. Aşağıdaki kod `tile_barrier::wait` erişmesi gereken tüm hesaplamalar içeriyor `tile_static` değerleri.
+- [tile_barrier::wait yöntemi](reference/tile-barrier-class.md#wait). Bir çağrı `tile_barrier::wait` tüm aynı döşemedeki iş parçacıkları çağrısına erişene kadar geçerli iş parçacığının yürütülmesini askıya `tile_barrier::wait`. İş parçacıklarının çalışacağı, yalnızca o iş parçacığı döşemesindeki çağrısı geçmiş yürütecek sırayı belirleyemezsiniz `tile_barrier::wait` tüm iş parçacıklarının çağrısına erişene kadar. Kullanarak yani `tile_barrier::wait` yöntemi, bir iş parçacığı tarafından iş parçacığı başına yerine bir kutucuk olarak kutucuk temel görevleri gerçekleştirebilirsiniz. Tipik bir döşeme algoritması başlatacak koda sahip `tile_static` bir çağrı tarafından izlenen tüm döşeme için bellek `tile_barrer::wait`. Aşağıdaki kod `tile_barrier::wait` tüm erişim gerektiren hesaplamalar içerir `tile_static` değerleri.
 
-- Yerel ve genel dizin oluşturma. Tüm göreli iş parçacığı dizini erişimi `array_view` veya `array` nesneyi ve dizin döşemeye göre. Yerel dizin kullanarak kodunuzu daha kolay okumak ve hata ayıklama yapabilirsiniz. Genellikle, yerel erişimi dizini oluşturmayı `tile_static` değişkenleri ve genel erişim için dizin oluşturma `array` ve `array_view` değişkenleri.
+- Yerel ve genel dizin oluşturma. Dizini iş parçacığının tüm göre erişimi `array_view` veya `array` nesne ve döşemeye göreceli dizinine. Yerel dizin kullanmak kodunuzu ve hata ayıklaması daha kolay hale getirebilir. Genellikle, yerel erişim için dizin oluşturma kullanın `tile_static` değişkenleri ve küresel erişim dizin `array` ve `array_view` değişkenleri.
 
-- [tiled_extent sınıfı](../../parallel/amp/reference/tiled-extent-class.md) ve [tiled_index sınıfı](../../parallel/amp/reference/tiled-index-class.md). Kullandığınız bir `tiled_extent` yerine Nesne bir `extent` nesnesinde `parallel_for_each` çağırın. Kullandığınız bir `tiled_index` yerine Nesne bir `index` nesnesinde `parallel_for_each` çağırın.
+- [tiled_extent sınıfı](../../parallel/amp/reference/tiled-extent-class.md) ve [tiled_index sınıfı](../../parallel/amp/reference/tiled-index-class.md). Kullandığınız bir `tiled_extent` yerine Nesne bir `extent` nesnesine `parallel_for_each` çağırın. Kullandığınız bir `tiled_index` yerine Nesne bir `index` nesnesine `parallel_for_each` çağırın.
 
-Döşeme yararlanmak için algoritma gerekir bilgi işlem etki döşemesine bölümlemek ve ardından kutucuğu verilerini kopyalamak `tile_static` daha hızlı erişim için değişkenleri.
+Döşemeden yararlanmak için algoritmanız gerekir hesaplama alanı döşemesine bölümlemek ve ardından döşeme verilerini kopyalamak `tile_static` değişkenleri daha hızlı erişim için.
 
-## <a name="example-of-global-tile-and-local-indices"></a>Örnek genel olarak, bölme ve yerel dizinlerini
+## <a name="example-of-global-tile-and-local-indices"></a>Örnek genel, döşeme ve yerel dizinlerini
 
-Aşağıdaki diyagramda bir 8 x 9 matris 2 x 3 döşemeleri düzenlenmiş verilerin temsil eder.
+Aşağıdaki diyagram 2 x 3 döşemeler şeklinde düzenlenmiş veri bir 8 x 9 matrisi temsil eder.
 
-![8&#45;tarafından&#45;9 matris bölünmüş 2&#45;tarafından&#45;3 döşeme](../../parallel/amp/media/usingtilesmatrix.png "usingtilesmatrix")
+![8&#45;tarafından&#45;9 matrisi bölünmüş 2&#45;tarafından&#45;3 döşemeler](../../parallel/amp/media/usingtilesmatrix.png "usingtilesmatrix")
 
-Aşağıdaki örnek genel kutucuğu görüntüler ve bu yerel dizinlerini matris döşenir. Bir `array_view` nesne türündeki öğeler kullanarak oluşturulur `Description`. `Description` Tutan genel kutucuğu ve yerel dizinlerini Matristeki öğesinin. Kod çağrısında `parallel_for_each` Global değerleri, döşeme ve her öğenin yerel dizinlerini ayarlar. Çıktıyı değerleri görüntüler `Description` yapıları.
+Aşağıdaki örnek, genel, döşeme görüntüler ve döşemeli matrisin yerel dizinlerini gösterir. Bir `array_view` nesnesi türü öğeler kullanarak oluşturulur `Description`. `Description` Tutan genel, döşeme ve yerel dizinlerini Matristeki öğenin. Kod çağrısında `parallel_for_each` genel, döşeme ve yerel dizinlerini her öğenin ayarlar. Çıkış değerleri gösterir `Description` yapıları.
 
 ```cpp
 #include <iostream>
@@ -73,11 +73,11 @@ void SetConsoleColor(int color) {
 // A helper function for formatting the output.
 void SetConsoleSize(int height, int width) {
     COORD coord;
-    
+
     coord.X = width;
     coord.Y = height;
     SetConsoleScreenBufferSize(GetStdHandle(STD_OUTPUT_HANDLE), coord);
-    
+
     SMALL_RECT* rect = new SMALL_RECT();
     rect->Left = 0;
     rect->Top = 0;
@@ -153,33 +153,33 @@ void main() {
 
 Örneğin ana iş tanımı içinde bulunan `array_view` nesne ve çağrısı `parallel_for_each`.
 
-1. Vektörü `Description` yapıları bir 8 x 9'a kopyaladığınız `array_view` nesnesi.
+1. Vektör `Description` yapıları bir 8x9luk kopyalanır `array_view` nesne.
 
-2. `parallel_for_each` İle yöntemi çağrıldığında bir `tiled_extent` nesnesi işlem etki alanı olarak. `tiled_extent` Nesne çağırarak oluşturulur `extent::tile()` yöntemi `descriptions` değişkeni. Tür parametreleri çağırma `extent::tile()`, `<2,3>`, 2 x 3 döşeme oluşturduğunu belirtin. Bu nedenle, 8 x 9 matris 12 döşeme, dört satır ve üç sütun döşenir.
+2. `parallel_for_each` Yöntemi çağrıldığında bir `tiled_extent` hesaplama alanı olarak nesnesi. `tiled_extent` Nesne çağırılarak oluşturulur `extent::tile()` yöntemi `descriptions` değişkeni. Çağrısının tür parametreleri `extent::tile()`, `<2,3>`, 2x3lük döşemelerin oluşturulduğunu belirtir. Bu nedenle, 8 x 9 matrisi 12 kutucuklar, dört satır ve üç sütun döşenir.
 
-3. `parallel_for_each` Kullanarak yöntemi çağrıldığında bir `tiled_index<2,3>` nesne (`t_idx`) dizin olarak. Dizin tür parametreleri (`t_idx`) bilgi işlem etki tür parametrelerini eşleşmesi gerekir (`descriptions.extent.tile< 2, 3>()`).
+3. `parallel_for_each` Yöntemi kullanılarak çağrılır bir `tiled_index<2,3>` nesne (`t_idx`) dizin olarak. Dizin tür parametreleri (`t_idx`) tür parametreleri hesaplama alanı eşleşmelidir (`descriptions.extent.tile< 2, 3>()`).
 
-4. Her iş parçacığı yürütüldüğünde, dizin `t_idx` hangi döşeme hakkında iş parçacığıdır içinde bilgi verir (`tiled_index::tile` özelliği) ve iş parçacığı döşeme içinde konumunu (`tiled_index::local` özelliği).
+4. Her iş parçacığı yürütüldüğünde, dizin `t_idx` iş parçacığının hangi döşeme hakkında konusu bilgilerini döndürür (`tiled_index::tile` özelliği) ve iş parçacığının döşeme içindeki konumu (`tiled_index::local` özelliği).
 
 ## <a name="tile-synchronizationtilestatic-and-tilebarrierwait"></a>Döşeme eşitleme — tile_static ve tile_barrier::wait
 
-Önceki örnekte taş düzeni ve dizinlerini gösterir, ancak çok kullanışlı kendisini değil.  Döşeme algoritması ve yararlanma tam sayı olduğunda döşeme kullanışlı hale `tile_static` değişkenleri. Tüm iş parçacıklarının kutucuktaki erişiminiz olduğundan `tile_static` değişkenleri, çağrıları `tile_barrier::wait` erişimi eşitlemek için kullanılan `tile_static` değişkenleri. Tüm iş parçacıklarının kutucuktaki erişimi rağmen `tile_static` değişkenleri, hiçbir garanti edilen iş parçacığı döşemesinin yürütme sırasını yoktur. Aşağıdaki örnekte nasıl kullanılacağını gösterir `tile_static` değişkenleri ve `tile_barrier::wait` her bölme ortalama değerini hesaplamak için yöntem. Örnek anlama anahtarları şunlardır:
+Önceki örnek döşeme yerleşimini ve dizinleri göstermektedir, ancak kendisi çok yararlı değildir.  Kutucukları yararlanma ve algoritma integral olduğunda döşeme yararlı olur `tile_static` değişkenleri. Döşemedeki tüm iş parçacıklarının erişiminiz olduğundan `tile_static` değişkenleri, çağrıları `tile_barrier::wait` erişimi eşitlemek için kullanılan `tile_static` değişkenleri. Tüm iş parçacıklarının bir döşeme içindeki erişimi olsa `tile_static` değişkenleri yürütülme sırası belirli döşeme içindeki iş parçacıklarının yürütülmesini yoktur. Aşağıdaki örnek nasıl kullanılacağını gösterir `tile_static` değişkenleri ve `tile_barrier::wait` her döşemenin ortalama değerini hesaplamak için yöntemi. Örneği anlamak için anahtarlar şunlardır:
 
-1. RawData 8 x 8 matrisinde depolanır.
+1. RawData 8x8lik bir matriste depolanır.
 
-2. Döşeme boyutunu 2 x 2'dir. Bu kutucuk 4 x 4 kılavuzunun oluşturur ve ortalamalar kullanarak 4 x 4 bir matris depolanabilir bir `array` nesnesi. Yalnızca sınırlı sayıda AMP kısıtlanmış bir işlevde başvuruya yakalayabilirsiniz türleri vardır. `array` Sınıftır biri.
+2. Döşeme boyutu 2 x 2'dir. Bu 4 x 4 karelerde döşemeler oluşturur ve ortalamalar bir 4 x 4 matriste kullanılarak depolanabilir bir `array` nesne. AMP kısıtlamalı işlevde başvuruya göre yakalama türleri yalnızca sınırlı sayıda vardır. `array` Sınıfı bunlardan biridir.
 
-3. Matris boyutu ve örnek boyutu kullanarak tanımlanan `#define` deyimleri, çünkü tür parametreleri `array`, `array_view`, `extent`, ve `tiled_index` sabit değerleri olmalıdır. Aynı zamanda `const int static` bildirimleri. Ek bir avantaj olarak ortalama üzerinde 4 x 4 döşeme hesaplamak için örnek boyutunu değiştirmek için kısmı oldukça kolaydır.
+3. Matris boyu ve örnek boyu kullanarak tanımlanan `#define` deyimleri, çünkü tür parametreleri `array`, `array_view`, `extent`, ve `tiled_index` sabit değerler olmalıdır. Ayrıca `const int static` bildirimleri. Ek bir avantaj olarak basit bir iş ortalama 4 x 4 kutucukları hesaplamak için örnek boyutunu değiştirin.
 
-4. A `tile_static` 2 x 2 float değerleri dizisi her bölme için bildirildi. Her iş parçacığı için kod yolunda bildirimi olmasına rağmen yalnızca bir dizi Matristeki her bölme için oluşturulur.
+4. A `tile_static` 2 x 2 float değeri dizisi her bölme için bildirilir. Bildirim her iş parçacığının kod yolunda olsa da, Matristeki her döşeme için yalnızca bir dizi oluşturulur.
 
-5. Kod her bölme için değerleri kopyalamak için bir satır vardır `tile_static` dizi. Her iş parçacığı için iş parçacığı üzerinde yürütme değer dizisine kopyalandıktan sonra çağrısı nedeniyle durdurur. `tile_barrier::wait`.
+5. Her döşemedeki değerleri kopyalamak için kod satırı yoktur `tile_static` dizisi. Her iş parçacığı için iş parçacığı üzerindeki yürütme değer diziye kopyalandıktan sonra çağrısı nedeniyle durdurulur. `tile_barrier::wait`.
 
-6. Tüm iş parçacıklarının kutucuktaki engel ulaştığınızda, ortalama hesaplanabilir. Her iş parçacığı için kodu yürütür olduğundan, bir `if` yalnızca bir iş parçacığında ortalamayı hesaplamak için deyimi. Ortalama ortalamalar değişkende depolanır. Kullanabileceğinize kadar engel döşemesi tarafından hesaplamalar denetleyen temelde yapıdır bir `for` döngü.
+6. Tüm iş parçacıklarının bir döşeme içindeki engele eriştiğinde, ortalama hesaplanabilir. Kod her iş parçacığı için yürütüldüğünden, var olan bir `if` yalnızca bir iş parçacığında ortalamayı hesaplamak için ifade. Ortalama averages değişkeninde depolanır. Kullanabileceğinize kadar engel hesaplamaları kutucuğa göre denetleyen temelde yapıdır bir `for` döngü.
 
-7. Verileri `averages` değişken, çünkü bir `array` nesne, ana bilgisayara kopyalanmalıdır. Bu örnek vektör dönüşüm işleci kullanır.
+7. Verileri `averages` değişken, çünkü bu bir `array` nesne, ana bilgisayara kopyalanması gerekir. Bu örnek vektör dönüştürme işleci kullanır.
 
-8. Tam örnek kodu doğru hiçbir bir değişiklik yapmadan yürütür ve 4'e SAMPLESIZE değiştirebilirsiniz.
+8. Tam bir örnek samplesıze'ı 4'e değiştirebilirsiniz ve kod başka bir değişiklik olmadan doğru bir şekilde yürütür.
 
 ```cpp
 #include <iostream>
@@ -262,7 +262,7 @@ int main() {
 
 ## <a name="race-conditions"></a>Yarış durumları
 
-Oluşturmak için tempting olabilir bir `tile_static` adlı değişken `total` ve bu gibi her iş parçacığı için bu değişkeni Artır:
+Oluşturma daha cazip olabilir bir `tile_static` adlı değişken `total` ve böyle her iş parçacığında o değişkeni Artır:
 
 ```cpp
 // Do not do this.
@@ -273,7 +273,7 @@ t_idx.barrier.wait();
 averages(t_idx.tile[0],t_idx.tile[1]) /= (float) (SAMPLESIZE* SAMPLESIZE);
 ```
 
-Bu yaklaşım ilk sorun olan `tile_static` değişkenleri başlatıcıları sahip olamaz. İkinci sorun bir yarış durumu atamayı üzerinde olmasıdır `total`, tüm iş parçacıklarının döşemesinin değişkeni belirli bir sırada erişiminiz olduğundan. Her engel adresindeki toplam erişmek tek bir iş parçacığı sonraki gösterildiği gibi yalnızca izin vermek için bir algoritma program. Ancak, bu çözüm Genişletilebilir değil.
+Bu yaklaşımdaki ilk sorun `tile_static` değişkenlerinin başlatıcıları olamamasıdır. İkinci sorun olduğunu bir yarış durumu atamasında olan `total`, tüm iş parçacıklarının kutucuğunda belirli bir sırada değişkene erişimi vardır. Her engelde, erişmek tek bir iş parçacığı sonraki gösterildiği gibi yalnızca izin vermek için bir algoritma programlayabilirsiniz. Ancak, bu çözüm Genişletilebilir değildir.
 
 ```cpp
 // Do not do this.
@@ -291,27 +291,27 @@ t_idx.barrier.wait();
 // etc.
 ```
 
-## <a name="memory-fences"></a>Bellek dilimleri
+## <a name="memory-fences"></a>Bellek sınırları
 
-Eşitlenmesi gereken bellek erişimleri iki tür vardır: genel bellek erişimi ve `tile_static` bellek erişimi. A `concurrency::array` nesne yalnızca genel bellek ayırır. A `concurrency::array_view` genel bellek başvurabilir `tile_static` bellek ya da her ikisini nasıl oluşturulan bağlı olarak.  Eşitlenmesi gereken bellek iki tür vardır:
+Eşitlenmesi gereken bellek erişimlerinin iki çeşit vardır — genel bellek erişimi ve `tile_static` bellek erişimi. A `concurrency::array` nesnesi yalnızca genel bellek ayırır. A `concurrency::array_view` genel bellek başvurabilirsiniz `tile_static` bellek veya her ikisini de oluşturuluşuna bağlı olarak.  Bellek eşitlenmesi gereken iki çeşit vardır:
 
 - Genel bellek
 
 - `tile_static`
 
-A *bellek sınırı* erişir, iş parçacığı döşemesinin başka bir iş parçacığı kullanılabilir belleğin ve erişimleri program sırasına göre çalıştırılır belleğin sağlar. Bu emin olmak için derleyicileri ve işlemci okuma ve yazma işlemleri arasında dilimi yeniden değil. C++ AMP içinde bellek sınırı bu yöntemlerden biri için bir çağrı tarafından oluşturulur:
+A *bellek sınırı* bu bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları kullanımına sunulur ve bu bellek erişimlerinin program sırasına göre yürütülmesini sağlar. Bunu sağlamak için derleyiciler ve işlemciler okuma ve yazmaları yeniden sıralamaz değil. C++ AMP'ta bir bellek sınırı aşağıdaki yöntemlerden birini yapılan bir çağrıyla oluşturulur:
 
-- [tile_barrier::wait yöntemi](reference/tile-barrier-class.md#wait): her ikisi de geçici bir dilimi genel oluşturur ve `tile_static` bellek.
+- [tile_barrier::wait yöntemi](reference/tile-barrier-class.md#wait): her ikisi de etrafında bir sınır genel oluşturur ve `tile_static` bellek.
 
-- [tile_barrier::wait_with_all_memory_fence yöntemi](reference/tile-barrier-class.md#wait_with_all_memory_fence): her ikisi de geçici bir dilimi genel oluşturur ve `tile_static` bellek.
+- [tile_barrier::wait_with_all_memory_fence yöntemi](reference/tile-barrier-class.md#wait_with_all_memory_fence): her ikisi de etrafında bir sınır genel oluşturur ve `tile_static` bellek.
 
-- [tile_barrier::wait_with_global_memory_fence yöntemi](reference/tile-barrier-class.md#wait_with_global_memory_fence): yalnızca genel bellek geçici bir sınırı oluşturur.
+- [tile_barrier::wait_with_global_memory_fence yöntemi](reference/tile-barrier-class.md#wait_with_global_memory_fence): yalnızca genel bellek etrafında bir sınır oluşturur.
 
-- [tile_barrier::wait_with_tile_static_memory_fence yöntemi](reference/tile-barrier-class.md#wait_with_tile_static_memory_fence): yalnızca geçici bir sınırı oluşturur `tile_static` bellek.
+- [tile_barrier::wait_with_tile_static_memory_fence yöntemi](reference/tile-barrier-class.md#wait_with_tile_static_memory_fence): yalnızca etrafında bir sınır oluşturur `tile_static` bellek.
 
-Uygulamanızın performansını artırabilir gerektiren belirli dilimi çağrılıyor. Engeli türü, derleyici ve donanım deyimleri nasıl yeniden etkiler. Örneğin, bir genel bellek sınırı kullanırsanız, yalnızca genel bellek erişimleri uygulanır ve bu nedenle, derleyici ve donanım yeniden okuyan ve yazan `tile_static` dilimi iki tarafında değişkenleri.
+Uygulamanızın performansını artırmak ihtiyacınız olan belirli sınırı çağırmak. Engel türü derleyicinin ve donanımın deyimleri nasıl yeniden etkiler. Örneğin, bir genel bellek sınırı kullanırsanız, yalnızca genel bellek erişimine uygulanır ve bu nedenle, derleyici ve donanım yeniden sıralayabilir okuyan ve yazan `tile_static` sınır iki tarafındaki değişkenleri.
 
-Sonraki örnekte engel yazmaları eşitler `tileValues`, `tile_static` değişkeni. Bu örnekte, `tile_barrier::wait_with_tile_static_memory_fence` yerine adlı `tile_barrier::wait`.
+Sonraki örnekte, engel için yazmaları eşitler `tileValues`, `tile_static` değişkeni. Bu örnekte, `tile_barrier::wait_with_tile_static_memory_fence` yerine adlı `tile_barrier::wait`.
 
 ```cpp
 // Using a tile_static memory fence.
@@ -341,5 +341,5 @@ parallel_for_each(matrix.extent.tile<SAMPLESIZE, SAMPLESIZE>(),
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)  
-[tile_static Anahtar Sözcüğü](../../cpp/tile-static-keyword.md)  
+[C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
+[tile_static Anahtar Sözcüğü](../../cpp/tile-static-keyword.md)

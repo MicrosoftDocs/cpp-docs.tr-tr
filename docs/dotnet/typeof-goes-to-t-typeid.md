@@ -17,32 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0ae9f772a68735555748e6edbeb6196f1a73d2c9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4433061fceef455685b6588c81c8c2e434253433
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33164524"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374687"
 ---
 # <a name="typeof-goes-to-ttypeid"></a>typeof T::typeid'e gider
-`typeof` C++ almıştır için Yönetilen Uzantılar'da kullanılan işleç `typeid` Visual C++'ta anahtar sözcüğü.  
-  
- Yönetilen Uzantılar `__typeof()` işleci döndürür ilişkili `Type*` nesne bir yönetilen türü adı geçirildiğinde. Örneğin:  
-  
-```  
-// Creates and initializes a new Array instance.  
-Array* myIntArray =   
-   Array::CreateInstance( __typeof(Int32), 5 );  
-```  
-  
- Yeni sözdiziminde `__typeof` ek bir form tarafından değiştirildiğini `typeid` döndüren bir `Type^` yönetilen tür belirtildiğinde.  
-  
-```  
-// Creates and initializes a new Array instance.  
-Array^ myIntArray =   
-   Array::CreateInstance( Int32::typeid, 5 );  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel dil değişiklikleri (C + +/ CLI)](../dotnet/general-language-changes-cpp-cli.md)   
- [TypeId](../windows/typeid-cpp-component-extensions.md)
+
+`typeof` C++ almıştır için Yönetilen Uzantılar'kullanılan işleci `typeid` Visual c++ anahtar sözcüğü.
+
+Yönetilen Uzantılar `__typeof()` işleci ilişkili döndürür `Type*` nesnesi bir yönetilen türün adını geçirildiğinde. Örneğin:
+
+```
+// Creates and initializes a new Array instance.
+Array* myIntArray =
+   Array::CreateInstance( __typeof(Int32), 5 );
+```
+
+Yeni sözdiziminde `__typeof` ek bir tür tarafından değiştirilmiştir `typeid` döndüren bir `Type^` yönetilen türü belirtildiğinde.
+
+```
+// Creates and initializes a new Array instance.
+Array^ myIntArray =
+   Array::CreateInstance( Int32::typeid, 5 );
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Genel Dil Değişiklikleri (C++/CLI)](../dotnet/general-language-changes-cpp-cli.md)<br/>
+[typeid](../windows/typeid-cpp-component-extensions.md)

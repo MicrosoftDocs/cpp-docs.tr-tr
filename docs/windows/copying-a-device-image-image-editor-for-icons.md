@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f1d68b3f35f20d74de95e559a21e7ccca3dc0919
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 84e4a552f235b6ee4af8eed64017ecbb7462f032
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313890"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46376908"
 ---
 # <a name="copying-a-device-image-image-editor-for-icons"></a>Cihaz Görüntüsü Kopyalama (Simgeler İçin Görüntü Düzenleyicisi)
 
@@ -44,5 +44,5 @@ Yok.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Simgeler ve İmleçler: görüntüleme cihazları için görüntü kaynakları](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)  
+[Simgeler ve İmleçler: görüntüleme cihazları için görüntü kaynakları](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)<br/>
 [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)

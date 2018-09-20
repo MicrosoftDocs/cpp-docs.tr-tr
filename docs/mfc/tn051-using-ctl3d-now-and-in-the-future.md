@@ -1,5 +1,5 @@
 ---
-title: 'TN051: Şimdi ve gelecekte CTL3D kullanarak | Microsoft Docs'
+title: 'TN051: Şimdi ve gelecekte Ctl3d kullanımı | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,17 +18,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a19077bcba252d252418b6c3554c6172ed1aaa2c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dfffe63e80160cab1c85ef19de321b361e1c26cb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382278"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388648"
 ---
 # <a name="tn051-using-ctl3d-now-and-in-the-future"></a>TN051: Şimdi ve Gelecekte CTL3D Kullanımı
-Daha önce ele alınan CTL3D ve MFC, bu Teknik Not artık kullanılmıyor. 3B efekti denetimleri için MFC tarafından otomatik olarak uygulanır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+
+Daha önce ele alınan CTL3D ve MFC, bu Teknik Not artık kullanımdan kalkmıştır. 3B efekti denetimleri için MFC tarafından otomatik olarak uygulanır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

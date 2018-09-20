@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 91cf005e3dc1d088a5c7d0e664f67610fac28843
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9d6cdab8d93394f4c51a4b99622d2f6f8604a87e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606255"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46414701"
 ---
 # <a name="asyncbasefireprogress-method"></a>AsyncBase::FireProgress Yöntemi
 
@@ -38,7 +38,7 @@ void FireProgress(
 
 ### <a name="parameters"></a>Parametreler
 
-*bağımsız değişken*  
+*bağımsız değişken*<br/>
 Çağrılacak olay işleyicisi yöntemi.
 
 ## <a name="remarks"></a>Açıklamalar

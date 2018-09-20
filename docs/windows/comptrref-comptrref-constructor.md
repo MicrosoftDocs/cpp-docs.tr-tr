@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 606f9560f6d490e1d50d94dd12103713781c4f1b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 98de9ff79016ebc4ce231b92f5e93ed48e551ada
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603766"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46445054"
 ---
 # <a name="comptrrefcomptrref-constructor"></a>ComPtrRef::ComPtrRef Oluşturucusu
 
@@ -38,7 +38,7 @@ ComPtrRef(
 
 ### <a name="parameters"></a>Parametreler
 
-*ptr*  
+*ptr*<br/>
 Temeldeki değeri başka bir **ComPtrRef** nesne.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -53,5 +53,5 @@ Yeni bir örneğini başlatır **ComPtrRef** belirtilen işaretçisinden sınıf
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ComPtrRef Sınıfı](../windows/comptrref-class.md)  
+[ComPtrRef Sınıfı](../windows/comptrref-class.md)<br/>
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

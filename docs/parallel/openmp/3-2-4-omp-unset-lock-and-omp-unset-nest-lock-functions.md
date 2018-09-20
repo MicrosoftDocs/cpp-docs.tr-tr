@@ -12,24 +12,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f480a75efff737356c1477593e182537ae73a8c8
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 426ac0a5ff974e486f70eed2965fdc27d5acc941
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33690227"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419119"
 ---
 # <a name="324-ompunsetlock-and-ompunsetnestlock-functions"></a>3.2.4 omp_unset_lock ve omp_unset_nest_lock İşlevleri
-Bu işlevlerin bir kilit sahipliğini yayınlama yöntemdir. Biçimi aşağıdaki gibidir:  
-  
-```  
-#include <omp.h>  
-void omp_unset_lock(omp_lock_t *lock);  
-void omp_unset_nest_lock(omp_nest_lock_t *lock);  
-```  
-  
- Bu işlevlerin her biri bağımsız değişkeni işlevi yürütme iş parçacığı tarafından sahip olunan bir başlatılmış kilit değişkeni işaret etmelidir. İş parçacığı, kilit sahibi değil ise tanımlanmamış bir davranıştır.  
-  
- Basit bir kilitleme `omp_unset_lock` işlevi işlevi kilidi sahipliğini yürütme iş parçacığı serbest bırakır.  
-  
- Nestable kilitleme `omp_unset_nest_lock` azaltır iç içe geçmiş sayısı ve sürümler sonuç sayısı sıfırsa işlevi kilidi sahipliğini yürütme iş parçacığı işlev.
+
+Bu işlevler bir kilidin sahipliğini serbest bir yöntem sağlar. Biçimi aşağıdaki gibidir:
+
+```
+#include <omp.h>
+void omp_unset_lock(omp_lock_t *lock);
+void omp_unset_nest_lock(omp_nest_lock_t *lock);
+```
+
+Bu işlevlerin her biri bağımsız değişken, işlev yürütme iş parçacığı tarafından sahip olunan bir başlatılmış kilit değişkenine işaret etmelidir. İş parçacığı, kilit sahip değilse, davranış tanımlanmamıştır.
+
+Basit bir kilitleme `omp_unset_lock` işlevi kilidi sahipliğini işlev yürütme iş parçacığını serbest bırakır.
+
+Bir nestable kilit için `omp_unset_nest_lock` işlev iç içe geçme sayısı ve yayınlar sonuç sayısı sıfır ise, işlev kilidi sahipliğini yürüten iş parçacığının azaltır.

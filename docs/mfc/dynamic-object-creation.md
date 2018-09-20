@@ -17,22 +17,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5763e3f0f3ee5a0e58ac20fe9f637e4f7e097999
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 19f6a895eb48b3ae1816edc45747c865e7e03b96
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346652"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420159"
 ---
 # <a name="dynamic-object-creation"></a>Dinamik Nesne Oluşturma
-Bu makalede, bir nesne çalışma zamanında dinamik olarak oluşturmak açıklanmaktadır. Yordam çalışma zamanı sınıf bilgileri makalesinde açıklandığı gibi kullanır [çalışma zamanı sınıf bilgilerine erişme](../mfc/accessing-run-time-class-information.md).  
-  
-#### <a name="to-dynamically-create-an-object-given-its-run-time-class"></a>Dinamik olarak, çalışma zamanı sınıf verildiğinde nesne oluşturmak için  
-  
-1.  Dinamik olarak kullanarak bir nesne oluşturmak için aşağıdaki kodu kullanın `CreateObject` işlevinin `CRuntimeClass`. Hatada, unutmayın `CreateObject` döndürür **NULL** yerine bir özel durum oluşturma:  
-  
-     [!code-cpp[NVC_MFCCObjectSample#6](../mfc/codesnippet/cpp/dynamic-object-creation_1.cpp)]  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CObject Kullanma](../mfc/using-cobject.md)
+
+Bu makalede, nesne çalışma zamanında dinamik olarak oluşturmak açıklanmaktadır. Yordam çalışma zamanı sınıf bilgileri makalesinde açıklandığı gibi kullanır [çalışma süresi sınıf bilgilerine erişme](../mfc/accessing-run-time-class-information.md).
+
+#### <a name="to-dynamically-create-an-object-given-its-run-time-class"></a>Dinamik olarak kendi çalışma zamanı sınıfının belirtilen bir nesne oluşturmak için
+
+1. Dinamik olarak kullanarak bir nesne oluşturmak için aşağıdaki kodu kullanın `CreateObject` işlevi `CRuntimeClass`. Hata durumunda unutmayın `CreateObject` döndürür **NULL** yerine bir özel durum oluşturur:
+
+     [!code-cpp[NVC_MFCCObjectSample#6](../mfc/codesnippet/cpp/dynamic-object-creation_1.cpp)]
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CObject Kullanma](../mfc/using-cobject.md)
 

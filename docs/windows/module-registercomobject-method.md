@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: abbe93f5359171c88134ff61759e9edc63db2451
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7cccebf6e1c6004a2416f4fdeb254369f9aa7b72
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610439"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410318"
 ---
 # <a name="moduleregistercomobject-method"></a>Module::RegisterCOMObject Yöntemi
 
@@ -42,19 +42,19 @@ WRL_NOTHROW virtual HRESULT RegisterCOMObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*SunucuAdı*  
+*SunucuAdı*<br/>
 Bir sunucunun tam adı.
 
-*CLSID*  
+*CLSID*<br/>
 CLSID kaydetmek için bir dizi.
 
-*fabrikaları*  
+*fabrikaları*<br/>
 IUnknown arabirimi olan kullanılabilirlik yayımlanan sınıf nesnelerinin dizisi.
 
-*Tanımlama bilgileri*  
+*Tanımlama bilgileri*<br/>
 İşlem tamamlandığında, kayıtlı olan bir sınıfı değerleri için işaretçiler dizisi nesneleri. Bu değerler daha sonra kullanılır kaydını iptal etme.
 
-*Sayısı*  
+*Sayısı*<br/>
 Kaydedilecek CLSID sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -74,4 +74,5 @@ Kayıtlı nesneler için bağlantı türü, geçerli bir birleşimi tarafından 
 **Namespace:** Microsoft::WRL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 [Modül Sınıfı](../windows/module-class.md)

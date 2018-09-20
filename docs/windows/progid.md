@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1c395a79cc9e0399000278af1a19916c2c83bb10
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 337972b9659ae32e2ea40e12d6301cc1f0c9aba7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209472"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408004"
 ---
 # <a name="progid"></a>progid
 
@@ -38,7 +38,7 @@ Bir COM nesnesi için ProgID belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*Adı*  
+*Adı*<br/>
 ProgID temsil eden nesne.
 
 Progid'ler COM/ActiveX nesneleri tanımlamak için kullanılan sınıf tanımlayıcısı (CLSID) kullanıcı tarafından okunabilen bir sürümü var.
@@ -74,7 +74,7 @@ Bu öznitelik ATL kullanan bir proje içinde kullanıldığında, öznitelik dav
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Sınıf Öznitelikleri](../windows/class-attributes.md)  
-[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Sınıf Öznitelikleri](../windows/class-attributes.md)<br/>
+[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
 [ProgID anahtarı](/windows/desktop/com/-progid--key)  

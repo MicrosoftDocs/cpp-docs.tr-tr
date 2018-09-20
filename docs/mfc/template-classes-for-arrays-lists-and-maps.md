@@ -1,5 +1,5 @@
 ---
-title: Şablon sınıfları diziler, listeler ve eşlemeleri | Microsoft Docs
+title: Şablon sınıfları diziler, listeler ve eşler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,36 +20,38 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: feeb1b404a765e1ce24e8401ffd1163a18731780
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 218c5344ad8cdc1e63f3337cd031ac707fa7b5ef
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33380259"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46375542"
 ---
 # <a name="template-classes-for-arrays-lists-and-maps"></a>Diziler, Listeler ve Eşlemeler için Şablon Sınıfları
-Bu koleksiyon sınıfları parametreleri Toplamaların depolanan nesne türlerini belirleme şablonlarıdır. `CArray`, `CMap`, Ve `CList` sınıflar genellikle özelleştirilmelidir genel yardımcı işlevleri kullanın. Bu yardımcı işlevleri hakkında daha fazla bilgi için bkz: [koleksiyon sınıfı Yardımcıları](../mfc/reference/collection-class-helpers.md). Sınıf Kitaplığı'nda diğer sınıflar için sarmalayıcıları yazılan işaretçi sınıflarıdır. Bu sarmalayıcıları kullanarak, derleyicinin tür hataları önlemenize yardımcı olmak için denetim listesine. Bu sınıfları kullanma hakkında daha fazla bilgi için bkz: [koleksiyonları](../mfc/collections.md).  
-  
- Bu sınıfların diziler, listeler ve eşlemeler istediğiniz herhangi bir tür kullanarak oluşturmak için kullanabileceğiniz şablonları sağlar.  
-  
- [CArray](../mfc/reference/carray-class.md)  
- Rastgele türlerin dizileri yapmak için Şablon sınıfı.  
-  
- [CList](../mfc/reference/clist-class.md)  
- Rastgele türler listeleri yapmak için Şablon sınıfı.  
-  
- [cMap](../mfc/reference/cmap-class.md)  
- Maps rastgele anahtar ve değer türleri ile yapmak için Şablon sınıfı.  
-  
- [CTypedPtrArray](../mfc/reference/ctypedptrarray-class.md)  
- Şablon sınıfının tür kullanımı uyumlu diziler için işaretçileri.  
-  
- [CTypedPtrList](../mfc/reference/ctypedptrlist-class.md)  
- İşaretçileri, Şablon sınıfı için tür kullanımı uyumlu listeler.  
-  
- [CTypedPtrMap](../mfc/reference/ctypedptrmap-class.md)  
- Şablon sınıfı için tür kullanımı uyumlu eşlemeleri işaretçilerle.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Bu koleksiyon sınıfları, parametreleri toplamalar depolanan nesnelerin türlerini belirlemek şablonlardır. `CArray`, `CMap`, Ve `CList` sınıfları, genellikle özelleştirilmelidir genel yardımcı işlevleri kullanın. Bu yardımcı işlevler hakkında daha fazla bilgi için bkz. [koleksiyon sınıfı Yardımcıları](../mfc/reference/collection-class-helpers.md). Sınıf Kitaplığı'nda diğer sınıflar için sarmalayıcıları yazılı işaretçi sınıflardır. Bu sarmalayıcılar kullanarak derleyicinin türü hataları önlemek için denetimi kaydettirin. Bu sınıflar kullanma hakkında daha fazla bilgi için bkz. [koleksiyonları](../mfc/collections.md).
+
+Bu sınıflar, diziler, listeler ve eşlemeler istediğiniz herhangi bir türü kullanarak oluşturmak için kullanabileceğiniz şablonları sağlar.
+
+[CArray](../mfc/reference/carray-class.md)<br/>
+Rasgele türden dizileri yapmak için bir şablon sınıfı.
+
+[CList](../mfc/reference/clist-class.md)<br/>
+Rasgele türden listeleri oluşturmaya yönelik bir şablon sınıfı.
+
+[CMap](../mfc/reference/cmap-class.md)<br/>
+Haritalar rasgele bir anahtar ve değer türleri ile yapmak için bir şablon sınıfı.
+
+[CTypedPtrArray](../mfc/reference/ctypedptrarray-class.md)<br/>
+İşaretçileri tür açısından güvenli diziler için bir şablon sınıfı.
+
+[CTypedPtrList](../mfc/reference/ctypedptrlist-class.md)<br/>
+İşaretçileri tür açısından güvenli listeleri için bir şablon sınıfı.
+
+[CTypedPtrMap](../mfc/reference/ctypedptrmap-class.md)<br/>
+İşaretçileri tür açısından güvenli Eşlemleriyle için bir şablon sınıfı.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

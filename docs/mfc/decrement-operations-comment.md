@@ -1,5 +1,5 @@
 ---
-title: --İşlemleri yorum | Microsoft Docs
+title: --İşlem açıklaması | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,25 +16,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ee6bf4a330a5fdf1ac294157e69dab39b5f2bdd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 73c4a7a70c9f2ed987337426793bd462c2a94309
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342277"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46372502"
 ---
 # <a name="-operations-comment"></a>// İşlem Açıklaması
-`// Operations` Bir MFC sınıf bildirimi bölümü şeyler veya (işlemleri gerçekleştirme) işlemleri yapmak için bir nesne üzerinde çağırabilirsiniz üye işlevlerini içerir. Bu işlevler genellikle olmayan**const** genellikle yan etkileri olduğundan. Bunlar, sanal veya sanal olmayan sınıf gereksinimlerine bağlı olarak olabilir. Genellikle, bu ortak üyeleridir.  
-  
- Sınıfından listeleme örnekteki `CStdioFile`, [açıklamalara bir örnek](../mfc/an-example-of-the-comments.md), bu açıklama altında iki üye işlevleri listesi içerir: `ReadString` ve `WriteString`.  
-  
- Özniteliklerle olduğu gibi işlemleri daha fazla alt bölümlere ayrılabilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC kaynak dosyalarını kullanma](../mfc/using-the-mfc-source-files.md)   
- [Açıklamalara bir örnek](../mfc/an-example-of-the-comments.md)   
- [Uygulama açıklaması](../mfc/decrement-implementation-comment.md)   
- [/ / Oluşturucu açıklaması](../mfc/decrement-constructors-comment.md)   
- [Özniteliklerle ilgili açıklama](../mfc/decrement-attributes-comment.md)   
- [Geçersiz kılınabilir açıklama](../mfc/decrement-overridables-comment.md)
+
+`// Operations` Bir MFC sınıfı bildirimi bölümü işlemleri veya eylemleri (işlemleri gerçekleştirme) sağlamak için bir nesnede çağırabilirsiniz üye işlevleri içerir. Bu işlevler genellikle olmayan**const** genellikle sahip oldukları yan etkiler. Bunlar, sanal veya sanal olmayan sınıf gereksinimlerine bağlı olarak olabilir. Genellikle, bu üyeler ortaktır.
+
+Sınıf listesi örneği'nde `CStdioFile`, [açıklamalara bir örnek](../mfc/an-example-of-the-comments.md), liste bu açıklamayı altında iki üye işlevleri içerir: `ReadString` ve `WriteString`.
+
+Özniteliklerle yönteminde olduğu gibi işlemler daha fazla alt bölümlere ayrılabilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC Kaynak Dosyalarını Kullanma](../mfc/using-the-mfc-source-files.md)<br/>
+[Açıklamalara Bir Örnek](../mfc/an-example-of-the-comments.md)<br/>
+[Uygulama açıklaması](../mfc/decrement-implementation-comment.md)<br/>
+[/ / Oluşturucu açıklaması](../mfc/decrement-constructors-comment.md)<br/>
+[Özniteliklerle ilgili açıklama](../mfc/decrement-attributes-comment.md)<br/>
+[Geçersiz kılınabilen öğelerle ilgili açıklama](../mfc/decrement-overridables-comment.md)
 

@@ -18,78 +18,82 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03c38c5328500394871bee937cbc05395eb44cd5
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8f8aa8c1fd1a5dad6fd70c566cb59bf8dddc4cc3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715514"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46380145"
 ---
 # <a name="stosq"></a>__stosq
-**Microsoft'a özgü**  
-  
- Bir depolama dize yönergesi oluşturur (`rep stosq`).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void __stosb(   
-   unsigned __int64* Dest,   
-   unsigned __int64 Data,   
-   size_t Count   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+**Microsoft'a özgü**
+
+Bir depolama dize yönergesi oluşturur (`rep stosq`).
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void __stosb( 
+   unsigned __int64* Dest, 
+   unsigned __int64 Data, 
+   size_t Count 
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *Hedef*<br/>
-[out] İşlemin hedefi.  
-  
+[out] İşlemin hedefi.
+
 *Veri*<br/>
-[in] Depolamak için veriler.  
-  
+[in] Depolamak için veriler.
+
 *Sayısı*<br/>
-[in] Yazılacak quadwords bloğunu uzunluğu.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|  
-|---------------|------------------|  
-|`__stosq`|AMD64|  
-  
- **Üst bilgi dosyası** \<intrin.h >  
-  
-## <a name="remarks"></a>Açıklamalar  
- Sonuç quadword olan `Data` bloğu yazılmış `Count` içinde quadwords `Dest` dize.  
-  
- Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// stosq.c  
-// processor: x64  
-#include <stdio.h>  
-#include <intrin.h>  
-  
-#pragma intrinsic(__stosq)  
-  
-int main()  
-{  
-   unsigned __int64 val = 0xFFFFFFFFFFFFI64;  
-   unsigned __int64 a[10];  
-   memset(a, 0, sizeof(a));  
-   __stosq(a+1, val, 2);  
-   printf("%I64x %I64x %I64x %I64x", a[0], a[1], a[2], a[3]);   
-}  
-```  
-  
-## <a name="output"></a>Çıkış  
-  
-```  
-0 ffffffffffff ffffffffffff 0  
-```  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[in] Yazılacak quadwords bloğunu uzunluğu.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|
+|---------------|------------------|
+|`__stosq`|AMD64|
+
+**Üst bilgi dosyası** \<intrin.h >
+
+## <a name="remarks"></a>Açıklamalar
+
+Sonuç quadword olan `Data` bloğu yazılmış `Count` içinde quadwords `Dest` dize.
+
+Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+
+## <a name="example"></a>Örnek
+
+```
+// stosq.c
+// processor: x64
+#include <stdio.h>
+#include <intrin.h>
+
+#pragma intrinsic(__stosq)
+
+int main()
+{
+   unsigned __int64 val = 0xFFFFFFFFFFFFI64;
+   unsigned __int64 a[10];
+   memset(a, 0, sizeof(a));
+   __stosq(a+1, val, 2);
+   printf("%I64x %I64x %I64x %I64x", a[0], a[1], a[2], a[3]);
+}
+```
+
+## <a name="output"></a>Çıkış
+
+```
+0 ffffffffffff ffffffffffff 0
+```
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

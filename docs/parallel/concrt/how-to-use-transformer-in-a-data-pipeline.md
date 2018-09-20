@@ -16,53 +16,57 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a291b5c53338137ae59d9361ee36b6df29df277e
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 2c39491543c4d3a16202dac3caee50122ba0c7cf
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33686587"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46403129"
 ---
 # <a name="how-to-use-transformer-in-a-data-pipeline"></a>Nasıl yapılır: Veri Ardışık Düzeninde transformer Kullanma
-Bu konu, nasıl kullanılacağını gösteren temel bir örnek içerir [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) veri ardışık düzeninde sınıfı. Veri ardışık görüntü işleme gerçekleştirmek için kullandığı daha eksiksiz bir örnek için bkz: [izlenecek yol: görüntü işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).  
-  
- *Veri ardışık düzen* eşzamanlı programlarındaki ortak bir deseni. Veri ardışık burada her aşamanın çalışma gerçekleştirir ve sonra o iş sonucunu sonraki aşamaya iletir aşamaları bir dizi oluşur. `transformer` Kilit bir bileşeni veri ardışık düzenleri bir giriş değerinin aldığından sınıfı bu değeri çalışma gerçekleştirir ve bir sonuç almak için kullanılacak başka bir bileşen üretir.  
-  
-## <a name="example"></a>Örnek  
- Bu örnek, bir dizi dönüşümleri ilk giriş değerini verilen gerçekleştirmek için aşağıdaki veri ardışık kullanır:  
-  
-1.  İlk aşamada, kendi giriş mutlak değerini hesaplar.  
-  
-2.  İkinci aşama, kendi giriş'in kare kökünü hesaplar.  
-  
-3.  Üçüncü aşaması, kendi giriş kare hesaplar.  
-  
-4.  İleri kendi giriş aşama üzerindeki geçersiz kılar.  
-  
-5.  Beşinci aşama son sonucu bir ileti arabelleğe yazar.  
-  
- Son olarak, örnek konsoluna ardışık sonucunu yazdırır.  
-  
- [!code-cpp[concrt-data-pipeline#1](../../parallel/concrt/codesnippet/cpp/how-to-use-transformer-in-a-data-pipeline_1.cpp)]  
-  
- Bu örnek şu çıkışı üretir:  
-  
-```Output  
-The result is -42.  
-```  
-  
- Giriş değeri, türü farklı bir değer çıkarmak için veri ardışık düzeninde bir aşama için yaygın bir sorundur. Bu örnekte, İkinci aşama türünde bir değer alır. `int` giriş olarak ve bu değer'in kare kökünü üretir (bir `double`) çıktısını olarak.  
-  
+
+Bu konu nasıl kullanılacağını gösteren temel bir örnek içeren [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) veri ardışık düzeninde sınıfı. Görüntü işleme gerçekleştirmek için veri işlem hattı kullanan daha eksiksiz bir örnek için bkz. [izlenecek yol: görüntü işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
+
+*Veri ardışık* yaygın eş zamanlı programlama modelidir. Veri işlem hattı bir dizi burada her bir aşama işini gerçekleştirir ve ardından o iş sonucu sonraki aşamaya geçirir aşamadan oluşur. `transformer` Önemli bileşenlerinden veri işlem hatları bir giriş değeri aldığından sınıfı bu değeri temel çalışma gerçekleştirir ve ardından başka bir bileşeni kullanmak için bir sonuç üretir.
+
+## <a name="example"></a>Örnek
+
+Bu örnek, bir dizi ilk giriş değerini verilen dönüştürmeler gerçekleştirmek için aşağıdaki veri işlem hattı kullanır:
+
+1. İlk aşamada, girdi mutlak değerini hesaplar.
+
+1. İkinci aşamada, girdi karekökünü hesaplar.
+
+1. Üçüncü aşaması, girdi karesini hesaplar.
+
+1. İleri aşama, girdi geçersiz hale getirir.
+
+1. Beşinci aşama nihai sonucu bir iletiyi arabelleğe yazar.
+
+Son olarak, örnek konsola işlem hattının sonucu yazdırır.
+
+[!code-cpp[concrt-data-pipeline#1](../../parallel/concrt/codesnippet/cpp/how-to-use-transformer-in-a-data-pipeline_1.cpp)]
+
+Bu örnek aşağıdaki çıktıyı üretir:
+
+```Output
+The result is -42.
+```
+
+Çıkış türü giriş değerinden farklı bir değer için veri ardışık düzeninde bir aşama için yaygındır. Bu örnekte, ikinci aşaması türünde bir değer alır. `int` , girdi olarak bu değeri kare kökünü oluşturur (bir `double`) çıktısını olarak.
+
 > [!NOTE]
->  Bu örnekte veri ardışık için çizimidir. Her dönüştürme işlemi için çok az iş gerçekleştirdiğinden, ileti geçirme gerçekleştirmek için gerekli ek yükü veri ardışık kullanmanın yararları daha ağır basar.  
-  
-## <a name="compiling-the-code"></a>Kod Derleniyor  
- Örnek kodu kopyalayın ve bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `data-pipeline.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
-  
- **cl.exe /EHsc verileri-pipeline.cpp**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Zaman uyumsuz aracılar kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)   
- [Zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)   
- [İzlenecek yol: Görüntü İşleme Ağı Oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)
+>  Bu örnekteki veri işlem hattı için bir örnektir. Her dönüştürme işlemi çok az iş gerçekleştirdiğinden, ileti geçirme gerçekleştirmek için gerekli ek yükü veri işlem hattı kullanmanın avantajları daha fazla olabilir.
+
+## <a name="compiling-the-code"></a>Kod Derleniyor
+
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `data-pipeline.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+
+**cl.exe/ehsc veri pipeline.cpp**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
+[Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
+[İzlenecek yol: Görüntü İşleme Ağı Oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)
 

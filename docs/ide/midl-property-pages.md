@@ -16,23 +16,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4b32aaa7626bcb5cfabc59e0d3b9554d73379e5
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 1151f342c62dd0d657fecc82f4bff75164718a6e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33328080"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378947"
 ---
 # <a name="midl-property-pages"></a>MIDL Özellik Sayfaları
-**MIDL** düğümü birkaç özellik sayfalarını içerir. Bunlara erişmek için. .idl dosyasına sağ tıklayın **Çözüm Gezgini**.  
-  
--   [MIDL Özellik Sayfaları: Genel](../ide/midl-property-pages-general.md)  
-  
--   [MIDL Özellik Sayfaları: Çıktı](../ide/midl-property-pages-output.md)  
-  
--   [MIDL Özellik Sayfaları: Gelişmiş](../ide/midl-property-pages-advanced.md)  
-  
- MIDL seçenekleri C++ projeleri için programlı erişim hakkında daha fazla bilgi için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özellik Sayfaları](../ide/property-pages-visual-cpp.md)
+
+**MIDL** düğümü içeren birkaç özellik sayfaları. Bunlara erişmek için. .idl dosyasında sağ **Çözüm Gezgini**.
+
+- [MIDL Özellik Sayfaları: Genel](../ide/midl-property-pages-general.md)
+
+- [MIDL Özellik Sayfaları: Çıktı](../ide/midl-property-pages-output.md)
+
+- [MIDL Özellik Sayfaları: Gelişmiş](../ide/midl-property-pages-advanced.md)
+
+MIDL seçenekleri C++ projeleri için programlı erişim hakkında daha fazla bilgi için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Özellik Sayfaları](../ide/property-pages-visual-cpp.md)

@@ -1,5 +1,5 @@
 ---
-title: Koşullu derleme belirtme A.2 | Microsoft Docs
+title: A.2 koşullu derlemeyi belirtme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,26 +12,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d54245a2df2f38bed2674a3bb3923f8212d35459
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 2d8b0f3df67313dbf03d40077a551fe64930199d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33690601"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46393704"
 ---
 # <a name="a2---specifying-conditional-compilation"></a>A.2   Koşullu Derlemeyi Belirtme
-Aşağıdaki örnekler OpenMP makrosu kullanarak koşullu derleme kullanımını göstermek `_OPENMP` ([bölüm 2.2](../../parallel/openmp/2-2-conditional-compilation.md) sayfasında 8). OpenMP derleme ile `_OPENMP` hale makrosu tanımlı.  
-  
-```  
-# ifdef _OPENMP   
-    printf_s("Compiled by an OpenMP-compliant implementation.\n");  
-# endif  
-```  
-  
- Tanımlanan önişlemci işleci tek bir yönergeye sınanacak birden fazla makrosu sağlar.  
-  
-```  
-# if defined(_OPENMP) && defined(VERBOSE)  
-    printf_s("Compiled by an OpenMP-compliant implementation.\n");  
-# endif  
+
+Aşağıdaki örnekler OpenMP makrosu kullanarak koşullu derleme kullanımını gösterir `_OPENMP` ([bölümü 2.2](../../parallel/openmp/2-2-conditional-compilation.md) sayfasında 8). OpenMP derleme ile `_OPENMP` olur Makro tanımlı.
+
+```
+# ifdef _OPENMP
+    printf_s("Compiled by an OpenMP-compliant implementation.\n");
+# endif
+```
+
+Tek bir yönergesinde test edilecek birden fazla Makro tanımlı önişlemci işleci sağlar.
+
+```
+# if defined(_OPENMP) && defined(VERBOSE)
+    printf_s("Compiled by an OpenMP-compliant implementation.\n");
+# endif
 ```

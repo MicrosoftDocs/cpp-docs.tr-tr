@@ -20,24 +20,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9252e08fe672f111dcf2b289b1b12891022a318d
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 25fc281e35fc07151fa609d07be540430a6a1da6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931095"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46399824"
 ---
 # <a name="bypassing-the-serialization-mechanism"></a>Seri Hale Getirme Mekanizmasını Atlama
-Görülen çerçevesini okuyup için ve dosyalarından veri yazmak için varsayılan bir yol sağlar. Arşiv nesnesi seri hale getirme harika bir birçok uygulama gereksinimlerine uygun. Bu tür bir uygulama bir dosya tamamen belleğe okur, dosyayı güncelleştirmek kullanıcının izin verir ve ardından yeniden diske güncelleştirilmiş sürüm yazar.  
-  
- Ancak, bazı uygulamalar üzerindeki veriler çok farklı çalışır ve bu uygulamalar için serileştirme bir arşiv üzerinden uygun değil. Örnek Veritabanı programları, yalnızca büyük dosyalar bölümlerini düzenleme programları, yalnızca metin dosyaları yazma programları ve veri dosyalarını paylaşan programları içerir.  
-  
- Bu durumlarda, geçersiz kılabilirsiniz [serileştirme](../mfc/reference/cobject-class.md#serialize) dosya eylemleri arasında aktarmak için farklı bir şekilde işlevinde bir [CFile](../mfc/reference/cfile-class.md) nesne yerine bir [CArchive](../mfc/reference/carchive-class.md) nesnesi.  
-  
- Kullanabileceğiniz `Open`, `Read`, `Write`, `Close`, ve `Seek` sınıfının üye işlevleri `CFile` bir dosyayı açmaya dosya işaretçisini taşımak (Ara) dosyasında, belirli bir noktaya okuma bir kayıt (bir belirtilen bayt sayısı ) Bu noktada, kayıt güncelleştirmesi sonra aynı noktasına yeniden arama ve kaydı geri veya dosyaya yazmak kullanıcının izin verin. Framework sizin için dosyayı açar ve kullanabileceğiniz `GetFile` sınıfının üye işlevini `CArchive` gösteren bir işaretçi almak için `CFile` nesnesi. Daha da karmaşık ve esnek kullanım için kılmanız [OnOpenDocument](../mfc/reference/cdocument-class.md#onopendocument) ve [OnSaveDocument](../mfc/reference/cdocument-class.md#onsavedocument) sınıfının üye işlevleri `CWinApp`. Daha fazla bilgi için bkz [CFile](../mfc/reference/cfile-class.md) içinde *MFC başvurusu*.  
-  
- Bu senaryoda, `Serialize` geçersiz kılma hiçbir şey yapmaz, örneğin okuma ve yazma belge kapandığında güncel tutmak için bir dosya üstbilgisi istemediğiniz sürece.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Belgeleri Kullanma](../mfc/using-documents.md)
+
+Gördüğünüz gibi framework okuyup dosyaları gelen ve giden veri yazmak için varsayılan bir yol sağlar. Bir arşiv nesneyi seri hale getirme, harika bir birçok uygulama gereksinimlerine uygun. Bu tür bir uygulama tamamen belleğe bir dosyayı okur, dosyayı güncelleştirmek izin verir ve ardından güncelleştirilmiş sürümü tekrar diske yazar.
+
+Ancak, bazı uygulamaları çok farklı veriler üzerinde işlem yaparsınız ve bu uygulamalar için serileştirme bir arşiv üzerinden uygun değil. Veritabanı programları, yalnızca büyük dosyaları bölümlerini düzenleme programları, yalnızca metin dosyaları yazma programları ve veri dosyalarını paylaşan programları verilebilir.
+
+Bu gibi durumlarda, geçersiz kılabilirsiniz [serileştirme](../mfc/reference/cobject-class.md#serialize) dosyası eylemleri aracılığıyla aktarmak için farklı bir şekilde işlevi bir [CFile](../mfc/reference/cfile-class.md) nesne yerine [CArchive](../mfc/reference/carchive-class.md) nesne.
+
+Kullanabileceğiniz `Open`, `Read`, `Write`, `Close`, ve `Seek` sınıfın üye işlevleri `CFile` bir dosyayı açmaya dosya işaretçiyi (Ara) dosyasında, belirli bir noktaya (bir belirtilen sayıda baytı bir kaydı okuma ) Bu noktada, kullanıcının kaydı güncelleştirmek daha sonra aynı noktaya tekrar arama ve kaydın geri dosyaya yazmak olanak tanır. Framework sizin için dosyayı açar ve kullanabileceğiniz `GetFile` sınıfının üye işlevinde `CArchive` bir işaretçi alma için `CFile` nesne. Daha da karmaşık ve esnek kullanım için geçersiz kılabilirsiniz [OnOpenDocument](../mfc/reference/cdocument-class.md#onopendocument) ve [OnSaveDocument](../mfc/reference/cdocument-class.md#onsavedocument) sınıfın üye işlevleri `CWinApp`. Daha fazla bilgi için bkz. [CFile](../mfc/reference/cfile-class.md) içinde *MFC başvurusu*.
+
+Bu senaryoda, `Serialize` geçersiz kılma hiçbir şey yapmaz, örneğin, okuma ve yazma belge kapandığında güncel tutmak için bir dosya üstbilgisi istediğiniz sürece.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Belgeleri Kullanma](../mfc/using-documents.md)
 

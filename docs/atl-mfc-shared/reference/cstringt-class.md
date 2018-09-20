@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca2f1e907864e096acfb385d8c340ab40fb82346
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 253282092bb71b6d4a5c520355ab4f8b51015c9f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46059231"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46445145"
 ---
 # <a name="cstringt-class"></a>CStringT sınıfı
 
@@ -1744,7 +1744,7 @@ Sondaki aşağıdakilerden birini oluşumlarını kaldırır:
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
-[ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)   
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)<br/>
 [CSimpleStringT Sınıfı](../../atl-mfc-shared/reference/csimplestringt-class.md)
 

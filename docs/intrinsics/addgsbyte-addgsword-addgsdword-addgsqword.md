@@ -26,62 +26,66 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd5341dc4d47740410df01feadbd9e6aa3926a23
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: bdfcd0db1486e5ba6e4c08dee0c19e3b98282df9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721396"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439698"
 ---
 # <a name="addgsbyte-addgsword-addgsdword-addgsqword"></a>__addgsbyte, __addgsword, __addgsdword, __addgsqword
-**Microsoft'a özgü**  
-  
- Başlangıcına göre bir uzaklık tarafından belirtilen bellek konumuna bir değer ekleyin `GS` kesimi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void __addgsbyte(   
-   unsigned long Offset,   
-   unsigned char Data   
-);  
-void __addgsword(   
-   unsigned long Offset,   
-   unsigned short Data   
-);  
-void __addgsdword(   
-   unsigned long Offset,   
-   unsigned long Data   
-);  
-void __addgsqword(   
-   unsigned long Offset,   
-   unsigned __int64 Data   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+**Microsoft'a özgü**
+
+Başlangıcına göre bir uzaklık tarafından belirtilen bellek konumuna bir değer ekleyin `GS` kesimi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void __addgsbyte( 
+   unsigned long Offset, 
+   unsigned char Data 
+);
+void __addgsword( 
+   unsigned long Offset, 
+   unsigned short Data 
+);
+void __addgsdword( 
+   unsigned long Offset, 
+   unsigned long Data 
+);
+void __addgsqword( 
+   unsigned long Offset, 
+   unsigned __int64 Data 
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *uzaklık*<br/>
-[in] Başından uzaklık `GS`.  
-  
+[in] Başından uzaklık `GS`.
+
 *Veri*<br/>
-[in] Bellek konumuna eklenecek değer.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|  
-|---------------|------------------|  
-|`__addgsbyte`|X64|  
-|`__addgsword`|X64|  
-|`__addgsdword`|X64|  
-|`__addgsqword`|X64|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu iç öğeler yalnızca çekirdek modunda kullanılabilir ve bu yordamlar yalnızca iç öğe olarak kullanılabilir.  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [__incgsbyte, \__incgsword, \__incgsdword, \__incgsqword](../intrinsics/incgsbyte-incgsword-incgsdword-incgsqword.md)   
- [__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)   
- [__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)   
- [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[in] Bellek konumuna eklenecek değer.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|
+|---------------|------------------|
+|`__addgsbyte`|X64|
+|`__addgsword`|X64|
+|`__addgsdword`|X64|
+|`__addgsqword`|X64|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu iç öğeler yalnızca çekirdek modunda kullanılabilir ve bu yordamlar yalnızca iç öğe olarak kullanılabilir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[__incgsbyte, \__incgsword, \__incgsdword, \__incgsqword](../intrinsics/incgsbyte-incgsword-incgsdword-incgsqword.md)<br/>
+[__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)<br/>
+[__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)<br/>
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

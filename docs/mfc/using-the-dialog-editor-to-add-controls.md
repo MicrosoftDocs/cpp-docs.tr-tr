@@ -18,19 +18,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19cb52659c92b470057098edf3b65de4042e3bb9
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: ffbfad4025e9daf72a9555ca69a8639cba6d68c5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36950376"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374729"
 ---
 # <a name="using-the-dialog-editor-to-add-controls"></a>Denetim Eklemek için İletişim Kutusu Düzenleyicisini Kullanma
-İletişim-şablon kaynağıyla oluşturduğunuzda [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md), denetimleri paletinden denetimleri sürükleyin ve iletişim kutusuna bırakın. Bu denetim türü için belirtimleri iletişim şablonu kaynağı ekler. Ne zaman, oluşturmak iletişim nesnesi ve çağrı kendi `Create` veya `DoModal` üye işlevi framework Windows denetimi oluşturur ve ekranda iletişim penceresinde yerleştirir.  
-  
- Bunun yerine yapabilecekleriniz [denetimleri el ile oluşturmak](../mfc/adding-controls-by-hand.md) istiyorsanız. Daha fazla iş budur.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri yapma ve kullanma](../mfc/making-and-using-controls.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+İletişim şablonu kaynağınızı oluştururken [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md), denetimleri denetim paletinden sürükle ve iletişim kutusuna sürükleyip bırakın. Bu iletişim şablon kaynağı için bu denetim türü için özellikleri ekler. Ne zaman oluşturmak iletişim nesnesi ve çağrı kendi `Create` veya `DoModal` üye işlevi, framework Windows denetimi oluşturur ve ekranda iletişim penceresinde yerleştirir.
+
+Bunun yerine yapabilecekleriniz [denetimler el ile oluşturmak](../mfc/adding-controls-by-hand.md) istiyorsanız. Daha fazla iş budur.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Denetimleri Yapma ve Kullanma](../mfc/making-and-using-controls.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1ee7e6deeda17d2ac374b39edf70ab28fa1457fa
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 87fb8ece3e1897a3ba460403d273bd649784ad44
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603387"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400443"
 ---
 # <a name="moduleunregisterobjects-method"></a>Module::UnregisterObjects Yöntemi
 
@@ -38,10 +38,10 @@ HRESULT UnregisterObjects(
 
 ### <a name="parameters"></a>Parametreler
 
-*Modülü*  
+*Modülü*<br/>
 Bir modül için işaretçi.
 
-*SunucuAdı*  
+*SunucuAdı*<br/>
 Bu işlemden etkilenen nesneler kümesini belirtir uygun bir ad.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -55,4 +55,5 @@ Bu işlem başarılı olursa S_OK; Aksi takdirde bir hata nedenini belirten HRES
 **Namespace:** Microsoft::WRL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 [Modül Sınıfı](../windows/module-class.md)

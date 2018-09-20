@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 257ca11dcc44b22d6ddbb5043315d29a70377148
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: ebebd8d0b6dc53ef5d83374c329ebe35d23f7fe8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313955"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46443546"
 ---
 # <a name="how-to-specify-include-directories-for-resources-c"></a>Nasıl yapılır: belirtin (C++) kaynaklar için dizin eklemeyi
 
@@ -40,8 +40,8 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kaynak İçerikleri İletişim Kutusu](../windows/resource-includes-dialog-box.md)  
-[TN035: Visual C++'da Birden Fazla Kaynak Dosya ve Üstbilgi Dosyası Kullanma](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)  
-[Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)  
-[Kaynak dosyaları](../windows/resource-files-visual-studio.md)  
+[Kaynak İçerikleri İletişim Kutusu](../windows/resource-includes-dialog-box.md)<br/>
+[TN035: Visual C++'da Birden Fazla Kaynak Dosya ve Üstbilgi Dosyası Kullanma](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)<br/>
+[Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)<br/>
+[Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)

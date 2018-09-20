@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 49024e903237160cc26a9c095cf9f313b43ccb6f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 12032318f898b2986b64d5cd8a1e611a31d1fc8c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600771"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46372398"
 ---
 # <a name="raiseexception-function"></a>RaiseException İşlevi
 
@@ -38,10 +38,10 @@ inline void __declspec(noreturn)   RaiseException(
 
 ### <a name="parameters"></a>Parametreler
 
-*İK*  
+*İK*<br/>
 Özel durum kodu gerçekleştirilen özel durum; diğer bir deyişle, başarısız bir işlemin HRESULT.
 
-*dwExceptionFlags*  
+*dwExceptionFlags*<br/>
 (Bayrak değeri sıfırdır) devam ettirilebilir özel durum ya da (bayrak değeri sıfır dışında) noncontinuable özel durumu gösteren bir bayrak. Varsayılan olarak, özel durum oluştuktan ' dir.
 
 ## <a name="remarks"></a>Açıklamalar

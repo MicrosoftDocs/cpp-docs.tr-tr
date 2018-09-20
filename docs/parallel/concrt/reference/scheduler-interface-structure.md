@@ -16,45 +16,49 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b06b270c4971239b91fa81b9ad35d8fef52b7e76
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 2178eddef2dcf7c2f48a5667930bc639781628fb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33696311"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425382"
 ---
 # <a name="schedulerinterface-structure"></a>scheduler_interface Yapısı
-Zamanlayıcı arabirimi  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Zamanlayıcı arabirimi
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 struct __declspec(novtable) scheduler_interface;
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[scheduler_interface::schedule](#schedule)||  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `scheduler_interface`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** pplinterface.h  
-  
- **Namespace:** eşzamanlılık  
-  
-##  <a name="schedule"></a>  scheduler_interface::Schedule yöntemi  
-  
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[scheduler_interface::schedule](#schedule)||
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`scheduler_interface`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** pplinterface.h
+
+**Namespace:** eşzamanlılık
+
+##  <a name="schedule"></a>  scheduler_interface::Schedule yöntemi
+
 ```
 virtual void schedule(
     TaskProc_t,
- void*) = 0;
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+void*) = 0;
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Ad Alanı](concurrency-namespace.md)

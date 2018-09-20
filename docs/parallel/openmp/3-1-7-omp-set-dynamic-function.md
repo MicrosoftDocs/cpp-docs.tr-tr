@@ -12,35 +12,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d1e22a1eb9aff32bfaf07350daf1cb397e18eb3
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 807e5739c571f7aa8e9f723a0a48c8c46f1e6d09
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687874"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46441570"
 ---
 # <a name="317-ompsetdynamic-function"></a>3.1.7 omp_set_dynamic İşlevi
-**Omp_set_dynamic** işlevini etkinleştirir veya paralel bölgeler yürütme için kullanılabilir iş parçacığı sayısını dinamik olarak ayarlamayı devre dışı bırakır. Biçimi aşağıdaki gibidir:  
-  
-```  
-#include <omp.h>  
-void omp_set_dynamic(int dynamic_threads);  
-```  
-  
- Varsa *dynamic_threads* değerlendirir sıfır olmayan bir değere sonraki paralel bölgeler yürütmek için kullanılan iş parçacığı sayısını otomatik olarak en iyi sistem kaynaklarını kullanmak için çalışma zamanı ortamı tarafından ayarlanması. Sonuç olarak kullanıcı tarafından belirtilen iş parçacığı sayısı en fazla iş parçacığı sayısıdır. Paralel bir bölge yürütme takım içindeki iş parçacığı sayısı, paralel bölge boyunca sabit kalır ve tarafından bildirilen **omp_get_num_threads** işlevi.  
-  
- Varsa *dynamic_threads* değerlendirir 0 olarak dinamik ayarlama devre dışı bırakılır.  
-  
- Bu işlev bir program bölümünden çağrıldığında yukarıda açıklanan etkilere sahiptir nerede **omp_in_parallel** işlevi sıfır döndürür. Program bir kısmına çağrılıp çağrılmayacağını nerede **omp_in_parallel** işlevi sıfır olmayan bir değer döndürür, bu işlevin davranışı tanımlı değil.  
-  
- Çağrı **omp_set_dynamic** üzerinden önceliğe sahip **omp_dynamıc** ortam değişkeni.  
-  
- İş parçacığı dinamik düzeltilmesi için uygulama tanımlı varsayılandır. Sonuç olarak, iş parçacıkları doğru yürütme için belirli sayıda bağlı kullanıcı kodları açıkça dinamik iş parçacığı devre dışı bırakmanız gerekir. Uygulamaları iş parçacığı sayısını dinamik olarak ayarlamasını olanağı sağlamak için gerekli değildir, ancak tüm platformlarda taşınabilirlik desteklemek için arabirim sağlamak için gereklidir.  
-  
-## <a name="cross-references"></a>Çapraz referanslar:  
-  
--   **omp_get_num_threads** işlev, bkz: [bölüm 3.1.2](../../parallel/openmp/3-1-2-omp-get-num-threads-function.md) sayfasında 37'si.  
-  
--   **Omp_dynamıc** ortam değişkeni, bkz: [bölüm 4.3](../../parallel/openmp/4-3-omp-dynamic.md) sayfasında 49.  
-  
--   **omp_in_parallel** işlev, bkz: [bölüm 3.1.6](../../parallel/openmp/3-1-6-omp-in-parallel-function.md) sayfasında 38.
+
+**Omp_set_dynamic** işlevini etkinleştirir veya paralel bölgeleri yürütülmesi için kullanılabilir iş parçacığı sayısını yerleştirmenin dinamik ayarına devre dışı bırakır. Biçimi aşağıdaki gibidir:
+
+```
+#include <omp.h>
+void omp_set_dynamic(int dynamic_threads);
+```
+
+Varsa *dynamic_threads* değerlendirir sıfır olmayan bir değer sonraki paralel bölgeleri yürütmek için kullanılan iş parçacıklarının sayısını otomatik olarak sistem kaynakları en iyi şekilde yararlanmak için çalışma zamanı ortamı tarafından ayarlanması. Sonuç olarak kullanıcı tarafından belirtilen iş parçacığı sayısı en fazla iş parçacığı sayısıdır. Bir paralel bölgenin yürütme takım iş parçacıkları, paralel bölgenin süresi boyunca sabit kalır ve tarafından bildirilen **omp_get_num_threads** işlevi.
+
+Varsa *dynamic_threads* değerlendirir 0 olarak yerleştirmenin dinamik ayarına devre dışı bırakıldı.
+
+Bu işlev, bir program bölümünden çağrıldığında yukarıda açıklanan etkisi burada **omp_in_parallel** işlev, sıfır döndürür. Programın bir kısmını çağrılır, burada **omp_in_parallel** işlevi sıfır dışında bir değeri döndürür, bu işlevin davranış tanımlanmamıştır.
+
+Bir çağrı **omp_set_dynamic** üzerinden önceliğe sahip **omp_dynamıc** ortam değişkeni.
+
+Yerleştirmenin dinamik ayarına iş parçacığı sayısı için varsayılan uygulama tanımlanır. Sonuç olarak, belirli bir sayıya doğru yürütme için iş parçacığı bağımlı kullanıcı kodlarını açıkça dinamik iş parçacığı devre dışı bırakmanız gerekir. Uygulamaları, iş parçacığı sayısını dinamik olarak ayarlama olanağı sağlamak için gerekli değildir, ancak tüm platformlar arasında taşınabilirlik desteklemek için arabirim sağlamak için gerekli.
+
+## <a name="cross-references"></a>Başvuruları çapraz:
+
+- **omp_get_num_threads** çalışması için bkz: [bölümü 3.1.2](../../parallel/openmp/3-1-2-omp-get-num-threads-function.md) 37 sayfasında.
+
+- **Omp_dynamıc** ortam değişkeni, bkz: [bölümü 4.3](../../parallel/openmp/4-3-omp-dynamic.md) 49 sayfasında.
+
+- **omp_in_parallel** çalışması için bkz: [bölümü 3.1.6](../../parallel/openmp/3-1-6-omp-in-parallel-function.md) 38 sayfasında.

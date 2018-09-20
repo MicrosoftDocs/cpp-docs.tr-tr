@@ -18,25 +18,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 30ad7cab43301ae2cb7ebcb1fb4dfa850090955d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7a63caa786ce5198fb902b8d48101507fb2b4113
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383948"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444222"
 ---
 # <a name="windows-sockets-datagram-sockets"></a>Windows Yuvaları: Veri Birimi Yuvaları
-Bu makalede, veri birimi yuvaları, iki Windows yuva türlerinden birini açıklar. (Diğer tür [akışa yuva](../mfc/windows-sockets-stream-sockets.md).)  
-  
- Veri birimi yuvaları sıralı veya unduplicated garanti edilmemiştir bir iki yönlü veri akışı destekler. Veri birimleri de güvenilir olması garanti edilmez; gelmesi başarısız. Veri birimi verisi bozuk ve büyük olasılıkla yinelenen gelebilir, ancak kayıtları alıcının iç boyutu sınırdan daha küçük olduğu sürece müşteri verilerini kayıt sınırlarında korunur. Sıralama ve güvenilirlik yönetmekle sorumlu. (Güvenilirlik [LAN] yerel ağlarda iyi olma eğilimindedir ancak Internet gibi [WAN] daha az vb. geniş alan ağları.)  
-  
- Veri birimleri "bağlantısız", diğer bir deyişle, açık bir bağlantı oluşturulur; Belirtilen yuva için bir veri birimi iletisi gönderin ve belirtilen bir yuvadan ileti alabilir.  
-  
- Bir veri birimi yuva örneği eşitlenen ağda sistem saatlerinin tutan bir uygulamadır. Bu ek bir veri birimi yuvaları en az bazı ayarları'nda yeteneğini gösterir: çok sayıda ağ adreslerini yayını iletileri.  
-  
- Veri birimi yuvaları kayıt odaklı veriler için akış yuvaları iyidir. Veri birimi yuvaları hakkında daha fazla bilgi için bkz: Windows SDK'da bulunan Windows Sockets belirtimi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)   
- [Windows Yuvaları: Arka Plan](../mfc/windows-sockets-background.md)
+
+Bu makalede, veri birimi yuvaları iki Windows yuva türlerinden birini açıklar. (Diğer tür [stream yuva](../mfc/windows-sockets-stream-sockets.md).)
+
+Veri birimi yuvaları sıralı ya da unduplicated garanti edilmez bir çift yönlü veri akışı destekler. Veri birimlerini de güvenilir olmasını garanti edilmez; Bunlar ulaşması başarısız olabilir. Veri birimi veri sıralamaya ve büyük olasılıkla yinelenen gelebilir, ancak kayıtları alıcının iç boyutu sınırdan daha küçük olduğu sürece müşteri verileri kayıt sınırlarındaki korunur. Sıralama ve güvenilirlik yönetmekten sorumlu olursunuz. (Güvenilirlik [LAN] yerel ağlarında iyi olma eğilimindedir ancak daha az vb. geniş alan [WAN] Internet gibi ağlar.)
+
+Veri birimi "bağlantısız", diğer bir deyişle, açık bir bağlantı kurulur. Belirtilen bir yuva için bir veri birimi ileti gönderin ve ileti belirtilen bir yuvadan alma.
+
+Bir veri birimi yuva eşitlenmiş ağ üzerindeki sistem saatlerinin tutan bir uygulama örneğidir. Ek bir özelliği en azından bazı ayarları'nda veri birimi yuvaları, bunu göstermektedir: çok sayıda ağ adresleri yayın iletileri.
+
+Veri birimi yuvaları kayıt odaklı veriler için akış yuvaları iyidir. Veri birimi yuvaları hakkında daha fazla bilgi için bkz: Windows SDK'da bulunan Windows yuva belirtimi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)<br/>
+[Windows Yuvaları: Arka Plan](../mfc/windows-sockets-background.md)
 

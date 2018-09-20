@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a39b4147bd997659f264b60fb1fc88956784bbaf
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: d72e37b8625480779620025dfd1e1eda1101b824
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318200"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430559"
 ---
 # <a name="working-with-resource-files"></a>Kaynak Dosyalarıyla Çalışma
 
@@ -39,24 +39,24 @@ Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz 
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Kaynak dosyaları](../windows/resource-files-visual-studio.md)  
+[Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
 Kaynak dosyaları ve Windows masaüstü uygulamalarında nasıl kullanılacağını açıklar. Ayrıca, kaynak dosyalar nasıl kullanılacağını açıklayan konulara bağlantılar sağlar.
 
-[Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)  
+[Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)<br/>
 Sembolleri tanımlar ve kullanma hakkında bilgi sağlar **kaynak sembolleri** sembolleri projelerinizde yönetmek için iletişim kutusu.
 
-[Kaynak Düzenleyicileri](../windows/resource-editors.md)  
+[Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
 Visual Studio'da sağlanan kaynak düzenleyicileri açıklar kaynak türleri, her bir düzenleyiciyle değiştirebilirsiniz ve her Düzenleyicisi'ı kullanma hakkında ayrıntılı bilgi için bağlantılar sağlar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[Visual C++](../visual-cpp-in-visual-studio.md)  
+[Visual C++](../visual-cpp-in-visual-studio.md)<br/>
 Visual C++ belgelerine ilişkin bağlantıları sağlar.
 
-[Bizimle İletişime Geçin](/visualstudio/ide/talk-to-us)  
+[Bizimle İletişime Geçin](/visualstudio/ide/talk-to-us)<br/>
 Belge kümesini kullanarak, ürün desteği ile iletişime ve erişilebilirlik özelliklerini kullanan bilgilere bağlantılar sağlar.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Windows Masaüstü uygulamaları](../windows/windows-desktop-applications-cpp.md)  
+[Windows Masaüstü uygulamaları](../windows/windows-desktop-applications-cpp.md)<br/>
 [Menüler ve diğer kaynaklar](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

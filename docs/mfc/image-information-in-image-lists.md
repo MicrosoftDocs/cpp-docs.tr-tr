@@ -1,5 +1,5 @@
 ---
-title: Görüntü listelerindeki bilgileri görüntü | Microsoft Docs
+title: Görüntü listelerindeki görüntü bilgileri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,21 +15,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b45a685a9de44bdc40f83481cb83ef58a5c4234
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c98bc629cde74cf7a6fc8a416de862f50a1dd5ae
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343719"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422291"
 ---
 # <a name="image-information-in-image-lists"></a>Görüntü Listelerindeki Görüntü Bilgileri
-[Cımagelist](../mfc/reference/cimagelist-class.md) görüntü listesinden görüntü bilgilerini almak işlevler içerir. [GetImageInfo](../mfc/reference/cimagelist-class.md#getimageinfo) üye işlevi doldurur bir `IMAGEINFO` görüntü ve maskesi bit eşlemler, Renk düzlemi ve bit / piksel sayısını ve sınırlayıcı dikdörtgenini tanıtıcıları dahil olmak üzere tek bir görüntü hakkındaki bilgilerle yapısı Görüntü bit eşlem içinde görüntüsü. Bit eşlemler görüntüsü için doğrudan yönetmek için bu bilgileri kullanın.  
-  
- [Getımagecount](../mfc/reference/cimagelist-class.md#getimagecount) üye işlevi bir resim listesi görüntü sayısını alır.  
-  
- Kullanarak bir resim ve görüntü listesi maskesinde dayalı bir simge oluşturabilirsiniz [ExtractIcon](../mfc/reference/cimagelist-class.md#extracticon) üye işlevi. İşlev yeni simgesine işleyicisini döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Cımagelist kullanma](../mfc/using-cimagelist.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+[Cımagelist](../mfc/reference/cimagelist-class.md) bilgi görüntü listesinden görüntü alma işlevleri içerir. [GetImageInfo](../mfc/reference/cimagelist-class.md#getimageinfo) üye işlevi dolduran bir `IMAGEINFO` tutamaçları görüntü ve maskesi bit eşlemler, renk düzlemleri ve piksel başına bit sayısı ve dikdörtgen gibi tek bir görüntü ilgili bilgilerle yapısı Görüntü bit eşlem içinde bir görüntüsü. Bu bilgiler, bit eşlemler görüntüsü için doğrudan yönetmek için kullanabilirsiniz.
+
+[Getımagecount](../mfc/reference/cimagelist-class.md#getimagecount) üye işlevi bir görüntü listesinden görüntü sayısını alır.
+
+Bir simge kullanarak bir görüntü ve resim listesi maskesi göre oluşturabilirsiniz [ExtractIcon](../mfc/reference/cimagelist-class.md#extracticon) üye işlevi. İşlev, yeni simgesine tanıtıcısını döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CImageList Kullanma](../mfc/using-cimagelist.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

@@ -17,20 +17,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d43c0259dd394a7dbbe7ef5b2ed558c9351e73a8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 67621d44766e6f4b726c8553024933fd0e904a17
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379583"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46381549"
 ---
-# <a name="serialization-serialization-vs-database-inputoutput"></a>Seri hale getirme: Seri hale getirme vs. Veritabanı giriş/çıkış
-Bu makalede ve ne zaman belge nesneleri seri hale getirme ve diğer g/ç teknikleri uygun ne zaman dosya tabanlı giriş/çıkış (g/ç) için kullanılacağını açıklanmaktadır; çünkü uygulamanın okur ve veritabanı uygulamaları olduğu gibi bir işlem başına temelinde verileri yazar. Serileştirme kullanmıyorsanız, ayrıca olmaz Kaydet, Dosya Aç, gereksinim ve komutlar olarak kaydetme. Kapsanan konular şunlardır:  
-  
--   [Giriş/Çıkış işleme için öneriler](../mfc/recommendations-for-handling-input-output.md)  
-  
--   [Veritabanı uygulamalarında Dosya menüsü işleme](../mfc/file-menu-in-an-mfc-database-application.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Serileştirme](../mfc/serialization-in-mfc.md)
+# <a name="serialization-serialization-vs-database-inputoutput"></a>Seri hale getirme: Seri hale getirme vs. Veritabanı giriş/çıkışı
+
+Bu makalede ne zaman dosya tabanlı giriş/çıkış (g/ç) ve diğer g/ç teknikleri uygun olduğunda belge nesneleri ve Serileştirme kullanılacağını açıklar; çünkü uygulama okur ve veritabanı uygulamaları olduğu gibi işlem başına temelinde verileri yazar. Serileştirme kullanmazsanız, ayrıca olmaz dosya açık kaydetmek gerekir ve komutları kaydedin. Kapsanan konular şunlardır:
+
+- [Giriş/Çıkış işleme için öneriler](../mfc/recommendations-for-handling-input-output.md)
+
+- [Veritabanı uygulamalarında Dosya menüsünden işleme](../mfc/file-menu-in-an-mfc-database-application.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Serileştirme](../mfc/serialization-in-mfc.md)
 

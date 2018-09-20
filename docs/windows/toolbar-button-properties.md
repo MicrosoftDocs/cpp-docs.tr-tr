@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b23194992d3b2bb4f1e2708f7e57396cb7e94be6
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 02ab081446af908f2efdc06b647efcc4e76addf4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318739"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46411514"
 ---
 # <a name="toolbar-button-properties-c"></a>Araç çubuğu düğmesi özellikleri (C++)
 
@@ -48,5 +48,5 @@ MFC veya ATL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Araç Çubuğu Düğmesi Özelliklerini Değiştirme](../windows/changing-the-properties-of-a-toolbar-button.md)  
+[Araç Çubuğu Düğmesi Özelliklerini Değiştirme](../windows/changing-the-properties-of-a-toolbar-button.md)<br/>
 [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)

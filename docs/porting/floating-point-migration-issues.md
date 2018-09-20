@@ -12,14 +12,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb8f7d4835fe50dba2cb7eb6d4e7cb6a54efdbba
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: e204e8dcc0d846294393edf9bf73b86360b40de2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42464585"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46421992"
 ---
 # <a name="floating-point-migration-issues"></a>Kayan nokta geçiş sorunları  
+
   
 Bazen projelerinizi Visual Studio'nun daha yeni bir sürüme yükseltme yaptığınızda, belirli bir kayan nokta işlemlerinin sonuçlarını değiştiğini fark edebilirsiniz. Bu genellikle iki nedenlerden biri gerçekleşir: kod oluşturma, daha iyi faydalanan kullanılabilir işlemci değiştirir ve hata düzeltmeleri veya matematik işlevleri (CRT) C Çalışma Zamanı Kitaplığı'nda kullanılan algoritmalar değiştirir. Genel olarak, yeni sonuçlar dil standardı tarafından belirlenen sınırlar içinde doğru olur. İşlevlerinizi aynı sonuçları almak nasıl, ne değiştirilir ve önemli olup olmadığını öğrenmek okuma, önce alındı.  
 
@@ -41,6 +42,6 @@ Eski kodu yeni kodu için aynı derleyici bayraklarına kullanırken bile karş�
   
 ## <a name="see-also"></a>Ayrıca bkz.  
   
-[Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
-[Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)  
+[Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
 [Visual C++ değişiklik geçmişi 2003 - 2015](visual-cpp-change-history-2003-2015.md)  

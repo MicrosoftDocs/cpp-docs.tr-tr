@@ -1,5 +1,5 @@
 ---
-title: MFC nesneleri arasındaki ilişkileri | Microsoft Docs
+title: MFC nesneleri arasındaki ilişkiler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,47 +17,49 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef6a9e605948fac4f31338f87b4d00bbaa8712f4
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: d2f42f754157a4fc2e3f3e1aa40f38477b982e16
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931658"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46372489"
 ---
 # <a name="relationships-among-mfc-objects"></a>MFC Nesneleri Arasındaki İlişki
-Belge/görünüm oluşturma işlemi perspektife put yardımcı olmak için çalışan bir program göz önünde bulundurun: belge, görünüm kapsamak için kullanılmış çerçeve penceresi ve belgeyle ilişkilendirilen görünüm.  
-  
--   Bir belgenin belge oluşturulan belge şablonu belge ve bir işaretçi görünümlerini listesini tutar.  
-  
--   Bir görünüm için belgeyi bir işaretçi tutar ve kendi üst çerçeve penceresi alt.  
-  
--   Belge çerçeve penceresi, geçerli etkin görünüm için bir işaretçi tutar.  
-  
--   Belge şablonu açık kendi belgelerinin bir listesini tutar.  
-  
--   Uygulamanın kendi belge şablonları listesini tutar.  
-  
--   Windows açık olan tüm pencereleri onlara iletileri gönderebilmek için izler.  
-  
- Bu ilişkileri belge/görünüm oluşturma sırasında oluşturulur. Aşağıdaki tabloda, çalışan bir program nesneleri diğer nesnelerin nasıl erişebileceğinizi gösterir. Herhangi bir nesne application nesnesi için bir işaretçi genel işlevini çağırarak edinebilirsiniz [AfxGetApp](../mfc/reference/application-information-and-management.md#afxgetapp).  
-  
-### <a name="gaining-access-to-other-objects-in-your-application"></a>Uygulamanızdaki diğer nesnelere erişimini  
-  
-|Nesnesinden|Diğer nesnelere erişmek nasıl|  
-|-----------------|---------------------------------|  
-|Belge|Kullanım [GetFirstViewPosition](../mfc/reference/cdocument-class.md#getfirstviewposition) ve [GetNextView](../mfc/reference/cdocument-class.md#getnextview) belgenin görünümü listesi erişmek için.<br /><br /> Çağrı [GetDocTemplate](../mfc/reference/cdocument-class.md#getdoctemplate) belge şablonu alınamıyor.|  
-|Görüntüle|Çağrı [GetDocument](../mfc/reference/cview-class.md#getdocument) belge alınamıyor.<br /><br /> Çağrı [GetParentFrame](../mfc/reference/cwnd-class.md#getparentframe) çerçeve penceresi alınamıyor.|  
-|Belge çerçeve penceresi|Çağrı [GetActiveView](../mfc/reference/cframewnd-class.md#getactiveview) geçerli görünümü almak için.<br /><br /> Çağrı [GetActiveDocument](../mfc/reference/cframewnd-class.md#getactivedocument) geçerli görünüme bağlı belge alınamıyor.|  
-|MDI çerçeve penceresi|Çağrı [MDIGetActive](../mfc/reference/cmdiframewnd-class.md#mdigetactive) şu anda etkin almak için [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md).|  
-  
- Genellikle, bir çerçeve penceresinde bir görünüme sahiptir, ancak bazı durumlarda, bölümlendirici pencereler olduğu gibi aynı çerçeve penceresi birden çok görünüm içerir. Çerçeve penceresi şu anda etkin görünümün bir işaretçi tutar; İşaretçinin başka bir görünüm etkinleştirilmiş her zaman güncelleştirilir.  
-  
+
+Belge/görünüm oluşturma işlemi açıdan bakın yardımcı olmak için çalışan bir program göz önünde bulundurun: bir belge, görünüm kapsamak için kullanılmış çerçeve penceresi ve belgeyle ilişkili görünüm.
+
+- Bir belge, belgeyi oluşturan bir belge şablonu belge ve bir işaretçi görünümlerini listesini tutar.
+
+- Bir görünüm, belgeye bir işaretçi tutar ve kendi ana çerçeve penceresinin bir alt öğesidir.
+
+- Belge çerçeve penceresi, geçerli etkin görünüm için bir işaretçi tutar.
+
+- Bir belge şablonu, açık belgelerin listesini tutar.
+
+- Uygulama, belge şablonları listesini tutar.
+
+- Windows tüm pencereler için İleti gönderebilmek için izler.
+
+Bu ilişkiler belge/görünüm oluşturma sırasında oluşturulur. Aşağıdaki tabloda, çalışan bir program nesneleri diğer nesnelerin nasıl erişeceği gösterilmektedir. Genel bir işlev çağırarak application nesnesine bir işaretçi herhangi bir nesne elde edebilirsiniz [AfxGetApp](../mfc/reference/application-information-and-management.md#afxgetapp).
+
+### <a name="gaining-access-to-other-objects-in-your-application"></a>Uygulamanızdaki diğer nesnelere erişim elde etme
+
+|Nesneden|Diğer nesnelere erişmek nasıl|
+|-----------------|---------------------------------|
+|Belge|Kullanım [GetFirstViewPosition](../mfc/reference/cdocument-class.md#getfirstviewposition) ve [GetNextView](../mfc/reference/cdocument-class.md#getnextview) belge görünümü listesine erişmek için.<br /><br /> Çağrı [GetDocTemplate](../mfc/reference/cdocument-class.md#getdoctemplate) belgeler alınamıyor.|
+|Görüntüle|Çağrı [GetDocument](../mfc/reference/cview-class.md#getdocument) belge alınamıyor.<br /><br /> Çağrı [GetParentFrame](../mfc/reference/cwnd-class.md#getparentframe) çerçeve penceresi alınamıyor.|
+|Belge çerçeve penceresi|Çağrı [GetActiveView](../mfc/reference/cframewnd-class.md#getactiveview) geçerli bir görünüm elde edin.<br /><br /> Çağrı [GetActiveDocument](../mfc/reference/cframewnd-class.md#getactivedocument) geçerli görünüme iliştirilmiş belgeye alınamıyor.|
+|MDI çerçeve penceresi|Çağrı [MDIGetActive](../mfc/reference/cmdiframewnd-class.md#mdigetactive) etkin almak için [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md).|
+
+Genellikle, tek bir görünümde bir çerçeve penceresi sahiptir, ancak bazı durumlarda, bölümlendirici pencereler olduğu gibi aynı çerçeve penceresi birden çok görünüm içerir. Çerçeve penceresi şu anda etkin görünüm için bir işaretçi tutar; İşaretçiyi, başka bir görünüme etkinleştirilir dilediğiniz zaman güncelleştirilir.
+
 > [!NOTE]
->  Ana çerçeve penceresi için bir işaretçi depolanan [m_pMainWnd](../mfc/reference/cwinthread-class.md#m_pmainwnd) üye değişkeni uygulama nesnesi. Çağrı `OnFileNew` geçersiz kılma içinde `InitInstance` üye işlevini `CWinApp` ayarlar *m_pMainWnd* sizin için. Değil çağırırsanız `OnFileNew`, değişkenin değerini ayarlamanız gerekir `InitInstance` kendiniz. (/Embedding komut satırında ise SDI COM bileşeni (sunucu) uygulamaları değişkeni ayarlamaz.) Unutmayın *m_pMainWnd* şimdi sınıf üyesi olan `CWinThread` yerine `CWinApp`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)   
- [Belge şablonu oluşturma](../mfc/document-template-creation.md)   
- [Belge/görünüm oluşturma](../mfc/document-view-creation.md)   
- [Yeni Belgeler, Pencereler ve Görünümler Oluşturma](../mfc/creating-new-documents-windows-and-views.md)
+>  Ana çerçeve penceresine bir işaretçi depolanan [m_pMainWnd](../mfc/reference/cwinthread-class.md#m_pmainwnd) üye değişkeni uygulama nesnesi. Bir çağrı `OnFileNew` kılacağınızı içinde `InitInstance` üye işlevinin `CWinApp` ayarlar *m_pMainWnd* sizin için. Değil çağırırsanız `OnFileNew`, değişkenin değeri ayarlamanız gerekir `InitInstance` kendiniz. (Komut satırında/Embedding ise SDI COM bileşeni (sunucu) uygulamaları değişkeni ayarlanmamış.) Unutmayın *m_pMainWnd* artık sınıfın bir üyesidir `CWinThread` yerine `CWinApp`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
+[Belge Şablonu Oluşturma](../mfc/document-template-creation.md)<br/>
+[Belge/görünüm oluşturma](../mfc/document-view-creation.md)<br/>
+[Yeni Belgeler, Pencereler ve Görünümler Oluşturma](../mfc/creating-new-documents-windows-and-views.md)
 

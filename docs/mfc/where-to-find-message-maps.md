@@ -17,27 +17,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19dfaec7d97bed560665fce25c2ddf2cc816a483
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 81958eda508a3e0b4b93ac0d169f3aa3bfece2a2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383399"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46434277"
 ---
 # <a name="where-to-find-message-maps"></a>İleti Eşlemelerinin Bulunduğu Yer
-Uygulama Sihirbazı'nı yeni bir iskelet uygulaması oluşturduğunuzda Uygulama Sihirbazı'nı sizin için oluşturduğu her komut hedefi sınıfı için ileti eşlemesi yazar. Bu türetilmiş uygulama, belge, Görünüm ve çerçeve penceresi sınıfları içerir. Bu ileti eşlemeleri bazıları belirli iletiler ve önceden tanımlanmış komutlar için Uygulama Sihirbazı tarafından sağlanan girişleri zaten var ve bazı ekleyeceksiniz işleyicileri yalnızca yer tutucular içerir.  
-  
- Sınıf ileti eşlemesi bulunur. Sınıfı için CPP dosya. Uygulama Sihirbazı'nı oluşturan temel ileti Eşlemleriyle Çalışma, Özellikler penceresini iletiler ve her sınıf işleyecek komutlar için girişleri eklemek için kullanın. Bazı girişler ekledikten sonra normal ileti eşlemesi şuna benzeyebilir:  
-  
- [!code-cpp[NVC_MFCMessageHandling#1](../mfc/codesnippet/cpp/where-to-find-message-maps_1.cpp)]  
-  
- İleti eşleme makroları koleksiyonunu içerir. İki makroları [begın_message_map](reference/message-map-macros-mfc.md#begin_message_map) ve [END_MESSAGE_MAP](reference/message-map-macros-mfc.md#end_message_map), ileti eşlemesi köşeli ayraç. Diğer makrolar gibi `ON_COMMAND`, ileti haritanın içeriğini doldurun.  
-  
+
+Uygulama sihirbazıyla yeni bir çatı uygulama oluşturduğunuzda, Uygulama Sihirbazı'nı sizin için oluşturduğu her komut hedefi sınıfı için ileti eşlemesi yazar. Bu, türetilmiş bir uygulama, belge, Görünüm ve çerçeve penceresi sınıfları içerir. Bu ileti eşlemeleri bazıları belirli iletileri ve önceden tanımlanmış komutları için Uygulama Sihirbazı tarafından sağlanan girişler zaten varsa ve ekleyeceğiniz işleyicileri yalnızca yer tutucular bazılarıdır.
+
+Bir sınıfın ileti eşlemesi bulunur. Sınıf için CPP dosyasının. Uygulama Sihirbazı oluşturur temel ileti eşlemeleri ile çalışmak, Özellikler penceresinde iletileri ve her sınıf işleyecek komutları girdileri eklemek üzere kullanın. Bazı girişler ekledikten sonra tipik bir ileti eşlemesi aşağıdakine benzeyebilir:
+
+[!code-cpp[NVC_MFCMessageHandling#1](../mfc/codesnippet/cpp/where-to-find-message-maps_1.cpp)]
+
+İleti eşleme makroları koleksiyonunu oluşur. İki makro [begın_message_map](reference/message-map-macros-mfc.md#begin_message_map) ve [END_MESSAGE_MAP](reference/message-map-macros-mfc.md#end_message_map), ileti eşlemesi köşeli ayraç. Diğer makrolar gibi `ON_COMMAND`, ileti haritanın içerikleri doldurun.
+
 > [!NOTE]
->  İleti eşleme makroları noktalı virgülle izlenmeyen.  
-  
- Yeni bir sınıf oluşturmak için sınıfı Ekle Sihirbazı'nı kullandığınızda, ileti eşlemesi için sınıf sağlar. Alternatif olarak, kaynak kodu Düzenleyicisi'ni kullanarak el ile bir ileti eşlemesi oluşturabilirsiniz.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework'ün İleti Eşlemelerini Araması](../mfc/how-the-framework-searches-message-maps.md)
+>  İleti eşleme makroları, noktalı virgül tarafından izlenmeyen.
+
+Yeni bir sınıf oluşturmak için Sınıf Ekle sihirbazını kullandığınızda, ileti eşlemesi için sınıf sağlar. Alternatif olarak, Kaynak Kod Düzenleyicisi'ni kullanarak el ile ileti eşlemesi oluşturabilirsiniz.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Framework'ün İleti Eşlemelerini Araması](../mfc/how-the-framework-searches-message-maps.md)
 

@@ -15,29 +15,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0e3935b168220b528afaecd2e1438cfe49496b1b
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: f34fb2a019e922f7eed3a430e62be272f9d57dce
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313669"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427296"
 ---
 # <a name="attribute-contexts"></a>Öznitelik Bağlamları
 C++ öznitelikleri, dört temel alan kullanarak tanımlanabilen: Bunlar uygulanabilir hedef (**uygulanacağı**), tekrarlanabilir olsalar da (**Repeatable**), diğer öznitelikleri (varlığınıgerekli **Gerekli öznitelik**) ve diğer özniteliklerini uyumsuzluklar (**geçersiz öznitelikler**). Bu alanlar, her özniteliğin başvuru konusu eşlik eden bir tabloda listelenir. Bu alanların her biri aşağıda açıklanmıştır.
   
 ## <a name="applies-to"></a>Uygulandığı öğe:
- Bu alan, belirtilen öznitelik için yasal hedefleri olan farklı C++ dil öğeleri açıklar. Örneğin, "class" bir öznitelik belirtir, **uygulanacağı** alan, bu gösterir öznitelik yalnızca geçerli bir C++ sınıfı için uygulanabilir. Öznitelik bir sınıfın bir üye işlevine uygulandığında sözdizimi hatası neden olur.
+
+Bu alan, belirtilen öznitelik için yasal hedefleri olan farklı C++ dil öğeleri açıklar. Örneğin, "class" bir öznitelik belirtir, **uygulanacağı** alan, bu gösterir öznitelik yalnızca geçerli bir C++ sınıfı için uygulanabilir. Öznitelik bir sınıfın bir üye işlevine uygulandığında sözdizimi hatası neden olur.
   
- Daha fazla bilgi için [kullanıma göre öznitelikler](../windows/attributes-by-usage.md).
+Daha fazla bilgi için [kullanıma göre öznitelikler](../windows/attributes-by-usage.md).
   
 ## <a name="repeatable"></a>Tekrarlanabilir
- Bu alan özniteliği aynı hedefe art arda uygulanabilir olup olmadığını belirtir. Özniteliklerin çoğu tekrarlanabilir değildir.
+
+Bu alan özniteliği aynı hedefe art arda uygulanabilir olup olmadığını belirtir. Özniteliklerin çoğu tekrarlanabilir değildir.
   
 ## <a name="required-attributes"></a>Gerekli öznitelikleri
- Bu alan olması gereken diğer özniteliklerini listeler (yani aynı hedefe) düzgün çalışması belirtilen öznitelik varsa. Bu alan herhangi bir giriş bir öznitelik için seyrek.
+
+Bu alan olması gereken diğer özniteliklerini listeler (yani aynı hedefe) düzgün çalışması belirtilen öznitelik varsa. Bu alan herhangi bir giriş bir öznitelik için seyrek.
   
 ## <a name="invalid-attributes"></a>Geçersiz öznitelikler
- Bu alan, belirtilen bir öznitelik ile uyumsuz olan diğer öznitelikleri listeler. Bu alan herhangi bir giriş bir öznitelik için seyrek.
+
+Bu alan, belirtilen bir öznitelik ile uyumsuz olan diğer öznitelikleri listeler. Bu alan herhangi bir giriş bir öznitelik için seyrek.
   
 ## <a name="see-also"></a>Ayrıca Bkz.
- [C++ Öznitelikleri Başvurusu](../windows/cpp-attributes-reference.md)
+
+[C++ Öznitelikleri Başvurusu](../windows/cpp-attributes-reference.md)

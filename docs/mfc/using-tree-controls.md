@@ -15,31 +15,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9cb5c8892583adac01ca883034b8c0af18595c9
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 1fc3efbf48a9005bf117c2dd7ab5f1bd01ed556d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36954601"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46403688"
 ---
 # <a name="using-tree-controls"></a>Ağaç Denetimlerini Kullanma
-Ağaç denetimi tipik kullanımını ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) deseni izler:  
-  
--   Denetim oluşturulur. Denetim bir iletişim kutusu şablonunda belirtilirse veya kullanıyorsanız, `CTreeView`, oluşturma, iletişim kutusu veya Görünüm oluşturulduğunda otomatiktir. Ağaç denetimi alt pencere başka bir pencere olarak oluşturmak istiyorsanız, kullanmak [oluşturma](../mfc/reference/ctreectrl-class.md#create) üye işlevi.  
-  
--   Ağaç denetim görüntüleri kullanmak istiyorsanız, bir resim listesi aranarak [SetImageList](../mfc/reference/ctreectrl-class.md#setimagelist). Çağırarak girinti değiştirebilirsiniz [SetIndent](../mfc/reference/ctreectrl-class.md#setindent). Bunu yapmak için iyi bir zamandır bulunduğu [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) (için iletişim kutularındaki denetimler) veya [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) (için görünümler).  
-  
--   Verileri çağırarak denetime yerleştirme `CTreeCtrl`'s [InsertItem](../mfc/reference/ctreectrl-class.md#insertitem) işlevi için her bir veri öğesi için bir kez. `InsertItem` tanıtıcı döndürür, daha sonra zaman gibi başvurduğu için kullanabileceğiniz öğesine alt öğeleri ekleniyor. Verileri başlatma için iyi bir zamandır bulunduğu `OnInitDialog` (için iletişim kutularındaki denetimler) veya `OnInitialUpdate` (için görünümler).  
-  
--   Kullanıcı denetimi ile etkileşim gibi çeşitli bildirim iletileri gönderir. Her denetim pencerenin ileti eşlemesinde on_notıfy_reflect makrosu ekleyerek veya üst pencerenin ileti eşlemesi on_notıfy makrosu ekleyerek işlemek istediğiniz iletileri işlemek için bir işlev belirtebilirsiniz. Bkz: [ağaç denetimi bildirim iletileri](../mfc/tree-control-notification-messages.md) olası bildirimler listesi için bu konudaki sonraki.  
-  
--   Denetim değerlerini ayarlamak için çeşitli kümesi üye işlevleri çağırma. Yaptığınız değişiklikler girinti ayarlama ve metin, görüntü veya bir öğesiyle ilişkilendirilmiş verileri değiştirme içerir.  
-  
--   Denetimin içeriğini incelemek için çeşitli Get işlevleri kullanın. Ağaç denetimi üst, alt öğelerini ve belirtilen öğesinin eşdüzey işleyicilerine almanıza olanak sağlayan işlevler ile içeriğini de geçebilir. Düğümün alt öğelerinin belirli bile sıralayabilirsiniz.  
-  
--   Denetimle bittiğinde, düzgün bir şekilde yok emin olun. Ağaç denetimi iletişim kutusudur veya bir görünüm ise, onu ve `CTreeCtrl` nesne yok otomatik olarak. Her iki denetimi emin olmak ihtiyacınız olmayan, varsa ve `CTreeCtrl` nesne düzgün yok.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CTreeCtrl kullanma](../mfc/using-ctreectrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Ağaç denetimi tipik kullanımını ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) aşağıdaki deseni izler:
+
+- Denetim oluşturulur. Denetim bir iletişim kutusu şablonunda belirtilirse veya kullanıyorsanız `CTreeView`, oluşturma, iletişim kutusu ya da Görünüm oluşturulduğunda otomatiktir. Ağaç denetimi başka bir pencere bir alt pencere olarak oluşturmak istediğiniz kullanırsanız [Oluştur](../mfc/reference/ctreectrl-class.md#create) üye işlevi.
+
+- Görüntüleri kullanmak için ağaç denetimi istiyorsanız, bir görüntü listesi çağırarak ayarlayın [SetImageList](../mfc/reference/ctreectrl-class.md#setimagelist). Çağırarak girinti değiştirebilirsiniz [SetIndent](../mfc/reference/ctreectrl-class.md#setindent). Bunu yapmak için iyi bir zaman yer [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) (için iletişim kutularındaki denetimler) veya [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) (için görünümler).
+
+- Çağırarak denetime verilerinizden `CTreeCtrl`'s [InsertItem](../mfc/reference/ctreectrl-class.md#insertitem) işlevi için her bir veri öğesi için bir kez. `InsertItem` öğesine daha sonra ne zaman gibi başvurduğu için kullanabileceğiniz bir tanıtıcı döndürür, alt öğe ekleme. Verileri başlatma zamanı bulunduğu `OnInitDialog` (için iletişim kutularındaki denetimler) veya `OnInitialUpdate` (için görünümler).
+
+- Kullanıcı denetimle etkileşim gibi çeşitli bildirim iletileri gönderir. Her on_notıfy_reflect makrosu ileti eşlemede denetimi pencerenin ekleme veya ana pencerenin ileti eşlemesi için on_notıfy makrosu ekleyerek işlemek istediğiniz tüm iletileri işlemek için bir işlev belirtebilirsiniz. Bkz: [ağaç denetimi bildirim iletileri](../mfc/tree-control-notification-messages.md) olası bildirimler listesi için bu konuda daha sonra.
+
+- Denetim değerlerini ayarlamak için çeşitli küme üyesi işlevleri çağırın. Yaptığınız değişiklikler girinti ayarlama ve text, Image veya bir öğeyle ilişkili veri değiştirme içerir.
+
+- Denetimin içeriğini incelemek için çeşitli Get işlevlerini kullanın. Ağaç denetimi üst, alt ve eşdüzey belirtilen öğe tanıtıcıları almanızı sağlayan işlevler ile içeriğini çapraz geçiş yapabilirsiniz. Belirli bir düğüm alt bile sıralayabilirsiniz.
+
+- Denetim ile işiniz bittiğinde, düzgün bir şekilde imha emin olun. Ağaç denetimi içinde bir iletişim kutusu ise ya da bir görünüm ise bunu ve `CTreeCtrl` nesne otomatik olarak silinecektir. Her iki denetim sağlamak ihtiyacınız değil, varsa ve `CTreeCtrl` nesne düzgün bir şekilde yok.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CTreeCtrl Kullanma](../mfc/using-ctreectrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

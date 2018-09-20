@@ -18,60 +18,63 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9884cd8aec09bfcefaa8455457a3a4d3bb5b3d3d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: f2ba9322f4fe94c1c857b0494dc79b417e5d65d8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219237"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46433906"
 ---
 # <a name="debugbreak"></a>__debugbreak
-**Microsoft'a özgü**  
-  
- Bir kesme noktası, kullanıcı hata ayıklayıcıyı çalıştırmak için burada istenir kodunuzda neden olur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void __debugbreak();  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|Üstbilgi|  
-|---------------|------------------|------------|  
-|`__debugbreak`|x86, ARM, x64|\<intrin.h >|  
-  
-## <a name="remarks"></a>Açıklamalar  
- `__debugbreak` Derleyici iç, benzer [DebugBreak](https://msdn.microsoft.com/library/windows/desktop/ms679297.aspx), bir kesme noktası neden taşınabilir bir Win32 yolu.  
-  
+
+**Microsoft'a özgü**
+
+Bir kesme noktası, kullanıcı hata ayıklayıcıyı çalıştırmak için burada istenir kodunuzda neden olur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void __debugbreak();
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|Üstbilgi|
+|---------------|------------------|------------|
+|`__debugbreak`|x86, ARM, x64|\<intrin.h >|
+
+## <a name="remarks"></a>Açıklamalar
+
+`__debugbreak` Derleyici iç, benzer [DebugBreak](https://msdn.microsoft.com/library/windows/desktop/ms679297.aspx), bir kesme noktası neden taşınabilir bir Win32 yolu.
+
 > [!NOTE]
->  İle derlerken **/CLR**, işlevi içeren `__debugbreak` MSIL olarak derlenmiş. `asm int 3` bir işlev için yerel olarak derlenmesine neden olur. Daha fazla bilgi için [__asm](../assembler/inline/asm.md).  
-  
- Örneğin:  
-  
-```  
-main() {  
-   __debugbreak();  
-}  
-```  
-  
- benzer:  
-  
-```  
-main() {  
-   __asm {  
-      int 3  
-   }  
-}  
-```  
-  
- x x86 bilgisayar.  
-  
- Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)
+>  İle derlerken **/CLR**, işlevi içeren `__debugbreak` MSIL olarak derlenmiş. `asm int 3` bir işlev için yerel olarak derlenmesine neden olur. Daha fazla bilgi için [__asm](../assembler/inline/asm.md).
+
+Örneğin:
+
+```
+main() {
+   __debugbreak();
+}
+```
+
+benzer:
+
+```
+main() {
+   __asm {
+      int 3
+   }
+}
+```
+
+x x86 bilgisayar.
+
+Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

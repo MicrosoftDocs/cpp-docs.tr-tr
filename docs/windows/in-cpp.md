@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6c447147802d91df0f280a82c61d919ee673970a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cd6b79d84e4737cdbeb670bdd31b8cacf35cf8f1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222996"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46373393"
 ---
 # <a name="in-c"></a>in (C++)
 
@@ -57,9 +57,9 @@ Bkz: [bağlanabilir](../windows/bindable.md) nasıl kullanılacağına ilişkin 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Parametre Öznitelikleri](../windows/parameter-attributes.md)  
-[Yöntem Öznitelikleri](../windows/method-attributes.md)  
-[defaultvalue](../windows/defaultvalue.md)  
-[id](../windows/id.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Parametre Öznitelikleri](../windows/parameter-attributes.md)<br/>
+[Yöntem Öznitelikleri](../windows/method-attributes.md)<br/>
+[defaultvalue](../windows/defaultvalue.md)<br/>
+[id](../windows/id.md)<br/>
 [out](../windows/out-cpp.md)  

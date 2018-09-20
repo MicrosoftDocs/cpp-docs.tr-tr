@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2ae36838a1375b541951122bb00b522cf320650d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a90a7c82706adead4379152b78d36e4dd4b91673
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599761"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46416233"
 ---
 # <a name="module-class"></a>Modül Sınıfı
 
@@ -43,7 +43,7 @@ class Module<OutOfProc> : public Module<InProc>;
 
 ### <a name="parameters"></a>Parametreler
 
-*moduleType*  
+*moduleType*<br/>
 Bir veya daha fazla birleşimi [ModuleType](../windows/moduletype-enumeration.md) sabit listesi değerleri.
 
 ## <a name="members"></a>Üyeler

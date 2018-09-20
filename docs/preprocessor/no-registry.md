@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 105c2b0ee4d2648a1cc43d0baca9f30146184e78
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 8071fdf5e18542273dddfacecca913130e7bdea6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42466054"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46381237"
 ---
 # <a name="noregistry"></a>no_registry
 **no_registry** derleyiciye tür kitaplıklarını içeri için kayıt defterini aranmayacak `#import`.  
@@ -48,5 +48,5 @@ Zaman `auto_search` belirtilirse, ek `#import`s ile oluşturulacak **no_registry
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

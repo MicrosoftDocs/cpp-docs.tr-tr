@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 213bfd9dc5c07ad1b3ef811b9333cb12bf9c2b7a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b6ac44a9a27b5c3ad62279dc3065aa9e0aac5236
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755610"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378234"
 ---
 # <a name="cfixedstringt-class"></a>CFixedStringT sınıfı
 
@@ -141,7 +141,7 @@ Bilmeniz gereken yeni depolama genellikle sonuç tutmak için ayrılmış olduğ
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CStringT sınıfı](../../atl-mfc-shared/reference/cstringt-class.md)   
-[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
+[CStringT Sınıfı](../../atl-mfc-shared/reference/cstringt-class.md)<br/>
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 

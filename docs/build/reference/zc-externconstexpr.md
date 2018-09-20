@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34aea466a3e673c3eebb3b415d544d9299fed615
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ac52c073135ecc88536b6aaa2beee7308ba53b9c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713148"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419132"
 ---
 # <a name="zcexternconstexpr-enable-extern-constexpr-variables"></a>/ ZC: externconstexpr (extern constexpr değişkenlerini etkinleştir)
 
@@ -48,5 +48,5 @@ Bir üstbilgi dosyası bildirilen bir değişken içeriyorsa `extern constexpr`,
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[/ZC (Uyumluluk)](../../build/reference/zc-conformance.md)
-[auto anahtar sözcüğü](../../cpp/auto-keyword.md)
+[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)<br/>
+[auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)

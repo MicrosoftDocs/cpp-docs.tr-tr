@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb9d7b950e4c38ea53db6e459edfa1a179eb971d
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 62404de4012bcd49888da527ae93ed1b2137a48a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465448"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374151"
 ---
 # <a name="use-native-multi-targeting-in-visual-studio-to-build-old-projects"></a>Yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanın
 
@@ -70,19 +70,11 @@ Bu değişiklikten sonra Visual Studio 2008 derleyici ve kitaplıkları, Visual 
 
 Olamaz ya da yükseltmek istemediğiniz eski bir Visual C++ projesi, ancak projenizi eşleşen olmayan platform araç kümesi sürümünü olabilir. Bu durumda, araç takımı almak için ücretsiz Visual Studio Community'yi veya ihtiyacınız olan sürümü Express sürümü yükleyebilirsiniz. Visual Studio 2008'den Visual Studio'nun her sürümü, derleyici, araçları ve kitaplıklarını geçerli Visual Studio, sürümünü hedefleyecek şekilde ihtiyacınız yükleyebilmek için. Bul ve Visual Studio'nun belirli bir sürümü indirmek için Microsoft Download Center arayın. Kurulum sırasında C++ yükleme seçenekleri seçtiğinizden emin olun. Kurulum tamamlandıktan sonra tüm güncelleştirmeleri yüklemek için Visual Studio'nun bu sürümü çalıştırın. Ayrıca Windows Update değişiklikleri için gerekli olabilecek denetleyin. Bu güncelleştirme onay işlemi her güncelleştirmeyi almak için birden fazla kez yinelenen gerekebilir.
 
-Visual Studio indirmeleri ihtiyacınız olabilecek bazıları şunlardır:
-
-  - [Microsoft Visual Studio Community 2015](https://www.microsoft.com/download/details.aspx?id=48146)  
-  - [Microsoft Visual Studio 2013 güncelleştirme 5 ile Windows Masaüstü için Express](https://www.microsoft.com/download/details.aspx?id=48131)  
-  - [Windows Masaüstü için Microsoft Visual Studio Express 2012](https://www.microsoft.com/download/details.aspx?id=34673)  
-  - [Visual Studio 2012 Güncelleştirme 5](https://www.microsoft.com/download/details.aspx?id=34673)  
-  - [Microsoft Visual C++ 2010 Express (Web Yükleyicisi)](https://download.microsoft.com/download/1/D/9/1D9A6C0E-FC89-43EE-9658-B9F0E3A76983/vc_web.exe)  
-  - [Microsoft Visual Studio 2010 Hizmet Paketi 1](https://www.microsoft.com/download/details.aspx?id=23691)  
-  - [Microsoft Visual C++ 2008 Express SP1 (Web Yükleyicisi)](https://go.microsoft.com/?linkid=7729279)  
+Şu anda kullanılabilir yüklemeler için bkz: [eski Visual Studio yazılımını indirme](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 Bu ürünler yüklü olduğunda **Platform araç takımını** özellik açılan menü **özellik sayfaları** iletişim kutusu kullanılabilir takımları gösterecek şekilde otomatik olarak güncelleştirilir. Şimdi, dönüştürme veya yükseltilirken araç bu eski sürümler için projeleri derlemek için Visual Studio'nun en son sürümünü kullanabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
+[Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md)  

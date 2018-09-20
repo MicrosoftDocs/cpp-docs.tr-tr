@@ -12,41 +12,42 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c054c7f0ac7d1d73768d84613524afc979fecaa5
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 047110fe80d15d0ff3d979eeec8abf3e42dc35f1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695882"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46401569"
 ---
 # <a name="2725-default"></a>2.7.2.5 default
-**Varsayılan** yan tümcesi değişkenleri veri paylaşımı özniteliklerini etkileyen kullanıcıya izin verir. Söz dizimi **varsayılan** yan tümcesi aşağıdaki gibidir:  
-  
-```  
-default(shared | none)  
-```  
-  
- Belirtme **default(shared)** açıkça her görünen bir değişken listesi için eşdeğer bir gruba bir **paylaşılan** yan tümcesi olduğu sürece **threadprivate** veya **cons**`t`-tam. Açık olmadığında **varsayılan** yan tümcesi, varsayılan davranıştır aynı IF **default(shared)** belirtildi.  
-  
- Belirtme **default(none)** aşağıdakilerden en az birini paralel yapı sözcük kapsamını bir değişkende yapılan her gönderme için doğru olmasını gerektirir:  
-  
--   Değişken bir veri paylaşım öznitelik yan tümcesi başvuru içeren bir yapı içinde açıkça listelenir.  
-  
--   Değişkeni paralel yapı içinde bildirildi.  
-  
--   Bu değişken **threadprivate**.  
-  
--   Değişkeni sahip bir **const**-tam türü.  
-  
--   For döngüsü denetim değişkeniyle değişkenidir bir **için** hemen izleyen döngü bir **için** veya **için paralel** yönergesi ve değişken başvuru döngünün içinde görünür .  
-  
- Bir değişken belirtme bir **firstprivate**, **lastprivate**, veya **azaltma** kapalı yönergesi yan tümcesi kapsayan değişkenine dolaylı bir başvuru neden olur bağlamı. Bu tür örtük başvuruları yukarıda listelenen gereksinimleri de tabidir.  
-  
- Yalnızca tek bir **varsayılan** yan tümcesi belirtilebilir bir **paralel** yönergesi.  
-  
- Bir değişkenin varsayılan veri paylaşım öznitelik kullanarak geçersiz kılınmış **özel**, **firstprivate**, **lastprivate**, **azaltma**, ve **paylaşılan** yan tümceleri, aşağıdaki örnekte gösterildiği gibi:  
-  
-```  
-#pragma  omp  parallel  for  default(shared)  firstprivate(i)\  
-   private(x)  private(r)  lastprivate(i)  
+
+**Varsayılan** yan tümcesi değişkenlerin veri paylaşımı öznitelikleri etkiler kullanıcıya izin verir. Söz dizimi **varsayılan** yan tümcesi şu şekildedir:
+
+```
+default(shared | none)
+```
+
+Belirtme **default(shared)** açıkça görünür her bir değişken listesi için eşdeğer bir gruba bir **paylaşılan** yan tümcesi olduğu sürece **threadprivate** veya **olumsuz**`t`-tam. Açık bir olmadığında **varsayılan** yan tümcesi, varsayılan davranış, aynı ise **default(shared)** belirtildi.
+
+Belirtme **default(none)** aşağıdakilerden en az birini sözcük ölçüde paralel yapısının bir değişkende yapılan her gönderme true olmasını gerektirir:
+
+- Değişken bir veri paylaşım öznitelik yan tümcesinde başvuru içeren bir yapısı açıkça listelenir.
+
+- Değişkeni içinde paralel yapısı bildirilir.
+
+- Bu değişken **threadprivate**.
+
+- Değişkenin bir **const**-tam türü.
+
+- For döngüsü denetim değişkeniyle değişkendir bir **için** hemen takip eden döngü bir **için** veya **için paralel** yönergesi ve değişken başvurusu, döngünün içinde görünür .
+
+Bir değişken belirterek bir **firstprivate**, **lastprivate**, veya **azaltma** kapalı bir yönerge yan tümcesi kapsayan değişkeni örtük bir başvuru neden olur bağlamı. Örtük tür başvurular da, yukarıda listelenen gereksinimlerin tabidir.
+
+Yalnızca tek bir **varsayılan** yan tümcesi belirtilebilir bir **paralel** yönergesi.
+
+Bir değişkenin varsayılan kullanarak veri paylaşım öznitelik kılınabilir **özel**, **firstprivate**, **lastprivate**, **azaltma**, ve **paylaşılan** yan tümceleri, aşağıdaki örnekte gösterildiği gibi:
+
+```
+#pragma  omp  parallel  for  default(shared)  firstprivate(i)\
+   private(x)  private(r)  lastprivate(i)
 ```

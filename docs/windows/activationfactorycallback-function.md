@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7979dd21d68c5b1e2606573a5271fc8deafdfb07
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 62efb2b1aa2cd2caa0c5701696689ea3df19f962
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604186"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46443624"
 ---
 # <a name="activationfactorycallback-function"></a>ActivationFactoryCallback İşlevi
 
@@ -39,10 +39,10 @@ inline HRESULT STDAPICALLTYPE ActivationFactoryCallback(
 
 ### <a name="parameters"></a>Parametreler
 
-*Activationıd*  
+*Activationıd*<br/>
 Bir çalışma zamanı sınıfı adının belirten bir dize için işler.
 
-*ppFactory*  
+*ppFactory*<br/>
 Bu işlem tamamlandığında, parametresine karşılık geldiği bir etkinleştirme fabrikası *Activationıd*.
 
 ## <a name="return-value"></a>Dönüş Değeri

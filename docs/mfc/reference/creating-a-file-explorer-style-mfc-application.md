@@ -18,48 +18,50 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a2c3e8e1c7956a5dff33cd8ff78612f5f844ad6
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: ff6e3796de3f37275d136cc378e402d4c3272637
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37078427"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442207"
 ---
 # <a name="creating-a-file-explorer-style-mfc-application"></a>Dosya Gezgini Stilinde MFC Uygulaması Oluşturma
-Birçok Windows sistem uygulama kullanıcı arabirimi (UI) için dosya Gezgini'ni kullanın. Örneğin, dosya Explorer'ı başlattığınızda, uygulama istemci alanını bölme çubuğu Dikey bölme ile bakın. İstemci alanını sol tarafındaki gezinti ve göz atma özellikleri sağlar ve istemci alanını sağ tarafındaki ayrıntıları seçime uygun sol bölmede gösterir. Bir kullanıcı sol bölmesindeki bir öğeyi tıklattığında, uygulamayı sağ bölmede yeniden doldurur. MDI uygulamada üzerinde komutlarını kullanabilirsiniz **Görünüm** sağ bölmede gösterilen ayrıntı miktarını değiştirmek için menüsü. (Bir SDI veya birden çok üst düzey belge uygulama, yalnızca araç çubuğu düğmelerini kullanarak ayrıntı değiştirebilirsiniz.)  
-  
- Bölmeleri içeriğini uygulamaya göre değişir. Sağ bölmede klasörler, tek tek dosyaların veya makineler ve bunları ayrıntılarını görüntülerken bir dosya sistemi tarayıcıda sol bölmede dizinlerin veya makineler veya makine grupları, hiyerarşik bir görünümü gösterir. İçeriği mutlaka dosyaları olması gerekmez. Bunlar, e-posta iletileri, hata raporlarını veya diğer öğeler bir veritabanında olabilir.  
-  
- Sihirbaz aşağıdaki sınıflar sizin için oluşturur:  
-  
--   `CLeftView` Sınıfı istemci alanını sol bölmesinde tanımlar. Bu her zaman türetilir [CTreeView](../../mfc/reference/ctreeview-class.md).  
-  
--   C*ProjName*görünüm sınıfı istemci alanını sağ bölmesinde tanımlar. Öğesinden türetilen varsayılan olarak, [CListView](../../mfc/reference/clistview-class.md) ancak başka bir görünüme bağlı olarak, belirttiğiniz sınıf türünde olabilir **temel sınıfı** listesinde [oluşturulan sınıflar](../../mfc/reference/generated-classes-mfc-application-wizard.md) sayfası Sihirbazı.  
-  
- Oluşturulan uygulamanın tek belge arabirimi (SDI), birden çok belge arabirimi (MDI) veya birden çok üst düzey belgeleri mimarisi olabilir. Bir uygulama oluşturur her çerçeve penceresi kullanarak Dikey bölme [CSplitterWnd](../../mfc/reference/csplitterwnd-class.md). Bu uygulama türü kodlama, bu tür bir uygulama her Bölümlendirici bölmesinden ayrı denetim görünümleri olan bir ayırıcı kullanan normal bir MFC uygulaması kodlama için benzer.  
-  
- Sağ bölmede varsayılan liste görünümünü kullanıyorsanız, sihirbaz ek menü seçenekleri (yalnızca MDI uygulamalarda) ve araç çubuğu düğmeleri Görünüm stilini büyük simgeler, küçük simgeler, liste ve ayrıntı modlar arasında geçiş yapmak için oluşturur.  
-  
-### <a name="to-begin-creating-a-file-explorer-style-mfc-executable"></a>Dosya Gezgini stilinde MFC yürütülebilir oluşturmaya başlamak için  
-  
-1.  İçindeki yönergeleri izleyin [MFC uygulaması oluşturma](../../mfc/reference/creating-an-mfc-application.md).  
-  
-2.  MFC Uygulama Sihirbazı'nda [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md) sayfasında, **dosya Gezgini** proje stili.  
-  
-3.  Diğer sihirbaz sayfalarında istediğiniz seçenekleri ayarlayın.  
-  
-4.  Tıklatın **son** iskelet uygulama oluşturun.  
-  
- Daha fazla bilgi için bkz.:  
-  
--   [Birden Fazla Belge Türü, Görünüm ve Çerçeve Penceresi](../../mfc/multiple-document-types-views-and-frame-windows.md)  
-  
--   [Türetilmiş görünüm sınıfları](../../mfc/derived-view-classes-available-in-mfc.md)  
-  
--   [Uygulama Tasarımı Seçimleri](../../mfc/application-design-choices.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)   
- [Bir Web tarayıcısı stilinde MFC uygulaması oluşturma](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)   
- [Form Tabanlı MFC Uygulaması Oluşturma](../../mfc/reference/creating-a-forms-based-mfc-application.md)
+
+Çoğu Windows Sistem uygulamaları kullanıcı arabirimi (UI) için dosya Gezgini'ni kullanın. Örneğin, dosya Gezgini başlattığınızda, uygulama istemci alanını bölme çubuğu dikey bir ayırıcı ile bakın. İstemci alanını sol tarafındaki gezinti ve göz atma özellikleri sağlar ve istemci alanının sağ tarafındaki ayrıntıları seçime uygun sol bölmede gösterir. Kullanıcı sol bölmesindeki bir öğeye tıkladığında, uygulamayı sağ bölmeye yeniden doldurur. Bir MDI uygulamasında, şirket komutlarını kullanabilirsiniz **görünümü** sağ bölmede gösterilen ayrıntı miktarını değiştirmek için menü. (Bir SDI veya birden çok en üst düzey belge uygulaması, yalnızca araç çubuğu düğmeleri kullanarak ayrıntılı değiştirebilirsiniz.)
+
+Bölmeleri içeriğini uygulamaya göre değişir. Sağ bölmede, klasörler, tek tek dosyalar ya da makineleri ve bunlarla ilgili ayrıntıları görüntülerken bir dosya sistemi tarayıcıda sol bölmede, dizinleri, makineler veya makine grupları, hiyerarşik bir görünümü gösterir. İçeriği mutlaka dosyaları olması gerekmez. Bunlar, e-posta iletileri, hata raporlarını veya diğer öğeleri bir veritabanı olabilir.
+
+Aşağıdaki sınıflar sihirbaz sizin için oluşturur:
+
+- `CLeftView` İstemci alanını sol bölmesinde sınıfı tanımlar. Bu her zaman türetilir [CTreeView](../../mfc/reference/ctreeview-class.md).
+
+- C*ProjName*istemci alanının sağ bölme görünüm sınıfı tanımlar. Öğesinden türetilen varsayılan olarak, [CListView](../../mfc/reference/clistview-class.md) görünümü, belirttiğiniz sınıfı bağlı olarak başka bir türde olabilir, ancak **temel sınıfı** listesinde [oluşturulan sınıflar](../../mfc/reference/generated-classes-mfc-application-wizard.md) sayfası Sihirbaz.
+
+Oluşturulan uygulamayı tek Belgeli Arabirim (SDI), birden çok Belgeli Arabirim (MDI) veya bir birden çok üst düzey belge mimarisi olabilir. Uygulama oluşturur. her bir çerçeve penceresi kullanarak dikey olarak Böl [CSplitterWnd](../../mfc/reference/csplitterwnd-class.md). Bu uygulama türü kodlama, bu tür bir uygulama her bölme bölmesinden ayrı denetim görünümleri olan bir ayırıcı kullanan normal bir MFC uygulaması kodlamaya benzerdir.
+
+Sağ bölmede varsayılan liste görünümü kullanırsanız, sihirbaz ek menü seçenekleri (yalnızca MDI uygulamalarda) ve araç çubuğu düğmeleri Görünüm stilini büyük simgeler, küçük simgeler, liste ve ayrıntı modları arasında geçiş yapmak için oluşturur.
+
+### <a name="to-begin-creating-a-file-explorer-style-mfc-executable"></a>Dosya Gezgini stilinde MFC yürütülebilir oluşturmaya başlamak için
+
+1. Bölümündeki yönergeleri izleyin [MFC uygulaması oluşturma](../../mfc/reference/creating-an-mfc-application.md).
+
+1. MFC Uygulama Sihirbazı'nda [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md) sayfasında **dosya Gezgini** proje stili.
+
+1. Diğer sihirbaz sayfalarında istediğiniz seçenekleri ayarlayın.
+
+1. Tıklayın **son** çatı uygulama oluşturun.
+
+Daha fazla bilgi için bkz.:
+
+- [Birden Fazla Belge Türü, Görünüm ve Çerçeve Penceresi](../../mfc/multiple-document-types-views-and-frame-windows.md)
+
+- [Türetilmiş görünüm sınıfları](../../mfc/derived-view-classes-available-in-mfc.md)
+
+- [Uygulama Tasarımı Seçimleri](../../mfc/application-design-choices.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)<br/>
+[Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)<br/>
+[Form Tabanlı MFC Uygulaması Oluşturma](../../mfc/reference/creating-a-forms-based-mfc-application.md)
 

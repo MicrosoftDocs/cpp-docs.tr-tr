@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6a92e7904b3b42422bebf5a80e0f1b03dd818f86
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 2e2939c7f0a68401b4c1a8c43b5c6335a0acfcb3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314592"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46403950"
 ---
 # <a name="creating-a-new-custom-or-data-resource-c"></a>Yeni özel veya veri kaynağı (C++) oluşturma
 
@@ -40,9 +40,9 @@ Kaynak normal kaynak betiği (.rc) dosyası sözdizimi kullanılarak ayrı bir d
 
 3. İçinde **derleme zamanı yönergeleri** kutusuna bir `#include` özel kaynağınızı içeren dosyanın adını verir deyimi. Örneğin:
 
-```cpp
+    ```cpp
     #include mydata.rc
- ```
+    ```
 
    Ne tür, yazım ve söz dizimi doğru olduğundan emin olun. İçeriğini **derleme zamanı yönergeleri** kutusunu tam olarak yazdığınız şekilde kaynak betik dosyasına eklenir.
 

@@ -16,28 +16,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10dbef813d922bd01a5f9215b6d6e642349d2b75
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 16b0a558dcae7d2bf35cf530abfea15ef6f8138a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342728"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378104"
 ---
 # <a name="creating-a-modeless-property-sheet"></a>Kalıcı Olmayan Özellik Sayfası Oluşturma
-Normalde, oluşturduğunuz özellik sayfalarını kalıcı olur. Kalıcı özellik sayfası kullanırken, kullanıcının herhangi bir uygulamanın parçası kullanmadan önce özellik sayfasını kapatmalısınız. Bu makalede uygulamanın diğer bölümleri kullanırken özellik sayfası açık tutmak kullanıcıya izin veren bir kalıcı olmayan özellik sayfası oluşturmak için kullanabileceğiniz yöntemleri açıklar.  
-  
- Kalıcı olmayan iletişim kutusu yerine bir modal iletişim kutusu olarak olarak bir özellik sayfasını görüntülemek için arama [CPropertySheet::Create](../mfc/reference/cpropertysheet-class.md#create) yerine [DoModal](../mfc/reference/cpropertysheet-class.md#domodal). Kalıcı olmayan özellik sayfası desteklemek için bazı ek görevler de uygulamanız gerekir.  
-  
- Ek görevlerden birini özellik sayfasında ve özellik sayfası açık olduğunda değiştirme dış nesnesi arasında veri değiştiriyor. Bu, genellikle standart kalıcı olmayan iletişim kutuları için olduğu gibi aynı görevi içindir. Bu görev parçası kalıcı olmayan özellik sayfası ve özellik ayarları uygulandığı dış nesne arasındaki iletişim kanalı uygular. Bu uygulama öğesinden bir sınıf türetirseniz kadar kolaydır [CPropertySheet](../mfc/reference/cpropertysheet-class.md) kalıcı olmayan özellik sayfası için. Bu makalede, bunu yaptığınız varsayılmaktadır.  
-  
- Kalıcı olmayan özellik sayfası ve dış iletişim için bir yöntem (örneğin bir görünüm geçerli seçim) nesnesidir dış nesne için özellik sayfasından bir işaretçi tanımlamak için. Bir işlev tanımlayın (aşağıdakine benzer olarak adlandırılan `SetMyExternalObject`) içinde `CPropertySheet`-türetilmiş sınıf odağı bir dış nesneden değiştiğinde işaretçinin değiştirin. `SetMyExternalObject` İşlevi yeni seçilen dış nesneyi yansıtmak için her özellik sayfası ayarlarını sıfırla gerekiyor. Bunu başarmak için `SetMyExternalObject` işlevi erişebilir olmalıdır [CPropertyPage](../mfc/reference/cpropertypage-class.md) ait nesneleri `CPropertySheet` sınıfı.  
-  
- Özellik sayfaları bir özellik sayfası içinde erişim sağlamak için en uygun katıştırmak için yoludur `CPropertyPage` nesnelerini `CPropertySheet`-türetilmiş bir nesne içermelidir. Katıştırma `CPropertyPage` nesnelerini `CPropertySheet`-türetilen nesne farklı özellik sayfasını sahibi oluşturur, kalıcı iletişim kutuları için tipik Tasarım olarak `CPropertyPage` nesneleri ve özellik sayfası geçirir [ CPropertySheet::AddPage](../mfc/reference/cpropertysheet-class.md#addpage).  
-  
- Kalıcı olmayan özellik sayfası ayarları için dış nesne zaman uygulanması gereken belirlemek için çok sayıda kullanıcı arabirimi seçenekleri vardır. Bir kullanıcının herhangi bir değer değiştiğinde geçerli özellik sayfası ayarları uygulamak için alternatiftir. Başka bir alternatif, dış nesnesine kaydetmeden önce değişiklikler özellik sayfalarındaki birikmesini olanak tanır. bir Uygula düğmesini sağlamaktır. Uygula düğmesini işleme için yollar hakkında daha fazla bilgi için bkz: [Uygula düğmesini işleme](../mfc/handling-the-apply-button.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özellik sayfaları](../mfc/property-sheets-mfc.md)   
- [Veri Değişimi](../mfc/exchanging-data.md)   
- [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+
+Normalde, oluşturduğunuz özellik sayfalarını kalıcı olur. Bir kalıcı özellik sayfası kullanılırken, kullanıcının herhangi bir uygulamanın parçası kullanmadan önce özellik sayfasını kapatmalısınız. Bu makalede, özellik sayfası kullanılırken uygulamanın diğer kısımlarını açık tutmak kullanıcıya izin veren bir kalıcı olmayan özellik sayfası oluşturmak için kullanabileceğiniz yöntemleri açıklar.
+
+Bir özellik sayfası yerine modsuz iletişim kutusu olarak kalıcı bir iletişim kutusu görüntülemek için çağrı [CPropertySheet::Create](../mfc/reference/cpropertysheet-class.md#create) yerine [DoModal](../mfc/reference/cpropertysheet-class.md#domodal). Kalıcı olmayan özellik sayfası desteklemek için bazı ek görevleri de uygulamanız gerekir.
+
+Ek görevlerinden birini ve özellik sayfası ve özellik sayfası açıldığında değiştirme dış nesne arasında veri değiştiriyor. Standart kalıcı olmayan iletişim kutuları için aynı görev genellikle budur. Bu görev bir parçası bir kalıcı olmayan özellik sayfası ve özellik ayarlarının uygulandığı dış nesne arasındaki iletişim kanalını uygular. Bu uygulama öğesinden bir sınıf türetirseniz çok daha kolay [CPropertySheet](../mfc/reference/cpropertysheet-class.md) , kalıcı olmayan özellik sayfası için. Bu makalede, yaptıktan varsayılır.
+
+Kalıcı olmayan özellik sayfası ve dış arasında iletişim kurmak için bir yöntemi olan nesne (örneğin, bir görünüm geçerli seçimde) işaretçisinden bir özellik sayfası için dış nesne tanımlamak için. Bir fonksiyon tanımlayın (gibi adlı `SetMyExternalObject`) içinde `CPropertySheet`-türetilmiş sınıf işaretçisi odağı bir dış nesneden değiştiğinde değiştirmek için. `SetMyExternalObject` İşlevi yeni seçilen dış nesne yansıtacak şekilde her bir özellik sayfası için ayarlara gerekiyor. Bunu gerçekleştirmek için `SetMyExternalObject` işlevi erişebilir olmalıdır [CPropertyPage](../mfc/reference/cpropertypage-class.md) ait nesneleri `CPropertySheet` sınıfı.
+
+Özellik sayfaları içinde bir özellik sayfası erişim sağlamak için en uygun yolu eklemek için olan `CPropertyPage` nesneler `CPropertySheet`-türetilmiş bir nesneye. Gömme `CPropertyPage` nesneler `CPropertySheet`-özellik sayfası sahibi olduğu oluşturur, kalıcı iletişim kutuları için tipik tasarım türetilmiş nesneden farklıdır `CPropertyPage` nesneleri ve özellik sayfası geçirir [ CPropertySheet::AddPage](../mfc/reference/cpropertysheet-class.md#addpage).
+
+Kalıcı olmayan özellik sayfası ayarları için bir dış nesne ne zaman uygulanması gereken belirlemek için çok sayıda kullanıcı arabirimi seçenekleri vardır. Bir kullanıcının herhangi bir değer değiştiğinde geçerli özellik sayfası ayarları uygulamak için alternatiftir. Başka bir alternatif için dış nesne yapmadan önce değişiklikleri özellik sayfalarındaki accumulate izin verir ve Uygula düğmesini, sağlamaktır. Uygula düğmesini işleme için yollar hakkında daha fazla bilgi için bkz [Uygula düğmesini işleme](../mfc/handling-the-apply-button.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Özellik sayfaları](../mfc/property-sheets-mfc.md)<br/>
+[Veri Değişimi](../mfc/exchanging-data.md)<br/>
+[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
 

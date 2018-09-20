@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 109ca7b833791aa982e17335801e8fe1fc538987
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e6b610ce888e91ed8029c4166fa79a847d700dba
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606642"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46436526"
 ---
 # <a name="case-c"></a>durum (C++)
 
@@ -38,7 +38,7 @@ ms.locfileid: "42606642"
 
 #### <a name="parameters"></a>Parametreler
 
-*value*  
+*value*<br/>
 Olası bir işleme sağlamak istediğiniz değeri girin. Türünü **değer** şu türlerden biri olabilir:
 
 - `int`
@@ -91,6 +91,6 @@ struct SizedValue2 {
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
 [Sınıf Öznitelikleri](../windows/class-attributes.md)  

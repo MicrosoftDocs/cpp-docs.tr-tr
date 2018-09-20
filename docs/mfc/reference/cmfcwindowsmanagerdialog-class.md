@@ -18,74 +18,83 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71c85d3061da7cf4c87abef9549542900e962f64
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f7889d5bb2d94d7501f20578efb984fe75908f2a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45707011"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374702"
 ---
 # <a name="cmfcwindowsmanagerdialog-class"></a>CMFCWindowsManagerDialog sınıfı
-`CMFCWindowsManagerDialog` Bir MDI uygulamasında MDI alt pencereleri yönetmek bir kullanıcı nesnesi sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CMFCWindowsManagerDialog : public CDialog  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CMFCWindowsManagerDialog::CMFCWindowsManagerDialog](#cmfcwindowsmanagerdialog)|Oluşturur bir `CMFCWindowsManagerDialog` nesne.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- `CMFCWindowsManagerDialog` Uygulamada açık olan MDI alt pencereleri listesini içerir. Kullanıcı, bu iletişim kutusunu kullanarak MDI alt pencereleri durumunu el ile denetleyebilirsiniz.  
-  
- `CMFCWindowsManagerDialog` içinde katıştırılmış [Cmdıframewndex sınıfı](../../mfc/reference/cmdiframewndex-class.md). `CMFCWindowsManagerDialog` El ile oluşturması gereken bir sınıf değil. Bunun yerine, işlev çağrısı [CMDIFrameWndEx::ShowWindowsDialog](../../mfc/reference/cmdiframewndex-class.md#showwindowsdialog), oluşturmak ve görüntülemek ve bir `CMFCWindowsManagerDialog` nesne.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCWindowsManagerDialog` çağırarak `CMDIFrameWndEx::ShowWindowsDialog`. Bu kod parçacığı parçasıdır [Visual Studio gösterim örneği](../../visual-cpp-samples.md).  
-  
- [!code-cpp[NVC_MFC_VisualStudioDemo#18](../../mfc/codesnippet/cpp/cmfcwindowsmanagerdialog-class_1.cpp)]  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- [CCmdTarget](../../mfc/reference/ccmdtarget-class.md)  
-  
- [CWnd](../../mfc/reference/cwnd-class.md)  
-  
- [CDialog](../../mfc/reference/cdialog-class.md)  
-  
- [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxWindowsManagerDialog.h  
-  
-##  <a name="cmfcwindowsmanagerdialog"></a>  CMFCWindowsManagerDialog::CMFCWindowsManagerDialog  
- Oluşturur bir [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) nesne.  
-  
-```  
+
+`CMFCWindowsManagerDialog` Bir MDI uygulamasında MDI alt pencereleri yönetmek bir kullanıcı nesnesi sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CMFCWindowsManagerDialog : public CDialog
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CMFCWindowsManagerDialog::CMFCWindowsManagerDialog](#cmfcwindowsmanagerdialog)|Oluşturur bir `CMFCWindowsManagerDialog` nesne.|
+
+## <a name="remarks"></a>Açıklamalar
+
+`CMFCWindowsManagerDialog` Uygulamada açık olan MDI alt pencereleri listesini içerir. Kullanıcı, bu iletişim kutusunu kullanarak MDI alt pencereleri durumunu el ile denetleyebilirsiniz.
+
+`CMFCWindowsManagerDialog` içinde katıştırılmış [Cmdıframewndex sınıfı](../../mfc/reference/cmdiframewndex-class.md). `CMFCWindowsManagerDialog` El ile oluşturması gereken bir sınıf değil. Bunun yerine, işlev çağrısı [CMDIFrameWndEx::ShowWindowsDialog](../../mfc/reference/cmdiframewndex-class.md#showwindowsdialog), oluşturmak ve görüntülemek ve bir `CMFCWindowsManagerDialog` nesne.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCWindowsManagerDialog` çağırarak `CMDIFrameWndEx::ShowWindowsDialog`. Bu kod parçacığı parçasıdır [Visual Studio gösterim örneği](../../visual-cpp-samples.md).
+
+[!code-cpp[NVC_MFC_VisualStudioDemo#18](../../mfc/codesnippet/cpp/cmfcwindowsmanagerdialog-class_1.cpp)]
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+
+[CWnd](../../mfc/reference/cwnd-class.md)
+
+[CDialog](../../mfc/reference/cdialog-class.md)
+
+[CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxWindowsManagerDialog.h
+
+##  <a name="cmfcwindowsmanagerdialog"></a>  CMFCWindowsManagerDialog::CMFCWindowsManagerDialog
+
+Oluşturur bir [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) nesne.
+
+```
 CMFCWindowsManagerDialog(
-    CMDIFrameWndEx* pMDIFrame,  
+    CMDIFrameWndEx* pMDIFrame,
     BOOL bHelpButton = FALSE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *pMDIFrame*<br/>
-[in] Üst veya sahip penceresine bir işaretçi.  
-  
+[in] Üst veya sahip penceresine bir işaretçi.
+
 *bHelpButton*<br/>
-[in] Framework görüntülenip görüntülenmeyeceğini belirten bir Boole parametresi bir **yardımcı** düğmesi.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Görsel Yöneticiler hakkında daha fazla bilgi için bkz: [seri hale getirme Yöneticisi](../../mfc/visualization-manager.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMDIFrameWndEx Sınıfı](../../mfc/reference/cmdiframewndex-class.md)
+[in] Framework görüntülenip görüntülenmeyeceğini belirten bir Boole parametresi bir **yardımcı** düğmesi.
+
+### <a name="remarks"></a>Açıklamalar
+
+Görsel Yöneticiler hakkında daha fazla bilgi için bkz: [seri hale getirme Yöneticisi](../../mfc/visualization-manager.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
+[CMDIFrameWndEx Sınıfı](../../mfc/reference/cmdiframewndex-class.md)

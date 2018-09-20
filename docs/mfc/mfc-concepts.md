@@ -13,68 +13,68 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0e7d0208e901e453a0ee7566d998a4cb4461980
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: da0fde988b2fa4bbe079c4d392edc45329627ad3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33351998"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46380002"
 ---
 # <a name="mfc-concepts"></a>MFC Kavramları
 
-Bu bölümde yardımcı olmak üzere kavramsal ve görev tabanlı konuları için Microsoft Foundation Class (MFC) kitaplığı kullanılarak program.
+Bu bölüm size yardımcı olacak kavramsal ve görev tabanlı konular sunar Microsoft Foundation Class (MFC) Library kullanarak programlama.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Genel MFC Konuları](../mfc/general-mfc-topics.md)  
-MFC kitaplığının teknik ayrıntılar açıklanmaktadır.
+[Genel MFC Konuları](../mfc/general-mfc-topics.md)<br/>
+MFC kitaplığının teknik ayrıntılarını açıklar.
 
-[CObject Kullanma](../mfc/using-cobject.md)  
-Kullanarak için bağlantılar sağlar `CObject`, çoğu MFC sınıfları için temel sınıf.
+[CObject Kullanma](../mfc/using-cobject.md)<br/>
+Kullanımına ilişkin bağlantılar sağlar `CObject`, MFC'deki çoğu sınıf için taban sınıf.
 
-[Koleksiyonlar](../mfc/collections.md)  
-Oluşturulan ve C++ şablonlardan oluşturulmamış koleksiyon sınıfları açıklanır.
+[Koleksiyonlar](../mfc/collections.md)<br/>
+Oluşturulan ve C++ şablonlarından oluşturulan olmayan koleksiyon sınıflarını açıklar.
 
-[Tarih ve Saat](../atl-mfc-shared/date-and-time.md)  
-Tarih ve saat MFC ile kullanma ele konulara bağlantılar sağlar.
+[Tarih ve Saat](../atl-mfc-shared/date-and-time.md)<br/>
+MFC ile tarih ve saat kullanımını açıklayan konulara bağlantılar sağlar.
 
-[Dosyalar](../mfc/files-in-mfc.md)  
-Anlatılmaktadır `CFile` ve MFC'deki dosyalar nasıl ele alınacağını.
+[Dosyalar](../mfc/files-in-mfc.md)<br/>
+Anlatılmaktadır `CFile` ve nasıl işleneceğini MFC'deki dosyalar.
 
-[Bellek Yönetimi (MFC)](../mfc/memory-management.md)  
-Bellek yönetimiyle ilgili genel amaçlı Hizmetleri yararlanmak açıklar.
+[Bellek Yönetimi (MFC)](../mfc/memory-management.md)<br/>
+Bellek yönetimiyle ilgili genel amaçlı hizmetlerinden yararlanan açıklar.
 
-[İleti İşleme ve Eşleme](../mfc/message-handling-and-mapping.md)  
-İletiler ve komutlar MFC çerçevesi tarafından nasıl işleneceğini ve bunların işleyici işlevlerine bağlanma açıklar.
+[İleti İşleme ve Eşleme](../mfc/message-handling-and-mapping.md)<br/>
+İletiler ve komutlar MFC çerçevesinde nasıl işlendiğini ve bunların işleyici işlevlerine bağlanma açıklanır.
 
-[Serileştirme](../mfc/serialization-in-mfc.md)  
-Arasında kalıcı nesnelere izin vermek için sağlanan seri hale getirme mekanizmasını, programı çalıştıran açıklanmaktadır.
+[Serileştirme](../mfc/serialization-in-mfc.md)<br/>
+Nesneler arasında devam etmesine izin vermek üzere sağlanan serileştirme mekanizmalarını programınızın çalıştırmaları açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[Özel durum işleme (MFC)](../mfc/exception-handling-in-mfc.md)  
-MFC'de özel durum işleme mekanizmalarını açıklanmaktadır.
+[Özel durum işleme (MFC)](../mfc/exception-handling-in-mfc.md)<br/>
+MFC'de özel durum işleme mekanizmalarını açıklar.
 
-[MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)  
-Internet programlama desteği MFC sınıfları açıklar.
+[MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)<br/>
+Internet programlamayı destekleyen MFC sınıflarını anlatır.
 
-[MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)  
-Uygulamalarınız için Internet desteğini ekleme açıklanır.
+[MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)<br/>
+Internet desteğini uygulamalarınızı nasıl ekleyeceğinizi açıklar.
 
-[Unicode ve Çok Baytlı Karakter Kümesi (MBCS) Desteği](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)  
-MFC ve ATL desteği Unicode ve çok baytlı karakter kümeleri için nasıl kullanılacağı açıklanmaktadır.
+[Unicode ve Çok Baytlı Karakter Kümesi (MBCS) Desteği](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)<br/>
+MFC ve ATL desteği Unicode ve çok baytlı karakter kümesi için nasıl kullanılacağını açıklar.
 
-[MFC COM](../mfc/mfc-com.md)  
-Bir alt kümesini en etkin Şablon kitaplığı (ATL) olarak tasarlanmıştır karşın, COM, desteklemek için tasarlanmış MFC anlatılmaktadır COM programlama için.
+[MFC COM](../mfc/mfc-com.md)<br/>
+Etkin Şablon kitaplığı (ATL), çoğu tasarlanmış olmasına rağmen COM'u desteklemek üzere tasarlanmıştır, MFC kümesini anlatır COM programlama için.
 
-[C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)  
-İşlemler ve iş parçacıkları nelerdir ve MFC yaklaşımını anlatılmaktadır için çoklu iş parçacığı kullanımı.
+[C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)<br/>
+İşlemler ve iş parçacıklarının ne olduğunu açıklar ve MFC yaklaşımını açıklar çoklu.
 
-[MFC'de Windows Yuvaları](../mfc/windows-sockets.md)  
-Windows Yuvaları MFC uygulaması kapsar.
+[MFC'de Windows Yuvaları](../mfc/windows-sockets.md)<br/>
+Windows Sockets MFC uygulamasını kapsar.
 
-[MFC başvurusu](../mfc/mfc-desktop-applications.md)  
-MFC Kitaplığı, Windows API için yazılmış bir uygulama çerçevesidir bir uygulama çerçevesi oluşturan sınıfları kümesi için başvuru bilgileri sağlar.
+[MFC başvurusu](../mfc/mfc-desktop-applications.md)<br/>
+Windows API için yazılan uygulamanın çerçevesi olan bir uygulama çerçevesinin sınıf kümesi olan MFC Kitaplığı için başvuru materyalleri sağlar.
 
-[MFC örnekleri](../visual-cpp-samples.md)  
-MFC Masaüstü uygulamaları, DLL'ler, veritabanı uygulamaları, denetimleri, Web uygulamaları ve daha fazlasını kullanma Göster örnekleri için bağlantılar sağlar.
+[MFC örnekleri](../visual-cpp-samples.md)<br/>
+MFC'nin Masaüstü uygulamaları, DLL'leri, veritabanı uygulamaları, denetimler, Web uygulamaları ve daha fazla nasıl kullanılacağını gösteren örneklere bağlantılar sağlar.

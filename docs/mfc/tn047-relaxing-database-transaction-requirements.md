@@ -16,19 +16,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be5870efacb61d5c0bb74f85427c41f787d2edd6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 96f3116f503ffa0ffc461ea2c1a0bdaf8947a0be
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33380940"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427023"
 ---
 # <a name="tn047-relaxing-database-transaction-requirements"></a>TN047: Veritabanı İşlem Gereksinimlerini Gevşetme
-MFC ODBC veritabanı sınıfları hareket gereksinimlerini ele alınan, bu Teknik Not artık kullanılmıyor. MFC 4.2 önce veritabanı sınıfları imleçler kayıt kümeleri sonra korunması gereken bir **CommitTrans** veya **geri alma** işlemi. ODBC sürücüsü ve DBMS bu düzeyde bir imleç korunması desteklememektedir, veritabanı sınıfları işlemleri etkinleştirmediniz.  
-  
- Veritabanı sınıfları MFC 4.2 ile başlayarak, imleç korunması kılmanın kısıtlama rahat. Sürücü bunları destekliyorsa işlemleri etkinleştirilecek. Bununla birlikte, artık etkisini denetlemelisiniz bir **CommitTrans** veya **geri alma** açık kayıt kümeleri işlemi. Üye işlevleri bkz [CDatabase::GetCursorCommitBehavior](../mfc/reference/cdatabase-class.md#getcursorcommitbehavior) ve [CDatabase::GetCursorRollbackBehavior](../mfc/reference/cdatabase-class.md#getcursorrollbackbehavior) daha fazla bilgi için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+
+MFC ODBC veritabanı sınıfları işlem gereksinimlerini ele alınan, bu Teknik Not artık kullanımdan kalkmıştır. MFC 4.2 önce veritabanı sınıfları imleçler sonra kayıt kümeleri korunması gereken bir **CommitTrans** veya **geri alma** işlemi. ODBC sürücüsünü ve DBMS bu imleç koruma düzeyini desteklemiyor, veritabanı sınıfları işlemleri etkinleştirmediniz.
+
+Veritabanı sınıfları, MFC 4.2 ile başlayarak, imleç korunması zorunlu kısıtlama rahat. Sürücü bunları destekliyorsa işlemleri etkinleştirilecektir. Bununla birlikte, artık etkisini işaretlemeniz gerekir bir **CommitTrans** veya **geri alma** açık kayıt kümeleri üzerinde işlem. Üye işlevleri [CDatabase::GetCursorCommitBehavior](../mfc/reference/cdatabase-class.md#getcursorcommitbehavior) ve [CDatabase::GetCursorRollbackBehavior](../mfc/reference/cdatabase-class.md#getcursorrollbackbehavior) daha fazla bilgi için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

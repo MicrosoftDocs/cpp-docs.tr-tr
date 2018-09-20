@@ -19,35 +19,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3aa243ab8c0fb49e20e5b7485acdcd8bb808831
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: ae0cefa518ce44913f5c316a096d221fa9bd41aa
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36930474"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46433861"
 ---
 # <a name="activex-control-containers-connecting-an-activex-control-to-a-member-variable"></a>ActiveX Denetim Kapsayıcıları: Bir Üye Değişkenine ActiveX Denetimi Bağlama
-Kendi denetim kapsayıcısı uygulamasına içinde bir ActiveX denetimi erişmek için kolay denetimi içerecek iletişim kutusu sınıfı ile bir üye değişkenine ActiveX denetimi ilişkilendirilecek yoludur.  
-  
+
+ActiveX denetimi denetimi içeren bir iletişim kutusu sınıfı üyesi değişkeninin ile ilişkilendirmek için Denetim kapsayıcılı bir uygulama içinde ActiveX denetiminden erişmek için en kolay yolu var.
+
 > [!NOTE]
->  Bu katıştırılmış bir denetimden kapsayıcı sınıfı içinde erişmek için tek yolu değildir, ancak bu makalenin amacıyla yeterli olur.  
-  
-### <a name="adding-a-member-variable-to-the-dialog-class"></a>İletişim kutusu sınıfı üye değişkeni ekleme  
-  
-1.  Sınıf görünümünden kısayol menüsünü açmak için ana iletişim sınıfı sağ tıklatın. Örneğin, `CContainerDlg`.  
-  
-2.  Kısayol menüsünden tıklatın **Ekle** ve ardından **değişken Ekle**.  
-  
-3.  Ekleme üye değişkeni Sihirbazı'nda tıklatın **denetim değişkeni**.  
-  
-4.  İçinde **denetim kimliği** liste kutusunda, katıştırılmış ActiveX denetiminin denetim kimliği seçin. Örneğin, `IDC_CIRCCTRL1`.  
-  
-5.  İçinde **değişken adı** kutusunda, bir ad girin.  
-  
-     Örneğin, *m_circctl*.  
-  
-6.  Tıklatın **son** seçimlerinizi kabul etmek ve ekleme üye değişkeni sihirbazdan çıkmak için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
+>  Bu katıştırılmış bir denetimden kapsayıcı sınıfı içinde erişmenin tek yolu değildir, ancak bu makalenin amaçları için yeterli olur.
+
+### <a name="adding-a-member-variable-to-the-dialog-class"></a>İletişim kutusu sınıfı için bir üye değişkeni ekleme
+
+1. Sınıf Görünümü, ana iletişim kutusu sınıfı, kısayol menüsünü açmak için sağ tıklayın. Örneğin, `CContainerDlg`.
+
+1. Kısayol menüsünden tıklayın **Ekle** ardından **değişken Ekle**.
+
+1. Ekleme üye değişkeni Sihirbazı'nda tıklatın **denetim değişkeni**.
+
+1. İçinde **denetim kimliği** liste kutusunda, katıştırılmış ActiveX denetiminin denetim Kimliğini seçin. Örneğin, `IDC_CIRCCTRL1`.
+
+1. İçinde **değişken adı** kutusunda, bir ad girin.
+
+     Örneğin, *m_circctl*.
+
+1. Tıklayın **son** seçimlerinizi kabul etmek ve ekleme üye değişkeni sihirbazdan çıkmak için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
 

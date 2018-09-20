@@ -18,50 +18,54 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ff43920400028e0fb13fc17615fb58cc551726b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 9f81b423838d2daa9915dc5330d23e4ef69273bc
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45704229"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46395069"
 ---
 # <a name="outdwordstring"></a>__outdwordstring
-**Microsoft'a özgü**  
-  
- Oluşturur `rep outsd` gönderen yönerge `Count` başlayan doublewords `Buffer` çıkış tarafından belirtilen g/ç bağlantı noktasına `Port`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void __outdwordstring(   
-   unsigned short Port,   
-   unsigned long* Buffer,   
-   unsigned long Count   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+**Microsoft'a özgü**
+
+Oluşturur `rep outsd` gönderen yönerge `Count` başlayan doublewords `Buffer` çıkış tarafından belirtilen g/ç bağlantı noktasına `Port`.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void __outdwordstring( 
+   unsigned short Port, 
+   unsigned long* Buffer, 
+   unsigned long Count 
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *Bağlantı noktası*<br/>
-[in] Veri göndermek için bağlantı noktası.  
-  
+[in] Veri göndermek için bağlantı noktası.
+
 *Arabellek*<br/>
-[in] Belirtilen bağlantı noktasına gönderilecek verileri için bir işaretçi.  
-  
+[in] Belirtilen bağlantı noktasına gönderilecek verileri için bir işaretçi.
+
 *Sayısı*<br/>
-[in] Gönderilecek doublewords sayısı.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İç|Mimari|  
-|---------------|------------------|  
-|`__outdwordstring`|x86, x64|  
-  
- **Üst bilgi dosyası** \<intrin.h >  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[in] Gönderilecek doublewords sayısı.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İç|Mimari|
+|---------------|------------------|
+|`__outdwordstring`|x86, x64|
+
+**Üst bilgi dosyası** \<intrin.h >
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

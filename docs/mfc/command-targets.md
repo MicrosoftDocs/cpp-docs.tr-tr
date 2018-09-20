@@ -17,18 +17,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cbcfa1042a8430c704bad93e4bc0ce5655b5921
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 408f63b80ff30a7ebdc51e5becb1dd97bb062852
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341303"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46404234"
 ---
 # <a name="command-targets"></a>Komut Hedefleri
-Şekil [Framework komutlarda](../mfc/user-interface-objects-and-command-ids.md) menü öğesi ve framework çağrılarını nesne tıklatıldığında elde edilen komutu yürütmek için işleyici işlevi gibi bir kullanıcı arabirimi nesnesi arasındaki bağlantıyı gösterir.  
-  
- Windows komut iletileri doğrudan, ileti işleyicisi sonra adlı bir pencere için olmayan iletiler gönderir. Ancak, framework adayı nesne sayısı için komutları yönlendirir — "komut hedefleri" olarak adlandırılan — biri normalde çağırır komutu için bir işleyici. İşleyici işlevleri komutlar ve standart Windows iletileri için aynı şekilde çalışır, ancak tarafından bunlar denir mekanizmaları açıklandığı gibi farklı [Framework bir işleyici çağırması](../mfc/how-the-framework-calls-a-handler.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
+
+Şekil [Framework komutlarında](../mfc/user-interface-objects-and-command-ids.md) menü öğesi ve framework nesnesine tıklandığında ortaya çıkan komutu yürütmek için çağırdığı işleyici işlevi gibi bir kullanıcı arabirimi nesnesi arasındaki bağlantıyı gösterir.
+
+Windows komut iletiler, ileti işleyicisi sonra çağrılır olarak doğrudan bir pencere için iletileri gönderir. Ancak, framework aday nesnelerin bir sayıya komutları yönlendirir — "komut hedefleri" adlı — biri normalde çağırır komutu için bir işleyici. İşleyici işlevleri komutları hem standart Windows iletileri aynı şekilde çalışır, ancak açıklandığı gibi bunlar çağrılır mekanizmaları farklı [Framework'ün işleyici çağırması](../mfc/how-the-framework-calls-a-handler.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
 

@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa06eaf8f16a80b849ce911468fc0001366b9e29
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3f4517125121c0129da028437bc7ce367f9f96b2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725471"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46373928"
 ---
 # <a name="fi-name-forced-include-file"></a>/FI (Zorla Dahil Edilen Dosyayı Adlandır)
 
@@ -59,7 +59,7 @@ Bu seçenek dosyayı çift tırnak işaretleri ile belirtmekle aynı etkiye sahi
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)
-[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Çıktı Dosyası (/F) Seçenekleri](../../build/reference/output-file-f-options.md)<br/>
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
 [Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)

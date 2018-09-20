@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 96131bc566271de9d99d1530ffb407c0870c71a7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b5446fb6fa0722018e4ab7734019e677b6acec7c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604331"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435213"
 ---
 # <a name="hstringoperator-operator"></a>HString::Operator!= İşleci
 
@@ -47,10 +47,10 @@ inline bool operator!=( const HString& lhs,
 
 ### <a name="parameters"></a>Parametreler
 
-*lhs*  
+*lhs*<br/>
 Karşılaştırılacak ilk parametre. *lhs* olabilir bir **Hstrıng** veya `HStringReference` nesnesi veya bir HSTRING tanıtıcısına.
 
-*Sol*  
+*Sol*<br/>
 Karşılaştırılacak ikinci parametre. *sol* olabilir bir **Hstrıng** veya `HStringReference` nesnesi veya bir HSTRING tanıtıcısına.
 
 ## <a name="return-value"></a>Dönüş Değeri

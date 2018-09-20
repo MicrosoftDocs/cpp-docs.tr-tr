@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98187d7f5946496af26e0cf4ff7929f12e5a6eb7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e7a4abff1faaa8fe93f15fb2d4a7e5ba15d6e434
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46088962"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46434667"
 ---
 # <a name="csimplestringt-class"></a>CSimpleStringT sınıfı
 
@@ -1174,5 +1174,5 @@ Yok etmek için bu yöntemi çağırın `CSimpleStringT` nesne.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)

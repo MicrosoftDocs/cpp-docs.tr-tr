@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b9340ffc4e951a08b77ce44afd6666d8b3a94db9
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: ac344242a55ba9d2f3c6ec2846feb18f70bf6483
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315268"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46421524"
 ---
 # <a name="accessing-version-information-from-within-your-program-c"></a>Programınızdan (C++) sürüm bilgilerine erişme
 
@@ -41,5 +41,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sürüm Bilgileri Düzenleyicisi](../windows/version-information-editor.md)  
+[Sürüm Bilgileri Düzenleyicisi](../windows/version-information-editor.md)<br/>
 [Sürüm bilgileri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)

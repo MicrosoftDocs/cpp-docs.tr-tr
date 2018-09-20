@@ -17,28 +17,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c10b9d0903901cfe564b161a250d58078d5a08c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4ca0ebd9bf03df8725c14df8d2aca1f7858b7b65
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341560"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396187"
 ---
 # <a name="building-on-the-framework"></a>Framework'te Derleme
-MFC çerçevesi ile bir uygulama yapılandırmada, uygulamaya özgü kaynak kodunu sağlayın ve bileşenlerini hangi iletiler ve komutlar yanıt bunlar tanımlayarak bağlanmak için rolüdür. Bu sınıf kitaplığı tarafından sağlanan kendi uygulamaya özgü sınıflar türetmek ve geçersiz kılma ve temel sınıfın davranışı büyütmek için C++ dili ve standart C++ tekniklerini kullanın.  
-  
- İlgili konular, aşağıdaki tablolarda genel dizi işlemleri genellikle izler ve sorumluluklarınızın framework'ün sorumlulukları karşı açıklar:  
-  
--   [Uygulama Çerçevesi ile oluşturma sırası](../mfc/sequence-of-operations-for-building-mfc-applications.md)  
-  
--   [OLE Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-ole-applications.md)  
-  
--   [ActiveX Denetimleri Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-activex-controls.md)  
-  
--   [Veritabanı Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-database-applications.md)  
-  
- Çoğunlukla, bazı adımları alternatif seçenekleri olmasına rağmen bir MFC uygulaması oluşturmaya yönelik adımlar dizisi olarak bu tablolar izleyebilirsiniz. Örneğin, çoğu uygulama türünden birkaç kullanılabilir görünüm sınıfının bir türü kullanır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel MFC Konuları](../mfc/general-mfc-topics.md)
+
+MFC çerçevesi ile bir uygulama yapılandırma, uygulamaya özgü kaynak kodu sağlamak ve hangi iletiler ve komutlar için yanıt tanımlayarak bileşenlerine bağlanmak için rolüdür. Bu sınıf kitaplığı tarafından sağlanan kendi uygulamaya özgü sınıfların türetilmesi için ve geçersiz kılmak ve temel sınıfın davranışını genişletmek için C++ dili ve standart C++ tekniklerini kullanın.
+
+İlgili konularda, aşağıdaki tabloda genel dizi işlemleri genellikle izler ve framework'ün sorumlulukları karşı sizin Sorumluluklarınız açıklanmaktadır:
+
+- [Framework ile uygulama oluşturma sırası](../mfc/sequence-of-operations-for-building-mfc-applications.md)
+
+- [OLE Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-ole-applications.md)
+
+- [ActiveX Denetimleri Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-activex-controls.md)
+
+- [Veritabanı Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-database-applications.md)
+
+Çoğunlukla, adımlardan bazıları diğer seçenekleri olsa da bu tablolar bir MFC uygulaması oluşturma adımları öğesinin bir dizisi olarak izleyebilirsiniz. Örneğin, çoğu uygulama, kullanılabilir birkaç türlerinden görünüm sınıfı bir türünü kullanın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Genel MFC Konuları](../mfc/general-mfc-topics.md)
 

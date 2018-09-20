@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6d58e89250708f264ff6bb96c75e8124ffa02509
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 2da93d1baaf95799c7ef68d6cc854d554fbe6c47
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316451"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46429571"
 ---
 # <a name="manifest-resources-c"></a>Bildirim kaynakları (C++)
 
@@ -59,5 +59,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Denetimler](../mfc/controls-mfc.md)  
+[Denetimler](../mfc/controls-mfc.md)<br/>
 [Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)

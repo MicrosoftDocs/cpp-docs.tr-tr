@@ -12,18 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1de0e32e16d889acb8f1339d783bc194b3508dda
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 9d1a545f1c505f9f578cad682399c8d69a882824
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695700"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400152"
 ---
 # <a name="2724-shared"></a>2.7.2.4 shared
-Bu yan tümce görünür değişkenlerini paylaşır *değişken listesi* takım tüm iş parçacıkları arasında. Aynı depolama alanı için bir takım içindeki tüm iş parçacıklarının erişim **paylaşılan** değişkenleri.  
-  
- Söz dizimi **paylaşılan** yan tümcesi aşağıdaki gibidir:  
-  
-```  
-shared(variable-list)  
+
+Bu yan tümce görünen değişkenlerini paylaşır *değişken listesi* ekip tüm iş parçacıkları arasında. Bir takım içindeki tüm iş parçacıkları için aynı depolama alanına erişim **paylaşılan** değişkenleri.
+
+Söz dizimi **paylaşılan** yan tümcesi şu şekildedir:
+
+```
+shared(variable-list)
 ```

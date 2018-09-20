@@ -17,23 +17,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af0b248d5e32b535c23cc17b48efdd551dad7a2c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 78bb6a6d6421a5336f8efbffc7d24a6121e208e6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342003"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46432160"
 ---
 # <a name="communicating-with-a-tree-control"></a>Ağaç Denetimi ile İletişim
-Üye işlevleri çağırmak için farklı yöntemler kullanın bir [CTreeCtrl](../mfc/reference/ctreectrl-class.md) nesne nasıl oluşturulduğuna bağlı olarak nesnesi:  
-  
--   Ağaç denetimi iletişim kutusunda, bir üye değişkeni türü kullanın `CTreeCtrl` iletişim kutusu sınıfında oluşturun.  
-  
--   Ağaç denetimi alt pencere ise kullanın `CTreeCtrl` nesne (veya işaretçi) nesnesi oluşturmak için kullandığınız.  
-  
--   Kullanıyorsanız, bir `CTreeView` nesne, işlevini [CTreeView::GetTreeCtrl](../mfc/reference/ctreeview-class.md#gettreectrl) ağaç denetimi başvuru alınamıyor. Bu değer ile başka bir başvuru başlatmak veya başvuru adresi atamak bir `CTreeCtrl` işaretçi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CTreeCtrl kullanma](../mfc/using-ctreectrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Arayan üye işlevleri için farklı yöntemler kullanma bir [CTreeCtrl](../mfc/reference/ctreectrl-class.md) nesne nasıl oluşturulduğuna bağlı olarak nesnesi:
+
+- Ağaç denetimi iletişim kutusunda, bir üye değişkeni türü kullanın `CTreeCtrl` , iletişim kutusu sınıfı oluşturma.
+
+- Ağaç denetimi alt pencere ise kullanın `CTreeCtrl` nesnesi (veya işaretçi), kullanılan nesneyi oluşturmak için.
+
+- Kullanıyorsanız, bir `CTreeView` nesne, işlevini [CTreeView::GetTreeCtrl](../mfc/reference/ctreeview-class.md#gettreectrl) ağaç denetimi bir başvuru almak için. Bu değere sahip başka bir başvuruyu başlatmak veya adresine yapılan başvurunun bir `CTreeCtrl` işaretçi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CTreeCtrl Kullanma](../mfc/using-ctreectrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7e1cb0a77c04a1bfea03f742686e1b28a6e2f04c
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0c1704bf6ea5d8eaa2fc76db61fe0143c06b46ae
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43687856"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46429649"
 ---
 # <a name="emitidl"></a>emitidl
 
@@ -36,7 +36,7 @@ Tüm sonraki IDL öznitelikleri işlenir ve oluşturulan .idl dosyasında yerle�
 
 ### <a name="parameters"></a>Parametreler
 
-*durumu*  
+*durumu*<br/>
 Bu değerlerden biri: `true`, `false`, `forced`, `restricted`, `push`, veya `pop`.
 
 - Varsa `true`, bir kaynak kodu dosyasında karşılaşılan kategori IDL öznitelikleri oluşturulan .idl dosyasında yerleştirilir. İçin varsayılan ayar budur **emitidl**.
@@ -77,5 +77,5 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Derleyici Öznitelikleri](../windows/compiler-attributes.md)  
+[Derleyici Öznitelikleri](../windows/compiler-attributes.md)<br/>
 [Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)  

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3a60d12adfade18c9989d1dc8609a38252d32073
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5f289403172ed5815ac5babbef3e7551da59ae1c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599104"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405183"
 ---
 # <a name="cloakediid-structure"></a>CloakedIid Yapısı
 
@@ -37,7 +37,7 @@ struct CloakedIid : T;
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 (Gizlenmiş) gizlenen arabirim.
 
 ## <a name="remarks"></a>Açıklamalar

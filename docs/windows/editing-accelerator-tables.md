@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 14f9e82e87d395341dc1f05f1de49a20d58fec52
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 1b67650932f846c25edb0bc017ede9a49d59f038
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314891"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423461"
 ---
 # <a name="editing-accelerator-tables-c"></a>(C++) Hızlandırıcı tablolarını düzenleme
 
@@ -51,5 +51,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)  
+[Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)<br/>
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)

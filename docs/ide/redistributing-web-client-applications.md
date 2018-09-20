@@ -17,23 +17,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92bd843b24ee13b3d606ba8bb4f4f1cc265e8e5d
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: cdde0f8d4edc13e8c1e1a53d8f4393dc7c2dac40
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33323202"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46372476"
 ---
 # <a name="redistributing-web-client-applications"></a>Web İstemcisi Uygulamalarını Yeniden Dağıtma
-Uygulamanızın WebBrowser denetimi ekleyen MFC sınıfları kullanıyorsa (örneğin, `CHtmlView` veya `CHtmlEditView`), Microsoft Internet Explorer 4.0 veya sonraki sürümü en azından en düşük düzeyde yüklü olmalıdır hedef bilgisayar üzerinde.  
-  
- Internet Explorer'ın en son sürümünü yükleme de hedef bilgisayarda en son ortak Denetim dosyalarını sahip olmasını sağlar.  
-  
- En az Internet Explorer bileşenlerini yükleme hakkında bilgi aşağıdaki Bilgi Bankası makalesinde kullanılabilir:  
-  
--   Q185375, nasıl yapılır: Internet Explorer'ın tek EXE yüklemesi oluşturma ([http://support.microsoft.com/support/kb/articles/q185/3/75.asp](http://support.microsoft.com/support/kb/articles/q185/3/75.asp))  
-  
- MSDN Kitaplığı'nda veya Bilgi Bankası makaleleri bulabilirsiniz [ http://support.microsoft.com ](http://support.microsoft.com).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Masaüstü uygulamaları dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)
+
+Uygulamanız WebBrowser denetimi ekleyen MFC sınıfları kullanıyorsa (örneğin, `CHtmlView` veya `CHtmlEditView`), Microsoft Internet Explorer 4.0 veya sonraki sürümü en azından en düşük düzeyde yüklenmelidir hedef bilgisayarda.
+
+Internet Explorer'ın en son sürümü yükleyerek de hedef bilgisayarda en son ortak denetim dosyalarına sahip olmasını sağlar.
+
+En az Internet Explorer bileşenlerini yükleme hakkında bilgi, aşağıdaki Bilgi Bankası makalesi kullanılabilir:
+
+- Q185375, nasıl yapılır: bir Internet Explorer'ın tek EXE yüklemesini oluşturma ([http://support.microsoft.com/support/kb/articles/q185/3/75.asp](http://support.microsoft.com/support/kb/articles/q185/3/75.asp))
+
+MSDN Kitaplığı'nda veya Tabanı makalelerini bulabilirsiniz [ http://support.microsoft.com ](http://support.microsoft.com).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Masaüstü uygulamalarını dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)

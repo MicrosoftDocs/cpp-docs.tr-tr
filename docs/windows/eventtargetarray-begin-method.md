@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 738ee52eb68cfbb03a380ffac52efdb4010b5205
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b818595d8ad32295dbce1498161898b215e1885f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602137"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46433783"
 ---
 # <a name="eventtargetarraybegin-method"></a>EventTargetArray::Begin Yöntemi
 
@@ -50,5 +50,5 @@ Olay işleyicilerini iç dizideki ilk öğenin adresi alır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[EventTargetArray Sınıfı](../windows/eventtargetarray-class.md)  
+[EventTargetArray Sınıfı](../windows/eventtargetarray-class.md)<br/>
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

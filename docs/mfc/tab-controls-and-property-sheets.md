@@ -16,23 +16,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 096c61a62ea382639356eca81483c9aacfe04b2d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fc03427847a64330d1ff2814d268997f63fac6bd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385878"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46382550"
 ---
 # <a name="tab-controls-and-property-sheets"></a>Sekme Denetimleri ve Özellik Sayfaları
-Özellik sayfaları, birden çok sayfa iletişim kutuları veya "kullanıcı 24 iletişim şablonu kaynaklarına kadar görüntüleyebilen sekme iletişim kutuları" şeklindedir. Özellik sayfaları örnekler için Windows görüntü özellikleri iletişim kutusu veya aşağıdaki MFC örnek uygulama bakın:  
-  
- [CMNCTRL1: Ortak denetim sınıfları, bölüm 1 gösterir](../visual-cpp-samples.md)  
-  
- [CMNCTRL2: Ortak denetim sınıfları, bölüm 2 gösterir](../visual-cpp-samples.md)  
-  
- Özellik sayfaları kolayca uygulanabilir MFC sınıfı kullanarak [CPropertySheet](../mfc/reference/cpropertysheet-class.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CTabCtrl kullanma](../mfc/using-ctabctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Özellik sayfaları, birden çok sayfa iletişim kutuları veya "kullanıcı 24 iletişim şablonu kaynaklarına kadar görüntülemek için sekmesinde iletişim kutuları" olur. Özellik sayfaları örnekleri için Windows görüntü özellikleri iletişim kutusu veya aşağıdaki MFC örnek uygulamayı bakın:
+
+[CMNCTRL1: Ortak denetim sınıfları, bölüm 1 gösterir](../visual-cpp-samples.md)
+
+[CMNCTRL2: Ortak denetim sınıfları, bölüm 2 gösterir](../visual-cpp-samples.md)
+
+Özellik sayfaları kolayca uygulanabilir MFC sınıfı kullanarak [CPropertySheet](../mfc/reference/cpropertysheet-class.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CTabCtrl Kullanma](../mfc/using-ctabctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

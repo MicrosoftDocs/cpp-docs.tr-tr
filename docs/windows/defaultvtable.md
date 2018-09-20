@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4cec0e02a6a61638f8aed1b4015fea065cbfd343
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: baa73d252bd52f52d40c14bd8e0a411679c24b36
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207694"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46437631"
 ---
 # <a name="defaultvtable"></a>defaultvtable
 
@@ -38,7 +38,7 @@ Varsayılan vtable arabirim bir COM nesnesi için bir arabirim tanımlar.
 
 ### <a name="parameters"></a>Parametreler
 
-*interface*  
+*interface*<br/>
 COM nesnesi için varsayılan vtable olmasını istediğiniz belirtilen arabirim.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -90,5 +90,5 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
 [Sınıf Öznitelikleri](../windows/class-attributes.md)  

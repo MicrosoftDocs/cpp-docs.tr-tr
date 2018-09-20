@@ -25,23 +25,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cc12a76f73e2d84a4cb5df66a6dd3d01249265a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8a1006300a0d0a1bc0587e7866e97260ae293516
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343781"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379846"
 ---
 # <a name="dialog-data-exchange-and-validation"></a>İletişim Kutusu Veri Değişimi ve Doğrulaması
-İletişim kutusu veri değişimi (DDX) bir iletişim kutusu denetimleri başlatmak ve kullanıcı tarafından veri girişi toplamak için kolay yoludur. İletişim verisi doğrulama (DDV), bir iletişim kutusu veri girişi doğrulamak için kolay bir yoludur. DDX ve DDV iletişim kutularında yararlanmak için kullanmak [üye değişkeni ekleme](../ide/add-member-variable-wizard.md) veri üyeleri oluşturmak ve kendi veri türleri ayarlama ve doğrulama kurallarını belirtmek için.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [İletişim kutusu veri değişimi](../mfc/dialog-data-exchange.md)  
-  
--   [İletişim verisi doğrulama](../mfc/dialog-data-validation.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutuları](../mfc/dialog-boxes.md)   
- [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+
+İletişim kutusu veri değişimi (DDX) bir iletişim kutunuzda denetimleri başlatmak ve kullanıcı tarafından veri girişi toplamak için kolay yoludur. İletişim verisi doğrulama (DDV), bir iletişim kutusu veri girişi doğrulamak için kolay bir yoludur. DDX ve DDV, iletişim kutularında faydalanmak için kullanmak [ekleme üye değişkeni Sihirbazı](../ide/add-member-variable-wizard.md) veri üyeleri oluşturma ve veri türlerini ayarlayın ve doğrulama kurallarını belirtin.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [İletişim kutusu veri değişimi](../mfc/dialog-data-exchange.md)
+
+- [İletişim verisi doğrulama](../mfc/dialog-data-validation.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
+[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
 

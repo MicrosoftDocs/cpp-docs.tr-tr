@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 156191d09c88d8f19b3fe73108bcbca390b23f6e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ab2c857451e399e56e69d79240d4ace023a8b301
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760209"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46424092"
 ---
 # <a name="basic-cstring-operations"></a>Temel CString işlemleri
 
@@ -112,8 +112,8 @@ Tür dönüştürme olmadan `cs` olarak kabul bir `void*` ve `wcout` nesnenin ad
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
-[CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md)   
-[Şablon uzmanlığı](../cpp/template-specialization-cpp.md)   
+[Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
+[CStringT Sınıfı](../atl-mfc-shared/reference/cstringt-class.md)<br/>
+[Şablon Uzmanlığı](../cpp/template-specialization-cpp.md)<br/>
 [Nasıl yapılır: Çeşitli Dize Türleri Arasında Dönüştürme Yapma](../text/how-to-convert-between-various-string-types.md)
 

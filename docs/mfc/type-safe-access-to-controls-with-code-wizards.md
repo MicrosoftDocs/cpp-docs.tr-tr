@@ -17,33 +17,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88f86a8f22bae990261be5150755a26d50d4bef8
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: e96f7b3ab0875c233241ee0f6dacfcf51ab79564
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36950467"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46377545"
 ---
 # <a name="type-safe-access-to-controls-with-code-wizards"></a>Kod Sihirbazları Kullanarak Denetimlere Tür Kullanımı Uyumlu Erişim
-DDX özelliklerle hakkında bilginiz varsa Denetim özelliğinde kullanabilirsiniz [üye değişkeni ekleme](../ide/add-member-variable-wizard.md) tür kullanımı uyumlu erişim oluşturmak için. Bu yaklaşım, kod sihirbazları olmadan denetimler oluşturmaktan daha kolaydır.  
-  
- Yalnızca bir denetimin değerine erişmek istiyorsanız, bunu DDX sağlar. Bir denetimin değerini birden fazla erişmek isterseniz, iletişim sınıfınızı uygun sınıfının üye değişkeni eklemek için üye değişkeni Ekleme Sihirbazı'nı kullanın. Bu üye değişkeni denetim özelliğini ekleyin.  
-  
- Üye değişkenleri değer özelliği yerine bir denetim özelliğine sahip olabilir. Value özelliği gibi denetiminden döndürülen veri türünü başvuruyor `CString` veya **int**. Denetim özelliği denetim türü olan denetim sınıfları, MFC'de birini gibi bir veri üyesi aracılığıyla doğrudan erişim sağlayan `CButton` veya `CEdit`.  
-  
+
+DDX özelliklerle bilginiz varsa, denetim özelliği kullanabileceğiniz [ekleme üye değişkeni Sihirbazı](../ide/add-member-variable-wizard.md) tür kullanımı uyumlu erişim oluşturmak için. Bu yaklaşım, kod sihirbazları olmadan denetimlere oluşturmaktan daha kolaydır.
+
+Yalnızca bir denetimin değerini erişmek istiyorsanız, bunu DDX sağlar. Bir denetimin değerini birden fazla erişmek istiyorsanız, uygun sınıf üyesi değişkeninin iletişim sınıfınızı eklemek için üye değişkeni Ekleme Sihirbazı'nı kullanın. Bu üye değişkeni denetimi özelliğine ekleyin.
+
+Üye değişkenleri Value özelliği yerine bir denetim özelliğine sahip olabilir. Value özelliği gibi denetiminden döndürdüğü veri türü başvurduğu `CString` veya **int**. Denetim özelliği denetim türü biridir, MFC denetim sınıfları gibi bir veri üyesi üzerinden doğrudan erişim sağlayan `CButton` veya `CEdit`.
+
 > [!NOTE]
->  İsterseniz, belirli bir denetim için birden çok üye değişkenleri değer özelliği ve en fazla denetim özelliğine sahip bir üye değişkeni olabilir. Birden çok nesne eklenmiş bir denetim veya başka herhangi bir pencere ileti eşlemesindeki bir belirsizlik olmasına neden olur, çünkü bir denetime eşlenen yalnızca bir MFC nesne olabilir.  
-  
- Herhangi bir üye için denetim nesnesi işlevleri çağırmak için bu nesneyi kullanabilirsiniz. Tür çağrılar iletişim kutusunda denetimi etkiler. Örneğin, bir onay kutusu denetimi için bir değişkeni tarafından temsil *m_Checkbox*, türü `CButton`, çağrı:  
-  
- [!code-cpp[NVC_MFCControlLadenDialog#52](../mfc/codesnippet/cpp/type-safe-access-to-controls-with-code-wizards_1.cpp)]  
-  
- Burada üye değişkeni *m_Checkbox* üye fonksiyonu aynı amaca hizmet eder `GetMyCheckbox` gösterilen [kod sihirbazları olmadan denetimler için tür kullanımı uyumlu erişim](../mfc/type-safe-access-to-controls-without-code-wizards.md). Onay kutusu bir otomatik onay kutusu yoksa düğmesine tıklandığında, hala bir işleyici iletişim sınıfınızı BN_CLICKED denetimi bildirim iletisi için gerekir.  
-  
- Denetimleri hakkında daha fazla bilgi için bkz: [denetimleri](../mfc/controls-mfc.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir iletişim kutusundaki denetimlere tür kullanımı uyumlu erişim](../mfc/type-safe-access-to-controls-in-a-dialog-box.md)   
- [İletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)   
- [Kod Sihirbazları Olmadan Denetimlere Tür Kullanımı Uyumlu Erişim](../mfc/type-safe-access-to-controls-without-code-wizards.md)
+>  İsterseniz, belirli bir denetim için birden çok üye değişkenleri Value özelliği ve en fazla denetimi özelliğine sahip bir üye değişkeni olabilir. Bir denetim için birden çok nesne eklenmiş bir denetimi veya başka herhangi bir pencere ileti eşlemesi bir belirsizlik olmasına neden olur çünkü eşlenmiş yalnızca bir MFC nesne olabilir.
+
+Herhangi bir üye işlevleri için denetim nesnesi çağırmak için bu nesneyi kullanabilirsiniz. Böyle çağrılar iletişim kutusu denetiminde etkiler. Örneğin, bir onay kutusu denetimi değişkeni tarafından temsil *m_Checkbox*, türü `CButton`, çağırabilirsiniz:
+
+[!code-cpp[NVC_MFCControlLadenDialog#52](../mfc/codesnippet/cpp/type-safe-access-to-controls-with-code-wizards_1.cpp)]
+
+Burada bir üye değişkeni *m_Checkbox* üye işlevi aynı amaca hizmet eder `GetMyCheckbox` gösterilen [tür kullanımı uyumlu erişim için kod sihirbazları olmadan denetimleri](../mfc/type-safe-access-to-controls-without-code-wizards.md). Onay kutusunun seçilmiş bir otomatik onay kutusunu değilse düğmesine tıklandığında, yine de bir işleyici iletişim sınıfınızı BN_CLICKED denetimi bildirim iletileri için gerekir.
+
+Denetimleri hakkında daha fazla bilgi için bkz. [denetimleri](../mfc/controls-mfc.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bir İletişim Kutusundaki Denetimlere Tür Kullanımı Uyumlu Erişim](../mfc/type-safe-access-to-controls-in-a-dialog-box.md)<br/>
+[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)<br/>
+[Kod Sihirbazları Olmadan Denetimlere Tür Kullanımı Uyumlu Erişim](../mfc/type-safe-access-to-controls-without-code-wizards.md)
 

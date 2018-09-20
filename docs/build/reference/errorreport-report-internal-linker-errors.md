@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 30cc9cbab9a3575eee2f791b0af7dfcaffc1538d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3b4b19eed4b481ffa44688e15fb1567e73da1a8f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45701096"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46373472"
 ---
 # <a name="errorreport-report-internal-linker-errors"></a>/ERRORREPORT (Dahili Bağlayıcı Hatalarını Raporla)
 
@@ -64,6 +64,6 @@ Seçenek **okunmalı** Windows hata bildirimi hizmeti ayarları tarafından etki
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/ errorreport (dahili derleme hatalarını raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md)
-[bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[/errorReport (Dahili Derleme Hatalarını Raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md)<br/>
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
 [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

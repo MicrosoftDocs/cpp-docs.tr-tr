@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 795c16a46356eb9599e02b43b51066b603b8b9ce
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4fef169cb0e2386c1629064ad7ea8a1a70a5c517
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222114"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46382082"
 ---
 # <a name="using-a-windows-form-user-control-in-mfc"></a>MFC içinde Windows Formu Kullanıcı Denetimi Kullanma
 
@@ -85,5 +85,5 @@ MFC uygulamanız Windows Forms kullanıyorsa, mfcmifc80.dll'ye uygulamanızla bi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)  
-[Form görünümleri](../mfc/form-views-mfc.md)  
+[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)<br/>
+[Form görünümleri](../mfc/form-views-mfc.md)

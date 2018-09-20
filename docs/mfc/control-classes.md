@@ -24,128 +24,138 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ffd7b3b7d2eb9db68fd61ac693c65d87b2ee62d7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a159677ffa12961e7f065b2cba2b1287c8ef7a58
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33358657"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46432470"
 ---
 # <a name="control-classes"></a>Denetim Sınıfları
-Denetim sınıfları çok çeşitli statik metin denetimlerden ağaç denetimleri arasında değişen standart Windows denetimleri kapsüller. Ayrıca, MFC bit eşlemler ve denetim çubukları düğmeleriyle dahil olmak üzere bazı yeni denetimler sağlar.  
-  
- Sınıf adları bitiş denetimleri "**Ctrl**" Windows 95 ve Windows NT sürüm 3.51'de yeni olan.  
-  
-## <a name="static-display-controls"></a>Statik görüntü denetimleri  
- [CStatic](../mfc/reference/cstatic-class.md)  
- Statik görüntü penceresi. Etiket, kutusunda veya başka bir iletişim kutusu veya pencere denetimlerinde ayırmak için kullanılan statik denetler. Ayrıca grafik görüntüleri yerine metin veya kutusu görüntüleyebilir.  
-  
-## <a name="text-controls"></a>Metin denetimleri  
- [CEdit](../mfc/reference/cedit-class.md)  
- Bir metin düzenlenebilir denetimi penceresini açın. Düzenleme denetimleri kullanıcı metinsel girişi kabul etmek için kullanılır.  
-  
- [CIPAddressCtrl](../mfc/reference/cipaddressctrl-class.md)  
- Bir Internet Protokolü (IP) adresi yönlendirmek için bir düzenleme kutusu destekler.  
-  
- [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)  
- Kullanıcı girin ve metin düzenleme denetimini. İçinde kapsüllenmiş denetimi tersine `CEdit`, bir zengin düzenleme denetimine karakter ve paragraf biçimlendirme ve OLE nesneleri destekler.  
-  
-## <a name="controls-that-represent-numbers"></a>Sayıları temsil eden denetimleri  
- [CSliderCtrl](../mfc/reference/csliderctrl-class.md)  
- Bir değer veya değer kümesini seçmek için kullanıcı hareket bir kaydırıcı içeren bir denetimdir.  
-  
- [CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)  
- Ok düğmelerini çifti artırın veya bir değer azaltma için kullanıcı tıklatabilirsiniz.  
-  
- [CProgressCtrl](../mfc/reference/cprogressctrl-class.md)  
- Soldan sağa bir işlemin ilerlemesini göstermek için kademeli olarak doldurulmuş dikdörtgen görüntüler.  
-  
- [CScrollBar](../mfc/reference/cscrollbar-class.md)  
- Kaydırma çubuğu denetimi penceresi. Sınıfı, bir iletişim kutusu veya penceresinde, kullanıcı bir aralıkta bir konum belirtebilirsiniz denetiminde olarak kullanmak üzere bir kaydırma çubuğunun işlevselliğini sağlar.  
-  
-## <a name="buttons"></a>Düğmeleri  
- [CButton](../mfc/reference/cbutton-class.md)  
- Düğme denetimi penceresi. Sınıfı, düğme, onay kutusu veya radyo düğmesi bir iletişim kutusu veya penceresinde programa dayalı bir arabirim sağlar.  
-  
- [CBitmapButton](../mfc/reference/cbitmapbutton-class.md)  
- Bir metin resim yazısı yerine bir bit eşlem bir düğme.  
-  
-## <a name="lists"></a>Listeler  
- [CListBox](../mfc/reference/clistbox-class.md)  
- Liste kutusu denetimi penceresi. Liste kutusu, kullanıcının görüntüleyebileceği ve seçin öğeleri listesini görüntüler.  
-  
- [CDragListBox](../mfc/reference/cdraglistbox-class.md)  
- Bir Windows liste kutusu işlevselliğini sağlar; Liste kutusu içinde gibi dosya adları ve dize değişmez değerleri, liste kutusu öğeleri taşımak olanak tanır. Liste kutuları bu özelliğine sahip bir öğe listesi alfabetik daha başka bir sırada yararlıdır, gibi bir projede yol adları veya dosyaları içerir.  
-  
- [CComboBox](../mfc/reference/ccombobox-class.md)  
- Birleşik giriş kutusu denetimi penceresi. Birleşik giriş kutusu düzenleme denetimi ve liste kutusu karakterlerinden oluşur.  
-  
- [CComboBoxEx](../mfc/reference/ccomboboxex-class.md)  
- Birleşik giriş kutusu denetimi resim listeleri için destek sağlayarak genişletir.  
-  
- [CCheckListBox](../mfc/reference/cchecklistbox-class.md)  
- Kullanıcı denetleyin veya temizleyin, her bir öğeyi yanındaki onay kutularını öğeleri listesini görüntüler.  
-  
- [CListCtrl](../mfc/reference/clistctrl-class.md)  
- Öğeleri koleksiyonu, her bir simge ve dosya Explorer'ın sağ bölmeye benzer bir şekilde bir etiket oluşan görüntüler.  
-  
- [CTreeCtrl](../mfc/reference/ctreectrl-class.md)  
- Simgeler ve bir şekilde dosya Explorer'ın sol bölmeye benzer düzenlenmiş etiketleri hiyerarşik bir listesini görüntüler.  
-  
-## <a name="toolbars-and-status-bars"></a>Araç çubukları ve durum çubukları  
- [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)  
- Windows ortak araç çubuğu denetimi işlevselliğini sağlar. Çoğu MFC programları kullanım [CToolBar](../mfc/reference/ctoolbar-class.md) yerine bu sınıf.  
-  
- [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md)  
- Genellikle bir uygulama durum bilgilerini görüntüleyebilen bölmeye ayrılmış bir yatay penceresi. Çoğu MFC programları kullanım [CStatusBar](../mfc/reference/cstatusbar-class.md) yerine bu sınıf.  
-  
-## <a name="miscellaneous-controls"></a>Çeşitli denetimleri  
- [CAnimateCtrl](../mfc/reference/canimatectrl-class.md)  
- Basit bir video klip görüntüler.  
-  
- [CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md)  
- Tek satırlık bir uygulamada bir aracı amacını açıklayan metin görüntüler küçük bir açılır pencere.  
-  
- [CDateTimeCtrl](../mfc/reference/cdatetimectrl-class.md)  
- Genişletilmiş düzenleme denetimi veya bir kullanıcının belirli bir tarih veya saat değeri seçmesine izin veren basit bir takvim arabirimi denetimi destekler.  
-  
- [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)  
- Başlığı veya sütunların etiketlerini görüntüler.  
-  
- [CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md)  
- Bir kullanıcının bir tarih seçin izin veren basit Takvim arabirimi denetimini destekler.  
-  
- [CTabCtrl](../mfc/reference/ctabctrl-class.md)  
- Üzerinde kullanıcının, bir dizüstü bilgisayarın Bölücü benzer tıklatabileceği sekmelerle denetim.  
-  
- [CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)  
- Kullanıcı bir eylem hızlı bir şekilde gerçekleştirmek için basabilirsiniz etkin bir tuş bileşimini oluşturmak kullanıcının sağlar.  
-  
- [CLinkCtrl](../mfc/reference/clinkctrl-class.md)  
- İşaretlenmiş metin oluşturur ve kullanıcının katıştırılmış bağlantıyı tıklattığında uygun uygulamaları başlatır.  
-  
- [CHtmlEditCtrl](../mfc/reference/chtmleditctrl-class.md)  
- Bir MFC penceresinde WebBrowser ActiveX denetiminin işlevsellik sağlar.  
-  
-## <a name="related-classes"></a>İlgili sınıflar  
- [Cımagelist](../mfc/reference/cimagelist-class.md)  
- Windows görüntü listesi işlevselliğini sağlar. Görüntü listeleri liste denetimleri ve ağaç denetimleri ile kullanılır. Depolamak ve bit eşlemler aynı boyuta sahip bir dizi arşivlemek için de kullanılabilir.  
-  
- [CCtrlView](../mfc/reference/cctrlview-class.md)  
- Windows denetimleriyle ilişkili tüm görünümleri için temel sınıf. Denetimlere bağlı görünümler aşağıda açıklanmıştır.  
-  
- [CEditView](../mfc/reference/ceditview-class.md)  
- Bir Windows standart içeren bir görünüm düzenleme denetimi.  
-  
- [CRichEditView](../mfc/reference/cricheditview-class.md)  
- Zengin Windows içeren bir görünüm düzenleme denetimi.  
-  
- [CListView](../mfc/reference/clistview-class.md)  
- Windows liste denetimi içeren bir görünüm.  
-  
- [CTreeView](../mfc/reference/ctreeview-class.md)  
- Windows ağaç denetimi içeren bir görünüm.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Denetim sınıfları, standart Windows denetimleri için ağaç denetimleri statik metin denetimlerinden arasında değişen birçok farklı kapsüller. Ayrıca, MFC, bit eşlemler ve denetim çubukları düğmeleriyle dahil olmak üzere bazı yeni denetimler sağlar.
+
+Denetimleri, sınıf adlarının sonunda içinde "**Ctrl**" Windows 95 ve Windows NT 3.51 sürümü yeni bulabilirsiniz.
+
+## <a name="static-display-controls"></a>Statik görüntü denetimleri
+
+[CStatic](../mfc/reference/cstatic-class.md)<br/>
+Statik görüntü penceresi. Statik denetim, Etiket kutusuna ya da diğer denetimler iletişim kutusunda veya pencere ayırmak için kullanılır. Grafik görüntüleri yerine metin veya kutusu da görüntülenebilir.
+
+## <a name="text-controls"></a>Metin denetimi
+
+[CEdit](../mfc/reference/cedit-class.md)<br/>
+Bir düzenlenebilir metin denetimi penceresi. Düzenleme denetimleri, metin girişi kullanıcıdan kabul etmek için kullanılır.
+
+[Cıpaddressctrl](../mfc/reference/cipaddressctrl-class.md)<br/>
+Bir Internet Protokolü (IP) adresi işlemek için bir düzenleme kutusuna destekler.
+
+[CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)<br/>
+Kullanıcı girin ve metin düzenleme denetimi. Aksine, kapsüllenmiş denetimi `CEdit`, karakter ve paragraf biçimlendirme ve OLE nesneleri bir zengin düzenleme denetimini destekler.
+
+## <a name="controls-that-represent-numbers"></a>Sayıları temsil denetimleri
+
+[CSliderCtrl](../mfc/reference/csliderctrl-class.md)<br/>
+Bir kaydırıcı değeri veya değerleri kümesi seçmek için kullanıcı hareket içeren bir denetimdir.
+
+[CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)<br/>
+Bir çift ok düğmelerini azaltabilir ya da bir değer azaltma için kullanıcı tıklayabilirsiniz.
+
+[CProgressCtrl](../mfc/reference/cprogressctrl-class.md)<br/>
+Soldan sağa bir işlemin ilerlemesini belirtmek için kademeli olarak doldurulmuş bir dikdörtgen görüntüler.
+
+[CScrollBar](../mfc/reference/cscrollbar-class.md)<br/>
+Bir kaydırma çubuğu denetimi penceresi. Sınıfı, bir iletişim kutusu veya kullanıcı bir aralık içinde bir konum belirtebilirsiniz penceresinde denetimi olarak kullanılmak üzere bir kaydırma çubuğunun işlevlerini sağlar.
+
+## <a name="buttons"></a>Düğmeleri
+
+[CButton](../mfc/reference/cbutton-class.md)<br/>
+Bir düğme denetimi penceresi. Sınıf, düğme, onay kutusu veya radyo düğmesinin bir iletişim kutusu veya penceresi için bir programlama arabirimi sağlar.
+
+[CBitmapButton](../mfc/reference/cbitmapbutton-class.md)<br/>
+Başlık metnini yerine bir bit eşlem ile bir düğme.
+
+## <a name="lists"></a>Listeler
+
+[CListBox](../mfc/reference/clistbox-class.md)<br/>
+Bir liste kutusu denetimi penceresi. Liste kutusu, kullanıcının görüntüleyebileceği ve Seç öğeleri listesini görüntüler.
+
+[CDragListBox](../mfc/reference/cdraglistbox-class.md)<br/>
+Windows liste kutusu işlevlerini sağlar. dosya adları ve dize değişmez değerleri gibi liste kutusu öğelerini taşımasına izin verir. Liste kutuları bu özelliğe sahip bir öğe listesi alfabetik değerinden başka bir sırada için yararlıdır, yol adlarını veya dosyaları gibi bir proje içerir.
+
+[CComboBox](../mfc/reference/ccombobox-class.md)<br/>
+Bir birleşik giriş kutusu denetimi penceresi. Birleşik giriş kutusu, bir düzenleme denetimi ve liste kutusu karakterlerinden oluşur.
+
+[CComboBoxEx](../mfc/reference/ccomboboxex-class.md)<br/>
+Birleşik giriş kutusu denetim görüntü listeleri için destek sağlayarak genişletir.
+
+[CCheckListBox](../mfc/reference/cchecklistbox-class.md)<br/>
+Hangi kullanıcı işaretleyin veya işaretini kaldırın, her öğesinin yanında onay kutuları öğelerin listesini görüntüler.
+
+[CListCtrl](../mfc/reference/clistctrl-class.md)<br/>
+Bir öğe koleksiyonu, her bir simge ve dosya Gezgini'nin sağ bölmeye benzer bir şekilde bir etiket oluşan görüntüler.
+
+[CTreeCtrl](../mfc/reference/ctreectrl-class.md)<br/>
+Simgelerin ve etiketlerin bir şekilde dosya Gezgini için sol bölmedeki benzer düzenlenmiş, hiyerarşik bir listesini görüntüler.
+
+## <a name="toolbars-and-status-bars"></a>Araç çubuklarını ve durum çubukları
+
+[CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)<br/>
+Windows ortak araç çubuğu denetimi işlevlerini sağlar. Çoğu MFC programları kullanım [CToolBar](../mfc/reference/ctoolbar-class.md) yerine bu sınıfı.
+
+[CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md)<br/>
+Yatay bir pencere genellikle uygulama durum bilgilerini görüntüleyebilen bölmelere bölünür. Çoğu MFC programları kullanım [CStatusBar](../mfc/reference/cstatusbar-class.md) yerine bu sınıfı.
+
+## <a name="miscellaneous-controls"></a>Çeşitli denetimleri
+
+[CAnimateCtrl](../mfc/reference/canimatectrl-class.md)<br/>
+Basit bir video klibi görüntüler.
+
+[CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md)<br/>
+Bir uygulamada bir aracın amacını açıklayan metnin tek bir çizgi görüntüler küçük bir açılır pencere.
+
+[CDateTimeCtrl](../mfc/reference/cdatetimectrl-class.md)<br/>
+Bir genişletilmiş düzenleme denetimi ya da bir kullanıcının belirli bir tarih veya saat değeri seçmenizi sağlayan bir basit Takvim arabirimi denetimini destekler.
+
+[CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)<br/>
+Başlıklar ve etiketler sütunlar için görüntüler.
+
+[CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md)<br/>
+Kullanıcının tarih seçmesini sağlayan bir basit bir takvim arabirimi denetimini destekler.
+
+[CTabCtrl](../mfc/reference/ctabctrl-class.md)<br/>
+Bir denetimi sekmeli üzerinde kullanıcı, bir dizüstü bilgisayarın Bölücü benzer tıklayabilirsiniz.
+
+[CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)<br/>
+Hızlı bir eylem gerçekleştirmek için kullanıcı basabilirsiniz sık erişimli bir tuş bileşimi oluşturmak kullanıcının sağlar.
+
+[CLinkCtrl](../mfc/reference/clinkctrl-class.md)<br/>
+İşaretlenmiş metin işler ve kullanıcı katıştırılmış bağlantısına tıkladığında ilgili uygulamaları başlatır.
+
+[CHtmlEditCtrl](../mfc/reference/chtmleditctrl-class.md)<br/>
+Bir MFC penceresindeki WebBrowser ActiveX denetimi işlevlerini sağlar.
+
+## <a name="related-classes"></a>İlgili sınıflar
+
+[Cımagelist](../mfc/reference/cimagelist-class.md)<br/>
+Windows görüntü listesinin işlevlerini sağlar. Görüntü listeleri liste denetimleri ve ağaç denetimleri ile kullanılır. Depolama ve bit eşlemleri aynı boyutlu bir dizi arşivlemek için de kullanılabilir.
+
+[CCtrlView](../mfc/reference/cctrlview-class.md)<br/>
+Windows denetimleri ile ilgili tüm görünümleri için temel sınıf. Denetimlerine göre görünümleri aşağıda açıklanmıştır.
+
+[CEditView](../mfc/reference/ceditview-class.md)<br/>
+Bir Windows standart içeren bir görünümü düzenleme denetimi.
+
+[CRichEditView](../mfc/reference/cricheditview-class.md)<br/>
+Zengin bir Windows içeren bir görünümü düzenleme denetimi.
+
+[CListView](../mfc/reference/clistview-class.md)<br/>
+Windows liste denetimi içeren bir görünüm.
+
+[CTreeView](../mfc/reference/ctreeview-class.md)<br/>
+Bir Windows ağaç denetimi içeren bir görünüm.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

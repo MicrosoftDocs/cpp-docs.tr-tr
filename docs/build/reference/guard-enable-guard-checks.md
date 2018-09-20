@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d775e9c42ceb8a564e2cc7992cb95ac9717a966d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 71dc4a3a1f2c08d3bac2fcf5c474768f438feccd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45707687"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394992"
 ---
 # <a name="guard-enable-guard-checks"></a>/GUARD (Koruyucu Denetimlerini Etkinleştirme)
 
@@ -47,6 +47,6 @@ Zaman kaynak kodu derlendiğinde kullanarak [/Guard: cf](../../build/reference/g
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Guard (Denetim etkinleştirme akışı)](../../build/reference/guard-enable-control-flow-guard.md)
-[bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[/guard (Denetim Akışı Korumasını Etkinleştirme)](../../build/reference/guard-enable-control-flow-guard.md)<br/>
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
 [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

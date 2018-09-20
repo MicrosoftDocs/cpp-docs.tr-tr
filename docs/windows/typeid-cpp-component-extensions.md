@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 63a2c8f57f7031f63f6e5b0d4d20c2c69b5f4934
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e1daf9d33b3eb21bf7d196a4263b5f2f7009b183
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592344"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435408"
 ---
 # <a name="typeid--c-component-extensions"></a>typeid (C++ Bileşen Uzantıları)
 
@@ -39,7 +39,7 @@ T::typeid
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Tür adı.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
@@ -52,7 +52,7 @@ Platform::Type^ type = T::typeid;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Tür adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -73,7 +73,7 @@ type::typeid
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*  
+*Türü*<br/>
 İstediğiniz bir türün (soyut bildirimci) adını `System::Type` nesne.
 
 ### <a name="remarks"></a>Açıklamalar

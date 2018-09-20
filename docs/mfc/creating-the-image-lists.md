@@ -16,24 +16,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53cf33a551dc95e7ed282b599673f627ff8a7b21
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7772b6b6a809e5a89e2cb6b0ef3edb68821805c2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220943"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46372321"
 ---
 # <a name="creating-the-image-lists"></a>Görüntü Listelerini Oluşturma
-Görüntü listelerini oluşturma olup aynı kullandığınız [CListView](../mfc/reference/clistview-class.md) veya [CListCtrl](../mfc/reference/clistctrl-class.md).  
-  
+
+Görüntü listelerini oluşturma olup aynı kullandığınız [CListView](../mfc/reference/clistview-class.md) veya [CListCtrl](../mfc/reference/clistctrl-class.md).
+
 > [!NOTE]
->  Liste denetiminiz varsa listeleri yalnızca görüntü `LVS_ICON` stili.  
-  
- Bir sınıf kullanma `CImageList` (tam boyutlu simgeler, küçük simgeleri ve durumlarını için) bir veya daha fazla görüntü listeleri oluşturmak için. Bkz [Cımagelist](../mfc/reference/cimagelist-class.md)görüp [liste görünümü görüntü listeler](/windows/desktop/Controls/using-list-view-controls) Windows SDK.  
-  
- Çağrı [CListCtrl::SetImageList](../mfc/reference/clistctrl-class.md#setimagelist) her görüntü listesi; bir işaretçi uygun geçirmek `CImageList` nesne.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CListCtrl kullanma](../mfc/using-clistctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+>  Liste denetiminiz varsa listeleri yalnızca görüntü `LVS_ICON` stili.
+
+Bir sınıf kullanma `CImageList` (tam boyutlu simgeler, küçük simgeleri ve durumlarını için) bir veya daha fazla görüntü listeleri oluşturmak için. Bkz [Cımagelist](../mfc/reference/cimagelist-class.md)görüp [liste görünümü görüntü listeler](/windows/desktop/Controls/using-list-view-controls) Windows SDK.
+
+Çağrı [CListCtrl::SetImageList](../mfc/reference/clistctrl-class.md#setimagelist) her görüntü listesi; bir işaretçi uygun geçirmek `CImageList` nesne.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CListCtrl Kullanma](../mfc/using-clistctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

@@ -17,34 +17,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8dd30b21b1ec635c6d5b5f2f5c6c6d9eb6fc3fa7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3ebfcb8fbacd3c464fc3697fc15bad385c1547d4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385797"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420666"
 ---
 # <a name="using-cimagelist"></a>CImageList Kullanma
-Sınıfı tarafından temsil edilen bir resim listesi [Cımagelist](../mfc/reference/cimagelist-class.md), her biri başvurulabilir için kendi dizini tarafından aynı boyuta sahip görüntüleri koleksiyonudur. Görüntü listeleri simgeler veya bit eşlemler büyük kümelerini verimli bir şekilde yönetmek için kullanılır. Görüntü listeleri windows; olmadığından değil kendilerini denetimleri bulunur. Ancak, liste denetimleri gibi denetimlerin birkaç farklı türleri ile birlikte kullanılan ([CListCtrl](../mfc/reference/clistctrl-class.md)), ağaç denetimlerini ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) ve sekme denetimleri ([CTabCtrl](../mfc/reference/ctabctrl-class.md)).  
-  
- Görüntü listesi tüm görüntüleri geniş, tek bit eşlem ekran aygıt biçiminde yer alır. Görüntü listesi görüntüleri şeffaf bir şekilde çizmek için kullanılan maskeleri (simge stil) içeren tek renkli bir bit eşlem de içerebilir. `CImageList` görüntüler çizme, oluşturmak ve görüntü listeleri yok, Ekle ve görüntüleri kaldırmak, görüntüleri değiştirmeyi, görüntüleri birleştirme ve görüntüleri sürükleme sağlayan üye işlevleri sağlar.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Görüntü Listesi Türleri](../mfc/types-of-image-lists.md)  
-  
--   [Görüntü Listesi Kullanma](../mfc/using-an-image-list.md)  
-  
--   [Görüntü Listelerini Düzenleme](../mfc/manipulating-image-lists.md)  
-  
--   [Görüntü Listesinden Görüntü Çizme](../mfc/drawing-images-from-an-image-list.md)  
-  
--   [Görüntü Listelerindeki Görüntü Yer Paylaşımları](../mfc/image-overlays-in-image-lists.md)  
-  
--   [Görüntü Listesinden Görüntü Sürükleme](../mfc/dragging-images-from-an-image-list.md)  
-  
--   [Görüntü Listelerindeki Görüntü Bilgileri](../mfc/image-information-in-image-lists.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimler](../mfc/controls-mfc.md)
+
+Sınıfı tarafından temsil edilen bir görüntü listesi [Cımagelist](../mfc/reference/cimagelist-class.md), her biri başvurulabilir dizinini tarafından aynı boyutta görüntüleri oluşan bir koleksiyondur. Görüntü listeleri büyük simgeler veya bit eşlemler kümelerini etkili bir şekilde yönetmek için kullanılır. Görüntü listeleri windows; olmadığından değil kendilerini denetimleri bulunur. Ancak, birkaç farklı türde liste denetimleri gibi denetimleri ile kullanılır ([CListCtrl](../mfc/reference/clistctrl-class.md)), ağaç denetimleri ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) ve denetimlerini sekmesine ([CTabCtrl](../mfc/reference/ctabctrl-class.md)).
+
+Ekran cihazında biçiminde tek, geniş eşlemde görüntü listesi'ndaki tüm görüntüler yer alır. Görüntü listesi görüntüleri şeffaf bir şekilde çizmek için kullanılan maskeleri (simge stili) içeren tek renkli bir bit eşlem de. `CImageList` görüntüler çizme, oluşturma ve görüntü listeleri yok etmek, ekleyin ve görüntülerini kaldırmak, görüntüleri değiştirin, görüntüleri birleştirin ve görüntüleri sürükleme olanak sağlayan işlevleri sağlar.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+
+- [Görüntü Listesi Türleri](../mfc/types-of-image-lists.md)
+
+- [Görüntü Listesi Kullanma](../mfc/using-an-image-list.md)
+
+- [Görüntü Listelerini Düzenleme](../mfc/manipulating-image-lists.md)
+
+- [Görüntü Listesinden Görüntü Çizme](../mfc/drawing-images-from-an-image-list.md)
+
+- [Görüntü Listelerindeki Görüntü Yer Paylaşımları](../mfc/image-overlays-in-image-lists.md)
+
+- [Görüntü Listesinden Görüntü Sürükleme](../mfc/dragging-images-from-an-image-list.md)
+
+- [Görüntü Listelerindeki Görüntü Bilgileri](../mfc/image-information-in-image-lists.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Denetimler](../mfc/controls-mfc.md)
 

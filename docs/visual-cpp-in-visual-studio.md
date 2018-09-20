@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6116a1b27595c6400edfcb79daafb362fb7aec5f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 92ffcd9ecf292f07d78df75f75c8d1ce77a6cbfb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684497"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46399788"
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual Studio'da Visual C++
 
@@ -84,7 +84,8 @@ C++ öğrenmeye başlayın.
 [Geliştirme araçları ve IDE](ide/ide-and-tools-for-visual-cpp-development.md).
 Visual Studio IDE kullanmak projeler oluşturun, kaynak kodu dosyaları ile çalışma, kitaplıklarına bağlanması, derleme, hata ayıklama, birim testleri oluşturma, statik analiz yapmak için dağıtma ve daha.
 
-[Derleyicileri ve derleme Araçları](build/building-c-cpp-programs.md) Microsoft C++ Derleyici ve bağlayıcı seçenekleri, hata iletileri, komut satırı örnekleri, farklı platformlar ve derleme başvuru konuları için Yapılandır. 
+[Derleyicileri ve Derleme Araçları](build/building-c-cpp-programs.md)<br/>
+Microsoft C++ Derleyici ve bağlayıcı seçenekleri, hata iletileri, komut satırı örnekleri, farklı platformlar ve derleme başvuru konuları için Yapılandır. 
 
 ## <a name="write-applications-in-c"></a>C++'da uygulamaları yazma
 
@@ -94,9 +95,11 @@ Kılavuzları ve referans içeriği Windows Geliştirici Merkezi'nde bulabilirsi
 [Masaüstü uygulamaları (C++)](windows/desktop-applications-visual-cpp.md)<br/>
 Geleneksel yerel C++ Masaüstü uygulamaları için Windows oluşturmayı öğrenin.
 
-[.NET programlama ile C + +/ CLI](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md) C# veya Visual Basic gibi dillerde yazılan yerel C++ ve .NET programlar arasında birlikte çalışabilirliği sağlamak DLL'leri oluşturmayı öğrenin.
+[.NET programlama ile C + +/ CLI](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
+C# veya Visual Basic gibi dillerde yazılan yerel C++ ve .NET programlar arasında birlikte çalışabilirliği sağlamak DLL'leri oluşturmayı öğrenin.
 
-[Linux programlama](linux/index.md) kod için Visual Studio IDE kullanın ve GCC ile derleme için bir uzak Linux makinesine dağıtın.
+[Linux programlama](linux/index.md)<br/>
+Kodu Visual Studio IDE kullanın ve GCC ile derleme için bir uzak Linux makinesine dağıtın.
 
 [Visual C++'ta DLL'ler](build/dlls-in-visual-cpp.md)<br/>
 Windows masaüstü DLL'leri oluşturmak için Win32, ATL ve MFC'nin nasıl kullanılacağını öğretir ve DLL dosyanızı nasıl derleyeceğiniz ve kaydedeceğiniz hakkında bilgiler sağlar.

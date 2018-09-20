@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6db0aa5801a8eca896282b65e4d9f156e9b38318
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6f9c444861587e21724fe5f6aff545935fed6086
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212818"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420510"
 ---
 # <a name="property--c-component-extensions"></a>özellik (C++ Bileşen Uzantıları)
 
@@ -33,15 +33,15 @@ Bildiren bir *özelliği*, görür ve bir veri üyesi veya bir dizi öğesine gi
 
 Özellikleri aşağıdaki türlerden biri bildirebilirsiniz.
 
-*Basit özellik*  
+*Basit özellik*<br/>
 Varsayılan olarak, oluşturur bir *set erişimcisine* özellik değeri atar bir *get erişimcisine* özellik değeri ve özellik değerini içeren bir derleyicinin ürettiği özel veri üyesi alır.
 
-*özelliği bloğu*  
+*özelliği bloğu*<br/>
 Kullanıcı tanımlı get oluşturun ve/veya set erişimcileri için bunu kullanın. Her iki okuma/yazma özelliği olan get ve set erişimcileri, tanımlanmış, salt okunur yalnızca get erişimcisine tanımlanır ve salt yazılır yalnızca set erişimcisine tanımlanır.
 
 Ayrıca, özellik değerini içeren bir veri üyesi açıkça belirtmesi gerekir.
 
-*Dizinlenmiş özellik*  
+*Dizinlenmiş özellik*<br/>
 Bir özellik değerini ayarlamak ve almak için kullanabileceğiniz bir özelliği bloğu tarafından bir veya daha fazla dizin belirtildi.
 
 Bir kullanıcı tarafından tanımlanan bir özellik adı ya da olan bir dizini oluşturulmuş özelliğe oluşturabilirsiniz veya *varsayılan* özellik adı. Özellik tanımlandığı sınıfın adı varsayılan bir dizin özelliği adıdır. Varsayılan özellik bildirmek için belirtin **varsayılan** anahtar sözcüğü yerine bir özellik adı.
@@ -71,27 +71,27 @@ property type default[index_list] {
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*  
+*Türü*<br/>
 Özellik değeri ve bu nedenle özelliği veri türü.
 
-*property_name*  
+*property_name*<br/>
 Özelliğin adı.
 
-*erişim değiştiricisi*  
+*erişim değiştiricisi*<br/>
 Bir erişim niteleyicisi. Geçerli niteleyicileri olan **statik** ve **sanal**.
 
 Get veya set erişimcisine üzerinde kabul **sanal** niteleyicisi ancak gerekir üzerinde kabul **statik** niteleyicisi.
 
-*Devralma değiştiricisi*  
+*Devralma değiştiricisi*<br/>
 Bir devralma niteleyicisi. Geçerli niteleyicileri olan **soyut** ve **korumalı**.
 
-*index_list*  
+*index_list*<br/>
 Bir veya daha fazla dizin virgülle ayrılmış listesi. Her dizin, dizin türü ve özellik yöntem gövdesinde kullanılan isteğe bağlı bir tanımlayıcı oluşur.
 
-*value*  
+*value*<br/>
 Ayarlama işleminin özelliğine atayın veya bir get işlemi almak için değer.
 
-*property_body*  
+*property_body*<br/>
 Özellik yöntemi kümesi veya get erişimcisinin gövdesi. *Property_body* kullanabilirsiniz *index_list* temel özellik veri üyesine erişmek için veya kullanıcı tanımlı işleme parametre olarak.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
@@ -123,16 +123,16 @@ modifier property type default[index];
 
 ### <a name="parameters"></a>Parametreler
 
-*Değiştiricisi*  
+*Değiştiricisi*<br/>
 Özellik bildiriminde ya da bir get/set erişimcisine yöntemi kullanılabilir değiştiricisi. Olası değerler **statik** ve **sanal**.
 
-*Türü*  
+*Türü*<br/>
 Özelliği tarafından temsil edilen değerin türü.
 
-*property_name*  
+*property_name*<br/>
 Raise yöntemi çağrıldı; temsilcisinin imzasıyla eşleşmelidir.
 
-*index_list*  
+*index_list*<br/>
 Belirtilen köşeli ayraç (alt simge işleci, ([])), bir veya daha fazla dizinleri virgülle ayrılmış listesi. Her dizin için özellik yöntem gövdesinde bir tür ve isteğe bağlı olarak kullanılabilecek bir tanımlayıcı belirtin.
 
 ### <a name="remarks"></a>Açıklamalar

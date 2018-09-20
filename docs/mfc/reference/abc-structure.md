@@ -16,44 +16,49 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c9aac181edb12df8904a2bc6d891d59c0067ecc
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 6a977e3f0efd763ee416348f11e3c6b016c0d42e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339325"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46373718"
 ---
 # <a name="abc-structure"></a>ABC Yapısı
-`ABC` Yapı içeren bir karakter TrueType yazı tipi genişliği.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-typedef struct _ABC { /* abc */  
-    int abcA;  
-    UINT abcB;  
-    int abcC;  
-} ABC;  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *abcA*  
- Karakteri bir boşluğu belirtir. Bir aralık uzaklığı için geçerli konumun karakter simgesi çizmeden önce ekleme ' dir.  
-  
- *abcB*  
- Karakter B aralığını belirtir. B boşluk karakteri glif çizilen kısmının genişliğidir.  
-  
- *abcC*  
- C karakter aralığını belirtir. C boşluk, boşluk karakteri glif sağındaki sağlamak için geçerli konumun eklemek için uzaklık olabilir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir karakterin toplam genişlik A, B ve C alanları toplamı ' dir. Bir ya da C alanı underhangs veya overhangs göstermek için negatif olabilir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** wingdi.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CDC::GetCharABCWidths](../../mfc/reference/cdc-class.md#getcharabcwidths)
+
+`ABC` Yapı içeren bir karakter TrueType yazı tipi genişliği.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+typedef struct _ABC { /* abc */
+    int abcA;
+    UINT abcB;
+    int abcC;
+} ABC;
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*abcA*<br/>
+Karakteri bir boşluğu belirtir. Bir aralık uzaklığı için geçerli konumun karakter simgesi çizmeden önce ekleme ' dir.
+
+*abcB*<br/>
+Karakter B aralığını belirtir. B boşluk karakteri glif çizilen kısmının genişliğidir.
+
+*abcC*<br/>
+C karakter aralığını belirtir. C boşluk, boşluk karakteri glif sağındaki sağlamak için geçerli konumun eklemek için uzaklık olabilir.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir karakterin toplam genişlik A, B ve C alanları toplamı ' dir. Bir ya da C alanı underhangs veya overhangs göstermek için negatif olabilir.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** wingdi.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
+[CDC::GetCharABCWidths](../../mfc/reference/cdc-class.md#getcharabcwidths)
 
 

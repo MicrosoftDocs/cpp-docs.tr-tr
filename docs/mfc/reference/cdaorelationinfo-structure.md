@@ -17,75 +17,80 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0fedf6ad90af670a462b0ccac23cc599a1a13e26
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 5ca5fceb25fdc9640248e0e510efb0c2f18eb506
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336364"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46380093"
 ---
 # <a name="cdaorelationinfo-structure"></a>CDaoRelationInfo Yapısı
-`CDaoRelationInfo` Yapısı iki tablo alanlar arasında tanımlanmış bir ilişkisi hakkında bilgi içeren bir [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+`CDaoRelationInfo` Yapısı iki tablo alanlar arasında tanımlanmış bir ilişkisi hakkında bilgi içeren bir [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```cpp
-struct CDaoRelationInfo  
-{  
-    CDaoRelationInfo();                     // Constructor  
-    CString m_strName;                      // Primary  
-    CString m_strTable;                     // Primary  
-    CString m_strForeignTable;              // Primary  
-    long m_lAttributes;                     // Secondary  
-    CDaoRelationFieldInfo* m_pFieldInfos;   // Secondary  
+struct CDaoRelationInfo
+{
+    CDaoRelationInfo();                     // Constructor
+    CString m_strName;                      // Primary
+    CString m_strTable;                     // Primary
+    CString m_strForeignTable;              // Primary
+    long m_lAttributes;                     // Secondary
+    CDaoRelationFieldInfo* m_pFieldInfos;   // Secondary
     short m_nFields;                        // Secondary
     // Below the // Implementation comment:
-    // Destructor, not otherwise documented  
-};  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
-*m_strName*  
- İlişki nesnesi benzersiz olarak adlandırır. Daha fazla bilgi için "Name özelliği" DAO Yardım konusuna bakın.  
-  
- *m_strTable*  
- İçindeki birincil tablo adları.  
-  
- *m_strForeignTable*  
- İlişki yabancı tabloda adları. Bir dış tablo, yabancı anahtarlar kapsamak için kullanılmış bir tablodur. Genellikle, bir dış tablo oluşturmak veya bilgi tutarlılığını zorlamak için kullanın. Yabancı genellikle birçok bire çok ilişkisi tarafında tablosudur. Dış tablolar örnekleri Amerikan durumlarını veya Kanada il veya müşteri siparişleri için kodları barındıran tablolar içerir.  
-  
- *m_lAttributes*  
- İlişki türü hakkında bilgi içerir. Bu üyenin değeri aşağıdakilerden biri olabilir:  
-  
-- `dbRelationUnique` Bire bir ilişkidir.  
-  
-- `dbRelationDontEnforce` İlişki (hiçbir bilgi tutarlılığı) zorunlu tutulur.  
-  
-- `dbRelationInherited` İlişki, iki bağlı tabloları içeren çerçevesidir bir veritabanında zaten var.  
-  
-- `dbRelationLeft` Sol birleştirme ilişkidir. Sol dış birleşim ilk kayıtlarını içerir (soldaki) iki tablonun ikinci (sağdaki) tablodaki kayıtların eşleşen değer yoksa olsa bile.  
-  
-- `dbRelationRight` Sağ birleştirme ilişkidir. Sağ dış birleşim tüm ikinci kayıtlarını içerir (sağdaki) iki tablonun ilk (soldaki) bir tablodaki kayıtları için eşleşen değer yoksa olsa bile.  
-  
-- `dbRelationUpdateCascade` Güncelleştirmeleri basamaklı.  
-  
-- `dbRelationDeleteCascade` Silme işlemleri basamaklı.  
-  
-*m_pFieldInfos*  
- Bir dizi işaretçi [Cdaorelationfieldınfo](../../mfc/reference/cdaorelationfieldinfo-structure.md) yapıları. Dizi içindeki her bir alan için bir nesne içerir. `m_nFields` Veri üyesi, dizi öğelerinin sayısını verir.  
-  
-*M_nFields*  
- Sayısını `CDaoRelationFieldInfo` nesneler `m_pFieldInfos` veri üyesi.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Birincil ve ikincil yukarıdaki başvuruları nasıl bilgileri tarafından döndürülen belirtmek [GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) sınıf üyesi işlevinde `CDaoDatabase`.  
-  
- İlişki nesneleri bir MFC sınıfı tarafından temsil edilmez. Bunun yerine, bir MFC nesnesinin temelindeki DAO nesne `CDaoDatabase` sınıfı ilişkisi nesnelerinin koleksiyonunu tutar: `CDaoDatabase` ilişkisi bilgilerini veya bazı tek tek öğelere erişmek için üye işlevleri kaynakları erişebileceği tek seferde bir ile`CDaoRelationInfo` çağırarak `GetRelationInfo` içeren veritabanı nesnesinin üye işlevi.  
-  
- Tarafından alınan bilgileri [CDaoDatabase::GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) üye işlevi depolanan bir `CDaoRelationInfo` yapısı. `CDaoRelationInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümünü almak için bir `CDaoRelationInfo` nesne.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxdao.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CDaoRelationFieldInfo Yapısı](../../mfc/reference/cdaorelationfieldinfo-structure.md)
+    // Destructor, not otherwise documented
+};
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*m_strName*<br/>
+İlişki nesnesi benzersiz olarak adlandırır. Daha fazla bilgi için "Name özelliği" DAO Yardım konusuna bakın.
+
+*m_strTable*<br/>
+İçindeki birincil tablo adları.
+
+*m_strForeignTable*<br/>
+İlişki yabancı tabloda adları. Bir dış tablo, yabancı anahtarlar kapsamak için kullanılmış bir tablodur. Genellikle, bir dış tablo oluşturmak veya bilgi tutarlılığını zorlamak için kullanın. Yabancı genellikle birçok bire çok ilişkisi tarafında tablosudur. Dış tablolar örnekleri Amerikan durumlarını veya Kanada il veya müşteri siparişleri için kodları barındıran tablolar içerir.
+
+*m_lAttributes*<br/>
+İlişki türü hakkında bilgi içerir. Bu üyenin değeri aşağıdakilerden biri olabilir:
+
+- `dbRelationUnique` Bire bir ilişkidir.
+
+- `dbRelationDontEnforce` İlişki (hiçbir bilgi tutarlılığı) zorunlu tutulur.
+
+- `dbRelationInherited` İlişki, iki bağlı tabloları içeren çerçevesidir bir veritabanında zaten var.
+
+- `dbRelationLeft` Sol birleştirme ilişkidir. Sol dış birleşim ilk kayıtlarını içerir (soldaki) iki tablonun ikinci (sağdaki) tablodaki kayıtların eşleşen değer yoksa olsa bile.
+
+- `dbRelationRight` Sağ birleştirme ilişkidir. Sağ dış birleşim tüm ikinci kayıtlarını içerir (sağdaki) iki tablonun ilk (soldaki) bir tablodaki kayıtları için eşleşen değer yoksa olsa bile.
+
+- `dbRelationUpdateCascade` Güncelleştirmeleri basamaklı.
+
+- `dbRelationDeleteCascade` Silme işlemleri basamaklı.
+
+*m_pFieldInfos*<br/>
+Bir dizi işaretçi [Cdaorelationfieldınfo](../../mfc/reference/cdaorelationfieldinfo-structure.md) yapıları. Dizi içindeki her bir alan için bir nesne içerir. `m_nFields` Veri üyesi, dizi öğelerinin sayısını verir.
+
+*M_nFields*<br/>
+Sayısını `CDaoRelationFieldInfo` nesneler `m_pFieldInfos` veri üyesi.
+
+## <a name="remarks"></a>Açıklamalar
+
+Birincil ve ikincil yukarıdaki başvuruları nasıl bilgileri tarafından döndürülen belirtmek [GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) sınıf üyesi işlevinde `CDaoDatabase`.
+
+İlişki nesneleri bir MFC sınıfı tarafından temsil edilmez. Bunun yerine, bir MFC nesnesinin temelindeki DAO nesne `CDaoDatabase` sınıfı ilişkisi nesnelerinin koleksiyonunu tutar: `CDaoDatabase` ilişkisi bilgilerini veya bazı tek tek öğelere erişmek için üye işlevleri kaynakları erişebileceği tek seferde bir ile`CDaoRelationInfo` çağırarak `GetRelationInfo` içeren veritabanı nesnesinin üye işlevi.
+
+Tarafından alınan bilgileri [CDaoDatabase::GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) üye işlevi depolanan bir `CDaoRelationInfo` yapısı. `CDaoRelationInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümünü almak için bir `CDaoRelationInfo` nesne.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxdao.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CDaoRelationFieldInfo Yapısı](../../mfc/reference/cdaorelationfieldinfo-structure.md)

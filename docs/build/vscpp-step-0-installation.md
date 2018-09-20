@@ -2,7 +2,7 @@
 title: Visual Studio 2017'de C++ desteği yükleme | Microsoft Docs
 description: Visual C++ için Visual Studio desteği yükleme
 ms.custom: mvc
-ms.date: 06/21/2018
+ms.date: 09/17/2018
 ms.topic: tutorial
 ms.technology:
 - devlang-C++
@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3e0fef319fbe119118e3a915a66bea3546bbb9a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6c905df6fb406b9189bd46d20c6f199d3d90a722
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702903"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46441948"
 ---
 # <a name="install-c-support-in-visual-studio"></a>Visual Studio'da C++ desteği yükleme
 
@@ -37,7 +37,7 @@ Disk alanı ve işletim sistemi gereksinimleri hakkında daha fazla bilgi için 
 
 ## <a name="visual-studio-2015-installation"></a>Visual Studio 2015 yüklemesi
 
-Visual Studio 2015'i yüklemek için Git [Visual Studio'nun eski sürümlerini indirin](https://www.visualstudio.com/vs/older-downloads/). Kurulum programını çalıştırın ve seçin **özel yükleme** C++ bileşeni seçin.
+Visual Studio 2015'i yüklemek için Git [Visual Studio'nun eski sürümlerini indirin](https://www.visualstudio.com/vs/older-downloads/). Kurulum programını çalıştırın ve seçin **özel yükleme** C++ bileşeni seçin. Mevcut bir Visual Studio 2015 yüklemesini C++ desteği eklemek için Windows Başlat düğmesini türü tıklayın ve **Program Ekle/Kaldır**. Sonuç listesinden programını açın ve ardından Visual Studio 2015 yüklemenizi yüklü programlar listesinde bulun. Çift tıklayın ve ardından **Değiştir** ve yüklemek için Visual C++ bileşenleri seçin.
 
 Genel olarak, Visual Studio 2015 derleyici kullanarak kodunuzu derlemek için ihtiyacınız olsa bile, Visual Studio 2017 kullanmanızı öneririz. Daha fazla bilgi için [yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanmak](../porting/use-native-multi-targeting.md).
 

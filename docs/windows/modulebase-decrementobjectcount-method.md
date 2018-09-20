@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f45f52f2e979b76128be02dc7c3e931bd3b9d2c5
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d90e0560ee5aa7036947e0d81f2d608b5a68bf75
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42594594"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46375929"
 ---
 # <a name="modulebasedecrementobjectcount-method"></a>ModuleBase::DecrementObjectCount Yöntemi
 
@@ -50,5 +50,5 @@ Uygulandığında, azaltır nesne sayısını modülü tarafından izlenir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ModuleBase Sınıfı](../windows/modulebase-class.md)  
+[ModuleBase Sınıfı](../windows/modulebase-class.md)<br/>
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

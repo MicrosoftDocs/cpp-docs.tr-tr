@@ -20,19 +20,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3864de8b3133fd2284b3ce57b75b30d8f41c26a7
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 844f62b110f54ba3e2c8909a78d58c9f2c01dcac
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36928534"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392820"
 ---
 # <a name="relationship-between-a-c-window-object-and-an-hwnd"></a>Bir C++ Pencere Nesnesi ile bir HWND Arasındaki İlişkiler
-Pencerenin *nesne* C++ nesnesidir `CWnd` sınıfı (veya türetilmiş bir sınıf) doğrudan, programı oluşturan. Gelen ve yanıt programınızın oluşturucu ve yıkıcı çağrıları olarak geçer. Windows *penceresi*, diğer yandan, bir donuk bir pencere karşılık gelir ve sistem kaynaklarını varsa tüketir bir iç Windows veri yapısına işleyicisidir. Windows penceresi "pencere tanıtıcısı" tanımlanır (`HWND`) ve sonra oluşturulan `CWnd` nesnesi için bir çağrı tarafından oluşturulur `Create` sınıfının üye işlevini `CWnd`. Pencere, programı çağrısı veya bir kullanıcının eylemi tarafından yok edilmesi. Bir pencere tanıtıcının penceresi nesnenin depolanan *m_hWnd* üye değişkeni. Aşağıdaki şekilde C++ pencere nesnesi ile Windows penceresi arasındaki ilişkiyi gösterir. Pencereler oluşturma ele alınmıştır [oluşturma Windows](../mfc/creating-windows.md). Pencereleri yok etme ele alınmıştır [pencere nesnelerini yok etme](../mfc/destroying-window-objects.md).  
-  
- ![CWnd pencere nesnesi ve sonuçta elde edilen penceresi](../mfc/media/vc37fj1.gif "vc37fj1")  
-Pencere nesnesi ile Windows penceresi  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Pencere Nesneleri](../mfc/window-objects.md)
+
+Pencerenin *nesne* C++ nesnesidir `CWnd` sınıfı (veya türetilmiş bir sınıf), programınızı doğrudan oluşturur. Bu, gelir ve yanıt programınızın oluşturucuyu ve yok edici çağrıları olarak geçer. Windows *penceresi*, öte yandan, bir donuk varsa sistem kaynaklarını tüketir ve bir pencere için karşılık gelen bir iç Windows veri yapısına işleyicisidir. Bir Windows penceresi "pencere tanıtıcısı" tanımlanır (`HWND`) ve sonra oluşturulan `CWnd` bir çağrı tarafından oluşturulan nesne `Create` sınıfının üye işlevinde `CWnd`. Pencerenin programı çağrısı veya bir kullanıcı eylemi yok. Pencere tanıtıcısı penceresi nesne depolanan *m_hWnd* üye değişkeni. Aşağıdaki şekil, C++ pencere nesnesi ile Windows penceresi arasındaki ilişkiyi gösterir. Pencereler oluşturma ele alınmıştır [oluşturma Windows](../mfc/creating-windows.md). Pencerelerini yok etme ele alınmıştır [pencere nesnelerini yok etme](../mfc/destroying-window-objects.md).
+
+![CWnd pencere nesnesi ile elde edilen penceresi](../mfc/media/vc37fj1.gif "vc37fj1") pencere nesnesi ile Windows penceresi
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Pencere Nesneleri](../mfc/window-objects.md)
 

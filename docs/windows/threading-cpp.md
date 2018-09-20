@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 899c41a65a651f7464b11639d2106b3eaa51e21b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8ab2699781526ee12784f7c048cd9a833526fd30
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45708662"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46415010"
 ---
 # <a name="threading-c"></a>iş parçacığı oluşturma (C++)
 
@@ -80,8 +80,8 @@ Bkz: [lisanslı](../windows/licensed.md) örnek kullanımını örneğin **iş p
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[COM Öznitelikleri](../windows/com-attributes.md)  
-[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  
-[Sınıf Öznitelikleri](../windows/class-attributes.md)  
-[Eski Kod için Çoklu İş Parçacığı Kullanma Desteği (Visual C++)](../parallel/multithreading-support-for-older-code-visual-cpp.md)  
+[COM Öznitelikleri](../windows/com-attributes.md)<br/>
+[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[Sınıf Öznitelikleri](../windows/class-attributes.md)<br/>
+[Eski Kod için Çoklu İş Parçacığı Kullanma Desteği (Visual C++)](../parallel/multithreading-support-for-older-code-visual-cpp.md)<br/>
 [Nötr apartmanlar](/windows/desktop/cossdk/neutral-apartments)  

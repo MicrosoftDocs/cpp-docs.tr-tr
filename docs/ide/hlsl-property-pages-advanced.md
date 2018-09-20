@@ -15,27 +15,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: edcc84e8c12fab7149bbf6db2baf1f86e8635eb5
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: fa1a15f6542da165b615970591f384b875dd588b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725516"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444560"
 ---
 # <a name="hlsl-property-pages-advanced"></a>HLSL Özellik Sayfaları: Gelişmiş
-HLSL derleyicisi (fxc.exe) aşağıdaki özellikleri yapılandırmak için kullanın, **Gelişmiş** özellik sayfası. Nasıl erişileceği hakkında daha fazla bilgi için **Gelişmiş** HLSL klasöründe, özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
-  
+
+HLSL derleyicisi (fxc.exe) aşağıdaki özellikleri yapılandırmak için kullanın, **Gelişmiş** özellik sayfası. Nasıl erişileceği hakkında daha fazla bilgi için **Gelişmiş** HLSL klasöründe, özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).
+
 ## <a name="uielement-list"></a>UIElement Listesi
 
 - **Başlangıç başlığını gösterme**
 
-   **Evet (/ nologo)** görüntülenmesine başlangıç başlığının ve bilgi iletisi; Aksi takdirde, **Hayır**. Varsayılan değer olan **Evet (/ nologo)**.  
-  
+   **Evet (/ nologo)** görüntülenmesine başlangıç başlığının ve bilgi iletisi; Aksi takdirde, **Hayır**. Varsayılan değer olan **Evet (/ nologo)**.
+
 - **Uyarıları hata olarak değerlendir**
 
-   **Evet (/WX)** tüm Derleyici uyarılarını hata olarak; değerlendirmek için Aksi takdirde, **Hayır**.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [HLSL özellik sayfaları](../ide/hlsl-property-pages.md)   
- [HLSL özellik sayfaları: Genel](../ide/hlsl-property-pages-general.md)   
- [HLSL Özellik Sayfaları: Çıktı Dosyaları](../ide/hlsl-property-pages-output-files.md)
+   **Evet (/WX)** tüm Derleyici uyarılarını hata olarak; değerlendirmek için Aksi takdirde, **Hayır**.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[HLSL Özellik Sayfaları](../ide/hlsl-property-pages.md)<br>
+[HLSL Özellik Sayfaları: Genel](../ide/hlsl-property-pages-general.md)<br>
+[HLSL Özellik Sayfaları: Çıktı Dosyaları](../ide/hlsl-property-pages-output-files.md)

@@ -16,38 +16,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e62618301e09ad4c44fb91608976ecab972a59da
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 83606041250dafed0ef57eb4eea18d7314e0bbef
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344139"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46429272"
 ---
 # <a name="inserting-a-form-into-a-project"></a>Bir Projeye Form Ekleme
-Formları denetimleri için uygun bir kapsayıcı sağlar. MFC kitaplıkları uygulamasının desteklediği sürece, MFC tabanlı bir form uygulamanıza kolayca ekleyebilirsiniz.  
-  
-### <a name="to-insert-a-form-into-your-project"></a>Bir form projenize eklemek için  
-  
-1.  Sınıf Görünümü, formun eklemek istediğiniz projesini seçin ve farenin sağ düğmesiyle tıklatın.  
-  
-2.  Kısayol menüsünden tıklatın **Ekle** ve ardından **sınıfı Ekle**.  
-  
-     Varsa **yeni bir Form** komutu kullanılabilir değil, projenizi Etkin Şablon kitaplığı (ATL) üzerinde temel olabilir. Bir formu bir ATL projesine eklemek için şunları yapmanız gerekir [belirli ayarları belirtmek](../atl/reference/application-settings-atl-project-wizard.md) ilk proje oluşturulurken.  
-  
-3.  Gelen **MFC** klasörünü tıklatın **MFC sınıfı**.  
-  
-4.  MFC Sınıf Sihirbazı'nı kullanarak öğesinden türetilen yeni sınıfı hale [Cformview'yu](../mfc/reference/cformview-class.md).  
-  
- Visual C++ ekler formun uygulamanıza, böylece başlamak için iletişim kutusu Düzenleyicisi içinde açma denetimleri ekleme ve genel tasarımını çalışma.  
-  
- (İletişim tabanlı uygulamalar için geçerli değil) aşağıdaki ek adımları gerçekleştirmek isteyebilirsiniz:  
-  
-1.  Geçersiz kılma `OnUpdate` üye işlevi.  
-  
-2.  Verileri görünümünüzden belgenize taşımak için bir üye işlevini uygulayın.  
-  
-3.  Oluşturma bir `OnPrint` üye işlevi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Form görünümleri](../mfc/form-views-mfc.md)
+
+Formları denetimleri için uygun bir kapsayıcı sağlar. MFC kitaplıkları uygulamanın desteklediği sürece, MFC tabanlı bir form uygulamanıza kolayca ekleyebilirsiniz.
+
+### <a name="to-insert-a-form-into-your-project"></a>Bir form projenize eklemek için
+
+1. Sınıf Görünümü formu eklemek istediğiniz projeyi seçin ve sağ fare düğmesine tıklayın.
+
+1. Kısayol menüsünden tıklayın **Ekle** ve ardından **sınıfı Ekle**.
+
+     Varsa **yeni formu** komut kullanılabilir değil, projenizin etkin Şablon kitaplığı (ATL) üzerinde temel alıyor olabilir. Bir form bir ATL projesine eklemek için şunları yapmanız gerekir [belirli ayarları belirtin](../atl/reference/application-settings-atl-project-wizard.md) projeyi oluştururken ilk.
+
+1. Gelen **MFC** klasörünü tıklatın **MFC sınıfı**.
+
+1. MFC Sınıf Sihirbazı'nı kullanarak yeni bir sınıf türetin olun [CFormView](../mfc/reference/cformview-class.md).
+
+Visual C++ ekler form uygulamanıza, böylece siz içinde iletişim kutusu düzenleyicisini açmadan denetimler ekleme ve genel tasarımını çalışma.
+
+(İletişim kutusu tabanlı uygulamalar için geçerli değildir) aşağıdaki ek adımları gerçekleştirmek isteyebilirsiniz:
+
+1. Geçersiz kılma `OnUpdate` üye işlevi.
+
+1. Belgenize görünümünüzden verileri taşımak için bir üye işlevi uygulayın.
+
+1. Oluşturma bir `OnPrint` üye işlevi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Form görünümleri](../mfc/form-views-mfc.md)
 

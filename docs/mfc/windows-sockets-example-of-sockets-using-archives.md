@@ -16,57 +16,59 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 942c3e8aa2aeccefc9c92cd9fd32d453dc5353cf
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 6613e38a19987abcc9f95288e9d1cb6957b076a2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36956433"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427283"
 ---
 # <a name="windows-sockets-example-of-sockets-using-archives"></a>Windows Yuvaları: Arşivlerle Kullanılan Yuvalara Örnek
-Bu makalede sınıfını kullanarak bir örnek sunar [CSocket](../mfc/reference/csocket-class.md). Örnek kullanan `CArchive` yuva verilerine serileştirmek için nesneleri. Bu belge serileştirmesi için veya bir dosyadan olmadığını unutmayın.  
-  
- Aşağıdaki örnekte, arşiv aracılığıyla veri göndermek ve almak için nasıl kullanacağınız gösterilmiştir `CSocket` nesneleri. Örneğin, uygulamanın (aynı makine üzerindeki veya ağ üzerindeki farklı makinelerde) iki örnek veri değişimi şekilde tasarlanmıştır. Bir örnek, diğer örneğe alan ve kabul ettikten verileri gönderir. Bir exchange ya da uygulama başlatabilir ve sunucu veya istemci diğer uygulama olarak davranamaz. Aşağıdaki işlevi uygulamanın görünümü sınıfında tanımlanır:  
-  
- [!code-cpp[NVC_MFCSimpleSocket#1](../mfc/codesnippet/cpp/windows-sockets-example-of-sockets-using-archives_1.cpp)]  
-  
- Bu örnek hakkında en önemli şey yapısı, bir MFC paraleldir `Serialize` işlevi. `PacketSerialize` Üye işlevi oluşur bir **varsa** deyimiyle bir **başka** yan tümcesi. İşlev iki alan [CArchive](../mfc/reference/carchive-class.md) parametre olarak başvuruları: *arData* ve *arAck*. Varsa *arData* arşiv nesne (gönderen) depolamak için ayarlanmış **varsa** dal yürütür; Aksi halde, eğer *arData* ayarlanır (alma) yüklemek için işlev alır**başka** dal. MFC'de seri hale getirme hakkında daha fazla bilgi için bkz: [seri hale getirme](../mfc/how-to-make-a-type-safe-collection.md).  
-  
+
+Bu makalede sınıfı kullanmanın bir örnek sunulmaktadır [CSocket](../mfc/reference/csocket-class.md). Örnek kullanan `CArchive` nesnelerin bir yuva aracılığıyla verileri seri hale getirme. Bu belge serileştirme için veya bir dosyadan olmadığını unutmayın.
+
+Aşağıdaki örnekte, arşiv aracılığıyla veri göndermek ve almak için nasıl kullanacağınız gösterilmektedir. `CSocket` nesneleri. Örneğin, iki örnek uygulamanın (aynı makinede veya farklı makinelerde ağ üzerinde) veri değişimi şekilde tasarlanmıştır. Bir örneği, diğer örneği alır ve edilemeyeceğini verileri gönderir. Bir exchange ya da uygulama başlatabilir ve ya da başka bir uygulama için istemci veya sunucu olarak görev yapabilir. Aşağıdaki işlev uygulamanın görünümü sınıfında tanımlanır:
+
+[!code-cpp[NVC_MFCSimpleSocket#1](../mfc/codesnippet/cpp/windows-sockets-example-of-sockets-using-archives_1.cpp)]
+
+Bu örnekle ilgili en önemli şey yapısı, bir MFC parallels olan `Serialize` işlevi. `PacketSerialize` Üye işlevi oluşur bir **varsa** deyimiyle bir **başka** yan tümcesi. İşlev iki alan [CArchive](../mfc/reference/carchive-class.md) parametre olarak başvuruları: *arData* ve *arAck*. Varsa *arData* arşiv nesne (gönderen) depolamak için ayarlanmış **varsa** dal yürütür; Aksi takdirde *arData* ayarlanır işlevi alır(alma)yüklemekiçin**başka** dal. MFC'de seri hale getirme hakkında daha fazla bilgi için bkz: [serileştirme](../mfc/how-to-make-a-type-safe-collection.md).
+
 > [!NOTE]
->  *ArAck* arşiv nesne olduğu varsayılır karşıtı *arData*. Varsa *arData* göndermek için olan *arAck* alır, ve ters geçerlidir.  
-  
- Göndermek için belirtilen kaç kez, her zaman tanıtım amacıyla rastgele bazı verileri oluşturmak için örnek işlevi döngüsü. Uygulamanızı gerçek veri dosyası gibi bazı kaynağından elde edebilirsiniz. *ArData* Arşiv'ın ekleme işleci (**<<**) üç ardışık öbekleri veri akışı göndermek için kullanılır:  
-  
--   "Üstbilgisi" veri yapısını belirtir (Bu durumda, değeri *bDeğer* değişkeni ve kaç kopya gönderilir).  
-  
-     Her iki öğe, bu örnek için rastgele üretilir.  
-  
--   Belirtilen sayıda kopyasını verileri.  
-  
-     İç **için** döngü gönderir *bDeğer* belirtilen sayısı.  
-  
--   Bir dize olarak adlandırılan *strText* , kendi kullanıcı için alıcı görüntüler.  
-  
- Arşiv 's ayıklama işleci kullanır ancak bu alma için işlev benzer şekilde çalışır (**>>**) arşivden veri almak için. Alma işlemini yapan uygulamanın alır, son "Alınan" iletisi görüntülenir ve ardından "Gönderilen" belirten bir ileti gönderir veri gönderen uygulama görüntülemek doğrular.  
-  
- Bu iletişimler modelde, word "Alınan" iletisi gönderilen *strText* değişken olduğundan iletişim diğer uçtaki görüntülemek için belirli bir sayıda veri paketlerini silinmiş alıcı kullanıcıya belirtir aldı. Özgün gönderenin ekranda diyor "gönderilen", görüntü için benzer bir dizeyle alıcı yanıtlar. Her iki dize alınmasını başarılı iletişimi oluştuğunu gösterir.  
-  
+>  *ArAck* arşiv nesne olduğu varsayılır tersini *arData*. Varsa *arData* göndermek *arAck* alabileceği ve listesiyse true.
+
+Gönderme belirtilen birkaç kez, Tanıtım amaçlı bazı rastgele bir veri üreterek her zaman için örnek işlevi döngüde kalır. Uygulamanızın gerçek veri dosyası gibi bir kaynaktan elde edebilirsiniz. *ArData* arşivin ekleme operatörü (**<<**) üç ardışık öbekler halinde veri akışı göndermek için kullanılır:
+
+- "header" veri yapısını belirtir (Bu durumda, değerini *bDeğer* değişkeni ve kopya gönderilir).
+
+     Her iki öğe, bu örnek için rastgele oluşturulur.
+
+- Verilerin kopyaları belirtilen sayısı.
+
+     İç **için** döngü gönderir *bDeğer* belirtilen sayısı.
+
+- Bir dize olarak adlandırılan *strText* , alıcı, kullanıcıya görüntüler.
+
+Arşivin ayıklama işleci kullanması hariç, alan için işlev benzer şekilde, çalışır (**>>**) arşivden veri almak için. Alıcı uygulamasına gönderen uygulamayı görüntülemek için verileri alır, son "Alınan" iletisi görüntüler ve ardından "Gönderilen" ifadesini içeren bir ileti gönderir doğrular.
+
+Bu iletişimler modelde "Alınan" sözcüğü gönderilen ileti *strText* değişken olduğundan iletişim diğer uçtaki görüntülemek için belirli bir sayıda veri paketlerini yapıldığını alıcı kullanıcıya belirtir aldı. Alıcı, özgün gönderenin ekranda diyor "gönderilen", görüntü için benzer bir dize ile yanıtlar. İki dizenin giriş başarılı iletişim oluştuğunu gösterir.
+
 > [!CAUTION]
->  Kurulan (MFC olmayan) sunucularıyla iletişim kurmak için bir MFC istemci programı yazıyorsanız, arşiv C++ nesnelerde göndermeyin. Sunucu göndermek istediğiniz nesne türlerini özelliğini algılayan bir MFC uygulaması olmadığı sürece almak ve nesnelerinizin seri durumdan mümkün olmayacaktır. Makalede örnek [Windows Yuvaları: bayt sıralama](../mfc/windows-sockets-byte-ordering.md) bu tür bir iletişimi gösterir.  
-  
- Windows Yuvaları belirtimi daha fazla bilgi için bkz: **htonl**, **htons**, **ntohl**, **ntohs**. Ayrıca, daha fazla bilgi için bkz:  
-  
--   [Windows Yuvaları: Yuva Sınıflarından Türetme](../mfc/windows-sockets-deriving-from-socket-classes.md)  
-  
--   [Windows Yuvaları: Yuvaların Arşivlerle Çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)  
-  
--   [Windows Yuvaları: Arka Plan](../mfc/windows-sockets-background.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)   
- [CArchive::IsStoring](../mfc/reference/carchive-class.md#isstoring)   
- [CArchive::operator <<](../mfc/reference/carchive-class.md#operator_lt_lt)   
- [CArchive::operator >>](../mfc/reference/carchive-class.md#operator_lt_lt)   
- [CArchive::Flush](../mfc/reference/carchive-class.md#flush)   
- [CObject::Serialize](../mfc/reference/cobject-class.md#serialize)
+>  C++ nesnelerinin arşiv aracılığıyla kurulan (MFC olmayan) sunucularıyla iletişim kurmak için bir MFC istemci programı yazıyorsanız göndermeyin. Göndermek istediğiniz nesne türlerini anlayan bir MFC uygulaması sunucu olmadığı sürece, alma ve nesnelerinizin seri durumdan mümkün olmayacaktır. Bu makaledeki örnek [Windows Yuvaları: bayt sıralama](../mfc/windows-sockets-byte-ordering.md) bu tür bir iletişim gösterir.
+
+Daha fazla bilgi için Windows Sockets belirtime bakın: **htonl**, **htons**, **ntohl**, **ntohs**. Ayrıca, daha fazla bilgi için bkz:
+
+- [Windows Yuvaları: Yuva Sınıflarından Türetme](../mfc/windows-sockets-deriving-from-socket-classes.md)
+
+- [Windows Yuvaları: Yuvaların Arşivlerle Çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)
+
+- [Windows Yuvaları: Arka Plan](../mfc/windows-sockets-background.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)<br/>
+[CArchive::IsStoring](../mfc/reference/carchive-class.md#isstoring)<br/>
+[CArchive::operator <<](../mfc/reference/carchive-class.md#operator_lt_lt)<br/>
+[CArchive::operator >>](../mfc/reference/carchive-class.md#operator_lt_lt)<br/>
+[CArchive::Flush](../mfc/reference/carchive-class.md#flush)<br/>
+[CObject::Serialize](../mfc/reference/cobject-class.md#serialize)
 

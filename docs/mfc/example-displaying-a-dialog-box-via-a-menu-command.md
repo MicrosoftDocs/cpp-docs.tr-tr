@@ -20,88 +20,90 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20d355215388861a7bc2586c2c253cd551124809
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2869e936115317ff34183b55ba16fe8e9cdc4d2d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347993"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378195"
 ---
 # <a name="example-displaying-a-dialog-box-via-a-menu-command"></a>Örnek: Bir İletişim Kutusunu Menü Komutu ile Görüntüleme
-Bu konudaki yordamları içerir:  
-  
--   Kalıcı iletişim kutusunu menü komutu ile görüntüleyin.  
-  
--   Kalıcı olmayan iletişim kutusunu menü komutu ile görüntüleyin.  
-  
- Her iki örnek yordamları MFC uygulamaları için ve bir uygulama oluşturma ile çalışır [MFC Uygulama Sihirbazı'nı](../mfc/reference/mfc-application-wizard.md).  
-  
- Aşağıdaki adları ve değerleri yordamları kullanın:  
-  
-|Öğe|Ad veya değer|  
-|----------|-------------------|  
-|Uygulama|DisplayDialog|  
-|Menü komutu|Görünüm menüsü komutunda test; Komut Kimliği ID_VIEW_TEST =|  
-|İletişim kutusu|Test iletişim kutusu; Sınıf CTestDialog; = Üstbilgi dosyası TestDialog.h; = Değişken testdlg, ptestdlg =|  
-|Komut işleyici|OnViewTest|  
-  
-### <a name="to-display-a-modal-dialog-box"></a>Kalıcı iletişim kutusunu görüntülemek için  
-  
-1.  Menü komutu oluşturun; bkz: [oluşturma menü veya menü öğeleri](../windows/creating-a-menu.md).  
-  
-2.  Oluştur iletişim kutusu; bkz: [iletişim kutusu Düzenleyicisi başlangıç](../windows/creating-a-new-dialog-box.md).  
-  
-3.  İletişim kutusu için bir sınıf ekleyin. Bkz: [sınıf ekleme](../ide/adding-a-class-visual-cpp.md) daha fazla bilgi için.  
-  
-4.  İçinde **sınıf görünümü**, belge sınıfı (CDisplayDialogDoc) seçin. İçinde **özellikleri** penceresinde tıklatın **olayları** düğmesi. Sol bölmesinde menü komutu (ID_VIEW_TEST) Kimliğini çift **özellikleri** penceresini açın ve Seç **komutu**. Sağ bölmede, aşağı oka tıklayın ve  **\<Ekle > OnViewTest**.  
-  
-     Menü komutu ile bir MDI uygulama anabilgisayar eklediyseniz, bunun yerine uygulama sınıfı (CDisplayDialogApp) seçin.  
-  
-5.  Şunlar deyimi CDisplayDialogDoc.cpp (veya CDisplayDialogApp.cpp) eklemek varolan dahil sonra deyimleri:  
-  
-     [!code-cpp[NVC_MFCControlLadenDialog#42](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_1.cpp)]  
-  
-6.  Aşağıdaki kodu ekleyin `OnViewTest` işlevi uygulamak için:  
-  
-     [!code-cpp[NVC_MFCControlLadenDialog#43](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_2.cpp)]  
-  
-### <a name="to-display-a-modeless-dialog-box"></a>Kalıcı olmayan iletişim kutusunu görüntülemek için  
-  
-1.  View sınıfı (CDisplayDialogView) 4. adımda seçin dışında bir modal iletişim kutusu görüntülemek için ilk dört adımları uygulayın.  
-  
-2.  DisplayDialogView.h düzenleyin:  
-  
-    -   Birinci sınıf bildiriminden önceki iletişim kutusu sınıfı bildirin:  
-  
-         [!code-cpp[NVC_MFCControlLadenDialog#44](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_3.h)]  
-  
-    -   İletişim kutusu için bir işaretçi öznitelikleri ortak bölümünden sonra bildirin:  
-  
-         [!code-cpp[NVC_MFCControlLadenDialog#45](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_4.h)]  
-  
-3.  DisplayDialogView.cpp düzenleyin:  
-  
-    -   Varolan dahil sonra deyimleri deyimi şunlardır ekleyin:  
-  
-         [!code-cpp[NVC_MFCControlLadenDialog#42](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_1.cpp)]  
-  
-    -   Oluşturucuya aşağıdaki kodu ekleyin:  
-  
-         [!code-cpp[NVC_MFCControlLadenDialog#46](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_5.cpp)]  
-  
-    -   Yıkıcı için aşağıdaki kodu ekleyin:  
-  
-         [!code-cpp[NVC_MFCControlLadenDialog#47](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_6.cpp)]  
-  
-    -   Aşağıdaki kodu ekleyin `OnViewTest` işlevi uygulamak için:  
-  
-         [!code-cpp[NVC_MFCControlLadenDialog#48](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_7.cpp)]  
-  
- Ayrıca, aşağıdaki Bilgi Bankası makalesine bakın:  
-  
--   Q251059: Nasıl yapılır: kendi MFC iletişim kutusu için pencere sınıfı ad  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutuları](../mfc/dialog-boxes.md)   
- [Kalıcı ve Kalıcı Olmayan İletişim Kutuları](../mfc/modal-and-modeless-dialog-boxes.md)
+
+Bu konu, yordamları içerir:
+
+- Bir menü komutu ile kalıcı bir iletişim kutusu görüntülenir.
+
+- Bir menü komutu aracılığıyla modsuz iletişim kutusu görüntülenir.
+
+Her iki örnek yordamları için MFC uygulamaları ve ile oluşturduğunuz bir uygulamada çalışır [MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md).
+
+Adları ve değerleri aşağıdaki yordamları kullanın:
+
+|Öğe|Ad veya değer|
+|----------|-------------------|
+|Uygulama|DisplayDialog|
+|Menü komutu|Görünüm menüsünde komut sınayın. Komut Kimliği ID_VIEW_TEST =|
+|İletişim kutusu|Test iletişim kutusu; Sınıf CTestDialog; = Üst bilgi dosyası TestDialog.h; = Değişken testdlg, ptestdlg =|
+|Komut işleyicisi|OnViewTest|
+
+### <a name="to-display-a-modal-dialog-box"></a>Kalıcı bir iletişim kutusu görüntülemek için
+
+1. Menü komutu oluşturmak; bkz: [oluşturma menü veya menü öğelerini](../windows/creating-a-menu.md).
+
+1. İletişim kutusu oluşturma bkz: [iletişim kutusu Düzenleyicisi başlatılıyor](../windows/creating-a-new-dialog-box.md).
+
+1. İletişim kutusu için bir sınıf ekleyin. Bkz: [sınıf ekleme](../ide/adding-a-class-visual-cpp.md) daha fazla bilgi için.
+
+1. İçinde **sınıf görünümü**, belge sınıfı (CDisplayDialogDoc) seçin. İçinde **özellikleri** penceresinde tıklayın **olayları** düğmesi. Menü komutunu (ID_VIEW_TEST) sol bölmesinde Kimliği'ne çift tıklayın **özellikleri** penceresi ve select **komut**. Sağ bölmede aşağı oka tıklayıp  **\<Ekle > OnViewTest**.
+
+     Uygulama sınıfı (CDisplayDialogApp), bunun yerine bir MDI uygulaması ana bilgisayar için menü komutunu eklediyseniz, seçin.
+
+1. Şunlar CDisplayDialogDoc.cpp (veya CDisplayDialogApp.cpp) ifadesine ekleyin varolan dahil sonra deyimleri:
+
+     [!code-cpp[NVC_MFCControlLadenDialog#42](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_1.cpp)]
+
+1. Aşağıdaki kodu ekleyin `OnViewTest` işlevi uygulamak için:
+
+     [!code-cpp[NVC_MFCControlLadenDialog#43](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_2.cpp)]
+
+### <a name="to-display-a-modeless-dialog-box"></a>Kalıcı olmayan iletişim kutusunu görüntülemek için
+
+1. View sınıfı (CDisplayDialogView) 4. adımda seçin dışında bir kalıcı iletişim kutusunu görüntülemek için ilk dört adımları uygulayın.
+
+1. DisplayDialogView.h düzenleyin:
+
+   - Birinci sınıf bildiriminden önceki iletişim kutusu sınıfı bildirin:
+
+         [!code-cpp[NVC_MFCControlLadenDialog#44](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_3.h)]
+
+   - İletişim kutusu için bir işaretçi öznitelikleri ortak bölümüne sonra bildirin:
+
+         [!code-cpp[NVC_MFCControlLadenDialog#45](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_4.h)]
+
+1. DisplayDialogView.cpp düzenleyin:
+
+   - Var olan dahil sonra deyimleri aşağıdaki deyimi ekleyin:
+
+         [!code-cpp[NVC_MFCControlLadenDialog#42](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_1.cpp)]
+
+   - Aşağıdaki kod oluşturucuyu ekleyin:
+
+         [!code-cpp[NVC_MFCControlLadenDialog#46](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_5.cpp)]
+
+   - Yok edici için aşağıdaki kodu ekleyin:
+
+         [!code-cpp[NVC_MFCControlLadenDialog#47](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_6.cpp)]
+
+   - Aşağıdaki kodu ekleyin `OnViewTest` işlevi uygulamak için:
+
+         [!code-cpp[NVC_MFCControlLadenDialog#48](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_7.cpp)]
+
+Ayrıca, aşağıdaki Bilgi Bankası makalesine bakın:
+
+- Q251059: Nasıl yapılır: bir MFC iletişim kutusu için kendi penceresi sınıf adı girin
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
+[Kalıcı ve Kalıcı Olmayan İletişim Kutuları](../mfc/modal-and-modeless-dialog-boxes.md)
 

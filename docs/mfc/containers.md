@@ -18,30 +18,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d942dde74c25a40b5110b74f783d41684d1fdbe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 914b2eccf1d9896285eca5cf714dbb4b78a4fe50
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342192"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46440686"
 ---
 # <a name="containers"></a>Kapsayıcılar
-Bir kapsayıcı uygulama kendi belgelerine katıştırılmış veya bağlı öğeleri içeren bir uygulamadır. Bir kapsayıcı uygulama tarafından yönetilen belgeleri depolamak ve OLE bileşik belge bileşenlerini ve bunun yanı sıra uygulama tarafından oluşturulan veri görüntüler kurabilmesi gerekir. Bir kapsayıcı uygulama aynı zamanda yeni öğeler eklemek veya var olan öğeleri düzenlemek kullanıcılara izin vermesi gerekir.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Bir kapsayıcı uygulama](../mfc/containers-implementing-a-container.md)  
-  
- [Kapsayıcı istemci öğeleri](../mfc/containers-client-items.md)  
-  
- [Bileşik dosyalar kullanın](../mfc/containers-compound-files.md)  
-  
- [Kapsayıcı kullanıcı arabirimi sorunları](../mfc/containers-user-interface-issues.md)  
-  
- [Kapsayıcıların Gelişmiş Özellikler](../mfc/containers-advanced-features.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE](../mfc/ole-in-mfc.md)   
- [Sunucuları](../mfc/servers.md)   
- [Etkinleştirme](../mfc/activation-cpp.md)   
- [Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)
+
+Bir kapsayıcı uygulaması kendi belgelerine gömülü veya bağlantılı öğeleri içeren bir uygulamadır. Yönetilen bir kapsayıcı uygulama tarafından belgeleri depolamak ve OLE bileşik belge bileşenlerinin yanı sıra uygulama tarafından oluşturulan verileri görüntülemek kurabilmesi gerekir. Kapsayıcılı bir uygulama kullanıcıların yeni öğeler eklemek veya mevcut öğeleri düzenlemek de izin vermeniz gerekir.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[Bir kapsayıcı uygulama](../mfc/containers-implementing-a-container.md)
+
+[Kapsayıcı istemci öğeleri](../mfc/containers-client-items.md)
+
+[Bileşik dosyalarını kullan](../mfc/containers-compound-files.md)
+
+[Kapsayıcı kullanıcı arabirimi sorunları](../mfc/containers-user-interface-issues.md)
+
+[Kapsayıcıları'nın Gelişmiş özelliklerine](../mfc/containers-advanced-features.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[OLE](../mfc/ole-in-mfc.md)<br/>
+[Sunucular](../mfc/servers.md)<br/>
+[Etkinleştirme](../mfc/activation-cpp.md)<br/>
+[Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)
 

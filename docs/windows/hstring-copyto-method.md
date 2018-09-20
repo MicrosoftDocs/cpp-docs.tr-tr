@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: da0e8e241aeb3f0eb5096d64cd63425ca2102fb0
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: f8ea15c56bb974cc297c8fc396205d5f172e9bfd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211177"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388088"
 ---
 # <a name="hstringcopyto-method"></a>HString::CopyTo Yöntemi
 
@@ -34,7 +34,7 @@ HRESULT CopyTo(
 
 ### <a name="parameters"></a>Parametreler
 
-*str*  
+*str*<br/>
 Kopyayı alan HSTRING.
 
 ## <a name="remarks"></a>Açıklamalar

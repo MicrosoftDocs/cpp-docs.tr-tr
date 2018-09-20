@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc0506d5b4f264a2bdbecf30a7732c93c927bf18
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 29f487f77fac6c3f6def51b69715d1d47257dd7c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767988"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374229"
 ---
 # <a name="cpoint-class"></a>CPoint sınıfı
 
@@ -352,9 +352,9 @@ Bir noktası negatif yapılacak birli işlecini kullanın. Örneğin, noktasıyl
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[MFC örnek MDI](../../visual-cpp-samples.md)   
-[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
-[POINT yapısı](../../mfc/reference/point-structure1.md)   
-[CRect sınıfı](../../atl-mfc-shared/reference/crect-class.md)   
+[MFC örnek MDI](../../visual-cpp-samples.md)<br/>
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[POINT yapısı](../../mfc/reference/point-structure1.md)<br/>
+[CRect Sınıfı](../../atl-mfc-shared/reference/crect-class.md)<br/>
 [CSize Sınıfı](../../atl-mfc-shared/reference/csize-class.md)
 

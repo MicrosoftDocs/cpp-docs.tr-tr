@@ -19,16 +19,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 930075a459424e5ffac00d4e620e18cd2c318273
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 331fabe63a3abad1ea19fe4440f8eec0c05481d1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344786"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46380342"
 ---
 # <a name="drawing-and-printing-classes"></a>Sınıf Çizme ve Boyama
-Windows, tüm grafik çıktısı cihaz bağlamı (DC) adlı bir sanal çizim alanı çizilir. MFC için bit eşlemler, Fırçalar, paletleri ve kalemler gibi Windows çizim araçları encapsulations yanı sıra DC'leri çeşitli türlerde kapsüllemek için sınıflar sağlar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+
+Windows bir cihaz bağlamı (DC) adlı bir sanal çizim alanı tüm grafik çıktı çizilir. MFC DC'leri yanı sıra encapsulations Windows bit eşlemler, Fırçalar, paletler ve kalemler gibi çizim araçları için çeşitli türlerde kapsüllemek için sınıflar sağlar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../mfc/class-library-overview.md)
 

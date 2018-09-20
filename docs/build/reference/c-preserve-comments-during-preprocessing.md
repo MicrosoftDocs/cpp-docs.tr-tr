@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20973969385d0b5c61872a12f4d0168420bc2eef
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8716c0a0f954b0a2ad0bbe0e25c29a4445b11823
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713192"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46428349"
 ---
 # <a name="c-preserve-comments-during-preprocessing"></a>/C (Önişleme Sırasında Açıklamaları Koru)
 
@@ -76,6 +76,6 @@ int i;   // a variable
 
 [Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[/E (Stdout'a önişle)](../../build/reference/e-preprocess-to-stdout.md)
-[/P (dosyaya ön işleme)](../../build/reference/p-preprocess-to-a-file.md)
-[/EP (#line yönergeleri olmadan stdout'ta önişle ön işleme)](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)
+[/E (stdout'a Önişle)](../../build/reference/e-preprocess-to-stdout.md)<br/>
+[/P (Dosyaya Önişle)](../../build/reference/p-preprocess-to-a-file.md)<br/>
+[/EP (#line Yönergeleri Olmadan stdout'ta Önişle)](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)

@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 196834a5181164d141c1b9ee025cee5b6f1a5bd9
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 05f577ce8845b85cdb3a263aaea1e8c2cdb0f240
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591052"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46409187"
 ---
 # <a name="makeandinitialize-function"></a>MakeAndInitialize İşlevi
 
@@ -43,61 +43,61 @@ typename TArg9> HRESULT MakeAndInitialize(_Outptr_result_nullonfailure_ I** ppvO
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Devralınan bir kullanıcı tarafından belirtilen sınıf `WRL::RuntimeClass`.
 
-*TArg1*  
+*TArg1*<br/>
 1 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
 
-*TArg2*  
+*TArg2*<br/>
 2 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
 
-*TArg3*  
+*TArg3*<br/>
 3 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
 
-*TArg4*  
+*TArg4*<br/>
 4 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
 
-*TArg5*  
+*TArg5*<br/>
 5 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
 
-*TArg6*  
+*TArg6*<br/>
 6 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
 
-*TArg7*  
+*TArg7*<br/>
 7 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
 
-*TArg8*  
+*TArg8*<br/>
 8 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
 
-*TArg9*  
+*TArg9*<br/>
 9 ' belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken türü.
 
-*arg1*  
+*arg1*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 1.
 
-*arg2*  
+*arg2*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 2.
 
-*Arg3*  
+*Arg3*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 3.
 
-*Arg4*  
+*Arg4*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 4.
 
-*arg5*  
+*arg5*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 5.
 
-*arg6*  
+*arg6*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 6.
 
-*arg7*  
+*arg7*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 7.
 
-*arg8*  
+*arg8*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 8.
 
-*arg9*  
+*arg9*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 9.
 
 ## <a name="return-value"></a>Dönüş Değeri

@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 63adaad4fe074225ef32d99edd2a1402acf5e045
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 528245bd2b0ef734ce192f266fe73e813078a568
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709130"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407302"
 ---
 # <a name="validate-charset-validate-for-compatible-characters"></a>/ Validate-Charset (uyumlu karakterler için Doğrula)
 
@@ -57,6 +57,6 @@ Visual Studio, UTF-8 iç karakter kaynak karakter kümesi ve yürütme karakter 
 
 [Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
-[/ Execution-Charset (yürütme karakter kümesini Ayarla)](../../build/reference/execution-charset-set-execution-character-set.md)
-[/Source-Charset (kaynak karakter kümesini Ayarla)](../../build/reference/source-charset-set-source-character-set.md)
- [ /UTF-8 (kaynak ayarlayın ve yürütülebilir karakter kümelerini UTF-8)](../../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)
+[/ Execution-Charset (yürütme karakter kümesini Ayarla)](../../build/reference/execution-charset-set-execution-character-set.md)<br/>
+[/source-charset (Kaynak Karakter Kümesini Ayarla)](../../build/reference/source-charset-set-source-character-set.md)<br/>
+[/utf-8 (Kaynak ve Yürütülebilir karakter kümelerini UTF-8 olarak ayarla)](../../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)

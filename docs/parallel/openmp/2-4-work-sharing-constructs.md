@@ -12,22 +12,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c00eb94055f26954a283a6172f69228804832ac4
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 719b33698b708761f0cd56e65a70a6ea8fa3b053
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689642"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46411124"
 ---
 # <a name="24-work-sharing-constructs"></a>2.4 İş Paylaşım Yapıları
-Bir iş paylaşım yapısı karşılaştığınızda takım üyeleri arasında ilişkili deyimin yürütülmesi dağıtır. İş paylaşım yönergeleri yeni iş parçacıkları başlatılmaz ve bir iş paylaşım yapısı girişinde zımni hiçbir engel yok.  
-  
- İş paylaşım dizisi oluşturur ve **engel** karşılaştı yönergeleri bir ekip her iş parçacığı için aynı olması gerekir.  
-  
- Aşağıdaki iş paylaşım yapıları OpenMP tanımlar ve bunlar aşağıdaki bölümlerde açıklanmıştır:  
-  
--   **için** yönergesi  
-  
--   **bölümler** yönergesi  
-  
--   **tek** yönergesi
+
+Bir iş paylaşımı yapısı karşılaştığınızda takım üyeleri arasında ilişkili deyimin yürütme dağıtır. Yeni iş parçacıkları iş paylaşım yönergelerinin başlatılmaz ve girişi için bir iş paylaşımı yapısı zımni hiçbir engel yok.
+
+Bir dizi iş paylaşım yapıları ve **engel** karşılaştı yönergeleri her iş parçacığında bir takım için aynı olması gerekir.
+
+Aşağıdaki iş paylaşım yapıları OpenMP tanımlar ve bunlar aşağıdaki bölümlerde açıklanmıştır:
+
+- **için** yönergesi
+
+- **bölümler** yönergesi
+
+- **tek** yönergesi

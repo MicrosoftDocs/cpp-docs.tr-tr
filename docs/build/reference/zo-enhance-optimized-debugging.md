@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e93d8debbab26dc61b4c27de713b94d7bc6c417
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1b40f7b4fff1d6df6f5fb818e090ce687f12a7b4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711964"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46412793"
 ---
 # <a name="zo-enhance-optimized-debugging"></a>/Zo (En İyi Duruma Getirilmiş Hata Ayıklamayı İyileştirme)
 
@@ -58,6 +58,6 @@ Hata ayıklama olmayan yapılarında iyileştirilmiş kod için Gelişmiş hata 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[/O seçenekler (kodu İyileştir)](../../build/reference/o-options-optimize-code.md)
-[/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](../../build/reference/z7-zi-zi-debug-information-format.md)
-[Düzenle ve devam et](/visualstudio/debugger/edit-and-continue)
+[/O Seçenekler (Kodu İyileştir)](../../build/reference/o-options-optimize-code.md)<br/>
+[/Z7, /Zi, /ZI (Hata Ayıklama Bilgileri Biçimi)](../../build/reference/z7-zi-zi-debug-information-format.md)<br/>
+[Düzenle ve Devam Et](/visualstudio/debugger/edit-and-continue)

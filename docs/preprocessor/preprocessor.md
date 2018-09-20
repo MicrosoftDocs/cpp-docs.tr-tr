@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 980058c588e02751113b889d44cf0bb5f69066f1
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: b693d83872ca1c918c97e47f75c89f788748353c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42465712"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46375909"
 ---
 # <a name="preprocessor"></a>Ön işlemci
 Önişlemci bir kaynak dosyasının metin çevirisi ilk aşamasının bir parçası yöneten bir metin işleyicisidir. Önişlemci kaynak metin ayrıştırılamadığından, ancak, bu belirteçleri makrosu çağrıları bulmak amacıyla halinde bölmek. Derleyici, normalde, ilk seferde önişlemci çağırır olsa da, önişlemci ayrıca ayrı olarak olmadan derleme metin işlemek için çağrılabilir.  
@@ -48,5 +48,5 @@ Kullanarak ön işleme sonra kaynak kodunuzda bir listesini alabilirsiniz [/E](.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[C/C++ önişlemci başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)   
+[C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
 [Çeviri Aşamaları](../preprocessor/phases-of-translation.md)

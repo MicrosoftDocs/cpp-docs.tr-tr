@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 36b438662fb42cdeeb894906753a38168208f5ae
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 37e5db99d97bc65f1f4a75e2e56e1f0e719dd9ab
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218825"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427179"
 ---
 # <a name="uuid-c-attributes"></a>uuid (C++ Öznitelikleri)
 
@@ -38,7 +38,7 @@ Bir sınıf veya arabirim için benzersiz Kimliğini belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*uuid*  
+*uuid*<br/>
 128-bit, benzersiz tanımlayıcısı.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -70,8 +70,8 @@ Bkz: [bağlanabilir](../windows/bindable.md) örnek kullanımını örneğin **U
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Arabirim Öznitelikleri](../windows/interface-attributes.md)  
-[Sınıf Öznitelikleri](../windows/class-attributes.md)  
-[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Arabirim Öznitelikleri](../windows/interface-attributes.md)<br/>
+[Sınıf Öznitelikleri](../windows/class-attributes.md)<br/>
+[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
 [uuid](/windows/desktop/Midl/uuid)  

@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ce32186083e156525ccc1f75a6d93d58c7f9294e
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: e52f169653222808845b0d381718e064c09fda11
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316074"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46440829"
 ---
 # <a name="adding-editing-or-deleting-controls"></a>Denetimleri Ekleme, Düzenleme veya Silme
 
@@ -50,6 +50,6 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İletişim Kutularındaki Denetimler](controls-in-dialog-boxes.md)  
-[İletişim Kutusu Denetimleri için Olay İşleyicileri Ekleme](adding-event-handlers-for-dialog-box-controls.md)  
+[İletişim Kutularındaki Denetimler](controls-in-dialog-boxes.md)<br/>
+[İletişim Kutusu Denetimleri için Olay İşleyicileri Ekleme](adding-event-handlers-for-dialog-box-controls.md)<br/>
 [İletişim Kutusu Denetimleri ve Değişken Türleri](../ide/dialog-box-controls-and-variable-types.md)

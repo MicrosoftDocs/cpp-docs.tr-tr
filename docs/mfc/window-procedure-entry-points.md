@@ -17,16 +17,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 315526a8f95a1d62ac89f3a76fab492c9b136715
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: c3226df51d2a83484de78d0d76c9af67e150e8eb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36956388"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46403194"
 ---
 # <a name="window-procedure-entry-points"></a>Pencere Yordamı Giriş Noktaları
-MFC pencere yordamları, özel pencere yordamı uygulama modülü statik bağlantılarıyla korumak için. MFC ile modülü bağlandığında bağlantı otomatik olarak gerçekleşir. Bu pencere yordamı etkili Modül durumu düzgün şekilde AFX_MANAGE_STATE makrosu kullanır ve ardından çağırır `AfxWndProc`, hangi sırayla temsilci için `WindowProc` üye işlevini uygun `CWnd`-nesne türetilmiş.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC Modüllerinin Durum Verisini Yönetme](../mfc/managing-the-state-data-of-mfc-modules.md)
+
+MFC pencere yordamları, modülü statik bağlantılar, özel pencere yordamı uygulama korumak için. İle MFC modül bağlandığında bağlantı otomatik olarak gerçekleşir. Etkili Modül durumu düzgün bir şekilde ayarlamak için AFX_MANAGE_STATE makrosu Bu pencere yordamını kullanır ve ardından onu çağıran `AfxWndProc`, hangi sırayla temsilciler için `WindowProc` uygun üye işlevinin `CWnd`-türetilmiş bir nesneye.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC Modüllerinin Durum Verisini Yönetme](../mfc/managing-the-state-data-of-mfc-modules.md)
 

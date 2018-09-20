@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 97a0f98044e18ec6eff1f1b99e9c9178b711e040
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0f4aeb3bc5b2ee0598cf9e7d3f572f1f0e5fb5f2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596029"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46393184"
 ---
 # <a name="comptrrefoperator-operator"></a>ComPtrRef::operator!= İşleci
 
@@ -57,10 +57,10 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*a*  
+*a*<br/>
 Bir başvuru bir **ComPtrRef** nesne.
 
-*b*  
+*b*<br/>
 Başka bir başvuru **ComPtrRef** nesne veya anonim bir nesneye bir işaretçi (`void*`).
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -83,5 +83,5 @@ Belirtir olup iki **ComPtrRef** nesneler eşit değildir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)<br/>
 [ComPtrRef Sınıfı](../windows/comptrref-class.md)

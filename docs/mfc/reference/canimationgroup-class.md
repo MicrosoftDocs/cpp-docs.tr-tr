@@ -56,303 +56,347 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a6a2a65172115d42f984b8f59156d3849692bf8
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 803df920e40683d3fd2f3920e2fb3471d7b4483d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36955741"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46381357"
 ---
 # <a name="canimationgroup-class"></a>CAnimationGroup sınıfı
-Bir animasyon film şeridi, animasyon nesneler ve bir animasyon tanımlamak için geçişler birleştiren bir animasyon grubu uygular.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CAnimationGroup;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CAnimationGroup::CAnimationGroup](#canimationgroup)|Bir animasyon grubu oluşturur.|  
-|[CAnimationGroup:: ~ CAnimationGroup](#canimationgroup__~canimationgroup)|Yok Edicisi. Bir animasyon grubu kaldırıldığı zaman çağrılır.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CAnimationGroup::Animate](#animate)|Bir grup canlandırır.|  
-|[CAnimationGroup::ApplyTransitions](#applytransitions)|Geçişleri animasyon nesnelere uygulanır.|  
-|[CAnimationGroup::FindAnimationObject](#findanimationobject)|Belirtilen animasyon değişkeni içeren bir animasyon nesne bulur.|  
-|[CAnimationGroup::GetGroupID](#getgroupid)|GroupID döndürür.|  
-|[CAnimationGroup::RemoveKeyframes](#removekeyframes)|Kaldırır ve isteğe bağlı olarak bir animasyon gruba ait tüm anahtar kareleri yok eder.|  
-|[CAnimationGroup::RemoveTransitions](#removetransitions)|Bir animasyon grubuna ait animasyon nesneleri geçişleri kaldırır.|  
-|[CAnimationGroup::Schedule](#schedule)|Belirtilen zamanda bir animasyon zamanlar.|  
-|[CAnimationGroup::SetAutodestroyTransitions](#setautodestroytransitions)|Otomatik olarak grubuna ait tüm animasyon nesneleri geçişleri yok yönlendirir.|  
-  
-### <a name="protected-methods"></a>Korumalı Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CAnimationGroup::AddKeyframes](#addkeyframes)|Film şeridi için ana kare ekler Yardımcısı.|  
-|[CAnimationGroup::AddTransitions](#addtransitions)|Geçişleri için film şeridi ekler Yardımcısı.|  
-|[CAnimationGroup::CreateTransitions](#createtransitions)|COM geçiş nesneleri oluşturur Yardımcısı.|  
-  
-### <a name="public-data-members"></a>Ortak Veri Üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CAnimationGroup::m_bAutoclearTransitions](#m_bautocleartransitions)|Gruba ait animasyon nesneleri geçişler temizlemek nasıl belirtir. Bu üye TRUE ise, bir animasyon zamanlandığı geçişleri otomatik olarak kaldırılır. Aksi takdirde geçişleri el ile kaldırmanız gerekir.|  
-|[CAnimationGroup::m_bAutodestroyAnimationObjects](#m_bautodestroyanimationobjects)|Animasyon nesneleri yok etme belirtir. Bu parametre TRUE ise, grubun bozulduğunda animasyon nesneleri otomatik olarak yok edilir. Aksi takdirde animasyon nesneleri el ile yok edilmesi gerekir. Varsayılan değer FALSE olur. Bu değer yalnızca gruba ait tüm animasyon nesneleri işleci ile yeni dinamik olarak ayrılır varsa TRUE olarak ayarlayın.|  
-|[CAnimationGroup::m_bAutodestroyKeyframes](#m_bautodestroykeyframes)|Ana kare yok etmek nasıl belirtir. Bu değeri TRUE ise, tüm ana kareleri kaldırılır ve yok; Aksi halde bunlar yalnızca listesinden kaldırılır. Varsayılan değer True'dur.|  
-|[CAnimationGroup::m_lstAnimationObjects](#m_lstanimationobjects)|Animasyon nesnelerin bir listesini içerir.|  
-|[CAnimationGroup::m_lstKeyFrames](#m_lstkeyframes)|Ana kare listesini içerir.|  
-|[CAnimationGroup::m_pStoryboard](#m_pstoryboard)|Animasyon film şeridi noktalarına. Bu işaretçinin animasyon ekle çağrıda sonra yalnızca geçerli değil.|  
-  
-### <a name="protected-data-members"></a>Korumalı veri üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CAnimationGroup::m_nGroupID](#m_ngroupid)|Animasyon grubunun benzersiz tanımlayıcısı.|  
-|[CAnimationGroup::m_pParentController](#m_pparentcontroller)|Bu grubun ait olduğu animasyon denetleyici için bir işaretçi.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Animasyon nesneleri CAnimationController::AddAnimationObject kullanarak eklediğinizde animasyon grupları animasyon denetleyici (CAnimationController) tarafından otomatik olarak oluşturulur. Bir animasyon Grup animasyon grupları denetlemek için bir parametre olarak genellikle geçen GroupID tarafından tanımlanır. GroupID yeni bir animasyon grubuna eklenen ilk animasyon nesnesinden alınır. CAnimationController::AnimateGroup çağırın ve ortak üye m_pStoryboard erişilen sonra kapsüllenmiş animasyon film şeridi oluşturulur.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `CAnimationGroup`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxanimationcontroller.h  
-  
-##  <a name="_dtorcanimationgroup"></a>  CAnimationGroup:: ~ CAnimationGroup  
- Yok Edicisi. Bir animasyon grubu kaldırıldığı zaman çağrılır.  
-  
-```  
+
+Animasyon film şeridi, animasyon nesneleri ve geçişleri animasyon tanımlamak için bir araya getiren bir animasyon grubu uygular.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CAnimationGroup;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CAnimationGroup::CAnimationGroup](#canimationgroup)|Bir animasyon grubu oluşturur.|
+|[CAnimationGroup:: ~ CAnimationGroup](#canimationgroup__~canimationgroup)|Yıkıcı. Bir animasyon grubu yok ediliyorken çağırılır.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CAnimationGroup::Animate](#animate)|Bir grubu canlandırır.|
+|[CAnimationGroup::ApplyTransitions](#applytransitions)|Geçişleri animasyon nesneler için geçerlidir.|
+|[CAnimationGroup::FindAnimationObject](#findanimationobject)|Belirtilen bir animasyon değişkenini içeren bir animasyon nesne bulur.|
+|[CAnimationGroup::GetGroupID](#getgroupid)|GroupID döndürür.|
+|[CAnimationGroup::RemoveKeyframes](#removekeyframes)|Kaldırır ve isteğe bağlı olarak bir animasyon gruba ait tüm ana kareleri yok eder.|
+|[CAnimationGroup::RemoveTransitions](#removetransitions)|Bir animasyon grubuna ait animasyon nesneleri geçişleri kaldırır.|
+|[CAnimationGroup::Schedule](#schedule)|Belirtilen zamanda bir animasyon zamanlar.|
+|[CAnimationGroup::SetAutodestroyTransitions](#setautodestroytransitions)|Geçişleri otomatik olarak gruba ait tüm animasyon nesneleri yok yönlendirir.|
+
+### <a name="protected-methods"></a>Korumalı Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CAnimationGroup::AddKeyframes](#addkeyframes)|Ana kareleri bir film şeridini ekler Yardımcısı.|
+|[CAnimationGroup::AddTransitions](#addtransitions)|Geçiş için görsel taslak ekler Yardımcısı.|
+|[CAnimationGroup::CreateTransitions](#createtransitions)|COM geçiş nesneleri oluşturur Yardımcısı.|
+
+### <a name="public-data-members"></a>Ortak Veri Üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CAnimationGroup::m_bAutoclearTransitions](#m_bautocleartransitions)|Gruba ait animasyon nesneleri geçişler temizleme belirtir. Bu üye TRUE ise, bir animasyon zamanlandıysa geçişleri otomatik olarak kaldırılır. Aksi takdirde, geçişleri el ile kaldırmanız gerekir.|
+|[CAnimationGroup::m_bAutodestroyAnimationObjects](#m_bautodestroyanimationobjects)|Animasyon nesnelerini yok etme belirtir. Bu parametre TRUE ise Grup kaldırıldığında animasyon nesneleri otomatik olarak edileceği. Aksi takdirde animasyon nesneleri elle yok edilmelidir. Varsayılan değer FALSE olur. Yalnızca gruba ait tüm animasyon nesneleri işleci ile yeni dinamik olarak ayrılır, bu değeri TRUE olarak ayarlayın.|
+|[CAnimationGroup::m_bAutodestroyKeyframes](#m_bautodestroykeyframes)|Ana kareleri yok etmek nasıl belirtir. Bu değer TRUE ise, tüm ana kareleri kaldırıldı ve yok; Aksi takdirde bunlar yalnızca listeden kaldırılır. Varsayılan değer True'dur.|
+|[CAnimationGroup::m_lstAnimationObjects](#m_lstanimationobjects)|Animasyon nesnelerin bir listesini içerir.|
+|[CAnimationGroup::m_lstKeyFrames](#m_lstkeyframes)|Ana kareleri listesini içerir.|
+|[CAnimationGroup::m_pStoryboard](#m_pstoryboard)|Animasyon film şeridi işaret eder. Bu işaretçinin animasyon ekle çağrıda sonra yalnızca geçerli değil.|
+
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CAnimationGroup::m_nGroupID](#m_ngroupid)|Animasyon grubun benzersiz bir tanımlayıcı.|
+|[CAnimationGroup::m_pParentController](#m_pparentcontroller)|Bu grubun ait olduğu animasyon denetleyicisini bir işaretçi.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Animasyon nesneleri CAnimationController::AddAnimationObject kullanarak eklediğinizde, animasyon grupları animasyon denetleyicisini (CAnimationController) tarafından otomatik olarak oluşturulur. Bir animasyon Grup genellikle animasyon grupları denetlemek için bir parametre olarak geçen GroupID tarafından tanımlanır. Komutun grup kimliği, yeni bir animasyon grubuna eklenen ilk animasyon nesnesinden alınır. Kapsüllenmiş animasyon film şeridi CAnimationController::AnimateGroup çağırın ve ortak üye m_pStoryboard erişilebilen sonra oluşturulur.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`CAnimationGroup`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxanimationcontroller.h
+
+##  <a name="_dtorcanimationgroup"></a>  CAnimationGroup:: ~ CAnimationGroup
+
+Yıkıcı. Bir animasyon grubu yok ediliyorken çağırılır.
+
+```
 ~CAnimationGroup();
-```  
-  
-##  <a name="addkeyframes"></a>  CAnimationGroup::AddKeyframes  
- Film şeridi için ana kare ekler Yardımcısı.  
-  
-```  
+```
+
+##  <a name="addkeyframes"></a>  CAnimationGroup::AddKeyframes
+
+Ana kareleri bir film şeridini ekler Yardımcısı.
+
+```
 void AddKeyframes(IUIAnimationStoryboard* pStoryboard, BOOL bAddDeep);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pStoryboard*  
- Film şeridi COM nesnesi için bir işaretçi.  
-  
- *bAddDeep*  
- Bu yöntem diğer ana kare üzerinde bağımlı film şeridi ana kare eklemeniz gerekip gerekmediğini belirtir.  
-  
-##  <a name="addtransitions"></a>  CAnimationGroup::AddTransitions  
- Geçişleri için film şeridi ekler Yardımcısı.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pStoryboard*<br/>
+Bir görsel taslak COM nesnesi için bir işaretçi.
+
+*bAddDeep*<br/>
+Bu yöntem üzerinde başka ana karelerde bağımlı film şeridi ana kareleri eklemeniz gerekip gerekmediğini belirtir.
+
+##  <a name="addtransitions"></a>  CAnimationGroup::AddTransitions
+
+Geçiş için görsel taslak ekler Yardımcısı.
+
+```
 void AddTransitions(
-    IUIAnimationStoryboard* pStoryboard,  
+    IUIAnimationStoryboard* pStoryboard,
     BOOL bDependOnKeyframes);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pStoryboard*  
- Film şeridi COM nesnesi için bir işaretçi.  
-  
- *bDependOnKeyframes*  
-  
-##  <a name="animate"></a>  CAnimationGroup::Animate  
- Bir grup canlandırır.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pStoryboard*<br/>
+Bir görsel taslak COM nesnesi için bir işaretçi.
+
+*bDependOnKeyframes*
+
+##  <a name="animate"></a>  CAnimationGroup::Animate
+
+Bir grubu canlandırır.
+
+```
 BOOL Animate(
-    IUIAnimationManager* pManager,  
-    IUIAnimationTimer* pTimer,  
+    IUIAnimationManager* pManager,
+    IUIAnimationTimer* pTimer,
     BOOL bScheduleNow);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pManager*  
- *pTimer*  
- *bScheduleNow*  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bu yöntem iç film şeridi oluşturur, oluşturur ve geçişleri uygular ve bScheduleNow TRUE ise bir animasyon zamanlar. BScheduleNow FALSE ise, belirtilen zaman animasyonu başlatmak için zamanlama çağırması gerekir.  
-  
-##  <a name="applytransitions"></a>  CAnimationGroup::ApplyTransitions  
- Geçişleri animasyon nesnelere uygulanır.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pManager*<br/>
+*pTimer*
+*bScheduleNow*
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Yöntem başarılı olursa TRUE; Aksi durumda FALSE.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu yöntem iç bir görsel taslağı oluşturur, oluşturur ve geçişler için geçerlidir ve bScheduleNow TRUE ise bir animasyon zamanlar. BScheduleNow FALSE ise, belirtilen zamanda animasyonu başlatmak için zamanlama çağrı gerekir.
+
+##  <a name="applytransitions"></a>  CAnimationGroup::ApplyTransitions
+
+Geçişleri animasyon nesneler için geçerlidir.
+
+```
 void ApplyTransitions();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, film şeridi oluşturulmadı, hata ayıklama modunda ONAYLAR. İlk olarak, tüm geçişleri oluşturur sonra "statik" ana kare (uzaklıkları üzerinde bağımlı ana kare) ekler, ana kare üzerinde dayanmayan geçişleri ekler, ana kare geçişleri bağlı olarak ve diğer ana kare ekler ve en son ana kare üzerinde bağımlı geçişleri ekler .  
-  
-##  <a name="canimationgroup"></a>  CAnimationGroup::CAnimationGroup  
- Bir animasyon grubu oluşturur.  
-  
-```  
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu yöntem, hata ayıklama modunda görsel taslak olmayan oluşturulduğunu ONAYLAR. İlk olarak, tüm geçişler oluşturur sonra "statik" ana kareler (üzerinde uzaklıkları bağımlı ana kareleri) ekler, üzerinde ana kareleri bağlı olmayan geçişler ekler, ana kareleri geçişleri bağlı olarak ve diğer ana kareleri ekler ve en son ana kareleri üzerinde bağımlı geçişleri ekler .
+
+##  <a name="canimationgroup"></a>  CAnimationGroup::CAnimationGroup
+
+Bir animasyon grubu oluşturur.
+
+```
 CAnimationGroup(CAnimationController* pParentController, UINT32 nGroupID);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pParentController*  
- Bir grup oluşturur animasyon denetleyici için bir işaretçi.  
-  
- *nGroupID*  
- GroupID belirtir.  
-  
-##  <a name="createtransitions"></a>  CAnimationGroup::CreateTransitions  
- COM geçiş nesneleri oluşturur Yardımcısı.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pParentController*<br/>
+Bir grup oluşturur animasyon denetleyicisini bir işaretçi.
+
+*nGroupID*<br/>
+GroupID belirtir.
+
+##  <a name="createtransitions"></a>  CAnimationGroup::CreateTransitions
+
+COM geçiş nesneleri oluşturur Yardımcısı.
+
+```
 BOOL CreateTransitions();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- DOĞRU yöntem başarılı, aksi takdirde FALSE olur.  
-  
-##  <a name="findanimationobject"></a>  CAnimationGroup::FindAnimationObject  
- Belirtilen animasyon değişkeni içeren bir animasyon nesne bulur.  
-  
-```  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Yöntem başarılı olursa, aksi takdirde FALSE true'dur.
+
+##  <a name="findanimationobject"></a>  CAnimationGroup::FindAnimationObject
+
+Belirtilen bir animasyon değişkenini içeren bir animasyon nesne bulur.
+
+```
 CAnimationBaseObject* FindAnimationObject(IUIAnimationVariable* pVariable);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pVariable*  
- Animasyon değişkeni için bir işaretçi.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Animasyon nesne ya da animasyon nesne bulunmazsa NULL işaretçi.  
-  
-##  <a name="getgroupid"></a>  CAnimationGroup::GetGroupID  
- GroupID döndürür.  
-  
-```  
-UINT32 GetGroupID() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Bir grup tanımlayıcısı.  
-  
-##  <a name="m_bautocleartransitions"></a>  CAnimationGroup::m_bAutoclearTransitions  
- Gruba ait animasyon nesneleri geçişler temizlemek nasıl belirtir. Bu üye TRUE ise, bir animasyon zamanlandığı geçişleri otomatik olarak kaldırılır. Aksi takdirde geçişleri el ile kaldırmanız gerekir.  
-  
-```  
-BOOL m_bAutoclearTransitions;  
-```  
-  
-##  <a name="m_bautodestroyanimationobjects"></a>  CAnimationGroup::m_bAutodestroyAnimationObjects  
- Animasyon nesneleri yok etme belirtir. Bu parametre TRUE ise, grubun bozulduğunda animasyon nesneleri otomatik olarak yok edilir. Aksi takdirde animasyon nesneleri el ile yok edilmesi gerekir. Varsayılan değer FALSE olur. Bu değer yalnızca gruba ait tüm animasyon nesneleri işleci ile yeni dinamik olarak ayrılır varsa TRUE olarak ayarlayın.  
-  
-```  
-BOOL m_bAutodestroyAnimationObjects;  
-```  
-  
-##  <a name="m_bautodestroykeyframes"></a>  CAnimationGroup::m_bAutodestroyKeyframes  
- Ana kare yok etmek nasıl belirtir. Bu değeri TRUE ise, tüm ana kareleri kaldırılır ve yok; Aksi halde bunlar yalnızca listesinden kaldırılır. Varsayılan değer True'dur.  
-  
-```  
-BOOL m_bAutodestroyKeyframes;  
-```  
-  
-##  <a name="m_lstanimationobjects"></a>  CAnimationGroup::m_lstAnimationObjects  
- Animasyon nesnelerin bir listesini içerir.  
-  
-```  
-CObList m_lstAnimationObjects;  
-```  
-  
-##  <a name="m_lstkeyframes"></a>  CAnimationGroup::m_lstKeyFrames  
- Ana kare listesini içerir.  
-  
-```  
-CObList m_lstKeyFrames;  
-```  
-  
-##  <a name="m_ngroupid"></a>  CAnimationGroup::m_nGroupID  
- Animasyon grubunun benzersiz tanımlayıcısı.  
-  
-```  
-UINT32 m_nGroupID;  
-```  
-  
-##  <a name="m_pparentcontroller"></a>  CAnimationGroup::m_pParentController  
- Bu grubun ait olduğu animasyon denetleyici için bir işaretçi.  
-  
-```  
-CAnimationController* m_pParentController;  
-```  
-  
-##  <a name="m_pstoryboard"></a>  CAnimationGroup::m_pStoryboard  
- Animasyon film şeridi noktalarına. Bu işaretçinin animasyon ekle çağrıda sonra yalnızca geçerli değil.  
-  
-```  
-ATL::CComPtr<IUIAnimationStoryboard> m_pStoryboard;  
-```  
-  
-##  <a name="removekeyframes"></a>  CAnimationGroup::RemoveKeyframes  
- Kaldırır ve isteğe bağlı olarak bir animasyon gruba ait tüm anahtar kareleri yok eder.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pVariable*<br/>
+Animasyon değişkeninin bir işaretçi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Animasyon nesne veya animasyon nesne bulunamazsa NULL bir işaretçi.
+
+##  <a name="getgroupid"></a>  CAnimationGroup::GetGroupID
+
+GroupID döndürür.
+
+```
+UINT32 GetGroupID() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Bir grup tanımlayıcısı.
+
+##  <a name="m_bautocleartransitions"></a>  CAnimationGroup::m_bAutoclearTransitions
+
+Gruba ait animasyon nesneleri geçişler temizleme belirtir. Bu üye TRUE ise, bir animasyon zamanlandıysa geçişleri otomatik olarak kaldırılır. Aksi takdirde, geçişleri el ile kaldırmanız gerekir.
+
+```
+BOOL m_bAutoclearTransitions;
+```
+
+##  <a name="m_bautodestroyanimationobjects"></a>  CAnimationGroup::m_bAutodestroyAnimationObjects
+
+Animasyon nesnelerini yok etme belirtir. Bu parametre TRUE ise Grup kaldırıldığında animasyon nesneleri otomatik olarak edileceği. Aksi takdirde animasyon nesneleri elle yok edilmelidir. Varsayılan değer FALSE olur. Yalnızca gruba ait tüm animasyon nesneleri işleci ile yeni dinamik olarak ayrılır, bu değeri TRUE olarak ayarlayın.
+
+```
+BOOL m_bAutodestroyAnimationObjects;
+```
+
+##  <a name="m_bautodestroykeyframes"></a>  CAnimationGroup::m_bAutodestroyKeyframes
+
+Ana kareleri yok etmek nasıl belirtir. Bu değer TRUE ise, tüm ana kareleri kaldırıldı ve yok; Aksi takdirde bunlar yalnızca listeden kaldırılır. Varsayılan değer True'dur.
+
+```
+BOOL m_bAutodestroyKeyframes;
+```
+
+##  <a name="m_lstanimationobjects"></a>  CAnimationGroup::m_lstAnimationObjects
+
+Animasyon nesnelerin bir listesini içerir.
+
+```
+CObList m_lstAnimationObjects;
+```
+
+##  <a name="m_lstkeyframes"></a>  CAnimationGroup::m_lstKeyFrames
+
+Ana kareleri listesini içerir.
+
+```
+CObList m_lstKeyFrames;
+```
+
+##  <a name="m_ngroupid"></a>  CAnimationGroup::m_nGroupID
+
+Animasyon grubun benzersiz bir tanımlayıcı.
+
+```
+UINT32 m_nGroupID;
+```
+
+##  <a name="m_pparentcontroller"></a>  CAnimationGroup::m_pParentController
+
+Bu grubun ait olduğu animasyon denetleyicisini bir işaretçi.
+
+```
+CAnimationController* m_pParentController;
+```
+
+##  <a name="m_pstoryboard"></a>  CAnimationGroup::m_pStoryboard
+
+Animasyon film şeridi işaret eder. Bu işaretçinin animasyon ekle çağrıda sonra yalnızca geçerli değil.
+
+```
+ATL::CComPtr<IUIAnimationStoryboard> m_pStoryboard;
+```
+
+##  <a name="removekeyframes"></a>  CAnimationGroup::RemoveKeyframes
+
+Kaldırır ve isteğe bağlı olarak bir animasyon gruba ait tüm ana kareleri yok eder.
+
+```
 void RemoveKeyframes();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Ana kare kaldırıldı ve yok etme, sonra m_bAutodestroyKeyframes üye TRUE ise, aksi takdirde ana kare ana kare iç listesinden hemen kaldırılır.  
-  
-##  <a name="removetransitions"></a>  CAnimationGroup::RemoveTransitions  
- Bir animasyon grubuna ait animasyon nesneleri geçişleri kaldırır.  
-  
-```  
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Ana kareleri kaldırılır ve yok, TRUE m_bAutodestroyKeyframes üyesi, aksi takdirde ana kareleri ana kareleri iç listesinden yalnızca kaldırılır.
+
+##  <a name="removetransitions"></a>  CAnimationGroup::RemoveTransitions
+
+Bir animasyon grubuna ait animasyon nesneleri geçişleri kaldırır.
+
+```
 void RemoveTransitions();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- M_bAutoclearTransitions bayrağı TRUE olarak ayarlanırsa, bu yöntem gruba ait tüm animasyon nesneleri üzerinden döngü ve CAnimationObject::ClearTransitions(FALSE) çağırır.  
-  
-##  <a name="schedule"></a>  CAnimationGroup::Schedule  
- Belirtilen zamanda bir animasyon zamanlar.  
-  
-```  
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+M_bAutoclearTransitions bayrağı TRUE olarak ayarlandıysa, bu yöntem gruba ait tüm animasyon nesneleri üzerinden döngüye girer ve CAnimationObject::ClearTransitions(FALSE) çağırır.
+
+##  <a name="schedule"></a>  CAnimationGroup::Schedule
+
+Belirtilen zamanda bir animasyon zamanlar.
+
+```
 BOOL Schedule(IUIAnimationTimer* pTimer, UI_ANIMATION_SECONDS time);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pTimer*  
- Animasyon Zamanlayıcı için bir işaretçi.  
-  
- *Saat*  
- Animasyonun zamanlamak için süreyi belirtir.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı olursa TRUE; FALSE yöntem başarısız olursa veya animasyon olarak oluşturmak, FALSE olarak ayarlanmış bScheduleNow ile çağrılmadı.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Belirtilen zamanda bir animasyon zamanlamak için bu işlevini çağırın. Animasyon Ekle yanlış olarak ayarlayın bScheduleNow ile çağırmanız gerekir.  
-  
-##  <a name="setautodestroytransitions"></a>  CAnimationGroup::SetAutodestroyTransitions  
- Otomatik olarak grubuna ait tüm animasyon nesneleri geçişleri yok yönlendirir.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pTimer*<br/>
+Animasyon Zamanlayıcı işaretçisi.
+
+*saat*<br/>
+Animasyon zamanlamak için süreyi belirtir.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Yöntem başarılı olursa TRUE; FALSE yöntem başarısız olursa veya animasyon olarak oluşturmak, FALSE olarak ayarlanmış bScheduleNow ile çağrılmadı.
+
+### <a name="remarks"></a>Açıklamalar
+
+Belirtilen zamanda bir animasyon zamanlamak için bu işlevi çağırın. FALSE olarak ayarlamanız bScheduleNow ile animasyon ekle çağırmanız gerekir.
+
+##  <a name="setautodestroytransitions"></a>  CAnimationGroup::SetAutodestroyTransitions
+
+Geçişleri otomatik olarak gruba ait tüm animasyon nesneleri yok yönlendirir.
+
+```
 void SetAutodestroyTransitions(BOOL bAutoDestroy = TRUE);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *bAutoDestroy*  
- Geçişleri yok etmek nasıl belirtir.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bu değeri FALSE olarak yalnızca yığında geçişleri ayırdığınızda ayarlayın. Varsayılan değer doğru ise, bu nedenle, yüksek oranda işlecini kullanarak yeni geçiş nesneler tahsis önerilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıflar](../../mfc/reference/mfc-classes.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*bAutoDestroy*<br/>
+Geçişleri yok etmek nasıl belirtir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu değer yalnızca yığında geçişleri ayırdığınızda FALSE ayarlayın. Varsayılan değer doğru ise, bu nedenle, yüksek oranda işleci kullanarak yeni geçiş nesneleri ayırmak için önerilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıflar](../../mfc/reference/mfc-classes.md)

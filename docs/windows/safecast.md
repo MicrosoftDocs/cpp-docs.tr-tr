@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2872f1639a11d537dd79b878a166a3afb5fd8667
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 65794dafe5e45cbd4c0e2a7eb49c34377009deee
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719181"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392989"
 ---
 # <a name="safecast"></a>SafeCast
 
@@ -67,6 +67,6 @@ T ve U şablon türleri hakkında daha fazla bilgi için bkz. [SafeInt işlevler
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[SafeInt İşlevleri](../windows/safeint-functions.md)  
-[SafeInt Kitaplığı](../windows/safeint-library.md)  
+[SafeInt İşlevleri](../windows/safeint-functions.md)<br/>
+[SafeInt Kitaplığı](../windows/safeint-library.md)<br/>
 [SafeInt Sınıfı](../windows/safeint-class.md)

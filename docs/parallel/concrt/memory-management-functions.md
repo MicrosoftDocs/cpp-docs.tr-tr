@@ -14,33 +14,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0a298c7fb9e50bb17d37224b69ce342c54115d7
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: bfbef45593a95cb8b317e7585119a6afbffd7a4e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687302"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423617"
 ---
 # <a name="memory-management-functions"></a>Bellek Yönetimi İşlevleri
-Bu belgede eşzamanlılık çalışma zamanı ayırın ve eş zamanlı bir biçimde belleği serbest yardımcı olmak için sağladığı bellek yönetimi işlevleri açıklanmaktadır.  
-  
+
+Bu belgede, eşzamanlılık çalışma zamanı ayırın ve eş zamanlı bir şekilde belleği boşaltmak yardımcı olmak için bellek yönetimi işlevleri açıklanmaktadır.
+
 > [!TIP]
->  Eşzamanlılık Çalışma zamanı varsayılan Zamanlayıcı sağlar ve bu nedenle, uygulamanızda oluşturmak için gerekli değildir. Görev Zamanlayıcısı'nı, uygulamalarınızın performansını ince ayar yardımcı olduğundan, ile başlamanızı öneririz [paralel Desen kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) veya [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) kullanıyorsanız Eşzamanlılık Çalışma zamanı için yeni.  
-  
- Eşzamanlılık Çalışma zamanı ayırma ve bellek bloklarını eşzamanlı bir biçimde boşaltma için iyileştirilmiş iki bellek yönetimi işlevleri sağlar. [Concurrency::Alloc](reference/concurrency-namespace-functions.md#alloc) işlevi, belirtilen boyut kullanarak bir bellek bloğu ayırır. [Concurrency::Free](reference/concurrency-namespace-functions.md#free) işlevi tarafından ayrılmış bellek boşaltır `Alloc`.  
-  
+>  Eşzamanlılık Çalışma zamanı varsayılan Zamanlayıcı sağlar ve bu nedenle, bir uygulama oluşturmak için gerekli değildir. Görev Zamanlayıcısı'nı, uygulamalarınızın performansını ayarlamanıza yardımcı olduğundan, ile başlamanızı öneririz [paralel desenler kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) veya [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) kullanıyorsanız Yeni eşzamanlılık çalışma zamanı.
+
+Eşzamanlılık Çalışma zamanı ayırma ve bellek blokları eş zamanlı bir şekilde boşaltmak için optimize edilmiş iki bellek yönetimi işlevleri sağlar. [Concurrency::Alloc](reference/concurrency-namespace-functions.md#alloc) işlevi, belirtilen boyut kullanarak bir bellek bloğu ayırır. [Concurrency::Free](reference/concurrency-namespace-functions.md#free) işlevi tarafından ayrılan bellek serbest bırakma `Alloc`.
+
 > [!NOTE]
->  `Alloc` Ve `Free` işlevleri birbirine dayanır. Kullanım `Free` işlevi yalnızca kullanarak tahsis belleği serbest `Alloc` işlevi. Ayrıca, kullandığınızda `Alloc` bellek ayıramadı, yalnızca kullanın işlevi `Free` belleğin yayımlamayı işlevi.  
-  
- Kullanım `Alloc` ve `Free` ayırın ve farklı iş parçacıklarındaki veya görevler ayırma boyutları sabit bir dizi boş olduğunda çalışır. Eşzamanlılık Çalışma zamanı C çalışma zamanı yığınından ayırır bellek önbelleğe alır. Eşzamanlılık Çalışma zamanı her çalışan iş parçacığı için ayrı bir önbellek tutar; Bu nedenle, çalışma zamanı bellek kilitleri ya da bellek engelleri kullanmadan yönetir. Bir uygulama'dan daha fazla avantaj `Alloc` ve `Free` önbellek daha sık erişilen çalışır. Örneğin, sık her ikisi de çağıran bir iş parçacığı `Alloc` ve `Free` avantajları öncelikle çağıran iş parçacığı'den fazla `Alloc` veya `Free`.  
-  
+>  `Alloc` Ve `Free` işlevleri birbirine dayanır. Kullanım `Free` işlevi yalnızca kullanarak tahsis ettiğiniz bellek serbest bırakmak için `Alloc` işlevi. Kullanırken aynı zamanda, `Alloc` bellek ayırmak için yalnızca işlev `Free` bu belleği serbest bırakmak için işlevi.
+
+Kullanım `Alloc` ve `Free` ayırmak ve ayırma boyutları farklı iş parçacıkları veya görevleri sabit bir dizi boş olduğunda çalışır. Eşzamanlılık Çalışma zamanı, C çalışma zamanı yığından ayırır bellek önbelleğe alır. Eşzamanlılık Çalışma zamanı, her bir çalışan iş parçacığı için ayrı bir önbellek tutar; Bu nedenle, bellek kilitleri ya da belleği engelleri kullanmadan çalışma zamanı yönetir. Bir uygulama hakkında daha fazla avantaj `Alloc` ve `Free` önbellek daha sık erişilen çalışır. Örneğin, her ikisi de sık çağıran bir iş parçacığı `Alloc` ve `Free` avantajları öncelikli olarak çağıran iş parçacığı fazlasını `Alloc` veya `Free`.
+
 > [!NOTE]
->  Bu bellek yönetimi işlevleri kullandığınızda ve, uygulamanın kullandığı miktarda bellek, uygulama girebilirsiniz düşük bellek koşulunu er beklediğiniz. Bir iş parçacığı tarafından önbelleğe alınan bellek blokları herhangi başka bir iş parçacığı için bir iş parçacığı miktarda bellek tutuyorsa kullanılabilir olmadığından, bu bellek kullanılabilir değil.  
-  
-## <a name="example"></a>Örnek  
- Kullanan bir örnek `Alloc` ve `Free` işlevleri bellek performansını iyileştirmek için bkz: [nasıl yapılır: kullanım ayırma ve serbest bellek performansını artırmak için](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)   
- [Nasıl yapılır: Bellek Performansını Artırmak için Alloc ve Free Kullanma](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)
+>  Bu bellek yönetimi işlevleri kullanın ve bellek, uygulama, uygulama kullanan çok sayıda girebilirsiniz bir düşük bellek durumu daha kısa süre içinde çok bekler. İş parçacığı tarafından önbelleğe alınan bellek blokları tek bir iş parçacığı büyük miktarda bellek tutuyorsa diğer herhangi bir dizi için kullanılabilir olmadığından, bu bellek kullanılabilir değil.
+
+## <a name="example"></a>Örnek
+
+Kullanan bir örnek için `Alloc` ve `Free` bellek performansını artırmak için işlevleri [nasıl yapılır: kullanım ayırma ve serbest bellek performansını artırmak için](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
+[Nasıl yapılır: Bellek Performansını Artırmak için Alloc ve Free Kullanma](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)
 

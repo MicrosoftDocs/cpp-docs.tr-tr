@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cb24c8d0d24351ba09cdc8750cebbe04f7335942
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 18edb56c03541f61607817d14fdbadb067a3630d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313214"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422785"
 ---
 # <a name="win32-predefined-symbols"></a>Win32 Önceden Tanımlanmış Semboller
 
@@ -51,5 +51,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)  
+[Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)<br/>
 [Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)

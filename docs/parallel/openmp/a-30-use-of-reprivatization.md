@@ -1,5 +1,5 @@
 ---
-title: Reprivatization A.30 kullanımını | Microsoft Docs
+title: A.30 yeniden özelleştirmenin kullanımı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,26 +12,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6026bba31fcc0db4e28ced14b3e847ac0cf8bf58
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 27f9ee3f7605231323c5a176eebf1b07c0a05507
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689616"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378039"
 ---
 # <a name="a30---use-of-reprivatization"></a>A.30   Yeniden Özelleştirmenin Kullanımı
-Aşağıdaki örnek, değişkenlerin reprivatization gösterir. Özel değişkenler işaretlenir `private` iç içe geçmiş yönergesi içinde yeniden. Kapsayan paralel bölgede paylaşılan gerekmez.  
-  
-```  
-int i, a;  
-...  
-#pragma omp parallel private(a)  
-{  
-  ...  
-  #pragma omp parallel for private(a)  
-  for (i=0; i<10; i++)  
-     {  
-       ...  
-     }  
-}  
+
+Aşağıdaki örnek, değişkenlerin yeniden özelleştirmenin gösterir. Özel değişkenler işaretlenebilir `private` iç içe geçmiş bir yönergede. Kapsayan bir paralel bölgenin içinde paylaşılan gerekmez.
+
+```
+int i, a;
+...
+#pragma omp parallel private(a)
+{
+  ...
+  #pragma omp parallel for private(a)
+  for (i=0; i<10; i++)
+     {
+       ...
+     }
+}
 ```

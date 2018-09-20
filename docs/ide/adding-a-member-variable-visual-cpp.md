@@ -17,51 +17,53 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dade9987358c1c160dffd0221b0421b4fab92c24
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: ec9409067793da0e0a89be668f57e86588bdc2d8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43687648"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46447329"
 ---
 # <a name="adding-a-member-variable--visual-c"></a>Üye Değişkeni Ekleme (Visual C++)
-Sınıf görünümü kullanarak bir sınıfa üye değişkeni ekleyebilirsiniz. Üye değişkenleri için ya da olabilir [veri değişimi ve veri doğrulama](../mfc/dialog-data-exchange-and-validation.md), veya genel olabilir. Veri üye değişkeni Sihirbazı'nı, ilgili bilgileri almak ve uygun yerlerde, kaynak dosyalarında öğe eklemek için kullanmak için özel olarak tasarlanmıştır. Bir üye değişkeninin ekleyebilirsiniz [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md) içinde [kaynak görünümü](../windows/resource-view-window.md), veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code).  
-  
+
+Sınıf görünümü kullanarak bir sınıfa üye değişkeni ekleyebilirsiniz. Üye değişkenleri için ya da olabilir [veri değişimi ve veri doğrulama](../mfc/dialog-data-exchange-and-validation.md), veya genel olabilir. Veri üye değişkeni Sihirbazı'nı, ilgili bilgileri almak ve uygun yerlerde, kaynak dosyalarında öğe eklemek için kullanmak için özel olarak tasarlanmıştır. Bir üye değişkeninin ekleyebilirsiniz [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md) içinde [kaynak görünümü](../windows/resource-view-window.md), veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code).
+
 > [!NOTE]
->  Tasarlarken ve iletişim kutusu uygulama, onu daha verimli bir iletişim kutusunda kullanılacak Düzenleyicisi iletişim kutusu denetimleri eklemek için bulabilirsiniz ve ardından Denetim üyesi değişkenleri uygulamak için.  
-  
-### <a name="to-add-a-member-variable-for-a-dialog-control-in-resource-view-using-the-add-member-variable-wizard"></a>Üye değişkeni Ekleme Sihirbazı'nı kullanarak kaynak görünümünde bir iletişim denetimi için bir üye değişkeni eklemek için  
-  
-1.  Kaynak Görünümü'nde, proje ve proje iletişim kutuları listesini görüntülemek için iletişim düğümlerini genişletin.  
-  
-2.  İletişim kutusu Düzenleyicisi'nde açmak için üye değişkeni eklemek istediğiniz iletişim kutusu çift tıklayın.  
-  
-3.  İletişim kutusu Düzenleyicisi'nde görüntülenen iletişim kutusunda, bir üye değişkeni eklemek istediğiniz denetime sağ tıklayın.  
-  
-4.  Kısayol menüsünde **değişken Ekle** görüntülenecek [ekleme üye değişkeni Sihirbazı](../ide/add-member-variable-wizard.md).  
-  
-    > [!NOTE]
-    >  Varsayılan değer zaten sağlanan **denetim kimliği**.  
-  
-5.  Uygun Sihirbazı kutularındaki bilgileri sağlayın. Bkz: [iletişim kutusu denetimleri ve değişken türleri](../ide/dialog-box-controls-and-variable-types.md) daha fazla bilgi için.  
-  
-6.  Tıklayın **son** tanım ve uygulamayı kod projeye ekleyin ve sihirbazı kapatın.  
-  
-### <a name="to-add-a-member-variable-from-class-view-using-the-add-member-variable-wizard"></a>Sınıf Görünümü üye değişkeni Ekleme Sihirbazı'nı kullanarak bir üye değişkeni eklemek için  
-  
-1.  İçinde [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), projede sınıflarını görüntülemek için proje düğümünü genişletin.  
-  
-2.  Bir değişkeni eklemek istediğiniz sınıf sağ tıklayın.  
-  
-3.  Kısayol menüsünde **Ekle**ve ardından **değişken Ekle** ekleme üye değişkeni Sihirbazı görüntülenecek.  
-  
-4.  Uygun Sihirbazı kutularındaki bilgileri sağlayın. Bkz: [ekleme üye değişkeni Sihirbazı](../ide/add-member-variable-wizard.md) Ayrıntılar için.  
-  
-5.  Tıklayın **son** tanım ve uygulamayı kod projeye ekleyin ve sihirbazı kapatın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md)   
- [Sınıf ekleme](../ide/adding-a-class-visual-cpp.md)   
- [Üye işlevi ekleme](../ide/adding-a-member-function-visual-cpp.md)   
- [MFC ileti işleyicisi](../mfc/reference/adding-an-mfc-message-handler.md)   
- [Sınıf yapısında gezinme](../ide/navigating-the-class-structure-visual-cpp.md)
+>  Tasarlarken ve iletişim kutusu uygulama, onu daha verimli bir iletişim kutusunda kullanılacak Düzenleyicisi iletişim kutusu denetimleri eklemek için bulabilirsiniz ve ardından Denetim üyesi değişkenleri uygulamak için.
+
+### <a name="to-add-a-member-variable-for-a-dialog-control-in-resource-view-using-the-add-member-variable-wizard"></a>Üye değişkeni Ekleme Sihirbazı'nı kullanarak kaynak görünümünde bir iletişim denetimi için bir üye değişkeni eklemek için
+
+1. Kaynak Görünümü'nde, proje ve proje iletişim kutuları listesini görüntülemek için iletişim düğümlerini genişletin.
+
+1. İletişim kutusu Düzenleyicisi'nde açmak için üye değişkeni eklemek istediğiniz iletişim kutusu çift tıklayın.
+
+1. İletişim kutusu Düzenleyicisi'nde görüntülenen iletişim kutusunda, bir üye değişkeni eklemek istediğiniz denetime sağ tıklayın.
+
+1. Kısayol menüsünde **değişken Ekle** görüntülenecek [ekleme üye değişkeni Sihirbazı](../ide/add-member-variable-wizard.md).
+
+   > [!NOTE]
+   > Varsayılan değer zaten sağlanan **denetim kimliği**.
+
+1. Uygun Sihirbazı kutularındaki bilgileri sağlayın. Bkz: [iletişim kutusu denetimleri ve değişken türleri](../ide/dialog-box-controls-and-variable-types.md) daha fazla bilgi için.
+
+1. Tıklayın **son** tanım ve uygulamayı kod projeye ekleyin ve sihirbazı kapatın.
+
+### <a name="to-add-a-member-variable-from-class-view-using-the-add-member-variable-wizard"></a>Sınıf Görünümü üye değişkeni Ekleme Sihirbazı'nı kullanarak bir üye değişkeni eklemek için
+
+1. İçinde [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), projede sınıflarını görüntülemek için proje düğümünü genişletin.
+
+1. Bir değişkeni eklemek istediğiniz sınıf sağ tıklayın.
+
+1. Kısayol menüsünde **Ekle**ve ardından **değişken Ekle** ekleme üye değişkeni Sihirbazı görüntülenecek.
+
+1. Uygun Sihirbazı kutularındaki bilgileri sağlayın. Bkz: [ekleme üye değişkeni Sihirbazı](../ide/add-member-variable-wizard.md) Ayrıntılar için.
+
+1. Tıklayın **son** tanım ve uygulamayı kod projeye ekleyin ve sihirbazı kapatın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md)<br>
+[Sınıf ekleme](../ide/adding-a-class-visual-cpp.md)<br>
+[Üye işlevi ekleme](../ide/adding-a-member-function-visual-cpp.md)<br>
+[MFC ileti işleyicisi](../mfc/reference/adding-an-mfc-message-handler.md)<br>
+[Sınıf yapısında gezinme](../ide/navigating-the-class-structure-visual-cpp.md)

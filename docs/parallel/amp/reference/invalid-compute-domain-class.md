@@ -18,63 +18,67 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: def102ecb8063f82d90d41b2b678ff22638b1f8b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 17d0556a349d66f4c70d730108d9cd843b736dfd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116015"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387035"
 ---
 # <a name="invalidcomputedomain-class"></a>invalid_compute_domain Sınıfı
-Çalışma zamanı sırasında belirtilen hesaplama alanını kullanarak bir çekirdeği başlatamadığında oluşturulan özel durum [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each) çağrı sitesini.  
 
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class invalid_compute_domain : public runtime_exception;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[invalid_compute_domain Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `invalid_compute_domain` sınıfı.|  
+Çalışma zamanı sırasında belirtilen hesaplama alanını kullanarak bir çekirdeği başlatamadığında oluşturulan özel durum [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each) çağrı sitesini.
 
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `exception`  
-  
- `runtime_exception`  
-  
- `invalid_compute_domain`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** amprt.h  
-  
- **Namespace:** eşzamanlılık  
+## <a name="syntax"></a>Sözdizimi
 
-## <a name="ctor"></a> invalid_compute_domain 
+```
+class invalid_compute_domain : public runtime_exception;
+```
 
-Sınıfının yeni bir örneğini başlatır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-explicit invalid_compute_domain(  
-    const char * _Message ) throw();  
-  
-invalid_compute_domain() throw();  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[invalid_compute_domain Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `invalid_compute_domain` sınıfı.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`exception`
+
+`runtime_exception`
+
+`invalid_compute_domain`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** amprt.h
+
+**Namespace:** eşzamanlılık
+
+## <a name="ctor"></a> invalid_compute_domain
+
+Sınıfının yeni bir örneğini başlatır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+explicit invalid_compute_domain(
+    const char * _Message ) throw();
+
+invalid_compute_domain() throw();
+```
+
+### <a name="parameters"></a>Parametreler
+
 *İl_eti*<br/>
-Hatanın açıklaması.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Örneği `invalid_compute_domain` sınıfı  
-    
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)
+Hatanın açıklaması.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Örneği `invalid_compute_domain` sınıfı
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)
