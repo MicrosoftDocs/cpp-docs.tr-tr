@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce44cd7c8d6112859990feb4067e9160f284548b
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: f7cdbbe704e283177e4e3b4f0767db66e2e284e5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894828"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446328"
 ---
 # <a name="xml-file-processing"></a>.Xml Dosyası İşleme
 
@@ -82,9 +82,9 @@ Kimlik dizeleri oluşturduğunda, derleyici aşağıdaki kurallar gözlemler:
 
 - Genel türler için türü adını geri işaret ve ardından genel tür parametre sayısını belirten bir sayı tarafından izlenir.  Örneğin,
 
-    ```  
+    ```xml
     <member name="T:MyClass`2">
-    ```  
+    ```
 
    Olarak tanımlanan bir tür için `public class MyClass<T, U>`.
 
@@ -97,7 +97,7 @@ Aşağıdaki örnekler nasıl kimliği için bir sınıf dizeleri ve üyelerinin
 ```cpp
 // xml_id_strings.cpp
 // compile with: /clr /doc /LD
-///   
+///
 namespace N {
 // "N:N"
 
@@ -107,81 +107,81 @@ namespace N {
    // "T:N.X"
 
    protected:
-      ///   
+      ///
       !X(){}
       // "M:N.X.Finalize", destructor's representation in metadata
 
    public:
-      ///   
+      ///
       X() {}
       // "M:N.X.#ctor"
 
-      ///   
+      ///
       static X() {}
       // "M:N.X.#cctor"
 
-      ///   
+      ///
       X(int i) {}
       // "M:N.X.#ctor(System.Int32)"
 
-      ///   
+      ///
       ~X() {}
       // "M:N.X.Dispose", Dispose function representation in metadata
 
-      ///   
+      ///
       System::String^ q;
       // "F:N.X.q"
 
-      ///   
+      ///
       double PI;
       // "F:N.X.PI"
 
-      ///   
+      ///
       int f() { return 1; }
       // "M:N.X.f"
 
-      ///   
+      ///
       int bb(System::String ^ s, int % y, void * z) { return 1; }
       // "M:N.X.bb(System.String,System.Int32@,System.Void*)"
 
-      ///   
+      ///
       int gg(array<short> ^ array1, array< int, 2 >^ IntArray) { return 0; }
       // "M:N.X.gg(System.Int16[], System.Int32[0:,0:])"
 
-      ///   
+      ///
       static X^ operator+(X^ x, X^ xx) { return x; }
      // "M:N.X.op_Addition(N.X,N.X)"
 
-      ///   
+      ///
       property int prop;
       // "M:N.X.prop"
 
-      ///   
+      ///
       property int prop2 {
       // "P:N.X.prop2"
 
-         ///   
+         ///
          int get() { return 0; }
          // M:N.X.get_prop2
 
-         ///   
+         ///
          void set(int i) {}
-         // M:N.X.set_prop2(System.Int32)  
+         // M:N.X.set_prop2(System.Int32)
       }
 
-      ///   
+      ///
       delegate void D(int i);
       // "T:N.X.D"
 
-      ///   
+      ///
       event D ^ d;
       // "E:N.X.d"
 
-      ///   
+      ///
       ref class Nested {};
       // "T:N.X.Nested"
 
-      ///   
+      ///
       static explicit operator System::Int32 (X x) { return 1; }
       // "M:N.X.op_Explicit(N.X!System.Runtime.CompilerServices.IsByValue)~System.Int32"
    };
