@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4a932428b274f8ef8fcda88cd48a4d24464e818c
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5d84bde2a9c83dedf6fa509101dddff85bd27999
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597222"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46426126"
 ---
 # <a name="handlethandlet-constructor"></a>HandleT::HandleT Oluşturucusu
 
@@ -43,7 +43,7 @@ HandleT(
 
 ### <a name="parameters"></a>Parametreler
 
-*h*  
+*h*<br/>
 Tanıtıcı.
 
 ## <a name="remarks"></a>Açıklamalar

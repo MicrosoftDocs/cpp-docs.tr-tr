@@ -1,5 +1,5 @@
 ---
-title: Yeni belgeler, pencereler ve görünümler oluşturma | Microsoft Docs
+title: Yeni belgeler, Windows ve görünümler oluşturma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -34,37 +34,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c0abc53e1a24d822605c9e5bfd7ab8276b32f82
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 0b4ccddbed0d347468331218614cad70cfd49a62
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931212"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427244"
 ---
 # <a name="creating-new-documents-windows-and-views"></a>Yeni Belgeler, Pencereler ve Görünümler Oluşturma
-Aşağıdaki şekil, belgeler, görünümler ve çerçeve pencereleri oluşturma işlemine genel bakış verin. Katılımcı nesnelerde odaklanmak diğer makaleler ek ayrıntılar sağlanmaktadır.  
-  
- Tamamlandıktan sonra bu işlemi, birlikte çalışan nesneleri var ve birbirlerine işaretçileri saklayın. Aşağıdaki şekil nesneleri oluşturulduğu dizisi gösterir. Şekil başka bir şekil dizisi izleyebilirsiniz.  
-  
- ![Bir belge oluşturmak için dizisi](../mfc/media/vc387l1.gif "vc387l1")  
-Bir belge oluşturma sırası  
-  
- ![Çerçeve pencere oluşturma dizisi](../mfc/media/vc387l2.png "vc387l2")  
-Bir çerçeve pencere oluşturma dizisi  
-  
- ![Bir görünüm oluşturmak için dizisi](../mfc/media/vc387l3.gif "vc387l3")  
-Bir görünüm oluşturma sırası  
-  
- Sınıfları nasıl yeni bir belge, Görünüm ve çerçeve pencere nesneleri framework başlatır hakkında daha fazla bilgi için bkz [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), [CFrameWnd](../mfc/reference/cframewnd-class.md), [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md), ve [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md) MFC Kitaplığı Başvurusu. Ayrıca bkz. [Teknik Not 22](../mfc/tn022-standard-commands-implementation.md), açıklayan oluşturma ve başlatma işlemleri daha fazla kendi tartışma için standart komutların framework'ün altında **yeni** ve **açın** üzerinde öğelerini **dosya** menüsü.  
-  
-##  <a name="_core_initializing_your_own_additions_to_these_classes"></a> Bu sınıfların kendi eklemeler başlatılıyor  
- Önceki rakamlarıyla Ayrıca, uygulamanızın nesneleri başlatmak için üye işlevlerini geçersiz kılabilirsiniz noktaları öneririz. Geçersiz kılma `OnInitialUpdate` görünümünüzde sınıfı görünümü başlatmak için en iyi yerdir. `OnInitialUpdate` Çağrısı hemen çerçeve penceresi oluşturulur ve çerçeve penceresi görünümde, belgeye iliştirilmiş sonra oluşur. Örneğin, görünümünüzde kaydırma görünüm ise (türetilmiş `CScrollView` yerine `CView`), belge boyutu göre görünüm boyutu ayarlamanız gerekir, `OnInitialUpdate` geçersiz kıl. (Bu işlem sınıfı açıklamasında açıklanan [CScrollView](../mfc/reference/cscrollview-class.md).) Geçersiz kılabilirsiniz `CDocument` üye işlevleri `OnNewDocument` ve `OnOpenDocument` uygulamaya özgü başlatma belgenin sağlamak için. Genellikle, bir belge iki şekilde oluşturulabilir bu yana her ikisi de geçersiz kılmalısınız.  
-  
- Çoğu durumda, temel sınıf sürümü geçersiz kılma çağırmalıdır. Adlandırılmış üye işlevleri sınıfların daha fazla bilgi için bkz [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), [CFrameWnd](../mfc/reference/cframewnd-class.md), ve [CWinApp](../mfc/reference/cwinapp-class.md) MFC'de Kitaplık Başvurusu.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)   
- [Belge şablonu oluşturma](../mfc/document-template-creation.md)   
- [Belge/görünüm oluşturma](../mfc/document-view-creation.md)   
- [FC Nesneleri Arasındaki İlişki](../mfc/relationships-among-mfc-objects.md)
+
+Aşağıdaki şekilde, belgeler, görünümler ve çerçeve pencereleri oluşturma işlemine genel bakış sağlar. Katılımcı nesneler üzerinde odaklanın diğer makaleleri daha ayrıntılı bilgiler sağlar.
+
+Bu işlem tamamlandıktan sonra birlikte çalışan nesnelerin var ve birbirlerine işaretçileri depolayın. Aşağıdaki şekil, nesnelerin oluşturulduğu sıranın gösterir. Şekil şekil dizisi takip edebilirsiniz.
+
+![Bir belge oluşturmak için dizisi](../mfc/media/vc387l1.gif "vc387l1") belge oluşturma sırası
+
+![Çerçeve pencere oluşturma dizisi](../mfc/media/vc387l2.png "vc387l2") bir çerçeve pencere oluşturma dizisi
+
+![Görünüm oluşturmayla ilgili dizisini](../mfc/media/vc387l3.gif "vc387l3") sırası bir görünüm oluşturma
+
+Sınıfları nasıl yeni bir belge, Görünüm ve çerçeve pencere nesneleri framework başlatır hakkında daha fazla bilgi için bkz. [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), [CFrameWnd](../mfc/reference/cframewnd-class.md), [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md), ve [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md) MFC Kitaplığı Başvurusu. Ayrıca bkz: [Teknik Not 22](../mfc/tn022-standard-commands-implementation.md), açıklayan oluşturma ve başlatma işlemleri daha fazla framework'ün standart komut için kendi tartışma altında **yeni** ve **açın** üzerinde öğelerini **dosya** menüsü.
+
+##  <a name="_core_initializing_your_own_additions_to_these_classes"></a> Bu sınıfların kendi eklemeleri başlatılıyor
+
+Önceki rakamları Ayrıca, uygulamanızın nesneleri, üye işlevleri geçersiz kılabilirsiniz noktaları önerilir. Geçersiz kılma `OnInitialUpdate` görünümünüzde sınıf görünümü başlatmak için en iyi yerdir. `OnInitialUpdate` Çağrı hemen çerçeve penceresi oluşturulur ve görünümü çerçeve penceresi içinde belgeye eklendikten sonra gerçekleşir. Örneğin, kaydırma görünümü, görünüm ise (türetilen `CScrollView` yerine `CView`), belge boyutunu temel görünüm boyutu ayarlamanız gerekir, `OnInitialUpdate` geçersiz. (Bu işlemin sınıf açıklamasında açıklanan [CScrollView](../mfc/reference/cscrollview-class.md).) Geçersiz kılabilirsiniz `CDocument` üye işlevleri `OnNewDocument` ve `OnOpenDocument` uygulamaya özgü belgeyi başlangıcına sağlamak için. Bir belge iki şekilde oluşturulabilir beri genellikle, her ikisi de geçersiz kılmanız gerekir.
+
+Çoğu durumda, geçersiz kılma temel sınıftaki sürümün çağırmalıdır. Daha fazla bilgi için bkz: sınıflar adlandırılan üye işlevleri [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), [CFrameWnd](../mfc/reference/cframewnd-class.md), ve [CWinApp](../mfc/reference/cwinapp-class.md) MFC'de Kitaplık Başvurusu.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
+[Belge Şablonu Oluşturma](../mfc/document-template-creation.md)<br/>
+[Belge/görünüm oluşturma](../mfc/document-view-creation.md)<br/>
+[FC Nesneleri Arasındaki İlişki](../mfc/relationships-among-mfc-objects.md)
 

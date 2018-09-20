@@ -12,17 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b6bccb7ff1df1125f3a6643b9af4bfeb9f32a32
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 48c73504f54ce2732bff808ced50d463a4c50a85
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379287"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46433370"
 ---
 # <a name="rich-edit-control-examples"></a>Zengin Düzenleme Denetimine Örnekler
-MFC OLE örnek [WORDPAD](../visual-cpp-samples.md) kullanan `CRichEditView`, `CRichEditDoc`, ve `CRichEditCntrItem` sınıfları. Uzantıya göre kullandığı [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md). Bu üç sınıfları hızlı bir açıklaması için bkz [zengin düzenleme denetimleri ilgili sınıflar](../mfc/classes-related-to-rich-edit-controls.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CRichEditCtrl kullanma](../mfc/using-cricheditctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+MFC OLE örnek [WORDPAD](../visual-cpp-samples.md) kullanan `CRichEditView`, `CRichEditDoc`, ve `CRichEditCntrItem` sınıfları. Uzantı tarafından kullandığı [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md). Bu üç sınıf hızlı bir açıklaması için bkz. [zengin düzenleme denetimleri ilgili sınıflar](../mfc/classes-related-to-rich-edit-controls.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CRichEditCtrl Kullanma](../mfc/using-cricheditctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

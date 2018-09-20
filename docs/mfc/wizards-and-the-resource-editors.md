@@ -22,39 +22,44 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db1b807856baf4cab3cdef57092cd29fdff3a19d
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 3a02a6e1f2b40f777cef0f82f92d0c41ff40595b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36951146"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46436549"
 ---
 # <a name="wizards-and-the-resource-editors"></a>Sihirbazlar ve Kaynak Düzenleyicileri
-Visual C++ MFC programlama birçok tümleşik kaynak düzenleyicileri birlikte kullanmak için bazı sihirbazlar içerir. Programlama, ActiveX denetimleri için [ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md) , MFC Uygulama Sihirbazı'nın benzer bir amaca hizmet eder. Bu araçların çoğu olmadan MFC uygulamaları yazma sırasında araçları büyük ölçüde basitleştirebilir ve çalışmanızı hızlandırmak.  
-  
-##  <a name="_core_use_appwizard_to_create_an_mfc_application"></a> MFC Uygulama oluşturmak için MFC Uygulama Sihirbazı'nı kullanın  
- Kullanım [MFC Uygulama Sihirbazı'nı](../mfc/reference/mfc-application-wizard.md) OLE içerir ve veritabanı desteği'te Visual C++, bir MFC projesi oluşturmak için. Projedeki dosyaları, uygulama, belge, Görünüm ve çerçeve penceresi sınıfları içerir; menüleri ve isteğe bağlı bir araç çubuğu dahil olmak üzere standart kaynakları; diğer gerekli Windows dosyaları; ve isteğe bağlı .rtf dosyaları gözden geçirebilirsiniz, standart Windows Yardım konularını ve programınızın Yardım dosyası oluşturmak için ayırma içeren.  
-  
-##  <a name="_core_use_classwizard_to_manage_classes_and_windows_messages"></a> Sınıf Görünümü sınıfları ve Windows iletilerini yönetmek için kullanın  
- İşleyici işlevleri Windows iletiler ve komutlar için oluşturma, oluşturma ve sınıfları yönetme sınıfı görünüm yardımcı sınıf üyesi değişkenleri oluşturma, Otomasyon yöntemleri ve özellikleri oluşturma ve veritabanı sınıfları oluşturma.  
-  
+
+Visual C++ MFC programlamada, birçok tümleşik kaynak düzenleyicileri ile birlikte kullanmak için çeşitli sihirbazlar içerir. ActiveX denetimlerini programlama için [ActiveX Denetim Sihirbazı'nı](../mfc/reference/mfc-activex-control-wizard.md) , MFC Uygulama Sihirbazı benzer bir amaca hizmet eder. MFC uygulamaları bu araçların çoğu olmadan yazabilirsiniz, ancak Araçlar büyük ölçüde basitleştirin ve iş hızlandırın.
+
+##  <a name="_core_use_appwizard_to_create_an_mfc_application"></a> Bir MFC uygulaması oluşturmak için MFC Uygulama Sihirbazı'nı kullanma
+
+Kullanım [MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md) Visual OLE içerir ve veritabanı desteği C++'da, bir MFC projesi oluşturmak için. Proje dosyaları, uygulama, belge, Görünüm ve çerçeve penceresi sınıfları içerir; menüler ve isteğe bağlı bir araç da dahil olmak üzere standart kaynakları; diğer gerekli Windows dosyaları; ve birlikte düzeltebilir, standart Windows Yardım konularını ve ayırma programınızın Yardım dosyası oluşturmak için isteğe bağlı .rtf dosyaları içeren.
+
+##  <a name="_core_use_classwizard_to_manage_classes_and_windows_messages"></a> Sınıf Görünümü sınıfları ve Windows iletilerini yönetmek için kullanın
+
+Windows iletiler ve komutlar için işleyici işlevleri oluşturma, oluşturun ve sınıfları yönetmek sınıf görünümü yardımcı sınıf üyesi değişkenleri oluşturma, Otomasyon yöntemleri ve özellikleri oluşturma, veritabanı sınıfları ve daha fazlasını oluşturun.
+
 > [!NOTE]
->  Sınıf görünümü de MFC sınıfları içinde sanal işlevleri geçersiz kılma yardımcı olur. Sınıf ve sanal işlevi geçersiz kılmak için seçin. Aşağıdaki paragrafta açıklanan işleminin geri kalanında ileti işleme için benzer.  
-  
- Windows altında çalışan uygulamalar [ileti güdümlü](../mfc/message-handling-and-mapping.md). Kullanıcı eylemleri ve çalışan programa meydana gelen diğer olayları program windows iletileri göndermek Windows neden olur. Kullanıcı bir pencerede fare tıklamaları düğmesi serbest bırakıldığında Örneğin, Windows sol fare düğmesine basıldığında WM_LBUTTONDOWN iletisi ve bir WM_LBUTTONUP iletisi gönderir. Kullanıcı menü çubuğundan komutları seçtiğinde Windows ayrıca WM_COMMAND iletileri gönderir.  
-  
- MFC çerçevesi belgeler, görünümler, çerçeve pencereleri, belge şablonları ve uygulama nesnesi gibi çeşitli nesneleri "iletileri işleyebilir". Böyle bir nesnenin "işleyicisi işlevi" kendi üyesi biri olarak işlevleri sağlar ve framework gelen ileti işleyicisine eşler.  
-  
- Programlama göreviniz büyük bir bölümünü hangi nesnelerin eşlemek için hangi iletilerin seçme ve bu eşlemenin uygulama. Bunu yapmak için sınıf görünümü ve Özellikler penceresini kullanın.  
-  
- Özellikler penceresini boş ileti işleyicisi üye işlevleri oluşturacak ve işleyici gövdesi uygulamak için kaynak kod Düzenleyicisi'ni kullanın. Ayrıca oluşturabilir veya (MFC sınıfları türetilmemiş sınıflar, kendi dahil) sınıflar ve üyeleri sınıf görünümü ile düzenleyebilirsiniz. Sınıf görünümü kullanarak ve projeye kod ekleme sihirbazları hakkında daha fazla bilgi için bkz: [kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md).  
-  
-##  <a name="_core_use_the_resource_editors_to_create_and_edit_resources"></a> Kaynak düzenleyicileri oluşturmak ve kaynakları düzenlemek için kullanın  
- Visual C++ kullanma [kaynak düzenleyicileri](../windows/resource-editors.md) menüleri, iletişim kutuları, özel denetimler, Hızlandırıcı tuşları, bit eşlemler, simgeler, imleçler, dizeleri ve sürüm kaynakları oluşturmak ve düzenlemek için. Visual C++ sürüm 4.0 itibariyle bir araç çubuğu Düzenleyicisi oluşturma araç çubukları çok daha kolay hale getirir.  
-  
- Daha fazla yardımcı olmak için Microsoft Foundation Class Kitaplığı ortak adlı bir dosya sağlar. RES gelen ortak kopyalayabilirsiniz "küçük resim" kaynakları içerir. RES ve kendi kaynak dosyasına yapıştırın. ORTAK. RES araç çubuğu düğmeleri, ortak imleçler, simgeler ve daha fazlasını içerir. Kullanın, değiştirmek ve bu kaynakları uygulamanızda yeniden dağıtabilir. Ortak hakkında daha fazla bilgi için. RES, bkz: [küçük örnek](../visual-cpp-samples.md).  
-  
- MFC Uygulama Sihirbazı'nı, Visual C++ sihirbazları, kaynak düzenleyicileri ve MFC çerçevesi çok fazla iş yapmanız ve kodunuzu çok daha kolay hale. Uygulamaya özgü kod toplu, belge ve görünüm sınıfları ' dir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows Uygulamaları Yazmak için Sınıfları Kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md)
+>  Sınıf Görünümü, MFC sınıflardaki sanal işlevleri geçersiz kılmak için de yardımcı olur. Sınıf ve sanal işlevi geçersiz kılmak için seçin. İşleminin geri kalanı, aşağıdaki paragrafta açıklandığı gibi ileti işleme için benzerdir.
+
+Windows altında çalışan uygulamalar [temelli ileti](../mfc/message-handling-and-mapping.md). Kullanıcı eylemlerini ve çalışan programa meydana gelen diğer olayları program windows iletileri göndermek Windows neden olur. Kullanıcı fareyi bir pencerede tıklarsa düğmesi bırakıldığında Örneğin, Windows farenin sol düğmesine basıldığında WM_LBUTTONDOWN ileti ve WM_LBUTTONUP ileti gönderir. Kullanıcı komutları menü çubuğundan seçtiğinde Windows WM_COMMAND iletileri de gönderir.
+
+MFC çerçevesi belgeler, görünümler, çerçeve pencereleri, belge şablonları ve uygulama nesnesi gibi çeşitli nesneleri "iletileri işleyebilir". Böyle bir nesnenin "işleyici işlevi" bir üye işlevleri sağlar ve framework gelen ileti işleyicisine eşler.
+
+Programlama göreviniz büyük bir bölümünü hangi nesnelerin eşlemek için hangi iletileri seçerek ve ardından bu eşlemenin uygulama. Bunu yapmak için sınıf görünümü ve Özellikler penceresini kullanın.
+
+Özellikler penceresinde boş ileti işleyicisi üye işlevleri oluşturur ve işleyicisinin gövdesi uygulamak için kaynak kod Düzenleyicisi'ni kullanın. Ayrıca, oluşturma veya sınıfları (MFC sınıflarından türetilmiş değil sınıfları kendi dahil) ve üyeleri sınıf görünümü ile düzenleyebilirsiniz. Sınıf görünümü kullanarak ve bir proje için kod ekleme sihirbazları hakkında daha fazla bilgi için bkz. [kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md).
+
+##  <a name="_core_use_the_resource_editors_to_create_and_edit_resources"></a> Oluşturma ve kaynakları düzenlemek için kaynak düzenleyicileri kullanma
+
+Visual c++'ta kullanmak [kaynak düzenleyicileri](../windows/resource-editors.md) oluşturmak ve menüler, iletişim kutuları, özel denetimler, Hızlandırıcı tuşları, bit eşlemler, simgeler, işaretçiler, dizeleri ve sürüm kaynakları düzenlemek için. Visual C++ sürüm 4.0 itibariyle bir araç çubuğu Düzenleyicisi oluşturulurken araç çubukları kolaylaştırır.
+
+Daha fazla yardımcı olmak için Microsoft Foundation Class Kitaplığı ortak adlı bir dosya sağlar. RES gelen ortak kopyalayabilirsiniz "küçük resim" kaynakları içerir. RES ve kendi kaynak dosyasına yapıştırın. ORTAK. RES araç çubuğu düğmeleri, ortak imleçler, simgeler ve daha fazlasını içerir. Kullanın, değiştirebilir ve bu kaynakları uygulamanızda yeniden dağıtabilirsiniz. Ortak hakkında daha fazla bilgi için. RES, bkz: [küçük örnek](../visual-cpp-samples.md).
+
+MFC Uygulama Sihirbazı, Visual C++ sihirbazları, kaynak düzenleyicileri ve MFC çerçevesi sizin için çok fazla iş yapın ve kodunuzu çok daha kolay yönetme yapın. Uygulamaya özel kodunuzun toplu, belge ve görünüm sınıfları ' dir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Windows Uygulamaları Yazmak için Sınıfları Kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md)

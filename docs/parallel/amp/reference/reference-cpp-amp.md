@@ -16,40 +16,39 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c39528bf3b1e6c9235e4b2daabcd8bbddd0d52f
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 3d48ce4d0317ba8d66b609ca89e6cb3b43970e52
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33685898"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46431443"
 ---
 # <a name="reference-c-amp"></a>Başvuru (C++ AMP)
-Bu bölüm, C++ hızlandırılmış yoğun paralellik (C++ AMP) çalışma zamanı için başvuru bilgileri içerir.  
-  
+
+Bu bölüm, C++ Accelerated Massive Parallelism (C++ AMP) çalışma zamanı için başvuru bilgileri içerir.
+
 > [!NOTE]
->  Standart C++ dili bir alt çizgi ile başlayan tanımlayıcıları kullanımını ayırır (`_`) karakteri kitaplıklar gibi uygulamaları için. Kodunuzda bir alt çizgi ile başlayan adları kullanmayın. Bu kural, adları izleyen öğeleri garanti edilmez ve değiştirilebilir gelecek olan kod davranışını serbest bırakır. Bu nedenlerle, bu kod öğeler bu belgelerden göz ardı edilir.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)  
- Sınıfları ve verileri paralel donanımda C++ kodu ivmesini etkinleştirmek işlevleri sağlar.  
-  
- [Concurrency::direct3d Ad Alanı](concurrency-direct3d-namespace.md)  
- D3D birlikte çalışabilirlik desteği işlevleri sağlar. İşlem AMP kodda D3D kaynaklarının sorunsuz kullanımını ve Ara yedek kopya oluşturmak zorunda kalmadan D3D kodda AMP içinde oluşturulan kaynaklarının kullanımını etkinleştirir. Artımlı olarak DirectX uygulamalarınızı işlem yoğunluklu bölümlerini hızlandırmak ve AMP hesaplamalar üretilen veriler üzerinde D3D API kullanmak için C++ AMP kullanabilirsiniz.  
-  
- [Concurrency::fast_math Ad Alanı](concurrency-fast-math-namespace.md)  
- İşlevlerini `fast_math` ad alanı C99 uyumlu değildir. Yalnızca tek duyarlıklı sürümleri her işlev sağlanır. Bu işlevler karşılık gelen işlevlerde daha hızlıdır DirectX iç işlevleri kullanmak `precise_math` ad alanı ve Hızlandırıcı genişletilmiş çift duyarlıklı desteği gerektirmez, ancak daha az kesin. Her işlev C99 koduyla kaynak düzeyi uyumluluk için iki sürümü vardır; Her iki sürümünü alın ve tek duyarlıklı değerleri döndürür.  
-  
- [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)  
- Türler ve tasarlanmış işlevler için grafik programlamaya sağlar.  
-  
- [Concurrency::precise_math Ad Alanı](concurrency-precise-math-namespace.md)  
- İşlevlerini `precise_math` ad alanı olan C99 uyumlu. Her işlevi tek duyarlıklı ve çift duyarlıklı sürümleri dahil edilir. Bu işlevler — bu tek duyarlıklı işlevler içerir — Hızlandırıcı genişletilmiş çift duyarlıklı desteğini gerektirir.  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [C++ AMP (C++ Accelerated Massive Parallelism)](../../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)  
- C++ AMP ayrı grafik kart üzerinde bir grafik işlemci birimi (GPU) yaygın olarak mevcut verileri paralel donanım yararlanarak, C++ kod yürütmeyi hızlandırır.
+>  C++ dil standardı bir alt çizgiyle başlayan tanımlayıcılar kullanımını ayırır (`_`) karakteri, kütüphane gibi uygulamalar için. Kodunuzda altı çizili ile başlayan adları kullanmayın. Öğe adları bu kurala uymayan garantili değildir ve gelecekte değişikliğe tabi olduğu kodun çalışma biçiminin serbest bırakır. Bu nedenlerden dolayı bu tür kod öğeleri bu belgelerden çıkarılır.
 
+## <a name="in-this-section"></a>Bu Bölümde
 
+[Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)<br/>
+Sınıflar ve veri paralel donanımlarda C++ kodu hızlandırılmasını olanak sağlayan işlevler sunar.
 
+[Concurrency::direct3d Ad Alanı](concurrency-direct3d-namespace.md)<br/>
+D3D birlikte çalışabilirlik destekleyen işlevleri sağlar. AMP kodunda hesaplamak için D3D kaynaklarını sorunsuz kullanımını ve gereksiz Ara kopyalar oluşturmadan, AMP D3D kodunda oluşturulan kaynakların kullanımını etkinleştirir. DirectX uygulamalarınızın işlem yoğunluklu bölümlerini kademeli olarak hızlandırmak ve AMP hesaplamalarıyla üretilen verilerde D3D API'sini kullanmak için C++ AMP'ı kullanabilirsiniz.
 
+[Concurrency::fast_math Ad Alanı](concurrency-fast-math-namespace.md)<br/>
+İçindeki işlevler `fast_math` ad alanı, C99 uyumlu değildir. Her işlevin yalnızca tek duyarlıklı sürümleri sağlanır. Bu işlevler karşılık gelen işlevlerden daha hızlı DirectX iç işlevler kullanan `precise_math` ad alanı ve hızlandırıcıda genişletilmiş çift duyarlıklı destek gerektirmeyen, ancak daha az doğru olur. C99 kodu ile kaynak düzeyinde uyumluluk için her işlevin iki sürümü vardır; Her iki sürümü, alır ve tek duyarlıklı değerler döndürür.
+
+[Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)<br/>
+Grafik programlama için türleri ve tasarlanmış işlevleri sağlar.
+
+[Concurrency::precise_math Ad Alanı](concurrency-precise-math-namespace.md)<br/>
+İçindeki işlevler `precise_math` ad alanı olan C99 uyumludur. Her işlevin hem tek duyarlık hem çift duyarlık sürümleri dahil edilir. Bu işlevler — Bu, tek duyarlıklı işlevler içerir — hızlandırıcıda genişletilmiş çift duyarlıklı desteği gerektirir.
+
+## <a name="related-sections"></a>İlgili Bölümler
+
+[C++ AMP (C++ Accelerated Massive Parallelism)](../../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
+C++ AMP ayrı ekran kartı üzerindeki grafik işlemci birimi (GPU) gibi veri-paralel donanımlardan yararlanarak C++ kod yürütülmesini hızlandırır.
 

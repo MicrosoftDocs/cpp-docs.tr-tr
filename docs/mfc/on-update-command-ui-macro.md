@@ -19,22 +19,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43caffe53be180221b4145a03df7cfc41c31828e
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 17111e24a63d527996eadd82c804e5147ad78552
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36928644"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46433471"
 ---
 # <a name="onupdatecommandui-macro"></a>ON_UPDATE_COMMAND_UI Makrosu
-Kullanım **özellikleri** komutu-hedef nesne komutu güncelleştirme işleyici için bir kullanıcı arabirimi nesnesi bağlanmak için penceresi. Bu otomatik olarak kullanıcı arabirimi nesnesinin kimliği on_update_command_uı makrosu bağlama ve bir işleyici güncelleştirmeyi işleyecek nesne oluşturma. Bkz: [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md) daha fazla bilgi için.  
-  
- Örneğin, programınızın Düzenle menüsünde bir Tümünü Temizle komutu güncelleştirmek için kullanın **özellikleri** seçilen sınıfı, bir işlev bildirimi komutu güncelleştirme işleyici için bir ileti eşleme girdisi eklemek için pencere olarak adlandırılan `OnUpdateEditClearAll` sınıfında bildirim ve sınıfın uygulama dosya boş işlevi şablonunda. İşlev prototipi şöyle görünür:  
-  
- [!code-cpp[NVC_MFCDocView#2](../mfc/codesnippet/cpp/on-update-command-ui-macro_1.h)]  
-  
- Tüm işleyiciler, işlevi gösterildiği gibi **afx_msg** anahtar sözcüğü. Tüm işleyicileri güncelleştirme gibi tek bir bağımsız değişken için bir işaretçi geçen bir `CCmdUI` nesnesi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: Kullanıcı Arabirimi Nesnelerini Güncelleştirme](../mfc/how-to-update-user-interface-objects.md)
+
+Kullanım **özellikleri** komut güncelleştirme işleyici komut hedefi nesnesi bir kullanıcı arabirimi nesnesi bağlanmak penceresi. Otomatik olarak kullanıcı arabirimi nesne kimliği için on_update_command_uı makrosu bağlanmak ve bir işleyici güncelleştirmeyi işleyen nesneyi oluşturmak. Bkz: [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md) daha fazla bilgi için.
+
+Örneğin, programınızın Düzenle menüsü Tümünü Temizle bir komutta güncelleştirmek için kullanın **özellikleri** seçilen sınıfında, bir işlev bildirimi komut güncelleştirme işleyici için bir ileti eşleme girdisi eklemek için pencere olarak adlandırılan `OnUpdateEditClearAll` sınıfında bildirim ve sınıf uygulama dosyasında bir boş işlev şablonu. İşlev prototipi şöyle görünür:
+
+[!code-cpp[NVC_MFCDocView#2](../mfc/codesnippet/cpp/on-update-command-ui-macro_1.h)]
+
+Tüm işleyiciler, işlev gösterildiği gibi **afx_msg** anahtar sözcüğü. Tüm işleyicileri güncelleştirme gibi tek bir bağımsız değişken bir işaretçi alır. bir `CCmdUI` nesne.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Nasıl yapılır: Kullanıcı Arabirimi Nesnelerini Güncelleştirme](../mfc/how-to-update-user-interface-objects.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 1.2 terimlerin tanımı | Microsoft Docs
+title: 1.2 tanımı koşulları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,60 +12,77 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8563bb757ad8d30f1639f017769bfd6c4084efa0
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: e95ad940aac14892ac14e8d56ba64f49d0bbf7c0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688602"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423838"
 ---
 # <a name="12-definition-of-terms"></a>1.2 Terimlerin Tanımı
-Bu belgede aşağıdaki terimler kullanılır:  
-  
- barrier  
- Bir takım tüm iş parçacıklarının erişilmesi gereken bir eşitleme noktası.  Her iş parçacığı, tüm iş parçacıklarının ekipteki bu noktada gelmesini bekler. Açık engelleri yönergeleri ve uygulama tarafından oluşturulan örtük engelleri tarafından tanımlanan vardır.  
-  
- Yapı  
- Bir deyim bir yapıdır. Bir yönerge ve sonraki yapılandırılmış blok oluşur. Bazı yönergeleri bir yapı parçası değildir. (Bkz *openmp yönergesi* içinde [ek C](../../parallel/openmp/c-openmp-c-and-cpp-grammar.md)).  
-  
- Yönergesi  
- C veya C++ **#pragma** arkasından **omp** tanımlayıcısı, başka bir metin ve yeni bir satır. Yönergesi program davranışını belirtir.  
-  
- dinamik kapsam  
- Tüm tablolarda *sözcük ölçüde*, deyimleri sözcük kapsam içinde yürütme sonucu olarak yürütülen bir işlev içinde herhangi bir deyimle artı. Dinamik kapsam olarak da adlandırılan bir *bölge*.  
-  
- sözcük kapsamı  
- Deyimleri sözcüksel olarak kapsamında yer alan bir *yapılandırılmış blok*.  
-  
- Ana iş parçacığı  
- Bir takım oluşturur iş parçacığı olduğunda bir *paralel bölge* girilir.  
-  
- Paralel bölge  
- Bir OpenMP paralel bağlamak deyimleri oluşturun ve birden çok iş parçacığı tarafından yürütülen.  
-  
- private  
- Özel bir değişken başvuru yapma iş parçacığı için benzersizdir depolama bloğu adları. Bir değişkeni özel olduğunu belirtmek için çeşitli yollar olduğuna dikkat edin: tanımını paralel bir bölge içindeki bir **threadprivate** yönergesi, bir **özel**, **firstprivate**, **lastprivate**, veya **azaltma** yan tümcesi veya kullanımı değişkeni olarak bir **için**for döngüsü denetim değişkeni olarak bir **için** döngü hemen bir **için** veya **için paralel** yönergesi.  
-  
- bölge  
- Dinamik bir uzantı.  
-  
- Seri bölge  
- Yalnızca tarafından yürütülen deyimleri *ana iş parçacığı* herhangi dinamik kapsam dışında *paralel bölge*.  
-  
- Serileştirme  
- Bir grup (Bu ana iş parçacığı, paralel yapı için) yalnızca bir tek iş parçacığı, seri yürütme sırasını içeren deyimleri yapılandırılmış bloğu içinde oluşan iş parçacığı ile paralel yapı yürütmek için (blok yüklenmemiş gibi aynı sipariş bölümü bir paralel yapıyı) ve tarafından döndürülen değer üzerinde hiçbir etkisi olmadan **omp_in_parallel()** (paralel yapıları iç içe etkilerini herhangi dışında).  
-  
- shared  
- Paylaşılan bir değişken tek bir blok depolama adları. Bu değişken erişen tüm iş parçacıkları, bir takım bu tek bir blok depolama erişir.  
-  
- yapılandırılmış bloğu  
- Yapılandırılmış bir blok tek bir giriş ve tek bir çıkış vardır (tek veya bileşik) bir açıklamadır. Giriş / Çıkış bu deyim bir atlama ise yapılandırılmış bir blok deyimi yok. (bir çağrı dahil olmak üzere **longjmp**(3 C) veya kullanımını **throw**, ancak bir çağrı **çıkmak** izin verilir). Bileşik deyim, her zaman bir açılış yapıyoruz yürütülmeye yapılandırılmış bir blok ise **{** ve kapatma sırasında her zaman biter **}**. İfade deyimi, seçim deyimi, yineleme deyimi veya **deneyin** bloğu kapsayan tarafından karşılık gelen bileşik deyim alırsa, yapılandırılmış bir blok **{** ve **}** yapılandırılmış bir blok olacaktır. Atlama deyimi, etiketli deyim veya bildirimi deyimi yapılandırılmış bloğu değil.  
-  
- Takım  
- Bir yapı yürütme içinde birlikte çalışan bir veya daha fazla iş parçacığı sayısı.  
-  
- thread  
- Seri akış denetimi, bir dizi özel değişkenler ve erişim paylaşılan değişkenlere sahip bir yürütme varlık.  
-  
- değişken  
- Ad alanı adları ile isteğe bağlı olarak tam bir tanımlayıcı, bir nesne adları.
+
+Bu belgede aşağıdaki terimler kullanılır:
+
+- barrier
+
+   Takım tüm iş parçacıkları tarafından erişilmesi gereken bir eşitleme noktası.  Her iş parçacığı, takımın tüm iş parçacıkları bu noktada geldiğinde bekler. Yönergeleri ve uygulama tarafından oluşturulan örtük engelleri tarafından tanımlanan açık engelleri vardır.
+
+- Yapısı
+
+   Bir deyimi bir yapıdır. Bu, bir yönerge ve sonraki yapısal bloğunun oluşur. Yönergelerden bazıları bir yapısının parçası olmadığını unutmayın. (Bkz *openmp yönergesi* içinde [ek C](../../parallel/openmp/c-openmp-c-and-cpp-grammar.md)).
+
+- Yönergesi
+
+   Bir C veya C++ **#pragma** ardından **omp** tanımlayıcısı, diğer metin ve yeni bir satır. Yönerge, programın davranışını belirtir.
+
+- dinamik kapsam
+
+   Tüm deyimlerinde *sözcük kapsamı*, sözcük kapsamı içindeki deyimler yürütme sonucu olarak çalıştırılan bir işlev içinde herhangi bir deyimle artı. Dinamik kapsam olarak da adlandırılan bir *bölge*.
+
+- sözcük kapsamı
+
+   Sözcüksel olarak içindeki deyimler bir *yapısal bloğunun*.
+
+-  Ana iş parçacığı
+
+   Bir ekip oluşturan iş parçacığı, bir *paralel bölgenin* girilir.
+
+- Paralel bölgenin
+
+   Bir OpenMP paralel yapı bağlayın ve birden çok iş parçacığı tarafından yürütülen deyimleri.
+
+- private
+
+   Özel bir değişken başvurusu yapılmalıdır iş parçacığı için benzersiz olan depolama bloğu adları. Bir değişkeni özel olduğunu belirtmek için çeşitli yollar olduğunu unutmayın: tanımını bir paralel bölgenin içinde bir **threadprivate** yönergesi, bir **özel**, **firstprivate**, **lastprivate**, veya **azaltma** yan tümcesi veya değişken olarak kullanıldığında bir **için**döngü denetim değişkeni olarak bir **için** döngü hemen bir **için** veya **için paralel** yönergesi.
+
+- bölge
+
+   Dinamik bir uzantı.
+
+- Seri bölge
+
+   Yalnızca yürütülen deyimleri *ana iş parçacığı* herhangi dinamik kapsam dışında *paralel bölgenin*.
+
+- Seri hale getirme
+
+   İş parçacığı (ana iş parçacığını paralel bu yapı için olan) yalnızca bir tek iş parçacığı, seri yapılandırılmış bloğundaki ifadeler için yürütme sırasını ile oluşan bir ekip ile paralel bir yapısı yürütülecek (blok yokmuş gibi aynı sıralama bölümü yapısının bir paralel) ve döndürdüğü değerin üzerinde hiçbir etkisi olmadan **omp_in_parallel()** (paralel yapılar iç içe herhangi etkileri dışında).
+
+- shared
+
+   Tek bir blok depolama paylaşılan bir değişken adı. Bu değişken erişen tüm iş parçacıklarının bir takım bu tek bir blok depolama erişim sağlar.
+
+- Yapısal bloğunun
+
+   Bir yapısal bloğunun tek bir giriş ve tek bir çıkış (tek veya bileşik) bir ifadedir. İçine veya dışına Sadeliği atlama ise herhangi bir deyimi bir yapısal bloğunun olur (çağrı dahil olmak üzere **longjmp**(3 C) veya kullanımını **throw**, ancak bir çağrı **çıkmak** izin verilir). Bileşik deyim, her zaman sol konumunda yürütülmeye yapısal bloğunun ise **{** ve kapatma sırasında her zaman sona eren **}**. Bir ifade deyimi, seçim deyimi, yineleme deyiminin veya **deneyin** bloğu yapısal bloğunun karşılık gelen bileşik deyim, kapsayan tarafından aldıysanız **{** ve **}** yapısal bloğunun olacaktır. Atlama deyimi, etiketli deyim veya bildirim deyimi bir yapısal bloğunun değil.
+
+-  Takım
+
+   Bir yapı içinde yürütülmesini kurduğuna ilişkin bir veya daha fazla iş parçacığı.
+
+- thread
+
+   Bir yürütme seri bir denetim akışını, bir dizi özel değişkenleri ve paylaşılan değişkenlerine erişimi olan varlık.
+
+- değişken
+
+   İsteğe bağlı olarak ad alanı adları, tam bir tanımlayıcı, bir nesne adları.

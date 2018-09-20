@@ -38,161 +38,158 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d607fd0d63eb1e4fc968b4f83ce71d19eda4cfd0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c2091c6d76cfd139d9e842c26bfbffb3e556b050
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46059296"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46411176"
 ---
 # <a name="double2-class"></a>double_2 Sınıfı
-2 iki çiftten oluşan bir kısa vektörü temsil eder.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class double_2;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-typedefs"></a>Genel Typedefler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`value_type`||  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[double_2 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|double_2::get_x||  
-|double_2::get_xy||  
-|double_2::get_y||  
-|double_2::get_yx||  
-|double_2::ref_g||  
-|double_2::ref_r||  
-|double_2::ref_x||  
-|double_2::ref_y||  
-|double_2::set_x||  
-|double_2::set_xy||  
-|double_2::set_y||  
-|double_2::set_yx||  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|double_2::operator-||  
-|double_2::operator--||  
-|double_2::operator * =||  
-|double_2::operator / =||  
-|double_2::operator ++||  
-|double_2::operator +=||  
-|double_2::operator =||  
-|double_2::operator-=||  
-  
-### <a name="public-constants"></a>Genel sabitler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|double_2::size Sabiti||  
-  
-### <a name="public-data-members"></a>Ortak Veri Üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|double_2::g||  
-|double_2::Gr||  
-|double_2::r||  
-|double_2::rg||  
-|double_2::x||  
-|double_2::xy||  
-|double_2::y||  
-|double_2::yx||  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `double_2`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** amp_short_vectors.h  
-  
- **Namespace:** Concurrency::graphics  
-  
-##  <a name="ctor"></a> double_2 
 
- Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.  
-  
-```  
+2 iki çiftten oluşan bir kısa vektörü temsil eder.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class double_2;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-typedefs"></a>Genel Typedefler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`value_type`||
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[double_2 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|double_2::get_x||
+|double_2::get_xy||
+|double_2::get_y||
+|double_2::get_yx||
+|double_2::ref_g||
+|double_2::ref_r||
+|double_2::ref_x||
+|double_2::ref_y||
+|double_2::set_x||
+|double_2::set_xy||
+|double_2::set_y||
+|double_2::set_yx||
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|double_2::operator-||
+|double_2::operator--||
+|double_2::operator * =||
+|double_2::operator / =||
+|double_2::operator ++||
+|double_2::operator +=||
+|double_2::operator =||
+|double_2::operator-=||
+
+### <a name="public-constants"></a>Genel sabitler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|double_2::size Sabiti||
+
+### <a name="public-data-members"></a>Ortak Veri Üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|double_2::g||
+|double_2::Gr||
+|double_2::r||
+|double_2::rg||
+|double_2::x||
+|double_2::xy||
+|double_2::y||
+|double_2::yx||
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`double_2`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** amp_short_vectors.h
+
+**Namespace:** Concurrency::graphics
+
+##  <a name="ctor"></a> double_2
+
+Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.
+
+```
 double_2() restrict(amp,
     cpu);
 
- 
 double_2(
-    double _V0,  
+    double _V0,
     double _V1) restrict(amp,
     cpu);
 
- 
 double_2(
     double _V) restrict(amp,
     cpu);
 
- 
 double_2(
     const double_2& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline double_2(
     const uint_2& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline double_2(
     const int_2& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline double_2(
     const float_2& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline double_2(
     const unorm_2& _Other) restrict(amp,
     cpu);
 
- 
 explicit inline double_2(
     const norm_2& _Other) restrict(amp,
     cpu);
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*_V0*<br/>
-Öğe 0'ı başlatmak için değer.  
-  
-*_V1*<br/>
-1 öğe başlatmak için değer.  
-  
-*_V*<br/>
-Başlatma için değer.  
-  
-*_Diğer*<br/>
-Başlatmak için kullanılan nesne.  
-  
-##  <a name="double_2__size"></a> Boyutu 
+```
 
-```  
-static const int size = 2;  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)
+### <a name="parameters"></a>Parametreler
+
+*_V0*<br/>
+Öğe 0'ı başlatmak için değer.
+
+*_V1*<br/>
+1 öğe başlatmak için değer.
+
+*_V*<br/>
+Başlatma için değer.
+
+*_Diğer*<br/>
+Başlatmak için kullanılan nesne.
+
+##  <a name="double_2__size"></a> Boyutu
+
+```
+static const int size = 2;
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

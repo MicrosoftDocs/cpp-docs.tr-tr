@@ -21,109 +21,120 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f720ad2590a731792f79ef66a68dd2894a15517d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f3ff478b4471916fb51931ea59712be0d47d2b61
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46026926"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46404039"
 ---
 # <a name="messageprocessor-class"></a>message_processor Sınıfı
-`message_processor` İşlenmesi için soyut temel sınıfı `message` nesneleri. İletilerin sıralama hakkında bir garanti yoktur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+`message_processor` İşlenmesi için soyut temel sınıfı `message` nesneleri. İletilerin sıralama hakkında bir garanti yoktur.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 template<class T>
 class message_processor;
-```  
-  
-#### <a name="parameters"></a>Parametreler  
-*T*<br/>
-Bu akıştaki yükün iletileri veri türü ele `message_processor` nesne.  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-typedefs"></a>Genel Typedefler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`type`|Bir tür diğer adı için `T`.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[async_send](#async_send)|Türetilen bir sınıfta geçersiz kılındığında, iletileri zaman uyumsuz olarak bloğu içine yerleştirir.|  
-|[sync_send](#sync_send)|Türetilen bir sınıfta geçersiz kılındığında, iletileri eşzamanlı olarak bloğu içine yerleştirir.|  
-|[bekleme](#wait)|Türetilen bir sınıfta geçersiz kılındığında, tamamlamak tüm için zaman uyumsuz işlemler bekler.|  
-  
-### <a name="protected-methods"></a>Korumalı Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[process_incoming_message](#process_incoming_message)|Türetilen bir sınıfta geçersiz kılındığında, iletme iletilerinin işlenmesini bloğuna gerçekleştirir. Yeni bir ileti eklendiğinde ve sıranın boş olacak şekilde bulunan her zaman bir kez çağrılır.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `message_processor`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** agents.h  
-  
- **Namespace:** eşzamanlılık  
-  
-##  <a name="async_send"></a> async_send 
+```
 
- Türetilen bir sınıfta geçersiz kılındığında, iletileri zaman uyumsuz olarak bloğu içine yerleştirir.  
-  
+#### <a name="parameters"></a>Parametreler
+
+*T*<br/>
+Bu akıştaki yükün iletileri veri türü ele `message_processor` nesne.
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-typedefs"></a>Genel Typedefler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`type`|Bir tür diğer adı için `T`.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[async_send](#async_send)|Türetilen bir sınıfta geçersiz kılındığında, iletileri zaman uyumsuz olarak bloğu içine yerleştirir.|
+|[sync_send](#sync_send)|Türetilen bir sınıfta geçersiz kılındığında, iletileri eşzamanlı olarak bloğu içine yerleştirir.|
+|[bekleme](#wait)|Türetilen bir sınıfta geçersiz kılındığında, tamamlamak tüm için zaman uyumsuz işlemler bekler.|
+
+### <a name="protected-methods"></a>Korumalı Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[process_incoming_message](#process_incoming_message)|Türetilen bir sınıfta geçersiz kılındığında, iletme iletilerinin işlenmesini bloğuna gerçekleştirir. Yeni bir ileti eklendiğinde ve sıranın boş olacak şekilde bulunan her zaman bir kez çağrılır.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`message_processor`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** agents.h
+
+**Namespace:** eşzamanlılık
+
+##  <a name="async_send"></a> async_send
+
+Türetilen bir sınıfta geçersiz kılındığında, iletileri zaman uyumsuz olarak bloğu içine yerleştirir.
+
 ```
 virtual void async_send(_Inout_opt_ message<T>* _Msg) = 0;
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*_Msg*<br/>
-A `message` zaman uyumsuz olarak göndermek için nesne.  
-  
-### <a name="remarks"></a>Açıklamalar  
- İşlemci uygulamaları, bu yöntemin üzerine yazması gerekir.  
-  
-##  <a name="process_incoming_message"></a> process_incoming_message 
+```
 
- Türetilen bir sınıfta geçersiz kılındığında, iletme iletilerinin işlenmesini bloğuna gerçekleştirir. Yeni bir ileti eklendiğinde ve sıranın boş olacak şekilde bulunan her zaman bir kez çağrılır.  
-  
+### <a name="parameters"></a>Parametreler
+
+*_Msg*<br/>
+A `message` zaman uyumsuz olarak göndermek için nesne.
+
+### <a name="remarks"></a>Açıklamalar
+
+İşlemci uygulamaları, bu yöntemin üzerine yazması gerekir.
+
+##  <a name="process_incoming_message"></a> process_incoming_message
+
+Türetilen bir sınıfta geçersiz kılındığında, iletme iletilerinin işlenmesini bloğuna gerçekleştirir. Yeni bir ileti eklendiğinde ve sıranın boş olacak şekilde bulunan her zaman bir kez çağrılır.
+
 ```
 virtual void process_incoming_message() = 0;
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- İleti bloğu uygulamalarında, bu yöntemin üzerine yazması gerekir.  
-  
-##  <a name="sync_send"></a> sync_send 
+```
 
- Türetilen bir sınıfta geçersiz kılındığında, iletileri eşzamanlı olarak bloğu içine yerleştirir.  
-  
+### <a name="remarks"></a>Açıklamalar
+
+İleti bloğu uygulamalarında, bu yöntemin üzerine yazması gerekir.
+
+##  <a name="sync_send"></a> sync_send
+
+Türetilen bir sınıfta geçersiz kılındığında, iletileri eşzamanlı olarak bloğu içine yerleştirir.
+
 ```
 virtual void sync_send(_Inout_opt_ message<T>* _Msg) = 0;
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*_Msg*<br/>
-A `message` zaman uyumlu olarak göndermek için nesne.  
-  
-### <a name="remarks"></a>Açıklamalar  
- İşlemci uygulamaları, bu yöntemin üzerine yazması gerekir.  
-  
-##  <a name="wait"></a> bekleme 
+```
 
- Türetilen bir sınıfta geçersiz kılındığında, tamamlamak tüm için zaman uyumsuz işlemler bekler.  
-  
+### <a name="parameters"></a>Parametreler
+
+*_Msg*<br/>
+A `message` zaman uyumlu olarak göndermek için nesne.
+
+### <a name="remarks"></a>Açıklamalar
+
+İşlemci uygulamaları, bu yöntemin üzerine yazması gerekir.
+
+##  <a name="wait"></a> bekleme
+
+Türetilen bir sınıfta geçersiz kılındığında, tamamlamak tüm için zaman uyumsuz işlemler bekler.
+
 ```
 virtual void wait() = 0;
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- İşlemci uygulamaları, bu yöntemin üzerine yazması gerekir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [ordered_message_processor Sınıfı](ordered-message-processor-class.md)
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+İşlemci uygulamaları, bu yöntemin üzerine yazması gerekir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
+[ordered_message_processor Sınıfı](ordered-message-processor-class.md)

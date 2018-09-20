@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 78657b293562e82e4691ae54f8ee60d490d78ba7
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: fab79c1e3c28a3768b7eff856c16e5c0746c963f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716683"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46431001"
 ---
 # <a name="zcnoexcepttypes-c17-noexcept-rules"></a>/ ZC: noexcepttypes (c ++ 17 noexcept kuralları)
 
@@ -90,6 +90,6 @@ Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standa
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/ZC (Uyumluluk)](../../build/reference/zc-conformance.md)
+[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)<br/>
 [noexcept](../../cpp/noexcept-cpp.md)<br/>
 [Özel Durum Belirtimleri (throw)](../../cpp/exception-specifications-throw-cpp.md)

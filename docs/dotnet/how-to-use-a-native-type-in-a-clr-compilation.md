@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: yerel tür - clr derlemede kullanma | Microsoft Docs'
+title: 'Nasıl yapılır: - clr derlemesinde yerel tür kullanma | Microsoft Docs'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 ms.technology:
@@ -16,57 +16,61 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: c5b88660aa267ab148730e3b94907ed91129bfe9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3e56c3617b6b2a8168e35867c09858dffa84cea9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33128413"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448070"
 ---
 # <a name="how-to-use-a-native-type-in-a-clr-compilation"></a>Nasıl yapılır: /clr Derlemesinde Yerel Tür Kullanma
-Yerel tür tanımlayabilirsiniz bir **/CLR** derleme ve bu yerel türün derlemedeki bütün kullanımları geçerlidir. Ancak, yerel türler başvurulan meta veriler için kullanılabilir olmayacaktır.  
-  
- Her derleme kullanacağı her yerel tür tanımı içermesi gerekir.  
-  
- Daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md).  
-  
-## <a name="example"></a>Örnek  
- Bu örnek tanımlar ve yerel tür kullanan bir bileşen oluşturur.  
-  
-```  
-// use_native_type_in_clr.cpp  
-// compile with: /clr /LD  
-public struct NativeClass {  
-   static int Test() { return 98; }  
-};  
-  
-public ref struct ManagedClass {  
-   static int i = NativeClass::Test();  
-   void Test() {  
-      System::Console::WriteLine(i);  
-   }  
-};  
-```  
-  
-## <a name="example"></a>Örnek  
- Bu örnek bileşeni tüketen bir istemci tanımlar. Derlenecek tanımlanmadığı sürece, yerel tür erişmek için bir hata olduğuna dikkat edin.  
-  
-```  
-// use_native_type_in_clr_2.cpp  
-// compile with: /clr  
-#using "use_native_type_in_clr.dll"  
-// Uncomment the following 3 lines to resolve.  
-// public struct NativeClass {  
-//    static int Test() { return 98; }  
-// };  
-  
-int main() {  
-   ManagedClass x;  
-   x.Test();  
-  
-   System::Console::WriteLine(NativeClass::Test());   // C2653  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+
+Yerel bir tür tanımlayabilirsiniz bir **/CLR** derleme ve bu yerel türün derleme içindeki herhangi bir kullanımından geçerlidir. Ancak, yerel türler başvurulan meta veriler için kullanılamaz.
+
+Her derleme, bu her yerel bir tür tanımı içermelidir.
+
+Daha fazla bilgi için [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md).
+
+## <a name="example"></a>Örnek
+
+Tanımlar ve yerel bir tür kullanan bir bileşenin bu örneği oluşturur.
+
+```
+// use_native_type_in_clr.cpp
+// compile with: /clr /LD
+public struct NativeClass {
+   static int Test() { return 98; }
+};
+
+public ref struct ManagedClass {
+   static int i = NativeClass::Test();
+   void Test() {
+      System::Console::WriteLine(i);
+   }
+};
+```
+
+## <a name="example"></a>Örnek
+
+Bu örnek bileşeni kullanan bir istemci tanımlar. Derlenecek dosyada tanımlı olmadığı sürece, yerel tür erişmek için bir hata olduğuna dikkat edin.
+
+```
+// use_native_type_in_clr_2.cpp
+// compile with: /clr
+#using "use_native_type_in_clr.dll"
+// Uncomment the following 3 lines to resolve.
+// public struct NativeClass {
+//    static int Test() { return 98; }
+// };
+
+int main() {
+   ManagedClass x;
+   x.Test();
+
+   System::Console::WriteLine(NativeClass::Test());   // C2653
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

@@ -15,23 +15,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a0a3d93815a740be59960e6d3e0f9e9ed690923
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 0f803af896c1bb2a0e5f58e45f4ef9f588f4e66d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37122960"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420491"
 ---
 # <a name="walkthrough-adding-a-ctaskdialog-to-an-application"></a>İzlenecek yol: Bir Uygulamaya CTaskDialog Ekleme
 
-Bu kılavuzda tanıtır [CTaskDialog sınıfı](../mfc/reference/ctaskdialog-class.md) ve uygulamanız için bir tane ekleyin gösterilmektedir.
+Bu izlenecek yolda tanıtır [CTaskDialog sınıfı](../mfc/reference/ctaskdialog-class.md) ve uygulamanız için bir ekleme işlemi gösterilmektedir.
 
-`CTaskDialog` Windows ileti kutusu Windows Vista veya sonraki sürümlerde değiştiren bir görev iletişim kutusudur. `CTaskDialog` Özgün ileti kutusu artırır ve işlevsellik ekler. Windows ileti kutusu Visual Studio'da hala desteklenmektedir.
+`CTaskDialog` Windows ileti kutusu Windows Vista veya sonraki sürümlerde yerini alan bir görev iletişim kutusu. `CTaskDialog` Özgün ileti kutusu artırır ve işlevsellik ekler. Windows ileti kutusunda Visual Studio'da hala desteklenmektedir.
 
 > [!NOTE]
-> Windows Vista'dan önceki Windows sürümleri değil Destek `CTaskDialog`. Uygulamanızı Windows'un önceki bir sürümünü çalıştıran bir kullanıcıyla bir ileti göstermek istiyorsanız bir alternatif iletişim kutusu seçeneğini program gerekir. Statik yöntemini kullanabilirsiniz [CTaskDialog::IsSupported](../mfc/reference/ctaskdialog-class.md#issupported) çalışma zamanında bir kullanıcının bilgisayarına görüntüleyebilirsiniz olup olmadığını belirlemek için bir `CTaskDialog`. Ayrıca, `CTaskDialog` uygulamanızı Unicode kitaplıkla yapılandırıldığında kullanılabilir.
+> Windows Vista'dan önceki Windows sürümlerinde değil Destek `CTaskDialog`. Uygulamanızı önceki bir Windows sürümünü çalıştıran bir kullanıcıya bir ileti göstermek istiyorsanız bir alternatif iletişim kutusu seçeneğini program gerekir. Statik yöntemi kullanabileceğiniz [CTaskDialog::IsSupported](../mfc/reference/ctaskdialog-class.md#issupported) çalışma zamanında kullanıcının bilgisayarına görüntüleyebilirsiniz olup olmadığını belirlemek için bir `CTaskDialog`. Ayrıca, `CTaskDialog` Unicode kitaplığıyla uygulamanızı yapılandırıldığında kullanılabilir.
 
-`CTaskDialog` Toplamak ve bilgilerini görüntülemek için çeşitli isteğe bağlı öğeleri destekler. Örneğin, bir `CTaskDialog` komut bağlantıları, özelleştirilmiş düğmeleri, özelleştirilmiş simgeleri ve altbilgi görüntüleyebilirsiniz. `CTaskDialog` Ayrıca hangi isteğe bağlı öğeleri belirlemek için görev iletişim kutusu durumunu sorgulamak için seçilen kullanıcıya sağlayan çeşitli yöntemler vardır.
+`CTaskDialog` Toplamak ve bilgileri görüntülemek için çeşitli isteğe bağlı öğeleri destekler. Örneğin, bir `CTaskDialog` komut bağlantıları, özelleştirilmiş bir düğme, özelleştirilmiş simgeleri ve altbilgi görüntüleyebilirsiniz. `CTaskDialog` Ayrıca hangi isteğe bağlı öğeler belirlemek için görev iletişim kutusu durumunu sorgulamak için seçtiğiniz kullanıcı olanak tanıyan çeşitli yöntemler vardır.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -39,21 +39,21 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
 - Visual Studio 2010 veya sonrası
 
-- Windows Vista veya sonraki sürümü
+- Windows Vista veya üzeri
 
-## <a name="replacing-a-windows-message-box-with-a-ctaskdialog"></a>Windows ileti kutusu CTaskDialog ile değiştirme
+## <a name="replacing-a-windows-message-box-with-a-ctaskdialog"></a>Windows ileti kutusu ile bir CTaskDialog değiştirme
 
-Aşağıdaki yordam en temel kullanımını gösteren `CTaskDialog`, olduğu Windows ileti kutusu değiştirmek için. Bu örnek ayrıca görev iletişim kutusuyla ilişkili simgeyi değiştirir. Simgeyi değiştirme yapar `CTaskDialog` Windows ileti kutusu için aynı görünür.
+Aşağıdaki yordam en temel kullanımını göstermektedir `CTaskDialog`, olan Windows ileti kutusu değiştirilecek. Bu örnek ayrıca görevi iletişim kutusuyla ilişkili simgeyi değiştirir. Simgeyi değiştirme yapar `CTaskDialog` Windows ileti kutusuna aynı görünür.
 
-### <a name="to-replace-a-windows-message-box-with-a-ctaskdialog"></a>Windows ileti kutusu CTaskDialog ile değiştirmek için
+### <a name="to-replace-a-windows-message-box-with-a-ctaskdialog"></a>Windows ileti kutusu ile bir CTaskDialog değiştirmek için
 
-1. Varsayılan ayarlarla yeni bir MFC Uygulama projesi oluşturun. Bu çağrı *MyProject*.
+1. Varsayılan ayarlarla yeni bir MFC uygulaması projesi oluşturun. Bu çağrı *MyProject*.
 
-2. Kullanım **Çözüm Gezgini** MyProject.cpp dosyası açılamıyor.
+2. Kullanım **Çözüm Gezgini** MyProject.cpp dosyasını açın.
 
 3. Ekleme `#include "afxtaskdialog.h"` sonra listesini içerir.
 
-4. Find yöntemi `CMyProjectApp::InitInstance`. Önce kod aşağıdaki satırları ekleyin `return TRUE;` deyimi. Bu kod Windows ileti kutusu veya kullanırız dizeleri oluşturur `CTaskDialog`.  
+4. Find yöntemi `CMyProjectApp::InitInstance`. Önce kod aşağıdaki satırları ekleyin `return TRUE;` deyimi. Windows ileti kutusu veya kullandığımız dizeleri Bu kod oluşturur `CTaskDialog`.
 
     ```cpp
     CString message("My message to the user");
@@ -61,7 +61,7 @@ Aşağıdaki yordam en temel kullanımını gösteren `CTaskDialog`, olduğu Win
     CString emptyString;
     ```
 
-5. Aşağıdaki kod 4. adımdan sonra kodu ekleyin. Bu kodu kullanıcının bilgisayarı desteklediğini garanti `CTaskDialog`. İletişim kutusu desteklenmiyorsa uygulama bunun yerine bir Windows ileti kutusu görüntüler.
+5. Aşağıdaki kod, 4. adımdan koddan sonra ekleyin. Bu kod, kullanıcının bilgisayarında desteklediğini garanti eder `CTaskDialog`. İletişim desteklenmiyorsa uygulama bunun yerine Windows ileti kutusu görüntüler.
 
     ```cpp
     if (CTaskDialog::IsSupported())
@@ -74,43 +74,43 @@ Aşağıdaki yordam en temel kullanımını gösteren `CTaskDialog`, olduğu Win
     }
     ```
 
-6. Aşağıdaki kod sonra köşeli ayraçlar arasında Ekle `if` 5. adım from deyimi. Bu kod oluşturur `CTaskDialog`.
+6. Sonra köşeli ayraçlar arasına aşağıdaki kodu `if` 5. adımdaki deyimi. Bu kod oluşturur `CTaskDialog`.
 
     ```cpp
     CTaskDialog taskDialog(message, emptyString, dialogTitle, TDCBF_OK_BUTTON);
     ```
 
-7. Sonraki satırında, aşağıdaki kodu ekleyin. Bu kod uyarı simgesi ayarlar.
+7. Sonraki satırda şu kodu ekleyin. Bu kod, bir uyarı simgesi ayarlar.
 
     ```cpp
     taskDialog.SetMainIcon(TD_WARNING_ICON);
     ```
 
-8. Sonraki satırında, aşağıdaki kodu ekleyin. Bu kod görev iletişim kutusu görüntüler.
+8. Sonraki satırda şu kodu ekleyin. Bu kod, görev iletişim kutusu görüntüler.
 
     ```cpp
     taskDialog.DoModal();
     ```
 
-İstemiyorsanız, adım 7 atlayabilirsiniz `CTaskDialog` aynı simgesini Windows ileti kutusu görüntüleme. Bu adımı atlarsanız `CTaskDialog` uygulama görüntülediğinde yok simgesi vardır.
+İstemiyorsanız, 7. adım atlayabilirsiniz `CTaskDialog` aynı simgesi Windows ileti kutusunda görüntülenecek. Bu adımı atlarsanız `CTaskDialog` uygulama görüntülendiğinde yok simgesi vardır.
 
-Derleme ve uygulamayı çalıştırın. Uygulama başladıktan sonra görev iletişim kutusu görüntüler.
+Derleme ve uygulamayı çalıştırın. Uygulama, başladıktan sonra görev iletişim kutusu görüntüler.
 
-## <a name="adding-functionality-to-the-ctaskdialog"></a>İşlevsellik CTaskDialog ekleme
+## <a name="adding-functionality-to-the-ctaskdialog"></a>İşlevselliği CTaskDialog ekleme
 
-Aşağıdaki yordamda işlevini eklemek gösterilmiştir `CTaskDialog` önceki yordamda oluşturduğunuz. Kod örneği, kullanıcının seçimleri temel alarak belirli yönergeleri yürütmek nasıl gösterilir.
+Aşağıdaki yordam işlevsellik ekleme işlemi açıklanır `CTaskDialog` , önceki yordamda oluşturduğunuz. Örnek kod, kullanıcı seçimlerine göre belirli yönergeleri yürütmek gösterilir.
 
-### <a name="to-add-functionality-to-the-ctaskdialog"></a>CTaskDialog işlevselliği eklemek için
+### <a name="to-add-functionality-to-the-ctaskdialog"></a>CTaskDialog için işlevselliği eklemek için
 
-1. Gidin **kaynak görünümü**. Göremiyorsanız **kaynak görünümü**, ondan açabilirsiniz **Görünüm** menüsü.
+1. Gidin **kaynak görünümü**. Göremiyorsanız **kaynak görünümü**, ondan açabileceğiniz **görünümü** menüsü.
 
-2. Genişletme **kaynak görünümü** seçebileceğiniz kadar **dize tablosu** klasör. Çift tıklayın ve genişletin **dize tablosu** girişi.
+2. Genişletin **kaynak görünümü** seçimi gösterilene kadar **dize tablosu** klasör. Genişletin ve çift **dize tablosu** girişi.
 
-3. Dize tablosu altına gidin ve yeni bir giriş ekleyin. Değişiklik kimliği `TEMP_LINE1`. Resim yazısını kümesine **komut satırı 1**.
+3. Dize tablosu alt kısma kaydırın ve yeni bir giriş ekleyin. Kimliği değiştirme `TEMP_LINE1`. Başlığı ayarlayın **komut satırı 1**.
 
-4. Başka bir yeni giriş Ekle. Değişiklik kimliği `TEMP_LINE2`. Resim yazısını kümesine **komut satırı 2**.
+4. Başka bir yeni giriş ekleyin. Kimliği değiştirme `TEMP_LINE2`. Başlığı ayarlayın **komut satırı 2**.
 
-5. Geri MyProject.cpp gidin.
+5. MyProject.cpp için geri gidin.
 
 6. Sonra `CString emptyString;`, aşağıdaki kodu ekleyin:
 
@@ -120,7 +120,7 @@ Aşağıdaki yordamda işlevini eklemek gösterilmiştir `CTaskDialog` önceki y
     CString expansionInfo("This is the additional information to the user,\nextended over two lines.");
     ```
 
-7. Bul `taskDialog.DoModal()` deyimi ve bu deyimi aşağıdaki kodla değiştirin. Bu kod görev iletişim kutusu güncelleştirir ve yeni denetimler ekler:
+7. Bulma `taskDialog.DoModal()` deyimi ve o ifadeyi aşağıdaki kodla değiştirin. Bu kod, görev iletişim kutusu güncelleştirir ve yeni denetimler ekler:
 
     ```cpp
     taskDialog.SetMainInstruction(L"Warning");
@@ -133,13 +133,13 @@ Aşağıdaki yordamda işlevini eklemek gösterilmiştir `CTaskDialog` önceki y
     taskDialog.SetVerificationCheckboxText(L"Remember your selection");
     ```
 
-8. Görev iletişim kutusu kullanıcı için görüntüler ve kullanıcının seçimi alır kodu aşağıdaki satırı ekleyin:
+8. Görev iletişim kutusu kullanıcı için görüntüler ve kullanıcının seçimi alan kod aşağıdaki satırı ekleyin:
 
     ```cpp
     INT_PTR result = taskDialog.DoModal();
     ```
 
-9. Çağrısından sonra aşağıdaki kodu ekleyin `taskDialog.DoModal()`. Bu bölüm kodunun kullanıcının giriş işler:
+9. Çağrısından sonra aşağıdaki kodu ekleyin `taskDialog.DoModal()`. Kullanıcının girişinin kodun bu bölümünü işler:
 
     ```cpp
     if (taskDialog.GetVerificationCheckboxState())
@@ -171,21 +171,21 @@ Aşağıdaki yordamda işlevini eklemek gösterilmiştir `CTaskDialog` önceki y
     }
     ```
 
-Kodda 9. adım, belirtilen koşullar altında yürütmek istediğiniz kod ile işlem IF ile başlayan yorumları değiştirin.
+9. adımda kod içinde belirtilen koşullar altında yürütmek istediğiniz kodu ile işlem IF ile başlayan açıklamaları değiştirin.
 
-Derleme ve uygulamayı çalıştırın. Uygulama yeni denetimler ve ek bilgiler kullanan görev iletişim kutusu görüntüler.
+Derleme ve uygulamayı çalıştırın. Uygulama yeni denetimler ve ek bilgileri kullanan görev iletişim kutusu görüntüler.
 
-## <a name="displaying-a-ctaskdialog-without-creating-a-ctaskdialog-object"></a>Bir CTaskDialog CTaskDialog nesne oluşturmadan görüntüleme
+## <a name="displaying-a-ctaskdialog-without-creating-a-ctaskdialog-object"></a>CTaskDialog nesnesi oluşturmadan bir CTaskDialog görüntüleme
 
-Aşağıdaki yordam nasıl görüntüleneceğini gösterir bir `CTaskDialog` ilk oluşturmadan bir `CTaskDialog` nesnesi. Bu örnek, önceki yordamlarda devam eder.
+Aşağıdaki yordam nasıl görüntüleneceğini gösterir bir `CTaskDialog` ilk oluşturmadan bir `CTaskDialog` nesne. Bu örnek, önceki yordamlarda devam eder.
 
-### <a name="to-display-a-ctaskdialog-without-creating-a-ctaskdialog-object"></a>Bir CTaskDialog nesnesi oluşturmadan bir CTaskDialog görüntülemek için
+### <a name="to-display-a-ctaskdialog-without-creating-a-ctaskdialog-object"></a>CTaskDialog nesnesi oluşturmadan bir CTaskDialog görüntülemek için
 
-1. Henüz açık değilse MyProject.cpp dosyasını açın.
+1. Zaten açık değilse MyProject.cpp dosyasını açın.
 
-2. İçin kapanış ayracı gidin `if (CTaskDialog::IsSupported())` deyimi.
+2. Sağ köşeli ayraç için gidin `if (CTaskDialog::IsSupported())` deyimi.
 
-3. Ayraç hemen öncesine aşağıdaki kodu ekleyin `if` deyimi (önce `else` bloğu):
+3. Sağ köşeli ayraç hemen önce aşağıdaki kodu ekleyin `if` deyimi (önce `else` blok):
 
     ```cpp
     HRESULT result2 = CTaskDialog::ShowDialog(L"My error message",
@@ -195,12 +195,12 @@ Aşağıdaki yordam nasıl görüntüleneceğini gösterir bir `CTaskDialog` ilk
         TEMP_LINE2);
     ```
 
-Derleme ve uygulamayı çalıştırın. Uygulama iki görev iletişim kutusu görüntüler. İlk iletişim kutusunda eklemek işlevinden, için CTaskDialog yordamdır; İkinci bir iletişim kutusu son yordamdan ' dir.
+Derleme ve uygulamayı çalıştırın. Uygulama, iki görev iletişim kutusu görüntüler. İlk iletişim ekleme işlevinden CTaskDialog yordama kutusudur. İkinci bir iletişim kutusu son yordamdan ' dir.
 
-Bu örnekler için tüm kullanılabilir seçenekleri gösterir olmayan bir `CTaskDialog`, ancak başlamanıza yardımcı olması. Bkz: [CTaskDialog sınıfı](../mfc/reference/ctaskdialog-class.md) sınıfı tam bir açıklaması.
+Bu örnekler için tüm kullanılabilir seçenekleri koymaz bir `CTaskDialog`, ancak çalışmaya başlamanıza yardımcı olacaktır. Bkz: [CTaskDialog sınıfı](../mfc/reference/ctaskdialog-class.md) sınıf tam bir açıklaması.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim Kutuları](../mfc/dialog-boxes.md)  
-[CTaskDialog Sınıfı](../mfc/reference/ctaskdialog-class.md)  
-[CTaskDialog::CTaskDialog](../mfc/reference/ctaskdialog-class.md#ctaskdialog)  
+[İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
+[CTaskDialog Sınıfı](../mfc/reference/ctaskdialog-class.md)<br/>
+[CTaskDialog::CTaskDialog](../mfc/reference/ctaskdialog-class.md#ctaskdialog)

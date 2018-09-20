@@ -19,20 +19,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae941e7a59fe673dea6068c6ca6df5feb94db239
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 060bda1de088f3e1e84791601f176097f764c412
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372936"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446432"
 ---
 # <a name="generic-control-handler"></a>Genel Denetim İşleyicisi
-Aşağıdaki eşleme girişi işlev prototipi karşılık gelir.  
-  
-|Eşleme girişi|İşlev prototipi|  
-|---------------|------------------------|  
-|ON_CONTROL ( \<wNotifyCode >, \<kimliği >, \<memberFxn >)|afx_msg void memberFxn ();|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)
+
+Aşağıdaki eşleme girişi için işlev prototipi karşılık gelir.
+
+|Eşleme girişi|İşlev prototipi|
+|---------------|------------------------|
+|ON_CONTROL ( \<wNotifyCode >, \<kimliği >, \<memberFxn >)|afx_msg void memberFxn ();|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)
 

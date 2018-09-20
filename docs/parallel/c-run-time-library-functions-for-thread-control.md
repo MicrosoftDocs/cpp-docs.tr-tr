@@ -19,39 +19,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a0e57931b7f2af3f6232f140fd38155cfa5b2f8
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a665ee3ec640d84d185d4923e0777f853b187ce6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195241"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448135"
 ---
 # <a name="c-run-time-library-functions-for-thread-control"></a>İş Parçacığı Denetimi için C Çalışma Süresi Kitaplık İşlevleri
-Win32 programlar en az bir iş parçacığı vardır. Herhangi bir iş parçacığı ek iş parçacıkları oluşturabilirsiniz. Bir iş parçacığı işini hızla tamamlayın ve ardından sonlandırın veya program süresince etkin kalabilir.  
-  
-İş parçacığı oluşturma ve sonlandırma için LIBCMT ve MSVCRT C çalışma zamanı kitaplıkları aşağıdaki işlevleri sağlar: [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md) ve [_endthread, _endthreadex](../c-runtime-library/reference/endthread-endthreadex.md).  
-  
-`_beginthread` Ve `_beginthreadex` işlevleri yeni bir iş parçacığı ve işlem başarılı olursa, bir iş parçacığı tanıtıcısını döndürür. Yürütme tamamlanmadan ya da bunu kendi çağrısı ile sonlandırabilirsiniz iş parçacığı sonlanır `_endthread` veya `_endthreadex`.  
-  
+
+Win32 programlar en az bir iş parçacığı vardır. Herhangi bir iş parçacığı ek iş parçacıkları oluşturabilirsiniz. Bir iş parçacığı işini hızla tamamlayın ve ardından sonlandırın veya program süresince etkin kalabilir.
+
+İş parçacığı oluşturma ve sonlandırma için LIBCMT ve MSVCRT C çalışma zamanı kitaplıkları aşağıdaki işlevleri sağlar: [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md) ve [_endthread, _endthreadex](../c-runtime-library/reference/endthread-endthreadex.md).
+
+`_beginthread` Ve `_beginthreadex` işlevleri yeni bir iş parçacığı ve işlem başarılı olursa, bir iş parçacığı tanıtıcısını döndürür. Yürütme tamamlanmadan ya da bunu kendi çağrısı ile sonlandırabilirsiniz iş parçacığı sonlanır `_endthread` veya `_endthreadex`.
+
 > [!NOTE]
-> C çalışma zamanı yordamları Libcmt.lib ile bir programdan çağırmak için kullanacaksanız, iş parçacıkları ile başlamalıdır `_beginthread` veya `_beginthreadex` işlevi. Win32 işlevleri kullanmayın `ExitThread` ve `CreateThread`. Kullanarak `SuspendThread` birden fazla iş parçacığının askıya alınmış iş parçacığı C çalışma zamanı veri yapısı erişimini tamamlanması için beklerken engellendiğinde bir kilitlenmesine yol açabilir.  
-  
-##  <a name="_core_the__beginthread_function"></a> _Beginthread ve _beginthreadex işlevleri  
- 
-`_beginthread` Ve `_beginthreadex` İşlevler, yeni bir dizi oluşturun. Bir iş parçacığı bir işlem kodu ve veri bölümleri işlemdeki diğer iş parçacıkları paylaşır, ancak kendi benzersiz yazmaç değerlerini, yığın alanı ve geçerli yönerge adresi vardır. Sistem, CPU süresi her iş parçacığı verir, böylece bir işlemdeki tüm iş parçacıklarının eşzamanlı olarak yürütebilir.  
-  
-`_beginthread` ve `_beginthreadex` benzer [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) Win32 API işlevi, ancak bu farklılıkları vardır:  
-  
-- Bunlar, belirli C çalışma zamanı kitaplığı değişkenlerini başlatın. Bu seçenek, yalnızca C çalışma zamanı kitaplığı, iş parçacıklarının kullanırsanız önemlidir.  
-  
-- `CreateThread` yardımcı güvenlik öznitelikleri üzerinde denetim sağlayın. Bir iş parçacığını askıya alınmış durumda başlatmak için bu işlevi kullanabilirsiniz.  
-  
- `_beginthread` ve `_beginthreadex` bir hata olduğunda başarılı olursa yeni iş parçacığı veya bir hata kodu için bir tanıtıcı döndürür.  
-  
-##  <a name="_core_the__endthread_function"></a> _Endthread ve _endthreadex işlevleri  
- 
-[_Endthread](../c-runtime-library/reference/endthread-endthreadex.md) işlevi tarafından oluşturulan bir iş parçacığı sonlandırır `_beginthread` (ve benzer şekilde, `_endthreadex` tarafından oluşturulan bir iş parçacığı sonlandırıldığında `_beginthreadex`). İş parçacıkları tamamladığınızda, otomatik olarak sonlandır. `_endthread` ve `_endthreadex` bir iş parçacığı koşullu sonlandırma için kullanışlıdır. İletişim bağlantı noktası denetim alınamıyor ise işleme, iletişim için adanmış bir iş parçacığı gibi çıkabilirsiniz.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- 
+> C çalışma zamanı yordamları Libcmt.lib ile bir programdan çağırmak için kullanacaksanız, iş parçacıkları ile başlamalıdır `_beginthread` veya `_beginthreadex` işlevi. Win32 işlevleri kullanmayın `ExitThread` ve `CreateThread`. Kullanarak `SuspendThread` birden fazla iş parçacığının askıya alınmış iş parçacığı C çalışma zamanı veri yapısı erişimini tamamlanması için beklerken engellendiğinde bir kilitlenmesine yol açabilir.
+
+##  <a name="_core_the__beginthread_function"></a> _Beginthread ve _beginthreadex işlevleri
+
+`_beginthread` Ve `_beginthreadex` İşlevler, yeni bir dizi oluşturun. Bir iş parçacığı bir işlem kodu ve veri bölümleri işlemdeki diğer iş parçacıkları paylaşır, ancak kendi benzersiz yazmaç değerlerini, yığın alanı ve geçerli yönerge adresi vardır. Sistem, CPU süresi her iş parçacığı verir, böylece bir işlemdeki tüm iş parçacıklarının eşzamanlı olarak yürütebilir.
+
+`_beginthread` ve `_beginthreadex` benzer [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) Win32 API işlevi, ancak bu farklılıkları vardır:
+
+- Bunlar, belirli C çalışma zamanı kitaplığı değişkenlerini başlatın. Bu seçenek, yalnızca C çalışma zamanı kitaplığı, iş parçacıklarının kullanırsanız önemlidir.
+
+- `CreateThread` yardımcı güvenlik öznitelikleri üzerinde denetim sağlayın. Bir iş parçacığını askıya alınmış durumda başlatmak için bu işlevi kullanabilirsiniz.
+
+`_beginthread` ve `_beginthreadex` bir hata olduğunda başarılı olursa yeni iş parçacığı veya bir hata kodu için bir tanıtıcı döndürür.
+
+##  <a name="_core_the__endthread_function"></a> _Endthread ve _endthreadex işlevleri
+
+[_Endthread](../c-runtime-library/reference/endthread-endthreadex.md) işlevi tarafından oluşturulan bir iş parçacığı sonlandırır `_beginthread` (ve benzer şekilde, `_endthreadex` tarafından oluşturulan bir iş parçacığı sonlandırıldığında `_beginthreadex`). İş parçacıkları tamamladığınızda, otomatik olarak sonlandır. `_endthread` ve `_endthreadex` bir iş parçacığı koşullu sonlandırma için kullanışlıdır. İletişim bağlantı noktası denetim alınamıyor ise işleme, iletişim için adanmış bir iş parçacığı gibi çıkabilirsiniz.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
 [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](multithreading-with-c-and-win32.md)

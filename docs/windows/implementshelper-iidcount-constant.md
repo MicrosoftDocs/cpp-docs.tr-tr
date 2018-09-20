@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6b96165b045c44f4b15b09d6a5c48da14b7e96be
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6e89a9f7686a8252b2272baed50c7a618a3d75ba
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42575860"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46432107"
 ---
 # <a name="implementshelperiidcount-constant"></a>ImplementsHelper::IidCount Sabiti
 
@@ -46,5 +46,5 @@ Uygulanan arabirimi kimliği geçerli sayısını tutar `Implements` nesne.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ImplementsHelper Yapısı](../windows/implementshelper-structure.md)  
+[ImplementsHelper Yapısı](../windows/implementshelper-structure.md)<br/>
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

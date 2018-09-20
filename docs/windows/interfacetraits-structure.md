@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 966759acdac3cf78625cfd072471245a6e42ad63
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: cb8eb8fbc4199ccdaf5717e465f202c0e4ec296e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597121"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46437659"
 ---
 # <a name="interfacetraits-structure"></a>InterfaceTraits Yapısı
 
@@ -44,10 +44,10 @@ struct __declspec(novtable) InterfaceTraits<Nil>;
 
 ### <a name="parameters"></a>Parametreler
 
-*I0*  
+*I0*<br/>
 Bir arabirimin adı.
 
-*CloakedType*  
+*CloakedType*<br/>
 İçin `RuntimeClass`, `Implements` ve `ChainInterfaces`, arabirim kimlikleri listesinde olmayacak bir arabirim desteklenir.
 
 ## <a name="remarks"></a>Açıklamalar

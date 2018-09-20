@@ -15,23 +15,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb861995c16411bb58e3051c5ffc78f75931ae8f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2685c946b9ee1c738ee83f9413b7fd955857febb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385771"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46438346"
 ---
 # <a name="type-safe-access-to-controls-without-code-wizards"></a>Kod Sihirbazları Olmadan Denetimlere Tür Kullanımı Uyumlu Erişim
-Sınıfı'nin dönüş türünü dönüştürmek için bir satır içi üye işlevi denetimlere tür kullanımı uyumlu erişim oluşturmanın ilk yaklaşımı kullanır `CWnd`'s `GetDlgItem` üye işlevi bu örnekte olduğu gibi uygun C++ denetim türü için:  
-  
- [!code-cpp[NVC_MFCControlLadenDialog#50](../mfc/codesnippet/cpp/type-safe-access-to-controls-without-code-wizards_1.cpp)]  
-  
- Bu üye işlevi sonra aşağıdakine benzer bir kod ile bir tür kullanımı uyumlu şekilde erişim denetimi için de kullanabilirsiniz:  
-  
- [!code-cpp[NVC_MFCControlLadenDialog#51](../mfc/codesnippet/cpp/type-safe-access-to-controls-without-code-wizards_2.cpp)]  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir iletişim kutusundaki denetimlere tür kullanımı uyumlu erişim](../mfc/type-safe-access-to-controls-in-a-dialog-box.md)   
- [Kod Sihirbazları Kullanarak Denetimlere Tür Kullanımı Uyumlu Erişim](../mfc/type-safe-access-to-controls-with-code-wizards.md)
+
+Denetimlere tür kullanımı uyumlu erişim oluşturmanın ilk yaklaşım bir satır içi üye işlevi kullanan sınıf dönüş türüne dönüştürmeyi `CWnd`'s `GetDlgItem` üye işlevi bu örnekte olduğu gibi uygun C++ denetim türü için:
+
+[!code-cpp[NVC_MFCControlLadenDialog#50](../mfc/codesnippet/cpp/type-safe-access-to-controls-without-code-wizards_1.cpp)]
+
+Ardından bu üye işlevi bir tür kullanımı uyumlu şekilde aşağıdakine benzer bir kod ile erişim denetimi için de kullanabilirsiniz:
+
+[!code-cpp[NVC_MFCControlLadenDialog#51](../mfc/codesnippet/cpp/type-safe-access-to-controls-without-code-wizards_2.cpp)]
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bir İletişim Kutusundaki Denetimlere Tür Kullanımı Uyumlu Erişim](../mfc/type-safe-access-to-controls-in-a-dialog-box.md)<br/>
+[Kod Sihirbazları Kullanarak Denetimlere Tür Kullanımı Uyumlu Erişim](../mfc/type-safe-access-to-controls-with-code-wizards.md)
 

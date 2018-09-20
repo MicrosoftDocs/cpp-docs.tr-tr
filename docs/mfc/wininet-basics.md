@@ -16,57 +16,65 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7061c3203436197eb1bd03ae56058e0bd0f26f9d
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 98ca2eab519cdfa3140d40adfd83070976dcc965
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36955589"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435655"
 ---
 # <a name="wininet-basics"></a>WinInet Temelleri
-WinINet indirip dosyalarından, uygulamanızda karşıya yüklemek için FTP desteği eklemek için kullanabilirsiniz. Geçersiz kılabilirsiniz [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) ve *dwContext* aramak ve dosyaları karşıdan kullanıcılara ilerleme durumu bilgileri sağlamak için parametre.  
-  
- Bu makalede aşağıdaki konuları içerir:  
-  
--   [Çok basit bir tarayıcı oluşturma](#_core_create_a_very_simple_browser)  
-  
--   [Bir Web sayfası karşıdan yükle](#_core_download_a_web_page)  
-  
--   [FTP dosya](#_core_ftp_a_file)  
-  
--   [Gopher dizini alma](#_core_retrieve_a_gopher_directory)  
-  
--   [Dosyaları aktarma sırasında ilerleme durumu bilgilerini görüntüleme](#_core_display_progress_information_while_transferring_files)  
-  
- Aşağıda kod parçalarını basit bir tarayıcı oluşturmak, bir Web sayfası, FTP bir dosyayı indirin ve bir gopher dosyayı aramak nasıl ekleyebileceğiniz gösterilmektedir. Tam örnek olarak amaçlanmamıştır ve tüm özel durum işleme içerir.  
-  
- WinINet hakkında ek bilgi için bkz: [Win32 Internet Uzantıları (WinINet)](../mfc/win32-internet-extensions-wininet.md).  
-  
-##  <a name="_core_create_a_very_simple_browser"></a> Çok basit bir tarayıcı oluşturma  
- [!code-cpp[NVC_MFCWinInet#1](../mfc/codesnippet/cpp/wininet-basics_1.cpp)]  
-  
-##  <a name="_core_download_a_web_page"></a> Bir Web sayfası karşıdan yükle  
- [!code-cpp[NVC_MFCWinInet#2](../mfc/codesnippet/cpp/wininet-basics_2.cpp)]  
-  
-##  <a name="_core_ftp_a_file"></a> FTP dosya  
- [!code-cpp[NVC_MFCWinInet#3](../mfc/codesnippet/cpp/wininet-basics_3.cpp)]  
-  
-##  <a name="_core_retrieve_a_gopher_directory"></a> Gopher dizini alma  
- [!code-cpp[NVC_MFCWinInet#4](../mfc/codesnippet/cpp/wininet-basics_4.cpp)]  
-  
-## <a name="use-onstatuscallback"></a>OnStatusCallback kullanın  
- WinINet sınıfları kullanırken kullanabileceğiniz [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) uygulamanızın üyesi [CInternetSession](../mfc/reference/cinternetsession-class.md) durum bilgilerini almak için nesne. Kendi türetirseniz `CInternetSession` nesne, geçersiz kılma `OnStatusCallback`ve durum geri çağırmalar etkinleştirmek MFC çağıracaktır, `OnStatusCallback` tüm etkinliklerin ilerleme bilgiler bu Internet oturumunda işlevi.  
-  
- Tek bir oturumla (hangi kendi ömürleri boyunca birçok farklı farklı işlemler gerçekleştirebilir) birkaç bağlantıları desteklemiyor olabilir çünkü `OnStatusCallback` belirli bağlantı veya işlem ile her bir durum değişikliği tanımlamak için bir mekanizma gerekir. Bu mekanizma WinINet destek sınıflardaki üye işlevleri çoğunu verilen bağlam kimliği parametresi tarafından sağlanır. Bu parametre her zaman türünde **DWORD** ve her zaman adlı *dwContext*.  
-  
- Belirli bir Internet nesnesine atanmış içerik yalnızca nesne neden olan etkinliği tanımlamak için kullanılan `OnStatusCallback` üyesi `CInternetSession` nesnesi. Çağrı `OnStatusCallback` birkaç parametre; aldığında bu parametreler, uygulamanızın hangi işlem ve bağlantısı için hangi ilerleme yapılmış bildirmek için birlikte çalışır.  
-  
- Oluştururken bir `CInternetSession` nesnesi belirtebilirsiniz bir *dwContext* Oluşturucusu parametresi. `CInternetSession` kendisini bağlam Kimliğini kullanmaz; Bunun yerine, içerik kimliği herhangi açın geçirir **InternetConnection**-türetilmiş açıkça bir bağlam kimliği kendi almadım nesneleri. Buna açın, bu `CInternetConnection` nesneleri boyunca context ID geçecek `CInternetFile` farklı bir bağlam kimliği açıkça belirtmezseniz oluşturdukları nesneleri Diğer taraftan, kendi özel bağlamı kimliği, nesne ve mevcut herhangi bir iş, içerik kimliği ile ilişkilendirilecek belirtirseniz Hangi durum bilgilerini size verilen tanımlamak için bağlam kimlikleri kullanabilirsiniz, `OnStatusCallback` işlevi.  
-  
-##  <a name="_core_display_progress_information_while_transferring_files"></a> Dosyaları aktarma sırasında ilerleme durumu bilgilerini görüntüleme  
- Bir dosyayı okumak için bir FTP sunucusu ile bir bağlantı oluşturur ve ayrıca bir Web sayfası almak için bir HTTP sunucusuna bağlanan bir uygulama yazıyorsanız, örneğin, gerekir bir `CInternetSession` nesnesi, iki `CInternetConnection` nesneleri (biri olacak bir `CFtpSession` ve diğer olacaktır bir `CHttpSession`) ve iki `CInternetFile` nesneleri (her bağlantı için bir tane). Varsayılan değerleri kullandıysanız *dwContext* parametreleri, değil olacaktır ayırt mümkün `OnStatusCallback` FTP bağlantısı ve için ilerlemeyi göstermek çağrılarını ilerlemeyi göstermek çağrıları HTTP bağlantısı. Belirtirseniz bir *dwContext* daha sonra için de test edebilirsiniz kimliği `OnStatusCallback`, geri çağırma işlemi oluşturulan bilirsiniz.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC Internet Programlama temelleri](../mfc/mfc-internet-programming-basics.md)   
- [Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)
+
+WinINet indirmek ve uygulamanız içinde dosyaları karşıya yükleme için FTP desteği eklemek için kullanabilirsiniz. Geçersiz kılabilirsiniz [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) ve *dwContext* arayın ve dosyaları indirme ilerleme durumu bilgileri kullanıcılara sunmak için parametre.
+
+Bu makalede aşağıdaki konuları içerir:
+
+- [Çok basit bir tarayıcı oluşturma](#_core_create_a_very_simple_browser)
+
+- [Bir Web sayfası indirin](#_core_download_a_web_page)
+
+- [FTP bir dosya](#_core_ftp_a_file)
+
+- [Bir Gopher dizine alınamıyor](#_core_retrieve_a_gopher_directory)
+
+- [Dosyaları aktarma sırasında ilerleme bilgisini görüntülemek](#_core_display_progress_information_while_transferring_files)
+
+Aşağıdaki kod alıntıları, basit bir tarayıcı oluşturmak, bir Web sayfası, FTP bir dosya indirin ve bir gopher dosyayı aramak nasıl ekleyebileceğiniz gösterilmektedir. Tam örnekler değildir ve tüm özel durum işlemeyi içerir.
+
+WinINet hakkında ek bilgi için bkz. [Win32 Internet Uzantıları (WinINet)](../mfc/win32-internet-extensions-wininet.md).
+
+##  <a name="_core_create_a_very_simple_browser"></a> Çok basit bir tarayıcı oluşturma
+
+[!code-cpp[NVC_MFCWinInet#1](../mfc/codesnippet/cpp/wininet-basics_1.cpp)]
+
+##  <a name="_core_download_a_web_page"></a> Bir Web sayfası indirin
+
+[!code-cpp[NVC_MFCWinInet#2](../mfc/codesnippet/cpp/wininet-basics_2.cpp)]
+
+##  <a name="_core_ftp_a_file"></a> FTP bir dosya
+
+[!code-cpp[NVC_MFCWinInet#3](../mfc/codesnippet/cpp/wininet-basics_3.cpp)]
+
+##  <a name="_core_retrieve_a_gopher_directory"></a> Bir Gopher dizine alınamıyor
+
+[!code-cpp[NVC_MFCWinInet#4](../mfc/codesnippet/cpp/wininet-basics_4.cpp)]
+
+## <a name="use-onstatuscallback"></a>OnStatusCallback kullanın
+
+WinINet sınıfları kullanırken kullanabileceğiniz [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) uygulamanızın üyesi [Cınternetsession](../mfc/reference/cinternetsession-class.md) durum bilgilerini almak için nesne. Kendi türetirseniz `CInternetSession` nesne, geçersiz kılma `OnStatusCallback`ve durumu geri çağırmalar etkinleştirme MFC çağırır, `OnStatusCallback` Internet oturumu hakkında tüm etkinliklerin ilerleme bilgisini işleviyle.
+
+Tek bir oturumda (Bu, kendi ömrü boyunca birçok farklı farklı işlemler gerçekleştirebilir) birkaç bağlantılarını desteklemiyor olabilir çünkü `OnStatusCallback` belirli bir bağlantı veya işlem ile her bir durum değişikliği tanımlamak için bir mekanizma gerekir. Bu mekanizma, çoğu WinINet destek sınıflardaki üye işlevleri belirtilen bağlam kimliği parametresi tarafından sağlanır. Bu parametre her zaman türünde **DWORD** ve her zaman adlı *dwContext*.
+
+Belirli bir Internet nesnesine atanmış içerik yalnızca etkinlik nesnesi neden olur tanımlamak için kullanılan `OnStatusCallback` üyesi `CInternetSession` nesne. Çağrı `OnStatusCallback` ; birkaç parametre alır. Bu parametre hangi işlem ve bağlantısı için hangi ilerleme yapıldı, uygulamaya bildirmek için birlikte çalışır.
+
+Oluştururken bir `CInternetSession` belirtebileceğiniz nesnesi bir *dwContext* oluşturucusuna parametre. `CInternetSession` kendi bağlam Kimliğini kullanmaz; Bunun yerine, bağlam Kimliğini herhangi açın arabimini **InternetConnection**-türetilmiş açıkça bir bağlam kimliği, kendi elde etmezsiniz nesneleri. Buna karşılık, bu `CInternetConnection` nesneleri boyunca bağlam Kimliğine geçecek `CInternetFile` açıkça farklı bir bağlam kimliği belirtmezseniz, oluşturdukları nesneleri Öte yandan, kendinize ait bir belirli bir bağlam kimliği, nesne ve mevcut herhangi bir iş, içerik kimliği ile ilişkilendirilecek belirtirseniz Bağlam kimlikleri hangi durum bilgilerini size verilen tanımlamak için kullanabileceğiniz, `OnStatusCallback` işlevi.
+
+##  <a name="_core_display_progress_information_while_transferring_files"></a> Dosyaları aktarma sırasında ilerleme bilgisini görüntülemek
+
+Örneğin, bir dosyayı okumak için bir FTP sunucusuna bir bağlantı oluşturur ve ayrıca bir Web sayfası almak için bir HTTP sunucusuna bağlanan bir uygulama yazıyorsanız, sahip olacaksınız bir `CInternetSession` nesnesi, iki `CInternetConnection` nesneleri (biri olacak bir `CFtpSession` ve diğer olacaktır bir `CHttpSession`) ve iki `CInternetFile` nesneleri (her bağlantı için bir tane). Varsayılan değerleri kullandıysanız *dwContext* parametreleri olmayan okunup arasında ayrım yapmak mümkün `OnStatusCallback` FTP bağlantı ve ilerleme durumunu gösteren etkinleştirmeleri için ilerlemeyi göstermek etkinleştirmeleri HTTP bağlantısı. Belirtirseniz bir *dwContext* , daha sonra için test edebilirsiniz kimliği `OnStatusCallback`, geri çağırma işlemi oluşturulan öğrenmiş olacaksınız.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)<br/>
+[Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)
 

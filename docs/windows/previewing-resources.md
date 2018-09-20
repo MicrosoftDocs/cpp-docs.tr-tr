@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 80d4256057cb268baf2c8750f6d781e7d7aba4db
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: bd5e273a07ed09f54b84d064011874533b55fb88
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314307"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46445834"
 ---
 # <a name="previewing-resources"></a>Kaynakları Önizleme
 
@@ -68,5 +68,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Nasıl yapılır: Proje Dışındaki Kaynak Betik Dosyasını Açma (Tek Başına)](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)  
+[Nasıl yapılır: Proje Dışındaki Kaynak Betik Dosyasını Açma (Tek Başına)](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)<br/>
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)

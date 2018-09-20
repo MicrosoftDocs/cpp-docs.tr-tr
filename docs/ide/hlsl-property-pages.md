@@ -14,31 +14,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86bbd23f1c9fcfcc0a19d7a2c1b66f3500d84361
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 81d101df6c533d7111a8735809bd56535ad98e17
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33323137"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427231"
 ---
 # <a name="hlsl-property-pages"></a>HLSL Özellik Sayfaları
-HLSL derleyici (fxc.exe) özellik sayfaları dosyaları yerleşik tek tek nasıl HLSL gölgelendirici yapılandırmak için kullanabilirsiniz. Özellikler üç kategoriye ayrılır:  
-  
--   [HLSL Özellik Sayfaları: Genel](../ide/hlsl-property-pages-general.md)  
-  
-     HLSL derleyici yaygın olarak kullanılan seçeneklerini belirtmek için özellikleri sağlar.  
-  
--   [HLSL Özellik Sayfaları: Gelişmiş](../ide/hlsl-property-pages-advanced.md)  
-  
-     HLSL derleyici ek seçeneklerini belirtmek için özellikleri sağlar.  
-  
--   [HLSL Özellik Sayfaları: Çıktı Dosyaları](../ide/hlsl-property-pages-output-files.md)  
-  
-     Dosyaları çıktı HLSL derleyici tarafından nasıl belirtmek için özellikleri sağlar.  
-  
- Kullanarak HLSL derleyici komut satırı bağımsız değişkenleri belirtebilirsiniz **ek seçenekler** özelliği **komut satırı** özellik sayfası; bu diğer kullanılarak yapılandırılamaz bağımsız değişkenler içerir HLSL özellik sayfaları özellikleri. HLSL derleyici hakkında daha fazla bilgi için bkz: [etkisi derleyici aracı](http://go.microsoft.com/fwlink/p/?LinkID=258285&clcid=0x409)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özellik sayfaları](../ide/property-pages-visual-cpp.md)   
- [Komut satırı özellik sayfaları](../ide/command-line-property-pages.md)   
- [Gölgelendiriciler derleme](http://go.microsoft.com/fwlink/p/?LinkID=258284&clcid=0x409)
+
+HLSL derleyicisi (fxc.exe) özellik sayfaları, oluşturulmuş dosyalarının nasıl bireysel HLSL gölgelendirici yapılandırmak için kullanabilirsiniz. Özellikleri üç kategoriye ayrılır:
+
+- [HLSL Özellik Sayfaları: Genel](../ide/hlsl-property-pages-general.md)
+
+   Sık kullanılan HLSL derleyici seçeneklerini belirtmek için özellikleri sağlar.
+
+- [HLSL Özellik Sayfaları: Gelişmiş](../ide/hlsl-property-pages-advanced.md)
+
+   HLSL derleyicisi için ek seçenekleri belirlemek için özellikleri sağlar.
+
+- [HLSL Özellik Sayfaları: Çıktı Dosyaları](../ide/hlsl-property-pages-output-files.md)
+
+   Dosyaları çıkış HLSL derleyici tarafından nasıl belirtmek için özellikleri sağlar.
+
+HLSL derleyici komut satırı bağımsız değişkenleri kullanarak belirtebilirsiniz **ek seçenekler** özelliği **komut satırı** özellik sayfası; bu, diğer kullanılarak yapılandırılamaz bağımsız değişkenler içerir HLSL özellik sayfaları özellikleri. HLSL derleyici hakkında daha fazla bilgi için bkz. [etkisi derleyici aracı](http://go.microsoft.com/fwlink/p/?LinkID=258285&clcid=0x409)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Özellik Sayfaları](../ide/property-pages-visual-cpp.md)<br>
+[Komut Satırı özellik sayfaları](../ide/command-line-property-pages.md)<br>
+[Gölgelendirici derleme](http://go.microsoft.com/fwlink/p/?LinkID=258284&clcid=0x409)

@@ -18,18 +18,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c4bc280c57998b23082f11f4ebe42b660177d3c
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 42526eea184cb4f28d5214fe0c56281ac6da9d6c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929627"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46426113"
 ---
 # <a name="initializing-the-dialog-box"></a>İletişim Kutusunu Başlatma
-Sonra iletişim kutusunu ve tüm alt denetimleri oluşturulur ancak hemen önce iletişim kutusu (her iki türdeki) iletişim nesnesi 's ekranda [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) üye işlevi çağrılır. Modal bir iletişim kutusu için bu sistemdeki `DoModal` çağırın. Kalıcı olmayan iletişim kutusu için `OnInitDialog` aldığında çağrılan `Create` olarak adlandırılır. Genellikle geçersiz kılma `OnInitDialog` düzenleme kutusu ilk metnin ayarlama gibi iletişim kutusunun denetimleri başlatılamadı. Çağırmalısınız `OnInitDialog` üye işlevi temel sınıfın `CDialog`, gelen, `OnInitDialog` geçersiz kılar.  
-  
- İletişim kutusunun arka plan rengini (ve uygulamanızdaki diğer tüm iletişim kutularını,) ayarlamak istiyorsanız, bkz: [iletişim kutusunun arka plan rengini ayarlama](../mfc/setting-the-dialog-boxs-background-color.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+
+Sonra iletişim kutusunu ve tüm alt denetimleri oluşturulur ancak yalnızca önce iletişim kutusu (ya da türünde) iletişim nesnesi 's ekranda [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) üye işlevi çağrılır. Kalıcı bir iletişim kutusu için bu sistemdeki `DoModal` çağırın. Kalıcı olmayan iletişim kutusu, `OnInitDialog` aldığında çağrılan `Create` çağrılır. Genellikle geçersiz kılma `OnInitDialog` ilk metin düzenleme kutusu ayarlama gibi iletişim kutusunun denetimleri başlatılamadı. Çağırmalısınız `OnInitDialog` temel sınıfının üye işlevinde `CDialog`, gelen, `OnInitDialog` geçersiz kılar.
+
+İletişim kutusunun arka plan rengini (ve, uygulamanızdaki tüm diğer iletişim kutuları) ayarlamak istiyorsanız, bkz. [iletişim kutusunun arka plan rengini ayarlama](../mfc/setting-the-dialog-boxs-background-color.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
 

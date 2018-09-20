@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76a29a7ae4734e5d1f1930d5309163d1e1519aa4
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: f195a553c29c8a1cd0ef57f82c9f57a1f3672048
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42466257"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405300"
 ---
 # <a name="pragma-directives-and-the-pragma-keyword"></a>Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü
 Pragma yönergeleri makine veya işletim özgü derleyici özelliklerini belirtir. **__Pragma** Microsoft derleyiciye özgü anahtar sözcüğü için kod pragma yönergelerini makro tanımları içinde size sağlar.  
@@ -117,6 +117,6 @@ return _hr; \
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[C/C++ önişlemci başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)   
-[C pragmaları](../c-language/c-pragmas.md)   
+[C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
+[C Pragmaları](../c-language/c-pragmas.md)<br/>
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)
