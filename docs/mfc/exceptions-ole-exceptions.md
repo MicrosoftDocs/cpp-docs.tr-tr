@@ -18,38 +18,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 991848e9b5b78ad960fb8ed0bdf09dd56db47e2c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6013caa79e21a305ba5ff8ad6266e960bb21504a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345547"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46395251"
 ---
 # <a name="exceptions-ole-exceptions"></a>Özel durumlar: OLE Özel Durumları
-OLE özel durumları işlemek için tesis ve teknikleri diğer özel durumları işlemek için aynıdır. Özel durum işleme hakkında daha fazla bilgi için bkz: [C++ özel durum işleme](../cpp/cpp-exception-handling.md).  
-  
- Soyut taban sınıfından türetilmiş tüm özel durum nesneleri `CException`. MFC OLE özel durumları işlemek için iki sınıfı sağlar:  
-  
--   [COleException](../mfc/reference/coleexception-class.md) genel OLE özel durumları işlemek için.  
-  
--   [COleDispatchException](../mfc/reference/coledispatchexception-class.md) (Otomasyonu) özel durumlar oluşturma ve OLE işleme gönderme için.  
-  
- Sağlarlar ve kullanıldıkları bilgi miktarını iki bu sınıflar arasındaki farktır. `COleException` özel durum OLE durum kodunu içeren bir genel veri üyesi yok. `COleDispatchException` Aşağıdakiler de dahil olmak üzere daha fazla bilgi sağlar:  
-  
--   Bir uygulamaya özgü hata kodu  
-  
--   "Disk dolu" gibi bir hata açıklaması  
-  
--   Uygulamanızın kullanıcı için ek bilgi sağlamak için kullanabileceğiniz bir Yardım bağlamı  
-  
--   Uygulamanızın Yardım dosyasının adı  
-  
--   Özel durum oluşturdu uygulamanın adı  
-  
- `COleDispatchException` Daha fazla bilgi sunar, böylece ürünler gibi Microsoft Visual Basic ile birlikte kullanılabilir. Sözlü hata açıklaması, bir ileti kutusu veya diğer bildirim kullanılabilir; Yardım bilgileri, bir özel duruma neden olan koşulları yanıt kullanıcının yardımcı olmak için kullanılabilir.  
-  
- İki genel işlevler karşılık gelen iki OLE özel durum sınıfları: [AfxThrowOleException](../mfc/reference/exception-processing.md#afxthrowoleexception) ve [AfxThrowOleDispatchException](../mfc/reference/exception-processing.md#afxthrowoledispatchexception). Genel OLE özel durumları ve OLE gönderme özel durumları, sırasıyla throw için bunları kullanın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
+
+Teknikleri ve özellikleri OLE özel durumları işleme için bu diğer özel durumları işlemek için aynıdır. Özel durum işleme hakkında daha fazla bilgi için bkz [C++ özel durum işleme](../cpp/cpp-exception-handling.md).
+
+Tüm özel durum nesneleri soyut taban sınıfından türetilen `CException`. MFC, OLE özel durumları işlemek için iki sınıf sağlar:
+
+- [COleException](../mfc/reference/coleexception-class.md) genel OLE özel durumları işlemek için.
+
+- [COleDispatchException](../mfc/reference/coledispatchexception-class.md) (Otomasyon) özel durumlar oluşturma ve işleme OLE gönderme için.
+
+Bu iki sınıf arasındaki farktır kullanıldıkları ve sağladıkları bilgi miktarı. `COleException` özel durum için OLE durum kodu içeren genel veri üyesine sahip. `COleDispatchException` Aşağıdakiler dahil olmak üzere daha fazla bilgi sağlar:
+
+- Bir uygulamaya özgü hata kodu
+
+- "Disk dolu" gibi bir hata açıklaması
+
+- Uygulamanızın kullanıcı için ek bilgi sağlamak için kullanabileceğiniz bir Yardım içeriği
+
+- Uygulamanızın Yardım dosyasının adı
+
+- Özel durumu oluşturan uygulamanın adı
+
+`COleDispatchException` Daha fazla bilgi sağlar, böylece ürünler gibi Microsoft Visual Basic ile kullanılabilir. Sözlü hata açıklamasını, bir ileti kutusu veya diğer bildirim kullanılabilir; Yardım bilgileri, özel duruma neden olan koşulları için yanıt kullanıcının yardımcı olmak için kullanılabilir.
+
+İki genel işlevleri, iki OLE özel durum sınıfları karşılık gelir: [AfxThrowOleException](../mfc/reference/exception-processing.md#afxthrowoleexception) ve [AfxThrowOleDispatchException](../mfc/reference/exception-processing.md#afxthrowoledispatchexception). Genel OLE özel durumları ve OLE gönderme özel durumları, sırasıyla throw için bunları kullanın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
 

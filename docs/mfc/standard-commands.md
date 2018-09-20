@@ -25,44 +25,46 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 943d1bf01890696466638eca3c73839297807fd2
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: bd26246299f174281ba664875ec0c7d3a2de149d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36953128"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46389882"
 ---
 # <a name="standard-commands"></a>Standart Komutlar
-Framework birçok standart komut iletileri tanımlar. Bu komutlar için kimlikleri genellikle form alın:  
-  
- **ID_** *kaynak*_*öğesi*  
-  
- Burada *kaynak* genellikle bir menü adıdır ve *öğesi* menü öğesi değil. Örneğin, komut dosyası menüsünde Yeni komutu ıd_fıle_new kimliğidir. Standart komut kimlikleri belgelere kalın yazıyla gösterilir. Programcı tanımlı kimlikler çevresindeki metni farklı bir yazı tipi gösterilir.  
-  
- Desteklenen en önemli komutları bazılarının bir listesi verilmiştir:  
-  
- *Dosya menü komutları*  
- Yeni, açın, Farklı Kaydet, sayfa yapısı, yazıcı ayarları, yazdırma, Baskı Önizleme, çıkış ve en son kullanılan dosyaları kaydetme, kapatın.  
-  
- *Menü komutlarını Düzenle*  
- Temizleyin, Temizle tüm, kopyalama, kesme, bulma, yapıştırma tekrarlayın, Değiştir, Tümünü Seç, geri alma ve yineleme.  
-  
- *Görünüm menü komutları*  
- Araç çubuğu ve durum çubuğu.  
-  
- *Pencere menü komutları*  
- Yeni, düzenleme, basamaklı, yatay döşeme, dikey döşeme ve bölme.  
-  
- *Yardım menü komutları*  
- Dizin, Yardım, kullanma ve hakkında bilgi.  
-  
- *OLE komutları (Düzen menüsü)*  
- Yeni bir nesne, düzenleme bağlantıları, Bağlantı Yapıştır, Özel Yapıştır eklemek ve *typename* nesne (fiil komutları).  
-  
- Çerçevesi için bu komutları değişen düzeyde destek sağlar. Başkalarının kapsamlı uygulamaları ile destekleniyorsa bazı komutlar yalnızca tanımlanmış komut kimlikleri desteklenir. Örneğin, framework Aç komutu Dosya menüsünde yeni bir belge nesnesi oluşturma, açık bir iletişim kutusu, görüntüleme ve açma ve dosya okuyarak uygular. Buna karşılık, komutları Düzen menüsünden kendiniz uygulamanız gereken, verilerin niteliğine ıd_edıt_copy gibi komutlar bağlı olduğundan kopyalama.  
-  
- Desteklenen komutları hakkında daha fazla bilgi ve sağlanan uygulama düzeyi için bkz: [Teknik Not 22](../mfc/tn022-standard-commands-implementation.md). Standart komutlar AFXRES dosyasında tanımlanır. H.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kullanıcı Arabirimi Nesneleri ve Komut Kimlikleri](../mfc/user-interface-objects-and-command-ids.md)
+
+Framework standart komut ileti sayısını tanımlar. Bu komutlar için kimlikleri genellikle biçiminde:
+
+**ID_** *kaynak*_*öğesi*
+
+Burada *kaynak* genellikle bir menü adıdır ve *öğesi* menü öğesidir. Örneğin, Dosya menüsündeki yeni komutu için komut kimliği ıd_fıle_new olur. Standart komut kimlikleri belgeleri kalın yazıyla gösterilir. Programcı tanımlı kimlikler çevreleyen metni farklı bir yazı tipi gösterilir.
+
+Desteklenen en önemli komutların bir listesi verilmiştir:
+
+*Dosya menü komutları*<br/>
+Yeni, açın, Farklı Kaydet, sayfa yapısı, Yazdırma Kurulumu, yazdırma, Baskı Önizleme, çıkış ve en son kullanılan dosyaları kaydedin, kapatın.
+
+*Menü komutlarını Düzenle*<br/>
+Temizleyin, Clear tüm, kopyalama, kesme, bulma, yapıştırma, tekrarlayın, Değiştir, Tümünü Seç, Geri Al ve Yinele.
+
+*Görünüm Menü Komutları*<br/>
+Araç çubuğu ve durum çubuğu.
+
+*Pencere Menü Komutları*<br/>
+Yeni, düzenleme, basamaklı, Yatay Döşe, Dikey Döşe ve bölme.
+
+*Yardım Menü Komutları*<br/>
+Dizin, Yardım, kullanma ve ilgili.
+
+*OLE komutları (Düzenle menüsü)*<br/>
+Yeni nesne, Edit Links, Yapıştır, Özel Yapıştır eklemek ve *typename* nesnesi (komut Fiili).
+
+Framework, bu komutları için farklı düzeylerde destek sağlar. Başkalarının kapsamlı uygulamaları ile desteklendiğinden, bazı komutlar tanımlı komut kimlikleri yalnızca desteklenir. Örneğin, framework Aç komutunu Dosya menüsünden Yeni bir belge nesnesi oluşturma, açık bir iletişim kutusu, görüntüleme ve açma ve dosya okunurken uygular. Buna karşılık, komutları Düzen menüsünden kendiniz uygulamanız gereken, verilerin niteliğine ıd_edıt_copy gibi komutlar bağlı olduğundan kopyalama.
+
+Desteklenen komutlar hakkında daha fazla bilgi ve sağlanan uygulama düzeyi için bkz: [Teknik Not 22](../mfc/tn022-standard-commands-implementation.md). Standart komutlar AFXRES dosyasında tanımlanır. H
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kullanıcı Arabirimi Nesneleri ve Komut Kimlikleri](../mfc/user-interface-objects-and-command-ids.md)
 

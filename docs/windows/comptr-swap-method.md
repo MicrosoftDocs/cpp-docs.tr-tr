@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b983d30a06a872ae20afa130c3a42ef0df1b0846
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ae79286adfd3885aba3e80344251c2d76ef63c61
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601392"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385475"
 ---
 # <a name="comptrswap-method"></a>ComPtr::Swap Yöntemi
 
@@ -42,7 +42,7 @@ void Swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*r*  
+*r*<br/>
 A **ComPtr**.
 
 ## <a name="requirements"></a>Gereksinimler

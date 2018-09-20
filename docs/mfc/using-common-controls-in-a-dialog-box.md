@@ -16,57 +16,60 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c848cfa74363d871720f9ca269b114687aad9ecf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b8d3db1d8c19b68adb8cec53984e0dfe5a189651
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382697"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46389875"
 ---
 # <a name="using-common-controls-in-a-dialog-box"></a>İletişim Kutusunda Ortak Denetimleri Kullanma
-Windows ortak denetimleri kullanılabilir [iletişim kutuları](../mfc/dialog-boxes.md), form görünümleri, kayıt görünümleri ve bir iletişim şablonunu temel alan başka bir pencere. Aşağıdaki yordam, bazı küçük değişikliklerle de formlar için çalışır.  
-  
-## <a name="procedures"></a>Yordamlar  
-  
-#### <a name="to-use-a-common-control-in-a-dialog-box"></a>Bir iletişim kutusunda bir ortak denetimi kullanmak için  
-  
-1.  İletişim şablonu denetimi yerleştirin [iletişim kutusu Düzenleyicisi'ni kullanarak](../mfc/using-the-dialog-editor-to-add-controls.md).  
-  
-2.  İletişim kutusu sınıfı denetimini temsil eden bir üye değişkeni ekleyin. İçinde **üye değişkeni ekleme** iletişim kutusu, onay **denetim değişkeni** ve emin **denetim** için seçilen **kategori**.  
-  
-3.  Bu yaygın bir denetim programı için giriş sağlama, ek üyesi bildirin olanlar işlemek için iletişim kutusu sınıfında variable(s) giriş değerleri.  
-  
+
+Windows ortak denetimleri kullanılabilir [iletişim kutuları](../mfc/dialog-boxes.md), görünümleri, kayıt görünümleri ve bir iletişim şablonunu temel alarak başka bir pencere oluşturur. Aşağıdaki yordam, bazı küçük değişikliklerle forms de çalışır.
+
+## <a name="procedures"></a>Yordamlar
+
+#### <a name="to-use-a-common-control-in-a-dialog-box"></a>İletişim kutusunda bir ortak denetimi kullanmak için
+
+1. Bir iletişim şablonunu denetimi yerleştirin [iletişim kutusu düzenleyicisini kullanma](../mfc/using-the-dialog-editor-to-add-controls.md).
+
+1. İletişim kutusu sınıfı için denetimini temsil eden bir üye değişkeni ekleyin. İçinde **üye değişkeni ekleme** iletişim kutusu, onay **denetim değişkeni** olduğundan emin olun **denetimi** seçildiğini **kategori**.
+
+1. Bu yaygın bir denetim girişi programa sağlıyorsa ek üye bildirmek variable(s) olanlar işlemek için iletişim kutusu sınıfı içinde giriş değerleri.
+
     > [!NOTE]
-    >  Sınıf Görünümü'nde bağlam menüsünü kullanarak bu üye değişkenleri ekleyebilirsiniz (bkz [üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md)).  
-  
-4.  İçinde [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) iletişim sınıfınızı için yaygın bir denetim için ilk koşulları ayarlayın. Üye işlevleri, önceki adımda oluşturduğunuz üye değişkeni kullanarak, ilk değer ve diğer ayarları ayarlamak için kullanın. Ayrıntılar için denetimleri aşağıdaki açıklamalarını ayarlarını bakın.  
-  
-     Aynı zamanda [iletişim kutusu veri değişimi](../mfc/dialog-data-exchange-and-validation.md) bir iletişim kutusu denetimleri başlatılamadı (DDX).  
-  
-5.  İletişim kutusu denetimleri için işleyiciler üye değişkeni denetimi yönetmek için kullanın. Ayrıntılar için denetimleri aşağıdaki açıklamalarını yöntemlere bakın.  
-  
+    >  Sınıf Görünümü'nde bağlam menüsünü kullanarak bu üye değişkenleri ekleyebilirsiniz (bkz [bir üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md)).
+
+1. İçinde [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) iletişim sınıfınızı için ortak denetimi için ilk koşulları ayarlayın. Üye işlevleri, önceki adımda oluşturulan üye değişkeni kullanarak, ilk değer ve diğer ayarları ayarlamak için kullanın. Denetimleri ayrıntıları için aşağıdaki açıklamaları ayarlarına bakın.
+
+     Ayrıca [iletişim kutusu veri değişimi](../mfc/dialog-data-exchange-and-validation.md) (DDX) iletişim kutusunda denetimleri başlatılamadı.
+
+1. İletişim kutusundaki denetimler için işleyiciler içinde üye değişkeni, denetimi işlemek için kullanın. Ayrıntılar için denetimleri aşağıdaki açıklamaları yöntemlerde bakın.
+
     > [!NOTE]
-    >  İletişim kutusu yalnızca mevcut olduğu sürece üye değişkeni yer alır. İletişim kutusu kapatıldıktan sonra denetim için giriş değerleri sorgu mümkün olmaz. Bir ortak denetimi giriş değerleri çalışmak için geçersiz kılma `OnOK` iletişim sınıfınızda. Geçersiz kılma, denetim giriş değerleri için sorgu ve bu değerler iletişim sınıfının üye değişkenlerine depolayın.  
-  
+    >  İletişim kutusu yalnızca mevcut olduğu sürece bir üye değişkeni bulunur. İletişim kutusu kapatıldıktan sonra denetim için giriş değerlerini sorgulamak mümkün olmayacaktır. Bir ortak denetimi giriş değerlerini çalışmak için geçersiz kılma `OnOK` iletişim sınıfınızdaki. Geçersiz kılma, denetim için giriş değerlerini sorgulamak ve iletişim kutusu sınıfı üye değişkenlerinde bu değerleri depolamak.
+
     > [!NOTE]
-    >  İletişim kutusu veri değişimi, ayarlama veya bir iletişim kutusu denetimleri değerleri almak için de kullanabilirsiniz.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bazı ortak bir iletişim kutusu denetimlerine ekleme iletişim kutusu artık işlevi neden olur. Başvurmak [bir iletişim kutusu denetimlerine ekleme neden olan iletişim kutusu artık işleve](../windows/adding-controls-to-a-dialog-causes-the-dialog-to-no-longer-function.md) bu durum işleme hakkında daha fazla bilgi.  
-  
-## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz  
-  
--   [Denetimleri bir Ekle iletişim kutusu için el ile yerine ile iletişim kutusu Düzenleyicisi](../mfc/adding-controls-by-hand.md)  
-  
--   [My denetim standart Windows ortak denetimleri birinden türetilen](../mfc/deriving-controls-from-a-standard-control.md)  
-  
--   [Bir ortak denetimi alt pencere olarak kullanma](../mfc/using-a-common-control-as-a-child-window.md)  
-  
--   [Bir denetiminden bildirim iletilerini alma](../mfc/receiving-notification-from-common-controls.md)  
-  
--   [İletişim kutusu veri değişimi (DDX) kullanın](../mfc/dialog-data-exchange-and-validation.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri yapma ve kullanma](../mfc/making-and-using-controls.md)   
- [Denetimler](../mfc/controls-mfc.md)
+    >  İletişim kutusu veri değişimi, bir iletişim kutusu denetimleri değerleri almak veya ayarlamak için de kullanabilirsiniz.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bazı ortak bir iletişim kutusu denetimlerine ekleme iletişim kutusuna çalışmamasına neden olur. Başvurmak [bir iletişim kutusu denetimlerine ekleme iletişim kutusu artık işlev için neden](../windows/adding-controls-to-a-dialog-causes-the-dialog-to-no-longer-function.md) bu durum işleme hakkında daha fazla bilgi.
+
+## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz
+
+- [Denetimleri bir Ekle iletişim kutusu için el ile yerine ile iletişim kutusu Düzenleyicisi](../mfc/adding-controls-by-hand.md)
+
+- [My denetimi bir standart Windows ortak denetimleri noktasından türettikten](../mfc/deriving-controls-from-a-standard-control.md)
+
+- [Bir ortak denetimi alt pencere olarak kullanma](../mfc/using-a-common-control-as-a-child-window.md)
+
+- [Bir denetimi bildirim iletilerini alma](../mfc/receiving-notification-from-common-controls.md)
+
+- [İletişim kutusu veri değişimi (DDX) kullanın](../mfc/dialog-data-exchange-and-validation.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Denetimleri Yapma ve Kullanma](../mfc/making-and-using-controls.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

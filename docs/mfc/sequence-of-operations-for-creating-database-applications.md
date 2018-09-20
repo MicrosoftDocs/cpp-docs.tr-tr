@@ -17,33 +17,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cbe18e9733388cc6e43f6ca3de520596c713b783
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ef9c66324f886da27431a94a464554e2a8ddb00a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381335"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391586"
 ---
 # <a name="sequence-of-operations-for-creating-database-applications"></a>Veritabanı Uygulamaları Oluşturmak için İşlem Dizisi
-Aşağıdaki tabloda, rol ve framework'ün rol veritabanı uygulamaları yazma gösterir.  
-  
+
+Aşağıdaki tabloda, veritabanı uygulamaları yazılırken, rol ve framework'ün rol gösterir.
+
 > [!NOTE]
->  Visual C++ ortamı ve sihirbazları DAO (DAO sınıfları dahil edilmiştir ve bunları kullanmaya devam edebilirsiniz ancak) desteklemez. Microsoft, yeni MFC projeleri için ODBC kullanma önerir. Yalnızca var olan uygulamaları sürdürmek DAO kullanmanız gerekir.  
-  
-### <a name="creating-database-applications"></a>Veritabanı uygulamaları oluşturma  
-  
-|Görev|Bunu|Framework mu|  
-|----------|------------|------------------------|  
-|MFC ODBC veya DAO sınıfları kullanıp kullanmamaya karar verin.|ODBC yeni MFC projeleri için kullanın. DAO yalnızca var olan uygulamaları korumak için kullanın. Genel bilgi için bkz: [veri erişim programlama](../data/data-access-programming-mfc-atl.md).|Framework veritabanı erişimi destekleyen sınıflar sağlar.|  
-|Veritabanı seçenekleri ile iskelet uygulamanızı oluşturun.|MFC Uygulama Sihirbazı'nı çalıştırın. Veritabanı desteği sayfasındaki seçenekleri seçin. Kayıt görünümü oluşturan bir seçeneği seçerseniz, ayrıca belirtin:<br /><br /> -Veri kaynağı ve tablo adı veya adları<br />-Ad veya adlar sorgu.|MFC Uygulama Sihirbazı'nı dosyaları oluşturur ve gerekli içerip belirtir. Belirttiğiniz seçeneklere bağlı olarak, bir kayıt kümesi sınıfı dosyaları içerebilir.|  
-|Veritabanı form ya da formlar tasarlayın.|Kayıt görünümü sınıfları için iletişim kutusu şablon kaynakları denetimlere yerleştirmek için Visual C++ iletişim kutusu düzenleyicisi kullanın.|MFC Uygulama Sihirbazı'nı, doldurmak bir boş iletişim şablon kaynağı oluşturur.|  
-|Ek Kayıt görünümü ve kayıt kümesi sınıfları gerektiği şekilde oluşturun.|Sınıfları ve iletişim kutusu Düzenleyicisi'ni görünümleri tasarlama oluşturmak için sınıfı görünümünü kullanın.|Sınıf Görünümü yeni sınıflar için ek dosyalar oluşturur.|  
-|Kayıt kümesi nesneleri kodunuzda gerektiği şekilde oluşturun. Kayıtları işlemek için her kayıt kümesi kullanmak...|Kümeleriniz kaynağından türetilmiş sınıflar temel alan [CRecordset](../mfc/reference/crecordset-class.md) sihirbazlarıyla.|ODBC kayıt alanı değişimi (RFX) veritabanı kümenizin alan veri üyeleri arasında veri değişimi için kullanır. Kayıt görünümü kullanıyorsanız, iletişim kutusu veri değişimi (DDX) kayıt kümesi ve kayıt görünümü denetimlerini arasında veri değiş tokuş eder.|  
-|.. veya açık bir oluşturma [CDatabase](../mfc/reference/cdatabase-class.md) kodunuzda açmak istediğiniz her veritabanı için.|Kayıt kümesi nesnelerinizi veritabanı nesneleri üzerinde temel alır.|Veritabanı nesnesinin veri kaynağı için bir arabirim sağlar.|  
-|Veri sütunlarını dinamik olarak kümenize bağlayın.|ODBC, kodu bağlama yönetmek için türetilmiş kayıt kümesi sınıfına ekleyin. Makalesine bakın [kayıt kümesi: dinamik olarak bağlama veri sütunları (ODBC)](../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).||  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework'te derleme](../mfc/building-on-the-framework.md)   
- [MFC uygulamaları oluşturmak için işlem dizisi](../mfc/sequence-of-operations-for-building-mfc-applications.md)   
- [OLE uygulamaları oluşturmak için işlem dizisi](../mfc/sequence-of-operations-for-creating-ole-applications.md)   
- [ActiveX Denetimleri Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-activex-controls.md)
+>  Sihirbazlar ve Visual C++ ortamına DAO (DAO sınıflarına eklenmiştir ve bunları kullanmaya devam edebilirsiniz ancak) desteklemez. Microsoft, yeni MFC projeleri için ODBC kullanma önerir. Yalnızca var olan uygulamaları sürdürmek DAO kullanmanız gerekir.
+
+### <a name="creating-database-applications"></a>Veritabanı uygulamaları oluşturma
+
+|Görev|Bunu|Framework yok|
+|----------|------------|------------------------|
+|DAO ya da MFC ODBC sınıfları kullanıp kullanmamaya karar verin.|ODBC yeni MFC projeleri için kullanın. DAO yalnızca mevcut uygulamaları korumak için kullanın. Genel bilgi için bkz [veri erişim programlama](../data/data-access-programming-mfc-atl.md).|Framework veritabanı erişimi destekleyen sınıflar sağlar.|
+|Veritabanı seçenekleri ile iskelet uygulamanızı oluşturun.|MFC Uygulama Sihirbazı'nı çalıştırın. Veritabanı destek sayfasında seçenekleri belirleyin. Kayıt görünümü oluşturan bir seçeneği tercih ederseniz, ayrıca belirtin:<br /><br /> -Veri kaynağı ve tablo adı veya adları<br />-Sorgu ad veya adlar.|MFC Uygulama Sihirbazı dosyaları oluşturur ve gerekli içerir belirtir. Belirlediğiniz seçeneklere bağlı olarak, bir kayıt kümesi sınıfı dosyaları dahil edebilirsiniz.|
+|Veritabanı formunu ya da formları tasarlayın.|Kayıt görünümü sınıfları için iletişim şablonu kaynaklarına denetimleri yerleştirmek için Visual C++ iletişim kutusu düzenleyicisi kullanın.|MFC Uygulama Sihirbazı, doldurmak bir boş iletişim şablon kaynağı oluşturur.|
+|Ek Kayıt görünümü ve kayıt kümesi sınıflar gerektiği şekilde oluşturun.|Sınıf Görünümü sınıfları ve iletişim kutusunda, görünüm tasarlamak üzere düzenleyici oluşturmak için kullanın.|Sınıf Görünümü, yeni sınıflar için ek dosyalar oluşturur.|
+|Kayıt kümesi nesneleri kodunuzda gerektiği gibi oluşturun. Kayıtları işlemek için her bir kayıt kümesi kullan...|Türetilen sınıflar kümeleriniz dayalı [CRecordset](../mfc/reference/crecordset-class.md) sihirbazları kullanarak.|ODBC kayıt alanı değişimi (RFX) veritabanı ve kümenizin alan veri üyeleri arasında veri alışverişi yapmak için kullanır. Kayıt görünümü kullanıyorsanız, kayıt ve kayıt görünümü denetimleri arasındaki veri iletişim kutusu veri değişimi (DDX) değiştirir.|
+|.. veya açık bir oluşturma [CDatabase](../mfc/reference/cdatabase-class.md) açmak istediğiniz her veritabanı için kodunuzda.|Kayıt kümesi nesnelerinizi veritabanı nesneleri üzerinde temel alır.|Veritabanı nesnesini, veri kaynağı için bir arabirim sağlar.|
+|Veri sütunlarını dinamik olarak kümenize bağlayın.|ODBC içinde kod bağlama yönetmek için türetilmiş bir kayıt kümesi sınıfına ekleyin. Makaleye göz atın [kayıt kümesi: dinamik olarak bağlama veri sütunları (ODBC)](../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).||
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Framework'te Derleme](../mfc/building-on-the-framework.md)<br/>
+[MFC Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-building-mfc-applications.md)<br/>
+[OLE Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-ole-applications.md)<br/>
+[ActiveX Denetimleri Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-activex-controls.md)

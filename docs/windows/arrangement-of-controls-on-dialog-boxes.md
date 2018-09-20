@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 46bc2d627c9efbb49227e17c809d188aa3a8b5fc
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 24c318f6028db1f2c64b2d2d334648fe4d47619f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315242"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390792"
 ---
 # <a name="arrangement-of-controls-on-dialog-box-ces"></a>İletişim kutusundaki denetimlerin kutu es (C++)
 
@@ -54,5 +54,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)  
+[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)

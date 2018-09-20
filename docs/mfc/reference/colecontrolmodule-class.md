@@ -19,44 +19,49 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 597639145385f4aabcba0e83fef855f7a0779f9b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8139f9d2249e2ed4293c5aad7c87f4f59142b393
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369745"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46389002"
 ---
 # <a name="colecontrolmodule-class"></a>COleControlModule sınıfı
-OLE denetim modülü nesnesi türetilen temel sınıf.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class COleControlModule : public CWinApp  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sınıf, denetim modülü başlatma için üye işlevleri sağlar. Microsoft Foundation sınıfları kullanan her bir OLE denetim modülü yalnızca türetilmiş bir nesne içerebilir `COleControlModule`. Diğer C++ genel nesneler oluşturulduğunda bu nesnesi oluşturulur. Türetilmiş bildirme `COleControlModule` genel düzeyde nesne.  
-  
- Kullanma hakkında daha fazla bilgi için `COleControlModule` sınıfı için bkz: [CWinApp](../../mfc/reference/cwinapp-class.md) sınıfı ve makale [ActiveX denetimlerini](../../mfc/mfc-activex-controls.md).  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- [CCmdTarget](../../mfc/reference/ccmdtarget-class.md)  
-  
- [CWinThread](../../mfc/reference/cwinthread-class.md)  
-  
- [CWinApp](../../mfc/reference/cwinapp-class.md)  
-  
- `COleControlModule`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxctl.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC örnek TESTHELP](../../visual-cpp-samples.md)   
- [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+
+Bir OLE denetim modülü nesnesi türettiğiniz taban sınıfı.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class COleControlModule : public CWinApp
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sınıf, denetim modülü başlatmak için üye işlevleri sağlar. Microsoft Foundation sınıfları kullanan her bir OLE denetim modülü yalnızca türetilen bir nesne içerebilir `COleControlModule`. Diğer C++ genel nesneler oluşturulduğunda bu nesne oluşturulur. Türetilmiş bildirmek `COleControlModule` genel düzeyde nesne.
+
+Kullanma hakkında daha fazla bilgi için `COleControlModule` sınıfı [CWinApp](../../mfc/reference/cwinapp-class.md) sınıfı ve makale [ActiveX denetimlerini](../../mfc/mfc-activex-controls.md).
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+
+[CWinThread](../../mfc/reference/cwinthread-class.md)
+
+[CWinApp](../../mfc/reference/cwinapp-class.md)
+
+`COleControlModule`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxctl.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC örnek TESTHELP](../../visual-cpp-samples.md)<br/>
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 
 
 

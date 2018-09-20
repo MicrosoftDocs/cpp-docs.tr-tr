@@ -16,41 +16,45 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de4a81d861bf72943a67356577da37c36df63f69
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: b02a2a4d660057ab83da39add7fd32bcff3e6d90
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695817"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392144"
 ---
 # <a name="ompdynamic"></a>OMP_DYNAMIC
-Çalışma zamanı OpenMP paralel bir bölgede iş parçacığı sayısını ayarlayabilirsiniz olup olmadığını belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-set OMP_DYNAMIC[=TRUE | =FALSE]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- `OMP_DYNAMIC` Ortam değişkeni geçersiz kılınmış tarafından [omp_set_dynamic](../../../parallel/openmp/reference/omp-set-dynamic.md) işlevi.  
-  
- Varsayılan değer OpenMP standart Visual C++ uygulamasında `OMP_DYNAMIC=FALSE`.  
-  
- Daha fazla bilgi için bkz: [4.3 omp_dynamıc](../../../parallel/openmp/4-3-omp-dynamic.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki komut kümelerini `OMP_DYNAMIC` true ortam değişkeni:  
-  
-```  
-set OMP_DYNAMIC=TRUE  
-```  
-  
- Aşağıdaki komut geçerli ayarını görüntüler `OMP_DYNAMIC` ortam değişkeni:  
-  
-```  
-set OMP_DYNAMIC  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Ortam Değişkenleri](../../../parallel/openmp/reference/openmp-environment-variables.md)
+
+Çalışma zamanı OpenMP bir paralel bölgenin içinde iş parçacığı sayısını ayarlayıp ayarlayamayacağını belirler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+set OMP_DYNAMIC[=TRUE | =FALSE]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+`OMP_DYNAMIC` Ortam değişkeni tarafından kılınabilir [omp_set_dynamic](../../../parallel/openmp/reference/omp-set-dynamic.md) işlevi.
+
+Varsayılan değer OpenMP standart Visual C++ uygulamasında `OMP_DYNAMIC=FALSE`.
+
+Daha fazla bilgi için [4.3 omp_dynamıc](../../../parallel/openmp/4-3-omp-dynamic.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki komut kümelerini `OMP_DYNAMIC` ortam değişkenini TRUE:
+
+```
+set OMP_DYNAMIC=TRUE
+```
+
+Aşağıdaki komut, geçerli ayarı görüntüler `OMP_DYNAMIC` ortam değişkeni:
+
+```
+set OMP_DYNAMIC
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Ortam Değişkenleri](../../../parallel/openmp/reference/openmp-environment-variables.md)

@@ -1,5 +1,5 @@
 ---
-title: Yöntem (Visual C++) ekleme | Microsoft Docs
+title: Yöntem ekleme (Visual C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,33 +15,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b247b0e21112d6a2be2384fafbf43fc295b22c71
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 1b0082ef7df5ddcc698741ebd4f3fb5455b6614d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33324440"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390714"
 ---
 # <a name="adding-a-method--visual-c"></a>Yöntem Ekleme (Visual C++)
-Kullanabileceğiniz [yöntem Ekleme Sihirbazı'nı](../ide/add-method-wizard.md) projenizdeki bir arabirim için bir yöntem eklemek için. Proje ile ilişkilendirilen bir sınıf içeriyorsa, sihirbazın sınıfı çok değiştirir.  
-  
-### <a name="to-add-a-method-to-your-object"></a>Bir yöntemi, nesne eklemek için  
-  
-1.  Sınıf Görünümü'nde yöntemi eklemek istediğiniz arabirimi görüntülemek için proje düğümünü genişletin.  
-  
-    > [!NOTE]
-    >  Proje öznitelikli sürece, bu, kitaplık düğümü altında bulunan dispinterfaces yöntemleri ekleyebilirsiniz.  
-  
-2.  Arabirim adına sağ tıklayın.  
-  
-3.  Kısayol menüsünde **Ekle**ve ardından **ekleme yöntemi**.  
-  
-4.  Yöntem Ekleme Sihirbazı'nda yöntemi oluşturmak için bilgileri sağlayın.  
-  
-5.  Bu yöntemde arabirimi tanımı dil ayarlarını belirtin [IDL öznitelikleri](../ide/idl-attributes-add-method-wizard.md) Sihirbazı sayfası.  
-  
-6.  Tıklatın **son** yöntemi eklemek için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [COM arabirimi oluşturma](../ide/creating-a-com-interface-visual-cpp.md)   
- [COM Arabirimini Düzenleme](../ide/editing-a-com-interface.md)
+
+Kullanabileceğiniz [yöntem Ekleme Sihirbazı'nı](../ide/add-method-wizard.md) projenize bir arabirimde bir yöntemi eklemek için. Proje ile ilişkilendirilen bir sınıf içeriyorsa, sihirbaz sınıfı çok değiştirir.
+
+### <a name="to-add-a-method-to-your-object"></a>Nesneniz için bir yöntem eklemek için
+
+1. Sınıf Görünümü'nde yöntem eklemek istediğiniz arabirim görüntülemesi için proje düğümünü genişletin.
+
+   > [!NOTE]
+   > Proje öznitelikli sürece, bu, kitaplık düğümü altında bulunan görüntü arabirimlerinde yöntemler ekleyebilirsiniz.
+
+1. Arabirim adına sağ tıklayın.
+
+1. Kısayol menüsünde **Ekle**ve ardından **Ekle yöntemi**.
+
+1. Yöntem Ekleme Sihirbazı'nda yöntemi oluşturmak için bilgileri sağlayın.
+
+1. Tüm Bu yöntemde için arabirim tanımlama dili ayarlarını belirtin [IDL öznitelikleri](../ide/idl-attributes-add-method-wizard.md) Sihirbazı sayfası.
+
+1. Tıklayın **son** yöntemi eklemek için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[COM arabirimi oluşturma](../ide/creating-a-com-interface-visual-cpp.md)<br>
+[COM Arabirimini Düzenleme](../ide/editing-a-com-interface.md)

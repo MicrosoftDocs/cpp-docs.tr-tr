@@ -17,31 +17,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0490c6383327531ff04ab3f484aeb4b085ef9106
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 86c0178f0ea3bdccf9bd467aa24edc016a767530
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349232"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46389115"
 ---
 # <a name="ole-mfc"></a>OLE (MFC)
-OLE işlevselliği programınızın uygulama Kullanıcı Arabiriminizin çeşitli şekillerde etkiler:  
-  
--   Görsel düzenleme (yerinde etkinleştirme) başka bir program kullanıcı arabiriminin programınızın windows görüntüler ve diğer program öğelerinden program menüleri değiştirir.  
-  
--   Sürükle ve bırak kullanıcıların nesneleri içinde ve arasında windows bile arasında ve programların sürükleyin olanak sağlar.  
-  
--   İzleyicileri görsel düzenleme sırasında nesnelerin durumuna görsel Yardım sağlamak ve sürükleyin ve bırakın.  
-  
- Daha fazla bilgi için bkz.:  
-  
--   [OLE ve MFC](../mfc/ole-in-mfc.md)  
-  
--   [Görsel düzenleme (etkinleştirme)](../mfc/activation-cpp.md)  
-  
--   [Sürükleme ve Bırakma](../mfc/drag-and-drop-ole.md)  
-  
--   [İzleyiciler](../mfc/trackers.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)
+
+Programınızda OLE işlevselliği uygulama, kullanıcı arabirimi farklı şekillerde etkiler:
+
+- Görsel düzenleme (yerinde etkinleştirme) başka bir program kullanıcı arabirimini görüntüler, programınızın windows ve diğer program öğeleri ile program menüleri değiştirir.
+
+- Sürükle ve bırak, kullanıcıların nesneleri içinde ve windows arasında bile programlar arasında sürükleyin sağlar.
+
+- İzleyicileri görsel düzenleme sırasında nesnelerin durumu için görsel ipuçlarını sağlama sürükleyin ve bırakın.
+
+Daha fazla bilgi için bkz.:
+
+- [OLE ve MFC](../mfc/ole-in-mfc.md)
+
+- [Görsel düzenleme (etkinleştirme)](../mfc/activation-cpp.md)
+
+- [Sürükleme ve Bırakma](../mfc/drag-and-drop-ole.md)
+
+- [İzleyiciler](../mfc/trackers.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)

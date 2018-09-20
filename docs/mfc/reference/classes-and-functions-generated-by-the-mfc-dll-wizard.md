@@ -19,24 +19,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd1b1d65148a951ba78e0408ab590a2c979648f7
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 76aa828727ccfcf93c7b9b0242e60b747c1873f8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339585"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390857"
 ---
 # <a name="classes-and-functions-generated-by-the-mfc-dll-wizard"></a>MFC DLL Sihirbazı Tarafından Üretilen Sınıfları ve İşlevler
-MFC DLL Sihirbazı'nın ürettiği kod oluşturmakta olduğunuz DLL ve seçtiğiniz seçenekler türüne bağlıdır. MFC DLL Sihirbazı, hem Normal MFC DLL'leri formlar için aynı kodu oluşturur.  
-  
-|DLL türü|Seçenek|Sınıflar|İşlevler|  
-|-----------------|------------|-------------|---------------|  
-|[Uzantı](../../build/extension-dlls-overview.md)|Yok.|Yok.|`DllMain`|  
-|[Normal](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Yok.|Türetilen uygulama sınıfı `CWinApp`|Yok.|  
-|[Normal](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Otomatikleştirme|Türetilen uygulama sınıfı `CWinApp`|`DllGetClassObjectDllCanUnloadNowDllRegisterServer`|  
-|[Uzantı](../../build/extension-dlls-overview.md)|Pencere yuva|Yok.|`DllMain`|  
-|[Normal](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Pencere yuva|Türetilen uygulama sınıfı `CWinApp`|`InitInstance` Çağrı içeriyor `AfxSocketInit`|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC DLL Sihirbazı](../../mfc/reference/mfc-dll-wizard.md)
+
+MFC DLL Sihirbazı'nın ürettiği kod oluşturmakta olduğunuz DLL ve seçtiğiniz seçenekler türüne bağlıdır. MFC DLL Sihirbazı, hem Normal MFC DLL'leri formlar için aynı kodu oluşturur.
+
+|DLL türü|Seçenek|Sınıflar|İşlevler|
+|-----------------|------------|-------------|---------------|
+|[Uzantı](../../build/extension-dlls-overview.md)|Yok.|Yok.|`DllMain`|
+|[Normal](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Yok.|Türetilen uygulama sınıfı `CWinApp`|Yok.|
+|[Normal](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Otomatikleştirme|Türetilen uygulama sınıfı `CWinApp`|`DllGetClassObjectDllCanUnloadNowDllRegisterServer`|
+|[Uzantı](../../build/extension-dlls-overview.md)|Pencere yuva|Yok.|`DllMain`|
+|[Normal](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Pencere yuva|Türetilen uygulama sınıfı `CWinApp`|`InitInstance` Çağrı içeriyor `AfxSocketInit`|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC DLL Sihirbazı](../../mfc/reference/mfc-dll-wizard.md)
 

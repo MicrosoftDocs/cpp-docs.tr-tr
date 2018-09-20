@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c20b9b6e8c1e96736485f302203156f627ef6794
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: bc789cb37b51f89022a83d1ba34bb67ae32a206e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42466449"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391598"
 ---
 # <a name="porting-data-applications"></a>Veri uygulamalarını taşıma
 Yıllar içinde Visual C++ veritabanlarıyla çalışmak için birkaç yol sağlamıştır. 2011'de, SQL Server ürün yerel kod içinden erişmek için tercih edilen bir teknoloji olarak ODBC hizalama Microsoft duyurdu. ODBC sektör standardı olan ve bunu kullanarak, kodunuzun en fazla taşınabilirlik birden fazla platform ve veri kaynakları üzerinde elde edin. Çoğu SQL veritabanı ürün ve birçok NoSQL ürünleri ODBC desteği. MFC ODBC sarmalayıcı sınıflar veya bir üçüncü taraf C++ sarmalayıcı kitaplıktır kullanın veya doğrudan alt düzey ODBC API'ları çağırarak ODBC kullanabilirsiniz. 
@@ -42,6 +42,6 @@ Veri erişim teknolojileri üzerinde Microsoft Windows geçmişi hakkında daha 
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[Visual C++'da Veri Erişimi](../data/data-access-in-cpp.md)  
-[Microsoft açık veritabanı bağlantısı (ODBC)](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc)  
+[Visual C++'da Veri Erişimi](../data/data-access-in-cpp.md)<br/>
+[Microsoft açık veritabanı bağlantısı (ODBC)](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc)<br/>
 [Veri erişim teknolojileri yol haritası](https://msdn.microsoft.com/library/ms810810.aspx)  

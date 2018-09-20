@@ -16,25 +16,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9180d792f38652b22f430e497ef0e42dc54f6d73
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d0496a15b289ec055fd2706975603f25cef13938
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382186"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388842"
 ---
 # <a name="using-slider-controls"></a>Kaydırıcı Denetimlerini Kullanma
-Kaydırıcı denetimi tipik kullanım deseni izler:  
-  
--   Denetim oluşturulur. Denetim bir iletişim kutusu şablonunda belirtilirse, iletişim kutusu oluşturulurken oluşturma otomatik olarak yapılır. (Olması bir [CSliderCtrl](../mfc/reference/csliderctrl-class.md) üye iletişim sınıfınızda kaydırıcı denetimi karşılık gelir.) Alternatif olarak, kullanabileceğiniz [oluşturma](../mfc/reference/csliderctrl-class.md#create) denetimi penceresi alt pencere olarak oluşturmak için üye işlevi.  
-  
--   Denetim değerlerini ayarlamak için çeşitli kümesi üye işlevleri çağırma. Yapabileceğiniz değişiklikleri kaydırıcıyı için minimum ve maksimum konumlarına ayarlama, değer çizgileri çizim, seçim aralığını ayarlama ve kaydırıcıyı yeniden konumlandırma içerir. Bir iletişim kutusu denetimleri için bunu yapmak için bir iletişim kutusunda 's zamanıdır [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) işlevi.  
-  
--   Kullanıcı denetimi ile etkileşim gibi çeşitli bildirim iletileri gönderir. Çağırarak denetimden kaydırıcı değeri ayıklayabilirsiniz [GetPos](../mfc/reference/csliderctrl-class.md#getpos) üye işlevi.  
-  
--   Denetimle bittiğinde, düzgün bir şekilde yok emin olmanız gerekir. Kaydırıcı denetimi iletişim kutusunda, varsa onu ve `CSliderCtrl` nesne yok otomatik olarak. Her iki denetimi emin olmak ihtiyacınız olmayan, varsa ve `CSliderCtrl` nesne düzgün yok.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CSliderCtrl kullanma](../mfc/using-csliderctrl.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Bir kaydırıcı denetimi tipik kullanımını aşağıdaki deseni izler:
+
+- Denetim oluşturulur. Denetim bir iletişim kutusu şablonunda belirtilmezse, iletişim kutusu oluşturulurken oluşturma otomatik olarak gerçekleşir. (Olması bir [CSliderCtrl](../mfc/reference/csliderctrl-class.md) kaydırıcı denetimi için karşılık gelen iletişim sınıfınızı üye.) Alternatif olarak, [Oluştur](../mfc/reference/csliderctrl-class.md#create) herhangi bir pencerenin alt pencere olarak denetimi oluşturmak için üye işlevi.
+
+- Denetim değerlerini ayarlamak için çeşitli küme üyesi işlevleri çağırın. Kaydırıcı için minimum ve maksimum konumlarını ayarlama, değer çizgileri çizim, bir seçim aralığını ayarlama ve kaydırıcıyı yeniden konumlandırma yapabileceğiniz değişiklikleri içerir. Bir iletişim kutusu denetimleri için bunu yapmak için bir iletişim kutusunda 's zamandır [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) işlevi.
+
+- Kullanıcı denetimle etkileşim gibi çeşitli bildirim iletileri gönderir. Kaydırıcı değeri çağırarak denetiminden ayıklayabilmeniz için [GetPos](../mfc/reference/csliderctrl-class.md#getpos) üye işlevi.
+
+- Denetim ile işiniz bittiğinde, düzgün bir şekilde imha emin olmanız gerekir. Kaydırıcı denetimi bir iletişim kutusunda, varsa onu ve `CSliderCtrl` nesne otomatik olarak silinecektir. Her iki denetim sağlamak ihtiyacınız değil, varsa ve `CSliderCtrl` nesne düzgün bir şekilde yok.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CSliderCtrl Kullanma](../mfc/using-csliderctrl.md)<br/>
+[Denetimler](../mfc/controls-mfc.md)
 

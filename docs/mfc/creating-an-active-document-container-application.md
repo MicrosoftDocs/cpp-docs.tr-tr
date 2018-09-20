@@ -18,58 +18,60 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8817133ba1004e746f568ad3e039de5130693174
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 4f01b15a226887216b45ba232437d9d20c4691b6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929451"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388348"
 ---
 # <a name="creating-an-active-document-container-application"></a>Etkin Belge Kapsayıcı Uygulaması Oluşturma
-Etkin belge kapsayıcı uygulaması oluşturmak için basit ve en önerilen yol, MFC Uygulama Sihirbazı'nı kullanarak bir MFC EXE kapsayıcı uygulama oluşturmak için ardından etkin belge kapsaması destekleyecek şekilde değiştirin.  
-  
-#### <a name="to-create-an-active-document-container-application"></a>Etkin belge kapsayıcı uygulaması oluşturmak için  
-  
-1.  Gelen **dosya** menüsünde tıklatın **proje**gelen **yeni** alt.  
-  
-2.  Sol bölmeden tıklatın **Visual C++** proje türü.  
-  
-3.  Seçin **MFC uygulaması** sağ bölmesinde.  
-  
-4.  Proje adı *MyProj*, tıklatın **Tamam**.  
-  
-5.  Seçin **bileşik belge desteği** sayfası.  
-  
-6.  Seçin **kapsayıcı** veya **kapsayıcı/tam sunucu** seçeneği.  
-  
-7.  Seçin **etkin belge kapsayıcısı** onay kutusu.  
-  
-8.  **Son**'a tıklayın.  
-  
-9. MFC Uygulama Sihirbazı'nı uygulama ürettikten sonra Çözüm Gezgini kullanarak aşağıdaki dosyaları açın:  
-  
-    -   *MyProjview.cpp*  
-  
-10. İçinde *MyProjview.cpp*, aşağıdaki değişiklikleri yapın:  
-  
-    -   İçinde `CMyProjView::OnPreparePrinting`, işlevi içeriğini aşağıdaki kodla değiştirin:  
-  
-         [!code-cpp[NVC_MFCDocView#56](../mfc/codesnippet/cpp/creating-an-active-document-container-application_1.cpp)]  
-  
-     `OnPreparePrinting` yazdırma desteği sağlar. Bu kod değiştirir `DoPreparePrinting`, varsayılan yazdırma hazırlık olduğu.  
-  
-     Etkin belge kapsaması geliştirilmiş yazdırma düzeni sağlar:  
-  
-    -   Etkin belgeyi ile ilk çağırabilirsiniz kendi `IPrint` arabirim ve kendisini yazdırmak için söyleyin. Bu, kapsayıcı vardı yazıcı üzerine kapsanan öğesinin bir görüntü oluşturmak önceki OLE kapsama farklıdır `CDC` nesnesi.  
-  
-    -   Başarısız olursa, kendisi aracılığıyla yazdırmak için kapsanan öğesi söyleyin kendi `IOleCommandTarget` arabirimi  
-  
-    -   Başarısız olursa, öğenin kendi işleme olun.  
-  
-     Statik üye işlevleri `COleDocObjectItem::OnPrint` ve `COleDocObjectItem::OnPreparePrinting`, önceki kod içinde uygulandığı şekilde bu geliştirilmiş yazdırma düzeni tanıtıcı.  
-  
-11. Herhangi bir uygulaması eklemek ve uygulama oluşturun.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin Belge Kapsaması](../mfc/active-document-containment.md)
+
+Etkin belge kapsayıcı uygulaması oluşturmanın en kolay ve en çok önerilen yolu MFC Uygulama Sihirbazı'nı kullanarak bir MFC EXE kapsayıcı uygulaması oluşturmak için ardından etkin belge kapsaması destekleyecek şekilde değiştirin.
+
+#### <a name="to-create-an-active-document-container-application"></a>Etkin belge kapsayıcı uygulaması oluşturma
+
+1. Gelen **dosya** menüsünde tıklatın **proje**gelen **yeni** alt.
+
+1. Sol bölmeden tıklayın **Visual C++** proje türü.
+
+1. Seçin **MFC uygulaması** sağ bölmesinde.
+
+1. Projeyi adlandırın *MyProj*, tıklayın **Tamam**.
+
+1. Seçin **bileşik belge desteği** sayfası.
+
+1. Seçin **kapsayıcı** veya **kapsayıcı/tam sunucu** seçeneği.
+
+1. Seçin **etkin belge kapsayıcı** onay kutusu.
+
+1. **Son**'a tıklayın.
+
+9. MFC Uygulama Sihirbazı uygulama ürettikten sonra Çözüm Gezgini'ni kullanarak aşağıdaki dosyaları açın:
+
+   - *MyProjview.cpp*
+
+10. İçinde *MyProjview.cpp*, aşağıdaki değişiklikleri yapın:
+
+   - İçinde `CMyProjView::OnPreparePrinting`, işlev içeriğini aşağıdaki kodla değiştirin:
+
+         [!code-cpp[NVC_MFCDocView#56](../mfc/codesnippet/cpp/creating-an-active-document-container-application_1.cpp)]
+
+     `OnPreparePrinting` yazdırma desteği sağlar. Bu kodu değiştirir `DoPreparePrinting`, varsayılan yazdırma hazırlık olduğu.
+
+     Etkin belge kapsaması geliştirilmiş bir yazdırma düzeni sağlar:
+
+   - Etkin belgeyi ile ilk çağırabilirsiniz kendi `IPrint` arabirim ve, IOleCommandTarget komutunu söyleyin. Bu, kapsayıcı olan bir yazıcı üzerine kapsanan öğesinin görüntüsünü işlemek önceki OLE kapsayıcı farklıdır `CDC` nesne.
+
+   - Başarısız olursa, kendisi aracılığıyla yazdırmak için kapsanan öğe bildirmek, `IOleCommandTarget` arabirimi
+
+   - Bu başarısız olursa, öğenin kendi işleme olun.
+
+     Statik üye işlevleri `COleDocObjectItem::OnPrint` ve `COleDocObjectItem::OnPreparePrinting`, önceki kod içinde uygulandığı şekilde bu geliştirilmiş yazdırma düzeni tanıtıcı.
+
+11. Herhangi bir uygulamasını ekleyin ve uygulamayı derleyin.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Etkin Belge Kapsaması](../mfc/active-document-containment.md)
 

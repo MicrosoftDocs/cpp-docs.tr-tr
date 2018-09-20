@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 98bcc3d3fcaf7aea3b2632cacb1ff38eedb868b8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 23b13dc170748e1a605103624450c605b1975719
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42612318"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391262"
 ---
 # <a name="modulegenericreleasenotifiergenericreleasenotifier-constructor"></a>Module::GenericReleaseNotifier::GenericReleaseNotifier Oluşturucusu
 
@@ -39,10 +39,10 @@ GenericReleaseNotifier(
 
 ### <a name="parameters"></a>Parametreler
 
-*geri çağırma*  
+*geri çağırma*<br/>
 Bir lambda, functor veya parantez işlevi işleci ile çağrılabilir işaretçi işlevi olay işleyicisi (`()`).
 
-*Yayın*  
+*Yayın*<br/>
 Belirtin **true** temel çağırma etkinleştirmek için [Modülü:: ReleaseNotifier::Release()](../windows/module-releasenotifier-release.md) yöntemi; Aksi takdirde belirtin **false**.
 
 ## <a name="requirements"></a>Gereksinimler

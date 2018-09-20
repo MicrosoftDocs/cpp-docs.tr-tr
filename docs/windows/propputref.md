@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b0b36342b7760eea074fe15506386bb3d7ce6764
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: f2afa793371f2e9840bbb98efc9f745ecbdd29b7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221248"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46389336"
 ---
 # <a name="propputref"></a>propputref
 
@@ -57,7 +57,7 @@ Bir değer yerine başvurur bir özellik ayarı işlevi belirtir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IDL öznitelikleri](../windows/idl-attributes.md)  
-[Yöntem Öznitelikleri](../windows/method-attributes.md)  
-[propget](../windows/propget.md)  
+[IDL öznitelikleri](../windows/idl-attributes.md)<br/>
+[Yöntem Öznitelikleri](../windows/method-attributes.md)<br/>
+[propget](../windows/propget.md)<br/>
 [propput](../windows/propput.md)  
