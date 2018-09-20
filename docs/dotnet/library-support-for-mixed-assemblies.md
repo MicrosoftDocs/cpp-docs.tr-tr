@@ -1,7 +1,7 @@
 ---
 title: Karışık derlemeler için kitaplık desteği | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.technology:
 - cpp-cli
 ms.topic: conceptual
@@ -18,41 +18,40 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: d4b584e0bacb1cb93cad33efdff807bb5fa9c8e2
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 868cae6701e17c79c9856b3a16c63c1e25b67bda
+ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704117"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494523"
 ---
 # <a name="library-support-for-mixed-assemblies"></a>Karışık Derlemeler için Kitaplık Desteği
 
-C++ Standart Kitaplığı, C çalışma zamanı kitaplığı (CRT) kullanılmasını destekler Visual C++ ATL ve MFC ile derlenmiş uygulamalar için [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md). Bu, .NET Framework özelliklerini kullanmak için bu kitaplıkları kullanan mevcut uygulamaları sağlar.
+Visual C++, C++ Standart Kitaplığı, C çalışma zamanı kitaplığı (CRT) kullanılmasını destekler ATL ve MFC ile derlenmiş uygulamalar için [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md). Bu, .NET Framework özellikleri kullanmak için bu kitaplıkları kullanan mevcut uygulamaları sağlar.
 
 > [!IMPORTANT]
-> **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+> **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
-Bu destek, aşağıdaki DLL ve içeri aktarma kitaplıkları içerir:
+Bu destek aşağıdaki DLL ve içeri aktarma kitaplıklarını içerir:
 
-- İle derleme yaparsanız Msvcmrt [d] .lib **/CLR**. Bu içeri aktarma kitaplığını karışık derlemeler bağlantısı.
+- Derleme yaparsanız Msvcmrt [d] .lib **/CLR**. Karışık derlemeler bağlantısı bu içeri aktarma kitaplığı.
 
-Bu destek, ilgili bir kaç yarar sağlar:
+Bu destek, birkaç ilgili avantajları sağlar:
 
-- CRT ve C++ Standart Kitaplığı karışık kod için kullanılabilir. CRT ve sağlanan C++ Standart Kitaplığı doğrulanabilir değildir; Sonuç olarak, yerel koddan kullanırken çağrılarınızı hala aynı CRT ve C++ Standart Kitaplığı yönlendirilir.
+- C++ Standart Kitaplığı ve CRT karma kod için kullanılabilir. CRT ve C++ Standart Kitaplığı sağlanan doğrulanabilir değildir; Sonuç olarak, yerel koddan kullanıyorsanız çağrılarınızı hala aynı CRT ve C++ Standart Kitaplığı yönlendirilir.
 
-- Birleşik özel durum işleme karma görüntülerinde düzeltin.
+- Birleştirilmiş bir özel durum işleme karma resimlerdeki düzeltin.
 
-- Statik başlatma C++ değişkenlerinin karma görüntüler.
+- Karma görüntüleri içindeki C++ değişkenlerin statik başlatma.
 
-- AppDomain başına ve işlem başına değişkenleri yönetilen kod desteği.
+- Yönetilen kodda AppDomain başına ve işlem başına değişkenleri için destek.
 
-- Visual Studio 2003 ve önceki sürümlerinde derlenmiş Karışık DLL'ler uygulanan yükleyici kilidi sorunlarını giderir.
+- Visual Studio 2003 ve önceki sürümlerinde derlenmiş olan karma DLL'ler uygulanan yükleyici kilidi sorunlarını giderir.
 
 Ayrıca, aşağıdaki sınırlamalar Bu destek sunar:
 
-- İle derlenmiş kod yalnızca CRT DLL modeli desteklenir **/CLR**. Destek statik CRT kitaplık yok **/CLR** oluşturur.
+- CRT DLL modeli ile derlenen kod için desteklenen **/CLR**. Destek statik CRT kitaplık yok **/CLR** oluşturur.
 
-Önceki sürümleri ile çalışması için kesin değildir gibi ortak dil çalışma zamanı (CLR) geçerli sürüme güncelleştirmeniz gerekir. Bu değişikliklerle oluşturulmuş kod CLR sürümü çalışmayacak 1.x.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

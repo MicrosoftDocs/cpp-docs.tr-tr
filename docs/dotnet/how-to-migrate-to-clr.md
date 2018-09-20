@@ -1,7 +1,7 @@
 ---
 title: "Nasıl yapılır: - CLR'ye geçiş | Microsoft Docs"
 ms.custom: get-started-article
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.technology:
 - cpp-cli
 ms.topic: conceptual
@@ -20,16 +20,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 818b6e102d9da759aa8889779515917b96e22c89
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cf55b6f5dc422bb01babe0bdf8d8c27ce50371da
+ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412970"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494471"
 ---
 # <a name="how-to-migrate-to-clr"></a>Nasıl yapılır: /clr'ye Geçiş
 
-Bu konuda, yerel kod ile derleme yaparken ortaya çıkan sorunları ele alınmıştır **/CLR** (bkz [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) daha fazla bilgi için). **/ CLR** Visual C++ modülleri çağırmak ve .NET derlemeleri yönetilmeyen modülleri ile uyumluluğu korurken çağrılmasına olanak sağlar. Bkz: [karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md) ve [Native ve .NET ile birlikte çalışabilirlik](../dotnet/native-and-dotnet-interoperability.md) avantajları hakkında daha fazla bilgi ile derlenen **/CLR**.
+Bu konuda, yerel kod ile derleme yaparken ortaya çıkan sorunları ele alınmıştır **/CLR** (bkz [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) daha fazla bilgi için). **/ CLR** yerel C++ kodunu çağırır ve diğer yerel C++ kod yanı sıra .NET derlemelerinden çağrılmasına olanak sağlar. Bkz: [karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md) ve [Native ve .NET ile birlikte çalışabilirlik](../dotnet/native-and-dotnet-interoperability.md) avantajları hakkında daha fazla bilgi ile derlenen **/CLR**.
 
 ## <a name="known-issues-compiling-library-projects-with-clr"></a>Bilinen sorunlar derlenirken kitaplık projeleri/CLR ile
 
@@ -132,7 +132,7 @@ Veri türleri farklı sürümleri, bağlayıcının iki tür için oluşturulan 
 
 ### <a name="loader-lock-deadlock"></a>Yükleyici kilidi kilitlenmesi
 
-Visual Studio 2010 ve sonraki sürümlerinde, "Yükleyici kilidi kilitlenmesi" yine de önceki sürümlerde, ancak kararlı ve oluşabilir algılandı ve çalışma zamanında bildirdi. Bkz: [karışık derlemeleri başlatma](../dotnet/initialization-of-mixed-assemblies.md) ayrıntılı arka plan, rehberlik ve çözümler.
+"Yükleyici kilidi kilitlenmesi" oluşabilir, ancak kararlı ve algılanır ve çalışma zamanında bildirdi. Bkz: [karışık derlemeleri başlatma](../dotnet/initialization-of-mixed-assemblies.md) ayrıntılı arka plan, rehberlik ve çözümler.
 
 ### <a name="data-exports"></a>Verileri dışarı aktarma
 

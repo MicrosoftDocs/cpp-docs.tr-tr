@@ -1,7 +1,7 @@
 ---
 title: .NET programlama ile C + +/ CLI (Visual C++) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.technology:
 - cpp-cli
 ms.topic: conceptual
@@ -18,18 +18,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 105b1d709ca2d9bb68741050489ffa1ee75c8067
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 338404abe7499b6d9ff7679420f069a2857ce1e0
+ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410578"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494445"
 ---
 # <a name="net-programming-with-ccli-visual-c"></a>.NET programlama ile C + +/ CLI (Visual C++)
 
-Aşağıdaki konular, Visual C++ .NET platformunu nasıl hedefleyebileceği açıklanmaktadır.
+**Visual Studio 2015**: varsayılan olarak, Visual Studio 2015 ile oluşturulan CLR projeleri .NET Framework 4.5.2'yi hedefler. Hedef, yeni bir proje oluşturduğunuzda, .NET Framework 4.6 **yeni proje** iletişim kutusunda, açılır iletişim kutusunun üst orta hedef Framework'ü değiştirin. Var olan bir proje için hedef Framework'ü değiştirmek için projeyi kapatın, proje (.vcxproj) dosyasını düzenleyin ve hedef Framework sürümünü 4.6 için değiştirin. Proje, sonraki açışınızda ayarlarının geçerlilik kazanmasından. 
 
-Varsayılan olarak, Visual Studio 2015 ile oluşturulan CLR projeleri .NET Framework 4.5.2'yi hedefler. Hedef, yeni bir proje oluşturduğunuzda, .NET Framework 4.6 **yeni proje** iletişim kutusunda, açılır iletişim kutusunun üst orta hedef Framework'ü değiştirin. Var olan bir proje için hedef Framework'ü değiştirmek için projeyi kapatın, proje (.vcxproj) dosyasını düzenleyin ve hedef Framework sürümünü 4.6 için değiştirin. Proje, sonraki açışınızda ayarlarının geçerlilik kazanmasından.
+**Visual Studio 2017**: içinde Visual Studio 2017 varsayılan framework 4.6.1 ve Framework sürümü Seçici alt kısmında **yeni proje iletişim kutusu**. C + +/ CLI kendini varsayılan olarak yüklü değil. Bileşen yüklemek için Visual Studio Yükleyicisi'ni açın ve seçin C + +/ CLI bileşen Visual C++ altında. 
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

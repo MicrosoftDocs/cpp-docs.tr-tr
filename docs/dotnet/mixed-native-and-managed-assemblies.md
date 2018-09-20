@@ -1,7 +1,7 @@
 ---
 title: Karışık (yerel ve yönetilen) derlemeler | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.technology:
 - cpp-cli
 ms.topic: conceptual
@@ -23,18 +23,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 2a48f34edec8a9f24f22d35be482d3b297215dbe
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4ee94905bc4c40f6d080e34098e24bd71d495141
+ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210631"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494497"
 ---
 # <a name="mixed-native-and-managed-assemblies"></a>Karışık (yerel ve yönetilen) derlemeler
 
-Karışık derlemeler yönetilmeyen makine yönergelerine hem MSIL yönergeleri içeren özelliğine sahiptir. Bu çağrı ve tamamen yönetilmeyen bileşenler ile uyumluluğu korurken .NET bileşenleri tarafından çağrılmak sağlar. Karışık derlemeler kullanarak, geliştiricilerin, yönetilen ve yönetilmeyen işlevleri bir karışımını kullanan uygulamalar yazabilirsiniz. Bu karışık derlemeler .NET platformu için var olan Visual C++ uygulamalarını geçirme için ideal hale getirir.
+Karışık derlemeler yönetilmeyen makine yönergelerine hem MSIL yönergeleri içeren özelliğine sahiptir. Bu çağrı ve yerel C++ kitaplıkları ile uyumluluğu korurken .NET bileşenleri tarafından çağrılmak sağlar. Karışık derlemeler kullanarak, geliştiricilerin .NET ve yerel C++ kodunu bir karışımını kullanan uygulamalar yazabilirsiniz.
 
-Örneğin, tamamen yönetilmeyen işlevlerden oluşan var olan bir uygulamayı .NET platformu için bir modülün ile derleyerek getirilebilir **/CLR** derleyici anahtarı. Bu modül, .NET özelliklerini kullanabilmek için ise, ancak uygulama geri kalanı ile uyumlu kalır. Bu şekilde, bir uygulamanın .NET platformu aşamalı, parça parça bir biçimde dönüştürülebilir. Yönetilen ve yönetilmeyen derleme işlevi tarafından işlevi olarak aynı dosya içerisinde arasında karar vermek bile mümkündür (bkz [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md)).
+Örneğin, tamamen yerel C++ kodunu içeren mevcut bir kitaplık .NET platformu için bir modülün ile derleyerek getirilebilir **/CLR** derleyici anahtarı. Bu modül, .NET özelliklerini kullanabilmek için ise, ancak uygulama geri kalanı ile uyumlu kalır. Yönetilen ve yerel derleme işlevi tarafından işlevi olarak aynı dosya içerisinde arasında karar vermek bile mümkündür (bkz [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md)).
 
 Visual C++ yalnızca kullanarak karışık Yönetilen derlemeler oluşturulmasını destekler **/CLR** derleyici seçeneği. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor. Saf veya doğrulanabilir Yönetilen derlemeler gerekiyorsa, bunları C# kullanarak oluşturmanız önerilir.
 

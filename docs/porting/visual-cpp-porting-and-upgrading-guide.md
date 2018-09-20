@@ -1,7 +1,7 @@
 ---
 title: Visual C++ taşıma ve yükseltme Kılavuzu | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.technology:
 - cpp-language
 ms.topic: conceptual
@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0be5d4cc09dbb5753bd8889ad880364ebd228bf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1b573a22b9502548cc84f2bd459cda72d071cf68
+ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433666"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494406"
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ taşıma ve yükseltme Kılavuzu
 
@@ -93,7 +93,6 @@ Alternatif olarak, artık belki de yeni gereksinimler ortaya veya Windows Masaü
 |[Evrensel Windows Platformu'na bağlantı noktası](porting-to-the-universal-windows-platform-cpp.md)|Windows 10 için kod bağlantı noktası oluşturma hakkında bilgi içerir.|  
 |[UNIX Kullanıcıları için Visual C++'a Giriş](introduction-to-visual-cpp-for-unix-users.md)|Visual C++'da yenidir ve onunla üretken isteyen UNIX kullanıcıları için bilgiler sağlar.|  
 |[UNIX'ten Win32'ye Taşıma](porting-from-unix-to-win32.md)|Windows UNIX uygulamalarını geçirme için seçenekleri açıklar.|  
-|[C++/CLI Geçiş Öncüsü](../dotnet/cpp-cli-migration-primer.md)|Ayrıntılı olarak, yeni söz dizimini kullanacak şekilde için Yönetilen Uzantılar C++ sözdizimi sürümüne yükseltme yapmayı gösterir. Daha fazla bilgi için [çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md).|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 

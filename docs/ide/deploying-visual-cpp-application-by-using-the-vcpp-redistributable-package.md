@@ -1,7 +1,7 @@
 ---
 title: Yeniden dağıtılabilir paketini (C++) kullanarak uygulama dağıtma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/17/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e213d5d91c229f7f07bc383f0a0158d85c05cf2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9759811554fd0998a919c9939a0441c63c26a3f8
+ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434511"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494354"
 ---
 # <a name="walkthrough-deploying-a-visual-c-application-by-using-the-visual-c-redistributable-package"></a>İzlenecek Yol: Visual C++ Yeniden Dağıtılabilir Paketini Kullanarak Visual C++ Uygulaması Dağıtmak
 
@@ -35,9 +35,9 @@ Bu bileşenler, bu izlenecek yolu tamamlamak için aşağıdakiler gereklidir:
 
 ### <a name="to-use-the-visual-c-redistributable-package-to-deploy-an-application"></a>Bir uygulamayı dağıtmak için Visual C++ yeniden dağıtılabilir paketi kullanmak için
 
-1. İlk üç adımları izleyerek bir MFC uygulaması oluşturma ve [izlenecek yol: Kurulum projesi dağıtma bir Visual C++ Application By Using](../ide/deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md).
+1.  İçindeki adımları izleyerek bir MFC uygulaması oluşturmayı ve [izlenecek yol: Kurulum projesi dağıtma bir Visual C++ Application By Using](walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md).
 
-2. Bir dosya oluşturun, setup.bat adlandırın ve aşağıdakileri ekleyin. Değişiklik `MyMFCApplication` projenizin adı.
+1. Bir dosya oluşturun, setup.bat adlandırın ve aşağıdakileri ekleyin. Değişiklik `MyMFCApplication` projenizin adı.
 
     ```cmd
     @echo off
@@ -46,55 +46,55 @@ Bu bileşenler, bu izlenecek yolu tamamlamak için aşağıdakiler gereklidir:
     copy MyMFCApplication.exe "C:\Program Files\MyMFCApplication"
     ```
 
-3. Kendi kendine ayıklanan bir kurulum dosyası oluşturun:
+1. Kendi kendine ayıklanan bir kurulum dosyası oluşturun:
 
    1. Bir komut isteminde veya **çalıştırma** penceresinde iexpress.exe çalıştırın.
 
-   2. Seçin **yeni kendi kendine ayıklama yönergesi dosya oluştur** seçip **sonraki** düğmesi.
+   1. Seçin **yeni kendi kendine ayıklama yönergesi dosya oluştur** seçip **sonraki** düğmesi.
 
-   3. Seçin **dosyaları ayıklayın ve bir yükleme komutunu Çalıştır** seçip **sonraki**.
+   1. Seçin **dosyaları ayıklayın ve bir yükleme komutunu Çalıştır** seçip **sonraki**.
 
-   4. MFC uygulamanızı adını metin kutusuna girin ve ardından **sonraki**.
+   1. MFC uygulamanızı adını metin kutusuna girin ve ardından **sonraki**.
 
-   5. Üzerinde **onay istemi** sayfasında **istem yok** seçip **sonraki**.
+   1. Üzerinde **onay istemi** sayfasında **istem yok** seçip **sonraki**.
 
-   6. Üzerinde **lisans sözleşmesini** sayfasında **lisans gösterme** seçip **sonraki**.
+   1. Üzerinde **lisans sözleşmesini** sayfasında **lisans gösterme** seçip **sonraki**.
 
-   7. Üzerinde **paketlenen dosyalar** sayfasında, aşağıdaki dosyaları ekleyin ve ardından **sonraki**.
+   1. Üzerinde **paketlenen dosyalar** sayfasında, aşağıdaki dosyaları ekleyin ve ardından **sonraki**.
 
       - MFC uygulamanızı (.exe dosyası).
 
-      - VCRedist_x86.exe. Bu dosya SDKs\Windows\v7.0A\Bootstrapper\Packages\vcredist_x86 \Program Files\Microsoft bulunur\\.
+      - VCRedist_x86.exe. Bu dosya \Program dosyaları (x86) \Microsoft Visual Studio bulunur \<sürüm > \SDK\Bootstrapper\Packages\. Ayrıca bu dosyayı indirebileceğiniz [Microsoft](https://www.microsoft.com/download/confirmation.aspx?id=5555).
 
       - Önceki adımda oluşturduğunuz setup.bat dosya.
 
-   8. Üzerinde **yükleme programı başlatmak için** sayfasında **yükleme programı** metin kutusunda, aşağıdaki komut satırını girin ve ardından **sonraki**.
+   1. Üzerinde **yükleme programı başlatmak için** sayfasında **yükleme programı** metin kutusunda, aşağıdaki komut satırını girin ve ardından **sonraki**.
 
       **cmd.exe /c "setup.bat"**
 
-   9. Üzerinde **Göster penceresi** sayfasında **varsayılan** seçip **sonraki**.
+   1. Üzerinde **Göster penceresi** sayfasında **varsayılan** seçip **sonraki**.
 
-   10. Üzerinde **tamamlandı iletisi** sayfasında **ileti** seçip **sonraki**.
+   1. Üzerinde **tamamlandı iletisi** sayfasında **ileti** seçip **sonraki**.
 
-   11. Üzerinde **paket adı ve seçenekleri** , kendiliğinden kurulum dosyası için bir ad girin **Store paket içinde uzun dosya adı'nı kullanarak dosyaları** seçeneğini ve ardından **sonraki**. Dosya adının sonuna Setup.exe—for örnek, MyMFCApplicationSetup.exe olması gerekir.
+   1. Üzerinde **paket adı ve seçenekleri** , kendiliğinden kurulum dosyası için bir ad girin **Store paket içinde uzun dosya adı'nı kullanarak dosyaları** seçeneğini ve ardından **sonraki**. Dosya adının sonuna Setup.exe—for örnek olmalıdır *MyMFCApplicationSetup.exe*.
 
-   12. Üzerinde **yeniden yapılandırma** sayfasında **yeniden başlatma yok** seçip **sonraki**.
+   1. Üzerinde **yeniden yapılandırma** sayfasında **yeniden başlatma yok** seçip **sonraki**.
 
-   13. Üzerinde **Kaydet kendi kendine ayıklama yönergesi** sayfasında **Kaydet Self ayıklama yönergesi (SED) dosyası** seçip **sonraki**.
+   1. Üzerinde **Kaydet kendi kendine ayıklama yönergesi** sayfasında **Kaydet Self ayıklama yönergesi (SED) dosyası** seçip **sonraki**.
 
-   14. Üzerinde **paketi oluştur** sayfasında **sonraki**.
+   1. Üzerinde **paketi oluştur** sayfasında **sonraki**. Seçin **son**.
 
-4. Visual C++ kitaplıkları olmayan diğer bilgisayarda kendiliğinden kurulum dosyası test edin:
+1. Visual C++ kitaplıkları olmayan diğer bilgisayarda kendiliğinden kurulum dosyası test edin:
 
-   1. Başka bir bilgisayarda Kurulum dosyasının bir kopyasını indirin ve ardından çalıştığına ve sağladığı adımları izleyerek yükleyin.
+   1. Başka bir bilgisayarda Kurulum dosyasının bir kopyasını indirin ve ardından çalıştığına ve sağladığı adımları izleyerek yükleyin. Seçilen seçeneklere bağlı olarak, yükleme gerektirebilir **yönetici olarak çalıştır** komutu.
 
-   2. MFC uygulamasını çalıştırın.
+   1. MFC uygulamasını çalıştırın.
 
       Kendiliğinden kurulum dosyası 2. adımda belirttiğiniz klasörde MFC uygulamasını yükler. Visual C++ yeniden dağıtılabilir paketi yükleyici kendiliğinden kurulum dosyasına dahil edilir çünkü uygulama başarıyla çalışır.
 
       > [!IMPORTANT]
-      > Yükleyici çalışma zamanının hangi sürümünün yüklü olduğunu belirlemek için kayıt defteri anahtarı \HKLM\SOFTWARE\Microsoft\VisualStudio\11.0\VC\Runtimes denetler\\[platform]. Şu anda yüklü olan sürümü yükleyici yüklemeye çalıştığı sürümden daha yeniyse, yükleyici eski sürümü yüklemeden başarı döndürür ve ek bir giriş Denetim Masası'ndaki yüklü programlar sayfasında bırakır.
+      > Yükleyici çalışma zamanının hangi sürümünün yüklü olduğunu belirlemek için kayıt defteri anahtarı \HKLM\SOFTWARE\Microsoft\VisualStudio denetler\\\<sürüm > \VC\Runtimes\\<platform>. Şu anda yüklü olan sürümü yükleyici yüklemeye çalıştığı sürümden daha yeniyse, yükleyici eski sürümü yüklemeden başarı döndürür ve ek bir giriş Denetim Masası'ndaki yüklü programlar sayfasında bırakır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Dağıtım Örnekleri](../ide/deployment-examples.md)
+[Dağıtım Örnekleri](deployment-examples.md)<br/>

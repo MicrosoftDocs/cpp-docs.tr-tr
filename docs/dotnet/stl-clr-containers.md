@@ -1,7 +1,7 @@
 ---
 title: STL/CLR kapsayıcıları | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.technology:
 - cpp-cli
 ms.topic: reference
@@ -16,22 +16,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 40fe43accafb6fa9e217f5d7835d7533e7674e72
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b11cb96e02adbf4b145794d570fde34dbed48ff7
+ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418560"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494341"
 ---
 # <a name="stlclr-containers"></a>STL/CLR Kapsayıcıları
 
-STL/CLR kitaplığı C++ Standart Kitaplığı'nda bulunan kapsayıcılar aynı olsa da, .NET Framework yönetilen ortamı içinde çalışır. Zaten bir C++ Standart kitaplığı ile ilgili bilgi sahibi olduğunuz, STL/CLR zaten ortak dil çalışma zamanı (CLR) hedefine kodunuzu yükseltilirken geliştirdik becerilerini kullanmaya devam etmek için en iyi yoludur.
+STL/CLR kitaplığı, C++ Standart Kitaplığı'nda benzer bulunur, ancak .NET Framework yönetilen ortamında çalışan kapsayıcılar oluşur. Gerçek C++ Standart kitaplığı ile güncel tutulmasını değil ve eski desteği korunur.
 
 Bu belge kapsayıcılarda STL/CLR kapsayıcı öğeleri, kapsayıcılara ekleyebilirsiniz ve kapsayıcılarında öğeleri sahiplik sorunlarını öğe türleri için gereksinimler gibi genel bir bakış sağlar. Yerel C++ Standart Kitaplığı ve STL/CLR arasındaki farklılıklar uygun yerlerde belirtilmiştir.
 
 ## <a name="requirements-for-container-elements"></a>Kapsayıcı öğeleri için gereksinimler
 
-C++ Standart Kitaplığı kapsayıcılarına eklenen tüm öğeleri belirli yönergeleri uyulmadığı gerekir. Daha fazla bilgi için [STL/CLR kapsayıcı öğeleri için gereksinimler](../dotnet/requirements-for-stl-clr-container-elements.md).
+STL/CLR kapsayıcılarına eklenen tüm öğeleri belirli yönergeleri uyulmadığı gerekir. Daha fazla bilgi için [STL/CLR kapsayıcı öğeleri için gereksinimler](../dotnet/requirements-for-stl-clr-container-elements.md).
 
 ## <a name="valid-container-elements"></a>Geçerli kapsayıcı öğeler
 
@@ -65,18 +65,18 @@ using namespace System;
 ref class Employee
 {
 public:
-    // C++ Standard Library containers might require a public constructor, so it
+    // STL/CLR containers might require a public constructor, so it
     // is a good idea to define one.
     Employee() :
         name(nullptr),
         employeeNumber(0) { }
 
-    // All C++ Standard Library containers require a public copy constructor.
+    // All STL/CLR containers require a public copy constructor.
     Employee(const Employee% orig) :
         name(orig.name),
         employeeNumber(orig.employeeNumber) { }
 
-    // All C++ Standard Library containers require a public assignment operator.
+    // All STL/CLR containers require a public assignment operator.
     Employee% operator=(const Employee% orig)
     {
         if (this != %orig)
@@ -88,7 +88,7 @@ public:
         return *this;
     }
 
-    // All C++ Standard Library containers require a public destructor.
+    // All STL/CLR containers require a public destructor.
     ~Employee() { }
 
     // Associative containers such as maps and sets
@@ -160,18 +160,18 @@ using namespace System;
 ref class Employee
 {
 public:
-    // C++ Standard Library containers might require a public constructor, so it
+    // STL/CLR containers might require a public constructor, so it
     // is a good idea to define one.
     Employee() :
         name(nullptr),
         employeeNumber(0) { }
 
-    // All C++ Standard Library containers require a public copy constructor.
+    // All STL/CLR containers require a public copy constructor.
     Employee(const Employee% orig) :
         name(orig.name),
         employeeNumber(orig.employeeNumber) { }
 
-    // All C++ Standard Library containers require a public assignment operator.
+    // All STL/CLR containers require a public assignment operator.
     Employee% operator=(const Employee% orig)
     {
         if (this != %orig)
@@ -183,7 +183,7 @@ public:
         return *this;
     }
 
-    // All C++ Standard Library containers require a public destructor.
+    // All STL/CLR containers require a public destructor.
     ~Employee() { }
 
     // Associative containers such as maps and sets

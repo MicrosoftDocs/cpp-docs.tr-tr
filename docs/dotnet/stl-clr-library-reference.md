@@ -1,7 +1,7 @@
 ---
 title: STL/CLR Kitaplık Başvurusu | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/18/2018"
 ms.technology:
 - cpp-cli
 ms.topic: reference
@@ -17,16 +17,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 78dc5c57ca000dfa03dba640c46cec16aaca133f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 14217396801731505753be121e98f0aebf5b5f22
+ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429481"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494397"
 ---
 # <a name="stlclr-library-reference"></a>STL/CLR Kitaplık Başvurusu
 
-STL/CLR kitaplığı, C++ ve .NET Framework ortak dil çalışma zamanı (CLR) ile kullanmak için C++ Standart Kitaplığı'nın bir alt bir paketleme ' dir. STL/CLR ile tüm kapsayıcıları, Yineleyiciler ve algoritmalar standart kitaplığı yönetilen bir ortamda kullanabilirsiniz.
+STL/CLR kitaplığı, C++ ve .NET Framework ortak dil çalışma zamanı (CLR) ile kullanmak için C++ Standart Kitaplığı kapsayıcıları için benzer bir arabirim sağlar. STL/CLR C++ Standart kitaplığına, Microsoft uygulamasından tamamen ayrıdır. STL/CLR için eski destek saklanır ancak C++ standardı ile güncel tutulmasını değil. Yerel kullanılması kesinlikle önerilir [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md) yerine mümkün olduğunca STL/CLR kapsayıcıları.
 
 STL/CLR kullanmak için:
 
@@ -34,7 +34,7 @@ STL/CLR kullanmak için:
 
 - Kitaplık adlarıyla nitelemeniz `cliext::` yerine `std::`.
 
-STL/CLR .NET derlemesindeki arası senaryolarda kullandığı genel türleri ve arayüzleri kullanıma sunar **Microsoft.VisualC.STLCLR.dll**. Bu DLL, .NET Framework 3.5 dahildir. STL/CLR kullanan bir uygulamayı yeniden dağıtırsanız, Kurulum projenizin bağımlılıklar bölümüne projenizin kullandığı diğer Visual C++ kitaplıklarının yanı sıra .NET Framework 3.5 gerekir.
+STL/CLR kitaplığı, C++ ve .NET Framework ortak dil çalışma zamanı (CLR) ile kullanılmak üzere bir STL benzeri arabirim sağlar. Bu kitaplık için eski destek saklanır ancak C++ standardı ile güncel tutulmasını değil. Yerel kullanılması kesinlikle önerilir [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md) yerine STL/CLR kapsayıcıları.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

@@ -1,7 +1,7 @@
 ---
 title: -clr (ortak dil çalışma zamanı derlemesi) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b46f61ef727c1b283137bb3d537d2dbad416c1d8
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: dcd5739f2fb0663609ce7bcabc920cc3aa20d8e1
+ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703826"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494419"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr (Ortak Dil Çalışma Zamanı Derlemesi)
 
@@ -45,15 +45,15 @@ Bir veya daha fazla aşağıdaki anahtarları, virgülle ayrılmış.
 
 - yok
 
-   Hiçbir seçenek olmadan **/CLR** uygulama meta verilerini oluşturur. Meta veriler, diğer CLR uygulamaları tarafından tüketilebilecek ve türleri ve diğer CLR bileşenlerine ait meta verilerdeki veri kullanmak uygulamayı etkinleştirir. Daha fazla bilgi için [karışık (yerel ve yönetilen) derlemeler](../../dotnet/mixed-native-and-managed-assemblies.md) ve [nasıl yapılır: / CLR'ye geçiş](../../dotnet/how-to-migrate-to-clr.md).
+   Hiçbir seçenek olmadan **/CLR** uygulama meta verilerini oluşturur. Meta veriler, diğer CLR uygulamaları tarafından tüketilebilecek ve türleri ve diğer CLR bileşenlerine ait meta verilerdeki veri kullanmak uygulamayı etkinleştirir. Daha fazla bilgi için [karışık (yerel ve yönetilen) derlemeler](../../dotnet/mixed-native-and-managed-assemblies.md).
 
 - **saf**
 
-   **/ CLR: pure kullanım dışı**. Bu seçenek derleyici gelecek bir sürümünde desteklemeyebilir. Saf MSIL C# için gereken kod bağlantı noktası öneririz.
+   **/ CLR: pure kullanım dışı**. Seçeneği, Visual Studio 2017'de kaldırılır. Saf MSIL C# için gereken kod bağlantı noktası öneririz.
 
 - **Güvenli**
 
-   **/ CLR: safe kullanım dışı**. Bu seçenek derleyici gelecek bir sürümünde desteklemeyebilir. Güvenli MSIL C# için gereken kod bağlantı noktası öneririz.
+   **/ CLR: safe kullanım dışı**. Seçeneği, Visual Studio 2017'de kaldırılır. Güvenli MSIL C# için gereken kod bağlantı noktası öneririz.
 
 - **noAssembly**
 
@@ -112,31 +112,6 @@ class {} x;
 ```
 
 İldasm.exe meta verileri görüntülemek için kullanın.
-
-## <a name="managed-extensions-for-c"></a>C++ için Yönetilen Uzantılar
-
-Visual C++ artık destekler **/clr:oldsyntax** seçeneği. Bu seçenek, Visual Studio 2005'te kullanım dışı bırakıldı. Desteklenen yazma yönetilen C++ kodunu C + sözdizimidir +/ CLI. Daha fazla bilgi için [çalışma zamanı platformları için bileşen uzantıları](../../windows/component-extensions-for-runtime-platforms.md).
-
-C++ için Yönetilen Uzantılar kullanan kodu varsa, C + kullanmak üzere bağlantı öneririz +/ CLI söz dizimi. Kodunuzu bağlantı noktası hakkında daha fazla bilgi için bkz: [C + +/ CLI geçiş öncüsü](../../dotnet/cpp-cli-migration-primer.md).
-
-#### <a name="to-set-this-compiler-option-in-visual-studio"></a>Bu derleyici seçeneğini Visual Studio'da ayarlamak için
-
-1. İçinde **Çözüm Gezgini**proje adına sağ tıklayın ve ardından **özellikleri** projeyi açmak için **özellik sayfaları** iletişim kutusu.
-
-1. Seçin **yapılandırma özellikleri** > **genel** özellik sayfası.
-
-1. Değiştirme **ortak dil çalışma zamanı desteği** özelliği.
-
-   > [!NOTE]
-   > Zaman **/CLR** etkin **özellik sayfaları** iletişim kutusu, derleyici seçeneği ile uyumlu olmayan bir Özellikler **/CLR** de ayarlanır, gerektiği gibi. Örneğin, varsa **/RTC** ayarlanır ve ardından **/CLR** etkinleştirildiğinde **/RTC** devre dışı bırakılır.
-   >
-   >  Ayrıca, hata ayıklaması yaptığınızda bir **/CLR** uygulama kümesi **hata ayıklayıcı türü** özelliğini **karma** veya **yalnızca yönetilen**. Daha fazla bilgi için [C++ hata ayıklama yapılandırması proje ayarları](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration).
-
-   Bir modül oluşturma hakkında bilgi için bkz [noassembly (MSIL modülü Oluştur)](../../build/reference/noassembly-create-a-msil-module.md).
-
-#### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
-
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.CompileAsManaged%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

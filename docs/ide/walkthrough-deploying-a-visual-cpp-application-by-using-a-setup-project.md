@@ -1,7 +1,7 @@
 ---
 title: Bir kurulum projesi kullanarak Visual C++ uygulamasını dağıtma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/17/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9e781a311f965dc71bb64425a4d1354d6b38e1a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 59ceff2de0093e3a1659fe46bdeea296337370ee
+ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416571"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494484"
 ---
 # <a name="walkthrough-deploying-a-visual-c-application-by-using-a-setup-project"></a>İzlenecek Yol: Kurulum Projesi Kullanarak Visual C++ Uygulamasını Dağıtma
 
@@ -27,32 +27,47 @@ Visual C++ uygulaması dağıtmak için bir kurulum projesi kullanmayı açıkla
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
+Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
+  
+- Visual Studio'nun yüklü olduğu bir bilgisayar.  
+  
+- Visual C++ kitaplıkları yok. başka bir bilgisayar.  
+  
+### <a name="to-deploy-an-application-by-using-a-setup-project"></a>Bir kurulum projesi kullanarak bir uygulamayı dağıtmak için  
 
-- Visual Studio 2012 yüklü olan bir bilgisayar.
+1. Yeni bir proje oluşturun. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**. 
+  
+1. Kullanım **MFC ApplicationWizard** yeni bir Visual Studio çözümü oluşturmak için. Sihirbaz bulmalarına için **yeni proje** iletişim kutusunda **Visual C++** düğümünü **MFC**seçin **MFC uygulaması**, girin bir Projeyi adlandırın ve ardından **Tamam**. **Son**'a tıklayın.
 
-- Visual C++ kitaplıkları yok. başka bir bilgisayar.
+   > [!NOTE]
+   > Varsa **MFC uygulaması** türü eksik:<br/>
+   > **Visual Studio 2017**: seçin **açık Visual Studio yükleyicisi** sol bölmesinde **yeni proje** iletişim kutusu. Yükle seçeneği altında bulunan **C++ ile masaüstü geliştirme** içinde **isteğe bağlı** adlı bileşenleri bölümünde **x86 ve x64 için Visual C++ MFC**.<br/>
+   > **Visual Studio 2015**: Windows Başlat düğmesini ve türü **Program Ekle/Kaldır**. Sonuç listesinden programını açın ve Microsoft Visual Studio 2015 yüklemenizi yüklü programlar listesinde bulun. Çift tıklayın ve ardından **Değiştir** seçip **Microsoft Foundation sınıfları** altındaki bileşen **Visual C++**.
+  
+1. İçin etkin çözüm yapılandırmasını değiştirme **yayın**. Gelen **derleme** menüsünde **Yapılandırma Yöneticisi'ni**. Gelen **Configuration Manager** iletişim kutusunda **yayın** gelen **etkin çözüm yapılandırması** açılan kutusu. **Kapat**'ı tıklatın.
+  
+1. Tuşuna **Ctrl**+**Shift**+**B** uygulamayı oluşturmak için. Veya **derleme** menüsünü tıklatın **Çözümü Derle**. Bu çıktı bu MFC uygulaması projesinin kullanılacak Kurulum projesi sağlar.   
 
-### <a name="to-deploy-an-application-by-using-a-setup-project"></a>Bir kurulum projesi kullanarak bir uygulamayı dağıtmak için
+1. Zaten yapmadıysanız, Microsoft Visual Studio yükleyici projeleri uzantısını indirin. Uzantı, Visual Studio geliştiricileri için ücretsizdir ve Visual Studio için Kurulum ve dağıtım proje şablonları işlevselliğinin ekler. Visual Studio, internet bağlıyken seçin **Araçları** > **Uzantılar ve güncelleştirmeler**. Altında **Uzantılar ve güncelleştirmeler** iletişim kutusunda **çevrimiçi** sekmesi ve türü *Microsoft Visual Studio yükleyici projeleri* arama kutusuna. İsabet **Enter**seçin **Microsoft Visual Studio \<sürüm > yükleyici projeleri**, tıklatıp **indirme**. Tercih çalıştırın ve uzantıyı yükledikten sonra Visual Studio'yu yeniden başlatın. 
+  
+1. Menü çubuğunda, **dosya** > **son projeler ve çözümler**, projenizi yeniden seçin.   
+  
+1. Menü çubuğunda, **dosya** > **yeni** > **proje** açmak için **yeni proje** iletişim kutusu. İletişim kutusunun sol bölmesinde genişletin **yüklü** > **diğer proje türleri** düğümleri ve select **Visual Studio yükleyicisi**. Orta bölmede seçin **Kurulum projesi**.  
+  
+1. Kurum projesi için bir ad girin **adı** kutusu. İçinde **çözüm** aşağı açılan listesinden **eklemek için çözüm**. Seçin **Tamam** Kurulum projesi oluşturmak için. A **dosya Yardımcısı (ProjectName)** sekmesi düzenleyici penceresinde açılır.  
 
-1. Kullanım **MFC ApplicationWizard** yeni bir Visual Studio çözümü oluşturmak için. Sihirbaz bulmalarına için **yeni proje** iletişim kutusunda **Visual C++** düğümünü **MFC**seçin **MFC uygulaması**, girin bir Projeyi adlandırın ve ardından **Tamam**.
+1. Sağ **uygulama klasörü** düğümünü seçip alt **Ekle** > **proje çıktısı** açmak için **proje çıkış grubu Ekle**iletişim kutusu. İletişim kutusunda **birincil çıkışının** tıklatıp **Tamam**. Adlı yeni bir öğe **birincil (etkin) ProjectName çıktısını** görünür.
 
-1. İçin etkin çözüm yapılandırmasını değiştirme **yayın**. Gelen **derleme** menüsünde **Yapılandırma Yöneticisi'ni**. Gelen **Configuration Manager** iletişim kutusunda **yayın** gelen **etkin çözüm yapılandırması** açılan kutusu.
+1. Sağ **uygulama klasörü** düğümünü seçip alt **Ekle** > **derleme** açmak için **bileşen seçin** iletişim bir kutu. Konuda açıklandığı gibi gerekli bir program tarafından dll gerekli eklediğinizde [belirleme hangi DLL'lerin yeniden dağıtılacağını](determining-which-dlls-to-redistribute.md). 
 
-1. Uygulamayı oluşturmak için F7'ye basın. Veya **derleme** menüsünü tıklatın **Çözümü Derle**. Bu çıktı bu MFC uygulaması projesinin kullanılacak Kurulum projesi sağlar.
+1. Öğeyi seçin **birincil (etkin) ProjectName çıktısını**seçin ve sağ tıklatıp **oluşturma kısayoldan birincil çıktı ProjectName (etkin)**. Adlı yeni bir öğe **ProjectName (etkin) için birincil çıkışının kısayoldan** görünür. Kısayol öğeyi yeniden adlandır sonra sürükleyip öğesine **kullanıcının Programlar menüsü** pencerenin sol tarafındaki düğümü.
 
-1. Zaten yapmadıysanız, InstallShield Limited Edition (Visual Studio geliştiricileri için ücretsizdir ve Kurulum ve dağıtım için Visual Studio Proje şablonları işlevselliğinin yerine geçer ısle) programını indirin. Internet'e bağlıyken açın **yeni proje** iletişim kutusunu **dosya**, **yeni**, **proje** çubuk veya tarafından menüsünde çözümünüzde sağ **Çözüm Gezgini** seçip **Ekle**, **yeni proje**. Genişletin **diğer proje türleri** düğümünü seçin **InstallShield Limited Edition'ı Etkinleştir** içinde **Kurulum ve dağıtım** düğümünü ve görüntülenen yönergeleri izleyin. İndirdiğiniz, yüklü ve etkin InstallShield Limited Edition sonra Visual Studio'yu kapatın ve yeniden açın.
+1. Menü çubuğunda, **derleme** > **Configuration Manager**. İçinde **proje** tablosuna ve altında **derleme** sütun, dağıtım projesi için kutuyu işaretleyin. **Kapat**'ı tıklatın.
+  
+1. Menü çubuğunda, **derleme** > **Çözümü Derle** MFC projesi ve dağıtım projesi oluşturun.  
+  
+1. Çözüm klasöründe dağıtım tarafından oluşturulan setup.exe programını bulun. Uygulama ve gerekli kitaplık dosyalarını başka bir bilgisayara yüklemek için bu dosyayı (ve .msi dosyasını) kopyalayabilirsiniz. Kurulum programı, Visual C++ kitaplıkları sahip ikinci bir bilgisayarda çalıştırın.
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
 
-1. Açık **yeni proje** iletişim kutusu yeniden genişletin **diğer proje türleri** düğümünü seçip **InstallShield Limited Edition projesi** içinde  **InstallShield Limited Edition** düğümü.
-
-1. Yönergeleri **Başlarken** Visual Studio MFC projenize bir çıkış başvurusu eklemek için InstallShield Limited Edition şablonu tarafından oluşturulan Kurulum projesi düğümü.
-
-1. (Setup.exe) yükleyici dosyası oluşturmak için Kurulum projesi oluşturun. Bunu yapmak için sağ, Kurulum projesi düğümünü tıklatın **Çözüm Gezgini** seçip **yapı**.
-
-   InstallShield Limited Edition, Kurulum proje ağacında, kurulum dosyası oluşturur (varsayılan olarak, Kurulum projesini Express\SingleImage\DiskImages\DISK1 alt klasöründe bulunabilir).
-
-1. Kurulum programı, Visual C++ kitaplıkları sahip ikinci bir bilgisayarda çalıştırın.
-
-## <a name="see-also"></a>Ayrıca Bkz.
-
-[Dağıtım Örnekleri](../ide/deployment-examples.md)
+[Dağıtım Örnekleri](deployment-examples.md)<br/>
