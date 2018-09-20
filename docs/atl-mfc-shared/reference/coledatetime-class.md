@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c2cb19908b177ea1e07e0178023e868b96a4560
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 39329f4895060ff950f36c3d10dd5e4020f3b98a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754793"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448434"
 ---
 # <a name="coledatetime-class"></a>COleDateTime sınıfı
 
@@ -97,7 +97,7 @@ class COleDateTime
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleDateTime::operator ==, COleDateTime::operator < vb..](#coledatetime_relational_operators)|Karşılaştırabilirsiniz `COleDateTime` değerleri.|
+|[COleDateTime::operator ==, COleDateTime::operator < vb.](#coledatetime_relational_operators)|Karşılaştırabilirsiniz `COleDateTime` değerleri.|
 |[COleDateTime::operator +, COleDateTime::operator-](#operator_add_-)|Ekleme ve çıkarmayı `COleDateTime` değerleri.|
 |[COleDateTime::operator +=, COleDateTime::operator-=](#operator_add_eq_-_eq)|Ekleme ve çıkarmayı bir `COleDateTime` bu değerden `COleDateTime` nesne.|
 |[COleDateTime::operator =](#operator_eq)|Kopya bir `COleDateTime` değeri.|
@@ -1236,9 +1236,9 @@ Sınırları hakkında daha fazla bilgi için `COleDateTime` değerleri başlık
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[COleVariant sınıfı](../../mfc/reference/colevariant-class.md)   
-[CTime sınıfı](../../atl-mfc-shared/reference/ctime-class.md)   
-[CTimeSpan sınıfı](../../atl-mfc-shared/reference/ctimespan-class.md)   
-[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
+[COleVariant Sınıfı](../../mfc/reference/colevariant-class.md)<br/>
+[CTime Sınıfı](../../atl-mfc-shared/reference/ctime-class.md)<br/>
+[CTimeSpan Sınıfı](../../atl-mfc-shared/reference/ctimespan-class.md)<br/>
+[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 

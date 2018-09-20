@@ -48,264 +48,302 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8c96e83d15110cb85e23cd7a8643d615cf7c0d8
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: b97bccbf9615c90292976839f841e4b2ffe6af9d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36952378"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46383817"
 ---
 # <a name="cd2dgeometrysink-class"></a>CD2DGeometrySink sınıfı
-ID2D1GeometrySink için sarmalayıcı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-class CD2DGeometrySink;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CD2DGeometrySink::CD2DGeometrySink](#cd2dgeometrysink)|CD2DPathGeometry nesnesinden CD2DGeometrySink nesnesi oluşturur.|  
-|[CD2DGeometrySink:: ~ CD2DGeometrySink](#_dtorcd2dgeometrysink)|Yok Edicisi. D2D geometri havuz nesnesi yok çağrılır.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CD2DGeometrySink::AddArc](#addarc)|Tek bir yay yolu geometriye ekler|  
-|[CD2DGeometrySink::AddBezier](#addbezier)|Güncel nokta ve belirtilen bitiş noktası arasında küp Bezier eğrisi oluşturur.|  
-|[CD2DGeometrySink::AddBeziers](#addbeziers)|Küp Bezier eğrileri dizisi oluşturur ve bunları geometri havuz ekler.|  
-|[CD2DGeometrySink::AddLine](#addline)|Güncel nokta ve belirtilen bitiş noktası arasında satır bir segment oluşturur ve geometri havuz ekler.|  
-|[CD2DGeometrySink::AddLines](#addlines)|Bir dizi satır belirtilen noktalarını kullanarak oluşturur ve bunları geometri havuz ekler.|  
-|[CD2DGeometrySink::AddQuadraticBezier](#addquadraticbezier)|Güncel nokta ve belirtilen bitiş noktası arasında ikinci derece Bezier eğrisi oluşturur.|  
-|[CD2DGeometrySink::AddQuadraticBeziers](#addquadraticbeziers)|Tek bir çağrı bir dizi olarak bir dizi ikinci derece Bezier kesimleri ekler.|  
-|[CD2DGeometrySink::BeginFigure](#beginfigure)|Yeni bir şekil, belirli bir noktada başlatır.|  
-|[CD2DGeometrySink::Close](#close)|Geometri havuz kapatır|  
-|[CD2DGeometrySink::EndFigure](#endfigure)|Geçerli şekil sonlandırır; İsteğe bağlı olarak kapatılır.|  
-|[CD2DGeometrySink::get](#get)|Döndürür ID2D1GeometrySink arabirimi|  
-|[CD2DGeometrySink::IsValid](#isvalid)|Geometri havuz geçerlilik denetler|  
-|[CD2DGeometrySink::SetFillMode](#setfillmode)|İçinde bu geometri havuzu tarafından açıklanan geometri noktaları olan noktaları dışında olan ve belirlemek için kullanılan yöntemi belirtir.|  
-|[CD2DGeometrySink::SetSegmentFlags](#setsegmentflags)|Geometri havuzuna eklenen yeni kesimleri uygulanacak vuruş ve birleştirme seçeneklerini belirtir.|  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CD2DGeometrySink::operator ID2D1GeometrySink *](#operator_id2d1geometrysink_star)|Döndürür ID2D1GeometrySink arabirimi|  
-  
-### <a name="protected-data-members"></a>Korumalı veri üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CD2DGeometrySink::m_pSink](#m_psink)|Bir ID2D1GeometrySink gösteren bir işaretçi.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `CD2DGeometrySink`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** afxrendertarget.h  
-  
-##  <a name="_dtorcd2dgeometrysink"></a>  CD2DGeometrySink:: ~ CD2DGeometrySink  
- Yok Edicisi. D2D geometri havuz nesnesi yok çağrılır.  
-  
-```  
+
+ID2D1GeometrySink için sarmalayıcı.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+class CD2DGeometrySink;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CD2DGeometrySink::CD2DGeometrySink](#cd2dgeometrysink)|CD2DPathGeometry nesnesinden CD2DGeometrySink bir nesne oluşturur.|
+|[CD2DGeometrySink:: ~ CD2DGeometrySink](#_dtorcd2dgeometrysink)|Yıkıcı. D2D geometri havuz nesnesi yok ediliyorken çağırılır.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CD2DGeometrySink::AddArc](#addarc)|Tek bir yay yolu geometriye ekler|
+|[CD2DGeometrySink::AddBezier](#addbezier)|Bir üçüncü dereceden Bezier eğrisi arasında geçerli nokta ile belirtilen uç noktası oluşturur.|
+|[CD2DGeometrySink::AddBeziers](#addbeziers)|Üçüncü derece Bezier eğrileri bir dizi oluşturur ve bunları geometri havuza ekler.|
+|[CD2DGeometrySink::AddLine](#addline)|Geçerli nokta ile belirtilen bitiş noktası arasında bir çizgi kesimi oluşturur ve geometri havuza ekler.|
+|[CD2DGeometrySink::AddLines](#addlines)|Bir dizi satır belirtilen kullanarak oluşturur ve bunları geometri havuza ekler.|
+|[CD2DGeometrySink::AddQuadraticBezier](#addquadraticbezier)|Geçerli nokta ile belirtilen bitiş noktası arasında bir ikinci dereceden Bezier eğrisi oluşturur.|
+|[CD2DGeometrySink::AddQuadraticBeziers](#addquadraticbeziers)|İkinci dereceden Bezier parçaları bir dizi bir dizi tek bir çağrı olarak ekler.|
+|[CD2DGeometrySink::BeginFigure](#beginfigure)|Belirli bir noktada yeni bir şekil başlatır.|
+|[CD2DGeometrySink::Close](#close)|Geometri havuz kapatır|
+|[CD2DGeometrySink::EndFigure](#endfigure)|Geçerli şekil sona erer; İsteğe bağlı olarak kapatılır.|
+|[CD2DGeometrySink::get](#get)|Döndürür ID2D1GeometrySink arabirimi|
+|[CD2DGeometrySink::IsValid](#isvalid)|Geometri havuz geçerlilik denetler|
+|[CD2DGeometrySink::SetFillMode](#setfillmode)|Noktaları dışında olan ve içinde bu geometri havuzu tarafından açıklanan geometri noktaları olan belirlemek için kullanılan yöntemi belirtir.|
+|[CD2DGeometrySink::SetSegmentFlags](#setsegmentflags)|Geometri havuza eklenen yeni kesimleri uygulanacak vuruş ve birleştirme seçeneklerini belirtir.|
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CD2DGeometrySink::operator ID2D1GeometrySink *](#operator_id2d1geometrysink_star)|Döndürür ID2D1GeometrySink arabirimi|
+
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CD2DGeometrySink::m_pSink](#m_psink)|Bir ID2D1GeometrySink işaretçisi.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`CD2DGeometrySink`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** afxrendertarget.h
+
+##  <a name="_dtorcd2dgeometrysink"></a>  CD2DGeometrySink:: ~ CD2DGeometrySink
+
+Yıkıcı. D2D geometri havuz nesnesi yok ediliyorken çağırılır.
+
+```
 virtual ~CD2DGeometrySink();
-```  
-  
-##  <a name="addarc"></a>  CD2DGeometrySink::AddArc  
- Tek bir yay yolu geometriye ekler  
-  
-```  
+```
+
+##  <a name="addarc"></a>  CD2DGeometrySink::AddArc
+
+Tek bir yay yolu geometriye ekler
+
+```
 void AddArc(const D2D1_ARC_SEGMENT& arc);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Yay*  
- Yay segment şekle eklemek için  
-  
-##  <a name="addbezier"></a>  CD2DGeometrySink::AddBezier  
- Güncel nokta ve belirtilen bitiş noktası arasında küp Bezier eğrisi oluşturur.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Yay*<br/>
+Yay kesimi eklemek için Şekil
+
+##  <a name="addbezier"></a>  CD2DGeometrySink::AddBezier
+
+Bir üçüncü dereceden Bezier eğrisi arasında geçerli nokta ile belirtilen uç noktası oluşturur.
+
+```
 void AddBezier(const D2D1_BEZIER_SEGMENT& bezier);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Bezier*  
- Denetim noktalarını ve uç noktası eklemek için Bezier eğrisinin açıklar yapısı.  
-  
-##  <a name="addbeziers"></a>  CD2DGeometrySink::AddBeziers  
- Küp Bezier eğrileri dizisi oluşturur ve bunları geometri havuz ekler.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Bezier*<br/>
+Denetim noktalarını ve uç noktası eklemek için Bezier eğrisinin açıklar yapısı.
+
+##  <a name="addbeziers"></a>  CD2DGeometrySink::AddBeziers
+
+Üçüncü derece Bezier eğrileri bir dizi oluşturur ve bunları geometri havuza ekler.
+
+```
 void AddBeziers(
-    const CArray<D2D1_BEZIER_SEGMENT,  
+    const CArray<D2D1_BEZIER_SEGMENT,
     D2D1_BEZIER_SEGMENT>& beziers);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Beziers*  
- Bezier kesimleri oluşturmak için Bezier eğrileri açıklayan dizisi. Bir eğri dizideki ilk Bezier kesiminin uç noktasına geometri havuz ait geçerli noktası (bitiş noktası çizilmiş son kesimi veya BeginFigure tarafından belirtilen konumda) çizilir. dizi ek Bezier kesimleri içeriyorsa, her alt Bezier segment önceki Bezier kesiminin uç noktası, başlangıç noktası olarak kullanır.  
-  
-##  <a name="addline"></a>  CD2DGeometrySink::AddLine  
- Güncel nokta ve belirtilen bitiş noktası arasında satır bir segment oluşturur ve geometri havuz ekler.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*bezierler*<br/>
+Bezier parçaları oluşturmak için Bezier eğrileri açıklayan dizisi. Eğri geometri havuz'ın geçerli noktasından (bitiş noktası çizilmiş son segmenti veya BeginFigure tarafından belirtilen konuma) uç noktasına dizideki ilk Bezier kesiminin çizilir. bir dizi ek Bezier segmentler içeriyorsa, her bir sonraki Bezier kesim önceki Bezier kesiminin uç noktası, başlangıç noktası olarak kullanır.
+
+##  <a name="addline"></a>  CD2DGeometrySink::AddLine
+
+Geçerli nokta ile belirtilen bitiş noktası arasında bir çizgi kesimi oluşturur ve geometri havuza ekler.
+
+```
 void AddLine(CD2DPointF point);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Noktası*  
- Çizgiyi çizmek için bitiş noktası.  
-  
-##  <a name="addlines"></a>  CD2DGeometrySink::AddLines  
- Bir dizi satır belirtilen noktalarını kullanarak oluşturur ve bunları geometri havuz ekler.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Noktası*<br/>
+Çizmek için çizginin bitiş noktası.
+
+##  <a name="addlines"></a>  CD2DGeometrySink::AddLines
+
+Bir dizi satır belirtilen kullanarak oluşturur ve bunları geometri havuza ekler.
+
+```
 void AddLines(
-    const CArray<CD2DPointF,  
+    const CArray<CD2DPointF,
     CD2DPointF>& points);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Noktaları*  
- Satırlar çizme açıklayan bir veya daha fazla noktalar dizisi. Bir satır, geometri havuz ait geçerli noktası (bitiş noktası çizilmiş son kesimi veya BeginFigure tarafından belirtilen konumda), dizinin ilk noktanın kadar çizilir. dizi ek noktaları içeriyorsa, bir çizgi dizi ikinci noktaya üçüncü noktası vb. için ikinci noktasından ilk noktasından çizilir. Uç noktaları çizmek için satırlarının bir dizi bir dizi.  
-  
-##  <a name="addquadraticbezier"></a>  CD2DGeometrySink::AddQuadraticBezier  
- Güncel nokta ve belirtilen bitiş noktası arasında ikinci derece Bezier eğrisi oluşturur.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*noktaları*<br/>
+Çizilecek satırları tanımlayan bir veya daha fazla noktaları dizisi. Bir çizgi, dizideki ilk noktasına geometri havuz'ın geçerli noktasından (bitiş noktası çizilmiş son segmenti veya BeginFigure tarafından belirtilen konuma) çizilir. bir dizi ek noktaları içeriyorsa, bir çizgi dizisinde ikinci noktasına ikinci noktasından üçüncü noktası vb. ilk noktasından çizilir. Bir dizi çizgileri çizmek için uç noktaları dizisi.
+
+##  <a name="addquadraticbezier"></a>  CD2DGeometrySink::AddQuadraticBezier
+
+Geçerli nokta ile belirtilen bitiş noktası arasında bir ikinci dereceden Bezier eğrisi oluşturur.
+
+```
 void AddQuadraticBezier(const D2D1_QUADRATIC_BEZIER_SEGMENT& bezier);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Bezier*  
- Denetim noktası ve bitiş noktası eklemek için ikinci derece Bezier eğrisinin açıklar yapısı.  
-  
-##  <a name="addquadraticbeziers"></a>  CD2DGeometrySink::AddQuadraticBeziers  
- Tek bir çağrı bir dizi olarak bir dizi ikinci derece Bezier kesimleri ekler.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Bezier*<br/>
+Denetim noktası ve bitiş noktası eklemek için ikinci dereceden Bezier eğrisi açıklar yapısı.
+
+##  <a name="addquadraticbeziers"></a>  CD2DGeometrySink::AddQuadraticBeziers
+
+İkinci dereceden Bezier parçaları bir dizi bir dizi tek bir çağrı olarak ekler.
+
+```
 void AddQuadraticBeziers(
-    const CArray<D2D1_QUADRATIC_BEZIER_SEGMENT,  
+    const CArray<D2D1_QUADRATIC_BEZIER_SEGMENT,
     D2D1_QUADRATIC_BEZIER_SEGMENT>& beziers);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Beziers*  
- İkinci derece Bezier kesimleri bir dizi bir dizi.  
-  
-##  <a name="beginfigure"></a>  CD2DGeometrySink::BeginFigure  
- Yeni bir şekil, belirli bir noktada başlatır.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*bezierler*<br/>
+İkinci dereceden Bezier parçaları bir dizi dizisi.
+
+##  <a name="beginfigure"></a>  CD2DGeometrySink::BeginFigure
+
+Belirli bir noktada yeni bir şekil başlatır.
+
+```
 void BeginFigure(
-    CD2DPointF startPoint,  
+    CD2DPointF startPoint,
     D2D1_FIGURE_BEGIN figureBegin);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *startPoint*  
- Yeni şekil başlanan noktası.  
-  
- *figureBegin*  
- Yeni şekil boş veya dolu olması gerekir.  
-  
-##  <a name="cd2dgeometrysink"></a>  CD2DGeometrySink::CD2DGeometrySink  
- CD2DPathGeometry nesnesinden CD2DGeometrySink nesnesi oluşturur.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*startPoint*<br/>
+Yeni şekil başlanacak noktası.
+
+*figureBegin*<br/>
+Yeni şekil boş veya doldurulmuş olması gerekir.
+
+##  <a name="cd2dgeometrysink"></a>  CD2DGeometrySink::CD2DGeometrySink
+
+CD2DPathGeometry nesnesinden CD2DGeometrySink bir nesne oluşturur.
+
+```
 CD2DGeometrySink(CD2DPathGeometry& pathGeometry);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pathGeometry*  
- Varolan bir CD2DPathGeometry nesne.  
-  
-##  <a name="close"></a>  CD2DGeometrySink::Close  
- Geometri havuz kapatır  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pathGeometry*<br/>
+Mevcut bir CD2DPathGeometry nesne.
+
+##  <a name="close"></a>  CD2DGeometrySink::Close
+
+Geometri havuz kapatır
+
+```
 BOOL Close();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde FALSE.  
-  
-##  <a name="endfigure"></a>  CD2DGeometrySink::EndFigure  
- Geçerli şekil sonlandırır; İsteğe bağlı olarak kapatılır.  
-  
-```  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılı olursa sıfır dışı; Aksi durumda FALSE.
+
+##  <a name="endfigure"></a>  CD2DGeometrySink::EndFigure
+
+Geçerli şekil sona erer; İsteğe bağlı olarak kapatılır.
+
+```
 void EndFigure(D2D1_FIGURE_END figureEnd);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *figureEnd*  
- Geçerli şekil kapalı olup olmadığını belirten bir değer. Şekil kapattıysanız, bir çizgi geçerli noktası BeginFigure tarafından belirtilen başlangıç noktası arasındaki çizilir.  
-  
-##  <a name="get"></a>  CD2DGeometrySink::get  
- Döndürür ID2D1GeometrySink arabirimi  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*figureEnd*<br/>
+Geçerli şekil kapalı olup olmadığını belirten bir değer. Şekil kapalı ise, bir çizgi geçerli nokta ile BeginFigure tarafından belirtilen başlangıç noktası arasındaki çizilir.
+
+##  <a name="get"></a>  CD2DGeometrySink::get
+
+Döndürür ID2D1GeometrySink arabirimi
+
+```
 ID2D1GeometrySink* Get();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- İşaretçi bir ID2D1GeometrySink arabirimi veya nesnesi henüz başlatılmadı yoksa NULL.  
-  
-##  <a name="isvalid"></a>  CD2DGeometrySink::IsValid  
- Geometri havuz geçerlilik denetler  
-  
-```  
-BOOL IsValid() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Geometri havuz geçerli ise TRUE; Aksi takdirde FALSE.  
-  
-##  <a name="m_psink"></a>  CD2DGeometrySink::m_pSink  
- Bir ID2D1GeometrySink gösteren bir işaretçi.  
-  
-```  
-ID2D1GeometrySink* m_pSink;  
-```  
-  
-##  <a name="operator_id2d1geometrysink_star"></a>  CD2DGeometrySink::operator ID2D1GeometrySink *  
- Döndürür ID2D1GeometrySink arabirimi  
-  
-```  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Bir ID2D1GeometrySink arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+
+##  <a name="isvalid"></a>  CD2DGeometrySink::IsValid
+
+Geometri havuz geçerlilik denetler
+
+```
+BOOL IsValid() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Geometri havuz geçerli ise TRUE; Aksi durumda FALSE.
+
+##  <a name="m_psink"></a>  CD2DGeometrySink::m_pSink
+
+Bir ID2D1GeometrySink işaretçisi.
+
+```
+ID2D1GeometrySink* m_pSink;
+```
+
+##  <a name="operator_id2d1geometrysink_star"></a>  CD2DGeometrySink::operator ID2D1GeometrySink *
+
+Döndürür ID2D1GeometrySink arabirimi
+
+```
 operator ID2D1GeometrySink*();
-```   
-  
-### <a name="return-value"></a>Dönüş Değeri  
- İşaretçi bir ID2D1GeometrySink arabirimi veya nesnesi henüz başlatılmadı yoksa NULL.  
-  
-##  <a name="setfillmode"></a>  CD2DGeometrySink::SetFillMode  
- İçinde bu geometri havuzu tarafından açıklanan geometri noktaları olan noktaları dışında olan ve belirlemek için kullanılan yöntemi belirtir.  
-  
-```  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Bir ID2D1GeometrySink arabirimi veya nesne henüz başlatılmamışsa NULL işaretçisi.
+
+##  <a name="setfillmode"></a>  CD2DGeometrySink::SetFillMode
+
+Noktaları dışında olan ve içinde bu geometri havuzu tarafından açıklanan geometri noktaları olan belirlemek için kullanılan yöntemi belirtir.
+
+```
 void SetFillMode(D2D1_FILL_MODE fillMode);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *fillMode*  
- Verilen bir noktaya geometrinin parçası olup olmadığını belirlemek için kullanılan yöntem.  
-  
-##  <a name="setsegmentflags"></a>  CD2DGeometrySink::SetSegmentFlags  
- Geometri havuzuna eklenen yeni kesimleri uygulanacak vuruş ve birleştirme seçeneklerini belirtir.  
-  
-```  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*fillMode*<br/>
+Belirli bir noktaya parçası olup olmadığını belirlemek için kullanılan yöntem.
+
+##  <a name="setsegmentflags"></a>  CD2DGeometrySink::SetSegmentFlags
+
+Geometri havuza eklenen yeni kesimleri uygulanacak vuruş ve birleştirme seçeneklerini belirtir.
+
+```
 void SetSegmentFlags(D2D1_PATH_SEGMENT vertexFlags);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *vertexFlags*  
- Geometri havuzuna eklenen yeni kesimleri uygulanacak vuruş ve Birleştirme Seçenekleri.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıflar](../../mfc/reference/mfc-classes.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*vertexFlags*<br/>
+Geometri havuza eklenen yeni kesimleri uygulanacak vuruş ve Birleştirme Seçenekleri.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıflar](../../mfc/reference/mfc-classes.md)
