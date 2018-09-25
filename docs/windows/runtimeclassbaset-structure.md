@@ -1,26 +1,32 @@
 ---
 title: RuntimeClassBaseT yapısı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/24/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::RuntimeClassBaseT
+- implements/Microsoft::WRL::Details::RuntimeClassBaseT::AsIID
+- implements/Microsoft::WRL::Details::RuntimeClassBaseT::GetImplementedIIDS
 dev_langs:
 - C++
+helpviewer_keywords:
+- Microsoft::WRL::Details::RuntimeClassBaseT structure
+- Microsoft::WRL::Details::RuntimeClassBaseT::AsIID method
+- Microsoft::WRL::Details::RuntimeClassBaseT::GetImplementedIIDS method
 ms.assetid: a62775fb-3359-4f45-9ff1-c07fa8da464b
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bcfce810dff7862c60fca853b216eeb05d09dd0f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c9e7f5b38d3434e8753646db4733218978e7e766
+ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414907"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47169716"
 ---
 # <a name="runtimeclassbaset-structure"></a>RuntimeClassBaseT Yapısı
 
@@ -46,6 +52,13 @@ Bir veya daha fazla belirten bayraklar alanı [RuntimeClassType](../windows/runt
 
 ## <a name="members"></a>Üyeler
 
+### <a name="protected-methods"></a>Korumalı Yöntemler
+
+Ad                                                         | Açıklama
+------------------------------------------------------------ | -----------------------------------------------------------------------------
+[Runtimeclassbaset::asııd](#asiid)                           | Belirtilen arabirim kimliği. bir işaretçi alır.
+[Runtimeclassbaset::getımplementedııds](#getimplementediids) | Belirtilen bir tür tarafından uygulanan kimlikleri arabiriminin dizisini alır.
+
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
 `RuntimeClassBaseT`
@@ -56,6 +69,72 @@ Bir veya daha fazla belirten bayraklar alanı [RuntimeClassType](../windows/runt
 
 **Namespace:** Microsoft::wrl:: details
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="asiid"></a>Runtimeclassbaset::asııd
 
-[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+template<typename T>
+__forceinline static HRESULT AsIID(
+   _In_ T* implements,
+   REFIID riid,
+   _Deref_out_ void **ppvObject
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*T*<br/>
+Parametresi tarafından belirtilen arabirim kimliği uygulayan bir tür *riid*.
+
+*Uygulayan*<br/>
+Şablon parametresi tarafından belirtilen türde bir değişken *T*.
+
+*riid*<br/>
+Alınacak arabirim kimliği.
+
+*ppvObject*<br/>
+Bu işlem başarılı olursa, bir işaretçi bir-işaretçiye arabirimi için belirtilen parametre tarafından *riid*.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+
+### <a name="remarks"></a>Açıklamalar
+
+Belirtilen arabirim kimliği. bir işaretçi alır.
+
+## <a name="getimplementediids"></a>Runtimeclassbaset::getımplementedııds
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+template<typename T>
+__forceinline static HRESULT GetImplementedIIDS(
+   _In_ T* implements,
+   _Out_ ULONG *iidCount,
+   _Deref_out_ _Deref_post_cap_(*iidCount) IID **iids
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*T*<br/>
+Türünü *uygulayan* parametresi.
+
+*Uygulayan*<br/>
+Parametresi tarafından belirtilen türe işaretçi *T*.
+
+*Iidcount*<br/>
+Arabirim kimlikleri alınacak maksimum sayısı.
+
+*IID'leri*<br/>
+Bu işlem kimlikleri tür tarafından uygulanan arabirimi dizisi başarıyla tamamlanırsa *T*.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+
+### <a name="remarks"></a>Açıklamalar
+
+Belirtilen bir tür tarafından uygulanan kimlikleri arabiriminin dizisini alır.

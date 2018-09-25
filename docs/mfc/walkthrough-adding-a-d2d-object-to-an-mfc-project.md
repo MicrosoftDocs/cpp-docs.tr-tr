@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: bir MFC projesine D2D nesnesi ekleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 06/19/2018
+ms.date: 09/20/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -15,24 +15,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87e1c696f3da374d7b71e1b24e3a8bd3ebfe41b9
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 6117b17421e37238c9bc585677eb7b0c8ed557fb
+ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36954877"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47169664"
 ---
 # <a name="walkthrough-adding-a-d2d-object-to-an-mfc-project"></a>İzlenecek Yol: Bir MFC Projesine D2D Nesnesi Ekleme
 
-Bu kılavuz temel Direct2D eklemek öğretir (D2D) nesne bir Visual C++ için Microsoft Foundation Class Kitaplığı (MFC) projesi ve ardından yazdırır bir uygulamaya Projeyi derlemek "Hello, world" gradyan arka plan üzerinde.
+Bu izlenecek yol, temel bir Direct2D eklemek öğretir (D2D) nesne bir Visual C++ için Microsoft Foundation Class Kitaplığı'nı (MFC) projesi ve ardından Proje yazdıran bir uygulamaya "Hello, world" gradyan arka plan üzerinde.
 
-İzlenecek yol bu görevlerin nasıl gerçekleştirileceğini gösterir:
+İzlenecek yol aşağıdaki görevlerin nasıl gerçekleştirileceğini gösterir:
 
-- MFC uygulaması oluşturun.
+- Bir MFC uygulaması oluşturun.
 
-- Düz renkli fırça ve doğrusal gradyan fırçası oluşturun.
+- Düz renkli fırça ve doğrusal gradyan fırça oluşturun.
 
-- Gradyan fırçası pencere ne zaman yeniden boyutlandırılır uygun şekilde değiştirecek şekilde değiştirin.
+- Gradyan fırçası uygun zaman penceresi yeniden boyutlandırılırken değiştirecek şekilde değiştirin.
 
 - D2D çizim işleyicisi uygulayın.
 
@@ -42,19 +42,19 @@ Bu kılavuz temel Direct2D eklemek öğretir (D2D) nesne bir Visual C++ için Mi
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu kılavuzda tamamlamak için Visual Studio yüklenmiş olması **C++ ile masaüstü geliştirme** iş yükü ve isteğe bağlı **x86 hem x64 için Visual C++ MFC** bileşeni.
+Bu izlenecek yolu tamamlamak için Visual Studio ile yüklü olmalıdır. **C++ ile masaüstü geliştirme** iş yükü ve isteğe bağlı **x86 ve x64 için Visual C++ MFC** bileşeni.
 
-## <a name="to-create-an-mfc-application"></a>MFC Uygulama oluşturmak için
+## <a name="to-create-an-mfc-application"></a>Bir MFC uygulaması oluşturmak için
 
-1. Üzerinde **dosya** menüsündeki **yeni** ve ardından **proje**.
+1. Üzerinde **dosya** menüsünde **yeni** seçip **proje**.
 
-2. İçinde **yeni proje** iletişim kutusunda, sol bölmede altında **yüklü şablonlar**, genişletin **Visual C++** ve ardından **MFC**. Orta bölmede seçin **MFC uygulaması**. İçinde **adı** kutusuna *MFCD2DWalkthrough*. Seçin **Tamam**.
+1. İçinde **yeni proje** iletişim kutusunda, sol bölmede altında **yüklü şablonlar**, genişletme **Visual C++** seçip **MFC**. Orta bölmede seçin **MFC uygulaması**. İçinde **adı** kutusuna *MFCD2DWalkthrough*. Seçin **Tamam**.
 
-3. İçinde **MFC Uygulama Sihirbazı'nı**, seçin **son** ayarlarda herhangi bir değişiklik olmadan.
+1. İçinde **MFC Uygulama Sihirbazı**, seçin **son** herhangi bir ayarı değiştirmeden.
 
-## <a name="to-create-a-solid-color-brush-and-a-linear-gradient-brush"></a>Düz renkli fırça ve doğrusal gradyan fırçası oluşturmak için
+## <a name="to-create-a-solid-color-brush-and-a-linear-gradient-brush"></a>Düz renkli fırça ve doğrusal gradyan fırça oluşturma
 
-1. İçinde **Çözüm Gezgini**, **MFCD2DWalkthrough** içinde proje **üstbilgi dosyaları** klasörü, açık MFCD2DWalkthroughView.h. Bu kodu ekleyin `CMFCD2DWalkthroughView` üç veri değişkenleri oluşturmak üzere sınıfı:
+1. İçinde **Çözüm Gezgini**, **MFCD2DWalkthrough** içinde proje **üst bilgi dosyaları** klasör, açık MFCD2DWalkthroughView.h. Bu kodu ekleyin `CMFCD2DWalkthroughView` üç veri değişkenleri oluşturma sınıfı:
 
    ```cpp
    CD2DTextFormat* m_pTextFormat;
@@ -64,7 +64,7 @@ Bu kılavuzda tamamlamak için Visual Studio yüklenmiş olması **C++ ile masa�
 
    Dosyayı kaydedin ve kapatın.
 
-2. İçinde **kaynak dosyaları** klasörü, açık MFCD2DWalkthroughView.cpp. Oluşturucuda `CMFCD2DWalkthroughView` sınıfı, bu kodu ekleyin:
+1. İçinde **kaynak dosyaları** klasör, açık MFCD2DWalkthroughView.cpp. Oluşturucusunda `CMFCD2DWalkthroughView` sınıfı, bu kodu ekleyin:
 
    ```cpp
    // Enable D2D support for this window:
@@ -108,15 +108,15 @@ Bu kılavuzda tamamlamak için Visual Studio yüklenmiş olması **C++ ile masa�
 
    Dosyayı kaydedin ve kapatın.
 
-## <a name="to-modify-the-gradient-brush-so-that-it-will-change-appropriately-when-the-window-is-resized"></a>Böylece zaman penceresi boyutlandırılır uygun şekilde değişir gradyan fırçası değiştirmek için
+## <a name="to-modify-the-gradient-brush-so-that-it-will-change-appropriately-when-the-window-is-resized"></a>Böylece uygun zaman penceresi yeniden boyutlandırılırken değişir gradyan fırçası değiştirmek için
 
 1. Üzerinde **proje** menüsünde seçin **sınıf Sihirbazı**.
 
-2. İçinde **MFC Sınıf Sihirbazı**altında **sınıf adı**seçin `CMFCD2DWalkthroughView`.
+1. İçinde **MFC Sınıf Sihirbazı**altında **sınıf adı**seçin `CMFCD2DWalkthroughView`.
 
-3. Üzerinde **iletileri** sekmesinde **iletileri** kutusunda `WM_SIZE` ve ardından **işleyici Ekle**. Bu eylem ekler `OnSize` ileti işleyicisi `CMFCD2DWalkthroughView` sınıfı.
+1. Üzerinde **iletileri** sekmesinde **iletileri** kutusunda `WM_SIZE` seçip **işleyici Ekle**. Bu eylem ekler `OnSize` ileti işleyicisi `CMFCD2DWalkthroughView` sınıfı.
 
-4. İçinde **varolan işleyicileri** kutusunda `OnSize`. Seçin **kodu Düzenle** görüntülemek için `CMFCD2DWalkthroughView::OnSize` yöntemi. Yöntemi sonuna aşağıdaki kodu ekleyin.
+1. İçinde **varolan işleyicileri** kutusunda `OnSize`. Seçin **kodunu Düzenle** görüntülenecek `CMFCD2DWalkthroughView::OnSize` yöntemi. Yönteminin sonunda, aşağıdaki kodu ekleyin.
 
    ```cpp
    m_pLinearGradientBrush->SetEndPoint(CPoint(cx, cy));
@@ -128,13 +128,13 @@ Bu kılavuzda tamamlamak için Visual Studio yüklenmiş olması **C++ ile masa�
 
 1. Üzerinde **proje** menüsünde seçin **sınıf Sihirbazı**.
 
-2. İçinde **MFC Sınıf Sihirbazı**altında **sınıf adı**seçin `CMFCD2DWalkthroughView`.
+1. İçinde **MFC Sınıf Sihirbazı**altında **sınıf adı**seçin `CMFCD2DWalkthroughView`.
 
-3. Üzerinde **iletileri** sekmesinde, seçin **eklemek özel ileti**.
+1. Üzerinde **iletileri** sekmesini, **özel ileti Ekle**.
 
-4. İçinde **eklemek özel ileti** iletişim kutusunda **özel Windows ileti** kutusuna *AFX_WM_DRAW2D*. İçinde **ileti işleyicisi adı** kutusuna *OnDraw2D*. Seçin **kayıtlı ileti** seçeneğini ve ardından **Tamam**. Bu eylem bir ileti işleyicisi AFX_WM_DRAW2D iletiye ekler `CMFCD2DWalkthroughView` sınıfı.
+1. İçinde **özel ileti Ekle** iletişim kutusundaki **özel Windows iletisi** kutusuna *AFX_WM_DRAW2D*. İçinde **ileti işleyicisi adı** kutusuna *OnDraw2D*. Seçin **kayıtlı ileti** seçeneğini ve ardından **Tamam**. Bu eylem için AFX_WM_DRAW2D ileti için ileti işleyicisi ekler `CMFCD2DWalkthroughView` sınıfı.
 
-5. İçinde **varolan işleyicileri** kutusunda `OnDraw2D`. Seçin **kodu Düzenle** görüntülemek için `CMFCD2DWalkthroughView::OnDraw2D` yöntemi. Bu kodu kullanın `CMFCD2DWalkthroughView::OnDrawD2D` yöntemi:
+1. İçinde **varolan işleyicileri** kutusunda `OnDraw2D`. Seçin **kodunu Düzenle** görüntülenecek `CMFCD2DWalkthroughView::OnDraw2D` yöntemi. Bu kodu için `CMFCD2DWalkthroughView::OnDrawD2D` yöntemi:
 
    ```cpp
    afx_msg LRESULT CMFCD2DWalkthroughView::OnDraw2D(
@@ -163,8 +163,8 @@ Bu kılavuzda tamamlamak için Visual Studio yüklenmiş olması **C++ ile masa�
 
 ## <a name="to-verify-the-results"></a>Sonuçları doğrulamak için
 
-- Derleme ve uygulamayı çalıştırın. Pencereyi yeniden boyutlandırdığınızda değişiklikleri bir gradyan dikdörtgen olmalıdır. "Hello World!" Dikdörtgen Merkezi'nde görüntülenmesi gerekir.
+Derleme ve uygulamayı çalıştırın. Pencereyi yeniden boyutlandırdığınızda değişir gradyan bir dikdörtgen sahip olması gerekir. "Hello World!" dikdörtgenin Merkezi'nde görüntülenmesi gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek Yollar](../mfc/walkthroughs-mfc.md)
+[İzlenecek Yollar](../mfc/walkthroughs-mfc.md)

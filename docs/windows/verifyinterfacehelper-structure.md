@@ -1,28 +1,30 @@
 ---
 title: Verifyınterfacehelper yapısı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/24/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::VerifyInterfaceHelper
+- implements/Microsoft::WRL::Details::VerifyInterfaceHelper::Verify
 dev_langs:
 - C++
 helpviewer_keywords:
-- VerifyInterfaceHelper structure
+- Microsoft::WRL::Details::VerifyInterfaceHelper structure
+- Microsoft::WRL::Details::VerifyInterfaceHelper::Verify method
 ms.assetid: ea95b641-199a-4fdf-964b-186b40cb3ba7
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 62914b6e46b1fe98c95fba3ab96821c961888db8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e7aa7d796fb30a30a100f5f914feec57909407e5
+ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413659"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47169768"
 ---
 # <a name="verifyinterfacehelper-structure"></a>VerifyInterfaceHelper Yapısı
 
@@ -58,9 +60,9 @@ Doğrulamak için bir arabirim.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[VerifyInterfaceHelper::Verify Metodu](../windows/verifyinterfacehelper-verify-method.md)||
+Ad                                            | Açıklama
+----------------------------------------------- | ---------------------------------------------------------------------------------------------------
+[VerifyInterfaceHelper::Verify Metodu](#verify) | Geçerli bir şablon parametresi tarafından belirtilen arabirim belirli gereksinimleri karşıladığını doğrular.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -72,6 +74,14 @@ Doğrulamak için bir arabirim.
 
 **Namespace:** Microsoft::wrl:: details
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="verify"></a>Verifyınterfacehelper::Verify
 
-[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+static void Verify();
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Geçerli bir şablon parametresi tarafından belirtilen arabirim belirli gereksinimleri karşıladığını doğrular.
