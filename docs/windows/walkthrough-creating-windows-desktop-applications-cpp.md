@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Geleneksel Windows masaüstü uygulaması (C++) oluştur | Microsoft Docs'
 ms.custom: get-started-article
-ms.date: 06/12/2018
+ms.date: 09/18/2018
 ms.technology:
 - cpp-windows
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 34342fbca00a127d1fdee13d29626bc2a3dfe53f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 7e9541517852696073a3dbbff560bb6c44fd3264
+ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679211"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029677"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: Geleneksel Windows masaüstü uygulaması (C++) oluştur
 
@@ -120,7 +120,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
    Parametreler ve bu işlevin dönüş değeri hakkında daha fazla bilgi için bkz. [WinMain giriş noktası](https://msdn.microsoft.com/library/windows/desktop/ms633559).
 
    > [!NOTE]
-   > Tüm bu ek sözcükler gibi nelerdir `CALLBACK`, veya `HINSTANCE`, veya `_In_`? Tür tanımları geleneksel Windows API kullanır ve kapsamlı bir şekilde hemen soyutlamak için Önişlemci makroları ayrıntılarını türleri ve platforma özgü bazı kod, çağırma kuralları, gibi **__declspec** bildirimler ve pragmalar derleyici. Visual Studio IntelliSense kullanabileceğiniz [hızlı bilgi](/visualstudio/ide/using-intellisense#quick-info) özelliği bu tür tanımlarının ve makroları tanımlayın görmek için. Fare, ilgilenilen sözcüğün üzerinde gelin veya seçin ve ctrl-K, ctrl tuşuna-ı tanımını içeren küçük bir açılır pencere. Daha fazla bilgi için [IntelliSense kullanarak](/visualstudio/ide/using-intellisense). Parametreler ve dönüş türleri, sık kullandığınız *SAL ek açıklamalarını* yardımcı olması için programlama hatalarını yakalama. Daha fazla bilgi için [C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanarak](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
+   > Tüm bu ek sözcükler gibi nelerdir `CALLBACK`, veya `HINSTANCE`, veya `_In_`? Tür tanımları geleneksel Windows API kullanır ve kapsamlı bir şekilde hemen soyutlamak için Önişlemci makroları ayrıntılarını türleri ve platforma özgü bazı kod, çağırma kuralları, gibi **__declspec** bildirimler ve pragmalar derleyici. Visual Studio IntelliSense kullanabileceğiniz [hızlı bilgi](/visualstudio/ide/using-intellisense#quick-info) özelliği bu tür tanımlarının ve makroları tanımlayın görmek için. Fare, ilgilenilen sözcüğün üzerinde gelin veya görseli seçip **Ctrl**+**K**, **Ctrl**+**miyim** için bir tanımını içeren küçük açılır pencere. Daha fazla bilgi için [IntelliSense kullanarak](/visualstudio/ide/using-intellisense). Parametreler ve dönüş türleri, sık kullandığınız *SAL ek açıklamalarını* yardımcı olması için programlama hatalarını yakalama. Daha fazla bilgi için [C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanarak](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
 
 1. Windows Masaüstü programları gerektiren &lt;windows.h >. &lt;Tchar.h > tanımlar `TCHAR` sonuçta çözümler makro için **wchar_t** UNICODE sembolü projenizde tanımlanmazsa, aksi takdirde, çözümler **char**.  Her zaman etkin UNICODE ile derleme yaparsanız TCHAR ihtiyacınız yoksa ve yalnızca kullanabilirsiniz **wchar_t** doğrudan.
 

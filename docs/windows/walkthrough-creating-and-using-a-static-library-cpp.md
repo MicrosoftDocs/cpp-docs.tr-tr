@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Oluşturma ve bir statik kitaplık (C++) kullanılarak | Microsoft Docs'
 ms.custom: get-started-article
-ms.date: 07/12/2018
+ms.date: 09/18/2018
 ms.technology:
 - cpp-windows
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d9b71435b4fd2952746b2b097d08008624f8942b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8d495843d7979ace1d23710eb50c910e9089cf9c
+ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412541"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029703"
 ---
 # <a name="walkthrough-creating-and-using-a-static-library-c"></a>İzlenecek yol: Statik Kitaplık Oluşturma ve Kullanma (C++)
 
@@ -49,35 +49,44 @@ Bir C++ dilinin temellerini anlama.
 
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-2. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü, Visual C++** ve ardından **Windows Masaüstü**.
+1. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü** > **Visual C++** ve ardından **Windows Masaüstü**. Orta bölmede seçin **Windows Masaüstü Sihirbazı'nı**.
 
-3. Orta bölmede seçin **Windows Masaüstü Sihirbazı'nı**.
+   > [!NOTE]
+   > Visual Studio 2017'den daha eski sürümleri için de **yeni proje** iletişim kutusunda **yüklü** > **şablonları**  >  **Visual C++** ve ardından **Win32**. Orta bölmede seçin **Win32 konsol uygulaması**.
 
-4. Proje için bir ad belirleyin — Örneğin, *MathFuncsLib*— içinde **adı** kutusu. Çözüm için bir ad belirleyin — Örneğin, *StaticLibrary*— içinde **çözüm adı** kutusu. Seçin **Tamam** düğmesi.
+1. Proje için bir ad belirleyin — Örneğin, *MathFuncsLib*— içinde **adı** kutusu. Çözüm için bir ad belirleyin — Örneğin, *StaticLibrary*— içinde **çözüm adı** kutusu. Seçin **Tamam** düğmesi.
 
-5. Altında **uygulama türü**, statik kitaplık (.lib) seçin.
+    - Visual Studio 2017 için
 
-6. Altında **ek seçenekler**, işaretini kaldırın **önceden derlenmiş üst bilgi** onay kutusu.
+        1. Altında **uygulama türü**seçin **statik kitaplık (.lib)**.
 
-7. Seçin **Tamam** projeyi oluşturmak için.
+        1. Altında **Additioal seçenekleri**, işaretini kaldırın **önceden derlenmiş üst bilgi** onay kutusu.
+
+        1. Seçin **Tamam** projeyi oluşturmak için.
+
+    - Visual Studio 2017'den daha eski sürümleri
+
+        1. **İleri**'ye tıklayın.
+
+        1. Altında **uygulama türü**seçin **statik kitaplık**. Ardından işaretini kaldırın **önceden derlenmiş üst bilgi** seçin ve kutusunda **son**.
 
 ##  <a name="AddClassToLib"></a> Statik kitaplığa bir sınıf ekleme
 
 ### <a name="to-add-a-class-to-the-static-library"></a>Statik kitaplığa bir sınıf eklemek için
 
-1. Yeni bir sınıf için bir üstbilgi dosyası oluşturmak için kısayol menüsünü açın **MathFuncsLib** projesi **Çözüm Gezgini**ve ardından **Ekle**, **yeni öğe** . İçinde **Yeni Öğe Ekle** iletişim kutusunda, sol bölmede altında **Visual C++** seçin **kod**. Orta bölmede seçin **üst bilgi dosyası (.h)**. Üstbilgi dosyası için bir ad belirtin — örneğin, *MathFuncsLib.h*— ve ardından **Ekle** düğmesi. Boş üstbilgi dosyası görüntülenir.
+1. Yeni bir sınıf için bir üstbilgi dosyası oluşturmak için kısayol menüsünü açın **MathFuncsLib** projesi **Çözüm Gezgini**ve ardından **Ekle**  >   **Yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, sol bölmede altında **Visual C++** seçin **kod**. Orta bölmede seçin **üst bilgi dosyası (.h)**. Üstbilgi dosyası için bir ad belirtin — örneğin, *MathFuncsLib.h*— ve ardından **Ekle** düğmesi. Boş üstbilgi dosyası görüntülenir.
 
-2. Adlı bir sınıf ekleyin `MyMathFuncs` toplama, çıkarma, çarpma ve bölme gibi genel matematik işlemlerini yapmak için. Kod buna benzemelidir:
+1. Adlı bir sınıf ekleyin `MyMathFuncs` toplama, çıkarma, çarpma ve bölme gibi genel matematik işlemlerini yapmak için. Kod buna benzemelidir:
 
    [!code-cpp[NVC_Walkthrough_Create_Static_Lib#100](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_1.h)]
 
-3. Yeni bir sınıf için bir kaynak dosyası oluşturmak için kısayol menüsünü açın **MathFuncsLib** projesi **Çözüm Gezgini**ve ardından **Ekle**, **yeni öğe** . İçinde **Yeni Öğe Ekle** iletişim kutusunda, sol bölmede altında **Visual C++** seçin **kod**. Orta bölmede seçin **C++ dosyası (.cpp)**. Kaynak dosyası için bir ad belirleyin — Örneğin, *MathFuncsLib.cpp*— ve ardından **Ekle** düğmesi. Boş bir kaynak dosyası görüntülenir.
+1. Yeni bir sınıf için bir kaynak dosyası oluşturmak için kısayol menüsünü açın **MathFuncsLib** projesi **Çözüm Gezgini**ve ardından **Ekle**  >   **Yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, sol bölmede altında **Visual C++** seçin **kod**. Orta bölmede seçin **C++ dosyası (.cpp)**. Kaynak dosyası için bir ad belirleyin — Örneğin, *MathFuncsLib.cpp*— ve ardından **Ekle** düğmesi. Boş bir kaynak dosyası görüntülenir.
 
-4. Bu kaynak dosyası için işlevselliği uygulamak için kullanmak **MyMathFuncs**. Kod buna benzemelidir:
+1. Bu kaynak dosyası için işlevselliği uygulamak için kullanmak **MyMathFuncs**. Kod buna benzemelidir:
 
    [!code-cpp[NVC_Walkthrough_Create_Static_Lib#110](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_2.cpp)]
 
-5. Seçerek statik kitaplığı derleyin **derleme** > **Çözümü Derle** menü çubuğundaki. Bu, diğer programlar tarafından kullanılabilen statik kitaplık oluşturur.
+1. Seçerek statik kitaplığı derleyin **derleme** > **Çözümü Derle** menü çubuğundaki. Bu, diğer programlar tarafından kullanılabilen statik kitaplık oluşturur.
 
    > [!NOTE]
    > Visual Studio komut satırında oluşturduğunuzda, programı iki adımda oluşturmanız gerekir. İlk olarak, çalıştırma `cl /c /EHsc MathFuncsLib.cpp` Kodu derlemek ve adlı bir nesne dosyası oluşturmak için `MathFuncsLib.obj`. ( `cl` Komutu derleyiciyi, cl.exe'yi çalıştırır ve `/c` seçeneği derlemeyi bağlama olmadan belirtir. Daha fazla bilgi için [/c (derleme olmadan bağlamayı)](../build/reference/c-compile-without-linking.md).) İkinci olarak, çalıştırma `lib MathFuncsLib.obj` kodunu bağlamak ve statik kitaplık oluşturmak için `MathFuncsLib.lib`. ( `lib` Komutu Kitaplık Yöneticisi Lib.exe çağırır. Daha fazla bilgi için [LIB başvurusu](../build/reference/lib-reference.md).)
@@ -88,16 +97,26 @@ Bir C++ dilinin temellerini anlama.
 
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-2. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü, Visual C++** ve ardından **Windows Masaüstü**.
+1. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü** > **Visual C++** ve ardından **Windows Masaüstü**. Orta bölmede seçin **Windows Masaüstü Sihirbazı'nı**. 
 
-3. Orta bölmede seçin **Windows Masaüstü Sihirbazı'nı**.
+   > [!NOTE]
+   > Visual Studio 2017'den daha eski sürümleri için de **yeni proje** iletişim kutusunda **yüklü** > **şablonları**  >  **Visual C++** ve ardından **Win32**. Orta bölmede seçin **Win32 konsol uygulaması**.
 
-4. Proje için bir ad belirleyin — Örneğin, *MyExecRefsLib*— içinde **adı** kutusu. Açılan liste yanındaki **çözüm**seçin **eklemek için çözüm**. Bu, statik kitaplık içeren çözüme yeni proje ekler. Seçin **Tamam** düğmesi.
-5. Altında **uygulama türü**seçin **konsol uygulaması (.exe)**.
+1. Proje için bir ad belirleyin — Örneğin, *MyExecRefsLib*— içinde **adı** kutusu. Açılan liste yanındaki **çözüm**seçin **eklemek için çözüm**. Bu, statik kitaplık içeren çözüme yeni proje ekler. Seçin **Tamam** düğmesi.
 
-6. Altında **Additioal seçenekleri**, işaretini kaldırın **önceden derlenmiş üst bilgi** onay kutusu.
+    - Visual Studio 2017 için
 
-7. Seçin **Tamam** projeyi oluşturmak için.
+        1. Altında **uygulama türü**seçin **konsol uygulaması (.exe)**.
+
+        1. Altında **Additioal seçenekleri**, işaretini kaldırın **önceden derlenmiş üst bilgi** onay kutusu.
+
+        1. Seçin **Tamam** projeyi oluşturmak için.
+
+    - Visual Studio 2017'den daha eski sürümleri
+
+        1. **İleri**'ye tıklayın.
+
+        1. Emin **konsol uygulaması** seçilir. Denetleyin ardından **boş proje** kutusuna ve seçin **son**.
 
 ##  <a name="UseLibInApp"></a> Uygulama içindeki statik kitaplıkta işlevselliği kullanarak
 
@@ -105,19 +124,19 @@ Bir C++ dilinin temellerini anlama.
 
 1. Bir konsol uygulaması oluşturduktan sonra boş bir program sizin için oluşturulur. Kaynak dosyasının adı daha önce seçtiğiniz adı ile aynıdır. Bu örnekte, adlı `MyExecRefsLib.cpp`.
 
-2. Statik kitaplıkta matematik yordamlarını kullanmadan önce başvurmanız gerekir. Bunu yapmak için kısayol menüsünü açın **MyExecRefsLib** projesi **Çözüm Gezgini**ve ardından **Ekle** > **başvurusu**.
+1. Statik kitaplıkta matematik yordamlarını kullanmadan önce başvurmanız gerekir. Bunu yapmak için kısayol menüsünü açın **MyExecRefsLib** projesi **Çözüm Gezgini**ve ardından **Ekle** > **başvurusu**.
 
-3. **Başvuru Ekle** iletişim kutusu başvurabileceğiniz kitaplıkları listeler. **Projeleri** sekmesi projeleri çözüme ve içerdikleri tüm kitaplıkları listeler. Üzerinde **projeleri** sekmesinde **MathFuncsLib** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.
+1. **Başvuru Ekle** iletişim kutusu başvurabileceğiniz kitaplıkları listeler. **Projeleri** sekmesi projeleri çözüme ve içerdikleri tüm kitaplıkları listeler. Üzerinde **projeleri** sekmesinde **MathFuncsLib** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.
 
-4. Başvuru `MathFuncsLib.h` üstbilgi dosyasına eklenen dizinlerin yolunu değiştirmeniz gerekir. İçinde **özellik sayfaları** iletişim kutusu için **MyExecRefsLib**, genişletin **yapılandırma özellikleri** düğümünü genişletin **C/C++** düğümünü ve ardından **genel**. Yanındaki **ek içerik dizinleri**, yolunu belirtin **MathFuncsLib** dizin veya onu gözatın.
+1. Başvuru `MathFuncsLib.h` üstbilgi dosyasına eklenen dizinlerin yolunu değiştirmeniz gerekir. İçinde **özellik sayfaları** iletişim kutusu için **MyExecRefsLib**, genişletin **yapılandırma özellikleri** düğümünü genişletin **C/C++** düğümünü ve ardından **genel**. Yanındaki **ek içerik dizinleri**, yolunu belirtin **MathFuncsLib** dizin veya onu gözatın.
 
    Dizin yoluna göz atmak için özellik değeri açılan listesini açın ve ardından **Düzenle**. İçinde **ek içerik dizinleri** iletişim kutusunda, metin kutusuna, boş bir satır seçin ve ardından üç nokta düğmesini (**...** ) satırın sonunda. İçinde **dizini Seç** iletişim kutusunda seçin **MathFuncsLib** dizin seçip **klasörü seçin** seçiminizi kaydetmek ve iletişim kutusunu kapatmak için düğme. İçinde **ek içerik dizinleri** iletişim kutusunda **Tamam** düğmesini ve ardından **özellik sayfaları** iletişim kutusunda **Tamam**projeye yaptığınız değişiklikleri kaydetmek için düğme.
 
-5. Artık `MyMathFuncs` bu uygulamada sınıfı. Bunu yapmak için içeriğini değiştirin `MyExecRefsLib.cpp` Bu kod ile:
+1. Artık `MyMathFuncs` bu uygulamada sınıfı. Bunu yapmak için içeriğini değiştirin `MyExecRefsLib.cpp` Bu kod ile:
 
    [!code-cpp[NVC_Walkthrough_Create_Static_Lib#120](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_3.cpp)]
 
-6. Yürütülebilir dosya seçerek yapı **derleme** > **Çözümü Derle** menü çubuğunda.
+1. Yürütülebilir dosya seçerek yapı **derleme** > **Çözümü Derle** menü çubuğunda.
 
 ##  <a name="RunApp"></a> Uygulamayı çalıştırma
 
@@ -125,7 +144,7 @@ Bir C++ dilinin temellerini anlama.
 
 1. Emin olun **MyExecRefsLib** için kısayol menüsünü açıp varsayılan proje olarak seçildiğinden **MyExecRefsLib** içinde **Çözüm Gezgini**ve ardından seçme **Başlangıç projesi olarak ayarla**.
 
-2. Menü çubuğunda projeyi çalıştırmak için seçin **hata ayıklama** > **hata ayıklama olmadan Başlat**. Çıkış şuna benzemelidir:
+1. Menü çubuğunda projeyi çalıştırmak için seçin **hata ayıklama** > **hata ayıklama olmadan Başlat**. Çıkış şuna benzemelidir:
 
     ```Output
     a + b = 106.4
@@ -137,4 +156,4 @@ Bir C++ dilinin temellerini anlama.
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [İzlenecek yol: Dinamik Bağlantı Kitaplığı Oluşturma ve Kullanma (C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)<br/>
-[Masaüstü Uygulamaları (Visual C++)](../windows/desktop-applications-visual-cpp.md)
+[Masaüstü Uygulamaları (Visual C++)](../windows/desktop-applications-visual-cpp.md)<br/>

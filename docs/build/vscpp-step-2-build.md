@@ -5,7 +5,7 @@ ms.custom: mvc
 ms.date: 12/12/2017
 ms.topic: tutorial
 ms.technology:
-- devlang-C++
+- cpp-tools
 ms.devlang: C++
 dev_langs:
 - C++
@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05a5204234eb127da676e3b4a12ef875baecdad0
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: c9c32f6811a18fae00cb2943a9ca97a89cf159a1
+ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45705789"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029599"
 ---
 # <a name="build-and-run-a-c-console-app-project"></a>Derleme ve C++ konsol uygulama projesi çalıştırma
 
@@ -45,7 +45,7 @@ Visual Studio gibi görünüyorsa, oluşturmak ve uygulamanızı çalıştırmak
 
    ![Proje başlangıç](../build/media/vscpp-start-without-debugging.gif "projeyi Başlat")
 
-    Bir konsol penceresi açar ve ardından uygulamanızı çalıştırır. Visual Studio'da konsol uygulaması başlattığınızda, kodunuz çalışır ve ardından baskı siparişi "devam etmek için herhangi bir tuşa basın. biçimindeki telefon numarasıdır. ." Çıktıyı görmek için bir fırsat vermek için.
+   Bir konsol penceresi açar ve ardından uygulamanızı çalıştırır. Visual Studio'da konsol uygulaması başlattığınızda, kodunuz çalışır ve ardından baskı siparişi "devam etmek için herhangi bir tuşa basın. biçimindeki telefon numarasıdır. ." Çıktıyı görmek için bir fırsat vermek için.
 
 Tebrikler! İlk oluşturduğunuz "Hello, world!" Visual Studio'da konsol uygulaması! Konsol penceresini kapatın ve Visual Studio'ya dönmek için bir tuşa basın.
 

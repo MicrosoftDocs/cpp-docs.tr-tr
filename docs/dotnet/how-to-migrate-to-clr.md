@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: cf55b6f5dc422bb01babe0bdf8d8c27ce50371da
-ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
+ms.openlocfilehash: 210cf8d3183e9fcd94cfa51d875a0b26e4a8fa07
+ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494471"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029664"
 ---
 # <a name="how-to-migrate-to-clr"></a>Nasıl yapılır: /clr'ye Geçiş
 
@@ -85,8 +85,6 @@ NewFunc2 = (MYPROC)GetProcAddress( hLib, "Func2" );
 C++ aynı zamanda gerektirir işlevleri prototipli ya da tam olarak tanımlanmış ya da bunlar başvurulan veya çağrılan yüklenmeden önce.
 
 C++ anahtar sözcükleri hareketlidir C kod içinde kullanılan tanımlayıcıları (gibi `virtual`, `new`, `delete`, `bool`, `true`, `false`, vs.) kaydedilmelidir. Bu, genellikle basit arama ve değiştirme işlemlerini ile yapılabilir.
-
-Son olarak, C stili COM çağrıları v-table'nun açık kullanımı gerektirdiğinde ve `this` işaretçisi C++ şunları desteklemez:
 
 ```
 COMObj1->lpVtbl->Method(COMObj, args);  // C code
