@@ -1,5 +1,5 @@
 ---
-title: / CLRUNMANAGEDCODECHECK (SupressUnmanagedCodeSecurityAttribute ekleme) | Microsoft Docs
+title: / CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute Ekle) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,44 +17,44 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d0a70ea74851d3a10f9d46b8289098d6fb3fe22
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 679adc527cc70056e1292eb7e639499bd814bca6
+ms.sourcegitcommit: 7838764e09819822a105accf5d773b2e37ffa0ae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34705380"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47429767"
 ---
-# <a name="clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute"></a>/CLRUNMANAGEDCODECHECK (SupressUnmanagedCodeSecurityAttribute Ekleme)
+# <a name="clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute"></a>/ CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute ekleme)
 
-**/ CLRUNMANAGEDCODECHECK** bağlayıcı uygulanıp uygulanmayacağını belirtir <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> bağlayıcı-oluşturulan `PInvoke` Yerel DLL'leri yönetilen koddan çağrılar.
+**/ CLRUNMANAGEDCODECHECK** bağlayıcı uygulayıp uygulamayacağını belirtir <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> için bağlayıcı tarafından oluşturulan `PInvoke` yönetilen koddan yerel DLL'lere çağrılar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ CLRUNMANAGEDCODECHECK**[**: HAYIR**]
+> **/ CLRUNMANAGEDCODECHECK**[**: NO**]
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bağlayıcı uygular **SuppressUnmanagedCodeSecurityAttribute** bağlayıcı-oluşturulan `PInvoke` çağrıları. Zaman **/CLRUNMANAGEDCODECHECK** yürürlükte, **SuppressUnmanagedCodeSecurityAttribute** uygulanmaz.
+Varsayılan olarak, bağlayıcı uygular **SuppressUnmanagedCodeSecurityAttribute** için bağlayıcı tarafından oluşturulan `PInvoke` çağırır. Zaman **/clrunmanagedcodecheck** kıyaslandığında geçerli **SuppressUnmanagedCodeSecurityAttribute** uygulanmaz.
 
-Bağlayıcı yalnızca ile derlenmiş nesneleri bir öznitelik ekler. **/CLR** veya **/CLR: pure**. Ancak, **/CLR: pure** derleyici seçeneği Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+Bağlayıcı yalnızca ile derlenen nesneler bir öznitelik ekler. **/CLR** veya **/CLR: pure**. Ancak, **/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
-A `PInvoke` çağrısı, bağlayıcı tarafından üretilir, bağlayıcı yönetilen çağıran bir başvuru karşılamak için yönetilen bir simge bulunamıyor ancak bu başvuruyu karşılamak için yerel bir simge bulabilirsiniz. Hakkında daha fazla bilgi için `PInvoke`, bkz: [yönetilen koddan yerel işlevleri çağırma](../../dotnet/calling-native-functions-from-managed-code.md).
+A `PInvoke` çağrı, bağlayıcı tarafından oluşturulur, bağlayıcı yönetilen çağıran bir başvurudan karşılamak için yönetilen bir sembolü bulunamadı, ancak bu başvuruyu karşılamak için bir yerel sembol bulabilirsiniz. Hakkında daha fazla bilgi için `PInvoke`, bkz: [yönetilen koddan yerel işlevleri çağırma](../../dotnet/calling-native-functions-from-managed-code.md).
 
-Kullandığınız gerçekleştiriyorsanız <xref:System.Security.AllowPartiallyTrustedCallersAttribute> kodunuzda, açıkça ayarlamalısınız **/CLRUNMANAGEDCODECHECK**. Bir görüntü SuppressUnmanagedCodeSecurity ve AllowPartiallyTrustedCallers öznitelikleri içeriyorsa, olası güvenlik açığı bulunmaktadır.
+Kullandığınız gerçekleştiriyorsanız <xref:System.Security.AllowPartiallyTrustedCallersAttribute> kodunuzda açıkça ayarlamalısınız **/clrunmanagedcodecheck**. Görüntü SuppressUnmanagedCodeSecurity hem AllowPartiallyTrustedCallers öznitelikleri içeriyorsa, olası güvenlik açığı var.
 
-Bkz: [güvenli kodlama yönergeleri yönetilmeyen kod için](/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code) kullanarak etkilerini hakkında daha fazla bilgi için **SuppressUnmanagedCodeSecurityAttribute**.
+Bkz: [güvenli kodlama kılavuzları yönetilmeyen kod için](/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code) kullanmanın etkileri hakkında daha fazla bilgi için **SuppressUnmanagedCodeSecurityAttribute**.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Genişletme **yapılandırma özellikleri** düğümü.
+1. Genişletin **yapılandırma özellikleri** düğümü.
 
-1. Genişletme **bağlayıcı** düğümü.
+1. Genişletin **bağlayıcı** düğümü.
 
 1. Seçin **Gelişmiş** özellik sayfası.
 
-1. Değiştirme **CLR kodu yönetilmeyen kontrol** özelliği.
+1. Değiştirme **CLR yönetilmeyen kod denetleyin** özelliği.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 

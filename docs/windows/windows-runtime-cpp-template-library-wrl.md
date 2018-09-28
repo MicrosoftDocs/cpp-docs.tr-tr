@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8b220ecd69ce539c03339ac73048efb2750d2e32
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cefa28145e1a53aa4db0bd713a9835c0a35b4151
+ms.sourcegitcommit: 7838764e09819822a105accf5d773b2e37ffa0ae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401809"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47429754"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 
@@ -50,7 +50,7 @@ Windows çalışma zamanı C++ Şablon kitaplığı ve C + +/ CX farklı avantaj
 
 Windows çalışma zamanı C++ Şablon kitaplığı ile hemen çalışmaya başlayabilirsiniz yardımcı olabilecek bazı kaynaklar aşağıda verilmiştir.
 
-[Windows çalışma zamanı kitaplığı (WRL)](http://channel9.msdn.com/Events/Windows-Camp/Developing-Windows-8-Metro-style-apps-in-Cpp/The-Windows-Runtime-Library-WRL-)<br/>
+[Windows çalışma zamanı kitaplığı (WRL)](https://channel9.msdn.com/Events/Windows-Camp/Developing-Windows-8-Metro-style-apps-in-Cpp/The-Windows-Runtime-Library-WRL-)<br/>
 Bu kanal 9 videosunda, Windows çalışma zamanı C++ Şablon Kitaplığı'nın nasıl yardımcı olduğu hakkında yazdığınız Evrensel Windows Platformu (UWP) uygulamaları ve yazar ve Windows çalışma zamanı bileşenlerini kullanma hakkında bilgi edinin.
 
 [Nasıl yapılır: bir Windows çalışma zamanı bileşenini etkinleştirme ve kullanma](../windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md)<br/>
@@ -77,16 +77,16 @@ Nasıl kullanacağınızı öğrenin [Microsoft::wrl:: Make](../windows/make-fun
 [İzlenecek Yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)<br/>
 Nasıl kullanılacağını gösterir [Ixmlhttprequest2](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) ve [Ixmlhttprequest2callback](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) bir UWP uygulamasında bir web hizmetine HTTP GET ve POST istekleri göndermek için görevleri ile birlikte arabirimleri.
 
-[Bing Maps Trip Optimizer örneği](http://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)<br/>
+[Bing Maps Trip Optimizer örneği](https://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)<br/>
 Kullanan `HttpRequest` tanımlanan sınıfı [izlenecek yol: görevleri kullanarak bağlanma ve XML HTTP isteklerini](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) eksiksiz bir UWP uygulaması bağlamında.
 
-[C++ örnek ile bir Windows çalışma zamanı DLL bileşeni oluşturma](http://code.msdn.microsoft.com/windowsapps/Creating-a-Windows-Runtime-6c399797)<br/>
+[C++ örnek ile bir Windows çalışma zamanı DLL bileşeni oluşturma](https://code.msdn.microsoft.com/windowsapps/Creating-a-Windows-Runtime-6c399797)<br/>
 Bir işlemde DLL bileşeni oluşturma ve C + tüketicilerimizin Windows çalışma zamanı C++ Şablon kitaplığı kullanma işlemini gösterir +/ CX, JavaScript ve C#.
 
-[DirectX marble maze oyun örneği](http://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)<br/>
+[DirectX marble maze oyun örneği](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)<br/>
 Windows çalışma zamanı C++ Şablon kitaplığı bağlamında, tam bir 3-b oyunda DirectX ve Media Foundation gibi COM bileşenlerinin kullanım ömrünü yönetmek için nasıl kullanılacağını gösterir.
 
-[Masaüstü uygulama örneğinden kutlama bildirimleri gönderme](http://code.msdn.microsoft.com/windowsdesktop/Sending-toast-notifications-71e230a2)<br/>
+[Masaüstü uygulama örneğinden kutlama bildirimleri gönderme](https://code.msdn.microsoft.com/windowsdesktop/Sending-toast-notifications-71e230a2)<br/>
 Bir masaüstü uygulamasından kutlama bildirimleri ile iş için Windows çalışma zamanı C++ Şablon Kitaplığı nasıl yapılacağı açıklanır.
 
 ## <a name="windows-runtime-c-template-library-compared-to-atl"></a>Windows çalışma zamanı C++ Şablon kitaplığı ile ATL karşılaştırması
