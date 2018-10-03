@@ -1,28 +1,36 @@
 ---
 title: SyncLockWithStatusT sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/26/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT
+- corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::GetStatus
+- corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::IsLocked
+- corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::status_
+- corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::SyncLockWithStatusT
 dev_langs:
 - C++
 helpviewer_keywords:
-- SyncLockWithStatusT class
+- Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT class
+- Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::GetStatus method
+- Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::IsLocked method
+- Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::status_ data member
+- Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::SyncLockWithStatusT, constructor
 ms.assetid: 4832fd93-0ac8-4168-9404-b43fefea7476
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 69676651c77175b55f4363b525a3ca3acb9be46d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7473c5f0417ab214101459c9621644b97c33a047
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437462"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235535"
 ---
 # <a name="synclockwithstatust-class"></a>SyncLockWithStatusT Sınıfı
 
@@ -46,34 +54,34 @@ class SyncLockWithStatusT : public SyncLockT<SyncTraits>;
 
 Özel alan türünü temsil eder ya da bir kaynak ilişkin paylaşılan sahipliğiniz.
 
-**SyncLockWithStatusT** sınıfı uygulamak için kullanılan [Mutex](../windows/mutex-class1.md) ve [semafor](../windows/semaphore-class.md) sınıfları.
+`SyncLockWithStatusT` Sınıfı uygulamak için kullanılan [Mutex](../windows/mutex-class1.md) ve [semafor](../windows/semaphore-class.md) sınıfları.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[SyncLockWithStatusT::SyncLockWithStatusT Oluşturucusu](../windows/synclockwithstatust-synclockwithstatust-constructor.md)|Yeni bir örneğini başlatır **SyncLockWithStatusT** sınıfı.|
+Ad                                                             | Açıklama
+---------------------------------------------------------------- | --------------------------------------------------------------
+[SyncLockWithStatusT::SyncLockWithStatusT](#synclockwithstatust) | Yeni bir örneğini başlatır `SyncLockWithStatusT` sınıfı.
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[SyncLockWithStatusT::SyncLockWithStatusT Oluşturucusu](../windows/synclockwithstatust-synclockwithstatust-constructor.md)|Yeni bir örneğini başlatır **SyncLockWithStatusT** sınıfı.|
+Ad                                                             | Açıklama
+---------------------------------------------------------------- | --------------------------------------------------------------
+[SyncLockWithStatusT::SyncLockWithStatusT](#synclockwithstatust) | Yeni bir örneğini başlatır `SyncLockWithStatusT` sınıfı.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[SyncLockWithStatusT::GetStatus Metodu](../windows/synclockwithstatust-getstatus-method.md)|Geçerli bekleme durumunu alır **SyncLockWithStatusT** nesne.|
-|[SyncLockWithStatusT::IsLocked Metodu](../windows/synclockwithstatust-islocked-method.md)|Belirtir olup olmadığını geçerli **SyncLockWithStatusT** nesnesi bir kaynağa sahiptir; diğer bir deyişle, **SyncLockWithStatusT** nesnedir *kilitli*.|
+Ad                                         | Açıklama
+-------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------
+[SyncLockWithStatusT::GetStatus](#getstatus) | Geçerli bekleme durumunu alır `SyncLockWithStatusT` nesne.
+[Synclockwithstatust::IsLocked](#islocked)   | Belirtir olup olmadığını geçerli `SyncLockWithStatusT` nesnesi bir kaynağa sahiptir; diğer bir deyişle, `SyncLockWithStatusT` nesnedir *kilitli*.
 
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[SyncLockWithStatusT::status_ Veri Üyesi](../windows/synclockwithstatust-status-data-member.md)|Geçerli bir nesne üzerinde bir kilit işlemi temel sonra alttaki bekleme işleminin sonucu tutan **SyncLockWithStatusT** nesne.|
+Ad                                    | Açıklama
+--------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------
+[SyncLockWithStatusT::status_](#status) | Geçerli bir nesne üzerinde bir kilit işlemi temel sonra alttaki bekleme işleminin sonucu tutan `SyncLockWithStatusT` nesne.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -87,6 +95,80 @@ class SyncLockWithStatusT : public SyncLockT<SyncTraits>;
 
 **Namespace:** Microsoft::WRL::Wrappers::Details
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="getstatus"></a>SyncLockWithStatusT::GetStatus
 
-[Microsoft::WRL::Wrappers::Details Ad Alanı](../windows/microsoft-wrl-wrappers-details-namespace.md)
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+DWORD GetStatus() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Temel alan bir nesne üzerinde bir bekleme işlemini sonucunu `SyncLockWithStatusT` gibi sınıfı bir [Mutex](../windows/mutex-class1.md) veya [semafor](../windows/semaphore-class.md). Sinyal verilmiş duruma dönmesine bekleme işlemi döndürülen sıfır (0) gösterir. geçen zaman aşımı değeri gibi Aksi takdirde, başka bir durum, oluştu.
+
+### <a name="remarks"></a>Açıklamalar
+
+Geçerli bekleme durumunu alır `SyncLockWithStatusT` nesne.
+
+GetStatus() işlevi, temel alınan değeri alır. [status_](#status) veri üyesi. Bir nesne, temel alarak `SyncLockWithStatusT` sınıfı bir kilit işlemi gerçekleştirir, nesne ilk nesne kullanılabilir olana kadar bekler. Bu bekleme işleminin sonucu depolanan `status_` veri üyesi. Olası değerleri `status_` veri üyesi olan dönüş değerlerini bekleme işlemi. Daha fazla bilgi için bkz: dönüş değerlerini `WaitForSingleObjectEx()` MSDN Kitaplığı'nda işlevi.
+
+## <a name="islocked"></a>Synclockwithstatust::IsLocked
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+bool IsLocked() const;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Belirtir olup olmadığını geçerli `SyncLockWithStatusT` nesnesi bir kaynağa sahiptir; diğer bir deyişle, `SyncLockWithStatusT` nesnedir *kilitli*.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+`true` varsa `SyncLockWithStatusT` nesnedir kilitli; Aksi takdirde `false`.
+
+## <a name="status"></a>SyncLockWithStatusT::status_
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+DWORD status_;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Geçerli bir nesne üzerinde bir kilit işlemi temel sonra alttaki bekleme işleminin sonucu tutan `SyncLockWithStatusT` nesne.
+
+## <a name="synclockwithstatust"></a>SyncLockWithStatusT::SyncLockWithStatusT
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+SyncLockWithStatusT(
+   _Inout_ SyncLockWithStatusT&& other
+);
+
+explicit SyncLockWithStatusT(
+   typename SyncTraits::Type sync,
+   DWORD status
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Diğer*<br/>
+Diğer bir rvalue başvurusuna `SyncLockWithStatusT` nesne.
+
+*Eşitleme*<br/>
+Başka bir başvuru `SyncLockWithStatusT` nesne.
+
+*Durumu*<br/>
+Değerini [status_](#status) veri üyesi *diğer* parametresi veya *eşitleme* parametresi.
+
+### <a name="remarks"></a>Açıklamalar
+
+Yeni bir örneğini başlatır `SyncLockWithStatusT` sınıfı.
+
+İlk Oluşturucu geçerli başlatır `SyncLockWithStatusT` başka bir nesne `SyncLockWithStatusT` parametresi tarafından belirtilen *diğer*ve diğeri geçersiz kılar `SyncLockWithStatusT` nesne. İkinci oluşturucu `protected`ve geçerli başlatır `SyncLockWithStatusT` nesnesi için geçersiz bir durumda.

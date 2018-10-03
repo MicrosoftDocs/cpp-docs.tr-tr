@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 2355a5341259978e402ecc6f8de5c684c9435e3a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5867f9524d897657641ab9db392d77585117a465
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433068"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235001"
 ---
 # <a name="hosting-a-windows-form-user-control-as-an-mfc-dialog-box"></a>MFC İletişim Kutusu Olarak Windows Formu Kullanıcı Denetimi Barındırma
 
@@ -56,7 +56,7 @@ MFC'de Windows formlarını gösteren örnek bir uygulama için bkz. [MFC ve Win
 
 1. Alt sınıflara ayıran yeni bir sınıf ekleyin `CDialog`.
 
-     Proje adına sağ tıklayın ve alt sınıflara ayıran bir MFC sınıfı (CHostForWinForm adında) ekleyin `CDialog`. İletişim kutusu kaynağına gerekmediğinden, kaynak Kimliğini silebilirsiniz (kaynak görünümünü seçin, iletişim kutusu klasörünü genişletin ve IDD_HOSTFORWINFORM kaynağını silin.  Daha sonra tüm başvuruları kimliğine kodda kaldırın.).
+     Proje adına sağ tıklayın ve alt sınıflara ayıran bir MFC sınıfı (CHostForWinForm adında) ekleyin `CDialog`. İletişim kutusu kaynağına gerekmediğinden, kaynak Kimliğini silebilirsiniz (seçin **kaynak görünümü**, genişletme **iletişim** klasörü ve delete `IDD_HOSTFORWINFORM` kaynak.  Daha sonra tüm başvuruları kimliğine kodda kaldırın.).
 
 1. Değiştirin `CDialog` ile CHostForWinForm.h ve CHostForWinForm.cpp dosyalarındaki `CWinFormsDialog<WindowsControlLibrary1::UserControl1>`.
 

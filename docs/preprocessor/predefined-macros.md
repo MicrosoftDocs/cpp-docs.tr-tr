@@ -152,12 +152,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9a1472cba13f477143c9b9ace27cb2555f41406
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a95141aa97d7272970adaaa69f3f63de2a622780
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408433"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235652"
 ---
 # <a name="predefined-macros"></a>Önceden Tanımlı Makrolar
 
@@ -435,7 +435,7 @@ Microsoft Visual C++ bu ek önceden tanımlı makrolar destekler.
 
 - **&#95;WINRT&#95;DLL** 1 olduğunda, C++ ve her ikisi de derlenmiş tanımlanan [/ZW (Windows çalışma zamanı derlemesi)](../build/reference/zw-windows-runtime-compilation.md) ve [/LD veya /LDd](../build/reference/md-mt-ld-use-run-time-library.md) derleyici seçeneklerini ayarlayın. Aksi takdirde, tanımlı değil.
 
- ATL veya MFC kitaplık sürümünü belirlemek için kullanılan Önişlemci makroları derleyici tarafından önceden tanımlanmamıştır. Gereken üst bilgi eklenir önce ön işlemci yönergelerinde tanımlanmadı şekilde bu makrolar kitaplığı üstbilgisinde tanımlanır.
+ATL veya MFC kitaplık sürümünü belirlemek için kullanılan Önişlemci makroları derleyici tarafından önceden tanımlanmamıştır. Gereken üst bilgi eklenir önce ön işlemci yönergelerinde tanımlanmadı şekilde bu makrolar kitaplığı üstbilgisinde tanımlanır.
 
 - **&#95;ATL&#95;VER** tanımlanan \<atldef.h > ATL sürüm numarasını kodlayan bir tamsayı sabit değeri olarak.
 

@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d5481b9391d47887d85ca43746f1a6aff5f6eb92
-ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
+ms.openlocfilehash: 342716f3197713a584e2f0a1d20e4de75ece474b
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029625"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234333"
 ---
 # <a name="walkthrough-creating-a-standard-c-program-c"></a>İzlenecek yol: standart bir C++ programını (C++) oluşturma
 
@@ -32,7 +32,7 @@ Standart C++ programlar oluşturmak için Visual Studio tümleşik geliştirme o
 
 Kendi C++ programınızı yazabilir veya örnek programlardan birini kullanın. Bu kılavuzda örnek program bir konsol uygulamasıdır. Bu uygulamanın kullandığı `set` C++ Standart Kitaplığı'nda kapsayıcı.
 
-Uygun Visual C++ 2003 C++ standardı ile şu büyük özel durumlar: iki aşamalı ad arama, özel durum belirtimleri ve dışarı aktarma. Ayrıca, Visual C++ birkaç C ++ 0 x özelliklerini, örneğin, lambdas, otomatik, static_assert, rvalue başvuruları ve extern şablonları destekler.
+Visual C++ 2003 C++ standardı ile şu büyük özel durumlar aşağıdaki: iki aşamalı ad arama, özel durum belirtimleri ve dışarı aktarma. Ayrıca, Visual C++ birkaç C ++ 0 x özelliklerini, örneğin, lambdas, otomatik, static_assert, rvalue başvuruları ve extern şablonları destekler.
 
 > [!NOTE]
 > Standart ile uyumluluk gerekliyse kullanın `/Za` Microsoft uzantılarını standart devre dışı bırakma derleyici seçeneği. Daha fazla bilgi için [/Za, /Ze (dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md).
@@ -59,7 +59,7 @@ Bu adım adım öğreticiyi tamamlamak için C++ dilinin temellerini anlamanız 
    > [!NOTE]
    > Visual Studio 2017'den daha eski sürümleri tamamlamak **Win32 Uygulama Sihirbazı**. Tıklayın **sonraki**, ardından emin **konsol uygulaması** seçilidir ve işaretini kaldırın **önceden derlenmiş üst bilgiler** kutusu. **Son**'a tıklayın.
 
-1. Varsa **Çözüm Gezgini** , görüntülenmiyorsa **görünümü** menüsünde tıklatın **Çözüm Gezgini**.
+1. Varsa **Çözüm Gezgini** , üzerinde görüntülenmediğini **görünümü** menüsünde tıklayın **Çözüm Gezgini**.
 
 1. Yeni bir kaynak dosyası projeye aşağıdaki şekilde ekleyin.
 

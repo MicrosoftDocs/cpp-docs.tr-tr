@@ -1,7 +1,7 @@
 ---
 title: LIB çalıştırma | Microsoft Docs
 ms.custom: ''
-ms.date: 09/05/2018
+ms.date: 09/28/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff75c149ff3cfff5a360314386cc4828d00f4e8d
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 5d8a221a829d3cded8d974c608bdd27edab07f60
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894609"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235430"
 ---
 # <a name="running-lib"></a>LIB Çalıştırma
 
@@ -62,25 +62,29 @@ Komut satırı bağımsız değişkenleri için aşağıdaki sözdizimini kullan
 
 Dosya *commandfile* bir metin dosyasıdır. Hiçbir boşluk veya sekme arasında izin at işareti (**\@**) ve dosya adı. Hiçbir varsayılan uzantı yoktur; herhangi bir uzantısına dahil olmak üzere tam dosya adı belirtmeniz gerekir. Joker karakterler kullanılamaz. Mutlak veya göreli bir yol ile dosya adını belirtebilirsiniz.
 
-Komut satırında geliştiricilerimizin mümkün olduğunca komut dosyasında boşluk veya sekme ile bağımsız değişkenleri ayrılabilir; Yeni satır karakterleriyle da ayrılabilir. Bir yorum işaretlemek için noktalı virgül (;) kullanın. LIB satırın sonuna noktalı virgülden tüm metni yok sayar.
+Komut satırında geliştiricilerimizin mümkün olduğunca komut dosyasında boşluk veya sekme ile bağımsız değişkenleri ayrılabilir; Yeni satır karakterleriyle da ayrılabilir. Noktalı virgül kullanın (**;**) bir açıklama işaretlenecek. LIB satırın sonuna noktalı virgülden tüm metni yok sayar.
 
 Tüm veya komut satırının bir parçası bir komut dosyası belirtebilirsiniz ve LIB komutunun içinde birden fazla komut dosyası kullanabilirsiniz. Komut satırında o konumda belirtildi, LIB komut dosyası girişi kabul eder. Komut dosyaları iç içe olamaz. / Nologo seçeneği kullanılmadığı sürece LIB komut dosyalarının içeriğini görüntülemektedir.
 
 ## <a name="using-lib-options"></a>LIB seçeneklerini kullanma
 
-İsteğe bağlı bir tire (-) ya da seçenek adından önce gelen bir eğik çizgi (/), bir seçenek belirticisi oluşur. Seçenek adları kısaltılmış olamaz. Bazı seçenekler bir iki nokta (:) sonra belirtilen bir bağımsız değişken alan. Boşluk veya sekme içinde bir seçenek belirtimine izin verilir. Komut satırı seçeneği belirtimlerine ayırmak için bir veya daha fazla boşluk veya sekme kullanın. Seçenek adları ve kendi anahtar sözcük veya dosya adı bağımsız değişkenler büyük küçük harfe duyarlı değildir, ancak bağımsız değişken olarak kullanılan tanımlayıcıları büyük/küçük harfe duyarlıdır. LIB seçenekleri komut satırında belirtilen sırada ve komut dosyaları işler. Bir seçenek farklı bağımsız değişkenler yinelenirse işlenecek sonuncu önceliklidir.
+Bir seçenek ya da tire olan bir seçenek belirleyicisinden oluşur (**-**) veya eğik çizgi (**/**) ve ardından seçeneğinin adı. Seçenek adları kısaltılmış olamaz. Bazı seçenekler iki nokta üst üste sonra belirtilen bir bağımsız değişken alan (**:**). Boşluk veya sekme içinde bir seçenek belirtimine izin verilir. Komut satırı seçeneği belirtimlerine ayırmak için bir veya daha fazla boşluk veya sekme kullanın. Seçenek adları ve kendi anahtar sözcük veya dosya adı bağımsız değişkenler büyük küçük harfe duyarlı değildir, ancak bağımsız değişken olarak kullanılan tanımlayıcıları büyük/küçük harfe duyarlıdır. LIB seçenekleri komut satırında belirtilen sırada ve komut dosyaları işler. Bir seçenek farklı bağımsız değişkenler yinelenirse işlenecek sonuncu önceliklidir.
 
 Aşağıdaki seçenekler, LIB tüm modları için geçerlidir:
 
 > **/ ERRORREPORT** [**NONE** &AMP;#124; **İSTEMİ** &AMP;#124; **KUYRUK** &AMP;#124; **GÖNDER**]
 
-Lib.exe çalışma zamanında başarısız olursa, bu iç hataları hakkında Microsoft'a bilgi/errorreport kullanabilirsiniz.
+Lib.exe çalışma zamanında başarısız olursa, kullanabileceğiniz **/errorreport** iç bu hataları hakkında Microsoft'a bilgi göndermek.
 
-/ Errorreport hakkında daha fazla bilgi için bkz: [/errorreport (dahili derleme hatalarını raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md).
+Hakkında daha fazla bilgi için **/errorreport**, bkz: [/errorreport (dahili derleme hatalarını raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md).
 
 > **/LTCG**
 
-Bağlama zamanı kod oluşturmayı kullanarak oluşturulacak kitaplığı neden olur.  Daha fazla bilgi için [/LTCG](../../build/reference/ltcg-link-time-code-generation.md).
+"LTCG" anlamına gelen *bağlama sırasında kod oluşturma*. Bu özellik, derleyici arasında işbirliği gerektirir ([cl.exe](compiler-options.md)), LIB ve bağlayıcı ([bağlantı](linker-options.md)) yapabileceklerinizin herhangi bir bileşen kendi kod iyileştirmek için.
+
+LIB için **/LTCG** seçeneği belirtir cl.exe girişler kullanılarak üretilen nesne dosyaları içerdiğini [/GL](gl-whole-program-optimization.md) derleyici seçeneği. LIB gibi girişler karşılaşırsa ve **/LTCG** belirtilmezse, bir bilgi iletisidir görüntüleme sonra etkin/LTCG ile yeniden. Diğer bir deyişle, açıkça bu seçeneği ayarlamak gerekli değildir, ancak kendisi yeniden LIB olmadığından Bunu yapmak için yapı performansını hızlandırır.
+
+Derleme işleminde LIB çıktısı bağlantı gönderilir. BAĞLANTIYI içeren, kendi ayrı **/LTCG** seçeneği bütün program iyileştirmesi ve profil temelli iyileştirme (PGO) araçları dahil olmak üzere çeşitli iyileştirmeler gerçekleştirmek için kullanılır. Bağlantı seçeneği hakkında daha fazla bilgi için bkz: [/LTCG](ltcg-link-time-code-generation.md).
 
 > **/ MACHINE**
 

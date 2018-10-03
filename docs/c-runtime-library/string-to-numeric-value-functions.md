@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b65ceb18eb6b8f24db0a85ba2ed13277b13f657
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 45428f1642b428640509978f29c0a36b60696cb0
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46117506"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235067"
 ---
 # <a name="string-to-numeric-value-functions"></a>Sayısal Değer İşlevleri Dizesi
 
@@ -94,7 +94,7 @@ Bu işlevler tarafından döndürülen değer, bir taşma veya yetersiz gelme ne
 |`_strtoui64`|taşma|**_UI64_MAX**|
 |`_strtoui64`|Hiçbir dönüştürme|0|
 
- **_I64_MAX**, _**I64_MIN**, ve **_UI64_MAX** SINIRLARI tanımlanır. H
+**_I64_MAX**, _**I64_MIN**, ve **_UI64_MAX** SINIRLARI tanımlanır. H
 
 `wcstod`, `wcstol`, `wcstoul`, `_wcstoi64`, ve `_wcstoui64` geniş karakterli sürümleridir `strtod`, `strtol`, `strtoul`, `_strtoi64`, ve `_strtoui64`sırasıyla; bir end-ın-dönüştürme işaretçisi Bu geniş karakter işlevlerin her biri bağımsız değişken geniş karakterli bir dizedir. Aksi takdirde, kendisine tek baytlık karakterlerdir karşılık gelen geniş karakter bu işlevlerin her biri aynı şekilde davranır.
 

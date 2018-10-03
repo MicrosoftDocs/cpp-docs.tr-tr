@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f46153400744b4a6d0350b97fa7158ea9f69c34
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 7a3be65e867c243bd6a32dd35dd3128872a1f8d1
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957114"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234118"
 ---
 # <a name="valuecompare-class"></a>value_compare Sınıfı
 
@@ -31,16 +31,16 @@ Hash_map kendi göreli sıralarını belirlemek için kendi anahtarını değerl
 
 ```cpp
 class value_compare
- : std::public binary_function<value_type, value_type, bool>
+    : std::public binary_function<value_type, value_type, bool>
 {
 public:
     bool operator()(
-    const value_type& left,
-    const value_type& right) const
- {
-    return (comp(left.first, right.first));
+        const value_type& left,
+        const value_type& right) const
+    {
+        return (comp(left.first, right.first));
+    }
 
-}
 protected:
     value_compare(const key_compare& c) : comp (c) { }
     key_compare comp;

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d028d1cb3a42a68aab67d2b6fa90165a7d6264b
-ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
+ms.openlocfilehash: 48cbc29685660f00665fbbb08be76779272d0fcf
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169781"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235515"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>İzlenecek yol: MFC karalama uygulamasını (Kısım 1) güncelleştiriliyor
 
@@ -54,7 +54,7 @@ Kılavuzun bu bölümü aşağıdaki bölümleri içerir:
 
 ##  <a name="replaceclass"></a> Temel sınıflar değiştirme
 
-Bir Şerit destekleyen bir uygulama için bir menü destekleyen bir uygulamaya dönüştürmek için uygulama, çerçeve ve araç sınıfları güncelleştirilmiş temel sınıfların türetilmesi gerekir. (, Değil özgün genişletilen Scribble örneğinin değiştirin; bunun yerine, karalama projeyi temizleyin, başka bir dizine kopyalayın ve kopyayı değiştirin, öneririz.)
+Bir Şerit destekleyen bir uygulama için bir menü destekleyen bir uygulamaya dönüştürmek için uygulama, çerçeve ve araç sınıfları güncelleştirilmiş temel sınıfların türetilmesi gerekir. (Özgün genişletilen Scribble örneğinin değiştirmemeniniz öneririz. Bunun yerine, karalama projeyi temizleyin, başka bir dizine kopyalayın ve kopyayı değiştirin.)
 
 ### <a name="to-replace-the-base-classes-in-the-scribble-application"></a>Karalama uygulamasını taban sınıflardaki değiştirmek için
 
@@ -115,9 +115,9 @@ Bir Şerit destekleyen bir uygulama için bir menü destekleyen bir uygulamaya d
 
 ##  <a name="addbitmap"></a> Bit eşlemler projeye ekleniyor
 
-Bu kılavuzun sonraki dört adımları, bit eşlem kaynakları gerektirir. Çeşitli şekillerde uygun bit eşlemler elde edebilirsiniz:
+Bu kılavuzun sonraki dört adımları, bit eşlem kaynakları gerektirir. Çeşitli şekillerde uygun bit eşlemler alabilirsiniz:
 
-- Kullanım [kaynak düzenleyicileri](../windows/resource-editors.md) kendi bit eşlemler imkan. Veya Visual Studio ile birlikte gelir ve ortamından indirilen Taşınabilir Ağ Grafikleri (.png) görüntülerinden bit eşlemler derlemek için kaynak düzenleyicileri kullanma [Visual Studio görüntü kitaplığı](https://docs.microsoft.com/visualstudio/designers/the-visual-studio-image-library).
+- Kullanım [kaynak düzenleyicileri](../windows/resource-editors.md) kendi bit eşlemler imkan. Veya Visual Studio ile birlikte gelir ve indirilebileceğini Taşınabilir Ağ Grafikleri (.png) görüntülerinden bit eşlemler derlemek için kaynak düzenleyicileri kullanma [Visual Studio görüntü kitaplığı](https://docs.microsoft.com/visualstudio/designers/the-visual-studio-image-library).
 
     Ancak, **Şerit** kullanıcı arabirimi, belirli bir bit eşlemler'ın saydam görüntüler desteklemesini gerektirir. Saydam bit eşlemler kullanın. burada 24 bit rengin kırmızı, yeşil ve mavi bileşenlerinin belirtin ve 8 bit tanımlamak 32-bit piksel bir *alfa kanalı* rengini, saydamlığını belirtir. Geçerli kaynak düzenleyicileri görüntüleyebilir, ancak bit eşlemler 32-bit piksel ile değiştiremez. Sonuç olarak, dış görüntü düzenleyici saydam bit eşlemler işlemek için yerine kaynak düzenleyicileri kullanın.
 
@@ -165,7 +165,7 @@ Bu izlenecek yolda oluşturulan örnek kaynak dosyalarını kopyalar [izlenecek 
 
 ##  <a name="addribbon"></a> Projeye bir Şerit kaynağı ekleme
 
-Menülere Şerit kullanan bir uygulamayı kullanan bir uygulamayı dönüştürdüğünüzde, kaldırın veya var olan menüleri devre dışı gerekmez. Bunun yerine, bir Şerit kaynağı oluşturabilir, Şerit düğmeleri eklemek ve ardından yeni düğmeler var olan menü öğeleriyle ilişkilendirmek. Menüler artık görünür olmasına rağmen Şerit çubuğunda iletiler menüleri yönlendirilir. Ayrıca, menüsü kısayolları çalışmaya devam eder.
+Menülere Şerit kullanan bir uygulamayı kullanan bir uygulamayı dönüştürdüğünüzde, kaldırın veya var olan menüleri devre dışı gerekmez. Yalnızca bir Şerit kaynağı oluşturabilir, Şerit düğmeleri ekleyin ve ardından yeni düğmeler var olan menü öğeleriyle ilişkilendirmek. Menüler artık görünür olmasına rağmen Şerit çubuğunda iletiler Menüler yoluyla yönlendirilir ve menüsü kısayolları çalışmaya devam eder.
 
 Bir Şerit oluşan **uygulama** düğmesi, Şeridin sol tarafındaki büyük düğme olan ve bir veya daha fazla kategori sekmeler. Her kategori sekme Şerit düğmeleri ve denetimler için kapsayıcı olarak davranan bir veya daha fazla panel içerir. Aşağıdaki yordamda, bir Şerit kaynağı oluşturabilir ve ardından özelleştirmek gösterilmiştir **uygulama** düğmesi.
 
@@ -221,14 +221,14 @@ Aşağıdaki adımları, uygulamanız başlatıldığında bir Şerit çubuğuna
 
 ### <a name="to-create-an-instance-of-the-ribbon-bar"></a>Bir Şerit çubuğuna örneğini oluşturmak için
 
-1. Mainfrm.h dosyanın korumalı bölümüne veri üyesi ekleyin `CMainFrame`, ana çerçeve için sınıf tanımının. Bu üye, Şerit çubuğunu temsil eder.
+1. Mainfrm.h dosyanın korumalı bölümüne veri üyesi ekleyin `CMainFrame`, ana çerçeve için sınıf tanımının. Şerit çubuğunu üyesidir.
 
     ```cpp
     // Ribbon bar for the application
     CMFCRibbonBar m_wndRibbonBar;
     ```
 
-2. Mainfrm.cpp dosyanın en son önce aşağıdaki kodu ekleyin `return` deyimi, sonunda `CMainFrame::OnCreate` işlevi. Bu Şerit çubuğundaki bir örneğini oluşturur.
+2. Mainfrm.cpp dosyanın en son önce aşağıdaki kodu ekleyin `return` deyimi, sonunda `CMainFrame::OnCreate` işlevi. Şerit çubuğuna bir örneğini oluşturur.
 
     ```cpp
     // Create the ribbon bar
@@ -250,9 +250,9 @@ Oluşturduğunuz göre **uygulama** düğmesi, Şerit öğeleri ekleyebilirsiniz
 
 1. Karalama programın yalnızca bir kategori gerektirir. Tasarım görünümünde, **araç kutusu**, çift **kategori** ekleyin ve özelliklerini görüntülemek için. Özellik değerleri aşağıdaki gibi değiştirin: **açıklamalı alt yazı** için `&Home`, **büyük resimler** için `IDB_RIBBON_HOMELARGE`, **küçük resimler** için `IDB_RIBBON_HOMESMALL`.
 
-1. Her Şerit kategorisi adlandırılmış bölmelere düzenlenmiştir. Her paneli ilgili işlemleri denetimleri kümesini içerir. Bu kategori, tek bir panel sahiptir. Tıklayın **paneli**ve ardından değiştirmek **açıklamalı alt yazı** için `Edit`.
+1. Her Şerit kategorisi adlandırılmış bölmelere düzenlenmiştir. Her paneli, tam ilgili operations denetimleri kümesini içerir. Bu kategori, tek bir panel sahiptir. Tıklayın **paneli**ve ardından değiştirmek **açıklamalı alt yazı** için `Edit`.
 
-1. İçin **Düzenle** panelinde, belge içeriğini temizlemek için sorumlu olduğu bir düğme ekleyin. Bu düğme için ileti kimliği, önceden tanımlanmış `IDR_SCRIBBTYPE` menü kaynağı. Belirtin `Clear All` düğme metni ve düğmeyi düzenler bit eşlem dizini. Açık **araç kutusu**ve ardından bir **düğmesi** için **Düzenle** paneli. Düğmesine tıklayın ve ardından değiştirmek **açıklamalı alt yazı** için `Clear All`, **kimliği** için `ID_EDIT_CLEAR_ALL`, **görüntü dizini** için `0`, **büyük görüntü dizini**  için `0`.
+1. İçin **Düzenle** panelinde, belge içeriğini temizlemek için sorumlu bir düğme ekleyin. Bu düğme için ileti kimliği, önceden tanımlanmış `IDR_SCRIBBTYPE` menü kaynağı. Belirtin `Clear All` düğme metni ve düğmeyi düzenler bit eşlem dizini. Açık **araç kutusu**ve ardından bir **düğmesi** için **Düzenle** paneli. Düğmesine tıklayın ve ardından değiştirmek **açıklamalı alt yazı** için `Clear All`, **kimliği** için `ID_EDIT_CLEAR_ALL`, **görüntü dizini** için `0`, **büyük görüntü dizini**  için `0`.
 
 1. Değişiklikleri kaydetmek ve oluşturmak ve uygulamayı çalıştırın. Karalama uygulamasını görüntülenmesi gerekir ve bir menü çubuğu yerine pencerenin üstünde bir Şerit çubuğuna olmalıdır. Şerit çubuğuna bir kategoriye sahip olmalıdır **giriş**, ve **giriş** tek bir panel olmalıdır **Düzenle**. Eklediğiniz Şerit düğmeleri mevcut olay işleyicileri ile ilişkilendirilmesi gereken ve **açık**, **Kapat**, **Kaydet**, **yazdırma**, ve **Tümünü Temizle** düğmeler, beklendiği gibi çalışmalıdır.
 
@@ -274,7 +274,7 @@ A *görsel yöneticiyi* denetleyen bir uygulama için tüm çizim genel bir nesn
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-Kullanılacak Klasik 1.0 MFC karalama örneğinin değiştirilmiş **Şerit Tasarımcısı**. Artık Git [2. bölüm](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md).
+Kullanılacak Klasik 1.0 MFC karalama örneğinin değiştirdiğiniz **Şerit Tasarımcısı**. Artık Git [2. bölüm](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

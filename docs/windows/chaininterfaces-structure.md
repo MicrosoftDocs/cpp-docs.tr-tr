@@ -1,28 +1,38 @@
 ---
 title: Chainınterfaces yapısı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::ChainInterfaces
+- implements/Microsoft::WRL::ChainInterfaces::CanCastTo
+- implements/Microsoft::WRL::ChainInterfaces::CastToUnknown
+- implements/Microsoft::WRL::ChainInterfaces::FillArrayWithIid
+- implements/Microsoft::WRL::ChainInterfaces::IidCount
+- implements/Microsoft::WRL::ChainInterfaces::Verify
 dev_langs:
 - C++
 helpviewer_keywords:
-- ChainInterfaces structure
+- Microsoft::WRL::ChainInterfaces structure
+- Microsoft::WRL::ChainInterfaces::CanCastTo method
+- Microsoft::WRL::ChainInterfaces::CastToUnknown method
+- Microsoft::WRL::ChainInterfaces::FillArrayWithIid method
+- Microsoft::WRL::ChainInterfaces::IidCount constant
+- Microsoft::WRL::ChainInterfaces::Verify method
 ms.assetid: d7415b59-5468-4bef-a3fd-8d82b12f0e9c
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 88ddd3dd59000b629f6e72933b1a0b02cc582c89
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a80b9afd8f2db895440d12776173c559e41c2cfe
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409877"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234872"
 ---
 # <a name="chaininterfaces-structure"></a>ChainInterfaces Yapısı
 
@@ -100,24 +110,24 @@ Türetilmiş bir tür.
 Türetilmiş türün temel türü.
 
 *hasImplements*<br/>
-Bir Boole değeri olması durumunda **true**, kullanamazsınız anlamına gelir. bir [MixIn](../windows/mixin-structure.md) türünden türemez bir sınıf ile yapı [uygular](../windows/implements-structure.md) yapıda.
+Bir Boole değeri olması durumunda `true`, kullanamazsınız anlamına gelir. bir [MixIn](../windows/mixin-structure.md) türünden türemez bir sınıf ile yapı [uygular](../windows/implements-structure.md) yapıda.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[ChainInterfaces::CanCastTo Metodu](../windows/chaininterfaces-cancastto-method.md)|Her tarafından tanımlanan uzmanlıkları belirtilen arabirim kimliği içerip içermeyeceğini belirten **ChainInterface** şablon parametreleri.|
-|[ChainInterfaces::CastToUnknown Metodu](../windows/chaininterfaces-casttounknown-method.md)|Arabirim işaretçisi tarafından tanımlanan tür yayınlar *I0* şablon parametresi için bir işaretçi olarak `IUnknown`.|
-|[ChainInterfaces::FillArrayWithIid Metodu](../windows/chaininterfaces-fillarraywithiid-method.md)|Arabirim kimliği tarafından tanımlanan depoları *I0* şablon parametresi belirtilen bir dizisinde belirtilen bir konuma arabiriminin kimlikleri.|
-|[ChainInterfaces::Verify Metodu](../windows/chaininterfaces-verify-method.md)|Her arabirim şablon parametreleri tarafından tanımlanan doğrular *I0* aracılığıyla *I9* devraldığı `IUnknown` ve/veya `IInspectable`ve *I0* devralır *I1* aracılığıyla *I9*.|
+Ad                                                   | Açıklama
+------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[Chainınterfaces::cancastto](#cancastto)               | Her tarafından tanımlanan uzmanlıkları belirtilen arabirim kimliği içerip içermeyeceğini belirten `ChainInterface` şablon parametreleri.
+[Chainınterfaces::casttounknown](#casttounknown)       | Arabirim işaretçisi tarafından tanımlanan tür yayınlar *I0* şablon parametresi için bir işaretçi olarak `IUnknown`.
+[Chainınterfaces::fillarraywithıid](#fillarraywithiid) | Arabirim kimliği tarafından tanımlanan depoları *I0* şablon parametresi belirtilen bir dizisinde belirtilen bir konuma arabiriminin kimlikleri.
+[Chainınterfaces::Verify](#verify)                     | Her arabirim şablon parametreleri tarafından tanımlanan doğrular *I0* aracılığıyla *I9* devraldığı `IUnknown` ve/veya `IInspectable`ve *I0* devralır *I1* aracılığıyla *I9*.
 
 ### <a name="protected-constants"></a>Korumalı sabitleri
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[ChainInterfaces::IidCount Sabiti](../windows/chaininterfaces-iidcount-constant.md)|Arabirim kimlikleri şablon parametreleri tarafından belirtilen arabirimlerden bulunan toplam sayısı *I0* aracılığıyla *I9*.|
+Ad                                   | Açıklama
+-------------------------------------- | -----------------------------------------------------------------------------------------------------------------
+[Chainınterfaces::ıidcount](#iidcount) | Arabirim kimlikleri şablon parametreleri tarafından belirtilen arabirimlerden bulunan toplam sayısı *I0* aracılığıyla *I9*.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -131,6 +141,86 @@ Bir Boole değeri olması durumunda **true**, kullanamazsınız anlamına gelir.
 
 **Namespace:** Microsoft::WRL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="cancastto"></a>Chainınterfaces::cancastto
 
-[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)
+Her varsayılan olmayan şablon parametreleri tarafından tanımlanan uzmanlıkları belirtilen arabirim kimliği içerip içermeyeceğini belirtir.
+
+```cpp
+__forceinline bool CanCastTo(
+   REFIID riid,
+   _Deref_out_ void **ppv
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*riid*<br/>
+Bir arabirim kimliği.
+
+*ppv*<br/>
+Atama başarıyla son arabirim kimliği için bir işaretçi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+`true` tüm atama işlemlerinin başarılı ise Aksi takdirde, `false`.
+
+## <a name="casttounknown"></a>Chainınterfaces::casttounknown
+
+Arabirim işaretçisi tarafından tanımlanan tür yayınlar *I0* şablon parametresi için bir işaretçi olarak `IUnknown`.
+
+```cpp
+__forceinline IUnknown* CastToUnknown();
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Bir işaretçi `IUnknown`.
+
+## <a name="fillarraywithiid"></a>Chainınterfaces::fillarraywithıid
+
+Arabirim kimliği tarafından tanımlanan depoları *I0* şablon parametresi belirtilen bir dizisinde belirtilen bir konuma arabiriminin kimlikleri.
+
+```cpp
+__forceinline static void FillArrayWithIid(
+   _Inout_ unsigned long &index,
+   _In_ IID* iids
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Dizin*<br/>
+Bir dizin değeri işaretçisine *IID'leri* dizisi.
+
+*IID'leri*<br/>
+Arabirim kimlikleri dizisi.
+
+## <a name="iidcount"></a>Chainınterfaces::ıidcount
+
+Arabirim kimlikleri şablon parametreleri tarafından belirtilen arabirimlerden bulunan toplam sayısı *I0* aracılığıyla *I9*.
+
+```cpp
+static const unsigned long IidCount = Details::InterfaceTraits<I0>::IidCount + Details::InterfaceTraits<I1>::IidCount + Details::InterfaceTraits<I2>::IidCount + Details::InterfaceTraits<I3>::IidCount + Details::InterfaceTraits<I4>::IidCount + Details::InterfaceTraits<I5>::IidCount + Details::InterfaceTraits<I6>::IidCount + Details::InterfaceTraits<I7>::IidCount + Details::InterfaceTraits<I8>::IidCount + Details::InterfaceTraits<I9>::IidCount;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Arabirim kimlikleri toplam sayısı.
+
+### <a name="remarks"></a>Açıklamalar
+
+Şablon parametreleri *I0* ve *I1* gereklidir ve parametreleri *I2* aracılığıyla *I9* isteğe bağlıdır. Genellikle her arabirim IID'si sayısı 1'dir.
+
+## <a name="verify"></a>Chainınterfaces::Verify
+
+Her arabirim şablon parametreleri tarafından tanımlanan doğrular *I0* aracılığıyla *I9* devraldığı `IUnknown` ve/veya `IInspectable`ve *I0* devralır *I1* aracılığıyla *I9*.
+
+```cpp
+WRL_NOTHROW __forceinline static void Verify();
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Doğrulama işlemi başarısız olursa bir `static_assert` hatayı açıklayan bir hata iletisi gösterir.
+
+Şablon parametreleri *I0* ve *I1* gereklidir ve parametreleri *I2* aracılığıyla *I9* isteğe bağlıdır.

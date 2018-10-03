@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46e36cd500d4570c039568171e04d2ea36621701
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 38cd49dd483b556c8bda95e7a77109a9d4682e7c
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053875"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48233625"
 ---
 # <a name="lock"></a>_lock
 
@@ -62,7 +62,8 @@ void __cdecl _lock
 Kilidi zaten alınmış, bu yöntem kilit yine de alır ve bir iç C çalışma zamanı (CRT) hata neden olur. Yöntem bir kilit alınamıyor, önemli bir hata ile çıkar ve hata kodunu ayarlar `_RT_LOCK`.
 
 ## <a name="requirements"></a>Gereksinimler
- **Kaynak:** mlock.c
+
+**Kaynak:** mlock.c
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

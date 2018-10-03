@@ -147,12 +147,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52073a97e062d4ab96e50fed534edc24add0f8c5
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 289c21fcf1b55db701dcb5365694c78c823bb8a0
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715604"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235704"
 ---
 # <a name="unorderedmultimap-class"></a>unordered_multimap Sınıfı
 
@@ -2582,7 +2582,8 @@ unordered_multimap(
 
 template <class InputIterator>
 unordered_multimap(
-InputIterator first, InputIterator last,
+    InputIterator first,
+    InputIterator last,
     size_type Bucket_count = N0,
     const Hash& Hash = Hash(),
     const Comp& Comp = Pred(),

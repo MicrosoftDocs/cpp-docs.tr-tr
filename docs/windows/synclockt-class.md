@@ -1,28 +1,38 @@
 ---
 title: SyncLockT sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/26/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT
+- corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::IsLocked
+- corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::sync_
+- corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::SyncLockT
+- corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::~SyncLockT
+- corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::Unlock
 dev_langs:
 - C++
 helpviewer_keywords:
-- SyncLockT class
+- Microsoft::WRL::Wrappers::Details::SyncLockT class
+- Microsoft::WRL::Wrappers::Details::SyncLockT::IsLocked method
+- Microsoft::WRL::Wrappers::Details::SyncLockT::sync_ data member
+- Microsoft::WRL::Wrappers::Details::SyncLockT::SyncLockT, constructor
+- Microsoft::WRL::Wrappers::Details::SyncLockT::~SyncLockT, destructor
+- Microsoft::WRL::Wrappers::Details::SyncLockT::Unlock method
 ms.assetid: a967f6f7-3555-43d1-b210-2bb65d63d15e
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d557b7ee6e6a0ae627ec7cc9a6b40b5b9dbb872c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 892da24e4c6dacf0b4a1b099d1e5e0736ac3a76a
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379573"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234105"
 ---
 # <a name="synclockt-class"></a>SyncLockT Sınıfı
 
@@ -46,35 +56,35 @@ Bir kaynağın sahipliğini türü.
 
 Özel alan türünü temsil eder ya da bir kaynak ilişkin paylaşılan sahipliğiniz.
 
-**SyncLockT** sınıfı kullanılır, örneğin, uygulamak için [SRWLock](../windows/srwlock-class.md) sınıfı.
+`SyncLockT` Sınıfı kullanılır, örneğin, uygulamak için [SRWLock](../windows/srwlock-class.md) sınıfı.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[SyncLockT::SyncLockT Oluşturucusu](../windows/synclockt-synclockt-constructor.md)|Yeni bir örneğini başlatır **SyncLockT** sınıfı.|
-|[SyncLockT::~SyncLockT Yıkıcısı](../windows/synclockt-tilde-synclockt-destructor.md)|Örneği başlatılmasını geri alır **SyncLockT** sınıfı.|
+Ad                                      | Açıklama
+----------------------------------------- | ----------------------------------------------------
+[SyncLockT::SyncLockT](#synclockt)        | Yeni bir örneğini başlatır `SyncLockT` sınıfı.
+[SyncLockT:: ~ SyncLockT](#tilde-synclockt) | Örneği başlatılmasını geri alır `SyncLockT` sınıfı.
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[SyncLockT::SyncLockT Oluşturucusu](../windows/synclockt-synclockt-constructor.md)|Yeni bir örneğini başlatır **SyncLockT** sınıfı.|
+Ad                               | Açıklama
+---------------------------------- | ----------------------------------------------------
+[SyncLockT::SyncLockT](#synclockt) | Yeni bir örneğini başlatır `SyncLockT` sınıfı.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[SyncLockT::IsLocked Metodu](../windows/synclockt-islocked-method.md)|Belirtir olup olmadığını geçerli **SyncLockT** nesnesi bir kaynağa sahiptir; diğer bir deyişle, **SyncLockT** nesnedir *kilitli*.|
-|[SyncLockT::Unlock Metodu](../windows/synclockt-unlock-method.md)|Serbest geçerli tarafından tutulan kaynak denetimi **SyncLockT** varsa, nesne.|
+Ad                             | Açıklama
+-------------------------------- | --------------------------------------------------------------------------------------------------------------
+[Synclockt::IsLocked](#islocked) | Belirtir olup olmadığını geçerli `SyncLockT` nesnesi bir kaynağa sahiptir; diğer bir deyişle, `SyncLockT` nesnedir *kilitli*.
+[SyncLockT::Unlock](#unlock)     | Serbest geçerli tarafından tutulan kaynak denetimi `SyncLockT` varsa, nesne.
 
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[SyncLockT::sync_ Veri Üyesi](../windows/synclockt-sync-data-member.md)|Temel alınan kaynak tarafından temsil edilen tutar **SyncLockT** sınıfı.|
+Ad                      | Açıklama
+------------------------- | -------------------------------------------------------------------
+[SyncLockT::sync_](#sync) | Temel alınan kaynak tarafından temsil edilen tutar `SyncLockT` sınıfı.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -86,7 +96,84 @@ Bir kaynağın sahipliğini türü.
 
 **Namespace:** Microsoft::WRL::Wrappers::Details
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="tilde-synclockt"></a>SyncLockT:: ~ SyncLockT
 
-[Microsoft::WRL::Wrappers::Details Ad Alanı](../windows/microsoft-wrl-wrappers-details-namespace.md)<br/>
-[SRWLock Sınıfı](../windows/srwlock-class.md)
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+~SyncLockT();
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Örneği başlatılmasını geri alır `SyncLockT` sınıfı.
+
+Bu yok Edicisi de geçerli kilidini açarak `SyncLockT` örneği.
+
+## <a name="islocked"></a>Synclockt::IsLocked
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+bool IsLocked() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+`true` varsa `SyncLockT` nesnedir kilitli; Aksi takdirde `false`.
+
+### <a name="remarks"></a>Açıklamalar
+
+Belirtir olup olmadığını geçerli `SyncLockT` nesnesi bir kaynağa sahiptir; diğer bir deyişle, `SyncLockT` nesnedir *kilitli*.
+
+## <a name="sync"></a>SyncLockT::sync_
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+typename SyncTraits::Type sync_;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Temel alınan kaynak tarafından temsil edilen tutar `SyncLockT` sınıfı.
+
+## <a name="synclockt"></a>SyncLockT::SyncLockT
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+SyncLockT(
+   _Inout_ SyncLockT&& other
+);
+
+explicit SyncLockT(
+   typename SyncTraits::Type sync = SyncTraits::GetInvalidValue()  
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Diğer*<br/>
+Diğer bir rvalue başvurusuna `SyncLockT` nesne.
+
+*Eşitleme*<br/>
+Başka bir başvuru `SyncLockWithStatusT` nesne.
+
+### <a name="remarks"></a>Açıklamalar
+
+Yeni bir örneğini başlatır `SyncLockT` sınıfı.
+
+İlk Oluşturucu geçerli başlatır `SyncLockT` başka bir nesne `SyncLockT` parametresi tarafından belirtilen nesne *diğer*ve diğeri geçersiz kılar `SyncLockT` nesne. İkinci oluşturucu `protected`ve geçerli başlatır `SyncLockT` nesnesi için geçersiz bir durumda.
+
+## <a name="unlock"></a>SyncLockT::Unlock
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+void Unlock();
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Serbest geçerli tarafından tutulan kaynak denetimi `SyncLockT` varsa, nesne.

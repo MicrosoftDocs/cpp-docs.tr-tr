@@ -1,7 +1,7 @@
 ---
 title: PATH sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 09/10/2018
+ms.date: 09/27/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -14,16 +14,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd8fa524d0c41d437575a61ff4e4456fd9933404
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 7674f07c92f8a0c9d8a9070f3f99e00dfde39140
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725315"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235470"
 ---
 # <a name="path-class"></a>path Sınıfı
 
-**Yolu** sınıf türünde bir nesne depolar `string_type`adlı `myname` doğrultusunda exposition, uygun bir yol adı olarak kullanmak için burada. `string_type` eşanlamlıdır `basic_string<value_type>`burada `value_type` eşanlamlıdır **char** Windows altında veya **wchar_t** POSIX altında.
+**Yolu** sınıf türünde bir nesne depolar `string_type`adlı `myname` doğrultusunda exposition, uygun bir yol adı olarak kullanmak için burada. `string_type` eşanlamlıdır `basic_string<value_type>`burada `value_type` eşanlamlıdır **wchar_t** Windows üzerinde veya **char** üzerinde POSIX.
 
 Daha fazla bilgi ve kod örnekleri için bkz. [dosya sistemi gezintisi (C++)](../standard-library/file-system-navigation.md).
 

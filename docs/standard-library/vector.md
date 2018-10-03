@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c4ec16ba621ee268be65bfee11798fb4b358673
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f9a94fbf8ae46c2abf65fc0229bbb2faa54d695f
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45720297"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235029"
 ---
 # <a name="ltvectorgt"></a>&lt;vektör&gt;
 
@@ -42,7 +42,8 @@ class vector<bool>;
 
 template <class Allocator>
 struct hash<vector<bool, Allocator>>;
- // TEMPLATE FUNCTIONS
+
+// TEMPLATE FUNCTIONS
 template <class Type, class Allocator>
 bool operator== (
     const vector<Type, Allocator>& left,

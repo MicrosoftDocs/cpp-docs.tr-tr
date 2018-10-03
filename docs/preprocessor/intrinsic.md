@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 496971736e1f303d61b83e15b2ba1c03083f8d53
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4de24dfac4ccd24e5cb4bda8b60a43b3ec0d0560
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422798"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234586"
 ---
 # <a name="intrinsic"></a>içi
 
@@ -86,7 +86,7 @@ Aşağıda listelenen kayan nokta işlevlerinin, gerçek iç biçimleri yoktur. 
 |[acos](../c-runtime-library/reference/acos-acosf-acosl.md)|[COSH](../c-runtime-library/reference/cosh-coshf-coshl.md)|[POW](../c-runtime-library/reference/pow-powf-powl.md)|[TANH](../c-runtime-library/reference/tanh-tanhf-tanhl.md)|
 |[asin](../c-runtime-library/reference/asin-asinf-asinl.md)|[fmod](../c-runtime-library/reference/fmod-fmodf.md)|[SİNH](../c-runtime-library/reference/sinh-sinhf-sinhl.md)||
 
- Belirttiğiniz zaman, aşağıda listelenen kayan nokta işlevleri gerçek iç biçimlere sahip [/Oi](../build/reference/oi-generate-intrinsic-functions.md), [/Og](../build/reference/og-global-optimizations.md), ve [Fast](../build/reference/fp-specify-floating-point-behavior.md) (veya /Og içeren herhangi bir seçenek: [/ Ox](../build/reference/ox-full-optimization.md), [/O1](../build/reference/o1-o2-minimize-size-maximize-speed.md)ve/O2):
+Belirttiğiniz zaman, aşağıda listelenen kayan nokta işlevleri gerçek iç biçimlere sahip [/Oi](../build/reference/oi-generate-intrinsic-functions.md), [/Og](../build/reference/og-global-optimizations.md), ve [Fast](../build/reference/fp-specify-floating-point-behavior.md) (veya /Og içeren herhangi bir seçenek: [/ Ox](../build/reference/ox-full-optimization.md), [/O1](../build/reference/o1-o2-minimize-size-maximize-speed.md)ve/O2):
 
 |||||
 |-|-|-|-|

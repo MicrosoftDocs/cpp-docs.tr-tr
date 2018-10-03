@@ -16,18 +16,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7e9541517852696073a3dbbff560bb6c44fd3264
-ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
+ms.openlocfilehash: 0b50234efa193adda081520667658f57e42de1b4
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029677"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235431"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: Geleneksel Windows masaüstü uygulaması (C++) oluştur
 
 Bu izlenecek yol, Visual Studio'da geleneksel Windows masaüstü uygulaması oluşturma işlemi gösterilmektedir. Örnek uygulama oluşturacağınız, "Hello, Windows Masaüstü!" görüntülemek için Windows API kullanır. bir pencere içinde. Diğer Windows Masaüstü uygulamaları oluşturmak için model Bu izlenecek yolda geliştirdiğiniz kodu kullanabilirsiniz.
 
-Windows API (olarak da bilinen Win32 API, Windows Masaüstü API ve Windows Klasik API), Windows uygulamaları oluşturmak için bir C dili tabanlı çerçevedir. Bu, 1980 lerin beri var olmuştur ve onlarca Windows uygulamaları oluşturmak için kullanılır. Daha gelişmiş ve program daha kolay çerçeveleri, MFC, ATL ve .NET Framework gibi bu API üzerinde oluşturulmuş. C +'da yazılmış UWP ve Store uygulamaları için bile en modern kod +/ WinRT altında bu API kullanır. Windows API hakkında daha fazla bilgi için bkz. [Windows API dizin](/windows/desktop/apiindex/windows-api-list). Windows uygulamaları oluşturmak için birçok yolu vardır, ancak bu ilk kuruluştur.
+Windows API (olarak da bilinen Win32 API, Windows Masaüstü API ve Windows Klasik API) Windows uygulamaları oluşturmak için bir C dili tabanlı çerçevedir. Bu, 1980 lerin beri var olmuştur ve onlarca Windows uygulamaları oluşturmak için kullanılır. Daha gelişmiş ve program daha kolay çerçeveleri, MFC, ATL ve .NET Framework gibi bir Windows API üstünde eklenmiştir. C +'da yazılmış UWP ve Store uygulamaları için bile en modern kod +/ WinRT altındaki Windows API kullanır. Windows API hakkında daha fazla bilgi için bkz. [Windows API dizin](/windows/desktop/apiindex/windows-api-list). Windows uygulamaları oluşturmak için birçok yolu vardır, ancak yukarıdaki işlemi ilk kuruluştur.
 
 > [!IMPORTANT]
 > Konuyu uzatmamak amacıyla bazı kod deyimlerini metinde göz ardı edilir. [Kodu derlemek](#build-the-code) bölümü bu belgenin sonunda tam kod gösterilir.
@@ -140,13 +140,13 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
    );
    ```
 
-   Bu işlevde harcanan işlemek için kod yazma *iletileri* Windows uygulamanın aldığı zaman *olayları* oluşur. Örneğin, bir kullanıcı uygulamanızda bir Tamam düğmesini seçerse, Windows bir ileti size gönderir ve içinde kod yazabilirsiniz, `WndProc` hangi iş uygun olduğunu mu işlevi. Bu adlandırılır *işleme* bir olay. Yalnızca uygulamanız için uygun olan olayları işleyin.
+   Bu işlevde harcanan, işlemek için kod yazma *iletileri* Windows uygulamanın aldığı zaman *olayları* oluşur. Örneğin, bir kullanıcı uygulamanızda bir Tamam düğmesini seçerse, Windows bir ileti size gönderir ve içinde kod yazabilirsiniz, `WndProc` hangi iş uygun olduğunu mu işlevi. Çağrıldığı *işleme* bir olay. Yalnızca uygulamanız için uygun olan olayları işleyin.
 
    Daha fazla bilgi için [pencere yordamları](https://msdn.microsoft.com/library/windows/desktop/ms632593).
 
 ### <a name="to-add-functionality-to-the-winmain-function"></a>WinMain işlevine işlevsellik eklemek için
 
-1. İçinde `WinMain` işlevi, bir yapı türünü doldurmak [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577). Bu yapı, örneğin, uygulama simgesi, pencerenin başlık çubuğunda ve çok da önemlisi, bir işlev işaretçisi, pencere yordamı için görüntülenecek ad arka plan rengi pencere hakkında bilgiler içerir. Aşağıdaki örnekte gösterilmektedir `WNDCLASSEX` yapısı.
+1. İçinde `WinMain` işlevi, bir yapı türünü doldurmak [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577). Yapısı, örneğin, uygulama simgesi, pencerenin başlık çubuğunda ve da önemlisi, bir işlev işaretçisi, pencere yordamı için görüntülenecek ad arka plan rengi pencere hakkında bilgiler içerir. Aşağıdaki örnekte gösterilmektedir `WNDCLASSEX` yapısı.
 
    ```cpp
    WNDCLASSEX wcex;
@@ -165,9 +165,9 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
    wcex.hIconSm        = LoadIcon(wcex.hInstance, IDI_APPLICATION);
    ```
 
-   Bu yapının alanları hakkında daha fazla bilgi için bkz. [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577).
+   Yukarıdaki yapının alanları hakkında daha fazla bilgi için bkz. [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577).
 
-1. Kaydetmeniz gerekir `WNDCLASSEX` BT'nin pencerenizin ve iletileri göndermek nasıl hakkında bilmesi için Windows ile. Kullanım [RegisterClassEx](https://msdn.microsoft.com/library/windows/desktop/ms633587) işlev ve pencere sınıf yapısını bir bağımsız değişken olarak geçirin. `_T` Kullandığımızdan makrosu kullanılır `TCHAR` türü.
+1. Kayıt `WNDCLASSEX` BT'nin pencerenizin ve iletileri göndermek nasıl hakkında bilmesi için Windows ile. Kullanım [RegisterClassEx](https://msdn.microsoft.com/library/windows/desktop/ms633587) işlev ve pencere sınıf yapısını bir bağımsız değişken olarak geçirin. `_T` Kullandığımızdan makrosu kullanılır `TCHAR` türü.
 
    ```cpp
    if (!RegisterClassEx(&wcex))
@@ -221,7 +221,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
 
    Bu işlev döndürür bir `HWND`, bir pencere için işleme olduğu. Bir tanıtıcı bakıma Windows pencereler izlemek için kullandığı bir işaretçi değil. Daha fazla bilgi için [Windows veri türleri](/windows/desktop/WinProg/windows-data-types).
 
-1. Bu noktada pencereye oluşturuldu, ancak biz yine de görünür yapmak için Windows bilgi gerekir. Bu kodun yaptığı olmasıdır:
+1. Bu noktada, pencerenin oluşturuldu ancak biz yine de görünür yapmak için Windows bilgi gerekir. Bu kodun yaptığı olmasıdır:
 
    ```cpp
    // The parameters to ShowWindow explained:
@@ -232,7 +232,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
    UpdateWindow(hWnd);
    ```
 
-   Henüz uygulamaya olduğundan görüntülenen pencerede çok içerik yok `WndProc` işlevi. Diğer bir deyişle, uygulama henüz Windows artık gönderdiğini iletileri işleyen değil.
+   Henüz uygulamadığınız için görüntülenen pencerede çok içerik sahip `WndProc` işlevi. Diğer bir deyişle, uygulama henüz Windows artık gönderdiğini iletileri işleme değil.
 
 1. İletileri işlemek için biz öncelikle Windows gönderdiği iletileri dinlemek için bir ileti döngüsü ekleyin. Uygulama bir mesajı aldığında, bu döngü için gönderir, `WndProc` işlenecek işlevi. İleti döngüsü aşağıdaki koda benzer.
 
@@ -340,9 +340,9 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
 
 1. Etkinleştirmek için `WndProc` işlevi uygulamanın aldığı iletileri işlemek için bir switch deyimi uygulayın.
 
-   İşlemek için önemli bir ileti [WM_PAINT](/windows/desktop/gdi/wm-paint) ileti. Görüntülenen penceresinin parçası güncelleştirilmesi gerektiği zaman uygulama bu iletiyi alır. Bu olay, bir kullanıcı bir pencere pencereniz önüne taşınır ve ardından hemen yeniden taşır meydana gelebilir. Uygulamanız, bu gibi olaylar gerçekleştiğinde bilmez; yalnızca Windows bilir, size bildirir, böylece `WM_PAINT`. Pencere ilk görüntülendiğinde tümünün güncelleştirilmiş olması gerekir.
+   İşlemek için önemli bir ileti [WM_PAINT](/windows/desktop/gdi/wm-paint) ileti. Uygulamanın aldığı `WM_PAINT` iletiyi görüntülenen penceresinin parçası güncelleştirilmesi gerekir. Olay kullanıcı pencereniz önünde bir pencere taşır, sonra yeniden hemen taşır ve bu olaylar meydana geldiğinde uygulamanızı bilmez meydana gelebilir. Yalnızca Windows bilir, size bildirir, böylece `WM_PAINT`. Pencere ilk görüntülendiğinde tümünün güncelleştirilmiş olması gerekir.
 
-   İşlenecek bir `WM_PAINT` ileti görüntülenirse, ilk çağrı [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint)sonra metin, düğmeler ve diğer denetimleri penceresindeki yerleştirme sağlayan tüm mantığı işlemek ve sonra çağrı [EndPaint](/windows/desktop/api/winuser/nf-winuser-endpaint). Bu uygulama için başlangıç çağrısı ve bitiş çağrısı arasındaki mantık "Hello, Windows Masaüstü!" dizesi görüntülemektir penceresinde. Aşağıdaki kodda, dikkat [TextOut](/windows/desktop/api/wingdi/nf-wingdi-textouta) işlevi dizesini görüntülemek için kullanılır.
+   İşlenecek bir `WM_PAINT` ileti görüntülenirse, ilk çağrı [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint)sonra metin, düğmeler ve diğer denetimleri penceresindeki yerleştirme sağlayan tüm mantığı işlemek ve sonra çağrı [EndPaint](/windows/desktop/api/winuser/nf-winuser-endpaint). Uygulama için başlangıç çağrısı ve bitiş çağrısı arasındaki mantık "Hello, Windows Masaüstü!" dizesi görüntülemektir penceresinde. Aşağıdaki kodda, dikkat [TextOut](/windows/desktop/api/wingdi/nf-wingdi-textouta) işlevi dizesini görüntülemek için kullanılır.
 
    ```cpp
    PAINTSTRUCT ps;
@@ -367,7 +367,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
    }
    ```
 
-   `HDC` Bu kodda, grafik alt sistemi ile iletişim kurmak uygulamanızı etkinleştirmek için Windows kullanan bir veri yapısıdır bir cihaz bağlamına işleyicisidir. `BeginPaint` Ve `EndPaint` İşlevler, uygulamanızın iyi vatandaşı gibi davranır ve cihaz bağlamı için gerekenden daha uzun süre kullanmaz emin olun. Bu grafik alt sistemi başka uygulamalar tarafından kullanılmaya kullanabilmesini sağlar.
+   `HDC` kodda bir Windows grafik alt sistemi ile iletişim kurmak uygulamanızı etkinleştirmek için kullandığı bir veri yapısıdır bir cihaz bağlamına işleyicisidir. `BeginPaint` Ve `EndPaint` işlevler uygulamanızı iyi vatandaşı gibi davranır ve cihaz bağlamı için gerekenden daha uzun süre kullanmaz. Grafik alt sistemi işlevleri yardımcı olur, diğer uygulamalar tarafından kullanılabilir.
 
 1. Bir uygulama genellikle diğer birçok iletiyi gibi işler [WM_CREATE](/windows/desktop/winmsg/wm-create) pencere ilk oluşturulduğunda ve [WM_DESTROY](/windows/desktop/winmsg/wm-destroy) zaman penceresi kapatılır. Aşağıdaki kod temel gösterir ancak tamamlamak `WndProc` işlevi.
 

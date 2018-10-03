@@ -1,28 +1,30 @@
 ---
 title: DontUseNewUseMake sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/21/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::DontUseNewUseMake
+- implements/Microsoft::WRL::Details::DontUseNewUseMake::operator new
 dev_langs:
 - C++
 helpviewer_keywords:
-- DontUseNewUseMake class
+- Microsoft::WRL::Details::DontUseNewUseMake class
+- Microsoft::WRL::Details::DontUseNewUseMake::operator new operator
 ms.assetid: 8b38d07b-fc14-4cea-afb9-4c1a7dde0093
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dc2b2f03cfbd488de8358b2e4b123716efcbfe15
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9c1f3a57401a3ab2efd45cab2dace127010c24e6
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431315"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235288"
 ---
 # <a name="dontusenewusemake-class"></a>DontUseNewUseMake Sınıfı
 
@@ -36,15 +38,15 @@ class DontUseNewUseMake;
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşleç engel **yeni** içinde `RuntimeClass`. Sonuç olarak, kullanmanız gereken [olun işlevi](../windows/make-function.md) yerine.
+İşleç engel `new` içinde `RuntimeClass`. Sonuç olarak, kullanmanız gereken [olun işlevi](../windows/make-function.md) yerine.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[DontUseNewUseMake::operator new İşleci](../windows/dontusenewusemake-operator-new-operator.md)|İşleç aşırı **yeni** ve içinde kullanılmasını engeller `RuntimeClass`.|
+Ad                                             | Açıklama
+------------------------------------------------ | ---------------------------------------------------------------------------
+[DontUseNewUseMake::operator yeni](#operator-new) | İşleç aşırı `new` ve içinde kullanılmasını engeller `RuntimeClass`.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -56,7 +58,29 @@ class DontUseNewUseMake;
 
 **Namespace:** Microsoft::wrl:: details
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="operator-new"></a>DontUseNewUseMake::operator yeni
 
-[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)<br/>
-[Make İşlevi](../windows/make-function.md)
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+void* operator new(
+   size_t,
+   _In_ void* placement
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*__unnamed0*<br/>
+Bir adlandırılmamış parametresi ayrılacak bellek bayt sayısını belirtir.
+
+*yerleştirme*<br/>
+Ayrılacak türü.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+İşleç işlecini aşırı yüklediyseniz ek bağımsız değişkenleri geçirmek için bir yol sağlar `new`.
+
+### <a name="remarks"></a>Açıklamalar
+
+İşleç aşırı `new` ve içinde kullanılmasını engeller `RuntimeClass`.

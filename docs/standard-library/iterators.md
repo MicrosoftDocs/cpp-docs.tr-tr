@@ -15,30 +15,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bb8efba0146a0a230a85a7980f1e71381fcf4b2
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 858612ebdda30e68972d11072b4c2ac7f4f88954
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208408"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235496"
 ---
 # <a name="iterators"></a>Yineleyiciler
 
 Bir yineleyicinin bir C++ Standart Kitaplığı kapsayıcı öğeler üzerinden yineleme yapma ve tek tek öğelere erişim sağlayan bir nesnedir. Öğeleri algoritmaları öğeleri standart bir biçimde kapsayıcı türü ile merak gerek kalmadan erişebilmesi için tüm yineleyiciler sağlayan C++ Standart Kitaplığı kapsayıcıları depolanır.
 
-Üye ve genel işlevler const_iterator end() ve işleçler gibi açıkça gibi kullanarak yineleyiciler kullanabileceğiniz ++ ve--ileriye veya geriye doğru gitme. Yineleyiciler örtük olarak bir aralık kullanabilirsiniz-(bazı yineleyici türleri için) veya döngü için alt simge işleci ['].
+Yineleyiciler açıkça üyesi ve genel işlevler gibi kullanarak kullanabileceğiniz `begin()` ve `end()` ve işleçler gibi **++** ve **--** ilerlemek için veya Geriye dönük. Yineleyiciler örtük olarak bir aralık kullanabilirsiniz-(bazı yineleyici türleri için) veya döngü için alt simge işleci  **\[]**.
 
-C++ Standart Kitaplığı dizisi veya aralık başına ilk öğesidir. Dizisi veya aralığın sonu, her zaman son öğeden bir öncekine olarak tanımlanır. Genel işlevler başlayıp belirtilen bir kapsayıcıya dönüş yineleyiciler bitmelidir. Bir kapsayıcıdaki tüm öğeleri tipik açık yineleyici döngüsü şöyle görünür:
+C++ Standart Kitaplığı dizisi veya aralık başına ilk öğesidir. Dizisi veya aralığın sonu, her zaman son öğeden bir öncekine olarak tanımlanır. Genel işlevler `begin` ve `end` belirtilen kapsayıcıya yineleyiciler döndürür. Bir kapsayıcıdaki tüm öğeleri tipik açık yineleyici döngüsü şöyle görünür:
 
 ```cpp
 vector<int> vec{ 0,1,2,3,4 };
-for (auto it = begin(vec);
-
-it != end(vec);
-
-it++)
-{  // Access element using dereference operator
-    cout <<*it <<" ";
+for (auto it = begin(vec); it != end(vec); it++)
+{
+    // Access element using dereference operator
+    cout << *it << " ";
 }
 ```
 
@@ -46,22 +43,23 @@ Aynı şeyi daha basit bir aralık gerçekleştirilebilir-for döngüsü:
 
 ```cpp
 for (auto num : vec)
- {  // no deference operator
-    cout <<num <<" ";
- }
+{
+    // no deference operator
+    cout << num << " ";
+}
 ```
 
 Yineleyicilerin beş kategorisi vardır. Güç artan sırada kategorileri şunlardır:
 
-- **Çıkış**. Çıkış yineleyici `X` kullanarak bir dizi üzerinde İleri yineleyebilirsiniz ++ işleci ve kullanarak bir öğe yalnızca bir kez yazabilirsiniz \* işleci.
+- **Çıkış**. Bir *çıkış yineleyici* `X` kullanarak bir dizi üzerinde İleri yineleyebilirsiniz **++** işleci ve kullanarak bir öğe yalnızca bir kez yazabilirsiniz **&ast;** işleci.
 
-- **Giriş**. Bir giriş yineleyici `X` kullanarak bir dizi üzerinde İleri yineleyebilirsiniz ++ işleç ve bir öğe herhangi sayıda kullanarak okuyabilir \* işleci. Giriş yineleyiciler kullanarak karşılaştırabilirsiniz ++ ve! = işleçleri. Herhangi bir giriş yineleyici kopyasını artırmanız sonra diğer kopyaların hiçbiri güvenli bir şekilde, başvurusu kaldırılmış veya artan bundan sonra karşılaştırılabilir.
+- **Giriş**. Bir *giriş yineleyici* `X` kullanarak bir dizi üzerinde İleri yineleyebilirsiniz ++ işleç ve bir öğe herhangi sayıda kullanarak okuyabilir **&ast;** işleci. Giriş yineleyiciler kullanarak karşılaştırabilirsiniz **++** ve **! =** işleçleri. Herhangi bir giriş yineleyici kopyasını artırmanız sonra diğer kopyaların hiçbiri güvenli bir şekilde, başvurusu kaldırılmış veya artan bundan sonra karşılaştırılabilir.
 
-- **İleri**. İleriye doğru yineleyici `X` İleri dizisi kullanılarak üzerinden yineleme ++ işleci ve herhangi bir öğeyi okuyabilen veya sabit olmayan öğeleri kullanarak herhangi bir sayıda kez yazma \* işleci. Öğe üyeleri kullanarak erişebileceğiniz ileriye doğru Yineleyicilerin =='i kullanarak karşılaştırmak ve -> işleci ve! = işleçleri. Her biri kullanılabilir başvurusu ve bağımsız olarak artan bir ileriye doğru yineleyici birden çok kopyasını yapabilirsiniz. Tüm kapsayıcı başvuru olmadan başlatılır ileri doğru yineleyici null ileriye doğru yineleyici çağrılır. Null İleri yineleyiciler her zaman eşit karşılaştırın.
+- **İleri**. A *ileriye doğru yineleyici* `X` İleri dizisi kullanılarak üzerinden yineleme ++ işleci ve herhangi bir öğeyi okuyabilen veya sabit olmayan öğeleri kullanarak herhangi bir sayıda kez yazma **&ast;** işleci. Öğe üyeleri kullanarak erişebileceğiniz **->** işleci ve karşılaştırma İleri yineleyiciler kullanılarak **==** ve **! =** işleçleri. Her biri kullanılabilir başvurusu ve bağımsız olarak artan bir ileriye doğru yineleyici birden çok kopyasını yapabilirsiniz. Tüm kapsayıcı başvuru adlı olmadan başlatılır ileri doğru yineleyici bir *null ileriye doğru yineleyici*. Null İleri yineleyiciler her zaman eşit karşılaştırın.
 
-- Çift yönlü. Çift yönlü bir yineleyici `X` ileriye doğru yineleyici yerini alabilir. Ancak ayrıca çift yönlü bir yineleyici olarak içinde--azaltma kullanabileceği`X`, `X`--, veya (`V` = \*`X`--). Öğe üyelere erişmek ve çift yönlü yineleyiciler ileriye doğru Yineleyicilerin aynı şekilde karşılaştırın.
+- **Çift yönlü**. A *çift yönlü yineleyici* `X` ileriye doğru yineleyici yerini alabilir. Ancak ayrıca çift yönlü bir yineleyici gibi azaltma kullanabileceği `--X`, `X--`, veya `(V = *X--)`. Öğe üyelere erişmek ve çift yönlü yineleyiciler ileriye doğru Yineleyicilerin aynı şekilde karşılaştırın.
 
-- **Rastgele erişim**. Bir rastgele erişim yineleyici `X` çift yönlü bir yineleyici yerini alabilir. Bir rastgele erişim yineleyici ile kullanabileceğiniz erişim öğeleri için alt simge işleci [']. Kullanabileceğiniz +, -, belirtilen sayıda öğeyi ileriye veya geriye doğru gitme ve yineleyici arasındaki uzaklığı hesaplamak için += ve-= işleçleri. Çift yönlü yineleyiciler kullanarak karşılaştırabilirsiniz ==,! =, \<, >, \<= ve > =.
+- **Rastgele erişim**. A *rastgele erişim yineleyicisini* `X` çift yönlü bir yineleyici yerini alabilir. Alt simge işleci kullanabileceğiniz bir rastgele erişim yineleyici ile  **\[]** öğelere erişim. Kullanabileceğiniz **+**, **-**, **+=** ve **-=** taşımak işleçleri ileriye veya geriye doğru öğelerin ve yineleyici arasındaki uzaklığı hesaplamak için belirtilen bir sayı. Çift yönlü yineleyiciler kullanarak karşılaştırabilirsiniz **==**, **! =**, **\<**, **>**, **\< =**, ve **>=**.
 
 Tüm yineleyiciler atanan veya kopyalanır. Bunlar basit nesneler olarak kabul edilir ve genellikle geçirilen ve başvuruya göre değil değere göre döndürdü. Ayrıca, daha önce açıklanan işlemlerin hiçbiri üzerinde geçerli bir yineleyici gerçekleştirildiğinde bir özel durum oluşturabilecek unutmayın.
 

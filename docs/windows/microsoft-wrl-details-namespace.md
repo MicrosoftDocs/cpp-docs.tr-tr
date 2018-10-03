@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3dd07ead0608657597a81b239732347f67455273
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f95eaa49db5e09bceaefafc16312250d823e5d5c
+ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436890"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48250399"
 ---
 # <a name="microsoftwrldetails-namespace"></a>Microsoft::WRL::Details Ad Alanı
 
@@ -43,7 +43,7 @@ namespace Microsoft::WRL::Details;
 |[MakeAllocator Sınıfı](../windows/makeallocator-class.md)|İle veya zayıf başvuru desteği olmayan bir etkinleştirilebilir sınıf için bellek ayırır.|
 |[ModuleBase Sınıfı](../windows/modulebase-class.md)|Temel sınıfını temsil eden [Modülü](../windows/module-class.md) sınıfları.|
 |[RemoveIUnknown Sınıfı](../windows/removeiunknown-class.md)|Eşdeğer olan bir tür yapar bir `IUnknown`-tabanlı ancak türünde sanal olmayan `QueryInterface`, `AddRef`, ve `Release` yöntemleri.|
-|[WeakReference sınıfı](../windows/weakreference-class1.md)|Temsil eden bir *zayıf başvuru* kullanılabilen Windows çalışma zamanı veya klasik COM ile Zayıf bir başvuru erişilebilir olmayabilir veya bir nesneyi temsil eder.|
+|[WeakReference sınıfı](../windows/weakreference-class.md)|Temsil eden bir *zayıf başvuru* kullanılabilen Windows çalışma zamanı veya klasik COM ile Zayıf bir başvuru erişilebilir olmayabilir veya bir nesneyi temsil eder.|
 
 ### <a name="structures"></a>Yapılar
 
@@ -84,7 +84,7 @@ namespace Microsoft::WRL::Details;
 |[ActivationFactoryCallback İşlevi](../windows/activationfactorycallback-function.md)|Belirtilen etkinleştirme kimliği için kullanılan etkinleştirme üreteci alır|
 |[Move İşlevi](../windows/move-function.md)|Belirtilen bağımsız değişken bir konumdan diğerine taşır.|
 |[RaiseException İşlevi](../windows/raiseexception-function.md)|Çağıran iş parçacığında bir özel durum oluşturur.|
-|[Swap İşlevi (Windows Çalışma Zamanı C++ Şablon Kitaplığı)](../windows/swap-function-windows-runtime-cpp-template-library.md)|İki belirtilen bağımsız değişken değerlerini birbiriyle değiştirir.|
+|[Swap işlevi (WRL)](../windows/swap-function-wrl.md)|İki belirtilen bağımsız değişken değerlerini birbiriyle değiştirir.|
 |[TerminateMap İşlevi](../windows/terminatemap-function.md)|Belirtilen modül sınıfı Fabrikalar kapatır.|
 
 ## <a name="requirements"></a>Gereksinimler

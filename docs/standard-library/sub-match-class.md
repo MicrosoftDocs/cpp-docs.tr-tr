@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2349beadb5983c85059be83ee5a933689913886
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 65d873c4e7188b3000cee65e03c4ce6edcad8046
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722728"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235340"
 ---
 # <a name="submatch-class"></a>sub_match Sınıfı
 
@@ -46,7 +46,7 @@ Bir alt eşleşme açıklar.
 ```cpp
 template <class BidIt>
 class sub_match
- : public std::pair<BidIt, BidIt>
+    : public std::pair<BidIt, BidIt>
 ```
 
 ## <a name="parameters"></a>Parametreler

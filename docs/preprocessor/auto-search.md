@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 09231dbb934d1846f3f54f0c04d89ec0a0957f73
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7ef8fbd52aada21295f1eb88dd98216e83366af7
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379066"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235639"
 ---
 # <a name="autosearch"></a>auto_search
-**C++ özgü**  
-  
-Bir tür kitaplığı ile başvurulduğunda, belirtir `#import` ve kendisini başka bir tür kitaplığına başvurduğunda, derleyicinin örtük yapabilirsiniz `#import` diğer tür kitaplığı için.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-auto_search  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- **END C++ özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz. 
+
+**C++ özgü**
+
+Bir tür kitaplığı ile başvurulduğunda, belirtir `#import` ve kendisini başka bir tür kitaplığına başvurduğunda, derleyicinin örtük yapabilirsiniz `#import` diğer tür kitaplığı için.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+auto_search
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+**END C++ özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

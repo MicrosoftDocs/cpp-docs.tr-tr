@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 208ae27e694396a21b76bc482c87084e03a21975
-ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
+ms.openlocfilehash: d3623eb594ff82660e97809eef609a33e74e74dc
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169690"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235444"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>İzlenecek yol: MFC Karalama Uygulamasını Güncelleştirme (2. Bölüm)
 
@@ -116,7 +116,7 @@ Bir paneli kalınlığı ve kalem rengini denetlemek düğmeleri görüntülemek
 
 1. İkinci birleşik giriş kutusuna tıklayın. Değişiklik **açıklamalı alt yazı** için `Thick Pen`, **kimliği** için `ID_PEN_THICK_WIDTH`, **türü** için `Drop List`, **veri** için `5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;`, ve **metin** için `5`.
 
-1. Yeni bir birleşik giriş kutuları için mevcut tüm menü öğelerini karşılık gelmez. Bu nedenle, her kalem seçeneği için bir menü öğesi oluşturmanız gerekir.
+1. Her kalem seçeneği için bir menü öğesi oluşturmanız gerekir, yeni birleşik giriş kutuları mevcut tüm menü öğelerine karşılık gelmeyen.
 
    1. İçinde **kaynak görünümü** penceresini açık **IDR_SCRIBBTYPE** menü kaynağı.
 
@@ -124,9 +124,9 @@ Bir paneli kalınlığı ve kalem rengini denetlemek düğmeleri görüntülemek
 
    1. Açmak için yazdığınız metnin sağ **özellikleri** penceresi ve değişiklik kimliği özelliğini `ID_PEN_THIN_WIDTH`.
 
-   1. Ayrıca, her bir kalem menü öğesi için bir olay işleyicisi oluşturmanız gerekir. Sağ **düzeltmeyi & n kalem** oluşturduğunuz ve ardından menü öğesi **olay işleyici Ekle**. **Olay işleyici Sihirbazı** görüntülenir.
+   1. Her bir kalem menü öğesi için bir olay işleyicisi oluşturun. Sağ **düzeltmeyi & n kalem** oluşturduğunuz ve ardından menü öğesi **olay işleyici Ekle**. **Olay işleyici Sihirbazı** görüntülenir.
 
-   1. İçinde **sınıf listesi** Sihirbazı, seçim kutusunda **CScribbleDoc** ve ardından **ekleme ve düzenleme**. Bu adlı bir olay işleyicisi oluşturur `CScribbleDoc::OnPenThinWidth`.
+   1. İçinde **sınıf listesi** Sihirbazı, seçim kutusunda **CScribbleDoc** ve ardından **ekleme ve düzenleme**. Komut adlı bir olay işleyicisi oluşturur `CScribbleDoc::OnPenThinWidth`.
 
    1. Aşağıdaki kodu ekleyin `CScribbleDoc::OnPenThinWidth`.
 
@@ -160,7 +160,7 @@ Bir paneli kalınlığı ve kalem rengini denetlemek düğmeleri görüntülemek
 
    1. Sağ **kalın kalem** oluşturduğunuz ve ardından menü öğesi **olay işleyici Ekle**. **Olay işleyici Sihirbazı** görüntülenir.
 
-   1. İçinde **sınıf listesi** kutusu seçme Sihirbazı'nın **CScribbleDoc** ve ardından **ekleme ve düzenleme**. Bu adlı bir olay işleyicisi oluşturur `CScribbleDoc::OnPenThickWidth`.
+   1. İçinde **sınıf listesi** kutusu seçme Sihirbazı'nın **CScribbleDoc** ve ardından **ekleme ve düzenleme**. Komut adlı bir olay işleyicisi oluşturur `CScribbleDoc::OnPenThickWidth`.
 
    1. Aşağıdaki kodu ekleyin `CScribbleDoc::OnPenThickWidth`.
 
@@ -196,11 +196,11 @@ Ardından, ekleme bir [CMFCRibbonColorButton](../mfc/reference/cmfcribboncolorbu
 
 1. Renk düğmesine tıklayın. Değişiklik **açıklamalı alt yazı** için `Color`, **kimliği** için `ID_PEN_COLOR`, **basit görünüş** için `True`, **büyük görüntü dizini** için `1`, ve **ayırma modu** için `False`.
 
-1. Değişiklikleri kaydetmek ve oluşturmak ve uygulamayı çalıştırın. Yeni renk düğmesinin görüntülenmesi **kalem** paneli. Ancak, bir olay işleyicisi henüz olmadığı için kullanılamaz. Sonraki adımlarda, bir renk düğmesi olay işleyicisi eklemek gösterilmektedir.
+1. Değişiklikleri kaydetmek ve oluşturmak ve uygulamayı çalıştırın. Yeni renk düğmesinin görüntülenmesi **kalem** paneli. Ancak, henüz bir olay işleyicisi olmadığı için kullanılamaz. Sonraki adımlarda, bir renk düğmesi olay işleyicisi eklemek gösterilmektedir.
 
 ##  <a name="addcolormember"></a> Belge sınıfına renk üye ekleme
 
-Özgün karalama uygulamasını renkli kalemler sahip olmadığından, bunlar için bir uygulama yazması gerekir. Belge kalem rengini depolamak eklemek için yeni bir üye belge sınıfına `CscribbleDoc`.
+Özgün karalama uygulamasını renkli kalemler olmadığından, bunlar için bir uygulama yazması gerekir. Belge kalem rengini depolamak eklemek için yeni bir üye belge sınıfına `CscribbleDoc`.
 
 ### <a name="to-add-a-color-member-to-the-document-class"></a>Belge sınıfına bir renk üye eklemek için
 
@@ -211,7 +211,7 @@ Ardından, ekleme bir [CMFCRibbonColorButton](../mfc/reference/cmfcribboncolorbu
    COLORREF m_penColor;
    ```
 
-1. Her belgenin bir listesini içeren bir kullanıcı zaten çizilmiştir çok tuş vuruşu. Her vuruş tarafından tanımlanan bir `CStroke` nesne. `CStroke` Sınıfı kalem rengi hakkında bilgi içermez. Bu nedenle, sınıf değiştirmeniz gerekir. İçinde scribdoc.h, içinde `CStroke` sınıfı, sonra tanımını aşağıdaki kod satırlarını ekleme `m_nPenWidth` veri üyesi.
+1. Her belgenin bir listesini içeren bir kullanıcı zaten çizilmiştir çok tuş vuruşu. Her vuruş tarafından tanımlanan bir `CStroke` nesne. `CStroke` Sınıfı, Kalem rengi hakkında bilgi içermez, bu nedenle sınıf değiştirmeniz gerekir. İçinde scribdoc.h, içinde `CStroke` sınıfı, sonra tanımını aşağıdaki kod satırlarını ekleme `m_nPenWidth` veri üyesi.
 
    ```cpp
    // Pen color for the stroke
@@ -267,7 +267,7 @@ Ardından, ekleme bir [CMFCRibbonColorButton](../mfc/reference/cmfcribboncolorbu
 
    1. Sağ **renk** menü öğesi ve tıklatın **olay işleyici Ekle**. **Olay işleyici Sihirbazı** görünür.
 
-   1. İçinde **sınıf listesi** Sihirbazı, seçim kutusunda **CScribbleDoc** ve ardından **ekleme ve düzenleme** düğmesi. Bu oluşturur `CScribbleDoc::OnPenColor` olay işleyicisi taslağı.
+   1. İçinde **sınıf listesi** Sihirbazı, seçim kutusunda **CScribbleDoc** ve ardından **ekleme ve düzenleme** düğmesi. Komut oluşturur `CScribbleDoc::OnPenColor` olay işleyicisi taslağı.
 
 1. Yer tutucusu için değiştirin `CScribbleDoc::OnPenColor` aşağıdaki kod ile olay işleyicisi.
 
@@ -287,7 +287,7 @@ Ardından, ekleme bir [CMFCRibbonColorButton](../mfc/reference/cmfcribboncolorbu
    }
    ```
 
-1. Değişiklikleri kaydetmek ve oluşturmak ve uygulamayı çalıştırın. Renk düğmesine basın ve kalem rengini değiştirmek mümkün olması gerekir.
+1. Değişiklikleri kaydetmek ve oluşturmak ve uygulamayı çalıştırın. Şimdi renk düğmesine basın ve Kalem rengi değiştirebilirsiniz.
 
 ##  <a name="initpensave"></a> Kalemler başlatma ve tercihlerini kaydediliyor
 

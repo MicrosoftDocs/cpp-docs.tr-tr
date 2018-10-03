@@ -148,12 +148,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9082e4a8269e692bf9e1d9b8a27f61291b2707a9
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3d5fb638851398f39aad94675e1f4b0a59618dd2
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726238"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235678"
 ---
 # <a name="unorderedmap-class"></a>unordered_map Sınıfı
 
@@ -2665,7 +2665,7 @@ unordered_map(
 
 template <class InIt>
 unordered_map(
-InputIterator First,
+    InputIterator First,
     InputIterator Last,
     size_type Bucket_count = N0,
     const Hash& Hash = Hash(),

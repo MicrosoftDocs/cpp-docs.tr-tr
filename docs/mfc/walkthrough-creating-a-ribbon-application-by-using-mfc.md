@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bb7039481469bbd6c307ab1ec88b508ff089733
-ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
+ms.openlocfilehash: 2d86749cc8481f2472ed2ebe29dd535e05dcb2e2
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169586"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48236029"
 ---
 # <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>İzlenecek yol: MFC Kullanarak Şerit Uygulaması Oluşturma
 
@@ -73,7 +73,7 @@ Bu izlenecek yol, Visual Studio'yu kullanın belirlediğinizi varsayar **genel g
 
 1. Ardından, paneli özelleştirin. Paneller birbirlerine mantıksal olarak ilişkili öğeleri gruplandırmak için kullanılır. Örneğin, **giriş** bu uygulama için sekmesinde **Kes**, **kopyalama**, ve **Yapıştır** komutları tüm bulunur  **Pano** paneli. Paneli özelleştirmek için sağ **Panel1** ve ardından **özellikleri**. İçinde **özellikleri** penceresinde değişiklik **açıklamalı alt yazı** için *Sık Kullanılanlar*.
 
-    Belirtebileceğiniz **görüntü dizini** panelinin. Bu Şerit panel eklenirse görüntülenen simgeyi belirtir **hızlı erişim araç çubuğu**. Simgenin kendisi şerit panelinde görüntülenmez.
+    Belirtebileceğiniz **görüntü dizini** panelinin. Bu Şerit panel eklenirse görüntülenen simgeyi belirtir **hızlı erişim araç çubuğu**. Simgenin kendisi Şerit panelinde görüntülenmez.
 
 1. Şerit kategorisi ve panelin başarılı bir şekilde oluşturulduğunu doğrulamak için şerit denetiminin önizlemesini görüntüleyin. Üzerinde **Şerit Düzenleyici araç çubuğu**, tıklayın **şeridi Sına** düğmesi. A **özel** sekmesi ve **Sık Kullanılanlar** paneli Şerit üzerinde görüntülenecektir.
 
@@ -81,7 +81,7 @@ Bu izlenecek yol, Visual Studio'yu kullanın belirlediğinizi varsayar **genel g
 
 1. Önceki yordamda oluşturduğunuz panele öğe eklemek için denetimleri sürükleyin **Şerit düzenleyici** bölümünü **araç kutusu** Tasarım görünümünde paneline.
 
-1. İlk olarak, ekleme bir **yazdırma** düğmesi. **Yazdırma** düğmesini içeren bir alt menüye sahip olacak bir **Hızlı Yazdır** varsayılan yazıcıyı kullanarak yazdıran komutu. Bu komutların ikisi de bu uygulama için tanımlanmış durumdadır. Uygulama menüsünde yer alırlar.
+1. İlk olarak, ekleme bir **yazdırma** düğmesi. **Yazdırma** düğmesini içeren bir alt menüye sahip olacak bir **Hızlı Yazdır** varsayılan yazıcıyı kullanarak yazdıran komutu. Bu komutların ikisi de bu uygulama için tanımlanmış durumdadır. Bunlar, uygulama menüsünde yer.
 
     Oluşturulacak **yazdırma** düğmesi, bir düğme aracını panele sürükleyin.
 

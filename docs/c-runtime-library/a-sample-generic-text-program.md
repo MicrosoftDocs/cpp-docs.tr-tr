@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dbb02f426e839eff20a1dcd37ab41d4a08640599
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3adde04ba8fe259c25f3439cef247192eea175f2
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081539"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48233689"
 ---
 # <a name="a-sample-generic-text-program"></a>Örnek Genel Metin Programı
 
@@ -31,7 +31,7 @@ ms.locfileid: "46081539"
 
 Aşağıdaki program, GENTEXT. C TCHAR içinde tanımlanan genel metin eşlemeleri kullanımını daha ayrıntılı bir gösterim sağlar. Y:
 
-```
+```C
 // GENTEXT.C
 // use of generic-text mappings defined in TCHAR.H
 
@@ -67,12 +67,11 @@ int __cdecl _tmain(int argc, _TCHAR **argv, _TCHAR **envp)
    _tprintf(_T("'%s'\n"), _tcsrev(_tcsdup(str)));
    return 0;
 }
-
 ```
 
 Varsa `_MBCS` olmuştur GENTEXT tanımlı. Aşağıdaki MBCS program C eşlenir:
 
-```
+```C
 // crt_mbcsgtxt.c
 
 /*
@@ -110,7 +109,7 @@ int __cdecl main(int argc, char **argv, char **envp)
 
 Varsa `_UNICODE` olmuştur GENTEXT tanımlı. C programı aşağıdaki Unicode sürümü eşler. Kullanma hakkında daha fazla bilgi için `wmain` bir ardılı olarak Unicode programlarda `main`, bkz: [wmain kullanma](../c-language/using-wmain.md) içinde *C dil başvurusu*.
 
-```
+```C
 // crt_unicgtxt.c
 
 /*
@@ -148,7 +147,7 @@ int __cdecl wmain(int argc, wchar_t **argv, wchar_t **envp)
 
 Kullanılmazsa `_MBCS` ya da `_UNICODE` olmuştur GENTEXT tanımlı. C gibi tek baytlık ASCII koduna eşler:
 
-```
+```C
 // crt_sbcsgtxt.c
 /*
  * Use of generic-text mappings defined in TCHAR.H
@@ -183,7 +182,7 @@ int __cdecl main(int argc, char **argv, char **envp)
 }
 ```
 
- **END Microsoft özgü**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

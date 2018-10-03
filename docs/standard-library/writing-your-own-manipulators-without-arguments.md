@@ -14,43 +14,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df8fcc1f316b5281e8c6775492d402559d77f483
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e8bfad1919863a58554604fe6d32b4563e57a14a
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857759"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235717"
 ---
 # <a name="writing-your-own-manipulators-without-arguments"></a>Bağımsız Değişkenler Olmadan Kendi Manipülatörlerinizi Yazma
 
-Bağımsız değişkenler kullanmayın manipülatörlerinizi yazma sınıf türetme ne karmaşık makroları kullanımını gerektirir. Yazıcı çifti gerektirir varsayalım \<ESC > [Kalın modu girmek için tıklatın. Akışa doğrudan bu çifti ekleyebilirsiniz:
+Bağımsız değişkenler kullanmayan manipülatörlerinizi yazma sınıf türetme ne karmaşık makroların kullanılması gerekir. Yazıcı çifti gerektirir varsayalım \<ESC > [Kalın moduna girmek için. Akışa doğrudan bu çifti ekleyebilirsiniz:
 
 ```cpp
-cout <<"regular " <<'\033' <<'[' <<"boldface" <<endl;
+cout << "regular " << '\033' << '[' << "boldface" << endl;
 ```
 
-Veya tanımlayabilirsiniz `bold` karakterleri ekler manipulator:
+Veya tanımlayabilirsiniz `bold` karakterleri ekleyen işleyici:
 
 ```cpp
 ostream& bold(ostream& os) {
-    return os <<'\033' <<'[';
+    return os << '\033' << '[';
 }
-cout <<"regular " <<bold <<"boldface" <<endl;
+cout << "regular " << bold << "boldface" << endl;
 ```
 
-Genel olarak tanımlanan `bold` işlev sürer bir `ostream` başvuru bağımsız değişkeni ve döndürür `ostream` başvuru. Tüm özel sınıfı öğelere erişim gerekmediği için üye işlevi veya bir arkadaş değil. `bold` İşlevi bağlayan akışa çünkü akışın `<<` işleci aşırı yüklenmiş işlevi, bu tür kabul etmek için şuna benzer bir bildirimi kullanarak:
+Genel olarak tanımlanan `bold` işlevini alır bir `ostream` başvuru bağımsız değişkeni ve döndürür `ostream` başvuru. Herhangi bir özel sınıf öğelere erişim gerekmediği için bir arkadaş veya bir üye işlev değil. `bold` İşlevi, çünkü akışa bağlar akışın `<<` işleci aşırı yüklenmiş işlev türü kabul etmek için şuna benzer bir bildirimi kullanarak:
 
 ```cpp
 _Myt& operator<<(ios_base& (__cdecl *_Pfn)(ios_base&))
-{     // call ios_base manipulator
- (*_Pfn)(*(ios_base *)this);
+{
+    // call ios_base manipulator
+    (*_Pfn)(*(ios_base *)this);
 
     return (*this);
-
 }
 ```
 
-Diğer aşırı yüklenmiş işleçler genişletmek için bu özelliği kullanın. Bu durumda, arızi olduğundan, `bold` akışa karakter ekler. Bitişik karakter yazdırıldığında bu akışa mutlaka eklendiğinde, işlev çağrılır. Bu nedenle, yazdırma akışın arabelleğe alma nedeniyle Gecikmeli.
+Bu özellik, diğer aşırı yüklenmiş işleçler genişletmek için kullanabilirsiniz. Bu durumda, arızi olduğu, `bold` karakter akışı halinde ekler. Bitişik karakter yazdırıldığında akışa mutlaka eklendiği işlevi çağrılır. Bu nedenle, yazdırma akışın arabelleğe alma nedeniyle Gecikmeli.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

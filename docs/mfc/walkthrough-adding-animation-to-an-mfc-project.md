@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 326535395599a76f521100475cfc80b014ba6cd9
-ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
+ms.openlocfilehash: 16613425633f55eeed152e86c1b4fea7f00a784c
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169443"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234076"
 ---
 # <a name="walkthrough-adding-animation-to-an-mfc-project"></a>İzlenecek Yol: MFC Projesine Animasyon Ekleme
 
@@ -104,7 +104,7 @@ Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
 
 ### <a name="to-add-an-animated-object-to-the-project"></a>Animasyonlu nesne projeye eklemek için
 
-1. Çözüm Gezgini'nde MFCAnimationWalkthroughView.h değiştirilmek üzere açmak için çift tıklayın. Hemen önce tanımını `CMFCAnimationWalkthroughView` sınıfı, animasyon nesnesi zamanlama çakışıyor işleyecek bir özel animasyon denetleyicisi oluşturmak için aşağıdaki kodu ekleyin.
+1. İçinde **Çözüm Gezgini**, MFCAnimationWalkthroughView.h değiştirilmek üzere açmak için çift tıklayın. Hemen önce tanımını `CMFCAnimationWalkthroughView` sınıfı, animasyon nesnesi zamanlama çakışıyor işleyecek bir özel animasyon denetleyicisi oluşturmak için aşağıdaki kodu ekleyin.
 
     ```cpp
     class CCustomAnimationController : public CAnimationController

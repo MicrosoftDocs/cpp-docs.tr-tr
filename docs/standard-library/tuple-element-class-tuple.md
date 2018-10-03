@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4fb89f479320287ff238517cc649f199e0081ffa
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5b893b6b8c32be7bcd43acd4804694d997918177
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716202"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234261"
 ---
 # <a name="tupleelement-class"></a>tuple_element Sınıfı
 
@@ -136,19 +136,19 @@ int main()
 
     for (const auto& e : c0)
     {
-        cout << " " << e;
+        cout << e << " ";
     }
     cout << endl;
 
-    // display first element " 0"
+    // display first element "0"
     tuple_element<0, MyArray>::type val = c0.front();
-    cout << " " << val << endl;
+    cout << val << endl;
 }
 ```
 
 ```Output
- 0 1 2 3
- 0
+0 1 2 3
+0
 ```
 
 ## <a name="example"></a>Örnek
@@ -163,23 +163,23 @@ typedef pair<int, double> MyPair;
 int main() {
     MyPair c0(0, 1.333);
 
-    // display contents " 0 1"
-    cout << " " << get<0>(c0);
-    cout << " " << get<1>(c0) << endl;
+    // display contents "0 1"
+    cout << get<0>(c0) << " ";
+    cout << get<1>(c0) << endl;
 
-    // display first element " 0" by index
+    // display first element "0 " by index
     tuple_element<0, MyPair>::type val = get<0>(c0);
-    cout << " " << val;
+    cout << val << " ";
 
     // display second element by type
     tuple_element<1, MyPair>::type val2 = get<double>(c0);
-    cout << " " << val2 << endl;
+    cout << val2 << endl;
 }
 ```
 
 ```Output
- 0 1.333
- 0 1.333
+0 1.333
+0 1.333
 ```
 
 ## <a name="requirements"></a>Gereksinimler

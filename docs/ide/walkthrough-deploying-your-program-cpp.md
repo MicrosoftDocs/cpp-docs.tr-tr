@@ -19,34 +19,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b91c6d1d392c792862f3e5e4e1e313770136b70c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d795ea8678c04d5525e726017a2fa3a0760f3a87
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374081"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235925"
 ---
 # <a name="walkthrough-deploying-your-program-c"></a>İzlenecek Yol: Programınızı Dağıtma (C++)
 
-Listelenen önceki izlenecek yolları, tamamlayarak uygulamanızı oluşturdunuz [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md), böylece diğer kullanıcıların bir yükleyici oluşturmak için son adımdır programı kendi bilgisayarlarına yükleyin. Bunu yapmak için varolan çözümünüze yeni bir proje ekleyeceksiniz. Bu yeni proje çıktısı uygulamanız başka bir bilgisayara yükleyecek bir setup.exe dosyasıdır.
+Listelenen önceki izlenecek yolları, tamamlayarak uygulamanızı oluşturdunuz [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md), böylece diğer kullanıcıların bir yükleyici oluşturmak için son adımdır programı kendi bilgisayarlarına yükleyin. Yükleyici için varolan çözümünüze yeni bir proje ekleyeceksiniz. Bu yeni proje çıktısı uygulamanız başka bir bilgisayara yükleyecek bir setup.exe dosyasıdır.
 
-Bu yönerge Windows Installer uygulamanızı dağıtmak için nasıl kullanılacağını gösterir. Bir uygulamayı dağıtmak için ClickOnce da kullanabilirsiniz. Daha fazla bilgi için [Visual C++ uygulamaları için ClickOnce dağıtımı](../ide/clickonce-deployment-for-visual-cpp-applications.md). Genel olarak, dağıtım hakkında daha fazla bilgi için bkz [uygulamaları dağıtma, hizmetleri ve bileşenleri](/visualstudio/deployment/deploying-applications-services-and-components).
+İzlenecek yol, uygulamanızı dağıtmak için Windows Installer kullanmayı gösterir. Bir uygulamayı dağıtmak için ClickOnce da kullanabilirsiniz. Daha fazla bilgi için [Visual C++ uygulamaları için ClickOnce dağıtımı](../ide/clickonce-deployment-for-visual-cpp-applications.md). Genel olarak, dağıtım hakkında daha fazla bilgi için bkz [uygulamaları dağıtma, hizmetleri ve bileşenleri](/visualstudio/deployment/deploying-applications-services-and-components).
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Bu izlenecek yol, C++ dili temellerini anladığınızı varsayar.
+- İzlenecek yol, C++ dili temellerini anladığınızı varsayar.
 
-- Ayrıca, listelenen önceki izlenecek yolları tamamladığınızı varsayar [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
+- Ayrıca, listelenen önceki izlenecek yolları tamamladığınız varsayılır [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
 
-- Bu izlenecek yol, Visual Studio'nun Express sürümlerinde tamamlanamaz.
+- İzlenecek yol, Visual Studio'nun Express sürümlerinde tamamlanamaz.
 
-- Zaten yapmadıysanız, bu makaledeki adımlarda açıklandığı Microsoft Visual Studio yükleyici projeleri uzantısını indirin. Uzantı, Visual Studio geliştiricileri için ücretsizdir ve Visual Studio için Kurulum ve dağıtım proje şablonları işlevselliğinin ekler.
+- Zaten yapmadıysanız, başka bir adım daha sonra açıklandığı gibi Microsoft Visual Studio yükleyici projeleri uzantısını indirin. Uzantı, Visual Studio geliştiricileri için ücretsizdir ve Visual Studio için Kurulum ve dağıtım proje şablonları işlevselliğinin ekler.
 
 ### <a name="to-install-the-visual-studio-setup-and-deployment-project-template"></a>Visual Studio Kurulum ve dağıtım proje şablonunu yüklemek için
 
-1. Visual Studio, internet bağlıyken seçin **Araçları** > **Uzantılar ve güncelleştirmeler**.
+1. Visual Studio'da, İnternete bağlı olduğunuzda seçin **Araçları** > **Uzantılar ve güncelleştirmeler**.
 
-1. Altında **Uzantılar ve güncelleştirmeler**seçin **çevrimiçi** sekmesi ve türü *Microsoft Visual Studio yükleyici projeleri* arama kutusuna. İsabet **Enter**seçin **Microsoft Visual Studio 2017 yükleyicisi projeleri**, tıklatıp **indirme**.
+1. Altında **Uzantılar ve güncelleştirmeler**seçin **çevrimiçi** sekmesi ve türü *Microsoft Visual Studio yükleyici projeleri* arama kutusuna. İsabet **Enter**seçin **Microsoft Visual Studio \<sürüm > yükleyici projeleri**, tıklatıp **indirme**.
 
 1. Uzantıyı yükledikten sonra Visual Studio'yu yeniden başlatın, bu seçeneği seçin.
 
@@ -70,7 +70,7 @@ Bu yönerge Windows Installer uygulamanızı dağıtmak için nasıl kullanılac
 
 1. Kısayol öğeyi yeniden adlandır *oyun*ardından sürükleyip öğesine **kullanıcının Programlar menüsü** pencerenin sol tarafındaki düğümü.
 
-1. İçinde **Çözüm Gezgini** seçin **oyun yükleyici** projesini ve ardından **görünümü** > **Özellikler penceresi** veya isabet **F4** açmak için **özellikleri** penceresi.
+1. İçinde **Çözüm Gezgini**seçin **oyun yükleyici** projesini ve ardından **görünümü** > **Özellikler penceresi** veya isabet **F4** açmak için **özellikleri** penceresi.
 
 1. Yükleyicide görünmesini istediğiniz kadar ek ayrıntıları belirtin.  Örneğin, *Contoso* için **üretici**, *oyun yükleyici* için **ürün adı**, ve *http://www.contoso.com* için **SupportUrl**.
 

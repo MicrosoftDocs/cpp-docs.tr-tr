@@ -1,28 +1,25 @@
 ---
 title: Visual Studio'da Visual C++ | Microsoft Docs
+description: Visual C++ için Microsoft C++ Derleyici, Kod Düzenleyicisi ve ilgili araçlar Visual Studio IDE'de addır. Programları Windows, Linux, Android ve iOS geliştirme için Visual C++ kullanın.
 ms.custom: ''
-ms.date: 08/22/2018
+ms.date: 09/26/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- unmanaged code, C++
-- development environment, Visual C++
-- unmanaged code
-- Visual C++
-- Visual C++, reference
+- Visual C++, home page
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92ffcd9ecf292f07d78df75f75c8d1ce77a6cbfb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4e8082b734f0ccc2943d8ba9f23b19f152ce42a6
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399788"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234946"
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual Studio'da Visual C++
 
@@ -81,11 +78,20 @@ C++ öğrenmeye başlayın.
 
 ## <a name="c-development-tools"></a>C++ geliştirme araçları
 
-[Geliştirme araçları ve IDE](ide/ide-and-tools-for-visual-cpp-development.md).
-Visual Studio IDE kullanmak projeler oluşturun, kaynak kodu dosyaları ile çalışma, kitaplıklarına bağlanması, derleme, hata ayıklama, birim testleri oluşturma, statik analiz yapmak için dağıtma ve daha.
+[IDE ve geliştirme araçları](ide/ide-and-tools-for-visual-cpp-development.md)<br/>
+Visual Studio IDE kullanmak projeler oluşturun, kod düzenleme, kitaplıklarına bağlanması, derleme, hata ayıklama, birim testleri oluşturma, statik analiz yapmak için dağıtma ve daha.
 
 [Derleyicileri ve Derleme Araçları](build/building-c-cpp-programs.md)<br/>
-Microsoft C++ Derleyici ve bağlayıcı seçenekleri, hata iletileri, komut satırı örnekleri, farklı platformlar ve derleme başvuru konuları için Yapılandır. 
+Microsoft C++ Derleyici ve bağlayıcı seçenekleri, hata iletileri, komut satırı örnekleri, farklı platformlar ve derleme başvuru konuları için Yapılandır.
+
+[Yerel Kodda Hata Ayıklama](/visualstudio/debugger/debugging-native-code)<br/>
+C++ projeleri Visual Studio hata ayıklayıcısını kullanın.
+
+[C/C++ genel bakış için Kod Analizi](/visualstudio/code-quality/code-analysis-for-c-cpp-overview)<br/>
+Kullanım SAL ek açıklamaları veya statik analiz gerçekleştirmek için C++ temel yönergeleri denetleyicilerini.
+
+[Visual Studio'da C/C++ için birim testleri yazma](/visualstudio/test/writing-unit-tests-for-c-cpp)<br/>
+C++, Google Test, Boost.Test veya CTest için Microsoft birim testi çerçevesini kullanarak birim testleri oluşturun.
 
 ## <a name="write-applications-in-c"></a>C++'da uygulamaları yazma
 
@@ -119,11 +125,15 @@ ODBC ve diğer veritabanı erişim teknolojileri kullanan veritabanlarına bağl
 [Metin ve Dizeler](text/text-and-strings-in-visual-cpp.md)<br/>
 Farklı metin ve dize biçimleri ve yerel ve uluslararası geliştirme için Kodlamalar ile çalışma hakkında bilgi edinin.
 
-## <a name="c-language-reference"></a>C++ Dil Başvurusu
+## <a name="languages-reference"></a>Dil Başvurusu
 
-C++ dili hakkında daha fazla bilgi için bkz: [C++ dil başvurusu](cpp/cpp-language-reference.md).
+[C++ Dil Başvurusu](cpp/cpp-language-reference.md)
 
-C++ önişlemcisi hakkında daha fazla bilgi için bkz: [C/C++ önişlemci başvurusu](preprocessor/c-cpp-preprocessor-reference.md).
+[C/C++ Ön İşlemci Başvurusu](preprocessor/c-cpp-preprocessor-reference.md)
+
+[C Dil Başvurusu](c-language/c-language-reference.md)
+
+[Derleyici İç Bilgileri ve Derleme Dili](intrinsics/compiler-intrinsics-and-assembly-language.md)
 
 ## <a name="c-libraries-in-visual-studio"></a>Visual Studio'da C++ kitaplıkları
 

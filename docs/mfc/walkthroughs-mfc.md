@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05255f71f304b32de95faf96eaa23f5ce3da9f96
-ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
+ms.openlocfilehash: 9d96ce9ade06c849716a680bd3c0c8bb6feeccc6
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169417"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235665"
 ---
 # <a name="walkthroughs-mfc"></a>İzlenecek Yollar (MFC)
 
@@ -28,7 +28,7 @@ Bu bölüm, yeni MFC kitaplık özellikleri ile ilgili çeşitli görevlerde siz
 ## <a name="in-this-section"></a>Bu Bölümde
 
 [İzlenecek yol: Yeni MFC Kabuk Denetimlerini Kullanma](../mfc/walkthrough-using-the-new-mfc-shell-controls.md)<br/>
-Bu kılavuzda, dosya Gezgini'ne benzeyen bir uygulama oluşturacaksınız. İki bölme içeren bir pencere oluşturur. Sol bölmede içerecek bir [CMFCShellTreeCtrl](../mfc/reference/cmfcshelltreectrl-class.md) nesnesini Masaüstü hiyerarşik bir görünümü'nde görüntülenir. Sağ bölmede içerecek bir [CMFCShellListCtrl](../mfc/reference/cmfcshelllistctrl-class.md) gösteren dosyaları sol bölmede seçili klasörde.
+Bu kılavuzda, dosya Gezgini'ne benzeyen bir uygulama oluşturacaksınız. İki bölme içeren bir pencere oluşturacaksınız. Sol bölmede sahip bir [CMFCShellTreeCtrl](../mfc/reference/cmfcshelltreectrl-class.md) nesnesini Masaüstü hiyerarşik bir görünümü'nde görüntülenir. Sağ bölmede sahip bir [CMFCShellListCtrl](../mfc/reference/cmfcshelllistctrl-class.md) gösteren dosyaları sol bölmede seçili klasörde.
 
 [İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme](../mfc/walkthrough-putting-controls-on-toolbars.md)<br/>
 Modern MFC araç çubukları, basit düğmeleri dışında denetimleri barındırabilirsiniz. Bu makalede nasıl yapılacağı açıklanmaktadır.

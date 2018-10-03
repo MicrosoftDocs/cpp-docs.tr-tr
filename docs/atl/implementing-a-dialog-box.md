@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b656af864f8a0dd7c5a69866976b4c1e624b87b9
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 30e843c6df70548257de1bf1af8c5f0e83555652
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764299"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234074"
 ---
 # <a name="implementing-a-dialog-box"></a>İletişim kutusu uygulama
 
@@ -30,7 +30,7 @@ Bir iletişim kutusu, ATL projesine eklemek için iki yolu vardır: ATL iletişi
 
 ## <a name="adding-a-dialog-box-with-the-atl-dialog-wizard"></a>ATL iletişim kutusu Sihirbazı ile bir iletişim kutusu ekleme
 
-İçinde [Sınıf Ekle iletişim kutusu](../ide/add-class-dialog-box.md), bir iletişim kutusu, ATL projesine eklemek için ATL iletişim kutusu nesnesini seçin. ATL iletişim kutusu Sihirbazı uygun şekilde doldurun ve **son**. Türetilen bir sınıf sihirbaz ekler [Caxdialogımpl](../atl/reference/caxdialogimpl-class.md) projenize. Kaynak görünümünden **görünümü** menüsünde iletişim bulun ve Kaynak Düzenleyicisi'nde açmak için çift tıklayın.
+İçinde [Sınıf Ekle iletişim kutusu](../ide/add-class-dialog-box.md), bir iletişim kutusu, ATL projesine eklemek için ATL iletişim kutusu nesnesini seçin. ATL iletişim kutusu Sihirbazı uygun şekilde doldurun ve **son**. Türetilen bir sınıf sihirbaz ekler [Caxdialogımpl](../atl/reference/caxdialogimpl-class.md) projenize. Açık **kaynak görünümü** gelen **görünümü** menüsünde iletişim bulun ve Kaynak Düzenleyicisi'nde açmak için çift tıklayın.
 
 > [!NOTE]
 >  Varsa, iletişim kutusu türetilir `CAxDialogImpl`, her iki ActiveX barındırabilir ve Windows denetler. ActiveX denetimi desteği yükü iletişim kutusu sınıfınızda istemiyorsanız kullanın [CSimpleDialog](../atl/reference/csimpledialog-class.md) veya [Cdialogımpl](../atl/reference/cdialogimpl-class.md) yerine.

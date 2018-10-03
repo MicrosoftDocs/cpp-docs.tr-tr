@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 210cf8d3183e9fcd94cfa51d875a0b26e4a8fa07
-ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
+ms.openlocfilehash: 165ea5b42ea4e293eb60b7a798778e3a461e0385
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029664"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235457"
 ---
 # <a name="how-to-migrate-to-clr"></a>Nasıl yapılır: /clr'ye Geçiş
 
@@ -118,7 +118,7 @@ Derleme görevleri dosyası ile oluşturulan projeleri için uyumlu derleyici se
 
 Burada bazı modüller derlendiği bir projeyi derlemek için en kolay yolu **/CLR** önceden derlenmiş üst bilgiler tamamen devre dışı bırakmaktır. (Proje özellik sayfaları iletişim kutusu C/C++ düğümünü açın ve önceden derlenmiş üst bilgiler seçin. Ardından önceden derlenmiş üst bilgi Oluştur/Kullan özelliğini "Kullanarak önceden derlenmiş üstbilgi için" olarak değiştirin.)
 
-Ancak, özellikle büyük projeler için bu özelliği devre dışı bırakmayı tercih, yani çok daha iyi derleme hızı önceden derlenmiş üst bilgiler sağlar. Bu durumda yapılandırmak en iyi **/CLR** ve olmayan **/CLR** ayrı önceden derlenmiş üstbilgileri kullanmak için dosyaları. Bu, tek bir adımda tarafından yapılabilir çoklu seçilen derlenmesi için modülleri **/CLR** Çözüm Gezgini'ni kullanarak gruba sağ tıklatıp Özellikler'i seçerek. Ardından farklı bir üst bilgi dosyası adını ve PCH dosyası sırasıyla kullanılacak dosya üzerinden PCH Oluştur/Kullan ve önceden derlenmiş üst bilgi dosyası özelliklerini değiştirin.
+Ancak, özellikle büyük projeler için bu özelliği devre dışı bırakmayı tercih, yani çok daha iyi derleme hızı önceden derlenmiş üst bilgiler sağlar. Bu durumda yapılandırmak en iyi **/CLR** ve olmayan **/CLR** ayrı önceden derlenmiş üstbilgileri kullanmak için dosyaları. Bu, tek bir adımda tarafından yapılabilir çoklu seçilen derlenmesi için modülleri **/CLR** kullanarak **Çözüm Gezgini**grubuna sağ tıklayın ve Özellikler'i seçerek. Ardından farklı bir üst bilgi dosyası adını ve PCH dosyası sırasıyla kullanılacak dosya üzerinden PCH Oluştur/Kullan ve önceden derlenmiş üst bilgi dosyası özelliklerini değiştirin.
 
 ## <a name="fixing-errors"></a>Hataları düzeltme
 

@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b6ffda62796c9c52ca9bcce8c1b1cd234053800
-ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
+ms.openlocfilehash: f749a288ac08adfb5df5291ce3dd92b95c2301e8
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494380"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234248"
 ---
 # <a name="walkthrough-deploying-a-visual-c-application-to-an-application-local-folder"></a>İzlenecek Yol: Visual C++ Uygulamasını Yerel Uygulama Klasörüne Dağıtma
 
@@ -29,7 +29,7 @@ Visual C++ uygulaması dosyaları klasörüne kopyalayarak dağıtmayı açıkla
   
 - Visual Studio'nun yüklü olduğu bir bilgisayar.  
   
-- Visual C++ kitaplıkları yok. başka bir bilgisayar.  
+- Visual C++ kitaplıkları sahip olmayan başka bir bilgisayar.  
   
 ### <a name="to-deploy-an-application-to-an-application-local-folder"></a>Bir yerel uygulama klasörüne bir uygulamayı dağıtmak için  
   

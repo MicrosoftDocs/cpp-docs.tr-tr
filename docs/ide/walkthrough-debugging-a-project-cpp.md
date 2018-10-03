@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7fa9761abde1a740a9f5daea4933ac6f8b89af6f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 04bec9c0de7734ae2c78dd3e9c124eac3d0a55d8
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381726"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234334"
 ---
 # <a name="walkthrough-debugging-a-project-c"></a>İzlenecek Yol: Proje Hatalarını Ayıklama (C++)
 
@@ -31,7 +31,7 @@ Bu izlenecek yolda, proje sınandığında bulunan sorunu gidermek için program
 
 - Bu izlenecek yol, C++ dili temellerini anladığınızı varsayar.
 
-- Ayrıca, listelenen önceki izlenecek yolları tamamladığınızı varsayar [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
+- Ayrıca, listelenen önceki izlenecek yolları tamamladığınız varsayılır [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
 
 ### <a name="to-fix-a-program-that-has-a-bug"></a>Bir hata olan bir program düzeltmek için
 
@@ -47,7 +47,7 @@ Bu izlenecek yolda, proje sınandığında bulunan sorunu gidermek için program
 
      [!code-cpp[NVC_Walkthrough_Debugging_A_Project#110](../ide/codesnippet/CPP/walkthrough-debugging-a-project-cpp_1.cpp)]
 
-1. Cardgame.cpp dosyasını değiştirdikten sonra şuna benzemelidir:
+1. Siz değiştirdikten sonra aşağıdaki kodu Cardgame.cpp dosya benzemelidir:
 
      [!code-cpp[NVC_Walkthrough_Debugging_A_Project#111](../ide/codesnippet/CPP/walkthrough-debugging-a-project-cpp_2.cpp)]
 

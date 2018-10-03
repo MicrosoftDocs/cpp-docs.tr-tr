@@ -1,7 +1,7 @@
 ---
 title: Visual C++'da CMake projeleri | Microsoft Docs
 ms.custom: ''
-ms.date: 09/17/2018
+ms.date: 09/26/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc50656a2d429ad80f31f26169f620d1370eacd6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 76877a0559fd954661fb3e38131796e89c41679f
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390116"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235106"
 ---
 # <a name="cmake-projects-in-visual-c"></a>Visual C++'da CMake projeleri
 
@@ -403,3 +403,11 @@ Bir sorunu tanılamak için CMake önbelleğini durumu hakkında daha fazla bilg
 **Visual Studio 2017 sürüm 15.7 ve üzeri**: tek bir dosya içinde bir CMake projesini oluşturmak için dosyada sağ **Çözüm Gezgini** ve **derleme**. Ayrıca, düzenleyicide açık olan ana CMake menüsünü kullanarak dosyayı oluşturabilirsiniz:
 
 ![CMake tek dosyalı derleme](media/cmake-single-file-compile.png)
+
+## <a name="run-cmake-from-the-command-line"></a>CMake komut satırından çalıştırma
+CMake Visual Studio Yükleyicisi'nden yüklediyseniz, aşağıdaki adımları izleyerek komut satırından çalıştırabilirsiniz:
+
+1. Uygun vsdevcmd.bat (x86/x64) çalıştırın. Bkz: [komut satırında derleme](../build/building-on-the-command-line.md) daha fazla bilgi için.
+1. Çıkış klasörüne geçin.
+1. CMake derleme/Uygulamanızı yapılandırmak için çalıştırın.
+

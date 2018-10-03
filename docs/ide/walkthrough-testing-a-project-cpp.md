@@ -16,24 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9553e6cbbd4c4fbf8b9b7e1907bd6dea63faa2a5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 133214cceebf5d43610207e446698341d7803b71
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377441"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235548"
 ---
 # <a name="walkthrough-testing-a-project-c"></a>İzlenecek Yol: Projeyi Test Etme (C++)
 
 Bir programı hata ayıklama modunda çalıştırdığınızda, değişkenlerin ve nesnelerin durumunu incelemek için programı duraklatmak üzere kesme noktaları kullanabilirsiniz.
 
-Bu izlenecek yolda, program çalışırken bir değişkenin değerini izleyin ve neden beklediğiniz değer olduğunu türetme.
+Bu izlenecek yolda, program çalışırken bir değişkenin değerini izleyin ve neden beklediğiniz değer olmayan türetme.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
 - Bu izlenecek yol, C++ dili temellerini anladığınızı varsayar.
 
-- Ayrıca, listelenen önceki izlenecek yolları tamamladığınızı varsayar [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
+- Ayrıca, listelenen önceki izlenecek yolları tamamladığınız varsayılır [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
 
 ### <a name="to-run-a-program-in-debug-mode"></a>Bir programı hata ayıklama modunda çalıştırmak için
 
@@ -61,7 +61,7 @@ Bu izlenecek yolda, program çalışırken bir değişkenin değerini izleyin ve
 
 1. Kısayol menüsünü açın `return 0;` deyimi seçip **imlece kadar Çalıştır**. Kodun sol tarafındaki sarı ok yürütülecek sonraki deyimi işaret eder.
 
-1. `Cardgame::totalParticipants` Sayısı ne zaman azalmalıdır bir `Cardgame` sonlandırır. Bu noktada, `Cardgame::totalParticipants` 0 olduğundan eşit olmalı tüm `Cardgame` örnekleri silinmiş, ancak **Watch 1** penceresini gösterir `Cardgame::totalparticipants` eşittir **18**. Bu, Algıla ve Düzelt sonraki izlenecek yolu tamamlayarak, kodda bir hata olduğunu gösterir [izlenecek yol: bir proje (C++) hata ayıklama](../ide/walkthrough-debugging-a-project-cpp.md).
+1. `Cardgame::totalParticipants` Sayısı ne zaman azalmalıdır bir `Cardgame` sona erer. Bu noktada, `Cardgame::totalParticipants` 0 olduğundan eşit olmalı tüm `Cardgame` örnekleri silinmiş, ancak **Watch 1** penceresini gösterir `Cardgame::totalparticipants` eşittir **18**. Algılama ve düzeltme sonraki izlenecek yolu tamamlayarak, kodda bir hata olduğunu fark gösteren [izlenecek yol: bir proje (C++) hata ayıklama](../ide/walkthrough-debugging-a-project-cpp.md).
 
 1. Menü çubuğunda, programı durdurmak için seçin **hata ayıklama** > **hata ayıklamayı Durdur**, ya da seçin **Shift**+**F5**klavye kısayol.
 

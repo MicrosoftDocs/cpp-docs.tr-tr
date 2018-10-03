@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48efa5d85ac6c7ba7e989cc55196f12fb391fa6d
-ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
+ms.openlocfilehash: 899ddba8ee72039702f05b0d369b79e347f7db7e
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169729"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235613"
 ---
 # <a name="walkthrough-adding-a-ctaskdialog-to-an-application"></a>İzlenecek yol: Bir Uygulamaya CTaskDialog Ekleme
 
@@ -61,7 +61,7 @@ Aşağıdaki yordam en temel kullanımını göstermektedir `CTaskDialog`, olan 
     CString emptyString;
     ```
 
-1. Aşağıdaki kod, 4. adımdan koddan sonra ekleyin. Bu kod, kullanıcının bilgisayarında desteklediğini garanti eder `CTaskDialog`. İletişim desteklenmiyorsa uygulama bunun yerine Windows ileti kutusu görüntüler.
+1. Aşağıdaki kod, 4. adımdan koddan sonra ekleyin. Bu kod, kullanıcının bilgisayarında desteklediğini garanti eder `CTaskDialog`. İletişim desteklenmiyorsa, uygulama bunun yerine Windows ileti kutusu görüntüler.
 
     ```cpp
     if (CTaskDialog::IsSupported())
@@ -92,7 +92,7 @@ Aşağıdaki yordam en temel kullanımını göstermektedir `CTaskDialog`, olan 
     taskDialog.DoModal();
     ```
 
-İstemiyorsanız, 7. adım atlayabilirsiniz `CTaskDialog` aynı simgesi Windows ileti kutusunda görüntülenecek. Bu adımı atlarsanız `CTaskDialog` uygulama görüntülendiğinde yok simgesi vardır.
+İstemiyorsanız, 7. adım önleyebilirsiniz `CTaskDialog` aynı simgesi Windows ileti kutusunda görüntülenecek. Bu adım, kaçının, `CTaskDialog` uygulama görüntülendiğinde yok simgesi vardır.
 
 Derleme ve uygulamayı çalıştırın. Uygulama, başladıktan sonra görev iletişim kutusu görüntüler.
 
@@ -197,7 +197,7 @@ Aşağıdaki yordam nasıl görüntüleneceğini gösterir bir `CTaskDialog` ilk
 
 Derleme ve uygulamayı çalıştırın. Uygulama, iki görev iletişim kutusu görüntüler. İlk iletişim kutusunda dandır **için CTaskDialog işlevsellik eklemek** yordamı; ikinci bir iletişim kutusudur son yordamdan.
 
-Bu örnekler için tüm kullanılabilir seçenekleri koymaz bir `CTaskDialog`, ancak çalışmaya başlamanıza yardımcı olacaktır. Bkz: [CTaskDialog sınıfı](../mfc/reference/ctaskdialog-class.md) sınıf tam bir açıklaması.
+Bu örnekler için tüm kullanılabilir seçenekleri gösteren olmayan bir `CTaskDialog`, ancak çalışmaya başlamanıza yardımcı olacaktır. Bkz: [CTaskDialog sınıfı](../mfc/reference/ctaskdialog-class.md) sınıf tam bir açıklaması.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

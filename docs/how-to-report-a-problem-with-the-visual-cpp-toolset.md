@@ -10,12 +10,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 359c9d3f72ffa87abf49c6e3ca90743ad0fc80a3
-ms.sourcegitcommit: 9be4b66efa45dc132cef06eb3b258c2252ea23a9
+ms.openlocfilehash: 279598c320131b163b936091560de45255c18a4d
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465933"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235017"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ araç takımı veya belgeleri ile ilgili bir sorun bildirme
 
@@ -370,14 +370,12 @@ Sorununuzu aracılığıyla raporlama **sorun bildir** araçtır IDE'den kolay. 
 
 ### <a name="use-the-visual-studio-developer-community-pages"></a>Visual Studio Geliştirici topluluğu sayfalarını kullanma
 
-Visual Studio Geliştirici topluluğu sayfaları sorunları bildirme ve Visual Studio, C++ Derleyici, araçları ve kitaplıkları için çözüm bulmak için başka bir uygun yoldur. [Visual Studio soruları](https://developercommunity.visualstudio.com/spaces/8/index.html) nerede IDE ya da yükleme ile ilgili sorunlar rapor sayfasıdır. C++ Derleyici, bağlayıcı ve diğer araçlar ve kitaplıkların kullanımı ile ilgili sorunlar için [C++ sorular](https://developercommunity.visualstudio.com/spaces/62/index.html) sayfası.
+Visual Studio Geliştirici topluluğu sayfaları sorunları bildirme ve Visual Studio ve C++ Derleyici, araçları ve kitaplıkları için çözüm bulmak için başka bir uygun yoldur. Belirli bir geliştirici topluluğu sayfa için [Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html), [Mac için Visual Studio](https://developercommunity.visualstudio.com/spaces/41/index.html), [.NET](https://developercommunity.visualstudio.com/spaces/61/index.html), [C++](https://developercommunity.visualstudio.com/spaces/62/index.html), [ Azure DevOps](https://developercommunity.visualstudio.com/spaces/21/index.html), ve [TFS](https://developercommunity.visualstudio.com/spaces/22/index.html). Her sayfanın üst kısmındaki aşağıdaki sekmelerden altındaki gönderileri veya benzer bir sorun bildirin konuları bulmak için kullanabileceğiniz bir arama kutusu var. Bir çözüm veya sorununuz için ilgili diğer yararlı bilgiler zaten bulunduğunu fark edebilirsiniz. Birisi aynı sorunla daha önce bildirmediyse, lütfen oylamak ve bu konuyla ilgili yorum yerine yeni bir sorun raporu oluşturun. Yorum yapmak için oy verin veya yeni bir sorun bildirmek için Visual Studio hesabınızda oturum açın ve profiliniz için geliştirici topluluğu uygulama erişimi vermek kabul etmeniz istenebilir.
 
-Geliştirici Topluluğu'nda her sayfanın üst kısmındaki başlık gönderileri veya benzer bir sorun bildirin konuları bulmak için kullanabileceğiniz bir arama kutusu ' dir. Bir çözüm veya sorununuz için ilgili diğer yararlı bilgiler zaten varolan bir konuya kullanılabilir olduğunu fark edebilirsiniz. Birisi aynı sorunla daha önce bildirmediyse, lütfen oylamak ve bu konuyla ilgili yorum yerine yeni bir sorun raporu oluşturun.
-
-Sorununuzu önce bildirilmediğinde kaldığınızda **sorun bildir** Geliştirici topluluğu sayfasında arama kutusunun yanındaki düğmeyi. Visual Studio hesabınızda oturum açın ve profiliniz için geliştirici topluluğu uygulama erişimi vermek kabul etmeniz istenebilir. Oturum açtıktan sonra sorun nereye rapor doğrudan sayfaya gidin. Repro kodunuzu ve komut satırı, ekran görüntüleri, ilgili tartışmalar için bağlantıları ve düşündüğünüz faydalı ve ilgili diğer bilgileri içerebilir.
+C++ Derleyici, bağlayıcı ve diğer araçlar ve kitaplıkların kullanımı ile ilgili sorunlar için [C++](https://developercommunity.visualstudio.com/spaces/62/index.html) sayfası. Sorununuz için arama yapın ve bunu önce bildirilen taşınmadığından, seçim **sorun bildir** sayfanın üstündeki arama kutusunun yanındaki düğmeyi. Repro kodunuzu ve komut satırı, ekran görüntüleri, ilgili tartışmalar için bağlantıları ve düşündüğünüz faydalı ve ilgili diğer bilgileri içerebilir.
 
 > [!TIP]
-> Diğer tür sorunları için Visual Studio'da araç takımını (örneğin, kullanıcı Arabirimi sorunları, bozuk bir IDE işlevsellik veya genel kilitlenme), ilgili olmayan karşılaşabileceğiniz **sorun rapor** özellikle iyi bir seçim son olabilir özellikleri ve soruna yol kayıt UI eylemlerini kendi yeteneği, ekran görüntüsüne karşılaştığınız. Bu tür hataları hakkında da bildirilebilir [Geliştirici topluluğu](https://developercommunity.visualstudio.com/) site.
+> Diğer tür sorunları için Visual Studio'da C++ araç takımını (IDE işlevi veya genel kilitlenmeler gibi kullanıcı Arabirimi sorunları,), ilgili olmayan kullanım karşılaşabileceğiniz **sorun bildir** IDE'de araç. Ekran görüntüsü özelliklerini ve karşılaştığınız sorunu neden UI eylemlerini kaydedin yeteneğini nedeniyle en iyi seçenek budur. Bu tür hatalara da üzerinde aranabilir [Geliştirici topluluğu](https://developercommunity.visualstudio.com/) site. Daha fazla bilgi için [Visual Studio ile ilgili bir sorun bildirme](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
 
 ### <a name="reports-and-privacy"></a>Raporlar ve gizlilik
 

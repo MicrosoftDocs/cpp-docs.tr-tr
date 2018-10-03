@@ -24,12 +24,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5ffea6dede3bc6bcc7c28b2326299362e78ed2b9
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8c9aebeb2216bf8248b3182159a0f0aef1482c3b
+ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599307"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48250451"
 ---
 # <a name="microsoftwrl-namespace"></a>Microsoft::WRL Ad Alanı
 
@@ -89,7 +89,7 @@ namespace Microsoft::WRL;
 |Ad|Açıklama|
 |----------|-----------------|
 |[AsWeak İşlevi](../windows/asweak-function.md)|Belirtilen bir örneğe zayıf bir başvuru alır.|
-|[Geri çağırma işlevi](../windows/callback-function-windows-runtime-cpp-template-library.md)|Üye işlevi bir geri çağırma yöntemi olan nesne oluşturur.|
+|[Geri çağırma işlevi (WRL)](../windows/callback-function-wrl.md)|Üye işlevi bir geri çağırma yöntemi olan nesne oluşturur.|
 |[CreateActivationFactory İşlevi](../windows/createactivationfactory-function.md)|Windows çalışma zamanı tarafından etkinleştirilebilen belirtilen sınıf örneklerini oluşturan bir Üreteç oluşturur.|
 |[CreateClassFactory İşlevi](../windows/createclassfactory-function.md)|Belirtilen sınıfın örneklerini oluşturan bir Üreteç oluşturur.|
 |[Make İşlevi](../windows/make-function.md)|Belirtilen Windows çalışma zamanı sınıf başlatır.|

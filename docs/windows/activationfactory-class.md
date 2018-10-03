@@ -1,28 +1,42 @@
 ---
 title: ActivationFactory sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::ActivationFactory
+- module/Microsoft::WRL::ActivationFactory::ActivationFactory
+- module/Microsoft::WRL::ActivationFactory::AddRef
+- module/Microsoft::WRL::ActivationFactory::GetIids
+- module/Microsoft::WRL::ActivationFactory::GetRuntimeClassName
+- module/Microsoft::WRL::ActivationFactory::GetTrustLevel
+- module/Microsoft::WRL::ActivationFactory::QueryInterface
+- module/Microsoft::WRL::ActivationFactory::Release
 dev_langs:
 - C++
 helpviewer_keywords:
-- ActivationFactory class
+- Microsoft::WRL::ActivationFactory class
+- Microsoft::WRL::ActivationFactory::ActivationFactory, constructor
+- Microsoft::WRL::ActivationFactory::AddRef method
+- Microsoft::WRL::ActivationFactory::GetIids method
+- Microsoft::WRL::ActivationFactory::GetRuntimeClassName method
+- Microsoft::WRL::ActivationFactory::GetTrustLevel method
+- Microsoft::WRL::ActivationFactory::QueryInterface method
+- Microsoft::WRL::ActivationFactory::Release method
 ms.assetid: 5faddf1f-43b6-4f8a-97de-8c9d3ae1e1ff
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 55c82290c3a96ab71419b36a7ec4a4eb2b528753
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3997ee3e435aceec536215599ea0d95321fd5a38
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419821"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234677"
 ---
 # <a name="activationfactory-class"></a>ActivationFactory Sınıfı
 
@@ -52,7 +66,7 @@ Sıfırıncı arabirim.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**ActivationFactory** kayıt yöntemleri ve için temel işlevleri sağlayan `IActivationFactory` arabirimi. **ActivationFactory** ayrıca özel Üreteç uygulaması girmenize olanak tanır.
+`ActivationFactory` Kayıt yöntemleri ve için temel işlevleri sağlayan `IActivationFactory` arabirimi. `ActivationFactory` Ayrıca özel Üreteç uygulaması girmenize olanak tanır.
 
 Aşağıdaki kod parçası bildirmelerine ActivationFactory kullanılması gösterilmektedir.
 
@@ -66,20 +80,20 @@ Aşağıdaki kod parçası nasıl kullanılacağını gösterir [uygular](../win
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[ActivationFactory::ActivationFactory Oluşturucusu](../windows/activationfactory-activationfactory-constructor.md)|Başlatır **ActivationFactory** sınıfı.|
+Ad                                                       | Açıklama
+---------------------------------------------------------- | ------------------------------------------
+[ActivationFactory::ActivationFactory](#activationfactory) | Başlatır `ActivationFactory` sınıfı.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[ActivationFactory::AddRef Metodu](../windows/activationfactory-addref-method.md)|Geçerli başvuru sayısını artırır **ActivationFactory** nesne.|
-|[ActivationFactory::GetIids Metodu](../windows/activationfactory-getiids-method.md)|Uygulanan arabirimi kimlikleri dizisini alır.|
-|[ActivationFactory::GetRuntimeClassName Metodu](../windows/activationfactory-getruntimeclassname-method.md)|Nesnenin çalışma zamanı sınıf adını alır Geçerli **ActivationFactory** başlatır.|
-|[ActivationFactory::GetTrustLevel Metodu](../windows/activationfactory-gettrustlevel-method.md)|Nesne güven düzeyini alır Geçerli **ActivationFactory** başlatır.|
-|[ActivationFactory::QueryInterface Metodu](../windows/activationfactory-queryinterface-method.md)|Belirtilen arabirim işaretçisi alır.|
-|[ActivationFactory::Release Metodu](../windows/activationfactory-release-method.md)|Başvuru sayma geçerli azaltır **ActivationFactory** nesne.|
+Ad                                                           | Açıklama
+-------------------------------------------------------------- | --------------------------------------------------------------------------------------------
+[ActivationFactory::AddRef](#addref)                           | Geçerli başvuru sayısını artırır `ActivationFactory` nesne.
+[Activationfactory::getıids](#getiids)                         | Uygulanan arabirimi kimlikleri dizisini alır.
+[ActivationFactory::GetRuntimeClassName](#getruntimeclassname) | Nesnenin çalışma zamanı sınıf adını alır Geçerli `ActivationFactory` başlatır.
+[ActivationFactory::GetTrustLevel](#gettrustlevel)             | Nesne güven düzeyini alır Geçerli `ActivationFactory` başlatır.
+[Activationfactory::QueryInterface](#queryinterface)           | Belirtilen arabirim işaretçisi alır.
+[ActivationFactory::Release](#release)                         | Başvuru sayma geçerli azaltır `ActivationFactory` nesne.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -109,6 +123,122 @@ Aşağıdaki kod parçası nasıl kullanılacağını gösterir [uygular](../win
 
 **Namespace:** Microsoft::WRL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="activationfactory"></a>ActivationFactory::ActivationFactory
 
-[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)
+Başlatır `ActivationFactory` sınıfı.
+
+```cpp
+ActivationFactory();
+```
+
+## <a name="addref"></a>ActivationFactory::AddRef
+
+Geçerli başvuru sayısını artırır `ActivationFactory` nesne.
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   AddRef
+)();
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+
+## <a name="getiids"></a>Activationfactory::getıids
+
+Uygulanan arabirimi kimlikleri dizisini alır.
+
+```cpp
+STDMETHOD(
+   GetIids
+)(_Out_ ULONG *iidCount, _Deref_out_ _Deref_post_cap_(*iidCount) IID **iids);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Iidcount*<br/>
+Bu işlem tamamlandığında, nesneniz kimlikleri sayısı *IID'leri* dizisi.
+
+*IID'leri*<br/>
+Bu işlem tamamlandığında, bir dizi arabirim kimlikleri uygulanır.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT. E_OUTOFMEMORY olası bir hata HRESULT ' dir.
+
+## <a name="getruntimeclassname"></a>ActivationFactory::GetRuntimeClassName
+
+Nesnenin çalışma zamanı sınıf adını alır Geçerli `ActivationFactory` başlatır.
+
+```cpp
+STDMETHOD(
+   GetRuntimeClassName
+)(_Out_ HSTRING* runtimeName);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*runtimeName*<br/>
+Bu işlem tamamlandığında, nesnenin çalışma zamanı sınıfının adını içeren bir dize için bir tanıtıcı, geçerli `ActivationFactory` başlatır.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+
+## <a name="gettrustlevel"></a>ActivationFactory::GetTrustLevel
+
+Nesne güven düzeyini alır Geçerli `ActivationFactory` başlatır.
+
+```cpp
+STDMETHOD(
+   GetTrustLevel
+)(_Out_ TrustLevel* trustLvl);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*trustLvl*<br/>
+Bu işlem tamamlandığında, çalışma zamanı güven düzeyini sınıfı, `ActivationFactory` başlatır.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, bir onaylama işlemi hatası yayılır ve *trustLvl* ayarlanır `FullTrust`.
+
+## <a name="queryinterface"></a>Activationfactory::QueryInterface
+
+Belirtilen arabirim işaretçisi alır.
+
+```cpp
+STDMETHOD(
+   QueryInterface
+)(REFIID riid, _Deref_out_ void **ppvObject);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*riid*<br/>
+Bir arabirim kimliği.
+
+*ppvObject*<br/>
+Bu işlem tamamlandığında, parametre tarafından belirtilen arabirim işaretçisi *riid*.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+
+## <a name="release"></a>ActivationFactory::Release
+
+Başvuru sayma geçerli azaltır `ActivationFactory` nesne.
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   Release
+)();
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.

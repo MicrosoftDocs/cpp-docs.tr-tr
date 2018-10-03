@@ -1,28 +1,40 @@
 ---
 title: Interfacetraits yapısı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/21/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::InterfaceTraits
+- implements/Microsoft::WRL::Details::InterfaceTraits::CanCastTo
+- implements/Microsoft::WRL::Details::InterfaceTraits::CastToBase
+- implements/Microsoft::WRL::Details::InterfaceTraits::CastToUnknown
+- implements/Microsoft::WRL::Details::InterfaceTraits::FillArrayWithIid
+- implements/Microsoft::WRL::Details::InterfaceTraits::IidCount
+- implements/Microsoft::WRL::Details::InterfaceTraits::Verify
 dev_langs:
 - C++
 helpviewer_keywords:
-- InterfaceTraits structure
+- Microsoft::WRL::Details::InterfaceTraits structure
+- Microsoft::WRL::Details::InterfaceTraits::CanCastTo method
+- Microsoft::WRL::Details::InterfaceTraits::CastToBase method
+- Microsoft::WRL::Details::InterfaceTraits::CastToUnknown method
+- Microsoft::WRL::Details::InterfaceTraits::FillArrayWithIid method
+- Microsoft::WRL::Details::InterfaceTraits::IidCount constant
+- Microsoft::WRL::Details::InterfaceTraits::Verify method
 ms.assetid: ede0c284-19a7-4892-9738-ff3da4923d0a
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cb8eb8fbc4199ccdaf5717e465f202c0e4ec296e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e184d9e5b99cd59d4dde63b06cbe259d328a0e4e
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437659"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234690"
 ---
 # <a name="interfacetraits-structure"></a>InterfaceTraits Yapısı
 
@@ -60,25 +72,25 @@ Genel özelliklerini bir arabirim uygular.
 
 ### <a name="public-typedefs"></a>Genel Typedefler
 
-|Ad|Açıklama|
-|----------|-----------------|
-|`Base`|İçin bir eşanlamlı *I0* şablon parametresi.|
+Ad   | Açıklama
+------ | ------------------------------------------
+`Base` | İçin bir eşanlamlı *I0* şablon parametresi.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[InterfaceTraits::CanCastTo Metodu](../windows/interfacetraits-cancastto-method.md)|Belirtilen işaretçi işaretçisi içerip içermeyeceğini belirten `Base`.|
-|[InterfaceTraits::CastToBase Metodu](../windows/interfacetraits-casttobase-method.md)|Belirtilen bir işaretçi işaretçisi bıraktığı `Base`.|
-|[InterfaceTraits::CastToUnknown Metodu](../windows/interfacetraits-casttounknown-method.md)|Belirtilen bir işaretçi işaretçisi bıraktığı `IUnknown`.|
-|[InterfaceTraits::FillArrayWithIid Metodu](../windows/interfacetraits-fillarraywithiid-method.md)|Arabirim kimliği atar `Base` dizini bağımsız değişkeni tarafından belirtilen dizi öğesi için.|
-|[InterfaceTraits::Verify Metodu](../windows/interfacetraits-verify-method.md)|Doğrular `Base` düzgün şekilde türetilir.|
+Ad                                                   | Açıklama
+------------------------------------------------------ | ----------------------------------------------------------------------------------------
+[Interfacetraits::cancastto](#cancastto)               | Belirtilen işaretçi işaretçisi içerip içermeyeceğini belirten `Base`.
+[Interfacetraits::casttobase](#casttobase)             | Belirtilen bir işaretçi işaretçisi bıraktığı `Base`.
+[Interfacetraits::casttounknown](#casttounknown)       | Belirtilen bir işaretçi işaretçisi bıraktığı `IUnknown`.
+[Interfacetraits::fillarraywithıid](#fillarraywithiid) | Arabirim kimliği atar `Base` dizini bağımsız değişkeni tarafından belirtilen dizi öğesi için.
+[Interfacetraits::Verify](#verify)                     | Doğrular `Base` düzgün şekilde türetilir.
 
 ### <a name="public-constants"></a>Genel sabitler
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[InterfaceTraits::IidCount Sabiti](../windows/interfacetraits-iidcount-constant.md)|Geçerli ile ilişkili kimlikleri arabirimi sayısını tutar **Interfacetraits** nesne.|
+Ad                                   | Açıklama
+-------------------------------------- | ---------------------------------------------------------------------------------------
+[Interfacetraits::ıidcount](#iidcount) | Geçerli ile ilişkili kimlikleri arabirimi sayısını tutar `InterfaceTraits` nesne.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -90,6 +102,147 @@ Genel özelliklerini bir arabirim uygular.
 
 **Namespace:** Microsoft::wrl:: details
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="cancastto"></a>Interfacetraits::cancastto
 
-[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+template<typename T>
+static __forceinline bool CanCastTo(
+   _In_ T* ptr,
+   REFIID riid,
+   _Deref_out_ void **ppv
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*ptr*<br/>
+Bir tür için bir işaretçi adı.
+
+*riid*<br/>
+Arabirim Kimliği `Base`.
+
+*ppv*<br/>
+Bu işlem başarılı olursa *ppv* tarafından belirtilen arabirim işaret `Base`. Aksi takdirde, *ppv* ayarlanır `nullptr`.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+`true` Bu işlem başarılı olursa ve *ptr* işaretçisine dönüştürme `Base`; Aksi takdirde `false` .
+
+### <a name="remarks"></a>Açıklamalar
+
+Belirtilen işaretçi işaretçisi içerip içermeyeceğini belirten `Base`.
+
+Hakkında daha fazla bilgi için `Base`, bkz: [genel Typedefler](#public-typedefs) bölümü.
+
+## <a name="casttobase"></a>Interfacetraits::casttobase
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+template<typename T>
+static __forceinline Base* CastToBase(
+   _In_ T* ptr
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*T*<br/>
+Parametresinin türü *ptr*.
+
+*ptr*<br/>
+Bir tür işaretçisi *T*.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Bir işaretçi `Base`.
+
+### <a name="remarks"></a>Açıklamalar
+
+Belirtilen bir işaretçi işaretçisi bıraktığı `Base`.
+
+Hakkında daha fazla bilgi için `Base`, bkz: [genel Typedefler](#public-typedefs) bölümü.
+
+## <a name="casttounknown"></a>Interfacetraits::casttounknown
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+template<typename T>
+static __forceinline IUnknown* CastToUnknown(
+   _In_ T* ptr
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*T*<br/>
+Parametresinin türü *ptr*.
+
+*ptr*<br/>
+İşaretçi türüne *T*.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+IUnknown işaretçisi içinden `Base` türetilir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Belirtilen bir işaretçi işaretçisi bıraktığı `IUnknown`.
+
+Hakkında daha fazla bilgi için `Base`, bkz: [genel Typedefler](#public-typedefs) bölümü.
+
+## <a name="fillarraywithiid"></a>Interfacetraits::fillarraywithıid
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+__forceinline static void FillArrayWithIid(
+   _Inout_ unsigned long &index,
+   _In_ IID* iids
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Dizin*<br/>
+Sıfır tabanlı dizin değeri içeren bir alan için işaretçi.
+
+*IID'leri*<br/>
+Arabirim kimlikleri dizisi.
+
+### <a name="remarks"></a>Açıklamalar
+
+Arabirim kimliği atar `Base` dizini bağımsız değişkeni tarafından belirtilen dizi öğesi için.
+
+Bu API adını aykırı, yalnızca bir dizi öğesi değiştirildi; Tüm dizi değildir.
+
+Hakkında daha fazla bilgi için `Base`, bkz: [genel Typedefler](#public-typedefs) bölümü.
+
+## <a name="iidcount"></a>Interfacetraits::ıidcount
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+static const unsigned long IidCount = 1;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Geçerli ile ilişkili kimlikleri arabirimi sayısını tutar `InterfaceTraits` nesne.
+
+## <a name="verify"></a>Interfacetraits::Verify
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+__forceinline static void Verify();
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Doğrular `Base` düzgün şekilde türetilir.
+
+Hakkında daha fazla bilgi için `Base`, bkz: [genel Typedefler](#public-typedefs) bölümü.

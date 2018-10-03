@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 767c57db8f9af90ab997b0e75ce40461a2494725
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ce9e442ce9a53c44fd4fe37b6991952b76f13cec
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45701877"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235977"
 ---
 # <a name="hashmultiset-class"></a>hash_multiset Sınıfı
 
@@ -1160,7 +1160,7 @@ int main()
     Iter1 = ++hms1.begin();
     hms1.erase(Iter1);
 
-    cout << "After the 2nd element is deleted,\n "
+    cout << "After the 2nd element is deleted,\n"
          << "the hash_multiset hms1 is:" ;
     for (pIter = hms1.begin(); pIter != hms1.end(); pIter++)
         cout << " " << *pIter;
@@ -1172,7 +1172,7 @@ int main()
     Iter2 = --hms2.end();
     hms2.erase(Iter1, Iter2);
 
-    cout << "After the middle two elements are deleted,\n "
+    cout << "After the middle two elements are deleted,\n"
          << "the hash_multiset hms2 is:" ;
     for (pIter = hms2.begin(); pIter != hms2.end(); pIter++)
         cout << " " << *pIter;
@@ -1181,7 +1181,7 @@ int main()
     // The 3rd member function removes elements with a given  key
     n = hms3.erase(2);
 
-    cout << "After the element with a key of 2 is deleted,\n "
+    cout << "After the element with a key of 2 is deleted,\n"
          << "the hash_multiset hms3 is:" ;
     for (pIter = hms3.begin(); pIter != hms3.end(); pIter++)
         cout << " " << *pIter;
@@ -1196,8 +1196,8 @@ int main()
     hms3.erase(Iter1);
 
     cout << "After another element with a key "
-         << "equal to that of the 2nd element\n is deleted, "
-         << "the hash_multiset hms3 is:" ;
+         << "equal to that of the 2nd element\n"
+         << "is deleted, the hash_multiset hms3 is:" ;
     for (pIter = hms3.begin(); pIter != hms3.end(); pIter++)
         cout << " " << *pIter;
     cout << "." << endl;
@@ -1206,14 +1206,14 @@ int main()
 
 ```Output
 After the 2nd element is deleted,
- the hash_multiset hms1 is: 1 3 4.
+the hash_multiset hms1 is: 1 3 4.
 After the middle two elements are deleted,
- the hash_multiset hms2 is: 16 4.
+the hash_multiset hms2 is: 16 4.
 After the element with a key of 2 is deleted,
- the hash_multiset hms3 is: 0 1 3.
+the hash_multiset hms3 is: 0 1 3.
 The number of elements removed from hms3 is: 1.
 After another element with a key equal to that of the 2nd element
- is deleted, the hash_multiset hms3 is: 0 3.
+is deleted, the hash_multiset hms3 is: 0 3.
 ```
 
 ## <a name="find"></a>  hash_multiset::Find
@@ -1402,18 +1402,18 @@ hash_multiset(
 
 template <class InputIterator>
 hash_multiset(
- InputIterator First,
+    InputIterator First,
     InputIterator Last);
 
 template <class InputIterator>
 hash_multiset(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Traits& Comp);
 
 template <class InputIterator>
 hash_multiset(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Traits& Comp,
     const Allocator& Al);
@@ -2255,15 +2255,15 @@ int main( )
 
    hms1_RcIter = hms1.upper_bound( 20 );
    cout << "The first element of hash_multiset hms1" << endl
-        << " with a key greater than 20 is: "
+        << "with a key greater than 20 is: "
         << *hms1_RcIter << "." << endl;
 
    hms1_RcIter = hms1.upper_bound( 30 );
 
    // If no match is found for the key, end( ) is returned
    if ( hms1_RcIter == hms1.end( ) )
-      cout << "The hash_multiset hms1 doesn't have an element "
-           << "\n with a key greater than 30." << endl;
+      cout << "The hash_multiset hms1 doesn't have an element\n"
+           << "with a key greater than 30." << endl;
    else
       cout << "The element of hash_multiset hms1"
            << "with a key > 40 is: "
@@ -2273,7 +2273,7 @@ int main( )
    // found by using a dereferenced iterator addressing the location
    hms1_AcIter = hms1.begin( );
    hms1_RcIter = hms1.upper_bound( *hms1_AcIter );
-   cout << "The first element of hms1\n with a key greater than "
+   cout << "The first element of hms1 with a key greater than "
         << endl << "that of the initial element of hms1 is: "
         << *hms1_RcIter << "." << endl;
 }
@@ -2281,11 +2281,10 @@ int main( )
 
 ```Output
 The first element of hash_multiset hms1
- with a key greater than 20 is: 30.
+with a key greater than 20 is: 30.
 The hash_multiset hms1 doesn't have an element
- with a key greater than 30.
-The first element of hms1
- with a key greater than
+with a key greater than 30.
+The first element of hms1 with a key greater than
 that of the initial element of hms1 is: 20.
 ```
 

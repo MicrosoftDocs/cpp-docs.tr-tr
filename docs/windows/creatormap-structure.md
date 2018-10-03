@@ -1,29 +1,37 @@
 ---
 title: CreatorMap yapısı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/21/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::Details::CreatorMap
 - implements/Microsoft::WRL::Details::CreatorMap
+- module/Microsoft::WRL::Details::CreatorMap::activationId
+- module/Microsoft::WRL::Details::CreatorMap::factoryCache
+- module/Microsoft::WRL::Details::CreatorMap::factoryCreator
+- module/Microsoft::WRL::Details::CreatorMap::serverName
 dev_langs:
 - C++
 helpviewer_keywords:
-- CreatorMap structure
+- Microsoft::WRL::Details::CreatorMap structure
+- Microsoft::WRL::Details::CreatorMap::activationId data member
+- Microsoft::WRL::Details::CreatorMap::factoryCache data member
+- Microsoft::WRL::Details::CreatorMap::factoryCreator data member
+- Microsoft::WRL::Details::CreatorMap::serverName data member
 ms.assetid: 94e40927-90c3-4107-bca3-3ad2dc4beda9
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c0a622eaa40cedfd7bf22259cf81382290f20f3a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a7bf4ec2132e19989c5f1ae7c47003056928d0fd
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593740"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234948"
 ---
 # <a name="creatormap-structure"></a>CreatorMap Yapısı
 
@@ -39,7 +47,7 @@ struct CreatorMap;
 
 Nesneleri kaydını başlatmak ve kaydetme hakkında bilgi içerir.
 
-**CreatorMap** aşağıdaki bilgileri içerir:
+`CreatorMap` Aşağıdaki bilgileri içerir:
 
 - Başlatma, kaydedin ve nesneleri kaydını nasıl.
 
@@ -51,12 +59,12 @@ Nesneleri kaydını başlatmak ve kaydetme hakkında bilgi içerir.
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[CreatorMap::activationId Veri Üyesi](../windows/creatormap-activationid-data-member.md)|Bir klasik COM sınıfı kimliği veya bir Windows çalışma zamanı adı tanımlanmış bir nesne kimliği temsil eder.|
-|[CreatorMap::factoryCache Veri Üyesi](../windows/creatormap-factorycache-data-member.md)|Üreteci önbellek için yönelik bir işaretçi depolayan **CreatorMap**.|
-|[CreatorMap::factoryCreator Veri Üyesi](../windows/creatormap-factorycreator-data-member.md)|İçin belirtilen bir Üreteç oluşturur **CreatorMap**.|
-|[CreatorMap::serverName Veri Üyesi](../windows/creatormap-servername-data-member.md)|Sunucu adını depolar **CreatorMap**.|
+Ad                                          | Açıklama
+--------------------------------------------- | ------------------------------------------------------------------------------------------------------
+[Creatormap::activationıd](#activationid)     | Bir klasik COM sınıfı kimliği veya bir Windows çalışma zamanı adı tanımlanmış bir nesne kimliği temsil eder.
+[CreatorMap::factoryCache](#factorycache)     | Üreteci önbellek için yönelik bir işaretçi depolayan `CreatorMap`.
+[CreatorMap::factoryCreator](#factorycreator) | İçin belirtilen bir Üreteç oluşturur `CreatorMap`.
+[CreatorMap::serverName](#servername)         | Sunucu adını depolar `CreatorMap`.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -68,6 +76,83 @@ Nesneleri kaydını başlatmak ve kaydetme hakkında bilgi içerir.
 
 **Namespace:** Microsoft::wrl:: details
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="activationid"></a>Creatormap::activationıd
 
-[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+union {
+   const IID* clsid;
+   const wchar_t* (*getRuntimeName)();
+} activationId;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*CLSID*<br/>
+Bir arabirim kimliği.
+
+*getRuntimeName*<br/>
+Windows çalışma zamanı adı bir nesne alır. bir işlev.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bir klasik COM sınıfı kimliği veya bir Windows çalışma zamanı adı tanımlanmış bir nesne kimliği temsil eder.
+
+## <a name="factorycache"></a>CreatorMap::factoryCache
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+FactoryCache* factoryCache;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Üreteci önbellek için yönelik bir işaretçi depolayan `CreatorMap`.
+
+## <a name="factorycreator"></a>CreatorMap::factoryCreator
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+HRESULT (*factoryCreator)(
+   unsigned int* currentflags,
+   const CreatorMap* entry,
+   REFIID iidClassFactory,
+IUnknown** factory);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*currentflags*<br/>
+Aşağıdakilerden birini [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırıcılar.
+
+*entry*<br/>
+CreatorMap bir.
+
+*iidClassFactory*<br/>
+Bir sınıf üreteci arabirim kimliği.
+
+*Fabrika*<br/>
+İşlem tamamlandığında bir sınıf üreteci adresidir.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Belirtilen CreatorMap için bir üreteci oluşturur.
+
+## <a name="servername"></a>CreatorMap::serverName
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+const wchar_t* serverName;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+CreatorMap için sunucu adını depolar.

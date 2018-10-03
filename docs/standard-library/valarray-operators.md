@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::operator&lt; (valarray)
 - std::operator&lt;&lt; (valarray)
 - std::operator&lt;= (valarray), std::operator== (valarray)
-ms.openlocfilehash: 83958ee300143463a1da9b10d2edb6eb1707ec4f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 660e89600b6da211eea832956dfc3a9d86433931
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703566"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235483"
 ---
 # <a name="ltvalarraygt-operators"></a>&lt;valarray&gt; işleçleri
 
@@ -134,7 +134,8 @@ int main( )
 
    vaNE = ( vaL != vaR );
    cout << "The element-by-element result of "
-        << "the not equal comparison test is the\n valarray: ( ";
+        << "the not equal comparison test is the\n"
+        << "valarray: ( ";
       for ( i = 0 ; i < 10 ; i++ )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
@@ -143,7 +144,7 @@ int main( )
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the not equal comparison test is the
- valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
+valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
 */
 ```
 
@@ -217,7 +218,8 @@ int main( )
 
    vaREM = ( vaL % vaR );
    cout << "The remainders from the element-by-element "
-        << "division is the\n valarray: ( ";
+        << "division is the\n"
+        << "valarray: ( ";
       for ( i = 0 ; i < 6 ; i++ )
          cout << vaREM [ i ] << " ";
    cout << ")." << endl;
@@ -226,7 +228,7 @@ int main( )
 The initial Left valarray is: ( 53 -67 53 -67 53 -67 ).
 The initial Right valarray is: ( 1 4 7 10 13 16 ).
 The remainders from the element-by-element division is the
- valarray: ( 0 -3 4 -7 1 -3 ).
+valarray: ( 0 -3 4 -7 1 -3 ).
 */
 ```
 
@@ -306,7 +308,8 @@ int main( )
 
    vaBWA = ( vaL & vaR );
    cout << "The element-by-element result of "
-        << "the bitwise operator & is the\n valarray: ( ";
+        << "the bitwise operator & is the\n"
+        << "valarray: ( ";
       for ( i = 0 ; i < 10 ; i++ )
          cout << vaBWA [ i ] << " ";
    cout << ")." << endl;
@@ -315,7 +318,7 @@ int main( )
 The initial Left valarray is:  ( 0 2 0 4 0 6 0 8 0 10 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the bitwise operator & is the
- valarray: ( 0 0 0 0 0 4 0 0 0 8 ).
+valarray: ( 0 0 0 0 0 4 0 0 0 8 ).
 */
 ```
 
@@ -393,7 +396,8 @@ int main( )
 
    vaLAA = ( vaL && vaR );
    cout << "The element-by-element result of "
-        << "the logical AND operator&& is the\n valarray: ( ";
+        << "the logical AND operator&& is the\n"
+        << "valarray: ( ";
       for (i = 0 ; i < 10 ; i++ )
          cout << vaLAA [ i ] << " ";
    cout << ")." << endl;
@@ -402,7 +406,7 @@ int main( )
 The initial Left valarray is:  ( 0 0 0 2 0 4 0 6 0 8 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the logical AND operator&& is the
- valarray: ( 0 0 0 1 0 1 0 1 0 1 ).
+valarray: ( 0 0 0 1 0 1 0 1 0 1 ).
 */
 ```
 
@@ -484,7 +488,8 @@ int main( )
 
    vaNE = ( vaL > vaR );
    cout << "The element-by-element result of "
-        << "the greater than comparison test is the\n valarray: ( ";
+        << "the greater than comparison test is the\n"
+        << "valarray: ( ";
       for ( i = 0 ; i < 10 ; i++ )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
@@ -493,7 +498,7 @@ int main( )
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( -1 0 1 2 3 4 5 6 7 8 ).
 The element-by-element result of the greater than comparison test is the
- valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
+valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
 */
 ```
 
@@ -575,7 +580,8 @@ int main( )
 
    vaNE = ( vaL >= vaR );
    cout << "The element-by-element result of "
-        << "the greater than or equal test is the\n valarray: ( ";
+        << "the greater than or equal test is the\n"
+        << "valarray: ( ";
       for ( i = 0 ; i < 10 ; i++ )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
@@ -584,7 +590,7 @@ int main( )
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( -1 0 1 2 3 4 5 6 7 8 ).
 The element-by-element result of the greater than or equal test is the
- valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
+valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
 */
 ```
 
@@ -662,7 +668,8 @@ int main( )
 
    vaNE = ( vaL >> vaR );
    cout << "The element-by-element result of "
-        << "the right shift is the\n valarray: ( ";
+        << "the right shift is the\n"
+        << "valarray: ( ";
       for ( i = 0 ; i < 8 ; i++ )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
@@ -671,7 +678,7 @@ int main( )
 The initial Left valarray is: ( 64 -64 64 -64 64 -64 64 -64 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the right shift is the
- valarray: ( 64 -32 16 -8 4 -2 1 -1 ).
+valarray: ( 64 -32 16 -8 4 -2 1 -1 ).
 */
 ```
 
@@ -753,7 +760,8 @@ int main( )
 
    vaNE = ( vaL < vaR );
    cout << "The element-by-element result of "
-        << "the less-than comparson test is the\n valarray: ( ";
+        << "the less-than comparson test is the\n"
+        << "valarray: ( ";
       for (i = 0 ; i < 10 ; i++ )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
@@ -762,7 +770,7 @@ int main( )
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the less-than comparson test is the
- valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
+valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
 */
 ```
 
@@ -844,7 +852,8 @@ int main( )
 
    vaNE = ( vaL <= vaR );
    cout << "The element-by-element result of "
-        << "the less than or equal test is the\n valarray: ( ";
+        << "the less than or equal test is the\n"
+        << "valarray: ( ";
       for ( i = 0 ; i < 10 ; i++ )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
@@ -853,7 +862,7 @@ int main( )
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( -1 0 1 2 3 4 5 6 7 8 ).
 The element-by-element result of the less than or equal test is the
- valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
+valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
 */
 ```
 
@@ -931,7 +940,8 @@ int main( )
 
    vaNE = ( vaL << vaR );
    cout << "The element-by-element result of "
-        << "the left shift is the\n valarray: ( ";
+        << "the left shift is the\n"
+        << "valarray: ( ";
       for ( i = 0 ; i < 8 ; i++ )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
@@ -940,7 +950,7 @@ int main( )
 The initial Left valarray is: ( 1 -1 1 -1 1 -1 1 -1 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the left shift is the
- valarray: ( 1 -2 4 -8 16 -32 64 -128 ).
+valarray: ( 1 -2 4 -8 16 -32 64 -128 ).
 */
 ```
 
@@ -1014,7 +1024,8 @@ int main( )
 
    vaNE = ( vaL * vaR );
    cout << "The element-by-element result of "
-        << "the multiplication is the\n valarray: ( ";
+        << "the multiplication is the\n"
+        << "valarray: ( ";
       for (i = 0 ; i < 8 ; i++ )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
@@ -1023,7 +1034,7 @@ int main( )
 The initial Left valarray is: ( 2 -1 2 -1 2 -1 2 -1 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the multiplication is the
- valarray: ( 0 -1 4 -3 8 -5 12 -7 ).
+valarray: ( 0 -1 4 -3 8 -5 12 -7 ).
 */
 ```
 
@@ -1097,7 +1108,8 @@ int main( )
 
    vaNE = ( vaL + vaR );
    cout << "The element-by-element result of "
-        << "the sum is the\n valarray: ( ";
+        << "the sum is the\n"
+        << "valarray: ( ";
       for ( i = 0 ; i < 8 ; i++ )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
@@ -1106,7 +1118,7 @@ int main( )
 The initial Left valarray is: ( 2 -1 2 -1 2 -1 2 -1 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the sum is the
- valarray: ( 2 0 4 2 6 4 8 6 ).
+valarray: ( 2 0 4 2 6 4 8 6 ).
 */
 ```
 
@@ -1186,7 +1198,8 @@ int main( )
 
    vaNE = ( vaL - vaR );
    cout << "The element-by-element result of "
-        << "the difference is the\n valarray: ( ";
+        << "the difference is the\n"
+        << "valarray: ( ";
       for (i = 0 ; i < 8 ; i++ )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
@@ -1195,7 +1208,7 @@ int main( )
 The initial Left valarray is: ( 10 0 10 0 10 0 10 0 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the difference is the
- valarray: ( 10 -1 8 -3 6 -5 4 -7 ).
+valarray: ( 10 -1 8 -3 6 -5 4 -7 ).
 */
 ```
 
@@ -1275,7 +1288,8 @@ int main( )
 
    vaNE = ( vaL / vaR );
    cout << "The element-by-element result of "
-        << "the quotient is the\n valarray: ( ";
+        << "the quotient is the\n"
+        << "valarray: ( ";
       for ( i = 0 ; i < 6 ; i++ )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
@@ -1284,7 +1298,7 @@ int main( )
 The initial Left valarray is: ( 100 -100 100 -100 100 -100 ).
 The initial Right valarray is: ( 0 2 4 6 8 10 ).
 The element-by-element result of the quotient is the
- valarray: ( inf -50 25 -16.6667 12.5 -10 ).
+valarray: ( inf -50 25 -16.6667 12.5 -10 ).
 */
 ```
 
@@ -1366,7 +1380,8 @@ int main( )
 
    vaNE = ( vaL == vaR );
    cout << "The element-by-element result of "
-        << "the equality comparison test is the\n valarray: ( ";
+        << "the equality comparison test is the\n"
+        << "valarray: ( ";
       for ( i = 0 ; i < 10 ; i++ )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
@@ -1375,7 +1390,7 @@ int main( )
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the equality comparison test is the
- valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
+valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
 */
 ```
 
@@ -1459,7 +1474,8 @@ int main( )
 
    vaLAA = ( vaL ^ vaR );
    cout << "The element-by-element result of "
-        << "the bitwise XOR operator^ is the\n valarray: ( ";
+        << "the bitwise XOR operator^ is the\n"
+        << "valarray: ( ";
            for ( i = 0 ; i < 10 ; i++ )
          cout << vaLAA [ i ] << " ";
    cout << ")." << endl;
@@ -1468,7 +1484,7 @@ int main( )
 The initial Left valarray is:  ( 1 0 1 0 1 0 1 0 1 0 ).
 The initial Right valarray is: ( 0 0 1 3 3 4 6 6 7 9 ).
 The element-by-element result of the bitwise XOR operator^ is the
- valarray: ( 1 0 0 3 2 4 7 6 6 9 ).
+valarray: ( 1 0 0 3 2 4 7 6 6 9 ).
 */
 ```
 
@@ -1552,7 +1568,8 @@ int main( )
 
    vaLAA = ( vaL | vaR );
    cout << "The element-by-element result of "
-        << "the bitwise OR operator| is the\n valarray: ( ";
+        << "the bitwise OR operator| is the\n"
+        << "valarray: ( ";
       for (i = 0 ; i < 10 ; i++ )
          cout << vaLAA [ i ] << " ";
    cout << ")." << endl;
@@ -1561,7 +1578,7 @@ int main( )
 The initial Left valarray is:  ( 1 0 1 0 1 0 1 0 1 0 ).
 The initial Right valarray is: ( 0 0 1 3 3 4 6 6 7 9 ).
 The element-by-element result of the bitwise OR operator| is the
- valarray: ( 1 0 1 3 3 4 7 6 7 9 ).
+valarray: ( 1 0 1 3 3 4 7 6 7 9 ).
 */
 ```
 
@@ -1643,7 +1660,8 @@ int main( )
 
    vaLOR = ( vaL || vaR );
    cout << "The element-by-element result of "
-        << "the logical OR operator|| is the\n valarray: ( ";
+        << "the logical OR operator|| is the\n"
+        << "valarray: ( ";
       for ( i = 0 ; i < 10 ; i++ )
          cout << vaLOR [ i ] << " ";
    cout << ")." << endl;
@@ -1652,7 +1670,7 @@ int main( )
 The initial Left valarray is:  ( 0 0 0 2 0 4 0 6 0 8 ).
 The initial Right valarray is: ( 0 0 0 3 0 0 6 0 0 9 ).
 The element-by-element result of the logical OR operator|| is the
- valarray: ( 0 0 0 1 0 1 1 1 0 1 ).
+valarray: ( 0 0 0 1 0 1 1 1 0 1 ).
 */
 ```
 
