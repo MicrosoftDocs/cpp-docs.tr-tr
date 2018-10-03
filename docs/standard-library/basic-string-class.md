@@ -126,12 +126,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6c22d91bafc45699371dd40d317b66cf3d1ca11
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: b86f8bca0cade273fc3b6bc1e7c936bf917bb4ba
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706621"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235990"
 ---
 # <a name="basicstring-class"></a>basic_string Sınıfı
 
@@ -739,12 +739,12 @@ basic_string(
 
 template <class InputIterator>
 basic_string(
-InputIterator first,
+    InputIterator first,
     InputIterator last);
 
 template <class InputIterator>
 basic_string(
-InputIterator first,
+    InputIterator first,
     InputIterator last,
     const allocator_type& _Al);
 

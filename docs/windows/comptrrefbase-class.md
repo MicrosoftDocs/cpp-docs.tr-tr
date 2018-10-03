@@ -1,28 +1,34 @@
 ---
 title: ComPtrRefBase sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/21/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::Details::ComPtrRefBase
+- client/Microsoft::WRL::Details::ComPtrRefBase::operator IInspectable**
+- client/Microsoft::WRL::Details::ComPtrRefBase::operator IUnknown**
+- client/Microsoft::WRL::Details::ComPtrRefBase::ptr_
 dev_langs:
 - C++
 helpviewer_keywords:
-- ComPtrRefBase class
+- Microsoft::WRL::Details::ComPtrRefBase class
+- Microsoft::WRL::Details::ComPtrRefBase::operator IInspectable** operator
+- Microsoft::WRL::Details::ComPtrRefBase::operator IUnknown** operator
+- Microsoft::WRL::Details::ComPtrRefBase::ptr_ data member
 ms.assetid: 6d344c1a-cc13-4a3f-8a0d-f167ccb9348f
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3ca2cb8cdc748abcac61bd548491187095b71a3f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 02e430184c5fa7418eb02ed6ef2f63951af89a5c
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415323"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48233963"
 ---
 # <a name="comptrrefbase-class"></a>ComPtrRefBase Sınıfı
 
@@ -40,7 +46,7 @@ class ComPtrRefBase;
 ### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-A [ComPtr\<T >](../windows/comptr-class.md) türü veya tür, kesmenin tarafından temsil edilen arabirim sınıfından türetilen **ComPtr**.
+A [ComPtr\<T >](../windows/comptr-class.md) türü veya tür, kesmenin tarafından temsil edilen arabirim sınıfından türetilen `ComPtr`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -50,22 +56,22 @@ Temel sınıfı temsil eder [ComPtrRef](../windows/comptrref-class.md) sınıfı
 
 ### <a name="public-typedefs"></a>Genel Typedefler
 
-|Ad|Açıklama|
-|----------|-----------------|
-|`InterfaceType`|Şablon parametresinin türü için bir eşanlamlı *T*.|
+Ad            | Açıklama
+--------------- | -------------------------------------------------
+`InterfaceType` | Şablon parametresinin türü için bir eşanlamlı *T*.
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[ComPtrRefBase::operator IInspectable** İşleci](../windows/comptrrefbase-operator-iinspectable-star-star-operator.md)|Geçerli bıraktığı [ptr_](../windows/comptrrefbase-ptr-data-member.md) veri üyesi için bir işaretçi-için-a-işaretçi- `IInspectable` arabirimi.|
-|[ComPtrRefBase::operator IUnknown** İşleci](../windows/comptrrefbase-operator-iunknown-star-star-operator.md)|Geçerli bıraktığı [ptr_](../windows/comptrrefbase-ptr-data-member.md) veri üyesi için bir işaretçi-için-a-işaretçi- `IUnknown` arabirimi.|
+Ad                                                                       | Açıklama
+-------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------
+[ComPtrRefBase::operator Iınspectable **](#operator-iinspectable-star-star) | Geçerli bıraktığı [ptr_](#ptr) veri üyesi için bir işaretçi-için-a-işaretçi- `IInspectable` arabirimi.
+[ComPtrRefBase::operator IUnknown **](#operator-iunknown-star-star)         | Geçerli bıraktığı [ptr_](#ptr) veri üyesi için bir işaretçi-için-a-işaretçi- `IUnknown` arabirimi.
 
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[ComPtrRefBase::ptr_ Veri Üyesi](../windows/comptrrefbase-ptr-data-member.md)|Geçerli bir şablon parametresi tarafından belirtilen tür işaretçisi.|
+Ad                        | Açıklama
+--------------------------- | ----------------------------------------------------------------
+[ComPtrRefBase::ptr_](#ptr) | Geçerli bir şablon parametresi tarafından belirtilen tür işaretçisi.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -77,6 +83,44 @@ Temel sınıfı temsil eder [ComPtrRef](../windows/comptrref-class.md) sınıfı
 
 **Namespace:** Microsoft::wrl:: details
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="operator-iinspectable-star-star"></a>ComPtrRefBase::operator Iınspectable\* \* işleci
 
-[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+operator IInspectable**() const;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Geçerli bıraktığı [ptr_](#ptr) veri üyesi için bir işaretçi-için-a-işaretçi- `IInspectable` arabirimi.
+
+Bir hata varsa yayıldığını geçerli `ComPtrRefBase` öğesinden türetilen değil `IInspectable`.
+
+Bu tür dönüştürme kullanılabilir yalnızca `__WRL_CLASSIC_COM__` tanımlanır.
+
+## <a name="operator-iunknown-star-star"></a>ComPtrRefBase::operator IUnknown ** işleci
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+operator IUnknown**() const;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Geçerli bıraktığı [ptr_](#ptr) veri üyesi için bir işaretçi-için-a-işaretçi- `IUnknown` arabirimi.
+
+Bir hata varsa yayıldığını geçerli `ComPtrRefBase` öğesinden türetilen değil `IUnknown`.
+
+## <a name="ptr"></a>ComPtrRefBase::ptr_
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+```cpp
+T* ptr_;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Geçerli bir şablon parametresi tarafından belirtilen tür işaretçisi. `ptr_` korunan verilerin üyesidir.

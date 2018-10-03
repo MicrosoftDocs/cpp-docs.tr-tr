@@ -1,28 +1,32 @@
 ---
 title: CriticalSectionTraits yapısı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/26/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits
+- corewrappers/Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::GetInvalidValue
+- corewrappers/Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::Unlock
 dev_langs:
 - C++
 helpviewer_keywords:
-- CriticalSectionTraits structure
+- Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits structure
+- Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::GetInvalidValue method
+- Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::Unlock method
 ms.assetid: c515a1b5-4eb0-40bc-9035-c4d9352c9de7
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6d15f65ecc2253556a6812cfb90ef78f90c7fb29
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 420ab1019dfa2e95e00e366c64509178ad20e685
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42594740"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234352"
 ---
 # <a name="criticalsectiontraits-structure"></a>CriticalSectionTraits Yapısı
 
@@ -38,16 +42,16 @@ struct CriticalSectionTraits;
 
 ### <a name="public-typedefs"></a>Genel Typedefler
 
-|Ad|Açıklama|
-|----------|-----------------|
-|`Type`|A **typedef** , kritik bir bölüm için bir işaretçi tanımlar. `Type` olarak tanımlanan `typedef CRITICAL_SECTION* Type;`.|
+Ad   | Açıklama
+------ | -----------------------------------------------------------------------------------------------------------------
+`Type` | A `typedef` , kritik bir bölüm için bir işaretçi tanımlar. `Type` olarak tanımlanan `typedef CRITICAL_SECTION* Type;`.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[CriticalSectionTraits::GetInvalidValue Metodu](../windows/criticalsectiontraits-getinvalidvalue-method.md)|Uzmanlaşmış bir `CriticalSection` şablon böylece şablonu her zaman geçerli değil.|
-|[CriticalSectionTraits::Unlock Metodu](../windows/criticalsectiontraits-unlock-method.md)|Uzmanlaşmış bir `CriticalSection` BT'nin siteminizi belirtilen kritik bölüm nesnenin sahipliğini destekler böylece şablonu.|
+Ad                                                       | Açıklama
+---------------------------------------------------------- | -----------------
+[Criticalsectiontraits::getınvalidvalue](#getinvalidvalue) | Uzmanlaşmış bir `CriticalSection` şablon böylece şablonu her zaman geçerli değil.
+[CriticalSectionTraits::Unlock](#unlock)                   | Uzmanlaşmış bir `CriticalSection` BT'nin siteminizi belirtilen kritik bölüm nesnenin sahipliğini destekler böylece şablonu.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -59,6 +63,39 @@ struct CriticalSectionTraits;
 
 **Namespace:** Microsoft::WRL::Wrappers::HandleTraits
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="getinvalidvalue"></a>Criticalsectiontraits::getınvalidvalue
 
-[Microsoft::WRL::Wrappers::HandleTraits Ad Alanı](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+Uzmanlaşmış bir `CriticalSection` şablon böylece şablonu her zaman geçerli değil.
+
+```cpp
+inline static Type GetInvalidValue();
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Her zaman için geçersiz bir kritik bölüm bir işaretçi döndürür.
+
+### <a name="remarks"></a>Açıklamalar
+
+`Type` Değiştirici olarak tanımlanmış olan `typedef CRITICAL_SECTION* Type;`.
+
+## <a name="unlock"></a>CriticalSectionTraits::Unlock
+
+Uzmanlaşmış bir `CriticalSection` BT'nin siteminizi belirtilen kritik bölüm nesnenin sahipliğini destekler böylece şablonu.
+
+```cpp
+inline static void Unlock(
+   _In_ Type cs
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*cs*<br/>
+Kritik bölüm nesnesine bir işaretçi.
+
+### <a name="remarks"></a>Açıklamalar
+
+`Type` Değiştirici olarak tanımlanmış olan `typedef CRITICAL_SECTION* Type;`.
+
+Daha fazla bilgi için **LeaveCriticalSection işlevi** içinde **eşitleme işlevleri** Windows API belgelerinin bölümü.
