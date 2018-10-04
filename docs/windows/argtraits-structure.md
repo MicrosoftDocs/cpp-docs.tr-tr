@@ -1,7 +1,7 @@
 ---
 title: ArgTraits yapısı | Microsoft Docs
 ms.custom: ''
-ms.date: 09/21/2018
+ms.date: 10/03/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b84658271793b5f8c48ad54df44aec27022ea5a1
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 86be60fb937588a3ea9a6289740ee8dfc49893fd
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48236081"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788718"
 ---
 # <a name="argtraits-structure"></a>ArgTraits Yapısı
 
@@ -35,89 +35,106 @@ WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değ
 ```cpp
 template<typename TMemberFunction>
 struct ArgTraits;
+
 template<typename TDelegateInterface>
 struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(void)>;
-template<
-   typename TDelegateInterface,
-   typename TArg1
->
+
+template<typename TDelegateInterface, typename TArg1>
 struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1)>;
+
+template<typename TDelegateInterface, typename TArg1, typename TArg2>
+struct ArgTraits<
+    HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2)>;
+
 template<
-   typename TDelegateInterface,
-   typename TArg1,
-   typename TArg2
+    typename TDelegateInterface,
+    typename TArg1,
+    typename TArg2,
+    typename TArg3
 >
-struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2)>;
+struct ArgTraits<
+    HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2, TArg3)>;
+
 template<
-   typename TDelegateInterface,
-   typename TArg1,
-   typename TArg2,
-   typename TArg3
+    typename TDelegateInterface,
+    typename TArg1,
+    typename TArg2,
+    typename TArg3,
+    typename TArg4
 >
-struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2, TArg3)>;
+struct ArgTraits<
+    HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)
+             (TArg1, TArg2, TArg3, TArg4)>;
+
 template<
-   typename TDelegateInterface,
-   typename TArg1,
-   typename TArg2,
-   typename TArg3,
-   typename TArg4
+    typename TDelegateInterface,
+    typename TArg1,
+    typename TArg2,
+    typename TArg3,
+    typename TArg4,
+    typename TArg5
 >
-struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2, TArg3, TArg4)>;
+struct ArgTraits<
+    HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)
+             (TArg1, TArg2, TArg3, TArg4, TArg5)>;
+
 template<
-   typename TDelegateInterface,
-   typename TArg1,
-   typename TArg2,
-   typename TArg3,
-   typename TArg4,
-   typename TArg5
+    typename TDelegateInterface,
+    typename TArg1,
+    typename TArg2,
+    typename TArg3,
+    typename TArg4,
+    typename TArg5,
+    typename TArg6
 >
-struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2, TArg3, TArg4, TArg5)>;
+struct ArgTraits<
+    HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)
+             (TArg1, TArg2, TArg3, TArg4, TArg5, TArg6)>;
+
 template<
-   typename TDelegateInterface,
-   typename TArg1,
-   typename TArg2,
-   typename TArg3,
-   typename TArg4,
-   typename TArg5,
-   typename TArg6
+    typename TDelegateInterface,
+    typename TArg1,
+    typename TArg2,
+    typename TArg3,
+    typename TArg4,
+    typename TArg5,
+    typename TArg6,
+    typename TArg7
 >
-struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2, TArg3, TArg4, TArg5, TArg6)>;
+struct ArgTraits<
+    HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)
+             (TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7)>;
+
 template<
-   typename TDelegateInterface,
-   typename TArg1,
-   typename TArg2,
-   typename TArg3,
-   typename TArg4,
-   typename TArg5,
-   typename TArg6,
-   typename TArg7
+    typename TDelegateInterface,
+    typename TArg1,
+    typename TArg2,
+    typename TArg3,
+    typename TArg4,
+    typename TArg5,
+    typename TArg6,
+    typename TArg7,
+    typename TArg8
 >
-struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7)>;
+struct ArgTraits<
+    HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)
+             (TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8)>;
+
 template<
-   typename TDelegateInterface,
-   typename TArg1,
-   typename TArg2,
-   typename TArg3,
-   typename TArg4,
-   typename TArg5,
-   typename TArg6,
-   typename TArg7,
-   typename TArg8
+    typename TDelegateInterface,
+    typename TArg1,
+    typename TArg2,
+    typename TArg3,
+    typename TArg4,
+    typename TArg5,
+    typename TArg6,
+    typename TArg7,
+    typename TArg8,
+    typename TArg9
 >
-struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8)>;
-template<
-   typename TDelegateInterface,
-   typename TArg1,
-   typename TArg2,
-   typename TArg3,
-   typename TArg4,
-   typename TArg5,
-   typename TArg6,
-   typename TArg7,
-   typename TArg8,
-   typename TArg9
->
-struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9)>;
+struct ArgTraits<
+    HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)
+             (TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9)>;
 ```
 
 ### <a name="parameters"></a>Parametreler

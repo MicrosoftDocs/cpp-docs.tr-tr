@@ -1,7 +1,7 @@
 ---
 title: Kullanıcı tanımlı öznitelikler (C++ bileşen uzantıları) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/02/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 605759e241498e83174f4d6b16435c3119c56671
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 3c2f5568b067c119bfa65744290c39d7ca577072
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600387"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48789234"
 ---
 # <a name="user-defined-attributes--c-component-extensions"></a>Kullanıcı Tanımlı Öznitelikler (C++ Bileşen Uzantıları)
 
@@ -47,7 +47,7 @@ Derleyici seçeneği: `/ZW`
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçinde sunulan bilgileri değiştirmek için bu konuda gösterilen sözdizimi ve bilgi yöneliktir [özniteliği](../windows/attribute.md).
+İçinde sunulan bilgileri değiştirmek için bu konuda gösterilen sözdizimi ve bilgi yöneliktir [özniteliği](attributes/attribute.md).
 
 Özel bir öznitelik türü tanımlama ve yaparak tanımlayabilirsiniz <xref:System.Attribute> bir temel sınıf türü için ve isteğe bağlı olarak uygulama <xref:System.AttributeUsageAttribute> özniteliği.
 
@@ -55,9 +55,9 @@ Derleyici seçeneği: `/ZW`
 
 Daha fazla bilgi için bkz:
 
-- [Öznitelik hedefleri](../windows/attribute-targets-cpp-component-extensions.md)
+- [Öznitelik hedefleri](attribute-targets-cpp-component-extensions.md)
 
-- [Öznitelik parametre türleri](../windows/attribute-parameter-types-cpp-component-extensions.md)
+- [Öznitelik parametre türleri](attribute-parameter-types-cpp-component-extensions.md)
 
 Visual C++'ta imzalama derlemeler hakkında daha fazla bilgi için bkz. [tanımlayıcı ad derlemeleri (derleme imzalama) (C + +/ CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
 
@@ -177,7 +177,7 @@ Service Access = Read
 
 Öznitelik bağımsız değişkenleri derleme zamanı sabit olması gerekir; Çoğu durumda, bunlar sabit değişmez değerleri olmalıdır.
 
-Bkz: [TypeID](../windows/typeid-cpp-component-extensions.md) özel öznitelik bloğundan System::Type değerini döndürmek hakkında bilgi için.
+Bkz: [TypeID](typeid-cpp-component-extensions.md) özel öznitelik bloğundan System::Type değerini döndürmek hakkında bilgi için.
 
 ```cpp
 // extending_metadata_e.cpp
@@ -216,4 +216,4 @@ ref struct B {};
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[Çalışma Zamanı Platformları için Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)

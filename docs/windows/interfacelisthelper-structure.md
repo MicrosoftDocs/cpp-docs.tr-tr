@@ -1,7 +1,7 @@
 ---
 title: Interfacelisthelper yapısı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/03/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 87516cf45a39602bea462b8e94f17d3ef64ad0eb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b8d8b44f6b3732c19977e6839e96d4ab5013a112
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431625"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788415"
 ---
 # <a name="interfacelisthelper-structure"></a>InterfaceListHelper Yapısı
 
@@ -32,22 +32,20 @@ WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değ
 
 ```cpp
 template <
-   typename T0,
-   typename T1 = Nil,
-   typename T2 = Nil,
-   typename T3 = Nil,
-   typename T4 = Nil,
-   typename T5 = Nil,
-   typename T6 = Nil,
-   typename T7 = Nil,
-   typename T8 = Nil,
-   typename T9 = Nil
+    typename T0,
+    typename T1 = Nil,
+    typename T2 = Nil,
+    typename T3 = Nil,
+    typename T4 = Nil,
+    typename T5 = Nil,
+    typename T6 = Nil,
+    typename T7 = Nil,
+    typename T8 = Nil,
+    typename T9 = Nil
 >
 struct InterfaceListHelper;
 
-template <
-   typename T0
->
+template <typename T0>
 struct InterfaceListHelper<T0, Nil, Nil, Nil, Nil, Nil, Nil, Nil, Nil>;
 ```
 

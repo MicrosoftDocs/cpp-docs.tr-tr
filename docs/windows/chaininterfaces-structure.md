@@ -1,7 +1,7 @@
 ---
 title: Chainınterfaces yapısı | Microsoft Docs
 ms.custom: ''
-ms.date: 09/28/2018
+ms.date: 10/03/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -27,12 +27,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a80b9afd8f2db895440d12776173c559e41c2cfe
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: df483f08e96f2bd479504028ce4ce17513bb7d41
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234872"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48789027"
 ---
 # <a name="chaininterfaces-structure"></a>ChainInterfaces Yapısı
 
@@ -42,33 +42,40 @@ Arabirim kimlikleri kümesine uygulanabilir doğrulama ve başlatma işlevleri b
 
 ```cpp
 template <
-   typename I0,
-   typename I1,
-   typename I2 = Details::Nil,
-   typename I3 = Details::Nil,
-   typename I4 = Details::Nil,
-   typename I5 = Details::Nil,
-   typename I6 = Details::Nil,
-   typename I7 = Details::Nil,
-   typename I8 = Details::Nil,
-   typename I9 = Details::Nil
+    typename I0,
+    typename I1,
+    typename I2 = Details::Nil,
+    typename I3 = Details::Nil,
+    typename I4 = Details::Nil,
+    typename I5 = Details::Nil,
+    typename I6 = Details::Nil,
+    typename I7 = Details::Nil,
+    typename I8 = Details::Nil,
+    typename I9 = Details::Nil
 >
 struct ChainInterfaces : I0;
+
 template <
-   typename DerivedType,
-   typename BaseType,
-   bool hasImplements,
-   typename I1,
-   typename I2,
-   typename I3,
-   typename I4,
-   typename I5,
-   typename I6,
-   typename I7,
-   typename I8,
-   typename I9
+    typename DerivedType,
+    typename BaseType,
+    bool hasImplements,
+    typename I1,
+    typename I2,
+    typename I3,
+    typename I4,
+    typename I5,
+    typename I6,
+    typename I7,
+    typename I8,
+    typename I9
 >
-struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, I4, I5, I6, I7, I8, I9>;
+struct ChainInterfaces<
+    MixIn<
+        DerivedType,
+        BaseType,
+        hasImplements
+    >, I1, I2, I3, I4, I5, I6, I7, I8, I9
+>;
 ```
 
 ### <a name="parameters"></a>Parametreler

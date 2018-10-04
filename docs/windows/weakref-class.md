@@ -1,7 +1,7 @@
 ---
 title: WeakRef sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 09/07/2018
+ms.date: 10/03/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -29,12 +29,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 12fd66c7ff5a6f6fee7588aa7bd51ae2053ba7e8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: adbd47e8aeeb777b9a5e077429d74ef542abb85d
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386983"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788818"
 ---
 # <a name="weakref-class"></a>WeakRef Sınıfı
 
@@ -43,7 +43,7 @@ Temsil eden bir *zayıf başvuru* yalnızca Windows çalışma zamanı tarafınd
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-class WeakRef : public ComPtr<IWeakReference>
+class WeakRef : public ComPtr<IWeakReference>;
 ```
 
 ## <a name="members"></a>Üyeler

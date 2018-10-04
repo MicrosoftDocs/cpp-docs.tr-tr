@@ -1,7 +1,7 @@
 ---
 title: ActivationFactory sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 09/28/2018
+ms.date: 10/03/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -31,12 +31,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3997ee3e435aceec536215599ea0d95321fd5a38
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: c2e8256b90b243bc02f9ca5bbfb8ee6a933a7fe4
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234677"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788649"
 ---
 # <a name="activationfactory-class"></a>ActivationFactory Sınıfı
 
@@ -46,11 +46,22 @@ Windows çalışma zamanı tarafından etkinleştirilmesi bir veya daha fazla s�
 
 ```cpp
 template <
-   typename I0 = Details::Nil,
-   typename I1 = Details::Nil,
-   typename I2 = Details::Nil
+    typename I0 = Details::Nil,
+    typename I1 = Details::Nil,
+    typename I2 = Details::Nil
 >
-class ActivationFactory : public Details::RuntimeClass<typename Details::InterfaceListHelper<IActivationFactory, I0, I1, I2, Details::Nil>::TypeT, RuntimeClassFlags<WinRt | InhibitWeakReference>, false>;
+class ActivationFactory :
+    public Details::RuntimeClass<
+        typename Details::InterfaceListHelper<
+            IActivationFactory,
+            I0,
+            I1,
+            I2,
+            Details::Nil
+        >::TypeT,
+        RuntimeClassFlags<WinRt | InhibitWeakReference>,
+        false
+    >;
 ```
 
 ### <a name="parameters"></a>Parametreler

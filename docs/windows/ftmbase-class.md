@@ -1,7 +1,7 @@
 ---
 title: FtmBase sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 09/12/2018
+ms.date: 10/03/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -35,12 +35,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e8a1dcd96ab42f48c91bbed2057475fa412c8925
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 19c60b9f13330c612e8aba73f128af595e1a1fd9
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432812"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48789156"
 ---
 # <a name="ftmbase-class"></a>FtmBase Sınıfı
 
@@ -49,9 +49,11 @@ ms.locfileid: "46432812"
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-class FtmBase : public Microsoft::WRL::Implements<
-   Microsoft::WRL::RuntimeClassFlags<WinRtClassicComMix>,
-   Microsoft::WRL::CloakedIid<IMarshal> >;
+class FtmBase :
+    public Microsoft::WRL::Implements<
+        Microsoft::WRL::RuntimeClassFlags<WinRtClassicComMix>,
+        Microsoft::WRL::CloakedIid<IMarshal>
+    >;
 ```
 
 ## <a name="remarks"></a>Açıklamalar

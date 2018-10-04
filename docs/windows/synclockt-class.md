@@ -1,7 +1,7 @@
 ---
 title: SyncLockT sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 09/26/2018
+ms.date: 10/03/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -27,12 +27,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 892da24e4c6dacf0b4a1b099d1e5e0736ac3a76a
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 553429e2a4cc7db319c2176d20cb31e9fa0acdf7
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234105"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788754"
 ---
 # <a name="synclockt-class"></a>SyncLockT Sınıfı
 
@@ -41,9 +41,7 @@ WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değ
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-template <
-   typename SyncTraits
->
+template <typename SyncTraits>
 class SyncLockT;
 ```
 

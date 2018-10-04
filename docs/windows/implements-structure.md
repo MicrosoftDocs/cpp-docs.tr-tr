@@ -1,7 +1,7 @@
 ---
 title: Uygulayan yapısı | Microsoft Docs
 ms.custom: ''
-ms.date: 09/11/2018
+ms.date: 10/03/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 27a2cfaaf4ddb5ae58cdcd212b5fdcb7ded73bb0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cc993dc1ebe0c5f1ab11409fcecee9b6cdefdaae
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434732"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788780"
 ---
 # <a name="implements-structure"></a>Implements Yapısı
 
@@ -40,31 +40,48 @@ Implements `QueryInterface` ve `GetIid` belirtilen arabirimleri için.
 
 ```cpp
 template <
-   typename I0,
-   typename I1 = Details::Nil,
-   typename I2 = Details::Nil,
-   typename I3 = Details::Nil,
-   typename I4 = Details::Nil,
-   typename I5 = Details::Nil,
-   typename I6 = Details::Nil,
-   typename I7 = Details::Nil,
-   typename I8 = Details::Nil,
-   typename I9 = Details::Nil
+    typename I0,
+    typename I1 = Details::Nil,
+    typename I2 = Details::Nil,
+    typename I3 = Details::Nil,
+    typename I4 = Details::Nil,
+    typename I5 = Details::Nil,
+    typename I6 = Details::Nil,
+    typename I7 = Details::Nil,
+    typename I8 = Details::Nil,
+    typename I9 = Details::Nil
 >
-struct __declspec(novtable) Implements : Details::ImplementsHelper<RuntimeClassFlags<WinRt>, typename Details::InterfaceListHelper<I0, I1, I2, I3, I4, I5, I6, I7, I8, I9>::TypeT>, Details::ImplementsBase;
+struct __declspec(novtable) Implements :
+    Details::ImplementsHelper<
+        RuntimeClassFlags<WinRt>,
+        typename Details::InterfaceListHelper<
+            I0, I1, I2, I3, I4, I5, I6, I7, I8, I9
+        >::TypeT
+    >,
+    Details::ImplementsBase;
+
 template <
-   int flags,
-   typename I0,
-   typename I1,
-   typename I2,
-   typename I3,
-   typename I4,
-   typename I5,
-   typename I6,
-   typename I7,
-   typename I8
+    int flags,
+    typename I0,
+    typename I1,
+    typename I2,
+    typename I3,
+    typename I4,
+    typename I5,
+    typename I6,
+    typename I7,
+    typename I8
 >
-struct __declspec(novtable) Implements<RuntimeClassFlags<flags>, I0, I1, I2, I3, I4, I5, I6, I7, I8> : Details::ImplementsHelper<RuntimeClassFlags<flags>, typename Details::InterfaceListHelper<I0, I1, I2, I3, I4, I5, I6, I7, I8>::TypeT>, Details::ImplementsBase;
+struct __declspec(novtable) Implements<
+        RuntimeClassFlags<flags>,
+        I0, I1, I2, I3, I4, I5, I6, I7, I8> :
+    Details::ImplementsHelper<
+        RuntimeClassFlags<flags>,
+        typename Details::InterfaceListHelper<
+            I0, I1, I2, I3, I4, I5, I6, I7, I8
+        >::TypeT
+    >,
+    Details::ImplementsBase;
 ```
 
 ### <a name="parameters"></a>Parametreler

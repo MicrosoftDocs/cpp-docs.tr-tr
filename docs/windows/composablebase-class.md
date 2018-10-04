@@ -1,7 +1,7 @@
 ---
 title: ComposableBase sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/03/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,21 +15,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ce03608e796b21d8b6d87565490cc48c6d712d81
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8131ae2b4c7cdbd6e8588a95818889640fcc4bf9
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42594393"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788987"
 ---
 # <a name="composablebase-class"></a>ComposableBase Sınıfı
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-template<
-   typename FactoryInterface = IInspectable
->
+template<typename FactoryInterface = IInspectable>
 class ComposableBase;
 ```
 

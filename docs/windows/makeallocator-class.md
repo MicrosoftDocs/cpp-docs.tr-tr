@@ -1,7 +1,7 @@
 ---
 title: MakeAllocator sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 09/21/2018
+ms.date: 10/03/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6cb6574172747712fa2670b4444b17bec047a8cf
-ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
+ms.openlocfilehash: 94c094fe21127592bd8756d0f0b467e2c74df487
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169742"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48789247"
 ---
 # <a name="makeallocator-class"></a>MakeAllocator Sınıfı
 
@@ -40,9 +40,11 @@ WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değ
 
 ```cpp
 template<
-   typename T,
-   bool hasWeakReferenceSupport =
-         !__is_base_of(RuntimeClassFlags<InhibitWeakReference>, T)>
+    typename T,
+    bool hasWeakReferenceSupport =
+          !__is_base_of(RuntimeClassFlags<InhibitWeakReference>,
+                        T)
+>
 class MakeAllocator;
 
 template<typename T>

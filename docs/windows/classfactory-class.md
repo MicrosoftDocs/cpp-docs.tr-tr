@@ -1,7 +1,7 @@
 ---
 title: ClassFactory sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 09/13/2018
+ms.date: 10/03/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -27,12 +27,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bfaf95a477917fc417cfe3c296822233eca77c09
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9e3639bb9d6ca88862b3a2fb4367fc429a665287
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413074"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788675"
 ---
 # <a name="classfactory-class"></a>ClassFactory Sınıfı
 
@@ -42,18 +42,22 @@ Temel işlevselliğini uygular `IClassFactory` arabirimi.
 
 ```cpp
 template <
-   typename I0 = Details::Nil,
-   typename I1 = Details::Nil,
-   typename I2 = Details::Nil
+    typename I0 = Details::Nil,
+    typename I1 = Details::Nil,
+    typename I2 = Details::Nil
 >
-class ClassFactory : public Details::RuntimeClass<
-   typename Details::InterfaceListHelper<IClassFactory,
-   I0,
-   I1,
-   I2,
-   Details::Nil>::TypeT,
-   RuntimeClassFlags<ClassicCom | InhibitWeakReference>,
-      false>;
+class ClassFactory :
+    public Details::RuntimeClass<
+        typename Details::InterfaceListHelper<
+            IClassFactory,
+            I0,
+            I1,
+            I2,
+            Details::Nil
+        >::TypeT,
+        RuntimeClassFlags<ClassicCom | InhibitWeakReference>,
+        false
+    >;
 ```
 
 ### <a name="parameters"></a>Parametreler
