@@ -17,18 +17,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abd65d209bf24fb9285937cc998bd82d5ef3cb4f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 56b5e41872ebe4b3cdc4800d7818cceb05f03dd1
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418170"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235158"
 ---
 # <a name="walkthrough-working-with-projects-and-solutions-c"></a>İzlenecek Yol: Projelerle ve Çözümlerle Çalışma (C++)
 
 Visual Studio'da nasıl C++ projesi oluşturulduğu, nasıl kod eklendiği ve ardından projenin nasıl oluşturulup çalıştırıldığını burada bulabilirsiniz. Bu adım adım öğreticideki proje, kaç oyuncunun farklı kart oyunları oynadığını izleyen bir programdır.
 
-Visual Studio'da iş, projeler ve çözümler halinde düzenlenmiştir. Bir çözüm birden fazla proje içerebilir; örneğin bir DLL ve bu DLL'ye başvuran yürütülebilir bir dosya. Daha fazla bilgi için [çözümler ve projeler](/visualstudio/ide/solutions-and-projects-in-visual-studio).
+Visual Studio'da iş, projeler ve çözümler halinde düzenlenmiştir. Bir çözüm birden fazla proje olabilir — örneğin, bir DLL ve bu DLL'ye başvuran yürütülebilir bir dosya. Daha fazla bilgi için [çözümler ve projeler](/visualstudio/ide/solutions-and-projects-in-visual-studio).
 
 ## <a name="before-you-start"></a>Başlamadan önce
 
@@ -48,6 +48,9 @@ Proje oluşturmak için önce bir proje türü şablonu seçin. Her proje türü
 
 1. Orta bölmedeki yüklü şablonlar listesinde seçin **Windows konsol uygulaması**.
 
+   > [!NOTE]
+   > Visual Studio'nun önceki sürümleri yüklü şablonun adlı **Win32 konsol uygulaması**.
+
 1. Proje için bir ad girin **adı** kutusu. Bu örnekte, girin *Game*.
 
    Varsayılan konumu kabul edebilir **konumu** açılır listede farklı bir konum girin veya seçin **Gözat** , projeyi kaydetmek istediğiniz dizine gitmek için düğme.
@@ -62,11 +65,11 @@ Proje oluşturmak için önce bir proje türü şablonu seçin. Her proje türü
 
 Kullanabileceğiniz **Çözüm Gezgini** projeleri, dosyaları ve çözümünüzdeki diğer kaynakları düzenlemek ve yönetmek için.
 
-Adım adım öğreticinin bu bölümü projeye nasıl sınıf ekleneceğini göstermektedir. Sınıfı eklediğinizde, Visual Studio karşılık gelen .h ve .cpp dosyaları ekler. Sonuçlarda gördüğünüz **Çözüm Gezgini**.
+Kılavuzun bu bölümü, projeye bir sınıf eklemek gösterilmektedir. Sınıfı eklediğinizde, Visual Studio karşılık gelen .h ve .cpp dosyaları ekler. Sonuçlarda gördüğünüz **Çözüm Gezgini**.
 
 ### <a name="to-add-a-class-to-a-project"></a>Bir projeye sınıf eklemek için
 
-1. Varsa **Çözüm Gezgini** penceresi Visual Studio'da, menü çubuğunda görüntülenmez öğesini **görünümü** > **Çözüm Gezgini**.
+1. Varsa **Çözüm Gezgini** penceresi Visual Studio'da, menü çubuğundaki görüntülenmiyorsa öğesini **görünümü** > **Çözüm Gezgini**.
 
 1. İçinde **Çözüm Gezgini**seçin **Game** proje. Menü çubuğunda, **proje** > **sınıfı Ekle**.
 
@@ -84,11 +87,11 @@ Adım adım öğreticinin bu bölümü projeye nasıl sınıf ekleneceğini gös
       static int totalParticipants;
       ```
 
-   - Visual Studio'nun ürettiği varsayılan oluşturucuyu değiştirin. Sonra `public:` erişim belirticisi, şuna benzeyen satırı bulun:
+   - Visual Studio'nun ürettiği varsayılan oluşturucuyu değiştirin. Sonra `public:` erişim belirticisi, şuna benzer satırı bulun:
 
       `Cardgame();`
 
-      Bu oluşturucu türünden bir parametre değiştirme `int`, adlandırılmış *oyuncuların*.
+      Türünden bir parametre için bir oluşturucuyu değiştirin `int`, adlandırılmış *oyuncuların*.
 
       <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#101](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_2.h)]-->`Cardgame(int players);`
 
@@ -96,7 +99,7 @@ Adım adım öğreticinin bu bölümü projeye nasıl sınıf ekleneceğini gös
 
       <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#102](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_3.h)]-->`static int GetParticipants() { return totalParticipants; }`
 
-   Cardgame.h dosyası, siz değiştirdikten sonra şuna benzemelidir:
+   Cardgame.h dosyası, siz değiştirdikten sonra aşağıdaki kodu benzemelidir:
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#103](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_4.h)]-->
    ```cpp
@@ -112,11 +115,11 @@ Adım adım öğreticinin bu bölümü projeye nasıl sınıf ekleneceğini gös
    };
    ```
 
-   Satır `#pragma once` derleyici üstbilgi dosyası yalnızca bir kez dahil etmesini söyler. Daha fazla bilgi için [sonra](../preprocessor/once.md). Bu üstbilgi dosyasındaki diğer C++ anahtar sözcükleri hakkında daha fazla bilgi için bkz. [sınıfı](../cpp/class-cpp.md), [int](../cpp/fundamental-types-cpp.md), [statik](../cpp/storage-classes-cpp.md), ve [genel](../cpp/public-cpp.md).
+   Satır `#pragma once` derleyici üstbilgi dosyası yalnızca bir kez dahil etmesini söyler. Daha fazla bilgi için [sonra](../preprocessor/once.md). Yukarıdaki üstbilgi dosyasındaki diğer C++ anahtar sözcükleri hakkında daha fazla bilgi için bkz. [sınıfı](../cpp/class-cpp.md), [int](../cpp/fundamental-types-cpp.md), [statik](../cpp/storage-classes-cpp.md), ve [genel](../cpp/public-cpp.md).
 
 1. Seçin **Cardgame.cpp** düzenlemek üzere açmak için düzenleme bölmesinin üst sekmesi.
 
-1. Dosyadaki her şeyi silin ve şu kodla değiştirin:
+1. Dosyadaki her şeyi silin ve kod ile değiştirin:
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#111](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_5.cpp)]-->
    ```cpp
@@ -150,7 +153,7 @@ Yeni işlevleri test uygulamanıza kod ekleyin.
 
 ### <a name="to-add-test-code-to-the-project"></a>Test kodu projeye eklemek için
 
-1. İçinde **Game.cpp** Düzenleyicisi penceresinde, mevcut kodu şununla değiştirin:
+1. İçinde **Game.cpp** Düzenleyicisi penceresinde, varolan kod ile değiştirin:
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#120](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_6.cpp)]-->
    ```cpp
@@ -177,7 +180,7 @@ Yeni işlevleri test uygulamanıza kod ekleyin.
        return 0;
    }
    ```
-Bu kod, bir test işlevi ekler `PlayGames`kaynak kodu ve çağrı içinde `main`.
+Kod bir test işlevi ekler `PlayGames`kaynak kodu ve çağrı içinde `main`.
 
 ## <a name="build-and-run-your-app-project"></a>Derleme ve uygulama projenizi çalıştırma
 
@@ -187,7 +190,7 @@ Ardından, projeyi oluşturun ve uygulamayı çalıştırın.
 
 1. Menü çubuğunda, **derleme** > **Çözümü Derle**.
 
-   Bir derlemenin çıktısı görüntülenir **çıkış** penceresi. Derlemeniz başarılıysa çıktı şuna benzemelidir:
+   Bir derlemenin çıktısı görüntülenir **çıkış** penceresi. Derlemeniz başarılıysa çıktı benzemelidir:
 
    ```Output
    1>------ Build started: Project: Game, Configuration: Debug Win32 ------
@@ -203,7 +206,7 @@ Ardından, projeyi oluşturun ve uygulamayı çalıştırın.
 
    Derlemeniz başarılı olmadıysa, kodunuzu önceki adımlarda gösterilen koda karşılaştırın.
 
-1. Menü çubuğunda projeyi çalıştırmak için seçin **hata ayıklama** > **hata ayıklama olmadan Başlat**. Bir konsol penceresi görünür olmalıdır ve çıktı şuna benzemelidir:
+1. Menü çubuğunda projeyi çalıştırmak için seçin **hata ayıklama** > **hata ayıklama olmadan Başlat**. Bir konsol penceresi görünür olmalıdır ve çıktıya benzemelidir:
 
    ```Output
    4 players have started a new game.  There are now 4 players in total.
