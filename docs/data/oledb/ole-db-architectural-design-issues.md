@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e20fce19824cf093625347bca42f55cbad302b61
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f66ff77ef10f45b19a33a286f63f4bf923f639a2
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040615"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820392"
 ---
 # <a name="ole-db-architectural-design-issues"></a>OLE DB Mimari Tasarım Sorunları
 
@@ -46,7 +46,7 @@ Olası eşleştirme birleşimlerini (örneğin, OLE DB bileşenlerle ADO bileşe
 
 - [Microsoft Yardım ve Destek](https://support.microsoft.com/)
 
-- [Microsoft Data Access teknik makaleler genel bakış](https://msdn.microsoft.com/en-us/library/ms810811.aspx)
+- [Microsoft Data Access teknik makaleler genel bakış](https://msdn.microsoft.com/library/ms810811.aspx)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

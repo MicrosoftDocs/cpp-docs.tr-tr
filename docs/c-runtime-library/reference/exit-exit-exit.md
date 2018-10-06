@@ -40,19 +40,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d26cc39039b95b8c12e429d333918e83628b2619
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: eb5bd1ef619c899a6b0faab33104a579fdb9f1d0
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110610"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821288"
 ---
 # <a name="exit-exit-exit"></a>Çıkış, _Exit, _exit
 
 Çağırma işlemi sonlandırır. **Çıkmak** işlevi, sonra temizleme; sonlandırır **_exit** ve **_Exit** hemen sonlandırın.
 
 > [!NOTE]
-> Bu yöntem, test veya hata ayıklama senaryoları dışında bir evrensel Windows Platformu (UWP) uygulamasını kapatmak için kullanmayın. Bir Store uygulamasını kapatmak için programlama veya UI yollarına göre izin verilmez [Microsoft Store ilkeleri](/legal/windows/agreements/store-policies). Daha fazla bilgi için [UWP uygulaması yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle). Windows 10 uygulamaları hakkında daha fazla bilgi için bkz: [nasıl yapılır kılavuzları için Windows 10 uygulamaları](https://developer.microsoft.com/en-us/windows/apps).
+> Bu yöntem, test veya hata ayıklama senaryoları dışında bir evrensel Windows Platformu (UWP) uygulamasını kapatmak için kullanmayın. Bir Store uygulamasını kapatmak için programlama veya UI yollarına göre izin verilmez [Microsoft Store ilkeleri](/legal/windows/agreements/store-policies). Daha fazla bilgi için [UWP uygulaması yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle). Windows 10 uygulamaları hakkında daha fazla bilgi için bkz: [nasıl yapılır kılavuzları için Windows 10 uygulamaları](https://developer.microsoft.com/windows/apps).
 
 ## <a name="syntax"></a>Sözdizimi
 

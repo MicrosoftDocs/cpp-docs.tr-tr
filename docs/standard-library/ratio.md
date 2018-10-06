@@ -1,5 +1,5 @@
 ---
-title: '&lt;oranı&gt; | Microsoft Docs'
+title: '&lt;Oran&gt; | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -41,16 +41,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a5ffa7666f9b976312bf1c3115d93204bdd8f8a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 53f3e618378abd70506e2fed45767c7c856320b0
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853758"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821157"
 ---
 # <a name="ltratiogt"></a>&lt;Oranı&gt;
 
-Standart üstbilgisini \<oranı > sabitleri ve depolamak ve derleme zamanında rasyonel sayılar işlemek için kullanılan şablonları tanımlamak için.
+Standart üst bilgiyi dahil \<oranı > sabitleri ve depolamak ve derleme zamanında rasyonel sayı işlemek için kullanılan şablonları tanımlamak için.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,7 +62,7 @@ Standart üstbilgisini \<oranı > sabitleri ve depolamak ve derleme zamanında r
 
 ```cpp
 template<std::intmax_t Numerator, std::intmax_t Denominator = 1>
-   struct ratio // holds the ratio of Numerator to Denominator
+struct ratio // holds the ratio of Numerator to Denominator
 {
    static constexpr std::intmax_t num;
    static constexpr std::intmax_t den;
@@ -70,15 +70,15 @@ template<std::intmax_t Numerator, std::intmax_t Denominator = 1>
 }
 ```
 
-Şablon `ratio` statik sabitleri tanımlar `num` ve `den` şekilde `num`  /  `den` pay == / payda ve `num` ve `den` hiçbir ortak faktörde sahip. `num` / `den` Şablon sınıfı tarafından temsil edilen değerdir. Bu nedenle, `type` örneklemesi atar `ratio<num, den>`.
+Şablon `ratio` statik sabitlerini tanımlar `num` ve `den` şekilde `num`  /  `den` pay == / paydası ve `num` ve `den` hiçbir ortak Etkenler vardır. `num` / `den` Şablon sınıfı tarafından temsil edilen değerdir. Bu nedenle, `type` oluşturmada atayan `ratio<num, den>`.
 
 ### <a name="specializations"></a>Uzmanlıklar
 
-\<oranı > Ayrıca, özelleştirmeleri tanımlar `ratio` aşağıdaki biçime sahip.
+\<Oran > da uzmanlıklarını tanımlar `ratio` aşağıdaki biçime sahip.
 
 `template <class R1, class R2> struct ratio_specialization`
 
-Ayrıca, özelleştirmeleri olmalıdır iki şablon parametresi her uzmanlık alır `ratio`. Değeri `type` ilişkili bir mantıksal işlem tarafından belirlenir.
+Her özelleştirme uzmanlıkları da gereken iki şablon parametre almayan `ratio`. Değerini `type` ilişkili bir mantıksal işlemi tarafından belirlenir.
 
 |Ad|`type` Değer|
 |----------|------------------|
@@ -95,7 +95,7 @@ Ayrıca, özelleştirmeleri olmalıdır iki şablon parametresi her uzmanlık al
 
 ### <a name="typedefs"></a>tür tanımları
 
-Kolaylık olması için standart SI önekler oranlarına üstbilgi tanımlar:
+Kolaylık olması için üst bilgi oranları standart sı ön ekleri için tanımlar:
 
 ```cpp
 typedef ratio<1, 1000000000000000000> atto;

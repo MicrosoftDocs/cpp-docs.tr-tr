@@ -14,12 +14,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 043ad3a0767cc6769be1d20fe6e6d31cc5c119fb
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: ed44479f6e6d1569a9b27a059e837cbbb924b803
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42466450"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821445"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: C++ Paket Yöneticisi Windows, Linux ve MacOS
 
@@ -138,7 +138,7 @@ Etkin vcpkg Örneğinizdeki sürümünden farklı bir kitaplık belirli bir sür
 
 ## <a name="target-linux-from-windows-via-wsl"></a>Hedef Linux'taki WSL aracılığıyla Windows
 
-Linux (WSL) için Windows alt sistemi kullanarak bir Windows makineden Linux ikili dosyaları oluşturabilir. Yönergelerini izleyin [Windows 10 WSL ayarlama](https://docs.microsoft.com/en-us/windows/wsl/install-win10)ve onunla yapılandırma [Linux için Visual Studio Uzantısı](https://blogs.msdn.microsoft.com/vcblog/2017/02/08/targeting-windows-subsystem-for-linux-from-visual-studio/). Tüm yerleşik kitaplıkları hem Windows hem de Linux için aynı klasöre yerleştirin ve hem Windows hem de WSL erişin.
+Linux (WSL) için Windows alt sistemi kullanarak bir Windows makineden Linux ikili dosyaları oluşturabilir. Yönergelerini izleyin [Windows 10 WSL ayarlama](/windows/wsl/install-win10)ve onunla yapılandırma [Linux için Visual Studio Uzantısı](https://blogs.msdn.microsoft.com/vcblog/2017/02/08/targeting-windows-subsystem-for-linux-from-visual-studio/). Tüm yerleşik kitaplıkları hem Windows hem de Linux için aynı klasöre yerleştirin ve hem Windows hem de WSL erişin.
 
 
 ## <a name="export_binaries_per_project"></a> Derlenmiş ikili dosyalar ve üst bilgileri verme
@@ -243,4 +243,3 @@ Vcpkg örneği içeriğini şunlardır:
 |---------|---------|
 |**--Üçlü \<t >**|Hedef mimari Üçlü belirtin. (varsayılan: `%VCPKG_DEFAULT_TRIPLET%`, ayrıca bkz: **vcpkg Yardım Üçlü**)|
 |**--vcpkg kök \<yolu >**|Vcpkg kök dizini belirtin (varsayılan: `%VCPKG_ROOT%`)|
-

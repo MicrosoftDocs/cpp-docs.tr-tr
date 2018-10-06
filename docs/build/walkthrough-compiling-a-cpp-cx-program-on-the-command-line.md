@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: derleme C + +/ CX programı komut satırında | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/24/2018
 ms.technology:
 - cpp-tools
 ms.topic: conceptual
@@ -12,25 +12,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fdde74f1612986fab8f88f4659b006bbcfbd3901
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 9d9e6fa7cb30a14a3c5914e1cb80e22db118df9e
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703780"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821211"
 ---
 # <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>İzlenecek Yol: Komut Satırında C++/CX Programı Derleme
 
 Windows çalışma zamanını hedefleyen ve onları komut satırında derleme Visual C++ programlar oluşturabilirsiniz. Visual C++, Visual C++ bileşen uzantıları destekler (C + +/ CX), Windows çalışma zamanı programlama modeli hedeflemek için ek türleri ve işleçler sahip. Kullanabileceğiniz C + +/ CX için evrensel Windows Platformu (UWP), Windows Phone 8.1 ve Windows Masaüstü uygulamaları oluşturmak için. Daha fazla bilgi için [bir tur, c + +/ CX](https://msdn.microsoft.com/magazine/dn166929.aspx) ve [çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md).
 
-Bu kılavuzda, temel C + oluşturmak için bir metin düzenleyicisi kullanın +/ CX programı ve sonra komut satırında derleyin. (Kullanabileceğiniz kendi C + +/ CX programı gösterilen bir yazmak yerine veya kullanabileceğiniz bir C + +/ CX kod örneğini başka bir Yardım makalesi. Bu teknik oluşturmak ve UI öğesi içermeyen içeren küçük modülleri test etmek için kullanışlıdır.)
+Bu kılavuzda, temel C + oluşturmak için bir metin düzenleyicisi kullanın +/ CX programı ve sonra komut satırında derleyin. (Kullanabileceğiniz kendi C + +/ CX programı gösterilen bir yazmak yerine veya kullanabileceğiniz bir C + +/ CX kod örneğini başka bir Yardım makalesi. Bu teknik oluşturmak ve UI öğesi içermeyen olan küçük modülleri test etmek için kullanışlıdır.)
 
 > [!NOTE]
 > C + derlemek için Visual Studio IDE kullanabilirsiniz +/ CX programlar. IDE tasarım, hata ayıklama, öykünme ve dağıtım desteği, komut satırında kullanılamaz içerdiğinden, Evrensel Windows Platformu (UWP) uygulamaları oluşturmak için IDE'yi kullanmanızı öneririz. Daha fazla bilgi için [c++'ta bir UWP uygulaması oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-C++ dilinin temellerini anlamanız gerekir.
+C++ dilinin temellerini anlamanız.
 
 ## <a name="compiling-a-ccx-program"></a>Derleme C + +/ CX programı
 
@@ -44,7 +44,7 @@ Etkinleştirme derleme için C + +/ CX, kullanmalıdır [/ZW](../build/reference
 
 1. Komut isteminde girin **not defteri basiccx.cpp**.
 
-   Seçin **Evet** sorulduğunda bir dosya oluşturmak için.
+   Seçin **Evet** istenirse bir dosya oluşturmak için.
 
 1. Not Defteri'nde şu satırı girin:
 
@@ -55,10 +55,9 @@ Etkinleştirme derleme için C + +/ CX, kullanmalıdır [/ZW](../build/reference
     {
         Platform::Details::Console::WriteLine("This is a C++/CX program.");
     }
-
     ```
 
-1. Menü çubuğunda, **dosya**, **Kaydet**.
+1. Menü çubuğunda, **dosya** > **Kaydet**.
 
    Windows çalışma zamanı kullanan bir Visual C++ kaynak dosyasını, oluşturduğunuz [Platform ad alanı](../cppcx/platform-namespace-c-cx.md) ad alanı.
 

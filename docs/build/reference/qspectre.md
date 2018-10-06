@@ -1,7 +1,7 @@
 ---
 title: / Qspectre | Microsoft Docs
 ms.custom: ''
-ms.date: 1/23/2018
+ms.date: 09/24/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aaf77e1856f535dba81d4b61e2ce19d363f48038
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9ed4b84ab761653dde4da6adcd14ec8e77334688
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386963"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821653"
 ---
 # <a name="qspectre"></a>/ Qspectre
 
@@ -32,11 +32,13 @@ Derleyici belirli Spectre değişkeni 1 güvenlik açıklarını gidermek için 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Qspectre** seçeneği bulunan Visual Studio 2017 sürüm 15.7 ve üzeri. Belirli azaltmak için yönergeler derleyiciye neden [Spectre güvenlik açıklarını](https://spectreattack.com/spectre.pdf). Olarak adlandırılan bu güvenlik açıklarına *kurgusal yürütme yan kanal saldırıları*, çok sayıda işletim sistemleri ve Intel, AMD, işlemcilerini dahil olmak üzere modern işlemciler etkiler ve ARM.
+**/Qspectre** seçeneği, Visual Studio 2017 sürüm 15.5.5 kullanılabilir ve daha sonra ve Visual Studio 2015 güncelleştirme 3'ten [KB 4338871](https://support.microsoft.com/en-us/help/4338871/visual-studio-2015-update-3-spectre-variant-1-toolset-qspectre). Belirli azaltmak için yönergeler derleyiciye neden [Spectre güvenlik açıklarını](https://spectreattack.com/spectre.pdf). Olarak adlandırılan bu güvenlik açıklarına *kurgusal yürütme yan kanal saldırıları*, çok sayıda işletim sistemleri ve Intel, AMD, işlemcilerini dahil olmak üzere modern işlemciler etkiler ve ARM.
 
 **/Qspectre** seçeneği varsayılan olarak kapalıdır.
 
-İlk sürümde, **/qspectre** seçeneği yalnızca en iyi duruma getirilmiş kod üzerinde çalışır. Kodunuzu iyileştirme seçeneklerden herhangi biri ile derlemek emin olmanız gerekir (örneğin, [/O2 veya/O1](o1-o2-minimize-size-maximize-speed.md) ama [/Od](od-disable-debug.md)) azaltma uygulandığından emin olmak için. Benzer şekilde, kullanan herhangi bir kod İnceleme [#pragma en iyi duruma getirme ("stg", kapalı)](../../preprocessor/optimize.md).
+İlk sürümde, **/qspectre** seçeneği yalnızca üzerinde çalıştığınız en iyi duruma getirilmiş kod. Visual Studio 2017 sürüm 15.7 ve üzeri, **/qspectre** seçeneği, tüm iyileştirme düzeylerinde desteklenir. 
+
+Microsoft Visual C++ kitaplıkları da Spectre riskini azaltma sürümlerle kullanılabilir. Visual Studio 2017 için Spectre azaltılabilir kitaplıkları Visual Studio Yükleyicisi'nde indirilebilir. İçinde bulundukları **tek tek bileşenler** sekmesinde altında **derleyiciler, derleme araçları ve çalışma zamanları**, ve "Spectre için kitaplıklar" adı. DLL hem statik çalışma zamanı kitaplıkları ile etkinleştirilen risk azaltma Visual C++ çalışma zamanı bir alt kümesi için kullanılabilir: VC ++ başlatma kodu, vcruntime140 msvcp140 concrt140 ve vcamp140. DLL'leri yalnızca yerel uygulama dağıtımı için desteklenir; Visual C++ 2017 çalışma zamanı kitaplıklarının yeniden dağıtılabilir içeriğini değiştirilmemiş. MFC ve ATL, bulunan için Spectre azaltılabilir kitaplıkları da yükleyebilirsiniz **tek tek bileşenler** sekmesinde altında **SDK'lar, kitaplıklar ve çerçeveler**.
 
 ### <a name="applicability"></a>Uygulanabilirlik
 
@@ -44,9 +46,9 @@ Kodunuzu bir güven sınırı aştığında veri çalışır sonra kullanmanız�
 
 ### <a name="availability"></a>Kullanılabilirlik
 
-**/Qspectre** seçeneği, Visual Studio 2017 sürüm 15.5.5 ve şirket veya 23 Ocak 2018'den sonra yapılan tüm güncelleştirmeler için Microsoft Visual C++ Derleyicileri (MSVC) kullanılabilir. Visual Studio yükleyicisi, derleyici güncelleştirilecek ve tek tek bileşenleri olarak Spectre azaltılabilir kitaplıklarını yüklemek için kullanın. **/Qspectre** seçenek, ayrıca bir düzeltme eki Visual Studio 2015 güncelleştirme 3'te kullanılabilir. Daha fazla bilgi için [KB 4338871](https://support.microsoft.com/help/4338871).
+**/Qspectre** seçenek, Visual Studio 2017 sürüm 15.5.5 ve ya da 23 Ocak 2018'den sonra yapılan tüm güncelleştirmelerin Microsoft Visual C++ Derleyicileri (MSVC) için kullanılabilir. Visual Studio yükleyicisi, derleyici güncelleştirilecek ve tek tek bileşenleri olarak Spectre azaltılabilir kitaplıklarını yüklemek için kullanın. **/Qspectre** seçenek, ayrıca bir düzeltme eki Visual Studio 2015 güncelleştirme 3'te kullanılabilir. Daha fazla bilgi için [KB 4338871](https://support.microsoft.com/help/4338871).
 
-Visual Studio 2017 sürüm 15.5 ve tüm önizlemeleri Visual Studio'nun sürüm 15.6 zaten belgelenmemiş bir seçenek dahil tüm sürümlerini **/d2guardspecload**, yani ilk davranışını eşdeğer   **/qspectre**. Kullanabileceğiniz **/d2guardspecload** derleyicisinin bu sürümü kodunuzda aynı risk azaltma işlemleri uygulamak için. Yapınızı kullanmak için lütfen güncelleştirme **/qspectre** seçeneği; destekleyen kapsayıcılar içinde **/qspectre** seçeneği derleyicinin sonraki sürümlerde yeni risk azaltma işlemleri de destekleyebilir.
+Visual Studio 2017 sürüm 15.5 ve tüm önizlemeleri, Visual Studio 2017 sürüm 15.6 belgelenmemiş bir seçenek dahil tüm sürümlerini **/d2guardspecload**, yani ilk davranışını eşdeğer   **/qspectre**. Kullanabileceğiniz **/d2guardspecload** derleyicisinin bu sürümü kodunuzda aynı risk azaltma işlemleri uygulamak için. Yapınızı kullanmak için lütfen güncelleştirme **/qspectre** seçeneği; destekleyen kapsayıcılar içinde **/qspectre** seçeneği derleyicinin sonraki sürümlerde yeni risk azaltma işlemleri de destekleyebilir.
 
 ### <a name="effect"></a>Efekt
 
@@ -62,9 +64,9 @@ Performans etkisini **/qspectre** birkaç çok büyük kod tabanlarında göz ar
 
 **/Qspectre** derleyici seçeneği Spectre risk azaltma işlemleri sağlamak için oluşturulan çalışma zamanı kitaplıklarının sürümlerini örtük olarak bağlanan kod oluşturur. Bu kitaplıklar, Visual Studio Yükleyicisi'ni kullanarak yüklü olması gereken isteğe bağlı bileşenleri şunlardır:
 
-- VC ++ 2017 sürüm *version_number* (x86 ve x64) Spectre için kitaplıklar
-- Spectre azaltmaları ile Visual C++ ATL (x86/x64)
-- Spectre azaltmaları ile x86/x64 için Visual C++ MFC
+- VC ++ 2017 sürüm *version_numbers* Spectre için kitaplıklar \[(x86 ve x64) | (ARM) | (ARM64)]
+- İçin Visual C++ ATL \[(x86/x64) | ARM | ARM64] Spectre azaltmaları ile
+- İçin Visual C++ MFC \[x86/x64 | ARM | ARM64] Spectre azaltmaları ile
 
 Kullanarak, kodunuzu derlemek, **/qspectre** ve bu kitaplıklar değildir yüklü, yapı sistemi raporları **uyarı MSB8038: Spectre riskini azaltma etkinleştirildi, ancak Spectre azaltılabilir kitaplıklar bulunamadı**. MFC veya ATL kodunuzu derlemek başarısız olur ve bağlayıcı gibi bir hata bildiriyor **LNK1104 önemli hatası: 'oldnames.lib' dosyası açılamıyor**, bu eksik kitaplıklar neden olabilir.
 

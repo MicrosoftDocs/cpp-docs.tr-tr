@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 600b72f4f01504a6e0ad81760d532bd3ac27b968
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 608b4560f11e35d9aefb2c848a27c99c8dc6f4ec
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039666"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821354"
 ---
 # <a name="function-overloading"></a>İşlev Aşırı Yüklemesi
 

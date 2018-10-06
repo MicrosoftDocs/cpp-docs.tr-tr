@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b401ba3755113a71dd401efa8da1fe46adfe6a45
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e71d801f2abaaf83ae1064551b40a5a5a6ba8964
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46108683"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820613"
 ---
 # <a name="compiler-error-c2280"></a>Derleyici Hatası C2280
 

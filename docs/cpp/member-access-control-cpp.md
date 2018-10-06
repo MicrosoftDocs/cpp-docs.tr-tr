@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 32a58d35a78fce6a0a6bb499df1363a80200de5a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dced1bd7db0f3eec9d9d070deb8cf990496116ae
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017566"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821666"
 ---
 # <a name="member-access-control-c"></a>Üye Erişim Denetimi (C++)
 
@@ -47,7 +47,7 @@ protected:      // Declare protected function for derived classes only.
 
 Varsayılan erişim **özel** bir sınıftaki ve **genel** yapı veya birleşim. Erişim tanımlayıcıları sınıfında olabilir herhangi sayıda herhangi bir sırada kullanılır. Sınıf türü nesneleri için depolama alanı ayırma uygulamaya bağlıdır, ancak üyelere, erişim belirticileri arasında sırayla daha yüksek bellek adresleri atanması garantidir.
 
-### <a name="member-access-control"></a>Üye Erişim Denetimi
+## <a name="member-access-control"></a>Üye Erişim Denetimi
 
 |Erişim türü|Açıklama|
 |--------------------|-------------|

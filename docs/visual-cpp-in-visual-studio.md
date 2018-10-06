@@ -14,19 +14,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e8082b734f0ccc2943d8ba9f23b19f152ce42a6
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: ae68abc0768c0a06526af6439a8a881684ecdb15
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234946"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821302"
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual Studio'da Visual C++
 
 > [!NOTE]  
 > Bu Geliştirici belgeleri, Visual Studio 2015 ve Visual Studio 2017 için geçerlidir. 
 
-> Bir program çalıştırabilmek için Visual C++ yeniden dağıtılabilir paketi arıyorsanız, Git [Microsoft Download Center](http://www.microsoft.com/en-us/download/) girin **Visual C++** arama kutusuna.  
+> Bir program çalıştırabilmek için Visual C++ yeniden dağıtılabilir paketi arıyorsanız, Git [Microsoft Download Center](http://www.microsoft.com/download/) girin **Visual C++** arama kutusuna.  
   
 
 Microsoft Visual Visual C++ ya da MSVC, genellikle kısalttık C++, C++, C ve derleme dili geliştirme araçları ve kitaplıkları kullanılabilir adıdır, Windows üzerinde Visual Studio'nun bir parçası olarak. Bu araçlar ve kitaplıklar, Evrensel Windows Platformu (UWP) uygulamaları, yerel Windows Masaüstü ve sunucu uygulamaları, platformlar arası kitaplıklar ve Windows, Linux, Android ve iOS, hem de yönetilen uygulamaları ve .NET kullanma kitaplıkları çalışan uygulamalar oluşturmanızı sağlar Çerçeve. Her şeyi basit bir konsol uygulamalardan en karmaşık ve karmaşık uygulamalar Windows Masaüstü için cihaz sürücüleri ve platformlar arası oyunlar mobil cihazları ve işletim sistemi bileşenleri için en küçük IOT cihazlarından yazmak için Visual C++ kullanabilirsiniz çok sunuculu yüksek performanslı Azure bulutta bilgi işlem.

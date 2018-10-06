@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Oluşturup kendi dinamik bağlantı kitaplığı (C++) | Microsoft Docs'
 ms.custom: conceptual
-ms.date: 11/04/2016
+ms.date: 09/24/2018
 ms.technology:
 - cpp-tools
 ms.topic: conceptual
@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5175d89925ddc09fdcd552aa57d2967071e750f7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9806a17bfb603ff54609f2d509c50d0a5d91e15d
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376973"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821263"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>İzlenecek yol: Oluşturup kendi dinamik bağlantı kitaplığı (C++)
 
@@ -40,7 +40,7 @@ Bu izlenecek yol bu görevleri kapsar:
 
 Gibi statik olarak bağlı bir kitaplığı, bir DLL _aktarır_ değişkenler, İşlevler ve kaynak adı ve uygulamanız tarafından _aktarır_ bu adları bu değişkenler, İşlevler ve kaynakları kullanın. Statik olarak bağlı bir kitaplığı, Windows uygulamanızı Imports dışarı aktarmaları DLL'de yükleme zamanında ya da bunları bağlantı zamanında bağlanmak yerine çalışma zamanında bağlanır. Windows, bu bağlantılar kurmak için standart C++ derleme modelinin bir parçası olmayan ek bilgi gerektirir. Visual C++ derleyicisi, bu ek bilgi sağlamak için C++ bazı Microsoft'a özel uzantıları uygular. Biz kullandıkça Biz bu uzantıları açıklar.
 
-Bu kılavuz iki Visual Studio çözümü oluşturur. bir DDL oluşturur ve bir istemci uygulaması oluşturur. Platform çağırma ve kuralları bağlama eşleştiği sürece diğer diller kullanılarak oluşturulan uygulamalardan çağrılabilen bir DLL C çağırma kuralı kullanır. İstemci uygulama kullandığı _örtük bağlama_, burada Windows uygulama DLL yükleme zamanında bağlar. Bu, DLL tarafından sağlanan işlevleri gibi statik olarak bağlı bir kitaplıkta işlevlerini uygulama sağlar.
+Bu kılavuz iki Visual Studio çözümü oluşturur. bir DDL oluşturur ve bir istemci uygulaması oluşturur. Platform çağırma ve kuralları bağlama eşleştiği sürece diğer diller kullanılarak oluşturulan uygulamalardan çağrılabilen bir DLL C çağırma kuralı kullanır. İstemci uygulama kullandığı _örtük bağlama_, burada Windows uygulama DLL yükleme zamanında bağlar. Bu bağlama, DLL tarafından sağlanan işlevleri gibi statik olarak bağlı bir kitaplıkta işlevlerini uygulamanın sağlar.
 
 Bu izlenecek yol, bazı yaygın durumlar ele alınmamıştır. Bu, diğer programlama dilleri tarafından C++ DLL'leri kullanımını göstermez. Bu, yalnızca kaynak DLL oluşturma göstermez. Ayrıca, çalışma zamanında yerine yükleme zamanı dll yüklenecek açık bağlama kullanımını da göstermez. Visual C++ tüm bunları yapmak için kullanabileceğiniz içiniz rahat olsun. DLL'ler hakkında daha fazla bilgi için bağlantılar için bkz: [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md). Örtük bağlama ve açık bağlama hakkında daha fazla bilgi için bkz. [belirleme hangi bağlama yöntemini kullanacağınızı](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use). C dili bağlantı kurallarının kullanan programlama ile kullanmak için C++ DLL'leri oluşturma hakkında daha fazla bilgi için bkz: [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](../build/exporting-cpp-functions-for-use-in-c-language-executables.md). .NET dilleri ile kullanılmak üzere DLL'leri oluşturma hakkında daha fazla bilgi için bkz: [Visual Basic uygulamalarından DLL işlevleri çağırma](../build/calling-dll-functions-from-visual-basic-applications.md).
 
@@ -64,9 +64,9 @@ Görevlerin bu kümesindeki DLL dosyanız için bir proje oluşturun, kod ekleyi
 
 ### <a name="to-create-a-dll-project-in-visual-studio-2017-version-153-or-later"></a>Bir DLL proje Visual Studio 2017 sürüm 15.3 veya üzeri oluşturmak için
 
-1. Menü çubuğunda, **dosya**, **yeni**, **proje** açmak için **yeni proje** iletişim kutusu.
+1. Menü çubuğunda, **dosya** > **yeni** > **proje** açmak için **yeni proje** iletişim kutusu.
 
-1. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü** ve **Visual C++** gerekli ve ardından **Windows Masaüstü**. Orta bölmede seçin **Windows Masaüstü Sihirbazı'nı**. Girin `MathLibrary` içinde **adı** kutusunu proje için bir ad belirtin.
+1. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü** ve **Visual C++** gerekirse ve ardından **Windows Masaüstü** . Orta bölmede seçin **Windows Masaüstü Sihirbazı'nı**. Girin `MathLibrary` içinde **adı** kutusunu proje için bir ad belirtin.
 
    ![MathLibrary projesini adlandırın](media/mathlibrary-new-project-name-153.png "MathLibrary projesini adlandırın")
 
@@ -83,9 +83,9 @@ Görevlerin bu kümesindeki DLL dosyanız için bir proje oluşturun, kod ekleyi
 >
 >1. İçinde **Çözüm Gezgini**, zaten değilse seçildiğinden **MathLibrary** altındaki proje **çözüm 'MathLibrary'**.
 >
->1. Menü çubuğunda, **proje**, **özellikleri**.
+>1. Menü çubuğunda, **proje** > **özellikleri**.
 >
->1. Sol bölmesinde **özellik sayfaları** iletişim kutusunda **önişlemci** altında **yapılandırma özellikleri**, **C/C++**. İçeriğini denetlemek **önişlemci tanımları** özelliği.<br/><br/>![Önişlemci tanımları özelliğini denetleyin](media/mathlibrary-153bug-preprocessor-definitions-check.png "önişlemci tanımları özelliğini denetleyin")<br/><br/>Görürseniz **MATHLIBRARY&#95;dışarı AKTARMALARI** içinde **önişlemci tanımları** listesinde, daha sonra herhangi bir ayarı değiştirmek gerekmez. Görürseniz **MathLibrary&#95;dışarı AKTARMALARI** bunun yerine, aşağıdaki adımları uygulamaya sonra devam edin.
+>1. Sol bölmesinde **özellik sayfaları** iletişim kutusunda **önişlemci** altında **yapılandırma özellikleri** > **C/C++**. İçeriğini denetlemek **önişlemci tanımları** özelliği.<br/><br/>![Önişlemci tanımları özelliğini denetleyin](media/mathlibrary-153bug-preprocessor-definitions-check.png "önişlemci tanımları özelliğini denetleyin")<br/><br/>Görürseniz **MATHLIBRARY&#95;dışarı AKTARMALARI** içinde **önişlemci tanımları** listesinde, daha sonra herhangi bir ayarı değiştirmek gerekmez. Görürseniz **MathLibrary&#95;dışarı AKTARMALARI** bunun yerine, aşağıdaki adımları uygulamaya sonra devam edin.
 >
 >1. Üst kısmındaki **özellik sayfaları** iletişim kutusunda değişiklik **yapılandırma** açılan **yapılandırmalarında**.
 >
@@ -97,9 +97,9 @@ Görevlerin bu kümesindeki DLL dosyanız için bir proje oluşturun, kod ekleyi
 
 ### <a name="to-create-a-dll-project-in-older-versions-of-visual-studio"></a>Visual Studio'nun eski sürümlerini bir DLL projesi oluşturma
 
-1. Menü çubuğunda, **dosya**, **yeni**, **proje**.
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-1. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü**, **şablonları**seçip **Visual C++** ve ardından Merkezi bölmesinde **Win32 konsol uygulaması**. Girin `MathLibrary` içinde **adı** düzenleme kutusuna proje için bir ad belirtmek için.
+1. Sol bölmesinde **yeni proje** iletişim kutusunda **yüklü** > **şablonları**seçip **Visual C++**, ve Orta bölmede, ardından **Win32 konsol uygulaması**. Girin `MathLibrary` içinde **adı** düzenleme kutusuna proje için bir ad belirtmek için.
 
    ![MathLibrary projesini adlandırın](media/mathlibrary-project-name.png "MathLibrary projesini adlandırın")
 
@@ -121,7 +121,7 @@ Sağdaki şimdi bu DLL çok fazla yapmaz. DLL işlevleri bildirmek için bir üs
 
 ### <a name="to-add-a-header-file-to-the-dll"></a>DLL için bir üstbilgi dosyasını eklemek için
 
-1. Menü çubuğunda, işlevleriniz için bir üstbilgi dosyası oluşturmak için seçin **proje**, **Yeni Öğe Ekle**.
+1. Menü çubuğunda, işlevleriniz için bir üstbilgi dosyası oluşturmak için seçin **proje** > **Yeni Öğe Ekle**.
 
 1. İçinde **Yeni Öğe Ekle** iletişim kutusunda, sol bölmede, select **Visual C++**. Orta bölmede seçin **üst bilgi dosyası (.h)**. Belirtin `MathLibrary.h` olarak üst bilgi dosyasının adı.
 
@@ -241,7 +241,7 @@ Zaman **MATHLIBRARY&#95;dışarı AKTARMALARI** makrosu tanımlanan **MATHLIBRAR
    }
    ```
 
-Her şeyin kadar çalıştığını doğrulamak için dinamik bağlantı kitaplığını derleyin. Derlemek için seçin **derleme**, **Çözümü Derle** menü çubuğundaki. Çıktı aşağıdakine benzer görünmelidir:
+Her şeyin kadar çalıştığını doğrulamak için dinamik bağlantı kitaplığını derleyin. Derlemek için seçin **derleme** > **Çözümü Derle** menü çubuğundaki. Çıktı aşağıdakine benzer görünmelidir:
 
 ```Output
 1>------ Build started: Project: MathLibrary, Configuration: Debug Win32 ------
@@ -259,15 +259,15 @@ Tebrikler, Visual C++ kullanarak bir DLL'nin oluşturdunuz! Ardından, DLL taraf
 
 ## <a name="create-a-client-app-that-uses-the-dll"></a>DLL kullanan bir istemci uygulaması oluşturma
 
-DLL oluştururken nasıl DLL'niz kullanılabileceğini hakkında düşünmeniz gerekir. Bir DLL tarafından dışarı aktarılan işlevleri çağıran kodu derlemek için istemci kaynak kodunda bildirimleri eklenmesi gerekir. DLL işlevleri çağrıları olduğunda çözülmüş, bağlantı zamanında bağlayıcı olmalıdır bir *kitaplığına*, gerçek kod yerine işlevlerin bulunacağı hakkında bilgi için Windows içeren kitaplık dosyası özel bir tür. Ve DLL çalışma zamanında, işletim sistemi bulabilirsiniz bir konumda bir istemci için kullanılabilir olmalıdır.
+DLL oluştururken nasıl DLL'niz kullanılabileceğini hakkında düşünmeniz gerekir. Bir DLL tarafından dışarı aktarılan işlevleri çağıran kodu derlemek için istemci kaynak kodunda bildirimleri eklenmesi gerekir. DLL işlevleri çağrıları olduğunda çözülmüş, bağlantı zamanında bağlayıcı olmalıdır bir *kitaplığına*, gerçek kod yerine işlevlerin bulunacağı hakkında bilgi için Windows içeren özel bir kitaplık dosyası. Ve DLL çalışma zamanında, işletim sistemi bulabilirsiniz bir konumda bir istemci için kullanılabilir olmalıdır.
 
-Bir DLL kullanmak için olup olmadığını, sahibi veya bir üçüncü taraf DLL istemci uygulaması projenize DLL bildirmek üstbilgileri dışarı aktarır, bağlayıcı ve DLL için içeri aktarma kitaplıkları bulamadı olmalıdır. Bunu yapmanın bir yolu, tüm bu dosyalar istemci projenize kopyalayın sağlamaktır. İstemci geliştirme olmakla birlikte değişme olasılığı olan üçüncü parti DLL'ler için en iyi yolu bunları kullanmak için bu olabilir. Ancak, bir DLL de oluştururken yinelemesinden kaçınmak daha iyi olacaktır. Geliştirilme aşamasındadır DLL dosyalarının bir kopyasını yaparsanız, yanlışlıkla bir kopya, ancak diğer üstbilgi dosyasında değiştirmek, eski bir kitaplık kullanabilir veya. Bu sorunu önlemek için DLL projesinden DLL üstbilgi dosyalarını eklemek, istemci projenizdeki yoluna ayarlamanızı öneririz. Ayrıca, DLL projesinden DLL içeri aktarma kitaplıkları dahil etmek için istemci projenizdeki kitaplık yolunu ayarlayın. Ve son olarak, DLL projesinden derlenmiş DLL, yapı çıktı dizinine kopyalayın. Bu, istemci uygulamanızı oluşturduğunuz aynı DLL kod kullanmasını sağlar.
+Bir DLL kullanmak için olup olmadığını, sahip olduğunuz veya bir üçüncü taraf DLL istemci uygulaması projenize DLL bildirmek üstbilgileri dışarı aktarır, bağlayıcı ve DLL için içeri aktarma kitaplıkları bulmanız gerekir. Bir yolu, tüm bu dosyalar istemci projenize kopyalayın oluşturmaktır. İstemci geliştirme olmakla birlikte değişme olasılığı olan üçüncü parti DLL'ler için bu yöntemi kullanabilmesi için en iyi yolu olabilir. Ancak, bir DLL de oluştururken yinelemesinden kaçınmak daha iyi olacaktır. Geliştirilme aşamasındadır DLL dosyalarının bir kopyasını yaparsanız, yanlışlıkla bir üstbilgi dosyasında bir kopya, ancak diğer değiştirme, güncel olmayan bir kitaplık kullanabilir veya. Bu sorunu önlemek için DLL projesinden DLL üstbilgi dosyalarını eklemek, istemci projenizdeki yoluna ayarlamanızı öneririz. Ayrıca, DLL projesinden DLL içeri aktarma kitaplıkları dahil etmek için istemci projenizdeki kitaplık yolunu ayarlayın. Ve son olarak, DLL projesinden derlenmiş DLL, yapı çıktı dizinine kopyalayın. Bu adım, yapı aynı DLL kodu kullanmak için istemci uygulamanızı sağlar.
 
 ### <a name="to-create-a-client-app-in-visual-studio-2017-version-153-or-later"></a>Bir istemci uygulaması Visual Studio 2017 sürüm 15.3 veya üzeri oluşturmak için
 
-1. Yeni oluşturduğunuz, menü çubuğunda, DLL kullanan C++ uygulaması oluşturmak için Seç **dosya**, **yeni**, **proje**.
+1. Menü çubuğunda, oluşturduğunuz DLL'yi kullanan C++ uygulaması oluşturmak için Seç **dosya** > **yeni** > **proje**.
 
-1. Sol bölmesinde **yeni proje** iletişim kutusunda **Windows Masaüstü** altında **yüklü**, **Visual C++**. Orta bölmede seçin **Windows Masaüstü Sihirbazı'nı**. Proje için adı belirtin `MathClient`, **adı** düzenleme kutusu.
+1. Sol bölmesinde **yeni proje** iletişim kutusunda **Windows Masaüstü** altında **yüklü** > **Visual C++**. Orta bölmede seçin **Windows Masaüstü Sihirbazı'nı**. Proje için adı belirtin `MathClient`, **adı** düzenleme kutusu.
 
    ![İstemci projesini adlandırın](media/mathclient-new-project-name-153.png "istemci projesini adlandırın")
 
@@ -275,29 +275,29 @@ Bir DLL kullanmak için olup olmadığını, sahibi veya bir üçüncü taraf DL
 
 ### <a name="to-create-a-client-app-in-older-versions-of-visual-studio-2017"></a>Visual Studio 2017'in eski sürümlerinde bir istemci uygulaması oluşturmak için
 
-1. Yeni oluşturduğunuz, menü çubuğunda, DLL kullanan C++ uygulaması oluşturmak için Seç **dosya**, **yeni**, **proje**.
+1. Menü çubuğunda, oluşturduğunuz DLL'yi kullanan C++ uygulaması oluşturmak için Seç **dosya** > **yeni** > **proje**.
 
-1. Sol bölmesinde **yeni proje** iletişim kutusunda **Win32** altında **yüklü**, **şablonları**, **VisualC++**. Orta bölmede seçin **Win32 konsol uygulaması**. Proje için adı belirtin `MathClient`, **adı** düzenleme kutusu.
+1. Sol bölmesinde **yeni proje** iletişim kutusunda **Win32** altında **yüklü** > **şablonları**  >  **Visual C++**. Orta bölmede seçin **Win32 konsol uygulaması**. Proje için adı belirtin `MathClient`, **adı** düzenleme kutusu.
 
    ![İstemci projesini adlandırın](media/mathclient-project-name.png "istemci projesini adlandırın")
 
 1. Seçin **Tamam** kapatmak için düğme **yeni proje** iletişim ve başlangıç **Win32 Uygulama Sihirbazı**. Üzerinde **genel bakış** sayfasının **Win32 Uygulama Sihirbazı** iletişim kutusunda **sonraki** düğmesi.
 
-1. Üzerinde **uygulama ayarları** sayfasındaki **uygulama türü**seçin **konsol uygulaması** henüz seçili değilse.
+1. Üzerinde **uygulama ayarları** sayfasındaki **uygulama türü**seçin **konsol uygulaması** zaten seçili değilse.
 
 1. Seçin **son** projeyi oluşturmak için.
 
 Sihirbaz sona erdiğinde, sizin için en az bir konsol uygulama projesi oluşturulur. Ana kaynak dosyasının adı daha önce girdiğiniz bir proje adı ile aynıdır. Bu örnekte, adlı **MathClient.cpp**. Oluşturabilirsiniz, ancak henüz DLL'niz kullanmaz.
 
-Ardından, kaynak kodunuzu MathLibrary işlevleri çağırmak için projenizi MathLibrary.h dosyası içermelidir. Bu başlık dosyasının istemci uygulaması projenize kopyalamasını ardından Proje var olan bir öğe eklemek. Bu, üçüncü taraf kitaplıklar için iyi bir seçim olabilir. DLL dosyanız için istemcinizi aynı anda kod ile çalışıyorsanız, ancak, bir üstbilgi dosyasında diğer yansıtılmaz değişikliklere neden olabilir. Bu sorunu önlemek için değiştirebileceğiniz **ek içerik dizinleri** özgün üstbilgisi yolu eklemek için projenizdeki yolu.
+Ardından, kaynak kodunuzu MathLibrary işlevleri çağırmak için projenizi MathLibrary.h dosyası içermelidir. Bu başlık dosyasının istemci uygulaması projenize kopyalamasını ardından Proje var olan bir öğe eklemek. Bu yöntem, üçüncü taraf kitaplıklar için iyi bir seçim olabilir. Kod, DLL için aynı anda istemci çalışıyorsanız, ancak, bir üst bilgi dosyası, diğer gösterilmeyen değişikliklere neden olabilir. Bu sorunu önlemek için değiştirebileceğiniz **ek içerik dizinleri** özgün üstbilgisi yolu eklemek için projenizdeki yolu.
 
 ### <a name="to-add-the-dll-header-to-your-include-path"></a>DLL üstbilgiye eklenecek, yolunu Ekle
 
 1. Açık **özellik sayfaları** iletişim kutusu için **MathClient** proje.
 
-1. İçinde **yapılandırma** açılan kutusunda **yapılandırmalarında** henüz seçili değilse.
+1. İçinde **yapılandırma** açılan kutusunda **yapılandırmalarında** zaten seçili değilse.
 
-1. Sol bölmede seçin **genel** altında **yapılandırma özellikleri**, **C/C++**.
+1. Sol bölmede seçin **genel** altında **yapılandırma özellikleri** > **C/C++**.
 
 1. Özellik bölmesinde aşağı açılır denetimin yanındaki seçin **ek içerik dizinleri** düzenleme kutusuna ve ardından **Düzenle**.
 
@@ -317,7 +317,7 @@ Artık içerebilir **MathLibrary.h** dosya ve istemci uygulamanızda bildirir i�
 
 ```cpp
 // MathClient.cpp : Client app for MathLibrary DLL.
-#include "stdafx.h"
+#include "pch.h"
 #include <iostream>
 #include "MathLibrary.h"
 
@@ -337,15 +337,15 @@ int main()
 }
 ```
 
-Bu kodu derlenmiş ancak henüz uygulama oluşturmak için gerekli içeri aktarma kitaplığı bağlayıcı bulamadığından, bağlı değil. Bağlayıcı başarıyla bağlamak için MathLibrary.lib dosyayı bulmak kurabilmesi gerekir. Ayarlayarak yapı MathLibrary.lib dosya eklemelisiniz **ek bağımlılıklar** özelliği. Bir kez daha, kitaplık dosyasını istemci uygulaması projenize kopyalamasını, ancak Kitaplığı hem istemci uygulaması geliştirme altında ise, bir kopya diğer yansıtılmaz değişikliklere neden olabilir. Bu sorunu önlemek için değiştirebileceğiniz **ek kitaplık dizinleri** bağlantı oluşturduğunuzda, özgün kitaplık yolu eklemek için projenizdeki yolu.
+Bu kodu derlenmiş ancak henüz uygulama oluşturmak için gerekli içeri aktarma kitaplığı bağlayıcı bulamadığından, bağlı değil. Bağlayıcı başarıyla bağlamak için MathLibrary.lib dosyasını bulmanız gerekir. Ayarlayarak MathLibrary.lib dosyanın yapı ekleme **ek bağımlılıklar** özelliği. Bir kez daha, kitaplık dosyasını istemci uygulaması projenize kopyalamasını, ancak Kitaplığı hem istemci uygulaması geliştirme altında ise, bir kopya diğer gösterilmeyen değişikliklere neden olabilir. Bu sorunu önlemek için değiştirebileceğiniz **ek kitaplık dizinleri** bağlantı oluşturduğunuzda, özgün kitaplık yolu eklemek için projenizdeki yolu.
 
 ### <a name="to-add-the-dll-import-library-to-your-project"></a>DLL içeri aktarma kitaplığını projenize eklemek için
 
 1. Açık **özellik sayfaları** iletişim kutusu için **MathClient** proje.
 
-1. İçinde **yapılandırma** açılan kutusunda **yapılandırmalarında** henüz seçili değilse.
+1. İçinde **yapılandırma** açılan kutusunda **yapılandırmalarında** zaten seçili değilse.
 
-1. Sol bölmede seçin **giriş** altında **yapılandırma özellikleri**, **bağlayıcı**. Özellik bölmesinde aşağı açılır denetimin yanındaki seçin **ek bağımlılıklar** düzenleme kutusuna ve ardından **Düzenle**.
+1. Sol bölmede seçin **giriş** altında **yapılandırma özellikleri** > **bağlayıcı**. Özellik bölmesinde aşağı açılır denetimin yanındaki seçin **ek bağımlılıklar** düzenleme kutusuna ve ardından **Düzenle**.
 
    ![Ek Bağımlılıklar özelliğini Düzenle](media/mathclient-additional-dependencies-property.png "ek bağımlılıklar özelliğini Düzenle")
 
@@ -355,7 +355,7 @@ Bu kodu derlenmiş ancak henüz uygulama oluşturmak için gerekli içeri aktarm
 
 1. Seçin **Tamam** dönmek için **özellik sayfaları** iletişim kutusu.
 
-1. Sol bölmede seçin **genel** altında **yapılandırma özellikleri**, **bağlayıcı**. Özellik bölmesinde aşağı açılır denetimin yanındaki seçin **ek kitaplık dizinleri** düzenleme kutusuna ve ardından **Düzenle**.
+1. Sol bölmede seçin **genel** altında **yapılandırma özellikleri** > **bağlayıcı**. Özellik bölmesinde aşağı açılır denetimin yanındaki seçin **ek kitaplık dizinleri** düzenleme kutusuna ve ardından **Düzenle**.
 
    ![Ek Kitaplık dizinleri özelliğini Düzenle](media/mathclient-additional-library-directories-property.png "ek kitaplık dizinleri özelliğini Düzenle")
 
@@ -367,15 +367,15 @@ Bu kodu derlenmiş ancak henüz uygulama oluşturmak için gerekli içeri aktarm
 
 1. Kitaplık dosyasına yolu girdikten sonra **ek kitaplık dizinleri** iletişim kutusunda **Tamam** dönmek için düğme **özellik sayfaları** iletişim kutusu.
 
-İstemci uygulamanızı, artık derlemek ve başarılı bir şekilde bağlamak, ancak yine de çalışması için gereken her şey yok. İşletim sistemi, uygulama yüklendiğinde MathLibrary DLL için arar. DLL belirli sistem dizinleri, ortam yolu veya yerel uygulama dizini bulunamıyor, yükleme başarısız olur. Bu sorunu önlemek için bir DLL oluşturma işleminin bir parçası, istemci yürütülebilir dosyayı içeren dizine kopyalamak için yoludur. DLL kopyalamak için ekleyebileceğiniz bir **derleme sonrası olay** projeniz için bir komut eklemek için DLL, derleme çıktı dizinine kopyalar. Burada belirtilen komut yalnızca eksik olan veya değişti ve yapılandırmanızı doğru hata ayıklama veya perakende konumlarını ve kopyalamak için makroları kullanır DLL kopyalar.
+İstemci uygulamanızı, artık derlemek ve başarılı bir şekilde bağlamak, ancak bu yine de çalıştırmak için ihtiyaç duyduğu her şeyi gerekli değildir. İşletim sistemi, uygulama yüklendiğinde MathLibrary DLL için arar. DLL belirli sistem dizinleri, ortam yolu veya yerel uygulama dizini bulunamıyor, yükleme başarısız olur. Bu sorunu önlemek için bir DLL oluşturma işleminin bir parçası, istemci yürütülebilir dosyayı içeren dizine kopyalamak için yoludur. DLL kopyalamak için ekleyebileceğiniz bir **derleme sonrası olay** projeniz için bir komut eklemek için DLL, derleme çıktı dizinine kopyalar. Burada belirtilen komut yalnızca eksik olan veya değişti ve yapılandırmanızı doğru hata ayıklama veya perakende konumlarını ve kopyalamak için makroları kullanır DLL kopyalar.
 
 ### <a name="to-copy-the-dll-in-a-post-build-event"></a>Oluşturma sonrası olayında DLL kopyalamak için
 
 1. Açık **özellik sayfaları** iletişim kutusu için **MathClient** zaten açık değilse proje.
 
-1. Yapılandırma açılan kutusunda **yapılandırmalarında** henüz seçili değilse.
+1. Yapılandırma açılan kutusunda **yapılandırmalarında** zaten seçili değilse.
 
-1. Sol bölmede seçin **derleme sonrası olay** altında **yapılandırma özellikleri**, **Build Events**.
+1. Sol bölmede seçin **derleme sonrası olay** altında **yapılandırma özellikleri** > **Build Events**.
 
 1. Özellik bölmesinde, bir düzenleme denetimini seçin **komut satırı** alan ve ardından şu komutu girin:
 
@@ -385,11 +385,11 @@ Bu kodu derlenmiş ancak henüz uygulama oluşturmak için gerekli içeri aktarm
 
 1. Seçin **Tamam** proje özelliklerine yaptığınız değişiklikleri kaydetmek için düğme.
 
-İstemci uygulamanızı derlemek ve çalıştırmak için ihtiyaç duyduğu her şeyi sunuyor. Seçerek uygulama derleme **derleme**, **Çözümü Derle** menü çubuğundaki. **Çıkış** Visual Studio'daki aşağıdakine benzer içermelidir:
+İstemci uygulamanızı derlemek ve çalıştırmak için ihtiyaç duyduğu her şeyi sunuyor. Seçerek uygulama derleme **derleme** > **Çözümü Derle** menü çubuğundaki. **Çıkış** Visual Studio'daki aşağıdakine benzer olmalıdır:
 
 ```Output
 1>------ Build started: Project: MathClient, Configuration: Debug Win32 ------
-1>stdafx.cpp
+1>pch.cpp
 1>MathClient.cpp
 1>MathClient.vcxproj -> C:\Users\username\Source\Repos\MathClient\Debug\MathClient.exe
 1>MathClient.vcxproj -> C:\Users\username\Source\Repos\MathClient\Debug\MathClient.pdb (Partial PDB)
@@ -397,7 +397,7 @@ Bu kodu derlenmiş ancak henüz uygulama oluşturmak için gerekli içeri aktarm
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-Tebrikler, İşlevler DLL'nizi çağıran bir uygulama oluşturdunuz. Şimdi ne işe yaradığını görmek için uygulamanızı çalıştırın. Menü çubuğunda, **hata ayıklama**, **hata ayıklama olmadan Başlat**. Visual Studio çalıştırılacak programı için bir komut penceresi açılır. Çıktının son bölümü şöyle görünmelidir:
+Tebrikler, İşlevler DLL'nizi çağıran bir uygulama oluşturdunuz. Şimdi ne işe yaradığını görmek için uygulamanızı çalıştırın. Menü çubuğunda, **hata ayıklama** > **hata ayıklama olmadan Başlat**. Visual Studio çalıştırılacak programı için bir komut penceresi açılır. Son kısmını çıktı gibi görünmelidir:
 
 ![İstemci uygulama, hata ayıklama olmadan Başlat](media/mathclient-run-without-debugging.png "istemci uygulama, hata ayıklama olmadan Başlat")
 

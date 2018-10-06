@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 705f4f0d41b98c46e2cd61962d84fe8412b9e296
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: aa5cf1be80b22d3577347dbf7de9ee262125aa86
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414062"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821367"
 ---
 # <a name="message-map-macros-mfc"></a>İleti Eşleme Makroları (MFC)
 
@@ -81,7 +81,6 @@ ms.locfileid: "46414062"
 |[ON_CONTROL_RANGE](#on_control_range)|Hangi işlev bildirimleri denetim makro için ikinci ve üçüncü parametre olarak belirtilen bir aralıktan işleyecek gösterir. İlk parametre BN_CLICKED gibi bir denetim bildirimi iletisidir.|
 
 İleti eşlemeleri, ileti eşleme bildirim ve düzenleme makroları ve ileti eşleme makroları hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](../../mfc/reference/message-maps-mfc.md) ve [ileti işleme ve eşleme konuları](../../mfc/message-handling-and-mapping.md). İleti eşleme aralıkları hakkında daha fazla bilgi için bkz. [ileti eşleme aralıkları için işleyiciler](../../mfc/handlers-for-message-map-ranges.md).
-
 
 ## <a name="begin_message_map"></a> BEGIN_MESSAGE_MAP
 
@@ -125,15 +124,18 @@ Tek bir şablon bağımsız değişken içeren sınıf türünde bir ileti eşle
 
 ### <a name="syntax"></a>Sözdizimi
 
-  ```
+```
 BEGIN_TEMPLATE_MESSAGE_MAP( theClass, type_name, baseClass )
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *Sınıfın*<br/>
 Bu eşleme olan ileti sınıfı adını belirtir.
+
 *TYPE_NAME*<br/>
 Sınıfı için belirtilen şablon parametresi adı.
+
 *baseClass*<br/>
 Taban sınıfının adını belirtir *sınıfın*.
 
@@ -181,7 +183,6 @@ class CMainFrame : public CMDIFrameWnd
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxwin.h
-
 
 ## <a name="end_message_map"></a>  END_MESSAGE_MAP
 
@@ -245,9 +246,10 @@ Komut işleyici üye işlevi genişletilmiş.
 
 ### <a name="syntax"></a>Sözdizimi
 
-  ```
+```
 ON_COMMAND_EX(id, memberFxn);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
@@ -267,6 +269,7 @@ Bu makro, bir genişletilmiş komut işleyici üye işlevi için bir komut ileti
 ```
 ON_COMMAND_EX(id,  memberFxn);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
@@ -287,8 +290,7 @@ Daha fazla bilgi için bkz. Teknik Not [TN006: ileti eşlemeleri] tm006 ileti ma
 ### <a name="see-also"></a>Ayrıca Bkz.
 
 [ON_COMMAND](message-map-macros-mfc.md#on_command)<br/>
-[TN006: ileti eşlemeleri] tm006 ileti maps.md)
-
+[TN006: İleti Eşlemeleri](../tn006-message-maps.md)
 
 ## <a name="on_control"></a>  ON_CONTROL
 
@@ -322,7 +324,6 @@ Daha fazla bilgi ve örnekler için bkz. [ileti işleme ve eşleme konuları](..
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxmsg_.h
-
 
 ## <a name="on_message"></a>  ON_MESSAGE
 
@@ -382,7 +383,7 @@ LRESULT CMyWnd2::OnMyMessage(WPARAM wParam, LPARAM lParam)
 
 **Başlık:** afxmsg_.h
 
-## <a name="on_olecmd"></a>  ON_OLECMD  
+## <a name="on_olecmd"></a>  ON_OLECMD
 
 Komutlar komut gönderme arabirimi aracılığıyla yönlendiren `IOleCommandTarget`.
 
@@ -545,7 +546,6 @@ Daha fazla bilgi ve örnekler için bkz. [ileti işleme ve eşleme konuları](..
 ```cpp
 static UINT NEAR WM_FIND = RegisterWindowMessage(_T("COMMDLG_FIND"));
 
-
 BEGIN_MESSAGE_MAP(CMyWnd3, CWnd)
    ON_REGISTERED_MESSAGE(WM_FIND, OnFind)
 END_MESSAGE_MAP()
@@ -560,7 +560,7 @@ END_MESSAGE_MAP()
 [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947)<br/>
 [Kullanıcı Tanımlı İşleyiciler](user-defined-handlers.md)
 
-## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE    
+## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE
 
 Hangi işlevi Windows RegisterWindowMessage işlevi tarafından kaydedilen iletinin işleyecek gösterir.
 
@@ -586,7 +586,7 @@ RegisterWindowMessage, sistem genelinde benzersiz olması garanti yeni bir pence
 
 **Başlık:** afxmsg_.h
 
-## <a name="on_thread_message"></a>  ON_THREAD_MESSAGE  
+## <a name="on_thread_message"></a>  ON_THREAD_MESSAGE
 
 Hangi işlevi kullanıcı tanımlı bir ileti işleyecek gösterir.
 
@@ -612,7 +612,7 @@ ON_THREAD_MESSAGE varsa ON_MESSAGE yerine kullanılmalıdır bir `CWinThread` s�
 
 **Başlık:** afxole.h
 
-## <a name="on_update_command_ui"></a>  ON_UPDATE_COMMAND_UI    
+## <a name="on_update_command_ui"></a>  ON_UPDATE_COMMAND_UI
 
 Bu makro, hangi işlevi bir kullanıcı arabirimi güncelleştirme komut iletisini işleyecek gösterir.
 
@@ -699,7 +699,7 @@ void CChildFrame::OnRangeCmds(UINT nID)
 
 **Başlık:** afxmsg_.h
 
-## <a name="on_update_command_ui_range"></a>  ON_UPDATE_COMMAND_UI_RANGE    
+## <a name="on_update_command_ui_range"></a>  ON_UPDATE_COMMAND_UI_RANGE
 
 Komut kimlikleri bir aralıkta bir tek güncelleştirme ileti işleyici işlevine eşler.
 
@@ -730,7 +730,7 @@ Kendiniz makro yerleştirmeniz gerekir böylece ileti eşleme aralıkları için
 
 **Başlık:** afxmsg_.h
 
-## <a name="on_control_range"></a>  ON_CONTROL_RANGE    
+## <a name="on_control_range"></a>  ON_CONTROL_RANGE
 
 Bir tek ileti işleyici işlevi BN_CLICKED gibi belirtilen bir Windows bildirim iletisi için bir aralıkta denetimi kimlikleri eşlemek için bu makroyu kullanın.
 

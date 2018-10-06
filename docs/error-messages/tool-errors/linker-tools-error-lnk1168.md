@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a80aa365edf3e39c41ed73d815cc82de6ce9a52
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0910c23202b975999e10ef2effaebc470c62fb9d
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118173"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821081"
 ---
 # <a name="linker-tools-error-lnk1168"></a>Bağlayıcı Araçları Hatası LNK1168
 
@@ -35,7 +35,7 @@ Windows SysInternals yardımcı programları kullanabileceğiniz [işlemek](http
 
 Dosya, virüsten koruma programı tarafından kilitlenmişse, virüs koruma programıyla yapı çıktı dizinlerinizi otomatik taramanın dışında tutarak bu sorunu çözebilirsiniz. Anti-virüs tarayıcıları çoğunlukla dosya sisteminde yeni dosyaların oluşturulmasıyla tetiklenir ve tarama devam ederken kilitleri dosyalar üzerinde tutar. Belirli dizinleri taramanın dışında nasıl tutacağınız hakkındaki ayrıntılar için, virüsten koruma programı belgelerinize bakın.
 
-Dosya, arama dizinleme hizmeti tarafından kilitlenmişse, yapı çıktı dizinlerinizi otomatik dizinlemenin dışında tutarak bu sorunu giderebilirsiniz. Daha fazla bilgi için dizinleme hizmetiyle ilgili belgelere başvurun. Windows Arama Dizin Oluşturma Hizmeti değiştirmek için kullanın **dizinleme seçeneklerini** Windows içinde **Denetim Masası**. Daha fazla bilgi için [geliştirmek Windows dizini kullanarak arar: sık sorulan sorular](http://windows.microsoft.com/en-us/windows/improve-windows-searches-using-index-faq#1TC=windows-7).
+Dosya, arama dizinleme hizmeti tarafından kilitlenmişse, yapı çıktı dizinlerinizi otomatik dizinlemenin dışında tutarak bu sorunu giderebilirsiniz. Daha fazla bilgi için dizinleme hizmetiyle ilgili belgelere başvurun. Windows Arama Dizin Oluşturma Hizmeti değiştirmek için kullanın **dizinleme seçeneklerini** Windows içinde **Denetim Masası**. Daha fazla bilgi için [geliştirmek Windows dizini kullanarak arar: sık sorulan sorular](http://windows.microsoft.com/windows/improve-windows-searches-using-index-faq#1TC=windows-7).
 
 Yürütülebilir dosyanızın üzerine yapı işlemi tarafından yazılamıyorsa, dosyanız Dosya Gezgini tarafından kilitlenmiş olabilir. Varsa **uygulama deneyimi** hizmeti devre dışı bırakıldı, dosya Gezgini'nde bir yürütülebilir dosya tanıtıcı kilidine uzun bir süre tutunabilir. Bu sorunu gidermek için çalıştırın **services.msc** açın **özellikleri** iletişim kutusu için **uygulama deneyimi** hizmeti. Değişiklik **başlangıç türü** gelen **devre dışı bırakılmış** için **el ile**.
 

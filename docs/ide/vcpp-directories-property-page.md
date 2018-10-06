@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 238f26e8955d4be676c3bf37f7cc8b2d842b3de9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 82aaa2dc43177963b9b38c398e74aaa0ffff11dd
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394458"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821224"
 ---
 # <a name="vc-directories-property-page-windows"></a>VC ++ dizinleri özellik sayfası (Windows)
 
@@ -76,11 +76,13 @@ Not: siz yazarken liste doldurulur. Basın yoksa **Enter**.
 
 Makrolar ve neden sabit kodlanmış yollar mümkün olduğunda yerine kullanmanız gerektiği hakkında daha fazla bilgi için bkz. [Working with Project Properties](../ide/working-with-project-properties.md#bkmkPropertiesVersusMacros).
 
-Yaygın olarak kullanılan makrolar bir listesi için bkz. [genel derleme komutları ve Özellikler makroları](https://docs.microsoft.com/en-us/cpp/ide/common-macros-for-build-commands-and-properties).
+Yaygın olarak kullanılan makrolar bir listesi için bkz. [genel derleme komutları ve Özellikler makroları](https://docs.microsoft.com/cpp/ide/common-macros-for-build-commands-and-properties).
 
 Kendi makroları iki yolla tanımlayabilirsiniz:
--   Bir geliştirici Komut İstemi'nde ortam değişkenlerini ayarlayın. Tüm ortam değişkenlerini MSBuild özellikleri/makro kabul edilir.
--   Bir .props dosyası içinde kullanıcı makroları tanımlar. Daha fazla bilgi için [özellik sayfası makroları](working-with-project-properties.md#bkmkPropertiesVersusMacros).
+
+- Bir geliştirici Komut İstemi'nde ortam değişkenlerini ayarlayın. Tüm ortam değişkenlerini MSBuild özellikleri/makro kabul edilir.
+
+- Bir .props dosyası içinde kullanıcı makroları tanımlar. Daha fazla bilgi için [özellik sayfası makroları](working-with-project-properties.md#bkmkPropertiesVersusMacros).
 
 Daha fazla bilgi için şu blog postalarına bakın: [VC ++ dizinleri](http://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx), [devralınan özellikler ve özellik sayfaları](http://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx), ve [Visual Studio 2010 C++ proje Yükseltme Kılavuzu](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx).
 

@@ -1,7 +1,7 @@
 ---
 title: (ATL Eğitmeni, Bölüm 4) çizim kodunu değiştirme | Microsoft Docs
 ms.custom: get-started-article
-ms.date: 11/04/2016
+ms.date: 09/26/2018
 ms.technology:
 - cpp-atl
 ms.topic: conceptual
@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0da5f024e8dffd0115ba9bdbd6cf34f3f7c68a0e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4ad8be0655d43fac063a3551f43e667a04caa27b
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065796"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821068"
 ---
 # <a name="changing-the-drawing-code-atl-tutorial-part-4"></a>Çizim Kodunu değiştirme (ATL Eğitmeni, Bölüm 4)
 
@@ -37,53 +37,73 @@ Varsayılan olarak, kare ve metin denetiminin çizim kodu görüntüler **PolyCt
 
 Matematik işlevleri için destek ekleyerek başlangıç `sin` ve `cos`, hangi kullanılacak Çokgen noktalarının hesaplamak ve depolamak için bir dizi oluşturarak yerleştirir.
 
-#### <a name="to-modify-the-header-file"></a>Üst bilgi dosyasını değiştirmek için
+### <a name="to-modify-the-header-file"></a>Üst bilgi dosyasını değiştirmek için
 
 1. Satır Ekle `#include <math.h>` PolyCtl.h üstüne. Dosyanın en üstüne şu şekilde görünmelidir:
 
-     [!code-cpp[NVC_ATL_Windowing#47](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_1.cpp)]
+    [!code-cpp[NVC_ATL_Windowing#47](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_1.cpp)]
 
-2. Çokgen noktalarının hesaplanır sonra türünde bir dizi içinde depolanacak `POINT`, bu nedenle dizi sonra tanımını ekleyin `m_nSides` PolyCtl.h içindeki:
+1. Uygulama `IProvideClassInfo` PolyCtl.h için aşağıdaki kodu ekleyerek denetimi için yöntem bilgilerini sağlamak için arabirim. İçinde `CPolyCtl` sınıfı, satırı değiştirin:
 
-     [!code-cpp[NVC_ATL_Windowing#48](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_2.h)]
+    ```cpp
+    public CComControl<CPolyCtl>
+    ```
+
+    örneklerini şununla değiştirin:
+
+    ```cpp
+    public CComControl<CPolyCtl>,
+    public IProvideClassInfo2Impl<&CLSID_PolyCtl, &DIID__IPolyCtlEvents, &LIBID_PolygonLib>
+    ```
+
+    ve `BEGIN_COM_MAP(CPolyCtl)`, satırları ekleyin:
+
+    ```cpp
+    COM_INTERFACE_ENTRY(IProvideClassInfo)
+    COM_INTERFACE_ENTRY(IProvideClassInfo2)
+    ```
+
+1. Çokgen noktalarının hesaplanır sonra türünde bir dizi içinde depolanacak `POINT`, bu nedenle dizi tanımı deyiminden sonra ekleyin `short m_nSides;` PolyCtl.h içindeki:
+
+    [!code-cpp[NVC_ATL_Windowing#48](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_2.h)]
 
 ## <a name="modifying-the-ondraw-method"></a>OnDraw yöntemini değiştirme
 
 Değiştirmeniz artık `OnDraw` PolyCtl.h içindeki yöntemi. Kod ekleyeceğiniz yeni Kalem ve hangi, çokgen çizmek fırça oluşturur ve ardından çağırır `Ellipse` ve `Polygon` gerçek çizim gerçekleştirmek için Win32 API işlevleri.
 
-#### <a name="to-modify-the-ondraw-function"></a>OnDraw işlevi değiştirmek için
+### <a name="to-modify-the-ondraw-function"></a>OnDraw işlevi değiştirmek için
 
 1. Varolan `OnDraw` PolyCtl.h içindeki yöntemini aşağıdaki kod ile:
 
-     [!code-cpp[NVC_ATL_Windowing#49](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_3.cpp)]
+    [!code-cpp[NVC_ATL_Windowing#49](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_3.cpp)]
 
 ## <a name="adding-a-method-to-calculate-the-polygon-points"></a>Çokgen noktalarının hesaplamak için yöntem ekleme
 
 Adlı bir yöntem ekleyin `CalcPoints`, çevre çokgenin noktalar koordinatlarını hesaplar. Bu hesaplamalar işleve geçirilen RECT değişkeni hesaplanır.
 
-#### <a name="to-add-the-calcpoints-method"></a>CalcPoints yöntemi eklemek için
+### <a name="to-add-the-calcpoints-method"></a>CalcPoints yöntemi eklemek için
 
 1. Bildirimi ekleme `CalcPoints` için `IPolyCtl` ortak bölümünü `CPolyCtl` PolyCtl.h içindeki sınıfı:
 
-     [!code-cpp[NVC_ATL_Windowing#50](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_4.h)]
+    [!code-cpp[NVC_ATL_Windowing#50](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_4.h)]
 
-     Ortak bölümünü son kısmını `CPolyCtl` sınıfı şu şekilde görünür:
+    Ortak bölümünü son kısmını `CPolyCtl` sınıfı şu şekilde görünür:
 
-     [!code-cpp[NVC_ATL_Windowing#51](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_5.h)]
+    [!code-cpp[NVC_ATL_Windowing#51](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_5.h)]
 
-2. Bu uygulaması Ekle `CalcPoints` PolyCtl.cpp sonuna işlevi:
+1. Bu uygulaması Ekle `CalcPoints` PolyCtl.cpp sonuna işlevi:
 
-     [!code-cpp[NVC_ATL_Windowing#52](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_6.cpp)]
+    [!code-cpp[NVC_ATL_Windowing#52](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_6.cpp)]
 
 ## <a name="initializing-the-fill-color"></a>Dolgu rengi başlatılıyor
 
 Başlatma `m_clrFillColor` varsayılan renk ile.
 
-#### <a name="to-initialize-the-fill-color"></a>Dolgu rengi başlatmak için
+### <a name="to-initialize-the-fill-color"></a>Dolgu rengi başlatmak için
 
 1. Kullanma yeşil kullanılan varsayılan rengi için bu satırı ekleyerek `CPolyCtl` PolyCtl.h içindeki Oluşturucu:
 
-     [!code-cpp[NVC_ATL_Windowing#53](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_7.h)]
+    [!code-cpp[NVC_ATL_Windowing#53](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_7.h)]
 
 Oluşturucusu şimdi şöyle görünür:
 
@@ -93,35 +113,51 @@ Oluşturucusu şimdi şöyle görünür:
 
 Denetimi yeniden oluşturun. Hala açık değilse PolyCtl.htm dosyasını kapalı emin olun ve ardından **yapı çokgeni** üzerinde **derleme** menüsü. Polyctl.htm dosyasını sayfasından bir kez daha kontrol görüntüleyebilir, ancak bu kez ActiveX denetimi Test kapsayıcısını kullanın.
 
-#### <a name="to-use-the-activex-control-test-container"></a>ActiveX denetimi Test kapsayıcısı kullanmak için
+### <a name="to-use-the-activex-control-test-container"></a>ActiveX denetimi Test kapsayıcısı kullanmak için
 
-1. Oluşturun ve ActiveX denetimi Test kapsayıcısı başlatın. Daha fazla bilgi için [TSTCON örnek: ActiveX denetimi Test kapsayıcısını](../visual-cpp-samples.md).
+1. Oluşturun ve ActiveX denetimi Test kapsayıcısı başlatın. [TSTCON örnek: ActiveX denetimi Test kapsayıcısını](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/ole/TstCon) Github'da bulunabilir.
 
-2. Test kapsayıcısında üzerinde **Düzenle** menüsünde tıklatın **yeni denetimi Ekle**.
+    > [!NOTE]
+    > İlgili hatalara `ATL::CW2AEX`, Script.Cpp içinde satırı değiştirin `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT );` ile `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT.m_psz );`ve satır `TRACE( "Source Text: %s\n", COLE2CT( bstrSourceLineText ) );` ile `TRACE( "Source Text: %s\n", bstrSourceLineText );`.<br/>
+    > İlgili hatalara `HMONITOR`, Stdafx.h'de açın `TCProps` proje ve değiştirin:
+    > ```
+    > #ifndef WINVER  
+    > #define WINVER 0x0400   
+    > #endif
+    > ```
+    > örneklerini şununla değiştirin:
+    > ```
+    > #ifndef WINVER  
+    > #define WINVER 0x0500
+    > #define _WIN32_WINNT 0x0500
+    > #endif
+    > ```
 
-3. Çağrılacak denetiminiz bulun `PolyCtl Class`, tıklatıp **Tamam**. Yeşil bir üçgen içindeki bir daire görürsünüz.
+1. İçinde **Test kapsayıcısı**, **Düzenle** menüsünde tıklatın **yeni denetimi Ekle**.
 
-Sonraki yordamı izleyerek kenar sayısını değiştirmeyi deneyin. Bir ikili arabiriminde Test kapsayıcısındaki özelliklerini değiştirmek için kullanın **çağırma yöntemleri**.
+1. Çağrılacak denetiminiz bulun `PolyCtl class`, tıklatıp **Tamam**. Yeşil bir üçgen içindeki bir daire görürsünüz.
 
-#### <a name="to-modify-a-controls-property-from-within-the-test-container"></a>Test kapsayıcı içindeki bir denetimin özelliğini değiştirmek için
+Sonraki yordamı izleyerek kenar sayısını değiştirmeyi deneyin. Çift arabirim içinden özelliklerini değiştirmek için **Test kapsayıcısı**, kullanın **çağırma yöntemleri**.
 
-1. Test kapsayıcısında tıklayın **çağırma yöntemleri** üzerinde **denetimi** menüsü.
+### <a name="to-modify-a-controls-property-from-within-the-test-container"></a>Test kapsayıcı içindeki bir denetimin özelliğini değiştirmek için
 
-     **Yöntemi Çağır** iletişim kutusu görüntülenir.
+1. İçinde **Test kapsayıcısı**, tıklayın **çağırma yöntemleri** üzerinde **denetimi** menüsü.
 
-2. Seçin **PropPut** sürümünü **yüz** özelliğinden **yöntem adı** aşağı açılan liste kutusu.
+    **Yöntemi Çağır** iletişim kutusu görüntülenir.
 
-3. Tür `5` içinde **parametre değeri** kutusunun **değer kümesi**, tıklatıp **Invoke**.
+1. Seçin **PropPut** sürümünü **yüz** özelliğinden **yöntem adı** aşağı açılan liste kutusu.
 
-Denetim değişmez unutmayın. Kenar sayısını dahili olarak ayarlayarak değiştirdiğiniz rağmen `m_nSides` değişken, bu denetimin repaint neden olmadı. Başka bir uygulamaya geçin ve sonra Test kapsayıcısı için geri dönün, denetimi yeniden çizilmesini ve kenar sayısını doğru olduğunu bulabilirsiniz.
+1. Tür `5` içinde **parametre değeri** kutusunun **değer kümesi**, tıklatıp **Invoke**.
+
+Denetim değişmez unutmayın. Kenar sayısını dahili olarak ayarlayarak değiştirdiğiniz rağmen `m_nSides` değişken, bu denetimin repaint neden olmadı. Başka bir uygulamaya geçiş yapın ve ardından geri dönmek **Test kapsayıcısı**, denetimi yeniden çizilmesini ve kenar sayısını doğru olduğunu bulabilirsiniz.
 
 Bu sorunu düzeltmek için bir çağrı ekleyin `FireViewChange` işlevi, tanımlanan `IViewObjectExImpl`, kenar sayısını ayarladıktan sonra. Denetimin kendi penceresinde çalışıyorsa `FireViewChange` çağıracak `InvalidateRect` doğrudan yöntemi. Denetim penceresiz, çalışıyorsa `InvalidateRect` kapsayıcının sitesi arabirimi yöntemi çağrılır. Bu denetim kendisini çizilecek zorlar.
 
-#### <a name="to-add-a-call-to-fireviewchange"></a>Bir çağrı FireViewChange eklemek için
+### <a name="to-add-a-call-to-fireviewchange"></a>Bir çağrı FireViewChange eklemek için
 
 1. Çağrı ekleyerek PolyCtl.cpp güncelleştirme `FireViewChange` için `put_Sides` yöntemi. İşiniz bittiğinde `put_Sides` yöntemi şu şekilde görünmelidir:
 
-     [!code-cpp[NVC_ATL_Windowing#55](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_9.cpp)]
+    [!code-cpp[NVC_ATL_Windowing#55](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_9.cpp)]
 
 Ekledikten sonra `FireViewChange`yeniden oluşturun ve denetim ActiveX denetimi Test kapsayıcısı içinde yeniden deneyin. Bu zaman zaman kenar sayısını değiştirmek ve tıklayın `Invoke`, hemen değiştirmeniz denetim görmeniz gerekir.
 
@@ -133,4 +169,3 @@ Sonraki adımda, bir olay ekler.
 
 [Öğretici](../atl/active-template-library-atl-tutorial.md)<br/>
 [Test Kapsayıcısı ile Özellikleri ve Olayları Test Etme](../mfc/testing-properties-and-events-with-test-container.md)
-

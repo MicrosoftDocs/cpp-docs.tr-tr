@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28d1df72efcc1fa7408922876ad91bafcd2b005a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2ba89aadc8e1c617ed8e101a226560b80cb9e431
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422675"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821406"
 ---
 # <a name="c-developer-guidance-for-speculative-execution-side-channels"></a>Kurgusal yürütme yan kanal için C++ Geliştirici Kılavuzu
 
@@ -73,7 +73,7 @@ Yukarıdaki adımları CVE-2017-5753 örneğini kötüye ile birlikte temizleme 
 
 ## <a name="what-software-scenarios-can-be-impacted"></a>Hangi yazılım senaryoları etkilenebilir?
 
-Gibi bir işlem kullanılarak güvenli yazılım geliştirme [güvenlik geliştirme yaşam döngüsü](https://www.microsoft.com/en-us/sdl/) (SDL) uygulamalarında mevcut güven sınırları belirlemek geliştiriciler genellikle gerektirir. Burada bir uygulama gibi sistem üzerinde başka bir işlem ya da yönetici olmayan kullanıcı modu işlem çekirdek modu aygıt sürücüsü olması durumunda en az güvenilen bir bağlam tarafından sağlanan verilerle etkileşimde bulunabilir yerde bir güven sınırı var. Yeni bir sınıf içeren kurgusal yürütme yan kanal güvenlik açıklarının birçok güven sınırları içinde kodu ve bir cihazdaki verileri yalıtmaya mevcut yazılım güvenlik modelleri için geçerlidir.
+Gibi bir işlem kullanılarak güvenli yazılım geliştirme [güvenlik geliştirme yaşam döngüsü](https://www.microsoft.com/sdl/) (SDL) uygulamalarında mevcut güven sınırları belirlemek geliştiriciler genellikle gerektirir. Burada bir uygulama gibi sistem üzerinde başka bir işlem ya da yönetici olmayan kullanıcı modu işlem çekirdek modu aygıt sürücüsü olması durumunda en az güvenilen bir bağlam tarafından sağlanan verilerle etkileşimde bulunabilir yerde bir güven sınırı var. Yeni bir sınıf içeren kurgusal yürütme yan kanal güvenlik açıklarının birçok güven sınırları içinde kodu ve bir cihazdaki verileri yalıtmaya mevcut yazılım güvenlik modelleri için geçerlidir.
 
 Aşağıdaki tabloda, burada geliştiriciler açıklarından oluşan hakkında endişe olması gerekebilir yazılım güvenlik modelleri bir özetini sunar:
 
@@ -341,7 +341,7 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 
 ### <a name="speculation-barrier-via-compiler-time-instrumentation"></a>Spekülasyon engeli aracılığıyla derleme zamanı izleme
 
-Visual Studio 2017 (sürüm 15.5.5 ile başlayarak) Visual C++ derleyicisi için destek içerir `/Qspectre` ilgili CVE-2017-5753 için otomatik olarak bir Spekülasyon engeli sınırlı sayıda savunmasız kodlama desenleri için ekleyen bir anahtar. Belgelerine [/qspectre](https://docs.microsoft.com/en-us/cpp/build/reference/qspectre) bayrağı kullanım ve etkileri hakkında daha fazla bilgi sağlar. Bu bayrak tüm savunmasız kodlama desenleri kapsamaz ve bu nedenle geliştiriciler üzerinde bu sınıf, güvenlik açığı için kapsamlı bir risk azaltma olarak doğrulamamalısınız unutulmaması önemlidir.
+Visual Studio 2017 (sürüm 15.5.5 ile başlayarak) Visual C++ derleyicisi için destek içerir `/Qspectre` ilgili CVE-2017-5753 için otomatik olarak bir Spekülasyon engeli sınırlı sayıda savunmasız kodlama desenleri için ekleyen bir anahtar. Belgelerine [/qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) bayrağı kullanım ve etkileri hakkında daha fazla bilgi sağlar. Bu bayrak tüm savunmasız kodlama desenleri kapsamaz ve bu nedenle geliştiriciler üzerinde bu sınıf, güvenlik açığı için kapsamlı bir risk azaltma olarak doğrulamamalısınız unutulmaması önemlidir.
 
 ### <a name="masking-array-indices"></a>Dizi dizinleri maskeleme
 

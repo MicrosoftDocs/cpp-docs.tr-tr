@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8222594c6c5ff0891bc9e7ef2a752d63dd7d0c6e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 02442fab506f867a682a68b49a6c573305075992
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417560"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820522"
 ---
 # <a name="vmxvmresume"></a>__vmx_vmresume
 
@@ -49,7 +49,7 @@ unsigned char __vmx_vmresume(
 
 Bir uygulama kullanarak bir VM girin işlemi gerçekleştirebilir [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) veya `__vmx_vmresume` işlevi. `__vmx_vmlaunch` İşlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Clear`ve `__vmx_vmresume` işlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Launched`. Sonuç olarak, kullanmanız [__vmx_vmclear](../intrinsics/vmx-vmclear.md) işlevi için bir Windows VMCS başlatma durumunu ayarlamak için `Clear`ve ardından `__vmx_vmlaunch` ilk VM girin işlemi işlevi ve `__vmx_vmresume` sonraki VM girmek için işlevi işlemler.
 
-`__vmx_vmresume` İşlev, eşdeğer `VMRESUME` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. PDF belgesi, "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," için arama hakkında daha fazla bilgi için numara C97063 002 belge [Intel Corporation'da](https://software.intel.com/en-us/articles/intel-sdm) site.
+`__vmx_vmresume` İşlev, eşdeğer `VMRESUME` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. PDF belgesi, "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," için arama hakkında daha fazla bilgi için numara C97063 002 belge [Intel Corporation'da](https://software.intel.com/articles/intel-sdm) site.
 
 ## <a name="requirements"></a>Gereksinimler
 

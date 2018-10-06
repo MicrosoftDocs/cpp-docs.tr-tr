@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: Visual C++ projesi oluşturmak için MSBuild kullanma | Microsoft Docs'
 ms.custom: ''
-ms.date: 06/25/2018
+ms.date: 09/24/2018
 ms.technology:
 - cpp-tools
 ms.topic: conceptual
@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8bb957f0ab1dd2ea7d05151257aee0e15561e8a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e8a1c45342cf1f5eb178764d6fd723950f52e7e0
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609705"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821256"
 ---
 # <a name="walkthrough-using-msbuild-to-create-a-visual-c-project"></a>İzlenecek yol: Visual C++ Projesi Oluşturmak için MSBuild Kullanma
 
@@ -53,13 +53,13 @@ Bu izlenecek yolu tamamlamak için aşağıdakiler gerekir:
 
 ## <a name="creating-the-c-source-files"></a>C++ kaynak dosyaları oluşturma
 
-Bu izlenecek yolda kaynak dosyası ve üstbilgi dosyası içeren bir proje oluşturur. Kaynak dosyasının Main.cpp öğesi konsol uygulamasının ana işlevini içerir. Üstbilgi dosyası main.h, iostream üstbilgi dosyasını eklemek için kod içerir. Visual Studio Code gibi Düzenleyicisi Visual Studio veya metin kullanarak bu C++ dosyaları oluşturabilirsiniz.
+Bu izlenecek yolda kaynak dosyası ve üstbilgi dosyası içeren bir proje oluşturacaksınız. Kaynak dosyasının Main.cpp öğesi konsol uygulamasının ana işlevini içerir. Üstbilgi dosyası main.h, iostream üstbilgi dosyasını eklemek için kod içerir. Visual Studio Code gibi Düzenleyicisi Visual Studio veya metin kullanarak bu C++ dosyaları oluşturabilirsiniz.
 
 ### <a name="to-create-the-c-source-files-for-your-project"></a>Projeniz için C++ kaynak dosyaları oluşturmak için
 
 1. Projeniz için bir dizin oluşturun.
 
-2. Main.cpp olarak adlandırılan bir dosya oluşturun ve bu dosyaya aşağıdaki kodu ekleyin:
+1. Main.cpp olarak adlandırılan bir dosya oluşturun ve bu dosyaya aşağıdaki kodu ekleyin:
 
     ```cpp
     // main.cpp : the application source code.
@@ -72,7 +72,7 @@ Bu izlenecek yolda kaynak dosyası ve üstbilgi dosyası içeren bir proje oluş
     }
     ```
 
-3. Main.h olarak adlandırılan bir dosya oluşturun ve bu dosyaya aşağıdaki kodu ekleyin:
+1. Main.h olarak adlandırılan bir dosya oluşturun ve bu dosyaya aşağıdaki kodu ekleyin:
 
     ```cpp
     // main.h: the application header code.
@@ -81,24 +81,24 @@ Bu izlenecek yolda kaynak dosyası ve üstbilgi dosyası içeren bir proje oluş
 
 ## <a name="creating-the-xml-msbuild-project-file"></a>XML MSBuild proje dosyası oluşturma
 
-Bir MSBuild proje dosyası proje kök öğesi içeren bir XML dosyasıdır (\<Proje >). Aşağıdaki örnek projesinde \<Proje > öğesi yedi alt öğeleri içerir:
+Bir MSBuild proje dosyası proje kök öğesi içeren bir XML dosyasıdır (`<Project>`). Aşağıdaki örnek projesinde `<Project>` öğesi yedi alt öğeleri içerir:
 
-- Üç öğe grubu etiketleri (\<ItemGroup >) proje yapılandırması ve platformu, kaynak dosya adı ve üst bilgi dosyası adını belirtin.
+- Üç öğe grubu etiketleri (`<ItemGroup>`) proje yapılandırması ve platformu, kaynak dosya adı ve üst bilgi dosyası adını belirtin.
 
-- Etiketleri üç içe aktarma (\<İçeri Aktar >) Microsoft Visual C++ ayarları konumunu belirtin.
+- Etiketleri üç içe aktarma (`<Import>`) Microsoft Visual C++ ayarları konumunu belirtin.
 
-- Özellik grubu etiketi (\<PropertyGroup >) proje ayarlarını belirtir.
+- Özellik grubu etiketi (`<PropertyGroup>`) proje ayarlarını belirtir.
 
 ### <a name="to-create-the-msbuild-project-file"></a>MSBuild proje dosyası oluşturmak için
 
-1. Adlı bir proje dosyası oluşturmak için bir metin düzenleyicisi kullanın `myproject.vcxproj`ve ardından aşağıdaki kök ekleyin \<Proje > öğesi. Aşağıdaki yordam adımlarının kök öğeleri eklemek \<Project > etiketleri:
+1. Adlı bir proje dosyası oluşturmak için bir metin düzenleyicisi kullanın `myproject.vcxproj`ve ardından aşağıdaki kök ekleyin `<Project>` öğesi. Aşağıdaki yordam adımlarının kök öğeleri eklemek `<Project>` etiketler:
 
     ```xml
     <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     </Project>
     ```
 
-2. Aşağıdaki iki ekleme \<ProjectConfiguration > alt öğe bir \<ItemGroup > öğesi. Hata ayıklama alt öğe belirtir ve sürüm yapılandırmalarını 32-bit Windows işletim sistemi:
+1. Aşağıdaki iki ekleme `<ProjectConfiguration>` alt öğeleri bir `<ItemGroup>` öğesi. Hata ayıklama alt öğe belirtir ve sürüm yapılandırmalarını 32-bit Windows işletim sistemi:
 
     ```xml
     <ItemGroup>
@@ -113,13 +113,13 @@ Bir MSBuild proje dosyası proje kök öğesi içeren bir XML dosyasıdır (\<Pr
     </ItemGroup>
     ```
 
-3. Aşağıdaki \<İçeri Aktar / > Bu proje için varsayılan C++ ayarları yolunu belirleyen öğesi:
+1. Aşağıdaki `<Import>` bu proje için varsayılan C++ ayarları yolunu belirleyen öğesi:
 
     ```xml
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
     ```
 
-4. Aşağıdaki özellik grubu öğesini ekleyin (\<PropertyGroup >) iki proje özellikleri belirtir:
+1. Aşağıdaki özellik grubu öğesini ekleyin (`<PropertyGroup>`) iki proje özellikleri belirtir:
 
     ```xml
     <PropertyGroup>
@@ -128,13 +128,13 @@ Bir MSBuild proje dosyası proje kök öğesi içeren bir XML dosyasıdır (\<Pr
     </PropertyGroup>
     ```
 
-5. Aşağıdaki \<İçeri Aktar / > Bu proje için geçerli C++ ayarları yolunu belirleyen öğesi:
+1. Aşağıdaki `<Import>` bu proje için geçerli C++ ayarları yolunu belirleyen öğesi:
 
     ```xml
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
     ```
 
-6. Aşağıdaki \<ClCompile > alt öğede bir \<ItemGroup > öğesi. Alt öğe, derlenecek C/C++ kaynak dosyasının adını belirtir:
+1. Aşağıdaki `<ClCompile>` alt öğede bir `<ItemGroup>` öğesi. Alt öğe, derlenecek C/C++ kaynak dosyasının adını belirtir:
 
     ```xml
     <ItemGroup>
@@ -143,9 +143,9 @@ Bir MSBuild proje dosyası proje kök öğesi içeren bir XML dosyasıdır (\<Pr
     ```
 
    > [!NOTE]
-   > \<ClCompile > olan bir *derleme hedefi* ve tanımlanan **VCTargets** dizin.
+   > `<ClCompile>` olan bir *derleme hedefi* ve tanımlanan **VCTargets** dizin.
 
-7. Aşağıdaki \<Clınclude > alt öğede bir \<ItemGroup > öğesi. Alt öğe, C/C++ kaynak dosyası için üstbilgi dosyasının adını belirtir:
+1. Aşağıdaki `<ClInclude>` alt öğede bir `<ItemGroup>` öğesi. Alt öğe, C/C++ kaynak dosyası için üstbilgi dosyasının adını belirtir:
 
     ```xml
     <ItemGroup>
@@ -153,7 +153,7 @@ Bir MSBuild proje dosyası proje kök öğesi içeren bir XML dosyasıdır (\<Pr
     </ItemGroup>
     ```
 
-8. Aşağıdaki \<alma > Bu proje için hedef tanımlayan dosyasının yolunu belirtir öğesi:
+1. Aşağıdaki `<Import>` bu proje için hedef tanımlayan dosyasının yolunu belirtir öğesi:
 
     ```xml
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Targets" />
@@ -197,7 +197,7 @@ Konsol uygulamanızı oluşturmak için komut isteminde aşağıdaki komutu yaz�
 
 `msbuild myproject.vcxproj /p:configuration=debug`
 
-MSBuild çıkış dosyaları için bir dizini derler ve projenize Myproject.exe programını oluşturmak için bağlantı. Yapı işlemi tamamlandıktan sonra uygulamayı çalıştırmak için aşağıdaki komutu kullanın:
+MSBuild çıkış dosyaları için bir dizini derler ve projenize Myproject.exe programını oluşturmak için bağlantı. Yapı işlemi tamamlandıktan sonra hata ayıklama klasöründen uygulamayı çalıştırmak için aşağıdaki komutu kullanın:
 
 `myproject`
 
@@ -219,7 +219,7 @@ MSBuild, önceden tanımlanmış bir yapı hedefleri yürütmenizi, kullanıcı 
 
 ### <a name="using-msbuild-with-build-targets"></a>Yapı hedefleriyle MSBuild kullanma
 
-A *derleme hedefi* derleme sırasında yürütülebilecek önceden tanımlı veya kullanıcı tanımlı komut adlandırılmış kümesidir. Hedef komut satırı seçeneğini kullanın (**/t**) yapı hedefi belirtmek için. Durumunda, `myproject` örnek proje, önceden tanımlanmış **temiz** hedef hata ayıklama klasöründeki tüm dosyaları siler ve yeni bir günlük dosyası oluşturur.
+A *derleme hedefi* derleme sırasında yürütülebilecek önceden tanımlı veya kullanıcı tanımlı komut adlandırılmış kümesidir. Hedef komut satırı seçeneğini kullanın (`/t`) yapı hedefi belirtmek için. İçin `myproject` örnek proje, önceden tanımlanmış **temiz** hedef hata ayıklama klasöründeki tüm dosyaları siler ve yeni bir günlük dosyası oluşturur.
 
 Komut isteminde temizlemek için aşağıdaki komutu yazın `myproject`.
 
@@ -227,7 +227,7 @@ Komut isteminde temizlemek için aşağıdaki komutu yazın `myproject`.
 
 ### <a name="using-msbuild-with-build-properties"></a>Yapı özellikleriyle MSBuild kullanma
 
-Özellik komut satırı seçeneği (**/p**), Proje yapı dosyanızda bir özelliği geçersiz kılmanıza olanak sağlar. İçinde `myproject` örnek proje, yayınlama veya hata ayıklama derleme yapılandırması tarafından belirtilen `Configuration` özelliği. Ve oluşturulan uygulamayı çalıştırmayı amaçlayan işletim sistemi tarafından belirtilen `Platform` özelliği.
+Özellik komut satırı seçeneği (`/p`), Proje yapı dosyanızda bir özelliği geçersiz kılmanıza olanak sağlar. İçinde `myproject` örnek proje, yayınlama veya hata ayıklama derleme yapılandırması tarafından belirtilen `Configuration` özelliği. Ve oluşturulan uygulamayı çalıştırmayı amaçlayan işletim sistemi tarafından belirtilen `Platform` özelliği.
 
 Hata Ayıklama yapısını oluşturmak için aşağıdaki komutu komut istemine yazın `myproject` 32-bit Windows üzerinde çalışma üzere tasarlanan bir uygulama.
 
@@ -259,7 +259,7 @@ Komut isteminde uygulamanızı oluşturmak üzere 64 bit Araçlar kullanmak içi
 
 ### <a name="using-msbuild-with-a-different-toolset"></a>Farklı araç takımıyla MSBuild kullanma
 
-Araç kümeleri ve kitaplıklar için yüklü Visual C++'ın diğer sürümlerinin varsa, MSBuild geçerli Visual C++ sürümü veya diğer yüklü sürümler için uygulamalar oluşturabilirsiniz. Windows XP için Visual C++ 11.0 araç kümesini belirtmek için Visual Studio 2012, yüklediğiniz Örneğin, aşağıdaki özellik grubu öğesini Myproject.vcxproj proje dosyasına Microsoft.Cpp.props sonra ekleyin `<Import />` öğesi:
+Araç kümeleri ve kitaplıklar için yüklü Visual C++'ın diğer sürümlerinin varsa, MSBuild geçerli Visual C++ sürümü veya diğer yüklü sürümler için uygulamalar oluşturabilirsiniz. Windows XP için Visual C++ 11.0 araç kümesini belirtmek için Visual Studio 2012, yüklediyseniz, örneğin, aşağıdaki özellik grubu öğesini Myproject.vcxproj proje dosyasına sonra ekleyin `Microsoft.Cpp.props` \<İçeri Aktar / > öğesi:
 
 ```xml
 <PropertyGroup>
@@ -267,11 +267,9 @@ Araç kümeleri ve kitaplıklar için yüklü Visual C++'ın diğer sürümlerin
 </PropertyGroup>
 ```
 
-Projenizi Visual C++ 11.0 Windows XP araç takımıyla yeniden oluşturmak için aşağıdaki komutlardan birini yazın:
+Projenizi Visual C++ 11.0 Windows XP araç takımıyla yeniden oluşturmak için aşağıdaki komutları yazın:
 
 `msbuild myproject.vcxproj /p:PlatformToolset=v110_xp /t:rebuild`
-
-`msbuild myproject.vcxproj /t:rebuild`
 
 ### <a name="adding-msbuild-customizations"></a>MSBuild özelleştirmeleri ekleme
 

@@ -17,12 +17,12 @@ helpviewer_keywords:
 - std::regex_search [C++]
 - std::swap [C++]
 - std::swap [C++]
-ms.openlocfilehash: b3b5171e60e9f9348a4e4d86d0b8032db7eb4726
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 36d7aea8caec3f39d69a5928102c27d13848b538
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726550"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821016"
 ---
 # <a name="ltregexgt-functions"></a>&lt;Regex&gt; işlevleri
 

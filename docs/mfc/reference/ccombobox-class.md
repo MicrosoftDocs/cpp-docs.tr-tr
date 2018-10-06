@@ -118,12 +118,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82c9ad08977e6b24886060c49b74c66697113cdf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 03d418fc45d3947248c78d70af5d036bd93b204d
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46447433"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821510"
 ---
 # <a name="ccombobox-class"></a>CComboBox sınıfı
 
@@ -256,7 +256,7 @@ Oluşturursanız, bir `CComboBox` nesnesi içinde bir iletişim kutusu (iletişi
 
 İsterseniz, bir `CComboBox` başka bir pencere içinde nesne nesnesi, onu yok gerekmez. Oluşturursanız `CComboBox` yığında nesne otomatik olarak bozulur. Oluşturursanız `CComboBox` kullanarak yığında nesne **yeni** işlevini çağırmalıdır **Sil** Windows birleşik giriş kutusu kaldırıldığında yok etmek için nesne üzerinde.
 
-**Not** WM_KEYDOWN ve WM_CHAR iletileri işlemek istiyorsanız, düzenleme ve liste kutusu denetimleri, sınıflarından açılan kutunun alt sınıfı için sahip `CEdit` ve `CListBox`, ve bu iletileri için işleyiciler için türetilmiş sınıfları ekleyin. Daha fazla bilgi için [ http://support.microsoft.com/default.aspxscid=kb; en-us; Q174667](http://support.microsoft.com/default.aspxscid=kb;en-us;q174667) ve [CWnd::SubclassWindow](../../mfc/reference/cwnd-class.md#subclasswindow).
+**Not** WM_KEYDOWN ve WM_CHAR iletileri işlemek istiyorsanız, düzenleme ve liste kutusu denetimleri, sınıflarından açılan kutunun alt sınıfı için sahip `CEdit` ve `CListBox`, ve bu iletileri için işleyiciler için türetilmiş sınıfları ekleyin. Daha fazla bilgi için [ http://support.microsoft.com/default.aspxscid=kb; Q174667](http://support.microsoft.com/default.aspxscid=kb;q174667) ve [CWnd::SubclassWindow](../../mfc/reference/cwnd-class.md#subclasswindow).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 

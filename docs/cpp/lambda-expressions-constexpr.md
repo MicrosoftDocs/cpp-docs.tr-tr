@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c6a48067ebc145c907a81212a9acca55c3f4665
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 71c28ab1531c2af19f2b8f594db457d0272b0664
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066602"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820366"
 ---
 # <a name="constexpr-lambda-expressions-in-c"></a>C++'ta constexpr lambda ifadeleri
 
@@ -38,7 +38,9 @@ ms.locfileid: "46066602"
         return [n] { return n + 1; }();
     }
 ```
+
 Bir lambda örtülü olarak başvuruluyor **constexpr** sonucunu gereksinimlerini karşılayıp karşılamadığını bir **constexpr** işlevi:
+
 ```cpp
     auto answer = [](int n)
     {
@@ -47,6 +49,7 @@ Bir lambda örtülü olarak başvuruluyor **constexpr** sonucunu gereksinimlerin
 
     constexpr int response = answer(10);
 ```
+
 Bir lambda, örtük veya açık ise **constexpr**ve bir işlev işaretçisine dönüştürme, elde edilen işlevi ayrıca **constexpr**:
 
 ```cpp

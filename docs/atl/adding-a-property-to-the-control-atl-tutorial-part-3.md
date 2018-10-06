@@ -1,7 +1,7 @@
 ---
 title: Özellik ekleme (ATL Eğitmeni, Bölüm 3) denetimine | Microsoft Docs
 ms.custom: get-started-article
-ms.date: 11/04/2016
+ms.date: 09/26/2018
 ms.technology:
 - cpp-atl
 ms.topic: conceptual
@@ -12,52 +12,60 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1e90da3fe44613b0c530e801d963eaddd9d783e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 2373d2d703f18824274df158b31023669d8df945
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756914"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820480"
 ---
 # <a name="adding-a-property-to-the-control-atl-tutorial-part-3"></a>Denetime Özellik Ekleme (ATL Eğitmeni, Bölüm 3)
 
 `IPolyCtl` Denetimin özel yöntemleri ve özellikleri içeren bir arabirimdir ve bir özellik ekleyeceksiniz.
 
-### <a name="to-add-a-property-using-the-add-property-wizard"></a>Özellik Ekleme Sihirbazı'nı kullanarak bir özelliği eklemek için
+### <a name="to-add-the-property-definitions-to-your-project"></a>Özellik tanımları projenize eklemek için
 
-1. Sınıf Görünümü'nde Çokgen dalını genişletin.
+1. İçinde **sınıf görünümü**, genişletme `Polygon` dal.
 
-2. IPolyCtl sağ tıklayın.
+1. Sağ `IPolyCtl`.
 
-3. Kısayol menüsünde **Ekle**ve ardından **Özellik Ekle**.
+1. Kısayol menüsünde **Ekle**ve ardından **Özellik Ekle**. **Özellik Ekle** Sihirbazı görünür.
 
-     Özellik Ekleme Sihirbazı'nı görünür.
+1. Tür `Sides` olarak **özellik adı**.
 
-4. Özellik türü açılan listesinde seçin `SHORT`.
+1. Aşağı açılan listesinde **özellik türü**seçin `short`.
 
-5. Tür *yüz* olarak **özellik adı.**
+1. Tıklayın **Tamam** özelliği ekleme işlemini sonlandırmak için.
 
-6. Tıklayın **son** özelliği ekleme işlemini sonlandırmak için.
+1. Gelen **Çözüm Gezgini**Polygon.idl açma ve sonuna aşağıdaki satırları değiştirin `IPolyCtl : IDispatch` arabirimi:
 
-Arabirimi özelliği eklediğinizde, MIDL (.idl dosyalarını derleme program) tanımlayan bir `Get` değerini almak için yöntem ve bir `Put` yöntemi yeni bir değer ayarlamak için. Eklenerek yöntemleri adlı `put_` ve `get_` özellik adı.
+    ```cpp
+    short get_Sides();
+    void set_Sides(short value);
+    ```
 
-Özellik Ekleme Sihirbazı'nı gerekli satırları .idl dosyasına ekler. Ayrıca ekler `Get` ve `Put` işlev prototipleri PolyCtl.h içindeki sınıf tanımına ve PolyCtl.cpp için boş bir uygulama ekler. Bu PolyCtl.cpp açarak ve arama işlevleri için denetleyebilirsiniz `get_Sides` ve `put_Sides`.
+    örneklerini şununla değiştirin:
 
-Özelliği almak ve ayarlamak için iskelet işlevleri artık sahip, ancak bir yerde depolanması gerekir. İşlevleri güncellemenize özelliği depolamak için bir değişken oluşturur.
+    ```cpp
+    [propget, id(1), helpstring("property Sides")] HRESULT Sides([out, retval] short *pVal);
+    [propput, id(1), helpstring("property Sides")] HRESULT Sides([in] short newVal);
+    ```
 
-#### <a name="to-create-a-variable-to-store-the-property-and-update-the-put-and-get-methods"></a>Depolama özelliği, put ve get yöntemleri bir değişken oluşturmak için
+1. Gelen **Çözüm Gezgini**PolyCtl.h açın ve sonra tanımını aşağıdaki satırları ekleyin `m_clrFillColor`:
 
-1. PolyCtl.h Çözüm Gezgini'nden açın ve sonra tanımını aşağıdaki satırı ekleyin `m_clrFillColor`:
+    [!code-cpp[NVC_ATL_Windowing#44](../atl/codesnippet/cpp/adding-a-property-to-the-control-atl-tutorial-part-3_1.h)]
 
-     [!code-cpp[NVC_ATL_Windowing#44](../atl/codesnippet/cpp/adding-a-property-to-the-control-atl-tutorial-part-3_1.h)]
+Özellik ve özelliği depolamak için bir değişken almak ve ayarlamak için iskelet işlevleri artık sahip olsa da işlevleri uygun şekilde uygulamalıdır.
 
-2. Varsayılan değerini `m_nSides`. PolyCtl.h içindeki Oluşturucusu bir satır ekleyerek bir üçgen şekli varsayılan olun:
+### <a name="to-update-the-get-and-put-methods"></a>Güncelleştirme get ve put yöntemleri
 
-     [!code-cpp[NVC_ATL_Windowing#45](../atl/codesnippet/cpp/adding-a-property-to-the-control-atl-tutorial-part-3_2.h)]
+1. Varsayılan değerini `m_nSides`. PolyCtl.h içindeki Oluşturucusu bir satır ekleyerek bir üçgen şekli varsayılan olun:
 
-3. Uygulama `Get` ve `Put` yöntemleri. `get_Sides` Ve `put_Sides` işlev bildirimleri için PolyCtl.h eklenmiştir. PolyCtl.cpp için kodu değiştirin `get_Sides` ve `put_Sides` aşağıdaki kod ile:
+    [!code-cpp[NVC_ATL_Windowing#45](../atl/codesnippet/cpp/adding-a-property-to-the-control-atl-tutorial-part-3_2.h)]
 
-     [!code-cpp[NVC_ATL_Windowing#46](../atl/codesnippet/cpp/adding-a-property-to-the-control-atl-tutorial-part-3_3.cpp)]
+1. Uygulama `Get` ve `Put` yöntemleri. `get_Sides` Ve `put_Sides` işlev bildirimleri için PolyCtl.h eklenmiştir. Şimdi için kod ekleyin `get_Sides` ve `put_Sides` aşağıdaki PolyCtl.cpp için:
+
+    [!code-cpp[NVC_ATL_Windowing#46](../atl/codesnippet/cpp/adding-a-property-to-the-control-atl-tutorial-part-3_3.cpp)]
 
 `get_Sides` Yöntemi geçerli değerini döndürür `Sides` özelliği aracılığıyla `pVal` işaretçi. İçinde `put_Sides` yöntem, kod sağlar kullanıcı ayarı `Sides` özelliğini kabul edilebilir bir değer. En az 3 olmalıdır ve bir dizi noktaları her bir kenar için kullanılacağından, maksimum değer için makul bir sınır 100'dür.
 
@@ -68,4 +76,3 @@ Artık adlı bir özelliğe sahip `Sides`. Sonraki adımda kullanmak için çizi
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Öğretici](../atl/active-template-library-atl-tutorial.md)
-

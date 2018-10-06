@@ -1,7 +1,7 @@
 ---
 title: "' % S'projesi (ATL Eğitmeni, bölüm 1) oluşturma | Microsoft Docs"
 ms.custom: get-started-article
-ms.date: 11/04/2016
+ms.date: 09/26/2018
 ms.technology:
 - cpp-atl
 ms.topic: conceptual
@@ -12,42 +12,56 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54b45ff8c7af8c8aaf7232cefa2bb4f002fc37be
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: bd53bc778b3229522d34993c72833500732323b3
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755624"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821107"
 ---
 # <a name="creating-the-project-atl-tutorial-part-1"></a>Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 
 Bu öğreticide, bir Çokgen görüntüleyen bir ActiveX nesnesini oluşturan bir nonattributed ATL projesi adım adım açıklanmaktadır. Nesne Çokgen ve kod görünümü yenileyin yapmasını kenar sayısını değiştirmek için kullanıcı vermeye yönelik seçenekler içerir.
 
 > [!NOTE]
->  ATL ve MFC genellikle Visual Studio'nun Express sürümlerinde desteklenmez.
+> ATL ve MFC genellikle Visual Studio'nun Express sürümlerinde desteklenmez.
 
 > [!NOTE]
->  Bu öğreticide, aynı kaynak kodunun Çokgen örnek olarak oluşturulur. Kaynak Kodu el ile girmekten kaçınmak istiyorsanız, buradan indirebilirsiniz [Çokgen örnek soyut](../visual-cpp-samples.md). Öğreticide iş ya da kendi projenizi hataları denetlemek için kullanmak gibi Çokgen kaynak koduna ardından başvurabilir.
+> Bu öğreticide, aynı kaynak kodunun Çokgen örnek olarak oluşturulur. Kaynak Kodu el ile girmekten kaçınmak istiyorsanız, buradan indirebilirsiniz [Çokgen örnek soyut](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/Polygon). Öğreticide iş ya da kendi projenizi hataları denetlemek için kullanmak gibi Çokgen kaynak koduna ardından başvurabilir.
+> Derleme, stdafx.h açmak ve değiştirmek için:
+> ```
+> #ifndef WINVER  
+> #define WINVER 0x0400   
+> #endif
+> ```
+> örneklerini şununla değiştirin:
+> ```
+> #ifndef WINVER  
+> #define WINVER 0x0500
+> #define _WIN32_WINNT 0x0500
+> #endif
+> ```
+> Derleyici hakkında hala şikayet `regsvr32` doğru çıkmadan değil, ancak yine de sahip olmalıdır denetim DLL oluşturulmuş ve kullanılabilir.
 
 ### <a name="to-create-the-initial-atl-project-using-the-atl-project-wizard"></a>ATL projesi Sihirbazı'nı kullanarak ilk ATL projesi oluşturmak için
 
 1. Visual Studio geliştirme ortamında tıklayın **yeni** üzerinde **dosya** menüsüne ve ardından **proje**.
 
-2. Tıklayın **Visual C++ projeleri** klasörü ve select **ATL projesi**.
+1. Açık **Visual C++** sekmenize **MFC/ATL**. Seçin **ATL projesi**.
 
-3. Tür *Çokgen* proje adı.
+1. Tür *Çokgen* proje adı.
 
-     Kaynak kodu için konum My Documents\Visual Studio projeleri için genellikle varsayılan olur ve yeni bir klasör otomatik olarak oluşturulur.
+    Kaynak kodu konumu için \Users genellikle varsayılan\\\<kullanıcıadı > \source\repos ve yeni bir klasör otomatik olarak oluşturulur.
 
-4. Tıklayın **Tamam** ve ATL projesi Sihirbazı'nı açar.
+1. Tıklayın **Tamam** ve **ATL projesi** Sihirbazı açılır.
 
-5. Tıklayın **uygulama ayarları** kullanılabilir seçenekleri görmek için.
+1. Tıklayın **uygulama ayarları** kullanılabilir seçenekleri görmek için.
 
-6. Bir denetim oluşturuyorsanız ve bir işlem sunucusu bir denetim olmalıdır gibi bırakın **uygulama türü** bir DLL olarak.
+1. Bir denetim oluşturuyorsanız ve bir işlem sunucusu bir denetim olmalıdır gibi bırakın **uygulama türü** bir DLL olarak.
 
-7. Diğer seçenekleri varsayılan değerlerinde bırakın ve tıklayın **son**.
+1. Diğer seçenekleri varsayılan değerlerinde bırakın ve tıklayın **Tamam**.
 
-ATL projesi Sihirbazı projeyi birkaç dosya oluşturarak oluşturun. Çokgen nesne genişleterek, bu dosyaları Çözüm Gezgini'nde görüntüleyebilirsiniz. Dosya aşağıda listelenmiştir.
+**ATL projesi Sihirbazı** birkaç dosya oluşturarak projesi oluşturacaksınız. Bu dosyalarda görüntüleyebileceğiniz **Çözüm Gezgini** genişleterek `Polygon` nesne. Dosya aşağıda listelenmiştir.
 
 |Dosya|Açıklama|
 |----------|-----------------|
@@ -61,13 +75,13 @@ ATL projesi Sihirbazı projeyi birkaç dosya oluşturarak oluşturun. Çokgen ne
 |stdafx.cpp|Bu dosyanın `#include` ATL uygulama dosyaları.|
 |stdafx.h|Bu dosyanın `#include` ATL üstbilgi dosyalarını.|
 
-1. Çözüm Gezgini'nde sağ `Polygon` proje.
+1. İçinde **Çözüm Gezgini**, sağ `Polygon` proje.
 
-2. Kısayol menüsünde **özellikleri**.
+1. Kısayol menüsünde **özellikleri**.
 
-3. Tıklayarak **bağlayıcı**. Değişiklik **UserRedirection başına** seçeneğini **Evet**.
+1. Tıklayarak **bağlayıcı**. Değişiklik **UserRedirection başına** seçeneğini **Evet**.
 
-4. **Tamam**'ı tıklatın.
+1. **Tamam**'ı tıklatın.
 
 Sonraki adımda, projenize bir denetim ekleyeceksiniz.
 

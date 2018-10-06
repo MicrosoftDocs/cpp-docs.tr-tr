@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85439e191ac8676603c9d7fab8a41bb126e97b9e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4420bdac9e788f80142546d8b09781a8aa3ce06d
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398670"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821393"
 ---
 # <a name="working-with-project-properties"></a>Proje Özellikleriyle Çalışma
 
@@ -250,7 +250,7 @@ Sağ bölmede değişiklik **ortam** veya **ortamı Birleştir** proje ayarları
 
 ## <a name="modifying-properties-and-targets-without-changing-the-project-file"></a>Özellikler ve hedefler, proje dosyası değiştirmeden değiştirme
 
-Proje dosyası değiştirmeden proje özellikleri ve hedefler MSBuild komut isteminden geçersiz kılabilirsiniz. Bazı özellikler geçici olarak ya da zaman zaman uygulamak istediğinizde bu kullanışlıdır. Bu, MSBuild biraz bilgi varsayar. Daha fazla bilgi için [MSBUild](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild).
+Proje dosyası değiştirmeden proje özellikleri ve hedefler MSBuild komut isteminden geçersiz kılabilirsiniz. Bazı özellikler geçici olarak ya da zaman zaman uygulamak istediğinizde bu kullanışlıdır. Bu, MSBuild biraz bilgi varsayar. Daha fazla bilgi için [MSBUild](https://docs.microsoft.com/visualstudio/msbuild/msbuild).
 
 > [!IMPORTANT]
 > .Props veya .targets dosyasını oluşturmak için XML Düzenleyicisi'nde Visual Studio ya da herhangi bir metin Düzenleyicisi'ni kullanabilirsiniz. Kullanmayın **özellik Yöneticisi** Bu senaryoda çünkü proje dosyasına özelliklerini ekler.

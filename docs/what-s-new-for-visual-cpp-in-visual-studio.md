@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc82a45c181d4a2b56670af9cc0d6da055737b8d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 07c8b18e8de5caf924cd31a18eb304778634050f
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722325"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821470"
 ---
 # <a name="whats-new-for-visual-c-in-visual-studio-2017"></a>Visual Studio 2017'de Visual C++ yenilikleri
 
@@ -65,7 +65,7 @@ Ek derleyici tanılama iyileştirmeleri. Daha fazla bilgi için [Visual Studio 2
 
 **Visual Studio 2017 sürüm 15.5**:
 
-Visual C++ çalışma zamanı performans nedeniyle daha iyi oluşturulan kod kalitesini iyileştirmeye devam eder. Bunun anlamı, basitçe kodunuzu derleyebilirsiniz ve uygulamanızı daha hızlı çalışır. Derleyici iyileştirmelerini bazıları yepyeni, koşullu skaler depoları, birleştirme çağrılarının vektörleştirme gibi `sin(x)` ve `cos(x)` içine yeni bir `sincos(x)`ve yedekli SSA İyileştiricisine ilişkin yönergeleri saydamlığından. Diğer derleyici iyileştirmeleri koşullu ifadeler, daha iyi döngü en iyi duruma getirme ve float min/maks codegen vektör hale getirici buluşsal yöntemler gibi mevcut işlevine geliştirmeleridir. Yeni bir ve daha hızlı bağlayıcı sahip **/OPT: ICF** % 9 sonuçta uygulama zaman hızlanma bağlantısını ve artımlı bağlamayı diğer performans düzeltmeleri olan. Daha fazla bilgi için [OPT (iyileştirmeler)](https://docs.microsoft.com/en-us/cpp/build/reference/opt-optimizations) ve [/Incremental (artımlı bağlantı)](https://docs.microsoft.com/en-us/cpp/build/reference/incremental-link-incrementally).
+Visual C++ çalışma zamanı performans nedeniyle daha iyi oluşturulan kod kalitesini iyileştirmeye devam eder. Bunun anlamı, basitçe kodunuzu derleyebilirsiniz ve uygulamanızı daha hızlı çalışır. Derleyici iyileştirmelerini bazıları yepyeni, koşullu skaler depoları, birleştirme çağrılarının vektörleştirme gibi `sin(x)` ve `cos(x)` içine yeni bir `sincos(x)`ve yedekli SSA İyileştiricisine ilişkin yönergeleri saydamlığından. Diğer derleyici iyileştirmeleri koşullu ifadeler, daha iyi döngü en iyi duruma getirme ve float min/maks codegen vektör hale getirici buluşsal yöntemler gibi mevcut işlevine geliştirmeleridir. Yeni bir ve daha hızlı bağlayıcı sahip **/OPT: ICF** % 9 sonuçta uygulama zaman hızlanma bağlantısını ve artımlı bağlamayı diğer performans düzeltmeleri olan. Daha fazla bilgi için [OPT (iyileştirmeler)](build/reference/opt-optimizations.md) ve [/Incremental (artımlı bağlantı)](build/reference/incremental-link-incrementally.md).
 
 Visual C++ Intel AVX-512 AVX-512 ile birlikte 128 ve 256 bit genişliğinde kayıtlara yönelik yeni işlevler getiren sunan vektör uzunluğu yönergeleri de dahil olmak üzere, destekler.
 
@@ -439,7 +439,7 @@ Daha fazla bilgi için [Boost.Test birim testi: dinamik kitaplık desteği ve ye
 
 **Visual Studio 2017 sürüm 15.7**:
 
-[CodeLens](https://docs.microsoft.com/en-us/visualstudio/ide/find-code-changes-and-other-history-with-codelens) desteklenen C++ birim testi projeleri için eklendi. Daha fazla bilgi için [C++ birim testi için CodeLens Duyurusu](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/announcing-codelens-for-c-unit-testing/).
+[CodeLens](/visualstudio/ide/find-code-changes-and-other-history-with-codelens) desteklenen C++ birim testi projeleri için eklendi. Daha fazla bilgi için [C++ birim testi için CodeLens Duyurusu](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/announcing-codelens-for-c-unit-testing/).
 
 ## <a name="visual-studio-graphics-diagnostics"></a>Visual Studio grafik tanılama
 

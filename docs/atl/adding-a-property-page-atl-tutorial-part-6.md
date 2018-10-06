@@ -1,7 +1,7 @@
 ---
 title: Özellik sayfası (ATL Eğitmeni, Bölüm 6) ekleme | Microsoft Docs
 ms.custom: get-started-article
-ms.date: 11/04/2016
+ms.date: 09/27/2018
 ms.technology:
 - cpp-atl
 ms.topic: conceptual
@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bde0db1cb349b42ffc4975b7ae95224687f896a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9d0db4d53d64def1c1f55929aa9d7514142955cf
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767975"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821149"
 ---
 # <a name="adding-a-property-page-atl-tutorial-part-6"></a>Özellik Sayfası Ekleme (ATL Eğitmeni, Bölüm 6)
 
@@ -31,23 +31,23 @@ ms.locfileid: "43767975"
 
 ## <a name="creating-the-property-page-resource"></a>Özellik sayfası kaynağı oluşturma
 
-Özellik sayfası denetiminize eklemek için ATL ekleme sınıfı Sihirbazı'nı kullanın.
+Özellik sayfası denetiminize eklemek için ATL özellik sayfası şablonunu kullanın.
 
-#### <a name="to-add-a-property-page"></a>Özellik sayfası ekleme
+### <a name="to-add-a-property-page"></a>Özellik sayfası ekleme
 
-1. Çözüm Gezgini'nde Çokgen sağ tıklayın.
+1. İçinde **Çözüm Gezgini**, sağ `Polygon`.
 
-2. Kısayol menüsünde **Ekle**ve ardından **sınıfı Ekle**.
+1. Kısayol menüsünde **Ekle** > **yeni öğe**.
 
-3. Şablonlar listesinden **ATL özellik sayfası** tıklatıp **Ekle**.
+1. Şablonlar listesinden **ATL** > **ATL özellik sayfası** tıklatıp **Ekle**.
 
-4. ATL Özellik Sayfası Sihirbazı belirdiğinde girin *PolyProp* olarak **kısa** adı.
+1. Zaman **ATL Özellik Sayfası Sihirbazı** görünen girin *PolyProp* olarak **kısa** adı.
 
-5. Tıklayın **dizeleri** açmak için **dizeleri** sayfasında ve girin **& Çokgen** olarak **başlık**.
+1. Tıklayın **dizeleri** açmak için **dizeleri** sayfasında ve girin **& Çokgen** olarak **başlık**.
 
      **Başlık** özelliği sayfasında bu sayfa için sekmesinde görünen dizedir. **Doc dizesi** bir durum satırı veya araç ipucunda koymak için bir özellik çerçevesi kullanan bir açıklaması. Varsayılan içeriklerle bırakmak için standart özellik çerçevesi şu anda bu dize kullanımda bulunmadığını unutmayın. Değil oluşturacak bir **Yardım dosyası** şu anda, bu yüzden bu metin kutusunda girişi silin.
 
-6. Tıklayın **son**, ve özellik sayfa nesnesi oluşturulur.
+1. Tıklayın **son**, ve özellik sayfa nesnesi oluşturulur.
 
 Aşağıdaki üç dosyayı oluşturulur:
 
@@ -71,19 +71,19 @@ Aşağıdaki kod değişikliklerini de oluşturulur:
 
 Şimdi, özellik sayfasında görünmesini istediğiniz alanları ekleyin.
 
-#### <a name="to-add-fields-to-the-property-page"></a>Özellik sayfasında alanları eklemek için
+### <a name="to-add-fields-to-the-property-page"></a>Özellik sayfasında alanları eklemek için
 
-1. Çözüm Gezgini'nde Polygon.rc kaynak dosyasına çift tıklayın. Bu kaynak görünümü açar.
+1. İçinde **Çözüm Gezgini**, Polygon.rc kaynak dosyasına çift tıklayın. Bu açılır **kaynak görünümü**.
 
-2. Kaynak Görünümü'nde iletişim düğümünü genişletin ve IDD_POLYPROP çift tıklayın. Görüntülenen iletişim kutusunda denetimlerinizi buraya girin bildiren bir etiket dışında boş olduğunu unutmayın.
+1. İçinde **kaynak görünümü**, genişletme `Dialog` düğüm ve çift `IDD_POLYPROP`. Görüntülenen iletişim kutusunda denetimlerinizi buraya girin bildiren bir etiket dışında boş olduğunu unutmayın.
 
-3. Etiket seçin ve okumak için değiştirin `Sides:` değiştirme tarafından **açıklamalı alt yazı** metinde **özellikleri** penceresi.
+1. Etiket seçin ve okumak için değiştirin `Sides:` değiştirme tarafından **açıklamalı alt yazı** metinde **özellikleri** penceresi.
 
-4. Etiket kutusuna metin boyutuna sığacak şekilde yeniden boyutlandırın.
+1. Etiket kutusuna metin boyutuna sığacak şekilde yeniden boyutlandırın.
 
-5. Bir düzenleme denetimi etiketin sağında araç kutusundan sürükleyin.
+1. Sürükleme bir **düzenleme denetimi** gelen **araç kutusu** etiketin sağında.
 
-6. Son olarak, değişiklik **kimliği** düzenleme denetiminin `IDC_SIDES` Özellikler penceresini kullanarak.
+1. Son olarak, değişiklik **kimliği** düzenleme denetiminin `IDC_SIDES` kullanarak **özellikleri** penceresi.
 
 Bu özellik sayfasında kaynak oluşturma işlemini tamamlar.
 
@@ -93,11 +93,11 @@ Bu özellik sayfasında kaynak oluşturma işlemini tamamlar.
 
 İlk olarak, etkinleştirme `CPolyProp` , kenar sayısını ayarlamak için sınıf olduğunda **Uygula** düğmesine basıldığında.
 
-#### <a name="to-modify-the-apply-function-to-set-the-number-of-sides"></a>Kenar sayısını ayarlamak için Uygula işlevi değiştirmek için
+### <a name="to-modify-the-apply-function-to-set-the-number-of-sides"></a>Kenar sayısını ayarlamak için Uygula işlevi değiştirmek için
 
 1. Değiştirin `Apply` PolyProp.h bir işlevde aşağıdaki kod ile:
 
-     [!code-cpp[NVC_ATL_Windowing#58](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_1.h)]
+    [!code-cpp[NVC_ATL_Windowing#58](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_1.h)]
 
 Birden fazla istemci aynı anda en bağlı bir özellik sayfası olabilir böylece `Apply` işlevi etrafında döngüye girer ve çağıran `put_Sides` Düzenle iletişim kutusundan alınan her istemcide değerine sahip. Kullanmakta olduğunuz [CComQIPtr](../atl/reference/ccomqiptr-class.md) gerçekleştiren sınıfı `QueryInterface` elde etmek için her bir nesnedeki `IPolyCtl` alanından arabirim `IUnknown` arabirimi (depolanan `m_ppUnk` dizisi).
 
@@ -107,47 +107,47 @@ Kod artık bu ayarı denetler `Sides` aslında çalışan özelliği. Başarıs�
 
 Kirli bayrağı göstermek için özellik sayfa gerekir **Uygula** düğmesi etkinleştirilmelidir. Kullanıcı değeri değiştiğinde gerçekleşir **yüz** düzenleme kutusu.
 
-#### <a name="to-handle-the-apply-button"></a>Uygula düğmesini işlemek için
+### <a name="to-handle-the-apply-button"></a>Uygula düğmesini işlemek için
 
-1. Sınıf Görünümü'nde CPolyProp sağ tıklatıp **özellikleri** kısayol menüsünde.
+1. İçinde **sınıf görünümü**, sağ `CPolyProp` tıklatıp **özellikleri** kısayol menüsünde.
 
-2. Özellikler penceresinde tıklayın **olayları** simgesi.
+1. İçinde **özellikleri** penceresinde tıklayın **olayları** simgesi.
 
-3. Genişletin `IDC_SIDES` düğümü olay listesi.
+1. Genişletin `IDC_SIDES` düğümü olay listesi.
 
-4. Seçin `EN_CHANGE`ve sağındaki açılan menüden  **\<Ekle > OnEnChangeSides**. `OnEnChangeSides` İşleyici bildirimi Polyprop.h ve Polyprop.cpp işleyici uygulamasına eklenecektir.
+1. Seçin `EN_CHANGE`ve sağındaki açılan menüden  **\<Ekle > OnEnChangeSides**. `OnEnChangeSides` İşleyici bildirimi Polyprop.h ve Polyprop.cpp işleyici uygulamasına eklenecektir.
 
 Ardından, işleyici değiştirir.
 
-#### <a name="to-modify-the-onenchangesides-method"></a>OnEnChangeSides yöntemini değiştirmek için
+### <a name="to-modify-the-onenchangesides-method"></a>OnEnChangeSides yöntemini değiştirmek için
 
 1. Polyprop.cpp için aşağıdaki kodu ekleyin `OnEnChangeSides` yöntemi (Sihirbaz buraya koymanız herhangi bir kod silme):
 
-     [!code-cpp[NVC_ATL_Windowing#59](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_2.cpp)]
+    [!code-cpp[NVC_ATL_Windowing#59](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_2.cpp)]
 
-`OnEnChangeSides` WM_COMMAND ileti için EN_CHANGE bildirimiyle gönderildiğinde çağrılır `IDC_SIDES` denetimi. `OnEnChangeSides` Daha sonra çağırır `SetDirty` ve özellik sayfası kirli, artık belirtmek için true değerini geçirir ve **Uygula** düğmesi etkinleştirilmelidir.
+`OnEnChangeSides` ne zaman çağrılacağı bir `WM_COMMAND` ile gönderilen ileti `EN_CHANGE` bildirimi `IDC_SIDES` denetimi. `OnEnChangeSides` Daha sonra çağırır `SetDirty` ve özellik sayfası kirli, artık belirtmek için true değerini geçirir ve **Uygula** düğmesi etkinleştirilmelidir.
 
 ## <a name="adding-the-property-page-to-the-control"></a>Denetime özellik sayfası ekleme
 
-Projenizde birden çok denetim olabilir çünkü ATL ekleme sınıfı Sihirbazı'nı ve ATL Özellik Sayfası Sihirbazı özellik sayfasını denetiminize sizin için otomatik olarak eklemeyin. Denetimin özellik eşlemesi için bir girdi eklemeniz gerekir.
+Projenizde birden çok denetim olabilir çünkü ATL özellik sayfası şablonu ve sihirbaz özellik sayfası denetiminize sizin için otomatik olarak eklemeyin. Denetimin özellik eşlemesi için bir girdi eklemeniz gerekir.
 
-#### <a name="to-add-the-property-page"></a>Özellik sayfasını eklemek için
+### <a name="to-add-the-property-page"></a>Özellik sayfasını eklemek için
 
-1. PolyCtl.h açın ve özellik eşlemesi için bu satırı ekleyin:
+1. PolyCtl.h açın ve özellik eşlemesi için şu satırları ekleyin:
 
-     [!code-cpp[NVC_ATL_Windowing#60](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_3.h)]
+    [!code-cpp[NVC_ATL_Windowing#60](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_3.h)]
 
 Denetimin özellik eşlemesi artık şöyle görünür:
 
 [!code-cpp[NVC_ATL_Windowing#61](../atl/codesnippet/cpp/adding-a-property-page-atl-tutorial-part-6_4.h)]
 
-CLSID gösterildiği gibi PROP_ENTRY makro kullanırsanız ancak özellik sayfası ile PROP_PAGE makro eklenen `Sides` özellik değeri denetim kaydedildiğinde da kaydedilir.
+Eklediğiniz bir `PROP_PAGE` makro kullanırsanız, ancak özellik sayfası CLSID `PROP_ENTRY` gösterildiği gibi makro `Sides` özellik değeri denetim kaydedildiğinde da kaydedilir.
 
 Makro üç parametreleri özellik açıklaması, DISPID özellik ve özelliği içeren özellik sayfasının CLSID bilgileridir. Örneğin, Visual Basic içinde yük denetimi ve kenar sayısını tasarım zamanında ayarlarsanız, bu yararlıdır. Kenar sayısını kaydedildiğinden Visual Basic projenizi yeniden yükleyin, kenar sayısını geri yüklenir.
 
 ## <a name="building-and-testing-the-control"></a>Derleme ve denetimini test etme
 
-Artık bu denetimi oluşturmak ve ActiveX denetimi Test kapsayıcısı ekleyin. Test kapsayıcısında üzerinde **Düzenle** menüsünde tıklatın **PolyCtl sınıf nesnesi**. Özellik sayfası görüntülenir; tıklayın **Çokgen** sekmesi.
+Artık bu denetimi oluşturmak ve ActiveX denetimi Test kapsayıcısı ekleyin. İçinde **Test kapsayıcısı**, **Düzenle** menüsünde tıklatın **PolyCtl sınıf nesnesi**. Özellik sayfası eklediğiniz bilgileri görüntülenir.
 
 **Uygula** düğmesi başlangıçta devre dışı. Bir değer yazmaya başlayın **yüz** kutusu ve **Uygula** düğmesi etkin hale gelir. Değer girme işlemini tamamladıktan sonra tıklayın **Uygula** düğmesi. Denetim görüntüleme değişiklikleri ve **Uygula** düğmesini tekrar devre dışı. Geçersiz bir değer girmeyi deneyin. Kümesi, hata açıklamasını içeren bir ileti kutusu görürsünüz `put_Sides` işlevi.
 
@@ -158,4 +158,3 @@ Ardından, denetiminizi Web sayfasında koyacaktır.
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Öğretici](../atl/active-template-library-atl-tutorial.md)
-

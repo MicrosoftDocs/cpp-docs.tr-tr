@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1f7d94dafa34c5ab01dfbcf28e2c429642dbf68
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d6f0e5ce08e362cef0fd625036a92c1d13885ded
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397324"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821549"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003-2015
 
@@ -2966,7 +2966,7 @@ Visual Studio 2013 C++ derleyicisi, uyuşmazlıkları Visual Studio 2010'da uygu
 
 ### <a name="mfc-and-atl"></a>MFC ve ATL
 
-- **Yalnızca Visual Studio 2013**: MFC MBCS kitaplığı dahil değildir Visual Studio'da Unicode çok popüler olduğundan ve MBCS kullanımı önemli ölçüde azaldığından. Yeni denetimlerin ve iletilerin çoğu salt Unicode olduğundan, bu değişiklik aynı zamanda MFC'yi Windows SDK ile daha paralel halde tutar. MFC MBCS kitaplığını kullanmaya devam etmeniz gerekiyorsa, Bununla birlikte, MSDN İndirme Merkezi'nden indirebilirsiniz [Visual Studio 2013 için çok baytlı MFC Kitaplığı](https://www.microsoft.com/en-us/download/details.aspx?id=40770). Visual C++ Yeniden Dağıtılabilir Paketi'nde bu kitaplık halen yer almaktadır.  (Not: MBCS DLL Visual Studio 2015 ve sonraki sürümlerde C++ Kurulum bileşenlerini dahil).
+- **Yalnızca Visual Studio 2013**: MFC MBCS kitaplığı dahil değildir Visual Studio'da Unicode çok popüler olduğundan ve MBCS kullanımı önemli ölçüde azaldığından. Yeni denetimlerin ve iletilerin çoğu salt Unicode olduğundan, bu değişiklik aynı zamanda MFC'yi Windows SDK ile daha paralel halde tutar. MFC MBCS kitaplığını kullanmaya devam etmeniz gerekiyorsa, Bununla birlikte, MSDN İndirme Merkezi'nden indirebilirsiniz [Visual Studio 2013 için çok baytlı MFC Kitaplığı](https://www.microsoft.com/download/details.aspx?id=40770). Visual C++ Yeniden Dağıtılabilir Paketi'nde bu kitaplık halen yer almaktadır.  (Not: MBCS DLL Visual Studio 2015 ve sonraki sürümlerde C++ Kurulum bileşenlerini dahil).
 
 - MFC Şeridi için erişilebilirlik değişti.  Bir tek düzeyli mimari yerine artık hiyerarşik bir mimari yoktur. Çağırarak eski davranışı hala kullanabilirsiniz `CRibbonBar::EnableSingleLevelAccessibilityMode()`.
 
