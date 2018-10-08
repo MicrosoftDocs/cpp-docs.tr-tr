@@ -16,27 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65f4b4529e0faf433ff9dc5c4fc2c0594a4d9ff6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b14d6e20f58ef5a9fbda6d640f5c8a596635d70c
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46076651"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861713"
 ---
 # <a name="c-runtime-error-r6016"></a>C çalışma zamanı hatası R6016
 
 iş parçacığının verileri için yeterli alan yok
 
 > [!NOTE]
->  Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bellek sorunu olduğundan uygulaması kapatıldı. Bu hata birçok olası nedenleri vardır, ancak bir son derece düşük bellek durumu, uygulamada, bir hata veya bir hatayı bir eklenti veya uygulama tarafından kullanılan uzantısı tarafından genellikle neden olur.
+> Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bellek sorunu olduğundan uygulaması kapatıldı. Bu hata birçok olası nedenleri vardır, ancak bir son derece düşük bellek durumu, uygulamada, bir hata veya bir hatayı bir eklenti veya uygulama tarafından kullanılan uzantısı tarafından genellikle neden olur.
 >
->  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
+> Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
 >
->  -   Çalışan diğer uygulamaları kapatın veya belleği boşaltmak için bilgisayarınızı yeniden başlatın.
-> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** uygulamayı yeniden yükleyin veya onarın.
-> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** kaldırmak onarın veya eklentiler veya uygulama tarafından kullanılan uzantıları yeniden yükleyin.
-> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
-> -   Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
+> - Çalışan diğer uygulamaları kapatın veya belleği boşaltmak için bilgisayarınızı yeniden başlatın.
+> - Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** uygulamayı yeniden yükleyin veya onarın.
+> - Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** kaldırmak onarın veya eklentiler veya uygulama tarafından kullanılan uzantıları yeniden yükleyin.
+> - Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
+> - Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
 
 **Programcıları için bilgi**
 

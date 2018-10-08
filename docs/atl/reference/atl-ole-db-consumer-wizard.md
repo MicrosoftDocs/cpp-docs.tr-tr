@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1fcaffc3eba3711accdfa13d311f5284e564b703
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 163949c4421cca8e4d5e414a18bda4ed98f32d3d
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46020439"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861648"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketicisi Sihirbazı
 
@@ -52,7 +52,7 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 
       1. **Sunucu adını seçin veya girin:** tüm kayıtlı veri sunucuları ağ üzerinde görüntülemek için aşağı açılır menüsünü tıklatın ve seçin.
 
-      2. **Sunucuda oturum açmak için bilgileri girin:** bir kullanıcı adı ve veri sunucuya oturum açmak için parola girin.
+      1. **Sunucuda oturum açmak için bilgileri girin:** bir kullanıcı adı ve veri sunucuya oturum açmak için parola girin.
 
          > [!NOTE]
          > Veri Bağlantı Özellikleri iletişim kutusunun "Parola kaydetmeye izin ver" özelliği ile bir güvenlik sorunu var. "Sunucuya oturum açmak için Enter bilgileri," iki radyo düğmeleri vardır:
@@ -63,7 +63,7 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
          > Seçerseniz **belirli bir kullanıcı adı ve parolayı kullanın**, ("Parola kaydetmeye izin ver" için onay kutusunu kullanarak) parolayı kaydetme seçeneğiniz vardır; ancak, bu seçeneği güvenli değildir. Seçtiğiniz önerilir **kullanım Windows NT tümleşik güvenliği**; bu seçenek, parolayı şifreler için güvenlidir.
          > "Parola kaydetmeye izin ver"'i seçmek istediğiniz durumlar olabilir Örneğin, özel veritabanı çözümü bir kitaplıkla yayınlıyorsanız, veritabanına doğrudan erişim değil ancak orta katmanlı bir uygulama kullanıcının (seçtiğiniz hangi kimlik doğrulama düzeni) üzerinden doğrulayın ve ardından veri sıralama sınırlamak için kullanın kullanıcı için kullanılabilir.
 
-      3. **Sunucu üzerindeki veritabanı seçin:** veri sunucusunda kayıtlı tüm veritabanlarını görüntülemek için aşağı açılır menüsünü tıklatın ve seçin.
+      1. **Sunucu üzerindeki veritabanı seçin:** veri sunucusunda kayıtlı tüm veritabanlarını görüntülemek için aşağı açılır menüsünü tıklatın ve seçin.
 
          \- veya -
 
@@ -80,13 +80,13 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
          **Bağlantı dizesini kullan:** önce almış olan veya tıklayın bir bağlantı dizesi girin **derleme** düğmesini; **veri kaynağı Seç** iletişim kutusu görüntülenir. Bir dosya veya makine veri kaynağını seçin ve tıklayın **Tamam**.
 
          > [!NOTE]
-         > Sunucu Gezgini'nde varolan bir bağlantı özelliklerini görüntüleyerek bir bağlantı dizesi alabilir veya çift tıklayarak bir bağlantı oluşturabilirsiniz **Bağlantı Ekle** Sunucu Gezgini içinde.
+         > Var olan bir bağlantı özelliklerini görüntüleyerek bir bağlantı dizesi edinebilirsiniz **Sunucu Gezgini**, ya da çift tıklayarak bir bağlantı oluşturabilirsiniz **Bağlantı Ekle** içinde **sunucusu Explorer**.
 
-      2. **Sunucuda oturum açmak için bilgileri girin:** bir kullanıcı adı ve veri sunucuya oturum açmak için parola girin.
+      1. **Sunucuda oturum açmak için bilgileri girin:** bir kullanıcı adı ve veri sunucuya oturum açmak için parola girin.
 
-      3. Kullanılacak Initial catalog girin.
+      1. Kullanılacak Initial catalog girin.
 
-      4. Tıklayın **Bağlantıyı Sına**; sınama başarılı olursa, tıklayın **Tamam**. Aksi halde oturum açma bilgilerinizi kontrol edin, başka bir veritabanı deneyin veya başka bir veri sunucusu deneyin.
+      1. Tıklayın **Bağlantıyı Sına**; sınama başarılı olursa, tıklayın **Tamam**. Aksi halde oturum açma bilgilerinizi kontrol edin, başka bir veritabanı deneyin veya başka bir veri sunucusu deneyin.
 
    - **Gelişmiş** sekmesi
 

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef670aca60b2e3156ea70480a1dafc315ae60624
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4b86fa6444889f77b306e4ae543e7d2db41d721b
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061483"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860686"
 ---
 # <a name="do-while-statement-c"></a>do-while Deyimi (C)
 
@@ -30,7 +30,7 @@ ms.locfileid: "46061483"
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Yineleme deyiminin*: &nbsp; &nbsp; &nbsp; &nbsp; **yapmak***deyimi***sırada (** *ifade***);** 
+*Yineleme deyiminin*: &nbsp; &nbsp; &nbsp; &nbsp; **yapmak***deyimi***sırada (** *ifade***);**
 
 *İfade* içinde bir *yapın-sırada* deyimi, döngü gövdesinin yürütüldükten sonra değerlendirilir. Bu nedenle, döngü gövdesinin her zaman en az bir kez yürütülür.
 
@@ -38,7 +38,7 @@ ms.locfileid: "46061483"
 
 1. İfade gövdesi yürütülür.
 
-2. Ardından, *ifade* değerlendirilir. Varsa *ifade* false ise *yapın-sırada* deyimi sonlanır ve denetim geçer programdaki sonraki deyime. Varsa *ifade* (sıfırdan farklı) işlem tekrarlanır, adım 1'den itibaren geçerlidir.
+1. Ardından, *ifade* değerlendirilir. Varsa *ifade* false ise *yapın-sırada* deyimi sonlanır ve denetim geçer programdaki sonraki deyime. Varsa *ifade* (sıfırdan farklı) işlem tekrarlanır, adım 1'den itibaren geçerlidir.
 
 *Yapın-sırada* deyimi de sonlandırılabilir bir **sonu**, **goto**, veya **dönüş** deyimi, deyim gövdesi içinde yürütülür.
 

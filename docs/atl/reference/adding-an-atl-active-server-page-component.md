@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a326b72ac5594d7ef5f0b9ad26f9bdf4e8472bd4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a9410ac275ecd321184153d45fd5b044deb80e5b
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46112999"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861518"
 ---
 # <a name="adding-an-atl-active-server-page-component"></a>Bir ATL Active Server Page bileşeni ekleme
 
@@ -36,13 +36,13 @@ Active Server Pages bileşenleri aşağıdaki gelişmiş Web geliştirme özelli
 
 - ASP hata işleme özelliklerine Web tabanlı uygulamalar için kullanabilirsiniz.
 
-### <a name="to-add-an-atl-active-server-pages-component-to-your-project"></a>ATL Active Server Pages bileşeni projenize eklemek için
+## <a name="to-add-an-atl-active-server-pages-component-to-your-project"></a>ATL Active Server Pages bileşeni projenize eklemek için
 
 1. İçinde **Çözüm Gezgini** ATL Active Server Pages bileşeni eklemek istediğiniz proje adına sağ tıklayın.
 
-2. Kısayol menüsünden tıklayın **Ekle**ve ardından **sınıfı Ekle**.
+1. Kısayol menüsünden tıklayın **Ekle**ve ardından **sınıfı Ekle**.
 
-3. İçinde [sınıfı Ekle](../../ide/add-class-dialog-box.md) Şablonlar bölmesinde, iletişim kutusu **ATL Active Server Page bileşeni**ve ardından **açık** görüntülenecek [ATL Active Server Page bileşeni Sihirbazı](../../atl/reference/atl-active-server-page-component-wizard.md).
+1. İçinde [sınıfı Ekle](../../ide/add-class-dialog-box.md) iletişim kutusundaki **şablonları** bölmesinde tıklayın **ATL Active Server Page bileşeni**ve ardından **açık** görüntülemek için [ATL Active Server Page bileşeni Sihirbazı](../../atl/reference/atl-active-server-page-component-wizard.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
@@ -52,4 +52,3 @@ Active Server Pages bileşenleri aşağıdaki gelişmiş Web geliştirme özelli
 [Yöntem ekleme](../../ide/adding-a-method-visual-cpp.md)<br/>
 [MFC sınıfı](../../mfc/reference/adding-an-mfc-class.md)<br/>
 [Genel C++ Sınıfı Ekleme](../../ide/adding-a-generic-cpp-class.md)
-

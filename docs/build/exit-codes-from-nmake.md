@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b5a593e38efb5230630ed01e65f4bfb1f2ba92a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1c70c76292b62560b1d9895aca2851b4cf56802b
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722624"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861804"
 ---
 # <a name="exit-codes-from-nmake"></a>NMAKE Çıkış Kodları
 

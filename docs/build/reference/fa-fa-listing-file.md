@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c9f1d205eff155b628081c5bc615570c44a88f08
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: eea3159bff6f2c69c94ef31d01b1d6a85104ef13
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412814"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861871"
 ---
 # <a name="fa-fa-listing-file"></a>/FA, /Fa (Listeleme Dosyası)
 
@@ -87,9 +87,9 @@ Adlı bir listeleme dosyası *gt;filename.Extension* yerleştirilir belirtilen *
 
 1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-2. Seçin **yapılandırma özellikleri** > **C/C++** > **Çıkış dosyalarını** özellik sayfası.
+1. Seçin **yapılandırma özellikleri** > **C/C++** > **Çıkış dosyalarını** özellik sayfası.
 
-3. Değiştirme **Assembler çıkışı** ayarlamak için özellik **/Fac** ve **/Fas** assembler, makine ve kaynak kodu için Seçenekler. Değiştirme **kullanım listeleme Assembler Unicode için** ayarlamak için özellik **/fau** ANSI ya da UTF-8 çıkışı için seçeneği. Değiştirme **ASM liste konumu** ayarlanacak **/Fa** dosya adını ve konumunu listeleme seçeneği.
+1. Değiştirme **Assembler çıkışı** ayarlamak için özellik **/Fac** ve **/Fas** assembler, makine ve kaynak kodu için Seçenekler. Değiştirme **kullanım listeleme Assembler Unicode için** ayarlamak için özellik **/fau** ANSI ya da UTF-8 çıkışı için seçeneği. Değiştirme **ASM liste konumu** ayarlanacak **/Fa** dosya adını ve konumunu listeleme seçeneği.
 
 Her ikisi de o ayarı unutmayın **Assembler çıkışı** ve **kullanım listeleme Assembler Unicode için** özellikleri açabilir [komut satırı uyarısı D9025](../../error-messages/tool-errors/command-line-warning-d9025.md). IDE'de bu seçenekleri birleştirmek için kullanın **ek seçenekler** alanındaki **komut satırı** özellik sayfasında bunun yerine.
 

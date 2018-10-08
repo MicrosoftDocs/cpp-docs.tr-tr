@@ -163,12 +163,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46e3926f31ec7d12da539d868cacb37e18134e96
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bd4f5ac780b36e51be63aef7ce87884284542cbb
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46109705"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861947"
 ---
 # <a name="cwindow-class"></a>CWindow sınıfı
 
@@ -382,7 +382,7 @@ class CWindow
 
 [Cdialogımpl](../../atl/reference/cdialogimpl-class.md) kalıcı veya geçici bir iletişim kutusu oluşturmanıza olanak sağlar.
 
-Pencereleri hakkında daha fazla bilgi için bkz. [Windows](https://msdn.microsoft.com/library/windows/desktop/ms632595) ve Windows SDK'sı sonraki konularda. ATL kullanarak hakkında daha fazla bilgi için bkz [ATL pencere sınıfları](../../atl/atl-window-classes.md).
+Pencereleri hakkında daha fazla bilgi için bkz. [Windows](/windows/desktop/winmsg/windows) ve Windows SDK'sı sonraki konularda. ATL kullanarak hakkında daha fazla bilgi için bkz [ATL pencere sınıfları](../../atl/atl-window-classes.md).
 
 ## <a name="requirements"></a>Gereksinimler
 

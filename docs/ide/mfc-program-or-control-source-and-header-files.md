@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cb9518f60db98bd590cecdffa09ee7d814241ac
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7ec05f200d81a9753563a654257d9df3dd50a19f
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46447914"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861115"
 ---
 # <a name="mfc-program-or-control-source-and-header-files"></a>MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları
 
@@ -36,7 +36,7 @@ Bu dosyaların tümünün bulunan *Projname* dizin ve üst bilgi dosyaları (.h)
 |Dlgproxy.cpp, Dlgproxy.h|Bir iletişim kutusu tabanlı programı, uygulama ve üst bilgi dosyasında ana iletişim kutusu için proje Otomasyon proxy sınıfı. Bu, yalnızca Otomasyon desteği seçtiyseniz kullanılır.|
 |*PROJNAME*doc.cpp, *Projname*doc.h|Türetilir ve adlı belge sınıfı uygulamak `CProjnameDoc`ve bir belgeyi başlatın, seri hale getirmek için iskelet üye işlevleri içerir (kaydetme ve yükleme) bir belge ve hata ayıklama ve tanılama uygulayın.|
 |*PROJNAME*set.h/.cpp|Bir veritabanı destekler ve kayıt kümesi sınıfı içeren bir program oluşturursanız oluşturuldu.|
-|*PROJNAME*view.cpp, *Projname*view.h|Türetilir ve adlı görünüm sınıfı uygulamak `CProjnameView`, görüntülemek ve belge verilerini yazdırmak için kullanılır. `CProjnameView` Sınıfı aşağıdaki MFC sınıflarının birinden türetilir:<br /><br /> -   [CEditView](../mfc/reference/ceditview-class.md)<br />-   [CFormView](../mfc/reference/cformview-class.md)<br />-   [CRecordView](../mfc/reference/crecordview-class.md)<br />-   [COleDBRecordView](../mfc/reference/coledbrecordview-class.md)<br />-   [CTreeView](../mfc/reference/ctreeview-class.md)<br />-   [CListView](../mfc/reference/clistview-class.md)<br />-   [CRichEditView](../mfc/reference/cricheditview-class.md)<br />-   [CScrollView](../mfc/reference/cscrollview-class.md)<br />-   [CView](../mfc/reference/cview-class.md)<br />-   [CHTMLView](../mfc/reference/chtmlview-class.md)<br />-   [CHTMLEditView](../mfc/reference/chtmleditview-class.md)<br /><br /> Projenin görünümü sınıf görünümü ve hata ayıklama ve tanılama uygulamanıza çizmek için iskelet üye işlevleri içerir. Yazdırma desteği etkinleştirilirse, ardından ileti eşlemesi girişleri için yazdırma, Yazdırma Kurulumu eklenir ve önizleme komut iletilerini yazdırma. Bu girişlerin karşılık gelen üye işlevleri temel görünümü sınıfında çağırın.|
+|*PROJNAME*view.cpp, *Projname*view.h|Türetilir ve adlı görünüm sınıfı uygulamak `CProjnameView`, görüntülemek ve belge verilerini yazdırmak için kullanılır. `CProjnameView` Sınıfı aşağıdaki MFC sınıflarının birinden türetilir:<br /><br />- [CEditView](../mfc/reference/ceditview-class.md)<br />- [CFormView](../mfc/reference/cformview-class.md)<br />- [CRecordView](../mfc/reference/crecordview-class.md)<br />- [COleDBRecordView](../mfc/reference/coledbrecordview-class.md)<br />- [CTreeView](../mfc/reference/ctreeview-class.md)<br />- [CListView](../mfc/reference/clistview-class.md)<br />- [CRichEditView](../mfc/reference/cricheditview-class.md)<br />- [CScrollView](../mfc/reference/cscrollview-class.md)<br />- [CView](../mfc/reference/cview-class.md)<br />- [CHTMLView](../mfc/reference/chtmlview-class.md)<br />- [CHTMLEditView](../mfc/reference/chtmleditview-class.md)<br /><br /> Projenin görünümü sınıf görünümü ve hata ayıklama ve tanılama uygulamanıza çizmek için iskelet üye işlevleri içerir. Yazdırma desteği etkinleştirilirse, ardından ileti eşlemesi girişleri için yazdırma, Yazdırma Kurulumu eklenir ve önizleme komut iletilerini yazdırma. Bu girişlerin karşılık gelen üye işlevleri temel görünümü sınıfında çağırın.|
 |*PROJNAME*PropPage.h, *Projname*PropPage.cpp|Bildirme ve uygulama `CProjnamePropPage` sınıfı. `CProjnamePropPage` türetilen `COlePropertyPage` ve bir çatı üye işlevini `DoDataExchange`, veri değişimi ve doğrulaması uygulamak için sağlanır.|
 |IPframe.cpp, IPframe.h|Mini sunucu veya tam sunucu seçeneği Uygulama Sihirbazı'nda kişinin seçtiyseniz oluşturulan **Otomasyon seçenekleri** sayfa (adım 3 / 6). Dosyaları türetilir ve adlı yerinde çerçeve penceresini sınıf uygulama **CInPlaceFrame**, sunucunun bir kapsayıcı program tarafından etkinleştirilen bir yerde olduğunda kullanılır.|
 |Mainfrm.cpp, Mainfrm.h|Türetilen **CMainFrame** ya da bir sınıftan [CFrameWnd](../mfc/reference/cframewnd-class.md) (için SDI uygulamaları) veya [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) (için MDI uygulamaları). **CMainFrame** sınıfı işler araç çubuğu düğmeleri ve durum çubuğu oluşturma Uygulama Sihirbazı'nda kişinin ilgili seçenekleri seçtiyseniz **uygulama seçenekleri** sayfa (adım 4 / 6). Kullanma hakkında bilgi için **CMainFrame**, bkz: [çerçeve pencere sınıfları tarafından oluşturulan Uygulama Sihirbazı'nı](../mfc/frame-window-classes-created-by-the-application-wizard.md).|

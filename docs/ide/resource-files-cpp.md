@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9ba28a426c439454d8b0723f8d2997bbefa5759
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 101d58eeb61335939db507ff6addd0c4fa7917f0
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417234"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861908"
 ---
 # <a name="resource-files-c"></a>Kaynak Dosyalar (C++)
 
@@ -31,7 +31,7 @@ Bkz: [kaynaklarıyla çalışmaya](../windows/working-with-resource-files.md) da
 
 |Dosya adı|Dizin konumu|Çözüm Gezgini konumu|Açıklama|
 |---------------|------------------------|--------------------------------|-----------------|
-|*PROJNAME*.rc|*PROJNAME*|Kaynak dosyaları|Proje için kaynak betik dosyası. Kaynak betik dosyası, proje ve proje için (örneğin, araç çubukları, iletişim kutuları veya HTML) seçilen destek türüne bağlı olarak aşağıdakileri içerir:<br /><br /> -Varsayılan menü tanımı.<br />-Tablolar Hızlandırıcı ve dize.<br />-Varsayılan **hakkında** iletişim kutusu.<br />-Başka bir iletişim kutusu.<br />-Simge dosyası (res\\*Projname*.ico).<br />-Sürüm bilgisi.<br />-Bit eşlemler.<br />-Araç çubuğu.<br />-HTML dosyaları.<br /><br /> Kaynak dosyası ' % s'dosyası Afxres.rc standart Microsoft Foundation Class kaynakları içerir.|
+|*PROJNAME*.rc|*PROJNAME*|Kaynak dosyaları|Proje için kaynak betik dosyası. Kaynak betik dosyası, proje ve proje için (örneğin, araç çubukları, iletişim kutuları veya HTML) seçilen destek türüne bağlı olarak aşağıdakileri içerir:<br /><br />-Varsayılan menü tanımı.<br />-Tablolar Hızlandırıcı ve dize.<br />-Varsayılan **hakkında** iletişim kutusu.<br />-Başka bir iletişim kutusu.<br />-Simge dosyası (res\\*Projname*.ico).<br />-Sürüm bilgisi.<br />-Bit eşlemler.<br />-Araç çubuğu.<br />-HTML dosyaları.<br /><br /> Kaynak dosyası ' % s'dosyası Afxres.rc standart Microsoft Foundation Class kaynakları içerir.|
 |Kaynak.h|*PROJNAME*|Üstbilgi Dosyaları|Proje tarafından kullanılan kaynakları için tanımları içeren kaynak üst bilgi dosyası.|
 |*PROJNAME*.rc2|*PROJNAME*\res|Kaynak dosyaları|Proje tarafından kullanılan ek kaynaklar içeren betik dosyası. Projenin .rc dosyasında .rc2 dosyayı içerebilir.<br /><br /> Birkaç farklı proje tarafından kullanılan kaynakları dahil etmek için kullanışlı bir .rc2 dosyasıdır. Farklı projelerde aynı kaynakları birkaç kez oluşturmak yerine, bunları bir .rc2 dosyaya yerleştirin ve ana .rc dosyasına .rc2 dosyasını dahil edin.|
 |*PROJNAME*.def|*PROJNAME*|Kaynak dosyaları|Modül tanım dosyası için bir DLL projesi. Bir denetim için ad ve açıklama denetimin yanı sıra, çalışma zamanı yığın boyutu sağlar.|

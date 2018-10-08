@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db0445e83bbcae6baa45d4a482489e6761fa945a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f80abd3b6270f105fecd7ef8b9988a379901b541
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069436"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860218"
 ---
 # <a name="specifying-property-pages"></a>Özellik sayfaları belirtme
 
@@ -32,12 +32,12 @@ Uygulamak için `ISpecifyPropertyPages` ATL, kullanarak aşağıdaki adımları 
 
 1. Öğesinden, bir sınıf türetin [Ispecifypropertypagesımpl](../atl/reference/ispecifypropertypagesimpl-class.md).
 
-2. Bir girdi ekleyin `ISpecifyPropertyPages` sınıfınızın COM eşlemesine.
+1. Bir girdi ekleyin `ISpecifyPropertyPages` sınıfınızın COM eşlemesine.
 
-3. Ekleme bir [PROP_PAGE](reference/property-map-macros.md#prop_page) , denetimle ilişkili her sayfa için özellik eşleme girişi.
+1. Ekleme bir [PROP_PAGE](reference/property-map-macros.md#prop_page) , denetimle ilişkili her sayfa için özellik eşleme girişi.
 
 > [!NOTE]
->  Kullanarak bir standart denetim oluştururken [ATL denetimi Sihirbazı](../atl/reference/atl-control-wizard.md), yalnızca PROP_PAGE girişleri için özellik eşlemesi eklemeniz gerekir. Sihirbazın diğer adımlar için gerekli kodu oluşturur.
+> Kullanarak bir standart denetim oluştururken [ATL denetimi Sihirbazı](../atl/reference/atl-control-wizard.md), yalnızca PROP_PAGE girişleri için özellik eşlemesi eklemeniz gerekir. Sihirbazın diğer adımlar için gerekli kodu oluşturur.
 
 Uyum gösteren kapsayıcıları aynı sırada özellik eşlemesi PROP_PAGE girişleri olarak belirtilen özellik sayfalarını görüntüler. Böylece kullanıcı denetiminiz için belirli sayfalara ilk bakın genellikle, standart özellik sayfa girdileri girişleri sonra özel sayfalarınızı özellik eşlemesi için koymanız gerekir.
 
@@ -51,4 +51,3 @@ Uyum gösteren kapsayıcıları aynı sırada özellik eşlemesi PROP_PAGE giri�
 
 [Özellik Sayfaları](../atl/atl-com-property-pages.md)<br/>
 [ATLPages örnek](../visual-cpp-samples.md)
-

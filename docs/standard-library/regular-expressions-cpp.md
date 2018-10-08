@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86c64ff0eda298ba330f3f1e1ff6d953fd859234
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: ca3d636b1dffdb3237fb94fade41c90057543b9d
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39209035"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861570"
 ---
 # <a name="regular-expressions-c"></a>Normal İfadeler (C++)
 
@@ -58,17 +58,17 @@ Bir öğe aşağıdaki şeylerden biri olabilir:
 
 - A *köşeli ayraç ifadesi* biçiminin "[`expr`]", bir karakter veya harmanlama öğesi ifadesi tarafından tanımlanan kümesinde olan hedef dizideki eşleşen `expr`, ya da formun "[^`expr`]", bir karakter veya harmanlama öğesi ifadesi tarafından tanımlanan kümeye değil hedef dizideki eşleşen `expr`.
 
-     İfade `expr` aşağıdakilerden herhangi bir birleşimini içerebilir:
+   İfade `expr` aşağıdakilerden herhangi bir birleşimini içerebilir:
 
-    -   Tek bir karakter. Bu karakter tarafından tanımlanan kümeye ekler `expr`.
+   - Tek bir karakter. Bu karakter tarafından tanımlanan kümeye ekler `expr`.
 
-    -   A *karakter aralığı* biçiminin "`ch1`-`ch2`". Kapalı aralıktaki değerler tarafından temsil edilen karakterleri ekler [`ch1`, `ch2`] tarafından tanımlanan kümeye `expr`.
+   - A *karakter aralığı* biçiminin "`ch1`-`ch2`". Kapalı aralıktaki değerler tarafından temsil edilen karakterleri ekler [`ch1`, `ch2`] tarafından tanımlanan kümeye `expr`.
 
-    -   A *karakter sınıfı* biçiminin "[:`name`:]". Adlandırılmış sınıftaki karakterleri tarafından tanımlanan kümeye ekler `expr`.
+   - A *karakter sınıfı* biçiminin "[:`name`:]". Adlandırılmış sınıftaki karakterleri tarafından tanımlanan kümeye ekler `expr`.
 
-    -   Bir *denklik sınıfı* biçiminin "[=`elt`=]". Eşdeğer harmanlama öğelerini ekler `elt` tarafından tanımlanan kümeye `expr`.
+   - Bir *denklik sınıfı* biçiminin "[=`elt`=]". Eşdeğer harmanlama öğelerini ekler `elt` tarafından tanımlanan kümeye `expr`.
 
-    -   A *harmanlama sembolü* biçiminin "[.`elt`.]". Harmanlama öğesi ekler `elt` tarafından tanımlanan kümeye `expr`.
+   - A *harmanlama sembolü* biçiminin "[.`elt`.]". Harmanlama öğesi ekler `elt` tarafından tanımlanan kümeye `expr`.
 
 - Bir *bağlantı*. ' ^' yer işareti hedef dizinin başlangıcıyla eşleşir; '$' yer işareti hedef dizinin sonuyla eşleşir.
 
@@ -403,11 +403,11 @@ Normal bir karakter geçerli dilbilgisi içinde özel bir anlamı olmayan herhan
 
 İçinde `ECMAScript`, aşağıdaki karakterlerin özel anlamları vardır:
 
-- ^  $  \  .  \*  +  ?  (  )  [  ]  {  }  &#124;
+- ^  $  \  .  \*  +  ?  (  )  \[  ]  {  }&#124;
 
 İçinde `basic` ve `grep`, aşağıdaki karakterlerin özel anlamları vardır:
 
-- biçimindeki telefon numarasıdır.   [   \
+- biçimindeki telefon numarasıdır.   \[   \
 
 Ayrıca `basic` ve `grep`, belirli bir bağlamda kullanıldıklarında aşağıdaki karakterlerin özel anlamları vardır:
 
@@ -419,7 +419,7 @@ Ayrıca `basic` ve `grep`, belirli bir bağlamda kullanıldıklarında aşağıd
 
 İçinde `extended`, `egrep`, ve `awk`, aşağıdaki karakterlerin özel anlamları vardır:
 
-- biçimindeki telefon numarasıdır.   [   \   (   \*   +   ?   {   &#124;
+- biçimindeki telefon numarasıdır.   \[   \   (   \*   +   ?   {   &#124;
 
 Ayrıca `extended`, `egrep`, ve `awk`, belirli bir bağlamda kullanıldıklarında aşağıdaki karakterlerin özel anlamları vardır.
 

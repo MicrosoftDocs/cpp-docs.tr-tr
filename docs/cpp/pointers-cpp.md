@@ -17,62 +17,52 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a39ee9c45084d03198157f427ca3edca13767e6c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7e896c1a00e45e5e7503837409903651ed2bdc3a
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024118"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861245"
 ---
 # <a name="pointers-c"></a>İşaretçiler (C++)
 
 İşaretçiler, aşağıdaki dizi kullanılarak bildirilir.
 
-```
-[storage-class-specifiers] [cv-qualifiers] type-specifiers 
-[ms-modifier] declarator ;
-```
+> \[*depolama sınıfı tanımlayıcıları*] \[ *cv niteleyicileri*] *tür tanımlayıcıları* \[ *ms-modifier*]  *bildirimci* **;**
 
-Burada herhangi bir geçerli işaretçi bildirimcisi kullanılabilir için `declarator`. Basit bir işaretçi bildirimci sözdizimi aşağıdaki gibidir:
+Burada herhangi bir geçerli işaretçi bildirimcisi kullanılabilir için *bildirimci*. Basit bir işaretçi bildirimci sözdizimi aşağıdaki gibidir:
 
-```
-* [cv-qualifiers] identifier [= expression]
-```
+> __\*__ \[*CV niteleyicileri*] *tanımlayıcı* \[ **=** *ifade*]
 
 1. Bildirim tanımlayıcıları:
 
-    - İsteğe bağlı bir depolama sınıfı tanımlayıcısı. Daha fazla bilgi için [tanımlayıcıları](../cpp/specifiers.md).
+   - İsteğe bağlı bir depolama sınıfı tanımlayıcısı. Daha fazla bilgi için [tanımlayıcıları](../cpp/specifiers.md).
 
-    - İsteğe bağlı **const** veya **geçici** olarak işaret ettiği için nesne türü için uygulama anahtar sözcüğü.
+   - İsteğe bağlı **const** veya **geçici** olarak işaret ettiği için nesne türü için uygulama anahtar sözcüğü.
 
-    - Tür belirticisi: olarak işaret ettiği nesnenin türünü temsil eden bir tür adı.
+   - Tür belirticisi: olarak işaret ettiği nesnenin türünü temsil eden bir tür adı.
 
-2. Bildirimci:
+1. Bildirimci:
 
-    - Bir isteğe bağlı Microsoft'a özgü değiştirici. Daha fazla bilgi için [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md).
+   - İsteğe bağlı Microsoft'a özgü değiştirici. Daha fazla bilgi için [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md).
 
-    - `*` işleci.
+   - __\*__ İşleci.
 
-    - İsteğe bağlı **const** veya **geçici** işaretçi için uygulama anahtar sözcüğü.
+   - İsteğe bağlı **const** veya **geçici** işaretçi için uygulama anahtar sözcüğü.
 
-    - Tanımlayıcı.
+   - Tanımlayıcı.
 
-    - İsteğe bağlı bir başlatıcı.
+   - İsteğe bağlı bir başlatıcı.
 
-     İşlevi için bir işaretçi bildirimcisi şöyle görünür:
+İşlevi için bir işaretçi bildirimcisi şöyle görünür:
 
-```
-(* [cv-qualifiers] identifier )( argument-list ) [cv-qualifers]
-[exception specification] [= expression];
-```
+> __(\*__  \[ *cv niteleyicileri*] *tanımlayıcı* **) (** *bağımsız değişken listesi* **)** \[ *cv qualifers*] \[ *özel durum belirtimi*] \[ **=** *ifade*] **;**
 
-- Bir işaretçiler dizisi için söz dizimi şu şekilde görünür:
+Bir işaretçiler dizisi için söz dizimi şu şekilde görünür:
 
-```
-* identifier [ [ constant-expression ] ]
-```
+> __\*__ *tanımlayıcı* **\[** \[ *sabit-ifade*] **]**
 
-- Birden çok bildirimcisi ve bunların başlatıcıları birlikte tek bir bildirim belirticisi aşağıdaki virgülle ayrılmış listesi bildiriminde görünebilir.
+Birden çok bildirimcisi ve bunların başlatıcıları birlikte tek bir bildirim belirticisi aşağıdaki virgülle ayrılmış listesi bildiriminde görünebilir.
 
 Bir işaretçi bildirimi basit bir örneği verilmiştir:
 

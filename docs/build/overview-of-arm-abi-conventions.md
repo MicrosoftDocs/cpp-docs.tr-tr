@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: def07f92cc05828c132ba7d34d3dcc06d4aecf50
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 4254506345ab72eccaa43968a0af9aab2dada3b9
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721454"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861492"
 ---
 # <a name="overview-of-arm32-abi-conventions"></a>ARM32 ABI kurallarına genel bakış
 
@@ -153,11 +153,11 @@ Bağımsız değişken işleme başlamadan önce başlatılması tam bir kez ger
 
 1. Sonraki çekirdek kayıt numarası (NCRN) r0 için ayarlanır.
 
-2. VFP kayıtları işaretlenmiş şekilde ayrılmamış.
+1. VFP kayıtları işaretlenmiş şekilde ayrılmamış.
 
-3. Sonraki yığın bağımsız değişken adresini (NSAA) Geçerli SP. ayarlanır
+1. Sonraki yığın bağımsız değişken adresini (NSAA) Geçerli SP. ayarlanır
 
-4. Bellekte bir sonuç döndüren bir işlev çağrılırsa r0 sonucu adresini yerleştirilir ve NCRN r1 için ayarlanır.
+1. Bellekte bir sonuç döndüren bir işlev çağrılırsa r0 sonucu adresini yerleştirilir ve NCRN r1 için ayarlanır.
 
 ### <a name="stage-b-pre-padding-and-extension-of-arguments"></a>Aşama B: öncesi doldurma ve bağımsız değişkenlerin uzantısı
 
@@ -165,9 +165,9 @@ Listedeki her bağımsız değişken için aşağıdaki listeden eşleşen ilk k
 
 1. Bağımsız değişken boyutu, statik olarak çağıran ve çağrılan tarafından belirlenemiyor bileşik bir tür ise, bağımsız değişken belleğe kopyalanır ve kopya işaretçisi tarafından değiştirildi.
 
-2. Bağımsız değişken bir bayt veya yarı 16 bit sözcük ise sıfır genişletilmiş veya işaret genişletilmiş 32 bit tam sözcük ve bir 4 baytlık bağımsız değişken olarak kabul edilir.
+1. Bağımsız değişken bir bayt veya yarı 16 bit sözcük ise sıfır genişletilmiş veya işaret genişletilmiş 32 bit tam sözcük ve bir 4 baytlık bağımsız değişken olarak kabul edilir.
 
-3. Bağımsız değişken türünün ise, boyutu 4'ün en yakın katına yuvarlanır.
+1. Bağımsız değişken türünün ise, boyutu 4'ün en yakın katına yuvarlanır.
 
 ### <a name="stage-c-assignment-of-arguments-to-registers-and-stack"></a>Aşama C: atama kaydeder ve yığın bağımsız değişken
 
@@ -175,17 +175,17 @@ Bağımsız değişken ayrılan kadar listedeki her bağımsız değişken için
 
 1. Bağımsız değişken bir VFP türüdür ve ardışık yeterli ayrılmamış VFP yazmaç uygun türde varsa, bağımsız değişkeni böyle yazmaçların en düşük numaralı sıralı tahsis edilir.
 
-2. Bağımsız değişken VFP türü ise, tüm kalan ayrılmamış kasalar kullanılamaz olarak işaretlenir. NSAA yukarı doğru bağımsız değişken türü hizalanır ve bağımsız değişken için ayarlanan NSAA yığınına kopyalanır kadar ayarlanır. NSAA ardından bağımsız değişken boyutuna göre artırılır.
+1. Bağımsız değişken VFP türü ise, tüm kalan ayrılmamış kasalar kullanılamaz olarak işaretlenir. NSAA yukarı doğru bağımsız değişken türü hizalanır ve bağımsız değişken için ayarlanan NSAA yığınına kopyalanır kadar ayarlanır. NSAA ardından bağımsız değişken boyutuna göre artırılır.
 
-3. Bağımsız değişken 8 baytlık hizalama gerektirir, NCRN sonraki bile kaydı sayıya yuvarlanır.
+1. Bağımsız değişken 8 baytlık hizalama gerektirir, NCRN sonraki bile kaydı sayıya yuvarlanır.
 
-4. 32-bit sözcüklerin bağımsız değişkenin boyutu r4 NCRN eksi fazlasını değilse, bağımsız değişken NCRN düşük numaralı kayıtları kaplayan en az önemli bitlerin ile başlangıç çekirdek kaydeder kopyalanır. NCRN kullanılan kayıtları sayısına göre artırılır.
+1. 32-bit sözcüklerin bağımsız değişkenin boyutu r4 NCRN eksi fazlasını değilse, bağımsız değişken NCRN düşük numaralı kayıtları kaplayan en az önemli bitlerin ile başlangıç çekirdek kaydeder kopyalanır. NCRN kullanılan kayıtları sayısına göre artırılır.
 
-5. NCRN r4 küçüktür ve NSAA SP için eşit ise, bağımsız değişken temel kayıtlara ve yığını arasında bölünür. Bağımsız değişkenin ilk bölümü NCRN en fazla başlangıç ve r3 dahil olmak üzere temel kaydeder kopyalanır. Kalan bağımsız değişkenin NSAA başlayan yığına kopyalanır. NCRN r4 için ayarlanır ve NSAA eksi tutarı kayıtlara geçirilen bağımsız değişken boyutuna göre artırılır.
+1. NCRN r4 küçüktür ve NSAA SP için eşit ise, bağımsız değişken temel kayıtlara ve yığını arasında bölünür. Bağımsız değişkenin ilk bölümü NCRN en fazla başlangıç ve r3 dahil olmak üzere temel kaydeder kopyalanır. Kalan bağımsız değişkenin NSAA başlayan yığına kopyalanır. NCRN r4 için ayarlanır ve NSAA eksi tutarı kayıtlara geçirilen bağımsız değişken boyutuna göre artırılır.
 
-6. Bağımsız değişken 8 baytlık hizalama gerektirir, sonraki 8 bayt hizalı adresi NSAA yuvarlanır.
+1. Bağımsız değişken 8 baytlık hizalama gerektirir, sonraki 8 bayt hizalı adresi NSAA yuvarlanır.
 
-7. Bağımsız değişken NSAA sırasında belleğe kopyalanır. Bağımsız değişken boyutuna NSAA artırılır.
+1. Bağımsız değişken NSAA sırasında belleğe kopyalanır. Bağımsız değişken boyutuna NSAA artırılır.
 
 VFP kasalar, değişen sayıda bağımsız değişken işlevleri için kullanılmaz ve 1. ve 2 aşama C kurallarını göz ardı edilir. Bu, bir bağımsız değişken içeren işlev kayıt bağımsız değişkenleri çağıran tarafından geçirilen ek bağımsız değişkenler için önüne eklediğinizden isteğe bağlı bir itme {r0-r3} ile başlayan ve ardından tüm bağımsız değişken listesi doğrudan yığından erişim anlamına gelir.
 

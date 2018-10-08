@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 829afe53d5fde976b7877475cf577b6204be8aed
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1d0aa647f6f94d31f1a06bb09b143554dba51b68
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46051093"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861752"
 ---
 # <a name="overview-of-file-translation"></a>Dosya Çevirisine Genel Bakış
 
@@ -32,9 +32,9 @@ C++ programları, C programlarında olduğu gibi bir veya daha fazla dosyadan ol
 
 1. Sözcük temelli belirteç oluşturma. Karakter eşleme ve üç harf işleme, satır birleştirme ve belirteç oluşturma bu çeviri aşamasında gerçekleştirilir.
 
-2. Ön işleme. Bu çeviri aşaması, tarafından başvurulan yedek kaynak dosyalarını getirir `#include` yönergeleri, "dize haline getirme" ve "yönergeleri karakterleştirme" işler ve belirteç yapıştırma ve makro genişletme işlemlerini gerçekleştirir (bkz [önişlemci yönergeleri](../preprocessor/preprocessor-directives.md) içinde *önişlemci başvurusu* daha fazla bilgi için). Ön işleme aşamasının sonucu, birlikte bir "çeviri birimini" tanımlayan belirteçler dizisidir.
+1. Ön işleme. Bu çeviri aşaması, tarafından başvurulan yedek kaynak dosyalarını getirir `#include` yönergeleri, "dize haline getirme" ve "yönergeleri karakterleştirme" işler ve belirteç yapıştırma ve makro genişletme işlemlerini gerçekleştirir (bkz [önişlemci yönergeleri](../preprocessor/preprocessor-directives.md) içinde *önişlemci başvurusu* daha fazla bilgi için). Ön işleme aşamasının sonucu, birlikte bir "çeviri birimini" tanımlayan belirteçler dizisidir.
 
-     Önişlemci yönergeleri her zaman sayı işareti ile başlayan (**#**) karakteri (yani satırdaki ilk boşluk olmayan karakter sayı işareti olmalıdır). Belirli bir satırda yalnızca bir önişlemci yönergesi görünebilir. Örneğin:
+   Önişlemci yönergeleri her zaman sayı işareti ile başlayan (**#**) karakteri (yani satırdaki ilk boşluk olmayan karakter sayı işareti olmalıdır). Belirli bir satırda yalnızca bir önişlemci yönergesi görünebilir. Örneğin:
 
     ```cpp
     #include <iostream>  // Include text of iostream in
@@ -43,9 +43,9 @@ C++ programları, C programlarında olduğu gibi bir veya daha fazla dosyadan ol
                          //  text string).
     ```
 
-3. Kod oluşturma. Bu çeviri aşaması, nesne kodu oluşturmak için ön işleme aşamasında oluşturulan belirteçleri kullanır.
+1. Kod oluşturma. Bu çeviri aşaması, nesne kodu oluşturmak için ön işleme aşamasında oluşturulan belirteçleri kullanır.
 
-     Bu aşamada, kaynak kodunun sözdizimsel ve semantik denetimi gerçekleştirilir.
+   Bu aşamada, kaynak kodunun sözdizimsel ve semantik denetimi gerçekleştirilir.
 
 Bkz: [çeviri aşamaları](../preprocessor/phases-of-translation.md) içinde *önişlemci başvurusu* daha fazla bilgi için.
 

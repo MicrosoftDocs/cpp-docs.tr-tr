@@ -64,19 +64,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd0858763d31e1f46e1cb366154871f06ae7a910
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7053c72536c0ab91420f1bbc068f39843eb99c1b
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400412"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861817"
 ---
 # <a name="cimage-class"></a>Cımage sınıfı
 
 `CImage` Yük ve görüntüleri JPEG, BMP, GIF ve da Taşınabilir Ağ Grafikleri (PNG) biçimlerde kaydetme olanağı dahil olmak üzere Gelişmiş bit eşlem desteği sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -163,10 +163,10 @@ class CImage
 Ekli bir bit eşlem DIB bölümü olup olmadığını belirlemek için çağrı [IsDibSection](#isdibsection).
 
 > [!NOTE]
-> **Not** içinde Visual Studio .NET 2003, bu sınıf, sayısını sayısını tutar `CImage` oluşturulan nesneler. Her sayısı ölçeklendirilinceye 0, işlev `GdiplusShutdown` GDI +'TARAFINDAN kullanılan kaynakları serbest bırakmak için otomatik olarak çağrılır. Bu, tüm sağlar `CImage` doğrudan veya dolaylı olarak, DLL tarafından oluşturulan nesneler her zaman yok edilir düzgün ve `GdiplusShutdown` gelen çağrılmaz `DllMain`.
+> Visual Studio .NET 2003'te, bu sınıfın bir sayısını tutar `CImage` oluşturulan nesneler. Her sayısı ölçeklendirilinceye 0, işlev `GdiplusShutdown` GDI +'TARAFINDAN kullanılan kaynakları serbest bırakmak için otomatik olarak çağrılır. Bu, tüm sağlar `CImage` doğrudan veya dolaylı olarak, DLL tarafından oluşturulan nesneler her zaman yok edilir düzgün ve `GdiplusShutdown` gelen çağrılmaz `DllMain`.
 
 > [!NOTE]
->  Genel kullanarak `CImage` DLL'de nesneleri önerilmez. Genel bir kullanmanız gerekiyorsa `CImage` DLL'deki, çağrı [CImage::ReleaseGDIPlus](#releasegdiplus) açıkça GDI +'TARAFINDAN kullanılan kaynakları serbest bırakmak için.
+> Genel kullanarak `CImage` DLL'de nesneleri önerilmez. Genel bir kullanmanız gerekiyorsa `CImage` DLL'deki, çağrı [CImage::ReleaseGDIPlus](#releasegdiplus) açıkça GDI +'TARAFINDAN kullanılan kaynakları serbest bırakmak için.
 
 `CImage` Yeni bir seçilemez [CDC](../../mfc/reference/cdc-class.md). `CImage` kendi HDC görüntüsü oluşturur. HBITMAP bir HBITMAP yalnızca bir HDC teker teker seçilebilir çünkü ilişkili `CImage` içinde başka bir HDC seçilemez. Bir bu CDC gerekiyorsa, gelen HDC almak `CImage` ve [CDC::FromHandle] için verin (.. /.. /MFC/Reference/cdc-class.MD#cdc__fromhandle.
 
@@ -183,7 +183,6 @@ m_myImage.ReleaseDC();
 
 Kullanırken `CImage` hangi üye işlevleri, projenizdeki bir işaretçiye beklediğiniz bir MFC projesinde Not bir [CBitmap](../../mfc/reference/cbitmap-class.md) nesne. Kullanmak istiyorsanız `CImage` böyle bir işlevi ile gibi [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#appendmenu), kullanın [CBitmap::FromHandle](../../mfc/reference/cbitmap-class.md#fromhandle), geçirin, `CImage` HBITMAP ve döndürülen `CBitmap*`.  
 
-
 ## <a name="example"></a>Örnek
 
 ```cpp  
@@ -199,15 +198,14 @@ void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 }
 ```
 
-
 Aracılığıyla `CImage`, gerçek bit DIB bölümün erişebilirsiniz. Kullanabileceğiniz bir `CImage` daha önce kullandığınız bir Win32 HBITMAP veya DIB bölümü herhangi bir nesne.
 
 Kullanabileceğiniz `CImage` MFC veya ATL
 
 > [!NOTE]
->  Kullanarak proje oluşturduğunuzda `CImage`, tanımlamanız gerekir `CString` dahil önce `atlimage.h`. Projenize ATL MFC olmadan kullanıyorsa, dahil `atlstr.h` dahil önce `atlimage.h`. Projeniz MFC (veya bir ATL projesi ile MFC desteği olup olmadığını) kullanıyorsa, dahil `afxstr.h` dahil önce `atlimage.h`.  
+> Kullanarak proje oluşturduğunuzda `CImage`, tanımlamanız gerekir `CString` dahil önce `atlimage.h`. Projenize ATL MFC olmadan kullanıyorsa, dahil `atlstr.h` dahil önce `atlimage.h`. Projeniz MFC (veya bir ATL projesi ile MFC desteği olup olmadığını) kullanıyorsa, dahil `afxstr.h` dahil önce `atlimage.h`.  
 >   
->  Benzer şekilde, içermelidir `atlimage.h` dahil önce `atlimpl.cpp`. Bunu bir kolayca gerçekleştirmek için dahil `atlimage.h` içinde `stdafx.h`.
+> Benzer şekilde, içermelidir `atlimage.h` dahil önce `atlimpl.cpp`. Bunu bir kolayca gerçekleştirmek için dahil `atlimage.h` içinde `stdafx.h`.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -219,81 +217,81 @@ Saydam veya yarı saydam fırçalarla piksel olan bit eşlemler görüntüler.
 
 ```
 BOOL AlphaBlend(
-HDC hDestDC,
-int xDest,
-int yDest,
-BYTE bSrcAlpha = 0xff,
-BYTE bBlendOp = AC_SRC_OVER) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    BYTE bSrcAlpha = 0xff,
+    BYTE bBlendOp = AC_SRC_OVER) const throw();
 
 BOOL AlphaBlend(
-HDC hDestDC,
-const POINT& pointDest,
-BYTE bSrcAlpha = 0xff,
-BYTE bBlendOp = AC_SRC_OVER) const throw();
+    HDC hDestDC,
+    const POINT& pointDest,
+    BYTE bSrcAlpha = 0xff,
+    BYTE bBlendOp = AC_SRC_OVER) const throw();
 
 BOOL AlphaBlend(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-int nSrcWidth,
-int nSrcHeight,
-BYTE bSrcAlpha = 0xff,
-BYTE bBlendOp = AC_SRC_OVER);
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    int nSrcWidth,
+    int nSrcHeight,
+    BYTE bSrcAlpha = 0xff,
+    BYTE bBlendOp = AC_SRC_OVER);
 
 BOOL AlphaBlend(
-HDC hDestDC,
-const RECT& rectDest,
-const RECT& rectSrc,
-BYTE bSrcAlpha = 0xff,
-BYTE bBlendOp = AC_SRC_OVER);
+    HDC hDestDC,
+    const RECT& rectDest,
+    const RECT& rectSrc,
+    BYTE bSrcAlpha = 0xff,
+    BYTE bBlendOp = AC_SRC_OVER);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*hDestDC*  
+*hDestDC*<br/>
 Hedef cihaz bağlamına işleyin.
 
-*xDest*  
+*xDest*<br/>
 X koordinatı, hedef dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*yDest*  
+*yDest*<br/>
 Y koordinatı, hedef dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*bSrcAlpha*  
+*bSrcAlpha*<br/>
 Tüm kaynak bit eşlem kullanılacak bir saydam alfa değeri. ' % S'varsayılan 0xff (255) görüntünüzü donuk olduğunu ve yalnızca alfa değerleri piksel başına kullanmak istediğinizi varsayar.
 
-*bBlendOp*  
+*bBlendOp*<br/>
 Alfa karıştırma işlev için kaynak ve hedef bit eşlemler, tüm kaynak bit eşlem ve kaynak bit eşlemi için biçim bilgilerini uygulanması için genel bir alfa değeri. Kaynak ve hedef blend işlevleri şu an için AC_SRC_OVER sınırlıdır.
 
-*pointDest*  
+*pointDest*<br/>
 Bir başvuru bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) mantıksal birimler cinsinden hedef dikdörtgenin sol üst köşesinde tanımlayan yapısı.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 Hedef dikdörtgenin mantıksal birimler cinsinden genişliği.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 Hedef dikdörtgenin mantıksal birimler cinsinden yüksekliği.
 
-*Tanımlar*  
+*Tanımlar*<br/>
 Mantıksal x koordinatını kaynak dikdörtgenin sol üst köşesinde.
 
-*ysrc &*  
+*ysrc &*<br/>
 Mantıksal y koordinatını kaynak dikdörtgenin sol üst köşesinde.
 
-*nSrcWidth*  
+*nSrcWidth*<br/>
 Kaynak dikdörtgenin mantıksal birimler cinsinden genişliği.
 
-*nSrcHeight*  
+*nSrcHeight*<br/>
 Kaynak dikdörtgenin mantıksal birimler cinsinden yüksekliği.
 
-*rectDest*  
+*rectDest*<br/>
 Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.
 
-*rectSrc*  
+*rectSrc*<br/>
 Bir başvuru bir `RECT` yapısını tanımlayan kaynak.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -316,10 +314,10 @@ void Attach(HBITMAP hBitmap, DIBOrientation eOrientation = DIBOR_DEFAULT) throw(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hbıtmap*  
+*Hbıtmap*<br/>
 Bir HBITMAP tanıtıcı.
 
-*eOrientation*  
+*eOrientation*<br/>
 Bit eşlem yönünü belirtir. Aşağıdakilerden biri olabilir:
 
 - Bit eşlem yönünü DIBOR_DEFAULT işletim sistemi tarafından belirlenir. Ancak, bu her zaman istenen sonuçları tüm işletim sistemlerine sahip olmayabilirsiniz. Bunun hakkında daha fazla bilgi için aşağıdaki Bilgi Bankası makalesine bakın (**Q186586**): sorun: GetObject() her zaman döndürür pozitif yüksekliği için DIB bölümler.
@@ -338,66 +336,66 @@ Bir bit eşlemi Kaynak cihaz bağlamında bu geçerli bir cihaz bağlamına kopy
 
 ```
 BOOL BitBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL BitBlt(
-HDC hDestDC,
-const POINT& pointDest,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const POINT& pointDest,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL BitBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL BitBlt(
-HDC hDestDC,
-const RECT& rectDest,
-const POINT& pointSrc,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    const POINT& pointSrc,
+    DWORD dwROP = SRCCOPY) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*hDestDC*  
+*hDestDC*<br/>
 Hedef HDC.
 
-*xDest*  
+*xDest*<br/>
 Mantıksal x koordinatını hedef dikdörtgenin sol üst köşesinde.
 
-*yDest*  
+*yDest*<br/>
 Mantıksal y koordinatını hedef dikdörtgenin sol üst köşesinde.
 
-*dwROP*  
+*dwROP*<br/>
 Gerçekleştirilecek ızgara işlemi. Izgara işlemi kodları, kaynak, hedef ve desen bit (şu anda seçili fırça tarafından tanımlandığı şekilde) hedef oluşturmak için tam olarak nasıl birleştirileceğini tanımlar. Bkz: [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) diğer ızgara işlemi kodları ve açıklamaları listesi için Windows SDK.
 
-*pointDest*  
+*pointDest*<br/>
 A [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) hedef dikdörtgenin sol üst köşesinde belirten yapısı.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 Hedef dikdörtgenin mantıksal birimler cinsinden genişliği.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 Hedef dikdörtgenin mantıksal birimler cinsinden yüksekliği.
 
-*Tanımlar*  
+*Tanımlar*<br/>
 Mantıksal x koordinatını kaynak dikdörtgenin sol üst köşesinde.
 
-*ysrc &*  
+*ysrc &*<br/>
 Mantıksal y koordinatını kaynak dikdörtgenin sol üst köşesinde.
 
-*rectDest*  
+*rectDest*<br/>
 A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) hedef dikdörtgenin belirten yapısı.
 
-*pointSrc*  
+*pointSrc*<br/>
 A `POINT` kaynak dikdörtgenin sol üst köşesinde belirten yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -430,30 +428,30 @@ Oluşturur bir `CImage` bit eşlem ve daha önce oluşturulmuş ekleme `CImage` 
 
 ```
 BOOL Create(
-int nWidth,
-int nHeight,
-int nBPP,
-DWORD dwFlags = 0) throw();
+    int nWidth,
+    int nHeight,
+    int nBPP,
+    DWORD dwFlags = 0) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*nWidth*  
+*nWidth*<br/>
 Genişliği `CImage` piksel cinsinden bir bit eşlem.
 
-*nHeight*  
+*nHeight*<br/>
 Yüksekliğini `CImage` piksel cinsinden bir bit eşlem. Varsa *nHeight* bit eşlem aşağıdan yukarıya DIB ve kendi başlangıç sol alt köşesine pozitif. Varsa *nHeight* , bit eşlem yukarıdan aşağı DIB negatiftir ve sol üst köşesinde kaynağına ise.
 
-*nBPP*  
+*nBPP*<br/>
 Bit eşlemin piksel başına bit sayısı. Genellikle, 4, 8, 16, 24 veya 32. 1 tek renkli bir bit eşlemler veya maskeleri olabilir.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Bitmap nesnesi bir alfa kanalı olup olmadığını belirtir. Sıfır veya daha fazla aşağıdaki değerlerin bir birleşimi olabilir:
 
 - *createAlphaChannel* varsa kullanılabilir *nBPP* 32 ' dir ve *eCompression* BI_RGB olduğu. Belirtilmişse, oluşturulmuş görüntü 4 bayt (alfasayısal olmayan 32 bit bir görüntü içinde kullanılmayan) her pikselin depolanan her bir pikseli için bir alfa (Saydamlık) değere sahip. Bu alfa kanalı, otomatik olarak çağrıldığında kullanılır [CImage::AlphaBlend](#alphablend).
 
 > [!NOTE]
->  Yapılan çağrıda [CImage::Draw](#draw), alfa kanalı ile görüntüleri otomatik olarak alfa karışık hedef.
+> Yapılan çağrıda [CImage::Draw](#draw), alfa kanalı ile görüntüleri otomatik olarak alfa karışık hedef.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -465,36 +463,36 @@ Oluşturur bir `CImage` bit eşlem ve daha önce oluşturulmuş ekleme `CImage` 
 
 ```
 BOOL CreateEx(
-int nWidth,
-int nHeight,
-int nBPP,
-DWORD eCompression,
-const DWORD* pdwBitmasks = NULL,
-DWORD dwFlags = 0) throw();
+    int nWidth,
+    int nHeight,
+    int nBPP,
+    DWORD eCompression,
+    const DWORD* pdwBitmasks = NULL,
+    DWORD dwFlags = 0) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*nWidth*  
+*nWidth*<br/>
 Genişliği `CImage` piksel cinsinden bir bit eşlem.
 
-*nHeight*  
+*nHeight*<br/>
 Yüksekliğini `CImage` piksel cinsinden bir bit eşlem. Varsa *nHeight* bit eşlem aşağıdan yukarıya DIB ve kendi başlangıç sol alt köşesine pozitif. Varsa *nHeight* , bit eşlem yukarıdan aşağı DIB negatiftir ve sol üst köşesinde kaynağına ise.
 
-*nBPP*  
+*nBPP*<br/>
 Bit eşlemin piksel başına bit sayısı. Genellikle, 4, 8, 16, 24 veya 32. 1 tek renkli bir bit eşlemler veya maskeleri olabilir.
 
-*eCompression*  
+*eCompression*<br/>
 Sıkıştırılmış bir aşağıdan yukarıya bit eşlem (yukarıdan aşağıya Dıb'lerin sıkıştırılamaz) için sıkıştırma türünü belirtir. Aşağıdaki değerlerden biri olabilir:
 
 - Sıkıştırılmamış BI_RGB biçimi. Çağrılırken bu değeri belirterek `CImage::CreateEx` çağırmakla eşdeğerdir `CImage::Create`.
 
 - BI_BITFIELDS biçimi sıkıştırılmamış ve renk tablosunu kırmızı, yeşil ve mavi bileşenlerinin sırasıyla her pikseli belirten üç DWORD renk maskeleri oluşur. Bu, bit eşlemler 16 ve 32 bpp kullanıldığında geçerlidir.
 
-*pdwBitfields*  
+*pdwBitfields*<br/>
 Yalnızca *eCompression* ayarlanır BI_BITFIELDS için Aksi takdirde, NULL olmalıdır. Hangi bitlerin her pikselin rengin kırmızı, yeşil ve mavi bileşenlerinin sırasıyla kullanılan belirten üç DWORD bit maskesi, bir dizi için bir işaretçi. Bit alanları için kısıtlamaları hakkında daha fazla bilgi için bkz: [BITMAPINFOHEADER](https://msdn.microsoft.com/library/windows/desktop/dd183376) Windows SDK.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Bitmap nesnesi bir alfa kanalı olup olmadığını belirtir. Sıfır veya daha fazla aşağıdaki değerlerin bir birleşimi olabilir:
 
 - *createAlphaChannel* varsa kullanılabilir *nBPP* 32 ' dir ve *eCompression* BI_RGB olduğu. Belirtilmişse, oluşturulmuş görüntü 4 bayt (alfasayısal olmayan 32 bit bir görüntü içinde kullanılmayan) her pikselin depolanan her bir pikseli için bir alfa (Saydamlık) değere sahip. Bu alfa kanalı, otomatik olarak çağrıldığında kullanılır [CImage::AlphaBlend](#alphablend).
@@ -541,78 +539,78 @@ Bir bit eşlemi Kaynak cihaz bağlamında geçerli cihaz bağlamına kopyalar.
 
 ```
 BOOL Draw(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-int nSrcWidth,
-int nSrcHeight) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    int nSrcWidth,
+    int nSrcHeight) const throw();
 
 BOOL Draw(
-HDC hDestDC,
-const RECT& rectDest,
-const RECT& rectSrc) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    const RECT& rectSrc) const throw();
 
 BOOL Draw(
-HDC hDestDC,
-int xDest,
-int yDest) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest) const throw();
 
 BOOL Draw(
-HDC hDestDC,
-const POINT& pointDest) const throw();
+    HDC hDestDC,
+    const POINT& pointDest) const throw();
 
 BOOL Draw(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight) const throw();
 
 BOOL Draw(
-HDC hDestDC,
-const RECT& rectDest) const throw();
+    HDC hDestDC,
+    const RECT& rectDest) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*hDestDC*  
+*hDestDC*<br/>
 Hedef cihaz bağlamının işleyici.
 
-*xDest*  
+*xDest*<br/>
 X koordinatı, hedef dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*yDest*  
+*yDest*<br/>
 Y koordinatı, hedef dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 Hedef dikdörtgenin mantıksal birimler cinsinden genişliği.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 Hedef dikdörtgenin mantıksal birimler cinsinden yüksekliği.
 
-*Tanımlar*  
+*Tanımlar*<br/>
 X koordinatı, kaynak dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*ysrc &*  
+*ysrc &*<br/>
 Y koordinatı, kaynak dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*nSrcWidth*  
+*nSrcWidth*<br/>
 Kaynak dikdörtgenin mantıksal birimler cinsinden genişliği.
 
-*nSrcHeight*  
+*nSrcHeight*<br/>
 Kaynak dikdörtgenin mantıksal birimler cinsinden yüksekliği.
 
-*rectDest*  
+*rectDest*<br/>
 Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.
 
-*rectSrc*  
+*rectSrc*<br/>
 Bir başvuru bir `RECT` yapısını tanımlayan kaynak.
 
-*pointDest*  
+*pointDest*<br/>
 Bir başvuru bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) mantıksal birimler cinsinden hedef dikdörtgenin sol üst köşesinde tanımlayan yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -642,7 +640,7 @@ Bit eşlem arabellek için işaretçi. Ukazatel ukazuje, bit eşlem aşağıdan 
 Tarafından döndürülen değerin yanı sıra bu işaretçisi kullanılarak [GetPitch](#getpitch), bulun ve görüntünün tek tek her piksel ile değiştirin.
 
 > [!NOTE]
->  Bu yöntem yalnızca DIB bölüm bit eşlemler destekler. Sonuç olarak, size piksel erişim bir `CImage` DIB bölümün piksel olduğu gibi nesne. Döndürülen işaretçi (0, 0) konumundaki piksel işaret eder.
+> Bu yöntem yalnızca DIB bölüm bit eşlemler destekler. Sonuç olarak, size piksel erişim bir `CImage` DIB bölümün piksel olduğu gibi nesne. Döndürülen işaretçi (0, 0) konumundaki piksel işaret eder.
 
 ##  <a name="getbpp"></a>  CImage::GetBPP
 
@@ -667,20 +665,21 @@ Piksel başına bit olduğundan genellikle 1, 4, 8, 16, 24 veya 32. Bkz: `biBitC
 Kırmızı, yeşil, mavi (RGB) renk değerleri DIB bölümünün paleti girdileri aralığını alır.
 
 ```
-void GetColorTable(UINT iFirstColor,
-UINT nColors,
-RGBQUAD* prgbColors) const throw();
+void GetColorTable(
+    UINT iFirstColor,
+    UINT nColors,
+    RGBQUAD* prgbColors) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*iFirstColor*  
+*iFirstColor*<br/>
 Alınacak ilk giriş renk tablosu dizini.
 
-*nColors*  
+*nColors*<br/>
 Alınacak renkli Tablo girdileri sayısı.
 
-*prgbColors*  
+*prgbColors*<br/>
 Bir işaretçi dizisinin işaretçisi [RGBQUAD](/windows/desktop/api/wingdi/ns-wingdi-tagrgbquad) rengini almak için yapılar tablo girişleri.
 
 ##  <a name="getdc"></a>  CImage::GetDC
@@ -704,25 +703,26 @@ Her çağrı için `GetDC`, bir sonraki çağrı olmalıdır [ReleaseDC](#releas
 Görüntüleri kaydetmek için kullanılabilir görüntü biçimlerini bulur.
 
 ```
-static HRESULT GetExporterFilterString(CSimpleString& strExporters,
-CSimpleArray<GUID>& aguidFileTypes,
-LPCTSTR pszAllFilesDescription = NULL,
-DWORD dwExclude = excludeDefaultSave,
-TCHAR chSeparator = _T('|'));
+static HRESULT GetExporterFilterString(
+    CSimpleString& strExporters,
+    CSimpleArray<GUID>& aguidFileTypes,
+    LPCTSTR pszAllFilesDescription = NULL,
+    DWORD dwExclude = excludeDefaultSave,
+    TCHAR chSeparator = _T('|'));
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*strExporters*  
+*strExporters*<br/>
 Bir başvuru bir `CSimpleString` nesne. Bkz: **açıklamalar** daha fazla bilgi için.
 
-*aguidFileTypes*  
+*aguidFileTypes*<br/>
 GUID'ler, dizedeki dosya türlerinden birini karşılık gelen her öğe dizisi. Örnekte *pszAllFilesDescription* aşağıdaki *aguidFileTypes*[0] GUID_NULL ve kalan dizi değerlerini geçerli işletim sistemi tarafından desteklenen görüntü dosyası biçimlerini.
 
 > [!NOTE]
->  Sabitler tam bir listesi için bkz. **görüntü dosya biçimi sabitleri** Windows SDK.
+> Sabitler tam bir listesi için bkz. **görüntü dosya biçimi sabitleri** Windows SDK.
 
-*pszAllFilesDescription*  
+*pszAllFilesDescription*<br/>
 Bu parametre NULL değilse, filtre dizesi listenin başında bir ek filtre gerekir. Bu filtre, geçerli değerini olacaktır *pszAllFilesDescription* açıklaması için listedeki diğer dışarı Aktarıcı tarafından desteklenen herhangi bir genişletme dosya kabul eder.
 
 Örneğin:  
@@ -736,7 +736,7 @@ _T("All Image Files"));
 ```
 
 
-*dwExclude*  
+*dwExclude*<br/>
 Bit bayrakları listesinden Dışlanmak için hangi dosya türlerinin belirten dizi. İzin verilen bayraklar:
 
 - `excludeGIF` 0x01 dışlar GIF dosyaları =.
@@ -761,7 +761,7 @@ Bit bayrakları listesinden Dışlanmak için hangi dosya türlerinin belirten d
 
 - `excludeDefaultSave` = `excludeIcon &#124; excludeEMF &#124; excludeWMF` Genellikle özel gereksinimler sahip oldukları için kaydetme, varsayılan olarak bu dosyaları hariç tutulur.
 
-*chSeparator*  
+*chSeparator*<br/>
 Resim biçimleri arasında kullanılan ayırıcı. Bkz: **açıklamalar** daha fazla bilgi için.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -799,25 +799,26 @@ Piksel cinsinden görüntü yüksekliği.
 Görüntü yüklemek için kullanılabilir görüntü biçimlerini bulur.
 
 ```
-static HRESULT GetImporterFilterString(CSimpleString& strImporters,
-CSimpleArray<GUID>& aguidFileTypes,
-LPCTSTR pszAllFilesDescription = NULL,
-DWORD dwExclude = excludeDefaultLoad,
-TCHAR chSeparator = _T('|'));
+static HRESULT GetImporterFilterString(
+    CSimpleString& strImporters,
+    CSimpleArray<GUID>& aguidFileTypes,
+    LPCTSTR pszAllFilesDescription = NULL,
+    DWORD dwExclude = excludeDefaultLoad,
+    TCHAR chSeparator = _T('|'));
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*strImporters*  
+*strImporters*<br/>
 Bir başvuru bir `CSimpleString` nesne. Bkz: **açıklamalar** daha fazla bilgi için.
 
-*aguidFileTypes*  
+*aguidFileTypes*<br/>
 GUID'ler, dizedeki dosya türlerinden birini karşılık gelen her öğe dizisi. Örnekte *pszAllFilesDescription* aşağıdaki *aguidFileTypes*[0] GUID_NULL kalan dizi değerlerini ile geçerli işletim sistemi tarafından desteklenen görüntü dosyası biçimlerini vardır.
 
 > [!NOTE]
->  Sabitler tam bir listesi için bkz. **görüntü dosya biçimi sabitleri** Windows SDK.
+> Sabitler tam bir listesi için bkz. **görüntü dosya biçimi sabitleri** Windows SDK.
 
-*pszAllFilesDescription*  
+*pszAllFilesDescription*<br/>
 Bu parametre NULL değilse, filtre dizesi listenin başında bir ek filtre gerekir. Bu filtre, geçerli değerini olacaktır *pszAllFilesDescription* açıklaması için listedeki diğer dışarı Aktarıcı tarafından desteklenen herhangi bir genişletme dosya kabul eder.
 
 Örneğin:  
@@ -831,7 +832,7 @@ _T("All Image Files"));
 ```
 
 
-*dwExclude*  
+*dwExclude*<br/>
 Bit bayrakları listesinden Dışlanmak için hangi dosya türlerinin belirten dizi. İzin verilen bayraklar:
 
 - `excludeGIF` 0x01 dışlar GIF dosyaları =.
@@ -856,7 +857,7 @@ Bit bayrakları listesinden Dışlanmak için hangi dosya türlerinin belirten d
 
 - `excludeDefaultSave` = `excludeIcon &#124; excludeEMF &#124; excludeWMF` Genellikle özel gereksinimler sahip oldukları için kaydetme, varsayılan olarak bu dosyaları hariç tutulur.
 
-*chSeparator*  
+*chSeparator*<br/>
 Resim biçimleri arasında kullanılan ayırıcı. Bkz: **açıklamalar** daha fazla bilgi için.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -908,22 +909,22 @@ Aralık bayt cinsinden temsil eden bir bit eşlem satırın başına iki bellek 
 Kullanım `GetPitch` ile [GetBits](#getbits) tek tek her piksel görüntü bulunamadı.
 
 > [!NOTE]
->  Bu yöntem yalnızca DIB bölüm bit eşlemler destekler.
+> Bu yöntem yalnızca DIB bölüm bit eşlemler destekler.
 
 ##  <a name="getpixel"></a>  CImage::GetPixel
 
 Tarafından belirtilen konumda piksel rengi alır *x* ve *y*.
 
 ```
-COLORREF GetPixel(int x,int y) const throw();
+COLORREF GetPixel(int x, int y) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 X koordinatı piksel.
 
-*Y*  
+*Y*<br/>
 Y koordinatını piksel.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -935,15 +936,15 @@ Kırmızı, yeşil, mavi (RGB) değeri piksel. Piksel geçerli kırpma bölgesin
 Bir pikselin tam adresi alır.
 
 ```
-void* GetPixelAddress(int x,int y) throw();
+void* GetPixelAddress(int x, int y) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 X koordinatı piksel.
 
-*Y*  
+*Y*<br/>
 Y koordinatını piksel.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -953,7 +954,7 @@ Adres koordinatlarını bir piksel, bit eşlem ve piksel başına bit aralığı
 Bu yöntem, sahip değerinden 8 bit / piksel biçimleri için piksel içeren bayt adresini döndürür. Örneğin, görüntü biçimi 4 bit / piksel, varsa, `GetPixelAddress` gerekir bayt ve ilk piksel adresini döndürür hesaplamak için bayt başına 2 piksel.
 
 > [!NOTE]
->  Bu yöntem yalnızca DIB bölüm bit eşlemler destekler.
+> Bu yöntem yalnızca DIB bölüm bit eşlemler destekler.
 
 ##  <a name="gettransparentcolor"></a>  CImage::GetTransparentColor
 
@@ -1026,7 +1027,7 @@ Dizine TRUE; Aksi durumda FALSE.
 Yalnızca 8-bit bit eşlem olduğunda bu yöntem, TRUE döndürür. (256 renk) veya daha az.
 
 > [!NOTE]
->  Bu yöntem yalnızca DIB bölüm bit eşlemler destekler.
+> Bu yöntem yalnızca DIB bölüm bit eşlemler destekler.
 
 ##  <a name="isnull"></a>  CImage::IsNull
 
@@ -1067,10 +1068,10 @@ HRESULT Load(IStream* pStream) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pszFileName*  
+*pszFileName*<br/>
 Yüklemek için resim dosyası adını içeren bir dize işaretçisi.
 
-*pStream*  
+*pStream*<br/>
 Yüklemek için resim dosyası adını içeren bir akış için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1089,23 +1090,23 @@ Görüntü bit eşlem kaynağı yükler.
 
 ```
 void LoadFromResource(
-HINSTANCE hInstance,
-LPCTSTR pszResourceName) throw();
+    HINSTANCE hInstance,
+    LPCTSTR pszResourceName) throw();
 
 void LoadFromResource(
-HINSTANCE hInstance,
-UINT nIDResource) throw();
+    HINSTANCE hInstance,
+    UINT nIDResource) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*HINSTANCE*  
+*HINSTANCE*<br/>
 Yüklenen görüntüyü içeren modül örneğine işleyin.
 
-*pszResourceName*  
+*pszResourceName*<br/>
 Yüklemek için görüntüyü içeren kaynak adını içeren dize işaretçisi.
 
-*nIDResource*  
+*nIDResource*<br/>
 Yüklemek için kaynak kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1118,85 +1119,85 @@ Belirtilen maske ve ızgara işlemi kullanarak kaynak ve hedef bit eşlemler iç
 
 ```
 BOOL MaskBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-HBITMAP hbmMask,
-int xMask,
-int yMask,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    HBITMAP hbmMask,
+    int xMask,
+    int yMask,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL MaskBlt(
-HDC hDestDC,
-const RECT& rectDest,
-const POINT& pointSrc,
-HBITMAP hbmMask,
-const POINT& pointMask,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    const POINT& pointSrc,
+    HBITMAP hbmMask,
+    const POINT& pointMask,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL MaskBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-HBITMAP hbmMask,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    HBITMAP hbmMask,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL MaskBlt(
-HDC hDestDC,
-const POINT& pointDest,
-HBITMAP hbmMask,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const POINT& pointDest,
+    HBITMAP hbmMask,
+    DWORD dwROP = SRCCOPY) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*hDestDC*  
+*hDestDC*<br/>
 Kaynak olan yürütülebilir dosya içeren modül tanıtıcısını.
 
-*xDest*  
+*xDest*<br/>
 X koordinatı, hedef dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*yDest*  
+*yDest*<br/>
 Y koordinatı, hedef dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 Hedef dikdörtgenin ve kaynak bit eşlemi, mantıksal birimler cinsinden genişliği.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 Hedef dikdörtgenin ve kaynak bit eşlemi, mantıksal birimler cinsinden yüksekliği.
 
-*Tanımlar*  
+*Tanımlar*<br/>
 Mantıksal x koordinatını kaynak bit eşlemi sol üst köşesinde.
 
-*ysrc &*  
+*ysrc &*<br/>
 Mantıksal y koordinatını kaynak bit eşlemi sol üst köşesinde.
 
-*hbmMask*  
+*hbmMask*<br/>
 Renk bit eşlemi Kaynak cihaz bağlamındaki birlikte, bit eşlemi renkliye dönüştürmesi gerekirse maskesi işleyin.
 
-*xMask*  
+*xMask*<br/>
 Tarafından belirtilen maskesi eşlemiyle yatay piksel uzaklığı *hbmMask* parametresi.
 
-*yMask*  
+*yMask*<br/>
 Tarafından belirtilen maskesi eşlemiyle dikey piksel uzaklığı *hbmMask* parametresi.
 
-*dwROP*  
+*dwROP*<br/>
 Ön ve arka plan Üçlü ızgara işlemi birleşimi, kaynak ve hedef veri denetlemek için yöntemini kullanan kodları belirtir. Arka plan tarama işlem kodu dwpoint bu değerinin yüksek düzeyli baytı depolanır; ön plan tarama işlem kodu dwpoint bu değerinin düşük baytını depolanır; Bu değer, düşük düzey word göz ardı edilir ve sıfır olmalıdır. Ön plan ve arka plan bağlamında, bu yöntem bir tartışma için bkz `MaskBlt` Windows SDK. Ortak ızgara işlemi kodları listesi için bkz. `BitBlt` Windows SDK.
 
-*rectDest*  
+*rectDest*<br/>
 Bir başvuru bir `RECT` yapısı, hedef belirleme.
 
-*pointSrc*  
+*pointSrc*<br/>
 A `POINT` kaynak dikdörtgenin sol üst köşesinde belirten yapısı.
 
-*pointMask*  
+*pointMask*<br/>
 A `POINT` maskesi bit eşlem sol üst köşesinde belirten yapısı.
 
-*pointDest*  
+*pointDest*<br/>
 Bir başvuru bir `POINT` mantıksal birimler cinsinden hedef dikdörtgenin sol üst köşesinde tanımlayan yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1217,62 +1218,62 @@ Bit bloğu aktarımı bir hedef cihaz bağlamında bir eğdiğinizde Paralel Ken
 
 ```
 BOOL PlgBlt(
-HDC hDestDC,
-const POINT* pPoints,
-HBITMAP hbmMask = NULL) const throw();
+    HDC hDestDC,
+    const POINT* pPoints,
+    HBITMAP hbmMask = NULL) const throw();
 
 BOOL PlgBlt(
-HDC hDestDC,
-const POINT* pPoints,
-int xSrc,
-int ySrc,
-int nSrcWidth,
-int nSrcHeight,
-HBITMAP hbmMask = NULL,
-int xMask = 0,
-int yMask = 0) const throw();
+    HDC hDestDC,
+    const POINT* pPoints,
+    int xSrc,
+    int ySrc,
+    int nSrcWidth,
+    int nSrcHeight,
+    HBITMAP hbmMask = NULL,
+    int xMask = 0,
+    int yMask = 0) const throw();
 
 BOOL PlgBlt(
-HDC hDestDC,
-const POINT* pPoints,
-const RECT& rectSrc,
-HBITMAP hbmMask = NULL,
-const POINT& pointMask = CPoint(0, 0)) const throw();
+    HDC hDestDC,
+    const POINT* pPoints,
+    const RECT& rectSrc,
+    HBITMAP hbmMask = NULL,
+    const POINT& pointMask = CPoint(0, 0)) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*hDestDC*  
+*hDestDC*<br/>
 Hedef cihaz bağlamının işleyici.
 
-*pPoints*  
+*pPoints*<br/>
 Hedef eğdiğinizde Paralel Kenar üç köşelerini tanımlayan üç nokta mantıksal alan içinde bir dizi için bir işaretçi. Kaynak dikdörtgenin sol üst köşesinde bu dizi, bu dizinin ikinci noktasına sağ üst köşenin ve sol alt köşesine üçüncü noktasına ilk noktanın eşleştirilir. Kaynak dikdörtgenin sağ alt köşedeki eğdiğinizde Paralel Kenar dördüncü örtülü noktasına eşlenir.
 
-*hbmMask*  
+*hbmMask*<br/>
 Kaynak dikdörtgenin renkleri maskelemek için kullanılan isteğe bağlı tek renkli bir bitmap işleyici.
 
-*Tanımlar*  
+*Tanımlar*<br/>
 X koordinatı, kaynak dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*ysrc &*  
+*ysrc &*<br/>
 Y koordinatı, kaynak dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*nSrcWidth*  
+*nSrcWidth*<br/>
 Kaynak dikdörtgenin mantıksal birimler cinsinden genişliği.
 
-*nSrcHeight*  
+*nSrcHeight*<br/>
 Kaynak dikdörtgenin mantıksal birimler cinsinden yüksekliği.
 
-*xMask*  
+*xMask*<br/>
 Bit eşlemi renkliye dönüştürmesi gerekirse sol üst köşesinin x-koordinatı.
 
-*yMask*  
+*yMask*<br/>
 Bit eşlemi renkliye dönüştürmesi gerekirse sol üst köşesinin y-koordinatı.
 
-*rectSrc*  
+*rectSrc*<br/>
 Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı koordinatları kaynak dikdörtgenin belirtme.
 
-*pointMask*  
+*pointMask*<br/>
 A [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) maskesi bit eşlem sol üst köşesinde belirten yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1314,22 +1315,24 @@ Genel ayrılan kaynakları serbest bırakmak için bu yöntem çağrılmalıdır
 Görüntüyü belirtilen akış veya dosya diskte kaydeder.
 
 ```
-HRESULT Save(IStream* pStream,
-REFGUID guidFileType) const throw();
+HRESULT Save(
+    IStream* pStream,
+    REFGUID guidFileType) const throw();
 
-HRESULT Save(LPCTSTR pszFileName,
-REFGUID guidFileType= GUID_NULL) const throw();
+HRESULT Save(
+    LPCTSTR pszFileName,
+    REFGUID guidFileType = GUID_NULL) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*pStream*  
+*pStream*<br/>
 Dosya resim verilerini içeren bir COM IStream nesnesine bir işaretçi.
 
-*pszFileName*  
+*pszFileName*<br/>
 Görüntü için dosya adı için bir işaretçi.
 
-*guidFileType*  
+*guidFileType*<br/>
 Resmi olarak kaydetmek için dosya türü. Aşağıdakilerden biri olabilir:
 
 - `ImageFormatBMP` Sıkıştırılmamış bit eşlem görüntüsü.
@@ -1341,7 +1344,7 @@ Resmi olarak kaydetmek için dosya türü. Aşağıdakilerden biri olabilir:
 - `ImageFormatGIF` Bir GIF görüntüsünü sıkıştırılmış.
 
 > [!NOTE]
->  Sabitler tam bir listesi için bkz. **görüntü dosya biçimi sabitleri** Windows SDK.
+> Sabitler tam bir listesi için bkz. **görüntü dosya biçimi sabitleri** Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1364,13 +1367,13 @@ void SetColorTable(
 
 ### <a name="parameters"></a>Parametreler
 
-*iFirstColor*  
+*iFirstColor*<br/>
 İlk giriş ayarlamak için renk tablosu dizini.
 
-*nColors*  
+*nColors*<br/>
 Ayarlanacak renkli Tablo girdileri sayısı.
 
-*prgbColors*  
+*prgbColors*<br/>
 Bir işaretçi dizisinin işaretçisi [RGBQUAD](/windows/desktop/api/wingdi/ns-wingdi-tagrgbquad) girişlerini yapıları rengini ayarlamak için tablo.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1387,13 +1390,13 @@ void SetPixel(int x, int y, COLORREF color) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 Ayarlanacak piksel yatay konumu.
 
-*Y*  
+*Y*<br/>
 Ayarlanacak piksel dikey konumu.
 
-*Renk*  
+*Renk*<br/>
 Piksel ayarladığınız rengi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1410,13 +1413,13 @@ void SetPixelIndexed(int x, int y, int iIndex) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 Ayarlanacak piksel yatay konumu.
 
-*Y*  
+*Y*<br/>
 Ayarlanacak piksel dikey konumu.
 
-*İIndex*  
+*İIndex*<br/>
 Renk paletini renkte dizini.
 
 ##  <a name="setpixelrgb"></a>  CImage::SetPixelRGB
@@ -1425,28 +1428,28 @@ Tarafından belirtilen konumlarda piksel ayarlar *x* ve *y* belirttiği renklere
 
 ```
 void SetPixelRGB(  
-int x,
-int y,
-BYTE r,
-BYTE g,
-BYTE b) throw();
+    int x,
+    int y,
+    BYTE r,
+    BYTE g,
+    BYTE b) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 Ayarlanacak piksel yatay konumu.
 
-*Y*  
+*Y*<br/>
 Ayarlanacak piksel dikey konumu.
 
-*r*  
+*r*<br/>
 Kırmızı renkli yoğunluğu.
 
-*g*  
+*g*<br/>
 Yeşil renk yoğunluğu.
 
-*b*  
+*b*<br/>
 Mavi renk yoğunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1463,7 +1466,7 @@ LONG SetTransparentColor(LONG iTransparentColor) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*iTransparentColor*  
+*iTransparentColor*<br/>
 Bir renk paletini, ayarlamak için saydam için renk dizini. -1, renk saydam olarak ayarlıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1476,73 +1479,73 @@ Bir bit eşlemi Kaynak cihaz bağlamında bu geçerli bir cihaz bağlamına kopy
 
 ```
 BOOL StretchBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL StretchBlt(
-HDC hDestDC,
-const RECT& rectDest,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL StretchBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-int nSrcWidth,
-int nSrcHeight,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    int nSrcWidth,
+    int nSrcHeight,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL StretchBlt(
-HDC hDestDC,
-const RECT& rectDest,
-const RECT& rectSrc,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    const RECT& rectSrc,
+    DWORD dwROP = SRCCOPY) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*hDestDC*  
+*hDestDC*<br/>
 Hedef cihaz bağlamının işleyici.
 
-*xDest*  
+*xDest*<br/>
 X koordinatı, hedef dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*yDest*  
+*yDest*<br/>
 Y koordinatı, hedef dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 Hedef dikdörtgenin mantıksal birimler cinsinden genişliği.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 Hedef dikdörtgenin mantıksal birimler cinsinden yüksekliği.
 
-*dwROP*  
+*dwROP*<br/>
 Gerçekleştirilecek ızgara işlemi. Izgara işlemi kodları, kaynak, hedef ve desen bit (şu anda seçili fırça tarafından tanımlandığı şekilde) hedef oluşturmak için tam olarak nasıl birleştirileceğini tanımlar. Bkz: [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) diğer ızgara işlemi kodları ve açıklamaları listesi için Windows SDK.
 
-*rectDest*  
+*rectDest*<br/>
 Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.
 
-*Tanımlar*  
+*Tanımlar*<br/>
 X koordinatı, kaynak dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*ysrc &*  
+*ysrc &*<br/>
 Y koordinatı, kaynak dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*nSrcWidth*  
+*nSrcWidth*<br/>
 Kaynak dikdörtgenin mantıksal birimler cinsinden genişliği.
 
-*nSrcHeight*  
+*nSrcHeight*<br/>
 Kaynak dikdörtgenin mantıksal birimler cinsinden yüksekliği.
 
-*rectSrc*  
+*rectSrc*<br/>
 Bir başvuru bir `RECT` yapısını tanımlayan kaynak.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1559,73 +1562,73 @@ Bir bit eşlemi Kaynak cihaz bağlamında bu geçerli bir cihaz bağlamına kopy
 
 ```
 BOOL TransparentBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-UINT crTransparent = CLR_INVALID) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    UINT crTransparent = CLR_INVALID) const throw();
 
 BOOL TransparentBlt(
-HDC hDestDC,
-const RECT& rectDest,
-UINT crTransparent = CLR_INVALID) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    UINT crTransparent = CLR_INVALID) const throw();
 
 BOOL TransparentBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-int nSrcWidth,
-int nSrcHeight,
-UINT crTransparent = CLR_INVALID) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    int nSrcWidth,
+    int nSrcHeight,
+    UINT crTransparent = CLR_INVALID) const throw();
 
 BOOL TransparentBlt(
-HDC hDestDC,
-const RECT& rectDest,
-const RECT& rectSrc,
-UINT crTransparent = CLR_INVALID) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    const RECT& rectSrc,
+    UINT crTransparent = CLR_INVALID) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*hDestDC*  
+*hDestDC*<br/>
 Hedef cihaz bağlamının işleyici.
 
-*xDest*  
+*xDest*<br/>
 X koordinatı, hedef dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*yDest*  
+*yDest*<br/>
 Y koordinatı, hedef dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 Hedef dikdörtgenin mantıksal birimler cinsinden genişliği.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 Hedef dikdörtgenin mantıksal birimler cinsinden yüksekliği.
 
-*crTransparent*  
+*crTransparent*<br/>
 Saydam olarak değerlendirilecek kaynak bit eşlemi rengi. Varsayılan olarak, clr_ınvalıd, renk resminin saydam rengi ayarlanmış olduğunu belirten kullanılmalıdır.
 
-*rectDest*  
+*rectDest*<br/>
 Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.
 
-*Tanımlar*  
+*Tanımlar*<br/>
 X koordinatı, kaynak dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*ysrc &*  
+*ysrc &*<br/>
 Y koordinatı, kaynak dikdörtgenin sol üst köşesinde, mantıksal birimleri.
 
-*nSrcWidth*  
+*nSrcWidth*<br/>
 Kaynak dikdörtgenin mantıksal birimler cinsinden genişliği.
 
-*nSrcHeight*  
+*nSrcHeight*<br/>
 Kaynak dikdörtgenin mantıksal birimler cinsinden yüksekliği.
 
-*rectSrc*  
+*rectSrc*<br/>
 Bir başvuru bir `RECT` yapısını tanımlayan kaynak.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1635,7 +1638,6 @@ Başarılı, aksi takdirde FALSE ise TRUE.
 ### <a name="remarks"></a>Açıklamalar
 
 `TransparentBlt` Kaynak bit eşlemleri 4 bit / piksel ve 8 bit / piksel desteklenir. Kullanım [CImage::AlphaBlend](#alphablend) saydamlığı olan 32 bit-piksel başına bit eşlemler belirtmek için.
-
 
 ### <a name="example"></a>Örnek  
 
@@ -1666,7 +1668,6 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 }
 ```
 
-
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [MMXSwarm örnek](../../visual-cpp-samples.md)<br/>
@@ -1676,4 +1677,3 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)<br/>
 [CİHAZDAN bağımsız bit eşlemler](/windows/desktop/gdi/device-independent-bitmaps)<br/>
 [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)   
-

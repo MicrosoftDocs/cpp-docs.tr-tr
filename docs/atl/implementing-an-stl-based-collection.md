@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d414df9d5e5f7d930497d42b5ec73d92a65ac3cc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cc7df3233b5605c4b19269571d1afa0f5a6215ae
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116717"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861102"
 ---
 # <a name="implementing-a-c-standard-library-based-collection"></a>Bir C++ Standart Kitaplığı temelli koleksiyon uygulama
 
@@ -57,15 +57,15 @@ Otomasyon istemcileri düşünülerek tasarlanan bir salt okunur koleksiyon arab
 
 1. Otomasyon istemcilerine erişir çünkü koleksiyon arabirimleri genellikle çift `_NewEnum` özelliği aracılığıyla `IDispatch::Invoke`. Ancak, ikili arabirimler görüntüleme için tercih edilir, böylece Otomasyon istemcileri kalan yöntemler vtable aracılığıyla erişebilirsiniz.
 
-2. Çift arabirim veya dispinterface çalışma zamanında genişletilmiş değil, (diğer bir deyişle, ek yöntemleri veya özellikleri aracılığıyla sağlamayacak `IDispatch::Invoke`), uygulamanız gerekir **nonextensible** tanımınıza özniteliği. Bu öznitelik, derleme zamanında tam kod doğrulama gerçekleştirmek Otomasyon istemcileri sağlar. Bu durumda, genişletilmiş arabirimi değil.
+1. Çift arabirim veya dispinterface çalışma zamanında genişletilmiş değil, (diğer bir deyişle, ek yöntemleri veya özellikleri aracılığıyla sağlamayacak `IDispatch::Invoke`), uygulamanız gerekir **nonextensible** tanımınıza özniteliği. Bu öznitelik, derleme zamanında tam kod doğrulama gerçekleştirmek Otomasyon istemcileri sağlar. Bu durumda, genişletilmiş arabirimi değil.
 
-3. Bu özelliği kullanabilmek için Otomasyon istemcileri istiyorsanız doğru DISPID önemlidir. (DISPID_NEWENUM içinde yalnızca bir alt çizgi olduğuna dikkat edin.)
+1. Bu özelliği kullanabilmek için Otomasyon istemcileri istiyorsanız doğru DISPID önemlidir. (DISPID_NEWENUM içinde yalnızca bir alt çizgi olduğuna dikkat edin.)
 
-4. Herhangi bir değer DISPID sağlayabilirsiniz `Item` özelliği. Ancak, `Item` koleksiyon öğesinin varsayılan özelliği yapmak için genellikle DISPID_VALUE kullanır. Bu açıkça adlandırma olmadan özelliğine başvurmak Otomasyon istemcileri sağlar.
+1. Herhangi bir değer DISPID sağlayabilirsiniz `Item` özelliği. Ancak, `Item` koleksiyon öğesinin varsayılan özelliği yapmak için genellikle DISPID_VALUE kullanır. Bu açıkça adlandırma olmadan özelliğine başvurmak Otomasyon istemcileri sağlar.
 
-5. Dönüş değeri için kullanılan veri türünü `Item` COM istemcileri endişe kadar bir koleksiyonda depolanan öğenin türünü bir özelliktir. BSTR standart COM dize türü kullanması gereken şekilde arabirimi dizeyi döndürür. Kısa bir süre içinde anlatıldığı gibi verileri farklı bir biçimde dahili olarak depolayabilirsiniz.
+1. Dönüş değeri için kullanılan veri türünü `Item` COM istemcileri endişe kadar bir koleksiyonda depolanan öğenin türünü bir özelliktir. BSTR standart COM dize türü kullanması gereken şekilde arabirimi dizeyi döndürür. Kısa bir süre içinde anlatıldığı gibi verileri farklı bir biçimde dahili olarak depolayabilirsiniz.
 
-6. DISPID için kullanılan değer `Count` özelliği tamamen isteğe bağlı. Bu özellik için standart hiçbir DISPID yoktur.
+1. DISPID için kullanılan değer `Count` özelliği tamamen isteğe bağlı. Bu özellik için standart hiçbir DISPID yoktur.
 
 ##  <a name="vcconstorage_and_exposure_typedefs"></a> Depolama ve Etkilenme için tür tanımları oluşturma
 
@@ -114,4 +114,3 @@ Artık, seçtiğiniz istemci ile kodu test edebilirsiniz.
 [Koleksiyonlar ve numaralandırmalar](../atl/atl-collections-and-enumerators.md)<br/>
 [ATLCollections örnek](../visual-cpp-samples.md)<br/>
 [ATL Kopyalama İlkesi Sınıfları](../atl/atl-copy-policy-classes.md)
-

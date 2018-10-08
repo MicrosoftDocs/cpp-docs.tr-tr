@@ -18,156 +18,156 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 56dd2e864fa7a0e01b618fcc4143bde74b3a46ee
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3ab75c1a8b0c6addf41366c63f14305b68ce5bc5
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110763"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860699"
 ---
 # <a name="using-multiple-accessors-on-a-rowset"></a>Satır Kümesinde Çoklu Erişimci Kullanma
 
-Çoklu Erişimci kullanmak gereken üç temel senaryo vardır:  
-  
-- **Birden çok okuma/yazma satır kümeleri.** Bu senaryoda, bir birincil anahtar içeren bir tablo vardır. Satırın birincil anahtarı dahil olmak üzere tüm sütunları okuyabilmesini istiyorsunuz. Ayrıca, (birincil anahtar sütunu yazamadığınız) birincil anahtar dışındaki tüm sütunları verileri yazmak amacıyla yönetebilmek istiyorsunuz. Bu durumda, iki erişimci ayarlayın:  
-  
-    -   Erişimci 0 tüm sütunları içerir.  
-  
-    -   Erişimci 1 birincil anahtarı dışındaki tüm sütunları içerir.  
-  
-- **Performans.** Bu senaryoda, bir veya daha fazla sütun büyük miktarda veri, örneğin, grafik, ses veya video dosyaları içerir. Bir satıra taşıma her zaman bunu yapmanız bu nedenle, uygulamanızın performansını düşürebilecek çünkü büyük olasılıkla sütunu ile büyük veri dosyası, almak istediğiniz değil.  
-  
-     İlk erişimci büyük ölçekli veri dışındaki tüm sütunları içerir ve bu verileri bu sütunları otomatik olarak alır ayrı erişimci ayarlayabilirsiniz. Otomatik erişimci budur. Yalnızca büyük veri içeren sütun ikinci erişimci alır, ancak bu verileri bu sütunun otomatik olarak almaz. Güncelleştirme veya isteğe bağlı olarak büyük veri getirme diğer yöntemleri olabilir.  
-  
-    -   Erişimci 0 otomatik erişimci olduğu; büyük ölçekli veri dışındaki tüm sütunları alır.  
-  
-    -   Erişimci 1 otomatik erişimci değil; büyük ölçekli veri sütunu alır.  
-  
-     Otomatik bağımsız değişken, erişimci otomatik erişimci olup olmadığını belirtmek için kullanın.  
-  
-- **Birden fazla ISequentialStream sütunu.** Bu senaryoda, birden fazla sütun içeren sahip `ISequentialStream` veri. Ancak, her bir erişimci birle sınırlı olur `ISequentialStream` veri akışı. Bu sorunu çözmenin birkaç erişimci, her birini içeren ayarlayın `ISequentialStream` işaretçi.  
-  
-Normalde erişimciler kullanarak oluşturduğunuz [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [END_ACCESSOR](../../data/oledb/end-accessor.md) makroları. Ayrıca [db_accessor](../../windows/db-accessor.md) özniteliği. (Erişimci daha ayrıntılı açıklanır [kullanıcı kayıtlarını](../../data/oledb/user-records.md).) Makrolar veya öznitelik erişimci otomatik ya da otomatik olmayan erişimci olup olmadığını belirtin:  
-  
-- Otomatik erişimci yöntemlerini gibi hareket `MoveFirst`, `MoveLast`, `MoveNext`, ve `MovePrev` tüm sütunları otomatik olarak belirtilen için veri alma. Otomatik erişimci erişimci 0 olmalıdır.  
-  
-- Siz açıkça bir yöntem çağırmak kadar bir otomatik olmayan erişimcisinde alma gerçekleşmez `Update`, `Insert`, `Fetch`, veya `Delete`. Yukarıda açıklanan senaryoda her hareket tüm sütunları almak istemeyebilirsiniz. Bir veya daha fazla sütun ayrı bir erişimci yerleştirin ve aşağıda gösterildiği gibi bir otomatik olmayan erişimcisi hale getirebilirsiniz.  
-  
-Aşağıdaki örnek, okuma ve yazma çoklu erişimci kullanma SQL Server pubs veritabanı işleri tabloya çoklu erişimci kullanır. Çoklu Erişimci en yaygın kullanımı budur; Yukarıdaki "birden çok okuma/yazma satır kümeleri" senaryo bakın.  
-  
-Kullanıcı kayıt sınıfı aşağıdaki gibidir. İki erişimci ayarlar: erişimci 0 yalnızca birincil anahtar sütunu (kimlik) ve 1 erişimci diğer sütunları içerir.  
-  
-```cpp  
-class CJobs  
-{  
-public:  
-    enum {  
-        sizeOfDescription = 51  
-    };  
-  
-    short nID;  
-    char szDescription[ sizeOfDescription ];  
-    short nMinLvl;  
-    short nMaxLvl;  
-  
-    DWORD dwID;  
-    DWORD dwDescription;  
-    DWORD dwMinLvl;  
-    DWORD dwMaxLvl;  
-  
-BEGIN_ACCESSOR_MAP(CJobs, 2)  
-    // Accessor 0 is the automatic accessor  
-    BEGIN_ACCESSOR(0, true)  
-        COLUMN_ENTRY_STATUS(1, nID, dwID)  
-    END_ACCESSOR()  
-    // Accessor 1 is the non-automatic accessor  
-    BEGIN_ACCESSOR(1, true)  
-        COLUMN_ENTRY_STATUS(2, szDescription, dwDescription)  
-        COLUMN_ENTRY_STATUS(3, nMinLvl, dwMinLvl)  
-        COLUMN_ENTRY_STATUS(4, nMaxLvl, dwMaxLvl)  
-    END_ACCESSOR()  
-END_ACCESSOR_MAP()  
-};  
-```  
-  
-Ana kod aşağıdaki gibidir. Çağırma `MoveNext` otomatik olarak veri erişimci 0'ı kullanarak birincil anahtar sütunu kimliği alır. Not nasıl `Insert` yöntemi için birincil anahtar sütunu yazılmasını engellemek için son kullanan erişimci 1 yakın.  
-  
-```cpp  
-int main(int argc, char* argv[])  
-{  
-    // Initalize COM  
-    ::CoInitialize(NULL);  
-  
-    // Create instances of the data source and session  
-    CDataSource source;  
-    CSession session;  
-    HRESULT hr = S_OK;  
-  
-    // Set initialization properties  
-    CDBPropSet dbinit(DBPROPSET_DBINIT);  
-    dbinit.AddProperty(DBPROP_AUTH_USERID, OLESTR("my_user_id"));  
-    dbinit.AddProperty(DBPROP_INIT_CATALOG, OLESTR("pubs"));  
-    dbinit.AddProperty(DBPROP_INIT_DATASOURCE, OLESTR("(local)"));  
-  
-    hr = source.Open("SQLOLEDB.1", &dbinit);  
-    if (hr == S_OK)  
-    {  
-        hr = session.Open(source);  
-        if (hr == S_OK)  
-        {  
-            // Ready to fetch/access data  
-            CTable<CAccessor<CJobs>> jobs;  
-  
-            // Set properties for making the rowset a read/write cursor  
-            CDBPropSet dbRowset(DBPROPSET_ROWSET);  
-            dbRowset.AddProperty(DBPROP_CANFETCHBACKWARDS, true);  
-            dbRowset.AddProperty(DBPROP_CANSCROLLBACKWARDS, true);  
-            dbRowset.AddProperty(DBPROP_IRowsetChange, true);  
-            dbRowset.AddProperty(DBPROP_UPDATABILITY,  
-                DBPROPVAL_UP_INSERT | DBPROPVAL_UP_CHANGE |  
-                DBPROPVAL_UP_DELETE);  
-  
-            hr = jobs.Open(session, "jobs", &dbRowset);  
-            if (hr == S_OK)  
-            {  
-                // Calling MoveNext automatically retrieves ID  
-                // (using accessor 0)  
-                while(jobs.MoveNext() == S_OK)  
-                   printf_s("Description = %s\n", jobs.szDescription);  
-  
-                hr = jobs.MoveFirst();  
-                if (hr == S_OK)  
-                {  
-                    jobs.nID = 25;  
-                    strcpy_s(&jobs.szDescription[0],  
-                             jobs.sizeOfDescription,  
-                             "Developer");  
-                    jobs.nMinLvl = 10;  
-                    jobs.nMaxLvl = 20;  
-  
-                    jobs.dwDescription = DBSTATUS_S_OK;  
-                    jobs.dwID = DBSTATUS_S_OK;  
-                    jobs.dwMaxLvl = DBSTATUS_S_OK;  
-                    jobs.dwMinLvl = DBSTATUS_S_OK;  
-  
-                    // Insert method uses accessor 1  
-                    // (to avoid writing to the primary key column)  
-                    hr = jobs.Insert(1);     
-                }  
-                jobs.Close();  
-            }  
-            session.Close();  
-        }  
-        source.Close();  
-    }  
-  
-    // Uninitialize COM  
-    ::CoUninitialize();  
-    return 0;  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Çoklu Erişimci kullanmak gereken üç temel senaryo vardır:
+
+- **Birden çok okuma/yazma satır kümeleri.** Bu senaryoda, bir birincil anahtar içeren bir tablo vardır. Satırın birincil anahtarı dahil olmak üzere tüm sütunları okuyabilmesini istiyorsunuz. Ayrıca, (birincil anahtar sütunu yazamadığınız) birincil anahtar dışındaki tüm sütunları verileri yazmak amacıyla yönetebilmek istiyorsunuz. Bu durumda, iki erişimci ayarlayın:
+
+   - Erişimci 0 tüm sütunları içerir.
+
+   - Erişimci 1 birincil anahtarı dışındaki tüm sütunları içerir.
+
+- **Performans.** Bu senaryoda, bir veya daha fazla sütun büyük miktarda veri, örneğin, grafik, ses veya video dosyaları içerir. Bir satıra taşıma her zaman bunu yapmanız bu nedenle, uygulamanızın performansını düşürebilecek çünkü büyük olasılıkla sütunu ile büyük veri dosyası, almak istediğiniz değil.
+
+   İlk erişimci büyük ölçekli veri dışındaki tüm sütunları içerir ve bu verileri bu sütunları otomatik olarak alır ayrı erişimci ayarlayabilirsiniz. Otomatik erişimci budur. Yalnızca büyük veri içeren sütun ikinci erişimci alır, ancak bu verileri bu sütunun otomatik olarak almaz. Güncelleştirme veya isteğe bağlı olarak büyük veri getirme diğer yöntemleri olabilir.
+
+   - Erişimci 0 otomatik erişimci olduğu; büyük ölçekli veri dışındaki tüm sütunları alır.
+
+   - Erişimci 1 otomatik erişimci değil; büyük ölçekli veri sütunu alır.
+
+   Otomatik bağımsız değişken, erişimci otomatik erişimci olup olmadığını belirtmek için kullanın.
+
+- **Birden fazla ISequentialStream sütunu.** Bu senaryoda, birden fazla sütun içeren sahip `ISequentialStream` veri. Ancak, her bir erişimci birle sınırlı olur `ISequentialStream` veri akışı. Bu sorunu çözmenin birkaç erişimci, her birini içeren ayarlayın `ISequentialStream` işaretçi.
+
+Normalde erişimciler kullanarak oluşturduğunuz [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [END_ACCESSOR](../../data/oledb/end-accessor.md) makroları. Ayrıca [db_accessor](../../windows/db-accessor.md) özniteliği. (Erişimci daha ayrıntılı açıklanır [kullanıcı kayıtlarını](../../data/oledb/user-records.md).) Makrolar veya öznitelik erişimci otomatik ya da otomatik olmayan erişimci olup olmadığını belirtin:
+
+- Otomatik erişimci yöntemlerini gibi hareket `MoveFirst`, `MoveLast`, `MoveNext`, ve `MovePrev` tüm sütunları otomatik olarak belirtilen için veri alma. Otomatik erişimci erişimci 0 olmalıdır.
+
+- Siz açıkça bir yöntem çağırmak kadar bir otomatik olmayan erişimcisinde alma gerçekleşmez `Update`, `Insert`, `Fetch`, veya `Delete`. Yukarıda açıklanan senaryoda her hareket tüm sütunları almak istemeyebilirsiniz. Bir veya daha fazla sütun ayrı bir erişimci yerleştirin ve aşağıda gösterildiği gibi bir otomatik olmayan erişimcisi hale getirebilirsiniz.
+
+Aşağıdaki örnek, okuma ve yazma çoklu erişimci kullanma SQL Server pubs veritabanı işleri tabloya çoklu erişimci kullanır. Çoklu Erişimci en yaygın kullanımı budur; Yukarıdaki "birden çok okuma/yazma satır kümeleri" senaryo bakın.
+
+Kullanıcı kayıt sınıfı aşağıdaki gibidir. İki erişimci ayarlar: erişimci 0 yalnızca birincil anahtar sütunu (kimlik) ve 1 erişimci diğer sütunları içerir.
+
+```cpp
+class CJobs
+{
+public:
+    enum {
+        sizeOfDescription = 51
+    };
+
+    short nID;
+    char szDescription[ sizeOfDescription ];
+    short nMinLvl;
+    short nMaxLvl;
+
+    DWORD dwID;
+    DWORD dwDescription;
+    DWORD dwMinLvl;
+    DWORD dwMaxLvl;
+
+BEGIN_ACCESSOR_MAP(CJobs, 2)
+    // Accessor 0 is the automatic accessor
+    BEGIN_ACCESSOR(0, true)
+        COLUMN_ENTRY_STATUS(1, nID, dwID)
+    END_ACCESSOR()
+    // Accessor 1 is the non-automatic accessor
+    BEGIN_ACCESSOR(1, true)
+        COLUMN_ENTRY_STATUS(2, szDescription, dwDescription)
+        COLUMN_ENTRY_STATUS(3, nMinLvl, dwMinLvl)
+        COLUMN_ENTRY_STATUS(4, nMaxLvl, dwMaxLvl)
+    END_ACCESSOR()
+END_ACCESSOR_MAP()
+};
+```
+
+Ana kod aşağıdaki gibidir. Çağırma `MoveNext` otomatik olarak veri erişimci 0'ı kullanarak birincil anahtar sütunu kimliği alır. Not nasıl `Insert` yöntemi için birincil anahtar sütunu yazılmasını engellemek için son kullanan erişimci 1 yakın.
+
+```cpp
+int main(int argc, char* argv[])
+{
+    // Initalize COM
+    ::CoInitialize(NULL);
+
+    // Create instances of the data source and session
+    CDataSource source;
+    CSession session;
+    HRESULT hr = S_OK;
+
+    // Set initialization properties
+    CDBPropSet dbinit(DBPROPSET_DBINIT);
+    dbinit.AddProperty(DBPROP_AUTH_USERID, OLESTR("my_user_id"));
+    dbinit.AddProperty(DBPROP_INIT_CATALOG, OLESTR("pubs"));
+    dbinit.AddProperty(DBPROP_INIT_DATASOURCE, OLESTR("(local)"));
+
+    hr = source.Open("SQLOLEDB.1", &dbinit);
+    if (hr == S_OK)
+    {
+        hr = session.Open(source);
+        if (hr == S_OK)
+        {
+            // Ready to fetch/access data
+            CTable<CAccessor<CJobs>> jobs;
+
+            // Set properties for making the rowset a read/write cursor
+            CDBPropSet dbRowset(DBPROPSET_ROWSET);
+            dbRowset.AddProperty(DBPROP_CANFETCHBACKWARDS, true);
+            dbRowset.AddProperty(DBPROP_CANSCROLLBACKWARDS, true);
+            dbRowset.AddProperty(DBPROP_IRowsetChange, true);
+            dbRowset.AddProperty(DBPROP_UPDATABILITY,
+                DBPROPVAL_UP_INSERT | DBPROPVAL_UP_CHANGE |
+                DBPROPVAL_UP_DELETE);
+
+            hr = jobs.Open(session, "jobs", &dbRowset);
+            if (hr == S_OK)
+            {
+                // Calling MoveNext automatically retrieves ID
+                // (using accessor 0)
+                while(jobs.MoveNext() == S_OK)
+                   printf_s("Description = %s\n", jobs.szDescription);
+
+                hr = jobs.MoveFirst();
+                if (hr == S_OK)
+                {
+                    jobs.nID = 25;
+                    strcpy_s(&jobs.szDescription[0],
+                             jobs.sizeOfDescription,
+                             "Developer");
+                    jobs.nMinLvl = 10;
+                    jobs.nMaxLvl = 20;
+
+                    jobs.dwDescription = DBSTATUS_S_OK;
+                    jobs.dwID = DBSTATUS_S_OK;
+                    jobs.dwMaxLvl = DBSTATUS_S_OK;
+                    jobs.dwMinLvl = DBSTATUS_S_OK;
+
+                    // Insert method uses accessor 1
+                    // (to avoid writing to the primary key column)
+                    hr = jobs.Insert(1);
+                }
+                jobs.Close();
+            }
+            session.Close();
+        }
+        source.Close();
+    }
+
+    // Uninitialize COM
+    ::CoUninitialize();
+    return 0;
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Erişimcileri Kullanma](../../data/oledb/using-accessors.md)<br/>
 [Kullanıcı Kayıtları](../../data/oledb/user-records.md)

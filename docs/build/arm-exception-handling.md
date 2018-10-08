@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2251aefebd6805cfd071d014ad6be30cbea065bb
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ae80e1f7f824f41f6bc0b3f979973f5867666354
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711236"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861661"
 ---
 # <a name="arm-exception-handling"></a>ARM özel durum işleme
 
@@ -82,15 +82,15 @@ Bu tablo biçimi gösterir bir .pdata paketlenmiş kayıt veri geriye doğru izl
 |Word uzaklığı|Bits|Amaç|
 |-----------------|----------|-------------|
 |0|0-31|*İşlevi Başlat RVA* 32-bit RVA işlevi başlangıcı olduğu. İşlev thumb kodu içeriyorsa, bu adres, düşük bit ayarlamanız gerekir.|
-|1.|0-1|*Bayrağı* bu anlamlara sahip 2 bit alanı:<br /><br /> -00 = paketlenmiş kullanılmıyor; veri bırakma Kalan bitleri için sanal işlem bulunur kayıt noktası.<br />-01 = paketlenmiş veri bırakma.<br />-10 = paketlenmiş burada işlevi varsayılır hiçbir prolog sağlamak için veri bırakma. Bu işlev başlangıcı bitişik olmayan işlev parçalarını tanımlamak için yararlıdır.<br />-11 = ayrılmış.|
+|1.|0-1|*Bayrağı* bu anlamlara sahip 2 bit alanı:<br /><br />-00 = paketlenmiş kullanılmıyor; veri bırakma Kalan bitleri için sanal işlem bulunur kayıt noktası.<br />-01 = paketlenmiş veri bırakma.<br />-10 = paketlenmiş burada işlevi varsayılır hiçbir prolog sağlamak için veri bırakma. Bu işlev başlangıcı bitişik olmayan işlev parçalarını tanımlamak için yararlıdır.<br />-11 = ayrılmış.|
 |1.|2-12|*İşlev uzunluğu* uzunluğu 2 ile bölünen bayt tüm işlevi sağlayan bir 11 bit alanıdır. İşlevin 4 K bayt'tan büyükse, bir tam sanal işlem bulunur kaydı yerine kullanılmalıdır.|
-|1.|13-14|*Ret* nasıl işlevi döndürür gösteren 2 bit alanı:<br /><br /> -00 pop {pc} aracılığıyla iade = ( *L* bayrağı biti ayarlanmış olması gerekir 1 Bu durumda).<br />-01 16-bit dal kullanarak dönüş =.<br />-10 32 bit dal kullanarak dönüş =.<br />-11 hiçbir kapanış hiç =. Bu, yalnızca bir prolog içerebilir, ancak başka bir yerde, kapanış olduğu bir bitişik olmayan işlev parça açıklamak için kullanışlıdır.|
+|1.|13-14|*Ret* nasıl işlevi döndürür gösteren 2 bit alanı:<br /><br />-00 pop {pc} aracılığıyla iade = ( *L* bayrağı biti ayarlanmış olması gerekir 1 Bu durumda).<br />-01 16-bit dal kullanarak dönüş =.<br />-10 32 bit dal kullanarak dönüş =.<br />-11 hiçbir kapanış hiç =. Bu, yalnızca bir prolog içerebilir, ancak başka bir yerde, kapanış olduğu bir bitişik olmayan işlev parça açıklamak için kullanışlıdır.|
 |1.|15|*H* işlevi "tam sayı parametresi homes olup olmadığını" belirten bir 1 bit bayrağı işlevi başlangıcında ileterek (r0-r3) kaydeder ve dönmeden önce yığını, 16 bayt kaldırır. (0 = 1 kaydeder ev değil havaalanlarından kayıtları =.)|
 |1.|16-18|*Reg* son dizinini belirten bir 3-bit alanı geçici olmayan kaydı kaydedilir. Varsa *R* bit, 0 ve ardından yalnızca tamsayı kayıtlar kaydediliyor ve aralığında r4-kaydırmayı, burada N, 4'e eşit olarak kabul edilir + *Reg*. Varsa *R* bit, 1, ardından yalnızca kayan nokta kayıtlarını kaydediliyor ve d8-dN, burada N, 8'e eşit aralığında olduğu varsayılır + *Reg*. Özel birleşimi *R* = 1 ve *Reg* = 7 yazmaç yok kaydedildiğini gösterir.|
 |1.|19|*R* kaydedilen geçici olmayan kayıtları tamsayı (0) kayıtları olup veya kayan nokta kayıtlarını (1) belirten bir 1 bit bayrağı. Varsa *R* 1 olarak ayarlayın ve *Reg* alanı, 7'ye ayarlanmışsa, geçici olmayan yazmaç yok gönderildi.|
 |1.|20|*M* işlevi kaydeder/LR, tarafından belirtilen diğer kayıtlara birlikte geri yükleme işlemleri olup olmadığını gösteren bir 1 bit bayrağı *Reg* alan. (0 = değil kaydedilemiyor/geri, 1 = mu kaydedilemiyor/geri.)|
 |1.|21|*C* işlevi (1) veya hızlı yığın (0) için bir çerçeve zinciri ayarlamak için ek yönergeler içerip içermediğini gösteren bir 1 bit bayrağı. Bu biti ayarlanmışsa r11 örtük olarak kaydedilen tamsayı geçici olmayan kayıtları listesine eklenir. (Eğer aşağıda kısıtlamalarını *C* bayrağı kullanılır.)|
-|1.|22-31|*Ayarla yığın* yığınının bölü 4, bu işlev için ayrılan bayt sayısını gösteren bir 10-bit alanıdır. Ancak, yalnızca değerleri 0x000 0x3F3 arasında doğrudan kodlanabilir. 4044 bayttan daha fazla yığın ayırma işlevleri tam bir sanal işlem bulunur kaydı kullanmanız gerekir. Varsa *yığını ayarlamak* alandır 0x3F4 veya daha büyük, daha sonra düşük 4 BITS özel bir anlamı yoktur:<br /><br /> -Bitler 0-1 yığın düzeltmesi (1-4), eksi 1 sözcük sayısını gösterir.<br />-Bu düzeltme, anında iletme işlemde prolog birleştirildiğinde bit 2 1 olarak ayarlanır.<br />-Kapanış pop, işlemde bu ayarlama birleştirildiğinde bit 3 1 olarak ayarlanır.|
+|1.|22-31|*Ayarla yığın* yığınının bölü 4, bu işlev için ayrılan bayt sayısını gösteren bir 10-bit alanıdır. Ancak, yalnızca değerleri 0x000 0x3F3 arasında doğrudan kodlanabilir. 4044 bayttan daha fazla yığın ayırma işlevleri tam bir sanal işlem bulunur kaydı kullanmanız gerekir. Varsa *yığını ayarlamak* alandır 0x3F4 veya daha büyük, daha sonra düşük 4 BITS özel bir anlamı yoktur:<br /><br />-Bitler 0-1 yığın düzeltmesi (1-4), eksi 1 sözcük sayısını gösterir.<br />-Bu düzeltme, anında iletme işlemde prolog birleştirildiğinde bit 2 1 olarak ayarlanır.<br />-Kapanış pop, işlemde bu ayarlama birleştirildiğinde bit 3 1 olarak ayarlanır.|
 
 Yukarıdaki Kodlamalar, olası fazlalıkları nedeniyle bu kısıtlamalar uygulanır:
 
@@ -187,7 +187,7 @@ Paketlenmiş geriye doğru izleme biçimi işlevi geriye doğru izleme açıklam
    |1.|16-23|*Kod sözcük Genişletilmiş* olağan dışı derecede büyük bir geriye doğru izleme kodu sözcük sayısını kodlama için daha fazla alan sağlayan bir 8 bit alanıdır. Bu alan içeren uzantı sözcüğünü yalnızca var ise *kapanış sayısı* ve *kod sözcükleri* ilk üstbilgi sözcük alanlarında hem de 0 olarak ayarlanır.|
    |1.|24-31|Ayrılmış|
 
-2. Özel durum verileri sonra (varsa *E* bit üst bilgisindeki 0 olarak ayarlanmıştır), başlangıç uzaklığını artan sıraya göre depolanır ve bir Word paketlenmiş kapanış kapsamları hakkında bilgi listesidir. Her kapsam, bu alanları içerir:
+1. Özel durum verileri sonra (varsa *E* bit üst bilgisindeki 0 olarak ayarlanmıştır), başlangıç uzaklığını artan sıraya göre depolanır ve bir Word paketlenmiş kapanış kapsamları hakkında bilgi listesidir. Her kapsam, bu alanları içerir:
 
    |Bits|Amaç|
    |----------|-------------|
@@ -196,9 +196,9 @@ Paketlenmiş geriye doğru izleme biçimi işlevi geriye doğru izleme açıklam
    |20-23|*Koşul* altında kapanış yürütülen koşulu sağlayan bir 4-bit alanıdır. Koşulsuz sonuçları için "her zaman" gösteren 0xE ayarlamanız gerekir. (Bir kapanış tamamen koşullu ya da tamamen koşulsuz olmalıdır ve ilk yönerge sonra BT opcode ile kapanış Thumb-2 modunda başlar.)|
    |24-31|*Kapanış başlangıç dizini* bu kapanış açıklayan ilk geriye doğru izleme kodu bayt dizinini belirten bir 8 bit alanıdır.|
 
-3. Bu makalede geriye doğru izleme kodları bölümünde ayrıntılı olarak açıklanan geriye doğru izleme kodları içeren bir bayt dizisi kapanış kapsam listesi çağrıldıktan sonra. Bu dizi için en yakın tam sözcük sınırı sonunda sıfır eklenir. Küçük endian modunda doğrudan getirilebilir, böylece bayt little endian sırayla depolanır.
+1. Bu makalede geriye doğru izleme kodları bölümünde ayrıntılı olarak açıklanan geriye doğru izleme kodları içeren bir bayt dizisi kapanış kapsam listesi çağrıldıktan sonra. Bu dizi için en yakın tam sözcük sınırı sonunda sıfır eklenir. Küçük endian modunda doğrudan getirilebilir, böylece bayt little endian sırayla depolanır.
 
-4. Varsa *X* üstbilgisinde alan 1, geriye doğru izleme kodu bayt özel durum işleyicisi bilgilerini tarafından izlenir. Bu birini oluşur *özel durum işleyicisi RVA* adresi özel durum işleyicisi tarafından gerekli verileri (değişken uzunluklu) miktarına göre hemen ardından özel durum işleyicisinin içerir.
+1. Varsa *X* üstbilgisinde alan 1, geriye doğru izleme kodu bayt özel durum işleyicisi bilgilerini tarafından izlenir. Bu birini oluşur *özel durum işleyicisi RVA* adresi özel durum işleyicisi tarafından gerekli verileri (değişken uzunluklu) miktarına göre hemen ardından özel durum işleyicisinin içerir.
 
 Sanal işlem bulunur kaydı ilk 8 bayt getirmek ve aşağıdaki özel durum değişken boyutlu veri uzunluğu dahil değil kayıt tam boyutunu hesaplamak mümkündür şekilde tasarlanmıştır. Bu kod parçacığı, kayıt boyutunu hesaplar:
 

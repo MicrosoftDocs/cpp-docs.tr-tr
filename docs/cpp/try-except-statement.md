@@ -1,7 +1,7 @@
 ---
 title: deneyin-except deyimi | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/05/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 107b759345e221ad8100f11d97b79c5bd9fd2b65
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6e938f5b7e5f25461ae921fbfa3c49920eca86eb
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031452"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861934"
 ---
 # <a name="try-except-statement"></a>try-except Deyimi
 
@@ -50,7 +50,14 @@ ms.locfileid: "46031452"
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **__try** {/ / korumalı kod} **__except** ( *ifade* ) {/ / özel durum işleyicisi kodunu}
+> **__try** <br/>
+> {<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp;Korumalı kod<br/>
+> }<br/>
+> **__except** ( *ifade* )<br/>
+> {<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp;özel durum işleyici kodu<br/>
+> }<br/>
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -67,15 +74,15 @@ Sonra gelen bileşik deyim **__try** yan tümcesi ise gövdedir veya korunan bö
 
 1. Korunan bölüm yürütülür.
 
-2. Korunan bölümün yürütülmesi sırasında hiçbir özel durum oluşursa yürütme tümcesinden sonraki deyimden devam eder **__except** yan tümcesi.
+1. Korunan bölümün yürütülmesi sırasında hiçbir özel durum oluşursa yürütme tümcesinden sonraki deyimden devam eder **__except** yan tümcesi.
 
-3. Özel bir durum oluştuğunda korunan bölümün yürütülmesi sırasında veya korunan bölümün çağırdığı herhangi bir yordamda **__except** *ifade* (adlı *filtre* ifade) değerlendirilir ve değer özel durumun nasıl işlendiğini belirler. Üç değer vardır:
+1. Özel bir durum oluştuğunda korunan bölümün yürütülmesi sırasında veya korunan bölümün çağırdığı herhangi bir yordamda **__except** *ifade* (adlı *filtre* ifade) değerlendirilir ve değer özel durumun nasıl işlendiğini belirler. Üç olası değer vardır:
 
-   Exceptıon_contınue_executıon (-1) özel durum kapatıldı. Yürütmeye, özel durumun gerçekleştiği noktadan devam edin.
+   - Exceptıon_contınue_executıon (-1) özel durum kapatıldı. Yürütmeye, özel durumun gerçekleştiği noktadan devam edin.
 
-   Exceptıon_contınue_search (0) özel durum tanınmıyor. Yığında bir işleyici ilk içeren için aramaya devam edin **deneyin-dışında** deyimleri, ardından sonraki en yüksek önceliğe sahip işleyicileri için.
+   - Exceptıon_contınue_search (0) özel durum tanınmıyor. Yığında bir işleyici ilk içeren için aramaya devam edin **deneyin-dışında** deyimleri, ardından sonraki en yüksek önceliğe sahip işleyicileri için.
 
-   Exceptıon_execute_handler (1) özel durum tanınır. Yürüterek denetimi özel durum işleyicisine aktarma **__except** bileşik deyimini sonra yürütmeye devam **__except** blok.
+   - Exceptıon_execute_handler (1) özel durum tanınır. Yürüterek denetimi özel durum işleyicisine aktarma **__except** bileşik deyimini sonra yürütmeye devam **__except** blok.
 
 Çünkü **__except** ifadesi C ifadesi olarak değerlendirildiği, tek bir değer, koşullu ifade işleci veya virgül işlecinin sınırlıdır. Daha kapsamlı bir işlem gerekliyse, ifade yukarıda listelenen üç değerden birini döndüren bir yordam çağırabilir.
 
@@ -83,9 +90,7 @@ Her uygulamanın kendi özel durum işleyicisi olabilir.
 
 İçine atlanamaz değil bir **__try** deyimi, ancak herhangi birinden dışarı atlanabilir. Özel durum işleyicisi bir işlem yürütülürken sonlandırılırsa sonlandırılırsa çağrılmaz bir **deneyin-dışında** deyimi.
 
-Daha fazla bilgi için bkz. Bilgi Bankası makalesi Q315937 : NASIL YAPILIR: Visual C++ Uygulamasında Yığın Taşmasını Yakalama.
-
-## <a name="the-leave-keyword"></a>__leave Anahtar Sözcüğü
+### <a name="the-leave-keyword"></a>__leave Anahtar Sözcüğü
 
 **__Leave** anahtar sözcüğü yalnızca korunan bölümünde geçerlidir bir **deneyin-dışında** deyimi ve etkisi korunan bölümün sonuna atlama etmektir. Yürütme, özel durum işleyicisinden sonra ilk deyimde devam eder.
 
@@ -170,7 +175,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıkış
+### <a name="output"></a>Çıkış
 
 ```Output
 hello

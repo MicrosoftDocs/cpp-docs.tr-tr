@@ -18,18 +18,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fff4c581b91ed789b501d3866eb9b3b259a662b3
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9edf381864121d4e3f6c5a2b6cf7c01198368e1e
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755469"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860530"
 ---
 # <a name="current-time-general-purpose-classes"></a>Geçerli zaman: Genel amaçlı sınıflar
 
 Aşağıdaki yordam nasıl oluşturulacağını gösterir. bir `CTime` nesne ve geçerli saati ile başlatır.
 
-#### <a name="to-get-the-current-time"></a>Geçerli zamanı almak için
+### <a name="to-get-the-current-time"></a>Geçerli zamanı almak için
 
 1. Ayırma bir `CTime` nesnesini şu şekilde:
 
@@ -38,7 +38,7 @@ Aşağıdaki yordam nasıl oluşturulacağını gösterir. bir `CTime` nesne ve 
    > [!NOTE]
    > Başlatılmamış `CTime` nesneler için geçerli bir saat başlatılmadı.
 
-2. Çağrı `CTime::GetCurrentTime` işletim sisteminden geçerli zamanı almak için işlevi. Bu işlev döndürür bir `CTime` değerini ayarlamak için kullanılan nesne `CTime`gibi:
+1. Çağrı `CTime::GetCurrentTime` işletim sisteminden geçerli zamanı almak için işlevi. Bu işlev döndürür bir `CTime` değerini ayarlamak için kullanılan nesne `CTime`gibi:
 
    [!code-cpp[NVC_ATLMFC_Utilities#172](../atl-mfc-shared/codesnippet/cpp/current-time-general-purpose-classes_2.cpp)]
 

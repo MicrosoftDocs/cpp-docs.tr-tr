@@ -10,12 +10,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e12c8eeb162d93a41c2bad85fda3570f3ffc1127
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ebcb2e52f67cfe37c4954e530fd2b2393ae23b68
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220222"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861700"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158"></a>Visual Studio 2017 sürüm 15.0,'deki C++ uyumluluk geliştirmeleri [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15,8](#update_158)
 
@@ -1263,7 +1263,8 @@ extern "C" __declspec(noinline) HRESULT __stdcall
 Bu yeni uyarı C4768 ile Visual Studio 2017 15.3 sevk edilen bazı Windows SDK'sı başlıklarında verilen ya da eski (örneğin: sürüm 10.0.15063.0, RS2 SDK olarak da bilinir). Ancak, bu uyarı vermez böylece sonraki sürümlerinde Windows SDK'sı üst bilgileri (özellikle ShlObj.h ve ShlObj_core.h) düzeltildi. Windows SDK'sı üst bilgileri yakında bu uyarıyı gördüğünüzde, bu eylemleri gerçekleştirebilirsiniz:
 
 1. Visual Studio 2017 sürüm 15.5 sürüm ile birlikte gelen en son Windows SDK geçin.
-2. Uyarı geçici olarak devre dışı bırakma # Windows SDK'sı üstbilgi deyiminin include:
+
+1. Uyarı geçici olarak devre dışı bırakma # Windows SDK'sı üstbilgi deyiminin include:
 
 ```cpp
    #pragma warning (push)

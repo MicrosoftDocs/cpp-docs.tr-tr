@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5cb510bb02f71f71b35191d3ba9c4fee6b7059d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5758dff128cd213442ec3738967ccd78e20e75af
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093967"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861141"
 ---
 # <a name="adding-objects-and-controls-to-an-atl-project"></a>Bir ATL projesine nesne ve denetim ekleme
 
@@ -41,16 +41,16 @@ ATL kodu sihirbazlardan birini, ATL veya MFC tabanlı projelerinize bir nesne ve
 > [!NOTE]
 > Projenize ATL nesnesi eklemeden önce Ayrıntılar ve gereksinimler için Yardım konusuna nesnesinde gözden geçirmelisiniz.
 
-### <a name="to-add-an-object-or-a-control-using-the-atl-control-wizard"></a>Bir nesne veya ATL Denetim Sihirbazı'nı kullanarak bir denetim eklemek için
+## <a name="to-add-an-object-or-a-control-using-the-atl-control-wizard"></a>Bir nesne veya ATL Denetim Sihirbazı'nı kullanarak bir denetim eklemek için
 
-1. Çözüm Gezgini'nde proje düğümüne sağ tıklayın ve **Ekle** kısayol menüsünden. Tıklayın **sınıfı Ekle**.
+1. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklatıp **Ekle** kısayol menüsünden. Tıklayın **sınıfı Ekle**.
 
    [Sınıfı Ekle](../../ide/add-class-dialog-box.md) iletişim kutusu görüntülenir.
 
-2. ATL klasörü Kategoriler bölmesinde seçilen bir nesne için şablonlar bölmesindeki eklemek için seçin. Tıklayın **açık**. Seçili nesne için kod Sihirbazı görünür.
+1. İle **ATL** seçili klasör **kategorileri** bölmesinde öğesinden eklenecek nesne bir seçin **şablonları** bölmesi. Tıklayın **açık**. Seçili nesne için kod Sihirbazı görünür.
 
    > [!NOTE]
-   >  MFC projesinde ATL nesnesi eklemek istiyorsanız, varolan bir projeye ATL desteği eklemeniz gerekir. Bu yönergeleri izleyerek yapabilirsiniz [MFC projenize ATL desteği ekleme](../../mfc/reference/adding-atl-support-to-your-mfc-project.md).
+   > MFC projesinde ATL nesnesi eklemek istiyorsanız, varolan bir projeye ATL desteği eklemeniz gerekir. Bu yönergeleri izleyerek yapabilirsiniz [MFC projenize ATL desteği ekleme](../../mfc/reference/adding-atl-support-to-your-mfc-project.md).
 
    Alternatif olarak, ATL desteği eklemeden önce MFC projenize ATL nesnesi eklemek çalışırsanız, Visual Studio projenize eklenen ATL desteğinin isteyip istemediğinizi belirtmenizi ister. Tıklayın **Evet** projeye ATL desteği Ekle ve seçili ATL Sihirbazı'nı açın.
 
@@ -62,4 +62,3 @@ ATL kodu sihirbazlardan birini, ATL veya MFC tabanlı projelerinize bir nesne ve
 [ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [ATL ve C Çalışma Zamanı Koduyla Programlama](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
-

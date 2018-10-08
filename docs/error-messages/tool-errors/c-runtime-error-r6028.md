@@ -16,27 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a23fcd6ff7c5fb49e31efab831f1102bc079d91
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dbcc1f34fced7a7ea752d8733662f7510a01aad5
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093395"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860556"
 ---
 # <a name="c-runtime-error-r6028"></a>C çalışma zamanı hatası R6028
 
 yığın başlatılamıyor
 
 > [!NOTE]
->  Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bellek sorunu olduğundan uygulaması kapatıldı. Bu hata birçok olası nedenleri vardır, ancak bir son derece düşük bellek durumu programında bir hata veya arızalı donanım sürücüleri tarafından genellikle neden olur.
+> Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bellek sorunu olduğundan uygulaması kapatıldı. Bu hata birçok olası nedenleri vardır, ancak bir son derece düşük bellek durumu programında bir hata veya arızalı donanım sürücüleri tarafından genellikle neden olur.
 >
->  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
+> Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
 >
->  -   Çalışan diğer uygulamaları kapatın veya belleği boşaltmak için bilgisayarınızı yeniden başlatın.
-> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
-> -   Uygulamayı başka bir uygulama veya sürücü yeni bir yüklemeden önce çalıştığı kullanırsanız **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** kaldırmak için Yeni uygulama veya sürücü, uygulamanızı yeniden deneyin.
-> -   Donanım satıcınızın Web sitesini denetleyin veya **Windows Update** içinde **Denetim Masası** güncelleştirmeleri, yazılım ve sürücü.
-> -   Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
+> - Çalışan diğer uygulamaları kapatın veya belleği boşaltmak için bilgisayarınızı yeniden başlatın.
+> - Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
+> - Uygulamayı başka bir uygulama veya sürücü yeni bir yüklemeden önce çalıştığı kullanırsanız **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** kaldırmak için Yeni uygulama veya sürücü, uygulamanızı yeniden deneyin.
+> - Donanım satıcınızın Web sitesini denetleyin veya **Windows Update** içinde **Denetim Masası** güncelleştirmeleri, yazılım ve sürücü.
+> - Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
 
 **Programcıları için bilgi**
 

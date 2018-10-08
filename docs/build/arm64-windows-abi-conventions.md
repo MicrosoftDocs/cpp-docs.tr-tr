@@ -11,12 +11,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc115fbc77ac68c774b85bb86fd0cf9eac1fa51b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 585fd757c18c3a7c09645b64656e6ef77cde6dca
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716644"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861394"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI kurallarına genel bakış
 
@@ -131,9 +131,9 @@ Bu aşama, bağımsız değişkenleri işlenmesi işlemi başlamadan önce tam b
 
 1. Sonraki genel amaçlı kayıt numarası (NGRN) sıfır olarak ayarlanır.
 
-2. Floating-point kayıt numarası (NSRN) ve sonraki SIMD sıfır olarak ayarlayın.
+1. Floating-point kayıt numarası (NSRN) ve sonraki SIMD sıfır olarak ayarlayın.
 
-3. Sonraki yığın bağımsız değişken adresini (NSAA), geçerli yığın işaretçisi değerine (SP) ayarlanır.
+1. Sonraki yığın bağımsız değişken adresini (NSAA), geçerli yığın işaretçisi değerine (SP) ayarlanır.
 
 ### <a name="stage-b--pre-padding-and-extension-of-arguments"></a>Aşama – B öncesi doldurma ve bağımsız değişkenlerin uzantısı
 
@@ -141,11 +141,11 @@ Listedeki her bağımsız değişken için aşağıdaki listeden eşleşen ilk k
 
 1. Bağımsız değişken türü boyutu, statik olarak çağıran ve çağrılan tarafından belirlenemiyor bileşik bir tür ise, bağımsız değişken belleğe kopyalanır ve bağımsız değişken kopya işaretçisi tarafından değiştirilir. (C/C++'da böyle bir türü vardır ancak diğer dillerde veya dil uzantıları var).
 
-2. Bir HFA veya bir HVA bağımsız değişken türü olan sonra bağımsız değişkeni kullanılır değiştirilmemiş.
+1. Bir HFA veya bir HVA bağımsız değişken türü olan sonra bağımsız değişkeni kullanılır değiştirilmemiş.
 
-3. Bağımsız değişken türü, 16 bayttan büyük bir bileşik türü ise, bağımsız değişkeni çağırıcı tarafından ayrılan belleğe kopyalanır ve bağımsız değişken bir işaretçi kopyasına değiştirilir.
+1. Bağımsız değişken türü, 16 bayttan büyük bir bileşik türü ise, bağımsız değişkeni çağırıcı tarafından ayrılan belleğe kopyalanır ve bağımsız değişken bir işaretçi kopyasına değiştirilir.
 
-4. Bağımsız değişken türü bir bileşik türü ise bağımsız değişkenin boyutu yukarı 8 baytlık en yakın katına yuvarlanır.
+1. Bağımsız değişken türü bir bileşik türü ise bağımsız değişkenin boyutu yukarı 8 baytlık en yakın katına yuvarlanır.
 
 ### <a name="stage-c--assignment-of-arguments-to-registers-and-stack"></a>Aşama – C kaydeder ve yığın bağımsız değişken ataması
 
@@ -153,33 +153,33 @@ Listedeki her bağımsız değişken için aşağıdaki kuralları bağımsız d
 
 1. Bağımsız değişken yarı-tek, çift - veya dört duyarlıklı kayan nokta veya kısa vektör türü ve NSRN ise, 8'den küçük, bağımsız değişken için kayıt v [NSRN] ' en az önemli bitlerin ayrılan sonra. NSRN bir artırılır. Bağımsız değişken artık ayrıldı.
 
-2. Bir HFA veya bir HVA bağımsız değişken olan ve yeterli ayrılmamış SIMD ve kayan nokta kayıtlarını (NSRN + 8 üyeleri ≤ sayısı) varsa, bağımsız değişken SIMD ve Floating-point kaydeder (bir kasa HFA veya HVA üyesi başına ile) ayrılır. NSRN kullanılan kayıtları sayısına göre artırılır. Bağımsız değişken artık ayrıldı.
+1. Bir HFA veya bir HVA bağımsız değişken olan ve yeterli ayrılmamış SIMD ve kayan nokta kayıtlarını (NSRN + 8 üyeleri ≤ sayısı) varsa, bağımsız değişken SIMD ve Floating-point kaydeder (bir kasa HFA veya HVA üyesi başına ile) ayrılır. NSRN kullanılan kayıtları sayısına göre artırılır. Bağımsız değişken artık ayrıldı.
 
-3. Bağımsız değişken bir HFA veya bir HVA ise NSRN 8'e ayarlanır ve bağımsız değişkenin boyutu 8 bayt için en yakın katına yuvarlanır.
+1. Bağımsız değişken bir HFA veya bir HVA ise NSRN 8'e ayarlanır ve bağımsız değişkenin boyutu 8 bayt için en yakın katına yuvarlanır.
 
-4. Bir HFA bir HVA bağımsız değişken ise dört duyarlıklı kayan nokta veya kısa vektör türü NSAA yuvarlatılmış sonra en fazla 8 ya da doğal hizalama bağımsız değişkenin türü daha büyük.
+1. Bir HFA bir HVA bağımsız değişken ise dört duyarlıklı kayan nokta veya kısa vektör türü NSAA yuvarlatılmış sonra en fazla 8 ya da doğal hizalama bağımsız değişkenin türü daha büyük.
 
-5. Yarı veya tek duyarlıklı kayan nokta türü bağımsız değişken ise bağımsız değişkenin boyutu 8 bayt için'e ayarlanır. Bağımsız değişken varmış gibi etkisi en az önemli bitlerin bir 64-bit kayıt ve belirtilmeyen değerlerle doldurulmuş kalan bitleri kopyalanmış.
+1. Yarı veya tek duyarlıklı kayan nokta türü bağımsız değişken ise bağımsız değişkenin boyutu 8 bayt için'e ayarlanır. Bağımsız değişken varmış gibi etkisi en az önemli bitlerin bir 64-bit kayıt ve belirtilmeyen değerlerle doldurulmuş kalan bitleri kopyalanmış.
 
-6. Bağımsız değişken bir HFA ise ayarlanmış NSAA bellek için bir HVA, yarı-, tek, çift - veya dört duyarlıklı kayan nokta veya kısa vektör türü ve ardından bağımsız değişken kopyalanır. Bağımsız değişken boyutuna NSAA artırılır. Bağımsız değişken artık ayrıldı.
+1. Bağımsız değişken bir HFA ise ayarlanmış NSAA bellek için bir HVA, yarı-, tek, çift - veya dört duyarlıklı kayan nokta veya kısa vektör türü ve ardından bağımsız değişken kopyalanır. Bağımsız değişken boyutuna NSAA artırılır. Bağımsız değişken artık ayrıldı.
 
-7. Bağımsız değişken bir Integral veya işaretçi türü ise bağımsız değişkenin boyutudur veya 8 bayt ve NGRN eşittir 8'den küçük, bağımsız değişkeni [NGRN] x en az önemli bitlerin kopyalanır. NGRN bir artırılır. Bağımsız değişken artık ayrıldı.
+1. Bağımsız değişken bir Integral veya işaretçi türü ise bağımsız değişkenin boyutudur veya 8 bayt ve NGRN eşittir 8'den küçük, bağımsız değişkeni [NGRN] x en az önemli bitlerin kopyalanır. NGRN bir artırılır. Bağımsız değişken artık ayrıldı.
 
-8. Bağımsız değişken bir hizalama 16 varsa NGRN yukarı doğru sonraki bile sayıya yuvarlanır.
+1. Bağımsız değişken bir hizalama 16 varsa NGRN yukarı doğru sonraki bile sayıya yuvarlanır.
 
-9. Bağımsız değişken bağımsız değişken bir tam sayı türü, bağımsız değişkenin boyutu 16 eşittir ve NGRN 7'den az ise x kopyalanır [NGRN] ve [NGRN + 1] x. x [NGRN] alt adresli çift sözcük bağımsız değişkeni bellek temsilinin içeren. NGRN ikiye artırılır. Bağımsız değişken artık ayrıldı.
+1. Bağımsız değişken bağımsız değişken bir tam sayı türü, bağımsız değişkenin boyutu 16 eşittir ve NGRN 7'den az ise x kopyalanır [NGRN] ve [NGRN + 1] x. x [NGRN] alt adresli çift sözcük bağımsız değişkeni bellek temsilinin içeren. NGRN ikiye artırılır. Bağımsız değişken artık ayrıldı.
 
-10. Bağımsız değişken bileşik bir türdür ve çift sözcükler bağımsız değişkenin boyutu NGRN eksi 8'den fazla değil durumunda art arda genel amaçlı kayıtlarına, bağımsız kopyalanan başlayan [NGRN] x. Bu kasalar bellekten ardışık kayıtları yüklenirken LDR yönergeleri (yazmaçların kullanılmayan tüm bölümlerinin içeriğini belirtilmeyen uygun bir diziyle bir çift sözcük hizalanmış adresinden içine yüklenmiş gibi sorgulamanıza bağımsız değişken geçirilir Bu standardına göre). NGRN kullanılan kayıtları sayısına göre artırılır. Bağımsız değişken artık ayrıldı.
+1. Bağımsız değişken bileşik bir türdür ve çift sözcükler bağımsız değişkenin boyutu NGRN eksi 8'den fazla değil durumunda art arda genel amaçlı kayıtlarına, bağımsız kopyalanan başlayan [NGRN] x. Bu kasalar bellekten ardışık kayıtları yüklenirken LDR yönergeleri (yazmaçların kullanılmayan tüm bölümlerinin içeriğini belirtilmeyen uygun bir diziyle bir çift sözcük hizalanmış adresinden içine yüklenmiş gibi sorgulamanıza bağımsız değişken geçirilir Bu standardına göre). NGRN kullanılan kayıtları sayısına göre artırılır. Bağımsız değişken artık ayrıldı.
 
-11. NGRN 8'e ayarlanır.
+1. NGRN 8'e ayarlanır.
 
-12. NSAA tarafına yuvarlanır büyük 8 ya da doğal hizalama bağımsız değişkenin türü...
+1. NSAA tarafına yuvarlanır büyük 8 ya da doğal hizalama bağımsız değişkenin türü...
 
-13. Bağımsız değişken türünün ise bağımsız değişken için ayarlanan NSAA bellek kopyalanır. Bağımsız değişken boyutuna NSAA artırılır. Bağımsız değişken artık ayrıldı.
+1. Bağımsız değişken türünün ise bağımsız değişken için ayarlanan NSAA bellek kopyalanır. Bağımsız değişken boyutuna NSAA artırılır. Bağımsız değişken artık ayrıldı.
 
-14. Bağımsız değişkenin boyutu 8 bayttan daha az ise bağımsız değişkenin boyutu 8 bayt için'e ayarlanır. En az önemli bitlerin bir 64-bit kayıt ve belirtilmeyen değerlerle doldurulmuş kalan bitleri bağımsız kopyalanan gibi etkisidir.
+1. Bağımsız değişkenin boyutu 8 bayttan daha az ise bağımsız değişkenin boyutu 8 bayt için'e ayarlanır. En az önemli bitlerin bir 64-bit kayıt ve belirtilmeyen değerlerle doldurulmuş kalan bitleri bağımsız kopyalanan gibi etkisidir.
 
-15. Bağımsız değişken ayarlanmış NSAA bellek kopyalanır. Bağımsız değişken boyutuna NSAA artırılır. Bağımsız değişken artık ayrıldı.
+1. Bağımsız değişken ayarlanmış NSAA bellek kopyalanır. Bağımsız değişken boyutuna NSAA artırılır. Bağımsız değişken artık ayrıldı.
 
 ### <a name="addendum-variadic-functions"></a>Eki: Değişen sayıda bağımsız değişken işlevleri
 
@@ -187,7 +187,7 @@ Değişken sayıda bağımsız değişkenler almayan işlevleri farklı daha yuk
 
 1. Tüm bileşik de işletmelere kabul edilir; HFAs veya HVAs özel işleme yok.
 
-2. SIMD ve Floating-point kaydeder kullanılmaz.
+1. SIMD ve Floating-point kaydeder kullanılmaz.
 
 Etkili bir şekilde bu aşağıdaki kurallar sanal yığın burada ilk 64 bayt yığın x0 x7 yüklenir ve kalan tüm yığın bağımsız değişkenleri normalde yerleştirilir bağımsız değişkenleri ayrılacak C.12–C.15 karşılık gelir.
 

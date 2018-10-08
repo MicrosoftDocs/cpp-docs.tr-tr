@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75ec7271950a2aee28e55d4b7b9fdcf7c8c894d0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b7d895671efdec4649faf1f0611380d2065770ac
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039380"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861453"
 ---
 # <a name="standard-conversions"></a>Standart Dönüşümler
 
@@ -162,7 +162,7 @@ Kayan türde bir nesne bir integral türe dönüştürüldüğünde, kesirli kı
 |İki işlenenden türünde **uzun çift**.|Diğer işlenen türüne dönüştürülür **uzun çift**.|
 |Önceki koşul karşılanmamıştır ve işlenenlerden türüdür **çift**.|Diğer işlenen türüne dönüştürülür **çift**.|
 |Önceki koşullar karşılanmamıştır ve işlenenlerden türüdür **float**.|Diğer işlenen türüne dönüştürülür **float**.|
-|Önceki koşullar karşılanmamıştır (işlenenlerden hiçbiri kayan türlerden değil).|İntegral yükseltmeler işlenenler üzerinde aşağıdaki gibi gerçekleştirilir:<br /><br /> -Eğer iki işlenenden türünde **işaretsiz uzun**, diğer işlenen türüne dönüştürülür **işaretsiz uzun**.<br />-Koşul karşılanmamışsa ve işlenenlerden türü ise **uzun** ve diğer tür **işaretsiz int**, her iki işlenen de türüne dönüştürülür **işaretsiz uzun**.<br />-Önceki iki koşul karşılanmazsa ve işlenenlerden türü ise **uzun**, diğer işlenen türüne dönüştürülür **uzun**.<br />-Önceki üç koşul karşılanmazsa ve işlenenlerden türü ise **işaretsiz int**, diğer işlenen türüne dönüştürülür **işaretsiz int**.<br />-Önceki koşullardan hiçbiri karşılanırsa, her iki işlenen de türüne dönüştürülür **int**.|
+|Önceki koşullar karşılanmamıştır (işlenenlerden hiçbiri kayan türlerden değil).|İntegral yükseltmeler işlenenler üzerinde aşağıdaki gibi gerçekleştirilir:<br /><br />-Eğer iki işlenenden türünde **işaretsiz uzun**, diğer işlenen türüne dönüştürülür **işaretsiz uzun**.<br />-Koşul karşılanmamışsa ve işlenenlerden türü ise **uzun** ve diğer tür **işaretsiz int**, her iki işlenen de türüne dönüştürülür **işaretsiz uzun**.<br />-Önceki iki koşul karşılanmazsa ve işlenenlerden türü ise **uzun**, diğer işlenen türüne dönüştürülür **uzun**.<br />-Önceki üç koşul karşılanmazsa ve işlenenlerden türü ise **işaretsiz int**, diğer işlenen türüne dönüştürülür **işaretsiz int**.<br />-Önceki koşullardan hiçbiri karşılanırsa, her iki işlenen de türüne dönüştürülür **int**.|
 
 Aşağıdaki kodda, tabloda açıklanan dönüştürme kuralları gösterilmektedir:
 

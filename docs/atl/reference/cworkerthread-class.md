@@ -25,19 +25,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2c3e0eb625c492cb9f0e9a1234d33149ac201a1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 79855860b4d2d6bfee328f8fa07f2a3ba6cfd69c
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040238"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861466"
 ---
 # <a name="cworkerthread-class"></a>CWorkerThread sınıfı
 
 Bu sınıf bir çalışan iş parçacığı oluşturur veya mevcut bir kullanır, bir veya daha fazla çekirdek nesne tutamaçları bekler ve tutamaçlarından birinin sinyal, belirtilen istemci işlevi yürütür.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+> Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,7 +46,7 @@ template <class ThreadTraits = DefaultThreadTraits>
 class CWorkerThread
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *ThreadTraits*<br/>
 İş parçacığı oluşturma işlevi gibi sağlama sınıfı [CRTThreadTraits](../../atl/reference/crtthreadtraits-class.md) veya [Win32ThreadTraits](../../atl/reference/win32threadtraits-class.md).
@@ -84,19 +84,19 @@ class CWorkerThread
 
 1. Bu sınıfın bir örneğini oluşturun.
 
-2. Çağrı [CWorkerThread::Initialize](#initialize).
+1. Çağrı [CWorkerThread::Initialize](#initialize).
 
-3. Çağrı [CWorkerThread::AddHandle](#addhandle) Çekirdek nesnesi ve uygulaması için bir işaretçi, tanıtıcı ile [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md).
+1. Çağrı [CWorkerThread::AddHandle](#addhandle) Çekirdek nesnesi ve uygulaması için bir işaretçi, tanıtıcı ile [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md).
 
-     - veya -
+   \- veya -
 
-     Çağrı [CWorkerThread::AddTimer](#addtimer) uygulanmasına yönelik bir işaretçi ile [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md).
+   Çağrı [CWorkerThread::AddTimer](#addtimer) uygulanmasına yönelik bir işaretçi ile [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md).
 
-4. Uygulama [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) tanıtıcı veya Zamanlayıcı sinyal olduğunda bazı işlemler yapması için.
+1. Uygulama [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) tanıtıcı veya Zamanlayıcı sinyal olduğunda bazı işlemler yapması için.
 
-5. Bir nesne beklenebilir nesne listesinden kaldırmak için çağrı [CWorkerThread::RemoveHandle](#removehandle).
+1. Bir nesne beklenebilir nesne listesinden kaldırmak için çağrı [CWorkerThread::RemoveHandle](#removehandle).
 
-6. İş parçacığını sonlandırmak için çağrı [CWorkerThread::Shutdown](#shutdown).
+1. İş parçacığını sonlandırmak için çağrı [CWorkerThread::Shutdown](#shutdown).
 
 ## <a name="requirements"></a>Gereksinimler
 

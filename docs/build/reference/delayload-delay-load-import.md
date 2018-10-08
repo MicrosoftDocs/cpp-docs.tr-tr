@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 800b3d7d588d1038ac61cb7c9c4b9f1913bec9d4
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 509464ba78a6b7693a849d9f753b13328ab868f9
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722377"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860751"
 ---
 # <a name="delayload-delay-load-import"></a>/DELAYLOAD (Yükü İçe Aktarmayı Geciktir)
 
@@ -46,9 +46,9 @@ Yüklenmesinin ertelenmesini istediğiniz bir DLL'nin adı.
 
 1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-2. İçinde **bağlayıcı** klasörüne **giriş** özellik sayfası.
+1. İçinde **bağlayıcı** klasörüne **giriş** özellik sayfası.
 
-3. Değiştirme **yüklü DLL'leri Geciktir** özelliği.
+1. Değiştirme **yüklü DLL'leri Geciktir** özelliği.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 

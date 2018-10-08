@@ -11,12 +11,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7dfcf1839048f3c110bbca6754d1549161b63301
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: fd273afaf5934313067ada55574edbaeee43929b
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716572"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861544"
 ---
 # <a name="arm64-exception-handling"></a>ARM64 özel durum işleme
 
@@ -34,11 +34,11 @@ ARM64 üzerinde Windows Donanım tarafından oluşturulan zaman uyumsuz özel du
 
    - Geriye doğru izleme kullanımı geriye doğru izleme kodları açıklanmaktadır olamaz, sonra bazı durumlarda, kod çözme yönerge dönmesi gerekir. Bu genel karmaşıklık artar ve ideal kaçınılması.
 
-2. Orta Giriş geriye doğru izleme ve orta sonuç desteği.
+1. Orta Giriş geriye doğru izleme ve orta sonuç desteği.
 
    - Geriye doğru izleme Windows içinde birden çok özel durum işleme için kullanılan, biz gerçekleştirmek için kritik olacak şekilde, doğru bir bırakma bir giriş veya çıkış kodu dizisi sırasında bile ortasında.
 
-3. Bir en az miktarda alan yararlanın.
+1. Bir en az miktarda alan yararlanın.
 
    - Geriye doğru izleme kodları ikili boyutu büyük ölçüde artırmak için toplama gerekir değil.
 
@@ -50,15 +50,15 @@ ARM64 üzerinde Windows Donanım tarafından oluşturulan zaman uyumsuz özel du
 
 1. Açıklanabilmeleri ve sonuç ya da diğer yansıtma eğilimindedir. Bu ortak nitelik avantajlarından yararlanmaya göre geriye doğru izleme açıklamak için gereken meta veri boyutu büyük ölçüde azaltılabilir. İşlev gövdesi içinde giriş ait işlemler geri alınır veya bitiş'ın işlemler ileriye doğru bir şekilde gerçekleştirilir bir önemi yoktur. Her ikisi de benzer sonuçlar üretmelidir.
 
-2. İşlevler tüm görece küçük olma eğilimindedir. Alanı için çeşitli iyileştirmeler bu verilerin en verimli paketlemeyi elde etmek için kullanır.
+1. İşlevler tüm görece küçük olma eğilimindedir. Alanı için çeşitli iyileştirmeler bu verilerin en verimli paketlemeyi elde etmek için kullanır.
 
-3. Sonuç koşullu kodu yok.
+1. Sonuç koşullu kodu yok.
 
-4. Ayrılmış çerçeve işaretçisi kaydı: sp giriş olarak başka bir kayıttaki (r29) kaydedilmişse, kayıt işlevi dokunulmadan kalır ve böylece özgün sp herhangi bir zamanda kurtarılabilir.
+1. Ayrılmış çerçeve işaretçisi kaydı: sp giriş olarak başka bir kayıttaki (r29) kaydedilmişse, kayıt işlevi dokunulmadan kalır ve böylece özgün sp herhangi bir zamanda kurtarılabilir.
 
-5. Sp başka bir kayıttaki kaydedilmezse tüm yığın işaretçisi işlenmesini kesinlikle giriş ve bitiş içinde gerçekleşir.
+1. Sp başka bir kayıttaki kaydedilmezse tüm yığın işaretçisi işlenmesini kesinlikle giriş ve bitiş içinde gerçekleşir.
 
-6. Yığın çerçevesi düzeni, sonraki bölümde açıklandığı gibi düzenlenir.
+1. Yığın çerçevesi düzeni, sonraki bölümde açıklandığı gibi düzenlenir.
 
 ## <a name="arm64-stack-frame-layout"></a>ARM64 yığın çerçevesi düzeni
 
@@ -80,7 +80,7 @@ Zincirleme çerçeve işlevler için yerel değişken alanı en iyi duruma getir
         sub    sp, #outsz               // (optional for #outsz != 0)
     ```
 
-2. Zincirleme #localsz > 512
+1. Zincirleme #localsz > 512
 
     ```asm
         stp    r19,r20,[sp,-96]!        // pre-indexed, save in 1st FP/INT pair
@@ -94,7 +94,7 @@ Zincirleme çerçeve işlevler için yerel değişken alanı en iyi duruma getir
         add    r29,sp, #outsz           // setup r29 points to bottom of local area
     ```
 
-3. Unchained, yaprak işlevleri (kaydedilmemiş lr)
+1. Unchained, yaprak işlevleri (kaydedilmemiş lr)
 
     ```asm
         stp    r19,r20,[sp, -72]!       // pre-indexed, save in 1st FP/INT reg-pair
@@ -107,7 +107,7 @@ Zincirleme çerçeve işlevler için yerel değişken alanı en iyi duruma getir
 
    Tüm yerel öğeler üzerinde SP'yi tabanlı erişilir \<r29, lr > Önceki çerçeveye işaret eder. Çerçeve boyutu için < = 512, "sub sp..." yığını altına kaydedilmiş regs alan taşınırsa hemen iyileştirilebilir. Olumsuz tarafı, söz konusu diğer yukarıdaki düzenleriyle tutarlı değil ve kaydedilen regs çifti regs ve öncesi ve sonrası dizinli uzaklık adresleme modu aralığının bir parçası olması ' dir.
 
-4. (Lr kaydedilen Int alanına kaydedilir) unchained ve yaprak olmayan işlevler
+1. (Lr kaydedilen Int alanına kaydedilir) unchained ve yaprak olmayan işlevler
 
     ```asm
         stp    r19,r20,[sp,-80]!        // pre-indexed, save in 1st FP/INT reg-pair
@@ -141,7 +141,7 @@ Zincirleme çerçeve işlevler için yerel değişken alanı en iyi duruma getir
 
    Tüm yerel öğeler üzerinde SP'yi tabanlı erişilir \<r29 > Önceki çerçeveye işaret eder.
 
-5. Zincirleme #framesz < = 512, #outsz = 0
+1. Zincirleme #framesz < = 512, #outsz = 0
 
     ```asm
         stp    r29, lr, [sp, -#framesz]!    // pre-indexed, save <r29,lr>
@@ -152,7 +152,7 @@ Zincirleme çerçeve işlevler için yerel değişken alanı en iyi duruma getir
 
    Yukarıdaki #1 giriş için karşılaştırma, avantajı tüm kayıt yönergeleri kaydetme yönerge ayırma sağa tek yığın sonra yürütülecek hazır değildir. Bu nedenle, olduğundan koruma hiçbir bağımlılığı yönerge düzeyi paralellik engelleyen sp.
 
-6. Zincirleme, çerçeve boyutu 512 > (alloca olmayan işlevler için isteğe bağlı)
+1. Zincirleme, çerçeve boyutu 512 > (alloca olmayan işlevler için isteğe bağlı)
 
     ```asm
         stp    r29, lr, [sp, -80]!          // pre-indexed, save <r29,lr>
@@ -166,7 +166,7 @@ Zincirleme çerçeve işlevler için yerel değişken alanı en iyi duruma getir
 
    En iyi duruma getirme amacıyla "çifti reg" ve adresleme modu öncesi/sonrası-indexed uzaklığı için daha iyi bir tedarik sağlamak için yerel herhangi bir konumda r29 yeniden koyabilirsiniz. Çerçeve işaretçilerini aşağıda Yereller SP'yi üzerinde temel erişilebilir.
 
-7. Zincirleme, çerçeve ile veya olmadan alloca() > 4K, boyut,
+1. Zincirleme, çerçeve ile veya olmadan alloca() > 4K, boyut,
 
     ```asm
         stp    r29, lr, [sp, -80]!          // pre-indexed, save <r29,lr>
@@ -237,7 +237,7 @@ Bu veriler, dört bölüme ayrılır:
 
    g. **Sonuç sayısı Genişletilmiş** ve **genişletilmiş kod sözcükleri** 16-bit ve 8-bit alanları, sırasıyla, olağan dışı derecede büyük bir sonuç sayısı kodlama için daha fazla alan sağlayan veya bir çok sayıda kod sözcükleri geriye doğru izleme. Bu alanlar içeren uzantı sözcüğünü yalnızca her iki mevcut **sonuç sayısı** ve **kod sözcükleri** ilk üstbilgi sözcük alanlara 0 olarak ayarlanır.
 
-2. Sonra özel durum verileri varsa **sonuç sayısı** sıfır değil, sonuç kapsamları hakkında bilgi listesi bir Word paketlenmiş ve, başlangıç uzaklığını artan sıraya göre depolanır. Her kapsam, aşağıdaki bit içerir:
+1. Sonra özel durum verileri varsa **sonuç sayısı** sıfır değil, sonuç kapsamları hakkında bilgi listesi bir Word paketlenmiş ve, başlangıç uzaklığını artan sıraya göre depolanır. Her kapsam, aşağıdaki bit içerir:
 
    a. **Başlangıç ve bitiş uzaklığı** işlevi başlangıcını göre sonuç 4, bölü, bayt uzaklığı açıklayan bir 18 bit alanı
 
@@ -245,9 +245,9 @@ Bu veriler, dört bölüme ayrılır:
 
    c. **Başlangıç ve bitiş dizin** 10-bit, (2 daha fazla bitten **genişletilmiş kod sözcükleri**) alan ilk bayt dizinini belirten geriye doğru izleme, bu sonuç açıklar.
 
-3. Geriye doğru izleme kodları içeren bir bayt dizisi bitiş kapsam listesi çağrıldıktan sonra bir sonraki bölümde ayrıntılı açıklanmıştır. Bu dizi için en yakın tam sözcük sınırı sonunda sıfır eklenir. Küçük endian modunda doğrudan getirilebilir, böylece bayt little endian sırayla depolanır.
+1. Geriye doğru izleme kodları içeren bir bayt dizisi bitiş kapsam listesi çağrıldıktan sonra bir sonraki bölümde ayrıntılı açıklanmıştır. Bu dizi için en yakın tam sözcük sınırı sonunda sıfır eklenir. Küçük endian modunda doğrudan getirilebilir, böylece bayt little endian sırayla depolanır.
 
-4. Son olarak, geriye doğru izleme kodu bayt sonra (ve **X** bit üst bilgisindeki 1 olarak ayarlanmıştır) özel durum işleyicisi bilgileri alınır. Bu tek bir oluşur **özel durum işleyicisi RVA** adresi özel durum işleyicisinin kendisi, sağlama ve ardından hemen bir özel durum işleyici tarafından gerekli veri değişken uzunluklu miktarı.
+1. Son olarak, geriye doğru izleme kodu bayt sonra (ve **X** bit üst bilgisindeki 1 olarak ayarlanmıştır) özel durum işleyicisi bilgileri alınır. Bu tek bir oluşur **özel durum işleyicisi RVA** adresi özel durum işleyicisinin kendisi, sağlama ve ardından hemen bir özel durum işleyici tarafından gerekli veri değişken uzunluklu miktarı.
 
 Yukarıdaki sanal işlem bulunur kaydı ilk 8 bayt getirmek ve tam boyutunu (eksi aşağıdaki özel durum değişken boyutlu veri uzunluğu) kaydı, işlem olası olduğu şekilde tasarlanmıştır. Aşağıdaki kod parçacığı, kayıt boyutunu hesaplar:
 
@@ -287,9 +287,9 @@ Geriye doğru izleme kodları işlemlerin geri alınması gerekir sırada giriş
 
 1. Geriye doğru izleme kodları sayısını sayma tarafından giriş ve bitiş uzunluğunu hesaplamak mümkündür.
 
-2. Başlangıç ve bitiş kapsamın geçmiş yönerge sayısını sayma tarafından geriye doğru izleme kodları eşdeğeri olan sayıyı atlayabilir ve kısmen yürütülen tamamlamak için bir dizi rest yürütmek mümkündür bitiş gerçekleştirmekte olduğu geriye doğru izleme.
+1. Başlangıç ve bitiş kapsamın geçmiş yönerge sayısını sayma tarafından geriye doğru izleme kodları eşdeğeri olan sayıyı atlayabilir ve kısmen yürütülen tamamlamak için bir dizi rest yürütmek mümkündür bitiş gerçekleştirmekte olduğu geriye doğru izleme.
 
-3. Yönerge giriş bitmeden önce sayısını sayma tarafından geriye doğru izleme kodları eşdeğeri olan sayıyı atlayabilir ve sırası, yalnızca yürütme tamamlanan giriş bölümlerini geri kalanını yürütmek mümkündür.
+1. Yönerge giriş bitmeden önce sayısını sayma tarafından geriye doğru izleme kodları eşdeğeri olan sayıyı atlayabilir ve sırası, yalnızca yürütme tamamlanan giriş bölümlerini geri kalanını yürütmek mümkündür.
 
 Geriye doğru izleme kodları aşağıdaki tabloya göre kodlanır. Tüm geriye doğru izleme kodları dışındaki bir büyük yığın ayıran bir tek veya çift bayt olan. Tamamen 21 geriye doğru izleme kod vardır. Kısmen yürütülen açıklanabilmeleri ve sonuç, geriye doğru izleme izin vermek üzere her geriye doğru izleme kod eşlemeleri tam olarak bir yönergesinde giriş/sonuç.
 
@@ -433,9 +433,9 @@ Artık, her zaman giriş ve sonuç kodları tam olarak eşleşen bir durum deği
 
 1. İçinde farklı dan geriye doğru izleme işlevinin gövdesi yalnızca geriye doğru izleme kodları dizin 0 konumunda yürütmeye başlamak ve "Bitiş" opcode basmak kadar devam edin.
 
-2. Gelen bir bitiş içinde geriye doğru izleme, sonuç kapsamlı bir başlangıç noktası olarak sağlanan bitiş özgü başlangıç dizini kullanın. İşlem kaç bayt söz konusu bilgisayar bitiş başlangıcından. Ardından tüm zaten yürütüldü yönergeleri muhasebesi kadar geriye doğru izleme kodları atlanıyor geriye doğru izleme kodları aracılığıyla İleri ilerleyin. Ardından bu noktada başlangıç yürütün.
+1. Gelen bir bitiş içinde geriye doğru izleme, sonuç kapsamlı bir başlangıç noktası olarak sağlanan bitiş özgü başlangıç dizini kullanın. İşlem kaç bayt söz konusu bilgisayar bitiş başlangıcından. Ardından tüm zaten yürütüldü yönergeleri muhasebesi kadar geriye doğru izleme kodları atlanıyor geriye doğru izleme kodları aracılığıyla İleri ilerleyin. Ardından bu noktada başlangıç yürütün.
 
-3. Dizin 0 gelen giriş içinde geriye doğru izleme, başlangıç noktası olarak kullanın. Giriş kodu dizisinin uzunluğunu hesaplamak ve ardından söz konusu bilgisayarı kaç bayt giriş sonundan işlem. Ardından tüm henüz yürütülen yönergeleri muhasebesi kadar geriye doğru izleme kodları atlanıyor geriye doğru izleme kodları aracılığıyla İleri ilerleyin. Ardından bu noktada başlangıç yürütün.
+1. Dizin 0 gelen giriş içinde geriye doğru izleme, başlangıç noktası olarak kullanın. Giriş kodu dizisinin uzunluğunu hesaplamak ve ardından söz konusu bilgisayarı kaç bayt giriş sonundan işlem. Ardından tüm henüz yürütülen yönergeleri muhasebesi kadar geriye doğru izleme kodları atlanıyor geriye doğru izleme kodları aracılığıyla İleri ilerleyin. Ardından bu noktada başlangıç yürütün.
 
 Sonuç olarak bu kurallar, giriş için geriye doğru izleme kodları her zaman dizideki ilk olmalıdır ve ayrıca genel gelen gövdesi içinde geriye doğru izleme kullanım durumu geriye doğru izlemek için kullanılan kodları oldukları. Tüm özel Sonuç kodu dizilerinizi hemen sonra uygulamanız gerekir.
 
@@ -484,13 +484,13 @@ Bir normal işlev parçalarını durumudur "ayırma ile derleyicinin kod" kod an
 
    Geriye doğru izleme kodları: `set_fp`, `save_regp 0,240`, `save_fplr_x_256`, `end`.
 
-2. Yalnızca başlangıçları (bölge 2: giriş olan ana bölge)
+1. Yalnızca başlangıçları (bölge 2: giriş olan ana bölge)
 
    Tüm prolog kodları bu bölgeye atlama zaman denetim tarafından görülebilmesini varsayılır. Kısmi geriye doğru izleme bir normal işlev aynı şekilde sonuç oluşabilir. Bu tür bir bölge compact .pdata tarafından gösterilemez. Tam xdata kaydında, bunu köşeli parantez içindeki tarafından bir "hayalet" giriş ile kodlanabilir bir `end_c` ve `end` kod çifti geriye doğru izleme.  Başında `end_c` giriş boyutu sıfır olduğunu gösterir. Sonuç başlangıç dizini tek bitiş noktası `set_fp`.
 
    Bölge 2 için kod geriye doğru izleme: `end_c`, `set_fp`, `save_regp 0,240`, `save_fplr_x_256`, `end`.
 
-3. Açıklanabilmeleri veya sonuç yok (bölge 3: açıklanabilmeleri ve tüm sonuç olan diğer parçaları):
+1. Açıklanabilmeleri veya sonuç yok (bölge 3: açıklanabilmeleri ve tüm sonuç olan diğer parçaları):
 
    Bayrak ayarlandığında aracılığıyla Compact .pdata biçimi uygulanabilir = 10. Tam sanal işlem bulunur kaydıyla sonuç sayısı = 1. Geriye doğru izleme kodu ile aynı bölge yukarıdaki 2. ancak de başlangıç ve bitiş dizini işaret `end_c`. Kısmi geriye doğru izleme hiçbir zaman kod bu bölgede gerçekleşir.
 

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef9c66324f886da27431a94a464554e2a8ddb00a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 483a36f62a147d9b71a489c2f611fc45c1b7fa54
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391586"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860738"
 ---
 # <a name="sequence-of-operations-for-creating-database-applications"></a>Veritabanı Uygulamaları Oluşturmak için İşlem Dizisi
 
@@ -36,7 +36,7 @@ Aşağıdaki tabloda, veritabanı uygulamaları yazılırken, rol ve framework'�
 |Görev|Bunu|Framework yok|
 |----------|------------|------------------------|
 |DAO ya da MFC ODBC sınıfları kullanıp kullanmamaya karar verin.|ODBC yeni MFC projeleri için kullanın. DAO yalnızca mevcut uygulamaları korumak için kullanın. Genel bilgi için bkz [veri erişim programlama](../data/data-access-programming-mfc-atl.md).|Framework veritabanı erişimi destekleyen sınıflar sağlar.|
-|Veritabanı seçenekleri ile iskelet uygulamanızı oluşturun.|MFC Uygulama Sihirbazı'nı çalıştırın. Veritabanı destek sayfasında seçenekleri belirleyin. Kayıt görünümü oluşturan bir seçeneği tercih ederseniz, ayrıca belirtin:<br /><br /> -Veri kaynağı ve tablo adı veya adları<br />-Sorgu ad veya adlar.|MFC Uygulama Sihirbazı dosyaları oluşturur ve gerekli içerir belirtir. Belirlediğiniz seçeneklere bağlı olarak, bir kayıt kümesi sınıfı dosyaları dahil edebilirsiniz.|
+|Veritabanı seçenekleri ile iskelet uygulamanızı oluşturun.|MFC Uygulama Sihirbazı'nı çalıştırın. Veritabanı destek sayfasında seçenekleri belirleyin. Kayıt görünümü oluşturan bir seçeneği tercih ederseniz, ayrıca belirtin:<br /><br />-Veri kaynağı ve tablo adı veya adları<br />-Sorgu ad veya adlar.|MFC Uygulama Sihirbazı dosyaları oluşturur ve gerekli içerir belirtir. Belirlediğiniz seçeneklere bağlı olarak, bir kayıt kümesi sınıfı dosyaları dahil edebilirsiniz.|
 |Veritabanı formunu ya da formları tasarlayın.|Kayıt görünümü sınıfları için iletişim şablonu kaynaklarına denetimleri yerleştirmek için Visual C++ iletişim kutusu düzenleyicisi kullanın.|MFC Uygulama Sihirbazı, doldurmak bir boş iletişim şablon kaynağı oluşturur.|
 |Ek Kayıt görünümü ve kayıt kümesi sınıflar gerektiği şekilde oluşturun.|Sınıf Görünümü sınıfları ve iletişim kutusunda, görünüm tasarlamak üzere düzenleyici oluşturmak için kullanın.|Sınıf Görünümü, yeni sınıflar için ek dosyalar oluşturur.|
 |Kayıt kümesi nesneleri kodunuzda gerektiği gibi oluşturun. Kayıtları işlemek için her bir kayıt kümesi kullan...|Türetilen sınıflar kümeleriniz dayalı [CRecordset](../mfc/reference/crecordset-class.md) sihirbazları kullanarak.|ODBC kayıt alanı değişimi (RFX) veritabanı ve kümenizin alan veri üyeleri arasında veri alışverişi yapmak için kullanır. Kayıt görünümü kullanıyorsanız, kayıt ve kayıt görünümü denetimleri arasındaki veri iletişim kutusu veri değişimi (DDX) değiştirir.|

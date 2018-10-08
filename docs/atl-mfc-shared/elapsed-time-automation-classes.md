@@ -21,32 +21,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dcde08e8ffdb30f9ebf0ae7577bf836e84513a07
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d8f36c48cf654379e9db3a99c2404732dca30f63
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751683"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860328"
 ---
 # <a name="elapsed-time-automation-classes"></a>Geçen zaman: Otomasyon sınıfları
 
 Bu yordamda, iki arasındaki farkı hesaplamak gösterilmiştir `CTime` nesneleri ve get bir `CTimeSpan` sonucu.
 
-#### <a name="to-calculate-elapsed-time"></a>Geçen süreyi hesaplamak için
+## <a name="to-calculate-elapsed-time"></a>Geçen süreyi hesaplamak için
 
 1. İki `COleDateTime` nesneleri.
 
-2. Biri `COleDateTime` geçerli zamanın nesneleri.
+1. Biri `COleDateTime` geçerli zamanın nesneleri.
 
-3. Zaman alan bir görev gerçekleştirir.
+1. Zaman alan bir görev gerçekleştirir.
 
-4. Diğer ayarlamak `COleDateTime` geçerli saati için nesne.
+1. Diğer ayarlamak `COleDateTime` geçerli saati için nesne.
 
-5. İki zaman arasındaki farkı yararlanın.
+1. İki zaman arasındaki farkı yararlanın.
 
    [!code-cpp[NVC_ATLMFC_Utilities#178](../atl-mfc-shared/codesnippet/cpp/elapsed-time-automation-classes_1.cpp)]
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Tarih ve Saat: Otomasyon Desteği](../atl-mfc-shared/date-and-time-automation-support.md)
-

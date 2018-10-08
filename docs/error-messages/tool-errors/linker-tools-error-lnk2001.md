@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb8e560e46da06c4312ab4261016ccd5a5ddda68
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3da81f46514fbdd7d01ce9c2a9d8be6007301b45
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017853"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861583"
 ---
 # <a name="linker-tools-error-lnk2001"></a>Bağlayıcı Araçları Hatası LNK2001
 
@@ -73,9 +73,9 @@ Uygulama hata ayıklama sürümü oluşturma sırasında sürüm modu kitaplıkl
 
 Bu hata, kodunuzu kitaplığa bir sürümünden bir sembole başvuruyor, ancak bağlayıcı kitaplığa farklı bir sürümünü sağlamanız oluşabilir. Genellikle, nesne dosyalarında veya kitaplıklarındaki derleyicinin farklı sürümleri için oluşturulan karıştırılamaz. Yeni bir sürümde sevk kitaplıkları, önceki sürümler ve tam tersini dahil kitaplıklarında bulunamayan semboller içerebilir. Bu sorunu gidermek için nesne dosyaları ve kitaplıkları ile aynı sürümünü derleyici bunları birbirine bağlayarak önce oluşturun.
 
--  Araçlar &#124; seçenekleri &#124; projeleri &#124; VC ++ dizinleri iletişim kutusunda kitaplık dosyaları seçimin Kitaplığı arama sırası değiştirmenize olanak sağlar. Bağlayıcı klasörü proje özellik sayfaları iletişim kutusunda, süresi dolmuş olabilir yolları de içerebilir.
+- Araçlar &#124; seçenekleri &#124; projeleri &#124; VC ++ dizinleri iletişim kutusunda kitaplık dosyaları seçimin Kitaplığı arama sırası değiştirmenize olanak sağlar. Bağlayıcı klasörü proje özellik sayfaları iletişim kutusunda, süresi dolmuş olabilir yolları de içerebilir.
 
--  Bu sorun, yeni bir SDK'sı (belki de farklı bir konuma) yüklüyse ve arama sırasını yeni konumunu gösterecek şekilde güncelleştirilmez görünebilir. Yeni SDK'ye mi yolu normalde koymanız gerekir ve lib varsayılan Visual C++ konumun önüne dizinleri içerir. Ayrıca, katıştırılmış yolları içeren bir proje hala geçerli, ancak farklı bir konuma yüklenen yeni sürümü tarafından eklenen yeni işlevler için güncel olan eski yollar işaret edebilir.
+- Bu sorun, yeni bir SDK'sı (belki de farklı bir konuma) yüklüyse ve arama sırasını yeni konumunu gösterecek şekilde güncelleştirilmez görünebilir. Yeni SDK'ye mi yolu normalde koymanız gerekir ve lib varsayılan Visual C++ konumun önüne dizinleri içerir. Ayrıca, katıştırılmış yolları içeren bir proje hala geçerli, ancak farklı bir konuma yüklenen yeni sürümü tarafından eklenen yeni işlevler için güncel olan eski yollar işaret edebilir.
 
 - Komut satırında yapı ve ortam değişkenlerini oluşturdunuz, Araçlar, kitaplıklar ve üst bilgi dosyaları yolları tutarlı bir sürüme Git doğrulayın. Daha fazla bilgi için [komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md)
 

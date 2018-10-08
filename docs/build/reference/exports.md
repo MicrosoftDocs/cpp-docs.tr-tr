@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62b49c20248ca4825bcf2c95b6c7adc956a39025
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6bf350b0a129c642678fc6af1bac7d35633fe909
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714536"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860985"
 ---
 # <a name="exports"></a>EXPORTS
 
@@ -82,11 +82,11 @@ EXPORTS
 
 1. [__Declspec(dllexport)](../../cpp/dllexport-dllimport.md) kaynak koddaki anahtar sözcüğü
 
-2. Bir `EXPORTS` deyiminde bir. DEF dosyası
+1. Bir `EXPORTS` deyiminde bir. DEF dosyası
 
-3. Bir [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlantı komut belirtimi
+1. Bir [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlantı komut belirtimi
 
-4. A [yorum](../../preprocessor/comment-c-cpp.md) yönergesi, kaynak kodda, formun `#pragma comment(linker, "/export: definition ")`. Aşağıdaki örnek, bir işlev bildiriminden önce #pragma comment yönergesi gösterir. burada `PlainFuncName` ve adıdır ve `_PlainFuncName@4` işlev düzenlenmiş adı:
+1. A [yorum](../../preprocessor/comment-c-cpp.md) yönergesi, kaynak kodda, formun `#pragma comment(linker, "/export: definition ")`. Aşağıdaki örnek, bir işlev bildiriminden önce #pragma comment yönergesi gösterir. burada `PlainFuncName` ve adıdır ve `_PlainFuncName@4` işlev düzenlenmiş adı:
 
     ```cpp
     #pragma comment(linker, "/export:PlainFuncName=_PlainFuncName@4")

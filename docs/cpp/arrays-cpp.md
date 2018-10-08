@@ -16,44 +16,41 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7c88c1d0f4096017b8ffc48a92143a63d229c5e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b2423355aa53abe52fffcd81ec847b41337efcbf
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017917"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861037"
 ---
 # <a name="arrays-c"></a>Diziler (C++)
 
 Koleksiyonu nesneleri gibi bir dizidir. Bir dizinin en basit durumu aşağıdaki sırayla bildirilebilecek bir vektör şöyledir:
 
-```
-decl-specifier identifier [ constant-expression ]
-decl-specifier identifier []
-decl-specifier identifer [][ constant-expression] . . .
-decl-specifier identifier [ constant-expression ]
-[ constant-expression ] . . .
-```
+> *Decl-specifier* *tanımlayıcı* **\[** *sabit-ifade* **]**<br/>
+> *Decl-specifier* *tanımlayıcı*  **\[]**<br/>
+> *Decl-specifier* *tanımlayıcıyla* **\[]\[** *sabit-ifade* **]** . biçimindeki telefon numarasıdır. biçimindeki telefon numarasıdır.<br/>
+> *Decl-specifier* *tanımlayıcı* **\[** *sabit-ifade* **]** **\[** *sabit-ifade* **]** . biçimindeki telefon numarasıdır. biçimindeki telefon numarasıdır.
 
 1. Bildirim belirticisi:
 
-- İsteğe bağlı bir depolama sınıfı tanımlayıcısı.
+   - İsteğe bağlı bir depolama sınıfı tanımlayıcısı.
 
-- İsteğe bağlı **const** ve/veya **geçici** tanımlayıcıları.
+   - İsteğe bağlı **const** ve/veya **geçici** tanımlayıcıları.
 
-- Dizideki öğelerin tür adı.
+   - Dizideki öğelerin tür adı.
 
-2. Bildirimci:
+1. Bildirimci:
 
-- Tanımlayıcı.
+   - Tanımlayıcı.
 
-- Köşeli ayraç içinde Tamsayı türünde sabit bir ifade **[]**. Birden çok boyutta ek oluşur. parantez kullanılarak bildirilirse, Birinci ayraç kümesi sabit ifade atlanabilir.
+   - Köşeli ayraç içinde Tamsayı türünde sabit bir ifade  **\[]**. Birden çok boyutta ek oluşur. parantez kullanılarak bildirilirse, Birinci ayraç kümesi sabit ifade atlanabilir.
 
-- Sabit ifadeleri kapsayan isteğe bağlı ek parantezler.
+   - Sabit ifadeleri kapsayan isteğe bağlı ek parantezler.
 
-3. İsteğe bağlı bir başlatıcı.  Bkz: [başlatıcılar](../cpp/initializers.md).
+1. İsteğe bağlı bir başlatıcı. Daha fazla bilgi için [başlatıcılar](../cpp/initializers.md).
 
-Dizideki öğelerin sayısını sabit ifade tarafından verilir. Dizideki ilk öğe 0 öğedir ve son öğe (*n*-1) öğe, burada *n* dizi içerebilir öğe sayısı. *Sabit-ifade* bir tamsayı türünde olmalı ve 0'dan büyük olmalıdır. Dizi içinde son alan olduğunda sıfır boyutlu bir dizi yasal bir **yapı** veya **birleşim** ve Microsoft Uzatmaları (/Ze) etkinleştirildiğinde.
+Dizideki öğelerin sayısı tarafından verilen *sabit-ifade*. Dizideki ilk öğe 0 öğedir ve son öğe (*n*-1) öğe, burada *n* dizi içerebilir öğe sayısı. *Sabit-ifade* bir tamsayı türünde olmalı ve 0'dan büyük olmalıdır. Dizi içinde son alan olduğunda sıfır boyutlu bir dizi yasal bir **yapı** veya **birleşim** ve Microsoft Uzatmaları (/Ze) etkinleştirildiğinde.
 
 Aşağıdaki örnek, çalışma zamanında bir dizi tanımlamak gösterilmektedir:
 

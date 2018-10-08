@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 28426e2ca75638f5ad45188a8790d1c281afa99b
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: c846cecb415365db92e3097bbf04ab06cd4209d0
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317927"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860452"
 ---
 # <a name="menu-command-properties-c"></a>Menü komut özellikleri (C++)
 
@@ -28,7 +28,7 @@ Aşağıdaki bilgilere göre düzenlenmiş **menü** görünen Özellikler [Öze
 
 |Özellik|Açıklama|
 |--------------|-----------------|
-|**sonu**|Şu değerlerden biri olabilir:<br /><br /> -   **Hiçbiri** (varsayılan): kesme yok.<br />-   **Sütun**: statik menüleri için bu değer menü komutu yeni bir satıra yerleştirir. Açılır menüler için bu değeri hiçbir sütunları arasındaki çizgi ile yeni bir sütun menü komutunu yerleştirir. Bu özelliğin ayarlanması menü görünümünü yalnızca çalışma zamanında, menü Düzenleyicisi'nde etkiler.<br />-   **Çubuk**: aynı **sütun** dışında açılır menüler için bu değeri yeni bir sütun içeren bir dikey çizgi eski sütunu ayırır. Bu özelliğin ayarlanması etkiler menü görünümünü yalnızca çalışma zamanında değil **menü** Düzenleyici.|
+|**sonu**|Şu değerlerden biri olabilir:<br /><br />- **Hiçbiri** (varsayılan): kesme yok.<br />- **Sütun**: statik menüleri için bu değer menü komutu yeni bir satıra yerleştirir. Açılır menüler için bu değeri hiçbir sütunları arasındaki çizgi ile yeni bir sütun menü komutunu yerleştirir. Bu özelliğin ayarlanması menü görünümünü yalnızca çalışma zamanında, menü Düzenleyicisi'nde etkiler.<br />- **Çubuk**: aynı **sütun** dışında açılır menüler için bu değeri yeni bir sütun içeren bir dikey çizgi eski sütunu ayırır. Bu özelliğin ayarlanması etkiler menü görünümünü yalnızca çalışma zamanında değil **menü** Düzenleyici.|
 |**Resim yazısı**|Menü komutunu (menü adı) etiket metni. Bir harf menüsünün açıklamasındaki kısayol tuşu komutu, bir ampersan ile önünde olmak için (&).|
 |**İşaretli**|Varsa **True**, menü komutunu başlangıçta denetlenir. Türü: **Bool**. Varsayılan: **False**.|
 |**Etkin**|Varsa **False**, menü öğesi devre dışı bırakıldı.|

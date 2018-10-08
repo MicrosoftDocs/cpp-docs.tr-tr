@@ -17,22 +17,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf2b3d047a6618326e69dcb51f143f77fc10c8a6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f0b20cbae3036ffecfa63f2e3ee6be8e2153fc8f
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099544"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860920"
 ---
 # <a name="making-an-atl-object-noncreatable"></a>ATL nesnesini oluşturulamaz yapma
 
 Bir istemci doğrudan nesne oluşturulamıyor bir ATL tabanlı COM nesnesi özniteliklerini değiştirebilirsiniz. Bu durumda, nesne başka bir nesne üzerinde bir yöntem çağrısının döndürülen yerine doğrudan oluşturulur.
 
-### <a name="to-make-an-object-noncreatable"></a>Nesnesini oluşturulamaz yapma
+## <a name="to-make-an-object-noncreatable"></a>Nesnesini oluşturulamaz yapma
 
 1. Kaldırma [OBJECT_ENTRY_AUTO](object-map-macros.md#object_entry_auto) nesne. Noncreatable ancak kaydedilecek denetim nesnesi istiyorsanız, OBJECT_ENTRY_AUTO ile değiştirin [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](object-map-macros.md#object_entry_non_createable_ex_auto).
 
-2. Ekleme [noncreatable](../../windows/noncreatable.md) .IDL dosyasındaki coclass özniteliği. Örneğin:
+1. Ekleme [noncreatable](../../windows/noncreatable.md) .IDL dosyasındaki coclass özniteliği. Örneğin:
 
     ```  
     [uuid(A1992E3D-3CF0-11D0-826F-00A0C90F2851), 
@@ -52,4 +52,3 @@ Bir istemci doğrudan nesne oluşturulamıyor bir ATL tabanlı COM nesnesi özni
 [ATL ve C Çalışma Zamanı Koduyla Programlama](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
-

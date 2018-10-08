@@ -16,30 +16,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d41e4895d3a26225bb2c34e688df9619414c339
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 298e504ff0f24291730d05a0595368a3b7e6415f
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765713"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860010"
 ---
 # <a name="adding-an-atl-ole-db-provider"></a>ATL OLE DB sağlayıcısı ekleme
 
 ATL OLE DB sağlayıcısı bir projeye eklemek için bu sihirbazı kullanın. ATL OLE DB sağlayıcısı, bir veri kaynağı, oturum, komut ve satır kümesi sınıfları oluşur. Projenin ATL COM uygulamanın oluşturulmuş gerekir.
 
-### <a name="to-add-an-atl-ole-db-provider-to-your-project"></a>ATL OLE DB sağlayıcısı projenize eklemek için
+## <a name="to-add-an-atl-ole-db-provider-to-your-project"></a>ATL OLE DB sağlayıcısı projenize eklemek için
 
-1. Sınıf Görünümü'nde projeye sağ tıklayın. Kısayol menüsünde **Ekle** ve ardından **sınıfı Ekle**.
+1. İçinde **sınıf görünümü**, projeye sağ tıklayın. Kısayol menüsünde **Ekle** ve ardından **sınıfı Ekle**.
 
-2. Visual C++ klasörünü çift tıklatarak **ATL OLE DB sağlayıcısı** simgesi veya seçin ve **açık**.
+1. İçinde **Visual C++** klasörünü çift tıklatın **ATL OLE DB sağlayıcısı** simgesi veya seçin ve **açık**.
 
-     ATL OLE DB sağlayıcısı Sihirbazı açılır.
+   ATL OLE DB sağlayıcısı Sihirbazı açılır.
 
-3. Bölümünde anlatıldığı gibi ayarları tanımlama [ATL OLE DB sağlayıcısı Sihirbazı](../../atl/reference/atl-ole-db-provider-wizard.md).
+1. Bölümünde anlatıldığı gibi ayarları tanımlama [ATL OLE DB sağlayıcısı Sihirbazı](../../atl/reference/atl-ole-db-provider-wizard.md).
 
-4. Tıklayın **son** yeni oluşturulan OLE DB sağlayıcısı kodunu projenize ekler sihirbazı kapatın.
+1. Tıklayın **son** yeni oluşturulan OLE DB sağlayıcısı kodunu projenize ekler sihirbazı kapatın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)
-

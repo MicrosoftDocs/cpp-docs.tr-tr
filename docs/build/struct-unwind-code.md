@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1da6f078741c598099e71da9164f54b56da3f355
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f5bccddd2ddd5c0f9dfbc828a7da3a66fa13339d
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726654"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861727"
 ---
 # <a name="struct-unwindcode"></a>struct UNWIND_CODE
 
@@ -112,17 +112,17 @@ Bu geriye doğru izleme kodu asla gerçekten yürütülür ancak bunun yerine bi
 
 1. RIP dönüş adresi yığının en üstünden pop *Temp*
 
-2. Anında iletme SS
+1. Anında iletme SS
 
-3. Eski RSP anında iletme
+1. Eski RSP anında iletme
 
-4. EFLAGS Gönder
+1. EFLAGS Gönder
 
-5. Anında iletme CS
+1. Anında iletme CS
 
-6. Anında iletme *Temp*
+1. Anında iletme *Temp*
 
-7. Hata kodu (op bilgisi 1 değerine eşitse) anında iletme
+1. Hata kodu (op bilgisi 1 değerine eşitse) anında iletme
 
 Benzetim `UWOP_PUSH_MACHFRAME` 40 işlemi azaltır RSP (op bilgisi 0 değerine eşittir) veya 48 (op bilgisi eşittir 1).
 

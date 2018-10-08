@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b57e2c4e6631683afdabec983f155941b8cd2da
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 29e5b2783dda3c66736a7e668186d0645cdd4b84
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107480"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861323"
 ---
 # <a name="storage-classes-c"></a>Depolama sınıfları (C++)
 
@@ -220,13 +220,13 @@ Hakkında dikkat edilecek noktalar `thread_local` tanımlayıcısı:
 
 - Dinamik olarak başlatılmış thread-local değişkenleri DLL'lerdeki tüm çağıran iş parçacığı üzerinde doğru şekilde başlatılmamış olabilir. Daha fazla bilgi için [iş parçacığı](thread.md).
 
--  `thread_local` Tanımlayıcısı ile birleştirilebilir **statik** veya **extern**.
+- `thread_local` Tanımlayıcısı ile birleştirilebilir **statik** veya **extern**.
 
--  Uygulayabileceğiniz `thread_local` sadece veri bildirimlerine ve tanımlarına; için `thread_local` İşlev bildirimlerinde veya tanımlarında kullanılamaz.
+- Uygulayabileceğiniz `thread_local` sadece veri bildirimlerine ve tanımlarına; için `thread_local` İşlev bildirimlerinde veya tanımlarında kullanılamaz.
 
--  Belirtebileceğiniz `thread_local` yalnızca statik depolama süresine sahip veri öğeleri üzerinde. Bu, genel veri nesneleri içerir (her ikisi de **statik** ve **extern**), yerel statik nesneler ve sınıfların statik veri üyeleri. Herhangi bir yerel değişken bildirildi `thread_local` başka bir depolama sınıfı sağlanır; örtük olarak statiktir blok kapsamındaki diğer bir deyişle, `thread_local` eşdeğerdir `thread_local static`.
+- Belirtebileceğiniz `thread_local` yalnızca statik depolama süresine sahip veri öğeleri üzerinde. Bu, genel veri nesneleri içerir (her ikisi de **statik** ve **extern**), yerel statik nesneler ve sınıfların statik veri üyeleri. Herhangi bir yerel değişken bildirildi `thread_local` başka bir depolama sınıfı sağlanır; örtük olarak statiktir blok kapsamındaki diğer bir deyişle, `thread_local` eşdeğerdir `thread_local static`.
 
--  Belirtmelisiniz `thread_local` bildirimi ve bir iş parçacığı yerel nesnesinin tanımı için bildirim ve tanım ortaya aynı dosya veya dosyaları ayırmak.
+- Belirtmelisiniz `thread_local` bildirimi ve bir iş parçacığı yerel nesnesinin tanımı için bildirim ve tanım ortaya aynı dosya veya dosyaları ayırmak.
 
 Windows, şirket `thread_local` işlevsel olarak eşdeğerdir [gt;__declspec(thread)](../cpp/thread.md) dışında **gt;__declspec(thread)** bir tür tanımı için uygulanabilir ve C kodu geçerli değil. Mümkün olduğunda kullanın `thread_local` C++ standardının bir parçası olduğundan ve bu nedenle daha taşınabilir.
 

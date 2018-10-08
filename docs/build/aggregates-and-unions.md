@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f0ac55dce5d00f8931ee263be0fc5ab8a8a3a08
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: aac6da94a0786e5cdc2eee4d16f5927f66e0a8d5
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710027"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861193"
 ---
 # <a name="aggregates-and-unions"></a>Toplamlar ve Birleşimler
 
@@ -29,7 +29,7 @@ Diziler, yapılar ve birleşimler, diğer türleri, tutarlı toplama ve birleşi
 
    Bir sıralı bitişik veri nesnelerini içerir. Her nesne bir öğe adı verilir. Bir dizi içindeki tüm öğeleri aynı boyuta ve veri türüne sahip.
 
--  Yapı
+- Yapı
 
    Bir sıralanmış veri nesneleri içerir. Bir dizi öğelerinden farklı olarak, bir yapı içinde veri nesneleri farklı veri türleri ve boyutları olabilir. Her bir yapı veri nesnesinde bir üye adı verilir.
 

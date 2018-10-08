@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 086de927a6927087b8cbf3d1501ba6420e1027ed
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 61b9943488a9d6a720e8d86750b14ad044677112
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110811"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861843"
 ---
 # <a name="compiler-and-linker-options-ccx"></a>Derleyici ve bağlayıcı seçenekleri (C + +/ CX)
 
@@ -28,7 +28,7 @@ Bir ortam değişkeni, C + +/ CX derleyici seçenekleri ve bağlayıcı seçenek
 
 |Seçenek|Açıklama|
 |------------|-----------------|
-|[/ZW](../build/reference/zw-windows-runtime-compilation.md)<br /><br /> /ZW:nostdlib|Windows çalışma zamanı dil uzantılarını etkinleştirir.<br /><br /> `nostdlib` Parametresi standart, önceden tanımlanmış bir arama yolu'ı kullanarak derleme ve .winmd dosyaları bulmak için derleyici engeller.<br /><br /> **/ZW** derleyici seçeneği, örtük olarak aşağıdaki derleyici seçeneklerinin belirtir:<br /><br /> -   **/FI** form veya vccorlib.h derleyici tarafından gereken birçok türü tanımlayan vccorlib.h üstbilgi dosyasının eklenmesi zorlar.<br />-   [/FU](../build/reference/fu-name-forced-hash-using-file.md) Windows.winmd'i, hangi işletim sistemi tarafından sağlanır ve Windows çalışma zamanı'nda birçok türü tanımlayan Windows.winmd'i meta veri dosyası dahil edilmesi zorlar.<br />-   **/FU** form veya Platform.winmd derleyici tarafından sağlanır ve ad alanları Platform ailede türlerdir tanımlayan Platform.winmd meta veri dosyası dahil edilmesi zorlar.|
+|[/ZW](../build/reference/zw-windows-runtime-compilation.md)<br /><br /> /ZW:nostdlib|Windows çalışma zamanı dil uzantılarını etkinleştirir.<br /><br /> `nostdlib` Parametresi standart, önceden tanımlanmış bir arama yolu'ı kullanarak derleme ve .winmd dosyaları bulmak için derleyici engeller.<br /><br /> **/ZW** derleyici seçeneği, örtük olarak aşağıdaki derleyici seçeneklerinin belirtir:<br /><br />- **/FI** form veya vccorlib.h derleyici tarafından gereken birçok türü tanımlayan vccorlib.h üstbilgi dosyasının eklenmesi zorlar.<br />- [/FU](../build/reference/fu-name-forced-hash-using-file.md) Windows.winmd'i, hangi işletim sistemi tarafından sağlanır ve Windows çalışma zamanı'nda birçok türü tanımlayan Windows.winmd'i meta veri dosyası dahil edilmesi zorlar.<br />- **/FU** form veya Platform.winmd derleyici tarafından sağlanır ve ad alanları Platform ailede türlerdir tanımlayan Platform.winmd meta veri dosyası dahil edilmesi zorlar.|
 |[/AI](../build/reference/ai-specify-metadata-directories.md) *dizini*|Tarafından belirtilen bir dizine ekler *dir* parametresi, derleyici derleme ve .winmd dosyaları bulmak için kullandığı arama yolu.|
 |**/FU***dosyası*|Belirtilen modül veya .winmd dosyasının eklenmesi zorlar. Diğer bir deyişle, belirtmeniz gerekmez `#using` *dosya* , kaynak kodunuzdaki. Derleyici, otomatik olarak eklenmesi, kendi Windows meta veri dosyası Platform.winmd zorlar.|
 |/D "WINAPI_FAMILY=2"|Bir alt kümesini Windows çalışma zamanı ile uyumlu olan Win32 SDK'sını kullanmayı sağlayan bir tanım oluşturur.|

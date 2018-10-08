@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 931299a03d0fed91c68338eec41c94b875dc9d01
-ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
+ms.openlocfilehash: 43d6301a13b0abd517b0fb596f953617cf80f7b0
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48250438"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861180"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>(C++) kod sihirbazlarıyla işlevsellik ekleme
 
@@ -75,9 +75,9 @@ Visual C++ kod sihirbazları erişebileceğiniz üç konum vardır:
 
    |Erişim kod Sihirbazı'ndan|Açıklama|
    |-----------------------------|-----------------|
-   |Yeni Öğe Ekle|Yeni Öğe Ekle kod sihirbazları, kaynak dosyaları projenize ekleyin. Gerekirse, ek dizinleri yeri bulmak için proje oluşturma altyapısı bekliyor olan dosyaları içermesini oluşturulur. Kod sihirbazları Öğe Ekle simgesini kullanılabilir şunlardır:<br /><br /> -C++ kaynak dosyaları (.cpp, .h, .idl, .rc, .srf, .def, .rgs) ekleyin.<br />-Web geliştirme dosyaları (.html, .asp, .css, .xml) ekleyin.<br />-Yardımcı program ve kaynak dosyaları (.bmp, .cur, .ico, .rct, .sql, .txt) ekleyin.<br /><br /> Bu kod sihirbazları, genellikle herhangi bir bilgi sorma ancak geliştirme ağacınızı bir dosya ekleyin. Özellik penceresine dosyasında yeniden adlandırabilirsiniz.|
-   |Çözüm Gezgini|Çözüm Gezgini'nden kod sihirbazları, bir öğeyi sağ tıklattığınızda Burada, imleç odağı olmasına göre değişir. Varsa **Ekle** seçeneği, bir öğeyi sağ tıklattığınızda görünmez ardından imleci Yukarı Taşı geliştirme ağacında bir düzey ve yeniden deneyin. Kod sihirbazları her zaman ek kod geliştirme ağacında uygun bir yerden olursa olsun, imlecin bulunduğu yerleştirmeniz gerekir. Çözüm Gezgini'nden kod sihirbazları içerir:<br /><br /> -Sınıf ekleme (açılır **sınıfı Ekle** yeni kod sihirbazları içeren iletişim kutusu).<br />-Kaynak ekleme (yeni, içeri aktarma veya özel).<br />-Web referansı ekleyin.|
-   |Sınıf Görünümü|Sınıf Görünümü'ndeki kullanılabilir kod sihirbazları, bir öğeyi sağ tıklattığınızda nerede imleç odağınızı olmasına göre değişir. Varsa **Ekle** seçeneği, bir öğeyi sağ tıklattığınızda görünmez ardından imleci Yukarı Taşı sınıfı ağacında bir düzey ve yeniden deneyin. Kod sihirbazları her zaman ek kod geliştirme ağacında uygun bir yerden olursa olsun, imlecin bulunduğu yerleştirmeniz gerekir. Kod sihirbazları, sınıf görünümünden kullanılabilir şunlardır:<br /><br /> -   [Üye işlevi Ekle](../ide/adding-a-member-function-visual-cpp.md).<br />-   [Üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md).<br />-   [Sınıf ekleme](../ide/adding-a-class-visual-cpp.md).<br />-   [Arabirimini uygulayan](../ide/implement-interface-wizard.md) (bir sınıftan denetimi yalnızca)<br />-   [Bağlantı Noktası Ekle](../ide/implement-connection-point-wizard.md) (sadece ATL sınıfı)<br />-   [Add yöntemi](../ide/add-method-wizard.md) (bir arabirimden yalnızca)<br />-   [Özellik Ekle](../ide/names-add-property-wizard.md) (bir arabirimden yalnızca)<br />-   [Olay ekleme](../ide/add-event-wizard.md) (bir sınıftan denetimi yalnızca)<br /><br /> Sınıf Ekle'seçimini açılır **sınıfı Ekle** iletişim kutusunda, tüm yeni sınıf Ekle kod sihirbazları için erişmenizi sağlar.|
+   |Yeni Öğe Ekle|Yeni Öğe Ekle kod sihirbazları, kaynak dosyaları projenize ekleyin. Gerekirse, ek dizinleri yeri bulmak için proje oluşturma altyapısı bekliyor olan dosyaları içermesini oluşturulur. Kod sihirbazları Öğe Ekle simgesini kullanılabilir şunlardır:<br /><br />-C++ kaynak dosyaları (.cpp, .h, .idl, .rc, .srf, .def, .rgs) ekleyin.<br />-Web geliştirme dosyaları (.html, .asp, .css, .xml) ekleyin.<br />-Yardımcı program ve kaynak dosyaları (.bmp, .cur, .ico, .rct, .sql, .txt) ekleyin.<br /><br />Bu kod sihirbazları, genellikle herhangi bir bilgi sorma ancak geliştirme ağacınızı bir dosya ekleyin. Özellik penceresine dosyasında yeniden adlandırabilirsiniz.|
+   |Çözüm Gezgini|Çözüm Gezgini'nden kod sihirbazları, bir öğeyi sağ tıklattığınızda Burada, imleç odağı olmasına göre değişir. Varsa **Ekle** seçeneği, bir öğeyi sağ tıklattığınızda görünmez ardından imleci Yukarı Taşı geliştirme ağacında bir düzey ve yeniden deneyin. Kod sihirbazları her zaman ek kod geliştirme ağacında uygun bir yerden olursa olsun, imlecin bulunduğu yerleştirmeniz gerekir. Çözüm Gezgini'nden kod sihirbazları içerir:<br /><br />-Sınıf ekleme (açılır **sınıfı Ekle** yeni kod sihirbazları içeren iletişim kutusu).<br />-Kaynak ekleme (yeni, içeri aktarma veya özel).<br />-Web referansı ekleyin.|
+   |Sınıf Görünümü|Sınıf Görünümü'ndeki kullanılabilir kod sihirbazları, bir öğeyi sağ tıklattığınızda nerede imleç odağınızı olmasına göre değişir. Varsa **Ekle** seçeneği, bir öğeyi sağ tıklattığınızda görünmez ardından imleci Yukarı Taşı sınıfı ağacında bir düzey ve yeniden deneyin. Kod sihirbazları her zaman ek kod geliştirme ağacında uygun bir yerden olursa olsun, imlecin bulunduğu yerleştirmeniz gerekir. Kod sihirbazları, sınıf görünümünden kullanılabilir şunlardır:<br /><br />- [Üye işlevi Ekle](../ide/adding-a-member-function-visual-cpp.md).<br />- [Üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md).<br />- [Sınıf ekleme](../ide/adding-a-class-visual-cpp.md).<br />- [Arabirimini uygulayan](../ide/implement-interface-wizard.md) (bir sınıftan denetimi yalnızca)<br />- [Bağlantı Noktası Ekle](../ide/implement-connection-point-wizard.md) (sadece ATL sınıfı)<br />- [Add yöntemi](../ide/add-method-wizard.md) (bir arabirimden yalnızca)<br />- [Özellik Ekle](../ide/names-add-property-wizard.md) (bir arabirimden yalnızca)<br />- [Olay ekleme](../ide/add-event-wizard.md) (bir sınıftan denetimi yalnızca)<br /><br />Sınıf Ekle'seçimini açılır **sınıfı Ekle** iletişim kutusunda, tüm yeni sınıf Ekle kod sihirbazları için erişmenizi sağlar.|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

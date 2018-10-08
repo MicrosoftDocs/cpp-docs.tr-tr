@@ -16,26 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 63606624e1cbcc5ef2c5ea453ee6d346e3e686a8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9d25969a9ecb833c53b93135e65fa27b4f005a0d
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038132"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861206"
 ---
 # <a name="c-runtime-error-r6030"></a>C çalışma zamanı hatası R6030
 
 CRT başlatılmadı
 
 > [!NOTE]
->  Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bir sorun olduğundan uygulaması kapatıldı. Bu sorun genellikle belirli güvenlik yazılım programları veya nadiren de olsa bir programın hata neden olur.
+> Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bir sorun olduğundan uygulaması kapatıldı. Bu sorun genellikle belirli güvenlik yazılım programları veya nadiren de olsa bir programın hata neden olur.
 >
->  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
+> Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
 >
->  -   Bu sorunu giderme için yönergeler güvenlik yazılımının olabilir. Ayrıntılar için güvenlik yazılım satıcısının Web sitesine bakın. Alternatif olarak, güvenlik yazılımının güncelleştirilmiş sürümlerini denetlemek ya da farklı güvenlik yazılımı deneyin.
-> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
-> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
-> -   Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
+> - Bu sorunu giderme için yönergeler güvenlik yazılımının olabilir. Ayrıntılar için güvenlik yazılım satıcısının Web sitesine bakın. Alternatif olarak, güvenlik yazılımının güncelleştirilmiş sürümlerini denetlemek ya da farklı güvenlik yazılımı deneyin.
+> - Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
+> - Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
+> - Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
 
 **Programcıları için bilgi**
 

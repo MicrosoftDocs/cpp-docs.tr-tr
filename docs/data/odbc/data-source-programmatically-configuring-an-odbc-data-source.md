@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 36f8233d7d3683a885fc0f38468ad5a7b9b59c57
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6c9b9cb66e64f85ad8800faf11011e351a3f3539
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46030774"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861362"
 ---
 # <a name="data-source-programmatically-configuring-an-odbc-data-source"></a>Veri Kaynağı: Program Aracılığıyla ODBC Veri Kaynağını Yapılandırma
 
@@ -85,7 +85,7 @@ Sürücü açıklaması. Bu, kullanıcılara fiziksel sürücü adı (DLL) yerin
 *lpszAttributes*<br/>
 Biçimindeki özniteliklerin listesi "keyname = value". Bu dizeler, listenin sonundaki iki ardışık null sonlandırıcıyla beraber null sonlandırıcılar tarafından ayrılır. Bu öznitelikler, yeni veri kaynağı için kayıt defterine gidin öncelikle varsayılan sürücüye özel girişlerdir. Bu işlev için ODBC API başvurusunda belirtilmeyen önemli bir anahtar "yeni veri kaynağı adını belirten" DSN "DİR ("veri kaynağı adı"), ' dir. Girişlerin geri kalanı yeni veri kaynağına ilişkin sürücüye özel. Genellikle kullanıcı iletişim kutuları için yeni değerleri ile sürücü isteyebilir çünkü tüm girişlerin sağlamak gerekli değildir. (Ayarlayın *hwndParent* Bunu yapmak için null.) Kullanıcıdan istenmemesi için varsayılan değerleri açıkça sağlamak isteyebilirsiniz.  
   
-###### <a name="to-determine-the-description-of-a-driver-for-the-lpszdriver-parameter-using-odbc-administrator"></a>ODBC Yöneticisi'ni kullanarak IpszDriver parametresi için bir sürücünün tanımını belirlemek için  
+#### <a name="to-determine-the-description-of-a-driver-for-the-lpszdriver-parameter-using-odbc-administrator"></a>ODBC Yöneticisi'ni kullanarak IpszDriver parametresi için bir sürücünün tanımını belirlemek için  
   
 1. ODBC Yöneticisi çalıştırın.  
   
@@ -97,23 +97,23 @@ Alternatif olarak, kayıt defteri inceleyebilirsiniz (veya 16 bit Odbcinst.ini d
   
 Anahtar adlarını ve değerleri bulmanın bir yolu *lpszAttributes* parametresi, bir önceden yapılandırılmış veri kaynağında (belki de bir ODBC Yöneticisi tarafından yapılandırılan) ilişkin Odbc.ini dosyasını incelemek için.  
   
-###### <a name="to-find-keynames-and-values-for-the-lpszattributes-parameter"></a>LpszAttributes parametresi için ve değerleri bulmak için  
+#### <a name="to-find-keynames-and-values-for-the-lpszattributes-parameter"></a>LpszAttributes parametresi için ve değerleri bulmak için  
   
 1. Windows Kayıt Defteri Düzenleyicisi'ni çalıştırın (veya 16 bit için Odbc.ini dosyasını açın).  
   
 1. Aşağıdakilerden birini kullanarak ODBC veri kaynakları bilgilerini bulun:  
   
-    -   32 bit için anahtarını bulun **HKEY_CURRENT_USER\Software\ODBC\ODBC. INI\ODBC Data Sources** sol bölmesinde.  
+   - 32 bit için anahtarını bulun **HKEY_CURRENT_USER\Software\ODBC\ODBC. INI\ODBC Data Sources** sol bölmesinde.  
   
-         Sağ bölmede form girişlerini listeler: "pub: REG_SZ:*<data source name>*" burada *<data source name>* istenen ayarları için istediğinize sürücüsü ile önceden yapılandırılmış bir veri kaynağı kullanılacak. İstediğiniz veri kaynağı, örneğin, SQL Server'ı seçin. Dizesini izleyen öğeler "pub:" olan, sipariş, keyname ve değeri kullanmak için *lpszAttributes* parametresi.  
+      Sağ bölmede form girişlerini listeler: "pub: REG_SZ:*<data source name>*" burada *<data source name>* istenen ayarları için istediğinize sürücüsü ile önceden yapılandırılmış bir veri kaynağı kullanılacak. İstediğiniz veri kaynağı, örneğin, SQL Server'ı seçin. Dizesini izleyen öğeler "pub:" olan, sipariş, keyname ve değeri kullanmak için *lpszAttributes* parametresi.  
   
-    -   16 bit için Odbc.ini dosyasına tarafından işaretlenen bölümü bulun. [*\<veri kaynağı adı >*].  
+   - 16 bit için Odbc.ini dosyasına tarafından işaretlenen bölümü bulun. [*\<veri kaynağı adı >*].  
   
-         Biçimidir bu satırı takip eden satırlar "keyname = value". Bunlar tam olarak kullanmak için girişler, *lpszAttributes* parametresi.  
+      Biçimidir bu satırı takip eden satırlar "keyname = value". Bunlar tam olarak kullanmak için girişler, *lpszAttributes* parametresi.  
   
 Kullanacağınız belirli bir sürücünün belgelerini incelemek isteyebilirsiniz. ODBC Yöneticisi'ni çalıştırarak erişebilirsiniz sürücü için çevrimiçi Yardım içinde yararlı bilgiler bulabilirsiniz. Bu Yardım dosyaları Windows NT, Windows 3.1 veya Windows 95 için genellikle WINDOWS\SYSTEM dizinine yerleştirilir.  
   
-###### <a name="to-obtain-online-help-for-your-odbc-driver"></a>ODBC sürücünüz için çevrimiçi Yardım almak için  
+#### <a name="to-obtain-online-help-for-your-odbc-driver"></a>ODBC sürücünüz için çevrimiçi Yardım almak için  
   
 1. ODBC Yöneticisi çalıştırın.  
   

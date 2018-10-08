@@ -105,12 +105,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0f8e2c5e3feea1c7607b8303bc42cef5b2f21e0
-ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
+ms.openlocfilehash: deee159c9da6fce9001d010a1a6b1db9b3b1d666
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601619"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861427"
 ---
 # <a name="compiler-warnings-c4800-through-c5999"></a>Derleyici uyarılarını C4800 C5999 ile
 
@@ -153,6 +153,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |Derleyici Uyarısı (düzey 4) C4842|birden fazla devralma kullanılarak bir türe uygulanan'offsetof ' sonucunun derleyici yayınları arasında tutarlı olması garanti edilmez|
 |Derleyici Uyarısı C4843|'*type1*': dizi veya işlev türüne yapılan başvurunun özel durum işleyicisi erişilemiyor, kullanın '*type2*' yerine|
 |Derleyici Uyarısı C4844|' export module *module_name*;' artık bir modül arabirimi bildirmek için tercih edilen sözdizimi şöyledir|
+|[Derleyici Uyarısı (düzey 4) C4866](c4866.md)| Derleyici, soldan sağa Değerlendirme sırasını çağrısı değil zorlayabileceği *operator_name*|
 |[Derleyici Uyarısı (hata) C4867](compiler-warning-c4867.md)|'*işlevi*': işlev çağrısında bağımsız değişken listesi eksik; bu değer '*çağrı*' bir üyeye işaretçi oluşturmak için|
 |[Derleyici Uyarısı (düzey 4) C4868](compiler-warning-c4868.md)|'_dosya_(*line_number*)' derleyici küme ayracıyla belirtilen başlatma listesi soldan sağa Değerlendirme sırasını zorla|
 |Derleyici Uyarısı (Düzey 2) C4872|concurrency::parallel_for_each için çağrı grafı derlenirken desteklenemeyen sıfıra bölme noktasına kayan: '*konumu*'|

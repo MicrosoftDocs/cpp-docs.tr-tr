@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 509181abc0d9b3e2f2c2d4c76275e635ba3a4477
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 971f3df56f049b919ebb1f3fb8f517c97b2829e7
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46076079"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861284"
 ---
 # <a name="pointers-to-members"></a>Üye İşaretçileri
 
@@ -56,7 +56,7 @@ ms.locfileid: "46076079"
   - Sınıfın tam adı.
   - `::` işleci.
   - Bir statik olmayan üye uygun bir tür sınıfının adı.
-  -  Her zaman olduğu gibi birden çok bildirimcisi (ve ilişkili tüm başlatıcıları) tek bir bildirimde izin verilir.
+  - Her zaman olduğu gibi birden çok bildirimcisi (ve ilişkili tüm başlatıcıları) tek bir bildirimde izin verilir.
 
 Üye ait olduğu sınıfın ve üye türü için tür bilgilerini içerdiğinden bir sınıfın bir üye işaretçisi normal bir işaretçiyle farklıdır. Normal bir işaretçi tanımlar (adresini sahiptir) yalnızca tek bir nesne bellekte. Bir sınıfın üyesinin işaretçisi sınıfın örneklerini bu üye tanımlar. Aşağıdaki örnek, bir sınıfı bildirir `Window`ve üye verilerine bazı işaretçiler.
 

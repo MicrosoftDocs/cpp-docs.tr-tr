@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 471d6a273bfb4a446dbf5aba1c3b1bb31d988b24
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e167d1a8d6b7faa161edb332f1041659c176b323
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116106"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861791"
 ---
 # <a name="com-10-atl-com-10-component-wizard"></a>COM + 1.0, ATL COM + 1.0 bileşeni Sihirbazı
 
@@ -34,7 +34,7 @@ ATL projeleri ve ATL COM sınıfları hakkında daha fazla bilgi için bkz. [ATL
    |Seçenek|Açıklama|
    |------------|-----------------|
    |**Çift**|Nesne çift arabirim desteklediğini belirtir (özel arabirim işlevi ve geç bağlama, vtable olan `IDispatch` yöntemleri). COM istemcilerinde ve Otomasyon denetleyicileri nesneye erişim sağlar.|
-   |**Özel**|Nesne (özel arabirim işlevleri kendi vtable sahiptir) özel bir arabirim desteklediğini belirtir. Özel arabirim özellikle işlem sınırları arasında çift arabirim, daha hızlı olabilir.<br /><br /> -   **Otomasyon uyumlu** özel Otomasyon desteği ekler. Öznitelikli projeler için ayarlar **oleautomation** coclass özniteliği.|
+   |**Özel**|Nesne (özel arabirim işlevleri kendi vtable sahiptir) özel bir arabirim desteklediğini belirtir. Özel arabirim özellikle işlem sınırları arasında çift arabirim, daha hızlı olabilir.<br /><br /> - **Otomasyon uyumlu** özel Otomasyon desteği ekler. Öznitelikli projeler için ayarlar **oleautomation** coclass özniteliği.|
 
 - **Kuyruğa atılabilir**
 

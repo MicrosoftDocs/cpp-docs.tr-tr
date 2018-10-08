@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d337d31150b6da1a1556589d63fd60d63842efce
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7a337ceffbbfb1577b58fea2f60213cd79052b00
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098790"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861375"
 ---
 # <a name="options-atl-simple-object-wizard"></a>ATL Basit Nesne Sihirbazı Seçenekleri
 
@@ -60,7 +60,7 @@ ATL projeleri ve ATL COM sınıfları hakkında daha fazla bilgi için bkz. [ATL
    |Seçenek|Açıklama|
    |------------|-----------------|
    |**Çift**|Nesne çift arabirim desteklediğini belirtir (özel arabirim işlevleri ek geç bağlama, vtable sahiptir `IDispatch` yöntemleri). Her iki COM istemcilerinin sağlar ve [Otomasyon denetleyicileri](../../mfc/automation-clients.md) nesneye erişim. Varsayılan.|
-   |**Özel**|Nesne (özel arabirim işlevleri kendi vtable sahiptir) özel bir arabirim desteklediğini belirtir. Özel arabirim özellikle işlem sınırları arasında çift arabirim, daha hızlı olabilir.<br /><br /> -   **Otomasyon uyumlu** özel arabirim desteğine sahip bir nesneye erişmek için denetleyicileri Otomasyon sağlar.|
+   |**Özel**|Nesne (özel arabirim işlevleri kendi vtable sahiptir) özel bir arabirim desteklediğini belirtir. Özel arabirim özellikle işlem sınırları arasında çift arabirim, daha hızlı olabilir.<br /><br /> - **Otomasyon uyumlu** özel arabirim desteğine sahip bir nesneye erişmek için denetleyicileri Otomasyon sağlar.|
 
 - **Destek**
 

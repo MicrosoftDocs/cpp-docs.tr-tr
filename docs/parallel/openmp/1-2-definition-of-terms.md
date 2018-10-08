@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e95ad940aac14892ac14e8d56ba64f49d0bbf7c0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 66cbf25324b71c3fd28bdd344c7a217348cdb5d9
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423838"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861622"
 ---
 # <a name="12-definition-of-terms"></a>1.2 Terimlerin Tanımı
 
@@ -43,7 +43,7 @@ Bu belgede aşağıdaki terimler kullanılır:
 
    Sözcüksel olarak içindeki deyimler bir *yapısal bloğunun*.
 
--  Ana iş parçacığı
+- Ana iş parçacığı
 
    Bir ekip oluşturan iş parçacığı, bir *paralel bölgenin* girilir.
 
@@ -75,7 +75,7 @@ Bu belgede aşağıdaki terimler kullanılır:
 
    Bir yapısal bloğunun tek bir giriş ve tek bir çıkış (tek veya bileşik) bir ifadedir. İçine veya dışına Sadeliği atlama ise herhangi bir deyimi bir yapısal bloğunun olur (çağrı dahil olmak üzere **longjmp**(3 C) veya kullanımını **throw**, ancak bir çağrı **çıkmak** izin verilir). Bileşik deyim, her zaman sol konumunda yürütülmeye yapısal bloğunun ise **{** ve kapatma sırasında her zaman sona eren **}**. Bir ifade deyimi, seçim deyimi, yineleme deyiminin veya **deneyin** bloğu yapısal bloğunun karşılık gelen bileşik deyim, kapsayan tarafından aldıysanız **{** ve **}** yapısal bloğunun olacaktır. Atlama deyimi, etiketli deyim veya bildirim deyimi bir yapısal bloğunun değil.
 
--  Takım
+- Takım
 
    Bir yapı içinde yürütülmesini kurduğuna ilişkin bir veya daha fazla iş parçacığı.
 

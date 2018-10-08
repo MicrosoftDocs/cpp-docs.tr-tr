@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7047161a059432b43d4ff1a92e9c4d10dc01d51
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3a2567182f0e2622a72ceb9b98988c4d122a3561
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387022"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860569"
 ---
 # <a name="cstring-operations-relating-to-c-style-strings"></a>C stili dizelerle ilgili CString işlemleri
 
@@ -67,7 +67,7 @@ Bazen bir kopyasını gerektirebilir `CString` doğrudan değiştirmek için ver
 [!code-cpp[NVC_ATLMFC_Utilities#189](../atl-mfc-shared/codesnippet/cpp/cstring-operations-relating-to-c-style-strings_1.cpp)]
 
 > [!NOTE]
->  Üçüncü bağımsız değişkeni `strcpy_s` (veya Unicode/MBCS-taşınabilir `_tcscpy_s`) ya da bir `const wchar_t*` (Unicode) veya bir `const char*` (ANSI). Geçişleri yukarıdaki örnekte bir `CString` bu bağımsız değişkeni. C++ derleyicisi, otomatik olarak tanımlanmış dönüştürme işlevi uygulanır `CString` dönüştürür sınıfı bir `CString` için bir `LPCTSTR`. Başka bir türden atama işlemleri tanımlama yeteneği C++'ın en kullanışlı özellikler biridir.
+> Üçüncü bağımsız değişkeni `strcpy_s` (veya Unicode/MBCS-taşınabilir `_tcscpy_s`) ya da bir `const wchar_t*` (Unicode) veya bir `const char*` (ANSI). Geçişleri yukarıdaki örnekte bir `CString` bu bağımsız değişkeni. C++ derleyicisi, otomatik olarak tanımlanmış dönüştürme işlevi uygulanır `CString` dönüştürür sınıfı bir `CString` için bir `LPCTSTR`. Başka bir türden atama işlemleri tanımlama yeteneği C++'ın en kullanışlı özellikler biridir.
 
 ##  <a name="_core_working_with_standard_run.2d.time_library_string_functions"></a> Standart çalışma zamanı kitaplığı dize işlevleri ile çalışma
 
@@ -83,13 +83,13 @@ Burada anlamlı doğrudan değiştirmek için bazı durumlarda `CString` karakte
 
 `GetBuffer` Ve `ReleaseBuffer` yöntemleri iç karakter arabelleği erişim sunan bir `CString` nesne ve doğrudan değiştirmenize izin verir. Aşağıdaki adımlar, bu işlevler, bu amaçla kullanabileceğiniz gösterilmektedir.
 
-#### <a name="to-use-getbuffer-and-releasebuffer-to-access-the-internal-character-buffer-of-a-cstring-object"></a>GetBuffer ve ReleaseBuffer CString nesnenin iç karakter arabelleğine erişmek için kullanılacak
+### <a name="to-use-getbuffer-and-releasebuffer-to-access-the-internal-character-buffer-of-a-cstring-object"></a>GetBuffer ve ReleaseBuffer CString nesnenin iç karakter arabelleğine erişmek için kullanılacak
 
 1. Çağrı `GetBuffer` için bir `CString` nesne ve ihtiyaç duyduğunuz arabellek uzunluğu belirtin.
 
-2. Tarafından döndürülen işaretçi kullanın `GetBuffer` karakterlere doğrudan yazma `CString` nesne.
+1. Tarafından döndürülen işaretçi kullanın `GetBuffer` karakterlere doğrudan yazma `CString` nesne.
 
-3. Çağrı `ReleaseBuffer` için `CString` tüm iç güncelleştirmek için nesne `CString` durum bilgileri, örneğin, dize uzunluğu. İçeriğini değiştirdikten sonra bir `CString` doğrudan çağırmanız nesne `ReleaseBuffer` diğer çağırmadan önce `CString` üye işlevleri.
+1. Çağrı `ReleaseBuffer` için `CString` tüm iç güncelleştirmek için nesne `CString` durum bilgileri, örneğin, dize uzunluğu. İçeriğini değiştirdikten sonra bir `CString` doğrudan çağırmanız nesne `ReleaseBuffer` diğer çağırmadan önce `CString` üye işlevleri.
 
 ##  <a name="_core_using_cstring_objects_with_variable_argument_functions"></a> CString nesneleri değişken bağımsız değişken işlevleri ile kullanma
 
@@ -113,4 +113,3 @@ Biçimsel parametre bir sabit dize başvuru belirtebilirsiniz (diğer bir deyiş
 
 [Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [CString Bağımsız Değişken Geçirme](../atl-mfc-shared/cstring-argument-passing.md)
-

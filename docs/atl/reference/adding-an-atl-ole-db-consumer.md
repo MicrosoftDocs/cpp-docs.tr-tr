@@ -16,32 +16,32 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95d0f16f88006c1e639b1f4a02965ad8dea6b818
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: dde2e9cb41407a26fbc297bf6fe0c95ee18ad402
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764286"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860023"
 ---
 # <a name="adding-an-atl-ole-db-consumer"></a>ATL OLE DB Tüketicisi Ekleme
 
 ATL OLE DB tüketici bir projeye eklemek için bu sihirbazı kullanın. ATL OLE DB tüketici bir OLE DB erişimci sınıf ve veri bağlamalarını bir veri kaynağına erişmek için gerekli oluşur. Projenin ATL COM uygulama veya (ATL OLE DB Tüketicisi Sihirbazı otomatik olarak ekler) ATL desteği içeren bir MFC veya Win32 uygulaması olarak oluşturulmuş olması gerekir.
 
-**Not** bir OLE DB Tüketicisi bir MFC projesine ekleyebilirsiniz. ATL OLE DB Tüketicisi Sihirbazı, bunu yaparsanız, projenize gerekli COM desteği ekler. Bu MFC projesi oluşturduğunuzda, seçtiğiniz varsayar **ActiveX denetimlerini** onay kutusunu (içinde **Gelişmiş Özellikler** proje MFC Uygulama Sihirbazı sayfasında), varsayılan olarak işaretli. Bu seçeneğin belirlenmesi sağlar uygulama çağırır **CoInitialize** ve **CoUninitialize**. Seçeneğini belirlemediyseniz **ActiveX denetimlerini** MFC projesi oluşturduğunuzda, çağırmanız gerekir **CoInitialize** ve **CoUninitialize** ana kod.
+> [!NOTE]
+> Bir OLE DB Tüketicisi bir MFC projesine ekleyebilirsiniz. ATL OLE DB Tüketicisi Sihirbazı, bunu yaparsanız, projenize gerekli COM desteği ekler. Bu MFC projesi oluşturduğunuzda, seçtiğiniz varsayar **ActiveX denetimlerini** onay kutusunu (içinde **Gelişmiş Özellikler** proje MFC Uygulama Sihirbazı sayfasında), varsayılan olarak işaretli. Bu seçeneğin belirlenmesi sağlar uygulama çağırır `CoInitialize` ve `CoUninitialize`. Seçeneğini belirlemediyseniz **ActiveX denetimlerini** MFC projesi oluşturduğunuzda, çağırmanız gerekir `CoInitialize` ve `CoUninitialize` ana kod.
 
-### <a name="to-add-an-atl-ole-db-consumer-to-your-project"></a>ATL OLE DB Tüketici projenize eklemek için
+## <a name="to-add-an-atl-ole-db-consumer-to-your-project"></a>ATL OLE DB Tüketici projenize eklemek için
 
-1. Sınıf Görünümü'nde projeye sağ tıklayın. Kısayol menüsünde **Ekle** ve ardından **sınıfı Ekle**.
+1. İçinde **sınıf görünümü**, projeye sağ tıklayın. Kısayol menüsünde **Ekle** ve ardından **sınıfı Ekle**.
 
-2. Visual C++ klasörünü çift tıklatarak **ATL OLE DB Tüketicisi** simgesi veya seçin ve **açık**.
+1. Visual C++ klasörünü çift tıklatarak **ATL OLE DB Tüketicisi** simgesi veya seçin ve **açık**.
 
-     ATL OLE DB Tüketicisi Sihirbazı açılır.
+   ATL OLE DB Tüketicisi Sihirbazı açılır.
 
-3. Bölümünde anlatıldığı gibi ayarları tanımlama [ATL OLE DB Tüketicisi Sihirbazı](../../atl/reference/atl-ole-db-consumer-wizard.md).
+1. Bölümünde anlatıldığı gibi ayarları tanımlama [ATL OLE DB Tüketicisi Sihirbazı](../../atl/reference/atl-ole-db-consumer-wizard.md).
 
-4. Tıklayın **son** sihirbazı kapatın. Yeni oluşturulan OLE DB Tüketici kod projenize eklenir.
+1. Tıklayın **son** sihirbazı kapatın. Yeni oluşturulan OLE DB Tüketici kod projenize eklenir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)
-

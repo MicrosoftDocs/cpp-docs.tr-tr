@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e318687dfa3cc8e841643e5caf6fe1fbcc00d051
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 953473102a42792dc3ae3afa3b1a8caf507e5648
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080772"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861505"
 ---
 # <a name="precedence-and-order-of-evaluation"></a>Öncelik ve Değerlendirme Sırası
 
@@ -53,7 +53,7 @@ Aşağıdaki tabloda, C işleçlerinin öncelik ve ilişkilendirilebilirliği (i
 
 1. İşleçler, öncelik sırasına göre azalan olarak listelenmiştir. Aynı satırda veya grupta birkaç işleç görünüyorsa, bunlar eşit önceliğe sahip olur.
 
-2. Tüm basit ve bileşik atama işleçleri eşit önceliğe sahiptir.
+1. Tüm basit ve bileşik atama işleçleri eşit önceliğe sahiptir.
 
 Bir ifade eşit önceliğe sahip birkaç işleç içerebilir. Böyle birkaç işleç bir ifadede aynı düzeyde göründüğünde, değerlendirme işlecin ilişkilendirilebilirliğine göre sağdan sola veya soldan sağa devam eder. Değerlendirmenin yönü, birden fazla çarpma içeren ifadelerin sonuçlarını etkilemez (<strong>\*</strong>), toplama (**+**), veya ikili bit düzeyinde (**&**, **&#124;**, veya **^**) aynı düzeyde işleci. İşlemlerin sırası dil tarafından tanımlanmaz. Derleyici, tutarlı bir sonuç sağladığı sürece bu tür ifadeleri herhangi bir sırada değerlendirebilir.
 

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f0090195506e26cab165e3ddadca0342c0b35b6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a6ad4b23e6caef15b5dabaaa3102d72e3ff84fbc
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084061"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860595"
 ---
 # <a name="for-statement-c"></a>for Deyimi (C)
 
@@ -34,7 +34,7 @@ Yürütülmesini bir **için** deyimi aşağıdaki gibi ilerler:
 
 1. *İnit-expression*, varsa, değerlendirilir. Bu döngü için başlatma belirtir. Tür bir kısıtlama yoktur *init-expression*.
 
-2. *; Cond-expression*, varsa, değerlendirilir. Bu ifade aritmetik veya işaretçi türünde olmalıdır. Her yinelemeden önce değerlendirilir. Üç sonuçları desteklenir:
+1. *; Cond-expression*, varsa, değerlendirilir. Bu ifade aritmetik veya işaretçi türünde olmalıdır. Her yinelemeden önce değerlendirilir. Üç sonuçları desteklenir:
 
    - Varsa *; cond-expression* olduğu **true** (sıfırdan farklı) *deyimi* yürütülür; ardından *döngü ifadesi*, varsa, değerlendirme. *Döngü ifadesi* her yinelemeden sonra değerlendirilir. Türü konusunda bir kısıtlama yoktur. Yan etkileri sırayla yürütülür. İşlem daha sonra yeniden değerlendirmesi ile başlar *; cond-expression*.
 

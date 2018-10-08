@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5b550cd0b76aa0a2e061536ae6bb0ea61063909
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 048589ecab367a3762764b627de11d72160c4602
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087753"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861310"
 ---
 # <a name="partial-ordering-of-function-templates-c"></a>İşlev Şablonlarının Kısmi Sıralanması (C++)
 
@@ -31,23 +31,23 @@ Bir işlev şablonu adayının daha özel olup olmadığını belirlemek için a
 
 1. T1 ve T2 işlev şablonlarını dikkate alın.
 
-2. T1'deki parametreleri kuramsal bir benzersiz tür olan X ile değiştirin.
+1. T1'deki parametreleri kuramsal bir benzersiz tür olan X ile değiştirin.
 
-3. T1'deki parametre listesinde, T2'nin parametre listesi için geçerli bir şablon olup olmadığına bakın. Örtük dönüştürmeleri yoksayın.
+1. T1'deki parametre listesinde, T2'nin parametre listesi için geçerli bir şablon olup olmadığına bakın. Örtük dönüştürmeleri yoksayın.
 
-4. Aynı işlemi T1 ve T2'yi ters çevirerek tekrarlayın.
+1. Aynı işlemi T1 ve T2'yi ters çevirerek tekrarlayın.
 
-5. Bir şablon diğer şablon için geçerli bir şablon bağımsız değişken listesiyse, ancak bunun tersi doğru değilse, bu şablon diğer şablona göre daha az özel olarak değerlendirilir. Önceki adım form geçerli bağımsız değişkenleri birbirine kullanan iki şablon, ardından bunların eşit şekilde özel olarak kabul edilir ve belirsiz bir çağrı sonuçları bunları kullanmak istediğinizde.
+1. Bir şablon diğer şablon için geçerli bir şablon bağımsız değişken listesiyse, ancak bunun tersi doğru değilse, bu şablon diğer şablona göre daha az özel olarak değerlendirilir. Önceki adım form geçerli bağımsız değişkenleri birbirine kullanan iki şablon, ardından bunların eşit şekilde özel olarak kabul edilir ve belirsiz bir çağrı sonuçları bunları kullanmak istediğinizde.
 
-6. Bu kuralları kullanarak:
+1. Bu kuralları kullanarak:
 
-     1. Belirli bir tür için bir şablonu özelleştirme, genel türden bir bağımsız değişken alan özelleştirmeye göre daha özeldir.
+   1. Belirli bir tür için bir şablonu özelleştirme, genel türden bir bağımsız değişken alan özelleştirmeye göre daha özeldir.
 
-     2. Bir şablon yalnızca alma __T\*__  yalnızca bir alan daha fazla özelleştirilmiş __T__, çünkü bir kuramsal türü __X\*__  için geçerli bir bağımsız değişken bir __T__ şablon bağımsız değişkeni, ancak __X__ için geçerli bir bağımsız değişken değil bir __T\*__  şablon bağımsız değişkeni.
+   1. Bir şablon yalnızca alma __T\*__  yalnızca bir alan daha fazla özelleştirilmiş __T__, çünkü bir kuramsal türü __X\*__  için geçerli bir bağımsız değişken bir __T__ şablon bağımsız değişkeni, ancak __X__ için geçerli bir bağımsız değişken değil bir __T\*__  şablon bağımsız değişkeni.
 
-     3. __const T__ göre daha özeldir __T__, çünkü __const X__ için geçerli bir bağımsız değişken bir __T__ şablon bağımsız değişkeni, ancak __X__ olduğu değil geçerli bir bağımsız değişken için bir __const T__ şablon bağımsız değişkeni.
+   1. __const T__ göre daha özeldir __T__, çünkü __const X__ için geçerli bir bağımsız değişken bir __T__ şablon bağımsız değişkeni, ancak __X__ olduğu değil geçerli bir bağımsız değişken için bir __const T__ şablon bağımsız değişkeni.
 
-     4. __const T\*__  göre daha özeldir __T\*__, çünkü __const X\*__  için geçerli bir bağımsız değişken bir __T\*__  şablon bağımsız değişkeni, ancak __X\*__  için geçerli bir bağımsız değişken değil bir __const T\*__  şablon bağımsız değişkeni.
+   1. __const T\*__  göre daha özeldir __T\*__, çünkü __const X\*__  için geçerli bir bağımsız değişken bir __T\*__  şablon bağımsız değişkeni, ancak __X\*__  için geçerli bir bağımsız değişken değil bir __const T\*__  şablon bağımsız değişkeni.
 
 ## <a name="example"></a>Örnek
 
