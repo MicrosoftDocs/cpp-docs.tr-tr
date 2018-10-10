@@ -16,20 +16,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c6352c87748bafa635d8d6dae29bf37b78ac6c1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5c729ecbdea13c36cf5df71efa16d12853fc4433
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46041993"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890500"
 ---
 # <a name="compiler-error-c2143"></a>Derleyici Hatası C2143
 
 sözdizimi hatası: 'token2' önce ' token1' eksik
 
 Derleyici, belirli bir belirteç (diğer bir deyişle, boşluk dışında dil öğesi) beklenen ve bunun yerine farklı bir belirteç bulundu.
-
-Bir try işlevi bloğu kullanırken oluştuğunda, bu hata hakkında bilgi için bkz [Bilgi Bankası makalesi 241706](http://support.microsoft.com/kb/241706).
 
 Denetleme [C++ dil başvurusu](../../cpp/cpp-language-reference.md) kod sözdizimsel olarak yanlış olduğu belirlemek için. Soruna neden olan satır karşılaştıktan sonra derleyici bu hatayı rapor edebilir çünkü hata önünde birkaç kod satırlarını denetleyin.
 

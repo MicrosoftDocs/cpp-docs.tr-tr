@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cafc3868d41dcf90baabbf05e0d5a4671c5b11fc
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: bc9d1d1ff35755a966591e6f46f7742ddfa59e08
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48820301"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890029"
 ---
 # <a name="initinstance-member-function"></a>InitInstance Üye İşlevi
 
@@ -45,7 +45,7 @@ Standart `InitInstance` MFC Uygulama Sihirbazı tarafından oluşturulan uygulam
 Sihirbaz tarafından yazılan kodu değiştirin ya da kendi başlatma kodunu ekleyin.
 
 > [!NOTE]
->  MFC uygulamaları tek iş parçacıklı grup (STA) başlatılması gerekir. Eğer [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) içinde `InitInstance` geçersiz kılmak, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin. Daha fazla bilgi için bkz: MFC uygulaması olarak bir çok iş parçacıklı grup (828643) uygulamayı başlattığınızda yanıt vermeyi durduran [ http://support.microsoft.com/default.aspxscid=kb; 828643](http://support.microsoft.com/default.aspxscid=kb;828643).
+>  MFC uygulamaları tek iş parçacıklı grup (STA) başlatılması gerekir. Eğer [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) içinde `InitInstance` geçersiz kılmak, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

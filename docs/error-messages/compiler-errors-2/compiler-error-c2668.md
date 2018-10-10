@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3b318c663bb036629086d0bca9a67641e3c4c4e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 23bb1a6fcf64590670ede2eb6aca232a5a3b4f5c
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093759"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890004"
 ---
 # <a name="compiler-error-c2668"></a>Derleyici Hatası C2668
 
@@ -31,15 +31,11 @@ Belirtilen aşırı yüklenmiş işlev çağrısı çözümlenemedi. Açıkça b
 
 Ayrıca, şablonu kullanarak bu hatayı alabilirsiniz. Aynı sınıf içinde normal üye işlevini ve bir şablonlu üye işlevini ve aynı imzaya sahip, şablonlu bir ilk sırada olması gerekir. Bu, Visual C++'ın geçerli uygulama kısıtlamasıdır.
 
-İşlev şablonlarının kısmi sıralanması Bilgi Bankası makalesi Q240869 daha fazla bilgi için bkz.
-
-Destekleyen COM nesnesi içeren bir ATL projesi oluşturuyorsanız, `ISupportErrorInfo`, Q243298 Bilgi Bankası makalesine bakın.
-
 ## <a name="example"></a>Örnek
 
 Aşağıdaki örnek, C2668 oluşturur:
 
-```
+```cpp
 // C2668.cpp
 struct A {};
 struct B : A {};
@@ -59,7 +55,7 @@ int main() {
 
 Bu hatayı gidermek için başka bir yöntem, bir [using bildirimi](../../cpp/using-declaration.md):
 
-```
+```cpp
 // C2668b.cpp
 // compile with: /EHsc /c
 // C2668 expected
@@ -104,7 +100,7 @@ Bu hata için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş so
 
 İnt, uzun ve void * için dönüştürme hem gerektirdiğinden sabit 0'ı kullanarak bir yayın dönüştürme belirsiz. Bu hatayı gidermek için 0 hiçbir dönüştürmeler (Bu kod Visual C++ Visual Studio .NET 2003 ve Visual Studio sürümlerinde geçerli olacaktır) gerçekleşmesi gerekir böylece için kullanıldığını işlev parametresi tam türüne dönüştürün.
 
-```
+```cpp
 // C2668c.cpp
 #include "stdio.h"
 void f(long) {
@@ -126,7 +122,7 @@ int main() {
 
 Kayan ve tüm matematik işlevlerinin çift forms CRT artık sahip olduğundan, bu hata oluşabilir.
 
-```
+```cpp
 // C2668d.cpp
 #include <math.h>
 int main() {
@@ -141,7 +137,7 @@ int main() {
 
 Pow (int, int) CRT'deki math.h kaldırıldı çünkü bu hata oluşabilir.
 
-```
+```cpp
 // C2668e.cpp
 #include <math.h>
 int main() {
@@ -154,8 +150,7 @@ int main() {
 
 Bu kod, Visual Studio 2015'te başarılı olur ancak Visual Studio 2017 ve sonraki C2668 başarısız olur. Visual Studio 2015'te derleyici deneyebileceğinizi kopya listesi başlatması normal kopya başlatma aynı şekilde ele; yalnızca oluşturucu aşırı yükleme çözümlemesi için dönüştürme kabul.
 
-```
-C++
+```cpp
 struct A {
     explicit A(int) {}
 };

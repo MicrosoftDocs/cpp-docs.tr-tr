@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a72cba53ebe9a286ac2e7cbbf2c41b78f4e4e08
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0456845152fb2879d2f58c9c40af2562c7207535
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46100772"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890250"
 ---
 # <a name="resource-compiler-fatal-error-rc1015"></a>Kaynak Derleyicisi Önemli Hatası RC1015
 
@@ -32,5 +32,3 @@ Verilen içerme dosyası mevcut değil, açılamadı veya bulunamadı.
 Ortam ayarlarının geçerli olduğunu ve dosya için doğru yol belirtildiğinden emin olun. Kaynak derleyicisi için yeterli dosya tanıtıcısı kullanılabildiğinden emin olun. Dosya bir ağ sürücüsündeyse, dosyayı açmak için izinlere sahip olduğunuzdan emin olun.
 
 Ek içeren dizin, yapılandırma özellikleri -> olarak kaynakları belirtilen bir dizinde içerme dosyası mevcut olsa bile RC1015 oluşabilir; genel özellik sayfası -> içerme dosyasının tam yolunu belirtin.
-
-Bilgi Bankası makalesi Q326987 daha fazla bilgi için bkz: RC1015 hata olduğunda kullanarak kaynağın görünüm yoluna ise çok uzun.

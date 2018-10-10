@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0910c23202b975999e10ef2effaebc470c62fb9d
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: e8b9f8614feb98f7e21392565aa610b7d42cd512
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821081"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890172"
 ---
 # <a name="linker-tools-error-lnk1168"></a>Bağlayıcı Araçları Hatası LNK1168
 
@@ -38,7 +38,3 @@ Dosya, virüsten koruma programı tarafından kilitlenmişse, virüs koruma prog
 Dosya, arama dizinleme hizmeti tarafından kilitlenmişse, yapı çıktı dizinlerinizi otomatik dizinlemenin dışında tutarak bu sorunu giderebilirsiniz. Daha fazla bilgi için dizinleme hizmetiyle ilgili belgelere başvurun. Windows Arama Dizin Oluşturma Hizmeti değiştirmek için kullanın **dizinleme seçeneklerini** Windows içinde **Denetim Masası**. Daha fazla bilgi için [geliştirmek Windows dizini kullanarak arar: sık sorulan sorular](http://windows.microsoft.com/windows/improve-windows-searches-using-index-faq#1TC=windows-7).
 
 Yürütülebilir dosyanızın üzerine yapı işlemi tarafından yazılamıyorsa, dosyanız Dosya Gezgini tarafından kilitlenmiş olabilir. Varsa **uygulama deneyimi** hizmeti devre dışı bırakıldı, dosya Gezgini'nde bir yürütülebilir dosya tanıtıcı kilidine uzun bir süre tutunabilir. Bu sorunu gidermek için çalıştırın **services.msc** açın **özellikleri** iletişim kutusu için **uygulama deneyimi** hizmeti. Değişiklik **başlangıç türü** gelen **devre dışı bırakılmış** için **el ile**.
-
-## <a name="see-also"></a>Ayrıca Bkz.
-
-[Bir çözüm ya da Visual C++'ta ActiveX projesi oluşturmaya çalıştığınızda bir "hata PRJ0008" veya "Önemli hata LNK1168" hata iletisini alabilirsiniz](http://support.microsoft.com/kb/308358)

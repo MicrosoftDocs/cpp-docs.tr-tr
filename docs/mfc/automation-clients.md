@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4a4327e1c3e4d65c5bdc3b822cf2cdfc1ec0353
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: cdc9b47bbd7b639850a13a77b81ef4802a301ba7
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48820600"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890068"
 ---
 # <a name="automation-clients"></a>Otomasyon İstemcileri
 
@@ -46,7 +46,7 @@ Ardından sunucu uygulamasının nesnesinin işlevlerini ve özelliklerini açı
 
 ### <a name="handling-events-in-automation-clients"></a>Otomasyon istemcileri olayları işleme
 
-Otomasyon istemcinizi olayları işlemek istiyorsanız, bir havuzu arabirimini eklemeniz gerekir. MFC ActiveX denetimleri için havuz arabirimler, ancak diğer COM sunucuları için desteklemiyor için sihirbaz desteği sağlar. COM sunucuları tarafından tanımlanan kaynak arabirimleri için MFC istemcisinde havuzu arabirimini ekleme hakkında daha fazla bilgi için bkz: nasıl yapılır: bir havuz arabiriminde MFC-Based COM istemcisi (KB 181845) oluşturmak [ http://support.microsoft.com/default.aspxscid=kb; 181845](http://support.microsoft.com/default.aspxscid=kb;181845).
+Otomasyon istemcinizi olayları işlemek istiyorsanız, bir havuzu arabirimini eklemeniz gerekir. MFC ActiveX denetimleri için havuz arabirimler, ancak diğer COM sunucuları için desteklemiyor için sihirbaz desteği sağlar.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

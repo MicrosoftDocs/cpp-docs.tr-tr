@@ -274,12 +274,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a93294e955dcdc04b320302c573dcbbb827670d
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: c530a9853aad3e16e5e4094f4d90e30c2643c0d8
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821575"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890900"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
 
@@ -457,12 +457,6 @@ Liste Görünümü denetimi "görünümler" adlı dört farklı şekilde, bunlar
 - Rapor görünümü
 
      Her öğe kendi satırında sağa sütun düzenlenir ek bilgilerle görünür. En soldaki sütuna etiket ve küçük simge ve uygulama tarafından belirtilen alt öğeleri sonraki sütunları içerir. Bir katıştırılmış üstbilgi denetimi (sınıfı [CHeaderCtrl](../../mfc/reference/cheaderctrl-class.md)) bu sütunların uygular. Üstbilgi denetimi ve bir rapor görünümünde sütunları hakkında daha fazla bilgi için bkz. [CListCtrl kullanma: (rapor görünümü) denetimine sütunlar ekleme](../../mfc/adding-columns-to-the-control-report-view.md).
-
-Ayrıca bkz:
-
-- Bilgi Bankası makalesi Q250614: nasıl yapılır: Rapor Görünümü'nde bir CListCtrl öğeleri Sırala
-
-- Bilgi Bankası makalesi Q200054: sorun: OnTimer() olduğu değil olarak adlandırılan sürekli bir List denetimi için
 
 Geçerli görünümü geçerli liste görünüm denetiminin stilini belirler. Bu stiller ve kullanımları hakkında daha fazla bilgi için bkz. [CListCtrl kullanma: Liste Denetim stillerini değiştirme](../../mfc/changing-list-control-styles.md).
 

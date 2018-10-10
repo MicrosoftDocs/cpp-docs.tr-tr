@@ -192,12 +192,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5a71e6f358a682adad2d12f7b567dc0bad3d0f3
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 2473f33508274bb0f0aa9aebcb462973ec80b267
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861895"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890822"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl sınıfı
 
@@ -731,8 +731,6 @@ void Customize();
 ### <a name="remarks"></a>Açıklamalar
 
 Bu iletişim kutusu araç çubuğu düğmeleri silme ve ekleme ile özelleştirmek için kullanıcı sağlar. Özelleştirme desteklemek için araç çubuğunun üst penceresine özelleştirme bildirim iletilerini açıklandığı gibi işlemesi [özelleştirme bildirimlerini işleme](../../mfc/handling-customization-notifications.md). Araç ayrıca CCS_ADJUSTABLE stiliyle açıklandığı oluşturulmuş olması gerekir [CToolBarCtrl::Create](#create).
-
-Bilgi Bankası makalesi Q241850 daha fazla bilgi için bkz: sorun: çağırmak için CToolBarCtrl::Customize saklamaz Özelleştir iletişim kutusu görünür.
 
 ##  <a name="deletebutton"></a>  CToolBarCtrl::DeleteButton
 

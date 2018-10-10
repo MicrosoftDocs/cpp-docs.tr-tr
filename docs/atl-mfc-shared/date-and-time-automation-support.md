@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38933847065544f97d60dfc109436f059a025f7a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1ce0acc7eb90e534e1e66882f5a4a6a88b1eb782
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763860"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890185"
 ---
 # <a name="date-and-time-automation-support"></a>Tarih ve saat: Otomasyon desteği
 
@@ -57,11 +57,8 @@ Bu makalede, tarih ve saat yönetimiyle ilgili sınıf kitaplığı hizmetlerind
 
 CRT doğru bir 23 saat farkı hesaplar. `COleDateTimeSpan` 24 saatlik bir farkı hesaplar.
 
-Geçici bir çözüm örneği sonuna yakın düzgün bir şekilde kullanma tarihini görüntülemek için kullanıldığını unutmayın `COleDateTime::Format`. Bilgi Bankası makalesine bakın "hata: Format("%D") başarısız için `COleDateTime` ve `COleDateTimeSpan`" (Q167338).
-
 [!code-cpp[NVC_ATLMFC_Utilities#176](../atl-mfc-shared/codesnippet/cpp/date-and-time-automation-support_1.cpp)]
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Tarih ve Saat](../atl-mfc-shared/date-and-time.md)
-

@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc42cd1eab4f19c8184ad500b4a4a1871747d6aa
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 9a68a0ae6392c2a9a64c9ff6c567451c2672c861
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713095"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890198"
 ---
 # <a name="dll-frequently-asked-questions"></a>Sıkça Sorulan DLL Soruları
 
@@ -39,7 +39,7 @@ Aşağıda, DLL'leri hakkında bazı sık sorulan sorular (SSS) istenir.
 
 ## <a name="mfc_multithreaded_1"></a> MFC DLL çoklu iş parçacığı oluşturabilir miyim?
 
-Win32 iş parçacığı yerel depolama (TLS) işlevleri gibi kullandığı sürece başlatma sırasında bir MFC DLL güvenli bir şekilde birden çok iş parçacığı oluşturabilirsiniz dışında **TlsAlloc** iş parçacığı yerel depolama alanı ayrılamadı. Ancak, MFC DLL kullanıyorsa **gt;__declspec(thread)** iş parçacığında yerel depolama ayırmak için istemci uygulaması örtük olarak DLL'ye bağlanmalıdır. İstemci uygulaması açıkça DLL çağrısı bağlar, **LoadLibrary** başarıyla DLL yüklenmez. MFC DLL'leri içinde birden çok iş parçacığı oluşturma hakkında daha fazla bilgi için bkz. Bilgi Bankası makalesi, "Sorun: çağırma LoadLibrary() için yük bir DLL emin olan statik TLS" (Q118816). DLL'lerde thread-local değişkenleri hakkında daha fazla bilgi için bkz. [iş parçacığı](../cpp/thread.md).
+Win32 iş parçacığı yerel depolama (TLS) işlevleri gibi kullandığı sürece başlatma sırasında bir MFC DLL güvenli bir şekilde birden çok iş parçacığı oluşturabilirsiniz dışında **TlsAlloc** iş parçacığı yerel depolama alanı ayrılamadı. Ancak, MFC DLL kullanıyorsa **gt;__declspec(thread)** iş parçacığında yerel depolama ayırmak için istemci uygulaması örtük olarak DLL'ye bağlanmalıdır. İstemci uygulaması açıkça DLL çağrısı bağlar, **LoadLibrary** başarıyla DLL yüklenmez. DLL'lerde thread-local değişkenleri hakkında daha fazla bilgi için bkz. [iş parçacığı](../cpp/thread.md).
 
 Başlatma sırasında yeni bir MFC iş parçacığı oluşturan bir MFC DLL, bir uygulama tarafından yüklendiğinde yanıt vermeyi durdurur. Her bir iş parçacığı çağırarak oluşturulduğunda bu içerir `AfxBeginThread` veya `CWinThread::CreateThread` içinde:
 
@@ -49,13 +49,11 @@ Başlatma sırasında yeni bir MFC iş parçacığı oluşturan bir MFC DLL, bir
 
 - Sağlanan `DllMain` veya **RawDllMain** bir MFC uzantılı DLL işlevi.
 
-Başlatma sırasında iş parçacığı oluşturma hakkında daha fazla bilgi için bkz. Bilgi Bankası makalesi, "Sorun: olamaz oluşturma bir MFC iş parçacığı sırasında DLL başlatma" (Q142243).
-
 ## <a name="mfc_multithreaded_2"></a> Çok iş parçacıklı uygulamada farklı iş parçacıkları MFC DLL'ine erişebilir mi?
 
 Çok iş parçacıklı uygulamalar farklı iş parçacıklarından dinamik olarak MFC'ye bağlanan normal MFC DLL'leri ve MFC uzantısı DLL'leri erişebilirsiniz. Ve Visual C++ 4.2 sürümü itibarıyla uygulamada oluşturulmuş birden çok iş parçacığından MFC DLL'lerine Normal MFC DLL'leri uygulamaya erişebilir.
 
-4.2 sürümü önce statik olarak MFC'ye bağlı normal MFC DLL'SİNİN için yalnızca bir dış iş parçacığı paylaşılmasıdır. Bilgi Bankası makalesi erişme (Visual C++ 4.2 sürümü önce) birden çok iş parçacığından MFC DLL'lerine Normal MFC DLL'leri kısıtlamaları hakkında daha fazla bilgi için bkz. "birden çok iş parçacığı ve MFC _USRDLLs" (Q122676).
+4.2 sürümü önce statik olarak MFC'ye bağlı normal MFC DLL'SİNİN için yalnızca bir dış iş parçacığı paylaşılmasıdır.
 
 USRDLL terimi artık Visual C++ belgelerinde kullanılan unutmayın. Statik olarak MFC'ye bağlı normal MFC DLL'SİNİN önceki USRDLL ile aynı özelliklere sahiptir.
 

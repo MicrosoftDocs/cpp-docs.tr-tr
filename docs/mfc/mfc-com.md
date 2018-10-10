@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d23a9be38ebb870adf098b34fac79afff6345cd8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 660b2fc2f6ece6f60ff7bd1868b3a65bc8f045c1
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394750"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890042"
 ---
 # <a name="mfc-com"></a>MFC COM
 
@@ -57,8 +57,6 @@ Etkin teknoloji, aşağıdakiler dahil olmak üzere, istemci ve sunucu teknoloji
 - Bu bölümde, MFC, örneğin kullanarak COM bileşenlerini yazmaya yönelik bilgi de sağlar. [bağlantı noktaları](../mfc/connection-points.md).
 
 Ne artık etkin teknoloji adı verilir ve hangi OLE yine de çağrılır, bir açıklaması için üzerinde konulara bakın. [OLE](../mfc/ole-in-mfc.md).
-
-Bilgi Bankası makalesi Q248019 Ayrıca bkz: nasıl yapılır: önlemek sunucu meşgul iletişim kutusunda görünen sırasında bir uzun COM işleminin.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

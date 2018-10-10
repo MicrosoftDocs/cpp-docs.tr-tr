@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07c8b18e8de5caf924cd31a18eb304778634050f
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 40c74633be8556fc075f10e328521209761f385c
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821470"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890718"
 ---
 # <a name="whats-new-for-visual-c-in-visual-studio-2017"></a>Visual Studio 2017'de Visual C++ yenilikleri
 
@@ -398,7 +398,7 @@ Artık yazma ve C++ uygulamaları Evrensel Windows platformu ve Windows Store i�
 
 Yeni kod yazarken artık C + kullanabilirsiniz +/ WinRT, standart bir C++ dil projeksiyonu yalnızca üstbilgi dosyalarında uygulanan Windows çalışma zamanı. Her iki Yazar sağlar ve Windows çalışma zamanı API'leri kullanarak standartlara uygun herhangi bir C++ derleyicisi. C + +/ WinRT, C++ geliştiricileri için modern Windows API ile birinci sınıf erişim sağlamak için tasarlanmıştır. Daha fazla bilgi için [C + +/ WinRT github'da kullanılabilir](https://moderncpp.com/).
 
-Sürümünden itibaren [Windows SDK'sı Insider Önizleme 17025 derleme](https://blogs.windows.com/buildingapps/2017/11/01/windows-10-sdk-preview-build-17025/#ryPH3zAy6yk2cIRX.97), C + +/ WinRT Windows SDK içinde dahil edilmiştir. Daha fazla bilgi için [C + +/ WinRT, artık Windows SDK'da](https://blogs.msdn.microsoft.com/vcblog/2017/11/01/cppwinrt-is-now-included-the-windows-sdk/).
+Sürümünden başlayarak Windows SDK'sı Insider Önizleme, C + 17025 derleme +/ WinRT Windows SDK içinde dahil edilmiştir. Daha fazla bilgi için [C + +/ WinRT, artık Windows SDK'da](https://blogs.msdn.microsoft.com/vcblog/2017/11/01/cppwinrt-is-now-included-the-windows-sdk/).
 
 ## <a name="clangc2-platform-toolset"></a>Clang/C2 platform araç takımı
 

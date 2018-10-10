@@ -162,12 +162,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ddefef4525e000002b6fb685887b666aa53fc87
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dc76e89cf8ca44b3254b21585bf00ff6243d818c
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378078"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890835"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl sınıfı
 
@@ -278,8 +278,6 @@ Kullanma hakkında daha fazla bilgi için `CRichEditCtrl`, bkz:
 - [Denetimler](../../mfc/controls-mfc.md)
 
 - [CRichEditCtrl Kullanma](../../mfc/using-cricheditctrl.md)
-
-- Bilgi Bankası makalesi Q259949: bilgi: SetCaretPos() olan uygun CEdit veya CRichEditCtrl denetimleri
 
 Bir MFC uygulamasında bir zengin düzenleme denetimini kullanmak bir örnek için bkz: [WORDPAD](../../visual-cpp-samples.md) örnek uygulama.
 

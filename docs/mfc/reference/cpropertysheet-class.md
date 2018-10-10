@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ec12275291321751c539d095c60fa9dabffa2b7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 50b1816320521f8ad20ee64fc4a051f938e902ec
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445184"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890783"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet sınıfı
 
@@ -155,7 +155,7 @@ Sekme iletişim kutusu, kullanıcı cihazı kurarken ya da bir bülten oluşturm
 
 Bir sihirbaz türü iletişim kutusu oluşturmak için çağrı ancak standart bir özellik sayfası oluşturmak için izlemeniz gerekir adımlarının aynısını izleyin [SetWizardMode](#setwizardmode) çağırmadan önce [DoModal](#domodal). Sihirbaz düğmeleri etkinleştirmek için çağrı [SetWizardButtons](#setwizardbuttons), kendi işlev ve görünümünü özelleştirmek için bayrakları kullanılarak. Etkinleştirmek için **son** düğmesi, çağrı [SetFinishText](#setfinishtext) kullanıcı sihirbazın son sayfasında eylem gerçekleştirildikten sonra.
 
-Nasıl kullanılacağı hakkında daha fazla bilgi için `CPropertySheet` nesneleri başlıklı makaleye bakın [özellik bölümleri ve özellik sayfaları](../../mfc/property-sheets-and-property-pages-in-mfc.md). Bilgi Bankası makalesi Q146916 Ayrıca bkz: nasıl yapılır: standart düğmeleriyle geçici CPropertySheet oluşturun ve Q300606 makale: nasıl yapılır: yeniden boyutlandırılabilir bir MFC özellik sayfası tasarlayın.
+Nasıl kullanılacağı hakkında daha fazla bilgi için `CPropertySheet` nesneleri başlıklı makaleye bakın [özellik bölümleri ve özellik sayfaları](../../mfc/property-sheets-and-property-pages-in-mfc.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 

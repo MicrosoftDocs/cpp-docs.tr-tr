@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 067f31d837b4b83a477d6b919f2d5bbd5efa00f3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 552252c8826e167b4aaa21aa41e489bbc8179ec3
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381081"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890381"
 ---
 # <a name="cdocobjectserver-class"></a>CDocObjectServer sınıfı
 
@@ -74,10 +74,6 @@ DocObject sunucusuna belge içerebilir [Cdocobjectserverıtem](../../mfc/referen
 DocObject sunucunuzun özelleştirmek için kendi sınıfından türetilen `CDocObjectServer` ve kendi görünüm Kurulum işlevleri geçersiz kılma [OnActivateView](#onactivateview), [OnApplyViewState](#onapplyviewstate), ve [OnSaveViewState ](#onsaveviewstate). Sınıfınıza yanıt framework çağrıları olarak yeni bir örneğini sağlamanız gerekir.
 
 DocObjects hakkında daha fazla bilgi için bkz: [Cdocobjectserverıtem](../../mfc/reference/cdocobjectserveritem-class.md) ve [Colecmduı](../../mfc/reference/colecmdui-class.md) içinde *MFC başvurusu*.
-
-Ayrıca aşağıdaki Bilgi Bankası makalesine bakın:
-
-- Q247382: Sorun: ActiveX belge sunucusu denetimler için ToolTips ActiveX belgesini kapsayıcı tarafından gizli
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 

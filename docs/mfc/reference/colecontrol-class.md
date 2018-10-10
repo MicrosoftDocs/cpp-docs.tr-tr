@@ -344,12 +344,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 292121e95b20061e95e85b49c60d4758bd18a568
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 160d9857097c4cac1912d2ca44b0433905c238f5
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46435538"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890874"
 ---
 # <a name="colecontrol-class"></a>COleControl sınıfı
 
@@ -2158,7 +2158,7 @@ Denetim başlatılmış olursa sıfır dışı; Aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework'ün uygulamasını `IDispatch::Invoke` çağrıları `IsInvokeAllowed` belirli bir işlev olup (tarafından tanımlanan `dispid`) çağrılabilir. Bir OLE denetimi için varsayılan davranış, Otomasyon yöntemi yalnızca denetim başlatılmışsa çağrılmasına izin vermektir; Ancak, `IsInvokeAllowed` sanal bir işlev değil ve (örneğin, Denetim Otomasyon sunucusu kullanıldığında) gerekirse geçersiz kılınabilir. Daha fazla bilgi için bkz. Bilgi Bankası makalesi Q166472, "nasıl yapılır: Otomasyon sunucusu bir OLE denetimi kullanın." Bilgi Bankası makaleleri kullanılabilir [ http://support.microsoft.com ](http://support.microsoft.com/).
+Framework'ün uygulamasını `IDispatch::Invoke` çağrıları `IsInvokeAllowed` belirli bir işlev olup (tarafından tanımlanan `dispid`) çağrılabilir. Bir OLE denetimi için varsayılan davranış, Otomasyon yöntemi yalnızca denetim başlatılmışsa çağrılmasına izin vermektir; Ancak, `IsInvokeAllowed` sanal bir işlev değil ve (örneğin, Denetim Otomasyon sunucusu kullanıldığında) gerekirse geçersiz kılınabilir.
 
 ##  <a name="ismodified"></a>  COleControl::IsModified
 

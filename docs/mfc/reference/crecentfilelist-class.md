@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a6ac97eaa55dde337068e450c0223b4ec4409f8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1394c3c614d80a07bfea7f411576d5b303d67da8
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393314"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890614"
 ---
 # <a name="crecentfilelist-class"></a>CRecentFileList sınıfı
 
@@ -78,10 +78,6 @@ class CRecentFileList
 ## <a name="remarks"></a>Açıklamalar
 
 Dosya eklendiğinde veya MRU dosya listesinden silindikten, dosya listesi okuyamaz ya da kayıt defterine yazılır veya bir. INI dosyası ve MRU dosya listesi görüntüleme menüsü güncelleştirilebilir.
-
-MRU menü öğeleri hakkında daha fazla bilgi için bkz.
-
-- Bilgi Bankası makalesi Q243751: nasıl yapılır: bir MFC uygulaması MRU menü öğeleri için komut işleyicileri ekleme
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 

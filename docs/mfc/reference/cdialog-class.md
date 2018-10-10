@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bda3bcbd8686d985406842a4b7a64536616ae8ac
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fdbbda6956e3265e7b17aa63ea26ac760b1fda5a
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419561"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890627"
 ---
 # <a name="cdialog-class"></a>CDialog sınıfı
 
@@ -133,11 +133,7 @@ Kullanıcı Tamam'ı veya İptal düğmeleri bastığında veya kodunuzu çağı
 
 Her zaman modsuz iletişim kutusu uyguladığınızda, geçersiz kılma `OnCancel` üye işleve ve çağrı `DestroyWindow` gelen içindeki. Temel sınıfı çağırmayın `CDialog::OnCancel`çağırır çünkü `EndDialog`, iletişim kutusunda görünmez hale getirir, ancak bunu yok etmez. Geçersiz kılmalıdır `PostNcDestroy` silinmesi için kalıcı olmayan iletişim kutuları için **bu**, kalıcı olmayan iletişim kutuları genellikle ile ayrılmış olduğundan **yeni**. Kalıcı iletişim kutuları karesinde genellikle oluşturulur ve gerekmeyen `PostNcDestroy` temizleme.
 
-Daha fazla bilgi için `CDialog`, bkz:
-
-- [İletişim Kutuları](../../mfc/dialog-boxes.md)
-
-- Bilgi Bankası makalesi Q262954: nasıl yapılır: bir Resizeable iletişim kutusu ile kaydırma çubukları oluşturma
+Daha fazla bilgi için `CDialog`, bkz: [iletişim kutuları](../../mfc/dialog-boxes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -281,7 +277,7 @@ Genel bellek içeren bir iletişim kutusunda şablon için bir tanıtıcı içer
 
 Kullanım `CWnd::DestroyWindow` işlevi tarafından oluşturulan bir iletişim kutusu yok edilecek `CreateIndirect` işlevi.
 
-ActiveX denetimleri içeren iletişim kutuları DLGINIT kaynakta sağlanan ek bilgiler sağlamanız gerekir. Daha fazla bilgi için bkz. Bilgi Bankası makalesi Q231591, "nasıl yapılır: bir MFC iletişim kutusu ile bir ActiveX denetimi oluşturmak için bir iletişim şablonunu kullanın." Bilgi Bankası makaleleri kullanılabilir [ http://support.microsoft.com ](http://support.microsoft.com/).
+ActiveX denetimleri içeren iletişim kutuları DLGINIT kaynakta sağlanan ek bilgiler sağlamanız gerekir.
 
 ##  <a name="domodal"></a>  CDialog::DoModal
 
@@ -410,7 +406,7 @@ DLGINIT kaynağa işaret eder.
 
 Dolaylı olarak kalıcı bir iletişim kutusu oluşturmak için önce genel bir bellek bloğunu ayırmak ve iletişim kutusu şablonu ile doldurun. Boş'ı çağırın `CDialog` iletişim kutusu nesneyi oluşturmak için oluşturucu. Ardından, arama `InitModalIndirect` bellek içi iletişim kutusu şablona, işlemeyi saklamak için. Windows iletişim kutusu oluşturulur ve görüntülenir daha sonra zaman [DoModal](#domodal) üye işlevi çağrılır.
 
-ActiveX denetimleri içeren iletişim kutuları DLGINIT kaynakta sağlanan ek bilgiler sağlamanız gerekir. Daha fazla bilgi için bkz. Bilgi Bankası makalesi Q231591, "nasıl yapılır: bir MFC iletişim kutusu ile bir ActiveX denetimi oluşturmak için bir iletişim şablonunu kullanın." Bilgi Bankası makaleleri kullanılabilir [ http://support.microsoft.com ](http://support.microsoft.com/).
+ActiveX denetimleri içeren iletişim kutuları DLGINIT kaynakta sağlanan ek bilgiler sağlamanız gerekir.
 
 ##  <a name="mapdialogrect"></a>  CDialog::MapDialogRect
 

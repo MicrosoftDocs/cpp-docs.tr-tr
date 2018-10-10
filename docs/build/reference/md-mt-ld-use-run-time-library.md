@@ -45,12 +45,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee8e59fbc88e63343d4da75a4cbf95d4f83bf815
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1aefd61d724f7716392b5fd2d15ef3a2f9ff0006
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45701369"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890237"
 ---
 # <a name="md-mt-ld-use-run-time-library"></a>/MD, /MT, /LD (Çalışma Zamanı Kitaplığını Kullan)
 
@@ -81,8 +81,6 @@ Bağlayıcının belirli bir çağrıya geçirilen tüm modüller aynı çalış
 
 Çalışma zamanı kitaplıklarının hata ayıklama sürümlerini kullanma hakkında daha fazla bilgi için bkz. [C çalışma zamanı kitaplığı başvurusu](../../c-runtime-library/c-run-time-library-reference.md).
 
-Bilgi Bankası makalesi Q140584, uygun C çalışma zamanı kitaplığının nasıl seçileceğine de yer vermiştir.
-
 DLL'ler hakkında daha fazla bilgi için bkz. [Visual C++'ta DLL'ler](../../build/dlls-in-visual-cpp.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
@@ -97,7 +95,7 @@ DLL'ler hakkında daha fazla bilgi için bkz. [Visual C++'ta DLL'ler](../../buil
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.RuntimeLibrary%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.RuntimeLibrary%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ddf4b505689521fbdfd702eb1944ac0779f16bf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dc5bca0f7ff1b2fdb2650eadbcdca4778d9b53ef
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409577"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890366"
 ---
 # <a name="upgrading-an-existing-activex-control"></a>Varolan Bir ActiveX Denetimini Güncelleştirme
 
@@ -56,7 +56,7 @@ En iyi duruma getirme, açıklandığı ekleyebilirsiniz [ActiveX denetimleri: i
 
 ##  <a name="_core_packaging_code_for_downloading"></a> İndirme için kodu paketleme
 
-Bu konu hakkında daha fazla bilgi için "Paketleme MFC denetimleri için kullanım Internet üzerinden" (Q167158) Bilgi Bankası makalesine bakın. Bilgi Bankası makalelerini bulabilirsiniz [ http://support.microsoft.com/support ](http://support.microsoft.com/support).
+Bu konu hakkında daha fazla bilgi için bkz. [paketleme ActiveX denetimlerini](https://docs.microsoft.com//previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa751974%28v%3dvs.85%29).
 
 ### <a name="the-codebase-tag"></a>Kod TEMELİ etiketi
 
@@ -94,7 +94,7 @@ Dolap dosyası, MFC kullan paket ActiveX denetimleri için önerilen yoldur. MFC
 
 ### <a name="creating-cab-files"></a>CAB dosyaları oluşturma
 
-Bilgi Bankası makalesi dolap Geliştirme Seti indirebilirsiniz [310618: Microsoft dolap Yazılım Geliştirme Seti](http://go.microsoft.com/fwlink/p/?linkid=148204). Bu Seti'nde dolap dosyası oluşturmak için gerekli araçları bulabilirsiniz.
+Dolap dosyası oluşturmak için Araçlar artık parçası olan [Windows 10 SDK'sı](https://dev.windows.com/downloads/windows-10-sdk).
 
 Dolap dosyası tarafından işaret edilen `CODEBASE` .ocx dosya, ActiveX denetimi ve yükleme denetlemek için .inf dosyası içermelidir. Denetimi dosyanızın adını belirterek dolap dosyası ve bir .inf dosyası oluşturun. Dolap dosyası bu sistemde mevcut olmayabilir bağımlı dll içermez. Örneğin, MFC DLL'leri ayrı bir dolap dosyasında paketlenir ve denetleme .inf dosyası tarafından başvurulan.
 

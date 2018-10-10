@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 038c3475a6041dfb719bb2270a87ac2898f8b958
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e4bdc67e13db11949371e2f9e3d8a205b146d701
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46036767"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890123"
 ---
 # <a name="compiler-error-c2872"></a>Derleyici Hatası C2872
 
@@ -31,7 +31,11 @@ Derleyici başvurduğunuz hangi sembol belirlenemiyor. Belirtilen ada sahip bird
 
 Bir üstbilgi dosyası içeriyorsa C2872 oluşabilir bir [using yönergesi](../../cpp/namespaces-cpp.md#using_directives), ve bir sonraki üstbilgi dosyasına dahildir ayrıca belirtilen ad uzayında bir tür içeren `using` yönergesi. Belirtin bir `using` yönergesi yalnızca tüm ile belirtilen üst bilgi dosyalarınız sonra `#include`.
 
-C2872 hakkında daha fazla bilgi için bkz. Bilgi Bankası makaleleri [sorun: derleyici hatalarını, #import ile kullandığınız Visual C++ .NET XML'de](http://support.microsoft.com/kb/316317) ve ["hatası C2872: 'Platform': belirsiz simge" kullanırken bir hata iletisi Visual Studio 2013'te Windows::Foundation::metadata ad alanı](https://support.microsoft.com/kb/2890859).
+C2872 Visual Studio 2013'te arasında bir çakışma nedeniyle oluşabilir `Windows::Foundation::Metadata::Platform` enum türü ve C + +/ CX tanımlı `Platform` ad alanı. Bu sorunu çözmek için şu adımları izleyin:
+
+- "Ad alanı Windows::Foundation::Metadata kullanma" yan tümcesi konumundan proje dosyaları kaldırın.
+
+- Bu ad alanında bulunan herhangi bir türü için tam adı belirtin.
 
 ## <a name="example"></a>Örnek
 

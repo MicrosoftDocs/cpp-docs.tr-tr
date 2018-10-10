@@ -64,12 +64,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7053c72536c0ab91420f1bbc068f39843eb99c1b
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: df61ebeea72a7cf860237b760288cc47ff353bf2
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861817"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890666"
 ---
 # <a name="cimage-class"></a>Cımage sınıfı
 
@@ -320,7 +320,7 @@ Bir HBITMAP tanıtıcı.
 *eOrientation*<br/>
 Bit eşlem yönünü belirtir. Aşağıdakilerden biri olabilir:
 
-- Bit eşlem yönünü DIBOR_DEFAULT işletim sistemi tarafından belirlenir. Ancak, bu her zaman istenen sonuçları tüm işletim sistemlerine sahip olmayabilirsiniz. Bunun hakkında daha fazla bilgi için aşağıdaki Bilgi Bankası makalesine bakın (**Q186586**): sorun: GetObject() her zaman döndürür pozitif yüksekliği için DIB bölümler.
+- Bit eşlem yönünü DIBOR_DEFAULT işletim sistemi tarafından belirlenir.
 
 - Bit eşlem ters sırada satırla DIBOR_BOTTOMUP. Bu neden [CImage::GetBits](#getbits) bit eşlem arabelleğin sonuna yakın bir işaretçiyi döndürmek için ve [CImage::GetPitch](#getpitch) negatif bir sayı dönün.
 

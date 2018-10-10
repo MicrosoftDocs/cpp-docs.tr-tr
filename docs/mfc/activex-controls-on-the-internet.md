@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47d1a5308b379d8bd1923bb9ad1ad805cb6bded3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6004c3acd052d1424004017941a5e4aa110c602c
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432827"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890342"
 ---
 # <a name="activex-controls-on-the-internet"></a>Internet'te ActiveX Denetimleri
 
@@ -170,10 +170,6 @@ Zaman uyumsuz adlar, verileri ağ üzerinden zaman uyumsuz olarak indirmek için
 Örneğin, yalnızca 10 bayt mevcuttur ve okunur 1 K dosya zaman uyumsuz olarak adlandırılır, okuma engelleme yapmadığından ancak şu anda 10 bayt ile döndürür.
 
 Uygulamanız [zaman uyumsuz adlar](../mfc/asynchronous-monikers-on-the-internet.md) kullanarak `CAsyncMonikerFile` sınıfı. Ancak, ActiveX denetimlerini kullanabilirsiniz `CDataPathProperty` sınıfından türetilen sınıf `CAsyncMonikerFile`, zaman uyumsuz denetim özellikleri uygulamak için.
-
-ASYNDOWN örnek bir zaman uyumsuz döngü verileri okumak için zamanlayıcılar kullanılarak ayarlama işlemini gösterir. ASYNDOWN "Nasıl yapılır: AsyncDown gösteren zaman uyumsuz veri indirin" (Q177244) Bilgi Bankası makalesinde ayrıntılı olarak açıklanmıştır ve Microsoft Download Center indirilerek kullanılabilir. ("Nasıl elde Microsoft destek dosyaları gelen çevrimiçi Hizmetleri" (Q119591) Microsoft Bilgi Bankası'nda makale Microsoft Download Center'dan gelen dosyaları indirme hakkındaki daha fazla bilgi için bkz.) Bilgi Bankası makalelerini bulabilirsiniz [ http://support.microsoft.com/support ](http://support.microsoft.com/support).
-
-ASYNDOWN içinde kullanılan temel bir süreölçeri düzenlemek için bir tekniktir **CDataPathProperty::OnDataAvailable** veri kullanılabilir olduğunda belirtmek için. Zamanlayıcı iletisi alındığında, uygulama veri 128 bayt bloklarında okur ve bir düzenleme denetimi doldurur. Zamanlayıcı ileti işlendiğinde veri kullanılabilir durumda değilse, Zamanlayıcıyı kapalıdır. `OnDataAvailable` Daha fazla veri daha sonra geldiğinde, Zamanlayıcıyı kapatır.
 
 ## <a name="displaying-a-control-on-a-web-page"></a>Bir Web sayfası denetiminde görüntüleme
 

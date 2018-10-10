@@ -17,24 +17,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cdde0f8d4edc13e8c1e1a53d8f4393dc7c2dac40
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d036f7d46e0db84b8572b26c747947c929972517
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372476"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48889938"
 ---
 # <a name="redistributing-web-client-applications"></a>Web İstemcisi Uygulamalarını Yeniden Dağıtma
 
 Uygulamanız WebBrowser denetimi ekleyen MFC sınıfları kullanıyorsa (örneğin, `CHtmlView` veya `CHtmlEditView`), Microsoft Internet Explorer 4.0 veya sonraki sürümü en azından en düşük düzeyde yüklenmelidir hedef bilgisayarda.
 
-Internet Explorer'ın en son sürümü yükleyerek de hedef bilgisayarda en son ortak denetim dosyalarına sahip olmasını sağlar.
-
-En az Internet Explorer bileşenlerini yükleme hakkında bilgi, aşağıdaki Bilgi Bankası makalesi kullanılabilir:
-
-- Q185375, nasıl yapılır: bir Internet Explorer'ın tek EXE yüklemesini oluşturma ([http://support.microsoft.com/support/kb/articles/q185/3/75.asp](http://support.microsoft.com/support/kb/articles/q185/3/75.asp))
-
-MSDN Kitaplığı'nda veya Tabanı makalelerini bulabilirsiniz [ http://support.microsoft.com ](http://support.microsoft.com).
+Internet Explorer'ın en son sürümü yükleyerek de hedef bilgisayarda en son ortak denetim dosyalarına sahip olmasını sağlar. Daha fazla bilgi için [yükleme ve dağıtma, Internet Explorer 11](/internet-explorer/ie11-deploy-guide/install-and-deploy-ie11).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

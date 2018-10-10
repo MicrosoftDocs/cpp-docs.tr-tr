@@ -172,12 +172,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f1294517a49687a2fc94b1bb696a111a9f55da7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 98dfdc792341d215830d46d078d9ece69419efed
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403974"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890848"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl sınıfı
 
@@ -292,8 +292,6 @@ Kullanma hakkında daha fazla bilgi için `CTreeCtrl`, bkz:
 - [CTreeCtrl Kullanma](../../mfc/using-ctreectrl.md)
 
 - [Ağaç görünümü denetimi başvuru](/windows/desktop/Controls/tree-view-control-reference) Windows SDK içinde.
-
-- Bilgi Bankası makalesi Q222905: nasıl yapılır: bağlam menüsünü görüntülemek için CTreeCtrl
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 

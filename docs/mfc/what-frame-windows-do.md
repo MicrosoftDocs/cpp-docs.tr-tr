@@ -8,7 +8,7 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- frame windows [MFC], about frame widows
+- frame windows [MFC], about frame windows
 - frame windows [MFC], tasks
 - MFC, frame windows
 ms.assetid: 1148a952-6786-4622-b5a8-68a2d7eae584
@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b86b65d43fee16a0a2a8f03353c9700d6f0a5428
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bf97fb086f9ede43f9679e66a7c917b800f97dc8
+ms.sourcegitcommit: e4a690bf33b44432179de0bc537e26616d13c553
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423604"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892195"
 ---
 # <a name="what-frame-windows-do"></a>Çerçeve Pencerelerinin Görevi
 

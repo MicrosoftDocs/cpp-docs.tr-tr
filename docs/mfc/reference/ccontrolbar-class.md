@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd69813251a96051f844051f27155e1d4ed404d6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 27121334345556a744a6fc838c238352ccc36621
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393431"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890537"
 ---
 # <a name="ccontrolbar-class"></a>CControlBar sınıfı
 
@@ -118,8 +118,6 @@ Daha fazla bilgi için `CControlBar`, bkz:
 - [Denetim Çubukları](../../mfc/control-bars.md)
 
 - [Teknik Not 31: Denetim çubukları](../../mfc/tn031-control-bars.md).
-
-- Bilgi Bankası makalesi Q242577: sorun: güncelleştirme komutu kullanıcı Arabirimi işleyicileri yapmak çalışmıyor menü iliştirilmiş bir iletişim kutusu için
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 

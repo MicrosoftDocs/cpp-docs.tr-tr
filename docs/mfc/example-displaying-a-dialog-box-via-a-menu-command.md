@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2869e936115317ff34183b55ba16fe8e9cdc4d2d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1abb923a52ccce181782d5387636c45491c342cd
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378195"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890211"
 ---
 # <a name="example-displaying-a-dialog-box-via-a-menu-command"></a>Örnek: Bir İletişim Kutusunu Menü Komutu ile Görüntüleme
 
@@ -98,12 +98,7 @@ Adları ve değerleri aşağıdaki yordamları kullanın:
 
          [!code-cpp[NVC_MFCControlLadenDialog#48](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_7.cpp)]
 
-Ayrıca, aşağıdaki Bilgi Bankası makalesine bakın:
-
-- Q251059: Nasıl yapılır: bir MFC iletişim kutusu için kendi penceresi sınıf adı girin
-
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
 [Kalıcı ve Kalıcı Olmayan İletişim Kutuları](../mfc/modal-and-modeless-dialog-boxes.md)
-

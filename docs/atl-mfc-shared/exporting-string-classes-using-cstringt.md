@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5355b6e81354ef04b7cc4d2c3495289c9d1d029d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f2d77516ae53b0ee1c4f39e4d8f095848aa00acc
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444213"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48889977"
 ---
 # <a name="exporting-string-classes-using-cstringt"></a>CStringT kullanarak dize sınıflarını dışarı aktarma
 
@@ -29,7 +29,7 @@ Geçmişte, MFC geliştiriciler öğesinden türetilmiş `CString` kendi dize s�
 
 - Yeni `CStringT` özelleştirebileceğiniz Şablon sınıfı, `CString` karakter nitelikleri, C++ Standart Kitaplığı'nda şablonlarına benzer belirtin şablon parametreleri kullanarak davranışı.
 
-- Dışarı aktardığınızda, kendi dize sınıfı kullanarak bir DLL `CStringT`, derleyicinin otomatik olarak dışarı aktarır `CString` temel sınıfı. Bu yana `CString` kendisi bir şablon sınıfıdır, derleyici uyumlu olmadığı sürece, kullanıldığında, derleyici tarafından örneği, `CString` DLL'den içeri aktarılır. Visual C++ .NET için Visual C++ 6.0 projeleri yaptıysanız, size bir Çarp-tanımlanan bağlayıcı sembol hataları görmüş olabilirsiniz `CString` çakışması nedeniyle `CString` DLL ve yerel olarak oluşturulmuş bir sürümü içeri aktarıldı. Bunu yapmak için en uygun yolu aşağıda açıklanmıştır. Bilgi Bankası makalesi, bu sorunla ilgili daha fazla bilgi için bkz. "CString türetilen içeri aktardığınızda bağlama hataları sınıflar" (Q309801) adresindeki [ http://support.microsoft.com/default.aspx ](http://support.microsoft.com/default.aspx).
+- Dışarı aktardığınızda, kendi dize sınıfı kullanarak bir DLL `CStringT`, derleyicinin otomatik olarak dışarı aktarır `CString` temel sınıfı. Bu yana `CString` kendisi bir şablon sınıfıdır, derleyici uyumlu olmadığı sürece, kullanıldığında, derleyici tarafından örneği, `CString` DLL'den içeri aktarılır. Visual C++ .NET için Visual C++ 6.0 projeleri yaptıysanız, size bir Çarp-tanımlanan bağlayıcı sembol hataları görmüş olabilirsiniz `CString` çakışması nedeniyle `CString` DLL ve yerel olarak oluşturulmuş bir sürümü içeri aktarıldı. Bunu yapmak için en uygun yolu aşağıda açıklanmıştır.
 
 Aşağıdaki senaryoda, birden çok kez tanımlanmış sınıfları için Sembol hataları üretmek bağlayıcı neden olur. Dışarı aktardığınız olduğunu varsayalım. bir `CString`-türetilmiş sınıf (`CMyString`) bir MFC uzantılı DLL'nden:
 

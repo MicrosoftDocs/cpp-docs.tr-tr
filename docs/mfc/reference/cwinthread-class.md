@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f2c01336094077cc1f451f2e7b479ca4acf9fb77
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 412d9150836511c88b85326d2ce59181a0566c57
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441362"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890604"
 ---
 # <a name="cwinthread-class"></a>CWinThread sınıfı
 
@@ -455,7 +455,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 Postalanan ileti uygun ileti işleyicisi için ileti eşlemesi makronun ON_THREAD_MESSAGE eşlenir.
 
 > [!NOTE]
->  Windows çağrılırken [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946) işlevi içinde bir MFC uygulaması, MFC ileti işleyicileri çağrılmadı. Daha fazla bilgi için bkz. Bilgi Bankası makalesi, "Sorun: MFC ileti işleyicisi yok adlı ile PostThreadMessage()" (Q142415).
+> Çağırdığınızda [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946), ileti iş parçacığının ileti sırasına konur. Bu şekilde gönderilen iletiler pencere ile ilişkili olmadığından, ancak, MFC bunları ileti veya komut işleyicilerini dağıtacağı değil. Bu iletileri işlemek için geçersiz kılma `PreTranslateMessage()` işlevi CWinApp-türetilmiş sınıf ve iletileri el ile işleyin.
 
 ##  <a name="pretranslatemessage"></a>  CWinThread::PreTranslateMessage
 

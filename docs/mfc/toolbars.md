@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bcd7e0a1b2786a92d7a0e64b85417ddb82c82871
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7fd8738c0dec9771a94ba94aefdcaf2af87fdb09
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437800"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890550"
 ---
 # <a name="toolbars"></a>Araç Çubukları
 
@@ -38,10 +38,7 @@ MFC araç çubukları ve oluşturmak ve bunları kullanmak nasıl makaleleri ara
 
 - [Örnek](../mfc/toolbar-sample-list.md)
 
-MFC araç çubukları hakkında daha fazla bilgi için makalede Q232017, "Nasıl yapılır: ekleme metin için araç çubuğu düğmeleri," adresindeki Microsoft Bilgi Bankası'nda bkz. http://support.microsoft.com.
-
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)<br/>
 [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
-

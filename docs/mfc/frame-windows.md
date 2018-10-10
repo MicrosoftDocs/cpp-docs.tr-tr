@@ -16,7 +16,7 @@ helpviewer_keywords:
 - views [MFC], and frame windows
 - CFrameWnd class [MFC], frame windows
 - frame windows [MFC]
-- frame windows [MFC], about frame widows
+- frame windows [MFC], about frame windows
 - MFC, frame windows
 - MDI [MFC], frame windows
 - splitter windows [MFC], and frame windows
@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77035b50070478f5117635738f13c7bfd43edec2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 895476da05d4480741577a04749df4be43016006
+ms.sourcegitcommit: e4a690bf33b44432179de0bc537e26616d13c553
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431027"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892182"
 ---
 # <a name="frame-windows"></a>Çerçeve Pencereleri
 

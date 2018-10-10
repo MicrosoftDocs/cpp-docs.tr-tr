@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7cb8f397243bb6531f33ac5e444914cfa36e5fe1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 55b93d1ebd81850982b4f6ceac1ceb008ed1fa49
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022642"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890289"
 ---
 # <a name="compiler-warning-level-2-c4275"></a>Derleyici Uyarısı (Düzey 2) C4275
 
@@ -42,8 +42,6 @@ Bir sınıf ile dışarı aktarılırken veri bozulması olasılığını en aza
 - Sınıfınızın yöntemlerin hiçbiri (bağımsız olarak, satır içi kullanım) örnekleme EXE ve DLL içinde statik veri farklar olduğu türlerini kullanabilirsiniz.
 
 Sanal işlevler içeren bir sınıf tanımlar ve işlevleri bir DLL örneklemek için çağırabilirsiniz tanımlama ve türe ait nesneleri silme tarafından sınıfları dışarı aktarma önleyebilirsiniz.  Ardından yalnızca sanal işlevler türüne çağırabilirsiniz.
-
-Şablonları dışarı aktarma ile ilgili daha fazla bilgi için bkz: [ http://support.microsoft.com/default.aspx?scid=KB; EN-US; 168958](http://support.microsoft.com/default.aspx?scid=KB;EN-US;168958).
 
 C4275 yoksayılan Visual c++'ta, bir tür kitaplığı'nda C++ standart hata ayıklama yayın derleme türetme (**/mtd**) ve derleyici hata iletisinin _Container_base için burada ifade eder.
 

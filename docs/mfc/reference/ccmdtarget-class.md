@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 575ba3786e6639e5d6801ec9555c4a85f9732b20
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 13b71838bb4db152fb76fa1115a426e2711422ea
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415739"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890590"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget sınıfı
 
@@ -223,7 +223,7 @@ void EnableTypeLib();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucusunun içinde bu üye işlevini çağırın, `CCmdTarget`-tür bilgiler sağlıyorsa, nesne türetilmiş. Daha fazla bilgi için bkz. Bilgi Bankası makalesi Q185720, "nasıl yapılır: bir MFC Otomasyonu sunucusundan tür bilgisini sağlaması." Bilgi Bankası makaleleri kullanılabilir [ http://support.microsoft.com ](http://support.microsoft.com/).
+Oluşturucusunun içinde bu üye işlevini çağırın, `CCmdTarget`-tür bilgiler sağlıyorsa, nesne türetilmiş.
 
 ##  <a name="endwaitcursor"></a>  CCmdTarget::EndWaitCursor
 
@@ -303,8 +303,6 @@ Başarılı, aksi takdirde FALSE ise TRUE. Başarılı olursa, \* *pIID* birinci
 ### <a name="remarks"></a>Açıklamalar
 
 Türetilen sınıfların bu üye işlevini geçersiz kılmalıdır (kılınmazsa, `GetDispatchIID` false değerini döndürür). Bkz: [COleControl](../../mfc/reference/colecontrol-class.md).
-
-Daha fazla bilgi için bkz. Bilgi Bankası makalesi Q185720, "nasıl yapılır: bir MFC Otomasyonu sunucusundan tür bilgisini sağlaması." Bilgi Bankası makaleleri kullanılabilir [ http://support.microsoft.com ](http://support.microsoft.com/).
 
 ##  <a name="getidispatch"></a>  CCmdTarget::GetIDispatch
 

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d2e2bab9da3d19347577f0b1d1e8ab2ed6bb0dc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d93486d8df8cdb8bc253a0e71037f4e2ddf9e128
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404027"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890485"
 ---
 # <a name="precompiled-header-files"></a>Önceden Derlenmiş Üst Bilgi Dosyaları
 
@@ -35,7 +35,7 @@ Bu dosyalar bulunur *Projname* dizin. Çözüm Gezgini'nde üst bilgi dosyaları
 
 |Dosya adı|Açıklama|
 |---------------|-----------------|
-|Stdafx.h|İçerik dosyası standart sistem ekleme dosyaları için ve sık sık kullanılır, ancak seyrek değiştirilen projeye özgü ekleme dosyaları.<br /><br /> Tanımlayın veya gerekir herhangi stdafx.h _AFX_NO_XXX makroların tanımlarını Kaldır; Bilgi Bankası makalesine bakın "sorun: sorun _AFX_NO_XXX tanımlarken". MSDN Kitaplığı'nda veya Tabanı makalelerini bulabilirsiniz [http:// support.microsoft.com/](http://%20support.microsoft.com/).|
+|Stdafx.h|İçerik dosyası standart sistem ekleme dosyaları için ve sık sık kullanılır, ancak seyrek değiştirilen projeye özgü ekleme dosyaları.<br /><br /> Tanımlayın veya gerekir herhangi stdafx.h _AFX_NO_XXX makroların tanımlarını Kaldır.|
 |Stdafx.cpp|Önişlemci yönergesi içeren `#include "stdafx.h"` ve ekler önceden derlenmiş türler için dosyaları ekleme. Önceden derlenmiş dosyalar başlık dosyaları dahil olmak üzere herhangi bir tür, derleme gerektiren dosyaları kısıtlayarak daha hızlı derleme sürelerini destekler. İlk projeniz oluşturulduktan sonra süreleri sonraki sürümlerde önceden derlenmiş üst bilgi dosyalarının varlığı nedeniyle çok daha hızlı derleme fark edeceksiniz.|
 
 ## <a name="see-also"></a>Ayrıca Bkz.

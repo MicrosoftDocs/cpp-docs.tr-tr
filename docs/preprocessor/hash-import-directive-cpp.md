@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5bb62a61762c2c4e042777376f4d2b9f3ffc747e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 60397fea85e3fd121469ae4568dac18fa6b9ddb1
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429753"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890328"
 ---
 # <a name="import-directive-c"></a>#import Yönergesi (C++)
 **C++ özgü**  
@@ -185,11 +185,9 @@ Bir tür kitaplığı diğer tür kitaplıklarında tanımlanan türlere başvur
 Gerçek dosya adı **#import** açıklama tam yoludur çapraz başvurulan tür kitaplığının kayıt defterinde saklanan şekilde. Eksik tür tanımlarından kaynaklanan hatalarla karşılaşırsanız, Yorumlar başındaki denetleyin. TLH hangi bağımlı tür kitaplıklarının görmek için önce içe aktarılması gerekir. Büyük olasılıkla hatalardır söz dizimi hatalarını (örneğin, C2143, C2146, C2321), C2501 (eksik belirticileri), veya C2433 ('veri bildiriminde izin verilmeyen inline') derleme sırasında. TLI dosyası.  
   
 Bağımlılık açıklamaları aksi için sistem üstbilgileri tarafından sağlanmayan ve ardından sağlayan belirlemelisiniz bir **#import** önce belirli bir noktada yönerge **#import** bağımlı öğenin yönergesi hataları gidermek için Tür Kitaplığı'nı tıklatın.  
-  
-Daha fazla bilgi için bkz. Bilgi Bankası makalesi "#import sarıcı yöntemleri neden erişim ihlali" (Q242527) veya "kullandığınızda, derleyici hataları XML ile #import" (q269194 makalelerine). MSDN Kitaplığı ortamdaki veya Tabanı makalelerini bulabilirsiniz [Microsoft Support](https://support.microsoft.com/).  
-  
-##  <a name="_predir_the_23import_directive_import_attributes"></a> #import öznitelikleri  
- 
+
+##  <a name="_predir_the_23import_directive_import_attributes"></a> #import öznitelikleri
+
 **#import** isteğe bağlı olarak bir veya daha fazla öznitelik içerebilir. Bu öznitelikler, derleyiciye tür kitaplığı başlıklarının içeriğini değiştirmek söyleyin. Ters eğik çizgi (**\\**) sembolü, tek bir ek satırlar eklemek için kullanılabilir **#import** deyimi. Örneğin:  
   
 ```  

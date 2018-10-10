@@ -104,12 +104,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2935ac160f5d778faf119390d1f023d00d6d322b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d4ae42373ddf70cf4945c540e781397d7d67bd21
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448551"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890757"
 ---
 # <a name="cedit-class"></a>CEdit sınıfı
 
@@ -225,11 +225,7 @@ Oluşturursanız, bir `CEdit` nesnesi bir pencere içinde de gerekebilir, yok. O
 
 Belirli stilleri bir düzenleme denetimi (örneğin, ES_READONLY) değiştirileceğini denetimi kullanmak yerine belirli bir ileti göndermeyi gerekir [ModifyStyle](cwnd-class.md#modifystyle). Bkz: [Düzenle denetim stilleri](/windows/desktop/Controls/edit-control-styles) Windows SDK içinde.
 
-Daha fazla bilgi için `CEdit`, bkz:
-
-- [Denetimler](../../mfc/controls-mfc.md)
-
-- Bilgi Bankası makalesi Q259949: bilgi: SetCaretPos() olan uygun CEdit veya CRichEditCtrl denetimleri
+Daha fazla bilgi için `CEdit`, bkz: [denetimleri](../../mfc/controls-mfc.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 

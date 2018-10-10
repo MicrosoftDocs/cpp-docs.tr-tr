@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa5cf1be80b22d3577347dbf7de9ee262125aa86
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: c2d5a0f2f5f7515e36997b876373dcf25bb6fc03
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821367"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890640"
 ---
 # <a name="message-map-macros-mfc"></a>İleti Eşleme Makroları (MFC)
 
@@ -352,7 +352,7 @@ Kullanıcı tanımlı iletiler standart Windows WM_MESSAGE iletiler iletiler ' d
 Kullanıcı tanımlı bir ileti işleyicisi işlevini eşlenmesi gereken her ileti, ileti eşlemesi tam olarak bir ON_MESSAGE makrosu deyiminde olması gerekir.
 
 > [!NOTE]
->  Kullanıcı tanımlı iletileri yanı sıra ON_MESSAGE daha az yaygın Windows iletilerini işler. Daha fazla bilgi için bkz. Bilgi Bankası makalesi [99848: bilgi: kullanım ON_MESSAGE() makrosu harita daha az yaygın iletileri](http://go.microsoft.com/fwlink/p/?linkid=192022).
+>  Kullanıcı tanımlı iletileri yanı sıra ON_MESSAGE daha az yaygın Windows iletilerini işler. Daha fazla bilgi için [ileti eşlemeleri](../../mfc/tn006-message-maps.md).
 
 Daha fazla bilgi ve örnekler için bkz. [ileti işleme ve eşleme konuları](../../mfc/message-handling-and-mapping.md) ve [kullanıcı tanımlı işleyiciler](user-defined-handlers.md)
 
