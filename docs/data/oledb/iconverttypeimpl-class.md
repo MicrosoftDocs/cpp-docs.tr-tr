@@ -25,16 +25,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ed4eefe8c05e2b5b027ba1d7c1fec022c9e44409
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 09f70e45891e7dc0b07933fe95dce772e5c7159a
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46104952"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082351"
 ---
 # <a name="iconverttypeimpl-class"></a>IConvertTypeImpl Sınıfı
 
-Bir uygulamasını sağlar [IConvertType](/previous-versions/windows/desktop/ms715926\(v=vs.85\)) arabirimi.  
+Bir uygulamasını sağlar [IConvertType](/previous-versions/windows/desktop/ms715926) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -79,7 +79,7 @@ STDMETHOD(CanConvert)(DBTYPE wFromType,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [IConvertType::CanConvert](/previous-versions/windows/desktop/ms711224\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [IConvertType::CanConvert](/previous-versions/windows/desktop/ms711224) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
 

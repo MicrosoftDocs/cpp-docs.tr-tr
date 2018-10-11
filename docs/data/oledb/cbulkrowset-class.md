@@ -113,12 +113,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3406614b99e2057c9469fe69d02a9fcbe4eae23b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3538a8cd15fc315f4d91d1c83c517811acce1802
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116769"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082910"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset Sınıfı
 
@@ -165,7 +165,7 @@ Aşağıdaki örnek, kullanımını gösterir. `CBulkRowset` sınıfı.
 
 ## <a name="addrefrows"></a> CBulkRowset::AddRefRows
 
-Çağrıları [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını artırmak için.  
+Çağrıları [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını artırmak için.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -264,7 +264,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
-Bkz: ['yı](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
+Bkz: ['yı](/previous-versions/windows/desktop/ms716988) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="movetoratio"></a> CBulkRowset::MoveToRatio
 
@@ -295,11 +295,11 @@ Standart bir HRESULT.
   
 `(nNumerator *  RowsetSize ) / nDenominator`  
   
-Burada `RowsetSize` satırlarda ölçülen satır boyutu. Bu formül doğruluğunu belirli sağlayıcısına bağlıdır. Ayrıntılar için bkz [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.   
+Burada `RowsetSize` satırlarda ölçülen satır boyutu. Bu formül doğruluğunu belirli sağlayıcısına bağlıdır. Ayrıntılar için bkz [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602) içinde *OLE DB Programcının Başvurusu*.   
 
 ## <a name="releaserows"></a> CBulkRowset::ReleaseRows
 
-Çağrıları [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771\(v=vs.85\)) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını azaltmak için.  
+Çağrıları [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını azaltmak için.  
   
 ### <a name="syntax"></a>Sözdizimi  
   

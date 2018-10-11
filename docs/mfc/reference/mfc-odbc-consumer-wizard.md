@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23a264c48f0a03888f8b6ac744129de75d8ad757
-ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
+ms.openlocfilehash: e9623fae94891c62cca2ce34c621823251b65fe9
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48250477"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082611"
 ---
 # <a name="mfc-odbc-consumer-wizard"></a>MFC ODBC Tüketici Sihirbazı
 
@@ -35,13 +35,13 @@ Bu sihirbaz bir ODBC kayıt kümesi sınıfı ve veri bağlamaları belirtilen v
 
 - **Veri kaynağı**
 
-   **Veri kaynağı** düğmesi belirtilen ODBC sürücüsünü kullanarak belirtilen veri kaynağını ayarlamanıza imkan sağlar. Veri kaynağı dosyaları (DSN) hakkında daha fazla bilgi için bkz: [dosya veri kaynaklarını](/previous-versions/windows/desktop/ms715401\(v=vs.85\)) ODBC SDK.
+   **Veri kaynağı** düğmesi belirtilen ODBC sürücüsünü kullanarak belirtilen veri kaynağını ayarlamanıza imkan sağlar. Veri kaynağı dosyaları (DSN) hakkında daha fazla bilgi için bkz: [dosya veri kaynaklarını](/previous-versions/windows/desktop/ms715401) ODBC SDK.
 
    **Veri kaynağı Seç** iletişim kutusu iki sekme içerir:
 
    - **Veri kaynağı dosyası** sekmesinde:
 
-      **Konum** kutusunda veri kaynağı olarak kullanılacak dosyalarını seçmek dizin belirtir. \Program Files\ODBC\Data kaynakları varsayılandır. Mevcut dosya veri kaynakları (.dsn dosyaları), ana liste kutusunda görünür. Veri kaynaklarını kullanarak zaman önüne ya da ayarlayabilirsiniz **DSN dosyası** sekmesinde [ODBC Veri Kaynağı Yöneticisi](/previous-versions/windows/desktop/ms714024\(v=vs.85\)), bu iletişim kutusunu kullanarak yenilerini mi oluşturacaksınız.
+      **Konum** kutusunda veri kaynağı olarak kullanılacak dosyalarını seçmek dizin belirtir. \Program Files\ODBC\Data kaynakları varsayılandır. Mevcut dosya veri kaynakları (.dsn dosyaları), ana liste kutusunda görünür. Veri kaynaklarını kullanarak zaman önüne ya da ayarlayabilirsiniz **DSN dosyası** sekmesinde [ODBC Veri Kaynağı Yöneticisi](/previous-versions/windows/desktop/ms714024), bu iletişim kutusunu kullanarak yenilerini mi oluşturacaksınız.
 
       Bu iletişim kutusundan yeni bir dosya veri kaynağı oluşturmak için tıklayın `New` DSN ad; belirtmek üzere **yeni veri kaynağı oluştur** iletişim kutusu görüntülenir. İçinde **yeni veri kaynağı oluştur** iletişim kutusunda, uygun bir sürücü seçip tıklayın `Next`; tıklayın **Gözat**ve (olması için "Tüm dosyaları" seçmek için bir veri kaynağı olarak kullanılacak dosya adını seçin Görünüm DSN olmayan dosyalar .xls dosyaları gibi); tıklayın `Next`ve ardından **son**. (Bir olmayan DSN dosyası seçtiyseniz, "ODBC Microsoft Excel dosyası bir DSN'ye dönüştürecek Kurulumu" gibi bir sürücüye özel iletişim kutusu açılır.)
 
@@ -50,13 +50,13 @@ Bu sihirbaz bir ODBC kayıt kümesi sınıfı ve veri bağlamaları belirtilen v
 
       **DSN adı** kutusu dosyası veri kaynağı için bir ad belirtmenize olanak verir. DSN adı gibi .xls Excel dosyaları ya da .mdb dosyaları erişim için uygun dosya uzantısıyla biten emin olmanız gerekir.
 
-      DSN hakkında daha fazla bilgi için bkz. [dosya veri kaynaklarını](/previous-versions/windows/desktop/ms715401\(v=vs.85\)) ODBC SDK.
+      DSN hakkında daha fazla bilgi için bkz. [dosya veri kaynaklarını](/previous-versions/windows/desktop/ms715401) ODBC SDK.
 
    - **Veri kaynağı makine** sekmesinde:
 
-      Bu sekme, sistem ve kullanıcı veri kaynaklarını listeler. Kullanıcı veri kaynakları, bir kullanıcı bu makinedeki özgüdür. Sistem veri kaynakları, bu makinede veya bir sistem çapında hizmetinde tüm kullanıcılar tarafından kullanılabilir. Bkz: [makine veri kaynaklarını](/previous-versions/windows/desktop/ms710952\(v=vs.85\)) ODBC SDK
+      Bu sekme, sistem ve kullanıcı veri kaynaklarını listeler. Kullanıcı veri kaynakları, bir kullanıcı bu makinedeki özgüdür. Sistem veri kaynakları, bu makinede veya bir sistem çapında hizmetinde tüm kullanıcılar tarafından kullanılabilir. Bkz: [makine veri kaynaklarını](/previous-versions/windows/desktop/ms710952) ODBC SDK
 
-      ODBC veri kaynakları hakkında daha fazla bilgi için bkz. [veri kaynakları](/previous-versions/windows/desktop/ms711688\(v=vs.85\)) ODBC SDK.
+      ODBC veri kaynakları hakkında daha fazla bilgi için bkz. [veri kaynakları](/previous-versions/windows/desktop/ms711688) ODBC SDK.
 
    Tıklayın **Tamam** tamamlanması. **Veritabanı nesnesini Seç** iletişim kutusu görüntülenir. Bu iletişim kutusundan tabloyu seçin veya tüketici kullanacağını görüntüleyin. Birden çok görünüm ve tablo öğelerde tıklatırken CTRL tuşunu basılı tutarak seçebileceğinizi unutmayın. Tıklayın **Tamam** tamamlanması.
 

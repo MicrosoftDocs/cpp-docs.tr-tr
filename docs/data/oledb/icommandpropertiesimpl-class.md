@@ -27,16 +27,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b31a023e39241a5393fbb9f36177ca42f88fd57e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 432fb57b1505733b4f9cbda4e558699a8108a3ad
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070905"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084002"
 ---
 # <a name="icommandpropertiesimpl-class"></a>ICommandPropertiesImpl Sınıfı
 
-Bir uygulamasını sağlar [ICommandProperties](/previous-versions/windows/desktop/ms723044\(v=vs.85\)) arabirimi.  
+Bir uygulamasını sağlar [ICommandProperties](/previous-versions/windows/desktop/ms723044) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -86,7 +86,7 @@ STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
 
@@ -105,7 +105,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497) içinde *OLE DB Programcının Başvurusu*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 

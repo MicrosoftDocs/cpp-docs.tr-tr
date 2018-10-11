@@ -102,12 +102,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 17e353f044a3b003736589f52c538101e18fd7ea
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b495a756cbccc88f00c42dc8de78bf80a39f4b7a
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085556"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083366"
 ---
 # <a name="irowsetimpl-class"></a>IRowsetImpl Sınıfı
 
@@ -173,7 +173,7 @@ Sağlayıcı tarafından tutulan tüm olan satır işleyicilerini depolama birim
   
 ## <a name="remarks"></a>Açıklamalar  
 
-[IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\)) temel satır kümesi arabirimidir.  
+[IRowset](/previous-versions/windows/desktop/ms720986) temel satır kümesi arabirimidir.  
 
 ## <a name="addrefrows"></a> Irowsetımpl::addrefrows
 
@@ -190,7 +190,7 @@ STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="createrow"></a> Irowsetımpl::createrow
 
@@ -233,7 +233,7 @@ STDMETHOD(GetData )(HROW hRow,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: ['yı](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: ['yı](/previous-versions/windows/desktop/ms716988) içinde *OLE DB Programcının Başvurusu*.  
   
 Bazı parametreler karşılık *OLE DB Programcının Başvurusu* açıklanan farklı adlar parametrelerinin `IRowset::GetData`:  
   
@@ -266,7 +266,7 @@ virtual DBSTATUS GetDBStatus(RowClass* currentRow,
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
-[DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) sütunun bayrakları. 
+[DBSTATUS](/previous-versions/windows/desktop/ms722617) sütunun bayrakları. 
 
 ## <a name="getnextrows"></a> Irowsetımpl::GetNextRows
 
@@ -284,7 +284,7 @@ STDMETHOD(GetNextRows )(HCHAPTER hReserved,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [IRowset::GetNextRows](/previous-versions/windows/desktop/ms709827\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
+Bkz: [IRowset::GetNextRows](/previous-versions/windows/desktop/ms709827) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="irowsetimpl"></a> Irowsetımpl::ırowsetımpl
 
@@ -316,7 +316,7 @@ HRESULT RefRows(DBCOUNTITEM cRows,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -338,7 +338,7 @@ STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="restartposition"></a> Irowsetımpl::restartposition
 
@@ -352,7 +352,7 @@ STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
 
@@ -373,7 +373,7 @@ virtual HRESULT SetDBStatus(DBSTATUS* statusFlags,
 #### <a name="parameters"></a>Parametreler  
 
 *statusFlags*<br/>
-[DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) bayraklar için sütunu ayarlayın.  
+[DBSTATUS](/previous-versions/windows/desktop/ms722617) bayraklar için sütunu ayarlayın.  
   
 *currentRow*<br/>
 Geçerli satır.  

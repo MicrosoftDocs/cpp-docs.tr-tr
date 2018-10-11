@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b64e92eaca38743f0bc9de31f9be7684271c4674
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9783da47a22260f0edbe5ddf6d8f5021aae31e5c
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374379"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083807"
 ---
 # <a name="application-information-and-management"></a>Uygulama Bilgileri ve Yönetimi
 
@@ -591,7 +591,7 @@ Bir yol belirtilmezse ve dosya adı uzantısı atlanırsa, varsayılan uzantı. 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanılabilir bir tanıtıcı döndürür [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212) DLL işlevin adresini almak için. `AfxLoadLibrary` Ayrıca diğer yürütülebilir modüllerin eşlemek için kullanılabilir.
+Kullanılabilir bir tanıtıcı döndürür [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) DLL işlevin adresini almak için. `AfxLoadLibrary` Ayrıca diğer yürütülebilir modüllerin eşlemek için kullanılabilir.
 
 Her işlem, her yüklenen kitaplık modülü için bir başvuru sayısını tutar. Her zaman bu başvuru sayısının artırılması `AfxLoadLibrary` çağrılır ve her zaman azaltılır `AfxFreeLibrary` çağrılır. Başvuru sayısı sıfır ulaştığında, çağıran işlemin adres alanından eşlenmemiş bir modüldür, tanıtıcı artık geçerli değil.
 

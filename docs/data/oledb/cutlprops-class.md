@@ -41,12 +41,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e1f22b0206499b227b8b7812e004e46f565d803a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 87ef1c3f3867b7cd5890a29db3a8c45300ebdd58
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46105420"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083404"
 ---
 # <a name="cutlprops-class"></a>CUtlProps Sınıfı
 
@@ -132,7 +132,7 @@ virtual HRESULT CUtlPropsBase::IsValidValue(ULONG /* iCurSet */,
 Özellik kümesi dizi dizine; yalnızca bir özellik kümesi ise sıfır.  
   
 *pDBProp*<br/>
-Özellik kimliği ve yeni değer bir [DBPROP](/previous-versions/windows/desktop/ms717970\(v=vs.85\)) yapısı.  
+Özellik kimliği ve yeni değer bir [DBPROP](/previous-versions/windows/desktop/ms717970) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -194,7 +194,7 @@ virtual HRESULT OnPropertyChanged(ULONG /* iCurSet */,
 Özellik kümesi dizi dizine; yalnızca bir özellik kümesi ise sıfır.  
   
 *pDBProp*<br/>
-Özellik kimliği ve yeni değer bir [DBPROP](/previous-versions/windows/desktop/ms717970\(v=vs.85\)) yapısı.  
+Özellik kimliği ve yeni değer bir [DBPROP](/previous-versions/windows/desktop/ms717970) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 

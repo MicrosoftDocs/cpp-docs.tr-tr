@@ -55,16 +55,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2669f7ff0756c0450e64b1b37624bb95f2c1216e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dd5b08ed22c715a91a1f9fd97749fa6293fa75bb
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111296"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084171"
 ---
 # <a name="cdberrorinfo-class"></a>CDBErrorInfo Sınıfı
 
-OLE DB kullanarak OLE DB hata işleme için destek sağlayan [IErrorRecords](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) arabirimi.  
+OLE DB kullanarak OLE DB hata işleme için destek sağlayan [IErrorRecords](/previous-versions/windows/desktop/ms718112) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -83,10 +83,10 @@ class CDBErrorInfo
 |||  
 |-|-|  
 |[GetAllErrorInfo](#getallerrorinfo)|Bir hata kaydında bulunan tüm hata bilgilerini döndürür.|  
-|[GetBasicErrorInfo](#getbasicerrorinfo)|Çağrıları [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) belirtilen hata hakkındaki temel bilgileri döndürmek için.|  
-|[GetCustomErrorObject](#getcustomerrorobject)|Çağrıları [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) bir özel hata nesnesi üzerinde bir arabirim işaretçisi döndürülecek.|  
-|[GetErrorInfo](#geterrorinfo)|Çağrıları [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) döndürülecek bir `IErrorInfo` belirtilen kayıt arabirim işaretçisi.|  
-|[GetErrorParameters](#geterrorparameters)|Çağrıları [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) hata parametreleri dönün.|  
+|[GetBasicErrorInfo](#getbasicerrorinfo)|Çağrıları [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907) belirtilen hata hakkındaki temel bilgileri döndürmek için.|  
+|[GetCustomErrorObject](#getcustomerrorobject)|Çağrıları [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417) bir özel hata nesnesi üzerinde bir arabirim işaretçisi döndürülecek.|  
+|[GetErrorInfo](#geterrorinfo)|Çağrıları [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230) döndürülecek bir `IErrorInfo` belirtilen kayıt arabirim işaretçisi.|  
+|[GetErrorParameters](#geterrorparameters)|Çağrıları [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793) hata parametreleri dönün.|  
 |[GetErrorRecords](#geterrorrecords)|Belirtilen nesne için hata kayıtları alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -133,7 +133,7 @@ HRESULT GetAllErrorInfo(ULONG ulRecordNum,
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
-Başarılıysa S_OK. Bkz: [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* diğer dönüş değerleri için.  
+Başarılıysa S_OK. Bkz: [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230) içinde *OLE DB Programcının Başvurusu* diğer dönüş değerleri için.  
   
 ### <a name="remarks"></a>Açıklamalar  
 
@@ -145,7 +145,7 @@ Başarılıysa S_OK. Bkz: [IErrorRecords::GetErrorInfo](/previous-versions/windo
 
 ## <a name="getbasicerrorinfo"></a> Cdberrorınfo::getbasicerrorınfo
 
-Çağrıları [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) sağlayıcıya özgü hata numarası ve dönüş kodu gibi bir hata ile ilgili temel bilgileri döndürmek için.  
+Çağrıları [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907) sağlayıcıya özgü hata numarası ve dönüş kodu gibi bir hata ile ilgili temel bilgileri döndürmek için.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -156,7 +156,7 @@ HRESULT GetBasicErrorInfo(ULONG ulRecordNum,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -164,7 +164,7 @@ Standart bir HRESULT.
 
 ## <a name="getcustomerrorobject"></a> Cdberrorınfo::getcustomerrorobject
 
-Çağrıları [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) bir özel hata nesnesi üzerinde bir arabirim işaretçisi döndürülecek.  
+Çağrıları [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417) bir özel hata nesnesi üzerinde bir arabirim işaretçisi döndürülecek.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -175,7 +175,7 @@ HRESULT GetCustomErrorObject(ULONG ulRecordNum,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -183,7 +183,7 @@ Standart bir HRESULT.
 
 ## <a name="geterrorinfo"></a> Cdberrorınfo::geterrorınfo
 
-Çağrıları [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) döndürülecek bir [IErrorInfo](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) belirtilen kayıt arabirim işaretçisi.  
+Çağrıları [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230) döndürülecek bir [IErrorInfo](/previous-versions/windows/desktop/ms718112) belirtilen kayıt arabirim işaretçisi.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -194,7 +194,7 @@ HRESULT GetErrorInfo(ULONG ulRecordNum,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -202,7 +202,7 @@ Standart bir HRESULT.
 
 ## <a name="geterrorparameters"></a> Cdberrorınfo::geterrorparameters
 
-Çağrıları [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) hata parametreleri dönün.  
+Çağrıları [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793) hata parametreleri dönün.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -213,7 +213,7 @@ HRESULT GetErrorParameters(ULONG ulRecordNum,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
