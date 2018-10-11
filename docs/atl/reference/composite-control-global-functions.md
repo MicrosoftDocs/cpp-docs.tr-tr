@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54e4ab00a0d0df90601d06d9e2ffa100d82d4c03
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dee59f5e86cddeec47da47c648b0cf12789cc85a
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46037365"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084106"
 ---
 # <a name="composite-control-global-functions"></a>Bileşik Denetim genel işlevleri
 
@@ -81,7 +81,7 @@ ATLAPI_(int) AtlAxDialogBox(
 [in] İletişim kutusu şablonu, yürütülebilir dosya içeren modül bir örneğini tanımlar.
 
 *lpTemplateName*<br/>
-[in] İletişim kutusu şablonu tanımlar. Bu parametre, iletişim kutusu şablonunun adını belirten bir null ile sonlandırılmış dize işaretçisi veya iletişim kutusu şablonu kaynak tanımlayıcısını belirten bir tamsayı değeri olur. Parametre bir kaynak tanımlayıcısı belirtiyorsa, kendi dwpoint sıfır olmalıdır ve onun alt sıra sözcük tanımlayıcı içermelidir. Kullanabileceğiniz [MAKEINTRESOURCE](https://msdn.microsoft.com/library/windows/desktop/ms648029) makrosu bu değeri oluşturun.
+[in] İletişim kutusu şablonu tanımlar. Bu parametre, iletişim kutusu şablonunun adını belirten bir null ile sonlandırılmış dize işaretçisi veya iletişim kutusu şablonu kaynak tanımlayıcısını belirten bir tamsayı değeri olur. Parametre bir kaynak tanımlayıcısı belirtiyorsa, kendi dwpoint sıfır olmalıdır ve onun alt sıra sözcük tanımlayıcı içermelidir. Kullanabileceğiniz [MAKEINTRESOURCE](/windows/desktop/api/winuser/nf-winuser-makeintresourcea) makrosu bu değeri oluşturun.
 
 *hWndParent*<br/>
 [in] İletişim kutusunun sahibi penceresini tanımlar.
@@ -128,7 +128,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 [in] İletişim kutusu şablonu, yürütülebilir dosya içeren modül bir örneğini tanımlar.
 
 *lpTemplateName*<br/>
-[in] İletişim kutusu şablonu tanımlar. Bu parametre, iletişim kutusu şablonunun adını belirten bir null ile sonlandırılmış dize işaretçisi veya iletişim kutusu şablonu kaynak tanımlayıcısını belirten bir tamsayı değeri olur. Parametre bir kaynak tanımlayıcısı belirtiyorsa, kendi dwpoint sıfır olmalıdır ve onun alt sıra sözcük tanımlayıcı içermelidir. Kullanabileceğiniz [MAKEINTRESOURCE](https://msdn.microsoft.com/library/windows/desktop/ms648029) makrosu bu değeri oluşturun.
+[in] İletişim kutusu şablonu tanımlar. Bu parametre, iletişim kutusu şablonunun adını belirten bir null ile sonlandırılmış dize işaretçisi veya iletişim kutusu şablonu kaynak tanımlayıcısını belirten bir tamsayı değeri olur. Parametre bir kaynak tanımlayıcısı belirtiyorsa, kendi dwpoint sıfır olmalıdır ve onun alt sıra sözcük tanımlayıcı içermelidir. Kullanabileceğiniz [MAKEINTRESOURCE](/windows/desktop/api/winuser/nf-winuser-makeintresourcea) makrosu bu değeri oluşturun.
 
 *hWndParent*<br/>
 [in] İletişim kutusunun sahibi penceresini tanımlar.

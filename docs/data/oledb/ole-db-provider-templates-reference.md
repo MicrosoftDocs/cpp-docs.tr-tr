@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3bafe1aa7197ef037bdd54b7215173866e8c15d3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8ede88e44c957ae34e9bb9c3f451e0f058310346
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039159"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083560"
 ---
 # <a name="ole-db-provider-templates-reference"></a>OLE DB Sağlayıcı Şablonları Başvurusu
 
@@ -63,7 +63,7 @@ Implements `IDBSchemaRowset` arabirimi ve şablonlaştırılmış oluşturucu i�
 Açar ve tek bir temel tablo veya dizini tablosundan tüm satırları içeren bir satır kümesi döndürür. Bir oturum nesnesi için zorunlu arabirim.  
   
 [IRowsetChangeImpl](../../data/oledb/irowsetchangeimpl-class.md)<br/>
-OLE DB uygulayan [IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\)) var olan satır, satırları silme ve yeni satır ekleyerek sütunların değerlerinin güncelleştirme sağlayan arabirim.  
+OLE DB uygulayan [IRowsetChange](/previous-versions/windows/desktop/ms715790) var olan satır, satırları silme ve yeni satır ekleyerek sütunların değerlerinin güncelleştirme sağlayan arabirim.  
   
 [Irowsetcreatorımpl](../../data/oledb/irowsetcreatorimpl-class.md)<br/>
 Bu sınıf devraldığı [IObjectWithSite](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite) ve geçersiz kılmaları [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite). `IRowsetCreatorImpl` aynı işlevleri gerçekleştiren `IObjectWithSite` ancak OLE DB özelliklerini de etkinleştirir `DBPROPCANSCROLLBACKWARDS` ve `DBPROPCANFETCHBACKWARDS`.  
@@ -78,13 +78,13 @@ Bir uygulamasını sağlar `IRowset` temel satır kümesi arabirimi olan arabiri
 Implements özelliğini kullanarak satır kümesi özelliklerini komut Sınıfınız içinde tanımlanan eşlemesi ayarlayın. Satır kümeleri zorunlu arabirimde.  
   
 [IRowsetLocateImpl](../../data/oledb/irowsetlocateimpl-class.md)<br/>
-OLE DB uygulayan [IRowsetLocate](/previous-versions/windows/desktop/ms721190\(v=vs.85\)) arabirimi, bir satır kümesinden rastgele satırları getirir. OLE DB yer işaretleri bir satır kümesinde desteklemek için bu sınıftan devralınan satır kümesi olun.  
+OLE DB uygulayan [IRowsetLocate](/previous-versions/windows/desktop/ms721190) arabirimi, bir satır kümesinden rastgele satırları getirir. OLE DB yer işaretleri bir satır kümesinde desteklemek için bu sınıftan devralınan satır kümesi olun.  
   
 [IRowsetNotifyCP](../../data/oledb/irowsetnotifycp-class.md)<br/>
-Uygular bağlantı noktası üzerinde dinleyici bildirmek için işlevleri yayın `IID_IRowsetNotify` değişiklik kümesi içeriği. Bildirimleri işleme tüketiciler uygulamak [IRowsetNotify](/previous-versions/windows/desktop/ms712959\(v=vs.85\)) ve bu bağlantı noktasında kaydedin.  
+Uygular bağlantı noktası üzerinde dinleyici bildirmek için işlevleri yayın `IID_IRowsetNotify` değişiklik kümesi içeriği. Bildirimleri işleme tüketiciler uygulamak [IRowsetNotify](/previous-versions/windows/desktop/ms712959) ve bu bağlantı noktasında kaydedin.  
   
 [IRowsetUpdateImpl](../../data/oledb/irowsetupdateimpl-class.md)<br/>
-OLE DB uygulayan [IRowsetUpdate](/previous-versions/windows/desktop/ms714401\(v=vs.85\)) yapılan değişikliklerle iletimini gecikme tüketiciler sağlayan arabirimi [IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\)) için veri kaynağını seçin ve iletimden önce değişiklikleri geri al.  
+OLE DB uygulayan [IRowsetUpdate](/previous-versions/windows/desktop/ms714401) yapılan değişikliklerle iletimini gecikme tüketiciler sağlayan arabirimi [IRowsetChange](/previous-versions/windows/desktop/ms715790) için veri kaynağını seçin ve iletimden önce değişiklikleri geri al.  
   
 ## <a name="command-classes"></a>Komut sınıfları  
 
@@ -120,7 +120,7 @@ OLE DB özelliği arabirimleri çeşitli özelliklerini uygular (örneğin, `IDB
   
 [Ierrorrecordsımpl](../../data/oledb/ierrorrecordsimpl-class.md)  
   
-OLE DB uygulayan [IErrorRecords](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) kayıtları ekleme ve veri üyesi kayıtlar alınırken arabirimi.  
+OLE DB uygulayan [IErrorRecords](/previous-versions/windows/desktop/ms718112) kayıtları ekleme ve veri üyesi kayıtlar alınırken arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 

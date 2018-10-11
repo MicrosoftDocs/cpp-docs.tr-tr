@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 177d4160972f521eeeaee56087c29e18433be87e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f673f0212884fce33069f044b34d5396cf72b7c3
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440244"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49081942"
 ---
 # <a name="deriving-a-class-from-cobject"></a>CObject'ten Sınıf Türetme
 
@@ -69,7 +69,7 @@ Aşağıdaki tablo, seri hale getirme ve çalışma zamanı bilgileri destekleme
 
      [!code-cpp[NVC_MFCCObjectSample#1](../mfc/codesnippet/cpp/deriving-a-class-from-cobject_1.h)]
 
-Normalde, ancak, bazı geçersiz kılmak isteyebilirsiniz `CObject`ait yeni sınıfınıza ayrıntılarını işlemek için üye işlevleri. Örneğin, genellikle geçersiz kılmak istediğiniz `Dump` işlevi `CObject` sınıfınızın içeriği için hata ayıklama çıktısı sağlamak için. Geçersiz kılma hakkında ayrıntılar için `Dump`, makaleye göz atın [Tanılama: nesne içeriğini dökme](/previous-versions/visualstudio/visual-studio-2010/sc15kz85\(v=vs.100\)). Geçersiz kılmak isteyebilirsiniz `AssertValid` işlevi `CObject` özelleştirilmiş veri üyeleri sınıf nesnelerinin tutarlılığını doğrulamak için sınama sağlamak için. Geçersiz kılma açıklamasını `AssertValid`, bkz: [MFC assert_valıd ve CObject::AssertValid](/previous-versions/visualstudio/visual-studio-2010/38z04tfa\(v=vs.100\)).
+Normalde, ancak, bazı geçersiz kılmak isteyebilirsiniz `CObject`ait yeni sınıfınıza ayrıntılarını işlemek için üye işlevleri. Örneğin, genellikle geçersiz kılmak istediğiniz `Dump` işlevi `CObject` sınıfınızın içeriği için hata ayıklama çıktısı sağlamak için. Geçersiz kılma hakkında ayrıntılar için `Dump`, makaleye göz atın [Tanılama: nesne içeriğini dökme](/previous-versions/visualstudio/visual-studio-2010/sc15kz85). Geçersiz kılmak isteyebilirsiniz `AssertValid` işlevi `CObject` özelleştirilmiş veri üyeleri sınıf nesnelerinin tutarlılığını doğrulamak için sınama sağlamak için. Geçersiz kılma açıklamasını `AssertValid`, bkz: [MFC assert_valıd ve CObject::AssertValid](/previous-versions/visualstudio/visual-studio-2010/38z04tfa).
 
 Makaleyi [düzeyleri işlevi belirterek](../mfc/specifying-levels-of-functionality.md) işlevsellik, çalışma zamanı sınıf bilgileri, dinamik Nesne oluşturma ve seri hale getirme gibi diğer düzeylerini belirtin açıklar.
 

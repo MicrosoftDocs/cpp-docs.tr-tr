@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 263a90710d2103c4ea97e6c56da67d676ba7366b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7f9cbfce7e04040f0e1618148a3c258f21bb84b8
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222086"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083469"
 ---
 # <a name="converting-projects-from-mixed-mode-to-pure-intermediate-language"></a>Projeleri karışık moddan saf Ara dile dönüştürme
 
@@ -84,26 +84,26 @@ Destekleyen Visual C++ Derleyici Araç Takımı'nın önceki bir sürümünü ku
 
 3. Tüm yönetilmeyen türlerini kaldırın:
 
-   Uygun yerlerde yapılarının başvuruları yönetilmeyen türler yerine [sistem](https://msdn.microsoft.com/library/system.appdomainmanager.appdomainmanager.aspx) ad alanı. Ortak yönetilen türleri aşağıdaki tabloda listelenmiştir:
+   Uygun yerlerde yapılarının başvuruları yönetilmeyen türler yerine [sistem](/dotnet/api/system) ad alanı. Ortak yönetilen türleri aşağıdaki tabloda listelenmiştir:
 
    |Yapı|Açıklama|
    |---------------|-----------------|
-   |[Boole değeri](https://msdn.microsoft.com/library/system.boolean\(v=vs.140\).aspx)|Bir Boolean değeri temsil eder.|
-   |[Bayt](https://msdn.microsoft.com/library/system.byte\(v=vs.140\).aspx)|Bir 8 bit işaretsiz tamsayıyı temsil eder.|
-   |[Char](https://msdn.microsoft.com/library/system.char\(v=vs.140\).aspx)|Bir Unicode karakteri temsil eder.|
-   |[Tarih/saat](https://msdn.microsoft.com/library/system.datetime.datetime.aspx)|Anlık, genellikle bir tarih ve saat olarak ifade edilen zaman içinde temsil eder.|
-   |[Ondalık](https://msdn.microsoft.com/library/system.decimal\(v=vs.140\).aspx)|Ondalık sayıyı temsil eder.|
-   |[çift](https://msdn.microsoft.com/library/system.double\(v=vs.140\).aspx)|Çift duyarlıklı kayan nokta numarasını temsil eder.|
-   |[GUID](https://msdn.microsoft.com/library/system.guid\(v=vs.140\).aspx)|Bir genel benzersiz tanıtıcısı (GUID) temsil eder.|
-   |[Int16](https://msdn.microsoft.com/library/system.int16\(v=vs.140\).aspx)|Bir 16 bit işaretli tamsayıyı temsil eder.|
-   |[Int32](https://msdn.microsoft.com/library/system.int32\(v=vs.140\).aspx)|32-bit imzalı bir tamsayı temsil eder.|
-   |[Int64](https://msdn.microsoft.com/library/system.int64\(v=vs.140\).aspx)|64-bit imzalı bir tamsayı temsil eder.|
-   |[IntPtr](https://msdn.microsoft.com/library/system.intptr\(v=vs.140\).aspx)|Bir işaretçi veya bir tanıtıcı temsil etmek için kullanılan bir platforma özgü türü.|
-   |[SByte](https://msdn.microsoft.com/library/system.byte.aspx)|Bir 8 bit işaretli tamsayıyı temsil eder.|
-   |[Tek](https://msdn.microsoft.com/library/system.single.aspx)|Tek duyarlıklı kayan nokta numarasını temsil eder.|
-   |[Zaman aralığı](https://msdn.microsoft.com/library/system.timespan\(v=vs.140\).aspx)|Bir zaman aralığını temsil eder.|
-   |[UInt16](https://msdn.microsoft.com/library/system.uint16\(v=vs.140\).aspx)|Bir 16 bit işaretsiz tamsayıyı temsil eder.|
-   |[UInt32](https://msdn.microsoft.com/library/system.uint32\(v=vs.140\).aspx)|Bir 32-bit işaretsiz tamsayıyı temsil eder.|
-   |[UInt64](https://msdn.microsoft.com/library/system.uint64\(v=vs.140\).aspx)|Bir 64-bit işaretsiz tamsayıyı temsil eder.|
-   |[UIntPtr](https://msdn.microsoft.com/library/system.uintptr\(v=vs.140\).aspx)|Bir işaretçi veya bir tanıtıcı temsil etmek için kullanılan bir platforma özgü türü.|
-   |[Geçersiz kılma](https://msdn.microsoft.com/library/system.void\(v=vs.140\).aspx)|Bir değer döndürmeyen bir yöntem gösterir. diğer bir deyişle, yöntemin void dönüş türüne sahip.|
+   |[Boole değeri](/dotnet/api/system.boolean)|Bir Boolean değeri temsil eder.|
+   |[Bayt](/dotnet/api/system.byte)|Bir 8 bit işaretsiz tamsayıyı temsil eder.|
+   |[Char](/dotnet/api/system.char)|Bir Unicode karakteri temsil eder.|
+   |[Tarih/saat](/dotnet/api/system.datetime.datetime.aspx)|Anlık, genellikle bir tarih ve saat olarak ifade edilen zaman içinde temsil eder.|
+   |[Ondalık](/dotnet/api/system.decimal)|Ondalık sayıyı temsil eder.|
+   |[çift](/dotnet/api/system.double)|Çift duyarlıklı kayan nokta numarasını temsil eder.|
+   |[GUID](/dotnet/api/system.guid)|Bir genel benzersiz tanıtıcısı (GUID) temsil eder.|
+   |[Int16](/dotnet/api/system.int16)|Bir 16 bit işaretli tamsayıyı temsil eder.|
+   |[Int32](/dotnet/api/system.int32)|32-bit imzalı bir tamsayı temsil eder.|
+   |[Int64](/dotnet/api/system.int64)|64-bit imzalı bir tamsayı temsil eder.|
+   |[IntPtr](/dotnet/api/system.intptr)|Bir işaretçi veya bir tanıtıcı temsil etmek için kullanılan bir platforma özgü türü.|
+   |[SByte](/dotnet/api/system.byte.aspx)|Bir 8 bit işaretli tamsayıyı temsil eder.|
+   |[Tek](/dotnet/api/system.single.aspx)|Tek duyarlıklı kayan nokta numarasını temsil eder.|
+   |[Zaman aralığı](/dotnet/api/system.timespan)|Bir zaman aralığını temsil eder.|
+   |[UInt16](/dotnet/api/system.uint16)|Bir 16 bit işaretsiz tamsayıyı temsil eder.|
+   |[UInt32](/dotnet/api/system.uint32)|Bir 32-bit işaretsiz tamsayıyı temsil eder.|
+   |[UInt64](/dotnet/api/system.uint64)|Bir 64-bit işaretsiz tamsayıyı temsil eder.|
+   |[UIntPtr](/dotnet/api/system.uintptr)|Bir işaretçi veya bir tanıtıcı temsil etmek için kullanılan bir platforma özgü türü.|
+   |[Geçersiz kılma](/dotnet/api/system.void)|Bir değer döndürmeyen bir yöntem gösterir. diğer bir deyişle, yöntemin void dönüş türüne sahip.|

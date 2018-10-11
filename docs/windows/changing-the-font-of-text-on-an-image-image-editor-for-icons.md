@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5a49cb4fa88b3a014d79969cc86fc03fa1136efa
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5491f8a761eee80595265150ee0cb89c682b3079
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405352"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084054"
 ---
 # <a name="changing-the-font-of-text-on-an-image-image-editor-for-icons"></a>Görüntüdeki Metnin Yazı Tipini Değiştirme (Simgeler İçin Görüntü Düzenleyicisi)
 
@@ -32,7 +32,7 @@ Aşağıdaki yordam nasıl bir örneğidir:
 
 ### <a name="to-change-the-font-of-text-on-an-image"></a>Görüntüdeki metnin yazı tipini değiştirmek için
 
-1. Bir C++ Windows Forms uygulaması oluşturun. Ayrıntılar için bkz [bir Windows uygulaması projesi oluşturma](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5\(v=vs.100\)). Bir `app.ico` dosya varsayılan olarak projenize eklenir.
+1. Bir C++ Windows Forms uygulaması oluşturun. Ayrıntılar için bkz [bir Windows uygulaması projesi oluşturma](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5). Bir `app.ico` dosya varsayılan olarak projenize eklenir.
 
 2. İçinde **Çözüm Gezgini**, dosya n app.ico çift tıklayın. [Resim Düzenleyicisi](../windows/image-editor-for-icons.md) açılır.
 

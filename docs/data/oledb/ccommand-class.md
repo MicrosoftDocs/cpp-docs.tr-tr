@@ -60,12 +60,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e9cc04c6d9e270e0c3b5c3bd02e05b426ccf4c53
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: de27441658c4c0537384447028a0383a0d87756b
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060934"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083273"
 ---
 # <a name="ccommand-class"></a>CCommand Sınıfı
 
@@ -92,7 +92,7 @@ Erişimci sınıf türü (gibi `CDynamicParameterAccessor`, `CDynamicStringAcces
 Satır kümesi sınıfı türü (gibi `CArrayRowset` veya `CNoRowset`) kullanmak için komutu istiyor. Varsayılan, `CRowset` değeridir.  
   
 *TMultiple*<br/>
-Birden çok sonuç döndüren bir OLE DB komutu kullanmak için belirtin [CMultipleResults](../../data/oledb/cmultipleresults-class.md). Aksi takdirde kullanın [CNoMultipleResults](../../data/oledb/cnomultipleresults-class.md). Ayrıntılar için bkz [IMultipleResults](/previous-versions/windows/desktop/ms721289\(v=vs.85\)).  
+Birden çok sonuç döndüren bir OLE DB komutu kullanmak için belirtin [CMultipleResults](../../data/oledb/cmultipleresults-class.md). Aksi takdirde kullanın [CNoMultipleResults](../../data/oledb/cnomultipleresults-class.md). Ayrıntılar için bkz [IMultipleResults](/previous-versions/windows/desktop/ms721289).  
 
 ## <a name="requirements"></a>Gereksinimler  
 
@@ -224,13 +224,13 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 [in] Oturumda yürütüleceği komutu.  
   
 *wszCommand*<br/>
-[in] Komutu yürütmek için bir Unicode dize olarak geçirildi. Kullanırken NULL olabilir `CAccessor`, bu durumda komutu için geçirilen değer alınacağı konum [DEFINE_COMMAND](../../data/oledb/define-command.md) makrosu. Bkz: [ICommand::Execute](/previous-versions/windows/desktop/ms718095\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* Ayrıntılar için.  
+[in] Komutu yürütmek için bir Unicode dize olarak geçirildi. Kullanırken NULL olabilir `CAccessor`, bu durumda komutu için geçirilen değer alınacağı konum [DEFINE_COMMAND](../../data/oledb/define-command.md) makrosu. Bkz: [ICommand::Execute](/previous-versions/windows/desktop/ms718095) içinde *OLE DB Programcının Başvurusu* Ayrıntılar için.  
   
 *szCommand*<br/>
 [in] Aynı *wszCommand* dışında bu parametre bir ANSI komut dizesi alır. Dördüncü formu bu yöntemin bir NULL değer alabilir. Ayrıntılar için bu konunun ilerleyen bölümlerindeki "Açıklamalar" bakın.  
   
 *pPropSet*<br/>
-[in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.  
+[in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.  
   
 *pRowsAffected*<br/>
 [daraltma/genişletme] Burada bir komut tarafından etkilenen satır sayısı döndürülür bellek işaretçisi. Varsa  *\*pRowsAffected* NULL ise hiçbir satır sayısı döndürülür. Aksi takdirde, `Open` ayarlar  *\*pRowsAffected* aşağıdaki koşullara uygun:  
@@ -242,13 +242,13 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 |Komutu değil güncelleştirin, silin veya Satır Ekle|*\*pRowsAffected* tanımsızdır.|  
   
 *guidCommand*<br/>
-[in] Komut metni ayrıştırma söz dizimi ve genel kurallar için kullanılacak sağlayıcıyı belirtir bir GUID. Bkz: [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825\(v=vs.85\)) ve [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* Ayrıntılar için.  
+[in] Komut metni ayrıştırma söz dizimi ve genel kurallar için kullanılacak sağlayıcıyı belirtir bir GUID. Bkz: [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825) ve [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757) içinde *OLE DB Programcının Başvurusu* Ayrıntılar için.  
   
 *bBind*<br/>
 [in] Komut yürütülen sonra otomatik olarak bağlamak belirtir. Varsayılan değer **true**, otomatik olarak bağlanacak komutu neden olur. Ayarı *bBind* için **false** böylece el ile bağlama komutu, otomatik bağlama engeller. (El ile OLAP kullanıcılara belirli ilgilenilen bağlamadır.)  
   
 *ulPropSets*<br/>
-[in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) yapıları geçirilen *pPropSet* bağımsız değişken.  
+[in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367) yapıları geçirilen *pPropSet* bağımsız değişken.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -271,7 +271,7 @@ Dördüncü biçiminde kullanın `Open` ne zaman bir komut zaten oluşturduğunu
 
 ## <a name="create"></a> CCommand::Create
 
-Çağrıları [CCommand::CreateCommand](../../data/oledb/ccommand-createcommand.md) belirtilen oturum için bir komut oluşturmak için daha sonra çağırır [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709825\(v=vs.85\)) komut metni belirtmek için.  
+Çağrıları [CCommand::CreateCommand](../../data/oledb/ccommand-createcommand.md) belirtilen oturum için bir komut oluşturmak için daha sonra çağırır [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709825) komut metni belirtmek için.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -297,7 +297,7 @@ HRESULT CCommandBase::Create(const CSession& session,
 [in] Komut dizesi, ANSI metin işaretçisi.  
   
 *guidCommand*<br/>
-[in] Komut metni ayrıştırma söz dizimi ve genel kurallar için kullanılacak sağlayıcıyı belirtir bir GUID. Diyalektler açıklaması için bkz: [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+[in] Komut metni ayrıştırma söz dizimi ve genel kurallar için kullanılacak sağlayıcıyı belirtir bir GUID. Diyalektler açıklaması için bkz: [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -344,7 +344,7 @@ HRESULT CCommandBase::GetParameterInfo(DB_UPARAMS* pParams,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [ICommandWithParameters::GetParameterInfo](/previous-versions/windows/desktop/ms714917\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [ICommandWithParameters::GetParameterInfo](/previous-versions/windows/desktop/ms714917) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -371,7 +371,7 @@ Standart bir HRESULT.
   
 ### <a name="remarks"></a>Açıklamalar  
 
-Bu yöntem, OLE DB yöntemi sarmalar [ICommandPrepare::Prepare](/previous-versions/windows/desktop/ms718370\(v=vs.85\)).  
+Bu yöntem, OLE DB yöntemi sarmalar [ICommandPrepare::Prepare](/previous-versions/windows/desktop/ms718370).  
 
 ## <a name="releasecommand"></a> CCommand::ReleaseCommand
 
@@ -401,7 +401,7 @@ HRESULT CCommandBase::SetParameterInfo(DB_UPARAMS ulParams,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [ICommandWithParameters::SetParameterInfo](/previous-versions/windows/desktop/ms725393\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [ICommandWithParameters::SetParameterInfo](/previous-versions/windows/desktop/ms725393) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -423,7 +423,7 @@ Standart bir HRESULT.
   
 ### <a name="remarks"></a>Açıklamalar  
 
-Bu yöntem, OLE DB yöntemi sarmalar [ICommandPrepare::Unprepare](/previous-versions/windows/desktop/ms719635\(v=vs.85\)). 
+Bu yöntem, OLE DB yöntemi sarmalar [ICommandPrepare::Unprepare](/previous-versions/windows/desktop/ms719635). 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 

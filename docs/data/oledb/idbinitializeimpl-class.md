@@ -50,16 +50,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4f44d43d48f862ca2ca5465d5ea9ee44d0e9040e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b799b0383316c212ff2d2cd12ccac9b2b14dce0b
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46072426"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082598"
 ---
 # <a name="idbinitializeimpl-class"></a>IDBInitializeImpl Sınıfı
 
-Bir uygulamasını sağlar [IDBInitialize](/previous-versions/windows/desktop/ms713706\(v=vs.85\)) arabirimi.  
+Bir uygulamasını sağlar [IDBInitialize](/previous-versions/windows/desktop/ms713706) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -129,7 +129,7 @@ STDMETHOD(Initialize)(void);
   
 ### <a name="remarks"></a>Açıklamalar  
 
-Bkz: [IDBInitialize::Initialize](/previous-versions/windows/desktop/ms718026\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
+Bkz: [IDBInitialize::Initialize](/previous-versions/windows/desktop/ms718026) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="uninitialize"></a> Idbınitializeımpl::Uninitialize
 
@@ -143,7 +143,7 @@ STDMETHOD(Uninitialize)(void);
   
 ### <a name="remarks"></a>Açıklamalar  
 
-Bkz: [IDBInitialize::Uninitialize](/previous-versions/windows/desktop/ms719648\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
+Bkz: [IDBInitialize::Uninitialize](/previous-versions/windows/desktop/ms719648) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="dwstatus"></a> Idbınitializeımpl::m_dwstatus
 

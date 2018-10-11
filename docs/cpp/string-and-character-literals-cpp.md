@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f34bd3f1594a49737f4298316b5eb3fe08b866a3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fb88721c64666cc5b74bb51c1f92bd612b66fc4c
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038561"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083326"
 ---
 # <a name="string-and-character-literals--c"></a>Dize ve karakter değişmez değerleri (C++)
 
@@ -211,7 +211,7 @@ char u5 = '\U00000041'; // \U UCN 'A'
 
 Evrensel karakter adları yedek kod noktası aralığı D800 DFFF değerleri kodlanamıyor. Unicode vekil çifti kullanarak evrensel karakter adı belirtin. `\UNNNNNNNN`NNNNNNNN sekiz rakamlı bir kod noktası karakter olduğu. Gerekirse, derleyici bir yedek çifti oluşturur.
 
-C ++ 03, dil yalnızca evrensel karakter adları tarafından temsil edilebilir karakter kümesini izin ve geçerli Unicode karakterler gerçekten sunmadı bazı evrensel karakter adları izin verilir. Bu, C ++ 11'de standart düzeltildi. C ++ 11'de hem karakter ve dize değişmez değerleri ve tanımlayıcıları evrensel karakter adları kullanabilirsiniz.  Evrensel karakter adları hakkında daha fazla bilgi için bkz. [karakter kümesi](../cpp/character-sets.md). Unicode hakkında daha fazla bilgi için bkz. [Unicode](https://msdn.microsoft.com/library/dd374081\(v=vs.85\).aspx). Yedek çiftler hakkında daha fazla bilgi için bkz. [yedek çiftler ve Tamamlayıcı karakterler](/windows/desktop/Intl/surrogates-and-supplementary-characters).
+C ++ 03, dil yalnızca evrensel karakter adları tarafından temsil edilebilir karakter kümesini izin ve geçerli Unicode karakterler gerçekten sunmadı bazı evrensel karakter adları izin verilir. Bu, C ++ 11'de standart düzeltildi. C ++ 11'de hem karakter ve dize değişmez değerleri ve tanımlayıcıları evrensel karakter adları kullanabilirsiniz.  Evrensel karakter adları hakkında daha fazla bilgi için bkz. [karakter kümesi](../cpp/character-sets.md). Unicode hakkında daha fazla bilgi için bkz. [Unicode](https://msdn.microsoft.com/library/dd374081). Yedek çiftler hakkında daha fazla bilgi için bkz. [yedek çiftler ve Tamamlayıcı karakterler](/windows/desktop/Intl/surrogates-and-supplementary-characters).
 
 ## <a name="string-literals"></a>Dize sabit değerleri
 

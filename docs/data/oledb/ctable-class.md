@@ -24,12 +24,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c94152a9322b64acafe91e1fb0eb34ab82aa2902
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4548e319d7a85c547b0e750d040bdc6b6d7bbba5
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081305"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083911"
 ---
 # <a name="ctable-class"></a>CTable Sınıfı
 
@@ -106,10 +106,10 @@ HRESULT Open(const CSession& session,
 [in] `DBID` Açmak için tablo.  
   
 *pPropSet*<br/>
-[in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde. Varsayılan değeri NULL özellik belirtir.  
+[in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde. Varsayılan değeri NULL özellik belirtir.  
   
 *ulPropSets*<br/>
-[in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) yapıları geçirilen *pPropSet* bağımsız değişken.  
+[in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367) yapıları geçirilen *pPropSet* bağımsız değişken.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -117,7 +117,7 @@ Standart bir HRESULT.
   
 ### <a name="remarks"></a>Açıklamalar  
 
-Daha fazla ayrıntı için [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Daha fazla ayrıntı için [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724) içinde *OLE DB Programcının Başvurusu*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 

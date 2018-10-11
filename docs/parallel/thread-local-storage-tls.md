@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6744fdd80e16e292399a261e10dc6b974af1dca4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b271ed2c2af94e37edcbabb6611cda967f9587c7
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371933"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49081877"
 ---
 # <a name="thread-local-storage-tls"></a>İş Parçacığında Yerel Depolama (TLS)
 
@@ -114,7 +114,7 @@ Aşağıdaki yönergeler, statik olarak bildirme iş parçacığı yerel nesnele
 
      C++ iş parçacığı veri dinamik şekilde başlatılmasına iş parçacığı yerel depolama tesisi olası gelecekteki geliştirmeler nedeniyle izin vermez.
 
-- Önce Windows Vista, Windows işletim sistemlerinde `__declspec`(iş parçacığı), bazı sınırlamalar vardır. Bir DLL herhangi bir veri veya nesne olarak bildirirse `__declspec`(iş parçacığı) sebep olabilir koruma hatası dinamik olarak yüklü. DLL ile yüklendikten sonra [LoadLibrary](https://msdn.microsoft.com/library/windows/desktop/ms684175), her kod başvurduğunda sistem hatasına neden olur `__declspec`(iş parçacığı) veri. Çalışma zamanında genel değişken alan bir iş parçacığı için ayrıldığından, bu alanı boyutu hesaplanması uygulama gereksinimlerini gereksinimlerinin ve statik olarak bağlı DLL'lerin temel alır. Kullanırken `LoadLibrary`, iş parçacığı yerel değişkenleri izin vermek için bu alanı genişletilemez `__declspec`(iş parçacığı). TLS API'leri gibi kullanın [TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc), DLL'nin yüklenmesine, TLS ayırmak için bir DLL dosyanız içinde `LoadLibrary`.
+- Önce Windows Vista, Windows işletim sistemlerinde `__declspec`(iş parçacığı), bazı sınırlamalar vardır. Bir DLL herhangi bir veri veya nesne olarak bildirirse `__declspec`(iş parçacığı) sebep olabilir koruma hatası dinamik olarak yüklü. DLL ile yüklendikten sonra [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya), her kod başvurduğunda sistem hatasına neden olur `__declspec`(iş parçacığı) veri. Çalışma zamanında genel değişken alan bir iş parçacığı için ayrıldığından, bu alanı boyutu hesaplanması uygulama gereksinimlerini gereksinimlerinin ve statik olarak bağlı DLL'lerin temel alır. Kullanırken `LoadLibrary`, iş parçacığı yerel değişkenleri izin vermek için bu alanı genişletilemez `__declspec`(iş parçacığı). TLS API'leri gibi kullanın [TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc), DLL'nin yüklenmesine, TLS ayırmak için bir DLL dosyanız içinde `LoadLibrary`.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

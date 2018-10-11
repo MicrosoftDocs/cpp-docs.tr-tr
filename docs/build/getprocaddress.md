@@ -18,16 +18,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce1a287a9fa608881a39f82a2b86cfc541674218
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ef48157d1f4efb467fd33270ff05271bedd1a563
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713737"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49081896"
 ---
 # <a name="getprocaddress"></a>GetProcAddress
 
-Açıkça bir DLL'ye işlemleri [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212) DLL'de dışa aktarılan bir işlevin adresini almak için. DLL işlevini çağırmak için döndürülen işlev işaretçisini kullanırsınız. **GetProcAddress** DLL modül tanıtıcısını parametreler olarak alan (tarafından döndürülen **LoadLibrary**, `AfxLoadLibrary`, veya **GetModuleHandle**) ve ya da istediğiniz işlevin adını alır çağrı veya işlevin dışa aktarma sıra sayısı.
+Açıkça bir DLL'ye işlemleri [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) DLL'de dışa aktarılan bir işlevin adresini almak için. DLL işlevini çağırmak için döndürülen işlev işaretçisini kullanırsınız. **GetProcAddress** DLL modül tanıtıcısını parametreler olarak alan (tarafından döndürülen **LoadLibrary**, `AfxLoadLibrary`, veya **GetModuleHandle**) ve ya da istediğiniz işlevin adını alır çağrı veya işlevin dışa aktarma sıra sayısı.
 
 DLL işlevini bir işaretçiyle çağırdığınızdan emin ve derleme zamanı türü denetimi yoktur çünkü böylece etmez yığında ayrılan belleğin çağırdığınızdan ve erişim ihlaline neden işlev parametrelerinin doğru olduğundan emin olun. Tür güvenliğini sağlamaya yardımcı olacak bir yol dışarı aktarılan işlevlerin işlev prototipleri Ara ve işlev işaretçilerine ilişkin eşleşen tür tanımları oluşturmaktır. Örneğin:
 
@@ -73,7 +73,7 @@ Bağlandığınız DLL modül tanımı (.def) dosyasıyla oluşturulursa ve sır
 
 - [LoadLibrary ve AfxLoadLibrary](../build/loadlibrary-and-afxloadlibrary.md)
 
-- [FreeLibrary](https://msdn.microsoft.com/library/windows/desktop/ms683152)
+- [FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary)
 
 - [DEF Dosyaları Kullanarak DLL'den Dışarı Aktarma](../build/exporting-from-a-dll-using-def-files.md)
 

@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8dc0a477051171ad0a96124a894039c966724c6c
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 0b43f7f8010129ca7e066b712633eadef083013c
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48820543"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082325"
 ---
 # <a name="obsolete-functions"></a>Kullanılmayan işlevler
 
@@ -52,14 +52,14 @@ Belirli bir kitaplığı işlevleri artık kullanılmayan ve daha yeni eşdeğer
 |Eski işlevi|Alternatif|
 |-----------------------|-----------------|
 |`is_wctype`|[iswctype](../c-runtime-library/reference/isctype-iswctype-isctype-l-iswctype-l.md)|
-|`_loaddll`|[LoadLibrary](https://msdn.microsoft.com/library/windows/desktop/ms684175\(v=vs.85\).aspx), [LoadLibraryEx](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa), veya [LoadPackagedLibrary](/windows/desktop/api/winbase/nf-winbase-loadpackagedlibrary)|
-|`_unloaddll`|[FreeLibrary](https://msdn.microsoft.com/library/windows/desktop/ms683152\(v=vs.85\).aspx)|
+|`_loaddll`|[LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya), [LoadLibraryEx](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa), veya [LoadPackagedLibrary](/windows/desktop/api/winbase/nf-winbase-loadpackagedlibrary)|
+|`_unloaddll`|[FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary)|
 |`_getdllprocaddr`|[GetProcAddress](../build/getprocaddress.md)|
-|`_seterrormode`|[SetErrorMode](https://msdn.microsoft.com/library/windows/desktop/ms680621\(v=vs.85\).aspx)|
-|`_beep`|[Bip sesi](https://msdn.microsoft.com/library/windows/desktop/ms679277\(v=vs.85\).aspx)|
+|`_seterrormode`|[SetErrorMode](https://msdn.microsoft.com/library/windows/desktop/ms680621)|
+|`_beep`|[Bip sesi](https://msdn.microsoft.com/library/windows/desktop/ms679277)|
 |`_sleep`|[Uyku](/windows/desktop/api/synchapi/nf-synchapi-sleep)|
-|`_getsystime`|[GetLocalTime](https://msdn.microsoft.com/library/windows/desktop/ms724338\(v=vs.85\).aspx)|
-|`_setsystime`|[SetLocalTime](https://msdn.microsoft.com/library/windows/desktop/ms724936\(v=vs.85\).aspx)|
+|`_getsystime`|[GetLocalTime](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getlocaltime)|
+|`_setsystime`|[SetLocalTime](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-setlocaltime)|
 
 ## <a name="removed-from-the-crt-in-visual-studio-2015"></a>Visual Studio 2015'te CRT kaldırıldı
 

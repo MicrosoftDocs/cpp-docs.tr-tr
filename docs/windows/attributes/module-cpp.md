@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 71ada4927d1a29c2f4d9a95ed93554b0cbffc92d
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: e999928e2080796c013107e3bc862d19426dbf88
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789888"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083534"
 ---
 # <a name="module-c"></a>modül (C++)
 
@@ -50,7 +50,7 @@ Kitaplık blok .idl dosyasında tanımlar.
 *Adı*<br/>
 (İsteğe bağlı) Kitaplık blok adı.
 
-*Sürüm*<br/>
+*version*<br/>
 (İsteğe bağlı) Kitaplığını bloğuna atamak istediğiniz sürüm numarası. 1.0 varsayılan değerdir.
 
 *uuid*<br/>
@@ -83,7 +83,7 @@ Tür kitaplığını belirtir.
 *restricted*<br/>
 (İsteğe bağlı) Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](/windows/desktop/Midl/restricted) daha fazla bilgi için MIDL özniteliği.
 
-*Özel*<br/>
+*custom*<br/>
 (İsteğe bağlı) Bir veya daha fazla öznitelik varsa Bu benzer [özel](custom-cpp.md) özniteliği. İlk parametre olarak *özel* özniteliğinin GUID'dir. Örneğin:
 
 ```
@@ -108,7 +108,7 @@ Bu öznitelik ATL kullanan bir proje içinde kullanılıyorsa, öznitelik davran
 
 - `type` = **dll**
 
-   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) taban sınıfı ve standart DLL girdi kullanılan noktaları için bir COM sunucusu gerekir. Bu giriş noktalarıdır [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](https://msdn.microsoft.com/library/windows/desktop/ms682162), [DllUnRegisterServer](https://msdn.microsoft.com/library/windows/desktop/ms691457), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), ve [ DllGetClassObject](https://msdn.microsoft.com/library/windows/desktop/dd797891).
+   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) taban sınıfı ve standart DLL girdi kullanılan noktaları için bir COM sunucusu gerekir. Bu giriş noktalarıdır [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllregisterserver), [DllUnRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllunregisterserver), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), ve [ DllGetClassObject](https://msdn.microsoft.com/library/windows/desktop/dd797891).
 
 - `type` = **exe**
 
@@ -181,4 +181,4 @@ Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#conte
 [helpcontext](helpcontext.md)<br/>
 [helpstring](helpstring.md)<br/>
 [helpfile](helpfile.md)<br/>
-[Sürüm](version-cpp.md)  
+[version](version-cpp.md)  

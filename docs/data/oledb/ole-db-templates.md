@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 60c7e33a0a486bf0880b06a2eb159ba02300dec7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5f828f21ebdb841d4eca1bb168f908543f990e94
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118251"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082676"
 ---
 # <a name="ole-db-templates"></a>OLE DB Şablonları
 
@@ -41,7 +41,7 @@ OLE DB sağlayıcı şablonu sınıfları tarafından kullanım listelenen bağl
 [OLE DB Programlamaya Genel Bakış](../../data/oledb/ole-db-programming-overview.md)<br/>
 OLE DB yenilikler açıklanır ve OLE DB evrensel veri erişimi ele almaktadır.  
   
-[OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643\(v=vs.85\))  
+[OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643)  
 OLE DB için Windows SDK belgelerine bağlantılar sağlar.  
   
 [OLE DB Şablon örnekleri](../../visual-cpp-samples.md)<br/>

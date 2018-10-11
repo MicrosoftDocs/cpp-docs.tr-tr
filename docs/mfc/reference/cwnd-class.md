@@ -828,12 +828,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6cbe2269bfe4a67ba4e8c6952980216fce92165f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bd35c0879896ca7edfd6524c31a86765bbcce219
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448616"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084197"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 
@@ -1662,7 +1662,7 @@ void BringWindowToTop();
 
 Ayrıca, `BringWindowToTop` açılan, üst düzey ve MDI alt öğe pencerelerini etkinleştirir. `BringWindowToTop` Üye işlevi kullanılmalıdır kısmen veya tamamen engellediği herhangi bir pencereyi açığa çıkarmak için örtüşen pencerelerin.
 
-Bu işlev sadece Win32 çağırır [BringWindowToTop](https://msdn.microsoft.com/library/windows/desktop/ms632673\(v=vs.85\).aspx) işlevi. Çağrı [SetWindowPos](#setwindowpos) Z düzeninde bir pencerenin konumunu değiştirmek için işlevi. `BringWindowToTop` İşlevi bir üst düzey pencere yapmak için pencere stilini değişmez. Daha fazla bilgi için [HWND_TOP ile HWND_TOPMOST arasındaki fark nedir](http://blogs.msdn.com/b/oldnewthing/archive/2005/11/21/495246.aspx)
+Bu işlev sadece Win32 çağırır [BringWindowToTop](https://msdn.microsoft.com/library/windows/desktop/ms632673) işlevi. Çağrı [SetWindowPos](#setwindowpos) Z düzeninde bir pencerenin konumunu değiştirmek için işlevi. `BringWindowToTop` İşlevi bir üst düzey pencere yapmak için pencere stilini değişmez. Daha fazla bilgi için [HWND_TOP ile HWND_TOPMOST arasındaki fark nedir](http://blogs.msdn.com/b/oldnewthing/archive/2005/11/21/495246.aspx)
 
 ### <a name="example"></a>Örnek
 

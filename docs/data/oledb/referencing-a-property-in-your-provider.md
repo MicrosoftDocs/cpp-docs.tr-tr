@@ -17,16 +17,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f6730746cbb3da08e52b5a4d9936aa48a8484886
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b250e29acc964e1fb1273d02a3b1ea93c087e5c4
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052568"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082747"
 ---
 # <a name="referencing-a-property-in-your-provider"></a>Sağlayıcınızdaki Bir Özelliğe Başvurma
 
-Özellik kimliği ve özellik grubu istediğiniz özelliği bulun. Daha fazla bilgi için [OLE DB özellikleri](/previous-versions/windows/desktop/ms722734\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Özellik kimliği ve özellik grubu istediğiniz özelliği bulun. Daha fazla bilgi için [OLE DB özellikleri](/previous-versions/windows/desktop/ms722734) içinde *OLE DB Programcının Başvurusu*.  
   
 Aşağıdaki örnek, satır kümesinden bir özellik get yapılmaya çalışılırken varsayar. Oturum ya da komutu kullanmak için kodu, benzer ancak farklı bir arabirim kullanır.  
   

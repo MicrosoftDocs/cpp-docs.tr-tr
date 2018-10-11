@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dda702a9c9df9662dc6ca3c38143853e8a407f43
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 153e1bba37b10da64b394c48ee1cf8c059ae86e9
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789848"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083034"
 ---
 # <a name="dbparam"></a>db_param
 
@@ -49,16 +49,16 @@ Satır kümesi veri bağlanacak bir alana karşılık gelen sütun numarası (DB
 - Erişimci DBPARAMIO_NOTPARAM hiç parametre yok. Ayar `eParamIO` satır içinde bu değer için erişimciler hatırlatır kullanıcı parametreleri göz ardı edilir.
 
 *DbType*<br/>
-(İsteğe bağlı) Bir OLE DB [türü göstergesi](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) sütun girişi.
+(İsteğe bağlı) Bir OLE DB [türü göstergesi](/previous-versions/windows/desktop/ms711251) sütun girişi.
 
 *Duyarlık*<br/>
-(İsteğe bağlı) Sütun girişini kullanılacak hassasiyet. Ayrıntılar için açıklamasını görmek `bPrecision` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+(İsteğe bağlı) Sütun girişini kullanılacak hassasiyet. Ayrıntılar için açıklamasını görmek `bPrecision` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845)
 
 *Ölçek*<br/>
-(İsteğe bağlı) Sütun girişi için kullanılacak ölçek. Ayrıntılar için açıklamasını görmek `bScale` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+(İsteğe bağlı) Sütun girişi için kullanılacak ölçek. Ayrıntılar için açıklamasını görmek `bScale` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845)
 
 *Durumu*<br/>
-(İsteğe bağlı) Bu sütun durumunu tutmak için kullanılan bir üye değişkeni. Durum sütun değeri veri değeri NULL gibi diğer bazı değeri olup olmadığını gösterir. Olası değerler için bkz. [durumu](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
+(İsteğe bağlı) Bu sütun durumunu tutmak için kullanılan bir üye değişkeni. Durum sütun değeri veri değeri NULL gibi diğer bazı değeri olup olmadığını gösterir. Olası değerler için bkz. [durumu](/previous-versions/windows/desktop/ms722617) içinde *OLE DB Programcının Başvurusu*.
 
 *Uzunluğu*<br/>
 (İsteğe bağlı) Sütun boyutunu bayt cinsinden tutmak için kullanılan bir üye değişkeni.

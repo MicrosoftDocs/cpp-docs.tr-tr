@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f79f8648c2c0d12bf521c38e2db025a8841ab927
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2b8508b5a14e67092339a456f5b85f78d17906a5
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061090"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082546"
 ---
 # <a name="argument-description"></a>Bağımsız Değişken Tanımı
 
@@ -33,7 +33,7 @@ ms.locfileid: "46061090"
 
 `argv` Parametresi null ile sonlandırılmış dizeler program bağımsız değişkenleri temsil eden işaretçileri dizisidir. Geçirilen her öğe için bir bağımsız değişken bir dize gösterimini dizi noktaları **ana** (veya **wmain**). (Diziler hakkında daha fazla bilgi için bkz: [dizi bildirimleri](../c-language/array-declarations.md).) `argv` Parametre türü işaretçiler dizisi olarak ya da bildirilebilir `char` (`char *argv[]`) veya türü işaretçiler için bir işaretçi olarak `char` (`char **argv`). İçin **wmain**, `argv` parametre türü işaretçiler dizisi olarak ya da bildirilebilir `wchar_t` (`wchar_t *argv[]`) veya türü işaretçiler için bir işaretçi olarak `wchar_t` (`wchar_t **argv`).
 
-Kural olarak, `argv` **[0]** ile programın çağrıldığı komuttur.  Ancak, bunu kullanarak bir işlem oluşturmak mümkündür [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) ve ilk ve ikinci bağımsız kullanıyorsanız (`lpApplicationName` ve `lpCommandLine`), `argv` **[0]** çalışmıyor olabilir yürütülebilir dosya adı; kullanma [GetModuleFileName](https://msdn.microsoft.com/library/windows/desktop/ms683197) yürütülebilir adını alamadı.
+Kural olarak, `argv` **[0]** ile programın çağrıldığı komuttur.  Ancak, bunu kullanarak bir işlem oluşturmak mümkündür [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) ve ilk ve ikinci bağımsız kullanıyorsanız (`lpApplicationName` ve `lpCommandLine`), `argv` **[0]** çalışmıyor olabilir yürütülebilir dosya adı; kullanma [GetModuleFileName](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea) yürütülebilir adını alamadı.
 
 Son işaretçi (`argv[argc]`) olan **NULL**. (Bkz [getenv](../c-runtime-library/reference/getenv-wgetenv.md) içinde *çalışma zamanı kitaplığı başvurusu* ortam değişkeni bilgilerini almak için alternatif bir yöntem için.)
 

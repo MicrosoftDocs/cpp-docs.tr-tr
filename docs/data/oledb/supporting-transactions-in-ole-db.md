@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 76dc4cb86601be714e7ca1d442eb904d016e877b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 47b869ffc6ad3dd1492ab052d648bcb8acde7e52
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46102794"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083703"
 ---
 # <a name="supporting-transactions-in-ole-db"></a>OLE DB'de İşlemleri Destekleme
 
@@ -33,11 +33,11 @@ A [işlem](../../data/transactions-mfc-data-access.md) grubu ya da toplu işlem,
   
 OLE DB, aşağıdaki üç yöntemi ile işlemleri destekler:  
   
-- [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786\(v=vs.85\))  
+- [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786)  
   
-- [ITransaction::Commit](/previous-versions/windows/desktop/ms713008\(v=vs.85\))  
+- [ITransaction::Commit](/previous-versions/windows/desktop/ms713008)  
   
-- [Iİşlem::Durdur](/previous-versions/windows/desktop/ms709833\(v=vs.85\))  
+- [Iİşlem::Durdur](/previous-versions/windows/desktop/ms709833)  
   
 ## <a name="relationship-of-sessions-and-transactions"></a>Oturumlar ve işlemler arasındaki ilişki  
 
@@ -59,7 +59,7 @@ Oturum, bir işlem girdiğinde, ilgili oturum içindeki veri deposunda gerçekle
   
 ## <a name="nested-transactions"></a>İç içe işlemler  
 
-A [işlem iç içe geçmiş](/previous-versions/windows/desktop/ms716985\(v=vs.85\)) oturum etkin bir işlem zaten mevcut olduğunda yeni bir yerel işlem başlatıldığında gerçekleşir. Yeni işlem geçerli işlemin altında iç içe geçmiş bir işlem olarak başlatıldı. İç içe işlem sağlayıcısı desteklemiyorsa, çağırma `StartTransaction` zaten oturum etkin bir işlem XACT_E_XTIONEXISTS döndürür.  
+A [işlem iç içe geçmiş](/previous-versions/windows/desktop/ms716985) oturum etkin bir işlem zaten mevcut olduğunda yeni bir yerel işlem başlatıldığında gerçekleşir. Yeni işlem geçerli işlemin altında iç içe geçmiş bir işlem olarak başlatıldı. İç içe işlem sağlayıcısı desteklemiyorsa, çağırma `StartTransaction` zaten oturum etkin bir işlem XACT_E_XTIONEXISTS döndürür.  
   
 ## <a name="distributed-transactions"></a>Dağıtılmış işlemler  
 

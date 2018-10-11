@@ -18,16 +18,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: cb1ea67a0b89a59ad8ee16ec3a3ee0993a0fdafc
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 79c02a36e0c19b0702a81281e626c60e016def32
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43208327"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083287"
 ---
 # <a name="supporting-schema-rowsets"></a>Şema Satır Kümelerini Destekleme
 
-Şema satır kümeleri, temel alınan yapısını veya şema farkında olmadan bir veri deposu hakkında bilgi edinmek tüketiciler izin verir. Örneğin, bir veri deposunu okuma tarafından şemanın bilgi emin olmanın bir yolu nedenle kullanıcı tanımlı bir hiyerarşi halinde düzenlenmiş tablolar olabilir. (Başka bir örnek olarak, Visual C++ sihirbazları, tüketicinin için erişimciler üretmek için şema satır kümeleri kullandığını unutmayın.) Bunu yapmak tüketici izin vermek için sağlayıcının oturum nesnesi yöntemleri gösterir [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) arabirimi. Visual C++ uygulamalarında kullandığınız [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) uygulamak için sınıfı `IDBSchemaRowset`.
+Şema satır kümeleri, temel alınan yapısını veya şema farkında olmadan bir veri deposu hakkında bilgi edinmek tüketiciler izin verir. Örneğin, bir veri deposunu okuma tarafından şemanın bilgi emin olmanın bir yolu nedenle kullanıcı tanımlı bir hiyerarşi halinde düzenlenmiş tablolar olabilir. (Başka bir örnek olarak, Visual C++ sihirbazları, tüketicinin için erişimciler üretmek için şema satır kümeleri kullandığını unutmayın.) Bunu yapmak tüketici izin vermek için sağlayıcının oturum nesnesi yöntemleri gösterir [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) arabirimi. Visual C++ uygulamalarında kullandığınız [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) uygulamak için sınıfı `IDBSchemaRowset`.
 
 `IDBSchemaRowsetImpl` Aşağıdaki yöntemleri destekler:
 
@@ -97,7 +97,7 @@ class CUpdateSessionTRSchemaRowset :
 
 Unutmayın `CUpdateSession` devraldığı `IDBSchemaRowsetImpl`, yöntemlerinin yönetilmesi kısıtlama vardır. Kullanarak `CSchemaRowsetImpl`, üç alt sınıfları (şema eşlemede listelenmiştir) bildirmek: `CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, ve `CUpdateSessionPTSchemaRowset`. Bu alt sınıfların her bir `Execute` kısıtlamaları (arama ölçütleri) ilgili bir dizi işleyen yöntem. Her `Execute` yöntemi değerlerini karşılaştırır `cRestrictions` ve `rgRestrictions` parametreleri. Bu parametreleri açıklamasına bakın [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md).
 
-İlgili kısıtlamaları karşılık gelen bir belirli şeması satır kümesi için daha fazla bilgi için tablosu şeması satır kümesi GUID'leri başvurun içinde [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* içinde Windows SDK'sı.
+İlgili kısıtlamaları karşılık gelen bir belirli şeması satır kümesi için daha fazla bilgi için tablosu şeması satır kümesi GUID'leri başvurun içinde [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) içinde *OLE DB Programcının Başvurusu* içinde Windows SDK'sı.
 
 Örneğin, desteklenen **TABLE_NAME** kısıtlaması `DBSCHEMA_TABLES`, aşağıdakileri yapmanız gerekir:
 

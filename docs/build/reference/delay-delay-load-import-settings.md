@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ce585f9dc8439a02a2883229e8d9ec006c29c24
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 086fab7d1d50f96ab05c38f2e6d524d7ff344e02
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717697"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49081922"
 ---
 # <a name="delay-delay-load-import-settings"></a>/DELAY (Gecikme Yükü İçe Aktarma Ayarları)
 
@@ -46,7 +46,7 @@ ms.locfileid: "45717697"
 
 - NOBIND niteleyicisi bağlayıcıya son görüntüde bağlanabilir IAT eklememesini söyler. Gecikmeli yüklenen DLL'ler için bağlanabilir IAT oluşturmak için varsayılandır. Elde edilen görüntü statik olarak bağlanamaz. (Bağlanabilir IATs görüntülerle yürütme önce statik olarak bağlanabilir.) Bkz: [/bağlama](../../build/reference/bind.md).
 
-   DLL bağlıysa yardımcı işlevini çağırmak yerine ilişkili bilgileri kullanmak deneyecek [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx) her başvurulan alır. Zaman damgası veya tercih edilen adresi bu yüklenen DLL'nin ile eşleşmiyorsa yardımcı işlevini ilişkili IAT güncel değil ve ilişkili IAT yoksa olarak devam edecek varsayar.
+   DLL bağlıysa yardımcı işlevini çağırmak yerine ilişkili bilgileri kullanmak deneyecek [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) her başvurulan alır. Zaman damgası veya tercih edilen adresi bu yüklenen DLL'nin ile eşleşmiyorsa yardımcı işlevini ilişkili IAT güncel değil ve ilişkili IAT yoksa olarak devam edecek varsayar.
 
    Programınızı büyük olacak şekilde görüntü ancak hızlandırabilirsiniz NOBIND nedenleri DLL'nin zaman yükleyin. Hiçbir zaman DLL'yi bağlamak istiyorsanız, NOBIND ilişkili IAT oluşturulmasını engeller.
 
@@ -62,7 +62,7 @@ Gecikme yükü DLL'lerini belirtmek için kullanın [/delayload](../../build/ref
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.DelayLoadDLLs%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.DelayLoadDLLs%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

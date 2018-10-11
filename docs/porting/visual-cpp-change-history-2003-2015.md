@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6f0e5ce08e362cef0fd625036a92c1d13885ded
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: bcf3ce1f0ddc5003886c367cfe5db8968a911ee9
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821549"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083989"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003-2015
 
@@ -282,7 +282,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
 
 - **clock**
 
-   Önceki sürümlerde, [saat](../c-runtime-library/reference/clock.md) işlevi uygulanan Windows API kullanarak [GetSystemTimeAsFileTime](https://msdn.microsoft.com/library/windows/desktop/ms724397.aspx). Clock işlevi bu uygulama ile Sistem saati hassas ve böylece mutlaka monoton değildi. Clock işlevi açısından reimplemented [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) ve monoton sunulmuştur.
+   Önceki sürümlerde, [saat](../c-runtime-library/reference/clock.md) işlevi uygulanan Windows API kullanarak [GetSystemTimeAsFileTime](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemtimeasfiletime). Clock işlevi bu uygulama ile Sistem saati hassas ve böylece mutlaka monoton değildi. Clock işlevi açısından reimplemented [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) ve monoton sunulmuştur.
 
 - **fstat ve _utime**
 
@@ -2545,7 +2545,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Öznitelik atanmış ATL kodu desteğini kullanımdan** (düzey 1 (`/W1`)-varsayılan)
 
-   ATL kodu kullanıldığında artık desteklenen derleyicinin önceki sürümlerini öznitelikli. Öznitelik atanmış ATL desteğini kaldırmanın sonraki aşamaya olarak kod [Visual Studio 2008'de başlangıcından](https://msdn.microsoft.com/library/bb384632\(v=vs.90\).aspx), öznitelik atanmış ATL kodu kullanıldığında artık kullanımdan kaldırıldı. Derleyici artık derleyici bu tür bir kullanım dışı kod belirlemenize yardımcı olması için C4467 uyarı verir.
+   ATL kodu kullanıldığında artık desteklenen derleyicinin önceki sürümlerini öznitelikli. Öznitelik atanmış ATL desteğini kaldırmanın sonraki aşamaya olarak kod [Visual Studio 2008'de başlangıcından](https://msdn.microsoft.com/library/bb384632), öznitelik atanmış ATL kodu kullanıldığında artık kullanımdan kaldırıldı. Derleyici artık derleyici bu tür bir kullanım dışı kod belirlemenize yardımcı olması için C4467 uyarı verir.
 
     ```Output
     warning C4467: Usage of ATL attributes is deprecated

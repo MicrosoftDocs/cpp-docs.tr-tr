@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6fb948efd63a8392661cc38a80393bc90d5e694
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 163ef22563141b9365bc2c086870877c7ad2bf00
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396477"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083599"
 ---
 # <a name="run-time-object-model-services"></a>Çalışma Süresi Nesne Modeli Hizmetleri
 
@@ -92,7 +92,7 @@ AFX_COMCTL32_IF_EXISTS(  proc );
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ortak Denetimler kitaplığı tarafından işlevi belirtilen olup olmadığını belirlemek için bu makroyu kullanın *proc* (çağırmak yerine [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212).
+Ortak Denetimler kitaplığı tarafından işlevi belirtilen olup olmadığını belirlemek için bu makroyu kullanın *proc* (çağırmak yerine [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -119,7 +119,7 @@ AFX_COMCTL32_IF_EXISTS2( proc );
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ortak Denetimler kitaplığı tarafından işlevi belirtilen olup olmadığını belirlemek için bu makroyu kullanın *proc* (çağırmak yerine [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212). Bu makro afx_comctl32_ıf_exısts Unicode sürümüdür.
+Ortak Denetimler kitaplığı tarafından işlevi belirtilen olup olmadığını belirlemek için bu makroyu kullanın *proc* (çağırmak yerine [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress). Bu makro afx_comctl32_ıf_exısts Unicode sürümüdür.
 
 ### <a name="requirements"></a>Gereksinimler
 

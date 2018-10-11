@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3461c4965dd40d0aecc7515185592a13f30c08c9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4014d0d7cea999c105a5ee513d9dd1be410546f4
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423019"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084080"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>UWP uygulamaları için C++ uygulamasında zaman uyumsuz işlemler oluşturma
 
@@ -80,7 +80,7 @@ Kavramı bir *eylem* zaman uyumsuz görev değer üretemez anlamına gelir (dön
 
 Dönüş türünü `create_async` bağımsız değişkenlerinin türleri tarafından belirlenir. Örneğin, iş işlevi bir değer döndürmez ve ilerleme bildirmez `create_async` döndürür `IAsyncAction`. Çalışma işlevinizde bir değer döndürmez ve ayrıca, ilerleme raporları `create_async` döndürür `IAsyncActionWithProgress`. İlerleme raporu sağlamak için bir [concurrency::progress_reporter](../../parallel/concrt/reference/progress-reporter-class.md) iş işlevinize parametre olarak nesne. İlerleme durumunu raporlamak hangi iş miktarını gerçekleştirildi ve hangi tutar (örneğin, yüzde olarak) kalıyor bildirmenize olanak sağlar. Ayrıca, kullanıma sunuldukça sonuçlarını sağlar.
 
-`IAsyncAction`, `IAsyncActionWithProgress<TProgress>`, `IAsyncOperation<TResult>`, Ve `IAsyncActionOperationWithProgress<TProgress, TProgress>` arabirimleri her sağlayan bir `Cancel` zaman uyumsuz işlemi iptal etmenizi sağlayan bir yöntem. `task` Sınıfı iptal belirteçleri ile çalışır. İşi iptal etmek için bir iptal belirteci kullandığınızda, çalışma zamanı için bu belirteci abone yeni iş başlamıyor. Zaten etkin olan iş, iptal belirteci izleyebilir ve mümkün olduğunda durdurun. Bu mekanizma belge içinde daha ayrıntılı anlatılan [ppl'de iptal](cancellation-in-the-ppl.md). Görev iptali Windows çalışma zamanı ile bağlanabilir`Cancel` metotlarıyla iki şekilde. İlk olarak, geçirdiğiniz çalışma işlevini tanımlayabilirsiniz `create_async` gerçekleştirilecek bir [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) nesne. Zaman `Cancel` yöntemi çağrıldığında, bu iptal belirteci iptal edilir ve temel alınan normal iptal kuralları uygulanır `task` destekleyen nesne `create_async` çağırın. Belirtmezseniz, bir `cancellation_token` nesne, temel alınan `task` nesnesini tanımlayan bir örtük olarak. Tanımlayan bir `cancellation_token` nesne çalışma işlevinizde bir iptali işbirliği ile yanıt vermeniz gerektiğinde. Bölüm [örnek: C++ ve XAML ile bir Windows çalışma zamanı uygulamasında yürütme denetleme](#example-app) bir C# ve XAML kullanan özel bir Windows çalışma zamanı C++ Evrensel Windows Platformu (UWP) uygulaması iptal gerçekleştirmek nasıl bir örnek gösterir bileşeni.
+`IAsyncAction`, `IAsyncActionWithProgress<TProgress>`, `IAsyncOperation<TResult>` ve `IAsyncActionOperationWithProgress<TProgress, TProgress>` arabirimlerinin her biri zaman uyumsuz işlemi iptal etmenizi sağlayan bir `Cancel` metodu sunar. `task` Sınıfı iptal belirteçleri ile çalışır. İşi iptal etmek için bir iptal belirteci kullandığınızda, çalışma zamanı için bu belirteci abone yeni iş başlamıyor. Zaten etkin olan iş, iptal belirteci izleyebilir ve mümkün olduğunda durdurun. Bu mekanizma belge içinde daha ayrıntılı anlatılan [ppl'de iptal](cancellation-in-the-ppl.md). Görev iptali Windows çalışma zamanı ile bağlanabilir`Cancel` metotlarıyla iki şekilde. İlk olarak, geçirdiğiniz çalışma işlevini tanımlayabilirsiniz `create_async` gerçekleştirilecek bir [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) nesne. Zaman `Cancel` yöntemi çağrıldığında, bu iptal belirteci iptal edilir ve temel alınan normal iptal kuralları uygulanır `task` destekleyen nesne `create_async` çağırın. Bir `cancellation_token` nesnesi belirtmezseniz, temel alınan `task` nesnesi örtük olarak bir nesne tanımlar. Çalışma işlevinizde bir iptali işbirliği halinde olarak yanıtlamanız gerektiğinde bir `cancellation_token` nesnesi tanımlayın. Bölüm [örnek: C++ ve XAML ile bir Windows çalışma zamanı uygulamasında yürütme denetleme](#example-app) bir C# ve XAML kullanan özel bir Windows çalışma zamanı C++ Evrensel Windows Platformu (UWP) uygulaması iptal gerçekleştirmek nasıl bir örnek gösterir bileşeni.
 
 > [!WARNING]
 >  Görev devamlılıkları oluşan bir zincir, durumu her zaman temiz ve sonra çağrı [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) iptal belirteci iptal edildi zaman. Çağırmak yerine erken dönüş yaparsa `cancel_current_task`, tamamlanmış duruma iptal edilmiş duruma yerine işlemi geçişler.
@@ -113,7 +113,7 @@ Yoğun işlem gücü kullanımlı işlemleri gerçekleştirmek için kullanıcı
 
 [!code-cpp[concrt-windowsstore-primes#2](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_3.cpp)]
 
-Her bir yöntemin ilk giriş parametrelerini negatif olmayan emin olmak için doğrulama gerçekleştirir. Giriş değeri negatifse çağırılıyorsa yöntem [Platform::ınvalidargumentexception](https://msdn.microsoft.com/library/windows/apps/hh755794\(v=vs.110\).aspx). Hata işleme daha sonra bu bölümde açıklanmıştır.
+Her bir yöntemin ilk giriş parametrelerini negatif olmayan emin olmak için doğrulama gerçekleştirir. Giriş değeri negatifse çağırılıyorsa yöntem [Platform::ınvalidargumentexception](https://msdn.microsoft.com/library/windows/apps/hh755794.aspx). Hata işleme daha sonra bu bölümde açıklanmıştır.
 
 Bu yöntemler bir UWP uygulamasında kullanmak için Visual C# kullanın **boş uygulama (XAML)** Visual Studio çözümü için ikinci bir proje eklemek için şablon. Bu örnek proje adları `Primes`. Ardından `Primes` projesi, bir başvuru ekleyin `PrimesLibrary` proje.
 
@@ -136,7 +136,7 @@ Aşağıdaki çizimde gösterildiği `Primes` her seçeneği seçtikten sonra uy
 
 ![Windows çalışma zamanı Primes uygulama](../../parallel/concrt/media/concrt_windows_primes.png "concrt_windows_primes")
 
-Kullanan örnekler `create_async` diğer diller tarafından kullanılabilen zaman uyumsuz görevler oluşturmak için bkz [Bing Haritalar seyahat iyileştirici örneğinde C++ kullanarak](https://msdn.microsoft.com/library/windows/apps/hh699891\(v=vs.110\).aspx) ve [PPLileC++'taWindows8zamanuyumsuzişlemleri](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).
+Kullanan örnekler `create_async` diğer diller tarafından kullanılabilen zaman uyumsuz görevler oluşturmak için bkz [Bing Haritalar seyahat iyileştirici örneğinde C++ kullanarak](https://msdn.microsoft.com/library/windows/apps/hh699891.aspx) ve [PPLileC++'taWindows8zamanuyumsuzişlemleri](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).
 
 ##  <a name="exethread"></a> Yürütme iş parçacığını denetleme
 

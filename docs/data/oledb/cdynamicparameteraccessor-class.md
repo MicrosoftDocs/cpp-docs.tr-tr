@@ -101,12 +101,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a92f52f7d97e3c89de3d147c2c1b798d4af6d3a4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d0db07c8419db53d30612e6edbbe134634e37a74
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019466"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083950"
 ---
 # <a name="cdynamicparameteraccessor-class"></a>CDynamicParameterAccessor Sınıfı
 
@@ -323,7 +323,7 @@ DBSTATUS* GetParamStatus(DBORDINAL nParam) const throw();
 [in] Parametre sayısı (1 uzaklık). Parametre 0 dönüş değerleri için ayrılmıştır. Parametre numarası SQL veya saklı yordam çağrısı, bir sırada temel parametresi dizinidir. Bkz: [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) örneği.  
   
 *pStatus*<br/>
-[out] Belirtilen parametre DBSTATUS durumunu içeren bir değişken için bir işaretçi. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.  
+[out] Belirtilen parametre DBSTATUS durumunu içeren bir değişken için bir işaretçi. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](/previous-versions/windows/desktop/ms722617) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.  
   
 ### <a name="remarks"></a>Açıklamalar  
 
@@ -435,7 +435,7 @@ Veri türü şablonlu bir parametre.
 [in] Arabelleğe yazılacak veriler içeren bellek işaretçisi.  
   
 *Durumu*<br/>
-[in] DBSTATUS sütun durumu. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.  
+[in] DBSTATUS sütun durumu. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](/previous-versions/windows/desktop/ms722617) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -483,7 +483,7 @@ bool SetParamStatus(DBORDINAL nParam,
 [in] Parametre sayısı (1 uzaklık). Parametre 0 dönüş değerleri için ayrılmıştır. Parametre numarası SQL veya saklı yordam çağrısı, bir sırada temel parametresi dizinidir. Bkz: [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) örneği.  
   
 *Durumu*<br/>
-[in] Belirtilen parametre DBSTATUS durumu. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.  
+[in] Belirtilen parametre DBSTATUS durumu. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](/previous-versions/windows/desktop/ms722617) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.  
   
 ### <a name="remarks"></a>Açıklamalar  
 
@@ -512,7 +512,7 @@ bool SetParamString(DBORDINAL nParam,
 [in] ANSI işaretçisi (**CHAR**) veya Unicode (**WCHAR**) dize verilerini belirtilen parametre. DBSTATUS içinde biçim bakın.  
   
 *Durumu*<br/>
-[in] Belirtilen parametre DBSTATUS durumu. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.  
+[in] Belirtilen parametre DBSTATUS durumu. DBSTATUS değerler hakkında daha fazla bilgi için bkz. [durumu](/previous-versions/windows/desktop/ms722617) içinde *OLE DB Programcının Başvurusu*, ya da araması DBSTATUS için biçim.  
   
 ### <a name="remarks"></a>Açıklamalar  
 

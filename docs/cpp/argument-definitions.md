@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cf75e1c0fe2b3ff0d883a8785e69aef489c0545
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e0c42478e5e6ce3c9efe66c45ed32292f2040a83
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056397"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084158"
 ---
 # <a name="argument-definitions"></a>Bağımsız Değişken Tanımları
 
@@ -45,7 +45,7 @@ Programın kullanıcısı tarafından girilen komut satırı bağımsız değiş
 İlk komut satırı bağımsız değişkeni her zaman olduğu `argv` **[1]** ve sonuncu `argv` **[** `argc` - 1 **]**.
 
 > [!NOTE]
->  Kural olarak, `argv` **[0]** ile programın çağrıldığı komuttur.  Ancak, bunu kullanarak bir işlem oluşturmak mümkündür [CreateProcess](https://msdn.microsoft.com/library/windows/desktop/ms683197) ve ilk ve ikinci bağımsız kullanıyorsanız (*lpApplicationName* ve *lpCommandLine*), `argv` **[0]** yürütülebilir olmayabilir kullanın; adı [GetModuleFileName](https://msdn.microsoft.com/library/windows/desktop/ms683197) yürütülebilir adı ve tam olarak nitelenmiş yolunu almak için.
+>  Kural olarak, `argv` **[0]** ile programın çağrıldığı komuttur.  Ancak, bunu kullanarak bir işlem oluşturmak mümkündür [CreateProcess](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea) ve ilk ve ikinci bağımsız kullanıyorsanız (*lpApplicationName* ve *lpCommandLine*), `argv` **[0]** yürütülebilir olmayabilir kullanın; adı [GetModuleFileName](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea) yürütülebilir adı ve tam olarak nitelenmiş yolunu almak için.
 
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü
 

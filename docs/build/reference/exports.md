@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bf350b0a129c642678fc6af1bac7d35633fe909
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: b650c2a20d18f3f638f924cce1e4b475f7e33a0d
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860985"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084067"
 ---
 # <a name="exports"></a>EXPORTS
 
@@ -67,7 +67,7 @@ Derleyici tarafından üretilen düzenlenmiş adların bulmak için kullanın [D
 
 Kullanabileceğiniz \@ *sıralı* bir sayı ve işlev adı değil, DLL'nin dışarı aktarma tablosuna giden belirtmek için. Birçok Windows DLL'leri, eski kodu desteklemek için sıra sayıları dışarı aktarın. Bir DLL boyutunu en aza indirmenize yardımcı çünkü 16-bit Windows kod içinde sıra sayıları kullanmak yaygın. İsteğe bağlı olarak, DLL'nin istemci için eski destek gerekli olmadıkça işlevlerini dışa aktarma sıra sayısı ile önerilmemektedir. Çünkü. LIB dosyası sıra ile işlevi arasındaki eşlemeyi içerir, DLL kullanan projelerde normalde yaptığınız gibi işlev adı kullanabilirsiniz.
 
-İsteğe bağlı kullanarak **NONAME** anahtar sözcüğü, yalnızca sıralı olarak dışarı aktarma ve ortaya çıkan DLL'yi dışa aktarma tablosunda boyutunu küçültün. Ancak, kullanmak istiyorsanız [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx) DLL adı geçerli değil çünkü sıra bilmeniz gerekir.
+İsteğe bağlı kullanarak **NONAME** anahtar sözcüğü, yalnızca sıralı olarak dışarı aktarma ve ortaya çıkan DLL'yi dışa aktarma tablosunda boyutunu küçültün. Ancak, kullanmak istiyorsanız [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) DLL adı geçerli değil çünkü sıra bilmeniz gerekir.
 
 İsteğe bağlı anahtar sözcük **özel** engeller *GirişAdı* bağlantı tarafından oluşturulan içeri aktarma kitaplığına eklenen öğesinden. Dışa aktarma, ayrıca bağlantı tarafından oluşturulan görüntüyü etkilemez.
 

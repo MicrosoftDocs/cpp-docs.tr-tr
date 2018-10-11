@@ -17,18 +17,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6e5282d1944ca789e56ac6890c10f41c15ec59e4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d28194b44fca4360fc7a0ca1614e9f5685cc0d98
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111283"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082338"
 ---
 # <a name="open-database-connectivity-odbc"></a>Açık Veritabanı Bağlantısı (ODBC)
 
 Microsoft Foundation sınıfları (MFC) kitaplığı programlama açık veritabanı bağlantısı (ODBC) için sınıflar sağlar. Visual Studio 2015 ve SQL Server 2012 ODBC itibaren SQL veri kaynaklarına bağlanmak için tercih edilen yoludur.
   
-MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için bkz. [açık veritabanı bağlantısı (ODBC)](/previous-versions/windows/desktop/ms710252\(v=vs.85\)) MSDN SDK.  
+MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için bkz. [açık veritabanı bağlantısı (ODBC)](/previous-versions/windows/desktop/ms710252) MSDN SDK.  
   
   
 ## <a name="in-this-section"></a>Bu Bölümde  
@@ -69,7 +69,7 @@ MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için bkz. [açık veri
   
 ## <a name="odbc-database-tasks"></a>ODBC veritabanı görevleri  
 
-Bu görevler MFC dayalı [ODBC](odbc-basics.md) sınıfları. MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için bkz. [açık veritabanı bağlantısı (ODBC)](/previous-versions/windows/desktop/ms710252\(v=vs.85\)) SDK.  
+Bu görevler MFC dayalı [ODBC](odbc-basics.md) sınıfları. MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için bkz. [açık veritabanı bağlantısı (ODBC)](/previous-versions/windows/desktop/ms710252) SDK.  
   
 - [Yükleme ve ODBC ile çalışmaya başlama](installing-and-getting-started-with-odbc.md)  
   

@@ -13,18 +13,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9d4f44e3587e9b274bbe89e2fa4f91accadb08ab
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 991e3e74ba280b615d951c12472de46833b7de72
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688265"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083352"
 ---
 # <a name="desktop-applications-visual-c"></a>Masaüstü uygulamaları (Visual C++)
 
 A *masaüstü uygulaması* c++'ta Windows API'leri ve ya da çalışan bir pencerede veya sistem konsolu tam kümesini erişebilmeniz için yerel bir uygulamadır. C++ Masaüstü uygulamaları, Windows XP ile Windows 10 (Windows XP artık resmi olarak desteklenir ve bu tarihten sonra sunulan çok sayıda Windows API vardır ancak) çalıştırabilirsiniz.
 
-Windows 10 çalıştıran bilgisayarlara ve XBox, Windows Phone, Surface Hub ve diğer cihazlar üzerinde çalışabilen bir evrensel Windows Platformu (UWP) uygulamasını ayrı, bir masaüstü uygulamasıdır. Masaüstü vs hakkında daha fazla bilgi için. UWP uygulamaları [teknolojinizi seçin](https://msdn.microsoft.com/library/windows/desktop/dn614993\(v=vs.85\).aspx).
+Windows 10 çalıştıran bilgisayarlara ve XBox, Windows Phone, Surface Hub ve diğer cihazlar üzerinde çalışabilen bir evrensel Windows Platformu (UWP) uygulamasını ayrı, bir masaüstü uygulamasıdır. Masaüstü vs hakkında daha fazla bilgi için. UWP uygulamaları [teknolojinizi seçin](https://msdn.microsoft.com/library/windows/desktop/dn614993).
 
 
 ### <a name="desktop-bridge"></a>Masaüstü köprüsü
@@ -35,7 +35,7 @@ Visual Studio 2017 sürüm 15.4 ve daha sonra mevcut masaüstü uygulamanızı p
 
 ### <a name="terminology"></a>Terminoloji
 
-- A *Win32* yapabileceğiniz c++ Masaüstü uygulamasını kullanın yerel bir Windows uygulamasıdır [Windows C API'leri ve/veya COM API'leri](https://msdn.microsoft.com/library/windows/desktop/ff818516\(v=vs.85\).aspx) CRT ve standart kitaplığı API'leri ve 3. taraf kitaplıkları. Bir pencere içinde çalışan bir Win32 uygulaması, Windows iletileri Windows yordamı işlevi içinde açıkça çalışmak Geliştirici gerektirir. Adını rağmen bir Win32 uygulaması bir 32-bit (x86) veya 64-bit (x64) ikili olarak derlenebilir. Visual Studio IDE'de x86 hüküm ve Win32 eşanlamlıdır.
+- A *Win32* yapabileceğiniz c++ Masaüstü uygulamasını kullanın yerel bir Windows uygulamasıdır [Windows C API'leri ve/veya COM API'leri](https://msdn.microsoft.com/library/windows/desktop/ff818516) CRT ve standart kitaplığı API'leri ve 3. taraf kitaplıkları. Bir pencere içinde çalışan bir Win32 uygulaması, Windows iletileri Windows yordamı işlevi içinde açıkça çalışmak Geliştirici gerektirir. Adını rağmen bir Win32 uygulaması bir 32-bit (x86) veya 64-bit (x64) ikili olarak derlenebilir. Visual Studio IDE'de x86 hüküm ve Win32 eşanlamlıdır.
 
 - [Bileşen Nesne Modeli (COM)](/windows/desktop/com/the-component-object-model) birbirleriyle iletişim kurması için farklı dillerde yazılan programlar sağlayan bir özelliğidir. Bileşenleri COM nesneleri olarak uygulanır ve nesne oluşturma için standart COM kurallarına birçok Windows bulma ve nesne yok etme arabirim.  COM nesnelerinin C++ Masaüstü uygulamalarından kullanarak görece basittir, ancak kendi COM nesnesi yazmak daha gelişmiş. [Etkin Şablon kitaplığı (ATL)](../atl/atl-com-desktop-components.md) makroları ve COM geliştirmesini basitleştiren yardımcı işlevleri sağlar.
 

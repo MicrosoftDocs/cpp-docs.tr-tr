@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3f9e5ac3d0a7f640ba9d7361d755763bd68dd728
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9ab1f5e35deff1117c544dfa372abb9949502001
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46042201"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082955"
 ---
 # <a name="ole-db-provider-templates-c"></a>OLE DB Sağlayıcı Şablonları (C++)
 
@@ -81,5 +81,5 @@ Daha fazla bilgi için bkz.:
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
 [Veri Erişimi](../data-access-in-cpp.md)<br/>
-[OLE DB SDK Belgeleri](/previous-versions/windows/desktop/ms722784\(v=vs.85\))   
-[OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643\(v=vs.85\))
+[OLE DB SDK Belgeleri](/previous-versions/windows/desktop/ms722784)   
+[OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643)

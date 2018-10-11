@@ -13,12 +13,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01ee370b4fd96419ce095fa9a93450b98b241dd2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 51921f8e55b9d4ce4e1875f5216984fe3257ca97
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448577"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084119"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki
 
@@ -1360,7 +1360,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **Öznitelik atanmış ATL kodu desteğini kullanımdan** (düzey 1 (`/W1`)-varsayılan)
 
-   ATL kodu kullanıldığında artık desteklenen derleyicinin önceki sürümlerini öznitelikli. Öznitelik atanmış ATL desteğini kaldırmanın sonraki aşamaya olarak kod [Visual C++ 2008'de başlangıcından](https://msdn.microsoft.com/library/bb384632\(v=vs.90\).aspx), öznitelik atanmış ATL kodu kullanıldığında artık kullanımdan kaldırıldı. Derleyici artık derleyici bu tür bir kullanım dışı kod belirlemenize yardımcı olması için C4467 uyarı verir.
+   ATL kodu kullanıldığında artık desteklenen derleyicinin önceki sürümlerini öznitelikli. Öznitelik atanmış ATL desteğini kaldırmanın sonraki aşamaya olarak kod [Visual C++ 2008'de başlangıcından](https://msdn.microsoft.com/library/bb384632), öznitelik atanmış ATL kodu kullanıldığında artık kullanımdan kaldırıldı. Derleyici artık derleyici bu tür bir kullanım dışı kod belirlemenize yardımcı olması için C4467 uyarı verir.
 
    ```Output
     warning C4467: Usage of ATL attributes is deprecated

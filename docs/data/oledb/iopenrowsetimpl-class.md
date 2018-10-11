@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 84050dcf4faed8bb99b871d3b797400c1ed5620e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5f5071adcf12bde10a3fc67a5503875dfb264372
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086960"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49081610"
 ---
 # <a name="iopenrowsetimpl-class"></a>IOpenRowsetImpl Sınıfı
 
@@ -63,11 +63,11 @@ Sınıfınız, türetilen `IOpenRowsetImpl`.
   
 ## <a name="remarks"></a>Açıklamalar  
 
-[IOpenRowset](/previous-versions/windows/desktop/ms716946\(v=vs.85\)) arabirimi için bir oturum nesnesi zorunludur. Bu açılır ve tek bir temel tablo veya dizini tablosundan tüm satırları içeren bir satır kümesi döndürür.  
+[IOpenRowset](/previous-versions/windows/desktop/ms716946) arabirimi için bir oturum nesnesi zorunludur. Bu açılır ve tek bir temel tablo veya dizini tablosundan tüm satırları içeren bir satır kümesi döndürür.  
   
 ## <a name="createrowset"></a> Iopenrowsetımpl::createrowset
 
-Bir satır kümesi nesnesi oluşturur. Doğrudan kullanıcı tarafından çağrılır değil. Bkz: [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu.*  
+Bir satır kümesi nesnesi oluşturur. Doğrudan kullanıcı tarafından çağrılır değil. Bkz: [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724) içinde *OLE DB Programcının Başvurusu.*  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -91,7 +91,7 @@ Kullanıcının satır kümesi sınıfı temsil eden bir şablon sınıfı üyes
 *pRowsetObj*<br/>
 [out] Bir satır kümesi nesnesi işaretçisi. Genellikle bu parametre kullanılmaz, ancak, daha fazla iş satır kümesinde bir COM nesnesine iletmeden önce gerçekleştirmeniz gerekirse kullanılabilir. Ömrünü *pRowsetObj* bağlı olan *ppRowset*.  
   
-Diğer parametreler için bkz: [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu.*  
+Diğer parametreler için bkz: [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724) içinde *OLE DB Programcının Başvurusu.*  
 
 ## <a name="openrowset"></a> Iopenrowsetımpl::OPENROWSET
 
@@ -111,7 +111,7 @@ HRESULT OpenRowset(IUnknown* pUnkOuter,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
 

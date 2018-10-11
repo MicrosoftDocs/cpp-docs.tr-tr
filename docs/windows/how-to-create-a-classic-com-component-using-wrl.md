@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3844c0ad304c1ebd18a707ca1821b72b60e92707
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7c3d16cada621232c54176717f9bbdedb71a7e21
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43198025"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083432"
 ---
 # <a name="how-to-create-a-classic-com-component-using-wrl"></a>Nasıl yapılır: WRL Kullanarak Klasik COM Bileşeni Oluşturma
 
@@ -38,7 +38,7 @@ Bu belge, temel bir COM bileşeni oluşturmak için Windows çalışma zamanı C
 
    [!code-cpp[wrl-classic-com-component#1](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_1.idl)]
 
-5. CalculatorComponent.cpp içinde tanımlayın `CalculatorComponent` sınıfı. `CalculatorComponent` Sınıfının devraldığı [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md). [Microsoft::WRL::RuntimeClassFlags\<ClassicCom >](../windows/runtimeclassflags-structure.md) öğesinden türetilen sınıfın belirtir [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) değil [Iınspectable](https://msdn.microsoft.com/library/br205821\(v=vs.85\).aspx). (`IInspectable` yalnızca Windows çalışma zamanı uygulama bileşenleri için kullanılabilir.) `CoCreatableClass` işlevlerinde aşağıdaki gibi kullanılabilir sınıf için bir Üreteç oluşturur [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).
+5. CalculatorComponent.cpp içinde tanımlayın `CalculatorComponent` sınıfı. `CalculatorComponent` Sınıfının devraldığı [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md). [Microsoft::WRL::RuntimeClassFlags\<ClassicCom >](../windows/runtimeclassflags-structure.md) öğesinden türetilen sınıfın belirtir [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) değil [Iınspectable](https://msdn.microsoft.com/library/br205821). (`IInspectable` yalnızca Windows çalışma zamanı uygulama bileşenleri için kullanılabilir.) `CoCreatableClass` işlevlerinde aşağıdaki gibi kullanılabilir sınıf için bir Üreteç oluşturur [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).
 
    [!code-cpp[wrl-classic-com-component#2](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_2.cpp)]
 

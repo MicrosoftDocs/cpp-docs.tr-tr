@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca2d98898c232cdb65d3ac5d1288b06aca403772
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1138a675d64561a2e8399accd93c4ebb5eff382d
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398124"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083872"
 ---
 # <a name="memory-management-frame-allocation"></a>Bellek Yönetimi: Çerçeve Ayırma
 
@@ -47,7 +47,7 @@ Yerel işlev değişkenleri için iç içe ayraçları kullanılıyorsa bir çer
 
 Bir nesne bir çerçeve değişken olarak tanımlandığında, yapıcısına tanımını burada karşılaşılanaa noktada otomatik olarak çağrılır. Nesne kapsam dışına çıktığında, nesne için bellek alınmadan önce otomatik olarak, yok Edicisi çağrılır. Bu otomatik oluşturma ve yok etme çok kullanışlı olabilir, ancak yok edici için özellikle otomatik çağrıları farkında olmanız gerekir.
 
-Çerçevede nesneleri ayırma önemli bir avantajı, otomatik olarak silinir. Çerçeve, nesneleri ayırdığınızda, bellek sızıntılarının neden Unutulan nesneleri hakkında endişelenmeniz gerekmez. (Bellek sızıntılarını hakkında daha fazla bilgi için bkz [MFC'de bellek sızıntılarını algılama](/previous-versions/visualstudio/visual-studio-2010/c99kz476\(v=vs.100\)).) Çerçeve ayırma bir dezavantajı, çerçeve değişkenleri kendi kapsamı dışında kullanılamaz olmasıdır. Yığın ayırma ve çerçeve ayırma seçme içinde başka bir faktör büyük yapılar ve nesneler için genellikle yığın alanı çoğunlukla sınırlı olduğundan öbek için Depolama yığını yerine kullanılması daha iyidir olmasıdır.
+Çerçevede nesneleri ayırma önemli bir avantajı, otomatik olarak silinir. Çerçeve, nesneleri ayırdığınızda, bellek sızıntılarının neden Unutulan nesneleri hakkında endişelenmeniz gerekmez. (Bellek sızıntılarını hakkında daha fazla bilgi için bkz [MFC'de bellek sızıntılarını algılama](/previous-versions/visualstudio/visual-studio-2010/c99kz476).) Çerçeve ayırma bir dezavantajı, çerçeve değişkenleri kendi kapsamı dışında kullanılamaz olmasıdır. Yığın ayırma ve çerçeve ayırma seçme içinde başka bir faktör büyük yapılar ve nesneler için genellikle yığın alanı çoğunlukla sınırlı olduğundan öbek için Depolama yığını yerine kullanılması daha iyidir olmasıdır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

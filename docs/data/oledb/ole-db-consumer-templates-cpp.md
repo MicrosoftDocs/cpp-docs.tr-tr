@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 18bbcf64bc76d26535f9a5c2c51229048422af56
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b22f97401900a24ae864174872027b18509dfe0c
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021583"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082429"
 ---
 # <a name="ole-db-consumer-templates-c"></a>OLE DB Tüketici Şablonları (C++)
 
@@ -35,7 +35,7 @@ OLE DB Tüketici Şablonları, OLE DB sürüm 2.6 belirtimini destekler. (OLE DB
   
 - OLE DB programlama için yerel C/C++ veri türleri.  
   
-OLE DB Şablonları kullanmak için C++ şablonları, COM ve OLE DB arabirimleri ile ilgili bilgi sahibi olmalıdır. OLE DB ile ilgili bilgi sahibi değilseniz bkz [OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms718124\(v=vs.85\)).  
+OLE DB Şablonları kullanmak için C++ şablonları, COM ve OLE DB arabirimleri ile ilgili bilgi sahibi olmalıdır. OLE DB ile ilgili bilgi sahibi değilseniz bkz [OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms718124).  
   
 OLE DB Şablonları, yeni bir nesne modeli eklemek yerine var olan OLE DB Nesne modeli destekler. OLE DB Tüketici Şablonları üst düzey sınıflar, OLE DB belirtiminde tanımlanan bileşenleri paralel. OLE DB Tüketici Şablonları tasarımını üzerinde bir satır kümesinde çoklu erişimci gibi gelişmiş özellikleri içerir. Şablonları ve birden çok devralma kitaplığı, küçük ve esnek hale getirir.  
   
@@ -71,5 +71,5 @@ Daha fazla bilgi için aşağıdaki konulara bakın:
 
 [OLE DB Programlama](../../data/oledb/ole-db-programming.md)<br/>
 [Veri Erişimi](../data-access-in-cpp.md)<br/>
-[OLE DB SDK Belgeleri](/previous-versions/windows/desktop/ms722784\(v=vs.85\))   
-[OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643\(v=vs.85\))
+[OLE DB SDK Belgeleri](/previous-versions/windows/desktop/ms722784)   
+[OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643)

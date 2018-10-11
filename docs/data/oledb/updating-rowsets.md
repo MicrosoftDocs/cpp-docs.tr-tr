@@ -18,18 +18,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0c662099f3e7c42b75dc0cf197117144790f9df1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: be82fb1c1f77ae3204bed54257062f362d286844
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46108358"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083833"
 ---
 # <a name="updating-rowsets"></a>Satır Kümelerini Güncelleştirme
 
 Çok basit bir veritabanı işlemi, güncelleştirme veya veri deposuna veri yazma sağlamaktır. OLE DB'de güncelleştirme mekanizmasını basittir: tüketici uygulamanızın bağımlı veri üyelerinin değerlerini ayarlar ve sonra bu değerleri satır kümesi için; yazar Tüketici, sağlayıcı veri deposunda güncelleştirme ardından ister.  
   
-Tüketiciler, satır kümesi veri güncelleştirmeleri aşağıdaki türde gerçekleştirebilir: bir satırdaki sütun değerleri ayarlama, satır ekleme ve bir satırın silinmesi. OLE DB Şablon sınıfı bu işlemleri gerçekleştirmek için [CRowset](../../data/oledb/crowset-class.md) uygulayan [IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\)) arabirim ve aşağıdaki arabirim yöntemini geçersiz kılar:  
+Tüketiciler, satır kümesi veri güncelleştirmeleri aşağıdaki türde gerçekleştirebilir: bir satırdaki sütun değerleri ayarlama, satır ekleme ve bir satırın silinmesi. OLE DB Şablon sınıfı bu işlemleri gerçekleştirmek için [CRowset](../../data/oledb/crowset-class.md) uygulayan [IRowsetChange](/previous-versions/windows/desktop/ms715790) arabirim ve aşağıdaki arabirim yöntemini geçersiz kılar:  
   
 - [SetData](../../data/oledb/crowset-setdata.md) değişiklikleri sütun bir satır kümesi bir satır değerleri; için SQL güncelleştirme komut eşdeğerdir.  
   
@@ -223,4 +223,4 @@ Son olarak, değişiklikleri ertelemek için bir temel nedeni geri almak mümkü
 
 [OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)<br/>
 [CRowset Sınıfı](../../data/oledb/crowset-class.md)<br/>
-[IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\))
+[IRowsetChange](/previous-versions/windows/desktop/ms715790)

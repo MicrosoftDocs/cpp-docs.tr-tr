@@ -51,12 +51,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 74ad27ba1c56fe08bd6e155016d340ffc2d26d0a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8cbfa7dc712755790b3a398db3377a8faccd4525
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46051446"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084028"
 ---
 # <a name="csession-class"></a>CSession Sınıfı
 
@@ -103,7 +103,7 @@ HRESULT Abort(BOID* pboidReason = NULL,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [Iİşlem::Durdur](/previous-versions/windows/desktop/ms709833\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [Iİşlem::Durdur](/previous-versions/windows/desktop/ms709833) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -137,7 +137,7 @@ HRESULT Commit(BOOL bRetaining = FALSE,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [ITransaction::Commit](/previous-versions/windows/desktop/ms713008\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [ITransaction::Commit](/previous-versions/windows/desktop/ms713008) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -145,7 +145,7 @@ Standart bir HRESULT.
   
 ### <a name="remarks"></a>Açıklamalar  
 
-Daha fazla bilgi için [ITransaction::Commit](/previous-versions/windows/desktop/ms713008\(v=vs.85\)).  
+Daha fazla bilgi için [ITransaction::Commit](/previous-versions/windows/desktop/ms713008).  
 
 ## <a name="gettransactioninfo"></a> CSession::gettransactionınfo
 
@@ -159,7 +159,7 @@ HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -167,7 +167,7 @@ Standart bir HRESULT.
   
 ### <a name="remarks"></a>Açıklamalar  
 
-Daha fazla bilgi için [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
+Daha fazla bilgi için [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="open"></a> CSession::Open
 
@@ -187,10 +187,10 @@ HRESULT Open(const CDataSource& ds,
 [in] Oturum açılacak olan veri kaynağı.  
   
 *pPropSet*<br/>
-[in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.  
+[in] Bir dizi işaretçi [DBPROPSET](/previous-versions/windows/desktop/ms714367) özelliklerini ve değerlerini ayarlamak için içeren yapılar. Bkz: [özellik kümeleri ve özellik gruplarını](/previous-versions/windows/desktop/ms713696) içinde *OLE DB Programcının Başvurusu* Windows SDK içinde.  
   
 *ulPropSets*<br/>
-[in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) yapıları geçirilen *pPropSet* bağımsız değişken.  
+[in] Sayısını [DBPROPSET](/previous-versions/windows/desktop/ms714367) yapıları geçirilen *pPropSet* bağımsız değişken.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -215,7 +215,7 @@ HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -223,7 +223,7 @@ Standart bir HRESULT.
   
 ### <a name="remarks"></a>Açıklamalar  
 
-Daha fazla bilgi için [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
+Daha fazla bilgi için [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786) içinde *OLE DB Programcının Başvurusu*. 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 

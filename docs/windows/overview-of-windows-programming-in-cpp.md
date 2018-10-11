@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0ddfd6de46d6d0700265f5308f06458b3cdd984a
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: b2870aa742806671e39728c3b73604dcf4e810e9
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677833"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083092"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
 
@@ -58,7 +58,7 @@ Tüm Bu kavramlar hakkında daha fazla bilgi almak için bkz. [Evrensel Windows 
 
 ##  <a name="BK_Native"></a> Masaüstü ve sunucu uygulamaları
 
-Masaüstü için Windows istemci uygulamaları yazmanın temellerini öğrenmek için bkz. [C++'ta Windows uygulamaları geliştirme](https://msdn.microsoft.com/vstudio//hh304489) ve [C++'ta Windows programlamaya giriş](https://msdn.microsoft.com/library/windows/desktop/ff381398\(v=vs.85\).aspx).
+Masaüstü için Windows istemci uygulamaları yazmanın temellerini öğrenmek için bkz. [C++'ta Windows uygulamaları geliştirme](https://msdn.microsoft.com/vstudio//hh304489) ve [C++'ta Windows programlamaya giriş](https://msdn.microsoft.com/library/windows/desktop/ff381398).
 
 Windows 10'da, pek çok masaüstü programları oluşturmak için Visual C++ kullanabilirsiniz:
 

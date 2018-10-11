@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b860084b12f285effff7cf3c8fc74409a9baf4a3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c34c70f1bca3091ba078846b7b94ad947d5f31cb
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389583"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083118"
 ---
 # <a name="cdbexception-class"></a>CDBException sınıfı
 
@@ -142,7 +142,7 @@ Dize, alfasayısal koşullarında hata açıklar. Daha ayrıntılı bilgi ve ör
 
 Dize biçimi kodları sırayla açıklayan değerler tarafından değiştirildiği desene form "durumu: % s, yerel: % ld kaynağı: % s'ın" şöyledir:
 
-- Beş karakterli hata kodu içeren null ile sonlandırılmış bir dize döndürdü SQLSTATE *szSqlState* ODBC işlevinin parametresi `SQLError`. SQLSTATE değerleri Ek A'da listelenen [ODBC hata kodları](/previous-versions/windows/desktop/ms714687\(v=vs.85\)), *ODBC Programcının Başvurusu*. Örnek: "S0022".
+- Beş karakterli hata kodu içeren null ile sonlandırılmış bir dize döndürdü SQLSTATE *szSqlState* ODBC işlevinin parametresi `SQLError`. SQLSTATE değerleri Ek A'da listelenen [ODBC hata kodları](/previous-versions/windows/desktop/ms714687), *ODBC Programcının Başvurusu*. Örnek: "S0022".
 
 - Veri kaynağı için özel yerel hata kodunu döndürdü *pfNativeError* parametresinin `SQLError` işlevi. Örnek: 207'de.
 
@@ -150,7 +150,7 @@ Dize biçimi kodları sırayla açıklayan değerler tarafından değiştirildi�
 
 Framework hata dizesi yorumlar ve bileşenlerine koyar `m_strStateNativeOrigin`if `m_strStateNativeOrigin` bilgilerini içeren karakterleriyle ayrılan birden fazla hata için hataları. Framework alfasayısal hata metne koyar `m_strError`.
 
-Bu dize yapmak için kullanılan kodları hakkında ek bilgi için bkz. [SQLError](/previous-versions/windows/desktop/ms716312\(v=vs.85\)) işlevi *ODBC Programcının Başvurusu*.
+Bu dize yapmak için kullanılan kodları hakkında ek bilgi için bkz. [SQLError](/previous-versions/windows/desktop/ms716312) işlevi *ODBC Programcının Başvurusu*.
 
 ### <a name="example"></a>Örnek
 

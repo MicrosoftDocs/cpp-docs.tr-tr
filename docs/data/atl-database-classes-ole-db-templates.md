@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8dcefa3068cb27514671094194ba590e99402b05
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6defe70a018fe954a0daa2d1a4b49142a9a37884
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021103"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49081951"
 ---
 # <a name="atl-database-classes-ole-db-templates"></a>ATL Veritabanı Sınıfları (OLE DB Şablonları)
 
@@ -40,7 +40,7 @@ Ayrıca, [OLE DB tüketici öznitelikleri](../windows/ole-db-consumer-attributes
   
 MFC Kitaplığı sınıfını içeren Not [COleDBRecordView](../mfc/reference/coledbrecordview-class.md), denetimlerde veritabanı kayıtlarını görüntüleyen. Doğrudan bağlı bir form görünümü görünümdür bir `CRowset` nesne ve alanlarını görüntüler `CRowset` iletişim şablonun denetimlerinde nesne.  
   
-Daha fazla bilgi için [OLE DB programlama](../data/oledb/ole-db-programming.md) ve [OLE DB Programcı Kılavuzu](/previous-versions/windows/desktop/ms713643\(v=vs.85\)).  
+Daha fazla bilgi için [OLE DB programlama](../data/oledb/ole-db-programming.md) ve [OLE DB Programcı Kılavuzu](/previous-versions/windows/desktop/ms713643).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 

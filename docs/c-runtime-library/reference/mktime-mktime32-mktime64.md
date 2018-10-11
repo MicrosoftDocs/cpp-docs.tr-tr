@@ -41,12 +41,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cc8fbe595259b0f5e59d3ac844710222042540c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 68211c3807893d28adb5e90e8863967b7f60318f
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206074"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083573"
 ---
 # <a name="mktime-mktime32-mktime64"></a>mktime, _mktime32, _mktime64
 
@@ -93,7 +93,7 @@ Bu işlevler, doğrulamak ve tm yapısında doldurmak için kullanılabilir. Ba�
 
 - Bir değeri sıfırdan küçük C çalışma zamanı kitaplık kodu için standart saat veya gün ışığından yararlanma etkin olup olmadığını işlem.
 
-C çalışma zamanı kitaplığı gün ışığından tasarruf zamanı davranışından belirleyecek [TZ](tzset.md) ortam değişkeni. Varsa **TZ** ayarlanmadı, Win32 API çağrısı [GetTimeZoneInformation](https://msdn.microsoft.com/library/windows/desktop/ms724421.aspx) günışığından işletim sisteminden saat bilgilerini almak için kullanılır. Bu başarısız olursa, Amerika Birleşik Devletleri kuralları Yaz Saati hesaplama uygulamak için kullanılan kitaplık varsayar. **tm_isdst** gerekli bir alandır. Yoksa değerine ayarlanırsa, tanımsız olur ve bu işlevlerin dönüş değeri tahmin edilemez. Varsa *timeptr* işaret eden bir **tm** önceki bir çağrı tarafından döndürülen yapısı [asctime](asctime-wasctime.md), [gmtime](gmtime-gmtime32-gmtime64.md), veya [localtime](localtime-localtime32-localtime64.md) (veya türevleri bu işlevlerin) **tm_isdst** alan geçerli bir değer içerir.
+C çalışma zamanı kitaplığı gün ışığından tasarruf zamanı davranışından belirleyecek [TZ](tzset.md) ortam değişkeni. Varsa **TZ** ayarlanmadı, Win32 API çağrısı [GetTimeZoneInformation](/windows/desktop/api/timezoneapi/nf-timezoneapi-gettimezoneinformation) günışığından işletim sisteminden saat bilgilerini almak için kullanılır. Bu başarısız olursa, Amerika Birleşik Devletleri kuralları Yaz Saati hesaplama uygulamak için kullanılan kitaplık varsayar. **tm_isdst** gerekli bir alandır. Yoksa değerine ayarlanırsa, tanımsız olur ve bu işlevlerin dönüş değeri tahmin edilemez. Varsa *timeptr* işaret eden bir **tm** önceki bir çağrı tarafından döndürülen yapısı [asctime](asctime-wasctime.md), [gmtime](gmtime-gmtime32-gmtime64.md), veya [localtime](localtime-localtime32-localtime64.md) (veya türevleri bu işlevlerin) **tm_isdst** alan geçerli bir değer içerir.
 
 Unutmayın **gmtime** ve **localtime** (ve **_gmtime32**, **_gmtime64**, **_localtime32**, ve **_localtime64**) dönüştürme için iş parçacığı başına tek bir arabellek kullanın. Bu arabelleğin sağlarsanız **mktime**, **_mktime32** veya **_mktime64**, önceki içeriği yok edilir.
 

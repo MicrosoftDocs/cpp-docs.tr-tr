@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7ab24f981e90342a679b1a0a542b540192fee06e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a98848799163fd31037dc137b92b94878a1ee675
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107863"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082468"
 ---
 # <a name="supporting-notifications"></a>Bildirimleri Destekleme
 
@@ -33,7 +33,7 @@ ms.locfileid: "46107863"
 
 Bildirimleri uygulamak için bir sağlayıcı sınıfı devralmalıdır [IRowsetNotifyCP](../../data/oledb/irowsetnotifycp-class.md) ve [IConnectionPointContainer](../../atl/reference/iconnectionpointcontainerimpl-class.md).  
   
-`IRowsetNotifyCP` Sağlayıcı sitesi için bağlantı noktası arabirimi uygulayan [IRowsetNotify](/previous-versions/windows/desktop/ms712959\(v=vs.85\)). `IRowsetNotifyCP` uygular bağlantı noktası üzerinde dinleyici bildirmek için işlevleri yayın `IID_IRowsetNotify` değişiklik kümesi içeriği.  
+`IRowsetNotifyCP` Sağlayıcı sitesi için bağlantı noktası arabirimi uygulayan [IRowsetNotify](/previous-versions/windows/desktop/ms712959). `IRowsetNotifyCP` uygular bağlantı noktası üzerinde dinleyici bildirmek için işlevleri yayın `IID_IRowsetNotify` değişiklik kümesi içeriği.  
   
 Ayrıca uygulama ve kaydetme gerekir unutmayın `IRowsetNotify` Tüketici (havuz olarak da bilinir) kullanarak [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) tüketici bildirimleri işleyebilmeniz. Bağlantı noktası arabirimi tüketiciye uygulama hakkında daha fazla bilgi için bkz: [bildirimleri alma](../../data/oledb/receiving-notifications.md).  
   

@@ -63,16 +63,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 67510ada7af557877f427d757200a48c0df95fe9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f13da3ed0b1f2193ab86e1644d401a6e4fb6b942
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054122"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082871"
 ---
 # <a name="irowsetupdateimpl-class"></a>IRowsetUpdateImpl Sınıfı
 
-OLE DB Şablonları uygulamasının [IRowsetUpdate](/previous-versions/windows/desktop/ms714401\(v=vs.85\)) arabirimi.  
+OLE DB Şablonları uygulamasının [IRowsetUpdate](/previous-versions/windows/desktop/ms714401) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -146,7 +146,7 @@ Sağlayıcı tarafından tutulan tüm olan satır işleyicilerini depolama birim
   
 ## <a name="remarks"></a>Açıklamalar  
 
-Önce okumanız ve belgelerine anlamanız [IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\)), burada açıklanan her şeyin de burada geçerlidir. Bölüm 6 de okumalıdır *OLE DB Programcının Başvurusu* veri ayarlama.  
+Önce okumanız ve belgelerine anlamanız [IRowsetChange](/previous-versions/windows/desktop/ms715790), burada açıklanan her şeyin de burada geçerlidir. Bölüm 6 de okumalıdır *OLE DB Programcının Başvurusu* veri ayarlama.  
   
 `IRowsetUpdateImpl` OLE DB uygulayan `IRowsetUpdate` yapılan değişikliklerle iletimini gecikme tüketiciler sağlayan arabirimi `IRowsetChange` için veri kaynağını seçin ve iletimden önce değişiklikleri geri al.  
   
@@ -173,7 +173,7 @@ STDMETHOD (SetData )(HROW hRow,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
 
@@ -193,7 +193,7 @@ STDMETHOD (GetOriginalData )(HROW hRow,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [IRowsetUpdate::GetOriginalData](/previous-versions/windows/desktop/ms709947\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.   
+Bkz: [IRowsetUpdate::GetOriginalData](/previous-versions/windows/desktop/ms709947) içinde *OLE DB Programcının Başvurusu*.   
 
 ## <a name="getpendingrows"></a> IRowsetUpdateImpl::getpendingrows
 
@@ -212,13 +212,13 @@ STDMETHOD (GetPendingRows )(HCHAPTER /* hReserved */,
 #### <a name="parameters"></a>Parametreler  
 
 *hReserved*<br/>
-[in] Karşılık gelen *hChapter* parametresinde [IRowsetUpdate::GetPendingRows](/previous-versions/windows/desktop/ms719626\(v=vs.85\)).  
+[in] Karşılık gelen *hChapter* parametresinde [IRowsetUpdate::GetPendingRows](/previous-versions/windows/desktop/ms719626).  
   
-Diğer parametreler için bkz: [IRowsetUpdate::GetPendingRows](/previous-versions/windows/desktop/ms719626\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Diğer parametreler için bkz: [IRowsetUpdate::GetPendingRows](/previous-versions/windows/desktop/ms719626) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
 
-Daha fazla bilgi için [IRowsetUpdate::GetPendingRows](/previous-versions/windows/desktop/ms719626\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Daha fazla bilgi için [IRowsetUpdate::GetPendingRows](/previous-versions/windows/desktop/ms719626) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="getrowstatus"></a> IRowsetUpdateImpl::getrowstatus
 
@@ -236,9 +236,9 @@ STDMETHOD (GetRowStatus )(HCHAPTER /* hReserved */,
 #### <a name="parameters"></a>Parametreler  
 
 *hReserved*<br/>
-[in] Karşılık gelen *hChapter* parametresinde [IRowsetUpdate::GetRowStatus](/previous-versions/windows/desktop/ms724377\(v=vs.85\)).  
+[in] Karşılık gelen *hChapter* parametresinde [IRowsetUpdate::GetRowStatus](/previous-versions/windows/desktop/ms724377).  
   
-Diğer parametreler için bkz: [IRowsetUpdate::GetRowStatus](/previous-versions/windows/desktop/ms724377\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Diğer parametreler için bkz: [IRowsetUpdate::GetRowStatus](/previous-versions/windows/desktop/ms724377) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="undo"></a> IRowsetUpdateImpl::Undo
 
@@ -258,15 +258,15 @@ STDMETHOD (Undo )(HCHAPTER /* hReserved */,
 #### <a name="parameters"></a>Parametreler  
 
 *hReserved*<br/>
-[in] Karşılık gelen *hChapter* parametresinde [IRowsetUpdate::Undo](/previous-versions/windows/desktop/ms719655\(v=vs.85\)).  
+[in] Karşılık gelen *hChapter* parametresinde [IRowsetUpdate::Undo](/previous-versions/windows/desktop/ms719655).  
   
 *pcRowsUndone*<br/>
-[out] Karşılık gelen *pcRows* parametresinde [IRowsetUpdate::Undo](/previous-versions/windows/desktop/ms719655\(v=vs.85\)).  
+[out] Karşılık gelen *pcRows* parametresinde [IRowsetUpdate::Undo](/previous-versions/windows/desktop/ms719655).  
   
 *prgRowsUndone*<br/>
-[in] Karşılık gelen *prgRows* parametresinde [IRowsetUpdate::Undo](/previous-versions/windows/desktop/ms719655\(v=vs.85\)).  
+[in] Karşılık gelen *prgRows* parametresinde [IRowsetUpdate::Undo](/previous-versions/windows/desktop/ms719655).  
   
-Diğer parametreler için bkz: [IRowsetUpdate::Undo](/previous-versions/windows/desktop/ms719655\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
+Diğer parametreler için bkz: [IRowsetUpdate::Undo](/previous-versions/windows/desktop/ms719655) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="update"></a> IRowsetUpdateImpl::Update
 
@@ -286,13 +286,13 @@ STDMETHOD (Update )(HCHAPTER /* hReserved */,
 #### <a name="parameters"></a>Parametreler  
 
 *hReserved*<br/>
-[in] Karşılık gelen *hChapter* parametresinde [IRowsetUpdate::Update](/previous-versions/windows/desktop/ms719709\(v=vs.85\)).  
+[in] Karşılık gelen *hChapter* parametresinde [IRowsetUpdate::Update](/previous-versions/windows/desktop/ms719709).  
   
-Diğer parametreler için bkz: [IRowsetUpdate::Update](/previous-versions/windows/desktop/ms719709\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Diğer parametreler için bkz: [IRowsetUpdate::Update](/previous-versions/windows/desktop/ms719709) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
 
-Değişiklikleri çağırarak aktarılır [IRowsetChangeImpl::flushdata](../../data/oledb/irowsetchangeimpl-flushdata.md). Tüketici çağırmalıdır [CRowset::Update](../../data/oledb/crowset-update.md) değişikliklerin etkili olması. Ayarlama *prgRowstatus* açıklandığı gibi uygun bir değere [satır durumları](/previous-versions/windows/desktop/ms722752\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
+Değişiklikleri çağırarak aktarılır [IRowsetChangeImpl::flushdata](../../data/oledb/irowsetchangeimpl-flushdata.md). Tüketici çağırmalıdır [CRowset::Update](../../data/oledb/crowset-update.md) değişikliklerin etkili olması. Ayarlama *prgRowstatus* açıklandığı gibi uygun bir değere [satır durumları](/previous-versions/windows/desktop/ms722752) içinde *OLE DB Programcının Başvurusu*. 
   
 ## <a name="isupdateallowed"></a> IRowsetUpdateImpl::ısupdateallowed
 
@@ -319,7 +319,7 @@ HRESULT IsUpdateAllowed(DBPENDINGSTATUS /* [in] */ /* status */,
   
 ### <a name="remarks"></a>Açıklamalar  
 
-Bir güncelleştirme izin verilmesi gerektiğini belirlerseniz, S_OK döndürür; Aksi takdirde E_FAIL döndürür. Bir güncelleştirme izin verirseniz, ayrıca ayarlamanız gerekir `DBROWSTATUS` içinde [IRowsetUpdateImpl::Update](../../data/oledb/irowsetupdateimpl-update.md) uygun bir [satır durumu](/previous-versions/windows/desktop/ms722752\(v=vs.85\)).  
+Bir güncelleştirme izin verilmesi gerektiğini belirlerseniz, S_OK döndürür; Aksi takdirde E_FAIL döndürür. Bir güncelleştirme izin verirseniz, ayrıca ayarlamanız gerekir `DBROWSTATUS` içinde [IRowsetUpdateImpl::Update](../../data/oledb/irowsetupdateimpl-update.md) uygun bir [satır durumu](/previous-versions/windows/desktop/ms722752).  
 
 ## <a name="mapcacheddata"></a> IRowsetUpdateImpl::m_mapcacheddata
 

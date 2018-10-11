@@ -138,12 +138,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8b421bcc84152fede78ca985bbf2896f42a148fe
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b9d1982e1da6526c1c9db607062a66b163f912ce
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46100465"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083677"
 ---
 # <a name="cdynamicaccessor-class"></a>CDynamicAccessor Sınıfı
 
@@ -167,7 +167,7 @@ class CDynamicAccessor : public CAccessorBase
 |-|-|  
 |[AddBindEntry](#addbindentry)|Çıktı sütunları için varsayılan erişimciyi geçersiz kılma bir bağlama girişi ekler.|  
 |[CDynamicAccessor](#cdynamicaccessor)|Oluşturur ve başlatır `CDynamicAccessor` nesne.|  
-|[Kapat](#close)|Tüm sütunları bağlantısını keser, ayrılan belleği serbest bırakır ve serbest [IAccessor](/previous-versions/windows/desktop/ms719672\(v=vs.85\)) sınıfında arabirim işaretçisi.|  
+|[Kapat](#close)|Tüm sütunları bağlantısını keser, ayrılan belleği serbest bırakır ve serbest [IAccessor](/previous-versions/windows/desktop/ms719672) sınıfında arabirim işaretçisi.|  
 |[GetBlobHandling](#getblobhandling)|Geçerli satırı için değer işleme BLOB alır.|  
 |[GetBlobSizeLimit](#getblobsizelimit)|En yüksek BLOB boyutu bayt cinsinden alır.|  
 |[GetBookmark](#getbookmark)|Geçerli satır için yer alır.|  
@@ -207,7 +207,7 @@ HRESULT AddBindEntry(const DBCOLUMNINFO& info) throw();
 #### <a name="parameters"></a>Parametreler  
 
 *Bilgileri*<br/>
-[in] A `DBCOLUMNINFO` sütun bilgileri içeren yapısı. "DBCOLUMNINFO yapıları" bakın [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+[in] A `DBCOLUMNINFO` sütun bilgileri içeren yapısı. "DBCOLUMNINFO yapıları" bakın [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -244,7 +244,7 @@ Belirtebilirsiniz nasıl `CDynamicAccessor` niteleyen BLOB veri sütunu veri iş
 
 ## <a name="close"></a> CDynamicAccessor::Close
 
-Tüm sütunları bağlantısını keser, ayrılan belleği serbest bırakır ve serbest [IAccessor](/previous-versions/windows/desktop/ms719672\(v=vs.85\)) sınıfında arabirim işaretçisi.  
+Tüm sütunları bağlantısını keser, ayrılan belleği serbest bırakır ve serbest [IAccessor](/previous-versions/windows/desktop/ms719672) sınıfında arabirim işaretçisi.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -334,7 +334,7 @@ bool GetColumnFlags(DBORDINAL nColumn,
 [in] Sütun numarası. Sütun numaraları 1 ile başlayın. 0 değeri, varsa, yer işareti sütunu, ifade eder.  
   
 *pFlags*<br/>
-[out] Sütun özelliklerini açıklayan bir bit maskesi için bir işaretçi. "DBCOLUMNFLAGS numaralandırılmış tür" bölümüne bakın [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+[out] Sütun özelliklerini açıklayan bir bit maskesi için bir işaretçi. "DBCOLUMNFLAGS numaralandırılmış tür" bölümüne bakın [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -360,13 +360,13 @@ HRESULT GetColumnInfo(IRowset* pRowset,
 #### <a name="parameters"></a>Parametreler  
 
 *pRowset*<br/>
-[in] Bir işaretçi [IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\)) arabirimi.  
+[in] Bir işaretçi [IRowset](/previous-versions/windows/desktop/ms720986) arabirimi.  
   
 *pColumns*<br/>
 [out] Hangi sütunların satır kümesi döndürmek bellekte bir işaretçi; varsa, bu sayı yer işareti sütunu içerir.  
   
 *ppColumnInfo*<br/>
-[out] Bir dizi döndürülecek bellekte bir işaretçiye `DBCOLUMNINFO` yapıları. "DBCOLUMNINFO yapıları" bakın [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+[out] Bir dizi döndürülecek bellekte bir işaretçiye `DBCOLUMNINFO` yapıları. "DBCOLUMNINFO yapıları" bakın [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) içinde *OLE DB Programcının Başvurusu*.  
   
 *ppStringsBuffer*<br/>
 [out] Bellek, depolama, tüm dize değerleri için bir işaretçiyi döndürmek bir işaretçi (ya da içinde kullanılan adları *ColumnID* veya *pwszName*) tek bir ayırma bloğu içinde.  
@@ -377,7 +377,7 @@ Standart HRESULT değerlerinden biri.
   
 ### <a name="remarks"></a>Açıklamalar  
 
-Bkz: [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* veri türleri hakkında bilgi için `DBORDINAL`, `DBCOLUMNINFO`, ve `OLECHAR`.  
+Bkz: [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) içinde *OLE DB Programcının Başvurusu* veri türleri hakkında bilgi için `DBORDINAL`, `DBCOLUMNINFO`, ve `OLECHAR`.  
 
 ## <a name="getcolumnname"></a> CDynamicAccessor::GetColumnName
 
@@ -509,7 +509,7 @@ bool GetStatus(const WCHAR* pColumnName,
 [in] Sütun adı içeren bir karakter dizesine bir işaretçi.  
   
 *pStatus*<br/>
-[out] Sütun durumu içeren değişken bir işaretçi. Bkz: [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.  
+[out] Sütun durumu içeren değişken bir işaretçi. Bkz: [DBSTATUS](/previous-versions/windows/desktop/ms722617) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -667,7 +667,7 @@ bool SetStatus(const WCHAR* pColumnName,
 [in] Sütun numarası. Sütun numaraları 1 ile başlayın. 0 değeri, varsa, yer işareti sütunu, ifade eder.  
   
 *Durumu*<br/>
-[in] Sütun durumu. Bkz: [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.  
+[in] Sütun durumu. Bkz: [DBSTATUS](/previous-versions/windows/desktop/ms722617) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.  
   
 *pColumnName*<br/>
 [in] Sütun adı içeren bir karakter dizesine bir işaretçi.  

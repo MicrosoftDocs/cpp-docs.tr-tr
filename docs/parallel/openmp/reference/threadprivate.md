@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9313934744f6eae66736f25b0d0b8592743cf12
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3b769b5aa5f46b9a4b815424a0c4178cf4504ab5
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376986"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082442"
 ---
 # <a name="threadprivate"></a>threadprivate
 
@@ -46,7 +46,7 @@ Daha fazla bilgi için [2.7.1 threadprivate yönergesi](../../../parallel/openmp
 
 `threadprivate` Yönergesi temel [iş parçacığı](../../../cpp/thread.md) `__declspec` öznitelik; barındırabileceğiniz **gt;__declspec(thread)** uygulamak `threadprivate`.
 
-Kullanamazsınız `threadprivate` aracılığıyla yüklenen herhangi bir DLL içinde [LoadLibrary](https://msdn.microsoft.com/library/windows/desktop/ms684175).  Bu ile yüklenen DLL'ler içerir [/delayload (gecikme yükü içe)](../../../build/reference/delayload-delay-load-import.md), kullanan **LoadLibrary**.
+Kullanamazsınız `threadprivate` aracılığıyla yüklenen herhangi bir DLL içinde [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya).  Bu ile yüklenen DLL'ler içerir [/delayload (gecikme yükü içe)](../../../build/reference/delayload-delay-load-import.md), kullanan **LoadLibrary**.
 
 Kullanabileceğiniz `threadprivate` işlem başlangıçta statik olarak yüklenen bir DLL içinde.
 

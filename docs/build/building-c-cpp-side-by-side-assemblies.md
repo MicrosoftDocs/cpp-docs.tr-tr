@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e3c80b383c592d3eebf892981c088e26529c515
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 93e02ee27fb8b5a1f4f4f7b2e435a737e1c637a2
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860946"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083850"
 ---
 # <a name="building-cc-side-by-side-assemblies"></a>C/C++ Yan Yana Derlemeleri Oluşturma
 
@@ -30,7 +30,7 @@ Visual C++ uygulaması, bir veya birden çok uygulamanın farklı kısımların�
 Varsayılan olarak, Visual Studio ile bir DLL derlenirken, sahip bir [uygulama bildirimini](/windows/desktop/SbsCs/application-manifests) kimliği 2'ye eşit olan bir rt_manıfest kaynak olarak gömülü. Yalnızca bir yürütülebilir dosya olduğu gibi bu bildirim diğer derlemeleri bu DLL bağımlılıkları açıklar. Bu DLL, yan yana derlemenin parçası değildir ve bu DLL bağımlı uygulamaları yükler, ancak bunun yerine sistem yolunda bu DLL bulmak için işletim sistemi yükleyicisi kullanan bir uygulama bildirimi kullanmanız yapmayacağınız varsayar.
 
 > [!NOTE]
-> Kimliği 2'ye eşit olan bir kaynak olarak gömülü bildirimle sağlamak için bir uygulama bildirimi kullanan bir DLL için önemlidir. DLL çalışma zamanında dinamik olarak yüklenirse (örneğin, kullanarak [LoadLibrary](https://msdn.microsoft.com/library/windows/desktop/ms684175) işlevi), işletim sistemi yükleyicisi DLL'nin bildiriminde belirtilen bağımlı derlemeleri yükler. DLL için bir dış uygulama bildirimi sırasında işaretli bir `LoadLibrary` çağırın. Bildirim gömülü değilse yükleyici yanlış derlemelerin sürümleri yüklenemiyor veya bağımlı derlemeleri bulmak için bulma başarısız deneyebilir.
+> Kimliği 2'ye eşit olan bir kaynak olarak gömülü bildirimle sağlamak için bir uygulama bildirimi kullanan bir DLL için önemlidir. DLL çalışma zamanında dinamik olarak yüklenirse (örneğin, kullanarak [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) işlevi), işletim sistemi yükleyicisi DLL'nin bildiriminde belirtilen bağımlı derlemeleri yükler. DLL için bir dış uygulama bildirimi sırasında işaretli bir `LoadLibrary` çağırın. Bildirim gömülü değilse yükleyici yanlış derlemelerin sürümleri yüklenemiyor veya bağımlı derlemeleri bulmak için bulma başarısız deneyebilir.
 
 Bir veya birkaç ilgili dll paketlenmiş ilgili bir yan yana derleme içine [derleme bildirimi](/windows/desktop/SbsCs/assembly-manifests), diğer yan yana üzerinde hangi dosyaların derleme bağımlılığı yanı sıra derleme form açıklar bütünleştirilmiş kodları.
 

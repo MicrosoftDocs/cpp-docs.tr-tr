@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 163949c4421cca8e4d5e414a18bda4ed98f32d3d
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 2555bdd9c1de130cd692131c12b7b2afc37537be
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861648"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083053"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketicisi Sihirbazı
 
@@ -36,7 +36,7 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 
 - **Veri kaynağı**
 
-   **Veri kaynağı** düğmesi belirtilen OLE DB sağlayıcısı kullanılarak belirtilen veri kaynağını ayarlamanıza imkan sağlar. Bu düğmeye tıkladığınızda **veri bağlantı özellikleri** iletişim kutusu görüntülenir. Bağlantı dizeleri derleme hakkında daha fazla bilgi ve **veri bağlantı özellikleri** iletişim kutusu, bkz: [veri bağlantısı API'sine genel bakış](/previous-versions/windows/desktop/ms718102\(v=vs.85\)) Windows SDK belgelerinde.
+   **Veri kaynağı** düğmesi belirtilen OLE DB sağlayıcısı kullanılarak belirtilen veri kaynağını ayarlamanıza imkan sağlar. Bu düğmeye tıkladığınızda **veri bağlantı özellikleri** iletişim kutusu görüntülenir. Bağlantı dizeleri derleme hakkında daha fazla bilgi ve **veri bağlantı özellikleri** iletişim kutusu, bkz: [veri bağlantısı API'sine genel bakış](/previous-versions/windows/desktop/ms718102) Windows SDK belgelerinde.
 
    Aşağıdaki ek bilgileri sekmeleri açıklar **veri bağlantı özellikleri** iletişim kutusu.
 
@@ -177,7 +177,7 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 
 - **Destek**
 
-   (Varsayılan, Yok'tur) tüketicide desteklenmesi için güncelleştirmeleri türlerini belirtmek için onay kutularını seçin. Aşağıdakilerin her biri ayarlayacak [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892\(v=vs.85\)) ve uygun girişleri [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676\(v=vs.85\)) eşleme özelliğini ayarlayın.
+   (Varsayılan, Yok'tur) tüketicide desteklenmesi için güncelleştirmeleri türlerini belirtmek için onay kutularını seçin. Aşağıdakilerin her biri ayarlayacak [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892) ve uygun girişleri [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676) eşleme özelliğini ayarlayın.
 
    - **Değişiklik**
 
@@ -195,4 +195,4 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 
 [ATL OLE DB Tüketicisi](../../atl/reference/adding-an-atl-ole-db-consumer.md)<br/>
 [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Bağlantı dizelerini ve veri bağlantıları (OLE DB)](/previous-versions/windows/desktop/ms718376\(v=vs.85\))
+[Bağlantı dizelerini ve veri bağlantıları (OLE DB)](/previous-versions/windows/desktop/ms718376)

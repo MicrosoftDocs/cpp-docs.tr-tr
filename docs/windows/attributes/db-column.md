@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 42545b24bff14daf66f719a78ba414f1ae86c5c0
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 52b5c5bea282e4ebb4106d8e9c2fede40f375ae3
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789987"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083621"
 ---
 # <a name="dbcolumn"></a>db_column
 
@@ -45,23 +45,23 @@ Sıralı sütun sayısı (`DBCOLUMNINFO` sıralı) veya satır kümesi veri bağ
 ```
 
 *DbType*<br/>
-(İsteğe bağlı) Bir OLE DB [türü göstergesi](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) sütun girişi.
+(İsteğe bağlı) Bir OLE DB [türü göstergesi](/previous-versions/windows/desktop/ms711251) sütun girişi.
 
 *Duyarlık*<br/>
-(İsteğe bağlı) Sütun girişini kullanılacak hassasiyet. Ayrıntılar için açıklamasını görmek `bPrecision` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+(İsteğe bağlı) Sütun girişini kullanılacak hassasiyet. Ayrıntılar için açıklamasını görmek `bPrecision` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845)
 
 *Ölçek*<br/>
-(İsteğe bağlı) Sütun girişi için kullanılacak ölçek. Ayrıntılar için açıklamasını görmek `bScale` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+(İsteğe bağlı) Sütun girişi için kullanılacak ölçek. Ayrıntılar için açıklamasını görmek `bScale` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845)
 
 *Durumu*<br/>
-(İsteğe bağlı) Bu sütun durumunu tutmak için kullanılan bir üye değişkeni. Durum sütun değeri veri değeri NULL gibi diğer bazı değeri olup olmadığını gösterir. Olası değerler için bkz. [durumu](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
+(İsteğe bağlı) Bu sütun durumunu tutmak için kullanılan bir üye değişkeni. Durum sütun değeri veri değeri NULL gibi diğer bazı değeri olup olmadığını gösterir. Olası değerler için bkz. [durumu](/previous-versions/windows/desktop/ms722617) içinde *OLE DB Programcının Başvurusu*.
 
 *Uzunluğu*<br/>
 (İsteğe bağlı) Sütun boyutunu bayt cinsinden tutmak için kullanılan bir üye değişkeni.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**db_column** satır kümesindeki bir değişken için belirtilen tablo sütunu bağlar. OLE DB içinde yer alabilirler üye verileri sınırlandırır `IAccessor`-bağlama dayalı. Bu öznitelik normalde OLE DB Tüketici makroları kullanarak tanımlanan sütun eşlemesi ayarlar [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md), [END_COLUMN_MAP](../../data/oledb/end-column-map.md), ve [COLUMN_ENTRY](../../data/oledb/column-entry.md). Bunlar OLE DB işlemek [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) belirtilen sütun bağlamak için. Her üye ile işaretle **db_column** biçiminde bir sütunu giriş sütun eşlemesi içinde bir giriş özniteliği dolduracaktır. Bu nedenle, bu öznitelik Burada, sütun eşleme, diğer bir deyişle, komut veya tablo sınıfında koyabilirsiniz çağırın.
+**db_column** satır kümesindeki bir değişken için belirtilen tablo sütunu bağlar. OLE DB içinde yer alabilirler üye verileri sınırlandırır `IAccessor`-bağlama dayalı. Bu öznitelik normalde OLE DB Tüketici makroları kullanarak tanımlanan sütun eşlemesi ayarlar [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md), [END_COLUMN_MAP](../../data/oledb/end-column-map.md), ve [COLUMN_ENTRY](../../data/oledb/column-entry.md). Bunlar OLE DB işlemek [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845) belirtilen sütun bağlamak için. Her üye ile işaretle **db_column** biçiminde bir sütunu giriş sütun eşlemesi içinde bir giriş özniteliği dolduracaktır. Bu nedenle, bu öznitelik Burada, sütun eşleme, diğer bir deyişle, komut veya tablo sınıfında koyabilirsiniz çağırın.
 
 Kullanım **db_column** ya da birlikte [db_table](db-table.md) veya [db_command](db-command.md) öznitelikleri.
 

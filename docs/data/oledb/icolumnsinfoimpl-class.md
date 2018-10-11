@@ -38,16 +38,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: bde6a3947d7afa836d93387e80c9b7885b1bc15c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3a0b7bb8f430f2e132413fbb8bca2563c4fd7014
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099414"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083716"
 ---
 # <a name="icolumnsinfoimpl-class"></a>IColumnsInfoImpl Sınıfı
 
-Bir uygulamasını sağlar [IColumnsInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\)) arabirimi.  
+Bir uygulamasını sağlar [IColumnsInfo](/previous-versions/windows/desktop/ms724541) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -94,7 +94,7 @@ STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="mapcolumnids"></a> Icolumnsınfoımpl::mapcolumnıds
 
@@ -110,7 +110,7 @@ STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,
   
 #### <a name="parameters"></a>Parametreler  
 
-Bkz: [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+Bkz: [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200) içinde *OLE DB Programcının Başvurusu*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 

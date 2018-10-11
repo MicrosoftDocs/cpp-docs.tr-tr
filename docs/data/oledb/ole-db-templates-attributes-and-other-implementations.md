@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6e5fa63a0da718b80c2b0d61e5215a947e21d496
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8b2cbe36a933580edc09e8139dca0ed6ec090f90
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101725"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082663"
 ---
 # <a name="ole-db-templates-attributes-and-other-implementations"></a>OLE DB Şablonları, Öznitelikler ve Diğer Uygulamalar
 
@@ -36,7 +36,7 @@ Bu şablon kitaplığı iki bölümden oluşur:
   
 - **OLE DB sağlayıcı şablonları** bir OLE DB sunucusu (sağlayıcı) uygulama uygulamak için kullanılır.  
   
-OLE DB Şablonları kullanmak için C++ şablonları, COM ve OLE DB arabirimleri ile ilgili bilgi sahibi olmalıdır. OLE DB ile ilgili bilgi sahibi değilseniz bkz [OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643\(v=vs.85\)).  
+OLE DB Şablonları kullanmak için C++ şablonları, COM ve OLE DB arabirimleri ile ilgili bilgi sahibi olmalıdır. OLE DB ile ilgili bilgi sahibi değilseniz bkz [OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643).  
   
 Daha fazla bilgi için şunları yapabilirsiniz:  
   
@@ -48,7 +48,7 @@ Daha fazla bilgi için şunları yapabilirsiniz:
   
 - Listesine bakın [OLE DB Şablon örnekleri](https://github.com/Microsoft/VCSamples).  
   
-- Bkz: [OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643\(v=vs.85\)) (içinde Windows SDK'sı).  
+- Bkz: [OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643) (içinde Windows SDK'sı).  
   
 ## <a name="ole-db-attributes"></a>OLE DB öznitelikleri  
 
@@ -60,7 +60,7 @@ MFC Kitaplığı bir sınıfı olan [COleDBRecordView](../../mfc/reference/coled
   
 ## <a name="ole-db-sdk-interfaces"></a>OLE DB SDK arabirimleriyle  
 
-Burada OLE DB Şablonları, OLE DB işlevselliğini desteklemeyen durumlarda, OLE DB arabirimlerini kullanmanız gerekir. Daha fazla bilgi için [OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643\(v=vs.85\)) Windows SDK.  
+Burada OLE DB Şablonları, OLE DB işlevselliğini desteklemeyen durumlarda, OLE DB arabirimlerini kullanmanız gerekir. Daha fazla bilgi için [OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
