@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2798c4abe33e49d2ac6199ad6f9a1013805fde7b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0bcdb05230cdacbf626235e315e605414c435493
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424423"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163072"
 ---
 # <a name="networklinkregistry-class"></a>network_link_registry Sınıfı
 
@@ -124,7 +124,7 @@ Bir işaretçi için de Aranmakta olan bir blok `network_link_registry` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` bloğu bulunduysa `false` Aksi takdirde.
+**doğru** bloğu bulunduysa **false** Aksi takdirde.
 
 ##  <a name="count"></a> Sayısı
 
@@ -153,7 +153,7 @@ Bir blok, kaldırılacak işaretçisi bulunamadı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` bağlantıyı bulunan ve kaldırılmış `false` Aksi takdirde.
+**doğru** bağlantısı bulunan ve kaldırılmış **false** Aksi takdirde.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

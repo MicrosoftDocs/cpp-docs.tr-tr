@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 912cdb59a1841bbe3bbe3e71202a796a3e67a94e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 642b73f81146fa8df68d36ee3b63b1902ed66619
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390272"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162405"
 ---
 # <a name="iexecutionresource-structure"></a>IExecutionResource Yapısı
 
@@ -79,7 +79,7 @@ Geçerli abonelik düzeyi.
 
 Abonelik düzeyinde kaç çalışan iş parçacıkları donanım iş parçacığıyla ilişkilendirilmiş söyler. Bu, yalnızca Resource Manager abone iş parçacıkları ve iş parçacığı proxy etkin bir şekilde yürütülen sanal işlemci kökü biçiminde farkındadır iş parçacıklarını içerir.
 
-Yöntemini çağırarak [Ischedulerproxy::subscribecurrentthread](ischedulerproxy-structure.md#subscribecurrentthread), ya da yöntem [Ischedulerproxy::requestınitialvirtualprocessors](ischedulerproxy-structure.md#requestinitialvirtualprocessors) parametresiyle `doSubscribeCurrentThread` değerineayarlanırsa`true`bire bir donanım iş parçacığı abonelik düzeyini artırır. Aynı zamanda sonuç bir `IExecutionResource` aboneliği temsil eden arabirim. Karşılık gelen bir çağrı [Iexecutionresource::Remove](#remove) azaltır donanım iş parçacığının abonelik düzeyine göre bir.
+Yöntemini çağırarak [Ischedulerproxy::subscribecurrentthread](ischedulerproxy-structure.md#subscribecurrentthread), ya da yöntem [Ischedulerproxy::requestınitialvirtualprocessors](ischedulerproxy-structure.md#requestinitialvirtualprocessors) parametresiyle `doSubscribeCurrentThread` değerineayarlanırsa**true** bire bir donanım iş parçacığı abonelik düzeyini artırır. Aynı zamanda sonuç bir `IExecutionResource` aboneliği temsil eden arabirim. Karşılık gelen bir çağrı [Iexecutionresource::Remove](#remove) azaltır donanım iş parçacığının abonelik düzeyine göre bir.
 
 Yöntemini kullanarak bir sanal işlemci kökünde etkinleştirme işlemi [Ivirtualprocessorroot::Activate](ivirtualprocessorroot-structure.md#activate) bire bir donanım iş parçacığı abonelik düzeyini artırır. Yöntemleri [Ivirtualprocessorroot::Deactivate](ivirtualprocessorroot-structure.md#deactivate), veya [Iexecutionresource::Remove](#remove) tek bir etkin sanal işlemci kökünde çağrıldığında abonelik düzeyinde azaltma.
 

@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 49dc8a0f1a2c6f7bbb3bf29b84d751d4b3faa48c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 57f342fb8a948a3523626ff1de8a31de35b897de
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429355"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161170"
 ---
 # <a name="autohandleoperator"></a>auto_handle::operator!
 
@@ -39,11 +39,11 @@ bool operator!();
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`true` Sarmalanan Nesne geçersiz `false` Aksi takdirde.
+**doğru** Sarmalanan Nesne geçersiz; ise **false** Aksi takdirde.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // msl_auto_handle_operator_not.cpp
 // compile with: /clr
 #include <msclr\auto_handle.h>

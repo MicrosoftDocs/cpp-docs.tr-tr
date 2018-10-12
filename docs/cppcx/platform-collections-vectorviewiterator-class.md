@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d45bd056bff41832a98c7936510d22a321891fd0
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 36e0421e002efbcabc4c4525ddcf592258f6f7d1
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102045"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163705"
 ---
 # <a name="platformcollectionsvectorviewiterator-class"></a>Platform::Collections:: vectorviewıterator sınıfı
 
@@ -156,7 +156,7 @@ Başka bir VectorViewIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli VectorViewIterator eşitse `other`; Aksi takdirde `false`.
+**doğru** varsa geçerli `VectorViewIterator` eşittir *diğer*; Aksi takdirde **false**.
 
 ## <a name="operator-greater-than"></a>  VectorViewIterator::operator&gt; işleci
 
@@ -176,11 +176,11 @@ Başka bir VectorViewIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli VectorViewIterator büyükse `other`; Aksi takdirde `false`.
+**doğru** geçerli VectorViewIterator büyükse *diğer*; Aksi takdirde **false**.
 
 ## <a name="operator-greater-than-or-equals"></a>  VectorViewIterator::operator&gt;= işleci
 
-Geçerli VectorViewIterator büyüktür veya belirtilen VectorViewIterator eşit olup olmadığını belirtir.
+Belirtir olup olmadığını geçerli `VectorViewIterator` büyüktür veya eşittir belirtilen `VectorViewIterator`.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -196,7 +196,7 @@ Başka bir VectorViewIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli VectorViewIterator değerinden büyük veya ona eşit olup olmadığını `other`; Aksi takdirde `false`.
+**doğru** varsa geçerli `VectorViewIterator` büyüktür veya eşittir *diğer*; Aksi takdirde **false**.
 
 ## <a name="operator-increment"></a>  VectorViewIterator::operator ++ işleci
 
@@ -237,7 +237,7 @@ Başka bir VectorViewIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli VectorViewIterator eşit değilse `other`; Aksi takdirde `false`.
+**doğru** varsa geçerli `VectorViewIterator` eşit değildir *diğer*; Aksi takdirde **false**.
 
 ## <a name="operator-less-than"></a>  VectorViewIterator::operator&lt; işleci
 
@@ -252,15 +252,15 @@ bool operator<(const VectorViewIterator& other) const;
 ### <a name="parameters"></a>Parametreler
 
 *Diğer*<br/>
-Başka bir VectorIterator.
+Başka bir `VectorIterator`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli VectorIterator ise kısa `other`; Aksi takdirde `false`.
+**doğru** varsa geçerli `VectorIterator` olduğu küçüktür *diğer*; Aksi takdirde **false**.
 
 ## <a name="operator-less-than-or-equals"></a>  VectorViewIterator::operator&lt;= işleci
 
-Geçerli VectorIterator ya da belirtilen VectorIterator eşit olup olmadığını belirtir.
+Belirtir olup olmadığını geçerli `VectorIterator` değerinden küçük veya eşit belirtilen bir `VectorIterator`.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -272,11 +272,11 @@ bool operator<=(const VectorViewIterator& other) const;
 ### <a name="parameters"></a>Parametreler
 
 *Diğer*<br/>
-Başka bir VectorIterator.
+Başka bir `VectorIterator`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli VectorIterator küçük veya buna eşit olup olmadığı `other`; Aksi takdirde `false`.
+**doğru** varsa geçerli `VectorIterator` küçüktür veya eşittir *diğer*; Aksi takdirde **false**.
 
 ## <a name="operator-minus"></a>  VectorViewIterator::operator-işleci
 

@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9eccefff291dc509f846bce951cfe9508834876e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 7e64f5857a2b0530fb0346a2635611db03fd9bc8
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103885"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162561"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections:: Map sınıfı
 
@@ -140,7 +140,7 @@ Haritada ilk öğeyi belirleyen bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri ile bildirilen bir değişken atamak First() tarafından döndürülen yineleyici tutmak için kullanışlı bir yol olan **otomatik** kesinti anahtar sözcüğü yazın. Örneğin, `auto x = myMap->First();`.
+Dönüş değeri ile bildirilen bir değişken atamak First() tarafından döndürülen yineleyici tutmak için kullanışlı bir yol olan **otomatik** kesinti anahtar sözcüğü yazın. Örneğin: `auto x = myMap->First();`
 
 ## <a name="getview"></a>  Map::GetView yöntemi
 
@@ -173,7 +173,7 @@ Harita öğesini bulmak için kullanılan anahtar. Türünü *anahtarı* TypeNam
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` anahtar bulunursa; Aksi takdirde, `false`.
+**doğru** anahtar bulunduysa, **false**.
 
 ## <a name="insert"></a>  Map::INSERT yöntemi
 
@@ -195,7 +195,7 @@ Anahtar-değer çiftinin değer bölümünü. Türünü *değer* TypeName *V*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli Haritası'nda var olan bir öğenin anahtarı eşleşip eşleşmediğini *anahtarı* ve bu öğenin değeri kısmı kümesine *değer*. `false` Geçerli bir eşlem içindeki herhangi bir mevcut öğe eşleşiyorsa *anahtarı* ve *anahtarı* ve *değer* parametreleri bir anahtar-değer çifti yapılan ve ardından geçerli haritaya eklenen.
+**true** geçerli Haritası'nda var olan bir öğenin anahtarı eşleşip eşleşmediğini *anahtarı* ve bu öğenin değeri kısmı kümesine *değer*. **false** geçerli Haritası'nda var olan bir öğe yok eşleşiyorsa *anahtar* ve *anahtar* ve *değer* parametreleri bir anahtar-değer çifti yapılan ve ardından eklenir Geçerli eşleme.
 
 ## <a name="lookup"></a>  Map::Lookup yöntemi
 

@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 845addc73d0dd542b7bb6a4abccbf915005ddd41
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 4dab192b2d5d4210461bd791e3f4d9996363c953
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235821"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163302"
 ---
 # <a name="safeint-class"></a>SafeInt Sınıfı
 
@@ -194,7 +194,7 @@ SafeInt nesnesiyle mantıksal bir karşılaştırma gerçekleştirirken, tamamen
 
 - `((uint)~0) > -1`
 
-İlk deyim çözümler `true`, ancak ikinci deyim çözümler `false`. Bitwise olumsuzlama 0 0xFFFFFFFF kullanılır. İkinci deyim, varsayılan karşılaştırma işleci için 0xFFFFFFFF 0xFFFFFFFF karşılaştırır ve bunları eşit olarak değerlendirir. Karşılaştırma işleci için `SafeInt` sınıfı, ikinci parametre ise ilk parametre imzalanmamış negatif olduğunu fark etti. Bu nedenle, bit gösterimi aynıdır ancak `SafeInt` mantıksal işleç, işaretsiz tamsayı -1'den daha büyük olduğunu fark etti.
+İlk deyim çözümler **true**, ancak ikinci deyim çözümler `false`. Bitwise olumsuzlama 0 0xFFFFFFFF kullanılır. İkinci deyim, varsayılan karşılaştırma işleci için 0xFFFFFFFF 0xFFFFFFFF karşılaştırır ve bunları eşit olarak değerlendirir. Karşılaştırma işleci için `SafeInt` sınıfı, ikinci parametre ise ilk parametre imzalanmamış negatif olduğunu fark etti. Bu nedenle, bit gösterimi aynıdır ancak `SafeInt` mantıksal işleç, işaretsiz tamsayı -1'den daha büyük olduğunu fark etti.
 
 Kullanırken dikkatli olun `SafeInt` ile birlikte sınıfı `?:` Üçlü işleci. Aşağıdaki kod satırını göz önünde bulundurun.
 

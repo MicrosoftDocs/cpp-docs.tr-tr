@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 489ff00571c79d89c9e807f0d8796989e7a0f84f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e9b8ee4c80310c4d94ed432d48ee9702c41f80bf
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714994"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161795"
 ---
 # <a name="gh-enable-pexit-hook-function"></a>/GH (_pexit Kanca İşlevini Etkinleştir)
 
@@ -43,7 +43,7 @@ ms.locfileid: "45714994"
 Açıkça çağırmak planlamıyorsanız `_pexit`, bir prototip sağlamanız gerekmez. İşlev aşağıdaki prototipe sahip, içeriği tüm kayıtları girişinde anında iletme gerekir ve Çıkışta değişmeden içerik pop gibi görünmelidir:
 
 ```
-void __declspec(naked) _cdecl _pexit( void );
+void __declspec(naked) __cdecl _pexit( void );
 ```
 
 `_pexit` benzer `_penter`; bkz [/Gh (_penter kanca işlevini etkinleştir)](../../build/reference/gh-enable-penter-hook-function.md) nasıl yazılacağını gösteren bir örnek bir `_pexit` işlevi.
@@ -60,7 +60,7 @@ void __declspec(naked) _cdecl _pexit( void );
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

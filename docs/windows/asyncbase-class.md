@@ -65,12 +65,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a1003553cb0c3fc3abc8c24a6870485816397eaa
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 9647e18af021caf67dea5d946c9e5bf00fb50807
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861960"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162938"
 ---
 # <a name="asyncbase-class"></a>AsyncBase Sınıfı
 
@@ -233,7 +233,7 @@ inline bool ContinueAsyncOperation();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` zaman uyumsuz işlemi geçerli durumu ise *çalışmaya*, yani işlemi devam etmelidir. Aksi takdirde `false`, yani işlemi durdurmak.
+**doğru** geçerli durumunu zaman uyumsuz işlemi ise *çalışmaya*, yani işlemi devam etmelidir. Aksi takdirde, **false**, yani işlemi durdurmak.
 
 ## <a name="currentstatus"></a>AsyncBase::CurrentStatus
 
@@ -528,7 +528,7 @@ bool TryTransitionToCompleted(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` zaman uyumsuz işlem tamamlandıysa; Aksi takdirde, `false`.
+**doğru** zaman uyumsuz işlem tamamlandıysa; Aksi takdirde, **false**.
 
 ## <a name="trytransitiontoerror"></a>AsyncBase::TryTransitionToError
 
@@ -547,7 +547,7 @@ HRESULT hatası.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` İç hata durumu değiştirildi Aksi takdirde, `false`.
+**doğru** iç hata durumunda, değiştirilen; Aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 

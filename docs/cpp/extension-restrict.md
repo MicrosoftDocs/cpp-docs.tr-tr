@@ -1,12 +1,14 @@
 ---
 title: __restrict | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/10/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
 f1_keywords:
 - __restrict_cpp
+- __restrict
+- _restrict
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d9754f8b0b218fc4d627eb0e27504e8521bf776
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9245571e21be04cc250347f30ce8ddb464ff9b55
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46076443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163458"
 ---
 # <a name="restrict"></a>__restrict
 
@@ -34,6 +36,8 @@ Gibi **__declspec ( [kısıtlama](../cpp/restrict.md) )** değiştiricisi **__re
 - Zaman **__restrict** olan kullanıldığında, derleyici değişkenin diğer ad olmayan özelliğini yaymayacaktır. Diğer bir deyişle, atarsanız bir **__restrict** olmayan bir değişken **__restrict** değişken, derleyici hala sağlayacak __restrict olmayan değişkenine diğer adı olması. Bu davranışından farklıdır **kısıtlama** C99 belirtimindeki from anahtar sözcüğü.
 
 Tüm işlevin davranışını etkilerseniz, genellikle bunu kullanmak en iyisidir `__declspec ( restrict )` daha anahtar sözcüğü.
+
+Önceki sürümlerle uyumluluk için **_restrict** eşanlamlıdır **__restrict** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) olduğu Belirtilen.
 
 Visual Studio 2015 ve sonraki sürümlerinde, **__restrict** C++ başvuruları üzerinde kullanılabilir.
 

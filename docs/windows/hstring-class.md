@@ -47,12 +47,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fea4f576e347ca03dda1142b3118bf605bc9f385
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 2a70b39352f26d76e9199b9da46f679507b148ed
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235353"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163126"
 ---
 # <a name="hstring-class"></a>HString Sınıfı
 
@@ -225,7 +225,7 @@ bool IsValid() const throw()
 
 ### <a name="parameters"></a>Parametreler
 
-`true` varsa geçerli `HString` nesnesi boş; Aksi takdirde değil `false`.
+**doğru** varsa geçerli `HString` nesnesi boş; Aksi takdirde değil **false**.
 
 ## <a name="makereference"></a>HString::MakeReference
 
@@ -310,7 +310,7 @@ Karşılaştırılacak ikinci parametre. *sol* olabilir bir `HString` veya `HStr
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa *lhs* ve *sol* parametreleri eşit; Aksi takdirde `false`.
+**doğru** varsa *lhs* ve *sol* parametreleri eşit; Aksi takdirde **false**.
 
 ## <a name="operator-inequality"></a>HString::operator! = işleci
 
@@ -343,7 +343,7 @@ Karşılaştırılacak ikinci parametre. *sol* olabilir bir `HString` veya `HStr
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa *lhs* ve *sol* parametreleri eşit; Aksi takdirde değil `false`.
+**doğru** varsa *lhs* ve *sol* parametreleri eşit; Aksi takdirde değil **false**.
 
 ## <a name="operator-less-than"></a>HString::operator&lt; işleci
 
@@ -365,7 +365,7 @@ Karşılaştırılacak ikinci parametre. *Sol* başvuru olabilir bir `HString`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa *lhs* parametresi değerinden daha küçük *sol* parametre; Aksi takdirde `false`.
+**doğru** varsa *lhs* parametresi değerinden daha küçük *sol* parametre; Aksi takdirde **false**.
 
 ## <a name="release"></a>HString::Release
 

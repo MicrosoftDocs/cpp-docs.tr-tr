@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 681aa3ef5a1434ab191854f23a9e7bc908b65728
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ce6f57846a0dcad79eead500286525e94c66a8e6
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082423"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162301"
 ---
 # <a name="implementing-a-simple-consumer"></a>Basit Tüketici Uygulama
 
@@ -34,17 +34,17 @@ Aşağıdaki konular, Basit Tüketici oluşturma MFC Uygulama Sihirbazı'nı ve 
 - "XML desteği tüketiciye ekleme" XML verileri olarak alınan satır kümesi veri çıkışı için tüketici kodunun nasıl değiştirileceğini gösterir.  
   
 > [!NOTE]
->  Bu bölümde açıklanan tüketici uygulama MyProv ve sağlayıcı örnek sağlayıcıları test etmek için kullanabilirsiniz.  
+> Bu bölümde açıklanan tüketici uygulama MyProv ve sağlayıcı örnek sağlayıcıları test etmek için kullanabilirsiniz.  
   
 > [!NOTE]
->  MyProv test etmek için bir tüketici uygulama oluşturmak için (aynı sağlayıcının açıklanan [basit salt okunur sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md)), "Tüketici ekleme yer işareti desteği." bölümünde anlatıldığı gibi yer işareti desteği içermelidir  
+> MyProv test etmek için bir tüketici uygulama oluşturmak için (aynı sağlayıcının açıklanan [basit salt okunur sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md)), "Tüketici ekleme yer işareti desteği." bölümünde anlatıldığı gibi yer işareti desteği içermelidir  
   
 > [!NOTE]
->  Sağlayıcıyı test "Ekleyerek yer işareti desteği tüketiciye içinde" açıklanan yer işareti desteği bırakın ve "Tüketici ekleme XML desteği." atlamak için bir tüketici uygulama oluşturmak için  
+> Sağlayıcıyı test "Ekleyerek yer işareti desteği tüketiciye içinde" açıklanan yer işareti desteği bırakın ve "Tüketici ekleme XML desteği." atlamak için bir tüketici uygulama oluşturmak için  
   
 ## <a name="retrieving-data-with-the-consumer"></a>Tüketici ile veri alma  
   
-#### <a name="to-modify-the-console-application-to-use-the-ole-db-consumer"></a>OLE DB Tüketici kullanmak için konsol uygulamasını değiştirmek için  
+### <a name="to-modify-the-console-application-to-use-the-ole-db-consumer"></a>OLE DB Tüketici kullanmak için konsol uygulamasını değiştirmek için  
   
 1. MyCons.cpp içinde kalın metin gibi ekleyerek ana kodu değiştirin:  
   
@@ -94,9 +94,9 @@ Bir yer işareti tablosundaki satırları benzersiz olarak tanımlayan bir sütu
 - Çıkış işaretli satır, dosyanın sonuna ekleniyor.  
   
 > [!NOTE]
->  Bu bölümde açıklanan yer işareti desteği, sağlayıcı örnek sağlayıcısı uygulamasını test etmek için bu tüketici uygulama kullanmanız durumunda bırakın.  
+> Bu bölümde açıklanan yer işareti desteği, sağlayıcı örnek sağlayıcısı uygulamasını test etmek için bu tüketici uygulama kullanmanız durumunda bırakın.  
   
-#### <a name="to-instantiate-the-bookmark"></a>Yer işareti oluşturmak için  
+### <a name="to-instantiate-the-bookmark"></a>Yer işareti oluşturmak için  
   
 1. Erişimci bir nesne türü içermesi gerekir [CBookmark](../../data/oledb/cbookmark-class.md). *NSize* parametresi yer işareti arabellek boyutu (genellikle 32 bit platformları için 4) ve 64-bit platformları için 8 bayt cinsinden belirtir. Sütun veri üyeleri kullanıcı kaydı sınıfında aşağıdaki bildirimi ekleyin:  
   
@@ -111,7 +111,7 @@ Bir yer işareti tablosundaki satırları benzersiz olarak tanımlayan bir sütu
        ...  
     ```  
   
-#### <a name="to-request-a-bookmark-column-from-the-provider"></a>Bir yer işareti sütunu Sağlayıcısı'ndan istemek için  
+### <a name="to-request-a-bookmark-column-from-the-provider"></a>Bir yer işareti sütunu Sağlayıcısı'ndan istemek için  
   
 1. Aşağıdaki kodu ekleyin `GetRowsetProperties` kullanıcı kayıt sınıfı yöntemi:  
   
@@ -125,7 +125,7 @@ Bir yer işareti tablosundaki satırları benzersiz olarak tanımlayan bir sütu
     }  
     ```  
   
-#### <a name="to-add-a-bookmark-entry-to-the-column-map"></a>Sütun eşlemesi için bir yer işareti giriş eklemek için  
+### <a name="to-add-a-bookmark-entry-to-the-column-map"></a>Sütun eşlemesi için bir yer işareti giriş eklemek için  
   
 1. Kullanıcı kayıt sınıfı sütun eşlemesinde şu girişi ekleyin:  
   
@@ -139,7 +139,7 @@ Bir yer işareti tablosundaki satırları benzersiz olarak tanımlayan bir sütu
     END_COLUMN_MAP()  
     ```  
   
-#### <a name="to-use-a-bookmark-in-your-main-code"></a>Bir yer işareti ana kodunuzda kullanmak için  
+### <a name="to-use-a-bookmark-in-your-main-code"></a>Bir yer işareti ana kodunuzda kullanmak için  
   
 1. Daha önce oluşturduğunuz konsol uygulaması MyCons.cpp dosyasından ana kod gibi görünecek şekilde değiştirin. Yer işaretlerini kullanmak için kendi yer işareti nesnesi örneklemek ana kod gerekir (`myBookmark`); bu erişimcisindeki olandan farklı bir yer işareti, (`m_bookmark`).  
   
@@ -184,7 +184,7 @@ Bir yer işareti tablosundaki satırları benzersiz olarak tanımlayan bir sütu
        {  
           nCounter++;  
           if(nCounter == 5 )  
-             myBookmark = rs.bookmark;  
+             myBookmark = rs.m_bookmark;  
           // Output the column information for each row:  
           outfile << rs.m_ProductID << rs.m_ProductName << lPrice << rs.m_QuantityPerUnit << rs.m_UnitsInStock << rs.m_ReorderLevel << endl;  
           hr = rs.MoveNext();  
@@ -216,7 +216,7 @@ Yer işaretleri hakkında daha fazla bilgi için bkz. [kullanarak yer işaretler
 
 Bölümünde açıklandığı gibi [XML verilerine erişim](../../data/oledb/accessing-xml-data.md), XML verileri bir veri kaynağından almak için iki yolu vardır: kullanarak [CStreamRowset](../../data/oledb/cstreamrowset-class.md) veya bu adı kullanıyor [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md). Bu örnekte `CStreamRowset`, daha verimli olur, ancak, bu örnek uygulama yürüttüğünüz bilgisayar üzerinde çalışan SQL Server 2000 olmasını gerektirir.  
   
-#### <a name="to-modify-the-command-class-to-inherit-from-cstreamrowset"></a>Komut sınıfının CStreamRowset devralacak şekilde değiştirmek için  
+### <a name="to-modify-the-command-class-to-inherit-from-cstreamrowset"></a>Komut sınıfının CStreamRowset devralacak şekilde değiştirmek için  
   
 1. Daha önce oluşturduğunuz tüketici uygulama, `CCommand` belirtmek için bildirimi `CStreamRowset` satır kümesi sınıfı şu şekilde:  
   
@@ -224,7 +224,7 @@ Bölümünde açıklandığı gibi [XML verilerine erişim](../../data/oledb/acc
     class CProducts : public CCommand<CAccessor<CProductsAccessor>, CStreamRowset >  
     ```  
   
-#### <a name="to-modify-the-main-code-to-retrieve-and-output-the-xml-data"></a>Çıktı XML verilerini alıp ana kod değiştirmek için  
+### <a name="to-modify-the-main-code-to-retrieve-and-output-the-xml-data"></a>Çıktı XML verilerini alıp ana kod değiştirmek için  
   
 1. Daha önce oluşturduğunuz konsol uygulaması MyCons.cpp dosyasından ana kod gibi görünecek şekilde değiştirin:  
   

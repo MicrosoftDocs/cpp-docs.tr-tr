@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 803cb474edbce6eb3d397e025ecc31bd5332cc92
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8e5c6b9d15ef2ca456fd91dbd7829d94e33e2c0a
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427895"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162236"
 ---
 # <a name="transformer-class"></a>transformer Sınıfı
 
@@ -205,11 +205,11 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` iletinin başarıyla ayrıldı, `false` Aksi takdirde.
+**doğru** ileti başarıyla ayrıldı, **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sonra `reserve` çağrılır, döndürürse `true`, ya da `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.
+Sonra `reserve` çağrılır, döndürürse **true**, ya da `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.
 
 ##  <a name="resume_propagation"></a> resume_propagation
 
@@ -251,7 +251,7 @@ virtual bool supports_anonymous_source();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` blok, sunulan ileti erteleme değil çünkü.
+**doğru** iletileri blok değil ertelemek için sunulan.
 
 ##  <a name="ctor"></a> Transformer
 

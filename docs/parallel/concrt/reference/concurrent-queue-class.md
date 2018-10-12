@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41e4c6f3a540f44f6cec0d94ffab74d65a1ffe52
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7f8f864dcbf412b9dea0d96f6a0ba046792d7827
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386593"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162977"
 ---
 # <a name="concurrentqueue-class"></a>concurrent_queue Sınıfı
 
@@ -177,7 +177,7 @@ bool empty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` eşzamanlı kuyruk incelemiştik, şu anda boşsa `false` Aksi takdirde.
+**doğru** eşzamanlı kuyruk incelemiştik, şu anda boşsa **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -229,11 +229,11 @@ Dequeued öğe depolamak için bir konum bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` bir öğe başarıyla dequeued olduysa `false` Aksi takdirde.
+**doğru** öğeyi başarıyla dequeued olduysa **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğe başarıyla dequeued olduysa parametresi `_Dest` dequeued değerini alır kuyrukta tutulan özgün değeri yok ve bu işlevi döndürür `true`. Olup olmadığını sıradan bir öğe yok, bu işlevi döndürür `false` engelleme ve içeriğini olmadan `_Dest` parametre tanımlanmamış.
+Bir öğe başarıyla dequeued olduysa parametresi `_Dest` dequeued değerini alır kuyrukta tutulan özgün değeri yok ve bu işlevi döndürür **true**. Olup olmadığını sıradan bir öğe yok, bu işlevi döndürür `false` engelleme ve içeriğini olmadan `_Dest` parametre tanımlanmamış.
 
 `try_pop` eşzamanlı güvenlidir yöntemlere yapılan çağrılar göre `push`, `try_pop`, ve `empty`.
 

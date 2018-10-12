@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b9a157f747f32b7e146a0bc89ac695837c37974
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 30eb0befda4d439bf4153d7c6726c982d3bf19ae
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163341"
 ---
 # <a name="acceleratorview-class"></a>accelerator_view Sınıfı
 
@@ -74,9 +74,9 @@ class accelerator_view;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator!=](#operator_neq)|Bu karşılaştırır `accelerator_view` döndürür ve başka nesnesi `false` aynı; olmaları durumunda döndürür, aksi takdirde, `true`.|
+|[operator!=](#operator_neq)|Bu karşılaştırır `accelerator_view` döndürür ve başka nesnesi **false** aynı; olmaları durumunda döndürür, aksi takdirde, **true**.|
 |[operator=](#operator_eq)|Belirtilen içeriğini kopyalar `accelerator_view` bu nesne içine.|
-|[operator==](#operator_eq_eq)|Bu karşılaştırır `accelerator_view` döndürür ve başka nesnesi `true` aynı; olmaları durumunda döndürür, aksi takdirde, `false`.|
+|[operator==](#operator_eq_eq)|Bu karşılaştırır `accelerator_view` döndürür ve başka nesnesi **true** aynı; olmaları durumunda döndürür, aksi takdirde, **false**.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
@@ -86,7 +86,7 @@ class accelerator_view;
 |[is_auto_selection](#is_auto_selection)|Çalışma zamanı otomatik olarak uygun bir Hızlandırıcı seçip seçmediğini gösteren bir Boole değeri alır, `accelerator_view` nesnesi bir [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each).|
 |[is_debug](#is_debug)|Gösteren bir Boole değeri alır olmadığını `accelerator_view` nesne ayrıntılı hata raporlama için etkinleştirilen DEBUG katmanına sahip.|
 |[queuing_mode](#queuing_mode)|Kuyruklama modunu alır `accelerator_view` nesne.|
-|[Sürüm](#version)|Hızlandırıcının sürümünü alır.|
+|[version](#version)|Hızlandırıcının sürümünü alır.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -183,7 +183,7 @@ bool get_is_auto_selection() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` çalışma zamanının otomatik olarak uygun bir Hızlandırıcı seçip Aksi takdirde, `false`.
+**doğru** çalışma zamanı otomatik olarak uygun bir Hızlandırıcı; seçer, aksi takdirde, **false**.
 
 ## <a name="accelerator_view__get_is_debug"></a> get_is_debug
 
@@ -249,7 +249,7 @@ __declspec(property(get= get_is_debug)) bool is_debug;
 
 ## <a name="accelerator_view__operator_neq"></a> işleç! =
 
-Bu Hızlandırıcı görünümü nesnesindeki başka ile karşılaştırır ve döndürür `false` aynı; olmaları durumunda döndürür, aksi takdirde, `true`.
+Bu Hızlandırıcı görünümü nesnesindeki başka ile karşılaştırır ve döndürür **false** aynı; olmaları durumunda döndürür, aksi takdirde, **true**.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -264,7 +264,7 @@ bool operator!= (    const accelerator_view & _Other ) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`false` iki nesnenin aynı olup olmadığını; Aksi takdirde, `true`.
+**false** ise iki nesnenin aynı; Aksi takdirde, **true**.
 
 ## <a name="accelerator_view__operator_eq"></a> işleç =
 
@@ -287,7 +287,7 @@ Değiştirilmiş başvuru `accelerator_view` nesne.
 
 ## <a name="accelerator_view__operator_eq_eq"></a> işleç ==
 
-Bu Hızlandırıcı görünümü nesnesindeki başka ile karşılaştırır ve döndürür `true` aynı; olmaları durumunda döndürür, aksi takdirde, `false`.
+Bu Hızlandırıcı görünümü nesnesindeki başka ile karşılaştırır ve döndürür **true** aynı; olmaları durumunda döndürür, aksi takdirde, **false**.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -302,7 +302,7 @@ bool operator= = (    const accelerator_view & _Other ) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` iki nesnenin aynı olup olmadığını; Aksi takdirde, `false`.
+**doğru** ise iki nesnenin aynı; Aksi takdirde, **false**.
 
 ## <a name="accelerator_view__queuing_mode"></a> queuing_mode
 

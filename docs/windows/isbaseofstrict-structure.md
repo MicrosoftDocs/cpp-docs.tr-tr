@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9fc41bdccf9cce3d455d4effd3541731929e5de2
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 90ceaf20a5d601fc2904b7ce8610b4a3906e30ac
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789273"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161209"
 ---
 # <a name="isbaseofstrict-structure"></a>IsBaseOfStrict Yapısı
 
@@ -52,7 +52,7 @@ Türetilmiş bir tür.
 
 Başka bir taban bir türü olup olmadığını sınar.
 
-İlk şablon yield bir temel tür türetilmiş bir tür olup olmadığını test `true` veya `false`. İkinci şablon türetilmiş bir tür kendisinden, her zaman veren olmadığını sınar `false`.
+İlk şablon yield bir temel tür türetilmiş bir tür olup olmadığını test **true** veya **false**. İkinci şablon türetilmiş bir tür kendisinden, her zaman veren olmadığını sınar **false**.
 
 ## <a name="members"></a>Üyeler
 
@@ -84,4 +84,4 @@ static const bool value = __is_base_of(Base, Derived);
 
 Başka bir taban bir türü olup olmadığını gösterir.
 
-`value` olan `true` , türü `Base` bir temel sınıf türünün `Derived`, aksi halde kalır `false`.
+`value` olan **true** , türü `Base` bir temel sınıf türünün `Derived`, aksi halde kalır **false**.

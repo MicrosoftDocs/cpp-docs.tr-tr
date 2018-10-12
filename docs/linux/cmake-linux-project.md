@@ -15,12 +15,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 82134d48853896ccb70c2620cd70c803fcc74bc8
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 0e735ece878797ffdcf89fffefa33473107ad3d5
+ms.sourcegitcommit: 7098d64443ffbd4a47f30bc41753007b570b47e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821055"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49120570"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake projesi yapılandırma
 
@@ -30,7 +30,7 @@ Linux CMake desteği, Visual Studio için Linux C++ iş yükünü yüklediğiniz
 Bu konuda, Visual Studio'da CMake desteği temel olarak bilindiğini sahip olduğunuz varsayılır. Daha fazla bilgi için [Visual C++ için CMake araçlarını](../ide/cmake-tools-for-visual-cpp.md). CMake kendisi hakkında daha fazla bilgi için bkz: [derleme, Test ve paket Your yazılım CMake ile](https://cmake.org/).
 
 > [!NOTE]  
-> Visual Studio'da CMake desteği, CMake 3.8 içinde sunulan sunucu modu desteği gerektirir. Destekleyen bir Microsoft tarafından sağlanan CMake değişken için [CMake hedefleri görünümü](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) bölmesinde Visual Studio, en son önceden oluşturulmuş ikili karşıdan [ https://github.com/Microsoft/CMake/releases ](https://github.com/Microsoft/CMake/releases). Paket Yöneticisi'ni CMake 3.8 daha eski bir sürüm sağlıyorsa, geçici bir çözüm olarak çalışabilir [kaynağından CMake oluşturma](#build-a-supported-cmake-release-from-source), veya standart CMake kullanmayı tercih, resmi indirebilirsiniz [CMake indirme sayfası](https://cmake.org/download/). 
+> Visual Studio'da CMake desteği, CMake 3.8 içinde sunulan sunucu modu desteği gerektirir. Bir Microsoft tarafından sağlanan CMake değişken için en son önceden oluşturulmuş ikilileri indirmek [ https://github.com/Microsoft/CMake/releases ](https://github.com/Microsoft/CMake/releases). 
 
 ## <a name="open-a-folder"></a>Klasör Aç
 
@@ -118,49 +118,10 @@ Daha fazla denetim için kullanabileceğiniz bazı isteğe bağlı ayarları var
 
 Bu seçenekler önce ve sonra yapı ve CMake oluşturma önce uzak çubuğundaki komutları çalıştırmanıza olanak sağlar. Herhangi bir geçerli komutu uzak kutusunda olabilirler. Çıkış, Visual Studio'ya dönün cmdlet'iyle yönetilir.
 
-## <a name="build-a-supported-cmake-release-from-source"></a>Desteklenen bir CMake sürüm kaynağından alınan derleme
+## <a name="download-prebuilt-cmake-binaries"></a>Önceden oluşturulmuş CMake ikili dosyaları indirme
 
-CMake en düşük sürümü, makine 3.8 ve sunucu modu desteklemelidir, Linux üzerinde gerekli. Bu komutu çalıştırarak bunu doğrulamak için:
+Kendi Linux distro CMake daha eski bir sürümü olabilir. Visual Studio'da CMake desteği, CMake 3.8 içinde sunulan sunucu modu desteği gerektirir. Bir Microsoft tarafından sağlanan CMake değişken için en son önceden oluşturulmuş ikilileri indirmek [ https://github.com/Microsoft/CMake/releases ](https://github.com/Microsoft/CMake/releases). 
 
-```cmd
-cmake --version
-```
-
-Bu sunucu modu etkin doğrulamak için şunu çalıştırın:
-
-```cmd
-cmake -E capabilities
-```
-
-Çıkışta, Aranan **"serverMode": true**. Hatta kaynağından CMake, açıklandığı gibi derleme yaptığınızda işiniz bittiğinde özellikleri denetlemelisiniz unutmayın. Linux sisteminiz sunucu modu etkinleştirilmesini engelleyen kısıtlamalar olabilir.
-
-CMake Linux sisteminizin shell'de kaynağından oluşturmaya başlamak için Paket Yöneticisi güncel olduğundan ve git ve cmake kullanılabilir olduğundan emin olun.
-
-İlk olarak, CMake kaynaklardan kopyalama [Microsoft CMake depo](https://github.com/Microsoft/CMake) Visual Studio'nun CMake desteği için bir Çatal burada sunuyoruz:
-
-```cmd
-sudo apt-get update
-sudo apt-get install -y git cmake
-git clone https://github.com/Microsoft/CMake.git
-cd CMake
-```
-
-Ardından, derleme ve /usr/local/bin için CMake'nin geçerli sürümünü yüklemek için şu komutları çalıştırın:
-
-```cmd
-mkdir out
-cd out
-cmake ../
-make
-sudo make install
-```
-
-Ardından, sürüm doğrulamak için bu komutu çalıştırın > = 3.8 ve sunucu modu etkin:
-
-```cmd
-/usr/local/bin/cmake –version
-cmake -E capabilities
-```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

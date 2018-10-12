@@ -1,7 +1,7 @@
 ---
 title: Basit Tüketici oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/09/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -15,46 +15,46 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 120829b08ab65c10cca7ab922fc4f9be732ccc53
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 85efb2a1d699914c6d7ffb1fd079a38be70f0b52
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860816"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163848"
 ---
 # <a name="creating-a-simple-consumer"></a>Basit Tüketici Oluşturma
 
 ATL OLE DB Tüketicisi Sihirbazı ve ATL projesi Sihirbazı bir OLE DB Şablonları tüketicisi oluşturmak için kullanın.
 
-### <a name="to-create-a-console-application-for-an-ole-db-consumer"></a>Bir konsol uygulaması için bir OLE DB Tüketicisi Oluşturma
+## <a name="to-create-a-console-application-for-an-ole-db-consumer"></a>Bir konsol uygulaması için bir OLE DB Tüketicisi Oluşturma
 
 1. Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.
 
    **Yeni proje** iletişim kutusu görüntülenir.
 
-1. Proje Türleri bölmesinde **Visual C++ projeleri** klasörünü ve ardından **Win32 projesi** Şablonlar bölmesinde simgesi. İçinde **adı** kutusunda, projenizin adını girin, örneğin, **MyCons**.
+1. İçinde **proje türleri** bölmesinde tıklayın **yüklü** > **şablonları** > **Visual C++** klasöründe ve ardından **Win32 konsol uygulaması** simgesini **şablonları** bölmesi. İçinde **adı** kutusunda, projenizin adını girin, örneğin, *MyCons*.
 
 1. **Tamam**'ı tıklatın.
 
-   Win32 Proje Sihirbazı görünür.
+   Win32 Uygulama Sihirbazı görünür.
 
-1. Üzerinde **uygulama ayarları** sayfasında **konsol uygulaması**ve ardından **ATL için destek ekleme**.
+1. Üzerinde **uygulama ayarları** sayfasında **konsol uygulaması**ve ardından **gibi ortak başlık dosyaları eklemek için ATL**.
 
 1. Tıklayın **son** sihirbazı kapatın ve projeyi oluşturmak için.
 
 Ardından, OLE DB Tüketici nesne eklemek için ATL OLE DB Tüketicisi Sihirbazı kullanın.
 
-#### <a name="to-create-a-consumer-with-the-atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketicisi Sihirbazı ile bir tüketici oluşturma
+## <a name="to-create-a-consumer-with-the-atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketicisi Sihirbazı ile bir tüketici oluşturma
 
-1. Sınıf Görünümü'nde sağ `MyCons` proje.
+1. İçinde **Çözüm Gezgini**, sağ `MyCons` proje.
 
-1. Kısayol menüsünde **Ekle**ve ardından **sınıfı Ekle**.
+1. Kısayol menüsünde **Ekle**ve ardından **sınıfı**.
 
    **Sınıfı Ekle** iletişim kutusu görüntülenir.
 
-1. Kategorileri bölmesinden **Visual C++**, tıklayın **ATL OLE DB Tüketicisi** Şablonlar bölmesinde ve ardından simge **açık**.
+1. İçinde **kategorileri** bölmesinde tıklayın **yüklü** > **Visual C++** > **ATL**, tıklayın**ATL OLEDB tüketicisi** simgesini **şablonları** bölmesi ve ardından **Ekle**.
 
-   ATL OLE DB Tüketicisi Sihirbazı görünür.
+   ATL OLEDB tüketicisi Sihirbazı görünür.
 
 1. Tıklayın **veri kaynağı** düğmesi.
 
@@ -64,7 +64,7 @@ Ardından, OLE DB Tüketici nesne eklemek için ATL OLE DB Tüketicisi Sihirbaz�
 
    - Üzerinde **sağlayıcısı** sekmesinde, bir OLE DB sağlayıcısı belirtin.
 
-   - Üzerinde **bağlantı** sekmesinde, sunucu üzerinde sunucu adı, oturum açma kimliği ve veritabanı ve veri kaynağı için parola belirtin.
+   - Üzerinde **bağlantı** sekmesinde, sunucu üzerinde sunucu adı, oturum açma kimliği ve parolası veri kaynağı ve veritabanı gibi gerekli bilgileri belirtin.
 
    > [!NOTE]
    > Bir güvenlik sorun **parola kaydetmeye izin ver** özelliği **veri bağlantı özellikleri** iletişim kutusu. İçinde **sunucuya oturum açmak için bilgi girin**, iki radyo düğmeleri vardır: **kullanım Windows NT tümleşik güvenliği** ve **belirli bir kullanıcı adı ve parolayı kullanın**.
@@ -79,7 +79,7 @@ Ardından, OLE DB Tüketici nesne eklemek için ATL OLE DB Tüketicisi Sihirbaz�
 
    **Veritabanı nesnesini Seç** iletişim kutusu görüntülenir.
 
-1. Ağaç denetimi tablosu, görünümü veya saklı yordam seçmek için kullanın. Bu yordam amacıyla, Northwind veritabanından Ürünler tablosu seçin.
+1. Ağaç denetimi tablosu, görünümü veya saklı yordam seçmek için kullanın. Bu yordamın amacıyla seçerek `Products` tablosunda `Northwind` veritabanı.
 
 1. **Tamam**'ı tıklatın. ATL OLE DB Tüketicisi Sihirbazı için döndürür.
 

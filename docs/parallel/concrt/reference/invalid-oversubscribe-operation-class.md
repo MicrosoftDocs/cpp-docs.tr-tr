@@ -18,16 +18,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e62dc4ad1600b2e5cc7f955c4a419d27482bb557
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a1728053c7b42afedb4cda9b2dc96a089750a866
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433224"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161703"
 ---
 # <a name="invalidoversubscribeoperation-class"></a>invalid_oversubscribe_operation Sınıfı
 
-Bu sınıf oluşan bir özel durumu anlatmaktadır `Context::Oversubscribe` yöntemi çağrıldığında `_BeginOversubscription` parametresini `false` çağrıda olmadan `Context::Oversubscribe` yöntemiyle `_BeginOversubscription` parametresini `true`.
+Bu sınıf oluşan bir özel durumu anlatmaktadır `Context::Oversubscribe` yöntemi çağrıldığında `_BeginOversubscription` parametresini **false** çağrıda olmadan `Context::Oversubscribe` yöntemiyle `_BeginOversubscription` parametre kümesi için **true**.
 
 ## <a name="syntax"></a>Sözdizimi
 

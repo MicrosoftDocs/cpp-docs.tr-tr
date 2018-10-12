@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c4ada69fcd687d63022d0527ddf8da43906c483
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8fe26b202dbe9aabc1ccf98a59ead6c51c498fc1
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412021"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163718"
 ---
 # <a name="itarget-class"></a>ITarget Sınıfı
 
@@ -67,7 +67,7 @@ Akıştaki yükün bir hedef bloğu tarafından kabul iletileri veri türü.
 |----------|-----------------|
 |[Yay](#propagate)|Zaman uyumsuz olarak türetilen bir sınıfta geçersiz kılındığında, bir ileti bir kaynak bloktaki bu hedef bloğa aktarır.|
 |[Gönder](#send)|Zaman uyumlu olarak türetilen bir sınıfta geçersiz kılındığında, bir ileti hedef bloğa aktarır.|
-|[supports_anonymous_source](#supports_anonymous_source)|Türetilen bir sınıfta geçersiz kılındığında, true veya false ileti bloğu kendisine bağlı olmayan bir kaynak tarafından sunulan iletileri kabul edip etmemesine bağlı olarak döndürür. Geçersiz kılınan yöntemi döndürürse `true`, ertelenmiş bir iletiyi kullanımını daha sonra kendi sourse bağlantı kayıt defterinde tanımlanması için kaynak olarak sunulan bir iletiye hedef erteleyemiyor.|
+|[supports_anonymous_source](#supports_anonymous_source)|Türetilen bir sınıfta geçersiz kılındığında, true veya false ileti bloğu kendisine bağlı olmayan bir kaynak tarafından sunulan iletileri kabul edip etmemesine bağlı olarak döndürür. Geçersiz kılınan yöntemi döndürürse **true**, ertelenmiş bir iletiyi kullanımını daha sonra kendi sourse bağlantı kayıt defterinde tanımlanması için kaynak olarak sunulan bir iletiye hedef erteleyemiyor.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
@@ -174,7 +174,7 @@ Zaman `send` ileti algıladı ya da zaten kabul edildi ve hedef blok aktarılan 
 
 ##  <a name="supports_anonymous_source"></a> supports_anonymous_source
 
-Türetilen bir sınıfta geçersiz kılındığında, true veya false ileti bloğu kendisine bağlı olmayan bir kaynak tarafından sunulan iletileri kabul edip etmemesine bağlı olarak döndürür. Geçersiz kılınan yöntemi döndürürse `true`, ertelenmiş bir iletiyi kullanımını daha sonra kendi sourse bağlantı kayıt defterinde tanımlanması için kaynak olarak sunulan bir iletiye hedef erteleyemiyor.
+Türetilen bir sınıfta geçersiz kılındığında, true veya false ileti bloğu kendisine bağlı olmayan bir kaynak tarafından sunulan iletileri kabul edip etmemesine bağlı olarak döndürür. Geçersiz kılınan yöntemi döndürürse **true**, ertelenmiş bir iletiyi kullanımını daha sonra kendi sourse bağlantı kayıt defterinde tanımlanması için kaynak olarak sunulan bir iletiye hedef erteleyemiyor.
 
 ```
 virtual bool supports_anonymous_source();
@@ -182,7 +182,7 @@ virtual bool supports_anonymous_source();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Blok iletiyi kendisine bağlı olmayan bir kaynaktan kabul edebiliyorsa `false` Aksi takdirde.
+**doğru** blok iletiyi kendisine bağlı olmayan bir kaynaktan kabul edebiliyorsa **false** Aksi takdirde.
 
 ##  <a name="unlink_source"></a> unlink_source
 

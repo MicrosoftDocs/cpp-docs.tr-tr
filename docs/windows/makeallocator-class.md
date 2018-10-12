@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 94c094fe21127592bd8756d0f0b467e2c74df487
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 93fb92c51ee16593f9314d7172f0b38e6d0918e8
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789247"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162483"
 ---
 # <a name="makeallocator-class"></a>MakeAllocator Sınıfı
 
@@ -60,7 +60,7 @@ class MakeAllocator<T, true>;
 Tür adı.
 
 *hasWeakReferenceSupport*<br/>
-`true` zayıf başvurular destekleyen bir nesne için bellek ayırmak için; `false` zayıf başvuru desteği olmayan bir nesne için bellek ayrılamadı.
+**doğru** zayıf başvurular; destekleyen bir nesne için bellek ayrılamadı **false** zayıf başvuru desteği olmayan bir nesne için bellek ayrılamadı.
 
 ## <a name="remarks"></a>Açıklamalar
 

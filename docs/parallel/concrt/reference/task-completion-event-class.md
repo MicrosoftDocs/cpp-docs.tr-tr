@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16778adeb898759a9c15d08175d9482f8411b44c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 867f94cd290e6b8ee5f9e50b266b0e4c9df63adf
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413776"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163263"
 ---
 # <a name="taskcompletionevent-class"></a>task_completion_event Sınıfı
 
@@ -96,11 +96,11 @@ Bu olayın ayarlanacağı sonuç.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem döndürür `true` olayı ayarlamada başarılı olursa. Döndürür `false` olay zaten ayarlanmışsa.
+Yöntem döndürür **true** olayı ayarlamada başarılı olursa. Döndürür **false** olay zaten ayarlanmışsa.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birden fazla varsa veya eş zamanlı çağrı `set`, sadece ilk çağrı başarılı olur ve sonucu (varsa) görev tamamlama olayı depolanır. Geri kalan kümeler yoksayılır ve yöntem false döndürür. Bir görev tamamlama olayı ayarladığınızda, tüm görevleri olay hemen tamamlanır ve varsa devamları zamanlanır oluşturulan. Görev tamamlama nesneleri bir `_ResultType` dışında `void` değeri için bunların devamlılıklarına geçirir.
+Birden fazla varsa veya eş zamanlı çağrı `set`, sadece ilk çağrı başarılı olur ve sonucu (varsa) görev tamamlama olayı depolanır. Geri kalan kümeler yoksayılır ve yöntem false döndürür. Bir görev tamamlama olayı ayarladığınızda, tüm görevleri olay hemen tamamlanır ve varsa devamları zamanlanır oluşturulan. Görev tamamlama nesneleri bir `_ResultType` dışında **void** değeri için bunların devamlılıklarına geçirir.
 
 ##  <a name="set_exception"></a> set_exception
 

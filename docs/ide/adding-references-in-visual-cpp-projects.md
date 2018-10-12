@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f5e32599096b4e0fa451c18b3e05adf01b34ff4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b372959105407074cd2a7295837e2c47ef629da7
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407603"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162171"
 ---
 # <a name="adding-references-in-visual-c-projects"></a>Visual C++ projelerine başvuru ekleme
 
@@ -84,11 +84,11 @@ Aşağıdaki özellikler, çeşitli türlerdeki başvurular üzerinde kullanıla
 
 - **Yerel uydu derlemelerini Kopyala**
 
-   Başvurulan derlemenin uydu derlemelerinin bilgisayarın bir yapı sırasında hedef konuma otomatik olarak kopyalanıp kopyalanmayacağını belirtir. Yalnızca **Yereli Kopyala** olduğu `true`.
+   Başvurulan derlemenin uydu derlemelerinin bilgisayarın bir yapı sırasında hedef konuma otomatik olarak kopyalanıp kopyalanmayacağını belirtir. Yalnızca **Yereli Kopyala** olduğu **true**.
 
 - **Başvuru bütünleştirilmiş kodu çıkışı**
 
-   Bu derlemenin yapı işleminde kullanıldığını belirtir. Varsa `true`, derleme yapı sırasında derleyici komut satırında kullanılır.
+   Bu derlemenin yapı işleminde kullanıldığını belirtir. Varsa **true**, derleme yapı sırasında derleyici komut satırında kullanılır.
 
 ### <a name="project-to-project-reference-properties"></a>Projeden projeye başvuru özellikleri
 

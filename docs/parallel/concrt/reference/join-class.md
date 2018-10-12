@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c960e73604a915dbb15c0efac958dc229c16b3b1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 045cdeab321e9e3f88ee9bd50d337101e8512718
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163822"
 ---
 # <a name="join-class"></a>join Sınıfı
 
@@ -261,11 +261,11 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` iletinin başarıyla ayrıldı, `false` Aksi takdirde.
+**doğru** ileti başarıyla ayrıldı, **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sonra `reserve` çağrılır, döndürürse `true`, ya da `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.
+Sonra `reserve` çağrılır, döndürürse **true**, ya da `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.
 
 ##  <a name="resume_propagation"></a> resume_propagation
 

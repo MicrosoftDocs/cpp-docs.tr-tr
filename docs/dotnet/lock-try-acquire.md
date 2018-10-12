@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 7782f59ae63c185995fe52f19bca739bc12fcaa1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0f121ff9915e49c98bc9f32ff683f8d08914f560
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375857"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163471"
 ---
 # <a name="locktryacquire"></a>lock::try_acquire
 
@@ -50,7 +50,7 @@ Zaman aşımı değerini milisaniye cinsinden veya olarak bir <xref:System.TimeS
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`true` Kilit alındıysa `false` Aksi takdirde.
+**doğru** kilit alındıysa **false** Aksi takdirde.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -60,7 +60,7 @@ Bu işlev, bir kilidi zaten alınmış, hiçbir şey yapmaz.
 
 Bu örnek, birden çok iş parçacığı arasında bir sınıfın tek bir örneğini kullanır.  Sınıfı bir kilit kendisine iç verilerine erişen her bir iş parçacığı için tutarlı olmasını sağlamak için kullanır.  Ana uygulama iş parçacığı herhangi bir çalışan iş parçacığı hala mevcut ve kadar tüm çalışan iş parçacığı'ndan çıkmak için beklediği görevlerini tamamladınız görmek için düzenli aralıklarla kontrol etmek için aynı sınıf örneği üzerinde bir kilit kullanır.
 
-```
+```cpp
 // msl_lock_try_acquire.cpp
 // compile with: /clr
 #include <msclr/lock.h>

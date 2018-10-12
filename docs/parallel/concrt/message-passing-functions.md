@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0b7a7afb25d46fa3b521353c4577fbed66e69fd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7435bdbc4d5959771a1f80e2ad12f038a8157bae
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436994"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162288"
 ---
 # <a name="message-passing-functions"></a>İleti Geçirme İşlevleri
 
@@ -41,9 +41,9 @@ Bu konuda, aşağıdaki ileti geçirme işlevleri açıklanmaktadır:
 
 [Concurrency::send](reference/concurrency-namespace-functions.md#send) işlevi bir ileti zaman uyumlu olarak belirtilen hedefe gönderir ve [concurrency::asend](reference/concurrency-namespace-functions.md#asend) işlevi bir ileti zaman uyumsuz olarak belirtilen hedefe gönderir. Hem `send` ve `asend` işlevleri, hedef, sonunda kabul edin veya iletiyi reddedebilir gösterir kadar bekleyin.
 
-`send` İşlevi hedef kabul eder ya da döndürülmeden önce iletiyi reddettiğinde kadar bekler. `send` İşlevinin döndürdükleriyle `true` ileti teslim varsa ve `false` Aksi takdirde. Çünkü `send` işlev çalışır eş `send` işlevi hedef döndürülmeden önce ileti almak bekler.
+`send` İşlevi hedef kabul eder ya da döndürülmeden önce iletiyi reddettiğinde kadar bekler. `send` İşlevinin döndürdükleriyle **true** ileti teslim varsa ve **false** Aksi takdirde. Çünkü `send` işlev çalışır eş `send` işlevi hedef döndürülmeden önce ileti almak bekler.
 
-Buna karşılık, `asend` işlevi kabul etmesini ya da döndürülmeden önce iletiyi reddedebilir hedefi için bekleyin değil. Bunun yerine, `asend` işlevinin döndürdükleriyle `true` hedef iletiyi kabul eder ve sonunda sürer. Aksi takdirde, `asend` döndürür `false` hedef iletiyi reddetti veya iletisi olup olmadığı hakkında karar Ertelenen belirtmek için.
+Buna karşılık, `asend` işlevi kabul etmesini ya da döndürülmeden önce iletiyi reddedebilir hedefi için bekleyin değil. Bunun yerine, `asend` işlevinin döndürdükleriyle **true** hedef iletiyi kabul eder ve sonunda sürer. Aksi takdirde, `asend` döndürür **false** hedef iletiyi reddetti veya iletisi olup olmadığı hakkında karar Ertelenen belirtmek için.
 
 [[Üst](#top)]
 

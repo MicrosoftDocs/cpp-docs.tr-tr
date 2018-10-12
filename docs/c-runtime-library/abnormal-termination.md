@@ -27,12 +27,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e311c27d61eca82019f8069b0984557af02c74a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 053fa3559672e4b314d209184c076e8ced2018db
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46028213"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162158"
 ---
 # <a name="abnormaltermination"></a>_abnormal_termination
 
@@ -47,7 +47,7 @@ int   _abnormal_termination(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`true` Sistem *geriye doğru izleme* yığını; Aksi takdirde `false`.
+**doğru** sistem *geriye doğru izleme* yığını; Aksi takdirde **false**.
 
 ## <a name="remarks"></a>Açıklamalar
 

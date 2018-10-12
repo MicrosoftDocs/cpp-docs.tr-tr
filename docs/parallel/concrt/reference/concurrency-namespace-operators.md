@@ -13,12 +13,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9eb820b533b74d5634695ddabda26f081a35f95
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8065be6cc53cad04d5d52bea91da05bb3125dd63
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436929"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162574"
 ---
 # <a name="concurrency-namespace-operators"></a>Eşzamanlılık ad alanı işleçleri
 
@@ -151,7 +151,7 @@ Bir nesne türü `concurrent_vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` işlecin sol tarafındaki eşzamanlı vektör işlecin sağ tarafındaki eşzamanlı vektör eşittir Aksi takdirde `false`.
+**doğru** işlecinin sol tarafındaki eşzamanlı vektör Aksi takdirde işlecin sağ tarafındaki eşzamanlı vektör eşit ise **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -189,7 +189,7 @@ Bir nesne türü `concurrent_vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` eşzamanlı vektör eşit değilse, `false` eş zamanlı vektör eşitse.
+**doğru** eş zamanlı vektör eşit; değilse, **false** eş zamanlı vektör eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -227,7 +227,7 @@ Bir nesne türü `concurrent_vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` işlecin sol tarafındaki eşzamanlı vektör eşzamanlı vektör işlecin sağ tarafındaki küçüktür Aksi takdirde `false`.
+**doğru** işlecinin sol tarafındaki eşzamanlı vektör; işlecin sağ tarafındaki eşzamanlı vektör altındaysa Aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -265,7 +265,7 @@ Bir nesne türü `concurrent_vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` eşzamanlı vektör işlecinin sol tarafındaki küçüktür veya eşittir işleci sağ tarafında eşzamanlı vektör için ise; Aksi takdirde `false`.
+**doğru** işlecinin sol tarafındaki eşzamanlı vektör daha veya işlecin sağ tarafındaki eşzamanlı vektör eşit Aksi takdirde küçükse **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -303,7 +303,7 @@ Bir nesne türü `concurrent_vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` işlecin sol tarafındaki eşzamanlı vektör eşzamanlı vektör işlecinin sağ tarafında daha büyük ise; Aksi takdirde `false`.
+**doğru** işlecinin sol tarafındaki eşzamanlı vektör ise, aksi takdirde eşzamanlı vektör işlecin sağ tarafındaki büyük **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -341,7 +341,7 @@ Bir nesne türü `concurrent_vector`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` işlecin sol tarafındaki eşzamanlı vektör büyüktür veya eşittir işleci sağ tarafında eşzamanlı vektör için Aksi takdirde `false`.
+**doğru** işlecinin sol tarafındaki eşzamanlı vektör büyüktür veya eşittir eşzamanlı vektör işlecin sağ tarafındaki; tersi durumda ise **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 

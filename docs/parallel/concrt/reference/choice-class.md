@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 039f69f31c5a92cf07f96442c30bd59b0cc6f40e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9d38b8415b5ca214800c968d186f37c020dce6dc
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414582"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163965"
 ---
 # <a name="choice-class"></a>seçenek Sınıfı
 
@@ -216,7 +216,7 @@ Bir işaretçi `message` nesne arayan sahipliğini artık sahiptir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`consume` Yöntemi benzer `accept`, ancak her zaman bir çağrı tarafından gelmelidir `reserve` döndürülen `true`.
+`consume` Yöntemi benzer `accept`, ancak her zaman bir çağrı tarafından gelmelidir `reserve` döndürülen **true**.
 
 ##  <a name="has_value"></a> has_value
 
@@ -229,7 +229,7 @@ bool has_value() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` blok bir değer aldıysa `false` Aksi takdirde.
+**doğru** blok bir değer aldıysa **false** Aksi takdirde.
 
 ##  <a name="index"></a> Dizin
 
@@ -315,7 +315,7 @@ virtual bool reserve(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` iletinin başarıyla ayrıldı, `false` Aksi takdirde. Ayırmalar dahil olmak üzere çeşitli nedenlerle başarısız olabilir: ileti zaten ayrılmış veya kaynak ayırmaları Reddet vb. başka bir hedef tarafından kabul.
+**doğru** ileti başarıyla ayrıldı, **false** Aksi takdirde. Ayırmalar dahil olmak üzere çeşitli nedenlerle başarısız olabilir: ileti zaten ayrılmış veya kaynak ayırmaları Reddet vb. başka bir hedef tarafından kabul.
 
 ### <a name="remarks"></a>Açıklamalar
 

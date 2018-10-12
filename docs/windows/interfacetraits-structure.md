@@ -29,12 +29,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a50203f8e709a24293598b29e41b3220d5e9af5a
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: f140522e3697a427f66c88a2b9f6a53d40f2f8ad
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788733"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162145"
 ---
 # <a name="interfacetraits-structure"></a>InterfaceTraits Yapısı
 
@@ -129,7 +129,7 @@ Bu işlem başarılı olursa *ppv* tarafından belirtilen arabirim işaret `Base
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Bu işlem başarılı olursa ve *ptr* işaretçisine dönüştürme `Base`; Aksi takdirde `false` .
+**doğru** bu işlem başarılı olursa ve *ptr* işaretçisine dönüştürme `Base`; Aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -35,12 +35,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a674d63c52f6f204d0bb69c69cd5814cd6d9761a
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 85f9498f44f4f1ec2598e6263c003d041f519105
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788948"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162223"
 ---
 # <a name="comptrref-class"></a>ComPtrRef Sınıfı
 
@@ -176,11 +176,11 @@ Başka bir başvuru `ComPtrRef` nesne veya anonim bir tür için bir işaretçi 
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk işleç sayıları `true` , nesne *bir* nesneye eşit olup *b*; Aksi takdirde `false`.
+İlk işleç sayıları **true** , nesne *bir* nesneye eşit olup *b*; Aksi takdirde **false**.
 
-İkinci ve üçüncü işleçleri yield `true` , nesne *bir* eşittir `nullptr`; Aksi takdirde `false`.
+İkinci ve üçüncü işleçleri yield **true** , nesne *bir* eşittir **nullptr**; Aksi takdirde **false**.
 
-Dördüncü ve beşinci işleçleri yield `true` , nesne *bir* nesneye eşit olup *b*; Aksi takdirde `false`.
+Dördüncü ve beşinci işleçleri yield **true** , nesne *bir* nesneye eşit olup *b*; Aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -227,11 +227,11 @@ Başka bir başvuru `ComPtrRef` nesne veya anonim bir nesneye bir işaretçi (`v
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk işleç sayıları `true` , nesne *bir* nesnesine eşit değil *b*; Aksi takdirde `false`.
+İlk işleç sayıları **true** , nesne *bir* nesnesine eşit değil *b*; Aksi takdirde **false**.
 
-İkinci ve üçüncü işleçleri yield `true` , nesne *bir* eşit değildir `nullptr`; Aksi takdirde `false`.
+İkinci ve üçüncü işleçleri yield **true** , nesne *bir* eşit değildir **nullptr**; Aksi takdirde **false**.
 
-Dördüncü ve beşinci işleçleri yield `true` , nesne *bir* nesnesine eşit değil *b*; Aksi takdirde `false`.
+Dördüncü ve beşinci işleçleri yield **true** , nesne *bir* nesnesine eşit değil *b*; Aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 

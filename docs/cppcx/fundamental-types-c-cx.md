@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0bec396efa2d0a4191c67440e4ed3ed5d4bc083
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 1d8a9340abf7ca16fe2f0e6d6660bf14f00bd594
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110798"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161235"
 ---
 # <a name="fundamental-types-ccx"></a>Temel türler (C + +/ CX)
 
@@ -26,7 +26,7 @@ Aşağıdaki tabloda, yerleşik Boolean ve karakter türleri ve standart C++ eş
 
 |Ad Alanı|C + +/ CX adı|Tanım|Standart C++ adı|Değer aralıkları|
 |---------------|-----------------------------------------------------------------------|----------------|-------------------------|---------------------|
-|Platform|Boole değeri|Bir 8 bit Boole değeri.|bool|`true` (sıfırdan farklı) ve `false` (sıfır)|
+|Platform|Boole değeri|Bir 8 bit Boole değeri.|bool|**doğru** (sıfırdan farklı) ve **false** (sıfır)|
 |default|char16|Bir Unicode (UTF-16) kod noktasını temsil eden bir 16-bit sayısal olmayan değer.|wchar_t<br /><br /> veya<br /><br /> L'c'|(Unicode standardı tarafından belirtilen)|
 
 ## <a name="numeric-types"></a>Sayısal türler

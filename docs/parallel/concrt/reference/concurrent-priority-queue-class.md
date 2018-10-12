@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b87ac316c08f93a95f7791297b74cbbb20d5452a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: de97557025929c394039b1a786fe12a7035381e1
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413880"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163159"
 ---
 # <a name="concurrentpriorityqueue-class"></a>concurrent_priority_queue Sınıfı
 
@@ -195,7 +195,7 @@ bool empty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` öncelikli kuyruk boşsa, işlev çağrıldı, şu anda `false` Aksi takdirde.
+**doğru** öncelikli kuyruk boşsa, işlev çağrıldı, şu anda **false** Aksi takdirde.
 
 ##  <a name="get_allocator"></a> get_allocator
 
@@ -287,7 +287,7 @@ Sıranın boş olması durumunda yüksek öncelikli öğeyle doldurulur bir değ
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` bir değer POP, `false` Aksi takdirde.
+**doğru** bir değer POP, **false** Aksi takdirde.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

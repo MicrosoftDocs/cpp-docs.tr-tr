@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 130ffcb372e3791af74ae6ec70e7b9bcfaff9376
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 64c0a3fbc197af66e8a57928cadc29c28b1ece1a
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438099"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163770"
 ---
 # <a name="lockislocked"></a>lock::is_locked
 
@@ -40,13 +40,13 @@ bool is_locked();
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`true` bir kilidi açık tutulduğu, `false` Aksi takdirde.
+**doğru** bir kilidi açık tutulduğu, **false** Aksi takdirde.
 
 ## <a name="example"></a>Örnek
 
 Bu örnek, birden çok iş parçacığı arasında bir sınıfın tek bir örneğini kullanır.  Sınıfı bir kilit kendisine iç verilerine erişen her bir iş parçacığı için tutarlı olmasını sağlamak için kullanır.  Ana uygulama iş parçacığı herhangi bir çalışan iş parçacığı hala mevcut ve kadar tüm çalışan iş parçacığı'ndan çıkmak için beklediği görevlerini tamamladınız görmek için düzenli aralıklarla kontrol etmek için aynı sınıf örneği üzerinde bir kilit kullanır.
 
-```
+```cpp
 // msl_lock_is_locked.cpp
 // compile with: /clr
 #include <msclr/lock.h>

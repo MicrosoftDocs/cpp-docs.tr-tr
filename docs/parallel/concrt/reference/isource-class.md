@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26f39b9fff9d5fad930123fc930afe1600cd259e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e53f8999b4559a221b335528ec20b6034de269d3
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396486"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162210"
 ---
 # <a name="isource-class"></a>ISource Sınıfı
 
@@ -158,7 +158,7 @@ Bir işaretçi `message` nesne arayan sahipliğini artık sahiptir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`consume` Yöntemi benzer `accept`, ancak her zaman bir çağrı tarafından gelmelidir `reserve` döndürülen `true`.
+`consume` Yöntemi benzer `accept`, ancak her zaman bir çağrı tarafından gelmelidir `reserve` döndürülen **true**.
 
 ##  <a name="dtor"></a> ~ Isource
 
@@ -236,7 +236,7 @@ virtual bool reserve(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` iletinin başarıyla ayrıldı, `false` Aksi takdirde. Ayırmalar dahil olmak üzere çeşitli nedenlerle başarısız olabilir: ileti zaten ayrılmış veya kaynak ayırmaları Reddet vb. başka bir hedef tarafından kabul.
+**doğru** ileti başarıyla ayrıldı, **false** Aksi takdirde. Ayırmalar dahil olmak üzere çeşitli nedenlerle başarısız olabilir: ileti zaten ayrılmış veya kaynak ayırmaları Reddet vb. başka bir hedef tarafından kabul.
 
 ### <a name="remarks"></a>Açıklamalar
 

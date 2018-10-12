@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 04202b647910914de8ebe92397efe1373e9508be
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8d6d91f312b028f44e0671c7960d4b06c2634928
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401374"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162522"
 ---
 # <a name="agent-class"></a>agent Sınıfı
 
@@ -132,7 +132,7 @@ bool cancel();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` aracıyı iptal edildiyse `false` Aksi takdirde. Bir aracı çalıştırma zaten başlatıldı veya zaten tamamlandı, iptal edilemez.
+**doğru** aracı iptal edildiyse **false** Aksi takdirde. Bir aracı çalıştırma zaten başlatıldı veya zaten tamamlandı, iptal edilemez.
 
 ##  <a name="done"></a> Bitti
 
@@ -144,7 +144,7 @@ bool done();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Aracı için taşınırsa `agent_done` durumu `false` Aksi takdirde. İptal edilmiş bir aracı taşınamaz `agent_done` durumu.
+**doğru** aracı taşınırsa `agent_done` durumu **false** Aksi takdirde. İptal edilmiş bir aracı taşınamaz `agent_done` durumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -172,7 +172,7 @@ bool start();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` aracıyı doğru başlattıysanız `false` Aksi takdirde. İptal edilmiş bir aracı başlatılamıyor.
+**doğru** aracıyı doğru başlattıysanız **false** Aksi takdirde. İptal edilmiş bir aracı başlatılamıyor.
 
 ##  <a name="status"></a> Durumu
 

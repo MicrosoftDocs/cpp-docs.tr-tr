@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17babc058ef3e1851da686e9a8c5bf17cefbc2fd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f84ca4c924c837ec008c16d6ff3b77af379df4cd
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427010"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163809"
 ---
 # <a name="cancellation-in-the-ppl"></a>PPL'de İptal
 
@@ -91,7 +91,7 @@ Paralel görevleri iptal etme daha fazla örnek için bkz [izlenecek yol: görev
 
 - İçin `task` nesneleri kullanan [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) işlevi. `cancel_current_task` Geçerli görev ve tüm alt değer tabanlı devamlılık iptal eder. (İptal iptal etmez *belirteci* görev veya devamlılıkları ile ilişkili.)
 
-- Görev grupları ve paralel algoritmalar için [concurrency::is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) iptal algılayın ve bu işlevi döndüğünde görevin gövdesinden olabildiğince çabuk döndürmek için işlevi `true`. (Çağırmayın `cancel_current_task` bir görev grubundan.)
+- Görev grupları ve paralel algoritmalar için [concurrency::is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) iptal algılayın ve bu işlevi döndüğünde görevin gövdesinden olabildiğince çabuk döndürmek için işlevi **true** . (Çağırmayın `cancel_current_task` bir görev grubundan.)
 
 Aşağıdaki örnek, görev iptali için ilk temel düzeni gösterir. Görevin gövdesini bazen bir döngü içinde iptalleri denetler.
 

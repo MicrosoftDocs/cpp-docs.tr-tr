@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: eea3e1f54fa1c5e1c4313a9442e812770b0a6cdd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d0aee08fc59130e829d9448ba4f28a9823a461ed
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161781"
 ---
 # <a name="lockoperator-bool"></a>lock::operator bool
 
@@ -40,17 +40,17 @@ operator bool();
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`true` bir kilidi açık tutulduğu, `false` Aksi takdirde.
+**doğru** bir kilidi açık tutulduğu, **false** Aksi takdirde.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işleç gerçekten dönüştürür `_detail_class::_safe_bool` daha güvenli olan `bool` bir integral türe dönüştürülemediğinden.
+Bu işleç gerçekten dönüştürür `_detail_class::_safe_bool` daha güvenli olan **bool** bir integral türe dönüştürülemediğinden.
 
 ## <a name="example"></a>Örnek
 
 Bu örnek, birden çok iş parçacığı arasında bir sınıfın tek bir örneğini kullanır.  Sınıfı bir kilit kendisine iç verilerine erişen her bir iş parçacığı için tutarlı olmasını sağlamak için kullanır.  Ana uygulama iş parçacığı herhangi bir çalışan iş parçacığı hala mevcut ve kadar tüm çalışan iş parçacığı'ndan çıkmak için beklediği görevlerini tamamladınız görmek için düzenli aralıklarla kontrol etmek için aynı sınıf örneği üzerinde bir kilit kullanır.
 
-```
+```cpp
 // msl_lock_op_bool.cpp
 // compile with: /clr
 #include <msclr/lock.h>

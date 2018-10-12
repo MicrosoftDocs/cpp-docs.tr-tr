@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13ddf5a303096d3244f6b8b59e58bcb41bafe91f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ee06d9a30339a72bd7137db6f277a1eb41028d50
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374268"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163096"
 ---
 # <a name="singleassignment-class"></a>single_assignment Sınıfı
 
@@ -158,7 +158,7 @@ bool has_value() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` blok bir değer aldıysa `false` Aksi takdirde.
+**doğru** blok bir değer aldıysa **false** Aksi takdirde.
 
 ##  <a name="link_target_notification"></a> link_target_notification
 
@@ -236,11 +236,11 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` iletinin başarıyla ayrıldı, `false` Aksi takdirde.
+**doğru** ileti başarıyla ayrıldı, **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sonra `reserve` çağrılır, döndürürse `true`, ya da `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.
+Sonra `reserve` çağrılır, döndürürse **true**, ya da `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.
 
 ##  <a name="resume_propagation"></a> resume_propagation
 

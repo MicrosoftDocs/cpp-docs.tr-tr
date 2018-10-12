@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d875836cbfe9506d41a979a63d941d1ee5b467a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fd35ff136c0145e1c76a04d15052d426a7c90dcc
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444339"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161274"
 ---
 # <a name="how-to-use-build-events-in-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma
 
@@ -29,7 +29,7 @@ Bir derleme olay MSBuild yapı işleminde belirli bir aşamada gerçekleştirir 
 
 Üç derleme olayların her biri bir öğe tanım grubu içinde bir command öğesi tarafından temsil edilen (`<Command>`), yürütülür ve bir ileti öğesi (`<Message>`) diğer bir deyişle olduğunda görüntülenen **MSBuild** derleme olayı gerçekleştirir. Her öğe isteğe bağlıdır ve birden çok kez aynı öğeye belirtirseniz, son oluşum önceliklidir.
 
-İsteğe bağlı *yapı içinde kullanımı* öğesi (`<`*derleme olay*`UseInBuild>`) derleme olay yürütülüp yürütülmeyeceğini gösteren bir özellik grubu belirtilebilir. İçeriğinin değerini bir *yapı içinde kullanımı* öğedir ya da `true` veya `false`. Varsayılan olarak, bir derleme olay sürece yürütülür, karşılık gelen *yapı içinde kullanımı* ayarlanır `false`.
+İsteğe bağlı *yapı içinde kullanımı* öğesi (`<`*derleme olay*`UseInBuild>`) derleme olay yürütülüp yürütülmeyeceğini gösteren bir özellik grubu belirtilebilir. İçeriğinin değerini bir *yapı içinde kullanımı* öğedir ya da **true** veya **false**. Varsayılan olarak, bir derleme olay sürece yürütülür, karşılık gelen *yapı içinde kullanımı* ayarlanır `false`.
 
 Aşağıdaki tabloda, her yapı olay XML öğesi listelenmektedir:
 

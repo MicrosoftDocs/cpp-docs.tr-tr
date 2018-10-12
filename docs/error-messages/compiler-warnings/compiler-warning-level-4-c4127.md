@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 561173e2b451a0b736d97042667a2fb14b3a7eb7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 80f831d527e918fce0551f6a1336fd2fe994917d
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46094903"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161287"
 ---
 # <a name="compiler-warning-level-4-c4127"></a>Derleyici Uyarısı (düzey 4) C4127
 
@@ -29,9 +29,9 @@ ms.locfileid: "46094903"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Denetim ifadesi, bir `if` deyimi veya `while` döngü için bir sabit olarak değerlendirilir. Visual Studio 2015 güncelleştirme 3, 1 gibi Önemsiz sabitleri başlayarak, yaygın kullanılan deyimsel kullanım nedeniyle veya `true` bir ifadede bir işlemin sonucunu olmadıkları sürece uyarı tetiklemez.
+Denetim ifadesi, bir **varsa** deyimi veya **sırada** döngü için bir sabit olarak değerlendirilir. Visual Studio 2015 güncelleştirme 3, 1 gibi Önemsiz sabitleri başlayarak, yaygın kullanılan deyimsel kullanım nedeniyle veya **true** bir ifadede bir işlemin sonucunu olmadıkları sürece uyarı tetiklemez.
 
-Varsa, Denetim ifadesi bir `while` döngüsü, bir sabit ortadaki döngüden çıkılıp çünkü, değiştirmeyi göz önüne alın `while` ile döngü bir `for` döngü. Başlatma, sonlandırma testi atlamak ve döngü gelişiminde bir `for` olması gibi sonsuz bir döngüye neden oluyor döngüsü `while(1)`, ve gövdesinden döngüden çıkabilirsiniz `for` deyimi.
+Varsa, Denetim ifadesi bir **sırada** döngüsü, bir sabit ortadaki döngüden çıkılıp çünkü, değiştirmeyi göz önüne alın **sırada** ile döngü bir **için** döngü. Başlatma, sonlandırma testi atlamak ve döngü gelişiminde bir **için** olması gibi sonsuz bir döngüye neden oluyor döngüsü `while(1)`, ve gövdesinden döngüden çıkabilirsiniz **için** deyimi.
 
 ## <a name="example"></a>Örnek
 

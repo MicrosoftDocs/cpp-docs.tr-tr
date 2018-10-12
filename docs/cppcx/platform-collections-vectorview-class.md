@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe3c516881115dd96337f950d83de2d30c57161b
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 9cfad80ac1f16d200f29504be1d4fb818e6e6afd
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102518"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163900"
 ---
 # <a name="platformcollectionsvectorview-class"></a>Platform::Collections:: vectorview sınıfı
 
@@ -96,7 +96,7 @@ VectorView ilk öğeyi belirleyen bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri ile bildirilen bir değişken atamak First() tarafından döndürülen yineleyici tutmak için kullanışlı bir yol olan **otomatik** kesinti anahtar sözcüğü yazın. Örneğin, `auto x = myVectorView->First();`.
+Dönüş değeri ile bildirilen bir değişken atamak First() tarafından döndürülen yineleyici tutmak için kullanışlı bir yol olan **otomatik** kesinti anahtar sözcüğü yazın. Örneğin: `auto x = myVectorView->First();`
 
 ## <a name="getat"></a>  VectorView::GetAt yöntemi
 
@@ -168,11 +168,11 @@ Bulunacak öğe.
 *Dizin*<br/>
 Öğenin sıfır tabanlı dizini, parametre `value` bulundu; Aksi takdirde, 0.
 
-`index` Parametresi ise 0 öğe VectorView ilk öğesidir ya da öğe bulunamadı. Dönüş değeri ise `true`, öğe bulundu ve ilk öğedir; Aksi takdirde, öğe bulunamadı.
+*Dizin* parametredir 0 ya da öğe ilk öğesi ise `VectorView` veya öğe bulunamadı. Dönüş değeri ise **true**, öğe bulundu ve ilk öğedir; Aksi takdirde, öğe bulunamadı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Belirtilen öğe bulunursa; Aksi takdirde, `false`.
+**doğru** belirtilen öğe bulunduysa, **false**.
 
 ## <a name="size"></a>  VectorView::Size yöntemi
 

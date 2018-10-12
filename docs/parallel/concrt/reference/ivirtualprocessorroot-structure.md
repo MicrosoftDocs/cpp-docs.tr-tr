@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7466c00ec1a5c507a84a098b3dca79d57ffee91e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 891fcd96901423e5d5c23b840784f9e050dbbe81
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445990"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162925"
 ---
 # <a name="ivirtualprocessorroot-structure"></a>IVirtualProcessorRoot Yapısı
 
@@ -111,7 +111,7 @@ Bu kök tarafından şu anda dağıtıldığı bağlamı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir Boole değeri. Değerini `true` öğesinden döndürülen iş parçacığı proxy'sini gösterir `Deactivate` yanıt olarak bir çağrı yöntemi `Activate` yöntemi. Değerini `false` Kaynak Yöneticisi'nde bir bildirim olaya yanıt olarak yönteminden döndürülen iş parçacığı proxy'sini gösterir. Bir kullanıcı modunda zamanlanabilen (UMS) iş parçacığı Zamanlayıcısı, bu öğeleri scheduler'ın tamamlama listesinde görüntülenmektedir ve bunları işlemek için Zamanlayıcı gerekli gösterir.
+Bir Boole değeri. Değerini **true** öğesinden döndürülen iş parçacığı proxy'sini gösterir `Deactivate` yanıt olarak bir çağrı yöntemi `Activate` yöntemi. Değerini `false` Kaynak Yöneticisi'nde bir bildirim olaya yanıt olarak yönteminden döndürülen iş parçacığı proxy'sini gösterir. Bir kullanıcı modunda zamanlanabilen (UMS) iş parçacığı Zamanlayıcısı, bu öğeleri scheduler'ın tamamlama listesinde görüntülenmektedir ve bunları işlemek için Zamanlayıcı gerekli gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -119,9 +119,9 @@ Scheduler işlerinizi bulamadığında sanal işlemci kökünde yürütülürken
 
 Devre dışı bırakılan sanal işlemci kök çağrısı ile uyandırılabilir `Activate` yöntemiyle için geçirilen bağımsız değişken `Deactivate` yöntemi. Zamanlayıcı, çağrılar sağlamaktan sorumludur `Activate` ve `Deactivate` yöntemleri halindedir ancak belirli bir sırayla alınabilmesi için gerekli değildir. Kaynak Yöneticisi için bir çağrı alma işleyebilir `Activate` çağrısı almadan önce yöntem `Deactivate` yöntemi yöneliktir.
 
-Bir sanal işlemci kökünde awakens varsa ve dönüş değeri `Deactivate` yöntemdir değeri `false`, Zamanlayıcı UMS tamamlanma listesi aracılığıyla sorgu `IUMSCompletionList::GetUnblockNotifications` yöntemi, işlem bu bilgilere ve sonradan çağrı`Deactivate`yeniden yöntemi. Bu tür sürede kadar tekrarlanmalıdır `Deactivate` yöntemi değeri döndürür `true`.
+Bir sanal işlemci kökünde awakens varsa ve dönüş değeri `Deactivate` yöntemdir değeri **false**, Zamanlayıcı UMS tamamlanma listesi aracılığıyla sorgu `IUMSCompletionList::GetUnblockNotifications` yöntemi, bu bilgileri üzerinde işlem yapma ve ardından Daha sonra arama `Deactivate` yeniden yöntemi. Bu tür sürede kadar tekrarlanmalıdır `Deactivate` yöntemi değeri döndürür `true`.
 
-`invalid_argument` oluşturulur bağımsız değişken `pContext` değerine sahip `NULL`.
+`invalid_argument` oluşturulur bağımsız değişken `pContext` NULL değere sahip.
 
 `invalid_operation` Sanal işlemci kökü etkinleştirmemiştir değilse, durum veya bağımsız değişken `pContext` bu sanal işlemci kök tarafından en son postasıdan yürütme bağlamı temsil etmiyor.
 

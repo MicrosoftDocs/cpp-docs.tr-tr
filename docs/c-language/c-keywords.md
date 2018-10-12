@@ -1,7 +1,7 @@
 ---
 title: C anahtar sözcükleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/09/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80c1f0d4ac5d843732771281202612e31a4073c2
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: d9a5255609c3abb4846ce08a2163407eee6f240c
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860894"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161911"
 ---
 # <a name="c-keywords"></a>C Anahtar Sözcükleri
 
@@ -48,17 +48,19 @@ Aşağıdaki anahtar sözcükler ve özel tanımlayıcılar, Microsoft C derleyi
 
 |||||
 |-|-|-|-|
-|**__asm**|**dllimport**<sup>2</sup>|**__int8**|**naked**<sup>2</sup>|
-|**__based**<sup>1</sup>|**__except**|**__int16**|**__stdcall**|
-|**__cdecl**|**__fastcall**|**__int32 türünün int**|**iş parçacığı**<sup>2</sup>|
-|**__declspec**|**__finally**|**__int64**|**__try**|
-|**dllexport**<sup>2</sup>|**__inline**|**__leave**||
+|**__asm**<sup>3</sup>|**dllimport**<sup>2</sup>|**__int8**<sup>3</sup>|**naked**<sup>2</sup>|
+|**__based**<sup>1, 3</sup>|**__except**<sup>3</sup>|**__int16**<sup>3</sup>|**__stdcall**<sup>3</sup>|
+|**__cdecl**<sup>3</sup>|**__fastcall**|**__int32**<sup>3</sup>|**iş parçacığı**<sup>2</sup>|
+|**__declspec**<sup>3</sup>|**__finally**<sup>3</sup>|**__int64**<sup>3</sup>|**__try**<sup>3</sup>|
+|**dllexport**<sup>2</sup>|**__inline**<sup>3</sup>|**__leave**<sup>3</sup>||
 
 <sup>1</sup> **__based** anahtar sözcüğü için sınırlı kullanımlara sahiptir 32-bit ve 64 bit hedef derlemeler.
 
 <sup>2</sup> ile kullanıldığında özel tanımlayıcılardır bunlar **__declspec**; diğer bağlamlardaki kullanımları sınırlı değildir.
 
-Microsoft uzantıları varsayılan olarak etkindir. Programlarınızın tamamen taşınabilir olmasını sağlamak için derleme sırasında /Za seçeneğini (ANSI uyumluluğu için derleme) belirterek Microsoft uzantılarını devre dışı bırakabilirsiniz. Bunu yaptığınızda, Microsoft'a özgü anahtar sözcükler devre dışı bırakıldı.
+<sup>3</sup> Microsoft uzantıları etkinleştirildiğinde önceki sürümleriyle uyumluluk için bu anahtar sözcükler hem başında iki alt çizgi ve tek bir alt çizgi ile kullanılabilir.
+
+Microsoft uzantıları varsayılan olarak etkindir. Programlarınızın tamamen taşınabilir olmasını sağlamak için Microsoft uzantıları belirterek devre dışı bırakabilirsiniz [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) derleme sırasında seçeneği. Bunu yaptığınızda, bazı Microsoft'a özgü anahtar sözcükler devre dışı bırakıldı.
 
 Microsoft uzantıları etkinleştirildiğinde, programlarınızda yukarıda listelenen anahtar sözcükleri kullanabilirsiniz. ANSI uyumluluğu için bu anahtar sözcüklerin çoğu çift alt çizgi ile başlar. Dört özel durum **dllexport**, **dllimport**, **naked**, ve **iş parçacığı**, yalnızca kullanılan **__declspec** ve bu nedenle başlarında çift alt çizgi gerektirmez. Geriye dönük uyumluluk için geriye kalan anahtar sözcüklerin tek alt çizgili biçimleri desteklenir.
 

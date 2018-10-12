@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1106ad878f4053cacae67d9d0e343e9469b1a1c1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f4b3703d0bd4556090c08a874bce362120817397
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061181"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161807"
 ---
 # <a name="inheritance-keywords"></a>Devralınan Anahtar Sözcükler
 
@@ -83,6 +83,8 @@ komut satırı seçenekleri veya pragmalar, işaretçileri bağımsız olarak `c
 
 > [!NOTE]
 >  Aynı İleri dönük bildirimi bir sınıf üye işaretçisi gösteriminin söz konusu sınıfın üyeleri için işaretçiler bildirir her çeviri birimi içinde gerçekleşmesi gerektiğini ve üye işaretçileri ifade önce bildirimi olmamalıdır.
+
+Önceki sürümlerle uyumluluk için **_single_inheritance**, **_multiple_inheritance**, ve **_virtual_inheritance** için eş anlamlı sözcükler olan **__ single_inheritance**, **__multiple_inheritance**, ve **__virtual_inheritance** sürece derleyici seçeneği [/Za \(dil devre dışı bırak Uzantılar)](../build/reference/za-ze-disable-language-extensions.md) belirtilir.
 
 **END Microsoft özgü**
 

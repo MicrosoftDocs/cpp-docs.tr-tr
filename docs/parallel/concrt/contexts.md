@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7be66658c9452fa97c1971ae6719dccb06dbd836
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9fb14544a799861053c2fdf2a5bb92f210eb5c46
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378227"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163835"
 ---
 # <a name="contexts"></a>Bağlamlar
 
@@ -67,7 +67,7 @@ Kullanılabilir donanım iş parçacıklarının olduğundan varsayılan Zamanla
 > [!NOTE]
 >  Eşzamanlılık Çalışma zamanı tarafından oluşturulan bir iş parçacığından gecikmeyi etkinleştirin. (Ana iş parçacığı dahil) çalışma zamanı tarafından oluşturulmamış bir iş parçacığından çağrıldığında gecikmeyi bir etkisi yoktur.
 
-Geçerli bağlamda gecikmeyi etkinleştirmek için çağrı [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) yöntemiyle `_BeginOversubscription` parametresini `true`. Eşzamanlılık Çalışma zamanı tarafından oluşturulan bir iş parçacığında gecikmeyi etkinleştirdiğinizde, ek bir iş parçacığı oluşturmak çalışma zamanı neden olur. Aşırı abonelik bitiş gerektiren tüm görevleri sonra çağırma `Context::Oversubscribe` ile `_BeginOversubscription` parametresini `false`.
+Geçerli bağlamda gecikmeyi etkinleştirmek için çağrı [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) yöntemiyle `_BeginOversubscription` parametresini **true**. Eşzamanlılık Çalışma zamanı tarafından oluşturulan bir iş parçacığında gecikmeyi etkinleştirdiğinizde, ek bir iş parçacığı oluşturmak çalışma zamanı neden olur. Aşırı abonelik bitiş gerektiren tüm görevleri sonra çağırma `Context::Oversubscribe` ile `_BeginOversubscription` parametresini **false**.
 
 Aşırı abonelik birden çok kez geçerli bağlamdan etkinleştirebilirsiniz, ancak, onu etkinleştirmeniz aynı sayıda devre dışı bırakmanız gerekir. Aşırı abonelik da yuvalanabilir; diğer bir deyişle, aşırı talep kullanan başka bir görev tarafından oluşturulan bir görev Ayrıca kendi bağlam fazladan abone atayabilir. Ancak, aynı içeriği, yalnızca en dıştaki çağrısı bir iç içe geçmiş görev ve üst aitse `Context::Oversubscribe` ek bir iş parçacığı oluşturulmasına neden olur.
 

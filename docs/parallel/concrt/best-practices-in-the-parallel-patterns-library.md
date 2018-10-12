@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28bedc703a8fa965b5380cb8c7eba840d07f7772
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d5ad7d0210f99b1b1aa5c481ed1b8695c68fb311
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396941"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163393"
 ---
 # <a name="best-practices-in-the-parallel-patterns-library"></a>Paralel Desen Kitaplığı'ndaki En İyi Yöntemler
 
@@ -180,7 +180,7 @@ Bu düzen önlemek için kodunuzu yeniden düzenleyin öneririz. Bu örnekte, ek
 
 Bir görev işlemi engelleyen bir Guyana gerçekleştirdiğinde, ilk görevi için veriler beklerken çalışma zamanı başka işleri gerçekleştirebilirsiniz. Çalışma zamanı, engellemesini kaldırır, bekleyen görev tarih değiştirdiğinde. Çalışma zamanı, daha az engeli görevleri tarih değiştirdiğinde önce daha kısa bir süre önce engeli görevler genellikle tarih değiştirdiğinde. Bu nedenle, çalışma zamanı, düşük performansa neden olur engelleme işlemi sırasında gereksiz iş zamanlayabilirsiniz. Paralel işi iptal etmeden önce engelleyici bir işlem gerçekleştirdiğinizde, buna göre engelleme işlemi çağrısı geciktirip `cancel`. Bu, gereksiz çalışmayı gerçekleştirmek diğer görevleri neden olur.
 
-Tanımlar aşağıdaki örneği inceleyin `parallel_find_answer` işlevin sağlanan koşul işlevini karşılayan belirtilen dizi öğesi için arar. Koşul işlevi döndüğünde `true`, paralel çalışma oluşturur bir `Answer` nesne ve genel görev iptal eder.
+Tanımlar aşağıdaki örneği inceleyin `parallel_find_answer` işlevin sağlanan koşul işlevini karşılayan belirtilen dizi öğesi için arar. Koşul işlevi döndüğünde **true**, paralel çalışma oluşturur bir `Answer` nesne ve genel görev iptal eder.
 
 [!code-cpp[concrt-blocking-cancel#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_13.cpp)]
 

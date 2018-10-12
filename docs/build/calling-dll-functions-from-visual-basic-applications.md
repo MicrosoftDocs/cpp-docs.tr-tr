@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1cedafaea33ac642e3a5593468b996f2442bd50
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 47504b7a471dc38f30e4ceb59b5feeffcc53db6d
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894570"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161846"
 ---
 # <a name="calling-dll-functions-from-visual-basic-applications"></a>Visual Basic Uygulamasından DLL İşlevi Çağırma
 
@@ -33,7 +33,7 @@ Visual Basic uygulamaları (veya Pascal ya da Fortran gibi diğer dillerdeki) C/
 
 `__stdcall` işlev için doğru çağrı kuralını oluşturur (çağrılan işlev yığını temizler ve parametreler sağdan sola geçirilir) ancak işlev adını farklı şekilde düzenler. Bu nedenle **__declspec(dllexport)** kullanılan üzerinde dışa aktarılan bir işlevin bir DLL içinde düzenlenmiş adı dışarı aktarılır.
 
-`__stdcall` Ad düzenlemesi simge adının alt çizgi (_) ekler ve simgesiyle ekler bir at işareti (**\@**) karakteri ve ardından (gerekli yığın boşluğu) bağımsız değişken listesindeki bayt sayısı. Sonuç olarak, şu şekilde bildirildiğinde işlev:
+`__stdcall` Ad düzenlemesi simge adının alt çizgi ekler ( **\_** ) ve simgesiyle ekler bir at işareti (**\@**) karakter sayısına göre ve ardından (gerekli yığın boşluğu) bağımsız değişken listesindeki bayt sayısı. Sonuç olarak, şu şekilde bildirildiğinde işlev:
 
 ```C
 int __stdcall func (int a, double b)
@@ -45,7 +45,7 @@ C çağırma kuralı (`__cdecl`) adı olarak düzenler `_func`.
 
 Düzenlenmiş adı almak için kullanın [/MAP](../build/reference/map-generate-mapfile.md). Kullanım **__declspec(dllexport)** şunları yapar:
 
-- İşlev C çağırma kuralı ile dışarı aktarılıyorsa (**_cdecl**), ad dışarı aktarılırken başındaki altçizgiyi (_) kaldırır.
+- İşlev C çağırma kuralı ile dışarı aktarılıyorsa (`__cdecl`), başındaki altçizgiyi kaldırır ( **\_** ) adı ne zaman aktarılır.
 
 - Dışarı aktarılan işlev C çağırma kuralı kullanmıyorsa (örneğin, `__stdcall`), bunu düzenlenmiş adı dışarı aktarır.
 

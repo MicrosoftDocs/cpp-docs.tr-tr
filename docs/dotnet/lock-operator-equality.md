@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: f60cf71305731391d03763810775eaf7f8e5fd7e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7579c7493cd05d3cf2a0a119e601dd63ed5faf91
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46411540"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162249"
 ---
 # <a name="lockoperator"></a>lock::operator==
 
@@ -46,11 +46,11 @@ Eşitlik için karşılaştırma yapılacak nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Döndürür `true` varsa `t` kilit ait nesne aynı `false` Aksi takdirde.
+Döndürür **true** varsa `t` kilit ait nesne aynı **false** Aksi takdirde.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // msl_lock_op_eq.cpp
 // compile with: /clr
 #include <msclr/lock.h>

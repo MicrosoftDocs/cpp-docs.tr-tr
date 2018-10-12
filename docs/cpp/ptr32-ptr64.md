@@ -1,13 +1,17 @@
 ---
 title: __ptr32, __ptr64 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/09/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
 f1_keywords:
 - __ptr32_cpp
 - __ptr64_cpp
+- __ptr32
+- __ptr64
+- _ptr32
+- _ptr64
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -22,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 573af4088e288403edaa8e5c34fb84817442c8f5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 50360ab6a163f70f4f950e44d963b9aa67dc04f4
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116002"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161651"
 ---
 # <a name="ptr32-ptr64"></a>__ptr32, __ptr64
 
@@ -46,6 +50,8 @@ Bir işaretçi bir 32-bit sistemde bildirilen **__ptr64** 32 bit işaretçi kesi
 
 > [!NOTE]
 > Kullanamazsınız **__ptr32** veya **__ptr64** ile derleme yaparken **/CLR: pure**. Aksi halde, derleyici hatası C2472 oluşturulur. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+
+Önceki sürümlerle uyumluluk için **_ptr32** ve **_ptr64** için eş anlamlı sözcükler olan **__ptr32** ve **__ptr64** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) belirtilir.
 
 ## <a name="example"></a>Örnek
 

@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8adba73274fbc9821eb8096e82268b24b41718f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 72fa49d763159385607330231994d15952f0c771
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46430067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163146"
 ---
 # <a name="ischedulerproxy-structure"></a>ISchedulerProxy Yapısı
 
@@ -124,7 +124,7 @@ Geçerli iş parçacığı abone olmak ve bunun için kaynak ayırma sırasında
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`IExecutionResource` Geçerli iş parçacığı için arabirim parametresi `doSubscribeCurrentThread` değerine sahip `true`. Değer ise `false`, yöntem döndürür `NULL`.
+`IExecutionResource` Geçerli iş parçacığı için arabirim parametresi `doSubscribeCurrentThread` değerine sahip **true**. Değer ise **false**, bu yöntem NULL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -132,7 +132,7 @@ Bir zamanlayıcı herhangi bir iş yürütülmeden önce sanal işlemci kökü K
 
 Resource Manager kaynakları için bir zamanlayıcı yöntemi çağırarak verir [Ischeduler::addvirtualprocessors](ischeduler-structure.md#addvirtualprocessors) sanal işlemci kökü listesi ile. Bu yöntem döndürmeden önce yöntemin zamanlayıcıya bir geri arama olarak çağrılan.
 
-Zamanlayıcı parametresini ayarlayarak aboneliği için geçerli iş parçacığının istenen `doSubscribeCurrentThread` için `true`, yöntem döndürür bir `IExecutionResource` arabirimi. Abonelik kullanarak sonraki bir noktada bitirilmelidir [Iexecutionresource::Remove](iexecutionresource-structure.md#remove) yöntemi.
+Zamanlayıcı parametresini ayarlayarak aboneliği için geçerli iş parçacığının istenen `doSubscribeCurrentThread` için **true**, yöntem döndürür bir `IExecutionResource` arabirimi. Abonelik kullanarak sonraki bir noktada bitirilmelidir [Iexecutionresource::Remove](iexecutionresource-structure.md#remove) yöntemi.
 
 Hangi donanım iş parçacıklarının seçili belirlerken, Resource Manager'ın işlemci düğüm benzeşim için en iyi duruma getirme dener. Aboneliği için geçerli iş parçacığının istenen geçerli iş parçacığı bu Zamanlayıcı için atanan çalışma katılmak amaçlayan bir gösterge yoktur. Böyle bir durumda ayrılmış sanal işlemci kökü, geçerli iş parçacığı, mümkünse yürütüldüğü işlemci düğümde yer alır.
 

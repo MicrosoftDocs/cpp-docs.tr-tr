@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b3997f8beb414992464c51ca1c1fd944145c43d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d8c8c3cc219f0cf658dc2669ccc10adf3aba55bd
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715149"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163536"
 ---
 # <a name="manifestuac-embeds-uac-information-in-manifest"></a>/MANIFESTUAC (Bildirimdeki UAC bilgilerini katıştırır)
 
@@ -50,7 +50,7 @@ Kullanıcı Hesabı Denetimi (UAC) bilgisinin program bildiriminde gömülü olu
 Aşağıdakilerden birini *asInvoker*, *highestAvailable*, veya *requireAdministrator'a*. Varsayılan olarak asInvoker. Daha fazla bilgi için bu konunun ilerleyen bölümlerinde Açıklamalar bölümüne bakın.
 
 *_uiAccess*<br/>
-`true` uygulamanın kullanıcı arabirimi koruma düzeylerinin atlanıp ve giriş izni yüksek Windows masaüstünde sürücü istiyorsanız; Aksi takdirde, `false`. Varsayılan olarak `false`. Kümesine `true` yalnızca kullanıcı arabirimi erişilebilirlik uygulamaları için.
+**doğru** uygulamanın kullanıcı arabirimi koruma düzeylerinin atlanıp ve sürücü giriş izni yüksek windows masaüstü için; Aksi takdirde istiyorsanız **false**. Varsayılan olarak **false**. Kümesine **true** yalnızca kullanıcı arabirimi erişilebilirlik uygulamaları için.
 
 ## <a name="remarks"></a>Açıklamalar
 

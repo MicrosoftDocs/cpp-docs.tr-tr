@@ -1,13 +1,17 @@
 ---
 title: __sptr, __uptr | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/10/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
 f1_keywords:
 - __uptr_cpp
 - __sptr_cpp
+- __uptr
+- __sptr
+- _uptr
+- _sptr
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 269fe70a5a40a90a512c826e98ba2c8ea698a55b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fa67c815fdfeac0f5728ecd671aaa8f04a59ef89
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052523"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163484"
 ---
 # <a name="sptr-uptr"></a>__sptr, __uptr
 
@@ -44,6 +48,8 @@ void MyFunction(char * __uptr __ptr32 myValue);
 ```
 
 Kullanım **__sptr** ve **__uptr** işaretçi bildirimleri ile değiştiriciler. Konumunu değiştiricilerini kullanmak bir [işaretçi türü niteleyici](../c-language/pointer-declarations.md), değiştirici başka bir deyişle, yıldız işareti izlemeniz gerekir. Değiştiricilerini kullanamazsınız [üye işaretçileri](../cpp/pointers-to-members.md). Değiştiriciler işaretçi olmayan bildirimleri etkilemez.
+
+Önceki sürümlerle uyumluluk için **_sptr** ve **_uptr** için eş anlamlı sözcükler olan **__sptr** ve **__uptr** derleyici seçeneği sürece [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) belirtilir.
 
 ## <a name="example"></a>Örnek
 

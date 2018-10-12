@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36fe82bc5d17cd3c4951b008af28ba89b171c78f
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: acf3ae2fd16eb3aacbc0a2e681ae39aece1b4dd4
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103938"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163224"
 ---
 # <a name="platformcollectionsvector-class"></a>Platform::Collections:: Vector sınıfı
 
@@ -157,7 +157,7 @@ Vektör içindeki ilk öğeyi gösteren bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri ile bildirilen bir değişken atamak First() tarafından döndürülen yineleyici tutmak için kullanışlı bir yol olan **otomatik** kesinti anahtar sözcüğü yazın. Örneğin, `auto x = myVector->First();`. Bu yineleyici koleksiyonu uzunluğunu bilir.
+Dönüş değeri ile bildirilen bir değişken atamak First() tarafından döndürülen yineleyici tutmak için kullanışlı bir yol olan **otomatik** kesinti anahtar sözcüğü yazın. Örneğin: `auto x = myVector->First();` Bu yineleyici koleksiyonu uzunluğunu bilir.
 
 Bir STL işleve Yineleyicilerin bir çiftini gerektiğinde ücretsiz işlevleri kullanmak [Windows::Foundation:: Collections:: başlamak](../cppcx/begin-function.md) ve [Windows::Foundation::Collections::end](../cppcx/end-function.md)
 
@@ -240,11 +240,11 @@ Bulunacak öğe.
 *Dizin*<br/>
 Öğenin sıfır tabanlı dizini, parametre *değer* bulundu; Aksi takdirde, 0.
 
-*Dizin* parametresi ise 0 öğe vektör ilk öğesidir ya da öğe bulunamadı. Dönüş değeri ise `true`, öğe bulundu ve ilk öğedir; Aksi takdirde, öğe bulunamadı.
+*Dizin* parametresi ise 0 öğe vektör ilk öğesidir ya da öğe bulunamadı. Dönüş değeri ise **true**, öğe bulundu ve ilk öğedir; Aksi takdirde, öğe bulunamadı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Belirtilen öğe bulunursa; Aksi takdirde, `false`.
+**doğru** belirtilen öğe bulunduysa, **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -31,12 +31,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 70663c43c6d3bc7b661f339ce679d3faf16c9aae
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: ae2199ec414556fe3401c94c273d5ef0c13c3c5d
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235872"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162535"
 ---
 # <a name="hstringreference-class"></a>HStringReference Sınıfı
 
@@ -199,7 +199,7 @@ Karşılaştırılacak ikinci parametre.  *Sol* olabilir bir `HStringReference` 
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa *lhs* ve *sol* parametreleri eşit; Aksi takdirde `false`.
+**doğru** varsa *lhs* ve *sol* parametreleri eşit; Aksi takdirde **false**.
 
 ## <a name="operator-inequality"></a>HStringReference::operator! =
 
@@ -229,7 +229,7 @@ Karşılaştırılacak ikinci parametre.  *Sol* olabilir bir `HStringReference` 
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa *lhs* ve *sol* parametreleri eşit; Aksi takdirde değil `false`.
+**doğru** varsa *lhs* ve *sol* parametreleri eşit; Aksi takdirde değil **false**.
 
 ## <a name="operator-less-than"></a>HStringReference::operator&lt;
 
@@ -251,4 +251,4 @@ Karşılaştırılacak ikinci parametre.  *Sol* başvuru olabilir bir `HStringRe
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa *lhs* parametresi değerinden daha küçük *sol* parametre; Aksi takdirde `false`.
+**doğru** varsa *lhs* parametresi değerinden daha küçük *sol* parametre; Aksi takdirde **false**.

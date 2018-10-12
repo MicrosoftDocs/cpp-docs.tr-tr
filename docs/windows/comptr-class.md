@@ -61,12 +61,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4f549f0737d74829dbd79c280f3f6c1acd9bca6e
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 12afcfe09335082f873d88e1aa825b4eee3a1ae2
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48236003"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163237"
 ---
 # <a name="comptr-class"></a>ComPtr Sınıfı
 
@@ -539,9 +539,9 @@ Başka bir başvuru `ComPtr` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk işleç sayıları `true` , nesne *bir* nesneye eşit olup *b*; Aksi takdirde `false`.
+İlk işleç sayıları **true** , nesne *bir* nesneye eşit olup *b*; Aksi takdirde **false**.
 
-İkinci ve üçüncü işleçleri yield `true` , nesne *bir* eşittir `nullptr`; Aksi takdirde `false`.
+İkinci ve üçüncü işleçleri yield **true** , nesne *bir* eşittir **nullptr**; Aksi takdirde **false**.
 
 ## <a name="operator-inequality"></a>ComPtr::operator! =
 
@@ -574,9 +574,9 @@ Başka bir başvuru `ComPtr` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk işleç sayıları `true` , nesne *bir* nesnesine eşit değil *b*; Aksi takdirde `false`.
+İlk işleç sayıları **true** , nesne *bir* nesnesine eşit değil *b*; Aksi takdirde **false**.
 
-İkinci ve üçüncü işleçleri yield `true` , nesne *bir* eşit değildir `nullptr`; Aksi takdirde `false`.
+İkinci ve üçüncü işleçleri yield **true** , nesne *bir* eşit değildir **nullptr**; Aksi takdirde **false**.
 
 ## <a name="operator-microsoft-wrl-details-booltype"></a>ComPtr::operator Microsoft::WRL::Details::BoolType
 
@@ -588,7 +588,7 @@ WRL_NOTHROW operator Microsoft::WRL::Details::BoolType() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir arabirim ile ilişkili ise `ComPtr`, adresini [BoolStruct::Member](../windows/boolstruct-member-data-member.md) veri üyesi; Aksi takdirde `nullptr`.
+Bir arabirim ile ilişkili ise `ComPtr`, adresini [BoolStruct::Member](../windows/boolstruct-member-data-member.md) veri üyesi; Aksi takdirde **nullptr**.
 
 ## <a name="ptr"></a>ComPtr::ptr_
 

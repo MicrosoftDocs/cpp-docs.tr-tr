@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f96a8a27b511c1a93114c32d048043aa9562fe1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 24e1113dac068a20e535bee3e8fd5fa9dcfb9064
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163575"
 ---
 # <a name="how-to-use-oversubscription-to-offset-latency"></a>Nasıl yapılır: Gecikmeyi Dengelemek için Aşırı Aboneliği Kullanma
 
@@ -30,7 +30,7 @@ Aşırı abonelik gecikme süresi yüksek miktarda sahip görevleri içeren baz�
 
 Bu örnekte [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) HTTP sunuculardan dosyaları indirilemedi. `http_reader` Sınıf türetilir [concurrency::agent](../../parallel/concrt/reference/agent-class.md) ve ileti geçirme indirmek için hangi URL adlarını zaman uyumsuz olarak okumak için kullanır.
 
-`http_reader` Sınıfının kullandığı [concurrency::task_group](reference/task-group-class.md) eşzamanlı olarak her dosyayı okumak için sınıf. Her görev çağırır [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) yöntemiyle `_BeginOversubscription` parametresini `true` geçerli bağlamda gecikmeyi etkinleştirmek için. Her görev, ardından Microsoft Foundation Classes (MFC) kullanan [Cınternetsession](../../mfc/reference/cinternetsession-class.md) ve [CHttpFile](../../mfc/reference/chttpfile-class.md) dosyasını indirmek için sınıflar. Son olarak, her görev çağırır `Context::Oversubscribe` ile `_BeginOversubscription` parametresini `false` aşırı abonelik devre dışı bırakmak için.
+`http_reader` Sınıfının kullandığı [concurrency::task_group](reference/task-group-class.md) eşzamanlı olarak her dosyayı okumak için sınıf. Her görev çağırır [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) yöntemiyle `_BeginOversubscription` parametresini **true** geçerli bağlamda gecikmeyi etkinleştirmek için. Her görev, ardından Microsoft Foundation Classes (MFC) kullanan [Cınternetsession](../../mfc/reference/cinternetsession-class.md) ve [CHttpFile](../../mfc/reference/chttpfile-class.md) dosyasını indirmek için sınıflar. Son olarak, her görev çağırır `Context::Oversubscribe` ile `_BeginOversubscription` parametresini **false** aşırı abonelik devre dışı bırakmak için.
 
 Aşırı abonelik etkin olduğunda, çalışma zamanı, görevleri çalıştırmak için ek bir iş parçacığı oluşturur. Her bu iş parçacığı sayısı ayrıca geçerli bağlam oversubscribe ve böylece ek iş parçacığı oluşturma. `http_reader` Sınıfını kullanan bir [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) uygulamanın kullandığı iş parçacıklarının sayısını sınırlamak için nesne. Aracıyı arabellek belirteci değerleri sabit sayıda ile başlatır. İşlemi başlatır ve işlem tamamlandıktan sonra sonra bu değeri geri arabelleğe Yazar önce her bir yükleme işlemi için aracı arabellekteki belirteç değeri okur. Arabellek boş olduğunda, bir değer geri arabelleğe yazmak için indirme işlemlerinin biri için aracının bekler.
 
@@ -68,7 +68,7 @@ Downloaded 1801040 bytes in 3276 ms.
 
 ## <a name="compiling-the-code"></a>Kod Derleniyor
 
-Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `download-oversubscription.cpp` ve ardından çalışma birini, bir Visual Studio komut istemi penceresinde komutları.
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `download-oversubscription.cpp` ve çalışma birini, ardından komutlarını bir **Visual Studio komut istemi** penceresi.
 
 **cl.exe/ehsc/MD /D "_AFXDLL" indirme-oversubscription.cpp**
 

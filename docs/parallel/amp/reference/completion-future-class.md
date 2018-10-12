@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac3072e3fafe317e0517c36b375259c3c98a1a41
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6fee851ed1df79f2868414a0a7e960eeb76bc127
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438489"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163653"
 ---
 # <a name="completionfuture-class"></a>completion_future Sınıfı
 
@@ -203,7 +203,7 @@ bool valid() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` bir zaman uyumsuz işlemle ilişkili bir nesnedir Aksi takdirde, `false`.
+**doğru** nesne ise, bir zaman uyumsuz işlemle ilişkili; Aksi takdirde **false**.
 
 ## <a name="wait"></a> bekleme
 

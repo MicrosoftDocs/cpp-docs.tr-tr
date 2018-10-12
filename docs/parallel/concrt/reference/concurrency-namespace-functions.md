@@ -41,12 +41,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e07c5b985552fcf30b2acb18030ab3288efb9be
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b89c1a3057e9753b99aaac837c903b6fd5f6d3ea
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428154"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163354"
 ---
 # <a name="concurrency-namespace-functions"></a>Eşzamanlılık ad alanı işlevleri
 
@@ -118,7 +118,7 @@ Gönderilecek verileri bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` yöntem döndürülen önce iletiyi kabul edilirse `false` Aksi takdirde.
+**doğru** yöntemi döndürülen önce iletiyi kabul edilirse **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -424,7 +424,7 @@ bool __cdecl is_current_task_group_canceling();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` şu anda yürütülmekte olan görev grubunu iptal ediliyor durumunda `false` Aksi takdirde.
+**doğru** şu anda yürütülmekte olan görev grubunu iptal ediliyor durumunda **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -687,7 +687,7 @@ Sıralanacak aralığın son öğesinde geçmiş konumu ele alan bir rasgele eri
 Bir C++ Standart Kitaplığı uyumlu bellek ayırıcısı örneği.
 
 *_Func*<br/>
-Sıralama, ardışık öğeleri tarafından karşılanması için karşılaştırma ölçütü tanımlayan bir kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür `true` karşılanmazsa ve `false` koşullar karşılanırsa. Bu bir karşılaştırıcı işlevi, katı bir zayıf çiftlerini dizisindeki öğelerin sıralama dayatır gerekir.
+Sıralama, ardışık öğeleri tarafından karşılanması için karşılaştırma ölçütü tanımlayan bir kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa. Bu bir karşılaştırıcı işlevi, katı bir zayıf çiftlerini dizisindeki öğelerin sıralama dayatır gerekir.
 
 *_Chunk_size*<br/>
 Paralel yürütme için iki halinde bölme bir öbek depolayabilmek boyutu.
@@ -1217,7 +1217,7 @@ Sıralanacak aralıktaki ilk öğenin konumunu bulan bir rasgele erişim yineley
 Sıralanacak aralığın son öğesinde geçmiş konumu ele alan bir rasgele erişim yineleyicisi.
 
 *_Func*<br/>
-Sıralama, ardışık öğeleri tarafından karşılanması için karşılaştırma ölçütü tanımlayan bir kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür `true` karşılanmazsa ve `false` koşullar karşılanırsa. Bu bir karşılaştırıcı işlevi, katı bir zayıf çiftlerini dizisindeki öğelerin sıralama dayatır gerekir.
+Sıralama, ardışık öğeleri tarafından karşılanması için karşılaştırma ölçütü tanımlayan bir kullanıcı tanımlı işlevin doğrulama nesnesi. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa. Bu bir karşılaştırıcı işlevi, katı bir zayıf çiftlerini dizisindeki öğelerin sıralama dayatır gerekir.
 
 *_Chunk_size*<br/>
 Paralel yürütme için iki halinde bölme bir öbek depolayabilmek boyutu.
@@ -1460,7 +1460,7 @@ Gönderilecek verileri bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` iletiyi kabul edildiyse `false` Aksi takdirde.
+**doğru** iletiyi kabul edildiyse **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1613,7 +1613,7 @@ Verilen nesne adı.
 
 ##  <a name="try_receive"></a>  try_receive
 
-Genel deneyin-alma uygulaması, tam olarak bir kaynaktan gelen veriler arayabilir ve kabul edilen değerler filtrelemek bir bağlam sağlar. Veriler hazır değilse, yöntem false döndürür.
+Genel deneyin-alma uygulaması, tam olarak bir kaynaktan gelen veriler arayabilir ve kabul edilen değerler filtrelemek bir bağlam sağlar. Veriler hazır değilse, metodun döndüreceği **false**.
 
 ```
 template <class T>

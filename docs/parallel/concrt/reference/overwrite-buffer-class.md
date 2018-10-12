@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 622f439355c9d8b059ac48f0bdc1f57c1b32e5eb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 82266e387bcba3e4e7f2e377c666ce890d258e0f
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162119"
 ---
 # <a name="overwritebuffer-class"></a>overwrite_buffer Sınıfı
 
@@ -160,7 +160,7 @@ bool has_value() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` blok bir değer aldıysa `false` Aksi takdirde.
+**doğru** blok bir değer aldıysa **false** Aksi takdirde.
 
 ##  <a name="link_target_notification"></a> link_target_notification
 
@@ -296,7 +296,7 @@ virtual bool supports_anonymous_source();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` blok, sunulan ileti erteleme değil çünkü.
+**doğru** iletileri blok değil ertelemek için sunulan.
 
 ##  <a name="release_message"></a> release_message
 
@@ -326,11 +326,11 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` iletinin başarıyla ayrıldı, `false` Aksi takdirde.
+**doğru** ileti başarıyla ayrıldı, **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sonra `reserve` çağrılır, döndürürse `true`, ya da `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.
+Sonra `reserve` çağrılır, döndürürse **true**, ya da `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.
 
 ##  <a name="resume_propagation"></a> resume_propagation
 

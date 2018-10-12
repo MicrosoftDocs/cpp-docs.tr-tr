@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e40a98bd546f29cd42629ad991866a85a86852c9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bac539fc2826b5628769126d9802688c01f01c7b
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399307"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163211"
 ---
 # <a name="task-class-concurrency-runtime"></a>task Sınıfı (Eşzamanlılık Çalışma Zamanı)
 
@@ -134,7 +134,7 @@ bool is_apartment_aware() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Görev indirilirse bir `IAsyncInfo` çıkarırsa veya böyle bir görevden gelen görevdir `false` Aksi takdirde.
+**doğru** görev indirilirse bir `IAsyncInfo` çıkarırsa veya böyle bir görevden gelen görevdir **false** Aksi takdirde.
 
 ##  <a name="is_done"></a>  Task::is_done metodu (eşzamanlılık çalışma zamanı)
 
@@ -169,7 +169,7 @@ Karşılaştır görevi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` nesneler farklı arka plan görevlerine başvuruyorsa ve `false` Aksi takdirde.
+**doğru** nesneler farklı arka plan görevlerine başvuruyorsa ve **false** Aksi takdirde.
 
 ##  <a name="operator_eq"></a> işleç =
 
@@ -209,7 +209,7 @@ Karşılaştır görevi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` nesneler aynı arka plan görevlerine başvuruyorsa ve `false` Aksi takdirde.
+**doğru** nesneler aynı arka plan görevlerine başvuruyorsa ve **false** Aksi takdirde.
 
 ##  <a name="scheduler"></a>  Task::Scheduler metodu (eşzamanlılık çalışma zamanı)
 

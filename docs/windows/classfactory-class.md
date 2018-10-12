@@ -27,12 +27,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9e3639bb9d6ca88862b3a2fb4367fc429a665287
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 4facba4a35e28818f22ba17f6d835b781cd76061
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163276"
 ---
 # <a name="classfactory-class"></a>ClassFactory Sınıfı
 
@@ -158,7 +158,7 @@ STDMETHOD(
 ### <a name="parameters"></a>Parametreler
 
 *fLock*<br/>
-`true` izlenen nesne sayısını artırmak için. `false` izlenen nesnelerin sayısını azaltmak için.
+**doğru** izlenen nesne sayısını artırmak için. **false** izlenen nesnelerin sayısını azaltmak için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

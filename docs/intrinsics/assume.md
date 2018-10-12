@@ -1,12 +1,13 @@
 ---
 title: __assume | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/09/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
 f1_keywords:
 - __assume
+- _assume
 - __assume_cpp
 dev_langs:
 - C++
@@ -17,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1c8c37bc46580db42bfa2a91d215b09bc1dbaf4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 41542065a4fc7d3b90fd3159dca4c7a7d169c115
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405703"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163679"
 ---
 # <a name="assume"></a>__assume
 
@@ -57,6 +58,8 @@ Varsa `__assume` deyimi bir çelişki (her zaman false olarak değerlendirilen b
 Kullanım `__assume` içinde bir [ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) yalnızca assert kurtarılabilir olmadığında. Kullanmayın `__assume` içinde olan sonraki hata kurtarma kodu derleyici hemen hata işleme kodu En İyileştir çünkü bir onaylamadır.
 
 `__assume(0)` Bir özel durum bir ifadedir. Kullanım `__assume(0)` erişilemeyen kod yolu belirtmek için. Aşağıdaki örnek nasıl kullanılacağını gösterir `__assume(0)` switch deyimi varsayılan durumunun ulaşılamıyor belirtmek için. Bu en tipik kullanımını gösterir `__assume(0)`.
+
+Önceki sürümlerle uyumluluk için **_assume** eşanlamlıdır **__assume** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) olduğu Belirtilen.
 
 ## <a name="requirements"></a>Gereksinimler
 

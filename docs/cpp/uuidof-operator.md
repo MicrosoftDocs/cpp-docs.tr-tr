@@ -1,13 +1,15 @@
 ---
 title: __uuidof işleci | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/10/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
 f1_keywords:
 - __LIBID_cpp
 - __uuidof_cpp
+- __uuidof
+- _uuidof
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84fd779d50fb481cffc97b61a65f255c6c8f52a1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c75e33dd7aab1e96a1d2d3464e974a7095f83f3f
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056748"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163861"
 ---
 # <a name="uuidof-operator"></a>__uuidof İşleci
 
@@ -50,7 +52,9 @@ Bağlı GUID ayıklamak için bu anahtar sözcük kullanın:
 - Bir kitaplık bloğu ile oluşturulan [Modülü](../windows/module-cpp.md) özniteliği.
 
 > [!NOTE]
->  Hata ayıklama derlemesinde **__uuidof** her zaman zamanında dinamik olarak () bir nesneyi başlatır. Derleme, **__uuidof** statik (derleme zamanında) nesneyi başlatabilirsiniz.
+> Hata ayıklama derlemesinde **__uuidof** her zaman zamanında dinamik olarak () bir nesneyi başlatır. Derleme, **__uuidof** statik (derleme zamanında) nesneyi başlatabilirsiniz.
+
+Önceki sürümlerle uyumluluk için **_uuidof** eşanlamlıdır **__uuidof** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) olduğu Belirtilen.
 
 ## <a name="example"></a>Örnek
 

@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3777116bf2a641a4fdc220306680c0150d5ba2d0
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 2d9c68bde9fdd49e4007b8b6e1d92899d71dde4e
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106423"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162548"
 ---
 # <a name="platformstring-class"></a>Platform::String sınıfı
 
@@ -240,7 +240,7 @@ Karşılaştırma yapılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa `str` geçerli nesneye eşitse; Aksi takdirde, `false`.
+**doğru** varsa `str` geçerli nesneye eşitse; Aksi takdirde, **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -272,7 +272,7 @@ bool IsEmpty();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli bir dize nesnesi ise `null` ya da boş dize ("M"); Aksi takdirde `false`.
+**doğru** varsa geçerli `String` nesnedir **null** ya da boş dize (L""); Aksi takdirde **false**.
 
 ## <a name="isfastpass"></a>  String::IsFastPass yöntemi
 
@@ -286,7 +286,7 @@ bool IsFastPass();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli bir dize nesnesi hızlı geçmiş Aksi takdirde, `false`.
+**doğru** varsa geçerli `String` nesnedir hızlı geçmiş; Aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -294,7 +294,7 @@ Burada bir başvurusu sayılan nesne bir parametredir ve çağrılan işlev bu n
 
 ## <a name="length"></a>  String::length yöntemi
 
-Geçerli nesnenin dize karakter sayısını alır.
+Geçerli karakter sayısını alır. `String` nesne.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -304,7 +304,7 @@ unsigned int Length();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bir dize nesnesi karakter sayısı.
+Geçerli karakter sayısı `String` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -337,7 +337,7 @@ bool String::operator+( String^ str1, String^ str2);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa `str1` eşittir `str2`; Aksi takdirde `false`.
+**doğru** varsa *str1* eşittir *str2*; Aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -356,14 +356,14 @@ bool String::operator==( String^ str1, String^ str2);
 ### <a name="parameters"></a>Parametreler
 
 *str1*<br/>
-İlk dize Karşılaştırılacak nesne.
+İlk `String` Karşılaştırılacak nesne.
 
 *str2*<br/>
-İkinci dize Karşılaştırılacak nesne.
+İkinci `String` Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa içeriğini `str1` eşit olan `str2`; Aksi takdirde `false`.
+**doğru** , içeriğini `str1` eşit olan `str2`; Aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -371,7 +371,7 @@ Bu işleç eşdeğerdir [String::CompareOrdinal](#compareordinal).
 
 ##  <a name="operator-greater-than"></a>  String::operator&gt;
 
-Değer bir dize nesnesinin ikinci bir değerden büyük olup olmadığını belirtir dize nesnesi.
+Belirtir olup olmadığını bir değeri `String` nesnedir ikinci değerinden `String` nesne.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -382,14 +382,14 @@ bool String::operator>( String^ str1, String^ str2);
 ### <a name="parameters"></a>Parametreler
 
 *str1*<br/>
-İlk dize nesnesi.
+İlk `String` nesne.
 
 *str2*<br/>
-İkinci dize nesnesi.
+İkinci `String` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa değerini `str1` değerinden büyükse `str2`; Aksi takdirde `false`.
+**doğru** varsa değerini `str1` değerinden büyükse `str2`; Aksi takdirde **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -397,7 +397,7 @@ Bu işleç, açıkça çağırmak için eşdeğerdir [String::CompareOrdinal](#c
 
 ## <a name="operator-greater-than-or-equals"></a> String::operator&gt;=
 
-Bir dize nesnesi değerini saniyenin değerine eşit veya daha büyük olup olmadığını belirten dize nesnesi.
+Belirtir olup olmadığını bir değeri `String` nesnedir büyüktür veya eşittir ikinci değerine `String` nesne.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -408,18 +408,18 @@ bool String::operator>=( String^ str1, String^ str2);
 ### <a name="parameters"></a>Parametreler
 
 *str1*<br/>
-İlk dize nesnesi.
+İlk `String` nesne.
 
 *str2*<br/>
-İkinci dize nesnesi.
+İkinci `String` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa değerini `str1` değerine eşit veya değerinden `str2`; Aksi takdirde `false`.
+**doğru** varsa değerini `str1` değerine eşit veya değerinden `str2`; Aksi takdirde **false**.
 
 ## <a name="operator-inequality"></a> String::operator! =
 
-Belirtilen dize nesnelerinin iki farklı değerlere sahip olup olmadığını gösterir.
+Gösteren iki olup belirtilen `String` nesneleri farklı değerlere sahip.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -430,18 +430,18 @@ bool String::operator!=( String^ str1, String^ str2);
 ### <a name="parameters"></a>Parametreler
 
 *str1*<br/>
-İlk dize Karşılaştırılacak nesne.
+İlk `String` Karşılaştırılacak nesne.
 
 *str2*<br/>
-İkinci dize Karşılaştırılacak nesne.
+İkinci `String` Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa `str1` eşit değildir `str2`; Aksi takdirde `false`.
+**doğru** varsa `str1` eşit değildir `str2`; Aksi takdirde **false**.
 
 ## <a name="operator-less-than"></a> String::operator&lt;
 
-Bir dize nesnesi değerini saniyenin değerinden daha küçük olup olmadığını belirten dize nesnesi.
+Belirtir olup olmadığını bir değeri `String` nesnesinin ikinci bir değeri azdır `String` nesne.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -452,18 +452,18 @@ bool String::operator<( String^ str1, String^ str2);
 ### <a name="parameters"></a>Parametreler
 
 *str1*<br/>
-İlk dize nesnesi.
+İlk `String` nesne.
 
 *str2*<br/>
-İkinci dize nesnesi.
+İkinci `String` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa değerini `str1` değerini'dan küçük `str2`; Aksi takdirde `false`.
+**doğru** varsa değerini *str1* değerini'dan küçük *str2*; Aksi takdirde **false**.
 
 ## <a name="ctor"></a> String::String Oluşturucusu
 
-Giriş dizesinin verilerin bir kopyasını yeni bir dize sınıfı örneğini başlatır.
+Yeni bir örneğini başlatır `String` kopyasını sınıfıyla giriş dizesi verileri.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -492,7 +492,7 @@ String^ s = L"Hello!";
 
 ## <a name="tostring"></a> String::toString
 
-Geçerli dize ile aynı değeri olan bir dize nesnesi döndürür.
+Döndürür bir `String` değeri geçerli bir dize ile aynı olan nesne.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -502,7 +502,7 @@ String^ String::ToString();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir dize nesnesi değeri geçerli bir dize ile aynıdır.
+A `String` değeri geçerli bir dize ile aynı olan nesne.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

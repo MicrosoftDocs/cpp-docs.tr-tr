@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b16dee4d0a3c5a6d09c1fd19006c832be400d5a4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 93578f9d798e0c0bab0fe58a3211c20507dd99d4
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46411085"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162067"
 ---
 # <a name="how-to-use-a-message-block-filter"></a>Nasıl yapılır: İleti Bloğu Filtresini Kullanma
 
@@ -48,7 +48,7 @@ Aşağıdaki işlev `count_primes_filter`, aynı görevi gerçekleştirir `count
 
 [!code-cpp[concrt-primes-filter#2](../../parallel/concrt/codesnippet/cpp/how-to-use-a-message-block-filter_2.cpp)]
 
-`transformer` Nesne artık asal olan değerleri işler. Önceki örnekte, `transformer` nesnesini tüm iletileri işler. Bu nedenle, önceki örnekle aynı sayıda gönderdiği iletileri alması gerekir. Bu örnekte sonucunu [concurrency::send](reference/concurrency-namespace-functions.md#send) almak için kaç iletileri belirlemek için işlevi `transformer` nesne. `send` İşlevinin döndürdükleriyle `true` ileti arabelleği iletiyi ne zaman kabul eder ve `false` zaman ileti arabelleği ileti reddeder. Bu nedenle, ileti arabelleği iletiyi kabul kaç kez asal sayıları sayısı ile eşleşir.
+`transformer` Nesne artık asal olan değerleri işler. Önceki örnekte, `transformer` nesnesini tüm iletileri işler. Bu nedenle, önceki örnekle aynı sayıda gönderdiği iletileri alması gerekir. Bu örnekte sonucunu [concurrency::send](reference/concurrency-namespace-functions.md#send) almak için kaç iletileri belirlemek için işlevi `transformer` nesne. `send` İşlevinin döndürdükleriyle **true** ileti arabelleği iletiyi ne zaman kabul eder ve **false** zaman ileti arabelleği ileti reddeder. Bu nedenle, ileti arabelleği iletiyi kabul kaç kez asal sayıları sayısı ile eşleşir.
 
 ## <a name="example"></a>Örnek
 

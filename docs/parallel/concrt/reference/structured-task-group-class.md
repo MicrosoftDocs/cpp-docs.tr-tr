@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4aa6df9afddc43980818439ee2c7bbd29ca2f848
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a9e87ebd4523b5211c94955b5bec7905ed848946
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446081"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161690"
 ---
 # <a name="structuredtaskgroup-class"></a>structured_task_group Sınıfı
 
@@ -54,7 +54,7 @@ class structured_task_group;
 |Ad|Açıklama|
 |----------|-----------------|
 |[İptal](#cancel)|Alt ağaç bu görev grubu kökü çalışmanın iptal edilmesi girişimi bir en iyi hale getirir. Her görev, görev grubuna zamanlanmış geçişli mümkünse iptal.|
-|[is_canceling](#is_canceling)|Çağıranın olup olmadığını görev grubunu iptal ortasında şu anda olduğunu bildirir. Bu, gelmeyebilir `cancel` yöntemi çağrıldı `structured_task_group` nesne (kesinlikle niteleyen gibi döndürmek için bu yöntem olsa da `true`). Bu durum olabilir, `structured_task_group` nesne satır içi yürütme ve başka bir görev grubu oluşturan iş ağacında iptal edildi. Bu nerede gibi durumlarda çalışma zamanı iptal bu akar vaktinden belirleyebilirsiniz `structured_task_group` nesnesi `true` da döndürülür.|
+|[is_canceling](#is_canceling)|Çağıranın olup olmadığını görev grubunu iptal ortasında şu anda olduğunu bildirir. Bu, gelmeyebilir `cancel` yöntemi çağrıldı `structured_task_group` nesne (kesinlikle niteleyen gibi döndürmek için bu yöntem olsa da **true**). Bu durum olabilir, `structured_task_group` nesne satır içi yürütme ve başka bir görev grubu oluşturan iş ağacında iptal edildi. Bu nerede gibi durumlarda çalışma zamanı iptal bu akar vaktinden belirleyebilirsiniz `structured_task_group` nesnesi **true** da döndürülür.|
 |[Çalıştırma](#run)|Fazla Yüklendi. Üzerinde bir görevi zamanlar `structured_task_group` nesne. Çağıranın ömrünü yönetir `task_handle` geçirilen nesne `_Task_handle` parametresi. Parametre sürüm `_Placement` görevi bu parametre tarafından belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle neden olur.|
 |[run_and_wait](#run_and_wait)|Fazla Yüklendi. Satır içi arama bağlamda Yardımı ile çalışması için bir görevi zamanlar `structured_task_group` tam iptal desteği için nesne. Varsa bir `task_handle` nesnesi bir parametre olarak geçirilir `run_and_wait`, ömrünü yönetmek için çağıran sorumludur `task_handle` nesne. İşlevi, ardından tüm çalıştığı bekler `structured_task_group` nesne tamamlandı veya iptal edildi.|
 |[bekleme](#wait)|Tüm çalıştığı bekler `structured_task_group` tamamlandıktan veya iptal edildi.|
@@ -97,7 +97,7 @@ Daha fazla bilgi için [iptal](../../../parallel/concrt/exception-handling-in-th
 
 ##  <a name="is_canceling"></a> is_canceling
 
-Çağıranın olup olmadığını görev grubunu iptal ortasında şu anda olduğunu bildirir. Bu, gelmeyebilir `cancel` yöntemi çağrıldı `structured_task_group` nesne (kesinlikle niteleyen gibi döndürmek için bu yöntem olsa da `true`). Bu durum olabilir, `structured_task_group` nesne satır içi yürütme ve başka bir görev grubu oluşturan iş ağacında iptal edildi. Bu nerede gibi durumlarda çalışma zamanı iptal bu akar vaktinden belirleyebilirsiniz `structured_task_group` nesnesi `true` da döndürülür.
+Çağıranın olup olmadığını görev grubunu iptal ortasında şu anda olduğunu bildirir. Bu, gelmeyebilir `cancel` yöntemi çağrıldı `structured_task_group` nesne (kesinlikle niteleyen gibi döndürmek için bu yöntem olsa da **true**). Bu durum olabilir, `structured_task_group` nesne satır içi yürütme ve başka bir görev grubu oluşturan iş ağacında iptal edildi. Bu nerede gibi durumlarda çalışma zamanı iptal bu akar vaktinden belirleyebilirsiniz `structured_task_group` nesnesi **true** da döndürülür.
 
 ```
 bool is_canceling();

@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 231eed17f155b9ec184e0cf4fe3bd91e7770a7f4
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 608472f3133464137d2d0f96128453e4239b16a2
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162093"
 ---
 # <a name="gh-enable-penter-hook-function"></a>/Gh (_penter Kanca İşlevini Etkinleştir)
 
@@ -43,7 +43,7 @@ Bir çağrısına neden `_penter` her yöntem veya işlev başlangıcında işle
 Açıkça çağırmak planlamıyorsanız `_penter`, bir prototip sağlamanız gerekmez. İşlev aşağıdaki prototipe sahip, içeriği tüm kayıtları girişinde anında iletme gerekir ve Çıkışta değişmeden içerik pop gibi görünmelidir:
 
 ```
-void __declspec(naked) _cdecl _penter( void );
+void __declspec(naked) __cdecl _penter( void );
 ```
 
 Bu bildirim, 64-bit projeleri için kullanılabilir değil.
@@ -60,13 +60,13 @@ Bu bildirim, 64-bit projeleri için kullanılabilir değil.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="example"></a>Örnek
 
 Aşağıdaki kod ile derlendiğinde **/Gh**, gösterir nasıl `_penter` iki kez; adlı işlev girildiğinde bir kez `main` ve işlev girildiğinde bir kez `x`.
 
-```
+```cpp
 // Gh_compiler_option.cpp
 // compile with: /Gh
 // processor: x86
@@ -77,7 +77,7 @@ int main() {
    x();
 }
 
-extern "C" void __declspec(naked) _cdecl _penter( void ) {
+extern "C" void __declspec(naked) __cdecl _penter( void ) {
    _asm {
       push eax
       push ebx

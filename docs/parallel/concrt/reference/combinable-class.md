@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60e1f944d19efd22cb2c6c7d6a3752d6d32ae1e3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d544ac392e2eb227d7e1c37412110d09272f10d5
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381679"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162515"
 ---
 # <a name="combinable-class"></a>combinable Sınıfı
 
@@ -61,7 +61,7 @@ Birleştirilmiş sonuç veri türü. Türü, bir kopya oluşturucu ve varsayıla
 |[Temizle](#clear)|Herhangi bir önceki kullanım hesaplama sonuçlardan Ara temizler.|
 |[Birleştirme](#combine)|Sağlanan birleştirme işlev nesnesini çağırarak iş parçacığı-yerel alt hesaplamalar kümesinden son değer hesaplar.|
 |[combine_each](#combine_each)|Her iş parçacığı-yerel alt hesaplama için bir kez sağlanan birleştirme işlev nesnesini çağırarak iş parçacığı-yerel alt hesaplamalar kümesinden son değer hesaplar. Nihai sonucu işlev nesnesi tarafından toplanır.|
-|[Yerel](#local)|Fazla Yüklendi. İş parçacığı özel alt hesaplama bir başvuru döndürür.|
+|[local](#local)|Fazla Yüklendi. İş parçacığı özel alt hesaplama bir başvuru döndürür.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
@@ -182,7 +182,7 @@ T& local(bool& _Exists);
 ### <a name="parameters"></a>Parametreler
 
 *_Exists*<br/>
-Bir boolean değerine başvuru. Bu bağımsız değişkeni tarafından başvurulan bir Boole değeri ayarlanacak `true` alt hesaplama zaten bu iş parçacığı üzerinde varolan ve kümesine `false` bu ilk alt hesaplama bu iş parçacığı üzerinde ise.
+Bir boolean değerine başvuru. Bu bağımsız değişkeni tarafından başvurulan bir Boole değeri ayarlanacak **true** alt hesaplama zaten bu iş parçacığı üzerinde varolan ve kümesine **false** bu ilk alt hesaplama bu iş parçacığı üzerinde ise.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

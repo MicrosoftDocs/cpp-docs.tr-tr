@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7748ae0f3993c1df97dcf97308fd6dfbfafdc8b6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a154d266ead19cfef00f30a5327c5b18809a4111
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375883"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163172"
 ---
 # <a name="accelerator-class"></a>accelerator Sınıfı
 
@@ -102,9 +102,9 @@ class accelerator;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator!=](#operator_neq)|Bu karşılaştırır `accelerator` döndürür ve başka nesnesi `false` aynı; olmaları durumunda döndürür, aksi takdirde, `true`.|
+|[operator!=](#operator_neq)|Bu karşılaştırır `accelerator` döndürür ve başka nesnesi **false** aynı; olmaları durumunda döndürür, aksi takdirde, **true**.|
 |[operator=](#operator_eq)|Belirtilen içeriğini kopyalar `accelerator` buna nesne.|
-|[operator==](#operator_eq_eq)|Bu karşılaştırır `accelerator` döndürür ve başka nesnesi `true` aynı; olmaları durumunda döndürür, aksi takdirde, `false`.|
+|[operator==](#operator_eq_eq)|Bu karşılaştırır `accelerator` döndürür ve başka nesnesi **true** aynı; olmaları durumunda döndürür, aksi takdirde, **false**.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
@@ -125,7 +125,7 @@ class accelerator;
 |[supports_cpu_shared_memory](#supports_cpu_shared_memory)|Belirtir olup olmadığını `accelerator` paylaşılan belleği destekleyip.|
 |[supports_double_precision](#supports_double_precision)|Hızlandırıcının çifte duyarlı Matematiği destekleyip desteklemediğini gösterir.|
 |[supports_limited_double_precision](#supports_limited_double_precision)|Hızlandırıcının çifte duyarlı Matematiği için sınırlı desteğe sahip olup olmadığını gösterir.|
-|[Sürüm](#version)|Sürümünü alır `accelerator`.|
+|[version](#version)|Sürümünü alır `accelerator`.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -362,7 +362,7 @@ bool get_has_display() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa `accelerator` ; bir görüntü cihazına çıktısı alınabilen Aksi takdirde, `false`.
+**doğru** varsa `accelerator` ; bir görüntü cihazına çıktısı alınabilen Aksi takdirde, **false**.
 
 ##  <a name="get_is_debug"></a> get_is_debug
 
@@ -375,7 +375,7 @@ bool get_is_debug() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa `accelerator` ayrıntılı hata raporlama için etkinleştirilen DEBUG katmanına sahip. Aksi takdirde, `false`.
+**doğru** varsa `accelerator` ayrıntılı hata raporlama için etkinleştirilen DEBUG katmanına sahip. Aksi takdirde, **false**.
 
 ##  <a name="get_is_emulated"></a> get_is_emulated
 
@@ -388,7 +388,7 @@ bool get_is_emulated() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa `accelerator` benzetilip benzetilmediğini. Aksi takdirde, `false`.
+**doğru** varsa `accelerator` benzetilip benzetilmediğini. Aksi takdirde, **false**.
 
 ##  <a name="get_supports_cpu_shared_memory"></a> get_supports_cpu_shared_memory
 
@@ -401,11 +401,11 @@ bool get_supports_cpu_shared_memory() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Hızlandırıcı CPU paylaşılan belleği destekliyorsa, Aksi takdirde, `false`.
+**doğru** CPU Hızlandırıcı destekler paylaşılan bellek; Aksi takdirde, **false**.
 
 ##  <a name="get_supports_double_precision"></a> get_supports_double_precision
 
-Hızlandırıcının çifte hassas matematik destekleyip dahil olmak üzere birleşik çarpma toplama belirten Boolean bir değer döner ekleyin (FMA), bölme, karşıtlık ve arasındaki tür `int` ve `double`.
+Hızlandırıcının çifte hassas matematik destekleyip dahil olmak üzere birleşik çarpma toplama belirten Boolean bir değer döner ekleyin (FMA), bölme, karşıtlık ve arasındaki tür **int** ve **çift**
 
 ```
 bool get_supports_double_precision() const;
@@ -414,11 +414,11 @@ bool get_supports_double_precision() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` hızlandırıcının çifte hassas matematik destekliyorsa, Aksi takdirde, `false`.
+**doğru** Hızlandırıcı çift duyarlık Matematiği destekliyorsa, aksi takdirde, **false**.
 
 ##  <a name="get_supports_limited_double_precision"></a> get_supports_limited_double_precision
 
-Hızlandırıcı çift duyarlık Matematiği için sınırlı desteğe sahip olup olmadığını gösteren bir Boole değeri döndürür. Hızlandırıcı ekleyin (FMA) birden çok kez çarpım yalnızca sınırlı destek varsa, bölme, karşıtlık ve arasındaki tür `int` ve `double` desteklenmez.
+Hızlandırıcı çift duyarlık Matematiği için sınırlı desteğe sahip olup olmadığını gösteren bir Boole değeri döndürür. Hızlandırıcı ekleyin (FMA) birden çok kez çarpım yalnızca sınırlı destek varsa, bölme, karşıtlık ve arasındaki tür **int** ve **çift** desteklenmez.
 
 ```
 bool get_supports_limited_double_precision() const;
@@ -427,7 +427,7 @@ bool get_supports_limited_double_precision() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Hızlandırıcı çift duyarlık Matematiği desteği sınırlıdır, Aksi takdirde, `false`.
+**doğru** Hızlandırıcı çift duyarlık Matematiği desteği sınırlıdır, aksi takdirde, **false**.
 
 ##  <a name="get_version"></a> get_version
 
@@ -468,7 +468,7 @@ __declspec(property(get= get_is_emulated)) bool is_emulated;
 
 ##  <a name="operator_neq"></a> işleç! =
 
-Bu karşılaştırır `accelerator` döndürür ve başka nesnesi `false` aynı; olmaları durumunda döndürür, aksi takdirde, `true`.
+Bu karşılaştırır `accelerator` döndürür ve başka nesnesi **false** aynı; olmaları durumunda döndürür, aksi takdirde, **true**.
 
 ```
 bool operator!= (const accelerator& _Other) const;
@@ -482,7 +482,7 @@ bool operator!= (const accelerator& _Other) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`false` iki `accelerator` nesneleri aynıdır; Aksi takdirde `true`.
+**false** varsa iki `accelerator` nesneleri aynıdır; Aksi takdirde **true**.
 
 ##  <a name="operator_eq"></a> işleç =
 
@@ -503,7 +503,7 @@ Bu başvuru `accelerator` nesne.
 
 ##  <a name="operator_eq_eq"></a> işleç ==
 
-Bu karşılaştırır `accelerator` döndürür ve başka nesnesi `true` aynı; olmaları durumunda döndürür, aksi takdirde, `false`.
+Bu karşılaştırır `accelerator` döndürür ve başka nesnesi **true** aynı; olmaları durumunda döndürür, aksi takdirde, **false**.
 
 ```
 bool operator== (const accelerator& _Other) const;
@@ -517,7 +517,7 @@ bool operator== (const accelerator& _Other) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` varsa diğer `accelerator` nesne olarak aynı `accelerator` nesne; Aksi takdirde, `false`.
+**doğru** varsa diğer `accelerator` nesne olarak aynı `accelerator` nesne; Aksi takdirde, **false**.
 
 ##  <a name="set_default"></a> set_default
 
@@ -534,7 +534,7 @@ Hızlandırıcının yolu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Varsayılan kısayol tuşu ayarlanırken çağrı başarılı olursa. Aksi takdirde, `false`.
+**doğru** varsayılan kısayol tuşu ayarlanırken çağrı başarılı olursa. Aksi takdirde, **false**.
 
 ##  <a name="set_default_cpu_access_type"></a> set_default_cpu_access_type
 
@@ -664,7 +664,7 @@ bool get_is_auto_selection() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` çalışma zamanının otomatik olarak uygun bir Hızlandırıcı seçip Aksi takdirde, `false`.
+**doğru** çalışma zamanı otomatik olarak uygun bir Hızlandırıcı; seçer, aksi takdirde, **false**.
 
 ##  <a name="get_is_debug"></a> get_is_debug
 
@@ -737,7 +737,7 @@ bool operator!= (const accelerator_view& _Other) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`false` iki nesnenin aynı olup olmadığını; Aksi takdirde, `true`.
+**false** ise iki nesnenin aynı; Aksi takdirde, **true**.
 
 ##  <a name="operator_eq"></a> işleç =
 
@@ -758,7 +758,7 @@ Değiştirilmiş başvuru `accelerator_view` nesne.
 
 ##  <a name="operator_eq_eq"></a> işleç ==
 
-Bu karşılaştırır [accelerator_view](accelerator-view-class.md) döndürür ve başka nesnesi `true` aynı; olmaları durumunda döndürür, aksi takdirde, `false`.
+Bu karşılaştırır [accelerator_view](accelerator-view-class.md) döndürür ve başka nesnesi **true** aynı; olmaları durumunda döndürür, aksi takdirde, **false**.
 
 ```
 bool operator== (const accelerator_view& _Other) const;
@@ -772,7 +772,7 @@ bool operator== (const accelerator_view& _Other) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` iki nesnenin aynı olup olmadığını; Aksi takdirde, `false`.
+**doğru** ise iki nesnenin aynı; Aksi takdirde, **false**.
 
 ##  <a name="queuing_mode"></a> queuing_mode
 

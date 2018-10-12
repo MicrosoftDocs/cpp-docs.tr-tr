@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67376497f3c0be84c0e24e403eaa3129ec38b255
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: a0aa56c511ac5f7b98ffdd75aebd7f71ef9f21ac
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110785"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162028"
 ---
 # <a name="platformcollectionsinputiterator-class"></a>Platform::Collections:: ınputıterator sınıfı
 
@@ -137,7 +137,7 @@ Başka bir Inputıterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli Inputıterator eşitse `other`; Aksi takdirde `false`.
+**doğru** geçerli Inputıterator eşitse *diğer*; Aksi takdirde **false**.
 
 ## <a name="operator-increment"></a>  InputIterator::operator ++ işleci
 
@@ -177,7 +177,7 @@ Başka bir Inputıterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli Inputıterator eşit değilse `other`; Aksi takdirde `false`.
+**doğru** geçerli Inputıterator eşit değilse *diğer*; Aksi takdirde **false**.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c319ba90a92ac534f4444960ff1e6e6d27acb180
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 605bc438b51fb96581d679ab0d9d37ed3696a5e4
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390201"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163887"
 ---
 # <a name="readerwriterlock-class"></a>reader_writer_lock Sınıfı
 
@@ -203,7 +203,7 @@ bool try_lock();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kilit alındıysa değeri `true`; Aksi takdirde, değeri `false`.
+Kilit alındıysa değeri **true**; Aksi takdirde, değeri **false**.
 
 ##  <a name="try_lock_read"></a> try_lock_read
 
@@ -215,7 +215,7 @@ bool try_lock_read();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kilit alındıysa değeri `true`; Aksi takdirde, değeri `false`.
+Kilit alındıysa değeri **true**; Aksi takdirde, değeri **false**.
 
 ##  <a name="unlock"></a> Kilit açma
 

@@ -27,12 +27,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: df483f08e96f2bd479504028ce4ce17513bb7d41
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 28683d8c69a800cb6f9a365beda26c75b3a69d15
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789027"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161820"
 ---
 # <a name="chaininterfaces-structure"></a>ChainInterfaces Yapısı
 
@@ -117,7 +117,7 @@ Türetilmiş bir tür.
 Türetilmiş türün temel türü.
 
 *hasImplements*<br/>
-Bir Boole değeri olması durumunda `true`, kullanamazsınız anlamına gelir. bir [MixIn](../windows/mixin-structure.md) türünden türemez bir sınıf ile yapı [uygular](../windows/implements-structure.md) yapıda.
+Bir Boole değeri olması durumunda **true**, kullanamazsınız anlamına gelir. bir [MixIn](../windows/mixin-structure.md) türünden türemez bir sınıf ile yapı [uygular](../windows/implements-structure.md) yapıda.
 
 ## <a name="members"></a>Üyeler
 
@@ -169,7 +169,7 @@ Atama başarıyla son arabirim kimliği için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` tüm atama işlemlerinin başarılı ise Aksi takdirde, `false`.
+**doğru** tüm atama işlemlerinin başarılı olduysa; Aksi takdirde, **false**.
 
 ## <a name="casttounknown"></a>Chainınterfaces::casttounknown
 

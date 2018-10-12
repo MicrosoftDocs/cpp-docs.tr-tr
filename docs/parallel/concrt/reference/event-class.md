@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74e871255e3308450764e8f65cdb6acebe79df38
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ab586243df9b015c95f4a703744bfb02a54d064e
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437748"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162197"
 ---
 # <a name="event-class"></a>event Sınıfı
 
@@ -167,7 +167,7 @@ static size_t __cdecl wait_for_multiple(
 Sağlanan dizi içindeki olayların sayısı `_PPEvents` parametresi.
 
 *_FWaitAll*<br/>
-Varsa değerine ayarlanırsa `true`, parametre olarak sağlanan dizi içindeki tüm olayların belirtir `_PPEvents` parametre sinyalliye dönüşmesi beklemeyi karşılamak için. Varsa değerine ayarlanırsa `false`, dizi içinde herhangi bir olayın sağlanan belirtir `_PPEvents` sinyalliye dönüşmesi parametresi, beklemeyi karşılamak.
+Varsa değerine ayarlanırsa **true**, parametre olarak sağlanan dizi içindeki tüm olayların belirtir `_PPEvents` parametre sinyalliye dönüşmesi beklemeyi karşılamak için. Varsa değerine ayarlanırsa **false**, dizi içinde herhangi bir olayın sağlanan belirtir `_PPEvents` sinyalliye dönüşmesi parametresi, beklemeyi karşılamak.
 
 *_Zaman aşımı*<br/>
 Zaman aşımını beklemeden önce milisaniye sayısını gösterir. Değer `COOPERATIVE_TIMEOUT_INFINITE` hiçbir zaman aşımı olmadığını gösterir.
@@ -181,7 +181,7 @@ Bekleme memnun ettiyse, dizin sağlanan `_PPEvents` bekleme koşulunu; memnun pa
 Parametre `_FWaitAll` değere ayarlanmış `true` tüm olaylar beklemeyi karşılamak amacıyla sinyalli hale dönüşmesi gereken belirtmek için işlevin döndürdüğü dizin, değer olmadığını olgu başka özel anlamlı değer taşır `COOPERATIVE_WAIT_TIMEOUT`.
 
 > [!IMPORTANT]
->  Bir evrensel Windows Platformu (UWP) uygulaması çağırmayın `wait_for_multiple` üzerinde ASTA iş parçacığı çünkü bu çağrı geçerli iş parçacığını engelleyebildiğinden ve uygulamanın yanıt veremez duruma gelmesine neden olabilir.
+> Bir evrensel Windows Platformu (UWP) uygulaması çağırmayın `wait_for_multiple` üzerinde ASTA iş parçacığı çünkü bu çağrı geçerli iş parçacığını engelleyebildiğinden ve uygulamanın yanıt veremez duruma gelmesine neden olabilir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

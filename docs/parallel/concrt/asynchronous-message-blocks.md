@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e9379dd15dbb0d814da1e617fb1f3f8408d1da0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0b180b1a92defb2c29d0e54b0ecf9700dd299170
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388491"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163432"
 ---
 # <a name="asynchronous-message-blocks"></a>Zaman Uyumsuz İleti Blokları
 
@@ -307,7 +307,7 @@ Eşzamanlılık::[timer sınıfı](../../parallel/concrt/reference/timer-class.m
 
 `timer` Sınıf için yalnızca bir hedef, ileti gönderir. Ayarlarsanız `_PTarget` oluşturucuda parametre `NULL`, daha sonra hedef çağırarak belirtebileceğiniz [concurrency::ISource::link_target](reference/source-block-class.md#link_target) yöntemi.
 
-A `timer` nesne yinelenen veya yinelenmeyen. Yinelenen bir zamanlayıcı oluşturmak geçirin `true` için `_Repeating` kurucusunu çağırdığınızda parametresi. Aksi halde geçirmek `false` için `_Repeating` yinelenmeyen bir zamanlayıcı oluşturulacağı parametre. Zamanlayıcı yinelenen, her bir süre sonra hedefte aynı iletiyi gönderir.
+A `timer` nesne yinelenen veya yinelenmeyen. Yinelenen bir zamanlayıcı oluşturmak geçirin **true** için `_Repeating` kurucusunu çağırdığınızda parametresi. Aksi halde geçirmek **false** için `_Repeating` yinelenmeyen bir zamanlayıcı oluşturulacağı parametre. Zamanlayıcı yinelenen, her bir süre sonra hedefte aynı iletiyi gönderir.
 
 Agents kitaplığı oluşturur `timer` başlatıldı-durumdaki nesneler. Bir zamanlayıcı nesnesini başlatmak için çağrı [concurrency::timer::start](reference/timer-class.md#start) yöntemi. Durdurmak için bir `timer` nesne, nesne veya çağrı yok [concurrency::timer::stop](reference/timer-class.md#stop) yöntemi. Yinelenen bir zamanlayıcı duraklatmak için çağrı [concurrency::timer::pause](reference/timer-class.md#pause) yöntemi.
 

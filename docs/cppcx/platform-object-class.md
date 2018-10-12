@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82f9cf473a1b38e3a77b43bc5fde30057c7b1a8a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 0c2bc732453edb66f70fde88da8fb7230f66cd13
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106554"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162314"
 ---
 # <a name="platformobject-class"></a>Platform::Object sınıfı
 
@@ -86,7 +86,7 @@ Karşılaştırma yapılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Aksi takdirde nesneler eşitse, `false`.
+**doğru** aksi nesneler eşitse, **false**.
 
 ## <a name="gethashcode"></a>  Object::GetHashCode Yöntemi
 
@@ -168,7 +168,7 @@ Karşılaştırılacak ikinci nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` iki nesnenin aynı olup olmadığını; Aksi takdirde, `false`.
+**doğru** ise iki nesnenin aynı; Aksi takdirde, **false**.
 
 ## <a name="tostring"></a>  Object::ToString yöntemi (C + +/ CX)
 

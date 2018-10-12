@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 165ea5b42ea4e293eb60b7a798778e3a461e0385
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: f7ecf84317f8d88748e4a50a43c173a3fe41e0e2
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235457"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163744"
 ---
 # <a name="how-to-migrate-to-clr"></a>Nasıl yapılır: /clr'ye Geçiş
 
@@ -84,7 +84,7 @@ NewFunc2 = (MYPROC)GetProcAddress( hLib, "Func2" );
 
 C++ aynı zamanda gerektirir işlevleri prototipli ya da tam olarak tanımlanmış ya da bunlar başvurulan veya çağrılan yüklenmeden önce.
 
-C++ anahtar sözcükleri hareketlidir C kod içinde kullanılan tanımlayıcıları (gibi `virtual`, `new`, `delete`, `bool`, `true`, `false`, vs.) kaydedilmelidir. Bu, genellikle basit arama ve değiştirme işlemlerini ile yapılabilir.
+C++ anahtar sözcükleri hareketlidir C kod içinde kullanılan tanımlayıcıları (gibi **sanal**, **yeni**, **Sil**, **bool**, **true** , **false**, vs.) kaydedilmelidir. Bu, genellikle basit arama ve değiştirme işlemlerini ile yapılabilir.
 
 ```
 COMObj1->lpVtbl->Method(COMObj, args);  // C code

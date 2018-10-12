@@ -11,12 +11,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2050be008f89ff2d125842d5919407dc292eed40
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: b0b8a17cf83171a570f2ca3f6ff40c657d17164d
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105841"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162353"
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap Sınıfı
 
@@ -128,7 +128,7 @@ Haritada ilk öğeyi belirleyen bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri ile bildirilen bir değişken atamak First() tarafından döndürülen yineleyici tutmak için kullanışlı bir yol olan **otomatik** kesinti anahtar sözcüğü yazın. Örneğin, `auto x = myUnorderedMap->First();`.
+Dönüş değeri ile bildirilen bir değişken atamak First() tarafından döndürülen yineleyici tutmak için kullanışlı bir yol olan **otomatik** kesinti anahtar sözcüğü yazın. Örneğin: `auto x = myUnorderedMap->First();`
 
 ## <a name="getview"></a>  UnorderedMap::GetView metodu
 
@@ -163,7 +163,7 @@ UnorderedMap öğeyi bulmak için kullanılan anahtar. Türünü *anahtarı* Typ
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` anahtar bulunursa; Aksi takdirde, `false`.
+**doğru** anahtar bulunduysa, **false**.
 
 ## <a name="insert"></a>  Unorderedmap::INSERT yöntemi
 
@@ -188,7 +188,7 @@ Anahtar-değer çiftinin değer bölümünü. Türünü *değer* TypeName *V*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli Haritası'nda var olan bir öğenin anahtarı eşleşip eşleşmediğini *anahtarı* ve bu öğenin değeri kısmı kümesine *değer*. `false` hiçbir geçerli Haritası'nda var olan bir öğe eşleşmiyorsa *anahtarı* ve *anahtar* ve *değer* parametreleri bir anahtar-değer çifti yapılan ve ardından geçerli UnorderedMap için eklendi.
+**true** geçerli Haritası'nda var olan bir öğenin anahtarı eşleşip eşleşmediğini *anahtarı* ve bu öğenin değeri kısmı kümesine *değer*. **false** geçerli Haritası'nda var olan bir öğe yok eşleşiyorsa *anahtar* ve *anahtar* ve *değer* parametreleri bir anahtar-değer çifti yapılan ve ardından eklenir Geçerli UnorderedMap.
 
 ## <a name="lookup"></a>  UnorderedMap::Lookup yöntemi
 

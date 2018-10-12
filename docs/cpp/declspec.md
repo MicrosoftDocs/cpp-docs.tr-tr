@@ -1,12 +1,14 @@
 ---
 title: __declspec | Microsoft Docs
 ms.custom: ''
-ms.date: 1/23/2018
+ms.date: 10/09/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
 f1_keywords:
 - __declspec_cpp
+- __declspec
+- _declspec
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b159bcdae6e7f576ed92275ec5f79d25132b53e5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f413c56b665a1878fb1e948b975ab8e4cbc0daf4
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111330"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163594"
 ---
 # <a name="declspec"></a>__declspec
 
@@ -66,6 +68,8 @@ Beyaz boşluk, bildirim değiştirici sırasını ayırır. Örnekler sonraki b�
 Genişletilmiş öznitelik dilbilgisi bu Microsoft'a özgü depolama sınıfı öznitelikler destekler: [hizalama](../cpp/align-cpp.md), [tahsis](../cpp/allocate.md), [appdomain](../cpp/appdomain.md), [code_seg](../cpp/code-seg-declspec.md), [kullanım dışı](../cpp/deprecated-cpp.md), [dllexport](../cpp/dllexport-dllimport.md), [dllimport](../cpp/dllexport-dllimport.md), [jitintrinsic](../cpp/jitintrinsic.md), [naked](../cpp/naked-cpp.md), [noalias](../cpp/noalias.md), [noinline](../cpp/noinline.md), [noreturn](../cpp/noreturn.md), [nothrow](../cpp/nothrow-cpp.md), [novtable](../cpp/novtable.md) , [işlem](../cpp/process.md), [kısıtlama](../cpp/restrict.md), [safebuffers](../cpp/safebuffers.md), [selectany](../cpp/selectany.md), [spectre](../cpp/spectre.md), ve [iş parçacığı](../cpp/thread.md). Ayrıca bu COM nesnesi özniteliklerini de destekler: [özelliği](../cpp/property-cpp.md) ve [UUID](../cpp/uuid-cpp.md).
 
 **Code_seg**, **dllexport**, **dllimport**, **naked**, **noalias**, **nothrow** , **özelliği**, **kısıtlama**, **selectany**, **iş parçacığı**, ve **UUID**depolama sınıfı öznitelikleri yalnızca nesne veya işlev için bunlar uygulandığı bildirimin özellikleridir. **İş parçacığı** özniteliği yalnızca nesneleri ve verileri etkiler. **Naked** ve **spectre** öznitelikleri yalnızca işlevleri etkiler. **Dllimport** ve **dllexport** öznitelikleri işlevleri, verileri ve nesneleri etkiler. **Özelliği**, **selectany**, ve **UUID** öznitelikleri COM nesnelerini etkiler.
+
+Önceki sürümlerle uyumluluk için **_declspec** eşanlamlıdır **__declspec** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) olduğu Belirtilen.
 
 **__Declspec** anahtar sözcükleri basit bir bildirimin başlangıcına yerleştirilmelidir. Uyarı derleyicinin yoksaydığı **__declspec** anahtar sözcükleri yerleştirilen sonra * veya & ve bir bildirimde değişken tanımlayıcının önündeki.
 

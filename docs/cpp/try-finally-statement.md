@@ -1,17 +1,19 @@
 ---
 title: try-finally deyimi | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/09/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
 f1_keywords:
 - __try
+- _try
 - __leave_cpp
 - __leave
 - __finally_cpp
 - __try_cpp
 - __finally
+- _finally
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -28,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df3519cac370ac7595e0789eeab43c6488120fc8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 94a250862f5514f290043bf596ba19bf0834e71e
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024248"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161664"
 ---
 # <a name="try-finally-statement"></a>try-finally Deyimi
 
@@ -81,6 +83,8 @@ Bir özel durum oluşursa **__try** blok, işletim sistemi için özel bir işle
 
 > [!NOTE]
 >  Try-finally davranışını kullanımını destekleyen bazı diğer dillerden farklı **son**, C# gibi.  Tek bir **__try** ya da, her ikisi birden biri olabilir **__finally** ve **__except**.  Her ikisi de birlikte kullanılmak üzere olduğunda, bir dış deneyin-dışında deyimi iç try-finally deyimi almalısınız.  Her blok yürütüldüğünde belirten kuralları da farklıdır.
+
+Önceki sürümlerle uyumluluk için **_try**, **_finally**, ve **_leave** için eş anlamlı sözcükler olan **__try**, **__ Son olarak**, ve **__leave** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) belirtilir.
 
 ## <a name="the-leave-keyword"></a>__leave Anahtar Sözcüğü
 

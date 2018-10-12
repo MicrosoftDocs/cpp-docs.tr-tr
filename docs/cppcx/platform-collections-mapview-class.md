@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e222ba48121702c2388e64cea5e81da627f324a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: e1dd4aab5912b2f15e8c0b36c7e482001809099d
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110863"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163913"
 ---
 # <a name="platformcollectionsmapview-class"></a>Platform::Collections:: mapview sınıfı
 
@@ -101,7 +101,7 @@ Harita Görünümü'nde ilk öğeyi belirleyen bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri ile bildirilen bir değişken atamak First() tarafından döndürülen yineleyici tutmak için kullanışlı bir yol olan **otomatik** kesinti anahtar sözcüğü yazın. Örneğin, `auto x = myMapView->First();`.
+Dönüş değeri ile bildirilen bir değişken atamak First() tarafından döndürülen yineleyici tutmak için kullanışlı bir yol olan **otomatik** kesinti anahtar sözcüğü yazın. Örneğin: `auto x = myMapView->First();`
 
 ## <a name="haskey"></a>  MapView::HasKey yöntemi
 
@@ -117,11 +117,11 @@ bool HasKey(K key);
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
-MapView öğeyi bulmak için kullanılan anahtar. Türünü `key` TypeName *K*.
+MapView öğeyi bulmak için kullanılan anahtar. Türünü *anahtarı* TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` anahtar bulunursa; Aksi takdirde, `false`.
+**doğru** anahtar bulunduysa, **false**.
 
 ##  <a name="lookup"></a> MapView::Lookup yöntemi
 

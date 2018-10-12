@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20da45d6161f76043c3d06f027192726c3520f44
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 668365cf69fc3457efc615a5fa0da2c24b3cb02e
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102557"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162392"
 ---
 # <a name="platformcollectionsvectoriterator-class"></a>Platform::Collections:: vectorıterator sınıfı
 
@@ -157,7 +157,7 @@ Başka bir VectorIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli VectorIterator eşitse `other`; Aksi takdirde `false`.
+**doğru** geçerli VectorIterator eşitse *diğer*; Aksi takdirde **false**.
 
 ## <a name="operator-greater-than"></a>  VectorIterator::operator&gt; işleci
 
@@ -176,7 +176,7 @@ Başka bir VectorIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli VectorIterator büyükse `other`; Aksi takdirde `false`.
+**doğru** geçerli VectorIterator büyükse *diğer*; Aksi takdirde **false**.
 
 ## <a name="operator-greater-than-or-equals"></a>  VectorIterator::operator&gt;= işleci
 
@@ -195,7 +195,7 @@ Başka bir VectorIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli VectorIterator değerinden büyük veya ona eşit olup olmadığını `other`; Aksi takdirde `false`.
+**doğru** geçerli VectorIterator değerinden büyük veya ona eşit olup olmadığını *diğer*; Aksi takdirde **false**.
 
 ## <a name="operator-increment"></a>  VectorIterator::operator ++ işleci
 
@@ -235,7 +235,7 @@ Başka bir VectorIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli VectorIterator eşit değilse `other`; Aksi takdirde `false`.
+**doğru** geçerli VectorIterator eşit değilse *diğer*; Aksi takdirde **false**.
 
 ## <a name="operator-less-than"></a>  VectorIterator::operator&lt; işleci
 
@@ -254,7 +254,7 @@ Başka bir VectorIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli VectorIterator ise kısa `other`; Aksi takdirde `false`.
+**doğru** geçerli VectorIterator ise kısa *diğer*; Aksi takdirde **false**.
 
 ## <a name="operator-less-than-or-equals"></a>  VectorIterator::operator&lt;= işleci
 
@@ -273,7 +273,7 @@ Başka bir VectorIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` Geçerli VectorIterator küçük veya buna eşit olup olmadığı `other`; Aksi takdirde `false`.
+**doğru** geçerli VectorIterator küçük veya buna eşit olup olmadığı *diğer*; Aksi takdirde **false**.
 
 ## <a name="operator-minus"></a>  VectorIterator::operator-işleci
 

@@ -43,12 +43,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f5b84020d9428066bdadfff53500d671233f07d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f4a184e0fee76f3aa5bb8f7729250c03b10b9dfc
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386736"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163497"
 ---
 # <a name="sourceblock-class"></a>source_block Sınıfı
 
@@ -237,7 +237,7 @@ Bir işaretçi `message` nesne arayan sahipliğini artık sahiptir.
 
 Çağırılıyorsa yöntem bir [bad_target](bad-target-class.md) özel durum, parametre `_PTarget` adlı hedef göstermiyor `reserve`.
 
-`consume` Yöntemi benzer `accept`, ancak her zaman bir çağrı tarafından gelmelidir `reserve` döndürülen `true`.
+`consume` Yöntemi benzer `accept`, ancak her zaman bir çağrı tarafından gelmelidir `reserve` döndürülen **true**.
 
 ##  <a name="consume_message"></a> consume_message
 
@@ -427,7 +427,7 @@ virtual bool reserve(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` iletinin başarıyla ayrıldı, `false` Aksi takdirde. Ayırmalar dahil olmak üzere çeşitli nedenlerle başarısız olabilir: ileti zaten ayrılmış veya kaynak ayırmaları Reddet vb. başka bir hedef tarafından kabul.
+**doğru** ileti başarıyla ayrıldı, **false** Aksi takdirde. Ayırmalar dahil olmak üzere çeşitli nedenlerle başarısız olabilir: ileti zaten ayrılmış veya kaynak ayırmaları Reddet vb. başka bir hedef tarafından kabul.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -450,11 +450,11 @@ virtual bool reserve_message(runtime_object_identity _MsgId) = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` iletinin başarıyla ayrıldı, `false` Aksi takdirde.
+**doğru** ileti başarıyla ayrıldı, **false** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sonra `reserve` çağrılır, döndürürse `true`, ya da `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.
+Sonra `reserve` çağrılır, döndürürse **true**, ya da `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.
 
 ##  <a name="resume_propagation"></a> resume_propagation
 

@@ -1,12 +1,13 @@
 ---
 title: __asm | Microsoft Docs
 ms.custom: ''
-ms.date: 08/30/2018
+ms.date: 10/09/2018
 ms.technology:
 - cpp-masm
 ms.topic: conceptual
 f1_keywords:
 - __asm
+- _asm
 - __asm_cpp
 dev_langs:
 - C++
@@ -18,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bfe0cac0a35c821f3275ec323181f04c1ab982c4
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: dd279a6324aec6eba50c6c3b7ffe846200d45fe1
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693009"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161729"
 ---
 # <a name="asm"></a>__asm
 
@@ -59,6 +60,8 @@ __asm int 3
 Yerel kod ile derlendiğinde oluşturulmasına neden olmadı **/CLR**; derleyici yönergeyi bir CLR kesme yönergesine çevrilir.
 
 `__asm int 3` artık işlev için yerel kod oluşturmayla sonuçlanır. Bir işlevin kodunuzda bir kesme noktası neden ve bu işlevin MSIL olarak derlenmiş istiyorsanız kullanmak istiyorsanız [__debugbreak](../../intrinsics/debugbreak.md).
+
+Önceki sürümlerle uyumluluk için **_asm** eşanlamlıdır **__asm** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../../build/reference/za-ze-disable-language-extensions.md) belirtilir.
 
 ## <a name="example"></a>Örnek
 

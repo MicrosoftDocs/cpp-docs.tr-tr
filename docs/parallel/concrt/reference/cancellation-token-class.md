@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9b438725a5a725597a81f0587936618a06cbb4b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 218451b0483e569bf4c944e139aff3446f5925e7
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414309"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162080"
 ---
 # <a name="cancellationtoken-class"></a>cancellation_token Sınıfı
 
@@ -55,7 +55,7 @@ class cancellation_token;
 |----------|-----------------|
 |[deregister_callback](#deregister_callback)|Aracılığıyla önceden kayıtlı bir geri çağırmayı kaldırır `register` dayalı `cancellation_token_registration` kayıt zamanında döndürülen nesnesi.|
 |[is_cancelable](#is_cancelable)|Bu belirteci veya iptal edilip bir göstergesini döndürür.|
-|[is_canceled](#is_canceled)|Döndürür `true` belirteç iptal edilmişse.|
+|[is_canceled](#is_canceled)|Döndürür **true** belirteç iptal edilmişse.|
 |[Yok](#none)|Hiçbir zaman iptale tabi olmayan bir iptal belirteci döndürür.|
 |[register_callback](#register_callback)|Belirteç ile bir geri çağırma işlevini kaydeder. Belirteç iptal edilirse, geri arama yapılır. Belirteç zaten burada bu yöntemin çağrıldığı noktada iptal edilirse, geri çağırma hemen ve eşzamanlı olarak yapılacağına dikkat edin.|
 
@@ -123,7 +123,7 @@ Bu belirteci veya iptal edilip bir göstergesi.
 
 ##  <a name="is_canceled"></a> is_canceled
 
-Döndürür `true` belirteç iptal edilmişse.
+Döndürür **true** belirteç iptal edilmişse.
 
 ```
 bool is_canceled() const;
@@ -131,7 +131,7 @@ bool is_canceled() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değer `true` belirteç iptal edildi; Aksi takdirde, değeri `false`.
+Değer **true** belirteç iptal edildi; Aksi takdirde, değeri **false**.
 
 ##  <a name="none"></a> Yok
 
