@@ -17,14 +17,12 @@ f1_keywords:
 - '&='
 - ^=
 - '|='
-- '&&='
 dev_langs:
 - C++
 helpviewer_keywords:
 - operators [C++], assignment
 - assignment operators [C++], C++
 - '&= operator'
-- '&&= operator'
 - ^= operator
 - += operator
 - '>>= operator'
@@ -43,32 +41,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15c9efaf8dc5b9f0886a697ad2b872e24264820f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1429bcb9f4002cb65cc14000d3bcf62004000566
+ms.sourcegitcommit: b05cff71a8a6a8a4c7bbea1263fd0a711853f921
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307925"
 ---
 # <a name="assignment-operators"></a>Atama İşleçleri
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-expression assignment-operator expression 
-assignment-operator : one of
-   =   *=   /=   %=   +=   -=   <<=   >>=   &=   ^=   |=  &&=
-```
+*ifade* *atama işleci* *ifadesi*
+
+*atama işleci* : biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>= * =, / = % =, +=-= \< \<= >> = & = ^ =   \|=</strong>
 
 ## <a name="remarks"></a>Açıklamalar
 
-Atama işleçleri, sol işlenen tarafından belirlenen nesnede bir değer depolar. Üç tür arama işlemi vardır:
+Atama işleçleri, sol işlenen tarafından belirlenen nesnede bir değer depolar. İki tür arama işlemi vardır:
 
-1. ilk işlenen tarafından belirtilen nesnede ikinci işlenenin değerini depolandığı basit atama. 1. bileşik atama, sonucu depolamadan önce içinde bir aritmetik, kaydırma veya bit düzeyinde işlem gerçekleştirilir.
-1. Atama (sınıf türleri için), hangi kaynakların kopyalamadan aktarılır taşıyın.
+1. *Basit atama*, ilk işlenen tarafından belirtilen nesnede ikinci işlenenin değerini depolandığı içinde.
 
+1. *bileşik atama*, içinde bir aritmetik, kaydırma veya bit düzeyinde işlem gerçekleştirilir sonucu depolamadan önce.
 
-Aşağıdaki tabloda tüm atama işleçleri hariç = ve & & = işleçleri birleşik atama işleçleridir.
+Aşağıdaki tabloda, = işleci hariç tüm atama işleçleri birleşik atama işleçleridir.
 
 ### <a name="assignment-operators"></a>Atama İşleçleri
 
@@ -85,7 +82,6 @@ Aşağıdaki tabloda tüm atama işleçleri hariç = ve & & = işleçleri birle�
 |**&=**|Birinci ve ikinci işlenenden bit seviyesinde VE elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|
 |**^=**|Birinci ve ikinci işlenenden bit seviyesinde dışlamalı VEYA elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|
 |**\|=**|Birinci ve ikinci işlenenden bit seviyesinde kapsamalı VEYA elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|
-|**&&=**| Taşıma atama işlecini (yalnızca sınıf türleri için). İkinci işlenen bir rvalue ise, kaynaklarını (kopyalayarak olmadan) ilk işlenenin taşıyın. Bkz: [taşıma oluşturucuları ve taşıma atama işleçleri](move-constructors-and-move-assignment-operators-cpp.md) daha fazla bilgi için.|
 
 **İşleç Anahtar Sözcükleri**
 
@@ -125,11 +121,11 @@ int main() {
 
 ## <a name="simple-assignment"></a>Basit atama
 
-Basit atama işleci (=) ilk işlenen tarafından belirtilen nesnede depolanan ikinci işlenenin değerini neden olur. Aritmetik türde iki nesne varsa, sağ işlenen değer depolama önce soldaki türüne dönüştürülür.
+Basit atama işleci (**=**) ilk işlenen tarafından belirtilen nesnede depolanan ikinci işlenenin değerini neden olur. Aritmetik türde iki nesne varsa, sağ işlenen değer depolama önce soldaki türüne dönüştürülür.
 
-Const ve volatile türlerindeki nesneler, yalnızca geçici olan veya const veya volatile türü l-değerler için atanabilir.
+Nesnelerin **const** ve **geçici** türleri yalnızca türlere, l-değerler için atanabilir **geçici** veya hiçbiri olan **const** ya da **geçici**.
 
-Sınıf türü (yapı, birleşim ve sınıf türleri) nesnelerle atama işleci adlı bir işlev tarafından gerçekleştirilen =. Bu işleç işlevini varsayılan davranışı, bit düzeyinde kopyalama işlemini gerçekleştirmek için değildir; Ancak, bu davranışı, aşırı yüklenmiş işleçler kullanılarak değiştirilebilir. (Bkz [aşırı yüklenmiş işleçler](../cpp/operator-overloading.md) daha fazla bilgi için.)
+Atama (yapı, birleşim ve sınıf türleri) sınıf türünden nesnelere adlı bir işlev tarafından gerçekleştirilen `operator=`. Bu işleç işlevini varsayılan davranışı, bit düzeyinde kopyalama işlemini gerçekleştirmek için değildir; Ancak, bu davranışı, aşırı yüklenmiş işleçler kullanılarak değiştirilebilir. Bkz: [işleci aşırı yüklemesi](../cpp/operator-overloading.md) daha fazla bilgi için. Ayrıca, sınıf türleri olabilir *kopyalama ataması* ve *atama taşıma* işleçleri. Daha fazla bilgi için [oluşturucuları kopyalama ve atama işleçlerini kopyalayın](copy-constructors-and-copy-assignment-operators-cpp.md) ve [taşıma oluşturucuları ve taşıma atama işleçleri](move-constructors-and-move-assignment-operators-cpp.md).
 
 Belirli bir taban sınıftan tüm kesin bir şekilde türetilen sınıfın bir nesnesi, temel sınıfın bir nesneye atanabilir. Geriye doğru olmadığı için örtük bir dönüştürme temel sınıfından türetilmiş bir sınıf true değil, ancak değil, temel sınıf için türetilmiş sınıf. Örneğin:
 
@@ -186,7 +182,7 @@ B = A;
 
 Aşağıdaki etkileri biri olabilir:
 
-- İşlev işlecini çağırmak için = `UserType2`, işleci sağlanan = ile sağlanan bir `UserType1` bağımsız değişken.
+- İşlev çağrısı `operator=` için `UserType2`, sağlanan `operator=` ile sağlanan bir `UserType1` bağımsız değişken.
 
 - Açık dönüştürme işlevini çağırın `UserType1::operator UserType2`, böyle bir işlevi varsa.
 
@@ -194,13 +190,13 @@ Aşağıdaki etkileri biri olabilir:
 
 ## <a name="compound-assignment"></a>Bileşik atama
 
-Tablosunda gösterilen bileşik atama işleçleri [atama işleçleri](../cpp/assignment-operators.md), biçiminde belirtilen *e1* `op` =  *e2*burada *e1* olduğundan, const türünde olmayan değiştirilebilir bir l-değeri ve *e2* aşağıdakilerden biridir:
+Tablosunda gösterilen bileşik atama işleçleri [atama işleçleri](#assignment-operators), biçiminde belirtilen *e1* *op*= *e2*burada *e1* olmayan değiştirilebilir bir l-değeri olan **const** türü ve *e2* aşağıdakilerden biridir:
 
 - Bir aritmetik tür
 
-- Bir işaretçi ise `op` olan + veya -
+- Bir işaretçi ise *op* olduğu **+** veya **-**
 
-*E1* `op` =  *e2* form davranışını olarak *e1* *= e1* `op` *e2*, ancak *e1* yalnızca bir kez değerlendirilir.
+*E1* *op*= *e2* form davranışını olarak *e1* **=** *e1* *op* *e2*, ancak *e1* yalnızca bir kez değerlendirilir.
 
 Numaralandırılmış bir türe yapılan bileşik atama bir hata iletisi oluşturur. Sol işlenen bir işaretçi türü ise, sağ işlenen bir işaretçi türünde olmalıdır veya 0 olarak değerlendirilen bir sabit bir ifade olması gerekir. Sol işlenen bir tamsayı türü ise, sağ işlenen bir işaretçi türü olmamalıdır.
 
