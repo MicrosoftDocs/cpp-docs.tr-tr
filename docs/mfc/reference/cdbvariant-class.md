@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14e2e646a2b05ba8514f22fb9ffb027aa0a570c1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0c3ab06de159722e4aae4e15d93e057b12dc8864
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419652"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083300"
 ---
 # <a name="cdbvariant-class"></a>CDBVariant sınıfı
 
@@ -79,7 +79,7 @@ class CDBVariant
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CDBVariant::m_dwType](#m_dwtype)|Şu anda depolanan değeri veri türünü içerir. Tür `DWORD`.|
+|[CDBVariant::m_dwType](#m_dwtype)|Şu anda depolanan değeri veri türünü içerir. `DWORD`yazın.|
 
 ### <a name="public-union-members"></a>Genel birleşim üyeleri
 
@@ -226,7 +226,7 @@ TIMESTAMP_STRUCT türünde bir nesne için bir işaretçi depolar.
 
 `m_pdate` Veri üyesine ait bir birleşime. Erişmeden önce `m_pdate`, ilk değerini denetleyin [CDBVariant::m_dwType](#m_dwtype). Varsa `m_dwType` DBVT_DATE için sonra ayarlanır `m_pdate` geçerli bir işaretçi içerir; Aksi takdirde, erişim `m_pdate` güvenilir olmayan sonuçlar oluşturabilir.
 
-TIMESTAMP_STRUCT veri türü hakkında daha fazla bilgi için Ek Yardım konusuna [C veri türleri](/previous-versions/windows/desktop/ms714556\(v=vs.85\)) ek d *ODBC Programcının Başvurusu* Windows SDK.
+TIMESTAMP_STRUCT veri türü hakkında daha fazla bilgi için Ek Yardım konusuna [C veri türleri](/previous-versions/windows/desktop/ms714556) ek d *ODBC Programcının Başvurusu* Windows SDK.
 
 ##  <a name="m_pstring"></a>  CDBVariant::m_pstring
 
