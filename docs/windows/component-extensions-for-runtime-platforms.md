@@ -1,7 +1,7 @@
 ---
-title: Çalışma zamanı platformları için bileşen uzantıları | Microsoft Docs
+title: .NET ve UWP için bileşen uzantıları | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -19,28 +19,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0619585a0a5b59ffb6b8cfbe22e7930909369b23
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 45f83fbaaa867e2f58e329d8531259fa3751a521
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386762"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328421"
 ---
-# <a name="component-extensions-for-runtime-platforms"></a>Çalışma Zamanı Platformları için Bileşen Uzantıları
+# <a name="component-extensions-for-net-and-uwp"></a>.NET ve UWP için bileşen uzantıları
 
-Visual C++ çalışma zamanı platformları karşı programlama yardımcı olmak için dil uzantıları sağlar. Kullanarak C + +/ CX, program Evrensel Windows platformu uygulamaları ve yerel kod olarak derlemek bileşenleri. C + kullanarak doğrudan Windows çalışma zamanı COM arabirimleri için programlama ile Evrensel Windows platformu uygulamaları oluşturabilirsiniz ancak +/ CX, Oluşturucular, özel durumlar ve diğer modern C++ programlama deyimlerini ile çalışabilir. Yönetilen yürütme ortamında .NET platformu, C++ programlama etkinleştirmek için C + kullanabileceğiniz +/ CLI.
+C++ Standart diline standart olmayan uzantı sağlamak derleyici satıcılarının izin verir. Microsoft .NET Framework veya evrensel Windows Platformu (UWP) çalışan yerel C++ kodu için kod bağlanmanıza yardımcı olması için uzantılar sağlar. .NET uzantıları çağrılır C + +/ yönetilen yürütme ortamı, ortak dil çalışma zamanı (CLR) olarak adlandırılır. NET'te yürütür CLI ve üretim kodu. UWP uzantıları çağrılır C + +/ CX ve yerel makine kodu üretir.
+
+> [!NOTE]
+> Yeni uygulamalar için C + kullanılması önerilir +/ WinRT yerine C + +/ CX. C + +/ WinRT olan yeni, standart C ++ 17 dil projeksiyon Windows Runtime API'ları için. Biz C + desteklemeye devam edecektir +/ CX ve WRL, ancak yüksek yeni uygulama C + kullanmanız +/ WinRT. Daha fazla bilgi için [C + +/ WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index).
 
 ### <a name="two-runtimes-one-set-of-extensions"></a>İki çalışma zamanları, bir uzantı kümesi
 
-C + +/ CX olan bir alt kümesini C + +/ CLI. C + için ortak olan uzantıları için +/ CX ve C + +/ CLI, semantiği bağlıdır, ortak dil çalışma zamanı (CLR) veya Windows çalışma zamanını hedefleyen üzerinde. Uygulamanızı Windows çalışma zamanı üzerinde çalıştırılacak derlemeye belirtin `/ZW` derleyici seçeneği. CLR üzerinde çalıştırmak için derleme için belirtme `/clr` derleyici seçeneği. Bir proje oluşturmak için Visual Studio kullandığınızda bu anahtarları otomatik olarak ayarlanır.
-
-C++ ile Evrensel Windows platformu uygulamaları oluşturma hakkında daha fazla bilgi için bkz. [C++ kullanan Windows Runtime için yol haritası uygulamaları](https://msdn.microsoft.com/library/windows/apps/hh700360.aspx).
-
 C + +/ CLI, ISO/ANSI C++ standard genişletir ve Ecma C + altında tanımlanan +/ CLI standart. Daha fazla bilgi için [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
+
+C + +/ CX uzantıları olan bir alt kümesini C + +/ CLI. Uzantı sözdizimini çoğu durumda aynı olsa da olup belirttiğiniz üzerinde oluşturulan kodu bağlıdır `/ZW` hedef UWP, derleyici seçeneği veya `/clr` hedeflenecek .NET seçeneği. Bir proje oluşturmak için Visual Studio kullandığınızda bu anahtarları otomatik olarak ayarlanır.
 
 ## <a name="data-type-keywords"></a>Veri türü anahtar sözcükleri
 
-Dil uzantıları dahil *toplama anahtar sözcükleri*, boşluk tarafından ayrılmış iki belirteçleri oluşan anahtar sözcükleri olan. Birlikte kullanıldıklarında belirteçleri ayrı olarak kullanıldığında bir anlamı ve başka bir anlama sahip olabilir. Örneğin, "başvuru" normal bir tanımlayıcı olup ve "class" yerel bir sınıfı bildirir bir anahtar sözcüktür. Ancak, bu sözcükler birleştirilir forma **başvuru sınıfı**, sonuçta elde edilen toplam anahtar sözcüğü olarak bilinen bir varlık bildirir bir *çalışma zamanı sınıf*.
+Dil uzantıları dahil *toplama anahtar sözcükleri*, boşluk tarafından ayrılmış iki belirteçlerin oluşur. Birlikte kullanıldıklarında belirteçleri ayrı olarak kullanıldığında bir anlamı ve başka bir anlama sahip olabilir. Örneğin, "başvuru" normal bir tanımlayıcı olup ve "class" yerel bir sınıfı bildirir bir anahtar sözcüktür. Ancak, bu sözcükler birleştirilir forma **başvuru sınıfı**, sonuçta elde edilen toplam anahtar sözcüğü olarak bilinen bir varlık bildirir bir *çalışma zamanı sınıf*.
 
 Uzantıları de *bağlama duyarlı* anahtar sözcükleri. Bir anahtar sözcüğü, bağlama duyarlı olarak ve o ifadedeki yerleşimi içeren ifade türünü bağlı olarak kabul edilir. Örneğin, bir tanımlayıcı "özelliği" belirteci olabilir ya da ortak sınıf üyesine özel bir tür bildirebilirsiniz.
 
@@ -53,7 +54,7 @@ Aşağıdaki tabloda, C++ dil uzantısı anahtar sözcükleri listeler.
 |**arabirim sınıfı**<br /><br /> **Arabirim yapı birimi**|Hayır|Bir arabirim bildirir.|[arabirim sınıfı](../windows/interface-class-cpp-component-extensions.md)|
 |**sabit listesi sınıfı**<br /><br /> **Numaralandırma yapı birimi**|Hayır|Bir sabit listesi bildirir.|[sabit listesi sınıfı](../windows/enum-class-cpp-component-extensions.md)|
 |**property**|Evet|Bir özelliği bildirir.|[property](../windows/property-cpp-component-extensions.md)|
-|**delegate**|Evet|Bir temsilci bildirir.|[temsilci (C++ Bileşen Uzantıları)](../windows/delegate-cpp-component-extensions.md)|
+|**delegate**|Evet|Bir temsilci bildirir.|[delegate (C + +/ CLI ve C + +/ CX)](../windows/delegate-cpp-component-extensions.md)|
 |**event**|Evet|Bir olayı bildirir.|[event](../windows/event-cpp-component-extensions.md)|
 
 ## <a name="override-specifiers"></a>Geçersiz Kılma Tanımlayıcıları
@@ -124,7 +125,7 @@ Bu bölümde ek programlama yapıları ve CLR ile ilgili konuları listeler.
 |[/ CLR ile C türü atamalar (C + +/ CLI)](../windows/c-style-casts-with-clr-cpp-cli.md)|C türü atamalar yorumlanma şeklini tanımlar.|
 |[__clrcall](../cpp/clrcall.md) çağırma kuralı|CLR uyumlu çağırma kuralını belirtir.|
 |`__cplusplus_cli`|[Önceden Tanımlanmış Makrolar](../preprocessor/predefined-macros.md)|
-|[Özel öznitelikler](../windows/custom-attributes-cpp.md)|Kendi CLR öznitelikleri tanımlanacağını açıklar.|
+|[Özel Öznitelikler](../windows/custom-attributes-cpp.md)|Kendi CLR öznitelikleri tanımlanacağını açıklar.|
 |[Özel Durum İşleme](../windows/exception-handling-cpp-component-extensions.md)|Özel durum işleme genel bir bakış sağlar.|
 |[Açık Geçersiz Kılmalar](../windows/explicit-overrides-cpp-component-extensions.md)|Üye işlevleri rastgele üyeleri nasıl kılabilirsiniz gösterir.|
 |[Arkadaş Derlemeler (C++)](../dotnet/friend-assemblies-cpp.md)|İstemci bütünleştirilmiş kod derleme bileşeninin tüm türlerin nasıl erişebileceğinizi açıklanır.|

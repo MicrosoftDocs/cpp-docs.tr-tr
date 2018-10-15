@@ -1,7 +1,7 @@
 ---
 title: __tanımlayıcı (c + +/ CLI) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -18,25 +18,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 572767c2f85b07f201bef93578b14b731aa467e0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 09a8b69402dbe3812bdd49f8944c979300209bff
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415024"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328278"
 ---
 # <a name="identifier-ccli"></a>__tanımlayıcı (C++/CLI)
 
-Tanımlayıcı olarak Visual C++ anahtar sözcükleri kullanımını etkinleştirir.
+Tanımlayıcı olarak C++ anahtar sözcükleri kullanımını etkinleştirir.
 
 ## <a name="all-platforms"></a>Tüm Platformlar
 
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-__identifier(
-Visual_C++_keyword
-)  
+__identifier(C++_keyword)  
 ```
 
 ### <a name="remarks"></a>Açıklamalar
@@ -53,7 +51,7 @@ Derleyici seçeneği: `/ZW`
 
 **Örnek**
 
-Aşağıdaki örnekte, bir sınıf adlı **şablon** C# içinde oluşturulan ve bir DLL olarak dağıtılmış. Kullanan Visual C++ programında **şablon** sınıfı **__tanımlayıcı** anahtar sözcüğü gizlendiğinden olgu, **şablon** standart bir C++ anahtar sözcüğüdür.
+Aşağıdaki örnekte, bir sınıf adlı **şablon** C# içinde oluşturulan ve bir DLL olarak dağıtılmış. C + +/ kullanan CLI program **şablon** sınıfı **__tanımlayıcı** anahtar sözcüğü gizlendiğinden olgu, **şablon** standart bir C++ anahtar sözcüğüdür.
 
 ```cs
 // identifier_template.cs
@@ -85,7 +83,7 @@ Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki örnekte, bir sınıf adlı **şablon** C# içinde oluşturulan ve bir DLL olarak dağıtılmış. Kullanan Visual C++ programında **şablon** sınıfı **__tanımlayıcı** anahtar sözcüğü gizlendiğinden olgu, **şablon** standart bir C++ anahtar sözcüğüdür.
+Aşağıdaki örnekte, bir sınıf adlı **şablon** C# içinde oluşturulan ve bir DLL olarak dağıtılmış. C + +/ kullanan CLI program **şablon** sınıfı **__tanımlayıcı** anahtar sözcüğü gizlendiğinden olgu, **şablon** standart bir C++ anahtar sözcüğüdür.
 
 ```cs
 // identifier_template.cs
@@ -108,5 +106,5 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)<br/>
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)

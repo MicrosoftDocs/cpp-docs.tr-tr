@@ -1,7 +1,7 @@
 ---
-title: Olay (C++ bileşen uzantıları) | Microsoft Docs
+title: Olay (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -18,14 +18,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f001f61a9425a064d3b899beb6cbb689471da5bf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 85a3e2cb92df4396f607db920c3dfd280530c7e9
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442597"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328512"
 ---
-# <a name="event--c-component-extensions"></a>olay (C++ Bileşen Uzantıları)
+# <a name="event--ccli-and-ccx"></a>Olay (C + +/ CLI ve C + +/ CX)
 
 **Olay** anahtar sözcüğü bildiren bir *olay*, kayıtlı aboneleri için bir bildirim olduğu (*olay işleyicileri*), ilgilendiğiniz bir sorun oluştu.
 
@@ -282,4 +282,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)

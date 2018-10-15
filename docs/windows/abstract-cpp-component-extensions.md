@@ -1,7 +1,7 @@
 ---
-title: soyut (C++ bileşen uzantıları) | Microsoft Docs
+title: soyut (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -18,14 +18,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 463848ea5f01bf232850d548c9f4255c07409254
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 78a5b42de6b0ac54d060bb6369566aa446863289
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611005"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328200"
 ---
-# <a name="abstract--c-component-extensions"></a>soyut (C++ Bileşen Uzantıları)
+# <a name="abstract--ccli-and-ccx"></a>soyut (C + +/ CLI ve C + +/ CX)
 
 **Soyut** anahtar sözcüğü ya da bildirir:
 
@@ -37,12 +37,9 @@ ms.locfileid: "42611005"
 
 ### <a name="syntax"></a>Sözdizimi
 
-```cpp
-      class-declaration
-      class-identifier
-      abstract {}
-virtualreturn-typemember-function-identifier() abstract ;
-```
+*sınıf-bildirimi* *sınıf tanımlayıcısı* **soyut {}**
+
+**Sanal** *dönüş türü* *üye işlev tanımlayıcı* **soyut ();**
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -115,4 +112,4 @@ public:
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)

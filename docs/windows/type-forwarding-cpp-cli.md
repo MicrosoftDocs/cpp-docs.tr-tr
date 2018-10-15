@@ -1,7 +1,7 @@
 ---
 title: Tür iletme (C + +/ CLI) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,28 +15,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 806003e33e60b5146bdd722fa5248011cd4939c0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7fe70de2503134bf76f5e1c7099773737cc153f8
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396559"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328343"
 ---
 # <a name="type-forwarding-ccli"></a>Tür İletme (C++/CLI)
 
 *Tür iletme* şekilde derleme A'ya kullanan istemcileri yeniden derlemenize gerek yoktur, bir tür başka bir derlemeye (derleme B), bir derlemeye (a derlemesi) taşımanızı sağlar
 
-## <a name="all-platforms"></a>Tüm Platformlar
-
-Bu özellik tüm çalışma zamanları desteklenmiyor.
-
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
 Bu özellik, Windows çalışma zamanı'nda desteklenmiyor.
-
-### <a name="requirements"></a>Gereksinimler
-
-Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -44,7 +36,7 @@ Aşağıdaki kod örneği, tür iletme kullanma işlemini gösterir.
 
 ### <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 #using "new.dll"
 [assembly:TypeForwardedTo(type::typeid)];
 ```
@@ -97,7 +89,7 @@ Bunu, bir tür tanımı A.dll derlemesi oluşturmak için kullanılan bir kaynak
 
 3. Silme `MyClass` tanımından A.dll oluşturup aşağıdakiyle değiştirin kullanılan kaynak kodu yazın:
 
-    ```
+    ```cpp
     #using "B.dll"
     [assembly:TypeForwardedTo(MyClass::typeid)];
     ```

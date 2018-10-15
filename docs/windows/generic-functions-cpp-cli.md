@@ -1,7 +1,7 @@
 ---
 title: Genel işlevler (C + +/ CLI) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b8c51b3468a636335a74b8a4206a6b533d3a200b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0d687dfbee48105001d3be04fd4918b9889e2d04
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398865"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327706"
 ---
 # <a name="generic-functions-ccli"></a>Genel İşlevler (C++/CLI)
 
@@ -91,7 +91,7 @@ Tür parametresi tanımlayıcılarına yönlendirebiliriz Yöntemin gövdesi.
 
 Genel tür parametresi ile bildirilen işlevlerle genel işlevlerdir. Bunlar, bir sınıf veya yapı veya tek başına işlevleri yöntemleri olabilir. Tek bir genel bildirimi, genel tür parametresi için farklı bir gerçek tür değiştirmedeki yalnızca farklı işlevler ailesini örtük olarak bildiriyor.
 
-Visual C++'da, sınıf veya yapı oluşturucuları genel tür parametreleri ile bildirilemez.
+Genel tür parametreleri ile bir sınıf veya yapı Oluşturucu bildirilemez.
 
 Çağrıldığında, genel tür parametresi geçerli bir tür tarafından değiştirilir. Gerçek tür açıkça bir şablonu işlev çağrısı için benzer bir sözdizimi kullanarak açılı köşeli ayraçlar içindeki belirtilebilir. Tür parametreleri çağrılırsa, derleyici işlev çağrısında belirtilen parametreler gerçek türünden türetme dener. Kullanılan parametreler hedeflenen tür bağımsız değişkeni anlaşılamıyor, derleyici bir hata rapor eder.
 
@@ -193,5 +193,5 @@ My function returned a string: Hello generic functions!
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [Genel Türler](../windows/generics-cpp-component-extensions.md)

@@ -17,16 +17,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d0b305e928fec58833c4aac3f5625783aa2cb9ef
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 431ca9e88e644bd7a7c38f9ab4a1c3faeab6f9bb
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48790033"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328408"
 ---
 # <a name="attributes-alphabetical-reference"></a>Öznitelikler Alfabetik Başvurusu
 
-Aşağıdaki öznitelikler, Visual C++'da kullanılabilir.
+Aşağıdaki öznitelikler Microsoft C++ derleyicisinde kullanılabilir:
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
@@ -37,12 +37,12 @@ Aşağıdaki öznitelikler, Visual C++'da kullanılabilir.
 |[attribute](attribute.md)|Özel bir öznitelik oluşturmanıza olanak sağlar.|
 |[bindable](bindable.md)|Özelliğin veri bağlamayı desteklediğini belirtir.|
 |[call_as](call-as.md)|Uzak bir işleve eşlenmesi nonremotable işlevi sağlar.|
-|[Servis talebi](case-cpp.md)|İle kullanılan [switch_type](switch-type.md) UNION özniteliği.|
+|[case](case-cpp.md)|İle kullanılan [switch_type](switch-type.md) UNION özniteliği.|
 |[coclass](coclass.md)|COM arabirimi uygulayan bir COM nesnesi oluşturur.|
 |[com_interface_entry](com-interface-entry-cpp.md)|Bir arabirim giriş için bir COM eşlemesi ekler.|
 |[control](control.md)|Kullanıcı tanımlı tür bir denetimi olduğunu belirtir.|
 |[cpp_quote](cpp-quote.md)|Belirtilen dizeyi tırnak karakterleri olmadan oluşturulan üst bilgi dosyasına yayar.|
-|[Özel](custom-cpp.md)|Kendi özniteliklerine tanımlamanızı sağlar.|
+|[custom](custom-cpp.md)|Kendi özniteliklerine tanımlamanızı sağlar.|
 |[db_accessor](db-accessor.md)|Sütunları satır kümesinde bağlar ve bunların karşılık gelen erişimci eşlenir bağlar.|
 |[db_column](db-column.md)|Belirtilen sütun, satır kümesine bağlar.|
 |[db_command](db-command.md)|OLE DB komutu yürütür.|
@@ -73,22 +73,22 @@ Aşağıdaki öznitelikler, Visual C++'da kullanılabilir.
 |[idl_quote](idl-quote.md)|Öznitelikleri kullanmanıza olanak tanır veya Visual C++'ın geçerli sürümünde desteklenmeyen IDL oluşturur.|
 |[iid_is](iid-is.md)|Bir arabirim işaretçisi tarafından işaret edilen COM arabirimi Laboratuvardaki belirtir.|
 |[immediatebind](immediatebind.md)|Veritabanı veri bağlama nesnesinin bir özelliği yapılan tüm değişikliklerin hemen bildirileceğini belirtir.|
-|[Uygulayan](implements-cpp.md)|IDL coclass'ı üyesi olmaya zorlanıp dağıtma arabirimleri belirtir.|
+|[implements](implements-cpp.md)|IDL coclass'ı üyesi olmaya zorlanıp dağıtma arabirimleri belirtir.|
 |[implements_category](implements-category.md)|Sınıfı için uygulanan bir bileşen kategorilerini belirtir.|
 |[import](import.md)|Ana .idl dosyanızdan başvurmak istediğiniz tanımlarını içeren başka bir .idl, .odl veya üst bilgi dosyasını belirtir.|
 |[importidl](importidl.md)|Belirtilen .idl dosyası oluşturulan .idl dosyasına ekler.|
 |[importlib](importlib.md)|Zaten başka bir tür kitaplığına oluşturulan tür kitaplığı için kullanılabilir derlenmiştir türleri sağlar.|
 |[in](in-cpp.md)|Bir parametrenin çağıran yordamdan çağrılan yordama geçirileceğini gösterir.|
-|[İçerir](include-cpp.md)|Oluşturulan .idl dosyasına eklenecek bir veya daha fazla üst bilgi dosyaları belirtir.|
+|[include](include-cpp.md)|Oluşturulan .idl dosyasına eklenecek bir veya daha fazla üst bilgi dosyaları belirtir.|
 |[includelib](includelib-cpp.md)|Oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası neden olur.|
 |[last_is](last-is.md)|Aktarılacak olan son dizi öğenin dizinini belirtir.|
 |[lcid](lcid.md)|Bir işlev için bir yerel ayar tanımlayıcısı geçirmenize olanak tanır.|
 |[length_is](length-is.md)|Aktarılacak dizi öğelerinin sayısını belirtir.|
 |[library_block](library-block.md)|.İdl dosyasının kitaplığı bloğu içinde bir yapısı yerleştirir.|
 |[licensed](licensed.md)|Geçerli olduğu coclass'ı lisanslanır ve kullanarak örneği oluşturulmalıdır gösterir `IClassFactory2`.|
-|[Yerel](local-cpp.md)|MIDL derleyicisi arabirimi başlığı kullanıldığında bir üstbilgi Oluşturucu olarak kullanmanıza olanak tanır. Tek bir işlevde kullanıldığında, hiçbir saptamalar oluşturulan yerel bir yordam belirler.|
+|[local](local-cpp.md)|MIDL derleyicisi arabirimi başlığı kullanıldığında bir üstbilgi Oluşturucu olarak kullanmanıza olanak tanır. Tek bir işlevde kullanıldığında, hiçbir saptamalar oluşturulan yerel bir yordam belirler.|
 |[max_is](max-is.md)|Geçerli dizi dizini için maksimum değeri atar.|
-|[Modülü](module-cpp.md)|Kitaplık blok .idl dosyasında tanımlar.|
+|[module](module-cpp.md)|Kitaplık blok .idl dosyasında tanımlar.|
 |[ms_union](ms-union.md)|Nonencapsulated birleşimler ağ veri gösterimi hizalamasını denetler.|
 |[no_injected_text](no-injected-text.md)|Derleyici, özellik kullanımı sonucu olarak kod ekleme öğesinden engeller.|
 |[nonbrowsable](nonbrowsable.md)|Bir arabirim üyesi bir özellik tarayıcısında görüntülenmemelidir gösterir.|
@@ -97,7 +97,7 @@ Aşağıdaki öznitelikler, Visual C++'da kullanılabilir.
 |[object](object-cpp.md)|Özel bir arabirim tanımlar; özel öznitelik ile eşanlamlıdır.|
 |[odl](odl.md)|Arabirimdeki bir nesne Açıklama Dili (ODL) arabirim tanımlar.|
 |[oleautomation](oleautomation.md)|Bir arabirim otomasyon ile uyumlu olduğunu gösterir.|
-|[İsteğe bağlı](optional-cpp.md)|Bir üye işlev için isteğe bağlı bir parametre belirtir.|
+|[optional](optional-cpp.md)|Bir üye işlev için isteğe bağlı bir parametre belirtir.|
 |[out](out-cpp.md)|Çağrılan yordamdan çağıran yordama (sunucudan istemciye) döndürülen işaretçi parametrelerini tanımlar.|
 |[pointer_default](pointer-default.md)|Görünen üst düzey işaretçileri dışındaki tüm işaretçiler için varsayılan işaretçi öznitelik parametre listelerindeki belirtir.|
 |[pragma](pragma.md)|Belirtilen dizeyi tırnak karakterleri olmadan oluşturulan .idl dosyasına yayar.|
@@ -107,7 +107,7 @@ Aşağıdaki öznitelikler, Visual C++'da kullanılabilir.
 |[propputref](propputref.md)|Bir değer yerine başvurur bir özellik ayarı işlevi belirtir.|
 |[ptr](ptr.md)|Bir işaretçinin tam bir işaretçi olarak belirler.|
 |[public](public-cpp-attributes.md)|Bu gelen .idl dosyasında başvurulmuyor olsa bile bir typedef tür kitaplığına geçer sağlar.|
-|[Aralığı](range-cpp.md)|Bağımsız değişkenler veya değerleri çalışma zamanında ayarlanır alanlar için izin verilen değer aralığı belirtir.|
+|[range](range-cpp.md)|Bağımsız değişkenler veya değerleri çalışma zamanında ayarlanır alanlar için izin verilen değer aralığı belirtir.|
 |[rdx](rdx.md)|Oluşturur veya bir kayıt defteri anahtarı değiştirir.|
 |[readonly](readonly-cpp.md)|Bir değişkene atama yasaklar.|
 |[ref](ref-cpp.md)|Bir başvuru işaretçi tanımlar.|
@@ -118,26 +118,26 @@ Aşağıdaki öznitelikler, Visual C++'da kullanılabilir.
 |[retval](retval.md)|Üyenin dönüş değerini alan parametreyi belirler.|
 |[satype](satype.md)|Veri türü belirtir `SAFEARRAY`.|
 |[size_is](size-is.md)|Bellek boyutu boyutlu işaretçiler için ayrılan, boyutlandırılmış işaretçiler ve tek veya çok boyutlu diziler işaretçilere boyutu belirtir.|
-|[Kaynak](source-cpp.md)|Bir sınıf, özelliği veya yöntemi üyesi bir olay kaynağı olduğunu gösterir.|
+|[source](source-cpp.md)|Bir sınıf, özelliği veya yöntemi üyesi bir olay kaynağı olduğunu gösterir.|
 |[string](string-cpp.md)|Bildiren tek boyutlu **char**, **wchar_t**, `byte`, ya da eşdeğer bir dizi veya işaretçiyi gibi bir dizi gerekir kabul bir dize.|
 |[support_error_info](support-error-info.md)|Hata raporlama için hedef nesne destekler.|
 |[switch_is](switch-is.md)|İfade veya birleşim üyesi seçer birleşim discriminant davranan tanımlayıcısını belirtir.|
 |[switch_type](switch-type.md)|Birleşim discriminant kullanılan değişkenin türünü tanımlar.|
 |[synchronize](synchronize.md)|Bir yönteme erişimi eşitler.|
-|[İş parçacığı oluşturma](threading-cpp.md)|Bir COM nesnesi için iş parçacığı modelini belirtir.|
+|[threading](threading-cpp.md)|Bir COM nesnesi için iş parçacığı modelini belirtir.|
 |[transmit_as](transmit-as.md)|Hangi istemci ve sunucu uygulamaları işlemek, sunulan bir türü, iletilen türüyle ilişkilendirmek için derleyicinin sağlar.|
 |[uidefault](uidefault.md)|Tür bilgileri üyesi kullanıcı arabiriminde görüntülemek için varsayılan üye olduğunu gösterir.|
-|[benzersiz](unique-cpp.md)|Bir benzersiz işaretçi belirtir.|
+|[unique](unique-cpp.md)|Bir benzersiz işaretçi belirtir.|
 |[usesgetlasterror](usesgetlasterror.md)|Bu işlev çağrılırken bir hata ise çağıranın sonra çağırabilirsiniz çağıran söyler `GetLastError` hata kodu alınamıyor.|
 |[uuid](uuid-cpp-attributes.md)|Bir sınıf veya arabirim için benzersiz Kimliğini belirtir.|
 |[v1_enum](v1-enum.md)|Belirtilen listeden seçimli türü 16-bit varsayılan yerine bir 32-bit varlık olarak iletilmesi yönlendirir.|
 |[vararg](vararg.md)|İşlev, değişken sayıda bağımsız değişken yapmanızı belirtir.|
-|[Sürüm](version-cpp.md)|Belirli bir sürüm arasında bir arabirim veya sınıf birden çok sürümünü tanımlar.|
+|[version](version-cpp.md)|Belirli bir sürüm arasında bir arabirim veya sınıf birden çok sürümünü tanımlar.|
 |[vi_progid](vi-progid.md)|ProgID sürümden bağımsız biçimi belirtir.|
 |[wire_marshal](wire-marshal.md)|Bir uygulamaya özel veri türü yerine iletim için kullanılacak olan veri türünü belirtir.|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[COM ve .NET için C++ öznitelikleri](cpp-attributes-com-net.md)<br/>
+[COM ve .NET için C++ Öznitelikleri](cpp-attributes-com-net.md)<br/>
 [Gruplara Göre Öznitelikler](attributes-by-group.md)<br/>
 [Kullanıma Göre Öznitelikler](attributes-by-usage.md)

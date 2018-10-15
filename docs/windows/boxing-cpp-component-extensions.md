@@ -1,7 +1,7 @@
 ---
-title: Kutulama (C++ bileşen uzantıları) | Microsoft Docs
+title: Kutulama (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,16 +15,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 92dc2032031fd0f3032db57b9eca8c723367da9e
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: b11ac2f6b640e42c14522b45fe0c3da89036ae24
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316724"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328018"
 ---
-# <a name="boxing--c-component-extensions"></a>Kutulama (C++ Bileşen Uzantıları)
+# <a name="boxing--ccli-and-ccx"></a>Kutulama (C + +/ CLI ve C + +/ CX)
 
-Visual C++ derleyicisi değer türleri olarak adlandırılan bir işlem nesneleri dönüştürebilirsiniz *kutulama*ve nesneler olarak adlandırılan bir işlem içindeki değer türleri için dönüştürme *kutudan çıkarma*.
+Değer türlerinin nesneleri dönüştürme çağrılır *kutulama*, ve değer türleri nesnelerin dönüştürme çağrılır *kutudan çıkarma*.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
@@ -86,7 +86,7 @@ Daha fazla bilgi için [kutulama (C + +/ CX)](https://msdn.microsoft.com/library
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-Değer türleri için kutuları artık Visual C++ derleyicisi <xref:System.Object>. Değer türlerine dönüştürmek için derleyici tarafından tanımlanan bir dönüştürme nedeniyle olası <xref:System.Object>.
+Değer türleri için derleyici kutuları <xref:System.Object>. Değer türlerine dönüştürmek için derleyici tarafından tanımlanan bir dönüştürme nedeniyle olası <xref:System.Object>.
 
 Nesne olarak kabul edilmesi için kutulama ve kutudan çıkarma etkinleştir değer türleri. Hem yapı türleri hem de Int gibi yerleşik türler dahil olmak üzere, değer türleri için ve türünden dönüştürülebilir <xref:System.Object>.
 
@@ -200,4 +200,4 @@ in func2(System::ValueType^)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)

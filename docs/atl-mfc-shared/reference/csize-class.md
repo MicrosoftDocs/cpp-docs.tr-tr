@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa840b2fd6e143715c924d0f7ac67e78eb8306a4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3ca548fec9a70a04b0bdb9a5169021fc43f149eb
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417552"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328551"
 ---
 # <a name="csize-class"></a>CSize sınıfı
 
@@ -100,7 +100,7 @@ Kümeleri `cy` üyesi için `CSize`.
 [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya `CSize` başlatmak için kullanılan nesne `CSize`.
 
 *initPt*  
-[NOKTASI](../../mfc/reference/point-structure1.md) yapısı veya `CPoint` başlatmak için kullanılan nesne `CSize`.
+[NOKTASI](../../mfc/reference/point-structure.md) yapısı veya `CPoint` başlatmak için kullanılan nesne `CSize`.
 
 *dwSize*  
 DWORD başlatmak için kullanılan `CSize`. Düşük düzey sözcük `cx` üyesi ve dwpoint `cy` üyesi.

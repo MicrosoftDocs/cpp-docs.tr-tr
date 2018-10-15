@@ -1,7 +1,7 @@
 ---
 title: / Qspectre | Microsoft Docs
 ms.custom: ''
-ms.date: 09/24/2018
+ms.date: 10/12/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ed4b84ab761653dde4da6adcd14ec8e77334688
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 0baba6503d1d5b4e382347f4f4d9680b11f954ce
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821653"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328525"
 ---
 # <a name="qspectre"></a>/ Qspectre
 
@@ -32,7 +32,7 @@ Derleyici belirli Spectre değişkeni 1 güvenlik açıklarını gidermek için 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Qspectre** seçeneği, Visual Studio 2017 sürüm 15.5.5 kullanılabilir ve daha sonra ve Visual Studio 2015 güncelleştirme 3'ten [KB 4338871](https://support.microsoft.com/en-us/help/4338871/visual-studio-2015-update-3-spectre-variant-1-toolset-qspectre). Belirli azaltmak için yönergeler derleyiciye neden [Spectre güvenlik açıklarını](https://spectreattack.com/spectre.pdf). Olarak adlandırılan bu güvenlik açıklarına *kurgusal yürütme yan kanal saldırıları*, çok sayıda işletim sistemleri ve Intel, AMD, işlemcilerini dahil olmak üzere modern işlemciler etkiler ve ARM.
+**/Qspectre** seçeneği, Visual Studio 2017 sürüm 15.5.5 kullanılabilir ve daha sonra ve Visual Studio 2015 güncelleştirme 3'ten [KB 4338871](https://support.microsoft.com/help/4338871/visual-studio-2015-update-3-spectre-variant-1-toolset-qspectre). Belirli azaltmak için yönergeler derleyiciye neden [Spectre güvenlik açıklarını](https://spectreattack.com/spectre.pdf). Olarak adlandırılan bu güvenlik açıklarına *kurgusal yürütme yan kanal saldırıları*, çok sayıda işletim sistemleri ve Intel, AMD, işlemcilerini dahil olmak üzere modern işlemciler etkiler ve ARM.
 
 **/Qspectre** seçeneği varsayılan olarak kapalıdır.
 
@@ -84,7 +84,7 @@ Daha fazla ayrıntı için lütfen resmi bakın [kurgusal yürütme yan kanal g�
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

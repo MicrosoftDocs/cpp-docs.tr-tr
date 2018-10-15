@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 721dd285760027c35ae93d89ec5bb3fde6e9ba11
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 86dc19600dc8cbb452db585993dec85c3f7b8591
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413458"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328395"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog sınıfı
 
@@ -272,7 +272,7 @@ void GetMargins(
 ### <a name="parameters"></a>Parametreler
 
 *lpRectMargins*<br/>
-İşaretçi bir [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) (1/1000 inç veya 1/100 mm) şu anda seçili yazıcıya yazdırma kenar boşluklarını tanımlayan nesne. Bu dikdörtgenin içindeki ilgilenmiyorsanız Bu parametre için NULL geçirin.
+İşaretçi bir [RECT](rect-structure.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) (1/1000 inç veya 1/100 mm) şu anda seçili yazıcıya yazdırma kenar boşluklarını tanımlayan nesne. Bu dikdörtgenin içindeki ilgilenmiyorsanız Bu parametre için NULL geçirin.
 
 *lpRectMinMargins*<br/>
 İşaretçi bir `RECT` yapısı veya `CRect` (1/1000 inç veya 1/100 mm) şu anda seçili yazıcı minimum yazdırma kenar boşluklarını tanımlayan nesne. Bu dikdörtgenin içindeki ilgilenmiyorsanız Bu parametre için NULL geçirin.
@@ -351,7 +351,7 @@ Yazıcı cihaz bağlamı işaretçisi.
 - WM_PSD_YAFULLPAGERECT alanı için bir dönüş adresi gösterimi. Bu alan örnek sayfası alanın kenarlarına genişletir.
 
 *lpRect*<br/>
-İşaretçi bir [CRect](../../atl-mfc-shared/reference/crect-class.md) veya [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) çizim alanının koordinatları içeren nesne.
+İşaretçi bir [CRect](../../atl-mfc-shared/reference/crect-class.md) veya [RECT](rect-structure.md) çizim alanının koordinatları içeren nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

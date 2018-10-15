@@ -1,7 +1,7 @@
 ---
-title: değişmez değer (C++ bileşen uzantıları) | Microsoft Docs
+title: değişmez değer (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -18,14 +18,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 76a57261b28679c4f05b677dc7b49008535c921b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8168b3cd981bb288df35659ffd3520a7c8597d1e
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596452"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328079"
 ---
-# <a name="literal-c-component-extensions"></a>değişmez değer (C++ Bileşen Uzantıları)
+# <a name="literal-ccli-and-ccx"></a>değişmez değer (C + +/ CLI ve C + +/ CX)
 
 Bir değişken (veri üyesi) olarak işaretlenmiş **değişmez değer** içinde bir **/CLR** derleme yerel denk olan bir **statik const** değişkeni.
 
@@ -137,4 +137,4 @@ Derleyici seçeneği: `/clr`
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)

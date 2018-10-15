@@ -1,7 +1,7 @@
 ---
 title: Genel türleri kullanma (C + +/ CLI) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,16 +15,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1c17e8212b01ad2cf80c74f80de26209d00f6d1a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6bccfc4ab3e5df690c6fdb5ddb04c458756a4cd7
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589862"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327758"
 ---
 # <a name="consuming-generics-ccli"></a>Genel Türleri Kullanma (C++/CLI)
 
-Bir .NET dilinde yazılan genel türler, diğer .NET dillerinde kullanılabilir. Şablonları, derlenmiş derlemede genel hala genel kalır. Bu nedenle, bir genel tür farklı bir derleme ve hatta genel tür içinde tanımlanan derleme farklı bir dilde örneği.
+Genel türler bir .NET (veya UWP) dilde yazılmış diğer dillerde kullanılabilir. Şablonları, derlenmiş derlemede genel hala genel kalır. Bu nedenle, bir genel tür farklı bir derleme ve hatta genel tür içinde tanımlanan derleme farklı bir dilde örneği.
 
 ## <a name="example"></a>Örnek
 

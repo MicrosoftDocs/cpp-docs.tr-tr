@@ -1,7 +1,7 @@
 ---
-title: Mühürlü (C++ bileşen uzantıları) | Microsoft Docs
+title: sealed (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -18,19 +18,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 134ee819edc0698c4ffa067d38b715968f22590f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 211428335473f677f520ee14ad688e5ffcbda8fd
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439568"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328005"
 ---
-# <a name="sealed--c-component-extensions"></a>mühürlü (C++ Bileşen Uzantıları)
+# <a name="sealed--ccli-and-ccx"></a>sealed (C + +/ CLI ve C + +/ CX)
 
 **korumalı** sanal üyesi geçersiz kılınamaz gösteren bir bağlama duyarlı anahtar sözcük başvuru sınıfları için veya bir türü temel tür olarak kullanılamaz.
 
 > [!NOTE]
-> ISO C ++ 11 standart dil sahip [son](../cpp/final-specifier.md) Visual Studio'da desteklendiğine anahtar sözcüğü. Kullanım **son** standart sınıfları ve **korumalı** ref sınıfları.
+> Tanıtılan ISO C ++ 11 standart dil [son](../cpp/final-specifier.md) anahtar sözcüğü. Kullanım **son** standart sınıfları ve **korumalı** ref sınıfları.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
@@ -53,7 +53,7 @@ virtual return-type identifier() sealed {...};
 
 İlk söz dizimi örnekte, bir sınıfın korumalı. İkinci örnekte, korumalı bir sanal işlev.
 
-**Korumalı** anahtar sözcüğü, yerel hedefler için ve Windows çalışma zamanı ve ortak dil çalışma zamanı (CLR) için geçerli. Daha fazla bilgi için [geçersiz kılma tanımlayıcıları ve yerel derlemeler](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
+Kullanım **korumalı** başvuru sınıfları ve bunların sanal üye işlevleri için anahtar sözcüğü. Daha fazla bilgi için [geçersiz kılma tanımlayıcıları ve yerel derlemeler](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
 
 Bir tür kullanarak korumalı olmadığını derleme zamanında algılayabilir `__is_sealed(type)` türü niteliğine. Daha fazla bilgi için [tür özellikleri için derleyici desteği](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).
 
@@ -108,7 +108,7 @@ public:
    // the following override generates a compiler error
    virtual void g() override {
       System::Console::WriteLine("Y::g override of I1::g");
-   } 
+   }
    */
 };
 
@@ -150,4 +150,4 @@ public:
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)

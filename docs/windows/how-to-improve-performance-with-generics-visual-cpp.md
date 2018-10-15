@@ -1,7 +1,7 @@
 ---
-title: 'Nasıl yapılır: (Visual C++) türlerle performansı artırma | Microsoft Docs'
+title: 'Nasıl yapılır: türlerle performansı artırma (C + +/ CLI) | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -18,14 +18,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9f946970f78b432774a5e4c7ba20fd15a00ae654
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: ead9491e7b5302cadfa59eb7d98215fb3c41eb09
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318532"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327829"
 ---
-# <a name="how-to-improve-performance-with-generics-visual-c"></a>Nasıl yapılır: Genel Türlerle Performansı Artırma (Visual C++)
+# <a name="how-to-improve-performance-with-generics-ccli"></a>Nasıl yapılır: türlerle performansı artırma (C + +/ CLI)
 
 Genel türler ile bir tür parametresine bağlı yeniden kullanılabilir kod oluşturabilirsiniz. Gerçek türü tür parametresi, istemci kodu tarafından çağrılan kadar ertelenir. Genel türler hakkında daha fazla bilgi için bkz. [genel türler](../windows/generics-cpp-component-extensions.md).
 

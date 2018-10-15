@@ -15,18 +15,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 39dac1bda25a66ecd67feac167e0029931a204e0
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 49e298af793655bb3ea3854909a16dd4db03c6a3
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789993"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328187"
 ---
 # <a name="attributes-by-usage"></a>Kullanıma Göre Öznitelikler
 
 Bu konu, özniteliklere göre uygulandıkları C++ Dil öğelerini listeler.
 
-Öznitelik özniteliğin kapsam içinde değil bir Visual C++ öğesi önceyse, öznitelik blok açıklama olarak kabul edilir.
+Öznitelik özniteliğin kapsam içinde değil bir öğe önceyse, öznitelik blok açıklama olarak kabul edilir.
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
@@ -39,7 +39,7 @@ Bu konu, özniteliklere göre uygulandıkları C++ Dil öğelerini listeler.
 |[Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)|C++ anahtar sözcükleri için geçerlidir.|
 |[Dizi Öznitelikleri](array-attributes.md)|Diziler için geçerlidir veya `SAFEARRAY`s.|
 |[Tek Başına Öznitelikler](stand-alone-attributes.md)|Bir kod satırı gibi çalışır, ancak C++ anahtar sözcüğü çalışmaz. Tek başına öznitelik deyimleri noktalı virgül satırın sonunda gerektirir.|
-|[Özel öznitelikler](custom-attributes-cpp.md)|Meta verileri genişletme izin verir.|
+|[Özel Öznitelikler](custom-attributes-cpp.md)|Meta verileri genişletme izin verir.|
 
 ## <a name="module-attributes"></a>Modül Öznitelikleri
 Aşağıdaki özniteliği için yalnızca uygulanabilir [Modülü](module-cpp.md) özniteliği.
@@ -55,7 +55,7 @@ Aşağıdaki öznitelikler uygulamak [arabirimi (veya __interface)](../../cpp/in
 |Öznitelik|Açıklama|
 |---------------|-----------------|
 |[async_uuid](async-uuid.md)|COM arabirimi zaman uyumlu ve zaman uyumsuz sürümlerini tanımlamak için MIDL derleyicisi yönergelerinin sağlandığı UUID belirtir.|
-|[Özel](custom-cpp.md)|Kendi özniteliklerine tanımlamanızı sağlar.|
+|[custom](custom-cpp.md)|Kendi özniteliklerine tanımlamanızı sağlar.|
 |[dispinterface](dispinterface.md)|Bir arabirim gönderme arabirimi olarak .idl dosyasına yerleştirir.|
 |[dual](dual.md)|Bir arabirim çift arabirim .idl dosyasına yerleştirir.|
 |[export](export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.|
@@ -66,7 +66,7 @@ Aşağıdaki öznitelikler uygulamak [arabirimi (veya __interface)](../../cpp/in
 |[helpstringdll](helpstringdll.md)|Belge dize arama (yerelleştirme) gerçekleştirmek için kullanılacak DLL'in adını belirtir.|
 |[hidden](hidden.md)|Öğe var ancak kullanıcıya dayalı tarayıcıda görüntülenmemesi gerektiğini belirtir.|
 |[library_block](library-block.md)|.İdl dosyasının kitaplığı bloğu içinde bir yapısı yerleştirir.|
-|[Yerel](local-cpp.md)|MIDL derleyicisi arabirimi başlığı kullanıldığında bir üstbilgi Oluşturucu olarak kullanmanıza olanak tanır. Tek bir işlevde kullanıldığında, hiçbir saptamalar oluşturulan yerel bir yordam belirler.|
+|[local](local-cpp.md)|MIDL derleyicisi arabirimi başlığı kullanıldığında bir üstbilgi Oluşturucu olarak kullanmanıza olanak tanır. Tek bir işlevde kullanıldığında, hiçbir saptamalar oluşturulan yerel bir yordam belirler.|
 |[nonextensible](nonextensible.md)|Belirten `IDispatch` uygulaması yalnızca özellikleri içerir ve yöntemleri arabirimi açıklamasında listelenir ve çalışma zamanında ek üyeleriyle genişletilemez. Bu öznitelik yalnızca geçerli bir [çift](dual.md) arabirimi.|
 |[odl](odl.md)|Arabirimdeki bir nesne Açıklama Dili (ODL) arabirim tanımlar.|
 |[object](object-cpp.md)|Özel bir arabirim tanımlar.|
@@ -89,6 +89,6 @@ Değil belirtirken [UUID](uuid-cpp-attributes.md) özniteliği ve farklı öznit
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[COM ve .NET için C++ öznitelikleri](cpp-attributes-com-net.md)<br/>
+[COM ve .NET için C++ Öznitelikleri](cpp-attributes-com-net.md)<br/>
 [Gruplara Göre Öznitelikler](attributes-by-group.md)<br/>
 [Öznitelikler Alfabetik Başvurusu](attributes-alphabetical-reference.md)

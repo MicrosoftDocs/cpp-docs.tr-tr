@@ -1,7 +1,7 @@
 ---
-title: Genel türler ve temsilciler (Visual C++) | Microsoft Docs
+title: Genel türler ve temsilciler (C + +/ CLI) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -16,14 +16,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f8a58e26b571c119d45cb981c582ebec335eface
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4d63d7620aa4d2cb83b954494172da9db55f6a2e
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591008"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328226"
 ---
-# <a name="generics-and-templates-visual-c"></a>Genel Türler ve Temsilciler (Visual C++)
+# <a name="generics-and-templates-ccli"></a>Genel türler ve temsilciler (C + +/ CLI)
 
 Genel türler ve temsilciler parametreli türler için destek sağlayan her iki dil özellikleridir. Ancak, farklıdır ve farklı kullanır sahip. Bu konu, pek çok fark genel bir bakış sağlar.
 
@@ -61,7 +61,7 @@ Genel türler temel fark, şablonları ve genel türler birleştiren uygulamalar
 
 Aşağıdaki örnek şablonları ve genel türler birlikte kullanarak basit bir örneğini gösterir. Bu örnekte, Şablon sınıfı için genel tür parametresi üzerinden geçirir. Ters mümkün değildir.
 
-Bu deyim, bir Visual C++ derleme için yerel bir şablon kod ile var olan bir genel API oluşturmak istediğinizde veya şablon olmayan supporte belirli özelliklerden yararlanmak için genel tür için fazladan bir Parametreleştirme katmanı eklemek, ihtiyacınız olduğunda kullanılabilir genel türler d.
+Bu deyim, var olan bir genel API C + yerel şablon kod ile oluşturmak istediğinizde kullanılan +/ CLI bütünleştirilmiş koduna veya belirli şablonları özelliklerinden olmayacağına Parametreleştirme fazladan bir katmanı için genel bir tür eklemek, ihtiyacınız olduğunda, b desteklenmiyor y genel türler.
 
 ### <a name="code"></a>Kod
 

@@ -1,7 +1,7 @@
 ---
-title: Kullanıcı tanımlı öznitelikler (C++ bileşen uzantıları) | Microsoft Docs
+title: Kullanıcı tanımlı öznitelikler (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 10/02/2018
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -16,26 +16,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3c2f5568b067c119bfa65744290c39d7ca577072
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 004c4c30c6e7e75f626e1ac87c09cb0a87f1c8cc
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789234"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328447"
 ---
-# <a name="user-defined-attributes--c-component-extensions"></a>Kullanıcı Tanımlı Öznitelikler (C++ Bileşen Uzantıları)
+# <a name="user-defined-attributes--ccli-and-ccx"></a>Kullanıcı tanımlı öznitelikler (C + +/ CLI ve C + +/ CX)
 
-Özel öznitelik meta verileri bir arabirimi, sınıf veya yapı, yöntemi, parametre veya sabit listesi genişletmenizi sağlar.
-
-## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
-
-Tüm çalışma zamanları, özel öznitelikler destekler.
+C + +/ CLI ve C + +/ CX bir arabirimi, sınıf veya yapı, yöntemi, parametre veya sabit listesi meta verileri genişletme platforma özel öznitelikler oluşturmak etkinleştirin. Bu öznitelikler kodundan [standart C++ öznitelikleri](../cpp/attributes.md).
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-C + +/ CX öznitelikleri yalnızca özellikleri destekler, ancak oluşturucular veya yöntemleri öznitelik değil.
-
-### <a name="remarks"></a>Açıklamalar
+C + uygulayabileceğiniz +/ CX öznitelikleri özellikleri, ancak oluşturucular veya yöntemleri.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -43,17 +37,11 @@ Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-Özel öznitelikler, bir yönetilen öğenin meta verileri genişletme sağlar. Daha fazla bilgi için [öznitelikleri](/dotnet/standard/attributes/index).
-
-### <a name="remarks"></a>Açıklamalar
-
 İçinde sunulan bilgileri değiştirmek için bu konuda gösterilen sözdizimi ve bilgi yöneliktir [özniteliği](attributes/attribute.md).
 
 Özel bir öznitelik türü tanımlama ve yaparak tanımlayabilirsiniz <xref:System.Attribute> bir temel sınıf türü için ve isteğe bağlı olarak uygulama <xref:System.AttributeUsageAttribute> özniteliği.
 
-Örneğin, içinde Microsoft işlem sunucusu (MTS) 1.0, işlemler, eşitleme ile ilgili davranışı Yük Dengeleme ve benzeri ODL özel özniteliğini kullanarak tür kitaplığına eklenen özel GUID'leri aracılığıyla belirtildi. Bu nedenle, bir istemci bir MTS sunucusunun, tür kitaplığı okuyarak özelliklerini belirleyebilir. .NET Framework tür kitaplığının analog meta verileri ve analog ODL özel özniteliğinin özel öznitelikler. Ayrıca, tür kitaplığı okuma, yansıma türlerini kullanarak benzerdir.
-
-Daha fazla bilgi için bkz:
+Daha fazla bilgi için bkz.:
 
 - [Öznitelik hedefleri](attribute-targets-cpp-component-extensions.md)
 
@@ -216,4 +204,4 @@ ref struct B {};
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

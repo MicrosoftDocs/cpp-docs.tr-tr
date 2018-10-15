@@ -1,7 +1,7 @@
 ---
 title: pin_ptr (C + +/ CLI) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: de7f4c94ec0d9cb5a9a57315ebda015b7737132c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d4d8fcc0b1527483e0802eaf88339670abb8ed3c
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392768"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328473"
 ---
 # <a name="pinptr-ccli"></a>pin_ptr (C++/CLI)
 

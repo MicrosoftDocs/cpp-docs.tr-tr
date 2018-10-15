@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 566164f40f8795c8402b04c9c25e13dda036961d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 50295c9d296449e36ed4a305b568d2e0aaed10a3
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765443"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327914"
 ---
 # <a name="classes-shared-by-mfc-and-atl"></a>MFC ve ATL tarafından paylaşılan sınıflar
 
@@ -33,8 +33,8 @@ MFC ve ATL arasında paylaşılan sınıfları aşağıdaki tabloda listelenmekt
 |[Cımage](../../atl-mfc-shared/reference/cimage-class.md)|Yük ve görüntüleri JPEG, BMP, GIF ve da Taşınabilir Ağ Grafikleri (PNG) biçimlerde kaydetme olanağı dahil olmak üzere Gelişmiş bit eşlem desteği sağlar.|atlimage.h|
 |[COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md)|OLE Otomasyonu nesnesi etkin kullanılan tarih veri türünü kapsüller.|atlcomtime.h|
 |[COleDateTimeSpan](../../atl-mfc-shared/reference/coledatetimespan-class.md)|Göreli bir zaman, bir zaman aralığını temsil eder.|atlcomtime.h|
-|[CPoint](../../atl-mfc-shared/reference/cpoint-class.md)|Windows için benzer bir sınıf [noktası](../../mfc/reference/point-structure1.md) yönlendirmek üzere öğe işlevleri de içeren yapı `CPoint` ve `POINT` yapıları.|atltypes.h|
-|[CRect](../../atl-mfc-shared/reference/crect-class.md)|Bir sınıf için bir Windows benzer [RECT](../../mfc/reference/rect-structure1.md) yönlendirmek üzere öğe işlevleri de içeren yapı `CRect` nesneleri ve Windows `RECT` yapıları.|atltypes.h|
+|[CPoint](../../atl-mfc-shared/reference/cpoint-class.md)|Windows için benzer bir sınıf [noktası](../../mfc/reference/point-structure.md) yönlendirmek üzere öğe işlevleri de içeren yapı `CPoint` ve `POINT` yapıları.|atltypes.h|
+|[CRect](../../atl-mfc-shared/reference/crect-class.md)|Bir sınıf için bir Windows benzer [RECT](../../mfc/reference/rect-structure.md) yönlendirmek üzere öğe işlevleri de içeren yapı `CRect` nesneleri ve Windows `RECT` yapıları.|atltypes.h|
 |[CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md)|Temsil eden bir `CSimpleStringT` nesne.|atlsimpstr.h|
 |[CSize](../../atl-mfc-shared/reference/csize-class.md)|Göreli koordinat veya konum uygulayan Windows BOYUTU yapısına benzer bir sınıf.|atltypes.h|
 |[CStrBufT](../../atl-mfc-shared/reference/cstrbuft-class.md)|Otomatik kaynak Temizleme için sağlar `GetBuffer` ve `ReleaseBuffer` çağıran bir var olan `CStringT` nesne.|atlsimpstr.h|

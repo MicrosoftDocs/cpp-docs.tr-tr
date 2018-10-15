@@ -1,7 +1,7 @@
 ---
-title: Temsilci (C++ bileşen uzantıları) | Microsoft Docs
+title: delegate (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -18,14 +18,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 13ce7d2a35245716adc70b9e84532ea7d1a4a440
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2281dfb6648f9c4756800a0693f184ccaa7435d7
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432418"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327966"
 ---
-# <a name="delegate--c-component-extensions"></a>temsilci (C++ Bileşen Uzantıları)
+# <a name="delegate--ccli-and-ccx"></a>delegate (C + +/ CLI ve C + +/ CX)
 
 Bir işlev işaretçisi temsil eden bir tür bildirir.
 
@@ -131,7 +131,7 @@ Temsilciler hakkında daha fazla bilgi için bkz.
 
 - [Nasıl yapılır: Temsilcileri Tanımlama ve Kullanma (C++/CLI)](../dotnet/how-to-define-and-use-delegates-cpp-cli.md)
 
-- [Genel Temsilciler (Visual C++)](../windows/generic-delegates-visual-cpp.md)
+- [Genel temsilciler (C + +/ CLI)](../windows/generic-delegates-visual-cpp.md)
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -212,4 +212,4 @@ in static func3 11
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)

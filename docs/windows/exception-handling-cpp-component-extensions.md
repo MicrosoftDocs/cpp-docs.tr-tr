@@ -1,7 +1,7 @@
 ---
-title: Özel durum işleme (C++ bileşen uzantıları) | Microsoft Docs
+title: Özel durum işleme (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -20,14 +20,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2213266d281933c6a6a59775584532acaeb39d6e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7d070cc223f90f84bd52176ee7e50dbbfa441789
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412335"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328135"
 ---
-# <a name="exception-handling--c-component-extensions"></a>Özel Durum İşleme (C++ Bileşen Uzantıları)
+# <a name="exception-handling--ccli-and-ccx"></a>Özel durum işleme (C + +/ CLI ve C + +/ CX)
 
 İle derlenmiş uygulamaları `/ZW` derleyici seçeneği veya `/clr` ikisi de derleyici seçeneği *özel durumları* program yürütme sırasında beklenmeyen hataları işlemek için. Aşağıdaki konular ele özel durum işleme ya da C + +/ CX veya C + +/ CLI uygulamalarında.
 
@@ -36,7 +36,7 @@ ms.locfileid: "46412335"
 [Yönetilen Özel Durumları Kullanmaya İlişkin Temel Kavramlar](../dotnet/basic-concepts-in-using-managed-exceptions.md)<br/>
 Açıklar kullanarak ve özel durumları atma **deneyin**/**catch** engeller.
 
-[/ CLR altında özel durum işleme farkları](../dotnet/differences-in-exception-handling-behavior-under-clr.md)<br/>
+[Özel durum işleme/CLR altında farklılıkları](../dotnet/differences-in-exception-handling-behavior-under-clr.md)<br/>
 Standart davranış C++ özel durum işleme farkları açıklar.
 
 [finally](../dotnet/finally.md)<br/>
@@ -54,8 +54,8 @@ Tüm işlenmemiş özel durumları yakalamak nasıl gösterir.
 ## <a name="related-sections"></a>İlgili Bölümler
 
 [Özel Durum İşleme](../cpp/exception-handling-in-visual-cpp.md)<br/>
-Özel durum işlemeyi C++'da açıklanmaktadır.
+Standart C++ içinde özel durum işleme açıklar.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)

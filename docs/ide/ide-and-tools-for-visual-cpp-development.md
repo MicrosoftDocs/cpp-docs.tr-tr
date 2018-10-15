@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 310dc9b8e31f72fbd04c620987d9857932f7a0a1
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 31b9c0c8668ec16d84ad84627eb73a0f406eb21e
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821159"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328382"
 ---
 # <a name="ide-and-compiler-tools-for-visual-c-development"></a>IDE ve Visual C++ geliştirme derleme araçları
 
@@ -59,7 +59,7 @@ Programınız bir kullanıcı arabirimi varsa, hızlı bir şekilde bu düğmele
 
 ![Tasarımcı ve araç kutusu](media/vs2017-toolbox-designer.png "Tasarımcısı ve Visual Studio 2017 araç")
 
-Bir evrensel Windows platformu uygulaması için bir kullanıcı arabirimi tasarlama hakkında daha fazla bilgi için bkz. [tasarım ve UI](https://developer.microsoft.com/en-us/windows/design).
+Bir evrensel Windows platformu uygulaması için bir kullanıcı arabirimi tasarlama hakkında daha fazla bilgi için bkz. [tasarım ve UI](https://developer.microsoft.com/windows/design).
 
 Bir MFC uygulaması için bir kullanıcı arabirimi oluşturma hakkında daha fazla bilgi için bkz. [MFC Masaüstü uygulamaları](../mfc/mfc-desktop-applications.md). Win32 Windows programlar hakkında daha fazla bilgi için bkz: [Windows Masaüstü uygulamaları](../windows/windows-desktop-applications-cpp.md).
 

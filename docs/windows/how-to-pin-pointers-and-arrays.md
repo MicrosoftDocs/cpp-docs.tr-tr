@@ -1,7 +1,7 @@
 ---
 title: 'Nasıl yapılır: işaretçiler ve dizileri sabitleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0d6900a602f4173db738a6cc8060f156f79bc5eb
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7adf9d4d45b4acafd65adc27e28d8eb0639d32c8
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604992"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327901"
 ---
 # <a name="how-to-pin-pointers-and-arrays"></a>Nasıl yapılır: İşaretçiler ve Dizileri Sabitleme
 

@@ -1,7 +1,7 @@
 ---
-title: safe_cast (C++ bileşen uzantıları) | Microsoft Docs
+title: safe_cast (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -19,14 +19,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8d5a4f92e16c2d758fa5e2b88575b12d5710dd08
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 76d53a1322024f1a56477de4e4b58bcdb88930ad
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404221"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328486"
 ---
-# <a name="safecast-c-component-extensions"></a>safe_cast (C++ Bileşen Uzantıları)
+# <a name="safecast-ccli-and-ccx"></a>safe_cast (C + +/ CLI ve C + +/ CX)
 
 **Safe_cast** işlemi başarılı olursa, belirtilen tür olarak belirtilen bir ifade döndürür; Aksi durumda `InvalidCastException`.
 
@@ -37,11 +37,7 @@ ms.locfileid: "46404221"
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-[default]:: safe_cast<
-type-id
->(
-expression
-)  
+[default]:: safe_cast< type-id >( expression )  
 ```
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
@@ -51,11 +47,7 @@ expression
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-[default]:: safe_cast<
-type-id
->(
-expression
-)  
+[default]:: safe_cast< type-id >( expression )
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -115,11 +107,7 @@ Caught expected exception: InvalidCastException
 ### <a name="syntax"></a>Sözdizimi
 
 ```cpp
-[cli]:: safe_cast<
-type-id
->(
-expression
-)  
+[cli]:: safe_cast< type-id >( expression )  
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -132,7 +120,7 @@ Bir başvuru veya değer türü, bir değer türü veya başvuru veya değer tü
 
 ### <a name="remarks"></a>Açıklamalar
 
-İfade `safe_cast<` *türü kimliği*`>(`*ifade* `)` işlenen ifadesi türü kimlik türünde bir nesneye dönüştürür.
+İfade `safe_cast<` *türü kimliği*`>(`*ifade* `)` işlenen dönüştürür *ifade* türündebirnesneiçin*türü kimliği*.
 
 Derleyici kabul edileceği bir [static_cast](../cpp/static-cast-operator.md) kabul eder, birçok yerde bir **safe_cast**.  Ancak, **safe_cast** doğrulanabilir MSIL oluşturmak için garantili oysa bir **static_cast** doğrulanamayan MSIL'yi üretebilir.  Bkz: [saf ve doğrulanabilen kod (C + +/ CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) ve [Peverify.exe (PEVerify aracı)](/dotnet/framework/tools/peverify-exe-peverify-tool) doğrulanabilen kod hakkında daha fazla bilgi için.
 
@@ -188,4 +176,4 @@ Caught expected exception
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)

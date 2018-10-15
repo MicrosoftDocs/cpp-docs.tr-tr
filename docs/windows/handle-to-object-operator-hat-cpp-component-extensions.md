@@ -1,7 +1,7 @@
 ---
-title: Tanıtıcı nesne işleci (^) (C++ bileşen uzantıları) | Microsoft Docs
+title: Tanıtıcı nesne işleci (^) (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fa72b6ec2983c0d7b9850578e743d03b7e3946e3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d7fb74dcff370b314df5da5428ba3e406023acbe
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410864"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327979"
 ---
-# <a name="handle-to-object-operator---c-component-extensions"></a>İşlenecek Nesne İşleci (^) (C++ Bileşen Uzantıları)
+# <a name="handle-to-object-operator---ccli-and-ccx"></a>Tanıtıcı nesne işleci (^) (C + +/ CLI ve C + +/ CX)
 
 *Tanıtıcı Bildiricisi* (`^`, "hat" olarak okunur), tür [belirticisi](../cpp/overview-of-declarators.md) sistem bir nesne olduğunu belirlediğinde, bildirilen nesnenin otomatik olarak silinmesi gerektiğini ifade etmek için artık erişilebilir.
 
@@ -34,7 +34,7 @@ Tanıtıcı Bildiricisi ile bildirilen bir değişken, nesne işaretçisi gibi d
 
 Derleyici COM kullanan *başvuru sayımı* nesnenin artık kullanılıp kullanılmadığını ve silinebileceğini belirlemek için bir mekanizma. Bir Windows çalışma zamanı arabiriminden elde edilen nesnenin aslında bir COM nesnesi olduğundan, bu mümkündür. Nesne oluşturulan veya kopyalanan ya da azaltılmasına olduğunda nesnesi null ya da gelecek ayarlandığında başvuru sayısının artırılması kapsamı dışındadır. Başvuru sayısı sıfır olursa, nesne otomatik olarak ve hemen silinir.
 
-Tanıtıcı bildiricisinin yararı COM, açıkça sıkıcı ve hata yapmaya açık bir işlem bir nesne başvuru sayımını yönetmenizin gerekli olmasıdır. Diğer bir deyişle başvuru sayısını artırmak için nesnenin AddRef() ve Release() yöntemlerini çağırmanız gerekir. Bununla birlikte tutamaç Bildiricisi olan bir nesne bildirirseniz, Visual C++ derleyicisi başvuru sayısını otomatik olarak ayarlayan kodu oluşturur.
+Tanıtıcı bildiricisinin yararı COM, açıkça sıkıcı ve hata yapmaya açık bir işlem bir nesne başvuru sayımını yönetmenizin gerekli olmasıdır. Diğer bir deyişle başvuru sayısını artırmak için nesnenin AddRef() ve Release() yöntemlerini çağırmanız gerekir. Bununla birlikte tutamaç Bildiricisi olan bir nesne bildirirseniz, derleyici başvuru sayısını otomatik olarak ayarlayan kodu oluşturur.
 
 Bir nesnenin örneğini hakkında daha fazla bilgi için bkz. [yeni başvuru](../windows/ref-new-gcnew-cpp-component-extensions.md).
 
@@ -47,8 +47,6 @@ Derleyici seçeneği: `/ZW`
 CLR sisteminin kullandığı *çöp toplayıcı* nesnenin artık kullanılıp kullanılmadığını ve silinebileceğini belirlemek için bir mekanizma. Ortak dil çalışma zamanı nesneleri ayırdığı bir yığını korur ve yığındaki nesnelerin konumunu programınızdaki kullanan yönetilen başvuruları (değişken) belirtin. Bir nesne artık kullanılmadığında yığın üzerinde kapladığı bellek serbest bırakılır. Düzenli olarak, atık toplayıcı, Boşaltılan belleği daha iyi kullanmak için yığın sıkıştırır. Yığın sıkıştırma yönetilen başvurular tarafından başvurulan konumları geçersiz kılar yığındaki nesneler taşıyabilirsiniz. Bununla birlikte, çöp toplayıcı yönetilen tüm başvuruların konumunu farkındadır ve yığındaki nesnelerin geçerli konumunu göstermek için bunları otomatik olarak güncelleştirir.
 
 Çünkü yerel C++ işaretçileri (`*`) ve başvuruları (`&`) yönetilen başvurular olmadığından çöp toplayıcı bunların işaret ettiği adresleri otomatik olarak güncelleştirilemiyor. Bu sorunu çözmek için tanıtıcı bildiricisinin çöp toplayıcı farkında olan bir değişken belirtmek için kullanın ve otomatik olarak güncelleştirebilirsiniz.
-
-Visual C++ 2002 ve Visual C++ 2003, `__gc *` yönetilen yığındaki bir nesneyi bildirmek için kullanılırdı.  `^` Değiştirir `__gc *` yeni sözdiziminde.
 
 Daha fazla bilgi için [nasıl yapılır: yerel türlerde bildirimini işleme](../dotnet/how-to-declare-handles-in-native-types.md).
 
@@ -235,5 +233,5 @@ Derleyici seçeneği: `/clr`
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [İzleme başvurusu işleci](../windows/tracking-reference-operator-cpp-component-extensions.md)

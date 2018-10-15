@@ -1,7 +1,7 @@
 ---
-title: Platform, varsayılan ve cli ad alanları (C++ bileşen uzantıları) | Microsoft Docs
+title: Platform, varsayılan ve cli ad alanları (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -19,20 +19,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 726c9e2653f2914c01d4a45a572614438e12bc8f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a70fb5317f42e98ccddb21fe66e328e1cc6f7643
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43194655"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328031"
 ---
-# <a name="platform-default-and-cli-namespaces--c-component-extensions"></a>Platform, varsayılan ve cli Ad Alanları (C++ Bileşen Uzantıları)
+# <a name="platform-default-and-cli-namespaces--ccli-and-ccx"></a>Platform, varsayılan ve cli ad alanları (C + +/ CLI ve C + +/ CX)
 
 Bir ad alanı dil öğelerinin adlarını kaynak kod içindeki başka bir yerde benzer adlarla çakışmamaları için örtük olarak nitelendirir. Bir ad çakışması derleyicinin tanımasını gibi engelleyebilir [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md). Ad alanları derleyici tarafından kullanılır, ancak oluşturulmuş derlemede korunmaz.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-Visual C++, projeyi oluşturduğunuzda projeniz için varsayılan bir ad alanı sağlar. Windows çalışma zamanı'nda .winmd dosyasının adı kök ad alanının adı eşleşmelidir ancak ad alanı, el ile yeniden adlandırabilirsiniz.
+Proje oluşturduğunuzda, visual Studio projeniz için varsayılan ad alanı sağlar. El ile ad alanı C + rağmen yeniden adlandırabilirsiniz +/ CX .winmd dosyasının adı kök ad alanının adı eşleşmelidir.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
@@ -90,4 +90,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)

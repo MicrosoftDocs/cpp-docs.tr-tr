@@ -1,7 +1,7 @@
 ---
-title: Yeni (vtable'da yeni yuva) (C++ bileşen uzantıları) | Microsoft Docs
+title: Yeni (vtable'da yeni yuva) (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b5dc0f490da43b4a2a2befa22f2902e7bfce51ca
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 48351903b7827f4ad9e6d63824658e4f44e047e0
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420926"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327745"
 ---
-# <a name="new-new-slot-in-vtable--c-component-extensions"></a>yeni (vtable'da yeni yuva) (C++ Bileşen Uzantıları)
+# <a name="new-new-slot-in-vtable--ccli-and-ccx"></a>Yeni (vtable'da yeni yuva) (C + +/ CLI ve C + +/ CX)
 
 **Yeni** anahtar sözcüğü, sanal üyenin vtable'da yeni yuva aldığını gösterir.
 
@@ -115,5 +115,6 @@ E::f() called
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)<br/>
+
 [Geçersiz kılma tanımlayıcıları](../windows/override-specifiers-cpp-component-extensions.md)
