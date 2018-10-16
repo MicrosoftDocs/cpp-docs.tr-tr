@@ -1,7 +1,7 @@
 ---
-title: Dize (C++ bileşen uzantıları) | Microsoft Docs
+title: Dize (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/08/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -16,24 +16,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2d6b6ce066c84056997ec9b54c9d74e782064df4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b835f1d507c8e577f8b44ca314422dd5b6f2ca46
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408407"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327436"
 ---
-# <a name="string--c-component-extensions"></a>Dize (C++ Bileşen Uzantıları)
-
-Visual C++ derleyicisi destekleyen *dizeleri*, metin bir karakter dizisi temsil eden nesneleri olduğu. Visual C++ dize değişkenleri, değeri örtük olarak ve değeri olan bir açık alıntılanmış dize değişmez değerleri, destekler.
-
-## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
+# <a name="string--ccli-and-ccx"></a>Dize (C + +/ CLI ve C + +/ CX)
 
 Windows çalışma zamanı ve ortak dil çalışma zamanı dizeleri, ayrılan bellek otomatik olarak yönetilen nesneler olarak temsil eder. Diğer bir deyişle, kapsamdan dize değişkeni çıktığında veya uygulamanızı sona erdiğinde bir dize için belleği açıkça iptal gerekmez. Bir dize nesnesi ömrü otomatik olarak yönetilecek olduğunu belirtmek için ile dize türü bildirin [tanıtıcı nesnesi (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md) değiştiricisi.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-Windows çalışma zamanı mimariyi uygulamak Visual C++ gerektirir `String` veri türü olarak `Platform` ad alanı. Kolaylık olması için de Visual C++ sağlar `string` veri türü, bu değer için bir eşanlamlı `Platform::String`, `default` ad alanı.
+Windows çalışma zamanı mimarisi gerektiren `String` veri türü bulunması `Platform` ad alanı. Kolaylık olması için de Visual C++ sağlar `string` veri türü, bu değer için bir eşanlamlı `Platform::String`, `default` ad alanı.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -51,8 +47,6 @@ using namespace default;
 Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
-
-Bu konuda, Visual C++ derleyicisi kullanarak çalıştırdığınızda dize değişmez değerleri nasıl işlediğini ele alınmaktadır `/clr` derleyici seçeneği. Kullanılacak `/clr`, ortak dil çalışma zamanı (CLR), C + ayrıca kullanmalısınız +/ CLI söz dizimi ve yönetilen nesneler. Hakkında daha fazla bilgi için `/clr`, bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md).
 
 İle derlerken `/clr`, derleyici dize sabit değerleri türü dizeye dönüştürür <xref:System.String>. Varolan kodu ile geriye dönük uyumluluk korumak için bu iki özel durumlar şunlardır:
 
@@ -91,9 +85,9 @@ Aşağıdaki kod örneği, birleştirme ve dizeleri karşılaştırma gösterir.
 using namespace System;
 
 int main() {
-   String ^ a = gcnew String("abc");
-   String ^ b = "def";   // same as gcnew form
-   Object ^ c = gcnew String("ghi");
+   String^ a = gcnew String("abc");
+   String^ b = "def";   // same as gcnew form
+   Object^ c = gcnew String("ghi");
 
    char d[100] = "abc";
 
@@ -111,12 +105,12 @@ int main() {
    // concatenation of a System::String and string literal
    Console::WriteLine(a + "zzz");
 
-   // you can append to a System::String ^
+   // you can append to a System::String^
    Console::WriteLine(a + 1);
    Console::WriteLine(a + 'a');
    Console::WriteLine(a + 3.1);
 
-   // test System::String ^ for equality
+   // test System::String^ for equality
    a += b;
    Console::WriteLine(a);
    a = b;
@@ -127,12 +121,12 @@ int main() {
    if (a != b)  
       Console::WriteLine("a and b are not equal");
 
-   // System:String ^ and tracking reference
+   // System:String^ and tracking reference
    String^% rstr1 = a;
    Console::WriteLine(rstr1);
 
-   // testing an empty System::String ^
-   String ^ n;
+   // testing an empty System::String^
+   String^ n;
    if (n == nullptr)  
       Console::WriteLine("n is empty");
 }
@@ -179,29 +173,29 @@ using namespace System;
 void Test_Overload(const char * a) {
    Console::WriteLine("const char * a");
 }
-void Test_Overload(String ^ a) {
-   Console::WriteLine("String ^ a");
+void Test_Overload(String^ a) {
+   Console::WriteLine("String^ a");
 }
 
 // overload will be called instead of compiler defined operator
-String ^ operator +(String ^ a, String ^ b) {
-   return ("overloaded +(String ^ a, String ^ b)");
+String^ operator +(String^ a, String^ b) {
+   return ("overloaded +(String^ a, String^ b)");
 }
 
 // overload will be called instead of compiler defined operator
-String ^ operator +(Object ^ a, String ^ b) {
-   return ("overloaded +(Object ^ a, String ^ b)");
+String^ operator +(Object^ a, String^ b) {
+   return ("overloaded +(Object^ a, String^ b)");
 }
 
 // overload will be called instead of compiler defined operator
-String ^ operator +(String ^ a, Object ^ b) {
-   return ("overloaded +(String ^ a, Object ^ b)");
+String^ operator +(String^ a, Object^ b) {
+   return ("overloaded +(String^ a, Object^ b)");
 }
 
 int main() {
-   String ^ a = gcnew String("abc");
-   String ^ b = "def";   // same as gcnew form
-   Object ^ c = gcnew String("ghi");
+   String^ a = gcnew String("abc");
+   String^ b = "def";   // same as gcnew form
+   Object^ c = gcnew String("ghi");
 
    char d[100] = "abc";
 
@@ -215,13 +209,13 @@ int main() {
 ```
 
 ```Output
-overloaded +(String ^ a, String ^ b)
+overloaded +(String^ a, String^ b)
 
-overloaded +(String ^ a, Object ^ b)
+overloaded +(String^ a, Object^ b)
 
-overloaded +(Object ^ a, String ^ b)
+overloaded +(Object^ a, String^ b)
 
-String ^ a
+String^ a
 
 const char * a
 ```
@@ -277,6 +271,6 @@ System.String
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [Dize ve Karakter Değişmez Değerleri](../cpp/string-and-character-literals-cpp.md)<br/>
 [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)

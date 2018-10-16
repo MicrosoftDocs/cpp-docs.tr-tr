@@ -1,7 +1,7 @@
 ---
-title: sabit listesi sınıfı (C++ bileşen uzantıları) | Microsoft Docs
+title: sabit listesi sınıfı (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -13,14 +13,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 993f0e190d87b140fba0008872d57f2a34b6a5cb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7b85807b9e9dd0cec63def8ffc4a9aa69056f270
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377272"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328148"
 ---
-# <a name="enum-class--c-component-extensions"></a>enum sınıfı (C++ Bileşen Uzantıları)
+# <a name="enum-class--ccli-and-ccx"></a>sabit listesi sınıfı (C + +/ CLI ve C + +/ CX)
 
 Numaralandırıcı olarak adlandırılan sabitler kümesinden oluşan kullanıcı tanımlı türü olan ad alanı kapsamında bir sabit listesi bildirir.
 
@@ -146,13 +146,13 @@ Yönetilen Numaralandırıcı adları (*tanımlayıcıları*) burada numaraland�
 
 Standart numaralandırıcısının numaralandırıcıların türü kesin kapsayan kapsamın içine eklenmiş.  Diğer bir deyişle, bir numaralandırıcı kapsayan kapsamda aynı ada sahip başka bir simge varsa, derleyici bir hata oluşturur.
 
-Visual C++ 2002 ve Visual C++ 2003'te numaralandırıcılar zayıf (görülebilir kapsayan kapsamda aynı ada sahip başka bir tanımlayıcı değilse) eklenmiş.
+Visual Studio 2002 ve Visual Studio 2003'te numaralandırıcılar zayıf (görülebilir kapsayan kapsamda aynı ada sahip başka bir tanımlayıcı değilse) eklenmiş.
 
-Standart bir C++ numaralandırma tanımlanmazsa (olmadan **sınıfı** veya **yapı**), derleme ile `/clr` numaralandırması yönetilen bir sabit derlenmesine neden olur.  Numaralandırma hala yönetilmeyen bir numaralandırma semantiği vardır.  Unutmayın, derleyicinin eklediği bir öznitelik `Microsoft::VisualC::NativeEnumAttribute`, hangi yerel bir numaralandırma olması sabit bir programcı hedefini belirlemek için Visual C++ derleyicisi tanır.  Diğer derleyiciler, yalnızca standart sabit listesi yönetilen bir sabit listesi görürsünüz.
+Standart bir C++ numaralandırma tanımlanmazsa (olmadan **sınıfı** veya **yapı**), derleme ile `/clr` numaralandırması yönetilen bir sabit derlenmesine neden olur.  Numaralandırma hala yönetilmeyen bir numaralandırma semantiği vardır.  Unutmayın, derleyicinin eklediği bir öznitelik `Microsoft::VisualC::NativeEnumAttribute` yerel bir numaralandırma olması sabit bir programcı hedefini belirlemek için.  Diğer derleyiciler, yalnızca standart sabit listesi yönetilen bir sabit listesi görürsünüz.
 
 Adlı bir, standart sabit listesi ile derlenmiş `/clr` derlemedeki yönetilen bir sabit listesi olarak görünür ve diğer yönetilen derleyici tarafından tüketilebilir.   Ancak, adlandırılmamış bir standart enum derlemeden herkese görünür olmayacaktır.
 
-Visual C++ 2002 ve Visual C++ 2003, türü bir işlev parametresi olarak kullanılan standart bir sabit listesi:
+Visual Studio 2002 ve Visual Studio 2003 ' türü bir işlev parametresi olarak kullanılan standart bir sabit listesi:
 
 ```cpp
 // mcppv2_enum.cpp
@@ -231,4 +231,4 @@ convert to int: 1
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)

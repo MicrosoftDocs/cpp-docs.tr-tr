@@ -1,7 +1,7 @@
 ---
-title: Windows çalışma zamanı ve yönetilen şablonlar (C++ bileşen uzantıları) | Microsoft Docs
+title: Windows çalışma zamanı ve yönetilen şablonlar (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0a7d08354bcd2b0b0d8cf1db6e4bd58fb9821708
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b83aa54b9f9697fddbefc6da29e7cf99d497cc12
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591455"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328304"
 ---
-# <a name="windows-runtime-and-managed-templates-c-component-extensions"></a>Windows Çalışma Zamanı ve Yönetilen Şablonlar (C++ Bileşen Uzantıları)
+# <a name="windows-runtime-and-managed-templates-ccli-and-ccx"></a>Windows çalışma zamanı ve yönetilen şablonlar (C + +/ CLI ve C + +/ CX)
 
 Şablonları, bir Windows çalışma zamanı veya ortak dil çalışma zamanı türü prototipin tanımlamanıza olanak sağlar ve ardından farklı bir şablon türü parametreleri kullanarak bu tür çeşidi örneği.
 
@@ -50,7 +50,7 @@ Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Yönetilen tür şablonu parametresi olan bir genel tipi örneklemeli mümkündür, ancak bir genel tür şablonu parametresi ile yönetilen bir şablon örneği oluşturulamıyor. Genel türler çalışma zamanında çözümlenir olmasıdır. Daha fazla bilgi için [genel türler ve temsilciler (Visual C++)](../windows/generics-and-templates-visual-cpp.md).
+Yönetilen tür şablonu parametresi olan bir genel tipi örneklemeli mümkündür, ancak bir genel tür şablonu parametresi ile yönetilen bir şablon örneği oluşturulamıyor. Genel türler çalışma zamanında çözümlenir olmasıdır. Daha fazla bilgi için [genel türler ve temsilciler (C + +/ CLI)](../windows/generics-and-templates-visual-cpp.md).
 
 ```cpp
 // managed_templates.cpp
@@ -142,4 +142,4 @@ class A <int> {};
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)

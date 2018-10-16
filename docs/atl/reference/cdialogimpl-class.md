@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba47b7f78e372f05a851d2180590bbc68a8c61ca
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4983d2a56407449873c8b4db73d82fa2ef864058
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46068448"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328265"
 ---
 # <a name="cdialogimpl-class"></a>Cdialogımpl sınıfı
 
@@ -273,7 +273,7 @@ BOOL MapDialogRect(LPRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-İşaret eden bir `CRect` nesne veya [RECT](../../mfc/reference/rect-structure1.md) güncelleştirme bölgeyi kapsayan güncelleştirme istemci koordinatlarını almak için yapısı.
+İşaret eden bir `CRect` nesne veya [RECT](../../mfc/reference/rect-structure.md) güncelleştirme bölgeyi kapsayan güncelleştirme istemci koordinatlarını almak için yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

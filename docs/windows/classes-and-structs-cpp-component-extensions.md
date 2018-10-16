@@ -1,7 +1,7 @@
 ---
-title: Sınıflar ve yapılar (C++ bileşen uzantıları) | Microsoft Docs
+title: başvuru sınıfı ve ref struct (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -18,16 +18,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 60e388e18e6d3607dac1946c3fd9a511e948afd4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f2d7ceea7dd3253b28eab5b5fad28381f115225f
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448382"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328083"
 ---
-# <a name="classes-and-structs--c-component-extensions"></a>Sınıflar ve Yapılar (C++ Bileşen Uzantıları)
+# <a name="ref-class-and-ref-struct--ccli-and-ccx"></a>başvuru sınıfı ve ref struct (C + +/ CLI ve C + +/ CX)
 
-Bir sınıf veya yapı bildirir, *nesne yaşam süresi* otomatik olarak yönetilir. Nesnenin artık erişilebilir değil veya kapsam dışına gider, Visual C++ nesne için ayrılan bellek otomatik olarak atar.
+**Başvuru sınıfı** veya **ref struct** uzantıları bildirmek için bir sınıf veya yapı, *nesne yaşam süresi* otomatik olarak yönetilir. Nesnenin artık erişilebilir değil veya kapsam dışına gider, belleği serbest kalır.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
@@ -61,7 +61,7 @@ Sınıfın veya yapının adı.
 *taban_türü*<br/>
 (İsteğe bağlı) Bir taban türü. Ancak, bir değer türü temel tür olarak davranamaz.
 
-Daha fazla bilgi için bu parametre Windows çalışma zamanı ve ortak dil Runtimesections dile özgü açıklamaları bakın.
+Daha fazla bilgi için bu parametre Windows çalışma zamanı ve ortak dil çalışma zamanı bölümleri dile özgü açıklamaları bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -129,4 +129,4 @@ Derleyici seçeneği: `/clr`
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)

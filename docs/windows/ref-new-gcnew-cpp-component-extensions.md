@@ -1,7 +1,7 @@
 ---
-title: Yeni başvuru, gcnew (C++ bileşen uzantıları) | Microsoft Docs
+title: Yeni başvuru, gcnew (C + +/ CLI ve C + +/ CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -20,14 +20,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1c31cda7c074b06025051661d27f00d2624721d0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f5a10278957e6a89b52e744f8f0dd78b475f7730
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596164"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328317"
 ---
-# <a name="ref-new-gcnew--c-component-extensions"></a>yeni başvuru, gcnew (C++ Bileşen Uzantıları)
+# <a name="ref-new-gcnew--ccli-and-ccx"></a>Yeni başvuru, gcnew (C + +/ CLI ve C + +/ CX)
 
 **Yeni başvuru** toplama anahtar sözcüğü ayırır nesne erişilemez duruma gelir ve bir tanıtıcı döndürür atık bir türün örneğini ([^](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)) ayrılmış nesneyi.
 
@@ -99,4 +99,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
