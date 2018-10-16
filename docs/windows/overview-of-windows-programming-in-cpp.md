@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b2870aa742806671e39728c3b73604dcf4e810e9
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: e8251f45d07e8a410c41a89fbc618839e9bbb838
+ms.sourcegitcommit: 6a6b2061db9d51c5cc79775512de54589a4d2fbc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083092"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49347234"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
 
@@ -35,7 +35,7 @@ Visual C++ ile geliştirdiğiniz Windows uygulamaları birkaç kategoriden vard�
 
 UWP uygulamaları, tabletler ve cep telefonları gibi tüm Windows 10 cihazlarında yanı sıra Masaüstü çalıştırabilir. Bir masaüstü pencere olarak çalıştırılabilmesi için masaüstünde yerine her zaman tam ekran çalışıyor. Bu uygulamalar, Xbox ve gelecekteki cihazlarda da çalıştırabilirsiniz.  UWP uygulamaları kullanıcı arabirimi öğeleri, hizmetleri ve Windows üzerinde desteklenen çeşitli donanım aygıtları için bir arabirim sağlayan Windows Runtime çalıştırın.
 
-UWP uygulamaları C + yazabileceğiniz +/ CX, C++, bir SQL diyalektiği kullanabileceğiniz [C + +/ WinRT Kitaplığı](https://moderncpp.com/)bazı senaryolar için. UWP uygulamaları için yerel kod derleme ve XAML kullanıcı arabirimine sahip ya da DirectX kullanın. UWP uygulamaları diğer dillerde yazılmış tüketebileceği yerel kod halinde yazılmış Windows çalışma zamanı bileşenleri. Daha fazla bilgi için [c++'ta bir evrensel Windows platformu uygulaması oluşturma](http://go.microsoft.com/fwlink/?LinkID=534976), [DirectX kullanarak ilk UWP oyununuzu oluşturun](http://go.microsoft.com/fwlink/p/?LinkId=244656), ve [C++'ta Windows çalışma zamanı oluşturma bileşenleri](http://go.microsoft.com/fwlink/p/?LinkId=244658).
+UWP uygulamaları C + yazabileceğiniz +/ CX, C++, bir SQL diyalektiği kullanabileceğiniz [C + +/ WinRT Kitaplığı](https://moderncpp.com/) bazı senaryolar için. UWP uygulamaları için yerel kod derleme ve XAML kullanıcı arabirimine sahip ya da DirectX kullanın. UWP uygulamaları diğer dillerde yazılmış tüketebileceği yerel kod halinde yazılmış Windows çalışma zamanı bileşenleri. Daha fazla bilgi için [c++'ta bir evrensel Windows platformu uygulaması oluşturma](http://go.microsoft.com/fwlink/?LinkID=534976), [DirectX kullanarak ilk UWP oyununuzu oluşturun](http://go.microsoft.com/fwlink/p/?LinkId=244656), ve [C++'ta Windows çalışma zamanı oluşturma bileşenleri](http://go.microsoft.com/fwlink/p/?LinkId=244658).
 
    Bu kategori, C++ temel bileşenleri ve sunucu ve bulut programlama bağlamındaki hesaplama kodu kullanarak da içerir. Bazen yoğun performans kod merkezinde bulunan bir sunucu veya Bulut uygulama performansını en üst düzeye c++'ta yazılır. Bu kod bir DLL içine derleyin ve C# veya Visual Basic kullanın.
 

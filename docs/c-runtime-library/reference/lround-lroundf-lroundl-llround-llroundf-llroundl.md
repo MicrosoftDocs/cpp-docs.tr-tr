@@ -46,16 +46,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9af035e65e383c8027c8c19df02e18c298f625e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4ea24e45c26abe418023d4f065117928bb17ae2b
+ms.sourcegitcommit: 3f3f1d687e109b63399e14e2c8f4404787bdfae7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401054"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336541"
 ---
 # <a name="lround-lroundf-lroundl-llround-llroundf-llroundl"></a>lround, lroundf, lroundl, llround, llroundf, llroundl
 
-Kayan noktalı bir sayıyı en yakın tamsayıya yuvarlar.
+Bir kayan nokta değeri en yakın tamsayıya yuvarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -95,19 +95,19 @@ long long llroundl(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Yuvarlanacak kayan nokta değer.
+Yuvarlanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Lround** ve **llround** işlevler döndürür en yakın **uzun** veya **uzun** **uzun** tamsayı *x*. Kayan nokta yuvarlama modu ayarından bağımsız olarak sıfırdan uzağa doğru yarısı değerler yuvarlanır. Döndürülen hata yoktur.
+**Lround** ve **llround** işlevler döndürür en yakın **uzun** veya **uzun** **uzun** tamsayı *x*. Yarım değerler, kayan nokta yuvarlama modu ayarından bağımsız olarak sıfırdan uzağa yuvarlanır. Döndürülen hata yok.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **UL**|yok|**_DOMAIN**|
+|± **QNAN**, **ONRAKİNİ BUL**|yok|**_ETKİ ALANI**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **lround** veya **llround** alın ve dönüş **float** ve **uzun** **çift** değerleri. Bir C programı **lround** ve **llround** her zaman alın ve dönüş bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **lround** veya **llround** alan ve getiren **float** ve **uzun** **çift** değerleri. C programında **lround** ve **llround** her zaman alan ve getiren bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -115,13 +115,13 @@ Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **lround**
 |-------------|---------------------|
 |**lround**, **lroundf**, **lroundl**, **llround**, **llroundf**, **llroundl**|\<Math.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
 ```C
 // crt_lround.c
-// Build with: cl /W3 /Tc crt_lround.c
+// Build with: cl /W4 /Tc crt_lround.c
 // This example displays the rounded results of
 // the floating-point values 2.499999, -2.499999,
 // 2.8, -2.8, 3.5 and -3.5.
@@ -133,7 +133,7 @@ int main( void )
 {
    double x = 2.499999;
    float y = 2.8f;
-   long double z = 3.5;
+   long double z = 3.5L;
 
    printf("lround(%f) is %d\n", x, lround(x));
    printf("lround(%f) is %d\n", -x, lround(-x));
@@ -149,8 +149,8 @@ lround(2.499999) is 2
 lround(-2.499999) is -2
 lroundf(2.800000) is 3
 lroundf(-2.800000) is -3
-lroundl(2.500000) is 4
-lroundl(-2.500000) is -4
+lroundl(3.500000) is 4
+lroundl(-3.500000) is -4
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
