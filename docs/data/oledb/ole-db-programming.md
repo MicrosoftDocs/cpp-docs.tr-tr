@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3ed6610f71561a62d3ff99a794bb166bdcabd3d3
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 32f3fc1b6a990a746c3dc87740c63fbe898f79d5
+ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083521"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410635"
 ---
 # <a name="ole-db-programming"></a>OLE DB Programlama
 
@@ -40,7 +40,7 @@ Ayrıca, OLE DB Tüketici Şablonları uygulamak için öznitelikler kullanabili
 |OLE DB sağlayıcı şablonları (kavramsal konular) kullanma|[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)|  
 |OLE DB şablon sınıfları ve makroları|[OLE DB Şablonları başvurusu](../../data/oledb/ole-db-templates.md) (Visual C++)|  
 |OLE DB tüketici öznitelikleri|[OLE DB Tüketici Öznitelikleri](../../windows/ole-db-consumer-attributes.md)|  
-|OLE DB arabirimleri|[OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643) (Windows SDK'da)|  
+|OLE DB arabirimleri|[OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643(v%3dvs.85)) (Windows SDK'da)| 
 |OLE DB Şablon örnekleri|[OLE DB Şablon örnekleri](https://github.com/Microsoft/VCSamples)| 
 |Veri erişim programlama genel bakış (Visual C++)|[Veri erişim programlama](../../data/data-access-programming-mfc-atl.md)|  
 |ODBC kavramsal konular|[Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|  

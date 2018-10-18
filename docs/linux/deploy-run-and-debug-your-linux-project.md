@@ -8,17 +8,17 @@ ms.technology:
 ms.tgt_pltfrm: Linux
 ms.topic: conceptual
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
-author: corob-msft
-ms.author: corob
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 2e6c6c98b027c561f6972ab76a520e9793c30963
-ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
+ms.openlocfilehash: d2ffd41fe224e492eb4b27a355f6df864e0dd066
+ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601606"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410830"
 ---
 # <a name="deploy-run-and-debug-your-linux-project"></a>Dağıtma, çalıştırma ve Linux projenizin hatalarını ayıklama
 

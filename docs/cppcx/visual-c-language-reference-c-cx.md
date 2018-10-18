@@ -9,19 +9,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7d1381e511bc98b446e3f58be4d2a1c5ac15070
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 578df738d2c601c82f530ee32ae30284f6dac5ef
+ms.sourcegitcommit: e462e78a2dac06a0a539299facf34cdaeaf4d08c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105711"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49401415"
 ---
 # <a name="visual-c-language-reference-ccx"></a>Visual C++ Dil Başvurusu (C + +/ CX)
 
 C + +/ CX Windows uygulamaları ve Windows çalışma zamanı bileşenleri olabildiğince ve modern C++ kapatmak gibi bir deyim oluşturulmasını sağlayan C++ dil uzantıları kümesidir. Kullanmak C + +/ CX Windows uygulamaları ve bileşenleri Visual C#, Visual Basic ve JavaScript ile kolayca etkileşim yerel kod ve Windows çalışma zamanı desteği diğer diller yazılacak. Ham COM arabirimleri ya da özel durumlu olmayan kod doğrudan erişim gerektiren taşıdığı nadir durumlarda, kullandığınız [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).
 
 > [!NOTE]
-> C + +/ WinRT olan yeni, standart C ++ 17 dil projeksiyon Windows Runtime API'ları için. En son Windows 10 SDK sürüm 1803 ileriye doğru kullanılabilir. C + +/ WinRT tamamen üstbilgi dosyalarında uygulanan ve modern Windows API ile birinci sınıf erişim sağlayacak şekilde tasarlanmıştır.
+> **[C + +/ WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index) önerilen alternatif C + +/ CX**. Bu, bir yeni, standart C ++ 17 dil projeksiyon için Windows çalışma zamanı API'leri, en son Windows 10 SDK sürüm 1803 ileriye doğru kullanılabilir olur. C + +/ WinRT tamamen üstbilgi dosyalarında uygulanan ve modern Windows API ile birinci sınıf erişim sağlayacak şekilde tasarlanmıştır.
 
 > İle C + +/ WinRT, size hem kullanabilir ve Windows çalışma zamanı API'leri kullanarak tüm standartlara uyumlu C ++ 17 derleyici yazar. C + +/ WinRT genellikle daha iyi gerçekleştirir ve Windows çalışma zamanı için diğer bir dil seçeneği değerinden daha küçük ikili dosyaları üretir. Biz C + desteklemeye devam edecektir +/ CX ve WRL, ancak yüksek yeni uygulama C + kullanmanız +/ WinRT. Daha fazla bilgi için [C + +/ WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index).
 

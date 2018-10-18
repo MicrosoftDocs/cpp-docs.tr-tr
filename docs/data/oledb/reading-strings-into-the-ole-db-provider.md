@@ -1,7 +1,7 @@
 ---
 title: Dizeleri OLE DB sağlayıcısına okuma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/13/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 88272c935c3e610ee633a1e076a2d2d76b5840f2
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 9b51611ff5727a89e47bef569865f915a189a993
+ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082572"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410663"
 ---
 # <a name="reading-strings-into-the-ole-db-provider"></a>Dizeleri OLE DB Sağlayıcısına Okuma
 

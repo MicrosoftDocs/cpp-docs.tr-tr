@@ -10,17 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: Linux
 ms.topic: conceptual
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
-author: corob-msft
-ms.author: corob
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 0e735ece878797ffdcf89fffefa33473107ad3d5
-ms.sourcegitcommit: 7098d64443ffbd4a47f30bc41753007b570b47e8
+ms.openlocfilehash: 20291e1f824704ee94cb45f14c16d6f0e4960348
+ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49120570"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410843"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake projesi yapılandırma
 

@@ -1,7 +1,7 @@
 ---
 title: Tüketici Sihirbazı tarafından oluşturulan sınıflar | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/15/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -21,22 +21,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a4ffcb231824c120c90eaae1751a016ef63b8211
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a7498f15072f3b9687476ba7f6c291ebf5ff88cd
+ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106187"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410779"
 ---
 # <a name="consumer-wizard-generated-classes"></a>Tüketici Sihirbazı Tarafından Oluşturulan Sınıflar
 
-ATL OLE DB Tüketicisi Sihirbazı tüketici oluşturmak için kullandığınızda, OLE DB Şablonları ya da OLE DB öznitelikleri kullanma seçeneğiniz vardır. Her iki durumda da sihirbaz bir komutu ve bir kullanıcı kaydı sınıfı oluşturur. Komut sınıfı Sihirbazı'nda belirtilen satır kümesi ve veri kaynağını açmak için kodu içerir. Sütun eşlemesi, seçtiğiniz veritabanı tablosu için kullanıcı kayıt sınıfı içerir. Ancak, oluşturulan kod her durumda farklıdır:  
+Kullanırken **ATL OLE DB Tüketicisi Sihirbazı** tüketici oluşturmak için OLE DB Şablonları ya da OLE DB öznitelikleri kullanma seçeneğiniz vardır. Her iki durumda da sihirbaz bir komutu ve bir kullanıcı kaydı sınıfı oluşturur. Komut sınıfı Sihirbazı'nda belirtilen satır kümesi ve veri kaynağını açmak için kodu içerir. Sütun eşlemesi, seçtiğiniz veritabanı tablosu için kullanıcı kayıt sınıfı içerir. Ancak, oluşturulan kod her durumda farklıdır:  
   
-- Şablonlu bir tüketici seçerseniz, sihirbazın bir komutu ve bir kullanıcı kaydı sınıfı oluşturur. Komut sınıfı Sihirbazı'nda sınıfı kutuya girin adı olacaktır (örneğin, `CProducts`), ve kullanıcı kayıt sınıfı formun adını gerekir "*ClassName*erişimci" (örneğin, `CProductsAccessor`). Her iki sınıfları, tüketicinin üstbilgi dosyasında yerleştirilir.  
+- Şablonlu bir tüketici seçerseniz, sihirbazın bir komutu ve bir kullanıcı kaydı sınıfı oluşturur. Komut sınıfının girdiğiniz ada sahip olacaktır **sınıfı** sihirbazda kutusunda (örneğin, `CProducts`), ve kullanıcı kayıt sınıfı bir adı olacaktır "*ClassName*erişimci" (örneğin, `CProductsAccessor`). Her iki sınıfları, tüketicinin üstbilgi dosyasında yerleştirilir.  
   
 - Öznitelikli bir tüketici seçerseniz, kullanıcı kayıt sınıfı bir adı olacaktır "_*ClassName*erişimci" ve eklenecek. Diğer bir deyişle, Metin Düzenleyicisi'nde yalnızca komut sınıfı görüntülemeniz mümkün olacaktır; Kullanıcı kayıt sınıfı eklenen kodu yalnızca görüntüleyebilir. Eklenen kodu görüntüleme hakkında daha fazla bilgi için bkz: [eklenen kodda hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code).  
   
-Aşağıdaki örnekler, komut sınıfın Tüketici Sihirbazı tarafından oluşturulan kodu göstermek için Northwind veritabanının ürünleri tablosunda oluşturulan komut sınıfı ve kullanıcı kayıt sınıfı kullanır.  
+Aşağıdaki örneklerde oluşturulan komut sınıfı `Products` tablosu `Northwind` komut ve kullanıcı kayıt sınıfı Tüketici Sihirbazı tarafından oluşturulan kodu göstermek için veritabanı.  
   
 ## <a name="templated-user-record-classes"></a>Şablonlu kullanıcı kayıt sınıfları  
 
@@ -47,10 +47,10 @@ OLE DB Şablonları (OLE DB öznitelikleri yerine) kullanarak bir OLE DB Tüketi
 Kullanıcı kayıt sınıfı ilk bölümü, veri üye bildirimleri ve verilere bağlı her sütun için durumu ve uzunluğu veri üyeleri içerir. Bu veri üyeleri hakkında daha fazla bilgi için bkz: [daha fazla Erişimcilerde alan durumu veri üyeleri](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md).  
   
 > [!NOTE]
->  Kullanıcı kayıt sınıfı değiştirin ya da kendi tüketici yazma, verileri değişkenleri durum ve uzunluğu değişkenlerinden önce gelmelidir.  
+> Kullanıcı kayıt sınıfı değiştirin ya da kendi tüketici yazma, verileri değişkenleri durum ve uzunluğu değişkenlerinden önce gelmelidir.  
   
 > [!NOTE]
->  ATL OLE DB Tüketicisi Sihirbazı kullanır `DB_NUMERIC` sayısal veri türleri bağlamak için türü. Eski adıyla kullanılır `DBTYPE_VARNUMERIC` (biçimi tarafından açıklanan `DB_VARNUMERIC` yazın; biçim bakın). Tüketiciler oluşturmak için Sihirbazı kullanmazsanız kullanmanız önerilir `DB_NUMERIC`.  
+> ATL OLE DB Tüketicisi Sihirbazı kullanır `DB_NUMERIC` sayısal veri türleri bağlamak için türü. Eski adıyla kullanılır `DBTYPE_VARNUMERIC` (biçimi tarafından açıklanan `DB_VARNUMERIC` yazın; biçim bakın). Tüketiciler oluşturmak için Sihirbazı kullanmazsanız kullanmanız önerilir `DB_NUMERIC`.  
   
 ```cpp  
 // Products.H : Declaration of the CProducts class  
@@ -159,7 +159,7 @@ class CProducts : public CCommand<CAccessor<CProductsAccessor>>
   
 ## <a name="attribute-injected-user-record-classes"></a>Öznitelik eklenmiş kullanıcı kayıt sınıfları  
 
-Veritabanı öznitelikleri kullanarak bir OLE DB Tüketicisi Oluşturma, ([db_command](../../windows/db-command.md) veya [db_table](../../windows/db-table.md)), öznitelikleri formun adıyla bir kullanıcı kayıt sınıfı ekleme "_*ClassName*Erişimci. " Örneğin, komut sınıfınıza adlı `COrders`, kullanıcı kayıt sınıfı olacaktır `_COrdersAccessor`. Sınıf Görünümü'nde kullanıcı kayıt sınıfı görünse de, çift üstbilgi dosyasında komut veya tablo sınıfı yerine gider. Bu durumlarda, kullanıcı kayıt sınıfı gerçek bildirimi öznitelik eklenmiş kod görüntüleyerek yalnızca görüntüleyebilir.  
+Veritabanı öznitelikleri kullanarak bir OLE DB Tüketicisi Oluşturma, ([db_command](../../windows/db-command.md) veya [db_table](../../windows/db-table.md)), öznitelikleri formun adıyla bir kullanıcı kayıt sınıfı ekleme "_*ClassName*Erişimci. " Örneğin, komut sınıfınıza adlı `COrders`, kullanıcı kayıt sınıfı olacaktır `_COrdersAccessor`. Kullanıcı kayıt sınıfı görünür ancak **sınıf görünümü**, çift gider üstbilgi dosyasında komut veya tablo sınıfı yerine. Bu durumlarda, kullanıcı kayıt sınıfı gerçek bildirimi öznitelik eklenmiş kod görüntüleyerek yalnızca görüntüleyebilir.  
   
 Ekler veya geçersiz kılma yöntemleri öznitelikli tüketiciler olası zorluklar olabilir. Örneğin, ekleyebilirsiniz bir `_COrdersAccessor` oluşturucuya `COrders` bildirimi ama aslında bu bir oluşturucu eklediğini unutmayın `COrdersAccessor` sınıfı. Bu tür bir oluşturucuya sütunlar/parametreler başlatabilirsiniz, ancak doğrudan başlatılamıyor çünkü bu şekilde, bir kopya Oluşturucu oluşturamazsınız `COrdersAccessor` nesne. Doğrudan bir oluşturucu (veya başka bir yöntem) gerekiyorsa `COrders` sınıfının yeni bir sınıf türetmek tanımladığınız önerilir `COrders` ve gerekli yöntemleri ekleyin.  
   

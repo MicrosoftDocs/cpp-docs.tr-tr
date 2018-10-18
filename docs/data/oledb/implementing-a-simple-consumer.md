@@ -1,7 +1,7 @@
 ---
 title: Basit Tüketici Uygulama | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ce6f57846a0dcad79eead500286525e94c66a8e6
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: b407af3e6c105bdbb2f8d91aa9d854e6d877592c
+ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162301"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410700"
 ---
 # <a name="implementing-a-simple-consumer"></a>Basit Tüketici Uygulama
 
@@ -211,75 +211,6 @@ Bir yer işareti tablosundaki satırları benzersiz olarak tanımlayan bir sütu
     ```  
   
 Yer işaretleri hakkında daha fazla bilgi için bkz. [kullanarak yer işaretleri](../../data/oledb/using-bookmarks.md). Yer işaretleri örnekleri de gösterilir [satır kümelerini güncelleştirme](../../data/oledb/updating-rowsets.md).  
-  
-## <a name="adding-xml-support-to-the-consumer"></a>Tüketiciye XML desteği ekleme  
-
-Bölümünde açıklandığı gibi [XML verilerine erişim](../../data/oledb/accessing-xml-data.md), XML verileri bir veri kaynağından almak için iki yolu vardır: kullanarak [CStreamRowset](../../data/oledb/cstreamrowset-class.md) veya bu adı kullanıyor [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md). Bu örnekte `CStreamRowset`, daha verimli olur, ancak, bu örnek uygulama yürüttüğünüz bilgisayar üzerinde çalışan SQL Server 2000 olmasını gerektirir.  
-  
-### <a name="to-modify-the-command-class-to-inherit-from-cstreamrowset"></a>Komut sınıfının CStreamRowset devralacak şekilde değiştirmek için  
-  
-1. Daha önce oluşturduğunuz tüketici uygulama, `CCommand` belirtmek için bildirimi `CStreamRowset` satır kümesi sınıfı şu şekilde:  
-  
-    ```cpp  
-    class CProducts : public CCommand<CAccessor<CProductsAccessor>, CStreamRowset >  
-    ```  
-  
-### <a name="to-modify-the-main-code-to-retrieve-and-output-the-xml-data"></a>Çıktı XML verilerini alıp ana kod değiştirmek için  
-  
-1. Daha önce oluşturduğunuz konsol uygulaması MyCons.cpp dosyasından ana kod gibi görünecek şekilde değiştirin:  
-  
-    ```cpp  
-    ///////////////////////////////////////////////////////////////////////  
-    // MyCons.cpp : Defines the entry point for the console application.  
-    //  
-  
-    #include "stdafx.h"  
-    #include "Products.h"   
-    #include <iostream>  
-    #include <fstream>  
-    using namespace std;  
-  
-    int _tmain(int argc, _TCHAR* argv[])  
-    {  
-       HRESULT hr = CoInitialize(NULL);  
-  
-       // Instantiate rowset  
-       CProducts rs;  
-  
-       // Add variable declarations for the Read method to handle sequential stream data  
-       CHAR buffer[1001];  // Pointer to buffer into which data stream is read  
-       ULONG cbRead;       // Actual number of bytes read from the data stream  
-  
-       hr = rs.OpenAll();  
-  
-       // Open file output.txt for writing in overwrite mode  
-       ofstream outfile( "C:\\output.txt", ios::out );  
-  
-       if (!outfile)      // Test for invalid file  
-          return -1;  
-  
-       // The following loop reads 1000 bytes of the data stream at a time   
-       // until it reaches the end of the data stream  
-       for (;;)  
-       {  
-          // Read sequential stream data into buffer  
-          HRESULT hr = rs.m_spStream->Read(buffer, 1000, &cbRead);  
-          if (FAILED (hr))  
-             break;  
-          // Output buffer to file  
-          buffer[cbRead] = 0;  
-          outfile << buffer;  
-          // Test for end of data stream  
-          if (cbRead < 1000)  
-             break;  
-       }  
-  
-       rs.CloseAll();  
-       CoUninitialize();  
-  
-       return 0;  
-    }  
-    ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 

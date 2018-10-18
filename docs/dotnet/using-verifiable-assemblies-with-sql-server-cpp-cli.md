@@ -1,7 +1,7 @@
 ---
 title: SQL Server ile doğrulanabilen derlemeler kullanma (C + +/ CLI) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology:
 - cpp-cli
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 2bb4adbb960f9d062cc8573c7ca0f7cd5dcd0426
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4fca5d567d19434654b7ccf3cfb2b4d5d3e44d53
+ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382225"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410713"
 ---
 # <a name="using-verifiable-assemblies-with-sql-server-ccli"></a>SQL Server ile Doğrulanabilen Derlemeler Kullanma (C++/CLI)
 
@@ -32,9 +32,10 @@ SQL Server Transact-SQL (SQL Server ile doğrulanabilen derlemeler yüklemek, iz
 
 - Kısıtlanmamış modu: kendi sorumluluğunuzdadır; kod çalıştırma kod doğrulanabilir şekilde tür kullanımı uyumlu olması gerekmez.
 
-- Güvenli mod: doğrulanabilir şekilde typesafe kodunu çalıştırın / CLR: safe ile derlenmiş.
+- Güvenli mod: doğrulanabilir şekilde typesafe kodunu çalıştırın / CLR: safe ile derlenmiş. 
 
-Güvenli mod yürütülen derlemeler doğrulanabilir şekilde uyumlu olmasını gerektirir.
+> [!IMPORTANT]
+> Visual Studio 2015 kullanım dışı ve Visual Studio 2017'yi desteklemez **/CLR: pure** ve **/CLR: safe** doğrulanabilir projeleri oluşturma. Doğrulanabilen kod gerekiyorsa, C# kodunuzda Çevir öneririz.
 
 Oluşturma ve doğrulanabilir bir derleme SQL Server'a yükleme hakkında bilgi için CREATE ASSEMBLY ve DROP ASSEMBLY Transact-SQL komutlarını şu şekilde kullanın:
 
@@ -88,5 +89,5 @@ sqlcmd -S MyServer -E -i myScript.sql -o myResult.txt
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Nasıl yapılır: safe'e geçiş (C + +/ CLI)](../dotnet/how-to-migrate-to-clr-safe-cpp-cli.md)<br/>
+
 [Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)

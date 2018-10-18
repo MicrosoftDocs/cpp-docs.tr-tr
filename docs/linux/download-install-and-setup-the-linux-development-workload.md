@@ -8,17 +8,17 @@ ms.technology:
 ms.tgt_pltfrm: Linux
 ms.topic: conceptual
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-author: corob-msft
-ms.author: corob
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 060859879c6164bd8af10763ae5f828c9136abe5
-ms.sourcegitcommit: b05cff71a8a6a8a4c7bbea1263fd0a711853f921
+ms.openlocfilehash: a45d216f1d6ddcef704dba40ff97f6ed71f98240
+ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307912"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410648"
 ---
 # <a name="download-install-and-setup-the-linux-workload"></a>İndirme, yükleme ve Linux iş yükünü Kurulumu
 
