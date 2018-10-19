@@ -1,13 +1,14 @@
 ---
 title: -Ox (en fazla hız iyileştirmelerini etkinleştir) | Microsoft Docs
 ms.custom: ''
-ms.date: 09/25/2017
+ms.date: 10/18/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.ToolOptimization
-- /ox
+- /Ox
+- /Oxs
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e1da84c3a4ec481d3af2880a80f5923bf0c50cc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f3f5a39201283567285b37a0901929022b688104
+ms.sourcegitcommit: 4cbde5d164d681204c4011dc95a921d75292f423
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438086"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459172"
 ---
 # <a name="ox-enable-most-speed-optimizations"></a>/Ox (en fazla hız iyileştirmelerini etkinleştir)
 
@@ -33,7 +34,7 @@ ms.locfileid: "46438086"
 
 ## <a name="syntax"></a>Sözdizimi
 
-> /Ox
+> **/Ox**
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -59,7 +60,7 @@ ms.locfileid: "46438086"
 
 - [/Od (Devre Dışı Bırak (Hata Ayıkla))](../../build/reference/od-disable-debug.md)
 
-Sapma hızına yönelik iptal edebilirsiniz **/Ox** belirtirseniz derleyici seçeneği **/Oxs**, hangi birleştirir **/Ox** derleyici seçeneğiyle [/Os (ayrıcalık küçük Kod)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md). Birleşik seçenekler ayrıcalık tanı daha küçük kod boyutu.
+Sapma hızına yönelik iptal edebilirsiniz **/Ox** belirtirseniz derleyici seçeneği **/Oxs**, hangi birleştirir **/Ox** derleyici seçeneğiyle [/Os (ayrıcalık küçük Kod)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md). Birleşik seçenekler ayrıcalık tanı daha küçük kod boyutu.  **/Oxs** seçenek, tam olarak belirterek aynı **/Ox** **/Os** seçenekler, sırasıyla görüntülenirken.
 
 Yayın derlemeleri için tüm kullanılabilir dosya düzeyinde iyileştirme uygulamak için belirttiğiniz öneririz [/O2 (hız en üst düzeye)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) yerine **/Ox**, ve [/O1 (boyutu en aza)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) yerine ' ın **/Oxs**. Daha da fazla iyileştirme sürüm yapıları için de göz önünde bulundurmanız [/GL (bütün Program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği ve [/LTCG (bağlama zamanı kodu oluşturma)](../../build/reference/ltcg-link-time-code-generation.md) bağlayıcı seçeneği.
 
@@ -73,7 +74,7 @@ Yayın derlemeleri için tüm kullanılabilir dosya düzeyinde iyileştirme uygu
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

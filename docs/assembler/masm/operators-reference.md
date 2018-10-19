@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4708af3c0fa272a1ca803f549ce8953caccaa27
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 5c9f5beb0e3525de6df88e44248410810502962e
+ms.sourcegitcommit: 4cbde5d164d681204c4011dc95a921d75292f423
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688182"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459159"
 ---
 # <a name="masm-operators-reference"></a>MASM işleçler başvurusu
 
@@ -36,7 +36,7 @@ ms.locfileid: "43688182"
 
 ||||
 |-|-|-|
-|[! (çalışma zamanı mantıksal değil)](operator-logical-not-masm-run-time.md)|[! = (eşit değildir çalışma zamanı)](operator-not-equal-masm.md)|[&#124;&#124;(çalışma zamanı mantıksal veya)](operator-logical-or.md)|
+|[\! (çalışma zamanı mantıksal değil)](operator-logical-not-masm-run-time.md)|[\!(çalışma zamanı eşit değil) =](operator-not-equal-masm.md)|[&#124;&#124;(çalışma zamanı mantıksal veya)](operator-logical-or.md)|
 |[& & (çalışma zamanı mantıksal ve)](operator-logical-and-masm-run-time.md)|[< (çalışma zamanı küçüktür)](operator-less-than-masm-run-time.md)|[\<(çalışma zamanı küçük veya buna eşit) =](operator-less-or-equal-masm-run-time.md)|
 |[== (çalışma zamanı eşit)](operator-equal-masm-run-time.md)|[> (büyüktür çalışma zamanı)](operator-greater-than-masm-run-time.md)|[> = (çalışma zamanı büyük veya buna eşit)](operator-greater-or-equal-masm-run-time.md)|
 |[& (bit çalışma zamanı ve)](operator-bitwise-and.md)|||
@@ -54,7 +54,7 @@ ms.locfileid: "43688182"
 
 ||||
 |-|-|-|
-|[! (karakter sabit değeri)](operator-logical-not-masm.md)|[% (metin olarak davranma)](operator-percent.md)||
+|[\! (karakter sabit değeri)](operator-logical-not-masm.md)|[% (metin olarak davranma)](operator-percent.md)||
 |[;; (açıklama olarak işle)](operator-semicolons.md)|[&lt; &gt; (bir değişmez değer olarak işle)](operator-literal.md)|[& & (parametre değeri yerine)](operator-logical-and-masm.md)|
 
 ## <a name="miscellaneous"></a>Çeşitli
