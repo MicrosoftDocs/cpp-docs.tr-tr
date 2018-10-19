@@ -9,17 +9,17 @@ ms.technology:
 ms.tgt_pltfrm: Linux
 ms.topic: conceptual
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-author: corob-msft
-ms.author: corob
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 17597ae7497288312b8ddcfcf53a77130fbbf2d8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b4ba6a2300bcdac46467debc544ed69294834f15
+ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383252"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410804"
 ---
 # <a name="configure-a-linux-project"></a>Linux projesi yapılandırma
 
