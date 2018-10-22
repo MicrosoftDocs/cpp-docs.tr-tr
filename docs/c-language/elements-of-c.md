@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8f6c6ff371d1c0a3d889abed1a55a8cfbe629fc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5e460160f0f08444ac22775e68248827ad3eebaf
+ms.sourcegitcommit: f9d9db80a8f13eae2c41337b974e1298109e33c5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099916"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49640748"
 ---
 # <a name="elements-of-c"></a>C Öğeleri
 

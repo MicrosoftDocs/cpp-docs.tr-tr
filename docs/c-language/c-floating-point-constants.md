@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4ceed8fa38ae2b6801fa13c65e54f1cd1cc711d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 23b5db965c8b4e29e8d25bad658189e7b37fc929
+ms.sourcegitcommit: f9d9db80a8f13eae2c41337b974e1298109e33c5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097698"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49640774"
 ---
 # <a name="c-floating-point-constants"></a>C Kayan Nokta Sabitleri
 
@@ -32,17 +32,27 @@ ms.locfileid: "46097698"
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Kayan noktaya sabiti*: &nbsp; &nbsp; *sabiti kesirli üs bölümü*<sub>iyileştirilmiş</sub> *kayan soneki* <sub>iyileştirilmiş</sub> &nbsp; &nbsp; *kayan basamak dizisi üs bölümü-soneki*<sub>iyileştirilmiş</sub>
+*Kayan noktaya sabiti*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Sabit kesirli* *üs bölümü*<sub>iyileştirilmiş</sub> *kayan soneki*<sub>iyileştirilmiş</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi* *üs bölümü* *kayan soneki*<sub>iyileştirilmiş</sub>
 
-*Sabit kesirli*: &nbsp; &nbsp; *basamak dizisi*<sub>iyileştirilmiş</sub> **.** *basamak dizisi* &nbsp; &nbsp; *basamak dizisi***.** 
+*Sabit kesirli*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi*<sub>iyileştirilmiş</sub> **.** *basamak dizisi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi***.**
 
-*Üs bölümü*: &nbsp; &nbsp; **e***oturum*<sub>iyileştirilmiş</sub> *basamak dizisi* &nbsp; &nbsp; **E***oturum*<sub>iyileştirilmiş</sub> *basamak dizisi* 
+*Üs bölümü*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**e** *oturum*<sub>iyileştirilmiş</sub> *basamak dizisi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**e** *oturum*<sub>iyileştirilmiş</sub> *basamak dizisi*
 
-*oturum* : biri &nbsp; &nbsp; **+ -**
+*oturum*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**+ -**
 
-*basamak dizisi*: &nbsp; &nbsp; *basamak* &nbsp; &nbsp; *basamak dizisi basamak*
+*basamak dizisi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi* *basamak*
 
-*Kayan soneki* : biri &nbsp; &nbsp; **f m F M**
+*Kayan soneki*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**f m F M**
 
 Rakamları ondalık (değer tamsayı kısmını) önce veya basamak (kesirli kısmı) ondalık ayırıcıdan sonra ancak ikisi atlayabilirsiniz. Bir üssü içeriyorsa ondalık bırakabilirsiniz. Hiçbir boşluk karakterleri rakam veya karakter sabitinin ayırabilirsiniz.
 

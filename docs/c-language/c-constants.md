@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 557c7f3c423821a069f2aff3dff228ce9632c30f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: da2bfdc1894d15ae06cb56e457cf96d7fcd20664
+ms.sourcegitcommit: f9d9db80a8f13eae2c41337b974e1298109e33c5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46089534"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49640722"
 ---
 # <a name="c-constants"></a>C Sabitleri
 
@@ -28,7 +28,8 @@ Bir "sabit" sayı, karakter ya da bir programda bir değer olarak kullanılan ka
 
 ## <a name="syntax"></a>Sözdizimi
 
-`constant`: *kayan noktaya sabiti*
+`constant`:<br/>
+*Kayan noktaya sabiti*
 
 *tamsayı sabiti*
 
