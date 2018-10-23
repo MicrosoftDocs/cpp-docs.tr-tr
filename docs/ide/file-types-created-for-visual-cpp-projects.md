@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 939937ec79ae3e6d172b48d22368176088064397
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dba47b8464c7fcdd170df1819b65aa448d8f8aeb
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808427"
 ---
 # <a name="file-types-created-for-visual-c-projects"></a>Visual C++ Projeleri için Oluşturulan Dosya Türleri
 
@@ -105,4 +105,3 @@ Bir projeye bir öğe eklediğinizde, öğe derlenebilir olup olmadığına bak�
 
 [Visual C++ proje oluşturma ve yönetme](../ide/creating-and-managing-visual-cpp-projects.md)<br>
 [Visual C++ Proje Türleri](../ide/visual-cpp-project-types.md)<br>
-[Diğer Diller için Sihirbaz Desteği](../ide/wizard-support-for-other-languages.md)

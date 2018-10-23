@@ -1,7 +1,7 @@
 ---
 title: CStringT sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d6a6afeca0bcf0d08a0a206983d3db33b61a041
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: f2d31d24007da1ec279e9c9762158b549e83d114
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49809128"
 ---
 # <a name="cstringt-class"></a>CStringT sınıfı
 
@@ -115,7 +115,7 @@ public CSimpleStringT<BaseType,
 
 #### <a name="parameters"></a>Parametreler
 
-*BaseType*  
+*BaseType*<br/>
 Dize sınıfı karakter türü. Aşağıdakilerden biri olabilir:
 
 - **char** (için ANSI karakter dizeleri).
@@ -124,7 +124,7 @@ Dize sınıfı karakter türü. Aşağıdakilerden biri olabilir:
 
 - TCHAR (için ANSI hem Unicode karakter dizeleri).
 
-*StringTraits*  
+*StringTraits*<br/>
 Dize sınıfı C çalışma zamanı (CRT) kitaplığı desteğiyle ve dize kaynakları bulunduğu yere gerekip gerekmediğini belirler. Aşağıdakilerden biri olabilir:
 
 - **StrTraitATL < wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsCRT < wchar_t** &#124; `char` &#124; **TCHAR >>**
@@ -343,13 +343,13 @@ void __cdecl AppendFormat(UINT nFormatID, [, argument] ...);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszFormat*  
+*pszFormat*<br/>
 Bir biçim denetimi dizesi.
 
-*nFormatID*  
+*nFormatID*<br/>
 Biçim Denetimi dizesi içeren dize kaynak kimliği.
 
-*Bağımsız değişken*  
+*Bağımsız değişken*<br/>
 İsteğe bağlı bağımsız değişkenler.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -370,7 +370,7 @@ int Collate(PCXSTR psz) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*psz*  
+*psz*<br/>
 Karşılaştırma için kullanılan bir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -391,7 +391,7 @@ int CollateNoCase(PCXSTR psz) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*psz*  
+*psz*<br/>
 Karşılaştırma için kullanılan bir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -416,7 +416,7 @@ int Compare(PCXSTR psz) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*psz*  
+*psz*<br/>
 Karşılaştırma için kullanılan bir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -445,7 +445,7 @@ int CompareNoCase(PCXSTR psz) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*psz*  
+*psz*<br/>
 Karşılaştırma için kullanılan bir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -539,28 +539,28 @@ CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :
 
 ### <a name="parameters"></a>Parametreler
 
-*pch*  
+*pch*<br/>
 Karakter uzunlukta bir dizi işaretçi *nLength*, boş sonlandırılmış.
 
-*nLength*  
+*nLength*<br/>
 Karakter sayısını *pch*.
 
-*ch*  
+*ch*<br/>
 Tek bir karakter.
 
-*pszSrc*  
+*pszSrc*<br/>
 Null ile sonlandırılmış bir dize bu kopyalanacak `CStringT` nesne.
 
-*pStringMgr*  
+*pStringMgr*<br/>
 Bellek Yöneticisi için bir işaretçiye `CStringT` nesne. Daha fazla bilgi için `IAtlStringMgr` ve bellek yönetimi için `CStringT`, bkz: [CStringT ile bellek yönetimi](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-*strSrc*  
+*strSrc*<br/>
 Mevcut bir `CStringT` bu kopyalanacak nesne `CStringT` nesne. Daha fazla bilgi için `CThisString` ve `CThisSimpleString`, Açıklamalar bölümüne bakın.
 
-*varSrc*  
+*varSrc*<br/>
 Bu kopyalanacak bir VARIANT nesnesi `CStringT` nesne.
 
-*BaseType*  
+*BaseType*<br/>
 Dize sınıfı karakter türü. Aşağıdakilerden biri olabilir:
 
 **char** (için ANSI karakter dizeleri).
@@ -569,13 +569,13 @@ Dize sınıfı karakter türü. Aşağıdakilerden biri olabilir:
 
 TCHAR (için ANSI hem Unicode karakter dizeleri).
 
-*bMFCDLL*  
+*bMFCDLL*<br/>
 Proje bir MFC DLL (TRUE) olup olmadığını belirten bir Boole değeri (FALSE).
 
-*SystemString*  
+*SystemString*<br/>
 Olmalıdır `System::String`, ve proje/CLR ile derlenmiş olmalıdır.
 
-*pString*  
+*pString*<br/>
 İçin bir tanıtıcı bir `CStringT` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -624,10 +624,10 @@ int Delete(int iIndex, int nCount = 1);
 
 ### <a name="parameters"></a>Parametreler
 
-*İIndex*  
+*İIndex*<br/>
 İlk karakter, sıfır tabanlı dizini `CStringT` silmek için nesne.
 
-*nCount*  
+*nCount*<br/>
 Kaldırılacak karakter sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -660,13 +660,13 @@ int Find(XCHAR ch, int iStart=0) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pszSub*  
+*pszSub*<br/>
 Aranacak alt dize.
 
-*iStart*  
+*iStart*<br/>
 Arama kullanmaya başlamak için dize veya baştan başlamanız için 0 karakter dizini.
 
-*ch*  
+*ch*<br/>
 Aranacak tek bir karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -691,7 +691,7 @@ int FindOneOf(PCXSTR pszCharSet) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pszCharSet*  
+*pszCharSet*<br/>
 Eşleşen karakterler içeren dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -717,13 +717,13 @@ void __cdecl Format(PCXSTR pszFormat,  [, argument] ...);
 
 ### <a name="parameters"></a>Parametreler
 
-*nFormatID*  
+*nFormatID*<br/>
 Biçim Denetimi dizesi içeren dize kaynak kimliği.
 
-*pszFormat*  
+*pszFormat*<br/>
 Bir biçim denetimi dizesi.
 
-*Bağımsız değişken*  
+*Bağımsız değişken*<br/>
 İsteğe bağlı bağımsız değişkenler.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -751,13 +751,13 @@ void __cdecl FormatMessage(PCXSTR pszFormat, [, argument]...);
 
 ### <a name="parameters"></a>Parametreler
 
-*nFormatID*  
+*nFormatID*<br/>
 Biçimlendirilmemiş ileti metni içeren dize kaynak kimliği.
 
-*pszFormat*  
+*pszFormat*<br/>
 Biçim Denetimi dizesi işaret eder. Ekler için taranır ve uygun şekilde biçimlendirilmiş. Çalışma zamanı işlevine benzer bir biçim dizesi *printf*-stil biçim dizeleri dışında bir rastgele sırayla eklenecek parametre sağlar.
 
-*Bağımsız değişken*  
+*Bağımsız değişken*<br/>
 İsteğe bağlı bağımsız değişkenler.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -783,10 +783,10 @@ void FormatMessageV(PCXSTR pszFormat, va_list* pArgList);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszFormat*  
+*pszFormat*<br/>
 Biçim Denetimi dizesi işaret eder. Ekler için taranır ve uygun şekilde biçimlendirilmiş. Çalışma zamanı işlevine benzer bir biçim dizesi `printf`-stil biçim dizeleri dışında bir rastgele sırayla eklenecek parametre sağlar.
 
-*pArgList*  
+*pArgList*<br/>
 Bağımsız değişkenler listesine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -808,10 +808,10 @@ void FormatV(PCXSTR pszFormat, va_list args);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszFormat*  
+*pszFormat*<br/>
 Biçim Denetimi dizesi işaret eder. Ekler için taranır ve uygun şekilde biçimlendirilmiş. Çalışma zamanı işlevine benzer bir biçim dizesi `printf`-stil biçim dizeleri dışında bir rastgele sırayla eklenecek parametre sağlar.
 
-*bağımsız değişken*  
+*bağımsız değişken*<br/>
 Bağımsız değişkenler listesine işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -834,7 +834,7 @@ BOOL GetEnvironmentVariable(PCXSTR pszVar);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszVar*  
+*pszVar*<br/>
 Belirtir ortam değişkeninin null ile sonlandırılmış bir dize işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -860,13 +860,13 @@ int Insert(int iIndex, XCHAR ch);
 
 ### <a name="parameters"></a>Parametreler
 
-*İIndex*  
+*İIndex*<br/>
 Önce ekleme yer alacak karakter dizini.
 
-*psz*  
+*psz*<br/>
 Eklenecek alt dize işaretçisi.
 
-*ch*  
+*ch*<br/>
 Eklenecek karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -891,7 +891,7 @@ CStringT Left(int nCount) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nCount*  
+*nCount*<br/>
 Ayıklanacak karakter sayısı `CStringT` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -920,13 +920,13 @@ BOOL LoadString(UINT nID);
 
 ### <a name="parameters"></a>Parametreler
 
-*HINSTANCE*  
+*HINSTANCE*<br/>
 Modülün örneği için bir tanıtıcı.
 
-*nID*  
+*nID*<br/>
 Bir Windows dize kaynak kimliği
 
-*wLanguageID*  
+*wLanguageID*<br/>
 Dize kaynağının dili.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1002,10 +1002,10 @@ CStringT Mid(int iFirst) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*iFirst*  
+*iFirst*<br/>
 Bu ilk karakterin sıfır tabanlı dizini `CStringT` ve çıkartılan alt dizenin içinde bulunan nesne.
 
-*nCount*  
+*nCount*<br/>
 Ayıklanacak karakter sayısı `CStringT` nesne. Ardından bu parametre sağlanmazsa, geri kalanında dize ayıklanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1054,22 +1054,22 @@ friend CStringT operator+(wchar_t ch1, const CStringT& str2,);
 
 ### <a name="parameters"></a>Parametreler
 
-*ch1*  
+*ch1*<br/>
 Bir dize ile birleştirmek için bir ANSI veya Unicode karakter.
 
-*Ch2*  
+*Ch2*<br/>
 Bir dize ile birleştirmek için bir ANSI veya Unicode karakter.
 
-*str1*  
+*str1*<br/>
 A `CStringT` bir dize veya karakter ile birleştirilecek.
 
-*str2*  
+*str2*<br/>
 A `CStringT` bir dize veya karakter ile birleştirilecek.
 
-*psz1*  
+*psz1*<br/>
 Bir dize veya karakter ile birleştirmek için null ile sonlandırılmış dizeye bir işaretçi.
 
-*psz2*  
+*psz2*<br/>
 Bir dize veya karakter ile birleştirmek için bir dize işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1108,22 +1108,22 @@ CStringT& operator+=(const VARIANT& var);
 str  
 Bir başvuru bir `CThisSimpleString` nesne.
 
-*bMFCDLL*  
+*bMFCDLL*<br/>
 Proje MFC DLL olup olmadığını belirten bir Boole değeri.
 
-*BaseType*  
+*BaseType*<br/>
 Dize temel türü.
 
-*var*  
+*var*<br/>
 Bu dizeye bitiştirmek için bir VARIANT nesnesi.
 
-*ch*  
+*ch*<br/>
 Bir dize ile birleştirmek için bir ANSI veya Unicode karakter.
 
-*pszSrc*  
+*pszSrc*<br/>
 Birleştirilmiş özgün dizeye yönelik işaretçi.
 
-*strSrc*  
+*strSrc*<br/>
 A `CStringT` Bu dizeye bitiştirmek için.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1155,22 +1155,22 @@ friend bool operator==(XCHAR ch1, const CStringT& str2,) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*ch1*  
+*ch1*<br/>
 Karşılaştırma için bir ANSI veya Unicode karakter.
 
-*Ch2*  
+*Ch2*<br/>
 Karşılaştırma için bir ANSI veya Unicode karakter.
 
-*str1*  
+*str1*<br/>
 A `CStringT` karşılaştırma için.
 
-*str2*  
+*str2*<br/>
 A `CStringT` karşılaştırma için.
 
-*psz1*  
+*psz1*<br/>
 Karşılaştırma için null ile sonlandırılmış dizeye bir işaretçi.
 
-*psz2*  
+*psz2*<br/>
 Karşılaştırma için null ile sonlandırılmış dizeye bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1197,22 +1197,22 @@ friend bool operator!=(XCHAR ch1, const CStringT& str2,) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*ch1*  
+*ch1*<br/>
 Bir dize ile birleştirmek için bir ANSI veya Unicode karakter.
 
-*Ch2*  
+*Ch2*<br/>
 Bir dize ile birleştirmek için bir ANSI veya Unicode karakter.
 
-*str1*  
+*str1*<br/>
 A `CStringT` karşılaştırma için.
 
-*str2*  
+*str2*<br/>
 A `CStringT` karşılaştırma için.
 
-*psz1*  
+*psz1*<br/>
 Karşılaştırma için null ile sonlandırılmış dizeye bir işaretçi.
 
-*psz2*  
+*psz2*<br/>
 Karşılaştırma için null ile sonlandırılmış dizeye bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1235,16 +1235,16 @@ friend bool operator<(PCXSTR psz1, const CStringT& str2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*str1*  
+*str1*<br/>
 A `CStringT` karşılaştırma için.
 
-*str2*  
+*str2*<br/>
 A `CStringT` karşılaştırma için.
 
-*psz1*  
+*psz1*<br/>
 Karşılaştırma için null ile sonlandırılmış dizeye bir işaretçi.
 
-*psz2*  
+*psz2*<br/>
 Karşılaştırma için null ile sonlandırılmış dizeye bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1273,16 +1273,16 @@ friend bool operator>(PCXSTR psz1, const CStringT& str2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*str1*  
+*str1*<br/>
 A `CStringT` karşılaştırma için.
 
-*str2*  
+*str2*<br/>
 A `CStringT` karşılaştırma için.
 
-*psz1*  
+*psz1*<br/>
 Karşılaştırma için null ile sonlandırılmış dizeye bir işaretçi.
 
-*psz2*  
+*psz2*<br/>
 Karşılaştırma için null ile sonlandırılmış dizeye bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1311,16 +1311,16 @@ friend bool operator<=(PCXSTR psz1, const CStringT& str2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*str1*  
+*str1*<br/>
 A `CStringT` karşılaştırma için.
 
-*str2*  
+*str2*<br/>
 A `CStringT` karşılaştırma için.
 
-*psz1*  
+*psz1*<br/>
 Karşılaştırma için null ile sonlandırılmış dizeye bir işaretçi.
 
-*psz2*  
+*psz2*<br/>
 Karşılaştırma için null ile sonlandırılmış dizeye bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1349,16 +1349,16 @@ friend bool operator>=(PCXSTR psz1, const CStringT& str2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*str1*  
+*str1*<br/>
 A `CStringT` karşılaştırma için.
 
-*str2*  
+*str2*<br/>
 A `CStringT` karşılaştırma için.
 
-*psz1*  
+*psz1*<br/>
 Karşılaştırma için bir dize işaretçisi.
 
-*psz2*  
+*psz2*<br/>
 Karşılaştırma için bir dize işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1385,7 +1385,7 @@ int Remove(XCHAR chRemove);
 
 ### <a name="parameters"></a>Parametreler
 
-*chRemove*  
+*chRemove*<br/>
 Bir dizeden kaldırılacak karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1411,16 +1411,16 @@ int Replace(XCHAR chOld, XCHAR chNew);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszOld*  
+*pszOld*<br/>
 Değiştirilmesi için null ile sonlandırılmış dizeye bir işaretçi *pszNew*.
 
-*pszNew*  
+*pszNew*<br/>
 Yerini alan bir null ile sonlandırılmış dizeye bir işaretçi *pszOld*.
 
-*chOld*  
+*chOld*<br/>
 Karakter değiştirilmesi *chNew*.
 
-*chNew*  
+*chNew*<br/>
 Değiştirme karakteri *chOld*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1458,7 +1458,7 @@ int ReverseFind(XCHAR ch) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*ch*  
+*ch*<br/>
 Aranacak karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1483,7 +1483,7 @@ CStringT Right(int nCount) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nCount*  
+*nCount*<br/>
 Ayıklanacak karakter sayısı `CStringT` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1510,7 +1510,7 @@ BSTR SetSysString(BSTR* pbstr) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*pbstr*  
+*pbstr*<br/>
 Bir karakter dizesine bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1537,7 +1537,7 @@ CStringT SpanExcluding(PCXSTR pszCharSet) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*pszCharSet*  
+*pszCharSet*<br/>
 Bir dize karakter kümesi yorumlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1562,7 +1562,7 @@ CStringT SpanIncluding(PCXSTR pszCharSet) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*pszCharSet*  
+*pszCharSet*<br/>
 Bir dize karakter kümesi yorumlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1587,10 +1587,10 @@ CStringT Tokenize(PCXSTR pszTokens, int& iStart) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*pszTokens*  
+*pszTokens*<br/>
 Belirteç ayırıcılar içeren bir dize. Bu sınırlayıcı sırası önemli değildir.
 
-*iStart*  
+*iStart*<br/>
 Aramaya başlamak için sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1629,10 +1629,10 @@ CStringT& Trim();
 
 ### <a name="parameters"></a>Parametreler
 
-*chTarget*  
+*chTarget*<br/>
 Kırpılmış olması için hedef karakter.
 
-*pszTargets*  
+*pszTargets*<br/>
 Kırpılmış olması için hedef karakterleri içeren bir dize işaretçisi. Tüm öndeki ve sondaki karakterler oluşumunu *pszTarget* gelen kırpılacak `CStringT` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1674,10 +1674,10 @@ CStringT& TrimLeft();
 
 ### <a name="parameters"></a>Parametreler
 
-*chTarget*  
+*chTarget*<br/>
 Kırpılmış olması için hedef karakter.
 
-*pszTargets*  
+*pszTargets*<br/>
 Kırpılmış olması için hedef karakterleri içeren bir dize işaretçisi. Karakter önde gelen tüm oluşumlarını *pszTarget* gelen kırpılacak `CStringT` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1710,10 +1710,10 @@ CStringT& TrimRight();
 
 ### <a name="parameters"></a>Parametreler
 
-*chTarget*  
+*chTarget*<br/>
 Kırpılmış olması için hedef karakter.
 
-*pszTargets*  
+*pszTargets*<br/>
 Kırpılmış olması için hedef karakterleri içeren bir dize işaretçisi. Tüm karakterleri oluşumunu sondaki *pszTarget* gelen kırpılacak `CStringT` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri

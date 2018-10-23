@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8c4e3003beb0e50887f6b765904095c65dd8f1b6
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 3a3d2926b2f9c958d3770737729726bbad7b13e7
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083664"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808920"
 ---
 # <a name="obtaining-metadata-with-schema-rowsets"></a>Şema Satır Kümeleri ile Meta Verileri Alma
 
@@ -31,13 +31,13 @@ Bazen satır kümesi açmaya gerek kalmadan sağlayıcısı, satır, tablo, süt
 OLE DB Şablonları, şema bilgileri almak için sınıf kümesi sağlar; Bu sınıflar önceden tanımlı bir şema satır kümeleri oluşturma ve listelenen [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md).  
   
 > [!NOTE]
->  OLAP kullanıyorsanız ve bazı kümeleriniz şeması satır kümesi sınıfları tarafından desteklenmez (örneğin, değişken sayıda sütuna sahip), kullanmayı düşünmelisiniz `CManualAccessor` veya `CDynamicAccessor`. Sütunlarda kaydırın ve her sütun için olası veri türlerini işlemek için case deyimleri kullanın.  
+> OLAP kullanıyorsanız ve bazı kümeleriniz şeması satır kümesi sınıfları tarafından desteklenmez (örneğin, değişken sayıda sütuna sahip), kullanmayı düşünmelisiniz `CManualAccessor` veya `CDynamicAccessor`. Sütunlarda kaydırın ve her sütun için olası veri türlerini işlemek için case deyimleri kullanın.  
   
 ## <a name="catalogschema-model"></a>Katalog/şema modeli  
 
 ANSI SQL veri depoları için bir katalog/şeması modeli tanımlar; OLE DB, bu modeli kullanır. Bu modelde, şemalar katalogları (veritabanları) içerir ve şemalar tabloları içerir.  
   
-- **Katalog** bir katalog veritabanı için başka bir addır. İlişkili şemalar koleksiyonudur. Belirtilen veri kaynağına ait katalogları (veritabanları) listelemek için kullanın [CCatalog](../../data/oledb/ccatalogs-ccataloginfo.md). Çok sayıda veritabanında yalnızca bir katalog olduğundan meta veriler bazen yalnızca şema bilgileri çağrılır.  
+- **Katalog** bir katalog veritabanı için başka bir addır. İlişkili şemalar koleksiyonudur. Belirtilen veri kaynağına ait katalogları (veritabanları) listelemek için kullanın [CCatalog](../../data/oledb/ccatalogs-ccataloginfo.md). Çok sayıda veritabanında yalnızca bir katalog olduğundan, meta veri şema bilgileri adlandırılır.  
   
 - **Şema** bir şemaya sahip olduğu veya belirli bir kullanıcı tarafından oluşturulan veritabanı nesneleri koleksiyonudur. Belirli bir kullanıcıya ait şemaları listelemek için kullanın [CSchemata](../../data/oledb/cschemata-cschematainfo.md).  
   
@@ -47,7 +47,7 @@ ANSI SQL veri depoları için bir katalog/şeması modeli tanımlar; OLE DB, bu 
   
 ## <a name="restrictions"></a>Kısıtlamalar  
 
-Şema bilgileri sorgulandığında, kısıtlamaları, ilgilendiğiniz bilgi türünü belirtmek için kullanabilirsiniz. Kısıtlamaları bir filtre veya sorguda Niteleyici olarak düşünebilirsiniz. Örneğin, sorgu içinde:  
+Şema bilgileri sorgulandığında, kısıtlamaları içinde ilginizi çeken bilgi türünü belirtmek için kullanabilirsiniz. Kısıtlamaları bir filtre veya sorguda Niteleyici olarak düşünebilirsiniz. Örneğin, sorgu içinde:  
   
 ```sql  
 SELECT * FROM authors where l_name = 'pivo'  
@@ -67,7 +67,7 @@ Kısıtlamaları belirtmek için başvurmak [ek B: şema satır kümeleri](/prev
   
 Bu nedenle, örneğin, tablo adı ile kısıtlamak istiyorsanız, TABLE_NAME üçüncü kısıtlama sütunu olduğuna dikkat edin ve sonra çağrı `Open`, aşağıdaki örnekte gösterildiği gibi üçüncü kısıtlama parametresi olarak istenen tablo adını belirtme.  
   
-#### <a name="to-use-schema-rowsets"></a>Şema satır kümeleri kullanmak için  
+### <a name="to-use-schema-rowsets"></a>Şema satır kümeleri kullanmak için  
   
 1. Üst bilgi dosyası Atldbsch.h içermelidir (Kuşkusuz, tüketici desteği de Atldbcli.h gerekir).  
   
@@ -89,7 +89,7 @@ Bu nedenle, örneğin, tablo adı ile kısıtlamak istiyorsanız, TABLE_NAME ü�
     }  
     ```  
   
-1. Bilgileri getirmek için uygun veri üyesi şeması satır kümesi nesnesi, örneğin, erişim `ColumnSchemaRowset.m_szColumnName`. Bu, COLUMN_NAME'e karşılık gelir. Her veri üyesi karşılık gelen için OLE DB sütunu için bkz [CColumns](../../data/oledb/ccolumns-ccolumnsinfo.md).  
+1. Bilgileri getirmek için uygun veri üyesi şeması satır kümesi nesnesi, örneğin, erişim `ColumnSchemaRowset.m_szColumnName`. Bu veri üyesi için COLUMN_NAME karşılık gelir. Her veri üyesi karşılık gelen için OLE DB sütunu için bkz [CColumns](../../data/oledb/ccolumns-ccolumnsinfo.md).  
   
 Şema satır kümesi başvurusu için typedef sınıfları, OLE DB Şablonları sağlanan (bkz [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)).  
   

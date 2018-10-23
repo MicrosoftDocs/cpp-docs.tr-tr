@@ -1,7 +1,7 @@
 ---
 title: 'TN041: MFC-OLE1 geçişi MFC-OLE 2 | Microsoft Docs'
 ms.custom: ''
-ms.date: 06/28/2018
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75177743b893bdcf48b52b27c25ea4070e000f88
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c2f93ffa79c5f737be032ae9edffa6c3e49c7055
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49809024"
 ---
 # <a name="tn041-mfcole1-migration-to-mfcole-2"></a>TN041: MFC/OLE 2'ye MFC/OLE1 Geçişi
 
@@ -301,7 +301,7 @@ Bu noktada, OCLIENT işlevsel bir OLE kapsayıcı uygulaması değil. Herhangi b
 
 OLE en ilginç özelliklerinin yerinde etkinleştirme (veya "Görsel düzenleme") biridir. Bu özellik, kapsayıcının kullanıcı arabirimi bölümlerini sağlanan için daha sorunsuz bir düzenleme arabirimi kullanıcıya almak sunucu uygulaması sağlar. Yerinde etkinleştirme OCLIENT uygulamak için bazı özel kaynakların yanı sıra bazı ek kod eklenmesi gerekir. Bu kaynaklar ve kod normalde AppWizard tarafından sağlanan — aslında, kodu buraya çoğunu doğrudan bir uygulamadan yeni AppWizard "Container" desteğiyle ödünç.
 
-Öncelikle, yerinde etkin olan bir öğe olduğunda kullanılacak bir menü kaynağı eklemek gereklidir. IDR_OCLITYPE kaynak kopyalama ve tüm dosya ve pencere pencereleri kaldırarak, bu ek menü kaynağı Visual C++'da oluşturabilirsiniz. İki ayırıcı çubukları grupları ayrımı belirtmek için dosya ve pencere pencereleri arasında eklenir (gibi görünmelidir: dosya &#124; &#124; pencere). Bu ayırıcılar anlamı ve nasıl sunucusu ve menüler birleştirilir hakkında daha fazla bilgi için "Menüler ve kaynaklar: menü birleştirme" konusuna bakın *OLE 2 sınıfları*.
+Öncelikle, yerinde etkin olan bir öğe olduğunda kullanılacak bir menü kaynağı eklemek gereklidir. IDR_OCLITYPE kaynak kopyalama ve tüm dosya ve pencere pencereleri kaldırarak, bu ek menü kaynağı Visual C++'da oluşturabilirsiniz. İki ayırıcı çubukları grupları ayrımı belirtmek için dosya ve pencere pencereleri arasında eklenir (gibi görünmelidir: dosya &#124; &#124; pencere). Bu ayırıcılar anlamı ve nasıl sunucusu ve menüler birleştirilir hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
 
 Oluşturulan bu menüleri oluşturduktan sonra bunları hakkında bilmeniz framework izin gerekir. Bu çağrılarak gerçekleştirilir `CDocTemplate::SetContainerInfo` belge şablonu listesine, Initınstance'a eklemeden önce belge şablonu için. Belge şablonu kaydetmek için yeni kod şöyle görünür:
 
@@ -618,7 +618,7 @@ Ele alınmayan çok daha fazla hata svritem.cpp de vardır. Bunlar "gerçek" hat
 \hiersvr\svrview.cpp(325) : error C2660: 'CopyToClipboard' : function does not take 2 parameters
 ```
 
-`COleServerItem::CopyToClipboard` artık 'bIncludeNative' bayrağı destekler. İlk parametre kaldırmak için yerel veri (sunucu öğenin serileştirme işlevi tarafından yazılan veriler) her zaman kopyalanır. Ayrıca, `CopyToClipboard` FALSE döndürmek yerine bir hata meydana geldiğinde bir özel durum oluşturur. Kod için CServerView::OnEditCopy aşağıdaki gibi değiştirin:
+`COleServerItem::CopyToClipboard` artık `bIncludeNative` bayrağı. İlk parametre kaldırmak için yerel veri (sunucu öğenin serileştirme işlevi tarafından yazılan veriler) her zaman kopyalanır. Ayrıca, `CopyToClipboard` FALSE döndürmek yerine bir hata meydana geldiğinde bir özel durum oluşturur. Kod için CServerView::OnEditCopy aşağıdaki gibi değiştirin:
 
 ```cpp
 void CServerView::OnEditCopy()
@@ -654,7 +654,7 @@ Bu sunucu uygulaması için "Görsel düzenleme" (veya yerinde etkinleştirme) e
 
 - Bu özel kaynak ve sınıflarını hakkında framework söylemeniz gerekir.
 
-Menü kaynağı oluşturmak kolaydır. Visual C++ çalıştırın, menü kaynağı IDR_HIERSVRTYPE IDR_HIERSVRTYPE_SRVR_IP adlı bir menü kaynağı kopyalayın. Yalnızca düzenleme ve Yardım menüsü açılır sol menü değiştirin. Düzenle ve Yardım menüler arasında menü iki ayırıcılar ekleyin (gibi görünmelidir: düzenleme &#124; &#124; yardımcı). İçinde "Menüler ve kaynaklar: menü birleştirme" Bu ayırıcılar anlamı ve nasıl sunucusu ve menüler birleştirilir hakkında daha fazla bilgi için bkz *OLE 2 sınıfları*.
+Menü kaynağı oluşturmak kolaydır. Visual C++ çalıştırın, menü kaynağı IDR_HIERSVRTYPE IDR_HIERSVRTYPE_SRVR_IP adlı bir menü kaynağı kopyalayın. Yalnızca düzenleme ve Yardım menüsü açılır sol menü değiştirin. Düzenle ve Yardım menüler arasında menü iki ayırıcılar ekleyin (gibi görünmelidir: düzenleme &#124; &#124; yardımcı). Bu ayırıcılar anlamı ve nasıl sunucusu ve menüler birleştirilir hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
 
 Alt araç çubuğu için bit eşlem işaretli bir "Sunucu" seçeneği ile yeni bir AppWizard tarafından oluşturulan uygulama adresinden kopyalayarak kolayca oluşturulabilir. Bu bit eşlem ardından Visual C++'ta içeri aktarılabilir. Bit eşlem, bir kimliği IDR_HIERSVRTYPE_SRVR_IP verdiğinizden emin olun.
 
@@ -677,7 +677,7 @@ pMenu->TrackPopupMenu(TPM_CENTERALIGN | TPM_RIGHTBUTTON,
     AfxGetApp()->m_pMainWnd);
 ```
 
-Başvuru fark *`AfxGetApp()->m_pMainWnd*`. Sunucu yerinde etkin olduğunda, ana pencere vardır ve m_pMainWnd ayarlanır, ancak genellikle görünmez durumdadır. Bu pencereyi ayrıca başvuruyor *ana* uygulama penceresinin sunucu tam olarak olduğunda görüntülenen MDI çerçeve penceresinin açın veya tek başına çalıştırın. Etkin pencereyi başvurmuyor — yerinde zaman etkin olduğu bir çerçeve penceresi türetilen `COleIPFrameWnd`. Bile, düzenleme, yerinde MFC'nin bu sürümünü yeni bir işlev eklerse doğru etkin pencereyi almaya `AfxGetMainWnd`. Genellikle, bu işlevi yerine kullanması gerekir *`AfxGetApp()->m_pMainWnd*`. Bu kod şu şekilde değiştirmesi gerekir:
+Başvuru fark `AfxGetApp()->m_pMainWnd`. Sunucu yerinde etkin olduğunda, ana pencere vardır ve m_pMainWnd ayarlanır, ancak genellikle görünmez durumdadır. Bu pencereyi ayrıca başvuruyor *ana* uygulama penceresinin sunucu tam olarak olduğunda görüntülenen MDI çerçeve penceresinin açın veya tek başına çalıştırın. Etkin pencereyi başvurmuyor — yerinde zaman etkin olduğu bir çerçeve penceresi türetilen `COleIPFrameWnd`. Bile, düzenleme, yerinde MFC'nin bu sürümünü yeni bir işlev eklerse doğru etkin pencereyi almaya `AfxGetMainWnd`. Genellikle, bu işlevi yerine kullanması gerekir `AfxGetApp()->m_pMainWnd`. Bu kod şu şekilde değiştirmesi gerekir:
 
 ```cpp
 pMenu->TrackPopupMenu(TPM_CENTERALIGN | TPM_RIGHTBUTTON,

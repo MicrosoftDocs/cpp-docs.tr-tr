@@ -1,7 +1,7 @@
 ---
 title: CStrBufT sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43c460d45e0f1ce41cebd463bc3ba6b7f295d9ca
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 82152ea3df6bb21ee1405790acf9d3fb2c9630c5
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46411189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808998"
 ---
 # <a name="cstrbuft-class"></a>CStrBufT sınıfı
 
@@ -43,7 +43,7 @@ class CStrBufT
 
 #### <a name="parameters"></a>Parametreler
 
-*TCharType*  
+*TCharType*<br/>
 Karakter türü `CStrBufT` sınıfı. Aşağıdakilerden biri olabilir:
 
 - **char** (için ANSI karakter dizeleri)
@@ -121,13 +121,13 @@ explicit CStrBufT(StringType& str) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*  
+*str*<br/>
 Arabellek ile ilişkili dize nesnesi. Genellikle, geliştirici, önceden tanımlanmış tür tanımları kullanırsınız `CStrBuf` (TCHAR değişken) `CStrBufA` (**char** değişken) ve `CStrBufW` (**wchar_t** değişken).
 
-*nMinLength*  
+*nMinLength*<br/>
 En düşük karakter arabelleği uzunluğu.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Dize uzunluğu otomatik olarak belirlenen belirler. Aşağıdakilerden biri olabilir:
 
 - AUTO_LENGTH dize uzunluğu, otomatik olarak belirlenen zaman [CSimpleStringT::Release](../../atl-mfc-shared/reference/csimplestringt-class.md#releasebuffer) çağrılır. Null ile sonlandırılmış bir dize olmalıdır. Varsayılan değer.
@@ -212,7 +212,7 @@ void SetLength(int nLength);
 
 ### <a name="parameters"></a>Parametreler
 
-*nLength*  
+*nLength*<br/>
 Yeni dize nesnesinin karakter arabelleği uzunluğu.
 
 > [!NOTE]

@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 70c44f0063d8fdb354f2b3b2fd222748d9d1d9bf
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 70607e0518d13015ee11895270ad3306cd3da24b
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46048103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808179"
 ---
 # <a name="passing-ole-db-conformance-tests"></a>OLE DB Uygunluk Testlerini Geçme
 
@@ -35,7 +35,7 @@ Sağlayıcıları daha tutarlı hale getirmek için veri erişim SDK'sı bir OLE
 Visual C++ 6.0, çok sayıda takma işlev değerleri ve özellikleri denetlemenizi izin vermek için OLE DB sağlayıcı şablonları eklendi. Bu işlevlerin çoğunu yanıt uygunluk testlerini olarak eklendi.  
   
 > [!NOTE]
->  OLE DB uygunluk testlerini geçirilecek sağlayıcınız için çeşitli doğrulama işlevler eklemenize gerek.  
+> OLE DB uygunluk testlerini geçirilecek sağlayıcınız için çeşitli doğrulama işlevler eklemenize gerek.  
   
 Bu sağlayıcı iki doğrulama rutinleri gerektirir. İlk yordam `CRowsetImpl::ValidateCommandID`, satır kümesi sınıfının bir parçasıdır. Bu satır kümesi oluşturma sırasında sağlayıcı şablonları tarafından çağırılır. Örnek, tüketicilerin dizinlerini desteklemiyor bildirmek için bu yordamı kullanır. İlk çağrı `CRowsetImpl::ValidateCommandID` (sağlayıcısı kullanan Not `_RowsetBaseClass` ilişkin arabirim eşlemesini eklenen typedef `CMyProviderRowset` içinde [yer işaretleri sağlayıcı desteği](../../data/oledb/provider-support-for-bookmarks.md), uzun bir satır şablon türüne sahip değilsiniz bağımsız değişkenler). Ardından, dizin parametresi NULL değilse DB_E_NOINDEX döndürür. (Bu dizin bizi kullanmak isteyen tüketici gösterir). Komut kimlikleri hakkında daha fazla bilgi için OLE DB belirtimine bakın ve Ara `IOpenRowset::OpenRowset`.  
   
@@ -61,29 +61,9 @@ HRESULT ValidateCommandID(DBID* pTableID, DBID* pIndexID)
   
 Sağlayıcı şablonları çağrı `OnPropertyChanged` her biri bir özellik değiştiğinde yöntemi `DBPROPSET_ROWSET` grubu. Diğer grupların özellikleri işlemek isterseniz, bunları uygun nesnesine eklediğiniz (diğer bir deyişle, `DBPROPSET_SESSION` denetimleri `CMyProviderSession` sınıfı).  
   
-Kod, ilk önce özelliğin diğerine bağlı olup olmadığını görmek için denetler. Özellik zincirlendiğini değilse, ayarlar `DBPROP_BOOKMARKS` özelliği true. OLE DB belirtiminin ek C özellikleri hakkında bilgi içerir. Bu bilgileri ayrıca, özellik için başka bir zincir olup olmadığını bildirir.  
+Kod, ilk önce özelliğin diğerine bağlı olup olmadığını görmek için denetler. Özellik zincirlendiğini değilse, ayarlar `DBPROP_BOOKMARKS` özelliğini `True`. OLE DB belirtiminin ek C özellikleri hakkında bilgi içerir. Bu bilgileri ayrıca, özellik için başka bir zincir olup olmadığını bildirir.  
   
 Eklemek isteyebilirsiniz `IsValidValue` kodunuzda rutin. Şablonları çağrı `IsValidValue` bir özelliğini ayarlamaya çalışırken. Bir özellik değerini ayarlarken ek işleme gerekiyorsa bu yöntemi geçersiz kılarsınız. Her bir özellik kümesi için aşağıdaki yöntemlerden birini olabilir.  
-  
-## <a name="threading-issues"></a>İş parçacığı oluşturma sorunları  
-
-Varsayılan olarak, OLE DB sağlayıcısı Sihirbazı ATL OLE DB sağlayıcısı Sihirbazı'nda bir grup modelinde çalıştırmak sağlayıcı için kod oluşturur. Bu kod ile uygunluk testleri çalıştırmayı denerseniz, başlangıçta hata alırsınız. LTM.exe, OLE DB uygunluk testlerini çalıştırmak için kullanılan araç varsayılan olarak ücretsiz olduğundan bu iş parçacıklarına. OLE DB sağlayıcısı Sihirbazı kod apartman modeli performans ve kullanım kolaylığı için varsayılan olarak ayarlanır.  
-  
-Bu sorunu düzeltmek için LTM değiştirebilir veya sağlayıcıyı değiştirebilirsiniz.  
-  
-#### <a name="to-change-ltm-to-run-in-apartment-threaded-mode"></a>İş parçacığı modu grupta çalıştırılacak LTM değiştirmek için  
-  
-1. LTM ana menüde'ı **Araçları**ve ardından **seçenekleri**.  
-  
-1. Üzerinde **genel** sekmesinde, iş parçacığı modeli **ücretsiz iş parçacıklı** için **Grup iş parçacıklı**.  
-  
-Sağlayıcınız ücretsiz iş parçacıklı modunda çalışacak şekilde değiştirmek için:  
-  
-- Sağlayıcı projenizdeki tüm örnekleri için arama `CComSingleThreadModel` değiştirin `CComMultiThreadModel`, veri kaynağı, oturum ve satır kümesi üst bilgilerinde olmalıdır.  
-  
-- İş parçacığı modeli .rgs dosyanızı değiştirmek **apartman** için **hem**.  
-  
-- Ücretsiz iş parçacıklı programlama (diğer bir deyişle, yazma kilidi) doğru programlama izleme kuralları.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 

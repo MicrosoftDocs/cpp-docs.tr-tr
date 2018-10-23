@@ -19,16 +19,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5f9e0e273df1221801a9b761cd7f45200e0b50c0
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 4a17ff7e6e78b21267b71ba495ba10a98e29cfe7
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808862"
 ---
 # <a name="output-parameters"></a>Çıktı Parametreleri
 
-Bir SQL komutu çağırmak için bir saklı yordamı çağırma benzerdir. İkisi arasındaki temel fark, saklı yordamlar çıkış parametreleri (veya "outparameters") kullanın ve dönüş değerleri ' dir.
+Bir saklı yordamı çağırma SQL komutunu çalıştırmaya benzer. İkisi arasındaki temel fark, saklı yordamlar çıkış parametreleri (veya "outparameters") kullanın ve dönüş değerleri ' dir.
 
 Aşağıdaki saklı yordamı, ilk '? 'dönüş değeri (phone) ve ikinci is'?' giriş parametresi (ad):
 
@@ -47,11 +47,11 @@ BEGIN_PARAM_MAP(CMySProcAccessor)
 END_PARAM_MAP()  
 ```  
 
-Uygulamanızı saklı yordamdan döndürülen çıkış işlemesi gerekir. OLE DB sağlayıcıları farklı çıkış parametrelerini ve dönüş sonucu işlenirken farklı zamanlarda dönüş değerleri. Örneğin, SQL Server (SQLOLEDB) için Microsoft OLE DB sağlayıcısı değil çıkış parametrelerini ve tüketici alınan veya saklı yordam tarafından döndürülen sonuç kümesini iptal sonra kadar kodlarını döndürür. Çıktı, sunucudan son TDS paketinde döndürülür.
+Uygulamanızı saklı yordamdan döndürülen çıkış işlemesi gerekir. OLE DB sağlayıcıları farklı çıkış parametrelerini ve dönüş sonucu işlenirken farklı zamanlarda dönüş değerleri. Örneğin, SQL Server (SQLOLEDB) için Microsoft OLE DB sağlayıcısı, çıkış parametrelerini değil ve tüketici alınan veya saklı yordam tarafından döndürülen sonuç kümesini iptal sonra kadar kodlarını döndürür. Çıktı, sunucudan son TDS paketinde döndürülür.
 
 ## <a name="row-count"></a>Satır sayısı
 
-Satır kümesi kapatana kadar outparameters sahip bir saklı yordamı yürütmek için OLE DB Tüketici Şablonları kullanıyorsanız, satır sayısı ayarlanmadı.
+OLE DB Tüketici Şablonları outparameters sahip bir saklı yordamı yürütmek için kullandığınız satır kümesi kapatana kadar satır sayısı ayarlanmamış.
 
 Örneğin, bir saklı yordam satır ve outparameter göz önünde bulundurun:
 
@@ -64,7 +64,7 @@ as
 return 0
 ```  
 
-\@_Rowcount outparameter'ı raporları kaç satır gerçekten test tablosundan döndürülmedi. Ancak, bu saklı yordam için en fazla 50 satır sayısını sınırlar. Örneğin, test 100 satırı varsa, (Bu kod yalnızca ilk 50 satır getireceğinden) satır sayısı 50 olur. Varsa yalnızca 30 Satır tablosunda, satır sayısı 30'dur. Çağırmalısınız `Close` veya `CloseAll` değerini yakalamadan önce outparameter'ı doldurmak için.
+\@_Rowcount outparameter'ı raporları test tablosundan kaç satır döndürülmedi. Ancak, bu saklı yordamı, 50 satır sayısını sınırlar. Örneğin, test 100 satırı varsa, (Bu kod yalnızca ilk 50 satır getireceğinden) satır sayısı 50 olur. Varsa yalnızca 30 Satır tablosunda, satır sayısı 30'dur. Çağırdığınızdan emin olun `Close` veya `CloseAll` değerini yakalamadan önce outparameter'ı doldurmak için.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

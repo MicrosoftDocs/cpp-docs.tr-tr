@@ -1,7 +1,7 @@
 ---
 title: Bit düzeyinde kaydırma işleçleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -17,34 +17,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4dfb5ffe13d8813eff0e3db4978eb1799bee1a85
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b1abcfa37373702df371b42efbf228fe748bfc45
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46020127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808205"
 ---
 # <a name="bitwise-shift-operators"></a>Bit Düzeyinde Kaydırma İşleçleri
 
-Kaydırma işleçleri ilk işlenen sola kaydırma (`<<`) sağa (`>>`) ikinci işlenenin konum sayısına göre belirtir.
+Kaydırma işleçleri ilk işlenen sola kaydırma (**&lt;&lt;**) sağa (**>>**) ikinci işlenenin konum sayısına göre belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Shift-expression*: *additive-expression*
-
-*Shift-expression*`<<`*additive-expression shift-expression*`>>`*additive-expression* 
+*Shift-expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression* **&lt; &lt;** *additive-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression* **>>** *additive-expression*
 
 Her iki işlenen de integral değerleri olmalıdır. Bu işleçlerden her zamanki aritmetik dönüşümleri gerçekleştirir; Sonuç türü dönüştürme işleminden sonra sol işlenenin türüdür.
 
 Leftward kaydırmalar için boşaltılmış doğru bitleri 0 olarak ayarlanır. Rightward kaydırmalar için sol boşaltılmış bitler birinci işlenenin türüne dönüştürme işleminden sonra doldurulur. Tür ise `unsigned`, bunlar 0 olarak ayarlayın. Aksi takdirde, imza biti bir kopyasını ile doldurulur. Deyim taşma olmadan sola kaydırma işleçleri
 
-```
+```C
 expr1 << expr2
 ```
 
 çarpma 2 eşdeğerdir<sup>Deyim2</sup>. Sağa kaydırma işleçleri
 
-```
+```C
 expr1 >> expr2
 ```
 
@@ -54,7 +55,7 @@ Bölüm 2 eşdeğerdir<sup>Deyim2</sup> varsa `expr1` imzalanmamış veya negati
 
 Dönüştürmeler taşma için kaydırma işleçleri sağlamaz veya dönüştürme işleminden sonra bir kaydırma işleminin sonucu birinci işlenenin türünde temsil edilemiyorsa underflow koşullar, bilgileri kaybolabilir.
 
-```
+```C
 unsigned int x, y, z;
 
 x = 0x00AA;

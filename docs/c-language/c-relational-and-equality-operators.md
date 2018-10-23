@@ -1,7 +1,7 @@
 ---
 title: C ilişkisel ve eşitlik işleçleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bf3c406059fe8744843e1353ad997acc19c499b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9251aeb93ec53c47ca9c7474785b5180c36a3887
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058243"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808959"
 ---
 # <a name="c-relational-and-equality-operators"></a>C İlişkisel ve Eşitlik İşleçleri
 
@@ -31,32 +31,28 @@ ms.locfileid: "46058243"
 
 **Söz dizimi**
 
-*İlişkisel ifade*: *shift-expression*
+*İlişkisel ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **&lt;** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **>** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **&lt; =** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade* **>=** *shift-expression*<br/>
 
-*İlişkisel ifade***\<***shift-expression* 
-
-*İlişkisel ifade***>***shift-expression* 
-
-*İlişkisel ifade***\<=***shift-expression* 
-
-*İlişkisel ifade***>=***shift-expression* 
-
-*Eşitlik ifade*: *ilişkisel ifade*
-
-*Eşitlik ifade***==***ilişkisel ifade* 
-
-*Eşitlik ifade***! =***ilişkisel ifade* 
+*Eşitlik ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İlişkisel ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Eşitlik ifade* **==** *ilişkisel ifade*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Eşitlik ifade* **! =** *ilişkisel ifade*
 
 İlişkisel ve eşitlik işleçleri aşağıdaki ilişkileri test:
 
 |İşleç|Test ilişkisi|
 |--------------|-------------------------|
-|**\<**|İkinci işlenenin değerinden ilk işlenenin|
+|**&lt;**|İkinci işlenenin değerinden ilk işlenenin|
 |**>**|Birinci işlenenin ikinci işlenenin büyük|
-|**\<=**|İlk işlenenin daha az veya eşit ikinci işlenen|
+|**&lt;=**|İlk işlenenin daha az veya eşit ikinci işlenen|
 |**>=**|Birinci işlenenin ikinci işlenen ya da daha büyük|
-|`==`|Birinci işlenenin ikinci işlenenin değerine eşit|
-|`!=`|Birinci işlenenin ikinci işlenenin değerine eşit değil|
+|**==**|Birinci işlenenin ikinci işlenenin değerine eşit|
+|**\!=**|Birinci işlenenin ikinci işlenenin değerine eşit değil|
 
 Yukarıdaki listede ilk dört işleçleri eşitlik işleçleri daha yüksek bir önceliğe sahip (`==` ve `!=`). Tabloda öncelik bilgi [önceliği ve ilişkilendirilebilirliği, C işleçleri](../c-language/precedence-and-order-of-evaluation.md).
 
@@ -64,7 +60,7 @@ Yukarıdaki listede ilk dört işleçleri eşitlik işleçleri daha yüksek bir 
 
 - Her iki işleneni de her ilişkisel veya eşitlik işleci aynı türü işaretçileri olabilir. Eşitlik (`==`) ve eşitsizlik (`!=`) işleçleri, Karşılaştırmanın sonucu gösterir iki işaretçi aynı bellek konumunda adresi olup olmadığını. Bir ilişkisel işleçleri (**\<**, **>**, **\<**=, ve **>**=), Karşılaştırmanın sonucu işaret edilen nesne iki bellek adresleri göreli konumunu belirtir. İlişkisel işleçler yalnızca uzaklıkları karşılaştırın.
 
-     İşaretçi karşılaştırması, yalnızca aynı nesneye bölümleri için tanımlanır. Bir dizi üyeleri için işaretçiler başvuruda bulunursanız, karşılık gelen alt simgeleri, karşılaştırma karşılaştırma eşdeğerdir. İlk dizi öğesinin adresidir "değerinden" son öğenin adresi. Söz konusu olduğunda, daha sonra bildirilen Yapı üyeleri için işaretçiler "büyüktür" yapısı içinde bildirilen üye işaretçileri yapılardır. Aynı union üyelerinin işaretçileri eşit olur.
+   İşaretçi karşılaştırması, yalnızca aynı nesneye bölümleri için tanımlanır. Bir dizi üyeleri için işaretçiler başvuruda bulunursanız, karşılık gelen alt simgeleri, karşılaştırma karşılaştırma eşdeğerdir. İlk dizi öğesinin adresidir "değerinden" son öğenin adresi. Söz konusu olduğunda, daha sonra bildirilen Yapı üyeleri için işaretçiler "büyüktür" yapısı içinde bildirilen üye işaretçileri yapılardır. Aynı union üyelerinin işaretçileri eşit olur.
 
 - Bir işaretçi değeri sabit değerin 0 eşitlik için karşılaştırılabilir (`==`) ve eşitsizlik (`!=`). 0 değeri ile bir işaretçi, "null" bir işaretçi olarak adlandırılır; diğer bir deyişle, geçerli bir bellek konumuna işaret etmiyor.
 
@@ -74,14 +70,14 @@ Yukarıdaki listede ilk dört işleçleri eşitlik işleçleri daha yüksek bir 
 
 Aşağıdaki örneklerde ilişkisel göstermek ve eşitlik işleçleri.
 
-```
+```C
 int x = 0, y = 0;
 if ( x < y )
 ```
 
 Çünkü `x` ve `y` olan eşittir ifadesi bu örnekte 0 değeri verir.
 
-```
+```C
 char array[10];
 char *p;
 
@@ -91,7 +87,7 @@ for ( p = array; p < &array[10]; p++ )
 
 Bu örnekte parça her öğeye ayarlar `array` boş karakter sabiti için.
 
-```
+```C
 enum color { red, white, green } col;
    .
    .

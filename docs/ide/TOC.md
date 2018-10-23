@@ -26,7 +26,6 @@
 ### [Özellik Sayfası XML Dosyaları](property-page-xml-files.md)
 ### [.vcxproj ve .props dosya yapısı](vcxproj-file-structure.md)
 ## [Uygulama Sihirbazları Kullanarak Masaüstü Projeleri Oluşturma](creating-desktop-projects-by-using-application-wizards.md)
-### [Diğer Diller için Sihirbaz Desteği](wizard-support-for-other-languages.md)
 ### [Derleme Görevleri Dosyası Projesi Oluşturma](creating-a-makefile-project.md)
 #### [Derleme Görevleri Dosyası Projesi Sihirbazı](makefile-project-wizard.md)
 ##### [Uygulama Ayarları, Derleme Görevleri Dosyası Proje Sihirbazı](application-settings-makefile-project-wizard.md)

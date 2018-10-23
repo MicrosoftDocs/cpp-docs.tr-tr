@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7d27245e06350a9174699fc20246d5e8997795d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: df0b938186716ab86b8eaeadd69d123ff14e57e0
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434385"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808777"
 ---
 # <a name="application-type-mfc-application-wizard"></a>Uygulama Türü, MFC Uygulama Sihirbazı
 
@@ -58,7 +58,7 @@ Bu sayfanın kullanın [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-applica
 
 - **Kaynak dili**
 
-   Kaynaklarınızın dili ayarlar. Listede kullanılabilir diller, sisteminizde Visual Studio tarafından yüklenmiş olarak görüntülenir. Sistem dilinizi dışında bir dil seçmek istiyorsanız, bu dil için uygun şablon klasörü zaten yüklü olmalıdır. Dil kaynakları kullanılabilir varsayılandan farklı yükleme hakkında daha fazla bilgi için **kaynak dili** listelemek için bkz: [diğer diller için sihirbaz desteği](../../ide/wizard-support-for-other-languages.md).
+   Kaynaklarınızın dili ayarlar. Listede kullanılabilir diller, sisteminizde Visual Studio tarafından yüklenmiş olarak görüntülenir. Sistem dilinizi dışında bir dil seçmek istiyorsanız, bu dil için uygun şablon klasörü zaten yüklü olmalıdır.
 
    Seçtiğiniz dili yansıtılır **yerelleştirilmiş dizeleri** seçeneği [belge şablonu dizeleri, MFC Uygulama Sihirbazı](../../mfc/reference/document-template-strings-mfc-application-wizard.md) Sihirbazı sayfası.
 

@@ -1,7 +1,7 @@
 ---
 title: Invokehelper yapısı | Microsoft Docs
 ms.custom: ''
-ms.date: 10/03/2018
+ms.date: 10/18/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 46cd067e41fcc9ac0d8d3dd9fe50c9edd23532c3
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 24abb55c0754b9dc5b5300ca6cd50079f003717a
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808374"
 ---
 # <a name="invokehelper-structure"></a>InvokeHelper Yapısı
 
@@ -114,7 +114,9 @@ struct InvokeHelper<TDelegateInterface, TCallback, 9> :
 ### <a name="parameters"></a>Parametreler
 
 *TDelegateInterface*<br/>
-*TCallback*  
+Temsilci arabirim türü.
+
+*TCallback*<br/>
 Olay işleyici işlevi türü.
 
 *argCount*<br/>

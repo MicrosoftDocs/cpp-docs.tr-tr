@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5aa7f72cc76f80e2304faf93ca0c6198c505e88a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8805878f880d1c195ddf89abc283719e73ff5182
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101650"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808933"
 ---
 # <a name="using-manual-accessors"></a>El ile Çalışan Erişimcileri Kullanma
 
@@ -36,7 +36,7 @@ Bilinmeyen bir komutu işlerken dört şeyler vardır:
   
 - Birden fazla dönüş satır kümeleri olup olmadığını  
   
-OLE DB tüketici şablonlarıyla Bunu yapmak için `CManualAccessor` sınıfı ve aşağıdaki adımları izleyin:  
+OLE DB Tüketici Şablonları ile bunları yapmak için `CManualAccessor` sınıfı ve aşağıdaki adımları izleyin:  
   
 1. Açık bir `CCommand` nesnesi ile `CManualAccessor` şablon parametresi olarak.  
   
@@ -44,7 +44,7 @@ OLE DB tüketici şablonlarıyla Bunu yapmak için `CManualAccessor` sınıfı v
     CCommand<CManualAccessor, CRowset, CMultipleResults> rs;  
     ```  
   
-1. Oturum için sorgu `IDBSchemaRowset` arabirim ve yordam parametreleri satır kümesi kullanın. Varsa `IDBSchemaRowset` arabirimi kullanılabilir değil, sorgu `ICommandWithParameters` arabirimi. Çağrı `GetParameterInfo` bilgi. Hiçbiri arabirimi varsa, hiçbir parametre yok varsayabilirsiniz.  
+1. Oturum için sorgu `IDBSchemaRowset` arabirim ve yordam parametreleri satır kümesi kullanın. Varsa `IDBSchemaRowset` arabirimi kullanılamıyor, sorgu `ICommandWithParameters` arabirimi. Çağrı `GetParameterInfo` bilgi. Hiçbiri arabirimi varsa, hiçbir parametre yok varsayabilirsiniz.  
   
 1. Her parametre için çağrı `AddParameterEntry` parametreleri ekleyin ve bunları ayarlamak için.  
   

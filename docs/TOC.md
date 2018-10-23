@@ -14,7 +14,6 @@
 # [C++ Standart Kitaplığı](standard-library/cpp-standard-library-reference.md)
 # [Windows Geliştirme](windows/overview-of-windows-programming-in-cpp.md)
 # [Linux Geliştirme](linux/download-install-and-setup-the-linux-development-workload.md)
-# [C++/CLI ile .NET Geliştirme](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 # [Visual C++'da Bulut ve Web Programlama](cloud/cloud-and-web-programming-in-visual-cpp.md)
 # [Paralel Programlama](parallel/parallel-programming-in-visual-cpp.md)
 # [Veri Erişimi](data/data-access-in-cpp.md)

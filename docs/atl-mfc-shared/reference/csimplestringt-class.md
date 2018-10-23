@@ -1,7 +1,7 @@
 ---
 title: CSimpleStringT sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7a4abff1faaa8fe93f15fb2d4a7e5ba15d6e434
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1f835558bb4d97f90857d44ef63e4b8f6075d2c0
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434667"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49809154"
 ---
 # <a name="csimplestringt-class"></a>CSimpleStringT sınıfı
 
@@ -66,7 +66,7 @@ class CSimpleStringT
 
 ### <a name="parameters"></a>Parametreler
 
-*BaseType*  
+*BaseType*<br/>
 Dize sınıfı karakter türü. Aşağıdakilerden biri olabilir:
 
 - **char** (için ANSI karakter dizeleri).
@@ -151,13 +151,13 @@ void Append(PCXSTR pszSrc);
 ```
 #### <a name="parameters"></a>Parametreler
 
-*strSrc*  
+*strSrc*<br/>
 `CSimpleStringT` Eklenecek nesne.
 
-*pszSrc*  
+*pszSrc*<br/>
 Eklenecek karakter içeren bir dize işaretçisi.
 
-*nLength*  
+*nLength*<br/>
 Sona eklenecek karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -187,7 +187,7 @@ void AppendChar(XCHAR ch);
 ```
 #### <a name="parameters"></a>Parametreler
 
-*ch*  
+*ch*<br/>
 Eklenecek karakter
 
 ### <a name="remarks"></a>Açıklamalar
@@ -209,13 +209,13 @@ static void CopyChars(
 
 #### <a name="parameters"></a>Parametreler
 
-*pchDest*  
+*pchDest*<br/>
 Bir karakter dizesine bir işaretçi.
 
-*pchSrc*  
+*pchSrc*<br/>
 Kopyalanacak karakter içeren bir dize işaretçisi.
 
-*nChars*  
+*nChars*<br/>
 Sayısını *pchSrc* kopyalanacak karakter.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -249,13 +249,13 @@ static void CopyCharsOverlapped(
 
 #### <a name="parameters"></a>Parametreler
 
-*pchDest*  
+*pchDest*<br/>
 Bir karakter dizesine bir işaretçi.
 
-*pchSrc*  
+*pchSrc*<br/>
 Kopyalanacak karakter içeren bir dize işaretçisi.
 
-*nChars*  
+*nChars*<br/>
 Sayısını *pchSrc* kopyalanacak karakter.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -280,19 +280,19 @@ explicit CSimpleStringT(IAtlStringMgr* pStringMgr) throw();
 ```
 #### <a name="parameters"></a>Parametreler
 
-*strSrc*  
+*strSrc*<br/>
 Mevcut bir `CSimpleStringT` bu kopyalanacak nesne `CSimpleStringT` nesne.
 
-*pchSrc*  
+*pchSrc*<br/>
 Karakter uzunlukta bir dizi işaretçi *nLength*, olmayan değişkende null.
 
-*pszSrc*  
+*pszSrc*<br/>
 Null ile sonlandırılmış bir dize bu kopyalanacak `CSimpleStringT` nesne.
 
-*nLength*  
+*nLength*<br/>
 Karakter sayısını `pch`.
 
-*pStringMgr*  
+*pStringMgr*<br/>
 Bellek Yöneticisi için bir işaretçi `CSimpleStringT` nesne. Hakkında daha fazla bilgi için `IAtlStringMgr` ve bellek yönetimi için `CSimpleStringT`, bkz: [bellek yönetimi ve CStringT](../memory-management-with-cstringt.md).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -419,7 +419,7 @@ XCHAR GetAt(int iChar) const;
 ```
 #### <a name="parameters"></a>Parametreler
 
-*iChar*  
+*iChar*<br/>
 Öğesindeki taban karakterin sıfır tabanlı dizin `CSimpleStringT` nesne. *İChar* parametresi değerinden büyük veya 0'a eşit ve döndürdüğü değerden daha az olmalıdır [GetLength](#getlength). Aksi takdirde, `GetAt` bir özel durum oluşturur.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -451,7 +451,7 @@ PXSTR GetBuffer();
 ```
 #### <a name="parameters"></a>Parametreler
 
-*nMinBufferLength*  
+*nMinBufferLength*<br/>
 Karakter arabelleği içerebileceği karakter en küçük sayısı. Bu değer, null sonlandırıcıyı ortasının içermez.
 
 Varsa *nMinBufferLength* geçerli arabelleğin uzunluğundan büyük `GetBuffer` geçerli arabelleğini yok eder, istenen boyutta bir arabellek ile değiştirir ve nesne başvuru sayısı sıfır olarak sıfırlar. Daha önce çağrılırsa [LockBuffer](#lockbuffer) bu arabelleği, arabellek kilit kaybedersiniz.
@@ -498,7 +498,7 @@ PXSTR GetBufferSetLength(int nLength);
 ```
 #### <a name="parameters"></a>Parametreler
 
-*nLength*  
+*nLength*<br/>
 Tam boyutunu `CSimpleStringT` karakter karakter arabelleği.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -696,7 +696,7 @@ XCHAR operator[](int iChar) const;
 ```
 #### <a name="parameters"></a>Parametreler
 
-*iChar*  
+*iChar*<br/>
 Bir karakter dizesi, sıfır tabanlı dizini.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -727,7 +727,7 @@ XCHAR operator[](int iChar) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*iChar*  
+*iChar*<br/>
 Bir karakter dizesi, sıfır tabanlı dizini.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -755,13 +755,13 @@ CSimpleStringT& operator +=(wchar_t ch);
 ```
 #### <a name="parameters"></a>Parametreler
 
-*pszSrc*  
+*pszSrc*<br/>
 Null ile sonlandırılmış dizeye bir işaretçi.
 
-*strSrc*  
+*strSrc*<br/>
 Varolan bir işaretçi `CSimpleStringT` nesne.
 
-*ch*  
+*ch*<br/>
 Eklenecek karakter.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -789,10 +789,10 @@ CSimpleStringT& operator =(const CSimpleStringT& strSrc);
 ```
 #### <a name="parameters"></a>Parametreler
 
-*pszSrc*  
+*pszSrc*<br/>
 Null ile sonlandırılmış dizeye bir işaretçi.
 
-*strSrc*  
+*strSrc*<br/>
 Varolan bir işaretçi `CSimpleStringT` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -894,7 +894,7 @@ void Preallocate( int nLength);
 ```
 #### <a name="parameters"></a>Parametreler
 
-*nLength*  
+*nLength*<br/>
 Tam boyutunu `CSimpleStringT` karakter karakter arabelleği.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -934,7 +934,7 @@ void ReleaseBuffer(int nNewLength = -1);
 ```
 #### <a name="parameters"></a>Parametreler
 
-*nNewLength*  
+*nNewLength*<br/>
 Yeni karakter, bir null Sonlandırıcı sayılmaz dize uzunluğu. Sonlandırılan dize null ise,-1 varsayılan değerini ayarlar `CSimpleStringT` boyut geçerli dize uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -974,7 +974,7 @@ void ReleaseBufferSetLength(int nNewLength);
 ```
 #### <a name="parameters"></a>Parametreler
 
-*nNewLength*  
+*nNewLength*<br/>
 Yayımlanan dizenin uzunluğu
 
 ### <a name="remarks"></a>Açıklamalar
@@ -992,10 +992,10 @@ void SetAt(int iChar, XCHAR ch);
 ```
 #### <a name="parameters"></a>Parametreler
 
-*iChar*  
+*iChar*<br/>
 Öğesindeki taban karakterin sıfır tabanlı dizin `CSimpleStringT` nesne. *İChar* parametresi değerinden büyük veya 0'a eşit ve döndürdüğü değerden daha az olmalıdır [GetLength](#getlength).
 
-*ch*  
+*ch*<br/>
 Yeni karakter.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1023,7 +1023,7 @@ void SetManager(IAtlStringMgr* pStringMgr);
 ```
 #### <a name="parameters"></a>Parametreler
 
-*pStringMgr*  
+*pStringMgr*<br/>
 Yeni bellek yöneticisi için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1051,10 +1051,10 @@ void SetString(PCXSTR pszSrc);
 ```
 #### <a name="parameters"></a>Parametreler
 
-*pszSrc*  
+*pszSrc*<br/>
 Null ile sonlandırılmış dizeye bir işaretçi.
 
-*nLength*  
+*nLength*<br/>
 Karakter sayısını *pszSrc*.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1091,7 +1091,7 @@ ATL_NOINLINE static int StringLength(PCXSTR psz) throw();
 ```
 #### <a name="parameters"></a>Parametreler
 
-*psz*  
+*psz*<br/>
 Null ile sonlandırılmış dizeye bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1121,7 +1121,7 @@ void Truncate(int nNewLength);
 ```
 #### <a name="parameters"></a>Parametreler
 
-*nNewLength*  
+*nNewLength*<br/>
 Yeni dize uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar

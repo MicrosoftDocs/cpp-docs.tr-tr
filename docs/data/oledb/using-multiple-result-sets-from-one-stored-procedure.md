@@ -16,20 +16,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3e75a100bb5b56b613419160a3ea063bce42bbdb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 70fab2751e216ca90dbe09e31c88f9aa80aa7b90
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808270"
 ---
 # <a name="using-multiple-result-sets-from-one-stored-procedure"></a>Depolanmış Bir Yordamdan Birden Çok Sonuç Kümesi Kullanma
 
-En saklı yordamlar, birden çok sonuç kümesi döndürür. Saklı bir yordam genellikle bir veya daha çok select deyimi. Tüketici bu tüm sonuç kümelerindeki işlemek için göz önünde bulundurmanız gerekir.  
+En saklı yordamlar, birden çok sonuç kümesi döndürür. Saklı bir yordam genellikle bir veya daha çok select deyimi. Tüketici tüm sonuç kümelerindeki işlemek için bu ekleme göz önünde bulundurmanız gerekir.  
   
-### <a name="to-handle-multiple-result-sets"></a>Birden çok sonuç kümesini işlemek için  
+## <a name="to-handle-multiple-result-sets"></a>Birden çok sonuç kümesini işlemek için  
   
-1. Oluşturma bir `CCommand` sınıfıyla `CMultipleResults` ile kendi tercih ettiğiniz ve şablon bağımsız değişken olarak. Genellikle, dinamik veya el ile erişimci budur. Başka türde bir erişimci kullanırsanız, her satır kümesi için çıkış sütunları belirlemek mümkün olmayabilir.  
+1. Oluşturma bir `CCommand` sınıfıyla `CMultipleResults` şablon bağımsız değişkeni olarak ve genellikle bir dinamik veya el ile erişimci seçtiğiniz erişimcisi. Başka türde bir erişimci kullanırsanız, her satır kümesi için çıkış sütunları belirlemek mümkün olmayabilir.  
   
 1. Saklı yordamı zamanki yürütmek ve sütunları bağlayın (bkz [nasıl yaparım veri getirme?](../../data/oledb/fetching-data.md)).  
   

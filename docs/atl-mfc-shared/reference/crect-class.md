@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b135b318a77835d22d7547e78f3b5c4f7ee3daee
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: e8033ceb709ab66c37e1801cd4033e6830467f2b
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328591"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808621"
 ---
 # <a name="crect-class"></a>CRect sınıfı
 
@@ -259,7 +259,7 @@ void CopyRect(LPCRECT lpSrcRect) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpSrcRect*  
+*lpSrcRect*<br/>
 İşaret [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` kopyalanacak nesne.
 
 ### <a name="example"></a>Örnek
@@ -300,34 +300,34 @@ CRect(POINT topLeft, POINT bottomRight) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*m*  
+*m*<br/>
 Sol konumu belirtir `CRect`.
 
-*T*  
+*T*<br/>
 Üst belirtir `CRect`.
 
-*r*  
+*r*<br/>
 Doğru konumunu belirtir `CRect`.
 
-*b*  
+*b*<br/>
 Sonuna belirten `CRect`.
 
-*srcRect*  
+*srcRect*<br/>
 Başvurduğu [RECT](../../mfc/reference/rect-structure.md) koordinatları ile yapısı `CRect`.
 
-*lpSrcRect*  
+*lpSrcRect*<br/>
 İşaret `RECT` koordinatları ile yapısı `CRect`.
 
-*Noktası*  
+*Noktası*<br/>
 Dikdörtgenin oluşturulması başlangıç noktasını belirtir. Sol üst köşesine karşılık gelir.
 
-*Boyutu*  
+*Boyutu*<br/>
 Sol üst köşedeki kendisinden oluşturulacağı dikdörtgenin öteleme sağ alt köşeye belirtir.
 
-*Sol üst*  
+*Sol üst*<br/>
 Sol üst konumunu belirtir `CRect`.
 
-*BottomRight*  
+*BottomRight*<br/>
 Sağ alt köşesinin konumunu belirtir `CRect`.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -387,28 +387,28 @@ void DeflateRect(int l, int t, int r, int b) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 Sol deflate için birim sayısını ve sağ tarafında belirtir `CRect`.
 
-*Y*  
+*Y*<br/>
 Üst ve alt deflate için birim sayısını belirtir `CRect`.
 
-*Boyutu*  
+*Boyutu*<br/>
 A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) veya [CSize](csize-class.md) deflate için birim sayısını belirten `CRect`. `cx` Değerini belirtir ve sol tarafında deflate için birim sayısını ve `cy` değeri üst ve alt deflate için birim sayısını belirtir.
 
-*lpRect*  
+*lpRect*<br/>
 İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` her yan deflate için birim sayısını belirtir.
 
-*m*  
+*m*<br/>
 Sol tarafındaki deflate için birim sayısını belirtir `CRect`.
 
-*T*  
+*T*<br/>
 Üst deflate için birim sayısını belirtir `CRect`.
 
-*r*  
+*r*<br/>
 Sağ tarafında deflate için birim sayısını belirtir `CRect`.
 
-*b*  
+*b*<br/>
 Alt deflate için birim sayısını belirtir `CRect`.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -442,7 +442,7 @@ BOOL EqualRect(LPCRECT lpRect) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect*  
+*lpRect*<br/>
 İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` bir dikdörtgenin sol ve sağ alt köşesinde koordinatları içeren nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -518,28 +518,28 @@ void InflateRect(int l, int t, int r,  int b) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 Sol doldurmak için birim sayısını ve sağ tarafında belirtir `CRect`.
 
-*Y*  
+*Y*<br/>
 Üst ve alt doldurmak için birim sayısını belirtir `CRect`.
 
-*Boyutu*  
+*Boyutu*<br/>
 A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) veya [CSize](csize-class.md) doldurmak için birim sayısını belirten `CRect`. `cx` Değerini belirtir ve sol tarafında doldurmak için birim sayısını ve `cy` değeri üst ve alt doldurmak için birim sayısını belirtir.
 
-*lpRect*  
+*lpRect*<br/>
 İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` her yan doldurmak için birim sayısını belirtir.
 
-*m*  
+*m*<br/>
 Sol tarafındaki doldurmak için birim sayısını belirtir `CRect`.
 
-*T*  
+*T*<br/>
 Üst doldurmak için birim sayısını belirtir `CRect`.
 
-*r*  
+*r*<br/>
 Sağ tarafında doldurmak için birim sayısını belirtir `CRect`.
 
-*b*  
+*b*<br/>
 Alt doldurmak için birim sayısını belirtir `CRect`.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -568,10 +568,10 @@ BOOL IntersectRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect1*  
+*lpRect1*<br/>
 İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` kaynak dikdörtgenin içeren nesne.
 
-*lpRect2*  
+*lpRect2*<br/>
 İşaret eden bir `RECT` yapısı veya `CRect` kaynak dikdörtgenin içeren nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -684,7 +684,7 @@ void MoveToX(int x) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 Mutlak x koordinatını dikdörtgenin sol üst köşesinin.
 
 ### <a name="example"></a>Örnek
@@ -712,13 +712,13 @@ void MoveToXY(POINT point) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 Mutlak x koordinatını dikdörtgenin sol üst köşesinin.
 
-*Y*  
+*Y*<br/>
 Mutlak y koordinatını dikdörtgenin sol üst köşesinin.
 
-*Noktası*  
+*Noktası*<br/>
 A `POINT` yapısı mutlak dikdörtgenin sol üst köşesine belirtme.
 
 ### <a name="example"></a>Örnek
@@ -745,7 +745,7 @@ void MoveToY(int y) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Y*  
+*Y*<br/>
 Mutlak y koordinatını dikdörtgenin sol üst köşesinin.
 
 ### <a name="example"></a>Örnek
@@ -803,16 +803,16 @@ void OffsetRect(SIZE size) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 Sola taşı için ya da sağ belirtir. Sola Taşı negatif olmalıdır.
 
-*Y*  
+*Y*<br/>
 Yukarı veya aşağı taşımak için belirtir. Yukarı taşımak için negatif olmalıdır.
 
-*Noktası*  
+*Noktası*<br/>
 İçeren bir [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](cpoint-class.md) nesne taşımak, her iki boyutu belirtme.
 
-*Boyutu*  
+*Boyutu*<br/>
 İçeren bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) nesne taşımak, her iki boyutu belirtme.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -872,7 +872,7 @@ void operator=(const RECT& srcRect) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*srcRect*  
+*srcRect*<br/>
 Kaynak dikdörtgen ifade eder. Olabilir bir [RECT](../../mfc/reference/rect-structure.md) veya `CRect`.
 
 ### <a name="example"></a>Örnek
@@ -900,7 +900,7 @@ BOOL operator==(const RECT& rect) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Rect*  
+*Rect*<br/>
 Kaynak dikdörtgen ifade eder. Olabilir bir [RECT](../../mfc/reference/rect-structure.md) veya `CRect`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -946,7 +946,7 @@ BOOL operator!=(const RECT& rect) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Rect*  
+*Rect*<br/>
 Kaynak dikdörtgen ifade eder. Olabilir bir [RECT](../../mfc/reference/rect-structure.md) veya `CRect`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -993,13 +993,13 @@ void operator+=(LPCRECT lpRect) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*  
+*Noktası*<br/>
 A [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](cpoint-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.
 
-*Boyutu*  
+*Boyutu*<br/>
 A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.
 
-*lpRect*  
+*lpRect*<br/>
 İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` her iki tarafındaki doldurmak için birim sayısını içeren nesne `CRect`.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1036,13 +1036,13 @@ void operator-=(LPCRECT lpRect) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*  
+*Noktası*<br/>
 A [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](cpoint-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.
 
-*Boyutu*  
+*Boyutu*<br/>
 A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.
 
-*lpRect*  
+*lpRect*<br/>
 İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` her iki tarafındaki deflate için birim sayısını içeren nesne `CRect`.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1077,7 +1077,7 @@ void operator&=(const RECT& rect) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Rect*  
+*Rect*<br/>
 İçeren bir [RECT](../../mfc/reference/rect-structure.md) veya `CRect`.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1101,7 +1101,7 @@ void operator|=(const RECT& rect) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Rect*  
+*Rect*<br/>
 İçeren bir `CRect` veya [RECT](../../mfc/reference/rect-structure.md).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1140,13 +1140,13 @@ CRect operator+(SIZE size) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*  
+*Noktası*<br/>
 A [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](cpoint-class.md) dönüş değeri taşımak için birim sayısını belirten bir nesne.
 
-*Boyutu*  
+*Boyutu*<br/>
 A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) dönüş değeri taşımak için birim sayısını belirten bir nesne.
 
-*lpRect*  
+*lpRect*<br/>
 İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` döndürülen değer her iki tarafındaki doldurmak için birim sayısını içeren nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1184,13 +1184,13 @@ CRect operator-(LPCRECT lpRect) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*  
+*Noktası*<br/>
 A [noktası](../../mfc/reference/point-structure.md) yapısı veya `CPoint` dönüş değeri taşımak için birim sayısını belirten bir nesne.
 
-*Boyutu*  
+*Boyutu*<br/>
 A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya `CSize` dönüş değeri taşımak için birim sayısını belirten bir nesne.
 
-*lpRect*  
+*lpRect*<br/>
 İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` döndürülen değer her iki tarafındaki deflate için birim sayısını içeren nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1226,7 +1226,7 @@ CRect operator&(const RECT& rect2) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*rect2*  
+*rect2*<br/>
 İçeren bir [RECT](../../mfc/reference/rect-structure.md) veya `CRect`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1264,7 +1264,7 @@ rect2) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*rect2*  
+*rect2*<br/>
 İçeren bir [RECT](../../mfc/reference/rect-structure.md) veya `CRect`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1306,7 +1306,7 @@ BOOL PtInRect(POINT point) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*  
+*Noktası*<br/>
 İçeren bir [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](cpoint-class.md) nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1358,16 +1358,16 @@ void SetRect(int x1, int y1, int x2, int y2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*x1*  
+*x1*<br/>
 Sol üst köşesinin x koordinatını belirtir.
 
-*Y1*  
+*Y1*<br/>
 Sol üst köşesinin y koordinatını belirtir.
 
-*x2*  
+*x2*<br/>
 Sağ alt köşesinin x koordinatını belirtir.
 
-*y2*  
+*y2*<br/>
 Sağ alt köşesinin y koordinatını belirtir.
 
 ### <a name="example"></a>Örnek
@@ -1438,10 +1438,10 @@ BOOL SubtractRect(LPCRECT lpRectSrc1, LPCRECT lpRectSrc2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRectSrc1*  
+*lpRectSrc1*<br/>
 İşaret [RECT](../../mfc/reference/rect-structure.md) yapısı veya `CRect` içinden bir dikdörtgen çıkarılsın için nesne.
 
-*lpRectSrc2*  
+*lpRectSrc2*<br/>
 İşaret `RECT` yapısı veya `CRect` dikdörtgenden çıkarılsın için nesne tarafından işaret edilen *lpRectSrc1* parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1526,10 +1526,10 @@ BOOL UnionRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpRect1*  
+*lpRect1*<br/>
 İşaret eden bir [RECT](../../mfc/reference/rect-structure.md) veya `CRect` kaynak dikdörtgenin içeren.
 
-*lpRect2*  
+*lpRect2*<br/>
 İşaret eden bir `RECT` veya `CRect` kaynak dikdörtgenin içeren.
 
 ### <a name="return-value"></a>Dönüş Değeri

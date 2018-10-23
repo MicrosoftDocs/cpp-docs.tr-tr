@@ -1,7 +1,7 @@
 ---
 title: XML verilerine erişme | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: cfde3980e58ba86d6923eaac765332a23e40ad7e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d7db1d790ca9caeea6bd9c7853139f59ffa0ab6c
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062507"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808725"
 ---
 # <a name="accessing-xml-data"></a>XML Verilerine Erişme
 
@@ -34,7 +34,7 @@ XML verileri bir veri kaynağından veri almak için iki ayrı yöntem vardır: 
 |İşlevi|CStreamRowset|CXMLAccessor|  
 |-------------------|-------------------|------------------|  
 |Aktarılan veri miktarı|Verileri tek seferde tüm sütunları ve satırları alır.|Tüm sütunları verilerden ancak aynı anda yalnızca bir satır alır. Satırlar gibi yöntemlerle gitmeniz gerekir `MoveNext`.|  
-|Biçimlendirme dizesi|SQL Server XML dizesi olarak biçimlendirir ve tüketiciye gönderir.|Satır kümesi verileri yerel biçiminde (sağlayıcı Unicode dize olarak gönderin isteği) alır ve ardından XML biçiminde veriler içeren bir dize oluşturur.|  
+|Biçimlendirme dizesi|SQL Server XML dizesi olarak biçimlendirir ve tüketiciye gönderir.|Satır kümesi verileri yerel biçiminde (sağlayıcı Unicode dize olarak gönderin isteği) alır ve ardından verileri tutan XML biçiminde bir dize oluşturur.|  
 |Biçimlendirme denetimi|Belirli bir düzeyde bazı SQL Server 2000 özgü özelliklerini ayarlayarak XML dizesi nasıl biçimlendirildiğini denetim var.|Oluşturulan XML dizesi biçimi üzerinde denetiminiz yoktur.|  
   
 Sırada `CStreamRowset` XML biçiminde veri alma, daha fazla bir genel etkili yöntem, yalnızca desteklenen SQL Server 2000 tarafından sağlar.  
@@ -61,12 +61,12 @@ Bunun aksine, çağırdığınızda `CCommand::Open` (ancak `CStreamRowset` olar
 myCmd.m_spStream->Read()  
 ```  
   
-SQL Server 2000, XML biçimlendirme gerçekleştirir ve tüm sütun ve satır kümesinin bir XML dizesi olarak tüm satırları döndürür.  
+SQL Server 2000, XML biçimlendirmesi yapar ve tüm sütun ve satır kümesinin bir XML dizesi olarak tüm satırları döndürür.  
   
 Bir örnek için `Read` yöntemi, "Ekleyerek XML destek tüketiciye" bölümüne bakın [basit tüketici uygulama](../../data/oledb/implementing-a-simple-consumer.md).  
   
 > [!NOTE]
->  XML desteği kullanarak `CStreamRowset` yalnızca çalışan SQL Server 2000 ve SQL Server 2000 (MDAC yüklü) için bir OLE DB sağlayıcısı sahip olmasını gerektirir.  
+> XML desteği kullanarak `CStreamRowset` yalnızca çalışan SQL Server 2000 ve SQL Server 2000 (MDAC yüklü) için bir OLE DB sağlayıcısı sahip olmasını gerektirir.  
   
 ## <a name="retrieving-xml-data-using-cxmlaccessor"></a>CXMLAccessor kullanarak XML verilerini alma  
 

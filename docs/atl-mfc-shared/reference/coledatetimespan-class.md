@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f313b659629f824828c52948b9a73c50f86b5e40
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: be0e05d61d4949deaee683c5b8f43d18e0501d23
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808985"
 ---
 # <a name="coledatetimespan-class"></a>COleDateTimeSpan sınıfı
 
@@ -124,7 +124,7 @@ bool operator>=(const COleDateTimeSpan& dateSpan) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dateSpan*  
+*dateSpan*<br/>
 `COleDateTimeSpan` Karşılaştırmak için.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -154,7 +154,7 @@ COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dblSpanSrc*  
+*dblSpanSrc*<br/>
 Yeni içine kopyalanacak gün sayısını `COleDateTimeSpan` nesne.
 
 *lDays*, *nHours*, *nMins*, *nSecs*  
@@ -189,7 +189,7 @@ CString Format(UINT nID) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*pFormat*  
+*pFormat*<br/>
 Bir biçimlendirme dizesi benzer `printf` biçimlendirme dizesi. Biçimlendirme kodları, öncesinde bir yüzde (`%`) oturum açın, ilgili değiştirilir `COleDateTimeSpan` bileşeni. Biçimlendirme dizesi diğer karakterler döndürülen dizeye değiştirilmeden kopyalanır. Değer ve biçimlendirme kodları anlamını `Format` aşağıda listelenmiştir:
 
 - **%H** geçerli günün saat
@@ -204,7 +204,7 @@ Yukarıda listelenen dört biçimi kodları biçimi kabul edileceği yalnızca k
 
 -
 
-*nID*  
+*nID*<br/>
 Biçim Denetimi dizesi kaynak kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -731,7 +731,7 @@ void SetStatus(DateTimeSpanStatus status) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Durumu*  
+*Durumu*<br/>
 Bu yeni durum değeri `COleDateTimeSpan` nesne.
 
 ### <a name="remarks"></a>Açıklamalar

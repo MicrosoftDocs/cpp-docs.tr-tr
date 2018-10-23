@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4a3f80d3e421701ac0612ddb2552d10d1eff1f02
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6d8bcd61fb77b12db612bb12ae516a8665caaee8
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808231"
 ---
 # <a name="consumer-wizard-generated-methods"></a>Tüketici Sihirbazı Tarafından Oluşturulan Yöntemler
 
@@ -40,7 +40,7 @@ ATL OLE DB Tüketicisi Sihirbazı ve MFC Uygulama Sihirbazı hangi bilmeniz gere
   
 - `CloseAll` Tüm açık satır kümeleri kapatır ve tüm komut yürütme serbest bırakır.  
   
-- `OpenRowset` tüketicinin satır veya satır kümeleri açma OpenAll tarafından çağrılır.  
+- `OpenRowset` çağıran `OpenAll` tüketicinin satır veya satır kümeleri'ni açın.  
   
 - `GetRowsetProperties` Hangi özellikler ile ayarlanabilir satır kümesinin özelliği için bir işaretçi alır.  
   
@@ -91,7 +91,7 @@ int main(int argc, char* argv[])
   
 ## <a name="remarks"></a>Açıklamalar  
 
-Tanımladığınız gerçekleştiriyorsanız bir `HasBookmark` yöntemi `OpenAll` kod DBPROP_IRowsetLocate özelliğini ayarlar; yalnızca bunu sağlayıcınız bu özellik destekliyorsa emin olun.  
+Tanımladığınız gerçekleştiriyorsanız bir `HasBookmark` yöntemi `OpenAll` kod kümeleri `DBPROP_IRowsetLocate` özelliği; yalnızca bunu sağlayıcınız bu özellik destekliyorsa emin olun.  
   
 ## <a name="openrowset"></a>OpenRowset  
   
@@ -104,7 +104,7 @@ HRESULT OpenRowset(const CSession& session, LPCWSTR szCommand = NULL);
   
 `OpenAll` satır veya satır kümeleri tüketicideki açmak için bu yöntemi çağırır. Genellikle, arama gerekmez `OpenRowset` birden çok veri kaynakları/oturumları/satır kümesi ile çalışmak istemiyorsanız. `OpenRowset` komut veya tablo sınıf üstbilgi dosyasında bildirilir:  
   
-```  
+```cpp  
 // OLE DB Template version:  
 HRESULT OpenRowset(DBPROPSET *pPropSet = NULL)  
 {  
@@ -117,7 +117,7 @@ HRESULT OpenRowset(DBPROPSET *pPropSet = NULL)
 }  
 ```  
   
-Öznitelikler bu yöntem farklı şekilde uygular. Bu sürüm, bir oturum nesnesi ve farklı bir geçirebilirsiniz ancak db_command içinde belirtilen komut dizesi varsayılan olarak bir komut dizesi alır. Tanımladığınız gerçekleştiriyorsanız bir `HasBookmark` yöntemi `OpenRowset` kod DBPROP_IRowsetLocate özelliğini ayarlar; yalnızca bunu sağlayıcınız bu özellik destekliyorsa emin olun.  
+Öznitelikler bu yöntem farklı şekilde uygular. Bu sürüm, bir oturum nesnesi ve farklı bir geçirebilirsiniz ancak db_command içinde belirtilen komut dizesi varsayılan olarak bir komut dizesi alır. Tanımladığınız gerçekleştiriyorsanız bir `HasBookmark` yöntemi `OpenRowset` kod kümeleri `DBPROP_IRowsetLocate` özelliği; yalnızca bunu sağlayıcınız bu özellik destekliyorsa emin olun.  
   
 ```cpp  
 // Attribute-injected version:  
@@ -142,7 +142,7 @@ HRESULT OpenRowset(const CSession& session, LPCWSTR szCommand=NULL)
 void GetRowsetProperties(CDBPropSet* pPropSet);  
 ```  
   
-Bu yöntem satır kümesinin özellik kümesi için bir işaretçi alır; Bu işaretçinin DBPROP_IRowsetChange gibi özelliklerini ayarlamak için kullanabilirsiniz. `GetRowsetProperties` Kullanıcı kayıt sınıfı şu şekilde kullanılır. Ek satır kümesi özelliklerini ayarlamak için bu kodu değiştirebilirsiniz:  
+Bu yöntem satır kümesinin özellik kümesi için bir işaretçi alır; Bu işaretçinin özelliklerini ayarlamak için kullanabileceğiniz `DBPROP_IRowsetChange`. `GetRowsetProperties` Kullanıcı kayıt sınıfı şu şekilde kullanılır. Ek satır kümesi özelliklerini ayarlamak için bu kodu değiştirebilirsiniz:  
   
 ```cpp  
 void GetRowsetProperties(CDBPropSet* pPropSet)  

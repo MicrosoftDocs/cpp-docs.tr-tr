@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6ac44a9a27b5c3ad62279dc3065aa9e0aac5236
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d9f48ffb9cad787159a40a58d85e6bff5dacc475
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378234"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808257"
 ---
 # <a name="cfixedstringt-class"></a>CFixedStringT sınıfı
 
@@ -39,10 +39,10 @@ class CFixedStringT : private CFixedStringMgr, public StringType
 
 #### <a name="parameters"></a>Parametreler
 
-*StringType*  
+*StringType*<br/>
 Sabit dize nesnesi için temel sınıf olarak kullanılan ve herhangi biri `CStringT`-türüne göre. Bazı örnekler `CString`, `CStringA`, ve `CStringW`.
 
-*t_nChars*  
+*t_nChars*<br/>
 Arabellekteki depolanan karakterlerin sayısı.
 
 ## <a name="members"></a>Üyeler
@@ -101,13 +101,13 @@ explicit CFixedStringT(const unsigned char* psz);
 
 ### <a name="parameters"></a>Parametreler
 
-*psz*  
+*psz*<br/>
 Null ile sonlandırılmış bir dize bu kopyalanacak `CFixedStringT` nesne.
 
-*str*  
+*str*<br/>
 Mevcut bir `CFixedStringT` bu kopyalanacak nesne `CFixedStringT` nesne.
 
-*pStringMgr*  
+*pStringMgr*<br/>
 Bellek Yöneticisi için bir işaretçi `CFixedStringT` nesne. Daha fazla bilgi için `IAtlStringMgr` ve bellek yönetimi için `CFixedStringT`, bkz: [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -129,10 +129,10 @@ CFixedStringT<StringType, t_nChars>& operator=(const StringType& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*  
+*str*<br/>
 Null ile sonlandırılmış bir dize bu kopyalanacak `CFixedStringT` nesne.
 
-*psz*  
+*psz*<br/>
 Mevcut bir `CFixedStringT` bu kopyalanacak `CFixedStringT` nesne.
 
 ### <a name="remarks"></a>Açıklamalar

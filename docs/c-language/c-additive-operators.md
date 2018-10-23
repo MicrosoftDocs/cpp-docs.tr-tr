@@ -1,7 +1,7 @@
 ---
 title: C ek işleçleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7be460ace4e407a328c0cf23c9e6c9af09d17ca0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 339904e3fe75c712254f3a7802fc76a0e283c8e5
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101489"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808361"
 ---
 # <a name="c-additive-operators"></a>C Ek İşleçleri
 
@@ -31,14 +31,13 @@ Ek işleçlerini eklenmesini gerçekleştirme (**+**) ve çıkarma (**-**).
 
 ## <a name="syntax"></a>Sözdizimi
 
-*additive-expression*: *çarpma ifadesi*
-
-*additive-expression***+***çarpma ifadesi* 
-
-*additive-expression***-***çarpma ifadesi* 
+*additive-expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*çarpma ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression* **+** *çarpma ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression* **-** *çarpma ifadesi*
 
 > [!NOTE]
->  Ancak söz diziminin *additive-expression* içerir *ifade çarpma*, bu ifadeleri kullanarak çarpma gerekli olduğunu göstermez. Aşağıdaki sözdizimine bakın [C dili sözdizimi özeti](../c-language/c-language-syntax-summary.md), için *ifade çarpma*, *atama ifadesini*, ve *tekli ifade*.
+> Ancak söz diziminin *additive-expression* içerir *ifade çarpma*, bu ifadeleri kullanarak çarpma gerekli olduğunu göstermez. Aşağıdaki sözdizimine bakın [C dili sözdizimi özeti](../c-language/c-language-syntax-summary.md), için *ifade çarpma*, *atama ifadesini*, ve *tekli ifade*.
 
 İşlenen, tamsayı veya kayan değer olabilir. Bazı ek işlemler her işlecinin tartışma altında belirtildiği gibi işaretçi değerleri üzerinde de gerçekleştirilebilir.
 

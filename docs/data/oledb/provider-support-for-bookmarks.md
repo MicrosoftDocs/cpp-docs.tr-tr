@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e7f97011e66c72c79c3ab6db3b6011e1d4d76ce7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d01674929522326c21eea2ad7d40f33e8ff6fae6
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49807530"
 ---
 # <a name="provider-support-for-bookmarks"></a>Yer İşaretleri Sağlayıcı Desteği
 
@@ -247,7 +247,7 @@ HRESULT hr = table.Compare(table.dwBookmark, table.dwBookmark,
 }  
 ```  
   
-While döngüsü çağırmak için kod içeren `Compare` yönteminde `IRowsetLocate` arabirimi. Tam aynı yer işaretleri arasında karşılaştırma yaptığımızı düşündüğümüzde, kodunuz geçirmesi gerekir. Ayrıca, böylece bir süre sonra kullanabileceğiniz bir yer işareti geçici bir değişkende depolayın döngü çağırabilmek için `MoveToBookmark` Tüketici Şablonları işlevi. `MoveToBookmark` İşlev çağrılarında `GetRowsAt` yönteminde `IRowsetLocate`.  
+**Sırada** döngü çağırmak için kod içeren `Compare` yönteminde `IRowsetLocate` arabirimi. Tam aynı yer işaretleri arasında karşılaştırma yaptığımızı düşündüğümüzde, kodunuz geçirmesi gerekir. Ayrıca, böylece sonra kullanabileceğiniz bir yer işareti geçici bir değişkende depolayın **sırada** döngü çağırabilmek için `MoveToBookmark` Tüketici Şablonları işlevi. `MoveToBookmark` İşlev çağrılarında `GetRowsAt` yönteminde `IRowsetLocate`.  
   
 Ayrıca, tüketicideki kullanıcı kayıt güncelleştirmeniz gerekiyor. Sınıfında bir yer işareti ve bir girdi işlemek için bir giriş ekleyin `COLUMN_MAP`:  
   

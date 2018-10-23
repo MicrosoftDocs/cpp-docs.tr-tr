@@ -1,7 +1,7 @@
 ---
 title: CTime sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 10/12/2018
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c14dc8c8c9b697ecb7dcf1ff227eb7a76ad7cfa5
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 8c99fe44b5012e08a4b32a9e84d4255e4ee2b7e0
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328603"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808842"
 ---
 # <a name="ctime-class"></a>CTime sınıfı
 
@@ -49,7 +49,7 @@ Bir mutlak saatini ve tarihini temsil eder.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-class CTime  
+class CTime
 ```
 
 ## <a name="members"></a>Üyeler
@@ -119,17 +119,17 @@ Kullanma hakkında daha fazla bilgi için `CTime`, makalelere göz atın [tarih 
 Karşılaştırma işleçleri.
 
 ```
-bool operator==(CTime time) const throw(); 
+bool operator==(CTime time) const throw();
 bool operator!=(CTime time) const throw();
 bool operator<(CTime time) const throw();
 bool operator>(CTime time) const throw();
 bool operator<=(CTime time) const throw();
-bool operator>=(CTime time) const throw(); 
+bool operator>=(CTime time) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*saat*  
+*saat*<br/>
 `CTime` Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -152,22 +152,21 @@ CTime(int nYear, int nMonth, int nDay,
 CTime(WORD wDosDate, WORD wDosTime, int nDST = -1);
 CTime(const SYSTEMTIME& st, int nDST = - 1) throw();
 CTime(const FILETIME& ft, int nDST = - 1);
-CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
+CTime(const DBTIMESTAMP& dbts, int nDST = -1) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*timeSrc*  
+*timeSrc*<br/>
 Belirten bir `CTime` zaten var. nesne.
 
-*saat*  
-A **__time64_t** zaman değeri, 1 Ocak 1970 UTC saniye sayısıdır. Bu, yerel saat olarak ayarlanacağını unutmayın. Örneğin, New York'ta ve oluşturursanız bir `CTime` 0, bir parametre geçirerek nesne [CTime::GetMonth](#getmonth) 12 döndürür.  
+*saat*<br/>
+A **__time64_t** zaman değeri, 1 Ocak 1970 UTC saniye sayısıdır. Bu, yerel saat olarak ayarlanacağını unutmayın. Örneğin, New York'ta ve oluşturursanız bir `CTime` 0, bir parametre geçirerek nesne [CTime::GetMonth](#getmonth) 12 döndürür.
 
-
-*nYear*, *nMonth*, *nhatalı günü*, *nHour*, *nMin*, *nSec*  
+*nYear*, *nMonth*, *nhatalı günü*, *nHour*, *nMin*, *nSec*<br/>
 Yeni içine kopyalanacak tarih ve saat değerlerini gösteren `CTime` nesne.
 
-*nDST*  
+*nDST*<br/>
 Günışığından yararlanmanın etkin olup olmadığını gösterir. Üç değerlerden biri olabilir:
 
 - *nDST* 0Standard zaman kümesine etkindir.
@@ -176,16 +175,16 @@ Günışığından yararlanmanın etkin olup olmadığını gösterir. Üç değ
 
 - *nDST* 0The varsayılan değerinden düşük bir değere ayarlayın. Standart Saati veya günışığından yararlanmanın etkin olup olmadığını otomatik olarak hesaplar.
 
-*wDosDate*, *wDosTime*  
+*wDosDate*, *wDosTime*<br/>
 Bir tarih/saat değerine dönüştürülür ve yeni kopyalanan için tarih ve saat değerlerini MS-DOS `CTime` nesne.
 
-*St*  
+*St*<br/>
 A [SYSTEMTIME](../../mfc/reference/systemtime-structure.md) yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `CTime` nesne.
 
-*ft*  
+*ft*<br/>
 A [FILETIME](../../mfc/reference/filetime-structure.md) yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `CTime` nesne.
 
-dbts  
+*dbts*<br/>
 Geçerli yerel saat içeren bir DBTIMESTAMP yapısı bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -200,13 +199,13 @@ Her Oluşturucu, aşağıda açıklanmıştır:
 
 - `CTime( int, int, ...);` Oluşturur bir `CTime` her bileşeni ile yerel saat bileşenlerini bir nesneden kısıtlı aşağıdaki aralıklara:
 
-   |Bileşen|Aralık|  
-   |---------------|-----------|  
-   |*nYear*|1970-3000|  
-   |*nMonth*|1-12|  
-   |*nhatalı günü*|1-31|  
-   |*nHour*|0-23|  
-   |*nMin*|0-59|  
+   |Bileşen|Aralık|
+   |---------------|-----------|
+   |*nYear*|1970-3000|
+   |*nMonth*|1-12|
+   |*nhatalı günü*|1-31|
+   |*nHour*|0-23|
+   |*nMin*|0-59|
    |*nSec*|0-59|
 
    Bu oluşturucu, UTC uygun dönüştürme yapar. Bir Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar veya daha fazla zaman bileşenleri aralık dışında. Bağımsız değişkenler çağırmadan önce doğrulamanız gerekir. Bu oluşturucu, yerel saati bekler.
@@ -231,16 +230,16 @@ Daha fazla bilgi için [SYSTEMTIME](https://msdn.microsoft.com/library/windows/d
 Biçimlendirilmiş bir tarih-saat değeri gösterimini oluşturmak için bu üye işlevini çağırın.
 
 ```
-CString Format(LPCTSTR pszFormat) const; 
-CString Format(UINT nFormatID) const; 
+CString Format(LPCTSTR pszFormat) const;
+CString Format(UINT nFormatID) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*pszFormat*  
+*pszFormat*<br/>
 Bir biçimlendirme dizesi benzer `printf` biçimlendirme dizesi. Biçimlendirme kodları, öncesinde bir yüzde (`%`) oturum açın, ilgili değiştirilir `CTime` bileşeni. Biçimlendirme dizesi diğer karakterler döndürülen dizeye değiştirilmeden kopyalanır. Çalışma zamanı işlevi görmek [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) biçimlendirme kodları listesi için.
 
-*nFormatID*  
+*nFormatID*<br/>
 Bu biçim tanımlayan dize kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -268,10 +267,10 @@ CString FormatGmt(UINT nFormatID) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*pszFormat*  
+*pszFormat*<br/>
 Benzer şekilde bir biçimlendirme dizesi belirtir `printf` biçimlendirme dizesi. Çalışma zamanı işlevi görmek [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) Ayrıntılar için.
 
-*nFormatID*  
+*nFormatID*<br/>
 Bu biçim tanımlayan dize kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -298,7 +297,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dbts*  
+*dbts*<br/>
 Geçerli yerel saat içeren bir DBTIMESTAMP yapısı bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -323,7 +322,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*timeDest*  
+*timeDest*<br/>
 Bir başvuru bir [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) dönüştürülen bir tarih/saat değerini tutacak yapısı `CTime` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -359,7 +358,7 @@ Geçerli sistem tarihi ve saati Eşgüdümlü Evrensel Saat (UTC) döndürür.
 Günü temsil tarafından döndürür `CTime` nesne.
 
 ```
-int GetDay() const throw(); 
+int GetDay() const throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -404,7 +403,7 @@ struct tm* GetGmtTm(struct tm* ptm) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*ptm*  
+*ptm*<br/>
 Saat verilerini alacak arabellek işaret eder. Bu işaretçinin NULL ise bir özel durum oluşturulur.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -451,7 +450,7 @@ struct tm* GetLocalTm(struct tm* ptm) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*ptm*  
+*ptm*<br/>
 Saat verilerini alacak arabellek işaret eder. Bu işaretçinin NULL ise bir özel durum oluşturulur.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -574,7 +573,7 @@ CTime& operator=(__time64_t time) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*saat*  
+*saat*<br/>
 Yeni tarih/saat değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -597,10 +596,10 @@ CTimeSpan operator-(CTime time) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Zaman aralığı*  
+*Zaman aralığı*<br/>
 `CTimeSpan` Eklenirken veya çıkarılırken için nesne.
 
-*saat*  
+*saat*<br/>
 `CTime` Çıkarılsın için nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -626,7 +625,7 @@ CTime& operator-=(CTimeSpan span) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*  
+*yayılma*<br/>
 `CTimeSpan` Eklenirken veya çıkarılırken için nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -654,7 +653,7 @@ CArchive& Serialize64(CArchive& ar);
 
 ### <a name="parameters"></a>Parametreler
 
-*ar*  
+*ar*<br/>
 `CArchive` Güncelleştirmek istediğiniz bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri

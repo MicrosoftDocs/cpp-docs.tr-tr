@@ -1,7 +1,7 @@
 ---
 title: Basit bir satır kümesinde geçiş yapma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/19/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -19,42 +19,53 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9a127b5cd611177c28e6e434b04060edf3bdcb55
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 62a1b6c0aa164e6b564c505873fbc85f38b9febf
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46028642"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808322"
 ---
 # <a name="traversing-a-simple-rowset"></a>Basit Bir Satır Kümesinde Geçiş Yapma
 
-Aşağıdaki örnek komutlar içermeyen bir hızlı ve kolay veritabanı erişimi gösterir. ATL projesinde aşağıdaki tüketici kodu adlı tablosundan kayıtları alır *Sanatçılar* bir Microsoft Access veritabanına ODBC için Microsoft OLE DB sağlayıcısı kullanılarak. Kod oluşturur bir [CTable](../../data/oledb/ctable-class.md) tablo nesnesi ile erişimci tabanlı kullanıcı kayıt sınıfı `CArtists`. Bir bağlantı açar, bağlantıda bir oturum açar ve tabloyu oturum açar.  
+Aşağıdaki örnek komutlar içermeyen hızlı ve kolay veritabanı erişimi gösterir. ATL projesinde aşağıdaki tüketici kodu adlı tablosundan kayıtları alır *Sanatçılar* bir Microsoft Access veritabanına ODBC için Microsoft OLE DB sağlayıcısı kullanılarak. Kod oluşturur bir [CTable](../../data/oledb/ctable-class.md) tablo nesnesi ile erişimci tabanlı kullanıcı kayıt sınıfı `CArtists`. Bir bağlantı açar, bağlantıda bir oturum açar ve tabloyu oturum açar.  
   
 ```cpp  
 #include <atldbcli.h>  
-  
-CDataSource connection;  
-CSession session;  
-CTable<CAccessor<CArtists>> artists;  
-  
-// Open the connection, session, and table, specifying authentication   
-// using Windows NT integrated security. Hard-coding a password is a major  
-// security weakness.  
-connection.Open(CLSID_MSDASQL, "NWind", NULL, NULL, DBPROP_AUTH_INTEGRATED);  
+#include <iostream>
+ 
+using namespace std;
 
-session.Open(connection);  
+int main()
+{
+    CDataSource connection;  
+    CSession session;  
+    CTable<CAccessor<CArtists>> artists;  
 
-artists.Open(session, "Artists");  
+    LPCSTR clsid; // Initialize CLSID_MSDASQL here
+    LPCTSTR pName = L"NWind";
+
+    // Open the connection, session, and table, specifying authentication   
+    // using Windows NT integrated security. Hard-coding a password is a major  
+    // security weakness.  
+    connection.Open(clsid, pName, NULL, NULL, DBPROP_AUTH_INTEGRATED);  
+
+    session.Open(connection);  
+
+    artists.Open(session, "Artists");  
   
-// Get data from the rowset  
-while (artists.MoveNext() == S_OK)  
-{  
-   cout << artists.m_szFirstName;  
-   cout << artists.m_szLastName;  
-}  
+    // Get data from the rowset  
+    while (artists.MoveNext() == S_OK)  
+    {  
+       cout << artists.m_szFirstName;  
+       cout << artists.m_szLastName;  
+    }  
+
+    return 0;
+}
 ```  
   
-Kullanıcı kaydı, `CArtists`, şöyle görünür:  
+Kullanıcı kaydı, `CArtists`, bu örnek gibi görünür:  
   
 ```cpp  
 class CArtists  
@@ -71,6 +82,7 @@ BEGIN_COLUMN_MAP(CArtists)
    COLUMN_ENTRY(2, m_szLastName)  
    COLUMN_ENTRY(3, m_nAge)  
 END_COLUMN_MAP()  
+};
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

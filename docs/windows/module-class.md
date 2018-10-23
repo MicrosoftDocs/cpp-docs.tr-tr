@@ -1,7 +1,7 @@
 ---
 title: Modül sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 09/17/2018
+ms.date: 10/18/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -53,12 +53,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0fa34cb8fce2854f4b3864629b86122bdfe6b35f
-ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
+ms.openlocfilehash: 5df7ae90a347d82b303d7db251e533733c8e4a86
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494536"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808636"
 ---
 # <a name="module-class"></a>Modül Sınıfı
 
@@ -177,22 +177,22 @@ WRL_NOTHROW static Module& Create(
 template<typename T>
 WRL_NOTHROW static Module& Create(
    _In_ T* object,
-   _In_ void (T::* method)()  
+   _In_ void (T::* method)()
 );
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Modül türü.
 
-*geri çağırma*  
+*geri çağırma*<br/>
 Son örnek nesnesi modülünün bırakıldığında çağırılır.
 
-*object*  
+*object*<br/>
 *Nesne* ve *yöntemi* parametreleri birlikte kullanılır. Son örnek nesne modülünde yayımlandığında son örnek nesnesi işaret eder.
 
-*Yöntemi*  
+*Yöntemi*<br/>
 *Nesne* ve *yöntemi* parametreleri birlikte kullanılır. Nesnenin son örnek nesne modülünde yayımlandığında son örneği noktaları yöntemi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -225,13 +225,13 @@ WRL_NOTHROW HRESULT GetActivationFactory(
 
 ### <a name="parameters"></a>Parametreler
 
-*pActivatibleClassId*  
+*pActivatibleClassId*<br/>
 Laboratuvardaki bir çalışma zamanı sınıf.
 
-*ppIFactory*  
+*ppIFactory*<br/>
 Belirtilen çalışma zamanı sınıfının IActivationFactory.
 
-*SunucuAdı*  
+*SunucuAdı*<br/>
 Sınıf üreteçlerini geçerli modüldeki bir alt kümesi adı. Kullanılan sunucu adını belirtmek [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) makro veya belirtin `nullptr` varsayılan sunucu adı alınamıyor.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -253,16 +253,16 @@ Sınıf üreteçlerini önbelleğini Retreives.
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*  
+*CLSID*<br/>
 Sınıf kimliği
 
-*riid*  
+*riid*<br/>
 İstek, arabirim kimliği.
 
-*ppv*  
+*ppv*<br/>
 Döndürülen nesne işaretçisi.
 
-*SunucuAdı*  
+*SunucuAdı*<br/>
 Ya da belirtilen sunucu adı `ActivatableClassWithFactory`, `ActivatableClassWithFactoryEx`, veya `ActivatableClass` makrosu; veya `nullptr` varsayılan sunucu adı alınamıyor.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -344,19 +344,19 @@ WRL_NOTHROW virtual HRESULT RegisterCOMObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*SunucuAdı*  
+*SunucuAdı*<br/>
 Bir sunucunun tam adı.
 
-*CLSID*  
+*CLSID*<br/>
 CLSID kaydetmek için bir dizi.
 
-*fabrikaları*  
+*fabrikaları*<br/>
 IUnknown arabirimi olan kullanılabilirlik yayımlanan sınıf nesnelerinin dizisi.
 
-*Tanımlama bilgileri*  
+*Tanımlama bilgileri*<br/>
 İşlem tamamlandığında, kayıtlı olan bir sınıfı değerleri için işaretçiler dizisi nesneleri. Bu değerler daha sonra kullanılır kaydını iptal etme.
 
-*Sayısı*  
+*Sayısı*<br/>
 Kaydedilecek CLSID sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -381,10 +381,10 @@ HRESULT RegisterObjects(
 
 ### <a name="parameters"></a>Parametreler
 
-*Modülü*  
+*module*<br/>
 COM veya Windows çalışma zamanı nesneleri dizisi.
 
-*SunucuAdı*  
+*SunucuAdı*<br/>
 Nesneleri oluşturan sunucunun adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -399,21 +399,21 @@ Diğer uygulamalar için bağlanabilmesi için bir veya daha fazla Windows çal�
 HRESULT RegisterWinRTObject(const wchar_t* serverName,
    wchar_t** activatableClassIds,
    WINRT_REGISTRATION_COOKIE* cookie,
-   unsigned int count)  
+   unsigned int count)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*SunucuAdı*  
+*SunucuAdı*<br/>
 Bu işlemden etkilenen nesneler kümesini belirten bir ad.
 
-*activatableClassIds*  
+*activatableClassIds*<br/>
 Kaydedilecek etkinleştirilebilir CLSID dizisi.
 
-*Tanımlama bilgisi*  
+*Tanımlama bilgisi*<br/>
 Kaydedilen sınıf nesneleri tanımlayan bir değer. Bu değer daha sonra kaydı iptal etmek için kullanılır.
 
-*Sayısı*  
+*Sayısı*<br/>
 Kaydedilecek nesne sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -453,13 +453,13 @@ virtual HRESULT UnregisterCOMObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*SunucuAdı*  
+*SunucuAdı*<br/>
 (Kullanılmayan)
 
-*Tanımlama bilgileri*  
+*Tanımlama bilgileri*<br/>
 Sınıf nesneleri silinmesine izin değerleri için işaretçiler dizisi. Dizi tarafından oluşturulan [RegisterCOMObject](#registercomobject) yöntemi.
 
-*Sayısı*  
+*Sayısı*<br/>
 Sınıfların kaydını sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -478,10 +478,10 @@ HRESULT UnregisterObjects(
 
 ### <a name="parameters"></a>Parametreler
 
-*Modülü*  
+*module*<br/>
 Bir modül için işaretçi.
 
-*SunucuAdı*  
+*SunucuAdı*<br/>
 Bu işlemden etkilenen nesneler kümesini belirtir uygun bir ad.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -501,5 +501,5 @@ virtual HRESULT UnregisterWinRTObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*Tanımlama bilgisi*  
+*Tanımlama bilgisi*<br/>
 Kaydını iptal edilmesine izin sınıfı nesne tanımlayan bir değer için bir işaretçi.

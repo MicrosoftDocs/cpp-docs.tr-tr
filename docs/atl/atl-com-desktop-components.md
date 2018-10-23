@@ -1,7 +1,7 @@
 ---
 title: ATL COM Masaüstü bileşenleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/19/2018
 ms.technology:
 - cpp-atl
 ms.topic: conceptual
@@ -15,16 +15,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eadbcd138bd9fc73835938b8ff59d694ede152b8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 378cd6fd283cd36142e293b51fdb91527afb6f88
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065627"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808907"
 ---
 # <a name="atl-com-desktop-components"></a>ATL COM Masaüstü bileşenleri
 
-Etkin Şablon kitaplığı (ATL), Bileşen Nesne Modeli (COM) nesneleri programlamayı kolaylaştıran şablon tabanlı C++ sınıfları kümesi ATL başvuru belgeleri. ATL tam olarak yararlanmak için bir bilgiye sahip olunduğunu COM önemle tavsiye edilir.
+Etkin Şablon kitaplığı (ATL), Bileşen Nesne Modeli (COM) nesneleri programlamayı kolaylaştıran şablon tabanlı C++ sınıfları kümesi ATL başvuru belgeleri. COM, oluşturma ve Windows üzerinde yazılım bileşenlerini kullanan bir ikili bir özelliğidir. ATL tam olarak yararlanmak için bir bilgiye sahip olunduğunu COM önemle tavsiye edilir. COM hakkında daha fazla bilgi için bkz: [Bileşen Nesne Modeli (COM)](/windows/desktop/com/component-object-model--com--portal).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

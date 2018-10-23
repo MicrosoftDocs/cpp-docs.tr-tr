@@ -1,7 +1,7 @@
 ---
 title: Iatlstringmgr sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad98923c21a28976b54c2251f2da83eb0ec4cf5f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6d637750ab4aa9dc30ca7b297373cb2c752802d8
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408147"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808881"
 ---
 # <a name="iatlstringmgr-class"></a>Iatlstringmgr sınıfı
 
@@ -73,10 +73,10 @@ CStringData* Allocate(int nAllocLength,int nCharSize) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nAllocLength*  
+*nAllocLength*<br/>
 Yeni bellek bloğu karakterlerin sayısı.
 
-*nCharSize*  
+*nCharSize*<br/>
 Dize Yöneticisi tarafından kullanılan karakter türü boyutu (bayt cinsinden).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -124,7 +124,7 @@ void Free(CStringData* pData) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pData*  
+*pData*<br/>
 Serbest bırakılacak bellek bloğu için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -151,31 +151,31 @@ Bir işaretçi `CStringData` boş bir dize temsil etmek için kullanılan nesne.
 Boş bir dize temsilini döndürün için bu işlevi çağırın.
 
 > [!NOTE]
->  Bu işlev bir özel dize Yöneticisi'ni hayata geçirirken, hiçbir zaman başarısız olmalıdır. Bu örneği ekleyerek garanti `CNilStringData` dize manager sınıfı ve söz konusu örneğine bir işaretçi döndürür.
+> Bu işlev bir özel dize Yöneticisi'ni hayata geçirirken, hiçbir zaman başarısız olmalıdır. Bu örneği ekleyerek garanti `CNilStringData` dize manager sınıfı ve söz konusu örneğine bir işaretçi döndürür.
 
 > [!NOTE]
->  Kullanım örnekleri için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
+> Kullanım örnekleri için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-##  <a name="reallocate"></a>  IAtlStringMgr::Reallocate
+## <a name="reallocate"></a>  IAtlStringMgr::Reallocate
 
 Dize veri yapısı yeniden ayırır.
 
 ```
-CStringData* Reallocate(  
-CStringData* pData,
-int nAllocLength,
-int nCharSize) throw();
+CStringData* Reallocate(
+    CStringData* pData,
+    int nAllocLength,
+    int nCharSize) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*pData*  
+*pData*<br/>
 Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi.
 
-*nAllocLength*  
+*nAllocLength*<br/>
 Yeni bellek bloğu karakterlerin sayısı.
 
-*nCharSize*  
+*nCharSize*<br/>
 Dize Yöneticisi tarafından kullanılan karakter türü boyutu (bayt cinsinden).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -189,10 +189,9 @@ Mevcut bellek bloğu tarafından belirtilen yeniden boyutlandırmak için bu iş
 Çağrı [IAtlStringMgr::Free](#free) bu yöntem tarafından ayrılan bellek boşaltmak için.
 
 > [!NOTE]
->  Kullanım örnekleri için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
+> Kullanım örnekleri için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

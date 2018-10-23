@@ -1,7 +1,7 @@
 ---
 title: C birincil ifadeler | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/21/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 276e82a7768520c6a75c87cb49fcb26ce1f01253
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9a9c038cae5f70ef2b92d4e81fc513b6faf74185
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49809037"
 ---
 # <a name="c-primary-expressions"></a>C Birincil İfadeler
 
@@ -27,17 +27,15 @@ ms.locfileid: "46066472"
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Birincil ifade*: *tanımlayıcısı*
+*Birincil ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Sabit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*dize sabit değeri*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**(** *ifade* **)**<br/>
 
-*Sabit*
-
-*dize sabit değeri*
-
-**(***ifade***)** 
-
-*ifade*: *atama ifadesi*
-
-*ifade***,***atama ifadesi*
+*ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade* **,** *atama ifadesi*<br/>
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

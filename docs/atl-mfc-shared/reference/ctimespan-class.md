@@ -1,7 +1,7 @@
 ---
 title: CTimeSpan sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -33,12 +33,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b70e4ca31f4346e8ad0b6dda4e66192e2e53111
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 32e6599fa19c23751beaf3545696a90a2d117248
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397526"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49809089"
 ---
 # <a name="ctimespan-class"></a>CTimeSpan sınıfı
 
@@ -114,7 +114,7 @@ bool operator>=(CTimeSpan span) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*  
+*yayılma*<br/>
 Karşılaştırma yapılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -133,22 +133,22 @@ Yapıları `CTimeSpan` çeşitli yollarla nesneleri.
 CTimeSpan() throw();
 CTimeSpan(__time64_t time) throw();
 
-CTimeSpan(  
-LONG lDays,
-int nHours,
-int nMins,
-int nSecs) throw();
+CTimeSpan(
+    LONG lDays,
+    int nHours,
+    int nMins,
+    int nSecs) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*timeSpanSrc*  
+*timeSpanSrc*<br/>
 A `CTimeSpan` zaten var. nesne.
 
-*saat*  
+*saat*<br/>
 A **__time64_t** zaman değeri, zaman aralığı içinde saniye sayısı.
 
-*lDays*, *nHours*, *nMins*, *nSecs*  
+*lDays*, *nHours*, *nMins*, *nSecs*<br/>
 Gün, saat, dakika ve saniye, sırasıyla.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -163,12 +163,12 @@ Bu oluşturucular yeni bir oluşturma `CTimeSpan` nesne belirtilen göreli zaman
 
 - `CTimeSpan( LONG, int, int, int );` Oluşturur bir `CTimeSpan` nesne bileşenlerinden her bileşeni ile kısıtlanmış aşağıdaki aralıklara:
 
-    |Bileşen|Aralık|  
-    |---------------|-----------|  
-    |*lDays*|0-25.000 (yaklaşık)|  
-    |*nHours*|0-23|  
-    |*nMins*|0-59|  
-    |*nSecs*|0-59|
+   |Bileşen|Aralık|
+   |---------------|-----------|
+   |*lDays*|0-25.000 (yaklaşık)|
+   |*nHours*|0-23|
+   |*nMins*|0-59|
+   |*nSecs*|0-59|
 
 Bir Microsoft Foundation Class Kitaplığı hata ayıklama sürümünü onaylar not ya da daha fazla zaman günlük bileşen je mimo rozsah. Bu bağımsız değişkenler çağrılmadan önce doğrulamak için sizin sorumluluğunuzdur.
 
@@ -188,7 +188,7 @@ CString Format(UINT nID) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*pFormat*, *pszFormat*  
+*pFormat*, *pszFormat*<br/>
 Bir biçimlendirme dizesi benzer `printf` biçimlendirme dizesi. Biçimlendirme kodları, öncesinde bir yüzde (`%`) oturum açın, ilgili değiştirilir `CTimeSpan` bileşeni. Biçimlendirme dizesi diğer karakterler döndürülen dizeye değiştirilmeden kopyalanır. Değer ve biçimlendirme kodları anlamını `Format` aşağıda listelenmiştir:
 
 - **%D** toplam bu gün `CTimeSpan`
@@ -201,7 +201,7 @@ Bir biçimlendirme dizesi benzer `printf` biçimlendirme dizesi. Biçimlendirme 
 
 - **%%** Yüzde işareti
 
-*nID*  
+*nID*<br/>
 Bu biçim tanımlayan dize kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -355,7 +355,7 @@ CTimeSpan operator-(CTimeSpan span) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*  
+*yayılma*<br/>
 Eklenecek değer `CTimeSpan` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -381,7 +381,7 @@ CTimeSpan& operator-=(CTimeSpan span) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*yayılma*  
+*yayılma*<br/>
 Eklenecek değer `CTimeSpan` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -409,7 +409,7 @@ CArchive& Serialize64(CArchive& ar);
 
 ### <a name="parameters"></a>Parametreler
 
-*ar*  
+*ar*<br/>
 `CArchive` Güncelleştirmek istediğiniz bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri

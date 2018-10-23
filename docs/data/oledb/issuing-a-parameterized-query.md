@@ -1,7 +1,7 @@
 ---
 title: Parametreleştirilmiş sorgu verme | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/19/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7fae3dafe056598dea5026d0639ce257af3cee87
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e410b0e849d71e8955229eca8a44bf4d3d3dbb91
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49807958"
 ---
 # <a name="issuing-a-parameterized-query"></a>Parametreleştirilmiş Sorgu Verme
 
@@ -28,31 +28,41 @@ Aşağıdaki örnek, bir Microsoft Access veritabanındaki bir tablodan (30'dan 
   
 ```cpp  
 #include <atldbcli.h>  
-  
-CDataSource connection;  
-CSession session;  
-CCommand<CAccessor<CArtists>> artists;  
-  
-// Open the connection, session, and table, specifying authentication   
-// using Windows NT integrated security. Hard-coding a password is a major   
-// security weakness.  
-connection.Open(CLSID_MSDASQL, "NWind", NULL, NULL, DBPROP_AUTH_INTEGRATED);  
+#include <iostream>
 
-session.Open(connection);  
+using namespace std;
+
+int main()
+{
+    CDataSource connection;  
+    CSession session;  
+    CCommand<CAccessor<CArtists>> artists;  
+    LPCSTR clsid; // Initialize CLSID_MSDASQL here
+    LPCTSTR pName = L"NWind";
   
-// Set the parameter for the query  
-artists.m_nAge = 30;  
-artists.Open(session, "select * from artists where age > ?");  
+    // Open the connection, session, and table, specifying authentication   
+    // using Windows NT integrated security. Hard-coding a password is a major   
+    // security weakness.  
+    connection.Open(clsid, pName, NULL, NULL, DBPROP_AUTH_INTEGRATED);  
+
+    session.Open(connection);  
   
-// Get data from the rowset  
-while (artists.MoveNext() == S_OK)  
-{  
-   cout << artists.m_szFirstName;  
-   cout << artists.m_szLastName;  
+    // Set the parameter for the query  
+    artists.m_nAge = 30;  
+    artists.Open(session, "select * from artists where age > ?");  
+  
+    // Get data from the rowset  
+    while (artists.MoveNext() == S_OK)  
+    {  
+        cout << artists.m_szFirstName;  
+        cout << artists.m_szLastName;  
+    }
+
+    return 0;
 }  
 ```  
   
-Kullanıcı kaydı, `CArtists`, şöyle görünür:  
+Kullanıcı kaydı, `CArtists`, bu örnek gibi görünür:  
   
 ```cpp  
 class CArtists  

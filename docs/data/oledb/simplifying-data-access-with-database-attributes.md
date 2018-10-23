@@ -1,7 +1,7 @@
 ---
 title: Veritabanı öznitelikleriyle veri erişimini basitleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/19/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -29,12 +29,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 41d1692fc69ba4ff29e091ca736cae60b10a402a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2689aab8b33c01c9a4d72b231a11a251813ac625
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054083"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808023"
 ---
 # <a name="simplifying-data-access-with-database-attributes"></a>Veritabanı Öznitelikleriyle Veri Erişimini Basitleştirme
 
@@ -52,18 +52,26 @@ Veritabanı öznitelikleri kullanımını göstermek için aşağıdaki bölüml
   
 - `db_table` Öznitelikli sürümdeki çağrısı için aşağıdaki şablon bildirimi eşdeğerdir:  
   
-    ```  
+    ```cpp  
     class CAuthorsNoAttr : public CTable<CAccessor<CAuthorsNoAttrAccessor>>  
     ```  
   
 - `db_column` Öznitelikli çağrılarında sütun eşlemesi için eşdeğer olan (bkz `BEGIN_COLUMN_MAP ... END_COLUMN_MAP`) şablon bildirimindeki.  
   
-Öznitelikleri sizin için bir kullanıcı kaydı sınıf bildirimi ekleyin. Kullanıcı kayıt sınıfı eşdeğerdir `CAuthorsNoAttrAccessor` şablon bildirimindeki. Tablo sınıfınız varsa `CAuthors`, eklenen kullanıcı kayıt sınıfı adlı `CAuthorsAccessor`, ve bildiriminden eklenen kodun yalnızca görüntüleyebilir. Daha fazla bilgi için bkz: "Öznitelik eklenmiş kullanıcı kayıt sınıfları" [kullanıcı kayıtlarını](../../data/oledb/user-records.md).  
+Öznitelikleri sizin için bir kullanıcı kaydı sınıf bildirimi ekleyin. Kullanıcı kayıt sınıfı eşittir `CAuthorsNoAttrAccessor` şablon bildirimindeki. Tablo sınıfınız varsa `CAuthors`, eklenen kullanıcı kayıt sınıfı adlı `CAuthorsAccessor`, ve bildiriminden eklenen kodun yalnızca görüntüleyebilir. Daha fazla bilgi için bkz: "Öznitelik eklenmiş kullanıcı kayıt sınıfları" [kullanıcı kayıtlarını](../../data/oledb/user-records.md).  
   
-Hem öznitelikli ve şablonlu kodu, kullanarak satır kümesi özelliklerini ayarlamanız gerekir `CDBPropSet::AddProperty`.  
+Hem öznitelikli ve şablonlu kodu, kullanarak satır kümesi özelliklerini ayarlamalısınız `CDBPropSet::AddProperty`.  
   
-Bu konuda tartışılan öznitelikleri hakkında daha fazla bilgi için bkz: [OLE DB tüketici öznitelikleri](../../windows/ole-db-consumer-attributes.md).  
-  
+Bu konuda tartışılan öznitelikleri hakkında daha fazla bilgi için bkz: [OLE DB tüketici öznitelikleri](../../windows/ole-db-consumer-attributes.md).
+
+> [!NOTE]
+> Aşağıdaki `include` ifadeleri, aşağıdaki örneklerde derlemek için gereklidir:
+> ```cpp
+> #include <atlbase.h>  
+> #include <atlplus.h>  
+> #include <atldbcli.h>    
+> ```
+
 ## <a name="table-and-accessor-declaration-using-attributes"></a>Tablo ve öznitelikleri kullanarak erişimci bildirimi  
 
 Aşağıdaki kod çağrıları `db_source` ve `db_table` tablo sınıfı üzerinde. `db_source` kullanılacak bağlantı ve veri kaynağını belirtir. `db_table` bir tablo sınıfı bildirmek için uygun şablonu kodu ekler. `db_column` Sütun eşlemesi belirtin ve erişimci bildirimini ekleyin. ATL destekleyen herhangi bir projede kullanabileceğiniz OLE DB tüketici öznitelikleri  
@@ -85,15 +93,15 @@ Aşağıdaki kod çağrıları `db_source` ve `db_table` tablo sınıfı üzerin
 class CAuthors  
 {  
 public:  
-   DWORD m_dwAuIDStatus;  
-   DWORD m_dwAuthorStatus;  
-   DWORD m_dwYearBornStatus;  
-   DWORD m_dwAuIDLength;  
-   DWORD m_dwAuthorLength;  
-   DWORD m_dwYearBornLength;  
-   [ db_column(1, status=m_dwAuIDStatus, length=m_dwAuIDLength) ] LONG m_AuID;  
-   [ db_column(2, status=m_dwAuthorStatus, length=m_dwAuthorLength) ] TCHAR m_Author[51];  
-   [ db_column(3, status=m_dwYearBornStatus, length=m_dwYearBornLength) ] SHORT m_YearBorn;  
+   DBSTATUS m_dwAuIDStatus;
+   DBSTATUS m_dwAuthorStatus;
+   DBSTATUS m_dwYearBornStatus;
+   DBLENGTH m_dwAuIDLength;
+   DBLENGTH m_dwAuthorLength;
+   DBLENGTH m_dwYearBornLength;
+   [db_column("1", status = "m_dwAuIDStatus", length = "m_dwAuIDLength")] LONG m_AuID;
+   [db_column("2", status = "m_dwAuthorStatus", length = "m_dwAuthorLength")] TCHAR m_Author[51];
+   [db_column("3", status = "m_dwYearBornStatus", length = "m_dwYearBornLength")] SHORT m_YearBorn;
    void GetRowsetProperties(CDBPropSet* pPropSet)  
    {  
       pPropSet->AddProperty(DBPROP_CANFETCHBACKWARDS, true);  

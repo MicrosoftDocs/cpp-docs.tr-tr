@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1ab725391b03eeba35e230c3e0a5ebe0913fec2
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 18f6f49cbcb9fc95ecec73ee22f6830458c561db
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328356"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808543"
 ---
 # <a name="cpoint-class"></a>CPoint sınıfı
 
@@ -99,19 +99,19 @@ CPoint(LPARAM dwPoint) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*initX*  
+*initX*<br/>
 Değerini belirtir `x` üyesi `CPoint`.
 
-*initY*  
+*initY*<br/>
 Değerini belirtir `y` üyesi `CPoint`.
 
-*initPt*  
+*initPt*<br/>
 [NOKTASI](../../mfc/reference/point-structure.md) yapısı veya `CPoint` başlatmak için kullanılan değerleri belirten `CPoint`.
 
-*initSize*  
+*initSize*<br/>
 [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) başlatmak için kullanılan değerleri belirten `CPoint`.
 
-*dwPoint*  
+*dwPoint*<br/>
 Kümeleri `x` alt sıra sözcüğüne üye *dwPoint* ve `y` dwpoint üye *dwPoint*.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -157,16 +157,16 @@ void Offset(SIZE size) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*xOffset*  
+*xOffset*<br/>
 Kaydırılacağı uzaklık belirtir `x` üyesi `CPoint`.
 
-*yOffset*  
+*yOffset*<br/>
 Kaydırılacağı uzaklık belirtir `y` üyesi `CPoint`.
 
-*Noktası*  
+*Noktası*<br/>
 Belirtir ( [noktası](../../mfc/reference/point-structure.md) veya `CPoint`) dengelemek için `CPoint`.
 
-*Boyutu*  
+*Boyutu*<br/>
 Belirtir ( [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) veya [CSize](../../atl-mfc-shared/reference/csize-class.md)) dengelemek için `CPoint`.
 
 ### <a name="example"></a>Örnek
@@ -183,7 +183,7 @@ BOOL operator==(POINT point) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*  
+*Noktası*<br/>
 İçeren bir [noktası](../../mfc/reference/point-structure.md) yapısı veya `CPoint` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -204,7 +204,7 @@ BOOL operator!=(POINT point) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*  
+*Noktası*<br/>
 İçeren bir [noktası](../../mfc/reference/point-structure.md) yapısı veya `CPoint` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -226,10 +226,10 @@ void operator+=(POINT point) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*  
+*Boyutu*<br/>
 İçeren bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
 
-*Noktası*  
+*Noktası*<br/>
 İçeren bir [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -255,10 +255,10 @@ void operator-=(POINT point) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*  
+*Boyutu*<br/>
 İçeren bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
 
-*Noktası*  
+*Noktası*<br/>
 İçeren bir [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -285,13 +285,13 @@ CRect operator+(const RECT* lpRect) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*  
+*Boyutu*<br/>
 İçeren bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
 
-*Noktası*  
+*Noktası*<br/>
 İçeren bir [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
 
-*lpRect*  
+*lpRect*<br/>
 Bir işaretçi içeren bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -321,13 +321,13 @@ CPoint operator-() const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*  
+*Noktası*<br/>
 A [noktası](../../mfc/reference/point-structure.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
 
-*Boyutu*  
+*Boyutu*<br/>
 A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
 
-*lpRect*  
+*lpRect*<br/>
 Bir işaretçi bir [RECT](../../mfc/reference/rect-structure.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri

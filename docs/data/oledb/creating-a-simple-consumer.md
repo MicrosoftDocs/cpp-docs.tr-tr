@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 85efb2a1d699914c6d7ffb1fd079a38be70f0b52
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: c9cb2003b857bb156709e4ba2a3345dfb57bfd3c
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163848"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808946"
 ---
 # <a name="creating-a-simple-consumer"></a>Basit Tüketici Oluşturma
 
@@ -32,15 +32,15 @@ ATL OLE DB Tüketicisi Sihirbazı ve ATL projesi Sihirbazı bir OLE DB Şablonla
 
    **Yeni proje** iletişim kutusu görüntülenir.
 
-1. İçinde **proje türleri** bölmesinde tıklayın **yüklü** > **şablonları** > **Visual C++** klasöründe ve ardından **Win32 konsol uygulaması** simgesini **şablonları** bölmesi. İçinde **adı** kutusunda, projenizin adını girin, örneğin, *MyCons*.
+1. İçinde **proje türleri** bölmesinde tıklayın **yüklü** > **Visual C++** > **Windows Masaüstü** klasörü ve ardından **Windows Masaüstü Sihirbazı'nı** simgesini **şablonları** bölmesi. İçinde **adı** kutusunda, projenizin adını girin, örneğin, *MyCons*.
 
 1. **Tamam**'ı tıklatın.
 
-   Win32 Uygulama Sihirbazı görünür.
+   **Windows Masaüstü projesi** Sihirbazı görünür.
 
 1. Üzerinde **uygulama ayarları** sayfasında **konsol uygulaması**ve ardından **gibi ortak başlık dosyaları eklemek için ATL**.
 
-1. Tıklayın **son** sihirbazı kapatın ve projeyi oluşturmak için.
+1. Tıklayın **Tamam** sihirbazı kapatın ve projeyi oluşturmak için.
 
 Ardından, OLE DB Tüketici nesne eklemek için ATL OLE DB Tüketicisi Sihirbazı kullanın.
 
@@ -48,9 +48,9 @@ Ardından, OLE DB Tüketici nesne eklemek için ATL OLE DB Tüketicisi Sihirbaz�
 
 1. İçinde **Çözüm Gezgini**, sağ `MyCons` proje.
 
-1. Kısayol menüsünde **Ekle**ve ardından **sınıfı**.
+1. Kısayol menüsünde **Ekle**ve ardından **yeni öğe**.
 
-   **Sınıfı Ekle** iletişim kutusu görüntülenir.
+   **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
 
 1. İçinde **kategorileri** bölmesinde tıklayın **yüklü** > **Visual C++** > **ATL**, tıklayın**ATL OLEDB tüketicisi** simgesini **şablonları** bölmesi ve ardından **Ekle**.
 

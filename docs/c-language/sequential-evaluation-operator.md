@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a285cc87ec4182586663afcb3559101167ae7261
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0cee62bdf19e6ba3196e0336cb29a7c7606775b5
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46095579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808296"
 ---
 # <a name="sequential-evaluation-operator"></a>Sıralı Değerlendirme İşleci
 
@@ -29,9 +29,9 @@ ms.locfileid: "46095579"
 
 ## <a name="syntax"></a>Sözdizimi
 
-*ifade*: *atama ifadesi*
-
-*ifade***,***atama ifadesi* 
+*ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade* **,** *atama ifadesi*
 
 Sıralı değerlendirme işlecinin sol işleneni olarak değerlendirilen bir `void` ifade. İşlemin sonucunu, sağ işlenen aynı değerine ve türüne sahiptir. Her işlenen, herhangi bir türde olabilir. Sıralı değerlendirme işleci işlenenleri arasındaki tür dönüştürmeleri gerçekleştirmez ve bir l değeri vermez. Sonra sağ işlenenin değerlendirme başlamadan önce tüm yan etkiler değerlendirmesine sol işlenenin tamamlandığı anlamına gelir ilk işlenen, bir dizi noktası yoktur. Bkz: [dizi noktaları](../c-language/c-sequence-points.md) daha fazla bilgi için.
 

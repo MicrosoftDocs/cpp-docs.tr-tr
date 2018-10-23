@@ -1,7 +1,7 @@
 ---
 title: CSize sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ca548fec9a70a04b0bdb9a5169021fc43f149eb
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 9966bcdf31df3b6d3f702ec425131c5b8baa3aee
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328551"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808504"
 ---
 # <a name="csize-class"></a>CSize sınıfı
 
@@ -90,19 +90,19 @@ CSize( DWORD dwSize) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*initCX*  
+*initCX*<br/>
 Kümeleri `cx` üyesi için `CSize`.
 
-*initCY*  
+*initCY*<br/>
 Kümeleri `cy` üyesi için `CSize`.
 
-*initSize*  
+*initSize*<br/>
 [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya `CSize` başlatmak için kullanılan nesne `CSize`.
 
-*initPt*  
+*initPt*<br/>
 [NOKTASI](../../mfc/reference/point-structure.md) yapısı veya `CPoint` başlatmak için kullanılan nesne `CSize`.
 
-*dwSize*  
+*dwSize*<br/>
 DWORD başlatmak için kullanılan `CSize`. Düşük düzey sözcük `cx` üyesi ve dwpoint `cy` üyesi.
 
 ### <a name="remarks"></a>Açıklamalar
