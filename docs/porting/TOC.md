@@ -15,6 +15,7 @@
 ### [Kitaplık İçeriklerindeki Bağımlılıklarınızı Düzeltme](fix-your-dependencies-on-library-internals.md)
 ### [Kayan Nokta Geçiş Sorunları](floating-point-migration-issues.md)
 ### [Visual Studio’da Eski Projeleri Oluşturmak için Yerel Çoklu Sürüm Paketi Kullanma](use-native-multi-targeting.md)
+### [Visual Studio 2019 önizlemede kullanım dışı bırakılan Visual C++ özellikleri](features-deprecated-in-visual-studio.md)
 ## [UNIX Kullanıcıları için Visual C++'a Giriş](introduction-to-visual-cpp-for-unix-users.md)
 ## [UNIX'ten Win32'ye Taşıma](porting-from-unix-to-win32.md)
 ## [Evrensel Windows Platformu’na Taşıma (C++)](porting-to-the-universal-windows-platform-cpp.md)
