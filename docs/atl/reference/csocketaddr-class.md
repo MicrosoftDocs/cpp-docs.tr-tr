@@ -1,7 +1,7 @@
 ---
 title: CSocketAddr sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-atl
 ms.topic: reference
@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c39ca72136db7c11e925f28cc3413a5f7b77002
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 705cbd051f7c5761ae9a2aabfe919519681ef089
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040862"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990223"
 ---
 # <a name="csocketaddr-class"></a>CSocketAddr sınıfı
 
@@ -62,7 +62,7 @@ class CSocketAddr
 
 Bu sınıf Windows ile kullanmak için ağ adresleri bakmak için belirsiz yaklaşım API işlevleri ve kitaplıklarında yuva sarmalayıcılar yuva IP sürümü sağlar.
 
-Ağ adreslerini aramak için kullanılan bu sınıfın üyeleri Win32 API işlevi kullanmanız [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo).
+Ağ adreslerini aramak için kullanılan bu sınıfın üyeleri Win32 API işlevi kullanmanız [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo). İşlev ANSI veya UNICODE sürümü, kodunuzu ANSI veya UNICODE olarak derlenmiş bağlı olarak adlandırılır.
 
 Bu sınıf, her iki IPv4 andIPv6 ağ adreslerini destekler.
 
@@ -88,15 +88,15 @@ Belirtilen konak adı için ana bilgisayar adresi dönüştürmek için bu yönt
 
 ```
 int FindAddr(
-    const char *szHost,
-    const char *szPortOrServiceName,
+    const TCHAR *szHost,
+    const TCHAR *szPortOrServiceName,
     int flags,
     int addr_family,
     int sock_type,
     int ai_proto);
 
 int FindAddr(
-    const char *szHost,
+    const TCHAR *szHost,
     int nPortNo,
     int flags,
     int addr_family,
@@ -141,10 +141,10 @@ IPv4 ana bilgisayar adı konak adresine dönüştürmek için bu yöntemi çağ�
 
 ```
 int FindINET4Addr(
-    const char *szHost,
+    const TCHAR *szHost,
     int nPortNo,
-    int flags,
-    int sock_type,);
+    int flags = 0,
+    int sock_type = SOCK_STREAM);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -175,10 +175,10 @@ IPv6 ana bilgisayar adı konak adresine dönüştürmek için bu yöntemi çağ�
 
 ```
 int FindINET6Addr(
-    const char *szHost,
+    const TCHAR *szHost,
     int nPortNo,
-    int flags,
-    int sock_type,);
+    int flags = 0,
+    int sock_type = SOCK_STREAM);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -208,7 +208,7 @@ Bu yöntem Win32 API işlevini çağırır [getaddrinfo](/windows/desktop/api/ws
 Belirli bir öğeye bir işaretçiyi döndürmek için bu yöntemi çağıran `addrinfo` listesi.
 
 ```
-addrinfo* const GetAddrInfoint nIndex = 0) const;
+addrinfo* const GetAddrInfo(int nIndex = 0) const;
 ```
 
 ### <a name="parameters"></a>Parametreler

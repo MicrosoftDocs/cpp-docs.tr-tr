@@ -16,22 +16,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d3b7d20fb82399f3778c751de28858b93f81071a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fffa63c9bbcc556009fb5edff93fd02f302ae3ea
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080889"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990132"
 ---
 # <a name="dynamically-determining-columns-returned-to-the-consumer"></a>Tüketiciye Döndürülecek Olan Sütunları Dinamik Olarak Belirleme
 
 PROVIDER_COLUMN_ENTRY normalde işlemek `IColumnsInfo::GetColumnsInfo` çağırın. Ancak, bir tüketici yer işaretlerini kullanmak isteyebilirsiniz, çünkü sağlayıcı tüketici için bir yer ister bağlı olarak döndürülecek olan sütunları değiştirmek mümkün olması gerekir.  
   
-İşlenecek `IColumnsInfo::GetColumnsInfo` çağrısı, bir işlevi tanımlayan PROVIDER_COLUMN_MAP silme `GetColumnInfo`, gelen `CAgentMan` kullanıcı kaydından içinde ve kendi tanımını değiştirin `GetColumnInfo` işlevi:  
+İşlemek için `IColumnsInfo::GetColumnsInfo` çağrısı, bir işlevi tanımlayan PROVIDER_COLUMN_MAP silme `GetColumnInfo`, gelen `CAgentMan` kullanıcı kaydında *özel*RS.h kendi ilişkin tanımı değiştirin `GetColumnInfo` işlev:  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
-// MyProviderRS.H  
+// CustomRS.H  
 class CAgentMan  
 {  
 public:  
@@ -52,13 +52,13 @@ public:
   
 Ardından, uygulama `GetColumnInfo` MyProviderRS.cpp aşağıdaki kodda gösterildiği gibi işlev.  
   
-`GetColumnInfo` ilk denetler OLE DB özelliği `DBPROP_BOOKMARKS` ayarlanır. Özellik get yapılmaya `GetColumnInfo` bir işaretçi kullanır (`pRowset`) için satır kümesi nesnesi. `pThis` İşaretçisini özellik eşlemesi depolandığı sınıfı olduğu satır kümesi, oluşturulan sınıfı temsil eder. `GetColumnInfo` yuvarlamasını `pThis` işaretçi bir `RMyProviderRowset` işaretçi.  
+`GetColumnInfo` ilk denetler OLE DB özelliği `DBPROP_BOOKMARKS` ayarlanır. Özellik get yapılmaya `GetColumnInfo` bir işaretçi kullanır (`pRowset`) için satır kümesi nesnesi. `pThis` İşaretçisini özellik eşlemesi depolandığı sınıfı olduğu satır kümesi, oluşturulan sınıfı temsil eder. `GetColumnInfo` yuvarlamasını `pThis` işaretçi bir `RCustomRowset` işaretçi.  
   
 Denetlenecek `DBPROP_BOOKMARKS` özelliği `GetColumnInfo` kullanan `IRowsetInfo` çağırarak elde edebileceğiniz arabirimi `QueryInterface` üzerinde `pRowset` arabirimi. Alternatif olarak, bir ATL kullanabileceğiniz [CComQIPtr](../../atl/reference/ccomqiptr-class.md) yöntemi yerine.  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////  
-// MyProviderRS.cpp  
+// CustomRS.cpp  
 ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)  
 {  
    static ATLCOLUMNINFO _rgColumns[5];  
@@ -119,7 +119,7 @@ Bu örnek, statik bir dizi sütun bilgileri içerecek şekilde kullanır. Tüket
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
-// MyProviderRS.h  
+// CustomRS.h  
   
 #define ADD_COLUMN_ENTRY(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member) \  
    _rgColumns[ulCols].pwszName = (LPOLESTR)name; \  

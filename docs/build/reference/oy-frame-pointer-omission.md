@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6feb682d364c4c40fd01e4aff33404c4506d9c1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6c077b5a350d7381adc5412ca4a318713d720ad6
+ms.sourcegitcommit: 1870c342d44b10990fd015e60856225c3026e8c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377267"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49963057"
 ---
 # <a name="oy-frame-pointer-omission"></a>/Oy (Çerçeve İşaretçisini Atlama)
 
@@ -40,29 +40,29 @@ ms.locfileid: "32377267"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek, hiçbir çerçeve işaretçisinin ayarlanması ve kaldırılması gerekmeyeceği için işlev çağrılarını hızlandırır. Ayrıca, bir veya daha fazla kaydı (Intel 386 veya sonrasında EBP) sık kullanılan değişkenlerin ve alt ifadelerin saklanması için boş bırakır.
+Bu seçenek, hiçbir çerçeve işaretçisinin ayarlanması ve kaldırılması gerekmeyeceği için işlev çağrılarını hızlandırır. Genel kullanım için daha fazla kaydı serbest bırakır.
 
-**/Oy** çerçeve işaretçisini atlama sağlar ve **/Oy-** atlandığını devre dışı bırakır. **/Oy** yalnızca x86 kullanılabilir derleyicileri.
+**/Oy** çerçeve işaretçisini atlamayı etkinleştirir ve **/Oy-** atlamayı devre dışı bırakır. **/Oy** yalnızca x86 içinde kullanılabilir derleyicileri.
 
-Belirleyebileceğiniz kodunuzu EBP tabanlı adresleme gerektiriyorsa, **/Oy-** sonra seçeneği **/Ox** seçeneğini veya kullanmak [en iyi duruma getirme](../../preprocessor/optimize.md) ile "**y**" ve **kapalı** EBP tabanlı adresleme ile en fazla iyileştirmesi kazanmak için bağımsız değişkenler. Derleyici EBP tabanlı adresleme olduğu gerekli çoğu durumlar algılar (örneğin, ile `_alloca` ve `setjmp` işlevleri ve yapılandırılmış özel durum işleme ile).
+Kodunuz EBP tabanlı adresleme gerektiriyorsa belirtebilmeniz için **/Oy-** sonra seçeneği **/Ox** seçeneğini veya kullanın [en iyi duruma getirme](../../preprocessor/optimize.md) ile "**y**" ve **kapalı** EBP tabanlı adresleme ile en fazla iyileştirme elde etmek için bağımsız değişkenler. Derleyici burada EBP tabanlı adresleme gerekli olduğu çoğu durumu algılar (örneğin, ile `_alloca` ve `setjmp` işlevleri ve yapılandırılmış özel durum işleme ile).
 
-[/Ox (etkinleştirmek en hızlı iyileştirmeler)](../../build/reference/ox-full-optimization.md) ve [/O1, O2 (boyutu en aza indirmek, hızı en üst düzeye)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) seçenekleri kapsıyor **/Oy**. Belirtme **/Oy-** sonra **/Ox**, **/O1**, veya **O2** seçeneği devre dışı bırakır **/Oy**, bunun açık veya zımni.
+[/Ox (etkinleştirme en hız iyileştirmelerini)](../../build/reference/ox-full-optimization.md) ve [/O1, / O2 (boyutu en aza indirmek, hızı en üst düzeye)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) seçenekleri yaptığından **/Oy**. Belirtme **/Oy-** sonra **/Ox**, **/O1**, veya **/O2** seçeneği devre dışı bırakır **/Oy**, olduğunu açık veya zımni.
 
-**/Oy** çünkü derleyici çerçeve işaretçisi bilgi bastırır daha zor hata ayıklayıcıyı kullanma derleyici seçeneği sağlar. Debug derleyici seçeneği belirlerseniz ([/Z7, / zi, /zı](../../build/reference/z7-zi-zi-debug-information-format.md)), belirtilmesi önerilir **/Oy-** seçeneğinden sonra başka bir iyileştirme derleyici seçenekleri.
+**/Oy** derleyicinin çerçeve işaretçisi bilgilerini engellemesidir çünkü daha zor hata ayıklayıcıyı kullanma derleyici seçeneği sağlar. Debug derleyici seçeneği belirtirseniz ([/z7, / zi, /zı](../../build/reference/z7-zi-zi-debug-information-format.md)), belirttiğiniz öneririz **/Oy-** seçeneğinden sonra başka bir iyileştirme derleyici seçenekleri.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Tıklatın **C/C++** klasör.
+1. Tıklayın **C/C++** klasör.
 
-1. Tıklatın **en iyi duruma getirme** özellik sayfası.
+1. Tıklayın **iyileştirme** özellik sayfası.
 
-1. Değiştirme **atlayın çerçeve işaretçileri** özelliği. Bu özellik ekler veya kaldırır yalnızca **/Oy** seçeneği. Eklemek istiyorsanız **/Oy-** seçeneği, tıklatın **komut satırı** ve değiştirme **ek seçenekler**.
+1. Değiştirme **çerçeve işaretçilerini atla** özelliği. Bu özellik ekler veya kaldırır yalnızca **/Oy** seçeneği. Eklemek istiyorsanız **/Oy-** seçeneğinde, tıklayın **komut satırı** ve değiştirme **ek seçenekler**.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OmitFramePointers%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OmitFramePointers%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

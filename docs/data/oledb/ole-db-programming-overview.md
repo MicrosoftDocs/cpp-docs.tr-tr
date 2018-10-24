@@ -1,7 +1,7 @@
 ---
 title: OLE DB programlamaya genel bakış | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -16,18 +16,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ec41a0213c621e948a160553c03b17be39e9f2f3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5fea82dfd7d3f9cdd64d0eab66e44ac1a486abac
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090717"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49989898"
 ---
 # <a name="ole-db-programming-overview"></a>OLE DB Programlamaya Genel Bakış
 
-OLE DB yüksek performanslı, COM tabanlı veritabanı teknolojisidir. Formun içinde depolandığı bakılmaksızın verilerine erişmek için ortak bir yol sunar. Tipik iş durumunda, çok büyük miktarda bilgi dışında şirket veritabanlarına depolanır. Bu bilgiler (örneğin, FAT veya NTFS), dosya sisteminde dizinli sıralı dosyaları, kişisel veritabanları (örneğin, erişimi), elektronik tablolar (Excel gibi) proje planlama uygulamaları (örneğin, Proje) ve e-posta (örneğin, Outlook) bulunur. OLE DB, bir OLE DB Sağlayıcı veri deposunda sahip olduğu sürece, aynı şekilde, herhangi bir türden veri deposuna erişim sağlar.
+OLE DB yüksek performanslı, COM tabanlı veritabanı teknolojisidir. Verileri, depolandığı biçiminde bağımsız erişmek için ortak bir yol sunar. Tipik iş durumunda, çok büyük miktarda bilgi Kurumsal veritabanlarında depolanmaz. Bu bilgiler (örneğin, FAT veya NTFS), dosya sisteminde dizinli sıralı dosyaları, kişisel veritabanları (örneğin, erişimi), elektronik tablolar (Excel gibi) proje planlama uygulamaları (örneğin, Proje) ve e-posta (örneğin, Outlook) bulunur. OLE DB, bir OLE DB Sağlayıcı veri deposunda sahip olduğu sürece, aynı şekilde, herhangi bir türden veri deposuna erişim sağlar.
   
-OLE DB DBMS olsun olmasın, çeşitli veri kaynaklarına erişen uygulamalar geliştirmenize imkan tanır. OLE DB, sağlanan veri kaynağı için uygun DBMS işlevselliğini destekleyen COM arabirimleri kullanarak evrensel erişim mümkün kılar. COM gereksiz çoğaltma hizmetlerinin azaltır ve yalnızca veri kaynakları arasında aynı zamanda diğer uygulamalar arasında birlikte çalışabilirlik ekranı.  
+OLE DB, bunlar DBMS veya ister çeşitli veri kaynaklarına erişen uygulamalar geliştirmenize olanak sağlar. OLE DB, sağlanan veri kaynağı için uygun DBMS işlevselliğini destekleyen COM arabirimleri kullanarak evrensel erişim mümkün kılar. COM gereksiz çoğaltma hizmetlerinin azaltır ve yalnızca veri kaynakları arasında aynı zamanda diğer uygulamalar arasında birlikte çalışabilirlik ekranı.  
   
 ## <a name="benefits-of-com"></a>COM avantajları  
 

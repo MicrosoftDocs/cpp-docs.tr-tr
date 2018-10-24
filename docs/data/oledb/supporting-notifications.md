@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a98848799163fd31037dc137b92b94878a1ee675
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 73bc32cd4a02affa98c53f892e5d34e1650d08f7
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082468"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990108"
 ---
 # <a name="supporting-notifications"></a>Bildirimleri Destekleme
 
@@ -39,7 +39,7 @@ Ayrıca uygulama ve kaydetme gerekir unutmayın `IRowsetNotify` Tüketici (havuz
   
 Ayrıca, sınıfı tanımlayan bağlantı noktası girişi, böyle bir harita içermelidir:  
   
-```  
+```cpp  
 BEGIN_CONNECTION_POINT_MAP  
    CONNECTIONPOINT_ENTRY (IID_IRowsetNotify)  
 END_CONNECTION_POINT_MAP  
@@ -52,7 +52,7 @@ Eklenecek `IRowsetNotify`, eklemenize gerek `IConnectionPointContainerImpl<rowse
 Örneğin, devralma zincirinde işte `RUpdateRowset` içinde [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV):  
   
 > [!NOTE]
->  Örnek kod, ne burada listelenen öğesinden farklı olabilir; Örnek kod daha güncel bir sürüm olarak göz önüne almalısınız.  
+> Örnek kod, ne burada listelenen öğesinden farklı olabilir; Örnek kod daha güncel bir sürüm olarak göz önüne almalısınız.  
   
 ```cpp
 ///////////////////////////////////////////////////////////////////////////  
@@ -71,7 +71,7 @@ public CRowsetImpl< RUpdateRowset, CAgentMan, CUpdateCommand,
 
 Ayrıca, satır kümesi içindeki COM eşlemesine aşağıdaki eklemeniz gerekir:  
   
-```  
+```cpp  
 COM_INTERFACE_ENTRY(IConnectionPointContainer)  
 COM_INTERFACE_ENTRY_IMPL(IConnectionPointContainer)  
 ```  
@@ -82,7 +82,7 @@ Bu makrolar herkesin çağırma izin `QueryInterface` bağlantı noktası kapsay
 
 Ayrıca bir bağlantı noktası eşlemesi eklemeniz gerekir. Şunun gibi görünmelidir:  
   
-```  
+```cpp  
 BEGIN_CONNECTION_POINT_MAP(rowset-name)  
      CONNECTION_POINT_ENTRY(_uuidof(IRowsetNotify))  
 END_CONNECTION_POINT_MAP()  

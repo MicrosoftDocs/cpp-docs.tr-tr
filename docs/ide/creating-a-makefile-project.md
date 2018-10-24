@@ -1,7 +1,7 @@
 ---
 title: Bir C++ derleme görevleri dosyası projesi oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 09/12/2018
+ms.date: 10/19/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -17,22 +17,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3360d2ed86d220bc59d6f09f582c71b48f7d78c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5f937c11b2453bd296468c5f153b7c9495eba290
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399489"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990249"
 ---
 # <a name="creating-a-c-makefile-project"></a>Bir C++ derleme görevleri dosyası projesi oluşturma
 
-A *derleme görevleri dosyası* derleme ve bağlama ilişkin yönergeleri içeren bir metin dosyasıdır (veya *derleme*) C++ kaynak kodu dosyaları kümesi. A *olun* program derleme görevleri dosyası okur ve bir derleyici, bağlayıcı ve büyük olasılıkla diğer programları yürütülebilir bir dosya olmak için çağırır. Microsoft'un *olun* program çağrılır **NMAKE**. (Varsayılan olarak visual Studio .vcsproj dosyalara bağlı MSBuild sistemi kullanır; bu tarafından oluşturulan **dosya | Yeni | Proje**.)
+A *derleme görevleri dosyası* derleme ve bağlama ilişkin yönergeleri içeren bir metin dosyasıdır (veya *derleme*) C++ kaynak kodu dosyaları kümesi. A *olun* program derleme görevleri dosyası okur ve bir derleyici, bağlayıcı ve büyük olasılıkla diğer programları yürütülebilir bir dosya olmak için çağırır. Microsoft'un *olun* program çağrılır **NMAKE**. (Varsayılan olarak visual Studio, .vcxproj dosya dayalı MSBuild sistemi kullanır; bu tarafından oluşturulan **dosya | Yeni | Proje**.)
 
 Mevcut bir derleme görevleri dosyası projesi varsa, kod ve/veya Visual Studio IDE içinde hata ayıklamak istiyorsanız bu seçeneğiniz vardır:
 
 - Visual Studio'da IDE, kodunuzu derlemek için mevcut derleme görevleri dosyası kullanan bir derleme görevleri dosyası projesi oluşturun. (, Yerel bir MSBuild projesi ile aldığınız tüm IDE özelliklerini yoktur.) Bkz: [makefile projesi oluşturmak için](#create_a_makefile_project) aşağıda.
 - Kullanım **varolan kod dosyalarından yeni proje oluştur** kaynak kodunuzu yerel bir MSBuild projesi oluşturmak için Sihirbazı. Daha fazla bilgi için [nasıl yapılır: Varolan koddan C++ projesi oluşturma](how-to-create-a-cpp-project-from-existing-code.md).
-- **Visual Studio 2017 ve üzeri**: kullanım **klasörünü Aç** özelliğini bir derleme görevleri dosyası açın. Daha fazla bilgi için [Klasör Aç Visual C++ projelerinde](non-msbuild-projects.md).
+- **Visual Studio 2017 ve üzeri**: kullanım **klasörünü Aç** özelliğini MSBuild'e dönüştürme olmadan bir derleme görevleri dosyası projesi açın. Daha fazla bilgi için [Klasör Aç Visual C++ projelerinde](non-msbuild-projects.md).
 
 ## <a name="a-namecreateamakefileproject-to-create-a-makefile-project-with-the-makefile-project-template"></a><a name="create_a_makefile_project"> Derleme görevleri dosyası proje şablonuyla bir derleme görevleri dosyası projesi oluşturmak için
 

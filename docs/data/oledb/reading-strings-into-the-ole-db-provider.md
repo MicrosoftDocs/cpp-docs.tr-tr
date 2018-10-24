@@ -15,31 +15,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9b51611ff5727a89e47bef569865f915a189a993
-ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
+ms.openlocfilehash: 6521ed8078f4411b704678b53f16fbdbc4d04e73
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410663"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49989885"
 ---
 # <a name="reading-strings-into-the-ole-db-provider"></a>Dizeleri OLE DB Sağlayıcısına Okuma
 
-`RMyProviderRowset::Execute` İşlevi bir dosyayı açar ve dizelerini okur. Tüketici dosya adı çağırarak sağlayıcıya geçen [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757). Sağlayıcı dosya adını alır ve üye değişkeni depolar `m_szCommandText`. `Execute` Dosya adından okur `m_szCommandText`. Dosya adı geçersiz veya dosya kullanılamıyor `Execute` bir hata döndürür. Aksi takdirde, çağrılar ve dosyayı açar `fgets` dizeleri alınamadı. Her dizeleri okuma ayarlayın `Execute` kullanıcı kaydını örneği oluşturur (`CAgentMan`) ve bir diziye yerleştirir.  
+`RCustomRowset::Execute` İşlevi bir dosyayı açar ve dizelerini okur. Tüketici dosya adı çağırarak sağlayıcıya geçen [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757). Sağlayıcı dosya adını alır ve üye değişkeni depolar `m_szCommandText`. `Execute` Dosya adından okur `m_szCommandText`. Dosya adı geçersiz veya dosya kullanılamıyor `Execute` bir hata döndürür. Aksi takdirde, çağrılar ve dosyayı açar `fgets` dizeleri alınamadı. Her dizeleri okuma ayarlayın `Execute` kullanıcı kaydını örneği oluşturur (`CAgentMan`) ve bir diziye yerleştirir.  
   
 Dosya açılamıyor, `Execute` DB_E_NOTABLE döndürmelidir. Bunun yerine E_FAIL döndürürse, sağlayıcı birçok tüketicileriyle çalışmaz ve OLE DB geçmez [uygunluk testlerini](../../data/oledb/testing-your-provider.md).  
   
 ## <a name="example"></a>Örnek  
-  
-### <a name="description"></a>Açıklama  
 
 Düzenlenen `Execute` işlevi şu şekilde görünür:  
   
-### <a name="code"></a>Kod  
-  
 ```cpp
 /////////////////////////////////////////////////////////////////////////  
-// MyProviderRS.h  
-class RMyProviderRowset : public CRowsetImpl< RMyProviderRowset, CAgentMan, CRMyProviderCommand>  
+// CustomRS.h  
+class RCustomRowset : public CRowsetImpl< RCustomRowset, CAgentMan, CRCustomCommand>  
 {  
 public:  
     HRESULT Execute(DBPARAMS * pParams, LONG* pcRowsAffected)  

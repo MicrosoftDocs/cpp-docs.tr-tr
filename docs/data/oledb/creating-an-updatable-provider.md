@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: cbf1c696a66024ec1d3b3022b1e3a03445e9b6fe
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ee405244d4c23e3cacddb5efe5dfa276a8a21db0
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46043306"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990327"
 ---
 # <a name="creating-an-updatable-provider"></a>Güncelleştirilebilir Sağlayıcı Oluşturma
 
@@ -33,7 +33,7 @@ Bu konuda, uyumlu bir sağlayıcı ile başlayan varsayılır. Güncelleştirile
 Ardından, sağlayıcınız tüketici isteyebileceği desteklemek için tüm işlevselliklerini içerir emin olmanız gerekir. Tüketici veri deposunu güncelleştirin isterse, sağlayıcı veri deposunda veri devam kodu içermesi gerekir. Örneğin, veri kaynağı gibi işlemleri gerçekleştirmek için MFC ve C çalışma zamanı kitaplığı kullanabilirsiniz. Bölüm "[veri kaynağına yazma](#vchowwritingtothedatasource)" veri kaynağına yazmak için NULL ve varsayılan değerlerle Dağıt ve sütun bayraklarını ayarlayın açıklar.  
   
 > [!NOTE]
->  [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) güncelleştirilebilir sağlayıcı örneğidir. UpdatePV MyProv ancak güncelleştirilebilir destekle aynıdır.  
+> [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) güncelleştirilebilir sağlayıcı örneğidir. UpdatePV MyProv ancak güncelleştirilebilir destekle aynıdır.  
   
 ##  <a name="vchowmakingprovidersupdatable"></a> Güncelleştirilebilir sağlayıcılar hale getirme  
 
@@ -47,7 +47,7 @@ Anahtarı bir sağlayıcı güncelleştirilebilir yapmak istediğiniz veri depos
   
 Unutmayın `IRowsetUpdateImpl` türetildiği `IRowsetChangeImpl`. Bu nedenle, `IRowsetUpdateImpl` değiştirme yeteneği yanı sıra batch yeteneği verir.  
   
-#### <a name="to-support-updatability-in-your-provider"></a>Sağlayıcınızdaki Güncelleştirilebilirlik desteklemek için  
+### <a name="to-support-updatability-in-your-provider"></a>Sağlayıcınızdaki Güncelleştirilebilirlik desteklemek için  
   
 1. Satır kümesi sınıfınızda devralınacak `IRowsetChangeImpl` veya `IRowsetUpdateImpl`. Bu sınıflar, veri depolama alanı değiştirmek için uygun arabirimleri sağlar:  
   
@@ -70,7 +70,7 @@ Unutmayın `IRowsetUpdateImpl` türetildiği `IRowsetChangeImpl`. Bu nedenle, `I
     ```  
   
     > [!NOTE]
-    >  Kaldırmalısınız `IRowsetChangeImpl` , devralma zincirini satırından. Bu daha önce bahsedilen yönergesi bir durum kodunu içermelidir `IRowsetChangeImpl`.  
+    > Kaldırmalısınız `IRowsetChangeImpl` , devralma zincirini satırından. Bu daha önce bahsedilen yönergesi bir durum kodunu içermelidir `IRowsetChangeImpl`.  
   
 1. COM haritanıza aşağıdakileri ekleyin (`BEGIN_COM_MAP ... END_COM_MAP`):  
   
@@ -109,7 +109,7 @@ Unutmayın `IRowsetUpdateImpl` türetildiği `IRowsetChangeImpl`. Bu nedenle, `I
      Özellik kimlikleri ve değerleri için Atldb.h bakarak bu makro çağrılarında kullanılan değerleri bulabilirsiniz (Atldb.h çevrimiçi belgelerinden farklıysa, Atldb.h belgeleri yerini alır).  
   
     > [!NOTE]
-    >  Çoğu `VARIANT_FALSE` ve `VARIANT_TRUE` ayarları, OLE DB Şablonları tarafından gereklidir; OLE DB belirtimi okuma/yazma olabilirler, ancak OLE DB Şablonları, yalnızca bir değer destekleyebilir söyler.  
+    > Çoğu `VARIANT_FALSE` ve `VARIANT_TRUE` ayarları, OLE DB Şablonları tarafından gereklidir; OLE DB belirtimi okuma/yazma olabilirler, ancak OLE DB Şablonları, yalnızca bir değer destekleyebilir söyler.  
   
      **IRowsetChangeImpl uygularsanız**  
   
@@ -142,16 +142,14 @@ Unutmayın `IRowsetUpdateImpl` türetildiği `IRowsetChangeImpl`. Bu nedenle, `I
     - `DBPROP_MAXPENDINGROWS`.  
   
         > [!NOTE]
-        >  Bildirimleri destekliyorsa, bazı diğer özellikleri de da olabilir; bölümüne `IRowsetNotifyCP` bu listesi.  
+        > Bildirimleri destekliyorsa, bazı diğer özellikleri de da olabilir; bölümüne `IRowsetNotifyCP` bu listesi.  
   
 ##  <a name="vchowwritingtothedatasource"></a> Veri kaynağına yazma  
 
 Veri kaynağından okumak için çağrı `Execute` işlevi. Veri kaynağına yazmak için çağrı `FlushData` işlevi. (Genel olarak, bir tablo veya dizini diske yaptığınız değişiklikleri kaydetmek için yol temizler.)  
 
 ```cpp
-
 FlushData(HROW, HACCESSOR);  
-
 ```
 
 Erişimci tanıtıcısı (HACCESSOR) bağımsız değişkenleri ve satır tanıtıcısı (HROW) yazmak için belirtmesine olanak sağlar. Genellikle, bir kerede tek bir veri alanının yazın.
@@ -192,7 +190,7 @@ NULL değerleri işleme.
 
 ### <a name="handling-default-values"></a>Varsayılan değerleri işleme.
 
-Kendi FlushData yöntemi uygulamak için gerekir:
+Kendi uygulamak için `FlushData` yöntemi gerekir:
 
 - Satır kümesi sınıfı gidin.
 
@@ -207,7 +205,7 @@ Kendi FlushData yöntemi uygulamak için gerekir:
 
 - Bir uygulamasını sağlamak `FlushData`.
 
-FlushData iyi bir uygulaması, yalnızca satır ve gerçekten güncelleştirilir sütunları depolar. Geçerli satır ve sütunları için iyileştirme depolanmakta olan belirlemek için HROW ve HACCESSOR parametreleri kullanabilirsiniz.
+İyi bir uygulaması `FlushData` yalnızca satır ve gerçekten güncelleştirilir sütunları depolar. Geçerli satır ve sütunları için iyileştirme depolanmakta olan belirlemek için HROW ve HACCESSOR parametreleri kullanabilirsiniz.
 
 Genellikle, en büyük güçlük, kendi yerel veri deposu ile çalışmaktadır. Mümkünse, deneyin:
 
@@ -219,7 +217,7 @@ Genellikle, en büyük güçlük, kendi yerel veri deposu ile çalışmaktadır.
 
 Yapılacak en iyi şey data Store NULL ve varsayılan değerleri için gerçek belirtilen değerlere sahip olmaktır. Bu veriler tahmin edebilmek en iyisidir. Aksi durumda, boş ve varsayılan değerlere izin vermeyecek şekilde önerilir.
 
-Aşağıdaki örnekte gösterildiği nasıl `FlushData` oluşturma RUpdateRowset sınıfında uygulanır (satır örnek koda bakın):
+Aşağıdaki örnekte gösterildiği nasıl `FlushData` uygulanan `RUpdateRowset` sınıfını `UpdatePV` örnek (satır örnek koda bakın):
 
 ```cpp
 ///////////////////////////////////////////////////////////////////////////  
@@ -374,16 +372,15 @@ ATLCOLUMNINFO* CommonGetColInfo(IUnknown* pPropsUnk, ULONG* pcCols, bool bBookma
   
     return _rgColumns;  
 }  
-
 ```
 
 ### <a name="default-values"></a>Varsayılan değerler
 
 BOŞ verilerle gibi varsayılan değerleri değiştirme ile ilgili sorumluluğu sahip.
 
-FlushData ve yürütme S_OK döndürmek için varsayılandır. Bu işlev geçersiz ise, bu nedenle, değişiklikleri başarılı olması için görünür (S_OK döndürülür), ancak veri deposuna iletilmez.
+Varsayılan değer olan `FlushData` ve `Execute` S_OK getirmektir. Bu işlev geçersiz ise, bu nedenle, değişiklikleri başarılı olması için görünür (S_OK döndürülür), ancak veri deposuna iletilmez.
 
-(Satır) UpdatePV örneğindeki `SetDBStatus` yöntemi varsayılan değerleri şu şekilde işler:
+İçinde `UpdatePV` (satır) içindeki örnek `SetDBStatus` yöntemi varsayılan değerleri şu şekilde işler:
 
 ```cpp
 virtual HRESULT SetDBStatus(DBSTATUS* pdbStatus, CSimpleRow* pRow,  
@@ -422,11 +419,11 @@ virtual HRESULT SetDBStatus(DBSTATUS* pdbStatus, CSimpleRow* pRow,
 
 ### <a name="column-flags"></a>Sütun bayrakları
 
-Varsayılan değerleri sütunlar üzerinde destekliyorsa, meta verileri kullanarak ayarlamanız gerekir \<sağlayıcı sınıfı\>SchemaRowset sınıfı. Ayarlama `m_bColumnHasDefault` VARIANT_TRUE =.
+Varsayılan değerleri sütunlar üzerinde destekliyorsa, meta verileri kullanarak ayarlamanız gerekir \<sağlayıcı sınıfı\>SchemaRowset sınıfı. Ayarlama `m_bColumnHasDefault = VARIANT_TRUE`.
 
 Ayrıca DBCOLUMNFLAGS kullanarak listelenmiş türü belirtilen sütun bayrakları ayarlamanızı sorumluluğu vardır. Sütun bayrakları sütun özelliklerini açıklar.
 
-Örneğin, `CUpdateSessionColSchemaRowset` sınıfı (içinde Session.h'deki) UpdatePV içinde ilk sütun bu şekilde ayarlanır:
+Örneğin, `CUpdateSessionColSchemaRowset` sınıfını `UpdatePV` (Session.h'deki), ilk sütun bu şekilde ayarlanır:
 
 ```cpp
 // Set up column 1  

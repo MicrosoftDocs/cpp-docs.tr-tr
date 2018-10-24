@@ -1,7 +1,7 @@
 ---
 title: OLE DB Tüketicisi Oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -15,16 +15,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d4ef6d5d54bb3d6ed55ec2837a2300d8a1dcb03e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f64145a8d6269a5c6fd09f7178343a59ebc1b3ad
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034095"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49989924"
 ---
 # <a name="creating-an-ole-db-consumer"></a>OLE DB Tüketicisi Oluşturma
 
-Sihirbazı kullanarak önerilen yöntem olsa ile veya olmadan ATL OLE DB Tüketicisi Sihirbazı, bir OLE DB Şablonları tüketici oluşturabilirsiniz. ATL destekleyen herhangi bir uygulamada bir tüketici çalışabilir  
+OLE DB Şablonları tüketici içeren veya içermeyen oluşturabilirsiniz **ATL OLE DB Tüketicisi Sihirbazı**, ancak Sihirbazı'nı kullanarak önerilen yöntemdir. ATL destekleyen herhangi bir uygulamada bir tüketici çalışabilir  
   
 Bu bölümde aşağıdaki konuları içerir:  
   

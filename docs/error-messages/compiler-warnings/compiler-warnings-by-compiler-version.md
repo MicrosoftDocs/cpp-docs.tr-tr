@@ -1,7 +1,7 @@
 ---
 title: Derleyici sürümüne göre derleyici uyarıları | Microsoft Docs
 ms.custom: ''
-ms.date: 07/03/2018
+ms.date: 10/24/2018
 ms.technology:
 - devlang-cpp
 ms.topic: error-reference
@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6645bb81a1fd4a2b42eb7419a0d008b9ac7692ad
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 1c4d815ba1036a03042992d2715e49bbd8f74a28
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44319090"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990392"
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>Derleyici sürümüne göre derleyici uyarıları
 
@@ -45,10 +45,19 @@ Derleyicisinin bu sürümü, yeni uyarılar eklendi:
 | Visual C++ 2017 sürüm 15.5 | 19.12.25830.0 |
 | Visual C++ 2017 sürüm 15.6 | 19.13.26128.0 |
 | Visual C++ 2017 sürüm 15.7 | 19.14.26428.0 |
+| Visual C++ 2017 sürüm 15,8 | 19.15.26726.0 |
 
 Yalnızca birincil numara, büyük ve küçük sayılar veya ana, alt, belirtin ve yapı numaralarına __/Wv__ seçeneği. Derleyici, belirtilen sayı ile başlayan sürümleri eşleşen tüm uyarıları raporlar ve belirtilen sayıdan büyük sürümlerine yönelik tüm uyarıları bastırır. Örneğin, __/Wv:17__ içinde veya herhangi bir Visual Studio 2012 sürümünü tüm uyarıları raporları ve Visual Studio 2013 (sürüm 18) veya üzeri tüm derleyici tarafından kullanıma sunulan tüm uyarıları bastırır. Bastırmak için Visual Studio 2015'te xx.yy.zzzz güncelleştirme 2 ve daha sonra kullanabileceğiniz __/Wv:19.00.23506__. Kullanım __/Wv:19.11__ tüm uyarıları herhangi bir sürümü Visual Studio'yu daha önce Visual Studio 2017 sürüm 15.5 sürümünde, ancak Visual Studio 2017 sürüm 15.5 ve üzeri uyarıları bastırır bildirmek için.
 
 Aşağıdaki bölümlerde her kullanarak bastırma Visual C++ sürümü xx.yy.zzzz listesinde __/Wv__ derleyici seçeneği. __/Wv__ seçeneği, belirtilen derleyici sürümleri geçerler listelenmez, uyarıları bastır olamaz.
+
+## <a name="warnings-introduced-in-visual-c-2017-version-158-compiler-version-1915267260"></a>Visual C++ 2017 sürüm 15,8 (Derleyici sürümü 19.15.26726.0) uyarıları
+
+Derleyici seçeneğini kullanarak bu uyarıları ve üzeri sürümlerde tüm uyarıları bastırılan __/Wv:19.14__.
+
+|||
+|-|-|
+C5046|'*işlevi*': simge türü tanımlı değil iç bağlantı ile ilgili|
 
 ## <a name="warnings-introduced-in-visual-c-2017-version-157-compiler-version-1914264280"></a>Visual C++ 2017 sürüm 15.7 (Derleyici sürümü 19.14.26428.0) uyarıları
 

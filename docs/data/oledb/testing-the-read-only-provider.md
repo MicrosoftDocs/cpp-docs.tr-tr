@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: aa56a62fa898f7ebe6c171af6f7246106b8e5ac7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4630391d9bce319c35af18767d7133bd34a92362
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038753"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990210"
 ---
 # <a name="testing-the-read-only-provider"></a>Salt Okunur Sağlayıcıyı Test Etme
 
@@ -31,13 +31,13 @@ Bir sağlayıcı test etmek için bir tüketici gerekir. Müşteri ve sağlayıc
   
 Bu konudaki örnek, bir test tüketici için bir varsayılan MFC Uygulama Sihirbazı uygulaması oluşturur. OLE DB tüketici şablonu kod eklendi içeren basit bir iletişim kutusu test uygulamasıdır.  
   
-### <a name="to-create-the-test-application"></a>Test uygulaması oluşturmak için  
+## <a name="to-create-the-test-application"></a>Test uygulaması oluşturmak için  
   
 1. Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
   
-1. Proje Türleri bölmesinde seçin **Visual C++ projeleri** klasör. Şablonlar bölmesinde seçin **MFC uygulaması**.  
+1. İçinde **proje türleri** bölmesinde **Visual C++ projeleri** klasör. İçinde **şablonları** bölmesinde **MFC uygulaması**.  
   
-1. Proje adı olarak **TestProv**ve ardından **Tamam**.  
+1. Proje adı olarak *TestProv*ve ardından **Tamam**.  
   
      MFC Uygulama Sihirbazı görünür.  
   
@@ -46,9 +46,9 @@ Bu konudaki örnek, bir test tüketici için bir varsayılan MFC Uygulama Sihirb
 1. Üzerinde **Gelişmiş Özellikler** sayfasında **Otomasyon**ve ardından **son**.  
   
 > [!NOTE]
->  Uygulamayı Otomasyon desteği gerektirmez eklerseniz **CoInitialize** içinde **CoInitialize**.  
+> Uygulamayı Otomasyon desteği gerektirmez eklerseniz `CoInitialize` içinde `CTestProvApp::InitInstance`.  
   
-Görüntüleyebilir ve kaynak görünümünde seçerek TestProv iletişim kutusu (IDD_TESTPROV_DIALOG) düzenleyin. İki liste kutuları satır kümesindeki her dize için bir iletişim kutusuna yerleştirin. Sıralama özelliği devre dışı hem de bir liste kutusu seçili olduğunda, ALT + Enter'ı tıklatarak basarak liste kutusu için kapatma **stilleri** sekme ve Temizleme **sıralama** onay kutusu. Ayrıca, yerleştirin bir **çalıştırmak** dosyasını getirmek için iletişim kutusundaki düğmesi. Tamamlanmış TestProv iletişim kutusunda sırasıyla "Dize 1" ve "2 dize" etiketli iki liste kutuları olmalıdır; Ayrıca **Tamam**, **iptal**, ve **çalıştırma** düğmeleri.  
+Görüntüleyebileceği ve düzenleyebileceği **TestProv** içinde seçerek iletişim kutusu (IDD_TESTPROV_DIALOG) **kaynak görünümü**. İki liste kutuları satır kümesindeki her dize için bir iletişim kutusuna yerleştirin. Sıralama özelliği devre dışı hem de tuşlarına basarak liste kutusu için kapatma **Alt**+**Enter** liste kutusu seçili olduğunda, tıklayarak **stilleri** sekmesini tıklatıp temizleme **Sıralama** onay kutusu. Ayrıca, yerleştirin bir **çalıştırmak** dosyasını getirmek için iletişim kutusundaki düğmesi. Tamamlanmış **TestProv** iletişim kutusu, "Dize 1" ve "2 dize" etiketli, sırasıyla iki liste kutuları olmalıdır; ayrıca **Tamam**, **iptal**, ve **çalıştırın**  düğmeler.  
   
 (Bu durum TestProvDlg.h) de iletişim kutusu sınıfı için üst bilgi dosyası açın. Üst bilgi dosyası (dışında herhangi bir sınıf bildiriminin) için aşağıdaki kodu ekleyin:  
   
@@ -73,7 +73,7 @@ END_COLUMN_MAP()
   
 Kod sütunların satır kümesinde ne olacağını tanımlayan bir kullanıcı kaydı gösterir. İstemci çağırdığında `IAccessor::CreateAccessor`, hangi sütunların bağlanacağını belirtmek için bu girişlerin kullanır. OLE DB Tüketici Şablonları sütunları dinamik olarak bağlama sağlar. PROVIDER_COLUMN_ENTRY istemci tarafı sürümü COLUMN_ENTRY makrolardır. İki COLUMN_ENTRY makroları, sıra, türü, uzunluğu ve veri üyesi için iki dizeyi belirtin.  
   
-Eklemek için bir işleyici işlevi **çalıştırma** CTRL tuşuna basarak ve çift düğmesi **çalıştırmak** düğmesi. Aşağıdaki kodu işleve yerleştirin:  
+Bir işleyici işlevi ekleme **çalıştırma** düğmesine basarak **Ctrl** ve çift **çalıştırma** düğmesi. Aşağıdaki kodu işleve yerleştirin:  
   
 ```cpp
 ///////////////////////////////////////////////////////////////////////  
@@ -115,9 +115,9 @@ if (table.Open(session, _T("c:\\samples\\myprov\\myData.txt")) != S_OK)
    return;  
 ```  
   
-Sınıfların her birini açmak için satırlar sağlayıcıda her COM nesnesi oluşturur. Sağlayıcı bulmak için sağlayıcının ProgID kullanın. Sistem kayıt defterinden veya MyProvider.rgs dosyasında bakarak ProgID alabilirsiniz (sağlayıcının dizin ve arama ProgID anahtarının açın).  
+Sınıfların her birini açmak için satırlar sağlayıcıda her COM nesnesi oluşturur. Sağlayıcı bulmak için kullanmak `ProgID` sağlayıcısı. Alabileceğiniz `ProgID` sistem kayıt defterinden veya MyProvider.rgs dosyasında bakarak (sağlayıcının dizinini açın ve arama `ProgID` anahtar).  
   
-MyData.txt dosyası MyProv örnekle dahil edilir. Kendinize ait bir dosya oluşturmak için bir düzenleyici kullanın ve her bir dizenin arasında ENTER tuşuna basıldığında dize, çift sayı yazın. Dosya taşırsanız, yol adını değiştirin.  
+MyData.txt dosyası ile birlikte gelir `MyProv` örnek. Kendinize ait bir dosya oluşturmak için bir düzenleyici kullanın ve her bir dizenin arasında ENTER tuşuna basıldığında dize, çift sayı yazın. Dosya taşırsanız, yol adını değiştirin.  
   
 Dizesini "c:\\\samples\\\myprov\\\MyData.txt" içinde `table.Open` satır. İçine adım `Open` çağrısı gördüğünüz Bu dize geçirilecek `SetCommandText` sağlayıcısındaki yöntemi. Unutmayın `ICommandText::Execute` o dizeyi kullanılan yöntem.  
   

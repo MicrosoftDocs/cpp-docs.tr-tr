@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8643b8150f08191fa041107fa4a88e3cbcf2964a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d8d23ba81ba83202da1dd6814374a0c4aa1cb98b
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46042266"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990085"
 ---
 # <a name="using-bookmarks"></a>Yer İşaretlerini Kullanma
 
@@ -44,7 +44,6 @@ CDBPropSet propset(DBPROPSET_ROWSET);
 
 propset.AddProperty(DBPROP_BOOKMARKS, true);  
   
-
 CTable<CAccessor<CProducts>> product;  
 product.Open(session, "Products", &propset);  
 ```  
@@ -56,7 +55,6 @@ CTable<CDynamicAccessor> product;
 CBookmark<>              bookmark;  
 CDBPropSet propset(DBPROPSET_ROWSET);  
   
-
 propset.AddProperty(DBPROP_BOOKMARKS, true);  
 
 product.Open(session, "Products", &propset);  

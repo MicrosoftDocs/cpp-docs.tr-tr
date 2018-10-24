@@ -1,7 +1,7 @@
 ---
 title: Dinamik erişimciyi geçersiz kılma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/19/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3602711a880bbfe97c2fe357982bb60a55299044
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8e76aefefd4a8b1ab41d084c1e02d0c38ab5c498
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46035545"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990002"
 ---
 # <a name="overriding-a-dynamic-accessor"></a>Dinamik Erişimciyi Geçersiz Kılma
 

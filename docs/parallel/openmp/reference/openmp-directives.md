@@ -39,12 +39,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e761115642cb9ab95931a89ac3b511256d88708b
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 4d92d196cc38e6033c6f16332e4977f2481c4496
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49809011"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990340"
 ---
 # <a name="openmp-directives"></a>OpenMP yönergeleri
 
@@ -66,7 +66,7 @@ Yönergesi                             | Açıklama
 [single](#single)                     | Kodun bir bölümünü tek bir iş parçacığı üzerinde mutlaka ana iş parçacığının yürütülmesi gereken belirtmenize olanak sağlar.
 [threadprivate](#threadprivate)       | Bir değişken için bir iş parçacığı özel olduğunu belirtir.
 
-## <a name="atomic"></a>atomic
+## <a name="atomic"></a>Atomik
 
 Belirten bir bellek konumuna atomik olarak güncelleştirilecek.
 
@@ -111,7 +111,7 @@ int main() {
 Number of threads: 10
 ```
 
-## <a name="barrier"></a>barrier
+## <a name="barrier"></a>Engel
 
 Takım tüm iş parçacıklarının eşitler; tüm iş parçacıklarının engeli yürütene kadar tüm iş parçacıklarının engeli duraklatın.
 
@@ -129,7 +129,7 @@ Daha fazla bilgi için [2.6.3 barrier yönergesi](../../../parallel/openmp/2-6-3
 
 Nasıl kullanılacağını gösteren bir örnek `barrier`, bkz: [ana](#master).
 
-## <a name="critical"></a>critical
+## <a name="critical"></a>Kritik
 
 Kodu yalnızca olması yürütüldüğünde, bir iş parçacığında aynı anda belirtir.
 
@@ -209,7 +209,7 @@ int main()
 max = 29358
 ```
 
-## <a name="flush-openmp"></a>flush (OpenMP)
+## <a name="flush-openmp"></a>Flush (OpenMP)
 
 Tüm iş parçacıkları aynı görünümde tüm paylaşılan nesneler için bellek olduğunu belirtir.
 
@@ -382,7 +382,7 @@ int main() {
 The sum of 1 through 10 is 55
 ```
 
-## <a name="master"></a>master
+## <a name="master"></a>Ana
 
 Ana iş parçacığı programın bir bölümünde yürütüleceğini belirtir.
 
@@ -515,7 +515,7 @@ test2() iteration 3
 test2() iteration 4
 ```
 
-## <a name="parallel"></a>parallel
+## <a name="parallel"></a>Paralel
 
 Birden çok iş parçacığı paralel olarak yürütülen kodu bir paralel bölgenin tanımlar.
 
@@ -578,7 +578,7 @@ Hello from thread 3
 
 Çıkış sırası farklı makinelerde değişebilir unutmayın.
 
-## <a name="sections-openmp"></a>sections (OpenMP)
+## <a name="sections-openmp"></a>bölümleri (OpenMP)
 
 Tüm iş parçacıkları arasında bölünmesi için kod bölümleri tanımlar.
 
@@ -588,7 +588,7 @@ Tüm iş parçacıkları arasında bölünmesi için kod bölümleri tanımlar.
    #pragma omp section
    {
       code_block
-   } 
+   } 
 }
 ```
 
@@ -636,12 +636,12 @@ Hello from thread 0
 Hello from thread 0
 ```
 
-## <a name="single"></a>single
+## <a name="single"></a>Tek
 
 Kodun bir bölümünü tek bir iş parçacığı üzerinde mutlaka ana iş parçacığının yürütülmesi gereken belirtmenize olanak sağlar.
 
 ```
-#pragma omp single [clauses] 
+#pragma omp single [clauses] 
 {
    code_block
 }

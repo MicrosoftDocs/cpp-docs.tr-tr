@@ -1,7 +1,7 @@
 ---
 title: Sağlayıcı için bir proje oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f4d776dbbfbab5e038e14c15a9c281c8edb09153
-ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
+ms.openlocfilehash: 86f85b95b4b45624a778bc183cabadda886d002d
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410882"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990093"
 ---
 # <a name="creating-a-project-for-the-provider"></a>Sağlayıcı için Proje Oluşturma
 
@@ -32,7 +32,10 @@ ms.locfileid: "49410882"
   
      **Yeni proje** iletişim kutusu görüntülenir.  
   
-1. İçinde **proje türleri** bölmesinde tıklayın **Visual C++ projeleri** klasör. İçinde **şablonları** bölmesinde tıklayın **ATL projesi**.  
+1. İçinde **proje türleri** bölmesinde tıklayın **yüklü** > **Visual C++** > **MFC/ATL** klasör. İçinde **şablonları** bölmesinde tıklayın **ATL projesi**.  
+
+    > [!NOTE]
+    > Visual Studio'nun önceki sürümlerinde, altında proje türünü bulma **yüklü** > **şablonları** > **Visual C++**  >  **ATL**.
   
 1. İçinde **adı** kutusuna proje için bir ad girin ve ardından **Tamam**.  
   

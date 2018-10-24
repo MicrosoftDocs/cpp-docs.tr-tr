@@ -1,7 +1,7 @@
 ---
 title: Erişimciler ve satır kümeleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -28,12 +28,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f8dc681e149d54742e4bf5e7ff44afeebe2292eb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c3247cd3b5844df76b8a115a3f28a76874db2a16
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46113103"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990184"
 ---
 # <a name="accessors-and-rowsets"></a>Erişimciler ve Satır Kümeleri
 
@@ -77,7 +77,7 @@ Aşağıdaki şekilde satır kümesi türleri gösterilmektedir.
 ![RowsetType grafik](../../data/oledb/media/vcrowsettypes.gif "vcrowsettypes")  
 Satır kümesi sınıfları  
   
-[Şema satır kümeleri](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) değil veri erişim verileri depolamak ancak bunun yerine access olarak adlandırılan meta veri deposu hakkında bilgi. Şema satır kümeleri genellikle veritabanı yapısı derleme zamanında bilinen değil ve çalışma zamanında alınmalıdır durumlarda kullanılır.  
+[Şema satır kümeleri](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) yoksa veri erişim verileri depolamak ancak bunun yerine access olarak adlandırılan meta veri deposu hakkında bilgi. Şema satır kümeleri genellikle veritabanı yapısı derleme zamanında bilinen değildir ve çalışma zamanında alınmalıdır durumlarda kullanılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
