@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39329f4895060ff950f36c3d10dd5e4020f3b98a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 92761508a5e93c7ef0d0a4099dde587987a50dad
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448434"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49809167"
 ---
 # <a name="coledatetime-class"></a>COleDateTime sınıfı
 
@@ -97,7 +97,7 @@ class COleDateTime
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleDateTime::operator ==, COleDateTime::operator < vb.](#coledatetime_relational_operators)|Karşılaştırabilirsiniz `COleDateTime` değerleri.|
+|[COleDateTime::operator ==, COleDateTime::operator < vb..](#coledatetime_relational_operators)|Karşılaştırabilirsiniz `COleDateTime` değerleri.|
 |[COleDateTime::operator +, COleDateTime::operator-](#operator_add_-)|Ekleme ve çıkarmayı `COleDateTime` değerleri.|
 |[COleDateTime::operator +=, COleDateTime::operator-=](#operator_add_eq_-_eq)|Ekleme ve çıkarmayı bir `COleDateTime` bu değerden `COleDateTime` nesne.|
 |[COleDateTime::operator =](#operator_eq)|Kopya bir `COleDateTime` değeri.|
@@ -165,7 +165,7 @@ bool operator>=(const COleDateTime& date) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Tarih*  
+*Tarih*<br/>
 `COleDateTime` Karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -210,22 +210,22 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dateSrc*  
+*dateSrc*<br/>
 Mevcut bir `COleDateTime` yeni içine kopyalanacak nesne `COleDateTime` nesne.
 
-*varSrc*  
+*varSrc*<br/>
 Mevcut bir `VARIANT` veri yapısı (büyük olasılıkla bir `COleVariant` nesnesi) bir tarih/saat değeri (VT_DATE) dönüştürülür ve yeni kopyalanan `COleDateTime` nesne.
 
-*dtSrc*  
+*dtSrc*<br/>
 Bir tarih/saat (`DATE`) yeni içine kopyalanacak değeri `COleDateTime` nesne.
 
-*timeSrc*  
+*timeSrc*<br/>
 A `time_t` veya `__time64_t` değerini bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `COleDateTime` nesne.
 
-*systimeSrc*  
+*systimeSrc*<br/>
 A `SYSTEMTIME` yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `COleDateTime` nesne.
 
-*filetimeSrc*  
+*filetimeSrc*<br/>
 A `FILETIME` yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `COleDateTime` nesne. Unutmayın `FILETIME` Eşgüdümlü Evrensel Saat (UTC) kullanan yerel saati yapısında geçirirseniz, sonuçlarınızı yanlış olur. Bkz: [dosya zamanlarını](/windows/desktop/SysInfo/file-times) daha fazla bilgi için Windows SDK.
 
 *nYear*, *nMonth*, *nhatalı günü*, *nHour*, *nMin*, *nSec*  
@@ -234,7 +234,7 @@ Yeni içine kopyalanacak tarih ve saat değerleri gösterir `COleDateTime` nesne
 *wDosDate*, *wDosTime*  
 Bir tarih/saat değerine dönüştürülür ve yeni kopyalanan için tarih ve saat değerlerini MS-DOS `COleDateTime` nesne.
 
-*dbts*  
+*dbts*<br/>
 Bir başvuru bir [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) geçerli yerel saat içeren yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -297,7 +297,7 @@ CString Format(UINT nFormatID) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Aşağıdaki yerel ayar bayraklarından birini gösterir:
 
 - LOCALE_NOUSEROVERRIDE sistem varsayılan yerel ayarları yerine özel kullanıcı ayarları kullanın.
@@ -306,10 +306,10 @@ Aşağıdaki yerel ayar bayraklarından birini gösterir:
 
 - VAR_DATEVALUEONLY Ayrıştırma sırasında saat kısmının yoksayın.
 
-*lcid*  
+*lcid*<br/>
 Dönüştürme için kullanılacak yerel ayar Kimliğini belirtir. Dil tanımlayıcıları hakkında daha fazla bilgi için bkz. [Dil tanımlayıcıları](/windows/desktop/Intl/language-identifiers).
 
-*lpszFormat*  
+*lpszFormat*<br/>
 Bir biçimlendirme dizesi benzer `printf` biçimlendirme dizesi. Her bir yüzde öncesinde, kod biçimlendirme ( `%`) oturum açın, ilgili değiştirilir `COleDateTime` bileşeni. Biçimlendirme dizesi diğer karakterler döndürülen dizeye değiştirilmeden kopyalanır. Çalışma zamanı işlevi görmek [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) daha fazla bilgi için. Değer ve biçimlendirme kodları anlamını `Format` şunlardır:
 
 - `%H` Geçerli günün saat
@@ -320,7 +320,7 @@ Bir biçimlendirme dizesi benzer `printf` biçimlendirme dizesi. Her bir yüzde 
 
 - `%%` Yüzde işareti
 
-*nFormatID*  
+*nFormatID*<br/>
 Biçim Denetimi dizesi kaynak kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -356,7 +356,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dbts*  
+*dbts*<br/>
 Bir başvuru bir [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -381,7 +381,7 @@ bool GetAsSystemTime(SYSTEMTIME& sysTime) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*sysTime*  
+*sysTime*<br/>
 Bir başvuru bir [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) dönüştürülen bir tarih/saat değerinden almaya yapısı `COleDateTime` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -404,7 +404,7 @@ bool GetAsUDATE(UDATE& udate) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*udate*  
+*udate*<br/>
 Bir başvuru bir `UDATE` dönüştürülen bir tarih/saat değerinden almaya yapısı `COleDateTime` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -938,10 +938,10 @@ LCID lcid = LANG_USER_DEFAULT) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszDate*  
+*lpszDate*<br/>
 Ayrıştırılacak olan boş sonlandırılmış dizeye bir işaretçi. Ayrıntılar için açıklamalara bakın.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Yerel ayarlar ve ayrıştırmaktan bayrakları belirtir. Bir veya daha fazla aşağıdaki bayraklar:
 
 - LOCALE_NOUSEROVERRIDE sistem varsayılan yerel ayarları yerine özel kullanıcı ayarları kullanın.
@@ -950,7 +950,7 @@ Yerel ayarlar ve ayrıştırmaktan bayrakları belirtir. Bir veya daha fazla aş
 
 - VAR_DATEVALUEONLY Ayrıştırma sırasında saat kısmının yoksayın.
 
-*lcid*  
+*lcid*<br/>
 Dönüştürme için kullanılacak yerel ayar Kimliğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1151,7 +1151,7 @@ void SetStatus(DateTimeStatus status) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Durumu*  
+*Durumu*<br/>
 Bu yeni durum değeri `COleDateTime` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
