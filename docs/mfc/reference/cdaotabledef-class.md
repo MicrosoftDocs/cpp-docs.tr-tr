@@ -82,12 +82,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f678a00d4556cf81ad378088df2525038bbdd6a2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8a943374731785ecadd13f89ee5c1b760acfb46d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426373"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064868"
 ---
 # <a name="cdaotabledef-class"></a>CDaoTableDef sınıfı
 
@@ -573,7 +573,6 @@ void GetFieldInfo(
     CDaoFieldInfo& fieldinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
 
-
 void GetFieldInfo(
     LPCTSTR lpszName,
     CDaoFieldInfo& fieldinfo,
@@ -635,7 +634,6 @@ void GetIndexInfo(
     int nIndex,
     CDaoIndexInfo& indexinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
-
 
 void GetIndexInfo(
     LPCTSTR lpszName,

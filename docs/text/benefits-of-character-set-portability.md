@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 115a4524f3b11d847291015f3bee5ca10f628310
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d016b95ea2a2d5d94b8db47a2d6c9d5cc577083f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423448"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064452"
 ---
 # <a name="benefits-of-character-set-portability"></a>Karakter Kümesi Taşınabilirliğinin Yararları
 
@@ -29,7 +29,6 @@ ms.locfileid: "46423448"
 - Temelinizi kodlama kodunuzu temel esnek hale getirir. Daha sonra bunu kolayca Unicode veya MBCS taşıyabilirsiniz.
 
 - Unicode kullanarak Windows için uygulamalarınızı daha verimli hale getirir. Windows Unicode kullandığından, hangi ek yüke neden olur ve işletim sisteminden Unicode olmayan dizeleri çevrilmelidir.
-
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

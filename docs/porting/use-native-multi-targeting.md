@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62404de4012bcd49888da527ae93ed1b2137a48a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3c66fe63d97f623011b3dade46266a4a9d8d83b1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374151"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064427"
 ---
 # <a name="use-native-multi-targeting-in-visual-studio-to-build-old-projects"></a>Yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanın
 
@@ -52,11 +52,11 @@ Projelerinizi yükseltmek istediğinizde bu özellik kaldırmanız gerekir.
 
 Yükseltme seçerseniz Visual Studio çözüm veya proje dosyalarınıza değişiklik yapmaz. Projeyi oluşturduğunuzda oluşturulan ikili dosyaları Visual Studio'nun önceki sürümüyle oluşturulan fiyatlarla tam olarak uyumlu değildir. Visual Studio C++ derleyicinin aynısını kullanır ve eski IDE'nizi ile birlikte gelen aynı kitaplıkları bağlantılar olmasıdır. Ayrıca neden yükseltme iletişim kutusundan seçerseniz yüklü olan Visual Studio sürümün tutmak için sizi uyarır olan **iptal**.
 
-## <a name="instructions-for-visual-studio-2008"></a>Visual Studio 2008 için yönergeler  
-  
+## <a name="instructions-for-visual-studio-2008"></a>Visual Studio 2008 için yönergeler
+
 Visual Studio 2008 adlı C++ için kendi özel yapı sistemine sahip **VCBuild**. Visual Studio 2010'da başlıyor, Visual C++ projeleri kullanmak üzere değiştirilmiştir **MSBuild**. Başka bir deyişle, Visual Studio 2008 projelerinizi Visual Studio'nun en son sürümünü derlemek için bir güncelleştirme adım aracılığıyla gitmeniz gerekir. Güncelleştirilmiş projeniz Visual Studio 2008 IDE kullanılarak oluşturulan ikili dosyalarla tam olarak uyumlu ikili dosyaları yine de oluşturur.
 
-İlk olarak, Visual Studio geçerli sürümüne ek olarak, Visual Studio 2008 ile aynı bilgisayarda Visual Studio 2010 yüklemelisiniz. Visual Studio 2010 yükler **MSBuild** hedef Visual Studio 2008 projeleri için gereken betikler. 
+İlk olarak, Visual Studio geçerli sürümüne ek olarak, Visual Studio 2008 ile aynı bilgisayarda Visual Studio 2010 yüklemelisiniz. Visual Studio 2010 yükler **MSBuild** hedef Visual Studio 2008 projeleri için gereken betikler.
 
 Ardından, Visual Studio 2008 çözümünüzü ve projelerinizi Visual Studio'nun geçerli sürüme güncelleştirmelisiniz. Proje ve çözüm dosyaları yükseltmeden önce bir yedeklemesini oluşturun öneririz. Yükseltme işlemini başlatmak için Visual Studio'nun geçerli sürümünde çözümü açın. Yükseltme istemi aldığınızda, bilgileri gözden geçirin ve ardından **Tamam** yükseltmeyi başlatmak için. Çözümde birden fazla projeniz varsa, güncelleştirmelisiniz sihirbaz yeni .vcxproj proje dosyaları yan yana mevcut .vcproj dosyaları oluşturur. Özgün .sln dosyasını bir kopyasını da sahip olduğu sürece, yükseltme, mevcut Visual Studio 2008 projeler üzerinde diğer herhangi bir etkisi yoktur.
 
@@ -77,4 +77,4 @@ Bu ürünler yüklü olduğunda **Platform araç takımını** özellik açılan
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
-[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md)  
+[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md)
