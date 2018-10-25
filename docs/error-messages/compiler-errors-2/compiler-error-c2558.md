@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd6f38ff8fbe0c4179addf46a43a35be4237b73e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6129bea28b943f8f18e1cf6b1e760e604223bdc1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46100844"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060942"
 ---
 # <a name="compiler-error-c2558"></a>Derleyici Hatası C2558
 
@@ -33,7 +33,7 @@ Kopya oluşturucusu, bir nesneyi aynı türde başka bir nesneden başlatır. (N
 
 1. Kopya Oluşturucusu olan bir sınıfı kopyalama denemesi yapıldığında sorun oluşabilir `private`. Çoğu durumda, bir sınıf olan bir `private` kopya Oluşturucu kopyalanması gerekmez. Yaygın bir programlama tekniği bildiren bir `private` bir sınıfın doğrudan kullanımını önlemek için kopya Oluşturucu. Sınıf kendisi tarafından kullanılamayabilir ya da düzgün şekilde çalışması için başka bir sınıf gerektirebilir.
 
-     Sahip bir sınıfı kullanmanın güvenli olduğunu belirlerseniz bir `private` kopya oluşturucusuna, sahip yeni bir sınıf türetin `private` oluşturucusu ve marka bir `public` veya `protected` Yeni sınıfta kullanılabilir kopya Oluşturucusu. Türetilen sınıfı orijinalinin yerine kullanın.
+   Sahip bir sınıfı kullanmanın güvenli olduğunu belirlerseniz bir `private` kopya oluşturucusuna, sahip yeni bir sınıf türetin `private` oluşturucusu ve marka bir `public` veya `protected` Yeni sınıfta kullanılabilir kopya Oluşturucusu. Türetilen sınıfı orijinalinin yerine kullanın.
 
 1. Kopya Oluşturucusu açık olan bir sınıfı kopyalamak için denemesi yapıldığında sorun oluşabilir. Olarak bir kopya Oluşturucu bildirilerek `explicit` geçişini/dönüşünü bir sınıfın işlevlere/işlevlerden engeller. Açık oluşturucular hakkında daha fazla bilgi için bkz: [kullanıcı tanımlı tür dönüşümleri](../../cpp/user-defined-type-conversions-cpp.md).
 

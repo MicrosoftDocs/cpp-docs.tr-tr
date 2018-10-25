@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ac4032184e8e8681b6cfa01ec48e8053af57b623
-ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
+ms.openlocfilehash: f3bce2db1ed3a418347d8a8b0a53cb6958fb63e0
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48251184"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063178"
 ---
 # <a name="callback-function-wrl"></a>Geri çağırma işlevi (WRL)
 
@@ -42,7 +42,7 @@ template<
 >
 ComPtr<TDelegateInterface> Callback(
    _In_ TCallbackObject *object,
-   _In_ HRESULT (TCallbackObject::* method)()  
+   _In_ HRESULT (TCallbackObject::* method)()
 );
 template<
    typename TDelegateInterface,
@@ -51,7 +51,7 @@ template<
 >
 ComPtr<TDelegateInterface> Callback(
    _In_ TCallbackObject *object,
-   _In_ HRESULT (TCallbackObject::* method)(TArg1)  
+   _In_ HRESULT (TCallbackObject::* method)(TArg1)
 );
 template<
    typename TDelegateInterface,
@@ -62,7 +62,7 @@ template<
 ComPtr<TDelegateInterface> Callback(
    _In_ TCallbackObject *object,
    _In_ HRESULT (TCallbackObject::* method)(TArg1,
-   TArg2)  
+   TArg2)
 );
 template<
    typename TDelegateInterface,
@@ -75,7 +75,7 @@ ComPtr<TDelegateInterface> Callback(
    _In_ TCallbackObject *object,
    _In_ HRESULT (TCallbackObject::* method)(TArg1,
    TArg2,
-   TArg3)  
+   TArg3)
 );
 template<
    typename TDelegateInterface,
@@ -90,7 +90,7 @@ ComPtr<TDelegateInterface> Callback(
    _In_ HRESULT (TCallbackObject::* method)(TArg1,
    TArg2,
    TArg3,
-   TArg4)  
+   TArg4)
 );
 template<
    typename TDelegateInterface,
@@ -107,7 +107,7 @@ ComPtr<TDelegateInterface> Callback(
    TArg2,
    TArg3,
    TArg4,
-   TArg5)  
+   TArg5)
 );
 template<
    typename TDelegateInterface,
@@ -126,7 +126,7 @@ ComPtr<TDelegateInterface> Callback(
    TArg3,
    TArg4,
    TArg5,
-   TArg6)  
+   TArg6)
 );
 template<
    typename TDelegateInterface,
@@ -147,7 +147,7 @@ ComPtr<TDelegateInterface> Callback(
    TArg4,
    TArg5,
    TArg6,
-   TArg7)  
+   TArg7)
 );
 template<
    typename TDelegateInterface,
@@ -170,7 +170,7 @@ ComPtr<TDelegateInterface> Callback(
    TArg5,
    TArg6,
    TArg7,
-   TArg8)  
+   TArg8)
 );
 template<
    typename TDelegateInterface,
@@ -195,7 +195,7 @@ ComPtr<TDelegateInterface> Callback(
    TArg6,
    TArg7,
    TArg8,
-   TArg9)  
+   TArg9)
 );
 ```
 

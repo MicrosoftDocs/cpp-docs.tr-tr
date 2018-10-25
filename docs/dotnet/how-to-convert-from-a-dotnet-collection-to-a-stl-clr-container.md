@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: ba6d6193c8422e25e174c7a4b73b2b74095cced9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4dd67728773df86f9961fe54c7dd9e4a08ec743d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436513"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060955"
 ---
 # <a name="how-to-convert-from-a-net-collection-to-a-stlclr-container"></a>Nasıl yapılır: Bir .NET Koleksiyonundan STL/CLR Kapsayıcısına Dönüştürme
 
@@ -31,7 +31,7 @@ Bu konuda, .NET koleksiyonlar, eşdeğer bir STL/CLR kapsayıcıları için dön
 
 1. Bir koleksiyonun tamamını dönüştürmek için bir STL/CLR kapsayıcısı oluşturmak ve oluşturucuya koleksiyon geçirin.
 
-     İlk örnek, bu yordamı gösterir.
+   İlk örnek, bu yordamı gösterir.
 
 -VEYA-
 
@@ -39,7 +39,7 @@ Bu konuda, .NET koleksiyonlar, eşdeğer bir STL/CLR kapsayıcıları için dön
 
 1. .NET koleksiyonun içeriğini kapsayıcıya kopyalayın. Bu bir STL/CLR kullanarak yapılabilir [algoritması](../dotnet/algorithm-stl-clr.md), veya tarafından .NET koleksiyonu üzerinden yineleme yapma ve STL/CLR kapsayıcısına her öğenin bir kopyasını ekleme.
 
-     İkinci örnek, bu yordamı gösterir.
+   İkinci örnek, bu yordamı gösterir.
 
 ## <a name="example"></a>Örnek
 

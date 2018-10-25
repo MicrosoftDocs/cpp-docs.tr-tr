@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f69dab9dfc9216d1c56ed54730d5f94cbb58b1db
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f00e95aee0f3e16a979f4969a33b90746b4082ea
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46088741"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062411"
 ---
 # <a name="implementing-property-pages"></a>Özellik sayfaları uygulama
 
@@ -43,11 +43,11 @@ ATL kullanarak bir özellik sayfası oluşturmak için:
 
 - İsteğe bağlı olarak geçersiz kılma `IPropertyPageImpl` aşağıdaki yönergeleri kullanarak yöntemleri.
 
-   |Ipropertypageımpl yöntemi|Aşağıdakileri yapmak istediğinizde geçersiz kıl...|Notlar|  
-   |------------------------------|----------------------------------|-----------|  
-   |[SetObjects](../atl/reference/ipropertypageimpl-class.md#setobjects)|Sayfanız ve destekledikleri arabirimleri için geçirilen nesne sayısı üzerinde temel sağlamlık denetimleri gerçekleştirin.|Temel sınıf uygulamasına çağırmadan önce kendi kod yürütün. Ayarlanan nesneleri beklentilerinizle uygun olmayan, çağrı olabildiğince çabuk başarısız.|  
-   |[Etkinleştirme](../atl/reference/ipropertypageimpl-class.md#activate)|(Örneğin, geçerli özellik değerlerini iletişim denetimleriyle nesnelerden ayarlamak, denetimleri dinamik olarak oluşturmak veya diğer başlatmaların) sayfanızın kullanıcı arabirimi başlatılamıyor.|Temel sınıfı, bunları güncelleştirmek denemeden önce iletişim kutusu penceresine ve tüm denetimleri oluşturmak için bir fırsat sahip olacak şekilde kodunuzu önce taban sınıf uygulamasını arayın.|  
-   |[Uygula](../atl/reference/ipropertypageimpl-class.md#apply)|Özellik ayarları doğrulayın ve nesneleri güncelleştirin.|Çağrı izleme dışında herhangi bir şey yapmaz beri taban sınıf uygulamasını çağıracak şekilde gerek yoktur.|  
+   |Ipropertypageımpl yöntemi|Aşağıdakileri yapmak istediğinizde geçersiz kıl...|Notlar|
+   |------------------------------|----------------------------------|-----------|
+   |[SetObjects](../atl/reference/ipropertypageimpl-class.md#setobjects)|Sayfanız ve destekledikleri arabirimleri için geçirilen nesne sayısı üzerinde temel sağlamlık denetimleri gerçekleştirin.|Temel sınıf uygulamasına çağırmadan önce kendi kod yürütün. Ayarlanan nesneleri beklentilerinizle uygun olmayan, çağrı olabildiğince çabuk başarısız.|
+   |[Etkinleştirme](../atl/reference/ipropertypageimpl-class.md#activate)|(Örneğin, geçerli özellik değerlerini iletişim denetimleriyle nesnelerden ayarlamak, denetimleri dinamik olarak oluşturmak veya diğer başlatmaların) sayfanızın kullanıcı arabirimi başlatılamıyor.|Temel sınıfı, bunları güncelleştirmek denemeden önce iletişim kutusu penceresine ve tüm denetimleri oluşturmak için bir fırsat sahip olacak şekilde kodunuzu önce taban sınıf uygulamasını arayın.|
+   |[Uygula](../atl/reference/ipropertypageimpl-class.md#apply)|Özellik ayarları doğrulayın ve nesneleri güncelleştirin.|Çağrı izleme dışında herhangi bir şey yapmaz beri taban sınıf uygulamasını çağıracak şekilde gerek yoktur.|
    |[Devre dışı bırak](../atl/reference/ipropertypageimpl-class.md#deactivate)|Pencere ile ilgili öğeleri temizleyin.|Taban sınıf uygulamasını temsil eden özellik sayfası iletişim kutusunu yok eder. İletişim kutusunu yok önce temizlemek gerekiyorsa, temel sınıfı çağırmadan önce kodunuzu eklemeniz gerekir.|
 
 Örnek özellik sayfası için bkz: [örnek: özellik sayfası uygulama](../atl/example-implementing-a-property-page.md).

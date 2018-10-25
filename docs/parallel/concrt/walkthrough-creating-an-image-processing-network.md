@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c2e1ffc35315d898010e73113d6148fb27e1bad
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 68b9aa25cef78780b0bb6f97d3cde1e27600481f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408056"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063425"
 ---
 # <a name="walkthrough-creating-an-image-processing-network"></a>İzlenecek yol: Görüntü İşleme Ağı Oluşturma
 
@@ -98,31 +98,31 @@ Aşağıdaki adımlar, bu görüntü ağ işleme uygular ve her bir JPEG görün
 
 1. Bir işlev oluşturma `ProcessImages`, disk üzerinde bir dizinin adını alır.
 
-     [!code-cpp[concrt-image-processing-filter#7](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_6.cpp)]
+   [!code-cpp[concrt-image-processing-filter#7](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_6.cpp)]
 
 1. İçinde `ProcessImages` işlev, oluşturun bir `countdown_event` değişkeni. `countdown_event` Sınıfı bu yönergelerin ilerleyen bölümünde gösterilir.
 
-     [!code-cpp[concrt-image-processing-filter#8](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_7.cpp)]
+   [!code-cpp[concrt-image-processing-filter#8](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_7.cpp)]
 
 1. Oluşturma bir [std::map](../../standard-library/map-class.md) ilişkilendirir nesne bir `Bitmap` özgün dosya adıyla nesne.
 
-     [!code-cpp[concrt-image-processing-filter#9](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_8.cpp)]
+   [!code-cpp[concrt-image-processing-filter#9](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_8.cpp)]
 
 1. Görüntü işleme ağı üyelerini tanımlamak için aşağıdaki kodu ekleyin.
 
-     [!code-cpp[concrt-image-processing-filter#10](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_9.cpp)]
+   [!code-cpp[concrt-image-processing-filter#10](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_9.cpp)]
 
 1. Ağa bağlanmak için aşağıdaki kodu ekleyin.
 
-     [!code-cpp[concrt-image-processing-filter#11](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_10.cpp)]
+   [!code-cpp[concrt-image-processing-filter#11](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_10.cpp)]
 
 1. Ağ başı her JPEG dosyasının tam yolu dizinde göndermek için aşağıdaki kodu ekleyin.
 
-     [!code-cpp[concrt-image-processing-filter#12](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_11.cpp)]
+   [!code-cpp[concrt-image-processing-filter#12](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_11.cpp)]
 
 1. Bekle `countdown_event` değişkeni sıfır ulaşmak için.
 
-     [!code-cpp[concrt-image-processing-filter#13](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_12.cpp)]
+   [!code-cpp[concrt-image-processing-filter#13](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_12.cpp)]
 
 Aşağıdaki tabloda, ağ üyelerini açıklar.
 

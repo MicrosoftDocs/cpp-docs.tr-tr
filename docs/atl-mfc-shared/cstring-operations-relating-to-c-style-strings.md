@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a2567182f0e2622a72ceb9b98988c4d122a3561
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 765cb6ccf24415c174761c57268dc79e1fc6845b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860569"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062567"
 ---
 # <a name="cstring-operations-relating-to-c-style-strings"></a>C stili dizelerle ilgili CString işlemleri
 
@@ -54,9 +54,9 @@ A [CString](../atl-mfc-shared/using-cstring.md) nesnesi karakter dizesi verileri
 
 Kullanılacak bir `CString` nesnesi C stili dize olarak, LPCTSTR nesnesi. Aşağıdaki örnekte, `CString` salt okunur C stili null ile sonlandırılmış dizeye bir işaretçi döndürür. `strcpy` İşlevi C stili dizenin bir kopyasını değişkeninde koyar `myString`.
 
-```
-CString aCString = "A string";  
-char myString[256];  
+```cpp
+CString aCString = "A string";
+char myString[256];
 strcpy(myString, (LPCTSTR)aCString);
 ```
 

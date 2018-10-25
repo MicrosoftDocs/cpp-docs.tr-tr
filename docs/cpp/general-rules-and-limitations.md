@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a2a21de2cade8eb0d8776b340123df3535c36f4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0222af4bd53b21750cb6debc477e10c96f9d5594
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034401"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061592"
 ---
 # <a name="general-rules-and-limitations"></a>Genel Kurallar ve Sınırlamalar
 
@@ -25,7 +25,7 @@ ms.locfileid: "46034401"
 
 - Bir işlevi bildirmek veya olmadan nesne **dllimport** veya **dllexport** özniteliği, işlev veya nesne DLL arabiriminin bir parçası dikkate alınmaz. Bu nedenle, bir işlevin veya nesnenin tanımı bu modüldeki veya başka bir modül aynı programın içinde mevcut olması gerekir. DLL arabirimi bir işlevin veya nesnenin parçası haline getirmek için işlevin veya nesnenin başka bir modül tanımını bildirmek **dllexport**. Aksi halde bir bağlayıcı hatası meydana gelir.
 
-     Bir işlevi bildirmek veya nesnesi ile **dllexport** özniteliği, tanımı aynı programın bazı modülünde görünmesi gerekir. Aksi halde bir bağlayıcı hatası meydana gelir.
+   Bir işlevi bildirmek veya nesnesi ile **dllexport** özniteliği, tanımı aynı programın bazı modülünde görünmesi gerekir. Aksi halde bir bağlayıcı hatası meydana gelir.
 
 - Programınızı tek bir modülde hem de içeriyorsa **dllimport** ve **dllexport** bildirimleri için aynı işlev ya da nesneye **dllexport** özniteliği önceliklidir üzerinden **dllimport** özniteliği. Ancak, bir derleyici uyarısı oluşturulur. Örneğin:
 
@@ -53,7 +53,7 @@ ms.locfileid: "46034401"
     }
     ```
 
-     Ancak, bir program içerdiğinden **dllexport** nesne bildirimi özniteliğinde programda bir yere bu nesne için tanım sağlamalıdır, genel veya yerel statik işlev işaretçisi ile başlatabilirsiniz. adresini bir **dllexport** işlevi. Benzer şekilde, bir genel veya yerel statik veri işaretçisine adresiyle başlatabilirsiniz bir **dllexport** veri nesnesi. Örneğin, C veya C++ ortamında aşağıdaki kod hatalar oluşturmaz:
+   Ancak, bir program içerdiğinden **dllexport** nesne bildirimi özniteliğinde programda bir yere bu nesne için tanım sağlamalıdır, genel veya yerel statik işlev işaretçisi ile başlatabilirsiniz. adresini bir **dllexport** işlevi. Benzer şekilde, bir genel veya yerel statik veri işaretçisine adresiyle başlatabilirsiniz bir **dllexport** veri nesnesi. Örneğin, C veya C++ ortamında aşağıdaki kod hatalar oluşturmaz:
 
     ```cpp
     __declspec( dllexport ) void func1( void );
@@ -71,7 +71,7 @@ ms.locfileid: "46034401"
 
 - Uygularsanız, **dllexport** olarak işaretlenmemiş bir temel sınıf olan normal bir sınıfa **dllexport**, derleyicinin C4275 oluşturur.
 
-     Derleyici, temel sınıf bir sınıf şablonunun bir özelleştirmesi ise aynı uyarı oluşturur. Bu sorunu çözmek için temel sınıf ile işaretle **dllexport**. Bir sınıf şablonunun bir özelleştirmesi nereye yerleştireceğinizi sorundur **__declspec(dllexport)**; sınıf şablonu işaretlemek izin verilmez. Bunun yerine, açıkça sınıf şablonu örneği oluşturun ve bu açık örnek oluşturma ile işaretle **dllexport**. Örneğin:
+   Derleyici, temel sınıf bir sınıf şablonunun bir özelleştirmesi ise aynı uyarı oluşturur. Bu sorunu çözmek için temel sınıf ile işaretle **dllexport**. Bir sınıf şablonunun bir özelleştirmesi nereye yerleştireceğinizi sorundur **__declspec(dllexport)**; sınıf şablonu işaretlemek izin verilmez. Bunun yerine, açıkça sınıf şablonu örneği oluşturun ve bu açık örnek oluşturma ile işaretle **dllexport**. Örneğin:
 
     ```cpp
     template class __declspec(dllexport) B<int>;
@@ -79,14 +79,14 @@ ms.locfileid: "46034401"
     // ...
     ```
 
-     Bu çözüm, şablon bağımsız değişken sınıf ise başarısız olur. Örneğin:
+   Bu çözüm, şablon bağımsız değişken sınıf ise başarısız olur. Örneğin:
 
     ```cpp
     class __declspec(dllexport) D : public B<D> {
     // ...
     ```
 
-     Bu ortak desen şablonları ile olduğundan derleyici semantiği değiştirilen **dllexport** bir veya daha fazla temel sınıf olan bir sınıfa uygulandığında ve bir veya daha fazla temel sınıflar, sınıf şablonunun bir özelleştirmesi olduğunda . Bu durumda, derleyici örtük olarak geçerlidir **dllexport** sınıf şablonlarının uzmanlıkları için. Aşağıdakileri yapın ve bir uyarı alırsınız değil:
+   Bu ortak desen şablonları ile olduğundan derleyici semantiği değiştirilen **dllexport** bir veya daha fazla temel sınıf olan bir sınıfa uygulandığında ve bir veya daha fazla temel sınıflar, sınıf şablonunun bir özelleştirmesi olduğunda . Bu durumda, derleyici örtük olarak geçerlidir **dllexport** sınıf şablonlarının uzmanlıkları için. Aşağıdakileri yapın ve bir uyarı alırsınız değil:
 
     ```cpp
     class __declspec(dllexport) D : public B<D> {

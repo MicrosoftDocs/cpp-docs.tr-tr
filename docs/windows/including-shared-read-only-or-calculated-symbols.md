@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 329f1d21489b57130531db20014e249588f101a6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8a2bb3a95f2b9e5506ee761906a7df213f97b927
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400516"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061800"
 ---
 # <a name="including-shared-read-only-or-calculated-symbols"></a>Paylaşılan (Salt Okunur) veya Hesaplanan Sembolleri Ekleme
 
@@ -40,7 +40,7 @@ Sembol değeri tanımlamak için basit bir tamsayı yerine ifadeler kullanan sem
 
 ```cpp
 #define   IDC_CONTROL1 2100
-#define   IDC_CONTROL2 (IDC_CONTROL1+1)  
+#define   IDC_CONTROL2 (IDC_CONTROL1+1)
 ```
 
 Ortamı doğru olduğu sürece bu hesaplanan semboller yorumlar:

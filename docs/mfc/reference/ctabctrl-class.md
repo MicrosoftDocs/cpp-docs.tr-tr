@@ -82,12 +82,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa7fd6b89ad4437397e0ff685400b7efe957eaca
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3cfbcdf03a5c527d27d9bff8b37322011cba60bb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421888"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063516"
 ---
 # <a name="ctabctrl-class"></a>CTabCtrl sınıfı
 
@@ -618,17 +618,14 @@ LONG InsertItem(
     int nItem,
     TCITEM* pTabCtrlItem);
 
-
 LONG InsertItem(
     int nItem,
     LPCTSTR lpszItem);
-
 
 LONG InsertItem(
     int nItem,
     LPCTSTR lpszItem,
     int nImage);
-
 
 LONG InsertItem(
     UINT nMask,
@@ -636,7 +633,6 @@ LONG InsertItem(
     LPCTSTR lpszItem,
     int nImage,
     LPARAM lParam);
-
 
 LONG InsertItem(
     UINT nMask,

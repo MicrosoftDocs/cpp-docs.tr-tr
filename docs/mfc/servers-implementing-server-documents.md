@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b62de2a1e6cba6ecbb29521518f5442ab002ddf3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7907935971fae7d990c651410e5b76982b798075
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381952"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060526"
 ---
 # <a name="servers-implementing-server-documents"></a>Sunucular: Sunucu Belgeleri Uygulama
 
@@ -36,7 +36,7 @@ Bu makalede Uygulama Sihirbazı'nda OLE sunucu seçeneği belirtmediyseniz sunuc
 
 1. Uygulama `OnGetEmbeddedItem` sunucu belge sınıfının üye işlevi.
 
-     `OnGetEmbeddedItem` bir kapsayıcı uygulamasının kullanıcı oluşturur veya düzenler gömülü bir öğe adı verilir. Tüm belgeyi temsil eden bir öğe döndürmesi gerekir. Bu nesnenin olmalıdır, `COleServerItem`-türetilmiş sınıf.
+   `OnGetEmbeddedItem` bir kapsayıcı uygulamasının kullanıcı oluşturur veya düzenler gömülü bir öğe adı verilir. Tüm belgeyi temsil eden bir öğe döndürmesi gerekir. Bu nesnenin olmalıdır, `COleServerItem`-türetilmiş sınıf.
 
 1. Geçersiz kılma `Serialize` belgesinin içeriğini serileştirmek için üye işlevi. Yerel veri belge içinde temsil etmek için kullanmıyorsanız sunucu öğelerin listesini seri hale gerekmez. Daha fazla bilgi için *uygulama sunucu öğeleri* makaledeki [sunucular: sunucu öğeleri](../mfc/servers-server-items.md).
 

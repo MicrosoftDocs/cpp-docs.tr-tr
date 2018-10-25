@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0bb329b60b72aae268252ae3ddbcc2c63d4a18f6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 273893f5164c4e89b3516c43b5414e5487af376e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389701"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063217"
 ---
 # <a name="toolbar-editor-c"></a>Araç çubuğu Düzenleyicisi (C++)
 
@@ -43,8 +43,7 @@ ms.locfileid: "46389701"
 
 **Araç** Düzenleyicisi penceresi iki düğme resmini, Resim Düzenleyicisi penceresi ile aynı görünümlerini gösterir. Bölünmüş çubuk iki bölmeyi ayırır. Bölmelerin göreli boyutlarını değiştirmek için bölme çubuğunu yanlara doğru sürükleyebilirsiniz. Etkin bölmede bir seçim kenarlığı görüntülenir. İki görünüm görüntünün konu araç çubuğudur.
 
-![Araç çubuğu Düzenleyicisi](../mfc/media/vctoolbareditor.gif "vcToolbarEditor")  
-Araç Çubuğu Düzenleyicisi
+![Araç çubuğu Düzenleyicisi](../mfc/media/vctoolbareditor.gif "vcToolbarEditor") araç çubuğu Düzenleyicisi
 
 **Araç** Düzenleyicisi benzer **görüntü** işlevleri düzenleyicisinde. Menü öğeleri, grafik araçları ve bit eşlem kılavuz penceresindekilerle aynıdır **görüntü** Düzenleyici. Bir menü komutu yoktur **görüntü** arasında geçiş yapmanıza izin vermek için menü **araç** Düzenleyicisi ve **görüntü** Düzenleyici. Kullanma hakkında daha fazla bilgi için **grafik** araç **renkleri** paleti veya **görüntü** menüsünde görmek [görüntü Düzenleyicisi](../windows/image-editor-for-icons.md).
 

@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8c11165e8b6632488d29e5fe79aa945332c25e9
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 569e3a078109e66df7dcf5cbf314817ce0786899
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43689368"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061932"
 ---
 # <a name="emit-pseudoinstruction"></a>_emit Sözde Yönerge
 
@@ -38,8 +38,8 @@ Aşağıdaki parçası 0x4A 0x43 ve 0x4B bayt kodun içine yerleştirir:
 .
 .
 __asm {
-     randasm
-     }
+    randasm
+    }
 ```
 
 > [!CAUTION]

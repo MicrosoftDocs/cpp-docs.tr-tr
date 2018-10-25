@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49ea94258c163c241243934f41d55d896d0d1fa2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 74660dc2baeff683d35fac8d4b9dda06bdbec22d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372463"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061319"
 ---
 # <a name="using-the-carchive-ltlt-and-gtgt-operators"></a>CArchive kullanarak &lt; &lt; ve &gt; &gt; işleçleri
 
@@ -33,13 +33,13 @@ ms.locfileid: "46372463"
 
 1. Aşağıdaki örnek, bir dosyada bir arşiv aracılığıyla bir nesneyi depolamak gösterilmektedir:
 
-     [!code-cpp[NVC_MFCSerialization#7](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_1.cpp)]
+   [!code-cpp[NVC_MFCSerialization#7](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_1.cpp)]
 
 #### <a name="to-load-an-object-from-a-value-previously-stored-in-a-file"></a>Daha önce bir dosyada depolanan bir değerden bir nesne yüklemek için
 
 1. Aşağıdaki örnek, daha önce bir dosyada depolanan bir değerden bir nesne yüklenmeye gösterilmektedir:
 
-     [!code-cpp[NVC_MFCSerialization#8](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_2.cpp)]
+   [!code-cpp[NVC_MFCSerialization#8](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_2.cpp)]
 
 Genellikle, depolama ve Arşiv'de bir dosyaya gelen ve giden veri yükleme `Serialize` işlevlerini `CObject`-türetilmiş sınıfları ile DECLARE_SERIALIZE makrosu bildirildi gerekir. Bir başvuru bir `CArchive` nesnesi, `Serialize` işlevi. Çağırmanızı `IsLoading` işlevi `CArchive` belirlemek için nesne olup olmadığını `Serialize` işlevi çağrılıp çağrılmadığını dosyasından veri yükleme veya dosya verilerini depolamak için.
 

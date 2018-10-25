@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2293bd70e391ef021d8187e3fca2a9a0ab4d98d2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 52245054e0112f66a78ffb76043715eb88423c5d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427634"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063633"
 ---
 # <a name="operator-operator-microsoftwrl"></a>operator== İşleç (Microsoft::WRL)
 
@@ -35,7 +35,7 @@ WRL_NOTHROW bool operator==(
 );
 WRL_NOTHROW bool operator==(
    const ComPtr<T>& a,
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 WRL_NOTHROW bool operator==(
    decltype(__nullptr),
@@ -47,7 +47,7 @@ WRL_NOTHROW bool operator==(
 );
 WRL_NOTHROW bool operator==(
    const Details::ComPtrRef<ComPtr<T>>& a,
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 WRL_NOTHROW bool operator==(
    decltype(__nullptr),

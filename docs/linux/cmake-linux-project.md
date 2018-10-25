@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 20291e1f824704ee94cb45f14c16d6f0e4960348
-ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
+ms.openlocfilehash: b7c28a8e67ef2731d26071262383e93d32be9583
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410843"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064114"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake projesi yapılandırma
 
@@ -29,8 +29,8 @@ Linux CMake desteği, Visual Studio için Linux C++ iş yükünü yüklediğiniz
 
 Bu konuda, Visual Studio'da CMake desteği temel olarak bilindiğini sahip olduğunuz varsayılır. Daha fazla bilgi için [Visual C++ için CMake araçlarını](../ide/cmake-tools-for-visual-cpp.md). CMake kendisi hakkında daha fazla bilgi için bkz: [derleme, Test ve paket Your yazılım CMake ile](https://cmake.org/).
 
-> [!NOTE]  
-> Visual Studio'da CMake desteği, CMake 3.8 içinde sunulan sunucu modu desteği gerektirir. Bir Microsoft tarafından sağlanan CMake değişken için en son önceden oluşturulmuş ikilileri indirmek [ https://github.com/Microsoft/CMake/releases ](https://github.com/Microsoft/CMake/releases). 
+> [!NOTE]
+> Visual Studio'da CMake desteği, CMake 3.8 içinde sunulan sunucu modu desteği gerektirir. Bir Microsoft tarafından sağlanan CMake değişken için en son önceden oluşturulmuş ikilileri indirmek [ https://github.com/Microsoft/CMake/releases ](https://github.com/Microsoft/CMake/releases).
 
 ## <a name="open-a-folder"></a>Klasör Aç
 
@@ -120,10 +120,9 @@ Bu seçenekler önce ve sonra yapı ve CMake oluşturma önce uzak çubuğundaki
 
 ## <a name="download-prebuilt-cmake-binaries"></a>Önceden oluşturulmuş CMake ikili dosyaları indirme
 
-Kendi Linux distro CMake daha eski bir sürümü olabilir. Visual Studio'da CMake desteği, CMake 3.8 içinde sunulan sunucu modu desteği gerektirir. Bir Microsoft tarafından sağlanan CMake değişken için en son önceden oluşturulmuş ikilileri indirmek [ https://github.com/Microsoft/CMake/releases ](https://github.com/Microsoft/CMake/releases). 
-
+Kendi Linux distro CMake daha eski bir sürümü olabilir. Visual Studio'da CMake desteği, CMake 3.8 içinde sunulan sunucu modu desteği gerektirir. Bir Microsoft tarafından sağlanan CMake değişken için en son önceden oluşturulmuş ikilileri indirmek [ https://github.com/Microsoft/CMake/releases ](https://github.com/Microsoft/CMake/releases).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)<br/>
-[Visual C++ için CMake araçları](../ide/cmake-tools-for-visual-cpp.md)  
+[Visual C++ için CMake araçları](../ide/cmake-tools-for-visual-cpp.md)

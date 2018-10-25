@@ -16,20 +16,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b46b5c3b4750957c548becfcc5143f5eed858f71
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 0df8cb1def78e3a7b564f268eb1b3b0a2069fb11
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789852"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062853"
 ---
 # <a name="stand-alone-attributes"></a>Tek Başına Öznitelikler
+
 Tek başına öznitelik C++ anahtar sözcüğü çalışmaz, ancak bir kod satırı gibi daha fazla. Tek başına öznitelik deyimleri noktalı virgül satırın sonunda gerektirir.
-  
+
+## <a name="stand-alone-attribute-list"></a>Tek başına öznitelik listesi
+
 |Öznitelik|Açıklama|
 |---------------|-----------------|
 |[cpp_quote](cpp-quote.md)|Belirtilen dizeyi tırnak karakterleri olmadan oluşturulan üst bilgi dosyasına yayar.|
-|[Özel](custom-cpp.md)|Kendi özniteliğinizi tanımlamanızı sağlar.|
+|[custom](custom-cpp.md)|Kendi özniteliğinizi tanımlamanızı sağlar.|
 |[db_command](db-command.md)|OLE DB komut oluşturur.|
 |[emitidl](emitidl.md)|Tüm sonraki IDL öznitelikleri işlem görüp oluşturulan .idl dosyasında yerleştirilmiş olup olmadığını belirler.|
 |[idl_module](idl-module.md)|Bir giriş noktası bir DLL içinde belirtir.|
@@ -37,13 +40,13 @@ Tek başına öznitelik C++ anahtar sözcüğü çalışmaz, ancak bir kod satı
 |[import](import.md)|Ana .idl dosyanızdan başvurmak istediğiniz tanımlarını içeren başka bir .idl, .odl veya .h dosyasını belirtir.|
 |[importidl](importidl.md)|Belirtilen .idl dosyasının oluşturulan .idl dosyasına ekler.|
 |[importlib](importlib.md)|Zaten başka bir tür kitaplığına oluşturulan tür kitaplığı için kullanılabilir derlenmiştir türleri sağlar.|
-|[İçerir](include-cpp.md)|Oluşturulan .idl dosyasına eklenecek bir veya daha fazla üst bilgi dosyaları belirtir.|
+|[include](include-cpp.md)|Oluşturulan .idl dosyasına eklenecek bir veya daha fazla üst bilgi dosyaları belirtir.|
 |[includelib](includelib-cpp.md)|Oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası neden olur.|
 |[library_block](library-block.md)|.İdl dosyasının kitaplığı bloğu içinde bir yapısı yerleştirir.|
-|[Modülü](module-cpp.md)|Kitaplık blok .idl dosyasında tanımlar.|
+|[module](module-cpp.md)|Kitaplık blok .idl dosyasında tanımlar.|
 |[no_injected_text](no-injected-text.md)|Derleyici, özellik kullanımı sonucu olarak kod ekleme öğesinden engeller.|
 |[pragma](pragma.md)|Belirtilen dizeyi tırnak karakterleri olmadan oluşturulan .idl dosyasına yayar.|
-  
+
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Kullanıma Göre Öznitelikler](attributes-by-usage.md)

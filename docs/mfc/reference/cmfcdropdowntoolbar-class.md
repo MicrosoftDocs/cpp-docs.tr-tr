@@ -1,7 +1,7 @@
 ---
 title: CMFCDropDownToolBar sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/188/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 675a155c8f19ca9c0ab30d15da9be7f5b3b40e7a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5d781cb78b1dce9f7ab3580e7acd32e3e6dbac55
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392326"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063347"
 ---
 # <a name="cmfcdropdowntoolbar-class"></a>CMFCDropDownToolBar sınıfı
 
@@ -115,7 +115,6 @@ Aşağıdaki örnek nasıl kullanılacağını gösterir `Create` yönteminde `C
 
 ##  <a name="allowshowonpanemenu"></a>  CMFCDropDownToolBar::AllowShowOnPaneMenu
 
-
 ```
 virtual BOOL AllowShowOnPaneMenu() const;
 ```
@@ -170,7 +169,6 @@ Yöntem başarılı olursa sıfır dışı; Aksi durumda 0.
 
 ##  <a name="loadtoolbar"></a>  CMFCDropDownToolBar::LoadToolBar
 
-
 ```
 virtual BOOL LoadToolBar(
     UINT uiResID,
@@ -184,19 +182,25 @@ virtual BOOL LoadToolBar(
 
 ### <a name="parameters"></a>Parametreler
 
-*uiResID*<br/>
-[in] [in] *uiColdResID*
-*uiMenuResID*<br/>
-[in] [in] *BOOL*
-*uiDisabledResID*<br/>
-[in] [in] *uiMenuDisabledResID* [in] *uiHotResID*
+[in] *uiResID*<br/>
+
+[in] *uiColdResID*<br/>
+
+[in] *uiMenuResID*<br/>
+
+[in] *BOOL*<br/>
+
+[in] *uiDisabledResID*<br/>
+
+[in] *uiMenuDisabledResID*<br/>
+
+[in] *uiHotResID*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="onlbuttonup"></a>  CMFCDropDownToolBar::OnLButtonUp
-
 
 ```
 afx_msg void OnLButtonUp(
@@ -206,13 +210,13 @@ afx_msg void OnLButtonUp(
 
 ### <a name="parameters"></a>Parametreler
 
-*nFlags*<br/>
-[in] [in] *noktası*
+[in] *nFlags*<br/>
+
+[in] *noktası*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="onmousemove"></a>  CMFCDropDownToolBar::OnMouseMove
-
 
 ```
 afx_msg void OnMouseMove(
@@ -222,13 +226,13 @@ afx_msg void OnMouseMove(
 
 ### <a name="parameters"></a>Parametreler
 
-*nFlags*<br/>
-[in] [in] *noktası*
+[in] *nFlags*<br/>
+
+[in] *noktası*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="onsendcommand"></a>  CMFCDropDownToolBar::OnSendCommand
-
 
 ```
 virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
@@ -236,14 +240,13 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pButton*
+[in] *pButton*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="onupdatecmdui"></a>  CMFCDropDownToolBar::OnUpdateCmdUI
-
 
 ```
 virtual void OnUpdateCmdUI(
@@ -253,8 +256,9 @@ virtual void OnUpdateCmdUI(
 
 ### <a name="parameters"></a>Parametreler
 
-*pTarget*<br/>
-[in] [in] *bDisableIfNoHndler*
+[in] *pTarget*<br/>
+
+[in] *bDisableIfNoHndler*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -267,6 +271,4 @@ virtual void OnUpdateCmdUI(
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [CMFCDropDownToolbarButton Sınıfı](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)<br/>
 [İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
-
 

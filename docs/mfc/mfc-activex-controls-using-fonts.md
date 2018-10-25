@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b14adec8d601778e255ae7e4242fc552fc820e64
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8c34b4a842655ebce6fccaa89a1dfc6d4ef49add
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396707"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063490"
 ---
 # <a name="mfc-activex-controls-using-fonts"></a>MFC ActiveX Denetimleri: Yazı Tiplerini Kullanma
 
@@ -64,7 +64,7 @@ Bölümünde açıklandığı gibi [MFC ActiveX denetimleri: Özellikler](../mfc
 
 1. Kısayol menüsünden tıklayın **Ekle** ve ardından **Özellik Ekle**.
 
-     Bu özellik Ekleme Sihirbazı'nı açar.
+   Bu özellik Ekleme Sihirbazı'nı açar.
 
 1. İçinde **özellik adı** kutusunun **yazı tipi**.
 
@@ -90,7 +90,7 @@ Stok resim yazısı özelliğini, stok yazı tipi özellik bilgileri kullanarak 
 
 1. Kısayol menüsünden tıklayın **Ekle** ve ardından **Özellik Ekle**.
 
-     Bu özellik Ekleme Sihirbazı'nı açar.
+   Bu özellik Ekleme Sihirbazı'nı açar.
 
 1. İçinde **özellik adı** kutusunun **açıklamalı alt yazı**.
 
@@ -132,7 +132,7 @@ Stok yazı tipi özellik yanı sıra özel yazı tipi özellikleri ActiveX denet
 
 1. Kısayol menüsünden tıklayın **Ekle** ve ardından **Özellik Ekle**.
 
-     Bu özellik Ekleme Sihirbazı'nı açar.
+   Bu özellik Ekleme Sihirbazı'nı açar.
 
 1. İçinde **özellik adı** özellik için bir ad yazın. Bu örneğin **HeadingFont**.
 
@@ -168,35 +168,35 @@ Denetim uygulama dosyasında (. CPP), aşağıdakileri yapın:
 
 - Başlatma *m_fontHeading* denetim oluşturucuda.
 
-     [!code-cpp[NVC_MFC_AxFont#9](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_9.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#9](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_9.cpp)]
 
 - Varsayılan yazı tipi özniteliklerini içeren bir statik FONTDESC yapısı bildirin.
 
-     [!code-cpp[NVC_MFC_AxFont#10](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_10.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#10](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_10.cpp)]
 
 - Denetimdeki `DoPropExchange` üye işlev, bir çağrı ekleyin `PX_Font` işlevi. Bu, başlatma ve özel yazı tipi özelliğinizi kalıcılığını sağlar.
 
-     [!code-cpp[NVC_MFC_AxFont#11](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_11.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#11](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_11.cpp)]
 
 - Denetimi uygulamak son `GetHeadingFont` üye işlevi.
 
-     [!code-cpp[NVC_MFC_AxFont#12](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_12.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#12](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_12.cpp)]
 
 - Denetimi uygulamak son `SetHeadingFont` üye işlevi.
 
-     [!code-cpp[NVC_MFC_AxFont#13](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_13.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#13](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_13.cpp)]
 
 - Denetimi değiştirme `OnDraw` üye işlevini daha önce seçilen yazı tipi tutacak bir değişken tanımlayın.
 
-     [!code-cpp[NVC_MFC_AxFont#14](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_14.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#14](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_14.cpp)]
 
 - Denetimi değiştirme `OnDraw` kullanılacak yazı tipini olduğu yerlerde aşağıdaki satırı ekleyerek cihaz bağlamına özel yazı tipi seçmek için üye işlevi.
 
-     [!code-cpp[NVC_MFC_AxFont#15](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_15.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#15](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_15.cpp)]
 
 - Denetimi değiştirme `OnDraw` önceki yazı tipini, yazı tipi kullanıldıktan sonra aşağıdaki satırı ekleyerek cihaz bağlamına seçmek için üye işlevi.
 
-     [!code-cpp[NVC_MFC_AxFont#16](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_16.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#16](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_16.cpp)]
 
 Özel yazı tipi özellik uygulamıştır sonra denetimin geçerli yazı tipini değiştirmek denetim kullanıcıların standart yazı tipi özellik sayfası uygulanmalıdır. Standart yazı tipi özellik sayfası için özellik sayfa kimliği eklemek için begın_proppageıds makrosu sonra aşağıdaki satırı ekleyin:
 

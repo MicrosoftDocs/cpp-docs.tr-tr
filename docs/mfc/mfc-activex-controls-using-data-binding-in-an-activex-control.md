@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ecd2cea655536ab12751a169793273c27b7d8f7
-ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
+ms.openlocfilehash: 397356f8144e3680f3b2d19824d19c0a3bbaddd1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029573"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062619"
 ---
 # <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma
 
@@ -63,13 +63,13 @@ Size daha isteyeceksinizdir olmasına rağmen bir verilere bağlı stok özelli�
 
 1. Denetiminiz için arabirimin düğümüne sağ tıklayın.
 
-     Bu kısayol menüsü açılır.
+   Bu kısayol menüsü açılır.
 
 1. Kısayol menüsünden tıklayın **Ekle** ve ardından **Özellik Ekle**.
 
 1. Girişlerden birini **özellik adı** aşağı açılan listesi. Örneğin, seçebileceğiniz **metin**.
 
-     Çünkü **metin** bir stok özelliği **bağlanabilir** ve **requestedit** öznitelikleri zaten denetlenir.
+   Çünkü **metin** bir stok özelliği **bağlanabilir** ve **requestedit** öznitelikleri zaten denetlenir.
 
 1. Aşağıdaki onay kutularından birini seçin **IDL öznitelikleri** sekmesi: **displaybind** ve **defaultbind** öznitelikleri, projenin özellik tanımı eklemek için. IDL dosyası. Bu öznitelikler denetim kullanıcıya görünür yapabilir ve stok özelliği varsayılan bağlanılabilir özellik.
 
@@ -96,7 +96,7 @@ Bir veri alma/ayarlama yöntemi bağlantılı yanı sıra da oluşturabilirsiniz
 
 1. Denetiminiz için arabirimin düğümüne sağ tıklayın.
 
-     Bu kısayol menüsü açılır.
+   Bu kısayol menüsü açılır.
 
 1. Kısayol menüsünden tıklayın **Ekle** ve ardından **Özellik Ekle**.
 
@@ -112,33 +112,33 @@ Bir veri alma/ayarlama yöntemi bağlantılı yanı sıra da oluşturabilirsiniz
 
 11. Gövde metni değiştirme `SetMyProp` aşağıdaki kodu içeren işlev:
 
-     [!code-cpp[NVC_MFC_AxData#2](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_2.cpp)]
+   [!code-cpp[NVC_MFC_AxData#2](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_2.cpp)]
 
 12. Parametre geçirilen `BoundPropertyChanged` ve `BoundPropertyRequestEdit` işlevleri, dispid özelliğinin id() özniteliği için bir özellik için geçirilen parametre. IDL dosyası.
 
 13. Değiştirme [OnOcmCommand](../mfc/mfc-activex-controls-subclassing-a-windows-control.md) aşağıdaki kodu içerecek şekilde işlev:
 
-     [!code-cpp[NVC_MFC_AxData#1](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_1.cpp)]
+   [!code-cpp[NVC_MFC_AxData#1](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_1.cpp)]
 
 14. Değiştirme `OnDraw` aşağıdaki kodu içeren işlev:
 
-     [!code-cpp[NVC_MFC_AxData#3](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_3.cpp)]
+   [!code-cpp[NVC_MFC_AxData#3](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_3.cpp)]
 
 15. Üye değişkenleri aşağıdaki tanımları (oluşturucular), denetim sınıfı için üst bilgi dosyası üst bilgi dosyasının ortak bölümüne ekleyin:
 
-     [!code-cpp[NVC_MFC_AxData#4](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_4.h)]
+   [!code-cpp[NVC_MFC_AxData#4](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_4.h)]
 
 16. Aşağıdaki satırı son satırında olun `DoPropExchange` işlevi:
 
-     [!code-cpp[NVC_MFC_AxData#5](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_5.cpp)]
+   [!code-cpp[NVC_MFC_AxData#5](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_5.cpp)]
 
 17. Değiştirme `OnResetState` aşağıdaki kodu içeren işlev:
 
-     [!code-cpp[NVC_MFC_AxData#6](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_6.cpp)]
+   [!code-cpp[NVC_MFC_AxData#6](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_6.cpp)]
 
 18. Değiştirme `GetMyProp` aşağıdaki kodu içeren işlev:
 
-     [!code-cpp[NVC_MFC_AxData#7](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_7.cpp)]
+   [!code-cpp[NVC_MFC_AxData#7](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_7.cpp)]
 
 Artık denetim kaydolacak proje oluşturabilirsiniz. Bir iletişim kutusu denetimi eklediğinizde **veri alanı** ve **veri kaynağı** özellikler eklendi ve artık bir veri kaynağı ve Denetimde görüntülenecek alan seçebilirsiniz.
 

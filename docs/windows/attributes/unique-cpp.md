@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fc90c58162993cd8d663581e5b19604fcce4c668
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: ca5d2da5dc06b1cdf0e999939fcb110608ff3359
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789853"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062697"
 ---
 # <a name="unique-c"></a>benzersiz (C++)
 
@@ -59,4 +59,4 @@ Bkz: [ref](ref-cpp.md) örnek kullanımını örneğin **benzersiz**.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
-[Parametre Öznitelikleri](parameter-attributes.md)  
+[Parametre Öznitelikleri](parameter-attributes.md)

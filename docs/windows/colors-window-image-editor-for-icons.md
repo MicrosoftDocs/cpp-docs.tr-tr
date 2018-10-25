@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ae58ae7cf09257b399fd21d7c34890b829394b98
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a65959ffc149b93c6d9b28667647d8f49cfc1f2d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46430598"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063243"
 ---
 # <a name="colors-window-image-editor-for-icons"></a>Renkler Penceresi (Simgeler İçin Görüntü Düzenleyicisi)
 
@@ -36,8 +36,8 @@ ms.locfileid: "46430598"
 
 2. **Renk göstergesi**, ön ve arka plan renkleri ve ekran ve ters renk seçicileri gösterir.
 
-   ![Renkler penceresini](../windows/media/vccolorswindow.gif "vcColorsWindow")  
-Renkler Penceresi
+   ![Renkler penceresini](../windows/media/vccolorswindow.gif "vcColorsWindow")<br/>
+   Renkler Penceresi
 
 > [!NOTE]
 > **Ekran rengi** ve **ters renk** araçlardır yalnızca simgeler ve İmleçler için kullanılabilir.

@@ -10,12 +10,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 279598c320131b163b936091560de45255c18a4d
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: e2ca0f4aa5f3965adc97e4cdaef09e01646e8809
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235017"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062125"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ araç takımı veya belgeleri ile ilgili bir sorun bildirme
 
@@ -381,7 +381,7 @@ C++ Derleyici, bağlayıcı ve diğer araçlar ve kitaplıkların kullanımı il
 
 Varsayılan olarak, **tüm bilgiler, raporlar ve yorumlar ve yanıtları herkese görünür**. Sorunları, çözümler ve diğer kullanıcıların bulduğunuz geçici çözümleri görmek tüm topluluğuna izin verdiğinden normalde, bir avantajı budur. Ancak, verileriniz veya kimliğini, gizlilik veya fikri mülkiyet hakları nedeniyle, genel yapma hakkında endişeleriniz varsa seçeneğiniz vardır.
 
-Kimliğinizi göstermeden hakkında endişeleriniz varsa [yeni bir Microsoft hesabı oluşturma](https://signup.live.com/) ilgili tüm ayrıntıları açıklamaz. Raporunuzu oluşturmak için bu hesabı kullanın. 
+Kimliğinizi göstermeden hakkında endişeleriniz varsa [yeni bir Microsoft hesabı oluşturma](https://signup.live.com/) ilgili tüm ayrıntıları açıklamaz. Raporunuzu oluşturmak için bu hesabı kullanın.
 
 **Özel bir başlık ya da genel ilk rapor içeriğinin tutmak istediğiniz herhangi bir şey yerleştirmeyin.** Bunun yerine, ayrıntıları özel olarak ayrı bir açıklama için gönderir unutmayın. Raporunuzu ve doğru kişiye yönlendirildiğinden emin olmak için dahil **cppcompiler** sorun raporunuzu Konu listesinde. Sorun raporu oluşturulduktan sonra artık kimlerin görebileceğini yanıtlar ve eklerini belirtmek mümkündür.
 

@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50b1816320521f8ad20ee64fc4a051f938e902ec
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 7df22a7e2209b49f65d240336229a3c80ba4ddb7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890783"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063828"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet sınıfı
 
@@ -210,12 +210,10 @@ void Construct(
     CWnd* pParentWnd = NULL,
     UINT iSelectPage = 0);
 
-
 void Construct(
     LPCTSTR pszCaption,
     CWnd* pParentWnd = NULL,
     UINT iSelectPage = 0);
-
 
 void Construct(
     UINT nIDCaption,
@@ -224,7 +222,6 @@ void Construct(
     HBITMAP hbmWatermark,
     HPALETTE hpalWatermark = NULL,
     HBITMAP hbmHeader = NULL);
-
 
 void Construct(
     LPCTSTR pszCaption,
@@ -279,18 +276,15 @@ Oluşturur bir `CPropertySheet` nesne.
 ```
 CPropertySheet();
 
-
 explicit CPropertySheet(
     UINT nIDCaption,
     CWnd* pParentWnd = NULL,
     UINT iSelectPage = 0);
 
-
 explicit CPropertySheet(
     LPCTSTR pszCaption,
     CWnd* pParentWnd = NULL,
     UINT iSelectPage = 0);
-
 
 CPropertySheet(
     UINT nIDCaption,
@@ -299,7 +293,6 @@ CPropertySheet(
     HBITMAP hbmWatermark,
     HPALETTE hpalWatermark = NULL,
     HBITMAP hbmHeader = NULL);
-
 
 CPropertySheet(
     LPCTSTR pszCaption,

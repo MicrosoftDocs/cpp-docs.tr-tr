@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 815a276cb07a91da73acb68a32cceef4b2138325
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2419b4da0cad2662a246c167938d673429afbf26
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093859"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060904"
 ---
 # <a name="idispeventimpl-class"></a>Idispeventımpl sınıfı
 
@@ -44,7 +44,7 @@ template <UINT nID, class T,
     const IID* pdiid = &IID_NULL,
     const GUID* plibid = &GUID_NULL,
     WORD wMajor = 0,
-    WORD wMinor = 0, 
+    WORD wMinor = 0,
     class tihclass = CcomTypeInfoHolder>
 class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T, pdiid>
 ```
@@ -102,7 +102,7 @@ Tür kitaplığının bir alt sürümü. Varsayılan değer 0’dır.
 
 `IDispEventImpl` sınıfınızdaki uygun işleyici işlevi rota olayları için olay havuz eşlemesi ile birlikte çalışır. Bu sınıf kullanmak için:
 
-Ekleme bir [SINK_ENTRY](composite-control-macros.md#sink_entry) veya [SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex) makrosunu kullanmak istediğiniz her bir nesnedeki her bir olay için olay havuzu eşlemesi. Kullanırken `IDispEventImpl` bileşik denetim temel sınıf olarak çağırabilirsiniz [AtlAdviseSinkMap](connection-point-global-functions.md#atladvisesinkmap) kurmak ve tüm girişleri olay eşlemesi havuz için olay kaynağı ile bağlantıyı kesin. Diğer durumlarda ya da daha fazla denetim için arama [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) kaynak nesnesi ve temel sınıf arasında bağlantı kurmak için. Çağrı [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise) bağlantıyı kesmek için.  
+Ekleme bir [SINK_ENTRY](composite-control-macros.md#sink_entry) veya [SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex) makrosunu kullanmak istediğiniz her bir nesnedeki her bir olay için olay havuzu eşlemesi. Kullanırken `IDispEventImpl` bileşik denetim temel sınıf olarak çağırabilirsiniz [AtlAdviseSinkMap](connection-point-global-functions.md#atladvisesinkmap) kurmak ve tüm girişleri olay eşlemesi havuz için olay kaynağı ile bağlantıyı kesin. Diğer durumlarda ya da daha fazla denetim için arama [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) kaynak nesnesi ve temel sınıf arasında bağlantı kurmak için. Çağrı [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise) bağlantıyı kesmek için.
 
 Öğesinden türetilmelidir `IDispEventImpl` (için benzersiz bir değer kullanarak *nID*) için ihtiyaç duyduğunuz olayları işlemek her bir nesne. Ardından farklı kaynak nesneyle bildiren bir kaynak nesnesi karşı unadvising tarafından temel sınıfı yeniden kullanabilirsiniz, ancak tek seferde tek bir nesne tarafından işlenebilen kaynak nesneleri sayısı sayısıyla sınırlıdır `IDispEventImpl` temel sınıflar.
 

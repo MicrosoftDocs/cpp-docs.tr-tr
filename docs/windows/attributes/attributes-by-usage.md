@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 49e298af793655bb3ea3854909a16dd4db03c6a3
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 7dc5519fbef10ca6c369bcffacacb8351dbc0390
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328187"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060435"
 ---
 # <a name="attributes-by-usage"></a>Kullanıma Göre Öznitelikler
 
@@ -43,7 +43,7 @@ Bu konu, özniteliklere göre uygulandıkları C++ Dil öğelerini listeler.
 
 ## <a name="module-attributes"></a>Modül Öznitelikleri
 Aşağıdaki özniteliği için yalnızca uygulanabilir [Modülü](module-cpp.md) özniteliği.
-  
+
 |Öznitelik|Açıklama|
 |---------------|-----------------|
 |[helpstringdll](helpstringdll.md)|Belge dize arama (yerelleştirme) gerçekleştirmek için kullanılacak DLL'in adını belirtir.|
@@ -85,7 +85,6 @@ Bu kurallar, bir arabirim tanımlamak için uymanız gerekir:
 - Hiçbir aşırı yüklenmiş yöntemler izin verilir.
 
 Değil belirtirken [UUID](uuid-cpp-attributes.md) özniteliği ve farklı öznitelik projelerde aynı arabirimi adı kullanarak, aynı GUID oluşturulur.
-
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

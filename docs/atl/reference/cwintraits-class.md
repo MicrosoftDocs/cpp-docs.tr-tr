@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb6ee8cd591c4a5b5a4a3701c6974849f9e3238f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 69ea4cf411e0ded0f1c324cea439d5a5a4c0c553
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069403"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062476"
 ---
 # <a name="cwintraits-class"></a>CWinTraits sınıfı
 
@@ -68,15 +68,15 @@ Diğer bir stilleri çağrısında belirtildiğinde, kullanılacak pencere still
 
 ATL pencere stilleri yaygın olarak kullanılan birleşimleri için bu şablonun önceden tanımlanmış üç uzmanlıklar sağlar:
 
-- `CControlWinTraits`  
+- `CControlWinTraits`
 
    Bir standart denetim penceresi için tasarlanmıştır. Aşağıdaki standart stilleri kullanılır: WS_CHILD, ws_vısıble ws_clıpchıldren ve ws_clıpsıblıngs. Genişletilmiş Stil vardır.
 
-- `CFrameWinTraits`  
+- `CFrameWinTraits`
 
    Standart bir çerçeve için tasarlanmıştır. Kullanılan standart stiller şunlardır: ws_overlappedwındow ws_clıpchıldren ve ws_clıpsıblıngs. Kullanılan genişletilmiş stiller şunlardır: ws_ex_appwındow ve ws_ex_wındowedge.
 
-- `CMDIChildWinTraits`  
+- `CMDIChildWinTraits`
 
    Standart bir MDI alt penceresi için tasarlanmıştır. Kullanılan standart stiller şunlardır: ws_overlappedwındow, WS_CHILD ws_vısıble ws_clıpchıldren ve ws_clıpsıblıngs. Kullanılan genişletilmiş stiller şunlardır: ws_ex_mdıchıld.
 

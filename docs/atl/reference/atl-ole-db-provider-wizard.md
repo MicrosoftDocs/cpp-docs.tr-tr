@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6857bf80aaaad36b4dcfc4fbf1330eccd03f971a
-ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
+ms.openlocfilehash: a9710fd4c770f17afb8902b80241179aa20344c1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48250360"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060740"
 ---
 # <a name="atl-ole-db-provider-wizard"></a>ATL OLE DB sağlayıcısı Sihirbazı
 
@@ -30,7 +30,6 @@ Bu sihirbaz, OLE DB sağlayıcısı oluşturma sınıfları oluşturur.
 
 > [!WARNING]
 > Visual Studio 2017 sürüm 15.9 bu kod Sihirbazı kullanım dışıdır ve Visual Studio'nun gelecekteki bir sürümde kaldırılacak. Bu sihirbaz nadiren kullanılır. ATL ve MFC genel desteği, bu sihirbazın kaldırma işlemi etkilenmez. Bu kullanımdan kaldırma hakkındaki görüşlerinizi paylaşmak istiyorsanız, Lütfen tamamlayın [bu anketi](https://www.surveymonkey.com/r/QDWKKCN). Geri bildiriminiz bizim için önemlidir.
-
 
 ## <a name="remarks"></a>Açıklamalar
 

@@ -33,127 +33,127 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7f7662fabc53054b7a6712d271d89c2c3451067e
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: fc27506657e1e2eeb7fdb7d0d5ef9147d5442dbc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083042"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060800"
 ---
 # <a name="idbpropertiesimpl-class"></a>IDBPropertiesImpl Sınıfı
 
-Bir uygulamasını sağlar `IDBProperties` arabirimi.  
-  
+Bir uygulamasını sağlar `IDBProperties` arabirimi.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-template <class T>   
-class ATL_NO_VTABLE IDBPropertiesImpl   
-   : public IDBProperties, public CUtlProps<T>  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+template <class T>
+class ATL_NO_VTABLE IDBPropertiesImpl
+   : public IDBProperties, public CUtlProps<T>
+```
+
+### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Sınıfınız, türetilen `IDBPropertiesImpl`.  
+Sınıfınız, türetilen `IDBPropertiesImpl`.
 
-## <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="interface-methods"></a>Arabirim yöntemleri  
-  
-|||  
-|-|-|  
-|[GetProperties](#getproperties)|Veri kaynağı nesnesi veya başlatma özellik grubundaki üzerinde ayarlanmış olan özelliklerin değerlerini şu anda ayarlanmış veri kaynağı, veri kaynağı bilgilerini ve başlatma özelliği gruplarında özelliklerin değerlerini döndürür. Numaralandırıcı.|  
-|[GetPropertyInfo](#getpropertyinfo)|Sağlayıcı tarafından desteklenen tüm özellikleri hakkında bilgi döndürür.|  
-|[SetProperties](#setproperties)|Özellikleri veri kaynağı ve başlatma için veri kaynağı nesneleri, özellik gruplarını veya başlatma özelliği grubunda numaralandırıcılar için ayarlar.|  
-  
-## <a name="remarks"></a>Açıklamalar  
+**Başlık:** atldb.h
 
-[IDBProperties](/previous-versions/windows/desktop/ms719607) veri kaynağı nesneleri için zorunlu bir arabirim ve numaralandırıcılar için isteğe bağlı bir arabirim. Ancak, bir numaralandırıcı sunarsa [IDBInitialize](/previous-versions/windows/desktop/ms713706), açığa çıkarmalıdır `IDBProperties`. `IDBPropertiesImpl` uygulayan `IDBProperties` tarafından tanımlanan statik bir işlevi kullanarak [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
+## <a name="members"></a>Üyeler
+
+### <a name="interface-methods"></a>Arabirim yöntemleri
+
+|||
+|-|-|
+|[GetProperties](#getproperties)|Veri kaynağı nesnesi veya başlatma özellik grubundaki üzerinde ayarlanmış olan özelliklerin değerlerini şu anda ayarlanmış veri kaynağı, veri kaynağı bilgilerini ve başlatma özelliği gruplarında özelliklerin değerlerini döndürür. Numaralandırıcı.|
+|[GetPropertyInfo](#getpropertyinfo)|Sağlayıcı tarafından desteklenen tüm özellikleri hakkında bilgi döndürür.|
+|[SetProperties](#setproperties)|Özellikleri veri kaynağı ve başlatma için veri kaynağı nesneleri, özellik gruplarını veya başlatma özelliği grubunda numaralandırıcılar için ayarlar.|
+
+## <a name="remarks"></a>Açıklamalar
+
+[IDBProperties](/previous-versions/windows/desktop/ms719607) veri kaynağı nesneleri için zorunlu bir arabirim ve numaralandırıcılar için isteğe bağlı bir arabirim. Ancak, bir numaralandırıcı sunarsa [IDBInitialize](/previous-versions/windows/desktop/ms713706), açığa çıkarmalıdır `IDBProperties`. `IDBPropertiesImpl` uygulayan `IDBProperties` tarafından tanımlanan statik bir işlevi kullanarak [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
 
 ## <a name="getproperties"></a> Idbpropertiesımpl::GetProperties
 
-Veri kaynağı nesnesi veya başlatma özellik grubundaki üzerinde ayarlanmış olan özelliklerin değerlerini şu anda ayarlanmış veri kaynağı, veri kaynağı bilgilerini ve başlatma özelliği gruplarında özelliklerin değerlerini döndürür. Numaralandırıcı.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Veri kaynağı nesnesi veya başlatma özellik grubundaki üzerinde ayarlanmış olan özelliklerin değerlerini şu anda ayarlanmış veri kaynağı, veri kaynağı bilgilerini ve başlatma özelliği gruplarında özelliklerin değerlerini döndürür. Numaralandırıcı.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-STDMETHOD(GetProperties)(ULONG cPropertySets,   
-   const DBPROPIDSET rgPropertySets[],   
-   ULONG * pcProperties,   
-   DBPROPSET ** prgProperties);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+STDMETHOD(GetProperties)(ULONG cPropertySets, 
+   const DBPROPIDSET rgPropertySets[], 
+   ULONG * pcProperties, 
+   DBPROPSET ** prgProperties);
+```
 
-Bkz: [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344) içinde *OLE DB Programcının Başvurusu*.  
-  
-Bazı parametreler karşılık *OLE DB Programcının Başvurusu* açıklanan farklı adlar parametrelerinin `IDBProperties::GetProperties`:  
-  
-|OLE DB Şablon parametreleri|*OLE DB Programcının Başvurusu* parametreleri|  
-|--------------------------------|------------------------------------------------|  
-|*cPropertySets*|*cPropertyIDSets*|  
-|*rgPropertySets*|*rgPropertyIDSets*|  
-|*pcProperties*|*pcPropertySets*|  
-|*prgProperties*|*prgPropertySets*|  
-  
-### <a name="remarks"></a>Açıklamalar  
+#### <a name="parameters"></a>Parametreler
 
-Sağlayıcı başlatılır, bu yöntem DBPROPSET_DATASOURCE, DBPROPSET_DATASOURCEINFO, özelliklerin değerlerini döndürür. şu anda veri kaynağı nesnesi üzerinde ayarlanan DBPROPSET_DBINIT özellik grupları. Sağlayıcı başlatılmamışsa, yalnızca DBPROPSET_DBINIT Grup Özellikleri döndürür. 
-  
+Bkz: [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344) içinde *OLE DB Programcının Başvurusu*.
+
+Bazı parametreler karşılık *OLE DB Programcının Başvurusu* açıklanan farklı adlar parametrelerinin `IDBProperties::GetProperties`:
+
+|OLE DB Şablon parametreleri|*OLE DB Programcının Başvurusu* parametreleri|
+|--------------------------------|------------------------------------------------|
+|*cPropertySets*|*cPropertyIDSets*|
+|*rgPropertySets*|*rgPropertyIDSets*|
+|*pcProperties*|*pcPropertySets*|
+|*prgProperties*|*prgPropertySets*|
+
+### <a name="remarks"></a>Açıklamalar
+
+Sağlayıcı başlatılır, bu yöntem DBPROPSET_DATASOURCE, DBPROPSET_DATASOURCEINFO, özelliklerin değerlerini döndürür. şu anda veri kaynağı nesnesi üzerinde ayarlanan DBPROPSET_DBINIT özellik grupları. Sağlayıcı başlatılmamışsa, yalnızca DBPROPSET_DBINIT Grup Özellikleri döndürür.
+
 ## <a name="getpropertyinfo"></a> Idbpropertiesımpl::GetPropertyInfo
 
-Veri kaynağı tarafından desteklenen özellik bilgilerini döndürür.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Veri kaynağı tarafından desteklenen özellik bilgilerini döndürür.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-STDMETHOD(GetPropertyInfo)(ULONG cPropertySets,   
-   const DBPROPIDSET rgPropertySets[],   
-   ULONG * pcPropertyInfoSets,   
-   DBPROPINFOSET ** prgPropertyInfoSets,   
-   OLECHAR ** ppDescBuffer);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+STDMETHOD(GetPropertyInfo)(ULONG cPropertySets, 
+   const DBPROPIDSET rgPropertySets[], 
+   ULONG * pcPropertyInfoSets, 
+   DBPROPINFOSET ** prgPropertyInfoSets, 
+   OLECHAR ** ppDescBuffer);
+```
 
-Bkz: [IDBProperties::GetPropertyInfo](/previous-versions/windows/desktop/ms718175) içinde *OLE DB Programcının Başvurusu*.  
-  
-Bazı parametreler karşılık *OLE DB Programcının Başvurusu* açıklanan farklı adlar parametrelerinin `IDBProperties::GetPropertyInfo`:  
-  
-|OLE DB Şablon parametreleri|*OLE DB Programcının Başvurusu* parametreleri|  
-|--------------------------------|------------------------------------------------|  
-|*cPropertySets*|*cPropertyIDSets*|  
-|*rgPropertySets*|*rgPropertyIDSets*|  
-  
-### <a name="remarks"></a>Açıklamalar  
+#### <a name="parameters"></a>Parametreler
 
-Kullanan [Idbınitializeımpl::m_pcutlpropınfo](../../data/oledb/idbinitializeimpl-m-pcutlpropinfo.md) bu işlevselliği uygulamak için. 
+Bkz: [IDBProperties::GetPropertyInfo](/previous-versions/windows/desktop/ms718175) içinde *OLE DB Programcının Başvurusu*.
+
+Bazı parametreler karşılık *OLE DB Programcının Başvurusu* açıklanan farklı adlar parametrelerinin `IDBProperties::GetPropertyInfo`:
+
+|OLE DB Şablon parametreleri|*OLE DB Programcının Başvurusu* parametreleri|
+|--------------------------------|------------------------------------------------|
+|*cPropertySets*|*cPropertyIDSets*|
+|*rgPropertySets*|*rgPropertyIDSets*|
+
+### <a name="remarks"></a>Açıklamalar
+
+Kullanan [Idbınitializeımpl::m_pcutlpropınfo](../../data/oledb/idbinitializeimpl-m-pcutlpropinfo.md) bu işlevselliği uygulamak için.
 
 ## <a name="setproperties"></a> Idbpropertiesımpl::SetProperties
 
-Özellikleri veri kaynağı ve başlatma için veri kaynağı nesneleri, özellik gruplarını veya başlatma özelliği grubunda numaralandırıcılar için ayarlar.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Özellikleri veri kaynağı ve başlatma için veri kaynağı nesneleri, özellik gruplarını veya başlatma özelliği grubunda numaralandırıcılar için ayarlar.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-STDMETHOD(SetProperties)(ULONG cPropertySets,   
-   DBPROPSET rgPropertySets[]);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+STDMETHOD(SetProperties)(ULONG cPropertySets, 
+   DBPROPSET rgPropertySets[]);
+```
 
-Bkz: [IDBProperties::SetProperties](/previous-versions/windows/desktop/ms723049) içinde *OLE DB Programcının Başvurusu*.  
-  
-### <a name="remarks"></a>Açıklamalar  
+#### <a name="parameters"></a>Parametreler
 
-Sağlayıcı başlatılır, bu yöntem DBPROPSET_DATASOURCE, DBPROPSET_DATASOURCEINFO, özelliklerin değerlerini ayarlar DBPROPSET_DBINIT özellik grupları için veri kaynağı nesnesi. Sağlayıcı başlatılmamışsa, yalnızca DBPROPSET_DBINIT Grup özelliklerini ayarlar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Bkz: [IDBProperties::SetProperties](/previous-versions/windows/desktop/ms723049) içinde *OLE DB Programcının Başvurusu*.
+
+### <a name="remarks"></a>Açıklamalar
+
+Sağlayıcı başlatılır, bu yöntem DBPROPSET_DATASOURCE, DBPROPSET_DATASOURCEINFO, özelliklerin değerlerini ayarlar DBPROPSET_DBINIT özellik grupları için veri kaynağı nesnesi. Sağlayıcı başlatılmamışsa, yalnızca DBPROPSET_DBINIT Grup özelliklerini ayarlar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

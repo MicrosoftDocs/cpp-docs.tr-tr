@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6613e38a19987abcc9f95288e9d1cb6957b076a2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: add9336165195ba4da0125c606eebd39f3fce298
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427283"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062235"
 ---
 # <a name="windows-sockets-example-of-sockets-using-archives"></a>Windows Yuvaları: Arşivlerle Kullanılan Yuvalara Örnek
 
@@ -40,11 +40,11 @@ Gönderme belirtilen birkaç kez, Tanıtım amaçlı bazı rastgele bir veri ür
 
 - "header" veri yapısını belirtir (Bu durumda, değerini *bDeğer* değişkeni ve kopya gönderilir).
 
-     Her iki öğe, bu örnek için rastgele oluşturulur.
+   Her iki öğe, bu örnek için rastgele oluşturulur.
 
 - Verilerin kopyaları belirtilen sayısı.
 
-     İç **için** döngü gönderir *bDeğer* belirtilen sayısı.
+   İç **için** döngü gönderir *bDeğer* belirtilen sayısı.
 
 - Bir dize olarak adlandırılan *strText* , alıcı, kullanıcıya görüntüler.
 
