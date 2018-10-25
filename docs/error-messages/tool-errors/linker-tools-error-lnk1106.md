@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 719ff1a87f3f1afc19cf38736c0059c46a8a9bdc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ce6a8b2ef9ac807e48cff42186453666cebda5ee
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110880"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055990"
 ---
 # <a name="linker-tools-error-lnk1106"></a>Bağlayıcı Araçları Hatası LNK1106
 
@@ -33,16 +33,16 @@ Aracı yüklenemedi okuma veya yazma `location` bellek eşlemeli dosya olarak.
 
 1. Disk dolu.
 
-     Biraz alan boşaltın ve yeniden bağlayın.
+   Biraz alan boşaltın ve yeniden bağlayın.
 
 1. Bir ağ üzerinden bağlantı çalışılıyor.
 
-     Bazı ağlar bağlayıcı tarafından kullanılan bellek eşlemeli dosyalar tam olarak desteklemez. Yerel diskinizde bağlamayı deneyin.
+   Bazı ağlar bağlayıcı tarafından kullanılan bellek eşlemeli dosyalar tam olarak desteklemez. Yerel diskinizde bağlamayı deneyin.
 
 1. Diskinizde bozuk blok.
 
-     Disk donanım ve işletim sistemi gibi bir hata algılandı olsa da, bir disk denetleme programı çalıştırmak isteyebilirsiniz.
+   Disk donanım ve işletim sistemi gibi bir hata algılandı olsa da, bir disk denetleme programı çalıştırmak isteyebilirsiniz.
 
 1. Yığın alanı kalmadı.
 
-     Bkz: [C1060](../../error-messages/compiler-errors-1/fatal-error-c1060.md) daha fazla bilgi için.
+   Bkz: [C1060](../../error-messages/compiler-errors-1/fatal-error-c1060.md) daha fazla bilgi için.

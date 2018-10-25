@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 421040024e5dd95fb39bdc78cd54f3f7dc49bf83
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 001dfb29a5ac0f6d93b0715bd2b86ccd60e91259
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377720"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054611"
 ---
 # <a name="automation-clients-using-type-libraries"></a>Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma
 
@@ -54,9 +54,9 @@ Projeyi oluşturduğunuzda Otomasyon eklemeyi seçtiyseniz visual C++, sizin iç
     > [!NOTE]
     >  Birden fazla tür kitaplığından arabirimleri seçebilirsiniz.
 
-     Arabirimleri seçin, bunları çift tıklatın veya **Ekle** düğmesi. Bunu yaptığınızda gönderme sınıflarının adları görünür **sınıfları oluşturulan** kutusu. Sınıf adları düzenleyebileceğiniz `Class` kutusu.
+   Arabirimleri seçin, bunları çift tıklatın veya **Ekle** düğmesi. Bunu yaptığınızda gönderme sınıflarının adları görünür **sınıfları oluşturulan** kutusu. Sınıf adları düzenleyebileceğiniz `Class` kutusu.
 
-     **Dosya** kutusu içinde sınıf bildirilmesi dosyayı görüntüler. (Bu dosya adı da düzenleyebilirsiniz). Mevcut dosyaları ya da proje dizininin dışında bir dizinde yazılan üst bilgi ve uygulama bilgilerinin isterseniz diğer dosyalar seçmek için Gözat düğmesini de kullanabilirsiniz.
+   **Dosya** kutusu içinde sınıf bildirilmesi dosyayı görüntüler. (Bu dosya adı da düzenleyebilirsiniz). Mevcut dosyaları ya da proje dizininin dışında bir dizinde yazılan üst bilgi ve uygulama bilgilerinin isterseniz diğer dosyalar seçmek için Gözat düğmesini de kullanabilirsiniz.
 
     > [!NOTE]
     >  Seçilen arabirimleri için gönderme sınıfların tümü, burada belirtilen dosyanın yerleştirilir. Ayrı üst bilgilerinde bildirilmesi için arabirimleri istiyorsanız, oluşturmak istediğiniz her bir üst bilgi dosyası için bu sihirbazı çalıştırmanız gerekir.
@@ -66,7 +66,7 @@ Projeyi oluşturduğunuzda Otomasyon eklemeyi seçtiyseniz visual C++, sizin iç
 
 1. **Son**'a tıklayın.
 
-     Sihirbazı'nı, ardından belirtilen sınıf ve dosya adlarını kullanarak, gönderme sınıflar için kod yazacaksınız.
+   Sihirbazı'nı, ardından belirtilen sınıf ve dosya adlarını kullanarak, gönderme sınıflar için kod yazacaksınız.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -1,7 +1,7 @@
 ---
 title: OpenMP Kitaplık Başvurusu | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/24/2018
 ms.technology:
 - cpp-parallel
 ms.topic: reference
@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3812f698f034b5610f90c57b94b56f0b8648417
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ce6c10802f470e3416d0db9aca5b66db9064ade3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403807"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057016"
 ---
 # <a name="openmp-library-reference"></a>OpenMP Kitaplık Başvurusu
 
@@ -27,11 +27,11 @@ Visual C++ uygulaması OpenMP standart aşağıdaki yapıları içerir.
 
 |Oluştur|Açıklama|
 |---------------|-----------------|
-|[Kitaplıkları](../../../parallel/openmp/reference/openmp-libraries.md)|Visual c++ OpenMP çalışma zamanı kitaplıklarının oluşturan .lib dosyaları açıklar.|
-|[Veri Türleri](../../../parallel/openmp/reference/openmp-data-types.md)|OpenMP API çağrısında kullanılan veri türlerine bağlantılar sağlar.|
-|[Ortam Değişkenleri](../../../parallel/openmp/reference/openmp-environment-variables.md)|OpenMP API çağrısında kullanılan ortam değişkenlerini bağlantılar sağlar.|
-|[İşlevler](../../../parallel/openmp/reference/openmp-functions.md)|OpenMP API çağrısında kullanılan işlevlere bağlantılar sağlar.|
+|[Kitaplıkları](openmp-libraries.md)|Visual c++ OpenMP çalışma zamanı kitaplıklarının oluşturan .lib dosyaları açıklar.|
+|[veri türleri](openmp-data-types.md)|OpenMP API çağrısında kullanılan veri türlerine bağlantılar sağlar.|
+|[Ortam değişkenleri](openmp-environment-variables.md)|OpenMP API çağrısında kullanılan ortam değişkenlerini bağlantılar sağlar.|
+|[İşlevler](openmp-functions.md)|OpenMP API çağrısında kullanılan işlevlere bağlantılar sağlar.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 [OpenMP](../../../parallel/openmp/openmp-in-visual-cpp.md)

@@ -61,12 +61,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 12afcfe09335082f873d88e1aa825b4eee3a1ae2
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 9535913bbbeb6ec7e8876acf8254030a7b0611dd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163237"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053987"
 ---
 # <a name="comptr-class"></a>ComPtr Sınıfı
 
@@ -265,7 +265,7 @@ Yeni bir örneğini başlatır `ComPtr` sınıfı. Varsayılan, kopyalama, taş�
 ```cpp
 WRL_NOTHROW ComPtr();
 WRL_NOTHROW ComPtr(
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 template<class U>
 WRL_NOTHROW ComPtr(
@@ -455,7 +455,7 @@ Geçerli bir değer atar `ComPtr`.
 
 ```cpp
 WRL_NOTHROW ComPtr& operator=(
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 WRL_NOTHROW ComPtr& operator=(
    _In_opt_ T *other
@@ -520,7 +520,7 @@ bool operator==(
 
 bool operator==(
    const ComPtr<T>& a,
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 
 bool operator==(
@@ -555,7 +555,7 @@ bool operator!=(
 
 bool operator!=(
    const ComPtr<T>& a,
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 
 bool operator!=(

@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed01b2500beeccd5ffdd351b569864e79ad370c7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 88ee9a9e81714064798bbfc652200da9061c6fb0
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433563"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059135"
 ---
 # <a name="carchive-class"></a>CArchive sınıfı
 
@@ -408,26 +408,21 @@ friend CArchive& operator<<(
     CArchive& ar,
     const CObject* pOb);
 
-
 throw(
     CArchiveException*,
     CFileException*);
-
 
 CArchive& AFXAPI operator<<(
     CArchive& ar,
     const RECT& rect);
 
-
 CArchive& AFXAPI operator<<(
     CArchive& ar,
     POINT point);
 
-
 CArchive& AFXAPI operator<<(
     CArchive& ar,
     SIZE size);
-
 
 template<typename BaseType,
     class StringTraits> CArchive& operator<<(
@@ -483,38 +478,31 @@ friend CArchive& operator>>(
     CArchive& ar,
     CObject *& pOb);
 
-
 throw(
     CArchiveException*,
     CFileException*,
     CMemoryException*);
-
 
 friend CArchive& operator>>(
     CArchive& ar,
     const CObject *& pOb);
 
-
 throw(
     CArchiveException*,
     CFileException*,
     CMemoryException*);
 
-
 CArchive& AFXAPI operator>>(
     CArchive& ar,
     const RECT& rect);
-
 
 CArchive& AFXAPI operator>>(
     CArchive& ar,
     POINT point);
 
-
 CArchive& AFXAPI operator>>(
     CArchive& ar,
     SIZE size);
-
 
 template<typename BaseType,
     class StringTraits> CArchive& operator>>(

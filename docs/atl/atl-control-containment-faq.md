@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28e22df4eba5a12806221beea1966d1c1cdeae46
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: af14755b9be9413feb3a519d09200577c9260c5a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052926"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053715"
 ---
 # <a name="atl-control-containment-faq"></a>ATL Denetim Kapsamı SSS
 
@@ -37,7 +37,7 @@ ATL'nin denetim barındırma kodunu herhangi bir ATL sınıfları kullanmanızı
 |[CAxWindow2T](../atl/reference/caxwindow2t-class.md)|Saran bir **"AtlAxWinLic80"** penceresi, pencere oluşturmak, bir denetim oluşturma ve/veya penceresine lisanslı bir denetim ekleme ve konak nesnesi üzerinde arabirim işaretçileri alınırken yöntemler sağlayacak.|
 |[CComCompositeControl](../atl/reference/ccomcompositecontrol-class.md)|İletişim kaynağını temel ActiveX denetim sınıfları için temel sınıf olarak görev yapar. Bu tür denetimler, diğer ActiveX denetimleri içerebilir.|
 |[Caxdialogımpl](../atl/reference/caxdialogimpl-class.md)|İletişim kaynağını temel iletişim kutusu sınıfları için temel sınıf olarak görev yapar. Bu tür iletişim kutuları ActiveX denetimleri içerebilir.|
-|[CWindow](../atl/reference/cwindow-class.md)|Bir yöntem sağlar [GetDlgControl](../atl/reference/cwindow-class.md#getdlgcontrol), dönen bir arabirim işaretçisi konak penceresinin Kimliğini belirtilen bir denetimde. Ayrıca, Windows API sarmalayıcıları kullanıma sunulan `CWindow` genellikle pencere yönetimi kolaylaştırın.|  
+|[CWindow](../atl/reference/cwindow-class.md)|Bir yöntem sağlar [GetDlgControl](../atl/reference/cwindow-class.md#getdlgcontrol), dönen bir arabirim işaretçisi konak penceresinin Kimliğini belirtilen bir denetimde. Ayrıca, Windows API sarmalayıcıları kullanıma sunulan `CWindow` genellikle pencere yönetimi kolaylaştırın.|
 
 ## <a name="what-is-the-atl-control-hosting-api"></a>ATL nedir denetim barındırma API'si?
 
@@ -62,11 +62,11 @@ ATL Denetim barındırma API'si, bir ActiveX denetimi kapsayıcısı görev yapa
 İlk yedi işlevlerini [zaman Atlaxwinınit](reference/composite-control-global-functions.md#atlaxwininit) örtük olarak.
 
 > [!NOTE]
->  Denetim barındırma API'si ActiveX denetimi kapsamasını ATL desteği temelini oluşturur. Ancak, yoktur genellikle yararlanın ya da tam ATL sarmalayıcı sınıflar kullanılmasını sağlamak için bu işlevler doğrudan çağırmak için pek gereksinim. Daha fazla bilgi için [hangi ATL sınıfları kolaylaştırmak ActiveX denetimi kapsamasını](which-atl-classes-facilitate-activex-control-containment-q.md).  
+>  Denetim barındırma API'si ActiveX denetimi kapsamasını ATL desteği temelini oluşturur. Ancak, yoktur genellikle yararlanın ya da tam ATL sarmalayıcı sınıflar kullanılmasını sağlamak için bu işlevler doğrudan çağırmak için pek gereksinim. Daha fazla bilgi için [hangi ATL sınıfları kolaylaştırmak ActiveX denetimi kapsamasını](which-atl-classes-facilitate-activex-control-containment-q.md).
 
 ## <a name="what-is-atlaxwin100"></a>AtlAxWin100 nedir?
 
-`AtlAxWin100` ATL'nin denetim barındırma işlevleri sağlar bir pencere sınıf adıdır. Bu sınıfın bir örneği oluşturduğunuzda, pencere yordamı pencere ile ilgili bir ana bilgisayar nesnesi oluşturun ve pencerenin başlık olarak belirtmek denetimi ile yüklemek için Denetim barındırma API'si otomatik olarak kullanır. 
+`AtlAxWin100` ATL'nin denetim barındırma işlevleri sağlar bir pencere sınıf adıdır. Bu sınıfın bir örneği oluşturduğunuzda, pencere yordamı pencere ile ilgili bir ana bilgisayar nesnesi oluşturun ve pencerenin başlık olarak belirtmek denetimi ile yüklemek için Denetim barındırma API'si otomatik olarak kullanır.
 
 ## <a name="when-do-i-need-to-call-atlaxwininit"></a>Ne zaman Atlaxwinınit çağrısı yapmam gerekir?
 

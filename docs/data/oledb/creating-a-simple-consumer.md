@@ -15,16 +15,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c9cb2003b857bb156709e4ba2a3345dfb57bfd3c
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 5a989466cff50d7e336bc9af8fee68f7ab72929d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808946"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054925"
 ---
 # <a name="creating-a-simple-consumer"></a>Basit Tüketici Oluşturma
 
-ATL OLE DB Tüketicisi Sihirbazı ve ATL projesi Sihirbazı bir OLE DB Şablonları tüketicisi oluşturmak için kullanın.
+Kullanım **ATL projesi Sihirbazı** ve **ATL OLE DB Tüketicisi Sihirbazı** bir OLE DB Şablonları tüketicisi oluşturmak için.
 
 ## <a name="to-create-a-console-application-for-an-ole-db-consumer"></a>Bir konsol uygulaması için bir OLE DB Tüketicisi Oluşturma
 
@@ -42,7 +42,7 @@ ATL OLE DB Tüketicisi Sihirbazı ve ATL projesi Sihirbazı bir OLE DB Şablonla
 
 1. Tıklayın **Tamam** sihirbazı kapatın ve projeyi oluşturmak için.
 
-Ardından, OLE DB Tüketici nesne eklemek için ATL OLE DB Tüketicisi Sihirbazı kullanın.
+Ardından, **ATL OLE DB Tüketicisi Sihirbazı** OLE DB Tüketici nesne eklemek için.
 
 ## <a name="to-create-a-consumer-with-the-atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketicisi Sihirbazı ile bir tüketici oluşturma
 
@@ -54,7 +54,7 @@ Ardından, OLE DB Tüketici nesne eklemek için ATL OLE DB Tüketicisi Sihirbaz�
 
 1. İçinde **kategorileri** bölmesinde tıklayın **yüklü** > **Visual C++** > **ATL**, tıklayın**ATL OLEDB tüketicisi** simgesini **şablonları** bölmesi ve ardından **Ekle**.
 
-   ATL OLEDB tüketicisi Sihirbazı görünür.
+   **ATL OLEDB tüketicisi Sihirbazı** görünür.
 
 1. Tıklayın **veri kaynağı** düğmesi.
 
@@ -62,26 +62,26 @@ Ardından, OLE DB Tüketici nesne eklemek için ATL OLE DB Tüketicisi Sihirbaz�
 
 1. İçinde **veri bağlantı özellikleri** iletişim kutusunda, aşağıdakileri yapın:
 
-   - Üzerinde **sağlayıcısı** sekmesinde, bir OLE DB sağlayıcısı belirtin.
+    1. Üzerinde **sağlayıcısı** sekmesinde, bir OLE DB sağlayıcısı belirtin.
 
-   - Üzerinde **bağlantı** sekmesinde, sunucu üzerinde sunucu adı, oturum açma kimliği ve parolası veri kaynağı ve veritabanı gibi gerekli bilgileri belirtin.
+    1. Üzerinde **bağlantı** sekmesinde, sunucu üzerinde sunucu adı, oturum açma kimliği ve parolası veri kaynağı ve veritabanı gibi gerekli bilgileri belirtin.
 
-   > [!NOTE]
-   > Bir güvenlik sorun **parola kaydetmeye izin ver** özelliği **veri bağlantı özellikleri** iletişim kutusu. İçinde **sunucuya oturum açmak için bilgi girin**, iki radyo düğmeleri vardır: **kullanım Windows NT tümleşik güvenliği** ve **belirli bir kullanıcı adı ve parolayı kullanın**.
+       > [!NOTE]
+       > Bir güvenlik sorun **parola kaydetmeye izin ver** özelliği **veri bağlantı özellikleri** iletişim kutusu. İçinde **sunucuya oturum açmak için bilgi girin**, iki radyo düğmeleri vardır: **kullanım Windows NT tümleşik güvenliği** ve **belirli bir kullanıcı adı ve parolayı kullanın**.
 
-   > [!NOTE]
-   > Seçerseniz **belirli bir kullanıcı adı ve parolayı kullanın**, parola kaydetme seçeneğiniz vardır (kullanarak **parola kaydetmeye izin ver** onay kutusu); ancak, bu seçeneği güvenli değildir. Seçtiğiniz önerilir **kullanım Windows NT tümleşik güvenliği**; bu seçenek, kimliğinizi doğrulamak için Windows NT kullanır.
+       > [!NOTE]
+       > Seçerseniz **belirli bir kullanıcı adı ve parolayı kullanın**, parola kaydetme seçeneğiniz vardır (kullanarak **parola kaydetmeye izin ver** onay kutusu); ancak, bu seçeneği güvenli değildir. Seçtiğiniz önerilir **kullanım Windows NT tümleşik güvenliği**; bu seçenek, kimliğinizi doğrulamak için Windows NT kullanır.
 
-   > [!NOTE]
-   > Windows NT tümleşik güvenliği kullanamaz, kullanıcıdan parola veya parola korumak amacıyla güvenlik mekanizmaları ile bir konumda depolamak için bir orta katman uygulama kullanmalıdır (yerine kaynak kodunda).
+       > [!NOTE]
+       > Windows NT tümleşik güvenliği kullanamaz, kullanıcıdan parola veya parola korumak amacıyla güvenlik mekanizmaları ile bir konumda depolamak için bir orta katman uygulama kullanmalıdır (yerine kaynak kodunda).
 
-   Sağlayıcınız ve diğer ayarları seçtikten sonra **Test Bağlantısı** önceki iletişim kutusu sayfalarında yapılan seçimleri doğrulayın. Varsa **sonuçları** kutusuna raporları `Test connection succeeded`, tıklayın **Tamam** veri bağlantısı oluşturmak için.
+   1. Sağlayıcınız ve diğer ayarları seçtikten sonra **Test Bağlantısı** önceki iletişim kutusu sayfalarında yapılan seçimleri doğrulayın. Varsa **sonuçları** kutusuna raporları `Test connection succeeded`, tıklayın **Tamam** veri bağlantısı oluşturmak için.
 
    **Veritabanı nesnesini Seç** iletişim kutusu görüntülenir.
 
-1. Ağaç denetimi tablosu, görünümü veya saklı yordam seçmek için kullanın. Bu yordamın amacıyla seçerek `Products` tablosunda `Northwind` veritabanı.
+1. Ağaç denetimi tablosu, görünümü veya saklı yordam seçmek için kullanın. Bu örnekte, seçin `Products` tablosunda `Northwind` veritabanı.
 
-1. **Tamam**'ı tıklatın. ATL OLE DB Tüketicisi Sihirbazı için döndürür.
+1. **Tamam**'ı tıklatın. Bu size döndürür **ATL OLE DB Tüketicisi Sihirbazı**.
 
 1. Sihirbaz adlarını tamamlandıktan `Class` ve **.h dosyası** görünümü, tablonun adını temel alarak veya saklı yordamı, seçtiğiniz. İsterseniz, bu adlar düzenleyebilirsiniz.
 
@@ -93,14 +93,14 @@ Ardından, OLE DB Tüketici nesne eklemek için ATL OLE DB Tüketicisi Sihirbaz�
 
 1. Altında **Destek**, bırakın **değişiklik**, **Ekle**, ve **Sil** kutularının.
 
-   Seçin **değişiklik**, **Ekle**, ve **Sil** değiştirme, ekleme ve satır kümesindeki kayıtları silme gerekirse desteklemek için onay kutularını. Depolayabilir ve bu verileri veri yazma hakkında daha fazla bilgi için bkz: [satır kümelerini güncelleştirme](../../data/oledb/updating-rowsets.md).
+   Seçin **değişiklik**, **Ekle**, ve **Sil** değiştirme, ekleme ve satır kümesindeki kayıtları silme desteklemek için onay kutularını. Depolayabilir ve bu verileri veri yazma hakkında daha fazla bilgi için bkz: [satır kümelerini güncelleştirme](../../data/oledb/updating-rowsets.md).
 
 1. Tıklayın **son** tüketici oluşturmak için.
 
 Sihirbaz gösterildiği gibi bir komut ve bir kullanıcı kaydı sınıfı oluşturur [kodla](../../data/oledb/consumer-wizard-generated-classes.md). Komut sınıfının girdiğiniz ad olacaktır `Class` sihirbazda kutusuna (Bu durumda, `CProducts`), ve kullanıcı kayıt sınıfı bir adı olacaktır "*ClassName*erişimci" (Bu durumda, `CProductsAccessor`).
 
 > [!NOTE]
-> Sihirbaz, aşağıdaki satırı Products.h'a getirir:
+> Sihirbaz aşağıdaki satır içine yerleştirir `Products.h`:
 
 ```cpp
 #error Security Issue: The connection string may contain a password

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d6b343ec9342199727122ac89f6df77e532429ad
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 85ffa775fd18b6979fccf4354ce243f017634d02
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48790036"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059681"
 ---
 # <a name="threading-c"></a>iş parçacığı oluşturma (C++)
 
@@ -82,4 +82,4 @@ Bkz: [lisanslı](licensed.md) örnek kullanımını örneğin **iş parçacığ�
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Eski Kod için Çoklu İş Parçacığı Kullanma Desteği (Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md)<br/>
-[Nötr apartmanlar](/windows/desktop/cossdk/neutral-apartments)  
+[Nötr apartmanlar](/windows/desktop/cossdk/neutral-apartments)

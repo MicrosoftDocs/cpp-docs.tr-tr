@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b443e1758f766b7fa2dd9a0169ab98172423779d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5e589f07d1c9c54c3acd2fa3ff6a0f346077f9b4
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439348"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053103"
 ---
 # <a name="setting-the-day-state-of-a-month-calendar-control"></a>Aylık Takvim Denetiminin Gün Durumunu Ayarlama
 
@@ -51,9 +51,9 @@ Düzgün bir şekilde bu iletiyi işlemek için kaç gün durumu bilgileri okunu
 
 1. İşleyici gövdesine aşağıdaki kodu ekleyin:
 
-     [!code-cpp[NVC_MFCControlLadenDialog#26](../mfc/codesnippet/cpp/setting-the-day-state-of-a-month-calendar-control_1.cpp)]
+   [!code-cpp[NVC_MFCControlLadenDialog#26](../mfc/codesnippet/cpp/setting-the-day-state-of-a-month-calendar-control_1.cpp)]
 
-     Örnek *pNMHDR* uygun türe işaretçi ardından belirler bilgilerinin kaç ay istenen (`pDayState->cDayState`). Geçerli bit alanından mantıksal karşılaştırmaya her ay için (`pDayState->prgDayState[i]`) sıfır ve ardından gerekli başlatılır tarihleri (Bu durumda, her ayın 15'inden) ayarlanır.
+   Örnek *pNMHDR* uygun türe işaretçi ardından belirler bilgilerinin kaç ay istenen (`pDayState->cDayState`). Geçerli bit alanından mantıksal karşılaştırmaya her ay için (`pDayState->prgDayState[i]`) sıfır ve ardından gerekli başlatılır tarihleri (Bu durumda, her ayın 15'inden) ayarlanır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

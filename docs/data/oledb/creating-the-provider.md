@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0dbdf7350eeba1a29392bafc2f099a857e212e37
-ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
+ms.openlocfilehash: 230620a2375ac5aa822e55496d1f26751ee6f7b3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410752"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055352"
 ---
 # <a name="creating-the-provider"></a>Sağlayıcı Oluşturma
 
@@ -32,7 +32,7 @@ ms.locfileid: "49410752"
 
 1. İçinde **sınıfı Ekle** iletişim kutusunun **yüklü** > **Visual C++** > **ATL**, seçin**ATL OLEDB Sağlayıcısı** simgesine ve ardından **açık**.
 
-1. İçinde **ATL OLE DB sağlayıcısı Sihirbazı**, sağlayıcınız için kısa bir ad girin **kısa ad** kutusu. Kısa ad "MyProvider" aşağıdaki konuları kullanın, ancak başka bir ad kullanabilirsiniz. Girdiğiniz ad göre diğer ad kutularını doldurun.
+1. İçinde **ATL OLE DB sağlayıcısı Sihirbazı**, sağlayıcınız için kısa bir ad girin **kısa ad** kutusu. Kısa ad aşağıdaki konuları kullanın *özel*, ancak başka bir ad kullanabilirsiniz. Girdiğiniz ad göre diğer ad kutularını doldurun.
 
 1. Gerekirse diğer ad kutularını düzenleyin. Nesne ve dosya adları ek olarak, aşağıdaki düzenleyebilirsiniz:
 

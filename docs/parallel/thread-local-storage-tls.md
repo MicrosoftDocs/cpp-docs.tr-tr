@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b271ed2c2af94e37edcbabb6611cda967f9587c7
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 18d9d2c1b3c633ba3399e93d34317c2360d45215
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49081877"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059850"
 ---
 # <a name="thread-local-storage-tls"></a>İş Parçacığında Yerel Depolama (TLS)
 
@@ -100,7 +100,7 @@ Aşağıdaki yönergeler, statik olarak bildirme iş parçacığı yerel nesnele
     int *p = &tls_i;       //This will generate an error in C.
     ```
 
-     C++'da bu kısıtlama geçerli değildir. C++ için tüm nesneleri dinamik olarak başlatılmasına izin verdiğinden, bir nesne iş parçacığı yerel değişkenin adresi kullanan bir ifade kullanarak başlatabilirsiniz. Bu, yalnızca iş parçacığı yerel nesneleri oluşturma gibi gerçekleştirilir. Örneğin, bir C++ kaynak dosyası olarak derlendiğinde daha önce gösterilen kod bir hata oluşturmaz. İş parçacığı yerel değişkenin adresi yalnızca, adres alınan iş parçacığı hala mevcut olduğu sürece geçerli olduğunu unutmayın.
+   C++'da bu kısıtlama geçerli değildir. C++ için tüm nesneleri dinamik olarak başlatılmasına izin verdiğinden, bir nesne iş parçacığı yerel değişkenin adresi kullanan bir ifade kullanarak başlatabilirsiniz. Bu, yalnızca iş parçacığı yerel nesneleri oluşturma gibi gerçekleştirilir. Örneğin, bir C++ kaynak dosyası olarak derlendiğinde daha önce gösterilen kod bir hata oluşturmaz. İş parçacığı yerel değişkenin adresi yalnızca, adres alınan iş parçacığı hala mevcut olduğu sürece geçerli olduğunu unutmayın.
 
 - Standart C, bir nesne veya değişkenin kendisine bir başvuru içeren bir ifade ile başlatma, ancak yalnızca statik olmayan uzantı nesneleri için sağlar. C++ için dinamik şekilde başlatılmasına nesnelerinin kendisine bir başvuru içeren bir ifadeyle genellikle olanak tanısa da tento typ inicializace iş parçacığı yerel nesneleriyle izin verilmez. Örneğin:
 
@@ -110,9 +110,9 @@ Aşağıdaki yönergeler, statik olarak bildirme iş parçacığı yerel nesnele
     __declspec( thread )int tls_i = sizeof( tls_i )       // Legal in C and C++
     ```
 
-     Unutmayın bir `sizeof` başlatılan nesneyi içeren ifade kendisine bir başvuru temsil etmez ve C ve C++ içinde etkinleştirilir.
+   Unutmayın bir `sizeof` başlatılan nesneyi içeren ifade kendisine bir başvuru temsil etmez ve C ve C++ içinde etkinleştirilir.
 
-     C++ iş parçacığı veri dinamik şekilde başlatılmasına iş parçacığı yerel depolama tesisi olası gelecekteki geliştirmeler nedeniyle izin vermez.
+   C++ iş parçacığı veri dinamik şekilde başlatılmasına iş parçacığı yerel depolama tesisi olası gelecekteki geliştirmeler nedeniyle izin vermez.
 
 - Önce Windows Vista, Windows işletim sistemlerinde `__declspec`(iş parçacığı), bazı sınırlamalar vardır. Bir DLL herhangi bir veri veya nesne olarak bildirirse `__declspec`(iş parçacığı) sebep olabilir koruma hatası dinamik olarak yüklü. DLL ile yüklendikten sonra [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya), her kod başvurduğunda sistem hatasına neden olur `__declspec`(iş parçacığı) veri. Çalışma zamanında genel değişken alan bir iş parçacığı için ayrıldığından, bu alanı boyutu hesaplanması uygulama gereksinimlerini gereksinimlerinin ve statik olarak bağlı DLL'lerin temel alır. Kullanırken `LoadLibrary`, iş parçacığı yerel değişkenleri izin vermek için bu alanı genişletilemez `__declspec`(iş parçacığı). TLS API'leri gibi kullanın [TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc), DLL'nin yüklenmesine, TLS ayırmak için bir DLL dosyanız içinde `LoadLibrary`.
 

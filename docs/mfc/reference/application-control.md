@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b20b5ea002ac16feb99707610fbe4556bf3254f7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3b06302d330ec8677a3de9b3ccaebf0b7b237b0e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376000"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053897"
 ---
 # <a name="application-control"></a>Uygulama Denetimi
 
@@ -41,7 +41,6 @@ OLE uygulamaları ve bunların nesneler üzerinde önemli denetim gerektirir. OL
 |[AfxOleUnlockControl](#afxoleunlockcontrol)| Sınıf üretecini belirtilen denetiminin kilidini açar. |
 |[AfxOleRegisterServerClass](#afxoleregisterserverclass)|Bir sunucuya OLE sistem kayıt defterine kaydeder.|
 |[AfxOleSetEditMenu](#afxoleseteditmenu)|Kullanıcı arabirimi uygulayan *typename* nesne komutu.|
-
 
 ##  <a name="afxolecanexitapp"></a>  AfxOleCanExitApp
 
@@ -192,6 +191,7 @@ Sınıf üretecini belirtilen denetiminin, denetimle ilişkili dinamik olarak ol
 BOOL AFXAPI AfxOleLockControl(  REFCLSID clsid  );
 BOOL AFXAPI AfxOleLockControl( LPCTSTR lpszProgID );
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *CLSID*<br/>
@@ -357,6 +357,7 @@ Sınıf üretecini belirtilen denetiminin kilidini açar.
 BOOL AFXAPI AfxOleUnlockControl( REFCLSID clsid );
 BOOL AFXAPI AfxOleUnlockControl( LPCTSTR lpszProgID );
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *CLSID*<br/>

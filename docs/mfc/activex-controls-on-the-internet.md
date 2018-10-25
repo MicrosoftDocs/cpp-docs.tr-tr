@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6004c3acd052d1424004017941a5e4aa110c602c
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 1bf8d43d9325ff6900cd1c5cd63629ead434acbc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890342"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055521"
 ---
 # <a name="activex-controls-on-the-internet"></a>Internet'te ActiveX Denetimleri
 
@@ -67,7 +67,7 @@ Denetimlerinizi performansını artırmak için verimlilik konuları üzerinde b
 
 - Küçük bloklar veri indirin.
 
-     Bit eşlemler veya video verileri gibi büyük akışlarını indirirken bir denetimin veri kapsayıcısı ile işbirliği içinde zaman uyumsuz olarak erişin. İşbirliği ile verileri de alınırken diğer denetimlerle çalışma artımlı veya aşamalı bir biçimde, verileri alır. Kod ayrıca zaman uyumsuz olarak yükleniyor.
+   Bit eşlemler veya video verileri gibi büyük akışlarını indirirken bir denetimin veri kapsayıcısı ile işbirliği içinde zaman uyumsuz olarak erişin. İşbirliği ile verileri de alınırken diğer denetimlerle çalışma artımlı veya aşamalı bir biçimde, verileri alır. Kod ayrıca zaman uyumsuz olarak yükleniyor.
 
 - Kod ve arka planda özellikleri yükleyin.
 
@@ -75,15 +75,15 @@ Denetimlerinizi performansını artırmak için verimlilik konuları üzerinde b
 
 - Göz önünde bulundurun kalıcı veriler nasıl hem özellikleri hem de büyük veri BLOB'ları (bir bit eşlem resim veya video veriler gibi).
 
-     Önemli miktarda büyük bit eşlemler ya da AVI dosyalar gibi kalıcı veri denetimleriyle yükleme yöntemi için çok dikkat gerektirir. Bir belge veya sayfa olabildiğince çabuk görünür hale gelir ve denetimlerini arka planda verileri alınırken bir sayfa ile etkileşim kurmak kullanıcı izin verebilirsiniz.
+   Önemli miktarda büyük bit eşlemler ya da AVI dosyalar gibi kalıcı veri denetimleriyle yükleme yöntemi için çok dikkat gerektirir. Bir belge veya sayfa olabildiğince çabuk görünür hale gelir ve denetimlerini arka planda verileri alınırken bir sayfa ile etkileşim kurmak kullanıcı izin verebilirsiniz.
 
 - Kod boyutu korumak ve çalışma zamanı için verimli yordamları yazın.
 
-     Yalnızca bazı baytını kalıcı veri sahip küçük düğme ve etiket denetimleri, Internet ortam ve iş tarayıcılar da içinde kullanmak için uygundur.
+   Yalnızca bazı baytını kalıcı veri sahip küçük düğme ve etiket denetimleri, Internet ortam ve iş tarayıcılar da içinde kullanmak için uygundur.
 
 - İlerleme kapsayıcıya bildiriliyor göz önünde bulundurun.
 
-     Kullanıcı bir sayfa ile etkileşim başlatmak için ne zaman ve yükleme tamamlandığında gibi zaman uyumsuz indirme sürüyor kapsayıcı bildirin. (Tamamlanma gibi), kapsayıcı kullanıcıya ilerleme durumunu görüntüleyebilirsiniz.
+   Kullanıcı bir sayfa ile etkileşim başlatmak için ne zaman ve yükleme tamamlandığında gibi zaman uyumsuz indirme sürüyor kapsayıcı bildirin. (Tamamlanma gibi), kapsayıcı kullanıcıya ilerleme durumunu görüntüleyebilirsiniz.
 
 - İstemci bilgisayarda kayıtlı denetimleri nasıl göz önünde bulundurun.
 
@@ -99,7 +99,7 @@ Uygulama Sihirbazı'nı kullanarak yeni bir denetim oluştururken, zaman uyumsuz
 
 1. Üzerinde **denetim ayarları** sayfasında **zaman uyumsuz olarak özelliklerini yükler**. Bu seçeneğin belirlenmesi hazır durumda özelliği ve hazır durumu değişti olayını sizin için ayarlar.
 
-     Diğer iyileştirmeler gibi seçebilirsiniz **penceresiz etkinleştirme**, açıklanan [ActiveX denetimleri: iyileştirme](../mfc/mfc-activex-controls-optimization.md).
+   Diğer iyileştirmeler gibi seçebilirsiniz **penceresiz etkinleştirme**, açıklanan [ActiveX denetimleri: iyileştirme](../mfc/mfc-activex-controls-optimization.md).
 
 1. Seçin **son** projeyi oluşturmak için.
 
@@ -111,15 +111,15 @@ Uygulama Sihirbazı'nı kullanarak yeni bir denetim oluştururken, zaman uyumsuz
 
 1. Bu sınıf, geçersiz kılma `OnDataAvailable`. Görüntülenecek veriler kullanılabilir olduğunda bu işlev çağrılır. Veri kullanılabilir oldukça, örneğin aşamalı olarak işleyerek seçtiğiniz herhangi bir şekilde işleyebilir.
 
-     Aşağıdaki kod Alıntısı, aşamalı bir düzenleme denetiminde veri görüntüleme, basit bir örnektir. Bayrağı kullanımına dikkat edin **BSCF_FIRSTDATANOTIFICATION** düzenleme denetiminin temizleyin.
+   Aşağıdaki kod Alıntısı, aşamalı bir düzenleme denetiminde veri görüntüleme, basit bir örnektir. Bayrağı kullanımına dikkat edin **BSCF_FIRSTDATANOTIFICATION** düzenleme denetiminin temizleyin.
 
-     [!code-cpp[NVC_MFCActiveXControl#1](../mfc/codesnippet/cpp/activex-controls-on-the-internet_1.cpp)]
+   [!code-cpp[NVC_MFCActiveXControl#1](../mfc/codesnippet/cpp/activex-controls-on-the-internet_1.cpp)]
 
-     AFXCMN içermesi gerektiğini unutmayın. Kullanılacak H `CListCtrl` sınıfı.
+   AFXCMN içermesi gerektiğini unutmayın. Kullanılacak H `CListCtrl` sınıfı.
 
 1. Denetiminiz genel olduğunda durumu (örneğin, yükleme için başlatılmış veya etkileşimli kullanıcı), çağrı değişiklikleri `COleControl::InternalSetReadyState`. Denetim yalnızca bir veri yolu özelliği varsa, kod üzerinde ekleyebilirsiniz **BSCF_LASTDATANOTIFICATION** kapsayıcı indirmenizin tamamlandığını bildirmek için. Örneğin:
 
-     [!code-cpp[NVC_MFCActiveXControl#2](../mfc/codesnippet/cpp/activex-controls-on-the-internet_2.cpp)]
+   [!code-cpp[NVC_MFCActiveXControl#2](../mfc/codesnippet/cpp/activex-controls-on-the-internet_2.cpp)]
 
 1. Geçersiz kılma `OnProgress`. İçinde `OnProgress`, en büyük aralık gösteren bir sayı geçirilir ve bir sayı gösteren geçerli indirme boyunca ne kadar olan. Bu numaraları gibi tamamlanma durumu kullanıcıya göstermek için kullanabilirsiniz.
 
@@ -135,19 +135,19 @@ Sonraki yordam yalnızca türetilmiş bir sınıf kullanma denetimine bir özell
 
 1. Üye değişkeni bildirmek, `CDataPathProperty`-ActiveX denetim sınıfı türetilmiş sınıf.
 
-     [!code-cpp[NVC_MFCActiveXControl#3](../mfc/codesnippet/cpp/activex-controls-on-the-internet_3.h)]
+   [!code-cpp[NVC_MFCActiveXControl#3](../mfc/codesnippet/cpp/activex-controls-on-the-internet_3.h)]
 
 1. Uygulama `Get/Set` yöntemleri. İçin `Get`, dizeyi döndür. İçin `Set`, özellik ve çağrı yük `SetModifiedFlag`.
 
-     [!code-cpp[NVC_MFCActiveXControl#4](../mfc/codesnippet/cpp/activex-controls-on-the-internet_4.cpp)]
+   [!code-cpp[NVC_MFCActiveXControl#4](../mfc/codesnippet/cpp/activex-controls-on-the-internet_4.cpp)]
 
 1. İçinde [DoPropExchange](../mfc/reference/colecontrol-class.md#dopropexchange), aşağıdaki satırı ekleyin:
 
-     [!code-cpp[NVC_MFCActiveXControl#5](../mfc/codesnippet/cpp/activex-controls-on-the-internet_5.cpp)]
+   [!code-cpp[NVC_MFCActiveXControl#5](../mfc/codesnippet/cpp/activex-controls-on-the-internet_5.cpp)]
 
 1. Geçersiz kılma [ResetData](../mfc/reference/cdatapathproperty-class.md#resetdata) bu satırı ekleyerek denetimiyle sıfırlama özelliği bildirmek için:
 
-     [!code-cpp[NVC_MFCActiveXControl#6](../mfc/codesnippet/cpp/activex-controls-on-the-internet_6.cpp)]
+   [!code-cpp[NVC_MFCActiveXControl#6](../mfc/codesnippet/cpp/activex-controls-on-the-internet_6.cpp)]
 
 ## <a name="deciding-whether-to-derive-from-cdatapathproperty-or-ccacheddatapathproperty"></a>CDataPathProperty veya CCachedDataPathProperty türetmek karar verme
 
@@ -200,8 +200,6 @@ Varolan bir denetimi zaman uyumsuz bir özellik destek ekliyorsanız, hazır dur
 [!code-cpp[NVC_MFCActiveXControl#8](../mfc/codesnippet/cpp/activex-controls-on-the-internet_8.cpp)]
 
 Kodunuzu çağırarak indirilen olarak hazır durumda güncelleştirilir [COleControl::InternalSetReadyState](../mfc/reference/colecontrol-class.md#internalsetreadystate). Tek bir yerde, çağırın `InternalSetReadyState` dandır `OnProgress` , geçersiz kılma `CDataPathProperty`-türetilmiş sınıf.
-
-
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

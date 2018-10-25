@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a4dbf1b085ca5ffddd87396fc367bf19f2ad02e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 841a140236c092ad14501698db90007bce0322ec
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383067"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054884"
 ---
 # <a name="ddxdhtml-helper-macros"></a>DDX_DHtml yardımcı makroları
 
@@ -58,8 +58,6 @@ DDX_DHtml yardımcı makroları, yaygın olarak kullanılan bir HTML sayfasında
 ## <a name="ddx_dhtml_anchor_href"></a> DDX_DHtml_Anchor_Href
 
 Hedef URL veya bağlantı noktası alır veya ayarlar.
-
-
 
 ```
 DDX_DHtml_Anchor_Href(
@@ -113,8 +111,6 @@ Bu makroyu çağıran [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/
 
 Geçerli öğenin başlangıç ve bitiş etiketleri arasında HTML alır veya ayarlar.
 
-
-
 ```
 DDX_DHtml_ElementInnerHtml(
     CDataExchange* dx,
@@ -137,12 +133,9 @@ Değiştirilen değer.
 
 Bu makroyu çağıran [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevi DISPID_IHTMLELEMENT_INNERHTML kullanarak dağıtım kimliği
 
-
 ## <a name="ddx_dhtml_elementinnertext"></a>  DDX_DHtml_ElementInnerText
 
 Geçerli öğenin başlangıç ve bitiş etiketleri arasındaki metni alır veya ayarlar.
-
-
 
 ```
 DDX_DHtml_ElementInnerText(
@@ -224,8 +217,6 @@ Bu makroyu çağıran [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/
 
 İlişkili çerçeve URL'sini alır veya ayarlar.
 
-
-
 ```
 DDX_DHtml_IFrame_Src(
     CDataExchange* dx,
@@ -275,7 +266,6 @@ Değiştirilen değer.
 Bir görüntü öğesi için kaynak özelliği almak için DDX_DHtml_Img_Src makrosu kullanırken, Internet Explorer resim nesnesi tamamen kaçan görüntü kaynağı URL'sini döndürür. Bir görüntü öğesi src özelliğini "bazı ilginç resim" dizesine ayarlamak için DDX_DHtml_Img_Src makro kullanırsanız, örneğin, bu özellik Internet Explorer aldığınızda "res://d:\myapplication\myapp.exe/some% dize döndürür 20interesting % 20picture."
 
 Bu makroyu çağıran [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevi DISPID_IHTMLIMGELEMENT_SRC kullanarak dağıtım kimliği
-
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

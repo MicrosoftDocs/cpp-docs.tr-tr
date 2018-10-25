@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 269fd977bf57f1b2daff4ec5550b1d2da97b58d6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 84d0d149c00024fab0d29ffc05d60270cb26741b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46114169"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054442"
 ---
 # <a name="ccomclassfactoryautothread-class"></a>CComClassFactoryAutoThread sınıfı
 
@@ -36,9 +36,9 @@ Bu sınıfın uyguladığı [IClassFactory](/windows/desktop/api/unknwnbase/nn-u
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-class CComClassFactoryAutoThread 
-   : public IClassFactory, 
-     public CComObjectRootEx<CComGlobalsThreadModel>
+class CComClassFactoryAutoThread
+    : public IClassFactory,
+      public CComObjectRootEx<CComGlobalsThreadModel>
 ```
 
 ## <a name="members"></a>Üyeler

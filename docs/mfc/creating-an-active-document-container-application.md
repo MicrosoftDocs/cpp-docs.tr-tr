@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f01b15a226887216b45ba232437d9d20c4691b6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f1b20dd592e180122e119b08ab59babfdaae8d54
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388348"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052822"
 ---
 # <a name="creating-an-active-document-container-application"></a>Etkin Belge Kapsayıcı Uygulaması Oluşturma
 
@@ -57,9 +57,9 @@ Etkin belge kapsayıcı uygulaması oluşturmanın en kolay ve en çok önerilen
 
          [!code-cpp[NVC_MFCDocView#56](../mfc/codesnippet/cpp/creating-an-active-document-container-application_1.cpp)]
 
-     `OnPreparePrinting` yazdırma desteği sağlar. Bu kodu değiştirir `DoPreparePrinting`, varsayılan yazdırma hazırlık olduğu.
+   `OnPreparePrinting` yazdırma desteği sağlar. Bu kodu değiştirir `DoPreparePrinting`, varsayılan yazdırma hazırlık olduğu.
 
-     Etkin belge kapsaması geliştirilmiş bir yazdırma düzeni sağlar:
+   Etkin belge kapsaması geliştirilmiş bir yazdırma düzeni sağlar:
 
    - Etkin belgeyi ile ilk çağırabilirsiniz kendi `IPrint` arabirim ve, IOleCommandTarget komutunu söyleyin. Bu, kapsayıcı olan bir yazıcı üzerine kapsanan öğesinin görüntüsünü işlemek önceki OLE kapsayıcı farklıdır `CDC` nesne.
 
@@ -67,7 +67,7 @@ Etkin belge kapsayıcı uygulaması oluşturmanın en kolay ve en çok önerilen
 
    - Bu başarısız olursa, öğenin kendi işleme olun.
 
-     Statik üye işlevleri `COleDocObjectItem::OnPrint` ve `COleDocObjectItem::OnPreparePrinting`, önceki kod içinde uygulandığı şekilde bu geliştirilmiş yazdırma düzeni tanıtıcı.
+   Statik üye işlevleri `COleDocObjectItem::OnPrint` ve `COleDocObjectItem::OnPreparePrinting`, önceki kod içinde uygulandığı şekilde bu geliştirilmiş yazdırma düzeni tanıtıcı.
 
 11. Herhangi bir uygulamasını ekleyin ve uygulamayı derleyin.
 

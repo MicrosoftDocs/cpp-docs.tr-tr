@@ -27,12 +27,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 66aa9c3a8ab0f5ae9fb5219b090ec5c9e3755203
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: a97b164d2ee7f5f5a6cc771d1ebec699f705cc80
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162106"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053170"
 ---
 # <a name="synclockt-class"></a>SyncLockT Sınıfı
 
@@ -146,7 +146,7 @@ SyncLockT(
 );
 
 explicit SyncLockT(
-   typename SyncTraits::Type sync = SyncTraits::GetInvalidValue()  
+   typename SyncTraits::Type sync = SyncTraits::GetInvalidValue()
 );
 ```
 

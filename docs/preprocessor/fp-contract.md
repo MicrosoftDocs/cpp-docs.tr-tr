@@ -18,26 +18,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 514b4708129d625ea7880e4c61be22c4b1ac2db5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 95f23fa132a263970047a480ccde37382b6d03de
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33912894"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052170"
 ---
 # <a name="fpcontract"></a>fp_contract
 
-Kayan nokta daraltmaya gerçekleşir olup olmadığını belirler. Kayan nokta daraltmaya iki ayrı kayan nokta işlemleri tek bir yönerge içine birleştiren FMA (Fused-Çarp-ekleyin) gibi bir yönerge ' dir. Her işlemden sonra yuvarlama yerine işlemci yalnızca bir kez hem işlemlerinden sonra yuvarlamak çünkü bu yönergeleri kullanımını kayan nokta duyarlık etkileyebilir.
+Kayan nokta kısaltmanın gerçekleşmeden olup olmadığını belirler. Kayan nokta kısaltmanın iki ayrı kayan nokta işlemleri tek bir yönerge halinde birleştiren FMA (Fused-Çarp-Ekle) gibi bir yönergedir. Bu yönergelerin kullanımını, her işlemden sonra yuvarlama yerine işlemci yalnızca bir kez hem işlemlerinden sonra yuvarlak çünkü kayan nokta duyarlığını etkileyebilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **#pragma fp_contract (** { **üzerinde** | **kapalı** } **)**  
+> **#pragma fp_contract (** { **üzerinde** | **kapalı** } **)**
 
-## <a name="remarks"></a>Açıklamalar  
+## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, **fp_contract** olan **üzerinde**. Derleyicinin mümkün olduğunda kayan nokta daraltmaya yönergeleri kullanmasını söyler. Ayarlama **fp_contract** için **kapalı** tek tek kayan nokta yönergeleri korumak için.
+Varsayılan olarak, **fp_contract** olduğu **üzerinde**. Bu, derleyicinin kayan nokta kısaltmanın yönergeleri mümkün olan yerlerde kullanın bildirir. Ayarlama **fp_contract** için **kapalı** tek kayan nokta yönergeleri korumak için.
 
-Kayan nokta davranışını hakkında daha fazla bilgi için bkz: [/fp (Floating-Point davranış belirtin)](../build/reference/fp-specify-floating-point-behavior.md).
+Kayan nokta davranışı hakkında daha fazla bilgi için bkz. [FP (Floating-Point davranışını belirtin)](../build/reference/fp-specify-floating-point-behavior.md).
 
 Diğer kayan nokta pragmaları şunlardır:
 
@@ -47,8 +47,8 @@ Diğer kayan nokta pragmaları şunlardır:
 
 ## <a name="example"></a>Örnek
 
-Hedef işlemci kullanılabilir olduğunda bile bu örnekten oluşturulan kodu Sigortalı Çarp-ekleme yönerge kullanmaz. Çıkarırsanız `#pragma fp_contract (off)`, kullanılabilir durumdaysa oluşturulan kod Sigortalı Çarp-ekleme yönerge kullanabilir.  
-  
+Hedef işlemci üzerinde mevcut olsa bile bu örnekten oluşturulan kod çarpım-Çarp-Ekle bir yönerge kullanmaz. Çıkarırsanız `#pragma fp_contract (off)`, varsa, oluşturulan kod çarpım-Çarp-Ekle bir yönerge kullanabilir.
+
 ```cpp
 // pragma_directive_fp_contract.cpp
 // on x86 and x64 compile with: /O2 /fp:fast /arch:AVX2

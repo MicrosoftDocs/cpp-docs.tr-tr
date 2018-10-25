@@ -72,12 +72,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 964fab6030e0a89ef69730fd4867973e402db614
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a4a5b6936397728472bf0041735248157091db56
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442025"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054364"
 ---
 # <a name="cdaoworkspace-class"></a>CDaoWorkspace sınıfı
 
@@ -163,7 +163,7 @@ Sınıf kullanabileceğiniz `CDaoWorkspace` için:
 
 - Açıkça varsayılan çalışma alanını açın.
 
-     Varsayılan çalışma alanı kullanımınızı genellikle örtük olarak — yeni açtığınızda [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesneleri. Ancak açıkça erişim gerekebilir; örneğin, access veritabanı altyapısı özellikleri veya çalışma alanı koleksiyonu için. Aşağıdaki "Örtülü varsayılan çalışma alanı kullanımı" bölümüne bakın.
+   Varsayılan çalışma alanı kullanımınızı genellikle örtük olarak — yeni açtığınızda [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesneleri. Ancak açıkça erişim gerekebilir; örneğin, access veritabanı altyapısı özellikleri veya çalışma alanı koleksiyonu için. Aşağıdaki "Örtülü varsayılan çalışma alanı kullanımı" bölümüne bakın.
 
 - Yeni çalışma alanları oluşturun. Çağrı [ekleme](#append) çalışma alanları koleksiyona eklemek istiyorsanız.
 
@@ -309,7 +309,6 @@ static void PASCAL CompactDatabase(
     LPCTSTR lpszLocale = dbLangGeneral,
     int nOptions = 0);
 
-
 static void PASCAL CompactDatabase(
     LPCTSTR lpszSrcName,
     LPCTSTR lpszDestName,
@@ -453,7 +452,6 @@ void GetDatabaseInfo(
     int nIndex,
     CDaoDatabaseInfo& dbinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
-
 
 void GetDatabaseInfo(
     LPCTSTR lpszName,
@@ -624,7 +622,6 @@ void GetWorkspaceInfo(
     int nIndex,
     CDaoWorkspaceInfo& wkspcinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
-
 
 void GetWorkspaceInfo(
     LPCTSTR lpszName,

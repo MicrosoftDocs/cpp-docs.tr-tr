@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d0cd2be2e07cc59041634a0c9f7ed2fc2c2e47d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d0b3d012f74706806c1486b38180cd1c69beef2e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412853"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053845"
 ---
 # <a name="cmfcribbonstatusbarpane-class"></a>CMFCRibbonStatusBarPane sınıfı
 
@@ -233,7 +233,7 @@ virtual void OnDrawBorder(CDC*);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *CDC**
+[in] *CDC&#42;*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -247,7 +247,7 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 

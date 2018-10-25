@@ -25,84 +25,84 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 34daf1f1c8624206070c73c9f012192c8b3dec66
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 9880da2737ddd58d6521712252906c1431955173
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082637"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052908"
 ---
 # <a name="isessionpropertiesimpl-class"></a>ISessionPropertiesImpl Sınıfı
 
-Bir uygulamasını sağlar [ISessionProperties](/previous-versions/windows/desktop/ms713721) arabirimi.  
-  
+Bir uygulamasını sağlar [ISessionProperties](/previous-versions/windows/desktop/ms713721) arabirimi.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-template <class T, class PropClass = T>  
-class ATL_NO_VTABLE ISessionPropertiesImpl :  
-   public ISessionProperties,    
-   public CUtlProps<PropClass>  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+template <class T, class PropClass = T>
+class ATL_NO_VTABLE ISessionPropertiesImpl :
+   public ISessionProperties,  
+   public CUtlProps<PropClass>
+```
+
+### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Sınıfınız, türetilen `ISessionPropertiesImpl`.  
-  
+Sınıfınız, türetilen `ISessionPropertiesImpl`.
+
 *PropClass*<br/>
-Varsayılan olarak bir kullanıcı tarafından tanımlanabilen özellik sınıfı *T*.  
+Varsayılan olarak bir kullanıcı tarafından tanımlanabilen özellik sınıfı *T*.
 
-## <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="interface-methods"></a>Arabirim yöntemleri  
-  
-|||  
-|-|-|  
-|[GetProperties](#getproperties)|Şu anda oturumda ayarlanan oturumu özellik grubundaki özelliklerinin listesini döndürür.|  
-|[SetProperties](#setproperties)|Oturum özellik grubundaki özellikleri ayarlar.|  
-  
-## <a name="remarks"></a>Açıklamalar  
+**Başlık:** atldb.h
 
-Oturumlarının üzerinde zorunlu bir arabirim. Bu sınıf tarafından tanımlanan statik bir işlev çağırarak oturum özellikleri uygulayan [özellik kümesi eşlemesini](../../data/oledb/begin-propset-map.md). Özellik kümesi eşlemesi oturumu Sınıfınız içinde belirtilmelidir.  
-  
+## <a name="members"></a>Üyeler
+
+### <a name="interface-methods"></a>Arabirim yöntemleri
+
+|||
+|-|-|
+|[GetProperties](#getproperties)|Şu anda oturumda ayarlanan oturumu özellik grubundaki özelliklerinin listesini döndürür.|
+|[SetProperties](#setproperties)|Oturum özellik grubundaki özellikleri ayarlar.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Oturumlarının üzerinde zorunlu bir arabirim. Bu sınıf tarafından tanımlanan statik bir işlev çağırarak oturum özellikleri uygulayan [özellik kümesi eşlemesini](../../data/oledb/begin-propset-map.md). Özellik kümesi eşlemesi oturumu Sınıfınız içinde belirtilmelidir.
+
 ## <a name="getproperties"></a> Isessionpropertiesımpl::GetProperties
 
-Özellikler listesini döndürür `DBPROPSET_SESSION` oturumda ayarlanan özellik grubu.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp
-STDMETHOD(GetProperties)(ULONG cPropertyIDSets,   
-   const DBPROPIDSET rgPropertyIDSets[],   
-   ULONG * pcPropertySets,   
-   DBPROPSET ** prgPropertySets);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+Özellikler listesini döndürür `DBPROPSET_SESSION` oturumda ayarlanan özellik grubu.
 
-Bkz: [ISessionProperties::GetProperties](/previous-versions/windows/desktop/ms723643) içinde *OLE DB Programcının Başvurusu*. 
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+STDMETHOD(GetProperties)(ULONG cPropertyIDSets, 
+   const DBPROPIDSET rgPropertyIDSets[], 
+   ULONG * pcPropertySets, 
+   DBPROPSET ** prgPropertySets);
+```
+
+#### <a name="parameters"></a>Parametreler
+
+Bkz: [ISessionProperties::GetProperties](/previous-versions/windows/desktop/ms723643) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="setproperties"></a> Isessionpropertiesımpl::SetProperties
 
-Ayarlar özellikleri `DBPROPSET_SESSION` özellik grubu.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp
-STDMETHOD(SetProperties)(ULONG cPropertySets,   
-   DBPROPSET rgPropertySets[]);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+Ayarlar özellikleri `DBPROPSET_SESSION` özellik grubu.
 
-Bkz: [ISessionProperties::SetProperties](/previous-versions/windows/desktop/ms714405) içinde *OLE DB Programcının Başvurusu*.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+STDMETHOD(SetProperties)(ULONG cPropertySets, 
+   DBPROPSET rgPropertySets[]);
+```
+
+#### <a name="parameters"></a>Parametreler
+
+Bkz: [ISessionProperties::SetProperties](/previous-versions/windows/desktop/ms714405) içinde *OLE DB Programcının Başvurusu*.
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

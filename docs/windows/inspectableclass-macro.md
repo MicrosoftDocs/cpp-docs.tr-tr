@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a20815972f595a15097a057537d6cb5cdca4fb4b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 44bdcbc84a1ed2d57b0c9a0ce9eca4feebb0b133
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408342"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059707"
 ---
 # <a name="inspectableclass-macro"></a>InspectableClass Makrosu
 
@@ -31,7 +31,7 @@ ms.locfileid: "46408342"
 ```cpp
 InspectableClass(
    runtimeClassName,
-   trustLevel)  
+   trustLevel)
 ```
 
 ### <a name="parameters"></a>Parametreler

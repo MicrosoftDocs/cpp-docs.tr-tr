@@ -37,12 +37,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5cb576ba6ce532bce15b9dda2aa598649044c2d8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 994095042dc473fda315b6d842d9ec9355ff3671
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378025"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055404"
 ---
 # <a name="tn062-message-reflection-for-windows-controls"></a>TN062: Windows Denetimleri için İleti Yansıması
 
@@ -126,7 +126,7 @@ Bu basit örnek olarak adlandırılan yeniden kullanılabilir bir denetim oluşt
 
 1. Yeni iletişim kutusu içinde var olan bir uygulama oluşturun. Daha fazla bilgi için [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md) konu.
 
-     Yeniden kullanılabilir denetim geliştirmek üzere bir uygulama olmalıdır. Mevcut bir uygulamayı kullanmak için yoksa AppWizard kullanarak iletişim tabanlı bir uygulama oluşturun.
+   Yeniden kullanılabilir denetim geliştirmek üzere bir uygulama olmalıdır. Mevcut bir uygulamayı kullanmak için yoksa AppWizard kullanarak iletişim tabanlı bir uygulama oluşturun.
 
 2. Visual C++'ta yüklenen projenizle ClassWizard adlı yeni bir sınıf oluşturmak için kullanın. `CYellowEdit` göre `CEdit`.
 
@@ -145,7 +145,7 @@ Bu basit örnek olarak adlandırılan yeniden kullanılabilir bir denetim oluşt
 
 5. ClassWizard, kullanarak eklemek için yansıtılmış WM_CTLCOLOR iletisi için bir işleyici, `CYellowEdit` sınıfı. Eşittir işaretinin önüne iletileri işleyebilir listesinde ileti adı, ileti yansıtılır olduğuna dikkat edin. Bu açıklanan [yansımış bir ileti için ileti işleyicisi tanımlama](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md).
 
-     ClassWizard aşağıdaki ileti eşleme makrosu ve skeleton işlevi için ekler:
+   ClassWizard aşağıdaki ileti eşleme makrosu ve skeleton işlevi için ekler:
 
     ```cpp
     ON_WM_CTLCOLOR_REFLECT()

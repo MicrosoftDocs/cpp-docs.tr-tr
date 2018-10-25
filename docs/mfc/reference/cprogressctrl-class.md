@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6a5668a5d9c179f37e7056de6ae17a25c1b4ebe
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3b14a3e4fcfbd8287440dddf9a3f660b3bd47911
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393511"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055170"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl sınıfı
 
@@ -510,7 +510,6 @@ void SetRange(
     short nLower,
     short nUpper);
 
-
 void SetRange32(
     int nLower,
     int nUpper);
@@ -618,5 +617,4 @@ Adım artırma belirlediği `CProgressCtrl::SetStep` üye işlevi.
 [MFC örnek CMNCTRL2](../../visual-cpp-samples.md)<br/>
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-
 

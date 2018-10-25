@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3df63cbed5fcb17b01450435aa2d991ca3e0c5a8
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: cc7f178923e043d9ecd3be4849f7b2f497b51a08
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083924"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057380"
 ---
 # <a name="csecuritydesc-class"></a>CSecurityDesc sınıfı
 
@@ -556,7 +556,7 @@ Güvenlik tanımlayıcısının denetim bitlerini ayarlar.
 
 ```
 bool SetControl(
-    SECURITY_DESCRIPTOR_CONTROL ControlBitsOfInterest, 
+    SECURITY_DESCRIPTOR_CONTROL ControlBitsOfInterest,
     SECURITY_DESCRIPTOR_CONTROL ControlBitsToSet) throw();
 ```
 
@@ -581,11 +581,11 @@ Bu yöntemin çağırdığı [SetSecurityDescriptorControl](https://msdn.microso
 İsteğe bağlı erişim denetimi listesini (DACL) bilgilerini ayarlar. Bir DACL, güvenlik tanımlayıcısı zaten varsa, değiştirilir.
 
 ```
-inline void SetDacl(  
+inline void SetDacl(
     bool bPresent = true,
     bool bDefaulted = false) throw(...);
 
-inline void SetDacl(  
+inline void SetDacl(
     const CDacl& Dacl,
     bool bDefaulted = false) throw(...);
 ```

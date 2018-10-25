@@ -55,12 +55,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 430d9d297161a05f9158893454f00be2afbe7a47
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8fba2e8d949745f694973f2d7b29c5244ab30db4
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408576"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50058914"
 ---
 # <a name="record-field-exchange-functions"></a>Kayıt Alanı Değişim İşlevleri
 
@@ -440,7 +440,6 @@ Bkz: [RFX_Text](#rfx_text).
 
 **Başlık:** afxdb.h
 
-
 ## <a name="rfx_text"></a>  RFX_Text
 
 Aktarımları `CString` veri alan veri üyeleri arasında bir `CRecordset` nesnesi ve bir kaydın, ODBC veri kaynağında sütunları SQL_LONGVARCHAR, SQL_CHAR, SQL_VARCHAR, SQL_DECIMAL veya SQL_NUMERIC yazın.
@@ -506,7 +505,6 @@ void CCustomer::DoFieldExchange(CFieldExchange* pFX)
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxdb.h
-
 
 ## <a name="rfx_binary_bulk"></a>  RFX_Binary_Bulk
 
@@ -873,7 +871,6 @@ Bkz: [RFX_Text_Bulk](#rfx_text_bulk).
 
 **Başlık:** afxdb.h
 
-
 ## <a name="rfx_text_bulk"></a>  RFX_Text_Bulk
 
 Karakter verilerinin birden çok satır karşılık gelen bir dizide bir ODBC veri kaynağını sütundan aktarır bir `CRecordset`-türetilmiş bir nesneye.
@@ -986,7 +983,6 @@ Bkz: [DFX_Text](#dfx_text).
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxdao.h
-
 
 ## <a name="dfx_bool"></a>  DFX_Bool
 
@@ -1249,7 +1245,6 @@ Bkz: [DFX_Text](#dfx_text).
 
 **Başlık:** afxdao.h
 
-
 ## <a name="dfx_longbinary"></a>  DFX_LongBinary
 
 **Önemli** kullanmanız önerilir [DFX_Binary](#dfx_binary) bu işlevi yerine.
@@ -1342,7 +1337,6 @@ Bkz: [DFX_Text](#dfx_text).
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxdao.h
-
 
 ## <a name="dfx_single"></a>  DFX_Single
 

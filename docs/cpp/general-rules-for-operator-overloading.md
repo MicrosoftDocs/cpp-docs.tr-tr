@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c3064da609c8a81a6e264c7f46d37d4cd5681d1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3a6eb1b97acfe2fa41511433de3990da8923de7d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107149"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059551"
 ---
 # <a name="general-rules-for-operator-overloading"></a>İşleç Aşırı Yüklemesi Genel Kuralları
 
@@ -48,7 +48,7 @@ Aşağıdaki kuralları nasıl aşırı yüklenmiş işleçler sınırlamak uygu
     }
     ```
 
-     Yukarıdaki kod örneğinde daha az bildirir-işleci bir üye işlev; olarak Ancak, toplama işleçleri öğesine friend erişimi olan genel işlevleri bildirilir. Birden fazla uygulama için belirli bir işleç sağlanabileceğini unutmayın. Önceki Toplama işleci söz konusu olduğunda iki uygulamaları commutativity kolaylaştırmak için sağlanır. Eklediğiniz yalnızca büyük olasılıkla bu işleçleri olan bir `Point` için bir `Point`, **int** için bir `Point`ve benzeri uygulanabilir.
+   Yukarıdaki kod örneğinde daha az bildirir-işleci bir üye işlev; olarak Ancak, toplama işleçleri öğesine friend erişimi olan genel işlevleri bildirilir. Birden fazla uygulama için belirli bir işleç sağlanabileceğini unutmayın. Önceki Toplama işleci söz konusu olduğunda iki uygulamaları commutativity kolaylaştırmak için sağlanır. Eklediğiniz yalnızca büyük olasılıkla bu işleçleri olan bir `Point` için bir `Point`, **int** için bir `Point`ve benzeri uygulanabilir.
 
 - Gruplandırma işleçleri, öncelik uyma ve işlenenleri sayısı ile yerleşik türleri tipik kullanımları tarafından dikte. Bu nedenle, bir kavramı hızlı bir yolu yoktur "2 ve 3 türünde bir nesne eklemek `Point`," eklenecek 2 bekleniyor *x* koordinat ve 3 eklenecek *y* koordine edin.
 

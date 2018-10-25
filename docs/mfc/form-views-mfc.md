@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9019b8f2314cfefa5b952994e7fa7c3e9d8d459e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8236ed06a5863e2208c77294e4ddb7352b0f83f7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442781"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052999"
 ---
 # <a name="form-views-mfc"></a>Form Görünümleri (MFC)
 
@@ -40,7 +40,7 @@ Yeni bir form uygulamanıza eklediğinizde, Visual C++ şunları yapar:
 
 - Uygun stilleriyle bir iletişim kaynağı oluşturur (veya henüz bir sınıf ile ilişkilendirilmemiş mevcut bir iletişim kaynağı kullanabilirsiniz).
 
-     Var olan bir iletişim kaynağı seçerseniz, iletişim kutusu için Özellikler sayfasını kullanarak bu stiller ayarlamak gerekebilir. Bir iletişim kutusu stilleri şunları içermelidir:
+   Var olan bir iletişim kaynağı seçerseniz, iletişim kutusu için Özellikler sayfasını kullanarak bu stiller ayarlamak gerekebilir. Bir iletişim kutusu stilleri şunları içermelidir:
 
      **WS_CHILD**= açık
 
@@ -54,17 +54,17 @@ Belge/görünüm mimarisini temel alan uygulamalar için **yeni formu** komut (S
 
 - Oluşturur bir `CDocument`-temel sınıfı
 
-     Oluşturulan yeni bir sınıf olması yerine var olan tüm kullanabilirsiniz `CDocument`-tabanlı projenizdeki sınıfı.
+   Oluşturulan yeni bir sınıf olması yerine var olan tüm kullanabilirsiniz `CDocument`-tabanlı projenizdeki sınıfı.
 
 - Bir belge şablonu oluşturur (türetilen `CDocument`) dizesi, menü ve simge kaynaklara sahip.
 
-     Yeni bir sınıf şablonunun temel de oluşturabilirsiniz.
+   Yeni bir sınıf şablonunun temel de oluşturabilirsiniz.
 
 - Bir çağrı ekler `AddDocumentTemplate` uygulamanızın `InitInstance` kod.
 
-     Visual C++ için kullanıcı seçtiğinde, form kullanılabilir Formlar listesine ekler. oluşturduğunuz her yeni formu bu kodu ekler **yeni** komutu. Bu kod, formun ilişkili kaynak kimliği ile ilişkili belge, görünüm ile birlikte yeni form nesne olun çerçeve sınıfları adlarını içerir.
+   Visual C++ için kullanıcı seçtiğinde, form kullanılabilir Formlar listesine ekler. oluşturduğunuz her yeni formu bu kodu ekler **yeni** komutu. Bu kod, formun ilişkili kaynak kimliği ile ilişkili belge, görünüm ile birlikte yeni form nesne olun çerçeve sınıfları adlarını içerir.
 
-     Belge şablonları, belge çerçeve pencereleri ve görünümleri arasında bağlantı görür. Tek bir belge için birçok şablonu oluşturabilirsiniz.
+   Belge şablonları, belge çerçeve pencereleri ve görünümleri arasında bağlantı görür. Tek bir belge için birçok şablonu oluşturabilirsiniz.
 
 Daha fazla bilgi için bkz.:
 

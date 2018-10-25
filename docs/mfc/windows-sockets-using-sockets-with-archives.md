@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 217dcd1d5e999ea640795c656bbf40f7adad3d7d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 295077b474681cabeb1221052ae9e2c9ad5ed79a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398755"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053181"
 ---
 # <a name="windows-sockets-using-sockets-with-archives"></a>Windows Yuvaları: Yuvaları Arşivlerle Kullanma
 
@@ -49,7 +49,7 @@ Kullanarak bir `CSocket` nesnesi oluşturma ve birlikte birkaç MFC sınıf nesn
 
 1. Nesne arka plandaki oluşturmak için kullanın **YUVA** tanıtıcı.
 
-     İçin bir `CSocket` istemci nesnesi, normalde kullanmanız gerektiğini varsayılan parametreleri [Oluştur](../mfc/reference/casyncsocket-class.md#create), bir veri birimi yuva gerekmedikçe. İçin bir `CSocket` sunucu nesnesi için bir bağlantı noktası belirtmeniz gerekir `Create` çağırın.
+   İçin bir `CSocket` istemci nesnesi, normalde kullanmanız gerektiğini varsayılan parametreleri [Oluştur](../mfc/reference/casyncsocket-class.md#create), bir veri birimi yuva gerekmedikçe. İçin bir `CSocket` sunucu nesnesi için bir bağlantı noktası belirtmeniz gerekir `Create` çağırın.
 
     > [!NOTE]
     >  `CArchive` veri birimi yuvaları ile çalışmaz. Kullanmak istiyorsanız `CSocket` bir veri birimi yuva için kullanacağınız gibi sınıf kullanmalısınız `CAsyncSocket`, diğer bir deyişle, bir arşiv olmadan. Veri birimlerini güvenilir olduğundan (ulşamasını garanti ve yinelenebilir değil veya sıra dışında), serileştirme yöntemiyle bir arşiv ile uyumlu değildir. Bir seri hale getirme işlemi, güvenilir ve sırayla tamamlanması beklediğiniz. Kullanmayı denerseniz `CSocket` ile bir `CArchive` nesne bir veri birimi için bir MFC onaylama işlemi başarısız olur.
@@ -58,7 +58,7 @@ Kullanarak bir `CSocket` nesnesi oluşturma ve birlikte birkaç MFC sınıf nesn
 
      veya
 
-     Yuva bir sunucuysa, çağrı [CAsyncSocket::Listen](../mfc/reference/casyncsocket-class.md#listen) başlamak için bir istemciden bağlanma girişimleri noktasında dinler. Bir bağlantı isteği aldıktan sonra çağırarak kabul [CAsyncSocket::Accept](../mfc/reference/casyncsocket-class.md#accept).
+   Yuva bir sunucuysa, çağrı [CAsyncSocket::Listen](../mfc/reference/casyncsocket-class.md#listen) başlamak için bir istemciden bağlanma girişimleri noktasında dinler. Bir bağlantı isteği aldıktan sonra çağırarak kabul [CAsyncSocket::Accept](../mfc/reference/casyncsocket-class.md#accept).
 
     > [!NOTE]
     >  `Accept` Üye işlev yeni, boş bir başvuru alır `CSocket` parametre olarak nesne. Çağırmadan önce bu nesne oluşturmalıdır `Accept`. Bu yuva nesne kapsam dışına gider, bağlantıyı kapatır. Çağırmayın `Create` bu yeni bir yuva nesnesi.
@@ -67,13 +67,13 @@ Kullanarak bir `CSocket` nesnesi oluşturma ve birlikte birkaç MFC sınıf nesn
 
 1. Oluşturma bir [CArchive](../mfc/reference/carchive-class.md) yükleme (alma) veya (gönderen) verileri depolamak için nesne. Arşiv ilişkili olduğu `CSocketFile` nesne.
 
-     Aklınızda `CArchive` veri birimi yuvaları ile çalışmaz.
+   Aklınızda `CArchive` veri birimi yuvaları ile çalışmaz.
 
 1. Kullanım `CArchive` istemci ve sunucu Yuvalar arasında veri iletmek için nesne.
 
-     Aklınızda bir verilen `CArchive` nesneyi tek yönlü veri taşır: yükleme (alma) veya (gönderen) depolamak için. Bazı durumlarda, iki kullanacağınız `CArchive` nesneleri: bir bildirim almak için diğer veri göndermek için.
+   Aklınızda bir verilen `CArchive` nesneyi tek yönlü veri taşır: yükleme (alma) veya (gönderen) depolamak için. Bazı durumlarda, iki kullanacağınız `CArchive` nesneleri: bir bildirim almak için diğer veri göndermek için.
 
-     Bir bağlantı kabul eden ve Arşiv ayarını sonra parolalar doğrulama gibi görevler gerçekleştirebilirsiniz.
+   Bir bağlantı kabul eden ve Arşiv ayarını sonra parolalar doğrulama gibi görevler gerçekleştirebilirsiniz.
 
 1. Arşiv, yuva dosyasını ve yuva nesneler yok.
 

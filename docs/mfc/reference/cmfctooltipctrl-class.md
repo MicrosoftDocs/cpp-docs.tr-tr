@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81ff74e07308ec359375624a31f2cf196690443b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d3a704f4c683e774057265604ecd69cd03dfb657
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413165"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056951"
 ---
 # <a name="cmfctooltipctrl-class"></a>CMFCToolTipCtrl sınıfı
 
@@ -168,14 +168,13 @@ Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCToolTipCtrl`
 
 ##  <a name="cmfctooltipctrl"></a>  CMFCToolTipCtrl::CMFCToolTipCtrl
 
-
 ```
 CMFCToolTipCtrl(CMFCToolTipInfo* pParams = NULL);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pParams*
+[in] *pParams*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -231,7 +230,6 @@ Türetilen bir sınıfta araç ipucu kenarlığı görünümünü özelleştirme
 
 ##  <a name="ondrawdescription"></a>  CMFCToolTipCtrl::OnDrawDescription
 
-
 ```
 virtual CSize OnDrawDescription(
     CDC* pDC,
@@ -241,8 +239,9 @@ virtual CSize OnDrawDescription(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-[in] [in] *rect* [in] *bCalcOnly*
+[in] *pDC*<br/>
+[in] *dikdörtgen*<br/>
+[in] *bCalcOnly*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -387,7 +386,6 @@ Açıklama metnini ayırıcı altında araç ipucu görüntülenir.
 
 ##  <a name="setfixedwidth"></a>  CMFCToolTipCtrl::SetFixedWidth
 
-
 ```
 void SetFixedWidth(
     int nWidthRegular,
@@ -396,13 +394,12 @@ void SetFixedWidth(
 
 ### <a name="parameters"></a>Parametreler
 
-*nWidthRegular*<br/>
-[in] [in] *nWidthLargeImage*
+[in] *nWidthRegular*<br/>
+[in] *nWidthLargeImage*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="sethotribbonbutton"></a>  CMFCToolTipCtrl::SetHotRibbonButton
-
 
 ```
 void SetHotRibbonButton(CMFCRibbonButton* pRibbonButton);
@@ -410,12 +407,11 @@ void SetHotRibbonButton(CMFCRibbonButton* pRibbonButton);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pRibbonButton*
+[in] *pRibbonButton*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setlocation"></a>  CMFCToolTipCtrl::SetLocation
-
 
 ```
 void SetLocation(CPoint pt);
@@ -423,7 +419,7 @@ void SetLocation(CPoint pt);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pt*
+[in] *pt*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 

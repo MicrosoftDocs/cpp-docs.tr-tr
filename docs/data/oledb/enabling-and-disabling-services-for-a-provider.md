@@ -16,26 +16,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a5db612c836e4b902e7cad83017661246f4b649e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c9b255e715a635494e3acc34124871e90ceca8f7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079394"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055378"
 ---
 # <a name="enabling-and-disabling-services-for-a-provider"></a>Sağlayıcı için Etkinleştirme ve Devre Dışı Bırakma Hizmetleri
 
-OLE DB hizmetleri tek tek etkinleştirilebilir veya tek bir sağlayıcı erişen tüm uygulamalar için varsayılan olarak devre dışı. Bu SAĞLAYICININ altında bir OLEDB_SERVICES kayıt defteri girdisi ekleyerek yapılır bir `DWORD` etkinleştirme veya devre dışı, hizmetler aşağıdaki tabloda gösterildiği gibi belirten değer.  
-  
-|Varsayılan hizmetler etkin|Anahtar değeri|  
-|------------------------------|-------------------|  
-|Tüm hizmetler (varsayılan)|0xFFFFFFFF|  
-|Havuzu hariç ve AutoEnlistment|0xFFFFFFFE|  
-|Tüm istemci imleci hariç|0xfffffffb|  
-|Tümünü hariç, AutoEnlistment ve istemci imleci|0xfffffff0|  
-|Hizmet yok|0x00000000|  
-|Toplama yoktur, tüm hizmetleri devre dışı bırakıldı|\<Eksik anahtar >|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+OLE DB hizmetleri tek tek etkinleştirilebilir veya tek bir sağlayıcı erişen tüm uygulamalar için varsayılan olarak devre dışı. Bu SAĞLAYICININ altında bir OLEDB_SERVICES kayıt defteri girdisi ekleyerek yapılır bir `DWORD` etkinleştirme veya devre dışı, hizmetler aşağıdaki tabloda gösterildiği gibi belirten değer.
+
+|Varsayılan hizmetler etkin|Anahtar değeri|
+|------------------------------|-------------------|
+|Tüm hizmetler (varsayılan)|0xFFFFFFFF|
+|Havuzu hariç ve AutoEnlistment|0xFFFFFFFE|
+|Tüm istemci imleci hariç|0xfffffffb|
+|Tümünü hariç, AutoEnlistment ve istemci imleci|0xfffffff0|
+|Hizmet yok|0x00000000|
+|Toplama yoktur, tüm hizmetleri devre dışı bırakıldı|\<Eksik anahtar >|
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB Hizmetlerini Etkinleştirme ve Devre Dışı Bırakma](../../data/oledb/enabling-and-disabling-ole-db-services.md)

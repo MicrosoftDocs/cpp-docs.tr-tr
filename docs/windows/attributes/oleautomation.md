@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a3a0ec5a39d6e99e5ceb6ec4ed089373e3057c1e
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: ccc83dd6f51c3b7072b17d141f29e93c63688fa1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789840"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059538"
 ---
 # <a name="oleautomation"></a>oleautomation
 
@@ -58,4 +58,4 @@ Bir arabirim otomasyon ile uyumlu olduğunu gösterir.
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Arabirim Öznitelikleri](interface-attributes.md)  
+[Arabirim Öznitelikleri](interface-attributes.md)

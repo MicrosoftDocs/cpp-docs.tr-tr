@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94a250862f5514f290043bf596ba19bf0834e71e
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 4040f5a05f8c9bccfbf1c8b48a40188f684d48ad
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161664"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060019"
 ---
 # <a name="try-finally-statement"></a>try-finally Deyimi
 
@@ -44,7 +44,7 @@ ms.locfileid: "49161664"
 Aşağıdaki söz dizimini açıklar **try-finally** deyimi:
 
 ```cpp
-__try {
+__try {
    // guarded code
 }
 __finally {
@@ -73,7 +73,7 @@ Denetim ulaştığında bir **__try** deyimi tarafından basit sıralı yürütm
 
 1. Sonlandırma işleyicisi tamamlandığında sonra yürütülmesine devam **__finally** deyimi. Bağımsız olarak nasıl korunan bölüm sona erer (örneğin, aracılığıyla bir **Git** korumalı gövdenin dışında veya bir **dönüş** deyimi), sonlandırma işleyicisi yürütülür *önce* denetim akışı korumalı bölümün dışına gider.
 
-     A **__finally** deyimi uygun bir özel durum işleyicisi için arama engellemez.
+   A **__finally** deyimi uygun bir özel durum işleyicisi için arama engellemez.
 
 Bir özel durum oluşursa **__try** blok, işletim sistemi için özel bir işleyici bulmalıdır veya program başarısız olur. İşleyici, tüm bulunursa **__finally** blokları yürütülür ve yürütme işleyicisinde sürdürür.
 

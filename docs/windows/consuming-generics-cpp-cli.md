@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6bccfc4ab3e5df690c6fdb5ddb04c458756a4cd7
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 6388342e4ca8e8c524bfa57e58f4090fe64af8ab
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327758"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057190"
 ---
 # <a name="consuming-generics-ccli"></a>Genel Türleri Kullanma (C++/CLI)
 
@@ -71,9 +71,9 @@ public class CircularList<ItemType> {
          first =
          last.next = first.next;
       }
-      for ( ; iter != last ; iter = iter.next )  
+      for ( ; iter != last ; iter = iter.next )
          if (iter.next.m_item.Equals( item )) {
-              if (iter.next == last)  
+              if (iter.next == last)
                   last = iter;
               iter.next = iter.next.next;
               return;
@@ -110,7 +110,7 @@ int main() {
    CircularList<int>^ circ1 = gcnew CircularList<int>();
    CircularList<MgdClass^>^ circ2 = gcnew CircularList<MgdClass^>();
 
-   for (int i = 0 ; i < 100 ; i += 10)  
+   for (int i = 0 ; i < 100 ; i += 10)
       circ1->Add(i);
    circ1->Remove(50);
    circ1->PrintAll();

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd6a9bdc5539b2e6d4faf35c47b208ec0d83ea92
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c3fc66e5cc116ce97a9abead8eeb6607f7a36ef7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444189"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052687"
 ---
 # <a name="cd2drectu-class"></a>CD2DRectU sınıfı
 
@@ -75,7 +75,6 @@ CRect nesnesinden CD2DRectU bir nesne oluşturur.
 CD2DRectU(const CRect& rect);
 CD2DRectU(const D2D1_RECT_U& rect);
   CD2DRectU(const D2D1_RECT_U* rect);
-
 
 CD2DRectU(
     UINT32 uLeft = 0,

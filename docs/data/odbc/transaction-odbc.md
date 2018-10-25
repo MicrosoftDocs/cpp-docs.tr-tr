@@ -21,43 +21,43 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f142b4602ad1a9605987bc71e477e977902dccac
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ba77eb5289dcd2bd169b85fe9a595c231a86cf4c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090275"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056184"
 ---
 # <a name="transaction-odbc"></a>İşlem (ODBC)
 
-Bu konu MFC ODBC sınıflarına uygulanır.  
-  
-Bir işlem grubu ya da toplu işlem, güncelleştirmeleri bir dizi için bir yol olan bir [veri kaynağı](../../data/odbc/data-source-odbc.md) tümünü tek seferde kaydedilmiş veya işlem geri alma durumunda taahhüt yok. Bir işlem kullanmıyorsanız, otomatik olarak isteğe bağlı yürütme yerine değişiklikleri veri kaynağına kararlıyız.  
-  
+Bu konu MFC ODBC sınıflarına uygulanır.
+
+Bir işlem grubu ya da toplu işlem, güncelleştirmeleri bir dizi için bir yol olan bir [veri kaynağı](../../data/odbc/data-source-odbc.md) tümünü tek seferde kaydedilmiş veya işlem geri alma durumunda taahhüt yok. Bir işlem kullanmıyorsanız, otomatik olarak isteğe bağlı yürütme yerine değişiklikleri veri kaynağına kararlıyız.
+
 > [!NOTE]
->  Veritabanı tüm sürücülerin işlemleri destekler. Çağrı `CanTransact` üye işlevini, [CDatabase](../../mfc/reference/cdatabase-class.md) veya [CRecordset](../../mfc/reference/crecordset-class.md) sürücünüz işlemleri için belirli bir veritabanı destekleyip desteklemediğini belirlemek üzere nesne. Unutmayın `CanTransact` olup veri kaynağı tam işlem desteği sağlar söylemez. Ayrıca çağırmalıdır `CDatabase::GetCursorCommitBehavior` ve `CDatabase::GetCursorRollbackBehavior` sonra `CommitTrans` ve `Rollback` açık işlem etkisini denetlemek için `CRecordset` nesne.  
-  
-Çağrılar `AddNew` ve `Edit` üye işlevlerinin bir `CRecordset` çağırdığınızda hemen veri kaynağını etkileyen nesne `Update`. `Delete` aramalar da hemen etkili olur. Buna karşılık, birden çok çağrı oluşan bir işlem kullanabilirsiniz `AddNew`, `Edit`, `Update`, ve `Delete`, hangi gerçekleştirildi ancak siz çağrılana kadar tamamlanmayan `CommitTrans` açıkça. Bir işlem oluşturarak, geri alma özelliğini koruyarak bir dizi böyle çağrılar yürütebilir. Kritik bir kaynak kullanılamıyor veya başka bir koşul tüm işlemin tamamlanmasını engeller, işlem kabul etmek yerine geri alabilirsiniz. Bu durumda işleme ait değişikliklerin hiçbiri veri kaynağını etkilemez.  
-  
+>  Veritabanı tüm sürücülerin işlemleri destekler. Çağrı `CanTransact` üye işlevini, [CDatabase](../../mfc/reference/cdatabase-class.md) veya [CRecordset](../../mfc/reference/crecordset-class.md) sürücünüz işlemleri için belirli bir veritabanı destekleyip desteklemediğini belirlemek üzere nesne. Unutmayın `CanTransact` olup veri kaynağı tam işlem desteği sağlar söylemez. Ayrıca çağırmalıdır `CDatabase::GetCursorCommitBehavior` ve `CDatabase::GetCursorRollbackBehavior` sonra `CommitTrans` ve `Rollback` açık işlem etkisini denetlemek için `CRecordset` nesne.
+
+Çağrılar `AddNew` ve `Edit` üye işlevlerinin bir `CRecordset` çağırdığınızda hemen veri kaynağını etkileyen nesne `Update`. `Delete` aramalar da hemen etkili olur. Buna karşılık, birden çok çağrı oluşan bir işlem kullanabilirsiniz `AddNew`, `Edit`, `Update`, ve `Delete`, hangi gerçekleştirildi ancak siz çağrılana kadar tamamlanmayan `CommitTrans` açıkça. Bir işlem oluşturarak, geri alma özelliğini koruyarak bir dizi böyle çağrılar yürütebilir. Kritik bir kaynak kullanılamıyor veya başka bir koşul tüm işlemin tamamlanmasını engeller, işlem kabul etmek yerine geri alabilirsiniz. Bu durumda işleme ait değişikliklerin hiçbiri veri kaynağını etkilemez.
+
 > [!NOTE]
->  Şu anda, sınıf `CRecordset` toplu satır getirme uyguladıysanız güncelleştirmeleri veri kaynağına desteklemez. Bu çağrılar yapılamıyor anlamına gelir `AddNew`, `Edit`, `Delete`, veya `Update`. Ancak, güncelleştirmeler gerçekleştirin ve ardından belirli bir işlem içinde bu işlevleri çağırmak için kendi işlevler yazabilirsiniz. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
-  
+>  Şu anda, sınıf `CRecordset` toplu satır getirme uyguladıysanız güncelleştirmeleri veri kaynağına desteklemez. Bu çağrılar yapılamıyor anlamına gelir `AddNew`, `Edit`, `Delete`, veya `Update`. Ancak, güncelleştirmeler gerçekleştirin ve ardından belirli bir işlem içinde bu işlevleri çağırmak için kendi işlevler yazabilirsiniz. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+
 > [!NOTE]
->  Kümenizin etkileyen yanı sıra işlemler ODBC kullandığınız sürece, doğrudan yürütme SQL deyimleri etkiler **HDBC** ilişkili, `CDatabase` nesnesi veya bir ODBC **HSTMT** göre **HDBC**.  
-  
-İşlemler aynı anda güncelleştirilmelidir birden fazla kayıt varsa özellikle yararlıdır. Bu durumda, bir yarı tamamlanmış işlem yapılan son güncelleştirmeden önce bir özel durum oluştu, gibi gerçekleşebilir engellemek istiyorsanız. Bu güncelleştirmeler bir işlem olarak gruplandırmak değişikliklere karşı bir kurtarma (Geri Al) sağlar ve işlem öncesi durumuna kayıtları döndürür. Örneğin, bir banka hesap B bir hesaptan para aktarırsa, hem mevcut Fonu doğru şekilde işlemek için bir ve havale hesabından b başarılı olması gerekir veya tüm işlemin başarısız olması.  
-  
-Veritabanı sınıfları gerçekleştirdiğiniz işlemleri aracılığıyla `CDatabase` nesneleri. A `CDatabase` nesne veri kaynağı bağlantısı temsil eder ve bir veya daha fazla kayıt kümeleri ile ilişkili `CDatabase` nesne üzerindeki veritabanı kümesi üye işlevleri aracılığıyla tablolarda çalışır.  
-  
+>  Kümenizin etkileyen yanı sıra işlemler ODBC kullandığınız sürece, doğrudan yürütme SQL deyimleri etkiler **HDBC** ilişkili, `CDatabase` nesnesi veya bir ODBC **HSTMT** göre **HDBC**.
+
+İşlemler aynı anda güncelleştirilmelidir birden fazla kayıt varsa özellikle yararlıdır. Bu durumda, bir yarı tamamlanmış işlem yapılan son güncelleştirmeden önce bir özel durum oluştu, gibi gerçekleşebilir engellemek istiyorsanız. Bu güncelleştirmeler bir işlem olarak gruplandırmak değişikliklere karşı bir kurtarma (Geri Al) sağlar ve işlem öncesi durumuna kayıtları döndürür. Örneğin, bir banka hesap B bir hesaptan para aktarırsa, hem mevcut Fonu doğru şekilde işlemek için bir ve havale hesabından b başarılı olması gerekir veya tüm işlemin başarısız olması.
+
+Veritabanı sınıfları gerçekleştirdiğiniz işlemleri aracılığıyla `CDatabase` nesneleri. A `CDatabase` nesne veri kaynağı bağlantısı temsil eder ve bir veya daha fazla kayıt kümeleri ile ilişkili `CDatabase` nesne üzerindeki veritabanı kümesi üye işlevleri aracılığıyla tablolarda çalışır.
+
 > [!NOTE]
->  Tek düzey işlemleri desteklenir. İşlemleri iç içe ya da bir işlem birden çok veritabanı nesne kapsayabilir.  
-  
-Aşağıdaki konular, işlemlerin nasıl gerçekleştirileceği hakkında daha fazla bilgi sağlar:  
-  
-- [İşlem: Kayıt Kümesinde İşlem Gerçekleştirme (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)  
-  
-- [İşlem: İşlemlerin Güncelleştirmeleri Etkilemesi (ODBC)](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+>  Tek düzey işlemleri desteklenir. İşlemleri iç içe ya da bir işlem birden çok veritabanı nesne kapsayabilir.
+
+Aşağıdaki konular, işlemlerin nasıl gerçekleştirileceği hakkında daha fazla bilgi sağlar:
+
+- [İşlem: Kayıt Kümesinde İşlem Gerçekleştirme (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)
+
+- [İşlem: İşlemlerin Güncelleştirmeleri Etkilemesi (ODBC)](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

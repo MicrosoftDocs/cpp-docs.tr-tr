@@ -17,18 +17,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f32ff38008e55e656bf8901541ffc5ec7246bed
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2d33c2a3de5b94f522833db67dfb190ede3a8a63
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085998"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054965"
 ---
 # <a name="atl-global-variables"></a>ATL genel değişkenler
 
 ## <a name="patlmodule"></a>_pAtlModule
 
-Geçerli modül için bir işaretçi depolama genel değişkeni.  
+Geçerli modül için bir işaretçi depolama genel değişkeni.
 
 ```cpp
 __declspec(selectany) CAtlModule * _pAtlModule

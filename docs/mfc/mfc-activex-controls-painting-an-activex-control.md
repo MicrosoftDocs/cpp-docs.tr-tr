@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b14f562bd93bf023d540bf362dd2f9a881c2e441
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3b33097c6f6f747d99cf582c1553e25942f1bfcd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436799"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056015"
 ---
 # <a name="mfc-activex-controls-painting-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Boyama
 
@@ -112,11 +112,11 @@ Denetimin meta dosyası işleme uyguladıysanız sonra Test kapsayıcı meta dos
 
 1. İçinde **yeni denetimi Ekle** kutusunda, istediğiniz denetimi seçin ve tıklayın **Tamam**.
 
-     Denetim Test kapsayıcısında görünür.
+   Denetim Test kapsayıcısında görünür.
 
 1. Üzerinde **denetimi** menüsünde tıklatın **çizmek meta**.
 
-     Meta dosyası görüntülendiği ayrı bir pencerede görüntülenir. Ölçeklendirme denetimin meta nasıl etkilediğini görmek için bu pencere boyutunu değiştirebilirsiniz. Herhangi bir zamanda bu pencereyi kapatabilirsiniz.
+   Meta dosyası görüntülendiği ayrı bir pencerede görüntülenir. Ölçeklendirme denetimin meta nasıl etkilediğini görmek için bu pencere boyutunu değiştirebilirsiniz. Herhangi bir zamanda bu pencereyi kapatabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

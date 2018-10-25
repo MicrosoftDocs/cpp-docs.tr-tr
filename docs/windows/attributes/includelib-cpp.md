@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6be5bb96f819bf1f1b0ba90d345a3c2d312daeea
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 96d4ecff09cf00b5221fd0c9c80b4584b203a781
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48790026"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059658"
 ---
 # <a name="includelib-c"></a>includelib (C++)
 
@@ -73,5 +73,5 @@ Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#conte
 [Tek Başına Öznitelikler](stand-alone-attributes.md)<br/>
 [import](import.md)<br/>
 [importidl](importidl.md)<br/>
-[İçerir](include-cpp.md)<br/>
-[importlib](importlib.md)  
+[include](include-cpp.md)<br/>
+[importlib](importlib.md)

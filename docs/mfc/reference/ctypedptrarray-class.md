@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a83e425863afe4a8f355c4ce4543935c4e910216
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8f8cb8da3eaae08eeb694deaad6c3f4f6a71e7dc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408020"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054994"
 ---
 # <a name="ctypedptrarray-class"></a>CTypedPtrArray sınıfı
 
@@ -230,7 +230,6 @@ void InsertAt(
     INT_PTR nIndex,
     TYPE newElement,
     INT_PTR nCount = 1);
-
 
 void InsertAt(
     INT_PTR nStartIndex,

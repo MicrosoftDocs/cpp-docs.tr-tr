@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50db1a8370a43b8b0c43c7c228c7b3acf9dd2c8a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 04a4c2005dc0a7e0e052002198bebb7c78267843
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082891"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059965"
 ---
 # <a name="scanf-type-field-characters"></a>scanf Türü Alan Karakterleri
 
@@ -54,7 +54,6 @@ Aşağıdaki bilgiler herhangi biri geçerlidir `scanf` işlevlerin güvenli sü
 |`n`|Herhangi bir giriş akışı veya arabellek okuyun.|İşaretçi `int`, depolanan rakam veya karakter sayısını başarıyla olduğu içine akıştan okunan veya arabellek geçerli çağrıda o noktaya kadar `scanf` işlevleri veya `wscanf` işlevleri.|Hayır.|
 |`s`|Dize, ilk boşluk karakteri (boşluk, sekme veya yeni satır) kadar. Boşluk karakterleri tarafından ayrılmış olmayan dizeler okumak için köşeli ayraçların kullanın (`[ ]`) bölümünde açıklandığı gibi [scanf genişlik belirtimi](../c-runtime-library/scanf-width-specification.md).|İle kullanıldığında `scanf` İşlevler, tek baytlı karakter dizisi; ile kullanıldığında gösterir `wscanf` İşlevler, geniş karakter dizisi olduğunu belirtir. Her iki durumda da, karakter dizisinin giriş alanı yanı sıra otomatik olarak eklenir sondaki boş karakter için yeterince büyük olması gerekir.|Gerekli. Boyut, null sonlandırıcıyı ortasının içerir.|
 |`S`|Bunun tersi boyutu ilk boşluk karakteri (boşluk, sekme veya yeni satır) en fazla karakter dizesi. Boşluk karakterleri tarafından ayrılmış olmayan dizeler okumak için köşeli ayraçların kullanın (`[ ]`) bölümünde açıklandığı gibi [scanf genişlik belirtimi](../c-runtime-library/scanf-width-specification.md).|İle kullanıldığında `scanf` İşlevler, geniş karakter dizisi; ile kullanıldığında gösterir `wscanf` İşlevler, tek baytlı karakter dizisi olduğunu belirtir. Her iki durumda da, karakter dizisinin giriş alanı yanı sıra otomatik olarak eklenir sondaki boş karakter için yeterince büyük olması gerekir.|Gerekli. Boyut, null sonlandırıcıyı ortasının içerir.|
-
 
 Boyut bağımsız değişkenleri gerektiriyorsa, uygulandıkları bağımsız değişkeni takip parametre listesinde geçirilmelidir. Örneğin, aşağıdaki kodu:
 

@@ -59,12 +59,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe5f3234738a16b4c072b667982d36032e30f7dd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0595b98d26b401a93545b96a719a7c0af3440fea
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107123"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054197"
 ---
 # <a name="ioleobjectimpl-class"></a>Ioleobjectımpl sınıfı
 
@@ -400,7 +400,7 @@ Bkz: [IOleObject::GetClientSite](/windows/desktop/api/oleidl/nf-oleidl-ioleobjec
 Panodan veri alır.
 
 ```
-STDMETHOD(GetClipboardData)(    
+STDMETHOD(GetClipboardData)(
     DWORD /* dwReserved */,
     IDataObject** /* ppDataObject */);
 ```

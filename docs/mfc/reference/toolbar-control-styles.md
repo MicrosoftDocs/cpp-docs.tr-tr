@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe31acea49dddf6a1cf76c01de789ccfc8583e04
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 882111e400b613c830bb45cafd03ace99c09a0c2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386541"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054950"
 ---
 # <a name="toolbar-control-styles"></a>ToolBar Denetim Stilleri
 
@@ -67,5 +67,4 @@ Görsel yöneticiyi düğmelerin her durumda görünümünü belirler. Bkz: [ser
 [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)<br/>
 [CMFCToolBarButton Sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
 [Seri Hale Getirme Yöneticisi](../../mfc/visualization-manager.md)
-
 

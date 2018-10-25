@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5b025e29c93cffe9c600646a2475f7e3230fd03
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a654f820d3c1dcdaa49ed8b3b3203d2c271b6880
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039549"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055495"
 ---
 # <a name="connection-point-macros"></a>Bağlantı noktası makroları
 
@@ -33,7 +33,7 @@ Bu makrolar, bağlantı noktası eşlemeleri ve girişleri tanımlayın.
 |[BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map)|Bağlantı noktası eşleme girişleri başlangıcını işaretler.|
 |[CONNECTION_POINT_ENTRY](#connection_point_entry)|Bağlantı noktaları eşlemeye girer.|
 |[CONNECTION_POINT_ENTRY_P](#connection_point_entry)| (Visual Studio 2017) CONNECTION_POINT_ENTRY benzer, ancak IID için bir işaretçi alır.|
-|[END_CONNECTION_POINT_MAP](#end_connection_point_map)|Bağlantı noktası eşleme girişleri sonunu işaretler.|  
+|[END_CONNECTION_POINT_MAP](#end_connection_point_map)|Bağlantı noktası eşleme girişleri sonunu işaretler.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -74,7 +74,7 @@ CONNECTION_POINT_ENTRY_P(piid) // (Visual Studio 2017)
 ### <a name="parameters"></a>Parametreler
 
 *IID*<br/>
-[in] Bağlantı noktası eşlemeye eklenen arabiriminin GUID'si. 
+[in] Bağlantı noktası eşlemeye eklenen arabiriminin GUID'si.
 
 *piid*<br/>
 [in] GUID adde olan arabirimi işaretçi.

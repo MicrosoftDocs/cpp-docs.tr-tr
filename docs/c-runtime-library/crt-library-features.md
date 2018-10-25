@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a0864c87b33937fe18c3e4c3083e63bde23ac06
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7562f6e5a8915f33b3f2c8bd23ce310e641984c6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092252"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057055"
 ---
 # <a name="crt-library-features"></a>CRT Kitaplık Özellikleri
 
@@ -123,7 +123,6 @@ Bu sorunların çoğu, kararlı ve sürümlenebilir olacak şekilde tasarlandı�
 Tüm görüntüleri işleminizin CRT aynı dinamik olarak yüklenen sürümünü kullanıyorsanız bu sorunlardan kaçınmak mümkündür. Tüm bileşenlerin aynı CRT DLL sürümünü kullandığınızdan emin olmak için bunları kullanarak yapı **/MD** seçenek ve aynı derleyici araç takımı ve özellik ayarlarını kullanın.
 
 Bazı CRT kaynakları (örneğin, dosya tanıtıcıları, yerel ve ortam değişkenlerini) DLL sınırlarından CRT aynı sürümünü kullanırken bile, programınızın başarılı olursa, bazı bakım gereklidir. İlgili sorunlar hakkında daha fazla bilgi ve bunların nasıl çözüleceğine bakın [olası hataları geçirme CRT nesnelerini DLL sınırlar boyunca](../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md).
-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

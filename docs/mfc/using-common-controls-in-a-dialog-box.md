@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8d3db1d8c19b68adb8cec53984e0dfe5a189651
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7ff5c3f28a47eb4e1810f046a242f6170c537bf2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389875"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054942"
 ---
 # <a name="using-common-controls-in-a-dialog-box"></a>İletişim Kutusunda Ortak Denetimleri Kullanma
 
@@ -42,7 +42,7 @@ Windows ortak denetimleri kullanılabilir [iletişim kutuları](../mfc/dialog-bo
 
 1. İçinde [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) iletişim sınıfınızı için ortak denetimi için ilk koşulları ayarlayın. Üye işlevleri, önceki adımda oluşturulan üye değişkeni kullanarak, ilk değer ve diğer ayarları ayarlamak için kullanın. Denetimleri ayrıntıları için aşağıdaki açıklamaları ayarlarına bakın.
 
-     Ayrıca [iletişim kutusu veri değişimi](../mfc/dialog-data-exchange-and-validation.md) (DDX) iletişim kutusunda denetimleri başlatılamadı.
+   Ayrıca [iletişim kutusu veri değişimi](../mfc/dialog-data-exchange-and-validation.md) (DDX) iletişim kutusunda denetimleri başlatılamadı.
 
 1. İletişim kutusundaki denetimler için işleyiciler içinde üye değişkeni, denetimi işlemek için kullanın. Ayrıntılar için denetimleri aşağıdaki açıklamaları yöntemlerde bakın.
 

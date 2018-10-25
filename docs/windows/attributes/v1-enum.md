@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f5cb71c2fcdaf60f19ca381b28213dc0c48971f6
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: c1deb68164cdcbd93b6c4992f1c2a19b01095d57
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789579"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50058421"
 ---
 # <a name="v1enum"></a>v1_enum
 
@@ -69,4 +69,4 @@ enum eList {
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)  
+[Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)

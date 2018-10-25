@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: eeeb02393e96e7afd2deed875465f6797d145b6e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2e61a69661034fb582039c744c3483f461405581
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399827"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056977"
 ---
 # <a name="how-to-create-the-user-control-and-host-mdi-view"></a>Nasıl yapılır: Kullanıcı Denetim ve Konak MDI Görünümü Oluşturma
 
@@ -38,23 +38,23 @@ Bu yordamı, öğesindeki yordama göre WindowsFormsControlLibrary1 adında bir 
 
 1. MFC Uygulama projesi oluşturun.
 
-     Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**. İçinde **Visual C++** klasörüne **MFC uygulaması**.
+   Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**. İçinde **Visual C++** klasörüne **MFC uygulaması**.
 
-     İçinde **adı** kutusuna `MFC02` değiştirip **çözüm** ayarını **eklemek için çözüm**. **Tamam**'ı tıklatın.
+   İçinde **adı** kutusuna `MFC02` değiştirip **çözüm** ayarını **eklemek için çözüm**. **Tamam**'ı tıklatın.
 
-     İçinde **MFC Uygulama Sihirbazı**tüm Varsayılanları kabul edin ve ardından **son**. Bu, bir Çoklu Belge Arabirimiyle beraber bir MFC uygulaması oluşturur.
+   İçinde **MFC Uygulama Sihirbazı**tüm Varsayılanları kabul edin ve ardından **son**. Bu, bir Çoklu Belge Arabirimiyle beraber bir MFC uygulaması oluşturur.
 
 1. Projeyi ortak dil çalışma zamanı (CLR) desteği için yapılandırın.
 
-     İçinde **Çözüm Gezgini**, sağ `MFC01` proje düğümünü ve seçin **özellikleri** bağlam menüsünden. **Özellik sayfaları** iletişim kutusu görüntülenir.
+   İçinde **Çözüm Gezgini**, sağ `MFC01` proje düğümünü ve seçin **özellikleri** bağlam menüsünden. **Özellik sayfaları** iletişim kutusu görüntülenir.
 
-     Altında **yapılandırma özellikleri**seçin **genel**. Altında **Proje Varsayılanları** bölümünde, **ortak dil çalışma zamanı desteği** için **ortak dil çalışma zamanı desteği (/ clr)**.
+   Altında **yapılandırma özellikleri**seçin **genel**. Altında **Proje Varsayılanları** bölümünde, **ortak dil çalışma zamanı desteği** için **ortak dil çalışma zamanı desteği (/ clr)**.
 
-     Altında **yapılandırma özellikleri**, genişletme **C/C++** tıklatıp **genel** düğümü. Ayarlama **hata ayıklama bilgileri biçimi** için **Program veritabanı (/Zi)**.
+   Altında **yapılandırma özellikleri**, genişletme **C/C++** tıklatıp **genel** düğümü. Ayarlama **hata ayıklama bilgileri biçimi** için **Program veritabanı (/Zi)**.
 
-     Tıklayın **kod oluşturma** düğümü. Ayarlama **en az yeniden derlemeyi etkinleştir** için **Hayır (/ Gm-)**. Ayrıca **temel çalışma zamanı denetimleri** için **varsayılan**.
+   Tıklayın **kod oluşturma** düğümü. Ayarlama **en az yeniden derlemeyi etkinleştir** için **Hayır (/ Gm-)**. Ayrıca **temel çalışma zamanı denetimleri** için **varsayılan**.
 
-     Tıklayın **Tamam** yaptığınız değişiklikleri uygulamak için.
+   Tıklayın **Tamam** yaptığınız değişiklikleri uygulamak için.
 
 1. Stdafx.h içinde şu satırı ekleyin:
 
@@ -64,7 +64,7 @@ Bu yordamı, öğesindeki yordama göre WindowsFormsControlLibrary1 adında bir 
 
 1. .NET denetimine bir başvuru ekleyin.
 
-     İçinde **Çözüm Gezgini**, sağ `MFC02` proje düğümünü seçip alt **Ekle**, **başvuruları**. İçinde **özellik sayfası**, tıklayın **Yeni Başvuru Ekle**, WindowsFormsControlLibrary1'ı seçin (altında **projeleri** sekmesinde), tıklatıp **Tamam** . Bu biçimde bir başvuru ekler bir [/FU](../build/reference/fu-name-forced-hash-using-file.md) derleyici seçeneği, böylece programın derleyeceği; ayrıca Windowscontrollibrary1.dll öğesini kopyalar `MFC02` proje dizinine, böylece program çalışacaktır.
+   İçinde **Çözüm Gezgini**, sağ `MFC02` proje düğümünü seçip alt **Ekle**, **başvuruları**. İçinde **özellik sayfası**, tıklayın **Yeni Başvuru Ekle**, WindowsFormsControlLibrary1'ı seçin (altında **projeleri** sekmesinde), tıklatıp **Tamam** . Bu biçimde bir başvuru ekler bir [/FU](../build/reference/fu-name-forced-hash-using-file.md) derleyici seçeneği, böylece programın derleyeceği; ayrıca Windowscontrollibrary1.dll öğesini kopyalar `MFC02` proje dizinine, böylece program çalışacaktır.
 
 1. Stdafx.h içinde şu satırı bulun:
 
@@ -72,7 +72,7 @@ Bu yordamı, öğesindeki yordama göre WindowsFormsControlLibrary1 adında bir 
     #endif // _AFX_NO_AFXCMN_SUPPORT
     ```
 
-     Üstüne şu satırları ekleyin:
+   Üstüne şu satırları ekleyin:
 
     ```
     #include <afxwinforms.h>   // MFC Windows Forms support
@@ -80,7 +80,7 @@ Bu yordamı, öğesindeki yordama göre WindowsFormsControlLibrary1 adında bir 
 
 1. Görünüm sınıfını öğesinden devralacak şekilde değiştirin [CWinFormsView](../mfc/reference/cwinformsview-class.md).
 
-     MFC02View.h içinde değiştirin [CView](../mfc/reference/cview-class.md) ile [CWinFormsView](../mfc/reference/cwinformsview-class.md) böylece kod aşağıdaki gibi görünür:
+   MFC02View.h içinde değiştirin [CView](../mfc/reference/cview-class.md) ile [CWinFormsView](../mfc/reference/cwinformsview-class.md) böylece kod aşağıdaki gibi görünür:
 
     ```
     class CMFC02View : public CWinFormsView
@@ -88,7 +88,7 @@ Bu yordamı, öğesindeki yordama göre WindowsFormsControlLibrary1 adında bir 
     };
     ```
 
-     MDI uygulamanıza ek görünümler eklemek istiyorsanız, çağırması gerekir [CWinApp::AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate) için oluşturduğunuz her görünüm.
+   MDI uygulamanıza ek görünümler eklemek istiyorsanız, çağırması gerekir [CWinApp::AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate) için oluşturduğunuz her görünüm.
 
 1. MFC02View.cpp dosyasında CView IMPLEMENT_DYNCREATE makrosu ve ileti Haritası içerisindeki CWinFormsView olarak değiştirin ve var olan boş oluşturucuyu aşağıda gösterilen oluşturucuyla değiştirin değiştirin:
 
@@ -105,11 +105,11 @@ Bu yordamı, öğesindeki yordama göre WindowsFormsControlLibrary1 adında bir 
 
 1. Derleme ve projeyi çalıştırın.
 
-     İçinde **Çözüm Gezgini**, MFC02 sağ tıklayıp **başlangıç projesi olarak ayarla**.
+   İçinde **Çözüm Gezgini**, MFC02 sağ tıklayıp **başlangıç projesi olarak ayarla**.
 
-     Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
+   Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
 
-     Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**.
+   Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

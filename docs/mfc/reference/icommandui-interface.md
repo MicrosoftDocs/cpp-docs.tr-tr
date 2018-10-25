@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ec76a554068dbec050078a0e0558cecd583410c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cd9ea4397c655f0ebb28d10febe82581d6ad8771
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429219"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055014"
 ---
 # <a name="icommandui-interface"></a>Icommanduı arabirimi
 
@@ -73,6 +73,7 @@ Bu komut için kullanıcı arabirimi öğesi için uygun onay durumunu ayarlar.
 ```
 property UICheckState Check;
 ```
+
 ## <a name="remarks"></a>Açıklamalar
 
 Bu özellik, bu komut için kullanıcı arabirimi öğesi uygun onay durumuna ayarlar. Onay için aşağıdaki değerleri ayarlayın:
@@ -86,6 +87,7 @@ Aşağı zinciri işleyicileri geçerli ileti yönlendirme devam etmek için kom
 ```
 void ContinueRouting();
 ```
+
 ## <a name="remarks"></a>Açıklamalar
 
 FALSE döndüren bir ON_COMMAND_EX işleyicisi ile birlikte kullanılması gereken bir Gelişmiş üye işlev budur. Daha fazla bilgi için bkz. Teknik Not TN006: ileti eşlemeleri.
@@ -96,6 +98,7 @@ Sağlar veya bu komut için kullanıcı arabirimi öğesi devre dışı bırakı
 ```
 property bool Enabled;
 ```
+
 ## <a name="remarks"></a>Açıklamalar
 
 Bu özelliği etkinleştirir veya bu komut için kullanıcı arabirimi öğesi devre dışı bırakır. Etkin olarak etkinleştirmek için true öğe devre dışı bırakmak için FALSE olarak ayarlayın.
@@ -106,6 +109,7 @@ Icommanduı nesnesiyle temsil edilen kullanıcı arabirimi nesnesi Kimliğini al
 ```
 property unsigned int ID;
 ```
+
 ## <a name="remarks"></a>Açıklamalar
 
 Bu özellik, ' % s'kimliği (tanıtıcısı) menü öğesi, araç çubuğu düğmesini veya Icommanduı nesnesiyle temsil edilen diğer kullanıcı arabirimi nesnesi alır.
@@ -116,6 +120,7 @@ Icommanduı nesnesiyle temsil edilen kullanıcı arabirimi nesnesi dizinini alı
 ```
 property unsigned int Index;
 ```
+
 ## <a name="remarks"></a>Açıklamalar
 
 Bu özellik, ' % s'dizini (bir tanıtıcı) menü öğesi, araç çubuğu düğmesini veya Icommanduı nesnesiyle temsil edilen diğer kullanıcı arabirimi nesnesi alır.
@@ -126,6 +131,7 @@ Bu komut için kullanıcı arabirimi öğesi için uygun onay durumunu ayarlar.
 ```
 property bool Radio;
 ```
+
 ## <a name="remarks"></a>Açıklamalar
 
 Bu özellik, bu komut için kullanıcı arabirimi öğesi uygun onay durumuna ayarlar. Radyo öğesi etkinleştirilecekse ayarlayın. Aksi durumda FALSE.
@@ -136,6 +142,7 @@ Bu komut için kullanıcı arabirimi öğesinin metin ayarlar.
 ```
 property String^ Text;
 ```
+
 ## <a name="remarks"></a>Açıklamalar
 
 Bu özellik, bu komut için kullanıcı arabirimi öğesinin metin ayarlar. Metni için metin dizesi tanıtıcı ayarlayın.

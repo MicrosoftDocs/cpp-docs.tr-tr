@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d86749cc8481f2472ed2ebe29dd535e05dcb2e2
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 12070bd690cc2b6228ae5f86e69d9d698bd28348
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48236029"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056925"
 ---
 # <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>İzlenecek yol: MFC Kullanarak Şerit Uygulaması Oluşturma
 
@@ -38,7 +38,7 @@ Bu izlenecek yol, Visual Studio'yu kullanın belirlediğinizi varsayar **genel g
 
 1. Aşağıdaki seçenekler kümesinde **MFC Uygulama Sihirbazı**:
 
-    1. İçinde **uygulama türü** bölümündeki **görsel stil ve renkler**seçin **Office 2007 (mavi tema)**. 
+    1. İçinde **uygulama türü** bölümündeki **görsel stil ve renkler**seçin **Office 2007 (mavi tema)**.
 
     1. İçinde **bileşik belge desteği** bölümünde, emin **hiçbiri** seçilir.
 
@@ -46,7 +46,7 @@ Bu izlenecek yol, Visual Studio'yu kullanın belirlediğinizi varsayar **genel g
 
     1. İçinde **veritabanı desteği** bölümünde, emin **hiçbiri** seçilir.
 
-    1. İçinde **kullanıcı arabirimi özellikleri** bölümünde, emin **bir Şerit** seçilir. 
+    1. İçinde **kullanıcı arabirimi özellikleri** bölümünde, emin **bir Şerit** seçilir.
 
     1. Varsayılan olarak, **MFC Uygulama Sihirbazı** birkaç takma bölme için destek ekler. Bu kılavuz sadece şerit hakkında bilgi verdiğinden bu seçenekleri uygulamadan kaldırabilirsiniz. İçinde **Gelişmiş Özellikler** bölümünde, tüm seçenekleri temizleyin.
 

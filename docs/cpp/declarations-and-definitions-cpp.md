@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f2155fef0f9287273b3c45e9318665acfdae527
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2c0ebbc2686c229d7818042672cdb1d6d2143f81
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070645"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50058082"
 ---
 # <a name="declarations-and-definitions-c"></a>Bildirimler ve Tanımlar (C++)
 
@@ -35,7 +35,7 @@ Bir bildirimi, bir programa bir veya daha çok sunar. Bildirimleri bir programda
 
 1. Bir sınıf bildirimi içinde statik veri üyesi değil.
 
-     Statik sınıf veri üyeleri ayrık sınıfın tüm nesneleri tarafından paylaşılan değişkenleri olduğundan, bunlar gerekir tanımlanabilir ve sınıf bildirimi dışında başlatıldı. (Sınıflar ve sınıf üyeleri hakkında daha fazla bilgi için bkz: [sınıfları](../cpp/classes-and-structs-cpp.md).)
+   Statik sınıf veri üyeleri ayrık sınıfın tüm nesneleri tarafından paylaşılan değişkenleri olduğundan, bunlar gerekir tanımlanabilir ve sınıf bildirimi dışında başlatıldı. (Sınıflar ve sınıf üyeleri hakkında daha fazla bilgi için bkz: [sınıfları](../cpp/classes-and-structs-cpp.md).)
 
 1. Aşağıdaki tanım, sınıf adı bildirimiyle olduğu gibi `class T;`.
 

@@ -47,12 +47,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ce6099b904c088399dcb43635a1b254567e8320
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fbfd58491981cdba1b3aa3002736f49a7c09038c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024924"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054482"
 ---
 # <a name="message-map-macros-atl"></a>İleti eşleme makroları (ATL)
 
@@ -93,11 +93,11 @@ ms.locfileid: "46024924"
 |[REFLECTED_NOTIFY_HANDLER](#reflected_notify_handler)|Yansıtılan bir wm_notıfy iletisi bildirimi kodunu ve denetim tanımlayıcısı dayalı bir işleyici işlevi eşlenir.|
 |[REFLECTED_NOTIFY_ID_HANDLER](#reflected_notify_id_handler)|Yansıtılan bir wm_notıfy iletisi denetim tanımlayıcısına göre bir işleyici işlevi eşlenir.|
 |[REFLECTED_NOTIFY_RANGE_CODE_HANDLER](#reflected_notify_range_code_handler)|Yansıtılan bir wm_notıfy iletisi bildirimi kodunu ve bir aralıkta denetimi tanımlayıcıları temel alan bir işleyici işlevi eşlenir.|
-|[REFLECTED_NOTIFY_RANGE_HANDLER](#reflected_notify_range_handler)|Yansıtılan bir wm_notıfy iletisi denetim tanımlayıcıların bitişik bir aralığı tabanlı bir işleyici işlevi eşlenir.|  
+|[REFLECTED_NOTIFY_RANGE_HANDLER](#reflected_notify_range_handler)|Yansıtılan bir wm_notıfy iletisi denetim tanımlayıcıların bitişik bir aralığı tabanlı bir işleyici işlevi eşlenir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h  
+**Başlık:** atlwin.h
 
 ##  <a name="alt_msg_map"></a>  ALT_MSG_MAP
 
@@ -136,7 +136,7 @@ Sonraki örnek, iki farklı ileti eşlemeleri gösterir. Varsayılan ileti eşle
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h   
+**Başlık:** atlwin.h
 
 ##  <a name="begin_msg_map"></a>  BEGIN_MSG_MAP
 
@@ -153,7 +153,7 @@ BEGIN_MSG_MAP(theClass)
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CWindowImpl::WindowProc](cwindowimpl-class.md#windowproc) penceresine gönderilen iletileri işlemek için varsayılan ileti eşlemesi kullanır. İleti eşlemesi uygun işleyici işlevine veya başka bir ileti haritasına iletileri yönlendirir.  
+[CWindowImpl::WindowProc](cwindowimpl-class.md#windowproc) penceresine gönderilen iletileri işlemek için varsayılan ileti eşlemesi kullanır. İleti eşlemesi uygun işleyici işlevine veya başka bir ileti haritasına iletileri yönlendirir.
 
 Aşağıdaki makro bir işleyici işlevine bir ileti eşleyin. Bu işlev tanımlanmalıdır *sınıfın*.
 
@@ -328,7 +328,7 @@ CHAIN_MSG_MAP_DYNAMIC(dynaChainID)
 
 ### <a name="remarks"></a>Açıklamalar
 
-CHAIN_MSG_MAP_DYNAMIC çalışma zamanında, başka bir nesneye varsayılan ileti haritasına iletileri yönlendirir. Nesne ve onun ileti eşlemesi ile ilişkili *dynaChainID*, aracılığıyla tanımladığınız [CDynamicChain::SetChainEntry](cdynamicchain-class.md#setchainentry). Sizin sınıfınızdan türetilmelidir `CDynamicChain` CHAIN_MSG_MAP_DYNAMIC kullanmak için. Bir örnek için bkz. [CDynamicChain](../../atl/reference/cdynamicchain-class.md) genel bakış.  
+CHAIN_MSG_MAP_DYNAMIC çalışma zamanında, başka bir nesneye varsayılan ileti haritasına iletileri yönlendirir. Nesne ve onun ileti eşlemesi ile ilişkili *dynaChainID*, aracılığıyla tanımladığınız [CDynamicChain::SetChainEntry](cdynamicchain-class.md#setchainentry). Sizin sınıfınızdan türetilmelidir `CDynamicChain` CHAIN_MSG_MAP_DYNAMIC kullanmak için. Bir örnek için bkz. [CDynamicChain](../../atl/reference/cdynamicchain-class.md) genel bakış.
 
 > [!NOTE]
 >  Her zaman bir ileti eşlemesi ile başlayan [BEGIN_MSG_MAP](#begin_msg_map). Ardından, sonraki diğer ileti eşlemeleri ile ALT_MSG_MAP bildirebilirsiniz. [END_MSG_MAP](#end_msg_map) makrosu ileti eşlemede sonunu işaretler. Her ileti eşlemesi BEGIN_MSG_MAP ve END_MSG_MAP tek bir örneği olması gerekir.
@@ -823,7 +823,7 @@ REFLECTED_COMMAND_CODE_HANDLER( code, func )
 [in] Uyarı kodu.
 
 *FUNC*<br/>
-[in] İleti işleyici işlevinin adı.  
+[in] İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -846,11 +846,11 @@ REFLECTED_COMMAND_HANDLER( id, code, func )
 [in] Uyarı kodu.
 
 *FUNC*<br/>
-[in] İleti işleyici işlevinin adı.  
+[in] İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h  
+**Başlık:** atlwin.h
 
 ##  <a name="reflected_command_id_handler"></a>  REFLECTED_COMMAND_ID_HANDLER
 
@@ -866,11 +866,11 @@ REFLECTED_COMMAND_ID_HANDLER( id, func )
 [in] Menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısı.
 
 *FUNC*<br/>
-[in] İleti işleyici işlevinin adı.  
+[in] İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h  
+**Başlık:** atlwin.h
 
 ##  <a name="reflected_command_range_code_handler"></a>  REFLECTED_COMMAND_RANGE_CODE_HANDLER
 
@@ -892,11 +892,11 @@ REFLECTED_COMMAND_RANGE_CODE_HANDLER( idFirst, idLast, code, func )
 [in] Uyarı kodu.
 
 *FUNC*<br/>
-[in] İleti işleyici işlevinin adı.  
+[in] İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h  
+**Başlık:** atlwin.h
 
 ##  <a name="reflected_command_range_handler"></a>  REFLECTED_COMMAND_RANGE_HANDLER
 
@@ -915,11 +915,11 @@ REFLECTED_COMMAND_RANGE_HANDLER( idFirst, idLast, func )
 [in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
 
 *FUNC*<br/>
-[in] İleti işleyici işlevinin adı.  
+[in] İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h  
+**Başlık:** atlwin.h
 
 ##  <a name="reflected_notify_code_handler"></a>  REFLECTED_NOTIFY_CODE_HANDLER
 
@@ -935,11 +935,11 @@ REFLECTED_NOTIFY_CODE_HANDLER_EX( cd, func )
 [in] Uyarı kodu.
 
 *FUNC*<br/>
-[in] İleti işleyici işlevinin adı.  
+[in] İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h  
+**Başlık:** atlwin.h
 
 ##  <a name="reflected_notify_handler"></a>  REFLECTED_NOTIFY_HANDLER
 
@@ -958,11 +958,11 @@ REFLECTED_NOTIFY_HANDLER( id, cd, func )
 [in] Uyarı kodu.
 
 *FUNC*<br/>
-[in] İleti işleyici işlevinin adı.  
+[in] İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h  
+**Başlık:** atlwin.h
 
 ##  <a name="reflected_notify_id_handler"></a>  REFLECTED_NOTIFY_ID_HANDLER
 
@@ -978,11 +978,11 @@ REFLECTED_NOTIFY_ID_HANDLER( id, func )
 [in] Menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısı.
 
 *FUNC*<br/>
-[in] İleti işleyici işlevinin adı.  
+[in] İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h  
+**Başlık:** atlwin.h
 
 ##  <a name="reflected_notify_range_code_handler"></a>  REFLECTED_NOTIFY_RANGE_CODE_HANDLER
 

@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d0db4d53d64def1c1f55929aa9d7514142955cf
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 00390f5a5872c183fdea385158dfa5020362a06f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821149"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055072"
 ---
 # <a name="adding-a-property-page-atl-tutorial-part-6"></a>Özellik Sayfası Ekleme (ATL Eğitmeni, Bölüm 6)
 
@@ -45,7 +45,7 @@ ms.locfileid: "48821149"
 
 1. Tıklayın **dizeleri** açmak için **dizeleri** sayfasında ve girin **& Çokgen** olarak **başlık**.
 
-     **Başlık** özelliği sayfasında bu sayfa için sekmesinde görünen dizedir. **Doc dizesi** bir durum satırı veya araç ipucunda koymak için bir özellik çerçevesi kullanan bir açıklaması. Varsayılan içeriklerle bırakmak için standart özellik çerçevesi şu anda bu dize kullanımda bulunmadığını unutmayın. Değil oluşturacak bir **Yardım dosyası** şu anda, bu yüzden bu metin kutusunda girişi silin.
+   **Başlık** özelliği sayfasında bu sayfa için sekmesinde görünen dizedir. **Doc dizesi** bir durum satırı veya araç ipucunda koymak için bir özellik çerçevesi kullanan bir açıklaması. Varsayılan içeriklerle bırakmak için standart özellik çerçevesi şu anda bu dize kullanımda bulunmadığını unutmayın. Değil oluşturacak bir **Yardım dosyası** şu anda, bu yüzden bu metin kutusunda girişi silin.
 
 1. Tıklayın **son**, ve özellik sayfa nesnesi oluşturulur.
 

@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb80e0e839169b0f78648cc2090f339b43f6360a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ca18f54cc38c81e7b78f0afe4d1bba99029404b8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415349"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057913"
 ---
 # <a name="cmfcribboncolorbutton-class"></a>CMFCRibbonColorButton sınıfı
 
@@ -155,13 +155,11 @@ Oluşturur bir `CMFCRibbonColorButton` nesne.
 ```
 CMFCRibbonColorButton();
 
-
 CMFCRibbonColorButton(
     UINT nID,
     LPCTSTR lpszText,
     int nSmallImageIndex,
     COLORREF color = RGB(0, 0, 0));
-
 
 CMFCRibbonColorButton(
     UINT nID,

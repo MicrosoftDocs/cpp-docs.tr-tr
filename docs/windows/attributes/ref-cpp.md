@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e67e6687a133ae636bbe9c3912ae4ff5288b762f
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 67e448b11daea3058eb7df63f914f64c98d57594
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48790032"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057263"
 ---
 # <a name="ref-c"></a>ref (C++)
 
@@ -71,4 +71,4 @@ __interface IFireTabCtrl
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
-[Parametre Öznitelikleri](parameter-attributes.md)  
+[Parametre Öznitelikleri](parameter-attributes.md)

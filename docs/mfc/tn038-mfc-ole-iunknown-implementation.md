@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6bf8f299ef46166c5b09a716e5bed21fd3b9b01
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 84d37ad6303a9e5b4fb9d238dd8c15c3a40ccef6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387113"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50058799"
 ---
 # <a name="tn038-mfcole-iunknown-implementation"></a>TN038: MFC/OLE IUnknown Uygulaması
 
@@ -398,7 +398,6 @@ class CAggrExample : public CCmdTarget
 {
 public:
     CAggrExample();
-
 
 protected:
     LPUNKNOWN m_lpAggrInner;

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bfa8867f405b5a3fa67046a1341d5b4848b8a72
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b0bb3442de264e263ae0f0eabd93345eace1fde1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423096"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059616"
 ---
 # <a name="scopedd3daccesslock-class"></a>scoped_d3d_access_lock Sınıfı
 
@@ -100,6 +100,7 @@ scoped_d3d_access_lock(// [3] move constructor
 ```
 ~scoped_d3d_access_lock();
 ```
+
 ## <a name="operator_eq"></a> işleç =
 
 Başka bir D3D erişim kilidi sahipliğini `scoped_d3d_access_lock` nesnesi ve önceki kilidi açar.

@@ -98,12 +98,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc19475cff0038d11131a26c36ab498a562b234c
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 7e9ec6724addeb8002eeb681f289f232520f31dc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48236042"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060119"
 ---
 # <a name="hashmap-class"></a>hash_map Sınıfı
 
@@ -277,7 +277,6 @@ Bulunan elemanın veri değerine başvuru.
 ### <a name="remarks"></a>Açıklamalar
 
 Bağımsız değişken anahtarı değeri bulunamazsa sonra işlevin sınıfın bir nesnesi atar [out_of_range sınıfı](../standard-library/out-of-range-class.md).
-
 
 ### <a name="example"></a>Örnek
 
@@ -2688,9 +2687,9 @@ Alt öğeleri düzenlemek amacıyla bir hash_map kullanan karşılaştırma işl
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir hash_map için *m*, iki öğe *e*1 *(k*1 *, d*1 *)* ve *e*2 *(k*2 *, d*2 *)* türündeki nesneler [value_type](#value_type)burada *k*1 ve *k*2 olan türü, anahtarlarına [key_type](#key_type) ve `d`1 ve `d`2 kendi veri türü olan [mapped_type](#mapped_type), ardından *m.*  `value_comp` *() (e*1 *, e*2 *)* eşdeğerdir *m.* `key_comp` *() (k*1 *, k*2 *)*. Depolanan bir nesne üye işlevini tanımlar.
+Bir hash_map için *m*, iki öğe *e1* (*k1*, *d1*) ve *e2* (*k2*, *d2*) türündeki nesneler [value_type](#value_type)burada *k1* ve *k2* türü kendianahtarları[key_type](#key_type) ve *d1* ve *d2* kendi veri türü olan [mapped_type](#mapped_type), ardından `m.value_comp()(e1, e2)` eşdeğerdir `m.key_comp()(k1, k2)` . Depolanan bir nesne üye işlevini tanımlar.
 
-**bool işleci**( **value_type &** `left`, **value_type &** `right`) **;**
+`bool operator(value_type& left, value_type& right);`
 
 döndüren **true** , anahtar değerini `left` önündeki ve anahtar değerine eşit değil `right` sıralama düzeninde.
 

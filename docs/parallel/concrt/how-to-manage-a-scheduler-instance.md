@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea6b687b00310390e3748fb5a8f6db74a19dfd0a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 97735b5509fb841a8b9b3d8212f4a23514f9d28c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46373902"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057471"
 ---
 # <a name="how-to-manage-a-scheduler-instance"></a>Nasıl yapılır: Zamanlayıcı Örneğini Yönetme
 
@@ -34,7 +34,7 @@ Zamanlayıcı örnekleri çeşitli türlerdeki iş yüklerini özel zamanlama il
 
 1. Çağrı [concurrency::CurrentScheduler::Create](reference/currentscheduler-class.md#create) yöntemi veya [concurrency::Scheduler::Create](reference/scheduler-class.md#create) Zamanlayıcı örneğini oluşturmak için yöntemi.
 
-     Kullanırsanız `Scheduler::Create` yöntemi, çağrı [concurrency::Scheduler::Attach](reference/scheduler-class.md#attach) Zamanlayıcı geçerli bağlam ile ilişkilendirmek gerektiğinde yöntemi.
+   Kullanırsanız `Scheduler::Create` yöntemi, çağrı [concurrency::Scheduler::Attach](reference/scheduler-class.md#attach) Zamanlayıcı geçerli bağlam ile ilişkilendirmek gerektiğinde yöntemi.
 
 1. Çağrı [CreateEvent](/windows/desktop/api/synchapi/nf-synchapi-createeventa) verilmemiş, otomatik sıfırlama olay nesnesi için bir tanıtıcı oluşturmak için işlevi.
 
@@ -44,7 +44,7 @@ Zamanlayıcı örnekleri çeşitli türlerdeki iş yüklerini özel zamanlama il
 
 1. Çağrı [concurrency::CurrentScheduler::Detach](reference/currentscheduler-class.md#detach) geçerli Zamanlayıcı ayırma ve geçerli olarak önceki Zamanlayıcısı'nı geri yüklemek için yöntemi.
 
-     Kullanırsanız `Scheduler::Create` yöntemi, çağrı [concurrency::Scheduler::Release](reference/scheduler-class.md#release) başvuru sayısını azaltmak için yöntemi `Scheduler` nesne.
+   Kullanırsanız `Scheduler::Create` yöntemi, çağrı [concurrency::Scheduler::Release](reference/scheduler-class.md#release) başvuru sayısını azaltmak için yöntemi `Scheduler` nesne.
 
 1. Olay tanıtıcısı geçirmek [WaitForSingleObject](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) Zamanlayıcısı'nı kapatmak beklenecek işlevi.
 
