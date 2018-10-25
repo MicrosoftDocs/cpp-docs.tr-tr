@@ -485,7 +485,7 @@
 ## [Derleyici Uyarısı (düzey 1 ve 3) C4793](compiler-warning-level-1-and-3-c4793.md)
 ## [Derleyici Uyarısı (düzey 1) C4794](compiler-warning-level-1-c4794.md)
 ## [Derleyici Uyarısı (düzey 1) C4799](compiler-warning-level-1-c4799.md)
-# [C4800 ile C4999 Arasındaki Derleyici Uyarıları](compiler-warnings-c4800-through-c4999.md)
+# [C4800 ile C5999 Arasındaki Derleyici Uyarıları](compiler-warnings-c4800-through-c4999.md)
 ## [Derleyici Uyarısı (düzey 3) C4800](compiler-warning-level-3-c4800.md)
 ## [Derleyici Uyarısı (düzey 1) C4803](compiler-warning-level-1-c4803.md)
 ## [Derleyici Uyarısı (düzey 1) C4804](compiler-warning-level-1-c4804.md)
@@ -560,3 +560,4 @@
 ## [Derleyici Uyarısı (düzey 1) C4999](compiler-warning-level-1-c4999.md)
 ## [Derleyici Uyarısı C5038](c5038.md)
 ## [Derleyici Uyarısı C5045](c5045.md)
+## [Derleyici Uyarısı (düzey2) C5046](c5046.md)
