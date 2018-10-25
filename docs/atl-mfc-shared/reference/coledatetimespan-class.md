@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be0e05d61d4949deaee683c5b8f43d18e0501d23
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 5e50fe341ff52916d16b3c006e438fe2bfa99154
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808985"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082846"
 ---
 # <a name="coledatetimespan-class"></a>COleDateTimeSpan sınıfı
 
@@ -157,7 +157,7 @@ COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 *dblSpanSrc*<br/>
 Yeni içine kopyalanacak gün sayısını `COleDateTimeSpan` nesne.
 
-*lDays*, *nHours*, *nMins*, *nSecs*  
+*lDays*, *nHours*, *nMins*, *nSecs*<br/>
 Yeni içine kopyalanacak gün ve saat değerleri belirtmek `COleDateTimeSpan` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -217,10 +217,10 @@ Arama zaman aralığı değeri biçimlendirilmiş bir temsilini oluşturmak içi
 
 Bu işlev formlarını kısa bir açıklaması aşağıdaki gibidir:
 
-**Biçimi (** *pFormat* **)**  
+**Biçimi (** *pFormat* **)**<br/>
 Bu formu yüzde (%) işareti tarafından öncelenen özel biçimlendirme kodlarını içerirse biçim dizesi kullanarak değeri olarak biçimlendirir. `printf`. Biçimlendirme dizesi, parametre olarak işleve geçirilir.
 
-**Biçimi (** *nID* **)**  
+**Biçimi (** *nID* **)**<br/>
 Bu formu yüzde (%) işareti tarafından öncelenen özel biçimlendirme kodlarını içerirse biçim dizesi kullanarak değeri olarak biçimlendirir. `printf`. Biçimlendirme dizesi bir kaynaktır. Bu dize kaynak kimliği, parametre olarak geçirilir.
 
 ### <a name="example"></a>Örnek
@@ -388,11 +388,11 @@ Bu durumu `COleDateTimeSpan` değeri.
 Dönüş değeri tarafından tanımlanan `DateTimeSpanStatus` listelenmiş içinde tanımlanan bir türü `COleDateTimeSpan` sınıfı.
 
 ```
-enum DateTimeSpanStatus{  
-   valid = 0,  
-   invalid = 1,  
-   null = 2,  
-};  
+enum DateTimeSpanStatus{
+   valid = 0,
+   invalid = 1,
+   null = 2,
+};
 ```
 
 Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:
@@ -585,11 +585,11 @@ DateTimeSpanStatus m_status;
 ### <a name="remarks"></a>Açıklamalar
 
 ```
-enum DateTimeSpanStatus{  
-   valid = 0,  
-   invalid = 1,  
-   null = 2,  
-   };  
+enum DateTimeSpanStatus{
+   valid = 0,
+   invalid = 1,
+   null = 2,
+   };
 ```
 
 Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:
@@ -694,7 +694,7 @@ void SetDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lDays*, *nHours*, *nMins*, *nSecs*  
+*lDays*, *nHours*, *nMins*, *nSecs*<br/>
 Bu kopyalanacak tarih aralığı ve zaman aralığı değerleri gösterir `COleDateTimeSpan` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -739,11 +739,11 @@ Bu yeni durum değeri `COleDateTimeSpan` nesne.
 *Durumu* parametre değeri tarafından tanımlanan `DateTimeSpanStatus` listelenmiş içinde tanımlanan bir türü `COleDateTimeSpan` sınıfı.
 
 ```
-enum DateTimeSpanStatus{  
-   valid = 0,  
-   invalid = 1,  
-   null = 2,  
-   };  
+enum DateTimeSpanStatus{
+   valid = 0,
+   invalid = 1,
+   null = 2,
+   };
 ```
 
 Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:

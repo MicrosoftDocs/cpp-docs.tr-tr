@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce81436781a92c8d2c9156e1d1c02513c3816dc4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1599500a775bcd1c76f2e63a1f7b20126a2fb329
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440062"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078212"
 ---
 # <a name="mfc-activex-controls-adding-another-custom-property-page"></a>MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme
 
@@ -65,7 +65,7 @@ ActiveX denetiminde özellik sayfalarını kullanma hakkında daha fazla bilgi i
 
 1. Kısayol menüsünden tıklayın **Ekle** ve ardından **sınıfı Ekle**.
 
-     Bu açılır [sınıfı Ekle](../ide/add-class-dialog-box.md) iletişim kutusu.
+   Bu açılır [sınıfı Ekle](../ide/add-class-dialog-box.md) iletişim kutusu.
 
 1. Çift **MFC sınıfı** şablonu.
 
@@ -95,25 +95,25 @@ Sonraki adım, yeni özellik sayfası için bir tür adı ve açıklamalı alt y
 
 1. Çift **dize tablosu** klasörüne gittikten sonra çift tıklayarak var olan dize tablosuna bir dize eklemek istediğiniz kaynak.
 
-     Bu dize tablosu bir pencerede açılır.
+   Bu dize tablosu bir pencerede açılır.
 
 1. Dize tablosu, sonunda boş satır seçin ve metin veya resim yazısı, dizenin türü: Örneğin, "ek özellik sayfası."
 
-     Bu açılır bir **dize özellikleri** sayfasını gösteren **açıklamalı alt yazı** ve **kimliği** kutuları. **Açıklamalı alt yazı** kutusuna yazdığınız dizeyi içerir.
+   Bu açılır bir **dize özellikleri** sayfasını gösteren **açıklamalı alt yazı** ve **kimliği** kutuları. **Açıklamalı alt yazı** kutusuna yazdığınız dizeyi içerir.
 
 1. İçinde **kimliği** kutusunu seçin veya bir kimlik dizesi yazın. İşlemi tamamladığınızda, Enter tuşuna basın.
 
-     Bu örnekte **IDS_SAMPLE_ADDPAGE** için yeni özellik sayfasının tür adı.
+   Bu örnekte **IDS_SAMPLE_ADDPAGE** için yeni özellik sayfasının tür adı.
 
 1. 3 ve 4 kullanarak **IDS_SAMPLE_ADDPPG_CAPTION** kimliği ve "Ek özellik sayfası" başlığını için.
 
 1. İçinde. Yeni özellik sayfası sınıfının CPP dosyasına (Bu örnekte, `CAddtlPropPage`) değiştirme `CAddtlPropPage::CAddtlPropPageFactory::UpdateRegistry` IDS_SAMPLE_ADDPAGE geçirilir, böylece [AfxOleRegisterPropertyPageClass](../mfc/reference/registering-ole-controls.md#afxoleregisterpropertypageclass), aşağıdaki örnekte olduğu gibi:
 
-     [!code-cpp[NVC_MFC_AxUI#33](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_2.cpp)]
+   [!code-cpp[NVC_MFC_AxUI#33](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_2.cpp)]
 
 1. Oluşturucusuna değiştirme `CAddtlPropPage` IDS_SAMPLE_ADDPPG_CAPTION geçirilir, böylece `COlePropertyPage` oluşturucusu, aşağıdaki gibi:
 
-     [!code-cpp[NVC_MFC_AxUI#34](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_3.cpp)]
+   [!code-cpp[NVC_MFC_AxUI#34](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_3.cpp)]
 
 Projenizi yeniden derleyin ve yeni özellik sayfasını sınamak için sınama Kapsayıcınızı kullanmak gerekli değişiklikleri yaptıktan sonra. Bkz: [Test kapsayıcısı ile test etme özellikleri ve olayları](../mfc/testing-properties-and-events-with-test-container.md) test kapsayıcı erişim hakkında daha fazla bilgi için.
 

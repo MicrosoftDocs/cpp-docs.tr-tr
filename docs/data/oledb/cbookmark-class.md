@@ -78,150 +78,150 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7a2eaaf273bb2c0ae4f3ab297fe444a41e81c873
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: aef24c5c55bc3a3250c483536d0a63f967608b20
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058067"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064343"
 ---
 # <a name="cbookmark-class"></a>CBookmark Sınıfı
 
-Bir yer işareti değeri kendi arabellekte tutar.  
-  
+Bir yer işareti değeri kendi arabellekte tutar.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-template < DBLENGTH nSize = 0 >  
+template < DBLENGTH nSize = 0 >
 class CBookmark : public CBookmarkBase
-  
-template <>  
-class CBookmark< 0 > : public CBookmarkBase  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+
+template <>
+class CBookmark< 0 > : public CBookmarkBase
+```
+
+### <a name="parameters"></a>Parametreler
 
 *nSize*<br/>
-Yer işareti arabelleğin bayt cinsinden boyutu. Zaman *nSize* sıfırsa, yer işareti arabellek çalışma zamanında dinamik olarak oluşturulur.  
+Yer işareti arabelleğin bayt cinsinden boyutu. Zaman *nSize* sıfırsa, yer işareti arabellek çalışma zamanında dinamik olarak oluşturulur.
 
-## <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="methods"></a>Yöntemler  
-  
-|||  
-|-|-|  
-|[CBookmark](#cbookmark)|Oluşturucu|  
-|[GetBuffer](#getbuffer)|Arabellek için işaretçi alır.|  
-|[GetSize](#getsize)|Arabelleğin bayt cinsinden boyutunu alır.|  
-|[SetBookmark](#setbookmark)|Yer işareti değeri ayarlar.|  
-  
-### <a name="operators"></a>İşleçler  
-  
-|||  
-|-|-|  
-|[işleç =](#operator)|Atar `CBookmark` başka bir sınıf.|  
-  
-## <a name="remarks"></a>Açıklamalar  
+**Başlık:** atldbcli.h
 
-`CBookmark<0>` bir şablon uzmanlığı olan `CBookmark`; kendi arabelleğini çalışma zamanında dinamik olarak oluşturulur.  
+## <a name="members"></a>Üyeler
+
+### <a name="methods"></a>Yöntemler
+
+|||
+|-|-|
+|[CBookmark](#cbookmark)|Oluşturucu|
+|[GetBuffer](#getbuffer)|Arabellek için işaretçi alır.|
+|[GetSize](#getsize)|Arabelleğin bayt cinsinden boyutunu alır.|
+|[SetBookmark](#setbookmark)|Yer işareti değeri ayarlar.|
+
+### <a name="operators"></a>İşleçler
+
+|||
+|-|-|
+|[işleç =](#operator)|Atar `CBookmark` başka bir sınıf.|
+
+## <a name="remarks"></a>Açıklamalar
+
+`CBookmark<0>` bir şablon uzmanlığı olan `CBookmark`; kendi arabelleğini çalışma zamanında dinamik olarak oluşturulur.
 
 ## <a name="cbookmark"></a> CBookmark::CBookmark
 
-Oluşturucu.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Oluşturucu.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
 CBookmark();
-   
-CBookmark(DBLENGTH nSize);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+ 
+CBookmark(DBLENGTH nSize);
+```
+
+#### <a name="parameters"></a>Parametreler
 
 *nSize*<br/>
-[in] Yer işareti arabelleğin bayt cinsinden boyutu.  
-  
-### <a name="remarks"></a>Açıklamalar  
+[in] Yer işareti arabelleğin bayt cinsinden boyutu.
 
-İlk işlev arabellek NULL ve arabellek boyutu 0 olarak ayarlar. Arabellek boyutu ikinci işlevi ayarlar *nSize*ve bir bayt dizisi olarak arabelleğe *nSize* bayt.  
-  
+### <a name="remarks"></a>Açıklamalar
+
+İlk işlev arabellek NULL ve arabellek boyutu 0 olarak ayarlar. Arabellek boyutu ikinci işlevi ayarlar *nSize*ve bir bayt dizisi olarak arabelleğe *nSize* bayt.
+
 > [!NOTE]
->  Bu işlev yalnızca kullanılabilir `CBookmark<0>`. 
-  
+>  Bu işlev yalnızca kullanılabilir `CBookmark<0>`.
+
 ## <a name="getbuffer"></a> CBookmark::GetBuffer
 
-Yer işareti arabellek için işaretçi alır.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp
-virtual BYTE* GetBuffer() const throw();  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
+Yer işareti arabellek için işaretçi alır.
 
-Yer işareti arabellek için işaretçi. 
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+virtual BYTE* GetBuffer() const throw();
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Yer işareti arabellek için işaretçi.
 
 ## <a name="getsize"></a> CBookmark::GetSize
 
-Yer işareti arabellek boyutunu alır.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp
-virtual DBLENGTH GetSize() const throw();  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
+Yer işareti arabellek boyutunu alır.
 
-Arabelleğin bayt cinsinden boyutu.  
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+virtual DBLENGTH GetSize() const throw();
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Arabelleğin bayt cinsinden boyutu.
 
 ## <a name="setbookmark"></a> CBookmark::SetBookmark
 
-Yer işareti değeri tarafından başvurulan kopyalar *pBuffer* için `CBookmark` arabellek ve arabellek boyutu ayarlar *nSize*.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Yer işareti değeri tarafından başvurulan kopyalar *pBuffer* için `CBookmark` arabellek ve arabellek boyutu ayarlar *nSize*.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-HRESULT SetBookmark(DBLENGTH nSize, BYTE* pBuffer) throw();  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+HRESULT SetBookmark(DBLENGTH nSize, BYTE* pBuffer) throw();
+```
+
+#### <a name="parameters"></a>Parametreler
 
 *nSize*<br/>
-[in] Yer işareti arabellek boyutu.  
-  
+[in] Yer işareti arabellek boyutu.
+
 *pBuffer*<br/>
-[in] Yer işareti değeri içeren bir bayt dizisine bir işaretçi.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
+[in] Yer işareti değeri içeren bir bayt dizisine bir işaretçi.
 
-Standart bir HRESULT.  
-  
-### <a name="remarks"></a>Açıklamalar  
+### <a name="return-value"></a>Dönüş Değeri
 
-Bu işlev yalnızca kullanılabilir `CBookmark<0>`. 
+Standart bir HRESULT.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu işlev yalnızca kullanılabilir `CBookmark<0>`.
 
 ## <a name="operator"></a> CBookmark::operator =
 
-Atayan bir `CBookmark` başka bir nesne.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Atayan bir `CBookmark` başka bir nesne.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-CBookmark& operator =(const CBookmark& bookmark) throw();  
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
+CBookmark& operator =(const CBookmark& bookmark) throw();
+```
 
-Bu işleç yalnızca gerekli `CBookmark<0>`.   
+### <a name="remarks"></a>Açıklamalar
 
-## <a name="see-also"></a>Ayrıca Bkz.  
+Bu işleç yalnızca gerekli `CBookmark<0>`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

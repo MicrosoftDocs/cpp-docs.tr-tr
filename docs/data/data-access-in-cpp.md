@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c8e2fc86d15472bd4ab63e472df99bb69393b386
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ca9d1ea34aa8a2793f895a3c89f94994743570e5
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060310"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082690"
 ---
 # <a name="data-access-in-visual-c"></a>Visual C++'da Veri Erişimi
 
@@ -52,13 +52,13 @@ C veya C++ uygulamalarından Azure SQL veritabanı'na bağlanın.
 [Azure depolama](/azure/storage/storage-introduction) dayanıklılık, kullanılabilirlik ve ölçeklenebilirlik müşterilerinin ihtiyaçlarını karşılamak üzere dayanan modern uygulamalar için bulut depolama çözümüdür. Azure depolama için C++'tan C++ için Azure depolama istemci kitaplığı kullanarak bağlanın.
 
 [Yayımlanan ODBC sürücüsü 13.1 SQL Server - Windows](https://blogs.msdn.microsoft.com/sqlnativeclient/2016/08/01/announcing-the-odbc-driver-13-1-for-sql-server)<br/>
-En son ODBC sürücüsü, C/C++ tabanlı uygulamalar için Microsoft SQL Server 2016 Microsoft Azure SQL veritabanı için güçlü veri erişim sağlar. Her zaman şifreli gibi özellikleri için destek, Azure Active Directory ve AlwaysOn Kullanılabilirlik grupları sağlar. Ayrıca, MacOS ve Linux için de kullanılabilir.     
- 
+En son ODBC sürücüsü, C/C++ tabanlı uygulamalar için Microsoft SQL Server 2016 Microsoft Azure SQL veritabanı için güçlü veri erişim sağlar. Her zaman şifreli gibi özellikleri için destek, Azure Active Directory ve AlwaysOn Kullanılabilirlik grupları sağlar. Ayrıca, MacOS ve Linux için de kullanılabilir.
+
 [SQL Server yerel istemcisi](/sql/relational-databases/native-client/sql-server-native-client-programming)<br/>
 OLE DB hem de SQL Server 2005, SQL Server 2014'e destekleyen ODBC için kullanılan tek başına veri erişim uygulama programlama arabirimi (API), SQL Server Native Client ' dir. Yeni uygulamalar için SQL Server ODBC sürücüsü 13.1 kullanmanız gerekir.
 
 [Microsoft Azure C ve C++ Geliştirici Merkezi](https://azure.microsoft.com/develop/cpp/)<br/>
-Azure ile daha fazla esneklik, ölçeklenebilirlik ve güvenilirlik sevdiğiniz araçları kullanarak C++ uygulamaları oluşturmayı kolaylaştırır.    
+Azure ile daha fazla esneklik, ölçeklenebilirlik ve güvenilirlik sevdiğiniz araçları kullanarak C++ uygulamaları oluşturmayı kolaylaştırır.
 
 [BLOB depolama alanından C++ kullanma](https://docs.microsoft.com/azure/storage/storage-c-plus-plus-how-to-use-blobs)<br/>
 Azure Blob Depolama, yapılandırılmamış verileri nesne/BLOB olarak bulutta depolayan bir hizmettir. BLOB Depolama, herhangi bir türde metin veya belge, medya dosyası veya uygulama Yükleyici gibi ikili veri depolayabilir. BLOB storage ayrıca nesne depolama olarak adlandırılır.

@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 945de6e2ef7e9ec3967091f88b1d0cfeaa8df5e3
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 02ef77c32ffcaed416611df108f2619aa7ad2b45
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108895"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081436"
 ---
 # <a name="autoptr-class"></a>auto_ptr Sınıfı
 
@@ -63,6 +63,7 @@ public:
     void reset(Type* ptr = 0);
 };
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>

@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bbe6d2bd5ea8d03a73fd7389da9eeb0e7ca32cdf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 180e84cb20b8ad4a401480aced9320a4ceb180f6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442428"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083054"
 ---
 # <a name="cstdiofile-class"></a>CStdioFile sınıfı
 
@@ -101,11 +101,9 @@ CStdioFile();
 CStdioFile(CAtlTransactionManager* pTM);
   CStdioFile(FILE* pOpenStream);
 
-
 CStdioFile(
     LPCTSTR lpszFileName,
     UINT nOpenFlags);
-
 
 CStdioFile(
     LPCTSTR lpszFileName,
@@ -166,7 +164,6 @@ virtual BOOL Open(
     LPCTSTR lpszFileName,
     UINT nOpenFlags,
     CFileException* pError = NULL);
-
 
 virtual BOOL Open(
     LPCTSTR lpszFileName,

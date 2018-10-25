@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb3f2ca2cfe094f4ea9da11786af6f90db7d2217
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9fb13c8c4ce2705d3e7af8ca5b4cd0e4b97b13ca
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46136166"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059096"
 ---
 # <a name="type-conversions-and-type-safety-modern-c"></a>Tür Dönüştürmeleri ve Tür Güvenliği (Modern C++)
 
@@ -70,7 +70,7 @@ int k = 7.7; // warning C4244:'initializing':conversion from 'double' to
 
 ```cpp
 using namespace std;
-unsigned short num = numeric_limits<unsigned short>::max(); // #include <limits>
+unsigned short num = numeric_limits<unsigned short>::max(); // #include <limits>
 short num2 = num;
 cout << "unsigned val = " << num << " signed val = " << num2 << endl;
 // Prints: unsigned val = 65535 signed val = -1
@@ -126,7 +126,7 @@ C stili tür dönüştürme işleci çağrısı işleci ()'olarak aynıdır ve b
     Derived* d2 = static_cast<Derived*>(b);
     ```
 
-     Daha fazla bilgi için [static_cast](../cpp/static-cast-operator.md).
+   Daha fazla bilgi için [static_cast](../cpp/static-cast-operator.md).
 
 - **dynamic_cast**, işaretçi temel alınan işaretçi için güvenli, çalışma zamanı işaretli yayınları için. A **dynamic_cast** daha güvenlidir bir **static_cast** onay, alt türe çevirme işlemleri, ancak çalışma zamanı, bazı ek yüke neden olur.
 
@@ -151,7 +151,7 @@ C stili tür dönüştürme işleci çağrısı işleci ()'olarak aynıdır ve b
     //Output: d3 is null;
     ```
 
-     Daha fazla bilgi için [dynamic_cast](../cpp/dynamic-cast-operator.md).
+   Daha fazla bilgi için [dynamic_cast](../cpp/dynamic-cast-operator.md).
 
 - **const_cast**hemen atama için **const**- ness bir değişkenin veya olmayan bir dönüştürme -**const** olmasını değişkeni **const**. Hemen atama **const**-ness kullanarak bu işleci yalnızca gibi hataya eğilimli C stili atama ile hariç kullandığından olan **const atama** yanlışlıkla dönüştürme gerçekleştirmek daha düşüktür. Bazen hemen türüne sahip **const**-ness geçirmek için bir değişken, örneğin, bir **const** olmayan bir alan bir işlev için değişken**const** parametresi. Aşağıdaki örnek bunun nasıl yapılacağı gösterilmektedir.
 
@@ -164,14 +164,14 @@ C stili tür dönüştürme işleci çağrısı işleci ()'olarak aynıdır ve b
     }
     ```
 
-     Daha fazla bilgi için [const_cast](../cpp/const-cast-operator.md).
+   Daha fazla bilgi için [const_cast](../cpp/const-cast-operator.md).
 
 - **reinterpret_cast**yayınları arasında gibi türler ilgisiz için **işaretçi** için **int**.
 
     > [!NOTE]
     >  Bu tür dönüştürme işleci olarak diğerleriyle genellikle kullanılmaz ve diğer derleyiciler için taşınabilir olması garantili.
 
-     Aşağıdaki örnekte nasıl **reinterpret_cast** farklıdır **static_cast**.
+   Aşağıdaki örnekte nasıl **reinterpret_cast** farklıdır **static_cast**.
 
     ```cpp
     const char* str = "hello";
@@ -183,7 +183,7 @@ C stili tür dönüştürme işleci çağrısı işleci ()'olarak aynıdır ve b
                                        // However, it is not 64-bit safe.
     ```
 
-     Daha fazla bilgi için [reinterpret_cast işleci](../cpp/reinterpret-cast-operator.md).
+   Daha fazla bilgi için [reinterpret_cast işleci](../cpp/reinterpret-cast-operator.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

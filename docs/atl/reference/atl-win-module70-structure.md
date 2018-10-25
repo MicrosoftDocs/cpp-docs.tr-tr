@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c000175c031868136aad44e59644d0fa122d213e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dcb66d55f1d75d584414c0273882a5424fe72650
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084516"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064829"
 ---
 # <a name="atlwinmodule70-structure"></a>_Atl_wın_module70 yapısı
 
@@ -34,7 +34,7 @@ ATL Pencereleme kod tarafından kullanılan
 
 ```
 struct _ATL_WIN_MODULE70 {
-    UNIT cbSize; 
+    UNIT cbSize;
     CRITICAL_SECTION m_csWindowCreate;
     _AtlCreateWndData* m_pCreateWndList;
     CSimpleArray<ATOM> m_rgWindowClassAtoms;

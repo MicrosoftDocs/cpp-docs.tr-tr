@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73d04141d67b832f3c42fe74e7b2a35d8751afef
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 09b82a4ee1c10e009d403e0e0071cf90cb65cd86
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378690"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082522"
 ---
 # <a name="cmemorystate-structure"></a>CMemoryState yapısı
 
@@ -150,7 +150,6 @@ Yeni bellek durumu tarafından tanımlanan bir `CMemoryState` denetim noktası.
 ```
 void DumpAllObjectsSince() const;
 
-
 ```
 
 ### <a name="remarks"></a>Açıklamalar
@@ -167,7 +166,6 @@ Kısa bellek istatistikleri rapordan yazdırır bir `CMemoryState` tarafından d
 
 ```
 void DumpStatistics() const;
-
 
 ```
 
@@ -212,6 +210,4 @@ Bir örnek bildirim raporu sayı (veya tutar) hakkında bilgi sağlar:
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-
-
 

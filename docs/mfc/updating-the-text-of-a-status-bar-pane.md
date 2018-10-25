@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8aa04fdee2b63f9d91d2bdd7dfd62100b3e32a2c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ae8b15431edbdd24a7afd6c7e25be6b9eadb4107
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393327"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081397"
 ---
 # <a name="updating-the-text-of-a-status-bar-pane"></a>Durum Çubuğu Bölmesinin Metnini Güncelleştirme
 
@@ -40,17 +40,17 @@ Varsayılan olarak, MFC olmayan etkinleştirmez bir `CStatusBar` bölmesinde bö
 
 1. Bölmedeki komut kimliği tanımlayın
 
-     Üzerinde **görünümü** menüsünü tıklatın **kaynak görünümü**. Proje kaynağını sağ tıklatıp **kaynak sembolleri**. Kaynak sembolleri iletişim kutusuna tıklayın `New`. Bir komut Kimliğini yazın: Örneğin, `ID_INDICATOR_PAGE`. Kimliği için bir değer belirtin veya kaynak sembolleri iletişim kutusu tarafından önerilen değeri kabul edin. Örneğin, `ID_INDICATOR_PAGE`, varsayılan değeri kabul edin. Kaynak sembolleri iletişim kutusunu kapatın.
+   Üzerinde **görünümü** menüsünü tıklatın **kaynak görünümü**. Proje kaynağını sağ tıklatıp **kaynak sembolleri**. Kaynak sembolleri iletişim kutusuna tıklayın `New`. Bir komut Kimliğini yazın: Örneğin, `ID_INDICATOR_PAGE`. Kimliği için bir değer belirtin veya kaynak sembolleri iletişim kutusu tarafından önerilen değeri kabul edin. Örneğin, `ID_INDICATOR_PAGE`, varsayılan değeri kabul edin. Kaynak sembolleri iletişim kutusunu kapatın.
 
 1. Bölmede görüntülemek için bir varsayılan dizesini tanımlar.
 
-     Açık kaynak görünümü ile çift **dize tablosu** penceresinde uygulamanız için kaynak türlerini listeler. İle **dize tablosu** açık bir düzenleyici seçin **yeni dize** gelen **Ekle** menüsü. Dize özellikleri penceresinde, bölmedeki komut kimliği (örneğin, `ID_INDICATOR_PAGE`) ve "Page" gibi varsayılan bir dize değeri yazın. Dize Düzenleyicisi'ni kapatın. (Bir derleyici hatası kaçınmak için bir varsayılan dizesine ihtiyacınız vardır.)
+   Açık kaynak görünümü ile çift **dize tablosu** penceresinde uygulamanız için kaynak türlerini listeler. İle **dize tablosu** açık bir düzenleyici seçin **yeni dize** gelen **Ekle** menüsü. Dize özellikleri penceresinde, bölmedeki komut kimliği (örneğin, `ID_INDICATOR_PAGE`) ve "Page" gibi varsayılan bir dize değeri yazın. Dize Düzenleyicisi'ni kapatın. (Bir derleyici hatası kaçınmak için bir varsayılan dizesine ihtiyacınız vardır.)
 
 1. Bölmesine eklemek *göstergeleri* dizisi.
 
-     Dosya MAINFRM. CPP, bulun *göstergeleri* dizisi. Bu dizinin tüm sırayla soldan sağa doğru durum çubuğunun göstergeleri için komut kimlikleri listeler. Dizideki uygun noktada için burada gösterildiği gibi bölmedeki komut kimliği girin `ID_INDICATOR_PAGE`:
+   Dosya MAINFRM. CPP, bulun *göstergeleri* dizisi. Bu dizinin tüm sırayla soldan sağa doğru durum çubuğunun göstergeleri için komut kimlikleri listeler. Dizideki uygun noktada için burada gösterildiği gibi bölmedeki komut kimliği girin `ID_INDICATOR_PAGE`:
 
-     [!code-cpp[NVC_MFCDocView#10](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_1.cpp)]
+   [!code-cpp[NVC_MFCDocView#10](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_1.cpp)]
 
 Metni bir bölmede görüntülemek için önerilen yöntem çağırmaktır `SetText` sınıfının üye işlevinde `CCmdUI` bölmesi için bir güncelleştirme işleyici işlevi içinde. Örneğin, bir tamsayı değişkeni ayarlamak isteyebilirsiniz *m_nPage* kullanın ve geçerli sayfa numarası içeren `SetText` bölmedeki metni bir dize, sayı sürümüne ayarlamak için.
 
@@ -63,19 +63,19 @@ Aşağıdaki yordam bir bölmede metni görüntülemek için bir güncelleştirm
 
 1. Komut için bir komut güncelleştirme işleyicisi ekleyin.
 
-     İşleyici için bir prototip için burada gösterildiği gibi el ile eklemeniz `ID_INDICATOR_PAGE` (içinde MAINFRM. H):
+   İşleyici için bir prototip için burada gösterildiği gibi el ile eklemeniz `ID_INDICATOR_PAGE` (içinde MAINFRM. H):
 
-     [!code-cpp[NVC_MFCDocView#11](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_2.h)]
+   [!code-cpp[NVC_MFCDocView#11](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_2.h)]
 
 1. Uygun. CPP işleyicinin tanımı için burada gösterildiği gibi ekleyin `ID_INDICATOR_PAGE` (içinde MAINFRM. CPP):
 
-     [!code-cpp[NVC_MFCDocView#12](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_3.cpp)]
+   [!code-cpp[NVC_MFCDocView#12](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_3.cpp)]
 
-     Bu işleyicinin son üç satır metni görüntüler kodu var.
+   Bu işleyicinin son üç satır metni görüntüler kodu var.
 
 1. On_update_command_uı makrosu, için aşağıda gösterildiği gibi uygun ileti eşlemede ekleme `ID_INDICATOR_PAGE` (içinde MAINFRM. CPP):
 
-     [!code-cpp[NVC_MFCDocView#13](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_4.cpp)]
+   [!code-cpp[NVC_MFCDocView#13](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_4.cpp)]
 
 Değerini tanımladıktan sonra *m_nPage* üye değişkeni (sınıf `CMainFrame`), bu teknik, sayfa numarası, uygulamanın diğer göstergeleri güncelleştirmeleri aynı şekilde boşta işleme sırasında bölmesinde görüntülenecek neden olur. Varsa *m_nPage* değişiklikler, sonraki boşta döngü sırasında görüntü değişiklikleri.
 

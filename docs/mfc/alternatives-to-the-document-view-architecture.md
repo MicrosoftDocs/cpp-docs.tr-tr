@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07277e9b98186747415cf1bf6abed3e431e64fff
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b45b1a1f2903dfcdfa4a95adc161766f5bb3328c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403482"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053051"
 ---
 # <a name="alternatives-to-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Alternatifleri
 
@@ -56,7 +56,7 @@ Sihirbaz doğru bir MFC mimarisi gönderilmesini sağladığından MFC Uygulama 
 
 - Belge kullanılmayan bir appendage işle ve görünüm sınıfında, yukarıda önerilen veri yönetimi kodunuzu uygulayın. Belge için ek yükü oldukça düşüktür. Tek bir [CDocument](../mfc/reference/cdocument-class.md) nesne doğurur az miktarda ek yükü kendisi tarafından yanı sıra, küçük yükü `CDocument`ait temel sınıflar, [CCmdTarget](../mfc/reference/ccmdtarget-class.md) ve [CObject](../mfc/reference/cobject-class.md). İkinci sınıfların her ikisi de küçük.
 
-     Bildirilen `CDocument`:
+   Bildirilen `CDocument`:
 
    - İki `CString` nesneleri.
 
@@ -66,7 +66,7 @@ Sihirbaz doğru bir MFC mimarisi gönderilmesini sağladığından MFC Uygulama 
 
    - Bir `CPtrList` belgenin görünümleri listesini içeren bir nesne.
 
-     Ayrıca, belgeyi belge nesnesi, görünüm nesnelerini, bir çerçeve penceresi ve belge şablonu nesnesi oluşturmak için gereken süreyi gerektirir.
+   Ayrıca, belgeyi belge nesnesi, görünüm nesnelerini, bir çerçeve penceresi ve belge şablonu nesnesi oluşturmak için gereken süreyi gerektirir.
 
 - Belge ve görünüm kullanılmayan appendages kabul eder. Veri Yönetimi ve çizim kodu çerçeve penceresi görünümü yerine koyun. Bu yaklaşım, C dili programlama modelini daha yakın olur.
 

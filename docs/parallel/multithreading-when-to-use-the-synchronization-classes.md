@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 018623e9e6a093c4f86b8768e0fd5329f4ea3282
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6da48b12b657944864b1a33216692fce296e5dfd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443780"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083457"
 ---
 # <a name="multithreading-when-to-use-the-mfc-synchronization-classes"></a>Çoklu iş parçacığı kullanımı: Ne zaman MFC eşitleme sınıflarını kullanma
 
@@ -38,17 +38,17 @@ Hangi eşitleme sınıfını kullanmanız gerektiğini belirlemek için aşağı
 
 1. Uygulama bir kaynağa erişmeden önce olmasını beklemek zorunda olmadığını (önce bir dosyaya yazılır Örneğin, veri iletişim bağlantı noktasından alınması gerekir)?
 
-     Yanıt Evet ise kullanın `CEvent`.
+   Yanıt Evet ise kullanın `CEvent`.
 
 2. Birden fazla aynı uygulama erişimi içinde bu kaynağı tek seferde iş parçacığı (örneğin, uygulamanızın en fazla beş windows aynı belgede görünümlerle sağlar)?
 
-     Yanıt Evet ise kullanın `CSemaphore`.
+   Yanıt Evet ise kullanın `CSemaphore`.
 
 3. Bu kaynak birden fazla uygulamayı kullanabilirsiniz (örneğin, kaynak DLL içinde'dır)?
 
-     Yanıt Evet ise kullanın `CMutex`.
+   Yanıt Evet ise kullanın `CMutex`.
 
-     Hayır ise, kullanın `CCriticalSection`.
+   Hayır ise, kullanın `CCriticalSection`.
 
 `CSyncObject` hiçbir zaman doğrudan kullanılmaz. Diğer dört eşitleme sınıfları için temel sınıftır.
 

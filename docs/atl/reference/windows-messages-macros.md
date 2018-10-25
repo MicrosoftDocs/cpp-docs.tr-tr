@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58c9f26b33c3ab2bcdc4e7f0c0a676835da0e3c3
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3f9d312104254323e98f6b2fd031adf1064ecfac
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758849"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078225"
 ---
 # <a name="windows-messages-macros"></a>Windows iletisi makroları
 
@@ -27,7 +27,7 @@ Bu makro, pencere iletilerini iletir.
 
 |||
 |-|-|
-|[WM_FORWARDMSG](#wm_forwardmsg)|İşleme için başka bir pencere için bir pencere tarafından alınan bir iletiyi iletme için kullanın.|  
+|[WM_FORWARDMSG](#wm_forwardmsg)|İşleme için başka bir pencere için bir pencere tarafından alınan bir iletiyi iletme için kullanın.|
 
 ## <a name="requirements"></a>Gereksinimler
 

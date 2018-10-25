@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c60cf5d6f61f16aac18524e8b6e75638ec13d27e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9907424a583cc16f170890a739fa7ece8cc93ead
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433341"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075131"
 ---
 # <a name="using-the-classes-to-write-applications-for-windows"></a>Windows Uygulamaları Yazmak için Sınıfları Kullanma
 
@@ -66,17 +66,17 @@ Framework'ün diğer bölümleri şunlardır:
 
 - [Bellek Yönetimi](../mfc/memory-management.md)
 
-     Windows işletim sistemi için uygulamalar yazma bir avantajını sunarak yanı sıra, MFC de özellikle bağlama ve katıştırma teknoloji OLE kullanan uygulamalar yazmak kolaylaşır. Uygulamanızı bir OLE görsel kapsayıcı, bir OLE görsel düzenleme sunucusu veya her ikisi de düzenleme yapabileceğiniz ve böylece diğer uygulamalar, uygulamanız nesneleri kullanın veya bile uzaktan sürücü Otomasyon ekleyebilirsiniz.
+   Windows işletim sistemi için uygulamalar yazma bir avantajını sunarak yanı sıra, MFC de özellikle bağlama ve katıştırma teknoloji OLE kullanan uygulamalar yazmak kolaylaşır. Uygulamanızı bir OLE görsel kapsayıcı, bir OLE görsel düzenleme sunucusu veya her ikisi de düzenleme yapabileceğiniz ve böylece diğer uygulamalar, uygulamanız nesneleri kullanın veya bile uzaktan sürücü Otomasyon ekleyebilirsiniz.
 
 - [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
 
-     OLE denetim Geliştirme Seti (CDK) artık framework ile tamamen tümleşiktir. Bu makalede ailesi ile MFC ActiveX denetimi geliştirme genel bir bakış sağlar. (ActiveX denetimlerini eski adı OLE denetimleri bilinirdi.)
+   OLE denetim Geliştirme Seti (CDK) artık framework ile tamamen tümleşiktir. Bu makalede ailesi ile MFC ActiveX denetimi geliştirme genel bir bakış sağlar. (ActiveX denetimlerini eski adı OLE denetimleri bilinirdi.)
 
 - [Veritabanı programlama](../data/data-access-programming-mfc-atl.md)
 
-     MFC Ayrıca iki veri yazma erişimi basitleştirin ve veritabanı sınıfları kümesi sağlayan uygulamalar. ODBC veritabanı sınıfları kullanarak, bir açık veritabanı bağlantısı (ODBC) sürücüsü aracılığıyla veritabanlarına bağlanmak, kayıtları tabloları seçin ve kayıt bilgileri görüntüleme bir ekrandaki formu. Veri erişim nesnesi (DAO) sınıflarını kullanarak, Microsoft Jet veritabanı altyapısı veya ODBC veri kaynakları gibi dış (Jet dışı) veri kaynakları, veritabanları ile çalışabilir.
+   MFC Ayrıca iki veri yazma erişimi basitleştirin ve veritabanı sınıfları kümesi sağlayan uygulamalar. ODBC veritabanı sınıfları kullanarak, bir açık veritabanı bağlantısı (ODBC) sürücüsü aracılığıyla veritabanlarına bağlanmak, kayıtları tabloları seçin ve kayıt bilgileri görüntüleme bir ekrandaki formu. Veri erişim nesnesi (DAO) sınıflarını kullanarak, Microsoft Jet veritabanı altyapısı veya ODBC veri kaynakları gibi dış (Jet dışı) veri kaynakları, veritabanları ile çalışabilir.
 
-     Ayrıca, MFC, Unicode kullanan uygulamalar yazmak için tam olarak etkinleştirilir ve çok baytlı karakter kümeleri (MBCS), özellikle çift baytlı karakter kümeleri (DBCS).
+   Ayrıca, MFC, Unicode kullanan uygulamalar yazmak için tam olarak etkinleştirilir ve çok baytlı karakter kümeleri (MBCS), özellikle çift baytlı karakter kümeleri (DBCS).
 
 MFC belge genel bir kılavuz için bkz [genel MFC konuları](../mfc/general-mfc-topics.md).
 

@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93ff10a6e702e0250303897c6e52e5ec224d2f87
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6b40f7e3d4a37dbc73494444fbfcc398621b7ec4
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436435"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080019"
 ---
 # <a name="cd2dbitmapbrush-class"></a>CD2DBitmapBrush sınıfı
 
@@ -162,7 +162,6 @@ CD2DBitmapBrush(
     CD2DBrushProperties* pBrushProperties = NULL,
     BOOL bAutoDestroy = TRUE);
 
-
 CD2DBitmapBrush(
     CRenderTarget* pParentTarget,
     UINT uiResID,
@@ -171,7 +170,6 @@ CD2DBitmapBrush(
     D2D1_BITMAP_BRUSH_PROPERTIES* pBitmapBrushProperties = NULL,
     CD2DBrushProperties* pBrushProperties = NULL,
     BOOL bAutoDestroy = TRUE);
-
 
 CD2DBitmapBrush(
     CRenderTarget* pParentTarget,

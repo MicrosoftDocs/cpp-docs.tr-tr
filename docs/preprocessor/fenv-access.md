@@ -18,23 +18,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eeb138a8b2598c209005031a3ccd3104fead48dc
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 3c06556d47bf0c471aa7e4fab610971e2b7ad11e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42465907"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081475"
 ---
 # <a name="fenvaccess"></a>fenv_access
 Devre dışı bırakır (**üzerinde**) ya da etkinleştirir (**kapalı**) kayan nokta ortam değişebilir iyileştirmeleri, testleri ve modu değişiklikleri bayrak.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **#pragma fenv_access (** { **üzerinde** | **kapalı** } **)**  
+> **#pragma fenv_access (** { **üzerinde** | **kapalı** } **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, **fenv_access** olduğu **kapalı**. Derleyici, kabul edilebilir değilse kodunuzu erişemeyebilir veya kayan nokta ortamını işleyin ve ardından birçok kayan nokta kodu en iyi duruma getirme gerçekleştirebilirsiniz. Ayarlama **fenv_access** için **üzerinde** derleyici kodunuzu kayan nokta ortamın durumu bayrakları, özel durumlar, test etmek için ya da Denetim modu bayrakları ayarlamanızı erişimi olduğunu bildirmek için. Böylece kodunuzu kayan nokta ortam tutarlı bir şekilde erişebilir, derleyici bu iyileştirmeler devre dışı bırakır. 
+Varsayılan olarak, **fenv_access** olduğu **kapalı**. Derleyici, kabul edilebilir değilse kodunuzu erişemeyebilir veya kayan nokta ortamını işleyin ve ardından birçok kayan nokta kodu en iyi duruma getirme gerçekleştirebilirsiniz. Ayarlama **fenv_access** için **üzerinde** derleyici kodunuzu kayan nokta ortamın durumu bayrakları, özel durumlar, test etmek için ya da Denetim modu bayrakları ayarlamanızı erişimi olduğunu bildirmek için. Böylece kodunuzu kayan nokta ortam tutarlı bir şekilde erişebilir, derleyici bu iyileştirmeler devre dışı bırakır.
 
 Kayan nokta davranışı hakkında daha fazla bilgi için bkz. [FP (Floating-Point davranışını belirtin)](../build/reference/fp-specify-floating-point-behavior.md).
 

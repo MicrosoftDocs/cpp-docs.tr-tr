@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34ac2ddb08b485a56274f6067871c5bbd5893f94
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fb6e87d9deac7a6d0082480196b7dbeecf5a85b8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434823"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081085"
 ---
 # <a name="cpaneframewnd-class"></a>CPaneFrameWnd sınıfı
 
@@ -312,7 +312,6 @@ virtual void AdjustLayout();
 
 ##  <a name="adjustpaneframes"></a>  CPaneFrameWnd::AdjustPaneFrames
 
-
 ```
 virtual void AdjustPaneFrames();
 ```
@@ -401,7 +400,6 @@ Mini çerçeve için sabitlenebilir olursa sıfır dışı *pDockingBar*; Aksi d
 
 ##  <a name="checkgrippervisibility"></a>  CPaneFrameWnd::CheckGripperVisibility
 
-
 ```
 virtual void CheckGripperVisibility();
 ```
@@ -440,9 +438,11 @@ virtual BOOL Create(
 *Rect*<br/>
 [in] Başlangıç boyutu ve Mini çerçeve gizlenmek konumunu belirtir.
 
-[in] [out] *pParentWnd* Mini çerçeve gizlenmek üst çerçevenin belirtir. Bu değer NULL olmamalıdır.
+*pParentWnd*<br/>
+[out içinde] Mini çerçeve gizlenmek üst çerçevenin belirtir. Bu değer NULL olmamalıdır.
 
-[in] [out] *pContext* belirtir kullanıcı tanımlı bağlamı.
+*pContext*<br/>
+[out içinde] Kullanıcı tanımlı bağlam belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -480,9 +480,11 @@ virtual BOOL CreateEx(
 *Rect*<br/>
 [in] Başlangıç boyutu ve Mini çerçeve gizlenmek konumunu belirtir.
 
-[in] [out] *pParentWnd* Mini çerçeve gizlenmek üst çerçevenin belirtir. Bu değer NULL olmamalıdır.
+*pParentWnd*<br/>
+[out içinde] Mini çerçeve gizlenmek üst çerçevenin belirtir. Bu değer NULL olmamalıdır.
 
-[in] [out] *pContext* belirtir kullanıcı tanımlı bağlamı.
+*pContext*<br/>
+[out içinde] Kullanıcı tanımlı bağlam belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -607,7 +609,6 @@ Bu yöntem açıklamalı alt yazı metni görüntüler çerçevesi tarafından �
 
 ##  <a name="getdockingmanager"></a>  CPaneFrameWnd::GetDockingManager
 
-
 ```
 CDockingManager* GetDockingManager() const;
 ```
@@ -648,7 +649,6 @@ virtual CWnd* GetFirstVisiblePane() const;
 
 ##  <a name="gethotpoint"></a>  CPaneFrameWnd::GetHotPoint
 
-
 ```
 CPoint GetHotPoint() const;
 ```
@@ -687,7 +687,6 @@ Mini çerçeve pencere bölmelerinde sayısı. Bu değer sıfır olabilir.
 
 ##  <a name="getparent"></a>  CPaneFrameWnd::GetParent
 
-
 ```
 CWnd* GetParent();
 ```
@@ -698,7 +697,6 @@ CWnd* GetParent();
 
 ##  <a name="getpinstate"></a>  CPaneFrameWnd::GetPinState
 
-
 ```
 BOOL GetPinState() const;
 ```
@@ -708,7 +706,6 @@ BOOL GetPinState() const;
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getrecentfloatingrect"></a>  CPaneFrameWnd::GetRecentFloatingRect
-
 
 ```
 CRect GetRecentFloatingRect() const;
@@ -770,7 +767,6 @@ Aşağıdaki değerlerden biri:
 
 ##  <a name="iscaptured"></a>  CPaneFrameWnd::IsCaptured
 
-
 ```
 BOOL IsCaptured() const;
 ```
@@ -780,7 +776,6 @@ BOOL IsCaptured() const;
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="isdelayshow"></a>  CPaneFrameWnd::IsDelayShow
-
 
 ```
 BOOL IsDelayShow() const;
@@ -991,14 +986,13 @@ Bir mini çerçeve bölmesinde gösterilen veya gizli framework tarafından ça�
 
 ##  <a name="pin"></a>  CPaneFrameWnd::Pin
 
-
 ```
 void Pin(BOOL bPin = TRUE);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bPin*
+[in] *bPin*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1141,19 +1135,17 @@ virtual void SetCaptionButtons(DWORD dwButtons);
 
 ##  <a name="setdelayshow"></a>  CPaneFrameWnd::SetDelayShow
 
-
 ```
 void SetDelayShow(BOOL bDelayShow);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bDelayShow*
+[in] *bDelayShow*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setdockingmanager"></a>  CPaneFrameWnd::SetDockingManager
-
 
 ```
 void SetDockingManager(CDockingManager* pManager);
@@ -1161,7 +1153,7 @@ void SetDockingManager(CDockingManager* pManager);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pManager*
+[in] *pManager*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1193,14 +1185,13 @@ virtual void SetDockState(CDockingManager* pDockManager);
 
 ##  <a name="sethotpoint"></a>  CPaneFrameWnd::SetHotPoint
 
-
 ```
 void SetHotPoint(CPoint& ptNew);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *ptNew*
+[in] *ptNew*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1267,19 +1258,17 @@ Yöntem başarılı olduysa TRUE; Aksi takdirde FALSE.
 
 ##  <a name="storerecentdocksiteinfo"></a>  CPaneFrameWnd::StoreRecentDockSiteInfo
 
-
 ```
 virtual void StoreRecentDockSiteInfo(CPane* pBar);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="storerecenttabrelatedinfo"></a>  CPaneFrameWnd::StoreRecentTabRelatedInfo
-
 
 ```
 virtual void StoreRecentTabRelatedInfo(
@@ -1289,8 +1278,8 @@ virtual void StoreRecentTabRelatedInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDockingBar*<br/>
-[in] [in] *pTabbedBar*
+[in] *pDockingBar*<br/>
+[in] *pTabbedBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 

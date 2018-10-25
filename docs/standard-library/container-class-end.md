@@ -14,26 +14,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d22551a9832b18bbb246ea99dafe75dad11c361
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0062b63c839b7f7f5b3b4c16bf3779e44f7c983b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842488"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083132"
 ---
 # <a name="container-classend"></a>Kapsayıcı Sınıfı::end
 
 > [!NOTE]
-> Bu konu, Visual C++ belge C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsel bir örnek olarak kullanılıyor. Daha fazla bilgi için bkz: [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
-Yineleyici dizisi yalnızca ötesinde işaret döndürür.
+Son sırasının hemen ötesine işaret eden bir yineleyici döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
 
     const_iterator end() const;
-
 
 iterator end();
 ```

@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef45fa1804b9199a6fc7d34b6c5d1aca278d47d1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 562f4920da6eff5af665b8424471ca847de169c7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424358"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082280"
 ---
 # <a name="casyncsocket-class"></a>CAsyncSocket sınıfı
 
@@ -326,7 +326,6 @@ BOOL Bind(
     UINT nSocketPort,
     LPCTSTR lpszSocketAddress = NULL);
 
-
 BOOL Bind (
     const SOCKADDR* lpSockAddr,
     int nSockAddrLen);
@@ -406,7 +405,6 @@ Bir bağlantısız akış veya veri birimi yuva bağlantı kurmak için bu üye 
 BOOL Connect(
     LPCTSTR lpszHostAddress,
     UINT nHostPort);
-
 
 BOOL Connect(
     const SOCKADDR* lpSockAddr,
@@ -605,7 +603,6 @@ BOOL GetPeerName(
     CString& rPeerAddress,
     UINT& rPeerPort);
 
-
 BOOL GetPeerName(
     SOCKADDR* lpSockAddr,
     int* lpSockAddrLen);
@@ -691,7 +688,6 @@ Bir yuva yerel adı almak için bu üye işlevini çağırın.
 BOOL GetSockName(
     CString& rSocketAddress,
     UINT& rSocketPort);
-
 
 BOOL GetSockName(
     SOCKADDR* lpSockAddr,
@@ -1237,7 +1233,6 @@ int ReceiveFrom(
     UINT& rSocketPort,
     int nFlags = 0);
 
-
 int ReceiveFrom(
     void* lpBuf,
     int nBufLen,
@@ -1480,7 +1475,6 @@ int SendTo(
     UINT nHostPort,
     LPCTSTR lpszHostAddress = NULL,
     int nFlags = 0);
-
 
 int SendTo(
     const void* lpBuf,

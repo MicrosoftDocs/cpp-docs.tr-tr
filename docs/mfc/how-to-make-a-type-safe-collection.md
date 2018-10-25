@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58d0d250e17ddd8beaef2a9f5cff4d4e1046fdcb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a7368e067e1324c3263440a7a6b165099c870735
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380456"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078160"
 ---
 # <a name="how-to-make-a-type-safe-collection"></a>Nasıl yapılır: Tür Kullanımı Uyumlu Koleksiyon Yapma
 
@@ -45,11 +45,11 @@ Microsoft Foundation Class Kitaplığı, C++ şablonları temel alan önceden ta
 
 1. Koleksiyon sınıfı türünün bir değişkeni bildirir. Örneğin:
 
-     [!code-cpp[NVC_MFCCollections#7](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_1.cpp)]
+   [!code-cpp[NVC_MFCCollections#7](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_1.cpp)]
 
 1. Üye işlevlerini koleksiyon nesnesinin çağırın. Örneğin:
 
-     [!code-cpp[NVC_MFCCollections#8](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_2.cpp)]
+   [!code-cpp[NVC_MFCCollections#8](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_2.cpp)]
 
 1. Gerekirse, uygulama [yardımcı işlevleri](../mfc/reference/collection-class-helpers.md) ve [SerializeElements](../mfc/reference/collection-class-helpers.md#serializeelements). Bu işlevler uygulama hakkında daha fazla bilgi için bkz: [uygulama yardımcı işlevleri](#_core_implementing_helper_functions).
 
@@ -85,27 +85,27 @@ MFC, MFC sürüm 1.0 ile tanıtılan koleksiyon sınıfları da destekler. Bu s�
 
 1. Şablon Olmayandan sınıflardan biri gibi kullanın `CWordArray`, doğrudan.
 
-     Örneğin, oluşturabileceğiniz bir `CWordArray` ve 32-bit değerleri ekleyin ve ardından saklayabilirsiniz. Daha fazla yapmak için bir şey yoktur. Yalnızca önceden tanımlanmış işlevlerini kullanırsınız.
+   Örneğin, oluşturabileceğiniz bir `CWordArray` ve 32-bit değerleri ekleyin ve ardından saklayabilirsiniz. Daha fazla yapmak için bir şey yoktur. Yalnızca önceden tanımlanmış işlevlerini kullanırsınız.
 
-     Önceden tanımlanmış bir koleksiyonu gibi kullanabilir `CObList`, türetilen herhangi bir nesne tutacak `CObject`. A `CObList` koleksiyon işaretçileri tutmak için tanımlanmış `CObject`. Listeden bir nesne aldığınızda, bu yana doğru türe sonucu cast gerekebilir `CObList` işlevler için işaretçiler döndürür `CObject`. Örneğin, depoladığınız `CPerson` nesneler bir `CObList` koleksiyonuna sahip bir işaretçi olarak alınan bir öğeyi dönüştürülecek bir `CPerson` nesne. Aşağıdaki örnekte bir `CObList` tutmak için koleksiyon `CPerson` nesneler:
+   Önceden tanımlanmış bir koleksiyonu gibi kullanabilir `CObList`, türetilen herhangi bir nesne tutacak `CObject`. A `CObList` koleksiyon işaretçileri tutmak için tanımlanmış `CObject`. Listeden bir nesne aldığınızda, bu yana doğru türe sonucu cast gerekebilir `CObList` işlevler için işaretçiler döndürür `CObject`. Örneğin, depoladığınız `CPerson` nesneler bir `CObList` koleksiyonuna sahip bir işaretçi olarak alınan bir öğeyi dönüştürülecek bir `CPerson` nesne. Aşağıdaki örnekte bir `CObList` tutmak için koleksiyon `CPerson` nesneler:
 
-     [!code-cpp[NVC_MFCCollections#10](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_4.cpp)]
+   [!code-cpp[NVC_MFCCollections#10](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_4.cpp)]
 
-     Bu teknik, önceden tanımlı bir koleksiyon türü kullanarak ve gerekirse atama birçok koleksiyon gereksinimleriniz için yeterli olabilir. Daha fazla işlevsellik veya daha fazla tür güvenliği gerekirse, şablona dayalı bir sınıf kullanma veya bir sonraki yordamı izleyin.
+   Bu teknik, önceden tanımlı bir koleksiyon türü kullanarak ve gerekirse atama birçok koleksiyon gereksinimleriniz için yeterli olabilir. Daha fazla işlevsellik veya daha fazla tür güvenliği gerekirse, şablona dayalı bir sınıf kullanma veya bir sonraki yordamı izleyin.
 
 #### <a name="to-derive-and-extend-a-nontemplate-type-safe-collection"></a>Türetilir ve bir şablon Olmayandan tür kullanımı uyumlu koleksiyon genişletmek için
 
 1. Kendi koleksiyon sınıfı önceden tanımlanmış bir şablon Olmayandan sınıflarının birinden türetilir.
 
-     Sınıfınıza türetilen bir tür kullanımı uyumlu arabirimi var olan işlevleri sağlamak için tür açısından güvenli bir sarmalayıcı işlevleri ekleyebilirsiniz.
+   Sınıfınıza türetilen bir tür kullanımı uyumlu arabirimi var olan işlevleri sağlamak için tür açısından güvenli bir sarmalayıcı işlevleri ekleyebilirsiniz.
 
-     Örneğin, bir listeden türetilmiş `CObList` tutacak `CPerson` sarmalayıcı işlevleri eklemek nesneleri `AddHeadPerson` ve `GetHeadPerson`, aşağıda gösterildiği gibi.
+   Örneğin, bir listeden türetilmiş `CObList` tutacak `CPerson` sarmalayıcı işlevleri eklemek nesneleri `AddHeadPerson` ve `GetHeadPerson`, aşağıda gösterildiği gibi.
 
-     [!code-cpp[NVC_MFCCollections#11](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_5.h)]
+   [!code-cpp[NVC_MFCCollections#11](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_5.h)]
 
-     Bu sarmalayıcı işlevleri ekleme ve alma için tür-güvenli bir yol sağlayan `CPerson` nesnelerden türetilen listesi. İçin gördüğünüz `GetHeadPerson` işlevi, yalnızca tür atama şifrelenmiş.
+   Bu sarmalayıcı işlevleri ekleme ve alma için tür-güvenli bir yol sağlayan `CPerson` nesnelerden türetilen listesi. İçin gördüğünüz `GetHeadPerson` işlevi, yalnızca tür atama şifrelenmiş.
 
-     Yalnızca tür kullanımı uyumlu sarmalayıcılar var olan işlevselliği sarmalama yerine koleksiyon özelliklerini genişleten yeni işlevlerini tanımlama, yeni işlevsellik de ekleyebilirsiniz. Örneğin, makaleyi [CObject koleksiyonundaki tüm nesneleri silme](../mfc/deleting-all-objects-in-a-cobject-collection.md) bir listede yer alan nesneleri silmek için bir işlev açıklar. Bu işlev için türetilmiş sınıf üyesi işlevi olarak eklenemedi.
+   Yalnızca tür kullanımı uyumlu sarmalayıcılar var olan işlevselliği sarmalama yerine koleksiyon özelliklerini genişleten yeni işlevlerini tanımlama, yeni işlevsellik de ekleyebilirsiniz. Örneğin, makaleyi [CObject koleksiyonundaki tüm nesneleri silme](../mfc/deleting-all-objects-in-a-cobject-collection.md) bir listede yer alan nesneleri silmek için bir işlev açıklar. Bu işlev için türetilmiş sınıf üyesi işlevi olarak eklenemedi.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

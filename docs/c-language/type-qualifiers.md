@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ecac60a1b9cbd2758090e52d917c7a65259d62d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4dc0fd45887975c9b50cee141b0c6e8faca33513
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46094397"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083249"
 ---
 # <a name="type-qualifiers"></a>Tür Niteleyicileri
 
@@ -69,7 +69,7 @@ Bu listeyi nasıl kullanılacağını açıklar **const** ve `volatile`.
 
 - Derleyici, programda herhangi bir noktada varsayar bir `volatile` değişkenin değerini değiştirir veya kullanan bilinmeyen bir işlem tarafından erişilebilir. Bu nedenle, komutunda belirtilen iyileştirmelere bakılmaksızın satır, her atama için kod veya, başvuru bir `volatile` değişkeni hiçbir etkiye sahip olma görünse bile oluşturulmalıdır.
 
-     Varsa `volatile` tek başına, kullanılan `int` varsayılır. `volatile` Tür tanımlayıcısı, güvenilir özel bellek konumlarına erişim sağlamak için kullanılabilir. Kullanım `volatile` g/ç Denetimi erişilen veya sinyal işleyiciler tarafından değiştirilmiş olabilir veri nesneleri ile eşzamanlı olarak yürütülen programlara veya bellek eşlemeli gibi özel bir donanım kaydeder. Bir değişken olarak bildirebilirsiniz `volatile` olacak şekilde tek bir başvuru veya yaşam çevirebilirsiniz için `volatile`.
+   Varsa `volatile` tek başına, kullanılan `int` varsayılır. `volatile` Tür tanımlayıcısı, güvenilir özel bellek konumlarına erişim sağlamak için kullanılabilir. Kullanım `volatile` g/ç Denetimi erişilen veya sinyal işleyiciler tarafından değiştirilmiş olabilir veri nesneleri ile eşzamanlı olarak yürütülen programlara veya bellek eşlemeli gibi özel bir donanım kaydeder. Bir değişken olarak bildirebilirsiniz `volatile` olacak şekilde tek bir başvuru veya yaşam çevirebilirsiniz için `volatile`.
 
 - Bir öğe olmalı **const** ve `volatile`, bu durumda öğe kendi program tarafından yasal olarak değiştirilemedi, ancak bazı zaman uyumsuz bir işlem tarafından değiştirilmiş.
 

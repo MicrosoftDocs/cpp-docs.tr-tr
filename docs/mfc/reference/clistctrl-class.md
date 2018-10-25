@@ -274,12 +274,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c530a9853aad3e16e5e4094f4d90e30c2643c0d8
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: f89d70ed5b7a84cdbed61784b59b0748abc6432d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890900"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083327"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
 
@@ -444,19 +444,19 @@ Liste Görünümü denetimi "görünümler" adlı dört farklı şekilde, bunlar
 
 - Simge Görünümü
 
-     Her öğe bir tam boyutlu simgesi (32 x 32 piksel) altındaki bir etiket olarak görüntülenir. Kullanıcı listesi görünümü penceresindeki herhangi bir konuma öğeleri sürükleyebilirsiniz.
+   Her öğe bir tam boyutlu simgesi (32 x 32 piksel) altındaki bir etiket olarak görüntülenir. Kullanıcı listesi görünümü penceresindeki herhangi bir konuma öğeleri sürükleyebilirsiniz.
 
 - Küçük Simge görünümünde
 
-     Her öğenin sağına etiketi ile küçük bir simge (16 x 16 piksel) görünür. Kullanıcı listesi görünümü penceresindeki herhangi bir konuma öğeleri sürükleyebilirsiniz.
+   Her öğenin sağına etiketi ile küçük bir simge (16 x 16 piksel) görünür. Kullanıcı listesi görünümü penceresindeki herhangi bir konuma öğeleri sürükleyebilirsiniz.
 
 - Liste görünümü
 
-     Her öğe bir etiketin sağında içeren küçük bir simge olarak görünür. Öğeleri, sütunlarda düzenlenir ve liste görünümü penceresindeki herhangi bir konuma sürüklenemez.
+   Her öğe bir etiketin sağında içeren küçük bir simge olarak görünür. Öğeleri, sütunlarda düzenlenir ve liste görünümü penceresindeki herhangi bir konuma sürüklenemez.
 
 - Rapor görünümü
 
-     Her öğe kendi satırında sağa sütun düzenlenir ek bilgilerle görünür. En soldaki sütuna etiket ve küçük simge ve uygulama tarafından belirtilen alt öğeleri sonraki sütunları içerir. Bir katıştırılmış üstbilgi denetimi (sınıfı [CHeaderCtrl](../../mfc/reference/cheaderctrl-class.md)) bu sütunların uygular. Üstbilgi denetimi ve bir rapor görünümünde sütunları hakkında daha fazla bilgi için bkz. [CListCtrl kullanma: (rapor görünümü) denetimine sütunlar ekleme](../../mfc/adding-columns-to-the-control-report-view.md).
+   Her öğe kendi satırında sağa sütun düzenlenir ek bilgilerle görünür. En soldaki sütuna etiket ve küçük simge ve uygulama tarafından belirtilen alt öğeleri sonraki sütunları içerir. Bir katıştırılmış üstbilgi denetimi (sınıfı [CHeaderCtrl](../../mfc/reference/cheaderctrl-class.md)) bu sütunların uygular. Üstbilgi denetimi ve bir rapor görünümünde sütunları hakkında daha fazla bilgi için bkz. [CListCtrl kullanma: (rapor görünümü) denetimine sütunlar ekleme](../../mfc/adding-columns-to-the-control-report-view.md).
 
 Geçerli görünümü geçerli liste görünüm denetiminin stilini belirler. Bu stiller ve kullanımları hakkında daha fazla bilgi için bkz. [CListCtrl kullanma: Liste Denetim stillerini değiştirme](../../mfc/changing-list-control-styles.md).
 
@@ -466,19 +466,19 @@ Standart liste stilleri yanı sıra, sınıf `CListCtrl` zenginleştirilmiş iş
 
 - Vurgulu seçimi
 
-     İmleç öğe üzerinde belirli bir süre kaldığında etkin olduğunda, bir öğenin otomatik seçim sağlar.
+   İmleç öğe üzerinde belirli bir süre kaldığında etkin olduğunda, bir öğenin otomatik seçim sağlar.
 
 - Sanal liste görünümleri
 
-     Etkin olduğunda, DWORD öğeyi destekleyebilir desteklemek bir denetim sağlar. Uygulama üzerindeki öğesi verileri yönetme yükü yerleştirerek bu mümkündür. Öğe seçimi ve odak bilgileri dışında tüm öğe bilgi uygulama tarafından yönetiliyor olması gerekir. Daha fazla bilgi için [CListCtrl kullanma: sanal liste denetimleri](../../mfc/virtual-list-controls.md).
+   Etkin olduğunda, DWORD öğeyi destekleyebilir desteklemek bir denetim sağlar. Uygulama üzerindeki öğesi verileri yönetme yükü yerleştirerek bu mümkündür. Öğe seçimi ve odak bilgileri dışında tüm öğe bilgi uygulama tarafından yönetiliyor olması gerekir. Daha fazla bilgi için [CListCtrl kullanma: sanal liste denetimleri](../../mfc/virtual-list-controls.md).
 
 - Tek ve iki tıklamayla etkinleştirme
 
-     Etkin olduğunda, sıcak takibi (otomatik öğesi metni vurgulama) ve bir veya iki tıklama etkinleştirme vurgulanan öğe sağlar.
+   Etkin olduğunda, sıcak takibi (otomatik öğesi metni vurgulama) ve bir veya iki tıklama etkinleştirme vurgulanan öğe sağlar.
 
 - Sürükle ve bırak Sütun sıralama
 
-     Etkin olduğunda, bir liste görünümü denetimi sütunların sürükle ve bırak yeniden sıralama sağlar. Yalnızca rapor görünümü'nde kullanılabilir.
+   Etkin olduğunda, bir liste görünümü denetimi sütunların sürükle ve bırak yeniden sıralama sağlar. Yalnızca rapor görünümü'nde kullanılabilir.
 
 Genişletilmiş stiller bu yeni kullanma hakkında bilgi için bkz: [CListCtrl kullanma: Liste Denetim stillerini değiştirme](../../mfc/changing-list-control-styles.md).
 
@@ -496,19 +496,19 @@ Simgeler, üstbilgi öğesi görüntüler ve uygulama - liste görünümü öğe
 
 - Büyük simge
 
-     Simge görünümünde tam boyutlu simgeleri için kullanılır.
+   Simge görünümünde tam boyutlu simgeleri için kullanılır.
 
 - Küçük simge
 
-     Küçük simge, liste ve rapor görünümlerini daha küçük simge görünümünde kullanılan simgeler sürümleri için kullanılır.
+   Küçük simge, liste ve rapor görünümlerini daha küçük simge görünümünde kullanılan simgeler sürümleri için kullanılır.
 
 - Uygulama tanımlı durumu
 
-     Bir uygulama tanımlı durumu belirtmek için bir öğenin simgesini yanında görüntülenen durum görüntüleri içerir.
+   Bir uygulama tanımlı durumu belirtmek için bir öğenin simgesini yanında görüntülenen durum görüntüleri içerir.
 
 - Üstbilgi öğesi
 
-     Rapor Görünümü'nde, her üstbilgi denetim öğesinde görünen küçük resimler için kullanılır.
+   Rapor Görünümü'nde, her üstbilgi denetim öğesinde görünen küçük resimler için kullanılır.
 
 Varsayılan olarak, bir liste görünümü denetimi, kaldırıldığında kendisine atanan görüntü listeleri yok eder; Ancak, geliştirici, artık kullanıldığında, her bir görüntü listesi uygulama tarafından belirlenen şekilde yok edilirken bu davranışı özelleştirebilirsiniz. Daha fazla bilgi için [CListCtrl kullanma: liste öğeleri ve görüntü listeleri](../list-items-and-image-lists.md).
 

@@ -102,12 +102,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43f180fd62d4e79f64119097401632caca9b44fe
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d50731fede9a65e8d354008e1cee0075b43dd163
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399409"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083535"
 ---
 # <a name="cmfcvisualmanageroffice2003-class"></a>CMFCVisualManagerOffice2003 sınıfı
 
@@ -803,10 +803,11 @@ virtual BOOL OnDrawBrowseButton(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-[in] [in] *rect*
-*pEdit*<br/>
-[in] [in] *durumu* [in] *clrText*
+[in] *pDC*<br/>
+[in] *dikdörtgen*<br/>
+[in] *pEdit*<br/>
+[in] *durumu*<br/>
+[in] *clrText*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1057,8 +1058,9 @@ virtual void OnDrawHeaderCtrlBorder(
 *Rect*<br/>
 [in] Üstbilgi denetimi sınırlarını belirten bir dikdörtgen.
 
-*bIsPressed*<br/>
-[in] [in] *bIsHighlighted* üstbilgi denetimine basıldığında olup olmadığını gösteren bir Boole parametresi.
+[in] *bIsPressed*<br/>
+[in] *bIsHighlighted*<br/>
+Üstbilgi denetimine basıldığında olup olmadığını gösteren bir Boole parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1717,8 +1719,9 @@ virtual void OnDrawStatusBarProgress(
 *clrBar*<br/>
 [in] İlerleme çubuğu için ilk rengi. , Bir renk gradyan başlangıcı ya da ilerleme çubuğu tam rengi değerdir.
 
-*clrProgressBarDest*<br/>
-[in] [in] *clrProgressText* [in] *bProgressText*
+[in] *clrProgressBarDest*<br/>
+[in] *clrProgressText*<br/>
+[in] *bProgressText*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 

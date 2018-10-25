@@ -46,12 +46,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24eb9bbad0e5732eaba523abcaa93eecd6e7c240
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e1ccd20476d7888f687d077a3356ac51f2f1a529
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719452"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082560"
 ---
 # <a name="ctype-class"></a>ctype Sınıfı
 
@@ -176,7 +176,6 @@ virtual bool do_is(
     mask maskVal,
     CharType ch) const;
 
-
 virtual const CharType *do_is(
     const CharType* first,
     const CharType* last,
@@ -222,7 +221,6 @@ Türü bir karakteri dönüştürmek için çağrılan sanal işlev `CharType` t
 virtual char do_narrow(
     CharType ch,
     char default = '\0') const;
-
 
 virtual const CharType* do_narrow(
     const CharType* first,
@@ -337,7 +335,6 @@ Bir karakteri ya da karakter aralığını küçük harflere dönüştürmek iç
 ```cpp
 virtual CharType do_tolower(CharType ch) const;
 
-
 virtual const CharType *do_tolower(
     CharType* first,
     const CharType* last) const;
@@ -373,7 +370,6 @@ Bir karakteri ya da karakter aralığını kendi büyük harflerine dönüştür
 ```cpp
 virtual CharType do_toupper(CharType ch) const;
 
-
 virtual const CharType *do_toupper(
     CharType* first,
     const CharType* last) const;
@@ -408,7 +404,6 @@ Her öğe ikinci korumalı üye şablon işlevi yerine geçer `first` [ `I`], i�
 
 ```cpp
 virtual CharType do_widen(char byte) const;
-
 
 virtual const char *do_widen(
     const char* first,
@@ -450,7 +445,6 @@ Tek bir karakter, belirli bir özniteliği olan veya bir aralıktaki her bir kar
 
 ```cpp
 bool is(mask maskVal, CharType ch) const;
-
 
 const CharType *is(
     const CharType* first,
@@ -530,7 +524,6 @@ Tür karakterleri dönüştürür `CharType` türü karşılık gelen karakterle
 
 ```cpp
 char narrow(CharType ch, char default = '\0') const;
-
 
 const CharType* narrow(
     const CharType* first,
@@ -710,7 +703,6 @@ Bir karakteri ya da karakter aralığını küçük harflere dönüştürür.
 
 ```cpp
 CharType tolower(CharType ch) const;
-
 
 const CharType *tolower(CharType* first, const CharType* last) const;
 ```

@@ -94,12 +94,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b51eccb4c76a3888eaa9e46faccdf00d3c2ade39
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: eb7c7f18fa0d0b2b39ac8d8bc29802836495741d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441778"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081059"
 ---
 # <a name="cpanedivider-class"></a>CPaneDivider sınıfı
 
@@ -202,19 +202,17 @@ Aşağıdaki örnek nasıl alındığını anlatan bir `CPaneDivider` nesnesinde
 
 ##  <a name="setautohidemode"></a>  CPaneDivider::SetAutoHideMode
 
-
 ```
 void SetAutoHideMode(BOOL bMode);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bMode*
+[in] *bMode*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setpanecontainermanager"></a>  CPaneDivider::SetPaneContainerManager
-
 
 ```
 void SetPaneContainerManager(CPaneContainerManager* p);
@@ -222,12 +220,11 @@ void SetPaneContainerManager(CPaneContainerManager* p);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *p*
+[in] *p*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="addpane"></a>  CPaneDivider::AddPane
-
 
 ```
 virtual void AddPane(CDockablePane* pBar);
@@ -235,18 +232,16 @@ virtual void AddPane(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="addpanecontainer"></a>  CPaneDivider::AddPaneContainer
 
-
 ```
 virtual BOOL AddPaneContainer(
     CPaneContainerManager& barContainerManager,
     BOOL bOuterEdge);
-
 
 virtual BOOL AddPaneContainer(
     CDockablePane* pTargetBar,
@@ -256,10 +251,10 @@ virtual BOOL AddPaneContainer(
 
 ### <a name="parameters"></a>Parametreler
 
-*barContainerManager*<br/>
-[in] [in] *bOuterEdge*
-*pTargetBar*<br/>
-[in] [in] *dwAlignment*
+[in] *barContainerManager*<br/>
+[in] *bOuterEdge*<br/>
+[in] *pTargetBar*<br/>
+[in] *dwAlignment*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -267,21 +262,19 @@ virtual BOOL AddPaneContainer(
 
 ##  <a name="addrecentpane"></a>  CPaneDivider::AddRecentPane
 
-
 ```
 virtual CDockablePane* AddRecentPane(CDockablePane* pBar);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="calcexpecteddockedrect"></a>  CPaneDivider::CalcExpectedDockedRect
-
 
 ```
 virtual void CalcExpectedDockedRect(
@@ -294,15 +287,15 @@ virtual void CalcExpectedDockedRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*pWndToDock*<br/>
-[in] [in] *ptMouse*
-*rectResult*<br/>
-[in] [in] *bDrawTab* [in] *ppTargetBar*
+[in] *pWndToDock*<br/>
+[in] *ptMouse*<br/>
+[in] *rectResult*<br/>
+[in] *bDrawTab*<br/>
+[in] *ppTargetBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="calcfixedlayout"></a>  CPaneDivider::CalcFixedLayout
-
 
 ```
 virtual CSize CalcFixedLayout(
@@ -312,15 +305,14 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="parameters"></a>Parametreler
 
-*bStretch*<br/>
-[in] [in] *bHorz*
+[in] *bStretch*<br/>
+[in] *bHorz*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="checkvisibility"></a>  CPaneDivider::CheckVisibility
-
 
 ```
 virtual BOOL CheckVisibility();
@@ -332,10 +324,8 @@ virtual BOOL CheckVisibility();
 
 ##  <a name="cpanedivider"></a>  CPaneDivider::CPaneDivider
 
-
 ```
 CPaneDivider();
-
 
 CPaneDivider(
     BOOL bDefaultSlider,
@@ -344,15 +334,14 @@ CPaneDivider(
 
 ### <a name="parameters"></a>Parametreler
 
-*bDefaultSlider*<br/>
-[in] [in] *pParent*
+[in] *bDefaultSlider*<br/>
+[in] *pParent*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="createex"></a>  CPaneDivider::CreateEx
-
 
 ```
 virtual BOOL CreateEx(
@@ -366,19 +355,18 @@ virtual BOOL CreateEx(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwStyleEx*<br/>
-[in] [in] *dwStyle*
-*dikdörtgen*<br/>
-[in] [in] *pParentWnd*
-*nID*<br/>
-[in] [in] *pContext*
+[in] *dwStyleEx*<br/>
+[in] *dwStyle*<br/>
+[in] *dikdörtgen*<br/>
+[in] *pParentWnd*<br/>
+[in] *nID*<br/>
+[in] *pContext*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="doesallowdyninsertbefore"></a>  CPaneDivider::DoesAllowDynInsertBefore
-
 
 ```
 virtual BOOL DoesAllowDynInsertBefore() const;
@@ -390,7 +378,6 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 
 ##  <a name="doescontainfloatingpane"></a>  CPaneDivider::DoesContainFloatingPane
 
-
 ```
 virtual BOOL DoesContainFloatingPane();
 ```
@@ -401,7 +388,6 @@ virtual BOOL DoesContainFloatingPane();
 
 ##  <a name="findpanecontainer"></a>  CPaneDivider::FindPaneContainer
 
-
 ```
 CPaneContainer* FindPaneContainer(
     CDockablePane* pBar,
@@ -410,8 +396,8 @@ CPaneContainer* FindPaneContainer(
 
 ### <a name="parameters"></a>Parametreler
 
-*pBar*<br/>
-[in] [in] *bLeftBar*
+[in] *pBar*<br/>
+[in] *bLeftBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -419,21 +405,19 @@ CPaneContainer* FindPaneContainer(
 
 ##  <a name="findtabbedpane"></a>  CPaneDivider::FindTabbedPane
 
-
 ```
 CDockablePane* FindTabbedPane(UINT nID);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nID*
+[in] *nID*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getdefaultwidth"></a>  CPaneDivider::GetDefaultWidth
-
 
 ```
 static int __stdcall GetDefaultWidth();
@@ -444,7 +428,6 @@ static int __stdcall GetDefaultWidth();
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getfirstpane"></a>  CPaneDivider::GetFirstPane
-
 
 ```
 const CBasePane* GetFirstPane() const;
@@ -473,7 +456,6 @@ Bu yöntem, yalnızca varsayılan bölmesinde Bölücü çağrılmalıdır. Vars
 
 ##  <a name="getpanedividerstyle"></a>  CPaneDivider::GetPaneDividerStyle
 
-
 ```
 DWORD GetPaneDividerStyle() const;
 ```
@@ -501,7 +483,6 @@ Bu yöntem, yalnızca varsayılan bölmesinde Bölücü çağrılmalıdır. Vars
 
 ##  <a name="getrootcontainerrect"></a>  CPaneDivider::GetRootContainerRect
 
-
 ```
 CRect GetRootContainerRect();
 ```
@@ -511,7 +492,6 @@ CRect GetRootContainerRect();
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getwidth"></a>  CPaneDivider::GetWidth
-
 
 ```
 int GetWidth() const;
@@ -523,7 +503,6 @@ int GetWidth() const;
 
 ##  <a name="init"></a>  CPaneDivider::Init
 
-
 ```
 void Init(
     BOOL bDefaultSlider = FALSE,
@@ -532,13 +511,12 @@ void Init(
 
 ### <a name="parameters"></a>Parametreler
 
-*bDefaultSlider*<br/>
-[in] [in] *pParent*
+[in] *bDefaultSlider*<br/>
+[in] *pParent*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="insertpane"></a>  CPaneDivider::InsertPane
-
 
 ```
 virtual BOOL InsertPane(
@@ -550,17 +528,16 @@ virtual BOOL InsertPane(
 
 ### <a name="parameters"></a>Parametreler
 
-*pBarToInsert*<br/>
-[in] [in] *pTargetBar*
-*dwAlignment*<br/>
-[in] [in] *lpRect*
+[in] *pBarToInsert*<br/>
+[in] *pTargetBar*<br/>
+[in] *dwAlignment*<br/>
+[in] *lpRect*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="isautohidemode"></a>  CPaneDivider::IsAutoHideMode
-
 
 ```
 BOOL IsAutoHideMode() const;
@@ -572,7 +549,6 @@ BOOL IsAutoHideMode() const;
 
 ##  <a name="isdefault"></a>  CPaneDivider::IsDefault
 
-
 ```
 BOOL IsDefault() const;
 ```
@@ -582,7 +558,6 @@ BOOL IsDefault() const;
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="ishorizontal"></a>  CPaneDivider::IsHorizontal
-
 
 ```
 BOOL IsHorizontal() const;
@@ -602,7 +577,6 @@ AFX_IMPORT_DATA static int m_nDefaultWidth;
 
 ##  <a name="move"></a>  CPaneDivider::Move
 
-
 ```
 virtual void Move(
     CPoint& ptOffset,
@@ -611,8 +585,8 @@ virtual void Move(
 
 ### <a name="parameters"></a>Parametreler
 
-*ptOffset*<br/>
-[in] [in] *bAdjustLayout*
+[in] *ptOffset*<br/>
+[in] *bAdjustLayout*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -643,7 +617,6 @@ CPaneDivider::m_pSliderRTC = RUNTIME_CLASS(CMySpliter);
 
 ##  <a name="notifyaboutrelease"></a>  CPaneDivider::NotifyAboutRelease
 
-
 ```
 virtual void NotifyAboutRelease();
 ```
@@ -651,7 +624,6 @@ virtual void NotifyAboutRelease();
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="onshowpane"></a>  CPaneDivider::OnShowPane
-
 
 ```
 virtual void OnShowPane(
@@ -661,13 +633,12 @@ virtual void OnShowPane(
 
 ### <a name="parameters"></a>Parametreler
 
-*pBar*<br/>
-[in] [in] *bBilgi Göster*
+[in] *pBar*<br/>
+[in] *bBilgi Göster*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="releaseemptypanecontainers"></a>  CPaneDivider::ReleaseEmptyPaneContainers
-
 
 ```
 void ReleaseEmptyPaneContainers();
@@ -677,19 +648,17 @@ void ReleaseEmptyPaneContainers();
 
 ##  <a name="removepane"></a>  CPaneDivider::RemovePane
 
-
 ```
 virtual void RemovePane(CDockablePane* pBar);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="replacepane"></a>  CPaneDivider::ReplacePane
-
 
 ```
 virtual BOOL ReplacePane(
@@ -699,15 +668,14 @@ virtual BOOL ReplacePane(
 
 ### <a name="parameters"></a>Parametreler
 
-*pBarToReplace*<br/>
-[in] [in] *pBarToReplaceWith*
+[in] *pBarToReplace*<br/>
+[in] *pBarToReplaceWith*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="repositionpanes"></a>  CPaneDivider::RepositionPanes
-
 
 ```
 virtual void RepositionPanes(
@@ -717,13 +685,12 @@ virtual void RepositionPanes(
 
 ### <a name="parameters"></a>Parametreler
 
-*rectNew*<br/>
-[in] [in] *hdwp*
+[in] *rectNew*<br/>
+[in] *hdwp*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="serialize"></a>  CPaneDivider::Serialize
-
 
 ```
 void Serialize(CArchive& ar);
@@ -731,12 +698,11 @@ void Serialize(CArchive& ar);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *ar*
+[in] *ar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="showwindow"></a>  CPaneDivider::ShowWindow
-
 
 ```
 void ShowWindow(int nCmdShow);
@@ -744,12 +710,11 @@ void ShowWindow(int nCmdShow);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nCmdShow*
+[in] *nCmdShow*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="storerecentdocksiteinfo"></a>  CPaneDivider::StoreRecentDockSiteInfo
-
 
 ```
 void StoreRecentDockSiteInfo(CDockablePane* pBar);
@@ -757,12 +722,11 @@ void StoreRecentDockSiteInfo(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="storerecenttabrelatedinfo"></a>  CPaneDivider::StoreRecentTabRelatedInfo
-
 
 ```
 void StoreRecentTabRelatedInfo(
@@ -772,8 +736,8 @@ void StoreRecentTabRelatedInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDockingBar*<br/>
-[in] [in] *pTabbedBar*
+[in] *pDockingBar*<br/>
+[in] *pTabbedBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 

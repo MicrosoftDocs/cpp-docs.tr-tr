@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7bd8c505c857082732e56ff2b4bf1a5bed76647
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 913bc04533668e6576a84641937992504f49390a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420315"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080084"
 ---
 # <a name="activex-control-containers-handling-events-from-an-activex-control"></a>ActiveX Denetimi Kapsayıcıları: ActiveX Denetimindeki Etkinlikleri İşleme
 
@@ -34,7 +34,6 @@ Bu makalede, bir ActiveX denetimi kapsayıcısı ActiveX denetimleri için olay 
 
 >[!IMPORTANT]
 > ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
-
 
 > [!NOTE]
 >  Bu makalede, kapsayıcı ve yordamları ve kod örnekleri olarak Dai adlı bir katıştırılmış denetime adlı bir iletişim kutusu tabanlı ActiveX denetimi kapsayıcısı proje kullanır.
@@ -70,7 +69,7 @@ Olay havuzu makrolar hakkında daha fazla bilgi için bkz. [olay iç havuz eşle
 
 1. Özellikler penceresinde, katıştırılmış ActiveX denetimi denetim Kimliğini seçin. Bu örneğin `IDC_CIRCCTRL1`.
 
-     Özellikler penceresinde katıştırılmış ActiveX denetimi tarafından tetiklenen olayların listesini görüntüler. Hiçbir üye işlevini kalın yazılarak gösterilmiştir zaten atanmış işleyici işlevleri vardır.
+   Özellikler penceresinde katıştırılmış ActiveX denetimi tarafından tetiklenen olayların listesini görüntüler. Hiçbir üye işlevini kalın yazılarak gösterilmiştir zaten atanmış işleyici işlevleri vardır.
 
 1. İşlemek için iletişim kutusu sınıfı istediğiniz olayı seçin. Bu örnekte, seçin **tıklayın**.
 

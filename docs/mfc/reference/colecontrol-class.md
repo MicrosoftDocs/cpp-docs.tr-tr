@@ -344,12 +344,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 160d9857097c4cac1912d2ca44b0433905c238f5
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 9414384c791abe0fca05f9e0919012736c1a9167
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890874"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083600"
 ---
 # <a name="colecontrol-class"></a>COleControl sınıfı
 
@@ -4086,7 +4086,6 @@ void ThrowError(
     SCODE sc,
     UINT nDescriptionID,
     UINT nHelpID = -1);
-
 
 void ThrowError(
     SCODE sc,

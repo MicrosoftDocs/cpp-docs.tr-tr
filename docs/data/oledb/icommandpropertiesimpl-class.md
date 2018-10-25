@@ -27,87 +27,87 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 432fb57b1505733b4f9cbda4e558699a8108a3ad
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 40c1648131db04ed1629da453a16112debf6e6be
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084002"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053603"
 ---
 # <a name="icommandpropertiesimpl-class"></a>ICommandPropertiesImpl Sınıfı
 
-Bir uygulamasını sağlar [ICommandProperties](/previous-versions/windows/desktop/ms723044) arabirimi.  
-  
+Bir uygulamasını sağlar [ICommandProperties](/previous-versions/windows/desktop/ms723044) arabirimi.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-template <class T, class PropClass = T>  
-class ATL_NO_VTABLE ICommandPropertiesImpl   
-   : public ICommandProperties, public CUtlProps<PropClass>  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+template <class T, class PropClass = T>
+class ATL_NO_VTABLE ICommandPropertiesImpl
+   : public ICommandProperties, public CUtlProps<PropClass>
+```
+
+### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Türetilmiş sınıfınızın  
-  
+Türetilmiş sınıfınızın
+
 *PropClass*<br/>
-Özellikleri sınıfınıza.  
+Özellikleri sınıfınıza.
 
-## <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="interface-methods"></a>Arabirim yöntemleri  
-  
-|||  
-|-|-|  
-|[GetProperties](#getproperties)|Şu anda satır kümesi için istenen satır kümesi özelliği grubunda özelliklerinin listesini döndürür.|  
-|[SetProperties](#setproperties)|Satır kümesi özelliği grubunda özelliklerini ayarlar.|  
-  
-## <a name="remarks"></a>Açıklamalar  
+**Başlık:** atldb.h
 
-Bu, komutları zorunludur. Uygulama tarafından tanımlanan statik işlev tarafından sağlanan [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) makrosu.  
+## <a name="members"></a>Üyeler
+
+### <a name="interface-methods"></a>Arabirim yöntemleri
+
+|||
+|-|-|
+|[GetProperties](#getproperties)|Şu anda satır kümesi için istenen satır kümesi özelliği grubunda özelliklerinin listesini döndürür.|
+|[SetProperties](#setproperties)|Satır kümesi özelliği grubunda özelliklerini ayarlar.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu, komutları zorunludur. Uygulama tarafından tanımlanan statik işlev tarafından sağlanan [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) makrosu.
 
 ## <a name="getproperties"></a> Icommandpropertiesımpl::GetProperties
 
-Komutun özellik eşlemesi kullanarak tüm istenen özellik kümeleri döndürür.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Komutun özellik eşlemesi kullanarak tüm istenen özellik kümeleri döndürür.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,   
-   const DBPROPIDSET rgPropertyIDSets[],   
-   ULONG * pcPropertySets,   
-   DBPROPSET ** prgPropertySets);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+STDMETHOD(GetProperties)(const ULONG cPropertyIDSets, 
+   const DBPROPIDSET rgPropertyIDSets[], 
+   ULONG * pcPropertySets, 
+   DBPROPSET ** prgPropertySets);
+```
 
-Bkz: [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119) içinde *OLE DB Programcının Başvurusu*.  
-  
-### <a name="remarks"></a>Açıklamalar  
+#### <a name="parameters"></a>Parametreler
 
-Bkz: [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
-  
+Bkz: [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119) içinde *OLE DB Programcının Başvurusu*.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bkz: [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+
 ## <a name="setproperties"></a> Icommandpropertiesımpl::SetProperties
 
-Komut nesnesi için özelliklerini ayarlar.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp
-STDMETHOD(SetProperties)(ULONG cPropertySets,   
-   DBPROPSET rgPropertySets[]);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+Komut nesnesi için özelliklerini ayarlar.
 
-Bkz: [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497) içinde *OLE DB Programcının Başvurusu*.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+STDMETHOD(SetProperties)(ULONG cPropertySets, 
+   DBPROPSET rgPropertySets[]);
+```
+
+#### <a name="parameters"></a>Parametreler
+
+Bkz: [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497) içinde *OLE DB Programcının Başvurusu*.
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

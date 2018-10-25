@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e32c6d167fbccf1d2217aa4c187944b8018acdd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a2bcb8a6781c9563f1017060dcfca64841a15f69
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432509"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079176"
 ---
 # <a name="cmfccolorpopupmenu-class"></a>CMFCColorPopupMenu sınıfı
 
@@ -113,7 +113,6 @@ CMFCColorPopupMenu(
     UINT uiCommandID,
     BOOL bStdColorDlg = FALSE);
 
-
 CMFCColorPopupMenu(
     CMFCColorButton* pParentBtn,
     const CArray<COLORREF, COLORREF>& colors,
@@ -123,7 +122,6 @@ CMFCColorPopupMenu(
     LPCTSTR lpszDocColors, CList<COLORREF, COLORREF>& lstDocColors,
     int nColumns,
     COLORREF colorAutomatic);
-
 
 CMFCColorPopupMenu(
     CMFCRibbonColorButton* pParentBtn,

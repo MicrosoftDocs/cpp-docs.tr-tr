@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 5161e23d17283ba1495baf6fcb201943f8b6ae12
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2af0148c386bc3b1ea8db60fdf84d080c38af857
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422421"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080695"
 ---
 # <a name="how-to-add-command-routing-to-the-windows-forms-control"></a>Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme
 
@@ -51,7 +51,7 @@ Bu konuda daha önce bitirdiğinizi [nasıl yapılır: bir iletişim kutusunda k
     partial class UserControl1
     ```
 
-     Şu şekilde:
+   Şu şekilde:
 
     ```
     partial class UserControl1 : System.Windows.Forms.UserControl, ICommandTarget
@@ -84,19 +84,19 @@ Bu konuda daha önce bitirdiğinizi [nasıl yapılır: bir iletişim kutusunda k
 
 1. Açacak bir menü seçeneği ekleyin `singleMenuHandler`.
 
-     Git **kaynak görünümü** (Ctrl + SHIFT + E) genişletin **menü** klasörüne gittikten sonra çift tıklayarak **IDR_MFC02TYPE**. Bu, menü düzenleyicisini görüntüler.
+   Git **kaynak görünümü** (Ctrl + SHIFT + E) genişletin **menü** klasörüne gittikten sonra çift tıklayarak **IDR_MFC02TYPE**. Bu, menü düzenleyicisini görüntüler.
 
-     Alt kısmındaki menü seçeneği ekleyin **görünümü** menüsü. Menü seçeneğinin Kimliğine dikkat edin **özellikleri** penceresi. Dosyayı kaydedin.
+   Alt kısmındaki menü seçeneği ekleyin **görünümü** menüsü. Menü seçeneğinin Kimliğine dikkat edin **özellikleri** penceresi. Dosyayı kaydedin.
 
-     İçinde **Çözüm Gezgini**, Resource.h dosyasını açın, yeni eklediğiniz menü seçeneğinin kimlik değerini kopyalayın ve bu değer, ilk parametresi olarak yapıştırın `m_CmdSrc.AddCommandHandler` C# projesinin çağrı `Initialize` ( değiştirerekyöntemi`32771` gerekiyorsa).
+   İçinde **Çözüm Gezgini**, Resource.h dosyasını açın, yeni eklediğiniz menü seçeneğinin kimlik değerini kopyalayın ve bu değer, ilk parametresi olarak yapıştırın `m_CmdSrc.AddCommandHandler` C# projesinin çağrı `Initialize` ( değiştirerekyöntemi`32771` gerekiyorsa).
 
 9. Derleme ve projeyi çalıştırın.
 
-     Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
+   Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
 
-     Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**.
+   Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**.
 
-     Eklediğiniz menü seçeneğini belirleyin. . Ddl'deki yöntemin çağrıldığına dikkat edin.
+   Eklediğiniz menü seçeneğini belirleyin. . Ddl'deki yöntemin çağrıldığına dikkat edin.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -143,12 +143,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 629e10d06a59b926604fad3b3a6e191fefcb71e7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1a32625001ae86f4d6dffa7eeb953c538822d207
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384513"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080227"
 ---
 # <a name="cpane-class"></a>CPane sınıfı
 
@@ -500,7 +500,8 @@ virtual BOOL Create(
 *Rect*<br/>
 [in] Başlangıç boyutunu ve konumunu belirtir *pParentWnd* penceresinde istemci koordinatları.
 
-[in] [out] *pParentWnd* bu bölmesinin üst pencere belirtir.
+*pParentWnd*<br/>
+[out içinde] Bu Bölmenin üst pencere belirtir.
 
 *nID*<br/>
 [in] Bölmenin Kimliğini belirtir.
@@ -508,7 +509,8 @@ virtual BOOL Create(
 *dwControlBarStyle*<br/>
 [in] Bölmesinin stilini belirtir. Daha fazla bilgi için [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).
 
-[in] [out] *pContext* Oluştur bağlam bölmesi belirtir.
+*pContext*<br/>
+[out içinde] Create bağlam bölmesi belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -573,7 +575,8 @@ virtual BOOL CreateEx(
 *Rect*<br/>
 [in] Başlangıç boyutunu ve konumunu belirtir *pParentWnd* penceresinde istemci koordinatları.
 
-[in] [out] *pParentWnd* bu bölmesinin üst pencere belirtir.
+*pParentWnd*<br/>
+[out içinde] Bu Bölmenin üst pencere belirtir.
 
 *nID*<br/>
 [in] Bölmenin Kimliğini belirtir.
@@ -581,7 +584,8 @@ virtual BOOL CreateEx(
 *dwControlBarStyle*<br/>
 [in] Bölmesinin stilini belirtir. Daha fazla bilgi için [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).
 
-[in] [out] *pContext* Oluştur bağlam bölmesi için belirtir.
+*pContext*<br/>
+[out içinde] Create bağlam bölmesi için belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -623,7 +627,8 @@ virtual BOOL DockPane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] [out] *pDockBar* bu bölmesine sabitlemek için temel bölmesinde belirtir.
+*pDockBar*<br/>
+[out içinde] Bu bölme için sabitlemek için temel bölmesinde belirtir.
 
 *lpRect*<br/>
 [in] Bu bölme sabitlenebilir olduğu ana bölmede dikdörtgen belirtir.
@@ -1161,7 +1166,8 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] [out] *pWndOldParent* bölmedeki önceki üst pencere.
+*pWndOldParent*<br/>
+[out içinde] Bölmedeki önceki üst pencere.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1213,7 +1219,8 @@ virtual void OnBeforeChangeParent(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] [out] *pWndNewParent* yeni üst pencere belirtir.
+*pWndNewParent*<br/>
+[out içinde] Yeni üst pencere belirtir.
 
 *bDelay*<br/>
 [in] Genel yerleştirme düzeni ayarlamayı geciktirmek için TRUE; Aksi takdirde FALSE.
@@ -1237,7 +1244,8 @@ virtual BOOL OnBeforeDock(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] [out] *ppDockBar* bu bölme için yerleştirme bölmesi belirtir.
+*ppDockBar*<br/>
+[out içinde] Bu bölme için yerleştirme bölmesi belirtir.
 
 *lpRect*<br/>
 [in] Yerleştirme dikdörtgen belirtir.
@@ -1518,7 +1526,8 @@ void SetMiniFrameRTC(CRuntimeClass* pClass);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] [out] *pClass* Mini çerçeve penceresi için çalışma zamanı sınıf bilgileri belirtir.
+*pClass*<br/>
+[out içinde] Mini çerçeve penceresi için çalışma zamanı sınıf bilgileri belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 

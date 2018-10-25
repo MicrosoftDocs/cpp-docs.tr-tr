@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 623e1df599f3d1e0e2011f2cea3c7f9422516c67
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 03c45cad9e29221926eafd4d0b40410e5f9b89e2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108869"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068001"
 ---
 # <a name="basicostringstream-class"></a>basic_ostringstream Sınıfı
 
@@ -138,7 +138,6 @@ Yazma konumunu değiştirmeden dize arabellekteki metni alır veya ayarlar.
 
 ```cpp
 basic_string<Elem, Tr, Alloc> str() const;
-
 
 void str(
     const basic_string<Elem, Tr, Alloc>& _Newstr);

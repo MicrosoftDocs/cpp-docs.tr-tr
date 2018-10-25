@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 211005f273500992440c0e95d2c3c4e3adcef581
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 5bfb25ffeedaa11c6e610978c2d0a15cc3106d79
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163419"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079460"
 ---
 # <a name="concurrency-namespace-functions-amp"></a>Eşzamanlılık ad alanı işlevleri (AMP)
 
@@ -386,7 +386,7 @@ void copy(
 template <typename OutputIterator, typename value_type, int _Rank>
 void copy(
     const array<value_type, _Rank>& _Src,
-     OutputIterator _DestIter);
+   OutputIterator _DestIter);
 
 template <typename value_type, int _Rank>
 void copy(
@@ -606,7 +606,7 @@ void parallel_for_each(
 template <int _Dim0, int _Dim1, int _Dim2, typename _Kernel_type>
 void parallel_for_each(
     const tiled_extent<_Dim0, _Dim1, _Dim2>& _Compute_domain,
-     const _Kernel_type& _Kernel);
+   const _Kernel_type& _Kernel);
 
 template <int _Dim0, int _Dim1, typename _Kernel_type>
 void parallel_for_each(

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc30248fda9c179b22769230d5e09bf1da474d3b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e476f456b849c0a5564b59ceae21faed26dc3d34
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46435616"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062138"
 ---
 # <a name="tn011-using-mfc-as-part-of-a-dll"></a>TN011: Bir DLL'in bir Parçası Olarak MFC Kullanma
 
@@ -113,7 +113,6 @@ struct TracerData
 };
 
 BOOL PromptTraceFlags(TracerData FAR* lpData);
-
 
 #ifdef __cplusplus
 }

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bdac159baf51d7143083eb1369d1a83233f0f022
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 1697c25f19fe024ea2f808f08baea3adb4bcc69a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789836"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083236"
 ---
 # <a name="helpstringdll"></a>helpstringdll
 
@@ -76,4 +76,4 @@ Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#conte
 [IDL öznitelikleri](idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
-[Yöntem Öznitelikleri](method-attributes.md)  
+[Yöntem Öznitelikleri](method-attributes.md)

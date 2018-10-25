@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4abd2bf866a97e13324af22032cce9ebcaba4da
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f74c0fdcdb8d6dfe1aced33a1c7087ecde6c89ff
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408524"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080929"
 ---
 # <a name="opening-files"></a>Dosyaları Açma
 
@@ -41,15 +41,15 @@ MFC içinde bir dosyayı açmak için en yaygın iki aşamalı işlemi yoludur.
 
 1. Dosya nesnesini bir yol veya izni bayrakları belirtmeden oluşturun.
 
-     Genellikle bir dosya nesnesine bildirerek oluşturduğunuz bir [CFile](../mfc/reference/cfile-class.md) yığın çerçevesinde değişken.
+   Genellikle bir dosya nesnesine bildirerek oluşturduğunuz bir [CFile](../mfc/reference/cfile-class.md) yığın çerçevesinde değişken.
 
 1. Çağrı [açık](../mfc/reference/cfile-class.md#open) yolu ve izni bayrakları sağlama dosya nesnesinin üye işlevi.
 
-     Dönüş değeri `Open` dosyası başarıyla açıldı olursa sıfır dışı veya 0 ise belirtilen dosya açılamadı. `Open` Üye işlevi şu prototipli şekildedir:
+   Dönüş değeri `Open` dosyası başarıyla açıldı olursa sıfır dışı veya 0 ise belirtilen dosya açılamadı. `Open` Üye işlevi şu prototipli şekildedir:
 
-     `virtual BOOL Open( LPCTSTR lpszFileName, UINT nOpenFlags, CFileException* pError = NULL );`
+   `virtual BOOL Open( LPCTSTR lpszFileName, UINT nOpenFlags, CFileException* pError = NULL );`
 
-     Hangi izinleri gibi açık bayrakları belirtin salt okunur dosyada kullanmak istediğiniz. Olası bayrak değerleri içinde listelenmiş sabitlerde olarak tanımlanan `CFile` sınıfı ile tam olduğundan "`CFile::`" olarak `CFile::modeRead`. Kullanım `CFile::modeCreate` dosyası oluşturmak istiyorsanız bayrak.
+   Hangi izinleri gibi açık bayrakları belirtin salt okunur dosyada kullanmak istediğiniz. Olası bayrak değerleri içinde listelenmiş sabitlerde olarak tanımlanan `CFile` sınıfı ile tam olduğundan "`CFile::`" olarak `CFile::modeRead`. Kullanım `CFile::modeCreate` dosyası oluşturmak istiyorsanız bayrak.
 
 Aşağıdaki örnek, (önceki herhangi bir dosya aynı yol ile değiştirerek) okuma/yazma iznine sahip yeni bir dosya oluşturma işlemi gösterilmektedir:
 

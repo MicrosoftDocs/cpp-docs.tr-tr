@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb37637cbfc2ec0af96ed339da6e71cf349797e2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b53175e46cfa858a73b581dfefc78047e96380d6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402882"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50058963"
 ---
 # <a name="mapping-messages-to-functions"></a>İletileri İşlevlere Eşleme
 
@@ -42,7 +42,7 @@ Framework sınıflarının birinden türetilmiş yeni bir sınıf oluşturmak i�
     > [!NOTE]
     >  **İletileri** düğmesi, sınıf görünümü veya kaynak pencereye tıkladığınızda, sınıf adı seçtiğinizde kullanılabilir.
 
-     Projenizin bir ileti için bir işleyici varsa, işleyici adını iletinin yanındaki sağ sütunda görüntülenir.
+   Projenizin bir ileti için bir işleyici varsa, işleyici adını iletinin yanındaki sağ sütunda görüntülenir.
 
 1. İleti işleyici yok sahipse, sonra sağ sütunda işleyici önerilen adını görüntülemek için Özellikler penceresindeki hücreyi tıklatın \<Ekle >*HandlerName*. (Örneğin, WM_TIMER ileti işleyicisi önerir \<Ekle >`OnTimer`).
 

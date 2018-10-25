@@ -39,12 +39,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d92d196cc38e6033c6f16332e4977f2481c4496
-ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
+ms.openlocfilehash: 98fec6659c2f4e998b946983a0bd2bdea6d0cde1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990340"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083262"
 ---
 # <a name="openmp-directives"></a>OpenMP yönergeleri
 
@@ -52,19 +52,19 @@ OpenMP API çağrısında kullanılan yönergelere bağlantılar sağlar.
 
 Visual C++ aşağıdaki OpenMP yönergeleri destekler:
 
-Yönergesi                             | Açıklama
-------------------------------------- | -----------------------------------------------------------------------------------------------------------------
-[atomic](#atomic)                     | Belirten bir bellek konumuna atomik olarak güncelleştirilecek.
-[barrier](#barrier)                   | Takım tüm iş parçacıklarının eşitler; tüm iş parçacıklarının engeli yürütene kadar tüm iş parçacıklarının engeli duraklatın.
-[critical](#critical)                 | Bir kerede tek bir iş parçacığı üzerinde kod yalnızca yürütülür belirtir.
-[Temizleme](#flush-openmp)                | Tüm iş parçacıkları aynı görünümde tüm paylaşılan nesneler için bellek olduğunu belirtir.
-[for](#for-openmp)                    | Çalışmanın neden olan bir `for` döngüsü iş parçacıkları arasında bölünmesi için bir paralel bölgenin içinde.
-[master](#master)                     | Ana iş parçacığı programın bir bölümünde yürütüleceğini belirtir.
-[Sıralı](#ordered-openmp-directives) | Bu kod bir paralel belirtir `for` döngü gibi sıralı döngü yürütülmelidir.
-[parallel](#parallel)                 | Birden çok iş parçacığı paralel olarak yürütülen kodu bir paralel bölgenin tanımlar.
-[Bölümleri](#sections-openmp)          | Tüm iş parçacıkları arasında bölünmesi için kod bölümleri tanımlar.
-[single](#single)                     | Kodun bir bölümünü tek bir iş parçacığı üzerinde mutlaka ana iş parçacığının yürütülmesi gereken belirtmenize olanak sağlar.
-[threadprivate](#threadprivate)       | Bir değişken için bir iş parçacığı özel olduğunu belirtir.
+|Yönergesi|Açıklama|
+|---------|-----------|
+|[atomic](#atomic)|Belirten bir bellek konumuna atomik olarak güncelleştirilecek.|
+|[barrier](#barrier)|Takım tüm iş parçacıklarının eşitler; tüm iş parçacıklarının engeli yürütene kadar tüm iş parçacıklarının engeli duraklatın.|
+|[critical](#critical)|Bir kerede tek bir iş parçacığı üzerinde kod yalnızca yürütülür belirtir.|
+|[Temizleme](#flush-openmp)|Tüm iş parçacıkları aynı görünümde tüm paylaşılan nesneler için bellek olduğunu belirtir.|
+|[for](#for-openmp)|Çalışmanın neden olan bir `for` döngüsü iş parçacıkları arasında bölünmesi için bir paralel bölgenin içinde.|
+|[master](#master)|Ana iş parçacığı programın bir bölümünde yürütüleceğini belirtir.|
+|[Sıralı](#ordered-openmp-directives)|Bu kod bir paralel belirtir `for` döngü gibi sıralı döngü yürütülmelidir.|
+|[parallel](#parallel)|Birden çok iş parçacığı paralel olarak yürütülen kodu bir paralel bölgenin tanımlar.|
+|[Bölümleri](#sections-openmp)|Tüm iş parçacıkları arasında bölünmesi için kod bölümleri tanımlar.|
+|[single](#single)|Kodun bir bölümünü tek bir iş parçacığı üzerinde mutlaka ana iş parçacığının yürütülmesi gereken belirtmenize olanak sağlar.|
+|[threadprivate](#threadprivate)|Bir değişken için bir iş parçacığı özel olduğunu belirtir.|
 
 ## <a name="atomic"></a>Atomik
 
@@ -306,13 +306,13 @@ A `for` döngü. Tanımsız davranışa neden olur, kullanıcı kodu `for` döng
 
 `for` Yönergesi aşağıdaki OpenMP yan tümceleri destekler:
 
-- [firstprivate](../../../parallel/openmp/reference/firstprivate.md)
-- [lastprivate](../../../parallel/openmp/reference/lastprivate.md)
-- [nowait](../../../parallel/openmp/reference/nowait.md)
-- [Sıralı](../../../parallel/openmp/reference/ordered-openmp-directives.md)
-- [private](../../../parallel/openmp/reference/private-openmp.md)
-- [reduction](../../../parallel/openmp/reference/reduction.md)
-- [schedule](../../../parallel/openmp/reference/schedule.md)
+- [firstprivate](openmp-clauses.md#firstprivate)
+- [lastprivate](openmp-clauses.md#lastprivate)
+- [nowait](openmp-clauses.md#nowait)
+- [Sıralı](openmp-clauses.md#ordered-openmp-clauses)
+- [private](openmp-clauses.md#private-openmp)
+- [reduction](openmp-clauses.md#reduction)
+- [schedule](openmp-clauses.md#schedule)
 
 Varsa `parallel` de belirtilirse, `clauses` herhangi yan tümcesi tarafından kabul edilebilen `parallel` veya `for` yönergeleri dışında `nowait`.
 
@@ -535,14 +535,14 @@ Birden çok iş parçacığı paralel olarak yürütülen kodu bir paralel bölg
 
 `parallel` Yönergesi aşağıdaki OpenMP yan tümceleri destekler:
 
-- [copyin](../../../parallel/openmp/reference/copyin.md)
-- [default](../../../parallel/openmp/reference/default-openmp.md)
-- [firstprivate](../../../parallel/openmp/reference/firstprivate.md)
-- [Eğer](../../../parallel/openmp/reference/if-openmp.md)
-- [num_threads](../../../parallel/openmp/reference/num-threads.md)
-- [private](../../../parallel/openmp/reference/private-openmp.md)
-- [reduction](../../../parallel/openmp/reference/reduction.md)
-- [Paylaşılan](../../../parallel/openmp/reference/shared-openmp.md)
+- [copyin](openmp-clauses.md#copyin)
+- [default](openmp-clauses.md#default-openmp)
+- [firstprivate](openmp-clauses.md#firstprivate)
+- [Eğer](openmp-clauses.md#if-openmp)
+- [num_threads](openmp-clauses.md#num-threads)
+- [private](openmp-clauses.md#private-openmp)
+- [reduction](openmp-clauses.md#reduction)
+- [Paylaşılan](openmp-clauses.md#shared-openmp)
 
 `parallel` ile de kullanılabilir [bölümleri](#sections-openmp) ve [için](#for-openmp) yönergeleri.
 
@@ -603,11 +603,11 @@ Tüm iş parçacıkları arasında bölünmesi için kod bölümleri tanımlar.
 
 `sections` Yönergesi aşağıdaki OpenMP yan tümceleri destekler:
 
-- [firstprivate](../../../parallel/openmp/reference/firstprivate.md)
-- [lastprivate](../../../parallel/openmp/reference/lastprivate.md)
-- [nowait](../../../parallel/openmp/reference/nowait.md)
-- [private](../../../parallel/openmp/reference/private-openmp.md)
-- [reduction](../../../parallel/openmp/reference/reduction.md)
+- [firstprivate](openmp-clauses.md#firstprivate)
+- [lastprivate](openmp-clauses.md#lastprivate)
+- [nowait](openmp-clauses.md#nowait)
+- [private](openmp-clauses.md#private-openmp)
+- [reduction](openmp-clauses.md#reduction)
 
 Varsa `parallel` de belirtilirse, `clauses` herhangi yan tümcesi tarafından kabul edilebilen `parallel` veya `sections` yönergeleri dışında `nowait`.
 
@@ -656,10 +656,10 @@ Kodun bir bölümünü tek bir iş parçacığı üzerinde mutlaka ana iş parç
 
 `single` Yönergesi aşağıdaki OpenMP yan tümceleri destekler:
 
-- [copyprivate](../../../parallel/openmp/reference/copyprivate.md)
-- [firstprivate](../../../parallel/openmp/reference/firstprivate.md)
-- [nowait](../../../parallel/openmp/reference/nowait.md)
-- [private](../../../parallel/openmp/reference/private-openmp.md)
+- [copyprivate](openmp-clauses.md#copyprivate)
+- [firstprivate](openmp-clauses.md#firstprivate)
+- [nowait](openmp-clauses.md#nowait)
+- [private](openmp-clauses.md#private-openmp)
 
 [Ana](#master) yönergesi, kodun bir bölümünden yalnızca ana iş parçacığı üzerinde yapılmalıdır belirtmenize olanak sağlar.
 
@@ -745,4 +745,4 @@ Kullanıcılar için bir paralel bölgenin oluşturan iş parçacıklarının ne
 
 ### <a name="example"></a>Örnek
 
-Kullanarak bir örnek için `threadprivate`, bkz: [özel](../../../parallel/openmp/reference/private-openmp.md).
+Kullanarak bir örnek için `threadprivate`, bkz: [özel](openmp-clauses.md#private-openmp).

@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc5bca0f7ff1b2fdb2650eadbcdca4778d9b53ef
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 0567913eac57c4150f9fe6d051d2fc8e0e31860b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890366"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082938"
 ---
 # <a name="upgrading-an-existing-activex-control"></a>Varolan Bir ActiveX Denetimini Güncelleştirme
 
@@ -213,11 +213,11 @@ Bir HTML sayfasında nonlicensed bir makinede lisanslı bir denetim kullanmak i�
 
 1. INSERT \<Nesne > etiketi Lisans Yöneticisi etiketinden sonra lisanslı denetlemek için.
 
-     Örneğin, Microsoft maskeli düzen denetimi görüntüleyen bir HTML sayfası aşağıda gösterilmektedir. Kimliği için License Manager denetimidir ilk sınıf saniye sınıfının maskeli düzen denetimi için kimliğidir. Etiketler, daha önce oluşturduğunuz .lpk dosyasının göreli yoluna işaret edecek şekilde değiştirin ve denetlemek için sınıf kimliği de dahil olmak üzere bir nesne etiketi ekleyin.
+   Örneğin, Microsoft maskeli düzen denetimi görüntüleyen bir HTML sayfası aşağıda gösterilmektedir. Kimliği için License Manager denetimidir ilk sınıf saniye sınıfının maskeli düzen denetimi için kimliğidir. Etiketler, daha önce oluşturduğunuz .lpk dosyasının göreli yoluna işaret edecek şekilde değiştirin ve denetlemek için sınıf kimliği de dahil olmak üzere bir nesne etiketi ekleyin.
 
 1. INSERT \<EMBED > Eklenti NCompass ActiveX kullanıyorsanız LPK dosyanız için özniteliği.
 
-     Denetiminiz diğer görüntülenebilir etkin tarayıcılar etkin — Örneğin, Netscape eklentisi NCompass ActiveX kullanarak — eklemelisiniz \<ekleme > aşağıda gösterildiği gibi bir söz dizimi.
+   Denetiminiz diğer görüntülenebilir etkin tarayıcılar etkin — Örneğin, Netscape eklentisi NCompass ActiveX kullanarak — eklemelisiniz \<ekleme > aşağıda gösterildiği gibi bir söz dizimi.
 
 ```
 <OBJECT CLASSID="clsid:5220cb21-c88d-11cf-b347-00aa00a28331">

@@ -94,12 +94,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3303fc38f4f389a00e532e553f87c3a0af3d70d6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c13b4d5c3779d6c4b57ff53a1016b344ed097099
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441245"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083366"
 ---
 # <a name="cmenu-class"></a>CMenu sınıfı
 
@@ -202,7 +202,6 @@ BOOL AppendMenu(
     UINT nFlags,
     UINT_PTR nIDNewItem = 0,
     LPCTSTR lpszNewItem = NULL);
-
 
 BOOL AppendMenu(
     UINT nFlags,
@@ -931,7 +930,6 @@ BOOL InsertMenu(
     UINT_PTR nIDNewItem = 0,
     LPCTSTR lpszNewItem = NULL);
 
-
 BOOL InsertMenu(
     UINT nPosition,
     UINT nFlags,
@@ -1120,7 +1118,6 @@ BOOL ModifyMenu(
     UINT nFlags,
     UINT_PTR nIDNewItem = 0,
     LPCTSTR lpszNewItem = NULL);
-
 
 BOOL ModifyMenu(
     UINT nPosition,

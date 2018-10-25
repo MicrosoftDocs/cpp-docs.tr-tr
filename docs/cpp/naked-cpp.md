@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89ab41c396f8602d16e2b2d88c3d83aeb7cdf21a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cdf77589ea39de4d17ccad1e3ef369cf4f0ca24d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46018388"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080890"
 ---
 # <a name="naked-c"></a>naked (C++)
 
@@ -39,7 +39,6 @@ __declspec(naked) declarator
 ## <a name="remarks"></a>Açıklamalar
 
 Çünkü **naked** özniteliği yalnızca bir işlev tanımı için geçerlidir ve bir tür değiştiricisi değil, naked işlevleri, genişletilmiş öznitelik söz dizimi kullanmalıdır ve [__declspec](../cpp/declspec.md) anahtar sözcüğü.
-
 
 İşlev ayrıca ile işaretlenmiş olsa bile derleyici, çıplak özniteliği ile işaretlenmiş bir işlevin satır içi işlev oluşturulamıyor [__forceinline](inline-functions-cpp.md) anahtar sözcüğü.
 

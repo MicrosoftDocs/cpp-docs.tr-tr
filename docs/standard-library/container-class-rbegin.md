@@ -14,25 +14,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d19e7016120d66ceb59b8d1c77620121fc569b1
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f5417b8579097c51e7586198525ffdafa4ea2cca
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842064"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079798"
 ---
 # <a name="container-classrbegin"></a>Kapsayıcı Sınıfı::rbegin
 
 > [!NOTE]
-> Bu konu, Visual C++ belge C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsel bir örnek olarak kullanılıyor. Daha fazla bilgi için bkz: [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
-Ters sırada başlangıcı belirleme yalnızca denetimli dizisi sonunu aşan işaret eden bir ters yineleyici döndürür.
+Ters dizisi başına belirleme denetlenen dizinin sonunu yalnızca bir ters yineleyici döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 const_reverse_iterator rbegin() const;
-
 
 reverse_iterator rbegin();
 ```

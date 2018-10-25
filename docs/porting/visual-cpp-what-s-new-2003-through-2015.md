@@ -13,12 +13,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51921f8e55b9d4ce4e1875f5216984fe3257ca97
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: b4e5e30b533837eabb71ca8f27a646794d9a654c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084119"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083004"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki
 
@@ -128,7 +128,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
     struct S2
     {
-        template <class C, void (C::*Function)(int) const> void f() {}        
+        template <class C, void (C::*Function)(int) const> void f() {}
     };
 
     void f()
@@ -271,7 +271,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
    Örneğin, kodunuzu hem tanımladığını bir **yerleştirme yeni** ve **yerleştirme silme**:
 
    ```cpp
-    void * operator new(std::size_t, std::size_t);
+    void * operator new(std::size_t, std::size_t);
     void operator delete(void*, std::size_t) noexcept;
    ```
 
@@ -318,14 +318,14 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
    ```cpp
     struct S {
-      S();
-     };
+      S();
+     };
 
-     union {
-      struct {
-       S s;
-      };
-     } u; // C2280
+     union {
+      struct {
+       S s;
+      };
+     } u; // C2280
    ```
 
    Yukarıdaki kod, Visual Studio 2015'te aşağıdaki hata oluşturur:
@@ -834,7 +834,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
 - **#include: ana dizin tanımlayıcısı kullanın '..' pathname içinde** (yalnızca etkiler `/Wall` `/WX`)
 
-     Önceki derleyici sürümleri üst dizini belirticisi kullanımını algılamadı '..' yol adını içinde `#include` yönergeleri. Bu şekilde yazılmış kod, genellikle projenin dışında yanlış proje göreli yollar kullanarak mevcut başlıkları da eklediğinizden yöneliktir. Bu eski davranışı program hedeflenen Programcı değerinden farklı bir kaynak dosyasındaki dahil ederek derlenebilir veya bu göreli yolları diğer yapı ortamları için taşınabilir olmayacaktır bir risk oluşturuldu. Derleyici artık algılar ve bu şekilde yazılmış kod Programcı size bildirir ve etkinleştirilirse C4464, uyarı bir isteğe bağlı derleyici verir.
+   Önceki derleyici sürümleri üst dizini belirticisi kullanımını algılamadı '..' yol adını içinde `#include` yönergeleri. Bu şekilde yazılmış kod, genellikle projenin dışında yanlış proje göreli yollar kullanarak mevcut başlıkları da eklediğinizden yöneliktir. Bu eski davranışı program hedeflenen Programcı değerinden farklı bir kaynak dosyasındaki dahil ederek derlenebilir veya bu göreli yolları diğer yapı ortamları için taşınabilir olmayacaktır bir risk oluşturuldu. Derleyici artık algılar ve bu şekilde yazılmış kod Programcı size bildirir ve etkinleştirilirse C4464, uyarı bir isteğe bağlı derleyici verir.
 
    ```Output
     warning C4464: relative include path contains '..'
@@ -1465,7 +1465,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
    Örnek (önce):
 
-     X.cpp (-Ycc.h)
+   X.cpp (-Ycc.h)
 
    ```cpp
     #include "a.h"
@@ -1473,7 +1473,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     #include "c.h"
    ```
 
-     Z.cpp (-Yuc.h)
+   Z.cpp (-Yuc.h)
 
    ```cpp
     #include "b.h"
@@ -1483,7 +1483,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
 
    Örnek (sonra)
 
-     X.cpp (-Ycc.h)
+   X.cpp (-Ycc.h)
 
    ```cpp
     #include "a.h"
@@ -1491,7 +1491,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     #include "c.h"
    ```
 
-     Z.cpp (-Yuc.h)
+   Z.cpp (-Yuc.h)
 
    ```cpp
     #include "a.h"
@@ -1774,7 +1774,7 @@ Yeni C++ birim testi çerçevesi Visual Studio'da C++ birim testleri yazmak içi
 
 #### <a name="architecture-dependency-graphs"></a>Mimari bağımlılık grafikleri
 
-Kodunuzu daha iyi anlamak için artık ikili, ad alanı, sınıf için bağımlılık grafikleri oluşturmak ve bir çözümde dosyaları içerir. Menü çubuğunda, **mimarisi** > **bağımlılık grafiği Oluştur**, ardından **çözüm** veya **dahil etme dosyası**bir bağımlılık grafiği oluşturmak için. Grafik oluşturma tamamlandığında, her düğümünü genişleterek keşfedin, düğümler arasında taşıyarak bağımlılık ilişkilerini öğrenin ve seçerek kaynak koda göz atma **içeriğini görüntüle** bir düğümü için kısayol menüsünde. *.Cpp kaynak kodu dosyası veya *.h üst bilgi dosyası için kısayol menüsündeki dahil etme dosyaları için bir bağımlılık grafiği oluşturmayı tercih **oluşturmak grafiği, dosyaları içerir**.
+Kodunuzu daha iyi anlamak için artık ikili, ad alanı, sınıf için bağımlılık grafikleri oluşturmak ve bir çözümde dosyaları içerir. Menü çubuğunda, **mimarisi** > **bağımlılık grafiği Oluştur**, ardından **çözüm** veya **dahil etme dosyası**bir bağımlılık grafiği oluşturmak için. Grafik oluşturma tamamlandığında, her düğümünü genişleterek keşfedin, düğümler arasında taşıyarak bağımlılık ilişkilerini öğrenin ve seçerek kaynak koda göz atma **içeriğini görüntüle** bir düğümü için kısayol menüsünde. Kısayol menüsünde dahil etme dosyaları için bağımlılık grafiği oluşturmak için bir \*.cpp kaynak kodu dosyası veya \*.h başlık dosyası, seçin **oluşturmak grafiği, dosyaları içerir**.
 
 #### <a name="architecture-explorer"></a>Mimari Gezgini
 

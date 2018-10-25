@@ -13,29 +13,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0bb6b1738b0eecbfd4e97171d2a9faea2d9b6005
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 82dcbbe31110a38c381dd0891ab1837b893be59e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327771"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079135"
 ---
 # <a name="extensions-that-are-specific-to-ccli"></a>C++/CLI'ya Özgü Uzantılar
 
 Aşağıdaki dil özellikleri uygulamak yalnızca C + +/ CLI:
-  
-[__tanımlayıcı (C++/CLI)](../windows/identifier-cpp-cli.md)  
-  
-[/ CLR ile C türü atamalar (C + +/ CLI)](../windows/c-style-casts-with-clr-cpp-cli.md)  
-  
-[interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md)  
-  
-[pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md)  
-  
-[Tür İletme (C++/CLI)](../windows/type-forwarding-cpp-cli.md)  
-  
-[Değişken Bağımsız Değişken Listeleri (...) (C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md)  
-  
+
+[__tanımlayıcı (C++/CLI)](../windows/identifier-cpp-cli.md)
+
+[/ CLR ile C türü atamalar (C + +/ CLI)](../windows/c-style-casts-with-clr-cpp-cli.md)
+
+[interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md)
+
+[pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md)
+
+[Tür İletme (C++/CLI)](../windows/type-forwarding-cpp-cli.md)
+
+[Değişken Bağımsız Değişken Listeleri (...) (C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md)
+
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b157cfb497c355f44a15c8e42b81bc30753a4a9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 29632784248d624f184550f0c598d05cd26b85cf
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441310"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079551"
 ---
 # <a name="cmfcpreviewctrlimpl-class"></a>Cmfcpreviewctrlımpl sınıfı
 
@@ -183,7 +183,6 @@ virtual void DoPaint(
 *pDC*<br/>
 Boyama için cihaz bağlamı için bir işaretçi.
 
-
 ## <a name="focus"></a> CMFCPreviewCtrlImpl::Focus
 
 Ayarlar, bu denetim odağı girin.
@@ -193,6 +192,7 @@ Ayarlar, bu denetim odağı girin.
 ```
 virtual void Focus();
 ```
+
 ## <a name="getdocument"></a> CMFCPreviewCtrlImpl::GetDocument
 
 Bu önizleme denetimine bağlı bir belgeyi döndürür.
@@ -226,6 +226,7 @@ COLORREF m_clrBackColor;
 ```
 COLORREF m_clrTextColor;
 ```
+
 ## <a name="m_font"></a> CMFCPreviewCtrlImpl::m_font Önizleme metni görüntülemede kullanılacak yazı tipi.
 
 ### <a name="syntax"></a>Sözdizimi
@@ -233,6 +234,7 @@ COLORREF m_clrTextColor;
 ```
 CFont m_font;
 ```
+
 ## <a name="m_pdocument"></a> CMFCPreviewCtrlImpl::m_pDocument
 
 Denetime içeriğe sahip önizlemesini görebilirsiniz belgeye yönelik işaretçi.
@@ -252,6 +254,7 @@ Bu denetimi yeniden düzenlenen söyler.
 ```
 virtual void Redraw();
 ```
+
 ## <a name="setdocument"></a> CMFCPreviewCtrlImpl::SetDocument
 
 Belge uygulaması ve önizleme denetimi arasında bir ilişki oluşturmak için Önizleme işleyici tarafından çağrılır.

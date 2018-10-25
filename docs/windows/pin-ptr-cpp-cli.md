@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d4d8fcc0b1527483e0802eaf88339670abb8ed3c
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: e185f5456d2837c0a577b9c305cd717effaf6e06
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328473"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083288"
 ---
 # <a name="pinptr-ccli"></a>pin_ptr (C++/CLI)
 
@@ -118,7 +118,7 @@ using namespace System;
 #pragma unmanaged
 // native function that initializes an array
 void native_function(int* p) {
-   for(int i = 0 ; i < 10 ; i++)  
+   for(int i = 0 ; i < 10 ; i++)
     p[i] = i;
 }
 #pragma managed
@@ -140,7 +140,7 @@ public:
 
    int sum() {
       int total = 0;
-      for (int i = 0 ; i < SIZE ; i++)  
+      for (int i = 0 ; i < SIZE ; i++)
          total += arr[i];
       return total;
    }

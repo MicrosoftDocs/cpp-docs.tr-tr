@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10b87f57daaf510252fe6f07dc3ba2d9d0a8650d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 630cdd1614aa19ec3a5a654d7dc4bfe7336ce027
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409345"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080591"
 ---
 # <a name="two-ways-to-create-a-carchive-object"></a>CArchive Nesnesi Oluşturmanın İki Yolu
 
@@ -66,9 +66,9 @@ Bir belge çerçevesi aracılığıyla serileştirmek yanı sıra, ne zaman ihti
 
 1. Geçirmek `CFile` için oluşturucusuna `CArchive`, aşağıdaki örnekte gösterildiği gibi:
 
-     [!code-cpp[NVC_MFCSerialization#5](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_1.cpp)]
+   [!code-cpp[NVC_MFCSerialization#5](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_1.cpp)]
 
-     İkinci bağımsız değişkeni `CArchive` oluşturucudur arşiv depolama ve veri ya da yükleme dosyasından kullanılıp kullanılmayacağını belirten bir numaralandırılmış değeri. `Serialize` Bir nesnenin işlev çağırarak bu durumu denetler `IsStoring` arşiv nesne için işlevi.
+   İkinci bağımsız değişkeni `CArchive` oluşturucudur arşiv depolama ve veri ya da yükleme dosyasından kullanılıp kullanılmayacağını belirten bir numaralandırılmış değeri. `Serialize` Bir nesnenin işlev çağırarak bu durumu denetler `IsStoring` arşiv nesne için işlevi.
 
 Depolama veya veri yüklemeyi tamamladıktan sonra `CArchive` nesne, kapatın. Ancak `CArchive` (ve `CFile`) nesneleri otomatik olarak kapatılır arşiv (ve dosya), açıkça kurtarma hataları kolaylaştırır olduğundan Bunu yapmak için iyi bir uygulamadır. Hata işleme hakkında daha fazla bilgi için bkz [özel durumlar: çalýþýrçalýþma yakalama ve silme özel durumları](../mfc/exceptions-catching-and-deleting-exceptions.md).
 
@@ -76,7 +76,7 @@ Depolama veya veri yüklemeyi tamamladıktan sonra `CArchive` nesne, kapatın. A
 
 1. Aşağıdaki örnekte nasıl kapatılacağını `CArchive` nesnesi:
 
-     [!code-cpp[NVC_MFCSerialization#6](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_2.cpp)]
+   [!code-cpp[NVC_MFCSerialization#6](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_2.cpp)]
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46e41ffab3f3f22bca1a9a721b4f2cdb03129d03
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 05e2a39f94eeefa264a9e93623f4ff7c6b2f2e91
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391702"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080462"
 ---
 # <a name="memory-management-examples"></a>Bellek Yönetimi: Örnekler
 
@@ -52,19 +52,19 @@ Bu makalede nasıl MFC çerçevesi ayırmaları ve yığın ayırmaları her ü�
 
 1. Dizi, aşağıdaki kodda gösterildiği gibi tanımlayın. Dizi otomatik olarak silinir ve dizi değişkeni kapsamı çıktığında kendi bellek iadesi.
 
-     [!code-cpp[NVC_MFC_Utilities#1](../mfc/codesnippet/cpp/memory-management-examples_1.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#1](../mfc/codesnippet/cpp/memory-management-examples_1.cpp)]
 
 #### <a name="to-allocate-an-array-of-bytes-or-any-primitive-data-type-on-the-heap"></a>Bayt dizisi (veya herhangi bir basit veri türü) yığında ayırmak için
 
 1. Kullanım **yeni** işleci Bu örnekte gösterilen dizi söz dizimi ile:
 
-     [!code-cpp[NVC_MFC_Utilities#2](../mfc/codesnippet/cpp/memory-management-examples_2.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#2](../mfc/codesnippet/cpp/memory-management-examples_2.cpp)]
 
 #### <a name="to-deallocate-the-arrays-from-the-heap"></a>Yığın dizilerden ayırması
 
 1. Kullanım **Sil** işleci aşağıdaki gibi:
 
-     [!code-cpp[NVC_MFC_Utilities#3](../mfc/codesnippet/cpp/memory-management-examples_3.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#3](../mfc/codesnippet/cpp/memory-management-examples_3.cpp)]
 
 ##  <a name="_core_allocation_of_a_data_structure"></a> Ayırma, bir veri yapısı
 
@@ -72,15 +72,15 @@ Bu makalede nasıl MFC çerçevesi ayırmaları ve yığın ayırmaları her ü�
 
 1. Yapı değişkeni aşağıdaki gibi tanımlayın:
 
-     [!code-cpp[NVC_MFC_Utilities#4](../mfc/codesnippet/cpp/memory-management-examples_4.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#4](../mfc/codesnippet/cpp/memory-management-examples_4.cpp)]
 
-     Kapsamı çıktığında yapısı tarafından kapladığı belleği geri kazanılır.
+   Kapsamı çıktığında yapısı tarafından kapladığı belleği geri kazanılır.
 
 #### <a name="to-allocate-data-structures-on-the-heap"></a>Veri yapıları yığında ayırmak için
 
 1. Kullanım **yeni** yığında veri yapılarını ayrılacak ve **Sil** bunları, aşağıdaki örneklerde gösterildiği gibi serbest bırakmak:
 
-     [!code-cpp[NVC_MFC_Utilities#5](../mfc/codesnippet/cpp/memory-management-examples_5.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#5](../mfc/codesnippet/cpp/memory-management-examples_5.cpp)]
 
 ##  <a name="_core_allocation_of_an_object"></a> Bir nesnenin ayırma
 
@@ -88,25 +88,25 @@ Bu makalede nasıl MFC çerçevesi ayırmaları ve yığın ayırmaları her ü�
 
 1. Nesneyi şu şekilde bildirmek:
 
-     [!code-cpp[NVC_MFC_Utilities#6](../mfc/codesnippet/cpp/memory-management-examples_6.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#6](../mfc/codesnippet/cpp/memory-management-examples_6.cpp)]
 
-     Nesnenin kapsamı çıktığında nesnenin yok Edicisi otomatik olarak çağrılır.
+   Nesnenin kapsamı çıktığında nesnenin yok Edicisi otomatik olarak çağrılır.
 
 #### <a name="to-allocate-an-object-on-the-heap"></a>Yığındaki bir nesne ayrılamadı
 
 1. Kullanım **yeni** yığını üzerindeki nesneler tahsis etmek için nesneye bir işaretçi döndürür, işleci. Kullanım **Sil** silmeyi işleci.
 
-     Aşağıdaki yığın ve çerçeve örnekleri `CPerson` Oluşturucusu hiçbir bağımsız değişken alır.
+   Aşağıdaki yığın ve çerçeve örnekleri `CPerson` Oluşturucusu hiçbir bağımsız değişken alır.
 
-     [!code-cpp[NVC_MFC_Utilities#7](../mfc/codesnippet/cpp/memory-management-examples_7.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#7](../mfc/codesnippet/cpp/memory-management-examples_7.cpp)]
 
-     Varsa bağımsız değişkeni için `CPerson` Oluşturucusu olan bir işaretçi **char**, çerçeve ayırma için deyim:
+   Varsa bağımsız değişkeni için `CPerson` Oluşturucusu olan bir işaretçi **char**, çerçeve ayırma için deyim:
 
-     [!code-cpp[NVC_MFC_Utilities#8](../mfc/codesnippet/cpp/memory-management-examples_8.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#8](../mfc/codesnippet/cpp/memory-management-examples_8.cpp)]
 
-     Yığın ayırma deyimidir:
+   Yığın ayırma deyimidir:
 
-     [!code-cpp[NVC_MFC_Utilities#9](../mfc/codesnippet/cpp/memory-management-examples_9.cpp)]
+   [!code-cpp[NVC_MFC_Utilities#9](../mfc/codesnippet/cpp/memory-management-examples_9.cpp)]
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

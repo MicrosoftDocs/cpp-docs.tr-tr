@@ -20,23 +20,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5ad69bda1a49d6ebf2878d8b6a7b5d50840e9d8d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ec47e32ca1286ebf69806c211d5700bb25eaeafa
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084828"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076652"
 ---
 # <a name="work-with-odbc-database-connections"></a>ODBC Veritabanı Bağlantılarıyla Çalışma
 
-Aşağıdaki konularda, ODBC veri kaynaklarına bağlanma açıklanır.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
-  
-- [ODBC veritabanı bağlantılarını yönetme](../../data/odbc/data-source-managing-connections-odbc.md)  
-  
-- [Program aracılığıyla ODBC veri kaynağını yapılandırma](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Aşağıdaki konularda, ODBC veri kaynaklarına bağlanma açıklanır.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+- [ODBC veritabanı bağlantılarını yönetme](../../data/odbc/data-source-managing-connections-odbc.md)
+
+- [Program aracılığıyla ODBC veri kaynağını yapılandırma](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98cf8a0532c3b1f2044ba0338d3f2f2bf8e73813
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0070103724385dcb598c20cd15bc29f341628bce
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390995"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079447"
 ---
 # <a name="mfc-activex-controls-adding-custom-properties"></a>MFC ActiveX Denetimleri: Özel Özellikler Ekleme
 
@@ -36,19 +36,19 @@ Bu makalede, Özellik Ekleme Sihirbazı'nı kullanarak bir ActiveX denetimi içi
 
 - Üye değişkeni uygulama
 
-     Bu uygulama, bir üye değişkeni denetimi sınıfında özelliğin durumunu temsil eder. Üye değişkeni uygulama özellik değeri değiştiğinde bilmek önemli olmadığı durumlarda kullanın. Üç tür, bu uygulama, en az bir özellik için destek kodunu oluşturur. Üye değişkeni uygulama gönderme eşleme girişi makro [dısp_property](../mfc/reference/dispatch-maps.md#disp_property).
+   Bu uygulama, bir üye değişkeni denetimi sınıfında özelliğin durumunu temsil eder. Üye değişkeni uygulama özellik değeri değiştiğinde bilmek önemli olmadığı durumlarda kullanın. Üç tür, bu uygulama, en az bir özellik için destek kodunu oluşturur. Üye değişkeni uygulama gönderme eşleme girişi makro [dısp_property](../mfc/reference/dispatch-maps.md#disp_property).
 
 - Üye değişkeni bildirimi uygulama
 
-     Bu uygulama bir üye değişkeni ve Özellik Ekleme Sihirbazı tarafından oluşturulan bir bildirim işlevini oluşur. Bildirim işlevi, sonra özellik değeri değiştiğinde framework tarafından otomatik olarak çağrılır. Üye değişkeni, bir özellik değeri değiştikten sonra bildirilmesi gerektiğinde bildirim uygulamasıyla kullanın. Bu uygulama, bir işlev çağrısı gerektirdiğinden daha uzun sürer. Bu uygulama için gönderme eşleme girişi makro [dısp_property_notıfy](../mfc/reference/dispatch-maps.md#disp_property_notify).
+   Bu uygulama bir üye değişkeni ve Özellik Ekleme Sihirbazı tarafından oluşturulan bir bildirim işlevini oluşur. Bildirim işlevi, sonra özellik değeri değiştiğinde framework tarafından otomatik olarak çağrılır. Üye değişkeni, bir özellik değeri değiştikten sonra bildirilmesi gerektiğinde bildirim uygulamasıyla kullanın. Bu uygulama, bir işlev çağrısı gerektirdiğinden daha uzun sürer. Bu uygulama için gönderme eşleme girişi makro [dısp_property_notıfy](../mfc/reference/dispatch-maps.md#disp_property_notify).
 
 - Get/Set yöntemleri uygulaması
 
-     Bu uygulama denetim sınıf üyesi işlevleri bir çiftinden oluşur. Denetimin kullanıcı özelliği değiştirilmesi istediğinde Get/Set yöntemleri uygulaması denetimin kullanıcı özelliğinin geçerli değeri istediğinde işlevi ve kümesi üye işlevi otomatik olarak Get üyeyi çağırır. Bu uygulama, çalışma zamanı sırasında bir özelliğin değerini hesaplamak için gerçek özellik değiştirmeden önce denetimin kullanıcı tarafından geçirilen bir değeri doğrulamak veya okuma - veya salt yazılır özellik türü uygulama kullanın. Bu uygulama için gönderme eşleme girişi makro [dısp_property_ex](../mfc/reference/dispatch-maps.md#disp_property_ex). Aşağıdaki bölümde [özel bir özellik eklemek için Özellik Ekleme Sihirbazı'nı kullanarak](#_core_using_classwizard_to_add_a_custom_property), CircleOffset özel özellik bu uygulama göstermek için kullanır.
+   Bu uygulama denetim sınıf üyesi işlevleri bir çiftinden oluşur. Denetimin kullanıcı özelliği değiştirilmesi istediğinde Get/Set yöntemleri uygulaması denetimin kullanıcı özelliğinin geçerli değeri istediğinde işlevi ve kümesi üye işlevi otomatik olarak Get üyeyi çağırır. Bu uygulama, çalışma zamanı sırasında bir özelliğin değerini hesaplamak için gerçek özellik değiştirmeden önce denetimin kullanıcı tarafından geçirilen bir değeri doğrulamak veya okuma - veya salt yazılır özellik türü uygulama kullanın. Bu uygulama için gönderme eşleme girişi makro [dısp_property_ex](../mfc/reference/dispatch-maps.md#disp_property_ex). Aşağıdaki bölümde [özel bir özellik eklemek için Özellik Ekleme Sihirbazı'nı kullanarak](#_core_using_classwizard_to_add_a_custom_property), CircleOffset özel özellik bu uygulama göstermek için kullanır.
 
 - Parametreli uygulama
 
-     Parametreli uygulama Özellik Ekleme Sihirbazı tarafından desteklenir. Bir parametreli özelliği (özellik dizisi olarak da adlandırılır), bir değerler kümesi tek bir denetim özelliği üzerinden erişmek için kullanılabilir. Bu uygulama için dağıtım eşleme girişi makrosu dısp_property_param ' dir. Bu tür uygulama konusunda daha fazla bilgi için bkz. [uygulayan bir parametreli özellik](../mfc/mfc-activex-controls-advanced-topics.md) makalede ActiveX denetimleri: Gelişmiş Konular.
+   Parametreli uygulama Özellik Ekleme Sihirbazı tarafından desteklenir. Bir parametreli özelliği (özellik dizisi olarak da adlandırılır), bir değerler kümesi tek bir denetim özelliği üzerinden erişmek için kullanılabilir. Bu uygulama için dağıtım eşleme girişi makrosu dısp_property_param ' dir. Bu tür uygulama konusunda daha fazla bilgi için bkz. [uygulayan bir parametreli özellik](../mfc/mfc-activex-controls-advanced-topics.md) makalede ActiveX denetimleri: Gelişmiş Konular.
 
 ##  <a name="_core_using_classwizard_to_add_a_custom_property"></a> Kullanarak özel bir özellik eklemek için Özellik Ekleme Sihirbazı
 
@@ -66,7 +66,7 @@ Bu yordamı, istediğiniz diğer özel özelliklerini eklemek için de kullanıl
 
 1. Kısayol menüsünden tıklayın **Ekle** ve ardından **Özellik Ekle**.
 
-     Bu açılır [Özellik Ekleme Sihirbazı'nı](../ide/names-add-property-wizard.md).
+   Bu açılır [Özellik Ekleme Sihirbazı'nı](../ide/names-add-property-wizard.md).
 
 1. İçinde **özellik adı** kutusuna *CircleOffset*.
 

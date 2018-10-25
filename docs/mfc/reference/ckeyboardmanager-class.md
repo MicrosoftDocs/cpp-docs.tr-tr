@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c705f3da0b4b0681271353f1ce9d9aa2474f09a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f2e2ce20cfd12b52f37e24fccef29869bc071f92
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420822"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057315"
 ---
 # <a name="ckeyboardmanager-class"></a>CKeyboardManager sınıfı
 
@@ -354,7 +354,6 @@ BOOL UpdateAccelTable(
     int nSize,
     CFrameWnd* pDefaultFrame = NULL);
 
-
 BOOL UpdateAccelTable(
     CMultiDocTemplate* pTemplate,
     HACCEL hAccelNew,
@@ -393,6 +392,4 @@ Mevcut kısayol tablo çeşitli çerçeve pencere nesneleri için yeni kısayol 
 [CWinAppEx Sınıfı](../../mfc/reference/cwinappex-class.md)<br/>
 [CWinAppEx::InitKeyboardManager](../../mfc/reference/cwinappex-class.md#initkeyboardmanager)<br/>
 [Klavye ve Fare Özelleştirmesi](../../mfc/keyboard-and-mouse-customization.md)
-
-
 

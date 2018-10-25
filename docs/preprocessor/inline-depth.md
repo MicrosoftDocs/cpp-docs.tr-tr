@@ -18,40 +18,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cbb90d36ea3da8e443eede8a3d74a35246077d52
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 672ea8c36b794683dca0ab50af0bda75d73f9a68
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410277"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081449"
 ---
 # <a name="inlinedepth"></a>inline_depth
-Bir derinlikteyse (çağrı grafında içinde) daha büyük ise, hiçbir işlevin satır içine alınmış şekilde satır içi buluşsal arama derinliğini belirtir *n*.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-#pragma inline_depth( [n] )  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- 
-Bu pragma denetimleri olarak işaretlenmiş İşlevler, satır içi [satır içi](../cpp/inline-functions-cpp.md) ve [__inline](../cpp/inline-functions-cpp.md) veya altında otomatik olarak satır içine alınmış `/Ob2` seçeneği.  
-  
-*n* 0 ve burada 255 çağrı grafında sınırsız bir derinlik anlamına gelir ve sıfır satır içi genişletmeyi engeller 255 arasında bir değer olabilir.  Zaman *n* belirtilmezse, varsayılan (254) kullanılır.  
-  
-**İnline_depth** pragma kaç kez bir dizi işlev çağrısının genişletilebileceğini denetler. Örneğin, satır içi derinliği dört ise ve A B'yi çağırıyor ve B C'yi çağırıyorsa, üç çağrı da satır içinde genişletilir. Ancak, en yakın satır içi genişletme iki ise, yalnızca A ve B genişletilir ve C işlev çağrısı olarak kalır.  
-  
-Bu pragmayı kullanmak için ayarlamalısınız `/Ob` derleyici seçeneğini 1 veya 2. Bu pragma kullanılarak ayarlanan derinlik, pragmadan sonraki ilk işlev çağrısında etkin hale gelir.  
-  
-Satır içi derinlik, genişletme sırasında azaltılabilir, ancak artırılmaz. Satır içi derinliği altıysa ve genişleme sırasında önişlemci karşılaştığında bir **inline_depth** pragma sekiz derinlik değerini altı olarak kalır.  
-  
-**İnline_depth** pragma ile işaretlenen işlevler üzerinde hiçbir etkisi `__forceinline`.  
-  
+Bir derinlikteyse (çağrı grafında içinde) daha büyük ise, hiçbir işlevin satır içine alınmış şekilde satır içi buluşsal arama derinliğini belirtir *n*.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+#pragma inline_depth( [n] )
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu pragma denetimleri olarak işaretlenmiş İşlevler, satır içi [satır içi](../cpp/inline-functions-cpp.md) ve [__inline](../cpp/inline-functions-cpp.md) veya altında otomatik olarak satır içine alınmış `/Ob2` seçeneği.
+
+*n* 0 ve burada 255 çağrı grafında sınırsız bir derinlik anlamına gelir ve sıfır satır içi genişletmeyi engeller 255 arasında bir değer olabilir.  Zaman *n* belirtilmezse, varsayılan (254) kullanılır.
+
+**İnline_depth** pragma kaç kez bir dizi işlev çağrısının genişletilebileceğini denetler. Örneğin, satır içi derinliği dört ise ve A B'yi çağırıyor ve B C'yi çağırıyorsa, üç çağrı da satır içinde genişletilir. Ancak, en yakın satır içi genişletme iki ise, yalnızca A ve B genişletilir ve C işlev çağrısı olarak kalır.
+
+Bu pragmayı kullanmak için ayarlamalısınız `/Ob` derleyici seçeneğini 1 veya 2. Bu pragma kullanılarak ayarlanan derinlik, pragmadan sonraki ilk işlev çağrısında etkin hale gelir.
+
+Satır içi derinlik, genişletme sırasında azaltılabilir, ancak artırılmaz. Satır içi derinliği altıysa ve genişleme sırasında önişlemci karşılaştığında bir **inline_depth** pragma sekiz derinlik değerini altı olarak kalır.
+
+**İnline_depth** pragma ile işaretlenen işlevler üzerinde hiçbir etkisi `__forceinline`.
+
 > [!NOTE]
-> Özyinelemeli işlevler, satır içinde en fazla 16 çağrılık bir derinlikle değiştirilebilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- 
+> Özyinelemeli işlevler, satır içinde en fazla 16 çağrılık bir derinlikle değiştirilebilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [inline_recursion](../preprocessor/inline-recursion.md)

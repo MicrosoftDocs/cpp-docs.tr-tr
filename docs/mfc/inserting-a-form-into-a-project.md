@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83606041250dafed0ef57eb4eea18d7314e0bbef
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ba22c87ee601d66ccfb1092047e69be42d8163c3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429272"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052765"
 ---
 # <a name="inserting-a-form-into-a-project"></a>Bir Projeye Form Ekleme
 
@@ -33,7 +33,7 @@ Formları denetimleri için uygun bir kapsayıcı sağlar. MFC kitaplıkları uy
 
 1. Kısayol menüsünden tıklayın **Ekle** ve ardından **sınıfı Ekle**.
 
-     Varsa **yeni formu** komut kullanılabilir değil, projenizin etkin Şablon kitaplığı (ATL) üzerinde temel alıyor olabilir. Bir form bir ATL projesine eklemek için şunları yapmanız gerekir [belirli ayarları belirtin](../atl/reference/application-settings-atl-project-wizard.md) projeyi oluştururken ilk.
+   Varsa **yeni formu** komut kullanılabilir değil, projenizin etkin Şablon kitaplığı (ATL) üzerinde temel alıyor olabilir. Bir form bir ATL projesine eklemek için şunları yapmanız gerekir [belirli ayarları belirtin](../atl/reference/application-settings-atl-project-wizard.md) projeyi oluştururken ilk.
 
 1. Gelen **MFC** klasörünü tıklatın **MFC sınıfı**.
 

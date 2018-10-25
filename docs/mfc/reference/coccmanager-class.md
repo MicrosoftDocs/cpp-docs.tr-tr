@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10bb10162345453eb9979b985a062dd1e4b595b9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 08b605dd3f7fc6214878e507610be0d12da41abf
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381159"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079759"
 ---
 # <a name="coccmanager-class"></a>COccManager sınıfı
 
@@ -120,7 +120,6 @@ virtual BOOL CreateDlgControls(
     CWnd* pWndParent,
     LPCTSTR lpszResourceName,
     _AFX_OCC_DIALOG_INFO* pOccDialogInfo);
-
 
 virtual BOOL CreateDlgControls(
     CWnd* pWndParent,
@@ -250,7 +249,6 @@ Geçerli anımsatıcı denetim tarafından temsil edilen eşleşip eşleşmediğ
 static BOOL AFX_CDECL IsMatchingMnemonic(
     CWnd* pWnd,
     LPMSG lpMsg);
-
 
 static BOOL AFX_CDECL IsMatchingMnemonic(
     COleControlSiteOrWnd* pWnd,

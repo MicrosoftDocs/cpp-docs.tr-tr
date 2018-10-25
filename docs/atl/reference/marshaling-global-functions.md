@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8426a0113ca245f6c9390a5c95f350398938731
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e0b9a8e72cb3c1334484ed4a4e5c85c8b9a12347
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106239"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055144"
 ---
 # <a name="marshaling-global-functions"></a>Hazırlama genel işlevleri
 
@@ -34,7 +34,7 @@ Bu işlevler, hazırlama ve veri hazırlama, arabirim işaretçilerini dönüşt
 |-|-|
 |[AtlFreeMarshalStream](#atlfreemarshalstream)|Sıralama verilerini serbest bırakır ve `IStream` işaretçi.|
 |[AtlMarshalPtrInProc](#atlmarshalptrinproc)|Yeni bir akış nesnesi oluşturur ve belirtilen arabirim işaretçisini sıralar.|
-|[AtlUnmarshalPtr](#atlunmarshalptr)|Bir akışın sıralama verilerini bir arabirim işaretçisi dönüştürür.|  
+|[AtlUnmarshalPtr](#atlunmarshalptr)|Bir akışın sıralama verilerini bir arabirim işaretçisi dönüştürür.|
 
 ## <a name="requirements"></a>Gereksinimler:
 
@@ -42,7 +42,7 @@ Bu işlevler, hazırlama ve veri hazırlama, arabirim işaretçilerini dönüşt
 
 ##  <a name="atlfreemarshalstream"></a>  AtlFreeMarshalStream
 
-Akıştaki sıralama verilerini serbest bırakır, ardından da akış işaretçisini serbest bırakır.  
+Akıştaki sıralama verilerini serbest bırakır, ardından da akış işaretçisini serbest bırakır.
 
 ```
 HRESULT AtlFreeMarshalStream(IStream* pStream);

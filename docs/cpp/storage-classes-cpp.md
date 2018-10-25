@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 29e5b2783dda3c66736a7e668186d0645cdd4b84
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 659b76a640a0dfaee75179f135fee9d1eeb5ba02
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861323"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50058342"
 ---
 # <a name="storage-classes-c"></a>Depolama sınıfları (C++)
 
@@ -35,7 +35,6 @@ A *depolama sınıfı* C++ bağlamında değişken bildirimleri olan nesnelerin 
 1. [Değişebilir](../cpp/mutable-data-members-cpp.md) anahtar sözcüğü bir depolama sınıfı tanımlayıcısı olarak değerlendirilebilir. Ancak, sadece bir sınıf tanımının üye listesinde kullanılabilir.
 
 1. **Visual C++ 2010 ve sonraki sürümlerine:** **otomatik** anahtar sözcüğü, artık bir C++ depolama sınıfı tanımlayıcısı ve **kaydetme** anahtar sözcüğü kullanım dışı bırakılmıştır. **Visual Studio 2017 sürüm 15.7 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **kaydetme** anahtar sözcüğü C++ dili kaldırılır.
-
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class
