@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 344e2e39e52aa80624e4959daada5038506bb4c5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 834d1771513ef7a482afef33c3a1bb5bd3dcb400
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433185"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065661"
 ---
 # <a name="cfontholder-class"></a>CFontHolder sınıfı
 
@@ -150,7 +150,6 @@ Bir Windows yazı tipi için bir tanıtıcı almak için bu işlevi çağırın.
 
 ```
 HFONT GetFontHandle();
-
 
 HFONT GetFontHandle(
     long cyLogical,

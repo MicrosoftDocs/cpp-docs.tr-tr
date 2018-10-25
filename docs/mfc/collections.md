@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b6f2fdeb02fbc5e57bbba58f685d21133841279
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 72bae0d985c81478321109c3c02c07e6b1386028
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412866"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069912"
 ---
 # <a name="collections"></a>Koleksiyonlar
 
@@ -53,15 +53,15 @@ Her üç sağlanan koleksiyon şekillerinin daha kısa bir süre sonra bu konuda
 
 - List
 
-     List sınıfı karakteriyle bağlı bir liste uygulanan öğe sıralı, dizinlenmemiş bir listesini sağlar. Bir liste "head" ve "tail" ve ekleme veya baş veya kuyruk, ekleme veya öğeleri ortada silme öğelerin kaldırılması çok hızlı olması.
+   List sınıfı karakteriyle bağlı bir liste uygulanan öğe sıralı, dizinlenmemiş bir listesini sağlar. Bir liste "head" ve "tail" ve ekleme veya baş veya kuyruk, ekleme veya öğeleri ortada silme öğelerin kaldırılması çok hızlı olması.
 
 - Dizi
 
-     Array sınıfı nesnelerini dinamik olarak ölçekli, sıralı ve tamsayı dizini oluşturulmuş bir dizi sağlar.
+   Array sınıfı nesnelerini dinamik olarak ölçekli, sıralı ve tamsayı dizini oluşturulmuş bir dizi sağlar.
 
 - Harita (sözlük olarak da bilinir)
 
-     Harita anahtar nesneye bir değer nesnesi ile ilişkilendiren bir koleksiyondur.
+   Harita anahtar nesneye bir değer nesnesi ile ilişkilendiren bir koleksiyondur.
 
 ##  <a name="_core_the_template_based_collection_classes"></a> Şablona dayalı koleksiyon sınıfları
 

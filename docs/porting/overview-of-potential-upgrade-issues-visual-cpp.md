@@ -8,18 +8,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdfa82580ba61ab276d6d64a9424d7043c2822f1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 742d722033d0fb2e686861d0e09fc45c73540ade
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393782"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075768"
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>Olası yükseltme sorunlarına (Visual C++) genel bakış
 
 Yıllar içinde Microsoft Visual C++ Derleyici C++ dili, C++ Standart Kitaplığı, C çalışma zamanı (CRT) ve MFC ve ATL gibi diğer kitaplıkları değişiklikleri birlikte birçok değişiklik gerçekleştirdi Sonuç olarak, bir uygulama, Visual Studio'nun önceki bir sürümden yükseltirken, derleyici ve bağlayıcı hataları ve Uyarıları düzgün bir şekilde daha önce derlenmiş kodda karşılaşabilirsiniz. Eski özgün kod tabanı, bu tür hatalar daha olası. Bu genel bakışta karşılaşabileceğiniz olası sorunların en yaygın sınıfları özetler ve daha ayrıntılı bilgi için bağlantılar sağlar.
 
-> [!NOTE] 
+> [!NOTE]
 > Geçmişte, birçok Visual Studio sürümü span yükseltmeleri aynı anda gerçekleştirilen artımlı olarak bir sürüm olması gerektiğini önerilir. Artık bu yaklaşım önerilir. Bunun hemen her zaman ne kadar eski kod tabanı ne olursa olsun Visual Studio'nun en güncel sürüme yükseltmek daha basit olduğunu bulduk.
 
 Sorularınız veya yükseltme işlemi hakkında yorumlar göndermenin vcupgrade@microsoft.com.
@@ -161,7 +161,7 @@ Belirli bir Windows API'si için en düşük desteklenen işletim sistemleri ve 
 
 ### <a name="windows-version"></a>Windows sürümü
 
-Windows API doğrudan veya dolaylı olarak kullanan bir program yükseltirken desteklemek için en düşük Windows sürümü karar vermeniz gerekir. Çoğu durumda Windows 7 iyi bir seçimdir. Daha fazla bilgi için [üstbilgi dosya sorunlarını](porting-guide-spy-increment.md#header_file_problems). `WINVER` Makro tanımlar, programınız için tasarlanan Windows en eski sürümünü çalıştırın. MFC programınızı WINVER 0x0501 (Windows XP) için ayarlar MFC artık XP desteklediğinden derleyici XP modu sahip olsa da, bir uyarı alırsınız.  
+Windows API doğrudan veya dolaylı olarak kullanan bir program yükseltirken desteklemek için en düşük Windows sürümü karar vermeniz gerekir. Çoğu durumda Windows 7 iyi bir seçimdir. Daha fazla bilgi için [üstbilgi dosya sorunlarını](porting-guide-spy-increment.md#header_file_problems). `WINVER` Makro tanımlar, programınız için tasarlanan Windows en eski sürümünü çalıştırın. MFC programınızı WINVER 0x0501 (Windows XP) için ayarlar MFC artık XP desteklediğinden derleyici XP modu sahip olsa da, bir uyarı alırsınız.
 
 Daha fazla bilgi için [hedef Windows sürümüne güncelleştirmeden](porting-guide-spy-increment.md#updating_winver) ve [daha üst bilgi dosyaları'nı eski](porting-guide-spy-increment.md#outdated_header_files).
 
@@ -188,4 +188,4 @@ Daha fazla bilgi için [MBCS, Unicode taşıma](porting-guide-spy-increment.md#p
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
-[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md)  
+[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md)

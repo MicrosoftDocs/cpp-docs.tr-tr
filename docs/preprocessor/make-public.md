@@ -18,57 +18,59 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bdec8afa2088cad5faf700b3946926bb9d85748
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: eeabbfac65e67e0a293f4c31ff6f8911cc0b676e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42465716"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066727"
 ---
 # <a name="makepublic"></a>make_public
-Yerel bir tür genel derleme erişilebilirliği olmayacağını gösterir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-#pragma make_public(type)  
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*tür* genel derleme erişilebilirliği olmasını istediğiniz tür adıdır.  
-  
-## <a name="remarks"></a>Açıklamalar  
+Yerel bir tür genel derleme erişilebilirliği olmayacağını gösterir.
 
-**make_public** başvurmak istediğiniz yerel türünü değiştiremezsiniz. h: dosyasından olduğunda için kullanışlıdır. Yerel tür görünürlük sayesinde genel derleme imzası bir tür genel bir işlevde kullanmak istiyorsanız, yerel bir tür ayrıca genel bütünleştirilmiş kod erişilebilirliği olmalıdır veya derleyici bir uyarı verir.  
-  
-**make_public** genel kapsamda belirtilmiş olmalı ve yalnızca noktasından etkisi, BT kaynak kodu dosyasının sonuna aracılığıyla bildirilir bulunmaktadır.  
-  
-Yerel bir tür açık veya örtük olarak özel olabilir. bkz: [tür görünürlüğü](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) daha fazla bilgi için.  
-  
-## <a name="examples"></a>Örnekler  
-Aşağıdaki örnek, iki yerel yapılar için tanımları içeren bir .h dosyası içeriğidir.  
-  
-```cpp  
-// make_public_pragma.h  
-struct Native_Struct_1 { int i; };  
-struct Native_Struct_2 { int i; };  
-```  
+## <a name="syntax"></a>Sözdizimi
 
-Aşağıdaki kod örneği üst bilgi dosyası tüketir ve açıkça kullanarak yerel yapılar genel olarak işaretlemek sürece gösteren **make_public**, yerel yapılar için kullanmaya çalıştığınızda, derleyici bir uyarı oluşturur Genel olarak yönetilen bir tür genel işlev imzası.  
-  
-```cpp  
-// make_public_pragma.cpp  
-// compile with: /c /clr /W1  
-#pragma warning (default : 4692)  
-#include "make_public_pragma.h"  
-#pragma make_public(Native_Struct_1)  
-  
-public ref struct A {  
-   void Test(Native_Struct_1 u) {u.i = 0;}   // OK  
-   void Test(Native_Struct_2 u) {u.i = 0;}   // C4692  
-};  
-```  
-  
+```
+#pragma make_public(type)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*tür* genel derleme erişilebilirliği olmasını istediğiniz tür adıdır.
+
+## <a name="remarks"></a>Açıklamalar
+
+**make_public** başvurmak istediğiniz yerel türünü değiştiremezsiniz. h: dosyasından olduğunda için kullanışlıdır. Yerel tür görünürlük sayesinde genel derleme imzası bir tür genel bir işlevde kullanmak istiyorsanız, yerel bir tür ayrıca genel bütünleştirilmiş kod erişilebilirliği olmalıdır veya derleyici bir uyarı verir.
+
+**make_public** genel kapsamda belirtilmiş olmalı ve yalnızca noktasından etkisi, BT kaynak kodu dosyasının sonuna aracılığıyla bildirilir bulunmaktadır.
+
+Yerel bir tür açık veya örtük olarak özel olabilir. bkz: [tür görünürlüğü](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) daha fazla bilgi için.
+
+## <a name="examples"></a>Örnekler
+
+Aşağıdaki örnek, iki yerel yapılar için tanımları içeren bir .h dosyası içeriğidir.
+
+```cpp
+// make_public_pragma.h
+struct Native_Struct_1 { int i; };
+struct Native_Struct_2 { int i; };
+```
+
+Aşağıdaki kod örneği üst bilgi dosyası tüketir ve açıkça kullanarak yerel yapılar genel olarak işaretlemek sürece gösteren **make_public**, yerel yapılar için kullanmaya çalıştığınızda, derleyici bir uyarı oluşturur Genel olarak yönetilen bir tür genel işlev imzası.
+
+```cpp
+// make_public_pragma.cpp
+// compile with: /c /clr /W1
+#pragma warning (default : 4692)
+#include "make_public_pragma.h"
+#pragma make_public(Native_Struct_1)
+
+public ref struct A {
+   void Test(Native_Struct_1 u) {u.i = 0;}   // OK
+   void Test(Native_Struct_2 u) {u.i = 0;}   // C4692
+};
+```
+
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

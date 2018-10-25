@@ -14,20 +14,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae68abc0768c0a06526af6439a8a881684ecdb15
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 8cb811ccd3291caa9b3da095310c74416fbd5799
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821302"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067949"
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual Studio'da Visual C++
 
-> [!NOTE]  
-> Bu Geliştirici belgeleri, Visual Studio 2015 ve Visual Studio 2017 için geçerlidir. 
+> [!NOTE]
+> Bu Geliştirici belgeleri, Visual Studio 2015 ve Visual Studio 2017 için geçerlidir.
 
-> Bir program çalıştırabilmek için Visual C++ yeniden dağıtılabilir paketi arıyorsanız, Git [Microsoft Download Center](http://www.microsoft.com/download/) girin **Visual C++** arama kutusuna.  
-  
+> Bir program çalıştırabilmek için Visual C++ yeniden dağıtılabilir paketi arıyorsanız, Git [Microsoft Download Center](http://www.microsoft.com/download/) girin **Visual C++** arama kutusuna.
+
 
 Microsoft Visual Visual C++ ya da MSVC, genellikle kısalttık C++, C++, C ve derleme dili geliştirme araçları ve kitaplıkları kullanılabilir adıdır, Windows üzerinde Visual Studio'nun bir parçası olarak. Bu araçlar ve kitaplıklar, Evrensel Windows Platformu (UWP) uygulamaları, yerel Windows Masaüstü ve sunucu uygulamaları, platformlar arası kitaplıklar ve Windows, Linux, Android ve iOS, hem de yönetilen uygulamaları ve .NET kullanma kitaplıkları çalışan uygulamalar oluşturmanızı sağlar Çerçeve. Her şeyi basit bir konsol uygulamalardan en karmaşık ve karmaşık uygulamalar Windows Masaüstü için cihaz sürücüleri ve platformlar arası oyunlar mobil cihazları ve işletim sistemi bileşenleri için en küçük IOT cihazlarından yazmak için Visual C++ kullanabilirsiniz çok sunuculu yüksek performanslı Azure bulutta bilgi işlem.
 
@@ -101,7 +101,7 @@ Kılavuzları ve referans içeriği Windows Geliştirici Merkezi'nde bulabilirsi
 [Masaüstü uygulamaları (C++)](windows/desktop-applications-visual-cpp.md)<br/>
 Geleneksel yerel C++ Masaüstü uygulamaları için Windows oluşturmayı öğrenin.
 
-[.NET programlama ile C + +/ CLI](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
+[C++/CLI ile .NET programlama](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
 C# veya Visual Basic gibi dillerde yazılan yerel C++ ve .NET programlar arasında birlikte çalışabilirliği sağlamak DLL'leri oluşturmayı öğrenin.
 
 [Linux programlama](linux/index.md)<br/>
@@ -160,7 +160,7 @@ GPU üzerinde yürütülen yoğun paralel algoritmalar.
 [Windows çalışma zamanı Şablon kitaplığı (WRL)](windows/windows-runtime-cpp-template-library-wrl.md)<br/>
 Evrensel Windows Platformu (UWP) uygulamaları ve bileşenleri.
 
-[.NET programlama ile C + +/ CLI](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
+[C++/CLI ile .NET programlama](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
 Ortak dil çalışma zamanı (CLR) için programlama.
 
 ## <a name="third-party-open-source-c-libraries"></a>Üçüncü taraf açık kaynak C++ kitaplıkları

@@ -1,7 +1,7 @@
 ---
 title: Yer işaretlerini kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/24/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -18,54 +18,56 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d8d23ba81ba83202da1dd6814374a0c4aa1cb98b
-ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
+ms.openlocfilehash: 6eeb2b6d0c9aa82a6304225b4de14c4d387bfc96
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990085"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072180"
 ---
 # <a name="using-bookmarks"></a>Yer İşaretlerini Kullanma
 
-Satır kümesi açmadan önce yer işaretlerini kullanmak istediğiniz sağlayıcı söylemeniz gerekir. Bunu yapmak için ayarlanmış `DBPROP_BOOKMARKS` özelliğini **true** , özelliğini ayarlayın. Sağlayıcı özel BOOKMARK_ENTRY makrosu kullanmalısınız sütun sıfır olarak yer işaretleri alır ve `CBookmark` statik erişimci kullanıyorsanız sınıfı. `CBookmark` bağımsız değişken yer işareti arabelleğin bayt cinsinden uzunluğu olduğu bir şablon sınıfıdır. Bir yer işareti için gerekli arabellek uzunluğu sağlayıcısına bağlıdır. Aşağıdaki örnekte gösterildiği gibi ODBC OLE DB sağlayıcısı kullanıyorsanız, arabellek 4 bayt olması gerekir.  
-  
-```cpp  
-class CProducts  
-{  
-public:  
-   CBookmark<4>   bookmark;  
-  
-   BEGIN_COLUMN_MAP(CProducts)  
-      BOOKMARK_ENTRY(bookmark)  
-   END_COLUMN_MAP()  
-};  
-  
-CDBPropSet propset(DBPROPSET_ROWSET);  
+Satır kümesi açmadan önce yer işaretlerini kullanmak istediğiniz sağlayıcı söylemeniz gerekir. Bunu yapmak için ayarlanmış `DBPROP_BOOKMARKS` özelliğini **true** , özelliğini ayarlayın. Sağlayıcı özel BOOKMARK_ENTRY makrosu kullanmalısınız sütun sıfır olarak yer işaretleri alır ve `CBookmark` statik erişimci kullanıyorsanız, sınıf. `CBookmark` bağımsız değişken yer işareti arabelleğin bayt cinsinden uzunluğu olduğu bir şablon sınıfıdır. Bir yer işareti için gerekli arabellek uzunluğu sağlayıcısına bağlıdır. Aşağıdaki örnekte gösterildiği gibi ODBC OLE DB sağlayıcısı kullanıyorsanız, arabellek 4 bayt olması gerekir.
 
-propset.AddProperty(DBPROP_BOOKMARKS, true);  
-  
-CTable<CAccessor<CProducts>> product;  
-product.Open(session, "Products", &propset);  
-```  
-  
-Kullanırsanız `CDynamicAccessor`, arabellek çalışma zamanında dinamik olarak ayrılır. Bu durumda, özelleştirilmiş bir sürümünü kullanabilirsiniz `CBookmark` kendisi için değil belirttiğiniz bir arabellek uzunluğu. İşlevini `GetBookmark` Bu kod örneğinde gösterildiği gibi geçerli kayıtta yer almak için:  
-  
-```cpp  
-CTable<CDynamicAccessor> product;  
-CBookmark<>              bookmark;  
-CDBPropSet propset(DBPROPSET_ROWSET);  
-  
-propset.AddProperty(DBPROP_BOOKMARKS, true);  
+```cpp
+class CProducts
+{
+public:
+   CBookmark<4> bookmark;
 
-product.Open(session, "Products", &propset);  
+   BEGIN_COLUMN_MAP(CProducts)
+      BOOKMARK_ENTRY(bookmark)
+   END_COLUMN_MAP()
+};
+```
 
-product.MoveNext();  
+Ardından, aşağıdaki kod tarafından kullanılır:
 
-product.GetBookmark(&bookmark);  
-```  
-  
-Yer işaretleri sağlayıcı belirtilen bölümler destekleme hakkında daha fazla bilgi için bkz: [yer işaretleri sağlayıcı desteği](../../data/oledb/provider-support-for-bookmarks.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+```cpp
+CDBPropSet propset(DBPROPSET_ROWSET);
+propset.AddProperty(DBPROP_BOOKMARKS, true);
+
+CTable<CAccessor<CProducts>> product;
+CSession session;
+product.Open(session, "Products", &propset);
+```
+
+Kullanırsanız `CDynamicAccessor`, arabellek çalışma zamanında dinamik olarak ayarlanır. Bu durumda, özelleştirilmiş bir sürümünü kullanabilirsiniz `CBookmark` , yoksa belirttiğiniz bir arabellek uzunluğu. İşlevini `GetBookmark` Bu kod örneğinde gösterildiği gibi geçerli kayıtta yer almak için:
+
+```cpp
+CTable<CDynamicAccessor> product;
+CBookmark<> bookmark;
+CDBPropSet propset(DBPROPSET_ROWSET);
+CSession session;
+
+propset.AddProperty(DBPROP_BOOKMARKS, true);
+product.Open(session, "Products", &propset);
+product.MoveNext();
+product.GetBookmark(&bookmark);
+```
+
+Yer işaretleri sağlayıcı belirtilen bölümler destekleme hakkında daha fazla bilgi için bkz: [yer işaretleri sağlayıcı desteği](../../data/oledb/provider-support-for-bookmarks.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Erişimcileri Kullanma](../../data/oledb/using-accessors.md)

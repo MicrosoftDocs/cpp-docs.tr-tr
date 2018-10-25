@@ -13,20 +13,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e8251f45d07e8a410c41a89fbc618839e9bbb838
-ms.sourcegitcommit: 6a6b2061db9d51c5cc79775512de54589a4d2fbc
+ms.openlocfilehash: 6ea59ae2cb0c12a60a8463434105f1cc6af0a77d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49347234"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073539"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
 
 Bir Windows server, Bulut veya Xbox üzerinde birçok türde bir Windows PC (x 86, x64 veya ARM) üzerinde çalışan programları yazmak için Visual C++ kullanabilirsiniz. İyi yazılmış C++ programları şu niteliklere sahip:
+
 - verimli bellek gereksinimleri
-- güç tüketiminde ekonomiktir 
+- güç tüketiminde ekonomiktir
 - birden fazla çekirdekli ve çok çekirdekli cihazlar tam olarak yararlanmak kullanabilirsiniz
-- Genel üzerindeki grafik işlemci birimi (GPGPU) bilgi işlem yapmak kullanabilirsiniz  
+- Genel üzerindeki grafik işlemci birimi (GPGPU) bilgi işlem yapmak kullanabilirsiniz
 - Donanım diğer son gelişmelerden yararlanmak kullanabilirsiniz.
 
 Visual C++ ile geliştirdiğiniz Windows uygulamaları birkaç kategoriden vardır. Bu kategoriler, farklı programlama modelleri veya yıllar içinde kullanıma sunulan uygulama modelleri sahip. Her model, pencereler ve iletişim kutuları gibi kullanıcı arabirimleri oluşturun ve platforma erişim sağlamak için farklı kitaplıklarını ve API'lerini kullanır. C++ Standart Kitaplığı yanı sıra üçüncü taraf kitaplıkların UWP için bazı kısıtlamalar ile aşağıdaki kategorilerden herhangi birine içinde kullanılabilir.
@@ -98,7 +99,7 @@ Microsoft kitaplıkları şunları içerir:
 
 - Eşzamanlılık Çalışma Zamanı: Birden fazla çekirdekli ve çok çekirdekli cihazlar için paralel ve zaman uyumsuz programlama işini basitleştiren bir kitaplık. Daha fazla bilgi için [eşzamanlılık çalışma zamanı](../parallel/concrt/concurrency-runtime.md).
 
-Birçok Windows programlama senaryosunda ayrıca, Windows işletim sistemi bileşenlerine erişimi etkinleştiren başlık dosyalarını içeren Windows SDK gerekir. Varsayılan olarak, Visual Studio, Windows SDK'sı bir evrensel Windows uygulama geliştirmeyi sağlayan C++ Masaüstü iş yükü bileşeni olarak yükler. UWP uygulamaları geliştirme için Windows SDK'sının Windows 10 sürümü gerekir. Bilgi için [Windows 10 SDK'sı](https://dev.windows.com/downloads/windows-10-sdk). (Windows, önceki sürümler için Windows SDK'ları hakkında daha fazla bilgi için bkz. [Windows SDK arşivi](https://developer.microsoft.com/windows/downloads/sdk-archive)). 
+Birçok Windows programlama senaryosunda ayrıca, Windows işletim sistemi bileşenlerine erişimi etkinleştiren başlık dosyalarını içeren Windows SDK gerekir. Varsayılan olarak, Visual Studio, Windows SDK'sı bir evrensel Windows uygulama geliştirmeyi sağlayan C++ Masaüstü iş yükü bileşeni olarak yükler. UWP uygulamaları geliştirme için Windows SDK'sının Windows 10 sürümü gerekir. Bilgi için [Windows 10 SDK'sı](https://dev.windows.com/downloads/windows-10-sdk). (Windows, önceki sürümler için Windows SDK'ları hakkında daha fazla bilgi için bkz. [Windows SDK arşivi](https://developer.microsoft.com/windows/downloads/sdk-archive)).
 
 **Program dosyaları (x86) \Windows Setleri** yüklü olduğu Windows SDK'ın tüm sürümleri için varsayılan konumdur.
 

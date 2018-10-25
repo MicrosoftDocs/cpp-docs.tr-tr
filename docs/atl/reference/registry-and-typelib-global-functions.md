@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0e4eba9940546e72f11c220dc03a6538750ae85
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: af2780c8b7fb332cd739416e5051a57a8bc7f765
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46028343"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073545"
 ---
 # <a name="registry-and-typelib-global-functions"></a>Kayıt defteri ve TypeLib genel işlevleri
 
@@ -60,7 +60,7 @@ Bu işlevler, hangi düğümün program bilgileri depolamak için kullandığı 
 |||
 |-|-|
 |[AtlGetPerUserRegistration](#atlgetperuserregistration)|Uygulama kayıt defteri erişimini yönlendiren olup olmadığını alır **HKEY_CURRENT_USER** ( **HKCU**) düğüm.|
-|[AtlSetPerUserRegistration](#atlsetperuserregistration)|Uygulama kayıt defteri erişimini yönlendiren olup olmadığını ayarlar **HKEY_CURRENT_USER** ( **HKCU**) düğüm.|  
+|[AtlSetPerUserRegistration](#atlsetperuserregistration)|Uygulama kayıt defteri erişimini yönlendiren olup olmadığını ayarlar **HKEY_CURRENT_USER** ( **HKCU**) düğüm.|
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -93,7 +93,7 @@ Yeniden yönlendirme genel değil. Yalnızca MFC ve ATL çerçeveleri, bu kayıt
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h  
+**Başlık:** atlbase.h
 
 ## <a name="afxregcreatekey"></a> AfxRegCreateKey
 
@@ -121,11 +121,11 @@ Açılan veya oluşturulan anahtarı için bir tanıtıcı alan bir değişken i
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, döndürülen değer ERROR_SUCCESS olur. İşlev başarısız olursa, döndürülen değer wınerror içinde tanımlanan bir sıfır olmayan hata kodudur.  
+İşlev başarılı olursa, döndürülen değer ERROR_SUCCESS olur. İşlev başarısız olursa, döndürülen değer wınerror içinde tanımlanan bir sıfır olmayan hata kodudur.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxpriv.h  
+**Başlık:** afxpriv.h
 
 ## <a name="afxregdeletekey"></a> AfxRegDeleteKey
 
@@ -154,7 +154,7 @@ Silinecek anahtar adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxpriv.h  
+**Başlık:** afxpriv.h
 
 ## <a name="afxregisterpreviewhandler"></a>
 
@@ -179,7 +179,7 @@ Dosya uzantısı ile bu işleyici kayıtlı belirtir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h   
+**Başlık:** afxdisp.h
 
 ##  <a name="atlregistertypelib"></a>  AtlRegisterTypeLib
 
@@ -239,11 +239,11 @@ Oluşturulan anahtarı için bir tanıtıcı alan bir değişken için bir işar
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxpriv.h  
+**Başlık:** afxpriv.h
 
 ## <a name="afxregopenkeyex"></a>  AfxRegOpenKeyEx
 
-Belirtilen kayıt defteri anahtarı'nı açar. 
+Belirtilen kayıt defteri anahtarı'nı açar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -277,7 +277,7 @@ Açılan anahtarı için bir tanıtıcı alan bir değişken için bir işaretç
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxpriv.h  
+**Başlık:** afxpriv.h
 
 ## <a name="afxunregisterpreviewhandler"></a> AfxUnregisterPreviewHandler
 
@@ -296,7 +296,7 @@ Sona erdirilecek CLSID işleyicisinin belirtir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h  
+**Başlık:** afxdisp.h
 
 ## <a name="atlsetperuserregistration"></a> AtlSetPerUserRegistration
 
@@ -321,11 +321,11 @@ Yöntem başarılıysa S_OK, aksi takdirde HRESULT hata kodu bir hata oluşursa.
 
 Kayıt defteri yeniden yönlendirme varsayılan olarak etkin değildir. Bu seçeneği etkinleştirirseniz, kayıt defteri erişimini yönlendireceği **HKEY_CURRENT_USER\Software\Classes**.
 
-Yeniden yönlendirme genel değil. Yalnızca MFC ve ATL çerçeveleri, bu kayıt defteri yeniden yönlendirmeyi tarafından etkilenir.  
+Yeniden yönlendirme genel değil. Yalnızca MFC ve ATL çerçeveleri, bu kayıt defteri yeniden yönlendirmeyi tarafından etkilenir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h  
+**Başlık:** atlbase.h
 
 ##  <a name="atlunregistertypelib"></a>  AtlUnRegisterTypeLib
 
@@ -335,7 +335,7 @@ Tür kitaplığının kaydını silmek için bu işlev çağrılır.
 
 ```
 ATLAPI AtlUnRegisterTypeLib(
-    HINSTANCE hInstTypeLib, 
+    HINSTANCE hInstTypeLib,
     LPCOLESTR lpszIndex);
 ```
 
@@ -353,7 +353,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yardımcı işlevi tarafından kullanılan [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) ve [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver).  
+Bu yardımcı işlevi tarafından kullanılan [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) ve [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -405,7 +405,7 @@ Bu işlev, Visual Studio 2013'te kullanım dışı bırakıldı ve Visual Studio
 
 ##  <a name="registrydataexchange"></a>  RegistryDataExchange
 
-Bu işlev, sistem kayıt defterinden okumak veya ona yazmak için kullanılır.  
+Bu işlev, sistem kayıt defterinden okumak veya ona yazmak için kullanılır.
 
 ### <a name="syntax"></a>Sözdizimi
 

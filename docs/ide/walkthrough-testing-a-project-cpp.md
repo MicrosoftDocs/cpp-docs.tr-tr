@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 133214cceebf5d43610207e446698341d7803b71
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 56614dc0829834e77cfdf10d8d88ed44492237e3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235548"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070146"
 ---
 # <a name="walkthrough-testing-a-project-c"></a>İzlenecek Yol: Projeyi Test Etme (C++)
 
@@ -41,7 +41,7 @@ Bu izlenecek yolda, program çalışırken bir değişkenin değerini izleyin ve
 
 1. Bu kod satırı seçin:
 
-     `Cardgame.solitaire(1);`
+   `Cardgame.solitaire(1);`
 
 1. Menü çubuğunda, o satıra bir kesme noktası ayarlamak isterseniz **hata ayıklama** > **iki durumlu kesme noktası**, ya da seçin **F9** anahtarı. Satırın solunda kırmızı bir daire görünür; Bu, bir kesme noktasının ayarlandığını belirtir. Bir kesme noktasını kaldırmak için menü komutunu seçebilirsiniz veya **F9** yeniden anahtar.
 

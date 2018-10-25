@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e5147faaf0170a10295006f12d7e95f5dfd3e8d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 159d452c3b0a813c52d8486f52d67b9817c3a558
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380704"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069288"
 ---
 # <a name="ccriticalsection-class"></a>CCriticalSection sınıfı
 
@@ -81,7 +81,7 @@ Kullanmak için iki farklı yöntemle bir `CCriticalSection` nesne: tek başına
 
 - Tek başına kullanılan tek başına yöntem `CCriticalSection` nesne, oluşturmak `CCriticalSection` gerektiğinde nesne. Sonra başarılı bir dönüş oluşturucudan açıkça çağrısıyla nesneyi kilitlemek [kilit](#lock). Çağrı [kilidini](#unlock) işiniz bittiğinde kritik bölüm erişme. Bu, kaynak kodunuzu okuyan kişi daha anlaşılır sırasında kilitlemek ve kritik bölüm önce ve sonra erişim kilidini açmak hatırlamalısınız gibi daha fazla hataya yöntemidir.
 
-     Daha fazla tercih edilen bir yöntem kullanmaktır [CSingleLock](../../mfc/reference/csinglelock-class.md) sınıfı. Ayrıca bir `Lock` ve `Unlock` yöntemi, ancak bir özel durum oluşursa, kaynağın kilidini açma hakkında endişe etmeniz gerekmez.
+   Daha fazla tercih edilen bir yöntem kullanmaktır [CSingleLock](../../mfc/reference/csinglelock-class.md) sınıfı. Ayrıca bir `Lock` ve `Unlock` yöntemi, ancak bir özel durum oluşursa, kaynağın kilidini açma hakkında endişe etmeniz gerekmez.
 
 - Yöntemi de paylaşabilirsiniz bir sınıf ile birden çok iş parçacığı ekleyerek katıştırılmış bir `CCriticalSection`-türü veri üyesi sınıfı ve gerektiğinde veri üyesi kilitleme.
 

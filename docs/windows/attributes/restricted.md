@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1dfaed296242d2a0fc341c2ff5f137a08d753e71
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: bb13132c651323fcdffef2c06215314ad193c91d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789847"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071108"
 ---
 # <a name="restricted"></a>kısıtlı
 
@@ -89,4 +89,4 @@ class c : public a, public b
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
-[Yöntem Öznitelikleri](method-attributes.md)  
+[Yöntem Öznitelikleri](method-attributes.md)

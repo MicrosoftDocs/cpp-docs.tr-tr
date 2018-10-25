@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4d63d7620aa4d2cb83b954494172da9db55f6a2e
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 4cc12d48bc6de95d55ba56f34df54b60c0ded846
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328226"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066675"
 ---
 # <a name="generics-and-templates-ccli"></a>Genel türler ve temsilciler (C + +/ CLI)
 
@@ -89,7 +89,7 @@ public:
    MyRef(T t) {
       ig = gcnew MyGeneric<T>(t);
       ig->F();
-    } 
+    }
 };
 
 int main() {

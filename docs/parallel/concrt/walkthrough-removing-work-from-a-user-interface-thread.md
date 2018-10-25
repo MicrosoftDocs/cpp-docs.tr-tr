@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d87fe1060756e46418411584fa6042533bbc1f2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cc766b3f5410cc52543b5d2bafc06b87d9222e4a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385514"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077939"
 ---
 # <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>İzlenecek yol: Kullanıcı Arabirimi İş Parçacığından İşi Kaldırma
 
@@ -72,7 +72,7 @@ Bu bölümde, temel MFC uygulaması oluşturma işlemini açıklar.
 
 1. Tıklayın **son** projeyi oluşturmak ve kapatmak için **MFC Uygulama Sihirbazı**.
 
-     Oluşturma ve çalışan uygulamanın başarıyla oluşturulduğunu doğrulayın. Uygulama derlemek için **derleme** menüsünde tıklatın **Çözümü Derle**. Uygulama başarıyla derlenirse tıklayarak uygulamayı çalıştırmak **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menüsü.
+   Oluşturma ve çalışan uygulamanın başarıyla oluşturulduğunu doğrulayın. Uygulama derlemek için **derleme** menüsünde tıklatın **Çözümü Derle**. Uygulama başarıyla derlenirse tıklayarak uygulamayı çalıştırmak **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menüsü.
 
 ##  <a name="serial"></a> Uygulama seri Mandelbrot uygulama sürümü
 
@@ -82,37 +82,37 @@ Bu bölümde, Mandelbrot düzgünleştiren parçalı çizmek kullanılan nasıl 
 
 1. Stdafx.h içinde aşağıdaki ekleme `#include` yönergesi:
 
-     [!code-cpp[concrt-mandelbrot#1](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_1.h)]
+   [!code-cpp[concrt-mandelbrot#1](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_1.h)]
 
 1. İçinde ChildView.h, sonra `pragma` yönergesi, tanımlama `BitmapPtr` türü. `BitmapPtr` Türü bir işaretçi sağlayan bir `Bitmap` birden çok bileşen tarafından paylaşılacak nesne. `Bitmap` Nesne artık herhangi bir bileşen tarafından başvurulduğunda silinir.
 
-     [!code-cpp[concrt-mandelbrot#2](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_2.h)]
+   [!code-cpp[concrt-mandelbrot#2](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_2.h)]
 
 1. ChildView.h içinde aşağıdaki kodu ekleyin `protected` bölümünü `CChildView` sınıfı:
 
-     [!code-cpp[concrt-mandelbrot#3](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_3.h)]
+   [!code-cpp[concrt-mandelbrot#3](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_3.h)]
 
 1. ChildView.cpp, açıklama satırı yapın veya aşağıdaki satırları kaldırın.
 
-     [!code-cpp[concrt-mandelbrot#4](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_4.cpp)]
+   [!code-cpp[concrt-mandelbrot#4](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_4.cpp)]
 
-     Hata ayıklama yapılarında, bu adımı kullanarak uygulamanın engeller `DEBUG_NEW` GDI +'ile uyumsuz olan ayırıcı.
+   Hata ayıklama yapılarında, bu adımı kullanarak uygulamanın engeller `DEBUG_NEW` GDI +'ile uyumsuz olan ayırıcı.
 
 1. ChildView.cpp içinde ekleme bir `using` yönergesini `Gdiplus` ad alanı.
 
-     [!code-cpp[concrt-mandelbrot#5](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_5.cpp)]
+   [!code-cpp[concrt-mandelbrot#5](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_5.cpp)]
 
 1. Oluşturucu ve yıkıcı, için aşağıdaki kodu ekleyin `CChildView` başlatmak ve GDI + kapatmak için sınıf.
 
-     [!code-cpp[concrt-mandelbrot#6](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_6.cpp)]
+   [!code-cpp[concrt-mandelbrot#6](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_6.cpp)]
 
 1. Uygulama `CChildView::DrawMandelbrot` yöntemi. Bu yöntem Mandelbrot düzgünleştiren parçalı belirtilen çizer `Bitmap` nesne.
 
-     [!code-cpp[concrt-mandelbrot#7](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_7.cpp)]
+   [!code-cpp[concrt-mandelbrot#7](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_7.cpp)]
 
 1. Uygulama `CChildView::OnPaint` yöntemi. Bu yöntemin çağırdığı `CChildView::DrawMandelbrot` ve ardından içeriğini kopyalar `Bitmap` pencereye bir nesne.
 
-     [!code-cpp[concrt-mandelbrot#8](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_8.cpp)]
+   [!code-cpp[concrt-mandelbrot#8](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_8.cpp)]
 
 9. Oluşturmaya ve çalıştırmaya uygulama başarıyla güncelleştirildiğini doğrulayın.
 
@@ -136,25 +136,25 @@ Bu örnekte ayrıca bir [concurrency::unbounded_buffer](reference/unbounded-buff
 
 1. Stdafx.h içinde aşağıdaki ekleme `#include` yönergeleri:
 
-     [!code-cpp[concrt-mandelbrot#101](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_9.h)]
+   [!code-cpp[concrt-mandelbrot#101](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_9.h)]
 
 1. ChildView.h içinde ekleme `task_group` ve `unbounded_buffer` üye değişkenlerine `protected` bölümünü `CChildView` sınıfı. `task_group` Nesnesi tutar; çizim gerçekleştirdiği görevleri `unbounded_buffer` nesnesi tamamlanmış Mandelbrot görüntüsü tutar.
 
-     [!code-cpp[concrt-mandelbrot#102](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_10.h)]
+   [!code-cpp[concrt-mandelbrot#102](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_10.h)]
 
 1. ChildView.cpp içinde ekleme bir `using` yönergesini `concurrency` ad alanı.
 
-     [!code-cpp[concrt-mandelbrot#103](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_11.cpp)]
+   [!code-cpp[concrt-mandelbrot#103](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_11.cpp)]
 
 1. İçinde `CChildView::DrawMandelbrot` yöntem çağrısından sonra `Bitmap::UnlockBits`, çağrı [concurrency::send](reference/concurrency-namespace-functions.md#send) geçirilecek işlevi `Bitmap` UI iş parçacığı için nesne. Ardından UI iş parçacığı Boya ileti gönderin ve istemci alanı geçersiz.
 
-     [!code-cpp[concrt-mandelbrot#104](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_12.cpp)]
+   [!code-cpp[concrt-mandelbrot#104](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_12.cpp)]
 
 1. Güncelleştirme `CChildView::OnPaint` güncelleştirilmiş almak üzere yöntemini `Bitmap` nesne ve istemci penceresine görüntü çizin.
 
-     [!code-cpp[concrt-mandelbrot#105](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_13.cpp)]
+   [!code-cpp[concrt-mandelbrot#105](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_13.cpp)]
 
-     `CChildView::OnPaint` Yöntemi, bir iletiyi arabelleğe mevcut değilse Mandelbrot görüntü oluşturmak için bir görev oluşturur. İleti arabelleği değil içerecek bir `Bitmap` durumlarda örneğin ilk boyama iletisi ve istemci penceresi önüne başka bir pencere taşındığında nesne.
+   `CChildView::OnPaint` Yöntemi, bir iletiyi arabelleğe mevcut değilse Mandelbrot görüntü oluşturmak için bir görev oluşturur. İleti arabelleği değil içerecek bir `Bitmap` durumlarda örneğin ilk boyama iletisi ve istemci penceresi önüne başka bir pencere taşındığında nesne.
 
 1. Oluşturmaya ve çalıştırmaya uygulama başarıyla güncelleştirildiğini doğrulayın.
 
@@ -194,37 +194,37 @@ Pencereyi yeniden boyutlandırıldığında çizim etkin görevleri iptal etmek 
 
 1. İçinde ChildView.h, içinde `protected` bölümünü `CChildView` sınıfı, bildirimler için ekleme `OnSize`, `OnSizing`, ve `OnDestroy` ileti eşlemesi işlevleri.
 
-     [!code-cpp[concrt-mandelbrot#201](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_15.h)]
+   [!code-cpp[concrt-mandelbrot#201](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_15.h)]
 
 1. İleti eşlemesi için işleyiciler içerecek şekilde ChildView.cpp içinde değiştirmek `WM_SIZE`, `WM_SIZING`, ve `WM_DESTROY` iletileri.
 
-     [!code-cpp[concrt-mandelbrot#202](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_16.cpp)]
+   [!code-cpp[concrt-mandelbrot#202](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_16.cpp)]
 
 1. Uygulama `CChildView::OnSizing` yöntemi. Bu yöntem herhangi bir mevcut çizim görevi iptal eder.
 
-     [!code-cpp[concrt-mandelbrot#203](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_17.cpp)]
+   [!code-cpp[concrt-mandelbrot#203](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_17.cpp)]
 
 1. Uygulama `CChildView::OnSize` yöntemi. Bu yöntem herhangi bir mevcut çizim görevi iptal eder ve güncelleştirilmiş istemci pencere boyutu için yeni bir çizim görev oluşturur.
 
-     [!code-cpp[concrt-mandelbrot#204](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_18.cpp)]
+   [!code-cpp[concrt-mandelbrot#204](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_18.cpp)]
 
 1. Uygulama `CChildView::OnDestroy` yöntemi. Bu yöntem herhangi bir mevcut çizim görevi iptal eder.
 
-     [!code-cpp[concrt-mandelbrot#205](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_19.cpp)]
+   [!code-cpp[concrt-mandelbrot#205](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_19.cpp)]
 
 1. ChildView.cpp içinde tanımlayın `scope_guard` RAII deseni uygulayan bir sınıf.
 
-     [!code-cpp[concrt-mandelbrot#206](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_20.cpp)]
+   [!code-cpp[concrt-mandelbrot#206](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_20.cpp)]
 
 1. Aşağıdaki kodu ekleyin `CChildView::DrawMandelbrot` yöntem çağrısından sonra `Bitmap::LockBits`:
 
-     [!code-cpp[concrt-mandelbrot#207](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_21.cpp)]
+   [!code-cpp[concrt-mandelbrot#207](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_21.cpp)]
 
-     Bu kod oluşturarak iptal işleme bir `scope_guard` nesne. Nesne kapsam dışına çıktığında, bit eşlem bitleri kilidini açar.
+   Bu kod oluşturarak iptal işleme bir `scope_guard` nesne. Nesne kapsam dışına çıktığında, bit eşlem bitleri kilidini açar.
 
 1. Sonuna değiştirme `CChildView::DrawMandelbrot` kapatmak için yöntemi `scope_guard` bit eşlem bitleri kilitsiz sonra ancak kullanıcı Arabirimi iş parçacığına herhangi bir ileti gönderilmeden önce nesne. Bu, bit eşlem bitleri kilidi olmadan önce UI iş parçacığı güncelleştirilmez sağlar.
 
-     [!code-cpp[concrt-mandelbrot#208](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_22.cpp)]
+   [!code-cpp[concrt-mandelbrot#208](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_22.cpp)]
 
 9. Oluşturmaya ve çalıştırmaya uygulama başarıyla güncelleştirildiğini doğrulayın.
 

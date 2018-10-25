@@ -68,12 +68,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6cf84b2e5709a4ac31965501005b5260499a3213
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5b89d186701abf3b8c760e16800142e47e2872a3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408810"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073948"
 ---
 # <a name="cdaodatabase-class"></a>CDaoDatabase sınıfı
 
@@ -578,7 +578,6 @@ void GetQueryDefInfo(
     CDaoQueryDefInfo& querydefinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
 
-
 void GetQueryDefInfo(
     LPCTSTR lpszName,
     CDaoQueryDefInfo& querydefinfo,
@@ -677,7 +676,6 @@ void GetRelationInfo(
     CDaoRelationInfo& relinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
 
-
 void GetRelationInfo(
     LPCTSTR lpszName,
     CDaoRelationInfo& relinfo,
@@ -736,7 +734,6 @@ void GetTableDefInfo(
     int nIndex,
     CDaoTableDefInfo& tabledefinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
-
 
 void GetTableDefInfo(
     LPCTSTR lpszName,

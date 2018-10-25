@@ -1,7 +1,7 @@
 ---
 title: Ne tür erişimci kullanacağınızı belirleme | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/24/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -16,32 +16,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 720a72406bec5672757c1b2c5713586b7fc7f1ca
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 591d3a3bee554fd87a8c48aea67611e6cc6e5111
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086973"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066395"
 ---
 # <a name="determining-which-type-of-accessor-to-use"></a>Ne Tür Erişimci Kullanacağınızı Belirleme
 
-Derleme zamanında veya çalışma zamanında bir satır kümesi veri türlerinde belirleyebilirsiniz.  
-  
-Veri türleri, derleme zamanında belirlemeniz gerekiyorsa, statik erişimci kullanma (gibi `CAccessor`). El ile veya ATL OLE DB Tüketicisi Sihirbazı kullanarak, veri türlerini belirleyebilirsiniz.  
-  
-Veri türlerini çalışma zamanında belirlemeniz gerekiyorsa, dinamik kullanın (`CDynamicAccessor` veya onun alt öğelerini) veya el ile erişimci (`CManualAccessor`). Bu gibi durumlarda çağırabilirsiniz `GetColumnInfo` şirket içinden belirleyebilirsiniz türleri sütun bağlama bilgileri döndürülecek satır kümesi.  
-  
-Aşağıdaki tabloda, tüketici şablonlarında sağlanan erişimcileri türlerini listeler. Her bir erişimci avantajları ve dezavantajları vardır. Durumunuza bağlı olarak, bir erişimci türü ihtiyaçlarınıza uygun.  
-  
-|Erişimci sınıfı|Bağlama|Parametre|Yorum|  
-|--------------------|-------------|---------------|-------------|  
-|`CAccessor`|COLUMN_ENTRY makrolar ile bir kullanıcı kaydı oluşturun. Makroları veri üyesi bulunan kaydındaki erişimciye bağlar. Satır kümesi oluşturulduğunda sütunları ilişkisiz yapılamıyor.|Evet, bir PARAM_MAP makrosu girişi kullanarak. Bağlandıktan parametreleri ilişkisiz yapılamıyor.|Az miktarda kod nedeniyle Hızlı erişimcisi.|  
-|`CDynamicAccessor`|Otomatik.|Hayır.|Bir satır kümesi veri türünü bilmiyorsanız yararlıdır.|  
-|`CDynamicParameterAccessor`|Otomatik, ancak [geçersiz kılınan](../../data/oledb/overriding-a-dynamic-accessor.md).|Evet, sağlayıcı destekliyorsa `ICommandWithParameters`. Otomatik olarak ilişkili parametreler.|Daha yavaş `CDynamicAccessor` genel saklı yordam çağırma ancak yararlıdır.|  
-|`CDynamicStringAccessor[A,W]`|Otomatik.|Hayır.|Dize verileri veri deposundan erişilen verileri alır.|  
-|`CManualAccessor`|El ile kullanarak `AddBindEntry`.|El ile kullanarak `AddParameterEntry`.|Çok hızlı; Parametreler ve sütun yalnızca bir kez bağlı. Kullanılacak veri türünü belirler. (Bkz [DBVIEWER](https://github.com/Microsoft/VCSamples) örnek bir örnek.) Daha fazla kod gerektirir `CDynamicAccessor` veya `CAccessor`. OLE DB doğrudan çağırma gibi daha fazla.|  
-|`CXMLAccessor`|Otomatik.|Hayır.|Dize verileri veri deposundan erişilen verileri alır ve olarak XML etiketli veri biçimleri.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Derleme zamanında veya çalışma zamanında bir satır kümesi veri türlerinde belirleyebilirsiniz.
+
+Veri türleri, derleme zamanında belirlemeniz gerekiyorsa, statik erişimci kullanma (gibi `CAccessor`). El ile veya kullanarak, veri türlerini belirleyebilirsiniz **ATL OLE DB Tüketicisi Sihirbazı**.
+
+Veri türlerini çalışma zamanında belirlemeniz gerekiyorsa, dinamik kullanın (`CDynamicAccessor` veya onun alt öğelerini) veya el ile erişimci (`CManualAccessor`). Bu gibi durumlarda çağırabilirsiniz `GetColumnInfo` şirket içinden belirleyebilirsiniz türleri sütun bağlama bilgileri döndürülecek satır kümesi.
+
+Aşağıdaki tabloda, tüketici şablonlarında sağlanan erişimcileri türlerini listeler. Her bir erişimci avantajları ve dezavantajları vardır. Durumunuza bağlı olarak, bir erişimci türü ihtiyaçlarınıza uygun.
+
+|Erişimci sınıfı|Bağlama|Parametre|Yorum|
+|--------------------|-------------|---------------|-------------|
+|`CAccessor`|COLUMN_ENTRY makrolar ile bir kullanıcı kaydı oluşturun. Makroları veri üyesi bulunan kaydındaki erişimciye bağlar. Satır kümesi oluşturulduğunda sütunları ilişkisiz yapılamıyor.|Evet, bir PARAM_MAP makrosu girişi kullanarak. Bağlandıktan parametreleri ilişkisiz yapılamıyor.|Az miktarda kod nedeniyle Hızlı erişimcisi.|
+|`CDynamicAccessor`|Otomatik.|Hayır.|Bir satır kümesi veri türünü bilmiyorsanız yararlıdır.|
+|`CDynamicParameterAccessor`|Otomatik, ancak [geçersiz kılınan](../../data/oledb/overriding-a-dynamic-accessor.md).|Evet, sağlayıcı destekliyorsa `ICommandWithParameters`. Otomatik olarak ilişkili parametreler.|Daha yavaş `CDynamicAccessor` genel saklı yordam çağırma ancak yararlıdır.|
+|`CDynamicStringAccessor[A,W]`|Otomatik.|Hayır.|Dize verileri veri deposundan erişilen verileri alır.|
+|`CManualAccessor`|El ile kullanarak `AddBindEntry`.|El ile kullanarak `AddParameterEntry`.|Hızlı; Parametreler ve sütun yalnızca bir kez bağlı. Kullanılacak veri türünü belirler. (Bkz [DBVIEWER](https://github.com/Microsoft/VCSamples) örnek bir örnek.) Daha fazla kod gerektirir `CDynamicAccessor` veya `CAccessor`. OLE DB doğrudan çağırma gibi daha fazla.|
+|`CXMLAccessor`|Otomatik.|Hayır.|Dize verileri veri deposundan erişilen verileri alır ve olarak XML etiketli veri biçimleri.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Erişimcileri Kullanma](../../data/oledb/using-accessors.md)

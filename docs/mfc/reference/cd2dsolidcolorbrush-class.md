@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb261fde28755d69e68ee7cf3bf69031ace69893
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b1ca592022ff81dafa7e0659922208ec77948511
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437763"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077367"
 ---
 # <a name="cd2dsolidcolorbrush-class"></a>CD2DSolidColorBrush sınıfı
 
@@ -132,7 +132,6 @@ CD2DSolidColorBrush(
     D2D1_COLOR_F color,
     CD2DBrushProperties* pBrushProperties = NULL,
     BOOL bAutoDestroy = TRUE);
-
 
 CD2DSolidColorBrush(
     CRenderTarget* pParentTarget,

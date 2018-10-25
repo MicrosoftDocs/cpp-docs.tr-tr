@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 116cd9ee86ca29aac6da489916f78c3884ba8bdd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3a37f79851df043a5473c82b514b7e85f418f1b6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446561"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067923"
 ---
 # <a name="standard-dialog-data-validation-routines"></a>Standart İletişim Kutusu Veri Doğrulama Rutinleri
 
@@ -47,8 +47,6 @@ Bu konu, genel MFC iletişim kutusu denetimleri için kullanılan standart ileti
 |[DDV_MinMaxUInt](#ddv_minmaxuint)|Verilen denetim değerini aşmayan doğrular bir verilen **UINT** aralığı.|
 |[DDV_MinMaxUnsigned](#ddv_minmaxuint)|Belirtilen iki değerin arasındadır verilen denetim değeri düştüğünde doğrular.|
 |[DDV_MinMaxULongLong](#ddv_minmaxulonglong)|Verilen denetim değerini aşmayan doğrular bir verilen **ULONGLONG** aralığı.|
-
-
 
 ##  <a name="ddv_maxchars"></a>  DDV_MaxChars
 
@@ -552,6 +550,7 @@ DDV hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve d
        unsigned minVal,
        unsigned maxVal );
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
@@ -579,6 +578,4 @@ DDV hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve d
 [Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
 [DDX_Slider](#ddx_slider)<br/>
 [DDX_FieldSlider](#ddx_fieldslider)
-
-
 

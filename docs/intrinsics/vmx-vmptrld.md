@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f3304106662d290a208545061bf9f71b7f30c10
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 16a61578b7512c1d9ce9d7ca217b29a3ea670657
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48820951"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068495"
 ---
 # <a name="vmxvmptrld"></a>__vmx_vmptrld
 
@@ -33,22 +33,26 @@ ms.locfileid: "48820951"
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-int __vmx_vmptrld( 
-   unsigned __int64 *VmcsPhysicalAddress 
+int __vmx_vmptrld( 
+   unsigned __int64 *VmcsPhysicalAddress 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-[in] *`VmcsPhysicalAddress` Windows VMCS işaretçinin depolandığı adresi.
+*VmcsPhysicalAddress*<br/>
+[in] Windows VMCS işaretçinin depolandığı adresi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşlem başarılı 0.
+0<br/>
+İşlem başarılı oldu.
 
-1 işlem başarısız oldu bulunan genişletilmiş durumundaki `VM-instruction error field` , geçerli Windows VMCS.
+1.<br/>
+İşlem başarısız oldu bulunan genişletilmiş durumundaki `VM-instruction error field` , geçerli Windows VMCS.
 
-2 işlem durumu olmadan başarısız oldu.
+2<br/>
+İşlem durumu olmadan başarısız oldu.
 
 ## <a name="remarks"></a>Açıklamalar
 

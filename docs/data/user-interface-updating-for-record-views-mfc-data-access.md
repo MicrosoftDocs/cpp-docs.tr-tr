@@ -17,26 +17,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 43f5d1017b3f89474e9dd7eebce0cf71c8c8c448
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4f730a8c0b2c1f552e0aca7f360f402788630c96
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086882"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065414"
 ---
 # <a name="user-interface-updating-for-record-views--mfc-data-access"></a>Kayıt görünümleri (MFC veri erişimi) için kullanıcı arabirimi güncelleştiriliyor
 
-`CRecordView` Varsayılan kullanıcı arabirimini güncelleştirme işleyicileri için Gezinti komutlarını sağlar. Etkinleştirme ve devre dışı kullanıcı arabirimi nesneleri bu işleyicileri otomatik hale getirin; menü öğeleri ve araç çubuğu düğmeleri. Uygulama Sihirbazı'nı Standart menüler sağlar ve seçerseniz **yerleştirilebilir araç** seçeneği, bir dizi komutlar için araç çubuğu düğmesi. Kayıt görünümü sınıfını kullanarak oluşturmak istiyorsanız `CRecordView`, uygulamanıza benzer kullanıcı arabirimi nesneleri eklemek isteyebilirsiniz.  
-  
-### <a name="to-create-menu-resources-with-the-menu-editor"></a>Düzenleyici menü menü kaynakları oluşturmak için  
-  
-1. Kullanma hakkında bilgi için söz konusu [Menü Düzenleyici](../windows/menu-editor.md), kendi menü ile aynı dört komutlar oluşturur.  
-  
-#### <a name="to-create-toolbar-buttons-with-the-graphics-editor"></a>Araç çubuğu düğmeleri grafik düzenleyici oluşturmak için  
-  
-1. Kullanma hakkında bilgi için söz konusu [araç çubuğu Düzenleyicisi](../windows/toolbar-editor.md), araç çubuğu düğmeleri için kayıt gezinti komutlarınızı eklemek için araç çubuğu kaynağı düzenleyemez.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+`CRecordView` Varsayılan kullanıcı arabirimini güncelleştirme işleyicileri için Gezinti komutlarını sağlar. Etkinleştirme ve devre dışı kullanıcı arabirimi nesneleri bu işleyicileri otomatik hale getirin; menü öğeleri ve araç çubuğu düğmeleri. Uygulama Sihirbazı'nı Standart menüler sağlar ve seçerseniz **yerleştirilebilir araç** seçeneği, bir dizi komutlar için araç çubuğu düğmesi. Kayıt görünümü sınıfını kullanarak oluşturmak istiyorsanız `CRecordView`, uygulamanıza benzer kullanıcı arabirimi nesneleri eklemek isteyebilirsiniz.
+
+### <a name="to-create-menu-resources-with-the-menu-editor"></a>Düzenleyici menü menü kaynakları oluşturmak için
+
+1. Kullanma hakkında bilgi için söz konusu [Menü Düzenleyici](../windows/menu-editor.md), kendi menü ile aynı dört komutlar oluşturur.
+
+#### <a name="to-create-toolbar-buttons-with-the-graphics-editor"></a>Araç çubuğu düğmeleri grafik düzenleyici oluşturmak için
+
+1. Kullanma hakkında bilgi için söz konusu [araç çubuğu Düzenleyicisi](../windows/toolbar-editor.md), araç çubuğu düğmeleri için kayıt gezinti komutlarınızı eklemek için araç çubuğu kaynağı düzenleyemez.
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Kayıt Görünümünde Gezintiyi Destekleme](../data/supporting-navigation-in-a-record-view-mfc-data-access.md)<br/>
 [Kayıt görünümünü kullanma](../data/using-a-record-view-mfc-data-access.md)

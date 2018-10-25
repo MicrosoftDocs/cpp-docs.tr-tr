@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4983d2a56407449873c8b4db73d82fa2ef864058
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 297a54b588cadc3a43e1b08ca89820807edb8ba2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328265"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069847"
 ---
 # <a name="cdialogimpl-class"></a>Cdialogımpl sınıfı
 
@@ -115,12 +115,12 @@ Modsuz iletişim kutusu oluşturur.
 
 ```
 HWND Create(
-    HWND hWndParent,  
-    LPARAM dwInitParam = NULL );  
+    HWND hWndParent,
+    LPARAM dwInitParam = NULL );
 
 HWND Create(
-    HWND hWndParent,  
-    RECT&, 
+    HWND hWndParent,
+    RECT&,
     LPARAM dwInitParam = NULL);
 ```
 
@@ -144,7 +144,7 @@ Bu iletişim kutusu otomatik olarak bağlı `CDialogImpl` nesne. Kalıcı bir il
 
 ##  <a name="destroywindow"></a>  CDialogImpl::DestroyWindow
 
-Kalıcı olmayan iletişim kutusunu yok eder.  
+Kalıcı olmayan iletişim kutusunu yok eder.
 
 ```
 BOOL DestroyWindow();
@@ -160,13 +160,13 @@ BOOL DestroyWindow();
 
 ##  <a name="dialogproc"></a>  CDialogImpl::DialogProc
 
-Bu statik işlev iletişim kutusu yordamını uygular.  
+Bu statik işlev iletişim kutusu yordamını uygular.
 
 ```
 static LRESULT CALLBACK DialogProc(
-    HWND hWnd,  
-    UINT uMsg,  
-    WPARAM wParam,  
+    HWND hWnd,
+    UINT uMsg,
+    WPARAM wParam,
     LPARAM lParam);
 ```
 
@@ -199,8 +199,8 @@ Geçersiz kılabilirsiniz `DialogProc` iletileri işlemek için farklı bir meka
 Kalıcı bir iletişim kutusu oluşturur.
 
 ```
-INT_PTR DoModal(  
-    HWND hWndParent = ::GetActiveWindow(),   
+INT_PTR DoModal(
+    HWND hWndParent = ::GetActiveWindow(),
     LPARAM dwInitParam = NULL);
 ```
 
@@ -306,9 +306,9 @@ Pencere yok etme sırasında nesne otomatik olarak silmek istiyorsanız, çağı
 
 ```
 static LRESULT CALLBACK StartDialogProc(
-    HWND hWnd,  
-    UINT uMsg,  
-    WPARAM wParam,  
+    HWND hWnd,
+    UINT uMsg,
+    WPARAM wParam,
     LPARAM lParam);
 ```
 

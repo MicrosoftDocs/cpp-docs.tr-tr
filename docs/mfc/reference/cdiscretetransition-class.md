@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98deeff0e6b39a52002416c1b234434623f31b6a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9384fbc79137807015b5b18092806e2a67577b88
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416220"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073883"
 ---
 # <a name="cdiscretetransition-class"></a>CDiscreteTransition sınıfı
 
@@ -115,7 +115,6 @@ virtual BOOL Create(
 
 *pLibrary*<br/>
 Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), standart geçişleri kitaplığını tanımlar.
-
 
 ### <a name="return-value"></a>Dönüş Değeri
 

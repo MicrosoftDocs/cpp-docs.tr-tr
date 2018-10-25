@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5603327e7bdc32d9b760fc25160543c682e6f4f4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 03f4161130a1517bba6ed87164a814a9e8c61bbd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054512"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069730"
 ---
 # <a name="csimplearray-class"></a>CSimpleArray sınıfı
 
@@ -79,7 +79,7 @@ Türü öğeler için eşitlik testi tanımlamak bir nitelik nesnesi *T*.
 |Ad|Açıklama|
 |----------|-----------------|
 |[CSimpleArray::operator\[\]](#operator_at)|Öğe diziden alır.|
-|[CSimpleArray::operator =](#operator_eq)|Atama işleci.|  
+|[CSimpleArray::operator =](#operator_eq)|Atama işleci.|
 
 ## <a name="remarks"></a>Açıklamalar
 

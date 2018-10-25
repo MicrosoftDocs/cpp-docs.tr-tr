@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 8c6079cd0371afa1b9a3ed32ba2cf67e1691d665
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 09cfc38626cab785eb7fa1c34178aa28aa23dac6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382810"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069941"
 ---
 # <a name="how-to-compile-mfc-and-atl-code-by-using-clr"></a>Nasıl yapılır: /clr Kullanarak MFC ve ATL Kodu Derleme
 
@@ -40,7 +40,7 @@ Bu konu, ortak dil çalışma zamanını hedeflemek için mevcut MFC ve ATL prog
 
 1. İçinde **proje özellikleri** iletişim kutusunda, yanındaki düğümü genişletin **yapılandırma özellikleri** seçip **genel**. Sağ bölmede altında **Proje Varsayılanları**ayarlayın **ortak dil çalışma zamanı desteği** için **ortak dil çalışma zamanı desteği (/ clr)**.
 
-     Emin olun aynı bölmede **MFC kullanımı** ayarlanır **MFC'yi bir ortak DLL'de**.
+   Emin olun aynı bölmede **MFC kullanımı** ayarlanır **MFC'yi bir ortak DLL'de**.
 
 1. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **genel**. Emin olun **hata ayıklama bilgi biçimi** ayarlanır **Program veritabanı/zi** (değil **/zi**).
 
@@ -60,7 +60,7 @@ Bu konu, ortak dil çalışma zamanını hedeflemek için mevcut MFC ve ATL prog
 
 1. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **önceden derlenmiş üst bilgiler**. Ayarlama **önceden derlenmiş üst bilgi Oluştur/Kullan** için **önceden derlenmiş üst bilgiler kullanmayan**.
 
-     Alternatif olarak, **Çözüm Gezgini**, Stdafx.cpp sağ tıklayın ve ardından **özellikleri**. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **genel**. Ayarlama **ortak dil çalışma zamanı desteği ile Derle** için **ortak dil çalışma zamanı desteği yok**.
+   Alternatif olarak, **Çözüm Gezgini**, Stdafx.cpp sağ tıklayın ve ardından **özellikleri**. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **genel**. Ayarlama **ortak dil çalışma zamanı desteği ile Derle** için **ortak dil çalışma zamanı desteği yok**.
 
 1. DllMain ve her şeyi içeren bir dosya için buna çağrı **Çözüm Gezgini**, dosyaya sağ tıklayın ve ardından **özellikleri**. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **genel**. Sağ bölmede altında **Proje Varsayılanları**ayarlayın **ortak dil çalışma zamanı desteği ile Derle** için **ortak dil çalışma zamanı desteği yok**.
 
@@ -84,7 +84,7 @@ Bu konu, ortak dil çalışma zamanını hedeflemek için mevcut MFC ve ATL prog
 
 1. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **önceden derlenmiş üst bilgiler**. Ayarlama **önceden derlenmiş üst bilgi Oluştur/Kullan** için **önceden derlenmiş üst bilgiler kullanmayan**.
 
-     Alternatif olarak, **Çözüm Gezgini**, Stdafx.cpp sağ tıklayın ve ardından **özellikleri**. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **genel**. Ayarlama **ortak dil çalışma zamanı desteği ile Derle** için **ortak dil çalışma zamanı desteği yok**.
+   Alternatif olarak, **Çözüm Gezgini**, Stdafx.cpp sağ tıklayın ve ardından **özellikleri**. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **genel**. Ayarlama **ortak dil çalışma zamanı desteği ile Derle** için **ortak dil çalışma zamanı desteği yok**.
 
 1. DllMain ve her şeyi içeren bir dosya için buna çağrı **Çözüm Gezgini**, dosyaya sağ tıklayın ve ardından **özellikleri**. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **genel**. Sağ bölmede altında **Proje Varsayılanları**ayarlayın **ortak dil çalışma zamanı desteği ile Derle** için **ortak dil çalışma zamanı desteği yok**.
 

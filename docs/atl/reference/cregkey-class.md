@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a502cbf61f3542c010a89b82131a95f94856cda
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 26861b11aafd4bfcd4f1d5a7cc618ed27b60e6b8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46042890"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071186"
 ---
 # <a name="cregkey-class"></a>CRegKey sınıfı
 
@@ -177,7 +177,7 @@ Başarılı olursa, ERROR_SUCCESS döndürür; Aksi takdirde bir hata değeri d�
 Bir alt yoksa, belirtilen anahtar oluşturmak için bu yöntemi çağırın *hKeyParent*.
 
 ```
-LONG Create(  
+LONG Create(
     HKEY hKeyParent,
     LPCTSTR lpszKeyName,
     LPTSTR lpszClass = REG_NONE,
@@ -311,7 +311,7 @@ HKEY ilişkili `CRegKey` nesne.
 Kayıt defteri anahtarı alt anahtarları numaralandır için bu yöntemi çağırın.
 
 ```
-LONG EnumKey(  
+LONG EnumKey(
     DWORD iIndex,
     LPTSTR pszName,
     LPDWORD pnNameLength,
@@ -361,7 +361,7 @@ Daha fazla bilgi için [RegEnumFlush](/windows/desktop/api/winreg/nf-winreg-regf
 Kayıt defteri anahtarı koruyan güvenlik tanımlayıcısı bir kopyasını almak için bu yöntemi çağırın.
 
 ```
-LONG GetKeySecurity(  
+LONG GetKeySecurity(
     SECURITY_INFORMATION si,
     PSECURITY_DESCRIPTOR psd,
     LPDWORD pnBytes) throw();
@@ -409,7 +409,7 @@ CAtlTransactionManager* m_pTM;
 Bu yöntemi çağıran öznitelikleri veya kayıt defteri anahtarı içeriğini değişiklikleri hakkında bilgilendirir.
 
 ```
-LONG NotifyChangeKeyValue(  
+LONG NotifyChangeKeyValue(
     BOOL bWatchSubtree,
     DWORD dwNotifyFilter,
     HANDLE hEvent,
@@ -453,7 +453,7 @@ Daha fazla bilgi ve örnek programı için bkz. [RegNotifyChangeKeyValue](/windo
 Belirtilen anahtarı'nı açın ve ayarlamak için bu yöntemi çağırın [m_hKey](#m_hkey) bu anahtarın işlenecek.
 
 ```
-LONG Open(  
+LONG Open(
     HKEY hKeyParent,
     LPCTSTR lpszKeyName,
     REGSAM samDesired = KEY_READ | KEY_WRITE) throw();
@@ -514,7 +514,7 @@ Bu işleç ayırır *anahtarı* kendi geçerli nesneden ve buna atayan `CRegKey`
 Belirtilen değer adı için ikili verileri almak için bu yöntemi çağırın.
 
 ```
-LONG QueryBinaryValue(  
+LONG QueryBinaryValue(
     LPCTSTR pszValueName,
     void* pValue,
     ULONG* pnBytes) throw();
@@ -547,7 +547,7 @@ Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onay
 Belirtilen değer adı için DWORD verileri almak için bu yöntemi çağırın.
 
 ```
-LONG QueryDWORDValue(  
+LONG QueryDWORDValue(
     LPCTSTR pszValueName,
     DWORD& dwValue) throw();
 ```
@@ -576,7 +576,7 @@ Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onay
 Belirtilen değer adı için GUID verileri almak için bu yöntemi çağırın.
 
 ```
-LONG QueryGUIDValue(  
+LONG QueryGUIDValue(
     LPCTSTR pszValueName,
     GUID& guidValue) throw();
 ```
@@ -605,7 +605,7 @@ Bu yöntemi kullanır `CRegKey::QueryStringValue` ve kullanarak bir GUID dizesi 
 Belirtilen değer adı için çok dizeli verileri almak için bu yöntemi çağırın.
 
 ```
-LONG QueryMultiStringValue(  
+LONG QueryMultiStringValue(
     LPCTSTR pszValueName,
     LPTSTR pszValue,
     ULONG* pnChars) throw();
@@ -638,7 +638,7 @@ Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onay
 Belirtilen değer adı için QWORD verileri almak için bu yöntemi çağırın.
 
 ```
-LONG QueryQWORDValue(  
+LONG QueryQWORDValue(
     LPCTSTR pszValueName,
     ULONGLONG& qwValue) throw();
 ```
@@ -667,7 +667,7 @@ Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onay
 Belirtilen değer adı için dize verileri almak için bu yöntemi çağırın.
 
 ```
-LONG QueryStringValue(  
+LONG QueryStringValue(
     LPCTSTR pszValueName,
     LPTSTR pszValue,
     ULONG* pnChars) throw();
@@ -700,7 +700,7 @@ Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onay
 Belirtilen değer alanı için verileri almak için bu yöntemi çağırın [m_hKey](#m_hkey). Bu yöntemin önceki sürümleri artık desteklenmemektedir ve ATL_DEPRECATED işaretlenir.
 
 ```
-LONG QueryValue(  
+LONG QueryValue(
     LPCTSTR pszValueName,
     DWORD* pdwType,
     void* pData,
@@ -781,7 +781,7 @@ Anahtarı alt anahtarları varsa, anahtarı silmek için bu yöntemi çağırman
 İkili kayıt defteri anahtarı değerini ayarlamak için bu yöntemi çağırın.
 
 ```
-LONG SetBinaryValue(  
+LONG SetBinaryValue(
     LPCTSTR pszValueName,
     const void* pValue,
     ULONG nBytes) throw();
@@ -859,7 +859,7 @@ Bu yöntemi kullanır `CRegKey::SetStringValue` ve kullanarak bir dize GUID dön
 Belirtilen anahtar belirtilen değer alanında verileri depolamak için bu yöntemi çağırın.
 
 ```
-LONG SetKeyValue(  
+LONG SetKeyValue(
     LPCTSTR lpszKeyName,
     LPCTSTR lpszValue,
     LPCTSTR lpszValueName = NULL) throw();
@@ -968,7 +968,7 @@ Bu yöntemde [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueex
 Kayıt defteri anahtarının dize değerini ayarlamak için bu yöntemi çağırın.
 
 ```
-LONG SetStringValue(  
+LONG SetStringValue(
     LPCTSTR pszValueName,
     LPCTSTR pszValue,
     DWORD dwType = REG_SZ) throw();
@@ -998,23 +998,23 @@ Bu yöntemde [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueex
 Belirtilen değer alanında verileri depolamak için bu yöntemi çağırın [m_hKey](#m_hkey). Bu yöntemin önceki sürümleri artık desteklenmemektedir ve ATL_DEPRECATED işaretlenir.
 
 ```
-LONG SetValue(  
+LONG SetValue(
     LPCTSTR pszValueName,
     DWORD dwType,
     const void* pValue,
     ULONG nBytes) throw();
 
-static LONG WINAPI SetValue(  
+static LONG WINAPI SetValue(
     HKEY hKeyParent,
     LPCTSTR lpszKeyName,
     LPCTSTR lpszValue,
     LPCTSTR lpszValueName = NULL);
 
-ATL_DEPRECATED LONG SetValue(  
+ATL_DEPRECATED LONG SetValue(
     DWORD dwValue,
     LPCTSTR lpszValueName);
 
-ATL_DEPRECATED LONG SetValue(  
+ATL_DEPRECATED LONG SetValue(
     LPCTSTR lpszValue,
     LPCTSTR lpszValueName = NULL,
     bool bMulti = false,

@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::to_wstring [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a80749e6eaffe02d748167f462580782a2755f89
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 102cdab95808fa39855ad1397248b782e12fdd8c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106749"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068795"
 ---
 # <a name="ltstringgt-functions"></a>&lt;dize&gt; işlevleri
 
@@ -62,20 +62,17 @@ basic_istream<CharType, Traits>& getline(
     basic_string<CharType, Traits, Allocator>& str,
     CharType delim);
 
-
 template <class CharType, class Traits, class Allocator>
 basic_istream<CharType, Traits>& getline(
     basic_istream<CharType, Traits>&& is,
     basic_string<CharType, Traits, Allocator>& str,
     const CharType delim);
 
-
 // (2) default delimiter used
 template <class CharType, class Traits, class Allocator>
 basic_istream<CharType, Traits>& getline(
     basic_istream<CharType, Traits>& is,
     basic_string<CharType, Traits, Allocator>& str);
-
 
 template <class Allocator, class Traits, class Allocator>
 basic_istream<Allocator, Traits>& getline(

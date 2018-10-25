@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: e5dc30c7-405a-4ba4-8ae9-51937243fce8
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: b257628747dca488292cfdfff0ef783303bd1b88
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2a20a5c8ad87428e66f90b8f04c3006e5f1c2e84
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46094446"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068880"
 ---
 # <a name="ccomsinglethreadmodel-class"></a>CComSingleThreadModel sınıfı
 
@@ -58,9 +58,9 @@ class CComSingleThreadModel
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComSingleThreadModel` yöntemler, bir değişkenin değerini artırma ve azaltma için sağlar. Farklı [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) ve [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md), bu yöntemler, iş parçacığı açısından güvenli değildir.  
+`CComSingleThreadModel` yöntemler, bir değişkenin değerini artırma ve azaltma için sağlar. Farklı [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) ve [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md), bu yöntemler, iş parçacığı açısından güvenli değildir.
 
-Genellikle, kullandığınız `CComSingleThreadModel` iki biri aracılığıyla **typedef** adları, ya da [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) veya [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel). Her tarafından başvurulan sınıfın **typedef** iş parçacığı modeline kullanıldığında, aşağıdaki tabloda gösterildiği gibi bağlıdır:  
+Genellikle, kullandığınız `CComSingleThreadModel` iki biri aracılığıyla **typedef** adları, ya da [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) veya [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel). Her tarafından başvurulan sınıfın **typedef** iş parçacığı modeline kullanıldığında, aşağıdaki tabloda gösterildiği gibi bağlıdır:
 
 |typedef|Çoklu iş parçacığı modeli|Grup iş parçacığı modeli|Ücretsiz iş parçacığı modeli|
 |-------------|----------------------------|-------------------------------|--------------------------|

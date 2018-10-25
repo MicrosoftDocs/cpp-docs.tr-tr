@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77bcb8257fc6907b48330301cf009fa44f00578d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d28d909866808fbffb6165e552bf825bf1241771
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082553"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069821"
 ---
 # <a name="postfix-expressions"></a>Sonek İfadeleri
 
@@ -41,7 +41,7 @@ Sonek ifadeleri, birincil ifadelerden veya içindeki son ek işleçlerinin bir b
 Aşağıdaki sözdizimi olası sonek ifadeleri açıklar:
 
 ```
-primary-expression 
+primary-expression 
 postfix-expression[expression]postfix-expression(expression-list)simple-type-name(expression-list)postfix-expression.namepostfix-expression->namepostfix-expression++postfix-expression--cast-keyword < typename > (expression )typeid ( typename )
 ```
 
@@ -83,20 +83,20 @@ Bir işlev çağrıldığında, aşağıdaki görevler yerine getirilir:
     Func( 7 );          // Execute function call
     ```
 
-     Çağrıdan önceki kavramsal başlatmalar şunlardır:
+   Çağrıdan önceki kavramsal başlatmalar şunlardır:
 
     ```cpp
     int Temp_i = 7;
     Func( Temp_i );
     ```
 
-     Başlatmanın, parantez sözdizimi yerine eşittir işareti sözdizimi kullanılıyormuş gibi yapıldığına dikkat edin. Değeri işleve geçirmeden önce `i` öğesinin bir kopyası oluşturulur. (Daha fazla bilgi için [başlatıcılar](../cpp/initializers.md) ve [dönüştürmeler](../cpp/user-defined-type-conversions-cpp.md)).
+   Başlatmanın, parantez sözdizimi yerine eşittir işareti sözdizimi kullanılıyormuş gibi yapıldığına dikkat edin. Değeri işleve geçirmeden önce `i` öğesinin bir kopyası oluşturulur. (Daha fazla bilgi için [başlatıcılar](../cpp/initializers.md) ve [dönüştürmeler](../cpp/user-defined-type-conversions-cpp.md)).
 
-     Bu nedenle, işlev prototipi (bildirim) türünde bir bağımsız değişken için çağırırsa **uzun**, ve çağıran program gerçek bağımsız değişken türü sağlarsa **int**, gerçek bağımsız değişken kullanarak yükseltilmiş bir yazmak için standart bir tür dönüştürme **uzun** (bkz [standart dönüştürmeler](../cpp/standard-conversions.md)).
+   Bu nedenle, işlev prototipi (bildirim) türünde bir bağımsız değişken için çağırırsa **uzun**, ve çağıran program gerçek bağımsız değişken türü sağlarsa **int**, gerçek bağımsız değişken kullanarak yükseltilmiş bir yazmak için standart bir tür dönüştürme **uzun** (bkz [standart dönüştürmeler](../cpp/standard-conversions.md)).
 
-     Kendisi için biçimsel bağımsız değişkenin türüne yönelik standart veya kullanıcı tanımlı bir dönüştürme bulunmayan bir gerçek bağımsız değişken sağlamak hatadır.
+   Kendisi için biçimsel bağımsız değişkenin türüne yönelik standart veya kullanıcı tanımlı bir dönüştürme bulunmayan bir gerçek bağımsız değişken sağlamak hatadır.
 
-     Sınıf türünde gerçek bağımsız değişkenler için, biçimsel bağımsız değişken, sınıfın oluşturucusu çağrılarak başlatılır. (Bkz [oluşturucular](../cpp/constructors-cpp.md) bu özel sınıf üye işlevleri hakkında daha fazla bilgi için.)
+   Sınıf türünde gerçek bağımsız değişkenler için, biçimsel bağımsız değişken, sınıfın oluşturucusu çağrılarak başlatılır. (Bkz [oluşturucular](../cpp/constructors-cpp.md) bu özel sınıf üye işlevleri hakkında daha fazla bilgi için.)
 
 - İşlev çağrısı yürütülür.
 

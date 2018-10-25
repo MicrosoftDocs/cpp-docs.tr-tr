@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9142ba85a78259c0a6e5ae06f3745d414e62e908
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 58591309faaa107756739a52173ceea2f1f7b188
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425634"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069886"
 ---
 # <a name="smart-pointers-modern-c"></a>Akıllı İşaretçiler (Modern C++)
 
@@ -76,11 +76,14 @@ Aşağıdaki bölümde Windows programlama ortamında bulunan farklı türden ak
 
 Bu akıllı işaretçileri eski C++ nesnelerine (POCO) işaretçi kapsüllemek için ilk seçenek olarak kullanın.
 
-- `unique_ptr` Temel işaretçisinin tam olarak bir sahibi sağlar. İhtiyacınız olan belirli bilmiyorsanız varsayılan seçenek olarak değilseniz POCO için kullanmak bir `shared_ptr`. Bir yeni kullanıcıya taşınabilir, ancak kopyalanamaz veya paylaşılamaz. Değiştirir `auto_ptr`, kullanım dışı. Karşılaştırılacak `boost::scoped_ptr`. `unique_ptr` küçük ve verimli değildir; boyutu bir işaretçidir ve hızlı ekleme ve C++ Standart Kitaplığı koleksiyonu alma için rvalue başvurularını destekler. Üst bilgi dosyası: `<memory>`. Daha fazla bilgi için [nasıl yapılır: unique_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-unique-ptr-instances.md) ve [unique_ptr sınıfı](../standard-library/unique-ptr-class.md).
+- `unique_ptr`<br/>
+   Temel alınan işaretçi için, kesin olarak tek bir sahibe izin verir. İhtiyacınız olan belirli bilmiyorsanız varsayılan seçenek olarak değilseniz POCO için kullanmak bir `shared_ptr`. Bir yeni kullanıcıya taşınabilir, ancak kopyalanamaz veya paylaşılamaz. Değiştirir `auto_ptr`, kullanım dışı. Karşılaştırılacak `boost::scoped_ptr`. `unique_ptr` küçük ve verimli değildir; boyutu bir işaretçidir ve hızlı ekleme ve C++ Standart Kitaplığı koleksiyonu alma için rvalue başvurularını destekler. Üst bilgi dosyası: `<memory>`. Daha fazla bilgi için [nasıl yapılır: unique_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-unique-ptr-instances.md) ve [unique_ptr sınıfı](../standard-library/unique-ptr-class.md).
 
-- `shared_ptr` Başvuru sayılan akıllı işaretçi. Birden fazla sahibe tek bir ham işaretçi atamak istediğinizde kullanın, örnek olarak bir kapsayıcıdan işaretçi kopyası döndürüp orijinalini saklamak istediğinizde kullanın. Ham işaretçiyi tüm kadar silinmez `shared_ptr` sahipleri kapsam dışında çıkmadan veya aksi halde. Boyut iki işaretçi kadardır; biri nesne için ve biri başvuru sayısını içeren paylaşılan denetim bloğu için. Üst bilgi dosyası: `<memory>`. Daha fazla bilgi için [nasıl yapılır: shared_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-shared-ptr-instances.md) ve [shared_ptr sınıfı](../standard-library/shared-ptr-class.md).
+- `shared_ptr`<br/>
+   Başvuru sayımı olan akıllı işaretçi. Birden fazla sahibe tek bir ham işaretçi atamak istediğinizde kullanın, örnek olarak bir kapsayıcıdan işaretçi kopyası döndürüp orijinalini saklamak istediğinizde kullanın. Ham işaretçiyi tüm kadar silinmez `shared_ptr` sahipleri kapsam dışında çıkmadan veya aksi halde. Boyut iki işaretçi kadardır; biri nesne için ve biri başvuru sayısını içeren paylaşılan denetim bloğu için. Üst bilgi dosyası: `<memory>`. Daha fazla bilgi için [nasıl yapılır: shared_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-shared-ptr-instances.md) ve [shared_ptr sınıfı](../standard-library/shared-ptr-class.md).
 
-- `weak_ptr` Özel durum akıllı işaretçisi ile kullanılmak üzere `shared_ptr`. A `weak_ptr` bir veya daha fazla sahip olduğu bir nesneye erişim sağlar `shared_ptr` örnekler, ancak başvuru sayımına değil. Bir nesneyi görmek istiyorsanız ancak canlı kalmasını istemiyorsanız kullanın. Bazı durumlarda arasındaki döngüsel başvuruları bölmek için gereken `shared_ptr` örnekleri. Üst bilgi dosyası: `<memory>`. Daha fazla bilgi için [nasıl yapılır: weak_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-weak-ptr-instances.md) ve [weak_ptr sınıfı](../standard-library/weak-ptr-class.md).
+- `weak_ptr`<br/>
+    Özel durum akıllı işaretçisi ile kullanılmak üzere `shared_ptr`. A `weak_ptr` bir veya daha fazla sahip olduğu bir nesneye erişim sağlar `shared_ptr` örnekler, ancak başvuru sayımına değil. Bir nesneyi görmek istiyorsanız ancak canlı kalmasını istemiyorsanız kullanın. Bazı durumlarda arasındaki döngüsel başvuruları bölmek için gereken `shared_ptr` örnekleri. Üst bilgi dosyası: `<memory>`. Daha fazla bilgi için [nasıl yapılır: weak_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-weak-ptr-instances.md) ve [weak_ptr sınıfı](../standard-library/weak-ptr-class.md).
 
 ### <a name="smart-pointers-for-com-objects-classic-windows-programming"></a>{1&gt;COM Nesneleri (Klasik Windows Programlama) için Akıllı İşaretçiler&lt;1}
 

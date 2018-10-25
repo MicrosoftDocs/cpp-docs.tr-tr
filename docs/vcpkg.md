@@ -14,12 +14,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed44479f6e6d1569a9b27a059e837cbbb924b803
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 70af45a860ff854faf244cf51ad7462262f183fe
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821445"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072700"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: C++ Paket Yöneticisi Windows, Linux ve MacOS
 
@@ -37,11 +37,11 @@ Windows kataloğunda kitaplıkları için ikili dosyaları [1] yerine kaynaklar�
 
 [1] *Not: bazı özel kitaplıkları için kaynakları kullanılabilir değil. Vcpkg bu gibi durumlarda önceden oluşturulmuş uyumlu ikili dosyaları indirir.*
 
-## <a name="installation"></a>Yükleme 
+## <a name="installation"></a>Yükleme
 
 Github'dan vcpkg deposunu kopyalayın: https://github.com/Microsoft/vcpkg. Tercih ettiğiniz herhangi bir klasör konumuna indirebilirsiniz.
 
-Önyükleyici kök klasöründe çalıştırın: 
+Önyükleyici kök klasöründe çalıştırın:
 
 - **önyükleme vcpkg.bat** (Windows)
 - **./Bootstrap-vcpkg.sh** (Linux, MacOS)
@@ -76,7 +76,7 @@ taglib      1.11.1-2   TagLib Audio Meta-Data Library
 
 Kullanarak bir kitaplık adını aldıktan sonra **vcpkg arama**, kullandığınız **vcpkg yükleme** için Kitaplığı'nı indirin ve derleyin. vcpkg kitaplığın portfile bağlantı noktaları dizinde kullanır. Hiçbir Üçlü belirtilmişse vcpkg yüklemek ve derlemek için hedef platform için varsayılan Üçlü: x86 windows, x64 linux.cmake veya x64 osx.cmake.
 
-Linux kitaplıkları için yerel makinede yüklenen gcc vcpkg bağlıdır. MacOS üzerinde vcpkg Clang kullanır. 
+Linux kitaplıkları için yerel makinede yüklenen gcc vcpkg bağlıdır. MacOS üzerinde vcpkg Clang kullanır.
 
 Portfile bağımlılıkları belirtiyorsa, vcpkg indirir ve bu da yükler. İndirdikten sonra her yapı sistemi kitaplığı kullanan kullanarak vcpkg kitaplığı oluşturur. CMake ve (Windows) MSBuild projeleri, tercih edilen, ancak yapma, herhangi bir yapı sistemiyle birlikte desteklenir. Vcpkg yerel makinede belirtilen derleme sistemi bulamazsanız indirir ve yükler.
 
@@ -91,7 +91,7 @@ Additional packages (*) will be installed to complete this operation.
 
 ```
 
-CMAKE projeleri için CMAKE_TOOLCHAIN_FILE kitaplıkları ile kullanılabilir hale getirmek için kullanın. `find_package()`. Örneğin:  
+CMAKE projeleri için CMAKE_TOOLCHAIN_FILE kitaplıkları ile kullanılabilir hale getirmek için kullanın. `find_package()`. Örneğin:
 
 ```cmd
 cmake .. -DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake (Linux/MacOS)
@@ -132,14 +132,13 @@ Etkin vcpkg Örneğinizdeki sürümünden farklı bir kitaplık belirli bir sür
 1. Çalıştırma **vcpkg yükleme \<kitaplığı >**.
 1. Kullanım **vcpkg tümleştirme proje** bu kitaplığı proje başına temelinde başvuran bir NuGet paketi oluşturmak için.
 
-## <a name="integrate-with-visual-studio-code-linuxmacos"></a>Visual Studio kodu (Linux/MacOS) ile tümleştirme 
+## <a name="integrate-with-visual-studio-code-linuxmacos"></a>Visual Studio kodu (Linux/MacOS) ile tümleştirme
 
 Çalıştırma **vcpkg tümleştirme yükleme** Visual Studio Code, Linux/Macos'ta vcpkg enlistement konumu ile yapılandırın ve kaynak dosyaları üzerinde IntelliSense etkinleştirmek için.
 
 ## <a name="target-linux-from-windows-via-wsl"></a>Hedef Linux'taki WSL aracılığıyla Windows
 
 Linux (WSL) için Windows alt sistemi kullanarak bir Windows makineden Linux ikili dosyaları oluşturabilir. Yönergelerini izleyin [Windows 10 WSL ayarlama](/windows/wsl/install-win10)ve onunla yapılandırma [Linux için Visual Studio Uzantısı](https://blogs.msdn.microsoft.com/vcblog/2017/02/08/targeting-windows-subsystem-for-linux-from-visual-studio/). Tüm yerleşik kitaplıkları hem Windows hem de Linux için aynı klasöre yerleştirin ve hem Windows hem de WSL erişin.
-
 
 ## <a name="export_binaries_per_project"></a> Derlenmiş ikili dosyalar ve üst bilgileri verme
 

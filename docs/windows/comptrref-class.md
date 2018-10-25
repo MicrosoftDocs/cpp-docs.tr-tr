@@ -35,12 +35,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 85f9498f44f4f1ec2598e6263c003d041f519105
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 3902bcb43b1aa02f6d5ec66b919a2685dccccd99
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162223"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070315"
 ---
 # <a name="comptrref-class"></a>ComPtrRef Sınıfı
 
@@ -147,7 +147,7 @@ bool operator==(
 
 bool operator==(
    const Details::ComPtrRef<ComPtr<T>>& a,
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 
 bool operator==(
@@ -198,7 +198,7 @@ bool operator!=(
 
 bool operator!=(
    const Details::ComPtrRef<ComPtr<T>>& a,
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 
 bool operator!=(

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3374b2a292fc6463cb4fd85d0cd56fe9c3556443
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 986bc24c57f8692bfdd98194b9e58c9cee6817f6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448255"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067195"
 ---
 # <a name="deleting-all-objects-in-a-cobject-collection"></a>CObject Koleksiyonundaki Tüm Nesneleri Silme
 
@@ -68,9 +68,9 @@ Bir öğenin nesneyi silmek ve öğe kaldırıldığında arasındaki farka dikk
 
 1. Çağrı `RemoveAll` silindikten sonra diziden tüm öğeleri kaldırmak için işlevi.
 
-     Bir dizinin tüm öğeleri silmek için kod aşağıdaki gibidir:
+   Bir dizinin tüm öğeleri silmek için kod aşağıdaki gibidir:
 
-     [!code-cpp[NVC_MFCCollections#18](../mfc/codesnippet/cpp/deleting-all-objects-in-a-cobject-collection_2.cpp)]
+   [!code-cpp[NVC_MFCCollections#18](../mfc/codesnippet/cpp/deleting-all-objects-in-a-cobject-collection_2.cpp)]
 
 Liste örneği yukarıdaki çağırabilirsiniz gibi `RemoveAll` bir dizideki tüm öğeleri kaldırmak için veya `RemoveAt` tek bir öğe kaldırmak için.
 
@@ -82,9 +82,9 @@ Liste örneği yukarıdaki çağırabilirsiniz gibi `RemoveAll` bir dizideki tü
 
 1. Çağrı `RemoveAll` silindikten sonra tüm öğeleri eşlemden kaldırmak için işlevi.
 
-     Tüm öğeleri silmek için kod bir `CMap` koleksiyon aşağıdaki gibidir. Haritadaki her öğe olan anahtar bir dize ve `CPerson` nesne (türetilen `CObject`) değeri.
+   Tüm öğeleri silmek için kod bir `CMap` koleksiyon aşağıdaki gibidir. Haritadaki her öğe olan anahtar bir dize ve `CPerson` nesne (türetilen `CObject`) değeri.
 
-     [!code-cpp[NVC_MFCCollections#19](../mfc/codesnippet/cpp/deleting-all-objects-in-a-cobject-collection_3.cpp)]
+   [!code-cpp[NVC_MFCCollections#19](../mfc/codesnippet/cpp/deleting-all-objects-in-a-cobject-collection_3.cpp)]
 
 Çağırabilirsiniz `RemoveAll` eşlemedeki tüm öğeleri kaldırmak için veya `RemoveKey` belirtilen anahtarı içeren tek bir öğe kaldırmak için.
 

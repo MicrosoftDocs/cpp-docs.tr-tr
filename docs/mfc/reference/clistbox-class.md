@@ -112,12 +112,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ceef559e83b111a9ca8bcb96541fe8fbda19cf0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5341342336b05d4fddab50a81d611e89b85573f2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387184"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068950"
 ---
 # <a name="clistbox-class"></a>CListBox sınıfı
 
@@ -1446,7 +1446,6 @@ Bir liste kutusunun sekme durağı konumda ayarlar.
 ```
 void SetTabStops();
 BOOL SetTabStops(const int& cxEachStop);
-
 
 BOOL SetTabStops(
     int nTabStops,

@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40dddf2bb1619bd896ecf50008f80fca968ef8c9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ce642b6ed4017dba66d80325e7b9be8f18a7fb16
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075715"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076093"
 ---
 # <a name="ccomcachedtearoffobject-class"></a>CComCachedTearOffObject sınıfı
 
@@ -199,7 +199,7 @@ Standart bir HRESULT değerini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İstenen arabirimi ise `IUnknown`, bir işaretçi döndürür `CComCachedTearOffObject`kişinin kendi `IUnknown` ve başvuru sayısını artırır. Aksi takdirde, arabirimin etkinleştiriliyorken sınıfı kullanarak sorgular [InternalQueryInterface](ccomobjectrootex-class.md#internalqueryinterface) yöntemi öğesinden devralınan `CComObjectRootEx`.  
+İstenen arabirimi ise `IUnknown`, bir işaretçi döndürür `CComCachedTearOffObject`kişinin kendi `IUnknown` ve başvuru sayısını artırır. Aksi takdirde, arabirimin etkinleştiriliyorken sınıfı kullanarak sorgular [InternalQueryInterface](ccomobjectrootex-class.md#internalqueryinterface) yöntemi öğesinden devralınan `CComObjectRootEx`.
 
 ##  <a name="release"></a>  CComCachedTearOffObject::Release
 

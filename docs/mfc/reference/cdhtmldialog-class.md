@@ -126,12 +126,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f1f606f3666f99413c0d7fd980d069b110f25de
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d42f0a62f552b09d06300c393efdb1cfbf2335e9
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388347"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075625"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog sınıfı
 
@@ -282,12 +282,10 @@ Kaynak tabanlı dinamik HTML iletişim kutusu oluşturur.
 ```
 CDHtmlDialog();
 
-
 CDHtmlDialog(
     LPCTSTR lpszTemplateName,
     LPCTSTR szHtmlResID,
     CWnd *pParentWnd = NULL);
-
 
 CDHtmlDialog(
     UINT nIDTemplate,
@@ -367,7 +365,6 @@ void DDX_DHtml_AxControl(
     DISPID dispid,
     VARIANT& var);
 
-
 void DDX_DHtml_AxControl(
     CDataExchange* pDX,
     LPCTSTR szId,
@@ -433,13 +430,11 @@ void DDX_DHtml_ElementText(
     DISPID dispid,
     CString& value);
 
-
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
     DISPID dispid,
     short& value);
-
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
@@ -447,13 +442,11 @@ void DDX_DHtml_ElementText(
     DISPID dispid,
     int& value);
 
-
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
     DISPID dispid,
     long& value);
-
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
@@ -461,13 +454,11 @@ void DDX_DHtml_ElementText(
     DISPID dispid,
     DWORD& value);
 
-
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
     DISPID dispid,
     float& value);
-
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
@@ -668,11 +659,9 @@ VARIANT GetControlProperty(
     LPCTSTR szId,
     LPCTSTR szPropName);
 
-
 VARIANT GetControlProperty(
     LPCTSTR szId,
     DISPID dispid);
-
 
 VARIANT GetControlProperty(
     IDispatch* pdispControl,
@@ -766,7 +755,6 @@ HRESULT GetElement(
     IDispatch** ppdisp,
     BOOL* pbCollection = NULL);
 
-
 HRESULT GetElement(
     LPCTSTR szElementId,
     IHTMLElement** pphtmlElement);
@@ -821,7 +809,6 @@ HTML öğesi tarafından tanımlanan istenen arabirim işaretçisi alır *szElem
 template <class Q> HRESULT GetElementInterface(
     LPCTSTR szElementId,
     Q** ppvObj);
-
 
 HRESULT GetElementInterface(
     LPCTSTR szElementId,
@@ -1271,12 +1258,10 @@ void SetControlProperty(
     DISPID dispid,
     VARIANT* pVar);
 
-
 void SetControlProperty(
     IDispatch* pdispControl,
     DISPID dispid,
     VARIANT* pVar);
-
 
 void SetControlProperty(
     LPCTSTR szElementId,
@@ -1309,7 +1294,6 @@ Kümeleri `innerHTML` HTML öğesi bir özelliğidir.
 void SetElementHtml(
     LPCTSTR szElementId,
     BSTR bstrText);
-
 
 void SetElementHtml(
     IUnknown* punkElem,
@@ -1357,7 +1341,6 @@ Kümeleri `innerText` HTML öğesi bir özelliğidir.
 void SetElementText(
     LPCTSTR szElementId,
     BSTR bstrText);
-
 
 void SetElementText(
     IUnknown* punkElem,
@@ -1554,5 +1537,4 @@ Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::UpdateUI](h
 [MFC örnek DHtmlExplore](../../visual-cpp-samples.md)<br/>
 [DDX_DHtml Yardımcı Makroları](#ddx_dhtml_helper_macros)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-
 

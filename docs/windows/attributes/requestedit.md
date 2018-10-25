@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f566308384b1fb9dc863c2fe5a4483fc0cddbe83
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 27b584f4f73e3509a5e7c907193f73e98b0b2811
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789873"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066909"
 ---
 # <a name="requestedit"></a>requestedit
 
@@ -62,4 +62,4 @@ ms.locfileid: "48789873"
 [Veri Üyesi Öznitelikleri](data-member-attributes.md)<br/>
 [defaultbind](defaultbind.md)<br/>
 [displaybind](displaybind.md)<br/>
-[immediatebind](immediatebind.md)  
+[immediatebind](immediatebind.md)

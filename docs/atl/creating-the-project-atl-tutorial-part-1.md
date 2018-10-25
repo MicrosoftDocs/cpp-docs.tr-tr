@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd53bc778b3229522d34993c72833500732323b3
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 654ddd149eb6875bede85bdef51641c359644f51
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821107"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075638"
 ---
 # <a name="creating-the-project-atl-tutorial-part-1"></a>Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 
@@ -30,13 +30,13 @@ Bu öğreticide, bir Çokgen görüntüleyen bir ActiveX nesnesini oluşturan bi
 > Bu öğreticide, aynı kaynak kodunun Çokgen örnek olarak oluşturulur. Kaynak Kodu el ile girmekten kaçınmak istiyorsanız, buradan indirebilirsiniz [Çokgen örnek soyut](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/Polygon). Öğreticide iş ya da kendi projenizi hataları denetlemek için kullanmak gibi Çokgen kaynak koduna ardından başvurabilir.
 > Derleme, stdafx.h açmak ve değiştirmek için:
 > ```
-> #ifndef WINVER  
-> #define WINVER 0x0400   
+> #ifndef WINVER
+> #define WINVER 0x0400
 > #endif
 > ```
 > örneklerini şununla değiştirin:
 > ```
-> #ifndef WINVER  
+> #ifndef WINVER
 > #define WINVER 0x0500
 > #define _WIN32_WINNT 0x0500
 > #endif

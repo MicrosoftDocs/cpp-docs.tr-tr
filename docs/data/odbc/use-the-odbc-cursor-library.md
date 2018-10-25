@@ -16,21 +16,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a3d36720012a7a54109c44d6eac41394323bbe0e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fc144e7b2ab1e97093498fa73930ba100306c23e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107815"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076704"
 ---
 # <a name="use-the-odbc-cursor-library"></a>ODBC İmleç Kitaplığını Kullanma
 
-ODBC imleç kitaplığı aracılığıyla kayıt kümeleri aracılığıyla kaydırma yönetir. Bu konular imleç kitaplığı ile çalışmaya nasıl açıklar.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
-  
-- [ODBC İmleç Kitaplığını Kullanma](../../data/odbc/odbc-the-odbc-cursor-library.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+ODBC imleç kitaplığı aracılığıyla kayıt kümeleri aracılığıyla kaydırma yönetir. Bu konular imleç kitaplığı ile çalışmaya nasıl açıklar.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+- [ODBC İmleç Kitaplığını Kullanma](../../data/odbc/odbc-the-odbc-cursor-library.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

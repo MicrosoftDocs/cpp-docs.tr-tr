@@ -72,12 +72,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d9a50e3dcfb82e245dcac5f57553b34fef584fa
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: addbc7c81c8cd38f44b7b1004c0b4e23ca183ecb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412034"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067326"
 ---
 # <a name="cbasetabbedpane-class"></a>CBaseTabbedPane sınıfı
 
@@ -179,7 +179,8 @@ virtual BOOL AddTab(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] [out] *pNewBar* bölmesine eklemek için bir işaretçi. Bu yöntem çağrısından sonra bu işaretçinin geçersiz hale gelebilir. Daha fazla bilgi için Açıklamalar bölümüne bakın.
+*pNewBar*<br/>
+[out içinde] Bölmesine eklemek için bir işaretçi. Bu yöntem çağrısından sonra bu işaretçinin geçersiz hale gelebilir. Daha fazla bilgi için Açıklamalar bölümüne bakın.
 
 *bVisible*<br/>
 [in] Sekme görünür yapmak için TRUE; Aksi takdirde FALSE.
@@ -384,7 +385,8 @@ virtual BOOL FloatTab(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] [out] *pBar* float bölmesine bir işaretçi.
+*pBar*<br/>
+[out içinde] Kayan nokta bölmesi için bir işaretçi.
 
 *nTabID*<br/>
 [in] Kayan nokta için sekmesinde sıfır tabanlı dizini belirtir.
@@ -594,7 +596,8 @@ virtual BOOL RemovePane(CWnd* pBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] [out] *pBar* bölmesine sekmeli bölmesinden kaldırmak için bir işaretçi.
+*pBar*<br/>
+[out içinde] Sekmeli bölmesinden kaldırmak için bölmesi için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -689,7 +692,8 @@ virtual CMFCAutoHideToolBar* SetAutoHideMode(
 *dwAlignment*<br/>
 [in] Oluşturulacak otomatik gizleme bölmesini hizalamasını belirtir. Olası değerler listesi için bkz. [CPane::MoveByAlignment](../../mfc/reference/cpane-class.md#movebyalignment).
 
-[in] [out] *pCurrAutoHideBar* geçerli otomatik gizleme araç için bir işaretçi. NULL olabilir.
+*pCurrAutoHideBar*<br/>
+[out içinde] Geçerli otomatik gizleme araç için bir işaretçi. NULL olabilir.
 
 *bUseTimer*<br/>
 [in] Otomatik gizleme etkin kullanıcı bölmesinde otomatik gizleme moduna geçiş yaptığında kullanın ya da bölmeyi hemen gizlemek için belirtir.

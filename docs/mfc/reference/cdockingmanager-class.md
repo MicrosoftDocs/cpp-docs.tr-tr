@@ -170,12 +170,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24b663e1b07d1012c1611714390340df3ce3867f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c17b280d658eb615d314526f4fd241bf57c2eed1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448512"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074741"
 ---
 # <a name="cdockingmanager-class"></a>CDockingManager sınıfı
 
@@ -296,7 +296,7 @@ Aşağıdaki ipuçları uygulamak `CDockingManager` nesneler:
 
     - `AFX_DOCK_TYPE::DT_SMART`
 
-     Bu takma modları tarafından tanımlanan [CDockingManager::m_dockModeGlobal](#m_dockmodeglobal) çağırarak ayarlayın [CDockingManager::SetDockingMode](#setdockingmode).
+   Bu takma modları tarafından tanımlanan [CDockingManager::m_dockModeGlobal](#m_dockmodeglobal) çağırarak ayarlayın [CDockingManager::SetDockingMode](#setdockingmode).
 
 - Değişken olmayan, yeniden boyutlandırılabilir olmayan bir bölme oluşturmak istiyorsanız, çağrı [CDockingManager::AddPane](#addpane) yöntemi. Bu yöntem bölmesinde bölmesinin düzenini sorumlu yerleştirme Yöneticisi ile kaydeder.
 

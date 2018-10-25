@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 295e19d875585e0ea166dfce552866b8c1fc81b7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7c2c954851348fcb96b28a4c47aee4b4475aeaca
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392276"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070289"
 ---
 # <a name="dialog-data-exchange-functions-for-crecordview-and-cdaorecordview"></a>CRecordView ve CDaoRecordView için İletişim Kutusu Veri Değişimi İşlevleri
 
@@ -499,11 +499,12 @@ Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örnek. Çağrılar `DDX_Fi
        CRecordset* pRecordset );
 
 void AFXAPI DDX_FieldSlider(
-     CDataExchange* pDX,
-     int nIDC,
-     int& value,
-     CDaoRecordset* pRecordset );
+   CDataExchange* pDX,
+   int nIDC,
+   int& value,
+   CDaoRecordset* pRecordset );
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
@@ -681,7 +682,6 @@ DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve d
 Aşağıdaki `DoDataExchange` için işlev bir [CRecordView](../../mfc/reference/crecordview-class.md) içeren `DDX_FieldText` üç veri türleri için işlevini çağırır: `IDC_COURSELIST` bir birleşik giriş kutusu; diğer iki düzenleme kutuları denetimlerdir. DAO programlama için *m_pSet* parametresi için bir işaretçi, bir [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).
 
 [!code-cpp[NVC_MFCDatabase#43](../../mfc/codesnippet/cpp/dialog-data-exchange-functions-for-crecordview-and-cdaorecordview_1.cpp)]
-
 
 ### <a name="requirements"></a>Gereksinimler
 

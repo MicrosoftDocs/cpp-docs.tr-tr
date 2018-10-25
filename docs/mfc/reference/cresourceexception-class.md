@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 993b484c40386a60dd2da04d7198d692f5e16f97
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2e1fea7db1ef79eed2bc2678bd1e9283c71bb161
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445080"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071868"
 ---
 # <a name="cresourceexception-class"></a>CResourceException sınıfı
 
@@ -79,5 +79,4 @@ Bu oluşturucu doğrudan kullanmaz, bunun yerine genel işlev çağrısı [AfxTh
 
 [CException Sınıfı](cexception-class.md)<br/>
 [Hiyerarşi Grafiği](../hierarchy-chart.md)
-
 

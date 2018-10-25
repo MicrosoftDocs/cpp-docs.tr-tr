@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50094e9caaf712588c12a259f4886360374e430e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cec74c832e1f7e38fd284e445b2a5aff05faa282
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376793"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072557"
 ---
 # <a name="cmfcribbonfontcombobox-class"></a>CMFCRibbonFontComboBox sınıfı
 
@@ -167,7 +167,7 @@ const CMFCFontInfo* GetFontDesc(int iIndex = -1) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *İIndex*
+[in] *İIndex*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 

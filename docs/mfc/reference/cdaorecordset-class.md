@@ -176,12 +176,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08e5433cfd7d1627babb4750c94396602a8f276c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d31e61dcddeca7e27370dd293056ebcf990d9ef7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400542"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068372"
 ---
 # <a name="cdaorecordset-class"></a>CDaoRecordset sınıfı
 
@@ -1121,7 +1121,6 @@ void GetFieldInfo(
     CDaoFieldInfo& fieldinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
 
-
 void GetFieldInfo(
     LPCTSTR lpszName,
     CDaoFieldInfo& fieldinfo,
@@ -1164,7 +1163,6 @@ Bir kayıt kümesi verileri almak için bu üye işlevini çağırın.
 virtual void GetFieldValue(
     LPCTSTR lpszName,
     COleVariant& varValue);
-
 
 virtual void GetFieldValue(
     int nIndex,
@@ -1229,7 +1227,6 @@ void GetIndexInfo(
     int nIndex,
     CDaoIndexInfo& indexinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
-
 
 void GetIndexInfo(
     LPCTSTR lpszName,
@@ -1931,12 +1928,10 @@ virtual void Open(
     LPCTSTR lpszSQL = NULL,
     int nOptions = 0);
 
-
 virtual void Open(
     CDaoTableDef* pTableDef,
     int nOpenType = dbOpenTable,
     int nOptions = 0);
-
 
 virtual void Open(
     CDaoQueryDef* pQueryDef,
@@ -2086,7 +2081,6 @@ BOOL Seek(
     COleVariant* pKey1,
     COleVariant* pKey2 = NULL,
     COleVariant* pKey3 = NULL);
-
 
 BOOL Seek(
     LPCTSTR lpszComparison,
@@ -2356,16 +2350,13 @@ virtual void SetFieldValue(
     LPCTSTR lpszName,
     const COleVariant& varValue);
 
-
 virtual void SetFieldValue(
     int nIndex,
     const COleVariant& varValue);
 
-
 void SetFieldValue(
     LPCTSTR lpszName,
     LPCTSTR lpszValue);
-
 
 void SetFieldValue(
     int nIndex,
@@ -2450,7 +2441,6 @@ Bir parametrenin değeri, çalışma zamanında kümenize ayarlamak için bu üy
 virtual void SetParamValue(
     int nIndex,
     const COleVariant& varValue);
-
 
 virtual void SetParamValue(
     LPCTSTR lpszName,

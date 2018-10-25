@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48afac392d02edfd3d312583642367bc6726e536
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1d28a9a8bad8ced772d5c698e76d3d08f09c8db2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106798"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066480"
 ---
 # <a name="using-idispeventimpl"></a>Idispeventımpl kullanma
 
@@ -41,7 +41,7 @@ Kullanırken `IDispEventImpl` olayları işlemek için yapmanız gerekir:
 
 Aşağıdaki örnekte nasıl işleneceğini gösterir `DocumentChange` olay harekete Word tarafından **uygulama** nesne. Bu olay üzerinde bir yöntemi olarak tanımlanan `ApplicationEvents` dispinterface.
 
-Örnek dandır [ATLEventHandling örnek](../visual-cpp-samples.md).  
+Örnek dandır [ATLEventHandling örnek](../visual-cpp-samples.md).
 
 ```cpp
 [ uuid(000209F7-0000-0000-C000-000000000046), hidden ]

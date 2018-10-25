@@ -82,12 +82,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bfb50c707f0e9055d80a91581696981b6a4d6606
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7ac89d58b6043089f6c0d0045189116d2799f517
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399528"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069223"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl sınıfı
 
@@ -203,7 +203,6 @@ BOOL AddTool(
     UINT nIDText,
     LPCRECT lpRectTool = NULL,
     UINT_PTR nIDTool = 0);
-
 
 BOOL AddTool(
     CWnd* pWnd,
@@ -727,7 +726,6 @@ Gecikme süresini bir araç ipucu denetimi için ayarlar.
 ```
 void SetDelayTime(UINT nDelay);
 
-
 void SetDelayTime(
     DWORD dwDuration,
     int iTime);
@@ -919,7 +917,6 @@ void UpdateTipText(
     LPCTSTR lpszText,
     CWnd* pWnd,
     UINT_PTR nIDTool = 0);
-
 
 void UpdateTipText(
     UINT nIDText,

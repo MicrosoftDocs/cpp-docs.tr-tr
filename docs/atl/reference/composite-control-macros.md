@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 352f3e5ebd9606cc355ea9af65739c3e17894298
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 75e34fd4cfa53257f0e8a497cf8bc245c90f6732
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46136302"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077360"
 ---
 # <a name="composite-control-macros"></a>Bileşik Denetim makroları
 
@@ -41,7 +41,7 @@ Olay iç havuz eşlemeleri ve girişleri bu makroları tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h  
+**Başlık:** atlcom.h
 
 ##  <a name="begin_sink_map"></a>  BEGIN_SINK_MAP
 
@@ -122,7 +122,7 @@ SINK_ENTRY_EX_P( id, piid, dispid, fn ) // (Visual Studio 2017)
 [in] Denetimi tanımlar.
 
 *IID*<br/>
-[in] Dağıtım arabirimi tanımlar.  
+[in] Dağıtım arabirimi tanımlar.
 
 *piid*<br/>
 [in] Gönderme arabirim işaretçisi.
@@ -156,7 +156,7 @@ SINK_ENTRY_INFO_P( id, piid, dispid, fn, info ) // (Visual Studio 2017)
 [in] Olay kaynağını belirleme işaretsiz tamsayı. Bu değer eşleşmelidir *nID* şablon parametresi ilgili kullanılan [Idispeventsimpleımpl](../../atl/reference/idispeventsimpleimpl-class.md) temel sınıfı.
 
 *IID*<br/>
-[in] Bu IID gönderme arabirimi tanımlar.  
+[in] Bu IID gönderme arabirimi tanımlar.
 
 *piid*<br/>
 [in] Gönderme arabirim tanımlayan IID işaretçisi.

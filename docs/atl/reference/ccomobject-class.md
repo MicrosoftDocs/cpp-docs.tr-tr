@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7a6f4f014d609e8b650951d459c23b07fd4a006
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9fdd5bcf0bf3ac58cf056543b9dbe3c55b6fe1bd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085452"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073247"
 ---
 # <a name="ccomobject-class"></a>CComObject sınıfı
 
@@ -120,7 +120,7 @@ CComObject();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrıları ayrılan tüm kaynakları serbest bırakan [FinalRelease](ccomobjectrootex-class.md#finalrelease), ve modül kilit sayısını azaltır.  
+Çağrıları ayrılan tüm kaynakları serbest bırakan [FinalRelease](ccomobjectrootex-class.md#finalrelease), ve modül kilit sayısını azaltır.
 
 ##  <a name="createinstance"></a>  CComObject::CreateInstance
 

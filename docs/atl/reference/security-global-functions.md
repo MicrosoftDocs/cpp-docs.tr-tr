@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2cdeef97b92550731b06dcb4a1d425d77f5920a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bbac8dc499c08d96abd33d49f5adec08095ca420
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075169"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067299"
 ---
 # <a name="security-global-functions"></a>Güvenlik genel işlevleri
 
@@ -50,11 +50,11 @@ Bu işlevler, SID ve ACL nesneleri değiştirmek için destek sağlar.
 |[AtlSetOwnerSid](#atlsetownersid)|Bir nesnenin sahip güvenlik tanımlayıcısını (SID) ayarlamak için bu işlevi çağırın.|
 |[AtlGetSacl](#atlgetsacl)|Belirtilen bir nesnenin sistem erişim denetimi listesini (SACL) almak için bu işlevi çağırın.|
 |[AtlSetSacl](#atlsetsacl)|Belirtilen bir nesnenin sistem erişim denetimi listesini (SACL) ayarlamak için bu işlevi çağırın.|
-|[AtlGetSecurityDescriptor](#atlgetsecuritydescriptor)|Verilen bir nesnenin güvenlik tanımlayıcısını almak için bu işlevi çağırın.|  
+|[AtlGetSecurityDescriptor](#atlgetsecuritydescriptor)|Verilen bir nesnenin güvenlik tanımlayıcısını almak için bu işlevi çağırın.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsecurity.h 
+**Başlık:** atlsecurity.h
 
 ##  <a name="atlgetdacl"></a>  AtlGetDacl
 
@@ -127,7 +127,7 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *hObject* geçersiz veya *dwInheritanceFlowControl* üç izin verilen değerlerden biri değil.
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsecurity.h 
+**Başlık:** atlsecurity.h
 
 ##  <a name="atlgetgroupsid"></a>  AtlGetGroupSid
 
@@ -156,11 +156,11 @@ Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
+Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsecurity.h 
+**Başlık:** atlsecurity.h
 
 ##  <a name="atlsetgroupsid"></a>  AtlSetGroupSid
 
@@ -189,11 +189,11 @@ Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
+Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsecurity.h 
+**Başlık:** atlsecurity.h
 
 ##  <a name="atlgetownersid"></a>  AtlGetOwnerSid
 
@@ -222,11 +222,11 @@ Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
+Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsecurity.h 
+**Başlık:** atlsecurity.h
 
 ##  <a name="atlsetownersid"></a>  AtlSetOwnerSid
 
@@ -255,11 +255,11 @@ Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
+Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsecurity.h 
+**Başlık:** atlsecurity.h
 
 ##  <a name="atlgetsacl"></a>  AtlGetSacl
 
@@ -296,11 +296,11 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `AtlGetSacl` birçok farklı nesneler üzerinde birden çok kez çağrılması için bir kez işlevi ile çağırmadan önce SE_SECURITY_NAME ayrıcalık etkinleştirmek için daha verimli olacaktır *bRequestNeededPrivileges* false olarak ayarlayın.  
+Varsa `AtlGetSacl` birçok farklı nesneler üzerinde birden çok kez çağrılması için bir kez işlevi ile çağırmadan önce SE_SECURITY_NAME ayrıcalık etkinleştirmek için daha verimli olacaktır *bRequestNeededPrivileges* false olarak ayarlayın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsecurity.h 
+**Başlık:** atlsecurity.h
 
 ##  <a name="atlsetsacl"></a>  AtlSetSacl
 
@@ -343,11 +343,11 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *hObject* geçersiz veya *dwInheritanceFlowControl* üç izin verilen değerlerden biri değil.
 
-Varsa `AtlSetSacl` birçok farklı nesneler üzerinde birden çok kez çağrılması için bir kez işlevi ile çağırmadan önce SE_SECURITY_NAME ayrıcalık etkinleştirmek için daha verimli olacaktır *bRequestNeededPrivileges* false olarak ayarlayın.  
+Varsa `AtlSetSacl` birçok farklı nesneler üzerinde birden çok kez çağrılması için bir kez işlevi ile çağırmadan önce SE_SECURITY_NAME ayrıcalık etkinleştirmek için daha verimli olacaktır *bRequestNeededPrivileges* false olarak ayarlayın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsecurity.h 
+**Başlık:** atlsecurity.h
 
 ##  <a name="atlgetsecuritydescriptor"></a>  AtlGetSecurityDescriptor
 
@@ -390,7 +390,7 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `AtlGetSecurityDescriptor` birçok farklı nesneler üzerinde birden çok kez çağrılması için bir kez işlevi ile çağırmadan önce SE_SECURITY_NAME ayrıcalık etkinleştirmek için daha verimli olacaktır *bRequestNeededPrivileges* false olarak ayarlayın.  
+Varsa `AtlGetSecurityDescriptor` birçok farklı nesneler üzerinde birden çok kez çağrılması için bir kez işlevi ile çağırmadan önce SE_SECURITY_NAME ayrıcalık etkinleştirmek için daha verimli olacaktır *bRequestNeededPrivileges* false olarak ayarlayın.
 
 ### <a name="requirements"></a>Gereksinimler
 

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0ffdb791355aa40a33d80104af540b856cdf601
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 41b4bf9678f2382c124bcfef484d0becf687f530
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019490"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072713"
 ---
 # <a name="crbmap-class"></a>CRBMap sınıfı
 
@@ -36,8 +36,8 @@ Bu sınıf, Red-siyah bir ikili Ağacı'nı kullanarak bir eşleme yapısını t
 
 ```
 template <typename K,
-          typename V, 
-          class KTraits = CElementTraits<K>, 
+          typename V,
+          class KTraits = CElementTraits<K>,
           class VTraits = CElementTraits<V>>
 class CRBMap : public CRBTree<K, V, KTraits, VTraits>
 ```

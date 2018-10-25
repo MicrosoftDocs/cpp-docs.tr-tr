@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: e6bac12d841a065495f7775598c65f39a0aaba67
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d0b62bbca87e5b4fcabcf5124271ee8be68b755f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394276"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068846"
 ---
 # <a name="windows-formsmfc-programming-differences"></a>Windows Forms/MFC Programlama Farkları
 
@@ -39,31 +39,31 @@ Aşağıdaki MFC görünümü veya belge ve yönlendirme özelliklerinin komutu 
 
 - Shell tümleştirmesi
 
-     MFC Kabuk belgeye sağ tıklayın ve gibi eylemler açık olarak seçin, düzenlemek veya yazdırma kullanan komut satırı bağımsız değişkenleri ve dinamik veri değişimi (DDE) komutları işler. Windows Forms Kabuk entegrasyonuna ve Kabuk fiillerini yanıt vermiyor.
+   MFC Kabuk belgeye sağ tıklayın ve gibi eylemler açık olarak seçin, düzenlemek veya yazdırma kullanan komut satırı bağımsız değişkenleri ve dinamik veri değişimi (DDE) komutları işler. Windows Forms Kabuk entegrasyonuna ve Kabuk fiillerini yanıt vermiyor.
 
 - Belge şablonları
 
-     MFC içinde belge şablonları bir çerçeve penceresinde (modunda MDI, SDI veya MTI) bulunan bir görünüm açtığınız belge ile ilişkilendirin. Windows Forms eşdeğeri belge şablonları için vardır.
+   MFC içinde belge şablonları bir çerçeve penceresinde (modunda MDI, SDI veya MTI) bulunan bir görünüm açtığınız belge ile ilişkilendirin. Windows Forms eşdeğeri belge şablonları için vardır.
 
 - Belgeler
 
-     MFC belge dosya türleri kaydettirir ve bir belge türü Kabuğu'ndan bir belge açılırken işler. Windows Forms hiçbir belge desteği yok.
+   MFC belge dosya türleri kaydettirir ve bir belge türü Kabuğu'ndan bir belge açılırken işler. Windows Forms hiçbir belge desteği yok.
 
 - Belge durumları
 
-     MFC belge için olumsuz durumlar tutar. Bu nedenle, uygulamayı kapatın, uygulamayı içeren son görünümü kapatın veya Windows ' çıkmak MFC belge kaydetmenizi ister. Windows Forms eşdeğer desteği vardır.
+   MFC belge için olumsuz durumlar tutar. Bu nedenle, uygulamayı kapatın, uygulamayı içeren son görünümü kapatın veya Windows ' çıkmak MFC belge kaydetmenizi ister. Windows Forms eşdeğer desteği vardır.
 
 - Komutlar
 
-     MFC komutlarını kavramı vardır. Menü çubuğu, araç ve bağlam menüsünden Tüm kesme ve kopyalama aynı komutu çalıştırabilirsiniz. Windows Forms'ta sıkı şekilde bağlı (örneğin, bir menü öğesi); belirli bir kullanıcı Arabirimi öğesi olaylardan komutlardır Bu nedenle, tüm komut olayları açıkça kanca gerekir. Windows Forms'ta tek bir işleyici ile birden çok olayı de işleyebilirsiniz. Daha fazla bilgi için [Windows Forms'ta tek bir olay işleyicisine birden çok olayı bağlanma](/dotnet/framework/winforms/how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms).
+   MFC komutlarını kavramı vardır. Menü çubuğu, araç ve bağlam menüsünden Tüm kesme ve kopyalama aynı komutu çalıştırabilirsiniz. Windows Forms'ta sıkı şekilde bağlı (örneğin, bir menü öğesi); belirli bir kullanıcı Arabirimi öğesi olaylardan komutlardır Bu nedenle, tüm komut olayları açıkça kanca gerekir. Windows Forms'ta tek bir işleyici ile birden çok olayı de işleyebilirsiniz. Daha fazla bilgi için [Windows Forms'ta tek bir olay işleyicisine birden çok olayı bağlanma](/dotnet/framework/winforms/how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms).
 
 - Komut yönlendirme
 
-     MFC komut yönlendirme etkin görünüm veya belge komutları işlemek üzere etkinleştirir. Aynı komutu genellikle farklı görünümleri için farklı anlamlara sahip olduğundan (örneğin, kopyalama farklı metin düzenleme görünümünde bir grafik düzenleyicisinde davranır), komutları etkin görünüm tarafından ele alınması gerekir. Windows Forms menüleri ve araç çubuklarını etkin görünüm devralınan hiçbir bilgiye sahip olduğundan, her bir görünüm türü için farklı bir işleyici olamaz, **MenuItem.Click** iç ek bir kod yazmadan olayları.
+   MFC komut yönlendirme etkin görünüm veya belge komutları işlemek üzere etkinleştirir. Aynı komutu genellikle farklı görünümleri için farklı anlamlara sahip olduğundan (örneğin, kopyalama farklı metin düzenleme görünümünde bir grafik düzenleyicisinde davranır), komutları etkin görünüm tarafından ele alınması gerekir. Windows Forms menüleri ve araç çubuklarını etkin görünüm devralınan hiçbir bilgiye sahip olduğundan, her bir görünüm türü için farklı bir işleyici olamaz, **MenuItem.Click** iç ek bir kod yazmadan olayları.
 
 - Komut güncelleştirme mekanizması
 
-     MFC, bir komut güncelleştirme mekanizması vardır. Bu nedenle, etkin görünüm veya belge (örneğin, etkinleştirme veya bir menü öğesi veya araç düğmesi devre dışı bırakma ve denetlendi) Arabirim öğelerinin durumu sorumludur. Windows Forms hiçbir denk bir komut güncelleştirme mekanizması vardır.
+   MFC, bir komut güncelleştirme mekanizması vardır. Bu nedenle, etkin görünüm veya belge (örneğin, etkinleştirme veya bir menü öğesi veya araç düğmesi devre dışı bırakma ve denetlendi) Arabirim öğelerinin durumu sorumludur. Windows Forms hiçbir denk bir komut güncelleştirme mekanizması vardır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

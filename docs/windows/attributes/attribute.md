@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fdd3b2e38e8f98642ab6675b3683515e4250c655
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 2f4d12390ba97a6161fa11e0e08d19a46eb1c882
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327849"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067845"
 ---
 # <a name="attribute"></a>özniteliği
 
@@ -34,4 +34,4 @@ ms.locfileid: "49327849"
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Öznitelikler Alfabetik Başvurusu](attributes-alphabetical-reference.md)  
+[Öznitelikler Alfabetik Başvurusu](attributes-alphabetical-reference.md)

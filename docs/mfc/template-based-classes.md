@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 680ff7d339f592cf112a91fc303a6367fbc4805b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b972d4552a8e41ca0dcea4ef57d48ef161ea35b9
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408760"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069236"
 ---
 # <a name="template-based-classes"></a>Şablona Dayalı Sınıflar
 
@@ -47,11 +47,11 @@ MFC, şablona dayalı koleksiyonlar iki kategorisi önceden belirler:
 
 - [Basit dizi, liste ve eşleme sınıfları](#_core_using_simple_array.2c_.list.2c_.and_map_templates)
 
-     `CArray`, `CList`, `CMap`
+   `CArray`, `CList`, `CMap`
 
 - [Diziler, listeler ve eşlemeler yazılan işaretçiler](#_core_using_typed.2d.pointer_collection_templates)
 
-     `CTypedPtrArray`, `CTypedPtrList`, `CTypedPtrMap`
+   `CTypedPtrArray`, `CTypedPtrList`, `CTypedPtrMap`
 
 Basit koleksiyon sınıfları tüm sınıfından türetilen `CObject`, serileştirme, dinamik oluşturma ve diğer özelliklerini devralır `CObject`. İşaretçi türü belirlenmiş koleksiyon sınıfları, türetilen sınıf belirtmenizi gerektirir — MFC tarafından gibi önceden tanımlanmış sınıflarındaki işaretçi koleksiyonlardan biri olmalıdır `CPtrList` veya `CPtrArray`. Yeni koleksiyon sınıfınıza belirtilen temel sınıfından devralır ve tür güvenliği zorlamak için temel sınıf üyelerinin kapsüllenmiş çağrıları yeni sınıfın üye işlevleri kullanın.
 

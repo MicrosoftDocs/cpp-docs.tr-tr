@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca420ce09cae5bf7c11dcfb0ad384e0002bdc4b1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 738d441cf88b41740cb0cff933916489cac683f2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403592"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073103"
 ---
 # <a name="handlers-for-message-map-ranges"></a>İleti Eşleme Aralıkları için İşleyiciler
 
@@ -81,7 +81,7 @@ Bu makalede ele alınan konular:
 
 - Makro parametrelerini:
 
-     İlk iki makroları, üç parametre alır:
+   İlk iki makroları, üç parametre alır:
 
    - Aralığın başladığı komut kimliği
 
@@ -89,9 +89,9 @@ Bu makalede ele alınan konular:
 
    - İleti işleyici işlevinin adı
 
-     Komut kimlikleri dizi bitişik olması gerekir.
+   Komut kimlikleri dizi bitişik olması gerekir.
 
-     Üçüncü makrosu `ON_CONTROL_RANGE`, ek bir ilk parametre alır: gibi bir denetim bildirimi iletisi **EN_CHANGE**.
+   Üçüncü makrosu `ON_CONTROL_RANGE`, ek bir ilk parametre alır: gibi bir denetim bildirimi iletisi **EN_CHANGE**.
 
 ##  <a name="_core_declaring_the_handler_function"></a> İşleyici işlevi bildirme
 
@@ -113,11 +113,11 @@ Kullandığınızda bir örnektir komutları gibi MFC örnek yakınlaştırma ko
 
 - İki bitişik aralık tarihleri arasında kimlikleri komutu.
 
-     Bunlar şunlardır **ID_VIEW_ZOOM25** ve **ID_VIEW_ZOOM300**.
+   Bunlar şunlardır **ID_VIEW_ZOOM25** ve **ID_VIEW_ZOOM300**.
 
 - Komutlar için işleyici işlevinin adı.
 
-     Burada sahip `OnZoom`.
+   Burada sahip `OnZoom`.
 
 İşlev bildirimi bu benzeyecektir:
 
@@ -137,15 +137,15 @@ Yazdığınızda `ON_CONTROL_RANGE` makro, ileti eşlemesi içinde belirttiğini
 
 - Bir özel denetim bildirimi iletisi.
 
-     Burada sahip **BN_CLICKED**.
+   Burada sahip **BN_CLICKED**.
 
 - Denetim Kimliği bitişik aralığını denetimleri ile ilişkili değerler.
 
-     Bunlar burada **IDC_BUTTON1** ve **IDC_BUTTON10**.
+   Bunlar burada **IDC_BUTTON1** ve **IDC_BUTTON10**.
 
 - İleti işleyici işlevinin adı.
 
-     Burada sahip `OnButtonClicked`.
+   Burada sahip `OnButtonClicked`.
 
 İşleyici işlevi yazdığınızda, fazladan belirtin **UINT** aşağıda gösterildiği gibi parametre:
 

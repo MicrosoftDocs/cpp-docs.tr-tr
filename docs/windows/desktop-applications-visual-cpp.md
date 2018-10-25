@@ -13,19 +13,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 991e3e74ba280b615d951c12472de46833b7de72
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 2d8c5188cccceb0c09de95c43a72a645ded0e6a9
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083352"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077525"
 ---
 # <a name="desktop-applications-visual-c"></a>Masaüstü uygulamaları (Visual C++)
 
 A *masaüstü uygulaması* c++'ta Windows API'leri ve ya da çalışan bir pencerede veya sistem konsolu tam kümesini erişebilmeniz için yerel bir uygulamadır. C++ Masaüstü uygulamaları, Windows XP ile Windows 10 (Windows XP artık resmi olarak desteklenir ve bu tarihten sonra sunulan çok sayıda Windows API vardır ancak) çalıştırabilirsiniz.
 
 Windows 10 çalıştıran bilgisayarlara ve XBox, Windows Phone, Surface Hub ve diğer cihazlar üzerinde çalışabilen bir evrensel Windows Platformu (UWP) uygulamasını ayrı, bir masaüstü uygulamasıdır. Masaüstü vs hakkında daha fazla bilgi için. UWP uygulamaları [teknolojinizi seçin](https://msdn.microsoft.com/library/windows/desktop/dn614993).
-
 
 ### <a name="desktop-bridge"></a>Masaüstü köprüsü
 

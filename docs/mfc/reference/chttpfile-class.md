@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33c7778b37ab11ac2be42f85ce74095d02e8b373
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5aef38ffe35f8aaf059ca88a0833b9e04b0c0ee9
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398605"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077497"
 ---
 # <a name="chttpfile-class"></a>CHttpFile sınıfı
 
@@ -107,7 +107,6 @@ BOOL AddRequestHeaders(
     DWORD dwFlags = HTTP_ADDREQ_FLAG_ADD_IF_NEW,
     int dwHeadersLen = -1);
 
-
 BOOL AddRequestHeaders(
     CString& str,
     DWORD dwFlags = HTTP_ADDREQ_FLAG_ADD_IF_NEW);
@@ -158,7 +157,6 @@ CHttpFile(
     LPCTSTR pstrServer,
     LPCTSTR pstrVerb,
     DWORD_PTR dwContext);
-
 
 CHttpFile(
     HINTERNET hFile,
@@ -447,7 +445,6 @@ BOOL SendRequest(
     LPVOID lpOptional = NULL,
     DWORD dwOptionalLen = 0);
 
-
 BOOL SendRequest(
     CString& strHeaders,
     LPVOID lpOptional = NULL,
@@ -484,7 +481,6 @@ BOOL SendRequestEx(
     DWORD dwTotalLen,
     DWORD dwFlags = HSR_INITIATE,
     DWORD_PTR dwContext = 1);
-
 
 BOOL SendRequestEx(
     LPINTERNET_BUFFERS lpBuffIn,

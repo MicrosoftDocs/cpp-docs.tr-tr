@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1ddec12ccdd6fb730ac9f1c5170f17e52eede2b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 17e85de321783bf5dbffff2c4e99e9ca9dc1d85c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448200"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074312"
 ---
 # <a name="cmfcribbongallerymenubutton-class"></a>CMFCRibbonGalleryMenuButton sınıfı
 
@@ -107,14 +107,13 @@ InitBulletPalette (&paletteBullet.GetPalette ());
 
 ##  <a name="copyfrom"></a>  CMFCRibbonGalleryMenuButton::CopyFrom
 
-
 ```
 virtual void CopyFrom(const CMFCToolBarButton& src);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *src*
+[in] *src*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -128,7 +127,6 @@ CMFCRibbonGalleryMenuButton(
     int iImage,
     LPCTSTR lpszText,
     CMFCToolBarImages& imagesPalette);
-
 
 CMFCRibbonGalleryMenuButton(
     UINT uiID,
@@ -170,7 +168,6 @@ Aşağıdaki örnek oluşturucusuna kullanımı gösterilmiştir `CMFCRibbonGall
 
 ##  <a name="createpopupmenu"></a>  CMFCRibbonGalleryMenuButton::CreatePopupMenu
 
-
 ```
 virtual CMFCPopupMenu* CreatePopupMenu();
 ```
@@ -180,7 +177,6 @@ virtual CMFCPopupMenu* CreatePopupMenu();
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getpalette"></a>  CMFCRibbonGalleryMenuButton::GetPalette
-
 
 ```
 CMFCRibbonGallery& GetPalette();
@@ -192,7 +188,6 @@ CMFCRibbonGallery& GetPalette();
 
 ##  <a name="hasbutton"></a>  CMFCRibbonGalleryMenuButton::HasButton
 
-
 ```
 virtual BOOL HasButton() const;
 ```
@@ -202,7 +197,6 @@ virtual BOOL HasButton() const;
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="isemptymenuallowed"></a>  CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed
-
 
 ```
 virtual BOOL IsEmptyMenuAllowed() const;

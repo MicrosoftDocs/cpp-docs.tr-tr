@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e6d42dc242a2818f677f8f486b2c7db50125854c
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 00b0e7824de3c6977bd641e7016e3efc5acdcfa1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789858"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067378"
 ---
 # <a name="helpstringcontext"></a>helpstringcontext
 
@@ -78,4 +78,4 @@ Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#conte
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>
-[Modülü](module-cpp.md)  
+[module](module-cpp.md)

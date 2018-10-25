@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1b4adb3de5c6ec57b9f6bc2c48385916c3e5076
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 075804ae82d2e8431bef97d656aeee212feb6757
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445704"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073805"
 ---
 # <a name="win32-internet-classes"></a>Win32 Internet Sınıfları
 
@@ -32,7 +32,6 @@ MFC ActiveX teknoloji ve Win32 Internet (WinINet) Internet programlamayı kolayl
 
 >[!IMPORTANT]
 > ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
-
 
 [Cınternetsession](../mfc/reference/cinternetsession-class.md)<br/>
 Oluşturur ve Internet oturumu bir veya birden çok eşzamanlı Internet oturumu başlatır ve gerekiyorsa, proxy sunucusuna bağlanırken açıklar.

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0bcfc1cef3ea8e7010dd4ecc14c8048f546b25f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a42abcf891b5ebdeb8f9eaac8fa7fc9b20733558
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438138"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068768"
 ---
 # <a name="security-best-practices-for-c"></a>C++ İçin En İyi Güvenlik Uygulamaları
 
@@ -94,7 +94,6 @@ AppVerifier için kullanabilirsiniz:
 - Bir uygulama için bellekle ilgili sorunları inceleyin.
 
 - Bir uygulamada olası güvenlik sorunlarını belirleyin.
-
 
 ## <a name="windows-user-accounts"></a>Windows kullanıcı hesapları
 

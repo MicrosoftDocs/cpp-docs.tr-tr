@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39cde8affc84ed879ad3731cb6c18449c60498f3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 097f6173faad4f99f64c5dac45e2a0d1292a07eb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46430858"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076366"
 ---
 # <a name="cmultilock-class"></a>CMultiLock sınıfı
 
@@ -148,19 +148,19 @@ Varsa `Lock` döndürür - 1 başarısız olur. Başarılı olursa, aşağıdaki
 
 - Arasında WAIT_OBJECT_0 ve WAIT_OBJECT_0 + (nesneler - 1 sayısı)
 
-     Varsa *bWaitForAll* doğru ise, tüm nesneleri (kullanılabilir) sinyal. Varsa *bWaitForAll* yanlış, dönüş değeri - WAIT_OBJECT_0 olduğu dizin (kullanılabilir) işareti verilen nesnenin nesneler dizisi.
+   Varsa *bWaitForAll* doğru ise, tüm nesneleri (kullanılabilir) sinyal. Varsa *bWaitForAll* yanlış, dönüş değeri - WAIT_OBJECT_0 olduğu dizin (kullanılabilir) işareti verilen nesnenin nesneler dizisi.
 
 - WAIT_OBJECT_0 + (nesnelerin sayısı)
 
-     Belirtilen olaya *dwWakeMask* iş parçacığının giriş sırada kullanılabilir.
+   Belirtilen olaya *dwWakeMask* iş parçacığının giriş sırada kullanılabilir.
 
 - Arasında WAIT_ABANDONED_0 ve WAIT_ABANDONED_0 + (nesneler - 1 sayısı)
 
-     Varsa *bWaitForAll* TRUE ise, tüm nesneleri sinyal ve nesnelerin en az biri olan bırakılan mutex nesnesi. Varsa *bWaitForAll* yanlış, dönüş değeri - WAIT_ABANDONED_0 olduğu dizin bekleme memnun bırakılan mutex nesnesi nesnelerin dizisi.
+   Varsa *bWaitForAll* TRUE ise, tüm nesneleri sinyal ve nesnelerin en az biri olan bırakılan mutex nesnesi. Varsa *bWaitForAll* yanlış, dönüş değeri - WAIT_ABANDONED_0 olduğu dizin bekleme memnun bırakılan mutex nesnesi nesnelerin dizisi.
 
 - WAIT_TIMEOUT
 
-     Belirtilen zaman aşımı aralığı *dwTimeOut* olmadan başarılı bekleme süresi doldu.
+   Belirtilen zaman aşımı aralığı *dwTimeOut* olmadan başarılı bekleme süresi doldu.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -174,7 +174,6 @@ Eşitleme nesnesi tarafından sahip olunan serbest `CMultiLock`.
 
 ```
 BOOL Unlock();
-
 
 BOOL Unlock(
     LONG lCount,
@@ -202,6 +201,4 @@ Bu işlevi çağıran `CMultiLock`'s yıkıcı.
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-
-
 

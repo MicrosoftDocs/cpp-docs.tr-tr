@@ -15,16 +15,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e1edc9e4a6172b3ac55e7a8bc9b21cdc571774d
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 24056346520897988fe92587ab45aa7cbc754199
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465363"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075001"
 ---
 # <a name="porting-third-party-libraries"></a>Üçüncü taraf kitaplıklarını taşıma
 
-Bir projeyi Visual C++'ın geçerli sürümüne yükselttiğinizde, aynı zamanda kitaplık ve projenize öğesinin aynı sürümünü ve derleyici örneğinizin yerleşiktir, böylece proje kullanan tüm kitaplıkları sürümüne yükseltmeniz gerekir. (Daha fazla bilgi için [olası yükseltme sorunlarına genel bakış](overview-of-potential-upgrade-issues-visual-cpp.md)). 
+Bir projeyi Visual C++'ın geçerli sürümüne yükselttiğinizde, aynı zamanda kitaplık ve projenize öğesinin aynı sürümünü ve derleyici örneğinizin yerleşiktir, böylece proje kullanan tüm kitaplıkları sürümüne yükseltmeniz gerekir. (Daha fazla bilgi için [olası yükseltme sorunlarına genel bakış](overview-of-potential-upgrade-issues-visual-cpp.md)).
 
 ## <a name="introducing-vcpkg"></a>Vcpkg ile tanışın
 
@@ -35,7 +35,7 @@ Geçmişte, bulma ve 3. taraf kitaplıkları yükseltme bazen Önemsiz olmayan b
 Kitaplığınızı mevcut değilse **vcpkg** katalog, üzerinde bir sorunu açabilirsiniz [GitHub deposunu](https://github.com/Microsoft/vcpkg/issues) burada community ve Visual C++ ekibine görebilir ve büyük olasılıkla bu kitaplığa yönelik bağlantı noktası dosyasını oluşturun.
 
 Özel için kitaplık sağlayıcı başvurmanızı öneririz 3 şahıs kitaplıklardaki (açık olmayan kaynak). Ancak, özel tüm kitaplıkların kullanıyorsanız ve engellediğiniz bilmeniz, bağlı olduğu hangisinin bize ilgilenen duyuyoruz (adresinden bize başvurun vcupgrade@microsoft.com).
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Visual C++ Taşıma ve Yükseltme Kılavuzu](visual-cpp-porting-and-upgrading-guide.md)

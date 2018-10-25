@@ -1,7 +1,7 @@
 ---
 title: multimap sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5cde4954dd7222fbe9a406756a81466346f4dd01
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 9ae6c027947cf869a159b1561a7f7a3b853af0c2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235938"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068943"
 ---
 # <a name="multimap-class"></a>multimap Sınıfı
 
@@ -887,7 +887,6 @@ past-the-end yineleyici döndürür.
 ```cpp
 const_iterator end() const;
 
-
 iterator end();
 ```
 
@@ -1030,7 +1029,6 @@ Belirtilen anahtara denk bir anahtara sahip çoklu eşlemdeki bir öğenin ilk k
 
 ```cpp
 iterator find(const Key& key);
-
 
 const_iterator find(const Key& key) const;
 ```
@@ -1194,19 +1192,16 @@ int main( )
 pair<iterator, bool> insert(
     const value_type& Val);
 
-
 // (2) single element, perfect forwarded
 template <class ValTy>
 pair<iterator, bool>
 insert(
     ValTy&& Val);
 
-
 // (3) single element with hint
 iterator insert(
     const_iterator Where,
     const value_type& Val);
-
 
 // (4) single element, perfect forwarded, with hint
 template <class ValTy>
@@ -1214,13 +1209,11 @@ iterator insert(
     const_iterator Where,
     ValTy&& Val);
 
-
 // (5) range
 template <class InputIterator>
 void insert(
     InputIterator First,
     InputIterator Last);
-
 
 // (6) initializer list
 void insert(
@@ -2339,7 +2332,7 @@ Bir çoklu eşlemde kendi öğeleri sıralamak için kullanan bir karşılaştı
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çoklu eşlem için *m*, iki öğe *e*1 ( *k*1 *d*1) ve *e*2 ( *k*2 `d`2) türündeki nesneler `value_type`burada *k*1 ve *k*2 olan türü, anahtarlarına `key_type` ve `d`1 ve `d`2 kendi veri türü olan `mapped_type`, ardından *m.*`value_comp`( *e*1 *e*olan 2) eşdeğer *m.* `key_comp` ( *k*1 *k*2).
+Çoklu eşlem için *m*, iki öğe *e1*(*k1*, *d1*) ve *e2*(*k2*, *d2*) türündeki nesneler `value_type`burada *k1* ve *k2* türü kendi anahtarları `key_type` ve *d1*  ve *d2* kendi veri türü olan `mapped_type`, ardından `m.value_comp(e1, e2)` eşdeğerdir `m.key_comp(k1, k2)`.
 
 ### <a name="example"></a>Örnek
 

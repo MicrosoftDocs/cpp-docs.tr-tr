@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff8e486be6e28de313a8e1a20634af4c50c350e8
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: bef8243ee648679843ba9cfdbbb5033415b9e21d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313864"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074974"
 ---
 # <a name="unaryfunction-struct"></a>unary_function Yapısı
 
@@ -36,6 +36,7 @@ struct unary_function
    typedef Result result_type;
 };
 ```
+
 ## <a name="remarks"></a>Açıklamalar
 
 Şablon yapı biçiminde bir üye işlevi tanımlayan sınıflar için temel olarak hizmet veren **result_type**`operator()`( **constargument_type &**) **const**.

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5bd59cc19c80e305a7e57fb711a49f59a024d528
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5ad6ad1c4d1d7d74f60acbd985ee549d708ae28f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434771"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074130"
 ---
 # <a name="exceptions-catching-and-deleting-exceptions"></a>Özel Durumlar: Özel Durumları Yakalama ve Silme
 
@@ -36,9 +36,9 @@ Bu kod bir özel durumu yakalar her bir bellek sızıntısı özel durum silme h
 
 - **Catch** bloğu yeni bir özel durum oluşturur.
 
-     Elbette, tekrar aynı özel durum, özel durum silmemelisiniz:
+   Elbette, tekrar aynı özel durum, özel durum silmemelisiniz:
 
-     [!code-cpp[NVC_MFCExceptions#3](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_1.cpp)]
+   [!code-cpp[NVC_MFCExceptions#3](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_1.cpp)]
 
 - Yürütme döndürür içinden **catch** blok.
 
@@ -49,15 +49,15 @@ Bu kod bir özel durumu yakalar her bir bellek sızıntısı özel durum silme h
 
 1. Kullanım **deneyin** ayarlamak için anahtar sözcüğü bir **deneyin** blok. İçinde bir özel durum oluşturabilecek herhangi bir programı deyim yürütme bir **deneyin** blok.
 
-     Kullanım **catch** ayarlamak için anahtar sözcüğü bir **catch** blok. Özel durum işleme kodu yerleştirin bir **catch** blok. Kodda **catch** blokesi yalnızca içindeki kod **deneyin** blok, belirtilen türde bir özel durum oluşturursa **catch** deyimi.
+   Kullanım **catch** ayarlamak için anahtar sözcüğü bir **catch** blok. Özel durum işleme kodu yerleştirin bir **catch** blok. Kodda **catch** blokesi yalnızca içindeki kod **deneyin** blok, belirtilen türde bir özel durum oluşturursa **catch** deyimi.
 
-     Aşağıdaki çatı gösterildiği nasıl **deneyin** ve **catch** blokları normal şekilde düzenlenmiştir:
+   Aşağıdaki çatı gösterildiği nasıl **deneyin** ve **catch** blokları normal şekilde düzenlenmiştir:
 
-     [!code-cpp[NVC_MFCExceptions#4](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_2.cpp)]
+   [!code-cpp[NVC_MFCExceptions#4](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_2.cpp)]
 
-     Bir özel durum oluştuğunda denetim geçer ilk **catch** blok özel durum bildirimi eşleşen özel durumun türü. Farklı türde özel durum ile sıralı seçmeli olarak işleyebilir **catch** aşağıda listelenen engeller:
+   Bir özel durum oluştuğunda denetim geçer ilk **catch** blok özel durum bildirimi eşleşen özel durumun türü. Farklı türde özel durum ile sıralı seçmeli olarak işleyebilir **catch** aşağıda listelenen engeller:
 
-     [!code-cpp[NVC_MFCExceptions#5](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_3.cpp)]
+   [!code-cpp[NVC_MFCExceptions#5](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_3.cpp)]
 
 Daha fazla bilgi için [özel durumlar: MFC özel durum makrolarından dönüştürme](../mfc/exceptions-converting-from-mfc-exception-macros.md).
 

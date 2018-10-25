@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d37c8c9d319495c3247bf98d9ed3c8f58063ae56
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f2c692f9055e0c2ca3657a6bba0d854209f786b8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050560"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068755"
 ---
 # <a name="snap-in-object-macros"></a>Ek Bileşen Nesne makroları
 
@@ -41,7 +41,7 @@ Bu makrolar eklentisini uzantılar için destek sağlar.
 |[EXTENSION_SNAPIN_DATACLASS](#extension_snapin_dataclass)|Ek uzantı veri sınıfının veri üyesi oluşturur.|
 |[EXTENSION_SNAPIN_NODEINFO_ENTRY](#extension_snapin_nodeinfo_entry)|Ek uzantı veri sınıfı eklentisini nesne ek uzantı veri sınıfı eşlemeye girer.|
 |[SNAPINMENUID](#snapinmenuid)|Ek bileşenini nesne tarafından kullanılan bağlam menüsü Kimliğini bildirir.|
-|[SNAPINTOOLBARID_ENTRY](#snapintoolbarid_entry)|Araç çubuğu eklentisini nesne araç eşlemeye girer.|  
+|[SNAPINTOOLBARID_ENTRY](#snapintoolbarid_entry)|Araç çubuğu eklentisini nesne araç eşlemeye girer.|
 
 ## <a name="requirements"></a>Gereksinimler
 

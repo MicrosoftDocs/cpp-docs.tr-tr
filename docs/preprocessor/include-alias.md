@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26e59888a26b5f71b697e398e81b16012dd35e3a
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: c9844c610a1b5bffab8f5fba67daff90a52412e4
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42465066"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065180"
 ---
 # <a name="includealias"></a>include_alias
 
@@ -31,7 +31,7 @@ Belirten *short_filename* için bir diğer ad olarak kullanılacak *long_filenam
 
 ## <a name="syntax"></a>Sözdizimi
 
-> #<a name="pragma-includealiaslongfilename-shortfilename"></a>include_alias pragması ("*long_filename*","*short_filename*")  
+> #<a name="pragma-includealiaslongfilename-shortfilename"></a>include_alias pragması ("*long_filename*","*short_filename*")
 > #<a name="pragma-includealiaslongfilename-shortfilename"></a>include_alias pragması (*long_filename*, *short_filename*)
 
 ## <a name="remarks"></a>Açıklamalar
@@ -59,7 +59,7 @@ Aranan diğer ad belirtimle büyük/küçük harf kullanımı, yazım ve çift t
 ```
 
 üstbilgi dosya dizeleri tam olarak eşleşmediğinden hiçbir diğer ad (değiştirme) oluşturma işlemi gerçekleştirilmez. Ayrıca, bağımsız değişkenleri olarak kullanılan üstbilgi dosya `/Yu` ve `/Yc` derleyici seçenekleri veya `hdrstop` pragması değiştirilmez. Örneğin, kaynak dosyanız aşağıdaki yönergeyi içeriyorsa,
-  
+
 ```cpp
 #include <AppleSystemHeaderStop.h>
 ```
@@ -111,7 +111,7 @@ Ayrıca geçişliliğin desteklenmediğini unutmayın. Aşağıdaki yönergeler 
 #include "one.h"
 ```
 
-derleyici THREE.H yerine TWO.H dosyasını arar.  
+derleyici THREE.H yerine TWO.H dosyasını arar.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

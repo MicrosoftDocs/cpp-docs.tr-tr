@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee6c0b958fe27c04c116b4f82098f459c1f0f745
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c6fddd337cb9c0bcd78df1bfa563d1f447131078
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070593"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077341"
 ---
 # <a name="this-pointer"></a>this İşaretçisi
 
@@ -32,7 +32,7 @@ ms.locfileid: "46070593"
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-this 
+this 
 this->member-identifier
 ```
 
@@ -181,7 +181,7 @@ int main()
 
 Türünü **bu** üye işlevi aşağıdaki sözdizimi tarafından açıklanan burada *cv niteleyici listesi* olabilir ve üye işlevleri bildirimcisinden belirlendiği **const**veya **geçici** (veya her ikisi de) ve *sınıf türü* sınıf adıdır:
 
-*[cv niteleyici listesi] sınıf türü* **\* const bu**
+*[cv niteleyici listesi] sınıf türü* **&#42; const bu**
 
 Diğer bir deyişle, **bu** her zaman bir const işaretçisidir; olduğundan yeniden atanamaz.  **Const** veya **geçici** işaret ettiği sınıf örneği uygulanacağı üye işlevi bildiriminde kullanılan niteleyicileri **bu** bu işlevin kapsamında.
 

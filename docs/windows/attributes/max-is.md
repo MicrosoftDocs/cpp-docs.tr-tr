@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fd90cc386686d78ca7bcb862ab60e079e29832a7
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: a0dc76d9478a2639103196b33c0132c07be76860
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789962"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073987"
 ---
 # <a name="maxis"></a>max_is
 
@@ -68,4 +68,4 @@ Bkz: [first_is](first-is.md) örneği nasıl bir dizinin bir bölümünü belirt
 [first_is](first-is.md)<br/>
 [last_is](last-is.md)<br/>
 [length_is](length-is.md)<br/>
-[size_is](size-is.md)  
+[size_is](size-is.md)

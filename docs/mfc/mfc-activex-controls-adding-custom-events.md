@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c4acd417dacadbe2667f63c70435b97353bafe1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4d5db33dda6abc141c9247c74c16624bef5f0fc8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384422"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076041"
 ---
 # <a name="mfc-activex-controls-adding-custom-events"></a>MFC ActiveX Denetimleri: Özel Olaylar Ekleme
 
@@ -48,7 +48,7 @@ Aşağıdaki yordam, belirli özel olay, Clickın ekler. Özel diğer olay eklem
 
 1. Kısayol menüsünden tıklayın **Ekle** ve ardından **olay Ekle**.
 
-     Bu olay Ekleme Sihirbazı'nı açar.
+   Bu olay Ekleme Sihirbazı'nı açar.
 
 1. İçinde **olay adı** kutusuna, ilk var olan herhangi bir olay seçin ve ardından tıklayarak **özel** radyo düğmesini ve ardından yazın *Clickın*.
 
@@ -94,7 +94,7 @@ Olay Ekleme Sihirbazı'nı kullanarak Clickın özel olay ekledik, bu olay başl
 
 1. Özellikler penceresinde tıklayın **iletileri** düğmesi.
 
-     Özellikler penceresinde, bir ActiveX denetimi tarafından işlenebilen iletilerinin listesini görüntüler. Herhangi bir ileti kalın yazılarak gösterilmiştir zaten kendisine atanmış bir işleyici işlevi vardır.
+   Özellikler penceresinde, bir ActiveX denetimi tarafından işlenebilen iletilerinin listesini görüntüler. Herhangi bir ileti kalın yazılarak gösterilmiştir zaten kendisine atanmış bir işleyici işlevi vardır.
 
 1. Özellikler penceresinde, kullanmak istediğiniz iletiyi seçin. Bu örnekte, WM_LBUTTONDOWN seçin.
 
@@ -131,7 +131,7 @@ Aşağıdaki yordamda özel bir tıklama ekler olay.
 
 1. Kısayol menüsünden tıklayın **Ekle** ve ardından **olay Ekle**.
 
-     Bu olay Ekleme Sihirbazı'nı açar.
+   Bu olay Ekleme Sihirbazı'nı açar.
 
 1. İçinde **olay adı** aşağı açılan listesinde, bir stok olayı adını seçin. Bu örnekte, seçin **tıklayın**.
 

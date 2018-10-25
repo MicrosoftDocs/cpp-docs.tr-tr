@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae9a83ff8cc8e4909e23e7751e0c82da690a0c21
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 55a520a85b030338f420c5d6d6608d8609f44f2e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093824"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071095"
 ---
 # <a name="crbmultimap-class"></a>CRBMultiMap sınıfı
 
@@ -38,8 +38,8 @@ Bu sınıf, her anahtar Red-siyah bir ikili Ağacı'nı kullanarak birden fazla 
 
 ```
 template<typename K,
-         typename V, 
-         class KTraits = CElementTraits<K>, 
+         typename V,
+         class KTraits = CElementTraits<K>,
          class VTraits = CElementTraits<V>>
 class CRBMultiMap : public CRBTree<K, V, KTraits, VTraits>
 ```

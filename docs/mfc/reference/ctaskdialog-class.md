@@ -126,12 +126,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 856b704b25bed6d350d4e42cd08a138ad8fd8f8f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 83b56c82248397c3d355fb365ccb630760a4a741
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384578"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076054"
 ---
 # <a name="ctaskdialog-class"></a>CTaskDialog sınıfı
 
@@ -376,7 +376,6 @@ CTaskDialog(
     int nCommonButtons = TDCBF_OK_BUTTON | TDCBF_CANCEL_BUTTON,
     int nTaskDialogOptions = TDF_ENABLE_HYPERLINKS | TDF_USE_COMMAND_LINKS,
     const CString& strFooter = _T(""));
-
 
 CTaskDialog(
     const CString& strContent,

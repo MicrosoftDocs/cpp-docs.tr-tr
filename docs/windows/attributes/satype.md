@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 255517789a5854ee6f76c4982bb75825905df546
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 708495d68b8cac4c49980e6a92b08e5ca9f37ff4
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48790022"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070003"
 ---
 # <a name="satype"></a>satype
 
@@ -75,4 +75,4 @@ __interface A {
 [Derleyici Öznitelikleri](compiler-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>
-[id](id.md)  
+[id](id.md)
