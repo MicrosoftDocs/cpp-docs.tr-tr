@@ -1,7 +1,7 @@
 # [Linux Geliştirici İş Yükü İndirme, Yükleme ve Kurma](download-install-and-setup-the-linux-development-workload.md)
-# [Yeni Linux Projesi Oluşturma](create-a-new-linux-project.md)
 # [Linux Projesi Yapılandırma](configure-a-linux-project.md)
 # [Linux CMake Projesi Yapılandırma](cmake-linux-project.md)
+# [Yeni Linux Projesi Oluşturma](create-a-new-linux-project.md)
 # [Uzak Linux Bilgisayarınıza Bağlanma](connect-to-your-remote-linux-computer.md)
 # [Linux Projenizi Dağıtma, Çalıştırma ve Projenizin Hatalarını Ayıklama](deploy-run-and-debug-your-linux-project.md)
 # [Linux Projesi Özellik Sayfa Başvurusu](prop-pages-linux.md)

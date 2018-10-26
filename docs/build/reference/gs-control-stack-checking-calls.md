@@ -1,7 +1,7 @@
 ---
 title: -Gs (Denetim yığını denetim çağrıları) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/25/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -22,56 +22,58 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38b97354408d87d862955c0883c72d3e1459aa61
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 9f6b2d31552127807af6fa731574b04770b2a7fe
+ms.sourcegitcommit: 8c2de32e96c84d0147af3cce1e89e4f28707ff12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719283"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143679"
 ---
 # <a name="gs-control-stack-checking-calls"></a>/Gs (Denetim Yığını Denetim Çağrıları)
 
-Yığın araştırmalarını denetler.
+Yığın yoklamalarını eşiği denetler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-/Gs[size]
-```
+> **/GS**[*boyutu*]
 
 ## <a name="arguments"></a>Arguments
 
 *Boyutu*<br/>
-(İsteğe bağlı) Yerel değişkenler yığın araştırmaları önce kaplayabilir bayt sayısı başlatılır. Varsa **/Gs** seçeneği olmadan belirtilmiş bir `size` bağımsız değişkeni, belirtmekle aynı olacak **/Gs0**,
+(İsteğe bağlı) Yerel değişkenler yığın araştırmaları önce kaplayabilir bayt sayısı başlatılır. Arasında boşluk izin **/Gs** ve *boyutu*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir yığın araştırması, her işlev çağrısını derleyicinin eklediği kod bir dizidir. Başlatıldığında, bir yığın araştırma benignly işlevin yerel değişkenler depolamak için gereken alan miktarı tarafından belleğe ulaşır.
+A *yığın araştırma* bir işlev çağrısı başında derleyicinin eklediği kod oluşan bir dizidir. Başlatıldığında, bir yığın araştırma benignly işlevin yerel değişkenler depolamak için gereken alan miktarı tarafından belleğe ulaşır. Bu, işletim sisteminin şeffaf bir şekilde işlev kalan çalışmadan önce gerekirse ek yığın bellekte sayfa neden olur.
 
-Bir işlev gerektiriyorsa, birden fazla `size` bayt yığın alanı yerel değişkenler için kendi yığın araştırma başlatılır. Varsayılan olarak, derleyici bir işlev yığın alanı birden fazla sayfa gerektirdiğinde yığın araştırma başlatan kodu oluşturur. Bu derleyici seçeneğine eşdeğerdir **/Gs4096** x86 x64 ve ARM platformları için. Bu değer, bir uygulama ve Windows Bellek Yöneticisi için program yığınına çalışma zamanında dinamik olarak kaydedilen bellek miktarını artırmak sağlar.
+Varsayılan olarak, derleyici bir işlev yığın alanı birden fazla sayfa gerektirdiğinde yığın araştırma başlatan kodu oluşturur. Bu derleyici seçeneğine eşdeğerdir **/Gs4096** için x86, x 64, ARM ve ARM64 platformlar. Bu değer, bir uygulama ve Windows Bellek Yöneticisi için program yığınına çalışma zamanında dinamik olarak kaydedilen bellek miktarını artırmak sağlar.
 
 > [!NOTE]
->  Varsayılan değer olan **/Gs4096** program yığınına çalışma zamanında doğru bir şekilde ulaşması, Windows için uygulamalar sağlar. Tam olarak neden, bunu değiştirmeniz gerekir bilmiyorsanız varsayılan değer değiştirmemenizi öneririz.
+> Varsayılan değer olan **/Gs4096** program yığınına çalışma zamanında doğru bir şekilde ulaşması, Windows için uygulamalar sağlar. Tam olarak neden, bunu değiştirmeniz gerekir bilmiyorsanız varsayılan değer değiştirmemenizi öneririz.
 
-Bazı programlar — Örneğin, sanal cihaz sürücüleri — bu varsayılan yığın büyüme mekanizması gerektirmez. Bu gibi durumlarda, yığın yoklamalarını gerekli değildir ve derleyicinin bunları oluşturuluyor ayarlanarak durdurabilirsiniz `size` herhangi bir işlev için yerel değişken depolama gerektirecek boyutundan daha büyük bir değer. Arasında boşluk izin **/Gs** ve `size`.
+Bazı programlar — Örneğin, sanal cihaz sürücüleri — bu varsayılan yığın büyüme mekanizması gerektirmez. Bu gibi durumlarda, yığın yoklamalarını gerekli değildir ve derleyicinin bunları oluşturuluyor ayarlanarak durdurabilirsiniz *boyutu* herhangi bir işlev için yerel değişken depolama gerektirecek boyutundan daha büyük bir değer.
 
-**/ Gs0** yerel değişkenler için depolama gerektiren her işlev çağrısının yığın araştırmaları etkinleştirir. Bu, performansı üzerinde olumsuz bir etkiye sahip olabilir.
+**/ Gs0** yığın yoklamalarını yerel değişkenler için depolama gerektiren her işlev çağrısının başlatır. Bu, performansı üzerinde olumsuz bir etkiye sahip olabilir.
 
-Kullanarak, yığın yoklamalarını açıp kapatabilirsiniz [check_stack](../../preprocessor/check-stack.md). **/GS** ve `check_stack` pragma sahip standart C Kitaplığı yordamları etkilemez; bunlar yalnızca derleme işlevleri etkiler.
+X64 için hedefler **/Gs** seçeneği olmadan belirtilmiş bir *boyutu* bağımsız olduğu aynı **/Gs0**. Varsa *boyutu* bağımsız değişken 1-9, uyarı D9014 yayılan, ve etkisi belirtmekle aynı **/Gs0**.
+
+X86, ARM, için ve ARM64 hedefleri **/Gs** seçeneği olmadan bir *boyutu* bağımsız değişkeni ile aynı olduğu **/Gs4096**. Varsa *boyutu* bağımsız değişken 1-9, uyarı D9014 yayılan, ve etkisi belirtmekle aynı **/Gs4096**.
+
+Tüm hedefler için bir *boyutu* 2147485647 ile 10 arasındaki bağımsız değişkeni belirtilen değeri eşik ayarlar. A *boyutu* 2147485648 veya büyük neden önemli hata C1049.
+
+Kullanarak, yığın yoklamalarını açıp kapatabilirsiniz [check_stack](../../preprocessor/check-stack.md) yönergesi. **/GS** ve `check_stack` pragma sahip standart C Kitaplığı yordamları etkilemez; bunlar yalnızca derleme işlevleri etkiler.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
 1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Seçin **C/C++** klasör.
+1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
-1. Seçin **komut satırı** özellik sayfası.
-
-1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+1. Girin **/Gs** derleyici seçeneği ve isteğe bağlı bir boyut **ek seçenekler**. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
