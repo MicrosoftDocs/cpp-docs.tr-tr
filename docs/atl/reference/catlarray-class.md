@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c08387d5c1a2a9b9b757bab7a8112783a3810065
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4c16337949340b03bbaa517ca98ac9b65a5bb2bb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097802"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053936"
 ---
 # <a name="catlarray-class"></a>CAtlArray sınıfı
 
@@ -72,7 +72,7 @@ Kopyalama veya öğeleri taşıma için kullanılan kod.
 |[AssertValid](#assertvalid)|Dizi nesnesi geçerli olduğundan emin olmak için bu yöntemi çağırın.|
 |[CAtlArray](#catlarray)|Oluşturucu.|
 |[~ CAtlArray](#dtor)|Yıkıcı.|
-|[kopyalama](#copy)|Bir dizinin öğeleri diğerine kopyalamak için bu yöntemi çağırın.|
+|[Kopyala](#copy)|Bir dizinin öğeleri diğerine kopyalamak için bu yöntemi çağırın.|
 |[FreeExtra](#freeextra)|Herhangi bir boş öğe diziden kaldırmak için bu yöntemi çağırın.|
 |[GetAt](#getat)|Tek bir öğe dizisi nesneyi almak için bu yöntemi çağırın.|
 |[GetCount](#getcount)|Dizide depolanan öğelerin sayısını döndürmek için bu yöntemi çağırın.|
@@ -90,7 +90,7 @@ Kopyalama veya öğeleri taşıma için kullanılan kod.
 
 |||
 |-|-|
-|[işleci&#91;&#93;](#operator_at)|Dizide bir öğeye başvuru döndürmek için bu işleci çağırın.|  
+|[işleci&#91;&#93;](#operator_at)|Dizide bir öğeye başvuru döndürmek için bu işleci çağırın.|
 
 ### <a name="typedefs"></a>Tür tanımları
 

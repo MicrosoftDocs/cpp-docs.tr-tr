@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92761508a5e93c7ef0d0a4099dde587987a50dad
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: b4490eef3427f66456ec79ae2f5429d309a82a54
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49809167"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057407"
 ---
 # <a name="coledatetime-class"></a>COleDateTime sınıfı
 
@@ -97,7 +97,7 @@ class COleDateTime
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleDateTime::operator ==, COleDateTime::operator < vb..](#coledatetime_relational_operators)|Karşılaştırabilirsiniz `COleDateTime` değerleri.|
+|[COleDateTime::operator ==, COleDateTime::operator < vb.](#coledatetime_relational_operators)|Karşılaştırabilirsiniz `COleDateTime` değerleri.|
 |[COleDateTime::operator +, COleDateTime::operator-](#operator_add_-)|Ekleme ve çıkarmayı `COleDateTime` değerleri.|
 |[COleDateTime::operator +=, COleDateTime::operator-=](#operator_add_eq_-_eq)|Ekleme ve çıkarmayı bir `COleDateTime` bu değerden `COleDateTime` nesne.|
 |[COleDateTime::operator =](#operator_eq)|Kopya bir `COleDateTime` değeri.|
@@ -228,10 +228,10 @@ A `SYSTEMTIME` yapısı bir tarih/saat değerine dönüştürülür ve yeni kopy
 *filetimeSrc*<br/>
 A `FILETIME` yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `COleDateTime` nesne. Unutmayın `FILETIME` Eşgüdümlü Evrensel Saat (UTC) kullanan yerel saati yapısında geçirirseniz, sonuçlarınızı yanlış olur. Bkz: [dosya zamanlarını](/windows/desktop/SysInfo/file-times) daha fazla bilgi için Windows SDK.
 
-*nYear*, *nMonth*, *nhatalı günü*, *nHour*, *nMin*, *nSec*  
+*nYear*, *nMonth*, *nhatalı günü*, *nHour*, *nMin*, *nSec*<br/>
 Yeni içine kopyalanacak tarih ve saat değerleri gösterir `COleDateTime` nesne.
 
-*wDosDate*, *wDosTime*  
+*wDosDate*, *wDosTime*<br/>
 Bir tarih/saat değerine dönüştürülür ve yeni kopyalanan için tarih ve saat değerlerini MS-DOS `COleDateTime` nesne.
 
 *dbts*<br/>
@@ -333,13 +333,13 @@ Varsa bu durum `COleDateTime` nesnesi null ise, dönüş değeri boş bir dizedi
 
 Bu işlev için üç formları kısa bir açıklaması aşağıdaki gibidir:
 
-`Format`( *CertOpenStore*, *LCID*)  
+`Format`( *CertOpenStore*, *LCID*)<br/>
 Bu form değeri (yerel ayar kimlikleri) dil özellikleri kullanarak tarih ve saat için biçimlendirir. Varsayılan parametreleri kullanarak, bu formu tarih ve saat saat kısmının 0 (gece yarısı), durumda yalnızca tarihi yazdırır veya tarih bölümü 0 (30 Aralık 1899), bu durumda tam zamanında yazdırılacağı içinde yazdırır. Tarih/saat değeri 0 (30 Aralık 1899, gece yarısıdır) ise, bu formu varsayılan parametreleri olan gece yarısı yazdırır.
 
-`Format`( *lpszFormat*)  
+`Format`( *lpszFormat*)<br/>
 Bu form değeri (%) yüzde işareti tarafından öncelenen özel biçimlendirme kodları içeren bir biçim dizesi kullanarak olarak biçimlendirir `printf`. Biçimlendirme dizesi, parametre olarak işleve geçirilir. Biçimlendirme kodları hakkında daha fazla bilgi için bkz. [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) çalışma zamanı kitaplığı başvurusu.
 
-`Format`( *nFormatID*)  
+`Format`( *nFormatID*)<br/>
 Bu form değeri (%) yüzde işareti tarafından öncelenen özel biçimlendirme kodları içeren bir biçim dizesi kullanarak olarak biçimlendirir `printf`. Biçimlendirme dizesi bir kaynaktır. Bu dize kaynak kimliği, parametre olarak geçirilir. Biçimlendirme kodları hakkında daha fazla bilgi için bkz. [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) içinde *çalışma zamanı kitaplığı başvurusu*.
 
 ### <a name="example"></a>Örnek
@@ -701,13 +701,13 @@ Bu durumunu döndüren `COleDateTime` değeri. Eğer `GetStatus` üzerinde bir `
 Dönüş değeri tarafından tanımlanan `DateTimeStatus` listelenmiş içinde tanımlanan bir türü `COleDateTime` sınıfı.
 
 ```
-enum DateTimeStatus  
-{  
-   error = -1,  
-   valid = 0,  
-   invalid = 1,    // Invalid date (out of range, etc.)  
-   null = 2,       // Literally has no value  
-};  
+enum DateTimeStatus
+{
+   error = -1,
+   valid = 0,
+   invalid = 1,    // Invalid date (out of range, etc.)
+   null = 2,       // Literally has no value
+};
 ```
 
 Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:
@@ -930,10 +930,10 @@ Bu işleç döndürür bir `DATE` nesne değeri bu kopyalanır `COleDateTime` ne
 Bir tarih/saat değerini okumak için bir dizeyi ayrıştırır.
 
 ```
-bool ParseDateTime(  
-LPCTSTR lpszDate,
-DWORD dwFlags = 0,
-LCID lcid = LANG_USER_DEFAULT) throw();
+bool ParseDateTime(
+    LPCTSTR lpszDate,
+    DWORD dwFlags = 0,
+    LCID lcid = LANG_USER_DEFAULT) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -991,15 +991,15 @@ Logrequest olayını ve sınırları hakkında daha fazla bilgi için `COleDateT
 Bu tarihin ayarlar `COleDateTime` nesne.
 
 ```
-int SetDate(  
-int nYear,
-int nMonth,
-int nDay) throw();
+int SetDate(
+    int nYear,
+    int nMonth,
+    int nDay) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*nYear*, *nMonth*, *nhatalı günü*  
+*nYear*, *nMonth*, *nhatalı günü*<br/>
 Bu kopyalanacak tarih bileşenleri gösteren `COleDateTime` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1062,18 +1062,18 @@ Sınırları hakkında daha fazla bilgi için `COleDateTime` değerleri başlık
 Tarih ve saat bu ayarlar `COleDateTime` nesne.
 
 ```
-int SetDateTime(  
-int nYear,
-int nMonth,
-int nDay,
-int nHour,
-int nMin,
-int nSec) throw();
+int SetDateTime(
+    int nYear,
+    int nMonth,
+    int nDay,
+    int nHour,
+    int nMin,
+    int nSec) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*nYear*, *nMonth*, *nhatalı günü*, *nHour*, *nMin*, *nSec*  
+*nYear*, *nMonth*, *nhatalı günü*, *nHour*, *nMin*, *nSec*<br/>
 Bu kopyalanacak tarih ve saat bileşenlerini belirtmek `COleDateTime` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1170,15 +1170,15 @@ Bu yeni durum değeri `COleDateTime` nesne.
 Bu süreyi ayarlar `COleDateTime` nesne.
 
 ```
-int SetTime(  
-int nHour,
-int nMin,
-int nSec) throw();
+int SetTime(
+    int nHour,
+    int nMin,
+    int nSec) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*nHour*, *nMin*, *nSec*  
+*nHour*, *nMin*, *nSec*<br/>
 Bu kopyalanacak zaman bileşenleri gösteren `COleDateTime` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri

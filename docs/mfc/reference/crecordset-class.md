@@ -140,12 +140,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6e1fb04de4097a2cdf1dd51dc12265bef8d6c0b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c86efacf7211415bfdc2936a736d78e29dc419bf
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423136"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076405"
 ---
 # <a name="crecordset-class"></a>CRecordset sınıfı
 
@@ -229,9 +229,9 @@ class CRecordset : public CObject
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CRecordset::m_hstmt](#m_hstmt)|Kayıt kümesi için ODBC deyim tanıtıcı içerir. Tür `HSTMT`.|
-|[CRecordset::m_nFields](#m_nfields)|Alan veri üyeleri kümesinde sayısını içerir. Tür `UINT`.|
-|[CRecordset::m_nParams](#m_nparams)|Kayıt kümesi parametre veri üyeleri sayısını içerir. Tür `UINT`.|
+|[CRecordset::m_hstmt](#m_hstmt)|Kayıt kümesi için ODBC deyim tanıtıcı içerir. Türü `HSTMT`|
+|[CRecordset::m_nFields](#m_nfields)|Alan veri üyeleri kümesinde sayısını içerir. Türü `UINT`|
+|[CRecordset::m_nParams](#m_nparams)|Kayıt kümesi parametre veri üyeleri sayısını içerir. Türü `UINT`|
 |[CRecordset::m_pDatabase](#m_pdatabase)|Bir işaretçi içeren `CDatabase` üzerinden kayıt bir veri kaynağına bağlıysa nesne.|
 |[CRecordset::m_strFilter](#m_strfilter)|İçeren bir `CString` yapılandırılmış sorgu dili (SQL) belirten `WHERE` yan tümcesi. Belirli ölçütleri karşılayan kayıtları seçmek için filtre olarak kullanılır.|
 |[CRecordset::m_strSort](#m_strsort)|İçeren bir `CString` SQL belirten `ORDER BY` yan tümcesi. Kayıtları nasıl sıralanacağını denetlemek için kullanılır.|
@@ -727,17 +727,14 @@ void GetFieldValue(
     CDBVariant& varValue,
     short nFieldType = DEFAULT_FIELD_TYPE);
 
-
 void GetFieldValue(
     short nIndex,
     CDBVariant& varValue,
     short nFieldType = DEFAULT_FIELD_TYPE);
 
-
 void GetFieldValue(
     short nIndex,
     CStringA& strValue);
-
 
 void GetFieldValue(
     short nIndex,
@@ -822,7 +819,6 @@ Kayıt kümesi alanları hakkında bilgi edinir.
 void GetODBCFieldInfo(
     LPCTSTR lpszName,
     CODBCFieldInfo& fieldinfo);
-
 
 void GetODBCFieldInfo(
     short nIndex,
@@ -1538,7 +1534,7 @@ Varsayılan değer, AFX_DB_USE_DEFAULT_TYPE ya da aşağıdakilerden birini değ
 
 - `CRecordset::forwardOnly` Sadece ileri kaydırma ile salt okunur kayıt.
 
-     İçin `CRecordset`, varsayılan değer `CRecordset::snapshot`. Varsayılan değer mekanizması sağlar hem ODBC ile etkileşim kurmak Visual C++ sihirbazları `CRecordset` ve DAO `CDaoRecordset`, varsayılan değerleri farklı olan.
+   İçin `CRecordset`, varsayılan değer `CRecordset::snapshot`. Varsayılan değer mekanizması sağlar hem ODBC ile etkileşim kurmak Visual C++ sihirbazları `CRecordset` ve DAO `CDaoRecordset`, varsayılan değerleri farklı olan.
 
 Bu kayıt türleri hakkında daha fazla bilgi için bkz [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md). Makaleyi "Kullanarak blok ve kaydırılabilir imleçler" Windows SDK'sı ilgili bilgi için bkz.
 
@@ -1613,7 +1609,7 @@ Kayıt kümesi çağırmadan önce nasıl oluşturmak bu kümesinin bağlantı v
 
 NULL olarak geçirmek için normal yordamdır `Open`; bu durumda, `Open` çağrıları [GetDefaultSQL](#getdefaultsql). Türetilmiş kullanıyorsanız `CRecordset` sınıfı `GetDefaultSQL` ClassWizard içinde belirttiğiniz tablo adlarını sağlar. Bunun yerine diğer bilgileri belirtebilirsiniz `lpszSQL` parametresi.
 
-İnovasyonunuz ne olursa olsun, geçirdiğiniz, `Open` sorgu için son SQL dizesi oluşturur (SQL dizesi olabilir **burada** ve **ORDER BY** yan tümceleri eklenmiş için `lpszSQL` , geçirilen dize) ve ardından yürütür Sorgu. Çağırarak oluşturulmuş dize inceleyebilirsiniz [GetSQL](#getsql) arama sonra *`Open`. Kayıt kümesi bir SQL deyimi oluşturur ve kayıt seçer hakkında ek ayrıntılar için bkz. makaleyi [kayıt kümesi: nasıl kayıt kümeleri seçin kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md).
+İnovasyonunuz ne olursa olsun, geçirdiğiniz, `Open` sorgu için son SQL dizesi oluşturur (SQL dizesi olabilir **burada** ve **ORDER BY** yan tümceleri eklenmiş için `lpszSQL` , geçirilen dize) ve ardından yürütür Sorgu. Çağırarak oluşturulmuş dize inceleyebilirsiniz [GetSQL](#getsql) arama sonra `Open`. Kayıt kümesi bir SQL deyimi oluşturur ve kayıt seçer hakkında ek ayrıntılar için bkz. makaleyi [kayıt kümesi: nasıl kayıt kümeleri seçin kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md).
 
 Kayıt kümesi sınıfınızın alan veri üyeleri, seçili veri sütunlarının bağlıdır. Hiçbir kayıt döndürülmezse, ilk kayıt geçerli kayıt haline gelir.
 

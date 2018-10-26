@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc1912ad915127657df3a3d80e2de8acce77d916
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 18439e33eed4181ebf3f2619226b132721babcc7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402427"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073580"
 ---
 # <a name="chttpconnection-class"></a>CHttpConnection sınıfı
 
@@ -84,7 +84,6 @@ CHttpConnection(
     LPCTSTR pstrServer,
     DWORD_PTR dwContext);
 
-
 CHttpConnection(
     CInternetSession* pSession,
     LPCTSTR pstrServer,
@@ -92,7 +91,6 @@ CHttpConnection(
     LPCTSTR pstrUserName = NULL,
     LPCTSTR pstrPassword = NULL,
     DWORD_PTR dwContext = 1);
-
 
 CHttpConnection(
     CInternetSession* pSession,
@@ -154,7 +152,6 @@ CHttpFile* OpenRequest(
     LPCTSTR* ppstrAcceptTypes = NULL,
     LPCTSTR pstrVersion = NULL,
     DWORD dwFlags = INTERNET_FLAG_EXISTING_CONNECT);
-
 
 CHttpFile* OpenRequest(
     int nVerb,

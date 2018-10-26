@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9391d99f75bdb5ac2191a65e525ce989aefcd6b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6c4e2f27a6f123d870e56750180a5b7d4ee624fc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421290"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066415"
 ---
 # <a name="walkthrough-creating-a-custom-message-block"></a>İzlenecek Yol: Özel bir İleti Bloğu Oluşturma
 
@@ -92,19 +92,19 @@ Aşağıdaki yordam nasıl uygulanacağını açıklar `priority_buffer` sınıf
 
 [!code-cpp[concrt-priority-buffer#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_3.h)]
 
-     The `priority_buffer` class stores `message` objects in a `priority_queue` object. These type specializations enable the priority queue to sort messages according to their priority. The priority is the first element of the `tuple` object.
+   `priority_buffer` Sınıfı depoları `message` nesneler bir `priority_queue` nesne. Bu tür uzmanlıklar, iletileri önceliklerine göre sıralamak öncelik sırası etkinleştirir. Öncelik ilk öğesidir `tuple` nesne.
 
 1. İçinde `concurrencyex` ad alanı bildirimini `priority_buffer` sınıfı.
 
 [!code-cpp[concrt-priority-buffer#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_4.h)]
 
-     The `priority_buffer` class derives from `propagator_block`. Therefore, it can both send and receive messages. The `priority_buffer` class can have multiple targets that receive messages of type `Type`. It can also have multiple sources that send messages of type `tuple<PriorityType, Type>`.
+   `priority_buffer` Sınıf türetilir `propagator_block`. Bu nedenle, hem gönderdikleri hem de ileti alma. `priority_buffer` Sınıf türü iletiler alan birden çok hedefe sahip `Type`. Türden iletileri gönderen birden çok kaynağı olabilir `tuple<PriorityType, Type>`.
 
 1. İçinde `private` bölümünü `priority_buffer` sınıfında, aşağıdaki üye değişkenlerini ekleyin.
 
 [!code-cpp[concrt-priority-buffer#6](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_5.h)]
 
-     The `priority_queue` object holds incoming messages; the `queue` object holds outgoing messages. A `priority_buffer` object can receive multiple messages simultaneously; the `critical_section` object synchronizes access to the queue of input messages.
+   `priority_queue` Nesnesi gelen iletileri tutar; `queue` nesnesi giden iletileri tutar. A `priority_buffer` nesne birden çok ileti alabilir aynı anda; `critical_section` nesnesi giriş ileti kuyruğuna erişimi eşitler.
 
 1. İçinde `private` bölümünde, kopya oluşturucu ve atama işlecini tanımlayın. Bu engeller `priority_queue` nesnelerinin atanabilir olmasını.
 
@@ -122,65 +122,65 @@ Aşağıdaki yordam nasıl uygulanacağını açıklar `priority_buffer` sınıf
 
 [!code-cpp[concrt-priority-buffer#9](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_9.h)]
 
-     The `propagate_to_any_targets` method transfers the message that is at the front of the input queue to the output queue and propagates out all messages in the output queue.
+   `propagate_to_any_targets` Yöntemi çıkış kuyruğundaki tüm iletileri yayar ve çıkış kuyruğuna giriş kuyruğunun önünde olan iletiyi aktarır.
 
 10. İçinde `protected` bölümünde, tanımlama `accept_message` yöntemi.
 
 [!code-cpp[concrt-priority-buffer#8](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_10.h)]
 
-     When a target block calls the `accept_message` method, the `priority_buffer` class transfers ownership of the message to the first target block that accepts it. (This resembles the behavior of `unbounded_buffer`.)
+   Bir hedef blok çağırdığında `accept_message` yöntemi `priority_buffer` sınıfı, iletinin sahipliğini, onu kabul eden ilk hedef bloğa aktarır. (Bu davranışına benzer `unbounded_buffer`.)
 
 11. İçinde `protected` bölümünde, tanımlama `reserve_message` yöntemi.
 
 [!code-cpp[concrt-priority-buffer#10](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_11.h)]
 
-     The `priority_buffer` class permits a target block to reserve a message when the provided message identifier matches the identifier of the message that is at the front of the queue. In other words, a target can reserve the message if the `priority_buffer` object has not yet received an additional message and has not yet  propagated out the current one.
+   `priority_buffer` Sınıfı, ileti tanımlayıcısının kuyruğun önündeki iletinin tanımlayıcısı eşleştiğinde bir ileti ayırmak için bir hedef blok izin verir. Diğer bir deyişle, bir hedef iletiyi ayırabilir `priority_buffer` nesnesi henüz ek bir iletiyi almadıysa ve henüz geçerli birini yaymadıysa.
 
 12. İçinde `protected` bölümünde, tanımlama `consume_message` yöntemi.
 
 [!code-cpp[concrt-priority-buffer#11](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_12.h)]
 
-     A target block calls `consume_message` to transfer ownership of the message that it reserved.
+   Bir hedef blok çağırır `consume_message` ayrılmış olan iletinin sahipliğini aktarmak için.
 
 13. İçinde `protected` bölümünde, tanımlama `release_message` yöntemi.
 
 [!code-cpp[concrt-priority-buffer#12](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_13.h)]
 
-     A target block calls `release_message` to cancel its reservation to a message.
+   Bir hedef blok çağırır `release_message` ileti rezervasyonu iptal etmek için.
 
 14. İçinde `protected` bölümünde, tanımlama `resume_propagation` yöntemi.
 
 [!code-cpp[concrt-priority-buffer#13](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_14.h)]
 
-     The runtime calls `resume_propagation` after a target block either consumes or releases a reserved message. This method propagates out any messages that are in the output queue.
+   Çalışma zamanı çağrıları `resume_propagation` sonra bir hedef blok kullandıktan veya ayrılmış bir ileti yayımlar. Bu yöntem, çıktı sırasındaki herhangi bir iletiyi yayar.
 
 15. İçinde `protected` bölümünde, tanımlama `link_target_notification` yöntemi.
 
 [!code-cpp[concrt-priority-buffer#14](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_15.h)]
 
-     The `_M_pReservedFor` member variable is defined by the base class, `source_block`. This member variable points to the target block, if any, that is holding a reservation to the message that is at the front of the output queue. The runtime calls `link_target_notification` when a new target is linked to the `priority_buffer` object. This method propagates out any messages that are in the output queue if no target is holding a reservation.
+   `_M_pReservedFor` Üye değişkeni taban sınıfı tarafından tanımlanan `source_block`. Bu üye değişkeni, varsa çıkış sırası önündeki iletiye bir ayırmaya bulunduran hedef bloğuna işaret eder. Çalışma zamanı çağrıları `link_target_notification` ne zaman yeni bir hedef bağlantılı `priority_buffer` nesne. Bu yöntem, hiçbir hedef bir rezervasyon tutmuyorsa, çıktı sırasındaki herhangi bir iletiyi yayar.
 
 16. İçinde `private` bölümünde, tanımlama `propagate_priority_order` yöntemi.
 
 [!code-cpp[concrt-priority-buffer#15](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_16.h)]
 
-     This method propagates out all messages from the output queue. Every message in the queue is offered to every target block until one of the target blocks accepts the message. The `priority_buffer` class preserves the order of the outgoing messages. Therefore, the first message in the output queue must be accepted by a target block before this method offers any other message to the target blocks.
+   Bu yöntem, çıktı sırasındaki tüm iletileri yayar. Hedef bloklardan biri iletiyi kabul edene kadar sıradaki her ileti her hedef bloğa sunulur. `priority_buffer` Sınıfı giden iletilerin sırasını korur. Bu nedenle, bu yöntem hedef bloklarına başka bir ileti sunmadan önce çıkış sırasındaki ilk iletinin bir hedef bloğu tarafından kabul gerekir.
 
 17. İçinde `protected` bölümünde, tanımlama `propagate_message` yöntemi.
 
 [!code-cpp[concrt-priority-buffer#16](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_17.h)]
 
-     The `propagate_message` method enables the `priority_buffer` class to act as a message receiver, or target. This method receives the message that is offered by the provided source block and inserts that message into the priority queue. The `propagate_message` method then asynchronously sends all output messages to the target blocks.
+   `propagate_message` Yöntemi etkinleştirir `priority_buffer` ileti alıcısı görev yapacak sınıfı veya hedefleyin. Bu yöntem, bu iletiyi öncelik sırasına ekler ve sağlanan kaynak blokla sunulan iletiyi alır. `propagate_message` Yöntemi ardından zaman uyumsuz olarak gönderir tüm çıktı iletilerini hedef engellerine.
 
-     The runtime calls this method when you call the [concurrency::asend](reference/concurrency-namespace-functions.md#asend) function or when the message block is connected to other message blocks.
+   Çağırdığınızda çalışma zamanı bu yöntemi çağırır [concurrency::asend](reference/concurrency-namespace-functions.md#asend) işlevi veya ileti bloğu diğer ileti bloklarına bağlandığında.
 
 18. İçinde `protected` bölümünde, tanımlama `send_message` yöntemi.
 
 [!code-cpp[concrt-priority-buffer#17](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_18.h)]
 
-     The `send_message` method resembles `propagate_message`. However it sends the output messages synchronously instead of asynchronously.
+   `send_message` Yöntemi benzer `propagate_message`. Ancak zaman uyumlu olarak yerine zaman uyumsuz olarak çıktı iletilerini gönderir.
 
-     The runtime calls this method during a synchronous send operation, such as when you call the [concurrency::send](reference/concurrency-namespace-functions.md#send) function.
+   Çalışma zamanı bu yöntemi çağırdığınızda gibi bir eş zamanlı gönderme işlemi sırasında çağırır. [concurrency::send](reference/concurrency-namespace-functions.md#send) işlevi.
 
 `priority_buffer` Sınıfı, çok sayıda ileti engelleme türü için tipik olan oluşturucu aşırı yüklemeleri içerir. Bazı yapıcı yeniden yüklemeleri [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) veya [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) ileti bloğunun belirli bir Görev Zamanlayıcı tarafından yönetilecek nesneleri. Diğer Oluşturucu tekrar yüklemeleri bir filtre işlevi alır. Filtre işlevleri ileti bloklarının kabul etme veya reddetme yük boyutuna göre bir ileti etkinleştirin. İleti filtreleri hakkında daha fazla bilgi için bkz: [zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md). Görev planlayıcılar hakkında daha fazla bilgi için bkz. [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
 
