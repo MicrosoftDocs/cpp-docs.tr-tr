@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 97a546c5e6502018e4ee59f26a976994f0c74b7f
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 49e6851bba775a2ccbdae8560effd50063a5afa7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789859"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077230"
 ---
 # <a name="vararg"></a>vararg
 
@@ -72,4 +72,4 @@ __interface X : public IUnknown
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Yöntem Öznitelikleri](method-attributes.md)  
+[Yöntem Öznitelikleri](method-attributes.md)

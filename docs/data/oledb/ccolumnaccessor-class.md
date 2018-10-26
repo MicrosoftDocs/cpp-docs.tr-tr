@@ -19,50 +19,50 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b1843b6279cb7c86762cc6d975a2a7e67d3d278d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1e55d4c15ca5d5a3733c44cf89b788b85c905513
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055643"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074676"
 ---
 # <a name="ccolumnaccessor-class"></a>CColumnAccessor Sınıfı
 
-Eklenen tüketici kod oluşturur.  
-  
+Eklenen tüketici kod oluşturur.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-class CColumnAccessor : public CAccessorBase  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
+class CColumnAccessor : public CAccessorBase
+```
 
-Eklenen kodun her sütun ayrı bir erişimci bağlıdır. Bu sınıf eklenen kodun kullanıldığını bilmeniz gerekir (örneğin, bu hata ayıklama sırasında karşılaşabileceğiniz), ancak genellikle hiçbir zaman doğrudan veya yöntemlerini kullanın.  
-  
-`CColumnAccessor` işlev diğer erişimcisi sınıf yöntemleri karşılık her biri aşağıdaki saptama yöntemleri uygular:  
-  
-- `CColumnAccessor` Oluşturucusu oluşturur ve başlatır `CColumnAccessor` nesne.  
-  
-- `CreateAccessor` Bağlama yapıları sütun için bellek ayırır ve sütun veri üyelerine başlatır.  
-  
-- `BindColumns` Sütunları için erişimciler bağlar.  
-  
-- `SetParameterBuffer` Arabellekler için parametreleri ayırır.  
-  
-- `AddParameter` Bir parametre girişi parametre girişi yapılara ekler.  
-  
-- `HasOutputColumns` Erişimci sütunları çıktısı olup olmadığını belirler  
-  
-- `HasParameters` Erişimcisi parametrelere sahip olup olmadığını belirler.  
-  
-- `BindParameters` Oluşturulan parametre sütunları bağlar.  
-  
-## <a name="requirements"></a>Gereksinimler  
+## <a name="remarks"></a>Açıklamalar
 
-**Başlık:** atldbcli.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Eklenen kodun her sütun ayrı bir erişimci bağlıdır. Bu sınıf eklenen kodun kullanıldığını bilmeniz gerekir (örneğin, bu hata ayıklama sırasında karşılaşabileceğiniz), ancak genellikle hiçbir zaman doğrudan veya yöntemlerini kullanın.
+
+`CColumnAccessor` işlev diğer erişimcisi sınıf yöntemleri karşılık her biri aşağıdaki saptama yöntemleri uygular:
+
+- `CColumnAccessor` Oluşturucusu oluşturur ve başlatır `CColumnAccessor` nesne.
+
+- `CreateAccessor` Bağlama yapıları sütun için bellek ayırır ve sütun veri üyelerine başlatır.
+
+- `BindColumns` Sütunları için erişimciler bağlar.
+
+- `SetParameterBuffer` Arabellekler için parametreleri ayırır.
+
+- `AddParameter` Bir parametre girişi parametre girişi yapılara ekler.
+
+- `HasOutputColumns` Erişimci sütunları çıktısı olup olmadığını belirler
+
+- `HasParameters` Erişimcisi parametrelere sahip olup olmadığını belirler.
+
+- `BindParameters` Oluşturulan parametre sütunları bağlar.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atldbcli.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

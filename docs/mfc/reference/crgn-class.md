@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f90524b63a7d89d43cb6ed080804ed72fe2429e3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7f6ed7b94509c5dafd868680254c5f48f0066b7f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412686"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054234"
 ---
 # <a name="crgn-class"></a>CRgn sınıfı
 
@@ -852,6 +852,4 @@ Bu işlevi yerine kullanın `CreateRectRgn` yerel bellek yöneticisi çağrılar
 
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-
-
 

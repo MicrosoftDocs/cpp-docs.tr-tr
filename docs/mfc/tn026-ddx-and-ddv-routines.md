@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3930f08ae0708b81dde218a88fcda4dc34931390
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f07ab7b4420a5c33be56a9278b60afb6424e9e83
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389745"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063555"
 ---
 # <a name="tn026-ddx-and-ddv-routines"></a>TN026: DDX ve DDV Rutinleri
 
@@ -224,21 +224,21 @@ Her alanın bir ';' karakteriyle ayrılır. Alanlar ve bunların amacı, aşağ�
 
    - *promptN*
 
-     Düzenleme öğesi (ile & Hızlandırıcı için) yukarıda yerleştirmek için dize.
+      Düzenleme öğesi (ile & Hızlandırıcı için) yukarıda yerleştirmek için dize.
 
    - *fmtN*
 
-     Biçim karakteri biri bağımsız değişken türü için:
+      Biçim karakteri biri bağımsız değişken türü için:
 
-     |Karakter|Tür|
-     |-|-|
-     d | int
-     u | unsigned int
-     D | long int (diğer bir deyişle, uzun)
-     U | işaretsiz uzun (DWORD)
-     F | float
-     F | çift
-     s | dize
+      |Karakter|Tür|
+      |-|-|
+      |d | int|
+      |u | unsigned int|
+      |D | long int (diğer bir deyişle, uzun)|
+      |U | işaretsiz uzun (DWORD)|
+      |F | float|
+      |F | çift|
+      |s | dize|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

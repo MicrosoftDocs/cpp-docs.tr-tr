@@ -13,18 +13,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d79888a58e5fc6d6911c4cc123877c1537f22cf1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c2d0cc85272eae4a5231872232dc259a9120a6bd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441934"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059876"
 ---
 # <a name="key-wrl-apis-by-category"></a>Kategoriye Göre Başlıca WRL API'leri
+
 Aşağıdaki tablolar, birincil Windows çalışma zamanı C++ Şablon kitaplığı sınıflar, yapılar, işlevlerini ve makrolarını listeler. Yardımcısı ad alanları ve sınıflar, yapılar göz ardı edilir. Bu listeler, API belgeleri, ad alanı tarafından düzenlenmiş artırabilir.
-  
-### <a name="classes"></a>Sınıflar
-  
+
+## <a name="classes"></a>Sınıflar
+
 |Başlık|Açıklama|
 |-----------|-----------------|
 |[ActivationFactory Sınıfı](../windows/activationfactory-class.md)|Windows çalışma zamanı tarafından etkinleştirilmesi bir veya daha fazla sınıflar sağlar.|
@@ -46,18 +47,18 @@ Aşağıdaki tablolar, birincil Windows çalışma zamanı C++ Şablon kitaplı�
 |[SimpleActivationFactory Sınıfı](../windows/simpleactivationfactory-class.md)|Bir Windows çalışma zamanı veya klasik COM temel sınıfı oluşturmak için temel bir mekanizma sağlar.|
 |[SimpleClassFactory Sınıfı](../windows/simpleclassfactory-class.md)|Bir temel sınıf oluşturmak için temel bir mekanizma sağlar.|
 |[WeakRef Sınıfı](../windows/weakref-class.md)|Temsil eden bir *zayıf başvuru* yalnızca Windows çalışma zamanı tarafından değil klasik COM kullanılabilir Zayıf bir başvuru erişilebilir olmayabilir veya bir nesneyi temsil eder.|
-  
-### <a name="structures"></a>Yapılar
-  
+
+## <a name="structures"></a>Yapılar
+
 |Başlık|Açıklama|
 |-----------|-----------------|
 |[ChainInterfaces Yapısı](../windows/chaininterfaces-structure.md)|Arabirim kimlikleri kümesine uygulanabilir doğrulama ve başlatma işlevleri belirtir.|
 |[CloakedIid Yapısı](../windows/cloakediid-structure.md)|Gösterir `RuntimeClass`, `Implements` ve `ChainInterfaces` şablonları belirtilen arabirim IID'si listesinde erişilebilir değil.|
 |[Implements Yapısı](../windows/implements-structure.md)|Implements `QueryInterface` ve `GetIid` belirtilen arabirimleri için.|
 |[MixIn Yapısı](../windows/mixin-structure.md)|Bir çalışma zamanı sınıf varsa Windows çalışma zamanı arabirimleri ve ardından klasik COM arabirimleri türetilen sağlar.|
-  
-### <a name="functions"></a>İşlevler
-  
+
+## <a name="functions"></a>İşlevler
+
 |Başlık|Açıklama|
 |-----------|-----------------|
 |[ActivateInstance İşlevi](../windows/activateinstance-function.md)|Kaydeder ve belirtilen sınıf kimliğinde tanımlanan belirli bir türün bir örneğini alır.|
@@ -67,14 +68,14 @@ Aşağıdaki tablolar, birincil Windows çalışma zamanı C++ Şablon kitaplı�
 |[CreateClassFactory İşlevi](../windows/createclassfactory-function.md)|Belirtilen sınıfın örneklerini oluşturan bir Üreteç oluşturur.|
 |[GetActivationFactory İşlevi](../windows/getactivationfactory-function.md)|Şablon parametresi tarafından belirtilen tür için bir etkinleştirme üretecini alır.|
 |[Make İşlevi](../windows/make-function.md)|Belirtilen Windows çalışma zamanı sınıf başlatır.|
-  
-### <a name="macros"></a>Makrolar
-  
+
+## <a name="macros"></a>Makrolar
+
 |Başlık|Açıklama|
 |-----------|-----------------|
 |[ActivatableClass Makroları](../windows/activatableclass-macros.md)|Belirtilen sınıfın bir örneğini oluşturan bir üreteci içeren bir iç önbelleğe doldurur.|
 |[InspectableClass Makrosu](../windows/inspectableclass-macro.md)|Çalışma zamanı sınıf adı ve güven düzeyini ayarlar.|
-  
+
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)

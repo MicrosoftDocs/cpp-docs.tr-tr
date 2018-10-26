@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c9e3a7f5dc68f9f6726d591f051a6c04a0d48485
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 7b5a81f8e0472a9f30c8a29a94724063ddae4250
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328570"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060006"
 ---
 # <a name="constraints-on-generic-type-parameters-ccli"></a>Genel Tür Parametrelerindeki Kısıtlamalar (C++/CLI)
 
@@ -142,7 +142,7 @@ public:
    bool isSenior(ItemType item) {
       // Because of the constraint,
       // the Age method can be called on ItemType.
-      if (item->Age() >= 65)  
+      if (item->Age() >= 65)
          return true;
       else
          return false;
@@ -168,12 +168,12 @@ int main() {
    Adult^ parent = gcnew Adult();
    Senior^ grandfather = gcnew Senior();
 
-   if (ageGuess->isSenior<Adult^>(parent))  
+   if (ageGuess->isSenior<Adult^>(parent))
       Console::WriteLine("\"parent\" is a senior");
    else
       Console::WriteLine("\"parent\" is not a senior");
 
-   if (ageGuess->isSenior<Senior^>(grandfather))  
+   if (ageGuess->isSenior<Senior^>(grandfather))
       Console::WriteLine("\"grandfather\" is a senior");
    else
       Console::WriteLine("\"grandfather\" is not a senior");

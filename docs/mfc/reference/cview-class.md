@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ccb638669712222cac2dee522bf729766a4bc93
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e76dc8ca4a61839b893b4328bdb9d606424def91
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402271"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062242"
 ---
 # <a name="cview-class"></a>CView sınıfı
 
@@ -757,7 +757,7 @@ Bu işlev, aşağıdaki nedenlerden biriyle geçersiz kıl:
 
 - Yazdırılan görüntünün (diğer bir deyişle, uygulamanızın WYSIWYG değilse) ekran görüntüsünden farklı görünmesini sağlamak için. Cihaz bağlamına yazıcı geçirmek yerine `OnDraw`, ekranda gösterilen değil öznitelikleri kullanarak bir görüntüsünü işlemek için cihaz bağlamı kullanma.
 
-     GDI kaynaklarını ekran görüntüsü için kullanmayın yazdırma için gerekiyorsa, bunları çizim önce cihaz bağlamına seçin ve ardından seçimini kaldırın. Bu GDI kaynaklarını ayrılması gereken [OnBeginPrinting](#onbeginprinting) ve yayımlanan [OnEndPrinting](#onendprinting).
+   GDI kaynaklarını ekran görüntüsü için kullanmayın yazdırma için gerekiyorsa, bunları çizim önce cihaz bağlamına seçin ve ardından seçimini kaldırın. Bu GDI kaynaklarını ayrılması gereken [OnBeginPrinting](#onbeginprinting) ve yayımlanan [OnEndPrinting](#onendprinting).
 
 - Üstbilgilerinde veya altbilgilerinde uygulamak için. Kullanmaya devam edebilirsiniz `OnDraw` üzerinde yazdırabilir alan kısıtlayarak işleme yapmak için.
 

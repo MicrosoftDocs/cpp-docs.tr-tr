@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c0ffae70ae2da4edab9326a913e597fe1434611
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 18ef64bc20ba963b248273be16af7748a798a1bd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383772"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054715"
 ---
 # <a name="internet-url-parsing-globals-and-helpers"></a>Internet URL Ayrıştırma genel öğeleri ve Yardımcıları
 
@@ -237,6 +237,7 @@ Bu genel işlev, bir Internet tanıtıcı türü belirlemek için kullanın.
   ```
 DWORD AFXAPI AfxGetInternetHandleType(  HINTERNET hQuery );
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *hQuery*<br/>
@@ -297,6 +298,7 @@ Bir Internet özel durum oluşturur.
 ```
    void AFXAPI AfxThrowInternetException(  DWORD dwContext,  DWORD dwError = 0 );
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *dwContext*<br/>
@@ -321,5 +323,4 @@ Hataya neden olan işlem bağlam tanımlayıcısı. Varsayılan değer olan *dwC
 [Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
 [CInternetException Sınıfı](cinternetexception-class.md)<br/>
 [THROW](#throw)
-
 

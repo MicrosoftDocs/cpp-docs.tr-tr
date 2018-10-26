@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9966bcdf31df3b6d3f702ec425131c5b8baa3aee
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 6d9927712077f7d0d57d9ece5ae72489be291866
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808504"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055235"
 ---
 # <a name="csize-class"></a>CSize sınıfı
 
@@ -35,7 +35,7 @@ Windows için benzer [BOYUTU](https://msdn.microsoft.com/library/windows/desktop
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-class CSize : public tagSIZE 
+class CSize : public tagSIZE
 ```
 
 ## <a name="members"></a>Üyeler
@@ -64,7 +64,7 @@ Bu sınıf türetilir `SIZE` yapısı. Bu, geçirebilirsiniz anlamına gelir. bi
 `cx` Ve `cy` üyeleri `SIZE` (ve `CSize`) herkese açık. Ayrıca, `CSize` yönlendirmek üzere öğe işlevleri uygulayan `SIZE` yapısı.
 
 > [!NOTE]
->  Daha fazla bilgi için paylaşılan yardımcı sınıflar (gibi `CSize`), bkz: [paylaşılan sınıflar](../../atl-mfc-shared/atl-mfc-shared-classes.md).
+> Daha fazla bilgi için paylaşılan yardımcı sınıflar (gibi `CSize`), bkz: [paylaşılan sınıflar](../../atl-mfc-shared/atl-mfc-shared-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -85,7 +85,7 @@ CSize() throw();
 CSize( int initCX, int initCY) throw();
 CSize( SIZE initSize) throw();
 CSize( POINT initPt) throw();
-CSize( DWORD dwSize) throw(); 
+CSize( DWORD dwSize) throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -117,8 +117,8 @@ Bağımsız değişken olmadan verilirse `cx` ve `cy` sıfır olarak başlatıl�
 
 İki boyutu arasındaki denetler.
 
-``` 
-BOOL operator==(SIZE size) const throw(); 
+```
+BOOL operator==(SIZE size) const throw();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
@@ -133,8 +133,8 @@ BOOL operator==(SIZE size) const throw();
 
 İki boyutu arasındaki eşitsizliği denetler.
 
-``` 
-BOOL operator!=(SIZE size) const throw(); 
+```
+BOOL operator!=(SIZE size) const throw();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
@@ -149,8 +149,8 @@ Boyutları eşit değilse sıfır döndürür. Aksi durumda 0.
 
 Bir boyut için bunu ekler `CSize`.
 
-``` 
-void operator+=(SIZE size) throw(); 
+```
+void operator+=(SIZE size) throw();
 ```
 
 ### <a name="example"></a>Örnek
@@ -161,8 +161,8 @@ void operator+=(SIZE size) throw();
 
 Bu boyut çıkarır `CSize`.
 
-``` 
-void operator-=(SIZE size) throw(); 
+```
+void operator-=(SIZE size) throw();
 ```
 
 ### <a name="example"></a>Örnek
@@ -173,10 +173,10 @@ void operator-=(SIZE size) throw();
 
 Bu işleçler bu ekleme `CSize` parametresinin değeri için değer.
 
-``` 
+```
 CSize operator+(SIZE size) const throw();
 CPoint operator+(POINT point) const throw();
-CRect operator+(const RECT* lpRect) const throw(); 
+CRect operator+(const RECT* lpRect) const throw();
 ```
 
 ### <a name="remarks"></a>Açıklamalar
@@ -197,11 +197,11 @@ Tek tek işleçler aşağıdaki açıklamaları bakın:
 
 Bu işleçler, ilk üç bu çıkarma `CSize` parametresinin değeri için değer.
 
-``` 
+```
 CSize operator-(SIZE size) const throw();
 CPoint operator-(POINT point) const throw();
 CRect operator-(const RECT* lpRect) const throw();
-CSize operator-() const throw(); 
+CSize operator-() const throw();
 ```
 
 ### <a name="remarks"></a>Açıklamalar

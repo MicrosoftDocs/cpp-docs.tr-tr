@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 163ef22563141b9365bc2c086870877c7ad2bf00
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 5979fcb76dc688bffd9ad8076f123927439e3840
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083599"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064570"
 ---
 # <a name="run-time-object-model-services"></a>Çalışma Süresi Nesne Modeli Hizmetleri
 
@@ -39,8 +39,6 @@ Bu çalışma zamanı nesne Hizmetleri ve seri hale getirme hakkında daha fazla
 
 ### <a name="run-time-object-model-services-macros"></a>Çalışma süresi nesne modeli Hizmetleri makroları
 
-
-
 |||
 |-|-|
 |[DECLARE_DYNAMIC](#declare_dynamic)|(Sınıf bildirimi içinde kullanılmalıdır) çalışma süresi sınıf bilgilerine erişim sağlar.|
@@ -51,19 +49,11 @@ Bu çalışma zamanı nesne Hizmetleri ve seri hale getirme hakkında daha fazla
 |[IMPLEMENT_SERIAL](#implement_serial)|Serileştirme ve çalışma süresi sınıf bilgilerine (sınıfı uygulamasında kullanılmalıdır) erişim verir.|
 |[RUNTIME_CLASS](#runtime_class)|Döndürür `CRuntimeClass` adlandırılmış sınıf için karşılık gelen yapısı.|
 
-
 OLE sık nesneler çalışma zamanında dinamik oluşturulmasını gerektirir. Örneğin, bir sunucu uygulaması OLE öğeleri isteğine yanıt olarak bir istemciden gelen dinamik olarak oluşturmak mümkün olması gerekir. Benzer şekilde, Otomasyon sunucusu Otomasyon istemcilerden gelen isteklere yanıt öğeleri oluşturmak mümkün olması gerekir.
 
 Microsoft Foundation Class Kitaplığı için OLE iki makro belirli sağlar.
 
 ### <a name="dynamic-creation-of-ole-objects"></a>OLE nesne dinamik oluşturma
-
-
-
-
-
-
-
 
 |||
 |-|-|
@@ -85,6 +75,7 @@ Ortak Denetimler kitaplığını belirtilen API uygulayıp uygulamadığını be
   ```
 AFX_COMCTL32_IF_EXISTS(  proc );
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *yordam*<br/>
@@ -112,6 +103,7 @@ Ortak Denetimler kitaplığını belirtilen API uygulayıp uygulamadığını be
 ```
 AFX_COMCTL32_IF_EXISTS2( proc );
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *yordam*<br/>
@@ -129,8 +121,6 @@ afxcomctl32.h, afxcomctl32.inl
 
 [MFC Ortak Denetimler Kitaplığını Yalıtma](../isolation-of-the-mfc-common-controls-library.md)<br/>
 [AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)
-
-
 
 ##  <a name="declare_dynamic"></a>  DECLARE_DYNAMIC
 
@@ -197,7 +187,6 @@ DECLARE_DYNCREATE makrosu hakkında daha fazla bilgi için bkz. [CObject sınıf
 
 **Başlık:** afx.h
 
-
 ## <a name="declareolectltype"></a>DECLARE_OLECTLTYPE
 
 Bildirir `GetUserTypeNameID` ve `GetMiscStatus` denetim sınıfınızın bir üye işlevleri.
@@ -207,6 +196,7 @@ Bildirir `GetUserTypeNameID` ve `GetMiscStatus` denetim sınıfınızın bir üy
 ```
 DECLARE_OLECTLTYPE( class_name )
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *$class_name*<br/>
@@ -224,7 +214,6 @@ Denetim sınıfı adı.
 
 [IMPLEMENT_OLECTLTYPE](#implement_olectltype)
 
-
 ## <a name="declareproppageids"></a>DECLARE_PROPPAGEIDS
 
 OLE denetim özelliklerini görüntülemek için özellik sayfalarının bir listesini sağlar bildirir.
@@ -234,6 +223,7 @@ OLE denetim özelliklerini görüntülemek için özellik sayfalarının bir lis
 ```
 DECLARE_PROPPAGEIDS( class_name )
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *$class_name*<br/>
@@ -370,6 +360,7 @@ IMPLEMENT_OLECREATE_FLAGS( class_name, external_name, nFlags,
     l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8)
 
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *$class_name*<br/>
@@ -408,7 +399,6 @@ OLE sınıf kimliği bir nesne için benzersiz 128-bit tanımlayıcısıdır. Bi
 [DECLARE_OLECREATE](#declare_olecreate)<br/>
 [CLSID anahtarı](/windows/desktop/com/clsid-key-hklm)
 
-
 ## <a name="implement_olecreate"></a> IMPLEMENT_OLECTLTYPE
 
 Implements `GetUserTypeNameID` ve `GetMiscStatus` denetim sınıfınızın bir üye işlevleri.
@@ -418,6 +408,7 @@ Implements `GetUserTypeNameID` ve `GetMiscStatus` denetim sınıfınızın bir �
 ```
 DECLARE_OLECTLTYPE( class_name, idsUserTypeName, dwOleMisc )
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *$class_name*<br/>

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4b5ed392850fac97e8671774dee0905bf3417eb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 765a5293f233cb6df0654416ea2a5463df1095a8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375896"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054429"
 ---
 # <a name="specifying-levels-of-functionality"></a>İşlevsellik Düzeylerini Belirtme
 
@@ -46,11 +46,11 @@ Genel bir açıklamasını `CObject` işlevselliği makaleye göz atın [CObject
 
 1. DECLARE_DYNAMIC makrosu, burada gösterildiği gibi sınıfı bildiriminde kullanın:
 
-     [!code-cpp[NVC_MFCCObjectSample#2](../mfc/codesnippet/cpp/specifying-levels-of-functionality_1.h)]
+   [!code-cpp[NVC_MFCCObjectSample#2](../mfc/codesnippet/cpp/specifying-levels-of-functionality_1.h)]
 
 1. Implement_dynamıc makrosu uygulama dosyasında kullanın (. CPP) sınıfınızın. Bu makro bağımsız değişken olarak sınıfı ve temel sınıfın adını aşağıdaki gibi alır:
 
-     [!code-cpp[NVC_MFCCObjectSample#3](../mfc/codesnippet/cpp/specifying-levels-of-functionality_2.cpp)]
+   [!code-cpp[NVC_MFCCObjectSample#3](../mfc/codesnippet/cpp/specifying-levels-of-functionality_2.cpp)]
 
 > [!NOTE]
 >  Her zaman uygulama dosyasında ımplement_dynamıc yerleştirin (. CPP) sınıfınız için. Implement_dynamıc makrosu derleme sırasında yalnızca bir kez değerlendirilir ve bu nedenle bir arabirim dosyasında kullanılmamalıdır (. H), büyük olasılıkla birden fazla dosyasına dahil.

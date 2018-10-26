@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4adaa1da407d9727db74add14eb517e83a5e610c
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: b22e903b86ba3de8bcd98aa47f1b6756288f2f78
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861557"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070984"
 ---
 # <a name="creating-an-atl-project"></a>ATL projesi oluşturma
 
@@ -48,4 +48,4 @@ Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Özellik Sayfaları](../../ide/property-pages-visual-cpp.md)   
+[Özellik Sayfaları](../../ide/property-pages-visual-cpp.md)

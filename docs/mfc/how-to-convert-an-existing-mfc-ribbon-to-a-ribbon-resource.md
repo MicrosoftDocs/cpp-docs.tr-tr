@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07ed60edf2b83810616e2ed58a92510d1d973ff0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b31062530bfe6da940cd6458bd5cfa91f3e29ae7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378117"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052557"
 ---
 # <a name="how-to-convert-an-existing-mfc-ribbon-to-a-ribbon-resource"></a>Nasıl yapılır: Varolan Bir MFC Şeridini Şerit Kaynağına Dönüştürme
 
@@ -37,13 +37,13 @@ ms.locfileid: "46378117"
 
 ```
 
-     Save and close the file.
+   Dosyayı kaydedin ve kapatın.
 
 1. Derleme ve MFC uygulamasını çalıştırın ve ardından RibbonOutput.txt Not Defteri'nde açın ve içeriğini kopyalayın.
 
 1. Visual Studio'da üzerinde **proje** menüsünü tıklatın **kaynak Ekle**. İçinde **kaynak Ekle** iletişim kutusunda **Şerit** ve ardından **yeni**.
 
-     Visual Studio, bir Şerit kaynağı oluşturur ve Tasarım Görünümü'nde açılır. Görüntülenen IDR_RIBBON1, Şerit kaynak kimliğidir **kaynak görünümü**. Şerit ribbon1.mfcribbon ms XML dosyasında tanımlanır.
+   Visual Studio, bir Şerit kaynağı oluşturur ve Tasarım Görünümü'nde açılır. Görüntülenen IDR_RIBBON1, Şerit kaynak kimliğidir **kaynak görünümü**. Şerit ribbon1.mfcribbon ms XML dosyasında tanımlanır.
 
 1. Visual Studio'da ribbon1.mfcribbon ms açın, içeriğini silin ve ardından daha önce kopyaladığınız RibbonOutput.txt içeriğini yapıştırın. Kaydedip ribbon1.mfcribbon ms kapatın.
 

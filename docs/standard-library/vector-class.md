@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07dddbcfba7920efdda1f222843299ef29f19f0c
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 926a0f90f366f3644bfce33f15a0a85dd1792a85
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235795"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076758"
 ---
 # <a name="vector-class"></a>vector Sınıfı
 
@@ -402,7 +402,6 @@ Bir rastgele erişim yineleyicisini vektör içindeki ilk öğeye döndürür.
 
 ```cpp
 const_iterator begin() const;
-
 
 iterator begin();
 ```
@@ -788,7 +787,6 @@ Vektör içindeki ilk öğeye bir işaretçi döndürür.
 
 ```cpp
 const_pointer data() const;
-
 
 pointer data();
 ```
@@ -1554,7 +1552,6 @@ Vektör sonuna bir öğe ekler.
 
 ```cpp
 void push_back(const T& Val);
-
 
 void push_back(T&& Val);
 ```

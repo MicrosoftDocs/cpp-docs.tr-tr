@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40c74633be8556fc075f10e328521209761f385c
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 6f2b4dddd77b245de307173fbc2496181658be78
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890718"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066077"
 ---
 # <a name="whats-new-for-visual-c-in-visual-studio-2017"></a>Visual Studio 2017'de Visual C++ yenilikleri
 
@@ -42,11 +42,11 @@ Bu sürümde, C++ derleyicisini ve standart kitaplığını C++11 ve C++14 özel
 
 - Visual Studio 2017 sağlayan kullanarak [/SDL](build/reference/sdl-enable-additional-security-checks.md) ile [/ await](build/reference/await-enable-coroutine-support.md). Kaldırdık [/RTC](build/reference/rtc-run-time-error-checks.md) eş yordamlar sınırlama.
 
-   **Visual Studio 2017 sürüm 15.3**:  
+   **Visual Studio 2017 sürüm 15.3**:
+
 - [/ Std: c ++ 14 ve/Std: c ++ Son](build/reference/std-specify-language-standard-version.md): Bu derleyici seçeneklerinin ISO C++ programlama dilini projesinde belirli sürümlerine katılımı olanak sağlar. Standart özellikler tarafından korunan yeni taslak çoğu **/Std: c ++ Son** seçeneği.
 
 - [/ Std: c ++ 17](build/reference/std-specify-language-standard-version.md) derleyici tarafından uygulanan C ++ 17 özellikleri kümesini sağlar. Bu seçenek, C ++ 17 sonra derleyici ve değiştirilen özellikler veya yeni sürümlerinde C++ standart çalışma taslak ve hata güncelleştirmeleri standart kitaplığı desteği devre dışı bırakır. Bu özellikleri etkinleştirmek için **/Std: c ++ Son**.
-
 
 ### <a name="codegen-security-diagnostics-and-versioning"></a>CODEGEN, güvenlik, tanılama ve sürüm oluşturma
 
@@ -342,9 +342,9 @@ Visual Studio 2017 CMake projeleri için MSBuild proje dosyaları (.vcxproj) dö
 
   ![Cmake Klasör Aç](media/cmake_cpp.png "CMake Klasör Aç")
 
-**Visual Studio 2017 sürüm 15.3**: CMake Ninja oluşturucusunu için destek eklendi. 
+**Visual Studio 2017 sürüm 15.3**: CMake Ninja oluşturucusunu için destek eklendi.
 
-**Visual Studio 2017 sürüm 15.5**: mevcut CMake almak için eklenen destek önbelleğe alır. 
+**Visual Studio 2017 sürüm 15.5**: mevcut CMake almak için eklenen destek önbelleğe alır.
 
 **Visual Studio 2017 sürüm 15.7**: CMake 3.11, CMake projeleri, kod analizi için eklenen destek hedefler, Çözüm Gezgini'nde, önbellek oluşturma ve tek dosyalı derleme için seçenekleri görüntüleme. Daha fazla bilgi için [Visual Studio'da CMake desteği](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) ve [Visual C++'da CMake projeleri](ide/cmake-tools-for-visual-cpp.md).
 
@@ -416,10 +416,11 @@ Visual Studio 2017 artık destekliyor ile birlikte gönderilen Clang/C2 araç **
 
 15.3 sürümünde karşılaşabileceğiniz bazı uyarı numaraları 15.5 sürümünde artık mevcut değil. Bu uyarıların yerine daha belirgin denetimler kullanıma sunuldu.
 
-**Visual Studio 2017 sürüm 15.6**:  
-Destek için tek dosyalı analizi ve analiz çalıştırma performans geliştirmeleri eklendi. Daha fazla bilgi için [C++ statik analizi iyileştirmeleri Visual Studio 2017 15.6 Preview 2](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/c-static-analysis-improvements-for-visual-studio-2017-15-6-preview-2/)
+**Visual Studio 2017 sürüm 15.6**:
 
-**Visual Studio 2017 sürüm 15.7**:  
+- Destek için tek dosyalı analizi ve analiz çalıştırma performans geliştirmeleri eklendi. Daha fazla bilgi için [C++ statik analizi iyileştirmeleri Visual Studio 2017 15.6 Preview 2](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/c-static-analysis-improvements-for-visual-studio-2017-15-6-preview-2/)
+
+**Visual Studio 2017 sürüm 15.7**:
 
 - İçin eklenen Destek [/ analyze: ruleset](build/reference/analyze-code-analysis.md) çalıştırmak için hangi kod analizi kuralları belirtmenize olanak sağlar.
 - Desteği için ek C++ temel yönergeleri kuralları eklendi.  Daha fazla bilgi için [C++ temel yönergeleri denetleyicilerini kullanma](/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).
@@ -435,7 +436,7 @@ Google Test bağdaştırıcısı ve Boost.Test bağdaştırıcısı bileşenleri
 - Destek Boost.Test dinamik kitaplık desteği eklendi.
 - Boost.Test öğe şablonu IDE içinde kullanıma sunuldu.
 
-Daha fazla bilgi için [Boost.Test birim testi: dinamik kitaplık desteği ve yeni öğe şablonu](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/boost-test-unit-testing-dynamic-library-support-and-new-item-template/). 
+Daha fazla bilgi için [Boost.Test birim testi: dinamik kitaplık desteği ve yeni öğe şablonu](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/boost-test-unit-testing-dynamic-library-support-and-new-item-template/).
 
 **Visual Studio 2017 sürüm 15.7**:
 

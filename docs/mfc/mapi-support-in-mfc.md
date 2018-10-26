@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3fbc661a870c7adc6e2e5dda5def744fa3e0396
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 23b538904c78fc0f0bc88b7c12de1bc4862a88ab
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417026"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053415"
 ---
 # <a name="mapi-support-in-mfc"></a>MFC'de MAPI Desteği
 
@@ -44,11 +44,11 @@ MAPI eki göndermek için dosyayı okumak gerekir. Uygulama, veri dosyası açı
 
 1. ID_FILE_SEND_MAIL komut Kimliğine sahip bir menü öğesi eklemek için Visual C++ menü düzenleyicisini kullanın.
 
-     Bu komut kimliği AFXRES framework tarafından sağlanır. H Komut için herhangi bir menüsü eklenebilir, ancak genellikle eklenir **dosya** menüsü.
+   Bu komut kimliği AFXRES framework tarafından sağlanır. H Komut için herhangi bir menüsü eklenebilir, ancak genellikle eklenir **dosya** menüsü.
 
 1. El ile belgenizin ileti eşlemesi için aşağıdakileri ekleyin:
 
-     [!code-cpp[NVC_MFCDocView#9](../mfc/codesnippet/cpp/mapi-support-in-mfc_1.cpp)]
+   [!code-cpp[NVC_MFCDocView#9](../mfc/codesnippet/cpp/mapi-support-in-mfc_1.cpp)]
 
     > [!NOTE]
     >  Öğesinden türetilen bir belge için bu ileti eşlemesi çalışır `CDocument` veya `COleDocument` — ileti eşlemesi türetilmiş belge sınıfınızda olsa bile, her iki durumda da doğru temel sınıfı alır.

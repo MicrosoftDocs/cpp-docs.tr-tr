@@ -8,15 +8,14 @@ f1_keywords:
 ms.assetid: 6cdcf043-eef6-4330-83f0-4596fb9f968a
 helpviewer_keywords:
 - std::swap [vector]
-ms.openlocfilehash: 71594b225c950714d8b9aba169e68804033c93a2
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: c93f535bb02cbaa1f688fba84f15d832381156c6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700758"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079327"
 ---
 # <a name="ltvectorgt-functions"></a>&lt;vektör&gt; işlevleri
-
 
 ## <a name="swap"></a>  değiştirme
 

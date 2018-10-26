@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dee59f5e86cddeec47da47c648b0cf12789cc85a
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 8c8493650ef2c86a89c1a3060deb5ee6269a38a7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084106"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068651"
 ---
 # <a name="composite-control-global-functions"></a>Bileşik Denetim genel işlevleri
 
@@ -56,11 +56,11 @@ Bu işlevler, iletişim kutuları oluşturma ve oluşturma, barındırma ve Acti
 |[AtlSetChildSite](#atlsetchildsite)|Başlatır `IUnknown` alt sitenin.|
 |[AtlAxWinInit](#atlaxwininit)|AxWin nesneleri barındırma kodunu başlatır.|
 |[AtlAxWinTerm](#atlaxwinterm)|Barındırma kodunu AxWin nesneleri başlamasını iptal eder.|
-|[AtlGetObjectSourceInterface](#atlgetobjectsourceinterface)|Bir nesnenin varsayılan kaynak arabirimi hakkında bilgi döndürür.|  
+|[AtlGetObjectSourceInterface](#atlgetobjectsourceinterface)|Bir nesnenin varsayılan kaynak arabirimi hakkında bilgi döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlhost.h  
+**Başlık:** atlhost.h
 
 ##  <a name="atlaxdialogbox"></a>  AtlAxDialogBox
 
@@ -101,7 +101,7 @@ Standart HRESULT değerlerinden biri.
 Kullanılacak `AtlAxDialogBox` ActiveX denetimini içeren bir iletişim şablonunu ile geçerli bir CLSID, APPID veya URL dize olarak belirtin *metin* alanını **denetimi** bölümünü iletişim kutusu kaynağı ile birlikte " AtlAxWin80 "olarak *sınıf adı* aynı bölüme altında. Aşağıdaki ne bir geçerli gösterir **denetimi** bölümü gibi görünebilir:
 
 ```
-CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,  
+CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100
 ```
 
@@ -261,7 +261,7 @@ Lisanslı bir ActiveX denetimi oluşturmak için bkz [AtlAxCreateControlLicEx](#
 
 ##  <a name="atlaxcreatecontrollic"></a>  AtlAxCreateControlLic
 
-Lisanslı bir ActiveX denetimi oluşturur, onu başlatır ve belirtilen pencerede barındırır.  
+Lisanslı bir ActiveX denetimi oluşturur, onu başlatır ve belirtilen pencerede barındırır.
 
 ```
 ATLAPI AtlAxCreateControlLic(
@@ -484,7 +484,7 @@ Başlatma kodu barındırma denetimi başarılı olursa sıfır dışı; Aksi du
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, ATL Denetim barındırma API'si kullanmadan önce çağrılmalıdır. Bu işlev, çağrıyı izleyen **"AtlAxWin"** pencere sınıfını çağrıları kullanılabilir [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) veya [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)Windows SDK içinde açıklandığı gibi.  
+Bu işlev, ATL Denetim barındırma API'si kullanmadan önce çağrılmalıdır. Bu işlev, çağrıyı izleyen **"AtlAxWin"** pencere sınıfını çağrıları kullanılabilir [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) veya [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="atlaxwinterm"></a>  Zaman AtlAxWinTerm
 

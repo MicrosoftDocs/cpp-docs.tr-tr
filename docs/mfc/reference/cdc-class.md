@@ -412,12 +412,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59fe5aeaa288f0d36db71df7f7ab5d498aec3256
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 496b958c1ff96b2bc8f3fd3ce8b453c9d3497dcf
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448590"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081150"
 ---
 # <a name="cdc-class"></a>CDC sınıfı
 
@@ -887,7 +887,6 @@ BOOL Arc(
     int x4,
     int y4);
 
-
 BOOL Arc(
     LPCRECT lpRect,
     POINT ptStart,
@@ -957,7 +956,6 @@ BOOL ArcTo(
     int y3,
     int x4,
     int y4);
-
 
 BOOL ArcTo(
     LPCRECT lpRect,
@@ -1141,7 +1139,6 @@ BOOL Chord(
     int y3,
     int x4,
     int y4);
-
 
 BOOL Chord(
     LPCRECT lpRect,
@@ -1421,7 +1418,6 @@ void Draw3dRect(
     COLORREF clrTopLeft,
     COLORREF clrBottomRight);
 
-
 void Draw3dRect(
     int x,
     int y,
@@ -1672,7 +1668,6 @@ BOOL DrawIcon(
     int y,
     HICON hIcon);
 
-
 BOOL DrawIcon(
     POINT point,
     HICON hIcon);
@@ -1721,7 +1716,6 @@ BOOL DrawState(
     UINT nFlags,
     HBRUSH hBrush = NULL);
 
-
 BOOL DrawState(
     CPoint pt,
     CSize size,
@@ -1729,7 +1723,6 @@ BOOL DrawState(
     UINT nFlags,
     CBrush* pBrush = NULL);
 
-
 BOOL DrawState(
     CPoint pt,
     CSize size,
@@ -1737,14 +1730,12 @@ BOOL DrawState(
     UINT nFlags,
     HBRUSH hBrush = NULL);
 
-
 BOOL DrawState(
     CPoint pt,
     CSize size,
     HICON hIcon,
     UINT nFlags,
     CBrush* pBrush = NULL);
-
 
 BOOL DrawState(
     CPoint pt,
@@ -1755,7 +1746,6 @@ BOOL DrawState(
     int nTextLen = 0,
     HBRUSH hBrush = NULL);
 
-
 BOOL DrawState(
     CPoint pt,
     CSize size,
@@ -1764,7 +1754,6 @@ BOOL DrawState(
     BOOL bPrefixText = TRUE,
     int nTextLen = 0,
     CBrush* pBrush = NULL);
-
 
 BOOL DrawState(
     CPoint pt,
@@ -1773,7 +1762,6 @@ BOOL DrawState(
     LPARAM lData,
     UINT nFlags,
     HBRUSH hBrush = NULL);
-
 
 BOOL DrawState(
     CPoint pt,
@@ -1840,7 +1828,6 @@ virtual int DrawText(
     LPRECT lpRect,
     UINT nFormat);
 
-
 int DrawText(
     const CString& str,
     LPRECT lpRect,
@@ -1896,7 +1883,6 @@ virtual int DrawTextEx(
     LPRECT lpRect,
     UINT nFormat,
     LPDRAWTEXTPARAMS lpDTParams);
-
 
 int DrawTextEx(
     const CString& str,
@@ -2097,7 +2083,6 @@ virtual int Escape(
     int nCount,
     LPCSTR lpszInData,
     LPVOID lpOutData);
-
 
 int Escape(
     int nEscape,
@@ -2301,7 +2286,6 @@ virtual BOOL ExtTextOut(
     UINT nCount,
     LPINT lpDxWidths);
 
-
 BOOL ExtTextOut(
     int x,
     int y,
@@ -2433,7 +2417,6 @@ Belirtilen dikdörtgen belirtilen düz renk ile doldurmak için bu üye işlevin
 void FillSolidRect(
     LPCRECT lpRect,
     COLORREF clr);
-
 
 void FillSolidRect(
     int x,
@@ -3553,7 +3536,7 @@ Köşe türleri yerleştirildiği bir bayt dizisi işaret. Aşağıdakilerden bi
 
 PT_BEZIERTO türleri, her zaman üç kümelerinde oluşur. Hemen önceki yol noktasında Bzier eğri için başlangıç noktası tanımlar. İlk iki PT_BEZIERTO noktaları kontrol noktalarını ve uç noktası üçüncü PT_BEZIERTO noktası olduğundan (, sabit kodlanmış).
 
-     A PT_LINETO or PT_BEZIERTO type may be combined with the following flag (by using the bitwise operator **OR**) to indicate that the corresponding point is the last point in a figure and that the figure should be closed:
+   Aşağıdaki bayrağıyla PT_LINETO veya PT_BEZIERTO türü birleştirilebilir (bit düzeyinde işleci kullanarak **veya**) karşılık gelen noktasının bir şekilde son noktası olduğunu ve Şekil kapalı olduğunu belirtmek için:
 
 - PT_CLOSEFIGURE şekil karşılık gelen satırın sonunda otomatik olarak kapatılır veya çizilen eğri belirtir. Şekil çizgi veya eğri uç noktasından bir satır son PT_MOVETO karşılık gelen noktasına çizerek kapalı.
 
@@ -4704,7 +4687,6 @@ BOOL Pie(
     int x4,
     int y4);
 
-
 BOOL Pie(
     LPCRECT lpRect,
     POINT ptStart,
@@ -4768,7 +4750,6 @@ Belirtilen meta dosyasını içeriğini cihaz bağlamı üzerinde yürütülür.
 
 ```
 BOOL PlayMetaFile(HMETAFILE hMF);
-
 
 BOOL PlayMetaFile(
     HENHMETAFILE hEnhMetaFile,
@@ -4951,11 +4932,11 @@ Her nokta nasıl belirten bir dizi işaret *lpPoints* dizi kullanılır. Değer 
 
 PT_BEZIERTO türleri, her zaman üç kümelerinde oluşur. Geçerli konumun Bzier eğri için başlangıç noktası tanımlar. Denetim noktaları ilk iki PT_BEZIERTO noktalarıdır ve bitiş noktası üçüncü PT_BEZIERTO noktasıdır. Bitiş noktasını yeni geçerli konum haline gelir. Değil üç ardışık PT_BEZIERTO noktaları varsa, bir hata oluşur.
 
-     A PT_LINETO or PT_BEZIERTO type can be combined with the following constant by using the bitwise operator OR to indicate that the corresponding point is the last point in a figure and the figure is closed:
+   Bit düzeyinde işleci kullanılarak aşağıdaki sabit ile PT_LINETO veya PT_BEZIERTO türü birleştirilebilir veya karşılık gelen noktası bir şekil ve Şekil son noktası olduğunu belirtmek için kapalı:
 
 - PT_CLOSEFIGURE şekil PT_LINETO sonra otomatik olarak kapatılır veya bu noktası PT_BEZIERTO türü yapılır belirtir. Bir çizgi için en son PT_MOVETO bu noktadan itibaren çizilir veya `MoveTo` gelin.
 
-     Bu bayrak PT_LINETO türü için bir satır veya bitiş noktasında bir Bzier eğri için bit düzeyinde kullanarak PT_BEZIERTO türü ile birlikte **veya** işleci. Geçerli konumun kapanış çizginin bitiş noktası için ayarlanır.
+   Bu bayrak PT_LINETO türü için bir satır veya bitiş noktasında bir Bzier eğri için bit düzeyinde kullanarak PT_BEZIERTO türü ile birlikte **veya** işleci. Geçerli konumun kapanış çizginin bitiş noktası için ayarlanır.
 
 *nCount*<br/>
 Noktaları toplam sayısını belirten *lpPoints* dizi, bayt sayısı ile aynı *lpTypes* dizisi.
@@ -5332,7 +5313,6 @@ BOOL RoundRect(
     int x3,
     int y3);
 
-
 BOOL RoundRect(
     LPCRECT lpRect,
     POINT point);
@@ -5557,7 +5537,6 @@ Cihaz bağlamı için geçerli kırpma bölgesini olarak belirli bir bölgeye se
 
 ```
 int SelectClipRgn(CRgn* pRgn);
-
 
 int SelectClipRgn(
     CRgn* pRgn,
@@ -6194,7 +6173,6 @@ COLORREF SetPixel(
     int y,
     COLORREF crColor);
 
-
 COLORREF SetPixel(
     POINT point,
     COLORREF crColor);
@@ -6233,7 +6211,6 @@ BOOL SetPixelV(
     int x,
     int y,
     COLORREF crColor);
-
 
 BOOL SetPixelV(
     POINT point,
@@ -6903,7 +6880,6 @@ virtual CSize TabbedTextOut(
     LPINT lpnTabStopPositions,
     int nTabOrigin);
 
-
 CSize TabbedTextOut(
     int x,
     int y,
@@ -6961,7 +6937,6 @@ virtual BOOL TextOut(
     int y,
     LPCTSTR lpszString,
     int nCount);
-
 
 BOOL TextOut(
     int x,

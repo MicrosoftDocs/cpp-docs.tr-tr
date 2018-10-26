@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ac378e0a923e2a906bf99995432bfc87e39b8d5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fdf3ae7adf36ad471b5cab09d0f13a4d5e18f7a7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46032438"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075575"
 ---
 # <a name="cinterfacelist-class"></a>Cınterfacelist sınıfı
 
@@ -33,7 +33,7 @@ Bu sınıf, COM arabirim işaretçilerini listesini oluştururken kullanışlı 
 
 ```
 template<class I, const IID* piid =& __uuidof(I)>
-class CInterfaceList 
+class CInterfaceList
    : public CAtlList<ATL::CComQIPtr<I, piid>,
                      CComQIPtrElementTraits<I, piid>>
 ```

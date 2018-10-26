@@ -10,12 +10,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ebcb2e52f67cfe37c4954e530fd2b2393ae23b68
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: a4003868609d8ffd1ea3b29074bdd24c25442ad8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861700"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054455"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158"></a>Visual Studio 2017 sürüm 15.0,'deki C++ uyumluluk geliştirmeleri [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15,8](#update_158)
 
@@ -227,9 +227,9 @@ Aşağıdaki örnek, C ++ 14 ve uyumlu davranışın gösterir:
 struct Derived;
 
 struct Base {
-    friend struct Derived;
+    friend struct Derived;
 private:
-    Base() {}
+    Base() {}
 };
 
 struct Derived : Base {};
@@ -247,9 +247,9 @@ Aşağıdaki örnek, Visual Studio sürüm 15.7 olarak C ++ 17 davranış göste
 struct Derived;
 
 struct Base {
-    friend struct Derived;
+    friend struct Derived;
 private:
-    Base() {}
+    Base() {}
 };
 
 struct Derived : Base {
@@ -1375,7 +1375,7 @@ Constexpr statik veri üyeleri, bir sınıf içerisinde bildirim artık kendi ta
 
 ```cpp
 struct X {
-    static constexpr int size = 3;
+    static constexpr int size = 3;
 };
 const int X::size; // C5041
 ```
@@ -1588,7 +1588,7 @@ Hatayı düzeltmek için B B() ifadesini değiştirmeyi\<T > ().
 
 ### <a name="constexpr-aggregate-initialization"></a>constexpr toplu başlatma
 
-C++ derleyicisinin önceki sürümlerinde, yanlış constexpr toplama başlatma işlenen; Bunu, toplama başlatma listesi çok fazla öğe vardı ve hatalı codegen için üretilen geçersiz kod kabul etti. Aşağıdaki kod, bu tür bir kod örneğidir: 
+C++ derleyicisinin önceki sürümlerinde, yanlış constexpr toplama başlatma işlenen; Bunu, toplama başlatma listesi çok fazla öğe vardı ve hatalı codegen için üretilen geçersiz kod kabul etti. Aşağıdaki kod, bu tür bir kod örneğidir:
 
 ```cpp
 #include <array>
@@ -1690,15 +1690,14 @@ Hatayı düzeltmek için değiştirme `return` ifadesine `return this->base_valu
 
 C++ standart iletme bildirimlerine veya tanımlarına ad alanında eklemek bir kullanıcı izin vermeyen `std`. Ad alanına bildirimlerine veya tanımlarına ekleme `std` veya ad alanı içinde bir ad alanına std artık tanımlanmayan davranışla sonuçlanır.
 
-Bazı zaman gelecekteki Microsoft bazı STL türlerinin tanımlandığı konumuna taşınır. Bu durumda, ad alanına bildirimleri ekler mevcut kodu keser `std`. Yeni bir uyarı C4643, bu tür kaynak sorunlarını belirlemenize yardımcı olur. Uyarı etkin **/varsayılan** modunu ve varsayılan olarak kapalıdır. İle derlenmiş programlar etkiler **/Wall** veya **wx**. 
+Bazı zaman gelecekteki Microsoft bazı STL türlerinin tanımlandığı konumuna taşınır. Bu durumda, ad alanına bildirimleri ekler mevcut kodu keser `std`. Yeni bir uyarı C4643, bu tür kaynak sorunlarını belirlemenize yardımcı olur. Uyarı etkin **/varsayılan** modunu ve varsayılan olarak kapalıdır. İle derlenmiş programlar etkiler **/Wall** veya **wx**.
 
-Aşağıdaki kod artık C4643 başlatır: *İleri std C++ standardı tarafından izin verilmiyor ad alanındaki 'vektör' bildirme*. 
-
+Aşağıdaki kod artık C4643 başlatır: *İleri std C++ standardı tarafından izin verilmiyor ad alanındaki 'vektör' bildirme*.
 
 ```cpp
-namespace std { 
-    template<typename T> class vector; 
-} 
+namespace std {
+    template<typename T> class vector;
+}
 ```
 
 Hatayı düzeltmek için kullanmak bir **dahil** İleri dönük bildirimi yerine yönergesi:
@@ -1714,106 +1713,106 @@ C++ Standart temsilci oluşturucusu kendisini yetkilendirir, derleyici bir tanı
 Bu hata olmadan aşağıdaki programın derleyeceği ancak sonsuz bir döngü oluşturur:
 
 ```cpp
-class X { 
-public: 
-    X(int, int); 
+class X {
+public:
+    X(int, int);
     X(int v) : X(v){}
-}; 
+};
 ```
 
 Sonsuz döngü önlemek için farklı bir oluşturucu temsilci:
 
 ```cpp
-class X { 
-public: 
+class X {
+public:
 
-    X(int, int); 
-    X(int v) : X(v, 0) {} 
-}; 
+    X(int, int);
+    X(int v) : X(v, 0) {}
+};
 ```
 
 ### <a name="offsetof-with-constant-expressions"></a>offsetof ile sabit ifadeler
 
-[offsetof](c-runtime-library/reference/offsetof-macro.md) gerektiren bir makro kullanarak geleneksel olarak uygulanmıştır bir [reinterpret_cast](cpp/reinterpret-cast-operator.md). Bu sabit ifade gerektiren bağlamlarda geçersiz, ancak Microsoft C++ derleyicisi, geleneksel olarak tanıdı. STL parçası doğru bir iç derleyici kullandığından, gönderildiğini offsetof makrosu (**__builtin_offsetof**), ancak çoğu kişi makrosu ux'in kendi tanımlamak için kullanılan **offsetof**.  
+[offsetof](c-runtime-library/reference/offsetof-macro.md) gerektiren bir makro kullanarak geleneksel olarak uygulanmıştır bir [reinterpret_cast](cpp/reinterpret-cast-operator.md). Bu sabit ifade gerektiren bağlamlarda geçersiz, ancak Microsoft C++ derleyicisi, geleneksel olarak tanıdı. STL parçası doğru bir iç derleyici kullandığından, gönderildiğini offsetof makrosu (**__builtin_offsetof**), ancak çoğu kişi makrosu ux'in kendi tanımlamak için kullanılan **offsetof**.
 
 Visual Studio 2017 sürüm 15,8, derleyici bu reinterpret_casts kod için standart C++ davranış uymak yardımcı olmak için varsayılan modunda görünen alanları kısıtlar. Altında [/ permissive-](build/reference/permissive-standards-conformance.md), kısıtlamaları taşıyabilmek. Offsetof işleminin bir sonucu sabit ifadeler gerektiren farklı yerde kullanarak C4644 uyarı veren kodu neden olabilir *sabit ifadeler offsetof makrosu tabanlı desende kullanımını standart; kullanım offsetof C++ standardında tanımlanan Kitaplık yerine* veya C2975 *geçersiz şablon bağımsız değişkeni, beklenen derleme zamanı sabit ifadesi*.
 
-Aşağıdaki kod içinde C4644 başlatır **/varsayılan** ve **/Std: c ++ 17** modları ve içinde C2975 **/ permissive-** modu: 
+Aşağıdaki kod içinde C4644 başlatır **/varsayılan** ve **/Std: c ++ 17** modları ve içinde C2975 **/ permissive-** modu:
 
 ```cpp
-struct Data { 
-    int x; 
-}; 
+struct Data {
+    int x;
+};
 
-// Common pattern of user-defined offsetof 
-#define MY_OFFSET(T, m) (unsigned long long)(&(((T*)nullptr)->m)) 
+// Common pattern of user-defined offsetof
+#define MY_OFFSET(T, m) (unsigned long long)(&(((T*)nullptr)->m))
 
-int main() 
+int main()
 
-{ 
-    switch (0) { 
-    case MY_OFFSET(Data, x): return 0; 
-    default: return 1; 
-    } 
-} 
+{
+    switch (0) {
+    case MY_OFFSET(Data, x): return 0;
+    default: return 1;
+    }
+}
 ```
 
 Hatayı düzeltmek için kullanmak **offsetof** aracılığıyla tanımlanan \<cstddef >:
 
 ```cpp
-#include <cstddef>  
+#include <cstddef>
 
-struct Data { 
-    int x; 
-};  
+struct Data {
+    int x;
+};
 
-int main() 
-{ 
-    switch (0) { 
-    case offsetof(Data, x): return 0; 
-    default: return 1; 
-    } 
-} 
+int main()
+{
+    switch (0) {
+    case offsetof(Data, x): return 0;
+    default: return 1;
+    }
+}
 ```
-
 
 ### <a name="cv-qualifiers-on-base-classes-subject-to-pack-expansion"></a>Paket genişletmesi tabi temel sınıfları CV niteleyicileri
 
-Microsoft C++ derleyicisinin önceki sürümlerinde, ayrıca paket genişletmesi tabi olduysa bir temel sınıf cv niteleyicileri olan algılamadı. 
+Microsoft C++ derleyicisinin önceki sürümlerinde, ayrıca paket genişletmesi tabi olduysa bir temel sınıf cv niteleyicileri olan algılamadı.
 
-Visual Studio 2017 sürüm 15,8, içinde **/ permissive-** modu aşağıdaki kodu başlatır C3770 *'const S': geçerli bir taban sınıf değil*: 
+Visual Studio 2017 sürüm 15,8, içinde **/ permissive-** modu aşağıdaki kodu başlatır C3770 *'const S': geçerli bir taban sınıf değil*:
 
 ```cpp
-template<typename... T> 
-class X : public T... { };  
+template<typename... T>
+class X : public T... { };
 
-class S { };  
+class S { };
 
-int main() 
-{ 
-    X<const S> x; 
-} 
+int main()
+{
+    X<const S> x;
+}
 ```
+
 ### <a name="template-keyword-and-nested-name-specifiers"></a>Şablon anahtar sözcüğü ve iç içe-ad-tanımlayıcıları
 
-İçinde **/ permissive-** modu, derleyici artık gerektirir `template` anahtar sözcüğü, bir şablon adı öncesinde, bir iç içe-adı-bağımlı olan belirticisinden sonra geldiğinde. 
+İçinde **/ permissive-** modu, derleyici artık gerektirir `template` anahtar sözcüğü, bir şablon adı öncesinde, bir iç içe-adı-bağımlı olan belirticisinden sonra geldiğinde.
 
 Aşağıdaki kod içinde **/ permissive-** modu şimdi C7510 başlatır: *'foo': bağımlı şablon adı 'şablon' ile önekini almalıdır. Not: sınıf şablonu örneklemesi için bkz ' X<T>' oluşturuluyor derlenmiş*:
 
 ```cpp
 template<typename T> struct Base
 {
-    template<class U> void foo() {} 
-}; 
+    template<class U> void foo() {}
+};
 
-template<typename T> 
-struct X : Base<T> 
-{ 
-    void foo() 
-    { 
-        Base<T>::foo<int>(); 
-    } 
-}; 
+template<typename T>
+struct X : Base<T>
+{
+    void foo()
+    {
+        Base<T>::foo<int>();
+    }
+};
 ```
 
 Hatayı düzeltmek için ekleme `template` anahtar `Base<T>::foo<int>();` aşağıdaki örnekte gösterildiği gibi deyimi:
@@ -1823,16 +1822,16 @@ template<typename T> struct Base
 {
     template<class U> void foo() {}
 };
- 
-template<typename T> 
-struct X : Base<T> 
-{ 
-    void foo() 
-    { 
+
+template<typename T>
+struct X : Base<T>
+{
+    void foo()
+    {
         // Add template keyword here:
-        Base<T>::template foo<int>(); 
-    } 
-}; 
+        Base<T>::template foo<int>();
+    }
+};
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

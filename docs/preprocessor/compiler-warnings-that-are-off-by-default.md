@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b5a4551387716c81766ae99759f8188410497be
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: c7b48b2382ee22cc5d11c1145dc494aca4e7997f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42465508"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083197"
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan derleyici uyarıları
 Derleyici, çoğu Geliştirici bunları görmek istemediğinden, varsayılan olarak kapalı uyarıları içerir. Bazı durumlarda, bunlar bir stil seçimi temsil ortak deyimleri eski koduna sahip olan veya dil için bir Microsoft uzantısı yararlanın. Diğer durumlarda, bunlar burada programcılar beklenmeyen veya tanımsız davranışa neden yanlış varsayımlarda bulunmaları genellikle olun bir alanı belirtir. Bu uyarıların bazıları kitaplığı üst bilgilerinde çok gürültülü olabilir. C çalışma zamanı kitaplıkları ve C++ Standart Kitaplığı yalnızca uyarı düzeyinde uyarı yaymak için hedeflenen [/W4](../build/reference/compiler-option-warning-level.md).
@@ -154,12 +154,12 @@ Aşağıdaki uyarılar Visual Studio 2015 ve sonraki sürümlerinde varsayılan 
 |C5042 (Düzey 3)|'*işlevi*': blok kapsamındaki işlev bildirimleri, standart C++'da belirtilen 'inline' olamaz; 'inline' tanımlayıcısını kaldırın <sup>15.5</sup>|
 |[C5045](../error-messages/compiler-warnings/c5045.md)|Derleyici/qspectre anahtarı belirtilmişse bellek yükü için Spectre risk azaltma ekler <sup>15.7</sup>|
 
-<sup>14.1</sup> bu uyarı, Visual Studio 2015 güncelleştirme 1'den itibaren kullanılabilmektedir.  
-<sup>14.3</sup> bu uyarı, Visual Studio 2015 güncelleştirme 3'te ' den itibaren kullanılabilmektedir.  
-<sup>15.3</sup> bu uyarı, Visual Studio 2017 sürüm 15.3'den itibaren kullanılabilmektedir.  
-<sup>15.5</sup> bu uyarı, Visual Studio 2017 15.5 sürümünden itibaren kullanılabilir.  
-<sup>15.7</sup> bu uyarı, Visual Studio 2017 sürüm 15.7'den itibaren kullanılabilmektedir.  
-<sup>Kalıcı</sup> bu uyarıyı devre dışı olduğu sürece [/ permissive-](../build/reference/permissive-standards-conformance.md) derleyici seçeneği ayarlanır.  
+<sup>14.1</sup> bu uyarı, Visual Studio 2015 güncelleştirme 1'den itibaren kullanılabilmektedir.<br/>
+<sup>14.3</sup> bu uyarı, Visual Studio 2015 güncelleştirme 3'te ' den itibaren kullanılabilmektedir.<br/>
+<sup>15.3</sup> bu uyarı, Visual Studio 2017 sürüm 15.3'den itibaren kullanılabilmektedir.<br/>
+<sup>15.5</sup> bu uyarı, Visual Studio 2017 15.5 sürümünden itibaren kullanılabilir.<br/>
+<sup>15.7</sup> bu uyarı, Visual Studio 2017 sürüm 15.7'den itibaren kullanılabilmektedir.<br/>
+<sup>Kalıcı</sup> bu uyarıyı devre dışı olduğu sürece [/ permissive-](../build/reference/permissive-standards-conformance.md) derleyici seçeneği ayarlanır.<br/>
 
 ## <a name="warnings-off-by-default-in-earlier-versions"></a>Önceki sürümlerde varsayılan olarak kapalı uyarıları
 

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b25f957615d738d0608f911736bb42f8e3731dd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dbe2c743f04e8fc8dc67947b9bd9d5560dd35182
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391629"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052700"
 ---
 # <a name="html-basics"></a>HTML Temelleri
 
@@ -47,9 +47,9 @@ Aşağıdaki adımlar, basit bir Web sayfası oluşturmak için HTML etiketlerin
 
 1. Gelen ve tarayıcınız, anahtar **dosya** menüsünde seçin **açık**, veya tür *file://C:/webpages/first.htm* tarayıcının URL'si düzenleme kutusuna. Pencere başlığı "Üst HTML etiketleri" ile boş bir sayfa görmeniz gerekir
 
-     Etiketler halindedir ve köşeli ayraçlar içine dahil dikkat edin. Etiketler büyük küçük harfe duyarlı değildir, ancak büyük/küçük harf genellikle göze etiketleri oluşturmak için kullanılır.
+   Etiketler halindedir ve köşeli ayraçlar içine dahil dikkat edin. Etiketler büyük küçük harfe duyarlı değildir, ancak büyük/küçük harf genellikle göze etiketleri oluşturmak için kullanılır.
 
-     Etiket \<HTML > belge ve etiket başlar \</HTML > Bu da sona erer. Bitiş etiketleri (her zaman gerekli değil) başlangıç etiketi ile aynıdır, ancak bir eğik çizgi (/) etiketi önünde sahip. Açılı ayraç (<) ve etiket alanınızda başlangıcı arasındaki boşluk olmamalıdır.
+   Etiket \<HTML > belge ve etiket başlar \</HTML > Bu da sona erer. Bitiş etiketleri (her zaman gerekli değil) başlangıç etiketi ile aynıdır, ancak bir eğik çizgi (/) etiketi önünde sahip. Açılı ayraç (<) ve etiket alanınızda başlangıcı arasındaki boşluk olmamalıdır.
 
 1. Anahtarı not defteri dönün ve sonra  \< /HEAD > Satır, yazın:
 
@@ -64,9 +64,9 @@ Aşağıdaki adımlar, basit bir Web sayfası oluşturmak için HTML etiketlerin
 
 1. Tarayıcıya geri dönün ve sayfayı yenileyin.
 
-     Sözcükler, tarayıcı penceresinin istemci alanında görünür. Satır başı göz ardı edilir dikkat edin. Satır sonu isterseniz içermelidir bir `<BR>` ilk satırdan etiketi.
+   Sözcükler, tarayıcı penceresinin istemci alanında görünür. Satır başı göz ardı edilir dikkat edin. Satır sonu isterseniz içermelidir bir `<BR>` ilk satırdan etiketi.
 
-     Herhangi bir yere arasına metin Ekle, takip tüm adımlar için \<GÖVDESİ > ve  \< /BODY > belgenizin gövdesine eklenecek.
+   Herhangi bir yere arasına metin Ekle, takip tüm adımlar için \<GÖVDESİ > ve  \< /BODY > belgenizin gövdesine eklenecek.
 
 9. Bir üst bilgisi ekleyin:
 

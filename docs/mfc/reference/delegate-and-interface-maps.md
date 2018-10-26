@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f44d362fc30503b062221c358dde6b2c10b9bd3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2bbf1a088151bcd2a6ecc1990c668211c6f70cd9
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423760"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065492"
 ---
 |||
 |-|-|
@@ -34,7 +34,6 @@ ms.locfileid: "46423760"
 |[INTERFACE_PART](#interface_part)|Nesnenizin destekleyeceği her arabirim için makro begın_ınterface_map ve end_ınterface_map makrosu arasında kullanılır.|
 |[MAKE_DELEGATE](#make_delegate)|Yönetilen bir denetim için bir olay işleyicisi ekler.|
 
-
 ## <a name="begin_delegate_map"></a> BEGIN_DELEGATE_MAP
 
 Bir temsilci harita başlar.
@@ -44,6 +43,7 @@ Bir temsilci harita başlar.
 ```
 BEGIN_DELEGATE_MAP(  CLASS );
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *SINIFI*<br/>
@@ -70,6 +70,7 @@ V souboru implementace kullanıldığında interfaced eşleme tanımı başlar.
 ```
 BEGIN_INTERFACE_MAP( theClass, baseClass )
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *Sınıfın*<br/>
@@ -97,6 +98,7 @@ Geri çağırma yöntemleri ile bir komut kaynak kaydeder.
 ```
 delegate void CommandHandler(  UINT^ cmdID  );
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
@@ -127,6 +129,7 @@ Geri çağırma yöntemleri ile bir kullanıcı arabirimi güncelleştirme komut
 ```
 delegate void CommandUIHandler(  unsigned int cmdID, ICommandUI^ cmdUI);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
@@ -172,7 +175,6 @@ Bu makro, bir temsilci harita oluşturma temsilci girişlerinin listesini sonunu
 
 [Nasıl yapılır: Yerel C++ Sınıflarından İç Havuz Windows Forms Olayları](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
 
-
 ##  <a name="end_interface_map"></a>END_INTERFACE_MAP
 
 Arabirim eşlemesini uygulama dosyasında sona erer.
@@ -196,7 +198,6 @@ Arabirim eşlemeleri hakkında daha fazla bilgi için bkz: [Teknik Not 38](../tn
 [Makroları ve genel öğeleri](mfc-macros-and-globals.md)<br/>
 [BEGIN_INTERFACE_MAP](#begin_interface_map)
 
-
 ##  <a name="event_delegate_entry"></a>EVENT_DELEGATE_ENTRY
 
 Temsilci haritada bir giriş oluşturur.
@@ -206,6 +207,7 @@ Temsilci haritada bir giriş oluşturur.
 ```
 EVENT_DELEGATE_ENTRY(MEMBER, ARG0, ARG1);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *ÜYESİ*<br/>
@@ -242,7 +244,6 @@ END_DELEGATE_MAP()
 [BEGIN_DELEGATE_MAP](#begin_delegate_map)<br/>
 [END_DELEGATE_MAP](#end_delegate_map)
 
-
 ##  <a name="interface_part"></a>INTERFACE_PART
 
 Nesnenizin destekleyeceği her arabirim için makro begın_ınterface_map ve end_ınterface_map makrosu arasında kullanılır.
@@ -252,6 +253,7 @@ Nesnenizin destekleyeceği her arabirim için makro begın_ınterface_map ve end
 ```
 INTERFACE_PART( theClass, iid, localClass)
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *Sınıfın*<br/>
@@ -271,7 +273,6 @@ Arabirim eşlemeleri hakkında daha fazla bilgi için bkz. [Teknik Not 38](../tn
 
 **Başlık:** afxwin.h
 
-
 ##  <a name="make_delegate"></a>MAKE_DELEGATE
 
 Yönetilen bir denetim için bir olay işleyicisi ekler.
@@ -281,6 +282,7 @@ Yönetilen bir denetim için bir olay işleyicisi ekler.
 ```
 MAKE_DELEGATE( DELEGATE,  MEMBER) ;
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *TEMSİLCİ*<br/>
@@ -316,7 +318,4 @@ void CMyView::OnInitialUpdate()
 [BEGIN_DELEGATE_MAP](#begin_delegate_map)<br/>
 [END_DELEGATE_MAP](#end_delegate_map)<br/>
 [EVENT_DELEGATE_ENTRY](#event_delegate_entry)
-
-
-
 

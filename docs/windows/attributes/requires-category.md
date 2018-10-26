@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 61743dfdb5eb684cbf09705ace4ce2531c292ff4
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: d570a2302f072d375962176f0e139035b4ec3ccc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789856"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059564"
 ---
 # <a name="requirescategory"></a>requires_category
 
@@ -80,4 +80,4 @@ class CMyClass {};
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [COM Öznitelikleri](com-attributes.md)<br/>
-[implements_category](implements-category.md)  
+[implements_category](implements-category.md)

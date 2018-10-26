@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9397dbd6c18d2256bf1803080f32d1fae36a159
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e23e883c143b1c65d4f150092193a7a693a34269
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46430585"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065245"
 ---
 # <a name="cmfcribbonmainpanel-class"></a>CMFCRibbonMainPanel sınıfı
 
@@ -96,7 +96,8 @@ virtual void Add(CMFCRibbonBaseElement* pElem);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] [out] *pElem* ana panele eklemek için Şerit öğesi için bir işaretçi.
+*pElem*<br/>
+[out içinde] Ana panele eklemek için Şerit öğesi için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -132,7 +133,8 @@ void AddToBottom(CMFCRibbonMainPanelButton* pElem);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] [out] *pElem* ana panelinin altına eklemek için Şerit öğesi için bir işaretçi.
+*pElem*<br/>
+[out içinde] Ana panelinin altına eklemek için Şerit öğesi için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 

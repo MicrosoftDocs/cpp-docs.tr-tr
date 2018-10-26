@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3dce0efa8ced6e51557e4efc64b8c5f7441d662
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4b3e340f00170eb8351cb66e816cbaa7dc76fbd6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422382"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075547"
 ---
 # <a name="cftpconnection-class"></a>CFtpConnection sınıfı
 
@@ -115,7 +115,6 @@ CFtpConnection(
     HINTERNET hConnected,
     LPCTSTR pstrServer,
     DWORD_PTR dwContext);
-
 
 CFtpConnection(
     CInternetSession* pSession,

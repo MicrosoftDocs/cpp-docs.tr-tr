@@ -82,12 +82,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d057da51eadcd6afa8c50ddc0592f700d42f9f5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b3ba50c607d7522441420686340c1f1ff32a7ccc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46447732"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081556"
 ---
 # <a name="cmfcstatusbar-class"></a>CMFCStatusBar sınıfı
 
@@ -196,7 +196,6 @@ Aşağıdaki örnek, çeşitli yöntemleri çağırmak gösterilmiştir `CMFCSta
 
 ##  <a name="calcfixedlayout"></a>  CMFCStatusBar::CalcFixedLayout
 
-
 ```
 virtual CSize CalcFixedLayout(
     BOOL bStretch,
@@ -205,8 +204,8 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="parameters"></a>Parametreler
 
-*bStretch*<br/>
-[in] [in] *bHorz*
+[in] *bStretch*<br/>
+[in] *bHorz*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -214,21 +213,19 @@ virtual CSize CalcFixedLayout(
 
 ##  <a name="commandtoindex"></a>  CMFCStatusBar::CommandToIndex
 
-
 ```
 int CommandToIndex(UINT nIDFind) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nIDFind*
+[in] *nIDFind*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="create"></a>  CMFCStatusBar::Create
-
 
 ```
 BOOL Create(
@@ -239,15 +236,15 @@ BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*pParentWnd*<br/>
-[in] [in] *dwStyle* [in] *nID*
+[in] *pParentWnd*<br/>
+[in] *dwStyle*<br/>
+[in] *nID*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="createex"></a>  CMFCStatusBar::CreateEx
-
 
 ```
 BOOL CreateEx(
@@ -259,17 +256,16 @@ BOOL CreateEx(
 
 ### <a name="parameters"></a>Parametreler
 
-*pParentWnd*<br/>
-[in] [in] *dwCtrlStyle*
-*dwStyle*<br/>
-[in] [in] *nID*
+[in] *pParentWnd*<br/>
+[in] *dwCtrlStyle*<br/>
+[in] *dwStyle*<br/>
+[in] *nID*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="doesallowdyninsertbefore"></a>  CMFCStatusBar::DoesAllowDynInsertBefore
-
 
 ```
 virtual BOOL DoesAllowDynInsertBefore() const;
@@ -352,7 +348,6 @@ Durum çubuğunda bölmeleri sayısı.
 
 ##  <a name="getdrawextendedarea"></a>  CMFCStatusBar::GetDrawExtendedArea
 
-
 ```
 BOOL GetDrawExtendedArea() const;
 ```
@@ -363,14 +358,13 @@ BOOL GetDrawExtendedArea() const;
 
 ##  <a name="getextendedarea"></a>  CMFCStatusBar::GetExtendedArea
 
-
 ```
 virtual BOOL GetExtendedArea(CRect& rect) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *dikdörtgen*
+[in] *dikdörtgen*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -378,21 +372,19 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
 
 ##  <a name="getitemid"></a>  CMFCStatusBar::GetItemID
 
-
 ```
 UINT GetItemID(int nIndex) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nIndex*
+[in] *nIndex*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getitemrect"></a>  CMFCStatusBar::GetItemRect
-
 
 ```
 void GetItemRect(
@@ -402,13 +394,12 @@ void GetItemRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-[in] [in] *lpRect*
+[in] *nIndex*<br/>
+[in] *lpRect*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getpaneinfo"></a>  CMFCStatusBar::GetPaneInfo
-
 
 ```
 void GetPaneInfo(
@@ -420,15 +411,14 @@ void GetPaneInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-[in] [in] *nID*
-*nStyle*<br/>
-[in] [in] *cxWidth*
+[in] *nIndex*<br/>
+[in] *nID*<br/>
+[in] *nStyle*<br/>
+[in] *cxWidth*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getpaneprogress"></a>  CMFCStatusBar::GetPaneProgress
-
 
 ```
 long GetPaneProgress(int nIndex) const;
@@ -436,7 +426,7 @@ long GetPaneProgress(int nIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nIndex*
+[in] *nIndex*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -444,21 +434,19 @@ long GetPaneProgress(int nIndex) const;
 
 ##  <a name="getpanestyle"></a>  CMFCStatusBar::GetPaneStyle
 
-
 ```
 UINT GetPaneStyle(int nIndex) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nIndex*
+[in] *nIndex*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getpanetext"></a>  CMFCStatusBar::GetPaneText
-
 
 ```
 void GetPaneText(
@@ -470,8 +458,8 @@ CString GetPaneText(int nIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-[in] [in] *s*
+[in] *nIndex*<br/>
+[in] *s*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -554,14 +542,13 @@ Bu yöntemin bir `CMFCStatusBar`-türetilmiş bölme görünümünü özelleşti
 
 ##  <a name="precreatewindow"></a>  CMFCStatusBar::PreCreateWindow
 
-
 ```
 virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *cs*
+[in] *cs*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -569,19 +556,17 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 
 ##  <a name="setdrawextendedarea"></a>  CMFCStatusBar::SetDrawExtendedArea
 
-
 ```
 void SetDrawExtendedArea(BOOL bSet = TRUE);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bInternet*
+[in] *bInternet*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setindicators"></a>  CMFCStatusBar::SetIndicators
-
 
 ```
 BOOL SetIndicators(
@@ -591,8 +576,8 @@ BOOL SetIndicators(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpIDArray*<br/>
-[in] [in] *nIDCount*
+[in] *lpIDArray*<br/>
+[in] *nIDCount*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -660,7 +645,6 @@ void SetPaneIcon(
     HICON hIcon,
     BOOL bUpdate=TRUE);
 
-
 void SetPaneIcon(
     int nIndex,
     HBITMAP hBmp,
@@ -693,7 +677,6 @@ Bölmedeki resmi ayarlamak için saydam rengi ile birlikte HICON ya da HBITMAP g
 
 ##  <a name="setpaneinfo"></a>  CMFCStatusBar::SetPaneInfo
 
-
 ```
 void SetPaneInfo(
     int nIndex,
@@ -704,10 +687,10 @@ void SetPaneInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-[in] [in] *nID*
-*nStyle*<br/>
-[in] [in] *cxWidth*
+[in] *nIndex*<br/>
+[in] *nID*<br/>
+[in] *nStyle*<br/>
+[in] *cxWidth*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -741,7 +724,6 @@ Verilen bölmesi bu işlevi kullanmak için çağırmalıdır [CMFCStatusBar::En
 
 ##  <a name="setpanestyle"></a>  CMFCStatusBar::SetPaneStyle
 
-
 ```
 void SetPaneStyle(
     int nIndex,
@@ -750,13 +732,12 @@ void SetPaneStyle(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-[in] [in] *nStyle*
+[in] *nIndex*<br/>
+[in] *nStyle*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setpanetext"></a>  CMFCStatusBar::SetPaneText
-
 
 ```
 virtual BOOL SetPaneText(
@@ -767,8 +748,9 @@ virtual BOOL SetPaneText(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-[in] [in] *lpszNewText* [in] *bgüncelleştirmesinin*
+[in] *nIndex*<br/>
+[in] *lpszNewText*<br/>
+[in] *bgüncelleştirmesinin*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 

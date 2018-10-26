@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88873c9ebde2ce03163e62a59f3dd6fffdd36849
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fdbf1ba3c4cfda4163076386def70c700c156aa7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090288"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057891"
 ---
 # <a name="assertion-and-user-supplied-messages-c"></a>Onaylama ve Kullanıcının Sağladığı İletiler (C++)
 
@@ -36,7 +36,7 @@ Zaman aşamayı çalıştırmak ve derleme veya ön işleme uygulamanızın ömr
 
 - [Static_assert](../cpp/static-assert.md) bildirimi yürürlükte olan derleme zamanında. Bu kullanıcı tarafından belirtilen ve bir Boolean değerine dönüştürülebilir bir integral ifadesi tarafından temsil edilen bir yazılım onayını sınar. İfade sıfır (false) olarak değerlendirilirse, kullanıcı tarafından belirtilen ileti derleyici verir ve derleme bir hata ile başarısız olur.
 
-     `static_assert` Bildirimi, şablon bağımsız değişkenleri, kullanıcı tarafından belirtilen ifade eklenebilir olduğundan, şablonları hata ayıklama için özellikle kullanışlıdır.
+   `static_assert` Bildirimi, şablon bağımsız değişkenleri, kullanıcı tarafından belirtilen ifade eklenebilir olduğundan, şablonları hata ayıklama için özellikle kullanışlıdır.
 
 - [Assert makrosu, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu yürürlükte olan çalışma zamanında. Bir kullanıcı tarafından belirtilen ifadeyi değerlendirir ve sonucu sıfır ise, sistem bir tanılama iletisi yayınlar ve uygulamanızı kapatır. Diğer birçok makrolar gibi[_ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) ve _ASSERTE, bu makroyu benzer ancak farklı sistem tanımlı veya kullanıcı tanımlı tanılama iletileri yayınlar.
 

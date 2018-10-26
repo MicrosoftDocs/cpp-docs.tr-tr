@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d76e5de4b8b7652857d935795c638c4f603f604b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dad3f7309d36f7233d871ea47a859c4e572140f6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434693"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065466"
 ---
 # <a name="cdialogbar-class"></a>CDialogBar sınıfı
 
@@ -96,7 +96,6 @@ virtual BOOL Create(
     LPCTSTR lpszTemplateName,
     UINT nStyle,
     UINT nID);
-
 
 virtual BOOL Create(
     CWnd* pParentWnd,

@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17040448771e4ca3c0f999e72a9c08f0e1fa28aa
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c10908454252b1ae381a2b96835ce09f3aa6db6f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058503"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053662"
 ---
 # <a name="registry-macros"></a>Kayıt defteri makroları
 
@@ -41,7 +41,7 @@ Bu makrolar, kullanışlı bir tür kitaplığı ve kayıt defteri özellikleri 
 |[DECLARE_REGISTRY](#declare_registry)|Girer veya giriş ana nesnenin sistem kayıt defterinde kaldırır.|
 |[DECLARE_REGISTRY_APPID_RESOURCEID](#declare_registry_appid_resourceid)|Otomatik olarak kaydetmek için gereken bilgileri belirtir *AppID*.|
 |[DECLARE_REGISTRY_RESOURCE](#declare_registry_resource)|Adlandırılmış kaynağı bulur ve içindeki kayıt betiği çalıştırır.|
-|[DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid)|Bir kimlik numarası tarafından tanımlanan kaynağa bulur ve içindeki kayıt betiği çalıştırır.|  
+|[DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid)|Bir kimlik numarası tarafından tanımlanan kaynağa bulur ve içindeki kayıt betiği çalıştırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -96,10 +96,10 @@ Sistem kayıt defterine standart sınıf kayıt girer veya sistem kayıt defteri
 
 ```
 DECLARE_REGISTRY(
-    class, 
-    pid, 
-    vpid, 
-    nid, 
+    class,
+    pid,
+    vpid,
+    nid,
     flags )
 ```
 
@@ -132,7 +132,7 @@ Otomatik olarak kaydetmek için gereken bilgileri belirtir *AppID*.
 
 ```
 DECLARE_REGISTRY_APPID_RESOURCEID(
-    resid, 
+    resid,
     appid )
 ```
 
@@ -173,7 +173,7 @@ Statik olarak en iyi duruma getirilmiş kayıt defteri erişimi için ATL kayıt
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 
-ATL çalışma zamanında değiştirme değerlerini değiştirmek isterseniz, DECLARE_REGISTRY_RESOURCE veya DECLARE_REGISTRY_RESOURCEID makrosu belirtmeyin. Bunun yerine, bir dizi oluşturma `_ATL_REGMAP_ENTRIES` yapıları, burada her giriş içeren bir değişken yer tutucu eşleştirilmiş bir değerle çalışma zamanında yer tutucusunu değiştirin. Ardından çağırın [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) veya [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), dizisi geçirerek. Bu tüm yeni değerler ekler `_ATL_REGMAP_ENTRIES` yapılarını şirketinin değiştirme eşlemesi.  
+ATL çalışma zamanında değiştirme değerlerini değiştirmek isterseniz, DECLARE_REGISTRY_RESOURCE veya DECLARE_REGISTRY_RESOURCEID makrosu belirtmeyin. Bunun yerine, bir dizi oluşturma `_ATL_REGMAP_ENTRIES` yapıları, burada her giriş içeren bir değişken yer tutucu eşleştirilmiş bir değerle çalışma zamanında yer tutucusunu değiştirin. Ardından çağırın [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) veya [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), dizisi geçirerek. Bu tüm yeni değerler ekler `_ATL_REGMAP_ENTRIES` yapılarını şirketinin değiştirme eşlemesi.
 
 Değiştirilebilir parametreler ve betik oluşturma hakkında daha fazla bilgi için bkz [ATL kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md).
 
@@ -198,7 +198,7 @@ Statik olarak en iyi duruma getirilmiş kayıt defteri erişimi için ATL kayıt
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 
-ATL çalışma zamanında değiştirme değerlerini değiştirmek isterseniz, DECLARE_REGISTRY_RESOURCE veya DECLARE_REGISTRY_RESOURCEID makrosu belirtmeyin. Bunun yerine, bir dizi oluşturma `_ATL_REGMAP_ENTRIES` yapıları, burada her giriş içeren bir değişken yer tutucu eşleştirilmiş bir değerle çalışma zamanında yer tutucusunu değiştirin. Ardından çağırın [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) veya [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), dizisi geçirerek. Bu tüm yeni değerler ekler `_ATL_REGMAP_ENTRIES` yapılarını şirketinin değiştirme eşlemesi.  
+ATL çalışma zamanında değiştirme değerlerini değiştirmek isterseniz, DECLARE_REGISTRY_RESOURCE veya DECLARE_REGISTRY_RESOURCEID makrosu belirtmeyin. Bunun yerine, bir dizi oluşturma `_ATL_REGMAP_ENTRIES` yapıları, burada her giriş içeren bir değişken yer tutucu eşleştirilmiş bir değerle çalışma zamanında yer tutucusunu değiştirin. Ardından çağırın [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) veya [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), dizisi geçirerek. Bu tüm yeni değerler ekler `_ATL_REGMAP_ENTRIES` yapılarını şirketinin değiştirme eşlemesi.
 
 Değiştirilebilir parametreler ve betik oluşturma hakkında daha fazla bilgi için bkz [ATL kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md).
 

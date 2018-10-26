@@ -33,94 +33,94 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b73111fe05a7c752edda0c95f1289a125828d4a5
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: a2ddd7e1a4397b36daba8b354c84941d0d1c4d0e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082559"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057978"
 ---
 # <a name="icommandtextimpl-class"></a>ICommandTextImpl Sınıfı
 
-Bir uygulamasını sağlar [ICommandText](/previous-versions/windows/desktop/ms714914) arabirimi.  
-  
+Bir uygulamasını sağlar [ICommandText](/previous-versions/windows/desktop/ms714914) arabirimi.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-template <class T >  
-class ATL_NO_VTABLE ICommandTextImpl   
-   : public ICommandImpl<T, ICommandText>  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+template <class T >
+class ATL_NO_VTABLE ICommandTextImpl
+   : public ICommandImpl<T, ICommandText>
+```
+
+### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Komut sınıfı türetilen `ICommandTextImpl`. 
+Komut sınıfı türetilen `ICommandTextImpl`.
 
-## <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** altdb.h  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="interface-methods"></a>Arabirim yöntemleri  
-  
-|||  
-|-|-|  
-|[GetCommandText](#getcommandtext)|Son çağrısı tarafından ayarlanan metin komutu döndürür [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md).|  
-|[SetCommandText](#setcommandtext)|Mevcut komut metni değiştirme komut metni, ayarlar.|  
-  
-### <a name="data-members"></a>Veri üyeleri  
-  
-|||  
-|-|-|  
-|[m_strCommandText](#strcommandtext)|Komut metni depolar.|  
-  
-## <a name="remarks"></a>Açıklamalar  
+**Başlık:** altdb.h
 
-Zorunlu bir arabirim açma komutları.  
- 
+## <a name="members"></a>Üyeler
+
+### <a name="interface-methods"></a>Arabirim yöntemleri
+
+|||
+|-|-|
+|[GetCommandText](#getcommandtext)|Son çağrısı tarafından ayarlanan metin komutu döndürür [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md).|
+|[SetCommandText](#setcommandtext)|Mevcut komut metni değiştirme komut metni, ayarlar.|
+
+### <a name="data-members"></a>Veri üyeleri
+
+|||
+|-|-|
+|[m_strCommandText](#strcommandtext)|Komut metni depolar.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Zorunlu bir arabirim açma komutları.
+
 ## <a name="getcommandtext"></a> Icommandtextımpl::getcommandtext
 
-Son çağrısı tarafından ayarlanan metin komutu döndürür [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md).  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp
-STDMETHOD(GetCommandText)(GUID * pguidDialect,   
-   LPOLESTR * ppwszCommand);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+Son çağrısı tarafından ayarlanan metin komutu döndürür [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md).
 
-Bkz: [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825) içinde *OLE DB Programcının Başvurusu*. *PguidDialect* parametre varsayılan olarak sayılır.  
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+STDMETHOD(GetCommandText)(GUID * pguidDialect, 
+   LPOLESTR * ppwszCommand);
+```
+
+#### <a name="parameters"></a>Parametreler
+
+Bkz: [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825) içinde *OLE DB Programcının Başvurusu*. *PguidDialect* parametre varsayılan olarak sayılır.
 
 ## <a name="setcommandtext"></a> Icommandtextımpl::setCommandText
 
-Mevcut komut metni değiştirme komut metni, ayarlar.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp
-STDMETHOD(SetCommandText)(REFGUID rguidDialect,   
-   LPCOLESTR pwszCommand);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+Mevcut komut metni değiştirme komut metni, ayarlar.
 
-Bkz: [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757) içinde *OLE DB Programcının Başvurusu*. 
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+STDMETHOD(SetCommandText)(REFGUID rguidDialect, 
+   LPCOLESTR pwszCommand);
+```
+
+#### <a name="parameters"></a>Parametreler
+
+Bkz: [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="strcommandtext"></a> Icommandtextımpl::m_strCommandText
 
-Komut metni dizesi depolar.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Komut metni dizesi depolar.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-CComBSTR m_strCommandText;  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+CComBSTR m_strCommandText;
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

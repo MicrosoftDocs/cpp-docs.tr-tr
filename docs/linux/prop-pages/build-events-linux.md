@@ -12,65 +12,65 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 38c036bf747115823b853d0d66077f4402a7f7ea
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2ea01c5d92cbdb6066dc87675221eae6865af354
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33338412"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070991"
 ---
-# <a name="build-event-properties-linux-c"></a>Yapı olay özellikleri (Linux C++) 
+# <a name="build-event-properties-linux-c"></a>Derleme olay özellikleri (Linux C++)
 
 ## <a name="pre-build-event"></a>Derleme öncesi olay
 
 Özellik | Açıklama
 --- | ---
-Komut satırı | Oluşturma öncesi olay aracını çalıştırmak için komut satırını belirtir.
-Açıklama | Görüntülenecek oluşturma öncesi olay aracı için bir açıklama belirtir.
-Yapı kullanımda | Bu yapı olay yapılandırmasına yapıdan tutulup tutulmayacağını belirtir.
-Kopyalamak için ek dosyalar | Uzak sisteme kopyalama için ek dosyalar belirtir. İsteğe bağlı olarak listesi yerel bir uzak eşleme çiftlerine böyle bir söz dizimi kullanılarak sağlanabilir: fulllocalpath1: fullremotepath1; = fulllocalpath2: yerel bir dosya kopyalanabildiği belirtilen uzak konuma uzak sistem üzerindeki fullremotepath2 =.
+Komut satırı | Derleme öncesi olay aracının çalıştırması için bir komut satırı belirtir.
+Açıklama | Derleme öncesi olay aracının görüntülemesi bir açıklama belirtir.
+Derlemede kullan | Bu derleme olayının geçerli yapılandırmada derlemenin dışında tutulup tutulmayacağını belirtir.
+Kopyalanacak ek dosyaları | Uzak sisteme kopyalanacak ek dosyaları belirtir. İsteğe bağlı olarak liste yerel için eşleme çiftlerine şunun gibi bir söz dizimi kullanılarak sağlanabilir: fulllocalpath1: = fullremotepath1; fulllocalpath2: = fulllocalpath2, burada bir yerel dosya kopyalanabilir uzak sistemde belirtilen uzak konuma.
 
 ## <a name="pre-link-event"></a>Bağlama öncesi olay
 
 Özellik | Açıklama
 --- | ---
-Komut satırı | Bağlama öncesi olay aracını çalıştırmak için komut satırını belirtir.
-Açıklama | Görüntülenecek bağlama öncesi olay aracı için bir açıklama belirtir.
-Yapı kullanımda | Bu yapı olay yapılandırmasına yapıdan tutulup tutulmayacağını belirtir.
-Kopyalamak için ek dosyalar | Uzak sisteme kopyalama için ek dosyalar belirtir. İsteğe bağlı olarak listesi yerel bir uzak eşleme çiftlerine böyle bir söz dizimi kullanılarak sağlanabilir: fulllocalpath1: fullremotepath1; = fulllocalpath2: yerel bir dosya kopyalanabildiği belirtilen uzak konuma uzak sistem üzerindeki fullremotepath2 =.
+Komut satırı | Bağlama öncesi olay aracının çalıştırması için bir komut satırı belirtir.
+Açıklama | Bağlama öncesi olay aracının görüntülemesi bir açıklama belirtir.
+Derlemede kullan | Bu derleme olayının geçerli yapılandırmada derlemenin dışında tutulup tutulmayacağını belirtir.
+Kopyalanacak ek dosyaları | Uzak sisteme kopyalanacak ek dosyaları belirtir. İsteğe bağlı olarak liste yerel için eşleme çiftlerine şunun gibi bir söz dizimi kullanılarak sağlanabilir: fulllocalpath1: = fullremotepath1; fulllocalpath2: = fulllocalpath2, burada bir yerel dosya kopyalanabilir uzak sistemde belirtilen uzak konuma.
 
 ## <a name="post-build-event"></a>Derleme sonrası olay
 
 Özellik | Açıklama
 --- | ---
-Komut satırı | Oluşturma sonrası olay aracını çalıştırmak için komut satırını belirtir.
-Açıklama | Görüntülenecek oluşturma sonrası olay aracı için bir açıklama belirtir.
-Yapı kullanımda | Bu yapı olay yapılandırmasına yapıdan tutulup tutulmayacağını belirtir.
-Kopyalamak için ek dosyalar | Uzak sisteme kopyalama için ek dosyalar belirtir. İsteğe bağlı olarak listesi yerel bir uzak eşleme çiftlerine böyle bir söz dizimi kullanılarak sağlanabilir: fulllocalpath1: fullremotepath1; = fulllocalpath2: yerel bir dosya kopyalanabildiği belirtilen uzak konuma uzak sistem üzerindeki fullremotepath2 =.
+Komut satırı | Derleme sonrası olay aracının çalıştırması için bir komut satırı belirtir.
+Açıklama | Derleme sonrası olay aracının görüntülemesi bir açıklama belirtir.
+Derlemede kullan | Bu derleme olayının geçerli yapılandırmada derlemenin dışında tutulup tutulmayacağını belirtir.
+Kopyalanacak ek dosyaları | Uzak sisteme kopyalanacak ek dosyaları belirtir. İsteğe bağlı olarak liste yerel için eşleme çiftlerine şunun gibi bir söz dizimi kullanılarak sağlanabilir: fulllocalpath1: = fullremotepath1; fulllocalpath2: = fulllocalpath2, burada bir yerel dosya kopyalanabilir uzak sistemde belirtilen uzak konuma.
 
-## <a name="remote-pre-build-event"></a>Uzak oluşturma öncesi olay
-
-Özellik | Açıklama
---- | ---
-Komut satırı | Uzak sistemde çalıştırmak oluşturma öncesi olay aracı için komut satırını belirtir.
-Açıklama | Görüntülenecek oluşturma öncesi olay aracı için bir açıklama belirtir.
-Yapı kullanımda | Bu yapı olay yapılandırmasına yapıdan tutulup tutulmayacağını belirtir.
-Kopyalamak için ek dosyalar | Uzaktaki sistemden kopyalamak için ek dosyalar belirtir. İsteğe bağlı olarak listeden uzak olarak yerel eşleme çiftlerine böyle bir söz dizimi kullanılarak sağlanabilir: fullremotepath1: fulllocalpath1; = fullremotepath2: Uzak bir dosya kopyalanabildiği yerel makine üzerinde belirtilen konuma fulllocalpath2 =.
-
-## <a name="remote-pre-link-event"></a>Uzak bağlama öncesi olay
+## <a name="remote-pre-build-event"></a>Uzaktan derleme öncesi olay
 
 Özellik | Açıklama
 --- | ---
-Komut satırı | Uzak sistemde çalıştırmak bağlama öncesi olay aracı için komut satırını belirtir.
-Açıklama | Görüntülenecek bağlama öncesi olay aracı için bir açıklama belirtir.
-Yapı kullanımda | Bu yapı olay yapılandırmasına yapıdan tutulup tutulmayacağını belirtir.
-Kopyalamak için ek dosyalar | Uzaktaki sistemden kopyalamak için ek dosyalar belirtir. İsteğe bağlı olarak listeden uzak olarak yerel eşleme çiftlerine böyle bir söz dizimi kullanılarak sağlanabilir: fullremotepath1: fulllocalpath1; = fullremotepath2: Uzak bir dosya kopyalanabildiği yerel makine üzerinde belirtilen konuma fulllocalpath2 =.
+Komut satırı | Derleme öncesi olay aracının uzak sistemde çalıştırılması bir komut satırı belirtir.
+Açıklama | Derleme öncesi olay aracının görüntülemesi bir açıklama belirtir.
+Derlemede kullan | Bu derleme olayının geçerli yapılandırmada derlemenin dışında tutulup tutulmayacağını belirtir.
+Kopyalanacak ek dosyaları | Uzak sistemden kopyalanacak ek dosyaları belirtir. İsteğe bağlı olarak liste olarak şunun gibi bir söz dizimi kullanılarak yerel eşleme çiftlerine için sağlanabilir: fullremotepath1: = fulllocalpath1; fulllocalpath2: = fulllocalpath2, burada bir uzak dosya kopyalanabilir yerel makinede belirtilen konuma.
 
-## <a name="remote-post-build-event"></a>Uzak oluşturma sonrası olay
+## <a name="remote-pre-link-event"></a>Uzaktan bağlama öncesi olay
 
 Özellik | Açıklama
 --- | ---
-Komut satırı | Uzak sistemde çalıştırmak oluşturma sonrası olay aracı için komut satırını belirtir.
-Açıklama | Görüntülenecek oluşturma sonrası olay aracı için bir açıklama belirtir.
-Yapı kullanımda | Bu yapı olay yapılandırmasına yapıdan tutulup tutulmayacağını belirtir.
-Kopyalamak için ek dosyalar | Uzaktaki sistemden kopyalamak için ek dosyalar belirtir. İsteğe bağlı olarak listeden uzak olarak yerel eşleme çiftlerine böyle bir söz dizimi kullanılarak sağlanabilir: fullremotepath1: fulllocalpath1; = fullremotepath2: Uzak bir dosya kopyalanabildiği yerel makine üzerinde belirtilen konuma fulllocalpath2 =.
+Komut satırı | Bağlama öncesi olay aracının uzak sistemde çalıştırılması için bir komut satırı belirtir.
+Açıklama | Bağlama öncesi olay aracının görüntülemesi bir açıklama belirtir.
+Derlemede kullan | Bu derleme olayının geçerli yapılandırmada derlemenin dışında tutulup tutulmayacağını belirtir.
+Kopyalanacak ek dosyaları | Uzak sistemden kopyalanacak ek dosyaları belirtir. İsteğe bağlı olarak liste olarak şunun gibi bir söz dizimi kullanılarak yerel eşleme çiftlerine için sağlanabilir: fullremotepath1: = fulllocalpath1; fulllocalpath2: = fulllocalpath2, burada bir uzak dosya kopyalanabilir yerel makinede belirtilen konuma.
+
+## <a name="remote-post-build-event"></a>Uzaktan derleme sonrası olay
+
+Özellik | Açıklama
+--- | ---
+Komut satırı | Derleme sonrası olay aracının uzak sistemde çalıştırılması için bir komut satırı belirtir.
+Açıklama | Derleme sonrası olay aracının görüntülemesi bir açıklama belirtir.
+Derlemede kullan | Bu derleme olayının geçerli yapılandırmada derlemenin dışında tutulup tutulmayacağını belirtir.
+Kopyalanacak ek dosyaları | Uzak sistemden kopyalanacak ek dosyaları belirtir. İsteğe bağlı olarak liste olarak şunun gibi bir söz dizimi kullanılarak yerel eşleme çiftlerine için sağlanabilir: fullremotepath1: = fulllocalpath1; fulllocalpath2: = fulllocalpath2, burada bir uzak dosya kopyalanabilir yerel makinede belirtilen konuma.

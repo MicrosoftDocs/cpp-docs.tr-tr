@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8dee099912b69d48b0ded4184dc68c14da1899fe
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ed6639bdf86a54689834c6eda03a3b6ec4dd171d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391910"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063854"
 ---
 # <a name="toolbar-c-image-editor-for-icons"></a>Araç çubuğu (simgeler için görüntü Düzenleyicisi C++)
 
@@ -36,8 +36,7 @@ ms.locfileid: "46391910"
 > [!NOTE]
 > Kullanılabilir olan tüm araçları **Resim Düzenleyicisi** araç web'da ayrıca **görüntü** menü (altında **Araçları** komutu).
 
-![Resim Düzenleyicisi araç çubuğu](../mfc/media/vcimageeditortoolbar.gif "vcImageEditorToolbar")  
-Resim Düzenleyicisi araç çubuğu
+![Resim Düzenleyicisi araç çubuğu](../mfc/media/vcimageeditortoolbar.gif "vcImageEditorToolbar") Resim Düzenleyicisi araç çubuğu
 
 Kullanılacak **Resim Düzenleyicisi** araç ve **seçeneği** Seçici, Aracı'nı tıklatın veya istediğiniz seçeneği.
 
@@ -46,8 +45,7 @@ Kullanılacak **Resim Düzenleyicisi** araç ve **seçeneği** Seçici, Aracı'n
 
 İle **seçeneği** seçici bir satır, bir fırça vuruşu vb. genişliği belirtebilirsiniz. Simgeye **seçeneği** seçtiğiniz bağlı olarak hangi aracın Seçici düğmesi değişiklikler.
 
-![Çizim&#45;şekli Seçici görüntü düzenleyici araç çubuğunda](../mfc/media/vcimageeditortoolbaroptionselector.gif "vcImageEditorToolbarOptionSelector")  
-Görüntü düzenleyici araç çubuğunda seçenek belirleyici
+![Çizim&#45;şekli Seçici görüntü düzenleyici araç çubuğunda](../mfc/media/vcimageeditortoolbaroptionselector.gif "vcImageEditorToolbarOptionSelector") görüntü düzenleyici araç çubuğunda seçenek belirleyici
 
 Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
 

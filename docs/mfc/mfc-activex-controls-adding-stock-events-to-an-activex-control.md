@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51fff5b7e43b489bdaf2a27b115af26c48e33956
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3bf023dbc52ccac7311a62aba1a290b1a03190dd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400802"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060565"
 ---
 # <a name="mfc-activex-controls-adding-stock-events-to-an-activex-control"></a>MFC ActiveX Denetimleri: Bir ActiveX Denetimine Stok Olaylar Ekleme
 
@@ -73,13 +73,13 @@ Stok olaylar farklı özel olayları otomatik olarak bir sınıf tarafından tet
 |-----------|---------------------|--------------|
 |Şuna tıklayın|**void FireClick)**|Denetim her fareyi yakaladığında harekete **BUTTONUP** (sol, Orta veya sağ) ileti alındığında ve düğmesi denetimin üzerine serbest bırakıldığında. MouseUp olayları ve stok MouseDown önce bu olayı oluşur.<br /><br /> Olay eşleme girişi: **event_stock_clıck)**|
 |DblClick|**void FireDblClick)**|Tıkla benzer ancak harekete ne zaman bir **BUTTONDBLCLK** iletisi aldı.<br /><br /> Olay eşleme girişi: **event_stock_dblclıck)**|
-|Hata|**FireError void (SCODE***scode* **, LPCSTR** `lpszDescription` **, UINT**`nHelpID`**= 0)** |Bir yöntem çağrısı veya özellik erişim kapsamı dışında ActiveX denetimi içinde bir hata meydana geldiğinde tetiklenir.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_ERROREVENT)**|
-|KeyDown|**void FireKeyDown (kısa** `nChar` **, kısa**`nShiftState`**)** |Ne zaman tetiklenen bir `WM_SYSKEYDOWN` veya `WM_KEYDOWN` iletisi alındığında.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_KEYDOWN)**|
-|Tuş Basışı|**void FireKeyPress (kısa** <strong>\*</strong> `pnChar` **)** |Ne zaman tetiklenen bir `WM_CHAR` iletisi aldı.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_KEYPRESS)**|
-|KeyUp|**void FireKeyUp (kısa** `nChar` **, kısa**`nShiftState`**)** |Ne zaman tetiklenen bir `WM_SYSKEYUP` veya `WM_KEYUP` iletisi alındığında.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_KEYUP)**|
-|MouseDown|**void FireMouseDown (kısa** `nButton` **, kısa** `nShiftState` **, float***x* **, float** *y***)** |Varsa harekete **BUTTONDOWN** (sol, Orta veya sağ) alındığında. Bu olay harekete hemen geçirilmeden önce fare yakalanır.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_MOUSEDOWN)**|
-|MouseMove|**void FireMouseMove (kısa** `nButton` **, kısa** `nShiftState` **, float***x* **, float** *y***)** |WM_MOUSEMOVE iletisi alındığında tetiklenir.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_MOUSEMOVE)**|
-|MouseUp|**void FireMouseUp (kısa** `nButton` **, kısa** `nShiftState` **, float***x* **, float** *y***)** |Varsa harekete **BUTTONUP** (sol, Orta veya sağ) alındığında. Bu olay harekete önce fare yakalama serbest bırakılır.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_MOUSEUP)**|
+|Hata|**FireError void (SCODE***scode* **, LPCSTR** `lpszDescription` **, UINT**`nHelpID`**= 0)**|Bir yöntem çağrısı veya özellik erişim kapsamı dışında ActiveX denetimi içinde bir hata meydana geldiğinde tetiklenir.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_ERROREVENT)**|
+|KeyDown|**void FireKeyDown (kısa** `nChar` **, kısa**`nShiftState`**)**|Ne zaman tetiklenen bir `WM_SYSKEYDOWN` veya `WM_KEYDOWN` iletisi alındığında.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_KEYDOWN)**|
+|Tuş Basışı|**void FireKeyPress (kısa** <strong>\*</strong> `pnChar` **)**|Ne zaman tetiklenen bir `WM_CHAR` iletisi aldı.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_KEYPRESS)**|
+|KeyUp|**void FireKeyUp (kısa** `nChar` **, kısa**`nShiftState`**)**|Ne zaman tetiklenen bir `WM_SYSKEYUP` veya `WM_KEYUP` iletisi alındığında.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_KEYUP)**|
+|MouseDown|**void FireMouseDown (kısa** `nButton` **, kısa** `nShiftState` **, float***x* **, float** *y***)**|Varsa harekete **BUTTONDOWN** (sol, Orta veya sağ) alındığında. Bu olay harekete hemen geçirilmeden önce fare yakalanır.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_MOUSEDOWN)**|
+|MouseMove|**void FireMouseMove (kısa** `nButton` **, kısa** `nShiftState` **, float***x* **, float** *y***)**|WM_MOUSEMOVE iletisi alındığında tetiklenir.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_MOUSEMOVE)**|
+|MouseUp|**void FireMouseUp (kısa** `nButton` **, kısa** `nShiftState` **, float***x* **, float** *y***)**|Varsa harekete **BUTTONUP** (sol, Orta veya sağ) alındığında. Bu olay harekete önce fare yakalama serbest bırakılır.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_MOUSEUP)**|
 |ReadyStateChange|**void FireReadyStateChange)**|Denetim geçişlerinden sonraki hazır duruma alınan veri miktarı nedeniyle başlatıldı.<br /><br /> Olay eşleme girişi: **EVENT_STOCK_READYSTATECHANGE)**|
 
 ##  <a name="_core_adding_a_stock_event_using_classwizard"></a> Kullanarak stok olayı ekleme olay Ekleme Sihirbazı
@@ -94,7 +94,7 @@ Stok olaylar ekleme, gerçek olayın Açmadığınızda taban sınıfı tarafın
 
 1. Kısayol menüsünden tıklayın **Ekle** ve ardından **olay Ekle**.
 
-     Bu olay Ekleme Sihirbazı'nı açar.
+   Bu olay Ekleme Sihirbazı'nı açar.
 
 1. İçinde **olay adı** aşağı açılan listesinden `KeyPress`.
 

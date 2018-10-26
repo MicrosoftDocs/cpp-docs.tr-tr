@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 156908a1611f8a1c8b22df61e6b789468753d25d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ebb644c64bbc5eba65860ffb1c1115bfc7662951
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443091"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075276"
 ---
 # <a name="adding-event-handlers-for-dialog-box-controls-c"></a>Olay işleyicileri ekleme iletişim kutusu denetimleri için (C++)
 
@@ -83,4 +83,4 @@ Win32
 [Üye işlevi ekleme](../ide/adding-a-member-function-visual-cpp.md)<br/>
 [Üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md)<br/>
 [Bir sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
-[MFC ileti işleyicisi](../mfc/reference/adding-an-mfc-message-handler.md)  
+[MFC ileti işleyicisi](../mfc/reference/adding-an-mfc-message-handler.md)

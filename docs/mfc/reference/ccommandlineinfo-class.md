@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7f17cf82f7dffe4ac08bd5c27a9eee6210e6010
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f5fd5eb6e4b58cbca21220bf6a7161505505dd3a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379027"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080552"
 ---
 # <a name="ccommandlineinfo-class"></a>Ccommandlineınfo sınıfı
 
@@ -288,7 +288,6 @@ virtual void ParseParam(
     const char* pszParam,
     BOOL bFlag,
     BOOL bLast);
-
 
 virtual void ParseParam(
     const TCHAR* pszParam,

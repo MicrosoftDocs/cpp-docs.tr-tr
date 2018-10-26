@@ -41,131 +41,131 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1ef9799c65f4932bf314f3c11fd8324e0fb40bf2
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: adb59e553565d9886cf27b55f2cfffb4cd0e7aa9
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49081742"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060162"
 ---
 # <a name="caccessorrowset-class"></a>CAccessorRowset Sınıfı
 
-Bir satır kümesi ve tek bir sınıftaki ilişkili erişimcilerini kapsüller.  
-  
+Bir satır kümesi ve tek bir sınıftaki ilişkili erişimcilerini kapsüller.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-template <class TAccessor = CNoAccessor, 
-   template <typename T> class TRowset = CRowset>  
-class CAccessorRowset : public TAccessor, public TRowset<TAccessor>  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+template <class TAccessor = CNoAccessor,
+   template <typename T> class TRowset = CRowset>
+class CAccessorRowset : public TAccessor, public TRowset<TAccessor>
+```
+
+### <a name="parameters"></a>Parametreler
 
 *TAccessor*<br/>
-Bir erişimci sınıfı.  
-  
+Bir erişimci sınıfı.
+
 *CRowset*<br/>
-Bir satır kümesi sınıfı.  
+Bir satır kümesi sınıfı.
 
-## <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="methods"></a>Yöntemler  
-  
-|||  
-|-|-|  
-|[Bind](#bind)|Bağlamaları oluşturur (kullanılabilir `bBind` olarak belirtilen **false** içinde [CCommand::Open](../../data/oledb/ccommand-open.md)).|  
-|[CAccessorRowset](#caccessorrowset)|Oluşturucu.|  
-|[Kapat](#close)|Satır kümesi ve tüm erişimcileri kapatır.|  
-|[FreeRecordMemory](#freerecordmemory)|Hiçbir sütun boşaltılması için gereken geçerli kayıtta serbest bırakır.|  
-|[GetColumnInfo](#getcolumninfo)|Implements [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704).|  
-  
-## <a name="remarks"></a>Açıklamalar  
+**Başlık:** atldbcli.h
 
-Sınıf `TAccessor` erişimci yönetir. Sınıf *CRowset* satır kümesi yönetir.  
+## <a name="members"></a>Üyeler
+
+### <a name="methods"></a>Yöntemler
+
+|||
+|-|-|
+|[Bind](#bind)|Bağlamaları oluşturur (kullanılabilir `bBind` olarak belirtilen **false** içinde [CCommand::Open](../../data/oledb/ccommand-open.md)).|
+|[CAccessorRowset](#caccessorrowset)|Oluşturucu.|
+|[Kapat](#close)|Satır kümesi ve tüm erişimcileri kapatır.|
+|[FreeRecordMemory](#freerecordmemory)|Hiçbir sütun boşaltılması için gereken geçerli kayıtta serbest bırakır.|
+|[GetColumnInfo](#getcolumninfo)|Implements [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704).|
+
+## <a name="remarks"></a>Açıklamalar
+
+Sınıf `TAccessor` erişimci yönetir. Sınıf *CRowset* satır kümesi yönetir.
 
 ## <a name="bind"></a> CAccessorRowset::Bind
 
-Belirttiyseniz bağlamaları oluşturur `bBind` olarak **false** içinde [CCommand::Open](../../data/oledb/ccommand-open.md).  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp
-HRESULT Bind();  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
+Belirttiyseniz bağlamaları oluşturur `bBind` olarak **false** içinde [CCommand::Open](../../data/oledb/ccommand-open.md).
 
-Standart bir HRESULT.  
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT Bind();
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Standart bir HRESULT.
 
 ## <a name="caccessorrowset"></a> CAccessorRowset::CAccessorRowset
 
-Başlatır `CAccessorRowset` nesne.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Başlatır `CAccessorRowset` nesne.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-CAccessorRowset();  
-```  
+CAccessorRowset();
+```
 
 ## <a name="close"></a> CAccessorRowset::Close
 
-Tüm etkin erişimciler ve satır kümesi serbest bırakır.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp
-void Close();  
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
+Tüm etkin erişimciler ve satır kümesi serbest bırakır.
 
-Herhangi bir ilişkili belleği serbest bırakır.  
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+void Close();
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Herhangi bir ilişkili belleği serbest bırakır.
 
 ## <a name="freerecordmemory"></a> CAccessorRowset::FreeRecordMemory
 
-Hiçbir sütun boşaltılması için gereken geçerli kayıtta serbest bırakır.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Hiçbir sütun boşaltılması için gereken geçerli kayıtta serbest bırakır.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-void FreeRecordMemory();  
-```  
+void FreeRecordMemory();
+```
 
 ## <a name="getcolumninfo"></a> CAccessorRowset::GetColumnInfo
 
-Açık satır kümesinden sütun bilgileri alır.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Açık satır kümesinden sütun bilgileri alır.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-HRESULT GetColumnInfo(DBORDINAL* pulColumns, 
-   DBCOLUMNINFO** ppColumnInfo, 
-   LPOLESTR* ppStrings) const; 
-    
-HRESULT GetColumnInfo(DBORDINAL* pColumns, 
-   DBCOLUMNINFO** ppColumnInfo);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+HRESULT GetColumnInfo(DBORDINAL* pulColumns,
+   DBCOLUMNINFO** ppColumnInfo,
+   LPOLESTR* ppStrings) const;
 
-Bkz: [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) içinde *OLE DB Programcının Başvurusu*.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
+HRESULT GetColumnInfo(DBORDINAL* pColumns,
+   DBCOLUMNINFO** ppColumnInfo);
+```
 
-Standart bir HRESULT.  
-  
-### <a name="remarks"></a>Açıklamalar  
+#### <a name="parameters"></a>Parametreler
 
-Kullanıcı, döndürülen sütun bilgileri ve dize arabellek boşaltmanız gerekir. Dosyanın ikinci sürümü, bu yöntemi kullandığınızda kullanın [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) ve bağlamaları geçersiz kılmanız gerekir.  
-  
-Daha fazla bilgi için [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) içinde *OLE DB Programcının Başvurusu*.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Bkz: [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) içinde *OLE DB Programcının Başvurusu*.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Standart bir HRESULT.
+
+### <a name="remarks"></a>Açıklamalar
+
+Kullanıcı, döndürülen sütun bilgileri ve dize arabellek boşaltmanız gerekir. Dosyanın ikinci sürümü, bu yöntemi kullandığınızda kullanın [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) ve bağlamaları geçersiz kılmanız gerekir.
+
+Daha fazla bilgi için [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) içinde *OLE DB Programcının Başvurusu*.
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

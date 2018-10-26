@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7134ea1a822fa61ec0d82592145f1fd3c5ecc6aa
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b2be02e6cac5dac226f7b04cd627a292e3761980
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418313"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082683"
 ---
 # <a name="mfc-internet-programming-basics"></a>MFC Internet Programlama Temelleri
 
@@ -91,6 +91,4 @@ Bu Web sitesi geliştiricileri için Microsoft geliştirme araçları ve teknolo
 Windows SDK'sı OLE bölümünü OLE programlama hakkında ek bilgiler içerir. Bu bilgiler, Win32 WinINet işlevleri doğrudan kullanmak yerine MFC sınıflarını kullanma hakkında ayrıntılı bilgi sağlar. Ayrıca Internet teknolojileri hakkında genel bilgiler içerir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-
-
 

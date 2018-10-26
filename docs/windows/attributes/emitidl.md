@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5e11e1ce061fcf2e9ce21155dcbeb93b45b66238
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 520b9bf8d6a71593acd95ebaac98a72036fcabf2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789970"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070042"
 ---
 # <a name="emitidl"></a>emitidl
 
@@ -49,7 +49,8 @@ Bu değerlerden biri: `true`, `false`, `forced`, `restricted`, `push`, veya `pop
 
 - `push` Geçerli kaydetmenizi sağlayan **emitidl** ayarları bir iç **emitidl** yığını ve `pop` , ayarlamanıza imkan sağlar **emitidl** ne olursa olsun değer iç üstünde olduğu için **emitidl** yığını.
 
-`defaultimports=`*Boole* \(isteğe bağlı)  
+`defaultimports=`*Boole* \(isteğe bağlı)
+
 - Varsa *Boole* olduğu **true**, docobj.idl oluşturulan .idl dosyasına aktarılır. Ayrıca, bir .idl dosyası ile aynı adı taşıyan bir .h dosyası varsa `#include` kaynak kodu .h dosyası ile aynı dizinde bulunan ve ardından söz konusu .idl dosyası için bir içeri aktarma deyimi oluşturulan .idl dosyası içerir.
 
 - Varsa *Boole* olduğu **false**, docobj.idl oluşturulan .idl dosyasına alınmadı. .İdl dosyaları ile açıkça içeri aktarmanız gerekir [alma](import.md).
@@ -78,4 +79,4 @@ Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#conte
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Derleyici Öznitelikleri](compiler-attributes.md)<br/>
-[Tek Başına Öznitelikler](stand-alone-attributes.md)  
+[Tek Başına Öznitelikler](stand-alone-attributes.md)

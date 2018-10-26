@@ -16,38 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0496a1f76a763ae7c7a2e95c1b68fa08089e2c4f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2d9f5f643570cce5618e2a7ad97d47289303dc49
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374032"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068157"
 ---
 # <a name="implementationonly"></a>implementation_only
-**C++ özgü**  
-  
-.Tlh üst bilgi dosyası (birincil üstbilgi dosyası) oluşturulmasını engeller.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-implementation_only  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- 
-Bu dosya, tür kitaplığı içeriğini göstermek için kullanılan tüm bildirimleri içerir. .TLI üstbilgi dosyası uygulamaları kapsayıcı üye işlevleri ile oluşturulan ve derlemeye dahil.  
-  
-Bu öznitelik belirtildiğinde .tli üstbilgisinin .tlh üstbilgisinde normalde kullanılan ile aynı ad alanında içeriktir. Ayrıca, üye işlevleri satır içi olarak bildirilmedi.  
-  
-**İmplementation_only** özniteliği ile birlikte kullanılmak için tasarlanmıştır [no_implementation](../preprocessor/no-implementation.md) uygulamaları (PCH) önceden derlenmiş üst bilgi dosyasının dışında tutma bir yolu olarak özniteliği. Bir `#import` deyimiyle `no_implementation` özniteliği PCH oluşturmak için kullanılan kaynak bölgede yerleştirilir. Sonuçta elde edilen PCH sayıda kaynak dosya tarafından kullanılır. Bir `#import` deyimiyle **implementation_only** özniteliği PCH bölgelerin dışına taşımaz kullanılır. Bu bildirimi yalnızca bir kez kaynak dosyalarından birini kullanmak için gerekli değildir. Bu ek gerekmeksizin her kaynak dosyası için tüm gerekli kapsayıcı üye işlevleri oluşturur.  
-  
+**C++ özgü**
+
+.Tlh üst bilgi dosyası (birincil üstbilgi dosyası) oluşturulmasını engeller.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+implementation_only
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu dosya, tür kitaplığı içeriğini göstermek için kullanılan tüm bildirimleri içerir. .TLI üstbilgi dosyası uygulamaları kapsayıcı üye işlevleri ile oluşturulan ve derlemeye dahil.
+
+Bu öznitelik belirtildiğinde .tli üstbilgisinin .tlh üstbilgisinde normalde kullanılan ile aynı ad alanında içeriktir. Ayrıca, üye işlevleri satır içi olarak bildirilmedi.
+
+**İmplementation_only** özniteliği ile birlikte kullanılmak için tasarlanmıştır [no_implementation](../preprocessor/no-implementation.md) uygulamaları (PCH) önceden derlenmiş üst bilgi dosyasının dışında tutma bir yolu olarak özniteliği. Bir `#import` deyimiyle `no_implementation` özniteliği PCH oluşturmak için kullanılan kaynak bölgede yerleştirilir. Sonuçta elde edilen PCH sayıda kaynak dosya tarafından kullanılır. Bir `#import` deyimiyle **implementation_only** özniteliği PCH bölgelerin dışına taşımaz kullanılır. Bu bildirimi yalnızca bir kez kaynak dosyalarından birini kullanmak için gerekli değildir. Bu ek gerekmeksizin her kaynak dosyası için tüm gerekli kapsayıcı üye işlevleri oluşturur.
+
 > [!NOTE]
-> **İmplementation_only** bir öznitelik `#import` kullanılmak üzere başka bir deyim olmalıdır `#import` deyimi, aynı tür kitaplığı `no_implementation` özniteliği. Aksi halde, derleyici hatalar oluşturulur. Sarmalayıcı sınıf tanımları tarafından oluşturulan olmasıdır `#import` deyimiyle `no_implementation` tarafından oluşturulan uygulamaları derlemek için gerekli özniteliği **implementation_only** özniteliği.  
-  
-**END C++ özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- 
+> **İmplementation_only** bir öznitelik `#import` kullanılmak üzere başka bir deyim olmalıdır `#import` deyimi, aynı tür kitaplığı `no_implementation` özniteliği. Aksi halde, derleyici hatalar oluşturulur. Sarmalayıcı sınıf tanımları tarafından oluşturulan olmasıdır `#import` deyimiyle `no_implementation` tarafından oluşturulan uygulamaları derlemek için gerekli özniteliği **implementation_only** özniteliği.
+
+**END C++ özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
 [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

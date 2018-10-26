@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67e5b086e57c90b9cb11779d8f3af167768a45fe
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 5b57b03af7c0a98e2bb8c70b6c0921930ebb1b9c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103353"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062645"
 ---
 # <a name="collections-ccx"></a>Koleksiyonlar (C + +/ CX)
 
@@ -64,7 +64,7 @@ Depolanması için herhangi bir öğenin bir [Platform::Collections:: Vector](..
 
 ## <a name="vectorproxy-elements"></a>VectorProxy öğeleri
 
-[Platform::Collections:: vectorıterator](../cppcx/platform-collections-vectoriterator-class.md) ve [Platform::Collections:: vectorviewıterator](../cppcx/platform-collections-vectorviewiterator-class.md) kullanımını etkinleştirmek `range for` döngüler ve algoritmaları gibi [std::sort](../standard-library/algorithm-functions.md#sort) bir ile[ Ivector\<T >](https://msdn.microsoft.com/library/windows/apps/br206631.aspx) kapsayıcı. Ancak `IVector` öğeleri C++ erişilemez bir işaretçiye; yalnızca aracılığıyla erişilebilen [GetAt](https://msdn.microsoft.com/library/windows/apps/br206634.aspx) ve [SetAt](https://msdn.microsoft.com/library/windows/apps/br206642.aspx) yöntemleri. Bu nedenle, bu Yineleyicilerde proxy sınıfları kullanması `Platform::Details::VectorProxy<T>` ve `Platform::Details::ArrowProxy<T>` tek tek öğelerine erişim sağlamak için `*`, `->`, ve `[]` işleçleri, STL gerektirdiği gibi. NET olarak söylemek gerekirse, verilen bir `IVector<Person^> vec`, türü `*begin(vec)` olduğu `VectorProxy<Person^>`. Ancak, proxy neredeyse her zaman kodunuza saydam nesnedir. Yineleyiciler tarafından iç kullanım için yalnızca olduklarından, ancak mekanizması nasıl çalıştığını bilmek yararlıdır çünkü bu proxy nesneleri açıklanmamıştır.
+[Platform::Collections:: vectorıterator](../cppcx/platform-collections-vectoriterator-class.md) ve [Platform::Collections:: vectorviewıterator](../cppcx/platform-collections-vectorviewiterator-class.md) kullanımını etkinleştirmek `range for` döngüler ve algoritmaları gibi [std::sort](../standard-library/algorithm-functions.md#sort) bir ile[ Ivector\<T >](https://msdn.microsoft.com/library/windows/apps/br206631.aspx) kapsayıcı. Ancak `IVector` öğeleri C++ erişilemez bir işaretçiye; yalnızca aracılığıyla erişilebilen [GetAt](https://msdn.microsoft.com/library/windows/apps/br206634.aspx) ve [SetAt](https://msdn.microsoft.com/library/windows/apps/br206642.aspx) yöntemleri. Bu nedenle, bu Yineleyicilerde proxy sınıfları kullanması `Platform::Details::VectorProxy<T>` ve `Platform::Details::ArrowProxy<T>` tek tek öğelerine erişim sağlamak için __\*__, __->__ ve  __\[]__ işleçleri, standart kitaplık gerektirdiği gibi. NET olarak söylemek gerekirse, verilen bir `IVector<Person^> vec`, türü `*begin(vec)` olduğu `VectorProxy<Person^>`. Ancak, proxy neredeyse her zaman kodunuza saydam nesnedir. Yineleyiciler tarafından iç kullanım için yalnızca olduklarından, ancak mekanizması nasıl çalıştığını bilmek yararlıdır çünkü bu proxy nesneleri açıklanmamıştır.
 
 Kullandığınızda, bir `range for` üzerinden döngü `IVector` kapsayıcılarını, `auto&&` doğru olarak bağlamak için yineleyici değişken etkinleştirmek için `VectorProxy` öğeleri. Kullanırsanız `auto` veya `auto&`, derleyici uyarısı C4239 oluşturulur ve `VectoryProxy` uyarı metinde açıklanan.
 
@@ -74,8 +74,7 @@ Aşağıdaki çizimde gösterildiği bir `range for` üzerinden döngü bir `IVe
 
 Sahip olduğunuz koda proxy nesne çevresinde bir senaryo gerçekleştirmek için sahip olduğunda bir `dynamic_cast` öğelerde — Örneğin, ne zaman aradığınız XAML nesneleri belirli bir türün bir `UIElement` öğe koleksiyonu. Bu durumda, ilk öğeye dönüştürmelisiniz [Platform::Object](../cppcx/platform-object-class.md)^ ve dinamik atama gerçekleştirin:
 
-```
-
+```cpp
 void FindButton(UIElementCollection^ col)
 {
     // Use auto&& to avoid warning C4239
@@ -149,7 +148,7 @@ Aşağıdaki tabloda kullanılabilir yineleyiciler ve işlevleri listeler.
 
 `Vector` ve `Map` koleksiyon nesnesi değiştirildiğinde meydana gelen olayları veya sıfırlama uygulayarak XAML koleksiyonları'nda veri bağlama desteği veya bir koleksiyonun herhangi bir öğe eklendiğinde, kaldırıldı veya değiştirildi. Öğesinden devralamaz olsa da bu destek veri bağlama kendi türlerinizi yazabilirsiniz `Map` veya `Vector` türlerine korumalı olduğundan.
 
-[Windows::Foundation::Collections::VectorChangedEventHandler](/uwp/api/windows.foundation.collections.vectorchangedeventhandler) ve [Windows::Foundation::Collections::MapChangedEventHandler](/uwp/api/windows.foundation.collections.mapchangedeventhandler) temsilcileri belirtmek için olay işleyicileri imzaları değişiklik olayları koleksiyonu. [Windows::Foundation::Collections::CollectionChange](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx) genel sabit listesi sınıfı ve `Platform::Collection::Details::MapChangedEventArgs` ve `Platform::Collections::Details::VectorChangedEventArgs` başvuru sınıfları depolamak olay nedenini belirlemek için olay bağımsız değişkenleri. *`EventArgs` Türleri `Details` ad alanı oluşturmak veya bunları açıkça kullandığınızda kullanmak durumunda olmadığınızdan dolayı `Map` veya `Vector`.
+[Windows::Foundation::Collections::VectorChangedEventHandler](/uwp/api/windows.foundation.collections.vectorchangedeventhandler) ve [Windows::Foundation::Collections::MapChangedEventHandler](/uwp/api/windows.foundation.collections.mapchangedeventhandler) temsilcileri belirtmek için olay işleyicileri imzaları değişiklik olayları koleksiyonu. [Windows::Foundation::Collections::CollectionChange](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx) genel sabit listesi sınıfı ve `Platform::Collection::Details::MapChangedEventArgs` ve `Platform::Collections::Details::VectorChangedEventArgs` başvuru sınıfları depolamak olay nedenini belirlemek için olay bağımsız değişkenleri. `*EventArgs` Türleri `Details` ad alanı oluşturmak veya bunları açıkça kullandığınızda kullanmak durumunda olmadığınızdan dolayı `Map` veya `Vector`.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

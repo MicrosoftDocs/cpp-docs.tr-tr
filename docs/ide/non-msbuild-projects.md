@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aefcd05f4187e22adf5f21c4beffa74ca8be39b3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5c7473cd7d6f2f07d81011eca0826b8066513d23
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420562"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069262"
 ---
 # <a name="open-folder-projects-in-visual-c"></a>Visual c++ açık klasörü projeler
 
@@ -245,6 +245,7 @@ CppProperties.json içinde herhangi bir sayıda yapılandırmaları oluşturabil
   ]
 }
 ```
+
 ### <a name="define-tasks-with-tasksvsjson"></a>Tasks.vs.json ile görevleri tanımlama
 
 Derleme betikleri veya geçerli çalışma alanınızda doğrudan IDE'de görev olarak çalıştırarak olması dosyalarda dış diğer işlemleri otomatik hale getirebilirsiniz. Bir dosya veya klasörü sağ tıklatıp seçerek yeni bir görev yapılandırabileceğiniz **yapılandırma görevleri**.

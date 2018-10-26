@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85e772b9222f2066259042e551fa393758559ab2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0deea6b4657b4b116b79c8472724f7c9d34dade8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46115885"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075612"
 ---
 # <a name="ipersiststreaminitimpl-class"></a>Ipersiststreamınitımpl sınıfı
 
@@ -43,7 +43,7 @@ Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IPer
 
 ```
 template<class T>
-class ATL_NO_VTABLE IPersistStreamInitImpl 
+class ATL_NO_VTABLE IPersistStreamInitImpl
    : public IPersistStreamInit
 ```
 

@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bcdbc8012edbe17ce9fcc8298da68f45acad4b8b
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 2553ac5cdc20f3d5d38a6bad77dc79fc7c1737d8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43683371"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052888"
 ---
 # <a name="cloud-and-web-programming-in-visual-c"></a>Visual C++'da Bulut ve Web Programlama
 
@@ -52,11 +52,11 @@ C++'da, web ve buluta bağlamak için birkaç seçeneğiniz vardır.
   - Uzak Hizmetleri karşı Websockets bağlantıları oluşturma
   - Tam olarak zaman uyumsuz bir görev gibi yerleşik iş parçacığı havuzu PPL üzerinde temel API
 
-   Windows Masaüstü (7 +), Windows Server (2012 +), Evrensel Windows platformu, Linux, OSX, Android ve iOS destekler. 
+   Windows Masaüstü (7 +), Windows Server (2012 +), Evrensel Windows platformu, Linux, OSX, Android ve iOS destekler.
 
 - [Windows::Web::http::HttpClient](https://msdn.microsoft.com/library/windows/apps/windows.web.http.httpclient.aspx)
 
-   System.Web ad alanında aynı ada sahip bir .NET Framework sınıf üzerinde bir Windows çalışma zamanı HTTP istemci sınıfı modellenir. `HttpClient` tam olarak destekler, zaman uyumsuz indirin ve HTTP ve özel HTTP işleyicilerinin kanala ekleme etkinleştir kanal filtreleri üzerinden yükleyin. Windows SDK, ölçülmüş ağlar, OAuth kimlik doğrulaması ve daha fazlası için örnek filtreler içerir. Kullanmanızı tavsiye ederiz hedefleyen Evrensel Windows platformu uygulamaları için `Windows::Web:HttpClient` sınıfı. 
+   System.Web ad alanında aynı ada sahip bir .NET Framework sınıf üzerinde bir Windows çalışma zamanı HTTP istemci sınıfı modellenir. `HttpClient` tam olarak destekler, zaman uyumsuz indirin ve HTTP ve özel HTTP işleyicilerinin kanala ekleme etkinleştir kanal filtreleri üzerinden yükleyin. Windows SDK, ölçülmüş ağlar, OAuth kimlik doğrulaması ve daha fazlası için örnek filtreler içerir. Kullanmanızı tavsiye ederiz hedefleyen Evrensel Windows platformu uygulamaları için `Windows::Web:HttpClient` sınıfı.
 
 - [Ixmlhttprequest2 arabirimi](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2)
 

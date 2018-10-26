@@ -66,12 +66,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 013dc05b4ecbfc31f0f475d50e3a3be6d74c846d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a743f4bbf1081232cd5b5d592072ab3ee3219c6a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386619"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083515"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager sınıfı
 
@@ -700,7 +700,6 @@ static double __stdcall HuetoRGB(
     double m1,
     double m2,
     double h);
-
 
 static BYTE __stdcall HueToRGB(
     float rm1,

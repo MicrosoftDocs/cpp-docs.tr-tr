@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc13285549543eeab07bed6372f8f7d529f90a32
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 40fdfa363da286952139248088c737b348873ec8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46078705"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063685"
 ---
 # <a name="category-macros"></a>Kategori makroları
 
@@ -51,11 +51,11 @@ Bu makrolar kategori eşlemelerini tanımlar.
 |[BEGIN_CATEGORY_MAP](#begin_category_map)|Kategori harita başlangıcını işaretler.|
 |[END_CATEGORY_MAP](#end_category_map)|Kategori harita sonunu işaretler.|
 |[IMPLEMENTED_CATEGORY](#implemented_category)|COM nesne tarafından uygulanan kategorileri gösterir.|
-|[REQUIRED_CATEGORY](#required_category)|Kapsayıcı COM nesnesi tarafından gerekli olan kategorileri gösterir.|  
+|[REQUIRED_CATEGORY](#required_category)|Kapsayıcı COM nesnesi tarafından gerekli olan kategorileri gösterir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h  
+**Başlık:** atlcom.h
 
 ##  <a name="begin_category_map"></a>  BEGIN_CATEGORY_MAP
 

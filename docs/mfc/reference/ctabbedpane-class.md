@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2e61616ae6a481925bdb8b9b135f0a6a9fdfff7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8b01148affc70d09032d2082f4fc8756dd8c96cf
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407952"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074143"
 ---
 # <a name="ctabbedpane-class"></a>CTabbedPane sınıfı
 
@@ -183,9 +183,9 @@ virtual BOOL DetachPane(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*
+[in] *pBar*<br/>
 
-[in] *bHide*
+[in] *bHide*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -224,10 +224,10 @@ virtual BOOL FloatTab(
 
 ### <a name="parameters"></a>Parametreler
 
-*pBar*<br/>
-[in] [in] *nTabID*
-*dockMethod*<br/>
-[in] [in] *bHide*
+[in] *pBar*<br/>
+[in] *nTabID*<br/>
+[in] *dockMethod*<br/>
+[in] *bHide*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 

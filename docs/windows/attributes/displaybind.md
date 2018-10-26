@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fc4b017a225a17011a832007ac875e3495ea5f48
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 9a78471ca6832c8d72d3b8fae25273155918bd81
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789568"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071056"
 ---
 # <a name="displaybind"></a>displaybind
 
@@ -62,4 +62,4 @@ Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#conte
 [Veri Üyesi Öznitelikleri](data-member-attributes.md)<br/>
 [defaultbind](defaultbind.md)<br/>
 [immediatebind](immediatebind.md)<br/>
-[requestedit](requestedit.md)  
+[requestedit](requestedit.md)

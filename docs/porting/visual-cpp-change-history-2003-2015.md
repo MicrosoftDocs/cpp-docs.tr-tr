@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bcf3ce1f0ddc5003886c367cfe5db8968a911ee9
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 8bda25bc1705183d1482355ae064f87c040daec4
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083989"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068079"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003-2015
 
@@ -37,7 +37,6 @@ Algılanması ve tanılanması zor çalışma zamanı hatalarından kaçınmak i
 Ayrıca, COM arabirimi ya da POD projesi olmayan bir nesne için belirli bir düzeni temel alan kodları da asla yazmamanızı öneriyoruz. Bu tür bir kod yazarsanız, yükseltme sonrasında çalışmasını sağlamalısınız. Daha fazla bilgi için [ABI sınırlarında taşınabilirlik adresindeki](../cpp/portability-at-abi-boundaries-modern-cpp.md).
 
 Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl derleyici mevcut kaynak kodunuzu anlar değiştirebilirsiniz. Bu durumda, derleme veya kodda, daha önce derlenmiş ve düzgün şekilde çalışması için olduğu görülüyor bile davranışsal farklılıklar sırasında yeni veya farklı hata karşılaşabilirsiniz. Bunlar bu belgede ele alınan olanlar gibi önemli değişiklikler değil olsa da, bu sorunları çözmek için kaynak kodu değişiklikleri gerekebilir:
-
 
 - [C çalışma zamanı (CRT) kitaplığı için bozucu değişiklikler](#BK_CRT)
 
@@ -183,7 +182,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
     ```
 
     ```Output
-        Old:  1208925819614629200000000    New:  1208925819614629174706176
+        Old:  1208925819614629200000000    New:  1208925819614629174706176
     ```
 
    Eski ayrıştırma algoritmaları, Giriş dizesinin en çok 17 önemli rakamları dikkate alır ve kalan rakamları atar. Bu dize tarafından temsil edilen değeri çok yakın bir yaklaşığını oluşturmak yeterli ve genellikle çok yakın doğru yuvarlatılmış sonucu sonucudur. Yeni uygulama, tüm mevcut basamak göz önünde bulundurur ve doğru yuvarlak bir sonuç tüm girişlerin (uzunluğu en fazla 768 basamak). Ayrıca, bu işlevler, artık (fesetround denetlenebilir) yuvarlama modu uyar.  Bu potansiyel olarak yeni, bu işlevler, farklı sonuçlar çıkış çünkü davranışını değiştirin. Yeni sonucu her zaman daha fazla olan eski sonuçları daha doğru.
@@ -652,7 +651,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
    Örneğin, kodunuzu hem tanımladığını bir **yerleştirme yeni** ve **yerleştirme silme**:
 
     ```cpp
-    void * operator new(std::size_t, std::size_t);
+    void * operator new(std::size_t, std::size_t);
     void operator delete(void*, std::size_t) noexcept;
     ```
 
@@ -1743,7 +1742,7 @@ Bu farklılıklar, kaynak kodu veya diğer derleme yapıtlarının etkileyebilir
     }
     ```
 
-   - veya -
+   \- veya -
 
     ```cpp
     class base;  // as above

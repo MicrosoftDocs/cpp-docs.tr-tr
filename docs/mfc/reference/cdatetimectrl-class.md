@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57e2b990e8fddbcb81d942cb7327ed8b9d448e6b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4fdf3747d9b3635654e9cbdce6bc77514b783f6e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420250"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064361"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl sınıfı
 
@@ -551,7 +551,6 @@ Bir tarih ve saat seçici denetimi için minimum ve maksimum izin verilen sistem
 BOOL SetRange(
     const COleDateTime* pMinRange,
     const COleDateTime* pMaxRange);
-
 
 BOOL SetRange(
     const CTime* pMinRange,

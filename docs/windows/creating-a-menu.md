@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 59689abec68fc6cff2a742bd4db97b58cd023af1
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 91098a0a225519f9b657d9424872e99be0e86354
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316269"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065544"
 ---
 # <a name="creating-a-menu-c"></a>Menü (C++) oluşturma
 
@@ -37,8 +37,8 @@ ms.locfileid: "44316269"
 
 2. Seçin **yeni öğe** menü çubuğundaki kutusuna ("Buraya türü" içeren dikdörtgen).
 
-   ![Menü Düzenleyicisi'nde yeni bir öğe kutusu](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")  
-Yeni öğe kutusu
+   ![Menü Düzenleyicisi'nde yeni bir öğe kutusu](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")<br/>
+   Yeni öğe kutusu
 
 3. Yeni menünüzde, örneğin, "File" için bir ad yazın.
 
@@ -46,8 +46,8 @@ Yeni öğe kutusu
 
    Menü çubuğunda yeni menünüzde bir adı verilen sonra yeni öğe kutusunu (başka bir menü eklemenize izin vermek için) sağa kaydırır ve menü komutları ekleyebilmek için ilk menünüzün başka bir yeni öğe kutusu açılır.
 
-   ![Genişletilmiş yeni öğe kutusunda](../windows/media/vcmenueditornewitemboxexpanded.gif "vcMenuEditorNewItemBoxExpanded")  
-Menü adını yazdıktan sonra yeni öğe kutusu odaklanılan kaydırılacağı uzaklık.
+   ![Genişletilmiş yeni öğe kutusunda](../windows/media/vcmenueditornewitemboxexpanded.gif "vcMenuEditorNewItemBoxExpanded")<br/>
+   Menü adını yazdıktan sonra yeni öğe kutusu odaklanılan kaydırılacağı uzaklık.
 
    > [!NOTE]
    > Menü çubuğunda bir tek öğesi menüsü oluşturmak için **açılan** özelliğini **False**.

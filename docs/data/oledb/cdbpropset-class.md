@@ -44,153 +44,153 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e998f0bed867356218e4a1b1c772d396c53afecb
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: a047416c22eb57fc3ee3d3eb6a69275768182525
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082988"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081907"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet Sınıfı
 
-Devralınan `DBPROPSET` yapısı ve anahtar alanları başlatan bir oluşturucu ekler ve `AddProperty` erişim yöntemi.  
-  
+Devralınan `DBPROPSET` yapısı ve anahtar alanları başlatan bir oluşturucu ekler ve `AddProperty` erişim yöntemi.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-class CDBPropSet : public tagDBPROPSET  
-```  
+class CDBPropSet : public tagDBPROPSET
+```
 
-## <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h  
+**Başlık:** atldbcli.h
 
-## <a name="members"></a>Üyeler  
-  
-### <a name="methods"></a>Yöntemler  
-  
-|||  
-|-|-|  
-|[AddProperty](#addproperty)|Bir özellik için özellik kümesi ekler.|  
-|[CDBPropSet](#cdbpropset)|Oluşturucu.|  
-|[Setguıd](#setguid)|Kümeleri `guidPropertySet` alanını `DBPROPSET` yapısı.|  
-  
-### <a name="operators"></a>İşleçler  
-  
-|||  
-|-|-|  
-|[işleç =](#op_equal)|Bir özellik kümesinden diğerine içeriğini atar.|  
-  
-## <a name="remarks"></a>Açıklamalar  
+## <a name="members"></a>Üyeler
 
-OLE DB sağlayıcıları ve tüketiciler kullanım `DBPROPSET` dizileri geçirilecek yapıları `DBPROP` yapıları. Her `DBPROP` yapısı ayarlanabilir tek bir özelliği temsil eder.  
+### <a name="methods"></a>Yöntemler
+
+|||
+|-|-|
+|[AddProperty](#addproperty)|Bir özellik için özellik kümesi ekler.|
+|[CDBPropSet](#cdbpropset)|Oluşturucu.|
+|[Setguıd](#setguid)|Kümeleri `guidPropertySet` alanını `DBPROPSET` yapısı.|
+
+### <a name="operators"></a>İşleçler
+
+|||
+|-|-|
+|[işleç =](#op_equal)|Bir özellik kümesinden diğerine içeriğini atar.|
+
+## <a name="remarks"></a>Açıklamalar
+
+OLE DB sağlayıcıları ve tüketiciler kullanım `DBPROPSET` dizileri geçirilecek yapıları `DBPROP` yapıları. Her `DBPROP` yapısı ayarlanabilir tek bir özelliği temsil eder.
 
 ## <a name="addproperty"></a> CDBPropSet::AddProperty
 
-Bir özellik için özellik kümesi ekler.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Bir özellik için özellik kümesi ekler.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-bool AddProperty(DWORD dwPropertyID,   
-   constVARIANT& var,   
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
-   LPCSTR szValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
-   LPCWSTR szValue,DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
-   bool bValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
-   BYTE bValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,  
-   short nValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,  
-   long nValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,  
-   float fltValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,  
-   double dblValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
-   CY cyValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+bool AddProperty(DWORD dwPropertyID, 
+   constVARIANT& var, 
+   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,
+   LPCSTR szValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,
+   LPCWSTR szValue,DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,
+   bool bValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,
+   BYTE bValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,
+   short nValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,
+   long nValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,
+   float fltValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,
+   double dblValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,
+   CY cyValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();
+```
+
+#### <a name="parameters"></a>Parametreler
 
 *dwPropertyID*<br/>
-[in] Eklenecek özelliğin kimliği. Başlatmak için kullanılan `dwPropertyID` , `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
-  
-*var*<br/>
-[in] Özellik değeri başlatmak için kullanılan bir değişken `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
-  
-*szValue*<br/>
-[in] Özellik değeri başlatmak için kullanılan bir dize `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
-  
-*bDeğer*<br/>
-[in] A `BYTE` veya boolean değeri için özellik değerini başlatmak için kullanılan `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
-  
-*nDeğer*<br/>
-[in] Özellik değeri başlatmak için kullanılan bir tamsayı değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
-  
-*fltValue*<br/>
-[in] Özellik değeri başlatmak için kullanılan bir kayan nokta değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
-  
-*dblValue*<br/>
-[in] Özellik değeri başlatmak için kullanılan bir çift duyarlıklı kayan nokta değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
-  
-*cyValue*<br/>
-[in] Özellik değeri başlatmak için kullanılan CY para birimi değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
+[in] Eklenecek özelliğin kimliği. Başlatmak için kullanılan `dwPropertyID` , `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
 
-**doğru** varsa özelliği başarıyla eklendi. Aksi takdirde, **false**. 
+*var*<br/>
+[in] Özellik değeri başlatmak için kullanılan bir değişken `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
+
+*szValue*<br/>
+[in] Özellik değeri başlatmak için kullanılan bir dize `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
+
+*bDeğer*<br/>
+[in] A `BYTE` veya boolean değeri için özellik değerini başlatmak için kullanılan `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
+
+*nDeğer*<br/>
+[in] Özellik değeri başlatmak için kullanılan bir tamsayı değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
+
+*fltValue*<br/>
+[in] Özellik değeri başlatmak için kullanılan bir kayan nokta değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
+
+*dblValue*<br/>
+[in] Özellik değeri başlatmak için kullanılan bir çift duyarlıklı kayan nokta değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
+
+*cyValue*<br/>
+[in] Özellik değeri başlatmak için kullanılan CY para birimi değeri `DBPROP` yapısı olarak ayarlanan özelliği eklendi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+**doğru** varsa özelliği başarıyla eklendi. Aksi takdirde, **false**.
 
 ## <a name="cdbpropset"></a> CDBPropSet::CDBPropSet
 
-Oluşturucu. Başlatır `rgProperties`, `cProperties`, ve `guidPropertySet` alanlarının [DBPROPSET](/previous-versions/windows/desktop/ms714367) yapısı.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Oluşturucu. Başlatır `rgProperties`, `cProperties`, ve `guidPropertySet` alanlarının [DBPROPSET](/previous-versions/windows/desktop/ms714367) yapısı.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-CDBPropSet(const GUID& guid);  
+CDBPropSet(const GUID& guid);
 
-CDBPropSet(const CDBPropSet& propset);  
+CDBPropSet(const CDBPropSet& propset);
 
-CDBPropSet();  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+CDBPropSet();
+```
+
+#### <a name="parameters"></a>Parametreler
 
 *GUID*<br/>
-[in] Bir GUID başlatmak için kullanılan `guidPropertySet` alan.  
-  
+[in] Bir GUID başlatmak için kullanılan `guidPropertySet` alan.
+
 *propset*<br/>
-[in] Başka bir `CDBPropSet` kopya oluşumuna nesnesi.  
+[in] Başka bir `CDBPropSet` kopya oluşumuna nesnesi.
 
 ## <a name="setguid"></a> CDBPropSet::setguıd
 
-Kümeleri `guidPropertySet` alanındaki `DBPROPSET` yapısı.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Kümeleri `guidPropertySet` alanındaki `DBPROPSET` yapısı.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-void SetGUID(const GUID& guid) throw();  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+void SetGUID(const GUID& guid) throw();
+```
+
+#### <a name="parameters"></a>Parametreler
 
 *GUID*<br/>
-[in] Ayarlamak için kullanılan bir GUID `guidPropertySet` alanını [DBPROPSET](/previous-versions/windows/desktop/ms714367) yapısı.  
-  
-### <a name="remarks"></a>Açıklamalar  
+[in] Ayarlamak için kullanılan bir GUID `guidPropertySet` alanını [DBPROPSET](/previous-versions/windows/desktop/ms714367) yapısı.
 
-Bu alan ayarlanabilir [Oluşturucusu](../../data/oledb/cdbpropset-cdbpropset.md) de.  
+### <a name="remarks"></a>Açıklamalar
+
+Bu alan ayarlanabilir [Oluşturucusu](../../data/oledb/cdbpropset-cdbpropset.md) de.
 
 ## <a name="op_equal"></a> CDBPropSet::operator =
 
-Bir özellik için başka bir özellik set içeriğini atar.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Bir özellik için başka bir özellik set içeriğini atar.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-CDBPropSet& operator =(CDBPropSet& propset) throw();  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+CDBPropSet& operator =(CDBPropSet& propset) throw();
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CDBPropIDSet Sınıfı](../../data/oledb/cdbpropidset-class.md)<br/>
-[DBPROPSET yapısı](/previous-versions/windows/desktop/ms714367)   
+[DBPROPSET yapısı](/previous-versions/windows/desktop/ms714367)
 [DBPROP yapısı](/previous-versions/windows/desktop/ms717970)

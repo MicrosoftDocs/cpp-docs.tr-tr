@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9783da47a22260f0edbe5ddf6d8f5021aae31e5c
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 1867f044c143fc0e5fbb06705bf45b8fa729a5cc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083807"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068976"
 ---
 # <a name="application-information-and-management"></a>Uygulama Bilgileri ve Yönetimi
 
@@ -61,8 +61,6 @@ Microsoft Foundation Class Kitaplığı, bu görevleri gerçekleştirmenize yard
 |[Afxsocketınit](#afxsocketinit)|Adlı bir `CWinApp::InitInstance` Windows Sockets başlatmak için geçersiz kılın.|
 |[AfxUserToolsManager](#afxusertoolsmanager)|Genel işaretçisine [kullanıcı araçları Yöneticisi](cusertoolsmanager-class.md).|
 |[Afxwinınit](#afxwininit)|MFC tarafından sağlanan tarafından adlandırılan `WinMain` işlevi, bir parçası olarak [CWinApp](../../mfc/reference/cwinapp-class.md) MFC başlatmak için bir GUI tabanlı bir uygulama başlatma. MFC kullanan doğrudan konsol uygulamaları için çağrılmalıdır.|
-
-
 
 ##  <a name="afxbeginthread"></a>  AfxBeginThread
 
@@ -145,6 +143,7 @@ Genel işaretçisine [bağlam menüsü manager](ccontextmenumanager-class.md).
 ```
 CContextMenuManager* afxContextMenuManager;
 ```
+
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxcontextmenumanager.h
@@ -152,7 +151,6 @@ CContextMenuManager* afxContextMenuManager;
 ### <a name="see-also"></a>Ayrıca Bkz.
 
 [CContextMenuManager Sınıfı](ccontextmenumanager-class.md)
-
 
 ##  <a name="afxendthread"></a>  AfxEndThread
 
@@ -190,6 +188,7 @@ Kullanım `AfxFindResourceHandle` kaynak zinciri yol ve belirli bir kaynak taraf
 ```
 HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *lpszName*<br/>
@@ -471,6 +470,7 @@ Verilen aralığında bir genişletilmiş çerçeve nesnesi olup olmadığını 
 ```
 BOOL AFXAPI AfxIsExtendedFrameClass( CWnd* pWnd );
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *pWnd*<br/>
@@ -514,6 +514,7 @@ Belirtilen pencere bir araç çubuğu nesnesi olup olmadığını belirler.
 ```
 BOOL AFXAPI AfxIsMFCToolBar(CWnd* pWnd);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *pWnd*<br/>
@@ -536,7 +537,6 @@ Bu yöntem döndürür `TRUE` varsa *pWnd* türetildiği `CMFCToolBar`. İşlev 
 [CWnd Sınıfı](cwnd-class.md)<br/>
 [CMFCToolBar Sınıfı](cmfctoolbar-class.md)
 
-
 ## <a name="afxkeyboardmanager"></a> AfxKeyboardManager
 
 Genel işaretçisine [klavye manager](ckeyboardmanager-class.md).
@@ -546,6 +546,7 @@ Genel işaretçisine [klavye manager](ckeyboardmanager-class.md).
 ```
 CKeyboardManager* afxKeyboardManager;
 ```
+
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxkeyboardmanager.h
@@ -554,7 +555,6 @@ CKeyboardManager* afxKeyboardManager;
 
 [Makrolar, genel işlevler ve genel değişkenler](mfc-macros-and-globals.md)<br/>
 [CKeyboardManager Sınıfı](ckeyboardmanager-class.md)
-
 
 ##  <a name="afxloadlibrary"></a>  AfxLoadLibrary
 
@@ -618,6 +618,7 @@ Genel işaretçisine [bölme menü manager](cmenutearoffmanager-class.md).
 ```
 CMenuTearOffManager* g_pTearOffMenuManager;
 ```
+
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxmenutearoffmanager.h
@@ -635,6 +636,7 @@ Genel işaretçisine [fare manager](cmousemanager-class.md).
 ```
 CMouseManager* afxMouseManager;
 ```
+
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** afxmousemanager.h
@@ -642,8 +644,6 @@ CMouseManager* afxMouseManager;
 ### <a name="see-also"></a>Ayrıca Bkz.
 
 [CMouseManager Sınıfı](cmousemanager-class.md)
-
-
 
 ##  <a name="afxregisterclass"></a>  AfxRegisterClass
 
@@ -843,7 +843,6 @@ CUserToolsManager* afxUserToolsManager;
 ### <a name="see-also"></a>Ayrıca Bkz.
 
 [CUserToolsManager Sınıfı](cusertoolsmanager-class.md)
-
 
 ##  <a name="afxwininit"></a>  Afxwinınit
 

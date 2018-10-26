@@ -47,12 +47,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a93c36748eb01a1c647a2aa433196c7364f60744
-ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
+ms.openlocfilehash: 8165a404924b997d70d0097c28ac7d34ade92fc3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410817"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063867"
 ---
 # <a name="hstring-class"></a>HString Sınıfı
 
@@ -115,7 +115,7 @@ Ad                                         | Açıklama
 Geçerli örneğini yok eder `HString` sınıfı.
 
 ```cpp
-~HString() throw()  
+~HString() throw()
 ```
 
 ## <a name="attach"></a>HString::Attach
@@ -125,7 +125,7 @@ Belirtilen ilişkilendirir `HString` geçerli nesneyle `HString` nesne.
 ```cpp
 void Attach(
        HSTRING hstr
-       ) throw()  
+       ) throw()
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -157,7 +157,7 @@ Bu yöntemin çağırdığı [WindowsDuplicateString](https://msdn.microsoft.com
 Belirtilen ayırır `HString` nesnesini temel değerinden.
 
 ```cpp
-HSTRING Detach() throw()  
+HSTRING Detach() throw()
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -169,7 +169,7 @@ Arka plandaki `HString` değerden önce ayırma işlemi başlatıldı.
 Temel HSTRING tanıtıcısının değerini alır.
 
 ```cpp
-HSTRING Get() const throw()  
+HSTRING Get() const throw()
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -181,7 +181,7 @@ Temel HSTRING tanıtıcısının değerini
 Temel HSTRING tanıtıcısına bir işaretçi alır.
 
 ```cpp
-HSTRING* GetAddressOf() throw()  
+HSTRING* GetAddressOf() throw()
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -220,7 +220,7 @@ Varolan bir `HString` nesnesi.
 Belirtir olup olmadığını geçerli `HString` veya nesne boş.
 
 ```cpp
-bool IsValid() const throw()  
+bool IsValid() const throw()
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -262,7 +262,7 @@ Bir `HStringReference` değeri belirtilen türle aynı olan nesne *str* parametr
 Başka bir değer taşır `HString` geçerli nesneye `HString` nesne.
 
 ```cpp
-HString& operator=(HString&& other) throw()  
+HString& operator=(HString&& other) throw()
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -297,7 +297,7 @@ inline bool operator==(
 
 inline bool operator==(
                  const HString& lhs,
-                 const HSTRING& rhs) throw()  
+                 const HSTRING& rhs) throw()
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -330,7 +330,7 @@ inline bool operator!=( const HSTRING& lhs,
                         const HString& rhs) throw()
 
 inline bool operator!=( const HString& lhs,
-                        const HSTRING& rhs) throw()  
+                        const HSTRING& rhs) throw()
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -352,7 +352,7 @@ Karşılaştırılacak ikinci parametre. *sol* olabilir bir `HString` veya `HStr
 ```cpp
 inline bool operator<(
     const HString& lhs,
-    const HString& rhs) throw()  
+    const HString& rhs) throw()
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -372,7 +372,7 @@ Karşılaştırılacak ikinci parametre. *Sol* başvuru olabilir bir `HString`.
 Temel dize değerini siler ve geçerli başlatır `HString` boş bir değere nesne.
 
 ```cpp
-void Release() throw()  
+void Release() throw()
 ```
 
 ## <a name="set"></a>HString::Set

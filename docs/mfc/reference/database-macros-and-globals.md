@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67a0fd2af9bb8bf3ec11d5a4e2a38c195b18633c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7d29222b461091dcd72a0c894a138a4df15b9d4b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424254"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057304"
 ---
 # <a name="database-macros-and-globals"></a>Veritabanı Makroları ve Genel Öğeleri
 
@@ -50,7 +50,6 @@ MFC 4.2 makroları önce `AFX_SQL_ASYNC` ve `AFX_SQL_SYNC` zaman uyumsuz işleml
 |-|-|
 |[AfxDbInitModule](#afxdbinitmodule)|Dinamik olarak MFC'ye bağlı normal MFC DLL'SİNİN veritabanı desteği ekler.|
 |[AfxGetHENV](#afxgethenv)|MFC tarafından kullanılmakta ODBC ortam için bir tanıtıcı alır. Bu işleyici, doğrudan ODBC çağrılarında kullanabilirsiniz.|
-
 
 ## <a name="afxdbinitmodule"></a> AfxDbInitModule
 
@@ -74,8 +73,6 @@ Bu çağrı herhangi bir temel sınıf çağrısından önce oluşur veya MFC ve
 
 [Makroları ve genel öğeleri](mfc-macros-and-globals.md)
 
-
-
 ##  <a name="afx_odbc_call"></a>  AFX_ODBC_CALL
 
 Döndürebilir herhangi bir ODBC API işlevini çağırmak için bu makroyu kullanın `SQL_STILL_EXECUTING`.
@@ -96,7 +93,6 @@ ODBC API işlevi. ODBC API işlevleri hakkında daha fazla bilgi için Windows S
 Çağırmadan önce `AFX_ODBC_CALL`, bir değişken bildirmeniz gerekir `nRetCode`, RETCODE türü.
 
 MFC ODBC şimdi kullanımı yalnızca zaman uyumlu işleme sınıfları unutmayın. Zaman uyumsuz bir işlemi gerçekleştirmek için ODBC API işlevini çağırmanız gerekir `SQLSetConnectOption`. Daha fazla bilgi için "Yürütülen işlevler zaman uyumsuz olarak" Windows SDK konusuna bakın.
-
 
 ### <a name="example"></a>Örnek
 

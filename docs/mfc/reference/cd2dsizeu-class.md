@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06008a2826a2ba2d358fcf3469b8a6b5b107e6be
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e5f7db887afd196d5bde57866ae39f04e3cdb7f5
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412365"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080747"
 ---
 # <a name="cd2dsizeu-class"></a>CD2DSizeU sınıfı
 
@@ -75,7 +75,6 @@ CSize nesnesinden CD2DSizeU bir nesne oluşturur.
 CD2DSizeU(const CSize& size);
 CD2DSizeU(const D2D1_SIZE_U& size);
   CD2DSizeU(const D2D1_SIZE_U* size);
-
 
 CD2DSizeU(
     UINT32 cx = 0,

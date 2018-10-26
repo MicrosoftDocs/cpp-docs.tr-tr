@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03fc15cc2d2a73c0e8a1a016a2a477a5c65cdc15
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 7cd03babd97033495ecfa84817938103cde05a73
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890563"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081712"
 ---
 # <a name="mfc-activex-controls-subclassing-a-windows-control"></a>MFC ActiveX Denetimleri: Bir Windows Denetimini Alt Sınıf Yapma
 
@@ -94,12 +94,12 @@ Eklenecek ileti işleyicisi yansımış pencere iletisi için el ile aşağıdak
 
 - Denetim sınıfı. H dosyasına bir işleyici işlevi bildirin. İşlev dönüş türü olmalıdır **LRESULT** ve türleriyle iki parametre **WPARAM** ve **LPARAM**sırasıyla. Örneğin:
 
-     [!code-cpp[NVC_MFC_AxSub#5](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_5.h)]
+   [!code-cpp[NVC_MFC_AxSub#5](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_5.h)]
     [!code-cpp[NVC_MFC_AxSub#6](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_6.h)]
 
 - Denetim sınıfı. CPP için ileti eşlemesi ON_MESSAGE girişi ekleyin. Bu girdi parametrelerinin İleti tanımlayıcısı ve işleyici işlevinin adı olmalıdır. Örneğin:
 
-     [!code-cpp[NVC_MFC_AxSub#7](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_7.cpp)]
+   [!code-cpp[NVC_MFC_AxSub#7](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_7.cpp)]
 
 - Ayrıca. CPP dosyasına uygulamak `OnOcmCommand` yansıtılan iletiyi işlemek için üye işlevi. *WParam* ve *lParam* parametreleri özgün pencere iletisi aynı olur.
 

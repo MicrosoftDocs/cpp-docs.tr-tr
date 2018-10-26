@@ -70,12 +70,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1af4f8bbbfc6d7a90120fe367c608db37cb055a1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4e001e3a5d58e962a318d6282efa47d0188edbe3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393002"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060149"
 ---
 # <a name="colesafearray-class"></a>COleSafeArray sınıfı
 
@@ -240,11 +240,9 @@ Oluşturur bir `COleSafeArray` nesne.
 ```
 COleSafeArray();
 
-
 COleSafeArray(
     const SAFEARRAY& saSrc,
     VARTYPE vtSrc);
-
 
 COleSafeArray(
     LPCSAFEARRAY pSrc,
@@ -305,7 +303,6 @@ void Create(
     VARTYPE vtSrc,
     DWORD dwDims,
     DWORD* rgElements);
-
 
 void Create(
     VARTYPE vtSrc,

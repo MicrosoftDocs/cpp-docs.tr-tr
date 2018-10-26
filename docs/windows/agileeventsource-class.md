@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c5d94b7a3949f0f547c9809d75e22eefbe9f5708
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 0f2ee187087917220751155cc43e8619e6dcf763
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789078"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054580"
 ---
 # <a name="agileeventsource-class"></a>AgileEventSource sınıfı
 
@@ -96,7 +96,6 @@ Bu işlem tamamlandığında, olayı temsil eden bir işleyici. Parametre olarak
 ### <a name="return-value"></a>Dönüş Değeri
 
 Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
-
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

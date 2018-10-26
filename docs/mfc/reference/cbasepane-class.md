@@ -176,12 +176,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9351e363bfa0ca654837436a01bb36b4f2b51eb2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5099251f46d3446368c04a39d624fde8128ab2e4
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378403"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076315"
 ---
 # <a name="cbasepane-class"></a>CBasePane sınıfı
 
@@ -332,7 +332,7 @@ Aşağıdaki özelleştirme ipuçları ilgilidir `CBasePane Class` ve ondan devr
 
     - AFX_CBRS_CLOSE (gizli) kapatılması bölmesinde sağlar.
 
-     Bu bir bit düzeyinde OR işlemle birleştirebilirsiniz bayraklar.
+   Bu bir bit düzeyinde OR işlemle birleştirebilirsiniz bayraklar.
 
 `CBasePane` Bu bayraklar yansıtacak şekilde aşağıdaki sanal Boole yöntemlerini uygular: [CBasePane::CanBeClosed](#canbeclosed), [CBasePane::CanAutoHide](#canautohide), [CBasePane::CanFloat](#canfloat). Bunları kendi davranışını özelleştirmek için türetilmiş sınıflarda geçersiz kılabilirsiniz.
 
@@ -1643,7 +1643,8 @@ virtual void OnMovePaneDivider(CPaneDivider*);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *CPaneDivider\**  kullanılmaz.
+*CPaneDivider\**<br/>
+[in] Kullanılmıyor.
 
 ##  <a name="onpanecontextmenu"></a>  CBasePane::OnPaneContextMenu
 

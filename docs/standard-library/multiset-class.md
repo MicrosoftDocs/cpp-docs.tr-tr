@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d45b08ee356fd217207b625ffe7bf4fb0abffec
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 43929e4b8ff2fa55750e44531a2dd46474505124
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45708701"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074273"
 ---
 # <a name="multiset-class"></a>multiset Sınıfı
 
@@ -849,7 +849,6 @@ past-the-end yineleyici döndürür.
 ```cpp
 const_iterator end() const;
 
-
 iterator end();
 ```
 
@@ -990,7 +989,6 @@ Belirtilen anahtara denk bir anahtara sahip bir çoklu küme içindeki öğenin 
 
 ```cpp
 iterator find(const Key& key);
-
 
 const_iterator find(const Key& key) const;
 ```
@@ -1148,19 +1146,16 @@ Bir çoklu küme, bir öğenin veya öğelerin aralığını ekler.
 pair<iterator, bool> insert(
     const value_type& Val);
 
-
 // (2) single element, perfect forwarded
 template <class ValTy>
 pair<iterator, bool>
 insert(
     ValTy&& Val);
 
-
 // (3) single element with hint
 iterator insert(
     const_iterator Where,
     const value_type& Val);
-
 
 // (4) single element, perfect forwarded, with hint
 template <class ValTy>
@@ -1168,13 +1163,11 @@ iterator insert(
     const_iterator Where,
     ValTy&& Val);
 
-
 // (5) range
 template <class InputIterator>
 void insert(
     InputIterator First,
     InputIterator Last);
-
 
 // (6) initializer list
 void insert(
@@ -1559,7 +1552,6 @@ multiset(
     initializer_list<Type> IList,
     const Compare& Comp,
     const Allocator& Al);
-
 
 template <class InputIterator>
 multiset (

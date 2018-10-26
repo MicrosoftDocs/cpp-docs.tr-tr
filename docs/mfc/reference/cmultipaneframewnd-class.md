@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 898c8b7351175ba9549c404fa9da2382f01bd0f1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ceb88a5d9ceb0265e3c86737cbe2ff27e6a34cf5
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436215"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066454"
 ---
 # <a name="cmultipaneframewnd-class"></a>CMultiPaneFrameWnd sınıfı
 
@@ -187,19 +187,17 @@ Aşağıdaki örnek, bir işaretçi almak gösterilmiştir bir `CMultiPaneFrameW
 
 ##  <a name="addpane"></a>  CMultiPaneFrameWnd::AddPane
 
-
 ```
 virtual void AddPane(CBasePane* pWnd);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pWnd*
+[in] *pWnd*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="addrecentpane"></a>  CMultiPaneFrameWnd::AddRecentPane
-
 
 ```
 virtual BOOL AddRecentPane(CDockablePane* pBar);
@@ -207,14 +205,13 @@ virtual BOOL AddRecentPane(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="adjustlayout"></a>  CMultiPaneFrameWnd::AdjustLayout
-
 
 ```
 virtual void AdjustLayout();
@@ -224,7 +221,6 @@ virtual void AdjustLayout();
 
 ##  <a name="adjustpaneframes"></a>  CMultiPaneFrameWnd::AdjustPaneFrames
 
-
 ```
 virtual void AdjustPaneFrames();
 ```
@@ -232,7 +228,6 @@ virtual void AdjustPaneFrames();
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="calcexpecteddockedrect"></a>  CMultiPaneFrameWnd::CalcExpectedDockedRect
-
 
 ```
 virtual void CalcExpectedDockedRect(
@@ -245,15 +240,15 @@ virtual void CalcExpectedDockedRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*pWndToDock*<br/>
-[in] [in] *ptMouse*
-*rectResult*<br/>
-[in] [in] *bDrawTab* [in] *ppTargetBar*
+[in] *pWndToDock*<br/>
+[in] *ptMouse*<br/>
+[in] *rectResult*<br/>
+[in] *bDrawTab*<br/>
+[in] *ppTargetBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="canbeattached"></a>  CMultiPaneFrameWnd::CanBeAttached
-
 
 ```
 virtual BOOL CanBeAttached() const;
@@ -265,21 +260,19 @@ virtual BOOL CanBeAttached() const;
 
 ##  <a name="canbedockedtopane"></a>  CMultiPaneFrameWnd::CanBeDockedToPane
 
-
 ```
 virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pDockingBar*
+[in] *pDockingBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="checkgrippervisibility"></a>  CMultiPaneFrameWnd::CheckGripperVisibility
-
 
 ```
 virtual void CheckGripperVisibility();
@@ -289,7 +282,6 @@ virtual void CheckGripperVisibility();
 
 ##  <a name="closeminiframe"></a>  CMultiPaneFrameWnd::CloseMiniFrame
 
-
 ```
 virtual void CloseMiniFrame();
 ```
@@ -297,7 +289,6 @@ virtual void CloseMiniFrame();
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="converttotabbeddocument"></a>  CMultiPaneFrameWnd::ConvertToTabbedDocument
-
 
 ```
 virtual void ConvertToTabbedDocument();
@@ -307,7 +298,6 @@ virtual void ConvertToTabbedDocument();
 
 ##  <a name="dockframe"></a>  CMultiPaneFrameWnd::DockFrame
 
-
 ```
 virtual BOOL DockFrame(
     CPaneFrameWnd* pDockedFrame,
@@ -316,8 +306,8 @@ virtual BOOL DockFrame(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDockedFrame*<br/>
-[in] [in] *dockMethod*
+[in] *pDockedFrame*<br/>
+[in] *dockMethod*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -325,14 +315,13 @@ virtual BOOL DockFrame(
 
 ##  <a name="dockpane"></a>  CMultiPaneFrameWnd::DockPane
 
-
 ```
 virtual BOOL DockPane(CDockablePane* pDockedBar);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pDockedBar*
+[in] *pDockedBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -340,19 +329,17 @@ virtual BOOL DockPane(CDockablePane* pDockedBar);
 
 ##  <a name="dockrecentpanetomainframe"></a>  CMultiPaneFrameWnd::DockRecentPaneToMainFrame
 
-
 ```
 virtual void DockRecentPaneToMainFrame(CDockablePane* pBar);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getcaptiontext"></a>  CMultiPaneFrameWnd::GetCaptionText
-
 
 ```
 virtual CString GetCaptionText();
@@ -364,7 +351,6 @@ virtual CString GetCaptionText();
 
 ##  <a name="getfirstvisiblepane"></a>  CMultiPaneFrameWnd::GetFirstVisiblePane
 
-
 ```
 virtual CWnd* GetFirstVisiblePane() const;
 ```
@@ -374,7 +360,6 @@ virtual CWnd* GetFirstVisiblePane() const;
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getpane"></a>  CMultiPaneFrameWnd::GetPane
-
 
 ```
 virtual CWnd* GetPane() const;
@@ -402,7 +387,6 @@ Bu yöntem iç erişmek için kullanılan [CPaneContainerManager sınıfı](../.
 
 ##  <a name="getpanecount"></a>  CMultiPaneFrameWnd::GetPaneCount
 
-
 ```
 virtual int GetPaneCount() const;
 ```
@@ -412,7 +396,6 @@ virtual int GetPaneCount() const;
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getvisiblepanecount"></a>  CMultiPaneFrameWnd::GetVisiblePaneCount
-
 
 ```
 virtual int GetVisiblePaneCount() const;
@@ -424,7 +407,6 @@ virtual int GetVisiblePaneCount() const;
 
 ##  <a name="insertpane"></a>  CMultiPaneFrameWnd::InsertPane
 
-
 ```
 virtual BOOL InsertPane(
     CBasePane* pControlBar,
@@ -434,15 +416,15 @@ virtual BOOL InsertPane(
 
 ### <a name="parameters"></a>Parametreler
 
-*pControlBar*<br/>
-[in] [in] *pTarget* [in] *bBu*
+[in] *pControlBar*<br/>
+[in] *pTarget*<br/>
+[in] *bBu*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="loadstate"></a>  CMultiPaneFrameWnd::LoadState
-
 
 ```
 virtual BOOL LoadState(
@@ -452,15 +434,14 @@ virtual BOOL LoadState(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszProfileName*<br/>
-[in] [in] *uiID*
+[in] *lpszProfileName*<br/>
+[in] *uiID*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="ondocktorecentpos"></a>  CMultiPaneFrameWnd::OnDockToRecentPos
-
 
 ```
 virtual void OnDockToRecentPos();
@@ -470,7 +451,6 @@ virtual void OnDockToRecentPos();
 
 ##  <a name="onkillrolluptimer"></a>  CMultiPaneFrameWnd::OnKillRollUpTimer
 
-
 ```
 virtual void OnKillRollUpTimer();
 ```
@@ -478,7 +458,6 @@ virtual void OnKillRollUpTimer();
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="onpanerecalclayout"></a>  CMultiPaneFrameWnd::OnPaneRecalcLayout
-
 
 ```
 virtual void OnPaneRecalcLayout();
@@ -488,7 +467,6 @@ virtual void OnPaneRecalcLayout();
 
 ##  <a name="onsetrolluptimer"></a>  CMultiPaneFrameWnd::OnSetRollUpTimer
 
-
 ```
 virtual void OnSetRollUpTimer();
 ```
@@ -496,7 +474,6 @@ virtual void OnSetRollUpTimer();
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="onshowpane"></a>  CMultiPaneFrameWnd::OnShowPane
-
 
 ```
 virtual void OnShowPane(
@@ -506,13 +483,12 @@ virtual void OnShowPane(
 
 ### <a name="parameters"></a>Parametreler
 
-*pBar*<br/>
-[in] [in] *bBilgi Göster*
+[in] *pBar*<br/>
+[in] *bBilgi Göster*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="panefrompoint"></a>  CMultiPaneFrameWnd::PaneFromPoint
-
 
 ```
 virtual CBasePane* PaneFromPoint(
@@ -523,15 +499,15 @@ virtual CBasePane* PaneFromPoint(
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*<br/>
-[in] [in] *nSensitivity* [in] *bCheckVisibility*
+[in] *noktası*<br/>
+[in] *nSensitivity*<br/>
+[in] *bCheckVisibility*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="removenonvalidpanes"></a>  CMultiPaneFrameWnd::RemoveNonValidPanes
-
 
 ```
 virtual void RemoveNonValidPanes();
@@ -540,7 +516,6 @@ virtual void RemoveNonValidPanes();
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="removepane"></a>  CMultiPaneFrameWnd::RemovePane
-
 
 ```
 virtual void RemovePane(
@@ -551,13 +526,13 @@ virtual void RemovePane(
 
 ### <a name="parameters"></a>Parametreler
 
-*pBar*<br/>
-[in] [in] *bDestroy* [in] *bNoDelayedDestroy*
+[in] *pBar*<br/>
+[in] *bDestroy*<br/>
+[in] *bNoDelayedDestroy*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="replacepane"></a>  CMultiPaneFrameWnd::ReplacePane
-
 
 ```
 virtual void ReplacePane(
@@ -567,13 +542,12 @@ virtual void ReplacePane(
 
 ### <a name="parameters"></a>Parametreler
 
-*pBarOrg*<br/>
-[in] [in] *pBarReplaceWith*
+[in] *pBarOrg*<br/>
+[in] *pBarReplaceWith*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="savestate"></a>  CMultiPaneFrameWnd::SaveState
-
 
 ```
 virtual BOOL SaveState(
@@ -583,8 +557,8 @@ virtual BOOL SaveState(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszProfileName*<br/>
-[in] [in] *uiID*
+[in] *lpszProfileName*<br/>
+[in] *uiID*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -592,19 +566,17 @@ virtual BOOL SaveState(
 
 ##  <a name="serialize"></a>  CMultiPaneFrameWnd::Serialize
 
-
 ```
 virtual void Serialize(CArchive& ar);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *ar*
+[in] *ar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setdockstate"></a>  CMultiPaneFrameWnd::SetDockState
-
 
 ```
 virtual void SetDockState(CDockingManager* pDockManager);
@@ -612,12 +584,11 @@ virtual void SetDockState(CDockingManager* pDockManager);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pDockManager*
+[in] *pDockManager*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setlastfocusedpane"></a>  CMultiPaneFrameWnd::SetLastFocusedPane
-
 
 ```
 void SetLastFocusedPane(HWND hwnd);
@@ -625,12 +596,11 @@ void SetLastFocusedPane(HWND hwnd);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *hwnd*
+[in] *hwnd*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setpredockstate"></a>  CMultiPaneFrameWnd::SetPreDockState
-
 
 ```
 virtual BOOL SetPreDockState(
@@ -641,8 +611,9 @@ virtual BOOL SetPreDockState(
 
 ### <a name="parameters"></a>Parametreler
 
-*preDockState*<br/>
-[in] [in] *pBarToDock* [in] *dockMethod*
+[in] *preDockState*<br/>
+[in] *pBarToDock*<br/>
+[in] *dockMethod*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -650,19 +621,17 @@ virtual BOOL SetPreDockState(
 
 ##  <a name="storerecentdocksiteinfo"></a>  CMultiPaneFrameWnd::StoreRecentDockSiteInfo
 
-
 ```
 virtual void StoreRecentDockSiteInfo(CPane* pBar);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="storerecenttabrelatedinfo"></a>  CMultiPaneFrameWnd::StoreRecentTabRelatedInfo
-
 
 ```
 virtual void StoreRecentTabRelatedInfo(
@@ -672,8 +641,8 @@ virtual void StoreRecentTabRelatedInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDockingBar*<br/>
-[in] [in] *pTabbedBar*
+[in] *pDockingBar*<br/>
+[in] *pTabbedBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 

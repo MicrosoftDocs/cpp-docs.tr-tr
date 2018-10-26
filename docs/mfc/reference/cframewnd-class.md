@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 32456b15cc00d296354016f8769e020f8133b609
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 8f878d1cdf450c1672298fc16ec8948c94a33056
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861739"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059837"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd sınıfı
 
@@ -1212,7 +1212,6 @@ Fazla Yüklendi. Bir katmana görev çubuğu düğmesi için uygulama durumunu g
 BOOL SetTaskbarOverlayIcon(
     UINT nIDResource,
     LPCTSTR lpcszDescr);
-
 
 BOOL SetTaskbarOverlayIcon(
     HICON hIcon,

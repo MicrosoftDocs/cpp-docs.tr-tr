@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c38485e84f0b06e79e02ba780926b6e08378220
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 27981084c79b5bf1347715df8945598c1e6683e4
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392924"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071669"
 ---
 # <a name="c-standard-library-reference"></a>C++ Standart Kitaplığı Başvurusu
 
@@ -40,5 +40,4 @@ C++ Standart Kitaplığı'nın Microsoft uygulaması için genel bir bakış sa�
 
 [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
 C++ Standart Kitaplığı üst bilgi dosyaları, kod örnekleri ile açıklayan başvuru konulara bağlantılar sağlar.
-
 

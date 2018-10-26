@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc013ca5cc8c941e0208b5921a73daebdae2264b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f148d548cb9d3c93e94f51c1cd8c90fae69527f8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725198"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075742"
 ---
 # <a name="uniqueptr-class"></a>unique_ptr Sınıfı
 
@@ -86,7 +86,6 @@ public:
     unique_ptr& operator=(unique_ptr<U, E>&& u) noexcept;
     unique_ptr& operator=(nullptr_t) noexcept;
     T& operator[](size_t i) const;
-
 
     pointer get() const noexcept;
     deleter_type& get_deleter() noexcept;

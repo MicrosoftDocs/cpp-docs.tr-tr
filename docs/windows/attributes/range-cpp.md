@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 593cfbd4b7430c3f6ac5b4f2ab1053665136ab25
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 17ceaa7c470e57cadd198c17c21bb2a8ae4755ce
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789831"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071670"
 ---
 # <a name="range-c"></a>aralık (C++)
 
@@ -80,4 +80,4 @@ __interface ICustom {
 [IDL öznitelikleri](idl-attributes.md)<br/>
 [Yöntem Öznitelikleri](method-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)<br/>
-[Veri Üyesi Öznitelikleri](data-member-attributes.md)  
+[Veri Üyesi Öznitelikleri](data-member-attributes.md)

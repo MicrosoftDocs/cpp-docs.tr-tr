@@ -33,120 +33,120 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6f85fafe213fa7e53f67fb6a3035f415235c8794
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 8d653618e690a5c60dea460e1dfa7cdb17d70c7a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082455"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056158"
 ---
 # <a name="cenumerator-class"></a>CEnumerator Sınıfı
 
-Kullanıma sunan bir OLE DB sabit listesi nesnesi kullanan [ISourcesRowset](/previous-versions/windows/desktop/ms715969) tüm veri kaynaklarını ve numaralandırıcıları açıklayan bir satır kümesi döndürmek için arabirim.  
-  
+Kullanıma sunan bir OLE DB sabit listesi nesnesi kullanan [ISourcesRowset](/previous-versions/windows/desktop/ms715969) tüm veri kaynaklarını ve numaralandırıcıları açıklayan bir satır kümesi döndürmek için arabirim.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-class CEnumerator :   
-   public CAccessorRowset< CAccessor <CEnumeratorAccessor >>  
-```  
+class CEnumerator : 
+   public CAccessorRowset< CAccessor <CEnumeratorAccessor >>
+```
 
-## <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler
 
 **Başlık:** atldbcli.h
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="methods"></a>Yöntemler  
-  
-|||  
-|-|-|  
-|[Bul](#find)|Belirtilen ada sahip bir arayan yok sağlayıcıları (veri kaynakları) arar.|  
-|[GetMoniker](#getmoniker)|Alır `IMoniker` geçerli kayıt için arabirim.|  
-|[açın](#open)|Numaralandırıcı açılır.|  
-  
-## <a name="remarks"></a>Açıklamalar  
 
-Alabileceğiniz `ISourcesRowset` dolaylı olarak bu sınıftaki veri.  
+## <a name="members"></a>Üyeler
+
+### <a name="methods"></a>Yöntemler
+
+|||
+|-|-|
+|[Bul](#find)|Belirtilen ada sahip bir arayan yok sağlayıcıları (veri kaynakları) arar.|
+|[GetMoniker](#getmoniker)|Alır `IMoniker` geçerli kayıt için arabirim.|
+|[açın](#open)|Numaralandırıcı açılır.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Alabileceğiniz `ISourcesRowset` dolaylı olarak bu sınıftaki veri.
 
 ## <a name="find"></a> CEnumerator::Find
 
-Belirtilen bir adı yok sağlayıcıları arasında arar.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Belirtilen bir adı yok sağlayıcıları arasında arar.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-bool Find(TCHAR* szSearchName) throw();  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+bool Find(TCHAR* szSearchName) throw();
+```
+
+#### <a name="parameters"></a>Parametreler
 
 *szSearchName*<br/>
-[in] Aranacak ad.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
+[in] Aranacak ad.
 
-**doğru** adı bulunursa. Aksi takdirde, **false**.  
-  
-### <a name="remarks"></a>Açıklamalar  
+### <a name="return-value"></a>Dönüş Değeri
 
-Bu ad eşlendiği `SOURCES_NAME` üyesi [ISourcesRowset](/previous-versions/windows/desktop/ms715969) arabirimi.  
-  
+**doğru** adı bulunursa. Aksi takdirde, **false**.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu ad eşlendiği `SOURCES_NAME` üyesi [ISourcesRowset](/previous-versions/windows/desktop/ms715969) arabirimi.
+
 ## <a name="getmoniker"></a> CEnumerator::GetMoniker
 
-Görünen ad, bilinen adı dönüştürülebilir dize bileşeninin ayıklanacağı ayrıştırır.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp
-HRESULT GetMoniker(LPMONIKER* ppMoniker) const throw();  
+Görünen ad, bilinen adı dönüştürülebilir dize bileşeninin ayıklanacağı ayrıştırır.
 
-HRESULT GetMoniker(LPMONIKER* ppMoniker,   
-   LPCTSTR lpszDisplayName) const throw();  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetMoniker(LPMONIKER* ppMoniker) const throw();
+
+HRESULT GetMoniker(LPMONIKER* ppMoniker, 
+   LPCTSTR lpszDisplayName) const throw();
+```
+
+#### <a name="parameters"></a>Parametreler
 
 *ppMoniker*<br/>
-[out] Adı görünen adı ayrıştırıldı ([CEnumeratorAccessor::m_szParseName](../../data/oledb/cenumeratoraccessor-m-szparsename.md)) geçerli satır.  
-  
-*lpszDisplayName*<br/>
-[in] Ayrıştırılacak görünen adı.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
+[out] Adı görünen adı ayrıştırıldı ([CEnumeratorAccessor::m_szParseName](../../data/oledb/cenumeratoraccessor-m-szparsename.md)) geçerli satır.
 
-Standart bir HRESULT.  
+*lpszDisplayName*<br/>
+[in] Ayrıştırılacak görünen adı.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Standart bir HRESULT.
 
 ## <a name="open"></a> CEnumerator::Open
 
-Bir belirtilir ve ardından çağırarak satır kümesi için bir numaralandırıcı alır, numaralandırıcı için bilinen ad bağlar [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200).  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Bir belirtilir ve ardından çağırarak satır kümesi için bir numaralandırıcı alır, numaralandırıcı için bilinen ad bağlar [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200).
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-HRESULT Open(LPMONIKER pMoniker) throw();  
+HRESULT Open(LPMONIKER pMoniker) throw();
 
-HRESULT Open(const CLSID* pClsid = & CLSID_OLEDB_ENUMERATOR) throw();  
+HRESULT Open(const CLSID* pClsid = & CLSID_OLEDB_ENUMERATOR) throw();
 
-HRESULT Open(const CEnumerator& enumerator) throw();  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+HRESULT Open(const CEnumerator& enumerator) throw();
+```
+
+#### <a name="parameters"></a>Parametreler
 
 *pMoniker*<br/>
-[in] Bir işaretçi için bir numaralandırıcı için bir bilinen ad.  
-  
-*pClsid*<br/>
-[in] Bir işaretçi `CLSID` Numaralayıcı.  
-  
-*Numaralandırıcı*<br/>
-[in] Bir başvuru için bir numaralandırıcı.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
+[in] Bir işaretçi için bir numaralandırıcı için bir bilinen ad.
 
-Standart bir HRESULT.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+*pClsid*<br/>
+[in] Bir işaretçi `CLSID` Numaralayıcı.
+
+*Numaralandırıcı*<br/>
+[in] Bir başvuru için bir numaralandırıcı.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Standart bir HRESULT.
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [DBViewer](../../visual-cpp-samples.md)<br/>
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5b5bb50c99efc2a7b18fbbbabba394ec5330661
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fc151ae25df4cac2c6b5ed9ac5a523efda28dff2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378208"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082716"
 ---
 # <a name="using-property-sheets-in-your-application"></a>Uygulamanızdaki Özellik Sayfalarını Kullanma
 
@@ -34,9 +34,9 @@ Bir özellik sayfası kullanmak için aşağıdaki adımları tamamlayın:
 
 1. Her bir özellik sayfası için bir iletişim şablonunu kaynağı oluşturun. Her çıkış yerleşim sayfası olarak tutarlı bir şekilde olabildiğince, böylece kullanıcı bir sayfadan diğerine geçiş göz önünde bulundurun.
 
-     Tüm sayfalar için iletişim kutusu şablonları aynı boyutta olması gerekmez. Framework, özellik sayfaları için özellik sayfası ayırmak için ne kadar alan belirlemek için sayfanın en büyük boyutunu kullanır.
+   Tüm sayfalar için iletişim kutusu şablonları aynı boyutta olması gerekmez. Framework, özellik sayfaları için özellik sayfası ayırmak için ne kadar alan belirlemek için sayfanın en büyük boyutunu kullanır.
 
-     Özellik sayfası iletişim şablon kaynağı oluşturduğunuzda, aşağıdaki stilleri Dialog özellikleri özellik sayfasında belirtmeniz gerekir:
+   Özellik sayfası iletişim şablon kaynağı oluşturduğunuzda, aşağıdaki stilleri Dialog özellikleri özellik sayfasında belirtmeniz gerekir:
 
    - Ayarlama **açıklamalı alt yazı** üzerinde düzenleme kutusu **genel** sayfasına bu sayfa için sekmesinde görünmesini istediğiniz metin.
 
@@ -60,9 +60,9 @@ Bir özellik sayfası kullanmak için aşağıdaki adımları tamamlayın:
 
    - Çağrı [CPropertySheet::AddPage](../mfc/reference/cpropertysheet-class.md#addpage) her sayfa için.
 
-     Genellikle, oluşturan nesne `CPropertySheet` da oluşturur `CPropertyPage` Bu adımda nesneleri. Ancak, uygularsanız bir `CPropertySheet`-türetilmiş sınıf, katıştırabilirsiniz `CPropertyPage` nesneler `CPropertySheet` nesne ve çağrı `AddPage` her sayfadan için `CPropertySheet`-türetilmiş sınıf oluşturucu. `AddPage` ekler `CPropertyPage` nesne özelliği sayfanın sayfalar listesine ancak aslında bu sayfanın penceresini oluşturmaz. Bu nedenle, çağırmak için özellik sayfası pencerenin oluşturulmasını kadar beklenecek gerekli değil `AddPage`; çağırabilirsiniz `AddPage` özelliği sayfanın oluşturucudan.
+   Genellikle, oluşturan nesne `CPropertySheet` da oluşturur `CPropertyPage` Bu adımda nesneleri. Ancak, uygularsanız bir `CPropertySheet`-türetilmiş sınıf, katıştırabilirsiniz `CPropertyPage` nesneler `CPropertySheet` nesne ve çağrı `AddPage` her sayfadan için `CPropertySheet`-türetilmiş sınıf oluşturucu. `AddPage` ekler `CPropertyPage` nesne özelliği sayfanın sayfalar listesine ancak aslında bu sayfanın penceresini oluşturmaz. Bu nedenle, çağırmak için özellik sayfası pencerenin oluşturulmasını kadar beklenecek gerekli değil `AddPage`; çağırabilirsiniz `AddPage` özelliği sayfanın oluşturucudan.
 
-     Özellik sayfasını, tek bir satır sığmayacak kadar çok daha fazla sekme bir özellik sayfası varsa, varsayılan olarak, sekmeleri birden çok satır yığın. Yığınlama devre dışı bırakmak için çağrı [CPropertySheet::EnableStackedTabs](../mfc/reference/cpropertysheet-class.md#enablestackedtabs) ayarlanan parametre ile **FALSE**. Çağırmalısınız `EnableStackedTabs` özellik sayfası oluşturduğunuzda.
+   Özellik sayfasını, tek bir satır sığmayacak kadar çok daha fazla sekme bir özellik sayfası varsa, varsayılan olarak, sekmeleri birden çok satır yığın. Yığınlama devre dışı bırakmak için çağrı [CPropertySheet::EnableStackedTabs](../mfc/reference/cpropertysheet-class.md#enablestackedtabs) ayarlanan parametre ile **FALSE**. Çağırmalısınız `EnableStackedTabs` özellik sayfası oluşturduğunuzda.
 
 1. Çağrı [CPropertySheet::DoModal](../mfc/reference/cpropertysheet-class.md#domodal) veya [Oluştur](../mfc/reference/cpropertysheet-class.md#create) özellik sayfasını görüntülemek için. Çağrı `DoModal` kalıcı bir iletişim kutusu olarak bir özellik sayfası oluşturmak için. Çağrı **Oluştur** modsuz iletişim kutusu olarak özellik sayfası oluşturma.
 

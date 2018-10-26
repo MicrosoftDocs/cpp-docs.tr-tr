@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46fa8b115dd01a9ee11442a0701cd719cc6d389e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 28c93e5d1331d7195b894fe88c3fe5fc11e7c31d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394367"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074078"
 ---
 # <a name="containers-implementing-a-container"></a>Kapsayıcılar: Bir Kapsayıcı Uygulama
 
@@ -62,15 +62,15 @@ Aşağıdaki özelliklerden bazıları kapsayıcı uygulamanızı desteklemek is
 
 - Gömülü bir öğe düzenlenirken yerinde etkinleştirme.
 
-     Daha fazla bilgi için [etkinleştirme](../mfc/activation-cpp.md).
+   Daha fazla bilgi için [etkinleştirme](../mfc/activation-cpp.md).
 
 - Bir sunucu uygulamasından bir seçim sürükleyip bırakarak oluşturma OLE öğeleri.
 
-     Daha fazla bilgi için [sürükleme ve bırakma (OLE)](../mfc/drag-and-drop-ole.md).
+   Daha fazla bilgi için [sürükleme ve bırakma (OLE)](../mfc/drag-and-drop-ole.md).
 
 - Katıştırılmış nesneler ya da birlikte kapsayıcı/sunucu uygulamaları bağlar.
 
-     Daha fazla bilgi için [kapsayıcılar: Gelişmiş Özellikler](../mfc/containers-advanced-features.md).
+   Daha fazla bilgi için [kapsayıcılar: Gelişmiş Özellikler](../mfc/containers-advanced-features.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

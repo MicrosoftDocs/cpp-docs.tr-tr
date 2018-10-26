@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b205be3c2417453faa54c9d24ac28216ee0af5cf
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 447a03cec8beba331aedc8077a44dc9090fccbc6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060544"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078537"
 ---
 # <a name="new-and-delete-operators"></a>new ve delete İşleçleri
 
@@ -45,7 +45,6 @@ char *pch = new char[BUFFER_SIZE];
 İstek için depolama alanı, sıfır bayt ise **new işleci** farklı nesneye bir işaretçi döndürür (diğer bir deyişle, çağrı yinelenen **new işleci** farklı işaretçiler döndürür). Yetersiz bellek ayırma isteği için ise **new işleci** std::bad_alloc özel durumu oluşturur veya döndürür **nullptr** oluşturmayan içinde bağladıysanız **new işleci** destekler.
 
 Belleği boşaltmak ve ayırma yeniden başlatmayı deneyen bir yordam yazabilirsiniz; bkz: [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) daha fazla bilgi için. Kurtarma düzeni hakkında daha fazla ayrıntı için bu konunun işleme yetersiz bellek bölümüne bakın.
-
 
 Yönelik iki kapsam **new işleci** işlevleri, aşağıdaki tabloda açıklanmıştır.
 

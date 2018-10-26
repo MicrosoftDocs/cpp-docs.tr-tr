@@ -163,12 +163,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd4f5ac780b36e51be63aef7ce87884284542cbb
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 999e91f1f437077b90b2c8a0ea9f7ac8a4603080
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861947"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054677"
 ---
 # <a name="cwindow-class"></a>CWindow sınıfı
 
@@ -499,7 +499,7 @@ Bkz: [CheckDlgButton](/windows/desktop/api/winuser/nf-winuser-checkdlgbutton) Wi
 Belirtilen radyo düğmesinin denetler.
 
 ```
-BOOL CheckRadioButton(  
+BOOL CheckRadioButton(
     int nIDFirstButton,
     int nIDLastButton,
     int nIDCheckButton) throw();
@@ -667,7 +667,7 @@ Başlatır [m_hWnd](#m_hwnd) üyesine *hWnd*, varsayılan olarak, NULL.
 Belirtilen pencere için belirtilen birden çok pencere konumu yapısı güncelleştirir.
 
 ```
-HDWP DeferWindowPos(  
+HDWP DeferWindowPos(
     HDWP hWinPosInfo,
     HWND hWndInsertAfter,
     int x,
@@ -720,7 +720,7 @@ HWND ilişkili `CWindow` nesne.
 Belirtilen yol veya dosya adı eşleşen tüm dosyaları adlarıyla bir liste kutusu doldurur.
 
 ```
-int DlgDirList(  
+int DlgDirList(
     LPTSTR lpPathSpec,
     int nIDListBox,
     int nIDStaticPath,
@@ -736,7 +736,7 @@ Bkz: [DlgDirList](/windows/desktop/api/winuser/nf-winuser-dlgdirlista) Windows S
 Birleşik giriş kutusu adlarını belirtilen yol veya dosya adı eşleşen tüm dosyaları ile doldurur.
 
 ```
-int DlgDirListComboBox(  
+int DlgDirListComboBox(
     LPTSTR lpPathSpec,
     int nIDComboBox,
     int nIDStaticPath,
@@ -752,7 +752,7 @@ Bkz: [DlgDirListComboBox](/windows/desktop/api/winuser/nf-winuser-dlgdirlistcomb
 Geçerli seçimi bir liste kutusundan alır.
 
 ```
-BOOL DlgDirSelect(  
+BOOL DlgDirSelect(
     LPTSTR lpString,
     int nCount,
     int nIDListBox) throw();
@@ -767,7 +767,7 @@ Bkz: [DlgDirSelectEx](/windows/desktop/api/winuser/nf-winuser-dlgdirselectexa) W
 Geçerli seçimi birleşik giriş kutusundan alır.
 
 ```
-BOOL DlgDirSelectComboBox(  
+BOOL DlgDirSelectComboBox(
     LPTSTR lpString,
     int nCount,
     int nIDComboBox) throw();
@@ -927,7 +927,7 @@ Bir alt pencere için işleme.
 Bileşik denetim veya bir denetim barındırma iletişim kutusu tarafından barındırılan ActiveX denetiminin bir arabirim işaretçisi almak için bu işlevi çağırın.
 
 ```
-HRESULT GetDlgControl(  
+HRESULT GetDlgControl(
     int nID,
     REFIID iid,
     void** ppCtrl) throw();
@@ -969,7 +969,7 @@ Bkz: [GetDlgCtrlID](/windows/desktop/api/winuser/nf-winuser-getdlgctrlid) Window
 Bir kapsayıcı barındırma ATL denetimi için bir arabirim işaretçisi alır.
 
 ```
-HRESULT GetDlgHost(  
+HRESULT GetDlgHost(
     int nID,
     REFIID iid,
     void** ppHost) throw();
@@ -1011,7 +1011,7 @@ Bkz: [GetDlgItem](/windows/desktop/api/winuser/nf-winuser-getdlgitem) Windows SD
 Denetimin metni bir tamsayıya dönüştürür.
 
 ```
-UINT GetDlgItemInt(  
+UINT GetDlgItemInt(
     int nID,
     BOOL* lpTrans = NULL,
     BOOL bSigned = TRUE) const throw();
@@ -1026,12 +1026,12 @@ Bkz: [GetDlgItemInt](/windows/desktop/api/winuser/nf-winuser-getdlgitemint) Wind
 Bir denetimin metni alır.
 
 ```
-UINT GetDlgItemText(  
+UINT GetDlgItemText(
     int nID,
     LPTSTR lpStr,
     int nMaxCount) const throw();
 
-BOOL GetDlgItemText(  
+BOOL GetDlgItemText(
     int nID,
     BSTR& bstrText) const throw();
 ```
@@ -1202,7 +1202,7 @@ Bkz: [GetScrollPos](/windows/desktop/api/winuser/nf-winuser-getscrollpos) Window
 Kaydırma çubuğu aralığı alır.
 
 ```
-BOOL GetScrollRange(  
+BOOL GetScrollRange(
     int nBar,
     LPINT lpMinPos,
     LPINT lpMaxPos) const throw();
@@ -1543,7 +1543,7 @@ Bkz: [HideCaret](/windows/desktop/api/winuser/nf-winuser-hidecaret) Windows SDK 
 Vurgular veya bir üst düzey menü öğesini vurgulama kaldırır.
 
 ```
-BOOL HiliteMenuItem(  
+BOOL HiliteMenuItem(
     HMENU hMenu,
     UINT uHiliteItem,
     UINT uHilite) throw();
@@ -1785,12 +1785,12 @@ HWND m_hWnd throw() throw();
 Bir dizi noktaları pencerenin koordinat alanından başka bir penceresinin koordinat için dönüştürür.
 
 ```
-int MapWindowPoints(  
+int MapWindowPoints(
     HWND hWndTo,
     LPPOINT lpPoint,
     UINT nCount) const throw();
 
-int MapWindowPoints(  
+int MapWindowPoints(
     HWND hWndTo,
     LPRECT lpRect) const throw();
 ```
@@ -1806,7 +1806,7 @@ Dosyanın ikinci sürümü, bu yöntem, koordinatlarını dönüştürmek sağla
 Bir ileti kutusu görüntüler.
 
 ```
-int MessageBox(  
+int MessageBox(
     LPCTSTR lpszText,
     LPCTSTR lpszCaption = NULL,
     UINT nType = MB_OK) throw();
@@ -1825,7 +1825,7 @@ Bkz: [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) Windows SD
 Pencere stillerini değiştirir `CWindow` nesne.
 
 ```
-BOOL ModifyStyle(  
+BOOL ModifyStyle(
     DWORD dwRemove,
     DWORD dwAdd,
     UINT nFlags = 0) throw();
@@ -1871,7 +1871,7 @@ Bir pencere değiştirmek için genişletilmiş stiller, çağrı [ModifyStyleEx
 Genişletilmiş pencere stillerini değiştirir `CWindow` nesne.
 
 ```
-BOOL ModifyStyleEx(  
+BOOL ModifyStyleEx(
     DWORD dwRemove,
     DWORD dwAdd,
     UINT nFlags = 0) throw();
@@ -1917,14 +1917,14 @@ Normal pencere stilleri kullanarak windows değiştirmek için çağrı [ModifyS
 Pencerenin boyutunu ve konumunu değiştirir.
 
 ```
-BOOL MoveWindow(  
+BOOL MoveWindow(
     int x,
     int y,
     int nWidth,
     int nHeight,
     BOOL bRepaint = TRUE) throw();
 
-BOOL MoveWindow(  
+BOOL MoveWindow(
     LPCRECT lpRect,
     BOOL bRepaint = TRUE) throw();
 ```
@@ -1980,7 +1980,7 @@ CWindow& operator= (HWND hWnd) throw();
 Pencerenin oluşturulan iş parçacığıyla ilişkilendirilmiş ileti kuyruğuna bir ileti yerleştirir.
 
 ```
-BOOL PostMessage(  
+BOOL PostMessage(
     UINT message,
     WPARAM wParam = 0,
     LPARAM lParam = 0) throw();
@@ -2077,7 +2077,7 @@ static RECT rcDefault;
 Belirtilen dikdörtgen veya istemci alanını bölgede güncelleştirir.
 
 ```
-BOOL RedrawWindow(  
+BOOL RedrawWindow(
     LPCRECT lpRectUpdate = NULL,
     HRGN hRgnUpdate = NULL,
     UINT flags = RDW_INVALIDATE | RDW_UPDATENOW | RDW_ERASE);
@@ -2114,7 +2114,7 @@ Bkz: [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) Windows SDK 
 Pencereyi belirtilen istemci alanı boyuta göre yeniden boyutlandırır.
 
 ```
-BOOL ResizeClient(  
+BOOL ResizeClient(
     int nWidth,
     int nHeight,
     BOOL bRedraw = FALSE) throw();
@@ -2151,7 +2151,7 @@ Dosyanın ikinci sürümü, bu yöntem, koordinatlarını dönüştürmek sağla
 Belirtilen istemci alanını kaydırır.
 
 ```
-BOOL ScrollWindow(  
+BOOL ScrollWindow(
     int xAmount,
     int yAmount,
     LPCRECT lpRect = NULL,
@@ -2167,7 +2167,7 @@ Bkz: [ScrollWindow](/windows/desktop/api/winuser/nf-winuser-scrollwindow) Window
 Ek özellikler ile belirtilen istemci alanı kaydırır.
 
 ```
-int ScrollWindowEx(  
+int ScrollWindowEx(
     int dx,
     int dy,
     LPCRECT lpRectScroll,
@@ -2186,7 +2186,7 @@ Bkz: [ScrollWindowEx](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) Wi
 Bir denetim için bir ileti gönderir.
 
 ```
-LRESULT SendDlgItemMessage(  
+LRESULT SendDlgItemMessage(
     int nID,
     UINT message,
     WPARAM wParam = 0,
@@ -2202,12 +2202,12 @@ Bkz: [SendDlgItemMessage](/windows/desktop/api/winuser/nf-winuser-senddlgitemmes
 Pencereyi bir ileti gönderir ve pencere yordamını ileti işleyene kadar döndürmez.
 
 ```
-LRESULT SendMessage(  
+LRESULT SendMessage(
     UINT message,
     WPARAM wParam = 0,
     LPARAM lParam = 0) throw();
 
-static LRESULT SendMessage(  
+static LRESULT SendMessage(
     HWND hWnd,
     UINT message,
     WPARAM wParam,
@@ -2227,7 +2227,7 @@ Bkz: [SendMessage](https://msdn.microsoft.com/library/windows/desktop/ms644950) 
 Tüm hemen alt için belirtilen iletiyi gönderir `CWindow` nesne.
 
 ```
-void SendMessageToDescendants(  
+void SendMessageToDescendants(
     UINT message,
     WPARAM wParam = 0,
     LPARAM lParam = 0,
@@ -2257,7 +2257,7 @@ Varsa *bDeep* TRUE ise iletinin ayrıca diğer alt tüm pencerelere Gönder.
 Bir ileti penceresine gönderir.
 
 ```
-BOOL SendNotifyMessage(  
+BOOL SendNotifyMessage(
     UINT message,
     WPARAM wParam = 0,
     LPARAM lParam = 0) throw();
@@ -2331,7 +2331,7 @@ Başarılı olursa, pencerenin; önceki tanımlayıcısı Aksi durumda 0.
 Bir denetimin metni bir tamsayı değeri dize gösterimine çevirir.
 
 ```
-BOOL SetDlgItemInt(  
+BOOL SetDlgItemInt(
     int nID,
     UINT nValue,
     BOOL bSigned = TRUE) throw();
@@ -2483,7 +2483,7 @@ void SetRedraw(BOOL bRedraw = TRUE) throw();
 Bir kaydırma çubuğunun parametreleri ayarlar.
 
 ```
-int SetScrollInfo(  
+int SetScrollInfo(
     int nBar,
     LPSCROLLINFO lpScrollInfo,
     BOOL bRedraw = TRUE) throw();
@@ -2498,7 +2498,7 @@ Bkz: [SetScrollInfo](/windows/desktop/api/winuser/nf-winuser-setscrollinfo) Wind
 Kaydırma kutusunun konumunu değiştirir.
 
 ```
-int SetScrollPos(  
+int SetScrollPos(
     int nBar,
     int nPos,
     BOOL bRedraw = TRUE) throw();
@@ -2513,7 +2513,7 @@ Bkz: [SetScrollPos](/windows/desktop/api/winuser/nf-winuser-setscrollpos) Window
 Kaydırma çubuğu aralığını değiştirir.
 
 ```
-BOOL SetScrollRange(  
+BOOL SetScrollRange(
     int nBar,
     int nMinPos,
     int nMaxPos,
@@ -2529,7 +2529,7 @@ Bkz: [SetScrollRange](/windows/desktop/api/winuser/nf-winuser-setscrollrange) Wi
 Zamanlayıcı olayı oluşturur.
 
 ```
-UINT SetTimer(  
+UINT SetTimer(
     UINT nIDEvent,
     UINT nElapse,
     void (CALLBACK* lpfnTimer)(HWND, UINT, UINT, DWORD) = NULL) throw();
@@ -2597,7 +2597,7 @@ Bkz: [SetWindowPlacement](https://msdn.microsoft.com/library/windows/desktop/ms6
 Boyut, konum ve Z düzenini belirler.
 
 ```
-BOOL SetWindowPos(  
+BOOL SetWindowPos(
     HWND hWndInsertAfter,
     int x,
     int y,
@@ -2605,7 +2605,7 @@ BOOL SetWindowPos(
     int cy,
     UINT nFlags) throw();
 
-BOOL SetWindowPos(  
+BOOL SetWindowPos(
     HWND hWndInsertAfter,
     LPCRECT lpRect,
     UINT nFlags) throw();
@@ -2770,7 +2770,7 @@ Bkz: [ValidateRgn](/windows/desktop/api/winuser/nf-winuser-validatergn) Windows 
 Windows Yardım başlatır.
 
 ```
-BOOL WinHelp(  
+BOOL WinHelp(
     LPCTSTR lpszHelp,
     UINT nCmd = HELP_CONTEXT,
     DWORD dwData = 0) throw();

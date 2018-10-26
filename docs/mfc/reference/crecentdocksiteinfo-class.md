@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a949a487f04a0aaac1ddf6eb3597dc6243cea548
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 43b632408d38af9f40cb50b12e9a9734df9245dd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403088"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065622"
 ---
 # <a name="crecentdocksiteinfo-class"></a>Crecentdocksiteınfo sınıfı
 
@@ -101,7 +101,6 @@ A `CRecentDockSiteInfo` nesnesi bir bölme oluşturulan her zaman oluşturulur. 
 
 ##  <a name="cleanup"></a>  CRecentDockSiteInfo::CleanUp
 
-
 ```
 void CleanUp();
 ```
@@ -110,19 +109,17 @@ void CleanUp();
 
 ##  <a name="crecentdocksiteinfo"></a>  CRecentDockSiteInfo::CRecentDockSiteInfo
 
-
 ```
 CRecentDockSiteInfo(CPane* pBar);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pBar*
+[in] *pBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getrecentdefaultpanedivider"></a>  CRecentDockSiteInfo::GetRecentDefaultPaneDivider
-
 
 ```
 CPaneDivider* GetRecentDefaultPaneDivider();
@@ -134,14 +131,13 @@ CPaneDivider* GetRecentDefaultPaneDivider();
 
 ##  <a name="getrecentdockedpercent"></a>  CRecentDockSiteInfo::GetRecentDockedPercent
 
-
 ```
 int GetRecentDockedPercent(BOOL bForSlider);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bForSlider*
+[in] *bForSlider*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -149,14 +145,13 @@ int GetRecentDockedPercent(BOOL bForSlider);
 
 ##  <a name="getrecentdockedrect"></a>  CRecentDockSiteInfo::GetRecentDockedRect
 
-
 ```
 CRect& GetRecentDockedRect(BOOL bForSlider);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bForSlider*
+[in] *bForSlider*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -164,14 +159,13 @@ CRect& GetRecentDockedRect(BOOL bForSlider);
 
 ##  <a name="getrecentlistofpanes"></a>  CRecentDockSiteInfo::GetRecentListOfPanes
 
-
 ```
 CList<HWND, HWND>& GetRecentListOfPanes(BOOL bForSlider);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bForSlider*
+[in] *bForSlider*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -179,14 +173,13 @@ CList<HWND, HWND>& GetRecentListOfPanes(BOOL bForSlider);
 
 ##  <a name="getrecentpanecontainer"></a>  CRecentDockSiteInfo::GetRecentPaneContainer
 
-
 ```
 CPaneContainer* GetRecentPaneContainer(BOOL bForSlider);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bForSlider*
+[in] *bForSlider*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -194,21 +187,19 @@ CPaneContainer* GetRecentPaneContainer(BOOL bForSlider);
 
 ##  <a name="getrecenttabcontainer"></a>  CRecentDockSiteInfo::GetRecentTabContainer
 
-
 ```
 CPaneContainer* GetRecentTabContainer(BOOL bForSlider);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bForSlider*
+[in] *bForSlider*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="init"></a>  CRecentDockSiteInfo::Init
-
 
 ```
 void Init();
@@ -218,14 +209,13 @@ void Init();
 
 ##  <a name="isrecentleftpane"></a>  CRecentDockSiteInfo::IsRecentLeftPane
 
-
 ```
 BOOL IsRecentLeftPane(BOOL bForSlider);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bForSlider*
+[in] *bForSlider*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -233,21 +223,19 @@ BOOL IsRecentLeftPane(BOOL bForSlider);
 
 ##  <a name="operator_eq"></a>  CRecentDockSiteInfo::operator =
 
-
 ```
 CRecentDockSiteInfo& operator=(CRecentDockSiteInfo& src);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *src*
+[in] *src*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="savelistofrecentpanes"></a>  CRecentDockSiteInfo::SaveListOfRecentPanes
-
 
 ```
 void SaveListOfRecentPanes(CList<HWND,
@@ -257,13 +245,13 @@ void SaveListOfRecentPanes(CList<HWND,
 
 ### <a name="parameters"></a>Parametreler
 
-*CList < HWND*<br/>
-[in] [in] *lstOrg* [in] *bForSlider*
+[in] *CList < HWND*<br/>
+[in] *lstOrg*<br/>
+[in] *bForSlider*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setinfo"></a>  CRecentDockSiteInfo::SetInfo
-
 
 ```
 virtual void SetInfo(
@@ -273,13 +261,12 @@ virtual void SetInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*bForSlider*<br/>
-[in] [in] *srcInfo*
+[in] *bForSlider*<br/>
+[in] *srcInfo*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="storedockinfo"></a>  CRecentDockSiteInfo::StoreDockInfo
-
 
 ```
 virtual void StoreDockInfo(
@@ -289,8 +276,8 @@ virtual void StoreDockInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*pRecentContainer*<br/>
-[in] [in] *pTabbedBar*
+[in] *pRecentContainer*<br/>
+[in] *pTabbedBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 

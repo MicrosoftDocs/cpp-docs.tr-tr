@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a519d9b978f5b48377b1a85d52274cba35c9d075
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 14b5b68f33bd6d16f791784ceb24bf22a2806fa9
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401816"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055040"
 ---
 # <a name="cinternetsession-class"></a>Cınternetsession sınıfı
 
@@ -245,7 +245,6 @@ static BOOL GetCookie(
     LPCTSTR pstrCookieName,
     LPTSTR pstrCookieData,
     DWORD dwBufLen);
-
 
 static BOOL GetCookie(
     LPCTSTR pstrUrl,
@@ -601,7 +600,6 @@ BOOL SetOption(
     LPVOID lpBuffer,
     DWORD dwBufferLength,
     DWORD dwFlags = 0);
-
 
 BOOL SetOption(
     DWORD dwOption,

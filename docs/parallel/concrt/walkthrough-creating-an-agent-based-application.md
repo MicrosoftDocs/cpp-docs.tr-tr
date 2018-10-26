@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68c4b389bdd8f1121a59bce1a0ca8942f077e062
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 41ae491a851d2e9a21a57ce35a54590323060881
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377179"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070601"
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>İzlenecek Yol: Aracı Temelli Uygulama Oluşturma
 
@@ -64,7 +64,7 @@ Bu bölümde, programın kullanacağı üstbilgi dosyalarına başvuran bir Visu
 
 [!code-cpp[concrt-basic-agent#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_1.h)]
 
-     The header file agents.h contains the functionality of the [concurrency::agent](../../parallel/concrt/reference/agent-class.md) class.
+   Üst bilgi dosyası agents.h işlevlerini içeren [concurrency::agent](../../parallel/concrt/reference/agent-class.md) sınıfı.
 
 1. Oluşturma ve çalışan uygulamanın başarıyla oluşturulduğunu doğrulayın. Uygulama derlemek için **derleme** menüsünde tıklatın **Çözümü Derle**. Uygulama başarıyla derlenirse tıklayarak uygulamayı çalıştırmak **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menüsü.
 
@@ -90,19 +90,19 @@ Bu bölüm nasıl oluşturulacağını gösterir `file_reader` sınıfı. Çalı
 
 [!code-cpp[concrt-basic-agent#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_4.h)]
 
-     The `_file_name` member is the file name that the agent reads from. The `_target` member is a [concurrency::ITarget](../../parallel/concrt/reference/itarget-class.md) object that the agent writes the contents of the file to. The `_error` member holds any error that occurs during the life of the agent.
+   `_file_name` Üyesi olan aracı okur dosya adı. `_target` Üyesi olan bir [CONCURRENCY::ıtarget](../../parallel/concrt/reference/itarget-class.md) nesne aracı içeriğini bir dosyaya yazar. `_error` Üye Aracısı'nın ömrü sırasında oluşan hataları içerir.
 
 1. İçin aşağıdaki kodu ekleyin `file_reader` oluşturucular `public` bölümünü `file_reader` sınıfı.
 
 [!code-cpp[concrt-basic-agent#4](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_5.h)]
 
-     Each constructor overload sets the `file_reader` data members. The second and third constructor overload enables your application to use a specific scheduler with your agent. The first overload uses the default scheduler with your agent.
+   Her oluşturucu aşırı yüklemesi ayarlar `file_reader` veri üyeleri. İkinci ve üçüncü kurucu aşırı yükleme, belirli bir Zamanlayıcı, aracı ile kullanmak için uygulamanızı sağlar. İlk aşırı yükleme varsayılan Zamanlayıcı, aracı ile kullanır.
 
 1. Ekleme `get_error` yöntemi genel bölümüne `file_reader` sınıfı.
 
 [!code-cpp[concrt-basic-agent#5](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_6.h)]
 
-     The `get_error` method retrieves any error that occurs during the life of the agent.
+   `get_error` Yöntemi Aracısı'nın ömrü sırasında oluşan hataları alır.
 
 1. Uygulama [concurrency::agent::run](reference/agent-class.md#run) yönteminde `protected` sınıfınızın bölümü.
 
@@ -140,7 +140,7 @@ Bu bölümde, nasıl kullanılacağını gösterir `file_reader` bir metin dosya
 
 [!code-cpp[concrt-basic-agent#11](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_12.cpp)]
 
-     This `call` object also sets the `event` object when it receives the empty string to signal the end of processing.
+   Bu `call` nesnesi de ayarlar `event` nesnesi boş bir dize işleme sonuna belirten aldığında.
 
 1. Oluşturma bir `file_reader` dosya test.txt okur ve içeriğini bu dosyaya yazan nesne `call` nesne.
 

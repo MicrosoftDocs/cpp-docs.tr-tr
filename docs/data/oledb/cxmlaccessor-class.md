@@ -31,111 +31,111 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 58e9d70079dce96153076b03acc1aeca87c50433
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 71922df2b4d94d06b21ade32b4d8c4ca22fa50c8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46136213"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065427"
 ---
 # <a name="cxmlaccessor-class"></a>CXMLAccessor Sınıfı
 
-Veri deposunun şeması (temelindeki) olanağıyla olduğunda dize verileri veri kaynaklarına erişim sağlar.  
-  
+Veri deposunun şeması (temelindeki) olanağıyla olduğunda dize verileri veri kaynaklarına erişim sağlar.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-class CXMLAccessor : public CDynamicStringAccessorW  
-```  
+class CXMLAccessor : public CDynamicStringAccessorW
+```
 
-## <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: atldbcli.h  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="methods"></a>Yöntemler  
-  
-|||  
-|-|-|  
-|[GetXMLColumnData](#getxmlcolumndata)|Sütun bilgileri alır.|  
-|[GetXMLRowData](#getxmlrowdata)|Bir tablonun tüm içeriğini satırlara göre alır.|  
-  
-## <a name="remarks"></a>Açıklamalar  
+**Üst bilgi**: atldbcli.h
 
-Ancak, `CXMLAccessor` farklıdır `CDynamicStringAccessorW` içeren XML biçimli (etiketli) veri veri deposundan erişilen tüm verileri dönüştürür. Bu çıkış XML kullanan Web sayfaları için özellikle kullanışlıdır. XML etiket adları veri deposunun sütun adları mümkün olduğunca yakın eşleşir.  
-  
-Kullanım `CDynamicAccessor` sütun bilgisi edinmek için. Erişimci çalışma zamanında dinamik olarak oluşturmak için bu sütun bilgileri kullanın.  
-  
-Sütun bilgisi oluşturulur ve bu sınıf tarafından yönetilen bir arabellek depolanır. Sütun bilgileri kullanarak elde [GetXMLColumnData](#getxmlcolumndata) veya sütun verileri kullanarak satır elde [GetXMLRowData](#getxmlrowdata).  
-  
-## <a name="example"></a>Örnek  
+## <a name="members"></a>Üyeler
 
-[!code-cpp[NVC_OLEDB_Consumer#14](../../data/oledb/codesnippet/cpp/cxmlaccessor-class_1.cpp)]  
+### <a name="methods"></a>Yöntemler
+
+|||
+|-|-|
+|[GetXMLColumnData](#getxmlcolumndata)|Sütun bilgileri alır.|
+|[GetXMLRowData](#getxmlrowdata)|Bir tablonun tüm içeriğini satırlara göre alır.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Ancak, `CXMLAccessor` farklıdır `CDynamicStringAccessorW` içeren XML biçimli (etiketli) veri veri deposundan erişilen tüm verileri dönüştürür. Bu çıkış XML kullanan Web sayfaları için özellikle kullanışlıdır. XML etiket adları veri deposunun sütun adları mümkün olduğunca yakın eşleşir.
+
+Kullanım `CDynamicAccessor` sütun bilgisi edinmek için. Erişimci çalışma zamanında dinamik olarak oluşturmak için bu sütun bilgileri kullanın.
+
+Sütun bilgisi oluşturulur ve bu sınıf tarafından yönetilen bir arabellek depolanır. Sütun bilgileri kullanarak elde [GetXMLColumnData](#getxmlcolumndata) veya sütun verileri kullanarak satır elde [GetXMLRowData](#getxmlrowdata).
+
+## <a name="example"></a>Örnek
+
+[!code-cpp[NVC_OLEDB_Consumer#14](../../data/oledb/codesnippet/cpp/cxmlaccessor-class_1.cpp)]
 
 ## <a name="getxmlcolumndata"></a> CXMLAccessor::GetXMLColumnData
 
-Sütunu örneğe göre olarak XML biçimli dize verileri, bir tablonun sütun türü bilgisini alır.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Sütunu örneğe göre olarak XML biçimli dize verileri, bir tablonun sütun türü bilgisini alır.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-HRESULT GetXMLColumnData(CSimpleStringW& strOutput) throw();  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+HRESULT GetXMLColumnData(CSimpleStringW& strOutput) throw();
+```
+
+#### <a name="parameters"></a>Parametreler
 
 *strOutput*<br/>
-[out] Alınacak sütun türü bilgilerini içeren bir dize arabelleğine başvuru. Dize veri deposunun sütun adları eşleşen XML etiket adları ile biçimlendirilir.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
+[out] Alınacak sütun türü bilgilerini içeren bir dize arabelleğine başvuru. Dize veri deposunun sütun adları eşleşen XML etiket adları ile biçimlendirilir.
 
-Standart HRESULT değerlerinden biri.  
-  
-### <a name="remarks"></a>Açıklamalar  
+### <a name="return-value"></a>Dönüş Değeri
 
-Aşağıdaki XML sütun türü bilgisini nasıl biçimlendirildiğini gösterir. `type` sütunun veri türünü belirtir. OLE DB veri türlerini, erişilen veritabanı, veri türleri temel unutmayın.  
-  
-`<columninfo>`  
-  
-`<column type = I2/> ColumnName`  
-  
-`</columninfo>` 
+Standart HRESULT değerlerinden biri.
+
+### <a name="remarks"></a>Açıklamalar
+
+Aşağıdaki XML sütun türü bilgisini nasıl biçimlendirildiğini gösterir. `type` sütunun veri türünü belirtir. OLE DB veri türlerini, erişilen veritabanı, veri türleri temel unutmayın.
+
+`<columninfo>`
+
+`<column type = I2/> ColumnName`
+
+`</columninfo>`
 
 ## <a name="getxmlrowdata"></a> CXMLAccessor::GetXMLRowData
 
-Tüm içeriğini tablo XML biçimli dize verileri, satır alır.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Tüm içeriğini tablo XML biçimli dize verileri, satır alır.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-HRESULT GetXMLRowData(CSimpleStringW& strOutput,   
-   bool bAppend = false) throw();  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+HRESULT GetXMLRowData(CSimpleStringW& strOutput, 
+   bool bAppend = false) throw();
+```
+
+#### <a name="parameters"></a>Parametreler
 
 *strOutput*<br/>
-[out] Alınacak tablo verilerini içeren bir arabelleği başvuru. Veriler, dize verileri veri deposunun sütun adlarının eşleşmesi XML etiket adlarına sahip olarak biçimlendirilir.  
-  
+[out] Alınacak tablo verilerini içeren bir arabelleği başvuru. Veriler, dize verileri veri deposunun sütun adlarının eşleşmesi XML etiket adlarına sahip olarak biçimlendirilir.
+
 *bAppend*<br/>
-[in] Bir dize çıktı verilerini sonuna belirten bir Boole değeri.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
+[in] Bir dize çıktı verilerini sonuna belirten bir Boole değeri.
 
-Standart HRESULT değerlerinden biri.  
-  
-### <a name="remarks"></a>Açıklamalar  
+### <a name="return-value"></a>Dönüş Değeri
 
-Aşağıdaki XML'de biçimlendirilmiş satır verileri nasıl gösterir. `DATA` Aşağıdaki satır verisini temsil eder. Kullanmak istediğiniz satıra taşımak için yöntemleri taşıyın.  
-  
-`<row>`  
-  
-`<column name>DATA</column name>`  
-  
-`</row>`   
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Standart HRESULT değerlerinden biri.
+
+### <a name="remarks"></a>Açıklamalar
+
+Aşağıdaki XML'de biçimlendirilmiş satır verileri nasıl gösterir. `DATA` Aşağıdaki satır verisini temsil eder. Kullanmak istediğiniz satıra taşımak için yöntemleri taşıyın.
+
+`<row>`
+
+`<column name>DATA</column name>`
+
+`</row>`
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

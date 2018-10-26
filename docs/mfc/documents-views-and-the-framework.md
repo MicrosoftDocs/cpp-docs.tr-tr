@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8213ac8d45b2981a7b945fb0af0a590cf7974a8a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b6a70efc6fe4c717ccaa236ea46d73f9df206876
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402362"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075098"
 ---
 # <a name="documents-views-and-the-framework"></a>Belgeler, Görünümler ve Çerçeve
 
@@ -41,31 +41,31 @@ MFC çerçevesi yaklaşımının temelindeki, belge ve görünüm kavramlardır.
 
 - Belgeleri ve belge.
 
-     Belge sınıfınıza (türetilen [CDocument](../mfc/reference/cdocument-class.md)), uygulamanızın verilerini belirtir.
+   Belge sınıfınıza (türetilen [CDocument](../mfc/reference/cdocument-class.md)), uygulamanızın verilerini belirtir.
 
-     Uygulamanızda OLE işlevselliği istiyorsanız, belge sınıfından türetilir [COleDocument](../mfc/reference/coledocument-class.md) veya gereksinim duyduğunuz işlevsellik türüne bağlı olarak türetilmiş sınıflarının biri.
+   Uygulamanızda OLE işlevselliği istiyorsanız, belge sınıfından türetilir [COleDocument](../mfc/reference/coledocument-class.md) veya gereksinim duyduğunuz işlevsellik türüne bağlı olarak türetilmiş sınıflarının biri.
 
 - Görünümü veya görünümlerini.
 
-     Görünüm sınıfınıza (türetilen [CView](../mfc/reference/cview-class.md)) kullanıcının "Pencere veri çubuğunda." Görünüm sınıfını nasıl kullanıcı, belgenin verilerini görür ve etkileşimine göre değişecek denetler. Bazı durumlarda, verilerin birden çok görünüm için bir belge isteyebilirsiniz.
+   Görünüm sınıfınıza (türetilen [CView](../mfc/reference/cview-class.md)) kullanıcının "Pencere veri çubuğunda." Görünüm sınıfını nasıl kullanıcı, belgenin verilerini görür ve etkileşimine göre değişecek denetler. Bazı durumlarda, verilerin birden çok görünüm için bir belge isteyebilirsiniz.
 
-     Kaydırma ihtiyacınız varsa, türetilen [CScrollView](../mfc/reference/cscrollview-class.md). Görünümünüze bir iletişim şablonunu kaynakta yayılır bir kullanıcı arabirimi varsa, türetilen [CFormView](../mfc/reference/cformview-class.md). Basit metin verileri kullanma veya öğesinden türetilen [CEditView](../mfc/reference/ceditview-class.md). Bir veri girişi programı gibi bir form tabanlı veri erişimi uygulama için türetilen [CRecordView](../mfc/reference/crecordview-class.md) (ODBC için). Sınıfları da kullanılabilir [CTreeView](../mfc/reference/ctreeview-class.md), [CListView](../mfc/reference/clistview-class.md), ve [CRichEditView](../mfc/reference/cricheditview-class.md).
+   Kaydırma ihtiyacınız varsa, türetilen [CScrollView](../mfc/reference/cscrollview-class.md). Görünümünüze bir iletişim şablonunu kaynakta yayılır bir kullanıcı arabirimi varsa, türetilen [CFormView](../mfc/reference/cformview-class.md). Basit metin verileri kullanma veya öğesinden türetilen [CEditView](../mfc/reference/ceditview-class.md). Bir veri girişi programı gibi bir form tabanlı veri erişimi uygulama için türetilen [CRecordView](../mfc/reference/crecordview-class.md) (ODBC için). Sınıfları da kullanılabilir [CTreeView](../mfc/reference/ctreeview-class.md), [CListView](../mfc/reference/clistview-class.md), ve [CRichEditView](../mfc/reference/cricheditview-class.md).
 
 - Çerçeve pencereleri
 
-     Görünümler "içinde belge çerçeve pencereleri." görüntülenir Bir SDI uygulamasında, belge çerçeve penceresi de uygulamanın "ana çerçeve penceresinin" dir. Bir MDI uygulamasında, belge alt pencereleri bir ana çerçeve penceresi içinde görüntülenen dizisidir. Türetilmiş ana çerçeve penceresi sınıfınıza stilleri ve kendi görünümlerinizi içeren çerçeve pencereleri diğer özelliklerini belirtir. Çerçeve pencereleri özelleştirme gerekiyorsa türetilen [CFrameWnd](../mfc/reference/cframewnd-class.md) SDI uygulamaları için belge çerçeve penceresi özelleştirmek için. Öğesinden türetilen [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) MDI uygulamaları için ana çerçeve penceresine özelleştirmek için. Ayrıca bir sınıftan türetilen [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md) uygulamanızın desteklediği MDI belge çerçeve pencereleri ayrı her tür özelleştirmek için.
+   Görünümler "içinde belge çerçeve pencereleri." görüntülenir Bir SDI uygulamasında, belge çerçeve penceresi de uygulamanın "ana çerçeve penceresinin" dir. Bir MDI uygulamasında, belge alt pencereleri bir ana çerçeve penceresi içinde görüntülenen dizisidir. Türetilmiş ana çerçeve penceresi sınıfınıza stilleri ve kendi görünümlerinizi içeren çerçeve pencereleri diğer özelliklerini belirtir. Çerçeve pencereleri özelleştirme gerekiyorsa türetilen [CFrameWnd](../mfc/reference/cframewnd-class.md) SDI uygulamaları için belge çerçeve penceresi özelleştirmek için. Öğesinden türetilen [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) MDI uygulamaları için ana çerçeve penceresine özelleştirmek için. Ayrıca bir sınıftan türetilen [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md) uygulamanızın desteklediği MDI belge çerçeve pencereleri ayrı her tür özelleştirmek için.
 
 - Şablonları ve belge şablonu
 
-     Bir belge şablonu, belgeler, görünümler ve çerçeve pencereleri oluşturma düzenler. Belirli bir belge şablonu, türetilen bir sınıftan [CDocTemplate](../mfc/reference/cdoctemplate-class.md)oluşturur ve bir türdeki tüm açık belgeleri yönetir. Birden fazla belge türü destekleyen uygulamalar birden çok belge şablonu vardır. Bir sınıf kullanma [CSingleDocTemplate](../mfc/reference/csingledoctemplate-class.md) SDI uygulamaları ya da kullanım sınıfı için [CMultiDocTemplate](../mfc/reference/cmultidoctemplate-class.md) MDI uygulamaları için.
+   Bir belge şablonu, belgeler, görünümler ve çerçeve pencereleri oluşturma düzenler. Belirli bir belge şablonu, türetilen bir sınıftan [CDocTemplate](../mfc/reference/cdoctemplate-class.md)oluşturur ve bir türdeki tüm açık belgeleri yönetir. Birden fazla belge türü destekleyen uygulamalar birden çok belge şablonu vardır. Bir sınıf kullanma [CSingleDocTemplate](../mfc/reference/csingledoctemplate-class.md) SDI uygulamaları ya da kullanım sınıfı için [CMultiDocTemplate](../mfc/reference/cmultidoctemplate-class.md) MDI uygulamaları için.
 
 - Uygulama nesnesi
 
-     Uygulama sınıfınıza (türetilen [CWinApp](../mfc/reference/cwinapp-class.md)) tüm nesneler yukarıdaki denetler ve başlatma ve temizleme gibi uygulama davranışını belirtir. Uygulamanın bir ve yalnızca uygulama nesnesi oluşturur ve uygulamanızın desteklediği herhangi bir belge türleri için şablonların yönetir.
+   Uygulama sınıfınıza (türetilen [CWinApp](../mfc/reference/cwinapp-class.md)) tüm nesneler yukarıdaki denetler ve başlatma ve temizleme gibi uygulama davranışını belirtir. Uygulamanın bir ve yalnızca uygulama nesnesi oluşturur ve uygulamanızın desteklediği herhangi bir belge türleri için şablonların yönetir.
 
 - İş parçacığı nesneleri
 
-     Uygulamanızı ayrı iş parçacığı yürütme oluşturursa — Örneğin, arka planda hesaplamalar gerçekleştirmek için — öğelerinden türetilen sınıfları kullanacağınız [CWinThread](../mfc/reference/cwinthread-class.md). [CWinApp](../mfc/reference/cwinapp-class.md) kendisini türetilir `CWinThread` ve uygulamanızda yürütme (veya ana işlem) birincil iş parçacığını temsil eder. MFC İkincil iş parçacığı da kullanabilirsiniz.
+   Uygulamanızı ayrı iş parçacığı yürütme oluşturursa — Örneğin, arka planda hesaplamalar gerçekleştirmek için — öğelerinden türetilen sınıfları kullanacağınız [CWinThread](../mfc/reference/cwinthread-class.md). [CWinApp](../mfc/reference/cwinapp-class.md) kendisini türetilir `CWinThread` ve uygulamanızda yürütme (veya ana işlem) birincil iş parçacığını temsil eder. MFC İkincil iş parçacığı da kullanabilirsiniz.
 
 Çalışan bir uygulamada bu nesneler işbirliği ile kullanıcı eylemlerini, birlikte diğer iletiler ve komutlar ile ilişkili yanıt. Tek uygulama nesnesi bir veya daha fazla belge şablonları yönetir. Her bir belge şablonu oluşturur ve yönetir (uygulama SDI veya MDI olup olmamasına bağlı olarak) bir veya daha fazla belge. Kullanıcı görünümleri ve belge çerçeve pencere içinde yer alan bir görünüm aracılığıyla yönetir. Aşağıdaki şekilde bir SDI uygulaması için bu nesneleri arasındaki ilişkiler gösterilmektedir.
 

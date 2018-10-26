@@ -15,20 +15,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4107b5e19020843fa50495153841ebcba64301ad
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3af338f4c88b2fa7268387ef0701f52a813b0d49
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46077691"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056210"
 ---
 # <a name="using-a-record-view--mfc-data-access"></a>(MFC veri erişimi) kayıt görünümünü kullanma
 
-Bu konu, sihirbaz sizin yerinize yazar kayıt görünümleri için varsayılan kod yaygın olarak nasıl özelleştirebileceğinizi açıklar. Kayıt seçimi kısıtlamak istediğiniz genellikle bir [filtre](../data/odbc/recordset-filtering-records-odbc.md) veya [parametreleri](../data/odbc/recordset-parameterizing-a-recordset-odbc.md), belki de [sıralama](../data/odbc/recordset-sorting-records-odbc.md) kayıtlar, SQL deyimini özelleştirme.  
-  
-Kullanarak `CRecordView` çok aynı kullanarak [CFormView](../mfc/reference/cformview-class.md). Temel yaklaşım görüntülemek ve belki de tek bir kayıt kümesinin kayıtları güncelleştirmek için kayıt görünümü kullanmaktır. Bundan sonraki miktarlar diğer kayıt kümeleri de açıklandığı gibi kullanmak isteyebilirsiniz [kayıt görünümleri: ikinci kayıt kümesinden liste kutusunu doldurma](../data/filling-a-list-box-from-a-second-recordset-mfc-data-access.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Bu konu, sihirbaz sizin yerinize yazar kayıt görünümleri için varsayılan kod yaygın olarak nasıl özelleştirebileceğinizi açıklar. Kayıt seçimi kısıtlamak istediğiniz genellikle bir [filtre](../data/odbc/recordset-filtering-records-odbc.md) veya [parametreleri](../data/odbc/recordset-parameterizing-a-recordset-odbc.md), belki de [sıralama](../data/odbc/recordset-sorting-records-odbc.md) kayıtlar, SQL deyimini özelleştirme.
+
+Kullanarak `CRecordView` çok aynı kullanarak [CFormView](../mfc/reference/cformview-class.md). Temel yaklaşım görüntülemek ve belki de tek bir kayıt kümesinin kayıtları güncelleştirmek için kayıt görünümü kullanmaktır. Bundan sonraki miktarlar diğer kayıt kümeleri de açıklandığı gibi kullanmak isteyebilirsiniz [kayıt görünümleri: ikinci kayıt kümesinden liste kutusunu doldurma](../data/filling-a-list-box-from-a-second-recordset-mfc-data-access.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)

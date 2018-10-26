@@ -43,189 +43,189 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 63bf2b36477ddc0c4088698c552b8ef734e16986
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 8919a4bb17e65ad105b49e9fd9b4945e47cbdb63
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083742"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50058069"
 ---
 # <a name="cmanualaccessor-class"></a>CManualAccessor Sınıfı
 
-Gelişmiş kullanım için tasarlanmış bir erişimci türünü temsil eder.  
-  
+Gelişmiş kullanım için tasarlanmış bir erişimci türünü temsil eder.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-class CManualAccessor : public CAccessorBase  
-```  
+class CManualAccessor : public CAccessorBase
+```
 
-## <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="methods"></a>Yöntemler  
-  
-|||  
-|-|-|  
-|[AddBindEntry](#addbindentry)|Bir bağlama giriş çıkış sütunları ekler.|  
-|[AddParameterEntry](#addparameterentry)|Parametre erişimcisi için bir parametre girişi ekler.|  
-|[CreateAccessor](#createaccessor)|Bağlama yapıları sütun için bellek ayırır ve sütun veri üyelerine başlatır.|  
-|[CreateParameterAccessor](#createparameteraccessor)|Bağlama yapıları parametresi için bellek ayırır ve parametre veri üyeleri başlatır.|  
-  
-## <a name="remarks"></a>Açıklamalar  
+**Başlık:** atldbcli.h
 
-Kullanarak `CManualAccessor`, parametresini belirtin ve çalışma zamanı işlev çağrıları çıktı sütunu bağlaması.  
+## <a name="members"></a>Üyeler
+
+### <a name="methods"></a>Yöntemler
+
+|||
+|-|-|
+|[AddBindEntry](#addbindentry)|Bir bağlama giriş çıkış sütunları ekler.|
+|[AddParameterEntry](#addparameterentry)|Parametre erişimcisi için bir parametre girişi ekler.|
+|[CreateAccessor](#createaccessor)|Bağlama yapıları sütun için bellek ayırır ve sütun veri üyelerine başlatır.|
+|[CreateParameterAccessor](#createparameteraccessor)|Bağlama yapıları parametresi için bellek ayırır ve parametre veri üyeleri başlatır.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Kullanarak `CManualAccessor`, parametresini belirtin ve çalışma zamanı işlev çağrıları çıktı sütunu bağlaması.
 
 ## <a name="addbindentry"></a> CManualAccessor::AddBindEntry
 
-Bir bağlama giriş çıkış sütunları ekler.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Bir bağlama giriş çıkış sütunları ekler.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-void AddBindEntry(DBORDINAL nOrdinal,  
-   DBTYPE wType,  DBLENGTH nColumnSize,  
-   void* pData,  
-   void* pLength = NULL,  
-   void* pStatus = NULL) throw ();  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+void AddBindEntry(DBORDINAL nOrdinal,
+   DBTYPE wType,  DBLENGTH nColumnSize,
+   void* pData,
+   void* pLength = NULL,
+   void* pStatus = NULL) throw ();
+```
 
-Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845) içinde *OLE DB Programcının Başvurusu*.  
-  
+#### <a name="parameters"></a>Parametreler
+
+Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845) içinde *OLE DB Programcının Başvurusu*.
+
 *nOrdinal*<br/>
-[in] Sütun numarası.  
-  
-*wType*<br/>
-[in] Veri türü.  
-  
-*nColumnSize*<br/>
-[in] Sütun boyutu bayt cinsinden.  
-  
-*pData*<br/>
-[in] Arabellekteki depolanan sütun verileri için bir işaretçi.  
-  
-*pLength*<br/>
-[in] Alan uzunluğu gerekirse bir işaretçi.  
-  
-*pStatus*<br/>
-[in] Gerekirse sütun durumuna bağlı değişken bir işaretçi.  
-  
-### <a name="remarks"></a>Açıklamalar  
+[in] Sütun numarası.
 
-Bu işlevi kullanmak için öncelikle çağırmalısınız [CreateAccessor](../../data/oledb/cmanualaccessor-createaccessor.md). Belirtilen sütun sayısından daha fazla giriş eklenemiyor `CreateAccessor`. 
-  
+*wType*<br/>
+[in] Veri türü.
+
+*nColumnSize*<br/>
+[in] Sütun boyutu bayt cinsinden.
+
+*pData*<br/>
+[in] Arabellekteki depolanan sütun verileri için bir işaretçi.
+
+*pLength*<br/>
+[in] Alan uzunluğu gerekirse bir işaretçi.
+
+*pStatus*<br/>
+[in] Gerekirse sütun durumuna bağlı değişken bir işaretçi.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu işlevi kullanmak için öncelikle çağırmalısınız [CreateAccessor](../../data/oledb/cmanualaccessor-createaccessor.md). Belirtilen sütun sayısından daha fazla giriş eklenemiyor `CreateAccessor`.
+
 ## <a name="addparameterentry"></a> CManualAccessor::AddParameterEntry
 
-Bir parametre girişi parametre girişi yapılara ekler.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Bir parametre girişi parametre girişi yapılara ekler.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-void AddParameterEntry(DBORDINAL nOrdinal,  
-   DBTYPE wType,  DBLENGTH nColumnSize,  
-   void* pData,  
-   void* pLength = NULL,  
-   void* pStatus = NULL,  
-   DBPARAMIO eParamIO = DBPARAMIO_INPUT) throw ();  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+void AddParameterEntry(DBORDINAL nOrdinal,
+   DBTYPE wType,  DBLENGTH nColumnSize,
+   void* pData,
+   void* pLength = NULL,
+   void* pStatus = NULL,
+   DBPARAMIO eParamIO = DBPARAMIO_INPUT) throw ();
+```
 
-Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845) içinde *OLE DB Programcının Başvurusu*.  
-  
+#### <a name="parameters"></a>Parametreler
+
+Bkz: [IAccessor::CreateAccessor'ı](/previous-versions/windows/desktop/ms716845) içinde *OLE DB Programcının Başvurusu*.
+
 *nOrdinal*<br/>
-[in] Parametre numarası.  
-  
-*wType*<br/>
-[in] Veri türü.  
-  
-*nColumnSize*<br/>
-[in] Sütun boyutu bayt cinsinden.  
-  
-*pData*<br/>
-[in] Arabellekteki depolanan sütun verileri için bir işaretçi.  
-  
-*pLength*<br/>
-[in] Alan uzunluğu gerekirse bir işaretçi.  
-  
-*pStatus*<br/>
-[in] Gerekirse sütun durumuna bağlı değişken bir işaretçi.  
-  
-*eParamIO*<br/>
-[in] Parametre bağlama ilişkili olduğu bir giriş, giriş/çıkış veya çıkış parametresi olup olmadığını belirtir.  
-  
-### <a name="remarks"></a>Açıklamalar  
+[in] Parametre numarası.
 
-Bu işlevi kullanmak için öncelikle çağırmalısınız [CreateParameterAccessor](../../data/oledb/cmanualaccessor-createparameteraccessor.md). 
+*wType*<br/>
+[in] Veri türü.
+
+*nColumnSize*<br/>
+[in] Sütun boyutu bayt cinsinden.
+
+*pData*<br/>
+[in] Arabellekteki depolanan sütun verileri için bir işaretçi.
+
+*pLength*<br/>
+[in] Alan uzunluğu gerekirse bir işaretçi.
+
+*pStatus*<br/>
+[in] Gerekirse sütun durumuna bağlı değişken bir işaretçi.
+
+*eParamIO*<br/>
+[in] Parametre bağlama ilişkili olduğu bir giriş, giriş/çıkış veya çıkış parametresi olup olmadığını belirtir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu işlevi kullanmak için öncelikle çağırmalısınız [CreateParameterAccessor](../../data/oledb/cmanualaccessor-createparameteraccessor.md).
 
 ## <a name="createaccessor"></a> CManualAccessor::CreateAccessor
 
-Bağlama yapıları sütun için bellek ayırır ve sütun veri üyelerine başlatır.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Bağlama yapıları sütun için bellek ayırır ve sütun veri üyelerine başlatır.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-HRESULT CreateAccessor(int nBindEntries,   
-  void* pBuffer,   
-   DBLENGTH nBufferSize) throw();  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+HRESULT CreateAccessor(int nBindEntries, 
+  void* pBuffer, 
+   DBLENGTH nBufferSize) throw();
+```
+
+#### <a name="parameters"></a>Parametreler
 
 *nBindEntries*<br/>
-[in] Sütun sayısı. Bu sayı, yapılan çağrı sayısı eşleşmelidir [CManualAccessor::AddBindEntry](../../data/oledb/cmanualaccessor-addbindentry.md) işlevi.  
-  
+[in] Sütun sayısı. Bu sayı, yapılan çağrı sayısı eşleşmelidir [CManualAccessor::AddBindEntry](../../data/oledb/cmanualaccessor-addbindentry.md) işlevi.
+
 *pBuffer*<br/>
-[in] Çıktı sütunları depolandığı arabellek için işaretçi.  
-  
+[in] Çıktı sütunları depolandığı arabellek için işaretçi.
+
 *nBufferSize*<br/>
-[in] Arabelleğin bayt cinsinden boyutu.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
+[in] Arabelleğin bayt cinsinden boyutu.
 
-Standart HRESULT değerlerinden biri.  
-  
-### <a name="remarks"></a>Açıklamalar  
+### <a name="return-value"></a>Dönüş Değeri
 
-Çağırmadan önce bu işlevi çağırın `CManualAccessor::AddBindEntry` işlevi.  
+Standart HRESULT değerlerinden biri.
+
+### <a name="remarks"></a>Açıklamalar
+
+Çağırmadan önce bu işlevi çağırın `CManualAccessor::AddBindEntry` işlevi.
 
 ## <a name="createparameteraccessor"></a> CManualAccessor::CreateParameterAccessor
 
-Bağlama yapıları parametresi için bellek ayırır ve parametre veri üyeleri başlatır.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Bağlama yapıları parametresi için bellek ayırır ve parametre veri üyeleri başlatır.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-HRESULT CreateParameterAccessor(int nBindEntries,   
-   void* pBuffer,   
-   DBLENGTH nBufferSize) throw();  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+HRESULT CreateParameterAccessor(int nBindEntries, 
+   void* pBuffer, 
+   DBLENGTH nBufferSize) throw();
+```
+
+#### <a name="parameters"></a>Parametreler
 
 *nBindEntries*<br/>
-[in] Sütun sayısı.  
-  
-*pBuffer*<br/>
-[in] Giriş sütunları depolandığı arabellek için işaretçi.  
-  
-*nBufferSize*<br/>
-[in] Arabelleğin bayt cinsinden boyutu.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
+[in] Sütun sayısı.
 
-Standart HRESULT değerlerinden biri.  
-  
-### <a name="remarks"></a>Açıklamalar  
+*pBuffer*<br/>
+[in] Giriş sütunları depolandığı arabellek için işaretçi.
+
+*nBufferSize*<br/>
+[in] Arabelleğin bayt cinsinden boyutu.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Standart HRESULT değerlerinden biri.
+
+### <a name="remarks"></a>Açıklamalar
 
 Çağırmadan önce bu işlevi çağırmanız gerekir [AddParameterEntry](../../data/oledb/cmanualaccessor-addparameterentry.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [DBViewer](../../visual-cpp-samples.md)<br/>
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>

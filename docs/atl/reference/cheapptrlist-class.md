@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1990de6165e50397f11d84cb0486c1d5d5d67fce
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 56dad973f415fa4944bd4561dab94636e10e6539
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46089239"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50058927"
 ---
 # <a name="cheapptrlist-class"></a>CHeapPtrList sınıfı
 
@@ -36,7 +36,7 @@ Bu sınıf, yığın işaretçileri listesini oluştururken kullanışlı yönte
 
 ```
 template<typename E, class Allocator = ATL::CCRTAllocator>
-class CHeapPtrList 
+class CHeapPtrList
    : public CAtlList<ATL::CHeapPtr<E, Allocator>,
                      CHeapPtrElementTraits<E, Allocator>>
 ```

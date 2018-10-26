@@ -113,12 +113,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ce23acf1988e88954279f3b8cdbc8fc3c9001af
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: c9f17eea48e01d12df103382483b352e5dce46b7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083651"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080565"
 ---
 # <a name="canimationcontroller-class"></a>CAnimationController sınıfı
 
@@ -334,7 +334,6 @@ Geçişi bağlıdır ve belirtilen gruba ekleyen bir anahtar kare oluşturur.
 CKeyFrame* CreateKeyframe(
     UINT32 nGroupID,
     CBaseTransition* pTransition);
-
 
 CKeyFrame* CreateKeyframe(
     UINT32 nGroupID,

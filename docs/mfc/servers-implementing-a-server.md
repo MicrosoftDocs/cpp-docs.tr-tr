@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d024c9468b06291ba93c4e404674925202fabcad
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a1dd43b806852e578c28dc7a647cb367ad6f2780
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46406801"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076626"
 ---
 # <a name="servers-implementing-a-server"></a>Sunucular: Sunucu Uygulama
 
@@ -36,7 +36,7 @@ Uygulama Sihirbazı'nı sağlayan sunucu kodu birkaç kategoride toplanabilir:
 
    - Sunucu yerinde etkin olduğunda kullanılan menü ve araç çubuğu kaynakları.
 
-     Bu kaynaklar hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: sunucu ekleme](../mfc/menus-and-resources-server-additions.md).
+   Bu kaynaklar hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: sunucu ekleme](../mfc/menus-and-resources-server-additions.md).
 
 - Bir öğe sınıfı tanımlayarak türetilen `COleServerItem`. Sunucu öğeleri hakkında daha ayrıntılı bilgi için bkz. [sunucular: sunucu öğeleri](../mfc/servers-server-items.md).
 

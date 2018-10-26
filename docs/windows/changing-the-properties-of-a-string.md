@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cfd55cbb67bc62760fba26f098a772d62042ea88
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: a873776db6381a78b99e0323e669235b7863ea04
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082000"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067650"
 ---
 # <a name="changing-the-properties-of-a-string-resource-c"></a>Bir dize kaynağı (C++) özelliklerini değiştirme
 
@@ -52,4 +52,4 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Dize Düzenleyicisi](../windows/string-editor.md)  
+[Dize Düzenleyicisi](../windows/string-editor.md)

@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 1d3f8dc2251dbfbcd8155b0edc512a9dc40bacc2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 71e42f7d7a60478ec9344a44e8e86463e5845500
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393405"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061579"
 ---
 # <a name="how-to-call-properties-and-methods-of-the-windows-forms-control"></a>Nasıl yapılır: Windows Forms Denetiminin Çağrı Özellikleri ve Yöntemleri
 
@@ -39,11 +39,11 @@ Bu konuda daha önce bitirdiğinizi [nasıl yapılır: bir iletişim kutusunda k
 
 1. Genel geçersiz kılmaları kısmına aşağıdaki satırı ekleyin `CMFC02View` MFC02View.h bildiriminde sınıfı.
 
-     `gcroot<WindowsFormsControlLibrary1::UserControl1 ^> m_ViewControl;`
+   `gcroot<WindowsFormsControlLibrary1::UserControl1 ^> m_ViewControl;`
 
 1. Bir geçersiz kılma için OnInitialUpdate ekleyin.
 
-     Görüntü **özellikleri** penceresini (F4). İçinde **sınıf görünümü** (CTRL + SHIFT + C) CMFC02View sınıfını seçin. İçinde **özellikleri** penceresinde geçersiz kılmalar için simgeyi seçin. Listedeki OnInitialUpdate OnInitialUpdate'e kadar. Tıklayın ve açılan listesinden \<Ekle >. MFC02View.cpp içinde. OnInitialUpdate işlevinin gövdesi şu şekilde olduğundan emin olun:
+   Görüntü **özellikleri** penceresini (F4). İçinde **sınıf görünümü** (CTRL + SHIFT + C) CMFC02View sınıfını seçin. İçinde **özellikleri** penceresinde geçersiz kılmalar için simgeyi seçin. Listedeki OnInitialUpdate OnInitialUpdate'e kadar. Tıklayın ve açılan listesinden \<Ekle >. MFC02View.cpp içinde. OnInitialUpdate işlevinin gövdesi şu şekilde olduğundan emin olun:
 
     ```
     CWinFormsView::OnInitialUpdate();
@@ -53,11 +53,11 @@ Bu konuda daha önce bitirdiğinizi [nasıl yapılır: bir iletişim kutusunda k
 
 1. Derleme ve projeyi çalıştırın.
 
-     Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
+   Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
 
-     Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**.
+   Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**.
 
-     Metin kutusu başlatıldığına dikkat edin.
+   Metin kutusu başlatıldığına dikkat edin.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

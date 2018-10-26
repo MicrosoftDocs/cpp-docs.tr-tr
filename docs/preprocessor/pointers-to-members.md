@@ -20,55 +20,56 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 09b0fcd2a00806d075e70d1469b57ba0a0dd5332
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: c37828e88156b5be10abdf2fc41c396fdef33784
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42465599"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071842"
 ---
 # <a name="pointerstomembers"></a>pointers_to_members
-**C++ özgü**  
-  
-Bir sınıf üyesinin işaretçisinin, ilişkilendirilmiş sınıf tanımından önce bildirilip bildirilemeyeceğini ve işaretçi boyutunu ve işaretçiyi yorumlamak için gerekli kodu denetlemek için kullanılıp kullanılmadığını belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```    
-#pragma pointers_to_members( pointer-declaration, [most-general-representation] )  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- 
-Koyabilirsiniz bir **pointers_to_members** pragma kullanmaya alternatif olarak, kaynak dosyanızdaki [/vmx](../build/reference/vmb-vmg-representation-method.md) derleyici seçenekleri veya [devralma anahtar sözcükleri](../cpp/inheritance-keywords.md).  
-  
-*İşaretçi bildirimi* bağımsız değişkeni, bir işaretçi üye önce veya sonra ilişkilendirilmiş işlev tanımından bildirip bildirmediğinizi belirtir. *İşaretçi bildirimi* bağımsız değişkeni aşağıdaki iki simgeden biridir:  
-  
-|Bağımsız Değişken|Açıklamalar|  
-|--------------|--------------|  
-|*full_generality*|Güvenli, bazen uygun durumda olmayan kod üretir. Kullandığınız *full_generality* herhangi bir üyenin işaretçisi ilişkilendirilmiş sınıf tanımından önce bildirilmişse. Her zaman bu bağımsız değişken tarafından belirtilen işaretçi gösterimini kullanır ve *most-general-representation* bağımsız değişken. /vmg ile eşdeğerdir.|  
-|*best_case*|Tüm üye işaretçileri için best-case gösterimini kullanılarak güvenli, en iyi durumda kod oluşturur. Sınıfın bir üyesinin işaretçisini bildirmeden önce sınıfın tanımlanmasını gerektirir. Varsayılan değer *best_case*.|  
-  
-*Most-general-representation* bağımsız değişkeni, derleyicinin güvenli bir şekilde herhangi bir çeviri birimindeki bir sınıfın bir üye işaretçisi başvurmak için kullanabileceğiniz en küçük işaretçi gösterimini belirtir. Bağımsız değişken aşağıdakilerden biri olabilir:  
-  
-|Bağımsız Değişken|Açıklamalar|  
-|--------------|--------------|  
-|*single_inheritance*|En genel gösterim, bir üye işlevi işaretçisi olan single-inheritance'tır. Kendisi için bir üye işaretçisinin bildirildiği bir sınıf tanımının devralma modeli birden çok veya sanal ise hataya neden olur.|  
-|*birden çok devralma*|En genel gösterim, bir üye işlev işaretçisi olan multiple-inheritance'tır. Kendisi için bir üye işaretçisinin bildirildiği bir sınıf tanımının devralma modeli sanal ise hataya neden olur.|  
-|*virtual_inheritance*|En genel devralma, bir üye işlev işaretçisi olan virtual-inheritance'tır. Hiçbir zaman hataya neden olmaz. Bu varsayılan bağımsız değişkendir, `#pragma pointers_to_members(full_generality)` kullanılır.|  
-  
+
+**C++ özgü**
+
+Bir sınıf üyesinin işaretçisinin, ilişkilendirilmiş sınıf tanımından önce bildirilip bildirilemeyeceğini ve işaretçi boyutunu ve işaretçiyi yorumlamak için gerekli kodu denetlemek için kullanılıp kullanılmadığını belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+#pragma pointers_to_members( pointer-declaration, [most-general-representation] )
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Koyabilirsiniz bir **pointers_to_members** pragma kullanmaya alternatif olarak, kaynak dosyanızdaki [/vmx](../build/reference/vmb-vmg-representation-method.md) derleyici seçenekleri veya [devralma anahtar sözcükleri](../cpp/inheritance-keywords.md).
+
+*İşaretçi bildirimi* bağımsız değişkeni, bir işaretçi üye önce veya sonra ilişkilendirilmiş işlev tanımından bildirip bildirmediğinizi belirtir. *İşaretçi bildirimi* bağımsız değişkeni aşağıdaki iki simgeden biridir:
+
+|Bağımsız Değişken|Açıklamalar|
+|--------------|--------------|
+|*full_generality*|Güvenli, bazen uygun durumda olmayan kod üretir. Kullandığınız *full_generality* herhangi bir üyenin işaretçisi ilişkilendirilmiş sınıf tanımından önce bildirilmişse. Her zaman bu bağımsız değişken tarafından belirtilen işaretçi gösterimini kullanır ve *most-general-representation* bağımsız değişken. /vmg ile eşdeğerdir.|
+|*best_case*|Tüm üye işaretçileri için best-case gösterimini kullanılarak güvenli, en iyi durumda kod oluşturur. Sınıfın bir üyesinin işaretçisini bildirmeden önce sınıfın tanımlanmasını gerektirir. Varsayılan değer *best_case*.|
+
+*Most-general-representation* bağımsız değişkeni, derleyicinin güvenli bir şekilde herhangi bir çeviri birimindeki bir sınıfın bir üye işaretçisi başvurmak için kullanabileceğiniz en küçük işaretçi gösterimini belirtir. Bağımsız değişken aşağıdakilerden biri olabilir:
+
+|Bağımsız Değişken|Açıklamalar|
+|--------------|--------------|
+|*single_inheritance*|En genel gösterim, bir üye işlevi işaretçisi olan single-inheritance'tır. Kendisi için bir üye işaretçisinin bildirildiği bir sınıf tanımının devralma modeli birden çok veya sanal ise hataya neden olur.|
+|*birden çok devralma*|En genel gösterim, bir üye işlev işaretçisi olan multiple-inheritance'tır. Kendisi için bir üye işaretçisinin bildirildiği bir sınıf tanımının devralma modeli sanal ise hataya neden olur.|
+|*virtual_inheritance*|En genel devralma, bir üye işlev işaretçisi olan virtual-inheritance'tır. Hiçbir zaman hataya neden olmaz. Bu varsayılan bağımsız değişkendir, `#pragma pointers_to_members(full_generality)` kullanılır.|
+
 > [!CAUTION]
-> Biz yerleştirmenizi öneri **pointers_to_members** pragmasını yalnızca etkilemek istediğiniz kaynak kod dosyasında ve sonra yerleştirmenizi `#include` yönergeleri. Bu uygulama, pragmanın başka dosyaları etkileme riskini ve aynı değişken, işlev veya sınıf adı için yanlışlıkla birden fazla tanım belirtme olasılığınızı azaltır.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-//   Specify single-inheritance only  
-#pragma pointers_to_members( full_generality, single_inheritance )  
-```  
-  
-## <a name="end-c-specific"></a>END C++ özgü  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- 
+> Biz yerleştirmenizi öneri **pointers_to_members** pragmasını yalnızca etkilemek istediğiniz kaynak kod dosyasında ve sonra yerleştirmenizi `#include` yönergeleri. Bu uygulama, pragmanın başka dosyaları etkileme riskini ve aynı değişken, işlev veya sınıf adı için yanlışlıkla birden fazla tanım belirtme olasılığınızı azaltır.
+
+## <a name="example"></a>Örnek
+
+```
+//   Specify single-inheritance only
+#pragma pointers_to_members( full_generality, single_inheritance )
+```
+
+## <a name="end-c-specific"></a>END C++ özgü
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
 [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

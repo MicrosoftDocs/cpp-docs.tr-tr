@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b94172d57bc21e7f747a5d0986ef28dbfb80e481
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 33c79dc8c83f40d0b553a2c44cf22fa107f5ef34
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428648"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065596"
 ---
 # <a name="mfc-activex-controls"></a>MFC ActiveX Denetimleri
 
@@ -109,19 +109,19 @@ Varsayılan olarak, ActiveX denetim sınıfları ve araçları, Visual Studio .N
 
 - **\Common7\Tools**
 
-     Test kapsayıcısı dosyaları (TstCon32.exe hem de Yardım dosyaları) içerir.
+   Test kapsayıcısı dosyaları (TstCon32.exe hem de Yardım dosyaları) içerir.
 
 - **\Vc7\atlmfc\include**
 
-     MFC ActiveX denetimleri geliştirmek için gereken dosyaları içerir
+   MFC ActiveX denetimleri geliştirmek için gereken dosyaları içerir
 
 - **\Vc7\atlmfc\src\mfc**
 
-     MFC içinde belirli bir ActiveX denetim sınıfları için kaynak kodunu içerir
+   MFC içinde belirli bir ActiveX denetim sınıfları için kaynak kodunu içerir
 
 - **\Vc7\atlmfc\lib**
 
-     MFC ActiveX denetimleri geliştirmek için gereken kitaplıkları içerir.
+   MFC ActiveX denetimleri geliştirmek için gereken kitaplıkları içerir.
 
 MFC ActiveX denetimleri için örnekleri vardır. Bu örnekler hakkında daha fazla bilgi için bkz. [denetimleri örnekleri: MFC-Based ActiveX denetimleri](../visual-cpp-samples.md)
 

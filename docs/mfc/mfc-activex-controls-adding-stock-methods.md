@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b42907273423d69ed93df5700b33556047338fe2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e103e43f23746f8274ad00da4d043e3446dfc706
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391432"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053034"
 ---
 # <a name="mfc-activex-controls-adding-stock-methods"></a>MFC ActiveX Denetimleri: Stok Yöntemler Ekleme
 
@@ -51,7 +51,7 @@ Stok yöntem ekleme basit kullanarak [yöntem Ekleme Sihirbazı'nı](../ide/add-
 
 1. Kısayol menüsünden tıklayın **Ekle** ve ardından **Ekle yöntemi**.
 
-     Bu yöntem Ekleme Sihirbazı'nı açar.
+   Bu yöntem Ekleme Sihirbazı'nı açar.
 
 1. İçinde **yöntem adı** kutusunun **Yenile**.
 

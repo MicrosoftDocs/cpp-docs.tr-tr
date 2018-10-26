@@ -124,19 +124,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 664894fb99f02168d06cfc5d82b4225defe7fe38
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 46b7f613cdb67fa446c878ceda7dd9eca6eec7e3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422232"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082586"
 ---
 # <a name="cmfcribbonpanel-class"></a>CMFCRibbonPanel sınıfı
 
 Şerit öğeleri kümesi içeren bir panel uygular. Panel çizildiğinde, panelin boyutuna verilen mümkün olduğunca çok öğelerini görüntüler.
 
 Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.
-
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -540,7 +539,6 @@ LPCTSTR GetName() const;
 
 ##  <a name="getparentbutton"></a>  CMFCRibbonPanel::GetParentButton
 
-
 ```
 CMFCRibbonBaseElement* GetParentButton() const;
 ```
@@ -562,7 +560,6 @@ CMFCRibbonCategory* GetParentCategory() const;
 Bu Şerit paneli içerir Şerit kategorisi için bir işaretçi.
 
 ##  <a name="getparentmenubar"></a>  CMFCRibbonPanel::GetParentMenuBar
-
 
 ```
 CMFCRibbonPanelMenuBar* GetParentMenuBar() const;
@@ -830,7 +827,6 @@ Kullanıcı uygulama düğmesini seçtiğinde ana Şerit paneli görüntülenir.
 
 ##  <a name="ismenumode"></a>  CMFCRibbonPanel::IsMenuMode
 
-
 ```
 BOOL IsMenuMode() const;
 ```
@@ -841,14 +837,13 @@ BOOL IsMenuMode() const;
 
 ##  <a name="onkey"></a>  CMFCRibbonPanel::OnKey
 
-
 ```
 virtual BOOL OnKey(UINT nChar);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nChar*
+[in] *nChar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -929,7 +924,8 @@ CMFCRibbonBaseElement* pElem);
 *nIndex*<br/>
 [in] Değiştirilecek öğenin sıfır tabanlı dizini belirtir.
 
-[in] [out] *pElem* özgün öğenin yerini alan öğe için geçerli bir işaretçi.
+*pElem*<br/>
+[out içinde] Özgün öğenin yerini alan öğe için geçerli bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -954,7 +950,8 @@ CMFCRibbonBaseElement* pElem);
 *uiCmdID*<br/>
 [in] Değiştirilecek öğenin komut Kimliğini belirtir.
 
-[in] [out] *pElem* özgün öğenin yerini alacak öğesi için geçerli bir işaretçi.
+*pElem*<br/>
+[out içinde] Özgün öğenin yerini alacak öğesi için geçerli bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1007,7 +1004,6 @@ HMENU hMenu,
 BOOL bIsDefautCommand = FALSE,
 BOOL bRightAlign = FALSE);
 
-
 BOOL SetElementMenu(
 UINT uiCmdID,
 UINT uiMenuResID,
@@ -1055,7 +1051,8 @@ CRuntimeClass* pRTC);
 *nIndex*<br/>
 [in] Eklemek için Şerit öğesinin sıfır tabanlı dizinini belirtir.
 
-[in] [out] *pRTC* Şerit paneline eklenen Şerit öğesi için çalışma zamanı sınıf bilgileri için bir işaretçi.
+*pRTC*<br/>
+[out içinde] Çalışma zamanı sınıf bilgileri Şerit paneline eklenen Şerit öğesi için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1080,7 +1077,8 @@ CRuntimeClass* pRTC);
 *uiCmdID*<br/>
 [in] Eklemek için Şerit öğesi komut Kimliğini belirtir.
 
-[in] [out] *pRTC* Şerit paneline eklenen Şerit öğesi ile ilişkili çalışma zamanı sınıf bilgileri için bir işaretçi.
+*pRTC*<br/>
+[out içinde] Şerit paneline eklenen Şerit öğesi ile ilişkili çalışma zamanı sınıf bilgileri için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1106,7 +1104,6 @@ CMFCRibbonColorButton* pColorButton =
 (CMFCRibbonColorButton*)pPanel->SetElementRTCByID(
 ID_CHAR_COLOR,
     RUNTIME_CLASS (CMFCRibbonColorButton));
-
 
 // SetElementRTCByID sets runtime class and returns a pointer
 // to the newly created custom button,

@@ -13,12 +13,12 @@ f1_keywords: []
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 7ab78284929de8e5991abb0d1a8c89ead500096a
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 78918acc70bddb25841b2bcaaf8f7cd7b627d63b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314709"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061566"
 ---
 # <a name="cc-properties-linux-c"></a>C/C++ özellikleri (Linux C++)
 
@@ -85,4 +85,4 @@ C++ dil standardı | C++ dil standardını belirler. | **Default**<br/>**C ++ 03
 Olarak derleme | .C ve .cpp dosyaları için derleme dili tercihini seçin.  'Default' göre .c veya .cpp uzantı algılar. (-x c, -x c++) | **Varsayılan** -varsayılan.<br/>**C kodu olarak derle** -C kodu olarak derle.<br/>**C++ kodu olarak derle** -C++ kodu olarak derle.<br/>
 Zorlanmış dosyaları Ekle | Bir veya daha fazla zorunlu ekleme dosyaları (-include [ad])
 
-## <a name="additional-options"></a>Ek Seçenekler 
+## <a name="additional-options"></a>Ek Seçenekler

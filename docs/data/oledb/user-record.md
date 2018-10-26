@@ -19,64 +19,64 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f8175694b10cc0c3c717a4fc5b5e02edca84ae60
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1c1958604edbb2f9d9c10e58082e70c2df400b8c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075088"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077380"
 ---
 # <a name="user-record"></a>Kullanıcı Kaydı
 
-Kullanıcı kaydı, bir satır için sütun verileri temsil eden kod ve veri yapısı sağlar. Bir kullanıcı kaydı, derleme zamanında veya çalışma zamanında oluşturulabilir. ATL OLE DB sağlayıcısı Sihirbazı ile bir sağlayıcı oluşturduğunuzda, sihirbaz ("MyProvider" bir sağlayıcı adı [kısa adı] belirtilen varsayılarak) şuna benzer bir varsayılan kullanıcı kaydı oluşturur:  
-  
-```cpp  
-class CWindowsFile:  
-   public WIN32_FIND_DATA  
-{  
-public:  
-  
-BEGIN_PROVIDER_COLUMN_MAP(CMyProviderWindowsFile)  
-   PROVIDER_COLUMN_ENTRY("FileAttributes", 1, dwFileAttributes)  
-   PROVIDER_COLUMN_ENTRY("FileSizeHigh", 2, nFileSizeHigh)  
-   PROVIDER_COLUMN_ENTRY("FileSizeLow", 3, nFileSizeLow)  
-   PROVIDER_COLUMN_ENTRY_STR("FileName", 4, cFileName)  
-   PROVIDER_COLUMN_ENTRY_STR("AltFileName", 5, cAlternateFileName)  
-END_PROVIDER_COLUMN_MAP()  
-  
-};  
-```  
-  
-OLE DB sağlayıcı şablonları istemcisi ile ilgili tüm OLE DB özellikleri işler. Bir yanıt için gerekli olan sütun verileri almak için sağlayıcı çağırır `GetColumnInfo` işlevin kullanıcı kaydında yerleştirmeniz gerekir. Açıkça geçersiz kılabilirsiniz `GetColumnInfo` kullanıcı kaydında gibi bildirerek .h dosyasındaki burada gösterildiği gibi:  
-  
-```cpp  
-template <class T>  
-static ATLCOLUMNINFO* GetColumnInfo(T* pThis, ULONG* pcCols)   
-```  
-  
-Bu eşdeğerdir.  
-  
-```cpp  
-static ATLCOLUMNINFO* GetColumnInfo(CommandClass* pThis, ULONG* pcCols)  
-static ATLCOLUMNINFO* GetColumnInfo(RowsetClass* pThis, ULONG* pcCols)  
-```  
-  
-Ayrıca uygulamalıdır `GetColumnInfo` kullanıcı kaydının .cpp dosyası içinde.  
-  
-PROVIDER_COLUMN_MAP makroları yardımcı oluştururken bir `GetColumnInfo` işlevi:  
-  
-- BEGIN_PROVIDER_COLUMN_MAP işlev prototipi ve statik bir dizi tanımlar `ATLCOLUMNINFO` yapıları.  
-  
-- PROVIDER_COLUMN_ENTRY tanımlar ve tek bir başlatır `ATLCOLUMNINFO`.  
-  
-- END_PROVIDER_COLUMN_MAP dizi ve işlev kapatır. Ayrıca bir dizi öğe sayısını yerleştirir *pcCols* parametresi.  
-  
-Çalışma zamanında, bir kullanıcı kaydı oluşturulduğunda `GetColumnInfo` kullanan *pThis* satır kümesi veya komut örneğine bir işaretçi almak için parametre. Komutlar ve satır kümeleri desteklemelidir `IColumnsInfo` sütun bilgileri bu işaretçiyle alınabilmesi için arabirim.  
-  
-`CommandClass` ve `RowsetClass` komut ve kullanıcı kaydını kullanan satır kümesi.  
-  
-Geçersiz kılmak daha ayrıntılı bir örnek `GetColumnInfo` bir kullanıcı kaydı görebilirsiniz [dinamik olarak belirleme sütunları döndürülen tüketici](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Kullanıcı kaydı, bir satır için sütun verileri temsil eden kod ve veri yapısı sağlar. Bir kullanıcı kaydı, derleme zamanında veya çalışma zamanında oluşturulabilir. ATL OLE DB sağlayıcısı Sihirbazı ile bir sağlayıcı oluşturduğunuzda, sihirbaz şuna benzer bir varsayılan kullanıcı kaydını oluşturur (bir sağlayıcı adı [kısa adı] belirtilen varsayılarak *özel*):
+
+```cpp
+class CWindowsFile:
+   public WIN32_FIND_DATA
+{
+public:
+
+BEGIN_PROVIDER_COLUMN_MAP(CCustomWindowsFile)
+   PROVIDER_COLUMN_ENTRY("FileAttributes", 1, dwFileAttributes)
+   PROVIDER_COLUMN_ENTRY("FileSizeHigh", 2, nFileSizeHigh)
+   PROVIDER_COLUMN_ENTRY("FileSizeLow", 3, nFileSizeLow)
+   PROVIDER_COLUMN_ENTRY_STR("FileName", 4, cFileName)
+   PROVIDER_COLUMN_ENTRY_STR("AltFileName", 5, cAlternateFileName)
+END_PROVIDER_COLUMN_MAP()
+
+};
+```
+
+OLE DB sağlayıcı şablonları istemcisi ile ilgili tüm OLE DB özellikleri işler. Bir yanıt için gerekli olan sütun verileri almak için sağlayıcı çağırır `GetColumnInfo` işlevin kullanıcı kaydında yerleştirmeniz gerekir. Açıkça geçersiz kılabilirsiniz `GetColumnInfo` kullanıcı kaydında gibi bildirerek .h dosyasındaki burada gösterildiği gibi:
+
+```cpp
+template <class T>
+static ATLCOLUMNINFO* GetColumnInfo(T* pThis, ULONG* pcCols)
+```
+
+Bu eşdeğerdir.
+
+```cpp
+static ATLCOLUMNINFO* GetColumnInfo(CommandClass* pThis, ULONG* pcCols)
+static ATLCOLUMNINFO* GetColumnInfo(RowsetClass* pThis, ULONG* pcCols)
+```
+
+Ayrıca uygulamalıdır `GetColumnInfo` kullanıcı kaydının .cpp dosyası içinde.
+
+PROVIDER_COLUMN_MAP makroları yardımcı oluştururken bir `GetColumnInfo` işlevi:
+
+- BEGIN_PROVIDER_COLUMN_MAP işlev prototipi ve statik bir dizi tanımlar `ATLCOLUMNINFO` yapıları.
+
+- PROVIDER_COLUMN_ENTRY tanımlar ve tek bir başlatır `ATLCOLUMNINFO`.
+
+- END_PROVIDER_COLUMN_MAP dizi ve işlev kapatır. Ayrıca bir dizi öğe sayısını yerleştirir *pcCols* parametresi.
+
+Çalışma zamanında, bir kullanıcı kaydı oluşturulduğunda `GetColumnInfo` kullanan *pThis* satır kümesi veya komut örneğine bir işaretçi almak için parametre. Komutlar ve satır kümeleri desteklemelidir `IColumnsInfo` sütun bilgileri bu işaretçiyle alınabilmesi için arabirim.
+
+`CommandClass` ve `RowsetClass` komut ve kullanıcı kaydını kullanan satır kümesi.
+
+Geçersiz kılmak daha ayrıntılı bir örnek `GetColumnInfo` bir kullanıcı kaydı görebilirsiniz [dinamik olarak belirleme sütunları döndürülen tüketici](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

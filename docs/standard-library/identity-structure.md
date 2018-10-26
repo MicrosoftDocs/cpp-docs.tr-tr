@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f065f7c00d3853d00c1063cd5b2838ec6d1d27b4
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 62acade082847386e065470f23ffe8374f82eb55
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953003"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079200"
 ---
 # <a name="identity-structure"></a>identity Yapısı
 
@@ -36,6 +36,7 @@ struct identity {
    Type operator()(const Type& left) const;
    };
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 |Parametre|Açıklama|

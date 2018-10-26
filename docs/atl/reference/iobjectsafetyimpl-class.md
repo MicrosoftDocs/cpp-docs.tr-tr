@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e760bab6fb3ad420fc6fe0f5c8a2ea6addc652ac
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 597825c89b19c15872c831c675981e68345aa947
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019438"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068234"
 ---
 # <a name="iobjectsafetyimpl-class"></a>Iobjectsafetyımpl sınıfı
 
@@ -94,7 +94,7 @@ Bu Not [IMPLEMENTED_CATEGORY](category-macros.md#implemented_category) makrosu C
 Nesne için ayarlanmış güvenlik seçenekleri yanı sıra, nesne tarafından desteklenen güvenlik seçeneklerini alır.
 
 ```
-HRESULT GetInterfaceSafetyOptions(  
+HRESULT GetInterfaceSafetyOptions(
     REFIID riid,
     DWORD* pdwSupportedOptions,
     DWORD* pdwEnabledOptions);
@@ -122,7 +122,7 @@ DWORD m_dwCurrentSafety;
 Nesne başlatma veya ayarlayarak komut dosyası için güvenli hale getirir [m_dwCurrentSafety](#m_dwcurrentsafety) uygun değere üyesi.
 
 ```
-HRESULT SetInterfaceSafetyOptions(  
+HRESULT SetInterfaceSafetyOptions(
     REFIID riid,
     DWORD dwOptionsSetMask,
     DWORD dwEnabledOptions);

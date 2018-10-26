@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8ea8cec7a3cc2e24c55c9f8454b421f5488f1c89
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 9f2277e09bc4835cabd73d9be5177042dd0817e5
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327927"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056106"
 ---
 # <a name="tracking-reference-operator-ccli-and-ccx"></a>İzleme başvurusu işleci (C + +/ CLI ve C + +/ CX)
 
@@ -61,13 +61,13 @@ Aşağıdaki örnek nasıl geçirileceğini gösterir. bir ^ % alan bir işlev.
 ref class Foo sealed {};
 
     // internal or private
-    void UseFooHelper(Foo% f)  
+    void UseFooHelper(Foo% f)
     {
         auto x = %f;
     }
 
     // public method on ABI boundary
-    void UseFoo(Foo^ f)  
+    void UseFoo(Foo^ f)
     {
         if (f != nullptr) { UseFooHelper(*f); }
     }

@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01efc61d08204598cbce6d875bfe2c2293d8e711
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 16fe66e6ba8ea3f6e4f88f434b58c61d46ce1edb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404273"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080656"
 ---
 # <a name="porting-to-the-universal-windows-platform-c"></a>Evrensel Windows Platformu’na bağlantı noktası oluşturma (C++)
 
@@ -74,7 +74,7 @@ Bir Windows 8.1 Store uygulaması varsa, bunu UWP ve Windows 10 çalıştıran h
     #if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)
     ```
 
-     Bu deyimler, uygulamalar, her iki ya da hiçbiri (Klasik Win32 yalnızca Masaüstü) UWP uygulamaları, Windows Phone Store sırasıyla uygulanır. Bu makrolar yalnızca Windows 8.1 SDK ve daha sonra durum, bunların hiçbiri göz önünde bulundurabileceğiniz sonra kodunuzu önceki sürümleriyle Windows SDK'yı veya Windows, yanı sıra diğer platformlar için derleme gerekiyorsa tanımlanan şekilde kullanılabilir.
+   Bu deyimler, uygulamalar, her iki ya da hiçbiri (Klasik Win32 yalnızca Masaüstü) UWP uygulamaları, Windows Phone Store sırasıyla uygulanır. Bu makrolar yalnızca Windows 8.1 SDK ve daha sonra durum, bunların hiçbiri göz önünde bulundurabileceğiniz sonra kodunuzu önceki sürümleriyle Windows SDK'yı veya Windows, yanı sıra diğer platformlar için derleme gerekiyorsa tanımlanan şekilde kullanılabilir.
 
 11. Uygulamasında bir öykünücü veya cihaz uygulamanızın desteklediği her türü için fiziksel bir cihaz üzerinde hata ayıklama ve çalıştırın. Bir öykünücüyü çalıştırmak için bir sanal makineye bir fiziksel bilgisayar Visual Studio çalıştırmanız gerekir.
 
@@ -119,4 +119,4 @@ Visual Studio kullanarak yeni bir UWP projesi oluşturduysanız, bu hata görmem
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual C++ Taşıma Kılavuzu](../porting/porting-to-the-universal-windows-platform-cpp.md)<br/>
-[Evrensel Windows Platformu (UWP) için uygulama geliştirme](/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)  
+[Evrensel Windows Platformu (UWP) için uygulama geliştirme](/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)

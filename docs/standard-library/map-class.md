@@ -1,7 +1,7 @@
 ---
 title: map sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -98,12 +98,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42cd23fcba03ed0161b7a19923851dd3d574e23b
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 96d0b6abc7ca9f82c3b9c1ce3e84b7fad99ea486
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235691"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066402"
 ---
 # <a name="map-class"></a>map Sınıfı
 
@@ -1012,7 +1012,6 @@ past-the-end yineleyici döndürür.
 ```cpp
 const_iterator end() const;
 
-
 iterator end();
 ```
 
@@ -1115,11 +1114,9 @@ Bir öğenin veya öğelerin aralığını belirtilen konumlardan bir eşlem iç
 iterator erase(
     const_iterator Where);
 
-
 iterator erase(
     const_iterator First,
     const_iterator Last);
-
 
 size_type erase(
     const key_type& Key);
@@ -1232,7 +1229,6 @@ Belirtilen anahtara denk bir anahtara sahip bir eşlem içindeki bir öğenin ko
 
 ```cpp
 iterator find(const Key& key);
-
 
 const_iterator find(const Key& key) const;
 ```
@@ -1394,19 +1390,16 @@ Bir öğenin veya öğelerin aralığını bir eşlemeye ekler.
 pair<iterator, bool> insert(
     const value_type& Val);
 
-
 // (2) single element, perfect forwarded
 template <class ValTy>
 pair<iterator, bool>
 insert(
     ValTy&& Val);
 
-
 // (3) single element with hint
 iterator insert(
     const_iterator Where,
     const value_type& Val);
-
 
 // (4) single element, perfect forwarded, with hint
 template <class ValTy>
@@ -1414,13 +1407,11 @@ iterator insert(
     const_iterator Where,
     ValTy&& Val);
 
-
 // (5) range
 template <class InputIterator>
 void insert(
     InputIterator First,
     InputIterator Last);
-
 
 // (6) initializer list
 void insert(
@@ -2636,9 +2627,9 @@ Bir harita alt öğeleri düzenlemek amacıyla kullanan bir karşılaştırma i�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir eşleme için *m*, iki öğe *e*1 ( *k*1 *d*1) ve *e*2 ( *k*2 `d`2) türündeki nesneler `value_type`burada *k*1 ve *k*2 olan türü, anahtarlarına `key_type` ve `d`1 ve `d`2 kendi veri türü `mapped_type`, ardından *m.*`value_comp`( *e*1 *e*olan 2) eşdeğer *m.* `key_comp` *(k*1 *k*2). Depolanan bir nesne üye işlevini tanımlar.
+Bir eşleme için *m*, iki öğe *e1*(*k1*, *d1*) ve *e2*(*k2*, *d2*) türündeki nesneler `value_type`burada *k1* ve *k1* türü kendi anahtarları `key_type` ve *d1* ve *d2* kendi veri türü olan `mapped_type`, ardından `m.value_comp(e1, e2)` eşdeğerdir `m.key_comp(k1, k2)`. Depolanan bir nesne üye işlevini tanımlar.
 
-**bool işleci**( **value_type &**`left`, **value_type &**`right`);
+`bool operator( value_type& left, value_type& right);`
 
 döndüren **true** , anahtar değerini `left` önündeki ve anahtar değerine eşit değil `right` sıralama düzeninde.
 

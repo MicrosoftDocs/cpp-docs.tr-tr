@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cddcf337c68908d58749623e0739f3cb5979fa91
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 798e3d0a7cc8d8573c03f9859b722c95b8c640af
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387958"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070263"
 ---
 # <a name="cwordarray-class"></a>CWordArray sınıfı
 
@@ -559,6 +559,4 @@ Bu işlev görünümünü değişiklikleri yansıtacak şekilde güncelleştiril
 [MFC örnek Topla](../../visual-cpp-samples.md)<br/>
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-
-
 

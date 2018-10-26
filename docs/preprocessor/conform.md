@@ -19,15 +19,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb14af38c4bffed4b9f5c60d2d89fd84a892025b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 05b1f9fef458b8c21de9eb3942730ff901d3922e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721753"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071238"
 ---
 # <a name="conform"></a>conform
-**C++ özgü**  
+**C++ özgü**
 
 Çalışma zamanı davranışını belirtir [/ZC: forscope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneği.
 
@@ -41,13 +41,13 @@ ms.locfileid: "45721753"
 Değiştirilecek derleyici seçeneğinin adı belirtir. Yalnızca geçerli *adı* olduğu `forScope`.
 
 **Show**<br/>
-(İsteğe bağlı) Geçerli ayarını neden *adı* (true veya false) derleme sırasında bir uyarı iletisi yoluyla görüntülenecek. Örneğin, `#pragma conform(forScope, show)`.
+(İsteğe bağlı) Geçerli ayarını neden *adı* (true veya false) derleme sırasında bir uyarı iletisi yoluyla görüntülenecek. Örneğin: `#pragma conform(forScope, show)`
 
 **üzerinde**, **kapalı**<br/>
 (İsteğe bağlı) Ayarı *adı* için **üzerinde** sağlayan [/ZC: forscope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneği. Varsayılan değer **kapalı**.
 
 **push**<br/>
-(İsteğe bağlı) Geçerli değerini gönderim *adı* iç derleyici yığınına sürükleyin. Belirtirseniz *tanımlayıcı*, belirtebileceğiniz **üzerinde** veya **kapalı** değerini *adı* da yığına itilecek. Örneğin, `#pragma conform(forScope, push, myname, on)`.
+(İsteğe bağlı) Geçerli değerini gönderim *adı* iç derleyici yığınına sürükleyin. Belirtirseniz *tanımlayıcı*, belirtebileceğiniz **üzerinde** veya **kapalı** değerini *adı* da yığına itilecek. Örneğin: `#pragma conform(forScope, push, myname, on)`
 
 **POP**<br/>
 (İsteğe bağlı) Ayarlar *adı* değere iç derleyici yığınındaki ve ardından POP yığının üstünde. Tanımlayıcı belirtilirse **pop**, geri kayıtla buluncaya yığın POP *tanımlayıcısı*, hangi ayrıca POP; için geçerli değer *adı* içinde Yığında sonraki kaydı için yeni değer olur *adı*. Belirtirseniz **pop** ile bir *tanımlayıcı* olmayan yığında kaydındaki **pop** göz ardı edilir.
@@ -58,19 +58,19 @@ Değiştirilecek derleyici seçeneğinin adı belirtir. Yalnızca geçerli *adı
 ## <a name="example"></a>Örnek
 
 ```cpp
-// pragma_directive_conform.cpp  
-// compile with: /W1  
-// C4811 expected  
-#pragma conform(forScope, show)  
-#pragma conform(forScope, push, x, on)  
-#pragma conform(forScope, push, x1, off)  
-#pragma conform(forScope, push, x2, off)  
-#pragma conform(forScope, push, x3, off)  
-#pragma conform(forScope, show)  
-#pragma conform(forScope, pop, x1)  
-#pragma conform(forScope, show)  
-  
-int main() {}  
+// pragma_directive_conform.cpp
+// compile with: /W1
+// C4811 expected
+#pragma conform(forScope, show)
+#pragma conform(forScope, push, x, on)
+#pragma conform(forScope, push, x1, off)
+#pragma conform(forScope, push, x2, off)
+#pragma conform(forScope, push, x3, off)
+#pragma conform(forScope, show)
+#pragma conform(forScope, pop, x1)
+#pragma conform(forScope, show)
+
+int main() {}
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.

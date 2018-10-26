@@ -61,12 +61,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d232eec6593e0daafb31461847e8d481e60f80ba
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 57a64b1a07305c154efdfdf57651ffe3cf5f3dad
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374372"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059974"
 ---
 # <a name="cd2dbitmap-class"></a>CD2DBitmap sınıfı
 
@@ -180,20 +180,17 @@ CD2DBitmap(
     CD2DSizeU sizeDest = CD2DSizeU(0, 0),
     BOOL bAutoDestroy = TRUE);
 
-
 CD2DBitmap(
     CRenderTarget* pParentTarget,
     LPCTSTR lpszPath,
     CD2DSizeU sizeDest = CD2DSizeU(0, 0),
     BOOL bAutoDestroy = TRUE);
 
-
 CD2DBitmap(
     CRenderTarget* pParentTarget,
     HBITMAP hbmpSrc,
     CD2DSizeU sizeDest = CD2DSizeU(0, 0),
     BOOL bAutoDestroy = TRUE);
-
 
 CD2DBitmap(
     CRenderTarget* pParentTarget,

@@ -1,7 +1,7 @@
 ---
 title: CDockablePane sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed4325cc950cdfa5320f1107df7103cbb2c026b5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 91058da47a97098826939be2248d81ba657f3cbb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417494"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078316"
 ---
 # <a name="cdockablepane-class"></a>CDockablePane sınıfı
 
@@ -337,7 +337,8 @@ virtual CDockablePane* AttachToTabWnd(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] [out] *pTabControlBarAttachTo* geçerli bölmesini ekler hedef bölmesinde belirtir. Hedef bölmesinde yerleştirilebilir bir bölme olmalıdır.
+*pTabControlBarAttachTo*<br/>
+[out içinde] Geçerli bölmesini ekler hedef bölmesinde belirtir. Hedef bölmesinde yerleştirilebilir bir bölme olmalıdır.
 
 *dockMethod*<br/>
 [in] Yerleştirme yöntemini belirtir.
@@ -585,7 +586,6 @@ virtual BOOL Create(
     DWORD dwControlBarStyle = AFX_DEFAULT_DOCKING_PANE_STYLE,
     CCreateContext* pContext = NULL);
 
-
 virtual BOOL Create(
     LPCTSTR lpszWindowName,
     CWnd* pParentWnd,
@@ -602,7 +602,8 @@ virtual BOOL Create(
 *lpszCaption*<br/>
 [in] Pencere adını belirtir.
 
-[in] [out] *pParentWnd* üst pencere belirtir.
+*pParentWnd*<br/>
+[out içinde] Üst pencere belirtir.
 
 *Rect*<br/>
 [in] İstemci koordinatları içinde pencerenin konumunu ve boyutunu belirtir *pParentWnd*.
@@ -622,7 +623,8 @@ virtual BOOL Create(
 *dwControlBarStyle*<br/>
 [in] Ek stili özniteliklerini belirtir.
 
-[in] [out] *pContext* penceresi Oluştur bağlamını belirtir.
+*pContext*<br/>
+[out içinde] Pencere oluşturma bağlamını belirtir.
 
 *lpszWindowName*<br/>
 [in] Pencere adını belirtir.
@@ -705,7 +707,8 @@ virtual BOOL CreateEx(
 *lpszCaption*<br/>
 [in] Pencere adını belirtir.
 
-[in] [out] *pParentWnd* üst pencere belirtir.
+*pParentWnd*<br/>
+[out içinde] Üst pencere belirtir.
 
 *Rect*<br/>
 [in] İstemci koordinatları içinde pencerenin konumunu ve boyutunu belirtir *pParentWnd*.
@@ -725,7 +728,8 @@ virtual BOOL CreateEx(
 *dwControlBarStyle*<br/>
 [in] Ek stili özniteliklerini belirtir.
 
-[in] [out] *pContext* penceresi Oluştur bağlamını belirtir.
+*pContext*<br/>
+[out içinde] Pencere oluşturma bağlamını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -842,7 +846,8 @@ virtual BOOL DockToWindow(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] [out] *pTargetWindow* bu bölmesine sabitlemek için yerleştirilebilir bölmesinde belirtir.
+*pTargetWindow*<br/>
+[out içinde] Bu bölme için sabitlemek için yerleştirilebilir bölmesinde belirtir.
 
 *dwAlignment*<br/>
 [in] Bölmenin yerleştirme hizalamasını belirtir. CBRS_ALIGN_LEFT CBRS_ALIGN_TOP, CBRS_ALIGN_RIGHT CBRS_ALIGN_BOTTOM veya cbrs_alıgn_any biri olabilir. (Afxres.h içinde tanımlanan.)
@@ -1339,7 +1344,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pWndOldParent*
+[in] *pWndOldParent*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1509,7 +1514,8 @@ virtual CMFCAutoHideBar* SetAutoHideMode(
 *dwAlignment*<br/>
 [in] Oluşturulacak autohide bölmesinde hizalamasını belirtir.
 
-[in] [out] *pCurrAutoHideBar* geçerli autohide araç için bir işaretçi. NULL olabilir.
+*pCurrAutoHideBar*<br/>
+[out içinde] Geçerli autohide araç için bir işaretçi. NULL olabilir.
 
 *bUseTimer*<br/>
 [in] Autohide etkin kullanıcı bölmesinde autohide moduna geçiş yaptığında kullanın veya bölmesinde hemen gizlemek için belirtir.

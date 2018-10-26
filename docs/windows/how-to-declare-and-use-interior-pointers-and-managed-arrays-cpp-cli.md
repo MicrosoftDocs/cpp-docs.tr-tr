@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c0c34b43451f8e62583450998efa8e74000807b4
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: a18170d66ef2b2fe374085557d7fca4411c48ec6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328122"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080630"
 ---
 # <a name="how-to-declare-and-use-interior-pointers-and-managed-arrays-ccli"></a>Nasıl yapılır: İç İşaretçiler ve Yönetilen Diziler Bildirme ve Kullanma (C++/CLI)
 
@@ -44,7 +44,7 @@ int main() {
    array<int>^ arr = gcnew array<int>(SIZE);
 
    // initialize the array
-   for (int i = 0 ; i < SIZE ; i++)  
+   for (int i = 0 ; i < SIZE ; i++)
       arr[i] = i + 1;
 
    // create an interior pointer into the array

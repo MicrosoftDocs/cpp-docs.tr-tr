@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 356027e151dcc94891b9c4043e4f1af8b2f0b947
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 847ad295956cafa12e3793dc68d663f005da095a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46430923"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072843"
 ---
 # <a name="how-wininet-makes-it-easier-to-create-internet-client-applications"></a>WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması
 
@@ -33,15 +33,15 @@ Visual C++ WinINet kullanabilmeniz için iki yol sunar. Win32 Internet işlevler
 
 - HTML sayfaları indirin.
 
-     HTML sayfaları, bir sunucudan istemci tarayıcısına aktarmak için kullanılan protokol HTTP'dir.
+   HTML sayfaları, bir sunucudan istemci tarayıcısına aktarmak için kullanılan protokol HTTP'dir.
 
 - FTP istekleri karşıya yükleme dosyalarını indirmek veya dizin listesinde alma gönderirler.
 
-     Tipik bir dosyayı indirmek için anonim bir oturum açma isteğidir.
+   Tipik bir dosyayı indirmek için anonim bir oturum açma isteğidir.
 
 - Gopher'ın menü sistemi, Internet üzerindeki kaynaklara erişmek için kullanır.
 
-     Menü öğelerini başka menüler, arama yapabilirsiniz dizini oluşturulmuş bir veritabanı, bir haber grubu veya bir dosya gibi çeşitli türleri olabilir.
+   Menü öğelerini başka menüler, arama yapabilirsiniz dizini oluşturulmuş bir veritabanı, bir haber grubu veya bir dosya gibi çeşitli türleri olabilir.
 
 Üç tüm protokoller için bir bağlantı, sunucuya isteklerde ve bağlantıyı kapatın.
 
@@ -51,7 +51,7 @@ Visual C++ WinINet kullanabilmeniz için iki yol sunar. Win32 Internet işlevler
 
 - WinSock veya TCP/IP'yi için doğrudan programlamaya gerek kalmadan HTTP, FTP ve gopher protokolleri kullanır.
 
-     Win32 Internet işlevleri kullanan geliştiriciler TCP/IP'yi ya da Windows Sockets ile bilgi sahibi olmanız gerekmez. WinSock ve TCP/IP protokolleri kullanarak doğrudan, yine de yuva düzeyinde bir programlama yapabilirsiniz ancak Internet üzerinden erişim HTTP, FTP ve gopher protokolleri MFC WinINet sınıfları kullanmak daha kolaydır. Birçok ortak işlemler için geliştiriciler özel Protokolü kullandıkları ayrıntılarını bilmeniz gerekmez.
+   Win32 Internet işlevleri kullanan geliştiriciler TCP/IP'yi ya da Windows Sockets ile bilgi sahibi olmanız gerekmez. WinSock ve TCP/IP protokolleri kullanarak doğrudan, yine de yuva düzeyinde bir programlama yapabilirsiniz ancak Internet üzerinden erişim HTTP, FTP ve gopher protokolleri MFC WinINet sınıfları kullanmak daha kolaydır. Birçok ortak işlemler için geliştiriciler özel Protokolü kullandıkları ayrıntılarını bilmeniz gerekmez.
 
 Bilgisayarınızın Internet üzerindeki diğer bilgisayarlara bir istemci olarak gerçekleştirilen birçok işlem uzun sürebilir. Hızı bu işlemlerin genellikle ağ bağlantınızın hızına göre sınırlıdır, ancak bunlar aynı zamanda diğer ağ trafiğini ve işlem karmaşıklığı tarafından etkilenebilir. Uzak bir FTP sunucusuna bağlanma, örneğin, bilgisayarınızı adresini bulmak için sunucu adını ilk bakış gerektirir. Uygulamanızı daha sonra bu adresteki sunucuya bağlanma dener. Bağlantı açıldıktan sonra bilgisayarınız ve uzak sunucu dosyaları almak için bağlantı gerçekten kullanmadan önce Dosya Aktarım Protokolü ile bir konuşma başlatır.
 

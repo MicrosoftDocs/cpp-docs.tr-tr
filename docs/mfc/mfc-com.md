@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 660b2fc2f6ece6f60ff7bd1868b3a65bc8f045c1
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 5ae1ccdcda4fac1cbd0660b054d792999ae449fc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890042"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079295"
 ---
 # <a name="mfc-com"></a>MFC COM
 
@@ -52,7 +52,7 @@ Etkin teknoloji, aşağıdakiler dahil olmak üzere, istemci ve sunucu teknoloji
 
 - [Otomasyon](../mfc/automation.md) (eski adıyla OLE Otomasyonu da bilinir), bir uygulama için başka bir uygulamaya uygulanan nesneleri değiştirmek ya da "bunlar işlenebilir nesneleri göstermek için" mümkün kılar.
 
-     Otomatik nesne yerel veya uzak (başka bir makinedeki bir ağ üzerinden erişilebilir) olabilir. Otomasyon OLE hem COM nesneleri için kullanılabilir.
+   Otomatik nesne yerel veya uzak (başka bir makinedeki bir ağ üzerinden erişilebilir) olabilir. Otomasyon OLE hem COM nesneleri için kullanılabilir.
 
 - Bu bölümde, MFC, örneğin kullanarak COM bileşenlerini yazmaya yönelik bilgi de sağlar. [bağlantı noktaları](../mfc/connection-points.md).
 

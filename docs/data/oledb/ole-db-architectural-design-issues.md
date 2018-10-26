@@ -15,17 +15,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a79cc4dfa36170293a8832571ba3348d6e2c8865
-ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
+ms.openlocfilehash: 0a0fc54c002511b9c091acc5d5e3fbe4636ad933
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990029"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072245"
 ---
 # <a name="ole-db-architectural-design-issues"></a>OLE DB Mimari Tasarım Sorunları
 
-Aşağıdaki sorunlar, OLE DB uygulamayı başlatmadan önce göz önünde bulundurun:  
-  
+Aşağıdaki sorunlar, OLE DB uygulamayı başlatmadan önce göz önünde bulundurun:
+
 ## <a name="what-programming-implementation-will-you-use-to-write-your-ole-db-application"></a>Hangi programlama uygulamasını OLE DB uygulamanızı yazmak için kullanacak mısınız?
 
 Microsoft, bu görevi gerçekleştirmek için birden çok kitaplık sunar: OLE DB Şablon kitaplığı, OLE DB öznitelikleri ve OLE DB SDK ham OLE DB arabirimler. Aynı zamanda, programınız yazmanıza Yardım sihirbazları vardır. Bu uygulamalar, şurada açıklanan [OLE DB Şablonları, öznitelikler ve diğer uygulamalar](../../data/oledb/ole-db-templates-attributes-and-other-implementations.md).

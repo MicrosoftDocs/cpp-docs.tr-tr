@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47b169371b8551622650687e5d7bd8c06f560725
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 168d7c1740f9b33af1eca539e30514ce76259ceb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48236055"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076340"
 ---
 # <a name="walkthrough-using-the-new-mfc-shell-controls"></a>İzlenecek yol: Yeni MFC Kabuk Denetimlerini Kullanma
 
@@ -35,17 +35,17 @@ Bu izlenecek yol, Visual Studio'yu kullanmak için ayarladığınız varsayılma
 
 1. İçinde **yeni proje** iletişim kutusunda **Visual C++** düğümünde **proje türleri** bölmesi ve select **MFC**. Ardından **şablonları** bölmesinde **MFC uygulaması**. Proje için bir ad yazın `MFCShellControls` tıklatıp **Tamam**. Sonra **MFC Uygulama Sihirbazı** görüntüler, aşağıdaki seçenekleri kullanın:
 
-    1. Üzerinde **uygulama türü** bölmesi altında **uygulama türü**temizleyin **belgeleri sekmeli** seçeneği. Ardından, **tek belge** seçip **belge/görünüm mimarisi desteği**. Altında **proje stili**seçin **Visual Studio**, gelen ve giden **görsel stil ve renkler** listesi seçin, açılan **Office 2007 (mavi tema)**. 
+    1. Üzerinde **uygulama türü** bölmesi altında **uygulama türü**temizleyin **belgeleri sekmeli** seçeneği. Ardından, **tek belge** seçip **belge/görünüm mimarisi desteği**. Altında **proje stili**seçin **Visual Studio**, gelen ve giden **görsel stil ve renkler** listesi seçin, açılan **Office 2007 (mavi tema)**.
 
     1. Üzerinde **bileşik belge desteği** bölmesinde **hiçbiri**.
 
     1. Herhangi bir değişiklik yapmayın **belge şablonu dizeleri** bölmesi.
 
-    1. Üzerinde **veritabanı desteği** bölmesinde (Visual Studio 2015 veya daha eski), seçin **hiçbiri** uygulama bir veritabanı kullanmadığı. 
+    1. Üzerinde **veritabanı desteği** bölmesinde (Visual Studio 2015 veya daha eski), seçin **hiçbiri** uygulama bir veritabanı kullanmadığı.
 
-    1. Üzerinde **kullanıcı arabirimi özellikleri** bölmesinde emin olun **menü çubuğu ve araç çubuğu kullan** seçeneği belirlenir. Diğer tüm seçenekler olduğu gibi bırakın. 
+    1. Üzerinde **kullanıcı arabirimi özellikleri** bölmesinde emin olun **menü çubuğu ve araç çubuğu kullan** seçeneği belirlenir. Diğer tüm seçenekler olduğu gibi bırakın.
 
-    1. Üzerinde **Gelişmiş Özellikler** bölmesi altında **Gelişmiş Özellikler**, yalnızca belirli **ActiveX denetimlerini** ve **ortak denetim bildirimi**. Altında **gelişmiş çerçeve bölmeleri**, yalnızca belirli **Gezinti bölmesinde** seçeneği. Penceresinin sol bölmesinde oluşturmak için Sihirbazı neden olacak bir `CMFCShellTreeCtrl` zaten eklenmiş. 
+    1. Üzerinde **Gelişmiş Özellikler** bölmesi altında **Gelişmiş Özellikler**, yalnızca belirli **ActiveX denetimlerini** ve **ortak denetim bildirimi**. Altında **gelişmiş çerçeve bölmeleri**, yalnızca belirli **Gezinti bölmesinde** seçeneği. Penceresinin sol bölmesinde oluşturmak için Sihirbazı neden olacak bir `CMFCShellTreeCtrl` zaten eklenmiş.
 
     1. Değişiklik kullanacağız olmayan **oluşturulan sınıflar** bölmesinde, bunu **son** yeni MFC projenizi oluşturmak için.
 

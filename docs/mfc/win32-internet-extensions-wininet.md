@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35d3805ee88cca048ac44dc15426cb35eb52bb5b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2ac1f416906109df866d157d40a603d0c51330b6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374768"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074702"
 ---
 # <a name="win32-internet-extensions-wininet"></a>Win32 Internet Uzantıları (WinInet)
 
@@ -60,6 +60,4 @@ Aşağıdaki konular, tipik WinINet görevlerini gerçekleştirmek için adımla
 
 [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)<br/>
 [WinInet Temelleri](../mfc/wininet-basics.md)
-
-
 

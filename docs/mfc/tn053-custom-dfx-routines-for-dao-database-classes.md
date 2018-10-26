@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 054ff12e47d2a6bd38d1a51a7745e5b3916c90dc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c7bbbcc4e9fbf71713a55cd58538dbd69ef33b9f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445119"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064101"
 ---
 # <a name="tn053-custom-dfx-routines-for-dao-database-classes"></a>TN053: DAO Veritabanı Sınıfları için Özel DFX Rutinleri
 
@@ -104,14 +104,12 @@ rs.Update();
 // Get the employee's data so that it can be displayed
 emp.MoveNext();
 
-
 // If user wants to see employee's photograph,
 // fetch it
 COleVariant varPhoto;
 if (bSeePicture)
     emp.GetFieldValue(_T("photo"),
     varPhoto);
-
 
 // Display the data
 PopUpEmployeeData(emp.m_strFirstName,

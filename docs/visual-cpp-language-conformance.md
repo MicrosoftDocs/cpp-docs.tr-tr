@@ -11,12 +11,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a40738b5a360e521ff890ef53240609a9afde32
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dd4848ae88d7bd66286ef13b3505a741d9b55c5c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388991"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060891"
 ---
 # <a name="visual-c-language-conformance"></a>Visual C++ dil uyumluluğu
 
@@ -93,8 +93,6 @@ Uyumluluk geliştirmeleri ve Visual Studio 2017'deki diğer değişiklikler hakk
 |&nbsp;&nbsp;[Tanınmayan P0283R2 yoksayılıyor öznitelikleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0283r2.html)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[Başlatıcı listesi oluşturucuları için sınıfın şablon bağımsız değişkeni kesintisi P0702R1 düzeltme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0702r1.html)|VS 2017 15.7 <sup> [17](#note_17)</sup>|
 
-  
-  
 |Özellik alanı| |
 |----|---|
 |__(Hata raporları) c ++ 17 çekirdek dil özellikleri__|__Desteklenen__|
@@ -105,8 +103,6 @@ Uyumluluk geliştirmeleri ve Visual Studio 2017'deki diğer değişiklikler hakk
 |&nbsp;&nbsp;[P0962R2 gevşetme aralığı-döngü özelleştirme noktası bulma kuralları](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0962r1.html)|Hayır|
 |&nbsp;&nbsp;[Erişilebilir üyeler bağlamaları yapılandırılmış P0969R0 izin verme](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0969r0.pdf)|Hayır|
 
-  
-  
 |Özellik alanı| |
 |----|---|
 |__C ++ 20 çekirdek dil özellikleri__|__Desteklenen__|
@@ -117,7 +113,6 @@ Uyumluluk geliştirmeleri ve Visual Studio 2017'deki diğer değişiklikler hakk
 |&nbsp;&nbsp;[Bit alanları için P0683R1 varsayılan üye Başlatıcı](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0683r1.html)|Hayır|
 |&nbsp;&nbsp;[P0704R1 düzeltme const lvalue başvuru nitelikli üye işaretçileri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0704r1.html)|Hayır|
 |&nbsp;&nbsp;[P0734R0 kavramları](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0734r0.pdf)|Hayır|
-
 
 ## <a name="standard-library-features"></a>Standart kitaplık özellikleri
 
@@ -258,38 +253,55 @@ Bir grup İnceleme birlikte listelenen özellik standart oy ve ardından artırm
 
 ### <a name="supported-values"></a>Desteklenen değerler
 
-__Hayır__ henüz uygulanmadı anlamına gelir.  
-__Kısmi__ Visual Studio 2017'de uygulama eksik olduğu anlamına gelir. Daha fazla ayrıntı için Notlar bölümüne bakın.  
-__Yok__ öneri incelemeleri açıklanmayan özellikleri anlamına gelir. Bu raporları dil standart değiştirilemez, ancak uygulayıcılar için herhangi bir iş oluşturmamışsınızdır. Bütünlük açısından buraya listelendikleri.  
-__VS 2010__ Visual Studio 2010'da desteklenen özellikleri gösterir.  
-__VS 2013__ Visual Studio 2013'te desteklenen özellikleri gösterir.  
-__VS 2015__ Visual Studio 2015 için RTM'de desteklenmeyen özellikleri gösterir.  
-__VS 2015.2__ ve __VS 2015.3__ Visual Studio 2015 güncelleştirme 2 ile Visual Studio 2015 güncelleştirme 3, sırasıyla desteklenmeyen özellikleri gösterir.  
-__VS 2017__ Visual Studio 2017 RTM'de desteklenmeyen özellikleri gösterir.  
-__VS 2017 15.3__ Visual Studio 2017 sürüm 15.3 desteklenmeyen özellikleri gösterir.  
-__VS 2017 15.5__ Visual Studio 2017 sürüm 15.5 desteklenmeyen özellikleri gösterir.
-__VS 2017 15.7__ Visual Studio 2017 sürüm 15.7 sürümünde desteklenmeyen özellikleri gösterir.
+__Hayır__ henüz uygulanmadı anlamına gelir.<br/>
+__Kısmi__ Visual Studio 2017'de uygulama eksik olduğu anlamına gelir. Daha fazla ayrıntı için Notlar bölümüne bakın.<br/>
+__Yok__ öneri incelemeleri açıklanmayan özellikleri anlamına gelir. Bu raporları dil standart değiştirilemez, ancak uygulayıcılar için herhangi bir iş oluşturmamışsınızdır. Bütünlük açısından buraya listelendikleri.<br/>
+__VS 2010__ Visual Studio 2010'da desteklenen özellikleri gösterir.<br/>
+__VS 2013__ Visual Studio 2013'te desteklenen özellikleri gösterir.<br/>
+__VS 2015__ Visual Studio 2015 için RTM'de desteklenmeyen özellikleri gösterir.<br/>
+__VS 2015.2__ ve __VS 2015.3__ Visual Studio 2015 güncelleştirme 2 ile Visual Studio 2015 güncelleştirme 3, sırasıyla desteklenmeyen özellikleri gösterir.<br/>
+__VS 2017__ Visual Studio 2017 RTM'de desteklenmeyen özellikleri gösterir.<br/>
+__VS 2017 15.3__ Visual Studio 2017 sürüm 15.3 desteklenmeyen özellikleri gösterir.<br/>
+__VS 2017 15.5__ Visual Studio 2017 sürüm 15.5 desteklenmeyen özellikleri gösterir.<br/>
+__VS 2017 15.7__ Visual Studio 2017 sürüm 15.7 sürümünde desteklenmeyen özellikleri gösterir.<br/>
 
 ### <a name="notes"></a>Notlar
 
 <a name="note_A"></a>__A__ /Std: C ++ 14 modu dinamik özel durum belirtimleri uygulanmayan kalır ve throw() eşanlamlısı olarak kabul hala \_ \_declspec(nothrow). C ++ 17'de, çıkmadan bir vestige P0003R5 tarafından çoğunlukla dinamik özel durum belirtimleri kaldırıldı: throw() kullanım dışıdır ve noexcept eşanlamlısı olarak davranır gerekmez. / Std: c ++ 17 modunda MSVC artık uyumlu standart noexcept, yani zorlama sonlandırma aracılığıyla aynı davranışı throw() vererek.
-Bizim eski davranışını derleyici seçeneği /Zc:noexceptTypes-istekleri \_ \_declspec(nothrow). C ++ 20, throw() kaldırılacak olasıdır. Geçiş konusunda yardımcı olmak için standart ve özel durum belirtimi sorunlar için yeni Derleyici uyarılarını kararlılığımızın bu değişikliklere yanıt kodu eklenmiştir altında **/Std: c ++ 17** ve **/permissive-**.  
-<a name="note_B"></a>__B__ Visual Studio 2017 sürüm 15.7 /permissive-mode desteklenen. Bkz: [MSVC için iki aşamalı ad arama desteği geldi](https://blogs.msdn.microsoft.com/vcblog/2017/09/11/two-phase-name-lookup-support-comes-to-msvc/) daha fazla bilgi için.  
-<a name="note_C"></a>__C__ Visual Studio 2015 güncelleştirme 2'den derleyicinin ifade SFINAE desteği için standart kitaplık yeterli olmuştur. Visual Studio 2017 15.7 sürümündeki /permissive-mode ayarlanma şeklinden bağımsız olarak desteklenir. Düzeltilen bazı hatalar kalır. "Benzersiz etiket türü" geçici çözüm artık gerekli değildir ve bu geçici çözüm STL kararlılığımızın kaldırdık.  
-<a name="note_D"></a>__D__ C99 önişlemci kuralları için derleyici desteği, Visual Studio 2017'de eksik. Variadic makrolar desteklenir ancak önişlemci'nin davranışını birçok hataları vardır.  Biz önişlemci elden ve bu değişiklikleri altında experimentally sevk edilir **/ permissive-** yakında modu.  
-<a name="note_E"></a>__E__ derleyiciler izin verilir, ancak, genişletilmiş tamsayı türleri desteklemek için gerekli değildir çünkü bu uygulanamaz olarak işaretlenir.  GCC ve Clang gibi biz kullanıcıyı seçtiniz.  
-<a name="note_F"></a>__F__ derleyiciler izin verilir, ancak, bu en iyi duruma getirme uygulamak için gerekli değildir çünkü benzer şekilde, bu uygulanamaz olarak işaretlenir.  
-<a name="note_G"></a>__G__ altında desteklenen [/Std: c ++ 14](./build/reference/std-specify-language-standard-version.md) suppressible bir uyarı.  
-<a name="note_J"></a>__J__ Visual Studio 2015'te tamamlanmamış özellikleri ayrıştırılmış başka bir yerde bu tabloda.  
-<a name="note_K"></a>__K__ Bu, sembolik bağlantısını desteği, hata düzeltmeleri, tarafından olmaması önceki std::experimental sürümü ile uyumlu tamamen yeni bir uygulama ve standart gerekli davranışını değiştirir. Şu anda dahil olmak üzere \<filesystem > Yeni std::filesystem ve önceki std::experimental::filesystem sağlar ve dahil olmak üzere \<Deneysel/dosya sistemi > yalnızca eski Deneysel uygulamasını sağlar. Deneysel uygulama KALDIRILACAK kitaplıkları sonraki ABI en son sürümünde.  
-<a name="note_L"></a>__M__ iç derleyici tarafından desteklenir.   
-<a name="note_14"></a>__14__ bu C ++ 17/20 özellikler her zaman etkindir, bile [/Std: c ++ 14](build/reference/std-specify-language-standard-version.md) (varsayılan) belirtilir. Başlamadan önce uygulanan bir özellik ya da olmasıdır **/Std** seçenekleri veya koşullu uygulama açabileceğinin karmaşıktı.  
-<a name="note_17"></a>__17__ bu özellikler tarafından etkinleştirilen [/Std: c ++ 17](./build/reference/std-specify-language-standard-version.md) (veya [/Std: c ++ Son](./build/reference/std-specify-language-standard-version.md)) derleyici seçeneği.  
-<a name="note_byte"></a>__bayt__ `std::byte` etkinleştirilir [/Std: c ++ 17](./build/reference/std-specify-language-standard-version.md) (veya [/Std: c ++ Son](./build/reference/std-specify-language-standard-version.md)), ancak bazı durumlarda Windows SDK'sı üst bilgileri ile çakışabileceği için ayrıntılı çevirme makro sahiptir. Bunu tanımlayarak devre dışı bırakılabilir `_HAS_STD_BYTE` olarak `0`.  
-<a name="note_C11"></a>__C11__ Evrensel CRT uygulanan C ++ 17, C99 hariç olmak üzere gerekli olan bölümleri C11 standart Kitaplığı'nın `strftime()` E/O alternatif dönüştürme tanımlayıcıları, C11 `fopen()` Dışlayıcı ve C11 `aligned_alloc()`. C11 belirttiğinden uygulanacak, olası ikincisidir `aligned_alloc()` Microsoft uygulaması ile uyumsuz şekilde `free()`, yani, `free()` yüksek oranda hizalanmış ayırma işleyebilir olması gerekir.  
-<a name="note_rem"></a>__REM__ kaldırılan Özellikler [/Std: c ++ 17](./build/reference/std-specify-language-standard-version.md) (veya [/Std: c ++ Son](./build/reference/std-specify-language-standard-version.md)) derleyici seçeneği belirtildi. Çevirme makroları bu özelliklere sahip: `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS`, ve `_HAS_UNEXPECTED`.  
-<a name="note_charconv"></a>__charconv__ from_chars() ve to_chars() tamsayılar için kullanılabilir. Kayan nokta to_chars() tarafından izlenmesi için kayan nokta from_chars(), şu anda üzerinde çalışıyoruz.  
-<a name ="note_parallel"></a> __Paralel__ C ++ 17'ın paralel algoritmalar kitaplığı tamamlanmıştır. Bu her algoritma, her durumda paralelleştirildi anlamına gelmediğini unutmayın. en önemli algoritmalar paralelleştirildi ve hatta nerede algoritmaları Paralel yürütme İlkesi imzaları sağlanır. STL kararlılığımızın 's merkezi iç başlık yvals.h, aşağıdaki "paralel algoritmalar notları" içerir: C++ seri algoritmalar yapılan çağrılar gibi paralel algoritmalar uygulamak bir uygulama sağlar.   Bu uygulama, birkaç ortak algoritma çağrılarını, ancak tüm parallelizes.  
+
+Bizim eski davranışını derleyici seçeneği /Zc:noexceptTypes-istekleri \_ \_declspec(nothrow). C ++ 20, throw() kaldırılacak olasıdır. Geçiş konusunda yardımcı olmak için standart ve özel durum belirtimi sorunlar için yeni Derleyici uyarılarını kararlılığımızın bu değişikliklere yanıt kodu eklenmiştir altında **/Std: c ++ 17** ve **/permissive-**.
+
+<a name="note_B"></a>__B__ Visual Studio 2017 sürüm 15.7 /permissive-mode desteklenen. Bkz: [MSVC için iki aşamalı ad arama desteği geldi](https://blogs.msdn.microsoft.com/vcblog/2017/09/11/two-phase-name-lookup-support-comes-to-msvc/) daha fazla bilgi için.
+
+<a name="note_C"></a>__C__ Visual Studio 2015 güncelleştirme 2'den derleyicinin ifade SFINAE desteği için standart kitaplık yeterli olmuştur. Visual Studio 2017 15.7 sürümündeki /permissive-mode ayarlanma şeklinden bağımsız olarak desteklenir. Düzeltilen bazı hatalar kalır. "Benzersiz etiket türü" geçici çözüm artık gerekli değildir ve bu geçici çözüm STL kararlılığımızın kaldırdık.
+
+<a name="note_D"></a>__D__ C99 önişlemci kuralları için derleyici desteği, Visual Studio 2017'de eksik. Variadic makrolar desteklenir ancak önişlemci'nin davranışını birçok hataları vardır.  Biz önişlemci elden ve bu değişiklikleri altında experimentally sevk edilir **/ permissive-** yakında modu.
+
+<a name="note_E"></a>__E__ derleyiciler izin verilir, ancak, genişletilmiş tamsayı türleri desteklemek için gerekli değildir çünkü bu uygulanamaz olarak işaretlenir.  GCC ve Clang gibi biz kullanıcıyı seçtiniz.
+
+<a name="note_F"></a>__F__ derleyiciler izin verilir, ancak, bu en iyi duruma getirme uygulamak için gerekli değildir çünkü benzer şekilde, bu uygulanamaz olarak işaretlenir.
+
+<a name="note_G"></a>__G__ altında desteklenen [/Std: c ++ 14](./build/reference/std-specify-language-standard-version.md) suppressible bir uyarı.
+
+<a name="note_J"></a>__J__ Visual Studio 2015'te tamamlanmamış özellikleri ayrıştırılmış başka bir yerde bu tabloda.
+
+<a name="note_K"></a>__K__ Bu, sembolik bağlantısını desteği, hata düzeltmeleri, tarafından olmaması önceki std::experimental sürümü ile uyumlu tamamen yeni bir uygulama ve standart gerekli davranışını değiştirir. Şu anda dahil olmak üzere \<filesystem > Yeni std::filesystem ve önceki std::experimental::filesystem sağlar ve dahil olmak üzere \<Deneysel/dosya sistemi > yalnızca eski Deneysel uygulamasını sağlar. Deneysel uygulama KALDIRILACAK kitaplıkları sonraki ABI en son sürümünde.
+
+<a name="note_L"></a>__M__ iç derleyici tarafından desteklenir.
+
+<a name="note_14"></a>__14__ bu C ++ 17/20 özellikler her zaman etkindir, bile [/Std: c ++ 14](build/reference/std-specify-language-standard-version.md) (varsayılan) belirtilir. Başlamadan önce uygulanan bir özellik ya da olmasıdır **/Std** seçenekleri veya koşullu uygulama açabileceğinin karmaşıktı.
+
+<a name="note_17"></a>__17__ bu özellikler tarafından etkinleştirilen [/Std: c ++ 17](./build/reference/std-specify-language-standard-version.md) (veya [/Std: c ++ Son](./build/reference/std-specify-language-standard-version.md)) derleyici seçeneği.
+
+<a name="note_byte"></a>__bayt__ `std::byte` etkinleştirilir [/Std: c ++ 17](./build/reference/std-specify-language-standard-version.md) (veya [/Std: c ++ Son](./build/reference/std-specify-language-standard-version.md)), ancak bazı durumlarda Windows SDK'sı üst bilgileri ile çakışabileceği için ayrıntılı çevirme makro sahiptir. Bunu tanımlayarak devre dışı bırakılabilir `_HAS_STD_BYTE` olarak `0`.
+
+<a name="note_C11"></a>__C11__ Evrensel CRT uygulanan C ++ 17, C99 hariç olmak üzere gerekli olan bölümleri C11 standart Kitaplığı'nın `strftime()` E/O alternatif dönüştürme tanımlayıcıları, C11 `fopen()` Dışlayıcı ve C11 `aligned_alloc()`. C11 belirttiğinden uygulanacak, olası ikincisidir `aligned_alloc()` Microsoft uygulaması ile uyumsuz şekilde `free()`, yani, `free()` yüksek oranda hizalanmış ayırma işleyebilir olması gerekir.
+
+<a name="note_rem"></a>__REM__ kaldırılan Özellikler [/Std: c ++ 17](./build/reference/std-specify-language-standard-version.md) (veya [/Std: c ++ Son](./build/reference/std-specify-language-standard-version.md)) derleyici seçeneği belirtildi. Çevirme makroları bu özelliklere sahip: `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS`, ve `_HAS_UNEXPECTED`.
+
+<a name="note_charconv"></a>__charconv__ from_chars() ve to_chars() tamsayılar için kullanılabilir. Kayan nokta to_chars() tarafından izlenmesi için kayan nokta from_chars(), şu anda üzerinde çalışıyoruz.
+
+<a name ="note_parallel"></a> __Paralel__ C ++ 17'ın paralel algoritmalar kitaplığı tamamlanmıştır. Bu her algoritma, her durumda paralelleştirildi anlamına gelmediğini unutmayın. en önemli algoritmalar paralelleştirildi ve hatta nerede algoritmaları Paralel yürütme İlkesi imzaları sağlanır. STL kararlılığımızın 's merkezi iç başlık yvals.h, aşağıdaki "paralel algoritmalar notları" içerir: C++ seri algoritmalar yapılan çağrılar gibi paralel algoritmalar uygulamak bir uygulama sağlar.   Bu uygulama, birkaç ortak algoritma çağrılarını, ancak tüm parallelizes.
 
 Aşağıdaki algoritmaları paralelleştirildi:
 
@@ -314,4 +326,4 @@ Aşağıdaki algoritmaları paralelleştirildi:
 [Visual Studio 2017'deki Visual C++ Yenilikleri](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
 [Visual C++ değişiklik geçmişi 2003-2015](porting/visual-cpp-change-history-2003-2015.md)<br/>
 [Visual C++ 2003 ile 2015 Arasındaki Farklar](porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
-[Visual C++ ekip blogu](https://blogs.msdn.microsoft.com/vcblog/)  
+[Visual C++ ekip blogu](https://blogs.msdn.microsoft.com/vcblog/)

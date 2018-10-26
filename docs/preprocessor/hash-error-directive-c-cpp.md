@@ -18,32 +18,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2da939fe52e41e122ecd4926e34fb9c4be735ae
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 143733af9003442996d9f649825f45f93643f536
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42466443"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078810"
 ---
 # <a name="error-directive-cc"></a>#error Yönergesi (C/C++)
-**#Error** yönergesi, bir kullanıcı tarafından belirtilen hata iletisini derleme zamanında yayar ve derlemeyi sona erdirir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-#errortoken-string  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- 
-Bu yönergenin yaydığı hata iletisi içerir *belirteç dizesinde* parametresi. *Belirteç dizesinde* parametresi makro genişletme uygulanmaz değil. Bu yönerge, programdaki tutarsızlıkları ya da bir kısıtlamanın ihlalini geliştiriciye bildirmek için ön işleme sırasında en çok yararlı yönergedir. Aşağıdaki örnek, ön işleme sırasında hatanın işleyişini gösterir:  
-  
-```  
-#if !defined(__cplusplus)  
-#error C++ compiler required.  
-#endif  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- 
+**#Error** yönergesi, bir kullanıcı tarafından belirtilen hata iletisini derleme zamanında yayar ve derlemeyi sona erdirir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+#errortoken-string
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu yönergenin yaydığı hata iletisi içerir *belirteç dizesinde* parametresi. *Belirteç dizesinde* parametresi makro genişletme uygulanmaz değil. Bu yönerge, programdaki tutarsızlıkları ya da bir kısıtlamanın ihlalini geliştiriciye bildirmek için ön işleme sırasında en çok yararlı yönergedir. Aşağıdaki örnek, ön işleme sırasında hatanın işleyişini gösterir:
+
+```
+#if !defined(__cplusplus)
+#error C++ compiler required.
+#endif
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
 [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)

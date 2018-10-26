@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8fc187cea874d16522955dcd46c2ceac34d29098
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c7100199d7e4ee76bf2f096aba9e20c244ae10ab
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46136172"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070575"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>Hata ayıklama ve hata raporlama makroları
 
@@ -102,7 +102,7 @@ ATLASSERT(booleanExpression);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata ayıklama yapılarında ATLASSERT değerlendirir *booleanDeyimi* ve sonucun false olduğu bir hata ayıklama raporunu oluşturur.  
+Hata ayıklama yapılarında ATLASSERT değerlendirir *booleanDeyimi* ve sonucun false olduğu bir hata ayıklama raporunu oluşturur.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -139,11 +139,11 @@ ATLENSURE ATLASSERT arasındaki fark, ATLENSURE sürüm yapılarında de hata ay
 
 ### <a name="example"></a>Örnek
 
-[!code-cpp[NVC_ATL_Utilities#108](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_1.cpp)]  
+[!code-cpp[NVC_ATL_Utilities#108](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_1.cpp)]
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afx.h  
+**Başlık:** afx.h
 
 ##  <a name="atltracenotimpl"></a>  ATLTRACENOTIMPL
 
@@ -168,7 +168,7 @@ Sürüm yapılarında yalnızca E_NOTIMPL döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atltrace.h 
+**Başlık:** atltrace.h
 
 ##  <a name="atltrace"></a>  ATLTRACE
 
@@ -177,7 +177,7 @@ Belirtilen bayraklar ve düzeylerine göre hata ayıklayıcısı penceresi gibi 
 ```
 ATLTRACE(exp);
 
-ATLTRACE(  
+ATLTRACE(
     DWORD category,
     UINT  level,
     LPCSTR lpszFormat, ...);

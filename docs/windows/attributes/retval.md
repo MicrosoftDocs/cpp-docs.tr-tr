@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e2b71271dc0579e1d0682b95a0d3bdf57d197d1a
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: ffa4b43c595bfa75d805e8896aad8c44ac6baa50
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789992"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064712"
 ---
 # <a name="retval"></a>retval
 
@@ -61,4 +61,4 @@ ms.locfileid: "48789992"
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
 [Parametre Öznitelikleri](parameter-attributes.md)<br/>
-[Yöntem Öznitelikleri](method-attributes.md)  
+[Yöntem Öznitelikleri](method-attributes.md)

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2241080fda6aa58dc5e70f57c83afec69a57203
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 57e685ea9ac4b1efc76f7657421d825b83f4a9b7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757344"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078628"
 ---
 # <a name="implementing-the-event-handling-interface"></a>Olay işleme arabirimini uygulama
 
@@ -37,7 +37,7 @@ ATL kullanarak arabirimi uygulama ile ilgili en yaygın yöntemler şunlardır:
 
 - Öğesinden türetme [Idispeventsimpleımpl](../atl/reference/idispeventsimpleimpl-class.md) için bir tür kitaplığı veya çalışma zamanında tür bilgilerini yüklenmemesi verimliliğini artırmak istediğiniz zaman açıklanmayan görüntüleme.
 
-Özel veya çift arabirim uyguluyorsanız çağırarak olay kaynağı öneri [AtlAdvise](reference/connection-point-global-functions.md#atladvise) veya [CComPtrBase::Advise](../atl/reference/ccomptrbase-class.md#advise). Kendiniz çağrı tarafından döndürülen tanımlama bilgisi izlemek gerekir. Çağrı [AtlUnadvise](reference/connection-point-global-functions.md#atlunadvise) bağlantıyı kesmek için.  
+Özel veya çift arabirim uyguluyorsanız çağırarak olay kaynağı öneri [AtlAdvise](reference/connection-point-global-functions.md#atladvise) veya [CComPtrBase::Advise](../atl/reference/ccomptrbase-class.md#advise). Kendiniz çağrı tarafından döndürülen tanımlama bilgisi izlemek gerekir. Çağrı [AtlUnadvise](reference/connection-point-global-functions.md#atlunadvise) bağlantıyı kesmek için.
 
 Bir dispinterface kullanarak uyguluyorsanız `IDispEventImpl` veya `IDispEventSimpleImpl`, olay kaynağı çağırarak öneri [IDispEventSimpleImpl::DispEventAdvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventadvise). Çağrı [IDispEventSimpleImpl::DispEventUnadvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventunadvise) bağlantıyı kesmek için.
 
@@ -48,4 +48,3 @@ Kullanıyorsanız `IDispEventImpl` bileşik denetim temel sınıf olarak listele
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Olay İşleme](../atl/event-handling-and-atl.md)
-

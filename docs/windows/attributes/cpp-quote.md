@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f3d6042866661659102090380c95e7d04e9bcd6c
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 0e67b839b487f7bb457eeadb0f4d0385b025ebc3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789867"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080604"
 ---
 # <a name="cppquote"></a>cpp_quote
 
@@ -67,4 +67,4 @@ Ayrıca **cpp_quote** ve MIDL derlemenin bir parçası bir .h dosyası oluşturu
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Tek Başına Öznitelikler](stand-alone-attributes.md)  
+[Tek Başına Öznitelikler](stand-alone-attributes.md)

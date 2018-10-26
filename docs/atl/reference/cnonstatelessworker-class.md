@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4aa07273e68f0320823d258f324bb8631aef77a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 90c50d3a918f452372aacae5beb36f5425d6a77a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46095605"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053623"
 ---
 # <a name="cnonstatelessworker-class"></a>CNonStatelessWorker sınıfı
 
@@ -75,7 +75,7 @@ Bu sınıfın avantajı var olan çalışan iş parçacığı sınıfları için
 
 ##  <a name="execute"></a>  CNonStatelessWorker::Execute
 
-Uygulamasını [WorkerArchetype::Execute](worker-archetype.md#execute).  
+Uygulamasını [WorkerArchetype::Execute](worker-archetype.md#execute).
 
 ```
 void Execute(
@@ -86,7 +86,7 @@ void Execute(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem bir örneğini oluşturur *çalışan* sınıfı çağrılar ve yığın [başlatmak](worker-archetype.md#initialize) bu nesne üzerinde. Başlatma başarılı olursa, bu yöntem ayrıca çağırır [yürütme](worker-archetype.md#execute) ve [sonlandırma](worker-archetype.md#terminate) aynı nesne üzerinde.  
+Bu yöntem bir örneğini oluşturur *çalışan* sınıfı çağrılar ve yığın [başlatmak](worker-archetype.md#initialize) bu nesne üzerinde. Başlatma başarılı olursa, bu yöntem ayrıca çağırır [yürütme](worker-archetype.md#execute) ve [sonlandırma](worker-archetype.md#terminate) aynı nesne üzerinde.
 
 ##  <a name="initialize"></a>  CNonStatelessWorker::Initialize
 

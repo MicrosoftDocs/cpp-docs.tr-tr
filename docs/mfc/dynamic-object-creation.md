@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19f6a895eb48b3ae1816edc45747c865e7e03b96
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c1b8cca1453ef4a044a39853e615c5d0e6c3268f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420159"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50051895"
 ---
 # <a name="dynamic-object-creation"></a>Dinamik Nesne Oluşturma
 
@@ -32,7 +32,7 @@ Bu makalede, nesne çalışma zamanında dinamik olarak oluşturmak açıklanmak
 
 1. Dinamik olarak kullanarak bir nesne oluşturmak için aşağıdaki kodu kullanın `CreateObject` işlevi `CRuntimeClass`. Hata durumunda unutmayın `CreateObject` döndürür **NULL** yerine bir özel durum oluşturur:
 
-     [!code-cpp[NVC_MFCCObjectSample#6](../mfc/codesnippet/cpp/dynamic-object-creation_1.cpp)]
+   [!code-cpp[NVC_MFCCObjectSample#6](../mfc/codesnippet/cpp/dynamic-object-creation_1.cpp)]
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fb2169adf5bfce3c1a66e382c79b57c8ef53ef04
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 76a0a6baec4f775d2ec4f7ca0236530125fe7973
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48790017"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083418"
 ---
 # <a name="immediatebind"></a>immediatebind
 
@@ -61,4 +61,4 @@ Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#conte
 [Yöntem Öznitelikleri](method-attributes.md)<br/>
 [defaultbind](defaultbind.md)<br/>
 [displaybind](displaybind.md)<br/>
-[requestedit](requestedit.md)  
+[requestedit](requestedit.md)

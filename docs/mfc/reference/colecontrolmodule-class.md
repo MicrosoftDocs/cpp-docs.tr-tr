@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8139f9d2249e2ed4293c5aad7c87f4f59142b393
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 83c7e9bc265870e6099c231f8e15ec5e37902c55
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389002"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069301"
 ---
 # <a name="colecontrolmodule-class"></a>COleControlModule sınıfı
 
@@ -62,6 +62,4 @@ Kullanma hakkında daha fazla bilgi için `COleControlModule` sınıfı [CWinApp
 
 [MFC örnek TESTHELP](../../visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-
-
 

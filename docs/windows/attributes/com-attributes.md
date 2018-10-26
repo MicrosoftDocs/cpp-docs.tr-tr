@@ -17,17 +17,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 83d518aded30215684970e58d2868625fb8cd0e5
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 2aa88f88fe26b96202f2a917bddf5c8bb07c0d3c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48790006"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071134"
 ---
 # <a name="com-attributes"></a>COM Öznitelikleri
 
 COM öznitelikleri COM Geliştirme ve .NET Framework ortak dil çalışma zamanı geliştirme çeşitli alanlarını desteklemek için kod ekleyin. Stok özellikleri, yöntemleri ve olayları desteklemek için bu alanları aralığından özel arabirim uygulama ve Destek arabirimlerin mevcut. Ayrıca, bileşik ve ActiveX denetimi uygulama için destek bulunabilir.
-  
+
 |Öznitelik|Açıklama|
 |---------------|-----------------|
 |[toplanabilir](aggregatable.md)|Bir denetimi başka bir denetim tarafından toplanabilir gösterir.|
@@ -41,9 +41,9 @@ COM öznitelikleri COM Geliştirme ve .NET Framework ortak dil çalışma zaman�
 |[requires_category](requires-category.md)|Sınıfı için gerekli bileşen kategorilerini belirtir.|
 |[support_error_info](support-error-info.md)|Hata raporlama için hedef nesne destekler.|
 |[synchronize](synchronize.md)|Bir yönteme erişimi eşitler.|
-|[İş parçacığı oluşturma](threading-cpp.md)|Bir COM nesnesi için iş parçacığı modelini belirtir.|
+|[threading](threading-cpp.md)|Bir COM nesnesi için iş parçacığı modelini belirtir.|
 |[vi_progid](vi-progid.md)|Bir denetimi için sürüm bağımsız bir ProgID tanımlar.|
-  
+
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Gruplara Göre Öznitelikler](attributes-by-group.md)

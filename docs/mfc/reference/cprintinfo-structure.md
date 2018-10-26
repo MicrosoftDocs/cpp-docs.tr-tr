@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b12c93375618cacf25e88ecba6919808ac7bd705
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b8c1fb4d82bd1aaeb9f625fea66aa339a0ef4d97
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446865"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082898"
 ---
 # <a name="cprintinfo-structure"></a>Cprintınfo yapısı
 
@@ -94,7 +94,6 @@ Yazdırılacak ilk sayfa sayısını almak için bu işlevi çağırın.
 ```
 UINT GetFromPage() const;
 
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -111,7 +110,6 @@ Belgenin son sayfa numarası almak için bu işlevi çağırın.
 
 ```
 UINT GetMaxPage() const;
-
 
 ```
 
@@ -130,7 +128,6 @@ Bu değer depolanan `CPrintDialog` tarafından başvurulan nesne `m_pPD` üyesi.
 ```
 UINT GetMinPage() const;
 
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -148,7 +145,6 @@ DocObject istemciden birden çok DocObject öğesini yazdırmayı zaman uzaklı�
 ```
 UINT GetOffsetPage() const;
 
-
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -165,7 +161,6 @@ Yazdırılacak son sayfa numarası almak için bu işlevi çağırın.
 
 ```
 UINT GetToPage() const;
-
 
 ```
 
@@ -345,6 +340,4 @@ Sayfa numarası, normalde 1'den başlar. Bu değer depolanan `CPrintDialog` tara
 [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc)<br/>
 [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting)<br/>
 [CView::OnPrint](../../mfc/reference/cview-class.md#onprint)
-
-
 

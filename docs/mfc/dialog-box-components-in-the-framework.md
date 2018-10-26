@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fb72e2961eec53b2dea8e37cfc39ccbcc0c5f27
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6936a48d1a3e1845d56c73524c84800d9d605155
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397175"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065518"
 ---
 # <a name="dialog-box-components-in-the-framework"></a>Framework'te İletişim Kutusu Bileşenleri
 
@@ -31,11 +31,11 @@ MFC çerçevesi içinde bir iletişim kutusu iki bileşenden oluşur:
 
 - İletişim kutusunun denetimleri ve bunların yerleştirme belirten bir iletişim şablonunu kaynağıdır.
 
-     İletişim kaynağını Windows iletişim kutusu penceresini oluşturur ve görüntüler, bir iletişim şablonunu depolar. Şablonu, boyutunu, konumu, stil ve türleri ve iletişim kutusunun denetimleri konumlarını dahil olmak üzere, iletişim kutusunun özelliklerini belirtir. Genellikle, bir kaynak olarak depolanan bir iletişim şablonunu kullanır, ancak ayrıca bellekte kendi şablonunuzu oluşturabilirsiniz.
+   İletişim kaynağını Windows iletişim kutusu penceresini oluşturur ve görüntüler, bir iletişim şablonunu depolar. Şablonu, boyutunu, konumu, stil ve türleri ve iletişim kutusunun denetimleri konumlarını dahil olmak üzere, iletişim kutusunun özelliklerini belirtir. Genellikle, bir kaynak olarak depolanan bir iletişim şablonunu kullanır, ancak ayrıca bellekte kendi şablonunuzu oluşturabilirsiniz.
 
 - Bir iletişim kutusu sınıfı türetilen [CDialog](../mfc/reference/cdialog-class.md), iletişim kutusu yönetmek için bir programlama arabirimi sağlar.
 
-     Bir iletişim kutusu, bir pencere ve bir Windows penceresi görünür olduğunda eklenir. İletişim kutusu penceresi oluşturulurken iletişim şablon kaynağı alt iletişim kutusu için pencere denetimleri oluşturmak için şablon olarak kullanılır.
+   Bir iletişim kutusu, bir pencere ve bir Windows penceresi görünür olduğunda eklenir. İletişim kutusu penceresi oluşturulurken iletişim şablon kaynağı alt iletişim kutusu için pencere denetimleri oluşturmak için şablon olarak kullanılır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d1c022a48ef5510f67355af3af1ff0a0e98ad4c4
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: b46aa139ca26b163c69fedcd0f5c941f7e952a2d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789863"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073974"
 ---
 # <a name="importidl"></a>importidl
 
@@ -73,5 +73,5 @@ Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#conte
 [Tek Başına Öznitelikler](stand-alone-attributes.md)<br/>
 [import](import.md)<br/>
 [importlib](importlib.md)<br/>
-[İçerir](include-cpp.md)<br/>
-[includelib](includelib-cpp.md)  
+[include](include-cpp.md)<br/>
+[includelib](includelib-cpp.md)

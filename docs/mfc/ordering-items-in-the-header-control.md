@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f446eb557fab4f4ff6396042e832e4584546bd96
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 60139821c1b15673fac0fb8f9ec3925cbfa6dc31
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416831"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052103"
 ---
 # <a name="ordering-items-in-the-header-control"></a>Üstbilgi Denetimindeki Öğeleri Sıralama
 
@@ -35,11 +35,11 @@ Kaydederler [bir üstbilgi denetimine öğe eklendiğinde](../mfc/adding-items-t
 
 - [CHeaderCtrl::GetOrderArray](../mfc/reference/cheaderctrl-class.md#getorderarray) ve [CHeaderCtrl::SetOrderArray](../mfc/reference/cheaderctrl-class.md#setorderarray)
 
-     Alır ve üstbilgi öğeleri soldan sağa sırasını ayarlar.
+   Alır ve üstbilgi öğeleri soldan sağa sırasını ayarlar.
 
 - [CHeaderCtrl::OrderToIndex](../mfc/reference/cheaderctrl-class.md#ordertoindex).
 
-     Özel üstbilgi öğesi için dizin değerini alır.
+   Özel üstbilgi öğesi için dizin değerini alır.
 
 Önceki üye işlevlerinin yanı sıra HDS_DRAGDROP stili kullanıcının üstbilgi denetimindeki üstbilgi öğeleri sürükleyip izin verir. Daha fazla bilgi için [üstbilgi öğeleri için sürükle ve bırak desteği sağlama](../mfc/providing-drag-and-drop-support-for-header-items.md).
 

@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f279472e0783498b3d175ab55c605fa7c7e7286b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b8687826734439532ecc429f6ecd61adf4aeb4ca
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416922"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077263"
 ---
 # <a name="coleinsertdialog-class"></a>Coleınsertdialog sınıfı
 
@@ -172,7 +172,6 @@ OLE Insert Object iletişim kutusunu görüntülemek için bu işlevi çağırı
 ```
 virtual INT_PTR
     DoModal();
-
 
 INT_PTR
     DoModal(DWORD  dwFlags);

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a14a45341645feeb0b85f92379702c9fc40c9d0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 010afb3939afcb392d38cda8dfb1ab1a37100d3b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381733"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083379"
 ---
 # <a name="collection-class-helpers"></a>Koleksiyon Sınıfı Yardımcıları
 
@@ -152,7 +152,6 @@ Dökümü öğe sayısı.
 `CArray::Dump`, `CList::Dump`, Ve `CMap::Dump` işlevlerini çağıran, bu, döküm derinliği 0'dan büyükse.
 
 Varsayılan uygulama, hiçbir şey yapmaz. Koleksiyon öğelerini türetilmiştir, `CObject`, geçersiz kılma genellikle koleksiyonun öğeleri yineleme çağırma `Dump` sırayla her öğe için.
-
 
 ### <a name="requirements"></a>Gereksinimler
 

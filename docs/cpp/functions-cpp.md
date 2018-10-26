@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aacbb7709daf6952f00276663e20131e967a554d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 24eded7bac023bd2291e0c574012f72ba86b6bcf
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022366"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053805"
 ---
 # <a name="functions-c"></a>İşlevler [C++]
 
@@ -101,7 +101,7 @@ Bir işlev bildirimi gerekli bölümleri şunlardır:
 
     ```
 
-     Daha fazla bilgi için [Program ve bağlantı](../cpp/program-and-linkage-cpp.md).
+   Daha fazla bilgi için [Program ve bağlantı](../cpp/program-and-linkage-cpp.md).
 
 1. **Satır içi**, derleyiciye işlev yapılan her çağrı, işlev kodunu değiştirin bildirir. Satır içi kullanım can burada bir işlev hızlı bir şekilde yürütür ve performans açısından kritik bir kod bölümünde tekrarlanarak çağrılır senaryolarda performansı yardımcı olur.
 
@@ -112,7 +112,7 @@ Bir işlev bildirimi gerekli bölümleri şunlardır:
     }
     ```
 
-     Daha fazla bilgi için [satır içi işlevleri](../cpp/inline-functions-cpp.md).
+   Daha fazla bilgi için [satır içi işlevleri](../cpp/inline-functions-cpp.md).
 
 1. A `noexcept` işlev bir özel durum olup olmadığını belirten bir ifade. Aşağıdaki örnekte, bir özel durum işlevi, oluşturmaz `is_pod` ifadeyi hesaplar için **true**.
 
@@ -123,7 +123,7 @@ Bir işlev bildirimi gerekli bölümleri şunlardır:
     T copy_object(T& obj) noexcept(std::is_pod<T>) {...}
     ```
 
-     Daha fazla bilgi için [noexcept](../cpp/noexcept-cpp.md).
+   Daha fazla bilgi için [noexcept](../cpp/noexcept-cpp.md).
 
 1. (Yalnızca üye işlevleri) Cv işlevi olup olmadığını belirten niteleyicileri, **const** veya **geçici**.
 
@@ -263,7 +263,6 @@ auto Add(const Lhs& lhs, const Rhs& rhs) -> decltype(lhs + rhs)
 ```
 
 Zaman **otomatik** kullanılan bitiş dönüş türü ile birlikte, yalnızca bir yer tutucu olarak hangi decltype ifade üretir için kullanılır ve kendisi türü çıkarma gerçekleştirir.
-
 
 ## <a name="function-local-variables"></a>İşlevi yerel değişkenler
 

@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af215609ac9579a357539a0d2d0a85c78f6dbc13
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8a64a0c047c39b7c8e1f72a4762217af789481f2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017969"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062879"
 ---
 # <a name="cdynamicchain-class"></a>CDynamicChain sınıfı
 
@@ -93,7 +93,7 @@ Burada `chainedObj` zincirleme nesnesi ve bir türetilen bir sınıf örneğini 
 Windows ileti başka bir nesnenin ileti eşlemesi için yönlendirir.
 
 ```
-BOOL CallChain(  
+BOOL CallChain(
     DWORD dwChainID,
     HWND hWnd,
     UINT uMsg,
@@ -174,7 +174,7 @@ BOOL RemoveChainEntry(DWORD dwChainID);
 Belirtilen ileti eşlemesi koleksiyona ekler.
 
 ```
-BOOL SetChainEntry(  
+BOOL SetChainEntry(
     DWORD dwChainID,
     CMessageMap* pObject,
     DWORD dwMsgMapID = 0);

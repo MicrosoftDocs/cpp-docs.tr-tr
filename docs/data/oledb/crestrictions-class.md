@@ -24,88 +24,88 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2e850b5ebad231b07ce7d6c7dca79126a9b2ba15
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: a4ea0536a8af87927521f88d888e19aa145f2c04
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082364"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072076"
 ---
 # <a name="crestrictions-class"></a>CRestrictions Sınıfı
 
-Şema satır kümeleri için kısıtlamaları belirlemenizi sağlayan genel bir sınıf.  
-  
+Şema satır kümeleri için kısıtlamaları belirlemenizi sağlayan genel bir sınıf.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-template <class T, short nRestrictions, const GUID* pguid>  
-class CRestrictions : 
-   public CSchemaRowset <T, nRestrictions>  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+template <class T, short nRestrictions, const GUID* pguid>
+class CRestrictions :
+   public CSchemaRowset <T, nRestrictions>
+```
+
+### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Erişimci için kullanılan sınıf.  
-  
+Erişimci için kullanılan sınıf.
+
 *nRestrictions*<br/>
-Şema satır kümesi için kısıtlama sütun sayısı.  
-  
+Şema satır kümesi için kısıtlama sütun sayısı.
+
 *pguid*<br/>
-GUID şema için bir işaretçi.  
+GUID şema için bir işaretçi.
 
-## <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbsch.h 
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="methods"></a>Yöntemler  
-  
-|||  
-|-|-|  
-|[açın](#open)|Kullanıcı tarafından sağlanan kısıtlamalar göre bir sonuç döndürür.|   
+**Başlık:** atldbsch.h
+
+## <a name="members"></a>Üyeler
+
+### <a name="methods"></a>Yöntemler
+
+|||
+|-|-|
+|[açın](#open)|Kullanıcı tarafından sağlanan kısıtlamalar göre bir sonuç döndürür.|
 
 ## <a name="open"></a> CRestrictions::Open
 
-Kullanıcı tarafından sağlanan kısıtlamalar göre bir sonuç döndürür.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Kullanıcı tarafından sağlanan kısıtlamalar göre bir sonuç döndürür.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-HRESULT Open(const CSession& session,  
-   LPCTSTR lpszParam 1 = NULL,  
-   LPCTSTR lpszParam 2 = NULL,  
-   LPCTSTR lpszParam 3 = NULL,  
-   LPCTSTR lpszParam 4 = NULL,  
-   LPCTSTR lpszParam 5 = NULL,  
-   LPCTSTR lpszParam 6 = NULL,  
-   LPCTSTR lpszParam 7 = NULL,  
-   bool bBind = true);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+HRESULT Open(const CSession& session,
+   LPCTSTR lpszParam 1 = NULL,
+   LPCTSTR lpszParam 2 = NULL,
+   LPCTSTR lpszParam 3 = NULL,
+   LPCTSTR lpszParam 4 = NULL,
+   LPCTSTR lpszParam 5 = NULL,
+   LPCTSTR lpszParam 6 = NULL,
+   LPCTSTR lpszParam 7 = NULL,
+   bool bBind = true);
+```
+
+#### <a name="parameters"></a>Parametreler
 
 *Oturumu*<br/>
-[in] Veri kaynağına bağlanmak için kullanılan var olan bir oturum nesnesi olarak belirtir.  
-  
+[in] Veri kaynağına bağlanmak için kullanılan var olan bir oturum nesnesi olarak belirtir.
+
 *lpszParam*<br/>
-[in] Şema satır kümesi kısıtlamaları belirtir.  
-  
+[in] Şema satır kümesi kısıtlamaları belirtir.
+
 *bBind*<br/>
-[in] Sütun eşlemesi otomatik olarak bağlamak belirtir. Varsayılan değer **true**, otomatik olarak bağlanacak sütun eşlemesi neden olur. Ayarı *bBind* için **false** el ile bağlayabilirsiniz böylece sütun eşlemesi otomatik bağlama engeller. (El ile OLAP kullanıcılara belirli ilgilenilen bağlamadır.)  
-  
-### <a name="return-value"></a>Dönüş Değeri  
+[in] Sütun eşlemesi otomatik olarak bağlamak belirtir. Varsayılan değer **true**, otomatik olarak bağlanacak sütun eşlemesi neden olur. Ayarı *bBind* için **false** el ile bağlayabilirsiniz böylece sütun eşlemesi otomatik bağlama engeller. (El ile OLAP kullanıcılara belirli ilgilenilen bağlamadır.)
 
-Standart HRESULT değerlerinden biri.  
-  
-### <a name="remarks"></a>Açıklamalar  
+### <a name="return-value"></a>Dönüş Değeri
 
-Şema satır kümesinde en fazla yedi kısıtlamaları belirtebilirsiniz.  
-  
-Bkz: [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) her şeması satır kümesi tanımlanmış kısıtlamalar hakkında bilgi için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Standart HRESULT değerlerinden biri.
+
+### <a name="remarks"></a>Açıklamalar
+
+Şema satır kümesinde en fazla yedi kısıtlamaları belirtebilirsiniz.
+
+Bkz: [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) her şeması satır kümesi tanımlanmış kısıtlamalar hakkında bilgi için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

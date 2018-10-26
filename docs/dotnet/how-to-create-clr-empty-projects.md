@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: e76b1c8be4e180136c4c1ff3de3e4801770bce92
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7b6a915dbe9904a7bbe56e8ba1100631bd954d86
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437697"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071173"
 ---
 # <a name="how-to-create-clr-empty-projects"></a>Nasıl yapılır: Boş CLR Projeleri Oluşturma
 
@@ -34,7 +34,7 @@ CLR boş proje oluşturmak için kullanın **CLR boş proje** kullanılabilir ş
 
 1. Üzerinde **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.
 
-     **Yeni proje** iletişim kutusu görüntülenir.
+   **Yeni proje** iletişim kutusu görüntülenir.
 
 1. Altında **yüklü şablonlar**, tıklayın **Visual C++** düğüm; ardından **CLR** düğümü. Seçin **CLR boş proje** simgesi.
 

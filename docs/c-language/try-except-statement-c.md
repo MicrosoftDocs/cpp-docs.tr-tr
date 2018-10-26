@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f367bd5d9e61d44c24a876bf1d69ad24406d0630
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 957b76b6b39586016e9ed7b921b7bfa51a1fdf34
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46036221"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075144"
 ---
 # <a name="try-except-statement-c"></a>try-except Deyimi (C)
 
@@ -49,11 +49,11 @@ Sonra gelen bileşik deyim `__try` yan tümcesi ise korunan bölümün. `__excep
 
 1. Özel bir durum oluştuğunda korunan bölümün yürütülmesi sırasında veya korunan bölümün çağırdığı herhangi bir yordamda `__except` ifade değerlendirilir ve döndürülen değer özel durumun nasıl işlendiğini belirler. Üç değer vardır:
 
-     `EXCEPTION_CONTINUE_SEARCH` Özel durum tanınmıyor. Yığında bir işleyici ilk içeren için aramaya devam edin **deneyin-dışında** deyimleri, ardından sonraki en yüksek önceliğe sahip işleyicileri için.
+   `EXCEPTION_CONTINUE_SEARCH` Özel durum tanınmıyor. Yığında bir işleyici ilk içeren için aramaya devam edin **deneyin-dışında** deyimleri, ardından sonraki en yüksek önceliğe sahip işleyicileri için.
 
-     `EXCEPTION_CONTINUE_EXECUTION` Özel durum kabul edilen ancak kapatıldı. Yürütmeye, özel durumun gerçekleştiği noktadan devam edin.
+   `EXCEPTION_CONTINUE_EXECUTION` Özel durum kabul edilen ancak kapatıldı. Yürütmeye, özel durumun gerçekleştiği noktadan devam edin.
 
-     `EXCEPTION_EXECUTE_HANDLER` Özel durum tanınır. Yürüterek denetimi özel durum işleyicisine aktarma `__except` bileşik deyim, sonra yürütme özel durumun oluştuğu noktadan devam edin.
+   `EXCEPTION_EXECUTE_HANDLER` Özel durum tanınır. Yürüterek denetimi özel durum işleyicisine aktarma `__except` bileşik deyim, sonra yürütme özel durumun oluştuğu noktadan devam edin.
 
 Çünkü `__except` ifadesi C ifadesi olarak değerlendirildiği, tek bir değer, koşullu ifade işleci veya virgül işlecinin sınırlıdır. Daha kapsamlı bir işlem gerekliyse, ifade yukarıda listelenen üç değerden birini döndüren bir yordam çağırabilir.
 

@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19e08d1544a23ad1272bde5066a63f37b1e511fd
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 98f6154f8eed0d192189d0907cb7dc7ae6642439
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100930"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067689"
 ---
 # <a name="numput-class"></a>num_put Sınıfı
 
@@ -104,13 +104,11 @@ virtual iter_type do_put(
     _Elem _Fill,
     bool val) const;
 
-
 virtual iter_type do_put(
     iter_type dest,
     ios_base& _Iosbase,
     _Elem _Fill,
     long val) const;
-
 
 virtual iter_type do_put(
     iter_type dest,
@@ -118,13 +116,11 @@ virtual iter_type do_put(
     _Elem _Fill,
     unsigned long val) const;
 
-
 virtual iter_type do_put(
     iter_type dest,
     ios_base& _Iosbase,
     _Elem _Fill,
     double val) const;
-
 
 virtual iter_type do_put(
     iter_type dest,
@@ -132,13 +128,11 @@ virtual iter_type do_put(
     _Elem _Fill,
     long double val) const;
 
-
 virtual iter_type do_put(
     iter_type dest,
     ios_base& _Iosbase,
     _Elem _Fill,
     const void* val) const;
-
 
 virtual iter_type do_put(
     iter_type dest,
@@ -352,13 +346,11 @@ iter_type put(
     _Elem _Fill,
     bool val) const;
 
-
 iter_type put(
     iter_type dest,
     ios_base& _Iosbase,
     _Elem _Fill,
     long val) const;
-
 
 iter_type put(
     iter_type dest,
@@ -366,13 +358,11 @@ iter_type put(
     _Elem _Fill,
     unsigned long val) const;
 
-
 iter_type put(
     iter_type dest,
     ios_base& _Iosbase,
     _Elem _Fill,
     Long long val) const;
-
 
 iter_type put(
     iter_type dest,
@@ -380,20 +370,17 @@ iter_type put(
     _Elem _Fill,
     Unsigned long long val) const;
 
-
 iter_type put(
     iter_type dest,
     ios_base& _Iosbase,
     _Elem _Fill,
     double val) const;
 
-
 iter_type put(
     iter_type dest,
     ios_base& _Iosbase,
     _Elem _Fill,
     long double val) const;
-
 
 iter_type put(
     iter_type dest,

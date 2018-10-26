@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 451cf4b404143ce8f9b94481dd27227f487874d0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b66debe5c6401b4eee01bc81acc58b8445e20c21
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381172"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068781"
 ---
 # <a name="mfc-activex-controls-licensing-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Lisanslama
 
@@ -84,15 +84,15 @@ Bu üye işlevleri şunlardır:
 
 - [VerifyUserLicense](../mfc/reference/coleobjectfactory-class.md#verifyuserlicense)
 
-     Denetimin denetimi lisans dosyasının varlığı için sistemi kontrol ederek tasarım zamanı kullanım izin doğrular. Bu işlev, işleme bir parçası olarak çerçeve tarafından çağrılır `IClassFactory2::GetLicInfo` ve `IClassFactory::CreateInstanceLic`.
+   Denetimin denetimi lisans dosyasının varlığı için sistemi kontrol ederek tasarım zamanı kullanım izin doğrular. Bu işlev, işleme bir parçası olarak çerçeve tarafından çağrılır `IClassFactory2::GetLicInfo` ve `IClassFactory::CreateInstanceLic`.
 
 - [GetLicenseKey](../mfc/reference/coleobjectfactory-class.md#getlicensekey)
 
-     Benzersiz bir anahtar DLL denetiminden ister. Bu anahtar kapsayıcısı uygulamaya ve daha sonra birlikte kullanılan `VerifyLicenseKey`, denetimin bir örneği oluşturulamadı. Bu işlev, işleme bir parçası olarak çerçeve tarafından çağrılır `IClassFactory2::RequestLicKey`.
+   Benzersiz bir anahtar DLL denetiminden ister. Bu anahtar kapsayıcısı uygulamaya ve daha sonra birlikte kullanılan `VerifyLicenseKey`, denetimin bir örneği oluşturulamadı. Bu işlev, işleme bir parçası olarak çerçeve tarafından çağrılır `IClassFactory2::RequestLicKey`.
 
 - [VerifyLicenseKey](../mfc/reference/coleobjectfactory-class.md#verifylicensekey)
 
-     Katıştırılmış anahtar ve denetimin benzersiz anahtar aynı olduğunu doğrular. Bu denetim kullanımı için bir örneğini oluşturmak kapsayıcı sağlar. Bu işlev, işleme bir parçası olarak çerçeve tarafından çağrılır `IClassFactory2::CreateInstanceLic` ve özelleştirilmiş lisans anahtarı sağlamak için geçersiz kılınabilir. Varsayılan uygulama, bir dize karşılaştırma gerçekleştirir. Daha fazla bilgi için [bir ActiveX denetimini lisanslama özelleştirme](#_core_customizing_the_licensing_of_an_activex_control), bu makalenin ilerleyen bölümlerinde.
+   Katıştırılmış anahtar ve denetimin benzersiz anahtar aynı olduğunu doğrular. Bu denetim kullanımı için bir örneğini oluşturmak kapsayıcı sağlar. Bu işlev, işleme bir parçası olarak çerçeve tarafından çağrılır `IClassFactory2::CreateInstanceLic` ve özelleştirilmiş lisans anahtarı sağlamak için geçersiz kılınabilir. Varsayılan uygulama, bir dize karşılaştırma gerçekleştirir. Daha fazla bilgi için [bir ActiveX denetimini lisanslama özelleştirme](#_core_customizing_the_licensing_of_an_activex_control), bu makalenin ilerleyen bölümlerinde.
 
 ###  <a name="_core_header_file_modifications"></a> Üstbilgi dosya değişiklikleri
 

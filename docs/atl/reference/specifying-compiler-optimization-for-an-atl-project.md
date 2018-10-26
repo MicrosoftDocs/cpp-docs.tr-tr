@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 622c0720f55e638d6640094f095e59d2d5e5f931
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f756da8f553d68e89dcbee737adbab75f256ae8d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069345"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053129"
 ---
 # <a name="specifying-compiler-optimization-for-an-atl-project"></a>ATL projesinde derleyici iyileştirmesi belirtme
 
@@ -51,7 +51,7 @@ _ATL_DISABLE_NO_VTABLE tanımlamazsanız için ATL_NO_VTABLE makro genişler `de
 
 ATL_NO_VTABLE, kullanmanız gerekir ve dolayısıyla `declspec(novtable)`, doğrudan oluşturulabilir olmayan taban sınıfına sahip. Değil kullanmalısınız `declspec(novtable)` projenizde, en çok türetilen sınıf ile çünkü bu sınıf (genellikle [CComObject](../../atl/reference/ccomobject-class.md), [CComAggObject](../../atl/reference/ccomaggobject-class.md), veya [CComPolyObject](../../atl/reference/ccompolyobject-class.md)) projeniz için vtable işaretçi başlatır.
 
-Sanal işlevler kullanan herhangi bir nesnenin oluşturucudan çağırmamalıdır `declspec(novtable)`. Bu çağrılar için taşımalısınız [FinalConstruct](ccomobjectrootex-class.md#finalconstruct) yöntemi.  
+Sanal işlevler kullanan herhangi bir nesnenin oluşturucudan çağırmamalıdır `declspec(novtable)`. Bu çağrılar için taşımalısınız [FinalConstruct](ccomobjectrootex-class.md#finalconstruct) yöntemi.
 
 Kullanıp emin değilseniz `declspec(novtable)` değiştiricisi, bir sınıf tanımından ATL_NO_VTABLE makrosu kaldırabilir veya genel olarak belirterek devre dışı
 

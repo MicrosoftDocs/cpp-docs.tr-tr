@@ -11,12 +11,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d411269794e3588f1273844d54f7d5d5f4dbdf88
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 5f8aa68a3a8bd94bf97f6e9a517c3f17c03ccaa5
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107074"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062710"
 ---
 # <a name="platformweakreference-class"></a>Platform::WeakReference sınıfı
 
@@ -127,6 +127,7 @@ WeakReference(const WeakReference& otherArg);
 WeakReference(WeakReference&& otherArg);
 explicit WeakReference(const volatile ::Platform::Object^ const otherArg);
 ```
+
 ### <a name="example"></a>Örnek
 
 ```cpp

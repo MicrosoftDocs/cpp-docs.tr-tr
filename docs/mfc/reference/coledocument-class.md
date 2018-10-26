@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42ec82a1f0aa025b8de938d30117032bd666d8bb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 95c528ca21d0f458fe67908322ac622ad26e55e0
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403181"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077510"
 ---
 # <a name="coledocument-class"></a>COleDocument sınıfı
 
@@ -558,6 +558,4 @@ Bu belgedeki yerel veri değiştirilmemiş olsa bile belge kapatmadan önce kayd
 [MFC örnek MFCBIND](../../visual-cpp-samples.md)<br/>
 [CDocument Sınıfı](../../mfc/reference/cdocument-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
-
-
 

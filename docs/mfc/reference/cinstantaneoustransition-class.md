@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e984bb3d616596d0e6c9439fa3096ba23059caae
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 46fe01c3382f5f3667cbe909a5fb796bbb8ccc6f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428141"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062463"
 ---
 # <a name="cinstantaneoustransition-class"></a>Cınstantaneoustransition sınıfı
 
@@ -102,7 +102,6 @@ virtual BOOL Create(
 
 *pLibrary*<br/>
 Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), standart geçişleri kitaplığını tanımlar.
-
 
 ### <a name="return-value"></a>Dönüş Değeri
 

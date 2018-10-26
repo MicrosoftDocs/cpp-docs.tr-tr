@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02a8ae81ea94c47cd11beae0b3ed0eacee77db07
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 22da29fa98985d00cad9f53c0b80f05a699ead88
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386307"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081693"
 ---
 # <a name="cdialogex-class"></a>CDialogEx sınıfı
 
@@ -88,7 +88,6 @@ CDialogEx(
     UINT nIDTemplate,
     CWnd* pParent=NULL);
 
-
 CDialogEx(
     LPCTSTR lpszTemplateName,
     CWnd* pParentWnd=NULL);
@@ -142,7 +141,6 @@ void SetBackgroundImage(
     BackgroundLocation location=BACKGR_TILE,
     BOOL bAutoDestroy=TRUE,
     BOOL bRepaint=TRUE);
-
 
 BOOL SetBackgroundImage(
     UINT uiBmpResId,

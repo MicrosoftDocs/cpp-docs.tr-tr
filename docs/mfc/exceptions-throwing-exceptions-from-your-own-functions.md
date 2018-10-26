@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6ef86f54442031b4383e6a0b8cc6f57e4e53d58
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a26bd11c2a37e3644333a95ed03d9182f7b32b87
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418430"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066116"
 ---
 # <a name="exceptions-throwing-exceptions-from-your-own-functions"></a>Özel Durumlar: Kendi İşlevlerinizden Özel Durum Atma
 
@@ -33,19 +33,19 @@ Bir özel durum oluştuğunda yürütme geçerli işlevin durdurulur ve doğruda
 
 1. MFC yardımcı işlevleri gibi birini `AfxThrowMemoryException`. Bu işlevler, uygun türde bir ön tahsis özel durum nesnesi atar.
 
-     Aşağıdaki örnekte, bir işlev, iki bellek blokları ayırmaya çalışır ve her iki ayırma başarısız olursa bir özel durum oluşturur:
+   Aşağıdaki örnekte, bir işlev, iki bellek blokları ayırmaya çalışır ve her iki ayırma başarısız olursa bir özel durum oluşturur:
 
-     [!code-cpp[NVC_MFCExceptions#17](../mfc/codesnippet/cpp/exceptions-throwing-exceptions-from-your-own-functions_1.cpp)]
+   [!code-cpp[NVC_MFCExceptions#17](../mfc/codesnippet/cpp/exceptions-throwing-exceptions-from-your-own-functions_1.cpp)]
 
-     İlk ayırma başarısız olursa, yetersiz bellek özel durum yeterlidir. İlk ayırma başarılı olur ancak ikincisi başarısız olursa, özel durum atmadan önce ilk ayırma öbeğini serbest gerekir. Her iki ayırma başarılı olursa, normal şekilde devam etmek ve işlev çıkarken blokları serbest.
+   İlk ayırma başarısız olursa, yetersiz bellek özel durum yeterlidir. İlk ayırma başarılı olur ancak ikincisi başarısız olursa, özel durum atmadan önce ilk ayırma öbeğini serbest gerekir. Her iki ayırma başarılı olursa, normal şekilde devam etmek ve işlev çıkarken blokları serbest.
 
      - veya -
 
 1. Kullanıcı tanımlı bir özel durum bir sorun koşulu belirtmek için kullanın. Tüm bir sınıf bile, her tür bir öğe, özel durum oluşturabilecek.
 
-     Aşağıdaki örnek, wave aygıttan Çıkart dener ve bir hata varsa, bir özel durum oluşturur.
+   Aşağıdaki örnek, wave aygıttan Çıkart dener ve bir hata varsa, bir özel durum oluşturur.
 
-     [!code-cpp[NVC_MFCExceptions#18](../mfc/codesnippet/cpp/exceptions-throwing-exceptions-from-your-own-functions_2.cpp)]
+   [!code-cpp[NVC_MFCExceptions#18](../mfc/codesnippet/cpp/exceptions-throwing-exceptions-from-your-own-functions_2.cpp)]
 
 > [!NOTE]
 >  MFC'nin varsayılan özel durumların işlenmesiyle uygulandığı yalnızca işaretçiler `CException` nesneleri (ve nesnelerin `CException`-türetilmiş sınıflar). Yukarıdaki örnekte, özel durum mekanizması MFC'nin atlar.

@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9783eb0e4468f154591676dc46ed9342082d8512
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4ae69ad1629868a1001f9caa477c75d4f6ab5e61
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396476"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065050"
 ---
 # <a name="cpanedialog-class"></a>CPaneDialog sınıfı
 
@@ -102,7 +102,6 @@ BOOL Create(
     DWORD dwTabbedStyle= AFX_CBRS_REGULAR_TABS,
     DWORD dwControlBarStyle=AFX_DEFAULT_DOCKING_PANE_STYLE);
 
-
 BOOL Create(
     LPCTSTR lpszWindowName,
     CWnd* pParentWnd,
@@ -111,13 +110,11 @@ BOOL Create(
     UINT nStyle,
     UINT nID);
 
-
 BOOL Create(
     CWnd* pParentWnd,
     LPCTSTR lpszTemplateName,
     UINT nStyle,
     UINT nID);
-
 
 BOOL Create(
     CWnd* pParentWnd,
@@ -221,6 +218,4 @@ Bu yöntem destekler [COccManager](../../mfc/reference/coccmanager-class.md) OLE
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [CDockablePane Sınıfı](../../mfc/reference/cdockablepane-class.md)<br/>
 [Pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles)
-
-
 

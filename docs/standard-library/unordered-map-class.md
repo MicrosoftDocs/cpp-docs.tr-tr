@@ -148,12 +148,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d5fb638851398f39aad94675e1f4b0a59618dd2
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 4870228e37e79788e49b4a653d72e3d3f09e6620
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235678"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075066"
 ---
 # <a name="unorderedmap-class"></a>unordered_map Sınıfı
 
@@ -1468,29 +1468,24 @@ Bir öğenin veya öğelerin aralığını bir unordered_map ekler.
 // (1) single element
 pair<iterator, bool> insert(    const value_type& Val);
 
-
 // (2) single element, perfect forwarded
 template <class ValTy>
 pair<iterator, bool>
 insert(    ValTy&& Val);
 
-
 // (3) single element with hint
 iterator insert(    const_iterator Where,
     const value_type& Val);
-
 
 // (4) single element, perfect forwarded, with hint
 template <class ValTy>
 iterator insert(    const_iterator Where,
     ValTy&& Val);
 
-
 // (5) range
 template <class InputIterator>
 void insert(InputIterator First,
     InputIterator Last);
-
 
 // (6) initializer list
 void insert(initializer_list<value_type>
@@ -2002,7 +1997,6 @@ Demet başına en yüksek öğe sayısını alır veya ayarlar.
 
 ```cpp
 float max_load_factor() const;
-
 
 void max_load_factor(float factor);
 ```

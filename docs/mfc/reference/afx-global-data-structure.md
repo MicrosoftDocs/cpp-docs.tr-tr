@@ -65,12 +65,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b6ccad2c7c6c925a2c5ef6a7270a95d8a270f0d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 935a92beb49d26240aa63f5cfbd4adc9f22d06e8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398997"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078017"
 ---
 # <a name="afxglobaldata-structure"></a>AFX_GLOBAL_DATA Yapısı
 
@@ -169,11 +169,9 @@ Verilerin çoğu `AFX_GLOBAL_DATA` yapısı, uygulamanız başlatıldığında b
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
 
-
 ## <a name="bisosalphablendingsupport"></a> AFX_GLOBAL_DATA::bIsOSAlphaBlendingSupport
 
 İşletim sistemi alfa karıştırma destekleyip desteklemediğini belirtir.
-
 
 ```
 BOOL  bIsOSAlphaBlendingSupport;
@@ -183,19 +181,17 @@ BOOL  bIsOSAlphaBlendingSupport;
 
 TRUE, alfa karıştırma desteklendiğini gösterir; Aksi takdirde FALSE.
 
-
 ## <a name="cleanup"></a> AFX_GLOBAL_DATA::CleanUp
 
 Fırçalar, yazı tipleri ve DLL'ler gibi framework tarafından ayrılan kaynakları serbest bırakır.
 
-
 ```
 void CleanUp();
 ```
+
 ## <a name="d2d1makerotatematrix"></a> AFX_GLOBAL_DATA::D2D1MakeRotateMatrix
 
 Belirtilen bir nokta etrafında bir belirtilen açıyla döndüren döndürme dönüşümü oluşturur.
-
 
 ```
 HRESULT D2D1MakeRotateMatrix(
@@ -223,7 +219,6 @@ Aksi S_OK başarılı olursa ya da bir hata değeri döndürür.
 
 Belirtilen alanda bir denetimin üst arka planı çizer.
 
-
 ```
 BOOL DrawParentBackground(
     CWnd* pWnd,
@@ -249,7 +244,6 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
 ## <a name="drawtextonglass"></a> AFX_GLOBAL_DATA::DrawTextOnGlass
 
 Belirtilen metni belirtilen tema görsel stilde çizer.
-
 
 ```
 BOOL DrawTextOnGlass(
@@ -319,7 +313,6 @@ Bir tema, bir uygulamanın görsel stil tanımlar. Bir tema, metin çizmek için
 
 Etkinleştirir veya Microsoft Active Accessibility desteğini devre dışı bırakır.
 
-
 ```
 void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 ```
@@ -335,7 +328,6 @@ Etkin Erişilebilirlik şekilde programları ve Windows işletim sistemi iş yar
 
 Kullanım [AFX_GLOBAL_DATA::IsAccessibilitySupport](#isaccessibilitysupport) Microsoft Active Accessibility desteği etkin olup olmadığını belirlemek için yöntemi.
 
-
 ### <a name="see-also"></a>Ayrıca Bkz.
 
 [UI Otomasyonu ve Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)<br/>
@@ -344,7 +336,6 @@ Kullanım [AFX_GLOBAL_DATA::IsAccessibilitySupport](#isaccessibilitysupport) Mic
 ## <a name="excludetag"></a> AFX_GLOBAL_DATA::ExcludeTag
 
 Belirtilen XML etiket çifti belirtilen arabellek kaldırır.
-
 
 ```
 BOOL ExcludeTag(
@@ -392,7 +383,6 @@ Simgeler aşağıdaki tabloda belirtilen arabellekteki kaçış karakterleri kod
 
 Belirtilen kullanıcı arabirimi öğesi geçerli rengini alır.
 
-
 ```
 COLORREF GetColor(int nColor);
 ```
@@ -420,7 +410,6 @@ Varsa *nColor* parametresi aralık dışında olduğundan, dönüş değeri sıf
 
 Genel veriler ID2D1Factory arabirimi için bir işaretçi döndürür. Arabirim başlatılmadı ise oluşturulur ve varsayılan parametrelere sahip.
 
-
 ```
 ID2D1Factory* GetDirect2dFactory();
 ```
@@ -433,7 +422,6 @@ Fabrika oluşturulması başarılı ya da oluşturulması başarısız olursa NU
 
 Bir yandan benzer ve ayarlanmış bir tanımlayıcıdır IDC_HAND önceden tanımlanmış imleci alır.
 
-
 ```
 HCURSOR GetHandCursor();
 ```
@@ -445,7 +433,6 @@ HCURSOR GetHandCursor();
 ## <a name="getnonclientmetrics"></a> AFX_GLOBAL_DATA::GetNonClientMetrics
 
 İstemci olmayan alanındayken nonminimized Windows ile ilişkili ölçümleri alır.
-
 
 ```
 BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
@@ -460,7 +447,6 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 
 Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
 
-
 ### <a name="see-also"></a>Ayrıca Bkz.
 
 [NONCLIENTMETRICS yapısı](https://msdn.microsoft.com/library/windows/desktop/ff729175)
@@ -468,7 +454,6 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
 ## <a name="gettextheight"></a> AFX_GLOBAL_DATA::GetTextHeight
 
 Geçerli yazı tipi, metin karakterleri yüksekliğini alır.
-
 
 ```
 int GetTextHeight(BOOL bHorz = TRUE);
@@ -487,7 +472,6 @@ int GetTextHeight(BOOL bHorz = TRUE);
 
 Genel veriler IWICImagingFactory arabirimi için bir işaretçi döndürür. Arabirim başlatılmadı ise oluşturulur ve varsayılan parametrelere sahip.
 
-
 ```
 IWICImagingFactory* GetWICFactory();
 ```
@@ -500,7 +484,6 @@ Fabrika oluşturulması başarılı ya da oluşturulması başarısız olursa NU
 
 Genel veriler IDWriteFactory arabirimi için bir işaretçi döndürür. Arabirim başlatılmadı ise oluşturulur ve varsayılan parametrelere sahip.
 
-
 ```
 IDWriteFactory* GetWriteFactory();
 ```
@@ -512,7 +495,6 @@ Fabrika oluşturulması başarılı ya da oluşturulması başarısız olursa NU
 ## <a name="initd2d"></a> AFX_GLOBAL_DATA::InitD2D
 
 D2D ve DirectWrite WIC fabrikaları başlatır. Ana pencereyi başlatılmadan önce bu yöntemi çağırın.
-
 
 ```
 BOOL InitD2D(
@@ -536,10 +518,8 @@ DOĞRU fabrikaları intilalizrd, FALSE - Aksi durumda olup olmadığını dönd�
 
 Önceden tanımlanmış 32-bit simgeler desteklenip desteklenmediğini gösterir.
 
-
 ```
 BOOL Is32BitIcons() const;
-
 
 ```
 
@@ -555,7 +535,6 @@ Bu yöntem, framework 32-bit yerleşik simgeler, destekliyorsa ve işletim siste
 
 Microsoft Active Accessibility desteği etkin olup olmadığını gösterir.
 
-
 ```
 BOOL IsAccessibilitySupport() const;
 ```
@@ -570,7 +549,6 @@ Microsoft Active Accessibility uygulamaları erişilebilir yapmak için önceki 
 
 Kullanım [AFX_GLOBAL_DATA::EnableAccessibilitySupport](#enableaccessibilitysupport) etkinleştirme veya devre dışı Active Accessibility desteği yöntemi.
 
-
 ### <a name="see-also"></a>Ayrıca Bkz.
 
 [UI Otomasyonu ve Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)
@@ -578,7 +556,6 @@ Kullanım [AFX_GLOBAL_DATA::EnableAccessibilitySupport](#enableaccessibilitysupp
 ## <a name="isd2dinitialized"></a> AFX_GLOBAL_DATA::IsD2DInitialized
 
 D2D başlatılmış olup olmadığını belirler
-
 
 ```
 BOOL IsD2DInitialized() const;
@@ -591,7 +568,6 @@ D2D başlatıldı TRUE; Aksi durumda FALSE.
 ## <a name="isdwmcompositionenabled"></a> AFX_GLOBAL_DATA::IsDwmCompositionEnabled
 
 Windows çağırmak için basit bir yol sağlar [Dwmıscompositionenabled](/windows/desktop/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) yöntemi.
-
 
 ```
 BOOL IsDwmCompositionEnabled();
@@ -625,7 +601,6 @@ Siyah yüksek karşıtlık modunda beyaz ışık dönük kenarlar ve arka planı
 
 Katmanlı windows işletim sistemini destekleyip desteklemediğini belirtir.
 
-
 ```
 BOOL IsWindowsLayerSupportAvailable() const;
 ```
@@ -642,7 +617,6 @@ Katmanlı windows destekleniyorsa, *akıllı yerleştirme* işaretçileri katman
 
 Çerçevenin önceden tanımlanmış 32 bit renk simgelerinin genişliğini veya daha düşük bir çözünürlüğe simgelerini kullanıp kullanmadığını belirtir.
 
-
 ```
 BOOL  m_bUseBuiltIn32BitIcons;
 ```
@@ -656,7 +630,6 @@ Bu üye, uygulama başlangıcında ayarlamanız gerekir.
 ## <a name="m_busesystemfont"></a> AFX_GLOBAL_DATA::m_bUseSystemFont
 
 Sistem yazı tipini menüleri, araç çubukları ve şeritler için kullanılıp kullanılmayacağını belirtir.
-
 
 ```
 BOOL m_bUseSystemFont;
@@ -672,7 +645,6 @@ Bu üye'test etme, kullanılacak yazı tipini belirlemek için framework tek yol
 
 Tanıtıcı elde imleci için depolar.
 
-
 ```
 HCURSOR m_hcurHand;
 ```
@@ -680,7 +652,6 @@ HCURSOR m_hcurHand;
 ## <a name="m_hcurstretch"></a> AFX_GLOBAL_DATA::m_hcurStretch
 
 Yatay imleç esnetme için tanıtıcı depolar.
-
 
 ```
 HCURSOR m_hcurStretch;
@@ -690,7 +661,6 @@ HCURSOR m_hcurStretch;
 
 Esnetme dikey imleç için tanıtıcı depolar.
 
-
 ```
 HCURSOR m_hcurStretchVert;
 ```
@@ -699,14 +669,13 @@ HCURSOR m_hcurStretchVert;
 
 Aracı simge tanıtıcı depolar.
 
-
 ```
 HICON m_hiconTool;
 ```
+
 ## <a name="m_nautohidetoolbarmargin"></a> AFX_GLOBAL_DATA::m_nAutoHideToolBarMargin
 
 En soldaki autohide araç çubuğundan dock çubuğunun sol tarafındaki uzaklığını belirtir.
-
 
 ```
 int  m_nAutoHideToolBarMargin;
@@ -720,7 +689,6 @@ int  m_nAutoHideToolBarMargin;
 
 Otomatik Gizle araç çubukları arasındaki boşluğu belirtir.
 
-
 ```
 int   m_nAutoHideToolBarSpacing;
 ```
@@ -732,7 +700,6 @@ int   m_nAutoHideToolBarSpacing;
 ## <a name="m_ndragframethicknessdock"></a> AFX_GLOBAL_DATA::m_nDragFrameThicknessDock
 
 Yerleşik durumunu göstermek için kullanılan Sürükle çerçeve kalınlığı belirtir.
-
 
 ```
 int  m_nDragFrameThicknessDock;
@@ -746,7 +713,6 @@ int  m_nDragFrameThicknessDock;
 
 Kayan durumunu göstermek için kullanılan Sürükle çerçeve kalınlığı belirtir.
 
-
 ```
 int  m_nDragFrameThicknessFloat;
 ```
@@ -759,7 +725,6 @@ int  m_nDragFrameThicknessFloat;
 
 Desktop'ın menü animasyon ve görev autohide özellikleri geçerli durumunu algılar.
 
-
 ```
 void OnSettingChange();
 ```
@@ -771,7 +736,6 @@ Bu yöntem, kullanıcının masaüstü belirli bir öznitelik durumuna framework
 ## <a name="registerwindowclass"></a> AFX_GLOBAL_DATA::RegisterWindowClass
 
 Belirtilen MFC pencere sınıfını kaydeder.
-
 
 ```
 CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
@@ -799,7 +763,6 @@ Dönüş değeri, virgülle ayrılmış listesidir *lpszClassNamePrefix* paramet
 
 Görsel stiller ve Windows temaları destekleyen yöntemlere erişmek iç işlev işaretçileri yeniden başlatır.
 
-
 ```
 BOOL Resume();
 ```
@@ -815,7 +778,6 @@ Bu yöntem, framework aldığında çağrılır [WM_POWERBROADCAST](/windows/des
 ## <a name="setlayeredattrib"></a> AFX_GLOBAL_DATA::SetLayeredAttrib
 
 Windows çağırmak için basit bir yol sağlar [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) yöntemi.
-
 
 ```
 BOOL SetLayeredAttrib(
@@ -852,7 +814,6 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
 
 Belirtilen mantıksal yazı tipi oluşturur.
 
-
 ```
 BOOL SetMenuFont(
     LPLOGFONT lpLogFont,
@@ -879,7 +840,6 @@ Bu yöntem bir yatay normal yazı tipi, altı çizili bir yazı tipi oluşturur 
 
 Framework tarafından kullanılan mantıksal yazı tiplerinin reintializes.
 
-
 ```
 void UpdateFonts();
 ```
@@ -892,7 +852,6 @@ Mantıksal yazı tipleri hakkında daha fazla bilgi için bkz: `CFont::CreateFon
 
 Renkler, renk derinliği, Fırçalar, kalemler ve framework tarafından kullanılan görüntüleri başlatır.
 
-
 ```
 void UpdateSysColors();
 ```
@@ -900,7 +859,6 @@ void UpdateSysColors();
 ## <a name="biswindows7"></a> AFX_GLOBAL_DATA::bIsWindows7
 
 Uygulama altında Windows 7 veya üzeri yürütülmekte olan olup olmadığını gösterir.
-
 
 ```
 BOOL bIsWindows7;
@@ -910,7 +868,6 @@ BOOL bIsWindows7;
 
 Etkin Başlık gradyan rengini belirtir. Genellikle bölmeleri yerleştirme için kullanılır.
 
-
 ```
 COLORREF clrActiveCaptionGradient;
 ```
@@ -919,7 +876,6 @@ COLORREF clrActiveCaptionGradient;
 
 Etkin olmayan başlık gradyan rengini belirtir. Genellikle bölmeleri yerleştirme için kullanılır.
 
-
 ```
 COLORREF clrInactiveCaptionGradient;
 ```
@@ -927,7 +883,6 @@ COLORREF clrInactiveCaptionGradient;
 ## <a name="getitaskbarlist"></a> AFX_GLOBAL_DATA::GetITaskbarList
 
 Oluşturur ve genel verilerde yönelik bir işaretçi depolayan `ITaskBarList` arabirimi.
-
 
 ```
 ITaskbarList *GetITaskbarList();
@@ -941,7 +896,6 @@ Bir işaretçi `ITaskbarList` bir görev çubuğunda liste nesnesi oluşturma ba
 
 Oluşturur ve genel verilerde yönelik bir işaretçi depolayan `ITaskBarList3` arabirimi.
 
-
 ```
 ITaskbarList3 *GetITaskbarList3();
 ```
@@ -953,7 +907,6 @@ Bir işaretçi `ITaskbarList3` bir görev çubuğunda liste nesnesi oluşturma b
 ## <a name="getshellautohidebars"></a> AFX_GLOBAL_DATA::GetShellAutohideBars
 
 Kabuk otomatik konumlarını çubukları Gizle belirler.
-
 
 ```
 int GetShellAutohideBars();
@@ -967,7 +920,6 @@ Bir tamsayı değeri otomatik konumlarını belirtin kodlanmış bayrağı ile �
 
 Serbest arabirimler üzerinden alınan `GetITaskbarList` ve `GetITaskbarList3` yöntemleri.
 
-
 ```
 void ReleaseTaskBarRefs();
 ```
@@ -975,7 +927,6 @@ void ReleaseTaskBarRefs();
 ## <a name="shellcreateitemfromparsingname"></a> AFX_GLOBAL_DATA::ShellCreateItemFromParsingName
 
 Oluşturur ve bir kabuk öğesi nesnesi ayrıştırma adından başlatır.
-
 
 ```
 HRESULT ShellCreateItemFromParsingName(

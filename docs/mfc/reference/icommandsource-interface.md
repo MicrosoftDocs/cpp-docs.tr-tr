@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5071f2c6f00b3cc4aaf09974a01c4601d0078e42
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4908566a80fcad2350023f2306a952b2d97b2e62
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377970"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060682"
 ---
 # <a name="icommandsource-interface"></a>ICommandSource arabirimi
 
@@ -103,6 +103,7 @@ void AddCommandRangeHandler(
     unsigned int cmdIDMax,
     CommandHandler^ cmdHandler);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *cmdIDMin*<br/>
@@ -124,6 +125,7 @@ void AddCommandRangeUIHandler(
     unsigned int cmdIDMax,
     CommandUIHandler^ cmdUIHandler);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *cmdIDMin*<br/>
@@ -145,6 +147,7 @@ void AddCommandUIHandler(
     unsigned int cmdID,
     CommandUIHandler^ cmdUIHandler);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
@@ -162,6 +165,7 @@ Bu yöntem, kullanıcı arabirimi komut ileti işleyicisi cmdHandler komut kayna
 ```
 void PostCommand(unsigned int command);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *Komutu*<br/>
@@ -170,13 +174,13 @@ Yayımlanacak ileti komut kimliği.
 
 Bu yöntem, zaman uyumsuz olarak komutu tarafından belirtilen kimliği eşlenen bir ileti gönderir. Bu pencerenin ileti kuyrukta bir ileti yerleştirmek için CWnd::PostMessage çağıracak ve sonra iletiyi işlemek karşılık gelen penceresi için beklemenize gerek kalmadan.
 
-
 ## <a name="removecommandhandler"></a> ICommandSource::RemoveCommandHandler
 
 Bir komut işleyici, bir komut kaynak nesneden kaldırır.
 ```
 void RemoveCommandHandler(unsigned int cmdID);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
@@ -184,7 +188,6 @@ Komut kimliği.
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntem komut kaynak nesneden cmdID için eşlenmiş komut işleyici kaldırır.
-
 
 ## <a name="removecommandrangecommandhandler"></a> ICommandSource::RemoveCommandRangeHandler
 
@@ -194,6 +197,7 @@ void RemoveCommandRangeUIHandler(
     unsigned int cmdIDMin,
     unsigned int cmdIDMax);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *cmdIDMin*<br/>
@@ -212,6 +216,7 @@ void RemoveCommandRangeUIHandler(
     unsigned int cmdIDMin,
     unsigned int cmdIDMax);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *cmdIDMin*<br/>
@@ -228,6 +233,7 @@ Bir kullanıcı arabirimi komut ileti işleyicisi komut kaynak nesnesinden kald�
 ```
 void RemoveCommandUIHandler(unsigned int cmdID);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
@@ -242,6 +248,7 @@ Bir ileti gönderir ve döndürmeden önce işlenecek bekler.
 ```
 void SendCommand(unsigned int command);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *Komutu*<br/>

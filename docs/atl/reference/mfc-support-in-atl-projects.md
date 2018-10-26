@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3853bbe90757563f6c7dc2c9003ed7c5f2a98dc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ad9e55fa296b8a39e4c77ab33240c837b6c871ea
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065445"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063503"
 ---
 # <a name="mfc-support-in-atl-projects"></a>ATL projelerinde MFC desteği
 
@@ -32,27 +32,27 @@ Bu seçenek yalnızca nonattributed ATL DLL projelerinde kullanılabilir.
 ```
 class CProjNameApp : public CWinApp
 {
-public:  
+public:
 
-// Overrides  
+// Overrides
     virtual BOOL InitInstance();
 virtual int ExitInstance();
 DECLARE_MESSAGE_MAP()
-};  
+};
 
 BEGIN_MESSAGE_MAP(CProjNameApp, CWinApp)
-END_MESSAGE_MAP()  
+END_MESSAGE_MAP()
 
-CProjNameApp theApp;  
+CProjNameApp theApp;
 
 BOOL CProjNameApp::InitInstance()
-{  
+{
     return CWinApp::InitInstance();
 
-}  
+}
 
 int CProjNameApp::ExitInstance()
-{  
+{
     return CWinApp::ExitInstance();
 
 }

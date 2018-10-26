@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eca30330e721575443ba9d3f7b0b19c315427eb2
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 3071b779338150816cb1d52d16932ac0e3878538
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234131"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079330"
 ---
 # <a name="walkthrough-building-a-project-c"></a>İzlenecek Yol: Proje Derleme (C++)
 
@@ -49,7 +49,7 @@ Bu kılavuzda, kasıtlı bir derleme hatası nasıl göründüğünü ve nasıl 
 
 1. Geri söz dizimi hatası olan satırın sonuna noktalı virgül ekleyin:
 
-     `return 0;`
+   `return 0;`
 
 1. Menü çubuğunda, **derleme** > **Çözümü Derle**.
 

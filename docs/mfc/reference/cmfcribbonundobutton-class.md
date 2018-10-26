@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38b27a65c7a8c8305cd64391a23df706b40d0deb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 796337148247d5456b7e6223d79453e264834761
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439256"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076275"
 ---
 # <a name="cmfcribbonundobutton-class"></a>CMFCRibbonUndoButton sınıfı
 
@@ -117,7 +117,6 @@ CMFCRibbonUndoButton(
     LPCTSTR lpszText,
     int nSmallImageIndex=-1,
     int nLargeImageIndex=-1);
-
 
 CMFCRibbonUndoButton(
     UINT nID,

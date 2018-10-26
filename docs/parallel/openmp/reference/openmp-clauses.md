@@ -43,12 +43,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d19a2b1859012a56bdaf3c454f8b92758179bed9
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: ea394ca09a086229a8718f4e7e1bfa55115652bc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49809076"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056229"
 ---
 # <a name="openmp-clauses"></a>OpenMP yan tümceleri
 
@@ -56,21 +56,21 @@ Yan tümceleri OpenMP API çağrısında kullanılan bağlantılar sağlar.
 
 Visual C++ aşağıdaki OpenMP yan tümceleri destekler:
 
-Yan Tümce                             | Açıklama
----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[copyin](#copyin)                  | Ana iş parçacığının değere erişmek iş parçacığı sağlayan bir [threadprivate](openmp-directives.md#threadprivate) değişkeni.
-[copyprivate](#copyprivate)        | Bir veya daha fazla değişkenlerini tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.
-[default](#default-openmp)         | Bir paralel bölgenin içinde kapsamsız değişkenleri davranışını belirtir.
-[firstprivate](#firstprivate)      | Paralel yapı önce mevcut olduğundan, her iş parçacığı bir değişkenin kendi örneği olmalıdır ve değişken değişkenin değerini ile başlatılmalıdır belirtir.
-[Eğer](#if-openmp)                   | Bir döngü paralel veya seri gerçekleştirilip gerçekleştirilmeyeceğini belirtir.
-[lastprivate](#lastprivate)        | Değişkeni kapsayan bir bağlamın sürümü hangi iş parçacığının son yineleme (for-döngüsü yapısı) ya da son bölümdeki (#pragma bölümleri) yürüten özel sürümüne eşit ayarlandığını belirtir.
-[nowait](#nowait)                  | Bir yönergesinde örtük engel geçersiz kılar.
-[num_threads](#num-threads)        | Bir iş parçacığı takıma iş parçacığı sayısını ayarlar.
-[Sıralı](#ordered-openmp-clauses) | Üzerinde paralel gerekli [için](openmp-directives.md#for-openmp) deyimi, bir [sıralı](openmp-directives.md#ordered-openmp-directives) yönergesiyse döngüde kullanılacak.
-[private](#private-openmp)         | Her iş parçacığı bir değişkenin kendi örnek olması gerektiğini belirtir.
-[reduction](#reduction)            | Her iş parçacığı için özel bir veya daha fazla değişken bir paralel bölgenin sonunda azaltma işlemi konusunu olduğunu belirtir.
-[schedule](#schedule)              | Uygulandığı [için](openmp-directives.md#for-openmp) yönergesi.
-[Paylaşılan](#shared-openmp)           | Bir veya daha fazla değişkenlerini tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.
+|Yan Tümce|Açıklama|
+|------|-----------|
+|[copyin](#copyin)|Ana iş parçacığının değere erişmek iş parçacığı sağlayan bir [threadprivate](openmp-directives.md#threadprivate) değişkeni.|
+|[copyprivate](#copyprivate)|Bir veya daha fazla değişkenlerini tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.|
+|[default](#default-openmp)|Bir paralel bölgenin içinde kapsamsız değişkenleri davranışını belirtir.|
+|[firstprivate](#firstprivate)|Paralel yapı önce mevcut olduğundan, her iş parçacığı bir değişkenin kendi örneği olmalıdır ve değişken değişkenin değerini ile başlatılmalıdır belirtir.|
+|[Eğer](#if-openmp)|Bir döngü paralel veya seri gerçekleştirilip gerçekleştirilmeyeceğini belirtir.|
+|[lastprivate](#lastprivate)|Değişkeni kapsayan bir bağlamın sürümü hangi iş parçacığının son yineleme (for-döngüsü yapısı) ya da son bölümdeki (#pragma bölümleri) yürüten özel sürümüne eşit ayarlandığını belirtir.|
+|[nowait](#nowait)|Bir yönergesinde örtük engel geçersiz kılar.|
+|[num_threads](#num-threads)|Bir iş parçacığı takıma iş parçacığı sayısını ayarlar.|
+|[Sıralı](#ordered-openmp-clauses)|Üzerinde paralel gerekli [için](openmp-directives.md#for-openmp) deyimi, bir [sıralı](openmp-directives.md#ordered-openmp-directives) yönergesiyse döngüde kullanılacak.|
+|[private](#private-openmp)|Her iş parçacığı bir değişkenin kendi örnek olması gerektiğini belirtir.|
+|[reduction](#reduction)|Her iş parçacığı için özel bir veya daha fazla değişken bir paralel bölgenin sonunda azaltma işlemi konusunu olduğunu belirtir.|
+|[schedule](#schedule)|Uygulandığı [için](openmp-directives.md#for-openmp) yönergesi.|
+|[Paylaşılan](#shared-openmp)|Bir veya daha fazla değişkenlerini tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.|
 
 ## <a name="copyin"></a>copyin
 
@@ -401,7 +401,7 @@ num_threads(num)
 
 ### <a name="remarks"></a>Açıklamalar
 
-`num_threads` Yan tümcesi ile aynı işlevlere sahip [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) işlevi.
+`num_threads` Yan tümcesi ile aynı işlevlere sahip [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) işlevi.
 
 `num_threads` Aşağıdaki yönergeleri için geçerlidir:
 

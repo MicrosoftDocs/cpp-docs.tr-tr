@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60869fbd450f6a2122c91b852c29222f7d4d0744
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d22080532f36be18d32d29a24da9c5e3738fb275
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436422"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068989"
 ---
 # <a name="tn045-mfcdatabase-support-for-long-varcharvarbinary"></a>TN045: Uzun Varchar/Varbinary için MFC/Veritabanı Desteği
 
@@ -64,7 +64,6 @@ void AFXAPI RFX_Text(CFieldExchange* pFX,
     int nMaxLength = 255,
     int nColumnType =
     SQL_VARCHAR);
-
 
 void AFXAPI RFX_Binary(CFieldExchange* pFX,
     const char *szName,

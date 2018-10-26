@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88c8ee576af3c50317b86b7016ac198fefdcbaa9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3211f87e2c692c587ee2df82497fc56662e4974d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093447"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077291"
 ---
 # <a name="catlmodule-class"></a>CAtlModule sınıfı
 
@@ -262,7 +262,7 @@ HRESULT WINAPI UpdateRegistryFromResourceD(
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
 
-HRESULT WINAPI UpdateRegistryFromResourceD(  
+HRESULT WINAPI UpdateRegistryFromResourceD(
     LPCTSTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
@@ -299,7 +299,7 @@ Bu yöntemin çağırdığı [CAtlModule::UpdateRegistryFromResourceDHelper](#up
 Bu yöntemi çağıran `UpdateRegistryFromResourceD` kayıt defterini güncelleştirme gerçekleştirmek için.
 
 ```
-inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(  
+inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(
     LPCOLESTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
@@ -329,12 +329,12 @@ Bu yöntem uygulamasını sağlar [CAtlModule::UpdateRegistryFromResourceD](#upd
 Belirtilen kaynak kaydetmek veya kaydını bir nesne için yer alan komut dosyasını çalıştırır. Bu yöntem, ATL kayıt defteri bileşeni için statik olarak bağlar.
 
 ```
-HRESULT WINAPI UpdateRegistryFromResourceS(  
+HRESULT WINAPI UpdateRegistryFromResourceS(
     UINT nResID,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
 
-HRESULT WINAPI UpdateRegistryFromResourceS(  
+HRESULT WINAPI UpdateRegistryFromResourceS(
     LPCTSTR lpszRes,
     BOOL bRegister,
     struct _ATL_REGMAP_ENTRY* pMapEntries = NULL) throw();
@@ -367,4 +367,4 @@ Benzer şekilde [CAtlModule::UpdateRegistryFromResourceD](#updateregistryfromres
 [_ATL_MODULE](atl-typedefs.md#_atl_module)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Modül sınıfları](../../atl/atl-module-classes.md)<br/>
-[Kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md)  
+[Kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md)

@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a488a3d46d60762f73406ea6f604761804277aa
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ce4caa9b8a8575264563d69f47dbba1dcedb69e5
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429779"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054117"
 ---
 # <a name="multiple-document-types-views-and-frame-windows"></a>Birden Fazla Belge Türü, Görünüm ve Çerçeve Penceresi
 
@@ -62,15 +62,15 @@ MFC aynı belgede birden çok görünüm gerektiren üç yaygın kullanıcı ara
 
 - Aynı sınıfın her bir ayrı MDI belge çerçevesi penceresinin nesneleri görüntüle.
 
-     Belge üzerinde ikinci bir çerçeve penceresi oluşturma desteği isteyebilirsiniz. Kullanıcı ikinci bir çerçeve aynı belgede bir görünümünü açın ve ardından iki çerçeve belgenin farklı bölümleri aynı anda görüntülemek için bir yeni pencere komutunu seçebilir. Framework ilk çerçeve penceresi ve belgeye eklenen görünüm çoğaltarak Pencere menüsünden MDI uygulamaları için yeni pencere komutunu destekler.
+   Belge üzerinde ikinci bir çerçeve penceresi oluşturma desteği isteyebilirsiniz. Kullanıcı ikinci bir çerçeve aynı belgede bir görünümünü açın ve ardından iki çerçeve belgenin farklı bölümleri aynı anda görüntülemek için bir yeni pencere komutunu seçebilir. Framework ilk çerçeve penceresi ve belgeye eklenen görünüm çoğaltarak Pencere menüsünden MDI uygulamaları için yeni pencere komutunu destekler.
 
 - Aynı belge çerçeve penceresindeki aynı sınıfın nesneleri görüntüle.
 
-     Bölümlendirici pencereler, belgenin birden çok ayrı görünümlere bir tek belge penceresini görüntüleme alanının bölün. Framework aynı görünüm sınıfı birden çok görünüm nesneleri oluşturur. Daha fazla bilgi için [Bölümlendirici Windows](#_core_splitter_windows).
+   Bölümlendirici pencereler, belgenin birden çok ayrı görünümlere bir tek belge penceresini görüntüleme alanının bölün. Framework aynı görünüm sınıfı birden çok görünüm nesneleri oluşturur. Daha fazla bilgi için [Bölümlendirici Windows](#_core_splitter_windows).
 
 - Tek bir çerçeve penceresinde farklı sınıfların nesneleri görüntüle.
 
-     Bu modelde, ayırıcı penceresi çeşitlemesi birden çok görünüm tek çerçeve penceresi paylaşın. Görünümleri farklı sınıflardan aynı belgeyi görüntülemek için farklı bir yol sağlayarak her görünüm oluşturulur. Örneğin, isteğe bağlı olarak diğer görünümdeki anahat modunda gösterir ancak tek bir görünümde bir sözcük belge normal modda gösterebilir. Bölümlendirici denetimi görünüm göreli boyutlarını ayarlamak kullanıcının sağlar.
+   Bu modelde, ayırıcı penceresi çeşitlemesi birden çok görünüm tek çerçeve penceresi paylaşın. Görünümleri farklı sınıflardan aynı belgeyi görüntülemek için farklı bir yol sağlayarak her görünüm oluşturulur. Örneğin, isteğe bağlı olarak diğer görünümdeki anahat modunda gösterir ancak tek bir görünümde bir sözcük belge normal modda gösterebilir. Bölümlendirici denetimi görünüm göreli boyutlarını ayarlamak kullanıcının sağlar.
 
 Aşağıdaki şekilde bölümlere ayrılmış üç kullanıcı arabirimi model yukarıda gösterilen sırayla a, b ve c gösterir.
 

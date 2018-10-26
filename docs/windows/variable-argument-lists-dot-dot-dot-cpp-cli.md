@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0e95f963636e50bdf453835ee920463e6e266a2a
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 183208d734fa5ad39151b171bd9c6889863c8d33
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327810"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057191"
 ---
 # <a name="variable-argument-lists--ccli"></a>Değişken Bağımsız Değişken Listeleri (...) (C++/CLI)
 
@@ -44,7 +44,7 @@ double average( ... array<Int32>^ arr ) {
    int i = arr->GetLength(0);
    double answer = 0.0;
 
-   for (int j = 0 ; j < i ; j++)  
+   for (int j = 0 ; j < i ; j++)
       answer += arr[j];
 
    return answer / i;

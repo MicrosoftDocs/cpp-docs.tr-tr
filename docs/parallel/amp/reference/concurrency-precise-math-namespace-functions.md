@@ -98,12 +98,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dac840ecb0d3dadd25387eebff9c28ff83213cbe
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ff74414926516e21fff2538674462de57f0f971f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448538"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073623"
 ---
 # <a name="concurrencyprecisemath-namespace-functions"></a>CONCURRENCY::precise_math ad alanı işlevleri
 
@@ -984,6 +984,7 @@ inline double fdim(
    double _Y
 ) restrict(amp);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *_X'İ*<br/>
@@ -1003,6 +1004,7 @@ inline float fdimf(
    float _Y
 ) restrict(amp);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *_X'İ*<br/>
@@ -1065,6 +1067,7 @@ inline double fma(
    double _Z
 ) restrict(amp);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *_X'İ*<br/>
@@ -1088,6 +1091,7 @@ inline float fmaf(
    float _Z
 ) restrict(amp);
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *_X'İ*<br/>

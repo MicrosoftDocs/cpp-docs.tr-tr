@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53ea81b7668f9d0786cf84a5e46cc9d86f429b44
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c8f7c74610916d556c628e35672e5737d780694a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383616"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075807"
 ---
 # <a name="cmultipagedhtmldialog-class"></a>CMultiPageDHtmlDialog sınıfı
 
@@ -95,7 +95,6 @@ CMultiPageDHtmlDialog(
     LPCTSTR lpszTemplateName,
     LPCTSTR szHtmlResID = NULL,
     CWnd* pParentWnd = NULL);
-
 
 CMultiPageDHtmlDialog(
     UINT nIDTemplate,

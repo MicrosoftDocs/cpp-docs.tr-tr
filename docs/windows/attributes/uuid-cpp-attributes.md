@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2bd15720c30c3a3f298e0094304205fd7fe5caeb
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 3eddf1981aba8babcb87562ed546ce4086499fd7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789866"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071345"
 ---
 # <a name="uuid-c-attributes"></a>uuid (C++ Öznitelikleri)
 
@@ -74,4 +74,4 @@ Bkz: [bağlanabilir](bindable.md) örnek kullanımını örneğin **UUID**.
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
-[uuid](/windows/desktop/Midl/uuid)  
+[uuid](/windows/desktop/Midl/uuid)

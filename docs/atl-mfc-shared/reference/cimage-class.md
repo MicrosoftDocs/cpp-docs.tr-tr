@@ -64,12 +64,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df61ebeea72a7cf860237b760288cc47ff353bf2
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: a1c27d20970b8e8634e8438c25733fd90a3ad632
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890666"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064803"
 ---
 # <a name="cimage-class"></a>Cımage sınıfı
 
@@ -172,7 +172,7 @@ Ekli bir bit eşlem DIB bölümü olup olmadığını belirlemek için çağrı 
 
 ## <a name="example"></a>Örnek
 
-```cpp  
+```cpp
 // Get a CDC for the image
 CDC* pDC = CDC::FromHandle(m_myImage.GetDC());
 
@@ -181,19 +181,19 @@ pDC->Rectangle(0, 40, 100, 50);
 m_myImage.ReleaseDC();
 ```
 
-Kullanırken `CImage` hangi üye işlevleri, projenizdeki bir işaretçiye beklediğiniz bir MFC projesinde Not bir [CBitmap](../../mfc/reference/cbitmap-class.md) nesne. Kullanmak istiyorsanız `CImage` böyle bir işlevi ile gibi [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#appendmenu), kullanın [CBitmap::FromHandle](../../mfc/reference/cbitmap-class.md#fromhandle), geçirin, `CImage` HBITMAP ve döndürülen `CBitmap*`.  
+Kullanırken `CImage` hangi üye işlevleri, projenizdeki bir işaretçiye beklediğiniz bir MFC projesinde Not bir [CBitmap](../../mfc/reference/cbitmap-class.md) nesne. Kullanmak istiyorsanız `CImage` böyle bir işlevi ile gibi [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#appendmenu), kullanın [CBitmap::FromHandle](../../mfc/reference/cbitmap-class.md#fromhandle), geçirin, `CImage` HBITMAP ve döndürülen `CBitmap*`.
 
 ## <a name="example"></a>Örnek
 
-```cpp  
+```cpp
 void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 {
     UNREFERENCED_PARAMETER(nFlags);
-    
+
     CBitmap* pBitmap = CBitmap::FromHandle(m_myImage);
     m_pmenuPop->AppendMenu(0, ID_BMPCOMMAND, pBitmap);
     ClientToScreen(&point);
-    m_pmenuPop->TrackPopupMenu(TPM_RIGHTBUTTON | TPM_LEFTALIGN, point.x, 
+    m_pmenuPop->TrackPopupMenu(TPM_RIGHTBUTTON | TPM_LEFTALIGN, point.x,
     point.y, this);
 }
 ```
@@ -203,8 +203,8 @@ Aracılığıyla `CImage`, gerçek bit DIB bölümün erişebilirsiniz. Kullanab
 Kullanabileceğiniz `CImage` MFC veya ATL
 
 > [!NOTE]
-> Kullanarak proje oluşturduğunuzda `CImage`, tanımlamanız gerekir `CString` dahil önce `atlimage.h`. Projenize ATL MFC olmadan kullanıyorsa, dahil `atlstr.h` dahil önce `atlimage.h`. Projeniz MFC (veya bir ATL projesi ile MFC desteği olup olmadığını) kullanıyorsa, dahil `afxstr.h` dahil önce `atlimage.h`.  
->   
+> Kullanarak proje oluşturduğunuzda `CImage`, tanımlamanız gerekir `CString` dahil önce `atlimage.h`. Projenize ATL MFC olmadan kullanıyorsa, dahil `atlstr.h` dahil önce `atlimage.h`. Projeniz MFC (veya bir ATL projesi ile MFC desteği olup olmadığını) kullanıyorsa, dahil `afxstr.h` dahil önce `atlimage.h`.<br/>
+> <br/>
 > Benzer şekilde, içermelidir `atlimage.h` dahil önce `atlimpl.cpp`. Bunu bir kolayca gerçekleştirmek için dahil `atlimage.h` içinde `stdafx.h`.
 
 ## <a name="requirements"></a>Gereksinimler
@@ -302,7 +302,7 @@ Başarılı olursa sıfır dışı; Aksi durumda 0.
 
 Piksel başına temelinde renk karıştırma alfa karıştırma bit eşlemler destekler.
 
-Zaman *bBlendOp* ayarlanır AC_SRC_OVER varsayılana kaynak bit eşlemi hedef bit eşlemi Kaynak piksel alfa değerlerine göre üzerinden yerleştirilir.  
+Zaman *bBlendOp* ayarlanır AC_SRC_OVER varsayılana kaynak bit eşlemi hedef bit eşlemi Kaynak piksel alfa değerlerine göre üzerinden yerleştirilir.
 
 ##  <a name="attach"></a>  CImage::Attach
 
@@ -506,9 +506,9 @@ Başarılı olursa TRUE değeri. Aksi durumda FALSE.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, her pikselin kodlamak için 16 bit kullanarak 100 x 100 piksel bit eşlem oluşturur. Belirli bir 16 bit piksel olarak kırmızı bileşeni bitleri 0-3 kodlayın, BITS 4. ve 7 yeşil kodlamak ve BITS 8-11 mavi kodlayın. Kalan 4 kullanılmayan bittir.  
+Aşağıdaki örnek, her pikselin kodlamak için 16 bit kullanarak 100 x 100 piksel bit eşlem oluşturur. Belirli bir 16 bit piksel olarak kırmızı bileşeni bitleri 0-3 kodlayın, BITS 4. ve 7 yeşil kodlamak ve BITS 8-11 mavi kodlayın. Kalan 4 kullanılmayan bittir.
 
-```cpp  
+```cpp
 DWORD adwBitmasks[3] = { 0x0000000f, 0x000000f0, 0x00000f00 };
 m_myImage.CreateEx(100, 100, 16, BI_BITFIELDS, adwBitmasks, 0);
 ```
@@ -725,16 +725,15 @@ GUID'ler, dizedeki dosya türlerinden birini karşılık gelen her öğe dizisi.
 *pszAllFilesDescription*<br/>
 Bu parametre NULL değilse, filtre dizesi listenin başında bir ek filtre gerekir. Bu filtre, geçerli değerini olacaktır *pszAllFilesDescription* açıklaması için listedeki diğer dışarı Aktarıcı tarafından desteklenen herhangi bir genişletme dosya kabul eder.
 
-Örneğin:  
+Örneğin:
 
-```cpp  
+```cpp
 //First filter in the list will be titled "All Image Files", and
 //will accept files with any extension supported by any exporter.
 CImage::GetExporterFilterString(
-    strExporters, aguidFileTypes, 
+    strExporters, aguidFileTypes,
 _T("All Image Files"));
 ```
-
 
 *dwExclude*<br/>
 Bit bayrakları listesinden Dışlanmak için hangi dosya türlerinin belirten dizi. İzin verilen bayraklar:
@@ -821,16 +820,15 @@ GUID'ler, dizedeki dosya türlerinden birini karşılık gelen her öğe dizisi.
 *pszAllFilesDescription*<br/>
 Bu parametre NULL değilse, filtre dizesi listenin başında bir ek filtre gerekir. Bu filtre, geçerli değerini olacaktır *pszAllFilesDescription* açıklaması için listedeki diğer dışarı Aktarıcı tarafından desteklenen herhangi bir genişletme dosya kabul eder.
 
-Örneğin:  
+Örneğin:
 
-```cpp  
+```cpp
 //First filter in the list will be titled "All Image Files", and
 //will accept files with any extension supported by any importer.
 CImage::GetImporterFilterString(
-    strImporters, aguidFileTypes, 
+    strImporters, aguidFileTypes,
 _T("All Image Files"));
 ```
-
 
 *dwExclude*<br/>
 Bit bayrakları listesinden Dışlanmak için hangi dosya türlerinin belirten dizi. İzin verilen bayraklar:
@@ -1360,7 +1358,7 @@ Kırmızı, yeşil, mavi (RGB) renk değerleri bir dizi giriş palette DIB böl�
 
 ```
 void SetColorTable(
-    UINT iFirstColor, 
+    UINT iFirstColor,
     UINT nColors,
     const RGBQUAD* prgbColors) throw();
 ```
@@ -1427,7 +1425,7 @@ Renk paletini renkte dizini.
 Tarafından belirtilen konumlarda piksel ayarlar *x* ve *y* belirttiği renklere *r*, *g*, ve *b*, bir kırmızı, yeşil, mavi (RGB) görüntüsü.
 
 ```
-void SetPixelRGB(  
+void SetPixelRGB(
     int x,
     int y,
     BYTE r,
@@ -1639,12 +1637,12 @@ Başarılı, aksi takdirde FALSE ise TRUE.
 
 `TransparentBlt` Kaynak bit eşlemleri 4 bit / piksel ve 8 bit / piksel desteklenir. Kullanım [CImage::AlphaBlend](#alphablend) saydamlığı olan 32 bit-piksel başına bit eşlemler belirtmek için.
 
-### <a name="example"></a>Örnek  
+### <a name="example"></a>Örnek
 
-```cpp  
-// Performs a transparent blit from the source image to the destination 
+```cpp
+// Performs a transparent blit from the source image to the destination
 // image using the images' current transparency settings
-BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage, 
+BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
        int xDest, int yDest, int nDestWidth, int nDestHeight)
 {
     HDC hDstDC = NULL;
@@ -1676,4 +1674,4 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)<br/>
 [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)<br/>
 [CİHAZDAN bağımsız bit eşlemler](/windows/desktop/gdi/device-independent-bitmaps)<br/>
-[CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)   
+[CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)

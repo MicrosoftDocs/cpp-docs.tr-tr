@@ -14,51 +14,51 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a420294b2b7d2e0ff54b829d3177935f833a4e0
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: d9c362ce6c85d1c090c6c9265f2093dd7c754792
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42465507"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080435"
 ---
 # <a name="import-attributes-c"></a>#import Öznitelikleri (C++)
-İle kullanılan öznitelikler için bağlantılar sağlar `#import` yönergesi.  
-  
-**Microsoft'a özgü**  
-  
-Aşağıdaki öznitelikler kullanılabilir `#import` yönergesi.  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|[auto_rename](../preprocessor/auto-rename.md)|Olası ad çakışmalarını çözmek için değişken adına iki alt çizgi (__) ekleyerek C++ ayrılmış sözcüklerini yeniden adlandırır.|  
-|[auto_search](../preprocessor/auto-search.md)|Tür kitaplığına #import ile başvurulduğunda ve kitaplığın kendisi başka bir tür kitaplığına başvurduğunda, derleyicinin diğer tür kitaplığı için örtük bir #import yapabileceğini belirtir.|  
-|[embedded_idl](../preprocessor/embedded-idl.md)|Tür kitaplığı .tlh dosyasına, öznitelik tarafından oluşturulan kod korunarak yazıldığını belirtir.|  
-|[Hariç tutma](../preprocessor/exclude-hash-import.md)|Öğeleri, oluşturulan tür kitaplığı üstbilgi dosyalarından çıkarır.|  
-|[high_method_prefix](../preprocessor/high-method-prefix.md)|Üst düzey özelliklere ve yöntemlere adlandırma olarak kullanılacak bir ön ekini belirtir.|  
-|[high_property_prefixes](../preprocessor/high-property-prefixes.md)|Diğer özellik yöntemi için alternatif önekler belirtir.|  
-|[implementation_only](../preprocessor/implementation-only.md)|.Tlh üst bilgi dosyası (birincil üstbilgi dosyası) oluşturulmasını engeller.|  
-|[include()](../preprocessor/include-parens.md)|Otomatik dışlama devre dışı bırakır.|  
-|[inject_statement](../preprocessor/inject-statement.md)|Bağımsız değişkenini tür kitaplığı üstbilgisine kaynak metin olarak ekler.|  
-|[named_guids](../preprocessor/named-guids.md)|Tanımlamak ve formun eski stilde GUID değişkenlerini başlatmak için derleyiciye `LIBID_MyLib`, `CLSID_MyCoClass`, `IID_MyInterface`, ve `DIID_MyDispInterface`.|  
-|[no_auto_exclude](../preprocessor/no-auto-exclude.md)|Otomatik dışlama devre dışı bırakır.|  
-|[no_dual_interfaces](../preprocessor/no-dual-interfaces.md)|Değişiklikleri derleyici yolu çift arabirim yöntemleri için sarmalayıcı işlevleri oluşturur.|  
-|[no_implementation](../preprocessor/no-implementation.md)|Kapsayıcı üye işlevleri uygulamalarını içeren .tli başlık oluşturulmasını bastırır.|  
-|[no_namespace](../preprocessor/no-namespace.md)|Ad alanı adı derleyici tarafından oluşturulmayan belirtir.|  
-|[no_registry](../preprocessor/no-registry.md)|Tür kitaplıkları için kayıt defterini aranmayacak derleyiciye bildirir.|  
-|[no_search_namespace](../preprocessor/no-search-namespace.md)|Aynı işlevlere sahip [no_namespace](../preprocessor/no-namespace.md) #import yönergesi ile kullandığınız tür kitaplıklarını kullanılır ancak öznitelik [auto_search](../preprocessor/auto-search.md) özniteliği.|  
-|[no_smart_pointers](../preprocessor/no-smart-pointers.md)|Tür kitaplığındaki tüm arabirimler için akıllı işaretçiler oluşturulmasını engeller.|  
-|[raw_dispinterfaces](../preprocessor/raw-dispinterfaces.md)|Dispinterface yöntemleri ve arama özellikleri için alt düzey sarmalayıcı işlevleri oluşturmak üzere derleyiciye `IDispatch::Invoke` ve HRESULT hata kodunu döndürür.|  
-|[raw_interfaces_only](../preprocessor/raw-interfaces-only.md)|Hata işleme sarmalayıcı işlevleri oluşturulmasını engeller ve [özelliği](../cpp/property-cpp.md) bu sarmalayıcı işlevleri bildirimleri.|  
-|[raw_method_prefix](../preprocessor/raw-method-prefix.md)|Ad çakışmalarını önlemek için farklı bir ön ekini belirtir.|  
-|[raw_native_types](../preprocessor/raw-native-types.md)|COM desteği sınıfları üst düzey sarmalayıcı işlevlerindeki kullanımını devre dışı bırakır ve bunun yerine alt düzey veri türleri kullanılmasını zorlar.|  
-|[raw_property_prefixes](../preprocessor/raw-property-prefixes.md)|Diğer özellik yöntemi için alternatif önekler belirtir.|  
-|[Yeniden adlandırma](../preprocessor/rename-hash-import.md)|Ad çakışması sorunlarını geçici olarak çalışır.|  
-|[rename_namespace](../preprocessor/rename-namespace.md)|Tür kitaplığı içeriğini içeren ad uzayı yeniden adlandırır.|  
-|[rename_search_namespace](../preprocessor/rename-search-namespace.md)|Aynı işlevlere sahip [rename_namespace](../preprocessor/rename-namespace.md) #import yönergesi ile kullandığınız tür kitaplıklarını kullanılır ancak öznitelik [auto_search](../preprocessor/auto-search.md) özniteliği.|  
-|[tlbid](../preprocessor/tlbid.md)|Birincil tür kitaplığı dışında kitaplıklarını yüklemek için sağlar.|  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- 
+İle kullanılan öznitelikler için bağlantılar sağlar `#import` yönergesi.
+
+**Microsoft'a özgü**
+
+Aşağıdaki öznitelikler kullanılabilir `#import` yönergesi.
+
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|[auto_rename](../preprocessor/auto-rename.md)|Olası ad çakışmalarını çözmek için değişken adına iki alt çizgi (__) ekleyerek C++ ayrılmış sözcüklerini yeniden adlandırır.|
+|[auto_search](../preprocessor/auto-search.md)|Tür kitaplığına #import ile başvurulduğunda ve kitaplığın kendisi başka bir tür kitaplığına başvurduğunda, derleyicinin diğer tür kitaplığı için örtük bir #import yapabileceğini belirtir.|
+|[embedded_idl](../preprocessor/embedded-idl.md)|Tür kitaplığı .tlh dosyasına, öznitelik tarafından oluşturulan kod korunarak yazıldığını belirtir.|
+|[Hariç tutma](../preprocessor/exclude-hash-import.md)|Öğeleri, oluşturulan tür kitaplığı üstbilgi dosyalarından çıkarır.|
+|[high_method_prefix](../preprocessor/high-method-prefix.md)|Üst düzey özelliklere ve yöntemlere adlandırma olarak kullanılacak bir ön ekini belirtir.|
+|[high_property_prefixes](../preprocessor/high-property-prefixes.md)|Diğer özellik yöntemi için alternatif önekler belirtir.|
+|[implementation_only](../preprocessor/implementation-only.md)|.Tlh üst bilgi dosyası (birincil üstbilgi dosyası) oluşturulmasını engeller.|
+|[include()](../preprocessor/include-parens.md)|Otomatik dışlama devre dışı bırakır.|
+|[inject_statement](../preprocessor/inject-statement.md)|Bağımsız değişkenini tür kitaplığı üstbilgisine kaynak metin olarak ekler.|
+|[named_guids](../preprocessor/named-guids.md)|Tanımlamak ve formun eski stilde GUID değişkenlerini başlatmak için derleyiciye `LIBID_MyLib`, `CLSID_MyCoClass`, `IID_MyInterface`, ve `DIID_MyDispInterface`.|
+|[no_auto_exclude](../preprocessor/no-auto-exclude.md)|Otomatik dışlama devre dışı bırakır.|
+|[no_dual_interfaces](../preprocessor/no-dual-interfaces.md)|Değişiklikleri derleyici yolu çift arabirim yöntemleri için sarmalayıcı işlevleri oluşturur.|
+|[no_implementation](../preprocessor/no-implementation.md)|Kapsayıcı üye işlevleri uygulamalarını içeren .tli başlık oluşturulmasını bastırır.|
+|[no_namespace](../preprocessor/no-namespace.md)|Ad alanı adı derleyici tarafından oluşturulmayan belirtir.|
+|[no_registry](../preprocessor/no-registry.md)|Tür kitaplıkları için kayıt defterini aranmayacak derleyiciye bildirir.|
+|[no_search_namespace](../preprocessor/no-search-namespace.md)|Aynı işlevlere sahip [no_namespace](../preprocessor/no-namespace.md) #import yönergesi ile kullandığınız tür kitaplıklarını kullanılır ancak öznitelik [auto_search](../preprocessor/auto-search.md) özniteliği.|
+|[no_smart_pointers](../preprocessor/no-smart-pointers.md)|Tür kitaplığındaki tüm arabirimler için akıllı işaretçiler oluşturulmasını engeller.|
+|[raw_dispinterfaces](../preprocessor/raw-dispinterfaces.md)|Dispinterface yöntemleri ve arama özellikleri için alt düzey sarmalayıcı işlevleri oluşturmak üzere derleyiciye `IDispatch::Invoke` ve HRESULT hata kodunu döndürür.|
+|[raw_interfaces_only](../preprocessor/raw-interfaces-only.md)|Hata işleme sarmalayıcı işlevleri oluşturulmasını engeller ve [özelliği](../cpp/property-cpp.md) bu sarmalayıcı işlevleri bildirimleri.|
+|[raw_method_prefix](../preprocessor/raw-method-prefix.md)|Ad çakışmalarını önlemek için farklı bir ön ekini belirtir.|
+|[raw_native_types](../preprocessor/raw-native-types.md)|COM desteği sınıfları üst düzey sarmalayıcı işlevlerindeki kullanımını devre dışı bırakır ve bunun yerine alt düzey veri türleri kullanılmasını zorlar.|
+|[raw_property_prefixes](../preprocessor/raw-property-prefixes.md)|Diğer özellik yöntemi için alternatif önekler belirtir.|
+|[Yeniden adlandırma](../preprocessor/rename-hash-import.md)|Ad çakışması sorunlarını geçici olarak çalışır.|
+|[rename_namespace](../preprocessor/rename-namespace.md)|Tür kitaplığı içeriğini içeren ad uzayı yeniden adlandırır.|
+|[rename_search_namespace](../preprocessor/rename-search-namespace.md)|Aynı işlevlere sahip [rename_namespace](../preprocessor/rename-namespace.md) #import yönergesi ile kullandığınız tür kitaplıklarını kullanılır ancak öznitelik [auto_search](../preprocessor/auto-search.md) özniteliği.|
+|[tlbid](../preprocessor/tlbid.md)|Birincil tür kitaplığı dışında kitaplıklarını yüklemek için sağlar.|
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

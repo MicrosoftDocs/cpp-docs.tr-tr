@@ -35,122 +35,122 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1c6bda8180d775b49c6bfe6bc98e3ddabe535ac0
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: efd643414085ee71c48e3d4a5654dac82b74b030
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082849"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081293"
 ---
 # <a name="irowsetnotifycp-class"></a>IRowsetNotifyCP Sınıfı
 
-Sağlayıcı sitesi için bağlantı noktası arabirimi uygulayan [IRowsetNotify](/previous-versions/windows/desktop/ms712959).  
-  
+Sağlayıcı sitesi için bağlantı noktası arabirimi uygulayan [IRowsetNotify](/previous-versions/windows/desktop/ms712959).
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-template <class T, class ReentrantEventSync = CComSharedMutex>  
-class IRowsetNotifyCP :   
-   public IConnectionPointImpl<  
-      T,   
-      piid = &__uuidof(IRowsetNotify),   
-      CComDynamicUnkArray DynamicUnkArray>,  
-   public ReentrantEventSync  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+template <class T, class ReentrantEventSync = CComSharedMutex>
+class IRowsetNotifyCP :
+   public IConnectionPointImpl<
+      T,
+      piid = &__uuidof(IRowsetNotify),
+      CComDynamicUnkArray DynamicUnkArray>,
+   public ReentrantEventSync
+```
+
+### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Öğesinden türetilen bir sınıf `IRowsetNotifyCP`.  
-  
+Öğesinden türetilen bir sınıf `IRowsetNotifyCP`.
+
 *ReentrantEventSync*<br/>
-Yeniden giriş destekleyen bir mutex sınıfı (varsayılan değer `CComSharedMutex`). Bir mutex bir iş parçacığı bir kaynağa karşılıklı olarak dışlama erişimine izin veren bir eşitleme nesnesi olan.  
-  
+Yeniden giriş destekleyen bir mutex sınıfı (varsayılan değer `CComSharedMutex`). Bir mutex bir iş parçacığı bir kaynağa karşılıklı olarak dışlama erişimine izin veren bir eşitleme nesnesi olan.
+
 *piid*<br/>
-Bir arabirim kimliği işaretçisi (`IID*`) için bir `IRowsetNotify` bağlantı noktası arabirimi. Varsayılan değer `&__uuidof(IRowsetNotify)` şeklindedir.  
-  
+Bir arabirim kimliği işaretçisi (`IID*`) için bir `IRowsetNotify` bağlantı noktası arabirimi. Varsayılan değer `&__uuidof(IRowsetNotify)` şeklindedir.
+
 *DynamicUnkArray*<br/>
-Türünde bir dizi [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), dinamik olarak ayrılan dizi olduğu `IUnknown` istemci işaretçileri havuz arabirimleri. 
+Türünde bir dizi [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), dinamik olarak ayrılan dizi olduğu `IUnknown` istemci işaretçileri havuz arabirimleri.
 
-## <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h   
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="methods"></a>Yöntemler  
-  
-|||  
-|-|-|  
-|[Fire_OnFieldChange](#onfieldchange)|Bir sütunun değerini değişiklik tüketicisinin bildirir.|  
-|[Fire_OnRowChange](#onrowchange)|Satırları etkileyen bir değişiklik tüketicisinin bildirir.|  
-|[Fire_OnRowsetChange](#onrowsetchange)|Tüm satır kümesini etkileyen bir değişiklik tüketicisinin bildirir.|  
-  
-## <a name="remarks"></a>Açıklamalar  
+**Başlık:** atldb.h
 
-`IRowsetNotifyCP` uygular bağlantı noktası üzerinde dinleyici bildirmek için işlevleri yayın `IID_IRowsetNotify` değişiklik kümesi içeriği.  
-  
-Ayrıca uygulama ve kaydetme gerekir unutmayın `IRowsetNotify` kullanarak tüketici (diğer adıyla "havuz") [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) tüketici bildirimleri işleyebilmeniz. Bkz: [bildirimleri alma](../../data/oledb/receiving-notifications.md) tüketici üzerinde bağlantı noktası arabirimini uygulayan hakkında.  
-  
-Bildirimleri uygulama ile ilgili ayrıntılı bilgi için bkz: "Destek bildirimleri" [güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md).  
+## <a name="members"></a>Üyeler
+
+### <a name="methods"></a>Yöntemler
+
+|||
+|-|-|
+|[Fire_OnFieldChange](#onfieldchange)|Bir sütunun değerini değişiklik tüketicisinin bildirir.|
+|[Fire_OnRowChange](#onrowchange)|Satırları etkileyen bir değişiklik tüketicisinin bildirir.|
+|[Fire_OnRowsetChange](#onrowsetchange)|Tüm satır kümesini etkileyen bir değişiklik tüketicisinin bildirir.|
+
+## <a name="remarks"></a>Açıklamalar
+
+`IRowsetNotifyCP` uygular bağlantı noktası üzerinde dinleyici bildirmek için işlevleri yayın `IID_IRowsetNotify` değişiklik kümesi içeriği.
+
+Ayrıca uygulama ve kaydetme gerekir unutmayın `IRowsetNotify` kullanarak tüketici (diğer adıyla "havuz") [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) tüketici bildirimleri işleyebilmeniz. Bkz: [bildirimleri alma](../../data/oledb/receiving-notifications.md) tüketici üzerinde bağlantı noktası arabirimini uygulayan hakkında.
+
+Bildirimleri uygulama ile ilgili ayrıntılı bilgi için bkz: "Destek bildirimleri" [güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md).
 
 ## <a name="onfieldchange"></a> IRowsetNotifyCP::fire_onfieldchange
 
-Yayınlar bir [OnFieldChange](/previous-versions/windows/desktop/ms715961) olay tüketicileri bir sütun değerine değişikliği bildirir.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp
-HRESULT Fire_OnFieldChange(IRowset* pRowset,  
-   HROW hRow,  
-   DBORDINAL cColumns,  
-   DBORDINAL* rgColumns,  
-   DBREASON eReason,  
-   DBEVENTPHASE ePhase,  
-   BOOL fCantDeny);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+Yayınlar bir [OnFieldChange](/previous-versions/windows/desktop/ms715961) olay tüketicileri bir sütun değerine değişikliği bildirir.
 
-Bkz: [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) içinde *OLE DB Programcının Başvurusu*. 
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT Fire_OnFieldChange(IRowset* pRowset,
+   HROW hRow,
+   DBORDINAL cColumns,
+   DBORDINAL* rgColumns,
+   DBREASON eReason,
+   DBEVENTPHASE ePhase,
+   BOOL fCantDeny);
+```
+
+#### <a name="parameters"></a>Parametreler
+
+Bkz: [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="onrowchange"></a> IRowsetNotifyCP::fire_onrowchange
 
-Yayınlar bir [OnRowChange](/previous-versions/windows/desktop/ms722694) tüm dinleyici bağlantı noktası üzerinde olaya `IID_IRowsetNotify` satırları etkileyen bir değişiklik tüketicilerinin bildirir.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp
-HRESULT Fire_OnRowChange(IRowset* pRowset,  
-   DBCOUNTITEM cRows,  
-   const HROW rghRows[],  
-   DBREASON eReason,  
-   DBEVENTPHASE ePhase,  
-   BOOL fCantDeny);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+Yayınlar bir [OnRowChange](/previous-versions/windows/desktop/ms722694) tüm dinleyici bağlantı noktası üzerinde olaya `IID_IRowsetNotify` satırları etkileyen bir değişiklik tüketicilerinin bildirir.
 
-Bkz: [IRowsetNotify::OnRowChange](/previous-versions/windows/desktop/ms722694) içinde *OLE DB Programcının Başvurusu*.  
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT Fire_OnRowChange(IRowset* pRowset,
+   DBCOUNTITEM cRows,
+   const HROW rghRows[],
+   DBREASON eReason,
+   DBEVENTPHASE ePhase,
+   BOOL fCantDeny);
+```
+
+#### <a name="parameters"></a>Parametreler
+
+Bkz: [IRowsetNotify::OnRowChange](/previous-versions/windows/desktop/ms722694) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="onrowsetchange"></a> IRowsetNotifyCP::fire_onrowsetchange
 
-Yayınlar bir [OnRowsetChange](/previous-versions/windows/desktop/ms722669) tüm dinleyici bağlantı noktası üzerinde olaya `IID_IRowsetNotify` tüm satır kümesini etkileyen bir değişiklik tüketicilerinin bildirir.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Yayınlar bir [OnRowsetChange](/previous-versions/windows/desktop/ms722669) tüm dinleyici bağlantı noktası üzerinde olaya `IID_IRowsetNotify` tüm satır kümesini etkileyen bir değişiklik tüketicilerinin bildirir.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-HRESULT Fire_OnRowsetChange(IRowset* pRowset,  
-   DBREASON eReason,  
-   DBEVENTPHASE ePhase,  
-   BOOL fCantDeny);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+HRESULT Fire_OnRowsetChange(IRowset* pRowset,
+   DBREASON eReason,
+   DBEVENTPHASE ePhase,
+   BOOL fCantDeny);
+```
+
+#### <a name="parameters"></a>Parametreler
 
 Bkz: [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669) içinde *OLE DB Programcının Başvurusu*.
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

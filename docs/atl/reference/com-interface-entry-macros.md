@@ -28,16 +28,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa3f3356cf3fdddeeb4245986549fa1bd2e12ae7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 16aa17ef58e8e4a7f0b8970cb229b6c914f291fe
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085231"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080123"
 ---
-# <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY makroları  
+# <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY makroları
 
-Bu makrolar böylece tarafından erişilebilecek bir nesnenin arabirimlerinin, COM eşlemesine girin. `QueryInterface`. Sipariş arabirimler için eşleşen bir IID sırasında edileceği COM eşlemesi girişleri sırasıdır `QueryInterface`.  
+Bu makrolar böylece tarafından erişilebilecek bir nesnenin arabirimlerinin, COM eşlemesine girin. `QueryInterface`. Sipariş arabirimler için eşleşen bir IID sırasında edileceği COM eşlemesi girişleri sırasıdır `QueryInterface`.
 
 |||
 |-|-|
@@ -55,7 +55,7 @@ Bu makrolar böylece tarafından erişilebilecek bir nesnenin arabirimlerinin, C
 |[COM_INTERFACE_ENTRY_CHAIN](#com_interface_entry_chain)|İşleme bu girdiye COM eşlemesine ulaştığında temel sınıfın COM eşlemesine işler.|
 |[COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)|ATL'nin takma için genel bir mekanizma `QueryInterface` mantığı.|
 |[COM_INTERFACE_ENTRY_FUNC_BLIND](#com_interface_entry_func_blind)|Aynı [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func), sorgulama için bir IID çağrısı sonuçlanır. dışında *func*.|
-|[COM_INTERFACE_ENTRY_NOINTERFACE](#com_interface_entry_nointerface)|E_noınterface döndürür ve belirtilen arabirim için sorgulandığında COM harita işleme sonlandırır.|  
+|[COM_INTERFACE_ENTRY_NOINTERFACE](#com_interface_entry_nointerface)|E_noınterface döndürür ve belirtilen arabirim için sorgulandığında COM harita işleme sonlandırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -70,6 +70,7 @@ Arabirimler COM arabirimi eşlemeye girer.
 ```
 COM_INTERFACE_ENTRY( x )
 ```
+
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
@@ -88,6 +89,7 @@ BEGIN_COM_MAP(CThisExample)
    COM_INTERFACE_ENTRY(ISupportErrorInfo)
 END_COM_MAP()
 ```
+
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** atlcom.h
@@ -406,4 +408,3 @@ Bu makro, belirli bir durumda kullanılan bir arabirim önlemek için kullanabil
 
 IID oluşturulmasını ekleyerek arabirime *x* için `IID_`. Örneğin, varsa *x* olduğu `IPersistStorage`, IID olacaktır `IID_IPersistStorage`.
 
-  

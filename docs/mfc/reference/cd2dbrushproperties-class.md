@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c02c2b2e6b0c24ab4f12d0d6b9c04927b2cba8d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c6268a4478fa361b521ac662852e62dd50c56621
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440556"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071816"
 ---
 # <a name="cd2dbrushproperties-class"></a>CD2DBrushProperties sınıfı
 
@@ -68,7 +68,6 @@ CD2D_BRUSH_PROPERTIES yapısını oluşturur
 ```
 CD2DBrushProperties();
 CD2DBrushProperties(FLOAT _opacity);
-
 
 CD2DBrushProperties(
     D2D1_MATRIX_3X2_F _transform,

@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: debe4c271d2a6e6a82cde9acc75eaa28404ebb43
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0979e2ccd505673c1e81c5a1be028bebcad66f52
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443884"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078823"
 ---
 # <a name="coleipframewnd-class"></a>Coleıpframewnd sınıfı
 
@@ -96,7 +96,6 @@ Framework çağrıları `OnCreateControlBars` yerinde düzenleme için bir öğe
 virtual BOOL OnCreateControlBars(
     CWnd* pWndFrame,
     CWnd* pWndDoc);
-
 
 virtual BOOL OnCreateControlBars(
     CFrameWnd* pWndFrame,

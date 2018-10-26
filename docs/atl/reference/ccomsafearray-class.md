@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 411b8f58b38d2b35c1353d1ff446407026977d66
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6537cdb9e7ff9806bef3bfec85a94e0d50808477
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46030150"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078472"
 ---
 # <a name="ccomsafearray-class"></a>CComSafeArray sınıfı
 
@@ -100,7 +100,7 @@ Dizide depolanan verinin türü.
 |----------|-----------------|
 |[CComSafeArray::operator LPSAFEARRAY](#operator_lpsafearray)|Değerine çevirir bir `SAFEARRAY` işaretçi.|
 |[CComSafeArray::operator\[\]](ccomsafearray-class.md#operator_at)|Öğe diziden alır.|
-|[CComSafeArray::operator =](#operator_eq)|Atama işleci.|  
+|[CComSafeArray::operator =](#operator_eq)|Atama işleci.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 

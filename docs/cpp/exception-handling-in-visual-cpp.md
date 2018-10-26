@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 869cc0404b19dd9cd6cd49dda9702445f420965e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b168bf95e44a41973d92230f559246b03f275601
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016981"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073090"
 ---
 # <a name="exception-handling-in-visual-c"></a>Visual C++'da Özel Durum İşleme
 
@@ -31,15 +31,15 @@ Visual C++ üç özel durum işleme türünü destekler:
 
 - [C++ özel durum işleme](../cpp/cpp-exception-handling.md)
 
-     C++ programları için hangi tür bakımından güvenlidir ve yığın geriye doğru izleme sırasında yok edicinin çağrılmadığına söz konusu nesne sağlar, C++ özel durum işleme kullanmanız gerekir.
+   C++ programları için hangi tür bakımından güvenlidir ve yığın geriye doğru izleme sırasında yok edicinin çağrılmadığına söz konusu nesne sağlar, C++ özel durum işleme kullanmanız gerekir.
 
 - [Yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md)
 
-     Windows SEH adı verilen kendi özel durum mekanizması sağlar. C++ ya da MFC programlama için önerilmez. SEH yalnızca MFC olmayan C programlarında kullanın.
+   Windows SEH adı verilen kendi özel durum mekanizması sağlar. C++ ya da MFC programlama için önerilmez. SEH yalnızca MFC olmayan C programlarında kullanın.
 
 - [MFC özel durumları](../mfc/exception-handling-in-mfc.md)
 
-     Sürüm 3.0, bu yana MFC C++ özel durumlarını kullanılmış, ancak yine de C++ özel durumlarını formunda benzer makroları, işleme, eski özel durumu destekler. Bu makrolar için yeni programlama önerilmez olsa da, bunlar yine de geriye dönük uyumluluk için desteklenir. Makroları kullanan programlar içinde de C++ özel durumlarını ücretsiz olarak kullanabilirsiniz. Ön işleme sırasında özel durum işleme Visual C++ uygulaması C++ dili Visual C++ sürüm 2. 0'den itibaren tanımlı anahtar sözcükler için makroları değerlendirir. C++ özel durumlarını kullanmayı başlatırken mevcut bir özel durum makroları yerinde bırakabilirsiniz.
+   Sürüm 3.0, bu yana MFC C++ özel durumlarını kullanılmış, ancak yine de C++ özel durumlarını formunda benzer makroları, işleme, eski özel durumu destekler. Bu makrolar için yeni programlama önerilmez olsa da, bunlar yine de geriye dönük uyumluluk için desteklenir. Makroları kullanan programlar içinde de C++ özel durumlarını ücretsiz olarak kullanabilirsiniz. Ön işleme sırasında özel durum işleme Visual C++ uygulaması C++ dili Visual C++ sürüm 2. 0'den itibaren tanımlı anahtar sözcükler için makroları değerlendirir. C++ özel durumlarını kullanmayı başlatırken mevcut bir özel durum makroları yerinde bırakabilirsiniz.
 
 Kullanma [/EH](../build/reference/eh-exception-handling-model.md) bir projede; kullanmak için özel durum işleme türünü belirtmek için derleyici seçeneği C++ özel durum işleme varsayılandır. Hata işleme düzenekleri karıştırmayın; Örneğin, C++ özel durumlarını, yapılandırılmış özel durum işleme ile kullanmayın. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir yapar ve herhangi bir türde özel durumları işlemenizi sağlar. Yapılandırılmış özel durum işleme dezavantajları hakkında daha fazla bilgi için bkz. [yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md). MFC makroları ve C++ özel durumlarını karıştırma hakkında daha fazla öneri için bkz. [özel durumlar: MFC makrolarını ve C++ özel durumlarını](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md).
 

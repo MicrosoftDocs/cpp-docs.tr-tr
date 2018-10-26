@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d050f27688d97cd3ef0352eed00f4dadb1fe6d98
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 96bcaf768ece46c22422fb3d98b85def7c57ed6b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403792"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056600"
 ---
 # <a name="creating-stack-and-queue-collections"></a>Yığın ve Kuyruk Koleksiyonları Oluşturma
 
@@ -40,9 +40,9 @@ Standart liste koleksiyon head hem bir kuyruk olduğundan, bir son giren ilk-ç�
 
 1. Varolan MFC listesi sınıflarının birinden bir yeni liste sınıf türetin ve yığın işlemleri işlevlerini desteklemek için daha fazla üye işlevleri ekleyin.
 
-     Aşağıdaki örnek, yığın, yığın üst öğesinin göz at açın öğeleri gönderme ve üst öğe yığından pop üye işlevleri eklemek gösterilmektedir:
+   Aşağıdaki örnek, yığın, yığın üst öğesinin göz at açın öğeleri gönderme ve üst öğe yığından pop üye işlevleri eklemek gösterilmektedir:
 
-     [!code-cpp[NVC_MFCCollections#20](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_1.h)]
+   [!code-cpp[NVC_MFCCollections#20](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_1.h)]
 
 Bu yaklaşım temel alınan göstermesini Not `CObList` sınıfı. Herhangi bir kullanıcı çağırabilirsiniz `CObList` üye işlevi bir yığın için veya mantıklıdır olup olmadığını.
 
@@ -54,9 +54,9 @@ Standart liste koleksiyon head hem bir kuyruk olduğundan, ayrıca ilk-giren ilk
 
 1. Microsoft Foundation Class Kitaplığı ile sağlanan önceden tanımlı listeye sınıflardan birini yeni bir liste sınıf türetin ve kuyruk işlemleri semantiği desteklemek için daha fazla üye işlevleri ekleyin.
 
-     Aşağıdaki örnek, üye işlevleri sırasının sonuna bir öğe ekleyin ve öğenin sıra önünden almak için nasıl ekleyebilir gösterir.
+   Aşağıdaki örnek, üye işlevleri sırasının sonuna bir öğe ekleyin ve öğenin sıra önünden almak için nasıl ekleyebilir gösterir.
 
-     [!code-cpp[NVC_MFCCollections#21](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_2.h)]
+   [!code-cpp[NVC_MFCCollections#21](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_2.h)]
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

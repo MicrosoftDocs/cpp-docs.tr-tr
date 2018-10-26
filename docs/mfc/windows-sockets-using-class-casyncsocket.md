@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49e5df8e88124d1d94869618a94525e224d32495
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0aaefc41ca365e2bf4d87583f2e25dfa2a870a90
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424683"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079018"
 ---
 # <a name="windows-sockets-using-class-casyncsocket"></a>Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma
 
@@ -48,19 +48,19 @@ Bu makalede ele alınmıştır:
 
 1. Oluşturmak bir [Casyncsocket'ini](../mfc/reference/casyncsocket-class.md) nesnesini ve nesne temel alınan oluşturun **YUVA** tanıtıcı.
 
-     Bir yuva oluşturulmasını iki aşamalı yapımı MFC desenini izler.
+   Bir yuva oluşturulmasını iki aşamalı yapımı MFC desenini izler.
 
-     Örneğin:
+   Örneğin:
 
-     [!code-cpp[NVC_MFCSimpleSocket#3](../mfc/codesnippet/cpp/windows-sockets-using-class-casyncsocket_1.cpp)]
+   [!code-cpp[NVC_MFCSimpleSocket#3](../mfc/codesnippet/cpp/windows-sockets-using-class-casyncsocket_1.cpp)]
 
      veya
 
-     [!code-cpp[NVC_MFCSimpleSocket#4](../mfc/codesnippet/cpp/windows-sockets-using-class-casyncsocket_2.cpp)]
+   [!code-cpp[NVC_MFCSimpleSocket#4](../mfc/codesnippet/cpp/windows-sockets-using-class-casyncsocket_2.cpp)]
 
-     Yukarıdaki ilk Oluşturucu bir `CAsyncSocket` yığında nesne. İkinci oluşturucu bir `CAsyncSocket` yığında. İlk [Oluştur](../mfc/reference/casyncsocket-class.md#create) yukarıdaki çağrı stream yuva oluşturma için varsayılan parametreleri kullanır. İkinci `Create` çağrı, belirtilen bağlantı noktası ve adresi ile bir veri birimi yuva oluşturur. (Kullanabilirsiniz `Create` ya da oluşturma yöntemiyle sürümü.)
+   Yukarıdaki ilk Oluşturucu bir `CAsyncSocket` yığında nesne. İkinci oluşturucu bir `CAsyncSocket` yığında. İlk [Oluştur](../mfc/reference/casyncsocket-class.md#create) yukarıdaki çağrı stream yuva oluşturma için varsayılan parametreleri kullanır. İkinci `Create` çağrı, belirtilen bağlantı noktası ve adresi ile bir veri birimi yuva oluşturur. (Kullanabilirsiniz `Create` ya da oluşturma yöntemiyle sürümü.)
 
-     Parametreleri `Create` şunlardır:
+   Parametreleri `Create` şunlardır:
 
    - "Bağlantı noktası": kısa bir tamsayı.
 
@@ -72,28 +72,28 @@ Bu makalede ele alınmıştır:
 
          This is your Internet Protocol (IP) address on the network. You will probably always rely on the default value for this parameter.
 
-     Koşulları "bağlantı noktası" ve "yuva adresi" açıklanmıştır [Windows Yuvaları: bağlantı noktaları ve yuva adresleri](../mfc/windows-sockets-ports-and-socket-addresses.md).
+   Koşulları "bağlantı noktası" ve "yuva adresi" açıklanmıştır [Windows Yuvaları: bağlantı noktaları ve yuva adresleri](../mfc/windows-sockets-ports-and-socket-addresses.md).
 
 1. Yuva bir istemciyse, yuva nesnesi cuya Bağlan kullanarak yuva [CAsyncSocket::Connect](../mfc/reference/casyncsocket-class.md#connect).
 
      veya
 
-     Yuva sunucusuysa dinleme başlamak için yuva ayarlayın (ile [CAsyncSocket::Listen](../mfc/reference/casyncsocket-class.md#listen)) için bir istemciden bağlanma girişimleri. Bir bağlantı isteği aldıktan sonra onunla kabul [CAsyncSocket::Accept](../mfc/reference/casyncsocket-class.md#accept).
+   Yuva sunucusuysa dinleme başlamak için yuva ayarlayın (ile [CAsyncSocket::Listen](../mfc/reference/casyncsocket-class.md#listen)) için bir istemciden bağlanma girişimleri. Bir bağlantı isteği aldıktan sonra onunla kabul [CAsyncSocket::Accept](../mfc/reference/casyncsocket-class.md#accept).
 
-     Bir bağlantı kabul ettikten sonra parolalar doğrulama gibi görevler gerçekleştirebilirsiniz.
+   Bir bağlantı kabul ettikten sonra parolalar doğrulama gibi görevler gerçekleştirebilirsiniz.
 
     > [!NOTE]
     >  `Accept` Üye işlev yeni, boş bir başvuru alır `CSocket` parametre olarak nesne. Çağırmadan önce bu nesne oluşturmalıdır `Accept`. Bu yuva nesne kapsam dışına gider, bağlantıyı kapatır. Çağırmayın `Create` bu yeni bir yuva nesnesi. Bir örnek için bkz [Windows Yuvaları: dizisi, işlemleri](../mfc/windows-sockets-sequence-of-operations.md).
 
 1. Çağırarak diğer yuva iletişimi yürütmek `CAsyncSocket` Windows Sockets API'SİNİN işlevleri kapsülleyen bir nesnenin üye işlevleri.
 
-     Bkz: Windows yuva belirtimi ve sınıf [Casyncsocket'ini](../mfc/reference/casyncsocket-class.md) içinde *MFC başvurusu*.
+   Bkz: Windows yuva belirtimi ve sınıf [Casyncsocket'ini](../mfc/reference/casyncsocket-class.md) içinde *MFC başvurusu*.
 
 1. Destroy `CAsyncSocket` nesne.
 
-     Yuva nesneyi yığında oluşturduysanız, yok edici içeren işlev kapsam dışına çıktığında çağırılır. Yuva nesneyi yığında oluşturduysanız, kullanarak **yeni** işleci, işiniz kullanmak için sorumlu **Sil** nesneyi yok etmek için işleci.
+   Yuva nesneyi yığında oluşturduysanız, yok edici içeren işlev kapsam dışına çıktığında çağırılır. Yuva nesneyi yığında oluşturduysanız, kullanarak **yeni** işleci, işiniz kullanmak için sorumlu **Sil** nesneyi yok etmek için işleci.
 
-     Nesnenin yok edici çağrıları [Kapat](../mfc/reference/casyncsocket-class.md#close) nesneyi yok etmek önce üye işlevi.
+   Nesnenin yok edici çağrıları [Kapat](../mfc/reference/casyncsocket-class.md#close) nesneyi yok etmek önce üye işlevi.
 
 Bu sırada bir kod örneği için (için gerçekten bir `CSocket` nesne), bkz [Windows Yuvaları: dizisi, işlemleri](../mfc/windows-sockets-sequence-of-operations.md).
 

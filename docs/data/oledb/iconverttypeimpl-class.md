@@ -25,67 +25,67 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 09f70e45891e7dc0b07933fe95dce772e5c7159a
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 351f22f49ec005b07fad6f4b215cdc75637213e0
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082351"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078485"
 ---
 # <a name="iconverttypeimpl-class"></a>IConvertTypeImpl Sınıfı
 
-Bir uygulamasını sağlar [IConvertType](/previous-versions/windows/desktop/ms715926) arabirimi.  
-  
+Bir uygulamasını sağlar [IConvertType](/previous-versions/windows/desktop/ms715926) arabirimi.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-template <class T>  
-class ATL_NO_VTABLE IConvertTypeImpl   
-   : public IConvertType, public CConvertHelper  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+template <class T>
+class ATL_NO_VTABLE IConvertTypeImpl
+   : public IConvertType, public CConvertHelper
+```
+
+### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Sınıfınız, türetilen `IConvertTypeImpl`.  
+Sınıfınız, türetilen `IConvertTypeImpl`.
 
-## <a name="requirements"></a>Gereksinimler  
+## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="interface-methods"></a>Arabirim yöntemleri  
-  
-|||  
-|-|-|  
-|[CanConvert](#canconvert)|Bir komutu veya bir satır kümesi tür dönüştürmeleri kullanılabilirliği hakkında bilgi sağlar.|  
-  
-## <a name="remarks"></a>Açıklamalar  
+**Başlık:** atldb.h
 
-Bu arabirim, komutları, satır kümeleri ve dizin satır kümeleri zorunludur. `IConvertTypeImpl` OLE DB tarafından sağlanan dönüştürme nesne temsilci atayarak arabirimini uygular.  
+## <a name="members"></a>Üyeler
+
+### <a name="interface-methods"></a>Arabirim yöntemleri
+
+|||
+|-|-|
+|[CanConvert](#canconvert)|Bir komutu veya bir satır kümesi tür dönüştürmeleri kullanılabilirliği hakkında bilgi sağlar.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu arabirim, komutları, satır kümeleri ve dizin satır kümeleri zorunludur. `IConvertTypeImpl` OLE DB tarafından sağlanan dönüştürme nesne temsilci atayarak arabirimini uygular.
 
 ## <a name="canconvert"></a> Iconverttypeımpl::canconvert
 
-Bir komutu veya bir satır kümesi tür dönüştürmeleri kullanılabilirliği hakkında bilgi sağlar.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
+Bir komutu veya bir satır kümesi tür dönüştürmeleri kullanılabilirliği hakkında bilgi sağlar.
+
+### <a name="syntax"></a>Sözdizimi
+
 ```cpp
-STDMETHOD(CanConvert)(DBTYPE wFromType,   
-   DBTYPE wToType,   
-   DBCONVERTFLAGS dwConvertFlags);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+STDMETHOD(CanConvert)(DBTYPE wFromType, 
+   DBTYPE wToType, 
+   DBCONVERTFLAGS dwConvertFlags);
+```
 
-Bkz: [IConvertType::CanConvert](/previous-versions/windows/desktop/ms711224) içinde *OLE DB Programcının Başvurusu*.  
-  
-### <a name="remarks"></a>Açıklamalar  
+#### <a name="parameters"></a>Parametreler
 
-OLE DB veri dönüştürme kullanan `MSADC.DLL`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Bkz: [IConvertType::CanConvert](/previous-versions/windows/desktop/ms711224) içinde *OLE DB Programcının Başvurusu*.
+
+### <a name="remarks"></a>Açıklamalar
+
+OLE DB veri dönüştürme kullanan `MSADC.DLL`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

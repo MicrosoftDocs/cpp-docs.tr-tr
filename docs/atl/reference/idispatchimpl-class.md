@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81feb345c25ea1c1e9d15dba8dceebb7a2cdb418
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8f457f47cc04791bc46aaa531d787f4d3f7044e1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709806"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055365"
 ---
 # <a name="idispatchimpl-class"></a>Idispatchımpl sınıfı
 
@@ -45,7 +45,7 @@ template<class T,
         const IID* piid= &__uuidof(T),
         const GUID* plibid = &CAtlModule::m_libid,
         WORD wMajor = 1,
-        WORD wMinor = 0, 
+        WORD wMinor = 0,
         class tihclass = CComTypeInfoHolder>
 class ATL_NO_VTABLE IDispatchImpl : public T
 ```

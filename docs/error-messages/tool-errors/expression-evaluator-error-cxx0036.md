@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2d82a1254a11dbda3164ea1c350dc14e2b1a122
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a94ed846d2d4ebda2e457ee772a9f8bf081d69d6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050118"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077181"
 ---
 # <a name="expression-evaluator-error-cxx0036"></a>İfade Değerlendirici Hatası CXX0036
 
@@ -32,20 +32,20 @@ Bu ileti, şu içerik işlecini kullanımında çeşitli hatalardan birini taraf
 
 - İçerik işleci sözdizimini (**{}**) hatalı durumda verildi.
 
-     Şu içerik işlecini sözdizimi aşağıdaki gibidir:
+   Şu içerik işlecini sözdizimi aşağıdaki gibidir:
 
      {*işlevi*,*Modülü*,*dll*}*ifadesi*
 
-     Bu bağlamı belirtir *ifade*. Şu içerik işlecini bir cast türünü aynı öncelik ve kullanım vardır.
+   Bu bağlamı belirtir *ifade*. Şu içerik işlecini bir cast türünü aynı öncelik ve kullanım vardır.
 
-     Virgül sondaki atlanabilir. Varsa *işlevi*, *Modülü*, veya *dll* sabit bir virgül içeren tüm adı parantez içine almalısınız.
+   Virgül sondaki atlanabilir. Varsa *işlevi*, *Modülü*, veya *dll* sabit bir virgül içeren tüm adı parantez içine almalısınız.
 
 - İşlev adı yanlış yazılmış veya belirtilen modül veya dinamik bağlantı kitaplığı yok.
 
-     C büyük küçük harfe duyarlı bir dil olduğundan *işlevi* kaynağında tanımlanan tam durumda verilmelidir.
+   C büyük küçük harfe duyarlı bir dil olduğundan *işlevi* kaynağında tanımlanan tam durumda verilmelidir.
 
 - Modül veya DLL bulunamadı.
 
-     Belirtilen modül veya DLL tam yol adını kontrol edin.
+   Belirtilen modül veya DLL tam yol adını kontrol edin.
 
 Bu hata için CAN0036 aynıdır.

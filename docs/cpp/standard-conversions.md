@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7d895671efdec4649faf1f0611380d2065770ac
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: dec0456c880fea47219dc11c509bbecac025f5d3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861453"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070594"
 ---
 # <a name="standard-conversions"></a>Standart Dönüşümler
 
@@ -81,11 +81,11 @@ Değer korumalı yükseltmeler ve işaretli durumu koruyan yükseltmeler normald
 
 - Bir işleneni **/**, `%`, `/=`, `%=`, **<**, **\< =**, **>**, veya **>=**
 
-     Bu işleçler sonucu belirlemek için işareti kullanırlar. Bu nedenle, değer korumalı ve işaret korumalı yükseltmeler bu işleçlere uygulandığında farklı sonuçlar verir.
+   Bu işleçler sonucu belirlemek için işareti kullanırlar. Bu nedenle, değer korumalı ve işaret korumalı yükseltmeler bu işleçlere uygulandığında farklı sonuçlar verir.
 
 - Sol işleneni **>>** veya **>>=**
 
-     Bu işleçler, kaydırma işlemi yapılırken işaretli ve işaretsiz miktarları farklı şekilde ele alırlar. İşaretli miktarlar için, bir miktarı sağa kaydırmak işaret bitinin boşaltılmış bit konumlarına dağıtılmasına neden olur. İşaretsiz miktarlar için, boşaltılmış bit konumları sıfırla dolguludur.
+   Bu işleçler, kaydırma işlemi yapılırken işaretli ve işaretsiz miktarları farklı şekilde ele alırlar. İşaretli miktarlar için, bir miktarı sağa kaydırmak işaret bitinin boşaltılmış bit konumlarına dağıtılmasına neden olur. İşaretsiz miktarlar için, boşaltılmış bit konumları sıfırla dolguludur.
 
 - Aşırı yüklenmiş bir işleve yönelik bir bağımsız değişken veya bağımsız değişken eşleştirme için ilgili işlecin türünün işaretli durumuna bağlı olan aşırı yüklenmiş bir işlecin işleci. (Bkz [aşırı yüklenmiş işleçler](../cpp/operator-overloading.md) tanımlama hakkında daha fazla bilgi için aşırı yüklenmiş işleçler.)
 

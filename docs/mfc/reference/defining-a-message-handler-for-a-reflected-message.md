@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26345a95559000815ed7d2e2cc336892d619969b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 104f9e0be67a350a1725dfbcd2bf234a8bc79553
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413750"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052570"
 ---
 # <a name="defining-a-message-handler-for-a-reflected-message"></a>Yansımış Bir İleti İçin İleti İşleyicisi Tanımlama
 
@@ -53,7 +53,7 @@ Oluşturmak için bir [ActiveX denetimi](../../mfc/activex-controls-on-the-inter
 
 1. Kabul etmek için önerilen adına tıklayın. İşleyici, projenize eklenir.
 
-     Eklediğiniz ileti işleyici adlarının yansımış iletiler penceresinin sağ sütunda görüntülenir.
+   Eklediğiniz ileti işleyici adlarının yansımış iletiler penceresinin sağ sütunda görüntülenir.
 
 9. Düzenleme ya da bir ileti işleyicisi silmek için 4-7 arası adımları yineleyin. Düzenleyin veya silin uygun göreve tıklayın işleyici adını içeren hücreye tıklayın.
 

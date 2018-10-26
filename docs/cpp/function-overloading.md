@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 608b4560f11e35d9aefb2c848a27c99c8dc6f4ec
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 3d942e2c5bca7d86e66cb579de1cbe946cb9f5f6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821354"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081501"
 ---
 # <a name="function-overloading"></a>İşlev Aşırı Yüklemesi
 
@@ -126,7 +126,6 @@ Yukarıdaki kod dosya kapsamındaki `print` işlevinin aşırı yüklenmesini g�
 Varsayılan bağımsız değişken işlev türünün bir parçası olarak kabul edilmez. Bu nedenle, aşırı yüklenmiş işlev seçmede kullanılmaz. Yalnızca kendi varsayılan bağımsız değişkenlerinde farklı olan iki işlevde, aşırı yüklenmiş işlevler yerine birden çok tanım dikkate alınır.
 
 Varsayılan bağımsız değişkenleri, aşırı yükleme işleçleri için verilemez.
-
 
 ## <a name="argument-matching"></a>Bağımsız Değişken Eşleştirme
 
@@ -471,7 +470,7 @@ Aşırı yükleyebilirler **new işleci** yalnızca temeline göre dönüş tür
     void Print( PSTR szToPrint );
     ```
 
-     Önceki iki işlev aynı bağımsız değişken listeleri vardır. `PSTR` tür eşanlamlıdır `char *`. Üye kapsamda Bu kod bir hata oluşturur.
+   Önceki iki işlev aynı bağımsız değişken listeleri vardır. `PSTR` tür eşanlamlıdır `char *`. Üye kapsamda Bu kod bir hata oluşturur.
 
 - Numaralandırılmış türler farklı türler ve aşırı yüklenmiş işlevler arasında ayrım yapmak için kullanılabilir.
 
@@ -482,7 +481,7 @@ Aşırı yükleyebilirler **new işleci** yalnızca temeline göre dönüş tür
     void Print( char szToPrint[] );
     ```
 
-     Birden çok kez dimensioned diziler için ikinci ve sonraki tüm boyutlar, türün bir parçası olarak kabul edilir. Bu nedenle, bunlar aşırı yüklenmiş işlevler arasında ayrım içinde kullanılır:
+   Birden çok kez dimensioned diziler için ikinci ve sonraki tüm boyutlar, türün bir parçası olarak kabul edilir. Bu nedenle, bunlar aşırı yüklenmiş işlevler arasında ayrım içinde kullanılır:
 
     ```cpp
     void Print( char szToPrint[] );

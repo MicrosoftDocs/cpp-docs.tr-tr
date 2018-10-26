@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6e8f448d4b6bee4b301fc567cc8e8e857747a4e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1ec2e3253b4d26bc6773ffc4005100edfbec1bff
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440296"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077536"
 ---
 # <a name="cpen-class"></a>CPen sınıfı
 
@@ -92,12 +92,10 @@ Oluşturur bir `CPen` nesne.
 ```
 CPen();
 
-
 CPen(
     int nPenStyle,
     int nWidth,
     COLORREF crColor);
-
 
 CPen(
     int nPenStyle,
@@ -132,13 +130,13 @@ Dosyanın ikinci sürümü, `CPen` Oluşturucu türü, stil, bitiş ucu ve birle
 
 - Yüzeysel kalem PS_COSMETIC oluşturur.
 
-     Dosyanın ikinci sürümü, `CPen` Oluşturucu ekler için aşağıdaki kalem stilleri *nPenStyle*:
+   Dosyanın ikinci sürümü, `CPen` Oluşturucu ekler için aşağıdaki kalem stilleri *nPenStyle*:
 
 - Her bir piksel ayarlayan kalem PS_ALTERNATE oluşturur. (Bu yalnızca yüzeysel kalemler için geçerlidir.)
 
 - Bir stil dizisi kullanan bir kalem PS_USERSTYLE oluşturur Kullanıcı tarafından sağlandı.
 
-     Bitiş ucu aşağıdaki değerlerden biri olabilir:
+   Bitiş ucu aşağıdaki değerlerden biri olabilir:
 
 - PS_ENDCAP_ROUND uç başlıkları YUVARLA.
 
@@ -146,7 +144,7 @@ Dosyanın ikinci sürümü, `CPen` Oluşturucu türü, stil, bitiş ucu ve birle
 
 - Düz PS_ENDCAP_FLAT uç başlıkları.
 
-     Birleştirme aşağıdaki değerlerden biri olabilir:
+   Birleştirme aşağıdaki değerlerden biri olabilir:
 
 - PS_JOIN_BEVEL birleşimler Eğimli.
 
@@ -192,7 +190,6 @@ BOOL CreatePen(
     int nPenStyle,
     int nWidth,
     COLORREF crColor);
-
 
 BOOL CreatePen(
     int nPenStyle,

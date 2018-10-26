@@ -150,12 +150,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e35b9d8d5a60fd35f69ec336a38d05a9ad614760
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ecb54aab57449b59231fcfe03fdbb6c6e8e2b4b4
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431768"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055183"
 ---
 # <a name="cmfctoolbarimages-class"></a>Cmfctoolbarımages sınıfı
 
@@ -279,7 +279,6 @@ Aşağıdaki örnek nasıl yapılandırılacağını gösteren bir `CMFCToolBarI
 
 ##  <a name="adaptcolors"></a>  CMFCToolBarImages::AdaptColors
 
-
 ```
 void AdaptColors(
     COLORREF clrBase,
@@ -288,8 +287,8 @@ void AdaptColors(
 
 ### <a name="parameters"></a>Parametreler
 
-*clrBase*<br/>
-[in] [in] *clrTone*
+[in] *clrBase*<br/>
+[in] *clrTone*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -349,7 +348,6 @@ Araç çubuğu sayısı, görüntüleri `CMFCToolBarImages` nesne tutan yeni bir
 
 ##  <a name="cleanup"></a>  CMFCToolBarImages::CleanUp
 
-
 ```
 static void __stdcall CleanUp();
 ```
@@ -378,14 +376,13 @@ Oluşturur bir `CMFCToolBarImages` nesne, kendi işleme altyapısı başlatır v
 
 ##  <a name="copyimagetoclipboard"></a>  CMFCToolBarImages::CopyImageToClipboard
 
-
 ```
 BOOL CopyImageToClipboard(int iImage);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *iImage*
+[in] *iImage*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -393,14 +390,13 @@ BOOL CopyImageToClipboard(int iImage);
 
 ##  <a name="copyto"></a>  CMFCToolBarImages::CopyTo
 
-
 ```
 BOOL CopyTo(CMFCToolBarImages& imageList);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *ImageList*
+[in] *ImageList*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -429,7 +425,6 @@ Dış görüntü listesi araç çubuğu görüntülerini listeden hızla başlat
 
 ##  <a name="createregionfromimage"></a>  CMFCToolBarImages::CreateRegionFromImage
 
-
 ```
 static HRGN __stdcall CreateRegionFromImage(
     HBITMAP bmp,
@@ -438,8 +433,8 @@ static HRGN __stdcall CreateRegionFromImage(
 
 ### <a name="parameters"></a>Parametreler
 
-*BMP*<br/>
-[in] [in] *clrTransparent*
+[in] *bmp*<br/>
+[in] *clrTransparent*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -518,7 +513,6 @@ Belirtilen görüntü başarıyla görüntüleniyorsa TRUE; FALSE görüntü diz
 
 ##  <a name="drawex"></a>  CMFCToolBarImages::DrawEx
 
-
 ```
 BOOL DrawEx(
     CDC* pDC,
@@ -526,23 +520,19 @@ BOOL DrawEx(
     int iImageIndex,
     ImageAlignHorz horzAlign = ImageAlignHorzLeft,
     ImageAlignVert vertAlign = ImageAlignVertTop,
-    CRect rectSrc = CRect(0,
-    0,
-    0,
-    0),
+    CRect rectSrc = CRect(0, 0, 0, 0),
     BYTE alphaSrc = 255);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-[in] [in] *rect*
-*iImageIndex*<br/>
-[in] [in] *horzAlign*
-*vertAlign*<br/>
-[in] [in] *rectSrc*
-*0*<br/>
-[in] [in] *0)*  [in] *alphaSrc*
+[in] *pDC*<br/>
+[in] *dikdörtgen*<br/>
+[in] *iImageIndex*<br/>
+[in] *horzAlign*<br/>
+[in] *vertAlign*<br/>
+[in] *rectSrc*<br/>
+[in] *alphaSrc*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -550,14 +540,13 @@ BOOL DrawEx(
 
 ##  <a name="enablertl"></a>  CMFCToolBarImages::EnableRTL
 
-
 ```
 static void __stdcall EnableRTL(BOOL bIsRTL = TRUE);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bIsRTL*
+[in] *bIsRTL*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -615,7 +604,6 @@ Bir dikdörtgen ortalaması COLOR_BTNFACE ve COLOR_BTNHIGHLIGHT sistem renkleri,
 
 ##  <a name="getalwayslight"></a>  CMFCToolBarImages::GetAlwaysLight
 
-
 ```
 BOOL GetAlwaysLight() const;
 ```
@@ -653,7 +641,6 @@ Geçerli alfa kanalı değeri.
 Çağırabilirsiniz [CMFCToolBarImages::SetDisabledImageAlpha](#setdisabledimagealpha) alfa kanalı değerini değiştirin.
 
 ##  <a name="getfadedimagealpha"></a>  CMFCToolBarImages::GetFadedImageAlpha
-
 
 ```
 static BYTE __stdcall GetFadedImageAlpha();
@@ -704,7 +691,6 @@ Araç çubuğu görüntülerini bir satır olarak bilinen tek bir bit eşlem iç
 
 ##  <a name="getimagewelllight"></a>  CMFCToolBarImages::GetImageWellLight
 
-
 ```
 HBITMAP GetImageWellLight() const;
 ```
@@ -714,7 +700,6 @@ HBITMAP GetImageWellLight() const;
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getlastimagerect"></a>  CMFCToolBarImages::GetLastImageRect
-
 
 ```
 CRect GetLastImageRect() const;
@@ -726,7 +711,6 @@ CRect GetLastImageRect() const;
 
 ##  <a name="getlightpercentage"></a>  CMFCToolBarImages::GetLightPercentage
 
-
 ```
 int GetLightPercentage() const;
 ```
@@ -736,7 +720,6 @@ int GetLightPercentage() const;
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getmapto3dcolors"></a>  CMFCToolBarImages::GetMapTo3DColors
-
 
 ```
 BOOL GetMapTo3DColors() const;
@@ -748,14 +731,13 @@ BOOL GetMapTo3DColors() const;
 
 ##  <a name="getmask"></a>  CMFCToolBarImages::GetMask
 
-
 ```
 HBITMAP GetMask(int iImage);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *iImage*
+[in] *iImage*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -779,7 +761,6 @@ int GetResourceOffset(UINT uiResId) const;
 Yöntem başarılı olduysa bir görüntü dizini; Belirtilen kaynak kimliği ile görüntü yoksa -1.
 
 ##  <a name="gettransparentcolor"></a>  CMFCToolBarImages::GetTransparentColor
-
 
 ```
 COLORREF GetTransparentColor() const;
@@ -830,7 +811,6 @@ static BOOL Is32BitTransparencySupported();
 Çalışma zamanında, işletim sistemi 32 bit alfa karıştırma destekleyip desteklemediğini belirlemek için statik bu yöntemi kullanın. Bu özellik, Windows 2000 ve sonraki sürümlerde desteklenir.
 
 ##  <a name="ispremultiplyautocheck"></a>  CMFCToolBarImages::IsPreMultiplyAutoCheck
-
 
 ```
 BOOL IsPreMultiplyAutoCheck() const;
@@ -942,7 +922,6 @@ Dosya salt okunur öznitelik varsa, görüntü listesi salt okunur olarak işare
 
 ##  <a name="loadstr"></a>  CMFCToolBarImages::LoadStr
 
-
 ```
 BOOL LoadStr(
     LPCTSTR lpszResourceName,
@@ -952,15 +931,15 @@ BOOL LoadStr(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszResourceName*<br/>
-[in] [in] *hinstRes* [in] *bekle*
+[in] *lpszResourceName*<br/>
+[in] *hinstRes*<br/>
+[in] *bekle*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="mapfromsyscolor"></a>  CMFCToolBarImages::MapFromSysColor
-
 
 ```
 static COLORREF __stdcall MapFromSysColor(
@@ -970,15 +949,14 @@ static COLORREF __stdcall MapFromSysColor(
 
 ### <a name="parameters"></a>Parametreler
 
-*Renk*<br/>
-[in] [in] *bUseRGBQUAD*
+[in] *rengi*<br/>
+[in] *bUseRGBQUAD*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="mapto3dcolors"></a>  CMFCToolBarImages::MapTo3dColors
-
 
 ```
 BOOL MapTo3dColors(
@@ -989,15 +967,15 @@ BOOL MapTo3dColors(
 
 ### <a name="parameters"></a>Parametreler
 
-*bUseRGBQUAD*<br/>
-[in] [in] *clrSrc* [in] *clrDest*
+[in] *bUseRGBQUAD*<br/>
+[in] *clrSrc*<br/>
+[in] *clrDest*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="maptosyscolor"></a>  CMFCToolBarImages::MapToSysColor
-
 
 ```
 static COLORREF __stdcall MapToSysColor(
@@ -1007,8 +985,8 @@ static COLORREF __stdcall MapToSysColor(
 
 ### <a name="parameters"></a>Parametreler
 
-*Renk*<br/>
-[in] [in] *bUseRGBQUAD*
+[in] *rengi*<br/>
+[in] *bUseRGBQUAD*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1016,14 +994,13 @@ static COLORREF __stdcall MapToSysColor(
 
 ##  <a name="maptosyscoloralpha"></a>  CMFCToolBarImages::MapToSysColorAlpha
 
-
 ```
 static COLORREF __stdcall MapToSysColorAlpha(COLORREF color);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *rengi*
+[in] *rengi*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1073,7 +1050,6 @@ Bu işlev, sağdan sola yazma sistemleri desteklemek için kullanılır.
 
 ##  <a name="mirrorbitmapvert"></a>  CMFCToolBarImages::MirrorBitmapVert
 
-
 ```
 static BOOL __stdcall MirrorBitmapVert(
     HBITMAP& hbmp,
@@ -1082,15 +1058,14 @@ static BOOL __stdcall MirrorBitmapVert(
 
 ### <a name="parameters"></a>Parametreler
 
-*hbmp*<br/>
-[in] [in] *cyImage*
+[in] *hbmp*<br/>
+[in] *cyImage*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="mirrorvert"></a>  CMFCToolBarImages::MirrorVert
-
 
 ```
 BOOL MirrorVert();
@@ -1102,7 +1077,6 @@ BOOL MirrorVert();
 
 ##  <a name="onsyscolorchange"></a>  CMFCToolBarImages::OnSysColorChange
 
-
 ```
 void OnSysColorChange();
 ```
@@ -1110,7 +1084,6 @@ void OnSysColorChange();
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="premultiplyalpha"></a>  CMFCToolBarImages::PreMultiplyAlpha
-
 
 ```
 static BOOL __stdcall PreMultiplyAlpha(
@@ -1122,8 +1095,8 @@ BOOL PreMultiplyAlpha(HBITMAP hbmp);
 
 ### <a name="parameters"></a>Parametreler
 
-*hbmp*<br/>
-[in] [in] *bAutoCheckPremlt*
+[in] *hbmp*<br/>
+[in] *bAutoCheckPremlt*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1197,14 +1170,13 @@ Kullanıcı tanımlı görüntüleri bir disk dosyasına depolamak için bu yön
 
 ##  <a name="setalwayslight"></a>  CMFCToolBarImages::SetAlwaysLight
 
-
 ```
 void SetAlwaysLight(BOOL bAlwaysLight = TRUE);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bAlwaysLight*
+[in] *bAlwaysLight*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1227,14 +1199,13 @@ Devre dışı görüntüleri için özel bir alfa değeri ayarlamak için bu yö
 
 ##  <a name="setfadedimagealpha"></a>  CMFCToolBarImages::SetFadedImageAlpha
 
-
 ```
 static void __stdcall SetFadedImageAlpha(BYTE nValue);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nDeğer*
+[in] *nDeğer*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1259,19 +1230,17 @@ Varsayılan olarak araç görüntüsünün boyutu 16 x 15 pikseldir. Araç çubu
 
 ##  <a name="setlightpercentage"></a>  CMFCToolBarImages::SetLightPercentage
 
-
 ```
 void SetLightPercentage(int nValue);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nDeğer*
+[in] *nDeğer*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setmapto3dcolors"></a>  CMFCToolBarImages::SetMapTo3DColors
-
 
 ```
 void SetMapTo3DColors(BOOL bMapTo3DColors);
@@ -1279,12 +1248,11 @@ void SetMapTo3DColors(BOOL bMapTo3DColors);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bMapTo3DColors*
+[in] *bMapTo3DColors*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setpremultiplyautocheck"></a>  CMFCToolBarImages::SetPreMultiplyAutoCheck
-
 
 ```
 void SetPreMultiplyAutoCheck(BOOL bAuto = TRUE);
@@ -1292,12 +1260,11 @@ void SetPreMultiplyAutoCheck(BOOL bAuto = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bDil*
+[in] *bDil*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setsingleimage"></a>  CMFCToolBarImages::SetSingleImage
-
 
 ```
 void SetSingleImage();

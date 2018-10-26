@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee8080c8e2caacb882f43425ab528a08dd2f8ea0
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 881c86a75d9015117be4b51a8b7457bed4988fd3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083755"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078550"
 ---
 # <a name="caccesstoken-class"></a>CAccessToken sınıfı
 
@@ -185,7 +185,7 @@ Belirtilen SID içinde etkin olup olmadığını belirlemek için bu yöntemi ç
 
 ```
 bool CheckTokenMembership(
-    const CSid& rSid, 
+    const CSid& rSid,
     bool* pbIsMember) const throw(...);
 ```
 
@@ -216,7 +216,7 @@ Kimliğe bürünme erişim belirteci oluşturmak için bu yöntemi çağırın.
 
 ```
 bool CreateImpersonationToken(
-    CAccessToken* pImp, 
+    CAccessToken* pImp,
     SECURITY_IMPERSONATION_LEVEL sil = SecurityImpersonation) const throw(...);
 ```
 
@@ -1086,7 +1086,7 @@ Belirtilen bir ayrıcalık kümesi etkin içinde olup olmadığını belirlemek 
 ```
 bool PrivilegeCheck(
     PPRIVILEGE_SET RequiredPrivileges,
-     bool* pbResult) const throw();
+    bool* pbResult) const throw();
 ```
 
 ### <a name="parameters"></a>Parametreler

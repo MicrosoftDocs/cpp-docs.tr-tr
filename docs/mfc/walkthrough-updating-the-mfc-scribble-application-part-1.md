@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48cbc29685660f00665fbbb08be76779272d0fcf
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 3daa42008bd385b2d45d05106162c99fb9ca0b12
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235515"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082885"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>İzlenecek yol: MFC karalama uygulamasını (Kısım 1) güncelleştiriliyor
 
@@ -32,7 +32,7 @@ Bu yönerge Şerit kullanıcı arabirimini kullanarak varolan bir MFC uygulamas�
 
 Bu kılavuz satırı çizimler için fare kullanmanıza olanak sağlayan Klasik 1.0 MFC karalama örneği değiştirir. Kılavuzun bu bölümü, böylece bir Şerit çubuğuna görüntüler genişletilen Scribble örneğinin değiştirme işlemi gösterilmektedir. [2. bölüm](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md) diğer düğmeleri Şerit çubuğuna ekler.
 
-## <a name="prerequisites"></a>Önkoşullar 
+## <a name="prerequisites"></a>Önkoşullar
 
 [1.0 MFC karalama örnek](http://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe). Visual Studio 2017'ye dönüştürme hakkında daha fazla yardım için bkz: [Taşıma Kılavuzu: MFC karalama](../porting/porting-guide-mfc-scribble.md).
 
@@ -146,7 +146,7 @@ Bu izlenecek yolda oluşturulan örnek kaynak dosyalarını kopyalar [izlenecek 
    1. On 16 x 16 (16 x 176) içeren filesmall.bmp dosyasını içeri aktarma görüntüler. Bit eşleme Kimliğini değiştirme `IDB_RIBBON_FILESMALL`.
 
    > [!NOTE]
-   > Biz yalnızca ilk sekiz 16 x 16 görüntü (16 x 128) gerektiğinden, isteğe bağlı olarak bu 176 bit eşlem 128 için sağ taraftaki genişliğini kırpma. 
+   > Biz yalnızca ilk sekiz 16 x 16 görüntü (16 x 128) gerektiğinden, isteğe bağlı olarak bu 176 bit eşlem 128 için sağ taraftaki genişliğini kırpma.
 
    1. Dokuz 32 x 32 (32 x 288) içeren filelarge.bmp alma görüntüler. Bit eşleme Kimliğini değiştirme `IDB_RIBBON_FILELARGE`.
 
@@ -161,7 +161,7 @@ Bu izlenecek yolda oluşturulan örnek kaynak dosyalarını kopyalar [izlenecek 
    1. Sekiz 16 x 16 görüntü içeren panelicons.bmp bit eşlem olarak içeri aktarın. İçinde **özellikleri** pencerenin **bit eşlem Düzenleyicisi**, (16 x 64) 64 bit eşlem genişliğini ayarla. Bit eşleme Kimliğini değiştirme `IDB_PANEL_ICONS`.
 
    > [!NOTE]
-   > Biz yalnızca ilk dört 16 x 16 görüntü (16 x 64) gerektiğinden, isteğe bağlı olarak bu 128 bit eşlem 64 sağ taraftaki genişliğini kırpma. 
+   > Biz yalnızca ilk dört 16 x 16 görüntü (16 x 64) gerektiğinden, isteğe bağlı olarak bu 128 bit eşlem 64 sağ taraftaki genişliğini kırpma.
 
 ##  <a name="addribbon"></a> Projeye bir Şerit kaynağı ekleme
 

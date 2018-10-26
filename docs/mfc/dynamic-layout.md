@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08fc6f6a5b93851468d412e34b3ee0a85ab534e5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5e2fb7b2468946be29553f54fcedde98e43881d7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413256"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068833"
 ---
 # <a name="dynamic-layout"></a>Dinamik Düzen
 
@@ -119,7 +119,7 @@ Dinamik düzen davranışı bir iletişim kutusu için kaynak düzenleyicisini k
     dynamicLayout->LoadResource("IDD_DIALOG1");
     ```
 
-     Adlandırılmış kaynağı biçiminde düzeni bilgilerini içeren bir iletişim kutusu başvurmalıdır bir **AFX_DIALOG_LAYOUT** kaynak dosyasında, aşağıdaki örnekte olduğu gibi giriş:
+   Adlandırılmış kaynağı biçiminde düzeni bilgilerini içeren bir iletişim kutusu başvurmalıdır bir **AFX_DIALOG_LAYOUT** kaynak dosyasında, aşağıdaki örnekte olduğu gibi giriş:
 
     ```RC
     /////////////////////////////////////////////////////////////////////////////

@@ -94,12 +94,12 @@ helpviewer_keywords:
 - std::experimental::filesystem::u8path
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4dc53bff438830cfb8a7b0414c4e5cfb111f8f31
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: 8fcf7260b6bb10e317a3244ee11b4a92658daf45
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691503"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063308"
 ---
 # <a name="ltfilesystemgt-functions"></a>&lt;dosya sistemi&gt; işlevleri
 
@@ -120,7 +120,6 @@ Bu işlevleri ücretsiz [ \<filesystem >](../standard-library/filesystem.md) üs
 |[resize_file](#resize_file)|[alanı](#space)|[Durumu](#status)|
 |[status_known](#status_known)|[değiştirme](#swap)|[symlink_status](#symlink_status)|
 |[system_complete](#system_complete)|[temp_directory_path](#temp_directory_path)|[u8path](#u8path)|
-
 
 ## <a name="absolute"></a> Mutlak
 

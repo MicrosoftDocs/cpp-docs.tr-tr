@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdaf4cf8e1c2f6a062c133ab9e0427cab1d3d094
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 685f1b7d24e781dbee6d67b325b059f09ca9bf4c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762554"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054221"
 ---
 # <a name="adding-connection-points-to-an-object"></a>Bir nesneye bağlantı noktaları ekleme
 
@@ -38,15 +38,15 @@ Her iki durumda da, bağlantı noktası Uygulama Sihirbazı, işlemini gerçekle
 
 1. .İdl dosyasının kitaplığı bloğunda bir dispinterface tanımlayın. ATL denetimi Sihirbazı'yla denetim oluşturduğunuzda bağlantı noktaları desteğini etkinleştirilirse, dispinterface zaten oluşturulur. Denetim oluşturduğunuzda bağlantı noktaları desteğini etkinleştirmediyseniz .idl dosyasına bir dispinterface el ile eklemeniz gerekir. Bir dispinterface örneği verilmiştir. Giden arabirimleri dağıtma arabirimleri olarak gerekli değildir, ancak bu, bu örnekte iki görüntü arabirimlerinde bunu VBScript ve JScript gibi pek çok komut dosyası dilleri gerektirir:
 
-     [!code-cpp[NVC_ATL_Windowing#81](../atl/codesnippet/cpp/adding-connection-points-to-an-object_1.idl)]
+   [!code-cpp[NVC_ATL_Windowing#81](../atl/codesnippet/cpp/adding-connection-points-to-an-object_1.idl)]
 
-     Bir GUID oluşturulacak uuidgen.exe veya guidgen.exe yardımcı programını kullanın.
+   Bir GUID oluşturulacak uuidgen.exe veya guidgen.exe yardımcı programını kullanın.
 
 2. Dispinterface olarak ekleme `[default,source]` nesnesinin projenin .idl dosyasındaki coclass'ı arabirimi. ATL Denetim Sihirbazı'nı denetim oluşturduğunuzda bağlantı noktaları desteğini etkinleştirilirse, yeniden oluşturur `[default,source`] giriş. Bu giriş el ile eklemek için satırın kalın olarak ekleyin:
 
-     [!code-cpp[NVC_ATL_Windowing#82](../atl/codesnippet/cpp/adding-connection-points-to-an-object_2.idl)]
+   [!code-cpp[NVC_ATL_Windowing#82](../atl/codesnippet/cpp/adding-connection-points-to-an-object_2.idl)]
 
-     .İdl dosyasına bakın [Dai](../visual-cpp-samples.md) ATL örnek olarak.
+   .İdl dosyasına bakın [Dai](../visual-cpp-samples.md) ATL örnek olarak.
 
 3. Sınıf Görünümü, olay arabirimin yöntemlerini ve özelliklerini eklemek için kullanın. Sınıf Görünümü'nde sınıfı sağ tıklatın, **Ekle** kısayol menüsüne ve ardından şirket **bağlantı noktası Ekle**.
 
@@ -56,7 +56,7 @@ Her iki durumda da, bağlantı noktası Uygulama Sihirbazı, işlemini gerçekle
 
    - Bağlantı noktası eşlemesi için bir giriş ekleyin.
 
-     Ayrıca, bilgisayarınızda tüm tür kitaplıklarını bir listesini görürsünüz. Yalnızca bu diğer tür kitaplıklarında biri başka bir tür kitaplığında bulunan tam aynı giden arabirimini uygulamak istiyorsanız, bağlantı noktası tanımlamak için kullanmanız gerekir.
+   Ayrıca, bilgisayarınızda tüm tür kitaplıklarını bir listesini görürsünüz. Yalnızca bu diğer tür kitaplıklarında biri başka bir tür kitaplığında bulunan tam aynı giden arabirimini uygulamak istiyorsanız, bağlantı noktası tanımlamak için kullanmanız gerekir.
 
 ### <a name="to-reuse-a-connection-point-interface-defined-in-another-type-library"></a>Bir bağlantı noktası arabirimi yeniden kullanmak için başka bir tür kitaplığında tanımlanan
 

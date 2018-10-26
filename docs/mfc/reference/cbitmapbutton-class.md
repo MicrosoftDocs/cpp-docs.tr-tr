@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a4cc427459036b4b124573f47c71146eafcb970
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 45909e50e56802fd547e6d68964fc3044921092e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422280"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066857"
 ---
 # <a name="cbitmapbutton-class"></a>CBitmapButton sınıfı
 
@@ -178,7 +178,6 @@ BOOL LoadBitmaps(
     LPCTSTR lpszBitmapResourceSel = NULL,
     LPCTSTR lpszBitmapResourceFocus = NULL,
     LPCTSTR lpszBitmapResourceDisabled = NULL);
-
 
 BOOL LoadBitmaps(
     UINT nIDBitmapResource,

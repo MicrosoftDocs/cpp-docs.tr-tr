@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 295749648dd54349c3fa735008ef8c04d51c8e04
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f4c2ad96674058ac57ccdc7cef9537f1cb413b92
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441908"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079707"
 ---
 # <a name="coleobjectfactory-class"></a>COleObjectFactory sınıfı
 
@@ -132,7 +132,6 @@ COleObjectFactory(
     BOOL bMultiInstance,
     LPCTSTR lpszProgID);
 
-
 COleObjectFactory(
     REFCLSID clsid,
     CRuntimeClass* pRuntimeClass,
@@ -163,7 +162,7 @@ Bir veya daha fazla aşağıdaki bayraklar içerir:
 
 - `afxRegFreeThreading` İş parçacığı modeli ThreadingModel kayıt defterindeki ayarlar ücretsiz =.
 
-     İki bayrak birleştirebilirsiniz `afxRegApartmentThreading` ve `afxRegFreeThreading` ThreadingModel ayarlamak için her ikisi =. Bkz: [Inprocserver32](/windows/desktop/com/inprocserver32) model kaydı iş parçacığı oluşturma hakkında daha fazla bilgi için Windows SDK.
+   İki bayrak birleştirebilirsiniz `afxRegApartmentThreading` ve `afxRegFreeThreading` ThreadingModel ayarlamak için her ikisi =. Bkz: [Inprocserver32](/windows/desktop/com/inprocserver32) model kaydı iş parçacığı oluşturma hakkında daha fazla bilgi için Windows SDK.
 
 *lpszProgID*<br/>
 "Microsoft Excel" gibi bir sözlü program tanımlayıcı içeren bir dize işaretçisi
@@ -349,7 +348,7 @@ Bu işlev için iki biçim kısa tartışmalar izleyin:
 
 - **UpdateRegistry (** `bRegister` **)** bu işlev geçersiz kılınabilir şeklidir. Varsa *bRegister* true, denetim sınıf sistem kayıt defteri ile bu işlevi kaydeder. Aksi takdirde, sınıf kaydını siler.
 
-     MFC ActiveX ControlWizard projenizi oluşturmak için kullanıyorsanız, bu saf sanal işlevi geçersiz kılma ControlWizard sağlar.
+   MFC ActiveX ControlWizard projenizi oluşturmak için kullanıyorsanız, bu saf sanal işlevi geçersiz kılma ControlWizard sağlar.
 
 ##  <a name="updateregistryall"></a>  COleObjectFactory::UpdateRegistryAll
 

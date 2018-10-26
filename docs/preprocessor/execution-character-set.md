@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1557cf0ee42b10627618fff8a30ea6d5a6fbb169
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: b81832ba31fc8ef36510ce4f35c9fb1a5f3426b9
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49807945"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075027"
 ---
 # <a name="executioncharacterset"></a>execution_character_set
 
@@ -52,6 +52,6 @@ Varsayılan olarak, Visual Studio, kaynak kodunuz için çıkış yorumlamak iç
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
+[Pragma yönergeleri ve \_ \_Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [/ Execution-Charset (yürütme karakter kümesini Ayarla)](../build/reference/execution-charset-set-execution-character-set.md)<br/>
 [/utf-8 (Kaynak ve Yürütülebilir karakter kümelerini UTF-8 olarak ayarla)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)

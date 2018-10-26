@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f937c2cdaa4bb7f31b39b8a28c657274830fc36
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 45a5b1714721a414f1016d977cc9cb549b4000d7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446614"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083119"
 ---
 # <a name="event-maps"></a>Olay Eşlemeleri
 
@@ -279,7 +279,6 @@ Framework tarafından fiil çağrıldığında çağrılan işlev.
 Standart fiili dizini biçimindedir `OLEIVERB_`takip eden eylem. OLEIVERB_SHOW OLEIVERB_HIDE ve OLEIVERB_UIACTIVATE standart fiiller bazı örnekleridir.
 
 Bkz: [ON_OLEVERB](#on_oleverb) olarak kullanılmak üzere işlev prototipi açıklamasını *memberFxn* parametresi.
-
 
 ### <a name="requirements"></a>Gereksinimler
 

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3bef300671894e054ddf9b1ca0ab9dcf3b135370
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f035ac105dee4e668ca8bee0bab18c2a31fd027f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019434"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069158"
 ---
 # <a name="debugging-and-error-reporting-global-functions"></a>Hata ayıklama ve hata raporlama genel işlevleri
 
@@ -47,11 +47,11 @@ HRESULT AtlHresultFromLastError();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AtlHresultFromLastError` çağrıları `GetLastError` son hata elde edilir ve bu hresult_from_wın32 makrosu kullanarak HRESULT dönüştürdükten sonra bir hata döndürür.  
+`AtlHresultFromLastError` çağrıları `GetLastError` son hata elde edilir ve bu hresult_from_wın32 makrosu kullanarak HRESULT dönüştürdükten sonra bir hata döndürür.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcomcli.h  
+**Başlık:** atlcomcli.h
 
 ##  <a name="atlhresultfromwin32"></a>  AtlHresultFromWin32
 
@@ -71,11 +71,11 @@ Dönüştürülecek hata değeri.
 Win32 hata kodunu bu hresult_from_wın32 makrosu kullanılarak bir HRESULT biçimine dönüştürür.
 
 > [!NOTE]
->  Yerine `HRESULT_FROM_WIN32(GetLastError())`, işlevini [AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror).  
+>  Yerine `HRESULT_FROM_WIN32(GetLastError())`, işlevini [AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcomcli.h  
+**Başlık:** atlcomcli.h
 
 ##  <a name="atlreporterror"></a>  AtlReportError
 
@@ -166,7 +166,7 @@ Dize *lpszDesc* hatanın metin açıklama kullanılır. İstemci aldığında *X
 [!code-cpp[NVC_ATL_COM#52](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_1.cpp)]
 
 > [!CAUTION]
->  Kullanmayın `AtlReportError` c++'ta catch işleyicileri. Sırayla kullandığınız dahili olarak, bu işlevlerin bazı geçersiz kılmaları ATL dize dönüşüm makroları kullanın `_alloca` dahili olarak işlev. Kullanarak `AtlReportError` bir C++ catch işleyicisi özel durumları C++ catch işleyicileri neden olabilir.  
+>  Kullanmayın `AtlReportError` c++'ta catch işleyicileri. Sırayla kullandığınız dahili olarak, bu işlevlerin bazı geçersiz kılmaları ATL dize dönüşüm makroları kullanın `_alloca` dahili olarak işlev. Kullanarak `AtlReportError` bir C++ catch işleyicisi özel durumları C++ catch işleyicileri neden olabilir.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -203,11 +203,11 @@ ATL projeleri için bu işlev bir hata olması durumunda ATL tarafından kullan�
 
 ### <a name="example"></a>Örnek
 
-[!code-cpp[NVC_ATL_Windowing#95](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_2.h)]  
+[!code-cpp[NVC_ATL_Windowing#95](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_2.h)]
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldef.h  
+**Başlık:** atldef.h
 
 ##  <a name="atlthrowlastwin32"></a>  AtlThrowLastWin32
 
@@ -225,7 +225,7 @@ Bir MFC projesinde _ATL_NO_EXCEPTIONS tanımlı değil, bu işlev oluşturur. bi
 
 Bir ATL projesinde _ATL_NO_EXCEPTIONS tanımlı değil, işlev oluşturur. bir [CAtlException](../../atl/reference/catlexception-class.md).
 
-_ATL_NO_EXCEPTIONS tanımlanmazsa, işlev bir özel durum oluşturmaktansa bir onaylama işlemi hatasına neden olur.  
+_ATL_NO_EXCEPTIONS tanımlanmazsa, işlev bir özel durum oluşturmaktansa bir onaylama işlemi hatasına neden olur.
 
 ## <a name="requirements"></a>Gereksinimler
 

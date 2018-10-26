@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f2d31d24007da1ec279e9c9762158b549e83d114
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: cf54f03ffd18c9f02920049fa60781a781865cc6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49809128"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082332"
 ---
 # <a name="cstringt-class"></a>CStringT sınıfı
 
@@ -105,8 +105,8 @@ Bu sınıfın temsil ettiği bir `CStringT` nesne.
 
 ```
 
-template<typename BaseType, class StringTraits>  
-class CStringT :   
+template<typename BaseType, class StringTraits>
+class CStringT :
 public CSimpleStringT<BaseType,
                       _CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType, StringTraits>
                       ::c_bIsMFCDLLTraits>
@@ -294,7 +294,7 @@ Aşağıdaki dize türleri ATL_CSTRING_NO_CRT değil tanımlandığı projelerin
 Bir otomasyon uyumlu dize türü BSTR ayırır ve içeriğini kopyalar `CStringT` sondaki null karakter de dahil olmak üzere, nesneye.
 
 ```
-BSTR AllocSysString() const;  
+BSTR AllocSysString() const;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -307,8 +307,7 @@ MFC programlarda bir [CMemoryException sınıfı](../../mfc/reference/cmemoryexc
 
 Yaygın olarak, bu dize bir COM işlevine geçirilirse bir [] parametresi, ardından bu gerektirir çağıran dize boş. Bu kullanarak yapılabilir [SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)Windows SDK içinde açıklandığı gibi. Daha fazla bilgi için [Allocating ve BSTR için bellek serbest bırakma](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).
 
-Windows OLE ayırma işlevleri hakkında daha fazla bilgi için bkz. [SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring) Windows SDK.  
-
+Windows OLE ayırma işlevleri hakkında daha fazla bilgi için bkz. [SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring) Windows SDK.
 
 ### <a name="example"></a>Örnek
 
@@ -411,7 +410,7 @@ Genel metin işlevi `_tcscoll`, TCHAR içinde tanımlanır. H, ya da eşler `str
 (Büyük/küçük harfe duyarlı) iki dizeyi karşılaştırır.
 
 ```
-int Compare(PCXSTR psz) const; 
+int Compare(PCXSTR psz) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -465,75 +464,75 @@ Genel metin işlevi `_tcsicmp`, TCHAR içinde tanımlanır. H, ya da eşler `_st
 Oluşturur bir `CStringT` nesne.
 
 ```
-CStringT() throw() :   
+CStringT() throw() :
     CThisSimpleString(StringTraits::GetDefaultManager());
 
-explicit CStringT(IAtlStringMgr* pStringMgr) throw() :   
-    CThisSimpleString( pStringMgr); 
+explicit CStringT(IAtlStringMgr* pStringMgr) throw() :
+    CThisSimpleString( pStringMgr);
 
 CStringT(const VARIANT& varSrc);
 
 CStringT(const VARIANT& varSrc, IAtlStringMgr* pStringMgr);
 
-CStringT(const CStringT& strSrc) :   
+CStringT(const CStringT& strSrc) :
     CThisSimpleString( strSrc);
 
 operator CSimpleStringT<
-                    BaseType, 
+                    BaseType,
                     !_CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType, StringTraits>
                     :: c_bIsMFCDLLTraits> &()
 
-template <bool bMFCDLL>  
-CStringT(const CSimpleStringT<BaseType, bMFCDLL>& strSrc) :   
+template <bool bMFCDLL>
+CStringT(const CSimpleStringT<BaseType, bMFCDLL>& strSrc) :
     CThisSimpleString( strSrc);
 
-template <class SystemString>  
-CStringT(SystemString^ pString) :   
+template <class SystemString>
+CStringT(SystemString^ pString) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CStringT(const XCHAR* pszSrc) :   
+CStringT(const XCHAR* pszSrc) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CSTRING_EXPLICIT CStringT(const YCHAR* pszSrc) :   
+CSTRING_EXPLICIT CStringT(const YCHAR* pszSrc) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CStringT(LPCSTR pszSrc, IAtlStringMgr* pStringMgr) :   
+CStringT(LPCSTR pszSrc, IAtlStringMgr* pStringMgr) :
     CThisSimpleString( pStringMgr);
 
-CStringT(LPCWSTR pszSrc, IAtlStringMgr* pStringMgr) :   
+CStringT(LPCWSTR pszSrc, IAtlStringMgr* pStringMgr) :
     CThisSimpleString( pStringMgr);
 
-CSTRING_EXPLICIT CStringT(const unsigned char* pszSrc) :   
+CSTRING_EXPLICIT CStringT(const unsigned char* pszSrc) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-/*CSTRING_EXPLICIT*/ CStringT(char* pszSrc) :   
+/*CSTRING_EXPLICIT*/ CStringT(char* pszSrc) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CSTRING_EXPLICIT CStringT(unsigned char* pszSrc) :   
+CSTRING_EXPLICIT CStringT(unsigned char* pszSrc) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CSTRING_EXPLICIT CStringT(wchar_t* pszSrc) :   
+CSTRING_EXPLICIT CStringT(wchar_t* pszSrc) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CStringT(const unsigned char* pszSrc, IAtlStringMgr* pStringMgr) :   
+CStringT(const unsigned char* pszSrc, IAtlStringMgr* pStringMgr) :
     CThisSimpleString( pStringMgr);
 
-CSTRING_EXPLICIT CStringT(char ch, int nLength = 1) :   
+CSTRING_EXPLICIT CStringT(char ch, int nLength = 1) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CSTRING_EXPLICIT CStringT(wchar_t ch, int nLength = 1) :   
+CSTRING_EXPLICIT CStringT(wchar_t ch, int nLength = 1) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CStringT(const XCHAR* pch, int nLength) :   
+CStringT(const XCHAR* pch, int nLength) :
     CThisSimpleString( pch, nLength, StringTraits::GetDefaultManager());
 
-CStringT(const YCHAR* pch, int nLength) :   
+CStringT(const YCHAR* pch, int nLength) :
     CThisSimpleString( StringTraits::GetDefaultManager());
 
-CStringT(const XCHAR* pch, int nLength, AtlStringMgr* pStringMgr) :   
+CStringT(const XCHAR* pch, int nLength, AtlStringMgr* pStringMgr) :
     CThisSimpleString( pch, nLength, pStringMgr);
 
-CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :   
+CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :
     CThisSimpleString( pStringMgr);
 ```
 
@@ -642,11 +641,11 @@ Varsa *nCount* dize, dize geri kalanını kaldırılacak daha uzun.
 
 [!code-cpp[NVC_ATLMFC_Utilities#113](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_8.cpp)]
 
-```Output  
+```Output
 Before: Soccer is best,
-    but hockey is quicker!  
+    but hockey is quicker!
 After: Soccer best,
-    but hockey is quicker!  
+    but hockey is quicker!
 ```
 
 ##  <a name="find"></a>  CStringT::Find
@@ -886,7 +885,7 @@ Değiştirilen dizenin uzunluğu.
 En soldaki *nCount* bu karakterleri `CStringT` nesne ve çıkartılan alt dizenin bir kopyasını döndürür.
 
 ```
-CStringT Left(int nCount) const; 
+CStringT Left(int nCount) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -997,7 +996,7 @@ Bir dizenin uzunluğu ayıklar *nCount* bu karakterler `CStringT` konumunda baş
 
 ```
 CStringT Mid(int iFirst, int nCount) const;
-CStringT Mid(int iFirst) const; 
+CStringT Mid(int iFirst) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -1090,10 +1089,10 @@ Dizenin sonuna karakterler art arda ekler.
 ```
 CStringT& operator+=(const CThisSimpleString& str);
 
-template<bool bMFCDLL>  
+template<bool bMFCDLL>
 CStringT& operator+=(const const CSimpleStringT<BaseType, bMFCDLL>& str);
 
-template<int t_nSize>  
+template<int t_nSize>
 CStringT& operator+=(const CStaticString<XCHAR, t_nSize>& strSrc);
 CStringT& operator+=(PCXSTR pszSrc);
 CStringT& operator+=(PCYSTR pszSrc);
@@ -1105,7 +1104,7 @@ CStringT& operator+=(const VARIANT& var);
 
 ### <a name="parameters"></a>Parametreler
 
-str  
+*str*<br/>
 Bir başvuru bir `CThisSimpleString` nesne.
 
 *bMFCDLL*<br/>
@@ -1478,7 +1477,7 @@ Bu son karakter sıfır tabanlı dizini `CStringT` karakter bulunmazsa, istenen 
 Son ayıklar (diğer bir deyişle, en sağdaki) *nCount* bu karakterleri `CStringT` nesne ve çıkartılan alt dizenin bir kopyasını döndürür.
 
 ```
-CStringT Right(int nCount) const; 
+CStringT Right(int nCount) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -1505,7 +1504,7 @@ Varsa *nCount* dize uzunluğunu aşarsa, ardından tüm dize ayıklanır. `Right
 İşaret ettiği BSTR yeniden tahsis ederse *pbstr* ve içeriğini kopyalar `CStringT` NULL karakteri de dahil olmak üzere, nesneye.
 
 ```
-BSTR SetSysString(BSTR* pbstr) const; 
+BSTR SetSysString(BSTR* pbstr) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -1532,7 +1531,7 @@ Bu işlev, normalde Otomasyon için başvuruya göre geçirilen dize değeri de�
 Karakter dizesinden tarafından tanımlanan karakter kümesine olmayan ilk karakter'ile başlayan ayıklar *pszCharSet*.
 
 ```
-CStringT SpanExcluding(PCXSTR pszCharSet) const; 
+CStringT SpanExcluding(PCXSTR pszCharSet) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -1557,7 +1556,7 @@ Dize olmayan karakter içeren bir alt dizenin *pszCharSet*, dizenin ilk karakter
 Karakter dizesinden tarafından tanımlanan karakter kümesine bulunan ilk karakteri ile başlayan ayıklar *pszCharSet*.
 
 ```
-CStringT SpanIncluding(PCXSTR pszCharSet) const; 
+CStringT SpanIncluding(PCXSTR pszCharSet) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -1582,7 +1581,7 @@ Dizenin ilk karakteri karakter kümesinde ardından değilse `SpanIncluding` bo�
 Hedef dizesi içinde sonraki belirteç bulur
 
 ```
-CStringT Tokenize(PCXSTR pszTokens, int& iStart) const; 
+CStringT Tokenize(PCXSTR pszTokens, int& iStart) const;
 ```
 
 ### <a name="parameters"></a>Parametreler

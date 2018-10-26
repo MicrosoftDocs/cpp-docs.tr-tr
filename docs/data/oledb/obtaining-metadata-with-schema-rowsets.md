@@ -1,7 +1,7 @@
 ---
 title: Şema satır kümeleri ile meta verileri alma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/24/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -17,88 +17,88 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3a3d2926b2f9c958d3770737729726bbad7b13e7
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: a3bedc2057ed90376912838953bcd0a7a3a7106f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808920"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072882"
 ---
 # <a name="obtaining-metadata-with-schema-rowsets"></a>Şema Satır Kümeleri ile Meta Verileri Alma
 
-Bazen satır kümesi açmaya gerek kalmadan sağlayıcısı, satır, tablo, sütun veya diğer veritabanı bilgileri hakkında bilgi edinmek gerekir. Veritabanı yapısı hakkında daha fazla veri meta veri adı verilir ve bir dizi farklı yöntem tarafından alınabilir. Bir şema satır kümeleri kullanmaktır.  
-  
-OLE DB Şablonları, şema bilgileri almak için sınıf kümesi sağlar; Bu sınıflar önceden tanımlı bir şema satır kümeleri oluşturma ve listelenen [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md).  
-  
+Bazen satır kümesi açmaya gerek kalmadan sağlayıcısı, satır, tablo, sütun veya diğer veritabanı bilgileri hakkında bilgi edinmek gerekir. Veritabanı yapısı hakkında daha fazla veri meta veri adı verilir ve bir dizi farklı yöntem tarafından alınabilir. Bir şema satır kümeleri kullanmaktır.
+
+OLE DB Şablonları, şema bilgileri almak için sınıf kümesi sağlar; Bu sınıflar önceden tanımlı bir şema satır kümeleri oluşturma ve listelenen [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md).
+
 > [!NOTE]
-> OLAP kullanıyorsanız ve bazı kümeleriniz şeması satır kümesi sınıfları tarafından desteklenmez (örneğin, değişken sayıda sütuna sahip), kullanmayı düşünmelisiniz `CManualAccessor` veya `CDynamicAccessor`. Sütunlarda kaydırın ve her sütun için olası veri türlerini işlemek için case deyimleri kullanın.  
-  
-## <a name="catalogschema-model"></a>Katalog/şema modeli  
+> OLAP kullanıyorsanız ve bazı kümeleriniz şeması satır kümesi sınıfları tarafından desteklenmez (örneğin, değişken sayıda sütuna sahip), kullanmayı düşünmelisiniz `CManualAccessor` veya `CDynamicAccessor`. Sütunlarda kaydırın ve her sütun için olası veri türlerini işlemek için case deyimleri kullanın.
 
-ANSI SQL veri depoları için bir katalog/şeması modeli tanımlar; OLE DB, bu modeli kullanır. Bu modelde, şemalar katalogları (veritabanları) içerir ve şemalar tabloları içerir.  
-  
-- **Katalog** bir katalog veritabanı için başka bir addır. İlişkili şemalar koleksiyonudur. Belirtilen veri kaynağına ait katalogları (veritabanları) listelemek için kullanın [CCatalog](../../data/oledb/ccatalogs-ccataloginfo.md). Çok sayıda veritabanında yalnızca bir katalog olduğundan, meta veri şema bilgileri adlandırılır.  
-  
-- **Şema** bir şemaya sahip olduğu veya belirli bir kullanıcı tarafından oluşturulan veritabanı nesneleri koleksiyonudur. Belirli bir kullanıcıya ait şemaları listelemek için kullanın [CSchemata](../../data/oledb/cschemata-cschematainfo.md).  
-  
-     Microsoft SQL Server ve ODBC 2.x bağlamında, bir şema bir sahibi olması (örneğin, dbo bir tipik şema adıdır). Ayrıca, SQL Server tabloları kümesi içinde meta verileri depolar: bir tablo içerdiği tüm tabloların bir listesini ve başka bir tablonun tüm sütunları listesini içerir. Bir Microsoft Access veritabanındaki bir şemada eşdeğeri yoktur.  
-  
-- **Tablo** tablolarıdır belirli bir sırada düzenlenmiş sütun koleksiyonu. Belirtilen katalog (veritabanı) ve bu tablolar hakkında bilgi tanımlanan tablolarını listelemek için kullanın [CTables](../../data/oledb/ctables-ctableinfo.md)).  
-  
-## <a name="restrictions"></a>Kısıtlamalar  
+## <a name="catalogschema-model"></a>Katalog/şema modeli
 
-Şema bilgileri sorgulandığında, kısıtlamaları içinde ilginizi çeken bilgi türünü belirtmek için kullanabilirsiniz. Kısıtlamaları bir filtre veya sorguda Niteleyici olarak düşünebilirsiniz. Örneğin, sorgu içinde:  
-  
-```sql  
-SELECT * FROM authors where l_name = 'pivo'  
-```  
-  
-`l_name` bir kısıtlaması yoktur. Bu, yalnızca bir kısıtlama ile çok basit bir örnektir; Şema satır kümesi sınıfları birkaç kısıtlama destekler.  
-  
-[Şeması satır kümesi typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) örnekleme ve onu açarak bir şeması satır kümesi gibi başka bir satır kümesi erişebilmeleri tüm OLE DB şema satır kümeleri kapsüller. Örneğin, typedef sınıfı [CColumns](../../data/oledb/ccolumns-ccolumnsinfo.md) olarak tanımlanır:  
-  
-```cpp  
-CRestrictions<CAccessor<CColumnsInfo>  
-```  
-  
-[CRestrictions](../../data/oledb/crestrictions-class.md) sınıf kısıtlama desteği sağlar. Şema satır kümesi örneğini oluşturduktan sonra çağrı [CRestrictions::Open](../../data/oledb/crestrictions-open.md). Bu yöntem, belirttiğiniz kısıtlamalara göre bir sonuç kümesi döndürür.  
-  
-Kısıtlamaları belirtmek için başvurmak [ek B: şema satır kümeleri](/previous-versions/windows/desktop/ms712921) ve kullanmakta olduğunuz satır kümesini bakın. Örneğin, `CColumns` karşılık gelen [SÜTUNLARIN satır](/previous-versions/windows/desktop/ms723052\(v%3dvs.85\)); Bu konu SÜTUNLARIN satır kısıtlama sütunları listeler: TABLE_CATALOG TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME. Bu sipariş kısıtlamalarınız belirtilirken izlemeniz gerekir.  
-  
-Bu nedenle, örneğin, tablo adı ile kısıtlamak istiyorsanız, TABLE_NAME üçüncü kısıtlama sütunu olduğuna dikkat edin ve sonra çağrı `Open`, aşağıdaki örnekte gösterildiği gibi üçüncü kısıtlama parametresi olarak istenen tablo adını belirtme.  
-  
-### <a name="to-use-schema-rowsets"></a>Şema satır kümeleri kullanmak için  
-  
-1. Üst bilgi dosyası Atldbsch.h içermelidir (Kuşkusuz, tüketici desteği de Atldbcli.h gerekir).  
-  
-1. Bir şema satır kümesi nesnesi tüketicinin veya belgenin üst bilgi dosyası. Tablo bilgileri almak istiyorsanız, bildirmek bir `CTables` sütun bilgileri almak istiyorsanız, bildirme; nesnesi bir `CColumns` nesne. Bu örnek, nasıl yazarlar tablodaki sütunlar alınacağını gösterir:  
-  
-    ```cpp  
-    CDataSource ds;  
-    ds.Open();  
-    CSession ss;  
-    ss.Open();  
-    CColumns ColumnSchemaRowset;  
-    // TABLE_NAME is the third restriction column, so  
-    // specify "authors" as the third restriction parameter:  
-    hr = ColumnSchemaRowset.Open(ss, NULL, NULL, "authors");  
-    hr = ColumnSchemaRowset.MoveFirst();  
-    while (hr == S_OK)  
-    {  
-       hr = ColumnSchemaRowset.MoveNext();  
-    }  
-    ```  
-  
-1. Bilgileri getirmek için uygun veri üyesi şeması satır kümesi nesnesi, örneğin, erişim `ColumnSchemaRowset.m_szColumnName`. Bu veri üyesi için COLUMN_NAME karşılık gelir. Her veri üyesi karşılık gelen için OLE DB sütunu için bkz [CColumns](../../data/oledb/ccolumns-ccolumnsinfo.md).  
-  
-Şema satır kümesi başvurusu için typedef sınıfları, OLE DB Şablonları sağlanan (bkz [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)).  
-  
-Kısıtlama sütunları içeren OLE DB şema satır kümeleri hakkında daha fazla bilgi için bkz. [ek B: şema satır kümeleri](/previous-versions/windows/desktop/ms712921) OLE DB Programcı Başvurusu.  
-  
-Şema satır kümesi sınıflarını kullanmayı daha karmaşık örnekleri için bkz: [CatDB](https://github.com/Microsoft/VCSamples) ve [DBVIEWER](https://github.com/Microsoft/VCSamples) örnekleri.  
-  
-Şema satır kümeleri için sağlayıcı desteği hakkında daha fazla bilgi için bkz: [şema satır kümelerini destekleme](../../data/oledb/supporting-schema-rowsets.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+ANSI SQL veri depoları için bir katalog/şeması modeli tanımlar; OLE DB, bu modeli kullanır. Bu modelde, katalog (veritabanları) şemaları ve tabloları şemaları sahiptir.
+
+- **Katalog** bir katalog veritabanı için başka bir addır. İlişkili şemalar koleksiyonudur. Belirtilen veri kaynağına ait katalogları (veritabanları) listelemek için kullanın [CCatalog](../../data/oledb/ccatalogs-ccataloginfo.md). Çok sayıda veritabanında yalnızca bir katalog olduğundan, meta veri şema bilgileri adlandırılır.
+
+- **Şema** bir şemaya sahip olduğu veya belirli bir kullanıcı tarafından oluşturulan veritabanı nesneleri koleksiyonudur. Belirli bir kullanıcıya ait şemaları listelemek için kullanın [CSchemata](../../data/oledb/cschemata-cschematainfo.md).
+
+   Microsoft SQL Server ve ODBC 2.x bağlamında, bir şema bir sahibi olması (örneğin, dbo bir tipik şema adıdır). Ayrıca, SQL Server tabloları kümesi içinde meta verileri depolar: bir tablo içerdiği tüm tabloların bir listesini ve başka bir tablonun tüm sütunları listesini içerir. Bir Microsoft Access veritabanındaki bir şemada eşdeğeri yoktur.
+
+- **Tablo** tablolarıdır belirli bir sırada düzenlenmiş sütun koleksiyonu. Belirtilen katalog (veritabanı) ve bu tablolar hakkında bilgi tanımlanan tablolarını listelemek için kullanın [CTables](../../data/oledb/ctables-ctableinfo.md)).
+
+## <a name="restrictions"></a>Kısıtlamalar
+
+Şema bilgileri sorgulandığında, kısıtlamaları içinde ilginizi çeken bilgi türünü belirtmek için kullanabilirsiniz. Kısıtlamaları bir filtre veya sorguda Niteleyici olarak düşünebilirsiniz. Örneğin, sorgu içinde:
+
+```sql
+SELECT * FROM authors WHERE l_name = 'pivo'
+```
+
+`l_name` bir kısıtlaması yoktur. Bu, yalnızca bir kısıtlama ile basit bir örnektir; Şema satır kümesi sınıfları birkaç kısıtlama destekler.
+
+[Şeması satır kümesi typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) örnekleme ve onu açarak bir şeması satır kümesi gibi başka bir satır kümesi erişebilmeleri tüm OLE DB şema satır kümeleri kapsüller. Örneğin, typedef sınıfı [CColumns](../../data/oledb/ccolumns-ccolumnsinfo.md) olarak tanımlanır:
+
+```cpp
+CRestrictions<CAccessor<CColumnsInfo>
+```
+
+[CRestrictions](../../data/oledb/crestrictions-class.md) sınıf kısıtlama desteği sağlar. Şema satır kümesi örneğini oluşturduktan sonra çağrı [CRestrictions::Open](../../data/oledb/crestrictions-open.md). Bu yöntem, belirttiğiniz kısıtlamalara göre bir sonuç kümesi döndürür.
+
+Kısıtlamaları belirtmek için başvurmak [ek B: şema satır kümeleri](/previous-versions/windows/desktop/ms712921) ve kullanmakta olduğunuz satır kümesini bakın. Örneğin, `CColumns` karşılık gelen [SÜTUNLARIN satır](/previous-versions/windows/desktop/ms723052\(v%3dvs.85\)); Bu konu SÜTUNLARIN satır kısıtlama sütunları listeler: TABLE_CATALOG TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME. Bu sipariş kısıtlamalarınız belirtilirken izlemeniz gerekir.
+
+Tablo adı ile kısıtlamak istiyorsanız, bu nedenle, örneğin, TABLE_NAME üçüncü kısıtlama sütunu ve ardından bir çağrı olduğundan `Open`, aşağıdaki örnekte gösterildiği gibi üçüncü kısıtlama parametresi olarak istenen tablo adını belirtme.
+
+### <a name="to-use-schema-rowsets"></a>Şema satır kümeleri kullanmak için
+
+1. Üstbilgi dosyasını dahil `Atldbsch.h` (ihtiyacınız `Atldbcli.h` tüketici desteği için).
+
+1. Bir şema satır kümesi nesnesi tüketicinin veya belgenin üst bilgi dosyası. Tablo bilgileri almak istiyorsanız, bildirmek bir `CTables` sütun bilgileri almak istiyorsanız, bildirme; nesnesi bir `CColumns` nesne. Bu örnek, nasıl yazarlar tablodaki sütunlar alınacağını gösterir:
+
+    ```cpp
+    CDataSource ds;
+    ds.Open();
+    CSession ss;
+    ss.Open(ds);
+    CColumns columnSchemaRowset;
+    // TABLE_NAME is the third restriction column, so
+    // specify "authors" as the third restriction parameter:
+    HRESULT hr = columnSchemaRowset.Open(ss, NULL, NULL, L"authors");
+    hr = columnSchemaRowset.MoveFirst();
+    while (hr == S_OK)
+    {
+       hr = columnSchemaRowset.MoveNext();
+    }
+    ```
+
+1. Bilgileri getirmek için uygun veri üyesi şeması satır kümesi nesnesi, örneğin, erişim `ColumnSchemaRowset.m_szColumnName`. Bu veri üyesi için COLUMN_NAME karşılık gelir. Her veri üyesi karşılık gelen için OLE DB sütunu için bkz [CColumns](../../data/oledb/ccolumns-ccolumnsinfo.md).
+
+Şema satır kümesi başvurusu için typedef sınıfları, OLE DB Şablonları sağlanan (bkz [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)).
+
+Kısıtlama sütunları içeren OLE DB şema satır kümeleri hakkında daha fazla bilgi için bkz. [ek B: şema satır kümeleri](/previous-versions/windows/desktop/ms712921) içinde **OLE DB Programcının Başvurusu**.
+
+Şema satır kümesi sınıflarını kullanmayı daha karmaşık örnekleri için bkz: [CatDB](https://github.com/Microsoft/VCSamples) ve [DBVIEWER](https://github.com/Microsoft/VCSamples) örnekleri.
+
+Şema satır kümeleri için sağlayıcı desteği hakkında daha fazla bilgi için bkz: [şema satır kümelerini destekleme](../../data/oledb/supporting-schema-rowsets.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Erişimcileri Kullanma](../../data/oledb/using-accessors.md)

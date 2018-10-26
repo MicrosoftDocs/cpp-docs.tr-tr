@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e885ef1db8f282bbdca2e8c39c3d1221d791d1a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7e067b1d72b80950b4ed33fbae8cac7333ac0438
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067642"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083082"
 ---
 # <a name="atl-module-classes"></a>ATL Modül Sınıfları
 
@@ -55,15 +55,15 @@ Bu konu, ATL 7. 0'yeni modül sınıfları açıklar.
 
 - İşlevleri olun `CComModule` ayrıntılı.
 
-     COM, Pencereleme, arabirimi hata ayıklama ve uygulamaya özgü (DLL veya EXE) özellikleri için destek ayrı sınıflarda sunulmuştur.
+   COM, Pencereleme, arabirimi hata ayıklama ve uygulamaya özgü (DLL veya EXE) özellikleri için destek ayrı sınıflarda sunulmuştur.
 
 - Otomatik olarak bu modüllerin her biri genel örneğini bildirir.
 
-     Gerekli modül sınıfları genel bir örneğini projeye bağlı.
+   Gerekli modül sınıfları genel bir örneğini projeye bağlı.
 
 - Init ve terimi yöntemleri çağırma ihtiyacını kaldırın.
 
-     Init ve terimi yöntemleri için modül sınıfları oluşturucular ve Yıkıcılar taşındı; artık Init ve istediğiniz dönemi çağırmaya gerek yoktur.
+   Init ve terimi yöntemleri için modül sınıfları oluşturucular ve Yıkıcılar taşındı; artık Init ve istediğiniz dönemi çağırmaya gerek yoktur.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

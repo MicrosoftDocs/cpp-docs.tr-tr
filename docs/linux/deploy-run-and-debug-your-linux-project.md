@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: d2ffd41fe224e492eb4b27a355f6df864e0dd066
-ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
+ms.openlocfilehash: 964da719da8d6f48131fc60f7e7fdfb247637fbf
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410830"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069953"
 ---
 # <a name="deploy-run-and-debug-your-linux-project"></a>Dağıtma, çalıştırma ve Linux projenizin hatalarını ayıklama
 
@@ -41,7 +41,7 @@ Linux projenizin hatalarını ayıklama ve etkileşim için birkaç yol vardır.
 
     - İçinde **gdb** modu, Visual Studio hata ayıklayıcısını sürücüleri GDB daha uyumlu GDB yerel sürümünü hedef bilgisayarda yüklü sürümüyle uyumlu değilse uzak sistemde. |
 
-    > [!NOTE] 
+    > [!NOTE]
     > İsabet kesme noktaları hata ayıklama gdbserver modunda, gdb modunda deneyin. GDB ilk olmalıdır [yüklü](../linux/download-install-and-setup-the-linux-development-workload.md) uzak hedef.
 
 2. Standart kullanarak uzak hedef seçin **hata ayıklama** Visual Studio'da araç çubuğu.
@@ -64,7 +64,7 @@ Linux projenizin hatalarını ayıklama ve etkileşim için birkaç yol vardır.
 
     Herhangi bir hata varsa, uygulama başlatılır ve hata ayıklayıcı kesme noktasında duraklatılır.
 
-    ![Bir kesme noktası isabet](media/hit_breakpoint.png)  
+    ![Bir kesme noktası isabet](media/hit_breakpoint.png)
 
     Şimdi, uygulama ile etkileşim kurabilir, geçerli durumu görünümü değişkenleri ve kodu adımlayın gibi komut tuşlarına basarak kullanımda **F10** veya **F11**.
 
@@ -79,7 +79,7 @@ Linux projenizin hatalarını ayıklama ve etkileşim için birkaç yol vardır.
 ## <a name="configure-other-debugging-options"></a>Diğer hata ayıklama seçeneklerini yapılandırma
 
 * Komut satırı bağımsız değişkenleri yürütülebilir kullanarak geçirilebilir **Program bağımsız değişkenleri** projenin öğesi **hata ayıklama** özellik sayfası.
-  
+
   ![Program bağımsız değişkenleri](media/settings_programarguments.png)
 
 * Belirli hata ayıklayıcısı seçenekleri geçirilebilir için GDB kullanarak **ek hata ayıklayıcı komutları** girişi.  Örneğin, SIGILL (geçersiz yönerge) sinyalleri yoksaymak isteyebilirsiniz.  Kullanabileceğinizi **işlemek** Bunu başarmak için komutu.  Aşağıdaki ekleyerek **ek hata ayıklayıcı komutları** yukarıda da gösterildiği gibi giriş:

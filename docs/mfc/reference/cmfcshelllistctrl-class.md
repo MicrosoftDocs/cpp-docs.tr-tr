@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2d7238fa9a75c173e1b02697359a72630a95a06
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c2fcd07f831133ff478dcccb4272ef24496e3cac
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433991"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066493"
 ---
 # <a name="cmfcshelllistctrl-class"></a>CMFCShellListCtrl sınıfı
 
@@ -309,8 +309,9 @@ virtual int OnCompareItems(
 
 ### <a name="parameters"></a>Parametreler
 
-*lParam1*<br/>
-[in] [in] *lParam2* [in] *iColumn*
+[in] *lParam1*<br/>
+[in] *lParam2*<br/>
+[in] *iColumn*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 

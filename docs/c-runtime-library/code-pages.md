@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a81b358a89f3ed16747d27bc6401c01ad194680
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6eafdf3a140dd8a5976cf2fe8554b3b076111b74
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46113727"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060513"
 ---
 # <a name="code-pages"></a>Kod Sayfaları
 
@@ -43,7 +43,7 @@ Microsoft çalışma zamanı kitaplığı aşağıdaki kod sayfaları türlerini
     setlocale ( LC_ALL, "" );
     ```
 
-     Ayrıca yerel sistem varsayılan ANSI kod sayfasına ayarlar.
+   Ayrıca yerel sistem varsayılan ANSI kod sayfasına ayarlar.
 
 - Yerel ayar kod sayfası. Çalışma zamanı yordamları bir dizi davranışını yerel ayar kod sayfası içeren geçerli yerel ayarda bağlıdır. (Daha fazla bilgi için [yerel ayara bağımlı yordamlar](../c-runtime-library/locale.md).) Varsayılan olarak, Microsoft Çalışma Zamanı Kitaplığı'ndaki tüm yerel ayara bağımlı yordamlar için "C" yerel karşılık gelen kod sayfasını kullanın. Çalışma zamanında değiştirebilir veya yerel ayar kod sayfasına çağrısı ile sorgu [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md).
 

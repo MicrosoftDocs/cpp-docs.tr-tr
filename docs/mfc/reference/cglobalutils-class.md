@@ -1,7 +1,7 @@
 ---
 title: CGlobalUtils sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42436a885b194e0270bc9956514f4ff0de9c7461
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 189cc6bccdb1f9111cbe78bf18ff2f15e96a702c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445899"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053779"
 ---
 # <a name="cglobalutils-class"></a>CGlobalUtils sınıfı
 
@@ -108,13 +108,12 @@ void AdjustRectToworkArea(
 
 ### <a name="parameters"></a>Parametreler
 
-*Rect*<br/>
-[out içinde] [in] *pRectDelta*
+[out içinde] *dikdörtgen*<br/>
+[in] *pRectDelta*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="calcexpecteddockedrect"></a>  CGlobalUtils::CalcExpectedDockedRect
-
 
 ```
 void CalcExpectedDockedRect(
@@ -128,17 +127,21 @@ void CalcExpectedDockedRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*barContainerManager*<br/>
-[in] [in] *pWndTodock*
-*ptMouse*<br/>
-[in] [out] *rectResult*
-*bDrawTab*<br/>
-[out] [out] *ppTargetBar*
+[in] *barContainerManager*<br/>
+
+[in] *pWndTodock*<br/>
+
+[in] *ptMouse*<br/>
+
+[out] *rectResult*<br/>
+
+[out] *bDrawTab*<br/>
+
+[out] *ppTargetBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="canbeattached"></a>  CGlobalUtils::CanBeAttached
-
 
 ```
 BOOL CanBeAttached(CWnd* pWnd) const;
@@ -146,7 +149,7 @@ BOOL CanBeAttached(CWnd* pWnd) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pWnd*
+[in] *pWnd*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -154,21 +157,19 @@ BOOL CanBeAttached(CWnd* pWnd) const;
 
 ##  <a name="canpanebeinfloatingmultipaneframewnd"></a>  CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd
 
-
 ```
 BOOL CanPaneBeInFloatingMultiPaneFrameWnd(CWnd* pWnd) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pWnd*
+[in] *pWnd*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="checkalignment"></a>  CGlobalUtils::CheckAlignment
-
 
 ```
 BOOL CheckAlignment(
@@ -184,21 +185,27 @@ BOOL CheckAlignment(
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*<br/>
-[in] [in] *pBar*
-*nSensitivity*<br/>
-[in] [in] *pDockManager*
-*bOuterEdge*<br/>
-[in] [out] *dwAlignment*
-*dwEnabledDockBars*<br/>
-[in] [in] *lpRectBounds*
+[in] *noktası*<br/>
+
+[in] *pBar*<br/>
+
+[in] *nSensitivity*<br/>
+
+[in] *pDockManager*<br/>
+
+[in] *bOuterEdge*<br/>
+
+[out] *dwAlignment*<br/>
+
+[in] *dwEnabledDockBars*<br/>
+
+[in] *lpRectBounds*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="cyfromstring"></a>  CGlobalUtils::CyFromString
-
 
 ```
 BOOL CyFromString(
@@ -208,15 +215,15 @@ BOOL CyFromString(
 
 ### <a name="parameters"></a>Parametreler
 
-*CY*<br/>
-[out] [in] *psz*
+[out] *cy*<br/>
+
+[in] *psz*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="decimalfromstring"></a>  CGlobalUtils::DecimalFromString
-
 
 ```
 BOOL DecimalFromString(
@@ -226,15 +233,15 @@ BOOL DecimalFromString(
 
 ### <a name="parameters"></a>Parametreler
 
-*decimal*<br/>
-[out] [in] *psz*
+[out] *ondalık*<br/>
+
+[in] *psz*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="fliprect"></a>  CGlobalUtils::FlipRect
-
 
 ```
 void FlipRect(
@@ -244,13 +251,12 @@ void FlipRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*Rect*<br/>
-[out içinde] [in] *nDegrees*
+[out içinde] *dikdörtgen*<br/>
+[in] *nDegrees*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="forceadjustlayout"></a>  CGlobalUtils::ForceAdjustLayout
-
 
 ```
 void ForceAdjustLayout(
@@ -261,13 +267,15 @@ void ForceAdjustLayout(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDockManager*<br/>
-[out içinde] [in] *bForce* [in] *bForceInvisible*
+[out içinde] *pDockManager*<br/>
+
+[in] *bForce*<br/>
+
+[in] *bForceInvisible*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getdockingmanager"></a>  CGlobalUtils::GetDockingManager
-
 
 ```
 CDockingManager* GetDockingManager(CWnd* pWnd);
@@ -275,7 +283,7 @@ CDockingManager* GetDockingManager(CWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pWnd*
+[in] *pWnd*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -283,21 +291,19 @@ CDockingManager* GetDockingManager(CWnd* pWnd);
 
 ##  <a name="getoppositealignment"></a>  CGlobalUtils::GetOppositeAlignment
 
-
 ```
 DWORD GetOppositeAlignment(DWORD dwAlign);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *dwAlign*
+[in] *dwAlign*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="getpaneandalignfrompoint"></a>  CGlobalUtils::GetPaneAndAlignFromPoint
-
 
 ```
 BOOL GetPaneAndAlignFromPoint(
@@ -311,12 +317,17 @@ BOOL GetPaneAndAlignFromPoint(
 
 ### <a name="parameters"></a>Parametreler
 
-*barContainerManager*<br/>
-[in] [in] *pt*
-*ppTargetControlBar*<br/>
-[out] [out] *dwAlignment*
-*bTabArea*<br/>
-[out] [out] *bCaption*
+[in] *barContainerManager*<br/>
+
+[in] *pt*<br/>
+
+[out] *ppTargetControlBar*<br/>
+
+[out] *dwAlignment*<br/>
+
+[out] *bTabArea*<br/>
+
+[out] *bCaption*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -324,21 +335,19 @@ BOOL GetPaneAndAlignFromPoint(
 
 ##  <a name="getwndicon"></a>  CGlobalUtils::GetWndIcon
 
-
 ```
 HICON GetWndIcon(CWnd* pWnd);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pWnd*
+[in] *pWnd*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setnewparent"></a>  CGlobalUtils::SetNewParent
-
 
 ```
 void SetNewParent(
@@ -349,13 +358,15 @@ void SetNewParent(
 
 ### <a name="parameters"></a>Parametreler
 
-*lstControlBars*<br/>
-[in] [in] *pNewParent* [in] *bCheckVisibility*
+[in] *lstControlBars*<br/>
+
+[in] *pNewParent*<br/>
+
+[in] *bCheckVisibility*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="stringfromcy"></a>  CGlobalUtils::StringFromCy
-
 
 ```
 BOOL StringFromCy(
@@ -365,15 +376,15 @@ BOOL StringFromCy(
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
-[out] [in] *cy*
+[out] *str*<br/>
+
+[in] *cy*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="stringfromdecimal"></a>  CGlobalUtils::StringFromDecimal
-
 
 ```
 BOOL StringFromDecimal(
@@ -383,8 +394,9 @@ BOOL StringFromDecimal(
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
-[out] [in] *ondalık*
+[out] *str*<br/>
+
+[in] *ondalık*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 

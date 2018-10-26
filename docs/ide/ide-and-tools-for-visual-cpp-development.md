@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31b9c0c8668ec16d84ad84627eb73a0f406eb21e
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: c639ddbe3d2e5b8a9c4f402df56215ca7efd1e1a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328382"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070445"
 ---
 # <a name="ide-and-compiler-tools-for-visual-c-development"></a>IDE ve Visual C++ geliştirme derleme araçları
 
@@ -30,7 +30,7 @@ Visual Studio IDE'de paylaşılan araçlara ek olarak, MSVC yerel kod geliştirm
 
 ## <a name="create-projects"></a>Projeleri oluşturma
 
-A *proje* temel bir kaynak kodu dosyaları ve yürütülebilir bir dosyada yerleşik görüntüleri veya veri dosyaları gibi kaynakları kümesidir. 
+A *proje* temel bir kaynak kodu dosyaları ve yürütülebilir bir dosyada yerleşik görüntüleri veya veri dosyaları gibi kaynakları kümesidir.
 
 Visual Studio 2015, MSBuild projeleri için destek sağlar. Qt veya CMake gibi diğer yapı sistemleri için Visual Studio uzantıları karşıdan yükleyebilirsiniz.
 
@@ -65,7 +65,7 @@ Bir MFC uygulaması için bir kullanıcı arabirimi oluşturma hakkında daha fa
 
 ## <a name="write-code"></a>Kod yazma
 
-Bir projeyi oluşturduktan sonra tüm proje dosyaları içinde görüntülenen **Çözüm Gezgini** penceresi. (A *çözüm* ilgili daha fazla proje ya da bir mantıksal bir kapsayıcıdır.) Tıkladığınızda bir .h veya .cpp dosyada **Çözüm Gezgini**, dosya Kod düzenleyicisinde açılır. 
+Bir projeyi oluşturduktan sonra tüm proje dosyaları içinde görüntülenen **Çözüm Gezgini** penceresi. (A *çözüm* ilgili daha fazla proje ya da bir mantıksal bir kapsayıcıdır.) Tıkladığınızda bir .h veya .cpp dosyada **Çözüm Gezgini**, dosya Kod düzenleyicisinde açılır.
 
 ![Çözüm Gezgini ve Kod Düzenleyicisi](media/vs2017-solution-explorer-code-editor.png "Visual Studio 2017 Çözüm Gezgini ve Kod Düzenleyicisi")
 

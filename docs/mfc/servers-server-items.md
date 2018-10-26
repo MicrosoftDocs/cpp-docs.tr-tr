@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72f8de75607921edda62aec9baec424066431d61
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c134f0d0b0c8ee3009e372de7712a6c0894a51de
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438866"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082911"
 ---
 # <a name="servers-server-items"></a>Sunucular: Sunucu Öğeleri
 
@@ -43,7 +43,7 @@ Uygulamanız için "Başlangıç" kod üretmek için Uygulama Sihirbazı'nı kul
 
 1. Türetilmiş sınıfınızda geçersiz kılmanız `OnDraw` üye işlevi.
 
-     Framework çağrıları `OnDraw` OLE öğesini bir meta dosyasında işlemek için. Kapsayıcı uygulamasını bu meta öğesi işlemek için kullanır. Ayrıca, uygulamanızın görünüm sınıfı olan bir `OnDraw` sunucu uygulamasının etkin olduğunda, öğe işlemek için kullanılan üye işlevi.
+   Framework çağrıları `OnDraw` OLE öğesini bir meta dosyasında işlemek için. Kapsayıcı uygulamasını bu meta öğesi işlemek için kullanır. Ayrıca, uygulamanızın görünüm sınıfı olan bir `OnDraw` sunucu uygulamasının etkin olduğunda, öğe işlemek için kullanılan üye işlevi.
 
 1. Geçersiz kılma uygulama `OnGetEmbeddedItem` sunucu belgesinin sınıfınız için. Daha fazla bilgi için bkz [sunucular: sunucu belgeleri uygulama](../mfc/servers-implementing-server-documents.md) ve MFC OLE örnek [HIERSVR](../visual-cpp-samples.md).
 

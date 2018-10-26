@@ -43,12 +43,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c19b000c1d7ee5cb1f8480f0e9f384b42937dc9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 167d3af6d353ec48edde4288db26b9e407c62bd5
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414491"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078966"
 ---
 # <a name="exception-handling-in-mfc"></a>MFC'de Özel Durum İşleme
 
@@ -81,15 +81,15 @@ Program yürütülmesi sırasında bir işlev çağrıldığında sonuçlarını
 
 - Normal yürütmenin
 
-     İşlev, normalde yürütün ve dönüş. Bazı işlevler bir sonuç kodu işlev sonucunu gösteren çağırana döndürür. Olası sonuç kodları işlevi kesin olarak tanımlanır ve sonuçtan işlevin aralığını temsil eder. Sonuç kodu, başarı veya başarısızlık belirtebilir veya bile beklentileri normal aralığında ise hata belirli bir tür belirtebilirsiniz. Örneğin, bir dosya durumu işlevi dosya yok gösteren bir kod iade edebilirsiniz. Sonuç kodu birçok beklenen sonuçlar göstermesi "hata kodu" terimi kullanılmaz unutmayın.
+   İşlev, normalde yürütün ve dönüş. Bazı işlevler bir sonuç kodu işlev sonucunu gösteren çağırana döndürür. Olası sonuç kodları işlevi kesin olarak tanımlanır ve sonuçtan işlevin aralığını temsil eder. Sonuç kodu, başarı veya başarısızlık belirtebilir veya bile beklentileri normal aralığında ise hata belirli bir tür belirtebilirsiniz. Örneğin, bir dosya durumu işlevi dosya yok gösteren bir kod iade edebilirsiniz. Sonuç kodu birçok beklenen sonuçlar göstermesi "hata kodu" terimi kullanılmaz unutmayın.
 
 - Hatalı yürütme
 
-     Çağıran işleve bağımsız değişkenleri geçirme içinde bazı hata yapar veya uygun olmayan bir bağlamda işlevini çağırır. Bu durum bir hataya neden olur ve program geliştirme sırasında onaylama algılanmalıdır. (Onaylar hakkında daha fazla bilgi için bkz. [C/C++ onaylamaları](/visualstudio/debugger/c-cpp-assertions).)
+   Çağıran işleve bağımsız değişkenleri geçirme içinde bazı hata yapar veya uygun olmayan bir bağlamda işlevini çağırır. Bu durum bir hataya neden olur ve program geliştirme sırasında onaylama algılanmalıdır. (Onaylar hakkında daha fazla bilgi için bkz. [C/C++ onaylamaları](/visualstudio/debugger/c-cpp-assertions).)
 
 - Olağan dışı yürütme
 
-     Olağan dışı yürütme, düşük bellek veya g/ç hataları gibi programın denetimin dışında kalan koşullar işlev sonucunu burada etkileyen durumlarda içerir. Anormal durumları yakalama ve özel durumları atma yapılması gerekir.
+   Olağan dışı yürütme, düşük bellek veya g/ç hataları gibi programın denetimin dışında kalan koşullar işlev sonucunu burada etkileyen durumlarda içerir. Anormal durumları yakalama ve özel durumları atma yapılması gerekir.
 
 Özel durumlar kullanma, anormal yürütme için özellikle uygundur.
 

@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 20cb959727cb2c515bd82d5b4d5d8e45019c6875
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 7f5c117d0d65f86e4f4b69011457e166b6440820
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788493"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081569"
 ---
 # <a name="deferrableeventargs-class"></a>DeferrableEventArgs Sınıfı
 
@@ -73,7 +73,7 @@ Sınıfı, ertelenmiş bir olay için bir olay işleyicisi için ilk bağımsız
 Bir başvuru edinir [erteleme](http://go.microsoft.com/fwlink/p/?linkid=526520) ertelenmiş bir olayı temsil eden nesne.
 
 ```cpp
-HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)  
+HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -88,11 +88,11 @@ Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
 ## <a name="invokeallfinished"></a>Deferrableeventargs::ınvokeallfinished
 
 Ertelenmiş olayı işlemek için tüm işleme tamamlandığını göstermek için çağrılır.
-  
+
 ```cpp
-void InvokeAllFinished()  
+void InvokeAllFinished()
 ```
-  
+
 ### <a name="remarks"></a>Açıklamalar
 
 Olay kaynağı çağrılarını sonra bu yöntemi çağırmanız gerekir [Invokeall](../windows/eventsource-invokeall-method.md). Bu yöntemi çağırmadan, daha fazla gönderilemeyenler gerçekleştirilmesini önler ve hiçbir gönderilemeyenler alınan, yürütülecek tamamlama işleyicisine zorlar.

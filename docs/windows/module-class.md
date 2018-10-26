@@ -53,12 +53,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5df7ae90a347d82b303d7db251e533733c8e4a86
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 2357790e3084c91011f16eb9f1f718948462f898
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808636"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059486"
 ---
 # <a name="module-class"></a>Modül Sınıfı
 
@@ -243,7 +243,7 @@ Başarılıysa S_OK; Aksi takdirde GetActivationFactory tarafından döndürüle
 Sınıf üreteçlerini önbelleğini Retreives.
 
 ```cpp
- HRESULT GetClassObject(
+HRESULT GetClassObject(
    REFCLSID clsid,
    REFIID riid,
    _Deref_out_ void **ppv,

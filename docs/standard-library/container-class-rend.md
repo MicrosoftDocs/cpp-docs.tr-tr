@@ -14,26 +14,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cf4e963d4afcdfdf3c4ba18347e06489392e5db
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: be8182bad16c832f5c65e1cb402ef2714a172a0a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844204"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061436"
 ---
 # <a name="container-classrend"></a>Kapsayıcı Sınıfı::rend
 
 > [!NOTE]
-> Bu konu, Visual C++ belge C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsel bir örnek olarak kullanılıyor. Daha fazla bilgi için bkz: [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
-Üye işlevini ters yineleyici bu noktalarda ilk öğe dizisi (veya yalnızca boş bir dizi ötesinde) döndürür. ters bitişinde belirleme.
+Üye işlevi bu noktalarda ilk öğe dizisi (veya yalnızca boş bir dizi bitiminin ötesinde), ters yineleyici döndürür. ters sıra sonuna belirleme.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
 
     const_reverse_iterator rend() const;
-
 
 reverse_iterator rend();
 ```

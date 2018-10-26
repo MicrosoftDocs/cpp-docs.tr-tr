@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f24cf6cce5cdf268367f547e8a536dcdae7cc859
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 413485bc7675fbc68f2c224ceefdd0f552538eb9
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098959"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076990"
 ---
 # <a name="ccomobjectrootex-class"></a>CComObjectRootEx sınıfı
 
@@ -51,7 +51,7 @@ class CComObjectRootEx : public CComObjectRootBase
 #### <a name="parameters"></a>Parametreler
 
 *ThreadModel*<br/>
-İstenen iş parçacığı modeli yöntemleri uygulayan sınıf. İş parçacığı modeli ayarlayarak açıkça seçebilirsiniz *ThreadModel* için [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md), [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), veya [ CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md). Sunucunun varsayılan iş parçacığı modeli ayarlayarak kabul edebilir *ThreadModel* için [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) veya [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel).  
+İstenen iş parçacığı modeli yöntemleri uygulayan sınıf. İş parçacığı modeli ayarlayarak açıkça seçebilirsiniz *ThreadModel* için [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md), [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), veya [ CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md). Sunucunun varsayılan iş parçacığı modeli ayarlayarak kabul edebilir *ThreadModel* için [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) veya [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel).
 
 ## <a name="members"></a>Üyeler
 
@@ -139,9 +139,9 @@ Başlangıçta gerçekleştirme avantajları vardır `FinalConstruct` sınıfın
 
 - Sanal işlevler, bir sınıfın oluşturucudan sanal işlev mekanizması aracılığıyla çağrılamıyor. Bu noktada devralma hiyerarşisinde tanımlandığı gibi statik olarak çözümlenen bir işleve çağrı, bir sınıfın oluşturucusunda bir sanal işlev çağırma sonuçlanır. Saf sanal işlevler için çağrıları bağlayıcı hatalara neden.
 
-     Sınıfınıza en çok türetilen sınıf devralma hiyerarşisinde değil; bazı işlevlerini sağlamak için ATL tarafından sağlanan bir türetilmiş sınıf kullanır. Başlatma işleminiz bu sınıfı (diğer nesneler, sınıfın nesneleri gerekir bu kesinlikle geçerlidir) tarafından sağlanan özellikleri kullanmak için gereken şansı yoktur ancak kendi sınıfınızı oluşturucuda özelliklere erişim için bir yolu yoktur. En çok türetilen sınıf tam oluşturulmamış önce sınıfınız için yapı kod yürütülür.
+   Sınıfınıza en çok türetilen sınıf devralma hiyerarşisinde değil; bazı işlevlerini sağlamak için ATL tarafından sağlanan bir türetilmiş sınıf kullanır. Başlatma işleminiz bu sınıfı (diğer nesneler, sınıfın nesneleri gerekir bu kesinlikle geçerlidir) tarafından sağlanan özellikleri kullanmak için gereken şansı yoktur ancak kendi sınıfınızı oluşturucuda özelliklere erişim için bir yolu yoktur. En çok türetilen sınıf tam oluşturulmamış önce sınıfınız için yapı kod yürütülür.
 
-     Ancak, `FinalConstruct` hemen sonra en çok türetilen sınıf tam olarak sanal işlevleri çağırma ve ATL tarafından sağlanan başvuru sayımı uygulamasını etmenize imkan sağlar oluşturulur çağrılır
+   Ancak, `FinalConstruct` hemen sonra en çok türetilen sınıf tam olarak sanal işlevleri çağırma ve ATL tarafından sağlanan başvuru sayımı uygulamasını etmenize imkan sağlar oluşturulur çağrılır
 
 ### <a name="example"></a>Örnek
 
@@ -265,7 +265,7 @@ long m_dwRef;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İle `m_pOuterUnknown`, birleşimin bir bölüm:  
+İle `m_pOuterUnknown`, birleşimin bir bölüm:
 
 ```
 union {

@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec20b4b212ee435c9538716afaca645edfe5adcc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a5295638019b04abe4f404a36b8cdf641b1f92a4
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404217"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075781"
 ---
 # <a name="colecurrency-class"></a>COleCurrency sınıfı
 
@@ -113,7 +113,6 @@ COleCurrency();
 COleCurrency(CURRENCY cySrc);
   COleCurrency(const COleCurrency& curSrc);
 COleCurrency(const VARIANT& varSrc);
-
 
 COleCurrency(
     long nUnits,

@@ -1,7 +1,7 @@
 ---
 title: CMenuTearOffManager sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc4a6ee892c70a53e28031ff8dd9ef874d252a86
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d9d33f5cb060bfab32426a4c9492244fb1c432b9
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380886"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071894"
 ---
 # <a name="cmenutearoffmanager-class"></a>CMenuTearOffManager sınıfı
 
@@ -96,7 +96,6 @@ Aşağıdaki örnek, oluşturmak ve başlatmak gösterilmiştir bir `CMenuTearOf
 
 ##  <a name="build"></a>  CMenuTearOffManager::Build
 
-
 ```
 void Build(
     UINT uiTearOffBarID,
@@ -105,8 +104,9 @@ void Build(
 
 ### <a name="parameters"></a>Parametreler
 
-*uiTearOffBarID*<br/>
-[in] [in] *strText*
+[in] *uiTearOffBarID*<br/>
+
+[in] *strText*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -123,7 +123,6 @@ CMenuTearOffManager();
 Çoğu durumda, değil oluşturmalısınız bir `CMenuTearOffManager` el ile. Uygulama Framework'ü oluşturur `CMenuTearOffManager` nesne çağırdığınızda [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus).
 
 ##  <a name="getregpath"></a>  CMenuTearOffManager::GetRegPath
-
 
 ```
 LPCTSTR GetRegPath() const;
@@ -165,14 +164,13 @@ Menü kimlikleri aralığını *uiTearOffMenuFirst* için *uiTearOffMenuLast* s�
 
 ##  <a name="isdynamicid"></a>  CMenuTearOffManager::IsDynamicID
 
-
 ```
 BOOL IsDynamicID(UINT uiID) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *uiID*
+[in] *uiID*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -180,14 +178,13 @@ BOOL IsDynamicID(UINT uiID) const;
 
 ##  <a name="parse"></a>  CMenuTearOffManager::Parse
 
-
 ```
 UINT Parse(CString& str);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *str*
+[in] *str*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -195,19 +192,17 @@ UINT Parse(CString& str);
 
 ##  <a name="reset"></a>  CMenuTearOffManager::Reset
 
-
 ```
 void Reset(HMENU hmenu);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *hmenu*
+[in] *hmenu*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setinuse"></a>  CMenuTearOffManager::SetInUse
-
 
 ```
 void SetInUse(
@@ -217,13 +212,13 @@ void SetInUse(
 
 ### <a name="parameters"></a>Parametreler
 
-*uiCmdId*<br/>
-[in] [in] *bBilinmeyen*
+[in] *uiCmdId*<br/>
+
+[in] *bBilinmeyen*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setuptearoffmenus"></a>  CMenuTearOffManager::SetupTearOffMenus
-
 
 ```
 void SetupTearOffMenus(HMENU hMenu);
@@ -231,7 +226,7 @@ void SetupTearOffMenus(HMENU hMenu);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *hMenu*
+[in] *hMenu*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 

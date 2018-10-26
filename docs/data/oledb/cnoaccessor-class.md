@@ -19,58 +19,58 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f383b79c8130501773c56db47c08b9449b259a62
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 97cfefc679391cb54ff40f38285f22f40d068553
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111439"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063841"
 ---
 # <a name="cnoaccessor-class"></a>CNoAccessor Sınıfı
 
-Bir şablon bağımsız değişkeni kullanılabilir (`TAccessor`) için şablon sınıfları gibi `CCommand` ve `CTable`, bir erişimci sınıfında bağımsız değişken gerektirir.  
-  
+Bir şablon bağımsız değişkeni kullanılabilir (`TAccessor`) için şablon sınıfları gibi `CCommand` ve `CTable`, bir erişimci sınıfında bağımsız değişken gerektirir.
+
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-class CNoAccessor  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
+class CNoAccessor
+```
 
-Kullanım `CNoAccessor` parametrelerini veya sütunlarını çıkış desteklemeye sınıfı istemediğinizde bir şablon bağımsız değişkeni olarak.  
-  
-`CNoAccessor` karşılık gelen her biri için diğer erişimcisi sınıf yöntemleri aşağıdaki saptama yöntemleri uygular:  
-  
-- `BindColumns` -Sütunları için erişimciler bağlar.  
-  
-- `BindParameters` -Sütun oluşturulan parametreleri bağlar.  
-  
-- `Bind` -Bağlamaları oluşturur.  
-  
-- `Close` -Erişimci kapatır.  
-  
-- `ReleaseAccessors` -Sınıfı tarafından oluşturulan erişimcileri serbest bırakır.  
-  
-- `FreeRecordMemory` -Boşaltılması için gereken geçerli kayıt tüm sütunları bırakır.  
-  
-- `GetColumnInfo` -Açık satır kümesinden sütun bilgileri alır.  
-  
-- `GetNumAccessors` -Sınıfı tarafından oluşturulan erişimcileri sayısını alır.  
-  
-- `IsAutoAccessor` -Veri taşıma işlemi sırasında otomatik olarak için erişimci alınır true değerini döndürür.  
-  
-- `GetHAccessor` -Belirtilen bir erişimci erişimci tanıtıcısı alır.  
-  
-- `GetBuffer` -Yer işareti arabellek için işaretçi alır.  
-  
-- `NoBindOnNullRowset` -Boş satır kümeleri üzerinde veri bağlamasını engeller.  
-  
-## <a name="requirements"></a>Gereksinimler  
+## <a name="remarks"></a>Açıklamalar
 
-**Başlık:** atldbcli.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Kullanım `CNoAccessor` parametrelerini veya sütunlarını çıkış desteklemeye sınıfı istemediğinizde bir şablon bağımsız değişkeni olarak.
+
+`CNoAccessor` karşılık gelen her biri için diğer erişimcisi sınıf yöntemleri aşağıdaki saptama yöntemleri uygular:
+
+- `BindColumns` -Sütunları için erişimciler bağlar.
+
+- `BindParameters` -Sütun oluşturulan parametreleri bağlar.
+
+- `Bind` -Bağlamaları oluşturur.
+
+- `Close` -Erişimci kapatır.
+
+- `ReleaseAccessors` -Sınıfı tarafından oluşturulan erişimcileri serbest bırakır.
+
+- `FreeRecordMemory` -Boşaltılması için gereken geçerli kayıt tüm sütunları bırakır.
+
+- `GetColumnInfo` -Açık satır kümesinden sütun bilgileri alır.
+
+- `GetNumAccessors` -Sınıfı tarafından oluşturulan erişimcileri sayısını alır.
+
+- `IsAutoAccessor` -Veri taşıma işlemi sırasında otomatik olarak için erişimci alınır true değerini döndürür.
+
+- `GetHAccessor` -Belirtilen bir erişimci erişimci tanıtıcısı alır.
+
+- `GetBuffer` -Yer işareti arabellek için işaretçi alır.
+
+- `NoBindOnNullRowset` -Boş satır kümeleri üzerinde veri bağlamasını engeller.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atldbcli.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
