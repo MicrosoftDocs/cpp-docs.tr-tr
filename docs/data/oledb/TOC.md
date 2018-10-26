@@ -66,7 +66,7 @@
 ###### [Dizeleri OLE DB Sağlayıcısına Okuma](reading-strings-into-the-ole-db-provider.md)
 ###### [Dizeleri OLE DB Sağlayıcısında Depolama](storing-strings-in-the-ole-db-provider.md)
 ##### [Basit Salt Okunur Sağlayıcıyı Geliştirme](enhancing-the-simple-read-only-provider.md)
-###### [RMyProviderRowset Devralmayı Değiştirme](modifying-the-inheritance-of-rmyproviderrowset.md)
+###### [RCustomRowset Devralmayı Değiştirme](modifying-the-inheritance-of-rmyproviderrowset.md)
 ###### [Tüketiciye Döndürülecek Olan Sütunları Dinamik Olarak Belirleme](dynamically-determining-columns-returned-to-the-consumer.md)
 ##### [Salt Okunur Sağlayıcıyı Test Etme](testing-the-read-only-provider.md)
 #### [Güncelleştirilebilir Sağlayıcı Oluşturma](creating-an-updatable-provider.md)
