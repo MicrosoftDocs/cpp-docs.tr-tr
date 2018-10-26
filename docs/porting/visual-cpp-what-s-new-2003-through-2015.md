@@ -13,12 +13,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4e5e30b533837eabb71ca8f27a646794d9a654c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f005beb9bc71724c289322822a3bae4c03f19d48
+ms.sourcegitcommit: 072e12d6b7a242765bdcc9afe4a14a284ade01fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083004"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136256"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki
 
@@ -2100,7 +2100,7 @@ Derleyici, bu sürümdeki bozucu değişiklikler var.
 - `/CLRIMAGETYPE` (CLR görüntü türünü belirt) bağlayıcı seçeneği eklendi.
 - `/CLRSUPPORTLASTERROR` (Son hata kodunu Koru PInvoke çağrıları için) bağlayıcı seçeneği eklendi.
 - `/CLRTHREADATTRIBUTE` (CLR iş parçacığı özniteliğini Ayarla) bağlayıcı seçeneği eklendi.
-- `/CLRUNMANAGEDCODECHECK` (SupressUnmanagedCodeSecurityAttribute ekleme), bağlayıcı seçeneği eklendi.
+- `/CLRUNMANAGEDCODECHECK` (SuppressUnmanagedCodeSecurityAttribute ekleme), bağlayıcı seçeneği eklendi.
 - `/ERRORREPORT` (Dahili bağlayıcı hatalarını raporla) bağlayıcı seçeneği eklendi.
 - `/EXETYPE` bağlayıcı seçeneği kaldırılmıştır. Bağlayıcı artık oluşturma Windows 95 ve Windows 98 aygıt sürücülerini destekler. Bu cihaz sürücüleri oluşturmak için uygun bir DDK kullanın. EXETYPE anahtar sözcüğü artık modül tanımı dosyaları için geçerli değil.
 - `/FUNCTIONPADMIN` (Düzeltme eki eklenebilen görüntü oluşturma) bağlayıcı seçeneği eklendi.

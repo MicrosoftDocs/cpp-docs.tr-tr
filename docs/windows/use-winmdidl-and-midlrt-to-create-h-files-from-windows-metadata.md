@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dcc942bc69ebb37a7aba59e722b1a4cebbbab3ff
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3f97ef0f285cda7d31ddd53f0a8b0ca9a22f360c
+ms.sourcegitcommit: 072e12d6b7a242765bdcc9afe4a14a284ade01fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071373"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136204"
 ---
 # <a name="how-to-use-winmdidlexe-and-midlrtexe-to-create-h-files-from-windows-metadata"></a>Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe programını kullanma
 
@@ -39,13 +39,13 @@ Varsayılan olarak [Windows 8.1, winmdidl.exe ve midlrt.exe C:\Program Files (x8
 ## <a name="winmdidl-command-line-arguments"></a>Winmdidl komut satırı bağımsız değişkenleri
 
 ```
-Winmdidl.exe [/nologo] [/supressversioncheck] [/time] [/outdir:dir] [/banner:file] [/utf8] Winmdfile
+Winmdidl.exe [/nologo] [/suppressversioncheck] [/time] [/outdir:dir] [/banner:file] [/utf8] Winmdfile
 ```
 
 **/nologo**<br/>
 Konsol winmdidl telif hakkı iletisi ve sürüm numarasını görüntülenmesini önler.
 
-**/supressversioncheck**<br/>
+**/suppressversioncheck**<br/>
 Kullanılmadı.
 
 **/ saat**<br/>

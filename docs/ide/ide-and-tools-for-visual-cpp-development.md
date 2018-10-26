@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c639ddbe3d2e5b8a9c4f402df56215ca7efd1e1a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 99fdb8f9c08845c5f440fc4ae1f100f8afd832e2
+ms.sourcegitcommit: 072e12d6b7a242765bdcc9afe4a14a284ade01fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070445"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136165"
 ---
 # <a name="ide-and-compiler-tools-for-visual-c-development"></a>IDE ve Visual C++ geliştirme derleme araçları
 
@@ -51,7 +51,7 @@ Kaynak denetimi işi birden fazla Geliştirici arasında devam eden üretim kodu
 
 ![Takım Gezgini](media/vs2017-team-explorer.png "Visual Studio 2017 Takım Gezgini")
 
-Azure'da depolarla Git tümleştirmesi hakkında daha fazla bilgi için bkz: [Azure depoları Git ile Visual Studio 2017 ile kodunuzu paylaşmaya](/azure/devops/repos/git/share-your-code-in-git-vs-2017). GitHub Git tümleştirme hakkında bilgi için [Visual Studio için GitHub uzantısı](https://visualstudio.github.com/).
+Azure'da depolarla Git tümleştirmesi hakkında daha fazla bilgi için bkz: [Azure depoları Git ile Visual Studio 2017 ile kodunuzu paylaşmaya](/azure/devops/repos/git/share-your-code-in-git-vs-2017). GitHub ile Git tümleştirmesi hakkında daha fazla bilgi için bkz. [Visual Studio için GitHub uzantısı](https://visualstudio.github.com/).
 
 ## <a name="create-user-interfaces-with-designers"></a>Tasarımcılar ile kullanıcı arabirimleri oluşturun
 

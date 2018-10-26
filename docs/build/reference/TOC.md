@@ -197,7 +197,7 @@
 ### [/CLRIMAGETYPE (CLR Görüntü Türünü Belirt)](clrimagetype-specify-type-of-clr-image.md)
 ### [/CLRSUPPORTLASTERROR (PInvoke Çağrıları için Son Hata Kodunu Koru)](clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md)
 ### [/CLRTHREADATTRIBUTE (CLR İş Parçacığı Özniteliğini Ayarla)](clrthreadattribute-set-clr-thread-attribute.md)
-### [/CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute Çıkarma)](clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute.md)
+### [/CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute Çıkarma)](clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md)
 ### [/DEBUG (Hata Ayıklama Bilgileri Üret)](debug-generate-debug-info.md)
 ### [/DEBUGTYPE (Hata Ayıklama Bilgisi Seçenekleri)](debugtype-debug-info-options.md)
 ### [/DEF (Modül Tanım Dosyasını Belirt)](def-specify-module-definition-file.md)

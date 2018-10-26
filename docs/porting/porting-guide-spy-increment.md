@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66d57ea870d6d1332b8d14f0dc7376961c40d829
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: cd85aa6ce1cfee3416d04291d484a7bad6359ea4
+ms.sourcegitcommit: 072e12d6b7a242765bdcc9afe4a14a284ade01fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065713"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136191"
 ---
 # <a name="porting-guide-spy"></a>Taşıma Kılavuzu: Spy++
 
@@ -45,7 +45,7 @@ Yeni dönüştürülmüş proje oluşturma sırasında genellikle bulabilirsiniz
 
 Spy ++'ta bulunamadı dosyaları verstamp.h biriydi. Bir Internet arama aracında bu eski veri teknoloji bir DAO SDK'sından gelen belirledi. Hangi simgelerin, üstbilgi dosyasından bu dosyayı gerçekten gerekirse veya üst bilgi dosyası bildirimi geçersiz kılınan ve yeniden derlenen şekilde bu sembolleri başka bir yerde tanımlanırsa görmek için kullanılan bulmak istedik. Olabilmesinin VER_FILEFLAGSMASK gereklidir, tek bir simge.
 
-```
+```Output
 1>C:\Program Files (x86)\Windows Kits\8.1\Include\shared\common.ver(212): error RC2104: undefined keyword or key name: VER_FILEFLAGSMASK
 ```
 
@@ -73,7 +73,7 @@ MFC'de WINVER sürümü artık desteklenmiyor, bir sonraki hata gösterir. Windo
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxv_w32.h(40): fatal error C1189: #error:  MFC does not support WINVER less than 0x0501.  Please change the definition of WINVER in your project properties or precompiled header.
 ```
 
-Onu hedefleyen Visual Studio 2015'te kullanılabilir olsa bile,, uygulamalarınızda desteği geçirebileceğinizden ve kullanıcılarınızın Windows yeni sürümlerini benimsemeye teşvik Windows XP artık Microsoft tarafından desteklenir.
+Onu hedefleyen Visual Studio'da kullanılabilir olsa bile,, uygulamalarınızda desteği geçirebileceğinizden ve kullanıcılarınızın Windows yeni sürümlerini benimsemeye teşvik Windows XP artık Microsoft tarafından desteklenir.
 
 Hatadan kurtulmak için WINVER güncelleştirerek tanımlamanız **proje özellikleri** şu anda hedeflemek istediğiniz Windows için en düşük sürümünü ayarlama. Çeşitli Windows sürümleri için değerlerinin bir tablosunu bulun [burada](/windows/desktop/WinProg/using-the-windows-headers).
 
@@ -95,7 +95,7 @@ Windows 7'ye WINVER ayarlayacağız. Kod (_WIN32_WINNT_WIN7), Windows 7 için ma
 
 Bu değişikliklerle SpyHk (DLL) projesi oluşturulur, ancak bir bağlayıcı hatası oluşturur.
 
-```
+```Output
 LINK : warning LNK4216: Exported entry point _DLLEntryPoint@12
 ```
 
@@ -120,7 +120,9 @@ Aşamalı olarak ortadan birçok derleme hataları içeren bir proje göz önün
 
 İostreams kullanan eski C++ kodu ile bir sonraki hata yaygındır.
 
-mstream.h(40): önemli hata C1083: açık dosya içeremez: 'iostream.h': Böyle bir dosya veya dizin
+```Output
+mstream.h(40): fatal error C1083: Cannot open include file: 'iostream.h': No such file or directory
+```
 
 Eski iostreams kitaplığı kaldırılmış ve yerine sorunudur. Eski iostreams yeni standartları ile değiştirilecek sahibiz.
 
@@ -195,7 +197,7 @@ MOUT << _T(" chUser:'") << chUser
 << _T("' (") << (INT)(UCHAR)chUser << _T(')');
 ```
 
-MOUT çözümler için makro \*türünde bir nesne olan g_pmout `mstream`. `mstream` Standart çıkış dizesi sınıfından türetilmiş sınıf `std::basic_ostream<TCHAR>.` ancak biz, aşırı yükleme çözümlemesi için Unicode dönüştürme için hazırlanırken yerleştirecek _T dize sabit değeri, geçici bir çözüm ile **işleci <<** şu hata iletisiyle başarısız olur:
+MOUT çözümler için makro `*g_pmout` türünde bir nesne olan `mstream`. `mstream` Standart çıkış dizesi sınıfından türetilmiş sınıf `std::basic_ostream<TCHAR>`. Ancak ile \_dize sabit değeri, geçici olarak size, aşırı yükleme çözümlemesi için Unicode dönüştürme işlemi için hazırlama yerleştirin T **işleci <<** şu hata iletisiyle başarısız olur:
 
 ```Output
 1>winmsgs.cpp(4612): error C2666: 'mstream::operator <<': 2 overloads have similar conversions
@@ -266,7 +268,7 @@ Bu tür bir dönüştürme, eski ve daha az katı derleyici altında izin verild
 
 Aşağıdaki gibi birçok hata da aldığımız:
 
-```
+```Output
 error C2440: 'static_cast': cannot convert from 'UINT (__thiscall CHotLinkCtrl::* )(CPoint)' to 'LRESULT (__thiscall CWnd::* )(CPoint)'
 ```
 
@@ -526,7 +528,7 @@ msvcrtd.lib;msvcirtd.lib;kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;Debug\Sp
 
 Artık bize gerçekten eski çok baytlı karakter kümesi (MBCS) kodu için Unicode güncelleştirin. Bu içkin şekilde Windows Masaüstü platform için bağlı bir Windows uygulaması olduğundan biz bunu kullanan Windows UTF-16 Unicode bağlantı. Platformlar arası kod yazma veya başka bir platform için bir Windows uygulaması bağlantı noktası oluşturma, yaygın olarak kullanılan diğer işletim sistemlerinde UTF-8, taşıma düşünmek isteyebilirsiniz.
 
-UTF-16 Unicode taşıma, biz biz yine de MBCS'den veya derleme seçeneğini istediğinizi karar vermeniz gerekir.  MBCS Desteği seçeneğine sahip olmasını istiyoruz, TCHAR makrosu ya da giderir karakter türü olarak kullanmamız gereken **char** veya **wchar_t**_MBCS veya _UNICODE sırasında tanımlı olup olmadığı bağlı olarak derleme. TCHAR ve TCHAR yerine çeşitli API sürümlerini geçiş **wchar_t** ve onun ilişkili API'ler, geri kodunuzun bir MBCS sürümünü _MBCS makrosu _UNICODE yerine tanımlayarak edinebileceğiniz anlamına gelir. TCHAR ek olarak TCHAR sürümlerini yaygın olarak kullanılan tür tanımları, makrolar ve işlevler gibi çeşitli var. Örneğin, LPCTSTR LPCSTR vb. yerine. Proje Özellikleri iletişim kutusunda, altında **yapılandırma özellikleri**, **genel** bölümünde **karakter kümesi** özelliğinden **MBCS kullanın Karakter kümesi** için **Unicode karakter kümesini Kullandırır**. Bu ayar, hangi makrosu, derleme sırasında önceden etkiler. Bir UNICODE makrosu hem _UNICODE makrosu yoktur. Proje özelliği hem de sürekli olarak etkiler. _UNICODE MFC gibi Visual C++ üstbilgi kullanabilirsiniz, ancak bir tanımlandığında UNICODE Windows üstbilgileri kullanmak, diğeri her zaman tanımlanır.
+UTF-16 Unicode taşıma, biz biz yine de MBCS'den veya derleme seçeneğini istediğinizi karar vermeniz gerekir.  MBCS Desteği seçeneğine sahip olmasını istiyoruz, TCHAR makrosu ya da giderir karakter türü olarak kullanmamız gereken **char** veya **wchar_t**mi bağlı olarak \_MBCS veya \_UNICODE, derleme sırasında tanımlanır. TCHAR ve TCHAR yerine çeşitli API sürümlerini geçiş **wchar_t** ve onun ilişkili API'ler, geri kodunuzun bir MBCS sürümünü yalnızca tanımlayarak edinebileceğiniz anlamına gelir \_MBCS makrosu yerine \_ UNICODE. TCHAR ek olarak TCHAR sürümlerini yaygın olarak kullanılan tür tanımları, makrolar ve işlevler gibi çeşitli var. Örneğin, LPCTSTR LPCSTR vb. yerine. Proje Özellikleri iletişim kutusunda, altında **yapılandırma özellikleri**, **genel** bölümünde **karakter kümesi** özelliğinden **MBCS kullanın Karakter kümesi** için **Unicode karakter kümesini Kullandırır**. Bu ayar, hangi makrosu, derleme sırasında önceden etkiler. Her iki UNICODE makro yoktur ve \_UNICODE makrosu. Proje özelliği hem de sürekli olarak etkiler. Windows üst bilgi kullanan MFC gibi Visual C++ üstbilgi burada kullanmak UNICODE \_UNICODE, ancak bir tanımlandığında, diğeri her zaman tanımlanır.
 
 İyi bir [Kılavuzu](https://msdn.microsoft.com/library/cc194801.aspx) UTF-16 Unicode MBCS taşıma için TCHAR kullanarak mevcut. Biz bu yolu seçin. İlk olarak, biz değiştirme **karakter kümesi** özelliğini **kullanım Unicode karakter kümesi** ve projeyi yeniden derleyin.
 
@@ -544,13 +546,13 @@ Bu üreten koduna ilişkin bir örnek aşağıda verilmiştir:
 wsprintf(szTmp, "%d.%2.2d.%4.4d", rmj, rmm, rup);
 ```
 
-Biz _T dize geçici hata kaldırmak için değişmez değer yerleştirin.
+Buraya \_hata kaldırılacağı dize sabit değeri etrafında T.
 
 ```cpp
 wsprintf(szTmp, _T("%d.%2.2d.%4.4d"), rmj, rmm, rup);
 ```
 
-_T makro bir dize sabit değeri derleme olarak yapma etkisi bir **char** dize veya bir **wchar_t** UNICODE ve MBCS ayara bağlı olarak bir dize. Visual Studio'da _T tüm dizeleri değiştirmek için önce açın **hızlı Değiştir** (klavye: **Ctrl**+**F**) kutusunu veya **dosyalarda Değiştir**  (Klavye: **Ctrl**+**Shift**+**H**), ardından **normal kullanım İfadeleri** onay kutusu. Girin `((\".*?\")|('.+?'))` arama metni olarak ve `_T($1)` yerine konacak metin olarak. Zaten sahip olduğunuz bazı dizeler _T makrosu, bu yordamı, yeniden ekleyeceksiniz ve kullandığınızda gibi _T, istediğiniz durumlarda da bulabilirsiniz `#include`, kullanmak en iyisidir **Değiştir** yerine  **Tümünü Değiştir**.
+\_T makrosu etkisi olarak bir dize sabit değeri derleme yapma bir **char** dize veya bir **wchar_t** UNICODE ve MBCS ayara bağlı olarak bir dize. Tüm dizeleri ile değiştirilecek \_T Visual Studio'da ilk kez açın **hızlı Değiştir** (klavye: **Ctrl**+**F**) kutusunu veya  **Dosyalarda Değiştir** (klavye: **Ctrl**+**Shift**+**H**), ardından **kullanın Normal ifadeler** onay kutusu. Girin `((\".*?\")|('.+?'))` arama metni olarak ve `_T($1)` yerine konacak metin olarak. Zaten varsa \_bazı dizeler T makrosu, bu yordamı, yeniden ekleyecek ve istediğiniz durumlarda bulabilirsiniz \_kullandığınızda gibi T, `#include`, kullanmak en iyisidir **sonraki değiştirin**yerine **Tümünü Değiştir**.
 
 Bu belirli işlev [wsprintf](/windows/desktop/api/winuser/nf-winuser-wsprintfa), bu, olası arabellek taşması nedeniyle kullanılmaması önerir için gerçekten Windows üstbilgiler ve belgeleri tanımlanır. Boyut için verilen `szTmp` arabellek vardır, bu nedenle arabellek için yazılmış veri tutabilen denetlenecek işlevine yönelik bir yolu yoktur. Güvenliğini size benzer diğer sorunları gidermek CRT'ye, taşıma hakkında sonraki bölüme bakın. İle değiştirerek sona [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md).
 
@@ -578,7 +580,7 @@ Benzer şekilde, LPSTR (uzun dize işaretçisi) ve LPCSTR (uzun sabit dize işar
 
 Doğru gideren bir sürümünü kullanmak için bir tür değiştirilecek vardı bazı durumlarda (örneğin WNDCLASSA yerine WNDCLASS).
 
-Çoğu durumda biz bir Win32 API gibi genel sürümünü (makro) kullanmanız gerekiyordu `GetClassName` (yerine `GetClassNameA`). İleti işleyici switch deyimi içinde bazı iletilerin bu durumda MBCS veya Unicode özel, biz genel olarak adlandırılan işlevlerin ile değiştirilmiş olduğundan MBCS sürüm açıkça çağırmak için kodu değiştirmenizi vardı **A** ve **W** belirli işlevleri ve çözümlenen doğru genel adı bir makro eklenen **A** veya **W** UNICODE tanımlanan şirket adı.  _UNICODE, tanımlama moduna, seçilen bile artık kod pek çok bölümünün W sürümüdür **A** sürümüdür ne istiyordu.
+Çoğu durumda biz bir Win32 API gibi genel sürümünü (makro) kullanmanız gerekiyordu `GetClassName` (yerine `GetClassNameA`). İleti işleyici switch deyimi içinde bazı iletilerin bu durumda MBCS veya Unicode özel, biz genel olarak adlandırılan işlevlerin ile değiştirilmiş olduğundan MBCS sürüm açıkça çağırmak için kodu değiştirmenizi vardı **A** ve **W** belirli işlevleri ve çözümlenen doğru genel adı bir makro eklenen **A** veya **W** UNICODE tanımlanan şirket adı.  Biz tanımlamak için geçiş sırasında kodu birçok bölümlerinde \_UNICODE W sürümüdür seçilen bile artık **A** sürümüdür ne istiyordu.
 
 Burada gerçekleştirilecek özel eylemler b birkaç yerde mevcuttur. Kullanımı `WideCharToMultiByte` veya `MultiByteToWideChar` daha yakından gerektirebilir. İşte bir örnek burada `WideCharToMultiByte` kullanılıyordu.
 

@@ -39,32 +39,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98965b94c83b69e15c38319d7bc5a6e4151b323e
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 91b97c653a5f035a767fbedcfcbfdfa7ca178327
+ms.sourcegitcommit: 038f1406b1172318f8832371ad14176f788c44fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704892"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50132159"
 ---
 # <a name="link-options"></a>Bağlantı Seçenekleri
 
-CRT lib dizin, herhangi bir kod değişikliği olmadan belirli CRT özellikleri etkinleştirmek küçük nesne dosyaları sayısını içerir. Bunları kullanmak için bağlayıcı komut satırı eklemek zorunda olduğundan bunlara "bağlantı seçenekleri" denir.
+CRT kitaplığı dizini herhangi bir kod değişikliği olmadan belirli CRT özellikler sağlayan küçük nesne dosyaları içerir. Yalnızca bunları kullanmak için bağlayıcı komut satırına eklenecek olduğundan bunlar "bağlantı seçenekleri" olarak adlandırılır.
 
-CLR saf mod sürümleri bu nesneler, Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor. Normal sürümleri yerel ve/CLR kodunu kullanın.
+Bu nesnelerin CLR pure modunda sürümleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor. Normal sürümleri, yerel ve/CLR kodunu kullanın.
 
-|Yerel ve/CLR|Saf modu|Açıklama|
+|Yerel ve/CLR|Pure modunda|Açıklama|
 |----------------------|---------------|-----------------|
 |binmode.obj|pbinmode.obj|Varsayılan dosya çevirisi modu ikili biçimde ayarlar. Bkz: [_fmode](../c-runtime-library/fmode.md).|
-|chkstk.obj|yok|Yığını denetleme ve alloca CRT kullanmadığınızda desteği sağlar.|
-|commode.obj|pcommode.obj|Commit"için" genel tamamlama bayrağını ayarlar. Bkz: [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md) ve [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md).|
+|chkstk.obj|yok|Yığın denetimi ve alloca CRT kullanılmadığında desteği sağlar.|
+|commode.obj|pcommode.obj|"İşleme için" genel tamamlama bayrağını ayarlar. Bkz: [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md) ve [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md).|
+|exe_initialize_mta.lib|yok|COM nesneleri genel akıllı işaretçilerin kullanılmasına EXE başlatılırken MTA apartman başlatır. Bu seçenek bir MTA Grup başvurusu kapatılırken sızıntıları olduğundan DLL'leri için kullanmayın. Bu bağlama, combase.h dahil olmak üzere ve _EXE_INITIALIZE_MTA tanımlama eşdeğerdir. |
 |fp10.obj|yok|Varsayılan duyarlık denetimi 64 bit ile değiştirir. Bkz: [kayan nokta desteği](../c-runtime-library/floating-point-support.md).|
-|invalidcontinue.obj|pinvalidcontinue.obj|Geçersiz parametreler CRT, işlevlere geçirilen anlamı hiçbir işlem yapmayan bir varsayılan geçersiz parametre işleyicisi yalnızca olacak kümeleri errno ayarlamak ve bir hata sonucu döndürür.|
-|loosefpmath.obj|yok|Kayan nokta kodu göstereceği olduğunu sağlar değerleri normal dışı.|
-|newmode.obj|pnewmode.obj|Neden [malloc](../c-runtime-library/reference/malloc.md) hatada yeni işleyicisi çağırmak için. Bkz: [_set_new_mode](../c-runtime-library/reference/set-new-mode.md), [_set_new_handler](../c-runtime-library/reference/set-new-handler.md), [calloc](../c-runtime-library/reference/calloc.md), ve [realloc](../c-runtime-library/reference/realloc.md).|
-|noarg.obj|pnoarg.obj|Argc ve argv tüm işlemeyi devre dışı bırakır.|
+|invalidcontinue.obj|pinvalidcontinue.obj|Geçersiz parametreler CRT işlevleri için geçirilen yani hiçbir şey yapmaz bir varsayılan geçersiz parametre işleyicisi yalnızca olacak kümeleri errno ayarlayın ve bir hata sonucu döndürür.|
+|loosefpmath.obj|yok|Kayan nokta kodu göstereceği, sağlar denormal değerleri.|
+|newmode.obj|pnewmode.obj|Neden [malloc](../c-runtime-library/reference/malloc.md) hatasında yeni işleyici çağırmak için. Bkz: [_set_new_mode](../c-runtime-library/reference/set-new-mode.md), [_set_new_handler](../c-runtime-library/reference/set-new-handler.md), [calloc](../c-runtime-library/reference/calloc.md), ve [realloc](../c-runtime-library/reference/realloc.md).|
+|noarg.obj|pnoarg.obj|Argc argv ve tüm işlemleri devre dışı bırakır.|
 |nochkclr.obj|yok|Hiçbir şey yapılmaz. Projenizden kaldırın.|
-|noenv.obj|pnoenv.obj|CRT için önbelleğe alınmış bir ortam oluşturmayı devre dışı bırakır.|
-|nothrownew.obj|pnothrownew.obj|Atma olmayan sürümünde yeni CRT sağlar. Bkz: [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md).|
+|noenv.obj|pnoenv.obj|Önbelleğe alınan bir ortam oluşturmak için CRT devre dışı bırakır.|
+|nothrownew.obj|pnothrownew.obj|Oluşturmayan sürümünde yeni CRT sağlar. Bkz: [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md).|
 |setargv.obj|psetargv.obj|Komut satırı bağımsız değişkeni joker karakter genişletmesi sağlar. Bkz: [joker karakter bağımsız değişkenlerini genişletme](../c-language/expanding-wildcard-arguments.md).|
 |threadlocale.obj|pthreadlocale.obj|Etkinleştirir tüm yeni iş parçacığı yerel ayarı varsayılan olarak iş parçacığı başına.|
 |wsetargv.obj|pwsetargv.obj|Komut satırı bağımsız değişkeni joker karakter genişletmesi sağlar. Bkz: [joker karakter bağımsız değişkenlerini genişletme](../c-language/expanding-wildcard-arguments.md).|

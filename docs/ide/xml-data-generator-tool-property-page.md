@@ -8,7 +8,7 @@ ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCXMLDataGeneratorTool.GeneratedProxyLanguage
 - VC.Project.VCXMLDataGeneratorTool.Output
-- VC.Project.VCXMLDataGeneratorTool.SupressStartupBanner
+- VC.Project.VCXMLDataGeneratorTool.SuppressStartupBanner
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd101d5cbea106c356fcfab5b556dc3f49fe8e87
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 115791ab819128c548a8c3b32e3c5a26437802ac
+ms.sourcegitcommit: 072e12d6b7a242765bdcc9afe4a14a284ade01fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385046"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136139"
 ---
 # <a name="xml-data-generator-tool-property-page"></a>XML Verileri Oluşturma Aracı Özellik Sayfası
 
