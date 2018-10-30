@@ -140,12 +140,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c86efacf7211415bfdc2936a736d78e29dc419bf
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 086aaebcdc44439c45a219c7292da4aff9e13b06
+ms.sourcegitcommit: a88d228480d4bb5834e985d7b3ead2760be95572
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076405"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50203098"
 ---
 # <a name="crecordset-class"></a>CRecordset sınıfı
 
