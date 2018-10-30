@@ -1,7 +1,7 @@
 ---
 title: OLE DB Sağlayıcı Şablonu Mimarisi | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/24/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 650bf76f5e179e46b334d29d435d64701822013d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f91ee551ca9319450f970be059317feb6f4f0157
+ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054559"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50216493"
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB Sağlayıcı Şablonu Mimarisi
 
@@ -32,7 +32,7 @@ OLE DB sağlayıcı mimarisi, bir veri kaynağı nesnesi ve bir veya daha fazla 
 
 ![Sağlayıcı mimarisi](../../data/oledb/media/vc4twb1.gif "vc4twb1")
 
-OLE DB sağlayıcısı Sihirbazı tarafından oluşturulan kaynak dosyaları ile birlikte, OLE DB Şablonları, bir veri kaynağı nesnesi uygulayın. OLE DB için karşılık gelen bir nesne oturumdur `TSession`.
+Tarafından oluşturulan kaynak dosyalarıyla birlikte **OLE DB sağlayıcısı Sihirbazı**, OLE DB Şablonları bir veri kaynağı nesnesi uygular. OLE DB için karşılık gelen bir nesne oturumdur `TSession`.
 
 ## <a name="mandatory-and-optional-interfaces"></a>Zorunlu ve isteğe bağlı arabirimler
 
@@ -48,15 +48,15 @@ OLE DB sağlayıcı şablonları, önceden paketlenmiş uygulamalar için gerekl
 
 - [İşlem](../../data/oledb/transaction-object-interfaces.md)
 
-OLE DB sağlayıcı şablonları satır ve depolama nesnelerinin uygulamayan unutmayın.
+OLE DB sağlayıcı şablonları satır ve depolama nesnelerinin kullanılmaz.
 
 Aşağıdaki tabloda, yukarıda listelenen nesneler için zorunlu ve isteğe bağlı arabirimler listelenmiştir göre [OLE DB 2.6 SDK Belgeleri](/previous-versions/windows/desktop/ms722784).
 
 |Bileşen|Arabirim|Yorum|
 |---------------|---------------|-------------|
 |[Veri kaynağı](../../data/oledb/data-source-object-interfaces.md) ([CDataSource](../../data/oledb/cdatasource-class.md))|[zorunlu] `IDBCreateSession`<br /><br /> [zorunlu] `IDBInitialize`<br /><br /> [zorunlu] `IDBProperties`<br /><br /> [zorunlu] `IPersist`<br /><br /> [isteğe bağlı] `IConnectionPointContainer`<br /><br /> [isteğe bağlı] `IDBAsynchStatus`<br /><br /> [isteğe bağlı] `IDBDataSourceAdmin`<br /><br /> [isteğe bağlı] `IDBInfo`<br /><br /> [isteğe bağlı] `IPersistFile`<br /><br /> [isteğe bağlı] `ISupportErrorInfo`|Sağlayıcı için tüketici bağlantısı. Nesnesi, kullanıcı Kimliğinizi, parolanızı ve veri kaynağı adı gibi bağlantı özelliklerini belirtmek için kullanılır. Nesne veri kaynağı yönetmek için de kullanılabilir (oluşturmak, güncelleştirmek, tablo, silme ve benzeri).|
-|[Oturum](../../data/oledb/session-object-interfaces.md) ([CSession](../../data/oledb/cdataconnection-operator-csession-amp.md))|[zorunlu] `IGetDataSource`<br /><br /> [zorunlu] `IOpenRowset`<br /><br /> [zorunlu] `ISessionProperties`<br /><br /> [isteğe bağlı] `IAlterIndex`<br /><br /> [isteğe bağlı] `IAlterTable`<br /><br /> [isteğe bağlı] `IBindResource`<br /><br /> [isteğe bağlı] `ICreateRow`<br /><br /> [isteğe bağlı] `IDBCreateCommand`<br /><br /> [isteğe bağlı] `IDBSchemaRowset`<br /><br /> [isteğe bağlı] `IIndexDefinition`<br /><br /> [isteğe bağlı] `ISupportErrorInfo`<br /><br /> [isteğe bağlı] `ITableCreation`<br /><br /> [isteğe bağlı] `ITableDefinition`<br /><br /> [isteğe bağlı] `ITableDefinitionWithConstraints`<br /><br /> [isteğe bağlı] `ITransaction`<br /><br /> [isteğe bağlı] `ITransactionJoin`<br /><br /> [isteğe bağlı] `ITransactionLocal`<br /><br /> [isteğe bağlı] `ITransactionObject`|Oturum nesnesi, bir müşteri ve sağlayıcı arasında tek bir konuşma temsil eder. ODBC için biraz benzerdir `HSTMT` olabilir, birçok eş zamanlı oturumların etkin.<br /><br /> Oturum nesnesi, OLE DB işlevselliğine erişmek için birincil bağlantıdır. Komut, işlem veya satır kümesi nesnesi almak için oturum nesnesini gözden geçirin.|
-|[Satır kümesi](../../data/oledb/rowset-object-interfaces.md) ([CRowset](../../data/oledb/crowset-class.md))|[zorunlu] `IAccessor`<br /><br /> [zorunlu] `IColumnsInfo`<br /><br /> [zorunlu] `IConvertType`<br /><br /> [zorunlu] `IRowset`<br /><br /> [zorunlu] `IRowsetInfo`<br /><br /> [isteğe bağlı] `IChapteredRowset`<br /><br /> [isteğe bağlı] `IColumnsInfo2`<br /><br /> [isteğe bağlı] `IColumnsRowset`<br /><br /> [isteğe bağlı] `IConnectionPointContainer`<br /><br /> [isteğe bağlı] `IDBAsynchStatus`<br /><br /> [isteğe bağlı] `IGetRow`<br /><br /> [isteğe bağlı] `IRowsetChange`<br /><br /> [isteğe bağlı] `IRowsetChapterMember`<br /><br /> [isteğe bağlı] `IRowsetCurrentIndex`<br /><br /> [isteğe bağlı] `IRowsetFind`<br /><br /> [isteğe bağlı] `IRowsetIdentity`<br /><br /> [isteğe bağlı] `IRowsetIndex`<br /><br /> [isteğe bağlı] `IRowsetLocate`<br /><br /> [isteğe bağlı] `IRowsetRefresh`<br /><br /> [isteğe bağlı] `IRowsetScroll`<br /><br /> [isteğe bağlı] `IRowsetUpdate`<br /><br /> [isteğe bağlı] `IRowsetView`<br /><br /> [isteğe bağlı] `ISupportErrorInfo`<br /><br /> [isteğe bağlı] `IRowsetBookmark`|Satır kümesi nesnesi, veri kaynağından verileri temsil eder. Nesne, bu verileri veri çubuğunda temel işlemleri (güncelleştirme, alma, taşıma ve diğerleri) ve bağlamaları sorumludur. Her zaman içerir ve veri işlemek için bir satır kümesi nesnesi var.|
+|[Oturum](../../data/oledb/session-object-interfaces.md) ([CSession](../../data/oledb/cdataconnection-operator-csession-amp.md))|[zorunlu] `IGetDataSource`<br /><br /> [zorunlu] `IOpenRowset`<br /><br /> [zorunlu] `ISessionProperties`<br /><br /> [isteğe bağlı] `IAlterIndex`<br /><br /> [isteğe bağlı] `IAlterTable`<br /><br /> [isteğe bağlı] `IBindResource`<br /><br /> [isteğe bağlı] `ICreateRow`<br /><br /> [isteğe bağlı] `IDBCreateCommand`<br /><br /> [isteğe bağlı] `IDBSchemaRowset`<br /><br /> [isteğe bağlı] `IIndexDefinition`<br /><br /> [isteğe bağlı] `ISupportErrorInfo`<br /><br /> [isteğe bağlı] `ITableCreation`<br /><br /> [isteğe bağlı] `ITableDefinition`<br /><br /> [isteğe bağlı] `ITableDefinitionWithConstraints`<br /><br /> [isteğe bağlı] `ITransaction`<br /><br /> [isteğe bağlı] `ITransactionJoin`<br /><br /> [isteğe bağlı] `ITransactionLocal`<br /><br /> [isteğe bağlı] `ITransactionObject`|Bir müşteri ve sağlayıcı arasında tek bir konuşma oturum nesnedir. ODBC benzer `HSTMT` olabilir, birçok eş zamanlı oturumların etkin.<br /><br /> Oturum nesnesi, OLE DB işlevselliğine erişmek için birincil bağlantıdır. Komut, işlem veya satır kümesi nesnesi almak için oturum nesnesini gözden geçirin.|
+|[Satır kümesi](../../data/oledb/rowset-object-interfaces.md) ([CRowset](../../data/oledb/crowset-class.md))|[zorunlu] `IAccessor`<br /><br /> [zorunlu] `IColumnsInfo`<br /><br /> [zorunlu] `IConvertType`<br /><br /> [zorunlu] `IRowset`<br /><br /> [zorunlu] `IRowsetInfo`<br /><br /> [isteğe bağlı] `IChapteredRowset`<br /><br /> [isteğe bağlı] `IColumnsInfo2`<br /><br /> [isteğe bağlı] `IColumnsRowset`<br /><br /> [isteğe bağlı] `IConnectionPointContainer`<br /><br /> [isteğe bağlı] `IDBAsynchStatus`<br /><br /> [isteğe bağlı] `IGetRow`<br /><br /> [isteğe bağlı] `IRowsetChange`<br /><br /> [isteğe bağlı] `IRowsetChapterMember`<br /><br /> [isteğe bağlı] `IRowsetCurrentIndex`<br /><br /> [isteğe bağlı] `IRowsetFind`<br /><br /> [isteğe bağlı] `IRowsetIdentity`<br /><br /> [isteğe bağlı] `IRowsetIndex`<br /><br /> [isteğe bağlı] `IRowsetLocate`<br /><br /> [isteğe bağlı] `IRowsetRefresh`<br /><br /> [isteğe bağlı] `IRowsetScroll`<br /><br /> [isteğe bağlı] `IRowsetUpdate`<br /><br /> [isteğe bağlı] `IRowsetView`<br /><br /> [isteğe bağlı] `ISupportErrorInfo`<br /><br /> [isteğe bağlı] `IRowsetBookmark`|Satır kümesi nesnesi, veri kaynağından alınan verilerdir. Nesnesi, bu verileri veri çubuğunda temel işlemleri (güncelleştirme, alma, taşıma ve diğerleri) ve bağlamaları için kullanılır. Her zaman tutmak ve veri işlemek için bir satır kümesi nesnesi var.|
 |[Komut](../../data/oledb/command-object-interfaces.md) ([CCommand](ccommand-class.md))|[zorunlu] `IAccessor`<br /><br /> [zorunlu] `IColumnsInfo`<br /><br /> [zorunlu] `ICommand`<br /><br /> [zorunlu] `ICommandProperties`<br /><br /> [zorunlu] `ICommandText`<br /><br /> [zorunlu] `IConvertType`<br /><br /> [isteğe bağlı] `IColumnsRowset`<br /><br /> [isteğe bağlı] `ICommandPersist`<br /><br /> [isteğe bağlı] `ICommandPrepare`<br /><br /> [isteğe bağlı] `ICommandWithParameters`<br /><br /> [isteğe bağlı] `ISupportErrorInfo`<br /><br /> [isteğe bağlı] `ICommandStream`|Komut nesnesi, sorgular gibi veri işlemlerini işler. Bu, parametreli forceseek ifade başa çıkabilir.<br /><br /> Komut nesnesi, parametreleri ve çıkış sütunları için bağlamaları işlenmesinden sorumludur. Bir bağlama bir satır kümesindeki bir sütun nasıl alınacağını hakkında bilgi içeren bir yapıdır. Sıra, veri türü, uzunluğu ve durumu gibi bilgileri içerir.|
 |[İşlem](../../data/oledb/transaction-object-interfaces.md) (isteğe bağlı)|[zorunlu] `IConnectionPointContainer`<br /><br /> [zorunlu] `ITransaction`<br /><br /> [isteğe bağlı] `ISupportErrorInfo`|İşlem nesnesi, bir veri kaynağında atomik bir iş birimi tanımlar ve bu iş birimleri birbirleriyle nasıl ilişki kuracağını belirler. Bu nesne OLE DB sağlayıcı şablonları tarafından doğrudan desteklenmiyor (diğer bir deyişle, kendi nesne oluştur).|
 
@@ -69,4 +69,4 @@ Daha fazla bilgi için aşağıdaki konulara bakın:
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB arabirimleri](/previous-versions/windows/desktop/ms709709)
+[OLE DB arabirimleri](/previous-versions/windows/desktop/ms709709)<br/>

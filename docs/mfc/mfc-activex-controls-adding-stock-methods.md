@@ -16,19 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e103e43f23746f8274ad00da4d043e3446dfc706
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7967b63a14c296d7f0d73bb403aa5b74a6c3689b
+ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053034"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50204309"
 ---
 # <a name="mfc-activex-controls-adding-stock-methods"></a>MFC ActiveX Denetimleri: Stok Yöntemler Ekleme
 
 Sınıfı tarafından zaten uygulandı, stok metodu bir özel yönteminden farklıdır [COleControl](../mfc/reference/colecontrol-class.md). Örneğin, `COleControl` denetim için yenileme yöntemi destekleyen önceden tanımlı üye işlevi içeriyor. Bu hisse senedi yöntemi için gönderme eşleme girişi DISP_STOCKFUNC_REFRESH ' dir.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
 
 `COleControl` Stok iki yöntemi destekler: DoClick ve yenileme. Yenileme denetiminin görünüşünü hemen güncelleştirmek için denetimin kullanıcı tarafından çağrılır; DoClick denetimin tıklatın ateşlenmesine çağrıldığında olay.
 

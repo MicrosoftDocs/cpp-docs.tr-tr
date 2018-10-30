@@ -14,19 +14,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db0c93070fe8373cdd4494419ce1b71bf4068b14
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 30aef153dc99c0cbdc4de537496e42ab2bb0459f
+ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46395134"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50204515"
 ---
 # <a name="active-technology-on-the-internet"></a>Internet'te Etkin Teknoloji
 
 Etkin teknoloji heyecan verici, dinamik içerik ve genel Internet veya intranet bilinen bir şirket iç ağına uygulamalar oluşturmalarını sağlayan bir açık bir platformdur. Internet programlamayı için Microsoft tarafından sağlanan ana teknolojileri aşağıda açıklanmıştır.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
 
 ## <a name="activex-controls"></a>ActiveX Denetimleri
 

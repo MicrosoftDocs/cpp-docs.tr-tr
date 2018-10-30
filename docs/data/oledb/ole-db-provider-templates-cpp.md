@@ -1,7 +1,7 @@
 ---
 title: OLE DB sağlayıcı şablonları (C++) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/24/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0eef554fd6b7fbd16ff7c34434d08d917b5dcea9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4d4d93f656279cf5e5c548ef09bf809364c9d90e
+ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080071"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50216415"
 ---
 # <a name="ole-db-provider-templates-c"></a>OLE DB Sağlayıcı Şablonları (C++)
 
@@ -43,9 +43,9 @@ Her bir COM nesnesi bazıları gereklidir ve bazıları isteğe bağlı olan bir
 
 ## <a name="ole-db-specification-level-support"></a>OLE DB belirtim düzeyinde destek
 
-OLE DB sağlayıcı şablonları, OLE DB sürüm 2.7 belirtimini destekler. OLE DB sağlayıcı şablonları kullanarak, bir düzey 0 uyumlu sağlayıcısı uygulayabilirsiniz. Sağlayıcı örneği, örneğin, dosya sistemini sorgulamaya DOS DIR komutunu yürüten bir non-MS-DOS komut sunucusu uygulamak için şablonlar kullanır. Sağlayıcı örneği tablo veri döndürmek için standart OLE DB mekanizması bir satır kümesi dizin bilgileri döndürür.
+OLE DB sağlayıcı şablonları, OLE DB sürüm 2.7 belirtimini destekler. OLE DB sağlayıcı şablonları kullanarak, bir düzey 0 uyumlu sağlayıcısı uygulayabilirsiniz. `Provider` Örnek, örneğin, şablonları dosya sistemini sorgulamaya DOS DIR komutunu yürüten bir non-MS-DOS komut sunucusunu uygulamak için kullanır. `Provider` Örnek tablo veri döndürmek için standart OLE DB mekanizması bir satır kümesi dizin bilgileri döndürür.
 
-OLE DB Şablonları tarafından desteklenen en basit türü ile hiçbir komut salt okunur bir sağlayıcıdır. Yer işareti ekleme ve okuma/yazma yeteneği gibi komutları sağlayıcılarıyla de desteklenir. Okuma/yazma sağlayıcısı, ek kod yazarak uygulayabilirsiniz. Dinamik satır kümeleri ve işlem geçerli sürümü tarafından desteklenmiyor, ancak isterseniz bunları ekleyebilirsiniz.
+OLE DB Şablonları tarafından desteklenen en basit türü ile hiçbir komut salt okunur bir sağlayıcıdır. Yer işareti ekleme ve okuma/yazma özellikleri gibi komutları sağlayıcılarıyla de desteklenir. Okuma/yazma sağlayıcısı, ek kod yazarak uygulayabilirsiniz. Dinamik satır kümeleri ve işlem geçerli sürümü tarafından desteklenmiyor, ancak isterseniz bunları ekleyebilirsiniz.
 
 ## <a name="when-do-you-need-to-create-an-ole-db-provider"></a>OLE DB sağlayıcısı oluşturmak ne zaman ihtiyacınız var?
 
@@ -53,7 +53,7 @@ Her zaman kendi sağlayıcısı oluşturmanız gerekmez; Microsoft, birkaç önc
 
 - C++, Basic ve Visual Basic Scripting Edition gibi herhangi bir dilde aracılığıyla verilere erişme. Kuruluşunuzdaki farklı programcılar aynı şekilde, bakılmaksızın aynı verilere erişmek için kullandıkları hangi dillerden sağlar.
 
-- SQL Server, Excel ve erişim gibi diğer verileri, verilerin ifşa kaynakları. Bu, farklı biçimler arasında veri aktarmak istiyorsanız yararlı olabilir.
+- Verilerinizi SQL Server, Excel ve erişim gibi diğer veri kaynaklarına açın. Bu, farklı biçimler arasında veri aktarmak istiyorsanız yararlı olabilir.
 
 - Çapraz-veri kaynağı (heterojen) işlemlerine katılma. Bu, veri ambarlama için etkili bir yol olabilir. OLE DB sağlayıcıları kullanarak, verileri kendi yerel biçiminde tutmak ve yine de basit bir işlemle erişebilir.
 
@@ -81,5 +81,5 @@ Daha fazla bilgi için bkz.:
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Veri Erişimi](../data-access-in-cpp.md)<br/>
-[OLE DB SDK Belgeleri](/previous-versions/windows/desktop/ms722784)
-[OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643)
+[OLE DB SDK Belgeleri](/previous-versions/windows/desktop/ms722784)<br/>
+[OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643)<br/>

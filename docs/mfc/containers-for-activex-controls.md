@@ -14,19 +14,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69bfb29bdcc03f0373b5c5ab4916108b0705fc83
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b14359fa6bb602240f4cba173c41660c6863f939
+ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434433"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50204334"
 ---
 # <a name="containers-for-activex-controls"></a>ActiveX Denetimleri için Kapsayıcılar
 
 ActiveX denetimi kapsamasını destekledikleri sürece, diğer uygulamalar, Visual C++'da geliştirilmiş ActiveX denetimleri kullanabilirsiniz. Microsoft uygulamaları, listelenen sürümler ile başlayan bir dizi ActiveX denetimi kapsamasını destekler.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
 
 > [!NOTE]
 >  Aşağıdaki listede, ActiveX denetimlerini destekleyen ancak sınamada en sık kullanılan kümesini temsil eden uygulamaların tam bir listesi değil:

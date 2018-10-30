@@ -19,16 +19,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac4ed378640942dbe33490d618cec7289125b0c8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a88fffbfc42dd6e7386ec43e55f2013f2548b6f5
+ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418794"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50204476"
 ---
 # <a name="mbcs-programming-tips"></a>MBCS Programlama İpuçları
 
-Yeni geliştirmede, son kullanıcının görebileceği tüm dizelerde karakterin Unicode kodlamasını kullanmanız gerekir. MBCS, Unicode tarafından geçersiz kılınan eski bir teknolojidir. Bu bölüm, Unicode'a dönüştürmenin pratik olmadığı yerde ve MBCS kullanan mevcut programları koruması gereken geliştiriciler için ipuçları sağlar. Tavsiye MFC uygulamaları ve MFC olmadan yazılan uygulamalar için geçerlidir. Konular şunlardır:
+Yeni geliştirmede, son kullanıcının görebileceği tüm dizelerde karakterin Unicode kodlamasını kullanmanız gerekir. MBCS, Unicode tarafından değiştirilen eski bir teknolojidir. Bu bölüm, Unicode'a dönüştürmenin pratik olmadığı yerde ve MBCS kullanan mevcut programları koruması gereken geliştiriciler için ipuçları sağlar. Tavsiye MFC uygulamaları ve MFC olmadan yazılan uygulamalar için geçerlidir. Konular şunlardır:
 
 - [Genel MBCS Programlama Önerileri](../text/general-mbcs-programming-advice.md)
 

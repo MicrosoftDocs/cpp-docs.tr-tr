@@ -24,19 +24,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 397356f8144e3680f3b2d19824d19c0a3bbaddd1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5a02330d938e1952d3e6b547d49ddb551bf594a5
+ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062619"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50204593"
 ---
 # <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma
 
 ActiveX denetimleri daha güçlü kullanımlarını sağlayan bir veritabanında belirli bir alanla bağlamak için denetimin bir özelliğine veri bağlama biridir. Bir kullanıcı bu bağlı özelliğin veri değiştirdiğinde, Denetim veritabanı ve kayıt alanı güncelleştirilmesi istekleri bildirir. Veritabanı denetimi başarılı veya başarısız istek sonra bildirir.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
 
 Bu makale, görevin denetim yan kapsar. Veri bağlama etkileşimleri veritabanı ile uygulama denetim kapsayıcısı sorumluluğundadır. Veritabanı etkileşimleri kapsayıcınızda nasıl yönettiğiniz, bu belgenin kapsamı dışındadır olduğu. Veri bağlama için denetimin nasıl hazırlamanız bu makalenin geri kalanında açıklanmıştır.
 

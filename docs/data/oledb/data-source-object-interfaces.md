@@ -1,7 +1,7 @@
 ---
 title: Veri kaynağı nesne arabirimleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/24/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6c0d2fa5ef33f744e3d76c0565920ecc27523054
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d6b76dd8423abd18359081a8fc30050c23e0b161
+ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056132"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50216285"
 ---
 # <a name="data-source-object-interfaces"></a>Veri Kaynağı Nesne Arabirimleri
 
@@ -47,4 +47,4 @@ Veri kaynağı nesnesi uygulayan `IDBProperties`, `IDBInitialize`, ve `IDBCreate
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

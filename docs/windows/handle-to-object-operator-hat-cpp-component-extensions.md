@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fa8434230081afe0ad104853e80ba5aa28ec280e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5fe5bf67df643f83d555d3f2d6fc9a0aadf84b01
+ms.sourcegitcommit: 68cd127a6606f0aed2eb1bc9a75cdfb95b9b6526
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054143"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50204896"
 ---
 # <a name="handle-to-object-operator---ccli-and-ccx"></a>Tanıtıcı nesne işleci (^) (C + +/ CLI ve C + +/ CX)
 
@@ -44,7 +44,7 @@ Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-CLR sisteminin kullandığı *çöp toplayıcı* nesnenin artık kullanılıp kullanılmadığını ve silinebileceğini belirlemek için bir mekanizma. Ortak dil çalışma zamanı nesneleri ayırdığı bir yığını korur ve yığındaki nesnelerin konumunu programınızdaki kullanan yönetilen başvuruları (değişken) belirtin. Bir nesne artık kullanılmadığında yığın üzerinde kapladığı bellek serbest bırakılır. Düzenli olarak, atık toplayıcı, Boşaltılan belleği daha iyi kullanmak için yığın sıkıştırır. Yığın sıkıştırma yönetilen başvurular tarafından başvurulan konumları geçersiz kılar yığındaki nesneler taşıyabilirsiniz. Bununla birlikte, çöp toplayıcı yönetilen tüm başvuruların konumunu farkındadır ve yığındaki nesnelerin geçerli konumunu göstermek için bunları otomatik olarak güncelleştirir.
+CLR sisteminin kullandığı *çöp toplayıcı* nesnenin artık kullanılıp kullanılmadığını ve silinebileceğini belirlemek için bir mekanizma. Ortak dil çalışma zamanı nesneleri ayırdığı bir yığını korur ve yığındaki nesnelerin konumunu programınızdaki kullanan yönetilen başvuruları (değişken) belirtin. Bir nesne artık kullanılmadığında yığın üzerinde kapladığı bellek serbest bırakılır. Düzenli olarak, atık toplayıcı, Boşaltılan belleği daha iyi kullanmak için yığın sıkıştırır. Yığın sıkıştırma yönetilen başvurular tarafından başvurulan konumları geçersiz kılan yığın üzerindeki nesnelerin taşıyabilirsiniz. Bununla birlikte, çöp toplayıcı yönetilen tüm başvuruların konumunu farkındadır ve yığındaki nesnelerin geçerli konumunu göstermek için bunları otomatik olarak güncelleştirir.
 
 Çünkü yerel C++ işaretçileri (`*`) ve başvuruları (`&`) yönetilen başvurular olmadığından çöp toplayıcı bunların işaret ettiği adresleri otomatik olarak güncelleştirilemiyor. Bu sorunu çözmek için tanıtıcı bildiricisinin çöp toplayıcı farkında olan bir değişken belirtmek için kullanın ve otomatik olarak güncelleştirebilirsiniz.
 

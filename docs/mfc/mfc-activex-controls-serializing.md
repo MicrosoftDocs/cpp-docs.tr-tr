@@ -25,19 +25,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3be523feaacb403076f2c066943ca55ace958dce
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cf2568561e3e79eaf7c2f56b0b571f5c9e74f268
+ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401847"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50204528"
 ---
 # <a name="mfc-activex-controls-serializing"></a>MFC ActiveX Denetimleri: Seri Hale Getirme
 
 Bu makalede, bir ActiveX denetimini serileştirmek anlatılmaktadır. Seri hale getirme okuma veya bir disk dosyası gibi bir kalıcı depolama ortamı için yazma işlemidir. Microsoft Foundation Class (MFC) kitaplığı, sınıf serileştirme için yerleşik destek sağlar. `CObject`. `COleControl` Bu destek özelliği değişimi mekanizması kullanılarak ActiveX denetimlerine genişletir.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
 
 ActiveX denetimleri için serileştirme geçersiz kılarak gerçekleştirilir [COleControl::DoPropExchange](../mfc/reference/colecontrol-class.md#dopropexchange). Bu işlev, yükleme sırasında çağrılır ve bir üye değişkeni veya bir üye değişkeni değişiklik bildirimi ile uygulanan tüm özellikler denetimi nesnesinin kaydetme depolar.
 

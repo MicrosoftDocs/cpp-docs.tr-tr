@@ -15,19 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b33097c6f6f747d99cf582c1553e25942f1bfcd
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4e5b0f1b38e73523a476c83e19ab9bf812fdc2fa
+ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056015"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50204541"
 ---
 # <a name="mfc-activex-controls-painting-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Boyama
 
 Bu makalede, ActiveX denetimini boyama işleminin ve süreçlerini optimize etmek için Boya kod nasıl alter açıklanmaktadır. (Bkz [denetim çizim en iyi duruma getirme](../mfc/optimizing-control-drawing.md) teknikleri üzerinde çizim denetimleri ayrı ayrı zorunluluğunu ortadan kaldırarak en iyi duruma getirme, daha önce seçilen GDI nesneleri geri yüklemek için. Tüm denetimleri çizilmiş sonra kapsayıcı otomatik olarak özgün nesneleri geri yükleyebilirsiniz.)
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
 
 Bu makaledeki örneklerde, varsayılan ayarlarla MFC ActiveX Denetim Sihirbazı tarafından oluşturulan denetim arasındadır. MFC ActiveX Denetim Sihirbazı'nı kullanarak bir çatı denetim uygulaması oluşturma hakkında daha fazla bilgi için bkz [MFC ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md).
 

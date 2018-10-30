@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb9d21eee8e561e2caa8a7c4088774435d3ce273
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0e3d6501e969b103146aa53311069e5fdd4d048e
+ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080447"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50204567"
 ---
 # <a name="scope-c"></a>Kapsam (C++)
 
@@ -41,7 +41,7 @@ Kapsam altı tür vardır:
 
 - **Yerel kapsama** bir işlev veya parametre adları da dahil olmak üzere, lambda içinde bildirilen bir ada sahip yerel kapsamı. Genellikle "yerel" da adlandırılır. Bunlar yalnızca bildirimin kendi noktalarından işlevi veya lambda gövdesi sonuna görülebilir. Yerel kapsama bir blok kapsamı, bu makalenin sonraki bölümlerinde ele alınan türüdür.
 
-- **Sınıf kapsamında** adlarında sınıfı üyeleri sınıf tanımının bildirim noktasından bakılmaksızın boyunca genişleten sınıf kapsamı. Sınıf üyesi erişilebilirliği olan tarafından denetlenen yapılacaktır **genel**, **özel**, ve **korumalı** anahtar sözcükleri. Ortak veya korumalı üyeler, yalnızca üye seçim işleçleri kullanarak erişilebilir (**.** veya **->**) veya işaretçi-üye işleçleri (**.** <strong>\*</strong> veya **->** <strong>\*</strong>).
+- **Sınıf kapsamında** adlarında sınıfı üyeleri sınıf tanımının bildirim noktasından bakılmaksızın boyunca genişleten sınıf kapsamı. Sınıf üyesi erişilebilirliği tarafından denetlenen daha **genel**, **özel**, ve **korumalı** anahtar sözcükleri. Ortak veya korumalı üyeler, yalnızca üye seçim işleçleri kullanarak erişilebilir (**.** veya **->**) veya işaretçi-üye işleçleri (**.** <strong>\*</strong> veya **->** <strong>\*</strong>).
 
 - **Deyimi kapsamı** bildirilen adlar bir **için**, **varsa**, **sırada**, veya **geçiş** deyimi görünür sonuna kadar deyim bloğu.
 

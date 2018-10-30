@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dff9f3c988e7ffdf8f15b5502bb0326e2692a128
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4ed220aad7dd90ff2b5ca97c4cf5160fd4d00ed4
+ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079044"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50204580"
 ---
 # <a name="compiler-warning-level-3-c4996"></a>Derleyici Uyarısı (Düzey 3) C4996
 
@@ -35,7 +35,7 @@ C çalışma zamanı kitaplığı ve standart kitaplık, ancak kapsamlı bir lis
 
 - [' std::*işlev_adı*::\_işaretlenmemiş\_yineleyiciler::\_Deprecate' çağrısı için std::*işlev_adı*bu çağrı olmayabilecek parametrelerle kullanır geçirilen değerlerin doğru olduğunu kontrol etmek için çağırıcı. Bu uyarıyı devre dışı bırakmak için -D_SCL_SECURE_NO_WARNINGS kullanın. Visual C++ 'Denetlenen Yineleyicilerin' kullanmak belgelere bakın.](#unsafe-standard-library-functions)
 
-- [Bu işlev veya değişkeni kitaplığı veya işletim sisteminin daha yeni işlevler tarafından geçersiz kılınan. Kullanmayı *NEW_ITEM* yerine. Ayrıntılar için çevrimiçi yardıma bakın.](#obsolete-crt-functions-and-variables)
+- [Bu işlev veya değişkeni kitaplığı veya işletim sisteminin daha yeni işlevselliğe göre yerini almıştır. Kullanmayı *NEW_ITEM* yerine. Ayrıntılar için çevrimiçi yardıma bakın.](#obsolete-crt-functions-and-variables)
 
 ## <a name="cause"></a>Sebep
 
@@ -256,7 +256,7 @@ Bu uyarıları bastırmak hakkında daha fazla bilgi için bkz. [_afx_secure_no_
 
 ### <a name="obsolete-crt-functions-and-variables"></a>Eski CRT işlevleri ve değişkenler
 
-**Bu işlev veya değişkeni kitaplığı veya işletim sisteminin daha yeni işlevler tarafından geçersiz kılınan. Kullanmayı** *NEW_ITEM* **yerine. Ayrıntılar için çevrimiçi yardıma bakın.**
+**Bu işlev veya değişkeni kitaplığı veya işletim sisteminin daha yeni işlevselliğe göre yerini almıştır. Kullanmayı** *NEW_ITEM* **yerine. Ayrıntılar için çevrimiçi yardıma bakın.**
 
 Bazı kitaplık işlevleri ve genel değişkenler eski olarak kullanım dışı bırakılmıştır. Bu işlevler ve değişkenler Kitaplığı'nın gelecek sürümünde kaldırılabilir. Derleyici, bu öğeler için kullanımdan kaldırılma uyarı verir ve tercih edilen alternatif önerir.
 

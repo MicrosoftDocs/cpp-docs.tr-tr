@@ -10,12 +10,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4003868609d8ffd1ea3b29074bdd24c25442ad8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5661ff0debb3d06947e5b8ff686cc049ebe68fee
+ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054455"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50204749"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158"></a>Visual Studio 2017 sürüm 15.0,'deki C++ uyumluluk geliştirmeleri [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15,8](#update_158)
 
@@ -121,7 +121,7 @@ Visual Studio'nun önceki sürümlerinde, derleyici her zaman verdiğiniz bir `c
 
 ### <a name="deprecating-vestigial-library-parts"></a>İşlevini kaybetmiş kitaplık parçaları kullanımdan kaldırılıyor
 
-[P0174R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0174r2.html) C++ Standart Kitaplığı'nin birtakım özelliklerini göre yeni özellikler yıllar içinde kılınan, aksi takdirde yararlı olmaması veya sorunlu bulunamadı. Bu özellikler resmi olarak C ++ 17'de kullanım dışı bırakılmıştır.
+[P0174R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0174r2.html) C++ Standart Kitaplığı'nin birtakım özelliklerini yıllar içinde yeni özellikler tarafından yenisiyle değiştirilmiş, aksi takdirde yararlı olmaması veya sorunlu bulunamadı. Bu özellikler resmi olarak C ++ 17'de kullanım dışı bırakılmıştır.
 
 ### <a name="removing-allocator-support-in-stdfunction"></a>Ayırıcı desteği de std::function kaldırılıyor
 

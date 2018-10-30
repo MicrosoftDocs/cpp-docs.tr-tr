@@ -1,7 +1,7 @@
 ---
 title: Özellik eşlemeleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/24/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -17,17 +17,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: bbed70f7871cb215a944a5143793b26b4196d7bc
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2c6c3ddc4b19cd9b65203d8a5e675b9ed75720a1
+ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052764"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50216467"
 ---
 # <a name="property-maps"></a>Özellik Eşlemeleri
 
-Oturum, satır kümesi ve isteğe bağlı komut nesnesi ek olarak, her bir sağlayıcı bir veya daha fazla özelliklerini destekler. Bu özellikler OLE DB sağlayıcısı Sihirbazı tarafından oluşturulan üstbilgi dosyalarında bulunan özellik eşlemeleri tanımlanır. Her başlık dosyası, nesne veya bu dosyada tanımlanan nesneler için tanımlanan OLE DB özellik grubu özellikleri için bir harita içerir. Veri kaynağı nesnesi içeren üst bilgi dosyası için özellik eşlemesi de içeren [veri kaynağı özellikleri](https://msdn.microsoft.com/library/ms724188). Session.h'deki içeren özellik eşlemesi için [oturum özellikleri](/previous-versions/windows/desktop/ms714221). Satır kümesi ve komut nesneleri olarak adlandırılan bir tek üstbilgi dosyasında bulunan *projectname*RS.h. Bu özellikler üyeleri [satır kümesi özellikleri](/previous-versions/windows/desktop/ms711252) grubu.
+Oturum, satır kümesi ve isteğe bağlı komut nesnesi ile her bir sağlayıcı bir veya daha fazla özelliklerini destekler. Bu özellikler tarafından oluşturulan üstbilgi dosyalarında depolanan özellik eşlemeleri tanımlanır **OLE DB sağlayıcısı Sihirbazı**. Her başlık dosyası, nesne veya bu dosyada tanımlanan nesneler için tanımlanan OLE DB özellik grubu özellikleri için bir harita içerir. Veri kaynağı nesnesi içeren üst bilgi dosyası için özellik eşlemesi de içeren [veri kaynağı özellikleri](https://msdn.microsoft.com/library/ms724188). `Session.h` özellik eşlemesi için içerir [oturum özellikleri](/previous-versions/windows/desktop/ms714221). Adlı bir tek üstbilgi dosyasında satır kümesi ve komut nesnelerdir *projectname*RS.h. Bu özellikler üyeleri [satır kümesi özellikleri](/previous-versions/windows/desktop/ms711252) grubu.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

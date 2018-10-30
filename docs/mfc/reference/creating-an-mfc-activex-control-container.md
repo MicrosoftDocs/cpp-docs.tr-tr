@@ -19,19 +19,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37119934a70f8a68d32ed83699fa6deb012d8879
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bc12be2b7d3e25059333d4f22bd2d8eb458b959c
+ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404442"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50204398"
 ---
 # <a name="creating-an-mfc-activex-control-container"></a>MFC ActiveX Denetimi Kapsayıcısı Oluşturma
 
 Bir ActiveX denetimi kapsayıcısı bir ActiveX (eski adı OLE) denetimini çalıştırmak ortamı sağlayan bir üst programdır. Özelliğine sahip olan veya olmayan MFC ActiveX denetimleri içeren bir uygulama oluşturabilirsiniz, ancak ile MFC yapmak daha kolaydır.
 
 >[!IMPORTANT]
-> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](../activex-controls.md).
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerine geçen modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](../activex-controls.md).
 
 Bir MFC kapsayıcı programını kullanarak oluşturma [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md) MFC ve ActiveX sınıfları tarafından uygulanan özellikleri ActiveX denetimlerini ve Otomasyon erişmenize olanak sağlar. Bu özellikler, görsel düzenleme, otomasyon, bileşik dosyalar oluşturma içerir ve denetimler için destek. Bir kapsayıcı, bir mini sunucu, bir tam sunucu ve bir kapsayıcı hem bir sunucusu olan bir program oluşturma üst programınızı destekleyen MFC Uygulama Sihirbazı'nı visual düzenleme seçeneklerini içerir.
 

@@ -19,49 +19,49 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1c1958604edbb2f9d9c10e58082e70c2df400b8c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e37ed0ac918b004513aa64308870a534a7b2af40
+ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077380"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50216298"
 ---
 # <a name="user-record"></a>Kullanıcı Kaydı
 
-Kullanıcı kaydı, bir satır için sütun verileri temsil eden kod ve veri yapısı sağlar. Bir kullanıcı kaydı, derleme zamanında veya çalışma zamanında oluşturulabilir. ATL OLE DB sağlayıcısı Sihirbazı ile bir sağlayıcı oluşturduğunuzda, sihirbaz şuna benzer bir varsayılan kullanıcı kaydını oluşturur (bir sağlayıcı adı [kısa adı] belirtilen varsayılarak *özel*):
+Kullanıcı kaydı, bir satır için sütun verileri temsil eden kod ve veri yapısı sağlar. Bir kullanıcı kaydı, derleme zamanında veya çalışma zamanında oluşturulabilir. İle bir sağlayıcı oluşturduğunuzda **ATL OLE DB sağlayıcısı Sihirbazı**, şuna benzer bir varsayılan kullanıcı kaydı sihirbaz oluşturur (bir sağlayıcı adı [kısa adı] belirtilen varsayılarak *MyProvider*):
 
 ```cpp
 class CWindowsFile:
    public WIN32_FIND_DATA
 {
 public:
-
-BEGIN_PROVIDER_COLUMN_MAP(CCustomWindowsFile)
+  
+BEGIN_PROVIDER_COLUMN_MAP(CMyProviderWindowsFile)
    PROVIDER_COLUMN_ENTRY("FileAttributes", 1, dwFileAttributes)
    PROVIDER_COLUMN_ENTRY("FileSizeHigh", 2, nFileSizeHigh)
    PROVIDER_COLUMN_ENTRY("FileSizeLow", 3, nFileSizeLow)
    PROVIDER_COLUMN_ENTRY_STR("FileName", 4, cFileName)
    PROVIDER_COLUMN_ENTRY_STR("AltFileName", 5, cAlternateFileName)
 END_PROVIDER_COLUMN_MAP()
-
+  
 };
 ```
 
-OLE DB sağlayıcı şablonları istemcisi ile ilgili tüm OLE DB özellikleri işler. Bir yanıt için gerekli olan sütun verileri almak için sağlayıcı çağırır `GetColumnInfo` işlevin kullanıcı kaydında yerleştirmeniz gerekir. Açıkça geçersiz kılabilirsiniz `GetColumnInfo` kullanıcı kaydında gibi bildirerek .h dosyasındaki burada gösterildiği gibi:
+OLE DB sağlayıcı şablonları tüm OLE DB ayrıntılarına istemci etkileşim bağlı işleyin. Bir yanıt için gerekli olan sütun verileri almak için sağlayıcı çağırır `GetColumnInfo` işlevin kullanıcı kaydında yerleştirmeniz gerekir. Açıkça geçersiz kılabilirsiniz `GetColumnInfo` kullanıcı kaydında gibi bildirerek .h dosyasındaki burada gösterildiği gibi:
 
 ```cpp
 template <class T>
-static ATLCOLUMNINFO* GetColumnInfo(T* pThis, ULONG* pcCols)
+static ATLCOLUMNINFO* GetColumnInfo(T* pThis, ULONG* pcCols) 
 ```
 
-Bu eşdeğerdir.
+Bu karşılık gelir:
 
 ```cpp
 static ATLCOLUMNINFO* GetColumnInfo(CommandClass* pThis, ULONG* pcCols)
 static ATLCOLUMNINFO* GetColumnInfo(RowsetClass* pThis, ULONG* pcCols)
 ```
 
-Ayrıca uygulamalıdır `GetColumnInfo` kullanıcı kaydının .cpp dosyası içinde.
+Ardından, uygulama `GetColumnInfo` kullanıcı kaydının .cpp dosyası içinde.
 
 PROVIDER_COLUMN_MAP makroları yardımcı oluştururken bir `GetColumnInfo` işlevi:
 
@@ -71,7 +71,7 @@ PROVIDER_COLUMN_MAP makroları yardımcı oluştururken bir `GetColumnInfo` işl
 
 - END_PROVIDER_COLUMN_MAP dizi ve işlev kapatır. Ayrıca bir dizi öğe sayısını yerleştirir *pcCols* parametresi.
 
-Çalışma zamanında, bir kullanıcı kaydı oluşturulduğunda `GetColumnInfo` kullanan *pThis* satır kümesi veya komut örneğine bir işaretçi almak için parametre. Komutlar ve satır kümeleri desteklemelidir `IColumnsInfo` sütun bilgileri bu işaretçiyle alınabilmesi için arabirim.
+Çalışma zamanında, bir kullanıcı kaydı oluşturulduğunda `GetColumnInfo` kullanan *pThis* satır kümesi veya komut örneğine bir işaretçi almak için parametre. Komutlar ve satır kümeleri desteklemelidir `IColumnsInfo` sütun bilgileri bu işaretçiyle alınması için arabirim.
 
 `CommandClass` ve `RowsetClass` komut ve kullanıcı kaydını kullanan satır kümesi.
 
@@ -79,4 +79,4 @@ Geçersiz kılmak daha ayrıntılı bir örnek `GetColumnInfo` bir kullanıcı k
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

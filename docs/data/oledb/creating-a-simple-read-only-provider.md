@@ -1,7 +1,7 @@
 ---
 title: Basit bir salt okunur sağlayıcı oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/26/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -16,16 +16,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b32517e8254f383e624c5262f3a806e66ed28824
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c8fd4e5eb25ab1e8e6b20b576a0688da7b5aa2ef
+ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056262"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50216402"
 ---
 # <a name="creating-a-simple-read-only-provider"></a>Basit bir Salt Okunur Sağlayıcı Oluşturma
 
-ATL OLE DB sağlayıcısı Sihirbazı'nı ve ATL projesi Sihirbazı'nı kullanarak bir OLE DB sağlayıcısı oluştururken, desteklemek istediğiniz diğer işlevleri ekleyebilirsiniz. Ne tür veriler, tüketici ve hangi koşullar altında göndereceği inceleyerek sağlayıcınız tasarlamaya başlayabilir. Komutlar, işlemleri ve diğer isteğe bağlı nesneler destek gerekip gerekmediğini belirlemek özellikle önemlidir. Önden iyi bir tasarım, uygulama ve test hızlandırır.
+Ne zaman oluşturduğunuz kullanarak bir OLE DB sağlayıcısından **ATL projesi Sihirbazı** ve **ATL OLE DB sağlayıcısı Sihirbazı**, desteklemek istediğiniz diğer işlevler ekleyebilirsiniz. Ne tür veriler, tüketici ve hangi koşullar altında ileti inceleyerek sağlayıcınız tasarlamaya başlayabilir. Komutlar, işlemleri ve diğer isteğe bağlı nesneler destek gerekip gerekmediğini belirlemek özellikle önemlidir. Önden iyi bir tasarım, uygulama ve test hızlandırır.
 
 Örneğin, iki parça halinde sunulur:
 
@@ -35,4 +35,4 @@ ATL OLE DB sağlayıcısı Sihirbazı'nı ve ATL projesi Sihirbazı'nı kullanar
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[OLE DB Sağlayıcısı Oluşturma](../../data/oledb/creating-an-ole-db-provider.md)
+[OLE DB Sağlayıcısı Oluşturma](../../data/oledb/creating-an-ole-db-provider.md)<br/>

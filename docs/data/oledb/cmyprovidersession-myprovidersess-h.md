@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8873247ee54884236ed3472c345fb15b99e97131
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 50576d93d8b86a070b928d62662a212d957e5c79
+ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076691"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50216324"
 ---
 # <a name="ccustomsession-customsessh"></a>CCustomSession (CustomSess.H)
 
@@ -36,7 +36,7 @@ ms.locfileid: "50076691"
 ```cpp
 /////////////////////////////////////////////////////////////////////////
 // CCustomSession
-class ATL_NO_VTABLE CCustomSession :
+class ATL_NO_VTABLE CCustomSession : 
    public CComObjectRootEx<CComSingleThreadModel>,
    public IGetDataSourceImpl<CCustomSession>,
    public IOpenRowsetImpl<CCustomSession>,
@@ -46,12 +46,12 @@ class ATL_NO_VTABLE CCustomSession :
    public IDBCreateCommandImpl<CCustomSession, CCustomCommand>
 ```
 
-Oturum nesnesi devraldığı `IGetDataSource`, `IOpenRowset`, `ISessionProperties`, ve `IDBCreateCommand`. `IGetDataSource` Arabirim oluşturulduğu veri kaynağından almak bir oturum sağlar. Bu özellikler, oluşturduğunuz veri kaynağı veya veri kaynağı diğer bilgileri almaya ihtiyacınız olduğunda yararlıdır. `ISessionProperties` Arabirimi oturumu için tüm özellikleri işler. `IOpenRowset` Ve `IDBCreateCommand` arabirimleri veritabanı işlerini yapmak için kullanılır. Sağlayıcı komutları destekliyorsa, onu uygulayan `IDBCreateCommand` arabirimi. Bu komutları yürütebilir komut nesnesi oluşturmak için kullanılır. Sağlayıcı her zaman uygulayan `IOpenRowset` nesne. Basit bir satır kümesi Sağlayıcısı'ndan oluşturmak için kullanılır. Varsayılan bir satır olduğundan (örneğin, `"select * from mytable"`) bir sağlayıcısı.
+Oturum nesnesi devraldığı `IGetDataSource`, `IOpenRowset`, `ISessionProperties`, ve `IDBCreateCommand`. `IGetDataSource` Arabirim oluşturulduğu veri kaynağından almak bir oturum sağlar. Bu özellikler, oluşturduğunuz veri kaynağı veya veri kaynağı diğer bilgileri almaya ihtiyacınız olduğunda yararlıdır. `ISessionProperties` Arabirimi oturumu için tüm özellikleri işler. `IOpenRowset` Ve `IDBCreateCommand` arabirimleri veritabanı işlerini yapmak için kullanılır. Sağlayıcı komutları destekliyorsa, onu uygulayan `IDBCreateCommand` arabirimi. Bu komutları yürütebilir komut nesnesi oluşturmak için kullanılır. Sağlayıcı her zaman uygulayan `IOpenRowset` nesne. Bir sağlayıcıdan bir satır kümesi oluşturmak için kullanılır. Varsayılan bir satır olduğundan (örneğin, `"select * from mytable"`) bir sağlayıcısı.
 
-Sihirbaz aynı zamanda üç oturumu sınıflar oluşturur: `CCustomSessionColSchema`, `CCustomSessionPTSchema`, ve `CCustomSessionTRSchema`. Bu oturumlar şema satır kümeleri için kullanılır. Şema satır kümeleri sağlayıcısı meta verileri bir sorgu veya fetch veri yürütülecek olan tüketici Tüketiciye döndürülecek izin verir. Meta veriler getirilirken bir sağlayıcının yeteneklerini keşfetmekten çok daha hızlı olabilir.
+Sihirbaz aynı zamanda üç oturumu sınıflar oluşturur: `CCustomSessionColSchema`, `CCustomSessionPTSchema`, ve `CCustomSessionTRSchema`. Bu oturumlar şema satır kümeleri için kullanılır. Şema satır kümeleri sağlayıcısı meta verileri bir sorgu veya fetch veri yürütülecek olan tüketici Tüketiciye döndürülecek izin verir. Meta veriler getirilirken bir sağlayıcının özelliklerini bulma daha daha hızlı olabilir.
 
-OLE DB belirtimi gerektiren uygulama sağlayıcıları `IDBSchemaRowset` arabirimi desteği üç şeması satır kümesi türleri: DBSCHEMA_COLUMNS DBSCHEMA_PROVIDER_TYPES ve DBSCHEMA_TABLES. Sihirbaz her şeması satır kümesi için uygulamaları oluşturur. Sihirbaz tarafından oluşturulan her bir sınıf içeren bir `Execute` yöntemi. Bu `Execute` yöntemi, hangi tablolar, sütunlar ve veri türleri hakkında size destek sağlayıcısı için veri döndürebilir. Bu veriler genellikle derleme zamanında olarak bilinir.
+OLE DB belirtimi gerektiren uygulama sağlayıcıları `IDBSchemaRowset` arabirimi desteği üç şeması satır kümesi türleri: DBSCHEMA_COLUMNS DBSCHEMA_PROVIDER_TYPES ve DBSCHEMA_TABLES. Sihirbaz her şeması satır kümesi için uygulamaları oluşturur. Sihirbaz tarafından oluşturulan her bir sınıf içeren bir `Execute` yöntemi. Bu `Execute` yöntemi, hangi tablolar, sütunlar ve veri türleri hakkında size destek sağlayıcısı için veri döndürebilir. Bu veriler, derleme zamanında bilinir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sağlayıcı Sihirbazı Tarafından Üretilen Dosyalar](../../data/oledb/provider-wizard-generated-files.md)
+[Sağlayıcı Sihirbazı Tarafından Üretilen Dosyalar](../../data/oledb/provider-wizard-generated-files.md)<br/>
