@@ -1,12 +1,6 @@
 ---
-title: C çarpma işleçleri | Microsoft Docs
-ms.custom: ''
+title: C Çarpma İşleçleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - arithmetic operators [C++], multiplicative operators
 - / operator
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - slash (/) operator
 - multiplication operator [C++], multiplicative operators
 ms.assetid: 495471c9-319b-4eb4-bd97-039a025fd3a9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 10466b14d19a78b2ed3401343b61ec9b62b7c804
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: debda69d693286aef03363eafd450b5aa531e987
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46100402"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506931"
 ---
 # <a name="c-multiplicative-operators"></a>C Çarpma İşleçleri
 

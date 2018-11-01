@@ -1,12 +1,6 @@
 ---
-title: Türü Conversions (C) | Microsoft Docs
-ms.custom: ''
+title: Tür Dönüştürmeleri (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - conversions, type
 - type conversion
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - integral promotions
 - type casts, when performed
 ms.assetid: d130ee7c-03c3-48f4-af7b-1fdba0d3b086
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 606ff0197f73a697aa3dad3bea779de80b060705
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 27dcdbf810199c62b7c267270ad62ed1ed677494
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46020842"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50503361"
 ---
 # <a name="type-conversions-c"></a>Tür Dönüştürmeleri (C)
 

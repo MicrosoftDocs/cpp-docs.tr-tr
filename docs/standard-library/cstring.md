@@ -1,32 +1,22 @@
 ---
-title: '&lt;CString&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;CString&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <cstring>
-dev_langs:
-- C++
 helpviewer_keywords:
 - <cstring> header
 - cstring header
 ms.assetid: d665429f-5d39-4712-9c0a-68c8abcc3536
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9ef5ddad29126ac8725159061d5ee5cb4f3699e9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 91b7d340f77c01f163603a860725bdf289340b3e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849424"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493671"
 ---
 # <a name="ltcstringgt"></a>&lt;CString&gt;
 
-Standart C Kitaplığı üstbilgi içeren \<string.h > ve ilişkili adlarıyla ekler `std` ad alanı.
+Standart C Kitaplığı üstbilgisi içerir \<string.h > ve ilişkili adlar ekler `std` ad alanı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,7 +27,7 @@ Standart C Kitaplığı üstbilgi içeren \<string.h > ve ilişkili adlarıyla e
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üst dahil olmak üzere sağlar standart C Kitaplığı üstbilgisinde dış bağlantı kullanılarak bildirilen adları bildirilir `std` ad alanı.
+Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

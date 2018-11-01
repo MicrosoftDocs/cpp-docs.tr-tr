@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3712 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3712
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3712
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3712
 ms.assetid: 65b1fcaf-be89-4c55-9e40-25ec03457253
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aa1790c2f5634f01d52e0eec65f5bfcf933ab058
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0b84f4562dcc0dd5dcc3ecb647316772efab6b38
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46029929"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492683"
 ---
 # <a name="compiler-error-c3712"></a>Derleyici Hatası C3712
 

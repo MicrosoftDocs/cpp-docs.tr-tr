@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3179 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3179
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3179
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3179
 ms.assetid: 60d7e41b-25fd-48ac-8b79-830c062f4dcd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ed09f1557c2a86d144d5ff4ee476bd8c3fa0f650
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a5c92e8a776e318e732448ba31beedef946d9f41
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116587"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511614"
 ---
 # <a name="compiler-error-c3179"></a>Derleyici Hatası C3179
 

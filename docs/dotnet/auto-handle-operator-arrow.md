@@ -1,31 +1,21 @@
 ---
-title: auto_handle::operator -&gt; | Microsoft Docs
-ms.custom: ''
+title: auto_handle::operator-&gt;
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr::auto_handle::operator->
 - auto_handle.operator->
 - auto_handle::operator->
 - msclr.auto_handle.operator->
-dev_langs:
-- C++
 helpviewer_keywords:
 - auto_handle::operator->
 ms.assetid: c8c7a771-ea15-41fa-981a-065b8d1162b4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 3cd3ad45eb573d158f618dffe9be3fa54690890b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ccee4d7be92f4e502691f928fa42ce0964069f0e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394055"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508089"
 ---
 # <a name="autohandleoperator-gt"></a>auto_handle::operator-&gt;
 

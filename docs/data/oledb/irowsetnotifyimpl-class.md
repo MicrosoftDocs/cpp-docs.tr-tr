@@ -1,10 +1,6 @@
 ---
-title: IRowsetNotifyImpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IRowsetNotifyImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL.IRowsetNotifyImpl
 - ATL::IRowsetNotifyImpl
@@ -18,25 +14,18 @@ f1_keywords:
 - OnRowsetChange
 - IRowsetNotifyImpl::OnRowsetChange
 - IRowsetNotifyImpl.OnRowsetChange
-dev_langs:
-- C++
 helpviewer_keywords:
 - IRowsetNotifyImpl class
 - OnFieldChange method
 - OnRowChange method
 - OnRowsetChange method
 ms.assetid: fbfd0cb2-38ff-4b42-899a-8de902f834b8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 8659897e411f703882f398fd7e96c8838b5ddafb
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f75f2cc2191fdaf2007d2c9a89544f917ccdcdd8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056177"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506346"
 ---
 # <a name="irowsetnotifyimpl-class"></a>IRowsetNotifyImpl Sınıfı
 

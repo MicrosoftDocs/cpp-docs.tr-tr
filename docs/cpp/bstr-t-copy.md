@@ -1,28 +1,18 @@
 ---
-title: _bstr_t::Copy | Microsoft Docs
-ms.custom: ''
+title: _bstr_t::copy
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _bstr_t::copy
-dev_langs:
-- C++
 helpviewer_keywords:
 - Copy method [C++]
 - BSTR object [C++], copy
 ms.assetid: 00ba7311-e82e-4a79-8106-5329fa2f869a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 50f9a17c93849dec49c2c9a72825a5797d8c040c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 13ddf57e0bdbdbcc0c5b487e879e14b000de3ad0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46068630"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506855"
 ---
 # <a name="bstrtcopy"></a>_bstr_t::copy
 
