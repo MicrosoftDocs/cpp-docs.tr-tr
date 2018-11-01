@@ -1,10 +1,6 @@
 ---
-title: Caxdialogımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Caxdialogımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAxDialogImpl
 - ATLWIN/ATL::CAxDialogImpl
@@ -17,22 +13,16 @@ f1_keywords:
 - ATLWIN/ATL::CAxDialogImpl::GetIDD
 - ATLWIN/ATL::CAxDialogImpl::IsDialogMessage
 - ATLWIN/ATL::CAxDialogImpl::m_bModal
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAxDialogImpl class
 - ATL, dialog boxes
 ms.assetid: 817df483-3fa8-44e7-8487-72ba0881cd27
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a22b04bd0a362824e20621eaa7f66cafd0e55cf5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1814d95ae4346706c8f78125903e26fca8136d68
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024510"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544605"
 ---
 # <a name="caxdialogimpl-class"></a>Caxdialogımpl sınıfı
 

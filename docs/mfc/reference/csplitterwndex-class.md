@@ -1,29 +1,19 @@
 ---
-title: CSplitterWndEx sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSplitterWndEx sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSplitterWndEx
 - AFXSPLITTERWNDEX/CSplitterWndEx
 - AFXSPLITTERWNDEX/CSplitterWndEx::OnDrawSplitter
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSplitterWndEx [MFC], OnDrawSplitter
 ms.assetid: 33e5eef3-05e1-4a07-a968-bf9207ce8598
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1a74691b17e04c20fa45045fa4105fd73925f19f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fa58dbffc3e6416c18b8124f8e5edfe1ce987815
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065401"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539002"
 ---
 # <a name="csplitterwndex-class"></a>CSplitterWndEx sınıfı
 

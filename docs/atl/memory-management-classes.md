@@ -1,25 +1,16 @@
 ---
-title: Bellek yönetimi sınıfları (ATL) | Microsoft Docs
-ms.custom: ''
+title: Bellek yönetimi sınıfları (ATL)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - memory, managing
 ms.assetid: be564a5e-577e-40a7-bfe3-25ad21e57270
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1b9cb6b0f75316f8c3a766ace94f6fd57c720aed
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 76207259e7a4c769580ff41263642b278ee11f40
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757659"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545203"
 ---
 # <a name="memory-management-classes"></a>Bellek yönetimi sınıfları
 

@@ -1,12 +1,6 @@
 ---
-title: Komutlar ve tablolar | Microsoft Docs
-ms.custom: ''
+title: Komutlar ve Tablolar
 ms.date: 10/22/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB consumer templates, table support
 - CCommand class, OLE DB consumer templates
@@ -17,17 +11,12 @@ helpviewer_keywords:
 - tables [C++], OLE DB Consumer Templates
 - OLE DB consumer templates, command support
 ms.assetid: 4bd3787b-6d26-40a9-be0c-083080537c12
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: d63f0856b70761c6c6b4a31ddeedfa8921c3a304
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0baa388fc1667769892c841a4cc5d68a1b9d0255
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052830"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543487"
 ---
 # <a name="commands-and-tables"></a>Komutlar ve Tablolar
 
