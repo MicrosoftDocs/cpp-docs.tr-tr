@@ -1,28 +1,18 @@
 ---
-title: 'TN071: MFC IOleCommandTarget uygulaması | Microsoft Docs'
-ms.custom: ''
+title: 'TN071: MFC IOleCommandTarget Uygulaması'
 ms.date: 06/28/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - IOleCommandTarget
-dev_langs:
-- C++
 helpviewer_keywords:
 - TN071 [MFC]
 - IOleCommandTarget interface [MFC]
 ms.assetid: 3eef571e-6357-444d-adbb-6f734a0c3161
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6d8d4b0f740e69b57944cb35f2213ae0fd54b511
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dca1183a17fe8f3022f517d1ad0c3932ea272417
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386294"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522232"
 ---
 # <a name="tn071-mfc-iolecommandtarget-implementation"></a>TN071: MFC IOleCommandTarget Uygulaması
 

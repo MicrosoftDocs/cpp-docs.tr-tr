@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4668 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4668
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4668
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4668
 ms.assetid: c6585460-bc4a-4a15-9242-4cbfce53c961
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c960eb2cc79298977c8d7c91808b0a5492d05758
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 11d96941a1efddde87068af8829e24259f2fa312
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46074017"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50529980"
 ---
 # <a name="compiler-warning-level-4-c4668"></a>Derleyici Uyarısı (düzey 4) C4668
 

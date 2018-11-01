@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3828 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3828
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3828
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3828
 ms.assetid: 8d9cee75-9504-4bc8-88b6-2413618a3f45
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f91a4a414a881aced6e537c0b98e69896aeeb4c3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 68a82105a2ff7d58090e9f345bf7aafb34d492d4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085491"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50515290"
 ---
 # <a name="compiler-error-c3828"></a>Derleyici Hatası C3828
 

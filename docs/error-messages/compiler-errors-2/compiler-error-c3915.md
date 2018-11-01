@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3915 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3915
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3915
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3915
 ms.assetid: 2b0a5e5f-3aec-4a4b-9157-233031817084
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e34ad9c292f79bb29684d0984fb7e504dfafa23
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 511da8ebe896cb2d0e2869f36bdb474cae5ba521
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46051678"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50507763"
 ---
 # <a name="compiler-error-c3915"></a>Derleyici Hatası C3915
 

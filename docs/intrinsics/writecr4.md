@@ -1,27 +1,17 @@
 ---
-title: __writecr4 | Microsoft Docs
-ms.custom: ''
+title: __writecr4
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _writecr4
-dev_langs:
-- C++
 helpviewer_keywords:
 - _writecr4 intrinsic
 ms.assetid: ab7651d7-b86b-4be7-a0a0-7263099c70fc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fd03b9371c4026282ff9e01d16b937c73bc495ce
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: debfaf0bb591cde43506d18342a8f24d3883b576
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390506"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513834"
 ---
 # <a name="writecr4"></a>__writecr4
 
@@ -32,8 +22,8 @@ Değeri Yazar `Data` CR4 kaydı.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void writecr4( 
-   unsigned __int64 Data 
+void writecr4( 
+   unsigned __int64 Data 
 );
 ```
 

@@ -1,10 +1,6 @@
 ---
-title: _setmbcp | Microsoft Docs
-ms.custom: ''
+title: _setmbcp
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _setmbcp
 apilocation:
@@ -23,27 +19,21 @@ apitype: DLLExport
 f1_keywords:
 - _setmbcp
 - setmbcp
-dev_langs:
-- C++
 helpviewer_keywords:
 - setmbcp function
 - _setmbcp function
 - multibyte code pages
 ms.assetid: cfde53b5-0b73-4684-81b1-a8d3aafc85de
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 91993171def417adfc389420d1376e5a71f8cda0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c1f4967baa5fda68a7df33bcd08935dca23fab16
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408074"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532216"
 ---
 # <a name="setmbcp"></a>_setmbcp
 
-Yeni bir çok baytlı kod sayfası ayarlar.
+Yeni bir çok baytlı kod sayfasına ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,17 +46,17 @@ int _setmbcp(
 ### <a name="parameters"></a>Parametreler
 
 *kod sayfası*<br/>
-Yerel ayar bağımsız birden çok baytlı yordamları için yeni kod sayfası ayarı.
+Yeni kod sayfası ayarı için çok baytlı rutinleri yerel ayarlardan bağımsızdır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Kod sayfası başarılı bir şekilde ayarlanmışsa, 0 döndürür. İçin bir geçersiz kod sayfası değer sağlanmazsa *codepage*, -1 ve kod sayfası ayarı değiştirilmemiş döndürür. Ayarlar **errno** için **EINVAL** bir bellek ayırma hatası oluşursa.
+Kod sayfası başarılı bir şekilde ayarlanmışsa 0 döndürür. İçin bir geçersiz kod sayfası değeri sağlanmazsa *codepage*, -1 ve kod sayfası ayarı değiştirilmemiş döndürür. Kümeleri **errno** için **EINVAL** bir bellek ayırma hatası oluşursa.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Setmbcp** işlevi yeni birden çok baytlı kod sayfasını belirtir. Varsayılan olarak, çalışma zamanı sistem sistem varsayılan ANSI kod sayfasına birden çok baytlı kod sayfası otomatik olarak ayarlar. Birden çok baytlı kod sayfası ayarı yerel ayara bağımlı olmayan tüm birden çok baytlı yordamları etkiler. Ancak, bu istemeniz mümkündür **_setmbcp** geçerli yerel ayar için tanımlanan kod sayfasını kullanmak üzere (bildirim sabitleri aşağıdaki listesini görmek ve davranış sonuçları ilişkili). Birden çok baytlı kod sayfası yerine yerel ayar kod sayfası bağımlı birden çok baytlı yordamları bir listesi için bkz: [çok baytlı karakter sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md).
+**_Setmbcp** işlevi yeni bir çok baytlı kod sayfasını belirtir. Varsayılan olarak, çalışma zamanı sistemi, çok baytlı kod sayfasına otomatik olarak sistem varsayılan ANSI kod sayfasına ayarlar. Çok baytlı kod sayfası ayarı, yerel ayara bağımlı olmayan tüm çok baytlı yordamlarını etkiler. Ancak, istemek olası **_setmbcp** geçerli yerel ayar için tanımlanan kod sayfası kullanmak için (bildirim sabitleri aşağıdaki listesini görmek ve davranışı sonuçları ilişkili). Çok baytlı kod sayfası yerine yerel ayar kod sayfası bağımlı olan çok baytlı yordamların bir listesi için bkz. [baytlı karakter sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md).
 
-Birden çok baytlı kod sayfası, çok baytlı karakter işleme göre aşağıdaki çalışma zamanı kitaplığı yordamları da etkiler:
+Çok baytlı kod sayfası, çok baytlı karakter işleme göre aşağıdaki çalışma zamanı kitaplığı yordamları da etkiler:
 
 ||||
 |-|-|-|
@@ -74,19 +64,19 @@ Birden çok baytlı kod sayfası, çok baytlı karakter işleme göre aşağıda
 |[_fullpath](fullpath-wfullpath.md)|[_spawn işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)|[_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)|
 |[_makepath](makepath-wmakepath.md)|[_splitpath](splitpath-wsplitpath.md)|[tmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)|
 
-Ayrıca, çok baytlı karakter aldığınız tüm çalışma zamanı kitaplığı yordamları *argv* veya *envp* program bağımsız değişken olarak parametreler (gibi **_exec** ve **_spawn** aileleri) birden çok baytlı kod sayfasına göre bu dizeler işlem. Bu nedenle, bu yordamlar ayrıca bir çağrı tarafından etkilenen **_setmbcp** birden çok baytlı kod sayfası değiştirir.
+Ayrıca, çok baytlı karakter aldığınız tüm çalışma zamanı kitaplık yordamları *argv* veya *envp* program bağımsız değişkenleri olarak parametreler (gibi **_exec** ve **_spawn** aileleri) bu dizeler çok baytlı kod sayfasına göre işleyin. Bu nedenle, bu yordamların de bir çağrı tarafından etkilenir **_setmbcp** , çok baytlı kod sayfasını değiştirir.
 
 *Codepage* bağımsız değişkeni aşağıdaki değerlerden birine ayarlanabilir:
 
-- **_MB_CP_ANSI** kullanım ANSI kod sayfası elde program başlangıçta işletim sisteminden.
+- **_MB_CP_ANSI** kullanım ANSI kod sayfası elde program başlangıcında işletim sisteminden.
 
-- **_MB_CP_LOCALE** geçerli yerel kod sayfası elde önceki çağrısından kullanım [setlocale](setlocale-wsetlocale.md).
+- **_MB_CP_LOCALE** geçerli yerel kod sayfası elde edilen önceki çağrısından kullanım [setlocale](setlocale-wsetlocale.md).
 
-- **_MB_CP_OEM** kullanım OEM kod sayfası elde program başlangıçta işletim sisteminden.
+- **_MB_CP_OEM** kullanım OEM kod sayfası elde program başlangıcında işletim sisteminden.
 
-- **_MB_CP_SBCS** kullanım tek baytlı kod sayfası. Kod sayfası ayarlandığında **_MB_CP_SBCS**, rutin gibi [_ismbblead](ismbblead-ismbblead-l.md) her zaman false döndürür.
+- **_MB_CP_SBCS** tek baytlı kod sayfasını kullanın. Kod sayfası ayarlandığında **_MB_CP_SBCS**, rutin gibi [_ismbblead](ismbblead-ismbblead-l.md) her zaman false döndürür.
 
-- Değer ANSI, OEM veya diğer işletim sistemi-destekli kod sayfası (UTF-7 ve dışında UTF-8 desteklenmez) olmasına bakılmaksızın herhangi diğer geçerli kod sayfası bir değer.
+- Değer bir ANSI, OEM veya diğer işletim sistemi-destekli kod sayfası (UTF-7 ve UTF-8, desteklenmeyen) dışında olmasına bakılmaksızın başka geçerli kod sayfasına bir değer.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -94,7 +84,7 @@ Ayrıca, çok baytlı karakter aldığınız tüm çalışma zamanı kitaplığ�
 |-------------|---------------------|
 |**_setmbcp**|\<Mbctype.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

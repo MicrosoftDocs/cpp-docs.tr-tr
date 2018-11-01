@@ -1,28 +1,17 @@
 ---
-title: Erişimcileri kullanma | Microsoft Docs
-ms.custom: ''
+title: Erişimcileri Kullanma
 ms.date: 10/24/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - accessors [C++], OLE DB Templates
 - OLE DB consumer templates, accessors
 - rowsets [C++], accessors
 ms.assetid: 6ce484a6-fbbe-40de-8ff9-5cddcd78d283
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 80903e3bee4e8b459f9c4510f58e3d447cf38c43
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9e6cf38cbe4d4f9ad585a3f13d6f83696574e0b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060747"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532744"
 ---
 # <a name="using-accessors"></a>Erişimcileri Kullanma
 

@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK1302 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1302
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1302
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1302
 ms.assetid: aea3c753-c2c4-4249-bbc3-f2d4f0164b5e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3dc85b37d58e12602c02c2207c1f38bda9344e59
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c3b1117b31db4759b385943323a581da7a58f0c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46045516"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491084"
 ---
 # <a name="linker-tools-error-lnk1302"></a>Bağlayıcı Araçları Hatası LNK1302
 

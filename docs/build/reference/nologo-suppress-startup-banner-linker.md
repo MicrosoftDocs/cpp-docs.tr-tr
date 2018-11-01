@@ -1,15 +1,9 @@
 ---
-title: -NOLOGO (Başlangıç başlığını gösterme) (Bağlayıcı) | Microsoft Docs
-ms.custom: ''
+title: /NOLOGO (Başlangıç Başlığını Gösterme) (Bağlayıcı)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.SuppressStartupBanner
 - /nologo
-dev_langs:
-- C++
 helpviewer_keywords:
 - suppress startup banner linker option
 - -NOLOGO linker option
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - banners, suppressing startup
 - NOLOGO linker option
 ms.assetid: 3b20dddd-eca6-4545-a331-9f70bf720197
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 405cfd08b681d8b48343bae5055f5be9cf23dadb
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d246da2e10f7c16f7c194962841e2e44d1fd1758
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45707583"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50515550"
 ---
 # <a name="nologo-suppress-startup-banner-linker"></a>/NOLOGO (Başlangıç Başlığını Gösterme) (Bağlayıcı)
 

@@ -1,10 +1,6 @@
 ---
-title: _putc_nolock, _putwc_nolock | Microsoft Docs
-ms.custom: ''
+title: _putc_nolock, _putwc_nolock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _putc_nolock
 - _putwc_nolock
@@ -28,8 +24,6 @@ f1_keywords:
 - _putwc_nolock
 - _putc_nolock
 - putc_nolock
-dev_langs:
-- C++
 helpviewer_keywords:
 - puttc_nolock function
 - putc_nolock function
@@ -40,20 +34,16 @@ helpviewer_keywords:
 - _puttc_nolock function
 - _putwc_nolock function
 ms.assetid: 3cfc7f21-c9e8-4b7f-b0fb-af0d4d85e7e1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5975c25c015bb77c627eda3483566f358aedbedb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b2a30b83f0746b1b4f5ab03b4c3dfa0229656bb9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404470"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50510922"
 ---
 # <a name="putcnolock-putwcnolock"></a>_putc_nolock, _putwc_nolock
 
-Bir karakter, iş parçacığı kilitlemeden bir akışa yazar.
+İş parçacığını kilitlemeden, bir akışa bir karakter yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -73,7 +63,7 @@ wint_t _putwc_nolock(
 *c*<br/>
 Yazılacak karakter.
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -82,9 +72,9 @@ Bkz: **putc, putwc**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_putc_nolock** ve **_putwc_nolock** sürümleri için özdeş **_nolock** diğer iş parçacıkları tarafından girişime korunmayan dışında soneki. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.
+**_putc_nolock** ve **_putwc_nolock** sürümlerle özdeştir **_nolock** soneki olmayan bunlar başka iş parçacıklarının engellemelerinden korunmamaları. Diğer iş parçacıklarını kilitleme ek yükü kalmadıklarından daha hızlı olabilir. Bu işlevler yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
 
-**_putwc_nolock** geniş karakter sürümü **_putc_nolock**; akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. **_putc_nolock** çıktı bir UNICODE akışa şu anda desteklemiyor.
+**_putwc_nolock** öğesinin geniş karakterli sürümüdür **_putc_nolock**; akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **_putc_nolock** UNICODE akışına çıkış şu anda desteklemiyor.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -99,7 +89,7 @@ Bkz: **putc, putwc**.
 |**_putc_nolock**|\<stdio.h >|
 |**_putwc_nolock**|\<stdio.h > veya \<wchar.h >|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -138,6 +128,6 @@ This is the line of output
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fputc, fputwc](fputc-fputwc.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>

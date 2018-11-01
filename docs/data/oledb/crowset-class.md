@@ -1,10 +1,6 @@
 ---
-title: CRowset sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRowset Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL.CRowset<TAccessor>
 - CRowset
@@ -215,8 +211,6 @@ f1_keywords:
 - ATL::CRowset<TAccessor>::UpdateAll
 - CRowset<TAccessor>::UpdateAll
 - ATL::CRowset::UpdateAll
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRowset class
 - AddRefRows method
@@ -244,17 +238,12 @@ helpviewer_keywords:
 - Update method
 - UpdateAll method
 ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: cc3eb0ab487d90271ec28af225faff2211f17595
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6af7b30ef7055fbf5b3c998dba6f3b84d0129c31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060604"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543074"
 ---
 # <a name="crowset-class"></a>CRowset Sınıfı
 

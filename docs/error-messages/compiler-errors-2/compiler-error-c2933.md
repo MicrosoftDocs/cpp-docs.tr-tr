@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2933 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2933
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2933
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2933
 ms.assetid: 394891e3-6b52-4b61-83d2-a1c5125d9bd5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a251be073402e0eb7ede4a282e18905b23a325bb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8764ce7f79243eec931904378522b90a41b633a7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46049897"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512599"
 ---
 # <a name="compiler-error-c2933"></a>Derleyici Hatası C2933
 

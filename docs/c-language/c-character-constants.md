@@ -1,28 +1,18 @@
 ---
-title: C karakter sabitleri | Microsoft Docs
-ms.custom: ''
+title: C Karakter Sabitleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - characters, constants
 - (') single quotation mark
 - constants, character
 - single quotation mark
 ms.assetid: 388ae7d7-2c3a-44d6-a507-63f541ecd2da
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f9908bfd8be662a53727e9c833626f329dd45c04
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 684763b5ce3983b6efc44db9499c139c84f6e3aa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038587"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50507200"
 ---
 # <a name="c-character-constants"></a>C Karakter Sabitleri
 
@@ -52,13 +42,13 @@ ms.locfileid: "46038587"
 
 **\\' \\" \\\ \\?**
 
-*kaçış sırası sekizlik*: **\\** *sekizlik basamak* 
+*kaçış sırası sekizlik*: **\\** *sekizlik basamak*
 
 **\\**  *sekizlik basamak sekizlik basamak*
 
 **\\**  *sekizlik basamak sekizlik basamak sekizlik basamak*
 
-*onaltılık kaçış sırası*: **\x***onaltılık basamak* 
+*onaltılık kaçış sırası*: **\x***onaltılık basamak*
 
 *onaltı basamaklı onaltılık kaçış sırası*
 

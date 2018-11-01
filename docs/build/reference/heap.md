@@ -1,30 +1,20 @@
 ---
-title: -YIĞIN | Microsoft Docs
-ms.custom: ''
+title: /HEAP
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /heap
-dev_langs:
-- C++
 helpviewer_keywords:
 - heap allocation, setting heap size
 - HEAP editbin option
 - -HEAP editbin option
 - /HEAP editbin option
 ms.assetid: 6ce759b5-75b7-44ff-a5fd-3a83a0ba9a48
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 22698760ba23dc60b64002f0f728bb7a036f6731
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 89f7b2449adc392c3ec254de9e9518be6fbecfa2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45699822"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534221"
 ---
 # <a name="heap"></a>/HEAP
 

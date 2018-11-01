@@ -1,10 +1,6 @@
 ---
-title: _get_current_locale | Microsoft Docs
-ms.custom: ''
+title: _get_current_locale
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _get_current_locale
 apilocation:
@@ -24,28 +20,22 @@ f1_keywords:
 - get_current_locale
 - __get_current_locale
 - _get_current_locale
-dev_langs:
-- C++
 helpviewer_keywords:
 - get_current_locale function
 - _get_current_locale function
 - locales, getting information on
 - __get_current_locale function
 ms.assetid: 572217f2-a37a-4105-a293-a250b4fabd99
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c658d960953bea2890202bebe280d46dd3407d63
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 87c30ee701d8f7d3a89a0aa61ba18a7f854bc9b1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396946"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511897"
 ---
 # <a name="getcurrentlocale"></a>_get_current_locale
 
-Geçerli yerel temsil eden bir yerel ayar nesnesi alır.
+Geçerli yerel ayarı temsil eden bir yerel ayar nesnesini alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,13 +45,13 @@ _locale_t _get_current_locale(void);
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Geçerli yerel temsil eden bir yerel ayar nesnesi.
+Geçerli yerel ayarı temsil eden bir yerel ayar nesnesi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Get_current_locale** işlevi alır ayarlanmış iş parçacığı yerel ayarı ve bu yerel ayara temsil eden bir yerel ayar nesnesi döndürür.
+**_Get_current_locale** işlevi şu anda ayarlanmış alır iş parçacığı için yerel ayar ve bu yerel ayar temsil eden bir yerel ayar nesnesi döndürür.
 
-Bu işlev, önceki adını **__get_current_locale** (iki başında alt çizgi ile) kullanım dışı bırakıldı.
+Bu işlev, önceki adını **__get_current_locale** (başında iki alt çizgi ile) kullanım dışı bırakıldı.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -69,7 +59,7 @@ Bu işlev, önceki adını **__get_current_locale** (iki başında alt çizgi il
 |-------------|---------------------|
 |**_get_current_locale**|\<Locale.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

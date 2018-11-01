@@ -1,12 +1,6 @@
 ---
-title: İletişim kutusu Düzenleyicisi sekmesi, araç kutusu (C++) | Microsoft Docs
-ms.custom: ''
+title: İletişim kutusu Düzenleyicisi sekmesi, araç kutusu (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Toolbox [C++], Dialog Editor tab
 - controls [C++], types
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - Dialog Editor [C++], creating controls
 - controls [C++], adding to dialog boxes
 ms.assetid: 253885c2-dcb9-4d8e-ac9b-805ea31cbf5e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 4b6e05e654b66c2178b7dc6e772c95df89512d1d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ee5ee95f22c9cbcbde1d6c8b9ba1646f979697a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399853"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50515241"
 ---
 # <a name="dialog-editor-tab-toolbox-c"></a>İletişim kutusu Düzenleyicisi sekmesi, araç kutusu (C++)
 

@@ -1,26 +1,16 @@
 ---
-title: / Qspectre | Microsoft Docs
-ms.custom: ''
+title: / Qspectre
 ms.date: 10/12/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 f1_keywords:
 - /Qspectre
 helpviewer_keywords:
 - /Qspectre
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7bef66e8b3c326f205b6399538a811bcc83c9f9d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: af04a905fdb3b509a90249c6d55a28ccdaa39318
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070406"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50507321"
 ---
 # <a name="qspectre"></a>/ Qspectre
 

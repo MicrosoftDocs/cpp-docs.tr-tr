@@ -1,30 +1,19 @@
 ---
-title: Menü (C++) oluşturma | Microsoft Docs
-ms.custom: ''
+title: Menü (C++) oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.menu
-dev_langs:
-- C++
 helpviewer_keywords:
 - mnemonics [C++], associating menu items
 - menus [C++], associating commands with mnemonic keys
 - menus [C++], creating
 ms.assetid: 66f94448-9b97-4b73-bf97-10d4bf87cc65
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 91098a0a225519f9b657d9424872e99be0e86354
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b779e6b089410b818247471086fe987c37b1f36c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065544"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518566"
 ---
 # <a name="creating-a-menu-c"></a>Menü (C++) oluşturma
 

@@ -1,10 +1,6 @@
 ---
-title: reference_wrapper sınıfı | Microsoft Docs
-ms.custom: ''
+title: reference_wrapper Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - functional/std::reference_wrapper
 - type_traits/std::reference_wrapper
@@ -15,8 +11,6 @@ f1_keywords:
 - functional/std::reference_wrapper::type
 - functional/std::reference_wrapper::get
 - functional/std::reference_wrapper::operator()
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::reference_wrapper [C++]
 - std::reference_wrapper [C++]
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - std::reference_wrapper [C++], type
 - std::reference_wrapper [C++], get
 ms.assetid: 90b8ed62-e6f1-44ed-acc7-9619bd58865a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4937676b085988153b9b36875ae6bed4762d271c
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 52e8876e1bd72259154a3be7518d91ba09ec2ffc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102479"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513496"
 ---
 # <a name="referencewrapper-class"></a>reference_wrapper Sınıfı
 

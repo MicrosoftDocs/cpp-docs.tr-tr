@@ -1,10 +1,6 @@
 ---
-title: _heapset | Microsoft Docs
-ms.custom: ''
+title: _heapset
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _heapset
 apilocation:
@@ -19,8 +15,6 @@ apitype: DLLExport
 f1_keywords:
 - _heapset
 - heapset
-dev_langs:
-- C++
 helpviewer_keywords:
 - checking heap
 - heapset function
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - debugging [CRT], heap-related problems
 - _heapset function
 ms.assetid: 9667eeb0-55bc-4c19-af5f-d1fd0a142b3c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6b9700ce3f003488ba394302ac011937ea116a90
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c93624b8b56fb53eb15263dbd0d203cd9130eacf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085218"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528199"
 ---
 # <a name="heapset"></a>_heapset
 

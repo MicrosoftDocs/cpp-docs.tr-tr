@@ -1,27 +1,17 @@
 ---
-title: '&lt;initializer_list&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;initializer_list&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: 820b6448-fb01-49a4-aeaa-546ad7576ea4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 437ec5acbea4308838d9115236d8fe706835d4a4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6f8e1a72b7de97f5dd0376dedd0d4246a46276eb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843047"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517474"
 ---
 # <a name="ltinitializerlistgt"></a>&lt;initializer_list&gt;
 
-Kapsayıcı Şablon sınıfı tanımlayan `initializer_list` ve çeşitli destekleyici şablonlar.
+Kapsayıcı Şablon sınıfı tanımlar `initializer_list` ve çeşitli destek şablonları.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,7 +23,7 @@ Kapsayıcı Şablon sınıfı tanımlayan `initializer_list` ve çeşitli destek
 
 |örneği|Açıklama|
 |-|-|
-|[initializer_list](../standard-library/initializer-list-class.md)|Her üye belirtilen türde olduğu öğeleri dizisi erişim sağlar.|
+|[initializer_list](../standard-library/initializer-list-class.md)|Öğeleri her üyenin belirtilen tür olduğu bir dizi erişim sağlar.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

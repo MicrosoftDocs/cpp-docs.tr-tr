@@ -1,28 +1,18 @@
 ---
-title: ATL Active Server Page bileşeni Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: ATL Active Server Page bileşeni Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.atl.asp.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - ASP components, creating in ATL
 - ATL Active Server Page Component Wizard
 ms.assetid: 5a5cb904-dbbf-44ea-ad3d-2ddd14c1d3c5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8a87b2ba1e846ce995a987379ae6f30567a39773
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 80d7eefaa4b12d5aab8970f4b3c81fc644226e07
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053818"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50510870"
 ---
 # <a name="atl-active-server-page-component-wizard"></a>ATL Active Server Page bileşeni Sihirbazı
 

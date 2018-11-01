@@ -1,30 +1,20 @@
 ---
-title: MFC Uygulama Mimarisi sınıfları | Microsoft Docs
-ms.custom: ''
+title: MFC Uygulama Mimarisi Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.mfc
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, classes
 - MFC, application development
 - classes [MFC], MFC
 - application architecture classes [MFC]
 ms.assetid: 71b2de54-b44d-407e-9c71-9baf954e18d9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 32a842d69e227633f8fbd2291a47296d384a75c6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3287ac31744506720f1c5c1080a6225311f0e3a7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438632"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512768"
 ---
 # <a name="mfc-application-architecture-classes"></a>MFC Uygulama Mimarisi Sınıfları
 

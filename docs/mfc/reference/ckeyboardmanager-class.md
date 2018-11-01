@@ -1,10 +1,6 @@
 ---
-title: CKeyboardManager sınıfı | Microsoft Docs
-ms.custom: ''
+title: CKeyboardManager sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CKeyboardManager
 - AFXKEYBOARDMANAGER/CKeyboardManager
@@ -20,8 +16,6 @@ f1_keywords:
 - AFXKEYBOARDMANAGER/CKeyboardManager::ShowAllAccelerators
 - AFXKEYBOARDMANAGER/CKeyboardManager::TranslateCharToUpper
 - AFXKEYBOARDMANAGER/CKeyboardManager::UpdateAccelTable
-dev_langs:
-- C++
 helpviewer_keywords:
 - CKeyboardManager [MFC], CKeyboardManager
 - CKeyboardManager [MFC], CleanUp
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - CKeyboardManager [MFC], TranslateCharToUpper
 - CKeyboardManager [MFC], UpdateAccelTable
 ms.assetid: 4809ece6-89df-4479-8b53-9bf476ee107b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f2e2ce20cfd12b52f37e24fccef29869bc071f92
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 85bda6747c4ef6bed87b7a2ef30a3ef06bdfe29e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057315"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517864"
 ---
 # <a name="ckeyboardmanager-class"></a>CKeyboardManager sınıfı
 

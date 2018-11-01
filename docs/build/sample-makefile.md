@@ -1,23 +1,13 @@
 ---
-title: Örnek derleme görevleri dosyası | Microsoft Docs
-ms.custom: ''
+title: Örnek Derleme Görevleri Dosyası
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 8343ce71-5556-4ae0-8d1e-7efd82673070
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b66d7d341f734608a7e2298b00a1078549c5de1c
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 248924ff83befdefe1045da197be5328095c0caf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45705230"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534895"
 ---
 # <a name="sample-makefile"></a>Örnek Derleme Görevleri Dosyası
 

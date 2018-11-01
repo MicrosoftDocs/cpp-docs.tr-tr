@@ -1,10 +1,6 @@
 ---
-title: _get_unexpected | Microsoft Docs
-ms.custom: ''
+title: _get_unexpected
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _get_unexpected
 apilocation:
@@ -23,27 +19,21 @@ f1_keywords:
 - __get_unexpected
 - _get_unexpected
 - get_unexpected
-dev_langs:
-- C++
 helpviewer_keywords:
 - __get_unexpected function
 - get_unexpected function
 - _get_unexpected function
 ms.assetid: a5f7a7a0-18e0-485e-953d-db291068a1e8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5e6f768d6f384e5b3b39e8d2884a7a7cb0362915
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 225158ecab60a5997ebedbad107eb43d82189234
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451660"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519411"
 ---
 # <a name="getunexpected"></a>_get_unexpected
 
-Çağrılacak sonlandırma yordamı döndürür **beklenmeyen**.
+Çağrılacak sonlandırma yordamını döndürür **beklenmeyen**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,7 +43,7 @@ unexpected_function _get_unexpected( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Tarafından kaydedilen işlevi için bir işaretçi döndüren [set_unexpected](set-unexpected-crt.md). Hiçbir işlev ayarlarsanız dönüş değerini varsayılan davranışını geri yüklemek için kullanılabilir; Bu değer olabilir **NULL**.
+Tarafından kaydedilen işlevine bir işaretçi döndürür [set_unexpected](set-unexpected-crt.md). Hiçbir işlev ayarlarsanız dönüş değeri, varsayılan davranışı geri yüklemek için kullanılabilir; Bu değer olabilir **NULL**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -61,12 +51,12 @@ Tarafından kaydedilen işlevi için bir işaretçi döndüren [set_unexpected](
 |-------------|---------------------|
 |**_get_unexpected**|\<EH.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Durum İşleme Rutinleri](../../c-runtime-library/exception-handling-routines.md)<br/>
 [abort](abort.md)<br/>
 [set_terminate](set-terminate-crt.md)<br/>
-[Sonlandırma](terminate-crt.md)<br/>
+[sonlandırma](terminate-crt.md)<br/>
 [beklenmeyen](unexpected-crt.md)<br/>

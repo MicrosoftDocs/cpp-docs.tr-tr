@@ -1,28 +1,17 @@
 ---
-title: nonextensible (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: nonextensible (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.nonextensible
-dev_langs:
-- C++
 helpviewer_keywords:
 - nonextensible attribute
 ms.assetid: c7ef1554-809f-4ea0-a7cd-dc7786d40c3e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 6a025b54e3c41f283e1877e0b97c7dbb6e5f32bd
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 332f61148ccf8cb5816e8bd347181ac9d130a730
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062815"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512456"
 ---
 # <a name="nonextensible"></a>nonextensible
 

@@ -1,28 +1,17 @@
 ---
-title: satype (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: satype (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.satype
-dev_langs:
-- C++
 helpviewer_keywords:
 - satype attribute
 ms.assetid: 1716590b-6bcb-4aba-b1bc-82f7335f02c3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 708495d68b8cac4c49980e6a92b08e5ca9f37ff4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3d2d921e750adad0089df0d00590f256b56c732e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070003"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517695"
 ---
 # <a name="satype"></a>satype
 

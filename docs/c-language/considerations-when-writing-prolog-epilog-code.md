@@ -1,28 +1,18 @@
 ---
-title: Giriş ve bitiş kodu yazarken dikkat edilmesi gerekenler | Microsoft Docs
-ms.custom: ''
+title: Giriş ve bitiş kodu yazarken dikkat edilmesi gerekenler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - layouts, stack frame
 - stack frame layout
 - __LOCAL_SIZE constant
 - stack, stack frame layout
 ms.assetid: 3b8addec-e809-48e4-b1d0-5bad133bd4b8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0da7d91ab32218e407c9be197e978f98ec481305
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e7bfeccf41b9e4dace49e9ab209a94598c492b41
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067747"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50515537"
 ---
 # <a name="considerations-when-writing-prologepilog-code"></a>Giriş ve Bitiş Kodu Yazarken Dikkat Edilmesi Gerekenler
 

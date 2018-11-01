@@ -1,25 +1,15 @@
 ---
-title: Stok özellikleri, ATL denetimi Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: Stok özellikleri, ATL denetimi Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.atl.control.stockprops
-dev_langs:
-- C++
 ms.assetid: b27b0e60-08a6-43f4-ba6e-0a4e45147693
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eb123f6ca46841b59d178bba88b97ca44b55f621
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: bb76eb5771e34f67a048f1b0b884b9c8eb2a9ff8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725887"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528120"
 ---
 # <a name="stock-properties-atl-control-wizard"></a>Stok özellikleri, ATL denetimi Sihirbazı
 

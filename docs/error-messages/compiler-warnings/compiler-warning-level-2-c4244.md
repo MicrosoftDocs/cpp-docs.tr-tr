@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 2) C4244 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 2) C4244
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4244
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4244
 ms.assetid: 2c19d157-21d1-42c2-a6c0-3f30f2ce3813
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2c6dd4b15fe3bda6468f8d5bebcf7cb0926ba69e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: af821d80ff8c4c7717986f2ff4d0f3392cd6fca3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084802"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523124"
 ---
 # <a name="compiler-warning-level-2-c4244"></a>Derleyici Uyarısı (Düzey 2) C4244
 

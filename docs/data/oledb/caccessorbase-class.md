@@ -1,10 +1,6 @@
 ---
-title: CAccessorBase sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAccessorBase Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - CAccessorBase
 - CAccessorBase.Close
@@ -21,8 +17,6 @@ f1_keywords:
 - CAccessorBase::ReleaseAccessors
 - CAccessorBase.ReleaseAccessors
 - ReleaseAccessors
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAccessorBase class
 - Close method
@@ -31,17 +25,12 @@ helpviewer_keywords:
 - IsAutoAccessor method
 - ReleaseAccessors method
 ms.assetid: 389b65be-11ca-4ae0-9290-60c621c4982b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 2e62c4242513c5147dcfd84ee5d69ec51a4816d1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5fb39d2291c2698dc57150eb44a6bbd6778812bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053337"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509314"
 ---
 # <a name="caccessorbase-class"></a>CAccessorBase Sınıfı
 
