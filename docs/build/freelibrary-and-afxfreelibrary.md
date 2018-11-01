@@ -1,15 +1,9 @@
 ---
-title: FreeLibrary ve AfxFreeLibrary | Microsoft Docs
-ms.custom: ''
+title: FreeLibrary ve AfxFreeLibrary
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
 f1_keywords:
 - FreeLibrary
 - AfxFreeLibrary
-dev_langs:
-- C++
 helpviewer_keywords:
 - extension DLLs [C++], unloading
 - AfxFreeLibrary method
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - explicit linking [C++]
 - DLLs [C++], unloading
 ms.assetid: 4a48d290-3971-43e9-8e97-ba656cd0c8f8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a86300b4814c8712f3cf88f91421dc1d0842e8a7
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: ce52eb43fa8f371b68d836f01163003f056f34c7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49081530"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530240"
 ---
 # <a name="freelibrary-and-afxfreelibrary"></a>FreeLibrary ve AfxFreeLibrary
 

@@ -1,27 +1,17 @@
 ---
-title: Tabanlı adresleme | Microsoft Docs
-ms.custom: ''
+title: Tabanlı Adresleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - based addressing [C++]
 - addresses [C++]
 - addresses [C++], based
 ms.assetid: e80527b0-2303-4755-a52e-3e07e17232da
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f62cdb4fa56d5c770891d359f430726df3423e9f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: daea4a30a15163fa80de800673a0deaeddfb22c9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46059933"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519073"
 ---
 # <a name="based-addressing"></a>Tabanlı Adresleme
 

@@ -1,28 +1,17 @@
 ---
-title: CDynamicStringAccessorA sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDynamicStringAccessorA Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - CDynamicStringAccessorA
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDynamicStringAccessorA class
 ms.assetid: ed0d9821-a655-41f1-a902-43c3042ac49c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 612050c74cf33d128f108962fab54ef6c0e8e5d9
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: bfe4cf2d6aa107c21ed0d8b226616ebaa8488102
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214571"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537442"
 ---
 # <a name="cdynamicstringaccessora-class"></a>CDynamicStringAccessorA Sınıfı
 

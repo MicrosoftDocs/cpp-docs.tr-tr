@@ -1,10 +1,6 @@
 ---
-title: CComMultiThreadModelNoCS sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComMultiThreadModelNoCS sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComMultiThreadModelNoCS
 - ATLBASE/ATL::CComMultiThreadModelNoCS
@@ -13,23 +9,17 @@ f1_keywords:
 - ATLBASE/ATL::CComMultiThreadModelNoCS::ThreadModelNoCS
 - ATLBASE/ATL::CComMultiThreadModelNoCS::Decrement
 - ATLBASE/ATL::CComMultiThreadModelNoCS::Increment
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL, multithreading
 - CComMultiThreadModelNoCS class
 - threading [ATL]
 ms.assetid: 2b3f7a45-fd72-452c-aaf3-ccdaa621c821
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 302b66ba9935f2024a30f8c89340b5f6731aad6b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5bad9ead5cb25d8ca1078bbbb25a00af1ebfcaa3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065510"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550767"
 ---
 # <a name="ccommultithreadmodelnocs-class"></a>CComMultiThreadModelNoCS sınıfı
 

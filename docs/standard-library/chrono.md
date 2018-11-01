@@ -1,10 +1,6 @@
 ---
-title: '&lt;chrono&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;chrono&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - chrono/std::chrono::nanoseconds
 - chrono/std::chrono::minutes
@@ -13,25 +9,19 @@ f1_keywords:
 - chrono/std::chrono::hours
 - chrono/std::chrono::milliseconds
 - chrono/std::chrono::microseconds
-dev_langs:
-- C++
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4d701b290100f812f3c7845096960561cb101472
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 904e4df6b6c16b846ab4417d24a1d9836380d75b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847500"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544553"
 ---
 # <a name="ltchronogt"></a>&lt;chrono&gt;
 
-Standart üstbilgisini \<chrono > sınıfları ve temsil eder ve süreler ve zaman instants değiştirmek işlevleri tanımlamak için.
+Standart üst bilgiyi dahil \<chrono > sınıfları ve işlevleri temsil eder ve süre ve zaman instants tanımlamak için.
 
-Visual Studio 2015'te, uygulanması başlayarak `steady_clock` steadiness ve monotonicity C++ Standart gereksinimlerini karşılamak üzere değişti. `steady_clock` artık QueryPerformanceCounter() üzerinde temel ve `high_resolution_clock` typedef için sunulmuştur `steady_clock`. Sonuç olarak, Visual C++'ta `steady_clock::time_point` typedef için sunulmuştur `chrono::time_point<steady_clock>`; ancak, bu mutlaka diğer uygulamaları için geçerli değildir.
+Visual Studio 2015'te uygulamasının başlangıç `steady_clock` steadiness ve monotonicity C++ Standart gereksinimlerini karşılayacak şekilde değişti. `steady_clock` artık üzerinde QueryPerformanceCounter() temel ve `high_resolution_clock` için bir typedef sunulmuştur `steady_clock`. Sonuç olarak, Visual C++'ta `steady_clock::time_point` için bir typedef sunulmuştur `chrono::time_point<steady_clock>`; ancak bu zorunlu diğer uygulamaları için geçerli değildir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,73 +33,73 @@ Visual Studio 2015'te, uygulanması başlayarak `steady_clock` steadiness ve mon
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[duration Sınıfı](../standard-library/duration-class.md)|Bir zaman aralığı tutan bir türünü tanımlar.|
-|[time_point Sınıfı](../standard-library/time-point-class.md)|Bir noktayı zamanında temsil eden bir tür açıklar.|
+|[duration Sınıfı](../standard-library/duration-class.md)|Bir zaman aralığı tutan bir türü açıklar.|
+|[time_point Sınıfı](../standard-library/time-point-class.md)|Zamanda bir noktayı temsil eden bir türü açıklar.|
 
 ### <a name="structs"></a>Yapılar
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[common_type Yapısı](../standard-library/common-type-structure.md)|Şablon sınıfının özelleştirmeleri açıklar [common_type](../standard-library/common-type-class.md) işlemlerinden için `duration` ve `time_point`.|
-|[duration_values Yapısı](../standard-library/duration-values-structure.md)|Belirli değerleri sağlar `duration` şablon parametresi `Rep`.|
-|[steady_clock yapısı](../standard-library/steady-clock-struct.md)|Temsil eden bir `steady` saat.|
-|[system_clock Yapısı](../standard-library/system-clock-structure.md)|Temsil eden bir *saat türü* sistem gerçek zamanlı saati dayanır.|
-|[treat_as_floating_point Yapısı](../standard-library/treat-as-floating-point-structure.md)|Bir tür kayan noktalı bir tür olarak kabul olup olmadığını belirtir.|
+|[common_type Yapısı](../standard-library/common-type-structure.md)|Şablon sınıfı uzmanlıklarını tanımlar [common_type](../standard-library/common-type-class.md) örneklemeleri için `duration` ve `time_point`.|
+|[duration_values Yapısı](../standard-library/duration-values-structure.md)|İçin belirli değerler sağlar `duration` şablon parametresi `Rep`.|
+|[steady_clock yapısı](../standard-library/steady-clock-struct.md)|Temsil eden bir `steady` saati.|
+|[system_clock Yapısı](../standard-library/system-clock-structure.md)|Temsil eden bir *saat türü* sistemin gerçek zamanlı saatini temel alır.|
+|[treat_as_floating_point Yapısı](../standard-library/treat-as-floating-point-structure.md)|Bir tür bir kayan nokta türü olarak ele alınıp alınamayacağını belirtir.|
 
 ### <a name="functions"></a>İşlevler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[duration_cast](../standard-library/chrono-functions.md#duration_cast)|Atamalar bir `duration` nesne belirtilen türe.|
-|[time_point_cast](../standard-library/chrono-functions.md#time_point_cast)|Atamalar bir `time_point` nesne belirtilen türe.|
+|[duration_cast](../standard-library/chrono-functions.md#duration_cast)|Yayınları bir `duration` belirli nesne.|
+|[time_point_cast](../standard-library/chrono-functions.md#time_point_cast)|Yayınları bir `time_point` belirli nesne.|
 
 ### <a name="operators"></a>İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator-](../standard-library/chrono-operators.md#operator-)|İşleç çıkarması veya değilleme işlemi için `duration` ve `time_point` nesneleri.|
-|[operator!=](../standard-library/chrono-operators.md#op_neq)|İle birlikte kullanılan eşitsizlik işleci `duration` veya `time_point` nesneleri.|
-|[mod işleci](../standard-library/chrono-operators.md#op_modulo)|İşlemler modulo işleci için `duration` nesneleri.|
-|[işleç *](../standard-library/chrono-operators.md#op_star)|Çarpma işleci için `duration` nesneleri.|
+|[operator-](../standard-library/chrono-operators.md#operator-)|Veya negation işleci `duration` ve `time_point` nesneleri.|
+|[operator!=](../standard-library/chrono-operators.md#op_neq)|İle kullanılan eşitsizlik işleci `duration` veya `time_point` nesneleri.|
+|[mod işleci](../standard-library/chrono-operators.md#op_modulo)|Modül işlemleri için işleç `duration` nesneleri.|
+|[operator *](../standard-library/chrono-operators.md#op_star)|Çarpma işleci için `duration` nesneleri.|
 |[operator /](../standard-library/chrono-operators.md#op_div)|Bölme işleci için `duration` nesneleri.|
 |[operator +](../standard-library/chrono-operators.md#op_add)|Ekler `duration` ve `time_point` nesneleri.|
-|[işleci&lt;](../standard-library/chrono-operators.md#op_lt)|Bir olup olmadığını belirleyen `duration` veya `time_point` nesnesi, başka değerinden `duration` veya `time_point` nesnesi.|
-|[işleci&lt;=](../standard-library/chrono-operators.md#op_lt_eq)|Bir olup olmadığını belirleyen `duration` veya `time_point` nesnesidir değerinden küçük veya eşit başka `duration` veya `time_point` nesnesi.|
-|[operator==](../standard-library/chrono-operators.md#op_eq_eq)|İki olup olmadığını belirleyen `duration` nesneleri temsil aynı uzunlukta olan zaman aralıkları mı iki `time_point` nesneleri zamanında aynı noktasını temsil eder.|
-|[işleci&gt;](../standard-library/chrono-operators.md#op_gt)|Bir olup olmadığını belirleyen `duration` veya `time_point` nesnesidir diğerinden daha büyük `duration` veya `time_point` nesnesi.|
-|[işleci&gt;=](../standard-library/chrono-operators.md#op_gt_eq)|Bir olup olmadığını belirleyen `duration` veya `time_point` nesnesidir büyük veya ona eşit başka bir `duration` veya `time_point` nesnesi.|
+|[İşleci&lt;](../standard-library/chrono-operators.md#op_lt)|Az olup olmadığını belirler `duration` veya `time_point` nesnedir daha az `duration` veya `time_point` nesne.|
+|[İşleci&lt;=](../standard-library/chrono-operators.md#op_lt_eq)|Az olup olmadığını belirler `duration` veya `time_point` nesnedir küçüktür veya eşittir diğerine `duration` veya `time_point` nesne.|
+|[operator==](../standard-library/chrono-operators.md#op_eq_eq)|İki olup olmadığını belirler `duration` nesneleri aynı uzunluğa sahip zaman aralıklarını temsil etmek veya iki olduğunu `time_point` nesneleri zaman içinde aynı noktaya temsil eder.|
+|[İşleci&gt;](../standard-library/chrono-operators.md#op_gt)|Az olup olmadığını belirler `duration` veya `time_point` nesnedir diğerinden daha büyük `duration` veya `time_point` nesne.|
+|[İşleci&gt;=](../standard-library/chrono-operators.md#op_gt_eq)|Az olup olmadığını belirler `duration` veya `time_point` nesnedir büyüktür veya eşittir diğerine `duration` veya `time_point` nesne.|
 
 ### <a name="predefined-duration-types"></a>Önceden tanımlı süre türleri
 
-Aşağıdaki tür tanımları içinde kullanılan oranı türleri hakkında daha fazla bilgi için bkz: [ \<oranı >](../standard-library/ratio.md).
+Aşağıdaki tür tanımları içinde kullanılan oranı türleri hakkında daha fazla bilgi için bkz. [ \<oranı >](../standard-library/ratio.md).
 
-|TypeDef|Açıklama|
+|tür tanımı|Açıklama|
 |-------------|-----------------|
-|`typedef duration<long long, nano> nanoseconds;`|İçin eş anlamlı bir `duration` bir nanosaniyelik bir onay işareti süre olan türü.|
-|`typedef duration<long long, micro> microseconds;`|İçin eş anlamlı bir `duration` bir milisaniyeye bir onay işareti süre olan türü.|
-|`typedef duration<long long, milli> milliseconds;`|İçin eş anlamlı bir `duration` bir milisaniyelik bir onay işareti süre olan türü.|
-|`typedef duration<long long> seconds;`|İçin eş anlamlı bir `duration` bir ikinci onay süreyi olan türü.|
-|`typedef duration<int, ratio<60> > minutes;`|İçin eş anlamlı bir `duration` bir dakika bir onay işareti süre olan türü.|
-|`typedef duration<int, ratio<3600> > hours;`|İçin eş anlamlı bir `duration` onay süresi bir saat olan türü.|
+|`typedef duration<long long, nano> nanoseconds;`|İçin eş anlamlı bir `duration` içerir tek bir değer çizgisi süre olan türü.|
+|`typedef duration<long long, micro> microseconds;`|İçin eş anlamlı bir `duration` bir mikrosaniye ölçeğinde değer çizgisi aralığının olan türü.|
+|`typedef duration<long long, milli> milliseconds;`|İçin eş anlamlı bir `duration` bir milisaniyeden kısa bir değer çizgisi süre olan türü.|
+|`typedef duration<long long> seconds;`|İçin eş anlamlı bir `duration` bir saniyelik bir dönemini olan türü.|
+|`typedef duration<int, ratio<60> > minutes;`|İçin eş anlamlı bir `duration` , bir dakikalık bir değer çizgisi süre olan türü.|
+|`typedef duration<int, ratio<3600> > hours;`|İçin eş anlamlı bir `duration` bir saatlik bir değer çizgisi süre olan türü.|
 
 ### <a name="literals"></a>Sabit değerler
 
-**(C ++ 11)**  \<Chrono > Üstbilgi tanımlar aşağıdaki [kullanıcı tanımlı değişmez değerler](../cpp/user-defined-literals-cpp.md) büyük kolaylık, tür güvenliği ve kodunuzu bakımı için kullanabilirsiniz. Bu değişmez değerleri tanımlanan `literals::chrono_literals` satır içi ad alanı ve yazılımında kapsam ne zaman std::chrono kapsamında değil.
+**(C ++ 11)**  \<Chrono > Üstbilgi aşağıdakileri tanımlar [kullanıcı tanımlı değişmez değerler](../cpp/user-defined-literals-cpp.md) büyük kolaylık, tür güvenliği ve sürdürülebilirliği kodunuzu kullanabilirsiniz. Bu sabit değerleri tanımlanan `literals::chrono_literals` satır içi ad alanı ve de kapsamı ne zaman std::chrono kapsamda olan.
 
-|Değişmez değer|Açıklama|
+|değişmez değer|Açıklama|
 |-------------|-----------------|
-|chrono::hours işleci "" h (imzasız uzun uzun Val)|Saat bir tam sayı değeri belirtir.|
-|chrono::Duration\<çift oranı\<3600 >> işleci "" h (uzun çift Val)|Saat kayan noktalı bir sayıyı belirtir.|
-|chrono::minutes (işleci "" min) (uzun uzun Val imzasız)|Dakika bir tam sayı değeri belirtir.|
-|chrono::Duration\<çift oranı\<60 >> (işleci "" min) (Val uzun çift)|Dakika kayan noktalı bir sayıyı belirtir.|
-|chrono::seconds işleci "" s (imzasız uzun uzun Val)|Dakika bir tam sayı değeri belirtir.|
-|chrono::Duration\<çift > işleci "" s (uzun çift Val)|Saniye kayan noktalı bir sayıyı belirtir.|
-|chrono::milliseconds işleci "" ms (imzasız uzun uzun Val)|Milisaniye bir tam sayı değeri belirtir.|
-|chrono::Duration\<çift, milisaniye > işleci "" ms (uzun çift Val)|Milisaniye kayan noktalı bir sayıyı belirtir.|
-|chrono::microseconds işleci "" bize (imzasız uzun uzun Val)|Mikrosaniye bir tam sayı değeri olarak belirtir.|
-|chrono::Duration\<çift, mikro > işleci "" bize (uzun çift Val)|Mikrosaniye bir kayan nokta değeri olarak belirtir.|
-|chrono::nanoseconds işleci "" ns (imzasız uzun uzun Val)|Nanosaniye bir tam sayı değeri olarak belirtir.|
-|chrono::Duration\<çift, nano > işleci "" ns (uzun çift Val)|Nanosaniye bir kayan nokta değeri olarak belirtir.|
+|chrono::hours işleci "" h (imzasız uzun uzun Val)|Saat bir tamsayı değeri belirtir.|
+|chrono::Duration\<çift oranı\<3600 >> işleci "" h (uzun çift Val)|Bir kayan nokta değeri belirler.|
+|chrono::minutes (işleci "" min) (imzasız uzun uzun Val)|Dakika bir tamsayı değeri belirtir.|
+|chrono::Duration\<çift oranı\<60 >> (işleci "" min) (Val uzun çift)|Dakika, bir kayan nokta değeri belirtir.|
+|chrono::seconds işleci "" s (imzasız uzun uzun Val)|Dakika bir tamsayı değeri belirtir.|
+|chrono::Duration\<çift > işleci "" s (uzun çift Val)|Saniye kayan nokta değerini belirtir.|
+|chrono::milliseconds işleci "" ms (imzasız uzun uzun Val)|Milisaniye bir tamsayı değeri belirtir.|
+|chrono::Duration\<çift, milisaniye > işleci "" ms (uzun çift Val)|Milisaniye kayan nokta değerini belirtir.|
+|chrono::microseconds işleci "" ABD (imzasız uzun uzun Val)|Mikrosaniye bir tamsayı değeri belirtir.|
+|chrono::Duration\<çift, mikro > işleci "" ABD (uzun çift Val)|Mikrosaniye bir kayan nokta değeri belirtir.|
+|chrono::nanoseconds işleci "" ns (imzasız uzun uzun Val)|Etkinliğin nanosaniye bir tamsayı değeri belirtir.|
+|chrono::Duration\<çift, nano > işleci "" ns (uzun çift Val)|Etkinliğin nanosaniye bir kayan nokta değeri belirtir.|
 |||
 
 Aşağıdaki örnekler chrono değişmez değerleri kullanmayı gösterir.

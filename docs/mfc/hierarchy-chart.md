@@ -1,29 +1,19 @@
 ---
-title: Hiyerarşi grafiği | Microsoft Docs
-ms.custom: ''
+title: Hiyerarşi Grafiği
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc
-dev_langs:
-- C++
 helpviewer_keywords:
 - object models, MFC
 - classes [MFC], MFC hierarchy
 - MFC, object model
 ms.assetid: 19d70341-e391-4a72-94c6-35755ce975d4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 50ad8fe96a1c18f45dbc118e29c73453f806f110
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 91c8d058aab500e6264a2da57a20a603a8eb719d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376557"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542166"
 ---
 # <a name="hierarchy-chart"></a>Hiyerarşi Grafiği
 

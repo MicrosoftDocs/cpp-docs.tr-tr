@@ -1,10 +1,6 @@
 ---
-title: CAnimationColor sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAnimationColor sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CAnimationColor
 - AFXANIMATIONCONTROLLER/CAnimationColor
@@ -20,8 +16,6 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CAnimationColor::m_bValue
 - AFXANIMATIONCONTROLLER/CAnimationColor::m_gValue
 - AFXANIMATIONCONTROLLER/CAnimationColor::m_rValue
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAnimationColor [MFC], CAnimationColor
 - CAnimationColor [MFC], AddTransition
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - CAnimationColor [MFC], m_gValue
 - CAnimationColor [MFC], m_rValue
 ms.assetid: 88bfabd4-efeb-4652-87e8-304253d8e48c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 565881fdbc085e7046574d3d468073f49b24f565
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6037dd11ddef10500d9468bdf9fa188901aad739
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421029"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536707"
 ---
 # <a name="canimationcolor-class"></a>CAnimationColor sınıfı
 

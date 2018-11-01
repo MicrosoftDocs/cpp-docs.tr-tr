@@ -1,27 +1,17 @@
 ---
-title: PROTO | Microsoft Docs
-ms.custom: ''
+title: PROTO
 ms.date: 10/22/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - PROTO
-dev_langs:
-- C++
 helpviewer_keywords:
 - PROTO directive
 ms.assetid: 0487ee16-9dc7-43d1-9445-cd1601f5a080
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4fd00263f3b4a7ffcf23ccd0501989c0d40c637d
-ms.sourcegitcommit: f3a5dc788e62bb36e2d9bc3e62e0aa533422408b
+ms.openlocfilehash: 616b6be2a5c191ebc67d61288cb5fa6c183091fa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49644069"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536743"
 ---
 # <a name="proto"></a>PROTO
 

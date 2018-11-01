@@ -1,27 +1,17 @@
 ---
-title: __clrcall | Microsoft Docs
-ms.custom: ''
+title: __clrcall
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __clrcall_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __clrcall keyword [C++]
 ms.assetid: 92096695-683a-40ed-bf65-0c8443572152
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9631ac9beb0e6263ac1cf7e60e11e498aa4c7667
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bc44feb97223de47f45734f75777ee040d0ebdd8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019763"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534582"
 ---
 # <a name="clrcall"></a>__clrcall
 

@@ -1,12 +1,6 @@
 ---
-title: Uygulama etki alanları ve Visual C++ | Microsoft Docs
-ms.custom: ''
+title: Uygulama Etki Alanları ve Visual C++
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - interop [C++], application domains
 - application domains [C++], C++
@@ -14,21 +8,16 @@ helpviewer_keywords:
 - interoperability [C++], application domains
 - mixed assemblies [C++], application domains
 ms.assetid: 75a08efc-9b02-40ba-99b7-dcbd71010bbf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: b935b9a5d1561fa1c8b961ee48b92f59b98e2bd2
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 2296654e6935bc40f301226b184cf34f77cb126d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704340"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539275"
 ---
 # <a name="application-domains-and-visual-c"></a>Uygulama etki alanları ve Visual C++
 
-Varsa bir `__clrcall` sanal işlev vtable (appdomain) uygulama etki alanı başına olacaktır. Bir appdomain içinde bir nesne oluşturursanız, yalnızca o appdomain içinde sanal işlevden çağırabilir. Karma modda (**/CLR**) türünüz Hayır varsa işlem başına vtable olacaktır `__clrcall` sanal işlevleri. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+Varsa bir `__clrcall` sanal işlev vtable uygulama etki alanı (appdomain) başına olacaktır. Bir appdomain içinde bir nesne oluşturursanız, yalnızca sanal işleve, appdomain içinde çağırabilirsiniz. Karma modda (**/CLR**) türünüz Hayır, işlem içi vtable varsa `__clrcall` sanal işlevler. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
 Daha fazla bilgi için bkz.:
 

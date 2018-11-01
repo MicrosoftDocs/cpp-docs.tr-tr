@@ -1,10 +1,6 @@
 ---
-title: Ierrorrecordsımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IErrorRecordsImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL::IErrorRecordsImpl
 - ATL.IErrorRecordsImpl
@@ -54,8 +50,6 @@ f1_keywords:
 - ATL.IErrorRecordsImpl.m_rgErrors
 - m_rgErrors
 - ATL::IErrorRecordsImpl::m_rgErrors
-dev_langs:
-- C++
 helpviewer_keywords:
 - IErrorRecordsImpl class
 - GetErrorDescriptionString method
@@ -71,17 +65,12 @@ helpviewer_keywords:
 - GetRecordCount method
 - m_rgErrors
 ms.assetid: dea8e938-c5d8-45ab-86de-eb8fbf534ffb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 0413a83f51e430c52cfcccba05637a59973dc604
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a56649c0ca80b82e5fbeee9532b790226d1051bd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070393"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541043"
 ---
 # <a name="ierrorrecordsimpl-class"></a>IErrorRecordsImpl Sınıfı
 

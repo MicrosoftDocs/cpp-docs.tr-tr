@@ -1,12 +1,6 @@
 ---
-title: Zamana bağlı kodu geliştirme ipuçları | Microsoft Docs
-ms.custom: ''
+title: Zamana Bağlı Kodu Geliştirme İpuçları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - _lsearch function
 - qsort function
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - _lfind function
 - heap allocation, time-critical code performance
 ms.assetid: 3e95a8cc-6239-48d1-9d6d-feb701eccb54
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ded526198ce983124f3aca67cdc6be3e9bd9b6a5
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 081c8b46d03abf8257cc9bea642db93918f97429
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723222"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536948"
 ---
 # <a name="tips-for-improving-time-critical-code"></a>Zamana Bağlı Kodu Geliştirme İpuçları
 

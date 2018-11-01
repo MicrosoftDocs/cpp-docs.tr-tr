@@ -1,27 +1,17 @@
 ---
-title: .686P | Microsoft Docs
-ms.custom: ''
+title: .686P
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .686P
-dev_langs:
-- C++
 helpviewer_keywords:
 - .686P directive
 ms.assetid: 06d9a9bf-50b1-4eed-b4a3-86b256c71b48
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0efd974220332fb3cdd258dd5964703f19ce71bb
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 6e37107b76ef1cfea787147dc32725a36fee52f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678255"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526847"
 ---
 # <a name="686p"></a>.686P
 

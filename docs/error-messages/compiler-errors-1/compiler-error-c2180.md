@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2180 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2180
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2180
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2180
 ms.assetid: ea71b39e-b977-48a7-b7bd-af68ef5e263b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9c74912b92162cbfcada3630ed6a6845b67045d0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 16fcf15eb29743f74bbf2edcb1016f2e15228e5a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084152"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553328"
 ---
 # <a name="compiler-error-c2180"></a>Derleyici Hatası C2180
 

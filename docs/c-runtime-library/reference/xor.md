@@ -1,10 +1,6 @@
 ---
-title: Xor | Microsoft Docs
-ms.custom: ''
+title: xor
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,21 +17,15 @@ f1_keywords:
 - Xor
 - std::xor
 - std.xor
-dev_langs:
-- C++
 helpviewer_keywords:
 - xor function
 ms.assetid: 0fe9554b-d87b-4487-92ed-366c6dc21df2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dc5b3eb831a3d325b054ca3cca51f943631aafbf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2f4faf6a6bf23c240c10a120ff553752f1bca4ce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408334"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523662"
 ---
 # <a name="xor"></a>xor
 

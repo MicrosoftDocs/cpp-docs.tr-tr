@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3891 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3891
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3891
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3891
 ms.assetid: 6e1a9458-97f5-4580-bc0f-aa97a1bfd20d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c85e5fa5ed5e6f202750fef05ffc96e9a0c86bc1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 67d12984a32998c244bcd04f99a5f2200a192974
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46051704"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524572"
 ---
 # <a name="compiler-error-c3891"></a>Derleyici Hatası C3891
 

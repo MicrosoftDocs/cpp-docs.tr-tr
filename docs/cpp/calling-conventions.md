@@ -1,25 +1,15 @@
 ---
-title: Çağırma kuralları | Microsoft Docs
-ms.custom: ''
+title: Çağırma Kuralları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - calling conventions
 ms.assetid: 11b1e45c-8fd1-420b-bca0-a19e294c1d85
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 97a03e8c73f75e51a955805cd4ad76b902b0373c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9aa25598674aa52502d5d3619e5015eb13b6fff8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071490"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532791"
 ---
 # <a name="calling-conventions"></a>Çağırma Kuralları
 

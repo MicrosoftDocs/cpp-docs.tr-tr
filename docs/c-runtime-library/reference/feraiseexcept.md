@@ -1,11 +1,6 @@
 ---
-title: feraiseexcept | Microsoft Docs
-ms.custom: ''
+title: feraiseexcept
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - feraiseexcept
 apilocation:
@@ -23,25 +18,19 @@ apitype: HeaderDef
 f1_keywords:
 - feraiseexcept
 - fenv/feraiseexcept
-dev_langs:
-- C++
 helpviewer_keywords:
 - feraiseexcept function
 ms.assetid: 87e89151-83c2-4563-9a9a-45666245d437
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dfd60612c92f8e3ff542fd22bbf5b4a01f7b7365
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 581dd4026a20ce7221945c5815af3ae102f132fa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398643"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532255"
 ---
 # <a name="feraiseexcept"></a>feraiseexcept
 
-Belirtilen kayan nokta özel durumları oluşturur.
+Belirtilen kayan nokta özel durumlarını oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,34 +47,34 @@ Yükseltmek için kayan nokta özel durumları.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen tüm özel durumları başarıyla oluşturuldu, 0 döndürür.
+Belirtilen tüm özel durumlar başarıyla oluşturuldu, 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Feraiseexcept** işlevi çalışır tarafından belirtilen kayan nokta özel durumlar yükseltmek *excepts*.   **Feraiseexcept** işlevi destekler tanımlanan bu özel durum makroları \<fenv.h >:
+**Feraiseexcept** işlevi tarafından belirtilen kayan nokta özel durumlarını yükseltmek girişimlerini *excepts*.   **Feraiseexcept** işlevini desteklemektedir tanımlanan bu özel durum makroları \<fenv.h >:
 
 |Özel durum makrosu|Açıklama|
 |---------------------|-----------------|
-|FE_DIVBYZERO|İçinde bir önceki kayan nokta işlemi singularity veya kutbu'na bir hata oluştu; sonsuz değerle oluşturuldu.|
-|FE_INEXACT|İşlev, bir önceki kayan nokta işlemi depolanmış sonucu yuvarlanacak zorlandı.|
+|FE_DIVBYZERO|Daha önce bir kayan nokta işleminde singularity ya da kutup bir hata oluştu; sonsuz değerle oluşturulur.|
+|FE_INEXACT|İşlevi, bir önceki kayan noktalı işlemin depolanmış sonucu yuvarlanacak zorlandı.|
 |FE_INVALID|Daha önce bir kayan nokta işleminde bir etki alanı hatası oluştu.|
-|FE_OVERFLOW|Bir aralık hata oluştu; önceki bir kayan nokta işlemi sonuç gösterilemeyecek kadar büyüktü.|
-|FE_UNDERFLOW|Önceki bir kayan noktalı işlem sonucu tam duyarlık gösterilemeyecek kadar çok küçüktü; denormal değeri oluşturuldu.|
-|FE_ALLEXCEPT|Tüm Bitsel veya kayan nokta özel durumlar desteklenir.|
+|FE_OVERFLOW|Aralık bir hata oluştu; önceki bir kayan noktalı işlemin sonucu gösterilemeyecek kadar büyüktü.|
+|FE_UNDERFLOW|Önceki bir kayan noktalı işlemin sonucu tam duyarlıklı gösterilemeyecek kadar çok küçük; denormal değer oluşturuldu.|
+|FE_ALLEXCEPT|Bit düzeyinde OR tüm kayan nokta özel durumları desteklenmiyor.|
 
-*Excepts* bağımsız değişkeni sıfır olabilir bir özel durum makrosu değerler veya Bitsel veya iki veya daha fazla desteklenen özel durum makroları. Belirtilen özel durum makroları FE_OVERFLOW veya FE_UNDERFLOW ise, FE_INEXACT özel durum yan etkisi olarak oluşturulabilir.
+*Excepts* sıfır bağımsız değişken olabilir özel durum makrosu değerleri veya bit ya da iki veya daha fazla desteklenen özel durum makroları. Belirtilen özel durum makroları FE_OVERFLOW veya FE_UNDERFLOW ise, bir yan etkisi olarak FE_INEXACT özel duruma neden.
 
-Bu işlevi kullanmak için erişim kullanarak önleyebilir kayan nokta iyileştirmeler kapatmanız gerekir `#pragma fenv_access(on)` çağrı önce yönergesi. Daha fazla bilgi için bkz: [fenv_access](../../preprocessor/fenv-access.md).
+Bu işlevi kullanmak için erişim kullanarak engelleyebilir kayan nokta iyileştirmelerinin kapatmanız gerekir `#pragma fenv_access(on)` çağrıdan önceki yönerge. Daha fazla bilgi için [fenv_access](../../preprocessor/fenv-access.md).
 
-**Microsoft Specific:** belirtilen özel durum *excepts* FE_INVALID, sırayla gerçekleştirilen FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, FE_INEXACT. FE_OVERFLOW veya FE_UNDERFLOW oluştuğunda, ancak FE_INEXACT içinde belirtilmemiş olsa bile yükseltilebilir *excepts*. **Son Microsoft özel**
+**Microsoft Specific:** belirtilen özel durumları *excepts* FE_INVALID, sırayla gerçekleştirilen FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, FE_INEXACT. FE_OVERFLOW veya FE_UNDERFLOW ortaya çıktığında, Bununla birlikte, FE_INEXACT içinde belirtilmemiş olsa bile yükseltilebilir *excepts*. **End Microsoft özgü**
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |*feraiseexcept*|\<fenv.h >|\<cfenv >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,28 +1,18 @@
 ---
-title: Cdaoparameterınfo yapısı | Microsoft Docs
-ms.custom: ''
+title: CDaoParameterInfo Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDaoParameterInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDaoParameterInfo structure [MFC]
 - DAO (Data Access Objects), Parameters collection
 ms.assetid: 45fd53cd-cb84-4e12-b48d-7f2979f898ad
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8f695d1873a2a5a29393da347567674bf1f08e01
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 29248f04833662750d99b112fe2386c6ff4d97fe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433263"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545918"
 ---
 # <a name="cdaoparameterinfo-structure"></a>CDaoParameterInfo Yapısı
 

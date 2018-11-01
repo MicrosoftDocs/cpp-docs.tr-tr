@@ -1,10 +1,6 @@
 ---
-title: Kayıt defteri veri değişimi makroları | Microsoft Docs
-ms.custom: ''
+title: Kayıt defteri veri değişim makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlplus/ATL::BEGIN_RDX_MAP
 - atlplus/ATL::END_RDX_MAP
@@ -12,21 +8,15 @@ f1_keywords:
 - atlplus/ATL::RDX_CSTRING_TEXT
 - atlplus/ATL::RDX_DWORD
 - atlplus/ATL::RDX_TEXT
-dev_langs:
-- C++
 helpviewer_keywords:
 - RegistryDataExchange function, macros
 ms.assetid: c1bc5e79-2307-43d2-9d10-3a62ffadf473
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7e9e62c1969d61f84319c0ffadf50f9f96534380
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c1a746487b799979cd83f2900a0f7a12d21a6837
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055494"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524874"
 ---
 # <a name="registry-data-exchange-macros"></a>Kayıt defteri veri değişim makroları
 

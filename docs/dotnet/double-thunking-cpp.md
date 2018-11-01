@@ -1,12 +1,6 @@
 ---
-title: Çift dönüştürme (C++) | Microsoft Docs
-ms.custom: ''
+title: Çift Dönüştürme (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - double thunks
 - interop [C++], double thunking
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - /clr compiler option [C++], double thunking
 - interoperability [C++], double thunking
 ms.assetid: a85090b2-dc3c-498a-b40c-340db229dd6f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: f1ee67c41fde7b380c58d479764e6e212274cf41
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dc36679a9457939bb5fb110219b2ddfbf05c643e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421342"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546413"
 ---
 # <a name="double-thunking-c"></a>Çift Dönüştürme (C++)
 

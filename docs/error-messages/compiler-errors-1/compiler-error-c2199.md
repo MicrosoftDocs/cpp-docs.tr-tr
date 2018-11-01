@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2199 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2199
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2199
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2199
 ms.assetid: 6a92a1b7-7906-49e6-a31f-e8bffbc7706a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 616b155ad0ca22c3eb45fd881a22ff36b5430f81
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e5892a537cbf337b23ff2356583cec4bf5925677
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46083664"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530982"
 ---
 # <a name="compiler-error-c2199"></a>Derleyici Hatası C2199
 

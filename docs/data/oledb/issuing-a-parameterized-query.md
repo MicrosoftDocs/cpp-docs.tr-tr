@@ -1,26 +1,15 @@
 ---
-title: Parametreleştirilmiş sorgu verme | Microsoft Docs
-ms.custom: ''
+title: Parametreleştirilmiş Sorgu Verme
 ms.date: 10/19/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - parameter queries, running using CCommand class
 ms.assetid: aedb0fce-52a4-4c97-a5c9-b2114be6c3b0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 0e6e194f68dee6e78090c17eab08d4b33045b88b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9bf6a9ab1b4849b562637c11fffb578aec11ac34
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064855"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533048"
 ---
 # <a name="issuing-a-parameterized-query"></a>Parametreleştirilmiş Sorgu Verme
 
