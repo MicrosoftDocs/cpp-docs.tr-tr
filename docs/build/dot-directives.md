@@ -1,26 +1,16 @@
 ---
-title: Nokta yönergeleri | Microsoft Docs
-ms.custom: ''
+title: Nokta Yönergeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - NMAKE program, dot directives
 - dot directives in NMAKE
 ms.assetid: ab35da65-30b6-48b7-87d6-61503d7faf9f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f2f4b984bcfe1aa89fd8e0229c7381c0d01f8685
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 18688afedfe076ea2e4485471ffbe92dc2e09a2d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714622"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542876"
 ---
 # <a name="dot-directives"></a>Nokta Yönergeleri
 

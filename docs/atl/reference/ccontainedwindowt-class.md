@@ -1,10 +1,6 @@
 ---
-title: CContainedWindowT sınıfı | Microsoft Docs
-ms.custom: ''
+title: CContainedWindowT sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CContainedWindowT
 - ATLWIN/ATL::CContainedWindowT
@@ -21,23 +17,17 @@ f1_keywords:
 - ATLWIN/ATL::CContainedWindowT::m_lpszClassName
 - ATLWIN/ATL::CContainedWindowT::m_pfnSuperWindowProc
 - ATLWIN/ATL::CContainedWindowT::m_pObject
-dev_langs:
-- C++
 helpviewer_keywords:
 - CContainedWindow class
 - contained windows
 - CContainedWindowT class
 ms.assetid: cde0ca36-9347-4068-995a-d294dae57ca9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fde79b2f96c815144b9cbdef1dcc7623e5a0eb60
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bbc1f7a5ff27fdb18b251b73d5b40e87f637ef21
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065219"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548531"
 ---
 # <a name="ccontainedwindowt-class"></a>CContainedWindowT sınıfı
 

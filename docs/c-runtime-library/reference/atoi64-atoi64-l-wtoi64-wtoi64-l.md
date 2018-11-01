@@ -1,10 +1,6 @@
 ---
-title: _atoi64, _atoi64_l, _wtoi64, _wtoi64_l | Microsoft Docs
-ms.custom: ''
+title: _atoi64, _atoi64_l, _wtoi64, _wtoi64_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _atoi64_l
 - _wtoi64
@@ -35,8 +31,6 @@ f1_keywords:
 - wtoi64_l
 - _atoi64_l
 - atoi64_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - tstoi64 function
 - wtoi64 function
@@ -52,16 +46,12 @@ helpviewer_keywords:
 - _wtoi64 function
 - _atoi64 function
 ms.assetid: 2c3e30fd-545d-4222-8364-0c5905df9526
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fbb0f49edcba73bdf2b7e83d6495573cc2cc0567
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c80480be8895db6afe499d5426b91dcde786d654
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396683"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50515488"
 ---
 # <a name="atoi64-atoi64l-wtoi64-wtoi64l"></a>_atoi64, _atoi64_l, _wtoi64, _wtoi64_l
 
@@ -89,34 +79,34 @@ __int64 _wtoi64_l(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Dönüştürülecek dizesi.
+Dönüştürülecek dize.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her işlevi döndürür **__int64** değeri bir sayı olarak giriş karakter yorumlama tarafından üretilen. Dönüş değeri için 0'dır **_atoi64** giriş türü değerine döndürülemezse.
+Her işlev **__int64** değeri, giriş karakterlerinin sayı olarak yorumlanmasıyla üretilen. Dönüş değeri için 0'dır **_atoi64** giriş türü değerine döndürülemezse.
 
-Taşma büyük pozitif tamsayı değer ile söz konusu olduğunda **_atoi64** döndürür **I64_MAX** ve **I64_MIN** taşma negatif büyük tam sayı değerleri ile söz konusu olduğunda.
+Büyük pozitif tamsayı değerleri içeren taşma durumunda **_atoi64** döndürür **I64_MAX** ve **I64_MIN** büyük negatif tam sayı değerleri içeren taşma durumunda.
 
-Tüm aralık dışı durumlarda **errno** ayarlanır **ERANGE**. Geçirilen parametre ise **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve 0 döndürür.
+Tüm aralık dışı durumlarda **errno** ayarlanır **ERANGE**. Parametre geçirilen ise **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ve 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin bir karakter dizesi 64-bit tamsayı değerine dönüştürür.
+Bu işlevler bir karakter dizesini bir 64-bit tamsayı değerine dönüştürür.
 
-Giriş dizesi belirtilen türde bir sayısal değer yorumlanan karakterden oluşan bir dizidir. İşlevi, giriş dizesi bir sayı bir parçası olarak tanıyamıyor ilk karakterinde okuma durdurur. Bu karakteri ('\0' veya '\0' L) null karakter olabilir dize sonlandırılıyor.
+Giriş dizesi belirtilen türde bir sayısal değer olarak yorumlanabilecek bir karakter dizisi ' dir. İşlev bir sayının parçası olarak tanıyamadığı ilk karakterde giriş dizesini okumayı durdurur. Bu karakteri null karakteri ('\0' veya '\0' L) olabilir. dize sonlandırılıyor.
 
 *Str* bağımsız değişkeni **_atoi64** aşağıdaki biçime sahiptir:
 
 > [*boşluk*] [*oturum*] [*basamak*]
 
-A *boşluk* , göz ardı edilir; boşluk veya sekmesinde karakterlerden oluşur *oturum* da artı (+) veya eksi (-); ve *basamak* bir veya daha fazla basamakların.
+A *boşluk* yoksayılan boşluk veya sekme karakterlerinden oluşur *oturum* ya da artı (+) veya eksidir (–); ve *basamak* bir veya daha fazla rakamdır.
 
-**_wtoi64** aynıdır **_atoi64** dışında geniş karakter dizesi bir parametre olarak alır.
+**_wtoi64** aynıdır **_atoi64** dışında parametre olarak geniş karakter dizesi alır.
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli yerel yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -127,14 +117,14 @@ Bu işlevleri sürümlerini **_l** soneki, geçerli yerel yerine geçirilen yere
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordamları|Gerekli başlık|
+|Rutinleri|Gerekli başlık|
 |--------------|---------------------|
 |**_atoi64**, **_atoi64_l**|\<stdlib.h >|
 |**_wtoi64**, **_wtoi64_l**|\<stdlib.h > veya \<wchar.h >|
 
 ## <a name="example"></a>Örnek
 
-Bu program, dize olarak depolanan sayılar kullanarak sayısal değerleri nasıl dönüştürülebilir gösterir **_atoi64** işlevleri.
+Bu program, dizeler olarak saklanan numaralarını kullanarak sayısal değerleri nasıl dönüştürülebilir gösterir **_atoi64** işlevleri.
 
 ```C
 // crt_atoi64.c

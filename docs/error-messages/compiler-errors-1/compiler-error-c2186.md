@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2186 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2186
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2186
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2186
 ms.assetid: 284bfb7e-ab85-4fcb-9864-1ddf7f6c94ae
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c35e0f2616304508cc55eed280a95ff7efe9dc41
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 191b7109640fd253b24d00d86021d909891a4f95
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46115833"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523067"
 ---
 # <a name="compiler-error-c2186"></a>Derleyici Hatası C2186
 

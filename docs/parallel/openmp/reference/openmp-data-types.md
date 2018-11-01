@@ -1,31 +1,21 @@
 ---
-title: OpenMP veri türleri | Microsoft Docs
-ms.custom: ''
+title: OpenMP veri türleri
 ms.date: 10/23/2018
-ms.technology:
-- cpp-parallel
-ms.topic: reference
 f1_keywords:
 - OpenMP data types
 - omp_lock_t
 - omp_nest_lock_t
-dev_langs:
-- C++
 helpviewer_keywords:
 - OpenMP data types
 - omp_lock_t OpenMP data type
 - omp_nest_lock_t OpenMP data type
 ms.assetid: cf1e1045-4d12-4d03-80b7-d5843b80ef85
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 97cf6ccad0a3b30c0abfa0076ea9c6a30b205d67
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bacb48194015f8fd6c80a9868af06702deceab6f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065206"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533776"
 ---
 # <a name="openmp-data-types"></a>OpenMP veri türleri
 

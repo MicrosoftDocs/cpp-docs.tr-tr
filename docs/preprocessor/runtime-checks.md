@@ -1,29 +1,19 @@
 ---
-title: runtime_checks | Microsoft Docs
-ms.custom: ''
+title: runtime_checks
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.runtime_checks
 - runtime_checks_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - runtime_checks pragma
 - pragmas, runtime_checks
 ms.assetid: ae50b43f-f88d-47ad-a2db-3389e9e7df5b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 72dadf249149309b58031ad99ad28941a3f88d59
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 38df7ccc384830bb547c11e1a3d5458a1298574c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073831"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547374"
 ---
 # <a name="runtimechecks"></a>runtime_checks
 Devre dışı bırakır veya geri yükler [/RTC](../build/reference/rtc-run-time-error-checks.md) ayarları.

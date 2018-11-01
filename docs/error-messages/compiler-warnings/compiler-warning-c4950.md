@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı C4950 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı C4950
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4950
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4950
 ms.assetid: 50226a5c-c664-4d09-ac59-e9e874ca244f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 750295da5d2da42ae4c2aac4fbb04dd208a7f32c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 784179af68ff55ba70c61255c88688105ecb1738
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46072218"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494568"
 ---
 # <a name="compiler-warning-c4950"></a>Derleyici Uyarısı C4950
 

@@ -1,24 +1,13 @@
 ---
-title: Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki | Microsoft Docs
-ms.custom: ''
+title: Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f005beb9bc71724c289322822a3bae4c03f19d48
-ms.sourcegitcommit: 072e12d6b7a242765bdcc9afe4a14a284ade01fc
+ms.openlocfilehash: 7066b5bd8ea0fcd7cc7cda34ca05588199cbaef5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50136256"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499625"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ ne&#39;s yeni 2003 ile 2015 arasındaki
 

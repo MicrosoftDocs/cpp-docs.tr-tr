@@ -1,10 +1,6 @@
 ---
-title: Cmfcfontınfo sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cmfcfontınfo sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCFontInfo
 - AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo
@@ -14,8 +10,6 @@ f1_keywords:
 - AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nType
 - AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strName
 - AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strScript
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCFontInfo [MFC], GetFullName
 - CMFCFontInfo [MFC], m_nCharSet
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - CMFCFontInfo [MFC], m_strName
 - CMFCFontInfo [MFC], m_strScript
 ms.assetid: f88329b2-d74e-4921-9441-a3bb6536a049
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 128c731c4496f26d678a2e24da6fd35652469e99
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 606d70176e93de6f5526c30f182cee6f8c05499f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376091"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522375"
 ---
 # <a name="cmfcfontinfo-class"></a>Cmfcfontınfo sınıfı
 

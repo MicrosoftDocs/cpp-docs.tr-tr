@@ -1,12 +1,6 @@
 ---
-title: Çerçeve pencere stilleri (C++) | Microsoft Docs
-ms.custom: ''
+title: Çerçeve Pencere Stilleri (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - window styles [MFC]
 - PreCreateWindow method, setting window styles
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - MFC, frame windows
 - styles [MFC], windows
 ms.assetid: fc5058c1-eec8-48d8-9f76-3fc01cfa53f7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7f0e4bde874fc563535b661108cb68edefd8d977
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 01eb593e6a7c896b3c6e4acf9f753b73a346e3e7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385020"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50510753"
 ---
 # <a name="frame-window-styles-c"></a>Çerçeve Pencere Stilleri (C++)
 

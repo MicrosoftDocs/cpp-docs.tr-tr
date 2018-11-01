@@ -1,28 +1,18 @@
 ---
-title: DCOMCNFG | Microsoft Docs
-ms.custom: ''
+title: DCOMCNFG
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
 f1_keywords:
 - DCOMCNFG
-dev_langs:
-- C++
 helpviewer_keywords:
 - DCOMCNFG utility
 - DCOM, configuring in ATL
 ms.assetid: 5a8126e9-ef27-40fb-a66e-9dce8d1a7e80
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 46a395759322651aee75541ff0b121b608b9e74d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8bf85c32093051b124d007a04eed2bbf10a56039
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765284"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552652"
 ---
 # <a name="dcomcnfg"></a>DCOMCNFG
 

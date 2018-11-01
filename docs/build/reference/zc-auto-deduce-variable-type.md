@@ -1,30 +1,20 @@
 ---
-title: '-Zc: auto (değişken türünü türet) | Microsoft Docs'
-ms.custom: ''
+title: /Zc:auto (Değişken Türünü Türet)
 ms.date: 02/28/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /Zc:auto
-dev_langs:
-- C++
 helpviewer_keywords:
 - -Zc compiler options (C++)
 - Deduce variable type (C++)
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 5f5bc102-44c3-4688-bbe1-080594dcee5c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09bb29b1baa6208f4b7473d8cbbc9a3abbe38e70
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 03bbe3d9da0530d4fe3c540d46d1a597fbe9dd2b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709609"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549311"
 ---
 # <a name="zcauto-deduce-variable-type"></a>/Zc:auto (Değişken Türünü Türet)
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3065 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3065
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3065
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3065
 ms.assetid: e7a0bc69-1c68-459e-a7c4-93c65609ff7c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 35867da62dad9e399e4b4672f84478e4ea9688a5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e12f6e318d51ecaccc7c29e1e01d1aedcaac937e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46104941"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526570"
 ---
 # <a name="compiler-error-c3065"></a>Derleyici Hatası C3065
 

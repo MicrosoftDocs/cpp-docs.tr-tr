@@ -1,39 +1,29 @@
 ---
-title: is_bind_expression sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_bind_expression Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - functional/std::is_bind_expression
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_bind_expression class
 ms.assetid: 0715f9e9-2239-4778-a1cf-2c21f49dfd47
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 38cf4c4e9e92704e1f6ce635f2a429b4dc9bfcbb
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f547b6f74a86612174cb0f510870171158678f7a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842168"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519424"
 ---
 # <a name="isbindexpression-class"></a>is_bind_expression Sınıfı
 
-Türü çağırarak oluşturursa testleri `bind`.
+Tür çağrılarak oluşturulan olmadığını test eder `bind`.
 
 ## <a name="syntax"></a>Sözdizimi
 
-Şablon<class Ty> yapısı is_bind_expression {statik const bool değeri;};
+Şablon<class Ty> yapı is_bind_expression {statik const bool değeri;};
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sabit üye `value` true ise türü `Ty` yapılan bir çağrı tarafından döndürülen bir türü `bind`, aksi takdirde false.
+Sabit üye `value` true ise tür `Ty` bir çağrı tarafından döndürülen bir türü `bind`, aksi durumda false.
 
 ## <a name="example"></a>Örnek
 
@@ -70,10 +60,10 @@ int main()
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlama](../standard-library/functional-functions.md#bind)<br/>
+[bağlama](../standard-library/functional-functions.md#bind)<br/>

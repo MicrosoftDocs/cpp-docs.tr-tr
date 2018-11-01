@@ -1,10 +1,6 @@
 ---
-title: COlePasteSpecialDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: COlePasteSpecialDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COlePasteSpecialDialog
 - AFXODLGS/COlePasteSpecialDialog
@@ -19,8 +15,6 @@ f1_keywords:
 - AFXODLGS/COlePasteSpecialDialog::GetPasteIndex
 - AFXODLGS/COlePasteSpecialDialog::GetSelectionType
 - AFXODLGS/COlePasteSpecialDialog::m_ps
-dev_langs:
-- C++
 helpviewer_keywords:
 - COlePasteSpecialDialog [MFC], COlePasteSpecialDialog
 - COlePasteSpecialDialog [MFC], AddFormat
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - COlePasteSpecialDialog [MFC], GetSelectionType
 - COlePasteSpecialDialog [MFC], m_ps
 ms.assetid: 0e82ef9a-9bbe-457e-8240-42c86a0534f7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aad3a019b3c81b4edc890daafdff232a522ed4e2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 247514c37ef62987baa31be83efc73e05735904a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074351"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530032"
 ---
 # <a name="colepastespecialdialog-class"></a>COlePasteSpecialDialog sınıfı
 

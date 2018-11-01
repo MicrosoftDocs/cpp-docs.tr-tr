@@ -1,10 +1,6 @@
 ---
-title: Hata ayıklama ve hata raporlama makroları | Microsoft Docs
-ms.custom: ''
+title: Hata ayıklama ve hata raporlama makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atldef/ATL::_ATL_DEBUG_INTERFACES
 - atldef/ATL::_ATL_DEBUG_QI
@@ -12,21 +8,15 @@ f1_keywords:
 - afx/ATL::ATLENSURE
 - atltrace/ATL::ATLTRACENOTIMPL
 - atltrace/ATL::ATLTRACE
-dev_langs:
-- C++
 helpviewer_keywords:
 - macros, error reporting
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c7100199d7e4ee76bf2f096aba9e20c244ae10ab
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5de597484db727646b80bd522f11465f442393fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070575"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522313"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>Hata ayıklama ve hata raporlama makroları
 

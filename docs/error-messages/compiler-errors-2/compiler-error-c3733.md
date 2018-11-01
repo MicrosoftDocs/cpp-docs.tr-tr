@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3733 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3733
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3733
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3733
 ms.assetid: 0cc1a9fe-1400-4be3-b35a-16435cba7a5a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8b8aa8d3d952f84b9fee0c00b5cfcb7c5e5c45d9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 006f87691c6e0839115e2c02ab0d922aa95eaa93
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46051314"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501653"
 ---
 # <a name="compiler-error-c3733"></a>Derleyici Hatası C3733
 

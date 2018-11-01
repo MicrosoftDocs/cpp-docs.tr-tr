@@ -1,10 +1,6 @@
 ---
-title: Veritabanı öznitelikleriyle veri erişimini basitleştirme | Microsoft Docs
-ms.custom: ''
+title: Veritabanı Öznitelikleriyle Veri Erişimini Basitleştirme
 ms.date: 10/19/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - vc-attr.db_param
 - vc-attr.db_column
@@ -12,8 +8,6 @@ f1_keywords:
 - vc-attr.db_command
 - vc-attr.db_table
 - vc-attr.db_source
-dev_langs:
-- C++
 helpviewer_keywords:
 - attributes [C++], database
 - attributes [C++], data access
@@ -24,17 +18,12 @@ helpviewer_keywords:
 - OLE DB consumers [C++], database attributes
 - attributes [C++], OLE DB consumer
 ms.assetid: 560d2456-e307-4cb7-ba7b-4d0ed674697f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 2d5e141b71f5d78441438b825897868cd153b905
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f31617959222e7abd3487263e32c5566fb9fb2ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079408"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534849"
 ---
 # <a name="simplifying-data-access-with-database-attributes"></a>Veritabanı Öznitelikleriyle Veri Erişimini Basitleştirme
 

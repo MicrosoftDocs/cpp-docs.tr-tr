@@ -1,10 +1,6 @@
 ---
-title: Idispeventımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Idispeventımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IDispEventImpl
 - ATLCOM/ATL::IDispEventImpl
@@ -14,21 +10,15 @@ f1_keywords:
 - ATLCOM/ATL::IDispEventImpl::GetTypeInfo
 - ATLCOM/ATL::IDispEventImpl::GetTypeInfoCount
 - ATLCOM/ATL::IDispEventImpl::GetUserDefinedType
-dev_langs:
-- C++
 helpviewer_keywords:
 - IDispEventImpl class
 ms.assetid: a64b5288-35cb-4638-aad6-2d15b1c7cf7b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2419b4da0cad2662a246c167938d673429afbf26
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a07cf577ec6be2c6d2d895a85f49f44318596ded
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060904"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50497473"
 ---
 # <a name="idispeventimpl-class"></a>Idispeventımpl sınıfı
 

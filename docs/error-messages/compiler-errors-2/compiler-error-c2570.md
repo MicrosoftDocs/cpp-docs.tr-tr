@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2570 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2570
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2570
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2570
 ms.assetid: d65d0b32-2fac-464a-bcdf-0ebcedf3bf32
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9f5914af21ec780167c45334829a5d6517cf3662
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 447869b029df41219f71dcc633e9ae8a3934e0ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052991"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549584"
 ---
 # <a name="compiler-error-c2570"></a>Derleyici Hatası C2570
 

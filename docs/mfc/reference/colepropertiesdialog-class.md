@@ -1,10 +1,6 @@
 ---
-title: COlePropertiesDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: COlePropertiesDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COlePropertiesDialog
 - AFXODLGS/COlePropertiesDialog
@@ -16,8 +12,6 @@ f1_keywords:
 - AFXODLGS/COlePropertiesDialog::m_op
 - AFXODLGS/COlePropertiesDialog::m_psh
 - AFXODLGS/COlePropertiesDialog::m_vp
-dev_langs:
-- C++
 helpviewer_keywords:
 - COlePropertiesDialog [MFC], COlePropertiesDialog
 - COlePropertiesDialog [MFC], DoModal
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - COlePropertiesDialog [MFC], m_psh
 - COlePropertiesDialog [MFC], m_vp
 ms.assetid: a54dbc89-1447-4329-bd01-00e98ec9e935
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0bd1e6953d936106f272aa8bef4243728d742d8c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e40483781427e3135d89a9339a34f606d45db77c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078199"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547361"
 ---
 # <a name="colepropertiesdialog-class"></a>COlePropertiesDialog sınıfı
 

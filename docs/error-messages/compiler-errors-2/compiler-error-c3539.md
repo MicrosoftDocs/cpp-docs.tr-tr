@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3539 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3539
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3539
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3539
 ms.assetid: 34a33a0f-d1b6-498f-b312-ffad2d4799b3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4b2f78b69e00290dcc283e3fc340d25a4a071776
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7cba9e0271d16420c5cfe4adbed2c7121d139d8f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091887"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523931"
 ---
 # <a name="compiler-error-c3539"></a>Derleyici Hatası C3539
 

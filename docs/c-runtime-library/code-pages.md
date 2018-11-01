@@ -1,14 +1,8 @@
 ---
-title: Kod sayfaları | Microsoft Docs
-ms.custom: ''
+title: Kod Sayfaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.international
-dev_langs:
-- C++
 helpviewer_keywords:
 - character sets [C++], code pages
 - ANSI [C++], code pages
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - code pages [C++], types of
 - locale code pages [C++]
 ms.assetid: 4a26fc42-185a-4add-98bf-a7b314ae6186
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6eafdf3a140dd8a5976cf2fe8554b3b076111b74
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 707aec51b0a244fe305205b9b098f3f67a90de1b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060513"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50521071"
 ---
 # <a name="code-pages"></a>Kod Sayfaları
 

@@ -1,10 +1,6 @@
 ---
-title: _CrtGetAllocHook | Microsoft Docs
-ms.custom: ''
+title: _CrtGetAllocHook
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtGetAllocHook
 apilocation:
@@ -22,26 +18,20 @@ apitype: DLLExport
 f1_keywords:
 - CrtGetAllocHook
 - _CrtGetAllocHook
-dev_langs:
-- C++
 helpviewer_keywords:
 - _CrtGetAllocHook function
 - CrtGetAllocHook function
 ms.assetid: 036acf7c-547a-4b3f-a636-80451070d7ed
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fb811353d0ac252411cc5bfc8beb408b6e707089
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b49c4cfc820a925187d0ea4d1562965295bea817
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394528"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514965"
 ---
 # <a name="crtgetallochook"></a>_CrtGetAllocHook
 
-C çalışma zamanı hata ayıklama bellek ayırma işlemine (yalnızca hata ayıklama sürümü) takma için geçerli istemci tarafından tanımlanan ayırma işlevi alır.
+C çalışma zamanı hata ayıklama bellek ayırma işlemine (yalnızca hata ayıklama sürümü) takma için geçerli istemci tanımlı ayırma işlevi alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,11 +41,11 @@ _CRT_ALLOC_HOOK _CrtGetAllocHook( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Şu anda tanımlanmış ayırma kanca işlevi döndürür.
+Şu anda tanımlı ayırma kanca işlevini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtGetAllocHook** C çalışma zamanı hata ayıklama kitaplığı bellek ayırma işlemi için geçerli istemci tarafından tanımlanan uygulama kanca işlevini alır.
+**_CrtGetAllocHook** C çalışma zamanı hata ayıklama kitaplığı bellek ayırma işlemi için geçerli uygulama istemci tanımlı kanca işlevini alır.
 
 Kanca özellikli diğer çalışma zamanı işlevleri ve kendi istemci tarafından tanımlanan yazma hakkında daha fazla bilgi için kanca işlevleri, bkz: [hata ayıklama kanca işlevi yazma](/visualstudio/debugger/debug-hook-function-writing).
 
@@ -65,7 +55,7 @@ Kanca özellikli diğer çalışma zamanı işlevleri ve kendi istemci tarafınd
 |-------------|---------------------|
 |**_CrtGetAllocHook**|\<crtdbg.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

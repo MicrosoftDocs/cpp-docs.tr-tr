@@ -1,29 +1,19 @@
 ---
-title: değişmez değer (C + +/ CLI ve C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: değişmez değer (C + +/ CLI ve C + +/ CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - literal
 - literal_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - literal keyword [C++]
 ms.assetid: 6b1a1f36-2e1d-4a23-8eb6-172f4f3c477f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 626f05dff87bcff2d10d0726bcc10dfa767117d5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d58df1bb6a6ec1e53ee434cf60a8caf3d557eeb2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069930"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50521056"
 ---
 # <a name="literal-ccli-and-ccx"></a>değişmez değer (C + +/ CLI ve C + +/ CX)
 

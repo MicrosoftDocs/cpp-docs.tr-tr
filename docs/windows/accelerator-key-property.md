@@ -1,26 +1,15 @@
 ---
-title: Hızlandırıcı tuşu özelliği (C++) | Microsoft Docs
-ms.custom: ''
+title: Hızlandırıcı tuşu özelliği (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Key property
 ms.assetid: d1570cd9-b414-4cd6-96bd-47c38281eaca
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: e0594e5b9e2d092330664546cbd05ccfb0060c42
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0649917900610b8a45c59de05c031ca36d6fcc91
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428973"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50529187"
 ---
 # <a name="accelerator-key-property-c"></a>Hızlandırıcı tuşu özelliği (C++)
 

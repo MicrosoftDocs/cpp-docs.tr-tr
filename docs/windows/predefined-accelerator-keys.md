@@ -1,30 +1,19 @@
 ---
-title: Önceden tanımlanmış Hızlandırıcı tuşları (C++) | Microsoft Docs
-ms.custom: ''
+title: Önceden tanımlanmış Hızlandırıcı tuşları (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.accelerator
-dev_langs:
-- C++
 helpviewer_keywords:
 - accelerator keys
 - keyboard shortcuts
 - keyboard shortcuts [C++], predefined
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 70392d5654c5ed550e61bccf460d641bd4995349
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9ee884123bfe440e2246b6313ba1e37c0b01b494
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46430611"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541628"
 ---
 # <a name="predefined-accelerator-keys-c"></a>Önceden tanımlanmış Hızlandırıcı tuşları (C++)
 

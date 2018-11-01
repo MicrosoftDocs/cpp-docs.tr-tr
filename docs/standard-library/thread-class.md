@@ -1,10 +1,6 @@
 ---
-title: thread sınıfı | Microsoft Docs
-ms.custom: ''
+title: thread Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - thread/std::thread
 - thread/std::thread::id Class
@@ -16,11 +12,7 @@ f1_keywords:
 - thread/std::thread::joinable
 - thread/std::thread::native_handle
 - thread/std::thread::swap
-dev_langs:
-- C++
 ms.assetid: df249bc7-ff81-4ff9-a6d6-5e3d9a8f56a1
-author: corob-msft
-ms.author: corob
 helpviewer_keywords:
 - std::thread [C++]
 - std::thread [C++], thread
@@ -31,14 +23,12 @@ helpviewer_keywords:
 - std::thread [C++], joinable
 - std::thread [C++], native_handle
 - std::thread [C++], swap
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f0606258ada9a3b4298bdb9710f3c3021e793b8e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d1405062ef553dbfea3b60b5f39e0546707343b6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706894"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519502"
 ---
 # <a name="thread-class"></a>thread Sınıfı
 

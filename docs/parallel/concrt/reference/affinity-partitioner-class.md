@@ -1,29 +1,19 @@
 ---
-title: affinity_partitioner sınıfı | Microsoft Docs
-ms.custom: ''
+title: affinity_partitioner Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - affinity_partitioner
 - PPL/concurrency::affinity_partitioner
 - PPL/concurrency::affinity_partitioner::affinity_partitioner
-dev_langs:
-- C++
 helpviewer_keywords:
 - affinity_partitioner class
 ms.assetid: 31bf7bb1-bd01-491c-9760-d9d60edfccad
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9b1254b316a52bd3e61b3cafd81ba2e89ee88b62
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 41073aceec5f9b8c3a5ac36a921e29c5270f44e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444651"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499079"
 ---
 # <a name="affinitypartitioner-class"></a>affinity_partitioner Sınıfı
 

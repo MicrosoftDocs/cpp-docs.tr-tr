@@ -1,28 +1,18 @@
 ---
-title: CStatusBarCtrl kullanarak CStatusBarCtrl nesnesi oluşturma | Microsoft Docs
-ms.custom: ''
+title: CStatusBarCtrl Kullanarak CStatusBarCtrl Nesnesi Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CStatusBarCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - status bar controls [MFC], creating
 - CStatusBarCtrl class [MFC], creating
 ms.assetid: 365c2b65-12de-49e6-9a2e-416c6ee10d60
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3c68603eff0393d76af4e0617548e5bf1dd4aa63
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 05baf212f53956095af89377c0877db79b6e25ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413698"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552769"
 ---
 # <a name="using-cstatusbarctrl-to-create-a-cstatusbarctrl-object"></a>CStatusBarCtrl Kullanarak CStatusBarCtrl Nesnesi Oluşturma
 

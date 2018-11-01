@@ -1,12 +1,6 @@
 ---
-title: 'Bellek Yönetimi: Örnekler | Microsoft Docs'
-ms.custom: ''
+title: 'Bellek Yönetimi: Örnekler'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - objects [MFC], memory allocation
 - data structures [MFC]
@@ -25,16 +19,12 @@ helpviewer_keywords:
 - frame allocation [MFC]
 - memory allocation [MFC], data structures
 ms.assetid: f10240f8-b698-4c83-9288-97a54318930b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 05e2a39f94eeefa264a9e93623f4ff7c6b2f2e91
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a236dbda9baca7bf7e165edf63a61ffb6eb92a2d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080462"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548128"
 ---
 # <a name="memory-management-examples"></a>Bellek Yönetimi: Örnekler
 

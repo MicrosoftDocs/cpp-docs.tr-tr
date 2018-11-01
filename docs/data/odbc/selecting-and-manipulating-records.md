@@ -1,28 +1,17 @@
 ---
-title: Kayıtları seçme ve düzenleme | Microsoft Docs
-ms.custom: ''
+title: Kayıtları Seçme ve Düzenleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - records, selecting
 - record selection, MFC ODBC classes
 - ODBC recordsets, selecting records
 ms.assetid: 7f0b3a4a-9941-4475-a612-9ec8d15b7691
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 8cfbeaa1fac2fd9df707dfa9c16ec168d48fc215
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d038a0f9d2e7ba1f0e6bcf925eadc2173339b9b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078355"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550806"
 ---
 # <a name="selecting-and-manipulating-records"></a>Kayıtları Seçme ve Düzenleme
 

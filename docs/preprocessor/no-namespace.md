@@ -1,27 +1,17 @@
 ---
-title: no_namespace | Microsoft Docs
-ms.custom: ''
+title: no_namespace
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - no_namespace
-dev_langs:
-- C++
 helpviewer_keywords:
 - no_namespace attribute
 ms.assetid: 5d81b741-a558-451b-b493-1f3b18967337
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e84cfad5a11c0d691c56e6e7ddcca17ea87e3f02
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b17bf5fb5f44d5453de29febe001f9e8737102b5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082930"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540445"
 ---
 # <a name="nonamespace"></a>no_namespace
 **C++ özgü**

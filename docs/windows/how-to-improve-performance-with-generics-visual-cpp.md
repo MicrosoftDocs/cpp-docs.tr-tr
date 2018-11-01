@@ -1,29 +1,19 @@
 ---
-title: 'Nasıl yapılır: türlerle performansı artırma (C + +/ CLI) | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: türlerle performansı artırma (C + +/ CLI)'
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - performance, C++
 - C++, performance
 - C++, generics
 - generics [C++], performance
 ms.assetid: f14a175b-301f-46cc-86e4-c82d35f9aa3e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 18228ab8f855f926e4600d6579baa2999f02f7e9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 61d858542505b0e37b03e13cca803df10ffbdddc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061741"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50527965"
 ---
 # <a name="how-to-improve-performance-with-generics-ccli"></a>Nasıl yapılır: türlerle performansı artırma (C + +/ CLI)
 

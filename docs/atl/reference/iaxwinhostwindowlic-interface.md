@@ -1,30 +1,20 @@
 ---
-title: Iaxwinhostwindowlic arabirimi | Microsoft Docs
-ms.custom: ''
+title: Iaxwinhostwindowlic arabirimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IAxWinHostWindowLic
 - ATLIFACE/ATL::IAxWinHostWindowLic
 - ATLIFACE/ATL::CreateControlLic
 - ATLIFACE/ATL::CreateControlLicEx
-dev_langs:
-- C++
 helpviewer_keywords:
 - IAxWinHostWindowLic interface
 ms.assetid: 750f1520-6bce-428c-aca0-fccbe3f063c7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8c6b2537f4a4c7ba92a87bfeff2765c3c5e1b274
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 791f0e4387a54448ffcf6573cf716c5ba122bcaa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46088715"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511312"
 ---
 # <a name="iaxwinhostwindowlic-interface"></a>Iaxwinhostwindowlic arabirimi
 

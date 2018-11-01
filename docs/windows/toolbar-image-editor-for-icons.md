@@ -1,15 +1,9 @@
 ---
-title: Araç çubuğu (simgeler için görüntü Düzenleyicisi C++) | Microsoft Docs
-ms.custom: ''
+title: Araç çubuğu (simgeler için görüntü Düzenleyicisi C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.bitmap
 - vc.editors.icon
-dev_langs:
-- C++
 helpviewer_keywords:
 - Graphics toolbar
 - Image editor [C++], toolbar
@@ -17,17 +11,12 @@ helpviewer_keywords:
 - Properties window
 - Option selector, Image editor
 ms.assetid: a0af4209-6273-4106-a7c1-0edecc9b5755
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: ed6639bdf86a54689834c6eda03a3b6ec4dd171d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f4995ead65dd6f794093643e53d8d8fb15e62adb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063854"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50521106"
 ---
 # <a name="toolbar-c-image-editor-for-icons"></a>Araç çubuğu (simgeler için görüntü Düzenleyicisi C++)
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2051 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2051
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2051
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2051
 ms.assetid: 81c0469a-78e2-49fa-bd76-97cdb135e3ea
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 034c4953669b2d1a196649cc7b8886a9629d9ca4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e6b0d95628a1b4e7f9707202d57d29b906b1b96d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031008"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532715"
 ---
 # <a name="compiler-error-c2051"></a>Derleyici Hatası C2051
 

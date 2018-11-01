@@ -1,29 +1,19 @@
 ---
-title: THIS işleci | Microsoft Docs
-ms.custom: ''
+title: THIS işleci
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - this
 - operator THIS
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator THIS
 - THIS operator
 ms.assetid: d795aa0e-6c01-49b7-8c64-8ab111fd82d3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ae20d8f2abc7740d1716155f626c6a69316ca3fd
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: cfc53da4a2a8285d439d0c6c570c180ca6773df3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692579"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536828"
 ---
 # <a name="operator-this"></a>THIS işleci
 

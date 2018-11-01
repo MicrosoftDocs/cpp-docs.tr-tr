@@ -1,10 +1,6 @@
 ---
-title: _set_SSE2_enable | Microsoft Docs
-ms.custom: ''
+title: _set_SSE2_enable
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _set_SSE2_enable
 apilocation:
@@ -23,27 +19,21 @@ apitype: DLLExport
 f1_keywords:
 - _set_SSE2_enable
 - set_SSE2_enable
-dev_langs:
-- C++
 helpviewer_keywords:
 - _set_SSE2_enable function
 - Streaming SIMD Extensions 2 instructions
 - set_SSE2_enable function
 ms.assetid: 55db895d-fc1e-475a-9110-b781a9bb51c5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45f4ed5333dd8ae6bab6291233391884e4efc7ff
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c340423e93b6487a4a951e4b96055cba6e474269
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407857"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539340"
 ---
 # <a name="setsse2enable"></a>_set_SSE2_enable
 
-Etkinleştirir veya CRT matematik yordamları Streaming SIMD Extensions 2 (SSE2) yönergeleri kullanımını devre dışı bırakır. (Bu işlev x64 üzerinde kullanılabilir değil mimarileri SSE2 varsayılan olarak etkin olduğundan.)
+Etkinleştirir ya da CRT matematik yordamlarını Streaming SIMD Extensions 2 (SSE2) yönergeleri kullanımını devre dışı bırakır. (Bu işlev üzerinde x64 kullanılamıyor mimarileri SSE2 varsayılan olarak etkin olduğundan.)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,15 +46,15 @@ int _set_SSE2_enable(
 ### <a name="parameters"></a>Parametreler
 
 *Bayrağı*<br/>
-SSE2 uygulama etkinleştirmek için 1; SSE2 uygulama devre dışı bırakmak için 0'ı tıklatın. Varsayılan olarak, SSE2 uygulama destekleyen işlemcileri üzerinde etkin.
+SSE2 uygulamasını etkinleştirmek için 1; SSE2 uygulama devre dışı bırakmak için 0'ı tıklatın. Varsayılan olarak, bunu destekleyen işlemcilerde SSE2 uygulama etkinleştirilir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-SSE2 uygulama etkinse, sıfır olmayan; sıfır SSE2 uygulama devre dışı bırakılır.
+SSE2 uygulama etkin olursa sıfır dışı; sıfır SSE2 uygulama devre dışı bırakıldı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki işlevleri kullanarak etkinleştirilebilir SSE2 uygulamaları olan **_set_SSE2_enable**:
+Şu işlevleri kullanarak etkinleştirilebilir SSE2 uygulamaları sahip **_set_SSE2_enable**:
 
 - [atan](atan-atanf-atanl-atan2-atan2f-atan2l.md)
 
@@ -82,10 +72,10 @@ Aşağıdaki işlevleri kullanarak etkinleştirilebilir SSE2 uygulamaları olan 
 
 - [POW](pow-powf-powl.md)
 
-Bu işlevlerin SSE2 uygulamaları biraz farklı varsayılan uygulamaları daha SSE2 Ara değerleri 64-bit kayan nokta sayıları ancak varsayılan uygulama ara değerleri 80 bit çünkü cevaplamak kayan nokta sayıları.
+Bu işlevlerin SSE2 uygulamaları, SSE2 Ara değerleri 64-bit kayan nokta miktarlar ancak varsayılan uygulama ara değerleri 80 bit olduğundan varsayılan uygulamaları daha biraz farklı yanıtlar vermek kayan nokta miktarlar.
 
 > [!NOTE]
-> Kullanırsanız [/Oi (iç işlevler Oluştur)](../../build/reference/oi-generate-intrinsic-functions.md) Projeyi derlemek için derleyici seçeneği, görünebilir **_set_SSE2_enable** hiçbir etkisi olmaz. **/Oi** derleyici seçeneği derleyici iç bilgileri CRT çağrılarını değiştirmek için kullanma yetkisi verir; Bu davranış etkisini geçersiz kılar **_set_SSE2_enable**. Garanti istiyorsanız **/Oi** geçersiz **_set_SSE2_enable**, kullanın **/Oi-** projenizi derleme için. Kapsıyor diğer derleyici anahtarları kullandığınızda bu iyi bir uygulama da olabilir **/Oi**.
+> Kullanırsanız [(iç işlevler Oluştur) /Oi](../../build/reference/oi-generate-intrinsic-functions.md) Projeyi derlemek için derleyici seçeneği, görünebilir **_set_SSE2_enable** hiçbir etkisi olmaz. **/Oi** derleyici seçeneği derleyici CRT çağrıları değiştirilecek yapı içleri kullanma yetkisi verir; bu davranışı geçersiz kılar etkisini **_set_SSE2_enable**. Bunu garanti etmenin istiyorsanız **/Oi** geçersiz **_set_SSE2_enable**, kullanın **/Oi-** projenizi derlemek için. Yaptığından diğer derleyici anahtarları kullandığınızda da yararlı olabilir **/Oi**.
 
 SSE2 uygulama yalnızca tüm özel durumları maskelenmiş kullanılır. Kullanım [_control87, _controlfp](control87-controlfp-control87-2.md) maskesi özel durumlar.
 
@@ -95,7 +85,7 @@ SSE2 uygulama yalnızca tüm özel durumları maskelenmiş kullanılır. Kullan�
 |-------------|---------------------|
 |**_set_SSE2_enable**|\<Math.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

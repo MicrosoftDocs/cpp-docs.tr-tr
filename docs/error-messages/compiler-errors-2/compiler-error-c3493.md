@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3493 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3493
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3493
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3493
 ms.assetid: 734b4257-12a3-436f-8488-c8c55ec81634
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ad3c46117e77d432af27321165f1e1ab93d2ef3c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ece70a99477b018f6d7a935911f475e4fb4397cc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46045113"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548011"
 ---
 # <a name="compiler-error-c3493"></a>Derleyici Hatası C3493
 

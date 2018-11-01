@@ -1,10 +1,6 @@
 ---
-title: CComVariant sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComVariant sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComVariant
 - ATLCOMCLI/ATL::CComVariant
@@ -19,23 +15,17 @@ f1_keywords:
 - ATLCOMCLI/ATL::CComVariant::ReadFromStream
 - ATLCOMCLI/ATL::CComVariant::SetByRef
 - ATLCOMCLI/ATL::CComVariant::WriteToStream
-dev_langs:
-- C++
 helpviewer_keywords:
 - VARIANT macro
 - CComVariant class
 - VARIANT macro, ATL
 ms.assetid: 4d31149c-d005-44b5-a509-10f84afa2b61
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 89b1dbfe9dcf00582f5f8736a4706a18439b51c6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dd53bdea211610b208516860b29c1b0094f5a4da
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46042552"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523276"
 ---
 # <a name="ccomvariant-class"></a>CComVariant sınıfı
 

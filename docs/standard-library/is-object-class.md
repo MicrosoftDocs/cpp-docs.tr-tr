@@ -1,28 +1,18 @@
 ---
-title: is_object sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_object Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_object
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_object class
 - is_object
 ms.assetid: b452ceea-5676-488f-925b-ab881126c387
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2cea2bfd33e1f777f2c9dfcbb59897ebd72c7633
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 6d408ec03c7ceb626384ec6eabda89738d7020d3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107142"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50490799"
 ---
 # <a name="isobject-class"></a>is_object Sınıfı
 

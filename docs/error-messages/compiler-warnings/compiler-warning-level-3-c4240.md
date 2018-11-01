@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4240 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4240
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4240
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4240
 ms.assetid: a2657cdb-18e1-493f-882b-4e10c0bca71d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d2f3c059e63bcca9bbde9e863cc17c9e240e4f78
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fe5306cc7909138fea0159553b53c2adc6a46dc0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057021"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498247"
 ---
 # <a name="compiler-warning-level-3-c4240"></a>Derleyici Uyarısı (Düzey 3) C4240
 

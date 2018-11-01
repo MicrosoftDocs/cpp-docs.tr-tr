@@ -1,12 +1,6 @@
 ---
-title: Özel üye işlevleri | Microsoft Docs
-ms.custom: ''
+title: Özel üye işlevleri
 ms.date: 12/06/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - special member functions [C++]
 - constructors [C++]
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - move operators [C++]
 - assignment operators [C++]
 ms.assetid: 017d6817-b012-44f0-b153-f3076c251ea7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cdc9ed6f4cae208a7edae412debe0a07870ea06e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3b26628fd18749bd19819fe787888fd3264a79d1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46112089"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535770"
 ---
 # <a name="special-member-functions"></a>Özel üye işlevleri
 

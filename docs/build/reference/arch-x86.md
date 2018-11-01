@@ -1,23 +1,13 @@
 ---
-title: -arch (x86) | Microsoft Docs
-ms.custom: ''
+title: /arch (x86)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: 9dd5a75d-06e4-4674-aade-33228486078d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 819d95883cecb4d219fd11c4ab83e18afa2dbbd4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fb115d564ca24ff29e120e0d8c25e0dbe28024cb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444937"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549714"
 ---
 # <a name="arch-x86"></a>/arch (x86)
 
@@ -86,7 +76,7 @@ r = t + d;     // This should produce the same overall result
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
