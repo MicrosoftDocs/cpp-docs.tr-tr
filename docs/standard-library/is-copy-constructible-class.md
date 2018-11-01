@@ -1,27 +1,17 @@
 ---
-title: is_copy_constructible sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_copy_constructible sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_copy_constructible
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_copy_constructible
 ms.assetid: d8db9d4c-21ed-4884-bead-0b0b562de007
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a73527315b142bd8a650db67c1be29664e11be74
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 4ce6d8b5cca20fe849b880951df96ed3f520e70d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105334"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548869"
 ---
 # <a name="iscopyconstructible-class"></a>is_copy_constructible sınıfı
 

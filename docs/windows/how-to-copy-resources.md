@@ -1,15 +1,9 @@
 ---
-title: 'Nasıl yapılır: kaynakları (C++) kopyalama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: kopyalama kaynaklar (C++)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.resvw.resource.copying
 - vs.resvw.resource.copying
-dev_langs:
-- C++
 helpviewer_keywords:
 - resources [C++], moving between files
 - resources [C++], copying
@@ -18,17 +12,12 @@ helpviewer_keywords:
 - .rc files [C++], copying resources between
 - rc files [C++], copying resources between
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 05f4fbfba70b0c97341749fd7e71064487eef9a3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6baa53f8a047a8a7fc7540234dc0be2e08476d9f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439906"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545105"
 ---
 # <a name="how-to-copy-resources-c"></a>Nasıl yapılır: kopyalama kaynaklar (C++)
 

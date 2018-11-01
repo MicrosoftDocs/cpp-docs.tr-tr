@@ -1,16 +1,10 @@
 ---
-title: 'MFC ActiveX denetimleri: Stok özellik sayfalarını kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'MFC ActiveX Denetimleri: Stok Özellik Sayfalarını Kullanma'
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CLSID_CPicturePropPage
 - CLSID_CColorPropPage
 - CLSID_CFontPropPage
-dev_langs:
-- C++
 helpviewer_keywords:
 - picture stock property pages [MFC]
 - CLSID_CFontPropPage [MFC]
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - CLSID_CPicturePropPage [MFC]
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: 22638d86-ff3e-4124-933e-54b7c2a25968
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dc7957e69821a409d5ad56bd10c222cbe85fbc54
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: f31bf245e35231b6cc62497e7bbc57ff7f0e6af1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204411"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545398"
 ---
 # <a name="mfc-activex-controls-using-stock-property-pages"></a>MFC ActiveX Denetimleri: Stok Özellik Sayfalarını Kullanma
 

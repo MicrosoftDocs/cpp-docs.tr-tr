@@ -1,10 +1,6 @@
 ---
-title: CDCRenderTarget sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDCRenderTarget sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDCRenderTarget
 - AFXRENDERTARGET/CDCRenderTarget
@@ -15,8 +11,6 @@ f1_keywords:
 - AFXRENDERTARGET/CDCRenderTarget::Detach
 - AFXRENDERTARGET/CDCRenderTarget::GetDCRenderTarget
 - AFXRENDERTARGET/CDCRenderTarget::m_pDCRenderTarget
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDCRenderTarget [MFC], CDCRenderTarget
 - CDCRenderTarget [MFC], Attach
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - CDCRenderTarget [MFC], GetDCRenderTarget
 - CDCRenderTarget [MFC], m_pDCRenderTarget
 ms.assetid: aa8059c9-08e6-49e4-9b8c-00fa54077a61
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fc5903f50136aaffcb0358e1a60c99a71e67540e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e172d175bba5b4c379f7cd29451d7ad4215d9c68
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46447134"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541719"
 ---
 # <a name="cdcrendertarget-class"></a>CDCRenderTarget sınıfı
 

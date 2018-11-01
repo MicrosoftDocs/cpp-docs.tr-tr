@@ -1,14 +1,8 @@
 ---
-title: DHTML olay eşlemeleri | Microsoft Docs
-ms.custom: ''
+title: DHTML Olay Eşlemeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.macros.shared
-dev_langs:
-- C++
 helpviewer_keywords:
 - event map macros [MFC]
 - DHTML [MFC], event map macros
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - DHTML events [MFC], event map
 - DHTML events [MFC]
 ms.assetid: 9a2c8ae7-7216-4a5e-bc60-6b98695be0c6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 777180468ec377b50ee0affaa29bd04a302bda52
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 329b4176ad4d24651a41b5321c26318cf2af30e8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057926"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547205"
 ---
 # <a name="dhtml-event-maps"></a>DHTML Olay Eşlemeleri
 

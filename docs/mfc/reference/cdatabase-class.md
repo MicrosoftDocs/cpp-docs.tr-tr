@@ -1,10 +1,6 @@
 ---
-title: CDatabase sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDatabase sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDatabase
 - AFXDB/CDatabase
@@ -30,8 +26,6 @@ f1_keywords:
 - AFXDB/CDatabase::SetLoginTimeout
 - AFXDB/CDatabase::SetQueryTimeout
 - AFXDB/CDatabase::m_hdbc
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDatabase [MFC], CDatabase
 - CDatabase [MFC], BeginTrans
@@ -56,16 +50,12 @@ helpviewer_keywords:
 - CDatabase [MFC], SetQueryTimeout
 - CDatabase [MFC], m_hdbc
 ms.assetid: bd0de70a-e3c3-4441-bcaa-bbf434426ca8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d1e050baf87374b98d5490ef8a760ca13620e240
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: d152153ac4e379f4159c4ade5dfc044288f69720
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083937"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541414"
 ---
 # <a name="cdatabase-class"></a>CDatabase sınıfı
 
