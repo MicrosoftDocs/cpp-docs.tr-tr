@@ -1,8 +1,6 @@
 ---
-title: Eşzamanlılık ad alanı sabitleri | Microsoft Docs
-ms.custom: ''
+title: Eşzamanlılık ad alanı sabitleri
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - concrt/concurrency::AgentEventGuid
 - concrt/concurrency::COOPERATIVE_TIMEOUT_INFINITE
@@ -16,19 +14,13 @@ f1_keywords:
 - concrt/concurrency::ResourceManagerEventGuid
 - concrt/concurrency::ScheduleGroupEventGuid
 - concrt/concurrency::VirtualProcessorEventGuid
-dev_langs:
-- C++
 ms.assetid: 6f81fc4c-b10c-479e-8717-9c292360d5a0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09971915b5adc8d083e2ca5007297b87eb55a329
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7474acf65058df009fcedc0d4d192af6441ddff9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439529"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550624"
 ---
 # <a name="concurrency-namespace-constants"></a>Eşzamanlılık ad alanı sabitleri
 

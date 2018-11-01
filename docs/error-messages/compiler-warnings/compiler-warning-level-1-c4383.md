@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4383 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4383
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4383
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4383
 ms.assetid: 96c0e52d-874e-4b57-a154-0e49b6a00fae
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e4ac56b4f94ee6ff7e6ade01dfadca0c00a92db
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 61bc3951a7d57a5a4eefb69b5a0c4399df99160a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46094852"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548804"
 ---
 # <a name="compiler-warning-level-1-c4383"></a>Derleyici Uyarısı (düzey 1) C4383
 

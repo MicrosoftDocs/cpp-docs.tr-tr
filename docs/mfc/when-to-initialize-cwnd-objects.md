@@ -1,12 +1,6 @@
 ---
-title: CWnd nesneleri ne zaman | Microsoft Docs
-ms.custom: ''
+title: CWnd Nesneleri Ne Zaman Başlatılır?
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - window objects [MFC], when to initialize CWnd
 - initializing CWnd objects [MFC]
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - HWND, when attached to CWnd object
 - CWnd objects [MFC], when to initialize
 ms.assetid: 4d31bcb1-73db-4f2f-b71c-89b087569a10
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6445190ab3da6ed84dbdd83cd0acab0ba98691f3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c75745547846fbf6c7e01ecf473d4d6f366bd264
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388439"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548557"
 ---
 # <a name="when-to-initialize-cwnd-objects"></a>CWnd Nesneleri Ne Zaman Başlatılır?
 

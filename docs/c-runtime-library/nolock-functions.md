@@ -1,26 +1,16 @@
 ---
-title: _nolock işlevleri | Microsoft Docs
-ms.custom: ''
+title: _nolock İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - _nolock functions
 - nolock functions
 ms.assetid: 7d651d87-38d2-4303-9897-fdb5f7a3e899
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 55141ac6b95a045bd248fbcb3008cde6cb4a70a4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 149c93c2488ae2b113af397c9e216aa1aeb4c6ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46023546"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551254"
 ---
 # <a name="nolock-functions"></a>_nolock İşlevleri
 

@@ -1,28 +1,17 @@
 ---
-title: İşlemler (MFC veri erişimi) | Microsoft Docs
-ms.custom: ''
+title: İşlemler (MFC veri erişimi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - transactions [C++], support for
 - transactions [C++]
 - databases [C++], transactions
 ms.assetid: f80afbfe-1517-4fec-8870-9ffc70a58b05
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: a646d48be5128da701409cb0279612e9c049e518
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d986250205f9d45c83d88811527e9561b3258b3d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080812"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552564"
 ---
 # <a name="transactions--mfc-data-access"></a>İşlemler (MFC veri erişimi)
 

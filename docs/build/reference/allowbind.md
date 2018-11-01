@@ -1,29 +1,19 @@
 ---
-title: -ALLOWBIND | Microsoft Docs
-ms.custom: ''
+title: /ALLOWBIND
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /allowbind
-dev_langs:
-- C++
 helpviewer_keywords:
 - ALLOWBIND editbin option
 - /ALLOWBIND editbin option
 - -ALLOWBIND editbin option
 ms.assetid: eaadbb8c-4339-4281-9a75-3a1ce2352ff8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0ce0a33ebb0b8b9ba34ac241c8335e9524dec08b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3d38b2a70fc3510b2c26942dc3e5e6fdd76a28e8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715580"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550533"
 ---
 # <a name="allowbind"></a>/ALLOWBIND
 

@@ -1,12 +1,6 @@
 ---
-title: 'Tarih ve saat: Otomasyon desteği | Microsoft Docs'
-ms.custom: ''
+title: 'Tarih ve saat: Otomasyon desteği'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - adding dates
 - calculating dates and times
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - calculations, date and time
 - time [Visual Studio], Automation support
 ms.assetid: 6eee94c4-943d-4ffc-bf7c-bdda89337ab0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1ce0acc7eb90e534e1e66882f5a4a6a88b1eb782
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 5aeefe2594fcb71e8b399e017fc10f8c1c5650a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890185"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552691"
 ---
 # <a name="date-and-time-automation-support"></a>Tarih ve saat: Otomasyon desteği
 

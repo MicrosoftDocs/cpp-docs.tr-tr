@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4227 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4227
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4227
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4227
 ms.assetid: 78f98374-c00b-4000-aefa-1b1c67b4666b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fda3a31b228f16b27f4bdefd3131a0ddcb90f5b5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a93b7f225149f9b557ad6238376ffd1bafec82d3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060868"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550312"
 ---
 # <a name="compiler-warning-level-1-c4227"></a>Derleyici Uyarısı (düzey 1) C4227
 

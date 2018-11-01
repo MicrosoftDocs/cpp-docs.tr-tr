@@ -1,10 +1,6 @@
 ---
-title: CMFCButton sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCButton sınıfı
 ms.date: 08/28/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCButton
 - AFXBUTTON/CMFCButton
@@ -45,8 +41,6 @@ f1_keywords:
 - AFXBUTTON/CMFCButton::m_bTransparent
 - AFXBUTTON/CMFCButton::m_nAlignStyle
 - AFXBUTTON/CMFCButton::m_nFlatStyle
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCButton [MFC], CleanUp
 - CMFCButton [MFC], EnableFullTextTooltip
@@ -86,16 +80,12 @@ helpviewer_keywords:
 - CMFCButton [MFC], m_nAlignStyle
 - CMFCButton [MFC], m_nFlatStyle
 ms.assetid: 4b32f57c-7a53-4734-afb9-d47e3359f62e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ca8a6689d0ac305a0dc3264b0311a4d7bf2e7d11
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b33c4c89276b99b6b5f8a4129ef17f809f058ac5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076080"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547322"
 ---
 # <a name="cmfcbutton-class"></a>CMFCButton sınıfı
 

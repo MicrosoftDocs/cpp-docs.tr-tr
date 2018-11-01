@@ -1,10 +1,6 @@
 ---
-title: basic_ofstream sınıfı | Microsoft Docs
-ms.custom: ''
+title: basic_ofstream Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - fstream/std::basic_ofstream
 - fstream/std::basic_ofstream::close
@@ -12,8 +8,6 @@ f1_keywords:
 - fstream/std::basic_ofstream::open
 - fstream/std::basic_ofstream::rdbuf
 - fstream/std::basic_ofstream::swap
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::basic_ofstream [C++]
 - std::basic_ofstream [C++], close
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - std::basic_ofstream [C++], rdbuf
 - std::basic_ofstream [C++], swap
 ms.assetid: 3bcc9c51-6dfc-4844-8fcc-22ef57c9dff1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 31637c1c194754e193970a4ff5efef500228115b
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 9a8255a02c46a4ade33bd95635516e5d36fe8e64
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105256"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551430"
 ---
 # <a name="basicofstream-class"></a>basic_ofstream Sınıfı
 
