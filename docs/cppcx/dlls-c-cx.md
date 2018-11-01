@@ -1,20 +1,13 @@
 ---
-title: DLL'ler (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: DLL'ler (C + +/ CX)
 ms.date: 02/06/2018
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: 5b8bcc57-64dd-4c54-9f24-26a25bd5dddd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1ac06336e5ba80406157285ebe660080aff6e319
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1a72ecc5eb46abfbc7b9a52a168510ce0873ee04
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763639"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445714"
 ---
 # <a name="dlls-ccx"></a>DLL'ler (C + +/ CX)
 
