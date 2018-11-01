@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3743 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3743
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3743
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3743
 ms.assetid: 7ca9a76e-7b60-46d1-ab8b-18600cf1a306
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 99988a9a0fb3afb197e081c45f6f5446d55b801c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 137913e0c6909712cbb6745666112d315925ab0c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019075"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619008"
 ---
 # <a name="compiler-error-c3743"></a>Derleyici Hatası C3743
 

@@ -1,30 +1,20 @@
 ---
-title: _disable | Microsoft Docs
-ms.custom: ''
+title: _disable
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _disable_cpp
 - _disable
-dev_langs:
-- C++
 helpviewer_keywords:
 - _disable intrinsic
 - rsm instruction
 - disable intrinsic
 ms.assetid: 52da3df9-815c-4524-9839-6d1742cff5c6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e2e0eb09934847c2f7b67c9e4961b02d31c68df2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 64e7031ab578632322dfd5c73eb81e0750c1e0b5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382420"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587817"
 ---
 # <a name="disable"></a>_disable
 

@@ -1,25 +1,15 @@
 ---
-title: HLSL özellik sayfaları | Microsoft Docs
-ms.custom: ''
+title: HLSL Özellik Sayfaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.FXCompilerTool.AdditionalOptionsPage
-dev_langs:
-- C++
 ms.assetid: 0c65f5ec-a2a5-4f5b-8d4c-fa57113a5a1d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 81d101df6c533d7111a8735809bd56535ad98e17
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 74775e34e3f0591457c2ecff6168767d065b916e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427231"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666563"
 ---
 # <a name="hlsl-property-pages"></a>HLSL Özellik Sayfaları
 

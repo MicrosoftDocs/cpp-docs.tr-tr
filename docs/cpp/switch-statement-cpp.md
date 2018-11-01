@@ -1,31 +1,21 @@
 ---
-title: switch deyimi (C++) | Microsoft Docs
-ms.custom: ''
+title: switch Deyimi (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - default_cpp
 - switch_cpp
 - case_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - switch keyword [C++]
 - case keyword [C++], in switch statements
 - default keyword [C++]
 ms.assetid: 6c3f3ed3-5593-463c-8f4b-b33742b455c6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 32fcf4f8f99f80e44758c107a8941c51bd8a767f
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 1a7a58075e4448ba38b3fc7d4d9b48e3b195d216
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821172"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534101"
 ---
 # <a name="switch-statement-c"></a>switch Deyimi (C++)
 
@@ -35,8 +25,8 @@ Kod, tam sayı ifadesinin değerine bağlı olarak birden çok bölüm arasında
 
 ```
    switch ( init; expression )
-   case constant-expression : statement
-   [default  : statement]
+   case constant-expression : statement
+   [default  : statement]
 ```
 
 ## <a name="remarks"></a>Açıklamalar

@@ -1,12 +1,6 @@
 ---
-title: Bağımsız değişkenler | Microsoft Docs
-ms.custom: ''
+title: Arguments
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - arguments [C++], function
 - function parameters
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - function arguments
 - function calls, arguments
 ms.assetid: 14cf0389-2265-41f0-9a96-f2223eb406ca
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6b34d242cf2a64cf2993db668f88d715dfa6a0b5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f8177630af438d1f9fc04795ac91428f83dfe496
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099742"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550364"
 ---
 # <a name="arguments"></a>Arguments
 

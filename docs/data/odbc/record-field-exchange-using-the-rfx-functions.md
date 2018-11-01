@@ -1,12 +1,6 @@
 ---
-title: 'Kayıt Alanı Değişimi: RFX işlevlerini kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Kayıt Alanı Değişimi: RFX İşlevlerini Kullanma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC [C++], data types
 - data types [C++], ODBC record field exchange
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - RFX (ODBC) [C++], data types
 - function calls, RFX functions
 ms.assetid: c594300b-5a29-4119-a68b-e7ca32def696
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: bc49ede976fe8126e2996b72174c98f5abba780a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 00b995890cf0cced5d06c52c4d702c1c89111dc3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060721"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50489966"
 ---
 # <a name="record-field-exchange-using-the-rfx-functions"></a>Kayıt Alanı Değişimi: RFX İşlevlerini Kullanma
 

@@ -1,9 +1,6 @@
 ---
-title: Derleyici hataları C3500 ile c3999 arasındaki | Microsoft Docs
+title: Derleyici hataları C3500 ile c3999 arasındaki
 ms.date: 11/17/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3502
 - C3503
@@ -248,19 +245,13 @@ f1_keywords:
 - C3997
 - C3998
 - C3999
-dev_langs:
-- C++
 ms.assetid: bd6f23ad-b300-4e07-8e35-9661cab1585f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 49677077761a11df93a540a749e140485fa9485f
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 02686b8c12643480dc18ad665eb7f17e2b8d1170
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44319077"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575012"
 ---
 # <a name="compiler-errors-c3500-through-c3999"></a>Derleyici hataları C3500 ile c3999 arasındaki
 

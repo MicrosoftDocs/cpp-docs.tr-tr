@@ -1,32 +1,22 @@
 ---
-title: CFirePropNotifyEvent sınıfı | Microsoft Docs
-ms.custom: ''
+title: CFirePropNotifyEvent sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CFirePropNotifyEvent
 - ATLCTL/ATL::CFirePropNotifyEvent
 - ATLCTL/ATL::CFirePropNotifyEvent::FireOnChanged
 - ATLCTL/ATL::CFirePropNotifyEvent::FireOnRequestEdit
-dev_langs:
-- C++
 helpviewer_keywords:
 - sinks, notifying of ATL events
 - CFirePropNotifyEvent class
 - connection points [C++], notifying of events
 ms.assetid: eb7a563e-6bce-4cdf-8d20-8c6a5307781b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e667f943d2630d78880d49f18015bdac95e571ac
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b25fa156c4576783ebc275a160a850e364066f96
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46026523"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621045"
 ---
 # <a name="cfirepropnotifyevent-class"></a>CFirePropNotifyEvent sınıfı
 

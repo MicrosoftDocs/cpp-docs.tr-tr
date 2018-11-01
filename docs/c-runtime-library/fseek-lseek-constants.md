@@ -1,31 +1,21 @@
 ---
-title: fseek, _lseek sabitler | Microsoft Docs
-ms.custom: ''
+title: fseek, _lseek Sabitleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - SEEK_END
 - SEEK_SET
 - SEEK_CUR
-dev_langs:
-- C++
 helpviewer_keywords:
 - SEEK_SET constant
 - SEEK_END constant
 - SEEK_CUR constant
 ms.assetid: 9deeb13e-5aa3-4c33-80d8-721c80a4de9d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3d48ead4532638461962a3bf88d2321cee775ab3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fcf2c7ac6ea6280abdab5279ab67b65656bdeff9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087668"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50507694"
 ---
 # <a name="fseek-lseek-constants"></a>fseek, _lseek Sabitleri
 

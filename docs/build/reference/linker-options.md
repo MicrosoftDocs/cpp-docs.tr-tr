@@ -1,30 +1,20 @@
 ---
-title: Bağlayıcı seçenekleri | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Seçenekleri
 ms.date: 08/20/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - link
-dev_langs:
-- C++
 helpviewer_keywords:
 - linker [C++]
 - linker [C++], options listed
 - libraries [C++], linking to COFF
 - LINK tool [C++], linker options
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ca1bae4e2ca45424fd7f9cff48d8ece1039d73f6
-ms.sourcegitcommit: 072e12d6b7a242765bdcc9afe4a14a284ade01fc
+ms.openlocfilehash: 22ac88ede7cc015efd12f1a996ffdf361b43f041
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50136178"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50510125"
 ---
 # <a name="linker-options"></a>Bağlayıcı Seçenekleri
 

@@ -1,25 +1,15 @@
 ---
-title: Diğer-bağımsız değişkeni çıkış Stream Manipülatörleri | Microsoft Docs
-ms.custom: ''
+title: Diğer Tek Bağımsız Değişkenli Çıkış Akışı Manipülatörleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - output streams, one-argument manipulators
 ms.assetid: e381dee8-6b16-4cef-805a-4a6a1d2b696b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 30523a7db07dba1359af59c9fcc988feb0e4ec18
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: b5f24033d8da0933b8252fdace60fb419ef2e605
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953832"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664834"
 ---
 # <a name="other-one-argument-output-stream-manipulators"></a>Diğer Tek Bağımsız Değişkenli Çıkış Akışı Manipülatörleri
 

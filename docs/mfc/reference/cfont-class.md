@@ -1,10 +1,6 @@
 ---
-title: CFont sınıfı | Microsoft Docs
-ms.custom: ''
+title: CFont sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CFont
 - AFXWIN/CFont
@@ -15,8 +11,6 @@ f1_keywords:
 - AFXWIN/CFont::CreatePointFontIndirect
 - AFXWIN/CFont::FromHandle
 - AFXWIN/CFont::GetLogFont
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFont [MFC], CFont
 - CFont [MFC], CreateFont
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - CFont [MFC], FromHandle
 - CFont [MFC], GetLogFont
 ms.assetid: 3fad6bfe-d6ce-4ab9-967a-5ce0aa102800
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c914bab9ab7a4bb15f6fe3d2820d7ff2534c3c6e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f925940f0813e1912be9f2382b676e80db8240c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053649"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607905"
 ---
 # <a name="cfont-class"></a>CFont sınıfı
 

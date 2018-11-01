@@ -1,10 +1,6 @@
 ---
-title: Özelleştirme bildirimlerini işleme | Microsoft Docs
-ms.custom: ''
+title: Özelleştirme Bildirimlerini İşleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - TBN_CUSTHELP
 - TBN_QUERYINSERT
@@ -26,8 +22,6 @@ f1_keywords:
 - NM_RCLICK
 - TBN_BEGINADJUST
 - NM_CLICK
-dev_langs:
-- C++
 helpviewer_keywords:
 - TBN_ENDADJUST notification [MFC]
 - TBNOTIFY notification [MFC]
@@ -53,16 +47,12 @@ helpviewer_keywords:
 - NM_RDBLCLK notification [MFC]
 - TBN_GETBUTTONINFO notification [MFC]
 ms.assetid: 219ea08e-7515-4b98-85cb-47120f08c0a2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 34d9a0fad325c95b9de43e28269b00ad7ced4b95
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f73e6ef070177f39bdf2e0736660f8eb963727ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416714"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462740"
 ---
 # <a name="handling-customization-notifications"></a>Özelleştirme Bildirimlerini İşleme
 

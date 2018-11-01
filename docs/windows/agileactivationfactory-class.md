@@ -1,26 +1,16 @@
 ---
-title: AgileActivationFactory sınıfı | Microsoft Docs
-ms.custom: ''
+title: AgileActivationFactory Sınıfı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::AgileActivationFactory
-dev_langs:
-- C++
 ms.assetid: fab98f32-bb93-4c0f-badb-49fbddb194b0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 0d8ccf5e0141f166ec682df04c10ef915ab1daec
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 941e135cb1b6c90d6ccf858a576cf1d0b055970f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059226"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649871"
 ---
 # <a name="agileactivationfactory-class"></a>AgileActivationFactory Sınıfı
 

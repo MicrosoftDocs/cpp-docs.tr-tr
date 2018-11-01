@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2779 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2779
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2779
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2779
 ms.assetid: 4a00e492-855a-41f3-8a18-5f60ee20c2f2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 43067c780accfea1d55f9fd9c9dbce69fe41a43a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7cf8aed276ab2aea61dc92b9e9fcbff9552c2ad6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46046790"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449328"
 ---
 # <a name="compiler-error-c2779"></a>Derleyici Hatası C2779
 

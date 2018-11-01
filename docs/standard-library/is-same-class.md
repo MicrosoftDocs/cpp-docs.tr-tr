@@ -1,28 +1,18 @@
 ---
-title: is_same sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_same Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_same
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_same class
 - is_same
 ms.assetid: d9df6c1d-c270-4ec2-802a-af275648dd1d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a3c95b3510c9cdd839f7428d62af9b428287a83f
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 4fb093c574bf0c6ca193a3937a2e4778d836c0ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44101709"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493606"
 ---
 # <a name="issame-class"></a>is_same Sınıfı
 

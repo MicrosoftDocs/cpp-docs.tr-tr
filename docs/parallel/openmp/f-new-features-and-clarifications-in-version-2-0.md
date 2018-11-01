@@ -1,23 +1,13 @@
 ---
-title: F. Yeni özellikler ve açıklamalar sürüm 2.0 | Microsoft Docs
-ms.custom: ''
+title: F. Yeni özellikler ve açıklamalar sürüm 2.0
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 0d4beb66-f2d5-468c-8cd3-4b00dcbab061
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d15cbbf60609208a200bd73536d0ebdc8a714f7e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c8a597c6af397bd162d92a945d96409b1839e2a3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46373509"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50657160"
 ---
 # <a name="f-new-features-and-clarifications-in-version-20"></a>F. Yeni özellikler ve açıklamalar sürüm 2.0
 

@@ -1,30 +1,19 @@
 ---
-title: 'Nasıl yapılır: kaynak betik dosyasını metin biçiminde (C++) açma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: kaynak betik dosyasını metin biçiminde (C++) açın.'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.resource
-dev_langs:
-- C++
 helpviewer_keywords:
 - resource script files [C++], opening in text format
 - .rc files [C++], opening in text format
 - rc files [C++], opening in text format
 ms.assetid: 0bc57527-f53b-40c9-99a9-4dcbc5c9af57
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 536448572b87da8a35ec949e0b438e0bf8f3b703
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b69eba46fb5420b8e64d87737270a09fb932b020
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445158"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543097"
 ---
 # <a name="how-to-open-a-resource-script-file-in-text-format"></a>Nasıl Yapılır: Kaynak Betik Dosyasını Metin Biçiminde Açma
 

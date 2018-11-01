@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3007 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3007
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3007
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3007
 ms.assetid: e415ef42-bdc9-4f32-8198-5e25b289a089
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 70e580da61c3314978a071233a576049de2d83b2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 551fb458ee02e29ae54aeb3382b2016da731808a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054707"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630467"
 ---
 # <a name="compiler-error-c3007"></a>Derleyici Hatası C3007
 

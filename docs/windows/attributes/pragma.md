@@ -1,28 +1,17 @@
 ---
-title: pragma (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: pragma (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.pragma
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragma attribute
 ms.assetid: 3f90d023-b8b5-4007-8311-008bb72cbea1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: ac6b00387669f26bbd6cc02f8dd559199dd6bdd5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d90e37e27f7e2a13ffebd11043e415c1d43751c5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074182"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430505"
 ---
 # <a name="pragma"></a>pragması
 

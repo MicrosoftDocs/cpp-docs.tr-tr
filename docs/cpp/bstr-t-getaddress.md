@@ -1,27 +1,17 @@
 ---
-title: _bstr_t::GetAddress | Microsoft Docs
-ms.custom: ''
+title: _bstr_t::GetAddress
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _bstr_t::GetAddress
-dev_langs:
-- C++
 helpviewer_keywords:
 - GetAddress method [C++]
 ms.assetid: 09bc9180-867e-4ee5-b22a-8339dc663142
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9b3aa001270a3dc608fabf73fce28ce51eb9295e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4d51539d2afbb2fbcc860b6c4d821df119aca418
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031307"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601467"
 ---
 # <a name="bstrtgetaddress"></a>_bstr_t::GetAddress
 

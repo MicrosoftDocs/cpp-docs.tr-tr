@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3887 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3887
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3887
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3887
 ms.assetid: a7e82426-ef99-437b-9562-2822004e18fe
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1238f648c7e5481127562d34dde193a278c3cf0f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e41ea1dbe1f2bd47f9b557d502ec95bcecb1e2a2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46047635"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428269"
 ---
 # <a name="compiler-error-c3887"></a>Derleyici Hatası C3887
 

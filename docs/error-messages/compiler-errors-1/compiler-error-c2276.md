@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2276 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2276
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2276
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2276
 ms.assetid: 62005ad9-6cb9-4b1f-965d-b875adaf695e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5a39c006acc3b5e3e74a738ba89c8ea6f56b889d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2128be2be4f0b5be37bbfc5098a35bb39afe5906
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46114182"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633668"
 ---
 # <a name="compiler-error-c2276"></a>Derleyici Hatası C2276
 

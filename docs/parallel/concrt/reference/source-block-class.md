@@ -1,10 +1,6 @@
 ---
-title: source_block sınıfı | Microsoft Docs
-ms.custom: ''
+title: source_block Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - source_block
 - AGENTS/concurrency::source_block
@@ -34,21 +30,15 @@ f1_keywords:
 - AGENTS/concurrency::source_block::sync_send
 - AGENTS/concurrency::source_block::unlink_target_notification
 - AGENTS/concurrency::source_block::wait_for_outstanding_async_sends
-dev_langs:
-- C++
 helpviewer_keywords:
 - source_block class
 ms.assetid: fbdd4146-e8d0-42e8-b714-fe633f69ffbf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f4a184e0fee76f3aa5bb8f7729250c03b10b9dfc
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 609c7d78bdf2f16be4d82add454ef9546ea22588
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163497"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468698"
 ---
 # <a name="sourceblock-class"></a>source_block Sınıfı
 

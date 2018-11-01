@@ -1,27 +1,17 @@
 ---
-title: Zengin düzenleme denetimlerinde yazdırma | Microsoft Docs
-ms.custom: ''
+title: Zengin Düzenleme Denetimlerinde Yazdırma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - printing [MFC], CRichEditCtrl
 - rich edit controls [MFC], printing
 - CRichEditCtrl class [MFC], printing
 ms.assetid: dbda0e40-018f-424e-b5d8-7b489aaf27af
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 38389f62ebeeaccf6b7b4c211b056b6f6c3ac188
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bf402f5495ad85eb0c5067d60fcedfe29e6350bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421329"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641213"
 ---
 # <a name="printing-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Yazdırma
 

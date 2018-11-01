@@ -1,12 +1,6 @@
 ---
-title: MAPI | Microsoft Docs
-ms.custom: ''
+title: MAPI
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - messaging [MFC], client applications
 - enabling applications for MAPI [MFC]
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - MAPI, MFC
 - enabling applications for mail [MFC]
 ms.assetid: 193449f7-b131-4ab0-9301-8d4f6cd1e7c4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b2ca182da3a0300604415b790c0aba138c8fd7a2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0f32b3626d23d0df0f0eb4fd6edc68188f754a7d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439113"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533594"
 ---
 # <a name="mapi"></a>MAPI
 

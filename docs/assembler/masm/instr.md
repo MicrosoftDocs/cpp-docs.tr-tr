@@ -1,27 +1,17 @@
 ---
-title: INSTR | Microsoft Docs
-ms.custom: ''
+title: INSTR
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - InStr
-dev_langs:
-- C++
 helpviewer_keywords:
 - INSTR directive
 ms.assetid: fc37f6a2-3c95-47b2-b6bb-1066edd25994
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f540b7fffb23321c8b3aa22e154196c48f76cd58
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: be3dda768d153e764242f16cd6500e39bdda7923
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43683064"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474184"
 ---
 # <a name="instr"></a>INSTR
 

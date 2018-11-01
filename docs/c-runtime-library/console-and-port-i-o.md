@@ -1,14 +1,8 @@
 ---
-title: Konsol ve bağlantı noktası g/ç | Microsoft Docs
-ms.custom: ''
+title: Konsol ve Bağlantı Noktası G/Ç
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.io
-dev_langs:
-- C++
 helpviewer_keywords:
 - routines, console and port I/O
 - routines
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - I/O [CRT], port
 - I/O routines, console and port I/O
 ms.assetid: 0eee1c92-9b3d-41e0-a43a-257e546eeec8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 18e0750a2c0b8747da432efd9fc465b83e01a490
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 728ff6fa36d21e869c65db705b25bbe7c9d711ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46018281"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446767"
 ---
 # <a name="console-and-port-io"></a>Konsol ve Bağlantı Noktası G/Ç
 

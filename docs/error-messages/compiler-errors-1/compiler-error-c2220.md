@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2220 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2220
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2220
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2220
 ms.assetid: d610802c-64d7-40ad-a2a6-0ed0b6815a6c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7f4179b396e732ceeea20aeb9428d841a357a6d1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3ff730c6fea7d2c57c4ec3054fc627cdc6227e2d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46051327"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603417"
 ---
 # <a name="compiler-error-c2220"></a>Derleyici Hatası C2220
 

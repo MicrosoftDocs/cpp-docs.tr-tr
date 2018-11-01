@@ -1,27 +1,17 @@
 ---
-title: 'Nasıl yapılır: - clr derlemesinde yerel tür kullanma | Microsoft Docs'
+title: 'Nasıl yapılır: - clr derlemesinde yerel tür kullanma'
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - compilation, native types in /clr
 - /clr compiler option [C++], using native types
 ms.assetid: 3a505c90-4adb-4942-9cf9-7d1fdcbc01e7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 3e56c3617b6b2a8168e35867c09858dffa84cea9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0079be21b474858684e1abaaeb363820764a701d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448070"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459963"
 ---
 # <a name="how-to-use-a-native-type-in-a-clr-compilation"></a>Nasıl yapılır: /clr Derlemesinde Yerel Tür Kullanma
 

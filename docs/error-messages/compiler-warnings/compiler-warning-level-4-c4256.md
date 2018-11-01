@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4256 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4256
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4256
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4256
 ms.assetid: a755a32e-895a-4837-a2b5-4ea06b736798
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6112a541f4bc7efc0ab36feb14f285cf132b08e8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b1f7534098a04c7c65a380d302999260c960f284
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075377"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627584"
 ---
 # <a name="compiler-warning-level-4-c4256"></a>Derleyici Uyarısı (düzey 4) C4256
 

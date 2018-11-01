@@ -1,25 +1,15 @@
 ---
-title: Derleyici sınırları | Microsoft Docs
-ms.custom: ''
+title: Derleyici Sınırları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - cl.exe compiler, limits for language constructs
 ms.assetid: f1fa59c6-55b4-414b-80c5-3df72952160d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 76b08ab88ce5487485c8b8872488c0cf784ad2c2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a0c6041d326982dc9807355733cf714dcfa62ca8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093551"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50600336"
 ---
 # <a name="compiler-limits"></a>Derleyici Sınırları
 

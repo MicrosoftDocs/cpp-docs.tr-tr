@@ -1,10 +1,6 @@
 ---
-title: multi_link_registry sınıfı | Microsoft Docs
-ms.custom: ''
+title: multi_link_registry Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - multi_link_registry
 - AGENTS/concurrency::multi_link_registry
@@ -15,21 +11,15 @@ f1_keywords:
 - AGENTS/concurrency::multi_link_registry::count
 - AGENTS/concurrency::multi_link_registry::remove
 - AGENTS/concurrency::multi_link_registry::set_bound
-dev_langs:
-- C++
 helpviewer_keywords:
 - multi_link_registry class
 ms.assetid: b2aa73a8-e8a6-4255-b117-d07530c328b2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 174a168d6a22bca54fb00bf302cd7cbbc65cc961
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 6f4e6db693a5839fd3add503bfb9697679a98dd8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162340"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50635415"
 ---
 # <a name="multilinkregistry-class"></a>multi_link_registry Sınıfı
 

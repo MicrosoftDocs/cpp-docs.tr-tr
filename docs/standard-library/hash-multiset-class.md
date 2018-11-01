@@ -1,10 +1,6 @@
 ---
-title: hash_multiset sınıfı | Microsoft Docs
-ms.custom: ''
+title: hash_multiset Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - hash_set/stdext::hash_multiset
 - hash_set/stdext::hash_multiset::allocator_type
@@ -47,8 +43,6 @@ f1_keywords:
 - hash_set/stdext::hash_multiset::swap
 - hash_set/stdext::hash_multiset::upper_bound
 - hash_set/stdext::hash_multiset::value_comp
-dev_langs:
-- C++
 helpviewer_keywords:
 - stdext::hash_multiset
 - stdext::hash_multiset::allocator_type
@@ -92,16 +86,12 @@ helpviewer_keywords:
 - stdext::hash_multiset::upper_bound
 - stdext::hash_multiset::value_comp
 ms.assetid: 0580397a-a76e-40ad-aea2-5c6f3a9d0a21
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ce9e442ce9a53c44fd4fe37b6991952b76f13cec
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 31ea9e74dc00a511351614ab708949e05ab2c567
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235977"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636949"
 ---
 # <a name="hashmultiset-class"></a>hash_multiset Sınıfı
 

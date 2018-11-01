@@ -1,23 +1,13 @@
 ---
-title: Bulut ve Web programlama Visual C++'ta | Microsoft Docs
-ms.custom: ''
+title: Visual C++'da Bulut ve Web Programlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-azure
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2553ac5cdc20f3d5d38a6bad77dc79fc7c1737d8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 310b6631167b36ee842c1f52c0c853746f7c3644
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052888"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486755"
 ---
 # <a name="cloud-and-web-programming-in-visual-c"></a>Visual C++'da Bulut ve Web Programlama
 

@@ -1,31 +1,21 @@
 ---
-title: CStringRefElementTraits sınıfı | Microsoft Docs
-ms.custom: ''
+title: CStringRefElementTraits sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CStringRefElementTraits
 - ATLCOLL/ATL::CStringRefElementTraits
 - ATLCOLL/ATL::CStringRefElementTraits::CompareElements
 - ATLCOLL/ATL::CStringRefElementTraits::CompareElementsOrdered
 - ATLCOLL/ATL::CStringRefElementTraits::Hash
-dev_langs:
-- C++
 helpviewer_keywords:
 - CStringRefElementTraits class
 ms.assetid: cc15062d-5627-46cc-ac2b-1744afdc2dbd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8369afbbf423f85df0e38f7f2979b3b7e48f8591
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 86b8db169cbb0f0f43ebf37a8ea9bf959ee0ee06
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067928"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633355"
 ---
 # <a name="cstringrefelementtraits-class"></a>CStringRefElementTraits sınıfı
 

@@ -1,30 +1,20 @@
 ---
-title: -STACK | Microsoft Docs
-ms.custom: ''
+title: /STACK
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /stack
-dev_langs:
-- C++
 helpviewer_keywords:
 - -STACK editbin option
 - STACK editbin option
 - stack, setting size
 - /STACK editbin option
 ms.assetid: a39bcff0-c945-4355-80cc-8e4f24a5f142
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d8deb3e3bedcb773aa01ae5f1c3ff66ce9d509f2
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 89591a9d0a7f19422275b6bce6f4c5a7a723e800
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716674"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647713"
 ---
 # <a name="stack"></a>/STACK
 

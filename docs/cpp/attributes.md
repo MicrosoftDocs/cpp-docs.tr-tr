@@ -1,19 +1,13 @@
 ---
-title: C++ öznitelikleri | Microsoft Docs
-ms.custom: ''
+title: C++ öznitelikleri
 ms.date: 06/01/2018
-ms.topic: language-reference
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f2a6ef80edc5f6bbeaf43bbc5851336b67d8cf36
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a4d24324165f3cce60d259adf6e3d21638296cf8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118836"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471831"
 ---
 # <a name="attributes-in-c"></a>C++ öznitelikleri
 

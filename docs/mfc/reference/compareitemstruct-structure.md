@@ -1,27 +1,17 @@
 ---
-title: COMPAREITEMSTRUCT yapısı | Microsoft Docs
-ms.custom: ''
+title: COMPAREITEMSTRUCT Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COMPAREITEMSTRUCT
-dev_langs:
-- C++
 helpviewer_keywords:
 - COMPAREITEMSTRUCT structure [MFC]
 ms.assetid: 4b7131a5-5c7d-4e98-aac7-e85650262b52
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 450e6fa4694c35929196cc5df3bf2fd6b4e843c4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 78a6e76ee3bbac5b32eb4bccf45578e63f763b75
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46406840"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465422"
 ---
 # <a name="compareitemstruct-structure"></a>COMPAREITEMSTRUCT Yapısı
 

@@ -1,12 +1,6 @@
 ---
-title: Visual C++'ta DLL'ler | Microsoft Docs
-ms.custom: ''
+title: Visual C++'da DLL'ler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - executable files [C++]
 - dynamic linking [C++]
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - DLLs [C++]
 - DLLs [C++], about DLLs
 ms.assetid: 5216bca4-51e2-466b-b221-0e3e776056f0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ea5026100239f00f03147e435ddd9555617f1dd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: be653be42b1905f1edbcf8d50f7aef2b343c2691
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432717"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667200"
 ---
 # <a name="dlls-in-visual-c"></a>Visual C++'da DLL'ler
 

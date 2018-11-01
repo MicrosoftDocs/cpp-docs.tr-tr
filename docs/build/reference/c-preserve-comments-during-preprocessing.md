@@ -1,16 +1,10 @@
 ---
-title: -C (önişleme sırasında açıklamaları Koru) | Microsoft Docs
-ms.custom: ''
+title: /C (Önişleme Sırasında Açıklamaları Koru)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.KeepComments
 - /c
 - VC.Project.VCCLWCECompilerTool.KeepComments
-dev_langs:
-- C++
 helpviewer_keywords:
 - comments, not stripping during preprocessing
 - preserve comments during preprocessing
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - c compiler option [C++]
 - /c compiler option [C++]
 ms.assetid: 944567ca-16bc-4728-befe-d414a7787f26
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8716c0a0f954b0a2ad0bbe0e25c29a4445b11823
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b37e279af3995bd1d61c97dc88b49cdd95495c75
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428349"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50442607"
 ---
 # <a name="c-preserve-comments-during-preprocessing"></a>/C (Önişleme Sırasında Açıklamaları Koru)
 
@@ -70,7 +60,7 @@ int i;   // a variable
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.KeepComments%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.KeepComments%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

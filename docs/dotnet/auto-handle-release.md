@@ -1,31 +1,21 @@
 ---
-title: auto_handle::Release | Microsoft Docs
-ms.custom: ''
+title: auto_handle::release
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr::auto_handle::release
 - auto_handle.release
 - msclr.auto_handle.release
 - auto_handle::release
-dev_langs:
-- C++
 helpviewer_keywords:
 - auto_handle::release
 ms.assetid: d4848150-859e-4c61-a946-09d24d3d6577
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 5237ec59d8e90a793d6df83d6dbc2c0ff1ec1cb0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d5ace35f75ebaa6007ddf9486eee8c45d75fa77f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391754"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591934"
 ---
 # <a name="autohandlerelease"></a>auto_handle::release
 

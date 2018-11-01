@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2384 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2384
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2384
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2384
 ms.assetid: 8145f7ad-31b1-406d-ac43-0d557feab635
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f3aa9ec8a6a94f53123c443a1149df7cdbc95c83
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1909fb999dd0f60224029b726f773c11fa69ee40
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46020465"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460326"
 ---
 # <a name="compiler-error-c2384"></a>Derleyici Hatası C2384
 

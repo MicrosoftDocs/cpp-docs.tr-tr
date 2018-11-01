@@ -1,10 +1,6 @@
 ---
-title: CDataPathProperty sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDataPathProperty sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDataPathProperty
 - AFXCTL/CDataPathProperty
@@ -15,8 +11,6 @@ f1_keywords:
 - AFXCTL/CDataPathProperty::ResetData
 - AFXCTL/CDataPathProperty::SetControl
 - AFXCTL/CDataPathProperty::SetPath
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDataPathProperty [MFC], CDataPathProperty
 - CDataPathProperty [MFC], GetControl
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - CDataPathProperty [MFC], SetControl
 - CDataPathProperty [MFC], SetPath
 ms.assetid: 1f96efdb-54e4-460b-862c-eba5d4103488
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e38595c5c3912fe7558b1279bbc68e7fd60df681
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1d17b121854623e9919f434a44b6ab40c2db2691
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074338"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608193"
 ---
 # <a name="cdatapathproperty-class"></a>CDataPathProperty sınıfı
 

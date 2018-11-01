@@ -1,10 +1,6 @@
 ---
-title: _isatty | Microsoft Docs
-ms.custom: ''
+title: _isatty
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _isatty
 apilocation:
@@ -22,28 +18,22 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _isatty
-dev_langs:
-- C++
 helpviewer_keywords:
 - isatty function
 - character device checking
 - _isatty function
 - checking character devices
 ms.assetid: 9f1b2e87-0cd7-4079-b187-f2b7ca15fcbe
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d4be35fce0a790751683a4bf8a0cceaf938fea82
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ef0df5f859779c081df47ef4bfe938ec2601d524
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402465"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545593"
 ---
 # <a name="isatty"></a>_isatty
 
-Bir dosya tanımlayıcısı karakter aygıtla ilişkili olup olmadığını belirler.
+Dosya tanımlayıcısının karakter cihazla ilişkili olup olmadığını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,17 +44,17 @@ int _isatty( int fd );
 ### <a name="parameters"></a>Parametreler
 
 *FD*<br/>
-Sınanacak cihaza başvuruyor dosya tanımlayıcısı.
+Test edilecek cihaza başvuran dosya tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_isatty** tanımlayıcısı karakter aygıt ile ilişkili ise, sıfır olmayan bir değer döndürür. Aksi takdirde, **_isatty** 0 döndürür.
+**_isatty** tanımlayıcı bir karakter cihazıyla ilişkiliyse, sıfır olmayan bir değer döndürür. Aksi takdirde, **_isatty** 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_İsatty** işlevi belirler olup olmadığını *fd* bir karakter cihaza (bir terminal, konsol, yazıcı veya seri bağlantı noktası).
+**_İsatty** işlevi belirler olmadığını *fd* (bir terminal, konsol, yazıcı veya seri bağlantı noktası) bir karakter cihazıyla ilişkilendirilir.
 
-Bu işlev doğrular *fd* parametresi. Varsa *fd* hatalı dosya işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için 0 işlevi döndürür ve kümelerini yürütülmesine izin veriliyorsa **errno** için **EBADF**.
+Bu işlev doğrular *fd* parametresi. Varsa *fd* bir hatalı dosya işaretçisiyse, içinde açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için ayarlar ve işlev 0 döndürür yürütülmesine izin veriliyorsa **errno** için **EBADF**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -72,7 +62,7 @@ Bu işlev doğrular *fd* parametresi. Varsa *fd* hatalı dosya işaretçi açık
 |-------------|---------------------|
 |**_isatty**|\<io.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

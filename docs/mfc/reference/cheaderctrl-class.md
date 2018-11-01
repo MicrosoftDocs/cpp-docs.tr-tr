@@ -1,10 +1,6 @@
 ---
-title: CHeaderCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CHeaderCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CHeaderCtrl
 - AFXCMN/CHeaderCtrl
@@ -37,8 +33,6 @@ f1_keywords:
 - AFXCMN/CHeaderCtrl::SetImageList
 - AFXCMN/CHeaderCtrl::SetItem
 - AFXCMN/CHeaderCtrl::SetOrderArray
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHeaderCtrl [MFC], CHeaderCtrl
 - CHeaderCtrl [MFC], ClearAllFilters
@@ -70,16 +64,12 @@ helpviewer_keywords:
 - CHeaderCtrl [MFC], SetItem
 - CHeaderCtrl [MFC], SetOrderArray
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 430e4830cb41ebd229b25da426d7ddf482b9c90f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 56c694283c5143174b0ce7370d98a244c056bc1e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385540"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496024"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl sınıfı
 

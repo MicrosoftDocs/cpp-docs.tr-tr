@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2349 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2349
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2349
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2349
 ms.assetid: ce9f2e65-fda0-41b6-9c4a-538607136396
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3677426b00b07ae7281657c5ada7d17cc4418f35
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 201c3e2de3ab188f05cfd4957790a15fd9f01324
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070762"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627896"
 ---
 # <a name="compiler-error-c2349"></a>Derleyici Hatası C2349
 

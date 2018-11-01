@@ -1,10 +1,6 @@
 ---
-title: CRegKey sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRegKey sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CRegKey
 - ATLBASE/ATL::CRegKey
@@ -39,8 +35,6 @@ f1_keywords:
 - ATLBASE/ATL::CRegKey::SetValue
 - ATLBASE/ATL::CRegKey::m_hKey
 - ATLBASE/ATL::CRegKey::m_pTM
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRegKey class
 - ATL, registry
@@ -48,16 +42,12 @@ helpviewer_keywords:
 - registry, writing to
 - registry, deleting keys
 ms.assetid: 3afce82b-ba2c-4c1a-8404-dc969e1af74b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 26861b11aafd4bfcd4f1d5a7cc618ed27b60e6b8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 33ca9e1c07dc350845104a6027166e511b3bbe4b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071186"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605095"
 ---
 # <a name="cregkey-class"></a>CRegKey sınıfı
 

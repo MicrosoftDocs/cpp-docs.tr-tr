@@ -1,10 +1,6 @@
 ---
-title: TANH, tanhf, tanhl | Microsoft Docs
-ms.custom: ''
+title: TANH, tanhf, tanhl
 ms.date: 04/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - tanh
 - tanhf
@@ -27,8 +23,6 @@ f1_keywords:
 - tanhf
 - tanhl
 - _tanhl
-dev_langs:
-- C++
 helpviewer_keywords:
 - tanhl function
 - _tanhl function
@@ -36,20 +30,16 @@ helpviewer_keywords:
 - tanhf function
 - trigonometric functions
 - hyperbolic functions
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 438c587099edafedbb2cc3feb4b3a285aa155a0d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3b9c7269d3c945301106098fc944383bbc364e5a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408526"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432401"
 ---
 # <a name="tanh-tanhf-tanhl"></a>TANH, tanhf, tanhl
 
-Hiperbolik tanjantını hesaplar.
+Hiperbolik tanjantı hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,23 +61,23 @@ Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş değeri
 
-**Tanh** işlevler hiperbolik tanjantını döndürür *x*. Döndürülen hata yoktur.
+**Tanh** işlevler hiperbolik tanjantını döndürür *x*. Döndürülen hata yok.
 
 |Giriş|SEH özel durumu|**Matherr** özel durumu|
 |-----------|-------------------|-------------------------|
-|± QNAN, UL|yok|_DOMAIN|
+|± QNAN, ONRAKİNİ BUL|yok|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **tanh** alın ve dönüş **float** veya **uzun** **çift** değerleri. Bir C programı **tanh** her zaman alan ve döndüren **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **tanh** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **tanh** her zaman alan ve döndüren **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgisi (C)|Gerekli üstbilgisi (C)|
+|Yordam|Gerekli başlık (C)|Gerekli başlık (C)|
 |-------------|---------------------|-|
 |**TANH**, **tanhf**, **tanhl**|\<Math.h >|\<cmath > veya \<math.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

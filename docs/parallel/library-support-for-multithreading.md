@@ -1,26 +1,16 @@
 ---
-title: İçin kitaplık desteği çoklu iş parçacığı kullanımı | Microsoft Docs
-ms.custom: ''
+title: Çoklu İş Parçacığı Kullanımı için Kitaplık Desteği
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - multithreading [C++], library support
 - threading [C++], library support
 ms.assetid: 54cf10d5-b800-481b-a149-b0ee373f41a1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c0209688bcb8176963f28949b7faf90afb182ccd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 737dc0893a631b3303624efe15138c9014e6869a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398509"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562272"
 ---
 # <a name="library-support-for-multithreading"></a>Çoklu İş Parçacığı Kullanımı için Kitaplık Desteği
 

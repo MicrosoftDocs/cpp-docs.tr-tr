@@ -1,27 +1,19 @@
 ---
-title: Platform::OperationCanceledException sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::OperationCanceledException sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::OperationCanceledException::OperationCanceledException
 - VCCORLIB/Platform::OperationCanceledException
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::OperationCanceledException
 ms.assetid: 5351bc20-5408-423a-8169-f09acc8a3fbb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d2f4cea4199615ccaecf9d3de915c4666a20d1a9
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 11a5b6b9886fdf59512446e8f7c3deb5045b7ce3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108566"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506567"
 ---
 # <a name="platformoperationcanceledexception-class"></a>Platform::OperationCanceledException sınıfı
 

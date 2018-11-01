@@ -1,30 +1,20 @@
 ---
-title: -O seçenekler (kodu İyileştir) | Microsoft Docs
-ms.custom: ''
+title: /O Seçenekler (Kodu İyileştir)
 ms.date: 09/25/2017
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.Optimization
 - /o
 - VC.Project.VCCLWCECompilerTool.Optimization
-dev_langs:
-- C++
 helpviewer_keywords:
 - performance, cle.exe compiler
 - cl.exe compiler, performance
 ms.assetid: 77997af9-5555-4b3d-aa57-6615b27d4d5d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5c77fd91d63ec79fca87e11a4a02eca157eddf84
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f4e2bf8b848654f7b87c59e7a54994448ee62d51
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717541"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481334"
 ---
 # <a name="o-options-optimize-code"></a>/O Seçenekler (Kodu İyileştir)
 

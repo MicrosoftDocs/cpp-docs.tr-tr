@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4379 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4379
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4379
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4379
 ms.assetid: b23e8132-69aa-4649-9c1e-09813b9fb5b7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 172f042bd221299e90a2185e3c04fe19560831e5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 110d45749bcfd219b38bf7a4e57a3263bffc5c65
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46042656"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447170"
 ---
 # <a name="compiler-warning-level-1-c4379"></a>Derleyici Uyarısı (düzey 1) C4379
 

@@ -1,27 +1,17 @@
 ---
-title: CL seçenekleri sırası | Microsoft Docs
-ms.custom: ''
+title: CL Seçenekleri Sırası
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - cl
-dev_langs:
-- C++
 helpviewer_keywords:
 - cl.exe compiler, setting options
 ms.assetid: 300908ce-ae00-4b45-964b-e4e69ff6777b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3ffe9a440396df14823775db335e52bca6cacdb3
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e5dd07f52f853b17bf663e2fbad7dbe66a3a1db7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725029"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633547"
 ---
 # <a name="order-of-cl-options"></a>CL Seçenekleri Sırası
 

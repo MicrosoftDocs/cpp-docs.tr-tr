@@ -1,29 +1,19 @@
 ---
-title: LT işleci | Microsoft Docs
-ms.custom: ''
+title: LT işleci
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - LT
 - operator LT
-dev_langs:
-- C++
 helpviewer_keywords:
 - LT operator
 - operator LT
 ms.assetid: 6a7b43cc-2f38-49e9-b42e-8e5b5c41b965
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: de4702139148ae4448200b4fbb510803283daf72
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: d8014cd610aa439a888b8ef0af50202e22cd81b4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688727"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429685"
 ---
 # <a name="operator-lt"></a>LT işleci
 

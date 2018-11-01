@@ -1,28 +1,18 @@
 ---
-title: CAtlFileMapping sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlFileMapping sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlFileMapping
 - atlfile/ATL::CAtlFileMapping
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlFileMapping class
 ms.assetid: 899fc058-e05e-48b5-aca9-340403bb9e26
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ccbf3221bddf39c8069e20636c2f2a1deb597866
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 58fb08ee48f3cc51a96304b9c1708dbfbf195adb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116470"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429724"
 ---
 # <a name="catlfilemapping-class"></a>CAtlFileMapping sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1510 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1510
 ms.date: 04/11/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1510
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1510
 ms.assetid: 150c827f-9514-41a9-8d7e-82f820749bcb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 69942cd30bfe8c61dcf522ff3d95a90232462efd
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: f05f79ea78958a7d7a64f24bdce2d1151b93cdfb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49081961"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596241"
 ---
 # <a name="fatal-error-c1510"></a>Önemli hata C1510
 

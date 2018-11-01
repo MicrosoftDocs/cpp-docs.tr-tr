@@ -1,10 +1,6 @@
 ---
-title: CComCriticalSection sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComCriticalSection sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComCriticalSection
 - ATLCORE/ATL::CComCriticalSection
@@ -14,21 +10,15 @@ f1_keywords:
 - ATLCORE/ATL::CComCriticalSection::Term
 - ATLCORE/ATL::CComCriticalSection::Unlock
 - ATLCORE/ATL::CComCriticalSection::m_sec
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComCriticalSection class
 ms.assetid: 44e1edd2-90be-4bfe-9739-58e8b419e7d1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ebabc2d200047acec458c4a29603cc6aee5a589
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ddd6c6a36c05d92d2f53bc4937826581942470dd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076834"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491773"
 ---
 # <a name="ccomcriticalsection-class"></a>CComCriticalSection sınıfı
 

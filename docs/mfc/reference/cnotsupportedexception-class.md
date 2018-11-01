@@ -1,29 +1,19 @@
 ---
-title: CNotSupportedException sınıfı | Microsoft Docs
-ms.custom: ''
+title: CNotSupportedException sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CNotSupportedException
 - AFX/CNotSupportedException
 - AFX/CNotSupportedException::CNotSupportedException
-dev_langs:
-- C++
 helpviewer_keywords:
 - CNotSupportedException [MFC], CNotSupportedException
 ms.assetid: e517391b-eb94-4c39-ae32-87b45bf7d624
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b52151dba90c0cfd0ed834e2ef351838d598eb90
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0eb3bf0de51345ed4316d2a1c5c29b8ecb3e8bba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068808"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456569"
 ---
 # <a name="cnotsupportedexception-class"></a>CNotSupportedException sınıfı
 

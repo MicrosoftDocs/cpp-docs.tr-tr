@@ -1,27 +1,17 @@
 ---
-title: DUMPBIN seçenekleri | Microsoft Docs
-ms.custom: ''
+title: DUMPBIN Seçenekleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - dumpbin
-dev_langs:
-- C++
 helpviewer_keywords:
 - DUMPBIN program, options
 ms.assetid: 563b696e-7599-4480-94b9-014776289ec8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7f13ab0286140cd0b4850250ea270df7ddea551b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5c57c49a39ae135f88f1f1eca25e59a68c7ad1aa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724444"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434313"
 ---
 # <a name="dumpbin-options"></a>DUMPBIN Seçenekleri
 

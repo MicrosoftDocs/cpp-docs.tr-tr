@@ -1,27 +1,16 @@
 ---
-title: Etkinleştirme ve devre dışı bırakma OLE DB hizmetleri | Microsoft Docs
-ms.custom: ''
+title: OLE DB Hizmetlerini Etkinleştirme ve Devre Dışı Bırakma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB services [OLE DB], enabling and disabling
 - service providers [OLE DB]
 ms.assetid: 445f97eb-32a8-41c2-ad26-1169f78a074f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 72c890b94d84d170bb3ee01bd02d08fc00f9aa04
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 65b02eb130dcbaa8c3233bd6e0ba6930df2ed5cc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068235"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509999"
 ---
 # <a name="enabling-and-disabling-ole-db-services"></a>OLE DB Hizmetlerini Etkinleştirme ve Devre Dışı Bırakma
 

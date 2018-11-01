@@ -1,26 +1,16 @@
 ---
-title: C soyut Bildirimciler | Microsoft Docs
-ms.custom: ''
+title: C Soyut Bildirimciler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - declarators, abstract
 - abstract declarations
 ms.assetid: 6a556ad7-0555-421a-aa02-294d77cda8b5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a2056ddd4abaf483cd8685531d2e0fd7a0eb5468
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5dc58b71c8b2032342b6604112673086dc94649b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034375"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429828"
 ---
 # <a name="c-abstract-declarators"></a>C Soyut Bildirimciler
 

@@ -1,28 +1,18 @@
 ---
-title: "Nasıl yapılır: bir System:: String'deki karakterlere erişme | Microsoft Docs"
+title: "Nasıl yapılır: Bir System::String'deki Karakterlere Erişme"
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - characters [C++], accessing in System::String
 - examples [C++], strings
 - strings [C++], accessing characters
 ms.assetid: cfc89756-aef3-4988-907e-fb236dcb7087
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 6c5c4c6032330a58a6f1ea9fb85d3da57c28a177
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6ecd3ed09e31e99898143e30ffe70c1c14aea9f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416194"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667057"
 ---
 # <a name="how-to-access-characters-in-a-systemstring"></a>Nasıl yapılır: Bir System::String'deki Karakterlere Erişme
 

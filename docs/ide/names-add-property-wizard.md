@@ -1,25 +1,15 @@
 ---
-title: Adlar, Özellik Ekleme Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: Adlar, Özellik Ekleme Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.prop.overview
-dev_langs:
-- C++
 ms.assetid: 0453b7ea-89cb-41a1-80a2-d45f61589c0a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ac71d4713a71833886e577106f4bd8fd6565014a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1cb37b2e8f3efd9ff9789a315e6bf32add730708
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410617"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636923"
 ---
 # <a name="names-add-property-wizard"></a>Adlar, Özellik Ekleme Sihirbazı
 

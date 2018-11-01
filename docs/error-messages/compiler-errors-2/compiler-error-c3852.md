@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3852 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3852
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3852
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3852
 ms.assetid: 194e5c5e-0dfb-414e-86db-791c11eb610c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 63bbc18adbe9efb4236763efad9d943809db0547
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4ad7718f4efbeb3b0bc481755fd239615ab796cb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039609"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450706"
 ---
 # <a name="compiler-error-c3852"></a>Derleyici Hatası C3852
 

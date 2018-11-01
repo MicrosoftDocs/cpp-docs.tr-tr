@@ -1,16 +1,10 @@
 ---
-title: Çeviri modu sabitleri | Microsoft Docs
-ms.custom: ''
+title: Çeviri Modu Sabitleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - _O_BINARY
 - _O_TEXT
 - _O_RAW
-dev_langs:
-- C++
 helpviewer_keywords:
 - O_BINARY constant
 - O_TEXT constant
@@ -23,16 +17,12 @@ helpviewer_keywords:
 - translation, modes
 - translation modes (file I/O)
 ms.assetid: a5993bf4-7e7a-47f9-83c3-e46332b85579
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7c2eff59c8f766b96c1abaeaa2eb9b369720cc75
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a703ec322c4d3788b6a057bacfb6dcf5a7a09716
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46015957"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563572"
 ---
 # <a name="translation-mode-constants"></a>Çeviri Modu Sabitleri
 

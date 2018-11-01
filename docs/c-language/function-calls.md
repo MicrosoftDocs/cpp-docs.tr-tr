@@ -1,28 +1,18 @@
 ---
-title: İşlev çağrılarında | Microsoft Docs
-ms.custom: ''
+title: işlev Çağrıları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - function calls, C functions
 - functions [C], calling
 - function calls, about function calls
 - function calls
 ms.assetid: 2cfa897d-3874-4820-933c-e624f75d1712
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cd62a5a4d2ef4c4b2337557b9eb6a37533167dc0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b79854a88b5bc892aae257461d6b05d7792ed44f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016929"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487626"
 ---
 # <a name="function-calls"></a>işlev Çağrıları
 

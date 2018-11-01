@@ -1,27 +1,17 @@
 ---
-title: Global sabitler | Microsoft Docs
-ms.custom: ''
+title: Global Sabitler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.constants
-dev_langs:
-- C++
 helpviewer_keywords:
 - global constants
 ms.assetid: 778d86fd-3ca6-4d2b-b4c5-aee6dc1efe6b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ba313599dafe1d14a4f7cb7fa8e69fd272dd68a3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a23f45b7208899e31d755e17dad4ef1a184746f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46032152"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546392"
 ---
 # <a name="global-constants"></a>Global Sabitler
 

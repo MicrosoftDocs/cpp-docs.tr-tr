@@ -1,10 +1,6 @@
 ---
-title: _ismbbgraph, _ismbbgraph_l | Microsoft Docs
-ms.custom: ''
+title: _ismbbgraph, _ismbbgraph_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbbgraph_l
 - _ismbbgraph
@@ -26,28 +22,22 @@ f1_keywords:
 - _ismbbgraph_l
 - ismbbgraph
 - ismbbgraph_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ismbbgraph_l function
 - ismbbgraph_l function
 - _ismbbgraph function
 - ismbbgraph function
 ms.assetid: b60db718-134f-4796-acc1-592d0b9efbb7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6336beee17759ac01667d7c2aac65be419d9e170
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d5b5dace39e674744148a1ddf0c692692fb889f8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399257"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662890"
 ---
 # <a name="ismbbgraph-ismbbgraphl"></a>_ismbbgraph, _ismbbgraph_l
 
-Belirli bir birden çok baytlı karakter grafik karakter olup olmadığını belirler.
+Belirtilen bir çok baytlı karakterin bir grafik karakter olup olmadığını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,18 +54,18 @@ int _ismbbgraph_l (
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Sınanacak tamsayı.
+Test edilecek tamsayı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sıfır olmayan bir değer döndürür ifade:
+Sıfır dışında bir değer döndürür ifadesi:
 
 `isctype(c, ( _PUNCT | _UPPER | _LOWER | _DIGIT )) || _ismbbkprint(c)`
 
-için sıfır olmayan bir değer olan *c*, veya değilse 0. **_ismbbgraph** için tüm yerel ayara bağımlı davranış geçerli yerel ayarı kullanır. **_ismbbgraph_l** yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+için sıfır dışında *c*, değilse 0. **_ismbbgraph** herhangi bir yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_ismbbgraph_l** bunun yerine iletilmiş yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -84,7 +74,7 @@ için sıfır olmayan bir değer olan *c*, veya değilse 0. **_ismbbgraph** içi
 |**_ismbbgraph**|\<Mbctype.h >|
 |**_ismbbgraph_l**|\<Mbctype.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

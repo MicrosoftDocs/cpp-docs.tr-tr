@@ -1,27 +1,16 @@
 ---
-title: 'Nasıl yapılır: bir .NET koleksiyonundan STL/CLR kapsayıcısına dönüştürme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bir .NET Koleksiyonundan STL/CLR Kapsayıcısına Dönüştürme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - STL/CLR, converting from .NET collections
 - STL/CLR Containers [STL/CLR]
 ms.assetid: bb927c48-78e8-4150-bd0b-787c651f4a87
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 4dd67728773df86f9961fe54c7dd9e4a08ec743d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 39c2beda6ae95783a2a29134013d6f01288a29b6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060955"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431154"
 ---
 # <a name="how-to-convert-from-a-net-collection-to-a-stlclr-container"></a>Nasıl yapılır: Bir .NET Koleksiyonundan STL/CLR Kapsayıcısına Dönüştürme
 

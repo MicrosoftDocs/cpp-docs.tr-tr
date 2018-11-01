@@ -1,10 +1,6 @@
 ---
-title: CMFCToolBarDateTimeCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCToolBarDateTimeCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCToolBarDateTimeCtrl
 - AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl
@@ -29,8 +25,6 @@ f1_keywords:
 - AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnUpdateToolTip
 - AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::SetTime
 - AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::SetTimeAll
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCToolBarDateTimeCtrl [MFC], CMFCToolBarDateTimeCtrl
 - CMFCToolBarDateTimeCtrl [MFC], CanBeStretched
@@ -54,16 +48,12 @@ helpviewer_keywords:
 - CMFCToolBarDateTimeCtrl [MFC], SetTime
 - CMFCToolBarDateTimeCtrl [MFC], SetTimeAll
 ms.assetid: a3853cb9-8ebc-444f-a1e4-9cf905e24c18
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d2ef8bddd43b8a6102a39dfa20787a627c21bb6a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 570611c335130039495b13624737b820144cb7f7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073038"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545840"
 ---
 # <a name="cmfctoolbardatetimectrl-class"></a>CMFCToolBarDateTimeCtrl sınıfı
 

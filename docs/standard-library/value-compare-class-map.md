@@ -1,30 +1,20 @@
 ---
-title: value_compare sınıfı (&lt;harita&gt;) | Microsoft Docs
-ms.custom: ''
+title: value_compare sınıfı (&lt;harita&gt;)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - std::value_compare
 - std.value_compare
 - map/std::value_compare
 - value_compare
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::value_compare
 ms.assetid: ea97c1d0-04b2-4d42-8d96-23522c04cc41
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 46f8d00877aa4147e4b3e4ec2a6a23b70d8154c8
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 69b484944c9ce30dc28fceacfb082051da31c053
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965854"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472143"
 ---
 # <a name="valuecompare-class-ltmapgt"></a>value_compare sınıfı (&lt;harita&gt;)
 

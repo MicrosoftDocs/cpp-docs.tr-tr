@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonSeparator sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonSeparator sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonSeparator
 - AFXBASERIBBONELEMENT/CMFCRibbonSeparator
@@ -16,8 +12,6 @@ f1_keywords:
 - AFXBASERIBBONELEMENT/CMFCRibbonSeparator::IsTabStop
 - AFXBASERIBBONELEMENT/CMFCRibbonSeparator::OnDraw
 - AFXBASERIBBONELEMENT/CMFCRibbonSeparator::OnDrawOnList
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonSeparator [MFC], CMFCRibbonSeparator
 - CMFCRibbonSeparator [MFC], AddToListBox
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - CMFCRibbonSeparator [MFC], OnDraw
 - CMFCRibbonSeparator [MFC], OnDrawOnList
 ms.assetid: bedb1a53-cb07-4c3c-be12-698c5409e7cf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fb8c01145a3f4f0019ca27f38bccb63aa8ab6227
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 05ac8b26cb6b6e7d8e622ecbaac1d4a81bfd35e1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375365"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565938"
 ---
 # <a name="cmfcribbonseparator-class"></a>CMFCRibbonSeparator sınıfı
 

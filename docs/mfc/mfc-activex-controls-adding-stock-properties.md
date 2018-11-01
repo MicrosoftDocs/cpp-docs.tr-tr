@@ -1,12 +1,6 @@
 ---
-title: 'MFC ActiveX denetimleri: Stok Özellikler ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'MFC ActiveX Denetimleri: Stok Özellikler Ekleme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - BackColor property [MFC]
 - properties [MFC], adding stock
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - foreground colors, ActiveX controls
 - foreground colors [MFC]
 ms.assetid: 8b98c8c5-5b69-4366-87bf-0e61e6668ecb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 038d33a81d96067089eb55affbad6991a62d129f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b27979b5492ed03b93aa0d8990c9c0b699242c86
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055209"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607837"
 ---
 # <a name="mfc-activex-controls-adding-stock-properties"></a>MFC ActiveX Denetimleri: Stok Özellikler Ekleme
 

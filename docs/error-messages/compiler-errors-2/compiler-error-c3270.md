@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3270 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3270
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3270
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3270
 ms.assetid: 70e6e76b-7415-48f5-a61e-2ed50caf08e4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9c421ee1efa56e7f7e9a9444bafa15d392a78ae3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 91656ee893f2ad7b3f0c53cb157cd9faf129e4c7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053498"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575727"
 ---
 # <a name="compiler-error-c3270"></a>Derleyici Hatası C3270
 

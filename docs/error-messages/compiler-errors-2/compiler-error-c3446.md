@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3446 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3446
 ms.date: 07/21/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3446
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3445
 ms.assetid: 33064548-24e4-46f1-beb1-476e3c3b3fbf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a88bb77489d2596c271842e7becb0214d1af2821
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8145e0cdd97022ebdcc1a7ce38c8860a005945b0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46018873"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631126"
 ---
 # <a name="compiler-error-c3446"></a>Derleyici Hatası C3446
 

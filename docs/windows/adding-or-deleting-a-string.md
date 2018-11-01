@@ -1,31 +1,20 @@
 ---
-title: Ekleyerek veya silerek bir dize kaynağı (C++) | Microsoft Docs
-ms.custom: ''
+title: Ekleyerek veya silerek bir dize kaynağı (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.string
-dev_langs:
-- C++
 helpviewer_keywords:
 - strings [C++], adding to string tables
 - string tables [C++], deleting strings
 - strings [C++], deleting in string tables
 - string tables [C++], adding strings
 ms.assetid: 077077b4-0f4b-4633-92d6-60b321164cab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: b3800a99a6c3ae22b34f1c70a7a688ae523b7a67
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6c7614c78bb442abe7ae8c174f0bef15afb96e39
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061649"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617938"
 ---
 # <a name="adding-or-deleting-a-string-resource-c"></a>Ekleyerek veya silerek bir dize kaynağı (C++)
 

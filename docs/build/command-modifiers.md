@@ -1,26 +1,16 @@
 ---
-title: Komut değiştiriciler | Microsoft Docs
-ms.custom: ''
+title: Komut Değiştiriciler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - NMAKE program, command modifiers
 - command modifiers
 ms.assetid: b661c432-210f-4f05-bc56-744a46e0fc0b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fd86adc94de90222e0775d89543a4dc25486f74f
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: a9a79364880cf95adca6066b48f0d786391c8ba0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894505"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431818"
 ---
 # <a name="command-modifiers"></a>Komut Değiştiriciler
 

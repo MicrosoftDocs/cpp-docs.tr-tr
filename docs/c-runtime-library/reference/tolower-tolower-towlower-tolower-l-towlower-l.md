@@ -1,10 +1,6 @@
 ---
-title: tolower, _tolower, towlower, _tolower_l, _towlower_l | Microsoft Docs
-ms.custom: ''
+title: tolower, _tolower, towlower, _tolower_l, _towlower_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _tolower_l
 - towlower
@@ -31,8 +27,6 @@ f1_keywords:
 - tolower
 - _tolower
 - towlower
-dev_langs:
-- C++
 helpviewer_keywords:
 - tolower_l function
 - _tolower_l function
@@ -49,16 +43,12 @@ helpviewer_keywords:
 - characters, converting
 - _towlower_l function
 ms.assetid: 86e0fc02-94ae-4472-9631-bf8e96f67b92
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 49b52bd65439165ef8dd83917a0d75926caba518
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f7d017235eddb19b08353dceb332a2721e7434aa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46023672"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50470076"
 ---
 # <a name="tolower-tolower-towlower-tolowerl-towlowerl"></a>tolower, _tolower, towlower, _tolower_l, _towlower_l
 

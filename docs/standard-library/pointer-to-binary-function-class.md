@@ -1,28 +1,18 @@
 ---
-title: pointer_to_binary_function sınıfı | Microsoft Docs
-ms.custom: ''
+title: pointer_to_binary_function Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xfunctional/std::pointer_to_binary
-dev_langs:
-- C++
 helpviewer_keywords:
 - pointer_to_binary_function function
 - pointer_to_binary_function class
 ms.assetid: fb50599f-bcb3-4076-a669-6dcc3eb189a5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cdef0e68e50085513871d1fcacd9cfdb302e9f51
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 42e57c9fd5dafb60a866b24a7a5b8496643d1c76
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107579"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487093"
 ---
 # <a name="pointertobinaryfunction-class"></a>pointer_to_binary_function Sınıfı
 

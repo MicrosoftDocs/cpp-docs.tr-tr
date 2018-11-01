@@ -1,28 +1,17 @@
 ---
-title: async_uuid (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: async_uuid (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.async_uuid
-dev_langs:
-- C++
 helpviewer_keywords:
 - async_uuid attribute
 ms.assetid: 235cb0d7-be58-4dd9-983c-e2a21bbc42c6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 384e3db9d1c5925d64d066b5a5a3b2e9ac4e68eb
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 559500a1390e0d1bac8344d0ffcfc1bdd9ad55f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067371"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50490915"
 ---
 # <a name="asyncuuid"></a>async_uuid
 

@@ -1,16 +1,10 @@
 ---
-title: -SWAPRUN (dosya çıktısını takas dosyasına yükle bağlayıcı) | Microsoft Docs
-ms.custom: ''
+title: /SWAPRUN (Bağlayıcı Çıktısını Takas Dosyasına Yükle)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.SwapRunFromNet
 - /swaprun
 - VC.Project.VCLinkerTool.SwapRunFromCD
-dev_langs:
-- C++
 helpviewer_keywords:
 - -SWAPRUN linker option
 - files [C++], LINK
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - /SWAPRUN linker option
 - SWAPRUN linker option
 ms.assetid: 4a1e7f46-4399-4161-8dfc-d6a71beaf683
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1867eb55f9ebcaba2d29f7b9b4b2f44a68164390
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a21b58cf997c64f099ce3b54f915415243fa9124
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717502"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609917"
 ---
 # <a name="swaprun-load-linker-output-to-swap-file"></a>/SWAPRUN (Bağlayıcı Çıktısını Takas Dosyasına Yükle)
 

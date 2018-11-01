@@ -1,10 +1,6 @@
 ---
-title: strcmp, wcscmp, _mbscmp | Microsoft Docs
-ms.custom: ''
+title: strcmp, wcscmp, _mbscmp
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wcscmp
 - _mbscmp
@@ -31,8 +27,6 @@ f1_keywords:
 - strcmp
 - _tcscmp
 - _ftcscmp
-dev_langs:
-- C++
 helpviewer_keywords:
 - tcscmp function
 - strcmp function
@@ -45,16 +39,12 @@ helpviewer_keywords:
 - _ftcscmp function
 - ftcscmp function
 ms.assetid: 5d216b57-7a5c-4cb3-abf0-0f4facf4396d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ca1591bba9518b1b5f6122f51bf60f5a23fc7a26
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: b7d8614fffc96a600c0d1f92b85503259cfc5cbb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44319012"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50600531"
 ---
 # <a name="strcmp-wcscmp-mbscmp"></a>strcmp, wcscmp, _mbscmp
 

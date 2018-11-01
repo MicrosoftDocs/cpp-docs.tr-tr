@@ -1,25 +1,15 @@
 ---
-title: OLE arka planı | Microsoft Docs
-ms.custom: ''
+title: OLE Arka Planı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE, about OLE
 ms.assetid: 5f654eb5-66b1-40c9-9215-bb85356a67f8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c6c0de0bf2b20f4bdb2d1103154f1ba311fc7134
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5006a648729e1fc561855fcb8cba1d658a9c82cd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443845"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619056"
 ---
 # <a name="ole-background"></a>OLE Arka Planı
 

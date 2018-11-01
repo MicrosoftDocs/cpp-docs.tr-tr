@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2262 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2262
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2262
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2262
 ms.assetid: 727d1c6e-53e8-40e5-b7b8-6a7ac2011727
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 44e60bfcf00e3e01340c3df1b79004e84e93f56c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 12272c21adac0e326cb8b149b359584197577941
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071451"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567069"
 ---
 # <a name="compiler-error-c2262"></a>Derleyici Hatası C2262
 

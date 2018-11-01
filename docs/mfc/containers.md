@@ -1,12 +1,6 @@
 ---
-title: Kapsayıcıları | Microsoft Docs
-ms.custom: ''
+title: Kapsayıcılar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - containers [MFC]
 - OLE containers
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - containers [MFC], OLE container applications
 - containers [MFC], container applications
 ms.assetid: b19d7c05-4d02-44bd-b76a-4a6c25994a62
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 914b2eccf1d9896285eca5cf714dbb4b78a4fe50
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 300561254df41dedf1a8a0ba60e288c1509ee429
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440686"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646877"
 ---
 # <a name="containers"></a>Kapsayıcılar
 

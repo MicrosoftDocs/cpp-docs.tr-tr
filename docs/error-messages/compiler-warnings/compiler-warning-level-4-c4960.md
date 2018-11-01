@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4960 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4960
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4960
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4960
 ms.assetid: 3b4ed286-9e8d-46f1-af0c-00ba669693a9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ed6ba083017c84cd6af05b917ff8417b0394d7c2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ff4a9b3d78a108a45abb18c22049b104e630bf15
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085725"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516369"
 ---
 # <a name="compiler-warning-level-4-c4960"></a>Derleyici Uyarısı (düzey 4) C4960
 

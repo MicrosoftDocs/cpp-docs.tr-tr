@@ -1,14 +1,9 @@
 ---
-title: İleti işleyici işlevleri | Microsoft Docs
-ms.custom: ''
+title: İleti işleyici işlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
 f1_keywords:
 - NOFITY_HANDLER
-dev_langs:
-- C++
 helpviewer_keywords:
 - MESSAGE_HANDLER macro
 - COMMAND_HANDLER macro
@@ -19,16 +14,12 @@ helpviewer_keywords:
 - NOTIFY_HANDLER macro, message handler functions
 - ATL, message handlers
 ms.assetid: 2007a8c5-0143-42f1-91ab-809f235f9d50
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 93e3534f839417b6f601f4e8bc345342cc77ac1c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cded6044372d6f0584e460cd7947600a31dc8877
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040979"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604415"
 ---
 # <a name="message-handler-functions"></a>İleti işleyici işlevleri
 

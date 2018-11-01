@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4326 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4326
 ms.date: 08/27/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4326
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4326
 ms.assetid: d44d2c4e-9456-42d3-b35b-4ba4b2d42ec7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cee18a9ccc807370cf2fb40748939f211a4ba52f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d14a1902db4dcf2224ce6a58db120a81ebb5620f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211010"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601168"
 ---
 # <a name="compiler-warning-level-1-c4326"></a>Derleyici Uyarısı (düzey 1) C4326
 

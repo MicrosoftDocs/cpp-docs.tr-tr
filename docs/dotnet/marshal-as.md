@@ -1,30 +1,20 @@
 ---
-title: marshal_as | Microsoft Docs
-ms.custom: ''
+title: marshal_as
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - marshal_as
 - msclr.interop.marshal_as
 - msclr::interop::marshal_as
-dev_langs:
-- C++
 helpviewer_keywords:
 - marshal_as template [C++]
 ms.assetid: 2ed717da-2b11-41e5-981d-47d251771989
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 4a745c4d57ae721bb1891990c5621084a055dda3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a30f86a41917419474f93a915b92d125112ec7ef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389082"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492202"
 ---
 # <a name="marshalas"></a>marshal_as
 

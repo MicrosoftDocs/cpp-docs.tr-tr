@@ -1,10 +1,6 @@
 ---
-title: ATL Typedefs | Microsoft Docs
-ms.custom: ''
+title: ATL tür tanımları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlcore/ATL::_ATL_BASE_MODULE
 - atlbase/ATL::_ATL_COM_MODULE
@@ -22,23 +18,17 @@ f1_keywords:
 - " atlutil/ATL::LPCURL"
 - atlbase/ATL::DefaultThreadTraits
 - atlutil/ATL::LPURL
-dev_langs:
-- C++
 helpviewer_keywords:
 - typedefs, ATL
 - typedefs
 - ATL, typedefs
 ms.assetid: 7dd05baa-3efb-4e3b-af23-793c610f4560
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9835b8cadb5a24aea130b1e32d919ebb49d20293
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c723d76f17ad1c74ab98e7348450cea3f03c4d78
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065703"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429321"
 ---
 # <a name="atl-typedefs"></a>ATL tür tanımları
 

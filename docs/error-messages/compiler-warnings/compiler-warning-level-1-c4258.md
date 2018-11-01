@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4258 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4258
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4258
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4258
 ms.assetid: bbb75e6d-6693-4e62-8ed3-b006a0ec55e3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b4d9aacd6e3681a1eb42073df8a13d7ce72c5634
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a3ce4c81a86920baddfc1b277df0236a96254be4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46083541"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50478284"
 ---
 # <a name="compiler-warning-level-1-c4258"></a>Derleyici Uyarısı (düzey 1) C4258
 

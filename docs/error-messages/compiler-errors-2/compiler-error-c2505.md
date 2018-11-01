@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2505 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2505
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2505
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2505
 ms.assetid: b19f5c53-399d-425e-90db-fe3ca9b40858
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b6bd22d7a25311b14ed599c6693bfa0c7913b304
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bf5ffb9b6bad3db1d264941a6aefa391be521c98
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46109177"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610216"
 ---
 # <a name="compiler-error-c2505"></a>Derleyici Hatası C2505
 

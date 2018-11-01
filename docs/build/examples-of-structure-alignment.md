@@ -1,30 +1,20 @@
 ---
-title: Yapı hizalama örnekleri | Microsoft Docs
-ms.custom: ''
+title: Yapı Hizalama Örnekleri
 ms.date: 03/26/2018
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - structure alignment
 - examples [C++], structure alignment
 ms.assetid: 03d137bf-5cc4-472e-9583-6498f2534199
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a9c4e8cb27d02777e40af56217bd82dec6e647b6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 27f7e89b1c7faec06347d8760247a76a33e0b91e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367748"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466254"
 ---
 # <a name="examples-of-structure-alignment"></a>Yapı Hizalama Örnekleri
 
-Aşağıdaki dört örnekler her hizalanmış yapı veya birleşim ve karşılık gelen rakamları bu yapı veya birleşim bellek içinde düzenini göstermeye bildirin. Her sütun bir şekilde bir baytlık belleği temsil eder ve o bayt öteleme sütunundaki sayıyı gösterir. Her Şekil ikinci satırında adı bildiriminde değişkeninin adı karşılık gelir. Gölgeli sütun doldurmayı belirtilen hizalama ulaşmak için gerekli olan gösterir.
+Hizalanmış bir yapı veya birleşim ve karşılık gelen rakamları, yapı veya birleşim bellekte düzenini gösteren aşağıdaki dört örnek her bildirin. Her sütunda bir şekil bellek baytını temsil eder ve öteleme bu bayt sayısı sütunundaki sayıyı belirtir. Her Şekil ikinci satırındaki adı bir Değişken bildiriminde adını karşılık gelir. Gölgeli sütunlar doldurmayı belirtilen hizalama ulaşmak için gerekli olan gösterir.
 
 ## <a name="example-1"></a>Örnek 1
 
@@ -36,7 +26,7 @@ _declspec(align(2)) struct {
 }
 ```
 
-![AMD Dönüşüm örneği](../build/media/vcamd_conv_ex_1_block.png "vcAmd_conv_ex_1")
+![AMD dönüştürme örnek](../build/media/vcamd_conv_ex_1_block.png "vcAmd_conv_ex_1")
 
 ## <a name="example-2"></a>Örnek 2
 
@@ -50,7 +40,7 @@ _declspec(align(8)) struct {
 }
 ```
 
-![AMD Dönüşüm örneği](../build/media/vcamd_conv_ex_2_block.png "vcAmd_conv_ex_2")
+![AMD dönüştürme örnek](../build/media/vcamd_conv_ex_2_block.png "vcAmd_conv_ex_2")
 
 ## <a name="example-3"></a>Örnek 3
 
@@ -65,7 +55,7 @@ _declspec(align(4)) struct {
 }
 ```
 
-![AMD Dönüşüm örneği](../build/media/vcamd_conv_ex_3_block.png "vcAmd_conv_ex_3")
+![AMD dönüştürme örnek](../build/media/vcamd_conv_ex_3_block.png "vcAmd_conv_ex_3")
 
 ## <a name="example-4"></a>Örnek 4
 
@@ -79,7 +69,7 @@ _declspec(align(8)) union {
 }
 ```
 
-![AMD Dönüşüm örneği](../build/media/vcamd_conv_ex_4_block.png "vcAmd_conv_ex_4")
+![AMD dönüştürme örnek](../build/media/vcamd_conv_ex_4_block.png "vcAmd_conv_ex_4")
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

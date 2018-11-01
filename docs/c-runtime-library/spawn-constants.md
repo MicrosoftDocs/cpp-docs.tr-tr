@@ -1,18 +1,12 @@
 ---
-title: oluşturma sabitleri | Microsoft Docs
-ms.custom: ''
+title: oluşturma Sabitleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - _P_NOWAIT
 - _P_OVERLAY
 - _P_WAIT
 - _P_DETACH
 - _P_NOWAITO
-dev_langs:
-- C++
 helpviewer_keywords:
 - _P_OVERLAY constant
 - P_DETACH constant
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - P_WAIT constant
 - _P_WAIT constant
 ms.assetid: e0533e88-d362-46fc-b53c-5f193226d879
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8daaf38e60ca48b4a34deb2086bbd14eb45651e4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1bfb13309ae4bd667a5e128300740f4c903f08be
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116938"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580954"
 ---
 # <a name="spawn-constants"></a>oluşturma Sabitleri
 

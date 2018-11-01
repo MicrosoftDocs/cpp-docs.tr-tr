@@ -1,10 +1,6 @@
 ---
-title: _acmdln, _tcmdln, _wcmdln | Microsoft Docs
-ms.custom: ''
+title: _acmdln, _tcmdln, _wcmdln
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _wcmdln
 - _acmdln
@@ -18,8 +14,6 @@ f1_keywords:
 - wcmdln
 - _tcmdln
 - tcmdln
-dev_langs:
-- C++
 helpviewer_keywords:
 - _wcmdln global variable
 - wcmdln global variable
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - tcmdln global variable
 - acmdln global variable
 ms.assetid: 4fc0a6a0-3f93-420a-a19f-5276061ba539
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3c9dd8af9b55ab022277737f2349b27eb257810f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 519cfb305d0092907ff8f10d2b66429a260a5fe2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46135873"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668058"
 ---
 # <a name="acmdln-tcmdln-wcmdln"></a>_acmdln, _tcmdln, _wcmdln
 

@@ -1,28 +1,17 @@
 ---
-title: Bir dize kaynağı (C++) özelliklerini değiştirme | Microsoft Docs
-ms.custom: ''
+title: Bir dize kaynağı (C++) özelliklerini değiştirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - resource identifiers, string properties
 - string tables [C++], changing strings
 - strings [C++], properties
 ms.assetid: 0a220434-f444-4405-9a64-d28d6b965687
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: a873776db6381a78b99e0323e669235b7863ea04
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: efa5f690b18c223c60a68071b335a881633845d5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067650"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450992"
 ---
 # <a name="changing-the-properties-of-a-string-resource-c"></a>Bir dize kaynağı (C++) özelliklerini değiştirme
 

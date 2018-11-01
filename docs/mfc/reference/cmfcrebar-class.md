@@ -1,10 +1,6 @@
 ---
-title: CMFCReBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCReBar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCReBar
 - AFXREBAR/CMFCReBar
@@ -19,8 +15,6 @@ f1_keywords:
 - AFXREBAR/CMFCReBar::OnToolHitTest
 - AFXREBAR/CMFCReBar::OnUpdateCmdUI
 - AFXREBAR/CMFCReBar::SetPaneAlignment
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCReBar [MFC], AddBar
 - CMFCReBar [MFC], CalcFixedLayout
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - CMFCReBar [MFC], OnUpdateCmdUI
 - CMFCReBar [MFC], SetPaneAlignment
 ms.assetid: 02a60e29-6224-49c1-9e74-e0a7d9f8d023
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e3b91d0397b1eec53988e7acd5a5b7dce61db4ec
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f722268cbba2e63227836188c26d8c3d1b0b5c2e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059889"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631055"
 ---
 # <a name="cmfcrebar-class"></a>CMFCReBar sınıfı
 

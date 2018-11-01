@@ -1,30 +1,20 @@
 ---
-title: ATL Hizmetleri | Microsoft Docs
-ms.custom: ''
+title: ATL Hizmetleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
 f1_keywords:
 - CServiceModule
-dev_langs:
-- C++
 helpviewer_keywords:
 - CServiceModule class
 - COM objects, ATL
 - services, ATL
 - ATL services
 ms.assetid: 8c09d1a8-7548-4d2c-947c-9d795a81659b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4875c4844b97e3715c3804f83f4fa3e863eb53bc
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 50a3eecf210cacc35cd80ad82da079b18c998c8b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761036"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456114"
 ---
 # <a name="atl-services"></a>ATL Hizmetleri
 

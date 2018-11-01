@@ -1,10 +1,6 @@
 ---
-title: _mkgmtime, _mkgmtime32, _mkgmtime64 | Microsoft Docs
-ms.custom: ''
+title: _mkgmtime, _mkgmtime32, _mkgmtime64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mkgmtime32
 - _mkgmtime64
@@ -29,8 +25,6 @@ f1_keywords:
 - mkgmtime
 - mkgmtime64
 - _mkgmtime
-dev_langs:
-- C++
 helpviewer_keywords:
 - mkgmtime32 function
 - time functions
@@ -42,20 +36,16 @@ helpviewer_keywords:
 - _mkgmtime32 function
 - time, converting
 ms.assetid: b4ca2b67-e198-4f43-b3e2-e8ad6bd01867
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bcb587cf5504f661512ccf88cf4f15d0555e2f18
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 65d96d79a45e05e4b371315c0612ed086f6ea2a0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405146"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452266"
 ---
 # <a name="mkgmtime-mkgmtime32-mkgmtime64"></a>_mkgmtime, _mkgmtime32, _mkgmtime64
 
-Tarafından temsil edilen bir UTC saati dönüştüren bir **yapısı** **tm** UTC saati için temsil ettiği bir **time_t** türü.
+Tarafından temsil edilen UTC saati dönüştürür bir **yapı** **tm** UTC saati için temsil ettiği bir **time_t** türü.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -74,31 +64,31 @@ __time64_t _mkgmtime64(
 ### <a name="parameters"></a>Parametreler
 
 *timeptr*<br/>
-UTC saati olarak gösteren bir işaretçi bir **yapısı** **tm** dönüştürülemiyor.
+Bir işaretçi UTC saati için bir **yapı** **tm** dönüştürülecek.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Türünde bir miktar **__time32_t** veya **__time64_t** saniye sayısını temsil eden geçen yarısından, 1 Ocak 1970'den itibaren Eşgüdümlü Evrensel Saat (UTC). Tarih aralık dışında ise (Açıklamalar bölümüne bakın) veya giriş geçerli bir saat yorumlanamayan, dönüş değeri -1'dir.
+Türünde bir miktar **__time32_t** veya **__time64_t** gece yarısı, 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC) beri geçen saniye sayısını temsil eden. Tarih aralık dışında ise (Açıklamalar bölümüne bakın) veya giriş geçerli bir saat yorumlanamıyor, dönüş değeri -1'dir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mkgmtime32** ve **_mkgmtime64** işlevleri dönüştürmek için UTC saati bir **__time32_t** veya **__time64_t** süreyi temsil eden tür UTC. UTC saati yerel saate dönüştürmek için **mktime**, **_mktime32**, ve **_mktime64** yerine.
+**_Mkgmtime32** ve **_mkgmtime64** işlevleri dönüştürmek için UTC saati bir **__time32_t** veya **__time64_t** saati temsil eden tür. UTC. Yerel saati UTC saati için dönüştürmek için **mktime**, **_mktime32**, ve **_mktime64** yerine.
 
-**_mkgmtime** değerlendiren bir satır içi işlev **_mkgmtime64**, ve **time_t** eşdeğerdir **__time64_t**. Yorumlamaya derleyici zorlamak gerekiyorsa **time_t** eski 32 bit olarak **time_t**, tanımlayabileceğiniz **_USE_32BIT_TIME_T**. Uygulamanızı 18 Ocak 2038 sonra başarısız olabilir çünkü bu önerilmez (en fazla 32-bit aralığını **time_t**), ve 64 bit platformlarda hiç verilmez.
+**_mkgmtime** olarak değerlendirilen bir satır içi işlevdir **_mkgmtime64**, ve **time_t** eşdeğerdir **__time64_t**. Yorumlamak üzere zorlamanız gerekirse **time_t** eski 32-bit olarak **time_t**, tanımlayabileceğiniz **_use_32bıt_tıme_t**. 18 Ocak 2038 sonrasında uygulamanız işlemi başarısız olduğundan bu önerilmez (32 bit en büyük aralık **time_t**), ve onu tüm 64-bit platformlarda izin verilmez.
 
-İle değiştirilmiş olarak yapısı geçirilen süre aşağıdaki gibi aynı şekilde değiştirilecek **_mktime** işlevleri: **tm_wday** ve **tm_yday** alanları ayarlandığında yeni değerler temel değerlerine **tm_mday** ve **tm_year**. Belirtirken bir **tm** yapısı zaman, Ayarla **tm_isdst** alanı:
+İle değiştirilmiş olarak yapısı geçirilen zaman aşağıdaki gibi aynı şekilde değiştirilecek **_mktime** işlevleri: **tm_wday** ve **tm_yday** alanları ayarlanmış yeni değerler temel değerlerine **tm_mday** ve **tm_year**. Belirtirken bir **tm** ayarlayın, yapı zaman **tm_isdst** alanı:
 
-- Standart Saati geçerli olduğunu belirtmek için bir sıfır (0).
+- Sıfır Standart Saati etkin olduğunu belirtmek için (0).
 
-- Yaz Saati geçerli olduğunu göstermek için 0'dan büyük bir değer.
+- Gün ışığından yararlanma saatine göre geçerli olduğunu göstermek için 0'dan büyük bir değer.
 
-- Bir değer sıfırdan C çalışma zamanı kitaplığı kodu sağlamak için standart saati gün ışığından yararlanma saati etkin olup işlem.
+- Bir değeri sıfırdan küçük C çalışma zamanı kitaplık kodu için standart saat veya gün ışığından yararlanma etkin olup olmadığını işlem.
 
-C çalışma zamanı kitaplığı TZ ortam değişkeninin doğru günışığından belirlemek için kullanır. TZ ayarlanmamışsa, işletim sistemi doğru bölgesel gün ışığından yararlanma saati davranışı elde etmek üzere sorgulanır. **tm_isdst** gerekli bir alandır. Ayarlı değil, kendi değeri tanımsız ise ve dönüş değerini **mktime** tahmin edilemez.
+C çalışma zamanı kitaplığı TZ ortam değişkeninin doğru günışığından tasarruf belirlemek için kullanır. TZ ayarlanmazsa, işletim sistemi doğru bölgesel günışığından süresi davranışını almak için sorgulanır. **tm_isdst** gerekli bir alandır. Değeri tanımlanmamış ayarlanmazsa ve dönüş değeri **mktime** tahmin edilemez.
 
-Aralığı **_mkgmtime32** işlevi, gece yarısıdır, 1 Ocak 1970'ten, 23:59:59 18 Ocak 2038, UTC UTC'ye. Aralığı **_mkgmtime64** gece, 1 Ocak 1970 UTC 23:59:59 arasında 31 Aralık 3000 UTC değil. Bir aralık dışı tarih -1 dönüş değeri sonuçlanır. Aralığı **_mkgmtime** bağlıdır **_USE_32BIT_TIME_T** tanımlanır. (Varsayılan) tanımlı değil ise, aralığı **_mkgmtime64**; Aksi halde, 32-bit aralığı için sınırlı bir aralığı **_mkgmtime32**.
+Aralığı **_mkgmtime32** işlev, 1 Ocak 1970 gece UTC ile 23:59:59 18 Ocak 2038, UTC. Aralığı **_mkgmtime64** 1 Ocak 1970 gece yarısı UTC ile olan 23:59:59, 31 Aralık, 3000, UTC olduğu. -1 dönüş değeri aralık dışı tarih sonuçlanır. Aralığı **_mkgmtime** bağlıdır **_use_32bıt_tıme_t** tanımlanır. (Varsayılan) tanımlı değil, aralığı **_mkgmtime64**; Aksi takdirde, 32-bit aralığı için sınırlı bir aralığı **_mkgmtime32**.
 
-Unutmayın **gmtime** ve **damgasını** dönüştürme için tek bir statik olarak ayrılan arabellek kullanın. Bu arabelleğin sağlarsanız **mkgmtime**, önceki içeriği yok.
+Unutmayın **gmtime** ve **localtime** dönüştürme için tek bir statik olarak ayrılan arabelleğin kullanın. Bu arabelleğin sağlarsanız **mkgmtime**, önceki içeriği yok edilir.
 
 ## <a name="example"></a>Örnek
 
@@ -149,7 +139,7 @@ Local Time: Thu Feb 15 17:14:52 2007
 Greenwich Mean Time: Fri Feb 16 01:14:52 2007
 ```
 
-Aşağıdaki örnek, tamamlanmamış yapısı haftanın günü ve yılın günü hesaplanan değerlerle nasıl doldurulmuş gösterir.
+Aşağıdaki örnek, tamamlanmamış yapısı yılın günü ve haftanın hesaplanan değerlerle nasıl doldurulur gösterir.
 
 ```C
 // crt_mkgmtime2.c

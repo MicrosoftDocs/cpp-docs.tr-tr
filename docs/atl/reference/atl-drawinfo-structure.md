@@ -1,29 +1,19 @@
 ---
-title: Atl_drawınfo yapısı | Microsoft Docs
-ms.custom: ''
+title: Atl_drawınfo yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - ATL::ATL_DRAWINFO
 - ATL_DRAWINFO
 - ATL.ATL_DRAWINFO
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL_DRAWINFO structure
 ms.assetid: dd2e2aa8-e8c5-403b-b4df-35c0f6f57fb7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 87ae430dabf3a4aac54b77afb0b2ed5c143a8875
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3e332213ad8b2697445b13aded6bef605dab32de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116041"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50442633"
 ---
 # <a name="atldrawinfo-structure"></a>Atl_drawınfo yapısı
 

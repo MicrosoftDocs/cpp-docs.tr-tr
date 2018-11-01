@@ -1,26 +1,17 @@
 ---
-title: ATL'ye giriş | Microsoft Docs
+title: ATL'ye giriş
 ms.custom: index-page
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - COM objects, creating in ATL
 - ATL
 ms.assetid: 77f565e8-c4ec-4a80-af4b-7278fcfe5c98
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 93baa57e8567b6ab08a0157f200a4d89fc9813e4
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 50cbf5496569485b32eb1b3e9df932c4e8096d0b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754850"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444778"
 ---
 # <a name="introduction-to-atl"></a>ATL'ye giriş
 

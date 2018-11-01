@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonMainPanel sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonMainPanel sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonMainPanel
 - AFXRIBBONMAINPANEL/CMFCRibbonMainPanel
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::AddToBottom
 - AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::AddToRight
 - AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::GetCommandsFrame
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonMainPanel [MFC], Add
 - CMFCRibbonMainPanel [MFC], AddRecentFilesList
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CMFCRibbonMainPanel [MFC], AddToRight
 - CMFCRibbonMainPanel [MFC], GetCommandsFrame
 ms.assetid: 1af78798-5e75-4365-9c81-a54aa5679602
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e23e883c143b1c65d4f150092193a7a693a34269
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 101c718d25a2e06461156045deea5f42d85e2f4d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065245"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638223"
 ---
 # <a name="cmfcribbonmainpanel-class"></a>CMFCRibbonMainPanel sınıfı
 

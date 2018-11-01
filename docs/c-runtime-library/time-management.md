@@ -1,30 +1,20 @@
 ---
-title: Zaman Yönetimi | Microsoft Docs
-ms.custom: ''
+title: Zaman Yönetimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.memory
-dev_langs:
-- C++
 helpviewer_keywords:
 - dates, run-time library members
 - time, time management
 - date functions
 - time functions
 ms.assetid: 93599220-c011-45d5-978f-12182abfdd2f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f63bfe358e3f077bff780e2c5b4436fb841fd145
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e7b34101e6c09238316d7dc0ebb223ede25d60bf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46083983"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623775"
 ---
 # <a name="time-management"></a>Zaman Yönetimi
 

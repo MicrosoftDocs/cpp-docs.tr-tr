@@ -1,15 +1,9 @@
 ---
-title: -Oy (Çerçeve işaretçisini atlama) | Microsoft Docs
-ms.custom: ''
+title: /Oy (Çerçeve İşaretçisini Atlama)
 ms.date: 09/22/2017
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.OmitFramePointers
 - /oy
-dev_langs:
-- C++
 helpviewer_keywords:
 - omit frame pointer
 - Oy compiler option [C++]
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - suppress frame pointer creation
 - /Oy compiler option [C++]
 ms.assetid: c451da86-5297-4c5a-92bc-561d41379853
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6c077b5a350d7381adc5412ca4a318713d720ad6
-ms.sourcegitcommit: 1870c342d44b10990fd015e60856225c3026e8c2
+ms.openlocfilehash: d6d896079c08ed2cf595b95ed41045885c83b5bc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49963057"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431739"
 ---
 # <a name="oy-frame-pointer-omission"></a>/Oy (Çerçeve İşaretçisini Atlama)
 

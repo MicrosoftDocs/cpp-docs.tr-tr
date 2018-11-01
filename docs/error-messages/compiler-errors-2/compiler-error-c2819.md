@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2819 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2819
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2819
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2819
 ms.assetid: fcc7762d-cb82-4bb1-a715-0d82da832edf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e535b47828a70a7a2e52606bc5c9de6ceb62ee48
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 17b863d24d43f0dc7afb0fc4776953dcb41929e5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46095460"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50457533"
 ---
 # <a name="compiler-error-c2819"></a>Derleyici Hatası C2819
 

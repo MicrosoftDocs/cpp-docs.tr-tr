@@ -1,28 +1,19 @@
 ---
-title: Bağlantı noktası sınıfları (ATL) | Microsoft Docs
-ms.custom: ''
+title: Bağlantı noktaları (ATL) sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
 f1_keywords:
 - vc.atl.connection
-dev_langs:
-- C++
 helpviewer_keywords:
 - classes [C++], connection points
 - connection points classes
 ms.assetid: 076365fa-299a-4dce-84c3-a5dff0e0da1f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 490084ef16afb1f00f05bea07f95d13209661343
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4965e5e371bd96903cad4d7f1e2b0ce3216107ba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024353"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50593979"
 ---
 # <a name="connection-points-classes"></a>Bağlantı noktası sınıfları
 

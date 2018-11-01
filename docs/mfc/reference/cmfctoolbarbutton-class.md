@@ -1,10 +1,6 @@
 ---
-title: CMFCToolBarButton sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCToolBarButton sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCToolBarButton
 - AFXTOOLBARBUTTON/CMFCToolBarButton
@@ -85,8 +81,6 @@ f1_keywords:
 - AFXTOOLBARBUTTON/CMFCToolBarButton::m_nID
 - AFXTOOLBARBUTTON/CMFCToolBarButton::m_nStyle
 - AFXTOOLBARBUTTON/CMFCToolBarButton::m_strText
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCToolBarButton [MFC], CMFCToolBarButton
 - CMFCToolBarButton [MFC], CanBeDropped
@@ -166,16 +160,12 @@ helpviewer_keywords:
 - CMFCToolBarButton [MFC], m_nStyle
 - CMFCToolBarButton [MFC], m_strText
 ms.assetid: 8a6ecffb-86b0-4f5c-8211-a9146b463efd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 08f4c2e5497994cfcd7bf4aa4a0976f7dd3e0a3f
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 930434a6d1e447d38d5cec9a6b0b8adee8e37b81
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861674"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438100"
 ---
 # <a name="cmfctoolbarbutton-class"></a>CMFCToolBarButton sınıfı
 

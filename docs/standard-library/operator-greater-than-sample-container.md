@@ -1,38 +1,28 @@
 ---
-title: İşleç&gt; (&lt;örnek kapsayıcı&gt;) | Microsoft Docs
-ms.custom: ''
+title: İşleç&gt; (&lt;örnek kapsayıcı&gt;)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - std::operator>
 - operator>
 - std::>
 - '>'
-dev_langs:
-- C++
 helpviewer_keywords:
 - '> operator, comparing specific objects'
 - operator >
 ms.assetid: 49bd417a-3305-4ffa-9884-39d3904ed87d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a550a9281428461a3ee0b91d440fb29e1a06f9c7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7d6c1135632d57707812a6702d7226eafa49c0c2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33864040"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643787"
 ---
 # <a name="operatorgt-ltsample-containergt"></a>İşleç&gt; (&lt;örnek kapsayıcı&gt;)
 
 > [!NOTE]
-> Bu konu, Visual C++ belge C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsel bir örnek olarak kullanılıyor. Daha fazla bilgi için bkz: [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
-Overloads **işleci >** iki nesne şablonu sınıfının Karşılaştırılacak [kapsayıcı](../standard-library/sample-container-class.md).
+Aşırı **işleci >** şablon sınıfının iki nesneleri karşılaştırmak için [kapsayıcı](../standard-library/sample-container-class.md).
 
 ## <a name="syntax"></a>Sözdizimi
 

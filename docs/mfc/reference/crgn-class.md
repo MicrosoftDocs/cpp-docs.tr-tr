@@ -1,10 +1,6 @@
 ---
-title: CRgn sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRgn sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CRgn
 - AFXWIN/CRgn
@@ -28,8 +24,6 @@ f1_keywords:
 - AFXWIN/CRgn::PtInRegion
 - AFXWIN/CRgn::RectInRegion
 - AFXWIN/CRgn::SetRectRgn
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRgn [MFC], CRgn
 - CRgn [MFC], CombineRgn
@@ -52,16 +46,12 @@ helpviewer_keywords:
 - CRgn [MFC], RectInRegion
 - CRgn [MFC], SetRectRgn
 ms.assetid: d904da84-76aa-481e-8780-b09485f49e64
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7f6ed7b94509c5dafd868680254c5f48f0066b7f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9c08b679f1423b499a5b95b260fd0fac9ddeaf9d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054234"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467992"
 ---
 # <a name="crgn-class"></a>CRgn sınıfı
 

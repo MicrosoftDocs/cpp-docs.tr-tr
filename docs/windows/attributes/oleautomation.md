@@ -1,28 +1,17 @@
 ---
-title: oleautomation (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: oleautomation (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.oleautomation
-dev_langs:
-- C++
 helpviewer_keywords:
 - oleautomation attribute
 ms.assetid: c1086c91-260b-4dc3-b244-662852d09906
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: ccc83dd6f51c3b7072b17d141f29e93c63688fa1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4a50121e1a2e170ba69ee21526f4600512097c74
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059538"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471675"
 ---
 # <a name="oleautomation"></a>oleautomation
 

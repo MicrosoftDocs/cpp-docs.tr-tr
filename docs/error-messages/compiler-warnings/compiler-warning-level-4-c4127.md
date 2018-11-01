@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4127 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4127
 ms.date: 09/13/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4127
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4127
 ms.assetid: f59ded9e-5227-45bd-ac43-2aa861581363
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 80f831d527e918fce0551f6a1336fd2fe994917d
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 7f1e23d15d8daa126987278611cb5a85a5a36fc9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161287"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614441"
 ---
 # <a name="compiler-warning-level-4-c4127"></a>Derleyici Uyarısı (düzey 4) C4127
 

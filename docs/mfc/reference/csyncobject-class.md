@@ -1,10 +1,6 @@
 ---
-title: CSyncObject sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSyncObject sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSyncObject
 - AFXMT/CSyncObject
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXMT/CSyncObject::Lock
 - AFXMT/CSyncObject::Unlock
 - AFXMT/CSyncObject::m_hObject
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSyncObject [MFC], CSyncObject
 - CSyncObject [MFC], Lock
 - CSyncObject [MFC], Unlock
 - CSyncObject [MFC], m_hObject
 ms.assetid: c62ea6eb-a17b-4e01-aed4-321fc435a5f4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 91a3978b83be0cc1bc85d57cbde87d17eb4cc6d6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d72d167be874d0776ce8da02784c2e0c267c9175
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082808"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547439"
 ---
 # <a name="csyncobject-class"></a>CSyncObject sınıfı
 

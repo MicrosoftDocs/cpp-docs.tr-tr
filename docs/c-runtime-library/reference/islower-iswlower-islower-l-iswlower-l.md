@@ -1,10 +1,6 @@
 ---
-title: islower, iswlower, _islower_l, _iswlower_l | Microsoft Docs
-ms.custom: ''
+title: islower, iswlower, _islower_l, _iswlower_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - iswlower
 - _islower_l
@@ -33,8 +29,6 @@ f1_keywords:
 - _islower _l
 - _islower_l
 - iswlower
-dev_langs:
-- C++
 helpviewer_keywords:
 - _islower _l function
 - _ismbclower_l function
@@ -47,20 +41,16 @@ helpviewer_keywords:
 - iswlower function
 - _islower_l function
 ms.assetid: fcc3b70a-2b47-45fd-944d-e5c1942e6457
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 14fb6eae9e06e973413c21607f2ca2881f33aa38
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 14510d38f5bb4890f98c39b49ca17adc2be3ff41
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401837"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594135"
 ---
 # <a name="islower-iswlower-islowerl-iswlowerl"></a>islower, iswlower, _islower_l, _iswlower_l
 
-Tamsayı bir küçük harf temsil edip etmediğini belirler.
+Bir tamsayı, küçük harf karakteri temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -84,18 +74,18 @@ int _iswlower_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test etmek için bir tamsayı.
+Test edilecek tamsayı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamları döndürür sıfır olmayan IF her *c* bir küçük harf belirli bir gösterimidir. **islower** sıfır olmayan bir değer döndürür *c* bir küçük harf (a - z) karakterdir. **iswlower** sıfır olmayan bir değer döndürür *c* bir küçük harf için karşılık gelen bir uluslararası karakter veya *c* uygulama tanımlı bir geniş karakter kümesi hangi hiçbiri içinbiridir**iswcntrl**, **iswdigit**, **iswpunct**, veya **iswspace** sıfır olmayan bir değer değil. Bu yordamlar her 0 döndürür *c* test durumu uygun değil.
+Yordamların her biri bu döndürür sıfır olmayan *c* bir küçük harf karakter, belirli bir gösterimiyse. **islower** sıfır olmayan bir değer döndürür *c* bir küçük harf (a - z) karakteridir. **iswlower** sıfır olmayan bir değer döndürür *c* küçük harfle, karşılık gelen bir geniş karakterse veya *c* geniş karakterlerin uygulama tanımlı bir dizi öğelerinin hiçbiri içinbiri**iswcntrl**, **iswdigit**, **iswpunct**, veya **iswspace** sıfır değil. Bu yordamların her biri 0 döndürür *c* test koşulu karşılamayan.
 
-Bu işlevleri sürümlerini **_l** soneki yerine geçerli yerel geçirilen yerel ayar için yerel ayara bağımlı davranışlarını kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Sahip bu işlevlerin sürümleri **_l** soneki yerel ayara bağlı davranışları için geçerli yerel ayarı yerine iletilen yerel ayarı kullanır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Davranışını **islower** ve **_islower_l** tanımsız ise *c* EOF değil veya 0'dan 0xFF (bunlar dahil) aralığında. CRT hata ayıklama Kitaplığı kullanıldığında ve *c* bu değerleri işlevleri raise onayı ifade değil.
+Davranışını **islower** ve **_islower_l** tanımsızdır *c* EOF değilse veya 0-0xFF aralığındaysa aralığında. Bir hata ayıklama CRT Kitaplığı kullanıldığında ve *c* değil, bu değerleri işlevleri raise onaylama biridir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -113,7 +103,7 @@ Davranışını **islower** ve **_islower_l** tanımsız ise *c* EOF değil veya
 |**_islower_l**|\<CType.h >|
 |**_swlower_l**|\<CType.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

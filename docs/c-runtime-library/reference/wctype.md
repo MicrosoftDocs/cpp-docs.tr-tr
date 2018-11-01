@@ -1,10 +1,6 @@
 ---
-title: wctype | Microsoft Docs
-ms.custom: ''
+title: wctype
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wctype
 apilocation:
@@ -21,26 +17,20 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - wctype
-dev_langs:
-- C++
 helpviewer_keywords:
 - wctype function
 - wide characters
 ms.assetid: 14aded12-4087-4123-bc48-db4e10999223
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0bb5003db02ed27c2906ebc3619313489e40e5fb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 81caf8e1ab04635d205d7b01af2d4c2896eec01c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411906"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456907"
 ---
 # <a name="wctype"></a>wctype
 
-Joker karakter kodları için bir sınıflandırma kuralı belirler.
+Geniş karakter kodlarını için bir sınıflandırma kuralı belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,21 +43,21 @@ wctype_t wctype(
 ### <a name="parameters"></a>Parametreler
 
 *property*<br/>
-Özellik dizesi.
+Dize özelliği.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Varsa **LC_CTYPE** geçerli yerel ayar kategorisi adı ile eşleşen özellik dizesi bir sınıflandırma kuralı tanımlamak değil *özelliği*, sıfır işlevi döndürür. Aksi takdirde, sıfır olmayan bir değer ikinci bağımsız değişken olarak kullanım için uygun bir sonraki çağrı için döndürür [towctrans](towctrans.md).
+Varsa **LC_CTYPE** geçerli yerel ayarının kategori adı, özellik dizesi ile eşleşen bir sınıflandırma kuralı tanımlamıyor *özelliği*, sıfır döndürür. Aksi takdirde, sıfır dışında bir değeri ikinci bağımsız değişken olarak kullanmak için uygun bir sonraki çağrı döndürür [towctrans](towctrans.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev joker karakter kodları için bir sınıflandırma kuralı belirler. Çağrıları aşağıdaki çiftleri tüm yerel ayarlarda aynı davranışı sahiptir (ancak uygulaması bile "C" yerel ayarda ek sınıflandırma kurallarını tanımlayabilirsiniz):
+İşlev geniş karakter kodlarını için bir sınıflandırma kuralı belirler. Aşağıdaki çağrıları çiftleri tüm yerel ayarlarda aynı davranışa sahip (ancak bir uygulama da "C" yerel ayarında ek sınıflandırma kuralları tanımlayabilirsiniz):
 
 |İşlev|Aynı|
 |--------------|-------------|
-|iswalnum(c)|iswctype (c wctype ("alnum"))|
+|iswalnum(c)|iswctype (c wctype ("alnum'la"))|
 |iswalpha(c)|iswctype (c wctype ("Alfa"))|
-|iswcntrl(c)|iswctype (c wctype ("Dnt"))|
+|iswcntrl(c)|iswctype (c wctype ("CTRL"))|
 |iswdigit(c)|iswctype (c wctype ("basamaklı"))|
 |iswgraph(c)|iswctype (c wctype ("grafiği"))|
 |iswlower(c)|iswctype (c wctype ("alt"))|
@@ -83,7 +73,7 @@ Varsa **LC_CTYPE** geçerli yerel ayar kategorisi adı ile eşleşen özellik di
 |-------------|---------------------|
 |**wctype**|\<wctype.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

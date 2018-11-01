@@ -1,26 +1,16 @@
 ---
-title: Windows Vista ortak denetimleri için derleme gereksinimleri | Microsoft Docs
-ms.custom: ''
+title: Windows Vista Ortak Denetimleri için Derleme Gereksinimleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - common controls (MFC), build requirements
 - common controls (MFC)
 ms.assetid: 025f7d55-55a2-4dcd-8f62-02424e3dcc04
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 969dbc59f1ae2fc90bb467bd03a02abd8d73c4f7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c9a01665339c28b58a5d528cbb9dfaa235e7f1ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383707"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637079"
 ---
 # <a name="build-requirements-for-windows-vista-common-controls"></a>Windows Vista Ortak Denetimleri için Derleme Gereksinimleri
 

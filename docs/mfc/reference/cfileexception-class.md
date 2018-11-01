@@ -1,10 +1,6 @@
 ---
-title: CFileException sınıfı | Microsoft Docs
-ms.custom: ''
+title: CFileException sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CFileException
 - AFX/CFileException
@@ -17,8 +13,6 @@ f1_keywords:
 - AFX/CFileException::m_cause
 - AFX/CFileException::m_lOsError
 - AFX/CFileException::m_strFileName
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFileException [MFC], CFileException
 - CFileException [MFC], ErrnoToException
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - CFileException [MFC], m_lOsError
 - CFileException [MFC], m_strFileName
 ms.assetid: f6491bb9-bfbc-42fd-a952-b33f9b62323f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8db7d3f59ae226eff00c2c3c0f286db996669ce1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e6b1b25f9125701a212f379c925a80ff888d58f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072648"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485832"
 ---
 # <a name="cfileexception-class"></a>CFileException sınıfı
 

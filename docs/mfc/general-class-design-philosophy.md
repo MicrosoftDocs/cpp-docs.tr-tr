@@ -1,14 +1,8 @@
 ---
-title: Genel sınıf tasarımı felsefesi | Microsoft Docs
-ms.custom: ''
+title: Genel Sınıf Tasarımı Felsefesi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.mfc
-dev_langs:
-- C++
 helpviewer_keywords:
 - designing classes [MFC]
 - MFC, Windows API
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - classes [MFC], MFC class design
 - Windows API [MFC], and MFC
 ms.assetid: e6861ae0-1581-4d9c-9ddf-63f9afcdb913
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8fe64ee4d9e6fc678d97c3e9fe37a85e53807541
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f032a4e3dd1dbb5ebed0197e2ee613b948d0b94b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416649"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618237"
 ---
 # <a name="general-class-design-philosophy"></a>Genel Sınıf Tasarımı Felsefesi
 

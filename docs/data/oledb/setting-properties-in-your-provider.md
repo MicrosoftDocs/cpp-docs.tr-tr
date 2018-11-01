@@ -1,27 +1,16 @@
 ---
-title: Sağlayıcınızdaki Özellikleri ayarlama | Microsoft Docs
-ms.custom: ''
+title: Sağlayıcınızdaki Özellikleri Ayarlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB providers, properties
 - properties [C++], OLE DB provider
 ms.assetid: 26a8b493-7ec4-4686-96d0-9ad5d2bca5ac
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 7555e90a6eca9c9f4031458963ff2a90eed552a7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b55f50db11d0f98f987322ff6094f7ca1d68c126
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057848"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50478409"
 ---
 # <a name="setting-properties-in-your-provider"></a>Sağlayıcınızdaki Özellikleri Ayarlama
 

@@ -1,11 +1,6 @@
 ---
-title: csqrt, csqrtf, csqrtl | Microsoft Docs
-ms.custom: ''
+title: csqrt, csqrtf, csqrtl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - csqrt
 - csqrtf
@@ -30,27 +25,21 @@ f1_keywords:
 - complex/csqrt
 - complex/csqrtf
 - complex/csqrtl
-dev_langs:
-- C++
 helpviewer_keywords:
 - csqrt function
 - csqrtf function
 - csqrtl function
 ms.assetid: b65f086b-0f55-4622-a7a3-4e79d9c9c05c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 143bb55180b3394f8ac32b36f7641503dd346b76
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 00fe12d4f9c136278e56ceaf3fa62443092d0ec4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396316"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449887"
 ---
 # <a name="csqrt-csqrtf-csqrtl"></a>csqrt, csqrtf, csqrtl
 
-Negatif gerçek ekseni boyunca kesin bir dal ile karmaşık bir sayının kare kökünü alır.
+Negatif gerçek ekseni kesin bir dal ile karmaşık bir sayının kare kökünü alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -75,28 +64,28 @@ _Lcomplex csqrtl(
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Bir karmaşık sayı.
+Karmaşık bir sayıyı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Kare kökünü *z*. Sağ Yarı-düzlemi sonucudur.
+Kare kökünü *z*. Doğru yarı-düzlemde sonucudur.
 
 |Giriş|SEH özel durumu|**_matherr** özel durumu|
 |-----------|-------------------|--------------------------|
-|± QNAN, UL|yok|_DOMAIN|
+|± QNAN, ONRAKİNİ BUL|yok|_DOMAIN|
 |- ∞|yok|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **csqrt** alın ve dönüş **_Fcomplex** ve **_Lcomplex** değerleri. Bir C programı **csqrt** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **csqrt** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **csqrt** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**csqrt**, **csqrtf**, **csqrtl**|\<Complex.h >|\<ccomplex >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

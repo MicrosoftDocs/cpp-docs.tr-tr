@@ -1,28 +1,18 @@
 ---
-title: -PROFILE (performans araçları Profiler) | Microsoft Docs
-ms.custom: ''
+title: /PROFILE (Performans Araçları Profil Oluşturucusu)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.Profile
-dev_langs:
-- C++
 helpviewer_keywords:
 - -PROFILE linker option
 - /PROFILE linker option
 ms.assetid: e676baa1-5063-47a3-a357-ba0d1f0d1699
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 859ea4091502fa6c339a809a5b9e439c91462bd7
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 26f4ba4efc20f5fee70b2937cdb943689c948888
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45707776"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519928"
 ---
 # <a name="profile-performance-tools-profiler"></a>/PROFILE (Performans Araçları Profil Oluşturucusu)
 
@@ -64,7 +54,7 @@ Performans araçları Profilcisi ile kullanılabilecek bir çıkış dosyası ü
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.Profile%2A>.
+1. Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.Profile%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

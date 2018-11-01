@@ -1,27 +1,17 @@
 ---
-title: invalid_scheduler_policy_value sınıfı | Microsoft Docs
-ms.custom: ''
+title: invalid_scheduler_policy_value Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - concrt/concurrency::invalid_scheduler_policy_value
-dev_langs:
-- C++
 helpviewer_keywords:
 - invalid_scheduler_policy_value class
 ms.assetid: 8c533e3f-2774-4192-8616-b2313b859bf7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0bc8f0d34a49cf8392fec13f956f4577a67248e3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 53a4ee37c28cd7d45552cfe4dd7d25ce9fa37a70
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402752"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50439603"
 ---
 # <a name="invalidschedulerpolicyvalue-class"></a>invalid_scheduler_policy_value Sınıfı
 

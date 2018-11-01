@@ -1,11 +1,6 @@
 ---
-title: _Cbuild, _FCbuild, _LCbuild | Microsoft Docs
-ms.custom: ''
+title: _Cbuild, _FCbuild, _LCbuild
 ms.date: 03/30/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - _Cbuild
 - _FCbuild
@@ -30,26 +25,20 @@ f1_keywords:
 - complex/_Cbuild
 - complex/_FCbuild
 - complex/_LCbuild
-dev_langs:
-- C++
 helpviewer_keywords:
 - _Cbuild function
 - _FCbuild function
 - _LCbuild function
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c6d567dc02715b9e55644b755b6d7360f2fe3d37
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5565c87a3cccd1715a1357f417238587f3fba4d5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394393"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511806"
 ---
 # <a name="cbuild-fcbuild-lcbuild"></a>_Cbuild, _FCbuild, _LCbuild
 
-Karmaşık sayıyı gerçek ve sanal bölümlerinden oluşturur.
+Karmaşık bir sayıyı reel ve sanal parçalarından oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,19 +58,19 @@ Karmaşık sayıyı oluşturmak için sanal parçası.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-A **_Dcomplex**, **_Fcomplex**, veya **_Lcomplex** karmaşık sayıyı temsil eden yapısı (*gerçek*, *sanal*  \* t) belirtilen kayan nokta türü değerleri için.
+A **_Dcomplex**, **_Fcomplex**, veya **_Lcomplex** karmaşık sayıyı temsil eden yapısı (*gerçek*, *sanal*  \* miyim) belirtilen kayan nokta türü değerlerinin.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Cbuild**, **_FCbuild**, ve **_LCbuild** işlevleri karmaşık türler oluşturulmasını basitleştirir. Kullanım [creal, crealf, creall](creal-crealf-creall.md) ve [cimag, cimagf, cimagl](cimag-cimagf-cimagl.md) gösterilen karmaşık numaralar gerçek ve sanal kısımları almak için işlevleri.
+**_Cbuild**, **_FCbuild**, ve **_LCbuild** işlevleri karmaşık türler oluşturulmasını basitleştirir. Kullanım [creal, crealf, creall](creal-crealf-creall.md) ve [cimag, cimagf, cimagl](cimag-cimagf-cimagl.md) gösterilen karmaşık sayıların reel ve sanal kısımlarını almak için işlevleri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**_Cbuild**, **_FCbuild**, **_LCbuild**|\<Complex.h >|\<ccomplex >|
 
-Bu işlevler Microsoft özgüdür. Türleri **_Dcomplex**, **_Fcomplex**, ve **_Lcomplex** uygulanmayan C99 yerel türlerinin Microsoft'a özgü eşdeğerleri olan **çift _Complex** , **_Complex float**, ve **uzun çift _Complex**sırasıyla. Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Bu işlevler Microsoft özgüdür. Türleri **_Dcomplex**, **_Fcomplex**, ve **_Lcomplex** uygulanmayan C99 yerel türler için Microsoft'a özgü eşdeğeri olan **çift _Complex** , **_Complex float**, ve **uzun çift _Complex**sırasıyla. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

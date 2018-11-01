@@ -1,10 +1,6 @@
 ---
-title: _mbsnbset, _mbsnbset_l | Microsoft Docs
-ms.custom: ''
+title: _mbsnbset, _mbsnbset_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbsnbset
 - _mbsnbset_l
@@ -26,8 +22,6 @@ f1_keywords:
 - mbsnbset_l
 - _mbsnbset
 - _mbsnbset_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - tcsnset function
 - _tcsnset_l function
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - tcsnset_l function
 - mbsnbset function
 ms.assetid: 8e46ef75-9a56-42d2-a522-a08450c67c19
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 17cbcb0313ac0a3e14b45d851ee6f4e98d5ec993
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4c0f053cde32d71e4864c442b761606bb56c8829
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206416"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484623"
 ---
 # <a name="mbsnbset-mbsnbsetl"></a>_mbsnbset, _mbsnbset_l
 

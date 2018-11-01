@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2474 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2474
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2474
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2474
 ms.assetid: 64e6c61e-6e77-480e-bcf0-b30a2fc482ac
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bd33c74a0f5fe179b0dfdd5754d15f24bf0026ff
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c49f38b828a41c72135ba9182d4d0f5eee4df1de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092576"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50475315"
 ---
 # <a name="compiler-error-c2474"></a>Derleyici Hatası C2474
 

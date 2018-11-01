@@ -1,25 +1,16 @@
 ---
-title: Varsayılan olarak kapalı olan derleyici uyarıları | Microsoft Docs
+title: Varsayılan Olarak Kapalı Olan Derleyici Uyarıları
 ms.date: 05/30/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - warnings, compiler
 - cl.exe compiler, setting options
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c7b48b2382ee22cc5d11c1145dc494aca4e7997f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 48c18ce5af758e1329f149bc49969dad733af88f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083197"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651379"
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan derleyici uyarıları
 Derleyici, çoğu Geliştirici bunları görmek istemediğinden, varsayılan olarak kapalı uyarıları içerir. Bazı durumlarda, bunlar bir stil seçimi temsil ortak deyimleri eski koduna sahip olan veya dil için bir Microsoft uzantısı yararlanın. Diğer durumlarda, bunlar burada programcılar beklenmeyen veya tanımsız davranışa neden yanlış varsayımlarda bulunmaları genellikle olun bir alanı belirtir. Bu uyarıların bazıları kitaplığı üst bilgilerinde çok gürültülü olabilir. C çalışma zamanı kitaplıkları ve C++ Standart Kitaplığı yalnızca uyarı düzeyinde uyarı yaymak için hedeflenen [/W4](../build/reference/compiler-option-warning-level.md).

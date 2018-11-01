@@ -1,29 +1,19 @@
 ---
-title: CComAutoCriticalSection sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComAutoCriticalSection sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComAutoCriticalSection
 - ATLCORE/ATL::CComAutoCriticalSection
 - ATLCORE/ATL::CComAutoCriticalSection::CComAutoCriticalSection
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComAutoCriticalSection class
 ms.assetid: 491a9d90-3398-4f90-88f5-fd2172a46b30
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 40fa13ecf743bf8e6aa0cd75b16bec65131fe267
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1da9aeb0ff285893ed4f81277f379ad8bffcc65b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061085"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590911"
 ---
 # <a name="ccomautocriticalsection-class"></a>CComAutoCriticalSection sınıfı
 

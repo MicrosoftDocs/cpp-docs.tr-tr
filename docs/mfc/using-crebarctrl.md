@@ -1,29 +1,19 @@
 ---
-title: CReBarCtrl kullanma | Microsoft Docs
-ms.custom: ''
+title: CReBarCtrl Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CReBarCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - child windows [MFC], rebar controls
 - combo boxes [MFC], in rebar controls
 - rebar controls
 ms.assetid: 2c0aeec2-ffc3-44b8-97b5-0f56e116a338
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ed3c7ce85d416e1933b79fc618e6bf748eb32b2c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0317ece49d3d5ee3c815df6f9716809ebb1fd27f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446321"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562181"
 ---
 # <a name="using-crebarctrl"></a>CReBarCtrl Kullanma
 

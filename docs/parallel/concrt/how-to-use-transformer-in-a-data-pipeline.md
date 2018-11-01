@@ -1,27 +1,17 @@
 ---
-title: 'Nasıl yapılır: veri ardışık düzeninde transformer kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Veri Ardışık Düzeninde transformer Kullanma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - transformer class, example
 - data pipelines, using transformer [Concurrency Runtime]
 - using transformer in data pipelines [Concurrency Runtime]
 ms.assetid: ca49cb3f-4dab-4b09-a9c9-d3a109ae4c29
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2c39491543c4d3a16202dac3caee50122ba0c7cf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b94cf3fb7554ba32c03a404fa6616ef1b187e008
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403129"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461431"
 ---
 # <a name="how-to-use-transformer-in-a-data-pipeline"></a>Nasıl yapılır: Veri Ardışık Düzeninde transformer Kullanma
 

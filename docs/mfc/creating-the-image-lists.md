@@ -1,27 +1,17 @@
 ---
-title: Görüntü listelerini oluşturma | Microsoft Docs
-ms.custom: ''
+title: Görüntü Listelerini Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CListCtrl class [MFC], creating image lists for
 - image lists [MFC], creating for CListCtrl
 - lists [MFC], image
 ms.assetid: c2768515-deba-49e8-a6f3-5be6482afb19
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7772b6b6a809e5a89e2cb6b0ef3edb68821805c2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 52f375c98b5f73e0f5721c951c94e4b24f0bc224
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372321"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608686"
 ---
 # <a name="creating-the-image-lists"></a>Görüntü Listelerini Oluşturma
 

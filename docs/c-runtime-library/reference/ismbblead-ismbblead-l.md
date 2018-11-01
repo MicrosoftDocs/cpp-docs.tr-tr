@@ -1,10 +1,6 @@
 ---
-title: _ismbblead, _ismbblead_l | Microsoft Docs
-ms.custom: ''
+title: _ismbblead, _ismbblead_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbblead_l
 - _ismbblead
@@ -28,8 +24,6 @@ f1_keywords:
 - _ismbblead_l
 - ismbblead
 - _istlead
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ismbblead_l function
 - ismbblead function
@@ -38,20 +32,16 @@ helpviewer_keywords:
 - ismbblead_l function
 - _istlead function
 ms.assetid: 2abc6f75-ed5c-472e-bfd0-e905a1835ccf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e2d85459f4addf0688acb5a82b0108ec6133b749
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7bf8e8c88153e2f22cfa08bb35ff8d4ba01a8804
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400599"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452552"
 ---
 # <a name="ismbblead-ismbbleadl"></a>_ismbblead, _ismbblead_l
 
-Birden çok baytlı karakter baytı olup olmadığını belirlemek için bir karakter sınar.
+Çok baytlı karakterin ön baytı olup olmadığını belirlemek için karakteri test eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,37 +58,37 @@ int _ismbblead_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Sınanacak tamsayı.
+Test edilecek tamsayı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sıfır olmayan bir değer döndürür tamsayı *c* birden çok baytlı karakter ilk olarak bayttır.
+Sıfır dışında bir değer döndürür tamsayı *c* olan çok baytlı bir karakterin ilk baytı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Birden çok baytlı karakterler sondaki bayt tarafından izlenen baytı oluşur. Sağlama bayt belirli bir karakter kümesi için belirli bir aralıkta olma yoluyla ayırt edilir. Örneğin, kod sayfası 932 yalnızca, sağlama bayt cinsinden 0x81 - 0x9F ve 0xE0 - 0xFC aralığı.
+Çok baytlı karakter izleyen son ardından baytı oluşur. Ön baytlar verilen bir karakter kümesi için belirli bir aralıkta olmalarıyla fark. Örneğin, kod sayfası 932'de yalnızca ön bayt 0x81-0x9F ve 0xE0 - 0xFC aralığındadır.
 
-**_ismbblead** geçerli yerel ayar için yerel ayara bağımlı davranışı kullanır. **_ismbblead_l** yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**_ismbblead** yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_ismbblead_l** bunun yerine iletilmiş yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_istlead**|Her zaman false döndürür|**_ismbblead**|Her zaman false döndürür|
+|**_istlead**|Daima yanlış getirir|**_ismbblead**|Daima yanlış getirir|
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_ismbblead**|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|
 |**_ismbblead_l**|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|
 
-\* İçin test durumları için bildirim sabitleri.
+\* Test koşullarına ilişkin bildirim sabitleri için.
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

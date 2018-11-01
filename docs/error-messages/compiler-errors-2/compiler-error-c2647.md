@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2647 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2647
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2647
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2647
 ms.assetid: 1034589e-bc3e-41a6-831f-2a1a4b8a2500
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 14187f7b74096a3a863798053ab260177d2f378b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ac69dbb4de23be05d375126947fe003ef75fb85e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46045893"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591873"
 ---
 # <a name="compiler-error-c2647"></a>Derleyici Hatası C2647
 

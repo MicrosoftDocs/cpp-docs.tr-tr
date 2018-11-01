@@ -1,10 +1,6 @@
 ---
-title: CRecordView sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRecordView sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CRecordView
 - AFXDB/CRecordView
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXDB/CRecordView::IsOnLastRecord
 - AFXDB/CRecordView::OnGetRecordset
 - AFXDB/CRecordView::OnMove
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRecordView [MFC], CRecordView
 - CRecordView [MFC], IsOnFirstRecord
@@ -23,16 +17,12 @@ helpviewer_keywords:
 - CRecordView [MFC], OnMove
 - CRecordView [MFC], OnMove
 ms.assetid: 9b4b0897-bd50-4d48-a0b4-f3323f5ccc55
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 23d756afd790fde4ad3bda5519a35901e043860f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c7013fb53562fd76744bff19d1d37ce972a52d52
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432847"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643878"
 ---
 # <a name="crecordview-class"></a>CRecordView sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3271 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3271
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3271
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3271
 ms.assetid: 16d8bd1d-2e30-4c6a-a07f-0c4f3342fab5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d30a203f37e09b84a62863c26b2e0c59c270369a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f94ef54408584e40dc406935e36053352ecf38e8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091861"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651873"
 ---
 # <a name="compiler-error-c3271"></a>Derleyici Hatası C3271
 

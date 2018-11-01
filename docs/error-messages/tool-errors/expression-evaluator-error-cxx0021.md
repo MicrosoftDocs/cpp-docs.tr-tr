@@ -1,28 +1,18 @@
 ---
-title: İfade değerlendirici hatası CXX0021 | Microsoft Docs
-ms.custom: ''
+title: İfade Değerlendirici Hatası CXX0021
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - CXX0021
-dev_langs:
-- C++
 helpviewer_keywords:
 - CXX0021
 - CAN0021
 ms.assetid: d6c0c35a-16c2-42c0-a7d2-e910350a47f0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8ef765286d022b26aeed0ca98c9f43f94f5d17f8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 373829e7200a556b3f832b1da127b4e33aa75749
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46025782"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447807"
 ---
 # <a name="expression-evaluator-error-cxx0021"></a>İfade Değerlendirici Hatası CXX0021
 

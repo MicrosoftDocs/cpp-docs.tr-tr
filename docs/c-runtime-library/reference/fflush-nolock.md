@@ -1,10 +1,6 @@
 ---
-title: _fflush_nolock | Microsoft Docs
-ms.custom: ''
+title: _fflush_nolock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fflush_nolock
 apilocation:
@@ -23,28 +19,22 @@ apitype: DLLExport
 f1_keywords:
 - fflush_nolock
 - _fflush_nolock
-dev_langs:
-- C++
 helpviewer_keywords:
 - fflush_nolock function
 - _fflush_nolock function
 - streams, flushing
 - flushing
 ms.assetid: 5e33c4a1-b10c-4001-ad01-210757919291
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 635d0339125483b385a49e8d42cc7c67b2fb92ba
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 721098899525df02dc3b3d121cf894f8056fcb98
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395597"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464109"
 ---
 # <a name="fflushnolock"></a>_fflush_nolock
 
-İş parçacığı kilitlemeden bir akışa aktarır.
+İş parçacığını kilitlemeden, bir akışa aktarır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,7 +46,7 @@ int _fflush_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -65,7 +55,7 @@ Bkz: [fflush](fflush.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev bir kilitleme sürümüdür **fflush**. Aynı **fflush** dışında girişime diğer iş parçacıkları tarafından korunmuyor. Başka bir iş parçacığı kilitleme yükünü artırmak değil olduğundan daha hızlı olabilir. Tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işler burada gibi iş parçacığı bağlamlarda yalnızca bu işlevi kullanın.
+Bu işlev, kilitleme yapılmayan bir sürümünü **fflush**. Aynıdır **fflush** , başka iş parçacıklarının engellemelerinden korunmamaları hariç aynıdırlar. Diğer iş parçacıklarının kilitleme yüküne tabi olmayan çünkü daha hızlı olabilir. Bu işlev yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -73,11 +63,11 @@ Bu işlev bir kilitleme sürümüdür **fflush**. Aynı **fflush** dışında gi
 |--------------|---------------------|
 |**_fflush_nolock**|\<stdio.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [_flushall](flushall.md)<br/>
 [setvbuf](setvbuf.md)<br/>

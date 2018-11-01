@@ -1,12 +1,6 @@
 ---
-title: (Simgeler için görüntü Düzenleyicisi) renkleri özelleştirme veya değiştirme | Microsoft Docs
-ms.custom: ''
+title: Renkleri Özelleştirme veya Değiştirme (Simgeler İçin Görüntü Düzenleyicisi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - dithered color, Image editor
 - Custom Color Selector dialog box [C++]
@@ -20,17 +14,12 @@ helpviewer_keywords:
 - Adjust Colors command [C++]
 - Image editor [C++], dithered color
 ms.assetid: e58f6b32-f435-4d9a-a570-7569433661ae
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: e507942bbb0e6f77ec6423a51e4260f3fdd647a3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8d41baa83c94568b62044e58e7dd09c3c2238459
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405196"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586283"
 ---
 # <a name="customizing-or-changing-colors-image-editor-for-icons"></a>Renkleri Özelleştirme veya Değiştirme (Simgeler İçin Görüntü Düzenleyicisi)
 

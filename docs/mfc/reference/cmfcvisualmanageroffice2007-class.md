@@ -1,10 +1,6 @@
 ---
-title: CMFCVisualManagerOffice2007 sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCVisualManagerOffice2007 sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCVisualManagerOffice2007
 - AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007
@@ -120,8 +116,6 @@ f1_keywords:
 - AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnSetWindowRegion
 - AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnUpdateSystemColors
 - AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::SetResourceHandle
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCVisualManagerOffice2007 [MFC], AlwaysHighlight3DTabs
 - CMFCVisualManagerOffice2007 [MFC], CleanStyle
@@ -236,16 +230,12 @@ helpviewer_keywords:
 - CMFCVisualManagerOffice2007 [MFC], OnUpdateSystemColors
 - CMFCVisualManagerOffice2007 [MFC], SetResourceHandle
 ms.assetid: fb687c74-6d08-4c72-8acf-27f75dda6d6b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ef1a7f04710806ded2a38b02b1398a5c2b0b06ca
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f26aeb94bdb392040eee1ab4795e580cbce79e69
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060539"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660450"
 ---
 # <a name="cmfcvisualmanageroffice2007-class"></a>CMFCVisualManagerOffice2007 sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: CGlobalUtils sınıfı | Microsoft Docs
-ms.custom: ''
+title: CGlobalUtils sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CGlobalUtils
 - AFXGLOBALUTILS/CGlobalUtils
@@ -24,8 +20,6 @@ f1_keywords:
 - AFXGLOBALUTILS/CGlobalUtils::SetNewParent
 - AFXGLOBALUTILS/CGlobalUtils::StringFromCy
 - AFXGLOBALUTILS/CGlobalUtils::StringFromDecimal
-dev_langs:
-- C++
 helpviewer_keywords:
 - CGlobalUtils [MFC], AdjustRectToWorkArea
 - CGlobalUtils [MFC], CalcExpectedDockedRect
@@ -44,16 +38,12 @@ helpviewer_keywords:
 - CGlobalUtils [MFC], StringFromCy
 - CGlobalUtils [MFC], StringFromDecimal
 ms.assetid: 2c5bd1a6-f80c-4e79-a476-b4ceebabfb2f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 189cc6bccdb1f9111cbe78bf18ff2f15e96a702c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bd382a7f0143d1dce75815430741ef58cee0f8c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053779"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643319"
 ---
 # <a name="cglobalutils-class"></a>CGlobalUtils sınıfı
 

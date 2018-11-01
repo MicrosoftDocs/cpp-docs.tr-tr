@@ -1,31 +1,21 @@
 ---
-title: CCRTAllocator sınıfı | Microsoft Docs
-ms.custom: ''
+title: CCRTAllocator sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CCRTAllocator
 - ATLCORE/ATL::CCRTAllocator
 - ATLCORE/ATL::CCRTAllocator::Allocate
 - ATLCORE/ATL::CCRTAllocator::Free
 - ATLCORE/ATL::CCRTAllocator::Reallocate
-dev_langs:
-- C++
 helpviewer_keywords:
 - CCRTAllocator class
 ms.assetid: 3e1b8cb0-859a-41ab-8e93-6f0b5ceca49d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bfd7d5a040da4d27838e8045b6c4c64950e515dc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5d9ab804478dbf72ec51265a851f62d025ebfba5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054850"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428073"
 ---
 # <a name="ccrtallocator-class"></a>CCRTAllocator sınıfı
 

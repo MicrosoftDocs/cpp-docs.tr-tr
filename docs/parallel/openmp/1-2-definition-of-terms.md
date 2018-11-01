@@ -1,23 +1,13 @@
 ---
-title: 1.2 tanımı koşulları | Microsoft Docs
-ms.custom: ''
+title: 1.2 Terimlerin Tanımı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: fcaa8eb8-bbbf-4a24-ad0e-e299c442db79
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 66cbf25324b71c3fd28bdd344c7a217348cdb5d9
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: ac117a03f784e617e5db246f4bda28e350d2e7a2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861622"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597216"
 ---
 # <a name="12-definition-of-terms"></a>1.2 Terimlerin Tanımı
 

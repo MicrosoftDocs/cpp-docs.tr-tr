@@ -1,28 +1,17 @@
 ---
-title: HelpFile (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: HelpFile (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.helpfile
-dev_langs:
-- C++
 helpviewer_keywords:
 - helpfile attribute
 ms.assetid: d75161c1-1363-4019-ae09-e7e3b8a3971e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 45ecd90dbad7c49dc6563acd7a78ae179403c240
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 594ab4d02065e9b4efe1142c5ced9b76642e5481
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075183"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50488055"
 ---
 # <a name="helpfile"></a>helpfile
 

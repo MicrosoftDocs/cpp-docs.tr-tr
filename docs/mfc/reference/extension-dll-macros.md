@@ -1,25 +1,15 @@
 ---
-title: Makrolar ve İşlevler DLL'leri yönetme | Microsoft Docs
-ms.custom: ''
+title: Makrolar ve İşlevler DLL'leri yönetmek için
 ms.date: 04/03/2017
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - module macros in MFC
 ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 18fda4f020c4143a29ed88526c61f9fdf45a096a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9ef46d9ba026dbabfe1a2c4ac676a8940cdce1d6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054663"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616599"
 ---
 # <a name="macros-and-functions-for-managing-dlls"></a>Makrolar ve İşlevler DLL'leri yönetmek için
 

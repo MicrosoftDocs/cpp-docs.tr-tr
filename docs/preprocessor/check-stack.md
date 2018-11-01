@@ -1,30 +1,20 @@
 ---
-title: check_stack | Microsoft Docs
-ms.custom: ''
+title: check_stack
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.check_stack
 - check_stack_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - check_stack pragma
 - pragmas, check_stack
 - pragmas, check_stack usage table
 ms.assetid: f18e20cc-9abb-48b7-ad62-8d384875b996
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 211a73fb2af2925f40518f2b0eda3f7bd5b5daf1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 93ded20bde98cc4e7b0fc15fd8332195d38f2543
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057250"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50451993"
 ---
 # <a name="checkstack"></a>check_stack
 Gerekirse yığın yoklamalarını devre dışı bırakmak için derleyiciye `off` (veya `-`) belirtilirse, yığın yoklamalarını üzerinde etkinleştirin veya `on` (veya `+`) belirtilir.

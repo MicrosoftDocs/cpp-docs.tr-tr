@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2682 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2682
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2682
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2682
 ms.assetid: 30c6a7c4-f5f7-4fe8-81a8-c48938521ab4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 72dc19170729d7203b57e305ef2c8a0d2b2d6de1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8a9ec2f59f362df284e9bd5cd8df6ae986d59d77
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46049208"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50439422"
 ---
 # <a name="compiler-error-c2682"></a>Derleyici Hatası C2682
 

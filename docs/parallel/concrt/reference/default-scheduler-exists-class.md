@@ -1,29 +1,19 @@
 ---
-title: default_scheduler_exists sınıfı | Microsoft Docs
-ms.custom: ''
+title: default_scheduler_exists Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - default_scheduler_exists
 - CONCRT/concurrency::default_scheduler_exists
 - CONCRT/concurrency::default_scheduler_exists::default_scheduler_exists
-dev_langs:
-- C++
 helpviewer_keywords:
 - default_scheduler_exists class
 ms.assetid: f6e575e2-4e0f-455a-9e06-54f462ce0c1c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a72365cf44c1d1ac92dfc4acde378567668ebdb8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 149a220ba9498b1e1c3b7f09cef94c76c34ac4b5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394899"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501978"
 ---
 # <a name="defaultschedulerexists-class"></a>default_scheduler_exists Sınıfı
 

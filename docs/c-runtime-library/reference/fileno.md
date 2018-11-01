@@ -1,10 +1,6 @@
 ---
-title: _fileno | Microsoft Docs
-ms.custom: ''
+title: _fileno
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fileno
 apilocation:
@@ -22,28 +18,22 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _fileno
-dev_langs:
-- C++
 helpviewer_keywords:
 - file handles [C++], getting from streams
 - fileno function
 - _fileno function
 - streams, getting file handles
 ms.assetid: 86474174-2f17-4100-bcc4-352dd976c7b5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9bc03bcd92eb8040b7eefadd0c109e4e887f7304
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 682ab4b01a663bd9a6314138aa692b1c05b7437a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398871"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646620"
 ---
 # <a name="fileno"></a>_fileno
 
-Bir akış ile ilişkili dosya tanımlayıcısı alır.
+Bir akış ile ilişkili dosya tanımlayıcısını alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,21 +45,21 @@ int _fileno(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_fileno** dosya tanımlayıcısı döndürür. Döndürülen hata yoktur. Sonuç tanımsız ise *akış* açık bir dosyayı belirtmiyor. Akış ise **NULL**, **_fileno** açıklandığı gibi geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev dönüşleri -1 ve kümelerini yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
+**_fileno** dosya tanımlayıcısını döndürür. Döndürülen hata yok. Varsa sonuç tanımsızdır *stream* açık bir dosyayı belirtmiyor. Akış ise **NULL**, **_fileno** açıklandığı gibi geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
 
-Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 > [!NOTE]
-> Varsa **stdout** veya **stderr** ilişkili değil (örneğin, bir Windows uygulamasında bir konsol penceresi olmadan) çıkış akışına ile döndürülen dosya -2 tanımlayıcıdır. Önceki sürümlerde, -1 döndürülen dosya tanımlayıcısı oluştu. Bu değişiklik, bu durum bir hatadan ayırt etmek uygulamaların verir.
+> Varsa **stdout** veya **stderr** ilişkili değil (örneğin, bir konsol penceresi olmadan bir Windows uygulaması) bir çıkış akışı ile döndürülen dosya -2 tanımlayıcısıdır. Önceki sürümlerde, -1 döndürülen dosya tanımlayıcısı oluştu. Bu değişiklik, bu durum bir hata ayırt etmek uygulamalar sağlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Fileno** yordamı ile ilişkilendirilmiş dosya tanımlayıcısı döndürür *akış*. Bu yordam hem de bir işlev makro olarak uygulanır. Ya da uygulama seçme hakkında daha fazla bilgi için bkz: [seçme arasında işlevler ve makrolar](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md).
+**_Fileno** yordamı şu anda ilişkili dosya tanımlayıcısı döndürür *stream*. Bu yordam, hem bir işlev ve makro olarak uygulanmıştır. Uygulamayı seçme hakkında daha fazla bilgi için bkz: [seçme arasında işlevlerle makrolar](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -77,7 +67,7 @@ Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno,
 |--------------|---------------------|
 |**_fileno**|\<stdio.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -105,7 +95,7 @@ The file descriptor for stderr is 2
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
 [_filelength, _filelengthi64](filelength-filelengthi64.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>

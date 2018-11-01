@@ -1,10 +1,6 @@
 ---
-title: Eşzamanlılık Namespace | Microsoft Docs
-ms.custom: ''
+title: concurrency Ad Alanı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - concurrent_priority_queue/concurrency
 - agents/concurrency
@@ -21,21 +17,15 @@ f1_keywords:
 - concurrent_unordered_set/concurrency
 - pplconcrt/concurrency
 - internal_concurrent_hash/concurrency
-dev_langs:
-- C++
 helpviewer_keywords:
 - Concurrency namespace
 ms.assetid: f1d33ca2-679b-4442-b140-22a9d9df61d1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9d423d80606da9edcec2cb5f4da4d02e39213ba7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ccfa168f811b2c357a3760097ca7bbaab4f5ed3a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386034"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50629859"
 ---
 # <a name="concurrency-namespace"></a>concurrency Ad Alanı
 

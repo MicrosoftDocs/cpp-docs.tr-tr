@@ -1,26 +1,16 @@
 ---
-title: operator == işleci (Microsoft::WRL) | Microsoft Docs
-ms.custom: ''
+title: operator== İşleç (Microsoft::WRL)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::operator==
-dev_langs:
-- C++
 ms.assetid: 94f383a5-17a9-40c7-9d9c-778acdc54b27
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 52245054e0112f66a78ffb76043715eb88423c5d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0c8a0937ec446f03ce2365ec23f9d73fc2d10a31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063633"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50451551"
 ---
 # <a name="operator-operator-microsoftwrl"></a>operator== İşleç (Microsoft::WRL)
 

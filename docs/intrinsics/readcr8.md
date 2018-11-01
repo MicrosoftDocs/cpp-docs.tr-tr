@@ -1,27 +1,17 @@
 ---
-title: __readcr8 | Microsoft Docs
-ms.custom: ''
+title: __readcr8
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __readcr8
-dev_langs:
-- C++
 helpviewer_keywords:
 - __readcr8 intrinsic
 ms.assetid: fce16953-87ff-4fbe-8081-7962b97ae46c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0509f7e344e29397aa1dac592d1a898c9d9cdf60
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 041d1b1574ff3d6d3f8bf14575758d1b3ea62e15
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46395506"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602819"
 ---
 # <a name="readcr8"></a>__readcr8
 

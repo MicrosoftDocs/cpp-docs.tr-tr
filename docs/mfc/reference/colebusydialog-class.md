@@ -1,10 +1,6 @@
 ---
-title: COleBusyDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleBusyDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleBusyDialog
 - AFXODLGS/COleBusyDialog
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXODLGS/COleBusyDialog::DoModal
 - AFXODLGS/COleBusyDialog::GetSelectionType
 - AFXODLGS/COleBusyDialog::m_bz
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleBusyDialog [MFC], COleBusyDialog
 - COleBusyDialog [MFC], DoModal
 - COleBusyDialog [MFC], GetSelectionType
 - COleBusyDialog [MFC], m_bz
 ms.assetid: c881a532-9672-4c41-b51b-5ce4a7246a6b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d60a86888f601463fa5c2151eb3243c3f55078ec
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1b8c5522d0e1f223c31cd53e8995c962c7095d46
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380379"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664145"
 ---
 # <a name="colebusydialog-class"></a>COleBusyDialog sınıfı
 

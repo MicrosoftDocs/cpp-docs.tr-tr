@@ -1,10 +1,6 @@
 ---
-title: CAtlDllModuleT sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlDllModuleT sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlDllModuleT
 - ATLBASE/ATL::CAtlDllModuleT
@@ -15,21 +11,15 @@ f1_keywords:
 - ATLBASE/ATL::CAtlDllModuleT::DllRegisterServer
 - ATLBASE/ATL::CAtlDllModuleT::DllUnregisterServer
 - ATLBASE/ATL::CAtlDllModuleT::GetClassObject
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlDllModuleT class
 ms.assetid: 351d5767-8257-4878-94be-45a85e31a72d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 170f46424e8eb4db4c38c91f01a89b53d5cbce0a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 37f57240322c6f69fe25416866cb1b356f3c9909
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107835"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50515875"
 ---
 # <a name="catldllmodulet-class"></a>CAtlDllModuleT sınıfı
 

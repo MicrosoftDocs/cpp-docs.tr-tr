@@ -1,37 +1,27 @@
 ---
-title: Uzak arşivi özellikler (C++ Linux) | Microsoft Docs
-ms.custom: ''
+title: Uzak arşivi özellikleri (C++ Linux)
 ms.date: 9/26/2017
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: Linux
-ms.topic: conceptual
 ms.assetid: 5ee1e44c-8337-4c3a-b2f3-35e4be954f9f
-author: mikeblome
-ms.author: mblome
 f1_keywords: []
-ms.workload:
-- cplusplus
-- linux
-ms.openlocfilehash: 004e015b7e5ad8a99b3bea2bf21b7b598f2fedbd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bcd0e0eef16addc60743000b6ed8cba12276e29c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33328659"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50439236"
 ---
-# <a name="remote-archive-properties-c-linux"></a>Uzak arşivi özellikler (C++ Linux)
+# <a name="remote-archive-properties-c-linux"></a>Uzak arşivi özellikleri (C++ Linux)
 
 Özellik | Açıklama
 --- | ---
-Bir arşiv dizini oluşturma | Bir arşiv dizini (cf. ranlib) oluşturun.  Bu bağlantı hızı ve kendi kitaplığında bağımlılık azaltın.
-İnce arşiv oluşturma | Basit bir arşiv oluşturun.  Basit bir arşiv nesneleri yerine nesnelere relativepaths içerir.  İnce ve Normal arasında geçiş yapma, varolan kitaplık silinmesi gerektirir.
+Arşiv dizini oluştur | Arşiv dizini (cf. ranlib) oluştur.  Bu bağlamayı hızlandırabilir ve kendi kitaplığındaki bağımlılığı azaltabilir.
+Kısa arşiv oluştur | Bir arşiv oluşturun.  Bir arşiv, nesneleri katıştırmak yerine, nesneleri katıştırmak içerir.  İnce ve Normal arasında geçiş yapma varolan kitaplığın silinmesini gerektirir.
 Herhangi bir uyarı oluştur | Kitaplık oluşturulduğunda, uyarma.
-Truncate zaman damgası | Zaman damgaları ve uıd'leri/GID için sıfır değerini kullanın.
-Başlangıç başlığını gösterme | Engelle sürüm numarasını gösterir.
+Zaman damgasını çıkar | Zaman damgaları ve uid'ler/gid'ler için sıfır kullanın.
+Başlangıç başlığını gösterme | Sürüm numarasını gösterme.
 Ayrıntılı | Ayrıntılı
 Ek Seçenekler | Ek Seçenekler.
-Çıkış dosyası | Varsayılan ad ve konum lib oluşturur programın /OUT seçeneğini geçersiz kılar.
-Archiver | Statik nesneleri veya uzak sistem üzerindeki archiver yoluna bağlama sırasında çağırmak için program belirtir.
-Archiver zaman aşımı | Uzak archiver, milisaniye cinsinden zaman aşımı.
-Kopya çıktı | Derleme çıktı dosyası Uzak sistemden yerel makineye kopyalanıp kopyalanmayacağını belirtir.
+Çıkış dosyası | / Out seçeneği varsayılan adını ve lib oluşturduğu program konumunu geçersiz kılar.
+Arşivleyicide | Statik nesneler ya da uzak sistemdeki arşivleyicinin yolunu bağlama sırasında çağrılacak programı belirtir.
+Arşivleyicide zaman aşımı | Uzak arşivleyicide zaman aşımı, milisaniye cinsinden.
+Çıkışı Kopyala | Derleme çıkışı dosyasının Uzak sistemden yerel makineye kopyalanıp kopyalanmayacağını belirtir.

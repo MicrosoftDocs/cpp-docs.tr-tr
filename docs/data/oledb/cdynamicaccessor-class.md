@@ -1,10 +1,6 @@
 ---
-title: CDynamicAccessor sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDynamicAccessor Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL.CDynamicAccessor
 - ATL::CDynamicAccessor
@@ -108,8 +104,6 @@ f1_keywords:
 - ATL.CDynamicAccessor.SetValue<ctype>
 - CDynamicAccessor::SetValue
 - CDynamicAccessor::SetValue<ctype>
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDynamicAccessor class
 - AddBindEntry method
@@ -133,17 +127,12 @@ helpviewer_keywords:
 - SetStatus method
 - SetValue method
 ms.assetid: 374b13b7-1f09-457d-9e6b-df260ff4d178
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: f0288321a6304b6b8e56baf544fea8b438ffe9d5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ba456f11973a33eb3b65b8de940e5be76b821f89
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054286"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461492"
 ---
 # <a name="cdynamicaccessor-class"></a>CDynamicAccessor Sınıfı
 

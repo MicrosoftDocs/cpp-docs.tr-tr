@@ -1,29 +1,19 @@
 ---
-title: NULL (CRT) | Microsoft Docs
-ms.custom: ''
+title: NULL (CRT)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - "null"
-dev_langs:
-- C++
 helpviewer_keywords:
 - "NULL"
 - null pointers
 - NULL, null pointer value
 ms.assetid: f9aac2a0-4f79-423f-8738-a76dccc0b1c3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 469352b8c5729a6797912ce768a87c1f4a0eb9d3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2b94d3a89689b0ff0cddfa91e61832178e0a0b1b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46059842"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613955"
 ---
 # <a name="null-crt"></a>NULL (CRT)
 

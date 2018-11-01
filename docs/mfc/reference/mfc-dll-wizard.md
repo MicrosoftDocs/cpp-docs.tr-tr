@@ -1,14 +1,8 @@
 ---
-title: MFC DLL Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: MFC DLL Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.appwiz.mfc.dll.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC DLLs [MFC], creating
 - MFC DLL Wizard
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - MFC DLLs [MFC]
 - DLLs [MFC], creating
 ms.assetid: 4e936031-7e39-4f40-a295-42a09c5ff264
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 721c8ba75fc72879a2c4c7de0f21010f51513f50
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 7cfaa8db9cf550ae118e53a7c70d64261c48a43c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808790"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50455724"
 ---
 # <a name="mfc-dll-wizard"></a>MFC DLL Sihirbazı
 

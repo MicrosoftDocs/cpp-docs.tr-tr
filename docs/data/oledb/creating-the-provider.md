@@ -1,26 +1,15 @@
 ---
-title: Sağlayıcı oluşturma | Microsoft Docs
-ms.custom: ''
+title: Sağlayıcı Oluşturma
 ms.date: 10/15/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB providers, creating
 ms.assetid: 2506ba8f-010d-4231-aac1-387432f7b6b9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 230620a2375ac5aa822e55496d1f26751ee6f7b3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 05ab045e104e3035f8ccd2fa1924b6959164b8d4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055352"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538196"
 ---
 # <a name="creating-the-provider"></a>Sağlayıcı Oluşturma
 

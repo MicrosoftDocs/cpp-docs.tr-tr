@@ -1,27 +1,17 @@
 ---
-title: Bir uygulamaya aktarma | Microsoft Docs
-ms.custom: ''
+title: Bir Uygulamaya Aktarma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - DLLs [C++], importing
 - importing DLLs [C++], applications
 - applications [C++], importing into
 ms.assetid: 9d646466-e12e-4710-8ad9-c819c0375fcc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e88d34ce685e22e561683cc33db25997650ed7fd
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 96016a12b5164bcaca3f2c562671f5bf09a187f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45718397"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50442711"
 ---
 # <a name="importing-into-an-application"></a>Bir Uygulamaya Aktarma
 

@@ -1,23 +1,13 @@
 ---
-title: UWP uygulamaları, Windows çalışma zamanı ve C çalışma zamanı | Microsoft Docs
-ms.custom: ''
+title: UWP uygulamaları, Windows çalışma zamanı ve C çalışma zamanı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 356d6d8d-76ee-4181-9ad0-6f24b2fede38
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 78f76b6f61eb5d8e7370e61e9cc1f466bdfb4c43
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ea6e3e5017fcbef997a1e844e9f84e9c385bd31d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592725"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441138"
 ---
 # <a name="uwp-apps-the-windows-runtime-and-the-c-run-time"></a>UWP uygulamaları, Windows çalışma zamanı ve C çalışma zamanı
 

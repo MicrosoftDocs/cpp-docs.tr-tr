@@ -1,58 +1,48 @@
 ---
-title: Bağlayıcı girişi olarak .netmodule dosyaları | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Girişi olarak .netmodule Dosyaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - MSIL linking
 - linking [C++], modules
 - .netmodules
 - modules, Visual C++
 ms.assetid: a4bcbe8a-4255-451d-853b-f88cfd82f4e1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bbb2ab74e8c9d0285b9bec2f9979257d89797022
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 050736e5536a1e38b73524f31491b3a01dc99193
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704571"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443583"
 ---
 # <a name="netmodule-files-as-linker-input"></a>Bağlayıcı Girişi olarak .netmodule Dosyaları
 
-Link.exe giriş olarak şimdi MSIL .obj ve .netmodules kabul eder. Bağlayıcı tarafından üretilen çıkış bir derlemeyi ya da hiç çalışma zamanı bağımlılık herhangi bir bağlayıcıya giriş .netmodules ve .obj ile .netmodule dosyasıdır.
+Link.exe giriş olarak artık MSIL .obj ve netmodule'leri kabul eder. Bağlayıcı tarafından üretilen çıkış dosyası bir derleme veya hiçbir çalışma zamanı bağımlılık .obj veya bağlayıcıya giriş netmodule'leri herhangi biri ile bir .netmodule ' dir.
 
-Visual C++ derleyicisi ile tarafından oluşturulan .netmodules [/LN (MSIL modülü Oluştur)](../../build/reference/ln-create-msil-module.md) veya bağlayıcı ile [/NOASSEMBLY (MSIL modülü Oluştur)](../../build/reference/noassembly-create-a-msil-module.md). .objs her zaman bir Visual C++ derleme içinde oluşturulur. Diğer Visual Studio derleyiciler için kullanmak **/target: Module** derleyici seçeneği.
+ile Visual C++ Derleyici tarafından oluşturulmuş. netmodule'leri [/LN (MSIL modülü Oluştur)](../../build/reference/ln-create-msil-module.md) veya bağlayıcı ile [noassembly (MSIL modülü Oluştur)](../../build/reference/noassembly-create-a-msil-module.md). .objs her zaman bir Visual C++ derleme içinde oluşturulur. Diğer Visual Studio derleyicileri için kullanmak **/target: Module** derleyici seçeneği.
 
-.Obj dosya bağlayıcıya .netmodule oluşturulan Visual C++ derlemeden geçmesi gerekir. Bir .netmodule bilgilerinde çünkü artık desteklenmeyen **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+Visual C++ derlemeden .netmodule oluşturulan bağlayıcıya .obj dosyasına geçmesi gerekir. .Netmodule geçirmeye çünkü artık desteklenmiyor **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
-Bağlayıcı komut satırından çağırma hakkında daha fazla bilgi için bkz: [bağlayıcı komut satırı sözdizimi](../../build/reference/linker-command-line-syntax.md), [komut satırında C/C++ derleme kodu](../../build/building-on-the-command-line.md), ve [yolu ve ortam değişkenlerini ayarlama Komut satırı derlemeleri](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md).
+Bağlayıcı komut satırından çağırma hakkında daha fazla bilgi için bkz: [bağlayıcı komut satırı sözdizimi](../../build/reference/linker-command-line-syntax.md), [komut satırında C/C++ derleme kodu](../../build/building-on-the-command-line.md), ve [yolu ve ortam değişkenleri için ayarlayın Komut satırı derlemeleri](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md).
 
-Bağlayıcı için bir .netmodule veya .dll dosyası geçirme derlenmiş ile Visual C++ derleyicisi tarafından **/CLR** bir bağlayıcı hatasına neden. Daha fazla bilgi için bkz: [.netmodule girdi dosyalarını biçimi seçme](../../build/reference/choosing-the-format-of-netmodule-input-files.md).
+Bağlayıcı için bir .netmodule veya .dll dosyası geçirme ile Visual C++ derleyicisi tarafından derlendiği **/CLR** bir bağlayıcı hatasına neden. Daha fazla bilgi için [.netmodule giriş dosyaları biçimini seçme](../../build/reference/choosing-the-format-of-netmodule-input-files.md).
 
-MSIL .obj dosyaları ile derlenmiş yanı sıra yerel .obj dosyaları bağlayıcı kabul **/CLR**. Karma .objs aynı derlemede geçirirken, sonuçta elde edilen çıktı dosyası verifiability varsayılan olarak, en düşük düzeyde verifiability giriş modüllerin eşit olacaktır.
+Bağlayıcı ile derlenmiş MSIL .obj dosyaları yanı sıra yerel .obj dosyaları kabul **/CLR**. Aynı yapı içinde karışık .objs geçirirken, sonuçta gelen çıktı dosyasının doğrulanabilirliği, varsayılan olarak giriş modülleri doğrulanabilirliğinin en düşük düzeyine eşit olacaktır.
 
-Şu anda oluşan bir uygulama iki veya daha fazla derlemelerin varsa ve derlemede dahil edilmek üzere uygulama istediğiniz derlemeleri yeniden derleyin ve .objs veya tek bir derleme üretmek için .netmodules bağlayın.
+Şu anda sahip olduğunuz uygulamanın iki veya daha fazla derleme oluşur ve uygulamanın bir derlemede yer istiyorsanız derlemeleri yeniden derleyin ve ardından .objs veya tek bir derleme oluşturmak için netmodule'leri bağlamanız gerekir.
 
-Bir giriş noktasını kullanarak belirtmelisiniz [/Entry (giriş noktası simgesi)](../../build/reference/entry-entry-point-symbol.md) yürütülebilir görüntü oluşturulurken.
+Bir giriş noktasını kullanarak belirtmelisiniz [/Entry (giriş noktası simgesi)](../../build/reference/entry-entry-point-symbol.md) yürütülebilir bir imaj oluştururken.
 
-Bir MSIL .obj ya da .netmodule dosyasıyla bağlanırken kullanmak [/LTCG (bağlama zamanı kodu oluşturma)](../../build/reference/ltcg-link-time-code-generation.md), aksi takdirde bağlayıcı MSIL .obj veya .netmodule karşılaştığında, onu /LTCG bağlantısıyla başlayacaktır.
+Bir MSIL .obj veya .netmodule dosyası ile bağlanırken kullanmak [/LTCG (bağlama zamanı kodu oluşturma)](../../build/reference/ltcg-link-time-code-generation.md), bağlayıcı MSIL .obj veya .netmodule karşılaştığında, aksi takdirde, bağlantı/LTCG ile yeniden başlatılır.
 
-MSIL .obj veya .netmodule dosyaları cl.exe için de geçirilebilir.
+MSIL .obj veya .netmodule dosyaları cl.exe dosyasına de geçirilebilir.
 
-Giriş MSIL .obj veya .netmodule dosyaları kaynakları katıştırılmış olamaz. Bir kaynak ile bir çıktı dosyasına (modülü veya derleme) katıştırılır [/ASSEMBLYRESOURCE (yönetilen kaynağı katıştır)](../../build/reference/assemblyresource-embed-a-managed-resource.md) bağlayıcı seçeneği veya ile **/Resource** diğer Visual Studio derleyicileri derleyici seçeneği.
+Giriş MSIL .obj veya .netmodule dosyaları kaynakları katıştırılmış olamaz. Bir kaynak bir çıktı dosyası (modül veya derleme) ile katıştırılmış [koduna konmaz (yönetilen kaynağı katıştır)](../../build/reference/assemblyresource-embed-a-managed-resource.md) bağlayıcı seçeneği ile veya **/Resource** diğer Visual Studio derleyicilerinden derleyici seçeneği.
 
-MSIL bağlantılandırma gerçekleştirirken ve ayrıca belirtmezseniz [/LTCG (bağlama zamanı kodu oluşturma)](../../build/reference/ltcg-link-time-code-generation.md), bağlantı yeniden başlatılıyor raporlama bir bilgilendirme iletisi görürsünüz. Bu ileti, MSIL bağlantılandırma bağlayıcı performansı artırmak üzere ancak göz ardı edilebilir, açıkça belirtmek **/LTCG**.
+MSIL bağlantılandırma gerçekleştirirken ve ayrıca belirtmezseniz [/LTCG (bağlama zamanı kodu oluşturma)](../../build/reference/ltcg-link-time-code-generation.md), bağlantıyı yeniden başlatılıyor raporlama bir bilgilendirme iletisi görürsünüz. Bu ileti, ancak ile MSIL bağlantılandırma bağlayıcı performansını artırmak üzere göz ardı edilebilir, açıkça belirtmediğiniz **/LTCG**.
 
 ## <a name="example"></a>Örnek
 
-C++ kodu **catch** karşılık gelen, blok **deneyin** için sistemi olmayan özel çağrılır. Ancak, varsayılan olarak, sistem dışı istisnalar CLR sarmalar <xref:System.Runtime.CompilerServices.RuntimeWrappedException>. Ne zaman bir derlemeyi Visual C++ ve Visual C++ dışı modüllerden oluşturulur ve istediğiniz bir **catch** kendi ilgili çağrılacak C++ kodu engelleme **deneyin** yan tümcesi olduğunda **deneyin**blok sistem dışı özel durum oluşturur, eklemelisiniz `[assembly:System::Runtime::CompilerServices::RuntimeCompatibility(WrapNonExceptionThrows=false)]` özniteliği olmayan C++ modülleri için kaynak koduna.
+C++ kod **catch** karşılık gelen, blok **deneyin** bir sistem dışı özel durumu için çağrılır. Bununla birlikte, varsayılan olarak, sistem dışı istisnalar CLR sarmalar <xref:System.Runtime.CompilerServices.RuntimeWrappedException>. Ne zaman bir derleme Visual C++ ve Visual C++ olmayan modüllerden oluşturulur ve istediğiniz bir **catch** ilgili kendi çağrılmasına C++ kodunda block **deneyin** yan tümcesi olduğunda **deneyin**blok bir sistem dışı özel durumu oluşturur, eklemeniz gerekir `[assembly:System::Runtime::CompilerServices::RuntimeCompatibility(WrapNonExceptionThrows=false)]` olmayan C++ modülleri için kaynak kodu özniteliği.
 
 ```cpp
 // MSIL_linking.cpp
@@ -79,7 +69,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Boolean değerini değiştirerek `WrapNonExceptionThrows` özniteliği, Visual C++ kodu bir sistem dışı özel durumu yakalayın yeteneğini değiştirin.
+Boolean değerini değiştirerek `WrapNonExceptionThrows` öznitelik, bir sistem dışı özel durumu yakalamak için Visual C++ kodu özelliği değiştirin.
 
 ```cpp
 // MSIL_linking_2.cs

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3017 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3017
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3017
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3017
 ms.assetid: 12ab2c2a-d0d2-4900-9cbf-39be0af590dd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 694c4f57df22184c1a6981953d1057252c94030a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7172d870c509e79bf0900604302c38bc6ca9cd77
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061688"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506723"
 ---
 # <a name="compiler-error-c3017"></a>Derleyici Hatası C3017
 

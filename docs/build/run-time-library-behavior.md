@@ -1,15 +1,9 @@
 ---
-title: DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı | Microsoft Docs
-ms.custom: ''
+title: DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
 f1_keywords:
 - _DllMainCRTStartup
 - CRT_INIT
-dev_langs:
-- C++
 helpviewer_keywords:
 - DLLs [C++], entry point function
 - process detach [C++]
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - run-time [C++], DLL startup sequence
 - DLLs [C++], startup sequence
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ce61765a5226a6ff5689cde3a511a12db86aa8f7
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8293e2e05193b34802aba0af722dd06155fdcd81
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45720908"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429061"
 ---
 # <a name="dlls-and-visual-c-run-time-library-behavior"></a>DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı
 

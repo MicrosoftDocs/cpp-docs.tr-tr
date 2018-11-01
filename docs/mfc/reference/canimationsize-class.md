@@ -1,10 +1,6 @@
 ---
-title: CAnimationSize sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAnimationSize sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CAnimationSize
 - AFXANIMATIONCONTROLLER/CAnimationSize
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CAnimationSize::GetAnimationVariableList
 - AFXANIMATIONCONTROLLER/CAnimationSize::m_cxValue
 - AFXANIMATIONCONTROLLER/CAnimationSize::m_cyValue
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAnimationSize [MFC], CAnimationSize
 - CAnimationSize [MFC], AddTransition
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - CAnimationSize [MFC], m_cxValue
 - CAnimationSize [MFC], m_cyValue
 ms.assetid: ea06d1b5-502c-44a3-82ca-8bd6ba6a9364
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2c930c3e56d1b4c17ec2f9fdd1d81a98d6504b62
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ad7200ca53aa99104270209ca253b93d2393d8a8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065115"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448652"
 ---
 # <a name="canimationsize-class"></a>CAnimationSize sınıfı
 

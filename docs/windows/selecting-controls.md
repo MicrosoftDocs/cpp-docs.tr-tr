@@ -1,12 +1,6 @@
 ---
-title: Denetimleri seçme | Microsoft Docs
-ms.custom: ''
+title: Denetimleri Seçme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Dialog Editor [C++], selecting controls
 - dominant controls
@@ -15,17 +9,12 @@ helpviewer_keywords:
 - size, controls
 - controls [C++], dominant
 ms.assetid: 27f05450-4550-4229-9f4c-2c9e06365596
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 9d6b322559777d10f3a53f7ed8adbc5d6a05a342
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ccef63ae6388f376c4be96a34f2857fcedde0ea9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379709"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637105"
 ---
 # <a name="selecting-controls"></a>Denetimleri Seçme
 

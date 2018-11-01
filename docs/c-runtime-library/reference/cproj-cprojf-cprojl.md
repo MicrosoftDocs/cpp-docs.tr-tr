@@ -1,11 +1,6 @@
 ---
-title: cproj, cprojf, cprojl | Microsoft Docs
-ms.custom: ''
+title: cproj, cprojf, cprojl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - cproj
 - cprojf
@@ -30,27 +25,21 @@ f1_keywords:
 - complex/cproj
 - complex/cprojf
 - complex/cprojl
-dev_langs:
-- C++
 helpviewer_keywords:
 - cproj function
 - cprojf function
 - cprojl function
 ms.assetid: 32b49623-13bf-4cae-802e-7912d75030fe
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7e47536df4efa083d3d07827bb7fbf66a8669793
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f1054172a7b5afde134ce9fa735a7eeda3bddafb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394947"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445675"
 ---
 # <a name="cproj-cprojf-cprojl"></a>cproj, cprojf, cprojl
 
-Projeksiyon Reimann küre üzerinde karmaşık bir sayının alır.
+Haritanın Reimann küre üzerinde karmaşık bir sayıyı alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -75,23 +64,23 @@ _Lcomplex cprojl(
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Bir karmaşık sayı.
+Karmaşık bir sayıyı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Projeksiyon çekirdeğinin *z* Reimann küre üzerinde.
+Haritanın *z* Reimann küre üzerinde.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **cproj** alın ve dönüş **_Fcomplex** ve **_Lcomplex** değerleri. Bir C programı **cproj** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **cproj** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **cproj** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**cproj**, **cprojf**, **cprojl**|\<Complex.h >|\<ccomplex >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

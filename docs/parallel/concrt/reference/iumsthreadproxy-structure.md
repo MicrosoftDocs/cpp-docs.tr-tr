@@ -1,10 +1,6 @@
 ---
-title: Iumsthreadproxy yapısı | Microsoft Docs
-ms.custom: ''
+title: IUMSThreadProxy Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - IUMSThreadProxy
 - CONCRTRM/concurrency::IUMSThreadProxy
@@ -13,21 +9,15 @@ f1_keywords:
 - CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::ExitCriticalRegion
 - CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::ExitHyperCriticalRegion
 - CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::GetCriticalRegionType
-dev_langs:
-- C++
 helpviewer_keywords:
 - IUMSThreadProxy structure
 ms.assetid: 61c69b7e-5c37-4048-bcb4-e75c536afd86
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 573bee042788f03278abc78fbc541c933d693907
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9a0fca40f353f64799c4df9001952cb668cd0678
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417390"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50657144"
 ---
 # <a name="iumsthreadproxy-structure"></a>IUMSThreadProxy Yapısı
 

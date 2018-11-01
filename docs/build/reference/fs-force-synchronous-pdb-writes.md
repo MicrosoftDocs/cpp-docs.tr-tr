@@ -1,28 +1,18 @@
 ---
-title: -FS (zaman uyumlu PDB yazmalarını zorla) | Microsoft Docs
-ms.custom: ''
+title: /FS (Zaman Uyumlu PDB Yazmalarını Zorla)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /FS
-dev_langs:
-- C++
 helpviewer_keywords:
 - -FS compiler option [C++]
 - /FS compiler option [C++]
 ms.assetid: b2caaffe-f6e1-4963-b068-648f06b105e0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b332782cb9bcd929bcd67d4d81b7a7d0259f53cc
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 180fe17e2047744a68f477654dc95aa74b25f281
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714603"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660921"
 ---
 # <a name="fs-force-synchronous-pdb-writes"></a>/FS (Zaman Uyumlu PDB Yazmalarını Zorla)
 
@@ -52,7 +42,7 @@ Varsayılan olarak, zaman **/zi** veya **/zi** belirtilirse, derleyicinin tür b
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

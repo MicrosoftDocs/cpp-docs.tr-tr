@@ -1,28 +1,18 @@
 ---
-title: Maksimum dize uzunluğu | Microsoft Docs
-ms.custom: ''
+title: Maksimum Dize Uzunluğu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - lengths, strings
 - string length, maximum
 - maximum string length
 - strings [C++], length
 ms.assetid: 99a80e4a-6212-47b7-a6bd-bdf99bd44928
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 82bf6ef1f868ee182d3bef038ba87b07e85419db
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f2e5461c433a0d195682c1a0f4312a71a8ff5032
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46095554"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50483992"
 ---
 # <a name="maximum-string-length"></a>Maksimum Dize Uzunluğu
 

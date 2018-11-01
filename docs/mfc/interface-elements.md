@@ -1,26 +1,16 @@
 ---
-title: Arabirim öğeleri | Microsoft Docs
-ms.custom: ''
+title: Arabirim Öğeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - architecture [MFC], MFC Feature Pack
 - MFC Feature Pack, architecture
 ms.assetid: eead6827-9602-40a3-8038-8986e8207385
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0f8cb2a8f3ccb36f3fa1ed2bf3f81087691ce988
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 564f0baa34cfb0fe682c2a761fcf8c0d41cd6cb0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404416"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668695"
 ---
 # <a name="interface-elements"></a>Arabirim Öğeleri
 

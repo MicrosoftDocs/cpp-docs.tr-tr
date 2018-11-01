@@ -1,25 +1,15 @@
 ---
-title: Bit alanları | Microsoft Docs
-ms.custom: ''
+title: Bit Alanları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - bitfields
 ms.assetid: e9a1010d-1e1b-487f-9943-3c574e08f544
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a7451ea6afee81cc296fb091705bde48041ef5d1
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3ff0092bbd31b8b1cd98fa56fb802c7ce28cb472
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722494"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50652835"
 ---
 # <a name="bitfields"></a>Bit Alanları
 

@@ -1,10 +1,6 @@
 ---
-title: CComAggObject sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComAggObject sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComAggObject
 - ATLCOM/ATL::CComAggObject
@@ -16,23 +12,17 @@ f1_keywords:
 - ATLCOM/ATL::CComAggObject::QueryInterface
 - ATLCOM/ATL::CComAggObject::Release
 - ATLCOM/ATL::CComAggObject::m_contained
-dev_langs:
-- C++
 helpviewer_keywords:
 - aggregate objects [C++], in ATL
 - aggregation [C++], ATL objects
 - CComAggObject class
 ms.assetid: 7aa90d69-d399-477b-880d-e2cdf0ef7881
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8ffe21526dd106ad067c68da49d6b07bb9e50cf8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3598e625351f80a1a183b3128bf46a72143a02f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039835"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626843"
 ---
 # <a name="ccomaggobject-class"></a>CComAggObject sınıfı
 

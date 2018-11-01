@@ -1,29 +1,18 @@
 ---
-title: Hızlandırıcı tablolarını (C++) düzenleme | Microsoft Docs
-ms.custom: ''
+title: (C++) Hızlandırıcı tablolarını düzenleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.accelerator
-dev_langs:
-- C++
 helpviewer_keywords:
 - accelerator tables [C++], editing
 - keyboard shortcuts [C++], editing in an accelerator table
 ms.assetid: 56e24efb-d06b-4ed9-8915-1f99f725e247
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 1b67650932f846c25edb0bc017ede9a49d59f038
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2714374ab76523729c1b07c87f87fa00fdf5c24f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423461"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537780"
 ---
 # <a name="editing-accelerator-tables-c"></a>(C++) Hızlandırıcı tablolarını düzenleme
 

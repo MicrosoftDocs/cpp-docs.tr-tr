@@ -1,23 +1,13 @@
 ---
-title: 1.6 kuruluş | Microsoft Docs
-ms.custom: ''
+title: 1.6 Organizasyon
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 80c6c3a4-3b08-4b0b-a25d-7ca9b1afcaa7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b2c233a90acb0418afb51425bacb398832d5519d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7c8d35a9c00108c1157f8900abf955953b5086c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410474"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50436822"
 ---
 # <a name="16-organization"></a>1.6 Organizasyon
 

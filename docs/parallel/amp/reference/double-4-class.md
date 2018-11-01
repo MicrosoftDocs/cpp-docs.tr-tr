@@ -1,10 +1,6 @@
 ---
-title: double_4 sınıfı | Microsoft Docs
-ms.custom: ''
+title: double_4 Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_4::get_xw
 - amp_short_vectors/Concurrency::graphics::double_4::wxz
@@ -271,19 +267,13 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_4::set_xwyz
 - amp_short_vectors/Concurrency::graphics::double_4::bag
 - amp_short_vectors/Concurrency::graphics::double_4::zwy
-dev_langs:
-- C++
 ms.assetid: a81c1595-24c6-4b3f-9574-d5942275e5e8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 209f21da57b8b188ceee643d9ac63a0f7cf90ba2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3de59c57c1303fec06e5926f445cdbbb21e13c55
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421578"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631757"
 ---
 # <a name="double4-class"></a>double_4 Sınıfı
 

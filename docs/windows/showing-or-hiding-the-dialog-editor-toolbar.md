@@ -1,29 +1,18 @@
 ---
-title: Gösterme veya gizleme (C++) iletişim kutusu araç çubuğunu | Microsoft Docs
-ms.custom: ''
+title: Gösterme veya gizleme (C++) iletişim kutusu Düzenleyicisi araç çubuğu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - controls [C++], showing or hiding Dialog editor toolbar
 - toolbars [C++], showing
 - toolbars [C++], hiding
 - Dialog Editor [C++], showing or hiding toolbar
 ms.assetid: 93c255e1-90eb-48b6-8602-450acda75bed
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 02deeeed3eecf717cff380e43317e5a75c1fddf7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e025f560a47f85d17b8c56a4db19f322069d33ef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381250"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631094"
 ---
 # <a name="showing-or-hiding-the-dialog-editor-toolbar-c"></a>Gösterme veya gizleme (C++) iletişim kutusu Düzenleyicisi araç çubuğu
 

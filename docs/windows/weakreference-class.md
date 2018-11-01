@@ -1,9 +1,6 @@
 ---
-title: WeakReference sınıfı | Microsoft Docs
-ms.custom: ''
+title: WeakReference Sınıfı
 ms.date: 09/24/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::WeakReference
@@ -13,8 +10,6 @@ f1_keywords:
 - implements/Microsoft::WRL::Details::WeakReference::SetUnknown
 - implements/Microsoft::WRL::Details::WeakReference::~WeakReference
 - implements/Microsoft::WRL::Details::WeakReference::WeakReference
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Details::WeakReference class
 - Microsoft::WRL::Details::WeakReference::DecrementStrongReference method
@@ -24,17 +19,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::WeakReference::~WeakReference, destructor
 - Microsoft::WRL::Details::WeakReference::WeakReference, constructor
 ms.assetid: 3f4c956b-dbbd-49b1-8cfa-9509a9956c97
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: d3682e9b84567a2be77312496a6219238f81625d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a3372a176a158dd9c89eb888c8deb0244eef9a84
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059109"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654941"
 ---
 # <a name="weakreference-class"></a>WeakReference Sınıfı
 

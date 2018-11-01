@@ -1,28 +1,18 @@
 ---
-title: Karakter Sınıflaması | Microsoft Docs
-ms.custom: ''
+title: Karakter Sınıflaması
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.types.character
-dev_langs:
-- C++
 helpviewer_keywords:
 - character classification routines
 - characters, testing
 ms.assetid: 3b6c8f0b-9701-407a-b384-9086698773f5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f4c194432c3d7442677a78046ac893e5e3e2a7ee
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: af1f0ae93d1313e914da08469ed89122c345044b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101351"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496323"
 ---
 # <a name="character-classification"></a>Karakter Sınıflaması
 

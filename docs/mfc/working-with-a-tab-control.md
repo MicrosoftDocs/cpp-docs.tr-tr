@@ -1,27 +1,17 @@
 ---
-title: Sekme denetimiyle çalışma | Microsoft Docs
-ms.custom: ''
+title: Sekme Denetimiyle Çalışma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTabCtrl class [MFC], using
 - tab controls [MFC], working with
 - tab controls [MFC], using
 ms.assetid: 819488e3-4944-44b7-9483-195edb8e0aed
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 12de4065774c4813eeb10fab902551db14d10d3a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: faf6494fe9a1d7e5a089c4bea91b8cc4abdc590d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420848"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50470817"
 ---
 # <a name="working-with-a-tab-control"></a>Sekme Denetimiyle Çalışma
 

@@ -1,27 +1,16 @@
 ---
-title: 'Nasıl yapılır: boş CLR projeleri oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Boş CLR Projeleri Oluşturma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CLR empty projects
 - CLR empty projects, creating
 ms.assetid: edb4574f-fea7-426d-9b5c-fa4ecad2befb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 7b6a915dbe9904a7bbe56e8ba1100631bd954d86
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0acfa073d0aa11dec63ad26f1fac4ec206cda6c1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071173"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612140"
 ---
 # <a name="how-to-create-clr-empty-projects"></a>Nasıl yapılır: Boş CLR Projeleri Oluşturma
 

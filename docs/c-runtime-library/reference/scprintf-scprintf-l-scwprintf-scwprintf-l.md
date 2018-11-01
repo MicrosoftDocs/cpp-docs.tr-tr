@@ -1,10 +1,6 @@
 ---
-title: _scprintf, _scprintf_l, _scwprintf, _scwprintf_l | Microsoft Docs
-ms.custom: ''
+title: _scprintf, _scprintf_l, _scwprintf, _scwprintf_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _scprintf_l
 - _scwprintf
@@ -33,8 +29,6 @@ f1_keywords:
 - _sctprintf_l
 - scwprintf_l
 - _sctprintf
-dev_langs:
-- C++
 helpviewer_keywords:
 - scprintf function
 - sctprintf_l function
@@ -50,20 +44,16 @@ helpviewer_keywords:
 - _scprintf function
 - scwprintf function
 ms.assetid: ecbb0ba6-5f4c-4ce6-a64b-144ad8b5fe92
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d9d912d039cc732ebfe5399a90422d8b68d51332
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 09c44bbf6f918211c1aa2ee875a23bfcc7ca2da5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407219"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500860"
 ---
 # <a name="scprintf-scprintfl-scwprintf-scwprintfl"></a>_scprintf, _scprintf_l, _scwprintf, _scwprintf_l
 
-Karakter sayısını biçimlendirilmiş dizesini döndürür.
+Biçimlendirilen dize içinde karakter sayısını döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -90,7 +80,7 @@ int _scwprintf_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biçimi*<br/>
+*Biçim*<br/>
 Biçim denetimi dizesi.
 
 *Bağımsız değişken*<br/>
@@ -99,21 +89,21 @@ Biçim denetimi dizesi.
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
-Daha fazla bilgi için bkz: [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+Daha fazla bilgi için [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dize yazdırılması veya bir dosyayı veya belirtilen biçimlendirme kodlarını kullanarak arabellek gönderilen olsaydı, oluşturulacak karakterlerin sayısını döndürür. Döndürülen değer sonlandırma null karakteri içermez. **_scwprintf** geniş karakterler için aynı işlevi gerçekleştirir.
+Dize yazdırılması veya bir dosya veya belirtilen biçimlendirme kodları kullanılarak arabellek gönderilen çıkacaksa oluşturulacak karakter sayısını döndürür. Sondaki null karakter, döndürülen değer içermez. **_scwprintf** geniş karakterler için de aynı işlevi gerçekleştirir.
 
-Varsa *biçimi* olan bir **NULL** işaretçi, geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
+Varsa *biçimi* olduğu bir **NULL** işaretçiyse, geçersiz parametre işleyicisi çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
 
-Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her *bağımsız değişkeni* (varsa) karşılık gelen biçimi belirtiminde göre dönüştürülür *biçimi*. Biçim sıradan karakterden oluşan ve aynı form ve olarak işlev *biçimi* bağımsız değişkeni için [printf](printf-printf-l-wprintf-wprintf-l.md).
+Her *bağımsız değişken* (varsa) karşılık gelen kapsamındaki biçim belirtimine göre dönüştürülür *biçimi*. Biçim sıradan karakterlerden oluşur ve aynı forma ve işleve sahiptir *biçimi* için bağımsız değişken [printf](printf-printf-l-wprintf-wprintf-l.md).
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
 
 > [!IMPORTANT]
 > Emin *biçimi* kullanıcı tanımlı bir dize değil.
@@ -132,7 +122,7 @@ Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar
 |**_scprintf**, **_scprintf_l**|\<stdio.h >|
 |**_scwprintf**, **_scwprintf_l**|\<stdio.h > veya \<wchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -171,7 +161,7 @@ The value of Pi is calculated to be 3.141593.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>

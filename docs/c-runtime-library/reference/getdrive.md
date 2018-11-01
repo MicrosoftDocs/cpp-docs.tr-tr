@@ -1,10 +1,6 @@
 ---
-title: _getdrive | Microsoft Docs
-ms.custom: ''
+title: _getdrive
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _getdrive
 apilocation:
@@ -23,31 +19,25 @@ apitype: DLLExport
 f1_keywords:
 - _getdrive
 - getdrive
-dev_langs:
-- C++
 helpviewer_keywords:
 - current disk drive
 - getdrive function
 - disk drives
 - _getdrive function
 ms.assetid: e40631a0-8f1a-4897-90ac-e1037ff30bca
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e99b95da8bec73475dcd1cbd71f6f5165a45d004
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d71f72c00cc384d5f4f69d8a58dbcfb7aa39332f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399858"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50470687"
 ---
 # <a name="getdrive"></a>_getdrive
 
-Geçerli disk sürücüsü alır.
+Geçerli disk sürücüsünü alır.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,7 +47,7 @@ int _getdrive( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Geçerli (varsayılan) sürücü döndürür (1 = A, 2 = B vb.). Döndürülen hata yoktur.
+Geçerli (varsayılan) sürücüyü döndürür (1 = A, 2 = B vb.). Döndürülen hata yok.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -65,7 +55,7 @@ Geçerli (varsayılan) sürücü döndürür (1 = A, 2 = B vb.). Döndürülen h
 |-------------|---------------------|
 |**_getdrive**|\<Direct.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

@@ -1,10 +1,6 @@
 ---
-title: CTooltipManager sınıfı | Microsoft Docs
-ms.custom: ''
+title: CTooltipManager sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CTooltipManager
 - AFXTOOLTIPMANAGER/CTooltipManager
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXTOOLTIPMANAGER/CTooltipManager::SetTooltipParams
 - AFXTOOLTIPMANAGER/CTooltipManager::SetTooltipText
 - AFXTOOLTIPMANAGER/CTooltipManager::UpdateTooltips
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTooltipManager [MFC], CreateToolTip
 - CTooltipManager [MFC], DeleteToolTip
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CTooltipManager [MFC], SetTooltipText
 - CTooltipManager [MFC], UpdateTooltips
 ms.assetid: c71779d7-8b6e-47ef-8500-d4552731fe86
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ae35c6b38bbc5370d0b09341403f38c048bc3ae4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 79589cb631635f4ed8b85f4399a86e8fadf61dda
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424748"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431677"
 ---
 # <a name="ctooltipmanager-class"></a>CTooltipManager sınıfı
 

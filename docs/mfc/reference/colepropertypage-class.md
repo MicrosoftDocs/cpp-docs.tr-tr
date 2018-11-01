@@ -1,10 +1,6 @@
 ---
-title: COlePropertyPage sınıfı | Microsoft Docs
-ms.custom: ''
+title: COlePropertyPage sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COlePropertyPage
 - AFXCTL/COlePropertyPage
@@ -24,8 +20,6 @@ f1_keywords:
 - AFXCTL/COlePropertyPage::SetHelpInfo
 - AFXCTL/COlePropertyPage::SetModifiedFlag
 - AFXCTL/COlePropertyPage::SetPageName
-dev_langs:
-- C++
 helpviewer_keywords:
 - COlePropertyPage [MFC], COlePropertyPage
 - COlePropertyPage [MFC], GetControlStatus
@@ -44,16 +38,12 @@ helpviewer_keywords:
 - COlePropertyPage [MFC], SetModifiedFlag
 - COlePropertyPage [MFC], SetPageName
 ms.assetid: e9972872-8e6b-4550-905e-d36a274d64dc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7db08ae9b9c2899709f4c6511478714869475ae7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 905f92ef7875dac984b6c0d537e4687dcc779f49
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386437"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605718"
 ---
 # <a name="colepropertypage-class"></a>COlePropertyPage sınıfı
 

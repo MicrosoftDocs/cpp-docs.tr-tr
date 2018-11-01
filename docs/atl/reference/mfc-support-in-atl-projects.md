@@ -1,27 +1,17 @@
 ---
-title: ATL projelerinde MFC desteği | Microsoft Docs
-ms.custom: ''
+title: ATL projelerinde MFC desteği
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.atl.addmfc
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL projects, MFC support
 ms.assetid: f90b4276-cb98-4c11-902c-9ebcfe6f954b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ad9e55fa296b8a39e4c77ab33240c837b6c871ea
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 21e3305ce2d2968a3809793eb487317e224351f4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063503"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50489394"
 ---
 # <a name="mfc-support-in-atl-projects"></a>ATL projelerinde MFC desteği
 

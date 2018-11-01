@@ -1,10 +1,6 @@
 ---
-title: not_eq | Microsoft Docs
-ms.custom: ''
+title: not_eq
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,21 +17,15 @@ f1_keywords:
 - not_eq
 - std::not_eq
 - std.not_eq
-dev_langs:
-- C++
 helpviewer_keywords:
 - not_eq function
 ms.assetid: d87ad299-8b50-4393-a57f-06f70e1f23fb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09650737a6f217653ca0705dca49cb743c7ecd5d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b3a6805aa58b8671cb14ecbd4b56ab34e17f58c2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398477"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618744"
 ---
 # <a name="noteq"></a>not_eq
 

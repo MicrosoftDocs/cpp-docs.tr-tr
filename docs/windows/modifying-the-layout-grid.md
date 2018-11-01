@@ -1,12 +1,6 @@
 ---
-title: Düzen kılavuzunu değiştirme | Microsoft Docs
-ms.custom: ''
+title: Düzen Kılavuzunu Değiştirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - controls [C++], layout grid
 - snap to layout grid
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - layout grid in Dialog Editor
 - grids, changing size
 ms.assetid: ec31f595-7542-485b-806f-efbaeccc1b3d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: d583bbbfeb4cd426684d1091a165335f7cbb6e64
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f77c26efdca61e8225ff1761ef1d3ff815e80173
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441407"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438889"
 ---
 # <a name="modifying-the-layout-grid"></a>Düzen Kılavuzunu Değiştirme
 

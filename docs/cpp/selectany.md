@@ -1,28 +1,18 @@
 ---
-title: selectany | Microsoft Docs
-ms.custom: ''
+title: selectany
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - selectany_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __declspec keyword [C++], selectany
 - selectany __declspec keyword
 ms.assetid: 9c353017-5a42-4f50-b741-bd13da1ce84d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ee48bf8a739f7fc024604ba178b56da99844861b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a6bf4076dfecbd29035716285f52c0a9faf81067
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46102352"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623762"
 ---
 # <a name="selectany"></a>selectany
 

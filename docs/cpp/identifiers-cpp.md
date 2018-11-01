@@ -1,12 +1,6 @@
 ---
-title: Tanımlayıcılar (C++) | Microsoft Docs
-ms.custom: ''
+title: Tanımlayıcılar (C++)
 ms.date: 09/12/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - decorated names
 - decorated names, about decorated names
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - white space, in C++ identifiers
 - identifiers [C++]
 ms.assetid: 03a0dfb1-4530-4cdf-8295-5ea4dca4c1b8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c9e7999b7e39b3a529130bdacf99f088be181d71
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6f87486d0bb2614a3b2542cf050172a47f152c4c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46112596"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653667"
 ---
 # <a name="identifiers-c"></a>Tanımlayıcılar (C++)
 

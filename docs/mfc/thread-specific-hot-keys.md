@@ -1,28 +1,18 @@
 ---
-title: İş parçacığına özgü sık kullanılan tuşlar | Microsoft Docs
-ms.custom: ''
+title: İş Parçacığına Özgü Sık Kullanılan Tuşlar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHotKeyCtrl class [MFC], thread-specific hot keys
 - keyboard shortcuts [MFC], hot keys
 - threading [MFC], hot keys in CHotKeyCtrl
 - access keys [MFC], hot keys
 ms.assetid: b6021274-1498-483f-bcbf-ba5723547cc8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9e54fbb2709f5f5bb6d01c279cb369b91dbfcaed
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4b393fe1af060a4b235162ce8cdfd94a1a391085
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372168"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594161"
 ---
 # <a name="thread-specific-hot-keys"></a>İş Parçacığına Özgü Sık Kullanılan Tuşlar
 

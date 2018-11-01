@@ -1,10 +1,6 @@
 ---
-title: C/C++ derleme hataları | Microsoft Docs
-ms.custom: ''
+title: C/C++ Derleme Hataları
 ms.date: 11/17/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - CRT1002
 - CRT1003
@@ -298,24 +294,18 @@ f1_keywords:
 - R6022
 - R6023
 - R6034
-dev_langs:
-- C++
 helpviewer_keywords:
 - builds [C++], errors
 - errors [C++]
 - error messages [C++], build errors
 - errors [C++], builds
 ms.assetid: 2470b496-28fa-47e7-a238-a086d99b06ca
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 14529f9246572299fc6629ec13ff4eab837bb5fd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 183edfe6aac45fa5a16fe67e31cf8da629fdf5cb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46095852"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466137"
 ---
 # <a name="cc-build-errors"></a>C/C++ Derleme Hataları
 

@@ -1,10 +1,6 @@
 ---
-title: CBulkRowset sınıfı | Microsoft Docs
-ms.custom: ''
+title: CBulkRowset Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL::CBulkRowset
 - ATL.CBulkRowset
@@ -93,8 +89,6 @@ f1_keywords:
 - ATL::CBulkRowset::SetRows
 - CBulkRowset.SetRows
 - SetRows
-dev_langs:
-- C++
 helpviewer_keywords:
 - CBulkRowset class
 - AddRefRows method
@@ -108,17 +102,12 @@ helpviewer_keywords:
 - ReleaseRows method
 - SetRows method
 ms.assetid: c6bde426-c543-4022-a98a-9519d9e2ae59
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 3a5548d9c2b54b265910ea6708bc448f09f8f151
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c62dd4ba7f4f91371378b7c1a6b0295edb3625e9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059993"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431076"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset Sınıfı
 

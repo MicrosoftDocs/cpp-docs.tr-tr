@@ -1,10 +1,6 @@
 ---
-title: _getcwd, _wgetcwd | Microsoft Docs
-ms.custom: ''
+title: _getcwd, _wgetcwd
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wgetcwd
 - _getcwd
@@ -28,8 +24,6 @@ f1_keywords:
 - _wgetcwd
 - tgetcwd
 - _tgetcwd
-dev_langs:
-- C++
 helpviewer_keywords:
 - getcwd function
 - working directory
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - wgetcwd function
 - directories [C++], current working
 ms.assetid: 888dc8c6-5595-4071-be55-816b38e3e739
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 10f242569579680c8e388b84bdcaca235a142a34
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4c533f0e716cb9a13c152b9be3c46f60291118d9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405295"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520246"
 ---
 # <a name="getcwd-wgetcwd"></a>_getcwd, _wgetcwd
 
@@ -73,23 +63,23 @@ wchar_t *_wgetcwd(
 Yol için depolama konumu.
 
 *maxlen*<br/>
-Yolun karakter cinsinden en büyük uzunluğu: **char** için **_getcwd** ve **wchar_t** için **_wgetcwd**.
+Karakter cinsinden yolun en fazla uzunluk: **char** için **_getcwd** ve **wchar_t** için **_wgetcwd**.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi döndürür *arabellek*. A **NULL** değeri belirten bir hata döndürür ve **errno** ya da ayarlamak **ENOMEM**, ayırmak için yeterli bellek olduğunu belirten *maxlen* bayt (olduğunda bir **NULL** bağımsız değişken olarak verilen *arabellek*), veya **ERANGE**, yolun daha uzun olduğunu belirten *maxlen*  karakter. Varsa *maxlen* küçük veya ona eşit sıfır olarak açıklandığı gibi bu işlev bir geçersiz parametre işleyicisi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).
+Bir işaretçi döndürür *arabellek*. A **NULL** dönüş değeri bir hata gösterir ve **errno** ya da ayarlanmış **ENOMEM**, ayırmak için yeterli bellek olduğunu belirten *maxlen* bayt (zaman bir **NULL** bağımsız değişken olarak verilir *arabellek*), veya **ERANGE**, yolun daha uzun olduğunu belirten *maxlen*  karakter. Varsa *maxlen* küçük veya ona eşit sıfır olarak açıklandığı gibi bu işlev, geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Getcwd** işlevi varsayılan sürücüsü için geçerli çalışma dizininin tam yolunu alır ve konumunda depolar *arabellek*. Tamsayı bağımsız değişkeni *maxlen* yolu için uzunluk üst sınırını belirtir. (Sonlandırma null karakteri dahil) yolunun uzunluğu aşması durumunda bir hata meydana *maxlen*. *Arabellek* bağımsız değişkeni olabilir **NULL**; arabellek boyutu en az bir *maxlen* (daha fazla yalnızca gerekirse) otomatik olarak ayrılır, kullanarak **malloc**, yolun depolamak için. Bu arabelleğin daha sonra çağırarak serbest bırakılabilirler **ücretsiz** ve onu **_getcwd** dönüş değeri (ayrılan arabellek için bir işaretçi).
+**_Getcwd** işlevi varsayılan sürücüsü için geçerli çalışma dizininin tam yolunu alır ve depolar *arabellek*. Tamsayı bağımsız değişkeni *maxlen* yolu için uzunluk üst sınırını belirtir. (Sondaki boş karakter dahil) yol uzunluğunu aşıyor, bir hata meydana gelir *maxlen*. *Arabellek* bağımsız değişkeni olabilir **NULL**; arabellek boyutu en az bir *maxlen* (daha fazla yalnızca gerekli olduğunda) otomatik olarak tahsis edildiği, kullanarak **malloc**depolamak için. Bu arabellek daha sonra çağrılarak serbest bırakılabileceğini **ücretsiz** ve geçirerek **_getcwd** (ayrılan arabelleğin işaretçisini) değeri döndürür.
 
-**_getcwd** geçerli çalışma dizini yolu temsil eden bir dize döndürür. Geçerli çalışma dizini kök ise dizesi bir ters eğik ( **\\** ). Geçerli çalışma dizini kökü dışında bir dizin ise, dize olmayan bir ters eğik çizgi ile dizin adı ile sona erer.
+**_getcwd** geçerli çalışma dizini yolu temsil eden bir dize döndürür. Geçerli çalışma dizini kök ise dize ters eğik çizgi ile sona erer ( **\\** ). Geçerli çalışma dizini kök dışında bir dizin ise, dize olmayan bir ters eğik çizgi ile dizin adı ile sona erer.
 
-**_wgetcwd** bir joker karakter sürümü **_getcwd**; *arabellek* yazmaç değerini **_wgetcwd** joker karakter dizelerdir. **_wgetcwd** ve **_getcwd** Aksi takdirde aynı şekilde davranır.
+**_wgetcwd** geniş karakterli sürümüdür **_getcwd**; *arabellek* bağımsız değişkeni ve dönüş değerini **_wgetcwd** geniş karakterli dizelerdir. **_wgetcwd** ve **_getcwd** aynı şekilde davranır.
 
-Zaman **_DEBUG** ve **_CRTDBG_MAP_ALLOC** tanımlanır, çağrılar **_getcwd** ve **_wgetcwd** yapılan çağrılar tarafından değiştirilen **_ getcwd_dbg** ve **_wgetcwd_dbg** bellek ayırmaları hata ayıklama için izin vermek için. Daha fazla bilgi için bkz: [_getcwd_dbg, _wgetcwd_dbg](getcwd-dbg-wgetcwd-dbg.md).
+Zaman **_DEBUG** ve **_CRTDBG_MAP_ALLOC** tanımlanır, çağrılar **_getcwd** ve **_wgetcwd** çağrılarıyla değiştirilir **_ getcwd_dbg** ve **_wgetcwd_dbg** bellek ayırmaları hata ayıklama için izin vermek için. Daha fazla bilgi için [_getcwd_dbg, _wgetcwd_dbg](getcwd-dbg-wgetcwd-dbg.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -104,7 +94,7 @@ Zaman **_DEBUG** ve **_CRTDBG_MAP_ALLOC** tanımlanır, çağrılar **_getcwd** 
 |**_getcwd**|\<Direct.h >|
 |**_wgetcwd**|\<Direct.h > veya \<wchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

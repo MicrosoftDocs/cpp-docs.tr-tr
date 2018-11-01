@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3767 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3767
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3767
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3767
 ms.assetid: 5247cdcd-639c-4527-bd37-37e74c4e8fab
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e4e5f73016060ccc17dfe0218d8b518b2f5dbdbd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 61f7479986cccfa3851d85bf8e7bc0e9da3d1cea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081448"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50600804"
 ---
 # <a name="compiler-error-c3767"></a>Derleyici Hatası C3767
 

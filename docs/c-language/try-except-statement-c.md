@@ -1,12 +1,6 @@
 ---
-title: deneyin-dışındaki Statement (C) | Microsoft Docs
-ms.custom: ''
+title: try-except Deyimi (C)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - try-except keyword [C]
 - structured exception handling, try-except
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - __except keyword [C], in try-except
 - try-catch keyword [C], try-except keyword [C]
 ms.assetid: f76db9d1-fc78-417f-b71f-18e545fc01c3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 957b76b6b39586016e9ed7b921b7bfa51a1fdf34
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b186a1923eadedd201119ff8fbbd0a730c33cff8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075144"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611906"
 ---
 # <a name="try-except-statement-c"></a>try-except Deyimi (C)
 

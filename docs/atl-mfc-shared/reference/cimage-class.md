@@ -1,10 +1,6 @@
 ---
-title: Cımage sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cımage sınıfı
 ms.date: 02/01/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CImage
 - ATLIMAGE/ATL::CImage
@@ -48,8 +44,6 @@ f1_keywords:
 - ATLIMAGE/ATL::CImage::SetTransparentColor
 - ATLIMAGE/ATL::CImage::StretchBlt
 - ATLIMAGE/ATL::CImage::TransparentBlt
-dev_langs:
-- C++
 helpviewer_keywords:
 - jpeg files
 - bitmaps [C++], ATL and MFC support for
@@ -60,16 +54,12 @@ helpviewer_keywords:
 - CImage class
 - transparent color
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a1c27d20970b8e8634e8438c25733fd90a3ad632
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0042fffb0eaa383909edd6647bcdb4375341d8dd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064803"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605861"
 ---
 # <a name="cimage-class"></a>Cımage sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2778 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2778
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2778
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2778
 ms.assetid: b24cb732-2914-42cc-8928-e2d87b393428
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6106832ea82531a6f6915417ac56d53504db882e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 56c316ac971d0bdd1a0ca27ef8d4282acbe24779
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022168"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50490520"
 ---
 # <a name="compiler-error-c2778"></a>Derleyici Hatası C2778
 

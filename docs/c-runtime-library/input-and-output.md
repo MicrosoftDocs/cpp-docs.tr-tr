@@ -1,14 +1,8 @@
 ---
-title: Giriş ve çıkış | Microsoft Docs
-ms.custom: ''
+title: Girdi ve Çıktı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.io
-dev_langs:
-- C++
 helpviewer_keywords:
 - input routines
 - I/O [CRT]
@@ -16,29 +10,25 @@ helpviewer_keywords:
 - I/O [CRT], routines
 - output routines
 ms.assetid: 1c177301-e341-4ca0-aedc-0a87fe1c75ae
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e62319d040275d96314ee824f9fea020a4004974
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 26d527f7afad544b051a2ad765af09c430782083
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389397"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590391"
 ---
 # <a name="input-and-output"></a>Girdi ve Çıktı
 
-G/ç işlevleri okuyup dosyalarından ve cihazlar için veri yazma. G/ç işlemleri metin modunda veya ikili mod gerçekleşir. Microsoft çalışma zamanı kitaplığı g/ç işlevleri üç tür vardır:
+G/ç işlevleri okuyup veri için dosyaları ve cihazlardan yazma. Dosya g/ç işlemleri metin modunda veya İkili modda gerçekleşir. Microsoft çalışma zamanı kitaplığının g/ç işlevleri üç tür vardır:
 
-- [Akış g/ç](../c-runtime-library/stream-i-o.md) işlevleri veri karakterleri tek tek bir akış ele alın.
+- [Stream g/ç](../c-runtime-library/stream-i-o.md) işlevleri veri karakterlerin tek tek bir akış olarak değerlendir.
 
-- [Düşük düzey g/ç](../c-runtime-library/low-level-i-o.md) işlevleri çağırma akış g/ç tarafından sağlanan daha düşük düzeyli işlemi için doğrudan işletim sistemi.
+- [Düşük düzey g/ç](../c-runtime-library/low-level-i-o.md) işlevleri çağırma doğrudan akış g/ç tarafından sağlanan daha düşük düzeyli işlem için işletim sistemi.
 
-- [Konsol ve g/ç bağlantı noktası](../c-runtime-library/console-and-port-i-o.md) işlevleri okuma veya doğrudan bir konsol (klavye ve ekran) veya bir g/ç bağlantı noktası (örneğin, yazıcı bağlantı noktası) yazma.
+- [Konsol ve bağlantı noktası g/ç](../c-runtime-library/console-and-port-i-o.md) işlevleri okuma veya doğrudan bir konsol (klavye ve ekran) veya bir g/ç bağlantı noktası (örneğin, yazıcı bağlantı noktasını) yazın.
 
    > [!NOTE]
-   > Akışı işlevleri arabelleğe ve alt düzey işlevleri olmayan olduğundan bu iki tür işlev genellikle uyumlu değil. Belirli bir dosya işleme için akış veya alt düzey işlevleri özel olarak kullanın.
+   > Bu iki tür işlev, genellikle akışı işlevleri arabelleğe ve düşük düzeyli işlevleri değildir çünkü uyumsuzdur. Belirli bir dosya işlenmeden için akış ya da düşük düzeyli işlevleri özel olarak kullanın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

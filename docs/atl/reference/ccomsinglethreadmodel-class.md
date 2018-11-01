@@ -1,10 +1,6 @@
 ---
-title: CComSingleThreadModel sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComSingleThreadModel sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComSingleThreadModel
 - ATLBASE/ATL::CComSingleThreadModel
@@ -13,21 +9,17 @@ f1_keywords:
 - ATLBASE/ATL::CComSingleThreadModel::ThreadModelNoCS
 - ATLBASE/ATL::CComSingleThreadModel::Decrement
 - ATLBASE/ATL::CComSingleThreadModel::Increment
-dev_langs:
-- C++
 helpviewer_keywords:
 - single-threaded applications
 - CComSingleThreadModel class
 - single-threaded applications, ATL
 ms.assetid: e5dc30c7-405a-4ba4-8ae9-51937243fce8
-author: mikeblome
-ms.author: mblome
-ms.openlocfilehash: 2a20a5c8ad87428e66f90b8f04c3006e5f1c2e84
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2b0e19c94c16de936758ed4e547d731aed40cb26
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068880"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565366"
 ---
 # <a name="ccomsinglethreadmodel-class"></a>CComSingleThreadModel sınıfı
 

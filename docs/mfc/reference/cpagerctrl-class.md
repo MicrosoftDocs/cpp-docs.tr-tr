@@ -1,10 +1,6 @@
 ---
-title: CPagerCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPagerCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPagerCtrl
 - AFXCMN/CPagerCtrl
@@ -29,8 +25,6 @@ f1_keywords:
 - AFXCMN/CPagerCtrl::SetButtonSize
 - AFXCMN/CPagerCtrl::SetChild
 - AFXCMN/CPagerCtrl::SetScrollPos
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPagerCtrl [MFC], CPagerCtrl
 - CPagerCtrl [MFC], Create
@@ -54,16 +48,12 @@ helpviewer_keywords:
 - CPagerCtrl [MFC], SetChild
 - CPagerCtrl [MFC], SetScrollPos
 ms.assetid: 65ac58dd-4f5e-4b7e-b15c-e0d435a7e884
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8f7dc77eb9afdfcded959abad2199b1d255ffe3e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: cd3eed89753031de64d35a2b3602b1fb42356123
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054273"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613544"
 ---
 # <a name="cpagerctrl-class"></a>CPagerCtrl sınıfı
 

@@ -1,28 +1,19 @@
 ---
-title: Öznitelikler alfabetik başvurusu | Microsoft Docs
+title: Öznitelikler Alfabetik Başvurusu
 ms.custom: index-page
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
 ms.topic: conceptual
 f1_keywords:
 - vc.attributes
-dev_langs:
-- C++
 helpviewer_keywords:
 - attributes [C++/CLI]
 ms.assetid: fb2216ef-9fbd-44f4-afed-732aa99450e2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 431ca9e88e644bd7a7c38f9ab4a1c3faeab6f9bb
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: ecf59b0d920b39d8f129e3ff25b5518f985d78f5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328408"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516915"
 ---
 # <a name="attributes-alphabetical-reference"></a>Öznitelikler Alfabetik Başvurusu
 

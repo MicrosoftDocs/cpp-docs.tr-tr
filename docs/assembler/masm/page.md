@@ -1,27 +1,17 @@
 ---
-title: SAYFA | Microsoft Docs
-ms.custom: ''
+title: PAGE
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - PAGE
-dev_langs:
-- C++
 helpviewer_keywords:
 - Page directive
 ms.assetid: 6654c094-c1f7-4d10-8d9d-902ddd1ac27e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cc2057a850d050795ec605eca8e31b69a0086169
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0295cd05412045049944f118a42e0cd7a8c0e268
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692486"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627298"
 ---
 # <a name="page"></a>PAGE
 

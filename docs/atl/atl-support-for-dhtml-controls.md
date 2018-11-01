@@ -1,27 +1,17 @@
 ---
-title: DHTML denetimleri için ATL desteği | Microsoft Docs
-ms.custom: ''
+title: DHTML Denetimleri İçin ATL Desteği
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - HTML controls, ATL support
 - DHTML controls, ATL support
 - DHTML controls
 ms.assetid: 4ba98098-da5d-4362-96ad-8372f816c307
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 281b767151726f695e23c4cf2b2df26f8690c5c5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 321c8c14f2049622b43741cfa9d856cb00e2cd61
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46064002"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638691"
 ---
 # <a name="atl-support-for-dhtml-controls"></a>DHTML Denetimleri İçin ATL Desteği
 

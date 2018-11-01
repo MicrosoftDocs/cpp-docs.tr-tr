@@ -1,18 +1,16 @@
 ---
-title: '&lt;sınırları&gt; sabit listeleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;sınırları&gt; sabit listeleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - limits/std::float_denorm_style
 - limits/std::float_round_style
 ms.assetid: c86680a2-ba97-4ed9-8c20-a448857d7dc5
-ms.openlocfilehash: 5795d146714c6eb00902518347138a98574679a8
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 68f0ba605b62f2492f49a2b81030c42dca80bf5f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960654"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653290"
 ---
 # <a name="ltlimitsgt-enums"></a>&lt;sınırları&gt; sabit listeleri
 

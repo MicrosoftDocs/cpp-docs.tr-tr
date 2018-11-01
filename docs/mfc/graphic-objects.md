@@ -1,16 +1,10 @@
 ---
-title: Grafik nesneler | Microsoft Docs
-ms.custom: ''
+title: Grafik Nesneler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - HRGN
 - HFONT
 - HBITMAP
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRgn class [MFC], HRGN handle type
 - HPEN [MFC]
@@ -47,16 +41,12 @@ helpviewer_keywords:
 - painting and device context [MFC]
 - CPalette class [MFC], HPALETTE handle type
 ms.assetid: 41963b25-34b7-4343-8446-34ba516b83ca
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b62acb002c9035dfa7fa63aaf5efb23f9939c25b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4c4f9a96725e76ff25e21f7923e1b45a6e380ac5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415206"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612764"
 ---
 # <a name="graphic-objects"></a>Grafik Nesneler
 

@@ -1,30 +1,20 @@
 ---
-title: LINK ortam değişkenleri | Microsoft Docs
-ms.custom: ''
+title: LINK Ortam Değişkenleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - link
-dev_langs:
-- C++
 helpviewer_keywords:
 - variables, environment
 - LINK tool [C++], environment variables
 - LIB environment variable
 - environment variables [C++], LINK
 ms.assetid: 9a3d3291-0cc4-4a7d-9d50-80e351b90708
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e88ac63ace95ac0b9874dc3376210f3f5b4af320
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3a398787530794f5a08d6cd122e55c305e265062
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716664"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434417"
 ---
 # <a name="link-environment-variables"></a>LINK Ortam Değişkenleri
 

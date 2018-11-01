@@ -1,12 +1,6 @@
 ---
-title: 'Windows Yuvaları: Arka plan | Microsoft Docs'
-ms.custom: ''
+title: 'Windows Yuvaları: Arka Plan'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - record-oriented data [MFC]
 - e-mail [MFC]
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - sequenced data flow
 - stream sockets [MFC]
 ms.assetid: f60d4ed2-bf23-4a0e-98d2-fee77e8473dd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a6146106a7ae378821fc7133d2d65597d1225cc1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 93342f734d1e475cbae1b7e3025c59e6e6f73284
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079668"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468035"
 ---
 # <a name="windows-sockets-background"></a>Windows Yuvaları: Arka Plan
 

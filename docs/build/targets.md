@@ -1,25 +1,15 @@
 ---
-title: Hedefleri | Microsoft Docs
-ms.custom: ''
+title: Hedefler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - targets, specifying in NMAKE
 ms.assetid: 826ee849-4278-4c6e-97c3-79a2b5fe6463
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: edb75258c548526c68ed33f7f8037656750f6855
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f2163b6fdbd03c5cc1f5af307b5646f31d8a0c34
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713812"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664224"
 ---
 # <a name="targets"></a>Hedefler
 

@@ -1,30 +1,20 @@
 ---
-title: interior_ptr (C + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: interior_ptr (C++/CLI)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - stdcli::language::interior_ptr
 - interior_ptr_cpp
 - interior_ptr
-dev_langs:
-- C++
 helpviewer_keywords:
 - interior_ptr keyword [C++]
 ms.assetid: 25160f74-569e-492d-9e3c-67ece7486baa
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: d47539c9d7d8e51a061aba35e6b2f3b8f7049951
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 05ae4aeba3761ccb0abeb8c3722d9ddf932bee5a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328057"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443088"
 ---
 # <a name="interiorptr-ccli"></a>interior_ptr (C++/CLI)
 
@@ -134,4 +124,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[.NET ve UWP için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+[.NET ve UWP İçin Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

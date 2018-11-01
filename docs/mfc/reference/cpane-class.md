@@ -1,10 +1,6 @@
 ---
-title: CPane sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPane sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPane
 - AFXPANE/CPane
@@ -71,8 +67,6 @@ f1_keywords:
 - AFXPANE/CPane::OnBeforeFloat
 - AFXPANE/CPane::m_bHandleMinSize
 - AFXPANE/CPane::m_recentDockInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPane [MFC], AdjustSizeImmediate
 - CPane [MFC], AllocElements
@@ -139,16 +133,12 @@ helpviewer_keywords:
 - CPane [MFC], m_bHandleMinSize
 - CPane [MFC], m_recentDockInfo
 ms.assetid: 5c651a64-3c79-4d94-9676-45f6402a6bc5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1a32625001ae86f4d6dffa7eeb953c538822d207
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1c485d1b6f2b0557243973774bf9dfb382c2595b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080227"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550442"
 ---
 # <a name="cpane-class"></a>CPane sınıfı
 

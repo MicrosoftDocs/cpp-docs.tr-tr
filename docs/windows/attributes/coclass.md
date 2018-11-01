@@ -1,28 +1,17 @@
 ---
-title: coclass'ı (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: coclass'ı (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.coclass
-dev_langs:
-- C++
 helpviewer_keywords:
 - coclass attribute
 ms.assetid: 42da6a10-3af9-4b43-9a1d-689d00b61eb3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: df131b79d3247e39aecb95c81564d7ac9fc2732d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 69f749dd6f8b2a8c42b4c75dd3790b9f7fbcf291
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50058940"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603092"
 ---
 # <a name="coclass"></a>coclass
 

@@ -1,27 +1,17 @@
 ---
-title: _com_ptr_t::AddRef | Microsoft Docs
-ms.custom: ''
+title: _com_ptr_t::AddRef
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _com_ptr_t::AddRef
-dev_langs:
-- C++
 helpviewer_keywords:
 - AddRef method [C++], interface pointers
 ms.assetid: c104dac3-aad3-40bb-a298-75c6cd0e63a2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b66f4944d9ccdfb36587817c5f856c127513784e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7408b5c174f76673b56caffd56aaa87895bd08d4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087719"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663365"
 ---
 # <a name="comptrtaddref"></a>_com_ptr_t::AddRef
 

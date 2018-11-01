@@ -1,28 +1,17 @@
 ---
-title: displaybind (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: displaybind (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.displaybind
-dev_langs:
-- C++
 helpviewer_keywords:
 - displaybind attribute
 ms.assetid: b3d70396-78e4-43d9-9583-16ddb8c9bb1f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 9a78471ca6832c8d72d3b8fae25273155918bd81
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 42eedf5d67de71860ecfe5f224914b80f3674a43
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071056"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493762"
 ---
 # <a name="displaybind"></a>displaybind
 

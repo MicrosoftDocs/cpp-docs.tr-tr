@@ -1,10 +1,6 @@
 ---
-title: inp, inpw | Microsoft Docs
-ms.custom: ''
+title: inp, inpw
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - inp
 - inpw
@@ -20,22 +16,16 @@ apitype: DLLExport
 f1_keywords:
 - inpw
 - inp
-dev_langs:
-- C++
 helpviewer_keywords:
 - inp function
 - inpw function
 ms.assetid: c7e1eeac-77cd-47ff-b843-4095b4c31d3b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8734f2dbca04287652a6a59f633f8c872f2b00a1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: caa79ad98c0790fc8a22374e018ac4ad8d5a0b13
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040992"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617238"
 ---
 # <a name="inp-inpw"></a>inp, inpw
 

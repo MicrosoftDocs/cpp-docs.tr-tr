@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 2) C4653 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 2) C4653
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4653
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4653
 ms.assetid: 90ec3317-3d39-4b4c-bcd1-97e7c799e1b6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 376da24d4619eacc3e6b3defe8fdfc582800a898
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 664b1b3ec732c323d0074310902890cdd6eca9a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46045984"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588606"
 ---
 # <a name="compiler-warning-level-2-c4653"></a>Derleyici Uyarısı (Düzey 2) C4653
 

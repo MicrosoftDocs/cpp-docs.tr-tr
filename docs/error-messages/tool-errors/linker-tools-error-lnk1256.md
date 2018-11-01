@@ -1,28 +1,18 @@
 ---
-title: Bağlayıcı araçları hatası LNK1256 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1256
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - xml
 - LNK1256
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1256
 ms.assetid: 55b64b2b-a56b-436c-a55e-ec9c6dcb050e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a711343eaf64a9ef1c46a5044cb3d6a2f84c5f7a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9d969d1e5bbae92ed49747f761c1b89d1910d4e1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050651"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492887"
 ---
 # <a name="linker-tools-error-lnk1256"></a>Bağlayıcı Araçları Hatası LNK1256
 

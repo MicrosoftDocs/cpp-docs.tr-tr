@@ -1,10 +1,6 @@
 ---
-title: clearerr_s | Microsoft Docs
-ms.custom: ''
+title: clearerr_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - clearerr_s
 apilocation:
@@ -22,23 +18,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - clearerr_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - error indicator for streams
 - resetting stream error indicator
 - clearerr_s function
 ms.assetid: b74d014d-b7a8-494a-a330-e5ffd5614772
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 34feccd2d4d6de53ed9c5a446bf6c7d065dd4e62
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 140d984c470bd505f347aa43065b033339ed38a1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34450872"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665029"
 ---
 # <a name="clearerrs"></a>clearerr_s
 
@@ -54,18 +44,18 @@ errno_t clearerr_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; **EINVAL** varsa *akış* olan **NULL**.
+Başarılıysa sıfır; **EINVAL** varsa *stream* olduğu **NULL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Clearerr_s** işlevi sıfırlar için dosya sonu göstergesi ve hata göstergesi *akış*. Hata göstergeleri otomatik olarak temizlenmez; Belirtilen bir akış için hata göstergesi ayarladıktan sonra bir hata değeri kadar döndürmek Bu akış işlemleri devam **clearerr_s**, **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos**, veya [geri sarma](rewind.md) olarak adlandırılır.
+**Clearerr_s** işlevi için dosya sonu göstergesi ve hata göstergesi sıfırlar *stream*. Hata göstergeleri otomatik olarak temizlenmez; Belirtilen bir akış için hata göstergesi ayarlandıktan sonra kadar bir hata değeri döndürmek bu işlemler devam **clearerr_s**, **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos**, veya [rewind](rewind.md) çağrılır.
 
-Varsa *akış* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
+Varsa *stream* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -73,7 +63,7 @@ Varsa *akış* olan **NULL**, açıklandığı gibi geçersiz parametre işleyic
 |-------------|---------------------|
 |**clearerr_s**|\<stdio.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -132,7 +122,7 @@ Will input cause an error? n
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hata İşleme](../../c-runtime-library/error-handling-crt.md)<br/>
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [clearerr](clearerr.md)<br/>
 [_eof](eof.md)<br/>
 [feof](feof.md)<br/>

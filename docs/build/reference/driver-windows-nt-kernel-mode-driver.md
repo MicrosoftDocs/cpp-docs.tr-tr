@@ -1,31 +1,21 @@
 ---
-title: -DRIVER (Windows NT Çekirdek modu sürücüsü) | Microsoft Docs
-ms.custom: ''
+title: /DRIVER (Windows NT Çekirdek Modu Sürücüsü)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.driver
 - /driver
-dev_langs:
-- C++
 helpviewer_keywords:
 - kernel mode driver
 - -DRIVER linker option
 - DRIVER linker option
 - /DRIVER linker option
 ms.assetid: aeee8e28-5d97-40f5-ba16-9f370fe8a1b8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8ae096c502cdc94d47a516caf4c29ac4f3eceb4b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 7e01cf8ba027fc2062d01173aca544fae4b937e3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45705555"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656865"
 ---
 # <a name="driver-windows-nt-kernel-mode-driver"></a>/DRIVER (Windows NT Çekirdek Modu Sürücüsü)
 

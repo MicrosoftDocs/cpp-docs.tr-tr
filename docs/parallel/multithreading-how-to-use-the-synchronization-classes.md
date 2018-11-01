@@ -1,12 +1,6 @@
 ---
-title: 'Çoklu iş parçacığı kullanımı: MFC eşitleme sınıflarının nasıl kullanılacağını | Microsoft Docs'
-ms.custom: ''
+title: 'Çoklu iş parçacığı kullanımı: nasıl MFC eşitleme sınıflarını kullanma'
 ms.date: 08/27/2018
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC [C++], multithreading
 - threading [MFC], synchronization classes
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - multithreading [C++], synchronization classes
 - threading [C++], thread-safe class design
 ms.assetid: f266d4c6-0454-4bda-9758-26157ef74cc5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ca2603c2ba96cbf0df04f56d2334bd6e65110ac6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0f8304c3b45f87dadc2317de95a0b30b54baffa0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46447979"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604171"
 ---
 # <a name="multithreading-how-to-use-the-mfc-synchronization-classes"></a>Çoklu iş parçacığı kullanımı: nasıl MFC eşitleme sınıflarını kullanma
 

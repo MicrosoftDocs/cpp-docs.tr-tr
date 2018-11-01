@@ -1,27 +1,17 @@
 ---
-title: Dize (C + +/ CLI ve C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Dize (C + +/ CLI ve C + +/ CX)
 ms.date: 10/08/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - string support with /clr
 - /clr compiler option [C++], string support
 ms.assetid: c695f965-9be0-4e20-9661-373bfee6557e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: fd4caaf49bd72a85a6d81003926c4e556d0731e0
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3f803469c7921db97a9b15fe333d00f1b32b11fa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054247"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468854"
 ---
 # <a name="string--ccli-and-ccx"></a>Dize (C + +/ CLI ve C + +/ CX)
 

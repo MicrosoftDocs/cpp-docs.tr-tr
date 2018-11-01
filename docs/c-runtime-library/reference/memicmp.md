@@ -1,10 +1,6 @@
 ---
-title: memicmp | Microsoft Docs
-ms.custom: ''
+title: memicmp
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - memicmp
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - memicmp
-dev_langs:
-- C++
 helpviewer_keywords:
 - memicmp function
 ms.assetid: 45362e9c-7c64-41e9-92bb-7d4999a8635b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 217f91028ff157f9fbddd5232e0cb4627d0dd4a1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: da192929f0005aa293c16881b4d21f3d334f6d68
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396338"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440930"
 ---
 # <a name="memicmp"></a>memicmp
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_memicmp](memicmp-memicmp-l.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_memicmp](memicmp-memicmp-l.md) yerine.

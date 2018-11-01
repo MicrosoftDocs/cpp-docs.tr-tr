@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3136 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3136
 ms.date: 10/03/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3136
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3136
 ms.assetid: c77103cd-00f7-408e-b74b-4f8562039d31
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 082a89b69092a8320f6bb4b930d01a7fd2de10c8
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: e32ffca067c3b25120301527e7a708d53001d541
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788389"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501102"
 ---
 # <a name="compiler-error-c3136"></a>Derleyici Hatası C3136
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2426 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2426
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2426
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2426
 ms.assetid: 3428aeed-3f78-4675-9bc4-5b72f50eaaf6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9c634ac505684a5f0bf30a831668e27078650d70
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6fdb539834f26e794970d0e589cb7ed7072f1e0e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46078640"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607957"
 ---
 # <a name="compiler-error-c2426"></a>Derleyici Hatası C2426
 

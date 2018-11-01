@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2652 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2652
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2652
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2652
 ms.assetid: 6e3d1a90-a989-4088-8afd-dc82f6a2d66f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 37b7b259b8eb42692641883c8d69578542cce06e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9c9772052b690ad87de1d408c06478d82d48e724
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46076625"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464811"
 ---
 # <a name="compiler-error-c2652"></a>Derleyici Hatası C2652
 

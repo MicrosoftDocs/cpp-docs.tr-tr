@@ -1,10 +1,6 @@
 ---
-title: CD2DGeometrySink sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DGeometrySink sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DGeometrySink
 - AFXRENDERTARGET/CD2DGeometrySink
@@ -24,8 +20,6 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DGeometrySink::SetFillMode
 - AFXRENDERTARGET/CD2DGeometrySink::SetSegmentFlags
 - AFXRENDERTARGET/CD2DGeometrySink::m_pSink
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DGeometrySink [MFC], CD2DGeometrySink
 - CD2DGeometrySink [MFC], AddArc
@@ -44,16 +38,12 @@ helpviewer_keywords:
 - CD2DGeometrySink [MFC], SetSegmentFlags
 - CD2DGeometrySink [MFC], m_pSink
 ms.assetid: e5e07f41-0343-4ab1-9d6b-8c62ed33c04a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b97bccbf9615c90292976839f841e4b2ffe6af9d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ff68cc737f28763e5545b0ccaf2c0122e78cb051
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383817"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654693"
 ---
 # <a name="cd2dgeometrysink-class"></a>CD2DGeometrySink sınıfı
 

@@ -1,29 +1,19 @@
 ---
-title: OVERFLOW? işleci | Microsoft Docs
-ms.custom: ''
+title: OVERFLOW? işleci
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - operator OVERFLOW?
 - OVERFLOW?
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator OVERFLOW?
 - OVERFLOW? operator
 ms.assetid: 376b2850-993a-4538-b8f1-bd682ff7e91c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7fe21109db3c03b50c2dec824572628a6f86a733
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: e6c92999e5f9172557b2bd853c5e97b05305ee1f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679011"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642500"
 ---
 # <a name="operator-overflow"></a>OVERFLOW? işleci
 

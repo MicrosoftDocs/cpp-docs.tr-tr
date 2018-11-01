@@ -1,10 +1,6 @@
 ---
-title: _CxxThrowException | Microsoft Docs
-ms.custom: ''
+title: _CxxThrowException
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CxxThrowException
 apilocation:
@@ -22,22 +18,16 @@ apitype: DLLExport
 f1_keywords:
 - CxxThrowException
 - _CxxThrowException
-dev_langs:
-- C++
 helpviewer_keywords:
 - _CxxThrowException function
 - CxxThrowException function
 ms.assetid: 0b90bef5-b7d2-46e0-88e2-59e531e01a4d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f7adf4c285646e6a3f4706a9a56995f4440cc1e8
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 925b72a120b31029b76fa38bee73eea003511cd2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103821"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550339"
 ---
 # <a name="cxxthrowexception"></a>_CxxThrowException
 

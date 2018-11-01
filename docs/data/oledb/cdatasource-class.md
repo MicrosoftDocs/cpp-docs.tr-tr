@@ -1,10 +1,6 @@
 ---
-title: CDataSource sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDataSource Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL.CDataSource
 - ATL::CDataSource
@@ -49,8 +45,6 @@ f1_keywords:
 - CDataSource::OpenWithServiceComponents
 - OpenWithServiceComponents
 - CDataSource.OpenWithServiceComponents
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDataSource class
 - Close method
@@ -63,17 +57,12 @@ helpviewer_keywords:
 - OpenWithPromptFileName method
 - OpenWithServiceComponents method
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: f5f6224b86d7df7af223c441361832984ff6a85c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f52b5b4313f8c9703a578f7d0d3ed672555f647e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50058680"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646127"
 ---
 # <a name="cdatasource-class"></a>CDataSource Sınıfı
 

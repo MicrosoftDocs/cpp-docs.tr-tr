@@ -1,29 +1,19 @@
 ---
-title: Cınterfacearray sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cınterfacearray sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CInterfaceArray
 - ATLCOLL/ATL::CInterfaceArray
 - ATLCOLL/ATL::CInterfaceArray::CInterfaceArray
-dev_langs:
-- C++
 helpviewer_keywords:
 - CInterfaceArray class
 ms.assetid: 1f29cf66-a086-4a7b-b6a8-64f73da39f79
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e0793cc2010e2f2281e667ce21909227a55234da
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 64271cbdb634284a5abcdd17b2c14d23a496b3f5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064205"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50614259"
 ---
 # <a name="cinterfacearray-class"></a>Cınterfacearray sınıfı
 

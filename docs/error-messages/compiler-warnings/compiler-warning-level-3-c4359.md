@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4359 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4359
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4359
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4359
 ms.assetid: d8fe993c-ef82-45a0-a43d-c29f9d1bacdb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e97d321b0df8856aadd58f7d27f6339a5776d0f8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3856c50aabce497f28a179b30346b30371986e51
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084165"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432818"
 ---
 # <a name="compiler-warning-level-3-c4359"></a>Derleyici Uyarısı (Düzey 3) C4359
 

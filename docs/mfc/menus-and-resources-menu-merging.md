@@ -1,12 +1,6 @@
 ---
-title: 'Menüler ve kaynaklar: menü birleştirme | Microsoft Docs'
-ms.custom: ''
+title: 'Menüler ve Kaynaklar: Menü Birleştirme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - status bars [MFC], OLE document applications
 - visual editing [MFC], application menus and resources
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - merging toolbar and status bar [MFC]
 - menus [MFC], OLE document applications
 ms.assetid: 80b6bb17-d830-4122-83f0-651fc112d4d1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2f4e76902335477ba507e6f3e7a66c5f862b8543
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 30663afae0bfd30b42f99daf95cb8ff35979ee50
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418677"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438447"
 ---
 # <a name="menus-and-resources-menu-merging"></a>Menüler ve Kaynaklar: Menü Birleştirme
 

@@ -1,29 +1,19 @@
 ---
-title: Özel durum sınıfları | Microsoft Docs
-ms.custom: ''
+title: Özel Durum Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.exception
-dev_langs:
-- C++
 helpviewer_keywords:
 - exception classes [MFC]
 - exception handling [MFC], exception classes
 - MFC, exceptions
 ms.assetid: 1a2caf12-b3e9-4189-86d2-bf7a595bf025
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dd666f96ed694b57bf02eb3ad239783828b69e48
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fad88fa36c64bd9d8ca28135c09a3f0ce8fe3c0c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439269"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441944"
 ---
 # <a name="exception-classes"></a>Özel Durum Sınıfları
 

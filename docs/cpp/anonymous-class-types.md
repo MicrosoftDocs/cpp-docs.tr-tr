@@ -1,26 +1,16 @@
 ---
-title: Anonim sınıf türleri | Microsoft Docs
-ms.custom: ''
+title: Anonim Sınıf Türleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - class types [C++], anonymous
 - anonymous class types
 ms.assetid: 9ba667b2-8c2a-4c29-82a6-fa120b9233c8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f194bcae9710b68a0be6a0c4d25a9f47f3340064
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9cd27fb40522a07ce4591b654ee8a6dda53b4f28
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090184"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456413"
 ---
 # <a name="anonymous-class-types"></a>Anonim Sınıf Türleri
 

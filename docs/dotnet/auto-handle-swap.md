@@ -1,31 +1,21 @@
 ---
-title: auto_handle::Swap | Microsoft Docs
-ms.custom: ''
+title: auto_handle::swap
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr::auto_handle::swap
 - auto_handle.swap
 - auto_handle::swap
 - msclr..auto_handle.swap
-dev_langs:
-- C++
 helpviewer_keywords:
 - auto_handle::swap
 ms.assetid: 3ebf82d7-9b69-4a72-a22d-69b4f640f9b0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: be6e791fb6e4249a05953b1a521dda72abc5db79
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5588186ab5073dded441dadb75664eec1ee06b77
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444001"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611451"
 ---
 # <a name="autohandleswap"></a>auto_handle::swap
 

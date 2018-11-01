@@ -1,28 +1,17 @@
 ---
-title: Veri kaynakları ve oturumlar | Microsoft Docs
-ms.custom: ''
+title: Veri Kaynakları ve Oturumlar
 ms.date: 10/22/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - data sources [C++], OLE DB
 - connections [C++], data source
 - OLE DB consumer templates [C++], data sources
 ms.assetid: 6ee52216-e082-4869-a1d6-ce561cfb76e5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 0a6cb4e27f8a248b0b90454acb782b3b8994abc4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 04b274677d98f1a544bcc190ce7155c00c4ee8d5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056041"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50650334"
 ---
 # <a name="data-sources-and-sessions"></a>Veri Kaynakları ve Oturumlar
 

@@ -1,27 +1,17 @@
 ---
-title: DT | Microsoft Docs
-ms.custom: ''
+title: DT
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - dt
-dev_langs:
-- C++
 helpviewer_keywords:
 - DT directive
 ms.assetid: 96c5c4e9-7053-49f0-946a-8088e178e79a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 243911e42d9c41de7ddf7d8778b27e0526cdd355
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f41d5b2ff5fab35dae3d5b2125c5cd3a1b106058
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679454"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467000"
 ---
 # <a name="dt"></a>DT
 

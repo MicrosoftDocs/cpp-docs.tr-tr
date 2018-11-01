@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4218 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4218
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4218
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4218
 ms.assetid: d6c3cd90-4518-49e9-ae86-4ba9e2761d98
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1970dd1bd231716f59508a7cca9f82d3e13151ae
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 36d5de3b1270b41edfc391df960a556aca207709
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46074053"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555304"
 ---
 # <a name="compiler-warning-level-1-c4218"></a>Derleyici Uyarısı (düzey 1) C4218
 

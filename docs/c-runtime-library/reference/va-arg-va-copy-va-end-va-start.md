@@ -1,10 +1,6 @@
 ---
-title: va_copy, olan va_arg, va_end, va_start | Microsoft Docs
-ms.custom: ''
+title: va_arg, va_copy, va_end, va_start
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - va_arg
 - va_end
@@ -30,8 +26,6 @@ f1_keywords:
 - va_dcl
 - va_copy
 - va_end
-dev_langs:
-- C++
 helpviewer_keywords:
 - variable argument lists, accessing
 - va_start macro
@@ -43,16 +37,12 @@ helpviewer_keywords:
 - va_alist macro
 - va_copy macro
 ms.assetid: a700dbbd-bfe5-4077-87b6-3a07af74a907
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c33c8dbfe55008c084daf8f6b9f4700f13281012
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cc0a903f6bc4895f7d2ea6e80990dea94f28c6c2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195435"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506359"
 ---
 # <a name="vaarg-vacopy-vaend-vastart"></a>va_arg, va_copy, va_end, va_start
 

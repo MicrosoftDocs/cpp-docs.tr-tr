@@ -1,12 +1,6 @@
 ---
-title: Cihaz bağlamları | Microsoft Docs
-ms.custom: ''
+title: Cihaz Bağlamları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OnPrepareDC method [MFC]
 - windows [MFC], and device context
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - drawing [MFC], directly into windows
 - painting and device context
 ms.assetid: d0cd51f1-f778-4c7e-bf50-d738d10433c7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 27203b5b93d69c29df29e64f872efb8e5f1828e1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8eca18795fac96e5cbddb404b901eb35da2de4b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437655"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585984"
 ---
 # <a name="device-contexts"></a>Cihaz Bağlamları
 

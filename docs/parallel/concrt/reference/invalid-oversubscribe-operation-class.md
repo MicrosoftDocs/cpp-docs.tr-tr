@@ -1,29 +1,19 @@
 ---
-title: invalid_oversubscribe_operation sınıfı | Microsoft Docs
-ms.custom: ''
+title: invalid_oversubscribe_operation Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - invalid_oversubscribe_operation
 - CONCRT/concurrency::invalid_oversubscribe_operation
 - CONCRT/concurrency::invalid_oversubscribe_operation::invalid_oversubscribe_operation
-dev_langs:
-- C++
 helpviewer_keywords:
 - invalid_oversubscribe_operation class
 ms.assetid: 0a9c5f08-d5e6-4ad0-90a9-517472b3ac28
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a1728053c7b42afedb4cda9b2dc96a089750a866
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 9e25095f70266e772d69f9b644f7def968157912
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161703"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50572152"
 ---
 # <a name="invalidoversubscribeoperation-class"></a>invalid_oversubscribe_operation Sınıfı
 

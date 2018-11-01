@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4429 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4429
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4429
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4429
 ms.assetid: a3e4cf1f-a869-4e47-834a-850c21eb5297
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 19e10806ffa601caa4212b5e5f98b823ec8941d0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d4eb7e7075c7adf418254e748f104a6d57c72741
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46049234"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596631"
 ---
 # <a name="compiler-warning-level-4-c4429"></a>Derleyici Uyarısı (düzey 4) C4429
 

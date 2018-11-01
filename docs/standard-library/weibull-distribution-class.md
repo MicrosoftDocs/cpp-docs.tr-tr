@@ -1,10 +1,6 @@
 ---
-title: weibull_distribution sınıfı | Microsoft Docs
-ms.custom: ''
+title: weibull_distribution Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::weibull_distribution
 - random/std::weibull_distribution::reset
@@ -19,8 +15,6 @@ f1_keywords:
 - random/std::weibull_distribution::param_type::b
 - random/std::weibull_distribution::param_type::operator==
 - random/std::weibull_distribution::param_type::operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::weibull_distribution [C++]
 - std::weibull_distribution [C++], reset
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - std::weibull_distribution [C++], param_type
 - std::weibull_distribution [C++], param_type
 ms.assetid: f20b49d3-1b9a-41af-8db4-baf800eaa02b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9229aa162c032198595e78344157748d250b4288
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 06e6dcca3e6c9afdb9b864bc545297dd477fe8ac
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713772"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477525"
 ---
 # <a name="weibulldistribution-class"></a>weibull_distribution Sınıfı
 

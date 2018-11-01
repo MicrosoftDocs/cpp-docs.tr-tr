@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3057 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3057
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3057
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3057
 ms.assetid: b0b2ba88-9c74-4bec-bf60-8fc72eade34c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b01c195ff05631f4bbf9d9d426f91dd94282d4bb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b2b827ec8d6b6ac21d80ded43e70f72098b3f367
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058828"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459910"
 ---
 # <a name="compiler-error-c3057"></a>Derleyici Hatası C3057
 

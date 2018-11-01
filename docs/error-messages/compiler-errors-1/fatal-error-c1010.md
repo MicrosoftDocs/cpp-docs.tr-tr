@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1010 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1010
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1010
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1010
 ms.assetid: dfd035f1-a7a2-40bc-bc92-dc4d7f456767
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5ae762c15c96ed7c12a20d2070d22cdc556667ac
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6974f0d82653203973be50b5ea709bd9487a215f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46064093"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575818"
 ---
 # <a name="fatal-error-c1010"></a>Önemli hata C1010
 

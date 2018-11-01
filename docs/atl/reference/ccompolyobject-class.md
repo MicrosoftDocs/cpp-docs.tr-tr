@@ -1,10 +1,6 @@
 ---
-title: CComPolyObject sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComPolyObject sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComPolyObject
 - ATLCOM/ATL::CComPolyObject
@@ -16,23 +12,17 @@ f1_keywords:
 - ATLCOM/ATL::CComPolyObject::QueryInterface
 - ATLCOM/ATL::CComPolyObject::Release
 - ATLCOM/ATL::CComPolyObject::m_contained
-dev_langs:
-- C++
 helpviewer_keywords:
 - aggregate objects [C++], in ATL
 - aggregation [C++], ATL objects
 - CComPolyObject class
 ms.assetid: eaf67c18-e855-48ca-9b15-f1df3106121b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 78e45db5cf68c4a92fc9e8165ed648760d02e8fb
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9f84c022ac1dee34b6dca2931abb349eefb7d690
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069457"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495894"
 ---
 # <a name="ccompolyobject-class"></a>CComPolyObject sınıfı
 

@@ -1,25 +1,15 @@
 ---
-title: Etki alanı hataları | Microsoft Docs
-ms.custom: ''
+title: Etki Alanı Hataları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - domain errors
 ms.assetid: 67faa973-c872-40bc-a25f-2ef5559db96c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b0ad11ca9acb99395e62f215b7bd1fef77d60f49
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d3161643452aad6dd439e5fa93197164c23eaf65
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016097"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639679"
 ---
 # <a name="domain-errors"></a>Etki Alanı Hataları
 

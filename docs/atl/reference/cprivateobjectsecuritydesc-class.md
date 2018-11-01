@@ -1,10 +1,6 @@
 ---
-title: CPrivateObjectSecurityDesc sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPrivateObjectSecurityDesc sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CPrivateObjectSecurityDesc
 - ATLSECURITY/ATL::CPrivateObjectSecurityDesc
@@ -13,21 +9,15 @@ f1_keywords:
 - ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Create
 - ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Get
 - ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Set
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPrivateObjectSecurityDesc class
 ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d14b4598020358de01a7914b369eac2b8f5b016d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6b8f84966ed58c5b031518bdf5e9f42cf7cedb48
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076106"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429230"
 ---
 # <a name="cprivateobjectsecuritydesc-class"></a>CPrivateObjectSecurityDesc sınıfı
 

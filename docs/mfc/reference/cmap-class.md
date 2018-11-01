@@ -1,10 +1,6 @@
 ---
-title: CMap sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMap sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMap
 - AFXTEMPL/CMap
@@ -24,8 +20,6 @@ f1_keywords:
 - AFXTEMPL/CMap::RemoveAll
 - AFXTEMPL/CMap::RemoveKey
 - AFXTEMPL/CMap::SetAt
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMap [MFC], CPair
 - CMap [MFC], CMap
@@ -44,16 +38,12 @@ helpviewer_keywords:
 - CMap [MFC], RemoveKey
 - CMap [MFC], SetAt
 ms.assetid: 640a45ab-0993-4def-97ec-42cc78eb10b9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6b8fad9179764c1198cbf9df19478e1ac7936421
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3991ae4c7455aa8e6eb377112cb89c057e9567e0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440933"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627324"
 ---
 # <a name="cmap-class"></a>CMap sınıfı
 

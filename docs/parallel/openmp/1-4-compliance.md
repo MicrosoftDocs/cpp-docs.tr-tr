@@ -1,23 +1,13 @@
 ---
-title: 1.4 uyumluluk | Microsoft Docs
-ms.custom: ''
+title: 1.4 Uyumluluk
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 662ad260-b9a1-43b7-b269-ef6ff0714e05
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1a332d8fb5de172c363c6f9c1bebba65d6fa0ff8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7fb47c9989e971e10701c2ee2bd7ac7823141812
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381822"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642461"
 ---
 # <a name="14-compliance"></a>1.4 Uyumluluk
 

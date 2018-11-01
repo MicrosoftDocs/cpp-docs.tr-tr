@@ -1,10 +1,6 @@
 ---
-title: CMFCKeyMapDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCKeyMapDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCKeyMapDialog
 - AFXKEYMAPDIALOG/CMFCKeyMapDialog
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnSetColumns
 - AFXKEYMAPDIALOG/CMFCKeyMapDialog::PrintKeyMap
 - AFXKEYMAPDIALOG/CMFCKeyMapDialog::SetColumnsWidth
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCKeyMapDialog [MFC], CMFCKeyMapDialog
 - CMFCKeyMapDialog [MFC], DoModal
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - CMFCKeyMapDialog [MFC], PrintKeyMap
 - CMFCKeyMapDialog [MFC], SetColumnsWidth
 ms.assetid: 5feb4942-d636-462d-a162-0104dd320f4e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 460dddeb04ae7cd99d1016234c96c18dc1402cc4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e1ed48c851243611b052c79d13721076d27dcf8c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401932"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452682"
 ---
 # <a name="cmfckeymapdialog-class"></a>CMFCKeyMapDialog sınıfı
 

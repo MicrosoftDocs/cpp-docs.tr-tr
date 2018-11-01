@@ -1,10 +1,6 @@
 ---
-title: COleDocument sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleDocument sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleDocument
 - AFXOLE/COleDocument
@@ -31,8 +27,6 @@ f1_keywords:
 - AFXOLE/COleDocument::OnUpdateObjectVerbMenu
 - AFXOLE/COleDocument::OnUpdatePasteLinkMenu
 - AFXOLE/COleDocument::OnUpdatePasteMenu
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleDocument [MFC], COleDocument
 - COleDocument [MFC], AddItem
@@ -58,16 +52,12 @@ helpviewer_keywords:
 - COleDocument [MFC], OnUpdatePasteLinkMenu
 - COleDocument [MFC], OnUpdatePasteMenu
 ms.assetid: dc2ecb99-03e1-44c7-bb69-48056dd1b672
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 95c528ca21d0f458fe67908322ac622ad26e55e0
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2f28178240f7d17e124970d91ec7eb338ef110e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077510"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452162"
 ---
 # <a name="coledocument-class"></a>COleDocument sınıfı
 

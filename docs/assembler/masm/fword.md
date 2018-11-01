@@ -1,27 +1,17 @@
 ---
-title: FWORD | Microsoft Docs
-ms.custom: ''
+title: FWORD
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - FWORD
-dev_langs:
-- C++
 helpviewer_keywords:
 - FWORD directive
 ms.assetid: 8fd33d12-d49d-4e2a-80ac-0f55792e99be
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 375e822f5d8b0b9c6440b92509469a75fac3b5b4
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 85ea61b4d2d08e183663d4c0d1e15f998b49d3c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682034"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50435434"
 ---
 # <a name="fword"></a>FWORD
 

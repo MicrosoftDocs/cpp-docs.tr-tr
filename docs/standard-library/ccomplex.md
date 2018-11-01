@@ -1,29 +1,19 @@
 ---
-title: '&lt;ccomplex&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;ccomplex&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <ccomplex>
-dev_langs:
-- C++
 ms.assetid: a9fcb5f0-88e3-464b-a5fd-d1afb8cd7e6f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: de5c67fc88da6fc4674b7dad67b5f74dcc3ce54d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e0f8c31afac0608b4de66bd10602264666d39426
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850391"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667941"
 ---
 # <a name="ltccomplexgt"></a>&lt;ccomplex&gt;
 
-C++ standart kitaplık üstbilgi içeren [ \<karmaşık >](../standard-library/complex.md), standart C Kitaplığı üstbilgi etkili bir şekilde içeren \<complex.h > ve ilişkili adlarıyla ekler `std` ad alanı.
+C++ Standart Kitaplığı üst bilgisi [ \<karmaşık >](../standard-library/complex.md), standart C Kitaplığı üstbilgisi etkili bir şekilde içeren \<complex.h > ve ilişkili adlar ekler `std` ad alanı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,9 +24,9 @@ C++ standart kitaplık üstbilgi içeren [ \<karmaşık >](../standard-library/c
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üst dahil olmak üzere sağlar standart C Kitaplığı üstbilgisinde dış bağlantı kullanılarak bildirilen adları bildirilir `std` ad alanı.
+Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
 
-Adı `clog`, içinde bildirilen \<complex.h >, tanımlı değil `std` ad alanı ile olası çakışmaları nedeniyle `clog` içinde bildirilen [ \<iostream >](../standard-library/iostream.md).
+Adı `clog`, içinde bildirilen \<complex.h >, tanımlı değil `std` ad alanı ile olası çakışmaları nedeniyle `clog` dosyasında bildirilen [ \<iostream >](../standard-library/iostream.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

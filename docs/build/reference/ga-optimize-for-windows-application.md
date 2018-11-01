@@ -1,31 +1,21 @@
 ---
-title: -GA (Windows uygulaması için İyileştir) | Microsoft Docs
-ms.custom: ''
+title: /GA (Windows Uygulaması için İyileştir)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.OptimizeForWindowsApplication
 - /ga
-dev_langs:
-- C++
 helpviewer_keywords:
 - /GA compiler option [C++]
 - GA compiler option [C++]
 - -GA compiler option [C++]
 - Optimize for Windows compiler options
 ms.assetid: be97323e-15a0-4836-862c-95980b51926a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2ef8aaf1e2b3f1dd75f7ca2669aaf09f3d121a98
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 04f8e9e19e5224c1a03ab1c7679d37b7bb8d1389
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710066"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50503344"
 ---
 # <a name="ga-optimize-for-windows-application"></a>/GA (Windows Uygulaması için İyileştir)
 
@@ -55,7 +45,7 @@ Kullanarak **/GA** için bir DLL hatalı kod oluşturma neden olabilir.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -1,10 +1,6 @@
 ---
-title: Bileşik Denetim genel işlevleri | Microsoft Docs
-ms.custom: ''
+title: Bileşik Denetim genel işlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlhost/ATL::AtlAxDialogBox
 - atlhost/ATL::AtlAxCreateDialog
@@ -19,21 +15,15 @@ f1_keywords:
 - atlhost/ATL::AtlAxWinInit
 - atlhost/ATL::AtlAxWinTerm
 - atlhost/ATL::AtlGetObjectSourceInterface
-dev_langs:
-- C++
 helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8c8493650ef2c86a89c1a3060deb5ee6269a38a7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d86978c6bf8aba87828cdda91c3e849a2f755a90
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068651"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525274"
 ---
 # <a name="composite-control-global-functions"></a>Bileşik Denetim genel işlevleri
 

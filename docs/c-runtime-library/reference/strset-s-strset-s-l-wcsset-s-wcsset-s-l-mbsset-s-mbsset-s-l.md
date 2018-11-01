@@ -1,10 +1,6 @@
 ---
-title: _strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l | Microsoft Docs
-ms.custom: ''
+title: _strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wcsset_s
 - _wcsset_s_l
@@ -41,8 +37,6 @@ f1_keywords:
 - _strset_s_l
 - _tcsset_s_l
 - _tcsset_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - mbsset_s_l function
 - wcsset_s function
@@ -63,23 +57,19 @@ helpviewer_keywords:
 - _tcsset_s function
 - mbsset_s function
 ms.assetid: dceb2909-6b41-4792-acb7-888e45bb8b35
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f632185a17bd02dfa837bae3605c51d27442772a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2cb2e9a6ba4179f8e362749e01324fe7e38cf5eb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415565"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452539"
 ---
 # <a name="strsets-strsetsl-wcssets-wcssetsl-mbssets-mbssetsl"></a>_strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l
 
-Bir dizenin karakterlerini karaktere ayarlar. Bu sürümleri [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir dizenin karakterlerini bir karaktere ayarlar. Bu sürümleri [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
-> **_mbsset_s** ve **_mbsset_s_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsset_s** ve **_mbsset_s_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -122,30 +112,30 @@ errno_t _mbsset_s_l(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Ayarlanacak null ile sonlandırılmış dize.
+Ayarlamak için null ile sonlandırılmış dize.
 
 *numberOfElements*<br/>
-Boyutunu *str* arabellek.
+Boyutu *str* arabellek.
 
 *c*<br/>
-Karakter değeri.
+Karakter ayarı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, sıfır Aksi takdirde bir hata kodu.
+Başarılıysa sıfır Aksi takdirde bir hata kodu.
 
-Bu işlevler kendi bağımsız değişkenleri doğrulayın. Varsa *str* null işaretçinin veya *numberOfElements* bağımsız değişkeni 0, küçük veya buna eşit olan veya null ile sonlandırılmış geçirilen bloğu değil, sonra anlatıldığıgibigeçersizparametreişleyicisiçağrılır[ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş **EINVAL** ve **errno** için **EINVAL**.
+Bu işlevler, kendi bağımsız değişkenlerini doğrular. Varsa *str* null bir işaretçiyse veya *numberOfElements* bağımsız değişkeni 0 değerinden küçük veya eşit olan veya içinden geçilen blok null ile sonlandırılmış değil, ardından içindeaçıklananşekildegeçersizparametreişleyicisiçağrılır[ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EINVAL** ayarlayıp **errno** için **EINVAL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strset_s** işlevi ayarlar tüm karakterleri *str* için *c* (dönüştürülen **char**), hariç sonlandırma null karakter. **_wcsset_s** ve **_mbsset_s** joker karakter ve çok baytlı karakter sürümleri **_strset_s**. Bağımsız değişkenleri ve dönüş değerleri veri türlerini buna göre farklılık gösterir. Bu işlevler aynı şekilde aksi davranır.
+**_Strset_s** işlevi ayarlar tüm karakterleri *str* için *c* (dönüştürülür **char**), sondaki null karakter hariç. **_wcsset_s** ve **_mbsset_s** geniş karakter ve çok baytlı karakter sürümleridir **_strset_s**. Bağımsız değişkenler ve dönüş değerlerinin veri türleri buna göre değişir. Bu işlevler, aynı şekilde davranır.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle **_l** soneki, yerel ayar parametresi kullanmasını dışında aynıdır Bunun yerine geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Bu işlevler hata ayıklama sürümleri ilk 0xFD arabellekle doldurun. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -164,7 +154,7 @@ Bu işlevler hata ayıklama sürümleri ilk 0xFD arabellekle doldurun. Bu davran
 |**_wcsset_s_l**|\<Tchar.h >|
 |**_mbsset_s**, **_mbsset_s_l**|\<Mbstring.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

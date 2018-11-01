@@ -1,33 +1,22 @@
 ---
-title: Kaynak Düzenleyicileri (C++) | Microsoft Docs
-ms.custom: ''
+title: Kaynak Düzenleyicileri (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vs.editors.resource
 - vc.resvw.resource.editors
 - vs.resvw.resource.editors
-dev_langs:
-- C++
 helpviewer_keywords:
 - editors [C++], resource
 - editors [C++]
 - resource editors
 - Windows [C++], application resource editing
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 6b9b9666e9c20e955d8f3705ebd93e7c890d2bc0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ae35dbe98304fbf2f80dfe5cba8747d47cbba4d6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391929"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622410"
 ---
 # <a name="resource-editors"></a>Kaynak Düzenleyicileri
 

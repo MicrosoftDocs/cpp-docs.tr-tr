@@ -1,10 +1,6 @@
 ---
-title: _ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l | Microsoft Docs
-ms.custom: ''
+title: _ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbclegal_l
 - _ismbclegal
@@ -32,8 +28,6 @@ f1_keywords:
 - ismbclegal_l
 - ismbcsymbol
 - ismbclegal
-dev_langs:
-- C++
 helpviewer_keywords:
 - ismbcsymbol function
 - ismbclegal_l function
@@ -48,23 +42,19 @@ helpviewer_keywords:
 - _ismbcsymbol_l function
 - istlegal_l function
 ms.assetid: 31bf1ea5-b56f-4e28-b21e-b49a2cf93ffc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8d2bd03eb230d85a1f93038d50566b8ccae468a5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 07855ec970b2bf307238982987912f1e91505e96
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402601"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454580"
 ---
 # <a name="ismbclegal-ismbclegall-ismbcsymbol-ismbcsymboll"></a>_ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l
 
-Birden çok baytlı karakter bir yasal olup olmadığını denetler veya sembol karakter.
+Yasal bir çok baytlı bir karakter olup olmadığını kontrol eder veya sembol karakter.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -88,32 +78,32 @@ int _ismbcsymbol_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Sınanacak karakter.
+Test edilecek karakter.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Karakter test durumu ya da 0 uymazsa mevcut değilse bu yordamlar her sıfır olmayan bir değer döndürür. Varsa *c*< = 255 ve karşılık gelen **_ismbb** yordamına (örneğin, **_ismbcalnum** karşılık gelen **_ismbbalnum**), Buna karşılık gelen dönüş değeri sonucudur **_ismbb** yordamı.
+Karakter test koşulunu veya 0 karşılıyorsa kullanmıyorsa bu yordamların her biri sıfır dışında bir değeri döndürür. Varsa *c*< = 255 ve karşılık gelen **_ismbb** yordamı (örneğin, **_ismbcalnum** karşılık gelen **_ismbbalnum**), Sonuç, karşılık gelen dönüş değeri olduğu **_ismbb** yordamı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri belirli bir birden çok baytlı karakter verilen bir koşul için sınar.
+Bu işlevlerin her biri, belirli bir koşul için belirli bir çok baytlı karakteri test eder.
 
-Bu işlevleri sürümlerini **_l** soneki, yerel ayara bağımlı davranışlarını geçerli yerel yerine geçirilen yerel ayar kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Sahip bu işlevlerin sürümleri **_l** sonekine yerel ayara bağlı davranışları için geçerli yerel ayarı yerine iletilen yerel ayarı kullanmaları dışında. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-|Yordam|Test durumu|Kod sayfası 932 örneği|
+|Yordam|Test koşulu|Kod sayfası 932 örneği|
 |-------------|--------------------|---------------------------|
-|**_ismbclegal**|Geçerli çok baytlı|Sıfır olmayan IF ve yalnızca ilk baytı döndürür *c* 0x81-0x9F veya 0xE0 - aralıklara ikinci 0x40-0x7E veya 0x80 - aralıklara FC bayttır 0xFC, açıkken.|
-|**_ismbcsymbol**|Birden çok baytlı simgesi|Sıfır olmayan ve yalnız döndürür 0x8141 < =*c*< 0x81AC =.|
+|**_ismbclegal**|Geçerli çok baytlı|Yalnız ve yalnızca ilk baytı döndürür *c* ikinci baytı aralıklar 0x40-0x7E veya 0x80 - FC ederken aralıklar 0x81-0x9F veya 0xE0 - 0xfc aralığında olan.|
+|**_ismbcsymbol**|Çok baytlı sembolü|Yalnız ve yalnızca döndürür 0x8141 < =*c*< 0x81AC =.|
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_istlegal**|Her zaman false döndürür|**_ismbclegal**|Her zaman false döndürür.|
-|**_istlegal_l**|Her zaman false döndürür|**_ismbclegal_l**|Her zaman false döndürür.|
+|**_istlegal**|Daima yanlış getirir|**_ismbclegal**|her zaman false döndürür.|
+|**_istlegal_l**|Daima yanlış getirir|**_ismbclegal_l**|her zaman false döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -122,7 +112,7 @@ Bu işlevleri sürümlerini **_l** soneki, yerel ayara bağımlı davranışlar�
 |**_ismbclegal**, **_ismbclegal_l**|\<Mbstring.h >|
 |**_ismbcsymbol**, **_ismbcsymbol_l**|\<Mbstring.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

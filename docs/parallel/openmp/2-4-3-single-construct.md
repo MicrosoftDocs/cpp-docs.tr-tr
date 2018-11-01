@@ -1,23 +1,13 @@
 ---
-title: 2.4.3 tek yapı | Microsoft Docs
-ms.custom: ''
+title: 2.4.3 single Yapı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 15c180cd-e462-4b41-bf8c-cb8b1afb1a9b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 81abf5324c215b9011ecbd774626a213c2eda653
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7dda98ee83ee08adc29830a9c4ada71a208705fe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376506"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466371"
 ---
 # <a name="243-single-construct"></a>2.4.3 single Yapı
 

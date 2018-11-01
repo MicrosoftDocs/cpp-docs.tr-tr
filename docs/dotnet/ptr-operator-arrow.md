@@ -1,31 +1,21 @@
 ---
-title: PTR::operator -&gt; | Microsoft Docs
-ms.custom: ''
+title: PTR::operator-&gt;
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr.com.ptr.operator->
 - ptr.operator->
 - ptr::operator->
 - msclr::com::ptr::operator->
-dev_langs:
-- C++
 helpviewer_keywords:
 - ptr::operator->
 ms.assetid: e752b549-74ed-430d-9a60-6c8e0e441998
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: ec7844f6c26f219588d147052fd43437e2a1e8c7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2991f50a50eb130d0e336f88269ce35ffaf3a0fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438788"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432441"
 ---
 # <a name="ptroperator-gt"></a>PTR::operator-&gt;
 

@@ -1,29 +1,19 @@
 ---
-title: __unaligned | Microsoft Docs
-ms.custom: ''
+title: __unaligned
 ms.date: 10/10/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __unaligned_cpp
 - __unaligned
 - _unaligned
-dev_langs:
-- C++
 helpviewer_keywords:
 - __unaligned keyword [C++]
 ms.assetid: 0cd83aad-1840-47e3-ad33-59bfcbe6375b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 444bc3372b22676cacb3ee89b9c0ad92000cedcc
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 8abe64a8eb82188ab86c91a023254b3a4106797c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161224"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487015"
 ---
 # <a name="unaligned"></a>__unaligned
 

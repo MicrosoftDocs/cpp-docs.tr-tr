@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3654 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3654
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3654
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3654
 ms.assetid: 57d96e3f-6bbb-4eaa-934b-26c23b4ceb2e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 344c54ce01cde1a68f7756f7677135521f9b5a7c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: eca5081daaaf92a7b95a076a1e93bc06799bd9f8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46043657"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649026"
 ---
 # <a name="compiler-error-c3654"></a>Derleyici Hatası C3654
 

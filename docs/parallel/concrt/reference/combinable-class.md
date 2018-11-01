@@ -1,10 +1,6 @@
 ---
-title: combinable sınıfı | Microsoft Docs
-ms.custom: ''
+title: combinable Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - combinable
 - PPL/concurrency::combinable
@@ -13,21 +9,15 @@ f1_keywords:
 - PPL/concurrency::combinable::combine
 - PPL/concurrency::combinable::combine_each
 - PPL/concurrency::combinable::local
-dev_langs:
-- C++
 helpviewer_keywords:
 - combinable class
 ms.assetid: fe0bfbf6-6250-47da-b8d0-f75369f0b5be
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d544ac392e2eb227d7e1c37412110d09272f10d5
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: b392a46c3aafac9ab5f3ca2b626f5f78daebc85d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162515"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630756"
 ---
 # <a name="combinable-class"></a>combinable Sınıfı
 

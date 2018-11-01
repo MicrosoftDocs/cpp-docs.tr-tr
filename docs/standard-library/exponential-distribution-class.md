@@ -1,10 +1,6 @@
 ---
-title: exponential_distribution sınıfı | Microsoft Docs
-ms.custom: ''
+title: exponential_distribution Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::exponential_distribution
 - random/std::exponential_distribution::reset
@@ -17,8 +13,6 @@ f1_keywords:
 - random/std::exponential_distribution::param_type::lambda
 - random/std::exponential_distribution::param_type::operator==
 - random/std::exponential_distribution::param_type::operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::exponential_distribution [C++]
 - std::exponential_distribution [C++], reset
@@ -29,16 +23,12 @@ helpviewer_keywords:
 - std::exponential_distribution [C++], param_type
 - std::exponential_distribution [C++], param_type
 ms.assetid: d54f3126-a09b-45f9-a30b-0d94d03bcdc9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 018af5d544e38485dc38608f280d57ce595db49c
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: df511a37952be240424ccf89e03f8fd021e1f387
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103285"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447053"
 ---
 # <a name="exponentialdistribution-class"></a>exponential_distribution Sınıfı
 

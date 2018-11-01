@@ -1,12 +1,6 @@
 ---
-title: 'Kayıt Alanı Değişimi: sihirbaz kodu ile çalışma | Microsoft Docs'
-ms.custom: ''
+title: 'Kayıt Alanı Değişimi: Sihirbaz Kodu ile Çalışma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - DoFieldExchange method, overriding
 - Unicode, with database classes
@@ -21,17 +15,12 @@ helpviewer_keywords:
 - overriding, DoFieldExchange
 - m_nFields data member, initializing
 ms.assetid: f00d882a-ff1b-4a75-9717-98d8762bb237
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: cffd5b262b40fca4814acbd5d0d89d6a6693c814
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c0e1a35e5476c9e2e335c6f2863429d89e4fa28a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070577"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492125"
 ---
 # <a name="record-field-exchange-working-with-the-wizard-code"></a>Kayıt Alanı Değişimi: Sihirbaz Kodu ile Çalışma
 

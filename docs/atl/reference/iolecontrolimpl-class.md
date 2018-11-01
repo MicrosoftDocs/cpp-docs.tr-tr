@@ -1,10 +1,6 @@
 ---
-title: Iolecontrolımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Iolecontrolımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IOleControlImpl
 - ATLCTL/ATL::IOleControlImpl
@@ -12,21 +8,15 @@ f1_keywords:
 - ATLCTL/ATL::IOleControlImpl::GetControlInfo
 - ATLCTL/ATL::IOleControlImpl::OnAmbientPropertyChange
 - ATLCTL/ATL::IOleControlImpl::OnMnemonic
-dev_langs:
-- C++
 helpviewer_keywords:
 - IOleControlImpl class
 ms.assetid: 5a4255ad-ede4-49ca-ba9a-07c2e919fa85
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 28404c4f8dddeafb624b873448d4dc7aaa5dc0d8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8b84f982d06547dd162da530d326d4cdb92e254a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46076820"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50442165"
 ---
 # <a name="iolecontrolimpl-class"></a>Iolecontrolımpl sınıfı
 

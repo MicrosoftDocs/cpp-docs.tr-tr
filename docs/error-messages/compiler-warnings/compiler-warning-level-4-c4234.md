@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4234 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4234
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4234
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4234
 ms.assetid: f7fecd5c-8248-4fde-8446-502aedc357ca
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a6ce6ba622cb480096144706589a01dee7326f38
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 314ee068fb2be6148304360b0aaa3bd8029c283b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118238"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441021"
 ---
 # <a name="compiler-warning-level-4-c4234"></a>Derleyici Uyarısı (düzey 4) C4234
 

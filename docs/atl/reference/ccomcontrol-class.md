@@ -1,10 +1,6 @@
 ---
-title: CComControl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComControl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComControl
 - ATLCTL/ATL::CComControl
@@ -14,8 +10,6 @@ f1_keywords:
 - ATLCTL/ATL::CComControl::FireOnChanged
 - ATLCTL/ATL::CComControl::FireOnRequestEdit
 - ATLCTL/ATL::CComControl::MessageBox
-dev_langs:
-- C++
 helpviewer_keywords:
 - control flags
 - CComControlBase class, CComControl class
@@ -25,16 +19,12 @@ helpviewer_keywords:
 - ambient properties
 - controls [ATL], properties
 ms.assetid: 55368c27-bd16-45a7-b701-edb36157c8e8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bb2d345e0bb8be8f5150d48237df9845acf451dd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3fe01128fc5f0a9d3058df2d6f95a6c038b28062
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46036182"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644203"
 ---
 # <a name="ccomcontrol-class"></a>CComControl sınıfı
 

@@ -1,15 +1,9 @@
 ---
-title: Bir araç çubuğu denetiminde açılır düğmeler kullanma | Microsoft Docs
-ms.custom: ''
+title: Bir Araç Çubuğu Denetiminde Açılır Düğmeler Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - TBN_DROPDOWN
 - TBSTYLE_EX_DRAWDDARROWS
-dev_langs:
-- C++
 helpviewer_keywords:
 - CToolBarCtrl class [MFC], drop-down buttons
 - toolbars [MFC], drop-down buttons
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - TBSTYLE_EX_DRAWDDARROWS
 - TBN_DROPDOWN notification [MFC]
 ms.assetid: b859f758-d2f6-40d9-9c26-0ff61993b9b2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5e58b6b9d64111e021586fc23a985f31c0edf9de
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fe314e0fdff70979dfc858bb89578170f9a9ee02
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063776"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453502"
 ---
 # <a name="using-drop-down-buttons-in-a-toolbar-control"></a>Bir Araç Çubuğu Denetiminde Açılır Düğmeler Kullanma
 

@@ -1,10 +1,6 @@
 ---
-title: Extent sınıfı (C++ AMP) | Microsoft Docs
-ms.custom: ''
+title: extent Sınıfı (C++ AMP)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - extent
 - AMP/extent
@@ -13,21 +9,15 @@ f1_keywords:
 - AMP/Concurrency::extent::size
 - AMP/Concurrency::extent::tile
 - AMP/Concurrency::extent::rank Constant
-dev_langs:
-- C++
 helpviewer_keywords:
 - extent structure
 ms.assetid: edb5de3d-3935-4dbb-8365-4cc6c4fb0269
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 65113616b93917e46738a0d7f3bc39bdd79553f1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3b6803b0ddfe09feb37a6e0d3072d8afa422de8d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060056"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476661"
 ---
 # <a name="extent-class-c-amp"></a>extent Sınıfı (C++ AMP)
 

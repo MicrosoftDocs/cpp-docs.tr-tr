@@ -1,26 +1,15 @@
 ---
-title: Dizeleri OLE DB Sağlayıcısında Depolama | Microsoft Docs
-ms.custom: ''
+title: Dizeleri OLE DB Sağlayıcısında Depolama
 ms.date: 10/26/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - user records, editing
 ms.assetid: 36cb9635-067c-4cad-8f85-962f28026f6a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 46529a97ff38071c71ecdaf93e41f3eeb405c8a6
-ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
+ms.openlocfilehash: b1bc7ca74ce114f9d901fc5771a376df973f54a8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50216441"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50652341"
 ---
 # <a name="storing-strings-in-the-ole-db-provider"></a>Dizeleri OLE DB Sağlayıcısında Depolama
 

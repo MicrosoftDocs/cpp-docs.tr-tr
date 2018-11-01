@@ -1,12 +1,6 @@
 ---
-title: Belgeleri ve görünümleri başlatma | Microsoft Docs
-ms.custom: ''
+title: Belgeleri ve Görünümleri Başlatma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - initializing documents [MFC]
 - documents [MFC], initializing
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - initializing objects [MFC], document objects
 - initializing views [MFC]
 ms.assetid: 33cb8643-8a16-478c-bc26-eccc734e3661
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d6a6f989b8c6b19c78cf9ad508d18e9592bb9305
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2fb557d55576678d8c1199bec20e1fa4c849e1b4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417403"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612257"
 ---
 # <a name="initializing-documents-and-views"></a>Belgeleri ve Görünümleri Başlatma
 

@@ -1,25 +1,15 @@
 ---
-title: BSCMAKE komut satırı | Microsoft Docs
-ms.custom: ''
+title: BSCMAKE Komut Satırı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - BSCMAKE, command line
 ms.assetid: 8006e8cf-8bfe-4c23-868a-b0a25e6bbf0f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bda0457eecdf6ef7c846d7c12e24078faa4d0da5
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a5a1e8f8e1d022fab9dc1bf4f67713302c11f758
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45720050"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446728"
 ---
 # <a name="bscmake-command-line"></a>BSCMAKE Komut Satırı
 

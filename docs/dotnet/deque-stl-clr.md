@@ -1,9 +1,6 @@
 ---
-title: deque (STL/CLR) | Microsoft Docs
-ms.custom: ''
+title: sıradan ayır (STL/CLR)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::deque
@@ -51,8 +48,6 @@ f1_keywords:
 - cliext::deque::operator==
 - cliext::deque::operator>
 - cliext::deque::operator>=
-dev_langs:
-- C++
 helpviewer_keywords:
 - deque class [STL/CLR]
 - <deque> header [STL/CLR]
@@ -103,17 +98,12 @@ helpviewer_keywords:
 - operator> member [STL/CLR]
 - operator>= member [STL/CLR]
 ms.assetid: dd669da3-3c0e-45e9-8596-f6b483720941
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 9d5abbda25bc579bf635f27026f239da0f716499
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ff5ddcfa101baf4c85145d1c6d64a6a3b9e7df58
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448408"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445064"
 ---
 # <a name="deque-stlclr"></a>sıradan ayır (STL/CLR)
 

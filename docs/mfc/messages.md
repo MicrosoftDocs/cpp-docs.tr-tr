@@ -1,26 +1,16 @@
 ---
-title: İletileri | Microsoft Docs
-ms.custom: ''
+title: İletiler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - messages, MFC
 - messages [MFC]
 ms.assetid: b1476310-a135-42ca-817c-444fb3675491
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f25c9cc70cec598f975bbd242af83597311bdc7c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 033edfd289ea075b89e9d44111da94b987177470
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392261"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434547"
 ---
 # <a name="messages"></a>İletiler
 

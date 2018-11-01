@@ -1,11 +1,6 @@
 ---
-title: ccos, ccosf, ccosl | Microsoft Docs
-ms.custom: ''
+title: ccos, ccosf, ccosl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - ccos
 - ccosf
@@ -30,23 +25,17 @@ f1_keywords:
 - complex/ccos
 - complex/ccosf
 - complex/ccosl
-dev_langs:
-- C++
 helpviewer_keywords:
 - ccos function
 - ccosf function
 - ccosl function
 ms.assetid: 4ab936ac-ff85-49ac-9418-2b69cf5d4696
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4345926f3eebb6c65c8f70f65cd37f1add956ed5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d1a94f7ad0bbd525480d344fa8ac5b3ee591a1b2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394557"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50489693"
 ---
 # <a name="ccos-ccosf-ccosl"></a>ccos, ccosf, ccosl
 
@@ -83,15 +72,15 @@ Kosinüsünü *z*, radyan cinsinden açı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **ccos** alın ve dönüş **_Fcomplex** ve **_Lcomplex** değerleri. Bir C programı **ccos** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **ccos** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **ccos** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**ccos**, **ccosf**, **ccosl**|\<Complex.h >|\<ccomplex >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

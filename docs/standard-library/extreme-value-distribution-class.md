@@ -1,10 +1,6 @@
 ---
-title: extreme_value_distribution sınıfı | Microsoft Docs
-ms.custom: ''
+title: extreme_value_distribution Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::extreme_value_distribution
 - random/std::extreme_value_distribution::reset
@@ -19,8 +15,6 @@ f1_keywords:
 - random/std::extreme_value_distribution::param_type::b
 - random/std::extreme_value_distribution::param_type::operator==
 - random/std::extreme_value_distribution::param_type::operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::extreme_value_distribution [C++]
 - std::extreme_value_distribution [C++], reset
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - std::extreme_value_distribution [C++], param_type
 - std::extreme_value_distribution [C++], param_type
 ms.assetid: a0cd8370-0a54-4e26-9388-8b9678fb57da
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 10c93374a1ed9ed4fa875c78310d9ffa34406b83
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 7eb75fb7b76399fd4bf1d3bea94dcec4b52230f9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100851"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625039"
 ---
 # <a name="extremevaluedistribution-class"></a>extreme_value_distribution Sınıfı
 

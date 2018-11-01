@@ -1,9 +1,6 @@
 ---
-title: Lock::try_acquire | Microsoft Docs
-ms.custom: ''
+title: lock::try_acquire
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - try_acquire
@@ -11,22 +8,15 @@ f1_keywords:
 - msclr.lock.try_acquire
 - lock::try_acquire
 - msclr::lock::try_acquire
-dev_langs:
-- C++
 helpviewer_keywords:
 - lock::try_acquire
 ms.assetid: ef0649a9-e611-4495-84bd-2784533221d9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 0f121ff9915e49c98bc9f32ff683f8d08914f560
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: ea16a495931c094a0088653bd0db9accca4bb486
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163471"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440956"
 ---
 # <a name="locktryacquire"></a>lock::try_acquire
 

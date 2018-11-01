@@ -1,25 +1,15 @@
 ---
-title: Evrensel CRT dağıtım | Microsoft Docs
-ms.custom: ''
+title: Evrensel CRT dağıtım
 ms.date: 05/11/2018
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - deploying the CRT [C++]
 - application CRT deployment [C++]
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b7fe21753dc4310752c1081d17ddff942bcbd89f
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 90f859eb0e9134c997e7eecad118cfb8ec00b782
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821003"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50657700"
 ---
 # <a name="universal-crt-deployment"></a>Evrensel CRT dağıtım
 

@@ -1,10 +1,6 @@
 ---
-title: student_t_distribution sınıfı | Microsoft Docs
-ms.custom: ''
+title: student_t_distribution Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::student_t_distribution
 - random/std::student_t_distribution::result_type
@@ -15,8 +11,6 @@ f1_keywords:
 - random/std::student_t_distribution::min
 - random/std::student_t_distribution::max
 - random/std::student_t_distribution::param_type
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::student_t_distribution [C++]
 - std::student_t_distribution [C++], result_type
@@ -27,16 +21,12 @@ helpviewer_keywords:
 - std::student_t_distribution [C++], max
 - std::student_t_distribution [C++], param_type
 ms.assetid: 87b48127-9311-4d07-95df-833ed46bf0b1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6ce2c5e134b93c1cefd64b7a33935d42c6bba5cb
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 4c63f37c07a56144fdd18531af5e8f9fbdac656a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723989"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647817"
 ---
 # <a name="studenttdistribution-class"></a>student_t_distribution Sınıfı
 

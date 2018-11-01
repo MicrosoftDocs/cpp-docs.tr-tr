@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları uyarısı LNK4049 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Uyarısı LNK4049
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK4049
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK4049
 ms.assetid: 5fd5fb24-c860-4149-a557-0ac26a65d97c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3ad4e4adb492789639c71a25a2db774a80cd77c9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ed17a6014ddf420256848c87a90a37f190a0663e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021765"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429087"
 ---
 # <a name="linker-tools-warning-lnk4049"></a>Bağlayıcı Araçları Uyarısı LNK4049
 

@@ -1,12 +1,6 @@
 ---
-title: (Simgeler için görüntü Düzenleyicisi) piksel kılavuzunu görüntüleme veya gizleme | Microsoft Docs
-ms.custom: ''
+title: Piksel Kılavuzunu Görüntüleme veya Gizleme (Simgeler İçin Görüntü Düzenleyicisi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - grids, pixel
 - pixel grid, Image editor
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - Image editor [C++], grid settings
 - grid settings, Image editor
 ms.assetid: 571afcd7-94fb-433e-a652-c087d5665db1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 1a31d0ce8ec68e0b27d5ebc7de096e52162561cd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e93564511dbaf337d0f8114183771c85f3c63607
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438996"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50497158"
 ---
 # <a name="displaying-or-hiding-the-pixel-grid-image-editor-for-icons"></a>Piksel Kılavuzunu Görüntüleme veya Gizleme (Simgeler İçin Görüntü Düzenleyicisi)
 

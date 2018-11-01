@@ -1,30 +1,20 @@
 ---
-title: Ara belleğe almanın etkileri | Microsoft Docs
-ms.custom: ''
+title: Ara Belleğe Almanın Etkileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - buffers, effects of buffering
 - buffering, effects of
 ms.assetid: 5d544812-e95e-4f28-b15a-edef3f3414fd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c28deb0f5e30d3ec28fac4805a86645bebf27f22
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e10b28edffdfe3411f86c031bfd12ea886410e20
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842384"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631445"
 ---
 # <a name="effects-of-buffering"></a>Ara Belleğe Almanın Etkileri
 
-Aşağıdaki örnek, ara belleğe almanın etkileri gösterir. Programın yazdırmasını bekleyebilirsiniz `please wait`, 5 saniye bekleyin ve sonra devam edin. Çıkışın arabelleğe alınıp olmadığından, mutlaka bu şekilde, ancak çalışmaz.
+Aşağıdaki örnek, ara belleğe almanın etkileri gösterir. Programın yazdırmak için bekleyebileceğiniz `please wait`, 5 saniye bekleyin ve ardından devam edin. Çıktısının arabelleğe alınıp olduğundan, mutlaka bu şekilde, ancak çalışmıyor.
 
 ```cpp
 // effects_buffering.cpp
@@ -43,13 +33,13 @@ int main( )
 }
 ```
 
-Mantıksal olarak, iş program yapmak için `cout` nesne gerekir boş kendisini ileti görünmesi olduğunda. Temizlemek için bir `ostream` nesne, göndermeden `flush` manipulator:
+Programın mantıksal olarak çalışır hale getirmek için `cout` nesne gerekir boş kendisini görüntülenecek bir ileti olduğunda. Temizlemek için bir `ostream` nesne, göndermeden `flush` işleyici:
 
 ```cpp
 cout <<"Please wait..." <<flush;
 ```
 
-Bu adım, ileti önce bekleme yazdırır olduktan arabelleğini aktarır. Aynı zamanda `endl` manipulator, arabelleği temizler ve bir satır başı-satır besleme çıkarır veya kullanabileceğiniz `cin` nesnesi. Bu nesne (ile `cerr` veya `clog` nesneler) genellikle bağlı `cout` nesnesi. Bu nedenle, herhangi bir kullanımından `cin` (veya `cerr` veya `clog` nesneler) boşaltır `cout` nesnesi.
+Bu adım, bekleme önce iletiyi yazdırmaz sağlayarak, arabelleğini aktarır. Ayrıca `endl` işleyici, arabelleği temizler ve çıkaran bir satır başı return-satır besleme veya kullanabileceğiniz `cin` nesne. Bu nesne (ile `cerr` veya `clog` nesneleri) genellikle bağlıdır `cout` nesne. Bu nedenle, kullanımı `cin` (veya `cerr` veya `clog` nesneleri) aktarır `cout` nesne.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

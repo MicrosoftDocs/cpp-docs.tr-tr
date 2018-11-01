@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1012 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1012
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1012
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1012
 ms.assetid: 92cc83a7-b5b8-4da8-a128-9b7ccb510496
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eee666035af531d576b10831daec2474d8a7316a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 66930b95fc568aa6efe7d3ba0551aecc568c0be9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46041785"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522514"
 ---
 # <a name="fatal-error-c1012"></a>Önemli hata C1012
 

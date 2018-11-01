@@ -1,28 +1,18 @@
 ---
-title: AsWeak işlevi | Microsoft Docs
-ms.custom: ''
+title: AsWeak İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::AsWeak
-dev_langs:
-- C++
 helpviewer_keywords:
 - AsWeak function
 ms.assetid: a6f10cfc-c1d6-4761-adb9-1a119cc99913
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: dfd626a3e0ca1866f6db046554220c6e631c18b4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0c3250b18422f64e71d8e8d7dac8dc5ab204145b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394315"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616742"
 ---
 # <a name="asweak-function"></a>AsWeak İşlevi
 

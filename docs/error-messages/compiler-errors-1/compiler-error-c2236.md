@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2236 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2236
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2236
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2236
 ms.assetid: 0b6771a7-a783-4729-9c3d-7a3339c432cc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4fba2f795c3b786e82331a4b14f2c4530731db64
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 988377d2995468c84b86872ab6f2b25f5c3df9f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053706"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462653"
 ---
 # <a name="compiler-error-c2236"></a>Derleyici Hatası C2236
 

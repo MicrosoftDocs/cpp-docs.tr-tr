@@ -1,10 +1,6 @@
 ---
-title: CArchive sınıfı | Microsoft Docs
-ms.custom: ''
+title: CArchive sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CArchive
 - AFX/CArchive
@@ -31,8 +27,6 @@ f1_keywords:
 - AFX/CArchive::WriteObject
 - AFX/CArchive::WriteString
 - AFX/CArchive::m_pDocument
-dev_langs:
-- C++
 helpviewer_keywords:
 - CArchive [MFC], CArchive
 - CArchive [MFC], Abort
@@ -58,16 +52,12 @@ helpviewer_keywords:
 - CArchive [MFC], WriteString
 - CArchive [MFC], m_pDocument
 ms.assetid: 9e950d23-b874-456e-ae4b-fe00781a7699
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 88ee9a9e81714064798bbfc652200da9061c6fb0
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f1e5701e95ec080845f3d2422da5d6ce4b9c906b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059135"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465617"
 ---
 # <a name="carchive-class"></a>CArchive sınıfı
 

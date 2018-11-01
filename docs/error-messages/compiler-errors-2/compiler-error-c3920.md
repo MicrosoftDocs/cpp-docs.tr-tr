@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3920 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3920
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3920
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3920
 ms.assetid: 66e91f28-ed82-4ce2-bf22-c0c74905b1ed
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b85638907f350eb3545a858f1319e56b2459f09
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e3c37cba4b7df2df9e9784b3a1afb8dbf9c8e8d9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46112713"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491734"
 ---
 # <a name="compiler-error-c3920"></a>Derleyici Hatası C3920
 

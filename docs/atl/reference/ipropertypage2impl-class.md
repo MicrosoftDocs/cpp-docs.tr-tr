@@ -1,31 +1,21 @@
 ---
-title: Ipropertypage2ımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Ipropertypage2ımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IPropertyPage2Impl
 - ATLCTL/ATL::IPropertyPage2Impl
 - ATLCTL/ATL::IPropertyPage2Impl::EditProperty
-dev_langs:
-- C++
 helpviewer_keywords:
 - property pages
 - IPropertyPage2 ATL implementation
 - IPropertyPage2Impl class
 ms.assetid: e89fbe90-203a-47f0-a5de-23616697e1ce
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9329888f9a97c9bf5fad0d3834bde33845943edd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fd2d53c79ee372c9997e1da2b189ef18129e67f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093317"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617340"
 ---
 # <a name="ipropertypage2impl-class"></a>Ipropertypage2ımpl sınıfı
 

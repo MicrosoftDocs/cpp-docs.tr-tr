@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4816 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4816
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4816
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4816
 ms.assetid: 60f730ae-d942-4db9-ab97-41d4a874d8da
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c0d70204e61f1e37157b9e1b23664cf1f5d24b2c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 719a950f2cc15b51dcbbb7e8f4f476f92fe326c2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46096008"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626661"
 ---
 # <a name="compiler-warning-level-4-c4816"></a>Derleyici Uyarısı (düzey 4) C4816
 

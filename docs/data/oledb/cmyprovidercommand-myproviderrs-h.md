@@ -1,33 +1,22 @@
 ---
-title: CCustomCommand (CustomRS.H) | Microsoft Docs
-ms.custom: ''
+title: CCustomCommand (CustomRS.H)
 ms.date: 10/22/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - cmyprovidercommand
 - myproviderrs.h
 - ccustomcommand
 - customrs.h
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB providers, wizard-generated files
 - CMyProviderCommand class in MyProviderRS.H
 - CCustomCommand class in CustomRS.H
 ms.assetid: b30b956e-cc91-4cf5-9fe6-f8b1ce9cc2a5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 8cf78ca4fc15179671ecc8df4843514ac4e65aa1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a2261d62775c8063d166c664a02fdf3be0d70d17
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067260"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651210"
 ---
 # <a name="ccustomcommand-customrsh"></a>CCustomCommand (CustomRS.H)
 

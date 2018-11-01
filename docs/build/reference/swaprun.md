@@ -1,29 +1,19 @@
 ---
-title: -SWAPRUN | Microsoft Docs
-ms.custom: ''
+title: /SWAPRUN
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /swaprun
-dev_langs:
-- C++
 helpviewer_keywords:
 - /SWAPRUN editbin option
 - -SWAPRUN editbin option
 - SWAPRUN editbin option
 ms.assetid: 6eefd7f3-ca47-48e3-8509-323d27cf4ae7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1a93b854dba2855fa68bb3be163cecdcd3570df0
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 0440d268a807e6f3f43beb9f38bd1950dee55ffd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723106"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550728"
 ---
 # <a name="swaprun"></a>/SWAPRUN
 

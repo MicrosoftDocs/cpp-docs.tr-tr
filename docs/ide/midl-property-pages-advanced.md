@@ -1,10 +1,6 @@
 ---
-title: 'MIDL özellik sayfaları: Gelişmiş | Microsoft Docs'
-ms.custom: ''
+title: 'MIDL Özellik Sayfaları: Gelişmiş'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCMidlTool.ErrorCheckBounds
 - VC.Project.VCMidlTool.ErrorCheckStubData
@@ -17,21 +13,15 @@ f1_keywords:
 - VC.Project.VCMidlTool.StructMemberAlignment
 - VC.Project.VCMidlTool.ErrorCheckRefPointers
 - VC.Project.VCMidlTool.ValidateParameters
-dev_langs:
-- C++
 helpviewer_keywords:
 - MIDL, property pages
 ms.assetid: d1c92e01-f403-4ed6-ab45-4043a3c9c6bb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 11c7d4b437e77e5acfe363fd3b4125477eceb0f2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 86152dd1ac0bb079a841efa2d27109ee92d48ea7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394978"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440878"
 ---
 # <a name="midl-property-pages-advanced"></a>MIDL Özellik Sayfaları: Gelişmiş
 

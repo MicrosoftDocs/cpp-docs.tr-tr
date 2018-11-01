@@ -1,10 +1,6 @@
 ---
-title: _CrtMemCheckpoint | Microsoft Docs
-ms.custom: ''
+title: _CrtMemCheckpoint
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtMemCheckpoint
 apilocation:
@@ -23,22 +19,16 @@ f1_keywords:
 - CrtMemCheckpoint
 - _CrtMemCheckpoint
 - crtdbg/_CrtMemCheckpoint
-dev_langs:
-- C++
 helpviewer_keywords:
 - CrtMemCheckpoint function
 - _CrtMemCheckpoint function
 ms.assetid: f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e1418278f4b6756db4e747162f090545c3e9f3ae
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: ee435ba3e9e40795280dee0f97feaad32c8b0fc3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107581"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50589523"
 ---
 # <a name="crtmemcheckpoint"></a>_CrtMemCheckpoint
 

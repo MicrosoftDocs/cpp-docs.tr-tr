@@ -1,27 +1,16 @@
 ---
-title: (C++) Hızlandırıcı tablosunda giriş bulma | Microsoft Docs
-ms.custom: ''
+title: (C++) Hızlandırıcı tablosunda giriş bulma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - searching, in accelarator tables
 - accelerator tables [C++], finding entries
 ms.assetid: 98146b12-571e-48ea-a660-eb6b1834a79b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 6fd8a4b6781008b80be1b0c8fd33bc7f1eece7f9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b4fa5f12bb5c966d68be631adf33b0e03b22afd0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431326"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642253"
 ---
 # <a name="finding-an-entry-in-an-accelerator-table"></a>Hızlandırıcı Tablosunda Giriş Bulma
 

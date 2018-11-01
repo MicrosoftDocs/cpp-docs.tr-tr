@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2874 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2874
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2874
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2874
 ms.assetid: b54fa9d8-8df5-40d9-9b3b-aa3e9dd6a3be
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: da285053507865d88fef31fac485c2a77a918d52
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 04cbce14fc1fcb1d5bbb07c7f847c479988224a9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031099"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514783"
 ---
 # <a name="compiler-error-c2874"></a>Derleyici Hatası C2874
 

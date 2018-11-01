@@ -1,33 +1,23 @@
 ---
-title: file_status sınıfı | Microsoft Docs
-ms.custom: ''
+title: file_status Sınıfı
 ms.date: 09/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - filesystem/std::experimental::filesystem::file_status
 - filesystem/std::experimental::filesystem::file_status::operator=
 - filesystem/std::experimental::filesystem::file_status::type
 - filesystem/std::experimental::filesystem::file_status::permissions
-dev_langs:
-- C++
 ms.assetid: 9781840e-ad22-44dd-ad79-0fabaa94bac4
-author: corob-msft
-ms.author: corob
 helpviewer_keywords:
 - std::experimental::filesystem::file_status
 - std::experimental::filesystem::file_status::operator=
 - std::experimental::filesystem::file_status::type
 - std::experimental::filesystem::file_status::permissions
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cc45e785b6a3aeefd9e2cf5d0539b5d387af7143
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: 81ce4ecc1673087db8e985f94e297798dd712a6e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691672"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630626"
 ---
 # <a name="filestatus-class"></a>file_status Sınıfı
 

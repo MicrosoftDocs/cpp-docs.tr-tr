@@ -1,12 +1,6 @@
 ---
-title: C tanımlayıcıları | Microsoft Docs
-ms.custom: ''
+title: C Tanımlayıcıları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - identifiers, C
 - naming identifiers
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - identifiers, case sensitivity
 - symbols, case sensitivity
 ms.assetid: d02edbbc-85a0-4118-997b-84ee6b972eb6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 35ddfbd1f785a8409ffd271628a4000b0ea5d7b4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6ec1fc7303a6f5600837e919d96904abde7987e0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092979"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474148"
 ---
 # <a name="c-identifiers"></a>C Tanımlayıcıları
 

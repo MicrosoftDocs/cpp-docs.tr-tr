@@ -1,29 +1,19 @@
 ---
-title: context_self_unblock sınıfı | Microsoft Docs
-ms.custom: ''
+title: context_self_unblock Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - context_self_unblock
 - CONCRT/concurrency::context_self_unblock
 - CONCRT/concurrency::context_self_unblock::context_self_unblock
-dev_langs:
-- C++
 helpviewer_keywords:
 - context_self_unblock class
 ms.assetid: 9601cd28-4f40-4c2e-89ab-747068956331
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 36bfc6053ddbfb68598e1465896f94bb0a895f1b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5cb7fc951a4c62f4d299ce7d394e9f8268d7ed74
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46435902"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622176"
 ---
 # <a name="contextselfunblock-class"></a>context_self_unblock Sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2735 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2735
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2735
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2735
 ms.assetid: 6ce45600-7148-4bc0-8699-af0ef137571e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 732b75c8988f879af230e0513a751b8cd9c4ae67
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 73d5f61b5f86153db74a970d97b4656fb662bdad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093135"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447863"
 ---
 # <a name="compiler-error-c2735"></a>Derleyici Hatası C2735
 

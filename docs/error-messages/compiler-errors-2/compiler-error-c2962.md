@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2962 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2962
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2962
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2962
 ms.assetid: 6f966aec-4eea-4221-8e1b-fe66808c6f5c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 68291ba1e3f7226e047af8fb6807ff1aca42d0a7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 69832de73a0b421f68b6f3e5b7db4f54b32a2db3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46049975"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560700"
 ---
 # <a name="compiler-error-c2962"></a>Derleyici Hatası C2962
 

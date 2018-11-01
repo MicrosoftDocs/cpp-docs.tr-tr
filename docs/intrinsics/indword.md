@@ -1,29 +1,19 @@
 ---
-title: __indword | Microsoft Docs
-ms.custom: ''
+title: __indword
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __indword_cpp
 - __indword
-dev_langs:
-- C++
 helpviewer_keywords:
 - in instruction
 - __indword intrinsic
 ms.assetid: 1068d686-586e-4e36-b962-d1d7c3315260
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 554cccba1d45cf172645c46e00fdb20c19ea42d4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f4b37247093da14c8d5e8fed69b01265d3fed2ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389609"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50599816"
 ---
 # <a name="indword"></a>__indword
 

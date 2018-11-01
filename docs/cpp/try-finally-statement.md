@@ -1,10 +1,6 @@
 ---
-title: try-finally deyimi | Microsoft Docs
-ms.custom: ''
+title: try-finally Deyimi
 ms.date: 10/09/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __try
 - _try
@@ -14,8 +10,6 @@ f1_keywords:
 - __try_cpp
 - __finally
 - _finally
-dev_langs:
-- C++
 helpviewer_keywords:
 - __try keyword [C++]
 - __finally keyword [C++]
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - __leave keyword [C++], try-finally statement
 - structured exception handling [C++], try-finally
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4040f5a05f8c9bccfbf1c8b48a40188f684d48ad
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6b0c0f018d5d66ea62b29b971e5390751a69e3c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060019"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631809"
 ---
 # <a name="try-finally-statement"></a>try-finally Deyimi
 

@@ -1,12 +1,6 @@
 ---
-title: Windows uygulamaları yazmak için sınıfları kullanma | Microsoft Docs
-ms.custom: ''
+title: Windows Uygulamaları Yazmak için Sınıfları Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Windows applications [MFC], MFC application framework
 - MFC, application development
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - OLE applications [MFC], MFC application framework
 - database applications [MFC], creating
 ms.assetid: 73f63470-857d-43dd-9a54-b38b7be0f1b7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9907424a583cc16f170890a739fa7ece8cc93ead
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: eaa1c178a8d93315d5477efa1213ed0698cd460c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075131"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517331"
 ---
 # <a name="using-the-classes-to-write-applications-for-windows"></a>Windows Uygulamaları Yazmak için Sınıfları Kullanma
 

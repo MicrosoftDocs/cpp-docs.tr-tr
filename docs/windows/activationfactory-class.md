@@ -1,9 +1,6 @@
 ---
-title: ActivationFactory sınıfı | Microsoft Docs
-ms.custom: ''
+title: ActivationFactory Sınıfı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::ActivationFactory
@@ -14,8 +11,6 @@ f1_keywords:
 - module/Microsoft::WRL::ActivationFactory::GetTrustLevel
 - module/Microsoft::WRL::ActivationFactory::QueryInterface
 - module/Microsoft::WRL::ActivationFactory::Release
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::ActivationFactory class
 - Microsoft::WRL::ActivationFactory::ActivationFactory, constructor
@@ -26,17 +21,12 @@ helpviewer_keywords:
 - Microsoft::WRL::ActivationFactory::QueryInterface method
 - Microsoft::WRL::ActivationFactory::Release method
 ms.assetid: 5faddf1f-43b6-4f8a-97de-8c9d3ae1e1ff
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: c2e8256b90b243bc02f9ca5bbfb8ee6a933a7fe4
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 74130c229b74b79b27553d9f8e407c3c9080d4ca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788649"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460768"
 ---
 # <a name="activationfactory-class"></a>ActivationFactory Sınıfı
 

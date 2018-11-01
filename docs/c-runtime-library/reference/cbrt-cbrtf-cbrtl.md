@@ -1,10 +1,6 @@
 ---
-title: cbrt, cbrtf, cbrtl | Microsoft Docs
-ms.custom: ''
+title: cbrt, cbrtf, cbrtl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - cbrt
 - cbrtf
@@ -26,27 +22,21 @@ f1_keywords:
 - cbrtl
 - cbrt
 - cbrtf
-dev_langs:
-- C++
 helpviewer_keywords:
 - cbrtl function
 - cbrtf function
 - cbrt function
 ms.assetid: ab51d916-3db2-4beb-b46a-28b4062cd33f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 29dee00f35c2b4d75e838e5abe2ee24de9753013
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c395a063cfa07cdfb7e841f19bc64fb1c57ca796
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393621"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505540"
 ---
 # <a name="cbrt-cbrtf-cbrtl"></a>cbrt, cbrtf, cbrtl
 
-Küp kök hesaplar.
+Küp kökünü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -79,19 +69,19 @@ Kayan nokta değeri
 
 |Giriş|SEH özel durumu|**_matherr** özel durumu|
 |-----------|-------------------|--------------------------|
-|± ∞, QNAN, UL|yok|yok|
+|± ∞, QNAN, ONRAKİNİ BUL|yok|yok|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **cbrt** Süren **float** veya **uzun** **çift** türleri. Bir C programı **cbrt** her zaman alan ve döndüren **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **cbrt** Süren **float** veya **uzun** **çift** türleri. C programında **cbrt** her zaman alan ve döndüren **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üstbilgi|
+|İşlev|C üstbilgisi|C++ üst bilgisi|
 |--------------|--------------|------------------|
 |**cbrt**, **cbrtf**, **cbrtl**|\<Math.h >|\<cmath >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

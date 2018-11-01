@@ -1,27 +1,17 @@
 ---
-title: Virgül işleci:, | Microsoft Docs
-ms.custom: ''
+title: 'Virgül İşleci: ,'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - '%2C'
-dev_langs:
-- C++
 helpviewer_keywords:
 - comma operator
 ms.assetid: 38e0238e-19da-42ba-ae62-277bfdab6090
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 626243da557362626b5d17ed01a8023e36704f54
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8c6757f402cc7422824f1b701d3d1e4ae2566074
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46114793"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609930"
 ---
 # <a name="comma-operator-"></a>Virgül İşleci: ,
 

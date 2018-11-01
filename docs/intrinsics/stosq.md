@@ -1,29 +1,19 @@
 ---
-title: __stosq | Microsoft Docs
-ms.custom: ''
+title: __stosq
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __stosq
-dev_langs:
-- C++
 helpviewer_keywords:
 - rep stosq instruction
 - stosq instruction
 - __stosq intrinsic
 ms.assetid: 3ea28297-4369-4c2d-bf0c-91fa539ce209
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8f8aa8c1fd1a5dad6fd70c566cb59bf8dddc4cc3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 48c3e8db2683ee190a23974d12d36fbeef6a0094
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380145"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477473"
 ---
 # <a name="stosq"></a>__stosq
 
@@ -34,10 +24,10 @@ Bir depolama dize yönergesi oluşturur (`rep stosq`).
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __stosb( 
-   unsigned __int64* Dest, 
-   unsigned __int64 Data, 
-   size_t Count 
+void __stosb( 
+   unsigned __int64* Dest, 
+   unsigned __int64 Data, 
+   size_t Count 
 );
 ```
 

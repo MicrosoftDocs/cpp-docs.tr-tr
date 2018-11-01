@@ -1,27 +1,17 @@
 ---
-title: Commit-To-Disk sabitleri | Microsoft Docs
-ms.custom: ''
+title: Commit-To-Disk Sabitleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - vc.constants
-dev_langs:
-- C++
 helpviewer_keywords:
 - commit-to-disk constants
 ms.assetid: 0b903b23-b4fa-431e-a937-51d95f695ecf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 46ff21fec703069f9f3ac599d76e325d871a9744
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f4da66c913cd8a046257158e837e5bdb20ed71c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092927"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581408"
 ---
 # <a name="commit-to-disk-constants"></a>Commit-To-Disk Sabitleri
 

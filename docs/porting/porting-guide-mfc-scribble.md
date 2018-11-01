@@ -1,23 +1,13 @@
 ---
-title: 'Taşıma Kılavuzu: MFC Scribble | Microsoft Docs'
-ms.custom: ''
+title: 'Taşıma Kılavuzu: MFC Scribble'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 164d1f835522ad50d772dd1953836311cc0e3138
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b41689b1e0207029f4494cfd91c261705789a733
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075677"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539769"
 ---
 # <a name="porting-guide-mfc-scribble"></a>Taşıma Kılavuzu: MFC Scribble
 

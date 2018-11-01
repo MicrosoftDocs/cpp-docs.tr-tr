@@ -1,27 +1,17 @@
 ---
-title: Çağırma kuralları, parametreler ve dönüş türü | Microsoft Docs
-ms.custom: ''
+title: Çağırma Kuralları, Parametreler ve Dönüş Türü
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - calling conventions, helper functions
 - helper functions, calling conventions
 - helper functions, return types
 ms.assetid: 0ffa4558-6005-4803-be95-7a8ec8837660
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 74aa2e58b7285ced1b49efc7f54c1ec11ad606c1
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8343c17828040ca36b042cb99e0c51c37548d3b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714759"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654434"
 ---
 # <a name="calling-conventions-parameters-and-return-type"></a>Çağırma Kuralları, Parametreler ve Dönüş Türü
 

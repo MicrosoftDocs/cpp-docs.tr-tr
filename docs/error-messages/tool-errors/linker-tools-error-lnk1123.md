@@ -1,26 +1,16 @@
 ---
-title: Bağlayıcı araçları hatası LNK1123 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1123
 ms.date: 12/29/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1123
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1123
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f0b2c7f89e7ad7d0142cb6830c4d4c3361b014c9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b67a2a4ddad13988967b7cc7d827862a2a6fe933
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075847"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456426"
 ---
 # <a name="linker-tools-error-lnk1123"></a>Bağlayıcı Araçları Hatası LNK1123
 

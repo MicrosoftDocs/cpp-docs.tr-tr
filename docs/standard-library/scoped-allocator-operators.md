@@ -1,20 +1,16 @@
 ---
-title: '&lt;scoped_allocator&gt; işleçler | Microsoft Docs'
-ms.custom: ''
+title: '&lt;scoped_allocator&gt; işleçleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - scoped_allocator/std::operator!=
 - scoped_allocator/std::operator==
-dev_langs:
-- C++
 ms.assetid: 4dfe0805-cc6e-479f-887f-a1c164f73837
-ms.openlocfilehash: 0dda1415ea875b01c943a0a275122458f399f69c
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 7c9f2c3a2425bf3ac6e62ce7fcecfe9315c3e04e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105886"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512469"
 ---
 # <a name="ltscopedallocatorgt-operators"></a>&lt;scoped_allocator&gt; işleçleri
 

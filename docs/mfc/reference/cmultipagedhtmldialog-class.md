@@ -1,29 +1,19 @@
 ---
-title: CMultiPageDHtmlDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMultiPageDHtmlDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMultiPageDHtmlDialog
 - AFXDHTML/CMultiPageDHtmlDialog
 - AFXDHTML/CMultiPageDHtmlDialog::CMultiPageDHtmlDialog
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMultiPageDHtmlDialog [MFC], CMultiPageDHtmlDialog
 ms.assetid: 971accc1-824d-4df4-b4c1-b1a20e0f7e4f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c8f7c74610916d556c628e35672e5737d780694a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 680c485241b7a377d1c6f0ec2785dbbade01ed3f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075807"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443557"
 ---
 # <a name="cmultipagedhtmldialog-class"></a>CMultiPageDHtmlDialog sınıfı
 

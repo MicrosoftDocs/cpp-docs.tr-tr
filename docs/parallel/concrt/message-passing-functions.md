@@ -1,25 +1,15 @@
 ---
-title: İleti geçirme işlevleri | Microsoft Docs
-ms.custom: ''
+title: İleti Geçirme İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - message passing functions
 ms.assetid: 42477c9e-a8a6-4dc4-a98e-93c6dc8c4dd0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7435bdbc4d5959771a1f80e2ad12f038a8157bae
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: e258a73723e78090f61230555748e109c28cf01c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162288"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476030"
 ---
 # <a name="message-passing-functions"></a>İleti Geçirme İşlevleri
 

@@ -1,10 +1,6 @@
 ---
-title: CLinearTransitionFromSpeed sınıfı | Microsoft Docs
-ms.custom: ''
+title: CLinearTransitionFromSpeed sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CLinearTransitionFromSpeed
 - AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::Create
 - AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::m_dblFinalValue
 - AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::m_dblSpeed
-dev_langs:
-- C++
 helpviewer_keywords:
 - CLinearTransitionFromSpeed [MFC], CLinearTransitionFromSpeed
 - CLinearTransitionFromSpeed [MFC], Create
 - CLinearTransitionFromSpeed [MFC], m_dblFinalValue
 - CLinearTransitionFromSpeed [MFC], m_dblSpeed
 ms.assetid: 8f159a1c-8893-4017-951e-09e5758aba7d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 54207bdd792d5ef6dc56630d52e699a0599f5d98
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9ef461124321e5e8fff11c1c7be1d90246c411a1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446198"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563975"
 ---
 # <a name="clineartransitionfromspeed-class"></a>CLinearTransitionFromSpeed sınıfı
 

@@ -1,24 +1,14 @@
 ---
-title: 'Nasıl yapılır: WRL kullanarak klasik COM bileşeni oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: WRL Kullanarak Klasik COM Bileşeni Oluşturma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: 5efe7690-90d5-4c3c-9e53-11a14cefcb19
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 7c3d16cada621232c54176717f9bbdedb71a7e21
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 025f369b002abcdbe2091a6cae4b38894f370863
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083432"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437849"
 ---
 # <a name="how-to-create-a-classic-com-component-using-wrl"></a>Nasıl yapılır: WRL Kullanarak Klasik COM Bileşeni Oluşturma
 

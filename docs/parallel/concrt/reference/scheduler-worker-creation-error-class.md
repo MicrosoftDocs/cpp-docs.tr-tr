@@ -1,29 +1,19 @@
 ---
-title: scheduler_worker_creation_error sınıfı | Microsoft Docs
-ms.custom: ''
+title: scheduler_worker_creation_error Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - scheduler_worker_creation_error
 - CONCRT/concurrency::scheduler_worker_creation_error
 - CONCRT/concurrency::scheduler_worker_creation_error::scheduler_worker_creation_error
-dev_langs:
-- C++
 helpviewer_keywords:
 - scheduler_worker_creation_error class
 ms.assetid: 4aec1c3e-c32a-41b2-899d-2d898f23b3c7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3d050ee426817c04518a41b515f30ac348bf7d86
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 565f4b409f19d7ab70d536e977c13d628c30e882
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400178"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50442204"
 ---
 # <a name="schedulerworkercreationerror-class"></a>scheduler_worker_creation_error Sınıfı
 

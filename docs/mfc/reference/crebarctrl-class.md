@@ -1,10 +1,6 @@
 ---
-title: CReBarCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CReBarCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CReBarCtrl
 - AFXCMN/CReBarCtrl
@@ -54,8 +50,6 @@ f1_keywords:
 - AFXCMN/CReBarCtrl::SetWindowTheme
 - AFXCMN/CReBarCtrl::ShowBand
 - AFXCMN/CReBarCtrl::SizeToRect
-dev_langs:
-- C++
 helpviewer_keywords:
 - CReBarCtrl [MFC], CReBarCtrl
 - CReBarCtrl [MFC], BeginDrag
@@ -104,16 +98,12 @@ helpviewer_keywords:
 - CReBarCtrl [MFC], ShowBand
 - CReBarCtrl [MFC], SizeToRect
 ms.assetid: 154570d7-e48c-425d-8c7e-c64542bcb4cc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9f1ed4193111fa97e7fb113a86c7600ba462f059
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ec3dcec2aa122f44c2b9aa6083f6faaa64157770
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067858"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502537"
 ---
 # <a name="crebarctrl-class"></a>CReBarCtrl sınıfı
 

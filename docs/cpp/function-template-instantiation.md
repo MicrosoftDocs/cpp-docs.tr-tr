@@ -1,27 +1,17 @@
 ---
-title: İşlev şablonu örneklemesi | Microsoft Docs
-ms.custom: ''
+title: İşlev Şablonu Örneklemesi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - templates, instantiation
 - function templates, instantiation
 - instantiation, function templates
 ms.assetid: f22a07c7-3ad1-465a-84f5-8737e274bd47
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fb94a54c4f99b79e3be742c5b1448151cff140c4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c4667f5ae625468cdab428706ddaff92a1c1af33
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116795"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620941"
 ---
 # <a name="function-template-instantiation"></a>İşlev Şablonu Örneklemesi
 

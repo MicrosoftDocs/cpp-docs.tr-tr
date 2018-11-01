@@ -1,15 +1,9 @@
 ---
-title: -LIBPATH (ek Libpath) | Microsoft Docs
-ms.custom: ''
+title: /LIBPATH (Ek Libpath)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /libpath
 - VC.Project.VCLinkerTool.AdditionalLibraryDirectories
-dev_langs:
-- C++
 helpviewer_keywords:
 - LIBPATH linker option
 - /LIBPATH linker option
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - -LIBPATH linker option
 - library path linker option
 ms.assetid: 7240af0b-9a3d-4d53-8169-2a92cd6958ba
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 784281df23b0a8d43625766297b6cbbd20179c14
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 40662e77faf03de8e5ef0abf334f4ec7be69c3ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717203"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615157"
 ---
 # <a name="libpath-additional-libpath"></a>/LIBPATH (Ek Libpath)
 
@@ -56,7 +46,7 @@ Bir yol belirtir LIB ortam seçeneğinde belirtilen yolu arar önce bağlayıcı
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalLibraryDirectories%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalLibraryDirectories%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

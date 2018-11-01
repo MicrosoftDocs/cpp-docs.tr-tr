@@ -1,25 +1,15 @@
 ---
-title: CRT başlatma | Microsoft Docs
-ms.custom: ''
+title: CRT Başlatma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRT initialization [C++]
 ms.assetid: e7979813-1856-4848-9639-f29c86b74ad7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 965955cf5c92ba627227292d513c9b2bda57cd48
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 615c113082e2ef0dbfc40bafbfa040c06e628da5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031939"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656956"
 ---
 # <a name="crt-initialization"></a>CRT Başlatma
 

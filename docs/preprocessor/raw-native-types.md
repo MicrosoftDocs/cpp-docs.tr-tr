@@ -1,27 +1,17 @@
 ---
-title: raw_native_types | Microsoft Docs
-ms.custom: ''
+title: raw_native_types
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - raw_native_types
-dev_langs:
-- C++
 helpviewer_keywords:
 - raw_native_types attribute
 ms.assetid: 9f38daa8-8dc0-46a5-aff9-f1ff9c1e6f48
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d4739b8664da21a86caa91398a7956eac77e22f3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e48aa2ca1469d38b67dcb06a3377713141a158e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072895"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620447"
 ---
 # <a name="rawnativetypes"></a>raw_native_types
 **C++ özgü**

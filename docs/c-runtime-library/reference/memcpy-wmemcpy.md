@@ -1,10 +1,6 @@
 ---
-title: memcpy, wmemcpy | Microsoft Docs
-ms.custom: ''
+title: memcpy, wmemcpy
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - memcpy
 - wmemcpy
@@ -23,22 +19,16 @@ apitype: DLLExport
 f1_keywords:
 - wmemcpy
 - memcpy
-dev_langs:
-- C++
 helpviewer_keywords:
 - wmemcpy function
 - memcpy function
 ms.assetid: 34abb90b-bffb-46dc-a2f3-a5e9940839d6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f75aa6a32277fda0796fe2433062f5062fdd47eb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0c71bd7b1a661a0964576e831e008d23692d4c2e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196085"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611191"
 ---
 # <a name="memcpy-wmemcpy"></a>memcpy, wmemcpy
 

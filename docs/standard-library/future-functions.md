@@ -1,8 +1,6 @@
 ---
-title: '&lt;Gelecekteki&gt; işlevleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;Gelecekteki&gt; işlevleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - future/std::async
 - future/std::future_category
@@ -16,12 +14,12 @@ helpviewer_keywords:
 - std::make_error_code [C++]
 - std::make_error_condition [C++]
 - std::swap [C++]
-ms.openlocfilehash: 9b4a8b148dc8b72c7dcc1931802c503be783e9ea
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 56ae0da7e86e092cee46d24d1a2a27d9d54709e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108609"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487717"
 ---
 # <a name="ltfuturegt-functions"></a>&lt;Gelecekteki&gt; işlevleri
 

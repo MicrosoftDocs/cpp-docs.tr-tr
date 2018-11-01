@@ -1,29 +1,19 @@
 ---
-title: improper_scheduler_detach sınıfı | Microsoft Docs
-ms.custom: ''
+title: improper_scheduler_detach Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - improper_scheduler_detach
 - CONCRT/concurrency::improper_scheduler_detach
 - CONCRT/concurrency::improper_scheduler_detach::improper_scheduler_detach
-dev_langs:
-- C++
 helpviewer_keywords:
 - improper_scheduler_detach class
 ms.assetid: 30132102-c900-4951-a470-b63b4e3aa2d2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 680aa7fc6a3b1216148bb74ce0f0d19eb06294e6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b2fc90656051be62528d0aac600fad67485c81f9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420835"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643293"
 ---
 # <a name="improperschedulerdetach-class"></a>improper_scheduler_detach Sınıfı
 

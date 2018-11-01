@@ -1,26 +1,15 @@
 ---
-title: OLE DB Mimari Tasarım sorunları | Microsoft Docs
-ms.custom: ''
+title: OLE DB Mimari Tasarım Sorunları
 ms.date: 10/22/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB, application design considerations
 ms.assetid: 8caa7d99-d2bb-42c9-8884-74f228bb6ecc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 0a0fc54c002511b9c091acc5d5e3fbe4636ad933
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3e0175c6b554c319a662ffd726023caf7176d9fe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072245"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461977"
 ---
 # <a name="ole-db-architectural-design-issues"></a>OLE DB Mimari Tasarım Sorunları
 

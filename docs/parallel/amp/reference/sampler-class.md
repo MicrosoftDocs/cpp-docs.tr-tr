@@ -1,10 +1,6 @@
 ---
-title: sampler sınıfı | Microsoft Docs
-ms.custom: ''
+title: sampler Sınıfı
 ms.date: 06/28/2018
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - sampler
 - AMP_GRAPHICS/sampler
@@ -15,19 +11,13 @@ f1_keywords:
 - AMP_GRAPHICS/concurrency::sampler::graphics::address_mode
 - AMP_GRAPHICS/concurrency::sampler::graphics::border_color
 - AMP_GRAPHICS/concurrency::sampler::graphics::filter_mode
-dev_langs:
-- C++
 ms.assetid: 9a6a9807-497d-402d-b092-8c4d86275b80
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ee5d50976b6d91bff6d84ec288560ff1348c73d9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1a66e4d025a7592b78839dbe5f25f9103da41224
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424696"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535968"
 ---
 # <a name="sampler-class"></a>sampler Sınıfı
 

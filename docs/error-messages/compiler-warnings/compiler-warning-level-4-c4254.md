@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4254 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4254
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - c4254
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4254
 ms.assetid: c7dcef24-d535-4c98-bb41-fc3d2b88fd11
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 039ce69f624fdcdd6beba2d6d262f920b7848687
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 925428cffae37ea26144e5b550cbc7988b33ef01
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46115946"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50606413"
 ---
 # <a name="compiler-warning-level-4-c4254"></a>Derleyici Uyarısı (düzey 4) C4254
 

@@ -1,29 +1,19 @@
 ---
-title: ZERO? işleci | Microsoft Docs
-ms.custom: ''
+title: ZERO? işleci
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - operator ZERO?
 - ZERO?
-dev_langs:
-- C++
 helpviewer_keywords:
 - ZERO? operator
 - operator ZERO?
 ms.assetid: c7629c0b-3254-4f50-9bd6-31be762eb03b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 00998229f30e70f7c67fb7ccf79e5a6a7a1c017d
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 440a9e1d16991b9c7a094bc1267536a26613926a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686887"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594902"
 ---
 # <a name="operator-zero"></a>ZERO? işleci
 

@@ -1,26 +1,18 @@
 ---
-title: Platform::UIntPtr değer sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::UIntPtr değer sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::UIntPtr
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::UIntPtr Struct
 ms.assetid: dc4f5176-4c4d-4209-b68e-eb30f2c2465b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 197f43a8b5a9485642aca16c25cb35515cabe020
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 480503ec3f846cd908c1d046dc589cc89142ed0d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109998"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603456"
 ---
 # <a name="platformuintptr-value-class"></a>Platform::UIntPtr değer sınıfı
 

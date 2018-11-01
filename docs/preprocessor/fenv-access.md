@@ -1,29 +1,19 @@
 ---
-title: fenv_access | Microsoft Docs
-ms.custom: ''
+title: fenv_access
 ms.date: 03/12/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.fenv_access
 - fenv_access_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, fenv_access
 - fenv_access pragma
 ms.assetid: 2ccea292-0ae4-42ce-9c67-cc189299857b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3c06556d47bf0c471aa7e4fab610971e2b7ad11e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 507e78dd9f9571cc9ce44d7fd91e78b1c955ba73
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081475"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664041"
 ---
 # <a name="fenvaccess"></a>fenv_access
 Devre dışı bırakır (**üzerinde**) ya da etkinleştirir (**kapalı**) kayan nokta ortam değişebilir iyileştirmeleri, testleri ve modu değişiklikleri bayrak.
