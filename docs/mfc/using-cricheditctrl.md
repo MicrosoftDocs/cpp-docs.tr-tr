@@ -1,28 +1,18 @@
 ---
-title: CRichEditCtrl kullanma | Microsoft Docs
-ms.custom: ''
+title: CRichEditCtrl Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CRichEditCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - rich edit controls [MFC], using
 - CRichEditCtrl class [MFC], using
 ms.assetid: e400c6ed-563e-4d4c-ab3b-a3f0aa20273b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bcff766e13adacaed0d4983b7fa6539640471f9e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 22255cc0072e6d25bc3ec70086be6ec99a59808a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410188"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498169"
 ---
 # <a name="using-cricheditctrl"></a>CRichEditCtrl Kullanma
 

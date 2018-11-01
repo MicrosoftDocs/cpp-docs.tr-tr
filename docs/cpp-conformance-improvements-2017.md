@@ -1,23 +1,19 @@
 ---
-title: C++ uyumluluk geliştirmeleri | Microsoft Docs
-ms.custom: ''
-ms.date: 08/15/2018
+title: C++ uyumluluk geliştirmeleri
+ms.date: 10/31/2018
 ms.technology:
 - cpp-language
-ms.topic: conceptual
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5661ff0debb3d06947e5b8ff686cc049ebe68fee
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: 18e4185f1cbd8b37e0e3cc7b11abc24505980b7d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204749"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562168"
 ---
-# <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158"></a>Visual Studio 2017 sürüm 15.0,'deki C++ uyumluluk geliştirmeleri [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15,8](#update_158)
+# <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158-159update159"></a>Visual Studio 2017 sürüm 15.0,'deki C++ uyumluluk geliştirmeleri [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15,8](#update_158), [15.9](#update_159)
 
 İçin genelleştirilmiş constexpr ve NSDMI ile Microsoft Visual C++ Derleyici C ++ 14 standardına eklenen özelliklerin tamamlanmıştır. Yine de derleyicide C++11 ve C++98 Standartlarındaki bazı özellikler eksiktir. Bkz: [Visual C++ dil uyumluluğu](visual-cpp-language-conformance.md) derleyici geçerli durumunu gösteren bir tablo için.
 
@@ -341,7 +337,7 @@ void bar(A<0> *p)
 
 [P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) değişikliklerini `std::traits_type` üye işlevleri `length`, `compare`, ve `find` yapmak için `std::string_view` sabit ifadelerde kullanılabilir. (Visual Studio 2017 sürüm 15.6, Clang/LLVM yalnızca desteklenir. Sürüm 15.7 Önizleme 2, destek neredeyse olduğu için ClXX de tamamlayın.)
 
-## <a name="bug-fixes-in-visual-studio-versions-150-153update153-155update155-157update157-and-158update158"></a>Visual Studio sürümlerinde 15.0, hata düzeltmeleri [15.3](#update_153), [15.5](#update_155), [15.7](#update_157), ve [15,8](#update_158)
+## <a name="bug-fixes-in-visual-studio-versions-150-153update153-155update155-157update157-158update158-and-159update159"></a>Visual Studio sürümlerinde 15.0, hata düzeltmeleri [15.3](#update_153), [15.5](#update_155), [15.7](#update_157), [15,8](#update_158), ve [15.9](#update_159)
 
 ### <a name="copy-list-initialization"></a>Kopya listesi başlatması
 
@@ -1832,6 +1828,158 @@ struct X : Base<T>
         Base<T>::template foo<int>();
     }
 };
+```
+## <a name="update_159"></a> Hata düzeltmeleri ve Visual Studio 2017 sürüm 15.9 davranış değişiklikleri
+
+### <a name="identifiers-in-member-alias-templates"></a>Üye diğer ad şablonları tanımlayıcıları
+Diğer şablon tanımı üyesi kullanılan tanımlayıcı kullanılmadan önce bildirilmelidir. 
+
+Aşağıdaki kod Derleyici önceki sürümlerinde izin verilmiyordu:
+
+```cpp
+template <typename... Ts>
+struct A
+{
+  public:
+    template <typename U>
+    using from_template_t = decltype(from_template(A<U>{}));
+
+  private:
+    template <template <typename...> typename Type, typename... Args>
+    static constexpr A<Args...> from_template(A<Type<Args...>>);
+
+};
+
+A<>::from_template_t<A<int>> a;
+
+```
+
+Visual Studio 2017 sürüm 15.9, içinde **/ permissive-** modu, derleyici harekete geçirirse C3861: *'from_template': tanımlayıcı bulunamadı*.d
+
+Hatayı düzeltmek için bildirmek `a` önce `A`.
+
+### <a name="modules-changes"></a>Modüller değişiklikleri
+
+Modüller için komut satırı seçenekleri modülü oluşturulmasını ve modül tüketim yüz arasında tutarlı olmayan her Visual Studio 2017'de sürüm 15.9, derleyici C5050 başlatır. Aşağıdaki örnekte, iki sorun vardır:
+
+- Tüketim tarafında (Main.cpp öğesi) seçeneğini **/ehsc** belirtilmedi.
+- C++ sürümü **/Std: c ++ 17** oluşturma tarafında ve **/Std: c ++ 14** tüketim tarafında. 
+
+```cmd
+cl /EHsc /std:c++17 m.ixx /experimental:module
+cl /experimental:module /module:reference m.ifc main.cpp /std:c++14
+```
+
+Derleyici C5050 her iki durumda başlatır: *C5050 Uyarı: modülün içeri aktarılması sırasında olası uyumlu ortamı 'M ': C++ sürümleri eşleşmiyor.  Geçerli "201402" Modül sürümü "201703"*.
+
+Ayrıca, .ifc dosyası ile oynanmış her derleyici C7536 başlatır. Modül arabirimi üstbilgisi bir SHA2 karma aşağıdaki içeriği içerir. İçeri aktarma işlemi sırasında .ifc dosya aynı şekilde karma ve üst bilgide sağlanan karma karşılaştırılarak; Bu hata C7536 oluşturulur eşleşmiyorsa: *IFC bütünlük denetimi başarısız oldu.  Beklenen SHA2: '66d5c8154df0c71d4cab7665bab4a125c7ce5cb9a401a4d8b461b706ddd771c6'*.
+
+### <a name="partial-ordering-involving-aliases-and-non-deduced-contexts"></a>Kısmi sıralama içeren diğer adlar ve atanan bağlamları
+
+Atanan bağlamlarda diğer adları içeren kısmi sıralama kuralları'nda uygulama Geçitler yoktur. Aşağıdaki örnek, GCC ve Microsoft C++ derleyicisi (içinde **/ permissive-** modu) kodu Clang kabul ederken bir hata oluştur. 
+
+```cpp
+#include <utility>
+using size_t = std::size_t;
+
+template <typename T>
+struct A {};
+template <size_t, size_t>
+struct AlignedBuffer {};
+template <size_t len>
+using AlignedStorage = AlignedBuffer<len, 4>;
+
+template <class T, class Alloc>
+int f(Alloc &alloc, const AlignedStorage<T::size> &buffer)
+{
+    return 1;
+}
+
+template <class T, class Alloc>
+int f(A<Alloc> &alloc, const AlignedStorage<T::size> &buffer)
+{
+    return 2;
+}
+
+struct Alloc
+{
+    static constexpr size_t size = 10;
+};
+
+int main()
+{
+    A<void> a;
+    AlignedStorage<Alloc::size> buf;
+    if (f<Alloc>(a, buf) != 2)
+    {
+        return 1;
+    }
+
+    return 0;
+}
+
+```
+
+Önceki örnekte C2668 başlatır:
+
+```Output
+partial_alias.cpp(32): error C2668: 'f': ambiguous call to overloaded function
+partial_alias.cpp(18): note: could be 'int f<Alloc,void>(A<void> &,const AlignedBuffer<10,4> &)'
+partial_alias.cpp(12): note: or       'int f<Alloc,A<void>>(Alloc &,const AlignedBuffer<10,4> &)'
+        with
+        [
+            Alloc=A<void>
+        ]
+partial_alias.cpp(32): note: while trying to match the argument list '(A<void>, AlignedBuffer<10,4>)'
+```
+
+Uygulama Geçitler standart ifade'teki bir gerileme burada 2235 temel sorun çözümü Bu aşırı yüklemeler sıralanmasına izin bazı metin kaldırıldı kaynaklanır. Geçerli bir C++ Standart belirsiz kabul edilir, böylece bu işlevler, Kısmen sipariş mekanizması sağlamaz.
+
+Geçici bir çözüm olarak, değil kısmi bu sorunu çözmek için sıralamasını ve bunun yerine SFINAE belirli yüklemelerini kaldırmak için kullanmanızı öneririz. Aşağıdaki örnekte yardımcı bir sınıf kullandığımız `IsA` kaldırmak için ilk aşırı zaman `Alloc` özelleştirmesi olan `A`:
+
+```cpp
+#include <utility>
+using size_t = std::size_t;
+
+template <typename T>
+struct A {};
+template <size_t, size_t>
+struct AlignedBuffer {};
+template <size_t len>
+using AlignedStorage = AlignedBuffer<len, 4>;
+
+template <typename T> struct IsA : std::false_type {};
+template <typename T> struct IsA<A<T>> : std::true_type {};
+
+template <class T, class Alloc, typename = std::enable_if_t<!IsA<Alloc>::value>>
+int f(Alloc &alloc, const AlignedStorage<T::size> &buffer)
+{
+    return 1;
+}
+
+template <class T, class Alloc>
+int f(A<Alloc> &alloc, const AlignedStorage<T::size> &buffer)
+{
+    return 2;
+}
+
+struct Alloc
+{
+    static constexpr size_t size = 10;
+};
+
+int main()
+{
+    A<void> a;
+    AlignedStorage<Alloc::size> buf;
+    if (f<Alloc>(a, buf) != 2)
+    {
+        return 1;
+    }
+
+    return 0;
+}
+
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

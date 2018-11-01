@@ -1,25 +1,15 @@
 ---
-title: CStringT kullanarak | Microsoft Docs
-ms.custom: ''
+title: CStringT kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - CStringT class, using
 ms.assetid: 3a9fffb1-6f90-482a-ab69-4003e6084cb5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9972d603aa563b4432d2935f3d934d4916b7c8b5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 60c741ec71e8637650a75d03322e98dc7c361c90
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076223"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554299"
 ---
 # <a name="using-cstringt"></a>CStringT kullanma
 

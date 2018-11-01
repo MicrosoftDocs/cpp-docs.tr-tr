@@ -1,29 +1,19 @@
 ---
-title: _variant_t::operator = | Microsoft Docs
-ms.custom: ''
+title: _variant_t::operator =
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _variant_t::operator=
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator= [C++], variant
 - operator = [C++], variant
 - = operator [C++], with specific Visual C++ objects
 ms.assetid: 77622723-6e49-4dec-9e0f-fa74028f1a3c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 014ac1a2952e43ab91e2c33501a21a280360f112
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6a8f31e8db6f5ca5a680dd47b5d5391c84ce5025
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058477"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498282"
 ---
 # <a name="varianttoperator-"></a>_variant_t::operator =
 

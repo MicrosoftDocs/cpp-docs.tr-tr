@@ -1,10 +1,6 @@
 ---
-title: IRowsetChangeImpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IRowsetChangeImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL::IRowsetChangeImpl
 - IRowsetChangeImpl
@@ -27,8 +23,6 @@ f1_keywords:
 - IRowsetChangeImpl::FlushData
 - IRowsetChangeImpl.FlushData
 - FlushData
-dev_langs:
-- C++
 helpviewer_keywords:
 - providers, updatable
 - updatable providers, immediate update
@@ -38,17 +32,12 @@ helpviewer_keywords:
 - SetData method
 - FlushData method
 ms.assetid: 1e9fee15-ed9e-4387-af8f-215569beca6c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: c8c0c2de0e5b19b9c5f40ed859c11158722c5019
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 13dadfdcaf912e5cb2d82361de997d09961f1ceb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080773"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514615"
 ---
 # <a name="irowsetchangeimpl-class"></a>IRowsetChangeImpl Sınıfı
 

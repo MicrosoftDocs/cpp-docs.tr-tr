@@ -1,28 +1,18 @@
 ---
-title: İşaretçileri Artırma ve azaltma | Microsoft Docs
-ms.custom: ''
+title: İşaretçileri Artırma ve Azaltma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - incrementing pointers
 - MBCS [C++], pointers
 - pointers [C++], multibyte characters
 - decrementing pointers
 ms.assetid: 0872b4a0-e2bd-4004-8319-070efb76f2fd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e220c138ebcbb9010aef78931b07c2b04b095ea7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1899e3153300bbfbfce068d29351de601f336b6d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46447671"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567095"
 ---
 # <a name="incrementing-and-decrementing-pointers"></a>İşaretçileri Artırma ve Azaltma
 

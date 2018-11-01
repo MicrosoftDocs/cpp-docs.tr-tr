@@ -1,10 +1,6 @@
 ---
-title: CD2DLayer sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DLayer sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DLayer
 - AFXRENDERTARGET/CD2DLayer
@@ -17,8 +13,6 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DLayer::GetSize
 - AFXRENDERTARGET/CD2DLayer::IsValid
 - AFXRENDERTARGET/CD2DLayer::m_pLayer
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DLayer [MFC], CD2DLayer
 - CD2DLayer [MFC], Attach
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - CD2DLayer [MFC], IsValid
 - CD2DLayer [MFC], m_pLayer
 ms.assetid: 2f96378e-66bb-40d1-9661-6afe324de3c1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9d381ecaa2ac894ce7f393685e67909fea013cde
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cd4452eeb9e600aeabaec1b54fd40217514e02eb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400126"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531722"
 ---
 # <a name="cd2dlayer-class"></a>CD2DLayer sınıfı
 

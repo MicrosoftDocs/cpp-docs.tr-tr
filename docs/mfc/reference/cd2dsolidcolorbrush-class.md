@@ -1,10 +1,6 @@
 ---
-title: CD2DSolidColorBrush sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DSolidColorBrush sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DSolidColorBrush
 - AFXRENDERTARGET/CD2DSolidColorBrush
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DSolidColorBrush::SetColor
 - AFXRENDERTARGET/CD2DSolidColorBrush::m_colorSolid
 - AFXRENDERTARGET/CD2DSolidColorBrush::m_pSolidColorBrush
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DSolidColorBrush [MFC], CD2DSolidColorBrush
 - CD2DSolidColorBrush [MFC], Attach
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - CD2DSolidColorBrush [MFC], m_colorSolid
 - CD2DSolidColorBrush [MFC], m_pSolidColorBrush
 ms.assetid: d4506637-acce-4f74-8a9b-f0a45571a735
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b1ca592022ff81dafa7e0659922208ec77948511
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fa2114df914af07dd9baa140cc96cc94eaea6a91
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077367"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50521777"
 ---
 # <a name="cd2dsolidcolorbrush-class"></a>CD2DSolidColorBrush sınıfı
 

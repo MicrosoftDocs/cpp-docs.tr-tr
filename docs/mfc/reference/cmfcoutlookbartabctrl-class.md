@@ -1,10 +1,6 @@
 ---
-title: CMFCOutlookBarTabCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCOutlookBarTabCtrl sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCOutlookBarTabCtrl
 - AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl
@@ -27,8 +23,6 @@ f1_keywords:
 - AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetPageButtonTextAlign
 - AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetToolbarImageList
 - AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetVisiblePageButtons
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCOutlookBarTabCtrl [MFC], AddControl
 - CMFCOutlookBarTabCtrl [MFC], CanShowFewerPageButtons
@@ -50,16 +44,12 @@ helpviewer_keywords:
 - CMFCOutlookBarTabCtrl [MFC], SetToolbarImageList
 - CMFCOutlookBarTabCtrl [MFC], SetVisiblePageButtons
 ms.assetid: b1f2b3f7-cc59-49a3-99d8-7ff9b37c044b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 19550315f17982e019d1ba6f495dedee6d2f346d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e858d5a481add0f3c6e61175a96a5b27133bf125
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081020"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559724"
 ---
 # <a name="cmfcoutlookbartabctrl-class"></a>CMFCOutlookBarTabCtrl sınıfı
 

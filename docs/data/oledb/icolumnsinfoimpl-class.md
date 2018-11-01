@@ -1,10 +1,6 @@
 ---
-title: Icolumnsınfoımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IColumnsInfoImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL.IColumnsInfoImpl<T>
 - ATL::IColumnsInfoImpl
@@ -26,24 +22,17 @@ f1_keywords:
 - IColumnsInfoImpl::MapColumnIDs
 - ATL.IColumnsInfoImpl<T>.MapColumnIDs
 - ATL.IColumnsInfoImpl.MapColumnIDs
-dev_langs:
-- C++
 helpviewer_keywords:
 - IColumnsInfoImpl class
 - GetColumnInfo method
 - MapColumnIDs method
 ms.assetid: ba74c1c5-2eda-4452-8b57-84919fa0d066
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: cded311abd2956317861bac484e3c32a4e14f5cb
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 149d8ea9b23abffb73b5ea620ea094d6f5b792b9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072336"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498936"
 ---
 # <a name="icolumnsinfoimpl-class"></a>IColumnsInfoImpl Sınıfı
 

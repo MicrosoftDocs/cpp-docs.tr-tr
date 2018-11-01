@@ -1,10 +1,6 @@
 ---
-title: CGopherConnection sınıfı | Microsoft Docs
-ms.custom: ''
+title: CGopherConnection sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CGopherConnection
 - AFXINET/CGopherConnection
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXINET/CGopherConnection::CreateLocator
 - AFXINET/CGopherConnection::GetAttribute
 - AFXINET/CGopherConnection::OpenFile
-dev_langs:
-- C++
 helpviewer_keywords:
 - CGopherConnection [MFC], CGopherConnection
 - CGopherConnection [MFC], CreateLocator
 - CGopherConnection [MFC], GetAttribute
 - CGopherConnection [MFC], OpenFile
 ms.assetid: b5b96aea-ac99-430e-bd84-d1372b43f78f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0f4bc06415d804aa48b7d12ac28b1181e818a2c2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f9c2a99c30213a28f4c20ba0f4a2eebea85bef76
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082573"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519671"
 ---
 # <a name="cgopherconnection-class"></a>CGopherConnection sınıfı
 

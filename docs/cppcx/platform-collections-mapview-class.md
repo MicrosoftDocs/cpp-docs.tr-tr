@@ -1,8 +1,6 @@
 ---
-title: 'Platform::Collections:: mapview sınıfı | Microsoft Docs'
-ms.custom: ''
+title: 'Platform::Collections:: mapview sınıfı'
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::MapView::MapView
@@ -11,21 +9,15 @@ f1_keywords:
 - COLLECTION/Platform::Collections::MapView::Lookup
 - COLLECTION/Platform::Collections::MapView::Size
 - COLLECTION/Platform::Collections::MapView::Split
-dev_langs:
-- C++
 helpviewer_keywords:
 - MapView Class
 ms.assetid: 9577dde7-f599-43c6-b1e4-7d653706fd62
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e1dd4aab5912b2f15e8c0b36c7e482001809099d
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: cd1865320d56d71481cdaf7055f796bfab26eeab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163913"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496391"
 ---
 # <a name="platformcollectionsmapview-class"></a>Platform::Collections:: mapview sınıfı
 

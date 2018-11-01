@@ -1,10 +1,6 @@
 ---
-title: _local_unwind2 | Microsoft Docs
-ms.custom: ''
+title: _local_unwind2
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _local_unwind2
 apilocation:
@@ -19,22 +15,16 @@ apitype: DLLExport
 f1_keywords:
 - _local_unwind2
 - local_unwind2
-dev_langs:
-- C++
 helpviewer_keywords:
 - _local_unwind2 function
 - local_unwind2 function
 ms.assetid: 44f1fa82-e01e-490f-a6e6-18fc6811c28c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 47227d4be0ad1c5145a9064d11b4ea633c7d7fc1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8ae5c3937c9dedc54f0a936b91963419d59f79cc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46035792"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535414"
 ---
 # <a name="localunwind2"></a>_local_unwind2
 

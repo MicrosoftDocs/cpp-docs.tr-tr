@@ -1,12 +1,6 @@
 ---
-title: Sunucuları | Microsoft Docs
-ms.custom: ''
+title: Sunucular
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE server applications [MFC]
 - OLE server applications [MFC], activation
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - OLE server applications [MFC], server types
 - server applications [MFC]
 ms.assetid: e45172e8-eae3-400a-8139-0fa009a42fdc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dee0fd14e2e2d87155bfafefca6fa17e1d77135f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d1e0a8ca85055c289d1ef8e1c36fcd35eab61c91
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375391"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526510"
 ---
 # <a name="servers"></a>Sunucular
 

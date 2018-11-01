@@ -1,12 +1,6 @@
 ---
-title: (MFC veri erişimi) ikinci kayıt kümesinden liste kutusunu doldurma | Microsoft Docs
-ms.custom: ''
+title: (MFC veri erişimi) ikinci kayıt kümesinden liste kutusunu doldurma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - record views, filling list boxes
 - list boxes, filling from second recordset
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - combo boxes [C++], filling from second recordset
 - CListCtrl class, filling from second recordset
 ms.assetid: 360c0834-da6b-4dc0-bcea-80e9acd611f0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 9c5261a6bacb9fc0bf580820073699cc442218db
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7963d820848704921c40d5dc95a6f6d9c766d2be
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072754"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588207"
 ---
 # <a name="filling-a-list-box-from-a-second-recordset--mfc-data-access"></a>(MFC veri erişimi) ikinci kayıt kümesinden liste kutusunu doldurma
 

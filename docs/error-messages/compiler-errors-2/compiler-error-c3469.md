@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3469 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3469
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3469
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3469
 ms.assetid: e23b0e5c-c704-4e67-a868-bf02c2055d85
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f39889052b85ee6ab5595f388f939403fe3d2a46
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7ae0b7b779749a9787601a6046eadd80c2ba49d0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016994"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571073"
 ---
 # <a name="compiler-error-c3469"></a>Derleyici Hatası C3469
 

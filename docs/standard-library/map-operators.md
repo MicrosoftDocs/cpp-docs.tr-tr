@@ -1,8 +1,6 @@
 ---
-title: '&lt;Harita&gt; işleçler | Microsoft Docs'
-ms.custom: ''
+title: '&lt;Harita&gt; işleçleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - map/std::operator!=
 - map/std::operator&gt;
@@ -10,8 +8,6 @@ f1_keywords:
 - map/std::operator&lt;
 - map/std::operator&lt;=
 - map/std::operator==
-dev_langs:
-- C++
 ms.assetid: 7df02b9f-701c-44ed-834a-a819badc5bd0
 helpviewer_keywords:
 - std::operator!= (map)
@@ -20,12 +16,12 @@ helpviewer_keywords:
 - std::operator&lt; (map)
 - std::operator&lt;= (map)
 - std::operator== (map)
-ms.openlocfilehash: 92314d923c591cce886683fcf536a24b404ba133
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 28acb02932ac2a6064ad49853adcb40dfb781520
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314880"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504318"
 ---
 # <a name="ltmapgt-operators"></a>&lt;Harita&gt; işleçleri
 

@@ -1,27 +1,17 @@
 ---
-title: Aylık takvim denetimi oluşturma | Microsoft Docs
-ms.custom: ''
+title: Aylık Takvim Denetimi Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMonthCalCtrl class [MFC], creating
 - month calendar controls [MFC], creating
 - month calendar controls [MFC]
 ms.assetid: 185cc642-85e9-4365-8a4c-d90b75b010f7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a0fadc3b56d0aa64068071ee7230ed125c6af925
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f98ce6c0272b64442d42cb0ba78b10affe5ede8c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410877"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523793"
 ---
 # <a name="creating-the-month-calendar-control"></a>Aylık Takvim Denetimi Oluşturma
 

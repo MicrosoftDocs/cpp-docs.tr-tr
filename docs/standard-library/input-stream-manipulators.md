@@ -1,32 +1,22 @@
 ---
-title: Giriş akış Manipülatörleri | Microsoft Docs
-ms.custom: ''
+title: Giriş Akış Manipülatörleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - input streams, manipulators
 - input stream objects
 ms.assetid: 0addcacb-7b7b-4d70-9775-a59abc400fb3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 30f642dc4942491bd73265e3d647d3281f97c1e7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 17f18aa127b84538229b3cf4e4246dfefb6c1f98
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842211"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517969"
 ---
 # <a name="input-stream-manipulators"></a>Giriş Akış Manipülatörleri
 
-Birçok manipülatörleri gibi [setprecision](../standard-library/iomanip-functions.md#setprecision), tanımlanmış `ios` sınıfı ve bu nedenle akışları giriş uygulanır. Birkaç manipülatörleri, ancak gerçekte Giriş akışı nesneleri etkiler. Sayı tabanını manipülatörleri içeriğiyle yapan, en önemli olan `dec`, `oct`, ve `hex`, giriş akışından numaralarıyla kullanılan dönüştürme temel belirleyin.
+Birçok manipülatörleri gibi [setprecision](../standard-library/iomanip-functions.md#setprecision), tanımlanmış `ios` sınıfı ve bu nedenle giriş akışları uygulanır. Ancak, birkaç manipülatörleri Giriş akışı nesneleri gerçekten etkiler. Yapan, en önemli taban manipülatörleri olanlardır `dec`, `oct`, ve `hex`, giriş akışından sayılarla kullanılan temel dönüşümü belirler.
 
-Ayıklama üzerinde `hex` manipulator çeşitli giriş biçimleri işlenmesini sağlar. Örneğin, c C 0xc, 0xC, 0Xc ve 0XC tüm yorumlanacağını ondalık tamsayı olarak 12. Herhangi bir karakter dışında 0-9, A-F, a ile f, x ve X sayısal dönüşüm sonlandırır. Bu nedenle dizisi `"124n5"` numarasıyla 124 dönüştürülür [basic_ios::fail](../standard-library/basic-ios-class.md#fail) biti ayarlanmamış.
+Ayıklama üzerinde `hex` işleyici çeşitli giriş biçimleri işlenmesini sağlar. Örneğin, c, C, 0xc, 0xC 0Xc ve 0XC tüm yorumlanır ondalık tamsayı 12. Herhangi bir karakter dışında 0-9, A-F, a ile f, x ve X sayısal dönüştürme sonlandırır. Bu nedenle dizisi `"124n5"` numarasıyla 124 dönüştürülür [basic_ios::fail](../standard-library/basic-ios-class.md#fail) biti ayarlanmamış.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

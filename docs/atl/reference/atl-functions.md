@@ -1,26 +1,16 @@
 ---
-title: ATL işlevleri | Microsoft Docs
-ms.custom: ''
+title: ATL işlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - functions [ATL]
 - ATL, global functions
 ms.assetid: 69db0cb2-de1d-445b-b692-020d6e8c2173
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 56606eb495337f7462c20d56369e5bcbdb126207
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5cf56d21be605094c3ae812bd7aa39b573d2b733
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052749"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564924"
 ---
 # <a name="atl-functions"></a>ATL işlevleri
 

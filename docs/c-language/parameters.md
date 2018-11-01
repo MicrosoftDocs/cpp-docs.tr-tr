@@ -1,12 +1,6 @@
 ---
-title: Parametreleri | Microsoft Docs
-ms.custom: ''
+title: Parametreler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - arguments [C++], function
 - function parameters
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - ellipses (...), parameters
 - '... ellipsis'
 ms.assetid: 8f2b8026-78b5-4e21-86a3-bf0f91f05689
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1d93dfd518499f4f34813a7fa6aae35da0e8175b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 2b4b549ae6059cddf3ab868950cda215fb043d8e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766106"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506944"
 ---
 # <a name="parameters"></a>Parametreler
 

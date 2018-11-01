@@ -1,29 +1,19 @@
 ---
-title: 'Address-of işleci: &amp; | Microsoft Docs'
-ms.custom: ''
+title: 'Address-of işleci: &amp;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - '&'
-dev_langs:
-- C++
 helpviewer_keywords:
 - address-of operator (&)
 - '& operator'
 - '& operator [C++], address-of operator'
 ms.assetid: 2828221a-15f6-4acc-87fe-25e34feebb88
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f194041633b251320ae5fb7889e569a105230373
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a03a6100c372e059bd9ef2ddde0558da307923dc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019828"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519125"
 ---
 # <a name="address-of-operator-amp"></a>Address-of işleci: &amp;
 

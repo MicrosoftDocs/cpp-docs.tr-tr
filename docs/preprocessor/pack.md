@@ -1,29 +1,19 @@
 ---
-title: Paketi | Microsoft Docs
-ms.custom: ''
+title: pack
 ms.date: 09/17/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - pack_CPP
 - vc-pragma.pack
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, pack
 - pack pragma
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5937fb5eb3c082575a128db32841416ba31acf11
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0067b30c5c2eae9391defeea11c722d455ec8f1a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075313"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50507607"
 ---
 # <a name="pack"></a>pack
 Yapı, birleşim ve sınıf üyeleri için paketleme hizalamasını belirtir.

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2492 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2492
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2492
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2492
 ms.assetid: 8c44c9bb-c366-4fe5-a0ab-882e38608aaa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2fcb9058bf1aac584e8b7728616f821bda4b33f6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e2b08ef3e46681147c4efd77cbffadb096bbfc16
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46096281"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590469"
 ---
 # <a name="compiler-error-c2492"></a>Derleyici Hatası C2492
 

@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonSlider sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonSlider sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonSlider
 - AFXRIBBONSLIDER/CMFCRibbonSlider
@@ -20,8 +16,6 @@ f1_keywords:
 - AFXRIBBONSLIDER/CMFCRibbonSlider::SetRange
 - AFXRIBBONSLIDER/CMFCRibbonSlider::SetZoomButtons
 - AFXRIBBONSLIDER/CMFCRibbonSlider::SetZoomIncrement
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonSlider [MFC], CMFCRibbonSlider
 - CMFCRibbonSlider [MFC], GetPos
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - CMFCRibbonSlider [MFC], SetZoomButtons
 - CMFCRibbonSlider [MFC], SetZoomIncrement
 ms.assetid: 9351ac34-f234-4e42-91e2-763f1989c8ff
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9ee89ec85a222ae4727a31a1f3f76cfd257e328b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8db8165325c7bcd1e626b6707c35b69ebd211073
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50058395"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585113"
 ---
 # <a name="cmfcribbonslider-class"></a>CMFCRibbonSlider sınıfı
 

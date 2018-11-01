@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3289 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3289
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3289
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3289
 ms.assetid: 3c1c623b-7fcf-43ab-a89a-8722532a8d29
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 185fc7d70a9510ce9caf252398b63dd3c59c1f7d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0ebb56023694b1713bfe88379d07fc621da4d43f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46020218"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622657"
 ---
 # <a name="compiler-error-c3289"></a>Derleyici Hatası C3289
 

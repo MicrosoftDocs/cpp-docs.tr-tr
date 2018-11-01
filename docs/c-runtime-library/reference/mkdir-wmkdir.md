@@ -1,10 +1,6 @@
 ---
-title: _mkdir, _wmkdir | Microsoft Docs
-ms.custom: ''
+title: _mkdir, _wmkdir
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wmkdir
 - _mkdir
@@ -27,8 +23,6 @@ f1_keywords:
 - _tmkdir
 - wmkdir
 - _wmkdir
-dev_langs:
-- C++
 helpviewer_keywords:
 - _wmkdir function
 - folders [C++], creating
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - _mkdir function
 - _tmkdir function
 ms.assetid: 7f22d01d-63a5-4712-a6e7-d34878b2d840
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 40641911af9c61285049a5943cdc8f5c21cba99b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0d89e1f0930cf9131156a4691069f1f17c15c124
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402146"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496625"
 ---
 # <a name="mkdir-wmkdir"></a>_mkdir, _wmkdir
 
@@ -73,9 +63,9 @@ Yeni bir dizin yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yeni dizin oluşturduysanız bu işlevlerin her biri 0 değerini döndürür. Bir hata, işlev dönüşleri -1 ve ayarlar **errno** gibi.
+Yeni dizin oluşturduysanız bu işlevlerin her biri 0 değerini döndürür. Bir hata, işlev -1 döndürür ve kümeleri **errno** gibi.
 
-**EEXIST** olduğundan dizin oluşturulmadı *DizinAdı* varolan bir dosyanın, dizin veya aygıt adı.
+**EEXIST** çünkü dizin oluşturulmadı *DizinAdı* bir var olan dosya, dizin veya cihaz adıdır.
 
 **ENOENT** yolu bulunamadı.
 
@@ -83,9 +73,9 @@ Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doser
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mkdir** işlevi yeni bir dizin ile belirtilen oluşturur *DizinAdı.* **_mkdir** çağrı, yalnızca son bileşeni başına yalnızca bir yeni dizin oluşturabilirsiniz *DizinAdı* yeni bir dizin adı verebilirsiniz. **_mkdir** yol ayırıcısı tercüme etmez. Windows NT, her iki ters eğik çizgi ( \\) ve eğik çizgi (/) geçerli bir yol sınırlayıcı karakter dizelerini çalışma zamanı yordamları.
+**_Mkdir** işlevi yeni bir dizin belirtilen oluşturur *DizinAdı.* **_mkdir** yalnızca son bileşeni, çağrı başına yalnızca bir yeni dizine oluşturabilirsiniz *DizinAdı* yeni bir dizin adı. **_mkdir** yolu sınırlayıcı anlamına gelmez. Windows NT, her iki eğik çizgi ( \\) ve eğik çizgi (/) çalışma zamanı yordamları karakter dizesinin geçerli yolu sınırlayıcı.
 
-**_wmkdir** bir joker karakter sürümü **_mkdir**; *DizinAdı* bağımsız değişkeni **_wmkdir** bir joker karakter dizesidir. **_wmkdir** ve **_mkdir** Aksi takdirde aynı şekilde davranır.
+**_wmkdir** geniş karakterli sürümüdür **_mkdir**; *DizinAdı* bağımsız değişkeni **_wmkdir** geniş karakterli bir dizedir. **_wmkdir** ve **_mkdir** aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -100,7 +90,7 @@ Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doser
 |**_mkdir**|\<Direct.h >|
 |**_wmkdir**|\<Direct.h > veya \<wchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

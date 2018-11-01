@@ -1,26 +1,16 @@
 ---
-title: 'Nasıl yapılır: parallel_for döngüsü yazma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: parallel_for Döngüsü Yazma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - writing a parallel_for loop [Concurrency Runtime]
 - parallel_for function, example
 ms.assetid: adb4d64e-5514-4b70-8dcb-b9210e6b5a1c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0cd9f10f473ae72c32b11fe648abe693568b34a6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5caba385304e97bf2e1008a44724c792d56124f5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46395461"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592727"
 ---
 # <a name="how-to-write-a-parallelfor-loop"></a>Nasıl yapılır: parallel_for Döngüsü Yazma
 

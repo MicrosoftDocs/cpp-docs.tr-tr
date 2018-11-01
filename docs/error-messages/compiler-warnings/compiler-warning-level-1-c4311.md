@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4311 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4311
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4311
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4311
 ms.assetid: ddc579d0-d051-47bc-915d-71ffb32323c9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7e01aef8ffe6314452ad4644f2192583c89a42ea
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f60daa66daa42687522400284a19ec87eb13f67c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46114429"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513730"
 ---
 # <a name="compiler-warning-level-1-c4311"></a>Derleyici Uyarısı (düzey 1) C4311
 

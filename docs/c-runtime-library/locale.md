@@ -1,14 +1,8 @@
 ---
-title: Yerel ayar | Microsoft Docs
-ms.custom: ''
+title: Yerel Ayar
 ms.date: 04/11/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.international
-dev_langs:
-- C++
 helpviewer_keywords:
 - localization, locale
 - country information
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - setlocale function
 - locale routines
 ms.assetid: 442f8112-9288-44d7-be3c-15d22652093a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3f3bf660b2e1c8301e9c6c8ba1bd1e11fa3956de
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b5096d0b0f0990a89789993a12f383d060b91b3e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082228"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571489"
 ---
 # <a name="locale"></a>Yerel Ayar
 

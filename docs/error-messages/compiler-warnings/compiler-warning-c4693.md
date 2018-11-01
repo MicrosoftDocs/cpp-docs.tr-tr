@@ -1,38 +1,29 @@
 ---
-title: Derleyici Uyarısı C4693 | Microsoft Docs
+title: Derleyici Uyarısı C4693
 ms.date: 10/25/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4693
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4693
 ms.assetid: 72d8db01-5e6f-4794-8731-76107e8f064a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f8230e60d65c80b4f839cc8a1c97ccc0c7b18086
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 49d101ea56cd868e18489b6c74724a2d106c9265
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33273887"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536665"
 ---
 # <a name="compiler-warning-c4693"></a>Derleyici Uyarısı C4693
 
-> 'class': korumalı bir Özet sınıf hiçbir örnek üyesinin 'Test' olamaz
+> 'class': kapalı bir soyut sınıf 'Test' örnek üyelerine sahip olamaz
 
 Bir tür işaretlenmişse [korumalı](../../windows/sealed-cpp-component-extensions.md) ve [soyut](../../windows/abstract-cpp-component-extensions.md), yalnızca statik üyeleri olabilir.
 
-Bu uyarı için bir hata otomatik olarak yükseltilir. Bu davranışı değiştirmek istiyorsanız, kullanmak [#pragma Uyarısı](../../preprocessor/warning.md).
+Bu uyarı, bir hata için otomatik olarak yükseltilir. Bu davranışı değiştirmek istiyorsanız, [#pragma Uyarısı](../../preprocessor/warning.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C4693 oluşturur.
+Aşağıdaki örnek, C4693 oluşturur.
 
 ```cpp
 // C4693.cpp

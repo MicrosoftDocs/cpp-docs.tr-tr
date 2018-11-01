@@ -1,10 +1,6 @@
 ---
-title: _lrotl, _lrotr | Microsoft Docs
-ms.custom: ''
+title: _lrotl, _lrotr
 ms.date: 04/04/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _lrotl
 - _lrotr
@@ -26,8 +22,6 @@ f1_keywords:
 - lrotl
 - _lrotr
 - _lrotl
-dev_langs:
-- C++
 helpviewer_keywords:
 - lrotl function
 - bits
@@ -37,16 +31,12 @@ helpviewer_keywords:
 - _lrotl function
 - bits, rotating
 ms.assetid: d42f295b-35f9-49d2-9ee4-c66896ffe68e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0182256b06a3f04acbb941d02624e2b512b22a97
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 71ca61676e4551155f9f14e792c5c1cee65ddb7e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400635"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518423"
 ---
 # <a name="lrotl-lrotr"></a>_lrotl, _lrotr
 
@@ -65,15 +55,15 @@ unsigned long _lrotr( unsigned long value, int shift );
 Döndürülecek değer.
 
 *Kaydırma*<br/>
-Kaydırılacak bit sayısını *değeri*.
+Kaydırılacak bit sayısı kadar *değer*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her iki işlevler döndürülen değer döndürür. Döndürülen hata yoktur.
+Hem işlevler döndürülen değer döndürür. Döndürülen hata yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Lrotl** ve **_lrotr** işlevleri döndürme *değeri* tarafından *shift* BITS. **_lrotl** sol, daha önemli BITS doğru değerini döndürür. **_lrotr** daha az önemli BITS doğru değeri sağa döndürür. Her iki işlevleri devre dışı bir ucunu Döndürülmüş BITS kaydırma *değeri* diğer bitiş.
+**_Lrotl** ve **_lrotr** işlevleri döndürme *değer* tarafından *shift* bitleri. **_lrotl** sol, daha önemli bitlerin doğru değeri döndürür. **_lrotr** daha az önemli bitlerin doğru değeri sağa doğru döndürür. Her iki işlev de bir ucu Döndürülmüş bit kaydırma *değer* diğer ucuna.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -81,7 +71,7 @@ Her iki işlevler döndürülen değer döndürür. Döndürülen hata yoktur.
 |-------------|---------------------|
 |**_lrotl**, **_lrotr**|\<stdlib.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

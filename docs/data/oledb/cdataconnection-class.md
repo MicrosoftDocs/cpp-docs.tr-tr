@@ -1,10 +1,6 @@
 ---
-title: CDataConnection sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDataConnection Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL::CDataConnection
 - ATL.CDataConnection
@@ -50,8 +46,6 @@ f1_keywords:
 - CDataConnection::operatorCSession*
 - operatorCSession*
 - CSession*
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDataConnection class
 - CDataConnection class, constructor
@@ -71,17 +65,12 @@ helpviewer_keywords:
 - operator CSession*
 - CSession* operator
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 07d91cbefcb70fbbb935e29d972f45a9e4cb7376
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8bd31070588f80c29589767ef68b221bf15f0570
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063568"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482765"
 ---
 # <a name="cdataconnection-class"></a>CDataConnection Sınıfı
 

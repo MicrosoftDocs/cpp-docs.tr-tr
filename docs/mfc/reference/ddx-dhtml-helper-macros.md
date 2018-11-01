@@ -1,10 +1,6 @@
 ---
-title: DDX_DHtml yardımcı makroları | Microsoft Docs
-ms.custom: ''
+title: DDX_DHtml yardımcı makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - AFXDHTML/DDX_DHtml_ElementValue
 - AFXDHTML/DDX_DHtml_ElementInnerText
@@ -14,8 +10,6 @@ f1_keywords:
 - AFXDHTML/DDX_DHtml_Img_Src
 - AFXDHTML/DDX_DHtml_Frame_Src
 - AFXDHTML/DDX_DHtml_IFrame_Src
-dev_langs:
-- C++
 helpviewer_keywords:
 - macros [MFC], exchanging data with HMTL pages
 - DDX macros [MFC]
@@ -23,16 +17,12 @@ helpviewer_keywords:
 - DDX (dialog data exchange), DHtml helper macros
 - macros [MFC], DDX_DHtml helpers
 ms.assetid: c46302d2-ea43-4fea-bfc2-6f590d99f267
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 841a140236c092ad14501698db90007bce0322ec
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e2deed5e3fb63f46d83cf4c6f0d3c13525e93a2b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054884"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592545"
 ---
 # <a name="ddxdhtml-helper-macros"></a>DDX_DHtml yardımcı makroları
 

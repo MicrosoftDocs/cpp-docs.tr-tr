@@ -1,10 +1,6 @@
 ---
-title: memset, wmemset | Microsoft Docs
-ms.custom: ''
+title: memset, wmemset
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wmemset
 - memset
@@ -25,22 +21,16 @@ apitype: DLLExport
 f1_keywords:
 - memset
 - wmemset
-dev_langs:
-- C++
 helpviewer_keywords:
 - wmemset function
 - memset function
 ms.assetid: e7ceb01b-df69-49c2-b294-a39358ad4699
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d6b26f0c200f19cab4bb2710be686b25a9dce014
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7e7fb493de7f5fcf5604b3c5fd8bce2963b59334
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202016"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519203"
 ---
 # <a name="memset-wmemset"></a>memset, wmemset
 

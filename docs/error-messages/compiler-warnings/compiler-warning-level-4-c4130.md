@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4130 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4130
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4130
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4130
 ms.assetid: 45e4c7b2-6b51-41c7-ba5e-941aa5c7d3dc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 21d73595e41c4c83eda61fa749c9f2dc72bb14bc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1b1fb72d68309a4bef56ccd844ad30d967bbadbd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038106"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552951"
 ---
 # <a name="compiler-warning-level-4-c4130"></a>Derleyici Uyarısı (düzey 4) C4130
 

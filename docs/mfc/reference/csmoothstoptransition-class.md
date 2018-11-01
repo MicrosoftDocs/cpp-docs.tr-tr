@@ -1,10 +1,6 @@
 ---
-title: CSmoothStopTransition sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSmoothStopTransition sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSmoothStopTransition
 - AFXANIMATIONCONTROLLER/CSmoothStopTransition
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CSmoothStopTransition::Create
 - AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_dblFinalValue
 - AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_maximumDuration
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSmoothStopTransition [MFC], CSmoothStopTransition
 - CSmoothStopTransition [MFC], Create
 - CSmoothStopTransition [MFC], m_dblFinalValue
 - CSmoothStopTransition [MFC], m_maximumDuration
 ms.assetid: e1a4b476-6f96-43dd-90db-870a64406b85
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db43e550b38778dbbdc34fb6e696129ca767d28f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 41ff87f82b695ba07723c1dac8cd2d5148f6f162
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377775"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578431"
 ---
 # <a name="csmoothstoptransition-class"></a>CSmoothStopTransition sınıfı
 

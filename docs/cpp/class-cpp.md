@@ -1,28 +1,18 @@
 ---
-title: sınıfı (C++) | Microsoft Docs
-ms.custom: ''
+title: class (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - class_cpp
-dev_langs:
-- CPP
 helpviewer_keywords:
 - class types [C++], class statements
 - class keyword [C++]
 ms.assetid: dd23c09f-6598-4069-8bff-69c7f2518b9f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e5807b529ca56613cfe0021762a0191e4038df0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4404767fc6cf07c2a7a23d460e13bb191fef387a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118745"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555148"
 ---
 # <a name="class-c"></a>class (C++)
 
@@ -34,7 +24,7 @@ ms.locfileid: "46118745"
 [template-spec]
 class [ms-decl-spec] [tag [: base-list ]]
 {
-   member-list
+   member-list
 } [declarators];
 [ class ] tag declarators;
 ```

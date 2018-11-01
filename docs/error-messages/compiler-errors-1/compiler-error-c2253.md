@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2253 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2253
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2253
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2253
 ms.assetid: bd6445ae-b2c1-4669-9657-a8f4acf80b16
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1bb9c78551195c1f451e9aa982c5ecc1a19c71d6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 847c37c6ae5edf14205d3d46ca624a572c8d6b6b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46072348"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658178"
 ---
 # <a name="compiler-error-c2253"></a>Derleyici Hatası C2253
 

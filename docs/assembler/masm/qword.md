@@ -1,27 +1,17 @@
 ---
-title: QWORD | Microsoft Docs
-ms.custom: ''
+title: QWORD
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - QWORD
-dev_langs:
-- C++
 helpviewer_keywords:
 - QWORD directive
 ms.assetid: 70fcad8f-db48-4cb0-9710-8feb58baab22
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b55691b9e91b8534b530059e95d856c11be7ea0c
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: c3616332ad130d93290d55a7eb1a655f7942efed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682016"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518007"
 ---
 # <a name="qword"></a>QWORD
 

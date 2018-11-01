@@ -1,27 +1,16 @@
 ---
-title: MFC önceden tanımlanmış semboller | Microsoft Docs
-ms.custom: ''
+title: MFC Önceden Tanımlanmış Semboller
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC symbols
 - symbols [C++], MFC
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 0418eadb23e7e188bd29328bccf5b58316585c29
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2ad7b7cb43e28ac4d3d0e0e3c0c7d7c755f1cb11
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445106"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592630"
 ---
 # <a name="mfc-predefined-symbols"></a>MFC Önceden Tanımlanmış Semboller
 

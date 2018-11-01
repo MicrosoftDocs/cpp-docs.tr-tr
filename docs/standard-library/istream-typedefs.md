@@ -1,20 +1,18 @@
 ---
-title: '&lt;istream&gt; typedefs | Microsoft Docs'
-ms.custom: ''
+title: '&lt;istream&gt; tür tanımları'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - istream/std::iostream
 - istream/std::istream
 - istream/std::wiostream
 - istream/std::wistream
 ms.assetid: 55bc1f84-53a7-46ca-a36f-ac6ef75d0374
-ms.openlocfilehash: bea06c9799783feafaff1f68f4019463e452a4f2
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: f647fba2036f6c69cb02393e30553c66df34b9dc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958861"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516733"
 ---
 # <a name="ltistreamgt-typedefs"></a>&lt;istream&gt; tür tanımları
 

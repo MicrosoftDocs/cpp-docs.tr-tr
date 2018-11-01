@@ -1,27 +1,17 @@
 ---
-title: Kalıcı olmayan özellik sayfası oluşturma | Microsoft Docs
-ms.custom: ''
+title: Kalıcı Olmayan Özellik Sayfası Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - modeless property sheets
 - property sheets, modeless
 - Create method [MFC], property sheets
 ms.assetid: eafd8a92-cc67-4a69-a5fb-742c920d1ae8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 16b0a558dcae7d2bf35cf530abfea15ef6f8138a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9012700ef145079cf01ee1eac1cee58449ab5b79
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378104"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524906"
 ---
 # <a name="creating-a-modeless-property-sheet"></a>Kalıcı Olmayan Özellik Sayfası Oluşturma
 

@@ -1,28 +1,18 @@
 ---
-title: Microsoft Macro Assembler başvurusu | Microsoft Docs
-ms.custom: ''
+title: Microsoft Macro Assembler Başvurusu
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), reference
 - MASM (Microsoft Macro Assembler), overview
 - MASM (Microsoft Macro Assembler)
 - MASM (Microsoft Macro Assembler), documentation overview
 ms.assetid: 1446d55f-e2e7-4fd1-a9b8-b15cf7d4e47c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 17713b492faad9b6675642e494cd815651287222
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 2da1d4ec24d29d5db0c12bdc856f8d031aa4ff54
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682909"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534699"
 ---
 # <a name="microsoft-macro-assembler-reference"></a>Microsoft Macro Assembler Başvurusu
 

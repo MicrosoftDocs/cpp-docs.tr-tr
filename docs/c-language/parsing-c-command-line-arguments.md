@@ -1,12 +1,6 @@
 ---
-title: C komut satırı bağımsız değişkenlerini ayrıştırma | Microsoft Docs
-ms.custom: ''
+title: C Komut Satırı Bağımsız Değişkenlerini Ayrıştırma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - quotation marks, command-line arguments
 - double quotation marks
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - parsing, command-line arguments
 - startup code, parsing command-line arguments
 ms.assetid: ffce8037-2811-45c4-8db4-1ed787859c80
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6c7d4c0a1a5afc7c43b601f048d14b4bc9619b08
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8161d724dbd21297bb3beef2cf9406ddd2484ff1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065731"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522440"
 ---
 # <a name="parsing-c-command-line-arguments"></a>C Komut Satırı Bağımsız Değişkenlerini Ayrıştırma
 

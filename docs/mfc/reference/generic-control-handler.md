@@ -1,30 +1,20 @@
 ---
-title: Genel Denetim işleyicisi | Microsoft Docs
-ms.custom: ''
+title: Genel Denetim İşleyicisi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.controls
-dev_langs:
-- C++
 helpviewer_keywords:
 - handlers [MFC], ON_CONTROL
 - handlers [MFC]
 - GenericControl Handler [MFC]
 - ON_CONTROL macro [MFC]
 ms.assetid: 1e25e583-5d5a-4363-8904-839991a8570d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 060bda1de088f3e1e84791601f176097f764c412
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fed8e40b54728ee2a84f86b1a9a8ade2c44e0fe7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446432"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586332"
 ---
 # <a name="generic-control-handler"></a>Genel Denetim İşleyicisi
 

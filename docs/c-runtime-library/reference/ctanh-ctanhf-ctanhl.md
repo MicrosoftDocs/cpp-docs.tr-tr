@@ -1,11 +1,6 @@
 ---
-title: ctanh, ctanhf, ctanhl | Microsoft Docs
-ms.custom: ''
+title: ctanh, ctanhf, ctanhl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - ctanh
 - ctahf
@@ -30,27 +25,21 @@ f1_keywords:
 - complex/ctanh
 - complex/ctanhf
 - complex/ctanhl
-dev_langs:
-- C++
 helpviewer_keywords:
 - ctanh function
 - ctanhl function
 - ctanhf function
 ms.assetid: 807f2cd1-8740-4988-afff-5911c346385b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bf81e503405959686974a26ceb5d064c1ab84400
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e390aceaad2ee82e1fe2a865d3903f5062f52e9d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396088"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50470570"
 ---
 # <a name="ctanh-ctanhf-ctanhl"></a>ctanh, ctanhf, ctanhl
 
-Karmaşık bir sayının hiperbolik tanjantını karmaşık hesaplar.
+Karmaşık bir sayıyı karmaşık hiperbolik tanjantını hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -83,20 +72,20 @@ Karmaşık hiperbolik tanjantını *z*.
 
 |Giriş|SEH özel durumu|**_matherr** özel durumu|
 |-----------|-------------------|--------------------------|
-|± ∞, QNAN, UL|yok|_DOMAIN|
+|± ∞, QNAN, ONRAKİNİ BUL|yok|_DOMAIN|
 |± ∞ (tan, tanf)|GEÇERSİZ|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **ctanh** alın ve dönüş **_Fcomplex** ve **_Lcomplex** değerleri. Bir C programı **ctanh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **ctanh** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **ctanh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**ctanh**, **ctanhf**, **ctanhl**|\<Complex.h >|\<ccomplex >|
 
-Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

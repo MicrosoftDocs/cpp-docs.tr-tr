@@ -1,27 +1,17 @@
 ---
-title: -CGTHREADS (derleyici iş parçacıkları) | Microsoft Docs
-ms.custom: ''
+title: /CGTHREADS (Derleyici İş Parçacıkları)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - /CGTHREADS linker option
 - -CGTHREADS linker option
 - CGTHREADS linker option
 ms.assetid: 4b52cfdb-3702-470b-9580-fabeb1417488
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d717ffb3ed135ffe9e6f4ed2c55f925e3f10d86f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1c459604d90b23953bbf3f250708c393fa78277d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45720537"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495114"
 ---
 # <a name="cgthreads-compiler-threads"></a>/CGTHREADS (Derleyici İş Parçacıkları)
 
@@ -56,7 +46,7 @@ Paralellik derecesi birden çok düzeyi için bir derleme belirtilebilir. Msbuil
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

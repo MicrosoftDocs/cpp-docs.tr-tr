@@ -1,10 +1,6 @@
 ---
-title: CDebugReportHook sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDebugReportHook sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CDebugReportHook
 - ATLUTIL/ATL::CDebugReportHook
@@ -14,21 +10,15 @@ f1_keywords:
 - ATLUTIL/ATL::CDebugReportHook::SetHook
 - ATLUTIL/ATL::CDebugReportHook::SetPipeName
 - ATLUTIL/ATL::CDebugReportHook::SetTimeout
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDebugReportHook class
 ms.assetid: 798076c3-6e63-4286-83b8-aa1bbcd0c20c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fb0bf24657a47cbe1cf1129f0202d120fb1d017e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 370581effcd7233d0f1f474c80a273809be58551
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039071"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551495"
 ---
 # <a name="cdebugreporthook-class"></a>CDebugReportHook sınıfı
 

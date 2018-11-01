@@ -1,10 +1,6 @@
 ---
-title: reader_writer_lock sınıfı | Microsoft Docs
-ms.custom: ''
+title: reader_writer_lock Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - reader_writer_lock
 - CONCRT/concurrency::reader_writer_lock
@@ -16,21 +12,15 @@ f1_keywords:
 - CONCRT/concurrency::reader_writer_lock::try_lock
 - CONCRT/concurrency::reader_writer_lock::try_lock_read
 - CONCRT/concurrency::reader_writer_lock::unlock
-dev_langs:
-- C++
 helpviewer_keywords:
 - reader_writer_lock class
 ms.assetid: 91a59cd2-ca05-4b74-8398-d826d9f86736
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1f9eeea62e1872cbea737313192b3822c23bb433
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1c2696695992cac9d51d547913c41234beaecf57
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064491"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585997"
 ---
 # <a name="readerwriterlock-class"></a>reader_writer_lock Sınıfı
 

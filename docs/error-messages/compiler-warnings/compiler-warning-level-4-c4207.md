@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4207 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4207
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4207
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4207
 ms.assetid: f4e09e3e-ac87-4489-8e3f-c8f76b82e721
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a5aa7f364eb8f60d680dde4c252b9c84e258cda0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 44f49705bf197d7a42b80e50983e47a4c0ce7bed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46068838"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541134"
 ---
 # <a name="compiler-warning-level-4-c4207"></a>Derleyici Uyarısı (düzey 4) C4207
 

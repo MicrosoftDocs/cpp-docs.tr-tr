@@ -1,30 +1,20 @@
 ---
-title: _U_menuorıd sınıfı | Microsoft Docs
-ms.custom: ''
+title: _U_menuorıd sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - ATL._U_MENUorID
 - ATL::_U_MENUorID
 - _U_MENUorID
-dev_langs:
-- C++
 helpviewer_keywords:
 - U_MENUorID class
 - _U_MENUorID class
 ms.assetid: cfc8032b-61b4-4a68-ba3a-92b82500ccae
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3eb9ab5f08fe1984e52ed16eb26064093fb8e003
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: dacb747978fd77d5ad8a464acc675c3509f5a815
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052960"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499742"
 ---
 # <a name="umenuorid-class"></a>_U_menuorıd sınıfı
 

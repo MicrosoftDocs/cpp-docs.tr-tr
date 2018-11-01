@@ -1,10 +1,6 @@
 ---
-title: CMFCPopupMenu sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCPopupMenu sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCPopupMenu
 - AFXPOPUPMENU/CMFCPopupMenu
@@ -85,8 +81,6 @@ f1_keywords:
 - AFXPOPUPMENU/CMFCPopupMenu::CreateTearOffBar
 - AFXPOPUPMENU/CMFCPopupMenu::OnChangeHot
 - AFXPOPUPMENU/CMFCPopupMenu::OnChooseItem
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCPopupMenu [MFC], CMFCPopupMenu
 - CMFCPopupMenu [MFC], ActivatePopupMenu
@@ -166,16 +160,12 @@ helpviewer_keywords:
 - CMFCPopupMenu [MFC], OnChangeHot
 - CMFCPopupMenu [MFC], OnChooseItem
 ms.assetid: 9555dca1-8c9c-44c9-af72-0659ddad128e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 689a3d8e2ce7b63b5f5e507343084848cf6c52f4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b52ae91b7ce0111725e5ba21a7f8ca8aaa6779e9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081751"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517682"
 ---
 # <a name="cmfcpopupmenu-class"></a>CMFCPopupMenu sınıfı
 

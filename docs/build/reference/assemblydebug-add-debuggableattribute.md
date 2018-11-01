@@ -1,30 +1,20 @@
 ---
-title: -ASSEMBLYDEBUG (DebuggableAttribute ekleme) | Microsoft Docs
-ms.custom: ''
+title: /ASSEMBLYDEBUG (DebuggableAttribute Ekleme)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.AssemblyDebug
 - /ASSEMBLYDEBUG
-dev_langs:
-- C++
 helpviewer_keywords:
 - /ASSEMBLYDEBUG linker option
 - -ASSEMBLYDEBUG linker option
 - ASSEMBLYDEBUG linker option
 ms.assetid: 94443af3-470c-41d7-83a0-7434563d7982
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 81e60050fb577d3513b06fb67a3438ed3cb1d03b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e9b39791e6537976be37b942292e1b1d42d5f700
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706231"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50478656"
 ---
 # <a name="assemblydebug-add-debuggableattribute"></a>/ASSEMBLYDEBUG (DebuggableAttribute Ekleme)
 
@@ -84,7 +74,7 @@ Bütünleştirilmiş kod oluşturmayı etkileyen diğer bağlayıcı seçenekler
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AssemblyDebug%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AssemblyDebug%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

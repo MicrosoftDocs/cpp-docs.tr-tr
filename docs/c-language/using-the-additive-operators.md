@@ -1,26 +1,16 @@
 ---
-title: Ek işleçlerini kullanma | Microsoft Docs
-ms.custom: ''
+title: Ek İşleçlerini Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - operators [C++], addition
 - additive operators
 ms.assetid: 7d54841e-436d-4ae8-9865-1ac1829e6f22
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 050db08d00d79e3cfee0ab7549532d78a51b1ade
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 78dc559a83626057603027e30742435b1128e31c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46078874"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557696"
 ---
 # <a name="using-the-additive-operators"></a>Ek İşleçlerini Kullanma
 

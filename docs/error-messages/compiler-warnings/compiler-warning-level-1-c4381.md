@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4381 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4381
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4381
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4381
 ms.assetid: f67a6db3-b334-4b2e-8182-b30c7a3c7c32
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 81c61dcbf49beeb41780cdaeff669cf21bfffee9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 31c7e4519e0eb1e0b6c66b6082edc7407522554a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46037833"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50479254"
 ---
 # <a name="compiler-warning-level-1-c4381"></a>Derleyici Uyarısı (düzey 1) C4381
 

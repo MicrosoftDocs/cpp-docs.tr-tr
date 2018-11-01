@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4001 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4001
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4001
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4001
 ms.assetid: 414a47fe-d597-425e-9374-6a569231dc0a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c325656b9e61ee324a3b9f171413f1020440f9ab
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dd18dc27ee13eab05ea0253c8ebcc990105c15c9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46025418"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562285"
 ---
 # <a name="compiler-warning-level-4-c4001"></a>Derleyici Uyarısı (düzey 4) C4001
 

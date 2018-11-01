@@ -1,19 +1,13 @@
 ---
-title: Olası yükseltme sorunlarına (Visual C++) genel bakış | Microsoft Docs
-ms.custom: ''
+title: Olası yükseltme sorunlarına (Visual C++) genel bakış
 ms.date: 11/04/2016
-ms.topic: conceptual
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 742d722033d0fb2e686861d0e09fc45c73540ade
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e4a1f4ecb6492bf74fca46df6f096ca79c71da18
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075768"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504266"
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>Olası yükseltme sorunlarına (Visual C++) genel bakış
 

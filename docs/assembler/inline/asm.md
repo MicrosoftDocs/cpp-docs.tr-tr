@@ -1,30 +1,20 @@
 ---
-title: __asm | Microsoft Docs
-ms.custom: ''
+title: __asm
 ms.date: 10/09/2018
-ms.technology:
-- cpp-masm
-ms.topic: conceptual
 f1_keywords:
 - __asm
 - _asm
 - __asm_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __asm keyword [C++], vs. asm blocks
 - __asm keyword [C++]
 ms.assetid: 77ff3bc9-a492-4b5e-85e1-fa4e414e79cd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dd279a6324aec6eba50c6c3b7ffe846200d45fe1
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 6b94bf73e66550d0245ef1f55c17d6676e3b4356
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161729"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591291"
 ---
 # <a name="asm"></a>__asm
 

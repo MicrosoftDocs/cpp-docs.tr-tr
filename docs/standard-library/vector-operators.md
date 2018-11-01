@@ -1,8 +1,6 @@
 ---
-title: '&lt;vektör&gt; işleçler | Microsoft Docs'
-ms.custom: ''
+title: '&lt;vektör&gt; işleçleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - vector/std::operator!=
 - vector/std::operator&gt;
@@ -10,8 +8,6 @@ f1_keywords:
 - vector/std::operator&lt;
 - vector/std::operator&lt;=
 - vector/std::operator==
-dev_langs:
-- C++
 ms.assetid: 1d14f312-6f59-4ec7-88ae-95f89a558823
 helpviewer_keywords:
 - std::operator!= (vector)
@@ -20,12 +16,12 @@ helpviewer_keywords:
 - std::operator&lt; (vector)
 - std::operator&lt;= (vector)
 - std::operator== (vector)
-ms.openlocfilehash: b3a67fb381e262ddec71c36f226412b8f9b74b68
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f659f1291c4111d83cc8715fd0deb104a9685f4f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725133"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474457"
 ---
 # <a name="ltvectorgt-operators"></a>&lt;vektör&gt; işleçleri
 

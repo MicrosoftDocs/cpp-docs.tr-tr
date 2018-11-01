@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3115 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3115
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3115
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3115
 ms.assetid: 51726145-9782-4ec9-84b9-286f366d9cbd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 716566066a58c20378128ee56d9da0aa070b6e9b
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: e334836986548d4f854dd9a5760bd8315b769d03
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788702"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520503"
 ---
 # <a name="compiler-error-c3115"></a>Derleyici Hatası C3115
 

@@ -1,12 +1,6 @@
 ---
-title: 'Geçen zaman: Otomasyon sınıfları | Microsoft Docs'
-ms.custom: ''
+title: 'Geçen zaman: Otomasyon sınıfları'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - adding dates
 - calculating dates and times
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - intervals, date and time
 - calculations, date and time
 ms.assetid: 26b34b37-c10e-4b91-82c3-1dc5ffb5361f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d8f36c48cf654379e9db3a99c2404732dca30f63
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: fbd01a4e7268456af342293d77ef74d372d2e639
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860328"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50583917"
 ---
 # <a name="elapsed-time-automation-classes"></a>Geçen zaman: Otomasyon sınıfları
 

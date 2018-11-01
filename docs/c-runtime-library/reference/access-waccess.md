@@ -1,10 +1,6 @@
 ---
-title: _erişim, _waccess | Microsoft Docs
-ms.custom: ''
+title: _access, _waccess
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _access
 - _waccess
@@ -27,8 +23,6 @@ f1_keywords:
 - taccess
 - waccess
 - _taccess
-dev_langs:
-- C++
 helpviewer_keywords:
 - access function
 - _taccess function
@@ -37,16 +31,12 @@ helpviewer_keywords:
 - _waccess function
 - taccess function
 ms.assetid: ba34f745-85c3-49e5-a7d4-3590bd249dd3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d1e8e4d8be25a175f40d59aa3d3b8eb1ecbf4c3e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 87ac912ab47483929b3afc2357331f8d97264b31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097024"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565483"
 ---
 # <a name="access-waccess"></a>_access, _waccess
 

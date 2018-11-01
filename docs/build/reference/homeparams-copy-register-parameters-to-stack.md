@@ -1,28 +1,18 @@
 ---
-title: -homeparams (kayıt parametrelerini yığına Kopyala) | Microsoft Docs
-ms.custom: ''
+title: /homeparams (Kayıt Parametrelerini Yığına Kopyala)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /homeparams
-dev_langs:
-- C++
 helpviewer_keywords:
 - /homeparams compiler option [C++]
 - -homeparams compiler option [C++]
 ms.assetid: 51067de4-24f7-436b-b8d9-bc867a7d53aa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a6c51c5e6062f4d7b793e3adb6e9f22e03a65c11
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 952a38d2ab1268ee3dc1fda0899a3ba047281b44
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45699848"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518462"
 ---
 # <a name="homeparams-copy-register-parameters-to-stack"></a>/homeparams (Kayıt Parametrelerini Yığına Kopyala)
 
@@ -56,7 +46,7 @@ Hata ayıklama yapısında, her zaman kayıtlara geçirilen parametreleri yığ�
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

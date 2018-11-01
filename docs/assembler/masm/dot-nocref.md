@@ -1,27 +1,17 @@
 ---
-title: . NOCREF | Microsoft Docs
-ms.custom: ''
+title: .NOCREF
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .NOCREF
-dev_langs:
-- C++
 helpviewer_keywords:
 - .NOCREF directive
 ms.assetid: 696a6a71-7e88-4b60-8550-7857d772ed20
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9ad9e4d84d8d49b4d1b5c71cc695031da9cd878e
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: ef9989d378b9e5af9695b02ddda8cf1e9951d935
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680006"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544709"
 ---
 # <a name="nocref"></a>.NOCREF
 

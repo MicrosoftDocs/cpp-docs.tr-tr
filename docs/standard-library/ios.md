@@ -1,28 +1,18 @@
 ---
-title: '&lt;iOS&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;iOS&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <ios>
 - ios/std::<ios>
-dev_langs:
-- C++
 helpviewer_keywords:
 - ios header
 ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fce633707096db8913da6d3601da20d14d3704c7
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 321924a622c04b09c1b1fdb47aef0d67ab8e0080
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961489"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487743"
 ---
 # <a name="ltiosgt"></a>&lt;iOS&gt;
 

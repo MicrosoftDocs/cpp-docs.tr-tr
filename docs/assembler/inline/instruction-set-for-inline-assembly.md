@@ -1,28 +1,19 @@
 ---
-title: Satır içi derleme için yönerge kümesi | Microsoft Docs
-ms.custom: ''
+title: Satır İçi Derleme için Yönerge Kümesi
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - inline assembly [C++], instruction set
 - instruction set [C++], inline assembly
 - assembler [C++], instruction set
 - instruction set [C++]
 ms.assetid: a45b5b22-9b5f-4545-81ec-70eb8ea2ef9b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 02fe69fad2e1ef9fb8aa0c5aa23913ccf403e15a
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 5d73b70603c3a3f51944a95fe54af11ecb50a9c2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43694001"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579055"
 ---
 # <a name="instruction-set-for-inline-assembly"></a>Satır İçi Derleme için Yönerge Kümesi
 

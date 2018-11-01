@@ -1,29 +1,19 @@
 ---
-title: CMultiDocTemplate sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMultiDocTemplate sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMultiDocTemplate
 - AFXWIN/CMultiDocTemplate
 - AFXWIN/CMultiDocTemplate::CMultiDocTemplate
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMultiDocTemplate [MFC], CMultiDocTemplate
 ms.assetid: 5b8aa328-e461-41d0-b388-00594535e119
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e0a3c7c301feecaf00fbf2dffcd6288b11ecfc7b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9a1b303924458ab03bc2ec42be1fbc3b2afa64ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380821"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566506"
 ---
 # <a name="cmultidoctemplate-class"></a>CMultiDocTemplate sınıfı
 

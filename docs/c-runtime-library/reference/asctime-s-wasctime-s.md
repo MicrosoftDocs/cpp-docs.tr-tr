@@ -1,10 +1,6 @@
 ---
-title: asctime_s, _wasctime_s | Microsoft Docs
-ms.custom: ''
+title: asctime_s, _wasctime_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wasctime_s
 - asctime_s
@@ -25,8 +21,6 @@ f1_keywords:
 - asctime_s
 - _wasctime_s
 - _tasctime_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - tasctime_s function
 - _tasctime_s function
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - _wasctime_s function
 - asctime_s function
 ms.assetid: 17ad9b2b-a459-465d-976a-42822897688a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5b5414a59aac41bec29886b1aa83c20395b3e916
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 350d8c7b1dcf61272a3cfee884dff8a63b455f1c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43208685"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471961"
 ---
 # <a name="asctimes-wasctimes"></a>asctime_s, _wasctime_s
 

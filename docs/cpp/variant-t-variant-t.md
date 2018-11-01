@@ -1,28 +1,18 @@
 ---
-title: _variant_t::_variant_t | Microsoft Docs
-ms.custom: ''
+title: _variant_t::_variant_t
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _variant_t::_variant_t
-dev_langs:
-- C++
 helpviewer_keywords:
 - _variant_t class [C++], constructor
 - _variant_t method [C++]
 ms.assetid: a50e5b33-d4c6-4a26-8e7e-a0a25fd9895b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2c3b1bb7d345d87e4f592dc82971f1efe86dd9a2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b3575226199c15c4a9796fb439f65efb5a539225
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079589"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544111"
 ---
 # <a name="varianttvariantt"></a>_variant_t::_variant_t
 

@@ -1,28 +1,18 @@
 ---
-title: Komut yönlendirme sınıfları | Microsoft Docs
-ms.custom: ''
+title: Komut Yönlendirme Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.command
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, command routing
 - command routing [MFC], classes
 ms.assetid: 4b50e689-2c54-4e6c-90f0-37333e22b2a1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4b467a85aca4bb1d0405f9bbddee5cb5e4f5b790
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 637f2056b76b7d55933b43a8e0822ec00212301a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391557"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574765"
 ---
 # <a name="command-routing-classes"></a>Komut Yönlendirme Sınıfları
 

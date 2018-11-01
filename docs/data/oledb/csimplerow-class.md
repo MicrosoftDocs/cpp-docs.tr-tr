@@ -1,10 +1,6 @@
 ---
-title: CSimpleRow sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSimpleRow Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - CSimpleRow
 - ATL::CSimpleRow
@@ -30,8 +26,6 @@ f1_keywords:
 - CSimpleRow::m_dwRef
 - CSimpleRow::m_iRowset
 - CSimpleRow.m_iRowset
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSimpleRow class
 - AddRefRow method
@@ -41,17 +35,12 @@ helpviewer_keywords:
 - m_dwRef
 - m_iRowset
 ms.assetid: 06d9621d-60cc-4508-8b0c-528d1b1a809b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: d5ceb07577386f4b3fc9389cf9103fba4036b591
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 478e988b350a4e52935838465004cf77f5c1e177
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076796"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539496"
 ---
 # <a name="csimplerow-class"></a>CSimpleRow Sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK1152 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1152
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1152
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1152
 ms.assetid: 2523b61a-1359-4612-9c16-7d1f705f32e6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 22276d0b3189f93f57f8337b22b5d6070cd3db0c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 156e9894c078587cd264c344e6d094aeb60d4649
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034479"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549041"
 ---
 # <a name="linker-tools-error-lnk1152"></a>Bağlayıcı Araçları Hatası LNK1152
 

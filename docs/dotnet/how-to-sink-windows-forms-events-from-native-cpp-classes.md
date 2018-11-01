@@ -1,29 +1,19 @@
 ---
-title: 'Nasıl yapılır: yerel C++ sınıflarından iç havuz Windows Forms olayları | Microsoft Docs'
+title: 'Nasıl yapılır: Yerel C++ Sınıflarından İç Havuz Windows Forms Olayları'
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - event handling, managed/native interop
 - event handling, sinking .NET in C++
 - event handling, .NET/native interop
 - event handling, Windows Forms in C++
 ms.assetid: 6e30ddee-d058-4c8d-9956-2a43d86f19d5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 9316d27637d335bc0e3a71656a5d7b9c8796ec28
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1bc601a4dbd7a51695b6964ab4d0ee47531c1b2b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425001"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555915"
 ---
 # <a name="how-to-sink-windows-forms-events-from-native-c-classes"></a>Nasıl yapılır: Yerel C++ Sınıflarından İç Havuz Windows Forms Olayları
 

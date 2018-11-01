@@ -1,27 +1,17 @@
 ---
-title: _ReadBarrier | Microsoft Docs
-ms.custom: ''
+title: _ReadBarrier
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _ReadBarrier
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ReadBarrier intrinsic
 ms.assetid: f9e54a92-61bc-4f55-8195-b8932065a796
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b121a849f3f1678becb2175bd284d036b534e8e2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d898f85398fffa79a9b484f0f82343b1675b61e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441388"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565171"
 ---
 # <a name="readbarrier"></a>_ReadBarrier
 

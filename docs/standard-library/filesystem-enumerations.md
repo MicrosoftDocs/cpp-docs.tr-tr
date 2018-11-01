@@ -1,10 +1,6 @@
 ---
-title: '&lt;dosya sistemi&gt; sabit listeleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;dosya sistemi&gt; sabit listeleri'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - filesystem/std::filesystem::copy_options
 - filesystem/std::experimental::filesystem::copy_options
@@ -14,19 +10,13 @@ f1_keywords:
 - filesystem/std::experimental::filesystem::file_type
 - filesystem/std::filesystem::perms
 - filesystem/std::experimental::filesystem::perms
-dev_langs:
-- C++
 ms.assetid: 0096c046-d101-464c-8259-b878a48280b0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bf5bca25f0e5b6a349544e24d0983d4d297be9ae
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9c4efa145455240c4420a51c4a01662a30dc0761
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065882"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538939"
 ---
 # <a name="ltfilesystemgt-enumerations"></a>&lt;dosya sistemi&gt; sabit listeleri
 

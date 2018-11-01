@@ -1,10 +1,6 @@
 ---
-title: CPalette sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPalette sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPalette
 - AFXWIN/CPalette
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXWIN/CPalette::GetPaletteEntries
 - AFXWIN/CPalette::ResizePalette
 - AFXWIN/CPalette::SetPaletteEntries
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPalette [MFC], CPalette
 - CPalette [MFC], AnimatePalette
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - CPalette [MFC], ResizePalette
 - CPalette [MFC], SetPaletteEntries
 ms.assetid: 8cd95498-53ed-4852-85e1-70e522541114
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 28c12e2c462061604398ab5283374e74bcad810e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1022d05265fc7c2b349dec22e41984e7d41820b2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071907"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586062"
 ---
 # <a name="cpalette-class"></a>CPalette sınıfı
 

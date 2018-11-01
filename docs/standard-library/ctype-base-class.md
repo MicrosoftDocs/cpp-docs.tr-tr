@@ -1,31 +1,21 @@
 ---
-title: ctype_base sınıfı | Microsoft Docs
-ms.custom: ''
+title: ctype_base Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - locale/std::ctype_base
-dev_langs:
-- C++
 helpviewer_keywords:
 - ctype_base class
 ms.assetid: ccffe891-d7ab-4d22-baf8-8eb6d438a96d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3def685a8cd108666b3e1b8be9314fc7585a9837
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 83ef35f9fac438cfa217decf222abd365ff84269
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844900"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531137"
 ---
 # <a name="ctypebase-class"></a>ctype_base Sınıfı
 
-Sınıf şablonu sınıfı modelleri için temel bir sınıf olarak hizmet veren [ctype](../standard-library/ctype-class.md). Karakterleri tek tek veya aralığın tamamında sınıflandırmak veya sınamak için kullanılan numaralandırma türleri tanımlamak için kullanılan ctype sınıfı için temel sınıf.
+Sınıfı şablon sınıfı modelleri için temel bir sınıf olarak hizmet verir [ctype](../standard-library/ctype-class.md). Karakterleri tek tek veya aralığın tamamında sınıflandırmak veya sınamak için kullanılan numaralandırma türleri tanımlamak için kullanılan ctype sınıfı için temel sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,31 +45,31 @@ struct ctype_base : public locale::facet
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir numaralandırma maskesi tanımlar. Her numaralandırma sabiti karakterleri, sınıflandırmak için farklı bir şekilde üstbilgisinde bildirilen benzer adları olan işlevler tarafından tanımlandığı şekilde belirtir \<ctype.h >. Sabitler şunlardır:
+Bu, bir numaralandırma maskesi tanımlar. Benzer adlarla üstbilgisinde bildirilen işlevler tarafından tanımlandığı şekilde, karakterleri sınıflandırmak için farklı bir şekilde her bir numaralandırma sabiti belirtir \<ctype.h >. Sabittir:
 
-- **alan** (işlevi [isspace](../standard-library/locale-functions.md#isspace))
+- **alanı** (işlev [isspace](../standard-library/locale-functions.md#isspace))
 
-- **Yazdırma** (işlevi [isprint](../standard-library/locale-functions.md#isprint))
+- **Yazdırma** (işlev [isprint](../standard-library/locale-functions.md#isprint))
 
-- **Dnt** (işlevi [iscntrl](../standard-library/locale-functions.md#iscntrl))
+- **CTRL** (işlev [iscntrl](../standard-library/locale-functions.md#iscntrl))
 
-- **üst** (işlevi [isupper](../standard-library/locale-functions.md#isupper))
+- **üst** (işlev [isupper](../standard-library/locale-functions.md#isupper))
 
-- **daha düşük** (işlevi [islower](../standard-library/locale-functions.md#islower))
+- **daha düşük** (işlev [islower](../standard-library/locale-functions.md#islower))
 
-- **basamak** (işlevi [isdigit](../standard-library/locale-functions.md#isdigit))
+- **basamak** (işlev [isdigit](../standard-library/locale-functions.md#isdigit))
 
-- **noktalama işareti** (işlevi [ispunct](../standard-library/locale-functions.md#ispunct))
+- **noktalama işareti** (işlev [ispunct](../standard-library/locale-functions.md#ispunct))
 
-- **xdigit** (işlevi [isxdigit](../standard-library/locale-functions.md#isxdigit))
+- **xdigit** (işlev [isxdigit](../standard-library/locale-functions.md#isxdigit))
 
-- **Alpha** (işlevi [isalpha](../standard-library/locale-functions.md#isalpha))
+- **alfa** (işlev [isalpha](../standard-library/locale-functions.md#isalpha))
 
-- **alnum** (işlevi [isalnum](../standard-library/locale-functions.md#isalnum))
+- **alnum'la** (işlev [isalnum](../standard-library/locale-functions.md#isalnum))
 
-- **Grafik** (işlevi [isgraph](../standard-library/locale-functions.md#isgraph))
+- **graf** (işlev [isgraph](../standard-library/locale-functions.md#isgraph))
 
-Bu sabitleri ORing tarafından sınıflandırmaları bileşimini ayırt edebilirsiniz. Özellikle, her zaman, true olan **alnum** == ( **alfa** &#124; **basamaklı** \) ve **grafik** \= \= \( **alnum** &#124; **noktalama işareti**).
+Bu sabit bir birleşimi tarafından ORing sınıflandırmaları ayırt edebilirsiniz. Özellikle, her zaman, doğru olduğu **alnum'la** == ( **alfa** &#124; **basamak** \) ve **grafik** \= \= \( **alnum'la** &#124; **noktalama işareti**).
 
 ## <a name="requirements"></a>Gereksinimler
 

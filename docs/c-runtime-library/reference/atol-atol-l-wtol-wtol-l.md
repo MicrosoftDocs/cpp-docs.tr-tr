@@ -1,10 +1,6 @@
 ---
-title: atol, _atol_l, _wtol, _wtol_l | Microsoft Docs
-ms.custom: ''
+title: atol, _atol_l, _wtol, _wtol_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - atol
 - _wtol_l
@@ -31,8 +27,6 @@ f1_keywords:
 - _wtol
 - _ttol
 - _wtol_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - tstol function
 - atol function
@@ -49,20 +43,16 @@ helpviewer_keywords:
 - wtol function
 - _wtol function
 ms.assetid: cedfc21c-2d64-4e9c-bd04-bdf60b12db46
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: deb23d856fc0ec5aecfdb726256394d5135a18d4
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 486b6dc3bdfbbaf4b7becadde76768a0bb1c7c00
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34450712"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537195"
 ---
 # <a name="atol-atoll-wtol-wtoll"></a>atol, _atol_l, _wtol, _wtol_l
 
-Bir dize uzun bir tamsayıya dönüştürür.
+Bir dizeyi, uzun bir tamsayıya dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -86,32 +76,32 @@ long _wtol_l(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Dönüştürülecek dizesi.
+Dönüştürülecek dize.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her işlevi döndürür **uzun** değeri bir sayı olarak giriş karakter yorumlama tarafından üretilen. Dönüş değeri için 0 L mi **atol** giriş türü değerine döndürülemezse.
+Her işlev **uzun** değeri, giriş karakterlerinin sayı olarak yorumlanmasıyla üretilen. Dönüş değeri için 0 L değeridir **atol** giriş türü değerine döndürülemezse.
 
-Taşma büyük pozitif tamsayı değer ile söz konusu olduğunda **atol** döndürür **LONG_MAX**; taşma büyük negatif tamsayı değer ile söz konusu olduğunda **long_mın** olduğu döndürdü. Tüm aralık dışı durumlarda **errno** ayarlanır **ERANGE**. Geçirilen parametre ise **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve 0 döndürür.
+Büyük pozitif tamsayı değerleri içeren taşma durumunda **atol** döndürür **LONG_MAX**; büyük negatif tam sayı değerleri içeren taşma durumunda **long_mın** olduğu döndürdü. Tüm aralık dışı durumlarda **errno** ayarlanır **ERANGE**. Parametre geçirilen ise **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ve 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin bir karakter dizesi uzun tamsayı değerine dönüştürür (**atol**).
+Bu işlevler bir karakter dizesi uzun tamsayı değerine dönüştürür (**atol**).
 
-Giriş dizesi belirtilen türde bir sayısal değer yorumlanan karakterden oluşan bir dizidir. İşlevi, giriş dizesi bir sayı bir parçası olarak tanıyamıyor ilk karakterinde okuma durdurur. Bu karakteri ('\0' veya '\0' L) null karakter olabilir dize sonlandırılıyor.
+Giriş dizesi belirtilen türde bir sayısal değer olarak yorumlanabilecek bir karakter dizisi ' dir. İşlev bir sayının parçası olarak tanıyamadığı ilk karakterde giriş dizesini okumayı durdurur. Bu karakteri null karakteri ('\0' veya '\0' L) olabilir. dize sonlandırılıyor.
 
 *Str* bağımsız değişkeni **atol** aşağıdaki biçime sahiptir:
 
 > [*boşluk*] [*oturum*] [*basamak*]]
 
-A *boşluk* , göz ardı edilir; boşluk veya sekmesinde karakterlerden oluşur *oturum* da artı (+) veya eksi (-); ve *basamak* bir veya daha fazla basamakların.
+A *boşluk* yoksayılan boşluk veya sekme karakterlerinden oluşur *oturum* ya da artı (+) veya eksidir (–); ve *basamak* bir veya daha fazla rakamdır.
 
-**_wtol** aynıdır **atol** dışında uluslararası karakter dizesini alır.
+**_wtol** aynıdır **atol** dışında bir geniş karakter dizesi alır.
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli yerel yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -122,14 +112,14 @@ Bu işlevleri sürümlerini **_l** soneki, geçerli yerel yerine geçirilen yere
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordamları|Gerekli başlık|
+|Rutinleri|Gerekli başlık|
 |--------------|---------------------|
 |**atol**|\<stdlib.h >|
 |**_atol_l**, **_wtol**, **_wtol_l**|\<stdlib.h > ve \<wchar.h >|
 
 ## <a name="example"></a>Örnek
 
-Bu program, dize olarak depolanan sayılar kullanarak sayısal değerleri nasıl dönüştürülebilir gösterir **atol** işlevi.
+Bu program, dizeler olarak saklanan numaralarını kullanarak sayısal değerleri nasıl dönüştürülebilir gösterir **atol** işlevi.
 
 ```C
 // crt_atol.c

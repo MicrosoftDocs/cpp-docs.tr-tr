@@ -1,28 +1,18 @@
 ---
-title: ATL genel değişkenler | Microsoft Docs
-ms.custom: ''
+title: ATL genel değişkenler
 ms.date: 12/06/2017
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - ATLBASE/_pAtlModule
-dev_langs:
-- C++
 helpviewer_keywords:
 - global variables, ATL
 - _pAtlModule
 ms.assetid: e881a319-99ca-4f5d-8a0b-34b3dcd0f37f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2d33c2a3de5b94f522833db67dfb190ede3a8a63
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4f98b31d2454b7c6e903e5b5b87bceb4ddcb6961
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054965"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498325"
 ---
 # <a name="atl-global-variables"></a>ATL genel değişkenler
 

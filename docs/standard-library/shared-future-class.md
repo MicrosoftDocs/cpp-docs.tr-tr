@@ -1,10 +1,6 @@
 ---
-title: shared_future sınıfı | Microsoft Docs
-ms.custom: ''
+title: shared_future Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - future/std::shared_future
 - future/std::shared_future::shared_future
@@ -13,11 +9,7 @@ f1_keywords:
 - future/std::shared_future::wait
 - future/std::shared_future::wait_for
 - future/std::shared_future::wait_until
-dev_langs:
-- C++
 ms.assetid: 454ebedd-f42b-405f-99a5-a25cc9ad7c90
-author: corob-msft
-ms.author: corob
 helpviewer_keywords:
 - std::shared_future [C++]
 - std::shared_future [C++], shared_future
@@ -26,14 +18,12 @@ helpviewer_keywords:
 - std::shared_future [C++], wait
 - std::shared_future [C++], wait_for
 - std::shared_future [C++], wait_until
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c3f59bcb792d17f031b7a8ce7363158630d87506
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 2280c17c4ce58fe06365c107ad26d646c7ae2d72
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100786"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575636"
 ---
 # <a name="sharedfuture-class"></a>shared_future Sınıfı
 

@@ -1,31 +1,21 @@
 ---
-title: CD2DBrushProperties sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DBrushProperties sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DBrushProperties
 - AFXRENDERTARGET/CD2DBrushProperties
 - AFXRENDERTARGET/CD2DBrushProperties::CD2DBrushProperties
 - AFXRENDERTARGET/CD2DBrushProperties::CommonInit
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DBrushProperties [MFC], CD2DBrushProperties
 - CD2DBrushProperties [MFC], CommonInit
 ms.assetid: c77d717f-0a16-4d74-b2ce-0ae1766ed6f9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c6268a4478fa361b521ac662852e62dd50c56621
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8fa93a6dda6b15b972ea399fc6522a8dec7c8de5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071816"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539028"
 ---
 # <a name="cd2dbrushproperties-class"></a>CD2DBrushProperties sınıfı
 

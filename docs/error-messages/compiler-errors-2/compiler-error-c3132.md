@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3132 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3132
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3132
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3132
 ms.assetid: d54a3d12-336a-4ed0-ad4e-43cddac33b5e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ffa46ef8e7f56d4be7ca88d2553623910cbcd43f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2b8edc506b6038ddec0ca265cafabbebf0428d1f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091653"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612994"
 ---
 # <a name="compiler-error-c3132"></a>Derleyici Hatası C3132
 

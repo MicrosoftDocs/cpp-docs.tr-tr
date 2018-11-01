@@ -1,27 +1,17 @@
 ---
-title: . ERRE | Microsoft Docs
-ms.custom: ''
+title: .ERRE
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .ERRE
-dev_langs:
-- C++
 helpviewer_keywords:
 - .ERRE directive
 ms.assetid: cfb5a4bb-4488-4101-bd06-63ba43b1473e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e1029e3f0d6c40b258a23bb03d29d71503a78b15
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 6e031b64aff2421b8908ed537b9c37e42b8ebc4c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678225"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526501"
 ---
 # <a name="erre"></a>.ERRE
 

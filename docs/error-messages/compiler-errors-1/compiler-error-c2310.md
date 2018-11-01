@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2310 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2310
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2310
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2310
 ms.assetid: 1969c682-b97e-43fb-b9a9-f783e7ff1710
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2eed6dfc8d12b7bec9bb3437a3213b3feeda480e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8bd885a730bfe4890e99fa9ec7beb83169aca4d9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099596"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560696"
 ---
 # <a name="compiler-error-c2310"></a>Derleyici Hatası C2310
 

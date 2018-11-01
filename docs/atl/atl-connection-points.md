@@ -1,27 +1,17 @@
 ---
-title: ATL bağlantı noktaları | Microsoft Docs
-ms.custom: ''
+title: ATL Bağlantı Noktaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - connections, connection points
 - ATL, connection points
 - connection points [C++], about connection points
 ms.assetid: 17d76165-5f83-4f95-b36d-483821c247a1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fe2cf03debbfd88f19ccc77d3922a9a5c50a50d2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5d203d228ed2171a901f65cd01af8bd0d9703517
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091276"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511598"
 ---
 # <a name="atl-connection-points"></a>ATL Bağlantı Noktaları
 

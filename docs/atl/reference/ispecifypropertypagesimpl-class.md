@@ -1,31 +1,21 @@
 ---
-title: Ispecifypropertypagesımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Ispecifypropertypagesımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - ISpecifyPropertyPagesImpl
 - ATLCOM/ATL::ISpecifyPropertyPagesImpl
 - ATLCOM/ATL::ISpecifyPropertyPagesImpl::GetPages
-dev_langs:
-- C++
 helpviewer_keywords:
 - property pages, CLSIDs associated with
 - ISpecifyPropertyPages
 - ISpecifyPropertyPagesImpl class
 ms.assetid: 4e4b9795-b656-4d56-9b8c-85941e7731f9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 86ad1f489553d1637683ac1310bfe2b9be04ffb0
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fcabbcd2d5977a28f46b3d8ebfc47e8fd978f3cf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064764"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50470794"
 ---
 # <a name="ispecifypropertypagesimpl-class"></a>Ispecifypropertypagesımpl sınıfı
 

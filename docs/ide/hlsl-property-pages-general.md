@@ -1,10 +1,6 @@
 ---
-title: 'HLSL özellik sayfaları: Genel | Microsoft Docs'
-ms.custom: ''
+title: 'HLSL Özellik Sayfaları: Genel'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.FXCompilerTool.ShaderModel
 - VC.Project.FXCompilerTool.PreprocessorDefinitions
@@ -13,19 +9,13 @@ f1_keywords:
 - VC.Project.FXCompilerTool.AdditionalIncludeDirectories
 - VC.Project.FXCompilerTool.DisableOptimizations
 - VC.Project.FXCompilerTool.EntryPointName
-dev_langs:
-- C++
 ms.assetid: 0e02f2a6-f123-43da-b04b-a0719a7c2b03
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f29228fb7744f93014ba35b75ed5a42d6531cd28
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 255cf2fb0879ca7a6af0a9bdb340f6a4d2434cb0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376999"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494529"
 ---
 # <a name="hlsl-property-pages-general"></a>HLSL Özellik Sayfaları: Genel
 

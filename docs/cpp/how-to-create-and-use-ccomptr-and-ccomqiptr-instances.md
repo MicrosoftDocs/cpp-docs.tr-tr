@@ -1,23 +1,15 @@
 ---
-title: 'Nasıl yapılır: CComPtr ve CComQIPtr örnekleri oluşturma ve kullanma | Microsoft Docs'
+title: 'Nasıl yapılır: CComPtr ve CComQIPtr Örnekleri Oluşturma ve Kullanma'
 ms.custom: how-to
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
 ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: b0356cfb-12cc-4ee8-b988-8311ed1ab5e0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 052f915f2626e7b9eeef6a762c52943083b955b8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8065e0b8782c1c28d83aa6fc9690150793fe51ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46072153"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518709"
 ---
 # <a name="how-to-create-and-use-ccomptr-and-ccomqiptr-instances"></a>Nasıl yapılır: CComPtr ve CComQIPtr Örnekleri Oluşturma ve Kullanma
 

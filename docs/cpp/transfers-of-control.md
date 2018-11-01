@@ -1,26 +1,16 @@
 ---
-title: Denetim taşıma | Microsoft Docs
-ms.custom: ''
+title: Denetim Taşıma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - control flow, branching
 - control flow, transferring control
 ms.assetid: aa51e7f2-060f-4106-b0fe-331f04357423
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2bd8542bf13aa34efea3ffad2007b0f5eb672f79
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1fc487628f26dcac097109bc71fa960e501d0797
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031424"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50469647"
 ---
 # <a name="transfers-of-control"></a>Denetim Taşıma
 

@@ -1,10 +1,6 @@
 ---
-title: texture_view sınıfı | Microsoft Docs
-ms.custom: ''
+title: texture_view Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - texture_view
 - AMP_GRAPHICS/texture_view
@@ -17,19 +13,13 @@ f1_keywords:
 - AMP_GRAPHICS/Concurrency::graphics::texture_view::sample
 - AMP_GRAPHICS/Concurrency::graphics::texture_view::set
 - AMP_GRAPHICS/Concurrency::graphics::texture_view::value_type
-dev_langs:
-- C++
 ms.assetid: 6ec2e289-1626-4727-9592-07981cf1d27d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e8a87c303d4527f89a7d7f59b69b3cc8572e0e7b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e7099c247a68823fbe5467f47c6afe1dc5a33abc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387413"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544462"
 ---
 # <a name="textureview-class"></a>texture_view Sınıfı
 

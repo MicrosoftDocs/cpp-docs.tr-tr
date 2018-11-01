@@ -1,28 +1,17 @@
 ---
-title: başvuru (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: başvuru (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.ref
-dev_langs:
-- C++
 helpviewer_keywords:
 - ref attribute
 ms.assetid: 67e82d3e-07d9-4ef8-bf2b-0a4491d12557
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 67e448b11daea3058eb7df63f914f64c98d57594
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c22d04f7a799ea720fb7d69ffc1aa21ddf9db55c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057263"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468438"
 ---
 # <a name="ref-c"></a>ref (C++)
 

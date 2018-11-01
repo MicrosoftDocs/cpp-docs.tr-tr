@@ -1,10 +1,6 @@
 ---
-title: COleDataObject sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleDataObject sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleDataObject
 - AFXOLE/COleDataObject
@@ -19,8 +15,6 @@ f1_keywords:
 - AFXOLE/COleDataObject::GetNextFormat
 - AFXOLE/COleDataObject::IsDataAvailable
 - AFXOLE/COleDataObject::Release
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleDataObject [MFC], COleDataObject
 - COleDataObject [MFC], Attach
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - COleDataObject [MFC], IsDataAvailable
 - COleDataObject [MFC], Release
 ms.assetid: d1cc84be-2e1c-4bb3-a8a0-565eb08aaa34
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 498b35f5894e1eeb4cf05110aa7a643df1f43fff
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 40c7d87e2dafa3c9b40e8ebda60b15a7b32709eb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392664"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540289"
 ---
 # <a name="coledataobject-class"></a>COleDataObject sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: CDynamicChain sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDynamicChain sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CDynamicChain
 - ATLWIN/ATL::CDynamicChain
@@ -12,23 +8,17 @@ f1_keywords:
 - ATLWIN/ATL::CDynamicChain::CallChain
 - ATLWIN/ATL::CDynamicChain::RemoveChainEntry
 - ATLWIN/ATL::CDynamicChain::SetChainEntry
-dev_langs:
-- C++
 helpviewer_keywords:
 - message maps, chaining
 - chaining message maps
 - CDynamicChain class
 ms.assetid: f084b2be-0e77-4836-973d-ae278a1e9da8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8a64a0c047c39b7c8e1f72a4762217af789481f2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 57bbd009bbcbe0ea3352ab27c5d6fbb630b7d050
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062879"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668019"
 ---
 # <a name="cdynamicchain-class"></a>CDynamicChain sınıfı
 

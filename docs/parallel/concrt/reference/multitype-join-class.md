@@ -1,10 +1,6 @@
 ---
-title: multitype_join sınıfı | Microsoft Docs
-ms.custom: ''
+title: multitype_join Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - multitype_join
 - AGENTS/concurrency::multitype_join
@@ -18,21 +14,15 @@ f1_keywords:
 - AGENTS/concurrency::multitype_join::reserve
 - AGENTS/concurrency::multitype_join::unlink_target
 - AGENTS/concurrency::multitype_join::unlink_targets
-dev_langs:
-- C++
 helpviewer_keywords:
 - multitype_join class
 ms.assetid: 236e87a0-4867-49fd-869a-bef4010e49a7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2e8a06068d7a9bec4fd828941da409780eeed457
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 2fd94ef072fcab9af076fcdfa1b5c094d77f89c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163672"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547413"
 ---
 # <a name="multitypejoin-class"></a>multitype_join Sınıfı
 

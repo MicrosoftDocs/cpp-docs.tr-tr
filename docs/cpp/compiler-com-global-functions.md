@@ -1,26 +1,16 @@
 ---
-title: Derleyici Global COM işlevleri | Microsoft Docs
-ms.custom: ''
+title: Derleyici Global COM İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - cl.exe compiler, COM support
 - COM, compiler support
 ms.assetid: 74449d26-50a2-47c7-b175-7cf2cf83533e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cb769cf1419f7a0142a5eeae348ca432f78fb92a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ac74270cd020aa66ccc14ff314a00b388a038086
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034147"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504441"
 ---
 # <a name="compiler-com-global-functions"></a>Derleyici Global COM İşlevleri
 

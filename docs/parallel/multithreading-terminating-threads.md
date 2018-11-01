@@ -1,14 +1,8 @@
 ---
-title: 'Çoklu iş parçacığı kullanımı: MFC iş parçacıklarını sonlandırma | Microsoft Docs'
-ms.custom: ''
+title: 'Çoklu iş parçacığı kullanımı: MFC iş parçacıklarını sonlandırma'
 ms.date: 08/27/2018
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
 f1_keywords:
 - CREATE_SUSPENDED
-dev_langs:
-- C++
 helpviewer_keywords:
 - premature thread termination
 - starting threads
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - stopping threads
 - AfxEndThread method
 ms.assetid: 4c0a8c6d-c02f-456d-bd02-0a8c8d006ecb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a8c9185b7c196917923a8242bbe3670d92ff1993
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c92d95bc2aa63d78c98d10e25de79344fe1ee0f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46406732"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484025"
 ---
 # <a name="multithreading-terminating-threads-in-mfc"></a>Çoklu iş parçacığı kullanımı: MFC iş parçacıklarını sonlandırma
 

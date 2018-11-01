@@ -1,41 +1,31 @@
 ---
-title: Özel durum işleme rutinleri | Microsoft Docs
-ms.custom: ''
+title: Özel Durum İşleme Rutinleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.exceptions
-dev_langs:
-- C++
 helpviewer_keywords:
 - exception handling, routines
 ms.assetid: f60548c6-850a-4e1e-a79b-a2a6a541ab62
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eea92c5bfdb54b6c15ae2ae643b2d23b397a3bf6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 09d58e49d3c9dc9b4b8ef40f725e927603e3e47c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389081"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50507464"
 ---
 # <a name="exception-handling-routines"></a>Özel Durum İşleme Rutinleri
 
-Program yürütülmesi sırasında beklenmeyen olaylarından kurtarmak için C++ özel durum işleme işlevlerini kullanın.
+Program yürütülmesi sırasında beklenmedik olaylardan kurtarmaya için C++ özel durum işleme işlevlerini kullanın.
 
 ## <a name="exception-handling-functions"></a>Özel durum işleme işlevleri
 
 |İşlev|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
 |--------------|---------|
-|[_set_se_translator](../c-runtime-library/reference/set-se-translator.md)|Win32 işlemek özel durumlar (C yapılandırılmış özel durum) C++ olarak yazılan özel durumlar|
-|[set_terminate](../c-runtime-library/reference/set-terminate-crt.md)|Kendi sonlandırma yordamı çağrılacak yüklemek **Sonlandır**|
-|[set_unexpected](../c-runtime-library/reference/set-unexpected-crt.md)|Çağrılacak kendi sonlandırma işlev yüklemek **beklenmeyen**|
-|[Sonlandırma](../c-runtime-library/reference/terminate-crt.md)|Özel durum oluşturulduktan sonra otomatik olarak belirli koşullar altında çağrılır. **Sonlandırmak** işlev çağrıları **abort** veya işlev kullanarak belirtin **set_terminate**|
-|[beklenmeyen](../c-runtime-library/reference/unexpected-crt.md)|Çağrıları **sonlandırmak** veya işlev kullanarak belirtin **set_unexpected**. **Beklenmeyen** işlevi, geçerli Microsoft C++ özel durum işleme uygulamasında kullanılamıyor|
+|[_set_se_translator](../c-runtime-library/reference/set-se-translator.md)|Win32 işlemek özel durumlar (C yapısal özel durumlarını) C++ olarak belirlenmiş özel durumlar|
+|[set_terminate](../c-runtime-library/reference/set-terminate-crt.md)|Kendi sonlandırma yordamı çağrılacak yükleme **Sonlandır**|
+|[set_unexpected](../c-runtime-library/reference/set-unexpected-crt.md)|Kendi sonlandırma işlevi çağrılacak yükleme **beklenmeyen**|
+|[sonlandırma](../c-runtime-library/reference/terminate-crt.md)|Özel durum oluştuktan sonra belirli koşullar altında otomatik olarak çağrılır. **Sonlandırmak** işlev çağrılarında **iptal** veya bir işlevi kullanarak, belirttiğiniz **set_terminate**|
+|[beklenmeyen](../c-runtime-library/reference/unexpected-crt.md)|Çağrıları **sonlandırmak** veya bir işlevi kullanarak, belirttiğiniz **set_unexpected**. **Beklenmeyen** işlevi, geçerli Microsoft C++ özel durum işleme uygulaması kullanılamıyor|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

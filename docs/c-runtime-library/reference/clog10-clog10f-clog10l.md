@@ -1,11 +1,6 @@
 ---
-title: clog10, clog10f, clog10l | Microsoft Docs
-ms.custom: ''
+title: clog10, clog10f, clog10l
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - clog10
 - clog10f
@@ -30,27 +25,21 @@ f1_keywords:
 - complex/clog10
 - complex/clog10f
 - complex/clog10l
-dev_langs:
-- C++
 helpviewer_keywords:
 - clog10 function
 - clog10f function
 - clog10l function
 ms.assetid: 2ddae00d-ef93-4441-add3-f4d58358401b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 81b082aff192a866ec46d22120806e6ba89379d2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 195f4be80f0320e83cc9455a598185ce281bbf59
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394687"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506918"
 ---
 # <a name="clog10-clog10f-clog10l"></a>clog10, clog10f, clog10l
 
-Karmaşık bir sayının 10 tabanında logaritmasını alır.
+Karmaşık bir sayının 10 tabanındaki logaritmasını alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,7 +65,7 @@ Olası dönüş değerleri şunlardır:
 
 |z parametresi|Dönüş değeri|
 |-----------------|------------------|
-|Pozitif|Z 10 tabanında logaritmasını|
+|Pozitif|Z 10 tabanındaki logaritmasını|
 |Sıfır|- ∞|
 |Negatif|NaN|
 |NaN|NaN|
@@ -84,15 +73,15 @@ Olası dönüş değerleri şunlardır:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **clog10** alın ve dönüş **_Fcomplex** ve **_Lcomplex** değerleri. Bir C programı **clog10** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **clog10** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **clog10** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**clog10**, **clog10f**, **clogl**|\<Complex.h >|\<ccomplex >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

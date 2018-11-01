@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3200 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3200
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3200
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3200
 ms.assetid: 44bb5e77-f0ec-421c-a732-b9ee7c0a3529
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 77be23b92d5237d2fa65557bdf36de31cd27d9d3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7eb0c00f4f4c5c59766bf305acfef89e12a6cfb1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062650"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505072"
 ---
 # <a name="compiler-error-c3200"></a>Derleyici Hatası C3200
 

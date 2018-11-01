@@ -1,23 +1,13 @@
 ---
-title: C.1 gösterim | Microsoft Docs
-ms.custom: ''
+title: C.1 Gösterim
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: a23b2631-8096-4bf3-ac23-ba4f4bd7a52a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4bbb3190dd5aa32315cd8f402f92fd94893b4b27
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 593450b6dd7dcb30adbf8546ad96ff716c6fbc1c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46411878"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473989"
 ---
 # <a name="c1-notation"></a>C.1 Gösterim
 

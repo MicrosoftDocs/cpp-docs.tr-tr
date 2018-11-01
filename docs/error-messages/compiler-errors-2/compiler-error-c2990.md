@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2990 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2990
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2990
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2990
 ms.assetid: 674e9f6a-6743-4af0-a7ed-cbe11103a2f8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c0afceb82a58ee5c0a21e39fcaf4ba0a9ee9f2c4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f7327b7d2b0cc9fa4b617a9a6033116c43db6258
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066979"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528681"
 ---
 # <a name="compiler-error-c2990"></a>Derleyici Hatası C2990
 

@@ -1,12 +1,6 @@
 ---
-title: Yıkıcılar (C++) | Microsoft Docs
-ms.custom: ''
+title: Yıkıcılar (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - objects [C++], destroying
 - Visual C++, destructors
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - destructors, about destructors
 - destructors, C++
 ms.assetid: afa859b0-f3bc-4c4d-b250-c68b335b6004
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8b16230d612ea7304e8bc06a9810838ce3f42ac8
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 5c56a6ffc43f8fa00ffd540a5922d8ac279475ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39405655"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586023"
 ---
 # <a name="destructors-c"></a>Yıkıcılar (C++)
 

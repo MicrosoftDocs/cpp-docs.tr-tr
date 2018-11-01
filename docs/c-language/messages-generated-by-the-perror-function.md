@@ -1,23 +1,13 @@
 ---
-title: Perror işlevi tarafından oluşturulan iletileri | Microsoft Docs
-ms.custom: ''
+title: perror İşlevinin Ürettiği İletiler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: ec560a55-adf2-4959-9ebf-9ac4e58ab3b5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e32dbc6d02e21c336004a19bdb168541ed3a6c32
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: aee7e307f7d4d1db993afe11f72291d3862db791
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082124"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545866"
 ---
 # <a name="messages-generated-by-the-perror-function"></a>perror İşlevinin Ürettiği İletiler
 

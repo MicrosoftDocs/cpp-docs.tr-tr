@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2093 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2093
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2093
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2093
 ms.assetid: 17529a70-9169-46b5-9fc6-57a5ce224e6a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 952391b1fbe0820175566cecd74156b9a55ef4b8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d57b452e63f7bf76051ef6a23c5f8f6ba81aed1e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055851"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511156"
 ---
 # <a name="compiler-error-c2093"></a>Derleyici Hatası C2093
 

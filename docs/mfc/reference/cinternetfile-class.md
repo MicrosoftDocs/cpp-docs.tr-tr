@@ -1,10 +1,6 @@
 ---
-title: Cınternetfile sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cınternetfile sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CInternetFile
 - AFXINET/CInternetFile
@@ -21,8 +17,6 @@ f1_keywords:
 - AFXINET/CInternetFile::Write
 - AFXINET/CInternetFile::WriteString
 - AFXINET/CInternetFile::m_hFile
-dev_langs:
-- C++
 helpviewer_keywords:
 - CInternetFile [MFC], CInternetFile
 - CInternetFile [MFC], Abort
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - CInternetFile [MFC], WriteString
 - CInternetFile [MFC], m_hFile
 ms.assetid: 96935681-ee71-4a8d-9783-5abc7b3e6f10
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e5a26b38943d6fe76031d85cc68fd705e0d739c8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 309d4210f72f7ecd83ed6a8eb79874a1c8170d59
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072003"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586881"
 ---
 # <a name="cinternetfile-class"></a>Cınternetfile sınıfı
 

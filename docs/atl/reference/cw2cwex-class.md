@@ -1,30 +1,20 @@
 ---
-title: CW2CWEX sınıfı | Microsoft Docs
-ms.custom: ''
+title: CW2CWEX sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CW2CWEX
 - ATLCONV/ATL::CW2CWEX
 - ATLCONV/ATL::CW2CWEX::CW2CWEX
 - ATLCONV/ATL::CW2CWEX::m_psz
-dev_langs:
-- C++
 helpviewer_keywords:
 - CW2CWEX class
 ms.assetid: d654b22b-05a6-410f-a0ec-9a2cbbb4cca7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b45945a0f91570d78d8c1e365fd70240c2385b3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 22b031ee83e6c0e01401f6d5ed19d83532443b64
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116808"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556951"
 ---
 # <a name="cw2cwex-class"></a>CW2CWEX sınıfı
 

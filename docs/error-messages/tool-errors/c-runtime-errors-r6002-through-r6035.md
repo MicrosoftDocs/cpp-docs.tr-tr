@@ -1,25 +1,15 @@
 ---
-title: C çalışma zamanı hataları R6002 ile r6035 arasındaki | Microsoft Docs
-ms.custom: ''
+title: C çalışma zamanı hataları R6002 ile r6035 arasındaki
 ms.date: 11/17/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - c.errors
-dev_langs:
-- C++
 ms.assetid: 78019050-9a30-4b61-8250-a5702e0e2393
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c987b2ee09cdd701cb606e45a9525e827e0db90a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 06d1885d01b5b3808a150e54ac68257b747c9764
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46042968"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530947"
 ---
 # <a name="c-runtime-errors-r6002-through-r6035"></a>C çalışma zamanı hataları R6002 ile r6035 arasındaki
 

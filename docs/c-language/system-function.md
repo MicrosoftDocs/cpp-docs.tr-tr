@@ -1,25 +1,15 @@
 ---
-title: System işlevi | Microsoft Docs
-ms.custom: ''
+title: system İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - system function
 ms.assetid: 0786ccdc-20cd-4d96-b3d8-3230507c3066
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: edb78056e5152485677a14a934c5dcbbc464d862
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: db38a9407aa75988779b8a930ac2ccd99c98d1b4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098441"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520191"
 ---
 # <a name="system-function"></a>system İşlevi
 

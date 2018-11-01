@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1902 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1902
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1902
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1902
 ms.assetid: 2dc066cc-fcb1-4725-8bcb-9f44dd0905b7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e5a443b5f80eabe9691cf8ff5220bb9b66da51e4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c425430a6d08ae8a97c4dcd0f5764f44dee43e5f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052575"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50488913"
 ---
 # <a name="fatal-error-c1902"></a>Önemli hata C1902
 

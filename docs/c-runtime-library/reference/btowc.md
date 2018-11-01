@@ -1,10 +1,6 @@
 ---
-title: btowc | Microsoft Docs
-ms.custom: ''
+title: btowc
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - btowc
 apilocation:
@@ -22,25 +18,19 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - btowc
-dev_langs:
-- C++
 helpviewer_keywords:
 - btowc function
 ms.assetid: 99a46e02-6f86-4569-af79-5feca012add8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4d0e56649218e6249550638af4e198cbd1284bc2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 399f56fe133a9f67ed457b435ae6c0496e1ecaa5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393322"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514688"
 ---
 # <a name="btowc"></a>btowc
 
-Tamsayı ilk kaydırma durumda geçerli bir tek baytlı karakter temsil edip etmediğini belirler.
+Geçerli bir tek baytlı karakter ilk shift durumunda bir tamsayı temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,11 +43,11 @@ wint_t btowc(
 ### <a name="parameters"></a>Parametreler
 
 *Karakter*<br/>
-Test etmek için bir tamsayı.
+Test edilecek tamsayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bir tek baytlı karakter ilk kaydırma durumda tamsayı temsil ediyorsa karakter joker karakter gösterimini döndürür. Tamsayı EOF ya da geçerli bir tek baytlı karakter ilk kaydırma durumda değil ise WEOF döndürür. Bu işlev çıktısını geçerli tarafından etkilenen **LC_TYPE** yerel ayar.
+Geçerli bir tek baytlı karakter ilk shift durumunda tamsayıyı temsil ediyorsa karakterinin geniş karakter gösterimi döndürür. Tamsayı EOF veya geçerli bir tek baytlı karakter ilk shift durumunda değil WEOF döndürür. Bu işlevin çıktısı geçerli tarafından etkilenir **LC_TYPE** yerel ayar.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -65,7 +55,7 @@ Geçerli bir tek baytlı karakter ilk kaydırma durumda tamsayı temsil ediyorsa
 |-------------|---------------------|
 |**btowc**|\<stdio.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

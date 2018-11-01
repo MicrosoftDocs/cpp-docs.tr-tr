@@ -1,28 +1,18 @@
 ---
-title: remove_const sınıfı | Microsoft Docs
-ms.custom: ''
+title: remove_const Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::remove_const
-dev_langs:
-- C++
 helpviewer_keywords:
 - remove_const class
 - remove_const
 ms.assetid: feb76fb3-9228-41d6-80f6-2fbb04daec43
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5b078594f1871a668bb397331cd0b53d6193ef2a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 04f7c6475d88f843ef381563f80559529e6b59e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106606"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477187"
 ---
 # <a name="removeconst-class"></a>remove_const Sınıfı
 

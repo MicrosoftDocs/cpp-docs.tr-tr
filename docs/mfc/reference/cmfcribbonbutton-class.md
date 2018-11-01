@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonButton sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonButton sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonButton
 - AFXRIBBONBUTTON/CMFCRibbonButton
@@ -62,8 +58,6 @@ f1_keywords:
 - AFXRIBBONBUTTON/CMFCRibbonButton::SetRightAlignMenu
 - AFXRIBBONBUTTON/CMFCRibbonButton::SetText
 - AFXRIBBONBUTTON/CMFCRibbonButton::OnClick
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonButton [MFC], CMFCRibbonButton
 - CMFCRibbonButton [MFC], AddSubItem
@@ -120,16 +114,12 @@ helpviewer_keywords:
 - CMFCRibbonButton [MFC], SetText
 - CMFCRibbonButton [MFC], OnClick
 ms.assetid: 732e941c-9504-4b83-a691-d18075965d53
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2d235fbcf1b78a0a3c167632c7b0a2f13ead1fc3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 743390955c583a130b53b9e80acd2b01d9742e1e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077588"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550390"
 ---
 # <a name="cmfcribbonbutton-class"></a>CMFCRibbonButton sınıfı
 

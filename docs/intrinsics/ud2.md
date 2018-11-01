@@ -1,28 +1,18 @@
 ---
-title: __ud2 | Microsoft Docs
-ms.custom: ''
+title: __ud2
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __ud2
-dev_langs:
-- C++
 helpviewer_keywords:
 - UD2 instruction
 - __ud2 intrinsic
 ms.assetid: 0831cd5a-8b65-402e-bb57-11e1d5d7ffd2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b001bb4d8ad9f1b4895147e0507ea3b6fda97ee5
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: dd876f26349c39e0af0d2e0f100fb4e13efa50f4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48820717"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666550"
 ---
 # <a name="ud2"></a>__ud2
 

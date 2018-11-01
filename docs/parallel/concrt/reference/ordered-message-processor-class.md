@@ -1,10 +1,6 @@
 ---
-title: ordered_message_processor sınıfı | Microsoft Docs
-ms.custom: ''
+title: ordered_message_processor Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - ordered_message_processor
 - AGENTS/concurrency::ordered_message_processor
@@ -15,21 +11,15 @@ f1_keywords:
 - AGENTS/concurrency::ordered_message_processor::sync_send
 - AGENTS/concurrency::ordered_message_processor::wait
 - AGENTS/concurrency::ordered_message_processor::process_incoming_message
-dev_langs:
-- C++
 helpviewer_keywords:
 - ordered_message_processor class
 ms.assetid: 787adfb7-7f79-4a70-864a-80e3b64088cd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5d9340da3665135fc05182bdd6aa6d26c4e2cd76
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c6e09ff862f0725cc508e3e390dbfa3cc12f7daa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445886"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545970"
 ---
 # <a name="orderedmessageprocessor-class"></a>ordered_message_processor Sınıfı
 

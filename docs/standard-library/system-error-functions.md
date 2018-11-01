@@ -1,8 +1,6 @@
 ---
-title: '&lt;system_error&gt; işlevleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;system_error&gt; işlevleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - system_error/std::generic_category
 - system_error/std::make_error_code
@@ -14,12 +12,12 @@ helpviewer_keywords:
 - std::make_error_code
 - std::make_error_condition
 - std::system_category
-ms.openlocfilehash: 838a63fc43ef71561c0911cfa4c85c76cf04bc08
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 24890830456e3c1026b02960aa650a43da3b6067
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959671"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554406"
 ---
 # <a name="ltsystemerrorgt-functions"></a>&lt;system_error&gt; işlevleri
 

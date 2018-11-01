@@ -1,23 +1,13 @@
 ---
-title: 2.6.5 flush yönergesi | Microsoft Docs
-ms.custom: ''
+title: 2.6.5 flush Yönergesi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: a2ec5f74-9c37-424a-8376-47ab4a5829a2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d67453b636d50fcb78092318ebb76f5192817548
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7aca747a3d9645be4f9888b072127dc3040280fb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442740"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660089"
 ---
 # <a name="265-flush-directive"></a>2.6.5 flush Yönergesi
 

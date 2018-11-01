@@ -1,10 +1,6 @@
 ---
-title: COleConvertDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleConvertDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleConvertDialog
 - AFXODLGS/COleConvertDialog
@@ -16,8 +12,6 @@ f1_keywords:
 - AFXODLGS/COleConvertDialog::GetIconicMetafile
 - AFXODLGS/COleConvertDialog::GetSelectionType
 - AFXODLGS/COleConvertDialog::m_cv
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleConvertDialog [MFC], COleConvertDialog
 - COleConvertDialog [MFC], DoConvert
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - COleConvertDialog [MFC], GetSelectionType
 - COleConvertDialog [MFC], m_cv
 ms.assetid: a7c57714-31e8-4b78-834d-8ddd1b856a1c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b1ff8047e6d7291fe55619d8b0a3eabb877b728a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e1e13f96eb90c81127723afcacf463478b75a894
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436555"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569760"
 ---
 # <a name="coleconvertdialog-class"></a>COleConvertDialog sınıfı
 

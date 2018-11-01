@@ -1,10 +1,6 @@
 ---
-title: wstring_convert sınıfı | Microsoft Docs
-ms.custom: ''
+title: wstring_convert Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - wstring/stdext::cvt::wstring_convert
 - locale/std::wstring_convert::byte_string
@@ -15,8 +11,6 @@ f1_keywords:
 - locale/std::wstring_convert::to_bytes
 - locale/std::wstring_convert::converted
 - locale/std::wstring_convert::state
-dev_langs:
-- C++
 helpviewer_keywords:
 - stdext::cvt [C++], wstring_convert
 - std::wstring_convert [C++], byte_string
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - std::wstring_convert [C++], converted
 - std::wstring_convert [C++], state
 ms.assetid: e34f5b65-d572-4bdc-ac69-20778712e376
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c56f9ea0770618e65f454acd23ea22f19d3cfa92
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: df3b003289dcd86e8033521d8cb0cacdbb7dfbd8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711106"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636962"
 ---
 # <a name="wstringconvert-class"></a>wstring_convert Sınıfı
 

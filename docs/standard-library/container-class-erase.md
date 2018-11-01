@@ -1,30 +1,20 @@
 ---
-title: Kapsayıcı sınıfı::ERASE | Microsoft Docs
-ms.custom: ''
+title: Kapsayıcı Sınıfı::erase
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - erase method
 ms.assetid: abc091c5-5a80-4bd8-93a8-a2d9bde2efec
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 368b722f03a68445ddd016705aa8bebc6f33e6f5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 11e13fc74de779076b40ba338a21a6736eb04e06
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842618"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553029"
 ---
 # <a name="container-classerase"></a>Kapsayıcı Sınıfı::erase
 
 > [!NOTE]
-> Bu konu, Visual C++ belge C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsel bir örnek olarak kullanılıyor. Daha fazla bilgi için bkz: [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
 Bir öğeyi siler.
 
@@ -42,9 +32,9 @@ iterator erase(
 
 ## <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi gösterdiği denetimli sırasının öğeyi kaldırır *_Where*. İkinci üye işlevi denetlenen sıradaki aralığında kaldırır [`first`, `last`). Her ikisi de kaldırıldı, herhangi bir öğenin dışında kalan ilk öğe atayan bir yineleyici dönün veya [son](../standard-library/container-class-end.md) böyle bir öğe varsa.
+İlk üye işlevi tarafından denetlenen dizinin öğeyi kaldırır *_Where*. İkinci üye işlevi öğeleri denetlenen dizinin aralıktaki kaldırır. [`first`, `last`). Hem kaldırılan tüm öğelerin ötesindeki ilk öğeyi belirleyen bir yineleyici döndürür veya [son](../standard-library/container-class-end.md) böyle bir öğe varsa.
 
-Yalnızca bir kopyalama işlemi bir özel durum oluşturursa üye işlevleri bir özel durum.
+Yalnızca bir kopyalama işlemi bir özel durum oluşturursa, üye işlevleri bir özel durum.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

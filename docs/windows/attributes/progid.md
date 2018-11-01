@@ -1,28 +1,17 @@
 ---
-title: ProgID (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: ProgID (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.progid
-dev_langs:
-- C++
 helpviewer_keywords:
 - progid attribute
 ms.assetid: afcf559c-e432-481f-aa9a-bd3bb72c02a8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 239f50011c91320c2b5e0a96449139e8eeab10ff
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: cb4802fbf4d647f11298848e3dac1b1d92300ce8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072870"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654746"
 ---
 # <a name="progid"></a>progid
 

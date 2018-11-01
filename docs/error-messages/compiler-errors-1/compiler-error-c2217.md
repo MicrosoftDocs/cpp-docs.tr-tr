@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2217 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2217
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2217
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2217
 ms.assetid: 1ce1e3f5-4171-4376-804d-967f7e612935
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a4eb8b9fcaffa30f3a5ced5362a0f9d54a45f07e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f178f969afa189910c9d23d70226ecc6c15876a4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050625"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50507555"
 ---
 # <a name="compiler-error-c2217"></a>Derleyici Hatası C2217
 

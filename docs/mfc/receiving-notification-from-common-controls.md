@@ -1,15 +1,9 @@
 ---
-title: Ortak denetimlerden bildirim alma | Microsoft Docs
-ms.custom: ''
+title: Ortak Denetimlerden Bildirim Alma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - ON_NOTIFY
 - WM_NOTIFY
-dev_langs:
-- C++
 helpviewer_keywords:
 - OnNotify method [MFC]
 - common controls [MFC], notifications
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - Windows common controls [MFC], notifications
 - WM_NOTIFY message
 ms.assetid: 50194592-d60d-44d0-8ab3-338a2a2c63e7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 25979ec1157a4d2beedf96875e6c8c270b3aaaa9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8813a7f86bde417b48d5ab2d943d296efef5e91c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442389"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542655"
 ---
 # <a name="receiving-notification-from-common-controls"></a>Ortak Denetimlerden Bildirim Alma
 

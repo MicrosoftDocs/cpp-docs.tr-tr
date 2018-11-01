@@ -1,26 +1,16 @@
 ---
-title: (Yalnızca C++) Kaydedici koduna statik bağlantı ayarlama | Microsoft Docs
-ms.custom: ''
+title: (Yalnızca C++) Kaydedici koduna statik bağlantı ayarlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - statically linking to ATL Registrar code
 - linking [C++], to ATL Registrar code
 ms.assetid: 835f5885-87a6-48fa-91e6-60988ee65538
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3bde1d369ce5339f07ea36979ef50ddccb0d30d1
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: e5f09ce4626e030c43ecc30ca44d1ac738341c6c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860283"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557423"
 ---
 # <a name="setting-up-a-static-link-to-the-registrar-code-c-only"></a>(Yalnızca C++) Kaydedici koduna statik bağlantı ayarlama
 

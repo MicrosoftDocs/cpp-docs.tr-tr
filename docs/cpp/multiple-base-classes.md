@@ -1,28 +1,18 @@
 ---
-title: Birden çok taban sınıfı | Microsoft Docs
-ms.custom: ''
+title: Birden Çok Taban Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - base classes [C++], multiple
 - derived classes [C++], multiple bases
 - multiple inheritance, class declaration
 - multiple base classes [C++]
 ms.assetid: a30c69fe-401c-4a87-96a0-e0da70c7c740
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1b0dd2da0da84b6705fc1fdef2858cd45f181910
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fbbe6d6194b878b4851cbde84b55d71b9e4fc02c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46113948"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50483466"
 ---
 # <a name="multiple-base-classes"></a>Birden Çok Taban Sınıfı
 

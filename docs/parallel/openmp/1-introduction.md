@@ -1,23 +1,13 @@
 ---
-title: 1. Giriş | Microsoft Docs
-ms.custom: ''
+title: 1. Giriş
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: c42e72bc-0e31-4b1c-b670-cd82673c0c5a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ce963d312d145e26567a5902f32e45735eb1d89
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b365ff828fd7dc2b7d9d3136a4fbfb68c43902ce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438424"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554719"
 ---
 # <a name="1-introduction"></a>1. Giriş
 

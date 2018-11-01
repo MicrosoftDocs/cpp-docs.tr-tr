@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4079 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4079
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4079
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4079
 ms.assetid: 549759f0-e168-47e9-8c9a-de93ac843689
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7de3eca54ddadd5c7a1687d4f7ebc5f6359a464e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8f9a9e05ab2a65ad954f9928f7b9fab0e7fee9cc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46074018"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564573"
 ---
 # <a name="compiler-warning-level-1-c4079"></a>Derleyici Uyarısı (düzey 1) C4079
 

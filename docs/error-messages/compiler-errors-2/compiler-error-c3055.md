@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3055 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3055
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3055
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3055
 ms.assetid: 60446ee0-18dd-48fc-9059-f0a14229dce8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6fa27d9c6230c2cdebae4f718904ddd7cc1a7208
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2a770709b4958f446e8e5a64b245f2932f99460f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111088"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540978"
 ---
 # <a name="compiler-error-c3055"></a>Derleyici Hatası C3055
 

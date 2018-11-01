@@ -1,28 +1,18 @@
 ---
-title: ATL Basit Nesne Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: ATL Basit Nesne Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.atl.simple.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL projects, adding objects
 - ATL Simple Object Wizard
 ms.assetid: f7f85741-9aad-4543-a917-a29b996364da
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 871e27b4a28299e6a3c96f7249f4636f412001d8
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 7b1d83e74c08f8cb0109c6e5db19ba0e4ebeda6e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723625"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522498"
 ---
 # <a name="atl-simple-object-wizard"></a>ATL Basit Nesne Sihirbazı
 

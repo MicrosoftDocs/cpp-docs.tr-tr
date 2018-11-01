@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4690 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4690
 ms.date: 07/03/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4690
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4690
 ms.assetid: 080a0ea1-458b-477b-a37a-4a34c94709ff
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 04fb68bdab762f0f541849fad1568caff836b623
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: c7facdde54b44ba2ce07db0447b251d7014f76c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853328"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518488"
 ---
 # <a name="compiler-warning-level-4-c4690"></a>Derleyici Uyarısı (düzey 4) C4690
 

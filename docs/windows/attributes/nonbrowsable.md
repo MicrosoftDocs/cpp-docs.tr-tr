@@ -1,28 +1,17 @@
 ---
-title: nonbrowsable (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: nonbrowsable (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.nonbrowsable
-dev_langs:
-- C++
 helpviewer_keywords:
 - nonbrowsable attribute
 ms.assetid: e71a98e7-4b65-454a-9829-342b9f2a84be
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 276d6f2ac0ef9cfeb6c5fe7645dc2e6bf7a2fd11
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 34b3c93b60009284897c4b7c1c29ceb4fefa2c49
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052341"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592640"
 ---
 # <a name="nonbrowsable"></a>nonbrowsable
 

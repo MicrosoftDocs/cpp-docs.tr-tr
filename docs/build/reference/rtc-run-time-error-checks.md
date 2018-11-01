@@ -1,18 +1,12 @@
 ---
-title: -RTC (çalışma zamanı hata denetimleri) | Microsoft Docs
-ms.custom: ''
+title: /RTC (Çalışma Zamanı Hata Denetimleri)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /rtc
 - VC.Project.VCCLCompilerTool.SmallerTypeCheck
 - VC.Project.VCCLCompilerTool.UninitializedVariableCheck
 - VC.Project.VCCLCompilerTool.StackFrameCheck
 - VC.Project.VCCLCompilerTool.BasicRuntimeChecks
-dev_langs:
-- C++
 helpviewer_keywords:
 - /RTCs compiler option [C++]
 - -RTC1 compiler option [C++]
@@ -31,16 +25,12 @@ helpviewer_keywords:
 - RTCc compiler option
 - -RTCc compiler option [C++]
 ms.assetid: 9702c558-412c-4004-acd5-80761f589368
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 29fd7e3ec71b38aec187f60548ce7cededd01c2b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 77dc97ee07499b7df37a115dafafddd71acb7bb1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709416"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50655008"
 ---
 # <a name="rtc-run-time-error-checks"></a>/RTC (Çalışma Zamanı Hata Denetimleri)
 

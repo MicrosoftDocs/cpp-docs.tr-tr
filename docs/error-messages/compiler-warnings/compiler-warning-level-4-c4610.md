@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4610 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4610
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4610
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4610
 ms.assetid: 23c1a16c-9ca9-4bf6-9911-a72b785560c2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2f45b216f240b2c51382d6fd4054f2b959c19088
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ce671552083f4e6b055c52e7387d3a95e7d47c0a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46051574"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559997"
 ---
 # <a name="compiler-warning-level-4-c4610"></a>Derleyici Uyarısı (düzey 4) C4610
 

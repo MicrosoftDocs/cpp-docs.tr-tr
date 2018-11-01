@@ -1,27 +1,17 @@
 ---
-title: Olay işleyici Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: Olay İşleyici Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.eventhandler.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - Event Handler Wizard [C++]
 ms.assetid: af8e1835-94b1-4d9a-b353-c519e011d3a1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eb3a025c293c3252b52b9ae705e6475b7095f049
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e48d995aed0c59cc4ba7b645706448b5c3618b4a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444116"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654174"
 ---
 # <a name="event-handler-wizard"></a>Olay İşleyici Sihirbazı
 

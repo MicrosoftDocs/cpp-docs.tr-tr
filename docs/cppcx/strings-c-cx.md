@@ -1,20 +1,13 @@
 ---
-title: Dizeler (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Dizeler (C + +/ CX)
 ms.date: 01/22/2017
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: 5b34e1df-7c2b-4269-aba8-b767d36c49d9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0bfc546c66ebabb877fb4c37b0400e38a9658f45
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 350c6133b9f910a067f760681832b81bac24f4e7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102149"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556461"
 ---
 # <a name="strings-ccx"></a>Dizeler (C + +/ CX)
 

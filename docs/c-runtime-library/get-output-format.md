@@ -1,10 +1,6 @@
 ---
-title: _get_output_format | Microsoft Docs
-ms.custom: ''
+title: _get_output_format
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _get_output_format
 apilocation:
@@ -19,23 +15,17 @@ apitype: DLLExport
 f1_keywords:
 - get_output_format
 - _get_output_format
-dev_langs:
-- C++
 helpviewer_keywords:
 - output formatting
 - get_output_format function
 - _get_output_format function
 ms.assetid: 0ce42f3b-3479-41c4-bcbf-1d21f7ee37e7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5e34147c5d8990b9ec47f2a2b6ab3d2689190252
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a78ffb1c7fd32db3092bcf1d2297a0be6fa9f47b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065926"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518801"
 ---
 # <a name="getoutputformat"></a>_get_output_format
 

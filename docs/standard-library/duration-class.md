@@ -1,10 +1,6 @@
 ---
-title: Duration sınıfı | Microsoft Docs
-ms.custom: ''
+title: duration Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - chrono/std::chrono::duration
 - chrono/std::chrono::duration::duration
@@ -12,21 +8,15 @@ f1_keywords:
 - chrono/std::chrono::duration::max
 - chrono/std::chrono::duration::min
 - chrono/std::chrono::duration::zero
-dev_langs:
-- C++
 ms.assetid: 06b863b3-65be-4ded-a72e-6e1eb1531077
-author: corob-msft
-ms.author: corob
 helpviewer_keywords:
 - std::chrono [C++], duration
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db0ba9b841b26cab9f36cddba0c1f402e4812a20
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2b710de6275933b5dc05814664caef92cf251da4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072011"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568901"
 ---
 # <a name="duration-class"></a>duration Sınıfı
 

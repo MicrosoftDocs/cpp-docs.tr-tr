@@ -1,26 +1,16 @@
 ---
-title: pgomgr | Microsoft Docs
-ms.custom: ''
+title: pgomgr
 ms.date: 03/14/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - pgomgr program
 - profile-guided optimizations, pgomgr
 ms.assetid: 74589126-df18-42c9-8739-26d60e148d6a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 217346a08f4dc800c3d335baa77c355e0f327336
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 4e3eb08c88db9d0ed4e47649014a600c3e0ccb78
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105321"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540510"
 ---
 # <a name="pgomgr"></a>pgomgr
 

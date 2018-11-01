@@ -1,29 +1,19 @@
 ---
-title: -DYNAMICBASE (adres boşluğu düzeni rastgele'seçimini kullan) | Microsoft Docs
-ms.custom: ''
+title: /DYNAMICBASE (Adres boşluğu düzeni rastgele seçimini kullan)
 ms.date: 06/12/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.RandomizedBaseAddress
-dev_langs:
-- C++
 helpviewer_keywords:
 - -DYNAMICBASE linker option
 - /DYNAMICBASE linker option
 - DYNAMICBASE linker option
 ms.assetid: 6c0ced8e-fe9c-4b63-b956-eb8a55fbceb2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 896e2eca86b7694c8b3b951a8eb080a4cf9e7684
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 47d23ac6f9234e095a1733a8d4078840318cce4b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43223399"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512404"
 ---
 # <a name="dynamicbase-use-address-space-layout-randomization"></a>/DYNAMICBASE (Adres boşluğu düzeni rastgele seçimini kullan)
 
@@ -49,7 +39,7 @@ Varsayılan olarak, **dynamıcbase** etkinleştirilir. Bu seçenek devre dışı
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.RandomizedBaseAddress%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.RandomizedBaseAddress%2A>.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

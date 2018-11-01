@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı C4484 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı C4484
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4484
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4484
 ms.assetid: 3d30e5b3-2297-45b7-a37a-1360056fdd0e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b6916bac936ad4b8e67888443f397a4c81c0a956
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 71a3d903ba32fecac4b2d8bfc3e0a93f19d0f4ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022987"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473183"
 ---
 # <a name="compiler-warning-c4484"></a>Derleyici Uyarısı C4484
 

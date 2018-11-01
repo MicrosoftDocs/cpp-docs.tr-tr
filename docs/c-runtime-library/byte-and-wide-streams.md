@@ -1,28 +1,18 @@
 ---
-title: Bayt ve geniş akışlar | Microsoft Docs
-ms.custom: ''
+title: Bayt ve Geniş Akışlar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - Byte and Wide Streams
-dev_langs:
-- C++
 helpviewer_keywords:
 - byte streams
 - wide streams
 ms.assetid: 61ef0587-4cbc-4eb8-aae5-4c298dbbc6f9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e031aa0ebbad279c630f2687457af11dc478b72d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bb14cbd5caed413425810bfe017e068f4b4b4257
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46095839"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590441"
 ---
 # <a name="byte-and-wide-streams"></a>Bayt ve Geniş Akışlar
 

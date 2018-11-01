@@ -1,23 +1,13 @@
 ---
-title: Karakter test etme | Microsoft Docs
-ms.custom: ''
+title: Karakter Test Etme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 376ba061-bae3-427e-9569-33fa5949a199
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c2c558c5d32f75561d5722a656450d5f18f5166a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 31a90f28d710ffc1b58f9c6b3fcfd01fd8d2d00c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084945"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523207"
 ---
 # <a name="character-testing"></a>Karakter Test Etme
 

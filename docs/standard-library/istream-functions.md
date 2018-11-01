@@ -1,22 +1,16 @@
 ---
-title: '&lt;istream&gt; işlevleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;istream&gt; işlevleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - istream/std::swap
 - istream/std::ws
 ms.assetid: 0301ea0d-4ded-4841-83dd-4253b55b3188
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 305b7c40e6fd6bc7b185854fedd0df81cf84ccbd
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: b590559b01bb8f5db21fca9f78d220d8bad5c27e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44101891"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537650"
 ---
 # <a name="ltistreamgt-functions"></a>&lt;istream&gt; işlevleri
 
