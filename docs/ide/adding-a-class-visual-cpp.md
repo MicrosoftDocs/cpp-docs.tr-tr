@@ -1,29 +1,19 @@
 ---
-title: Sınıf ekleme (Visual C++) | Microsoft Docs
-ms.custom: ''
+title: Sınıf Ekleme (Visual C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.classes.adding
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL projects, adding classes
 - classes [C++], creating
 - classes [C++], adding
 ms.assetid: c34b5f70-4e72-4faa-ba21-e2b05361c4d9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5e2ef8ae3e7620efb74099287dcda29210545d2e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8cdc8dcc4241acb805255b6a28f1518e39f2bb75
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420549"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429386"
 ---
 # <a name="adding-a-class-visual-c"></a>Sınıf Ekleme (Visual C++)
 

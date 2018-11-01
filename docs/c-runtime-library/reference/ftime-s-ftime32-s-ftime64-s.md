@@ -1,10 +1,6 @@
 ---
-title: _ftime_s, _ftime32_s, _ftime64_s | Microsoft Docs
-ms.custom: ''
+title: _ftime_s, _ftime32_s, _ftime64_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ftime_s
 - _ftime64_s
@@ -29,8 +25,6 @@ f1_keywords:
 - _ftime32_s
 - ftime32_s
 - ftime64_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - ftime32_s function
 - ftime_s function
@@ -41,20 +35,16 @@ helpviewer_keywords:
 - _ftime_s function
 - _ftime32_s function
 ms.assetid: d03080d9-a520-45be-aa65-504bdb197e8b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1a23b31fb88b60b05e587bf62ab07ec7e72de869
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 696b461cdb6b8d58bb668b996a99c5d0bb774d6c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402994"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50435483"
 ---
 # <a name="ftimes-ftime32s-ftime64s"></a>_ftime_s, _ftime32_s, _ftime64_s
 
-Geçerli saati alır. Sürümleri bunlar [_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Geçerli saati alır. Bunlar sürümleridir [_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,24 +61,24 @@ errno_t _ftime64_s( struct __timeb64 *timeptr );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sıfır başarılı olursa, hatasında bir hata kodu. Varsa *timeptr* olan **NULL**, dönüş değeri **EINVAL**.
+Başarılıysa sıfır, bir hata kodu. Varsa *timeptr* olduğu **NULL**, dönüş değeri **EINVAL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Ftime_s** işlevi geçerli yerel saat alır ve gösterdiği yapısı depolar *timeptr*. **_Timeb**, **__timeb32**, ve **__timeb64** yapıları SYS\Timeb.h içinde tanımlanmıştır. Aşağıdaki tabloda listelenen dört alanları içerir.
+**_Ftime_s** işlevi, geçerli yerel saat alır ve işaret ettiği yapısında depolar *timeptr*. **_Timeb**, **__timeb32**, ve **__timeb64** yapıları SYS\Timeb.h içinde tanımlanır. Aşağıdaki tabloda listelenen dört alan içerirler.
 
 |Alan|Açıklama|
 |-|-|
-|**dstflag**|Günışığından şu an için yerel saat dilimi etkinse, sıfır olmayan. (Bkz [_tzset](tzset.md) günışığından belirleme hakkında ayrıntılı açıklamalar için.)|
-|**millitm**|Saniyenin milisaniye cinsinden verin.|
-|**Saat**|Gece yarısından beri geçen saniye süre (00: 00:00), 1 Ocak 1970'den itibaren Eşgüdümlü Evrensel Saat (UTC).|
-|**Saat dilimi**|Dakika cinsinden fark westward, UTC ve yerel saat arasında taşıma. Değeri **saat dilimi** genel değişkeni değerinden ayarlamak **_timezone** (bkz **_tzset**).|
+|**dstflag**|Gün ışığından yararlanma saatine göre geçerli yerel saat dilimini ise sıfır olmayan. (Bkz [_tzset](tzset.md) gün ışığından yararlanma saatine nasıl belirlendiğini'nın açıklaması.)|
+|**millitm**|Saniyenin milisaniye cinsinden.|
+|**saat**|Saniye cinsinden gece yarısından itibaren saat (00: 00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC).|
+|**saat dilimi**|Dakika cinsinden farkı westward, yerel saat ve UTC arasında taşıma. Değerini **saat dilimi** genel değişkenin değerini ayarlamak **_timezone** (bkz **_tzset**).|
 
-**_Ftime64_s** kullanan işlevi **__timeb64** yapısı, 23:59:59, 31 Aralık 3000 UTC; yukarı ifade için dosya oluşturma tarihleri sağlarken **_ftime32_s** yalnızca ile 23:59:59 18 Ocak 2038, UTC tarihleri temsil eder. Gece yarısından, 1 Ocak 1970'ten, bu işlevler için tarih aralığını alt sınırdır.
+**_Ftime64_s** kullanan işlevi **__timeb64** yapısı, 23:59:59, 31 Aralık, 3000, UTC; yukarı ifade edilecek tarihleri dosya oluşturma sağlarken **_ftime32_s** yalnızca 23:59:59 18 Ocak 2038, UTC tarihleri temsil eder. Gece yarısı, 1 Ocak 1970, tüm bu işlevler için tarih aralığının alt sınırdır.
 
-**_Ftime_s** işlevi eşdeğerdir **_ftime64_s**, ve **_timeb** sürece 64-bit süresini içerir **_USE_32BIT_TIME_T** olduğu tanımlanan; bu durumda eski davranışı yürürlükte olur; **_ftime_s** 32-bit zamanını kullanır ve **_timeb** 32-bit saati içerir.
+**_Ftime_s** işlev, eşdeğer **_ftime64_s**, ve **_timeb** 64-bit birer pr'nin **_use_32bıt_tıme_t** olduğu tanımlanan, bu durumda eski davranış geçerli olur; **_ftime_s** bir 32-bit kullanır ve **_timeb** 32-bit saati içerir.
 
-**_ftime_s** parametrelerini doğrular. Null işaretçi olarak aktarılırsa *timeptr*, açıklandığı gibi geçersiz parametre işleyicisi işlevi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, işlevi ayarlar **errno** için **EINVAL**.
+**_ftime_s** kendi parametrelerini doğrular. Null bir işaretçi olarak geçirilmiş *timeptr*, işlev içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse işlev ayarlar **errno** için **EINVAL**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -98,7 +88,7 @@ Sıfır başarılı olursa, hatasında bir hata kodu. Varsa *timeptr* olan **NUL
 |**_ftime32_s**|\<sys/Types.h > ve \<sys/timeb.h >|
 |**_ftime64_s**|\<sys/Types.h > ve \<sys/timeb.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

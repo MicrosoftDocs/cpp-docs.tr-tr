@@ -1,26 +1,15 @@
 ---
-title: ODBC ve sürücülerle Çalışma | Microsoft Docs
-ms.custom: ''
+title: ODBC ve Sürücülerle Çalışma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC drivers, using
 ms.assetid: ae1bf357-4ca4-4748-9336-8fc317f294ab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: ed4fdaa3d56c6e467eb4d292e53062be5f0c506f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6d245a8c4071f8f3822e3bdd6bfe0467251fc852
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055443"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437836"
 ---
 # <a name="work-with-odbc-and-drivers"></a>ODBC ve Sürücülerle Çalışma
 

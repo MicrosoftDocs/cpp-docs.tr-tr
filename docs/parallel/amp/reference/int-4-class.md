@@ -1,10 +1,6 @@
 ---
-title: int_4 sınıfı | Microsoft Docs
-ms.custom: ''
+title: int_4 Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::int_4::get_ywxz
 - amp_short_vectors/Concurrency::graphics::int_4::xzyw
@@ -271,19 +267,13 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::int_4::abrg
 - amp_short_vectors/Concurrency::graphics::int_4::bg
 - amp_short_vectors/Concurrency::graphics::int_4::yxz
-dev_langs:
-- C++
 ms.assetid: 01768c28-23a8-4965-8267-96834864f4eb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 90023f89ec50d99f4988a6801bc6be777778189f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: aa1874dee72f7734c690ce9e86998a5120b2974b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420094"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643709"
 ---
 # <a name="int4-class"></a>int_4 Sınıfı
 

@@ -1,12 +1,6 @@
 ---
-title: C ve C++ için Microsoft uzantıları | Microsoft Docs
-ms.custom: ''
+title: C ve C++ için Microsoft uzantıları
 ms.date: 06/14/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - or_eq operator
 - ~ operator, extensions to C/C++
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - extensions
 - compl method
 ms.assetid: e811a74a-45ba-4c00-b206-2f2321b8689a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7de81d7611715e906b69f5546fafbcefa3252d64
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: b4025413fcf6389249fc011da020c0cd7c6f4519
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722481"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447443"
 ---
 # <a name="microsoft-extensions-to-c-and-c"></a>C ve C++ için Microsoft uzantıları
 

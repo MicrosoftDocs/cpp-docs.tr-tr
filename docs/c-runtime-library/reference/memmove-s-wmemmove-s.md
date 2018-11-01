@@ -1,10 +1,6 @@
 ---
-title: memmove_s, wmemmove_s | Microsoft Docs
-ms.custom: ''
+title: memmove_s, wmemmove_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wmemmove_s
 - memmove_s
@@ -24,26 +20,20 @@ apitype: DLLExport
 f1_keywords:
 - wmemmove_s
 - memmove_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - wmemmove_s function
 - memmove_s function
 ms.assetid: a17619e4-1307-4bb0-98c6-77f8c68dab2d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 39fde456dd2e45d38bdd1b6ba8d9d7eb9811dd05
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7b60174c3a06e60301a3e9123434220227f4f426
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403901"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561193"
 ---
 # <a name="memmoves-wmemmoves"></a>memmove_s, wmemmove_s
 
-Bir arabellek diğerine taşır. Sürümleri bunlar [memmove, wmemmove](memmove-wmemmove.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir arabellek diğerine taşır. Bunlar sürümleridir [memmove, wmemmove](memmove-wmemmove.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,31 +58,31 @@ errno_t wmemmove_s(
 Hedef nesne.
 
 *numberOfElements*<br/>
-Hedef arabellek boyutu.
+Hedef arabelleğin boyutu.
 
 *src*<br/>
 Kaynak nesne.
 
 *Sayısı*<br/>
-Bayt sayısı (**memmove_s**) veya karakter (**wmemmove_s**) kopyalamak için.
+Bayt sayısı (**memmove_s**) veya karakterleri (**wmemmove_s**) kopyalamak için.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; hatasında bir hata kodu
+Başarılıysa sıfır; bir hata kodu
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*Hedef*|*numberOfElements*|*src*|Dönüş değeri|İçeriği *hedef*|
+|*Hedef*|*numberOfElements*|*src*|Dönüş değeri|İçeriğini *dest*|
 |------------|------------------------|-----------|------------------|------------------------|
-|**NULL**|tüm|tüm|**EINVAL**|değiştirilmedi|
-|tüm|tüm|**NULL**|**EINVAL**|değiştirilmedi|
-|tüm|< *Sayısı*|tüm|**ERANGE**|değiştirilmedi|
+|**NULL**|Tüm|Tüm|**EINVAL**|değiştirilmedi|
+|Tüm|Tüm|**NULL**|**EINVAL**|değiştirilmedi|
+|Tüm|< *Sayısı*|Tüm|**ERANGE**|değiştirilmedi|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kopya *sayısı* karakterlerinden baytını *src* için *taşınmaya*. Kaynak alan ve hedef bazı bölümlerinin çakışırsa, **memmove_s** çakışan bölgede özgün kaynak bayt üzerine önce kopyalanır sağlar.
+Kopya *sayısı* karakterlerinden bayt *src* için *dest*. Bazı kaynak alanını ve hedef bölgelerini çakışırsa, **memmove_s** üzerine önce çakışan bölgede özgün kaynak bayt kopyalanır sağlar.
 
-Varsa *taşınmaya* veya *src* null işaretçi ya da hedef dize çok küçük ise, bu işlevlerin bir geçersiz parametre işleyicisi açıklandığı gibi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş **EINVAL** ve **errno** için **EINVAL**.
+Varsa *dest* veya *src* null bir işaretçiyse veya hedef dize çok küçükse, bu işlevler geçersiz parametre işleyicisini de açıklandığı gibi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EINVAL** ayarlayıp **errno** için **EINVAL**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -101,7 +91,7 @@ Varsa *taşınmaya* veya *src* null işaretçi ya da hedef dize çok küçük is
 |**memmove_s**|\<String.h >|
 |**wmemmove_s**|\<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

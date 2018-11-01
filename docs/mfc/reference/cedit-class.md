@@ -1,10 +1,6 @@
 ---
-title: CEdit sınıfı | Microsoft Docs
-ms.custom: ''
+title: CEdit sınıfı
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CEdit
 - AFXWIN/CEdit
@@ -52,8 +48,6 @@ f1_keywords:
 - AFXWIN/CEdit::SetTabStops
 - AFXWIN/CEdit::ShowBalloonTip
 - AFXWIN/CEdit::Undo
-dev_langs:
-- C++
 helpviewer_keywords:
 - CEdit [MFC], CEdit
 - CEdit [MFC], CanUndo
@@ -100,16 +94,12 @@ helpviewer_keywords:
 - CEdit [MFC], ShowBalloonTip
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fc11631b6a9b4c675d488d69c5575a89853e64a3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f18866dca3610db275c629bbb2ac885c21cbdcb8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079278"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50455815"
 ---
 # <a name="cedit-class"></a>CEdit sınıfı
 

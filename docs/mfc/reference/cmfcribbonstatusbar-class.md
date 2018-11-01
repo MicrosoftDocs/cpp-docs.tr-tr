@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonStatusBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonStatusBar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonStatusBar
 - AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar
@@ -30,8 +26,6 @@ f1_keywords:
 - AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::RemoveElement
 - AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::SetInformation
 - AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::OnDrawInformation
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonStatusBar [MFC], AddDynamicElement
 - CMFCRibbonStatusBar [MFC], AddElement
@@ -56,16 +50,12 @@ helpviewer_keywords:
 - CMFCRibbonStatusBar [MFC], SetInformation
 - CMFCRibbonStatusBar [MFC], OnDrawInformation
 ms.assetid: 921eb57f-3b40-49fa-a38c-3f2fb6dc2893
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4303dc9f5f72e4a9500a1d5a6a7c210e7f7bc62f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 068cff9ea3827e780bec886bc5d4b0e263c02e62
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063802"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50635350"
 ---
 # <a name="cmfcribbonstatusbar-class"></a>CMFCRibbonStatusBar sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3860 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3860
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3860
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3860
 ms.assetid: 1fb5110d-594e-4f1c-8773-888233af1313
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4727a910427ecd23b5f699fc15bdcdc48a51f687
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 89b43c03cb26fa48d347f6066a18ae36c54234db
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46073687"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562961"
 ---
 # <a name="compiler-error-c3860"></a>Derleyici Hatası C3860
 

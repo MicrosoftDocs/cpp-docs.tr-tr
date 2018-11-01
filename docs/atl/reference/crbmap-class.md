@@ -1,10 +1,6 @@
 ---
-title: CRBMap sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRBMap sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CRBMap
 - ATLCOLL/ATL::CRBMap
@@ -12,21 +8,15 @@ f1_keywords:
 - ATLCOLL/ATL::CRBMap::Lookup
 - ATLCOLL/ATL::CRBMap::RemoveKey
 - ATLCOLL/ATL::CRBMap::SetAt
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRBMap class
 ms.assetid: 658e94dc-e835-4356-aed1-1513e1f66969
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 41b4bf9678f2382c124bcfef484d0becf687f530
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fc702feacff5b2f2bbe53a9ea49f664a241d788c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072713"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677519"
 ---
 # <a name="crbmap-class"></a>CRBMap sınıfı
 

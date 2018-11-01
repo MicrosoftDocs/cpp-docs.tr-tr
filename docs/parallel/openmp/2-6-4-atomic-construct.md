@@ -1,23 +1,13 @@
 ---
-title: 2.6.4 atomic yapı | Microsoft Docs
-ms.custom: ''
+title: 2.6.4 atomic Yapı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: e4232ef1-4058-42ce-9de0-0ca788312aba
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f92e0b0c881ec1f8d54adce4a12f58ad514ed8f5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1f477a59ef475fda9bd0daeeb4edac18a3eeedb9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437488"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677662"
 ---
 # <a name="264-atomic-construct"></a>2.6.4 atomic Yapı
 

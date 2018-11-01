@@ -1,10 +1,6 @@
 ---
-title: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock | Microsoft Docs
-ms.custom: ''
+title: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ungetch_nolock
 - _ungetwch_nolock
@@ -34,8 +30,6 @@ f1_keywords:
 - _ungettch_nolock
 - _ungettch
 - _ungetwch_nolock
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ungetch function
 - ungetwch function
@@ -50,23 +44,19 @@ helpviewer_keywords:
 - ungetwch_nolock function
 - _ungetwch function
 ms.assetid: 70ae71c6-228c-4883-a57d-de6d5f873825
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1c9c6f09c3bd6ce679662d9ea77f8a7b360521b9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7407d26606bd5242c430961faa4f60090b83f036
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411302"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430309"
 ---
 # <a name="ungetch-ungetwch-ungetchnolock-ungetwchnolock"></a>_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 
-Geri konsoldan okunan son karakter iter.
+Konsoldan okunan son karakteri geri iter.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -88,17 +78,17 @@ wint_t _ungetwch_nolock(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Edilmesini karakter.
+İtilecek karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her iki işlevler karakteri döndürür *c* başarılı olursa. Bir hata varsa **_ungetch** değerini döndürür **EOF** ve **_ungetwch** döndürür **WEOF**.
+Her iki işlev dönüş karakteri *c* başarılı olursa. Bir hata varsa **_ungetch** değerini döndürür **EOF** ve **_ungetwch** döndürür **WEOF**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler karakter anında *c* geri konsola neden *c* tarafından okunur sonraki karakter olacak şekilde **_getch** veya **_getche** (veya **_getwch** veya **_getwche**). **_ungetch** ve **_ungetwch** önce İleri okuma adlı birden çok kez başarısız. *c* bağımsız değişkeni olmayabilir **EOF** (veya **WEOF**).
+Bu işlevler karakter anında iletme *c* geri konsola neden *c* tarafından okunan sonraki karakter olacak şekilde **_getch** veya **_getche** (veya **_getwch** veya **_getwche**). **_ungetch** ve **_ungetwch** sonraki okumadan önce çağrılırsa birden çok kez başarısız. *c* bağımsız değişken olabilir **EOF** (veya **WEOF**).
 
-Sürümleriyle **_nolock** soneki, diğer iş parçacıkları tarafından girişime korunmayan dışında aynıdır. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.
+Sürümlerle **_nolock** soneki, bunlar başka iş parçacıklarının engellemelerinden korunmamaları hariç, aynıdır. Bu yana bunlar diğer iş parçacıklarının kilitleme yüküne tabi olmadıklarından daha hızlı olabilirler. Bu işlevler yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -114,7 +104,7 @@ Sürümleriyle **_nolock** soneki, diğer iş parçacıkları tarafından giriş
 |**_ungetch**, **_ungetch_nolock**|\<conio.h >|
 |**_ungetwch**, **_ungetwch_nolock**|\<conio.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

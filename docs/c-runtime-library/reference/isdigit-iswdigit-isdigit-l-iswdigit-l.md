@@ -1,10 +1,6 @@
 ---
-title: isdigit, iswdigit, _isdigit_l, _iswdigit_l | Microsoft Docs
-ms.custom: ''
+title: isdigit, iswdigit, _isdigit_l, _iswdigit_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _isdigit_l
 - iswdigit
@@ -30,8 +26,6 @@ f1_keywords:
 - isdigit
 - _istdigit
 - _istdigit_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - iswdigit function
 - iswdigit_l function
@@ -44,20 +38,16 @@ helpviewer_keywords:
 - _ismbcdigit_l function
 - _isdigit_l function
 ms.assetid: 350b0093-843a-47b0-954e-c1776e8a3853
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7701b287d6ec4de757249aca5ccd252b38c58267
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0bffe54bb68eaf7a26c338ad52522ff9b48335aa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401304"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636585"
 ---
 # <a name="isdigit-iswdigit-isdigitl-iswdigitl"></a>isdigit, iswdigit, _isdigit_l, _iswdigit_l
 
-Tamsayı bir ondalık sayı karakteri temsil edip etmediğini belirler.
+Bir tam sayı bir ondalık basamak karakterini temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -81,18 +71,18 @@ int _iswdigit_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test etmek için bir tamsayı.
+Test edilecek tamsayı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamları döndürür sıfır olmayan IF her *c* ondalık basamak karakter belirli bir gösterimidir. **isdigit** sıfır olmayan bir değer döndürür *c* ondalık basamak (0 - 9). **iswdigit** sıfır olmayan bir değer döndürür *c* ondalık basamak karakterine karşılık gelen bir geniş karakter. Bu yordamlar her 0 döndürür *c* test durumu uygun değil.
+Yordamların her biri bu döndürür sıfır olmayan *c* ondalık basamaklı bir karaktere belirli bir gösterimidir. **isdigit** sıfır olmayan bir değer döndürür *c* ondalık bir sayıysa (0 - 9). **iswdigit** sıfır olmayan bir değer döndürür *c* bir ondalık basamak karakterine karşılık gelen bir geniş karakterse. Bu yordamların her biri 0 döndürür *c* test koşulu karşılamayan.
 
-Bu işlevleri sürümlerini **_l** soneki yerine geçerli yerel geçirilen yerel ayar için yerel ayara bağımlı davranışlarını kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Sahip bu işlevlerin sürümleri **_l** soneki yerel ayara bağlı davranışları için geçerli yerel ayarı yerine iletilen yerel ayarı kullanır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Davranışını **isdigit** ve **_isdigit_l** tanımsız ise *c* EOF değil veya 0'dan 0xFF (bunlar dahil) aralığında. CRT hata ayıklama Kitaplığı kullanıldığında ve *c* bu değerleri işlevleri raise onayı ifade değil.
+Davranışını **isdigit** ve **_isdigit_l** tanımsızdır *c* EOF değilse veya 0-0xFF aralığındaysa aralığında. Bir hata ayıklama CRT Kitaplığı kullanıldığında ve *c* değil, bu değerleri işlevleri raise onaylama biridir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -110,7 +100,7 @@ Davranışını **isdigit** ve **_isdigit_l** tanımsız ise *c* EOF değil veya
 |**_isdigit_l**|\<CType.h >|
 |**_iswdigit_l**|\<CType.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

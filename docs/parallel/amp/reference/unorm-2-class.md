@@ -1,10 +1,6 @@
 ---
-title: unorm_2 sınıfı | Microsoft Docs
-ms.custom: ''
+title: unorm_2 Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::unnorm_2::operator+=
 - amp_short_vectors/Concurrency::graphics::unnorm_2::y
@@ -31,19 +27,13 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::unnorm_2::get_x
 - amp_short_vectors/Concurrency::graphics::unnorm_2::g
 - amp_short_vectors/Concurrency::graphics::unnorm_2::operator++
-dev_langs:
-- C++
 ms.assetid: 62e88ea7-e29f-4f62-95ce-61a1f39f5e34
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3762218b6171ba26d637e209e818b703db9ee5ed
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9647cbb61bfc07ebe11d7d58b64e1fbe884a74bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410331"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658906"
 ---
 # <a name="unorm2-class"></a>unorm_2 Sınıfı
 

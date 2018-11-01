@@ -1,29 +1,19 @@
 ---
-title: GetProcAddress | Microsoft Docs
-ms.custom: ''
+title: GetProcAddress
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
 f1_keywords:
 - GetProcAddress
-dev_langs:
-- C++
 helpviewer_keywords:
 - DLLs [C++], GetProcAddress
 - ordinal exports [C++]
 - GetProcAddress method
 ms.assetid: 48d14ae0-47ea-4c5d-96b1-2c158f1a26af
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ef48157d1f4efb467fd33270ff05271bedd1a563
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 241f31717274c73a658f4cddf4e6e1ef4e40b402
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49081896"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50457674"
 ---
 # <a name="getprocaddress"></a>GetProcAddress
 

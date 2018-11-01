@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2313 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2313
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2313
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2313
 ms.assetid: f70eb19b-c0a3-4fb2-ade1-3890a589928d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 57e291788f261f0e62bd476b3027dfa809594ce3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 276dea87770035967a08ca5ac3e95316832ffc1b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024949"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641083"
 ---
 # <a name="compiler-error-c2313"></a>Derleyici Hatası C2313
 

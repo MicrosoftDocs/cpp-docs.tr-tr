@@ -1,11 +1,6 @@
 ---
-title: ccosh, ccoshf, ccoshl | Microsoft Docs
-ms.custom: ''
+title: ccosh, ccoshf, ccoshl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - ccosh
 - ccoshf
@@ -30,23 +25,17 @@ f1_keywords:
 - complex/ccosh
 - complex/ccoshf
 - complex/ccoshl
-dev_langs:
-- C++
 helpviewer_keywords:
 - ccosh function
 - ccoshf function
 - ccoshl function
 ms.assetid: 79667449-4edf-4948-bf6b-720adf2b3f3b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2a883869b830efbba08822b77c97fd6a156358dd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c25441d4f25f9e77a0cb71d942e132f34c4c1f5a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394489"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676843"
 ---
 # <a name="ccosh-ccoshf-ccoshl"></a>ccosh, ccoshf, ccoshl
 
@@ -83,15 +72,15 @@ Hiperbolik kosinüsünü *z*, radyan cinsinden açı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **ccosh** alın ve dönüş **_Fcomplex** ve **_Lcomplex** değerleri. Bir C programı **ccosh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **ccosh** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **ccosh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**ccosh**, **ccoshf**, **ccoshl**|\<Complex.h >|\<ccomplex >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

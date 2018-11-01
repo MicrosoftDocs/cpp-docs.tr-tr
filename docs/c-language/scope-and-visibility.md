@@ -1,27 +1,17 @@
 ---
-title: Kapsam ve görünürlük | Microsoft Docs
-ms.custom: ''
+title: Kapsam ve Görünürlük
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - scope, levels
 - visibility
 - file scope [C++]
 ms.assetid: a019eb7c-66ed-46a7-bc9f-89a963930a56
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b10902d44d8bc2e24a94123cc198a3b7606dac43
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4010025a5a80fa513c8f86c41612350b2a23c15e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46136055"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656735"
 ---
 # <a name="scope-and-visibility"></a>Kapsam ve Görünürlük
 

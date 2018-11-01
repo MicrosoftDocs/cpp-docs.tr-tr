@@ -1,28 +1,18 @@
 ---
-title: İfade değerlendirici hatası CXX0059 | Microsoft Docs
-ms.custom: ''
+title: İfade Değerlendirici Hatası CXX0059
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - CXX0059
-dev_langs:
-- C++
 helpviewer_keywords:
 - CXX0059
 - CAN0059
 ms.assetid: e8bdcb74-1315-4083-b24d-e47eac7d1ec0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 55fc60014bdc408d581ed8299715aad139ef9862
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9d031044ffc89df40bb4196c8c5f19749b76898d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050469"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651496"
 ---
 # <a name="expression-evaluator-error-cxx0059"></a>İfade Değerlendirici Hatası CXX0059
 

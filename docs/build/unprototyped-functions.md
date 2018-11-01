@@ -1,23 +1,13 @@
 ---
-title: Prototipi oluşturulmamış İşlevler | Microsoft Docs
-ms.custom: ''
+title: Prototipi Oluşturulmamış İşlevler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 34200b8c-5b52-4f0d-aff8-9f70d82868ed
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2c030bd99fc185b3c52535aecb45697672ef4c14
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 38207be6111dadc338593e55b683b88e0480e1ca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717684"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633435"
 ---
 # <a name="unprototyped-functions"></a>Prototipi Oluşturulmamış İşlevler
 

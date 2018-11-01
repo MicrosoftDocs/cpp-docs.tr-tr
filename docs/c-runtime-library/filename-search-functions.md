@@ -1,10 +1,6 @@
 ---
-title: Filename işlevleri Ara | Microsoft Docs
-ms.custom: ''
+title: Filename işlevleri Ara
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apilocation:
 - msvcr100.dll
 - msvcr120.dll
@@ -14,8 +10,6 @@ apilocation:
 - msvcr110.dll
 - msvcr110_clr0400.dll
 apitype: DLLExport
-dev_langs:
-- C++
 helpviewer_keywords:
 - file names [C++], searching for
 - _find function
@@ -23,16 +17,12 @@ helpviewer_keywords:
 - find function
 - _wfind function
 ms.assetid: 2bc2f8ef-44e4-4271-b3e8-666d36fde828
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ec6479a4803d7c0ee623d8506bf0ee9f2d674d7c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f5f0629b97c3f3731e3916af36c9c8e40176462a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46063378"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621656"
 ---
 # <a name="filename-search-functions"></a>Filename işlevleri Ara
 

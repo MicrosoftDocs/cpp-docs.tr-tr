@@ -1,9 +1,6 @@
 ---
-title: ClassFactory sınıfı | Microsoft Docs
-ms.custom: ''
+title: ClassFactory Sınıfı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::ClassFactory
@@ -12,8 +9,6 @@ f1_keywords:
 - module/Microsoft::WRL::ClassFactory::LockServer
 - module/Microsoft::WRL::ClassFactory::QueryInterface
 - module/Microsoft::WRL::ClassFactory::Release
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::ClassFactory class
 - Microsoft::WRL::ClassFactory::AddRef method
@@ -22,17 +17,12 @@ helpviewer_keywords:
 - Microsoft::WRL::ClassFactory::QueryInterface method
 - Microsoft::WRL::ClassFactory::Release method
 ms.assetid: f13e6bce-722b-4f18-b7cf-3ffa6345c1db
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 4facba4a35e28818f22ba17f6d835b781cd76061
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: edf41bbdf92d6e2f00982d9392179b203d00b848
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163276"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645321"
 ---
 # <a name="classfactory-class"></a>ClassFactory Sınıfı
 

@@ -1,30 +1,20 @@
 ---
-title: CReBar ile CReBarCtrl | Microsoft Docs
-ms.custom: ''
+title: CReBar ile CReBarCtrl
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CReBar
 - CReBarCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - CReBar class [MFC], vs. CReBarCtrl
 - rebar controls [MFC], CReBarCtrl class [MFC]
 - GetReBarCtrl class [MFC]
 ms.assetid: 7f9c1d7e-5d5f-4956-843c-69ed3df688d0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6133e298cd0bc5b497fbbba47982a755afeefb2e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 49a1528e52d140a673d4035c55394ded3656652f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442857"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641419"
 ---
 # <a name="crebar-vs-crebarctrl"></a>CReBar ile CReBarCtrl
 

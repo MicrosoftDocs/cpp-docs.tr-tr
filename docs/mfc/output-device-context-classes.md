@@ -1,14 +1,8 @@
 ---
-title: Çıktı (cihaz bağlamı) sınıfları | Microsoft Docs
-ms.custom: ''
+title: Çıktı (Cihaz Bağlamı) Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.output
-dev_langs:
-- C++
 helpviewer_keywords:
 - device contexts [MFC], classes
 - screen output classes [MFC]
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - painting classes [MFC]
 - output classes [MFC]
 ms.assetid: 35fd6435-a38e-42c6-a3fa-cd6f39370fc3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 40b1406e8c788554d549ee1bdaa1adc21070d994
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6bddebb17663e8d22a4bf784d2a9d08a2f912e59
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46373561"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651834"
 ---
 # <a name="output-device-context-classes"></a>Çıktı (Cihaz Bağlamı) Sınıfları
 

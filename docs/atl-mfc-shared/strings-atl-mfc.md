@@ -1,12 +1,6 @@
 ---
-title: Dizeler (ATL-MFC) | Microsoft Docs
-ms.custom: ''
+title: Dizeler (ATL-MFC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - const char pointers
 - strings [C++], in ATL
@@ -27,16 +21,12 @@ helpviewer_keywords:
 - strings [C++], class CString
 - literal strings [C++], class CStringT
 ms.assetid: 3b33125b-1684-4542-a3a7-b00de7d0419e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f0751b218fe540a49c2cf0efde1dcf8976f2ebf6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1f0764dd7231492a2addef6359318aa436869a31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387321"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626687"
 ---
 # <a name="strings-atlmfc"></a>Dizeler (ATL/MFC)
 

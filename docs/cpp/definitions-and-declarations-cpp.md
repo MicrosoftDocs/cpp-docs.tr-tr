@@ -1,23 +1,13 @@
 ---
-title: Tanımlar ve bildirimler (C++) | Microsoft Docs
-ms.custom: ''
+title: Tanımlar ve Bildirimler (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 56b809c0-e602-4f18-9ca5-cd7a8fbaaf30
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 623824c608832e07d342b6093968f822251e2342
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 987e27bdf35eba7d9380fc546c15b93b3179333b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075663"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628949"
 ---
 # <a name="definitions-and-declarations-c"></a>Tanımlar ve Bildirimler (C++)
 

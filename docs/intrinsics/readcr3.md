@@ -1,27 +1,17 @@
 ---
-title: __readcr3 | Microsoft Docs
-ms.custom: ''
+title: __readcr3
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __readcr3
-dev_langs:
-- C++
 helpviewer_keywords:
 - __readcr3 intrinsic
 ms.assetid: e24392c3-cad7-4788-8f31-94bf2e9e0053
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aa5e068d7e99e4d0dda1d68d9bfa68890379c728
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 928be5798c972881015d9af3733b5757afbf64ca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448187"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447924"
 ---
 # <a name="readcr3"></a>__readcr3
 

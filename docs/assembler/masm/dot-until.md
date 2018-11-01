@@ -1,27 +1,17 @@
 ---
-title: . KADAR | Microsoft Docs
-ms.custom: ''
+title: .UNTIL
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .UNTIL
-dev_langs:
-- C++
 helpviewer_keywords:
 - .UNTIL directive
 ms.assetid: 491de65d-cfb7-4d17-86b1-be83d3d84083
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1fd0c6ef768f171694b2852c46892d60643fcfe0
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: d0177ffb71ac19158bcfa28c2c80c62ec9754e50
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43689311"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430569"
 ---
 # <a name="until"></a>.UNTIL
 

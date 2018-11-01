@@ -1,27 +1,17 @@
 ---
-title: Kaynak Derleyicisi hatası RC2112 | Microsoft Docs
-ms.custom: ''
+title: Kaynak Derleyicisi Hatası RC2112
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - RC2112
-dev_langs:
-- C++
 helpviewer_keywords:
 - RC2112
 ms.assetid: e9f29540-a90d-4989-a6e8-5f8f32015bd9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e2b65f845ef845648d219c6d0e58a9fcd9068a34
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c43126f27c596cec1899ee5ac19f2337fc9b6edc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46018593"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573560"
 ---
 # <a name="resource-compiler-error-rc2112"></a>Kaynak Derleyicisi Hatası RC2112
 

@@ -1,12 +1,6 @@
 ---
-title: Kayan nokta sabitleri sınırlamaları | Microsoft Docs
-ms.custom: ''
+title: Kayan Nokta Sabitleri Sınırlamaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - ranges, floating-point constants
 - floating-point constants, limits
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - limits, floating-point constants
 - floating-point numbers, floating limits
 ms.assetid: 2d975868-2af6-45d7-a8af-db79f2c6b67b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b42fb03aca7334414a43b46be1134941389e4277
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 545c8fc356d7e1a6c56fdd5c144fa9a55120c97f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46095327"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664119"
 ---
 # <a name="limits-on-floating-point-constants"></a>Kayan Nokta Sabitleri Sınırlamaları
 

@@ -1,28 +1,17 @@
 ---
-title: ms_union (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: ms_union (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.ms_union
-dev_langs:
-- C++
 helpviewer_keywords:
 - ms_union attribute
 ms.assetid: bb548689-6962-457e-af56-8ffdf68987eb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 95a477e3d62a9ca2678101c8de51a814186c9488
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6b9788fc02a3bf4d59d34823ba83d86f97298597
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061397"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642474"
 ---
 # <a name="msunion"></a>ms_union
 

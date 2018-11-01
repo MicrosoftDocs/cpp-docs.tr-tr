@@ -1,27 +1,18 @@
 ---
-title: ML önemli olmayan hatası A2219 | Microsoft Docs
-ms.custom: ''
+title: ML Önemli Olmayan Hatası A2219
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A2219
-dev_langs:
-- C++
 helpviewer_keywords:
 - A2219
 ms.assetid: 5ebc2f40-e47e-4f8e-b7b9-960b9cfc9f6d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 365997181b0d4f4471162d7cf8f65a4429e69e74
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: beb1e7c565e80d34899e933256f0659b0fded645
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43681651"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443036"
 ---
 # <a name="ml-nonfatal-error-a2219"></a>ML Önemli Olmayan Hatası A2219
 

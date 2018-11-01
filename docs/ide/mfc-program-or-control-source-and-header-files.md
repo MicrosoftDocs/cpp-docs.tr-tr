@@ -1,25 +1,15 @@
 ---
-title: MFC programı veya Denetim Kaynağı ve başlık dosyaları | Microsoft Docs
-ms.custom: ''
+title: MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - file types [C++], MFC source and header
 ms.assetid: f61419a8-bf69-4bbb-8f7c-1734be5e6db6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7ec05f200d81a9753563a654257d9df3dd50a19f
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: c60c00772005efc0402cdeba9d710548c6412b15
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861115"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639159"
 ---
 # <a name="mfc-program-or-control-source-and-header-files"></a>MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3154 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3154
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3154
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3154
 ms.assetid: 78005c74-eaaf-4ac2-88ae-6c25d01a302a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 92a888020e306e762ffb242cb92636cc14680bf5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d14b921afa3888f1a9497f19bfeaa013b147b086
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46074662"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430556"
 ---
 # <a name="compiler-error-c3154"></a>Derleyici Hatası C3154
 

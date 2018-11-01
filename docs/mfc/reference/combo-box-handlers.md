@@ -1,10 +1,6 @@
 ---
-title: Birleşik giriş kutusu işleyicileri | Microsoft Docs
-ms.custom: ''
+title: Birleşik Giriş Kutusu İşleyicileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - ON_CBN_KILLFOCUS
 - ON_CBN_ERRSPACE
@@ -17,8 +13,6 @@ f1_keywords:
 - ON_CBN_SELCHANGE
 - ON_CBN_SETFOCUS
 - ON_CBN_SELENDCANCEL
-dev_langs:
-- C++
 helpviewer_keywords:
 - ON_CBN_CLOSEUP
 - ON_CBN_SETFOCUS
@@ -33,16 +27,12 @@ helpviewer_keywords:
 - ON_CBN_SELENDOK
 - ON_CBN_SELCHANGE
 ms.assetid: 7f092412-01b7-4242-95ec-41ba506b9d71
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5751fbdd4bff0cf3d42231ad00bef0c3483ccfb9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 44fbf74174df833badd18ee29416ed936ea69293
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424267"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438135"
 ---
 # <a name="combo-box-handlers"></a>Birleşik Giriş Kutusu İşleyicileri
 

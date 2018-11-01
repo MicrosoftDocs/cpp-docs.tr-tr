@@ -1,10 +1,6 @@
 ---
-title: CMFCOutlookBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCOutlookBar sınıfı
 ms.date: 06/25/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCOutlookBar
 - AFXOUTLOOKBAR/CMFCOutlookBar
@@ -24,8 +20,6 @@ f1_keywords:
 - AFXOUTLOOKBAR/CMFCOutlookBar::RemoveCustomPage
 - AFXOUTLOOKBAR/CMFCOutlookBar::SetButtonsFont
 - AFXOUTLOOKBAR/CMFCOutlookBar::SetMode2003
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCOutlookBar [MFC], AllowDestroyEmptyTabbedPane
 - CMFCOutlookBar [MFC], CanAcceptPane
@@ -44,16 +38,12 @@ helpviewer_keywords:
 - CMFCOutlookBar [MFC], SetButtonsFont
 - CMFCOutlookBar [MFC], SetMode2003
 ms.assetid: 2b335f71-ce99-4efd-b103-e65ba43ffc36
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0597cc6dd2c52792f583d23a45bbafe8bc996ffd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fd865d888a4ebe4504f19282d3c98ce8d7514e2c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374509"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622631"
 ---
 # <a name="cmfcoutlookbar-class"></a>CMFCOutlookBar sınıfı
 

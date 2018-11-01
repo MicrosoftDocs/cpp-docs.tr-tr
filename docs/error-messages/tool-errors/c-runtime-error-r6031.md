@@ -1,27 +1,17 @@
 ---
-title: C çalışma zamanı hatası R6031 | Microsoft Docs
-ms.custom: ''
+title: C çalışma zamanı hatası R6031
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - R6031
-dev_langs:
-- C++
 helpviewer_keywords:
 - R6031
 ms.assetid: 805d4cd1-cb2f-43fe-87e6-e7bd5b7329c5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4a0ccd608baa2765ae355a16b9a71afbf3695d8f
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 6ef3f5fa7d063fdc300e6ac28ca519992525851c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48859789"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564235"
 ---
 # <a name="c-runtime-error-r6031"></a>C çalışma zamanı hatası R6031
 

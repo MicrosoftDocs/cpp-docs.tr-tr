@@ -1,10 +1,6 @@
 ---
-title: Cmfctooltipınfo sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cmfctooltipınfo sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCToolTipInfo
 - AFXTOOLTIPCTRL/CMFCToolTipInfo
@@ -21,8 +17,6 @@ f1_keywords:
 - AFXTOOLTIPCTRL/CMFCToolTipInfo::m_clrText
 - AFXTOOLTIPCTRL/CMFCToolTipInfo::m_nGradientAngle
 - AFXTOOLTIPCTRL/CMFCToolTipInfo::m_nMaxDescrWidth
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCToolTipInfo [MFC], m_bBalloonTooltip
 - CMFCToolTipInfo [MFC], m_bBoldLabel
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - CMFCToolTipInfo [MFC], m_nGradientAngle
 - CMFCToolTipInfo [MFC], m_nMaxDescrWidth
 ms.assetid: f9d3d7f8-1f08-4342-a7b2-683860e5d2a5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4685b050f7fca71a8aaaf05b072069bdd985ccdc
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 07f2882570e77d554230853dff87bc81df80e4cd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061689"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668630"
 ---
 # <a name="cmfctooltipinfo-class"></a>Cmfctooltipınfo sınıfı
 

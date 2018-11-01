@@ -1,28 +1,17 @@
 ---
-title: is_nothrow_destructible sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_nothrow_destructible sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_nothrow_destructible
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_nothrow_destructible
 ms.assetid: 0bbd8a28-e312-4d72-bd28-aac027f974d3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 245dd02a8077d652baae87d678122830f95869bc
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 366b40af45c57d058d918c4c2f21d1b2ba486d35
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110350"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656748"
 ---
 # <a name="isnothrowdestructible-class"></a>is_nothrow_destructible sınıfı
 

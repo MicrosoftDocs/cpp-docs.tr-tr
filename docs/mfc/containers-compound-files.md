@@ -1,12 +1,6 @@
 ---
-title: 'Kapsayıcılar: Bileşik dosyalar | Microsoft Docs'
-ms.custom: ''
+title: 'Kapsayıcılar: Bileşik Dosyalar'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - compound files [MFC]
 - compound documents
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - OLE containers [MFC], compound files
 - access modes for files [MFC]
 ms.assetid: 8b83cb3e-76c8-4bbe-ba16-737092b36f49
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 956a53587feb63706b824c502b46b09698f991be
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5a8ba0821d92ab41a4b95fb7b2a26da63c1df285
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433042"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643279"
 ---
 # <a name="containers-compound-files"></a>Kapsayıcılar: Bileşik Dosyalar
 

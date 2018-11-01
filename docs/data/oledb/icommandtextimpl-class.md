@@ -1,10 +1,6 @@
 ---
-title: Icommandtextımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: ICommandTextImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ICommandText
 - GetCommandText
@@ -20,25 +16,18 @@ f1_keywords:
 - ICommandTextImpl.SetCommandText
 - ICommandTextImpl::SetCommandText
 - SetCommandText
-dev_langs:
-- C++
 helpviewer_keywords:
 - ICommandText class
 - GetCommandText method
 - m_strCommandText
 - SetCommandText method
 ms.assetid: 9c2715cc-1e55-4468-8327-85341617ed46
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: a2ddd7e1a4397b36daba8b354c84941d0d1c4d0e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fafd1198776c558ff39ef35c0b7beca538e976ae
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057978"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677701"
 ---
 # <a name="icommandtextimpl-class"></a>ICommandTextImpl Sınıfı
 

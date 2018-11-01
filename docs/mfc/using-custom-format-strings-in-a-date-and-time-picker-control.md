@@ -1,27 +1,17 @@
 ---
-title: Bir tarih ve saat seçici özel biçim dizeleri kullanma Denetim | Microsoft Docs
-ms.custom: ''
+title: Tarih ve Saat Seçici Denetiminde Özel Biçim Dizeleri Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDateTimeCtrl class [MFC], display styles
 - DateTimePicker control [MFC], display styles
 - DateTimePicker control [MFC]
 ms.assetid: 7d577f03-6ca0-4597-9093-50b78f304719
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a8dcfe39a3054d998cf5116ef125a3791d8c4a47
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2e3e980649264a6842abcc9491171e5105dbab17
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405053"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557518"
 ---
 # <a name="using-custom-format-strings-in-a-date-and-time-picker-control"></a>Tarih ve Saat Seçici Denetiminde Özel Biçim Dizeleri Kullanma
 

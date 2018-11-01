@@ -1,28 +1,17 @@
 ---
-title: max_is (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: max_is (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.max_is
-dev_langs:
-- C++
 helpviewer_keywords:
 - max_is attribute
 ms.assetid: 7c851f5c-6649-4d77-a792-247c37d8f560
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: a0dc76d9478a2639103196b33c0132c07be76860
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 10732d5ba3251185dc7027e3449486af3037f763
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073987"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627480"
 ---
 # <a name="maxis"></a>max_is
 

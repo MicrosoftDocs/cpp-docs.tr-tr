@@ -1,12 +1,6 @@
 ---
-title: İçeri aktarma kitaplıkları ve dışarı aktarma dosyalarıyla çalışma | Microsoft Docs
-ms.custom: ''
+title: İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - LIB [C++], /DEF option
 - import libraries
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - export files
 - import libraries, creating
 ms.assetid: d8175596-9773-4c2f-959d-b05b065a5161
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 28b4b94025c813ea526964ed6395a2e6af1ac0b9
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 71162d896ee76d99f5d47dfa670b62d456243837
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721246"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445688"
 ---
 # <a name="working-with-import-libraries-and-export-files"></a>İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma
 

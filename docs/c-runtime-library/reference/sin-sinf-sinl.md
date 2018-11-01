@@ -1,10 +1,6 @@
 ---
-title: Sin, sinf, sinl | Microsoft Docs
-ms.custom: ''
+title: Sin, sinf, sinl
 ms.date: 04/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - sinl
 - sinf
@@ -27,8 +23,6 @@ f1_keywords:
 - sinf
 - sinl
 - sin
-dev_langs:
-- C++
 helpviewer_keywords:
 - _sinl function
 - sinl function
@@ -37,20 +31,16 @@ helpviewer_keywords:
 - trigonometric functions
 - sinf function
 ms.assetid: 737de73e-3590-45f9-8257-dc1c0c489dfc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f99e7792e177c6203d38a368f3dd4125fe848a76
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7006d7246837e5dc69733a007b3f7dab1c55280e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407583"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430368"
 ---
 # <a name="sin-sinf-sinl"></a>Sin, sinf, sinl
 
-Kayan nokta değeri sinüsünü hesaplar.
+Bir kayan nokta değeri sinüsünü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,26 +62,26 @@ Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş değeri
 
-**Sin** işlevleri sinüsünü Döndür *x*. Varsa *x* büyük veya 263 eşit veya daha az veya buna eşit -263, sonuç anlamlı kaybı oluşur.
+**Sin** işlevleri sinüsünü *x*. Varsa *x* büyüktür veya 263'e eşit veya daha az veya buna eşit -263, sonuçta anlam kaybına gerçekleşir.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, UL|Yok.|_DOMAIN|
-|± ∞ (sin, sinf, sinl)|GEÇERSİZ|_DOMAIN|
+|± QNAN, ONRAKİNİ BUL|Yok.|_DOMAIN|
+|± ∞ (sinüs, sinf, sinl)|GEÇERSİZ|_DOMAIN|
 
-Dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Dönüş kodları hakkında daha fazla bilgi için bkz. [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **sin** alın ve dönüş **float** veya **uzun** **çift** değerleri. Bir C programı **sin** her zaman alan ve döndüren **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **sin** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **sin** her zaman alan ve döndüren **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgisi (C)|Gerekli üstbilgisi (C++)|
+|Yordam|Gerekli başlık (C)|Gerekli başlık (C++)|
 |-|-|-|
 |**sin**, **sinf**, **sinl**|\<Math.h >|\<cmath > veya \<math.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

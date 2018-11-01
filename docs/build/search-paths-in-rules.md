@@ -1,27 +1,17 @@
 ---
-title: Yolları kurallarda Ara | Microsoft Docs
-ms.custom: ''
+title: Yolları Kurallarda Ara
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - search paths in NMAKE inference rules
 - inference rules in NMAKE
 - rules, inference
 ms.assetid: 38feded6-536d-425d-bf40-fff3173a5506
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c96ee89367c3ac289dffde9029cb2b5d3cdc3e89
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 26b02fa76920f0d0ff380dacd5aa76cfe8e92c79
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703982"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649975"
 ---
 # <a name="search-paths-in-rules"></a>Yolları Kurallarda Ara
 

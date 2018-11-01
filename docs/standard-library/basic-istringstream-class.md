@@ -1,18 +1,12 @@
 ---
-title: basic_istringstream sınıfı | Microsoft Docs
-ms.custom: ''
+title: basic_istringstream Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - sstream/std::basic_istringstream
 - sstream/std::basic_istringstream::allocator_type
 - sstream/std::basic_istringstream::rdbuf
 - sstream/std::basic_istringstream::str
 - sstream/std::basic_istringstream::swap
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::basic_istringstream [C++]
 - std::basic_istringstream [C++], allocator_type
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - std::basic_istringstream [C++], str
 - std::basic_istringstream [C++], swap
 ms.assetid: 1d5bb4b5-793d-4833-98e5-14676c451915
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ca24c555373b1ae9c09bb8c35daaffe61768813
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fdf622bbef370e8b3625f419be29f293bc06eacc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062996"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643280"
 ---
 # <a name="basicistringstream-class"></a>basic_istringstream Sınıfı
 

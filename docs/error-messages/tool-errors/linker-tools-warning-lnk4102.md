@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları uyarısı LNK4102 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Uyarısı LNK4102
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK4102
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK4102
 ms.assetid: bfd1b17e-05c7-4bc2-80d6-2888b1a425b2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9daaffc4ddfa9a869c2e60e2c05dc2b7e296d94b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0f9c8649988dd3056e98730ac4b02022a8c9dd51
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031872"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643098"
 ---
 # <a name="linker-tools-warning-lnk4102"></a>Bağlayıcı Araçları Uyarısı LNK4102
 

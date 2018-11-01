@@ -1,14 +1,8 @@
 ---
-title: Özel denetimler iletişim kutusu düzenleyicisindeki (C++) | Microsoft Docs
-ms.custom: ''
+title: Özel denetimler iletişim kutusu düzenleyicisindeki (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - Custom Control
-dev_langs:
-- C++
 helpviewer_keywords:
 - controls [C++], templates
 - custom controls [C++], dialog boxes
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - dialog box controls [C++], custom (user) controls
 - Dialog Editor [C++], custom controls
 ms.assetid: f494b314-4000-4bbe-bbd0-4b18fb71ede1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 9ae41727caedfaf09ac5f312ea4d794398cb572c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c48ad87948037fa843fdc16a016ae23bf139feb1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383434"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677103"
 ---
 # <a name="custom-controls-in-the-dialog-editor-c"></a>Özel denetimler iletişim kutusu düzenleyicisindeki (C++)
 

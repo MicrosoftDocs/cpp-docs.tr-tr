@@ -1,23 +1,13 @@
 ---
-title: Alıntılanan dosya adlarını dahil olmak üzere | Microsoft Docs
-ms.custom: ''
+title: Tırnak İşaretli Dosya Adlarını Dahil Etme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 789a047e-ea38-4c99-b71d-a2ad9c81daee
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d3e865df95d92dcad6b414da11677b5212e9a9f3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 11beaa3a91f476348c57b12ab3febad7cb9c89fc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46109944"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656722"
 ---
 # <a name="including-quoted-filenames"></a>Tırnak İşaretli Dosya Adlarını Dahil Etme
 

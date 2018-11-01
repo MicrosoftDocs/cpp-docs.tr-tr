@@ -1,12 +1,6 @@
 ---
-title: Çoklu iş parçacığı kullanan Win32 programı yazma | Microsoft Docs
-ms.custom: ''
+title: Çoklu İş Parçacığı Kullanan Win32 Programı Yazma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - thread stacks [C++]
 - resources [C++], multithreading
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - mutex [C++]
 - threading [C++], thread stacks
 ms.assetid: 1415f47d-417f-4f42-949b-946fb28aab0e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bf9be32b4e9f9d46be9c3aa6f2b80a331a18ea67
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c7d9790cfee39fbddd9ab545d48fa375d56f3a05
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386281"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561336"
 ---
 # <a name="writing-a-multithreaded-win32-program"></a>Çoklu İş Parçacığı Kullanan Win32 Programı Yazma
 

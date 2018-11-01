@@ -1,9 +1,6 @@
 ---
-title: HStringReference sınıfı | Microsoft Docs
-ms.custom: ''
+title: HStringReference Sınıfı
 ms.date: 09/25/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference
@@ -14,8 +11,6 @@ f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator==
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator!=
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator<
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HStringReference class
 - Microsoft::WRL::Wrappers::HStringReference::CopyTo method
@@ -26,17 +21,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HStringReference::operator!= operator
 - Microsoft::WRL::Wrappers::HStringReference::operator< operator
 ms.assetid: 9bf823b1-17eb-4ac4-8c5d-27d27c7a4150
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 4754a74365b2c596e240bd13eb11fdc852205e2c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 09bf994a77bb6b7c9c9e97566ae01e02bd5070c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077898"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441762"
 ---
 # <a name="hstringreference-class"></a>HStringReference Sınıfı
 

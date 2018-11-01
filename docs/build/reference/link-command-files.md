@@ -1,14 +1,8 @@
 ---
-title: LINK komut dosyaları | Microsoft Docs
-ms.custom: ''
+title: LINK Komut Dosyaları
 ms.date: 09/05/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - link
-dev_langs:
-- C++
 helpviewer_keywords:
 - syntax, LINK command files
 - command files [C++]
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - LINK tool [C++], command-line syntax
 - command files [C++], LINK
 ms.assetid: 7154511c-32b9-4e5b-a515-3922fa9de48e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2611fc0c16e4ff30d7802989518ca8c5d8dc33af
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3a116736a6ed00ea4d378e68c6f515aa96ea2f99
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713738"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676453"
 ---
 # <a name="link-command-files"></a>LINK Komut Dosyaları
 

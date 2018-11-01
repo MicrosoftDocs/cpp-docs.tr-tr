@@ -1,10 +1,6 @@
 ---
-title: Matematik hatası sabitleri | Microsoft Docs
-ms.custom: ''
+title: Matematik Hatası Sabitleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - _PLOSS
 - _UNDERFLOW
@@ -12,8 +8,6 @@ f1_keywords:
 - _SING
 - _DOMAIN
 - _OVERFLOW
-dev_langs:
-- C++
 helpviewer_keywords:
 - _TLOSS constant
 - _SING constant
@@ -29,16 +23,12 @@ helpviewer_keywords:
 - _PLOSS constant
 - math error constants
 ms.assetid: 4be933a6-674e-45a5-8ac9-090023542f5b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 63da23d30b12859c79427432bce38e1156e190de
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8a649c4f6718ddfbfa466c307d2edb3aad396f7b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46063339"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623849"
 ---
 # <a name="math-error-constants"></a>Matematik Hatası Sabitleri
 

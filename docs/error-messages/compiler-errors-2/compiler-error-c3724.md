@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3724 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3724
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3724
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3724
 ms.assetid: cab8aba7-14fc-406f-8cc6-32744c8f31c1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c7e633594b1f5467c3a8a664029691423db5bb63
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 126317d78785b14f5ef613ec0c83d3e50b825d60
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46115989"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676128"
 ---
 # <a name="compiler-error-c3724"></a>Derleyici Hatası C3724
 

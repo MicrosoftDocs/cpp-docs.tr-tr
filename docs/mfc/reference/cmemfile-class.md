@@ -1,10 +1,6 @@
 ---
-title: CMemFile sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMemFile sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMemFile
 - AFX/CMemFile
@@ -16,8 +12,6 @@ f1_keywords:
 - AFX/CMemFile::GrowFile
 - AFX/CMemFile::Memcpy
 - AFX/CMemFile::Realloc
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMemFile [MFC], CMemFile
 - CMemFile [MFC], Attach
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - CMemFile [MFC], Memcpy
 - CMemFile [MFC], Realloc
 ms.assetid: 20e86515-e465-4f73-b2ea-e49789d63165
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 90203a2e4fc29b28e6c75193ed1db35e25044951
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a7bc54d30df80ec8d56b6a403582ebe4c48858f9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076964"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50634895"
 ---
 # <a name="cmemfile-class"></a>CMemFile sınıfı
 

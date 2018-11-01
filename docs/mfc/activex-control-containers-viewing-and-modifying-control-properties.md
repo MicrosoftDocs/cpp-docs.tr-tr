@@ -1,12 +1,6 @@
 ---
-title: 'ActiveX denetim kapsayıcıları: Görüntüleme ve denetim özelliklerini değiştirme | Microsoft Docs'
-ms.custom: ''
+title: 'ActiveX Denetim Kapsayıcıları: Denetim Özelliklerini Görüntüleme ve Değiştirme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - properties [MFC], viewing and modifying
 - ActiveX control containers [MFC], viewing and modifying properties
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - ActiveX controls [MFC], properties
 - controls [MFC], properties
 ms.assetid: 14ce5152-742b-4e0d-a9ab-c7b456e32918
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9614ecfcd23418f8b0abc08622e8c272bb5548a7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: abddda015a80b21d941409044524e2f526b26f08
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388829"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454952"
 ---
 # <a name="activex-control-containers-viewing-and-modifying-control-properties"></a>ActiveX Denetim Kapsayıcıları: Denetim Özelliklerini Görüntüleme ve Değiştirme
 

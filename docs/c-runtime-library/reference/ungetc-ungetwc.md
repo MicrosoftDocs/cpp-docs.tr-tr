@@ -1,10 +1,6 @@
 ---
-title: ungetc, ungetwc | Microsoft Docs
-ms.custom: ''
+title: ungetc, ungetwc
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - ungetwc
 - ungetc
@@ -25,8 +21,6 @@ f1_keywords:
 - _ungettc
 - ungetwc
 - ungetc
-dev_langs:
-- C++
 helpviewer_keywords:
 - ungetwc function
 - ungettc function
@@ -34,20 +28,16 @@ helpviewer_keywords:
 - _ungettc function
 - ungetc function
 ms.assetid: e0754f3a-b4c6-408f-90c7-e6387b830d84
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6618e3e92d605d9e706331b44b352b41d29d6a61
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 95d2160ba4d008ab67f443d4e9dda7180d62b590
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414593"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633591"
 ---
 # <a name="ungetc-ungetwc"></a>ungetc, ungetwc
 
-Bir karakter geri akışa iter.
+Karakteri akışa geri iter.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,28 +55,28 @@ wint_t ungetwc(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Edilmesini karakter.
+İtilecek karakter.
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı, bu işlevlerin her biri karakter bağımsız verir durumunda *c*. Varsa *c* geri gönderilir ya da hiçbir karakter okuyorsanız Giriş akışı değiştirilmemiştir ve **ungetc** döndürür ** EOF`; **ungetwc` döndürür **WEOF**. Varsa *akış* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **EOF** veya **WEOF** döndürülür ve **errno** ayarlanır **EINVAL**.
+Başarılı, bu işlevlerin her biri karakteri bağımsız değişkenini döndürür, *c*. Varsa *c* geri itilemiyorsa veya herhangi bir karakter okunmamışsa, Giriş akışı değiştirilmez ve **ungetc** döndürür ** EOF`; **ungetwc` döndürür **WEOF**. Varsa *stream* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **EOF** veya **WEOF** döndürülür ve **errno** ayarlanır **EINVAL**.
 
 Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Ungetc** işlevi iter karakter *c* geri üzerine *akış* ve dosya sonu göstergesi temizler. Akış okuma için açık olması gerekir. Bir sonraki üzerinde okuma işlemi *akış* ile başlayan *c*. Gönderme girişiminde **EOF** akışı kullanarak üzerine **ungetc** göz ardı edilir.
+**Ungetc** işlevi karakter gönderim *c* geri *stream* ve dosya sonu göstergesini temizler. Akışın okunmak için açık olmalıdır. İlgili bir sonraki okuma işlemi *stream* ile başlayan *c*. Denemek **EOF** kullanarak akış üzerine **ungetc** göz ardı edilir.
 
-Karakter yerleştirilen tarafından akışta **ungetc** varsa silinebilir **fflush**, [fseek](fseek-fseeki64.md), **fsetpos**, veya [GeriSar](rewind.md) karakter akıştan okunan önce çağrılır. Dosya konumu göstergesi karakterleri geri gönderilen önceki değerine sahip olacaktır. Akışa karşılık gelen harici depolama değiştirilmez. Başarılı bir üzerinde **ungetc** dosya konumu göstergesi bir metin akış karşı çağrıdır belirtilmeyen tüm kadar gönderilen geri karakterleri okuma veya atılır. Her başarılı **ungetc** çağrısı, dosya konumu göstergesi ikili akışın karşı indirildiği; değeri bir çağrıdan önce 0 ise, değer çağrısından sonra tanımlı değil.
+Göre akışa yerleştirilen karakterler **ungetc** çağrılırsa silinebilir **fflush**, [fseek](fseek-fseeki64.md), **fsetpos**, veya [GeriSar](rewind.md) karakter akıştan okunmadan önce çağrılır. Dosya Konum göstergesi karakterler geri itilmeden önceki değerine sahip olacaktır. Akışa karşılık gelen dış depo değişmeden kalır. Başarılı bir üzerinde **ungetc** dosya konumu göstergesi metin akışına yönelik çağrı belirtilmeyen tüm geri itilen karakterler okunana veya atıldı. Her başarılı **ungetc** dosya konumu göstergesi ikili akışa karşı çağrı azaltılır; değer bir çağrıdan önce 0 değerini ise ve çağrının ardından tanımsızdır.
 
-Sonuçları öngörülemeyen varsa **ungetc** bir okuma veya dosya konumlandırma işlemi iki çağrılar arasında olmadan iki kez çağrılır. Çağrı sonra **fscanf**, çağrı **ungetc** sürece başka okuma işlemi başarısız olabilir (gibi **getc**) gerçekleştirilmiştir. Bunun nedeni, **fscanf** kendi kendini çağıran **ungetc**.
+Sonuçların tahmin edilemeyeceğine varsa **ungetc** bir okuma veya dosyada konumlanma işlemi iki çağrı arasında olmadan iki kez çağrılır. Çağrısı yapıldıktan sonra **fscanf**, çağrı **ungetc** başka bir okuma işlemi başarısız olabilir (gibi **getc**) gerçekleştirildi. Bunun nedeni, **fscanf** kendi kendini çağıran **ungetc**.
 
-**ungetwc** bir joker karakter sürümü **ungetc**. Bununla birlikte, her üzerinde başarılı **ungetwc** bir metin veya İkili akış dosya konumu göstergesi değerini karşı çağrı belirtilmeyen tüm gönderilen geri karakterleri okuma veya atılan kadar.
+**ungetwc** geniş karakterli sürümüdür **ungetc**. Ancak, her üzerinde başarılı **ungetwc** çağrısı bir metin veya ikili akışa dosya konumu göstergesi değeri belirtilmeyen tüm geri itilen karakterler okunana veya atılana kadar.
 
-Bu işlevler iş parçacığı ve yürütme sırasında hassas verileri kilitleyin. Kilitleme olmayan bir sürümü için bkz: [_ungetc_nolock, _ungetwc_nolock](ungetc-nolock-ungetwc-nolock.md).
+Bu işlevler, iş parçacığı bakımından güvenlidir ve yürütme sırasında hassas verileri kilitleyin. Kilitleme yapılmayan bir sürüm için bkz. [_ungetc_nolock, _ungetwc_nolock](ungetc-nolock-ungetwc-nolock.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -101,7 +91,7 @@ Bu işlevler iş parçacığı ve yürütme sırasında hassas verileri kilitley
 |**ungetc**|\<stdio.h >|
 |**ungetwc**|\<stdio.h > veya \<wchar.h >|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -139,6 +129,6 @@ Next character in stream = 'a'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>
 [putc, putwc](putc-putwc.md)<br/>

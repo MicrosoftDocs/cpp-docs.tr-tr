@@ -1,10 +1,6 @@
 ---
-title: _tzset | Microsoft Docs
-ms.custom: ''
+title: _tzset
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _tzset
 apilocation:
@@ -22,30 +18,24 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _tzset
-dev_langs:
-- C++
 helpviewer_keywords:
 - _tzset function
 - time environment variables
 - environment variables, setting time
 ms.assetid: 3f6ed537-b414-444d-b272-5dd377481930
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 15464ac8be075d44a9a42223964239538508a683
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 33fd1cc0a618fccc4a59e5aff059d3f2cdeec8fe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417382"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661766"
 ---
 # <a name="tzset"></a>_tzset
 
-Ayarlar, ortam değişkenleri zaman.
+Zaman ortam değişkenlerini ayarlar.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,47 +45,47 @@ void _tzset( void );
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Tzset** işlevini kullanır ve ortam değişkeninin geçerli ayar **TZ** üç genel değişkenleri için değerleri atamak için: **_daylight**, **_timezone** , ve **_tzname**. Bu değişkenler tarafından kullanılan [_ftime](ftime-ftime32-ftime64.md) ve [damgasını](localtime-localtime32-localtime64.md) yerel saate ve tarafından Eşgüdümlü Evrensel Saat (UTC) düzeltmeler yapmak için işlevleri [zaman](time-time32-time64.md) için işlevi Sistem saati UTC işlem. Ayarlamak için aşağıdaki sözdizimini kullanın **TZ** ortam değişkeni:
+**_Tzset** işlevi, ortam değişkeninin geçerli ayarını kullanan **TZ** üç genel değişkenlerine değer atamak için: **_daylight**, **_timezone** , ve **_tzname**. Bu değişkenler tarafından kullanılan [_ftime](ftime-ftime32-ftime64.md) ve [localtime](localtime-localtime32-localtime64.md) Eşgüdümlü Evrensel Saat (UTC), yerel saat ve tarafından düzeltmeler yapmak için işlevleri [zaman](time-time32-time64.md) işlevi UTC sistem saatinden hesaplamak. Ayarlamak için aşağıdaki sözdizimini kullanın **TZ** ortam değişkeni:
 
 > **TZ ayarlamak =**_tzn_ \[ **+** &#124; **-**]*hh* \[ **:**_mm_\[**:**_ss_]] [*dzn*]
 
 |Parametre|Açıklama|
 |-|-|
-*tzn*|PST gibi üç harfli saat dilimi adı. Yerel saat UTC doğru uzaklık belirtmeniz gerekir.
-*hh*|UTC ve yerel saat arasındaki farkı saat. İşareti (+) pozitif değer isteğe bağlıdır.
-*mm*|Dakika. Gelen ayrılmış *hh* bir virgülle (**:**).
-*ss*|Saniye sayısı. Gelen ayrılmış *mm* bir virgülle (**:**).
-*Dzn*|Üç harfli gün ışığından yararlanma saati dilimi saati gibi. Yaz Saati hiçbir zaman yürürlükte yerleşim ise, **TZ** için bir değer olmadan *dzn*. C çalışma zamanı kitaplığı gün ışığından yararlanma saati (DST) hesaplama uygulamak için Amerika Birleşik Devletleri kuralları varsayar.
+*tzn*|Üç harfli saat dilim adı, PDT gibi. UTC yerel saatinden doğru sapmayı belirtmeniz gerekir.
+*hh*|UTC ve yerel saat arasındaki saat farkı. İşaretini (+) pozitif değerler için isteğe bağlıdır.
+*aa*|Dakika. Ayrılmıştır *hh* bir virgülle (**:**).
+*ss*|Saniye sayısı. Ayrılmıştır *mm* bir virgülle (**:**).
+*Dzn*|Üç harfli Yaz Saati dilimi, PDT gibi. Gün ışığından yararlanma hiçbir zaman yürürlükte yerleşim içinde değilse, **TZ** için bir değer olmadan *dzn*. C çalışma zamanı kitaplığı, gün ışığından yararlanma saatinin (DST) hesaplanmasını uygulamak için ABD kurallarını varsayar.
 
 > [!NOTE]
-> Bilgisayar zaman farkı oturum dikkatli olun. UTC (geriye doğru yerine) için yerel saat uzaklığı zaman farkı olduğu için onun oturum sezgisel beklediğiniz tersi olabilir. Öncesinde UTC saat dilimleri için saat farkı negatifse; Bu UTC arkasında pozitif farktır.
+> Al, saat farkının işaretini hesaplarken dikkatli olun. Zaman farkı yerel saat uzaklığı için UTC (tersi yerine) olduğundan, işareti beklediğinizin zıttı tersi olabilir. Utc'den saat dilimleri için saat farkı negatiftir; Bu gerisindekiler için fark pozitiftir.
 
-Örneğin, ayarlamak için **TZ** Almanya, geçerli saat diliminizde karşılık gelecek şekilde ortam değişkeni komut satırında aşağıdakileri girin:
+Örneğin, ayarlanacak **TZ** ortam değişkenini Almanya'daki geçerli saat dilimine karşılık gelecek şekilde, komut satırında aşağıdakileri girin:
 
 > **TZ ayarlamak GST 1GDT =**
 
-Bu kullanımları GST Almanca Standart Saati, belirtmek için komut UTC Almanya arkasında (veya Almanya UTC öncesinde bir saattir diğer sözcükler,), bir saat olduğunu varsayar ve Almanya – ışığından gözlemleyen varsayar.
+Bu komut, Alman standart saatini göstermek için GST kullanır UTC Almanya, utc'nin (veya Almanya, utc'nin bir saat olan başka bir deyişle,), bir saat olduğunu varsayar ve Almanya'nın Yaz Saati uygulamasını gözlediğini varsayar.
 
-Varsa **TZ** değeri ayarlanmazsa, **_tzset** işletim sistemi tarafından belirtilen saat dilimi bilgilerini kullanmaya çalışır. Windows işletim sisteminde, Denetim Masası'ndaki Tarih uygulama bu bilgileri belirtildi. Varsa **_tzset** bu bilgileri elde edemiyor Pasifik saat diliminde güveninin varsayılan PST8PDT kullanır.
+Varsa **TZ** değeri ayarlanmazsa, **_tzset** işletim sisteminin belirttiği zaman dilimini kullanmaya çalışır. Windows işletim sisteminde, Denetim Masası'ndaki Tarih/saat uygulamasında bu bilgiler belirtilir. Varsa **_tzset** bu bilgiyi elde PST8PDT Pasifik Saat dilimini varsayılan olarak kullanır.
 
-Temel **TZ** ortam değişkeni değeri, aşağıdaki değerleri genel değişkenler atanır **_daylight**, **_timezone**, ve **_tzname** zaman **_tzset** adı verilir:
+Temel **TZ** ortam değişken değerini, aşağıdaki değerleri genel değişkenlerine atanır **_daylight**, **_timezone**, ve **_tzname** olduğunda **_tzset** çağrılır:
 
 |Genel değişkeni|Açıklama|Varsayılan değer|
 |---------------------|-----------------|-------------------|
-|**_daylight**|Bir gün ışığından yararlanma saati bölge belirtilmişse sıfır olmayan bir değer **TZ** ayarlama; Aksi takdirde, 0.|1.|
-|**_timezone**|Yerel saat ile UTC arasındaki farkı saniye cinsinden.|28800 (28800 saniye eşittir 8 saat)|
-|**_tzname**[0]|Saat dilimi adı değeri dize **TZ** ortam değişkeni; boş ise **TZ** ayarlanmadı.|PST|
-|**_tzname**[1]|Dize değeri gün ışığından yararlanma saati bölgenin; gelen gün ışığından yararlanma saati dilimi atlanırsa boş **TZ** ortam değişkeni.|SAATİ|
+|**_daylight**|Gün ışığından yararlanma saat dilimi belirtilmişse sıfır olmayan bir değer **TZ** ayarlama; Aksi takdirde 0.|1.|
+|**_timezone**|Yerel saat ile UTC arasındaki saniye farkı.|28800 (28800 saniye 8 saate eşittir)|
+|**_tzname**[0]|Dize değeri saat dilimi adının **TZ** ortam değişkeni; boş ise **TZ** ayarlanmadı.|PASİFİK SAATİ|
+|**_tzname**[1]|Gün ışığından yararlanma saat dilimi dize değeri; gün ışığından yararlanma saat dilimi atlanırsa boş **TZ** ortam değişkeni.|PDT|
 
-Önceki tabloda gösterilen varsayılan değerler **_daylight** ve **_tzname** dizi karşılık gelen "PST8PDT." Gelen DST bölge atlanırsa **TZ** ortam değişkeni, değeri **_daylight** 0'dır ve [_ftime](ftime-ftime32-ftime64.md), [gmtime](gmtime-gmtime32-gmtime64.md)ve [damgasını](localtime-localtime32-localtime64.md) işlevler için kendi DST bayraklar 0 döndürür.
+Önceki tabloda gösterilen varsayılan değerler **_daylight** ve **_tzname** dizi karşılık gelen "PST8PDT" DST bölgesi atlanırsa **TZ** ortam değişkeni, değerini **_daylight** 0'dır ve [_ftime](ftime-ftime32-ftime64.md), [gmtime](gmtime-gmtime32-gmtime64.md)ve [localtime](localtime-localtime32-localtime64.md) İşlevler, kendi DST bayrakları için 0 döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_tzset**|\<time.h >|
+|**_tzset**|\<TIME.h >|
 
-**_Tzset** Microsoft'a özgü işlevdir. Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+**_Tzset** Microsoft'a özgü işlevidir. Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

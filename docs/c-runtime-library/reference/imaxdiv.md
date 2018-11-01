@@ -1,10 +1,6 @@
 ---
-title: imaxdiv | Microsoft Docs
-ms.custom: ''
+title: imaxdiv
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - imaxdiv
 apilocation:
@@ -22,25 +18,19 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - imaxdiv
-dev_langs:
-- C++
 helpviewer_keywords:
 - imaxdiv function
 ms.assetid: 7d90126f-fdc2-4986-9cdf-94e4c9123d26
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db2a57e9b91672d39fbce5eaee061043604a0998
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 23067b2028fc11193fae707e25165fb0ce754515
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399702"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434464"
 ---
 # <a name="imaxdiv"></a>imaxdiv
 
-Sayının ve herhangi bir boyuttaki iki tamsayı değerleri kalanını tek bir işlem olarak hesaplar.
+Sayının ve herhangi boyuttaki iki tamsayı değerinin kalanını tek bir işlem olarak hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,15 +47,15 @@ imaxdiv_t imaxdiv(
 Pay.
 
 *denom*<br/>
-Payda değeri.
+Payda.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**imaxdiv** türünde bir bağımsız değişkenlerle çağrıldı [intmax_t](../../c-runtime-library/standard-types.md) türü yapısını döndürür [imaxdiv_t](../../c-runtime-library/standard-types.md) sayının ve kalanı oluşur.
+**imaxdiv** türünde bağımsız değişkenlerle çağrılır [intmax_t](../../c-runtime-library/standard-types.md) türünden bir yapıyı döndürür [imaxdiv_t](../../c-runtime-library/standard-types.md) bölümü ve kalanı içerir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İmaxdiv** işlev böler *numarası* tarafından *denom* ve böylece sayının ve kalanı hesaplar. **İmaxdiv_t** yapısı içeren sayının **intmax_t** **quot**ve kalan **intmax_t** **rem**. Sayının işaretini, matematiksel sayının aynıdır. Mutlak değerini matematiksel sayının mutlak değerini değerinden en büyük tamsayıdır. Paydanın 0 ise, program bir hata iletisi ile sona erer.
+**İmaxdiv** işlev böler *numarası* tarafından *denom* ve böylece bölümü ve kalanı hesaplar. **İmaxdiv_t** yapısı kalanını içerir **intmax_t** **quot**ve kalanı **intmax_t** **rem**. Bölüm işareti matematiksel olarak aynıdır. Mutlak değeri matematiksel sayının mutlak değerinden daha küçük olan en büyük tamsayıdır. Payda 0 ise, program bir hata iletisi ile sona erer.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -73,7 +63,7 @@ Payda değeri.
 |-------------|---------------------|
 |**imaxdiv**|\<inttypes.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -103,7 +93,7 @@ int main(int argc, char *argv[])
 }
 ```
 
-Yerleşik ve komut satırı parametreleri ile adlı `9460730470000000 8766`, bu çıkış kodu oluşturur:
+Yerleşik ve ardından komut satırı parametreleriyle çağrıldığında, `9460730470000000 8766`, kod aşağıdaki çıkışı üretir:
 
 ```Output
 The call to imaxdiv(9460730470000000, 8766)

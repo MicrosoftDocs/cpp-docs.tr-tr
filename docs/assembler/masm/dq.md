@@ -1,27 +1,17 @@
 ---
-title: DQ | Microsoft Docs
-ms.custom: ''
+title: DQ
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - DQ
-dev_langs:
-- C++
 helpviewer_keywords:
 - DQ directive
 ms.assetid: 15de9c41-db90-4bca-affc-426eeb38ebc0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bd13549977edb2b0c80673cc8cb7b6279985b67f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 4aeddc9528c281596501a112cb64184a8feca51b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43687492"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622252"
 ---
 # <a name="dq"></a>DQ
 

@@ -1,12 +1,6 @@
 ---
-title: Zengin düzenleme denetimlerinde Operations Stream | Microsoft Docs
-ms.custom: ''
+title: Zengin Düzenleme Denetimlerinde Akış İşlemleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRichEditCtrl class [MFC], stream operations
 - CRichEditCtrl class [MFC], stream storage
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - stream operations in CRichEditCtrl
 - stream storage and CRichEditCtrl
 ms.assetid: 110b4684-1e76-4ca6-9ef0-5bc8b2d93c78
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f34417d765151adbd7a6c02b7a76ef9d5732994f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 099b29a3a3ff1337c71d14d1ae7bfa0a182a6903
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441999"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584417"
 ---
 # <a name="stream-operations-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Akış İşlemleri
 

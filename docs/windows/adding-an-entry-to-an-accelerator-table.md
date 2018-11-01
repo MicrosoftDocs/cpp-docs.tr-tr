@@ -1,27 +1,16 @@
 ---
-title: (C++) Hızlandırıcı tablosunu giriş ekleme | Microsoft Docs
-ms.custom: ''
+title: (C++) Hızlandırıcı tablosunu giriş ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - accelerator tables [C++], adding entries
 - New Accelerator command
 ms.assetid: 559c2415-8323-4339-9447-6966665f8288
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 0e0017e0c4d5462ef985b70b44120ff20066f626
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 63ae7296d7571bb70f4ca7abe05f39591cc40ced
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391806"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626856"
 ---
 # <a name="adding-an-entry-to-an-accelerator-table-c"></a>(C++) Hızlandırıcı tablosunu giriş ekleme
 

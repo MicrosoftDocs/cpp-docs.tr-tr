@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4686 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4686
 ms.date: 08/27/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4686
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4686
 ms.assetid: 767c83c2-9e4b-4f9e-88c8-02128ba563f4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 32a44cd929eb7629ef317ce9847950b613bde52c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 5e23e6aa69fe8a59e3dfd22af7e33780c223cdd3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202086"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584528"
 ---
 # <a name="compiler-warning-level-3-c4686"></a>Derleyici Uyarısı (Düzey 3) C4686
 

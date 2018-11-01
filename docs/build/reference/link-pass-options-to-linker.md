@@ -1,14 +1,8 @@
 ---
-title: -bağlantı (seçenekleri bağlayıcıya geçir) | Microsoft Docs
-ms.custom: ''
+title: /link (Seçenekleri Bağlayıcıya Geçir)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /link
-dev_langs:
-- C++
 helpviewer_keywords:
 - /link compiler option [C++]
 - pass options to linker
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - -link compiler option [C++]
 - cl.exe compiler [C++], passing options to linker
 ms.assetid: 16902a94-c094-4328-841f-3ac94ca04848
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 663407e4948ebc4e3c0a1676c44e8d2b4bd53fcc
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: dfa39988782a0c5bd121b6e18402d3f6b67a13e9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45704125"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50574934"
 ---
 # <a name="link-pass-options-to-linker"></a>/link (Seçenekleri Bağlayıcıya Geçir)
 

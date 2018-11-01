@@ -1,27 +1,17 @@
 ---
-title: const_mem_fun_t sınıfı | Microsoft Docs
-ms.custom: ''
+title: const_mem_fun_t Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xfunctional/std::const_mem_fun_t
-dev_langs:
-- C++
 helpviewer_keywords:
 - const_mem_fun_t class
 ms.assetid: f169d381-019b-4a0e-a9a3-54da6d948270
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b813128f07376d017a3ea76d6bb359db437f6f3
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 16169c094e74178f5a2dd67f70bf75c1f3ee8d87
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100202"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563598"
 ---
 # <a name="constmemfunt-class"></a>const_mem_fun_t Sınıfı
 

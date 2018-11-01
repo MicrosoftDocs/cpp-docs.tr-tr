@@ -1,27 +1,17 @@
 ---
-title: . SIRADA | Microsoft Docs
-ms.custom: ''
+title: .WHILE
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .WHILE
-dev_langs:
-- C++
 helpviewer_keywords:
 - .WHILE directive
 ms.assetid: 7c5e78ae-1bfd-4dcf-aa4c-ba940bcf7793
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7f30a204fccb1d565c173f3422e6c7f9148c1fed
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f4f2aa01bc6bedb9b55477d59b037dc7cd0a88e7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680944"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626935"
 ---
 # <a name="while"></a>.WHILE
 

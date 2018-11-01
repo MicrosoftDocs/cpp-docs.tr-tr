@@ -1,25 +1,15 @@
 ---
-title: Bir şablon kitaplığı (ATL) kullanarak | Microsoft Docs
-ms.custom: ''
+title: Şablon kitaplığı (ATL) kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - template libraries
 ms.assetid: 5e80ec6e-a61c-41ce-b34b-9a6252c46265
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 91a9c10bef285780ded145e33800ebd3db198827
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 48040088b0dca44f47b16c26893546117dbc6bf2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754806"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627467"
 ---
 # <a name="using-a-template-library"></a>Şablon kitaplığı kullanma
 

@@ -1,10 +1,6 @@
 ---
-title: sscanf, _sscanf_l, swscanf, _swscanf_l | Microsoft Docs
-ms.custom: ''
+title: sscanf, _sscanf_l, swscanf, _swscanf_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - swscanf
 - sscanf
@@ -29,8 +25,6 @@ f1_keywords:
 - _stscanf_l
 - sscanf
 - _swscanf_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - swscanf function
 - _stscanf function
@@ -46,20 +40,16 @@ helpviewer_keywords:
 - sscanf_l function
 - stscanf_l function
 ms.assetid: c2dcf0d2-9798-499f-a4a8-06f7e2b9a80c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9ac67b27564f694631977fd21c96922132b633e2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 60dbb8e89e531c3020c243d998a69370095424e5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413612"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661974"
 ---
 # <a name="sscanf-sscanfl-swscanf-swscanfl"></a>sscanf, _sscanf_l, swscanf, _swscanf_l
 
-Bir dizeden veri okuma biçimlendirilmiş. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).
+Okuma, verileri bir dizeden biçimlendirilmiş. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -91,10 +81,10 @@ int _swscanf_l(
 ### <a name="parameters"></a>Parametreler
 
 *Arabellek*<br/>
-Depolanan verileri
+Depolanan veri
 
-*Biçimi*<br/>
-Biçim denetimi dizesi. Daha fazla bilgi için bkz: [biçim belirtimleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
+*Biçim*<br/>
+Biçim denetimi dizesi. Daha fazla bilgi için [biçim belirtimleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
 
 *Bağımsız değişken*<br/>
 İsteğe bağlı bağımsız değişkenler
@@ -104,22 +94,22 @@ Kullanılacak yerel ayar
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri başarıyla dönüştürülür ve atanan alan sayısını döndürür; dönüş değerini okumak ancak atanmamış alanları içermez. Dönüş değeri 0, hiçbir alan atandığını belirtir. Dönüş değeri **EOF** bir hata için veya dize sonu ilk dönüştürmeden önce ulaşılırsa.
+Bu işlevlerin her biri, başarıyla dönüştürülen ve atanan alanların sayısını getirir; dönüş değeri, Okunmuş ancak atanmamış alanları içermez. 0 değeri hiçbir alan atanmamış belirtir. Dönüş değeri **EOF** bir hata için veya ilk dönüştürmeden önce dizenin sonuna ulaşılırsa.
 
-Varsa *arabellek* veya *biçimi* olan bir **NULL** işaretçi, geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
+Varsa *arabellek* veya *biçimi* olduğu bir **NULL** işaretçiyse, geçersiz parametre işleyicisi çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
 
 Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Sscanf** işlevi verileri okur *arabellek* her tarafından belirtilen konuma *bağımsız değişkeni*. Her *bağımsız değişkeni* bir tür belirteci karşılık gelen türüne sahip bir değişken için bir işaretçi olmalıdır *biçimi*. *Biçimi* giriş yorumu alanları ve aynı bağımsız değişkeni denetimleri form ve olarak işlev *biçimi* bağımsız değişkeni için **scanf** işlevi. Kopyalama çakışma dizeleri arasında yer alıyorsa, tanımlanmamış bir davranıştır.
+**Sscanf** işlevi, verileri okuyan *arabellek* her tarafından verilen konuma *bağımsız değişken*. Her *bağımsız değişken* içinde bir tür belirleyiciye karşılık gelen bir türe sahip değişkene işaret etmelidir *biçimi*. *Biçimi* giriş alanlarının yorumunu aynı bağımsız değişkeni denetler ve form ve işleve *biçimi* için bağımsız değişken **scanf** işlevi. Kopyalama çakışan dizeler arasında yer alırsa davranış tanımsızdır.
 
 > [!IMPORTANT]
-> Bir dizeyle'ne zaman okuma **sscanf**, her zaman için bir genişliği belirtmeniz **%s** biçimi (örneğin, **"% 32s"** yerine **"%s"**); Aksi takdirde , düzgün biçimlendirilmemiş giriş arabellek taşması kolayca neden olabilir.
+> Bir dizeyle okurken **sscanf**, her zaman için bir genişlik belirtin **%s** biçiminde (örneğin, **"% 32s"** yerine **"%s"**); Aksi takdirde , hatalı biçimlendirilmiş bir giriş arabellek taşmasına kolayca neden olabilir.
 
-**swscanf** bir joker karakter sürümü **sscanf**; bağımsız değişkenleri **swscanf** joker karakter dizelerdir. **sscanf** onaltılık birden çok baytlı karakterler işlemez. **swscanf** Unicode tam genişlikli onaltılık veya "uyumluluk bölge" karakterleri işlemez. Aksi takdirde, **swscanf** ve **sscanf** aynı şekilde davranır.
+**swscanf** geniş karakterli sürümüdür **sscanf**; bağımsız değişkenler **swscanf** geniş karakterli dizelerdir. **sscanf** çok baytlı onaltılı karakter işlemez. **swscanf** tam genişlikli onaltılık Unicode veya "uyumluluk bölgesi" karakterlerini işlemez. Aksi takdirde, **swscanf** ve **sscanf** aynı şekilde davranır.
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -135,7 +125,7 @@ Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar
 |**sscanf**, **_sscanf_l**|\<stdio.h >|
 |**swscanf**, **_swscanf_l**|\<stdio.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -180,7 +170,7 @@ Real:     = 15.000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>

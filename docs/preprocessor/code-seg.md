@@ -1,29 +1,19 @@
 ---
-title: code_seg | Microsoft Docs
-ms.custom: ''
+title: code_seg
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - code_seg_CPP
 - vc-pragma.code_seg
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, code_seg
 - code_seg pragma
 ms.assetid: bf4faac1-a511-46a6-8d9e-456851d97d56
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d75c09751f0d3e0ac67306b35be7837d415442e2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 794280bc3b439a4c833483de51ffad91ebd6fc9d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077809"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50655955"
 ---
 # <a name="codeseg"></a>code_seg
 İşlevlerin .obj dosyasında saklandığı metin segmentini belirtir.

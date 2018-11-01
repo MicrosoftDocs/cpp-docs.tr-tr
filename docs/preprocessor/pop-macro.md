@@ -1,29 +1,19 @@
 ---
-title: pop_macro | Microsoft Docs
-ms.custom: ''
+title: pop_macro
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.pop_macro
 - pop_macro_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - pop_macro pragma
 - pragmas, pop_macro
 ms.assetid: 3b5489d0-69ba-4c66-b572-2748af0f12bb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bf367a085b5e566a7783067aa7750eb5ecd343a3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 28529ad0d9204034ea25fbca3696982a38889951
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072323"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437265"
 ---
 # <a name="popmacro"></a>pop_macro
 Ayarlar *macro_name* değeri bu makroya yönelik yığının en üstündeki makro.

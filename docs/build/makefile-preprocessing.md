@@ -1,26 +1,16 @@
 ---
-title: Derleme görevleri dosyası önişleme | Microsoft Docs
-ms.custom: ''
+title: Derleme Görevleri Dosyası Önişlemesi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - preprocessing makefiles
 - makefiles, preprocessing
 ms.assetid: a9185139-97c9-4adb-b4a9-1ec395cce9f8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 11bd2b74a17e5fd7b2507a531fda6da0a31e53c8
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f603282c979147600889a3daab39bfa3d1702c78
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722888"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646283"
 ---
 # <a name="makefile-preprocessing"></a>Derleme Görevleri Dosyası Önişlemesi
 

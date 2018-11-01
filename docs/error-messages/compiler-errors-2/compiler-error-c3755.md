@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3755 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3755
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3755
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3755
 ms.assetid: 9317b55e-a52e-4b87-b915-5a208d6eda38
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 647f62fa75226fd2c80d1bf6285d76e1c2f8c4be
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 90dc3b7a0e1dbc4e0dc6c42ca722ca1db462fca9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46026732"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558216"
 ---
 # <a name="compiler-error-c3755"></a>Derleyici Hatası C3755
 

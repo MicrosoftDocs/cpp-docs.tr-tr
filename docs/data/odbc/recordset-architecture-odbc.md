@@ -1,12 +1,6 @@
 ---
-title: 'Kayıt kümesi: Mimari (ODBC) | Microsoft Docs'
-ms.custom: ''
+title: 'Kayıt kümesi: Mimari (ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - recordsets, data members
 - field data members, recordset architecture
@@ -19,17 +13,12 @@ helpviewer_keywords:
 - m_nParams data member
 - m_nFields data member, recordsets
 ms.assetid: 47555ddb-11be-4b9e-9b9a-f2931764d298
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: e868e51acf4c4e8f3975010509a0c97799b5e38c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fc44f2b4fcae51cef78d6b660f0cc86ee516e5e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082209"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651197"
 ---
 # <a name="recordset-architecture-odbc"></a>Kayıt kümesi: Mimari (ODBC)
 

@@ -1,12 +1,6 @@
 ---
-title: Dinamik olarak MFC'ye bağlı normal MFC DLL'leri | Microsoft Docs
-ms.custom: ''
+title: Dinamik olarak MFC'ye bağlı normal MFC DLL'leri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - regular MFC DLLs [C++], dynamically linked to MFC
 - AFX_MANAGE_STATE macro
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - shared DLL versions [C++]
 - dynamically linked DLLs [C++]
 ms.assetid: b4f7ab92-8723-42a5-890e-214f4e29dcd0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 24352e0b28e03cbbecd89b827b65c7f5cae61b7d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 550391d51560ff0beca8252ffb6193dd1e4d89b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711379"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50632394"
 ---
 # <a name="regular-mfc-dlls-dynamically-linked-to-mfc"></a>Dinamik olarak MFC'ye bağlı normal MFC DLL'leri
 

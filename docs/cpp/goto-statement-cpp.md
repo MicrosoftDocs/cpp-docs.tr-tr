@@ -1,27 +1,17 @@
 ---
-title: goto deyimi (C++) | Microsoft Docs
-ms.custom: ''
+title: goto Deyimi (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - goto_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - goto keyword [C++]
 ms.assetid: 724c5deb-2de1-42d8-8ef1-23589d9bf5ed
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1c22a030ec0154f3a50d493e32e9bdeffdc05a2f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: aac308905a01a52a4ce5ee0fa3be03f2f33ac1cd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058269"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631614"
 ---
 # <a name="goto-statement-c"></a>goto Deyimi (C++)
 

@@ -1,12 +1,6 @@
 ---
-title: İletişim kutuları oluşturma ve görüntüleme | Microsoft Docs
-ms.custom: ''
+title: İletişim Kutuları Oluşturma ve Görüntüleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - modal dialog boxes [MFC], creating
 - opening dialog boxes
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], creating
 - MFC dialog boxes [MFC], displaying
 ms.assetid: 1c5219ee-8b46-44bc-9708-83705d4f248b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 437fb934e95ce527a77038d643e9cee86b6f1f2c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 778ee0cbb154c65b0cc74a207a175354c2e2a90b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387750"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431089"
 ---
 # <a name="creating-and-displaying-dialog-boxes"></a>İletişim Kutuları Oluşturma ve Görüntüleme
 

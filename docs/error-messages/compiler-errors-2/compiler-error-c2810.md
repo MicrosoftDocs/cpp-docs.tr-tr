@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2810 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2810
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2810
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2810
 ms.assetid: f63e8f24-d7f6-42ac-904f-72ff49592ba6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 68a98d0dacf1823dd5b4f376a55279ec1e8cbff2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 171b9d1b3b09b793c55756500cafed1db7eb9d99
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075767"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627493"
 ---
 # <a name="compiler-error-c2810"></a>Derleyici Hatası C2810
 

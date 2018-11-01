@@ -1,23 +1,13 @@
 ---
-title: Bu kılavuzun kapsamı | Microsoft Docs
-ms.custom: ''
+title: Bu Kılavuzun Kapsamı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 406e7cc0-27cb-46b4-b38e-c200f3fddafd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fd91696a1b04f34ea3c3d7e40dc07d450b1f191b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: eca379daa1fff9c90491bdd0be1ea03fc770f0b2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106824"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453358"
 ---
 # <a name="scope-of-this-manual"></a>Bu Kılavuzun Kapsamı
 

@@ -1,10 +1,6 @@
 ---
-title: _aligned_free_dbg | Microsoft Docs
-ms.custom: ''
+title: _aligned_free_dbg
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _aligned_free_dbg
 apilocation:
@@ -22,22 +18,16 @@ apitype: DLLExport
 f1_keywords:
 - _aligned_free_dbg
 - aligned_free_dbg
-dev_langs:
-- C++
 helpviewer_keywords:
 - _aligned_free_dbg function
 - aligned_free_dbg function
 ms.assetid: eb0cb3c8-0992-4db8-bac3-65f1b8311ca6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aae9adaf1037297dfae9ba78f6f872544a5555ef
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f51b9b9573ab2e23a0a60979c55a33d2e5cff747
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081682"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627545"
 ---
 # <a name="alignedfreedbg"></a>_aligned_free_dbg
 

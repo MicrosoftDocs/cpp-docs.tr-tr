@@ -1,11 +1,6 @@
 ---
-title: timespec_get, _timespec32_get, _timespec64_get1 | Microsoft Docs
-ms.custom: ''
+title: timespec_get, _timespec32_get, _timespec64_get1
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - timespec_get
 - _timespec32_get
@@ -33,27 +28,21 @@ f1_keywords:
 - timespec
 - _timespec32
 - _timespec64
-dev_langs:
-- C++
 helpviewer_keywords:
 - timespec_get function
 - _timespec32_get function
 - _timespec64_get function
 ms.assetid: ed757258-b4f2-4c1d-a91b-22ea6ffce4ab
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f00a59f8b5813398b47562b106f3ec0eff3363b1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c1d0cbaf194060d816e31d397a9319ef47f75371
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412839"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638457"
 ---
 # <a name="timespecget-timespec32get-timespec64get"></a>timespec_get, _timespec32_get, _timespec64_get
 
-Aralığı geçerli Takvim zaman için ilk bağımsız değişken gösterdiği kümeleri temel belirtilen süreye dayalı.
+Temel belirtilen tarihte temel aralığı geçerli Takvim zaman için ilk bağımsız değişken işaret ettiği ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,32 +65,32 @@ int _timespec64_get(
 ### <a name="parameters"></a>Parametreler
 
 *time_spec*<br/>
-Dönem başladığından bu yana saniye ve nanosaniye zamana ayarlanan yapı işaretçi.
+Dönem başlangıcından ayarlanır ve saniye nanosaniye cinsinden süre bir yapı işaretçisi.
 
 *base*<br/>
-Süresi Temeli belirten sıfır uygulamaya özel değer.
+Süresi Temeli belirten sıfır olmayan uygulamaya özel değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Değeri *temel* başarılı, aksi takdirde, sıfır durumunda döndürür.
+Değerini *temel* başarılı, aksi halde sıfır döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Timespec_get** işlevleri gösterdiği yapısı geçerli saati kümesinde *time_spec* bağımsız değişkeni. Bu yapı'nin tüm sürümleri iki üyelere sahip **tv_sec** ve **tv_nsec**. **Tv_sec** değeri saniye tam sayıya ayarlanır ve **tv_nsec** nanosaniye tam sayı sayıya yuvarlanan sistem saati, çözümleme için tarafındanbelirtilendönembaşladığındanbuyana*temel*.
+**Timespec_get** işlevleri işaret ettiği struct geçerli saati kümesinde *time_spec* bağımsız değişken. Bu struct'ın tüm sürümleri iki üyesi olan **tv_sec** ve **tv_nsec**. **Tv_sec** değeri saniye tam sayıya ayarlanır ve **tv_nsec** nanosaniye integral sayıya yuvarlanır sistem saatinin çözümü tarafından belirtildiepochbaşladığındanbuyana*temel*.
 
-**Microsoft özel**
+**Microsoft'a özgü**
 
-Bu işlevler yalnızca Destek **TIME_UTC** olarak *temel* değeri. Bu ayarlar *time_spec* değerine ve Dönem başlangıç olduğundan, gece yarısı, 1 Ocak 1970 Eşgüdümlü Evrensel Saat (UTC) nanosaniye saniye sayısı. İçinde bir **yapısı** **_timespec32**, **tv_sec** olan bir **__time32_t** değeri. İçinde bir **yapısı** **_timespec64**, **tv_sec** olan bir **__time64_t** değeri. İçinde bir **yapısı** **timespec**, **tv_sec** olan bir **time_t** 32 bit veya 64 bit uzunluğunda mı bağlı olarak türü ön işlemci Makro _USE_32BIT_TIME_T tanımlanır. **Timespec_get** işlevidir çağıran bir satır içi işlev **_timespec32_get** _USE_32BIT_TIME_T tanımlanmışsa; Aksi takdirde çağırır **_timespec64_get**.
+Bu işlevler yalnızca Destek **TIME_UTC** olarak *temel* değeri. Bu ayarlar *time_spec* değeri ve dönem başlangıcından itibaren gece yarısı, 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC) nanosaniye saniye sayısı. İçinde bir **yapı** **_timespec32**, **tv_sec** olduğu bir **__time32_t** değeri. İçinde bir **yapı** **_timespec64**, **tv_sec** olduğu bir **__time64_t** değeri. İçinde bir **yapı** **timespec**, **tv_sec** olduğu bir **time_t** 32 bit veya 64 bit uzunluğunda bağlı olarak tür, önişlemci Makro _use_32bıt_tıme_t tanımlanır. **Timespec_get** işlev, satır içi işlev çağıran **_timespec32_get** _use_32bıt_tıme_t tanımlıysa; Aksi takdirde çağrı **_timespec64_get**.
 
-**Son Microsoft özel**
+**End Microsoft özgü**
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**timespec_get**, **_timespec32_get**, **_timespec64_get**|C: \<time.h >, C++: \<ctime > veya \<time.h >|
+|**timespec_get**, **_timespec32_get**, **_timespec64_get**|C: \<TIME.h >, C++: \<ctime > veya \<TIME.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

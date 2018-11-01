@@ -1,27 +1,17 @@
 ---
-title: Normal ifadeler (C++) | Microsoft Docs
-ms.custom: ''
+title: Normal İfadeler (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - Visual C++, regular expressions
 - regular expressions, Visual C++
 - regular expressions
 ms.assetid: aafe202a-1d96-4b36-a270-d676dfd3c51c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ca3d636b1dffdb3237fb94fade41c90057543b9d
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: dafbe7c7ba10db2b0f34fdc6065c1475d63be284
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861570"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443476"
 ---
 # <a name="regular-expressions-c"></a>Normal İfadeler (C++)
 

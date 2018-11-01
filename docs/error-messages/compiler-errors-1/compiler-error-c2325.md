@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2325 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2325
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2325
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2325
 ms.assetid: e6b0a186-3f2a-4adf-beae-fadd75492bf7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ae66d00c6831d102cb3f6fd47d024745480674fc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 28b291bd68971d7759589a75d8bafbf6e873dd39
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107819"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637677"
 ---
 # <a name="compiler-error-c2325"></a>Derleyici Hatası C2325
 

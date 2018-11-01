@@ -1,12 +1,6 @@
 ---
-title: using bildirimi | Microsoft Docs
-ms.custom: ''
+title: using Bildirimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - using declaration
 - declaring namespaces, unqualified names in namespaces
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - using keyword [C++]
 - declarations [C++], namespaces
 ms.assetid: 4184e2b1-3adc-408e-b5f3-0b3f8b554723
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2cec8cc9683a67ac94bf7d0a383dd2d1015af650
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 46d8b1e13b55988efd40643482ffd6123034ccb5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053992"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559857"
 ---
 # <a name="using-declaration"></a>using Bildirimi
 

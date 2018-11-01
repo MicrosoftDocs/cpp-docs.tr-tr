@@ -1,10 +1,6 @@
 ---
-title: _getdcwd, _wgetdcwd | Microsoft Docs
-ms.custom: ''
+title: _getdcwd, _wgetdcwd
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _getdcwd
 - _wgetdcwd
@@ -28,8 +24,6 @@ f1_keywords:
 - tgetdcwd
 - _wgetdcwd
 - _tgetdcwd
-dev_langs:
-- C++
 helpviewer_keywords:
 - wgetdcwd function
 - working directory
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - current working directory
 - directories [C++], current working
 ms.assetid: 184152f5-c7b0-495b-918d-f9a6adc178bd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45c03ed2c057781c082988ac15e838249db0f28a
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 87cccec82ce648498c2bd3a7ac0ecbe436cb9baf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43689721"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677025"
 ---
 # <a name="getdcwd-wgetdcwd"></a>_getdcwd, _wgetdcwd
 

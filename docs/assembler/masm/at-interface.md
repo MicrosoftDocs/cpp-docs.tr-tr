@@ -1,27 +1,17 @@
 ---
-title: '@Interface | Microsoft Docs'
-ms.custom: ''
+title: '@Interface'
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - '@Interface'
-dev_langs:
-- C++
 helpviewer_keywords:
 - '@Interface symbol'
 ms.assetid: 266ecba9-9e96-4086-8ee4-a3d0161b6e29
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 98f02265650648d02afc5121864b4c9f62dd5294
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 4c9ab7bc70315f725de410b7f47803cc22cb8acc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684477"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641760"
 ---
 # <a name="interface"></a>@Interface
 

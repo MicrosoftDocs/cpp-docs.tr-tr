@@ -1,28 +1,17 @@
 ---
-title: MFC iletişim kutusunda kullanıcı denetimi oluşturan bir Windows barındırma | Microsoft Docs
-ms.custom: ''
+title: MFC İletişim Kutusunda Windows Form Kullanıcı Denetimi Barındırma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC [C++], Windows Forms support
 - hosting Windows Forms control [C++]
 - Windows Forms [C++], MFC support
 ms.assetid: 9f66ee52-b7cb-4ffd-8306-392a5da990d8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: a1f2c042c1a4a97bc322a61cadccbd60d2a570ea
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 921e6fac32d37f8976d53d49adab72fb27ab5e99
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392313"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50632225"
 ---
 # <a name="hosting-a-windows-form-user-control-in-an-mfc-dialog-box"></a>MFC İletişim Kutusunda Windows Form Kullanıcı Denetimi Barındırma
 

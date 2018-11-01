@@ -1,12 +1,6 @@
 ---
-title: Internet İstemci sınıfları için Önkoşullar | Microsoft Docs
-ms.custom: ''
+title: Internet İstemci Sınıfları için Önkoşullar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Internet files [MFC], writing to
 - Internet [MFC], connections
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - prerequisites, Internet client classes [MFC]
 - Gopher client applications [MFC]
 ms.assetid: c51d1dfe-260c-4228-8100-e4efd90e9599
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e374305586db3c69a19194e866d5a03d3de91f4e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b6be476e4b9f7d1aaa09a588e1c06e72032f48c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402661"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50629885"
 ---
 # <a name="prerequisites-for-internet-client-classes"></a>Internet İstemci Sınıfları için Önkoşullar
 

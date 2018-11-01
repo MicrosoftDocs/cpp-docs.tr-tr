@@ -1,10 +1,6 @@
 ---
-title: _fgetchar, _fgetwchar | Microsoft Docs
-ms.custom: ''
+title: _fgetchar, _fgetwchar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fgetchar
 - _fgetwchar
@@ -27,8 +23,6 @@ f1_keywords:
 - _fgetchar
 - _fgetwchar
 - fgettchar
-dev_langs:
-- C++
 helpviewer_keywords:
 - fgetwchar function
 - _fgetchar function
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - standard input, reading from
 - fgetchar function
 ms.assetid: 8bce874c-701a-41a3-b1b2-feff266fb5b9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d3d83c1e86c574f56b08eecdf2c29e7ab20a28b4
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c74618fa0be5392062d13618ff73e2ef45bf7c2a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43194324"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453791"
 ---
 # <a name="fgetchar-fgetwchar"></a>_fgetchar, _fgetwchar
 

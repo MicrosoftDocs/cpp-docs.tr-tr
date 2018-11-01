@@ -1,25 +1,15 @@
 ---
-title: -WINMDFILE (winmd dosyası belirtin) | Microsoft Docs
-ms.custom: ''
+title: /WINMDFILE (winmd Dosyası Belirtin)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.GenerateWindowsMetadataFile
-dev_langs:
-- C++
 ms.assetid: 062b41b3-14d6-432c-a361-fdb66e918931
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d34bdfd2d80690efae8efbc1f95ba0c50a530af3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 74958e51925b9ed6d1382efe76fe587eed73f4e7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425790"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656060"
 ---
 # <a name="winmdfile-specify-winmd-file"></a>/WINMDFILE (winmd Dosyası Belirtin)
 

@@ -1,31 +1,20 @@
 ---
-title: İkili Düzenleyici (C++) | Microsoft Docs
-ms.custom: ''
+title: İkili Düzenleyici (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.binary.F1
-dev_langs:
-- C++
 helpviewer_keywords:
 - editors, Binary
 - resources [C++], editing
 - resource editors [C++], Binary editor
 - Binary editor
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 86dd69a893c589ad4ebba06c2577925eae959f40
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 1b5e1c16ff63c55617ee9b2bbcb47a7201635789
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313702"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50451707"
 ---
 # <a name="binary-editor-c"></a>İkili Düzenleyici (C++)
 

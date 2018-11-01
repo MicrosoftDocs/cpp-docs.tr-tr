@@ -1,32 +1,22 @@
 ---
-title: _bittestandcomplement, _bittestandcomplement64 | Microsoft Docs
-ms.custom: ''
+title: _bittestandcomplement, _bittestandcomplement64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _bittestandcomplement64
 - _bittestandcomplement64_cpp
 - _bittestandcomplement_cpp
 - _bittestandcomplement
-dev_langs:
-- C++
 helpviewer_keywords:
 - btc instruction
 - _bittestandcomplement intrinsic
 - _bittestandcomplement64 intrinsic
 ms.assetid: 53fa12dd-835e-4e5d-baec-a431c8678806
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bfda7f2cba8b82ab584eb17ae89db646fad52dff
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4985967019daf5db832780bb400611bcc5478a35
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391325"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623242"
 ---
 # <a name="bittestandcomplement-bittestandcomplement64"></a>_bittestandcomplement, _bittestandcomplement64
 

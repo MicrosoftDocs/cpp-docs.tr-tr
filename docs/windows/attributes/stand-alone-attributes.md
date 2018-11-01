@@ -1,27 +1,16 @@
 ---
-title: Tek başına öznitelikler (C++ COM) | Microsoft Docs
-ms.custom: ''
+title: Tek başına öznitelikler (C++ COM)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - standalone attributes
 - attributes [C++/CLI], standalone
 ms.assetid: 0d72e84e-236c-43b3-ac9a-d9b91fcd6794
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 0df8cb1def78e3a7b564f268eb1b3b0a2069fb11
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1183d2b171a25b3b2d1aef14c19f81be65effc6a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062853"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640836"
 ---
 # <a name="stand-alone-attributes"></a>Tek Başına Öznitelikler
 

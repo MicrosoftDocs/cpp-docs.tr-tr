@@ -1,12 +1,6 @@
 ---
-title: __Asm bloklarında C veya C++ simgelerini kullanma | Microsoft Docs
-ms.custom: ''
+title: __asm Bloklarında C veya C++ Simgelerini Kullanma
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - __asm keyword [C++], syntax
 - symbols, in __asm blocks
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - __asm keyword [C++], C/C++ elements in
 - Visual C++, in __asm blocks
 ms.assetid: 0758ffdc-dfe9-41c8-a5e1-fd395bcac328
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8ba8426e2a7ae1152a41fafa0c239498801c6e4d
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: fc22af8ec04d616eb8f5566b118e19c405605401
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678899"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552522"
 ---
 # <a name="using-c-or-c-symbols-in-asm-blocks"></a>__asm Bloklarında C veya C++ Simgelerini Kullanma
 

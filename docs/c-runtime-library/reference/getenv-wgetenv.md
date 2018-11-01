@@ -1,10 +1,6 @@
 ---
-title: GETENV, _wgetenv | Microsoft Docs
-ms.custom: ''
+title: getenv, _wgetenv
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - getenv
 - _wgetenv
@@ -25,8 +21,6 @@ f1_keywords:
 - _wgetenv
 - getenv
 - _tgetenv
-dev_langs:
-- C++
 helpviewer_keywords:
 - getenv function
 - tgetenv function
@@ -36,23 +30,19 @@ helpviewer_keywords:
 - _tgetenv function
 - _wgetenv function
 ms.assetid: 3b9cb9ab-a126-4e0e-a44f-6c5a7134daf4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a2e68ca55d9e33995df583719e4797a6880d34ca
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 79c685fef8d6a4b966c53bb7d94b423d16971976
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403992"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568184"
 ---
 # <a name="getenv-wgetenv"></a>getenv, _wgetenv
 
-Geçerli ortamından bir değer alır. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md).
+Geçerli ortamdan bir değer alır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md).
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,27 +62,27 @@ Ortam değişkeni adı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşaretçi ortamı tabloyu içeren girişi döndüren *varname*. Döndürülen işaretçisi kullanılarak ortam değişkeninin değerini değiştirmek güvenli değildir. Kullanım [_putenv](putenv-wputenv.md) bir ortam değişkeninin değerini değiştirmek için işlevi. Dönüş değeri **NULL** varsa *varname* ortamı tablosunda bulunamadı.
+Ortam tablosunu içeren giriş işaretçi döndüren *varname*. Döndürülen işaretçisi kullanılarak ortam değişkeninin değerini değiştirmek güvenli değildir. Kullanım [_putenv](putenv-wputenv.md) bir ortam değişkeninin değerini değiştirmek için işlevi. Dönüş değeri **NULL** varsa *varname* ortam tablosunda bulunamadı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Getenv** işlevi için ortam değişkenleri listesi arar *varname*. **GETENV** Windows işletim sisteminde büyük küçük harfe duyarlı değildir. **GETENV** ve **_putenv** genel değişkeni tarafından işaret ortam kopyasını kullanmak **_environ** ortama erişmek için. **GETENV** yalnızca çalışma zamanı kitaplığı'na erişilebilir veri yapıları ve "işlem için işletim sistemi tarafından oluşturulan segment" ortam üzerinde çalışır. Bu nedenle, kullanan programlar *envp* bağımsız değişkeni [ana](../../cpp/main-program-startup.md) veya [wmain](../../cpp/main-program-startup.md) geçersiz bilgiler alabilir.
+**Getenv** işlevi için ortam değişkenleri listesi arar *varname*. **GETENV** Windows işletim sistemi büyük/küçük harfe duyarlı değildir. **GETENV** ve **_putenv** için genel değişkeni tarafından işaret edilen ortamın kopyasını kullanın **_environ** ortama erişmek için. **GETENV** yalnızca çalışma zamanı kitaplığının erişilebildiği veri yapıları ve ortam işlem için işletim sistemi tarafından oluşturulan "segment" üzerinde çalışır. Bu nedenle, kullanan programlar *envp* bağımsız değişkeni [ana](../../cpp/main-program-startup.md) veya [wmain](../../cpp/main-program-startup.md) geçersiz bilgi alabilir.
 
-Varsa *varname* olan **NULL**, bu işlev açıklandığı gibi bir geçersiz parametre işleyicisi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar **errno** için **EINVAL** ve döndürür **NULL**.
+Varsa *varname* olduğu **NULL**, bu işlev içinde açıklanan şekilde geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür **NULL**.
 
-**_wgetenv** bir joker karakter sürümü **getenv**; bağımsız değişkeni ve dönüş değeri **_wgetenv** joker karakter dizelerdir. **_Wenviron** genel değişkeni sürümüdür bir joker karakter **_environ**.
+**_wgetenv** geniş karakterli sürümüdür **getenv**; bağımsız değişkeni ve dönüş değeri **_wgetenv** geniş karakterli dizelerdir. **_Wenviron** genel değişkeni, bir geniş karakter sürümünü **_environ**.
 
-MBCS programında (örneğin, bir programında SBCS ASCII), **_wenviron** başlangıçta **NULL** çok baytlı karakter dizeleri oluşturulan ortam olduğundan. Ardından, ilk çağrıda [_wputenv](putenv-wputenv.md), ya da ilk çağrıda **_wgetenv** (MBCS) ortam zaten varsa, karşılık gelen bir joker karakter dizesi ortamı oluşturulur ve ardından olarak tarafındanverilir **_wenviron**.
+Bir MBCS programında (örneğin, programda bir ASCII SBCS) **_wenviron** başlangıçta **NULL** çünkü ortam çok baytlı karakter dizeleri kümesinden oluşur. Daha sonra yapılan ilk çağrıda [_wputenv](putenv-wputenv.md), veya yapılan ilk çağrıda **_wgetenv** (MBCS) ortamı zaten varsa, karşılık gelen bir geniş karakterli dize ortamı oluşturulur ve ardından için tarafındanişaretedilen **_wenviron**.
 
-Benzer şekilde, bir Unicode (**_wmain**) programı **_environ** başlangıçta **NULL** joker karakter dizelerini oluşturulan ortam olduğundan. Ardından, ilk çağrıda **_putenv**, ya da ilk çağrıda **getenv** (Unicode) ortam zaten varsa, karşılık gelen bir MBCS ortamı oluşturulur ve ardından işaret ediyor **_ environ**.
+Benzer şekilde, bir Unicode (**_wmain**) programı **_environ** başlangıçta **NULL** çünkü ortam geniş karakter dizeleri kümesinden oluşur. Daha sonra yapılan ilk çağrıda **_putenv**, veya yapılan ilk çağrıda **getenv** (Unicode) ortamı zaten varsa, karşılık gelen bir MBCS ortamı oluşturulur ve ardından tarafından işaret edilen **_ environ**.
 
-Ortam (MBCS ve Unicode) iki kopyasını aynı anda bir program varsa, çalışma zamanı sistem kaynaklanan yavaş yürütme süresi içinde her iki kopya bulundurmanız gerekir. Örneğin, her çağırmanız **_putenv**, çağrı **_wputenv** böylece iki ortam dizeleri karşılık da otomatik olarak yürütülür.
+Ortam (MBCS ve Unicode) iki kopyasını aynı anda bir programda varsa, çalışma zamanı sistemi daha yavaş yürütme süresi bunun sonucunda, her iki kopyasında sürdürmeniz gerekir. Örneğin, her çağırmanız **_putenv**, çağrı **_wputenv** böylece iki ortam dizeleri karşılık da otomatik olarak yürütülür.
 
 > [!CAUTION]
-> Çalışma zamanı sistem Unicode sürümü ve ortam, birden çok baytlı sürümü korurken nadir durumlarda, bu iki ortam sürümleri tam olarak karşılık gelmeyebilir. Benzersiz bir UNICODE dizesi herhangi bir benzersiz çok baytlı karakter dizesini eşleştirir ancak çok baytlı karakter dizesi için benzersiz bir UNICODE dizesi eşlemesinden mutlaka benzersiz olmadığından budur. Daha fazla bilgi için bkz: [_environ, _wenviron](../../c-runtime-library/environ-wenviron.md).
+> Çalışma zamanı sistemi, hem Unicode sürümü hem de çok baytlı bir sürüm ortamının muhafaza ederken nadir durumlarda, bu iki ortam sürümleri tam olarak karşılık gelmeyebilir. Benzersiz bir çok baytlı karakterli dize benzersiz bir Unicode dizesini eşleştirir ancak bir çok baytlı karakter dizesi benzersiz bir Unicode dize eşleme mutlaka benzersiz olmadığından budur. Daha fazla bilgi için [_environ, _wenviron](../../c-runtime-library/environ-wenviron.md).
 
 > [!NOTE]
-> **_Putenv** ve **_getenv** işlevlerin aileleri iş parçacığı açısından güvenli değildir. **_getenv** sırasında dize işaretçisi döndürebilirsiniz **_putenv** rastgele hatalarına neden dize değiştiriyor. Bu işlevler çağrıları eşitlendiğinden emin olun.
+> **_Putenv** ve **_getenv** işlev aileleri iş parçacığı açısından güvenli değildir. **_getenv** dize işaretçisini döndürebilir **_putenv** rastgele hatalara neden dize değiştirme. Bu işlevlere aramaların eşitlendiğinden emin olun.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -100,7 +90,7 @@ Ortam (MBCS ve Unicode) iki kopyasını aynı anda bir program varsa, çalışma
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tgetenv**|**GETENV**|**GETENV**|**_wgetenv**|
 
-Denetlemek veya değerini değiştirmek için **TZ** ortam değişkeni, kullanım **getenv**, **_putenv** ve **_tzset** gerektiği. Hakkında daha fazla bilgi için **TZ**, bkz: [_tzset](tzset.md) ve [_daylight, saat dilimi ve _tzname](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
+Denetleyin ya da değerini değiştirmek için **TZ** ortam değişkenini kullanmak **getenv**, **_putenv** ve **_tzset** gerektiği şekilde. Hakkında daha fazla bilgi için **TZ**, bkz: [_tzset](tzset.md) ve [_daylight, saat diliminizi ve _tzname](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -109,7 +99,7 @@ Denetlemek veya değerini değiştirmek için **TZ** ortam değişkeni, kullanı
 |**GETENV**|\<stdlib.h >|
 |**_wgetenv**|\<stdlib.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

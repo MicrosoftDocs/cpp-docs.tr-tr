@@ -1,10 +1,6 @@
 ---
-title: Yükseltme | Microsoft Docs
-ms.custom: ''
+title: tetikle
 ms.date: 1/02/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - raise
 apilocation:
@@ -22,23 +18,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - Raise
-dev_langs:
-- C++
 helpviewer_keywords:
 - signals, sending to executing programs
 - raise function
 - signals
 - programs [C++], sending signals to executing programs
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f1bc3f52b97159a9caba6f80b4798d9588ec341d
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 68d1cc653b955e607648e4d30562d2b77e3520e2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43685914"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638119"
 ---
 # <a name="raise"></a>tetikle
 

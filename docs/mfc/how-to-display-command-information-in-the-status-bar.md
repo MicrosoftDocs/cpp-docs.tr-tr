@@ -1,28 +1,18 @@
 ---
-title: 'Nasıl yapılır: durum çubuğunda komut bilgilerini görüntüleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Durum Çubuğunda Komut Bilgilerini Görüntüleme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - prompts [MFC]
 - displaying command status [MFC]
 - status bars [MFC], message area
 - status bars [MFC], displaying command information
 ms.assetid: de895cbe-61ee-46bf-9787-76b247527d6d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 089e0fd8f1853a4e219309c0df7659f90e4f4b3d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6da45edf611d70920340d8f9a9c2fd8de5cc0307
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405755"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654109"
 ---
 # <a name="how-to-display-command-information-in-the-status-bar"></a>Nasıl Yapılır: Durum Çubuğunda Komut Bilgilerini Görüntüleme
 

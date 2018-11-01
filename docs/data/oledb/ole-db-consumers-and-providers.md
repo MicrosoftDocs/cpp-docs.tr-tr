@@ -1,12 +1,6 @@
 ---
-title: OLE DB Tüketicileri ve sağlayıcıları | Microsoft Docs
-ms.custom: ''
+title: OLE DB Tüketicileri ve Sağlayıcıları
 ms.date: 10/22/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB providers, OLE DB data architecture
 - OLE DB providers
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - OLE DB consumers
 - OLE DB, data model
 ms.assetid: 886cb39d-652b-4557-93f0-4b1b0754d8bc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 4f52177e5fcb34470e606497297985d805a151f6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 65e4cf9dcade897a346e8f9bbc1985f9edede78e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077601"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443400"
 ---
 # <a name="ole-db-consumers-and-providers"></a>OLE DB Tüketicileri ve Sağlayıcıları
 

@@ -1,27 +1,17 @@
 ---
-title: Yürütme karakter kümesi | Microsoft Docs
-ms.custom: ''
+title: Yürütme Karakter Kümesi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - execution character set [C++]
 - character sets [C++], execution and source
 - source character set [C++]
 ms.assetid: 39ffbb55-11c1-4b6d-a105-327c0fceb449
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c074ddd193765029a2925e1a98c4ab1787f9a82a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ba727cef4bbc1f050691426fef415e75cdfc8a31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082683"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50650768"
 ---
 # <a name="execution-character-set"></a>Yürütme Karakter Kümesi
 

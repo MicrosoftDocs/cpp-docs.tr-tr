@@ -1,28 +1,17 @@
 ---
-title: support_error_info (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: support_error_info (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.support_error_info
-dev_langs:
-- C++
 helpviewer_keywords:
 - support_error_info attribute
 ms.assetid: 20a2b55c-4738-4b35-a71d-e5e9c3a7e3bc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: b0d86b31823ec31461f953c7cfc16a5774f215fd
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8aed647677b8c8d26fdca522c10ec9ecee9f87c9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067169"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626016"
 ---
 # <a name="supporterrorinfo"></a>support_error_info
 

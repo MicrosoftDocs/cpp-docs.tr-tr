@@ -1,28 +1,19 @@
 ---
-title: IUnknown | Microsoft Docs
-ms.custom: ''
+title: IUnknown
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
 f1_keywords:
 - IUnknown
-dev_langs:
-- C++
 helpviewer_keywords:
 - COM interfaces, base interface
 - IUnknown interface
 ms.assetid: e6b85472-e54b-4b8c-b19f-4454d6c05a8f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d5840fc7e4623ee6163b3caf1a43eff358a152e6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 760db28f4016ed529b45c72d25eaabf664642cd2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039043"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430049"
 ---
 # <a name="iunknown"></a>IUnknown
 

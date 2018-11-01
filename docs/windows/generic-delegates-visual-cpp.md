@@ -1,27 +1,17 @@
 ---
-title: Genel temsilciler (C + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: Genel temsilciler (C + +/ CLI)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - generic delegates
 - delegates, generic [C++]
 ms.assetid: 09d430b2-1aef-4fbc-87f9-9d7b8185d798
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 1177b3c09649affc781a8c247a109f8efd8088d2
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 78a8e0ebd1217000671cad2a266da367c76d0a67
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328291"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639058"
 ---
 # <a name="generic-delegates-ccli"></a>Genel temsilciler (C + +/ CLI)
 

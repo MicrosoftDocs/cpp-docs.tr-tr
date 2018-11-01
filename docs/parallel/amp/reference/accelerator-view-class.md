@@ -1,10 +1,6 @@
 ---
-title: accelerator_view sınıfı | Microsoft Docs
-ms.custom: ''
+title: accelerator_view Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - accelerator_view
 - AMPRT/accelerator_view
@@ -22,21 +18,15 @@ f1_keywords:
 - AMPRT/Concurrency::accelerator_view:is_debug
 - AMPRT/Concurrency::accelerator_view:queuing_mode
 - AMPRT/Concurrency::accelerator_view:version
-dev_langs:
-- C++
 helpviewer_keywords:
 - accelerator_view class
 ms.assetid: 9f298c21-bf62-46e0-88b8-01c5c78ef144
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b556a86506e3aae73f7ac4e1ac961b539364d6db
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e17284ef8652e5d08b2305dc07d27f080ec64239
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053570"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568060"
 ---
 # <a name="acceleratorview-class"></a>accelerator_view Sınıfı
 

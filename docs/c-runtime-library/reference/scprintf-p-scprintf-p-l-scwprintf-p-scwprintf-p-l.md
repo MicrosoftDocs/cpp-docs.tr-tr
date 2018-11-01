@@ -1,10 +1,6 @@
 ---
-title: _scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l | Microsoft Docs
-ms.custom: ''
+title: _scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _scwprintf_p
 - _scprintf_p_l
@@ -33,8 +29,6 @@ f1_keywords:
 - scwprintf_p_l
 - _scprintf_p
 - _scwprintf_p
-dev_langs:
-- C++
 helpviewer_keywords:
 - sctprintf_p_l function
 - _scwprintf_p_l function
@@ -49,20 +43,16 @@ helpviewer_keywords:
 - scwprintf_p_l function
 - _sctprintf_p_l function
 ms.assetid: 8390d1e1-2826-47a4-851f-6635a88087cc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2120eaaee5acfa3628650b5df1f03448ee282a91
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 818dc5c24cca178fa03d08d1f609c23abbc7a013
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407190"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443075"
 ---
 # <a name="scprintfp-scprintfpl-scwprintfp-scwprintfpl"></a>_scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l
 
-Karakter sayısını biçimlendirilmiş dizisindeki parametreleri kullanılan biçim dizesi sırayı olanağı verir.
+Biçim dizesindeki parametreleri kullanılan sırayı belirtme olanağı ile bir biçimlendirilmiş dize ile karakter sayısını döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -89,7 +79,7 @@ int _scwprintf_p _l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biçimi*<br/>
+*Biçim*<br/>
 Biçim denetimi dizesi.
 
 *Bağımsız değişken*<br/>
@@ -100,19 +90,19 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dize yazdırılması veya bir dosyayı veya belirtilen biçimlendirme kodlarını kullanarak arabellek gönderilen olsaydı, oluşturulacak karakterlerin sayısını döndürür. Döndürülen değer sonlandırma null karakteri içermez. **_scwprintf_p** geniş karakterler için aynı işlevi gerçekleştirir.
+Dize yazdırılması veya bir dosya veya belirtilen biçimlendirme kodları kullanılarak arabellek gönderilen çıkacaksa oluşturulacak karakter sayısını döndürür. Sondaki null karakter, döndürülen değer içermez. **_scwprintf_p** geniş karakterler için de aynı işlevi gerçekleştirir.
 
-Arasındaki farkı **_scprintf_p** ve **_scprintf** olan **_scprintf_p** sırayı içinde belirtme verir destekler konumsal parametreler bağımsız değişkenler Biçim dizesi kullanılır. Daha fazla bilgi için bkz: [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
+Arasındaki fark **_scprintf_p** ve **_scprintf** olan **_scprintf_p** içinde sırasını belirtmeye izin veren konum parametrelerini desteklemesidir bağımsız değişkenler Biçim dizesindeki kullanılır. Daha fazla bilgi için [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
 
-Varsa *biçimi* olan bir **NULL** işaretçi, geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
+Varsa *biçimi* olduğu bir **NULL** işaretçiyse, geçersiz parametre işleyicisi çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
 
-Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her *bağımsız değişkeni* (varsa) karşılık gelen biçimi belirtiminde göre dönüştürülür *biçimi*. Biçim sıradan karakterden oluşan ve aynı form ve olarak işlev *biçimi* bağımsız değişkeni için [printf](printf-printf-l-wprintf-wprintf-l.md).
+Her *bağımsız değişken* (varsa) karşılık gelen kapsamındaki biçim belirtimine göre dönüştürülür *biçimi*. Biçim sıradan karakterlerden oluşur ve aynı forma ve işleve sahiptir *biçimi* için bağımsız değişken [printf](printf-printf-l-wprintf-wprintf-l.md).
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
 
 > [!IMPORTANT]
 > Emin *biçimi* kullanıcı tanımlı bir dize değil.
@@ -131,10 +121,10 @@ Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar
 |**_scprintf_p**, **_scprintf_p_l**|\<stdio.h >|
 |**_scwprintf_p**, **_scwprintf_p_l**|\<stdio.h > veya \<wchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_scprintf, _scprintf_l, _scwprintf, _scwprintf_l](scprintf-scprintf-l-scwprintf-scwprintf-l.md)<br/>
 [_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l](printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)<br/>

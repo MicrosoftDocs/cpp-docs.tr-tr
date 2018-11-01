@@ -1,14 +1,8 @@
 ---
-title: 'TN058: MFC modül durumu uygulaması | Microsoft Docs'
-ms.custom: ''
+title: 'TN058: MFC Modül Durumu Uygulaması'
 ms.date: 06/28/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc.implementation
-dev_langs:
-- C++
 helpviewer_keywords:
 - thread state [MFC]
 - module states [MFC], managing state data
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - DLLs [MFC], module states
 - process state [MFC]
 ms.assetid: 72f5b36f-b3da-4009-a144-24258dcd2b2f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 28922707a3a08e929a116845a20b167ddac3edf7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: db34f528e70a7dcc437836684656b3ce8a4078fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396655"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626059"
 ---
 # <a name="tn058-mfc-module-state-implementation"></a>TN058: MFC Modül Durumu Uygulaması
 

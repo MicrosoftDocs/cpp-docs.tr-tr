@@ -1,25 +1,15 @@
 ---
-title: x86 iç bilgi listesi | Microsoft Docs
-ms.custom: ''
+title: x86 İç Bilgi Listesi
 ms.date: 06/01/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - cl.exe compiler, intrinsics
 - intrinsics, x86
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d3ae21e0c7f39ef1f4b2ab5379c556b987fcf37b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 251e4741f069cf44376c2f6a7ed4e92aa949452b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448473"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560603"
 ---
 # <a name="x86-intrinsics-list"></a>x86 İç Bilgi Listesi
 

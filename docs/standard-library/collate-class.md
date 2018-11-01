@@ -1,10 +1,6 @@
 ---
-title: collate sınıfı | Microsoft Docs
-ms.custom: ''
+title: collate Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - locale/std::collate
 - locale/std::collate::char_type
@@ -15,8 +11,6 @@ f1_keywords:
 - locale/std::collate::do_transform
 - locale/std::collate::hash
 - locale/std::collate::transform
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::collate [C++]
 - std::collate [C++], char_type
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - std::collate [C++], hash
 - std::collate [C++], transform
 ms.assetid: 92168798-9628-4a2e-be6e-fa62dcd4d6a6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 054246ce78601abf61f36d070500845275b61761
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 21d5825f8d9ea00359f2aa1c87291b831d1f330f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110379"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630119"
 ---
 # <a name="collate-class"></a>collate Sınıfı
 

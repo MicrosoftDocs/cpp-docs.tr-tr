@@ -1,27 +1,17 @@
 ---
-title: İşlenenler ve ifadeler | Microsoft Docs
-ms.custom: ''
+title: İşlenenler ve İfadeler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - expressions [C++], syntax
 - operands, definition
 - operands
 ms.assetid: 8453b095-a017-4c70-9a64-e3b2bd1e35e5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 08b92dcf1e51a58255254f36df5c140ea36343f2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 457565e2a29035224b42937e251db2926be7d0c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46023377"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50650274"
 ---
 # <a name="operands-and-expressions"></a>İşlenenler ve İfadeler
 

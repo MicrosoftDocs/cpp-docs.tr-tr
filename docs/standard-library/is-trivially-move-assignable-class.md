@@ -1,27 +1,17 @@
 ---
-title: is_trivially_move_assignable sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_trivially_move_assignable sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_trivially_move_assignable
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_trivially_move_assignable
 ms.assetid: 374f7322-0706-4bc1-a1a5-4191d0315e28
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 19346075d0b52be7820adfe60e77e0f76113bc98
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: b25d16658def4e3cf620ab707d2dabacb2620f33
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44099915"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50435549"
 ---
 # <a name="istriviallymoveassignable-class"></a>is_trivially_move_assignable sınıfı
 

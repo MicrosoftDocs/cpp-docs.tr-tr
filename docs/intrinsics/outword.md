@@ -1,28 +1,18 @@
 ---
-title: __outword | Microsoft Docs
-ms.custom: ''
+title: __outword
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __outword
-dev_langs:
-- C++
 helpviewer_keywords:
 - __outword intrinsic
 - out instruction
 ms.assetid: 995f8834-0f50-4b4f-a7a2-af0e7c371cda
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eac50ba9c4c1b4bc14ebb847b283b5c2da11605e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e5a6274fef9d9e9e4a168b9849ab0021c32a4716
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388804"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626193"
 ---
 # <a name="outword"></a>__outword
 
@@ -33,9 +23,9 @@ Oluşturur `out` sağlayan sözcüğü gönderir yönergesinin `Data` çıkış 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-void __outword( 
-   unsigned short Port, 
-   unsigned short Data 
+void __outword( 
+   unsigned short Port, 
+   unsigned short Data 
 );
 ```
 

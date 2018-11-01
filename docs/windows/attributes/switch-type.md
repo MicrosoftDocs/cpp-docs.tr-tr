@@ -1,28 +1,17 @@
 ---
-title: switch_type (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: switch_type (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.switch_type
-dev_langs:
-- C++
 helpviewer_keywords:
 - switch_type attribute
 ms.assetid: e24544dc-b3bc-48ae-b249-f967db49271e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 7aa11ada46f74c3e2a7293c65151b1f1ede7255e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e8827fe576282b86f1d3bc633ec7f9f954c015b7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080097"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448795"
 ---
 # <a name="switchtype"></a>switch_type
 

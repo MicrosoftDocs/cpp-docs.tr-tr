@@ -1,29 +1,19 @@
 ---
-title: CD2DEllipse sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DEllipse sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DEllipse
 - AFXRENDERTARGET/CD2DEllipse
 - AFXRENDERTARGET/CD2DEllipse::CD2DEllipse
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DEllipse [MFC], CD2DEllipse
 ms.assetid: e9f02f54-acf2-427e-b349-db50cd9a77df
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 93fc2b788d450b591ebd20be49f25133c95f22b6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: aa280215aaac55e3aaa9542ca1ab2bd9d21655e8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052862"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642045"
 ---
 # <a name="cd2dellipse-class"></a>CD2DEllipse sınıfı
 

@@ -1,12 +1,6 @@
 ---
-title: ODBC ve MFC | Microsoft Docs
-ms.custom: ''
+title: ODBC ve MFC
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC [C++], MFC
 - connections [C++], databases
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - MFC [C++], ODBC and
 - database connections [C++], MFC ODBC classes
 ms.assetid: 98f02fd7-1235-437b-89a9-edfd0fc797f7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: b6a712b28fba569bfb46124f828e85dfa5dbb229
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7c7540528bed2499ed9dfb09ed39658914c81e14
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079512"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560637"
 ---
 # <a name="odbc-and-mfc"></a>ODBC ve MFC
 

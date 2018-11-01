@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1055 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1055
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1055
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1055
 ms.assetid: a9fb9190-d7eb-4d5f-b1a2-a41e584a28c1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6960d8168bd818e4d1baa30e5e54940e6e4dc2e9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e6df4870d7af49c369be7e513791955599c48326
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46115456"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636521"
 ---
 # <a name="fatal-error-c1055"></a>Önemli hata C1055
 

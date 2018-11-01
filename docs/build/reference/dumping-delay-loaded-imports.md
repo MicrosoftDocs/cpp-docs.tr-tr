@@ -1,27 +1,17 @@
 ---
-title: Gecikmeyi dökme | Microsoft Docs
-ms.custom: ''
+title: Gecikmeli Yükleme İçe Aktarmalarını Dökme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - delay-loaded imports, dumping
 - imports (delay-loaded)
 - delay-loaded imports
 ms.assetid: f766acf4-9df8-4b85-8cf6-0be3ffc4c124
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 29f2faecb29da93729b0be0f40c00c18b82f6344
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 782da0d29024a8308de0bb4d00656b850629c8ba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45720882"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444167"
 ---
 # <a name="dumping-delay-loaded-imports"></a>Gecikmeli Yükleme İçe Aktarmalarını Dökme
 

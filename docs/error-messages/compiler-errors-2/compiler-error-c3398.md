@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3398 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3398
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3398
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3398
 ms.assetid: 26f8c8a4-526f-415b-8047-155c5cd4f180
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 336494ea9581289efd9a41e604a28984125ae61a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3b688012009a87c1e3d0db05e47133893daeaf34
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46018138"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50451070"
 ---
 # <a name="compiler-error-c3398"></a>Derleyici Hatası C3398
 

@@ -1,10 +1,6 @@
 ---
-title: snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l | Microsoft Docs
-ms.custom: ''
+title: snprintf _snprintf, _snprintf_l _snwprintf, _snwprintf_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _snwprintf
 - _snprintf
@@ -37,8 +33,6 @@ f1_keywords:
 - _snprintf_l
 - _snwprintf
 - _snwprintf_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - snwprintf_l function
 - sntprintf_l function
@@ -54,16 +48,12 @@ helpviewer_keywords:
 - sntprintf function
 - formatted text [C++]
 ms.assetid: 5976c9c8-876e-4ac9-a515-39f3f7fd0925
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fc8ca9c62204c1bb8debccf9253bb913f8d1fb10
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 202f2f12de3955a2c9b0f785c3e89280d91a4a95
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060570"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653691"
 ---
 # <a name="snprintf-snprintf-snprintfl-snwprintf-snwprintfl"></a>snprintf _snprintf, _snprintf_l _snwprintf, _snwprintf_l
 

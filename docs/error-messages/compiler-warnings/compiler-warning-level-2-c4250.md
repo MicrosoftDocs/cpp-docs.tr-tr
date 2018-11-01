@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 2) C4250 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 2) C4250
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4250
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4250
 ms.assetid: d47f7249-6b5a-414b-b2d4-56e5d246a782
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f5797782691385111f0be22854643315f4e596fb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8baf3c03c87dc70a80b785d7f81cbee4e1d828f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031448"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454866"
 ---
 # <a name="compiler-warning-level-2-c4250"></a>Derleyici Uyarısı (Düzey 2) C4250
 

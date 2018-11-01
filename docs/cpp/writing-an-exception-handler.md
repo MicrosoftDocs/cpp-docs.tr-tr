@@ -1,26 +1,16 @@
 ---
-title: Bir özel durum işleyicisi yazma | Microsoft Docs
-ms.custom: ''
+title: Özel Durum İşleyicisi Yazma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - structured exception handling [C++], exception handlers
 - exception handling [C++], exception handlers
 ms.assetid: 71473fee-f773-4a34-bf12-82a3af79579c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d8956bb673c756224a886dede90cf23d84c3f20c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6f1bcecf3aaed2bf2b7ebbe511f11cdb5ec1ca5e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050976"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644788"
 ---
 # <a name="writing-an-exception-handler"></a>Özel Durum İşleyicisi Yazma
 

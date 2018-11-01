@@ -1,33 +1,23 @@
 ---
-title: -CLRHEADER | Microsoft Docs
-ms.custom: ''
+title: /CLRHEADER
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /CLRHEADER
-dev_langs:
-- C++
 helpviewer_keywords:
 - -CLRHEADER dumpbin option
 - /CLRHEADER dumpbin option
 - CLRHEADER dumpbin option
 ms.assetid: cf73424f-4541-47e2-b94e-69b95266ef2a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f6cda2f03e8a0473d2c45f54c96ca97b043d80d5
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 864ecc0063716ce712e28b063714ce7c17fc294a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704447"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50627376"
 ---
 # <a name="clrheader"></a>/CLRHEADER
 
-CLR özgü bilgileri görüntüler.
+CLR özel bilgileri görüntüler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,21 +27,21 @@ CLR özgü bilgileri görüntüler.
 
 |||
 |-|-|
-*Dosya*| Bir görüntü dosyası ile oluşturulan [/CLR](../../build/reference/clr-common-language-runtime-compilation.md).
+*Dosya*| Bir resim dosyası ile oluşturulmuş [/CLR](../../build/reference/clr-common-language-runtime-compilation.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/ CLRHEADER** herhangi bir yönetilen programında kullanılan .NET üstbilgileri hakkındaki bilgileri görüntüler. Çıkış, .NET üstbilgi ve bölümleri üstbilgisinde bayt boyutunu ve konumunu gösterir.
+**/ CLRHEADER** herhangi bir yönetilen programında kullanılan .NET üst bilgileri hakkındaki bilgileri görüntüler. Çıktı, .NET üstbilgi ve bölümleri üst bilgisindeki bayt cinsinden boyutunu ve konumunu gösterir.
 
-Yalnızca [/HEADERS](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalarda kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
 
-Zaman **/CLRHEADER** kullanılan/CLR ile derlenen bir dosyada olacaktır bir **clr üstbilgi:** DUMPBIN çıktı bölümünde. Değeri **bayrakları** hangi/CLR seçeneği kullanılan gösterir:
+Zaman **/CLRHEADER** kullanılan/CLR ile derlenen bir dosyada olacaktır bir **clr üst bilgi:** dumpbin çıkış bölümünde. Değerini **bayrakları** hangi/CLR seçeneği kullanılan gösterir:
 
-- 0--/ CLR (yerel kod görüntü içerebilir).
+- 0 – / CLR (yerel kod görüntü içerebilir).
 
-Görüntüyü bir ortak dil çalışma zamanı için oluşturulmuş program aracılığıyla da denetleyebilirsiniz.  Daha fazla bilgi için bkz: [nasıl yapılır: bir resmin yerel mi yoksa CLR mi olduğunu belirleme](../../dotnet/how-to-determine-if-an-image-is-native-or-clr.md).
+Görüntüyü bir ortak dil çalışma zamanı için oluşturulmuş programlama yoluyla da kontrol edebilirsiniz.  Daha fazla bilgi için [nasıl yapılır: görüntü yerel mi yoksa CLR mi belirlemek](../../dotnet/how-to-determine-if-an-image-is-native-or-clr.md).
 
-**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor. "Saf" veya "safe" olmalıdır kod C# için bağlantı noktası kurulmuş.
+**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor. "Saf" veya "güvenli" olmalıdır kod unity'nin için C#.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

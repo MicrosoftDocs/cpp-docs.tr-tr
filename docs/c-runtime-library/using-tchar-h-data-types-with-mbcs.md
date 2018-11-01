@@ -1,29 +1,19 @@
 ---
-title: TCHAR kullanma. _MBCS veri türleriyle H | Microsoft Docs
-ms.custom: ''
+title: MBCS ile TCHAR.H Veri Türlerini Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - _mbcs
-dev_langs:
-- C++
 helpviewer_keywords:
 - TCHAR.H data types
 - MBCS data type
 - _MBCS data type
 ms.assetid: 48f471e7-9d2b-4a39-b841-16a0e15c0a18
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fc14f5831904e2fea9bfa7ef7607f2085d1f0e58
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 487a73fae9380683e06e863f133e5e470635e0da
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061272"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432688"
 ---
 # <a name="using-tcharh-data-types-with-mbcs"></a>MBCS ile TCHAR.H Veri Türlerini Kullanma
 

@@ -1,10 +1,6 @@
 ---
-title: CDocTemplate sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDocTemplate sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDocTemplate
 - AFXWIN/CDocTemplate
@@ -28,8 +24,6 @@ f1_keywords:
 - AFXWIN/CDocTemplate::SetDefaultTitle
 - AFXWIN/CDocTemplate::SetPreviewInfo
 - AFXWIN/CDocTemplate::SetServerInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDocTemplate [MFC], CDocTemplate
 - CDocTemplate [MFC], AddDocument
@@ -52,16 +46,12 @@ helpviewer_keywords:
 - CDocTemplate [MFC], SetPreviewInfo
 - CDocTemplate [MFC], SetServerInfo
 ms.assetid: 14b41a1f-bf9d-4eac-b6a8-4c54ffcc77f6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5e3b2fcdda2c4002bd83894b93488bf848c159dd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8044af41a3176d58c09f2c91c52497fa7f59de05
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396603"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658594"
 ---
 # <a name="cdoctemplate-class"></a>CDocTemplate sınıfı
 

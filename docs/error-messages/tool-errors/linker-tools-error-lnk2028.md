@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK2028 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK2028
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK2028
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK2028
 ms.assetid: e2b03293-6066-464d-a050-ce747bcf7f0e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e9c8eaa03927f51acd3c3d84731e9ef2b282b7c6
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: ed2dc1a95d4dd7c447b360da21b5046e20f79083
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704160"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643683"
 ---
 # <a name="linker-tools-error-lnk2028"></a>Bağlayıcı Araçları Hatası LNK2028
 
@@ -29,13 +19,13 @@ ms.locfileid: "34704160"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yerel bir işleve saf görüntüsüne alınmaya çalışılırken örtük çağırma kurallarını yerel ve saf derlemeler arasında farklı olduğunu unutmayın.
+Yerel bir işlevin saf bir görüntüye alınmaya çalışılırken örtük çağırma kuralları yerel ve saf derlemeler farkı olduğunu unutmayın.
 
-**/CLR: pure** derleyici seçeneği Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+**/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
 ## <a name="example"></a>Örnek
 
-Bu kod örneği, çağırma olduğu örtük olarak dışarı aktarılan, yerel, işlevi içeren bir bileşen oluşturur [__cdecl](../../cpp/cdecl.md).
+Bu kod örneği, çağırma kuralı olduğunu örtük olarak dışarı aktarılan, yerel, işlevi içeren bir bileşen oluşturur [__cdecl](../../cpp/cdecl.md).
 
 ```cpp
 // LNK2028.cpp
@@ -47,7 +37,7 @@ __declspec(dllexport) int func() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, yerel işlevi tüketir saf bir istemci oluşturur. Ancak, çağırma altında **/CLR: pure** olan [__clrcall](../../cpp/clrcall.md). Aşağıdaki örnek LNK2028 oluşturur.
+Aşağıdaki örnek, yerel işlev tüketen saf bir istemci oluşturur. Ancak, çağırma kuralı altında **/CLR: pure** olduğu [__clrcall](../../cpp/clrcall.md). Aşağıdaki örnek, LNK2028 oluşturur.
 
 ```cpp
 // LNK2028_b.cpp

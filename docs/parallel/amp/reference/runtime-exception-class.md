@@ -1,30 +1,20 @@
 ---
-title: runtime_exception sınıfı | Microsoft Docs
-ms.custom: ''
+title: runtime_exception Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - runtime_exception
 - AMPRT/runtime_exception
 - AMPRT/Concurrency::runtime_exception
 - AMPRT/Concurrency::runtime_exception::get_error_code
-dev_langs:
-- C++
 helpviewer_keywords:
 - runtime_exception class
 ms.assetid: 8fe3ce2c-3d4c-4b9c-95e8-e592f37adefd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c014da0707d2e4fdd1ec218107a628d0c2f91e24
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 627fc6788dd359779bf07da3da1901be4c3aeafd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428498"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630691"
 ---
 # <a name="runtimeexception-class"></a>runtime_exception Sınıfı
 

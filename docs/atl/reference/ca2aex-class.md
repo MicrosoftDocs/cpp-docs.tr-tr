@@ -1,31 +1,21 @@
 ---
-title: CA2AEX sınıfı | Microsoft Docs
-ms.custom: ''
+title: CA2AEX sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CA2AEX
 - ATLCONV/ATL::CA2AEX
 - ATLCONV/ATL::CA2AEX::CA2AEX
 - ATLCONV/ATL::CA2AEX::m_psz
 - ATLCONV/ATL::CA2AEX::m_szBuffer
-dev_langs:
-- C++
 helpviewer_keywords:
 - CA2AEX class
 ms.assetid: 57dc65df-d9cf-4a84-99d3-6e031dde3664
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 49e364e2676242ad75f185792faa545bbb90ef1e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 77bb49ab87c20b6df317282d8f5e6e228deb3a11
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071217"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639222"
 ---
 # <a name="ca2aex-class"></a>CA2AEX sınıfı
 

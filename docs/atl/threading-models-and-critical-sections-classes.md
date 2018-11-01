@@ -1,30 +1,20 @@
 ---
-title: İş parçacığı oluşturma modelleri ve kritik bölüm sınıfları (ATL) | Microsoft Docs
-ms.custom: ''
+title: İş parçacığı oluşturma modelleri ve kritik bölüm sınıfları (ATL)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
 f1_keywords:
 - vc.atl.threads.models
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL, critical sections
 - ATL, multithreading
 - threading [ATL], models
 - critical sections
 ms.assetid: 759f05ef-6285-4be6-a2cc-78572dd75146
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b87fdac5220ede47f1acf19088e952fde408a413
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ecc4ae1287c0ff024b27ad62ad57b4e35a142007
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755963"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626973"
 ---
 # <a name="threading-models-and-critical-sections-classes"></a>İş parçacığı oluşturma modelleri ve kritik bölüm sınıfları
 

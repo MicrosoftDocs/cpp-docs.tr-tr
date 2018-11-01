@@ -1,10 +1,6 @@
 ---
-title: strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l | Microsoft Docs
-ms.custom: ''
+title: strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbstok_l
 - _mbstok
@@ -31,8 +27,6 @@ f1_keywords:
 - strtok
 - _tcstok
 - wcstok
-dev_langs:
-- C++
 helpviewer_keywords:
 - mbstok_l function
 - strings [C++], searching
@@ -51,16 +45,12 @@ helpviewer_keywords:
 - _tcstok_l function
 - strtok_l function
 ms.assetid: 904cb734-f0d7-4d77-ba81-4791ddf461ae
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5b714d8b78ecfc28db9f6e69308777ed53be7987
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b984460d5b87e6a1d195e4127234479f8f7c8b0f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210879"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649482"
 ---
 # <a name="strtok-strtokl-wcstok-wcstokl-mbstok-mbstokl"></a>strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
 

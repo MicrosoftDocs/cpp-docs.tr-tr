@@ -1,10 +1,6 @@
 ---
-title: CStatic sınıfı | Microsoft Docs
-ms.custom: ''
+title: CStatic sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CStatic
 - AFXWIN/CStatic
@@ -19,8 +15,6 @@ f1_keywords:
 - AFXWIN/CStatic::SetCursor
 - AFXWIN/CStatic::SetEnhMetaFile
 - AFXWIN/CStatic::SetIcon
-dev_langs:
-- C++
 helpviewer_keywords:
 - CStatic [MFC], CStatic
 - CStatic [MFC], Create
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - CStatic [MFC], SetEnhMetaFile
 - CStatic [MFC], SetIcon
 ms.assetid: e7c94cd9-5ebd-428a-aa30-b3e51f8efb95
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 084a3101b7415ae4b77ed11070c893a7bc44ac37
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 622172d369818a7a503945bcd3cf064662f38266
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439672"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50576715"
 ---
 # <a name="cstatic-class"></a>CStatic sınıfı
 

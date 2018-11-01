@@ -1,12 +1,6 @@
 ---
-title: Yapı sorunlarının yayın düzeltme | Microsoft Docs
-ms.custom: ''
+title: Yayın Derlemesi Sorunlarını Giderme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - release builds, troubleshooting
 - debug builds, memory overwrites
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - troubleshooting Visual C++, release builds
 - troubleshooting release builds
 ms.assetid: a0c0818e-4c47-4fe0-a611-50d61a41bd88
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b9b304fa6bcc9b0b248719ea44b28e9dae5c76a6
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1029c844662f741cbef90371e8017308948fe513
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726537"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633485"
 ---
 # <a name="fixing-release-build-problems"></a>Yayın Derlemesi Sorunlarını Giderme
 

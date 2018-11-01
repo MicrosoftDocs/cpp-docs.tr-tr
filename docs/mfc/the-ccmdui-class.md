@@ -1,14 +1,8 @@
 ---
-title: Ccmduı sınıfı | Microsoft Docs
-ms.custom: ''
+title: CCmdUI Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CCmdUI
-dev_langs:
-- C++
 helpviewer_keywords:
 - updating user interface objects [MFC]
 - user interface objects [MFC], updating
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - update handlers [MFC]
 - toolbars [MFC], updating
 ms.assetid: 2f2bae62-8c29-45a4-bbce-490eb01907d5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 18b5675aff2d10f224238a1ba6d3b919e1b285a7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 47ef359f71d9dd30f2ba1ff1c4cf504bccd33ffd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374588"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667954"
 ---
 # <a name="the-ccmdui-class"></a>CCmdUI Sınıfı
 

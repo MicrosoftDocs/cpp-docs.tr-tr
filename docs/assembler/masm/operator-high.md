@@ -1,29 +1,19 @@
 ---
-title: işleç HIGH | Microsoft Docs
-ms.custom: ''
+title: HIGH işleci
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - HIGH
 - operator HIGH
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator HIGH
 - HIGH operator
 ms.assetid: 1deea1af-5cba-4477-aab9-21891250cdfc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dd69844b8ec81dc41df1f742e02f5da6476fa220
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: c7142709216bee6670666fe6baaae7bc449c4a86
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679322"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664109"
 ---
 # <a name="operator-high"></a>HIGH işleci
 

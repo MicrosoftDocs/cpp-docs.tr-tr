@@ -1,30 +1,20 @@
 ---
-title: OLE sınıfları | Microsoft Docs
-ms.custom: ''
+title: OLE Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.ole
-dev_langs:
-- C++
 helpviewer_keywords:
 - ActiveX classes [MFC]
 - classes [MFC], OLE
 - OLE classes [MFC]
 - OLE [MFC], classes
 ms.assetid: 4c2b2bca-fafb-4d2d-8498-9ed1e04011d2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e31b6d8fb5a5e80d7ee3ce36a3323d3353f35d33
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ff7ae74472c7857ce89ecf839c15cfa2ec4128f8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377363"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622540"
 ---
 # <a name="ole-classes"></a>OLE Sınıfları
 

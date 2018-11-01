@@ -1,12 +1,6 @@
 ---
-title: . Bağlayıcı girişi olarak exp dosyaları | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Girişi olarak .Exp Dosyaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - exporting functions
 - import libraries, linker files
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - .exp files [C++]
 - EXP files
 ms.assetid: 399f5636-0a4d-462e-b500-5f5b9ae5ad22
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4badc93f38d5ce76dcc294ad4ae216c8e3f6454c
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 4f70aad2fa91431da771f8e5be47956ae2db45a1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724015"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661942"
 ---
 # <a name="exp-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Exp Dosyaları
 

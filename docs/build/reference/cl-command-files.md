@@ -1,29 +1,19 @@
 ---
-title: CL komut dosyaları | Microsoft Docs
-ms.custom: ''
+title: CL Komut Dosyaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - cl
-dev_langs:
-- C++
 helpviewer_keywords:
 - cl.exe compiler, command files
 - command files
 - command files, CL compiler
 ms.assetid: ec3cea06-2af0-4fe9-a94c-119c9d31b3a9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8458462304a9b739c61997505724d21bb56763f6
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 43bac2c1bd5cc3588c52e6ff7af234df56a0b25d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45708677"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642487"
 ---
 # <a name="cl-command-files"></a>CL Komut Dosyaları
 

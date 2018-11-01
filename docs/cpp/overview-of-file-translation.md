@@ -1,12 +1,6 @@
 ---
-title: Dosya çevirisine genel bakış | Microsoft Docs
-ms.custom: ''
+title: Dosya Çevirisine Genel Bakış
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - file translation [C++], about file translation
 - translation [C++]
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - programs [C++], lexical conventions of
 - preprocessing translation phase
 ms.assetid: 5036c7b7-ccff-4e2c-b052-a9ea6c71af87
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1d0aa647f6f94d31f1a06bb09b143554dba51b68
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: cb8a8fea2411e4eb7de78545f70021f3617b0f52
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861752"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50442867"
 ---
 # <a name="overview-of-file-translation"></a>Dosya Çevirisine Genel Bakış
 

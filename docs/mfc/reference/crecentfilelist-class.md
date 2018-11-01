@@ -1,10 +1,6 @@
 ---
-title: CRecentFileList sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRecentFileList sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CRecentFileList
 - AFXADV/CRecentFileList
@@ -16,8 +12,6 @@ f1_keywords:
 - AFXADV/CRecentFileList::Remove
 - AFXADV/CRecentFileList::UpdateMenu
 - AFXADV/CRecentFileList::WriteList
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRecentFileList [MFC], CRecentFileList
 - CRecentFileList [MFC], Add
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - CRecentFileList [MFC], UpdateMenu
 - CRecentFileList [MFC], WriteList
 ms.assetid: a77f0524-7584-4582-849a-7e97b76d186e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2f8f3d1b4be06caeacc86718eafed432979b0c59
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 996a9052d71df4aed54fa4f922b4d4ffff8f1c14
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069431"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453878"
 ---
 # <a name="crecentfilelist-class"></a>CRecentFileList sınıfı
 

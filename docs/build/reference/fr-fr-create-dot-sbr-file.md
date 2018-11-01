@@ -1,34 +1,24 @@
 ---
-title: -FR, -Fr (oluşturun. SBR dosyası) | Microsoft Docs
-ms.custom: ''
+title: /FR, /Fr (.Sbr Dosyası Oluştur)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.BrowseInformation
 - VC.Project.VCCLCompilerTool.BrowseInformation
 - /fr
 - VC.Project.VCCLCompilerTool.BrowseInformationFile
 - VC.Project.VCCLWCECompilerTool.BrowseInformationFile
-dev_langs:
-- C++
 helpviewer_keywords:
 - /FR compiler option [C++]
 - -FR compiler option [C++]
 - FR compiler option [C++]
 - symbolic browser information
 ms.assetid: 3fd8f88b-3924-4feb-9393-287036a28896
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6afcd4aa8ba2e86d687739bc3891f45f2da5672c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1eeca5d5ddbb40e0439a1774392f3c3b53c3c90e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379172"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656241"
 ---
 # <a name="fr-fr-create-sbr-file"></a>/FR, /Fr (.Sbr Dosyası Oluştur)
 

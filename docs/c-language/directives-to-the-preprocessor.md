@@ -1,23 +1,13 @@
 ---
-title: Ön İşlemci yönergeleri | Microsoft Docs
-ms.custom: ''
+title: Ön işlemci Yönergeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: adc6251e-cf6b-4508-bdbb-55f446c838d3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f1ddecf1e205cc9a6d7f09a27fbf243417540e49
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0abc21f38f5776acd9167f0526160dc5e1bb8cbb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46033569"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450078"
 ---
 # <a name="directives-to-the-preprocessor"></a>Ön işlemci Yönergeleri
 

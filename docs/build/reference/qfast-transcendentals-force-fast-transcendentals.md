@@ -1,28 +1,18 @@
 ---
-title: -Qfast_transcendentals (hızlı Soyutları zorla) | Microsoft Docs
-ms.custom: ''
+title: /Qfast_transcendentals (Hızlı Soyutları Zorla)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /Qfast_transcendentals
-dev_langs:
-- C++
 helpviewer_keywords:
 - /Qfast_transcendentals
 - Force Fast Transcendentals
 ms.assetid: 4de24bd1-38e6-49d4-9a05-04c9937d24ac
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8edfcdc6881ef3d140a80113047722a62e5bd517
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 512e658cf546e77bff6d58465932d2f830541521
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420263"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666134"
 ---
 # <a name="qfasttranscendentals-force-fast-transcendentals"></a>/Qfast_transcendentals (Hızlı Soyutları Zorla)
 
@@ -52,7 +42,7 @@ Bu seçenek ile uyumsuz **/FP: strict**. Bkz: [FP (Floating-Point davranışın�
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

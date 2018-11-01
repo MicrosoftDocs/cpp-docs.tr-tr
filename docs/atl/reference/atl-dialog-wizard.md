@@ -1,28 +1,18 @@
 ---
-title: ATL iletişim kutusu Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: ATL iletişim kutusu Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.atl.dlg.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL projects, adding dialog resources
 - ATL Dialog Wizard
 ms.assetid: b0b9ace5-83c9-40d3-82c3-eb6293f10583
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8a10d97d366203da8addbff45a436094abc384cb
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 7f868800bb8453ac47ec0f188d6a2970aee7a55f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710131"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50458064"
 ---
 # <a name="atl-dialog-wizard"></a>ATL iletişim kutusu Sihirbazı
 

@@ -1,10 +1,6 @@
 ---
-title: Bildirim aracı yapılandırma özellikleri (Visual C++) | Microsoft Docs
-ms.custom: ''
+title: Bildirim aracı yapılandırma özellikleri (Visual C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCManifestTool.MergeRulesFile
 - VC.Project.VCManifestTool.UseUnicodeResponseFiles
@@ -12,19 +8,13 @@ f1_keywords:
 - VC.Project.VCManifestTool.UseFAT32Workaround
 - VC.Project.VCManifestTool.VerboseOutput
 - VC.Project.VCManifestTool.AssemblyIdentity
-dev_langs:
-- C++
 ms.assetid: b99368a5-6819-482c-a06e-f2409290cfd1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bf3fe573ff2a71c2a53e946655300219f190b4c8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5706a67ac3f6be7a916d6f4f0ee8ccfafdfb9475
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46447719"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565223"
 ---
 # <a name="general-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Genel, bildirim aracı, yapılandırma özellikleri, &lt;Projectname&gt; özellik sayfaları iletişim kutusu
 

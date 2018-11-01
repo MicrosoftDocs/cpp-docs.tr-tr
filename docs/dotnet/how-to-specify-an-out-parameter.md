@@ -1,27 +1,17 @@
 ---
-title: 'Nasıl yapılır: belirttiğiniz bir parametre | Microsoft Docs'
+title: 'Nasıl yapılır: Bir out Parametresini Belirleme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - function parameters
 - out parameters
 ms.assetid: 02862448-603c-4e9d-a5c5-b45fe38446e3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 3af9c1d10206e89b0ad8462bd95fdf3b6062d713
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8c3499a2916eda7ab96f7958df190c803206741e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419509"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437096"
 ---
 # <a name="how-to-specify-an-out-parameter"></a>Nasıl yapılır: Bir out Parametresini Belirleme
 

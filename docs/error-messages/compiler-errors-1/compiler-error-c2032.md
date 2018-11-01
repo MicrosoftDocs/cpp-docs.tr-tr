@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2032 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2032
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2032
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2032
 ms.assetid: 625d7c83-70b6-42c2-a558-81fbc0026324
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6ab02ca695ec94f25054e3490232b782a46a53a4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5743aba880f23d7706940936fc4a3a1973a84ca1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46064015"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558255"
 ---
 # <a name="compiler-error-c2032"></a>Derleyici Hatası C2032
 

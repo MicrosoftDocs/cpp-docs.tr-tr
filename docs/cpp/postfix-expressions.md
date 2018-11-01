@@ -1,27 +1,17 @@
 ---
-title: Sonek ifadeleri | Microsoft Docs
-ms.custom: ''
+title: Sonek İfadeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - operators [C++], postfix
 - postfix expressions
 - expressions [C++], postfix
 ms.assetid: 7ac62a57-06df-422f-b012-a75b37d7cb9b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d28d909866808fbffb6165e552bf825bf1241771
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 78fce31b3044cb1b80dc6a129d1a0182094c158a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069821"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677389"
 ---
 # <a name="postfix-expressions"></a>Sonek İfadeleri
 

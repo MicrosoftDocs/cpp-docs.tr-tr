@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları uyarısı LNK4070 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Uyarısı LNK4070
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK4070
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK4070
 ms.assetid: f95f179a-fff9-427e-bd51-466b3934517f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9cfb4ae1c5440742c491d9615a2b4929a9b04f66
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e7139b21f053ea8633356c7194cd719a6a4aef35
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106966"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622982"
 ---
 # <a name="linker-tools-warning-lnk4070"></a>Bağlayıcı Araçları Uyarısı LNK4070
 

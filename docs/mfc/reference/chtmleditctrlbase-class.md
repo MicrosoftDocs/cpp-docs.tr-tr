@@ -1,10 +1,6 @@
 ---
-title: CHtmlEditCtrlBase sınıfı | Microsoft Docs
-ms.custom: ''
+title: CHtmlEditCtrlBase sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CHtmlEditCtrlBase
 - AFXHTML/CHtmlEditCtrlBase
@@ -115,8 +111,6 @@ f1_keywords:
 - AFXHTML/CHtmlEditCtrlBase::Underline
 - AFXHTML/CHtmlEditCtrlBase::Unlink
 - AFXHTML/CHtmlEditCtrlBase::UnorderList
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHtmlEditCtrlBase [MFC], AddToGlyphTable
 - CHtmlEditCtrlBase [MFC], Bold
@@ -226,16 +220,12 @@ helpviewer_keywords:
 - CHtmlEditCtrlBase [MFC], Unlink
 - CHtmlEditCtrlBase [MFC], UnorderList
 ms.assetid: e0cc74b4-8320-4570-b673-16c03d2ae266
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1925483ecfe49b67e86b39087dd20c276eaefa2b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 11bfa8304b51ed25b934a97109db7da7bb39f49a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404611"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590144"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase sınıfı
 

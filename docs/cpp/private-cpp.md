@@ -1,27 +1,17 @@
 ---
-title: Özel (C++) | Microsoft Docs
-ms.custom: ''
+title: private (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - private_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - private keyword [C++]
 ms.assetid: 94e99983-46a5-4e21-800c-28f8a7c6a8ff
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 20d064a1154126878ce75d9dd08d88fa9d65f83c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 19ea551f625cac02e639753a976eddb7a5fa164b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46028564"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622280"
 ---
 # <a name="private-c"></a>private (C++)
 

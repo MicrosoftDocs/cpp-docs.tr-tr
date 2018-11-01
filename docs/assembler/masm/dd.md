@@ -1,27 +1,17 @@
 ---
-title: DD | Microsoft Docs
-ms.custom: ''
+title: DD
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - dd
-dev_langs:
-- C++
 helpviewer_keywords:
 - DD directive
 ms.assetid: 0c238628-2fe2-437e-979d-a90bdae7b478
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f8095700d3e1f54b4909c779563d8d67337dc326
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 6022da53ad8cde2b90431bfaf5b1ea2ddc0cac34
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692667"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626113"
 ---
 # <a name="dd"></a>DD
 

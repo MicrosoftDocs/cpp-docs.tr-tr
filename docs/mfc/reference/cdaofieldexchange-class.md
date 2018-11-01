@@ -1,10 +1,6 @@
 ---
-title: CDaoFieldExchange sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDaoFieldExchange sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDaoFieldExchange
 - AFXDAO/CDaoFieldExchange
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXDAO/CDaoFieldExchange::SetFieldType
 - AFXDAO/CDaoFieldExchange::m_nOperation
 - AFXDAO/CDaoFieldExchange::m_prs
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDaoFieldExchange [MFC], IsValidOperation
 - CDaoFieldExchange [MFC], SetFieldType
 - CDaoFieldExchange [MFC], m_nOperation
 - CDaoFieldExchange [MFC], m_prs
 ms.assetid: 350a663e-92ff-44ab-ad53-d94efa2e5823
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3ed7f8eabc8df2d4aefb6b1350404b03d90736a2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ef88486d14ade1d5871d614069dc1c202d6ad159
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432415"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654227"
 ---
 # <a name="cdaofieldexchange-class"></a>CDaoFieldExchange sınıfı
 

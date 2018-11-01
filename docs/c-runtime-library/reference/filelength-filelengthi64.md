@@ -1,10 +1,6 @@
 ---
-title: _filelength, _filelengthi64 | Microsoft Docs
-ms.custom: ''
+title: _filelength, _filelengthi64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _filelengthi64
 - _filelength
@@ -25,8 +21,6 @@ f1_keywords:
 - _filelength
 - _filelengthi64
 - filelengthi64
-dev_langs:
-- C++
 helpviewer_keywords:
 - filelengthi64 function
 - lengths, file
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - files [C++], length
 - _filelengthi64 function
 ms.assetid: 3ab83d5a-543c-4079-b9d9-0abfc7da0275
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 33943eb81658b065116d30592f25ef004d4bfc1b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5434a6ea2155b75f1c034202477a67db36da8b3d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399338"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430492"
 ---
 # <a name="filelength-filelengthi64"></a>_filelength, _filelengthi64
 
@@ -68,7 +58,7 @@ Hedef dosya tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her ikisi de **_filelength** ve **_filelengthi64** ile ilişkili hedef dosyasının bayt cinsinden dosya uzunluğunu Döndür *fd*. Varsa *fd* geçersiz dosya tanımlayıcısı açıklandığı gibi bu işlevi geçersiz parametre işleyicisi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, her iki işlevleri hatayı belirtmek ve ayarlamak için-1 M dönmek **errno** için **EBADF**.
+Her ikisi de **_filelength** ve **_filelengthi64** bayt cinsinden ilişkili hedef dosyanın dosya uzunluğu dönüş *fd*. Varsa *fd* bir geçersiz dosya tanımlayıcısı bu işlev içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, her iki işlev bir hata olduğunu gösterir ve ayarlamak için-1 L döndürür **errno** için **EBADF**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -77,11 +67,11 @@ Her ikisi de **_filelength** ve **_filelengthi64** ile ilişkili hedef dosyasın
 |**_filelength**|\<io.h >|
 |**_filelengthi64**|\<io.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [_chsize](chsize.md).
+Örneğin bakın [_chsize](chsize.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

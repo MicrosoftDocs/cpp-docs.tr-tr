@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonQuickAccessToolBarDefaultState sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonQuickAccessToolBarDefaultState sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonQuickAccessToolBarDefaultState
 - AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState::AddCommand
 - AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState::CopyFrom
 - AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState::RemoveAll
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonQuickAccessToolBarDefaultState [MFC], CMFCRibbonQuickAccessToolBarDefaultState
 - CMFCRibbonQuickAccessToolBarDefaultState [MFC], AddCommand
 - CMFCRibbonQuickAccessToolBarDefaultState [MFC], CopyFrom
 - CMFCRibbonQuickAccessToolBarDefaultState [MFC], RemoveAll
 ms.assetid: eca99200-b87b-47ba-b2e8-2f3f2444b176
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c7e237d5c1c7eb1eda792c6cbbc028960d851c07
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 07af26c78cc3316dbfcd33a5b28e5230a82a2e10
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380366"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445103"
 ---
 # <a name="cmfcribbonquickaccesstoolbardefaultstate-class"></a>CMFCRibbonQuickAccessToolBarDefaultState sınıfı
 

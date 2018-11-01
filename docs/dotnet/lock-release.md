@@ -1,31 +1,21 @@
 ---
-title: Lock::Release | Microsoft Docs
-ms.custom: ''
+title: lock::release
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - lock.release
 - msclr::lock::release
 - lock::release
 - msclr.lock.release
-dev_langs:
-- C++
 helpviewer_keywords:
 - lock::release
 ms.assetid: b73d48fc-cf98-4b78-b39d-813d4a12fa84
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 6704dbf2a335bf4789a74311f9a5cea5f3344fbb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2fdb3ab6f261aa4752911a93d5f5ae0f5d637f44
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442337"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50650377"
 ---
 # <a name="lockrelease"></a>lock::release
 

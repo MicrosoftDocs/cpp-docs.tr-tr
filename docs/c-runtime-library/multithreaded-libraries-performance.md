@@ -1,28 +1,18 @@
 ---
-title: Çok iş parçacıklı kitaplık performansı | Microsoft Docs
-ms.custom: ''
+title: Çok İş Parçacıklı Kitaplık Performansı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - threading [C++], performance
 - libraries, multithreaded
 - performance, multithreading
 - multithreaded libraries
 ms.assetid: faa5d808-087c-463d-8f0d-8c478d137296
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9f66aebc7b6d77e3697fabf783332a83bdd6f3fb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f73aa99d1800fc81408b739e556bc7845b348a80
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052114"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587570"
 ---
 # <a name="multithreaded-libraries-performance"></a>Çok İş Parçacıklı Kitaplık Performansı
 

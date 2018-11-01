@@ -1,12 +1,6 @@
 ---
-title: 'ODBC: ODBC imleç kitaplığı | Microsoft Docs'
-ms.custom: ''
+title: 'ODBC: ODBC İmleç Kitaplığı'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - cursor library [ODBC]
 - snapshots, support in ODBC
@@ -22,17 +16,12 @@ helpviewer_keywords:
 - ODBC, timestamp
 - positioning cursors
 ms.assetid: 6608db92-82b1-4164-bb08-78153c227be3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 83b09d836422cbf32b70ac904aa31fcff2ad00bb
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e175a9b27cb19b0c2a67a08751b7a7717226ac55
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078264"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50435145"
 ---
 # <a name="odbc-the-odbc-cursor-library"></a>ODBC: ODBC İmleç Kitaplığı
 

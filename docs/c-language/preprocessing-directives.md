@@ -1,26 +1,16 @@
 ---
-title: Ön işleme yönergeleri | Microsoft Docs
-ms.custom: ''
+title: Ön işleme Yönergeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - preprocessing directives, C
 - preprocessing directives
 ms.assetid: b27d7444-8f84-4c31-b2fa-03335412d5e6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 47157fadca913cb436c84219bf1b4117aba619eb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4f03f07f323ad4289b333f23e6729f4fd30b74e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46035584"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640407"
 ---
 # <a name="preprocessing-directives"></a>Ön işleme Yönergeleri
 

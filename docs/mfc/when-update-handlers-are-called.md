@@ -1,12 +1,6 @@
 ---
-title: Güncelleştirme işleyicilerini | Microsoft Docs
-ms.custom: ''
+title: Güncelleştirme İşleyicilerini Çağırma Zamanı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - updating user interface objects [MFC]
 - command routing [MFC], update commands
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - command routing [MFC], update handlers
 - update handlers, calling
 ms.assetid: 7359f6b1-4669-477d-bd99-690affed08d9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 462bdb99c4f17232405db9df8e5bcb0da9861b69
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 036476ecc7a0528692e6fd3e3d69a2efeef6fd4b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397760"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454853"
 ---
 # <a name="when-update-handlers-are-called"></a>Güncelleştirme İşleyicilerini Çağırma Zamanı
 

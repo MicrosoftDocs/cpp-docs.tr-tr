@@ -1,12 +1,7 @@
 ---
-title: Genel işlevler (C + +/ CLI) | Microsoft Docs
-ms.custom: ''
+title: Genel İşlevler (C++/CLI)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - functions [C++], generic
 - generic methods
@@ -14,17 +9,12 @@ helpviewer_keywords:
 - methods [C++], generic
 - generic functions
 ms.assetid: 8e409364-58f9-4360-b486-e7d555e0c218
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 4e5305aaa35064c26a78cbd4654c27a0d608d70c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 74e8cfe2b5b49a672b276400be75031626fd61c2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067910"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432415"
 ---
 # <a name="generic-functions-ccli"></a>Genel İşlevler (C++/CLI)
 

@@ -1,24 +1,15 @@
 ---
-title: Ad alanları başvurusu (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Ad alanları başvurusu (C + +/ CX)
 ms.date: 01/22/2017
-ms.technology: cpp-windows
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - C++/CX namespaces
 ms.assetid: 5ebc0b49-1f22-48a7-90c4-a310bab9aba6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ba8a3a2134475ddb172f97871ae255322e1fe1e2
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 6896691140a54955e98755ce9b0a7ca6af27d6bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44101878"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428320"
 ---
 # <a name="namespaces-reference-ccx"></a>Ad alanları başvurusu (C + +/ CX)
 

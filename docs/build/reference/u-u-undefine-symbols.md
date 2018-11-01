@@ -1,34 +1,24 @@
 ---
-title: -U, -u (simge tanımlarını Kaldır) | Microsoft Docs
-ms.custom: ''
+title: /U, /u (Simge Tanımlarını Kaldır)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.UndefinePreprocessorDefinitions
 - VC.Project.VCCLWCECompilerTool.UndefinePreprocessorDefinitions
 - VC.Project.VCCLCompilerTool.UndefineAllPreprocessorDefinitions
 - /u
 - VC.Project.VCCLWCECompilerTool.UndefineAllPreprocessorDefinitions
-dev_langs:
-- C++
 helpviewer_keywords:
 - -U compiler option [C++]
 - Undefine Symbols compiler option
 - /U compiler option [C++]
 - U compiler option [C++]
 ms.assetid: 7bc0474f-6d1f-419b-807d-0d8816763b2a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a32106dd9802643a827f8a3e97298f389d31d3b4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1ccda218a2bccc261653016ad6a47d419ddacfd9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46430676"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624451"
 ---
 # <a name="u-u-undefine-symbols"></a>/U, /u (Simge Tanımlarını Kaldır)
 

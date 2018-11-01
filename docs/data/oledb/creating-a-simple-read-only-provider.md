@@ -1,27 +1,16 @@
 ---
-title: Basit bir salt okunur sağlayıcı oluşturma | Microsoft Docs
-ms.custom: ''
+title: Basit bir Salt Okunur Sağlayıcı Oluşturma
 ms.date: 10/26/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB providers, creating
 - OLE DB provider templates, creating providers
 ms.assetid: ade8ccdd-9ea4-4e46-a964-18460c2a2401
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: c8fd4e5eb25ab1e8e6b20b576a0688da7b5aa2ef
-ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
+ms.openlocfilehash: 2ac8e45ca06a5566923141adf5a22dc6710eeeab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50216402"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432610"
 ---
 # <a name="creating-a-simple-read-only-provider"></a>Basit bir Salt Okunur Sağlayıcı Oluşturma
 

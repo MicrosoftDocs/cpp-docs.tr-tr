@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3379 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3379
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3379
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3379
 ms.assetid: a66c2c4e-091c-4426-9cde-7c4cfb2ffce1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f90a4ccc17e63c21d4b6fb26e607450849f27b48
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2d6b2cb15cfaa0b72b946c0edb3b451737b51772
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46109333"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553510"
 ---
 # <a name="compiler-error-c3379"></a>Derleyici Hatası C3379
 

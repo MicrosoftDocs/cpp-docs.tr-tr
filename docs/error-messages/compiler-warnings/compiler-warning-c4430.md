@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı C4430 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı C4430
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4430
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4430
 ms.assetid: 12efbfff-aa58-4a86-a7d6-2c6a12d01dd3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 79c0045b568a24ad6702e748e82a8ebd88c41044
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1d58efd57433a065f08e4111302f358405e3b9ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093928"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639874"
 ---
 # <a name="compiler-warning-c4430"></a>Derleyici Uyarısı C4430
 

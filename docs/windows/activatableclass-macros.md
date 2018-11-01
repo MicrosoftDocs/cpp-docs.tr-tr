@@ -1,32 +1,22 @@
 ---
-title: ActivatableClass makroları | Microsoft Docs
-ms.custom: ''
+title: ActivatableClass Makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - ActivatableClass
 - ActivatableClassWithFactory
 - ActivatableClassWithFactoryEx
-dev_langs:
-- C++
 helpviewer_keywords:
 - ActivatableClassWithFactory
 - ActivatableClass
 - ActivatableClassWithFactoryEx
 ms.assetid: 9bd64709-ec2c-4678-8c96-ea5982622bdd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 5c97d69bbca685ca64245d5d784452029c14f73f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1b50d9ba59ef8aebe4eca388ee30449f4ddd53de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393639"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660674"
 ---
 # <a name="activatableclass-macros"></a>ActivatableClass Makroları
 

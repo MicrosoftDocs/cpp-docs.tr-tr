@@ -1,29 +1,19 @@
 ---
-title: 'TN021: Komut ve ileti yönlendirme | Microsoft Docs'
-ms.custom: ''
+title: 'TN021: Komut ve İleti Yönlendirme'
 ms.date: 06/28/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.routing
-dev_langs:
-- C++
 helpviewer_keywords:
 - TN021
 - command routing [MFC], technical note TN021
 - Windows messages [MFC], routing
 ms.assetid: b5952c8b-123e-406c-a36d-a6ac7c6df307
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4d10fc56363a9ef460e0aaafadf300a2f649d5b2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4a0774234e6314ff6811bbeafa11403f19cf568e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412346"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50635714"
 ---
 # <a name="tn021-command-and-message-routing"></a>TN021: Komut ve İleti Yönlendirme
 

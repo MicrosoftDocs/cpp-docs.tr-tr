@@ -1,10 +1,6 @@
 ---
-title: CScrollBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CScrollBar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CScrollBar
 - AFXWIN/CScrollBar
@@ -20,8 +16,6 @@ f1_keywords:
 - AFXWIN/CScrollBar::SetScrollPos
 - AFXWIN/CScrollBar::SetScrollRange
 - AFXWIN/CScrollBar::ShowScrollBar
-dev_langs:
-- C++
 helpviewer_keywords:
 - CScrollBar [MFC], CScrollBar
 - CScrollBar [MFC], Create
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - CScrollBar [MFC], SetScrollRange
 - CScrollBar [MFC], ShowScrollBar
 ms.assetid: f3735ca5-73ea-46dc-918b-4d824c9fe47f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d2f3c1db37e281bc481370d8e9f163321c7b09da
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3b8e7dc78ddfa22097c97fb4e97fff92f0984c07
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428778"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571268"
 ---
 # <a name="cscrollbar-class"></a>CScrollBar sınıfı
 

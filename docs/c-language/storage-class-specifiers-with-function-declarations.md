@@ -1,12 +1,6 @@
 ---
-title: İşlev bildirimli depolama sınıfı tanımlayıcıları | Microsoft Docs
-ms.custom: ''
+title: İşlev Bildirimli Depolama Sınıfı Tanımlayıcıları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - function specifiers, storage class
 - declaring functions, specifiers
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - external linkage, function declarations
 - external linkage, storage-class specifiers
 ms.assetid: 801d7df2-efa9-4924-a725-274a5654cfd4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8816ac8917281ed19dfc1afe9e12d302a3423f74
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d38bb9350a59127dd6c224cef29b6197244a57c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111413"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447066"
 ---
 # <a name="storage-class-specifiers-with-function-declarations"></a>İşlev Bildirimli Depolama Sınıfı Tanımlayıcıları
 

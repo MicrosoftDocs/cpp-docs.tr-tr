@@ -1,26 +1,16 @@
 ---
-title: "MFC dışı DLL'ler: Genel bakış | Microsoft Docs"
-ms.custom: ''
+title: "MFC Dışı DLL'ler: Genel Bakış"
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - non-MFC DLLs [C++]
 - DLLs [C++], non-MFC
 ms.assetid: 1ed5d1ee-e20c-47d7-801d-87ea26a73842
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 30a6fef31dee39cc6337b9b8b7dd3b66ee3adb67
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5646f346ad8ccc62b838962b677b7f1947783ea9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702591"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649793"
 ---
 # <a name="non-mfc-dlls-overview"></a>MFC Dışı DLL'ler: Genel Bakış
 

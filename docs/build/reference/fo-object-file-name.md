@@ -1,32 +1,22 @@
 ---
-title: -Fo (nesne dosya adı) | Microsoft Docs
-ms.custom: ''
+title: /Fo (Nesne Dosya Adı)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /Fo
 - VC.Project.VCCLCompilerTool.ObjectFile
 - VC.Project.VCCLWCECompilerTool.ObjectFile
-dev_langs:
-- C++
 helpviewer_keywords:
 - Fo compiler option [C++]
 - object files, naming
 - /Fo compiler option [C++]
 - -Fo compiler option [C++]
 ms.assetid: 0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2f526779819bd21a13d4ec077ea0f1f5153385f8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 19e84cbb1be53c8e1a7ae32b6ea2fc3ceeb2edae
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418274"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640342"
 ---
 # <a name="fo-object-file-name"></a>/Fo (Nesne Dosya Adı)
 
@@ -54,7 +44,7 @@ Bu seçeneği kullanmazsanız, nesne dosyası taban adı kaynak dosyasını ve .
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ObjectFile%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ObjectFile%2A>.
 
 ## <a name="example"></a>Örnek
 

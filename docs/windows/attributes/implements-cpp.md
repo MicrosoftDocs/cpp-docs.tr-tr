@@ -1,28 +1,17 @@
 ---
-title: uygular (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: uygular (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.implements
-dev_langs:
-- C++
 helpviewer_keywords:
 - implements attribute
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: f46b8effb704d3c865e46d4a780f0b1f86d6818f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 92d34bd048061781809941d56f5de052cecadca9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073285"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626674"
 ---
 # <a name="implements-c"></a>uygulamalar (C++)
 

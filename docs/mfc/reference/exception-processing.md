@@ -1,14 +1,8 @@
 ---
-title: Özel durum işleme | Microsoft Docs
-ms.custom: ''
+title: Özel Durum İşleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.exceptions
-dev_langs:
-- C++
 helpviewer_keywords:
 - macros [MFC], exception handling
 - DAO (Data Access Objects), exceptions [MFC]
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - MFC, exceptions
 - exceptions [MFC], MFC throwing functions
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 749dd92a7fb04696a4f9d173e6496e239dc3f6bd
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6f74f0fcef7f9dc63138dcdb29487120818974f1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073142"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50651418"
 ---
 # <a name="exception-processing"></a>Özel Durum İşleme
 

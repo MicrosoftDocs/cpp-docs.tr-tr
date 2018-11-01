@@ -1,16 +1,10 @@
 ---
-title: stdin, stdout, stderr | Microsoft Docs
-ms.custom: ''
+title: stdin, stdout, stderr
 ms.date: 10/23/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - stdin
 - stderr
 - stdout
-dev_langs:
-- C++
 helpviewer_keywords:
 - stdout function
 - standard output stream
@@ -19,25 +13,21 @@ helpviewer_keywords:
 - standard input stream
 - stderr function
 ms.assetid: badd4735-596d-4498-857c-ec8b7e670e4c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 707811a9c05135cb46520dd72895d677cdc0a6e4
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 0ecb7c51f6c38ffcb6637a093ec06a6f248839d6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808712"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452201"
 ---
 # <a name="stdin-stdout-stderr"></a>stdin, stdout, stderr
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-FILE *stdin; 
-FILE *stdout; 
-FILE *stderr; 
+FILE *stdin; 
+FILE *stdout; 
+FILE *stderr; 
 #include <stdio.h>
 ```
 

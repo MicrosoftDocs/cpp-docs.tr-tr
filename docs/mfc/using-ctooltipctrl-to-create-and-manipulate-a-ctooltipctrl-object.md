@@ -1,28 +1,18 @@
 ---
-title: CToolTipCtrl kullanarak bir CToolTipCtrl nesnesi oluşturma ve düzenleme | Microsoft Docs
-ms.custom: ''
+title: CToolTipCtrl Kullanarak bir CToolTipCtrl Nesnesi Oluşturma ve Düzenleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CToolTipCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - tool tips [MFC], creating
 - CToolTipCtrl class [MFC], using
 ms.assetid: 0a34583f-f66d-46a1-a239-31b80ea395ad
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 186972164496889b471ebfc11e19017129ad943b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cc5ea515aa132bb390fa5e273cedc5f125bb3046
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378988"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561258"
 ---
 # <a name="using-ctooltipctrl-to-create-and-manipulate-a-ctooltipctrl-object"></a>CToolTipCtrl Kullanarak bir CToolTipCtrl Nesnesi Oluşturma ve Düzenleme
 

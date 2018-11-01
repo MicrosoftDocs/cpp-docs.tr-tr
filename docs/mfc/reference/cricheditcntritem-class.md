@@ -1,31 +1,21 @@
 ---
-title: Cricheditcntrıtem sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cricheditcntrıtem sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CRichEditCntrItem
 - AFXRICH/CRichEditCntrItem
 - AFXRICH/CRichEditCntrItem::CRichEditCntrItem
 - AFXRICH/CRichEditCntrItem::SyncToRichEditObject
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRichEditCntrItem [MFC], CRichEditCntrItem
 - CRichEditCntrItem [MFC], SyncToRichEditObject
 ms.assetid: 6c0b4efe-0fb8-4621-b5e1-fdcb8ec48c3b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: af8d2a2d8fd5bf54e117b3cdb44628f167d67cb9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4683e0ea4a56e6766c039b2fcb858a54e28d14ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403533"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443351"
 ---
 # <a name="cricheditcntritem-class"></a>Cricheditcntrıtem sınıfı
 

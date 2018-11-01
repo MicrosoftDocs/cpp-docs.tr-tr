@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2165 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2165
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2165
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2165
 ms.assetid: b108313b-b8cb-4dce-b2ec-f2b31c9cdc87
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d0e9047b7f096c855bbefec745b454e2289c05e9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1dadc56dafca056db9b4a14ab39127306b797f8a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101117"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50570397"
 ---
 # <a name="compiler-error-c2165"></a>Derleyici Hatası C2165
 

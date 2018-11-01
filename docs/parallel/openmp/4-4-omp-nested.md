@@ -1,23 +1,13 @@
 ---
-title: 4.4 OMP_NESTED | Microsoft Docs
-ms.custom: ''
+title: 4.4 OMP_NESTED
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: fd17b6f4-84e8-44c0-a96a-3a9e5ba33688
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1083269f31ebc710da24430635ff8381e3f2147a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e45b8901c56923ab37ca387a5f057c5b41af21f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419522"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453631"
 ---
 # <a name="44-ompnested"></a>4.4 OMP_NESTED
 

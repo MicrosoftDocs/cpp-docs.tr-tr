@@ -1,18 +1,12 @@
 ---
-title: integer_sequence sınıfı | Microsoft Docs
-ms.custom: ''
+title: integer_sequence Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::index_sequence
 - type_traits/std::make_index_sequence
 - type_traits/std::integer_sequence
 - type_traits/std::make_integer_sequence
 - type_traits/std::index_sequence_for
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::index_sequence
 - std::make_index_sequence
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - std::make_integer_sequence
 - std::index_sequence_for
 ms.assetid: 2cfdddee-819d-478e-bb78-c8a9c2696803
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 909bcb8446c7d876828a6d020cd20a7398ec04d5
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: f9ce63aeba4db7c49aee36bc9b847e6832d26f8a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108752"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638727"
 ---
 # <a name="integersequence-class"></a>integer_sequence Sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonStatusBarPane sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonStatusBarPane sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonStatusBarPane
 - AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane
@@ -21,8 +17,6 @@ f1_keywords:
 - AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::StartAnimation
 - AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::StopAnimation
 - AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::OnFinishAnimation
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonStatusBarPane [MFC], CMFCRibbonStatusBarPane
 - CMFCRibbonStatusBarPane [MFC], GetAlmostLargeText
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - CMFCRibbonStatusBarPane [MFC], StopAnimation
 - CMFCRibbonStatusBarPane [MFC], OnFinishAnimation
 ms.assetid: 5d034c3c-ecca-4267-b88c-0f55a2884dd0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d0b3d012f74706806c1486b38180cd1c69beef2e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 183fd879b09595dda1dcd6caa8a8299debb20b30
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053845"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449341"
 ---
 # <a name="cmfcribbonstatusbarpane-class"></a>CMFCRibbonStatusBarPane sınıfı
 

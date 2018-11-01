@@ -1,27 +1,17 @@
 ---
-title: Çerçeve Windows kullanarak | Microsoft Docs
-ms.custom: ''
+title: Çerçeve Pencerelerini Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - windows [MFC], frame windows
 - frame windows [MFC], using
 - MFC, frame windows
 ms.assetid: 4d773238-11f6-4ccf-8114-57310c5aaa2d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3cb895c50d7265c0fd1478ba421f2da860d49a19
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1ce23633310482c52f60a591452e3d20ac10c706
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400451"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676388"
 ---
 # <a name="using-frame-windows"></a>Çerçeve Pencerelerini Kullanma
 

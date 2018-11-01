@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4395 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4395
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4395
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4395
 ms.assetid: 8051469a-3a39-4677-80f7-1300fbffe8ea
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d80f4bd5e01fdcc055452a66226f6f27ae920e90
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 27503b94a18b949637293201203e18793f5e7788
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080148"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50676362"
 ---
 # <a name="compiler-warning-level-1-c4395"></a>Derleyici Uyarısı (düzey 1) C4395
 

@@ -1,12 +1,6 @@
 ---
-title: Temel CString işlemleri | Microsoft Docs
-ms.custom: ''
+title: Temel CString işlemleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - CString objects, basic operations
 - string literals, CString operations
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - string comparison, CString operations
 - characters, accessing in CStrings
 ms.assetid: 41db66b2-9427-4bb3-845a-9b6869159a6c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ab2c857451e399e56e69d79240d4ace023a8b301
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d1f16e470123bd52cb2656541aafaabdfc16af8c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424092"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434081"
 ---
 # <a name="basic-cstring-operations"></a>Temel CString işlemleri
 

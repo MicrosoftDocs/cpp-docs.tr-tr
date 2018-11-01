@@ -1,25 +1,15 @@
 ---
-title: for deyimi (C++) | Microsoft Docs
-ms.custom: ''
+title: for Deyimi (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - for keyword [C++]
 ms.assetid: 6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6a845fde2010f17d4d92be0d8ed0d4cce0bdb070
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a6b1823fe93c45abd8dabbd22116924e0a64f19a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061508"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660336"
 ---
 # <a name="for-statement-c"></a>for Deyimi (C++)
 

@@ -1,15 +1,9 @@
 ---
-title: -Og (Global iyileştirmeler) | Microsoft Docs
-ms.custom: ''
+title: /Og (Global İyileştirmeler)
 ms.date: 09/22/2017
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.GlobalOptimizations
 - /og
-dev_langs:
-- C++
 helpviewer_keywords:
 - -Og compiler option [C++]
 - global optimizations compiler option [C++]
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - common subexpression elimination
 - Og compiler option [C++]
 ms.assetid: d10630cc-b9cf-4e97-bde3-8d7ee79e9435
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8443ae8111476cdd3339982c8df0b4b7e3e9c475
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d6913be5bc02755730ffb6205e9f34811c9a5dbb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722533"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431947"
 ---
 # <a name="og-global-optimizations"></a>/Og (Global İyileştirmeler)
 
@@ -100,7 +90,7 @@ Aşağıdaki en iyi duruma getirme altında kullanılabilir **/Og**:
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

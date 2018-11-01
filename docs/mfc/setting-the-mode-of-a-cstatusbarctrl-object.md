@@ -1,14 +1,8 @@
 ---
-title: Bir CStatusBarCtrl nesnesinin modunu ayarlama | Microsoft Docs
-ms.custom: ''
+title: CStatusBarCtrl Nesnesinin Modunu Ayarlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CStatusBarCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - simple mode and status bar controls
 - IsSimple method, using
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - non-simple mode and status bar controls
 - CStatusBarCtrl class [MFC], simple and nonsimple modes
 ms.assetid: ca6076e5-1501-4e33-8d35-9308941e46c0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b398fedb8637ae6ce539a876410222485054919b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0009f73f11b1a3c57f5001269f34834c22b045c7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409551"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50655266"
 ---
 # <a name="setting-the-mode-of-a-cstatusbarctrl-object"></a>CStatusBarCtrl Nesnesinin Modunu Ayarlama
 

@@ -1,10 +1,6 @@
 ---
-title: CDaoRecordset sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDaoRecordset sınıfı
 ms.date: 08/27/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDaoRecordset
 - AFXDAO/CDaoRecordset
@@ -88,8 +84,6 @@ f1_keywords:
 - AFXDAO/CDaoRecordset::m_pDatabase
 - AFXDAO/CDaoRecordset::m_strFilter
 - AFXDAO/CDaoRecordset::m_strSort
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDaoRecordset [MFC], CDaoRecordset
 - CDaoRecordset [MFC], AddNew
@@ -172,16 +166,12 @@ helpviewer_keywords:
 - CDaoRecordset [MFC], m_strFilter
 - CDaoRecordset [MFC], m_strSort
 ms.assetid: 2322067f-1027-4662-a5d7-aa2fc7488630
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d31e61dcddeca7e27370dd293056ebcf990d9ef7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6b3e3fac575d6a1308a9f61b3bf827d76785e94d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068372"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639339"
 ---
 # <a name="cdaorecordset-class"></a>CDaoRecordset sınıfı
 

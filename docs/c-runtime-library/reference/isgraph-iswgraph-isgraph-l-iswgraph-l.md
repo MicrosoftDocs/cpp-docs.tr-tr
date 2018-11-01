@@ -1,10 +1,6 @@
 ---
-title: isgraph, iswgraph, _isgraph_l, _iswgraph_l | Microsoft Docs
-ms.custom: ''
+title: isgraph, iswgraph, _isgraph_l, _iswgraph_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - isgraph
 - iswgraph
@@ -31,8 +27,6 @@ f1_keywords:
 - _istgraph_l
 - _istgraph
 - iswgraph
-dev_langs:
-- C++
 helpviewer_keywords:
 - isgraph function
 - _istgraph_l function
@@ -43,20 +37,16 @@ helpviewer_keywords:
 - _istgraph function
 - _ismbcgraph_l function
 ms.assetid: 531a5f34-4302-4d0a-8a4f-b7ea150ad941
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b60e022471bdfa7cbbddb6b5263f757438572a2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: af3fae11536a869c0c3e3ebae285ebbaca5ea907
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401278"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664808"
 ---
 # <a name="isgraph-iswgraph-isgraphl-iswgraphl"></a>isgraph, iswgraph, _isgraph_l, _iswgraph_l
 
-Tamsayı grafik bir karakteri temsil edip etmediğini belirler.
+Bir tamsayı bir grafik karakterini temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,15 +70,15 @@ int _iswgraph_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test etmek için bir tamsayı.
+Test edilecek tamsayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamları döndürür sıfır olmayan IF her *c* yazdırılabilir karakteri boşluk dışında belirli bir gösterimidir. **isgraph** sıfır olmayan bir değer döndürür *c* bir alanı dışında yazdırılabilir bir karakterdir. **iswgraph** sıfır olmayan bir değer döndürür *c* geniş karakter alanı dışında yazdırılabilir bir geniş karakter. Bu yordamlar her 0 döndürür *c* test durumu uygun değil.
+Yordamların her biri bu döndürür sıfır olmayan *c* belirli bir gösterimiyse boşluk dışında yazdırılabilir bir karakter. **isgraph** sıfır olmayan bir değer döndürür *c* boşluk dışında yazdırılabilir bir karakterse. **iswgraph** sıfır olmayan bir değer döndürür *c* olduğu geniş karakter boşluğu dışında yazdırılabilir geniş karakter. Bu yordamların her biri 0 döndürür *c* test koşulu karşılamayan.
 
-Bu işlevleri sürümlerini **_l** soneki yerine geçerli yerel geçirilen yerel ayar için yerel ayara bağımlı davranışlarını kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Sahip bu işlevlerin sürümleri **_l** soneki yerel ayara bağlı davranışları için geçerli yerel ayarı yerine iletilen yerel ayarı kullanır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Davranışını **isgraph** ve **_isgraph_l** tanımsız ise *c* EOF değil veya 0'dan 0xFF (bunlar dahil) aralığında. CRT hata ayıklama Kitaplığı kullanıldığında ve *c* bu değerleri işlevleri raise onayı ifade değil.
+Davranışını **isgraph** ve **_isgraph_l** tanımsızdır *c* EOF değilse veya 0-0xFF aralığındaysa aralığında. Bir hata ayıklama CRT Kitaplığı kullanıldığında ve *c* değil, bu değerleri işlevleri raise onaylama biridir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -106,7 +96,7 @@ Davranışını **isgraph** ve **_isgraph_l** tanımsız ise *c* EOF değil veya
 |**_isgraph_l**|\<CType.h >|
 |**_iswgraph_l**|\<CType.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,25 +1,15 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4910 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4910
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4910
 ms.assetid: 67963560-fbca-4ca7-93db-06beaf7055f0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5e6db959e467ea449a66feb3ee07c202f4dee002
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f0d1df0a383b6646d52fc2babc53ca656d49ace6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46018957"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428203"
 ---
 # <a name="compiler-warning-level-1-c4910"></a>Derleyici Uyarısı (düzey 1) C4910
 

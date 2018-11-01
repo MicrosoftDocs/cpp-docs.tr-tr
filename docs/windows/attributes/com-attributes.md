@@ -1,28 +1,17 @@
 ---
-title: COM öznitelikleri | Microsoft Docs
-ms.custom: ''
+title: COM Öznitelikleri
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - attributes [C++/CLI], reference topics
 - attributes [COM]
 - COM, attributes
 ms.assetid: 52a5dd70-e8be-4bba-afd6-daf90fe689a0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 2aa88f88fe26b96202f2a917bddf5c8bb07c0d3c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fa7e279f6b7c9c0932d404c336bcfd89bfd553a3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071134"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644099"
 ---
 # <a name="com-attributes"></a>COM Öznitelikleri
 

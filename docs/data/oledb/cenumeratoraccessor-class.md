@@ -1,10 +1,6 @@
 ---
-title: CEnumeratorAccessor sınıfı | Microsoft Docs
-ms.custom: ''
+title: CEnumeratorAccessor Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL::CEnumeratorAccessor
 - CEnumeratorAccessor
@@ -33,8 +29,6 @@ f1_keywords:
 - m_szParseName
 - CEnumeratorAccessor.m_szParseName
 - ATL.CEnumeratorAccessor.m_szParseName
-dev_langs:
-- C++
 helpviewer_keywords:
 - CEnumeratorAccessor class
 - m_bIsParent
@@ -43,17 +37,12 @@ helpviewer_keywords:
 - m_szName
 - m_szParseName
 ms.assetid: 21e8e7ea-3511-4afe-b33f-d520f4ff82bb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 616d2cc9919c992212024d25ab11902ffe2eda5e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e94f7a5d34a134d4b05211bd5fa03f7c498fa45a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072154"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646505"
 ---
 # <a name="cenumeratoraccessor-class"></a>CEnumeratorAccessor Sınıfı
 

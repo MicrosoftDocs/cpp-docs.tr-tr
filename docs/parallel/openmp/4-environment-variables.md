@@ -1,23 +1,13 @@
 ---
-title: 4. Ortam değişkenlerini | Microsoft Docs
-ms.custom: ''
+title: 4. Ortam Değişkenleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 4ec7ed81-e9ca-46a1-84f8-8f9ce4587346
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aec56dad334dcd27de2068e660ff8ec5a6e72f90
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0dec302762ad22fc3c7f6691ef63df1b07d5940d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415505"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456608"
 ---
 # <a name="4-environment-variables"></a>4. Ortam Değişkenleri
 

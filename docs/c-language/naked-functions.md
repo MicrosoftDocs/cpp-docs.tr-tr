@@ -1,28 +1,18 @@
 ---
-title: Naked işlevleri | Microsoft Docs
-ms.custom: ''
+title: Naked İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - naked functions
 - functions [C++], naked
 - prolog code
 - epilog code
 ms.assetid: 2543c8af-00d4-4a2a-8a87-e746da1f9929
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 134584ed1acd502ecbf74fe755850761df8c08e1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 250a47157e915dfe2f2a9e5f6d912bbf83334d55
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061493"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430381"
 ---
 # <a name="naked-functions"></a>Naked İşlevleri
 

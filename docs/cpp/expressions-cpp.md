@@ -1,25 +1,16 @@
 ---
-title: İfadeler (C++) | Microsoft Docs
+title: İfadeler (C++)
 ms.custom: index-page
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - expressions [C++]
 ms.assetid: aaa1f250-7185-4113-b682-3f5e995943d1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 97051747f01f882d3e430ef9ede21045641e9810
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d0d509341cd63b9a5e2a13271a2e799c95f44df9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46113285"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50458766"
 ---
 # <a name="expressions-c"></a>İfadeler (C++)
 

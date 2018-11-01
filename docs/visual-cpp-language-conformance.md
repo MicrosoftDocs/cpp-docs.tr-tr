@@ -1,22 +1,17 @@
 ---
-title: Visual C++ dil uyumluluğu | Microsoft Docs
+title: Visual C++ dil uyumluluğu
 ms.date: 11/15/2017
 ms.technology:
 - cpp-language
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dd4848ae88d7bd66286ef13b3505a741d9b55c5c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 78c4be98ecc8e0a42e2cd0967f2bedece9dabc86
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060891"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630418"
 ---
 # <a name="visual-c-language-conformance"></a>Visual C++ dil uyumluluğu
 

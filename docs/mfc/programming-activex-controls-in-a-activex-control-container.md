@@ -1,12 +1,6 @@
 ---
-title: 'ActiveX denetim kapsayıcıları: Bir ActiveX denetim kapsayıcısındaki ActiveX denetimlerini programlama | Microsoft Docs'
-ms.custom: ''
+title: 'ActiveX Denetim Kapsayıcıları: Bir ActiveX Denetim Kapsayıcısındaki ActiveX Denetimlerini Programlama'
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ActiveX control containers [MFC], accessing ActiveX controls
 - Confirm Classes dialog box
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - wrapper classes [MFC], using
 - ActiveX controls [MFC], wrapper classes
 ms.assetid: ef9b2480-92d6-4191-b16e-8055c4fd7b73
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f83b0d947fbc663bce50eac7887904816e1afbe
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: c9a0c51d090b1c62309f27bf6587ea02e0fe1152
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204463"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636897"
 ---
 # <a name="activex-control-containers-programming-activex-controls-in-an-activex-control-container"></a>ActiveX Denetim Kapsayıcıları: Bir ActiveX Denetim Kapsayıcısındaki ActiveX Denetimlerini Programlama
 

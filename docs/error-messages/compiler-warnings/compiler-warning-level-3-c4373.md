@@ -1,41 +1,31 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4373 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4373
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4373
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4373
 ms.assetid: 670c0ba3-b7d6-4aed-b207-1cb84da3bcde
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fda965fe80fc26731cde7be5a71540e6454a7360
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 031b32a03d93a51f6fa00041a5b0bdf99e6eacf1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290185"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456062"
 ---
 # <a name="compiler-warning-level-3-c4373"></a>Derleyici Uyarısı (Düzey 3) C4373
 
-> '*işlevi*': sanal işlevi geçersiz kılma işlemleri*base_function*', önceki sürümlerini derleyici parametreleri yalnızca const/volatile niteleyicileri tarafından farklıydı olduğunda geçersiz
+> '*işlevi*': sanal işlev geçersiz*base_function*', önceki derleyici sürümleri Parametreler yalnızca const/volatile niteleyicileri farklıydı olduğunda kılmadı
 
 ## <a name="remarks"></a>Açıklamalar
 
-Uygulamanızı bir taban sınıf içinde sanal yöntemini geçersiz kılar türetilmiş bir sınıf yönteminde içerir ve yalnızca geçersiz kılma yöntemi parametrelerinde tarafından farklı bir [const](../../cpp/const-cpp.md) veya [volatile](../../cpp/volatile-cpp.md) gelen niteleyicisi sanal bir yöntem parametreleri. Bu derleyici yöntemine yapılan bir işlev başvurusu ya da temel bağlamanız gerekir veya türetilmiş sınıf anlamına gelir.
+Uygulamanızı bir temel sınıf sanal bir yöntemi geçersiz kılan türetilmiş bir sınıfta bir yöntem içerir ve geçersiz kılma yöntemi parametrelerinde yalnızca farklı bir [const](../../cpp/const-cpp.md) veya [geçici](../../cpp/volatile-cpp.md) gelen niteleyicisi sanal yöntem parametreleri. Bu, derleyicinin bir işlev başvurusu yöntemine ya da temel bağlamanız gerekir, yoksa türetilmiş sınıf anlamına gelir.
 
-Visual Studio 2008 önce derleyici sürümler yöntemi temel sınıf işlevi bağlamak ve ardından bir uyarı iletisi yayınlar. Derleyici sonraki sürümleri Yoksay `const` veya `volatile` Niteleyici, türetilmiş sınıf yönteminde işlevi bağlamak ve ardından uyarı vermek **C4373**. Bu ikinci davranış C++ standart ile uyumludur.
+Visual Studio 2008 önceki derleyici sürümleri işlev temel sınıf yöntemi bağlamak ve bir uyarı iletisi yayınlar. Derleyici'nın sonraki sürümleri Yoksay `const` veya `volatile` niteleyicisi, türetilen sınıfın yöntemine bind işlevi ve ardından sorun uyarı **C4373**. Bu ikinci davranışı C++ standardı ile uyumludur.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneğinde C4373 uyarı oluşturur. Bu sorunu çözmek için aynı MS niteleyicileri temel üye işlevini geçersiz kılma ya da yapabilir veya olmayan bir geçersiz kılma oluşturun istiyordunuz, türetilmiş sınıf işlevinde farklı bir ad verebilir.
+Aşağıdaki kod örneğinde, uyarı C4373 oluşturur. Bu sorunu çözmek için aynı CV niteleyicilerine temel üye işlevini geçersiz kılma ya da yapabilir veya değil bir geçersiz kılma oluşturmak istediniz, işlev türetilmiş sınıf içinde farklı bir ad verebilirsiniz.
 
 ```cpp
 // c4373.cpp

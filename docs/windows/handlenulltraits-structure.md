@@ -1,32 +1,22 @@
 ---
-title: HANDLENullTraits yapısı | Microsoft Docs
-ms.custom: ''
+title: HANDLENullTraits Yapısı
 ms.date: 09/27/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits
 - corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::Close
 - corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::GetInvalidValue
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits structure
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::Close method
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::GetInvalidValue method
 ms.assetid: 88a29a14-c516-40cb-a0ca-ee897a668623
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 1060d28e35a52e2a8c5c550664d36d8272628526
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: d70425f414b998eb67e3937c2c126dd3eda0c00d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161742"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571372"
 ---
 # <a name="handlenulltraits-structure"></a>HANDLENullTraits Yapısı
 

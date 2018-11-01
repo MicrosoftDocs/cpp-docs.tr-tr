@@ -1,10 +1,6 @@
 ---
-title: _strdate_s, _wstrdate_s | Microsoft Docs
-ms.custom: ''
+title: _strdate_s, _wstrdate_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _strdate_s
 - _wstrdate_s
@@ -27,8 +23,6 @@ f1_keywords:
 - _wstrdate_s
 - strdate_s
 - _tstrdate_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - dates, copying
 - tstrdate_s function
@@ -39,20 +33,16 @@ helpviewer_keywords:
 - _strdate_s function
 - _wstrdate_s function
 ms.assetid: d41d8ea9-e5ce-40d4-864e-1ac29b455991
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8e4e9ff3783fc7a89e7af42ebf283209c034c0d6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 85c9ab7dcad68f3aa4832236461cd38b07d4ae44
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414317"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50629014"
 ---
 # <a name="strdates-wstrdates"></a>_strdate_s, _wstrdate_s
 
-Geçerli sistem tarihi bir arabellek kopyalayın. Sürümleri bunlar [_strdate, _wstrdate](strdate-wstrdate.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Geçerli sistem tarihini arabelleğe kopyalayın. Bunlar sürümleridir [_strdate, _wstrdate](strdate-wstrdate.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -78,41 +68,41 @@ errno_t _wstrdate_s(
 ### <a name="parameters"></a>Parametreler
 
 *Arabellek*<br/>
-Biçimlendirilmiş tarih dizesi bilgileriyle doldurulan bir arabellek için bir işaretçi.
+Biçimlendirilen tarih dizesi ile doldurulacak arabellek için işaretçi.
 
 *numberOfElements*<br/>
 Arabellek boyutu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır. Bir hata olduğunda dönüş değeri bir hata kodudur. Hata kodları ERRNO içinde tanımlanmıştır. H; Bu işlev tarafından oluşturulan tam hatalar için aşağıdaki tabloya bakın. Hata kodları hakkında daha fazla bilgi için bkz: [errno](../../c-runtime-library/errno-constants.md).
+Başarılıysa sıfır. Bir hata varsa dönüş değeri bir hata kodudur. Hata kodları ERRNO içinde tanımlanır. H; Bu işlev tarafından oluşturulan tam hatalar için aşağıdaki tabloya bakın. Hata kodları hakkında daha fazla bilgi için bkz. [errno](../../c-runtime-library/errno-constants.md).
 
 ## <a name="error-conditions"></a>Hata koşulları
 
-|*Arabellek*|*numberOfElements*|Döndür|İçeriği *arabellek*|
+|*Arabellek*|*numberOfElements*|döndürülecek|İçeriğini *arabelleği*|
 |--------------|------------------------|------------|--------------------------|
 |**NULL**|(any)|**EINVAL**|değiştirilmedi|
 |Değil **NULL** (geçerli arabelleğe işaret eden)|0|**EINVAL**|değiştirilmedi|
 |Değil **NULL** (geçerli arabelleğe işaret eden)|0 < *numberOfElements* < 9|**EINVAL**|Boş dize|
-|Değil **NULL** (geçerli arabelleğe işaret eden)|*numberOfElements* > = 9|0|Geçerli tarih biçimli açıklamalar belirtildiği gibi|
+|Değil **NULL** (geçerli arabelleğe işaret eden)|*numberOfElements* > = 9|0|Açıklamalar belirtildiği gibi biçimlendirilmiş geçerli tarih|
 
-## <a name="security-issues"></a>Güvenlik sorunları
+## <a name="security-issues"></a>Güvenlik Sorunları
 
-Geçersiz bir olmayan geçirme **NULL** arabellek bir erişim ihlali neden olur için bir değer *numberOfElements* parametredir 9 büyük.
+Geçersiz bir olmayan geçirme **NULL** arabellek, erişim ihlali ile sonuçlanacak değer *numberOfElements* parametresi, 9'dan büyük.
 
-Boyut için değerleri geçirme gerçek boyutundan büyük *arabellek* arabellek taşması neden olur.
+Boyut değerleri geçirmeden gerçek boyutundan büyük *arabellek* arabellek taşmasına neden olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler daha güvenli sürümlerini sağlamak **_strdate** ve **_wstrdate**. **_Strdate_s** işlevi gösterdiği arabellek geçerli sistem tarihi kopyalar *arabellek*biçimlendirilmiş **mm**/**GG** / **yy**, burada **mm** olan iki basamak ayını **GG** olan gününü temsil eden iki basamaklı ve **yy**  yılın son iki basamaktan oluşur. Örneğin, dize **05/12/99** 5 Aralık 1999 temsil eder. Arabellek en az 9 karakter uzunluğunda olmalıdır.
+Bu işlevlerin daha güvenli sürümleri sağlamak **_strdate** ve **_wstrdate**. **_Strdate_s** işlevi tarafından işaret edilen arabellek için geçerli sistem tarihini kopyalar *arabellek*biçimlendirilmiş **mm**/**GG** / **yy**burada **mm** olan ayı temsil eden iki basamak **GG** olan iki basamak gününü ve **yy**  yılın son iki basamak. Örneğin, dize **12/05/99** 5 Aralık 1999 temsil eder. Arabelleğin en az 9 karakter uzunluğunda olmalıdır.
 
-**_wstrdate_s** bir joker karakter sürümü **_strdate_s**; bağımsız değişkeni ve dönüş değeri **_wstrdate_s** joker karakter dizelerdir. Bu işlevler aynı şekilde aksi davranır.
+**_wstrdate_s** geniş karakterli sürümüdür **_strdate_s**; bağımsız değişkeni ve dönüş değeri **_wstrdate_s** geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır.
 
-Varsa *arabellek* olan bir **NULL** işaretçisi veya *numberOfElements* 9'dan az karakter, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve **errno** için **EINVAL** arabellek ise **NULL** veya *numberOfElements*küçük veya eşit 0 veya kümesi **errno** için **ERANGE** varsa *numberOfElements* değerinden 9'dur.
+Varsa *arabellek* olduğu bir **NULL** işaretçisi veya *numberOfElements* açıklandığı gibi geçersiz parametre işleyicisi çağrılır, 9'dan az karakter [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler -1 döndürür ve **errno** için **EINVAL** arabellek ise **NULL** veya *numberOfElements*eşit veya 0 ya da kümesi küçüktür **errno** için **ERANGE** varsa *numberOfElements* küçüktür 9'dur.
 
-C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer (boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan) ve bunlar otomatik olarak yeni, güvenli dekiler ile daha eski, güvenli olmayan işlevleri değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimi ortadan kalkar) ve bunlar otomatik olarak eski ve güvenli olmayan işlevlerle daha yeni ve güvenli karşılıklarını değiştirir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-### <a name="generic-text-routine-mapping"></a>Genel metin rutin eşleme:
+### <a name="generic-text-routine-mapping"></a>Genel metin yordam eşlemesi:
 
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -122,13 +112,13 @@ C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından bas
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strdate**|\<time.h >|
-|**_wstrdate**|\<time.h > veya \<wchar.h >|
-|**_strdate_s**|\<time.h >|
+|**_strdate**|\<TIME.h >|
+|**_wstrdate**|\<TIME.h > veya \<wchar.h >|
+|**_strdate_s**|\<TIME.h >|
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [zaman](time-time32-time64.md).
+Örneğin bakın [zaman](time-time32-time64.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

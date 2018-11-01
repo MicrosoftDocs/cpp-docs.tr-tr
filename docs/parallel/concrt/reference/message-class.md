@@ -1,10 +1,6 @@
 ---
-title: message sınıfı | Microsoft Docs
-ms.custom: ''
+title: message Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - message
 - AGENTS/concurrency::message
@@ -13,21 +9,15 @@ f1_keywords:
 - AGENTS/concurrency::message::msg_id
 - AGENTS/concurrency::message::remove_ref
 - AGENTS/concurrency::message::payload
-dev_langs:
-- C++
 helpviewer_keywords:
 - message class
 ms.assetid: 3e1f3505-6c0c-486c-8191-666d0880ec62
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5acca6c01b41b34c17aa5e7f949b9dab94362fa2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6b0c37f61ef437662a4e624c3a81edb526e7464c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400958"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636870"
 ---
 # <a name="message-class"></a>message Sınıfı
 

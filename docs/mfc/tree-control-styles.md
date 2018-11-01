@@ -1,18 +1,12 @@
 ---
-title: Ağaç denetimi stilleri | Microsoft Docs
-ms.custom: ''
+title: Ağaç Denetimi Stilleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - TVS_SINGLEEXPAND
 - TVS_LINESATROOT
 - TVS_HASBUTTONS
 - TVS_NOTOOLTIPS
 - TVS_HASLINES
-dev_langs:
-- C++
 helpviewer_keywords:
 - TVS_LINESATROOT [MFC]
 - styles [MFC], CTreeCtrl
@@ -25,16 +19,12 @@ helpviewer_keywords:
 - TVS_HASBUTTONS [MFC]
 - tree controls [MFC], styles
 ms.assetid: f43faebd-a355-479e-888a-bf0673d5e1b4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ef7c24fb321594c64afe45e1902676f43afd3e9b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 59cbed32d9be8fac84284b621bd4d1e17d5d92cf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412677"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453475"
 ---
 # <a name="tree-control-styles"></a>Ağaç Denetimi Stilleri
 

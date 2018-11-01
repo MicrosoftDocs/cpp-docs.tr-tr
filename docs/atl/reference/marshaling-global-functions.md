@@ -1,27 +1,17 @@
 ---
-title: Hazırlama genel işlevleri | Microsoft Docs
-ms.custom: ''
+title: Hazırlama genel işlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlbase/ATL::AtlFreeMarshalStream
 - atlbase/ATL::AtlMarshalPtrInProc
 - atlbase/ATL::AtlUnmarshalPtr
-dev_langs:
-- C++
 ms.assetid: 877100b5-6ad9-44c5-a2e0-09414f1720d0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e0b9a8e72cb3c1334484ed4a4e5c85c8b9a12347
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: dadaf119f8f1d0aefb4f5b4b740747a2794d271e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055144"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554420"
 ---
 # <a name="marshaling-global-functions"></a>Hazırlama genel işlevleri
 

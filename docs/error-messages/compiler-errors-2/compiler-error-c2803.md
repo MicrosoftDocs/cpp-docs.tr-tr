@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2803 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2803
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2803
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2803
 ms.assetid: 2cdbe374-8cc4-4c4e-ba15-062a7479e937
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7885735ebad1ff90afaf4ba8eaf6dfca9f3e0ab3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d20b8dde9f4134273adcba0f947f685f7ce7d213
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46027047"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447274"
 ---
 # <a name="compiler-error-c2803"></a>Derleyici Hatası C2803
 

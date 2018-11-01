@@ -1,10 +1,6 @@
 ---
-title: errno sabitleri | Microsoft Docs
-ms.custom: ''
+title: errno Sabitleri
 ms.date: 09/17/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - ENOEXEC
 - ENOMEM
@@ -24,8 +20,6 @@ f1_keywords:
 - EAGAIN
 - EEXIST
 - ECHILD
-dev_langs:
-- C++
 helpviewer_keywords:
 - ENOEXEC constant
 - EBADF constant
@@ -47,16 +41,12 @@ helpviewer_keywords:
 - EXDEV constant
 - EILSEQ constant
 ms.assetid: 47089258-d5a5-4cd8-b193-223894dea0cf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aa28ef07617d100e0a4071ed0878372d95f03597
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c7c623b81d626b3d653dbd731521ffe2649671ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46073765"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645607"
 ---
 # <a name="errno-constants"></a>errno Sabitleri
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2752 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2752
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2752
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2752
 ms.assetid: ae42b3ec-84a9-4e9d-8d59-3d208132d0b2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ea33ef80847a8699115a92e316fec156c3c51607
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cecc1433a80bdbdcc79eb9e5493486498a820e40
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081656"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622904"
 ---
 # <a name="compiler-error-c2752"></a>Derleyici Hatası C2752
 

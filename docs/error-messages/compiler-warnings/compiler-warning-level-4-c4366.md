@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4366 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4366
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4366
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4366
 ms.assetid: 65d2942f-3741-42f4-adf2-4920d5a055ca
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bb24c65605857124edf608bec88f1399d9df607d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 11fcb0070359201de39ca5f33c83d000e02f0835
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46047050"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50629072"
 ---
 # <a name="compiler-warning-level-4-c4366"></a>Derleyici Uyarısı (düzey 4) C4366
 

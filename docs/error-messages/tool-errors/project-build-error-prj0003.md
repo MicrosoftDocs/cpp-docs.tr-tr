@@ -1,27 +1,17 @@
 ---
-title: Proje derleme hatası PRJ0003 | Microsoft Docs
-ms.custom: ''
+title: Proje Derleme Hatası PRJ0003
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - PRJ0003
-dev_langs:
-- C++
 helpviewer_keywords:
 - PRJ0003
 ms.assetid: fc5a84bb-c6d3-41d6-8dd6-475455820778
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3d1a23b8171c916b05df1d715f803893ab0720e6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9a116f41efc791ed90fbac8065bc339172c9ea9d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053823"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50572397"
 ---
 # <a name="project-build-error-prj0003"></a>Proje Derleme Hatası PRJ0003
 

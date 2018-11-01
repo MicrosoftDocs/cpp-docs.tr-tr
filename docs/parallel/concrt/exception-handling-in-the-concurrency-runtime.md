@@ -1,12 +1,6 @@
 ---
-title: Özel durum işleme eşzamanlılık çalışma zamanında | Microsoft Docs
-ms.custom: ''
+title: Eşzamanlılık Çalışma Zamanında Özel Durum İşleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - lightweight tasks, exception handling [Concurrency Runtime]
 - exception handling [Concurrency Runtime]
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - agents, exception handling [Concurrency Runtime]
 - task groups, exception handling [Concurrency Runtime]
 ms.assetid: 4d1494fb-3089-4f4b-8cfb-712aa67d7a7a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9490fcbd765f277030c235a09d5b6d86d6522676
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7611e9d3f0bbf961784c9fed23117750a101486f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405209"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437875"
 ---
 # <a name="exception-handling-in-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanında Özel Durum İşleme
 

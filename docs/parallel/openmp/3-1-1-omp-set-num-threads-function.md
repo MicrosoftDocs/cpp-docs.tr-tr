@@ -1,23 +1,13 @@
 ---
-title: 3.1.1 omp_set_num_threads işlevi | Microsoft Docs
-ms.custom: ''
+title: 3.1.1 omp_set_num_threads İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: b94cf2b5-8011-4a3b-ba56-676982642857
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 85f7ff733583e531b449caf2039817b71165da52
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 20b6b6ced2b4031696f1d019604842ae9b91bda2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426802"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663287"
 ---
 # <a name="311-ompsetnumthreads-function"></a>3.1.1 omp_set_num_threads İşlevi
 

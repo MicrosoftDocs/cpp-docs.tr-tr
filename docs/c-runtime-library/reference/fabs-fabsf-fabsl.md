@@ -1,10 +1,6 @@
 ---
-title: fabs, fabsf, fabsl | Microsoft Docs
-ms.custom: ''
+title: fabs, fabsf, fabsl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - fabsf
 - fabs
@@ -29,8 +25,6 @@ f1_keywords:
 - "math\fabs"
 - "math\fabsf"
 - "math\fabsl"
-dev_langs:
-- C++
 helpviewer_keywords:
 - absolute values
 - fabsf function
@@ -38,20 +32,16 @@ helpviewer_keywords:
 - fabs function
 - fabsl function
 ms.assetid: 23bca210-f408-4f5e-b46b-0ccaaec31e36
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e97d8eef45c53c119fef663420ae70b4b4762e3e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8df36c06fb3ca9af9be4cf704998946b3eaf9a6c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395731"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623567"
 ---
 # <a name="fabs-fabsf-fabsl"></a>fabs, fabsf, fabsl
 
-Kayan nokta bağımsız değişkeni mutlak değerini hesaplar.
+Kayan nokta bağımsız değişkenin mutlak değerini hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,27 +70,27 @@ Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Fabs** işlevleri bağımsız değişkeni mutlak değerini döndür *x*. Döndürülen hata yoktur.
+**Fabs** İşlevler, bağımsız değişkenin mutlak değerini döndürür *x*. Döndürülen hata yok.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, UL|yok|_DOMAIN|
+|± QNAN, ONRAKİNİ BUL|yok|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ verir aşırı yüklemesi, aşırı çağırması **fabs** dahil ederseniz \<cmath > Üstbilgi. Bir C programı **fabs** her zaman alan ve döndüren bir **çift**.
+C++ sağlar aşırı yüklemesi, aşırı yüklemesini çağırabilirsiniz **fabs** eklerseniz \<cmath > Üstbilgi. C programında **fabs** her zaman alan ve döndüren bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
+|İşlev|Gerekli C üstbilgisi|Gerekli C++ üst bilgisi|
 |--------------|-----------------------|---------------------------|
 |**fabs**, **fabsf**, **fabsl**|\<Math.h >|\<cmath > veya \<math.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [abs](abs-labs-llabs-abs64.md).
+Örneğin bakın [abs](abs-labs-llabs-abs64.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

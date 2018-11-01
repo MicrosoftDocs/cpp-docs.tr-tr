@@ -1,28 +1,18 @@
 ---
-title: is_base_of sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_base_of Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_base_of
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_base_of class
 - is_base_of
 ms.assetid: 436f6213-1d4c-4ffc-a588-fc7c4887dd86
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6085624ca80fa676da89e10686b84323e1a7db89
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 345301b5eeed7b66f18a54e56b9bee6346078634
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110285"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647882"
 ---
 # <a name="isbaseof-class"></a>is_base_of Sınıfı
 

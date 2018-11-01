@@ -1,12 +1,6 @@
 ---
-title: İşlev bildirimlerinin ve tanımlarının | Microsoft Docs
-ms.custom: ''
+title: İşlev Bildirimleri ve Tanımlar (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - local declarations
 - function definitions, function declarations
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - external linkage, function declarations
 - declaring functions
 ms.assetid: 43fd98eb-7441-4473-a5d9-fc88c75577f7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2bb5a6b1f184775b3e67a03b9544e609b33673ba
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1f533bad308a9bc892bfe928b581c4b7197cf6f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106135"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624042"
 ---
 # <a name="function-declarations-and-definitions"></a>İşlev Bildirimleri ve Tanımlar (C++)
 

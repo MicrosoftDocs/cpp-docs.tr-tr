@@ -1,12 +1,6 @@
 ---
-title: Birden çok belge türü, görünümler ve çerçeve Windows | Microsoft Docs
-ms.custom: ''
+title: Birden Fazla Belge Türü, Görünüm ve Çerçeve Penceresi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - static splitter windows [MFC]
 - multiple views [MFC]
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - multiple frame windows [MFC]
 - splitter windows [MFC], static
 ms.assetid: c6b9e4e0-7c9c-45f1-a804-aeac39c9a128
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ce4caa9b8a8575264563d69f47dbba1dcedb69e5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3c1422aed5535d30a2f9fb79300f6093326d2ef3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054117"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50669111"
 ---
 # <a name="multiple-document-types-views-and-frame-windows"></a>Birden Fazla Belge Türü, Görünüm ve Çerçeve Penceresi
 

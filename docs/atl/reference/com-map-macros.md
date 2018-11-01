@@ -1,28 +1,18 @@
 ---
-title: COM eşleme makroları | Microsoft Docs
-ms.custom: ''
+title: COM eşleme makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlcom/ATL::BEGIN_COM_MAP
 - atlcom/ATL::END_COM_MAP
-dev_langs:
-- C++
 helpviewer_keywords:
 - COM interfaces, COM map macros
 ms.assetid: 0f33656d-321f-4996-90cc-9a7f21ab73c3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 057652eaf1f188cfd61dcfa4a0d433a43ef8c56c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e3358ff9f3f2aa5f3dde81c5eb218278178822ce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068898"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563884"
 ---
 # <a name="com-map-macros"></a>COM eşleme makroları
 

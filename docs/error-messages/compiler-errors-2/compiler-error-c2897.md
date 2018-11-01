@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2897 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2897
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2897
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2897
 ms.assetid: a88349e2-823f-42a0-8660-0653b677afa4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2d05663b913a3e310c091b62a81483f28bbf2c09
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 264ad52a10c6cf19d1105561f1140cf2d3e2f8e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46049838"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431037"
 ---
 # <a name="compiler-error-c2897"></a>Derleyici Hatası C2897
 

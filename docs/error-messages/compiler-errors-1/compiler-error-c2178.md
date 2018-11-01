@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2178 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2178
 ms.date: 05/08/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2178
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2178
 ms.assetid: 79a14158-17f3-4221-bd06-9d675c49cef4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: af9efdb3258e6793a17a26b552df8ba4e63c9107
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cd153bb5b331872bfe35b046d41612998bd0eff7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46102345"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622566"
 ---
 # <a name="compiler-error-c2178"></a>Derleyici Hatası C2178
 
