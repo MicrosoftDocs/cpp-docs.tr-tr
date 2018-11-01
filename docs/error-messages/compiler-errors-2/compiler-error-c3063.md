@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3063 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3063
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3063
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3063
 ms.assetid: 0ecf6f1f-e4a7-487a-9fd5-79d8ac470001
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9adea484416b85f027693b59acb343d4ca19cf6e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9e53d9fe273a392695212df6dbeb679822a39068
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021648"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485554"
 ---
 # <a name="compiler-error-c3063"></a>Derleyici Hatası C3063
 

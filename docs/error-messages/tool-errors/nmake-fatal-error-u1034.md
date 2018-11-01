@@ -1,27 +1,17 @@
 ---
-title: NMAKE önemli hatası U1034 | Microsoft Docs
-ms.custom: ''
+title: NMAKE Önemli Hatası U1034
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - U1034
-dev_langs:
-- C++
 helpviewer_keywords:
 - U1034
 ms.assetid: 27e678c2-23e2-4247-87f7-66493784af33
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1a8f6f64f3f24ebb6294f16c451a1fb6027ec1f4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 275a7f95dd2e5b6b0a05059c06422514a52a4b80
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46105203"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474327"
 ---
 # <a name="nmake-fatal-error-u1034"></a>NMAKE Önemli Hatası U1034
 

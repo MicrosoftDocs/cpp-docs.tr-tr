@@ -1,27 +1,17 @@
 ---
-title: length_error sınıfı | Microsoft Docs
-ms.custom: ''
+title: length_error Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - stdexcept/std::length_error
-dev_langs:
-- C++
 helpviewer_keywords:
 - length_error class
 ms.assetid: d53c46c5-4626-400d-bd76-bf3e1e0f64ae
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 11529c0fd8f5f64562e7b0c02c44698641cef2c8
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 67de20907dcf13fa54119d8886aabc8d521165cf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317556"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50489407"
 ---
 # <a name="lengtherror-class"></a>length_error Sınıfı
 

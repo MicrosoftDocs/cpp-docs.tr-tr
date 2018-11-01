@@ -1,28 +1,18 @@
 ---
-title: CComObjectRootEx uygulama | Microsoft Docs
-ms.custom: ''
+title: CComObjectRootEx uygulama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
 f1_keywords:
 - CComObjectRootEx
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComObjectRoot class, implementing
 - CComObjectRootEx class
 ms.assetid: 79630c44-f2df-4e9e-b730-400a0ebfbd2b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f91346febbb84ab7c1978740e0cbc6f0c43cbb4b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c56777034445e89dd86db935fc725755ad43a617
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052640"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499794"
 ---
 # <a name="implementing-ccomobjectrootex"></a>CComObjectRootEx uygulama
 

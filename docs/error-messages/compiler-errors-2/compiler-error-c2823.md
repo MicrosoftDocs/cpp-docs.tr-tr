@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2823 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2823
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2823
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2823
 ms.assetid: 982b1b35-1a7c-456e-b711-f80cfe2d571e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09b8284626a6af6851147dc36b67e25b76f8eb01
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5f9b60499fd3c3bd5f06834e3c4f6482031066d3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069527"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50469764"
 ---
 # <a name="compiler-error-c2823"></a>Derleyici Hatası C2823
 

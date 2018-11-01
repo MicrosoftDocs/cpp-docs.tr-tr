@@ -1,26 +1,16 @@
 ---
-title: Araç çubukları | Microsoft Docs
-ms.custom: ''
+title: Araç Çubukları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - toolbars [MFC]
 - command bars [MFC], MFC toolbars
 ms.assetid: c22ecc5b-a84c-4979-8d1a-8e3e71d5ce33
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7fd8738c0dec9771a94ba94aefdcaf2af87fdb09
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 7516ee4fa942070aad47f0cd6b8e1a65ff41ec4c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890550"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467282"
 ---
 # <a name="toolbars"></a>Araç Çubukları
 

@@ -1,25 +1,16 @@
 ---
-title: Temel kavramlar (C++) | Microsoft Docs
+title: Temel kavramlar (C++)
 ms.custom: index-page
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - C++, basic language concepts
 ms.assetid: 961801e6-2ffd-4bf1-bb71-7f55e48d9c79
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ac218913864944c4a0d2cbd973a796cf38edc3a7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cd868a2b534c8367e4633d81a521dc1bf1de91dc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056592"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468711"
 ---
 # <a name="basic-concepts--c"></a>Temel kavramlar (C++)
 

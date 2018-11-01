@@ -1,15 +1,9 @@
 ---
-title: -ORDER (işlevleri Sırala) | Microsoft Docs
-ms.custom: ''
+title: /ORDER (İşlevleri Sırala)
 ms.date: 09/05/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.FunctionOrder
 - /order
-dev_langs:
-- C++
 helpviewer_keywords:
 - ORDER linker option
 - -ORDER linker option
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - LINK tool [C++], swap tuning
 - paging, optimizing
 ms.assetid: ecf5eb3e-e404-4e86-9a91-4e5ec157261a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d8ea4df02e87a64d70ce773ed35d1a3cb0509f8b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: dd854b6ea19ee08bf1a375a42466ad7abd13b1ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717801"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480203"
 ---
 # <a name="order-put-functions-in-order"></a>/ORDER (İşlevleri Sırala)
 
@@ -79,7 +69,7 @@ Birden fazla ise **/sipariş** seçeneği görüntülenir bağlayıcı seçenekl
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.FunctionOrder%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.FunctionOrder%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

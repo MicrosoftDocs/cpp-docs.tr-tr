@@ -1,10 +1,6 @@
 ---
-title: _RTC_SetErrorFuncW | Microsoft Docs
-ms.custom: ''
+title: _RTC_SetErrorFuncW
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _RTC_SetErrorFuncW
 apilocation:
@@ -22,8 +18,6 @@ apitype: DLLExport
 f1_keywords:
 - _RTC_SetErrorFuncW
 - RTC_SetErrorFuncW
-dev_langs:
-- C++
 helpviewer_keywords:
 - run-time errors
 - RTC_SetErrorFuncW function
@@ -31,16 +25,12 @@ helpviewer_keywords:
 - _RTC_SetErrorFuncW function
 - RTC_error_fnW typedef
 ms.assetid: b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ea9d028454c408492378c345fb6d6c6d9dfc23cb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 03e9f540a215550a698700f28e5722b33b119149
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199597"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482713"
 ---
 # <a name="rtcseterrorfuncw"></a>_RTC_SetErrorFuncW
 

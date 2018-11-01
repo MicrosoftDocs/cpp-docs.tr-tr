@@ -1,28 +1,18 @@
 ---
-title: İfade değerlendirici hatası CXX0041 | Microsoft Docs
-ms.custom: ''
+title: İfade Değerlendirici Hatası CXX0041
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - CXX0041
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAN0041
 - CXX0041
 ms.assetid: ce8a2366-758f-481b-8c03-ed7d779091b2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c1dc525ea75f58028f7359c7a063bdb45a8387a6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0b2d2a17bbc7f1084e25fe53157eb5c17e4d71bd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080811"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484858"
 ---
 # <a name="expression-evaluator-error-cxx0041"></a>İfade Değerlendirici Hatası CXX0041
 

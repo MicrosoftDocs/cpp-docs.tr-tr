@@ -1,29 +1,18 @@
 ---
-title: .NET programlama ile C + +/ CLI (Visual C++) | Microsoft Docs
-ms.custom: ''
+title: .NET programlama ile C + +/ CLI (Visual C++)
 ms.date: 09/18/2018
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - programming [C++], .NET programming
 - .NET Framework [C++]
 - .NET applications [C++]
 - Visual C++, .NET programming
 ms.assetid: 2c7f3b0f-a266-4f0e-b318-d6f1371e04a9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: de3ca61005d0bafcc4387c793b09ec4925faf64b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 40978bff010fbb1640398c3248c595b3ae04289f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064088"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50470154"
 ---
 # <a name="net-programming-with-ccli-visual-c"></a>.NET programlama ile C + +/ CLI (Visual C++)
 

@@ -1,27 +1,17 @@
 ---
-title: BAYT (MASM) | Microsoft Docs
-ms.custom: ''
+title: BYTE (MASM)
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - byte
-dev_langs:
-- C++
 helpviewer_keywords:
 - BYTE directive
 ms.assetid: 8dd94476-c069-4585-a478-3cb2e8e6ae54
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e70879d89630321e50d0f4fd1966abf3e7de9c45
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 124e4491ff5242a8b1d4a1cd3b3ad503257139fc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677244"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498090"
 ---
 # <a name="byte-masm"></a>BYTE (MASM)
 

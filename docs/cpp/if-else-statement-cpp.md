@@ -1,30 +1,20 @@
 ---
-title: if-else deyimi (C++) | Microsoft Docs
-ms.custom: ''
+title: if-else Deyimi (C++)
 ms.date: 07/17/2017
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - else_cpp
 - if_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - if keyword [C++]
 - else keyword [C++]
 - if keyword [C++], if-else
 ms.assetid: f8c45cde-6bce-42ae-81db-426b3dbd4caa
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aee04052a0088ff95a41ccb6083abc334287ea2b
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: a6ab56befb4416bf232109a63932604e256df639
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48820652"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471428"
 ---
 # <a name="if-else-statement-c"></a>if-else Deyimi (C++)
 
@@ -40,24 +30,24 @@ Koşullu dallanmayı denetler. Deyimlerinde *If Bloğu* yalnızca yürütülen *
 ```cpp
 if ( expression )
 {
-   statement1;
+   statement1;
    ...
 }
 else  // optional
 {
-   statement2;
+   statement2;
    ...
 }
 
 // Visual Studio 2017 version 15.3 and later:
 if ( initialization; expression )
 {
-   statement1;
+   statement1;
    ...
 }
 else  // optional
 {
-   statement2;
+   statement2;
    ...
 }
 
@@ -69,7 +59,7 @@ if constexpr (expression)
 }
 else  // optional
 {
-   statement2;
+   statement2;
    ...
 }
 ```

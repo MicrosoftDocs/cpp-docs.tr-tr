@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4138 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4138
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4138
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4138
 ms.assetid: 65ebf929-bba0-4237-923b-c1b66adfe17d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0d2e637c73482b1a59034d6a269ea2240445bdef
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 96f8915b9bec166496ca4305d796ce8ef514ca15
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46046920"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481685"
 ---
 # <a name="compiler-warning-level-1-c4138"></a>Derleyici Uyarısı (düzey 1) C4138
 

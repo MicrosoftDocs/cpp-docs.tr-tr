@@ -1,25 +1,15 @@
 ---
-title: Eşitleme veri yapıları | Microsoft Docs
-ms.custom: ''
+title: Eşitleme Veri Yapıları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - synchronization data structures
 ms.assetid: d612757d-e4b7-4019-a627-f853af085b8b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8f6a57495fdd5084b3ac329f45aa816eea9274f2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8c91de87bb5d579916743051d06c15f6df6921bf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436201"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495933"
 ---
 # <a name="synchronization-data-structures"></a>Eşitleme Veri Yapıları
 

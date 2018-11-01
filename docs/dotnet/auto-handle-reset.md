@@ -1,31 +1,21 @@
 ---
-title: auto_handle::reset | Microsoft Docs
-ms.custom: ''
+title: auto_handle::reset
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - auto_handle.reset
 - msclr::auto_handle::reset
 - auto_handle::reset
 - msclr.auto_handle.reset
-dev_langs:
-- C++
 helpviewer_keywords:
 - auto_handle::reset
 ms.assetid: 32dc3a83-80fd-45c9-8f79-8c4096c30f57
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 7a26dac9079339bbba126a4a3f557453044742de
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cd4d29400b34658e9afb64d47ff3a54ec0ee61eb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412229"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459845"
 ---
 # <a name="autohandlereset"></a>auto_handle::reset
 

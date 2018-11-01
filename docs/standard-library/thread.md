@@ -1,25 +1,15 @@
 ---
-title: '&lt;iş parçacığı&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;thread&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <thread>
-dev_langs:
-- C++
 ms.assetid: 0c858405-4efb-449d-bf76-70d3693c9234
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ef5470d7c7e83c260f44d723665d5d9c0a5ad061
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 43fb79ceda6de7409e6f93797ce2f4ff213c43ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953035"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487522"
 ---
 # <a name="ltthreadgt"></a>&lt;thread&gt;
 

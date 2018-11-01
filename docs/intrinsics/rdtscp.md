@@ -1,29 +1,19 @@
 ---
-title: __rdtscp | Microsoft Docs
-ms.custom: ''
+title: __rdtscp
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __rdtscp
-dev_langs:
-- C++
 helpviewer_keywords:
 - rdtscp intrinsic
 - __rdtscp intrinsic
 - rdtscp instruction
 ms.assetid: f17d9a9c-88bb-44e0-b69d-d516bc1c93ee
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 65c4638112d87b0544e9a6c61d839c7ad4664d33
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 813f13e20e74890cfcb52ae25234aa348e1d522d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415167"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496311"
 ---
 # <a name="rdtscp"></a>__rdtscp
 

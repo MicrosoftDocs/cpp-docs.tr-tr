@@ -1,27 +1,17 @@
 ---
-title: Pencere, iletişim kutusu ve denetim sınıfları | Microsoft Docs
-ms.custom: ''
+title: Pencere, İletişim Kutusu ve Denetim Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.mfc
-dev_langs:
-- C++
 helpviewer_keywords:
 - windows [MFC], dialog and control classes
 ms.assetid: b3610da6-9644-49b7-adbf-0e04f0d6d2b5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 690166ad8c7a823cc4d8dab76894add6aae973a4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: aef31f7831ef7480793abdf75eecaf11f6a6b7a4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431937"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467270"
 ---
 # <a name="window-dialog-and-control-classes"></a>Pencere, İletişim Kutusu ve Denetim Sınıfları
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2635 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2635
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2635
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2635
 ms.assetid: 9deca2a8-2d61-42eb-9783-6578132ee3fb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cb7bc7b39550df7b742b2a8b940a77170e81914c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0c31bcc4062aec1d939c801f9b5ee420f2f4fcb7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017397"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468126"
 ---
 # <a name="compiler-error-c2635"></a>Derleyici Hatası C2635
 

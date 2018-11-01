@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3656 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3656
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3656
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3656
 ms.assetid: 88965d85-73b0-4b35-8020-0650c9c94cd8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c04e99d137d4235a0890cca56757f2e6fad70760
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 219b8a4135fda963fdce038a75ce0543d6a3433b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46072722"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465526"
 ---
 # <a name="compiler-error-c3656"></a>Derleyici Hatası C3656
 

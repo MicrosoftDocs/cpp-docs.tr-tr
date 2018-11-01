@@ -1,10 +1,6 @@
 ---
-title: modf, modff, modfl | Microsoft Docs
-ms.custom: ''
+title: modf, modff, modfl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - modff
 - modf
@@ -30,27 +26,21 @@ f1_keywords:
 - math/modf
 - math/modff
 - math/modfl
-dev_langs:
-- C++
 helpviewer_keywords:
 - modf function
 - modff function
 - modfl function
 ms.assetid: b1c7abf5-d476-43ca-a03c-02072a86e32d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 87cddb8b565cdc369e6b1e9679583db64039bb49
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 59d6e2b9b02ad182c5630d6dc9a989c035e8fa92
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404837"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50478071"
 ---
 # <a name="modf-modff-modfl"></a>modf, modff, modfl
 
-Bir kayan nokta değeri kesirli ve tamsayı bölümleri böler.
+Bir kayan nokta değeri kesirli ve tamsayı bölümlere böler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,19 +61,19 @@ long double modf( long double x, long double * intptr );  // C++ only
 Kayan nokta değeri.
 
 *IntPtr*<br/>
-Saklı tamsayı bölümü işaretçi.
+Saklı tamsayı kısmı işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlev imzalı kesirli kısmını döndürür *x*. Döndürülen hata yoktur.
+Bu işlev, işaretli kesirli kısmını döndürür. *x*. Döndürülen hata yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Modf** işlevleri bölün kayan nokta değeri *x* kesirli içine ve her birinin olan aynı işarete tamsayı bölümleri *x*. İmzalı kesirli kısmı *x* döndürülür. Tamsayı bölümü bir kayan nokta değeri olarak depolanan *IntPtr*.
+**Modf** işlevleri sonu kayan nokta değeri *x* kesirli ve tamsayı bölümlere, her biri aynı işarete sahip *x*. İşaretli kesirli kısmını *x* döndürülür. Tamsayı kısmı bir kayan nokta değeri olarak depolanan *IntPtr*.
 
-**modf** Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamaya sahip. Bkz: [_set_SSE2_enable](set-sse2-enable.md) ilgili bilgileri ve SSE2 uygulama kullanılmasındaki kısıtlamalar.
+**modf** , Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamaya sahiptir. Bkz: [_set_SSE2_enable](set-sse2-enable.md) bilgi ve SSE2 uygulama kullanılmasındaki kısıtlamalar.
 
-C++ verir aşırı yüklemesi, aşırı çağırması **modf** alın ve dönüş **float** veya **uzun** **çift** parametreleri. Bir C programı **modf** her zaman iki çift değerlerini alır ve bir double değeri döndürür.
+C++ sağlar aşırı yüklemesi, aşırı yüklemesini çağırabilirsiniz **modf** alan ve getiren **float** veya **uzun** **çift** parametreleri. C programında **modf** her zaman iki çift değer alır ve bir çift değer döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -91,7 +81,7 @@ C++ verir aşırı yüklemesi, aşırı çağırması **modf** alın ve dönüş
 |-------------|---------------------|
 |**modf**, **modff**, **modfl**|C: \<math.h ><br /><br /> C++:, \<cmath > veya \<math.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

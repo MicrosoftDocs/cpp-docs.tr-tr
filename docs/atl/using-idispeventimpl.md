@@ -1,27 +1,17 @@
 ---
-title: Idispeventımpl (ATL) kullanarak | Microsoft Docs
-ms.custom: ''
+title: Idispeventımpl (ATL) kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
 f1_keywords:
 - IDispEventImpl
-dev_langs:
-- C++
 helpviewer_keywords:
 - IDispEventImpl class, using
 ms.assetid: 82d53b61-9d0d-45c5-aff9-2fafa468a9ca
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1d28a9a8bad8ced772d5c698e76d3d08f09c8db2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7ece96b26605c9f881ead2ba7cfcd1313a053faf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066480"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484909"
 ---
 # <a name="using-idispeventimpl"></a>Idispeventımpl kullanma
 

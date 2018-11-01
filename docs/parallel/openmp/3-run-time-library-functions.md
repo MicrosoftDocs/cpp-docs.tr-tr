@@ -1,23 +1,13 @@
 ---
-title: 3. Çalışma zamanı kitaplık işlevleri | Microsoft Docs
-ms.custom: ''
+title: 3. Çalışma zamanı kitaplık işlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: b226e512-6822-4cbe-a2ca-74cc2bb7e880
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5c1a05df3b47c2bbf345bc0101f30ffb83b84967
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e1d8d498be7f58bcf510025c67c539127f450824
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401855"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484103"
 ---
 # <a name="3-run-time-library-functions"></a>3. Çalışma zamanı kitaplık işlevleri
 

@@ -1,10 +1,6 @@
 ---
-title: _Cıcos | Microsoft Docs
-ms.custom: ''
+title: _CIcos
 ms.date: 04/11/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CIcos
 apilocation:
@@ -19,26 +15,20 @@ apitype: DLLExport
 f1_keywords:
 - CIcos
 - _CIcos
-dev_langs:
-- C++
 helpviewer_keywords:
 - _CIcos intrinsic
 - CIcos intrinsic
 ms.assetid: 6fc203fb-66f3-4ead-9784-f85833c26f1b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3d60c9ae40cc0a432fd5367d721a771fd0e25e66
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fc6cb9a45a7467e63129bd859817ebdfc23a0160
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32386718"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50497246"
 ---
 # <a name="cicos"></a>_CIcos
 
-Kayan nokta yığınında üst değer kosinüsünü hesaplar.
+Kayan nokta yığın üst değer kosinüsünü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,9 +38,9 @@ void __cdecl _CIcos();
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sürümü [cos](../c-runtime-library/reference/cos-cosf-cosl.md) işlevi derleyici özelliğini algılayan bir özelleştirilmiş çağırma vardır. Oluşturulmasını önler kopyaları önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.
+Bu sürümü [cos](../c-runtime-library/reference/cos-cosf-cosl.md) derleyici anlayan özelleştirilmiş bir çağırma kuralı işlevi vardır. Kopya oluşturulmasını önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.
 
-Sonuç değeri kayan nokta yığının en üst gönderilir.
+Sonuç değerini kayan nokta yığın üstüne itilir.
 
 ## <a name="requirements"></a>Gereksinimler
 

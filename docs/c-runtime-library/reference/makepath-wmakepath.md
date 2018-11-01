@@ -1,10 +1,6 @@
 ---
-title: _makepath, _wmakepath | Microsoft Docs
-ms.custom: ''
+title: _makepath, _wmakepath
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _makepath
 - _wmakepath
@@ -28,8 +24,6 @@ f1_keywords:
 - tmakepath
 - wmakepath
 - _makepath
-dev_langs:
-- C++
 helpviewer_keywords:
 - _makepath function
 - wmakepath function
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - _wmakepath function
 - tmakepath function
 ms.assetid: 5930b197-a7b8-46eb-8519-2841a58cd026
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 21cfcfb8a1c82fb351b85b0fb169a94dd3c2c5d4
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 073f8aba6936aa33dafcef7ed47f5286802a4948
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105100"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50483557"
 ---
 # <a name="makepath-wmakepath"></a>_makepath, _wmakepath
 

@@ -1,12 +1,6 @@
 ---
-title: 'Çoklu iş parçacığı kullanımı: MFC programlama ipuçları | Microsoft Docs'
-ms.custom: ''
+title: 'Çoklu iş parçacığı kullanımı: MFC programlama ipuçları'
 ms.date: 08/27/2018
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - multithreading [C++], programming tips
 - handle maps [C++]
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - troubleshooting [C++], multithreading
 - Windows handle maps [C++]
 ms.assetid: ad14cc70-c91c-4c24-942f-13a75e58bf8a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3de0f200688062904a47128d9798a9ae39b652d8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0fbee2e836c2e898488da348e4dec9ea00ac4370
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425467"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494284"
 ---
 # <a name="multithreading-mfc-programming-tips"></a>Çoklu iş parçacığı kullanımı: MFC programlama ipuçları
 

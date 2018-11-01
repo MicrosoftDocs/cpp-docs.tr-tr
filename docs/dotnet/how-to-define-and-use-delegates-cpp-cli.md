@@ -1,26 +1,15 @@
 ---
-title: 'Nasıl yapılır: temsilcileri tanımlama ve kullanma (C + +/ CLI) | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Temsilcileri Tanımlama ve Kullanma (C++/CLI)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - delegates
 ms.assetid: 1cdf3420-89c1-47c0-b796-aa984020e0f8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 5c31ad0d98addfd6cadcc54cccf78e842a98304e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3254f01a2d6399626ad78bb742a2cfd861d095ba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397487"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484766"
 ---
 # <a name="how-to-define-and-use-delegates-ccli"></a>Nasıl yapılır: Temsilcileri Tanımlama ve Kullanma (C++/CLI)
 

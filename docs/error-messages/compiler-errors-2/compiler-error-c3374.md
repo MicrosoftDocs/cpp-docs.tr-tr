@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3374 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3374
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3374
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3374
 ms.assetid: 41431299-bd20-47d4-a0c8-1334dd79018b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1c4fce4e39dac7342e8d564c0adc7537a856c05d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c9ee9130d77e844ab435ecc34dcf53e12449abba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46104900"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474938"
 ---
 # <a name="compiler-error-c3374"></a>Derleyici Hatası C3374
 

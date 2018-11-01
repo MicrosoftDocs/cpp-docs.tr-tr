@@ -1,29 +1,19 @@
 ---
-title: COleDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleDialog
 - AFXODLGS/COleDialog
 - AFXODLGS/COleDialog::GetLastError
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleDialog [MFC], GetLastError
 ms.assetid: b1ed0aca-3914-4b00-af34-4a4fb491aec7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1ecfe5ba4ac2144ff626d6d37d8639f1798acda8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c798c1ad81395465e7aa5405ab786ddfb67b71d7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079304"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494711"
 ---
 # <a name="coledialog-class"></a>COleDialog sınıfı
 

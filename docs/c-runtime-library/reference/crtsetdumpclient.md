@@ -1,10 +1,6 @@
 ---
-title: _CrtSetDumpClient | Microsoft Docs
-ms.custom: ''
+title: _CrtSetDumpClient
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtSetDumpClient
 apilocation:
@@ -22,26 +18,20 @@ apitype: DLLExport
 f1_keywords:
 - _CrtSetDumpClient
 - CrtSetDumpClient
-dev_langs:
-- C++
 helpviewer_keywords:
 - _CrtSetDumpClient function
 - CrtSetDumpClient function
 ms.assetid: f3dd06d0-c331-4a12-b68d-25378d112033
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8d5fecc90b4b7259f1440a0a0d86277c769c4e16
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 09f319f6298dbec6b229b2923bd86fc9b50314de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397229"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50470754"
 ---
 # <a name="crtsetdumpclient"></a>_CrtSetDumpClient
 
-Dökümü uygulama tanımlı bir işlev yükler **_clıent_block** bellek blokları (yalnızca hata ayıklama sürümü) yazın.
+Dökümünü almak için uygulama tanımlı bir işlev yükler **_clıent_block** bellek blokları (yalnızca hata ayıklama sürümü).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,23 +42,23 @@ _CRT_DUMP_CLIENT _CrtSetDumpClient( _CRT_DUMP_CLIENT dumpClient );
 ### <a name="parameters"></a>Parametreler
 
 *dumpClient*<br/>
-C çalışma zamanı hata ayıklama bellek dökümü işlemine kanca yeni istemci tarafından tanımlanan bellek dökümü işlev.
+C çalışma zamanı hata ayıklama bellek dökümü işlemine yeteneklerinizi yeni istemci tarafından tanımlanan bellek dökümü işlevi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Önceden tanımlanmış istemci bloğu döndüren dökümü işlevi.
+Önceden tanımlanmış istemci bloğu döndüren işlev dökümü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtSetDumpClient** işlevi sağlayan kendi işlevi depolanan döküm nesnelere kanca uygulamaya **_clıent_block** bellek bloklara C çalışma zamanı hata ayıklama bellek dökümü işlemi. Sonuç olarak, her zaman bir hata ayıklama işlevi gibi dökümü [_CrtMemDumpAllObjectsSince](crtmemdumpallobjectssince.md) veya [_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md) dökümleri bir **_clıent_block** bellek bloğu, uygulamanın Döküm işlevi de denir. **_CrtSetDumpClient** bir uygulama bellek sızıntılarını algılama ve doğrulama veya depolanan veri içeriğini Raporlama ile kolay bir yöntemini sağlar **_clıent_block** engeller. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtSetDumpClient** ön işleme sırasında kaldırılır.
+**_CrtSetDumpClient** işlevine izin verir, uygulamanın kendi işlevine depolanan döküm nesnelere bağlama **_clıent_block** bellek bloklarda C çalışma zamanı hata ayıklama bellek dökümü işlem. Sonuç olarak, her seferinde bir hata ayıklama işlevi gibi dökümü [_CrtMemDumpAllObjectsSince](crtmemdumpallobjectssince.md) veya [_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md) dökümleri bir **_clıent_block** bellek bloğu, uygulama Döküm işlev de çağrılır. **_CrtSetDumpClient** bir uygulama, bellek sızıntılarını algılama ve doğrulama veya depolanan verilerin içeriklerini Raporlama ile kolay bir yöntemini sağlar. **_clıent_block** engeller. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtSetDumpClient** ön işleme sırasında kaldırılır.
 
-**_CrtSetDumpClient** işlevi yükler belirtilen yeni uygulama tanımlı döküm işlevi *dumpClient* ve önceden tanımlanmış döküm işlevi döndürür. İstemci blok döküm işlevi örneği aşağıdaki gibidir:
+**_CrtSetDumpClient** işlevi, belirtilen yeni uygulama tanımlı döküm işlevi yükler *dumpClient* ve önceden tanımlanmış döküm işlev döndürür. Bir istemci bloğu döküm işlev örneği aşağıdaki gibidir:
 
 ```C
 void DumpClientFunction( void *userPortion, size_t blockSize );
 ```
 
-*UserPortion* bağımsız değişkeni bir işaretçidir bellek bloğu kullanıcı veri bölümü başlangıcını ve *blok* blok boyutu ayrılan belleğin bayt cinsinden belirtir. İstemci blok döküm işlevi döndürmelidir **void**. Geçirilir istemci döküm işlev işaretçisi **_CrtSetDumpClient** türü **_crt_dump_clıent**, Crtdbg.h içinde tanımlanan:
+*UserPortion* bağımsız kullanıcı veri bölümü bellek bloğunun başlangıcına bir işaretçidir ve *blockSize* blok boyutu ayrılan belleğin bayt cinsinden belirtir. İstemci bloğu döküm işlevi döndürmelidir **void**. Geçirilen istemci döküm işlev işaretçisi **_CrtSetDumpClient** türünde **_crt_dump_clıent**, Crtdbg.h tanımlandığı şekilde:
 
 ```C
 typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );
@@ -82,7 +72,7 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );
 |-------------|---------------------|
 |**_CrtSetDumpClient**|\<crtdbg.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

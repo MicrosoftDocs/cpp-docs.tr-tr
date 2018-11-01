@@ -1,10 +1,6 @@
 ---
-title: CAutoVectorPtr sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAutoVectorPtr sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAutoVectorPtr
 - ATLBASE/ATL::CAutoVectorPtr
@@ -14,21 +10,15 @@ f1_keywords:
 - ATLBASE/ATL::CAutoVectorPtr::Detach
 - ATLBASE/ATL::CAutoVectorPtr::Free
 - ATLBASE/ATL::CAutoVectorPtr::m_p
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAutoVectorPtr class
 ms.assetid: 0030362b-6bc4-4a47-9b5b-3c3899dceab4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8d60a7f40fc90d5586d7a8a7d41cab81a4d97c85
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8485f13b91c72d12c2084d2714f2acfa6dda7f01
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054486"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50478761"
 ---
 # <a name="cautovectorptr-class"></a>CAutoVectorPtr sınıfı
 

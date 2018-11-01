@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları uyarısı LNK4105 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Uyarısı LNK4105
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK4105
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK4105
 ms.assetid: 6c7bebf4-4ea6-4533-a6ed-e563d43abbd7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4411421741cf8bf7c714a6322d58bd177e7e7270
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 880c8519a530f492d0c322575a1386af8a7d0187
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024989"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50475601"
 ---
 # <a name="linker-tools-warning-lnk4105"></a>Bağlayıcı Araçları Uyarısı LNK4105
 

@@ -1,30 +1,20 @@
 ---
-title: __int2c | Microsoft Docs
-ms.custom: ''
+title: __int2c
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __int2c
 - __int2c_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - int2c intrinsic
 - int 2c instruction
 - __int2c intrinsic
 ms.assetid: aa20ff30-adef-42bb-8577-8010f3122f8e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fcb8859f00724eb7865198c662850a60314ffdc3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: df90e87684a40dcd489c875e2fa49d96ebf94b40
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419990"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486209"
 ---
 # <a name="int2c"></a>__int2c
 

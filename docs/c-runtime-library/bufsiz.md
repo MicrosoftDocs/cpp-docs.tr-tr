@@ -1,27 +1,17 @@
 ---
-title: BUFSIZ | Microsoft Docs
-ms.custom: ''
+title: BUFSIZ
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - BUFSIZ
-dev_langs:
-- C++
 helpviewer_keywords:
 - BUFSIZ constant
 ms.assetid: 94ac04a3-d154-476b-bd89-eefbc7b949ae
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bd455f5efa9b67d8da2f856f12ec82f3847d83d5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a7f702c7ed2d01e2074fe0998edda3d5de6cf83d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019945"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485412"
 ---
 # <a name="bufsiz"></a>BUFSIZ
 

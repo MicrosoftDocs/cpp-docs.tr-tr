@@ -1,29 +1,19 @@
 ---
-title: fp_contract | Microsoft Docs
-ms.custom: ''
+title: fp_contract
 ms.date: 03/12/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.fp_contract
 - fp_contract_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, fp_contract
 - fp_contract pragma
 ms.assetid: 15b97338-6680-4287-ba2a-2dccc5b2ccf5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 95f23fa132a263970047a480ccde37382b6d03de
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 14c3ac60d4fc0f45fcf0ece6c3f73153e5de4271
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052170"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476511"
 ---
 # <a name="fpcontract"></a>fp_contract
 

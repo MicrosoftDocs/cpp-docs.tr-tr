@@ -1,28 +1,18 @@
 ---
-title: __wbinvd | Microsoft Docs
-ms.custom: ''
+title: __wbinvd
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __wbinvd
-dev_langs:
-- C++
 helpviewer_keywords:
 - __wbinvd intrinsic
 - wbinvd instruction
 ms.assetid: 628d0981-39e5-49e1-bd43-706d123af121
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5a1f412de7c8752ba1c1ba1324d20e1d4fb4c6a7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0f775ba94c2dee1c2568e66b09fa1ffb31f512bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388387"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482543"
 ---
 # <a name="wbinvd"></a>__wbinvd
 

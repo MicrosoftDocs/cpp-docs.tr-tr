@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2266 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2266
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2266
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2266
 ms.assetid: 5c267a67-d5a1-4ad7-b6f7-a156510aee35
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c6f28741d5ae090a497ce3ebc3a56f68fc87e1b0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 65ad25a64e7e35dfc06f7310324625aec6da8fb8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067371"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50474473"
 ---
 # <a name="compiler-error-c2266"></a>Derleyici Hatası C2266
 

@@ -1,14 +1,8 @@
 ---
-title: 'TN059: MFC MBCS-Unicode dönüştürme makrolarını kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'TN059: MFC MBCS-Unicode dönüştürme makrolarını kullanma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc.mbcs
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFCANS32.DLL
 - Unicode [MFC], conversion macros
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - macros [MFC], MBCS conversion macros
 - TN059
 ms.assetid: a2aab748-94d0-4e2f-8447-3bd07112a705
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 232a590c7e0d2a494b447a260ab4920a148c2e0d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e806cea54fcb1559b7d70b2e7672973501fc0adf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443923"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476446"
 ---
 # <a name="tn059-using-mfc-mbcsunicode-conversion-macros"></a>TN059: MFC MBCS/Unicode Dönüştürme Makrolarını Kullanma
 
