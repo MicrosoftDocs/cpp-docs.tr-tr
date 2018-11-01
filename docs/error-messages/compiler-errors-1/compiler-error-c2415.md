@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2415 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2415
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2415
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2415
 ms.assetid: f225c913-2bea-46b1-b096-3d358ac94a15
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bd889880997828396521ddba638bb606552e7d92
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 81e2da31b39b323919132ae86cd365d9c119be32
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46112583"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553523"
 ---
 # <a name="compiler-error-c2415"></a>Derleyici Hatası C2415
 

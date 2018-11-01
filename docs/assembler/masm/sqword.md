@@ -1,27 +1,17 @@
 ---
-title: SQWORD | Microsoft Docs
-ms.custom: ''
+title: SQWORD
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - SQWORD
-dev_langs:
-- C++
 helpviewer_keywords:
 - SQWORD directive
 ms.assetid: 329245f1-af34-4540-a912-73e9045c47fa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b0daf90ace2556eb5f1371706537296d76580cf8
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 8457e14ce4d53df6dffbcea4ee1a83e19a23cc49
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679309"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554992"
 ---
 # <a name="sqword"></a>SQWORD
 

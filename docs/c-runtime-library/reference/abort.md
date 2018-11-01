@@ -1,10 +1,6 @@
 ---
-title: Abort | Microsoft Docs
-ms.custom: ''
+title: durdur
 ms.date: 1/02/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - abort
 apilocation:
@@ -22,22 +18,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - Abort
-dev_langs:
-- C++
 helpviewer_keywords:
 - aborting current process
 - abort function
 - processes, aborting
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d55f3066f2c42737170bdd8d87df95a8ad4a22d0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d8cb190e36a64e8bd8cfcb75bc9a19c2a394fc48
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46078094"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532801"
 ---
 # <a name="abort"></a>durdur
 

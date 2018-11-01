@@ -1,27 +1,17 @@
 ---
-title: DEF dosyaları kullanarak DLL'den dışarı aktarma | Microsoft Docs
-ms.custom: ''
+title: DEF Dosyaları Kullanarak DLL'den Dışarı Aktarma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - def files [C++], exporting from DLLs
 - .def files [C++], exporting from DLLs
 - exporting DLLs [C++], DEF files
 ms.assetid: 9d31eda2-184e-47de-a2ee-a93ebd603f8e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 22bcca929d687ef3b10ee65bcb2230c03bfb0a11
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e4351d8eca6c6c580430aa8988344bf7f57e0a9f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706010"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553913"
 ---
 # <a name="exporting-from-a-dll-using-def-files"></a>DEF Dosyaları Kullanarak DLL'den Dışarı Aktarma
 

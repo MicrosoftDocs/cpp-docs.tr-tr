@@ -1,26 +1,16 @@
 ---
-title: Eşitleme veri yapılarını Windows API ile karşılaştırma | Microsoft Docs
-ms.custom: ''
+title: Eşitleme Veri Yapılarını Windows API ile Karşılaştırma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - synchronization data structures, compared to Windows API
 - event class, example
 ms.assetid: 8b0b1a3a-ef80-408c-91fa-93e6af920b4e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ff827c326f331acae4d16381856ad4df01550524
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: acbf5edb0f3284195052cfb3f4447f0b2ba7fe66
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46447056"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554524"
 ---
 # <a name="comparing-synchronization-data-structures-to-the-windows-api"></a>Eşitleme Veri Yapılarını Windows API ile Karşılaştırma
 
