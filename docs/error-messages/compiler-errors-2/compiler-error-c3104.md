@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3104 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3104
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3104
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3104
 ms.assetid: b5648d47-e5d3-4b45-a3c0-f46e04eae731
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db9bce4d47658b012824087f62eb55ccd7ddf669
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 71a5943f65f4bd490ecb02824fef7a96741709f1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111153"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540329"
 ---
 # <a name="compiler-error-c3104"></a>Derleyici Hatası C3104
 

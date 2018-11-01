@@ -1,23 +1,13 @@
 ---
-title: Zengin düzenleme denetimine örnekler | Microsoft Docs
-ms.custom: ''
+title: Zengin Düzenleme Denetimine Örnekler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: ac98bf45-ca74-459c-9b3e-df278a67a00f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 48c73504f54ce2732bff808ced50d463a4c50a85
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 014c7c9ab41ef403e2c551defd4d99f8e02fbf6e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433370"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547478"
 ---
 # <a name="rich-edit-control-examples"></a>Zengin Düzenleme Denetimine Örnekler
 

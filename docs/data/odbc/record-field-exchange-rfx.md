@@ -1,12 +1,6 @@
 ---
-title: Kayıt alanı değişimi (RFX) | Microsoft Docs
-ms.custom: ''
+title: Kayıt Alanı Değişimi (RFX)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - RFX (ODBC) [C++]
 - data [MFC], moving between sources and recordsets
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - data [MFC]
 - ODBC [C++], RFX
 ms.assetid: f5ddfbf0-2901-48d7-9848-4fb84de3c7ee
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: ede5ce16aa7255bd6f62afc1b397d802003e6621
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f612f4be726707681ffbddff88ccc6b8a672e427
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081015"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522414"
 ---
 # <a name="record-field-exchange-rfx"></a>Kayıt Alanı Değişimi (RFX)
 

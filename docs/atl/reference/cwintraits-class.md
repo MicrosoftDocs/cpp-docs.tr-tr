@@ -1,17 +1,11 @@
 ---
-title: CWinTraits sınıfı | Microsoft Docs
-ms.custom: ''
+title: CWinTraits sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CWinTraits
 - ATLWIN/ATL::CWinTraits
 - ATLWIN/ATL::CWinTraits::GetWndExStyle
 - ATLWIN/ATL::CWinTraits::GetWndStyle
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMDIChildWinTraits class
 - window styles, default values for ATL
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - CFrameWinTraits class
 - CControlWinTraits class
 ms.assetid: f78f486e-6d9c-42c6-8e86-371e05aa7e59
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 69ea4cf411e0ded0f1c324cea439d5a5a4c0c553
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9e60eb773573142d0a4498c42a98f6e9c4c49a7c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062476"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532606"
 ---
 # <a name="cwintraits-class"></a>CWinTraits sınıfı
 

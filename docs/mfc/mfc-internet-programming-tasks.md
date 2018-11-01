@@ -1,26 +1,16 @@
 ---
-title: MFC Internet programlama görevleri | Microsoft Docs
-ms.custom: ''
+title: MFC Internet Programlama Görevleri
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Internet applications [MFC], getting started
 - Internet applications [MFC], first steps
 ms.assetid: 6377e9b8-07c4-4380-b63b-05f5a9061313
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ddeade60601f4553ff43058c968c8ba0b29b1708
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ea7291a63fe9864f7254d4db8b68e4c9abf732c3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375943"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508006"
 ---
 # <a name="mfc-internet-programming-tasks"></a>MFC Internet Programlama Görevleri
 

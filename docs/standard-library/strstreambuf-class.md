@@ -1,10 +1,6 @@
 ---
-title: strstreambuf sınıfı | Microsoft Docs
-ms.custom: ''
+title: strstreambuf Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - strstream/std::strstreambuf::freeze
 - strstream/std::strstreambuf::overflow
@@ -14,8 +10,6 @@ f1_keywords:
 - strstream/std::strstreambuf::seekpos
 - strstream/std::strstreambuf::str
 - strstream/std::strstreambuf::underflow
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::strstreambuf [C++], freeze
 - std::strstreambuf [C++], overflow
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - std::strstreambuf [C++], str
 - std::strstreambuf [C++], underflow
 ms.assetid: b040b8ea-0669-4eba-8908-6a9cc159c54b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2424ce23c0a376156bbb78869a2e33e501958e73
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5a9fa47ab19a5935bf0c7c36dea37b3cfe6180ea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719140"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512391"
 ---
 # <a name="strstreambuf-class"></a>strstreambuf Sınıfı
 

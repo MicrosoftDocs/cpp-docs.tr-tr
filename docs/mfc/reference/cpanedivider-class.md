@@ -1,10 +1,6 @@
 ---
-title: CPaneDivider sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPaneDivider sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPaneDivider
 - AFXPANEDIVIDER/CPaneDivider
@@ -47,8 +43,6 @@ f1_keywords:
 - AFXPANEDIVIDER/CPaneDivider::GetPaneDividers
 - AFXPANEDIVIDER/CPaneDivider::m_nDefaultWidth
 - AFXPANEDIVIDER/CPaneDivider::m_pSliderRTC
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPaneDivider [MFC], CPaneDivider
 - CPaneDivider [MFC], AddPaneContainer
@@ -90,16 +84,12 @@ helpviewer_keywords:
 - CPaneDivider [MFC], m_nDefaultWidth
 - CPaneDivider [MFC], m_pSliderRTC
 ms.assetid: 8e828a5d-232f-4127-b8e3-7fa45a7a476e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eb7c7f18fa0d0b2b39ac8d8bc29802836495741d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e3abda8326d6f89939b9aa41cf2282496d5974d0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081059"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530539"
 ---
 # <a name="cpanedivider-class"></a>CPaneDivider sınıfı
 

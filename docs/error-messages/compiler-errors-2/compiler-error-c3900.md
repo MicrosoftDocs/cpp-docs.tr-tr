@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3900 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3900
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3900
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3900
 ms.assetid: a94cc561-8fa8-4344-9e01-e81ff462fae5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dfbec5086cd034b56795f47504c029e975aa36b4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d031b55407d108b4f8be362156911bfae688326a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039679"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50512365"
 ---
 # <a name="compiler-error-c3900"></a>Derleyici Hatası C3900
 

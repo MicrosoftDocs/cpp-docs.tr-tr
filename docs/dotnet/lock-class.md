@@ -1,30 +1,20 @@
 ---
-title: lock sınıfı | Microsoft Docs
-ms.custom: ''
+title: lock Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr::lock
 - msclr.lock
 - lock
-dev_langs:
-- C++
 helpviewer_keywords:
 - lock class
 ms.assetid: 5123edd9-6aed-497d-9a0b-f4b6d6c0d666
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 7ef0887ca3eec7510717aab21ba4c6c7aba98d25
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8876810b15a7d2736f2c8ab0ca1f4c6011918a5f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380301"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547140"
 ---
 # <a name="lock-class"></a>lock Sınıfı
 

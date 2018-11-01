@@ -1,10 +1,6 @@
 ---
-title: gamma_distribution sınıfı | Microsoft Docs
-ms.custom: ''
+title: gamma_distribution Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::gamma_distribution
 - random/std::gamma_distribution::reset
@@ -19,8 +15,6 @@ f1_keywords:
 - random/std::gamma_distribution::param_type::beta
 - random/std::gamma_distribution::param_type::operator==
 - random/std::gamma_distribution::param_type::operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::gamma_distribution [C++]
 - std::gamma_distribution [C++], reset
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - std::gamma_distribution [C++], param_type
 - std::gamma_distribution [C++], param_type
 ms.assetid: 2a6798ac-6152-41d7-8ef6-d684d92f1572
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 05442a0c590bcb66449aeae72d54cc6e988421bc
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: a5dcd2ed80a2858ac08d2d8e9cb03095ddfec5b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44099902"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550481"
 ---
 # <a name="gammadistribution-class"></a>gamma_distribution Sınıfı
 

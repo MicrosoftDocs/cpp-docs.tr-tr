@@ -1,12 +1,6 @@
 ---
-title: Bağlayıcı seçeneklerini ayarlama | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Seçeneklerini Ayarlama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - files [C++], LINK
 - input files [C++], linker
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - input files [C++]
 - object/library modules
 ms.assetid: e08fb487-0f2e-4f24-87db-232dbc8bd2e2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d2fd99732c7f79b3c61ff5b31516b98a478ed4a8
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5b885ad5c86bc59029fc6a3a60ccee385703ab2d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713082"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508946"
 ---
 # <a name="setting-linker-options"></a>Bağlayıcı Seçeneklerini Ayarlama
 

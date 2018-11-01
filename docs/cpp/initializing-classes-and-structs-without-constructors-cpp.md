@@ -1,23 +1,13 @@
 ---
-title: Sınıfları ve yapıları oluşturucular (C++) olmadan başlatma | Microsoft Docs
-ms.custom: ''
+title: Sınıfları ve yapıları oluşturucular olmadan başlatma (C++)
 ms.date: 10/17/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 3e55c3d6-1c6b-4084-b9e5-221b151402f4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fb72bf8c8550d87a4e6bf86e440c7a468f4f878d
-ms.sourcegitcommit: f9d9db80a8f13eae2c41337b974e1298109e33c5
+ms.openlocfilehash: 4f696f4fc8862b953e40a03c96b88d1a0b7f720b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49640766"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547335"
 ---
 # <a name="initializing-classes-and-structs-without-constructors-c"></a>Sınıfları ve yapıları oluşturucular olmadan başlatma (C++)
 

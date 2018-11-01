@@ -1,27 +1,17 @@
 ---
-title: Diziler (C++) | Microsoft Docs
-ms.custom: ''
+title: Diziler (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - declaring arrays [C++], about declaring arrays
 - multidimensional arrays [C++]
 - arrays [C++]
 ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b2423355aa53abe52fffcd81ec847b41337efcbf
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 746a6b5a2122a7ccdd207d278d285af3e448d7ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861037"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550676"
 ---
 # <a name="arrays-c"></a>Diziler (C++)
 

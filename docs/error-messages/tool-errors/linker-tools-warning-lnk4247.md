@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları uyarısı LNK4247 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Uyarısı LNK4247
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK4247
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK4247
 ms.assetid: 085d7fdf-9eaf-4641-8473-6eaadd073c7b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2d84a5964cb8df5d2973b6031da55d48dade584e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cd4108f8bd06ec7a0b2d2eb9fab13917174b797b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46078016"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516031"
 ---
 # <a name="linker-tools-warning-lnk4247"></a>Bağlayıcı Araçları Uyarısı LNK4247
 

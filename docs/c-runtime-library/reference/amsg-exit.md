@@ -1,10 +1,6 @@
 ---
-title: _amsg_exit | Microsoft Docs
-ms.custom: ''
+title: _amsg_exit
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _amsg_exit
 apilocation:
@@ -21,25 +17,19 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _amsg_exit
-dev_langs:
-- C++
 helpviewer_keywords:
 - _amsg_exit
 ms.assetid: 146d4faf-d763-43a4-b264-12711196456b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dbb7f46bb4f3c942fd1c9e1a1d45c1ccf48739f7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 87cd08a6c60a1e29b8a8e15edbfdd69d338d875d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392802"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534036"
 ---
 # <a name="amsgexit"></a>_amsg_exit
 
-Belirtilen çalışma zamanı hata iletisi gösterir ve hata kodu 255 uygulamanızla çıkar.
+Belirtilen çalışma zamanı hata iletisi gösterir ve hata kodu 255 uygulamanızla kapanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,7 +44,7 @@ Sistem tarafından tanımlanan çalışma zamanı hata iletisi kimliği sayısı
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev çalışma zamanı hata iletisine yayar **stderr** konsol uygulamaları veya bir ileti ileti kutusu Windows uygulamaları için görüntüler. Hata ayıklama modunda çıkmadan önce hata ayıklayıcısı çağrılacak seçebilirsiniz.
+Bu işlev çalışma zamanı hata iletisine yayan **stderr** konsol uygulamaları veya Windows uygulamaları için ileti içinde bir ileti kutusunda görüntüler. Hata ayıklama modunda hata ayıklayıcısını çıkmadan önce çağrılacak seçebilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 

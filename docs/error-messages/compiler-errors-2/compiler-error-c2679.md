@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2679 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2679
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2679
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2679
 ms.assetid: 1a5f9d00-9190-4aa6-bc72-949f68ec136f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a01a79dfdff06c50b65bde33de62676e6df64a82
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: de5613c306eb12bc11d45e868f502ca04d0a62e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069501"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501275"
 ---
 # <a name="compiler-error-c2679"></a>Derleyici Hatası C2679
 

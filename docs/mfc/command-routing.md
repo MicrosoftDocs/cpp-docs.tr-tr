@@ -1,12 +1,6 @@
 ---
-title: Komut yönlendirme | Microsoft Docs
-ms.custom: ''
+title: Komut Yönlendirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, command routing
 - command handling [MFC], routing commands
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - handlers, command [MFC]
 - command routing
 ms.assetid: 9393a956-bdd4-47c5-9013-dbd680433f93
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 543b9e34c881285c295fb7ab7ee2107e36c99a9c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: add047984f5a32e505e8a739922daa137b5e671d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418326"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541706"
 ---
 # <a name="command-routing"></a>Komut Yönlendirme
 

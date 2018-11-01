@@ -1,28 +1,18 @@
 ---
-title: CDaoTableDefInfo yapısı | Microsoft Docs
-ms.custom: ''
+title: CDaoTableDefInfo Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDaoTableDefInfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDaoTableDefInfo structure [MFC]
 - DAO (Data Access Objects), TableDefs collection
 ms.assetid: c01ccebb-5615-434e-883c-4f60eac943dd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0563cf930d9722adf175a2b82c1e7788ea3d066a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 10ff07ebcd9c6877d9bafc0b7c8724acb0bc45b9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415830"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542980"
 ---
 # <a name="cdaotabledefinfo-structure"></a>CDaoTableDefInfo Yapısı
 

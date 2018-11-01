@@ -1,31 +1,21 @@
 ---
-title: Complex sınıfı | Microsoft Docs
-ms.custom: ''
+title: complex Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - complex/std::complex::value_type
 - complex/std::complex::imag
 - complex/std::complex::real
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::complex [C++], value_type
 - std::complex [C++], imag
 - std::complex [C++], real
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f31d2e0fe0a58d2b1de4196bd1125c842731fb42
-ms.sourcegitcommit: 8c2de32e96c84d0147af3cce1e89e4f28707ff12
+ms.openlocfilehash: efdd904c3c82142862895a3df8a55162c10a3aad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143711"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553393"
 ---
 # <a name="complex-class"></a>complex Sınıfı
 

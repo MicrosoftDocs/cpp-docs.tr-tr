@@ -1,10 +1,6 @@
 ---
-title: _unlink, _wunlink | Microsoft Docs
-ms.custom: ''
+title: _unlink, _wunlink
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _unlink
 - _wunlink
@@ -26,8 +22,6 @@ f1_keywords:
 - _unlink
 - wunlink
 - _wunlink
-dev_langs:
-- C++
 helpviewer_keywords:
 - files [C++], deleting
 - _wunlink function
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - files [C++], removing
 - _tunlink function
 ms.assetid: 5e4f5f1b-1e99-4391-9b18-9ac63c32fae8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ace694452467d6d559f8820216be71ecd85b54e0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7565679c58af83d64fd59419e8e841ee48133edf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411015"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544206"
 ---
 # <a name="unlink-wunlink"></a>_unlink, _wunlink
 
@@ -71,13 +61,13 @@ Kaldırmak için dosyanın adı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri başarılı olursa 0 değerini döndürür. Aksi takdirde, işlevi -1 döndürür ve kümelerini **errno** için **EACCES**, salt okunur bir dosya yolu yani belirtir veya **ENOENT**, yani dosya veya yol bulunamadı veya bir dizin yolu belirtilmelidir.
+Bu işlevlerin her biri, başarılı olursa 0 döndürür. Aksi halde, işlev -1 döndürür ve kümelerini **errno** için **SPAWN**, salt okunur bir dosya yolu yani belirtir veya **ENOENT**, yani dosya veya yol bulunamadı veya bir dizin yolu belirtildi.
 
 Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hakkında daha fazla bilgi için dönüş kodları.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Unlink** işlevi tarafından belirtilen dosyayı siler *filename*. **_wunlink** bir joker karakter sürümü **_unlink**; *filename* bağımsız değişkeni **_wunlink** bir joker karakter dizesidir. Bu işlevler aynı şekilde aksi davranır.
+**_Unlink** işlevi tarafından belirtilen dosya siler *filename*. **_wunlink** geniş karakterli sürümüdür **_unlink**; *filename* bağımsız değişkeni **_wunlink** geniş karakterli bir dizedir. Bu işlevler, aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -92,7 +82,7 @@ Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno
 |**_unlink**|\<io.h > ve \<stdio.h >|
 |**_wunlink**|\<io.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="code-example"></a>Kod Örneği
 

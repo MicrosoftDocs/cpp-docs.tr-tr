@@ -1,27 +1,17 @@
 ---
-title: Kaynak Derleyicisi uyarısı RC4093 | Microsoft Docs
-ms.custom: ''
+title: Kaynak Derleyicisi Uyarısı RC4093
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - RC4093
-dev_langs:
-- C++
 helpviewer_keywords:
 - RC4093
 ms.assetid: 3c61b4a4-b418-465b-a4fd-cb1ff0adb8dd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9b1ca04b17ebdb9d48bc94032482caf48ad4aa00
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 23bf436e6e8338f89bc576564181c84715028332
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111569"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541888"
 ---
 # <a name="resource-compiler-warning-rc4093"></a>Kaynak Derleyicisi Uyarısı RC4093
 

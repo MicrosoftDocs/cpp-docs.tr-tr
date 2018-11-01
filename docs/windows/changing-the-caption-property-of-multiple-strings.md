@@ -1,27 +1,16 @@
 ---
-title: Birden çok dize kaynakları (C++) resim yazısı özelliğini değiştirme | Microsoft Docs
-ms.custom: ''
+title: Birden çok dize kaynakları (C++) resim yazısı özelliğini değiştirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - String editor [C++], changing properties of multiple strings
 - string tables [C++], changing caption of multiple strings
 ms.assetid: 82ac4389-fd9c-4794-a18f-c6bf5b253bd7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 459114678352004293b425ba7cdff39d15d084b1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a0b658684a948bd006c392188ed650756bda297d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057757"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530838"
 ---
 # <a name="changing-the-caption-property-of-multiple-string-resources-c"></a>Birden çok dize kaynakları (C++) resim yazısı özelliğini değiştirme
 

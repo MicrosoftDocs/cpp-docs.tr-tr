@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3556 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3556
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3556
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3556
 ms.assetid: 9b002dcc-494e-414f-9587-20c2a0a39333
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 043c7e6a20cc914c36ecae4c54d772a3f6145a73
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7b87f8c57b0d871a577793936ea3cb7dbab7e58d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061129"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531176"
 ---
 # <a name="compiler-error-c3556"></a>Derleyici Hatası C3556
 

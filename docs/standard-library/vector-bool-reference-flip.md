@@ -1,27 +1,17 @@
 ---
-title: 'vektör&lt;bool&gt;:: reference::flip | Microsoft Docs'
-ms.custom: ''
+title: 'vektör&lt;bool&gt;:: reference::flip'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - vector/std::vector<bool>::reference::flip
-dev_langs:
-- C++
 helpviewer_keywords:
 - reference::flip method
 ms.assetid: ef940365-cbe4-4a87-a3e2-1f3cfa357e29
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 97695b31d79814ec8cf08396295b02b1b7bbd1d2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0d212aef70228454917b2a5df9cd5165df9be35b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854307"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543782"
 ---
 # <a name="vectorltboolgtreferenceflip"></a>vektör&lt;bool&gt;:: reference::flip
 
@@ -83,5 +73,5 @@ The vector with first element flipped is:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[vektör\<bool >:: sınıfı başvurusu](../standard-library/vector-bool-reference-class.md)<br/>
+[vektör\<bool >:: reference sınıfı](../standard-library/vector-bool-reference-class.md)<br/>
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

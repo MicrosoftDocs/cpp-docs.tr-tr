@@ -1,14 +1,8 @@
 ---
-title: MFC ActiveX denetimleri | Microsoft Docs
-ms.custom: ''
+title: MFC ActiveX Denetimleri
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - MFC ActiveX Controls (MFC)
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleControl class [MFC], MFC ActiveX controls
 - ActiveX controls [MFC], MFC
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - events [MFC], ActiveX controls
 - MFC ActiveX controls [MFC]
 ms.assetid: c911fb74-3afc-4bf3-a0f5-7922b14d9a1b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 33c79dc8c83f40d0b553a2c44cf22fa107f5ef34
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 95e1e1cc47d9c14448635fae5d6a9added8e15e9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065596"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553281"
 ---
 # <a name="mfc-activex-controls"></a>MFC ActiveX Denetimleri
 

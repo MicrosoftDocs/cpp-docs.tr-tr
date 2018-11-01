@@ -1,10 +1,6 @@
 ---
-title: _mbbtombc, _mbbtombc_l | Microsoft Docs
-ms.custom: ''
+title: _mbbtombc, _mbbtombc_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbbtombc_l
 - _mbbtombc
@@ -26,31 +22,25 @@ f1_keywords:
 - _mbbtombc
 - mbbtombc_l
 - mbbtombc
-dev_langs:
-- C++
 helpviewer_keywords:
 - mbbtombc_l function
 - mbbtombc function
 - _mbbtombc_l function
 - _mbbtombc function
 ms.assetid: 78593389-b0fc-43b6-8c1f-2a6bf702d64e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 98053437d2e189c26b46b53ec34ef67740d62bce
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 63b5dd33399201cd6ead7dbd1f710c8bebe53c69
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401795"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547998"
 ---
 # <a name="mbbtombc-mbbtombcl"></a>_mbbtombc, _mbbtombc_l
 
-Tek baytlı birden çok baytlı karakter karşılık gelen bir çift baytlık birden çok baytlı karakter dönüştürür.
+Bir tek baytlık çok baytlı karakteri karşılık gelen bir çift baytlık çok baytlı karaktere dönüştürür.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -74,15 +64,15 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Varsa **_mbbtombc** başarıyla dönüştürür *c*, birden çok baytlı karakter döndürür; Aksi takdirde, döndürür *c*.
+Varsa **_mbbtombc** başarıyla dönüştürür *c*, çok baytlı bir karakter döndürür; Aksi halde *c*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbbtombc** işlevi, karşılık gelen bir çift baytlık birden çok baytlı karakter belirli bir tek baytlı birden çok baytlı karakter dönüştürür. Karakter dönüştürülecek 0xDF 0x20-0x7E veya 0xA1 - aralığında olması gerekir.
+**_Mbbtombc** işlevi, karşılık gelen bir çift baytlık çok baytlı karakterin tek baytlık çok baytlı bir karakteri dönüştürür. Karakter 0xDF dönüştürülecek 0x20-0x7E veya 0xA1 - aralığında olması gerekir.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlev sürümleri özdeş dışında **_mbbtombc** geçerli yerel ayar için bu yerel ayara bağımlı davranışı kullanır ve **_mbbtombc_l** yerine geçirilen yerel ayar parametresi kullanır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevin sürümleri özdeş dışında **_mbbtombc** bu yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır ve **_mbbtombc_l** bunun yerine iletilen yerel ayar parametresini kullanır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Önceki sürümlerde, **_mbbtombc** idi **hantozen**. Kullanmak için yeni kod, **_mbbtombc**.
+Önceki sürümlerde **_mbbtombc** taşıyordu **hantozen**. Yeni kod için kullanmak **_mbbtombc**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -91,7 +81,7 @@ Varsa **_mbbtombc** başarıyla dönüştürür *c*, birden çok baytlı karakte
 |**_mbbtombc**|\<Mbstring.h >|
 |**_mbbtombc_l**|\<Mbstring.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

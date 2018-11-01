@@ -1,10 +1,6 @@
 ---
-title: ___lc_collate_cp_func | Microsoft Docs
-ms.custom: ''
+title: ___lc_collate_cp_func
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - ___lc_collate_cp_func
 apilocation:
@@ -18,21 +14,15 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - ___lc_collate_cp_func
-dev_langs:
-- C++
 helpviewer_keywords:
 - ___lc_collate_cp_func
 ms.assetid: 46ccc084-7ac9-4e5d-9138-e12cb5845615
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d239820221c696dbb8d27e2824ed871a7e2d5ad8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 37254177ab57212dd57e476716d1dc07d59d7239
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46063063"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50521248"
 ---
 # <a name="lccollatecpfunc"></a>___lc_collate_cp_func
 

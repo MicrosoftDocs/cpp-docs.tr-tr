@@ -1,10 +1,6 @@
 ---
-title: concurrent_vector sınıfı | Microsoft Docs
-ms.custom: ''
+title: concurrent_vector Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - concurrent_vector
 - CONCURRENT_VECTOR/concurrency::concurrent_vector
@@ -34,21 +30,15 @@ f1_keywords:
 - CONCURRENT_VECTOR/concurrency::concurrent_vector::shrink_to_fit
 - CONCURRENT_VECTOR/concurrency::concurrent_vector::size
 - CONCURRENT_VECTOR/concurrency::concurrent_vector::swap
-dev_langs:
-- C++
 helpviewer_keywords:
 - concurrent_vector class
 ms.assetid: a217b4ac-af2b-4d41-94eb-09a75ee28622
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 68ea93c137962e48f8a627e9a9409e4e7fceef65
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 367a5ed6bf9d42730a309570c93afd1b315bae25
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163380"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501757"
 ---
 # <a name="concurrentvector-class"></a>concurrent_vector Sınıfı
 

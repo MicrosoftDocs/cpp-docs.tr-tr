@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2181 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2181
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2181
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2181
 ms.assetid: d52b2fe4-566a-40a9-b8e2-8dce1f287668
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d449bb011b63034df49fe4e3d13b373e0ca2c827
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a676794b5dedd17cfb973de36d3771ef1130a786
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062286"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50527315"
 ---
 # <a name="compiler-error-c2181"></a>Derleyici Hatası C2181
 

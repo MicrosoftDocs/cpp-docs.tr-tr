@@ -1,23 +1,13 @@
 ---
-title: 2.7.2.7 copyin | Microsoft Docs
-ms.custom: ''
+title: 2.7.2.7 copyin
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 76cfb9f8-bf65-4585-adbf-fd933f5606b4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 94b4c529b7ad6fd717be1e1dee0edd3ff9ac3ff5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 65bb8faba085e5582e779fa0e9d5bf1a91a39f0e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426893"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545450"
 ---
 # <a name="2727-copyin"></a>2.7.2.7 copyin
 

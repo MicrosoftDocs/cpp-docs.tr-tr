@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4266 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4266
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4266
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4266
 ms.assetid: 90ec5f5b-3451-4c16-bb1b-c30a626bdaa0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 411654cd70d8dfb241e925112e42bbbcad355597
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c0bfe2c03b1c1e310a341e97013ae1516457f300
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46023169"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549883"
 ---
 # <a name="compiler-warning-level-4-c4266"></a>Derleyici Uyarısı (düzey 4) C4266
 

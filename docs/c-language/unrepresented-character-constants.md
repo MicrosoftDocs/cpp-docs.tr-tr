@@ -1,23 +1,13 @@
 ---
-title: Temsil edilmeyen karakter sabitleri | Microsoft Docs
-ms.custom: ''
+title: Temsil Edilmeyen Karakter Sabitleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 5a710a1c-dba1-49b4-a183-ed94a00a5358
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 924af1a31cccea117ee8cd2cf909c2947c6dc3b0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 56a70a06741449909bb9eb4faa4f8dee28f5423b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46064171"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50503370"
 ---
 # <a name="unrepresented-character-constants"></a>Temsil Edilmeyen Karakter Sabitleri
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2910 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2910
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2910
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2910
 ms.assetid: 09c50e6a-e099-42f6-8ed6-d80e292a7a36
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d726fffa61ed80352626df7a6f89467c420152bd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 58d56ad834b34425cda4ac7ba081eabd2424e451
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46136133"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547270"
 ---
 # <a name="compiler-error-c2910"></a>Derleyici Hatası C2910
 

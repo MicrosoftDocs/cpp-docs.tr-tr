@@ -1,25 +1,15 @@
 ---
-title: Çok baytlı karakterleri dönüştürme | Microsoft Docs
-ms.custom: ''
+title: Birden Çok Baytlı Karakterleri Dönüştürme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - multibyte characters, converting
 ms.assetid: bbee7586-6a60-4168-bb98-0d1c8aa823a1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b1d91cf62d6d8665e9578984897a6c599c024c6c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 890b95fd77ed08ff94528e5df61dab5a6832c631
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46059830"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538924"
 ---
 # <a name="converting-multibyte-characters"></a>Birden Çok Baytlı Karakterleri Dönüştürme
 

@@ -1,24 +1,14 @@
 ---
-title: PTR üyeleri | Microsoft Docs
-ms.custom: ''
+title: ptr Üyeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: 84607ea2-149b-4c6d-b802-282f7f59d42d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 6c88edaf8c3d7939635afe015ccd07cbc828b366
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6d678a51bdf0b8b1d2168ef9aed0b021fbd7eb9d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393548"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50527159"
 ---
 # <a name="ptr-members"></a>ptr Üyeleri
 

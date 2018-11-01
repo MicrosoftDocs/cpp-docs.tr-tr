@@ -1,25 +1,15 @@
 ---
-title: Kendi yardımcı işlevinizi geliştirme | Microsoft Docs
-ms.custom: ''
+title: Kendi Yardımcı İşlevinizi Geliştirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - helper functions
 ms.assetid: a845429d-68b1-4e14-aa88-f3f5343bd490
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d95434c51bdfca07e48714c8c1e13bcdb64dc02f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 0bd0066cee875408056bd88895b0b5f449802c5f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716007"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492021"
 ---
 # <a name="developing-your-own-helper-function"></a>Kendi Yardımcı İşlevinizi Geliştirme
 

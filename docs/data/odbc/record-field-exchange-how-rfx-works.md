@@ -1,12 +1,6 @@
 ---
-title: "Kayıt Alanı Değişimi: RFX'in çalışması | Microsoft Docs"
-ms.custom: ''
+title: "Kayıt Alanı Değişimi: RFX'in Çalışması"
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - record editing [C++], using RFX
 - RFX (ODBC) [C++], updating data in recordsets
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - scrolling [C++], RFX
 - RFX (ODBC) [C++], binding fields and parameters
 ms.assetid: e647cacd-62b0-4b80-9e20-b392deca5a88
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: fe76b061f47a8e4e77daa82c7b9806dd4a28b077
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: efc08736f1b61bc634b819fc62545d886134cd35
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063191"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534712"
 ---
 # <a name="record-field-exchange-how-rfx-works"></a>Kayıt Alanı Değişimi: RFX'in Çalışması
 

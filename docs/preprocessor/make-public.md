@@ -1,29 +1,19 @@
 ---
-title: make_public | Microsoft Docs
-ms.custom: ''
+title: make_public
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.make_public
 - make_public_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, make_public
 - make_public pragma
 ms.assetid: c3665f4d-268a-4932-9661-c37c8ae6a341
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eeabbfac65e67e0a293f4c31ff6f8911cc0b676e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: cfc8d13ead28c0b817d7de015b9c507db152de6a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066727"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508972"
 ---
 # <a name="makepublic"></a>make_public
 Yerel bir tür genel derleme erişilebilirliği olmayacağını gösterir.

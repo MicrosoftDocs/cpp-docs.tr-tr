@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4544 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4544
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4544
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4544
 ms.assetid: 11ee04df-41ae-435f-af44-881e801315a8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4c7cd274f0d1b595d374e1b108db40a51395b968
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f2a3f2e64a6a859add8182de4fc883c735563e92
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084282"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532905"
 ---
 # <a name="compiler-warning-level-1-c4544"></a>Derleyici Uyarısı (düzey 1) C4544
 

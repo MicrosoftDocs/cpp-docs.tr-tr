@@ -1,32 +1,22 @@
 ---
-title: FactoryCache yapısı | Microsoft Docs
-ms.custom: ''
+title: FactoryCache Yapısı
 ms.date: 09/21/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::Details::FactoryCache
 - module/Microsoft::WRL::Details::FactoryCache::cookie
 - module/Microsoft::WRL::Details::FactoryCache::factory
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Details::FactoryCache structure
 - Microsoft::WRL::Details::FactoryCache::cookie data member
 - Microsoft::WRL::Details::FactoryCache::factory data member
 ms.assetid: 624544e6-0989-47f6-a3e9-edb60e1ee6d4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: d56779b5df33f75c9147d34b55f8c2fc65204a82
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 7196363567dffa43844bbbd1de76934a317302d1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234547"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545853"
 ---
 # <a name="factorycache-structure"></a>FactoryCache Yapısı
 

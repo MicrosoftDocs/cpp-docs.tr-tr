@@ -1,10 +1,6 @@
 ---
-title: CMFCColorPickerCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCColorPickerCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCColorPickerCtrl
 - AFXCOLORPICKERCTRL/CMFCColorPickerCtrl
@@ -25,8 +21,6 @@ f1_keywords:
 - AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetSaturation
 - AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetType
 - AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::DrawCursor
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCColorPickerCtrl [MFC], CMFCColorPickerCtrl
 - CMFCColorPickerCtrl [MFC], GetColor
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - CMFCColorPickerCtrl [MFC], SetType
 - CMFCColorPickerCtrl [MFC], DrawCursor
 ms.assetid: b9bbd03c-beb0-4b55-9765-9985fd05e5dc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 28085c49903aff1c49fa9114b6a0828c5493840b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 073012642597d0b38dcb0f76cf5662666447adc1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077926"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519060"
 ---
 # <a name="cmfccolorpickerctrl-class"></a>CMFCColorPickerCtrl sınıfı
 

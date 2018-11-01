@@ -1,29 +1,19 @@
 ---
-title: 'TN042: ODBC sürücü Geliştirici önerileri | Microsoft Docs'
-ms.custom: ''
+title: 'TN042: ODBC Sürücü Geliştirici Önerileri'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.odbc
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC drivers [MFC], writing
 - databases [MFC], ODBC
 - TN042
 ms.assetid: ecc6b5d9-f480-4582-9e22-8309fe561dad
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 87e31fa0884adc78d3f1026afc59dd0b46ac7602
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2140261c2e90eaee7930d4be3282ec31bda29759
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375261"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502059"
 ---
 # <a name="tn042-odbc-driver-developer-recommendations"></a>TN042: ODBC Sürücü Geliştirici Önerileri
 

@@ -1,29 +1,19 @@
 ---
-title: writeonly_texture_view sınıfı | Microsoft Docs
-ms.custom: ''
+title: writeonly_texture_view Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - writeonly_texture_view
 - AMP_GRAPHICS/writeonly_texture_view
 - AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view
 - AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view::set
 - AMP_GRAPHICS/Concurrency::graphics::rank Constant
-dev_langs:
-- C++
 ms.assetid: 8d117ad3-0a1c-41ae-b29c-7c95fdd4d04d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dd92e403d9c83bf50bea2703cef6a4255c6245e3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 022450469a69e9fe127f23a50b799092e7e057b4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414693"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524702"
 ---
 # <a name="writeonlytextureview-class"></a>writeonly_texture_view Sınıfı
 

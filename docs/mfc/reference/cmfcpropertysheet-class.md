@@ -1,10 +1,6 @@
 ---
-title: CMFCPropertySheet sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCPropertySheet sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCPropertySheet
 - AFXPROPERTYSHEET/CMFCPropertySheet
@@ -25,8 +21,6 @@ f1_keywords:
 - AFXPROPERTYSHEET/CMFCPropertySheet::RemovePage
 - AFXPROPERTYSHEET/CMFCPropertySheet::SetIconsList
 - AFXPROPERTYSHEET/CMFCPropertySheet::SetLook
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCPropertySheet [MFC], CMFCPropertySheet
 - CMFCPropertySheet [MFC], AddPage
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - CMFCPropertySheet [MFC], SetIconsList
 - CMFCPropertySheet [MFC], SetLook
 ms.assetid: 01d93573-9698-440f-a6a4-5bebbee879dc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f5512f806b5abdee56b2c6eabe45f93545c8788e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8e643474d577c606e80f5f34c6166a59753610f2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442948"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531618"
 ---
 # <a name="cmfcpropertysheet-class"></a>CMFCPropertySheet sınıfı
 

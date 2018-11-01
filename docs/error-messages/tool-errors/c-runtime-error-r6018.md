@@ -1,27 +1,17 @@
 ---
-title: C çalışma zamanı hatası R6018 | Microsoft Docs
-ms.custom: ''
+title: C çalışma zamanı hatası R6018
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - R6018
-dev_langs:
-- C++
 helpviewer_keywords:
 - R6018
 ms.assetid: f6dd40d1-a119-4d8b-b39e-97350ea23349
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a2a35d57bb0136be6f47319c7f268d4fface3641
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: e0d229b4fd8c1a4f8e067c0e59a278344fd4e113
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861603"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531924"
 ---
 # <a name="c-runtime-error-r6018"></a>C çalışma zamanı hatası R6018
 

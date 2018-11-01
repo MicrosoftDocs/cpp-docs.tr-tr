@@ -1,27 +1,17 @@
 ---
-title: Matematik hatası M6202 | Microsoft Docs
-ms.custom: ''
+title: Matematik Hatası M6202
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - M6202
-dev_langs:
-- C++
 helpviewer_keywords:
 - M6202
 ms.assetid: 4d17045f-c6dc-4705-9512-e9af12c35fb4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 328336e61c299cf9b9816ddfce7212f1798eae37
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c216c4d01513868dd56f47c7d5ca7f8b734d1797
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058555"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538573"
 ---
 # <a name="math-error-m6202"></a>Matematik Hatası M6202
 

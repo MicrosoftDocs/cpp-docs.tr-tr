@@ -1,10 +1,6 @@
 ---
-title: CPrintDialogEx sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPrintDialogEx sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPrintDialogEx
 - AFXDLGS/CPrintDialogEx
@@ -24,8 +20,6 @@ f1_keywords:
 - AFXDLGS/CPrintDialogEx::PrintRange
 - AFXDLGS/CPrintDialogEx::PrintSelection
 - AFXDLGS/CPrintDialogEx::m_pdex
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPrintDialogEx [MFC], CPrintDialogEx
 - CPrintDialogEx [MFC], CreatePrinterDC
@@ -44,16 +38,12 @@ helpviewer_keywords:
 - CPrintDialogEx [MFC], PrintSelection
 - CPrintDialogEx [MFC], m_pdex
 ms.assetid: 1d506703-ee1c-44cc-b4ce-4e778fec26b8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 39cbd2c920f2a69f5ba322883a550d31e57f04c4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 79d696f89ca7474220559abbf5464f32b6e684c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387526"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543331"
 ---
 # <a name="cprintdialogex-class"></a>CPrintDialogEx sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: COleDropTarget sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleDropTarget sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleDropTarget
 - AFXOLE/COleDropTarget
@@ -17,8 +13,6 @@ f1_keywords:
 - AFXOLE/COleDropTarget::OnDropEx
 - AFXOLE/COleDropTarget::Register
 - AFXOLE/COleDropTarget::Revoke
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleDropTarget [MFC], COleDropTarget
 - COleDropTarget [MFC], OnDragEnter
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - COleDropTarget [MFC], Register
 - COleDropTarget [MFC], Revoke
 ms.assetid: a58c9a48-6a93-4357-b078-4594df258311
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7947f5fd9b958d6c317c198cc2e34498b89104f6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f4294bbbf9563b55f2047f297eac1a33ca55141f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415544"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502901"
 ---
 # <a name="coledroptarget-class"></a>COleDropTarget sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: Accelerator sınıfı | Microsoft Docs
-ms.custom: ''
+title: accelerator Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - AMPRT/accelerator
 - AMPRT/Concurrency::accelerator::accelerator
@@ -41,21 +37,15 @@ f1_keywords:
 - AMPRT/Concurrency::accelerator::supports_double_precision
 - AMPRT/Concurrency::accelerator::supports_limited_double_precision
 - AMPRT/Concurrency::accelerator::version
-dev_langs:
-- C++
 helpviewer_keywords:
 - accelerator class
 ms.assetid: 37eed593-cf87-4611-9cdc-e98df6c2377a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a154d266ead19cfef00f30a5327c5b18809a4111
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 5cf3cbb0cbff10deb029e81945f63921495bd0de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163172"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522284"
 ---
 # <a name="accelerator-class"></a>accelerator Sınıfı
 

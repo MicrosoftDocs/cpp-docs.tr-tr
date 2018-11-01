@@ -1,31 +1,21 @@
 ---
-title: CTreeCtrl ile CTreeView | Microsoft Docs
-ms.custom: ''
+title: CTreeCtrl ile CTreeView
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CTreeCtrl
 - CTreeView
-dev_langs:
-- C++
 helpviewer_keywords:
 - tree view controls
 - CTreeCtrl class [MFC], vs. CTreeView class [MFC]
 - CTreeView class [MFC], vs. CTreeCtrl class [MFC]
 - tree controls [MFC], and tree view
 ms.assetid: bba5af25-103f-4b53-84d3-071bc9bd6494
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e8acaecbdfb99b8ae0b27023145a0ef6aee1f219
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 97997a57a02ee258a50d405f7f61ed9994ccf734
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399158"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540419"
 ---
 # <a name="ctreectrl-vs-ctreeview"></a>CTreeCtrl ile CTreeView
 

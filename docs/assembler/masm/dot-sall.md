@@ -1,27 +1,17 @@
 ---
-title: . SALL | Microsoft Docs
-ms.custom: ''
+title: .SALL
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .SALL
-dev_langs:
-- C++
 helpviewer_keywords:
 - .SALL directive
 ms.assetid: 2791e746-96aa-4ed5-ae69-abd072378f86
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e0689dbc58460ec1a48d46d7ad86aa034d0bce22
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 9384f33c6c5c77d8b9103ee5eda44d3dadf3644a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43683165"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551898"
 ---
 # <a name="sall"></a>.SALL
 

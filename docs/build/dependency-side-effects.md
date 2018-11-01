@@ -1,26 +1,16 @@
 ---
-title: Bağımlılık yan etkileri | Microsoft Docs
-ms.custom: ''
+title: Bağımlılık Yan Etkileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - dependencies, side effects
 - NMAKE program, dependents
 ms.assetid: d4e8db25-fdc0-4d73-81ec-1538f2e1b3e8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9a70df679434b187bc2eee4eb4aad5881db0da1c
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 4ce32a55e89d78d45bc74ce3f7dd45ff2f99af31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716548"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530058"
 ---
 # <a name="dependency-side-effects"></a>Bağımlılık Yan Etkileri
 

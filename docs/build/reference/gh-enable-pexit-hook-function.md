@@ -1,30 +1,20 @@
 ---
-title: -GH (_pexit kanca işlevini etkinleştir) | Microsoft Docs
-ms.custom: ''
+title: /GH (_pexit Kanca İşlevini Etkinleştir)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _pexit
-dev_langs:
-- C++
 helpviewer_keywords:
 - /Gh compiler option [C++]
 - Gh compiler option [C++]
 - _pexit function
 - -Gh compiler option [C++]
 ms.assetid: 93181453-2676-42e5-bf63-3b19e07299b6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e9b8ee4c80310c4d94ed432d48ee9702c41f80bf
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 9be8573f5f9c344d2675bd7c9fc7d8beb3c8cffd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161795"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50527653"
 ---
 # <a name="gh-enable-pexit-hook-function"></a>/GH (_pexit Kanca İşlevini Etkinleştir)
 

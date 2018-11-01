@@ -1,10 +1,6 @@
 ---
-title: CMonthCalCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMonthCalCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMonthCalCtrl
 - AFXDTCTL/CMonthCalCtrl
@@ -50,8 +46,6 @@ f1_keywords:
 - AFXDTCTL/CMonthCalCtrl::SetYearView
 - AFXDTCTL/CMonthCalCtrl::SizeMinReq
 - AFXDTCTL/CMonthCalCtrl::SizeRectToMin
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMonthCalCtrl [MFC], CMonthCalCtrl
 - CMonthCalCtrl [MFC], Create
@@ -96,16 +90,12 @@ helpviewer_keywords:
 - CMonthCalCtrl [MFC], SizeMinReq
 - CMonthCalCtrl [MFC], SizeRectToMin
 ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 537cbe3f1ccf563114f5a32f61cafe39e8006746
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 26a0feadfd6603f74ce222e4850f0da9cf71e7d1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078147"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509598"
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl sınıfı
 

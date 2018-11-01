@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2912 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2912
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2912
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2912
 ms.assetid: bd55cecd-ab1a-4636-ab8a-a00393fe7b3d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1eb3a1aef43033c57f50cadda79bae3035aea978
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b7f87ae2df5350fcfb2b7a662f517d8d7bd51ef8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091926"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540081"
 ---
 # <a name="compiler-error-c2912"></a>Derleyici Hatası C2912
 

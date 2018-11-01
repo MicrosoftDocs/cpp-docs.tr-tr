@@ -1,10 +1,6 @@
 ---
-title: ispunct, iswpunct, _ispunct_l, _iswpunct_l | Microsoft Docs
-ms.custom: ''
+title: ispunct, iswpunct, _ispunct_l, _iswpunct_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - ispunct
 - _iswpunct_l
@@ -27,8 +23,6 @@ f1_keywords:
 - iswpunct
 - _istpunct
 - ispunct
-dev_langs:
-- C++
 helpviewer_keywords:
 - _istpunct function
 - _ispunct_l function
@@ -39,20 +33,16 @@ helpviewer_keywords:
 - _iswpunct_l function
 - iswpunct_l function
 ms.assetid: 94403240-85c8-40a4-9c2b-e3e95c729c76
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9509270906de3f0a9c7a20fd5f126ecffcafcff0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 209f94bb8f9d3338f62b719d4d4b94b152ed5ab7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402676"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496401"
 ---
 # <a name="ispunct-iswpunct-ispunctl-iswpunctl"></a>ispunct, iswpunct, _ispunct_l, _iswpunct_l
 
-Tamsayı bir noktalama karakteri temsil edip etmediğini belirler.
+Bir tamsayı Noktalama karakterini temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,18 +66,18 @@ int _iswpunct_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test etmek için bir tamsayı.
+Test edilecek tamsayı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamları döndürür sıfır olmayan IF her *c* bir noktalama karakteri belirli bir gösterimidir. **ispunct** bir boşluk karakteri veya kendisi için bir karakter değil herhangi bir yazdırılabilir karakter için sıfır olmayan bir değer döndürür **isalnum** sıfır olmayan bir değer değil. **iswpunct** alanı geniş karakter ne olduğu için geniş karakter olan herhangi bir yazdırılabilir geniş karakter için sıfır olmayan bir değer döndürür **iswalnum** sıfır olmayan bir değer değil. Bu yordamlar her 0 döndürür *c* test durumu uygun değil.
+Yordamların her biri bu döndürür sıfır olmayan *c* bir noktalama karakteri belirli bir gösterimidir. **ispunct** bir boşluk karakteri veya bir karakter değil herhangi bir yazdırılabilir karakter için sıfır olmayan bir değer döndürür **isalnum** sıfır değil. **iswpunct** ne boşluk geniş karakteri, ne de geniş bir karakter yazdırılabilir geniş karakter için sıfır olmayan bir değer döndürür **iswalnum** sıfır değil. Bu yordamların her biri 0 döndürür *c* test koşulu karşılamayan.
 
-İçin test koşul sonucunu **ispunct** işlevi bağımlı **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin olmayan sürümleri **_l** tüm yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; olan sürümleri **_l** kullandıkları dışında sonek aynı Bunun yerine geçirilen yerel ayar. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+İçin test durumunun sonucu **ispunct** işlevi bağlıdır **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Sahip olmayan bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı için herhangi bir yerel ayara bağımlı davranış; sahip sürümler **_l** sonekine kullanmaları dışında Bunun yerine iletilen yerel ayar. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Davranışını **ispunct** ve **_ispunct_l** tanımsız ise *c* EOF değil veya 0'dan 0xFF (bunlar dahil) aralığında. CRT hata ayıklama Kitaplığı kullanıldığında ve *c* bu değerleri işlevleri raise onayı ifade değil.
+Davranışını **ispunct** ve **_ispunct_l** tanımsızdır *c* EOF değilse veya 0-0xFF aralığındaysa aralığında. Bir hata ayıklama CRT Kitaplığı kullanıldığında ve *c* değil, bu değerleri işlevleri raise onaylama biridir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -104,7 +94,7 @@ Davranışını **ispunct** ve **_ispunct_l** tanımsız ise *c* EOF değil veya
 |**_ispunct_l**|\<CType.h >|
 |**_iswpunct_l**|\<CType.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

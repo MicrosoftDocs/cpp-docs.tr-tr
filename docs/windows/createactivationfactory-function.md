@@ -1,28 +1,18 @@
 ---
-title: CreateActivationFactory işlevi | Microsoft Docs
-ms.custom: ''
+title: CreateActivationFactory İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::Details::CreateActivationFactory
-dev_langs:
-- C++
 helpviewer_keywords:
 - CreateActivationFactory function
 ms.assetid: a1a53e04-6757-4faf-a4c8-ecf06e43b959
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: aed52e5ba209a826130b1a85aa866fe024174818
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dc8bfebffcb8970876e38e8424cab5e780a13341
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424644"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532424"
 ---
 # <a name="createactivationfactory-function"></a>CreateActivationFactory İşlevi
 

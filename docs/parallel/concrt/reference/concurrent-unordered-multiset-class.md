@@ -1,10 +1,6 @@
 ---
-title: concurrent_unordered_multiset sınıfı | Microsoft Docs
-ms.custom: ''
+title: concurrent_unordered_multiset Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - concurrent_unordered_multiset
 - CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset
@@ -14,21 +10,15 @@ f1_keywords:
 - CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::key_eq
 - CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::swap
 - CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::unsafe_erase
-dev_langs:
-- C++
 helpviewer_keywords:
 - concurrent_unordered_multiset class
 ms.assetid: 219d7d67-1ff0-45f4-9400-e9cc272991a4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3283707f53da37acc98a9d1645b8bb10f2114f77
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 8b03245790bf011941cabcb18600bbb1e69c37d2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163367"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543942"
 ---
 # <a name="concurrentunorderedmultiset-class"></a>concurrent_unordered_multiset Sınıfı
 

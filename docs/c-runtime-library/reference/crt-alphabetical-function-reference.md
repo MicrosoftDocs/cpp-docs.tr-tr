@@ -1,29 +1,19 @@
 ---
-title: UCRT alfabetik işlev başvurusu | Microsoft Docs
-ms.custom: ''
+title: UCRT alfabetik işlev başvurusu
 ms.date: 04/11/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - vc.tables.runtime
-dev_langs:
-- C++
 ms.assetid: c2169b0e-cd86-489a-a2fa-2ee15c03b5c2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7e5b6d73219bed94268ee3a9b8854d28d1fc6c06
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c8c16b0f3eeb21bc9ad665bffee9fac15607f21f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405464"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520477"
 ---
 # <a name="ucrt-alphabetical-function-reference"></a>UCRT alfabetik işlev başvurusu
 
-(UCRT, genellikle yalnızca CRT) Evrensel C çalışma zamanı kitaplığı başvurusu belgeleri alfabetik olarak yordamı tarafından düzenlenir. İşlevselliğine bağlı CRT yordamı bulmak için bkz: [Evrensel C çalışma zamanı yordamları kategoriye göre](../../c-runtime-library/run-time-routines-by-category.md).
+Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvuru belgeleri tarafından yordamı alfabetik olarak yerleştirilmiştir. İşlevselliğine dayalı bir CRT yordamı bulmak için bkz: [kategoriye göre Evrensel C çalışma zamanı yordamları](../../c-runtime-library/run-time-routines-by-category.md).
 
 ## <a name="a"></a>BİR
 
@@ -1181,7 +1171,7 @@ ms.locfileid: "32405464"
 
 [isatty](posix-isatty.md)
 
-[EBOŞSA](isblank-iswblank-isblank-l-iswblank-l.md)
+[ısblank](isblank-iswblank-isblank-l-iswblank-l.md)
 
 [_isblank_l](isblank-iswblank-isblank-l-iswblank-l.md)
 
@@ -1465,7 +1455,7 @@ ms.locfileid: "32405464"
 
 ## <a name="l"></a>L
 
-[Labs](abs-labs-llabs-abs64.md)
+[Laboratuvarları](abs-labs-llabs-abs64.md)
 
 [ldexp](ldexp.md)
 
@@ -1501,7 +1491,7 @@ ms.locfileid: "32405464"
 
 [localeconv](localeconv.md)
 
-[damgasını](localtime-localtime32-localtime64.md)
+[localtime](localtime-localtime32-localtime64.md)
 
 [localtime_s](localtime-s-localtime32-s-localtime64-s.md)
 
@@ -1999,7 +1989,7 @@ ms.locfileid: "32405464"
 
 [open](open.md)
 
-[_kurulum Aç](open-wopen.md)
+[_aç](open-wopen.md)
 
 [_open_osfhandle](open-osfhandle.md)
 
@@ -2123,7 +2113,7 @@ ms.locfileid: "32405464"
 
 [remquol](remquo-remquof-remquol.md)
 
-[Yeniden Adlandır](rename-wrename.md)
+[Yeniden adlandırma](rename-wrename.md)
 
 [_resetstkoflw](resetstkoflw.md)
 
@@ -2151,7 +2141,7 @@ ms.locfileid: "32405464"
 
 [_rotr64](rotl-rotl64-rotr-rotr64.md)
 
-[yuvarlamak](round-roundf-roundl.md)
+[Yuvarlak](round-roundf-roundl.md)
 
 [roundf](round-roundf-roundl.md)
 
@@ -2681,7 +2671,7 @@ ms.locfileid: "32405464"
 
 [_tempnam_dbg](tempnam-dbg-wtempnam-dbg.md)
 
-[Sonlandırma](terminate-crt.md)
+[sonlandırma](terminate-crt.md)
 
 [tgamma](tgamma-tgammaf-tgammal.md)
 
@@ -2689,7 +2679,7 @@ ms.locfileid: "32405464"
 
 [tgammal](tgamma-tgammaf-tgammal.md)
 
-[Saat](time-time32-time64.md)
+[saat](time-time32-time64.md)
 
 [_time32](time-time32-time64.md)
 

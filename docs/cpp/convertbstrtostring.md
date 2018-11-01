@@ -1,27 +1,17 @@
 ---
-title: ConvertBSTRToString | Microsoft Docs
-ms.custom: ''
+title: ConvertBSTRToString
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - ConvertBSTRToString
-dev_langs:
-- C++
 helpviewer_keywords:
 - ConvertBSTRToString function
 ms.assetid: ab6ce555-3d75-4e9c-9cb8-ada6d8ce43b1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c46ab493c6f3c80d9bee4b4b0c04d9569c12e23c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: df123dc218aa770a67536bf1bad7d8bafcf4c318
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075890"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522427"
 ---
 # <a name="convertbstrtostring"></a>ConvertBSTRToString
 

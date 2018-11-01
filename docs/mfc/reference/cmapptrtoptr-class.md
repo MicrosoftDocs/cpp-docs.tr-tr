@@ -1,10 +1,6 @@
 ---
-title: CMapPtrToPtr sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMapPtrToPtr sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMapPtrToPtr
 - AFXCOLL/CMapPtrToPtr
@@ -22,8 +18,6 @@ f1_keywords:
 - AFXCOLL/CMapStringToOb::RemoveAll
 - AFXCOLL/CMapStringToOb::RemoveKey
 - AFXCOLL/CMapStringToOb::SetAt
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMapStringToOb [MFC], CMapStringToOb
 - CMapStringToOb [MFC], GetCount
@@ -40,16 +34,12 @@ helpviewer_keywords:
 - CMapStringToOb [MFC], RemoveKey
 - CMapStringToOb [MFC], SetAt
 ms.assetid: 23cbbaec-9d64-48f2-92ae-5e24fa64b926
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4f3ba3d6d8a15b3ebf4262377c47df22960c1725
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ec635ea00c9659d43d148c55e02a70a7c759279a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067367"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540835"
 ---
 # <a name="cmapptrtoptr-class"></a>CMapPtrToPtr sınıfı
 

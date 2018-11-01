@@ -1,27 +1,17 @@
 ---
-title: IRP | Microsoft Docs
-ms.custom: ''
+title: IRP
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - IRP
-dev_langs:
-- C++
 helpviewer_keywords:
 - IRP directive
 ms.assetid: 055f746d-f422-43d1-b73d-d38979c593cb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1026ccb877325c710fe43ae684300799de18ac00
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 7cf54c6a6b0d145a7d7f999202559704b586e502
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43687044"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50510064"
 ---
 # <a name="irp"></a>IRP
 

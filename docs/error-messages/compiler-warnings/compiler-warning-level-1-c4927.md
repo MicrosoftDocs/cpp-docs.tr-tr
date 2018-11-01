@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4927 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4927
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4927
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4927
 ms.assetid: 7009e740-a2ef-4130-96ba-482e092f717a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2144a1315870f0202962652fd0056e42e5562665
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 59a39e4e695fdd161135cd70a74e1f3f6518e361
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031196"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542222"
 ---
 # <a name="compiler-warning-level-1-c4927"></a>Derleyici Uyarısı (düzey 1) C4927
 

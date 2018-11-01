@@ -1,28 +1,17 @@
 ---
-title: db_column (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: db_column (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.db_column
-dev_langs:
-- C++
 helpviewer_keywords:
 - db_column attribute
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: a06353780b78339c39ebb20e9bc2f770694f47c2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c9c060bda4198c199ea86f0e2a33adc3275b353b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073260"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555057"
 ---
 # <a name="dbcolumn"></a>db_column
 

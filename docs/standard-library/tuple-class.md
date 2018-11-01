@@ -1,28 +1,18 @@
 ---
-title: Tuple sınıfı | Microsoft Docs
-ms.custom: ''
+title: tuple Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - tuple/std::tuple
 - tuple/std::tuple::operator=
-dev_langs:
-- C++
 helpviewer_keywords:
 - tuple class
 ms.assetid: c38749be-ae4d-41f3-98ea-6aa3250de9a3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f37a6bdbf35075a9a1a8cea8150e6f8ed85232a5
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: f95b081646cde127d952568f49287480477544be
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234560"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544514"
 ---
 # <a name="tuple-class"></a>tuple Sınıfı
 

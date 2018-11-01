@@ -1,28 +1,18 @@
 ---
-title: Açıklamalara bir örnek | Microsoft Docs
-ms.custom: ''
+title: Açıklamalara Bir Örnek
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC source files, comment example
 - code comments, MFC
 - comments, MFC
 - examples [MFC], code comments
 ms.assetid: eb8ddea2-74de-4d5c-93d6-596f7c5e58a7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 681c927a7e0e7960cb483e21ed2ff1e2e4b3c5f5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d7ee208ef143ef0022b0ea0aac286847403ddeeb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442350"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50529772"
 ---
 # <a name="an-example-of-the-comments"></a>Açıklamalara Bir Örnek
 

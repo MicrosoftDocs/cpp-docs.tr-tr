@@ -1,10 +1,6 @@
 ---
-title: CWinApp sınıfı | Microsoft Docs
-ms.custom: ''
+title: CWinApp sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CWinApp
 - AFXWIN/CWinApp
@@ -101,8 +97,6 @@ f1_keywords:
 - AFXWIN/CWinApp::m_dwRestartManagerSupportFlags
 - AFXWIN/CWinApp::m_nAutosaveInterval
 - AFXWIN/CWinApp::m_pDataRecoveryHandler
-dev_langs:
-- C++
 helpviewer_keywords:
 - CWinApp [MFC], CWinApp
 - CWinApp [MFC], AddDocTemplate
@@ -198,16 +192,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a6c7d961119d4fe25652601ebe5e423be898f49e
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: c25d79dc1fb201d10e090f512a5a96f649efbcfe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890744"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542369"
 ---
 # <a name="cwinapp-class"></a>CWinApp sınıfı
 

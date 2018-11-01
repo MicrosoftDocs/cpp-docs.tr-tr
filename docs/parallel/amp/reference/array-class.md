@@ -1,10 +1,6 @@
 ---
-title: array sınıfı | Microsoft Docs
-ms.custom: ''
+title: array Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - array
 - AMP/array
@@ -23,21 +19,15 @@ f1_keywords:
 - AMP/Concurrency::array::associated_accelerator_view
 - AMP/Concurrency::array::cpu_access_type
 - AMP/Concurrency::array::extent
-dev_langs:
-- C++
 helpviewer_keywords:
 - array class
 ms.assetid: 0832b6c1-40f0-421d-9104-6b1baa0c63a7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9023f042cd2c39966adb6a5fb4c71b5e24c3e9d1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5b123eb8d21c7273c41a713de5500df164511dce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068053"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537208"
 ---
 # <a name="array-class"></a>array Sınıfı
 

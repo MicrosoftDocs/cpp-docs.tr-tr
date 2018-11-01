@@ -1,10 +1,6 @@
 ---
-title: CRichEditCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRichEditCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CRichEditCtrl
 - AFXCMN/CRichEditCtrl
@@ -81,8 +77,6 @@ f1_keywords:
 - AFXCMN/CRichEditCtrl::StreamIn
 - AFXCMN/CRichEditCtrl::StreamOut
 - AFXCMN/CRichEditCtrl::Undo
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRichEditCtrl [MFC], CRichEditCtrl
 - CRichEditCtrl [MFC], CanPaste
@@ -158,16 +152,12 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ccd409a99ccbcf80dc117d7c034d4b8a66b551ef
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e8575c2eb814bd7fb3cb307654b0e3622506c6c1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060474"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505423"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl sınıfı
 

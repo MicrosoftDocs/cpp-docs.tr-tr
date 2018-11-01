@@ -1,10 +1,6 @@
 ---
-title: Iviewobjectexımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Iviewobjectexımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IViewObjectExImpl
 - ATLCTL/ATL::IViewObjectExImpl
@@ -20,24 +16,18 @@ f1_keywords:
 - ATLCTL/ATL::IViewObjectExImpl::QueryHitRect
 - ATLCTL/ATL::IViewObjectExImpl::SetAdvise
 - ATLCTL/ATL::IViewObjectExImpl::Unfreeze
-dev_langs:
-- C++
 helpviewer_keywords:
 - ActiveX controls [C++], drawing
 - IViewObjectEx ATL implementation
 - advise sinks
 - IViewObjectExImpl class
 ms.assetid: ad6de760-1ee5-4883-b033-ae57beffc369
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0892c5c4751fc5d6955d73fe838778e475859597
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0333f7e0e0d5b91665978082f112df6d16105dd1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069210"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538521"
 ---
 # <a name="iviewobjecteximpl-class"></a>Iviewobjectexımpl sınıfı
 

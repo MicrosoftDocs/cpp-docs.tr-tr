@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2268 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2268
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2268
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2268
 ms.assetid: 0ed055c9-3c6f-4df2-a5b6-85cf0e01a249
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cd30821a4bb907cf3ac5040a1fd79f649de50e42
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cfdb22be92e0d80cddbaca74b12b7af60b2e302d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46046166"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545736"
 ---
 # <a name="compiler-error-c2268"></a>Derleyici Hatası C2268
 

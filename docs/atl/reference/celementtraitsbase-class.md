@@ -1,10 +1,6 @@
 ---
-title: CElementTraitsBase sınıfı | Microsoft Docs
-ms.custom: ''
+title: CElementTraitsBase sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CElementTraitsBase
 - ATLCOLL/ATL::CElementTraitsBase
@@ -12,21 +8,15 @@ f1_keywords:
 - ATLCOLL/ATL::CElementTraitsBase::OUTARGTYPE
 - ATLCOLL/ATL::CElementTraitsBase::CopyElements
 - ATLCOLL/ATL::CElementTraitsBase::RelocateElements
-dev_langs:
-- C++
 helpviewer_keywords:
 - CElementTraitsBase class
 ms.assetid: 75284caf-347e-4355-a7d8-efc708dd514a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1173633cd720ed6ee0e4aacdf75a8b305fdbfe4d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 769fa5abff223ad570847b8bf68378ce85df664e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46043371"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509024"
 ---
 # <a name="celementtraitsbase-class"></a>CElementTraitsBase sınıfı
 
