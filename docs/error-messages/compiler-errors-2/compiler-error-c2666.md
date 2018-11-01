@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2666 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2666
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2666
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2666
 ms.assetid: 78364d15-c6eb-439a-9088-e04a0176692b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 17c33f188dbf90e0e7c19ad55e0d14599541ec0d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4a1d46f3b000b5054564b05ca2c3c94a9e7b6398
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46072738"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50479299"
 ---
 # <a name="compiler-error-c2666"></a>Derleyici Hatası C2666
 

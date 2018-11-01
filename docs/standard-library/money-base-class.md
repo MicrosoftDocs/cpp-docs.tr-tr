@@ -1,27 +1,17 @@
 ---
-title: money_base sınıfı | Microsoft Docs
-ms.custom: ''
+title: money_base Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xlocmon/std::money_base
-dev_langs:
-- C++
 helpviewer_keywords:
 - money_base class
 ms.assetid: 1a303c15-9272-4f26-ae16-dcf43a0fd38a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3195d2c988abcfb2d62acb4ece957c8c5156bbd7
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: b0c77b523dbe31bc5b07ae3d736441880fe04546
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965694"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610459"
 ---
 # <a name="moneybase-class"></a>money_base Sınıfı
 

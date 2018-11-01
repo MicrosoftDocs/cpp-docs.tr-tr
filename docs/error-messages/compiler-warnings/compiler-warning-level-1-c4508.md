@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4508 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4508
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4508
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4508
 ms.assetid: c05f113b-b789-4df0-a4ef-78bce4767021
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e5abc1d81c3e94c02a63f73c84f3f5e5c7e9b0b0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c96db3d4bd1124c96b22363531b7739d0757b613
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038951"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624022"
 ---
 # <a name="compiler-warning-level-1-c4508"></a>Derleyici Uyarısı (düzey 1) C4508
 

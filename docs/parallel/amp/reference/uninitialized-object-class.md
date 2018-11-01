@@ -1,29 +1,19 @@
 ---
-title: uninitialized_object sınıfı | Microsoft Docs
-ms.custom: ''
+title: uninitialized_object Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - uninitialized_object
 - AMPRT/uninitialized_object
 - AMPRT/Concurrency::uninitialized_object
-dev_langs:
-- C++
 helpviewer_keywords:
 - uninitialized_object class
 ms.assetid: 6ae3c4e8-64a6-4511-a158-03be197b63af
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9fada1f3c4c9372e7a979868f60ac559ecc14a79
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5dc03964e8ddef0cd1aab785316eabd98c39e59e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416259"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544540"
 ---
 # <a name="uninitializedobject-class"></a>uninitialized_object Sınıfı
 

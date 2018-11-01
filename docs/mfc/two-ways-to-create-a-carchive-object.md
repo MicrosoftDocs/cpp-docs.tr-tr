@@ -1,14 +1,8 @@
 ---
-title: CArchive nesnesi oluşturmanın iki yolu | Microsoft Docs
-ms.custom: ''
+title: CArchive Nesnesi Oluşturmanın İki Yolu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CArchive
-dev_langs:
-- C++
 helpviewer_keywords:
 - CArchive class [MFC], closing CArchive objects
 - CArchive objects [MFC], closing
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - data storage [MFC], CArchive class
 - CArchive class [MFC], constructor
 ms.assetid: aefa28ce-b55c-40dc-9e42-5f038030985d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 630cdd1614aa19ec3a5a654d7dc4bfe7336ce027
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a97223602e9994647a8af16cc68de5394494c1ca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080591"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659933"
 ---
 # <a name="two-ways-to-create-a-carchive-object"></a>CArchive Nesnesi Oluşturmanın İki Yolu
 

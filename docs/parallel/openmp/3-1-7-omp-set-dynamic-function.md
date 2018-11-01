@@ -1,23 +1,13 @@
 ---
-title: 3.1.7 omp_set_dynamic işlevi | Microsoft Docs
-ms.custom: ''
+title: 3.1.7 omp_set_dynamic İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 1fba961b-b82c-4a1e-ab0f-e4be826e50ab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 807e5739c571f7aa8e9f723a0a48c8c46f1e6d09
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 641b2ecfdb19aec9387aa299d22a041f25b22929
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441570"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492943"
 ---
 # <a name="317-ompsetdynamic-function"></a>3.1.7 omp_set_dynamic İşlevi
 

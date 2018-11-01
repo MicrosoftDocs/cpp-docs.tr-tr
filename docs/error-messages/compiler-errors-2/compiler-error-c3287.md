@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3287 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3287
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3287
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3287
 ms.assetid: c1fa73d2-2c82-4136-a7da-0e75e3b420ad
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b7e91878b6c6809fb875380430496db6d6e0b065
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ab0b93aa1a74ea79515e24ef2b1e289cf0227dac
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067460"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538690"
 ---
 # <a name="compiler-error-c3287"></a>Derleyici Hatası C3287
 

@@ -1,12 +1,6 @@
 ---
-title: Toplama türlerini başlatma | Microsoft Docs
-ms.custom: ''
+title: Toplama Türlerini Başlatma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - aggregate types [C++]
 - union keyword [C], declarations
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - union keyword [C]
 - aggregates [C++], initializing
 ms.assetid: a8f8ed75-39db-4592-93b9-d3920d915810
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8a58338d980db5acd8f41c71e23c37c1700a0761
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ebc7f6185c8115df6e6b77a034307f8998b1c2ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055123"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530314"
 ---
 # <a name="initializing-aggregate-types"></a>Toplama Türlerini Başlatma
 

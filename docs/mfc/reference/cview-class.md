@@ -1,10 +1,6 @@
 ---
-title: CView sınıfı | Microsoft Docs
-ms.custom: ''
+title: CView sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CView
 - AFXWIN/CView
@@ -31,8 +27,6 @@ f1_keywords:
 - AFXWIN/CView::OnPreparePrinting
 - AFXWIN/CView::OnPrint
 - AFXWIN/CView::OnUpdate
-dev_langs:
-- C++
 helpviewer_keywords:
 - CView [MFC], CView
 - CView [MFC], DoPreparePrinting
@@ -58,16 +52,12 @@ helpviewer_keywords:
 - CView [MFC], OnPrint
 - CView [MFC], OnUpdate
 ms.assetid: 9cff3c56-7564-416b-b9a4-71a9254ed755
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e76dc8ca4a61839b893b4328bdb9d606424def91
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f325423c940df46940d7074c599eb8e502e90586
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062242"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50669085"
 ---
 # <a name="cview-class"></a>CView sınıfı
 

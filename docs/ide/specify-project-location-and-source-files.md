@@ -1,25 +1,15 @@
 ---
-title: Yeni Proje varolan kod - kaynak dosyaları (Visual C++) oluştur | Microsoft Docs
-ms.custom: ''
+title: Yeni Proje varolan koddan - kaynak dosyaları (Visual C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.appwiz.importwiz.location
-dev_langs:
-- C++
 ms.assetid: 29ddffb9-5918-4d72-8c7a-a365f9de96dd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e2d33f4dbe852b7f9a64f59b44af9fbb4f8eb12c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e5d78b8fc6eddee7c425013c91506962853de375
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403922"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580836"
 ---
 # <a name="specify-project-location-and-source-files-create-new-project-from-existing-code-files-wizard"></a>Proje Konumunu ve Kaynak Dosyaları Belirtme, Varolan Kod Dosyalarından Yeni Proje Oluşturma Sihirbazı
 

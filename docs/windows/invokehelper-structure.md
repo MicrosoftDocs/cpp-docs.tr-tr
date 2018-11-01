@@ -1,34 +1,24 @@
 ---
-title: Invokehelper yapısı | Microsoft Docs
-ms.custom: ''
+title: InvokeHelper Yapısı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - event/Microsoft::WRL::Details::InvokeHelper
 - event/Microsoft::WRL::Details::InvokeHelper::callback_
 - event/Microsoft::WRL::Details::InvokeHelper::Invoke
 - event/Microsoft::WRL::Details::InvokeHelper::InvokeHelper
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Details::InvokeHelper structure
 - Microsoft::WRL::Details::callback_ data member
 - Microsoft::WRL::Details::Invoke method
 - Microsoft::WRL::Details::InvokeHelper, constructor
 ms.assetid: 555ad2bc-4dd6-4e65-a2e2-1242c395f0e5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 24abb55c0754b9dc5b5300ca6cd50079f003717a
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 3fcba210d4018d22487d234b437acfee3634cec6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808374"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487054"
 ---
 # <a name="invokehelper-structure"></a>InvokeHelper Yapısı
 

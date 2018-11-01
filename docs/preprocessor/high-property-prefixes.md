@@ -1,27 +1,17 @@
 ---
-title: high_property_prefixes | Microsoft Docs
-ms.custom: ''
+title: high_property_prefixes
 ms.date: 10/18/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - high_property_prefixes
-dev_langs:
-- C++
 helpviewer_keywords:
 - high_property_prefixes attribute
 ms.assetid: 91c6cc2b-19b6-4aba-8831-d9e5cccb58b5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e3932a7632b12120e722c5f375f4387e08f1853b
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 130d19f275612e153955ae49f299fe2f36d098bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49809063"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579822"
 ---
 # <a name="highpropertyprefixes"></a>high_property_prefixes
 

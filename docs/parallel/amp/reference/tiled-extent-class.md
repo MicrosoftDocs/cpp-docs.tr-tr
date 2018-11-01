@@ -1,10 +1,6 @@
 ---
-title: tiled_extent sınıfı | Microsoft Docs
-ms.custom: ''
+title: tiled_extent Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - tiled_extent
 - AMP/tiled_extent
@@ -16,19 +12,13 @@ f1_keywords:
 - AMP/Concurrency::tiled_extent::tile_dim1
 - AMP/Concurrency::tiled_extent::tile_dim2
 - AMP/Concurrency::tiled_extent::tile_extent
-dev_langs:
-- C++
 ms.assetid: 671ecaf8-c7b0-4ac8-bbdc-e30bd92da7c0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ffda10923d3be1baf7c9f6ed898480ee1c1367c3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 77d16eefa61fb30614cb6527792014cc8655abe0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067702"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476901"
 ---
 # <a name="tiledextent-class"></a>tiled_extent Sınıfı
 

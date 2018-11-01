@@ -1,29 +1,19 @@
 ---
-title: özellik (C + +/ CLI ve C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: özellik (C + +/ CLI ve C + +/ CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - property_cpp
 - property
-dev_langs:
-- C++
 helpviewer_keywords:
 - property keyword [C++]
 ms.assetid: cc79d2b2-f013-4d81-8252-eece97a18704
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 24028ac403092404ddf7fd279864273fcf6016ab
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: df456ffb906eb6e0c68f3670692f292a8c20c407
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075872"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526587"
 ---
 # <a name="property--ccli-and-ccx"></a>özellik (C + +/ CLI ve C + +/ CX)
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3718 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3718
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3718
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3718
 ms.assetid: 346b5205-c44d-49d3-b66a-96417d3d6986
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bb5965ee0c6f19c31a459b14ea9ebcb83fe5f32d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 765791499370836f7c99ea7af69cb34bcf1e21fc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098413"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50479059"
 ---
 # <a name="compiler-error-c3718"></a>Derleyici Hatası C3718
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3855 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3855
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3855
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3855
 ms.assetid: ed90f8c0-4154-4243-b066-493913df5727
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ccedf71e5560d3907338d2b0372030c13aeeb0c0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 12ee1c6aa5f414a9cf3084831c956514593102c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081240"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50478136"
 ---
 # <a name="compiler-error-c3855"></a>Derleyici Hatası C3855
 

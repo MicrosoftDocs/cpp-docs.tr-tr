@@ -1,27 +1,17 @@
 ---
-title: runtime_error sınıfı | Microsoft Docs
-ms.custom: ''
+title: runtime_error Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - stdexcept/std::runtime_error
-dev_langs:
-- C++
 helpviewer_keywords:
 - runtime_error class
 ms.assetid: 4d0227bf-847b-45a2-a320-2351ebf98368
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1d21a6649e42e4f02f3655d89e230d6c739e64e4
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 8c5453ef7ced55535806570f458c5e08c0a64962
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316399"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50583904"
 ---
 # <a name="runtimeerror-class"></a>runtime_error Sınıfı
 

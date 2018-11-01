@@ -1,14 +1,8 @@
 ---
-title: MFC makroları ve genel öğeleri | Microsoft Docs
-ms.custom: ''
+title: MFC Makroları ve Genel Öğeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.macros
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, global functions and variables
 - MFC, macros
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - Afx naming convention
 - macros
 ms.assetid: add4e33f-0e62-4d27-be14-896cb8675d22
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4833c10772afd7cfd167171821e13a000a611f15
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2dfb2c1c5062f742b728ea651a292be84e33f6d1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083041"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566783"
 ---
 # <a name="mfc-macros-and-globals"></a>MFC Makroları ve Genel Öğeleri
 

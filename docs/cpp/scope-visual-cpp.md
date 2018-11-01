@@ -1,12 +1,6 @@
 ---
-title: Kapsam (C++) | Microsoft Docs
-ms.custom: ''
+title: Kapsam (C++)
 ms.date: 04/08/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - classes [C++], scope
 - scope [C++]
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - functions [C++], scope
 - scope, C++ names
 ms.assetid: 81fecbb0-338b-4325-8332-49f33e716352
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e3d6501e969b103146aa53311069e5fdd4d048e
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: f44b75be7b2b1459e3ee9d0472f9a5ef6dac9025
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204567"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506619"
 ---
 # <a name="scope-c"></a>Kapsam (C++)
 

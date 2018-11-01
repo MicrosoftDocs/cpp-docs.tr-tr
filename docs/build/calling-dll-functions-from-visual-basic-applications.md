@@ -1,12 +1,6 @@
 ---
-title: Visual Basic uygulamalarından DLL işlevleri çağırma | Microsoft Docs
-ms.custom: ''
+title: Visual Basic Uygulamasından DLL İşlevi Çağırma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - functions [C++], calling DLL functions from Visual Basic
 - DLL functions [C++]
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - __stdcall keyword [C++]
 - DLL functions [C++], calling
 ms.assetid: 282f7fbf-a0f2-4b9f-b277-1982710be56c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 47504b7a471dc38f30e4ceb59b5feeffcc53db6d
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 504bb2fbb6dcdf624f7e6b380cd895e20580824b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161846"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50521222"
 ---
 # <a name="calling-dll-functions-from-visual-basic-applications"></a>Visual Basic Uygulamasından DLL İşlevi Çağırma
 

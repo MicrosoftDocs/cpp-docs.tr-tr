@@ -1,23 +1,13 @@
 ---
-title: A.9 single yönergelerini kullanma | Microsoft Docs
-ms.custom: ''
+title: A.9   single Yönergelerini Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 0c0f9495-5794-4db9-883b-a12e3a9f1328
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5a3a201450d54355aa96f0ea712ad9fa0f70f63f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 51a2a3438ae5abc9d24c160a986c8ea04b77c4bf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448096"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501315"
 ---
 # <a name="a9---using-single-directives"></a>A.9   single Yönergelerini Kullanma
 

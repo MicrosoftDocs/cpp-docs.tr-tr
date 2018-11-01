@@ -1,10 +1,6 @@
 ---
-title: CObject sınıfı | Microsoft Docs
-ms.custom: ''
+title: CObject sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CObject
 - AFX/CObject
@@ -15,8 +11,6 @@ f1_keywords:
 - AFX/CObject::IsKindOf
 - AFX/CObject::IsSerializable
 - AFX/CObject::Serialize
-dev_langs:
-- C++
 helpviewer_keywords:
 - CObject [MFC], CObject
 - CObject [MFC], AssertValid
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - CObject [MFC], IsSerializable
 - CObject [MFC], Serialize
 ms.assetid: 95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d16e3ca84b97aa1c6312ae9c634468b11ca86b9c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: eb0580f6fef39df29d66e15cfd051a0460cb8d56
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068188"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584021"
 ---
 # <a name="cobject-class"></a>CObject sınıfı
 

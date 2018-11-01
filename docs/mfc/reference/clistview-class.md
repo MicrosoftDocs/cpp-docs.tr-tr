@@ -1,33 +1,23 @@
 ---
-title: CListView sınıfı | Microsoft Docs
-ms.custom: ''
+title: CListView sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CListView
 - AFXCVIEW/CListView
 - AFXCVIEW/CListView::CListView
 - AFXCVIEW/CListView::GetListCtrl
 - AFXCVIEW/CListView::RemoveImageList
-dev_langs:
-- C++
 helpviewer_keywords:
 - CListView [MFC], CListView
 - CListView [MFC], GetListCtrl
 - CListView [MFC], RemoveImageList
 ms.assetid: 7626bdb2-a1b8-4eab-b631-6743710a8432
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5fbb9561111a75011f934aeb0ce972829132cb87
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e7d542d253d0d4aa8d661effb7dd7147ea3c121b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423409"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592653"
 ---
 # <a name="clistview-class"></a>CListView sınıfı
 

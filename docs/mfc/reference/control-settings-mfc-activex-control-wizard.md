@@ -1,27 +1,17 @@
 ---
-title: Denetim ayarları, MFC ActiveX Denetim Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: Denetim Ayarları, MFC ActiveX Denetim Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.appwiz.mfc.ctl.settings
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, control settings
 ms.assetid: 2ccaa4fc-0d52-413e-afa3-ecd474c3f6f0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4533406b186142dd69f5ea7ad94cfb8a3c89d987
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3eedf24fa4b0bb527b374dbc9f538408f20de953
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423085"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548245"
 ---
 # <a name="control-settings-mfc-activex-control-wizard"></a>Denetim Ayarları, MFC ActiveX Denetim Sihirbazı
 

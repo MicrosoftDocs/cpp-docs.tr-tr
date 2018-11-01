@@ -1,27 +1,17 @@
 ---
-title: PUSHCONTEXT | Microsoft Docs
-ms.custom: ''
+title: PUSHCONTEXT
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - PUSHCONTEXT
-dev_langs:
-- C++
 helpviewer_keywords:
 - PUSHCONTEXT directive
 ms.assetid: 18e528ee-df6c-4ce6-8823-b35b40f757fd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 16a76f80f72ab2d7f1ec0cfc86c102249330bf16
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: b657b6519fd9e4cbd367eaefc984fd959618c57d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677434"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590300"
 ---
 # <a name="pushcontext"></a>PUSHCONTEXT
 

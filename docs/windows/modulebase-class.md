@@ -1,9 +1,6 @@
 ---
-title: ModuleBase sınıfı | Microsoft Docs
-ms.custom: ''
+title: ModuleBase Sınıfı
 ms.date: 09/21/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::ModuleBase
@@ -11,8 +8,6 @@ f1_keywords:
 - implements/Microsoft::WRL::Details::ModuleBase::IncrementObjectCount
 - implements/Microsoft::WRL::Details::ModuleBase::ModuleBase
 - implements/Microsoft::WRL::Details::ModuleBase::~ModuleBase
-dev_langs:
-- C++
 helpviewer_keywords:
 - ModuleBase class
 - Microsoft::WRL::Details::ModuleBase::DecrementObjectCount method
@@ -20,17 +15,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::ModuleBase::ModuleBase, constructor
 - Microsoft::WRL::Details::ModuleBase::~ModuleBase, destructor
 ms.assetid: edce7591-6893-46f7-94a7-382827775548
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: a87b5d617663e87e8c69596e6b1eedca61996b80
-ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
+ms.openlocfilehash: 4a65b7335626cc36a4eecbe61465778889a9e7e8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169560"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502134"
 ---
 # <a name="modulebase-class"></a>ModuleBase Sınıfı
 

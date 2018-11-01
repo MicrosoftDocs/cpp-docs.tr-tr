@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3240 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3240
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3240
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3240
 ms.assetid: 1a8dc213-b80c-47ae-ada0-e9554b635d1e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9898d67bbe92e3ba93ec08bdbb68f11d81483c69
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a8334b4f95ccadcce73a79d787669cba9f911199
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46023910"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504620"
 ---
 # <a name="compiler-error-c3240"></a>Derleyici Hatası C3240
 

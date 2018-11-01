@@ -1,19 +1,13 @@
 ---
-title: ATL HTTP yardımcı işlevleri | Microsoft Docs
-ms.custom: ''
+title: ATL HTTP yardımcı işlevleri
 ms.date: 11/04/2016
-ms.topic: reference
 ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ddb5d764fd79f72a37027d9adb1c9b0c6e599f10
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 43813d91daf572ad6094a5a9fe070234e5086593
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069852"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481724"
 ---
 # <a name="atl-http-utility-functions"></a>ATL HTTP yardımcı işlevleri
 

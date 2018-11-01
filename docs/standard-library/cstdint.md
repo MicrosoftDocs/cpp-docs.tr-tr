@@ -1,29 +1,19 @@
 ---
-title: '&lt;cstdint&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;cstdint&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <cstdint>
-dev_langs:
-- C++
 ms.assetid: 87afafb2-c630-4383-a2fc-a6b47c639e21
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6bc849aadab49b5fa164f8f91699071fdc84776f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2cc380c4cfe1061a3b4abf7b9d766282425555b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844490"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579367"
 ---
 # <a name="ltcstdintgt"></a>&lt;cstdint&gt;
 
-Standart C Kitaplığı üstbilgi içeren \<stdint.h > ve ilişkili adlarıyla ekler `std` ad alanı.
+Standart C Kitaplığı üstbilgisi içerir \<stdint.h > ve ilişkili adlar ekler `std` ad alanı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,7 +23,7 @@ Standart C Kitaplığı üstbilgi içeren \<stdint.h > ve ilişkili adlarıyla e
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üst dahil olmak üzere sağlar standart C Kitaplığı üstbilgisinde dış bağlantı kullanılarak bildirilen adları bildirilir `std` ad alanı.
+Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

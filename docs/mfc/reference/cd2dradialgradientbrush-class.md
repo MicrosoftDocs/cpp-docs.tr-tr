@@ -1,10 +1,6 @@
 ---
-title: CD2DRadialGradientBrush sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DRadialGradientBrush sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DRadialGradientBrush
 - AFXRENDERTARGET/CD2DRadialGradientBrush
@@ -24,8 +20,6 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DRadialGradientBrush::SetRadiusY
 - AFXRENDERTARGET/CD2DRadialGradientBrush::m_pRadialGradientBrush
 - AFXRENDERTARGET/CD2DRadialGradientBrush::m_RadialGradientBrushProperties
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DRadialGradientBrush [MFC], CD2DRadialGradientBrush
 - CD2DRadialGradientBrush [MFC], Attach
@@ -44,16 +38,12 @@ helpviewer_keywords:
 - CD2DRadialGradientBrush [MFC], m_pRadialGradientBrush
 - CD2DRadialGradientBrush [MFC], m_RadialGradientBrushProperties
 ms.assetid: 6c76d84a-d831-4ee2-96f1-82c1f5b0d6a9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 36a5c33f8dd9ce4ecef1c2900a13100683fe2889
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fbdc6e6b9e7ffff1f14da79ed207644b518910fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405144"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564339"
 ---
 # <a name="cd2dradialgradientbrush-class"></a>CD2DRadialGradientBrush sınıfı
 

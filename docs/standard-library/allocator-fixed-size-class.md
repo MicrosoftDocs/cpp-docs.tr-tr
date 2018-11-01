@@ -1,30 +1,20 @@
 ---
-title: allocator_fixed_size sınıfı | Microsoft Docs
-ms.custom: ''
+title: allocator_fixed_size Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - allocators/stdext::allocators::allocator_fixed_size
 - allocators/stdext::allocator_fixed_size
 - stdext::allocators::allocator_fixed_size
-dev_langs:
-- C++
 helpviewer_keywords:
 - stdext::allocators [C++], allocator_fixed_size
 - stdext::allocator_fixed_size
 ms.assetid: 138f3ef8-b0b3-49c3-9486-58f2213c172f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 94207895eb88e0d799289e2c730f99668ca32cef
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: d050a127fe3e62bf8f4eb4ce56fe25e33f88c041
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963202"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535892"
 ---
 # <a name="allocatorfixedsize-class"></a>allocator_fixed_size Sınıfı
 

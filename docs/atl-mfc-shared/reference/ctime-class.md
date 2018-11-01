@@ -1,10 +1,6 @@
 ---
-title: CTime sınıfı | Microsoft Docs
-ms.custom: ''
+title: CTime sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CTime
 - ATLTIME/ATL::CTime
@@ -25,22 +21,16 @@ f1_keywords:
 - ATLTIME/ATL::CTime::GetTime
 - ATLTIME/ATL::CTime::GetYear
 - ATLTIME/ATL::CTime::Serialize64
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTime class
 - shared classes, CTime
 ms.assetid: 0a299544-485b-48dc-9d3c-fdc30f57d612
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2b82d172ec449a48866ee973421da95787bc9858
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bed403e4bc1cca1d31a394be7157de9e65abff95
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070536"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519450"
 ---
 # <a name="ctime-class"></a>CTime sınıfı
 

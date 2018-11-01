@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 2) C4309 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 2) C4309
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4309
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4309
 ms.assetid: cb3f41ef-fd8a-4def-baa1-924e751fca68
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8b7eba833b547a54adc0644303ab51d3852740a8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 41184571dc07213c796c039170966a0c7150bd45
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46041980"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516148"
 ---
 # <a name="compiler-warning-level-2-c4309"></a>Derleyici Uyarısı (Düzey 2) C4309
 

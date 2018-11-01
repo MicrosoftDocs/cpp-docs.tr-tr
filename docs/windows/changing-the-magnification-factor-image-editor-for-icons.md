@@ -1,26 +1,15 @@
 ---
-title: (Simgeler için görüntü Düzenleyicisi) katsayısını değiştirme | Microsoft Docs
-ms.custom: ''
+title: Büyütme Katsayısını Değiştirme (Simgeler İçin Görüntü Düzenleyicisi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Image editor [C++], magnification
 ms.assetid: d1b0c9e0-fe54-4b2a-b75e-ffa0fa7c8cd9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: ee905c88a9dc2cdd8d05e3b60bbc07259c17e850
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5a94b66b210f6c5fbf3e54e553267043f7bddcf3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385566"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636793"
 ---
 # <a name="changing-the-magnification-factor-image-editor-for-icons"></a>Büyütme Katsayısını Değiştirme (Simgeler İçin Görüntü Düzenleyicisi)
 

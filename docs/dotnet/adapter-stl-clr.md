@@ -1,9 +1,6 @@
 ---
-title: Bağdaştırıcı (STL/CLR) | Microsoft Docs
-ms.custom: ''
+title: bağdaştırıcı (STL/CLR)
 ms.date: 06/15/2018
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - <cliext/adapter>
@@ -28,8 +25,6 @@ f1_keywords:
 - cliext::operator=
 - cliext::range_adapter::operator=
 - cliext::range_adapter::range_adapter
-dev_langs:
-- C++
 helpviewer_keywords:
 - <adapter> header [STL/CLR]
 - adapter [STL/CLR]
@@ -54,17 +49,12 @@ helpviewer_keywords:
 - operator= member [STL/CLR]
 - range_adapter member [STL/CLR]
 ms.assetid: 71ce7e51-42b6-4f70-9595-303791a97677
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: b3ccf32175fc39bb607d381b6eb84c1ddc4e3693
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d5c554439d9bb418b9b62484ee10cd6917cf1777
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423929"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50436164"
 ---
 # <a name="adapter-stlclr"></a>bağdaştırıcı (STL/CLR)
 

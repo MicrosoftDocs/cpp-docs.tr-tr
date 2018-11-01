@@ -1,12 +1,6 @@
 ---
-title: Menüleri, Denetim çubuklarını ve Hızlandırıcıları yönetme | Microsoft Docs
-ms.custom: ''
+title: Menüleri, Denetim Çubuklarını ve Hızlandırıcıları Yönetme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MDI [MFC], frame windows
 - control bars [MFC], updating in frame windows
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - frame windows [MFC], updating
 - status bars [MFC], updating
 ms.assetid: 97ca1997-06df-4373-b023-4f7ecd81047b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1bd7a6515e943351980051d5f2344e80119cc9d4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 905a015de6a675de80c49991750f72eccf06afaa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428661"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559642"
 ---
 # <a name="managing-menus-control-bars-and-accelerators"></a>Menüleri, Denetim Çubuklarını ve Hızlandırıcıları Yönetme
 

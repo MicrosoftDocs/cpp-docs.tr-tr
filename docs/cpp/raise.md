@@ -1,28 +1,18 @@
 ---
-title: __raise | Microsoft Docs
-ms.custom: ''
+title: __raise
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __raise
 - __raise_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __raise keyword [C++]
 ms.assetid: 6f1ae418-5f0f-48b6-9f6e-8ea7e66b239a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: abe0c1a2e443e88879cd7005d944acfcacc3c17d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 865524fe91b7d137e3a943973dcca6d833bd16df
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031476"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471444"
 ---
 # <a name="raise"></a>__raise
 

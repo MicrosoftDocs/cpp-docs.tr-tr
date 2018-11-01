@@ -1,12 +1,6 @@
 ---
-title: Çalışma süresi sınıf bilgilerine erişme | Microsoft Docs
-ms.custom: ''
+title: Çalışma Süresi Sınıf Bilgilerine Erişme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CObject class [MFC], and RTTI
 - CObject class [MFC], using IsKindOf method [MFC]
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - run-time class [MFC]
 - RUNTIME_CLASS macro, using
 ms.assetid: 3445a9af-0bd6-4496-95c3-aa59b964570b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 61da17093d56dcfd8b0eeec3ade7955f27bc6b85
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 061cc04857b0d1763fb4ee975912bcca1b9d014f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077724"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50455282"
 ---
 # <a name="accessing-run-time-class-information"></a>Çalışma Süresi Sınıf Bilgilerine Erişme
 

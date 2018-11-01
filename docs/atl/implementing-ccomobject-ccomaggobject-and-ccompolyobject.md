@@ -1,32 +1,22 @@
 ---
-title: CComObject, CComAggObject ve CComPolyObject uygulama | Microsoft Docs
-ms.custom: ''
+title: CComObject, CComAggObject ve CComPolyObject uygulama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
 f1_keywords:
 - CComPolyObject
 - CComAggObject
 - CComObject
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComPolyObject class, implementing
 - CreateInstance method
 - CComAggObject class
 - CComObject class, implementing
 ms.assetid: 5aabe938-104d-492e-9c41-9f7fb1c62098
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c4eed55a90d05728c6625b49454ef4297b878975
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6e9e1a22ebe23f9fec6e553713a5701315cdac96
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067915"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50508985"
 ---
 # <a name="implementing-ccomobject-ccomaggobject-and-ccompolyobject"></a>CComObject, CComAggObject ve CComPolyObject uygulama
 

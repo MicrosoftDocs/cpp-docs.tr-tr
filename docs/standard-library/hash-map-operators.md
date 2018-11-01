@@ -1,20 +1,16 @@
 ---
-title: '&lt;hash_map&gt; işleçler | Microsoft Docs'
-ms.custom: ''
+title: '&lt;hash_map&gt; işleçleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - hash_map/std::operator!=
 - hash_map/std::operator==
-dev_langs:
-- C++
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
-ms.openlocfilehash: bd140fed954c097fa73f179c92cbc64f3148e77c
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: ba84f476c712f64e7782f0ea476bbb65a35dc14a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108467"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559711"
 ---
 # <a name="lthashmapgt-operators"></a>&lt;hash_map&gt; işleçleri
 

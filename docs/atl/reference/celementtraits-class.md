@@ -1,28 +1,18 @@
 ---
-title: CElementTraits sınıfı | Microsoft Docs
-ms.custom: ''
+title: CElementTraits sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CElementTraits
 - atlcoll/ATL::CElementTraits
-dev_langs:
-- C++
 helpviewer_keywords:
 - CElementTraits class
 ms.assetid: 496528e5-7f80-4b45-be0c-6f646feb43c5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 61cbd301d01d62c0d24f232703b53cebf411a082
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4951f5b87efbff83f39badba5f3e1041a15d8c6b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021076"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480764"
 ---
 # <a name="celementtraits-class"></a>CElementTraits sınıfı
 

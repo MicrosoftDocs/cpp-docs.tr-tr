@@ -1,21 +1,13 @@
 ---
-title: Ham dize sabit değerine Dönüştür | Microsoft Docs
-ms.custom: ''
+title: Ham dize sabit değerine Dönüştür
 ms.date: 11/16/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 ms.assetid: fffbfee4-66ee-42ba-aeb9-df07fb702c51
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 75037ea542a5bd2160d9a89138b12f82867002a5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 508ab52dc1ca41a97dd8c24df5c5d45c379ea265
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388452"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509519"
 ---
 # <a name="convert-to-raw-string-literal"></a>Ham dize sabit değerine Dönüştür
 **Ne:** herhangi bir dize bir C++ ham dize sabit değeri kapatmanızı sağlar.

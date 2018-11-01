@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2876 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2876
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2876
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2876
 ms.assetid: 8b674bf1-f9f4-4a8e-8127-e884c1d1708f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 47ad5d4da16cc584101b0bab4f26d78fdfe71002
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e7fcdeaf79728ee99498c69de0205619d16612d8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091952"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664730"
 ---
 # <a name="compiler-error-c2876"></a>Derleyici Hatası C2876
 

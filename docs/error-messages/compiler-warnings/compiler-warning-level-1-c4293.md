@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4293 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4293
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4293
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4293
 ms.assetid: babecd96-eb51-41a5-9835-462c7a46dbad
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a29a42d5e06ededbcc4f16224b3e4332d56dbe03
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 03520e2018efd611985c0eeca8bb2cac259ff3cf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050211"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50598529"
 ---
 # <a name="compiler-warning-level-1-c4293"></a>Derleyici Uyarısı (düzey 1) C4293
 

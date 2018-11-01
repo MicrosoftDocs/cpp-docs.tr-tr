@@ -1,10 +1,6 @@
 ---
-title: Cınternetconnection sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cınternetconnection sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CInternetConnection
 - AFXINET/CInternetConnection
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXINET/CInternetConnection::GetContext
 - AFXINET/CInternetConnection::GetServerName
 - AFXINET/CInternetConnection::GetSession
-dev_langs:
-- C++
 helpviewer_keywords:
 - CInternetConnection [MFC], CInternetConnection
 - CInternetConnection [MFC], GetContext
 - CInternetConnection [MFC], GetServerName
 - CInternetConnection [MFC], GetSession
 ms.assetid: 62a5d1c3-8471-4e36-a064-48831829b2a7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f30cfd4a27eb07d2e420b83730f653fb957bb4bd
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: da11f62cfb453e31d3cacc1d4bc5b8a26f5b3764
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083301"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564807"
 ---
 # <a name="cinternetconnection-class"></a>Cınternetconnection sınıfı
 

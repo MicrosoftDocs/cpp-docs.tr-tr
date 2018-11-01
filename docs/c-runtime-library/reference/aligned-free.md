@@ -1,10 +1,6 @@
 ---
-title: _aligned_free | Microsoft Docs
-ms.custom: ''
+title: _aligned_free
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _aligned_free
 apilocation:
@@ -23,22 +19,16 @@ apitype: DLLExport
 f1_keywords:
 - aligned_free
 - _aligned_free
-dev_langs:
-- C++
 helpviewer_keywords:
 - _aligned_free function
 - aligned_free function
 ms.assetid: ed1ce952-cdfc-4682-85cc-f75d4101603d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 54700ad2a1eed391647a66a4c54a726b75e812f4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e2d1dc1172d1cd0d31f8daa8125bd052252393c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069722"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432170"
 ---
 # <a name="alignedfree"></a>_aligned_free
 

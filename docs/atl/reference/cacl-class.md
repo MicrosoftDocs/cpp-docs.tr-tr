@@ -1,10 +1,6 @@
 ---
-title: CAcl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAcl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAcl
 - ATLSECURITY/ATL::CAcl
@@ -23,21 +19,15 @@ f1_keywords:
 - ATLSECURITY/ATL::CAcl::RemoveAces
 - ATLSECURITY/ATL::CAcl::SetEmpty
 - ATLSECURITY/ATL::CAcl::SetNull
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAcl class
 ms.assetid: 20bcb9af-dc1c-4737-b923-3864776680d6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db7903dccfd851bb4bf76f1990424f887686d344
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a9653225f3057d6c5ba9fd49cf64487e766ca8d1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070112"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491552"
 ---
 # <a name="cacl-class"></a>CAcl sınıfı
 

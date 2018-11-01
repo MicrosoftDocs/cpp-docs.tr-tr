@@ -1,12 +1,6 @@
 ---
-title: Bir durum çubuğu bölmesinin metnini güncelleştirme | Microsoft Docs
-ms.custom: ''
+title: Durum Çubuğu Bölmesinin Metnini Güncelleştirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - updating user interface objects [MFC]
 - ON_UPDATE_COMMAND_UI macro [MFC]
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - panes, status bar
 - status bars [MFC], updating
 ms.assetid: 4984a3f4-9905-4d8c-a927-dca19781053b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ae8b15431edbdd24a7afd6c7e25be6b9eadb4107
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0c6691f37a1b0754835aba5c09d251c4986c4fb1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081397"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592549"
 ---
 # <a name="updating-the-text-of-a-status-bar-pane"></a>Durum Çubuğu Bölmesinin Metnini Güncelleştirme
 

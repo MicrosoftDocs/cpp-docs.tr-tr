@@ -1,12 +1,6 @@
 ---
-title: 'Geçerli zaman: Genel amaçlı sınıflar | Microsoft Docs'
-ms.custom: ''
+title: 'Geçerli zaman: Genel amaçlı sınıflar'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - time, setting current
 - current time, CTime object
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - initializing objects, with the current time
 - time, getting current
 ms.assetid: c39e6775-6a92-4b27-95a7-5c86ed371d8a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9edf381864121d4e3f6c5a2b6cf7c01198368e1e
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: e883a47243feb7ad1555748ffdda9b8ae9594644
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860530"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539262"
 ---
 # <a name="current-time-general-purpose-classes"></a>Geçerli zaman: Genel amaçlı sınıflar
 

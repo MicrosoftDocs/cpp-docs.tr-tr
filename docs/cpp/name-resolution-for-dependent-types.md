@@ -1,23 +1,13 @@
 ---
-title: Bağımlı türler için ad çözümlemesi | Microsoft Docs
-ms.custom: ''
+title: Bağımlı Türleri Ad Çözme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 34066bb4-0c79-4fd8-bda7-539a60a277ab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c17a29f0287ee25517ed72f1c98caa2d38a96195
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 04db4b0efc5e58dbd3de6fc9979c3a3cdd44d84e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040190"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563164"
 ---
 # <a name="name-resolution-for-dependent-types"></a>Bağımlı Türleri Ad Çözme
 

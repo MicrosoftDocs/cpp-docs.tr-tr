@@ -1,18 +1,12 @@
 ---
-title: _locking sabitleri | Microsoft Docs
-ms.custom: ''
+title: _locking Sabitleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - _LK_RLCK
 - _LK_NBLCK
 - _LK_LOCK
 - _LK_NBRLCK
 - _LK_UNLCK
-dev_langs:
-- C++
 helpviewer_keywords:
 - LK_UNLCK constant
 - LK_NBRLCK constant
@@ -25,16 +19,12 @@ helpviewer_keywords:
 - _LK_RLCK constant
 - LK_LOCK constant
 ms.assetid: c3dc92c8-60e3-4d29-9f50-5d217627c8ad
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: abf776ab72d692be6d573803353f35946df145ec
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 721e2433a6d7a76ad73b0f52f033c3e04cab8f6d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031945"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526362"
 ---
 # <a name="locking-constants"></a>_locking Sabitleri
 

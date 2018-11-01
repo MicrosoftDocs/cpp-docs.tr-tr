@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3450 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3450
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3450
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3450
 ms.assetid: 78892cf7-0b82-4589-90d0-e06666247003
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ee8e99dcf0055f6e37ad9f232c401000c76f3b13
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bedf78ef1cea9f17903fd05f9440c6baa69f7333
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038392"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481243"
 ---
 # <a name="compiler-error-c3450"></a>Derleyici Hatası C3450
 

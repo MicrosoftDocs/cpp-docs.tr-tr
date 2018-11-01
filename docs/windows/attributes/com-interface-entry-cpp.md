@@ -1,28 +1,17 @@
 ---
-title: com_interface_entry (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: com_interface_entry (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.com_interface_entry
-dev_langs:
-- C++
 helpviewer_keywords:
 - com_interface_entry attribute
 ms.assetid: 10368f81-b99b-4a0f-ba4f-a142e6911a5c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 6ccd3277b5ad627c6956e6f5620ee6aed1640cc5
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9d83cae79b257c9ddfc6d9ab910bb5502ae78307
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074013"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559698"
 ---
 # <a name="cominterfaceentry-c"></a>com_interface_entry (C++)
 

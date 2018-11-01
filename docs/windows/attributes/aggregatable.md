@@ -1,28 +1,17 @@
 ---
-title: toplanabilir (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: toplanabilir (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.aggregatable
-dev_langs:
-- C++
 helpviewer_keywords:
 - aggregatable attribute
 ms.assetid: 9253a46a-cd76-41f2-b3b6-86f709bb069c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 169b0ab1194783f1e7de44c9ae0a153e9d4d3071
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 74a561b9b70c5aee36781d102835c73dec2c3ac2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057837"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582475"
 ---
 # <a name="aggregatable"></a>toplanabilir
 

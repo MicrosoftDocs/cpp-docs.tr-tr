@@ -1,10 +1,6 @@
 ---
-title: Nesne makroları eklentisini | Microsoft Docs
-ms.custom: ''
+title: Ek Bileşen Nesne makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlsnap/ATL::BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP
 - atlsnap/ATL::BEGIN_SNAPINTOOLBARID_MAP
@@ -14,19 +10,13 @@ f1_keywords:
 - atlsnap/ATL::EXTENSION_SNAPIN_NODEINFO_ENTRY
 - atlsnap/ATL::SNAPINMENUID
 - atlsnap/ATL::SNAPINTOOLBARID_ENTRY
-dev_langs:
-- C++
 ms.assetid: 4e9850c0-e395-4929-86c9-584a81828053
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f2c692f9055e0c2ca3657a6bba0d854209f786b8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e3eec62e2bea92f1f308b149046b83be1b9085b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068755"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656943"
 ---
 # <a name="snap-in-object-macros"></a>Ek Bileşen Nesne makroları
 

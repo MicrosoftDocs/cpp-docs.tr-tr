@@ -1,27 +1,17 @@
 ---
-title: Main işlevi kısıtlamaları | Microsoft Docs
-ms.custom: ''
+title: main İşlevi Kısıtlamaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - Main
-dev_langs:
-- C++
 helpviewer_keywords:
 - main function, restrictions on using
 ms.assetid: 7b3df731-344b-44a8-850c-11cbcbfbfa83
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 93f5cce15d4db9f7f6d4e3361d22028fccd676f2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9ccea987b05c7854e78ba1621fd6c0a065d73d5a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46117367"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555768"
 ---
 # <a name="main-function-restrictions"></a>main İşlevi Kısıtlamaları
 

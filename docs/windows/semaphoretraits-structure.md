@@ -1,30 +1,20 @@
 ---
-title: SemaphoreTraits yapısı | Microsoft Docs
-ms.custom: ''
+title: SemaphoreTraits Yapısı
 ms.date: 09/27/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SemaphoreTraits
 - corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SemaphoreTraits::Unlock
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::SemaphoreTraits structure
 - Microsoft::WRL::Wrappers::HandleTraits::SemaphoreTraits::Unlock method
 ms.assetid: eddb8576-d063-409b-9201-cc87ca5d111e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 553d0cbb69bcf3167974cb42abb26f4aae04bfb3
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: e7bd2e5d0993c8e4be7223d98ffb1dbec14cbb74
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234144"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502953"
 ---
 # <a name="semaphoretraits-structure"></a>SemaphoreTraits Yapısı
 

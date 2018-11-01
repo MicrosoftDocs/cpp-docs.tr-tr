@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3010 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3010
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3010
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3010
 ms.assetid: e959d038-bba6-432a-9c0a-0470474de7d9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d68be11a510ba41197cb9645484a10ca8dae6d77
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c5f0d33632cb155b8365c8de421fa5eaf91421c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075130"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50455503"
 ---
 # <a name="compiler-error-c3010"></a>Derleyici Hatası C3010
 

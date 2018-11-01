@@ -1,10 +1,6 @@
 ---
-title: ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s | Microsoft Docs
-ms.custom: ''
+title: ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ctime64_s
 - _wctime32_s
@@ -35,8 +31,6 @@ f1_keywords:
 - _tctime64_s
 - ctime_s
 - ctime32_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - _wctime32_s function
 - ctime64_s function
@@ -57,20 +51,16 @@ helpviewer_keywords:
 - _ctime32_s function
 - _tctime32_s function
 ms.assetid: 36ac419a-8000-4389-9fd8-d78b747a009b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a3f9c5e6d9d6f0d910decae904cbbd75d995a6c4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0410aeda4bbec33738d01a9514181c19f351e2c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404324"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496385"
 ---
 # <a name="ctimes-ctime32s-ctime64s-wctimes-wctime32s-wctime64s"></a>ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
 
-Bir saat değeri dizeye ve yerel saat dilimi ayarlarını yapın. Sürümleri bunlar [ctime, _ctime64, _wctime, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir zaman değeri dizeye Dönüştür ve yerel saat dilimi ayarlarını yapın. Bunlar sürümleridir [ctime, _ctime64, _wctime64 olan _wctime](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -133,13 +123,13 @@ errno_t _wctime64_s(
 ### <a name="parameters"></a>Parametreler
 
 *Arabellek*<br/>
-26 karakter tutabilecek kadar büyük olmalıdır. Karakter dizesi sonucu için bir işaretçi veya **NULL** varsa:
+26 karakter tutabilecek kadar büyük olmalıdır. Karakter dize sonucu için bir işaretçi veya **NULL** varsa:
 
-- *sourceTime* gece, 1 Ocak 1970 UTC tarihi temsil eder.
+- *sourceTime* 1 Ocak 1970 gece yarısı UTC tarihi temsil eder.
 
 - Kullanırsanız **_ctime32_s** veya **_wctime32_s** ve *sourceTime* 23:59:59 18 Ocak 2038, UTC tarihinden temsil eder.
 
-- Kullanırsanız **_ctime64_s** veya **_wctime64_s** ve *sourceTime* 23:59:59 31 Aralık 3000 UTC tarihinden temsil eder.
+- Kullanırsanız **_ctime64_s** veya **_wctime64_s** ve *sourceTime* 23:59:59, 31 Aralık, 3000, UTC tarihinden temsil eder.
 
 - Kullanırsanız **_ctime_s** veya **_wctime_s**, önceki işlevlere sarmalayıcıları bu işlevlerdir. Açıklamalar bölümüne bakın.
 
@@ -147,37 +137,37 @@ errno_t _wctime64_s(
 Arabellek boyutu.
 
 *sourceTime*<br/>
-Saklı zaman işaretçi.
+Depolanan zamana yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır. Geçersiz bir parametre nedeniyle bir hata olduğunda geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bir hata kodu döndürdü. Hata kodları ERRNO içinde tanımlanmıştır. H; Bu hataların listesi için bkz: [errno](../../c-runtime-library/errno-constants.md). Her bir hata koşulu için oluşturulan gerçek hata kodları aşağıdaki tabloda gösterilmektedir.
+Başarılıysa sıfır. Geçersiz bir parametre nedeniyle bir hata varsa, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin, bir hata kodu döndürülür. Hata kodları ERRNO içinde tanımlanır. H; Bu hataların bir listesi için bkz: [errno](../../c-runtime-library/errno-constants.md). Aşağıdaki tabloda her bir hata koşulu için oluşturulan gerçek hata kodları gösterilir.
 
 ## <a name="error-conditions"></a>Hata koşulları
 
-|*Arabellek*|*numberOfElements*|*sourceTime*|Döndür|Değer *arabellek*|
+|*Arabellek*|*numberOfElements*|*sourceTime*|döndürülecek|Değerini *arabelleği*|
 |--------------|------------------------|------------|------------|-----------------------|
-|**NULL**|tüm|tüm|**EINVAL**|değiştirilmedi|
-|Değil **NULL** (noktaları için geçerli bellek)|0|tüm|**EINVAL**|değiştirilmedi|
-|değil **NULL**|0 < < 26 boyutu|tüm|**EINVAL**|Boş dize|
-|değil **NULL**|>= 26|NULL|**EINVAL**|Boş dize|
-|değil **NULL**|>= 26|< 0|**EINVAL**|Boş dize|
+|**NULL**|Tüm|Tüm|**EINVAL**|değiştirilmedi|
+|Değil **NULL** (geçerli bellek noktaları)|0|Tüm|**EINVAL**|değiştirilmedi|
+|Değil **NULL**|0 < < 26 boyutu|Tüm|**EINVAL**|Boş dize|
+|Değil **NULL**|>= 26|NULL|**EINVAL**|Boş dize|
+|Değil **NULL**|>= 26|< 0|**EINVAL**|Boş dize|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Ctime_s** işlevi dönüştürür olarak saklanan bir saat değeri bir [time_t](../../c-runtime-library/standard-types.md) yapısı içinde bir karakter dizesi. *SourceTime* değeri çağrısından alınan genellikle [zaman](time-time32-time64.md), gece yarısından beri geçen saniye sayısı döndüren (00: 00:00), 1 Ocak 1970'den itibaren Eşgüdümlü Evrensel Saat (UTC). Dönüş değeri dize tam olarak 26 karakter içerir ve biçime sahiptir:
+**Ctime_s** işlevi olarak depolanan bir saat değerine dönüştürür bir [time_t](../../c-runtime-library/standard-types.md) yapısına göre bir karakter dizesi. *SourceTime* değeri çağrısından alınan genellikle [zaman](time-time32-time64.md), saniye cinsinden gece yarısından beri geçen döndüren (00: 00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC). Dönüş değeri dize, tam olarak 26 karakterler içeriyor ve biçime sahiptir:
 
 `Wed Jan 02 02:03:55 1980\n\0`
 
-24 saatlik kullanılır. Tüm alanları sabit genişlik sahiptir. Yeni satır karakteri ('\n') ve ('\0') null karakter dizesi son iki konumlarını kaplar.
+24 saatlik düzende kullanılır. Tüm alanlar, sabit bir genişliğe sahiptir. Yeni satır karakteri ('\n') ve null karakteri ('\0'), son iki dize konumlarını kaplar.
 
-Dönüştürülen karakter dizesini de yerel saat dilimi ayarlarını göre ayarlanır. Bkz: [zaman](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), ve [localtime32_s](localtime-s-localtime32-s-localtime64-s.md) yerel saat yapılandırma hakkında bilgi için İşlevler ve [_tzset](tzset.md) saat dilimi ortamı ve genel değişkenler tanımlama hakkında daha fazla bilgi için işlevi.
+Dönüştürülmüş karakteri dize ayrıca yerel saat dilimi ayarlarını göre ayarlanır. Bkz: [zaman](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), ve [localtime32_s](localtime-s-localtime32-s-localtime64-s.md) yerel saat yapılandırma hakkında daha fazla bilgi için İşlevler ve [_tzset](tzset.md) Genel değişkenler ve saat dilimi ortamı tanımlama hakkında bilgi için işlev.
 
-**_wctime32_s** ve **_wctime64_s** joker karakter sürümüne sahip **_ctime32_s** ve **_ctime64_s**; joker karakter dizesi için bir işaretçi döndürüyor. Aksi takdirde, **_ctime64_s**, **_wctime32_s**, ve **_wctime64_s** aynı şekilde davranır **_ctime32_s**.
+**_wctime32_s** ve **_wctime64_s** geniş karakter sürümüne sahip **_ctime32_s** ve **_ctime64_s**; geniş karakter dizesine bir işaretçi döndürüyor. Aksi takdirde, **_ctime64_s**, **_wctime32_s**, ve **_wctime64_s** öğesine aynı şekilde davranır **_ctime32_s**.
 
-**ctime_s** değerlendiren bir satır içi işlev **_ctime64_s** ve **time_t** eşdeğerdir **__time64_t**. Yorumlamaya derleyici zorlamak gerekiyorsa **time_t** eski 32 bit olarak **time_t**, tanımlayabileceğiniz **_USE_32BIT_TIME_T**. Bunun neden olacak **ctime_s** için değerlendirilecek **_ctime32_s**. Bu, uygulamanızın 18 Ocak 2038 sonra başarısız olabilir ve 64 bit platformlarda izin verilmiyor çünkü önerilmez.
+**ctime_s** olarak değerlendirilen bir satır içi işlevdir **_ctime64_s** ve **time_t** eşdeğerdir **__time64_t**. Yorumlamak üzere zorlamanız gerekirse **time_t** eski 32-bit olarak **time_t**, tanımlayabileceğiniz **_use_32bıt_tıme_t**. Bunun yapılması neden olacak **ctime_s** için değerlendirilecek **_ctime32_s**. Bu, 18 Ocak 2038 sonrasında uygulamanız çalışmayabilir ve 64-bit platformlarda izin verilmiyor çünkü önerilmez.
 
-C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı, boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan arabellek uzunluğu bir otomatik olarak Infer. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğu bir boyut bağımsız değişkeni belirtme gereksinimi ortadan otomatik olarak çıkarabilir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -191,10 +181,10 @@ C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından bas
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**ctime_s**, **_ctime32_s**, **_ctime64_s**|\<time.h >|
-|**_wctime_s**, **_wctime32_s**, **_wctime64_s**|\<time.h > veya \<wchar.h >|
+|**ctime_s**, **_ctime32_s**, **_ctime64_s**|\<TIME.h >|
+|**_wctime_s**, **_wctime32_s**, **_wctime64_s**|\<TIME.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

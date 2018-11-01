@@ -1,10 +1,6 @@
 ---
-title: _malloca | Microsoft Docs
-ms.custom: ''
+title: _malloca
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _malloca
 apilocation:
@@ -22,23 +18,17 @@ apitype: DLLExport
 f1_keywords:
 - malloca
 - _malloca
-dev_langs:
-- C++
 helpviewer_keywords:
 - memory allocation, stack
 - malloca function
 - _malloca function
 ms.assetid: 293992df-cfca-4bc9-b313-0a733a6bb936
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3c6f6b731bce5667ca992e7181518bf0a9eb2b87
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8c8ce8bdf8ab40cae45ecec9c4b182bdf3d6bc82
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403293"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563988"
 ---
 # <a name="malloca"></a>_malloca
 
@@ -59,28 +49,28 @@ Yığından ayrılacak bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Malloca** rutin döndürür bir **void** nesnesinin herhangi bir türde bir depolama için uygun hizalanacak garanti ayrılan alanı işaretçi. Varsa *boyutu* 0 ' dır **_malloca** sıfır uzunluklu öğesi ayırır ve geçerli bir işaretçi için bu öğeyi döndürür.
+**_Malloca** rutin döndürür bir **void** nesnenin herhangi bir türde bir depolama için uygun şekilde hizalanması garanti ayrılan alanı işaretçisi. Varsa *boyutu* 0 ' dır **_malloca** sıfır uzunluklu öğeyi ayırır ve bu öğeye geçerli bir işaretçi döndürür.
 
-Bir yığın taşması özel durumu alanı ayrılamıyor ise oluşturulur. Yığın taşması özel durumu C++ özel durum değil; yapılandırılmış özel durum var. C++ özel durum işleme kullanmak yerine, kullanmalısınız [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH).
+Alanı ayırdığınızda, bir yığın taşması özel durumu oluşturulur. Yığın taşması özel durumu bir C++ özel durum değil; Bu, yapılandırılmış bir özel durumdur. C++ özel durum işleme kullanmak yerine, kullanmanız gerekir [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_malloca** ayırır *boyutu* program yığını ya da belirli bir boyuta tarafından verilen bayt cinsinden istek aşarsa, öbek bayt **_ALLOCA_S_THRESHOLD**. Arasındaki farkı **_malloca** ve **_alloca** olan **_alloca** yığında boyutuna bakılmaksızın her zaman ayırır. Aksine **_alloca**, hangi gerektirmez veya bir çağrısına izin **ücretsiz** şekilde ayrılmış, belleği boşaltmak için **_malloca** kullanılmasını gerektiren [_freea](freea.md)belleği boşaltmak için. Hata ayıklama modunda **_malloca** her zaman yığınından bellek ayırır.
+**_malloca** ayırır *boyutu* bayt program yığınına veya belirli bir boyuta tarafından verilen bayt cinsinden istek aşarsa, yığın **_ALLOCA_S_THRESHOLD**. Arasındaki fark **_malloca** ve **_alloca** olan **_alloca** yığında boyutundan bağımsız olarak her zaman ayırır. Farklı **_alloca**, hangi gerektirmez veya buna izin vermek için bir çağrı **ücretsiz** ayrılmış şekilde, belleği boşaltmak için **_malloca** gerektirir [_freea](freea.md)belleği boşaltmak için. Hata ayıklama modunda **_malloca** her zaman yığından belleği ayırır.
 
-Açıkça çağırmak için kısıtlamalar vardır **_malloca** bir özel durum işleyicisi (EH). X86 sınıfı işlemcilerde çalıştırmak EH yordamları çalışan kendi bellek çerçevede: yığın işaretçisi kapsayan işlevinin geçerli konumuna dayalı olmayan bellek alanında görevlerini gerçekleştirdikleri. En yaygın uygulamaları, Windows NT yapılandırılmış özel durum (SEH) işleme ve C++ catch yan tümcesi ifadeleri içerir. Bu nedenle, açıkça çağırma **_malloca** herhangi bir program hatası EH yordamı çağrılırken dönün sırasında aşağıdaki senaryoları sonuçlarında:
+Açıkça çağırmak için kısıtlamalar **_malloca** bir özel durum işleyicisi (EH). X86 sınıfı işlemciler üzerinde çalışan EH düzenleri kendi bellek çerçevede çalışmak: yığın işaretçisi kapsayan işlevin geçerli konumuna bağlı olmayan bellek alanında gerçekleştirdikleri görevleri. En yaygın olarak görülen uygulamalar, Windows NT yapılandırılmış özel durum işleme (SEH) ve C++ catch yan tümcesi ifadeleri içerir. Bu nedenle, açıkça çağırma **_malloca** herhangi birinde çağıran EH yordam için dönüş sırasında program hata aşağıdaki senaryolarda sonuçları:
 
-- Windows NT SEH özel durum filtre ifadesi: **__except** (`_malloca ()` )
+- Windows NT SEH özel durum filtre ifadesinin: **__except** (`_malloca ()` )
 
-- Windows NT SEH son özel durum işleyici: **__finally** {`_malloca ()` }
+- Windows NT SEH son özel durum işleyicisi: **__finally** {`_malloca ()` }
 
 - C++ EH catch yan tümcesinin ifadesi
 
-Ancak, **_malloca** doğrudan bir EH yordamı içinde veya çağrılan bir uygulama tarafından sağlanan bir geri çağırma senaryolardan biri, daha önce listelenen EH tarafından çağrılabilir.
+Ancak, **_malloca** doğrudan EH yordam içinde ya da çağrılan bir uygulama tarafından sağlanan bir geri çağırma daha önce listelenen EH senaryoları biri tarafından çağrılabilir.
 
 > [!IMPORTANT]
-> Windows XP'de, **_malloca** çağrılır try/catch bloğunun içine çağırmalısınız [_resetstkoflw](resetstkoflw.md) catch bloğu içinde.
+> Windows XP'de, **_malloca** çağrılır bir try/catch bloğu içinde çağırmalısınız [_resetstkoflw](resetstkoflw.md) catch bloğu içinde.
 
-Yukarıdaki kısıtlamaları kullanırken, ek olarak [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği **_malloca** kullanılamaz **__except** engeller. Daha fazla bilgi için bkz: [/CLR kısıtlamalar](../../build/reference/clr-restrictions.md).
+Yukarıdaki sınırlamalara kullanırken, ek olarak [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği **_malloca** kullanılamaz **__except** engeller. Daha fazla bilgi için [/CLR kısıtlamalar](../../build/reference/clr-restrictions.md).
 
 ## <a name="requirements"></a>Gereksinimler
 

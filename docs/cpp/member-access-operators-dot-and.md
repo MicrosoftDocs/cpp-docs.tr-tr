@@ -1,15 +1,9 @@
 ---
-title: Üye erişim işleçleri:. ve -&gt; | Microsoft Docs
-ms.custom: ''
+title: Üye erişim işleçleri:. ve -&gt;
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - .
 - ->
-dev_langs:
-- C++
 helpviewer_keywords:
 - member access, expressions
 - operators [C++], member access
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - . operator
 - member access
 ms.assetid: f8fc3df9-d728-40c5-b384-276927f5f1b3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c02183b3dc03c785ef5a6a08da80dd8435288b0a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0f370aa04af2e78efd5edfb7836fb71a4c4516a7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46112778"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468750"
 ---
 # <a name="member-access-operators--and--gt"></a>Üye erişim işleçleri:. ve -&gt;
 

@@ -1,29 +1,19 @@
 ---
-title: Iumsscheduler yapısı | Microsoft Docs
-ms.custom: ''
+title: IUMSScheduler Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - IUMSScheduler
 - CONCRTRM/concurrency::IUMSScheduler
 - CONCRTRM/concurrency::IUMSScheduler::IUMSScheduler::SetCompletionList
-dev_langs:
-- C++
 helpviewer_keywords:
 - IUMSScheduler structure
 ms.assetid: 3a500225-4e02-4849-bb56-d744865f5870
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c1cfff47f2ad05dc6fd88c32a1a380ed747d49e1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0fd1ed90ca30c9c9e6815bb05b516f24b4f9a164
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391468"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513795"
 ---
 # <a name="iumsscheduler-structure"></a>IUMSScheduler Yapısı
 

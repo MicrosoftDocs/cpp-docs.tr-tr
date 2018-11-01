@@ -1,10 +1,6 @@
 ---
-title: setjmp | Microsoft Docs
-ms.custom: ''
+title: setjmp
 ms.date: 08/14/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - setjmp
 apilocation:
@@ -21,23 +17,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - setjmp
-dev_langs:
-- C++
 helpviewer_keywords:
 - programs [C++], saving states
 - current state
 - setjmp function
 ms.assetid: 684a8b27-e8eb-455b-b4a8-733ca1cbd7d2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0bd7d57d0678744243356a0565e10cbe4065f8d3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 69af720c70393dbcad1e267b58e08876cdc2b77e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46032548"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575072"
 ---
 # <a name="setjmp"></a>setjmp
 

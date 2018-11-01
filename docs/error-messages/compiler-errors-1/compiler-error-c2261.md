@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2261 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2261
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2261
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2261
 ms.assetid: 60969482-9e83-49b5-9631-a04bc844da12
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2ed43dc43fb6ceaf514a8e7452b06eb7bdaf7362
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2df788efd93fb531822d858ea5aee1722487db81
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46051652"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535752"
 ---
 # <a name="compiler-error-c2261"></a>Derleyici Hatası C2261
 

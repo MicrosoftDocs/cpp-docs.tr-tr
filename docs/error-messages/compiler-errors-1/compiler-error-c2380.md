@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2380 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2380
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2380
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2380
 ms.assetid: 717b1e6e-ddfe-4bac-a5f3-7f9a4dcb1572
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8e4dae59f686a1d2fe9f80a4f3f4c47ea6b7ea2d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c0494d4ba405a084e7b455139016c98af7d95191
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065484"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584503"
 ---
 # <a name="compiler-error-c2380"></a>Derleyici Hatası C2380
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2656 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2656
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2656
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2656
 ms.assetid: 1ec91186-0735-4904-859b-59da9af2d426
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cd4b0e4ee89bc2cd2c31e476bdc4ee19bfb8a3aa
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ce2ec1c82e20f9e6777987b6b95cd086724ae09f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46043774"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536012"
 ---
 # <a name="compiler-error-c2656"></a>Derleyici Hatası C2656
 

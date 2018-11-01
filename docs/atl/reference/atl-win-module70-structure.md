@@ -1,30 +1,20 @@
 ---
-title: _Atl_wın_module70 yapısı | Microsoft Docs
-ms.custom: ''
+title: _Atl_wın_module70 yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - _ATL_WIN_MODULE70
 - ATL::_ATL_WIN_MODULE70
 - ATL._ATL_WIN_MODULE70
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ATL_WIN_MODULE70 structure
 - ATL_WIN_MODULE70 structure
 ms.assetid: a0aaf3ea-ca77-46ec-bd53-4dfb61dffbea
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dcb66d55f1d75d584414c0273882a5424fe72650
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4f1718c76d21f2e13b36c29db785fe989ff6108e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064829"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482530"
 ---
 # <a name="atlwinmodule70-structure"></a>_Atl_wın_module70 yapısı
 

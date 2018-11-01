@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2801 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2801
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2801
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2801
 ms.assetid: 35dfc7ea-9e37-4e30-baa1-944dc61302f5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d57ee5bf5f5152ef55852c9f9b829bc4a1d17d41
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 44f7988f9fedb882972b2823f2fe70d9512d4e87
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040641"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484792"
 ---
 # <a name="compiler-error-c2801"></a>Derleyici Hatası C2801
 

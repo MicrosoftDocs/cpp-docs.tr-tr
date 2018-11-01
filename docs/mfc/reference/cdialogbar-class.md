@@ -1,31 +1,21 @@
 ---
-title: CDialogBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDialogBar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDialogBar
 - AFXEXT/CDialogBar
 - AFXEXT/CDialogBar::CDialogBar
 - AFXEXT/CDialogBar::Create
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDialogBar [MFC], CDialogBar
 - CDialogBar [MFC], Create
 ms.assetid: da2f7a30-970c-44e3-87f0-6094bd002cab
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dad3f7309d36f7233d871ea47a859c4e572140f6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a1b631c093ea6997d89a738b4818aaf66f561836
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065466"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604432"
 ---
 # <a name="cdialogbar-class"></a>CDialogBar sınıfı
 

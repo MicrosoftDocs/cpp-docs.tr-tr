@@ -1,26 +1,16 @@
 ---
-title: Beyaz boşluk karakterleri | Microsoft Docs
-ms.custom: ''
+title: Boşluk Karakterleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - white space, characters
 - characters, white space
 ms.assetid: 030ccbdc-2db3-4dd0-88c8-f5c2669ddebf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3aa487ee277954470cdd8b16f9f64f465c195897
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: adeea0dadfab53ee1a311343db6619f918c17e2b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055708"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434950"
 ---
 # <a name="white-space-characters"></a>Boşluk Karakterleri
 

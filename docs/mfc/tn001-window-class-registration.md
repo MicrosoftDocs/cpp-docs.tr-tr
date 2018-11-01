@@ -1,29 +1,19 @@
 ---
-title: 'TN001: Pencere sınıfı kaydı | Microsoft Docs'
-ms.custom: ''
+title: 'TN001: Pencere Sınıfı Kaydı'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.registration
-dev_langs:
-- C++
 helpviewer_keywords:
 - TN001
 - WNDCLASS [MFC]
 - AfxRegisterClass function
 ms.assetid: 1abf678e-f220-4606-85e0-03df32f64c54
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a6818cb66f7ae9498ca13ac895a84e3b22c0c482
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 92d55780ad309a9c8392cf86e7fa4eaefc5f407a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426100"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619160"
 ---
 # <a name="tn001-window-class-registration"></a>TN001: Pencere Sınıfı Kaydı
 

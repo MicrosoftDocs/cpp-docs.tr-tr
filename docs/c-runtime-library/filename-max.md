@@ -1,27 +1,17 @@
 ---
-title: FILENAME_MAX | Microsoft Docs
-ms.custom: ''
+title: FILENAME_MAX
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - FILENAME_MAX
-dev_langs:
-- C++
 helpviewer_keywords:
 - FILENAME_MAX constant
 ms.assetid: fe368d24-3f31-42d6-859c-cbd84f446ee5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f725e0f121e628a1cb8d28ca425d17abccfb397d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2283adaacb8e49d13799b7dd9f6f4199fadcde88
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038652"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532021"
 ---
 # <a name="filenamemax"></a>FILENAME_MAX
 

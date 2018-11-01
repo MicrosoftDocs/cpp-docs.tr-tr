@@ -1,29 +1,19 @@
 ---
-title: 'HLSL özellik sayfaları: Çıktı dosyaları | Microsoft Docs'
-ms.custom: ''
+title: 'HLSL Özellik Sayfaları: Çıktı Dosyaları'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.FXCompilerTool.AssemblerOutput
 - VC.Project.FXCompilerTool.ObjectFileOutput
 - VC.Project.FXCompilerTool.HeaderFileOutput
 - VC.Project.FXCompilerTool.VariableName
 - VC.Project.FXCompilerTool.AssemblerOutputFile
-dev_langs:
-- C++
 ms.assetid: c5ba1e72-30de-43eb-a15a-5b0ae58e55c2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1f04b5f56511975851f4314f2977b84799c2f4e0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 96736b58eed280a0b4e91b9cb47cb53dc2e91cd4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410526"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513717"
 ---
 # <a name="hlsl-property-pages-output-files"></a>HLSL Özellik Sayfaları: Çıktı Dosyaları
 

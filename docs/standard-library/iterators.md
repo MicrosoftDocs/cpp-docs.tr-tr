@@ -1,26 +1,16 @@
 ---
-title: Yineleyiciler | Microsoft Docs
-ms.custom: ''
+title: Yineleyiciler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - iterator conventions
 - C++ Standard Library, iterator conventions
 ms.assetid: 2f746be7-b37d-4bfc-bf05-be4336ca982f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 858612ebdda30e68972d11072b4c2ac7f4f88954
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: cf1f519521d86f2b7782fb93ed3b4aca4ecd5b24
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235496"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643449"
 ---
 # <a name="iterators"></a>Yineleyiciler
 

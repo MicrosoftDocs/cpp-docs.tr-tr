@@ -1,27 +1,17 @@
 ---
-title: Dışa aktarılan DLL işlev giriş noktaları | Microsoft Docs
-ms.custom: ''
+title: Dışa Aktarılan DLL İşlev Giriş Noktaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - exporting DLLs [MFC], functions
 - MFC, managing state data
 - state management [MFC], exported DLLs
 ms.assetid: 3268666e-d24b-44f2-80e8-7c80f73b93ca
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0b6bc9d6664ef1846523d5da90553e4a9e8cc6c4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8b84209833fee42ec8ebdd1fdea7a9229decad9d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444124"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463333"
 ---
 # <a name="exported-dll-function-entry-points"></a>Dışa Aktarılan DLL İşlev Giriş Noktaları
 

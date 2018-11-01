@@ -1,27 +1,17 @@
 ---
-title: gslice_array sınıfı | Microsoft Docs
-ms.custom: ''
+title: gslice_array Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - valarray/std::gslice_array
-dev_langs:
-- C++
 helpviewer_keywords:
 - gslice_array class
 ms.assetid: ad1b4514-b14a-4baf-a293-d5a8e8674c75
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0f88957ac4c9ce14d05a71c266607e499c512541
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1485b68f29651c0c42048fea02a8320ced8748aa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059044"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472169"
 ---
 # <a name="gslicearray-class"></a>gslice_array Sınıfı
 

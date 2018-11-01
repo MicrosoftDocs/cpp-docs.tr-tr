@@ -1,10 +1,6 @@
 ---
-title: _endthread, _endthreadex | Microsoft Docs
-ms.custom: ''
+title: _endthread, _endthreadex
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _endthread
 - _endthreadex
@@ -26,8 +22,6 @@ f1_keywords:
 - endthreadex
 - _endthreadex
 - endthread
-dev_langs:
-- C++
 helpviewer_keywords:
 - _endthread function
 - endthread function
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - _endthreadex function
 - threading [C++], terminating threads
 ms.assetid: 18a91f2f-659e-40b4-b266-ec12dcf2abf5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8e380b3d39d20806b63452f0d3093d9853170c26
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 48a2ce90b6bc90d40f6071898e1e5182502e938f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109751"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597489"
 ---
 # <a name="endthread-endthreadex"></a>_endthread, _endthreadex
 

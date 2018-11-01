@@ -1,10 +1,6 @@
 ---
-title: CRBTree sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRBTree sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CRBTree
 - ATLCOLL/ATL::CRBTree
@@ -28,21 +24,15 @@ f1_keywords:
 - ATLCOLL/ATL::CRBTree::RemoveAll
 - ATLCOLL/ATL::CRBTree::RemoveAt
 - ATLCOLL/ATL::CRBTree::SetValueAt
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRBTree class
 ms.assetid: a1b1cb63-38e4-4fc2-bb28-f774d1721760
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9e8ed5434ab9eac05c20055c788ab289800e9479
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a0f66e888220fbc5a4a484ddd37a3f28dff66065
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059363"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50583280"
 ---
 # <a name="crbtree-class"></a>CRBTree sınıfı
 

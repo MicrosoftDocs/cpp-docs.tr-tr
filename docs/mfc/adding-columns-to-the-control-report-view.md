@@ -1,12 +1,6 @@
 ---
-title: (Rapor görünümü) denetime sütun ekleme | Microsoft Docs
-ms.custom: ''
+title: Denetime Sütun Ekleme (Rapor Görünümü)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CListCtrl class [MFC], adding columns
 - report view in CListCtrl class [MFC]
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - columns [MFC], adding to CListCtrl
 - CListCtrl class [MFC], report view
 ms.assetid: 7392c0d7-f8a5-4e7b-9ae7-b53dc9dd80ae
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bf967a3a1557bdba8f372c6f277f62eb257befee
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e40a923c755f8b32ca3a6ed1884eb7f7a1d6abfb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392001"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50529346"
 ---
 # <a name="adding-columns-to-the-control-report-view"></a>Denetime Sütun Ekleme (Rapor Görünümü)
 

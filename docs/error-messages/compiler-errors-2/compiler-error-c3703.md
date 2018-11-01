@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3703 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3703
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3703
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3703
 ms.assetid: 7e3677d9-f2be-4c26-998f-423564e9023c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 730409d9db313294e23693b6d50d4b0aff0f8869
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0b34760bc3f5b23148ce84cf590685efad2008df
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46043891"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428086"
 ---
 # <a name="compiler-error-c3703"></a>Derleyici Hatası C3703
 

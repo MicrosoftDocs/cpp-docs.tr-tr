@@ -1,10 +1,6 @@
 ---
-title: _locking | Microsoft Docs
-ms.custom: ''
+title: _locking
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _locking
 apilocation:
@@ -22,8 +18,6 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _locking
-dev_langs:
-- C++
 helpviewer_keywords:
 - locking function
 - bytes [C++], locking file
@@ -31,20 +25,16 @@ helpviewer_keywords:
 - files [C++], locking
 - _locking function
 ms.assetid: 099aaac1-d4ca-4827-aed6-24dff9844150
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1666f631d9bceccb8925b2002b797753e024ab9d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1309d99d8e7040626384e38324c1e910e4731295
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404152"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523823"
 ---
 # <a name="locking"></a>_locking
 
-Kilitler veya bir dosyanın bayt kilidini açar.
+Kilitler veya bayt bir dosyanın kilidini açar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,10 +52,10 @@ int _locking(
 Dosya tanımlayıcısı.
 
 *Modu*<br/>
-Eylem kilitleme.
+Gerçekleştirilecek eylem kilitleniyor.
 
 *nbytes*<br/>
-Kilitlenecek bayt sayısı.
+Kilitlemek için bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -73,36 +63,36 @@ Kilitlenecek bayt sayısı.
 
 |errno değeri|Koşul|
 |-|-|
-**EACCES**|Kilitleme ihlali (zaten kilitli veya kilidi dosyası).
+**SPAWN**|(Zaten kilitli veya kilidi dosyası) ihlali kilitleniyor.
 **EBADF**|Geçersiz dosya tanımlayıcısı.
-**EDEADLOCK**|Kilit ihlali. Ne zaman döndürülen **_LK_LOCK** veya **_LK_RLCK** bayrağı belirtilir ve 10 denemeden sonra dosya kilitlenemez.
+**EDEADLOCK**|Kilit ihlali. Ne zaman iade **_LK_LOCK** veya **_LK_RLCK** bayrağı belirtildi ve 10 denemeden sonra dosya kilitlenemez.
 **EINVAL**|Geçersiz bağımsız değişken için verilen **_locking**.
 
-Geçersiz dosya açıklayıcısı gibi hatalı bir parametre nedeniyle başarısız olması durumunda geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).
+Gibi bir geçersiz dosya tanımlayıcısı hatalı bir parametre nedeniyle başarısız olması durumunda geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Locking** işlevi kilitler veya kilidini açar *nbytes* tarafından belirtilen dosya bayt *fd*. Bir dosyada baytları kilitleme erişimi başka işlemler tarafından bu bayt engeller. Tüm kilitlenmesi veya kilidinin kaldırılması dosya işaretçisini geçerli konumunda başlayan ve sonraki geçer *nbytes* bayt sayısı. Kilit bayt mümkündür dosyanın sonunu geçti.
+**_Locking** işlevi kilitler ya da kilidini açarak *nbytes* tarafından belirtilen dosyanın bayt *fd*. Bir dosyadaki baytları kilitleme erişim için bu baytlardan başka işlemler tarafından engeller. Tüm kilitleme veya kilidini açma dosya işaretçisini geçerli konumunda başlar ve sonraki geçer *nbytes* bayt. Kilit bayt mümkündür dosya sonunu geçti.
 
-*mod* Locking.h içinde tanımlanan aşağıdaki bildirim sabitlerden biri olması gerekir.
+*modu* Locking.h içinde tanımlanan aşağıdaki bildirim sabitleri biri olmalıdır.
 
-|*mod* değeri|Efekt|
+|*modu* değeri|Efekt|
 |-|-|
-**_LK_LOCK**|Belirtilen bayt kilitler. Bayt kilitlenemez, programın yeniden 1 saniye sonra hemen çalışır. 10 denemeden sonra bayt kilitlenemez varsa, sabit bir hata döndürür.
+**_LK_LOCK**|Belirtilen bayt kilitler. Bayt kilitlenemez, program yeniden 1 saniye sonra hemen çalışır. 10 denemeden sonra bayt kilitlenemez, sabit bir hata döndürür.
 **_LK_NBLCK**|Belirtilen bayt kilitler. Bayt kilitlenemez, sabit bir hata döndürür.
 **_LK_NBRLCK**|Aynı **_LK_NBLCK**.
 **_LK_RLCK**|Aynı **_LK_LOCK**.
-**_LK_UNLCK**|Daha önce kilitlendiğinden gerekir belirtilen bayt kilidini açar.
+**_LK_UNLCK**|Önceden kilitlenmiş gerekir belirtilen bayt kilidini açar.
 
-Çakışmaması birden çok bölgeye dosyasının kilitlenebilir. Kilidi açılıyor bir bölge önceden kilitlendiğinden gerekir. **_locking** yapar birleştirme bitişik bölgeler; iki kilitli bölgeler bitişik varsa, her bölge ayrı olarak kilidinin açılması gerekir. Bölgeler yalnızca kısa bir süre kilitli olmalıdır ve bir dosyayı kapatma veya program çıkmadan önce kilidinin.
+Bir dosyanın üst üste birden çok bölgede kilitlenebilir. Bir bölge kilidi açılıyor önceden kilitlenmiş gerekir. **_locking** birleştirme bitişik bölgeleri yapar; kilitli iki bölgeleri bitişikse, her bölgede ayrı olarak kilidinin açık olması gerekir. Bölgeler, yalnızca kısa bir süre kilitli olması ve bir dosyayı kapatma veya program çıkmadan önce kilidi.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_locking**|\<io.h > ve \<sys/locking.h >|\<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

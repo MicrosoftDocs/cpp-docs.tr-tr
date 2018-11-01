@@ -1,26 +1,16 @@
 ---
-title: Üstbilgi denetimi oluşturma | Microsoft Docs
-ms.custom: ''
+title: Üstbilgi Denetimi Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHeaderCtrl class [MFC], creating
 - header controls [MFC], creating
 ms.assetid: 7864d9d2-4a2c-4622-b58b-7b110a1e28d2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 29ba8f4d75071bc5d1859c7df721b86aa83f14e1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fdb96eee243214d053a8f375f742cf69aa4e512d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393977"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568488"
 ---
 # <a name="creating-the-header-control"></a>Üstbilgi Denetimi Oluşturma
 

@@ -1,26 +1,15 @@
 ---
-title: Ekleme, düzenleme veya silme denetimleri | Microsoft Docs
-ms.custom: ''
+title: Denetimleri Ekleme, Düzenleme veya Silme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Dialog Editor [C++], creating controls
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: e52f169653222808845b0d381718e064c09fda11
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ff222ce6d91810931f3102810730ab6eeb5b3687
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440829"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569173"
 ---
 # <a name="adding-editing-or-deleting-controls"></a>Denetimleri Ekleme, Düzenleme veya Silme
 

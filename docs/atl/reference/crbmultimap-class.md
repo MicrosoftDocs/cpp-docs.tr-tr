@@ -1,10 +1,6 @@
 ---
-title: CRBMultiMap sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRBMultiMap sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CRBMultiMap
 - ATLCOLL/ATL::CRBMultiMap
@@ -14,21 +10,15 @@ f1_keywords:
 - ATLCOLL/ATL::CRBMultiMap::GetNextWithKey
 - ATLCOLL/ATL::CRBMultiMap::Insert
 - ATLCOLL/ATL::CRBMultiMap::RemoveKey
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRBMultiMap class
 ms.assetid: 94d3ec0c-3e30-4ab7-a101-d8da4fb8add3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 55a520a85b030338f420c5d6d6608d8609f44f2e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f421848a87ea3cc38309e85eb39c9453530ce4fa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071095"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659101"
 ---
 # <a name="crbmultimap-class"></a>CRBMultiMap sınıfı
 

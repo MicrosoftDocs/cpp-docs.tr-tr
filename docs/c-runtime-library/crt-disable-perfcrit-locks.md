@@ -1,29 +1,19 @@
 ---
-title: _CRT_DISABLE_PERFCRIT_LOCKS | Microsoft Docs
-ms.custom: ''
+title: _CRT_DISABLE_PERFCRIT_LOCKS
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - _CRT_DISABLE_PERFCRIT_LOCKS
 - CRT_DISABLE_PERFCRIT_LOCKS
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRT_DISABLE_PERFCRIT_LOCKS constant
 - _CRT_DISABLE_PERFCRIT_LOCKS constant
 ms.assetid: 36cc2d86-cdb1-4b2b-a03c-c0d3818e7c6f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bd01cbddac128e2369971d07320ff95986d822f9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 475cc57b5b47f5abf8c268db3acf9e727ce6a743
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053901"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50593474"
 ---
 # <a name="crtdisableperfcritlocks"></a>_CRT_DISABLE_PERFCRIT_LOCKS
 

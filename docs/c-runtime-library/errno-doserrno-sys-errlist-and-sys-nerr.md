@@ -1,10 +1,6 @@
 ---
-title: errno _doserrno, _sys_errlist ve _sys_nerr | Microsoft Docs
-ms.custom: ''
+title: errno, _doserrno, _sys_errlist, and _sys_nerr
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 apiname:
 - _errno
 apilocation:
@@ -15,8 +11,6 @@ f1_keywords:
 - errno
 - _sys_nerr
 - _doserrno
-dev_langs:
-- C++
 helpviewer_keywords:
 - error codes, printing
 - sys_errlist global variable
@@ -27,16 +21,12 @@ helpviewer_keywords:
 - _sys_nerr global variable
 - sys_nerr global variable
 ms.assetid: adbec641-6d91-4e19-8398-9a34046bd369
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5ea13f86b99dd0a4678a715452122ee3f1a64d98
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 50b44c659aac66dbaddad711cceef635f277d2c3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054954"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487735"
 ---
 # <a name="errno-doserrno-syserrlist-and-sysnerr"></a>errno, _doserrno, _sys_errlist, and _sys_nerr
 

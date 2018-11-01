@@ -1,27 +1,17 @@
 ---
-title: FORC | Microsoft Docs
-ms.custom: ''
+title: FORC
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - FORC
-dev_langs:
-- C++
 helpviewer_keywords:
 - FORC directive
 ms.assetid: 57c05099-0c46-44bc-9ae5-27ce850ccdff
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f4a16af6b8af984c887402669469e4ba9ea5ab28
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0dcac81bcf7bcbc5fbb956195cf9645d8b59200b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43685056"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554472"
 ---
 # <a name="forc"></a>FORC
 

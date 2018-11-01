@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2827 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2827
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2827
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2827
 ms.assetid: cb3e5814-0c92-40e4-b620-98578ae3003a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 139a012f9ed4dd3b6d81d92be3c441df4f899aac
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7f1f19b91580bffa1133ae11ab91f2243153a389
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052224"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579659"
 ---
 # <a name="compiler-error-c2827"></a>Derleyici Hatası C2827
 

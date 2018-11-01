@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4364 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4364
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4364
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4364
 ms.assetid: 1477634c-d60f-4570-ad16-1aaeae24ac7f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e37c7f37e1b51296bd5c3ae2cbdb85a93326f027
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: db2774b6a73a989b4e9250719f99122826b486fe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087259"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643605"
 ---
 # <a name="compiler-warning-level-1-c4364"></a>Derleyici Uyarısı (düzey 1) C4364
 

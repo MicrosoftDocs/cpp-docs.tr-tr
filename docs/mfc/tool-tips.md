@@ -1,12 +1,6 @@
 ---
-title: Araç ipuçları | Microsoft Docs
-ms.custom: ''
+title: Araç İpuçları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFrameWnd class [MFC], tool tips
 - Help [MFC], tool tips for controls
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - controls [MFC], tool tips
 - buttons [MFC], tool tips
 ms.assetid: 7f0bba86-7c55-4bf6-8455-687a4dcb2be8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f9169f0548bb58ffa063f3b3e947f16e877758e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 43e4d9bad06ded35f377839b177c30f4dd634dc2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439997"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549636"
 ---
 # <a name="tool-tips"></a>Araç İpuçları
 

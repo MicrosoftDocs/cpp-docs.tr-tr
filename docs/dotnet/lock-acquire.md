@@ -1,9 +1,6 @@
 ---
-title: Lock::Acquire | Microsoft Docs
-ms.custom: ''
+title: lock::acquire
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - lock::acquire
@@ -11,22 +8,15 @@ f1_keywords:
 - msclr.lock.acquire
 - msclr::lock::acquire
 - lock.acquire
-dev_langs:
-- C++
 helpviewer_keywords:
 - acquire method
 ms.assetid: c214274e-7519-4739-82aa-91b04a32d3f9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 0a1bc71e4474f0d7d22d217adb96aa7340fb933b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a799f934024def40c2003f8496b2457d12eb69bf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409174"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533737"
 ---
 # <a name="lockacquire"></a>lock::acquire
 

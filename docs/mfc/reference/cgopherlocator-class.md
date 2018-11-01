@@ -1,31 +1,21 @@
 ---
-title: CGopherLocator sınıfı | Microsoft Docs
-ms.custom: ''
+title: CGopherLocator sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CGopherLocator
 - AFXINET/CGopherLocator
 - AFXINET/CGopherLocator::CGopherLocator
 - AFXINET/CGopherLocator::GetLocatorType
-dev_langs:
-- C++
 helpviewer_keywords:
 - CGopherLocator [MFC], CGopherLocator
 - CGopherLocator [MFC], GetLocatorType
 ms.assetid: 6fcc015f-5ae6-4959-b936-858634c71019
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1d9309917fe89abbf3679060898861e1c698d660
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 336997fd4094f4e5e1eb73f467734e40440b63a5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445847"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641356"
 ---
 # <a name="cgopherlocator-class"></a>CGopherLocator sınıfı
 

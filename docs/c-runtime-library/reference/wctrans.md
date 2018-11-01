@@ -1,10 +1,6 @@
 ---
-title: wctrans | Microsoft Docs
-ms.custom: ''
+title: wctrans
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wctrans
 apilocation:
@@ -22,28 +18,22 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - wctrans
-dev_langs:
-- C++
 helpviewer_keywords:
 - character codes, wctrans
 - characters, codes
 - characters, converting
 - wctrans function
 ms.assetid: 215404bf-6d60-489c-9ae9-880e6b586162
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 613c3c64885f10029a8b013504d84ffa8f35d664
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3c7aace7a93160d2e9a4c1523d49bcaf6ae4dc20
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410495"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656696"
 ---
 # <a name="wctrans"></a>wctrans
 
-Karakter kodları bir kümesinden eşleme diğerine belirler.
+Başka bir karakter kodlarını kümesindeki bir eşleme belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,13 +50,13 @@ Geçerli dönüşümler birini belirten bir dize.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Varsa **LC_CTYPE** geçerli yerel ayar kategorisi adı ile eşleşen özellik dizesi eşleme tanımlamak değil *özelliği*, sıfır işlevi döndürür. Aksi takdirde, sıfır olmayan bir değer ikinci bağımsız değişken olarak kullanım için uygun bir sonraki çağrı için döndürür [towctrans](towctrans.md).
+Varsa **LC_CTYPE** geçerli yerel ayarının kategori adı, özellik dizesi ile eşleşen bir eşleme tanımlamıyor *özelliği*, sıfır döndürür. Aksi takdirde, sıfır dışında bir değeri ikinci bağımsız değişken olarak kullanmak için uygun bir sonraki çağrı döndürür [towctrans](towctrans.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev bir karakter kodları kümesinden eşleme diğerine belirler.
+Bu işlev, başka bir karakter kodlarını kümesindeki bir eşleme belirler.
 
-Çağrıları aşağıdaki çiftleri tüm yerel ayarlarda aynı davranışı sahiptir, ancak ek eşlemeleri bile "C" yerel ayarda tanımlamak mümkündür:
+Aşağıdaki çağrıları çiftleri tüm yerel ayarlarda aynı davranışa sahip, ancak ek eşlemeleri bile "C" yerel ayarında tanımlamak da mümkündür:
 
 |İşlev|Aynı|
 |--------------|-------------|
@@ -75,11 +65,11 @@ Bu işlev bir karakter kodları kümesinden eşleme diğerine belirler.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgisi|
+|Yordam|Gerekli başlık|
 |-------------|---------------------|
 |**wctrans**|\<wctype.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

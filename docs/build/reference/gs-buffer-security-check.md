@@ -1,16 +1,10 @@
 ---
-title: -GS (arabellek güvenlik denetimi) | Microsoft Docs
-ms.custom: ''
+title: /GS (Arabellek Güvenlik Denetimi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.BufferSecurityCheck
 - VC.Project.VCCLCompilerTool.BufferSecurityCheck
 - /GS
-dev_langs:
-- C++
 helpviewer_keywords:
 - buffers [C++], buffer overruns
 - buffer overruns, compiler /GS switch
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - -GS compiler option [C++]
 - buffers [C++], avoiding overruns
 ms.assetid: 8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: be077ecb92a3344911431a3ecbbdd7d3dc038eab
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 30fd602bb1c094694a9ebb6095349e971842d5f2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726017"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557553"
 ---
 # <a name="gs-buffer-security-check"></a>/GS (Arabellek Güvenlik Denetimi)
 
@@ -136,7 +126,7 @@ Kullansanız bile **/GS**, hiçbir arabellek taşmalarına sahip güvenli kod ya
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BufferSecurityCheck%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BufferSecurityCheck%2A>.
 
 ## <a name="example"></a>Örnek
 

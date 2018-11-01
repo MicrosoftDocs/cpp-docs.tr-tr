@@ -1,30 +1,19 @@
 ---
-title: Bir menüye (C++) komutları ekleme | Microsoft Docs
-ms.custom: ''
+title: (C++) menüye komut ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.menu
-dev_langs:
-- C++
 helpviewer_keywords:
 - menu items, adding to menus
 - menus [C++], adding items
 - commands [C++], adding to menus
 ms.assetid: 1523a755-0ab5-42f8-9e98-bb9881564431
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 852d91dc6bc72fc86307199c8d2e7b67d53323bc
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 71a3a13b3c86fa4a4238fd9a42dd45b48ef318de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057653"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571424"
 ---
 # <a name="adding-commands-to-a-menu-c"></a>(C++) menüye komut ekleme
 

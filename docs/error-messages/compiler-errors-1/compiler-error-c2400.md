@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2400 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2400
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2400
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2400
 ms.assetid: 1ba441ee-73f9-42a5-bfe9-fbeab93808eb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 303a0aacbcde0fcf495469ed9cb9310ddb7710e5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3ede43ec5ddb61b85c48094193d01d18bacae2bc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46115170"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667187"
 ---
 # <a name="compiler-error-c2400"></a>Derleyici Hatası C2400
 

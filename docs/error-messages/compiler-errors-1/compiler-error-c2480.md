@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2480 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2480
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2480
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2480
 ms.assetid: 1a58d1c2-971b-4084-96fa-f94aa51c02f1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8b5d8f80293c05b651ad01e725ae501288005dfe
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 90016b65d4ddd58da3fb3c5ab6d81322dc0ef394
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46102594"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566731"
 ---
 # <a name="compiler-error-c2480"></a>Derleyici Hatası C2480
 

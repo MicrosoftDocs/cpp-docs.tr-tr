@@ -1,28 +1,18 @@
 ---
-title: CType&lt;char&gt; sınıfı | Microsoft Docs
-ms.custom: ''
+title: CType&lt;char&gt; sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - ctype<char>
 - locale/std::ctype<char>
-dev_langs:
-- C++
 helpviewer_keywords:
 - ctype<char> class
 ms.assetid: ee30acb4-a743-405e-b3d4-13602092da84
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5293c01428f16b1be6901c970b9af470ef8ed1da
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: adaad8f76de5b712aea13794ef2d7b9a096fb8ef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083340"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492006"
 ---
 # <a name="ctypeltchargt-class"></a>CType&lt;char&gt; sınıfı
 

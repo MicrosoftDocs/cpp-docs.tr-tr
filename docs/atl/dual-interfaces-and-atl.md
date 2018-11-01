@@ -1,27 +1,17 @@
 ---
-title: Çift arabirimler ve ATL | Microsoft Docs
-ms.custom: ''
+title: Çift arabirimler ve ATL
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - COM, and ATL
 - ATL, dual interfaces
 - dual interfaces, about dual interfaces
 ms.assetid: 5a390e89-d2c4-41f0-8538-cab2c5e5d4c8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f59e43bbc1d5f11d1582bad577cc0d8eb971d121
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ebf0da8b86463d2d56d071d1f5d91a170ca743e5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46108592"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533516"
 ---
 # <a name="dual-interfaces-and-atl"></a>Çift arabirimler ve ATL
 

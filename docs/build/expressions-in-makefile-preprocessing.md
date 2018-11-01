@@ -1,27 +1,17 @@
 ---
-title: Derleme görevleri dosyası önişlemlerindeki ifadeler | Microsoft Docs
-ms.custom: ''
+title: Derleme Görevleri Dosyası Önişlemlerindeki İfadeler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - preprocessing makefiles
 - expressions [C++], makefile preprocessing
 - makefiles, preprocessing
 ms.assetid: 37f0f413-97e0-452c-a83f-3c9002c44c92
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1070eb01802bd4b39f62ae24519ad6dabca7eb90
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8d7b8cd489eabf239cbc993181142ca84431cd82
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719013"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594876"
 ---
 # <a name="expressions-in-makefile-preprocessing"></a>Derleme Görevleri Dosyası Önişlemlerindeki İfadeler
 

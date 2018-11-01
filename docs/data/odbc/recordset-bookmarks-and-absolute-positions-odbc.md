@@ -1,14 +1,8 @@
 ---
-title: 'Kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC) | Microsoft Docs'
-ms.custom: ''
+title: 'Kayıt Kümesi: Yer İşaretleri ve Mutlak Konumlar (ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
 f1_keywords:
 - SetAbsolutePosition
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDBVariant class, bookmarks
 - absolute positions, ODBC recordsets
@@ -27,17 +21,12 @@ helpviewer_keywords:
 - GetBookmark method
 - SetAbsolutePosition method, bookmarks
 ms.assetid: 189788d6-33c1-41c5-9265-97db2a5d43cc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 4e751ab86548f42e5ab9350f95cb2b49d813ec8c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 826c1c0124eb261c97fff8f1e2fa01c8becb073a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064081"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500951"
 ---
 # <a name="recordset-bookmarks-and-absolute-positions-odbc"></a>Kayıt Kümesi: Yer İşaretleri ve Mutlak Konumlar (ODBC)
 

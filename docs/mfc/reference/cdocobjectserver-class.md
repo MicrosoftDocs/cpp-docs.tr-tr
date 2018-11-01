@@ -1,10 +1,6 @@
 ---
-title: CDocObjectServer sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDocObjectServer sınıfı
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDocObjectServer
 - AFXDOCOB/CDocObjectServer
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXDOCOB/CDocObjectServer::OnActivateView
 - AFXDOCOB/CDocObjectServer::OnApplyViewState
 - AFXDOCOB/CDocObjectServer::OnSaveViewState
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDocObjectServer [MFC], CDocObjectServer
 - CDocObjectServer [MFC], ActivateDocObject
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CDocObjectServer [MFC], OnApplyViewState
 - CDocObjectServer [MFC], OnSaveViewState
 ms.assetid: 18cd0dff-0616-4472-b8d9-66c081bc383a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 552252c8826e167b4aaa21aa41e489bbc8179ec3
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 704d3290df89c327bcf10b9afe7acb8621165863
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890381"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509532"
 ---
 # <a name="cdocobjectserver-class"></a>CDocObjectServer sınıfı
 

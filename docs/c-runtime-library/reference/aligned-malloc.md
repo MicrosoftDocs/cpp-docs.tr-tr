@@ -1,10 +1,6 @@
 ---
-title: _aligned_malloc | Microsoft Docs
-ms.custom: ''
+title: _aligned_malloc
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _aligned_malloc
 apilocation:
@@ -23,22 +19,16 @@ apitype: DLLExport
 f1_keywords:
 - _aligned_malloc
 - alligned_malloc
-dev_langs:
-- C++
 helpviewer_keywords:
 - aligned_malloc function
 - _aligned_malloc function
 ms.assetid: fb788d40-ee94-4039-aa4d-97d73dab1ca0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0b500471a3580af9045f1c42707a543669da48c7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c89dff7d2159855037fee565f2148a8edb89f07d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46063183"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514396"
 ---
 # <a name="alignedmalloc"></a>_aligned_malloc
 

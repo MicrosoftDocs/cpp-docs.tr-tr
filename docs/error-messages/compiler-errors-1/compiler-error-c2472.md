@@ -1,41 +1,31 @@
 ---
-title: Derleyici Hatası C2472 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2472
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2472
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2472
 ms.assetid: 3b36bcdc-2ba5-4357-ab88-7545ba0551cd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 43279190847322fa2154c6faababdcd41b490eef
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: d2f104bb61915f8d19d5fff22eea17929c0e8d74
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704866"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50632745"
 ---
 # <a name="compiler-error-c2472"></a>Derleyici Hatası C2472
 
-> '*işlevi*' yönetilen kodda oluşturulamıyor: '*ileti*'; karışık bir görüntü oluşturmak için/CLR ile derleme
+> '*işlevi*' yönetilen kod içinde üretilemez: '*ileti*'; karma görüntü üretmek için/CLR ile derleyin
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yönetilen kod tarafından desteklenmeyen türleri içinde saf ortak dil çalışma zamanı (CLR) ortamı kullanıldığında bu hata meydana gelir. İle derleme **/CLR** hatayı gidermek için.
+Yönetilen kod tarafından desteklenmeyen türler bir saf ortak dil çalışma zamanı (CLR) ortamında kullanıldığında, bu hata oluşur. Derleme **/CLR** hatayı gidermek için.
 
-**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C2472 oluşturur.
+Aşağıdaki örnek, C2472 oluşturur.
 
 ```cpp
 // C2472.cpp

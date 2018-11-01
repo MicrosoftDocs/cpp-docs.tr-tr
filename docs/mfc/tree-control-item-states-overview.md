@@ -1,27 +1,17 @@
 ---
-title: Ağaç denetim öğesi durumlarına genel bakış | Microsoft Docs
-ms.custom: ''
+title: Ağaç Denetim Öğesi Durumlarına Genel Bakış
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - states, CTreeCtrl items
 - tree controls [MFC], item states overview
 - CTreeCtrl class [MFC], item states
 ms.assetid: 2db11ae0-0d87-499d-8c1f-5e0dbe9e94c8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d3c14c24c7dc35ced74d2ae86bae4f19ce331ed1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 389c273f7c8727ecbb4ed5455987126e21e26a63
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404905"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467957"
 ---
 # <a name="tree-control-item-states-overview"></a>Ağaç Denetim Öğesi Durumlarına Genel Bakış
 

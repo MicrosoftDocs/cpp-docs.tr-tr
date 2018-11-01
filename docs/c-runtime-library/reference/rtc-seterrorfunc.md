@@ -1,10 +1,6 @@
 ---
-title: _RTC_SetErrorFunc | Microsoft Docs
-ms.custom: ''
+title: _RTC_SetErrorFunc
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _RTC_SetErrorFunc
 apilocation:
@@ -22,26 +18,20 @@ apitype: DLLExport
 f1_keywords:
 - RTC_SetErrorFunc
 - _RTC_SetErrorFunc
-dev_langs:
-- C++
 helpviewer_keywords:
 - RTC_SetErrorFunc function
 - _RTC_SetErrorFunc function
 ms.assetid: b2292722-0d83-4092-83df-3d5b19880666
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e146f699f9026260470b1c540c7567f074896a38
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 6b292d685eea8eccb9e9b2a3c3e6cd903d501005
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451621"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514744"
 ---
 # <a name="rtcseterrorfunc"></a>_RTC_SetErrorFunc
 
-Çalışma zamanı hata denetimleri (RTCs) raporlama için işleyici olarak bir işlev belirler. Bu işlev kullanım dışıdır; kullanmak **_RTC_SetErrorFuncW** yerine.
+Çalışma zamanı hata denetimleri (RTCs) raporlaması için işleyici olarak bir işlevi belirtir. Bu işlev kullanım dışı; kullanma **_RTC_SetErrorFuncW** yerine.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,7 +44,7 @@ _RTC_error_fn _RTC_SetErrorFunc(
 ### <a name="parameters"></a>Parametreler
 
 *İşlevi*<br/>
-Çalışma zamanı hata denetimleri işleyecek işlevi adresi.
+Çalışma zamanı hata denetimlerini işleyecek işlevin adresi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -62,7 +52,7 @@ _RTC_error_fn _RTC_SetErrorFunc(
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev kullanmayın; Bunun yerine, kullanın **_RTC_SetErrorFuncW**. Yalnızca geriye dönük uyumluluk için tutulmaktadır.
+Bu işlev kullanmayın; Bunun yerine, **_RTC_SetErrorFuncW**. Bu yalnızca geriye dönük uyumluluk için tutulmaktadır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -70,7 +60,7 @@ Bu işlev kullanmayın; Bunun yerine, kullanın **_RTC_SetErrorFuncW**. Yalnızc
 |-------------|---------------------|
 |**_RTC_SetErrorFunc**|\<rtcapi.h >|
 
-Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

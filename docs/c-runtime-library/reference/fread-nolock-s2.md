@@ -1,11 +1,6 @@
 ---
-title: _fread_nolock_s2 | Microsoft Docs
-ms.custom: ''
+title: _fread_nolock_s2
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - _fread_nolock_s
 apilocation:
@@ -24,23 +19,17 @@ apitype: DLLExport
 f1_keywords:
 - _fread_nolock_s
 - stdio/_fread_nolock_s
-dev_langs:
-- C++
 ms.assetid: 5badb9ab-11df-4e17-8162-30bda2a4572e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db0cd82d251595be586b46fb66a0f0262484e2f8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1dccbd362577e524f0455a2248d4d0f209ea6295
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398256"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580811"
 ---
 # <a name="freadnolocks"></a>_fread_nolock_s
 
-Verileri başka bir iş parçacığı kilitlemeden bir akıştan okur. Bu sürümü [fread_nolock](fread-nolock.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Veriler başka iş parçacıklarının kilitleme olmadan bir akıştan okur. Bu sürümü [fread_nolock](fread-nolock.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,18 +46,18 @@ size_t _fread_nolock_s(
 ### <a name="parameters"></a>Parametreler
 
 *Arabellek*<br/>
-Verileri için depolama konumu.
+Veri için depolama konumu.
 
 *BufferSize*<br/>
-Hedef arabelleğinin bayt cinsinden boyutu.
+Hedef arabelleğin bayt cinsinden boyutu.
 
 *elementSize*<br/>
-Bayt cinsinden okumak için öğeyi boyutu.
+Okunan bayt öğe boyutu.
 
 *elementCount*<br/>
 Okunacak öğe maksimum sayısı.
 
-*Akış*<br/>
+*Stream*<br/>
 İşaretçi **dosya** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -77,7 +66,7 @@ Bkz: [fread_s](fread-s.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev bir kilitleme sürümüdür **fread_s**. Aynı **fread_s** dışında girişime diğer iş parçacıkları tarafından korunmuyor. Başka bir iş parçacığı kilitleme yükünü artırmak değil olduğundan daha hızlı olabilir. Tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işler burada gibi iş parçacığı bağlamlarda yalnızca bu işlevi kullanın.
+Bu işlev, kilitleme yapılmayan bir sürümünü **fread_s**. Aynıdır **fread_s** , başka iş parçacıklarının engellemelerinden korunmamaları hariç aynıdırlar. Diğer iş parçacıklarının kilitleme yüküne tabi olmayan çünkü daha hızlı olabilir. Bu işlev yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -85,10 +74,10 @@ Bu işlev bir kilitleme sürümüdür **fread_s**. Aynı **fread_s** dışında 
 |--------------|---------------------|
 |**_fread_nolock_s**|C: \<stdio.h >; C++: \<cstdio > veya \<stdio.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fwrite](fwrite.md)<br/>
 [_read](read.md)<br/>

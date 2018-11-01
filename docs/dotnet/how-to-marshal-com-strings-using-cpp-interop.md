@@ -1,12 +1,7 @@
 ---
-title: 'Nasıl yapılır: C++ birlikte çalışması kullanarak COM dizelerini sıralama | Microsoft Docs'
+title: 'Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - interop [C++], strings
 - marshaling [C++], strings
@@ -14,17 +9,12 @@ helpviewer_keywords:
 - data marshaling [C++], strings
 - COM [C++], marshaling strings
 ms.assetid: 06590759-bf99-4e34-a3a9-4527ea592cc2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: f758352c11cc5e7d8c66c2a29b69504b2c5ad641
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 664c9ed973e2dff4467d13742390da8a944eb87a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394185"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559126"
 ---
 # <a name="how-to-marshal-com-strings-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Sıralama
 

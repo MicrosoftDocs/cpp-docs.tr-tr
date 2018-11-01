@@ -1,14 +1,8 @@
 ---
-title: 'TN006: İleti eşlemeleri | Microsoft Docs'
-ms.custom: ''
+title: 'TN006: İleti Eşlemeleri'
 ms.date: 06/25/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.messages.maps
-dev_langs:
-- C++
 helpviewer_keywords:
 - ON_UPDATE_COMMAND_UI macro [MFC]
 - ON_NOTIFY_RANGE macro [MFC]
@@ -25,16 +19,12 @@ helpviewer_keywords:
 - ON_COMMAND_EX macro [MFC]
 - message maps [MFC], Windows messaging
 ms.assetid: af4b6794-4b40-4f1e-ad41-603c3b7409bb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 69aecab15ffb1914dbc8a6a6ae15fca307bc77ef
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 91d1793999c12951bd80e0f592772bbae1e2d679
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386258"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463321"
 ---
 # <a name="tn006-message-maps"></a>TN006: İleti Eşlemeleri
 

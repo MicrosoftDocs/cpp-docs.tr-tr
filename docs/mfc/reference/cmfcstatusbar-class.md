@@ -1,10 +1,6 @@
 ---
-title: CMFCStatusBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCStatusBar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCStatusBar
 - AFXSTATUSBAR/CMFCStatusBar
@@ -41,8 +37,6 @@ f1_keywords:
 - AFXSTATUSBAR/CMFCStatusBar::SetPaneWidth
 - AFXSTATUSBAR/CMFCStatusBar::SetTipText
 - AFXSTATUSBAR/CMFCStatusBar::OnDrawPane
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCStatusBar [MFC], CalcFixedLayout
 - CMFCStatusBar [MFC], CommandToIndex
@@ -78,16 +72,12 @@ helpviewer_keywords:
 - CMFCStatusBar [MFC], SetTipText
 - CMFCStatusBar [MFC], OnDrawPane
 ms.assetid: f2960d1d-f4ed-41e8-bd99-0382b2f8d88e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b3ba50c607d7522441420686340c1f1ff32a7ccc
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bd63ee83412c3f89b6eea755c0b0a213b1dcc2e7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081556"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498052"
 ---
 # <a name="cmfcstatusbar-class"></a>CMFCStatusBar sınıfı
 

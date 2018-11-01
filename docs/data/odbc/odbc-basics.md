@@ -1,12 +1,6 @@
 ---
-title: ODBC temelleri | Microsoft Docs
-ms.custom: ''
+title: ODBC Temelleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC cursor library [ODBC], ODBC components
 - ODBC components
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - ODBC, about ODBC
 - ODBC, components
 ms.assetid: ec529702-0fb2-4754-b8de-d1efa8eca18f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: f4ff225cb9095f78e7e7bd79c02eef1b67b7eb18
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 81b1f6d06d909b5b046703b97c4574270efbdd46
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069639"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591730"
 ---
 # <a name="odbc-basics"></a>ODBC Temelleri
 

@@ -1,23 +1,13 @@
 ---
-title: Ortam adları | Microsoft Docs
-ms.custom: ''
+title: Ortam Adları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 9af409a5-e724-465a-9a21-88d3586c2e92
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4df255959ab1c60a5ccaeb9c4389cbcbdc56368b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 67c49c256945eb60b10b9bc19b0dca8ba0b73a84
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081422"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516981"
 ---
 # <a name="environment-names"></a>Ortam Adları
 

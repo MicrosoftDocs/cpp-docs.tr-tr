@@ -1,12 +1,6 @@
 ---
-title: 256-renk paletini (simgeler için görüntü Düzenleyicisi) kullanarak | Microsoft Docs
-ms.custom: ''
+title: 256-Renk Paletini Kullanma (Simgeler İçin Görüntü Düzenleyicisi)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - 256-color palette
 - colors [C++], icons and cursors
@@ -15,17 +9,12 @@ helpviewer_keywords:
 - palettes, 256-color
 - icons, color
 ms.assetid: 1506ed00-669b-4a21-b1a4-39b6a84a78bb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: d9a8952ccdf4477f263a2fb960020e7abba19546
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f41ca69e7c13dfb722085648cefa11bfe43af819
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418157"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519268"
 ---
 # <a name="using-the-256-color-palette-image-editor-for-icons"></a>256-Renk Paletini Kullanma (Simgeler İçin Görüntü Düzenleyicisi)
 

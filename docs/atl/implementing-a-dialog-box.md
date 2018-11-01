@@ -1,28 +1,18 @@
 ---
-title: İletişim kutusu uygulama | Microsoft Docs
-ms.custom: ''
+title: İletişim kutusu uygulama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSimpleDialog class, implementing dialog boxes in ATL
 - dialog boxes, ATL
 - CAxDialogImpl class, implementing dialog boxes in ATL
 - ATL, dialog boxes
 ms.assetid: 478525f2-aa6a-435a-b162-68fc8aa98a8e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 30e843c6df70548257de1bf1af8c5f0e83555652
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 680ca7a162d8fbedc793ff097663d942843887d6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234074"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645425"
 ---
 # <a name="implementing-a-dialog-box"></a>İletişim kutusu uygulama
 

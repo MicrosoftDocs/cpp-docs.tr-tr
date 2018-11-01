@@ -1,10 +1,6 @@
 ---
-title: CHtmlView sınıfı | Microsoft Docs
-ms.custom: ''
+title: CHtmlView sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CHtmlView
 - AFXHTML/CHtmlView
@@ -102,8 +98,6 @@ f1_keywords:
 - AFXHTML/CHtmlView::SetVisible
 - AFXHTML/CHtmlView::SetWidth
 - AFXHTML/CHtmlView::Stop
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHtmlView [MFC], Create
 - CHtmlView [MFC], CreateControlSite
@@ -200,16 +194,12 @@ helpviewer_keywords:
 - CHtmlView [MFC], SetWidth
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d081b09f271bd2f557b0396a2632dc47c9bebdc8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f30194d552f8bafb4d52597aeb53dbe02a780213
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073587"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438122"
 ---
 # <a name="chtmlview-class"></a>CHtmlView sınıfı
 

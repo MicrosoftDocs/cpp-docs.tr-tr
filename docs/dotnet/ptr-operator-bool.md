@@ -1,9 +1,6 @@
 ---
-title: PTR::operator bool | Microsoft Docs
-ms.custom: ''
+title: ptr::operator bool
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - ptr::operator bool
@@ -11,22 +8,15 @@ f1_keywords:
 - operator bool
 - msclr::com::ptr::operator bool
 - msclr.com.ptr.operator bool
-dev_langs:
-- C++
 helpviewer_keywords:
 - ptr::operator bool
 ms.assetid: 31123377-6ecd-4cef-9b75-3db3996fbcd1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: dcccfd23151d2e09f1fcafeb255dd7261ae2c12a
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 185db15a62cc676c771f60a54c583e19e28e95be
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163796"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509675"
 ---
 # <a name="ptroperator-bool"></a>ptr::operator bool
 

@@ -1,12 +1,6 @@
 ---
-title: İleti işleyicileri | Microsoft Docs
-ms.custom: ''
+title: İleti İşleyicileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - message handlers [MFC]
 - command handling [MFC], message handlers
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - handlers [MFC], command
 - handlers [MFC], message
 ms.assetid: 51bc4e76-dbe3-4cc2-b026-3199d56b2fa9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 22dde243bb6d8e8a283e670804d4b8b6cad9082c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1d775fc98fc97236cd63caf1e4422d32a9245410
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46406756"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588662"
 ---
 # <a name="message-handlers"></a>İleti İşleyicileri
 

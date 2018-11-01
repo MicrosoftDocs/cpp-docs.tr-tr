@@ -1,14 +1,8 @@
 ---
-title: "TN011: Bir DLL'in bir parçası MFC kullanma | Microsoft Docs"
-ms.custom: ''
+title: "TN011: Bir DLL'in bir Parçası Olarak MFC Kullanma"
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc.dll
-dev_langs:
-- C++
 helpviewer_keywords:
 - _USRDLL symbol
 - USRDLLs, compiler switches
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - DLLs [MFC], linking
 - MFC DLLs [MFC], linking regular MFC DLLs to MFC
 ms.assetid: 76753e9c-59dc-40f6-b6a7-f6bb9a7c4190
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e476f456b849c0a5564b59ceae21faed26dc3d34
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e709404ed6e0ba79159131de1cbff80905e9f216
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062138"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517659"
 ---
 # <a name="tn011-using-mfc-as-part-of-a-dll"></a>TN011: Bir DLL'in bir Parçası Olarak MFC Kullanma
 

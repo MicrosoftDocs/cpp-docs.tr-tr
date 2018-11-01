@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2506 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2506
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2506
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2506
 ms.assetid: cfed21cd-2404-46f2-985e-d0c2c3820830
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4967c410dfdce781a4191c9ac848883228ba4d3a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 02f0a81204c4bc1c41111d32bae1c6946dee09ac
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093421"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575558"
 ---
 # <a name="compiler-error-c2506"></a>Derleyici Hatası C2506
 

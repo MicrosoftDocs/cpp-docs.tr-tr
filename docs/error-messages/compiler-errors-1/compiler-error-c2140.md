@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2140 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2140
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2140
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2140
 ms.assetid: d44a0500-002c-4632-9e5e-c71c3a473ec4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3fc0bd6fd0a43b8071a9872c9c1a598b57e090c3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e04a44007161fcfae5bab948584809590edbc095
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065406"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668708"
 ---
 # <a name="compiler-error-c2140"></a>Derleyici Hatası C2140
 

@@ -1,29 +1,19 @@
 ---
-title: -Qıfist (_ftol gösterme) | Microsoft Docs
-ms.custom: ''
+title: /QIfist (Suppress _ftol)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /qifist
-dev_langs:
-- C++
 helpviewer_keywords:
 - QIfist compiler option [C++]
 - -QIfist compiler option [C++]
 - /QIfist compiler option [C++]
 ms.assetid: 1afd32a5-f658-4b66-85f4-e0ce4cb955bd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4b32557507cbe74fc1fde3963a1375318c7ef1e0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e01ee0b7af68127f3a78b4cfda1d110f6187fa74
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448283"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528126"
 ---
 # <a name="qifist-suppress-ftol"></a>/QIfist (Suppress _ftol)
 
@@ -71,7 +61,7 @@ Kullanabileceğiniz [_control87, _controlfp, \__control87_2](../../c-runtime-lib
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

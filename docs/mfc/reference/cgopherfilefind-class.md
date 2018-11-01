@@ -1,10 +1,6 @@
 ---
-title: CGopherFileFind sınıfı | Microsoft Docs
-ms.custom: ''
+title: CGopherFileFind sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CGopherFileFind
 - AFXINET/CGopherFileFind
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXINET/CGopherFileFind::GetLocator
 - AFXINET/CGopherFileFind::GetScreenName
 - AFXINET/CGopherFileFind::IsDots
-dev_langs:
-- C++
 helpviewer_keywords:
 - CGopherFileFind [MFC], CGopherFileFind
 - CGopherFileFind [MFC], FindFile
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - CGopherFileFind [MFC], GetScreenName
 - CGopherFileFind [MFC], IsDots
 ms.assetid: 8465a979-6323-496d-ab4b-e81383fb999d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 57a278dea7c37b17afec10b3ae65413c781d5867
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7d5c8ceeaeb87b2e0f099ac027bbacc744598e8e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074210"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662416"
 ---
 # <a name="cgopherfilefind-class"></a>CGopherFileFind sınıfı
 

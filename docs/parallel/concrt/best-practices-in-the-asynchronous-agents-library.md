@@ -1,28 +1,18 @@
 ---
-title: En iyi uygulamalar zaman uyumsuz aracılar Kitaplığı'ndaki | Microsoft Docs
-ms.custom: ''
+title: Zaman Uyumsuz Aracılar Kitaplığı'ndaki En İyi Yöntemler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - best practices, Asynchronous Agents Library
 - Asynchronous Agents Library, best practices
 - Asynchronous Agents Library, practices to avoid
 - practices to avoid, Asynchronous Agents Library
 ms.assetid: 85f52354-41eb-4b0d-98c5-f7344ee8a8cf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5e70b4004b24b04470e1fff280869887bbba74cb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 70c979be0d37817cf199af0b6a3cbf114fced265
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412749"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494594"
 ---
 # <a name="best-practices-in-the-asynchronous-agents-library"></a>Zaman Uyumsuz Aracılar Kitaplığı'ndaki En İyi Yöntemler
 

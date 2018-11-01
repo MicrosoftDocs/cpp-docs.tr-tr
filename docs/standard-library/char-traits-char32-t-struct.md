@@ -1,32 +1,22 @@
 ---
-title: char_traits&lt;char32_t&gt; yapısı | Microsoft Docs
-ms.custom: ''
+title: char_traits&lt;char32_t&gt; yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - iosfwd/std::char_traits<char_32t>
 - char_traits<char32_t>
-dev_langs:
-- C++
 helpviewer_keywords:
 - char_traits<char32_t> class
 ms.assetid: c0315466-45d0-4a99-b83e-3b1dbfbfbbc3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6caffb278fbcb94eff1042716adc384b56ae6050
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 12fc36a9256a8a744e789fc95bb8603ee6cbf3d4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847019"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50581356"
 ---
 # <a name="chartraitsltchar32tgt-struct"></a>char_traits&lt;char32_t&gt; yapısı
 
-Şablon yapısı uzmanlığı olan yapı **char_traits\<CharType >** türünde bir öğe için `char32_t`.
+Şablon yapı özelleştirmesi olan yapı **char_traits\<CharType >** türünde bir öğe için `char32_t`.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,11 +27,11 @@ struct char_traits<char32_t>;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Uzmanlık izin verir, bu tür nesneler işlemek kitaplık işlevleri yararlanmak yapı `char32_t`.
+Bu tür nesneler düzenleme kitaplığı işlevleri yararlanmak yapı özelleştirmesi sağlar `char32_t`.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<dize >
+**Başlık:** \<dizesi >
 
 **Namespace:** std
 

@@ -1,27 +1,17 @@
 ---
-title: NMAKE önemli hatası U1033 | Microsoft Docs
-ms.custom: ''
+title: NMAKE Önemli Hatası U1033
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - U1033
-dev_langs:
-- C++
 helpviewer_keywords:
 - U1033
 ms.assetid: c146f7b5-7d5c-4329-a522-28a648546016
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7492e5fd77f8e88b2191174f84c298c6166d8d89
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3b1df28e3cd7b27a9e7a130d9d71c1af68db9aec
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066391"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445246"
 ---
 # <a name="nmake-fatal-error-u1033"></a>NMAKE Önemli Hatası U1033
 

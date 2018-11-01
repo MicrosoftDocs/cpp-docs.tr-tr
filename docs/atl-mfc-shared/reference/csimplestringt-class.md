@@ -1,10 +1,6 @@
 ---
-title: CSimpleStringT sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSimpleStringT sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSimpleStringT
 - ATLSIMPSTR/ATL::CSimpleStringT
@@ -35,23 +31,17 @@ f1_keywords:
 - ATLSIMPSTR/ATL::CSimpleStringT::StringLength
 - ATLSIMPSTR/ATL::CSimpleStringT::Truncate
 - ATLSIMPSTR/ATL::CSimpleStringT::UnlockBuffer
-dev_langs:
-- C++
 helpviewer_keywords:
 - shared classes, CSimpleStringT
 - strings [C++], ATL class
 - CSimpleStringT class
 ms.assetid: 15814fcb-5b8f-4425-a97e-3b61fc9b48d8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 326fdd3d4d5e8f19408adc7300c97523b37d942e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 93cb3ae0b2f358f64f0d6de26899d1b08f275b7b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078940"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579289"
 ---
 # <a name="csimplestringt-class"></a>CSimpleStringT sınıfı
 

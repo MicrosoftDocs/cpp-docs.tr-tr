@@ -1,29 +1,20 @@
 ---
-title: QueryInterface | Microsoft Docs
-ms.custom: ''
+title: QueryInterface
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
 f1_keywords:
 - QueryInterface
-dev_langs:
-- C++
 helpviewer_keywords:
 - interfaces, pointers
 - interfaces, availability
 - QueryInterface method
 ms.assetid: 62fce95e-aafa-4187-b50b-e6611b74c3b3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c361bc9510c610f2004af9f09c061d6f4b8b8cd2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 552d0a0f5cbc93bd0d8fc6eb4a77eecee851add6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057456"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477941"
 ---
 # <a name="queryinterface"></a>QueryInterface
 

@@ -1,23 +1,13 @@
 ---
-title: 3.1.3 omp_get_max_threads işlevi | Microsoft Docs
-ms.custom: ''
+title: 3.1.3 omp_get_max_threads İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 5548897c-546e-4d19-b37b-a76f6b30a0a9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c439dc0203fa3435c62e9669da40b5b092556492
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3f954b5ad75b4bdb4a74323f2ab4e819850269ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400828"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546598"
 ---
 # <a name="313-ompgetmaxthreads-function"></a>3.1.3 omp_get_max_threads İşlevi
 

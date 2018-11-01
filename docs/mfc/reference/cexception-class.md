@@ -1,33 +1,23 @@
 ---
-title: CException sınıfı | Microsoft Docs
-ms.custom: ''
+title: CException sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CException
 - AFX/CException
 - AFX/CException::CException
 - AFX/CException::Delete
 - AFX/CException::ReportError
-dev_langs:
-- C++
 helpviewer_keywords:
 - CException [MFC], CException
 - CException [MFC], Delete
 - CException [MFC], ReportError
 ms.assetid: cfacf14d-bfe4-4666-a5c7-38b800512920
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3de077e636f0dfdd1ab046a57a81808b3f80357e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 53dac18b2ee0176eba0a869a0af254ff2978cffd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052849"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562233"
 ---
 # <a name="cexception-class"></a>CException sınıfı
 

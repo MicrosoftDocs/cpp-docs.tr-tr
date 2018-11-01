@@ -1,26 +1,16 @@
 ---
-title: (Visual C++) bağlantı noktasını uygulama | Microsoft Docs
-ms.custom: ''
+title: Bağlantı Noktasını Uygulama (Visual C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Implement Connection Point Wizard [C++]
 - connection points [C++], implementing
 ms.assetid: 5b37e4f9-73c9-4bef-b26d-365bc0662260
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9bba7fdfd44b0a0a97a6d110d2a44b492e1ca449
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 45e3dfcfc7e7bcb9fcbe14e08a8c238fe9bec5a1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429337"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50568330"
 ---
 # <a name="implementing-a-connection-point-visual-c"></a>Bağlantı Noktasını Uygulama (Visual C++)
 

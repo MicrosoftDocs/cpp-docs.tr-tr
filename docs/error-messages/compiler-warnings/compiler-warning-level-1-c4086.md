@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4086 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4086
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4086
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4086
 ms.assetid: 9248831b-22bf-47af-8684-bfadb17e94fc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8b556ecb340e1b9821244f456c108e52fb3b6208
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 77a3675bed99333031131573201d4be38240f488
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46041070"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50451539"
 ---
 # <a name="compiler-warning-level-1-c4086"></a>Derleyici Uyarısı (düzey 1) C4086
 

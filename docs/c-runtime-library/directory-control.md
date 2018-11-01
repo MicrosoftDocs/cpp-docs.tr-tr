@@ -1,28 +1,18 @@
 ---
-title: Dizin denetimi | Microsoft Docs
-ms.custom: ''
+title: Dizin Denetimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.programs
-dev_langs:
-- C++
 helpviewer_keywords:
 - controls [C++], directory
 - directory control routines
 ms.assetid: a72dcf6f-f366-4d20-8850-0e19cc53ca18
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6703b774c60799234d49e359cf6faca69b85b955
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b7a6eb9a74467932dcb8743d31e934d551de4246
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052133"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546456"
 ---
 # <a name="directory-control"></a>Dizin Denetimi
 

@@ -1,27 +1,17 @@
 ---
-title: LIB'e genel bakış | Microsoft Docs
-ms.custom: ''
+title: LIB'e Genel Bakış
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - Lib
-dev_langs:
-- C++
 helpviewer_keywords:
 - LIB [C++], modes
 ms.assetid: e997d423-f574-434f-8b56-25585d137ee0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 223f5284ed25b5a13fddef879e63ec2e480f3314
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 03209bc409453cab1769606cb972f4572d3617bd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703773"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548505"
 ---
 # <a name="overview-of-lib"></a>LIB'e Genel Bakış
 

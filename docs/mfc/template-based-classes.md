@@ -1,12 +1,6 @@
 ---
-title: Şablona dayalı sınıflar | Microsoft Docs
-ms.custom: ''
+title: Şablona Dayalı Sınıflar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - type-safe collections
 - CTypedPtrList class [MFC], template-based classes
@@ -28,16 +22,12 @@ helpviewer_keywords:
 - template-based collection classes [MFC]
 - simple list collection classes [MFC]
 ms.assetid: c69fc95b-c8f6-4a99-abed-517c9898ef0c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b972d4552a8e41ca0dcea4ef57d48ef161ea35b9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8bd64e1c5efd1f80f43cb3460719326f30d5416c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069236"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557865"
 ---
 # <a name="template-based-classes"></a>Şablona Dayalı Sınıflar
 

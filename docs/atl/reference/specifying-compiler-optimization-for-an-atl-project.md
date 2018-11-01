@@ -1,30 +1,20 @@
 ---
-title: ATL projesinde derleyici iyileştirmesi belirtme | Microsoft Docs
-ms.custom: ''
+title: ATL projesinde derleyici iyileştirmesi belirtme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.appwiz.ATL.optimization
 - vc.appwiz.ATL.vtable
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL_DISABLE_NO_VTABLE macro
 - ATL projects, compiler optimization
 - ATL_NO_VTABLE macro
 ms.assetid: 7f379318-66d5-43dd-a53d-530758d3a228
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f756da8f553d68e89dcbee737adbab75f256ae8d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 18c1f404576a7e011698f0b553a2436bab8089a3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053129"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522310"
 ---
 # <a name="specifying-compiler-optimization-for-an-atl-project"></a>ATL projesinde derleyici iyileştirmesi belirtme
 

@@ -1,28 +1,17 @@
 ---
-title: Özellik eşlemeleri | Microsoft Docs
-ms.custom: ''
+title: Özellik Eşlemeleri
 ms.date: 10/24/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB providers, properties
 - maps, property
 - property maps
 ms.assetid: 44abde56-90ad-4612-854e-d2fa5426fa80
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 2c6c3ddc4b19cd9b65203d8a5e675b9ed75720a1
-ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
+ms.openlocfilehash: 174108cac9982e46a62a90f8cb60662527812e47
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50216467"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575506"
 ---
 # <a name="property-maps"></a>Özellik Eşlemeleri
 

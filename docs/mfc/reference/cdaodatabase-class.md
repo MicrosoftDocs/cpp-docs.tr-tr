@@ -1,10 +1,6 @@
 ---
-title: CDaoDatabase sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDaoDatabase sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDaoDatabase
 - AFXDAO/CDaoDatabase
@@ -34,8 +30,6 @@ f1_keywords:
 - AFXDAO/CDaoDatabase::SetQueryTimeout
 - AFXDAO/CDaoDatabase::m_pDAODatabase
 - AFXDAO/CDaoDatabase::m_pWorkspace
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDaoDatabase [MFC], CDaoDatabase
 - CDaoDatabase [MFC], CanTransact
@@ -64,16 +58,12 @@ helpviewer_keywords:
 - CDaoDatabase [MFC], m_pDAODatabase
 - CDaoDatabase [MFC], m_pWorkspace
 ms.assetid: 8ff5b342-964d-449d-bef1-d0ff56aadf6d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5b89d186701abf3b8c760e16800142e47e2872a3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6bdabafc905b1ae5d6ed9a1fcd83ab1982871c3b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073948"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50439293"
 ---
 # <a name="cdaodatabase-class"></a>CDaoDatabase sınıfı
 

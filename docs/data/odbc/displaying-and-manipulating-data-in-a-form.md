@@ -1,12 +1,6 @@
 ---
-title: Formdaki verileri görüntüleme ve düzenleme | Microsoft Docs
-ms.custom: ''
+title: Formdaki Verileri Görüntüleme ve Düzenleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - forms [C++], displaying data
 - displaying data [C++], forms
@@ -15,17 +9,12 @@ helpviewer_keywords:
 - data [MFC]
 - data [MFC], displaying in a form
 ms.assetid: c56185c4-12cb-40b1-b499-02b29ea83e3a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 0b8d769d39a362cd62da2dcc573470391c8530ae
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1694d9cbc770e02c550891fc83c1cc0a9f64824a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079187"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517799"
 ---
 # <a name="displaying-and-manipulating-data-in-a-form"></a>Formdaki Verileri Görüntüleme ve Düzenleme
 

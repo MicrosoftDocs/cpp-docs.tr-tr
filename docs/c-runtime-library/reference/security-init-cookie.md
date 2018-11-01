@@ -1,10 +1,6 @@
 ---
-title: __security_init_cookie | Microsoft Docs
-ms.custom: ''
+title: __security_init_cookie
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - __security_init_cookie
 apilocation:
@@ -22,24 +18,18 @@ apitype: DLLExport
 f1_keywords:
 - security_init_cookie
 - __security_init_cookie
-dev_langs:
-- C++
 helpviewer_keywords:
 - security cookie [C++]
 - __security_init_cookie function
 - security_init_cookie function
 - global security cookie
 ms.assetid: 32119905-0897-4a1c-84ca-bffd16c9b2af
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 699a75da7829feb39142a777a34a14fcd85be653
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: c7b25e05b4574a7b397cd07d55000a5e53db58f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821153"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573621"
 ---
 # <a name="securityinitcookie"></a>__security_init_cookie
 

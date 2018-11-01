@@ -1,29 +1,19 @@
 ---
-title: PARITY? işleci | Microsoft Docs
-ms.custom: ''
+title: PARITY? işleci
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - PARITY?
 - operator PARITY?
-dev_langs:
-- C++
 helpviewer_keywords:
 - PARITY? operator
 - operator PARITY?
 ms.assetid: f8c52def-c4b7-4b81-af96-2b0c2d943f6c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c0b93d709f70bf8f5435b79f246ea354edcb3a5b
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 12c9a8a4e2127274f915a60c83232c0266a17061
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686061"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50595783"
 ---
 # <a name="operator-parity"></a>PARITY? işleci
 

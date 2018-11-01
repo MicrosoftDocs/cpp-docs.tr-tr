@@ -1,22 +1,18 @@
 ---
-title: '&lt;type_traits&gt; tür tanımları | Microsoft Docs'
-ms.custom: ''
+title: '&lt;type_traits&gt; tür tanımları'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - type_traits/std::false_type
 - xtr1common/std::false_type
 - type_traits/std::true_type
 - xtr1common/std::true_type
-dev_langs:
-- C++
 ms.assetid: 8ac040ca-ed2d-4570-adc9-cb5626530053
-ms.openlocfilehash: c44eace65b2bfeabadaff750c92100c6b319dd82
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 579d276b7e9f2a7b44b41681b85fffd318ecddbb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854174"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582084"
 ---
 # <a name="lttypetraitsgt-typedefs"></a>&lt;type_traits&gt; tür tanımları
 
@@ -24,9 +20,9 @@ ms.locfileid: "33854174"
 |-|-|
 |[false_type](#false_type)|[true_type](#true_type)|
 
-## <a name="false_type"></a>  false_type Typedef
+## <a name="false_type"></a>  Typedef false_type
 
-Tam sayı sabit yanlış değer ile tutar.
+False değeri ile tamsayı sabiti tutar.
 
 ```cpp
 typedef integral_constant<bool, false> false_type;
@@ -34,7 +30,7 @@ typedef integral_constant<bool, false> false_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon uzmanlaşması eşanlamlısı türüdür `integral_constant`.
+Türü şablonunun bir özelleştirmesi eşanlamlıdır `integral_constant`.
 
 ### <a name="example"></a>Örnek
 
@@ -57,9 +53,9 @@ false_type == false
 true_type == true
 ```
 
-## <a name="true_type"></a>  true_type Typedef
+## <a name="true_type"></a>  Typedef true_type
 
-Tam sayı sabit true değeri ile tutar.
+True değerine sahip tam sayı sabiti tutar.
 
 ```cpp
 typedef integral_constant<bool, true> true_type;
@@ -67,7 +63,7 @@ typedef integral_constant<bool, true> true_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon uzmanlaşması eşanlamlısı türüdür `integral_constant`.
+Türü şablonunun bir özelleştirmesi eşanlamlıdır `integral_constant`.
 
 ### <a name="example"></a>Örnek
 

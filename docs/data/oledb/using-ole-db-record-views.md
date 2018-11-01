@@ -1,12 +1,6 @@
 ---
-title: OLE DB kayıt görünümlerini kullanma | Microsoft Docs
-ms.custom: ''
+title: OLE DB Kayıt Görünümlerini Kullanma
 ms.date: 10/24/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB record views
 - COleDBRecordView class, overview
@@ -15,17 +9,12 @@ helpviewer_keywords:
 - OLE DB, record views
 - MFC, record views
 ms.assetid: 1cd3e595-ce08-43d8-a0a9-d03b5d3e24ce
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: febb247e96669951ea24b3e1633fa0857a6acf7c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 631e78e1a397ec360b1f3b2d94d7340e96925e23
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083210"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582727"
 ---
 # <a name="using-ole-db-record-views"></a>OLE DB Kayıt Görünümlerini Kullanma
 

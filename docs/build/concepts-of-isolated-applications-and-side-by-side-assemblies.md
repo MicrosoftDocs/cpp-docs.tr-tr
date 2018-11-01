@@ -1,26 +1,16 @@
 ---
-title: Yalıtılmış uygulamalar ve yan yana derleme kavramları | Microsoft Docs
-ms.custom: ''
+title: Yalıtılmış Uygulama ve Yan Yana Derleme Kavramları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - side-by-side assemblies [C++]
 - isolated assemblies [C++]
 ms.assetid: 945a885f-cb3e-4c8a-a0b9-2c2e3e02cc50
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 27ecefc5e448a1040e7eff3e45b94b0a31fbfc87
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6453e68b07013bc5f5799b7252ad9a88e73250f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710263"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532944"
 ---
 # <a name="concepts-of-isolated-applications-and-side-by-side-assemblies"></a>Yalıtılmış Uygulama ve Yan Yana Derleme Kavramları
 

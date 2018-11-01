@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3632 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3632
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3632
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3632
 ms.assetid: a04e3217-f5a1-4461-a1db-d69fd096d468
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fdacb6463e99d4cb125199a32dfc5ef01ea76e9f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 289f2620548b32991ade667e227572cb7c580b21
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110087"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552457"
 ---
 # <a name="compiler-error-c3632"></a>Derleyici Hatası C3632
 

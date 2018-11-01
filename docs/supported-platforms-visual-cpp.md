@@ -1,26 +1,20 @@
 ---
-title: Desteklenen platformlar (Visual C++) | Microsoft Docs
-ms.custom: ''
+title: Desteklenen Platformlar (Visual C++)
 ms.date: 11/04/2016
 ms.technology:
 - cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Visual C++, platforms supported
 - platforms [C++]
 ms.assetid: 0d893056-4008-411a-b3d1-5f57fd7da95c
 author: mikeblome
 ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6453d718454f7cfef3bb0211d05eb26a712eaf0f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 5a077ae90078e4157c154cae2821e67642eff64a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218319"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459442"
 ---
 # <a name="supported-platforms-visual-c"></a>Desteklenen Platformlar (Visual C++)
 

@@ -1,29 +1,19 @@
 ---
-title: SafeInt Kitaplığı | Microsoft Docs
+title: SafeInt Kitaplığı
 ms.custom: index-page
 ms.date: 10/22/2018
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - SafeInt
-dev_langs:
-- C++
 helpviewer_keywords:
 - libraries, SafeInt
 - SafeInt library
 ms.assetid: 5321e875-67c5-49d7-9650-85a876552d14
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 8b91ed376e77a2e8a6d6b476065ff89c8c1d3e94
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d65ac9deaadc39b04ee816251c4b342d26b0a2a4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053506"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561323"
 ---
 # <a name="safeint-library"></a>SafeInt Kitaplığı
 

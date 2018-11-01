@@ -1,29 +1,19 @@
 ---
-title: CMFCCustomColorsPropertyPage sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCCustomColorsPropertyPage sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCCustomColorsPropertyPage
 - AFXCUSTOMCOLORSPROPERTYPAGE/CMFCCustomColorsPropertyPage
 - AFXCUSTOMCOLORSPROPERTYPAGE/CMFCCustomColorsPropertyPage::Setup
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCCustomColorsPropertyPage [MFC], Setup
 ms.assetid: 46a45ba2-1fda-440d-8018-d4dcd44f5816
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 876d361d64681568ba22ba84fcc53cda08199703
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b35db4d6cd322cd363a9c490283c1351fe7a7ce2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434940"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473638"
 ---
 # <a name="cmfccustomcolorspropertypage-class"></a>CMFCCustomColorsPropertyPage sınıfı
 

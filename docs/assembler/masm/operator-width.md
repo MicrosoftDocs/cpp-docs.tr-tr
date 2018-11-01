@@ -1,29 +1,19 @@
 ---
-title: WIDTH işleci | Microsoft Docs
-ms.custom: ''
+title: WIDTH işleci
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - Width
 - operator WIDTH
-dev_langs:
-- C++
 helpviewer_keywords:
 - WIDTH operator
 - operator WIDTH
 ms.assetid: 7b00e296-a101-4cd5-a578-17eec7a4eb44
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c58250b6f719a8be27a7166c3f4967ca2bcb6282
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: d77bc86a8b1aab1654198c58a42b0b0449502622
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43685874"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448769"
 ---
 # <a name="operator-width"></a>WIDTH işleci
 

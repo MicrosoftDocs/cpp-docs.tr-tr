@@ -1,27 +1,17 @@
 ---
-title: CListCtrl kullanma | Microsoft Docs
-ms.custom: ''
+title: CListCtrl Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CListCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - CListCtrl class [MFC], using
 ms.assetid: 20d6a5d6-8f07-4ddf-975f-ea2dfebcc835
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ac2faa49596f2d3563a452c3437dd1bb72fe0dae
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9b9e4fe40d0d9f724c2cf7a1b28c4ed72e71855b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372411"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525794"
 ---
 # <a name="using-clistctrl"></a>CListCtrl Kullanma
 

@@ -1,20 +1,13 @@
 ---
-title: Numaralandırmalar (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: Numaralandırmalar (C + +/ CX)
 ms.date: 12/30/2016
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: 99fbbe28-c1cd-43af-9ead-60f90eba6e68
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7fff0ffb62182e078149d1403c495c69ae918c36
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 54d542b9fea127101cc74d4f064a7598889c3bd7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105730"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50583168"
 ---
 # <a name="enums-ccx"></a>Numaralandırmalar (C + +/ CX)
 

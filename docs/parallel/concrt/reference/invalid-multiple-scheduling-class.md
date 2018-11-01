@@ -1,29 +1,19 @@
 ---
-title: invalid_multiple_scheduling sınıfı | Microsoft Docs
-ms.custom: ''
+title: invalid_multiple_scheduling Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - invalid_multiple_scheduling
 - CONCRT/concurrency::invalid_multiple_scheduling
 - CONCRT/concurrency::invalid_multiple_scheduling::invalid_multiple_scheduling
-dev_langs:
-- C++
 helpviewer_keywords:
 - invalid_multiple_scheduling class
 ms.assetid: e9a47cb7-a778-4df7-92b0-3752119fd4c7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 71898449447595db5df66ce619c423d62f2410be
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: aa22c9b218b88a8834e8ba474c2aa2c203ea89dc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384928"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517123"
 ---
 # <a name="invalidmultiplescheduling-class"></a>invalid_multiple_scheduling Sınıfı
 

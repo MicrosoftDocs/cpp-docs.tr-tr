@@ -1,27 +1,17 @@
 ---
-title: 'Nasıl yapılır: call ve transformer sınıflarına iş işlevleri sağlama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: call ve transformer Sınıflarına İş İşlevleri Sağlama'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - call class, example
 - using the transformer class [Concurrency Runtime]
 - using the call class [Concurrency Runtime]
 ms.assetid: df715ce4-8507-41ca-b204-636d11707a73
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3102947009780f6f4e735b70506c5b2dc02f416b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d9d472ddd8d5c7baf3cb16e1df33a2bdb74c5381
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438970"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501012"
 ---
 # <a name="how-to-provide-work-functions-to-the-call-and-transformer-classes"></a>Nasıl yapılır: call ve transformer Sınıflarına İş İşlevleri Sağlama
 

@@ -1,14 +1,8 @@
 ---
-title: -GZ (etkinleştirme yığın çerçevesi çalışma zamanı hata denetimini) | Microsoft Docs
-ms.custom: ''
+title: /GZ (Yığın Çerçevesi Çalışma Zamanı Hata Denetimini Etkinleştir)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /gz
-dev_langs:
-- C++
 helpviewer_keywords:
 - -GZ compiler option [C++]
 - release-build errors
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - GZ compiler option [C++]
 - debug builds, catch release-build errors
 ms.assetid: b3efeeff-d5e3-4057-91c9-f6fc73d0270c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8f13824064b7c7dcdb75524a22b14a4d90942918
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 86d9b2cb7da3c21ce46331d9f817911b65c4ba2d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45707232"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562905"
 ---
 # <a name="gz-enable-stack-frame-run-time-error-checking"></a>/GZ (Yığın Çerçevesi Çalışma Zamanı Hata Denetimini Etkinleştir)
 
@@ -55,7 +45,7 @@ Aynı işlemleri gerçekleştirir [/RTC (çalışma zamanı hata denetimleri)](.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

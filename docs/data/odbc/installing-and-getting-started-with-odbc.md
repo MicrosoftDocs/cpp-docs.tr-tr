@@ -1,27 +1,16 @@
 ---
-title: Yükleme ve ODBC ile çalışmaya başlama | Microsoft Docs
-ms.custom: ''
+title: ODBC Yükleme ve Başlangıç
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - installing ODBC
 - ODBC, installing
 ms.assetid: 6b473481-1d68-468f-89f6-82b0fd7716fd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 89472fc97b781217198b7e37a4f00267e0343438
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8ebf164fc51d50c45313654a2259126eef5afeb6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057705"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484259"
 ---
 # <a name="installing-and-getting-started-with-odbc"></a>ODBC Yükleme ve Başlangıç
 

@@ -1,23 +1,13 @@
 ---
-title: UNWIND_INFO | Microsoft Docs
-ms.custom: ''
+title: struct UNWIND_INFO
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: f0aee906-a1b9-44cc-a8ad-463637bd5411
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6b342aa89dd82f89b1318da3ab1acb610085a7e7
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 0130d30c314a7736ffaf24753a2e6fdf9ad55b12
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717021"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517045"
 ---
 # <a name="struct-unwindinfo"></a>struct UNWIND_INFO
 

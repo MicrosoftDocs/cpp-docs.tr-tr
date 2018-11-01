@@ -1,12 +1,6 @@
 ---
-title: Başvuru sayım (ATL) | Microsoft Docs
-ms.custom: ''
+title: Başvuru sayım (ATL)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - AddRef method [C++], reference counting
 - reference counting
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - reference counts
 - references, counting
 ms.assetid: b1fd4514-6de6-429f-9e60-2777c0d07a3d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9288eda15b0bac3d3694ee56a2f427aefb60e032
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f77939c25de19d619d6b4eeb2d3d6a0f3f1e5178
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086440"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473118"
 ---
 # <a name="reference-counting"></a>Başvuru sayımı
 

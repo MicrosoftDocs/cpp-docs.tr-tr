@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3095 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3095
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3095
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3095
 ms.assetid: cde725be-0936-40f6-9e57-e1d7d0710f83
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 118337c2410f6898e0ad06a530e9fc3ebfbe29df
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b8b6a7bfd5b44e0ddd1e8dfba1a054d9645a4693
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46105166"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438759"
 ---
 # <a name="compiler-error-c3095"></a>Derleyici Hatası C3095
 

@@ -1,9 +1,6 @@
 ---
-title: HandleT sınıfı | Microsoft Docs
-ms.custom: ''
+title: HandleT Sınıfı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HandleT
@@ -17,8 +14,6 @@ f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HandleT::IsValid
 - corewrappers/Microsoft::WRL::Wrappers::HandleT::operator=
 - corewrappers/Microsoft::WRL::Wrappers::HandleT::~HandleT
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleT class
 - Microsoft::WRL::Wrappers::HandleT::Attach method
@@ -32,17 +27,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleT::operator= operator
 - Microsoft::WRL::Wrappers::HandleT::~HandleT, destructor
 ms.assetid: 3822b32a-a426-4d94-a54d-919d4df60ee2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: d0f7364ac86aebd0f5a9a1c0f7ec2343b9e162d0
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c7c5951cd966e33d3dda45f9dad504d821838de6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081674"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486144"
 ---
 # <a name="handlet-class"></a>HandleT Sınıfı
 

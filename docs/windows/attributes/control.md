@@ -1,28 +1,17 @@
 ---
-title: Denetim (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: Denetim (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.control
-dev_langs:
-- C++
 helpviewer_keywords:
 - Control attribute
 ms.assetid: 3d046bb2-4afe-4cb8-a762-233b296e1975
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: df3a3b17af4ccb55fffccdbe87c1ac8c39eba603
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9a0aec5ec2142159feb592419056da0f100914d8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057500"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482101"
 ---
 # <a name="control"></a>denetimi
 

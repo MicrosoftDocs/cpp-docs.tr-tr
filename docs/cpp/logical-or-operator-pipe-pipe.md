@@ -1,30 +1,20 @@
 ---
-title: 'Mantıksal OR işleci: || | Microsoft Docs'
-ms.custom: ''
+title: 'Mantıksal OR işleci: ||'
 ms.date: 06/14/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - '||'
-dev_langs:
-- C++
 helpviewer_keywords:
 - OR operator [C++], logical
 - '|| operator'
 - OR operator
 - logical OR operator
 ms.assetid: 31837c99-2655-4bf3-8ded-f13b7a9dc533
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 37a7591e185b1436bb3cd0f8b56a625f71bf8ed2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5db1af870644d1552aeac813edce0985a31d95b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46073658"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618889"
 ---
 # <a name="logical-or-operator-"></a>Mantıksal OR işleci: ||
 

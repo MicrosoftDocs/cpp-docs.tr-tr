@@ -1,12 +1,6 @@
 ---
-title: İçeri ve dışarı aktarma | Microsoft Docs
-ms.custom: ''
+title: İçeri ve Dışarı Aktarma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - DLLs [C++], importing
 - exporting DLLs [C++]
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - DLLs [C++], exporting from
 - __declspec(dllimport) keyword [C++]
 ms.assetid: 7c44c2aa-2117-4cec-9615-a65bfd3f8f7b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fc07ba1de15795e99a5e2ed75a5df9752026d08e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: c7328f0e5f5d408ec93f31fa4cbea987594264ba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717008"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492781"
 ---
 # <a name="importing-and-exporting"></a>İçeri ve Dışarı Aktarma
 

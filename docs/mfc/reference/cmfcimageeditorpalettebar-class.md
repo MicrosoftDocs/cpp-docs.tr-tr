@@ -1,31 +1,21 @@
 ---
-title: Cmfcımageeditorpalettebar sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cmfcımageeditorpalettebar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCImageEditorPaletteBar
 - AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar
 - AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::GetRowHeight
 - AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCImageEditorPaletteBar [MFC], GetRowHeight
 - CMFCImageEditorPaletteBar [MFC], IsButtonExtraSizeAvailable
 ms.assetid: 3fb7ba8e-f254-4d56-b913-9941b4ed8138
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f36a9205cbaa2410dbdc25971a36879412f45ef0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 71fe8824e7a7d250d9e939afea99f73fcb4943dd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398358"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498032"
 ---
 # <a name="cmfcimageeditorpalettebar-class"></a>Cmfcımageeditorpalettebar sınıfı
 

@@ -1,29 +1,19 @@
 ---
-title: CMFCImageEditorDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCImageEditorDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCImageEditorDialog
 - AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog
 - AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog::CMFCImageEditorDialog
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCImageEditorDialog [MFC], CMFCImageEditorDialog
 ms.assetid: 6a7d08f3-1ec2-4062-9b79-a0c2776b58d1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0f360c8fc44fba07aee8287137468937d959c596
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 84bbe72abeedc03f19f06a1f8498023ff54be95e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428804"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50503070"
 ---
 # <a name="cmfcimageeditordialog-class"></a>CMFCImageEditorDialog sınıfı
 

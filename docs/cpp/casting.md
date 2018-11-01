@@ -1,12 +1,6 @@
 ---
-title: Atama | Microsoft Docs
-ms.custom: ''
+title: Atama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - casting [C++]
 - coercion [C++]
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - polymorphic classes [C++]
 - classes [C++], polymorphism
 ms.assetid: 3dbeb06e-2f4b-4693-832d-624bc8ec95de
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 472fc8f8f505b3c5c214fddd5b59436fb4e52e5f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: eb309319a4af6d604d8558552ce313ba1d0fb629
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090405"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560803"
 ---
 # <a name="casting"></a>Atama
 

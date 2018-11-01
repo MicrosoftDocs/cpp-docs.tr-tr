@@ -1,14 +1,8 @@
 ---
-title: 'TN056: Yerelleştirilmiş MFC bileşenlerini yükleme | Microsoft Docs'
-ms.custom: ''
+title: 'TN056: Yerelleştirilmiş MFC Bileşenlerini Yükleme'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc.components
-dev_langs:
-- C++
 helpviewer_keywords:
 - components [MFC]
 - TN056
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - localization [MFC], resources
 - installing MFC components
 ms.assetid: 0b582615-3bb1-4fc0-b569-d127d6deccd3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0831c59f9ea5c5068dc8cf70ca203c240bdcacc7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 578a7cf02505b9f49d1345cb9ca87f3e514f05e1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425009"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453722"
 ---
 # <a name="tn056-installation-of-localized-mfc-components"></a>TN056: Yerelleştirilmiş MFC Bileşenlerini Yükleme
 

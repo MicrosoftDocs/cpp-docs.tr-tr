@@ -1,12 +1,6 @@
 ---
-title: C++ ve MFC ile çoklu iş parçacığı kullanımı | Microsoft Docs
-ms.custom: ''
+title: C++ ve MCF ile Çoklu İş Parçacığı Kullanımı
 ms.date: 08/27/2018
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC [C++], multithreading
 - threading [C++], MFC
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - threading [MFC]
 - user interface threads [C++]
 ms.assetid: 979605f8-3988-44b5-ac9c-b8cce7fcce14
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2a57846311fc3332dba0b613ca37a2b5da4368d3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c707c1c117bbc0005b2b3da4ed39f083ae407b27
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394640"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643423"
 ---
 # <a name="multithreading-with-c-and-mfc"></a>C++ ve MCF ile Çoklu İş Parçacığı Kullanımı
 

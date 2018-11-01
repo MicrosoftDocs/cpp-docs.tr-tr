@@ -1,26 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4839 | Microsoft Docs
+title: Derleyici Uyarısı (Düzey 3) C4839
 ms.date: 09/13/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4839
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4839
 ms.assetid: f4f99066-9258-4330-81a8-f4a75a1d95ee
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 14a79c6abb118fb173382be87ebda4316545c65a
-ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
+ms.openlocfilehash: 09b6e5b8dc984b35df7de96f5cf8610f2b0f16af
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601411"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536652"
 ---
 # <a name="compiler-warning-level-3-c4839"></a>Derleyici Uyarısı (Düzey 3) C4839
 

@@ -1,33 +1,23 @@
 ---
-title: CMFCToolBarFontComboBox sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCToolBarFontComboBox sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCToolBarFontComboBox
 - AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox
 - AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::CMFCToolBarFontComboBox
 - AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::GetFontDesc
 - AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::SetFont
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCToolBarFontComboBox [MFC], CMFCToolBarFontComboBox
 - CMFCToolBarFontComboBox [MFC], GetFontDesc
 - CMFCToolBarFontComboBox [MFC], SetFont
 ms.assetid: 25f8e08c-aadd-4cb5-9581-a99d49d444b1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 04ff3603d403c34915bc062ff6c17fd818d8a286
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 28b2b77ed28453f148786ba7109743a0b7baf598
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072518"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429269"
 ---
 # <a name="cmfctoolbarfontcombobox-class"></a>CMFCToolBarFontComboBox sınıfı
 

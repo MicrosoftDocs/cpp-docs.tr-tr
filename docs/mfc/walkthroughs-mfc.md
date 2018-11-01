@@ -1,25 +1,15 @@
 ---
-title: İzlenecek yollar (MFC) | Microsoft Docs
-ms.custom: ''
+title: İzlenecek Yollar (MFC)
 ms.date: 09/20/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC Feature Pack, walkthroughs
 ms.assetid: 20d5756f-ad58-46f4-8b6c-c7a1020b72eb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9d96ce9ade06c849716a680bd3c0c8bb6feeccc6
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: ecd68e04b90a1b130edfc5022c82180b4eff87d1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235665"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492150"
 ---
 # <a name="walkthroughs-mfc"></a>İzlenecek Yollar (MFC)
 

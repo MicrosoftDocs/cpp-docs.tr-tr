@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2390 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2390
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2390
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2390
 ms.assetid: 06b749ee-d072-4db1-b229-715f2c0728b5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5de5a9af8f8aa04219f0a7d61162336745fd4bfa
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 89f6ebb02326413e8dca67d333e555321da4e645
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098222"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50595879"
 ---
 # <a name="compiler-error-c2390"></a>Derleyici Hatası C2390
 

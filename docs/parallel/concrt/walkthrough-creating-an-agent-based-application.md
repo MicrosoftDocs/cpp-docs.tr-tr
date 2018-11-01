@@ -1,26 +1,16 @@
 ---
-title: 'İzlenecek yol: aracı temelli uygulama oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek Yol: Aracı Temelli Uygulama Oluşturma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - asynchronous agents, creating
 - agent class, example
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 41ae491a851d2e9a21a57ce35a54590323060881
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1d5e7ed085481b714423760cebf2984084626645
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070601"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509350"
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>İzlenecek Yol: Aracı Temelli Uygulama Oluşturma
 

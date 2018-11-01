@@ -1,30 +1,20 @@
 ---
-title: _ATL_BASE_MODULE70 yapısı | Microsoft Docs
-ms.custom: ''
+title: _ATL_BASE_MODULE70 yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - ATL::_ATL_BASE_MODULE70
 - ATL._ATL_BASE_MODULE70
 - _ATL_BASE_MODULE70
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL_BASE_MODULE70 structure
 - _ATL_BASE_MODULE70 structure
 ms.assetid: 4539282f-15b8-4d7c-aafa-a85dc56f4980
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a8ee35df4b6ee792cd91f1b294259544e8944509
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 806ed86076d8b27662bcd9a328d43cabf5df5c86
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46089053"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50667551"
 ---
 # <a name="atlbasemodule70-structure"></a>_ATL_BASE_MODULE70 yapısı
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3161 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3161
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3161
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3161
 ms.assetid: 1fe2be85-a343-487b-8476-bf9e257eb29d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 11396ccad33489b41d18759ba4d2f00b445e94a3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 22ecc176036308699c3ad7bd8c015836be910073
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46136081"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501666"
 ---
 # <a name="compiler-error-c3161"></a>Derleyici Hatası C3161
 

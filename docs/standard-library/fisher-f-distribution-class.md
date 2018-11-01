@@ -1,10 +1,6 @@
 ---
-title: fisher_f_distribution sınıfı | Microsoft Docs
-ms.custom: ''
+title: fisher_f_distribution Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::fisher_f_distribution
 - random/std::fisher_f_distribution::reset
@@ -19,8 +15,6 @@ f1_keywords:
 - random/std::fisher_f_distribution::param_type::n
 - random/std::fisher_f_distribution::param_type::operator==
 - random/std::fisher_f_distribution::param_type::operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::fisher_f_distribution [C++]
 - std::fisher_f_distribution [C++], reset
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - std::fisher_f_distribution [C++], param_type
 - std::fisher_f_distribution [C++], param_type
 ms.assetid: 9513b6ce-3309-4be1-829b-f504bca35bbf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 51d8a4656cac15da170d221c784105ff939983a5
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 2fe8509205cffc0b8a6f7cd04d6c364c38de9bd4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108804"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640030"
 ---
 # <a name="fisherfdistribution-class"></a>fisher_f_distribution Sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: Olay havuzu haritalar | Microsoft Docs
-ms.custom: ''
+title: Olay İç Havuz Eşlemeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.maps
-dev_langs:
-- C++
 helpviewer_keywords:
 - event sink maps [MFC]
 ms.assetid: a9757eb2-5f4a-45ec-a2cd-ce5eec85b16f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 05377af7edc1090c5e15b4bdef9e9c71e43bd9be
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 48bd859795dfb7fdac74fbf2003db0e2c0c3c04a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390266"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501419"
 ---
 # <a name="event-sink-maps"></a>Olay İç Havuz Eşlemeleri
 

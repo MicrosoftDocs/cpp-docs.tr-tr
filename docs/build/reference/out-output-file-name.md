@@ -1,15 +1,9 @@
 ---
-title: -OUT (çıktı dosyası adı) | Microsoft Docs
-ms.custom: ''
+title: /OUT (Çıktı Dosyası Adı)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.OutputFile
 - /out
-dev_langs:
-- C++
 helpviewer_keywords:
 - output files, name linker option
 - -OUT linker option
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - /OUT C++ linker option
 - linker [C++], output files
 ms.assetid: 976210a4-e51f-4cfb-af5e-c16344455834
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8c4bfc79a257424820bed5f784cb0a83daf016d5
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f5ba323b830b9d06956d88d957206e3f73c15418
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725406"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50497195"
 ---
 # <a name="out-output-file-name"></a>/OUT (Çıktı Dosyası Adı)
 
@@ -59,7 +49,7 @@ Bu .mapfile veya içeri aktarma kitaplığı için varsayılan taban adı seçen
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OutputFile%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OutputFile%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

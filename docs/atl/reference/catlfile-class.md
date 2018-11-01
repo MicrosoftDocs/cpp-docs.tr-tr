@@ -1,10 +1,6 @@
 ---
-title: CAtlFile sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlFile sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlFile
 - ATLFILE/ATL::CAtlFile
@@ -21,21 +17,15 @@ f1_keywords:
 - ATLFILE/ATL::CAtlFile::UnlockRange
 - ATLFILE/ATL::CAtlFile::Write
 - ATLFILE/ATL::CAtlFile::m_pTM
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlFile class
 ms.assetid: 93ed160b-af2a-448c-9cbe-e5fa46c199bb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ec124d1010a5870d47b9f1504655a7822505fe6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 60d645d8818a0d073e4f52f22d836b34da96694f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040498"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524611"
 ---
 # <a name="catlfile-class"></a>CAtlFile sınıfı
 

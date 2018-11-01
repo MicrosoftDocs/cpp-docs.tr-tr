@@ -1,32 +1,22 @@
 ---
-title: -Ox (en fazla hız iyileştirmelerini etkinleştir) | Microsoft Docs
-ms.custom: ''
+title: /Ox (en fazla hız iyileştirmelerini etkinleştir)
 ms.date: 10/18/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.ToolOptimization
 - /Ox
 - /Oxs
-dev_langs:
-- C++
 helpviewer_keywords:
 - Ox compiler option [C++]
 - fast code [C++]
 - /Ox compiler option [C++]
 - -Ox compiler option [C++]
 ms.assetid: 3ad7c30b-c615-428c-b1d0-2e024f81c760
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f3f5a39201283567285b37a0901929022b688104
-ms.sourcegitcommit: 4cbde5d164d681204c4011dc95a921d75292f423
+ms.openlocfilehash: 5be751bda13e3bfe62508e4d70206b5f9f989df5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459172"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619095"
 ---
 # <a name="ox-enable-most-speed-optimizations"></a>/Ox (en fazla hız iyileştirmelerini etkinleştir)
 

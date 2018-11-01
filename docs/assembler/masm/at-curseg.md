@@ -1,27 +1,17 @@
 ---
-title: '@CurSeg | Microsoft Docs'
-ms.custom: ''
+title: '@CurSeg'
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - '@CurSeg'
-dev_langs:
-- C++
 helpviewer_keywords:
 - '@CurSeg symbol'
 ms.assetid: 8fbf90c1-7734-4113-9ba2-6ec664b3b59f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5722614d3d22d744bff6e54f9ebafca7db018067
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: c575c1c5f25e72f34525c0802483fdb61844293c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691029"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579198"
 ---
 # <a name="curseg"></a>@CurSeg
 

@@ -1,10 +1,6 @@
 ---
-title: _get_errno | Microsoft Docs
-ms.custom: ''
+title: _get_errno
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _get_errno
 apilocation:
@@ -22,23 +18,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _get_errno
-dev_langs:
-- C++
 helpviewer_keywords:
 - get_errno function
 - errno global variable
 - _get_errno function
 ms.assetid: b3fd5ebc-f41b-4314-a2f4-2f2d79d6e740
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fec59334ff6585e2385295c58c284df7e602ca1c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6ffb76bb31fe1633af78ee73423bb06857e0b893
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397417"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535726"
 ---
 # <a name="geterrno"></a>_get_errno
 
@@ -47,23 +37,23 @@ Errno genel değişkeni geçerli değerini alır.
 ## <a name="syntax"></a>Sözdizimi
 
 ```C
-errno_t _get_errno( 
-   int * pValue 
+errno_t _get_errno( 
+   int * pValue 
 );
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *pValue*<br/>
-Tamsayı geçerli değeri ile doldurulması için bir işaretçi **errno** değişkeni.
+Geçerli değeri ile doldurulacak bir tamsayı işaretçisi **errno** değişkeni.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır döndürür; hatasında bir hata kodu. Varsa *pValue* olan **NULL**, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
+Başarılıysa sıfır döndürür; bir hata kodu. Varsa *pValue* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Olası değerlerini **errno** Errno.h içinde tanımlanır. Ayrıca bkz [errno sabitleri](../../c-runtime-library/errno-constants.md).
+Olası değerleri **errno** Errno.h içinde tanımlanır. Ayrıca bkz [errno sabitleri](../../c-runtime-library/errno-constants.md).
 
 ## <a name="example"></a>Örnek
 
@@ -93,11 +83,11 @@ fyi, ENOENT = 2
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_get_errno**|\<stdlib.h >|\<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

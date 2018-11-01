@@ -1,12 +1,6 @@
 ---
-title: 'Pano: OLE Pano mekanizmasını kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Pano: OLE Pano Mekanizmasını Kullanma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - applications [OLE], Clipboard
 - OLE Clipboard
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - OLE Clipboard, formats
 - formats [MFC], Clipboard for OLE
 ms.assetid: 229cc610-5bb1-435e-bd20-2c8b9964d1af
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c4aee14bc520798393d3bed9e4b88db71cdd39e7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3dadd2ae6774c684fe751e02fb3a80570accd30a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382628"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661454"
 ---
 # <a name="clipboard-using-the-ole-clipboard-mechanism"></a>Pano: OLE Pano Mekanizmasını Kullanma
 

@@ -1,10 +1,6 @@
 ---
-title: CSplitButton sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSplitButton sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSplitButton
 - AFXCMN/CSplitButton
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXCMN/CSplitButton::Create
 - AFXCMN/CSplitButton::SetDropDownMenu
 - AFXCMN/CSplitButton::OnDropDown
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSplitButton [MFC], CSplitButton
 - CSplitButton [MFC], Create
 - CSplitButton [MFC], SetDropDownMenu
 - CSplitButton [MFC], OnDropDown
 ms.assetid: 6844d0a9-6408-4e44-9b5f-57628ed8bad6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0ff98b2413e2bf1626530b82a6c928ba7f7c50e4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ca4899714fa336d058b2a53bcd5103c5b0c993e2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068573"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547283"
 ---
 # <a name="csplitbutton-class"></a>CSplitButton sınıfı
 

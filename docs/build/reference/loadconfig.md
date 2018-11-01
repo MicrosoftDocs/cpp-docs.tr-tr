@@ -1,29 +1,19 @@
 ---
-title: -LOADCONFIG | Microsoft Docs
-ms.custom: ''
+title: /LOADCONFIG
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /loadconfig
-dev_langs:
-- C++
 helpviewer_keywords:
 - LOADCONFIG dumpbin option
 - -LOADCONFIG dumpbin option
 - /LOADCONFIG dumpbin option
 ms.assetid: 24667afe-9bee-4f6e-ae72-f534c0050428
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 582a8d666570b974ed97aea5ce2c882e29e4be44
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 602336f96df4802e8a5928e5d506d26db103cfe6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723651"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556527"
 ---
 # <a name="loadconfig"></a>/LOADCONFIG
 

@@ -1,31 +1,21 @@
 ---
-title: '&lt;cstdio&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;cstdio&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <cstdio>
-dev_langs:
-- C++
 helpviewer_keywords:
 - cstdio header
 ms.assetid: 838ca50b-dea5-4ee3-a39c-e7c23a6ee016
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 68203718377af6502daa95d3ceab4fa66507e164
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1d3fdb6ac4e3dc9fa7333ffac1bb8a11c0412df3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33841960"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443231"
 ---
 # <a name="ltcstdiogt"></a>&lt;cstdio&gt;
 
-Standart C Kitaplığı üstbilgi içeren \<stdio.h > ve ilişkili adlarıyla ekler `std` ad alanı.
+Standart C Kitaplığı üstbilgisi içerir \<stdio.h > ve ilişkili adlar ekler `std` ad alanı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,7 +26,7 @@ Standart C Kitaplığı üstbilgi içeren \<stdio.h > ve ilişkili adlarıyla ek
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üst dahil olmak üzere sağlar standart C Kitaplığı üstbilgisinde dış bağlantı kullanılarak bildirilen adları bildirilir `std` ad alanı.
+Bu üstbilginin dahil sağlar, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak bildirilen adların bildirilir `std` ad alanı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

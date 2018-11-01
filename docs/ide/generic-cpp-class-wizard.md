@@ -1,27 +1,17 @@
 ---
-title: Genel C++ sınıfı Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: Genel C++ Sınıfı Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.class.generic
-dev_langs:
-- C++
 helpviewer_keywords:
 - Generic C++ Class Wizard [C++]
 ms.assetid: aa95be9e-fc1b-45db-a11d-0d32c4929077
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7b104c0631fde3164ef4299cead47caba912874b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e3db091585615dcdccaab7c99c18a923802b31a7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431092"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50451044"
 ---
 # <a name="generic-c-class-wizard"></a>Genel C++ Sınıfı Sihirbazı
 

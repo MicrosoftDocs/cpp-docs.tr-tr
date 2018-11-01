@@ -1,10 +1,6 @@
 ---
-title: CAtlMap sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlMap sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlMap
 - ATLCOLL/ATL::CAtlMap
@@ -38,21 +34,15 @@ f1_keywords:
 - ATLCOLL/ATL::CAtlMap::SetAt
 - ATLCOLL/ATL::CAtlMap::SetOptimalLoad
 - ATLCOLL/ATL::CAtlMap::SetValueAt
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlMap class
 ms.assetid: 5e2fe028-8e6d-4686-93df-1433d2080ec3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1223de9791ea5c47c7ef3cf9ee5b490c5238fec3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 83ac810538bf189d026c0cb9b2a76ded49fdd86c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078530"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499696"
 ---
 # <a name="catlmap-class"></a>CAtlMap sınıfı
 

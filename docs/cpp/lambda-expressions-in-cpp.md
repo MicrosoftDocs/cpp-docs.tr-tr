@@ -1,27 +1,17 @@
 ---
-title: C++'deki lambda ifadeleri | Microsoft Docs
-ms.custom: ''
+title: C++'deki Lambda İfadeleri
 ms.date: 07/19/2017
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - lambda expressions [C++]
 - lambda expressions [C++], overview
 - lambda expressions [C++], vs. function objects
 ms.assetid: 713c7638-92be-4ade-ab22-fa33417073bf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d7a9915c7ca6b9d2c3f01cea12e2979ef256f904
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 44255df8633ad677587129dd27c0bdc23a616d96
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821186"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493814"
 ---
 # <a name="lambda-expressions-in-c"></a>C++'deki Lambda İfadeleri
 

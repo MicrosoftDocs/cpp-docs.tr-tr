@@ -1,28 +1,17 @@
 ---
-title: cpp_quote (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: cpp_quote (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.cpp_quote
-dev_langs:
-- C++
 helpviewer_keywords:
 - cpp_quote attribute
 ms.assetid: f75327ff-42bd-498b-9177-7ffa25427e1f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 0e67b839b487f7bb457eeadb0f4d0385b025ebc3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5a281f9f88412df4d3ee18bff1302b19433e07f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080604"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466956"
 ---
 # <a name="cppquote"></a>cpp_quote
 

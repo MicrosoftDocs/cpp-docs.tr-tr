@@ -1,14 +1,8 @@
 ---
-title: -PDBALTPATH (diğer PDB yolunu kullan) | Microsoft Docs
-ms.custom: ''
+title: /PDBALTPATH (Diğer PDB Yolunu Kullan)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /pdbaltpath
-dev_langs:
-- C++
 helpviewer_keywords:
 - .pdb files, path
 - PDBALTPATH dumpbin option
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - /PDBALTPATH dumpbin option
 - PDB files, path
 ms.assetid: 72e200aa-e2c3-4ad8-b687-25528da1aaaf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 72c494745fa33c8feeb4955f4542e9db5ed22307
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: dd7bdc8d161e92eedf4856fcd28d9f9f1ac781b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45718399"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551105"
 ---
 # <a name="pdbaltpath-use-alternate-pdb-path"></a>/PDBALTPATH (Diğer PDB Yolunu Kullan)
 

@@ -1,28 +1,18 @@
 ---
-title: XML belgeleri (Visual C++) | Microsoft Docs
-ms.custom: ''
+title: XML Belgeleri (Visual C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - XML documentation
 - XML, documentation comments in source code
 - comments, C++ source code files
 - /// delimiter for C++ documentation
 ms.assetid: a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: de3df01d9e9bf5d63b4445956e4656687d0f4f2c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 380fe73bba71d08bb9315e218f5946a7cf935108
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412294"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523892"
 ---
 # <a name="xml-documentation-visual-c"></a>XML Belgeleri (Visual C++)
 

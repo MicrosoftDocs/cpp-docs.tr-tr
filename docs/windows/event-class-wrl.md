@@ -1,32 +1,22 @@
 ---
-title: Olay sınıfı (WRL) | Microsoft Docs
-ms.custom: ''
+title: Olay sınıfı (WRL)
 ms.date: 09/24/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Event
 - corewrappers/Microsoft::WRL::Wrappers::Event::Event
 - corewrappers/Microsoft::WRL::Wrappers::Event::operator=
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Event class
 - Microsoft::WRL::Wrappers::Event::Event, constructor
 - Microsoft::WRL::Wrappers::Event::operator= operator
 ms.assetid: 55dfc9fc-62d4-4bb2-9d85-5b6dd88569e8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 7fce42093eb5d5c9eede67699b58124218d924d4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2d36b4fa3d1824f43e0cfafe55c439a6bdeccb6f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50075469"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50650625"
 ---
 # <a name="event-class-wrl"></a>Olay sınıfı (WRL)
 

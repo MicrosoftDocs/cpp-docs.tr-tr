@@ -1,33 +1,23 @@
 ---
-title: Coleıpframewnd sınıfı | Microsoft Docs
-ms.custom: ''
+title: Coleıpframewnd sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleIPFrameWnd
 - AFXOLE/COleIPFrameWnd
 - AFXOLE/COleIPFrameWnd::COleIPFrameWnd
 - AFXOLE/COleIPFrameWnd::OnCreateControlBars
 - AFXOLE/COleIPFrameWnd::RepositionFrame
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleIPFrameWnd [MFC], COleIPFrameWnd
 - COleIPFrameWnd [MFC], OnCreateControlBars
 - COleIPFrameWnd [MFC], RepositionFrame
 ms.assetid: 24abb2cb-826c-4dda-a287-d8a8900a5763
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0979e2ccd505673c1e81c5a1be028bebcad66f52
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 78b846a6b17fb18f533139e9ac6444babd4baac5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078823"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498862"
 ---
 # <a name="coleipframewnd-class"></a>Coleıpframewnd sınıfı
 

@@ -1,12 +1,6 @@
 ---
-title: Dosyaları okuma ve yazma | Microsoft Docs
-ms.custom: ''
+title: Dosyaları Okuma ve Yazma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFile class [MFC], objects
 - examples [MFC], reading files
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - reading files
 - writing to files [MFC]
 ms.assetid: cac0c826-ba56-495f-99b3-ce6336f65763
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d0fd41c085b9498d3f1ebb76378a83cce464142a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 14bd6d57f4b3fa9bacc46fb70cb2abd2958117c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404078"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591193"
 ---
 # <a name="reading-and-writing-files"></a>Dosyaları Okuma ve Yazma
 

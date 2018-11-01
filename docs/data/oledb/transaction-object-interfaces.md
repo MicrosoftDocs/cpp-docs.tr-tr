@@ -1,12 +1,6 @@
 ---
-title: İşlem nesnesi arabirimleri | Microsoft Docs
-ms.custom: ''
+title: İşlem Nesnesi Arabirimleri
 ms.date: 10/24/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - interfaces, OLE DB
 - transaction object interfaces
@@ -15,17 +9,12 @@ helpviewer_keywords:
 - OLE DB provider templates, object interfaces
 - interfaces, list of
 ms.assetid: d2ce99ce-6f7a-4ff9-bc6e-acda3633d5c8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 33aa2c3ec99db2c2581bce827425c2dfc25bb653
-ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
+ms.openlocfilehash: af67edca97cbfd644668ed48b3145cdbc38636a7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50216311"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564326"
 ---
 # <a name="transaction-object-interfaces"></a>İşlem Nesnesi Arabirimleri
 

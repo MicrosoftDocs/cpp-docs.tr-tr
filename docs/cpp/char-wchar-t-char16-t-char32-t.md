@@ -1,28 +1,18 @@
 ---
-title: karakter, wchar_t, char16_t, char32_t | Microsoft Docs
-ms.custom: ''
+title: char, wchar_t, char16_t, char32_t
 ms.date: 02/14/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - char_cpp
 - char16_t_cpp
 - wchar_t_cpp
 - char32_t_cpp
-dev_langs:
-- C++
 ms.assetid: 6b33e9f5-455b-4e49-8f12-a150cbfe2e5b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9855dc406c56f82eb3ed87248316103397e44007
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 542751cdbd5bb21bb70467163c823e2669373e24
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46112661"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663248"
 ---
 # <a name="char-wchart-char16t-char32t"></a>char, wchar_t, char16_t, char32_t
 

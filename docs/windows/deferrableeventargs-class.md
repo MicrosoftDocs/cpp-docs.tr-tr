@@ -1,32 +1,22 @@
 ---
-title: DeferrableEventArgs sınıfı | Microsoft Docs
-ms.custom: ''
+title: DeferrableEventArgs Sınıfı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - event/Microsoft::WRL::DeferrableEventArgs
 - event/Microsoft::WRL::DeferrableEventArgs::GetDeferral
 - event/Microsoft::WRL::DeferrableEventArgs::InvokeAllFinished
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::DeferrableEventArgs class
 - Microsoft::WRL::DeferrableEventArgs::GetDeferral method
 - Microsoft::WRL::DeferrableEventArgs::InvokeAllFinished method
 ms.assetid: ece89267-7b72-40e1-8185-550c865b070a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 7f5c117d0d65f86e4f4b69011457e166b6440820
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e00dcd5d1e62598e393d3798bd05d4bbc5633f72
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081569"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471337"
 ---
 # <a name="deferrableeventargs-class"></a>DeferrableEventArgs Sınıfı
 

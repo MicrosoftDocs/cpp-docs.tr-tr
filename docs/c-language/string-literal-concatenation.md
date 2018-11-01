@@ -1,26 +1,16 @@
 ---
-title: Dize değişmez değeri birleştirmesi | Microsoft Docs
-ms.custom: ''
+title: Dize Değişmez Değeri Birleştirmesi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - concatenating strings
 - strings [C++], concatenating
 ms.assetid: 51486b1f-4b1e-4061-9add-1aa38c6cdb3c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a0d960a766c14b1e05dab461087669c0d44627d9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 167ebd2cf9f7f8f2f073b5de68f36aebd1a3951a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090088"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654508"
 ---
 # <a name="string-literal-concatenation"></a>Dize Değişmez Değeri Birleştirmesi
 

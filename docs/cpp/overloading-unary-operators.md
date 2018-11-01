@@ -1,12 +1,6 @@
 ---
-title: Aşırı yükleme birli işleçleri | Microsoft Docs
-ms.custom: ''
+title: Aşırı Yükleme Birli İşleçleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - unary operators [C++], plus
 - increment operators [C++], overloaded
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - pointer dereference operator overloading
 - plus operator
 ms.assetid: 7683ef08-42a4-4283-928f-d3dd4f3ab4c0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f737e262d39b99c2c33b7c91bc3d1e234a9f47db
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 802380bad59534e8402020142e394b3948032476
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46018632"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50497238"
 ---
 # <a name="overloading-unary-operators"></a>Aşırı Yükleme Birli İşleçleri
 

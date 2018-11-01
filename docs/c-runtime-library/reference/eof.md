@@ -1,10 +1,6 @@
 ---
-title: _eof | Microsoft Docs
-ms.custom: ''
+title: _eof
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _eof
 apilocation:
@@ -22,8 +18,6 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _eof
-dev_langs:
-- C++
 helpviewer_keywords:
 - eof function
 - end of file, testing for
@@ -32,20 +26,16 @@ helpviewer_keywords:
 - testing, for end-of-file
 - end of file
 ms.assetid: 265703f4-d07e-4005-abf3-b1d0cdd9e0b0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: da7ccad98491762d30db2741f8c3d9fe0d784dc6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1da849c3721d4d83ff0b3166bc18f95728ebf124
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395130"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522401"
 ---
 # <a name="eof"></a>_eof
 
-Dosya sonu (EOF) için testleri.
+Dosya sonu (EOF) sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,23 +48,23 @@ int _eof(
 ### <a name="parameters"></a>Parametreler
 
 *FD*<br/>
-Açık olan dosyaya başvuran dosya tanımlayıcısı.
+Açık dosyaya başvuran dosya tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_eof** geçerli konumu dosya sonu veya 0 ise değilse 1 döndürür. Dönüş değeri -1, bir hata gösterir; Bu durumda, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EBADF**, geçersiz bir dosya tanımlayıcısı gösterir.
+**_eof** geçerli konumu dosya sonu veya 0 ise bu durumda, 1 döndürür. -1 dönüş değeri bir hata gösterir. Bu durumda, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EBADF**, geçersiz dosya tanımlayıcısı gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Eof** işlevi belirler dosyasının sonuna ile ilişkili olup olmadığını *fd* üst sınırına ulaşıldı.
+**_Eof** işlevi, dosyanın sonuna ile ilişkili olup olmadığını belirler *fd* ulaşıldı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli başlık|İsteğe bağlı üstbilgi|
+|İşlev|Gerekli başlık|İsteğe bağlı başlık|
 |--------------|---------------------|---------------------|
 |**_eof**|\<io.h >|\<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

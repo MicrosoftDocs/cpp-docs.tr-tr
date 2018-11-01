@@ -1,29 +1,19 @@
 ---
-title: Bileşik deyimler (bloklar) | Microsoft Docs
-ms.custom: ''
+title: Bileşik Deyimler (Bloklar)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - '}'
 - '{'
-dev_langs:
-- C++
 helpviewer_keywords:
 - blocks, about blocks
 - compound statements
 ms.assetid: 23855939-7430-498e-8936-0c70055ea701
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 89e243dd1905e61a6c9a1b16c1936d7d6617ba17
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6aef2a0b5716ab501fabe80f0dda15080abe3ff5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116821"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591795"
 ---
 # <a name="compound-statements-blocks"></a>Bileşik Deyimler (Bloklar)
 

@@ -1,10 +1,6 @@
 ---
-title: _ecvt | Microsoft Docs
-ms.custom: ''
+title: _ecvt
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ecvt
 apilocation:
@@ -22,28 +18,22 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _ecvt
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ecvt function
 - numbers, converting
 - converting double numbers
 - ecvt function
 ms.assetid: a916eb05-92d1-4b5c-8563-093acdb49dc8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 63514db5abe0a7cd531590dd419aa4b5931e7729
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 36c9cb2e8cd9eb4dd67bb91e9e4dbd36d8d1fc8e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34450969"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605738"
 ---
 # <a name="ecvt"></a>_ecvt
 
-Dönüştüren bir **çift** dizeye sayı. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [_ecvt_s](ecvt-s.md).
+Dönüştürür bir **çift** bir dizeye sayı. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz: [_ecvt_s](ecvt-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,25 +58,25 @@ Depolanan basamak sayısı.
 Ondalık noktasının konumunu depolanır.
 
 *sign*<br/>
-Dönüştürülen sayısının işareti.
+Dönüştürülen sayının işaretini.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_ecvt** basamak; dize için bir işaretçi döndürür **NULL** durumunda bir hata oluştu.
+**_ecvt** basamaktır; dizeye bir işaretçi döndürür **NULL** varsa bir hata oluştu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Ecvt** işlevi bir karakter dizesi kayan noktalı sayı dönüştürür. *Değeri* dönüştürülecek kayan noktalı sayı parametresidir. Bu işlev kadar saklar *sayısı* rakamı *değeri* dize olarak ve bir null karakter ('\0') ekler. Varsa basamak sayısı *değeri* aşıyor *sayısı*, düşük düzey basamaklı yuvarlanır. Varsa daha az *sayısı* basamak, dize sıfırlarla doldurulan.
+**_Ecvt** işlevi, bir karakter dizesindeki bir kayan noktalı sayıya dönüştürür. *Değer* parametredir dönüştürülecek kayan noktalı sayı. Bu işlev kadar depolar *sayısı* rakamı *değer* dize olarak ve null karakteri ('\0') ekler. Varsa basamak sayısı *değer* aşıyor *sayısı*, düşük düzey basamak yuvarlanır. Değerinden daha az *sayısı* basamak, dize sıfır sıfır.
 
-Toplam tarafından döndürülen basamak sayısı **_ecvt** değil aşacak **_CVTBUFSIZE**.
+Tarafından döndürülen basamakların toplam sayısı **_ecvt** değil aşacak **_CVTBUFSIZE**.
 
-Yalnızca rakamlar dizesinde depolanır. Ondalık ayırıcının ve işaretini konumunu *değeri* yükseltebilmeniz *Ara* ve *oturum* çağrısından sonra. *Ara* parametresi dizenin başlangıcını göre Ondalık ayırıcının konumunu vermiş bir tamsayı değeri işaret eder. 0 veya eksi tamsayı değeri, Ondalık ayırıcının ilk rakam solunda kalan gösterir. *Oturum* parametresi işaret dönüştürülen sayının işaretini gösteren bir tamsayı. Tamsayı değer 0 ise, pozitif bir sayıdır. Aksi takdirde, negatif sayısıdır.
+Yalnızca rakam, dizede depolanır. Ondalık ve işaretini konumunu *değer* örneğinden alınabilen *Ara* ve *oturum* çağrısından sonra. *Ara* parametresi dizenin başlangıcına göre ondalık noktasının konumunu vermiş bir tamsayı değeri işaret eder. 0 veya negatif bir tamsayı değeri, Ondalık ayırıcının sol tarafında ilk basamak yer gösterir. *Oturum* parametresi işaret dönüştürülmüş sayının işaretini belirten bir tamsayı. Tamsayı değeri 0 ise, pozitif bir sayıdır. Aksi takdirde, negatif sayıdır.
 
-Arasındaki farkı **_ecvt** ve **_fcvt** yorumu içinde olduğu *sayısı* parametresi. **_ecvt** yorumlar *sayısı* toplam çıkış dizesinde basamak sayısı olarak ancak **_fcvt** yorumlar *sayısı* basamak sayısı Ondalık ayırıcının.
+Arasındaki fark **_ecvt** ve **_fcvt** öğesinin yorumlamasıdır içinde *sayısı* parametresi. **_ecvt** yorumlar *sayısı* çıkış dizesindeki basamak sayısı olarak ise **_fcvt** yorumlar *sayısı* basamak sayısı ondalık noktası.
 
-**_ecvt** ve **_fcvt** dönüştürme için tek bir statik olarak ayrılan arabellek kullanın. Bu yordamlar her çağrısına önceki çağrının sonucu bozar.
+**_ecvt** ve **_fcvt** dönüştürme için tek bir statik olarak ayrılan arabelleğin kullanın. Bu yordamların her çağrısına, önceki çağrının sonucu yok eder.
 
-Bu işlev parametrelerini doğrular. Varsa *Ara* veya *oturum* olan **NULL**, veya *sayısı* 0'dır, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametresi Doğrulama](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve **NULL** döndürülür.
+Bu işlev, parametrelerini doğrular. Varsa *Ara* veya *oturum* olduğu **NULL**, veya *sayısı* 0 ise, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [parametresi Doğrulama](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve **NULL** döndürülür.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -94,7 +84,7 @@ Bu işlev parametrelerini doğrular. Varsa *Ara* veya *oturum* olan **NULL**, ve
 |--------------|---------------------|
 |**_ecvt**|\<stdlib.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

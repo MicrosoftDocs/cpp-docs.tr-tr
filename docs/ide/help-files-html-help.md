@@ -1,25 +1,15 @@
 ---
-title: Yardım dosyaları (HTML Yardım) | Microsoft Docs
-ms.custom: ''
+title: Yardım Dosyaları (HTML Yardım)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - file types [C++], HTML Help files
 ms.assetid: d30a1b1b-318f-4a78-8b60-93da53a224a8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 04d3171f1bba6b803c68b7a3b753cc70825671bb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dc98e9794200e2a317c7db2b0b513a254efff275
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383551"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480385"
 ---
 # <a name="help-files-html-help"></a>Yardım Dosyaları (HTML Yardım)
 

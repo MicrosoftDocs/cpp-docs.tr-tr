@@ -1,21 +1,13 @@
 ---
-title: İmzayı Değiştir | Microsoft Docs
-ms.custom: ''
+title: İmzayı Değiştir
 ms.date: 11/16/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0007cf50eafa7b61e48b550172eb2d316270c61f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 776f777eb64128e9914e6d087551930593a490fc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448342"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50584047"
 ---
 # <a name="change-signature"></a>İmzayı Değiştir
 **Ne:** bir işlevin parametreleri değiştirmenize olanak tanır.

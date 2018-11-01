@@ -1,10 +1,6 @@
 ---
-title: CD2DBitmapBrush sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DBitmapBrush sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DBitmapBrush
 - AFXRENDERTARGET/CD2DBitmapBrush
@@ -26,8 +22,6 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DBitmapBrush::m_pBitmap
 - AFXRENDERTARGET/CD2DBitmapBrush::m_pBitmapBrush
 - AFXRENDERTARGET/CD2DBitmapBrush::m_pBitmapBrushProperties
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DBitmapBrush [MFC], CD2DBitmapBrush
 - CD2DBitmapBrush [MFC], Attach
@@ -48,16 +42,12 @@ helpviewer_keywords:
 - CD2DBitmapBrush [MFC], m_pBitmapBrush
 - CD2DBitmapBrush [MFC], m_pBitmapBrushProperties
 ms.assetid: 46ebbe34-66e0-44c8-af1d-d129e851de5e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6b40f7e3d4a37dbc73494444fbfcc398621b7ec4
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 59c4e5f4e55947a4eab7a5258d8fe2b943bab3ff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080019"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501575"
 ---
 # <a name="cd2dbitmapbrush-class"></a>CD2DBitmapBrush sınıfı
 

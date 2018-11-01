@@ -1,10 +1,6 @@
 ---
-title: CTabbedPane sınıfı | Microsoft Docs
-ms.custom: ''
+title: CTabbedPane sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CTabbedPane
 - AFXTABBEDPANE/CTabbedPane
@@ -19,8 +15,6 @@ f1_keywords:
 - AFXTABBEDPANE/CTabbedPane::SetTabAutoColors
 - AFXTABBEDPANE/CTabbedPane::m_bTabsAlwaysTop
 - AFXTABBEDPANE/CTabbedPane::m_pTabWndRTC
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTabbedPane [MFC], DetachPane
 - CTabbedPane [MFC], EnableTabAutoColor
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - CTabbedPane [MFC], m_bTabsAlwaysTop
 - CTabbedPane [MFC], m_pTabWndRTC
 ms.assetid: f4dc5215-b789-4f2d-8c62-477aceda3578
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8b01148affc70d09032d2082f4fc8756dd8c96cf
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d345d7a5aef53ac7975564a580f1353157a01376
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074143"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645724"
 ---
 # <a name="ctabbedpane-class"></a>CTabbedPane sınıfı
 

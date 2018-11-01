@@ -1,28 +1,18 @@
 ---
-title: __getcallerseflags | Microsoft Docs
-ms.custom: ''
+title: __getcallerseflags
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _getcallerseflags
 - _getcallerseflags_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - _getcallerseflags intrinsic
 ms.assetid: 2386596f-33aa-4cc7-b026-5a834637270a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4f16079fce7bda86a376baf783db8b05ec098015
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0093ce67547881470e17c447afd8eb2c5a36e8bf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410201"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519655"
 ---
 # <a name="getcallerseflags"></a>__getcallerseflags
 

@@ -1,10 +1,6 @@
 ---
-title: CMFCTasksPaneTaskGroup sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCTasksPaneTaskGroup sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCTasksPaneTaskGroup
 - AFXTASKSPANE/CMFCTasksPaneTaskGroup
@@ -17,8 +13,6 @@ f1_keywords:
 - AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_rect
 - AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_rectGroup
 - AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_strName
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCTasksPaneTaskGroup [MFC], CMFCTasksPaneTaskGroup
 - CMFCTasksPaneTaskGroup [MFC], SetACCData
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - CMFCTasksPaneTaskGroup [MFC], m_rectGroup
 - CMFCTasksPaneTaskGroup [MFC], m_strName
 ms.assetid: 2111640b-a46e-4b27-b033-29e88632b86a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eb9446dde0c8a3ef7089fd50e722f96ead237c6b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 25e714aa617cdccc4e02e288f1a24f636e05cb0f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424891"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539613"
 ---
 # <a name="cmfctaskspanetaskgroup-class"></a>CMFCTasksPaneTaskGroup sınıfı
 

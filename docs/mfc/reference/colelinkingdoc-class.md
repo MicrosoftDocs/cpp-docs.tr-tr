@@ -1,10 +1,6 @@
 ---
-title: COleLinkingDoc sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleLinkingDoc sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleLinkingDoc
 - AFXOLE/COleLinkingDoc
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXOLE/COleLinkingDoc::Revoke
 - AFXOLE/COleLinkingDoc::OnFindEmbeddedItem
 - AFXOLE/COleLinkingDoc::OnGetLinkedItem
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleLinkingDoc [MFC], COleLinkingDoc
 - COleLinkingDoc [MFC], Register
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - COleLinkingDoc [MFC], OnFindEmbeddedItem
 - COleLinkingDoc [MFC], OnGetLinkedItem
 ms.assetid: 9f547f35-2f95-427f-b9c0-85c31940198b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b957aa3129f3fedd4aaeecf9f70d6620dc7d5ede
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ed96d0a88755827bff27255326db8262698fcfb0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443481"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544319"
 ---
 # <a name="colelinkingdoc-class"></a>COleLinkingDoc sınıfı
 

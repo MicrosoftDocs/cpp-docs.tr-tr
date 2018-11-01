@@ -1,10 +1,6 @@
 ---
-title: _putchar_nolock, _putwchar_nolock | Microsoft Docs
-ms.custom: ''
+title: _putchar_nolock, _putwchar_nolock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _putchar_nolock
 - _putwchar_nolock
@@ -26,8 +22,6 @@ f1_keywords:
 - _putchar_nolock
 - _putwchar_nolock
 - putchar_nolock
-dev_langs:
-- C++
 helpviewer_keywords:
 - _puttchar_nolock function
 - putchar_nolock function
@@ -38,20 +32,16 @@ helpviewer_keywords:
 - _putwchar_nolock function
 - puttchar_nolock function
 ms.assetid: 9ac68092-bfc3-4352-b486-c3e780220575
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 47195d48c624496e806769bb02c1e70f2d7ccb71
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5b7c0b4fcdbb7c29c48d9489cb262d2b1a1cf401
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405334"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580888"
 ---
 # <a name="putcharnolock-putwcharnolock"></a>_putchar_nolock, _putwchar_nolock
 
-Bir karakter Yazar **stdout** iş parçacığı kilitleme olmadan.
+Bir karakter Yazar **stdout** iş parçacığını kilitlemeden.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,7 +66,7 @@ Bkz: **putchar, putwchar**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**putchar_nolock** ve **_putwchar_nolock** sürümleri için özdeş **_nolock** diğer iş parçacıkları tarafından girişime korunmayan dışında soneki. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.
+**putchar_nolock** ve **_putwchar_nolock** sürümlerle özdeştir **_nolock** soneki olmayan bunlar başka iş parçacıklarının engellemelerinden korunmamaları. Diğer iş parçacıklarını kilitleme ek yükü kalmadıklarından daha hızlı olabilir. Bu işlevler yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -91,7 +81,7 @@ Bkz: **putchar, putwchar**.
 |**_putchar_nolock**|\<stdio.h >|
 |**_putwchar_nolock**|\<stdio.h > veya \<wchar.h >|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -129,6 +119,6 @@ This is the line of output
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fputc, fputwc](fputc-fputwc.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>

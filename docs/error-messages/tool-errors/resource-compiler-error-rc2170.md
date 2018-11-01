@@ -1,27 +1,17 @@
 ---
-title: Kaynak Derleyicisi hatası RC2170 | Microsoft Docs
-ms.custom: ''
+title: Kaynak Derleyicisi Hatası RC2170
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - RC2170
-dev_langs:
-- C++
 helpviewer_keywords:
 - RC2170
 ms.assetid: 6ea80c98-0942-41a8-b0b2-2c16c255adf5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ea3213c01ce86f6d78a9d7b6f4cf81fe17495c72
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c2183e20cab08c4750a4c27ceeffbbe97c8c7f44
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038217"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579197"
 ---
 # <a name="resource-compiler-error-rc2170"></a>Kaynak Derleyicisi Hatası RC2170
 

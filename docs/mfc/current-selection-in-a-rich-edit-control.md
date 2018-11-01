@@ -1,28 +1,18 @@
 ---
-title: Bir zengin düzenleme denetimindeki geçerli bölüm | Microsoft Docs
-ms.custom: ''
+title: Bir Zengin Düzenleme Denetimindeki Geçerli Bölüm
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - current selection in CRichEditCtrls
 - CRichEditCtrl class [MFC], current selection in
 - rich edit controls [MFC], current selection in
 - selection, current in CRichEditCtrl
 ms.assetid: f6b2a2b6-5481-4ad3-9720-6dd772ea6fc8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c5870c7c3352a53d85bdd15020a1e7f535ef6efc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4b4b4d0b3419201cd1243bf6f846ab0e1b5ed686
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403675"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636518"
 ---
 # <a name="current-selection-in-a-rich-edit-control"></a>Bir Zengin Düzenleme Denetimindeki Geçerli Bölüm
 

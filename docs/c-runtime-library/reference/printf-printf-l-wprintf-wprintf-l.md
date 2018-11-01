@@ -1,10 +1,6 @@
 ---
-title: Printf, _printf_l, wprintf, _wprintf_l | Microsoft Docs
-ms.custom: ''
+title: printf, _printf_l, wprintf, _wprintf_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _printf_l
 - wprintf
@@ -26,8 +22,6 @@ f1_keywords:
 - printf
 - _tprintf
 - wprintf
-dev_langs:
-- C++
 helpviewer_keywords:
 - printf function
 - printf_l function
@@ -44,20 +38,16 @@ helpviewer_keywords:
 - printf function, using
 - formatted text [C++]
 ms.assetid: 77a854ae-5b48-4865-89f4-f2dc5cf80f52
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e66c185a6ee56e4a82a98e62d8d2c7d8167399e5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1f3d439c12fa803bfe1af31a9a45d777b2e1caa2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405243"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666901"
 ---
 # <a name="printf-printfl-wprintf-wprintfl"></a>printf, _printf_l, wprintf, _wprintf_l
 
-Biçimlendirilmiş çıkışı için standart çıktı akışı yazdırır. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](printf-s-printf-s-l-wprintf-s-wprintf-s-l.md).
+Baskı siparişi standart çıkış akışına biçimlendirilmiş. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](printf-s-printf-s-l-wprintf-s-wprintf-s-l.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -84,8 +74,8 @@ int _wprintf_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biçimi*<br/>
-Denetim biçimlendirin.
+*Biçim*<br/>
+Biçim Denetimi.
 
 *Bağımsız değişken*<br/>
 İsteğe bağlı bağımsız değişkenler.
@@ -95,38 +85,38 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir hata oluşursa, yazdırılan karakter veya negatif bir değer döndürür. Varsa *biçimi* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için ayarlar ve işlev dönüşleri -1 yürütülmesine izin veriliyorsa **errno** için **EINVAL**. Varsa **EOF** (0xFFFF) içinde karşılaştı *bağımsız değişkeni*, işlevi -1 döndürür.
+Bir hata oluşursa yazdırılan karakter veya negatif bir değer döndürür. Varsa *biçimi* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** için **EINVAL**. Varsa **EOF** (0xFFFF) ile karşılaşılırsa *bağımsız değişken*, işlev -1 döndürür.
 
-Hakkında bilgi için **errno** ve hata kodları bakın [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Hakkında bilgi için **errno** ve hata kodları [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Printf** işlevi biçimlendirir ve bir dizi karakter ve standart çıktı akışı değerlere yazdırır **stdout**. Bağımsız değişkenler izlerseniz *biçimi* dize *biçimi* dize bağımsız değişkenleri için çıktı biçimi belirlemek belirtimleri içermesi gerekir. **Printf** ve [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md) durumlar dışında aynı şekilde davranır **printf** Yazar çıkışı **stdout** yerine bir hedefe türü **dosyası** .
+**Printf** işlevi biçimlendirir ve bir dizi karakter ve değerlerini standart çıkış akışına yazdırır **stdout**. Bağımsız değişkenler izlerseniz *biçimi* dize *biçimi* dizesi bağımsız değişkenler için çıkış biçimini belirleyen belirtimler içermelidir. **Printf** ve [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md) aynı şekilde davranır **printf** çıktıları **stdout** türünde bir hedef yerine **dosyası** .
 
-**wprintf** bir joker karakter sürümü **printf**; *biçimi* bir joker karakter dizesidir. **wprintf** ve **printf** akış ANSI modunda açılırsa aynı şekilde davranır. **Printf** şu anda çıktı bir UNICODE akışa desteklemiyor.
+**wprintf** geniş karakterli sürümüdür **printf**; *biçimi* geniş karakterli bir dizedir. **wprintf** ve **printf** akış ANSI modunda açıldığında aynı şekilde davranır. **Printf** UNICODE akışına çıkış şu anda desteklemiyor.
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|tanımlanan _UNICODE|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tprintf**|**Printf**|**Printf**|**wprintf**|
 
-*Biçimi* bağımsız değişkeni sıradan karakterlerinden kaçış sıraları oluşur ve (bağımsız değişkenler izlerseniz *biçimi*) biçimlendirir. Kaçış dizileri ve sıradan karakterler kopyalanır **stdout** görünümlerini sırasıyla. Örneğin, satır:
+*Biçimi* bağımsız değişkeni çıkış sıraları sıradan karakterlerden oluşur ve (geliyorsa *biçimi*) biçimlendirir. Sıradan karakterler ve kaçış dizileri kopyalanır **stdout** görünme sırasına göre. Örneğin, satır:
 
 ```C
 printf("Line one\n\t\tLine two\n");
 ```
 
-bir çıktı üretir:
+çıktıyı üretir:
 
 ```Output
 Line one
         Line two
 ```
 
-[Biçimlendirir](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) her zaman yüzde işaretiyle başlar (**%**) ve soldan sağa okuyun. Zaman **printf** ilk biçim belirtimi (varsa), karşılaştığında sonra ilk bağımsız değişkenin değeri dönüştürür *biçimi* ve buna göre çıkarır. İkinci biçim belirtimi dönüştürülür ve çıkış, ikinci bağımsız değişkeni neden olur ve benzeri. Biçim belirtimleri sayısından daha fazla bağımsız değişken varsa, ek bağımsız değişkenleri göz ardı edilir. Tüm biçim belirtimleri için yeterli bağımsız değişken varsa sonuçları tanımlanmamış.
+[Biçim belirtimlerinden](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) her zaman yüzde işaretiyle başlar (**%**) ve soldan sağa doğru okunur. Zaman **printf** karşılaştığında ilk biçim belirtimiyle (varsa), sonra ilk bağımsız değişkenin değeri dönüştürür *biçimi* ve buna göre çıkarır. İkinci biçim belirtimi dönüştürülür ve çıktı, ikinci bağımsız değişkenin neden olur ve benzeri. Biçim belirtimleri sayısından daha fazla bağımsız değişken varsa, ek bağımsız değişkenler yoksayılır. Tüm biçim belirtimleri için yeterli bağımsız değişken varsa sonuçlar tanımsızdır.
 
 > [!IMPORTANT]
 > Emin *biçimi* kullanıcı tanımlı bir dize değil.
@@ -145,7 +135,7 @@ Line one
 |**Printf**, **_printf_l**|\<stdio.h >|
 |**wprintf**, **_wprintf_l**|\<stdio.h > veya \<wchar.h >|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -236,7 +226,7 @@ Address as:   0012FF3C
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>
 [_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)<br/>

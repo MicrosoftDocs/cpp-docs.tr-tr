@@ -1,10 +1,6 @@
 ---
-title: Güvenlik tanımlayıcısı genel işlevleri | Microsoft Docs
-ms.custom: ''
+title: Güvenlik tanımlayıcısı genel işlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlsecurity/ATL::Sids::AccountOps
 - atlsecurity/ATL::Sids::Admins
@@ -37,22 +33,16 @@ f1_keywords:
 - atlsecurity/ATL::Sids::TerminalServer
 - atlsecurity/ATL::Sids::Users
 - atlsecurity/ATL::Sids::World
-dev_langs:
-- C++
 helpviewer_keywords:
 - security IDs [C++]
 - SIDs [C++], returning SID objects
 ms.assetid: 85404dcb-c59b-4535-ab3d-66cfa37e87de
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4bcafdeecdc0091039e9bb4008aab4e85f6a34aa
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: fc625ffe18aad5cf6e2b15dd61122c97bcf14d44
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50064973"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592484"
 ---
 # <a name="security-identifier-global-functions"></a>Güvenlik tanımlayıcısı genel işlevleri
 

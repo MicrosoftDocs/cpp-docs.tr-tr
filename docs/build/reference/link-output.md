@@ -1,14 +1,8 @@
 ---
-title: LINK çıktısı | Microsoft Docs
-ms.custom: ''
+title: LINK Çıktısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - link
-dev_langs:
-- C++
 helpviewer_keywords:
 - mapfiles [C++]
 - ILK files
@@ -23,16 +17,12 @@ helpviewer_keywords:
 - DLLs [C++], as linker output
 - LINK tool [C++], mapfile
 ms.assetid: a98b557c-1947-447a-be1f-616fb45a9580
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5ca32769d7797446dbb0766c41867da1554b037f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 819ac130d2f8ae45ff48a2f2c1941f717d5afd99
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706218"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464150"
 ---
 # <a name="link-output"></a>LINK Çıktısı
 

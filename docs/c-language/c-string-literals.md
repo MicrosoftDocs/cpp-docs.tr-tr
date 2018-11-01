@@ -1,27 +1,17 @@
 ---
-title: C dize değişmez değerleri | Microsoft Docs
-ms.custom: ''
+title: C Dize Değişmez Değerleri
 ms.date: 08/31/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - string literals, syntax
 - strings [C++], string literals
 - literal strings, C
 ms.assetid: 4b05523e-49a2-4900-b21a-754350af3328
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6101c45f30284633c5f10c148be5a15e1e81dde7
-ms.sourcegitcommit: f9d9db80a8f13eae2c41337b974e1298109e33c5
+ms.openlocfilehash: bd8b49645e34224cbea7e801f197bfbcbc012915
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49640741"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50635632"
 ---
 # <a name="c-string-literals"></a>C Dize Değişmez Değerleri
 

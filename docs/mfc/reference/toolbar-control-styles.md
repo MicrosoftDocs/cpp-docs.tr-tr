@@ -1,25 +1,15 @@
 ---
-title: ToolBar denetim stilleri | Microsoft Docs
-ms.custom: ''
+title: ToolBar Denetim Stilleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - ToolBar control styles [MFC]
 ms.assetid: 0f717eb9-fa32-4263-b852-809238863feb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 882111e400b613c830bb45cafd03ace99c09a0c2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f26edc6c0ce4a19528a9a8754428411318e9b9d2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054950"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50649000"
 ---
 # <a name="toolbar-control-styles"></a>ToolBar Denetim Stilleri
 

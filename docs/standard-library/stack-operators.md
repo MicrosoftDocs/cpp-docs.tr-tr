@@ -1,8 +1,6 @@
 ---
-title: '&lt;yığın&gt; işleçler | Microsoft Docs'
-ms.custom: ''
+title: '&lt;yığın&gt; işleçleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - stack/std::operator!=
 - stack/std::operator&gt;
@@ -10,8 +8,6 @@ f1_keywords:
 - stack/std::operator&lt;
 - stack/std::operator&lt;=
 - stack/std::operator==
-dev_langs:
-- C++
 ms.assetid: 9c1fc282-2f61-4727-9e80-84ea5d4934a2
 helpviewer_keywords:
 - std::operator!= (stack)
@@ -20,12 +16,12 @@ helpviewer_keywords:
 - std::operator&lt; (stack)
 - std::operator&lt;= (stack)
 - std::operator== (stack)
-ms.openlocfilehash: a013b438bcdf9b84357da5cfbd908d114abe7c34
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: f6ec0855179e41c78f32fe45429ec0bea1ae2e59
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103366"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493476"
 ---
 # <a name="ltstackgt-operators"></a>&lt;yığın&gt; işleçleri
 

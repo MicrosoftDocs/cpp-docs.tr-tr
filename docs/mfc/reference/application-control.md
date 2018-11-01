@@ -1,27 +1,17 @@
 ---
-title: Uygulama denetimi | Microsoft Docs
-ms.custom: ''
+title: Uygulama Denetimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.macros
-dev_langs:
-- C++
 helpviewer_keywords:
 - application control [MFC]
 ms.assetid: c1f69f15-e0fe-4515-9f36-d63d31869deb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b06302d330ec8677a3de9b3ccaebf0b7b237b0e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5c155605ceaada7083200dee255214ad68bdf6de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053897"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578938"
 ---
 # <a name="application-control"></a>Uygulama Denetimi
 

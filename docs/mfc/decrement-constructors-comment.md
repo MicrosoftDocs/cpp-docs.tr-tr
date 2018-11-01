@@ -1,12 +1,6 @@
 ---
-title: --Oluşturucu açıklaması | Microsoft Docs
-ms.custom: ''
+title: --Oluşturucu açıklaması
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - constructors comment
 - declarations, constructors
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - constructors [MFC], declaring
 - instance constructors, code comments
 ms.assetid: f400774e-ba85-49ed-85b7-70ef2f7dcb2b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f03a65c3f870b1e7648f03b70efe7242c35a21f9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ee36ad991f2a19211b494010d6ff0a5338b80557
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429363"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480710"
 ---
 # <a name="-constructors-comment"></a>// Oluşturucu Açıklaması
 

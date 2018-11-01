@@ -1,30 +1,20 @@
 ---
-title: CSimpleMapEqualHelper sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSimpleMapEqualHelper sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CSimpleMapEqualHelper
 - ATLSIMPCOLL/ATL::CSimpleMapEqualHelper
 - ATLSIMPCOLL/ATL::CSimpleMapEqualHelper::IsEqualKey
 - ATLSIMPCOLL/ATL::CSimpleMapEqualHelper::IsEqualValue
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSimpleMapEqualHelper class
 ms.assetid: 9bb2968a-d609-405c-8272-ff3b42df6164
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 654b801c61d00f179d6d7ef88763b323d6503873
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a530254bbaabce723b97d21313abb81e1b375833
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050586"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50527399"
 ---
 # <a name="csimplemapequalhelper-class"></a>CSimpleMapEqualHelper sınıfı
 

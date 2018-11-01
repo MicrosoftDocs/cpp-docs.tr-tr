@@ -1,26 +1,16 @@
 ---
-title: Geri çağırma işlevi (WRL) | Microsoft Docs
-ms.custom: ''
+title: Geri çağırma işlevi (WRL)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - event/Microsoft::WRL::Callback
-dev_langs:
-- C++
 ms.assetid: afb15d25-3230-44f7-b321-e17c54872943
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: f3bce2db1ed3a418347d8a8b0a53cb6958fb63e0
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b39b4268213d0a4e093c27b1425cc6656b47b912
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063178"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514259"
 ---
 # <a name="callback-function-wrl"></a>Geri çağırma işlevi (WRL)
 

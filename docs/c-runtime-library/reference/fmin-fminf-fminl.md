@@ -1,11 +1,6 @@
 ---
-title: fmin, fminf, fminl | Microsoft Docs
-ms.custom: ''
+title: fmin, fminf, fminl
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - fmin
 - fminf
@@ -35,16 +30,12 @@ helpviewer_keywords:
 - fminf function
 - fminl function
 ms.assetid: 1916dfb5-99c1-4b0d-aefb-513525c3f2ac
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: abf16c4cc21d1dc396f0b81aadc8d495c6bdd4b9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f73853e18bd5d7f699cd2c3109fe5fb830859bf1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398951"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464369"
 ---
 # <a name="fmin-fminf-fminl"></a>fmin, fminf, fminl
 
@@ -89,7 +80,7 @@ Karşılaştırılacak ikinci değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, döndürür küçük olanını *x* veya *y*.
+Başarılı olursa döndürür, daha küçük *x* veya *y*.
 
 |Giriş|Sonuç|
 |-----------|------------|
@@ -97,11 +88,11 @@ Başarılı olursa, döndürür küçük olanını *x* veya *y*.
 |*y* NaN olup|*x*|
 |*x* ve *y* NaN olan|NaN|
 
-İşlev neden olmaz [_matherr](matherr.md) çağrılacak, kayan nokta özel durumlar neden veya değerini değiştirmek **errno**.
+İşlev neden olmaz [_matherr](matherr.md) çağrılacak, kayan nokta özel durumların neden değiştirin veya **errno**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **fmin** alın ve dönüş **float** ve **uzun** **çift** türleri. Bir C programı **fmin** her zaman alan ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **fmin** alan ve getiren **float** ve **uzun** **çift** türleri. C programında **fmin** her zaman alan ve döndüren bir **çift**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -109,7 +100,7 @@ Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **fmin** a
 |-------------|---------------------|
 |**fmin**, **fminf**, **fminl**|C: \<math.h ><br />C++: \<math.h > veya \<cmath >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,10 +1,6 @@
 ---
-title: CAtlModuleT sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlModuleT sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlModuleT
 - ATLBASE/ATL::CAtlModuleT
@@ -15,21 +11,15 @@ f1_keywords:
 - ATLBASE/ATL::CAtlModuleT::UnregisterAppId
 - ATLBASE/ATL::CAtlModuleT::UnregisterServer
 - ATLBASE/ATL::CAtlModuleT::UpdateRegistryAppId
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlModuleT class
 ms.assetid: 9b74d02f-9117-47b1-a05e-c5945f83dd2b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3a88ecf9c5fcffa07066c3ab988fde1f36adf8d4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0d7673d634bad2d20dae63e4293f12e5530c4acd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057489"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534907"
 ---
 # <a name="catlmodulet-class"></a>CAtlModuleT sınıfı
 

@@ -1,27 +1,17 @@
 ---
-title: is_trivially_default_constructible sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_trivially_default_constructible Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_trivially_default_constructible
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_trivially_default_constructible
 ms.assetid: 653ecd73-909f-4dd8-b95a-d1164d1c2da4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 73bdd8186f2ce56e4a6ecec0fa4f9468d9da8e8c
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: b35458ca280285eb699c9b12b15b705660299ef2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102713"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563676"
 ---
 # <a name="istriviallydefaultconstructible-class"></a>is_trivially_default_constructible Sınıfı
 

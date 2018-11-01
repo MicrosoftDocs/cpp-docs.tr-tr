@@ -1,28 +1,17 @@
 ---
-title: db_command (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: db_command (C++ COM özniteliği)
 ms.date: 07/10/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.db_command
-dev_langs:
-- C++
 helpviewer_keywords:
 - db_command attribute
 ms.assetid: 714c3e15-85d7-408b-9a7c-88505c3e5d24
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 6cb9202d020aee86a4ebe3892fa8dd84ec4c4577
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 136c82b2674f3c08f053de9676068c0fb4baac11
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50061634"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559477"
 ---
 # <a name="dbcommand"></a>db_command
 

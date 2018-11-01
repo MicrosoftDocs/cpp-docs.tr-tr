@@ -1,10 +1,6 @@
 ---
-title: wcstombs_s, _wcstombs_s_l | Microsoft Docs
-ms.custom: ''
+title: wcstombs_s, _wcstombs_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wcstombs_s_l
 - wcstombs_s
@@ -24,8 +20,6 @@ apitype: DLLExport
 f1_keywords:
 - wcstombs_s
 - _wcstombs_s_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - wcstombs_s function
 - string conversion, wide characters
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 105f2d33-221a-4f6d-864c-23c1865c42af
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1fec8a41a1c9d1a9d01952a0a72829d2122e0e40
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c9dc361139f8830b38910333fabedc371d84fcda
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216983"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579068"
 ---
 # <a name="wcstombss-wcstombssl"></a>wcstombs_s, _wcstombs_s_l
 

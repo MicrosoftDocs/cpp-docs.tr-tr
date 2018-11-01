@@ -1,10 +1,6 @@
 ---
-title: CMetaFileDC sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMetaFileDC sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMetaFileDC
 - AFXEXT/CMetaFileDC
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXEXT/CMetaFileDC::CloseEnhanced
 - AFXEXT/CMetaFileDC::Create
 - AFXEXT/CMetaFileDC::CreateEnhanced
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMetaFileDC [MFC], CMetaFileDC
 - CMetaFileDC [MFC], Close
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CMetaFileDC [MFC], Create
 - CMetaFileDC [MFC], CreateEnhanced
 ms.assetid: ffce60fa-4181-4d46-9832-25e46fad4db4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c4b19358b97ca0afbe7a70347e5b05bed9916846
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 343ab1a5d0c38ab0d17c609fbfc134b144502553
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076353"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471818"
 ---
 # <a name="cmetafiledc-class"></a>CMetaFileDC sınıfı
 

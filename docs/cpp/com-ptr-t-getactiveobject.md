@@ -1,27 +1,17 @@
 ---
-title: _com_ptr_t::GetActiveObject | Microsoft Docs
-ms.custom: ''
+title: _com_ptr_t::GetActiveObject
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _com_ptr_t::GetActiveObject
-dev_langs:
-- C++
 helpviewer_keywords:
 - GetActiveObject method [C++]
 ms.assetid: 2fa94853-0410-4620-91f2-136dae923f9f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b9f77a894c39fc907367e5d4f8c7a687cc703331
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 84e43de9c40baa3c596c68ed7739471c059cbac7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056514"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484506"
 ---
 # <a name="comptrtgetactiveobject"></a>_com_ptr_t::GetActiveObject
 

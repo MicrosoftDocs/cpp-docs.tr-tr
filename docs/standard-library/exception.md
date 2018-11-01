@@ -1,29 +1,19 @@
 ---
-title: '&lt;özel durum&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;özel durum&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <exception>
-dev_langs:
-- C++
 helpviewer_keywords:
 - exception header
 ms.assetid: 28900768-5dd7-4834-b907-5e37ab3407db
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bbd57085225bb21b9f7ce8bd34c537d3bc414797
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6260b100bf62662738cb5fa1c5f74df89086f033
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845823"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612803"
 ---
-# <a name="ltexceptiongt"></a>&lt;Özel durumu&gt;
+# <a name="ltexceptiongt"></a>&lt;özel durum&gt;
 
 Özel durumların işlenmesiyle ilgili çeşitli türleri ve işlevleri tanımlar. Özel durum işleme, sistemin bir hatadan kurtarılması durumlarında kullanılır. Bir işlevden programa döndürülecek denetim için bir yol sağlar. Özel durum işleme birleştirmesinin amacı düzenli bir şekilde bir hatadan kurtarılmasına olanak sağlayarak programın sağlamlığını artırmaktır.
 
@@ -39,30 +29,30 @@ ms.locfileid: "33845823"
 |Tür adı|Açıklama|
 |-|-|
 |[exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)|Bir özel duruma bir işaretçi tanımlayan tür.|
-|[terminate_handler](../standard-library/exception-typedefs.md#terminate_handler)|Bir işlevi olarak kullanım için uygun bir işaretçi açıklayan türü bir `terminate_handler`.|
-|[unexpected_handler](../standard-library/exception-typedefs.md#unexpected_handler)|Bir işlevi olarak kullanım için uygun bir işaretçi açıklayan türü bir `unexpected_handler`.|
+|[terminate_handler](../standard-library/exception-typedefs.md#terminate_handler)|İçin olarak kullanım için uygun bir işleve işaretçi tanımlayan tür bir `terminate_handler`.|
+|[unexpected_handler](../standard-library/exception-typedefs.md#unexpected_handler)|İçin olarak kullanım için uygun bir işleve işaretçi tanımlayan tür bir `unexpected_handler`.|
 
 ### <a name="functions"></a>İşlevler
 
 |İşlev|Açıklama|
 |-|-|
 |[current_exception](../standard-library/exception-functions.md#current_exception)|Geçerli özel durum için bir işaretçi alır.|
-|[get_terminate](../standard-library/exception-functions.md#get_terminate)|Geçerli edinir `terminate_handler` işlevi.|
-|[get_unexpected](../standard-library/exception-functions.md#get_unexpected)|Geçerli edinir `unexpected_handler` işlevi.|
-|[make_exception_ptr](../standard-library/exception-functions.md#make_exception_ptr)|Oluşturur bir `exception_ptr` bir özel durum bir kopyasını içeren nesne.|
+|[get_terminate](../standard-library/exception-functions.md#get_terminate)|Geçerli alır `terminate_handler` işlevi.|
+|[get_unexpected](../standard-library/exception-functions.md#get_unexpected)|Geçerli alır `unexpected_handler` işlevi.|
+|[make_exception_ptr](../standard-library/exception-functions.md#make_exception_ptr)|Oluşturur bir `exception_ptr` bir özel durumun kopyasını tutan nesne.|
 |[rethrow_exception](../standard-library/exception-functions.md#rethrow_exception)|Bir parametre olarak geçirilen bir özel durum oluşturur.|
-|[set_terminate](../standard-library/exception-functions.md#set_terminate)|Yeni bir kurar `terminate_handler` program sonlandırma sırasında çağrılabilir.|
-|[set_unexpected](../standard-library/exception-functions.md#set_unexpected)|Yeni bir kurar `unexpected_handler` olması için ne zaman beklenmeyen bir özel durum karşılaştı.|
-|[Sonlandırma](../standard-library/exception-functions.md#terminate)|Bir sonlandırıcı işleyici çağırır.|
-|[uncaught_exception](../standard-library/exception-functions.md#uncaught_exception)|Döndürür **doğru** yalnızca oluşturulan bir özel durum şu anda işleniyorsa.|
+|[set_terminate](../standard-library/exception-functions.md#set_terminate)|Yeni bir kurar `terminate_handler` program sonlandırıldığında çağrılabilir.|
+|[set_unexpected](../standard-library/exception-functions.md#set_unexpected)|Yeni bir kurar `unexpected_handler` olacak şekilde, beklenmeyen bir özel durumla karşılaştı.|
+|[sonlandırma](../standard-library/exception-functions.md#terminate)|Bir sonlandırıcı işleyici çağırır.|
+|[uncaught_exception](../standard-library/exception-functions.md#uncaught_exception)|Döndürür **true** yalnızca oluşan bir özel durum şu anda işleniyorsa.|
 |[beklenmeyen](../standard-library/exception-functions.md#unexpected)|Beklenmeyen bir işleyici çağırır.|
 
 ### <a name="classes"></a>Sınıflar
 
 |örneği|Açıklama|
 |-|-|
-|[bad_exception Sınıfı](../standard-library/bad-exception-class.md)|Sınıfı öğesinden atılan bir özel durumu açıklayan bir `unexpected_handler`.|
-|[exception Sınıfı](../standard-library/exception-class.md)|Sınıfı, belirli ifadeleri ve C++ Standart Kitaplığı tarafından oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.|
+|[bad_exception Sınıfı](../standard-library/bad-exception-class.md)|Öğesinden oluşturulan bir özel durum sınıfı açıklar bir `unexpected_handler`.|
+|[exception Sınıfı](../standard-library/exception-class.md)|Sınıfı, belirli ifadeler ve C++ Standart Kitaplığı tarafından oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

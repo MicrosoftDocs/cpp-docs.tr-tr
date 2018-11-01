@@ -1,27 +1,17 @@
 ---
-title: Sayısal, Boole ve işaretçi değişmez değerleri (C++) | Microsoft Docs
-ms.custom: ''
+title: Sayısal, Boole ve işaretçi değişmez değerleri (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - literals, C++
 - constants, literals
 - literals [C++]
 ms.assetid: 17c09fc3-3ad7-47e2-8b48-ba8ae994edc8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e89fdf1266b5d61c52e26c52976315abd6bb62e3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f263e9a2ed357cdc80ec29fc5d1b6d58c9e093e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46112635"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545801"
 ---
 # <a name="numeric-boolean-and-pointer-literals--c"></a>Sayısal, Boole ve işaretçi değişmez değerleri (C++)
 

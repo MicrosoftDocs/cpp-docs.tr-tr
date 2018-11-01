@@ -1,27 +1,17 @@
 ---
-title: Makro değiştirme | Microsoft Docs
-ms.custom: ''
+title: Makro Değiştirme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - NMAKE program, macro substitution
 - macros, NMAKE
 - substitution macros in NMAKE
 ms.assetid: 47465cfe-fd92-49db-aebe-7c2d7ecceb73
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8f71ef2e1a8f337a4cd415169b6f9d817042f19a
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 8daaa55418839fa969cf3a31efa092fcf21487e5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894401"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616092"
 ---
 # <a name="macro-substitution"></a>Makro Değiştirme
 

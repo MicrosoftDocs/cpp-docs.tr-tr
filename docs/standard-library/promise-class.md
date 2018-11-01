@@ -1,10 +1,6 @@
 ---
-title: promise sınıfı | Microsoft Docs
-ms.custom: ''
+title: promise Sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - future/std::promise
 - future/std::promise::promise
@@ -14,11 +10,7 @@ f1_keywords:
 - future/std::promise::set_value
 - future/std::promise::set_value_at_thread_exit
 - future/std::promise::swap
-dev_langs:
-- C++
 ms.assetid: 2931558c-d94a-4ba1-ac4f-20bf7b6e23f9
-author: corob-msft
-ms.author: corob
 helpviewer_keywords:
 - std::promise [C++]
 - std::promise [C++], promise
@@ -28,14 +20,12 @@ helpviewer_keywords:
 - std::promise [C++], set_value
 - std::promise [C++], set_value_at_thread_exit
 - std::promise [C++], swap
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2b62f4b4be278fc3cc29e32c323c9a0936598d44
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 101c9939f1636d87780aa15aea9459ebb927684d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50058044"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592578"
 ---
 # <a name="promise-class"></a>promise Sınıfı
 

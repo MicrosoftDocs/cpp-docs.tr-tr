@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3669 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3669
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3669
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3669
 ms.assetid: be9c7ae4-e96f-47ab-922a-39a3537d5ca6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7588ec3862c914fd998a7b5a3f59ff4d0bb5bbf2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c2e92fec7c3faeda80bf7f0be3caa33e5d78295b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46088676"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550286"
 ---
 # <a name="compiler-error-c3669"></a>Derleyici Hatası C3669
 

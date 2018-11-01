@@ -1,10 +1,6 @@
 ---
-title: memchr'e, wmemchr | Microsoft Docs
-ms.custom: ''
+title: memchr, wmemchr
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wmemchr
 - memchr
@@ -23,22 +19,16 @@ apitype: DLLExport
 f1_keywords:
 - memchr
 - wmemchr
-dev_langs:
-- C++
 helpviewer_keywords:
 - memchr function
 - wmemchr function
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 43c76ae09f491ff163391f0ee46564af7bb629fe
-ms.sourcegitcommit: 04d327940787df1297b72d534f388a035d472af0
+ms.openlocfilehash: 1de8826d2f072c689ed3363902d1e4742cf187b0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39181178"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438551"
 ---
 # <a name="memchr-wmemchr"></a>memchr, wmemchr
 

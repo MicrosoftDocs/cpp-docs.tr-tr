@@ -1,10 +1,6 @@
 ---
-title: CMFCVisualManagerWindows sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCVisualManagerWindows sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCVisualManagerWindows
 - AFXVISUALMANAGERWINDOWS/CMFCVisualManagerWindows
@@ -75,8 +71,6 @@ f1_keywords:
 - AFXVISUALMANAGERWINDOWS/CMFCVisualManagerWindows::OnUpdateSystemColors
 - AFXVISUALMANAGERWINDOWS/CMFCVisualManagerWindows::SetOfficeStyleMenus
 - AFXVISUALMANAGERWINDOWS/CMFCVisualManagerWindows::m_b3DTabsXPTheme
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCVisualManagerWindows [MFC], AlwaysHighlight3DTabs
 - CMFCVisualManagerWindows [MFC], DrawComboBorderWinXP
@@ -146,16 +140,12 @@ helpviewer_keywords:
 - CMFCVisualManagerWindows [MFC], SetOfficeStyleMenus
 - CMFCVisualManagerWindows [MFC], m_b3DTabsXPTheme
 ms.assetid: 568b6e9e-8e67-4477-9a3d-2981cbd09861
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6e47c32ee3b552f95594b1ba89c05437a6b8e957
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e9f083f37c2e92172b05b907d733f9dbdb27ce45
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054624"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559750"
 ---
 # <a name="cmfcvisualmanagerwindows-class"></a>CMFCVisualManagerWindows sınıfı
 

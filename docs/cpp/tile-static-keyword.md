@@ -1,27 +1,17 @@
 ---
-title: tile_static anahtar sözcüğü | Microsoft Docs
-ms.custom: ''
+title: tile_static Anahtar Sözcüğü
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - tile_static_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - tile_static keyword
 ms.assetid: d78384d4-65d9-45cf-b3df-7e904f489d06
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2f9fa170410b2f07e2894c291e06d1c7a68cc23c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1e0e967edd1808b27d3d4e92f29f7472608f8e65
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090806"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588168"
 ---
 # <a name="tilestatic-keyword"></a>tile_static Anahtar Sözcüğü
 

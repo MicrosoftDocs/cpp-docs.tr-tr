@@ -1,14 +1,8 @@
 ---
-title: Koleksiyon sınıfı Yardımcıları | Microsoft Docs
-ms.custom: ''
+title: Koleksiyon Sınıfı Yardımcıları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.classes
-dev_langs:
-- C++
 helpviewer_keywords:
 - DestructElements function
 - ConstructElements function
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - collection classes [MFC], helper functions
 - helper functions collection class [MFC]
 ms.assetid: bc3a2368-9edd-4748-9e6a-13cba79517ca
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 010afb3939afcb392d38cda8dfb1ab1a37100d3b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 639c4f7952abcf18c29aa3cb0d9fee45b50430af
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083379"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567475"
 ---
 # <a name="collection-class-helpers"></a>Koleksiyon Sınıfı Yardımcıları
 

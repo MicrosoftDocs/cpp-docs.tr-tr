@@ -1,10 +1,6 @@
 ---
-title: CStringList sınıfı | Microsoft Docs
-ms.custom: ''
+title: CStringList sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CStringList
 - AFXCOLL/CStringList
@@ -30,8 +26,6 @@ f1_keywords:
 - AFXCOLL/CObList::RemoveHead
 - AFXCOLL/CObList::RemoveTail
 - AFXCOLL/CObList::SetAt
-dev_langs:
-- C++
 helpviewer_keywords:
 - CObList [MFC], CObList
 - CObList [MFC], AddHead
@@ -56,16 +50,12 @@ helpviewer_keywords:
 - CObList [MFC], RemoveTail
 - CObList [MFC], SetAt
 ms.assetid: 310a7edb-263c-4bd2-ac43-0bfbfddc5a33
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c68c60b31b0af42563dbe1fd784dec177abeebcf
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 29865e7986e435a4cce1ac1abb2027bc8513231e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082273"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499059"
 ---
 # <a name="cstringlist-class"></a>CStringList sınıfı
 

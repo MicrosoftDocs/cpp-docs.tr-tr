@@ -1,10 +1,6 @@
 ---
-title: CTable sınıfı | Microsoft Docs
-ms.custom: ''
+title: CTable Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL::CTable
 - ATL.CTable
@@ -13,23 +9,16 @@ f1_keywords:
 - ATL::CTable::Open
 - CTable::Open
 - CTable.Open
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTable class
 - Open method
 ms.assetid: f13fdaa3-e198-4557-977d-54b0bbc3454d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: dd9d3b291f967b98017e4136740628ef951ea12a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 15081173edfae5ba0f881a6c1607a22e77a8a7c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060136"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452175"
 ---
 # <a name="ctable-class"></a>CTable Sınıfı
 

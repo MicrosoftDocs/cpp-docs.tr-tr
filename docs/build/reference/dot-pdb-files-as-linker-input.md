@@ -1,26 +1,16 @@
 ---
-title: . Bağlayıcı girişi olarak pdb dosyaları | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Girişi olarak .Pdb Dosyaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - .pdb files, as linker input
 - PDB files, as linker input
 ms.assetid: c1071478-2369-4b03-9df8-71761cf82f3b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d6b728903d2a270efc6b3eb736e45540651dae8c
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 23974a9e20f8259c3a38af15664d328ded7ff7d6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706192"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628906"
 ---
 # <a name="pdb-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Pdb Dosyaları
 

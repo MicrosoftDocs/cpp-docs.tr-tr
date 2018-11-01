@@ -1,28 +1,18 @@
 ---
-title: RaiseException işlevi | Microsoft Docs
-ms.custom: ''
+title: RaiseException İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - internal/Microsoft::WRL::Details::RaiseException
-dev_langs:
-- C++
 helpviewer_keywords:
 - RaiseException function
 ms.assetid: f9c74f6d-112a-4d2e-900f-622f795d5dbf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 12032318f898b2986b64d5cd8a1e611a31d1fc8c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: af0b35e1014f79c7907711b95200c241d31b6117
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372398"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594759"
 ---
 # <a name="raiseexception-function"></a>RaiseException İşlevi
 

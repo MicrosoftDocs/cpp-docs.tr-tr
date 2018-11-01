@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3020 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3020
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3020
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3020
 ms.assetid: f625c7a3-afaa-4bd8-9c1b-51891b832f36
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4c7f86d116c1a830db54490f3e5231d837d4246c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0e2d8e70dcc9b23c56a321487cd4b933a1086387
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060649"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491279"
 ---
 # <a name="compiler-error-c3020"></a>Derleyici Hatası C3020
 

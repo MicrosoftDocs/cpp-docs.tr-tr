@@ -1,12 +1,6 @@
 ---
-title: Yazılım özel durumlarını oluşturma | Microsoft Docs
-ms.custom: ''
+title: Yazılım Özel Durumlarını Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - run-time errors, treating as exceptions
 - exception handling [C++], errors as exceptions
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - software exceptions [C++]
 - formats [C++], exception codes
 ms.assetid: be1376c3-c46a-4f52-ad1d-c2362840746a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 75f882fe924ba825a5f3ec641a98175104635e92
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 49ee800bafff017c29b73c5f6fd64318009a140a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085825"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562051"
 ---
 # <a name="raising-software-exceptions"></a>Yazılım Özel Durumlarını Oluşturma
 

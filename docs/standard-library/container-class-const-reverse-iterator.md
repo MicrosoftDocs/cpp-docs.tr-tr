@@ -1,25 +1,15 @@
 ---
-title: Kapsayıcı sınıfı::const_reverse_iterator | Microsoft Docs
-ms.custom: ''
+title: Kapsayıcı Sınıfı::const_reverse_iterator
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - const_reverse_iterator method
 ms.assetid: ceac84d5-a40f-4bbf-81e0-a96aa2bd8ee8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 07fce54bdbffbe2f1effda8ac5a9a17561bad1d1
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 93b1ab9da2094cbb1e653bc9d6db8c195a33da84
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953444"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502797"
 ---
 # <a name="container-classconstreverseiterator"></a>Kapsayıcı Sınıfı::const_reverse_iterator
 

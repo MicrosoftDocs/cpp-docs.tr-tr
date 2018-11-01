@@ -1,26 +1,18 @@
 ---
-title: Platform::Boolean değer sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::Boolean değer sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Boolean
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::Boolean Struct
 ms.assetid: 8518a1db-7139-4187-9c7a-1ae3943373f2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a8870e952b4bcba9455a6c056c9fa21a8178d122
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: c2a1db60700f600360942d2e748badf6e932ce72
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100267"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548167"
 ---
 # <a name="platformboolean-value-class"></a>Platform::Boolean değer sınıfı
 

@@ -1,14 +1,8 @@
 ---
-title: Joker karakter genişletmesi | Microsoft Docs
-ms.custom: ''
+title: Joker Karakter Genişletmesi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _setargv
-dev_langs:
-- C++
 helpviewer_keywords:
 - asterisk wildcard
 - _setargv function
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - command-line wildcards
 - question mark, wildcard
 ms.assetid: 1a543398-607b-4404-93d1-45d290bde638
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cac6b61176b1559ea5810dc061638642926b3969
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2d495f94f2e3fb7b88d235edc7b98f8e90775393
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46077080"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50507443"
 ---
 # <a name="wildcard-expansion"></a>Joker Karakter Genişletmesi
 

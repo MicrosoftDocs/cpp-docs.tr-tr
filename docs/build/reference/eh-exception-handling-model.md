@@ -1,16 +1,10 @@
 ---
-title: -EH (özel durum işleme modeli) | Microsoft Docs
-ms.custom: ''
+title: /EH (Özel Durum İşleme Modeli)
 ms.date: 08/14/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.ExceptionHandling
 - /eh
 - VC.Project.VCCLCompilerTool.ExceptionHandling
-dev_langs:
-- C++
 helpviewer_keywords:
 - exception handling, compiler model
 - cl.exe compiler, exception handling
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - -EH compiler option [C++]
 - /EH compiler option [C++]
 ms.assetid: 754b916f-d206-4472-b55a-b6f1b0f2cb4d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e2c368ac8dfcb5a9d283f4b567e68d4a629c1ba4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f118f55ddaa4a2dbc8a4a3ad1e596ec461a2b078
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417429"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615068"
 ---
 # <a name="eh-exception-handling-model"></a>/EH (Özel Durum İşleme Modeli)
 
@@ -113,7 +103,7 @@ Ancak, oluşturmayan özniteliği işlev tarafından oluşturulan özel durum ga
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ExceptionHandling%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ExceptionHandling%2A>.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4945 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4945
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4945
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4945
 ms.assetid: 6d2079ea-dc59-4611-bc68-9a22c06f7587
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 48797667c880bcd441065da3651adabdb955b52b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 62dfbaed28f1afcdedb41d83158dfe4e8e0f61b6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46027525"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653862"
 ---
 # <a name="compiler-warning-level-1-c4945"></a>Derleyici Uyarısı (düzey 1) C4945
 

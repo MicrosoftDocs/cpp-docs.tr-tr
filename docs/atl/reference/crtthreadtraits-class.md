@@ -1,31 +1,21 @@
 ---
-title: CRTThreadTraits sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRTThreadTraits sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CRTThreadTraits
 - ATLBASE/ATL::CRTThreadTraits
 - ATLBASE/ATL::CRTThreadTraits::CreateThread
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRTThreadTraits class
 - threading [ATL], creation functions
 - threading [ATL], CRT threads
 ms.assetid: eb6e20b0-c2aa-4170-8e34-aaeeacc86343
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f58b5936ab9f73ce2fe351d078e61bddfda54d6c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1e54b4db2605c3006697d0a26d34066de666f0fc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097828"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641954"
 ---
 # <a name="crtthreadtraits-class"></a>CRTThreadTraits sınıfı
 

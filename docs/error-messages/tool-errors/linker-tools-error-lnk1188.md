@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK1188 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1188
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1188
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1188
 ms.assetid: 4af574b0-5b41-4580-9a37-52a634add995
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 36b31590d94d809c16ed64d16071db0919f60238
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 69ac20522aebb7391319c0de210e06b305f3fd0d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098946"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461262"
 ---
 # <a name="linker-tools-error-lnk1188"></a>Bağlayıcı Araçları Hatası LNK1188
 

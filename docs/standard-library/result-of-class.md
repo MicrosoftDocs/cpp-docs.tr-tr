@@ -1,32 +1,21 @@
 ---
-title: result_of sınıfı | Microsoft Docs
-ms.custom: ''
+title: result_of Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 f1_keywords:
 - type_traits/std::result_of
 - type_traits/std::result_of_t
 - type_traits/std::result_of::type
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::result_of
 - std::result_of_t
 - std::result_of::type
 ms.assetid: 5374a096-4b4a-4712-aa97-6852c5cdd6be
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 95ac984ad164c242dcd470ed4d31f3921fa7ec56
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 84a0fbc9ecfb1a6ba18a10aafce8cd8e50cd5ec6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103272"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563832"
 ---
 # <a name="resultof-class"></a>result_of Sınıfı
 

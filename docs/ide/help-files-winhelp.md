@@ -1,25 +1,15 @@
 ---
-title: Yardım dosyaları (WinHelp) | Microsoft Docs
-ms.custom: ''
+title: Yardım Dosyaları (WinHelp)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - file types [C++], WinHelp files
 ms.assetid: 4fdcbd66-66b0-4866-894a-fd7b4c2557e4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4b2b35376fa5e870396bd54af2ada2748dd92bd4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 142702699523633bf810d0077ce7ba6355557d21
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372359"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496317"
 ---
 # <a name="help-files-winhelp"></a>Yardım Dosyaları (WinHelp)
 

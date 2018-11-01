@@ -1,11 +1,6 @@
 ---
-title: ilogb, ilogbf, ilogbl2 | Microsoft Docs
-ms.custom: ''
+title: ilogb, ilogbf, ilogbl2
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - ilogb
 - ilogbf
@@ -35,20 +30,16 @@ helpviewer_keywords:
 - ilogbf function
 - ilogbl function
 ms.assetid: 9ef19d57-1caa-41d5-8233-2faad3562fcb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1436874e1ab35cc72dc40390adf5597529d3bf57
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 63e04246d29fde50c745a5f353829bd337a814ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398185"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551989"
 ---
 # <a name="ilogb-ilogbf-ilogbl"></a>ilogb, ilogbf, ilogbl
 
-Taraflı olmayan taban 2 üs. belirtilen değerin temsil eden bir tamsayı alır.
+Belirtilen değer popülasyon 2 tabanında üssünü temsil eden bir tamsayı olarak alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -82,30 +73,30 @@ Belirtilen değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, temel 2 üs dönmek *x* işaretli olarak **int** değeri.
+Başarılı olursa, 2 tabanında üssünü Döndür *x* işaretli olarak **int** değeri.
 
-Aksi takdirde, tanımlanan aşağıdaki değerlerden birini döndürür \<math.h >:
+Aksi takdirde, tanımlanan şu değerlerden birini döndürür \<math.h >:
 
 |Giriş|Sonuç|
 |-----------|------------|
 |±0|FP_ILOGB0|
 |±inf, ±nan belirsiz|FP_ILOGBNAN|
 
-Hataları raporlanır belirtilmiş [_matherr](matherr.md).
+Hatalar rapor, belirtilen [_matherr](matherr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **ilogb** alın ve dönüş **float** ve **uzun** **çift** türleri. Bir C programı **ilogb** her zaman alan ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **ilogb** alan ve getiren **float** ve **uzun** **çift** türleri. C programında **ilogb** her zaman alan ve döndüren bir **çift**.
 
-Bu işlev çağırma benzer eşdeğer çağırmak için **logb** işlevi sonra dönüş değerini atama **int**.
+Bu fonksiyonu çağıran benzer eşdeğer çağırmak için **logb** işlevi ve ardından dönüş değerine atama **int**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**ilogb**, **ilogbf**, **ilogbl**|\<Math.h >|\<cmath >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

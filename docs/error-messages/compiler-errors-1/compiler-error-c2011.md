@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2011 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2011
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2011
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2011
 ms.assetid: 992c9d51-e850-4d53-b86b-02e73b38249c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09946a6a3e974293e65a582c735e3de42503f0c3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 14969c9cdf4b00844d2001bf4817ea7ffc9bfba6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46115049"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662946"
 ---
 # <a name="compiler-error-c2011"></a>Derleyici Hatası C2011
 

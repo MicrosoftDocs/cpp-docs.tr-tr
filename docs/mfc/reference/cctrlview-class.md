@@ -1,10 +1,6 @@
 ---
-title: CCtrlView sınıfı | Microsoft Docs
-ms.custom: ''
+title: CCtrlView sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CCtrlView
 - AFXWIN/CCtrlView
@@ -13,8 +9,6 @@ f1_keywords:
 - AFXWIN/CCtrlView::PreCreateWindow
 - AFXWIN/CCtrlView::m_dwDefaultStyle
 - AFXWIN/CCtrlView::m_strClass
-dev_langs:
-- C++
 helpviewer_keywords:
 - CCtrlView [MFC], CCtrlView
 - CCtrlView [MFC], OnDraw
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - CCtrlView [MFC], m_dwDefaultStyle
 - CCtrlView [MFC], m_strClass
 ms.assetid: ff488596-1e71-451f-8fec-b0831a7b44e0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 84261c2f5b2c913d2096d2b8878886125f6c0243
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 26a61f7874efc6494b41d201323a0a2a2d78548a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380138"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511767"
 ---
 # <a name="cctrlview-class"></a>CCtrlView sınıfı
 

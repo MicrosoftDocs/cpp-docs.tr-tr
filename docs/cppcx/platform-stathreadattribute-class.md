@@ -1,8 +1,6 @@
 ---
-title: Platform::STAThreadAttribute sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::STAThreadAttribute sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Platform
@@ -10,21 +8,15 @@ f1_keywords:
 - COLLECTION/Platform::Platform::STAThreadAttribute::Equals
 - COLLECTION/Platform::Platform::STAThreadAttribute::GetHashCode
 - COLLECTION/Platform::Platform::STAThreadAttribute::ToString
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::STAThreadAttribute Class
 ms.assetid: f97960fc-e673-4d9e-910a-54c8415411c4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cb97be3012ae4a7c21765d33904f0914d7530025
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 9073dc6e802aa2ed6bfa4fde2a09dd8a0864687b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162054"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555673"
 ---
 # <a name="platformstathreadattribute-class"></a>Platform::STAThreadAttribute sınıfı
 

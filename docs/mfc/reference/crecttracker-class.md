@@ -1,10 +1,6 @@
 ---
-title: CRectTracker sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRectTracker sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CRectTracker
 - AFXEXT/CRectTracker
@@ -24,8 +20,6 @@ f1_keywords:
 - AFXEXT/CRectTracker::m_nStyle
 - AFXEXT/CRectTracker::m_rect
 - AFXEXT/CRectTracker::m_sizeMin
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRectTracker [MFC], CRectTracker
 - CRectTracker [MFC], AdjustRect
@@ -44,16 +38,12 @@ helpviewer_keywords:
 - CRectTracker [MFC], m_rect
 - CRectTracker [MFC], m_sizeMin
 ms.assetid: 99caa7f2-3c0d-4a42-bbee-e5d1d342d4ee
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 98da12276e21a9619468cea3bbaba0190ac54e63
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 519f88a3706812ae77d7dbd77e199b3e3ef4e97a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056873"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473378"
 ---
 # <a name="crecttracker-class"></a>CRectTracker sınıfı
 

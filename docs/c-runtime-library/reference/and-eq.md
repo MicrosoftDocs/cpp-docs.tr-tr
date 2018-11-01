@@ -1,10 +1,6 @@
 ---
-title: and_eq | Microsoft Docs
-ms.custom: ''
+title: and_eq
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,21 +17,15 @@ f1_keywords:
 - and_eq
 - std.and_eq
 - std::and_eq
-dev_langs:
-- C++
 helpviewer_keywords:
 - and_eq macro
 ms.assetid: 11091772-e359-4c2b-95c6-00841ac04354
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fc20f03a085c9a321fd68f683b6f928991fa559f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c5fe0c8856d2cecd33825490087c4b78a8d3342c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392750"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636286"
 ---
 # <a name="andeq"></a>and_eq
 
@@ -51,7 +41,7 @@ Alternatif & = işleci.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Makro & = işleci verir.
+Makro & = işlecini verir.
 
 ## <a name="example"></a>Örnek
 

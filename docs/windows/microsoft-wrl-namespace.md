@@ -1,9 +1,6 @@
 ---
-title: Microsoft::WRL Namespace | Microsoft Docs
-ms.custom: ''
+title: Microsoft::WRL Ad Alanı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL
@@ -14,22 +11,15 @@ f1_keywords:
 - ftm/Microsoft::WRL
 - client/Microsoft::WRL
 - corewrappers/Microsoft::WRL
-dev_langs:
-- C++
 helpviewer_keywords:
 - WRL namespace
 ms.assetid: 01118a8f-f564-4859-b87e-9444848585a1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 8c9aebeb2216bf8248b3182159a0f0aef1482c3b
-ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
+ms.openlocfilehash: a615e77c96901f2cdf211b9646b2b7b0512b99de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48250451"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487457"
 ---
 # <a name="microsoftwrl-namespace"></a>Microsoft::WRL Ad Alanı
 
@@ -89,7 +79,7 @@ namespace Microsoft::WRL;
 |Ad|Açıklama|
 |----------|-----------------|
 |[AsWeak İşlevi](../windows/asweak-function.md)|Belirtilen bir örneğe zayıf bir başvuru alır.|
-|[Geri çağırma işlevi (WRL)](../windows/callback-function-wrl.md)|Üye işlevi bir geri çağırma yöntemi olan nesne oluşturur.|
+|[Callback İşlevi (WRL)](../windows/callback-function-wrl.md)|Üye işlevi bir geri çağırma yöntemi olan nesne oluşturur.|
 |[CreateActivationFactory İşlevi](../windows/createactivationfactory-function.md)|Windows çalışma zamanı tarafından etkinleştirilebilen belirtilen sınıf örneklerini oluşturan bir Üreteç oluşturur.|
 |[CreateClassFactory İşlevi](../windows/createclassfactory-function.md)|Belirtilen sınıfın örneklerini oluşturan bir Üreteç oluşturur.|
 |[Make İşlevi](../windows/make-function.md)|Belirtilen Windows çalışma zamanı sınıf başlatır.|

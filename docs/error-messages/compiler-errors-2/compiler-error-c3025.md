@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3025 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3025
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3025
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3025
 ms.assetid: 4442f5a3-d9ea-4873-b1fb-e7e5bd3cbe5e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2b96737e788134f70ec203ca9f0cb67c99e0628c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bb3337cb563125ce0329146f64c4da3f33e28ce7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46115066"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50490733"
 ---
 # <a name="compiler-error-c3025"></a>Derleyici Hatası C3025
 

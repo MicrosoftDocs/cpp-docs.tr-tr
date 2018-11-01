@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3836 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3836
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3836
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3836
 ms.assetid: 254f851b-7b7d-4c34-a740-fcf72f6a636a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a1349ff88c00f8091a8187bb963f4fb683b694e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 33860273db07894a9a4d15ba6d578598a18819ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46046036"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477551"
 ---
 # <a name="compiler-error-c3836"></a>Derleyici Hatası C3836
 

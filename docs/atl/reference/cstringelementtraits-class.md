@@ -1,10 +1,6 @@
 ---
-title: CStringElementTraits sınıfı | Microsoft Docs
-ms.custom: ''
+title: CStringElementTraits sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CStringElementTraits
 - CSTRINGT/ATL::CStringElementTraits
@@ -15,21 +11,15 @@ f1_keywords:
 - CSTRINGT/ATL::CStringElementTraits::CopyElements
 - CSTRINGT/ATL::CStringElementTraits::Hash
 - CSTRINGT/ATL::CStringElementTraits::RelocateElements
-dev_langs:
-- C++
 helpviewer_keywords:
 - CStringElementTraits class
 ms.assetid: 74d7134b-099d-4455-bf91-3e68ccbf95bc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 51e612e889c06b8736e13e3c0fe04baf07b11a9b
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f3e0bd447d2ff7c04ecf3c4a72b7dd2340c6bb4e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078290"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534231"
 ---
 # <a name="cstringelementtraits-class"></a>CStringElementTraits sınıfı
 

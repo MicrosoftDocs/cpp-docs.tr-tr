@@ -1,33 +1,23 @@
 ---
-title: CArchiveException sınıfı | Microsoft Docs
-ms.custom: ''
+title: CArchiveException sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CArchiveException
 - AFX/CArchiveException
 - AFX/CArchiveException::CArchiveException
 - AFX/CArchiveException::m_cause
 - AFX/CArchiveException::m_strFileName
-dev_langs:
-- C++
 helpviewer_keywords:
 - CArchiveException [MFC], CArchiveException
 - CArchiveException [MFC], m_cause
 - CArchiveException [MFC], m_strFileName
 ms.assetid: da31a127-e86c-41d1-b0b6-bed0865b1b49
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aaa395fa395b65b3d54a970c5832f165c8d4490c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6fe475ebd90ff13fec6a2835b6fdd4cf3d6034a4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421121"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476887"
 ---
 # <a name="carchiveexception-class"></a>CArchiveException sınıfı
 

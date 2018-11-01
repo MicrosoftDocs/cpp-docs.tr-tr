@@ -1,10 +1,6 @@
 ---
-title: _microsoft | Microsoft Docs
-ms.custom: ''
+title: _read
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _read
 apilocation:
@@ -22,8 +18,6 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _read
-dev_langs:
-- C++
 helpviewer_keywords:
 - data [CRT]
 - _read function
@@ -32,20 +26,16 @@ helpviewer_keywords:
 - reading data [C++]
 - files [C++], reading
 ms.assetid: 2ce9c433-57ad-47fe-9ac1-4a7d4c883d30
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2c67ce8ac0e754bf3003b23c56cd1d3f428be903
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8c43cbbc2681433bda02038ae73a827fad904835
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405815"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658451"
 ---
 # <a name="read"></a>_read
 
-Bir dosyadan veri okur.
+Bir dosyadan verileri okur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,29 +50,29 @@ int _read(
 ### <a name="parameters"></a>Parametreler
 
 *FD*<br/>
-Açık olan dosyaya başvuran dosya tanımlayıcısı.
+Açık dosyaya başvuran dosya tanımlayıcısı.
 
 *Arabellek*<br/>
-Verileri için depolama konumu.
+Veri için depolama konumu.
 
 *Sayısı*<br/>
 En fazla bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_microsoft** hangi küçük olabilir, okunan bayt sayısını döndürür daha *sayısı* varsa daha az *sayısı* bayt sol dosyasında veya dosyayı metin modunda açtıysanız, her satır durumda return satır çifti '\r\n' besleme tek satır besleme karakteri '\n' ile değiştirilir. Yalnızca tek satır besleme karakter dönüş değeri sayılır. Değiştirilen dosya işaretçisini etkilemez.
+**_read** , küçük olabilir, okunan bayt sayısını döndürür daha *sayısı* değerinden daha az *sayısı* bayt sol dosyasında veya dosyanın metin modunda açıldıysa, her bir satır başı durumda başı satır besleme çifti '\r\n' bir '\n' tek satır besleme karakteri ile değiştirilir. Yalnızca tek bir satır besleme karakteri, dönüş değeri olarak sayılır. Değiştirilen dosya işaretçisini etkilemez.
 
-Dosya sonu okumak işlevi çalışırsa, 0 döndürür. Varsa *fd* olduğundan geçerli değil, dosya okuma için açık değil veya dosyanın kilitli, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için ayarlar ve işlev dönüşleri -1 yürütülmesine izin veriliyorsa **errno** için **EBADF**.
+İşlev dosya sonunda okumaya çalışır, 0 döndürür. Varsa *fd* olduğundan geçerli değil, dosya okuma için açık değil veya dosyanın kilitli, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** için **EBADF**.
 
-Varsa *arabellek* olan **NULL**, geçersiz parametre işleyicisi çağrılır. Devam etmek için yürütülmesine izin veriliyorsa, işlevi -1 döndürür ve **errno** ayarlanır **EINVAL**.
+Varsa *arabellek* olduğu **NULL**, geçersiz parametre işleyicisi çağrılır. Yürütme devam etmesine izin verilirse işlev -1 döndürür ve **errno** ayarlanır **EINVAL**.
 
-Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Read** işlevi okur en fazla *sayısı* baytlara *arabellek* ilişkili dosyasından *fd*. Belirtilen dosya ile ilişkili dosya işaretçisini geçerli konumunu okuma işlemi başlar. Okuma işleminden sonra sonraki okunmamış karaktere dosya işaretçisi işaret eder.
+**_Read** işlevi, en fazla okur *sayısı* baytlara *arabellek* ilişkili dosyasından *fd*. Belirtilen dosya ile ilişkili dosya işaretçisi konumunu okuma işlemi başlar. Sonra okuma işlemi, dosya işaretçisini okunmamış sonraki karaktere işaret eder.
 
-Dosya metin modunda açıldıysa, okuma ne zaman sona erer **_read** bir dosya sonu göstergesi olarak kabul edilir bir CTRL + Z karakter karşılaşır. Kullanım [_lseek](lseek-lseeki64.md) dosya sonu göstergesi temizleyin.
+Dosyayı metin modunda açıldıysa, salt okunur olduğunda sonlandırır **_read** bir dosya sonu göstergesi olarak kabul edilir bir CTRL + Z karakterini karşılaşır. Kullanım [_lseek](lseek-lseeki64.md) dosya sonu göstergesi temizleyin.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -90,7 +80,7 @@ Dosya metin modunda açıldıysa, okuma ne zaman sona erer **_read** bir dosya s
 |-------------|---------------------|
 |**_read**|\<io.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

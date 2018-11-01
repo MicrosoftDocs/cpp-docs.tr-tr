@@ -1,27 +1,17 @@
 ---
-title: static_cast işleci | Microsoft Docs
-ms.custom: ''
+title: static_cast İşleci
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - static_cast_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - static_cast keyword [C++]
 ms.assetid: 1f7c0c1c-b288-476c-89d6-0e2ceda5c293
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c60eee337ba565c43217bf6afbcf7d9344337695
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8e39fe7eb0fb9b77a82b305fa2f8186ad4e855a1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090047"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601714"
 ---
 # <a name="staticcast-operator"></a>static_cast İşleci
 

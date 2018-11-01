@@ -1,26 +1,16 @@
 ---
-title: Özellik sayfasına denetim ekleme | Microsoft Docs
-ms.custom: ''
+title: Özellik Sayfasına Denetim Ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - controls [MFC], adding to property sheets
 - property sheets, adding controls
 ms.assetid: 24ad4c0b-c1db-4850-b9f0-34aae8d74571
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0783571ed77d3d8dfaca69edf06330e62d8e98d0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 141339bd146fec20f02e73e24bb9dae387f4e3ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398514"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502784"
 ---
 # <a name="adding-controls-to-a-property-sheet"></a>Özellik Sayfasına Denetim Ekleme
 

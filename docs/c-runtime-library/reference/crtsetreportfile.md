@@ -1,10 +1,6 @@
 ---
-title: _CrtSetReportFile | Microsoft Docs
-ms.custom: ''
+title: _CrtSetReportFile
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtSetReportFile
 apilocation:
@@ -22,26 +18,20 @@ apitype: DLLExport
 f1_keywords:
 - CrtSetReportFile
 - _CrtSetReportFile
-dev_langs:
-- C++
 helpviewer_keywords:
 - CrtSetReportFile function
 - _CrtSetReportFile function
 ms.assetid: 3126537e-511b-44af-9c1c-0605265eabc4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a3df4f54ad8e191dac7110a914bdde1cec888ff9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 32a560e09c47468daf48c185e23d6e289c6d1d9b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402344"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464252"
 ---
 # <a name="crtsetreportfile"></a>_CrtSetReportFile
 
-Kullandıktan sonra [_CrtSetReportMode](crtsetreportmode.md) belirtmek için **_CRTDBG_MODE_FILE**, ileti metnini almak için dosya tanıtıcısı belirtebilirsiniz. **_CrtSetReportFile** tarafından da kullanılan [_CrtDbgReport, _CrtDbgReportW](crtdbgreport-crtdbgreportw.md) metin (yalnızca hata ayıklama sürümü) hedef belirtmek için.
+Kullandıktan sonra [_CrtSetReportMode](crtsetreportmode.md) belirtmek için **_CRTDBG_MODE_FILE**, ileti metnini almak için dosya tanıtıcısını belirleyebilirsiniz. **_CrtSetReportFile** tarafından da kullanılan [_CrtDbgReport, _CrtDbgReportW](crtdbgreport-crtdbgreportw.md) metni (yalnızca hata ayıklama sürümü) hedefini belirtmek için.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,17 +52,17 @@ Yeni rapor dosyası için *reportType*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarıyla tamamlandığında, **_CrtSetReportFile** önceki rapor dosyası içinde belirtilen rapor türü için tanımlı döndürür *reportType*. Geçersiz bir değer geçtiyse *reportType*, bu işlevi geçersiz parametre işleyicisi açıklandığı gibi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **_CRTDBG_HFILE_ERROR**. Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Başarıyla tamamlandığında, **_CrtSetReportFile** içinde belirtilen rapor türü için tanımlanmış olan önceki rapor dosyasını döndürür *reportType*. Geçersiz bir değer geçtiyse *reportType*, bu işlev içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **_CRTDBG_HFILE_ERROR**. Daha fazla bilgi için [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtSetReportFile** ile kullanılan [_CrtSetReportMode](crtsetreportmode.md) hedef veya tarafından oluşturulan belirli bir rapor türü için hedefleri tanımlamak için işlevi **_CrtDbgReport**. Zaman **_CrtSetReportMode** atamak için adlı **_CRTDBG_MODE_FILE** belirli bir rapor türü için modu raporlama **_CrtSetReportFile** için çağrılmalıdır belirli dosya ya da hedef olarak kullanmak için akış tanımlayın. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtSetReportFile** ön işleme sırasında kaldırılır.
+**_CrtSetReportFile** ile kullanılan [_CrtSetReportMode](crtsetreportmode.md) hedefi veya hedefleri tarafından oluşturulan belirli bir rapor türü için tanımlamak üzere işlevi **_CrtDbgReport**. Zaman **_CrtSetReportMode** atamak adlı **_CRTDBG_MODE_FILE** modu, belirli bir rapor türü için raporlama **_CrtSetReportFile** için çağrılmalıdır belirli dosya ya da hedef olarak kullanılmak üzere stream tanımlayın. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtSetReportFile** ön işleme sırasında kaldırılır.
 
-Aşağıdaki liste için kullanılabilir seçenekleri gösterir *reportFile* ve sonuçta elde edilen davranışını **_CrtDbgReport**. Bu seçenekler Crtdbg.h bit bayrakları olarak tanımlanır.
+Aşağıdaki liste için kullanılabilen seçenekleri gösterir *reportFile* ve sonuçta elde edilen davranışını **_CrtDbgReport**. Bu seçenekler, Crtdbg.h'de bit bayrakları olarak tanımlanır.
 
 - **dosya tanıtıcısı**
 
-   İletileri için hedef olacaktır dosyası için bir tanıtıcı. Tanıtıcı geçerliliğini doğrulamak için girişimde bulunulmaz. Açın ve dosyanın tanıtıcısını kapatın. Örneğin:
+   İletilerin hedefi olacak dosyaya tanıtıcı. Tanıtıcı geçerliliğini doğrulamak için girişimde bulunulmaz. Açın ve dosya tanıtıcısını kapatmanız gerekir. Örneğin:
 
    ```C
    HANDLE hLogFile;
@@ -88,7 +78,7 @@ Aşağıdaki liste için kullanılabilir seçenekleri gösterir *reportFile* ve 
 
 - **_CRTDBG_FILE_STDERR**
 
-   Yazma iletiye **stderr**, hangi yeniden yönlendirilen gibi:
+   İleti yazar **stderr**, hangi yönlendirilebilir gibi:
 
    ```C
    freopen( "c:\\log2.txt", "w", stderr);
@@ -100,21 +90,21 @@ Aşağıdaki liste için kullanılabilir seçenekleri gösterir *reportFile* ve 
 
 - **_CRTDBG_FILE_STDOUT**
 
-   Yazma iletiye **stdout**, hangi yeniden yönlendirebilirsiniz.
+   İleti yazar **stdout**, hangi bunu yeniden yönlendirebilirsiniz.
 
 - **_CRTDBG_REPORT_FILE**
 
-   Geçerli rapor modu döndürür.
+   Geçerli rapor modunu döndürür.
 
-Her rapor türü tarafından kullanılan rapor dosyası ayrı olarak denetlenebilir. Örneğin, belirtmek olası bir *reportType* , **_CRT_ERROR** bildirilen **stderr**, sırada bir *reportType* ,**_CRT_ASSERT** için bir kullanıcı tanımlı dosya tanıtıcısı veya akış bildirdi.
+Her rapor türü tarafından kullanılan rapor dosyası ayrı olarak denetlenebilir. Örneğin belirtmek olası bir *reportType* , **_CRT_ERROR** rapor **stderr**, ancak bir *reportType* ,**_CRT_ASSERT** bir kullanıcı tanımlı tanıtıcıya veya akışa rapor.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_CrtSetReportFile**|\<crtdbg.h >|\<errno.h >|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 **Kitaplıklar:** hata ayıklama sürümleri [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md) yalnızca.
 

@@ -1,27 +1,19 @@
 ---
-title: Platform::InvalidCastException sınıfı | Microsoft Docs
-ms.custom: ''
+title: Platform::InvalidCastException sınıfı
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::InvalidCastException::InvalidCastException
 - VCCORLIB/Platform::InvalidCastException
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::InvalidCastException
 ms.assetid: 0215131d-1251-4913-9561-824410e045b6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 82c885e5bb181a770c91e5f05a041c85ee5b9bc7
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 9ff48fc456f03adc0e516624a16118e3ddad8718
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110850"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50507698"
 ---
 # <a name="platforminvalidcastexception-class"></a>Platform::InvalidCastException sınıfı
 

@@ -1,14 +1,8 @@
 ---
-title: LIB başvurusu | Microsoft Docs
-ms.custom: ''
+title: LIB Başvurusu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - Lib
-dev_langs:
-- C++
 helpviewer_keywords:
 - static libraries
 - static libraries, setting IDE options
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - LIB [C++]
 - 32-Bit Library Manager
 ms.assetid: ecc7f643-bbd4-47a3-8dc6-b360f880db91
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6d73237ac5b4b2ab549de5dba19116aa4e743514
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1b3982e29d1bbf919e326e39f62ddb361d4c12ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709429"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543279"
 ---
 # <a name="lib-reference"></a>LIB Başvurusu
 

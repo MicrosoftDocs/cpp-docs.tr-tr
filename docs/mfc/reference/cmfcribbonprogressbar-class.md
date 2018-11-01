@@ -1,10 +1,6 @@
 ---
-title: CMFCRibbonProgressBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCRibbonProgressBar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCRibbonProgressBar
 - AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetInfiniteMode
 - AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetPos
 - AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetRange
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCRibbonProgressBar [MFC], CMFCRibbonProgressBar
 - CMFCRibbonProgressBar [MFC], GetPos
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - CMFCRibbonProgressBar [MFC], SetPos
 - CMFCRibbonProgressBar [MFC], SetRange
 ms.assetid: de3d9f2e-ed59-480e-aa7d-08a33ab36c67
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c056ce5a9747be280e465e2054402f43761c64e2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 13d73b09fc9fb88736242e7d0c04c33baa795914
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071579"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608605"
 ---
 # <a name="cmfcribbonprogressbar-class"></a>CMFCRibbonProgressBar sınıfı
 

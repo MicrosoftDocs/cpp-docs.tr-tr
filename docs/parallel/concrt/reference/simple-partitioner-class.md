@@ -1,29 +1,19 @@
 ---
-title: simple_partitioner sınıfı | Microsoft Docs
-ms.custom: ''
+title: simple_partitioner Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - simple_partitioner
 - PPL/concurrency::simple_partitioner
 - PPL/concurrency::simple_partitioner::simple_partitioner
-dev_langs:
-- C++
 helpviewer_keywords:
 - simple_partitioner class
 ms.assetid: d7e997af-54d1-43f5-abe0-def72df6edb3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 89114c96beb49c8f843ec8a04b08802632c61ca1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f3c5792a13d9e63a05ce6710dea77828f2510f0d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401517"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522453"
 ---
 # <a name="simplepartitioner-class"></a>simple_partitioner Sınıfı
 

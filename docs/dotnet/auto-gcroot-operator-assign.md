@@ -1,31 +1,21 @@
 ---
-title: auto_gcroot::operator = | Microsoft Docs
-ms.custom: ''
+title: auto_gcroot::operator=
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - auto_gcroot.operator=
 - msclr::auto_gcroot::operator=
 - msclr.auto_gcroot.operator=
 - auto_gcroot::operator=
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator=
 ms.assetid: 99eba5eb-5a2c-4edf-b3d5-c903f818233d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 5989c3dd837ab675a922e9665b6afa81a7dbe4a7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 181a4aa4162baa0710316b7594ca71bd063e60c5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431586"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50589975"
 ---
 # <a name="autogcrootoperator"></a>auto_gcroot::operator=
 

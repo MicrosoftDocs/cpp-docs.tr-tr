@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1189 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1189
 ms.date: 04/27/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1189
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1189
 ms.assetid: 2e5c8a78-edd4-411c-b619-558a96be148a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 051b7eb965526d12311dfacaeae7a00e4fbe4e75
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 06d42316a0109ac063bba43cefebd9aab71c2e72
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199800"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565535"
 ---
 # <a name="fatal-error-c1189"></a>Önemli hata C1189
 
@@ -29,11 +19,11 @@ ms.locfileid: "33199800"
 
 ## <a name="remarks"></a>Açıklamalar
 
-C1189 tarafından oluşturulur `#error` yönergesi. Yönergesi kodları Geliştirici hata iletisinin metnini belirtir. Daha fazla bilgi için bkz: [#error yönergesi (C/C++)](../../preprocessor/hash-error-directive-c-cpp.md).
+Tarafından oluşturulan C1189 `#error` yönergesi. Yönerge kodları geliştiriciye hata iletisinin metni belirtir. Daha fazla bilgi için [#error yönergesi (C/C++)](../../preprocessor/hash-error-directive-c-cpp.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C1189 oluşturur. Örnekte, çünkü Geliştirici özel hata iletisi sorunları `_WIN32` tanımlayıcısı tanımlı değil:
+Aşağıdaki örnek, C1189 oluşturur. Aşağıdaki örnekte, çünkü Geliştirici özel hata iletisi sorunlarını `_WIN32` tanımlayıcı tanımlı değil:
 
 ```cpp
 // C1189.cpp

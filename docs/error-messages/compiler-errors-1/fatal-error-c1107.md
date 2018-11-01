@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1107 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1107
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1107
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1107
 ms.assetid: 541a4d9f-10bc-4dd8-b68e-15e548f3dc0a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bc896f08ac161cae4e4fab5e991da810f3faf195
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 135e8da1b49eb1d86f6186e8683ced2f5152a3a1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016643"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484824"
 ---
 # <a name="fatal-error-c1107"></a>Önemli hata C1107
 

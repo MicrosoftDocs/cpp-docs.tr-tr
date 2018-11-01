@@ -1,9 +1,6 @@
 ---
-title: EventSource sınıfı | Microsoft Docs
-ms.custom: ''
+title: EventSource Sınıfı
 ms.date: 09/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - event/Microsoft::WRL::EventSource
@@ -15,8 +12,6 @@ f1_keywords:
 - event/Microsoft::WRL::EventSource::Remove
 - event/Microsoft::WRL::EventSource::targets_
 - event/Microsoft::WRL::EventSource::targetsPointerLock_
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::EventSource class
 - Microsoft::WRL::EventSource::Add method
@@ -28,17 +23,12 @@ helpviewer_keywords:
 - Microsoft::WRL::EventSource::targets_ data member
 - Microsoft::WRL::EventSource::targetsPointerLock_ data member
 ms.assetid: 91f1c072-6af4-44e6-b6d8-ac6d0c688dde
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: cd9ab28ccce14c5ac0975b7050588ee6524cfcc9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e9070fe756410e3e1bb1e5840eb3f06e29c2f46b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408355"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561284"
 ---
 # <a name="eventsource-class"></a>EventSource Sınıfı
 

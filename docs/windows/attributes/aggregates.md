@@ -1,31 +1,20 @@
 ---
-title: Toplamlar (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: Toplamlar (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.aggregates
-dev_langs:
-- C++
 helpviewer_keywords:
 - aggregates attribute
 - aggregation [C++]
 - aggregate objects [C++], aggregates attribute
 - aggregates [C++]
 ms.assetid: 67a084c9-941f-474b-a029-9c93b38ebe9a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 0729ad2e68929f8fabbfd2d8439e8c8840e67419
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: aaf138ab3b0fa69f2a8c201eed631569b33b079f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071205"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486794"
 ---
 # <a name="aggregates"></a>toplamlar
 

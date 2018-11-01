@@ -1,10 +1,6 @@
 ---
-title: _close | Microsoft Docs
-ms.custom: ''
+title: _close
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _close
 apilocation:
@@ -22,23 +18,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _close
-dev_langs:
-- C++
 helpviewer_keywords:
 - _close function
 - close function
 - files [C++], closing
 ms.assetid: 4708a329-8acf-4cd9-b7b0-a952e1897247
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eabf084d2e4dd7e280c0ff730d1ec34d86f1ed98
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: faea008903136e8abdc39297672b31800ada796d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394203"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528030"
 ---
 # <a name="close"></a>_close
 
@@ -55,31 +45,31 @@ int _close(
 ### <a name="parameters"></a>Parametreler
 
 *FD*<br/>
-Açık olan dosyaya başvuran dosya tanımlayıcısı.
+Açık dosyaya başvuran dosya tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_close** dosya başarılı bir şekilde kapatıldı 0 döndürür. Dönüş değeri-1 hata gösterir.
+**_close** dosya başarıyla kapattıysanız, 0 döndürür. -1 dönüş değeri bir hata olduğunu gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Close** işlev ile ilişkili dosya kapatır *fd*.
+**_Close** işlevi, ilişkili dosyayı kapatır *fd*.
 
-Dosya tanımlayıcısı ve temel işletim sistemi dosya işleci kapatılır. Bu nedenle, çağırmak gerekli değildir **CloseHandle** dosyayı ilk olarak Win32 işlevi kullanılarak açılmışsa **CreateFile** ve kullanarak bir dosyaya tanımlayıcısı dönüştürülen **_open_osfhandle**.
+Dosya tanımlayıcısı ve temel alınan işletim sistemi dosya tanıtıcısı kapatılır. Bu nedenle, çağrı gerekli değildir **CloseHandle** Win32 işlevini kullanarak dosyanın ilk açıldığı varsa **CreateFile** kullanarak bir dosya tanımlayıcısı dönüştürülecek **_open_osfhandle**.
 
-Bu işlev parametrelerini doğrular. Varsa *fd* hatalı dosya tanımlayıcısı açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, -1 döndürür işlevleri ve **errno** ayarlanır **EBADF**.
+Bu işlev, parametrelerini doğrular. Varsa *fd* bir hatalı dosya tanımlayıcısı açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse işlevler -1 döndürür ve **errno** ayarlanır **EBADF**.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_close**|\<io.h >|\<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [_kurulum Aç](open-wopen.md).
+Örneğin bakın [_aç](open-wopen.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

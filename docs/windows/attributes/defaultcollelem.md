@@ -1,28 +1,17 @@
 ---
-title: defaultcollelem | Microsoft Docs
-ms.custom: ''
+title: defaultcollelem
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.defaultcollelem
-dev_langs:
-- C++
 helpviewer_keywords:
 - defaultcollelem attribute
 ms.assetid: 3dbbd293-8b83-4f70-a36b-64cc1d0b6713
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: c32bac1157966b5946aa777c55937747f6fbfeba
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1120415e8babdc5df422fffb292a1ec9246a2165
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50059161"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487496"
 ---
 # <a name="defaultcollelem"></a>defaultcollelem
 

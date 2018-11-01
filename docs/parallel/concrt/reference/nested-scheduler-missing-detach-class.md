@@ -1,29 +1,19 @@
 ---
-title: nested_scheduler_missing_detach sınıfı | Microsoft Docs
-ms.custom: ''
+title: nested_scheduler_missing_detach Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - nested_scheduler_missing_detach
 - CONCRT/concurrency::nested_scheduler_missing_detach
 - CONCRT/concurrency::nested_scheduler_missing_detach::nested_scheduler_missing_detach
-dev_langs:
-- C++
 helpviewer_keywords:
 - nested_scheduler_missing_detach class
 ms.assetid: 65d3f277-6d43-4160-97ef-caf8b26c1641
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e7c862cdf778b726a4d416ea490f5da9c3d7eb01
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ff60c5d9486f4c82bd48971c1a511df9a3372e9d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414894"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536805"
 ---
 # <a name="nestedschedulermissingdetach-class"></a>nested_scheduler_missing_detach Sınıfı
 

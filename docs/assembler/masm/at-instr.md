@@ -1,27 +1,17 @@
 ---
-title: '@InStr | Microsoft Docs'
-ms.custom: ''
+title: '@InStr'
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - '@InStr'
-dev_langs:
-- C++
 helpviewer_keywords:
 - '@InStr symbol'
 ms.assetid: 980d5b9f-2b88-4306-8955-df6cd2133e68
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b0beb5fbde4433ad436d9dffa0dd3048b17a7fcd
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: ed1bda10d7797a2c1bba43a4824a331d196def4f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682999"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586179"
 ---
 # <a name="instr"></a>@InStr
 

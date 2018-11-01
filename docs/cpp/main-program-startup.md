@@ -1,15 +1,9 @@
 ---
-title: 'Main: Program başlatma | Microsoft Docs'
-ms.custom: ''
+title: 'main: Program Başlatma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - vc.main.startup
 - _tmain
-dev_langs:
-- C++
 helpviewer_keywords:
 - program startup [C++]
 - entry points, program
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - startup code, main function
 - main function, program startup
 ms.assetid: f9581cd6-93f7-4bcd-99ec-d07c3c107dd4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ac33b9c7cbcc20f3cea55e73a0c079a21a068a9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 76c580d4b48e1651803ae9bf62f0e2346e19e06c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086063"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603287"
 ---
 # <a name="main-program-startup"></a>main: Program Başlatma
 

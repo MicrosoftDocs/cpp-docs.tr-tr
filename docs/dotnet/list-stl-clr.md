@@ -1,9 +1,6 @@
 ---
-title: Liste (STL/CLR) | Microsoft Docs
-ms.custom: ''
+title: liste (STL/CLR)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - cliext::list
@@ -57,8 +54,6 @@ f1_keywords:
 - cliext::operator==(list)
 - cliext::operator>(list)
 - cliext::operator>=(list)
-dev_langs:
-- C++
 helpviewer_keywords:
 - <cliext/list> header [STL/CLR]
 - list class [STL/CLR]
@@ -114,17 +109,12 @@ helpviewer_keywords:
 - operator>(list) member [STL/CLR]
 - operator>=(list) member [STL/CLR]
 ms.assetid: a70c45c8-a257-4f6b-8434-b27ff6685bac
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 96f666c80cfff5d3e768470291a153eca6f6f304
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8350e8b7036731cf3e09b9ce26278b2a656d80be
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425281"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569591"
 ---
 # <a name="list-stlclr"></a>liste (STL/CLR)
 

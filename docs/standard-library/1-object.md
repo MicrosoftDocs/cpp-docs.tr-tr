@@ -1,29 +1,19 @@
 ---
-title: _1 nesnesi | Microsoft Docs
-ms.custom: ''
+title: _1 Nesnesi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - _1
 - std::_1
 - functional/std::_1
-dev_langs:
-- C++
 helpviewer_keywords:
 - _1 object
 ms.assetid: 30c3c480-ff31-4708-94be-7d0d65f243c9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 156eca047946ad13b1e4f09057edceb9f0bc6b34
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 248bb4733849b231ee4ff9180dd04e288412af3b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719192"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666374"
 ---
 # <a name="1-object"></a>_1 Nesnesi
 

@@ -1,25 +1,15 @@
 ---
-title: IDL öznitelikleri, Özellik Ekleme Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: IDL Öznitelikleri, Özellik Ekleme Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.prop.idlattributes
-dev_langs:
-- C++
 ms.assetid: 356ed666-79d0-4bd9-a5e7-cda679cbadbd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ce3597f656d46da85faee3f6ec51b89257d25d05
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d2a7448675be6a9d8cfc290d648413643aa4681c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426360"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514289"
 ---
 # <a name="idl-attributes-add-property-wizard"></a>IDL Öznitelikleri, Özellik Ekleme Sihirbazı
 
@@ -50,7 +40,7 @@ Tüm seçenekler için tüm özellik türleri kullanılabilir değildir.
 |**defaultcollelem**|Özelliğin varsayılan koleksiyonun bir öğesi için bir erişimci işlevi gösterir. Bkz: [defaultcollelem](/windows/desktop/Midl/defaultcollelem) içinde *MIDL başvuru*.|
 |**nonbrowsable**|Özellikler tarayıcısında görüntülenmemelidir bir arabirim veya dispinterface üye etiketler. Bkz: [nonbrowsable](/windows/desktop/Midl/nonbrowsable) içinde *MIDL başvuru*.|
 |**requestedit**|Özelliğin desteklediğini belirtir **OnRequestEdit** bildirim bakın [requestedit](/windows/desktop/Midl/requestedit) içinde *MIDL başvuru*. Özelliğin stok uygulaması, bu seçenek varsayılan olarak ayarlanır ve değiştirilemez.|
-|**Kaynak**|Üye özelliğinin bir olay kaynağı olduğunu gösterir. Bkz: [kaynak](/windows/desktop/Midl/source) içinde *MIDL başvuru*.|
+|**source**|Üye özelliğinin bir olay kaynağı olduğunu gösterir. Bkz: [kaynak](/windows/desktop/Midl/source) içinde *MIDL başvuru*.|
 |**hidden**|Özelliği var ancak kullanıcıya dayalı tarayıcıda görüntülenmemesi gerektiğini belirtir. Bkz: [gizli](/windows/desktop/Midl/hidden) içinde *MIDL başvuru*.|
 |**restricted**|Özellik rasgele çağrılamaz belirtir. Bkz: [kısıtlı](/windows/desktop/Midl/restricted) içinde *MIDL başvuru*.|
 |`local`|MIDL derleyicisine özelliği uzak olmadığını belirtir. Bkz: [yerel](/windows/desktop/Midl/local) içinde *MIDL başvuru*.|

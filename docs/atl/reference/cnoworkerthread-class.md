@@ -1,10 +1,6 @@
 ---
-title: CNoWorkerThread sınıfı | Microsoft Docs
-ms.custom: ''
+title: CNoWorkerThread sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CNoWorkerThread
 - ATLUTIL/ATL::CNoWorkerThread
@@ -15,21 +11,15 @@ f1_keywords:
 - ATLUTIL/ATL::CNoWorkerThread::Initialize
 - ATLUTIL/ATL::CNoWorkerThread::RemoveHandle
 - ATLUTIL/ATL::CNoWorkerThread::Shutdown
-dev_langs:
-- C++
 helpviewer_keywords:
 - CNoWorkerThread class
 ms.assetid: 29f06bae-b658-4aac-9c14-331e996d25d1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e602b3493269924e7b80b52b70b34397fcc7dd71
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: fcd103283738ce7d573faa2fb1025ee2af642021
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753933"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520217"
 ---
 # <a name="cnoworkerthread-class"></a>CNoWorkerThread sınıfı
 

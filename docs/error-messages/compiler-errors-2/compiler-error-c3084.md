@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3084 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3084
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3084
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3084
 ms.assetid: 0362cb70-e24e-476f-a24d-8f5bb97c3afd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 44bab3f43efa186c83134a6b40e7cb3fcbcbd51d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7659c17d999a8720ffb0ccdcdb631b27949167b7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46027238"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50572685"
 ---
 # <a name="compiler-error-c3084"></a>Derleyici Hatası C3084
 

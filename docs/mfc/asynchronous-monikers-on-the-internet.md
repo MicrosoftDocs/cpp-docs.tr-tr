@@ -1,12 +1,6 @@
 ---
-title: Internet'teki zaman uyumsuz adlar | Microsoft Docs
-ms.custom: ''
+title: Internet'teki Zaman Uyumsuz Adlar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ActiveX controls [MFC], asynchronous
 - MFC, asynchronous monikers
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - optimization [MFC], asynchronous downloading across Internet
 - Internet [MFC], asynchronous downloading
 ms.assetid: 418b0c64-0046-4dae-8118-c9c762b5822e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bdb310891cd98e6bf3a8afa0b92cce01e5f5c6ba
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 63bdc8372223075804d8c710909909382167b2c2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409913"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591301"
 ---
 # <a name="asynchronous-monikers-on-the-internet"></a>Internet'teki Zaman Uyumsuz Adlar
 

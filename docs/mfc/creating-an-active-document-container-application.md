@@ -1,12 +1,6 @@
 ---
-title: Etkin belge kapsayıcı uygulaması oluşturma | Microsoft Docs
-ms.custom: ''
+title: Etkin Belge Kapsayıcı Uygulaması Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - active documents [MFC], containers
 - containers [MFC], active document
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - MFC COM, active document containment
 - applications [MFC], active document container
 ms.assetid: 14e2d022-a6c5-4249-8712-706b0f4433f7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f1b20dd592e180122e119b08ab59babfdaae8d54
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ecce997c451b39600606550dd1198cddfd764334
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052822"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463342"
 ---
 # <a name="creating-an-active-document-container-application"></a>Etkin Belge Kapsayıcı Uygulaması Oluşturma
 
