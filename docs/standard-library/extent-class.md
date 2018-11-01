@@ -1,28 +1,18 @@
 ---
-title: Extent sınıfı | Microsoft Docs
-ms.custom: ''
+title: extent Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::extent
-dev_langs:
-- C++
 helpviewer_keywords:
 - extent class
 - extent
 ms.assetid: 6d16263d-90b2-4330-9ec7-b59ed898792d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 156ae11bcc63e5d19b816580bfce7bb24cfbc3d4
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 716f4fcd90e97eaeb3f56c8429379590d176e1c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106684"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428151"
 ---
 # <a name="extent-class"></a>extent Sınıfı
 

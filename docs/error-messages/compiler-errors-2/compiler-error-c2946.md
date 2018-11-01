@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2946 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2946
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2946
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2946
 ms.assetid: c86dfbfc-7702-4f09-8a53-d205710e99c2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 91af822dd21adf9125162ed997e71ed548c863ac
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0f61d047fcd070f3deea662cd3bd193f8e133659
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46027693"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459091"
 ---
 # <a name="compiler-error-c2946"></a>Derleyici Hatası C2946
 

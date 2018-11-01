@@ -1,27 +1,17 @@
 ---
-title: Önemli hata C1854 | Microsoft Docs
-ms.custom: ''
+title: Önemli hata C1854
 ms.date: 11/04/2016
-ms.technology:
-- devlang-cpp
-ms.topic: error-reference
 f1_keywords:
 - C1854
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1854
 ms.assetid: 8c21a9cc-1737-475c-9e57-8725cd8937c1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 83450169ec928bb77e46916619c84b3b9a3443a3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: feb385161c9bc13d89052b4947174fbdce7a0d00
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46029396"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50457388"
 ---
 # <a name="fatal-error-c1854"></a>Önemli hata C1854
 

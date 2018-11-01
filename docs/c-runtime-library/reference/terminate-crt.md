@@ -1,10 +1,6 @@
 ---
-title: Sonlandır (CRT) | Microsoft Docs
-ms.custom: ''
+title: sonlandır (CRT)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - terminate
 apilocation:
@@ -22,26 +18,20 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - terminate
-dev_langs:
-- C++
 helpviewer_keywords:
 - terminate function
 - exception handling, termination
 ms.assetid: 90e67402-08e9-4b2a-962c-66a8afd3ccb4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c743439b487f091b760e3747c47b471832e1ff3d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1f655d328b4d97a2989ad49005ed8a9f44fd9d79
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408680"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438646"
 ---
 # <a name="terminate-crt"></a>sonlandır (CRT)
 
-Çağrıları [abort](abort.md) veya işlev kullanarak belirtin **set_terminate**.
+Çağrıları [iptal](abort.md) veya bir işlevi kullanarak, belirttiğiniz **set_terminate**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,21 +43,21 @@ void terminate( void );
 
 **Sonlandırmak** işlevi ile C++ özel durum işleme kullanılır ve aşağıdaki durumlarda çağrılır:
 
-- Eşleşen bir catch işleyicisi için oluşturulan bir C++ özel durum bulunamıyor.
+- Oluşturulan C++ özel durum için eşleşen bir catch işleyicisi bulunamadı.
 
-- Bir özel durum yığını geriye doğru izleme sırasında yıkıcı işlevi tarafından oluşturulur.
+- Bir özel durum yığın bırakma sırasında bir yok edici işlevi tarafından oluşturulur.
 
-- Bir özel durum atma sonra yığını bozuk.
+- Sonra bir özel durum yığın bozulmuş olabilir.
 
-**sonlandırma** çağrıları [abort](abort.md) varsayılan olarak. Kendi sonlandırma işlevi yazma ve arama bu varsayılan ayarı değiştirebilirsiniz **set_terminate** işlevinizi bağımsız değişkeni olarak adı. **sonlandırma** bağımsız değişken olarak verilen son işlevi çağırır **set_terminate**. Daha fazla bilgi için bkz: [işlenmeyen C++ özel durumlarını](../../cpp/unhandled-cpp-exceptions.md).
+**sonlandırma** çağrıları [iptal](abort.md) varsayılan olarak. Kendi sonlandırma işlevi yazma ve arama bu varsayılanı değiştirebileceğiniz **set_terminate** bağımsız değişken olarak işlevinizi adı. **sonlandırma** bağımsız değişkeni olarak verilen son işlevi çağırır **set_terminate**. Daha fazla bilgi için [işlenmeyen C++ özel durumlarını](../../cpp/unhandled-cpp-exceptions.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**Sonlandırma**|\<EH.h >|
+|**sonlandırma**|\<EH.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

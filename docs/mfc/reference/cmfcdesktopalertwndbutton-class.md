@@ -1,31 +1,21 @@
 ---
-title: CMFCDesktopAlertWndButton sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCDesktopAlertWndButton sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCDesktopAlertWndButton
 - AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton
 - AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton::IsCaptionButton
 - AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton::IsCloseButton
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCDesktopAlertWndButton [MFC], IsCaptionButton
 - CMFCDesktopAlertWndButton [MFC], IsCloseButton
 ms.assetid: df39a0c8-0c39-4ab0-8c64-78c5b2c4ecaf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 39a43395e49571d4a5e50a6dc360a91f6cece1ff
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: daa2f978b306bbe45f91514ada0f264a848521c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392859"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450615"
 ---
 # <a name="cmfcdesktopalertwndbutton-class"></a>CMFCDesktopAlertWndButton sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: CDrawingManager sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDrawingManager sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDrawingManager
 - AFXDRAWMANAGER/CDrawingManager
@@ -33,8 +29,6 @@ f1_keywords:
 - AFXDRAWMANAGER/CDrawingManager::SetAlphaPixel
 - AFXDRAWMANAGER/CDrawingManager::SetPixel
 - AFXDRAWMANAGER/CDrawingManager::SmartMixColors
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDrawingManager [MFC], CDrawingManager
 - CDrawingManager [MFC], CreateBitmap_32
@@ -62,16 +56,12 @@ helpviewer_keywords:
 - CDrawingManager [MFC], SetPixel
 - CDrawingManager [MFC], SmartMixColors
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a743f4bbf1081232cd5b5d592072ab3ee3219c6a
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c7295d8003b364b36a84fcb5b2c5921ae9899b51
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083515"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50465994"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager sınıfı
 

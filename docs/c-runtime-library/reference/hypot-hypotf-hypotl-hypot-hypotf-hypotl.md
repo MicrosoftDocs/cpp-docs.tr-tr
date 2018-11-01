@@ -1,10 +1,6 @@
 ---
-title: hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl | Microsoft Docs
-ms.custom: ''
+title: hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _hypotf
 - hypot
@@ -32,8 +28,6 @@ f1_keywords:
 - hypot
 - _hypot
 - _hypotf
-dev_langs:
-- C++
 helpviewer_keywords:
 - hypotenuse calculation
 - hypot function
@@ -43,16 +37,12 @@ helpviewer_keywords:
 - calculating hypotenuses
 - _hypot function
 ms.assetid: 6a13887f-bd53-43fc-9d77-5b42d6e49925
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3a8488b160c10eb29f0448127c44d3514f8debf3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ea25ea87a0ec23a0e98dbdc7bb92ce691fc2fa0f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400209"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50439539"
 ---
 # <a name="hypot-hypotf-hypotl-hypot-hypotf-hypotl"></a>hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl
 
@@ -94,15 +84,15 @@ Kayan nokta değerleri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **hypot** hipotenüsü; taşmaya uzunluğunu döndürür **hypot** INF (sonsuz) döndürür ve **errno** değişken ayarlandığında **ERANGE** . Kullanabileceğiniz **_matherr** hata işleme değiştirmek için.
+Başarılı olursa, **hypot** döndürür; taşma hipotenüs uzunluğunu uzunluğu **hypot** INF (sonsuz) döndürür ve **errno** değişkeni ayarlanır **ERANGE** . Kullanabileceğiniz **_matherr** hata işlemeyi değiştirmek için.
 
-Dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Dönüş kodları hakkında daha fazla bilgi için bkz. [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Hypot** işlevler hesapla iki kenara uzunluğu belirtilen bir sağ üçgen hipotenüsü uzunluğu *x* ve *y* (diğer bir deyişle, kare kökünü *x*<sup>2</sup> + *y*<sup>2</sup>).
+**Hypot** İşlevler, uzunluğu iki yüz, verilen bir dik üçgen hipotenüs uzunluğunu Hesapla *x* ve *y* (diğer bir deyişle, kare kökünü *x*<sup>2</sup> + *y*<sup>2</sup>).
 
-Önde gelen alt çizgi olan işlevler sürümleri önceki standartları ile uyumluluk için sağlanır. Davranışlarını başında alt çizgi sahip olmayan sürümleri için aynıdır. Önde gelen alt çizgi olmadan sürümleri için yeni kod kullanmanızı öneririz.
+İşlevlerin, önde gelen altçizgilere sahip sürümleri önceki standartlar ile uyumluluk için sağlanır. Davranışları, başlangıç alt çizgileri olmayan sürümlerle aynıdır. Yeni kod için önünde alt çizgileri olmayan sürümlerle kullanmanızı öneririz.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -110,7 +100,7 @@ Dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_
 |-------------|---------------------|
 |**hypot**, **hypotf**, **hypotl**, **_hypot**, **_hypotf**, **_hypotl**|\<Math.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4537 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4537
 ms.date: 08/27/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4537
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4537
 ms.assetid: 9454493c-d419-475e-8f35-9c00233c9329
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 052d11d5bdf269d950abe1ef761adc055cbc6ce3
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2f97be4e1aaa5143df685cb95935d350e6f02534
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213369"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441329"
 ---
 # <a name="compiler-warning-level-1-c4537"></a>Derleyici Uyarısı (düzey 1) C4537
 

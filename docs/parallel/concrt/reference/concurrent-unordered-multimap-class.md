@@ -1,10 +1,6 @@
 ---
-title: concurrent_unordered_multimap sınıfı | Microsoft Docs
-ms.custom: ''
+title: concurrent_unordered_multimap Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - concurrent_unordered_multimap
 - CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap
@@ -14,21 +10,15 @@ f1_keywords:
 - CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::key_eq
 - CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::swap
 - CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::unsafe_erase
-dev_langs:
-- C++
 helpviewer_keywords:
 - concurrent_unordered_multimap class
 ms.assetid: 4dada5d7-15df-4382-b9c9-348e75b2f3c1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cc7d6ec822eb4ada342110e3f7979c1d97ff583d
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: e1a477e278de2e8ba0f1af43dfdb6081206d86e7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163952"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450914"
 ---
 # <a name="concurrentunorderedmultimap-class"></a>concurrent_unordered_multimap Sınıfı
 

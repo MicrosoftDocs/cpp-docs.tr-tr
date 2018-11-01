@@ -1,10 +1,6 @@
 ---
-title: CDockingPanesRow sınıfı | Microsoft Docs
-ms.custom: ''
+title: CDockingPanesRow sınıfı
 ms.date: 10/18/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDockingPanesRow
 - AFXDOCKINGPANESROW/CDockingPanesRow
@@ -50,8 +46,6 @@ f1_keywords:
 - AFXDOCKINGPANESROW/CDockingPanesRow::ShowDockSiteRow
 - AFXDOCKINGPANESROW/CDockingPanesRow::ShowPane
 - AFXDOCKINGPANESROW/CDockingPanesRow::UpdateVisibleState
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDockingPanesRow [MFC], AddPane
 - CDockingPanesRow [MFC], AddPaneFromRow
@@ -96,16 +90,12 @@ helpviewer_keywords:
 - CDockingPanesRow [MFC], ShowPane
 - CDockingPanesRow [MFC], UpdateVisibleState
 ms.assetid: e7a17832-0ebb-4bce-b799-cec9b60f76fe
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ebe2ea7802b7bf23c1bf50827082cbed8cf3d9a2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a2d9c7894327a66c24fae3890856dbb95a6d10e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074987"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450134"
 ---
 # <a name="cdockingpanesrow-class"></a>CDockingPanesRow sınıfı
 

@@ -1,25 +1,15 @@
 ---
-title: Paralel Desen kitaplığı (PPL) | Microsoft Docs
-ms.custom: ''
+title: Paralel Desen Kitaplığı (PPL)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Parallel Patterns Library (PPL)
 ms.assetid: 40fd86b2-69fa-45e5-93d8-98a75636c242
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2bbed984f20c01544a972317f787a00abf6c7b94
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: deeede132a919084399be54d5559605b99c4e4fc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382537"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459416"
 ---
 # <a name="parallel-patterns-library-ppl"></a>Paralel Desen Kitaplığı (PPL)
 

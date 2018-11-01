@@ -1,12 +1,6 @@
 ---
-title: Kayıt kümesi (ODBC) | Microsoft Docs
-ms.custom: ''
+title: Kayıt Kümesi (ODBC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - recordsets, snapshots
 - recordsets, creating
@@ -19,17 +13,12 @@ helpviewer_keywords:
 - snapshots, ODBC recordsets
 - dynasets
 ms.assetid: 333337c5-575e-4d26-b5f6-47166ad7874d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 221ff85f8e19990f1e804964f3a8be5136957995
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d16087722752b7bbdabd37410908c7ea2ae18ceb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50058329"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50435262"
 ---
 # <a name="recordset-odbc"></a>Kayıt Kümesi (ODBC)
 

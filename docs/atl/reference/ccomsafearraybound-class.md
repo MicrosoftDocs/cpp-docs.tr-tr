@@ -1,10 +1,6 @@
 ---
-title: CComSafeArrayBound sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComSafeArrayBound sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComSafeArrayBound
 - ATLSAFE/ATL::CComSafeArrayBound
@@ -13,21 +9,15 @@ f1_keywords:
 - ATLSAFE/ATL::GetUpperBound
 - ATLSAFE/ATL::SetCount
 - ATLSAFE/ATL::SetLowerBound
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComSafeArrayBound class
 ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 190716877090f53aa48023d493cded9793839380
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d57e038a4ebc55d08b4518f25e37b4f2d9cee05d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039575"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429222"
 ---
 # <a name="ccomsafearraybound-class"></a>CComSafeArrayBound sınıfı
 

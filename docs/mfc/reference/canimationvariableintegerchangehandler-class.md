@@ -1,10 +1,6 @@
 ---
-title: Canimationvariableıntegerchangehandler sınıfı | Microsoft Docs
-ms.custom: ''
+title: Canimationvariableıntegerchangehandler sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CAnimationVariableIntegerChangeHandler
 - AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::CreateInstance
 - AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::OnIntegerValueChanged
 - AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::SetAnimationController
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAnimationVariableIntegerChangeHandler [MFC], CAnimationVariableIntegerChangeHandler
 - CAnimationVariableIntegerChangeHandler [MFC], CreateInstance
 - CAnimationVariableIntegerChangeHandler [MFC], OnIntegerValueChanged
 - CAnimationVariableIntegerChangeHandler [MFC], SetAnimationController
 ms.assetid: 6ac8e91b-e514-4ff6-babd-33f77c4b2b61
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ff20221340da628e6a7bfa2d15ff989b68c5dfba
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 66d740d7042ed2e19b6fe3a87345d7abb096f12c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393834"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449640"
 ---
 # <a name="canimationvariableintegerchangehandler-class"></a>Canimationvariableıntegerchangehandler sınıfı
 

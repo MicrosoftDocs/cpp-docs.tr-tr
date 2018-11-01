@@ -1,10 +1,6 @@
 ---
-title: Derleyici hataları C2200 C2299 aracılığıyla | Microsoft Docs
-ms.custom: ''
+title: Derleyici hataları C2200 ile c2299 arasındaki
 ms.date: 11/17/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2202
 - C2209
@@ -55,23 +51,17 @@ helpviewer_keywords:
 - C2288
 - C2291
 - C2294
-dev_langs:
-- C++
 ms.assetid: 9b36d11b-9510-4390-96f1-0c9235124d14
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 567cd6a9cbb042027b13056fe50330b31f326529
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b41887e941796e7f8f2f919ed76fbaaa624227ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236867"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432532"
 ---
-# <a name="compiler-errors-c2200-through-c2299"></a>Derleyici hataları C2200 C2299 aracılığıyla
+# <a name="compiler-errors-c2200-through-c2299"></a>Derleyici hataları C2200 ile c2299 arasındaki
 
-Bu bölümdeki makaleleri belgelerin derleyici tarafından oluşturulan hata iletileri kümesini açıklayın.
+Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -79,103 +69,103 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından oluşturulan hata ile
 
 |Hata|İleti|
 |-----------|-------------|
-|[Derleyici Hatası C2200](compiler-error-c2200.md)|'*işlevi*': işlevi zaten tanımlandı|
-|[Derleyici Hatası C2201](compiler-error-c2201.md)|'*tanımlayıcısı*': dış bağlantı dışarı/alınması için olması gerekir|
-|Derleyici Hatası C2202|'*işlevi*': değer tüm denetim yollarına döndürme|
-|[Derleyici Hatası C2203](compiler-error-c2203.md)|Delete işleci, bir dizi sınırları belirtemezsiniz|
-|[Derleyici Hatası C2204](compiler-error-c2204.md)|'*türü*': tür tanımı parantez içinde bulunamadı|
-|[Derleyici Hatası C2205](compiler-error-c2205.md)|'*tanımlayıcısı*': blok kapsamı extern değişkenlerle başlatılamıyor|
+|[Derleyici Hatası C2200](compiler-error-c2200.md)|'*işlevi*': işlev zaten tanımlanmış|
+|[Derleyici Hatası C2201](compiler-error-c2201.md)|'*tanımlayıcı*': dışarı/içeri aktarılmak için dış bağlantıya sahip olması gerekir|
+|Derleyici Hatası C2202|'*işlevi*': tüm denetim yolları değer döndürmez|
+|[Derleyici Hatası C2203](compiler-error-c2203.md)|Delete işleci bir dizi için sınırları belirtemez|
+|[Derleyici Hatası C2204](compiler-error-c2204.md)|'*türü*': tür tanımına parantez içinde bulunamadı|
+|[Derleyici Hatası C2205](compiler-error-c2205.md)|'*tanımlayıcı*': blok kapsamı olan extern değişkenler başlatılamaz|
 |[Derleyici Hatası C2206](compiler-error-c2206.md)|'*işlevi*': typedef işlev tanımı için kullanılamaz|
-|[Derleyici Hatası C2207](compiler-error-c2207.md)|'*üye*': sınıf şablonu üyesi bir işlev türü alınamıyor|
-|[Derleyici Hatası C2208](compiler-error-c2208.md)|'*türü*': Bu türü kullanılarak tanımlanmış bir üye yok|
-|Derleyici Hatası C2209|'*tanımlayıcısı*': diğer adlar Oluşturucusu bildirimlerinde kullanılamaz|
-|Derleyici Hatası C2210|'*tanımlayıcısı*': paketi genişletmeleri, diğer ad şablonları paketlenmiş olmayan parametrelerinde bağımsız değişken olarak kullanılamaz|
-|Derleyici Hatası C2211|Sanal olmayan bir yıkıcı bir ortak yıkıcı ile ref sınıfından türetilen ref sınıfında Ayrıca ortak olmalıdır|
-|[Derleyici Hatası C2212](compiler-error-c2212.md)|'*tanımlayıcısı*': __based işlev işaretçileri için kullanılabilir değil|
-|[Derleyici Hatası C2213](compiler-error-c2213.md)|'*tanımlayıcısı*': __based için geçersiz bağımsız değişken|
-|Derleyici Hatası C2214|'void' üzerinde temel işaretçileri kullanımını gerektirir: >|
+|[Derleyici Hatası C2207](compiler-error-c2207.md)|'*üye*': bir sınıf şablonunun üyesi bir işlev türü alamaz|
+|[Derleyici Hatası C2208](compiler-error-c2208.md)|'*türü*': Bu tür kullanılarak tanımlanmış bir üye yok|
+|Derleyici Hatası C2209|'*tanımlayıcı*': diğer adlar Oluşturucu bildirimlerinde kullanılamaz|
+|Derleyici Hatası C2210|'*tanımlayıcı*': Paket genişletmeleri diğer ad şablonlarındaki paketlenmemiş parametreler için bağımsız değişken olarak kullanılamaz|
+|Derleyici Hatası C2211|Ortak yıkıcısı olan bir başvuru sınıfından türetilmiş bir başvuru sınıfındaki sanal olmayan bir yıkıcı da ortak olmalıdır|
+|[Derleyici Hatası C2212](compiler-error-c2212.md)|'*tanımlayıcı*': işlev işaretçileri için __based kullanılamaz|
+|[Derleyici Hatası C2213](compiler-error-c2213.md)|'*tanımlayıcı*': __based için geçersiz bağımsız değişken|
+|Derleyici Hatası C2214|'void' temelli işaretçiler kullanılmasını gerektirir: >|
 |Derleyici Hatası C2215|'*anahtar sözcüğü*' ile kullanılamaz ' / arch: SSE'|
 |[Derleyici Hatası C2216](compiler-error-c2216.md)|'*keyword1*'ile kullanılamaz'*keyword2*'|
-|[Derleyici Hatası C2217](compiler-error-c2217.md)|'*öznitelik1*'gerektirir'*öznitelik2*'|
-|[Derleyici Hatası C2218](compiler-error-c2218.md)|'*calltype*' ile kullanılamaz ' / arch: IA32'|
-|[Derleyici Hatası C2219](compiler-error-c2219.md)|sözdizimi hatası: tür niteleyicisi sonra olmalıdır ' *'|
-|[Derleyici Hatası C2220](compiler-error-c2220.md)|Uyarı kabul hata olarak - Hayır '*dosya türü*' oluşturulan dosyası|
+|[Derleyici Hatası C2217](compiler-error-c2217.md)|'*öznitelik1*'gerektiren'*öznitelik2*'|
+|[Derleyici Hatası C2218](compiler-error-c2218.md)|'*; CallType &*' ile kullanılamaz ' / arch: IA32'|
+|[Derleyici Hatası C2219](compiler-error-c2219.md)|sözdizimi hatası: tür niteleyicisi karakterinden son olmalıdır ' *'|
+|[Derleyici Hatası C2220](compiler-error-c2220.md)|Uyarı hata olarak - Hayır işlenir '*filetype*' oluşturulan dosya|
 |Derleyici Hatası C2221|Kullanımdan kalktı.|
-|[Derleyici Hatası C2222](compiler-error-c2222.md)|beklenmeyen bir türde '*türü*': bir temel sınıf veya üye bekleniyordu|
-|[Derleyici Hatası C2223](compiler-error-c2223.md)|Sol ' ->*tanımlayıcısı*' struct/union işaret etmesi gerekir|
-|[Derleyici Hatası C2224](compiler-error-c2224.md)|Sol '. *tanımlayıcısı*' struct/union türünde olmalıdır|
+|[Derleyici Hatası C2222](compiler-error-c2222.md)|beklenmeyen tür '*türü*': taban sınıf veya üye bekleniyordu|
+|[Derleyici Hatası C2223](compiler-error-c2223.md)|Sol ' ->*tanımlayıcı*' yapıya/birleşime işaret etmelidir|
+|[Derleyici Hatası C2224](compiler-error-c2224.md)|Sol '. *tanımlayıcı*' yapı/birleşim türünde olmalıdır|
 |Derleyici Hatası C2225|Kullanımdan kalktı.|
-|[Derleyici Hatası C2226](compiler-error-c2226.md)|sözdizimi hatası: beklenmeyen türü '*türü*'|
-|[Derleyici Hatası C2227](compiler-error-c2227.md)|Sol ' ->*tanımlayıcısı*' sınıfı/struct/union/genel tür işaret etmesi gerekir|
-|[Derleyici Hatası C2228](compiler-error-c2228.md)|Sol '. *tanımlayıcısı*' yapısı/sınıfı/birleşimi olmalıdır|
-|[Derleyici Hatası C2229](compiler-error-c2229.md)|struct/sınıfı/Birliği '*türü*' geçersiz bir sıfır boyutlu diziye sahip|
+|[Derleyici Hatası C2226](compiler-error-c2226.md)|sözdizimi hatası: beklenmeyen tür '*türü*'|
+|[Derleyici Hatası C2227](compiler-error-c2227.md)|Sol ' ->*tanımlayıcı*' sınıf/yapı/birleşim/genel türe işaret etmelidir|
+|[Derleyici Hatası C2228](compiler-error-c2228.md)|Sol '. *tanımlayıcı*' sınıf/yapı/birleşim olmalıdır|
+|[Derleyici Hatası C2229](compiler-error-c2229.md)|sınıf/yapı/birleşim '*türü*' geçersiz bir sıfır boyutlu dizi içeriyor|
 |Derleyici Hatası C2230|Modül bulunamadı '*adı*'|
-|[Derleyici Hatası C2231](compiler-error-c2231.md)|'. *tanımlayıcısı*': 'class/struct/union için' işleneni noktaları sola Kullan '->'|
-|[Derleyici Hatası C2232](compiler-error-c2232.md)|' ->*tanımlayıcısı*': sol işleneni '' kullanmak class/struct/union türe sahip, '.'|
-|[Derleyici Hatası C2233](compiler-error-c2233.md)|'*tanımlayıcısı*': Geçersiz sıfır boyutlu diziler içeren nesne dizileri|
-|[Derleyici Hatası C2234](compiler-error-c2234.md)|*tanımlayıcı*': başvuruları dizileri geçersiz|
+|[Derleyici Hatası C2231](compiler-error-c2231.md)|'. *tanımlayıcı*': 'sınıf/yapı/birleşim için' işlenen noktaları sol, '->' kullanın|
+|[Derleyici Hatası C2232](compiler-error-c2232.md)|' ->*tanımlayıcı*': sol işlenen '' kullanan sınıf/yapı/birleşim türü içeriyor, '.'|
+|[Derleyici Hatası C2233](compiler-error-c2233.md)|'*tanımlayıcı*': sıfır boyutlu diziler içeren nesne dizileri geçersizdir|
+|[Derleyici Hatası C2234](compiler-error-c2234.md)|*tanımlayıcı*': başvuru dizileri geçersizdir|
 |Derleyici Hatası C2235|Kullanımdan kalktı.|
-|[Derleyici Hatası C2236](compiler-error-c2236.md)|beklenmeyen belirteç '*belirteci*'. Unuttunuz mu bir ';'?|
+|[Derleyici Hatası C2236](compiler-error-c2236.md)|beklenmeyen belirteç '*belirteci*'. Unuttunuz bir ';'?|
 |Derleyici Hatası C2237|birden çok modül bildirimi|
-|[Derleyici Hatası C2238](compiler-error-c2238.md)|Önceki beklenmeyen belirteçleri '*belirteci*'|
-|Derleyici Hatası C2239|'*işlevi*': __declspec(dllexport) işlevi silinmeye çalışılıyor|
+|[Derleyici Hatası C2238](compiler-error-c2238.md)|Önceki beklenmeyen belirteçler '*belirteci*'|
+|Derleyici Hatası C2239|'*işlevi*': a __declspec(dllexport) işlevini silmeye çalışıyor|
 |Derleyici Hatası C2240|Kullanımdan kalktı.|
-|[Derleyici Hatası C2241](compiler-error-c2241.md)|'*tanımlayıcısı*': üye erişimi sınırlı|
-|[Derleyici Hatası C2242](compiler-error-c2242.md)|TypeDef adı struct/sınıfı/UNION izlenemiyor|
-|[Derleyici Hatası C2243](compiler-error-c2243.md)|'*conversion_type*': dönüştürme '*type1*'to'*type2*' var, ancak erişilemiyor|
-|[Derleyici Hatası C2244](compiler-error-c2244.md)|'*tanımlayıcısı*': işlev tanımı mevcut bildirimine eşleştirilemiyor|
-|[Derleyici Hatası C2245](compiler-error-c2245.md)|mevcut olmayan üye işlevi '*işlevi*' arkadaş olarak belirtilen (üye işlev imzası hiçbir aşırı eşleşmiyor)|
-|[Derleyici Hatası C2246](compiler-error-c2246.md)|'*tanımlayıcısı*': yerel olarak tanımlanmış sınıfında geçersiz statik veri üyesi|
-|[Derleyici Hatası C2247](compiler-error-c2247.md)|'*tanımlayıcısı*' erişilebilir olduğundan '*class1*'kullanan'*belirticisi*'devralmak için '*Ders2*'|
-|[Derleyici Hatası C2248](compiler-error-c2248.md)|'*tanımlayıcısı*': erişemiyor *erişilebilirlik* *üye* sınıfında tanımlanan*sınıfı*'|
-|[Derleyici Hatası C2249](compiler-error-c2249.md)|'*tanımlayıcısı*': erişilebilir yolu bulunmayan *erişilebilirlik* *üye* sanal Bankası'ndaki bildirilen '*sınıfı*'|
-|[Derleyici Hatası C2250](compiler-error-c2250.md)|'*tanımlayıcısı*': belirsiz devralınması *sınıfı*::*üye*'|
-|[Derleyici Hatası C2251](compiler-error-c2251.md)|ad alanı '*ad alanı*'üyesi yok'*tanımlayıcısı*'-şunu mu demek istediniz '*üye*'?|
-|[Derleyici Hatası C2252](compiler-error-c2252.md)|bir açık örnekleme şablonu yalnızca ad alanı kapsamda oluşabilir|
-|[Derleyici Hatası C2253](compiler-error-c2253.md)|'*işlevi*': Saf belirleyici veya Özet belirticisi yalnızca sanal işlevi üzerinde izin geçersiz kılma|
-|[Derleyici Hatası C2254](compiler-error-c2254.md)|'*işlevi*': Saf belirleyici veya Özet geçersiz kılma tanımlayıcısı arkadaş işlevine izin verilmiyor|
-|[Derleyici Hatası C2255](compiler-error-c2255.md)|'*öğesi*': bir sınıf tanımı dışında izin verilmiyor|
-|[Derleyici Hatası C2256](compiler-error-c2256.md)|arkadaş belirleyici üzerinde geçersiz kullanımı '*işlevi*'|
-|Derleyici Hatası C2257|'*belirticisi*': belirleyici dönüş türü sondaki içinde izin verilmiyor|
-|[Derleyici Hatası C2258](compiler-error-c2258.md)|Geçersiz saf sözdizimi olması gerekir. '0 ='|
-|[Derleyici Hatası C2259](compiler-error-c2259.md)|'*sınıfı*': Özet sınıfın örneği oluşturulamıyor|
+|[Derleyici Hatası C2241](compiler-error-c2241.md)|'*tanımlayıcı*': üye erişimi kısıtlıdır|
+|[Derleyici Hatası C2242](compiler-error-c2242.md)|sınıf/yapı/birleşim arkasından TypeDef adı gelemez|
+|[Derleyici Hatası C2243](compiler-error-c2243.md)|'*conversion_type*': dönüştürme '*type1*'to'*type2*' var, ancak erişilebilir değil|
+|[Derleyici Hatası C2244](compiler-error-c2244.md)|'*tanımlayıcı*': işlev tanımı varolan bir bildirimler eşleştirilemiyor|
+|[Derleyici Hatası C2245](compiler-error-c2245.md)|var olmayan üye işlevi '*işlevi*' arkadaş olarak belirtildi (üye işlev imzası hiçbir aşırı yüklemeyle eşleşmiyor)|
+|[Derleyici Hatası C2246](compiler-error-c2246.md)|'*tanımlayıcı*': yerel olarak tanımlanan sınıfta geçersiz statik veri üyesi|
+|[Derleyici Hatası C2247](compiler-error-c2247.md)|'*tanımlayıcı*' erişilebilir değil çünkü '*class1*'kullanan'*belirticisi*'sınıfından devralmasına izin '*class2*'|
+|[Derleyici Hatası C2248](compiler-error-c2248.md)|'*tanımlayıcı*': erişemiyor *erişilebilirlik* *üye* sınıfta bildirilen*sınıfı*'|
+|[Derleyici Hatası C2249](compiler-error-c2249.md)|'*tanımlayıcı*': erişilebilir yol yok *erişilebilirlik* *üye* sanal temel içinde bildirilen '*sınıfı*'|
+|[Derleyici Hatası C2250](compiler-error-c2250.md)|'*tanımlayıcı*': öğesinin devralınması belirsiz *sınıfı*::*üye*'|
+|[Derleyici Hatası C2251](compiler-error-c2251.md)|ad alanı '*ad alanı*'üyesi yok'*tanımlayıcı*'-şunu mu demek istediniz '*üye*'?|
+|[Derleyici Hatası C2252](compiler-error-c2252.md)|bir şablonun açıkça örneğinin yalnızca ad alanı kapsamında olabilir|
+|[Derleyici Hatası C2253](compiler-error-c2253.md)|'*işlevi*': Saf belirtici veya soyut geçersiz kılma belirticisi yalnızca sanal işlev üzerinde izin verilir|
+|[Derleyici Hatası C2254](compiler-error-c2254.md)|'*işlevi*': Saf belirtici veya soyut geçersiz kılma belirticisi arkadaş işlev üzerinde kullanılamaz|
+|[Derleyici Hatası C2255](compiler-error-c2255.md)|'*öğesi*': bir sınıf tanımının dışında kullanılamaz|
+|[Derleyici Hatası C2256](compiler-error-c2256.md)|üzerinde friend belirticisinin geçersiz kullanımı '*işlevi*'|
+|Derleyici Hatası C2257|'*belirticisi*': tanımlayıcıya bitiş dönüş türüne izin verilmez|
+|[Derleyici Hatası C2258](compiler-error-c2258.md)|Geçersiz saf sözdizimi olmalıdır '= 0'|
+|[Derleyici Hatası C2259](compiler-error-c2259.md)|'*sınıfı*': soyut sınıfın örneği oluşturulamıyor|
 |Derleyici Hatası C2260|'*belirticisi*': Geçersiz Internalsvisibletoattribute arkadaş derleme belirticisi|
-|[Derleyici Hatası C2261](compiler-error-c2261.md)|'*dize*': derleme başvurusu geçerli değil ve çözümlenemedi|
-|[Derleyici Hatası C2262](compiler-error-c2262.md)|'*belirticisi*': InternalsVisibleTo bildirimlerinde belirtilen sürüm, kültür veya işlemci mimarisi sahip olamaz|
+|[Derleyici Hatası C2261](compiler-error-c2261.md)|'*dize*': derleme başvurusu geçersiz ve çözümlenemiyor|
+|[Derleyici Hatası C2262](compiler-error-c2262.md)|'*belirticisi*': InternalsVisibleTo bildirmelerinde belirtilmiş sürüm, kültür veya işlemci mimarisi olamaz|
 |Derleyici Hatası C2263|Kullanımdan kalktı.|
-|[Derleyici Hatası C2264](compiler-error-c2264.md)|'*işlevi*': işlev tanımı ya da bildiriminde hata; çağrılmaz işlevi|
+|[Derleyici Hatası C2264](compiler-error-c2264.md)|'*işlevi*': işlev tanımında veya bildiriminde hata; işlev çağrılmadı|
 |Derleyici Hatası C2265|Kullanımdan kalktı.|
-|[Derleyici Hatası C2266](compiler-error-c2266.md)|'*tanımlayıcısı*': Sabit olmayan sınırlanmış bir dizi başvurudur geçersiz|
-|[Derleyici Hatası C2267](compiler-error-c2267.md)|'*işlevi*': blok kapsamlı statik işlevleri geçersiz|
-|[Derleyici Hatası C2268](compiler-error-c2268.md)|'*işlevi*' önceden tanımlanmış derleyici kitaplığı yardımcı. Kitaplık Yardımcıları ile /GL desteklenmez; Nesne dosyasını derleyin '*filename*' /GL. olmadan|
-|Derleyici Hatası C2269|bir işaretçi veya başvuru (işaretçi-üye gerektirir) tam işlev türü oluşturulamıyor|
-|[Derleyici Hatası C2270](compiler-error-c2270.md)|'*işlevi*': değiştiricileri dahil olmayan işlevlere izin verilmiyor|
-|[Derleyici Hatası C2271](compiler-error-c2271.md)|'*işlevi*': yeni/silme resmi listesi değiştiricileri sahip olamaz|
-|[Derleyici Hatası C2272](compiler-error-c2272.md)|'*işlevi*': değiştiricileri statik üye işlevleri izin verilmiyor|
-|[Derleyici Hatası C2273](compiler-error-c2273.md)|'*türü*': '->' işlecinin sağ tarafında olarak geçersiz|
-|[Derleyici Hatası C2274](compiler-error-c2274.md)|'*türü*': sağ tarafındaki olarak geçersiz '.' işleci|
-|[Derleyici Hatası C2275](compiler-error-c2275.md)|'*türü*': Bu tür bir ifade olarak geçersiz kullanımı|
-|[Derleyici Hatası C2276](compiler-error-c2276.md)|'*işleci*': geçersiz işlem ilişkili üye işlev ifadesi|
-|[Derleyici Hatası C2277](compiler-error-c2277.md)|'*işlevi*': Bu üye işlevi adresini alamıyor|
+|[Derleyici Hatası C2266](compiler-error-c2266.md)|'*tanımlayıcı*': Sabit olmayan sınırlı bir diziye başvuru geçersizdir|
+|[Derleyici Hatası C2267](compiler-error-c2267.md)|'*işlevi*': blok kapsamı olan statik işlevler geçersizdir|
+|[Derleyici Hatası C2268](compiler-error-c2268.md)|'*işlevi*' önceden tanımlanmış bir derleyici kitaplık Yardımcısı. Kitaplık Yardımcıları /GL ile desteklenmez; nesne dosyası derleme '*filename*' /GL olmadan|
+|Derleyici Hatası C2269|bir işaretçi veya başvuru (üye işaretçisi gerektirir) bir nitelenmiş işlev türüne oluşturulamıyor|
+|[Derleyici Hatası C2270](compiler-error-c2270.md)|'*işlevi*': üye olmayan işlevlerde değiştiricilere izin verilmez|
+|[Derleyici Hatası C2271](compiler-error-c2271.md)|'*işlevi*': yeni/delete biçimsel liste değiştiricilerine sahip olamaz|
+|[Derleyici Hatası C2272](compiler-error-c2272.md)|'*işlevi*': statik üye işlevlerinde izin verilmez|
+|[Derleyici Hatası C2273](compiler-error-c2273.md)|'*türü*': '->' işlecinin sağ tarafı olarak geçersizdir|
+|[Derleyici Hatası C2274](compiler-error-c2274.md)|'*türü*': sağ tarafı olarak geçersizdir '.' işleci|
+|[Derleyici Hatası C2275](compiler-error-c2275.md)|'*türü*': Bu türdeki bir ifade olarak geçersiz kullanımı|
+|[Derleyici Hatası C2276](compiler-error-c2276.md)|'*işleci*': bağlı üye işlev ifadesinde geçersiz işlem|
+|[Derleyici Hatası C2277](compiler-error-c2277.md)|'*işlevi*': Bu üye işlevin adresi alınamaz|
 |Derleyici Hatası C2278|Kullanımdan kalktı.|
-|[Derleyici Hatası C2279](compiler-error-c2279.md)|özel durum belirtimi typedef bildiriminde görünemez.|
-|[Derleyici Hatası C2280](compiler-error-c2280.md)|'*sınıfı*::*işlevi*': silinen işlevi başvurulmaya çalışılıyor|
-|Derleyici Hatası C2281|'*sınıfı*::*işlevi*': işlevi yalnızca ilk bildirimde silinebilir|
-|Derleyici Hatası C2282|'*function1*'geçersiz kılınamaz'*function2*'|
-|[Derleyici Hatası C2283](compiler-error-c2283.md)|'*tanımlayıcı*': Saf belirleyici veya Özet geçersiz kılma tanımlayıcısı adlandırılmamış sınıfı/yapısı üzerinde izin verilmiyor|
-|Derleyici Hatası C2284|'*işlevi*': iç işlevine geçersiz bağımsız değişken parametre *numarası*|
-|[Derleyici Hatası C2285](compiler-error-c2285.md)|üye gösterimi işaretçiler zaten belirledi - göz ardı pragması|
-|[Derleyici Hatası C2286](compiler-error-c2286.md)|üye işaretçileri '*tanımlayıcısı*' gösterimi ayarlanmış zaten *devralma* -göz ardı bildirimi|
-|[Derleyici Hatası C2287](compiler-error-c2287.md)|'*tanımlayıcısı*': devralma gösterimi: '*inheritiance*'gerekenden daha az genel olan'*devralma*'|
+|[Derleyici Hatası C2279](compiler-error-c2279.md)|özel durum belirtimi bir typedef bildiriminde yer alamaz|
+|[Derleyici Hatası C2280](compiler-error-c2280.md)|'*sınıfı*::*işlevi*': silinmiş bir işleve başvurmaya çalışıyor|
+|Derleyici Hatası C2281|'*sınıfı*::*işlevi*': bir işlev yalnızca ilk bildirimde silinebilir|
+|Derleyici Hatası C2282|'*işlev1*'geçersiz kılınamaz'*function2*'|
+|[Derleyici Hatası C2283](compiler-error-c2283.md)|'*tanımlayıcıyla*': Saf belirtici veya soyut geçersiz kılma belirticisi adsız sınıf/yapı üzerinde izin verilmiyor|
+|Derleyici Hatası C2284|'*işlevi*': iç işleve geçersiz bağımsız değişken parametre *numarası*|
+|[Derleyici Hatası C2285](compiler-error-c2285.md)|üye gösterimine yönelik işaretçiler zaten belirlendi - pragma yoksayıldı|
+|[Derleyici Hatası C2286](compiler-error-c2286.md)|üye işaretçileri '*tanımlayıcı*' gösterimi ayarı zaten *devralma* -bildirim yoksayıldı|
+|[Derleyici Hatası C2287](compiler-error-c2287.md)|'*tanımlayıcı*': devralma gösterimi: '*inheritiance*'gerekenden daha az genel is'*devralma*'|
 |Derleyici Hatası C2288|Kullanımdan kalktı.|
-|[Derleyici Hatası C2289](compiler-error-c2289.md)|birden çok kez kullanılan aynı tür niteleyicisi|
+|[Derleyici Hatası C2289](compiler-error-c2289.md)|aynı tür niteleyicisi birden fazla kez kullanıldı|
 |[Derleyici Hatası C2290](compiler-error-c2290.md)|C++ 'asm' sözdizimi yoksayıldı. __Asm kullanın.|
-|Derleyici Hatası C2291|Anonim bir ad alanı verilemez.|
-|[Derleyici Hatası C2292](compiler-error-c2292.md)|'*tanımlayıcısı*': devralma gösterimi'en iyi durumda: *inheritance1*' bildirildi, ancak '*inheritance2*' gerekli|
-|[Derleyici Hatası C2293](compiler-error-c2293.md)|'*tanımlayıcısı*': __based tanımlayıcısı olarak bir üye değişkeni için geçersiz|
-|Derleyici Hatası C2294|Sembol veremiyor '*tanımlayıcısı*' iç bağlantı içerdiğinden|
-|[Derleyici Hatası C2295](compiler-error-c2295.md)|Atlanan '*karakter*': makro tanımı'nda geçersiz|
-|[Derleyici Hatası C2296](compiler-error-c2296.md)|'*işleci*': geçersiz, sol işleneni türüne sahip '*türü*'|
-|[Derleyici Hatası C2297](compiler-error-c2297.md)|'*işleci*': geçersiz, sağ işleneni türüne sahip '*türü*'|
-|[Derleyici Hatası C2298](compiler-error-c2298.md)|üye işlev işaretçisi bağlı çağrı eksik|
-|[Derleyici Hatası C2299](compiler-error-c2299.md)|'*işlevi*': davranış değişikliği: kopya oluşturucu veya kopya atama işleci açık uzmanlık olamaz|
+|Derleyici Hatası C2291|Anonim bir ad alanı dışarı aktarılamaz.|
+|[Derleyici Hatası C2292](compiler-error-c2292.md)|'*tanımlayıcı*': en iyi durum devralma gösterimi: *inheritance1*' bildirildi ancak '*inheritance2*' gerekli|
+|[Derleyici Hatası C2293](compiler-error-c2293.md)|'*tanımlayıcı*': bir __based belirticisi olarak bir üye değişkeni için geçersiz|
+|Derleyici Hatası C2294|sembolü dışarı aktarılamıyor '*tanımlayıcı*' iç bağlantısı olduğundan|
+|[Derleyici Hatası C2295](compiler-error-c2295.md)|kaçışlı '*karakter*': Makro tanımında geçersizdir|
+|[Derleyici Hatası C2296](compiler-error-c2296.md)|'*işleci*': geçersiz, sol işlenen türü var. '*türü*'|
+|[Derleyici Hatası C2297](compiler-error-c2297.md)|'*işleci*': geçersiz, sağ işlenen türü var. '*türü*'|
+|[Derleyici Hatası C2298](compiler-error-c2298.md)|üye işlevi işaretçisi bağlı çağrısı eksik|
+|[Derleyici Hatası C2299](compiler-error-c2299.md)|'*işlevi*': davranış değişikliği: bir açık özelleştirme bir kopya Oluşturucusu veya kopya atama işleci olamaz|

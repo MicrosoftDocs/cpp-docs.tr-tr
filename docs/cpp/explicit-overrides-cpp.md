@@ -1,12 +1,6 @@
 ---
-title: Açık geçersiz kılmalar (C++) | Microsoft Docs
-ms.custom: ''
+title: Açık Geçersiz Kılmalar (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - virtual functions [C++], explicit overrides
 - overriding, functions
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - explicit virtual function overrides
 - explicit override of virtual function
 ms.assetid: ee583234-5cda-4e90-b55e-3f9fbf079ced
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 76bfdc0f6889951600073830b102a33b743a1f89
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 703d229db32f3380dcfe849bb4478e44caa830dd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021037"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50455165"
 ---
 # <a name="explicit-overrides-c"></a>Açık Geçersiz Kılmalar (C++)
 
@@ -114,7 +104,7 @@ int main() {
 
    // Cast to a CMyClass pointer so that the destructor gets called
       CMyClass *p = dynamic_cast<CMyClass *>(pIMyInt1);
-      delete p;
+      delete p;
 }
 ```
 

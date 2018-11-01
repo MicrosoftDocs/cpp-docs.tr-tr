@@ -1,10 +1,6 @@
 ---
-title: discrete_distribution sınıfı | Microsoft Docs
-ms.custom: ''
+title: discrete_distribution Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - random/std::discrete_distribution
 - random/std::discrete_distribution::reset
@@ -17,8 +13,6 @@ f1_keywords:
 - random/std::discrete_distribution::param_type::probabilities
 - random/std::discrete_distribution::param_type::operator==
 - random/std::discrete_distribution::param_type::operator!=
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::discrete_distribution [C++]
 - std::discrete_distribution [C++], reset
@@ -29,16 +23,12 @@ helpviewer_keywords:
 - std::discrete_distribution [C++], param_type
 - std::discrete_distribution [C++], param_type
 ms.assetid: 8c8ba8f8-c06f-4f07-b354-f53950142fcf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 97ac9d7e8e00e5f81d974aa84befaad99881391d
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 5bf5deec5820976c742efa490bf02d0c0d830a09
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108765"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464902"
 ---
 # <a name="discretedistribution-class"></a>discrete_distribution Sınıfı
 

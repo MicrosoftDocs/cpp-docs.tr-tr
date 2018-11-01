@@ -1,10 +1,6 @@
 ---
-title: _pipe | Microsoft Docs
-ms.custom: ''
+title: _pipe
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _pipe
 apilocation:
@@ -23,31 +19,25 @@ apitype: DLLExport
 f1_keywords:
 - pipe
 - _pipe
-dev_langs:
-- C++
 helpviewer_keywords:
 - pipes, creating
 - _pipe function
 - pipes
 - pipe function
 ms.assetid: 8d3e9800-4041-44b5-9e93-2df0b0354a75
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e3e636bc5aac889e3c3a16b856525d4d7268e262
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c5db59fecd84ae291e5651b1cec1be31c815e53a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405133"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453989"
 ---
 # <a name="pipe"></a>_pipe
 
 Okuma ve yazma için bir kanal oluşturur.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,7 +52,7 @@ int _pipe(
 ### <a name="parameters"></a>Parametreler
 
 *PFD'ler*<br/>
-İki bir dizi işaretçi **int** okuma tutun ve dosya tanımlayıcıları yazmak için.
+İki işaretçi **int** tutun okuma ve yazma dosya tanımlayıcılarını.
 
 *psize*<br/>
 Ayrılacak bellek miktarı.
@@ -72,37 +62,37 @@ Dosya modu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa 0 döndürür. Bir hatayı belirtmek için -1 döndürür. Hata, **errno** bu değerlerden birine ayarlayın:
+Başarılı olursa 0 döndürür. Hatayı belirtmek için -1 döndürür. Hata durumunda, **errno** şu değerlerden birine ayarlayın:
 
-- **EMFILE**, hiçbir daha fazla dosya tanımlayıcıları kullanılabilir olduğunu gösterir.
+- **EMFILE**, hiçbir daha fazla dosya tanımlayıcısı bulunmadığını gösterir.
 
-- **ENFILE**, bir sistem dosyası tablosu taşması gösterir.
+- **ENFILE**, bir sistem dosyası tablo taşmasını gösterir.
 
-- **EINVAL**, hangi gösterir ya da dizi *PFD'ler* null işaretçinin veya geçersiz bir değer için *metin modu* geçirildi.
+- **EINVAL**, belirten bir dizi ya da *PFD'ler* null bir işaretçiyse veya geçersiz bir değer için *metin modu* geçirildi.
 
-Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Pipe** işlev oluşturur bir *kanal*, diğer programlara bilgi aktarmak için bir program kullanan yapay bir g/ç kanaldan olduğu. Bir kanal dosya işaretçisini, bir dosya tanımlayıcısı veya her ikisini olmadığı ve okuma veya standart kitaplığını kullanarak giriş ve çıkış işlevler yazma için bir dosya benzer. Ancak, bir kanal belirli bir dosya veya aygıt göstermiyor. Bunun yerine, programın kendi bellek bağımsızdır ve tamamen işletim sistemi tarafından denetlenen bellekte geçici depolama temsil eder.
+**_Pipe** işlevi oluşturur bir *kanal*, bir programın başka programlara bilgi geçirmek için kullandığı yapay bir g/ç kanalının olduğu. Bir kanal, çünkü bir dosya işaretçisiyse, bir dosya tanımlayıcısı veya her ikisi de sahiptir ve okuma veya standart kitaplığını kullanarak giriş ve çıkış işlevleri için yazılan bir dosya benzer. Ancak, bir kanal belirli bir dosyayı veya cihazı temsil etmiyor. Bunun yerine, programın kendi bellek bağımsız ve tamamen işletim sistemi tarafından denetlenen bellekteki geçici depolama temsil eder.
 
-**_pipe** benzer **_kurulum Aç** ancak okumak ve yazmak için kanal açar ve iki dosya tanımlayıcıları biri yerine döndürür. Program, her iki tarafında kanal kullanın veya gerekli olmayan bir kapatın. Örneğin, bir komut gibi yürüttüğünde Windows Komut işlemcisi bir kanal oluşturur **PROGRAM1** | **PROGRAM2**.
+**_pipe** benzer **_aç** ancak kanalı okuma ve yazma için açar ve bir yerine iki dosya tanımlayıcı döndürür. Programı her iki tarafını kullanabilir veya ihtiyaç duymadığı tarafı kapatabilir. Örneğin, komut işleyicisi, Windows gibi bir komut yürüttüğünde, bir kanal oluşturur **PROGRAM1** | **PROGRAM2**.
 
-Standart çıktı tanımlayıcısının **PROGRAM1** kanal 's yazma tanımlayıcısına eklenir. Standart giriş tanımlayıcısı **PROGRAM2** kanal 's okuma tanımlayıcısına eklenir. Bu bilgi diğer programlara geçirmek için geçici dosyalar oluşturma ihtiyacını ortadan kaldırır.
+Standart çıkış tanımlayıcısı **PROGRAM1** kanalın yazma tanımlayıcısına iliştirilmiş. Standart giriş tanımlayıcısı **PROGRAM2** kanalın okuma tanımlayıcısına iliştirilmiş. Bu, diğer programlara bilgi geçirmek için geçici dosyalar oluşturma gereksinimini ortadan kaldırır.
 
-**_Pipe** işlevi kanala iki dosya tanımlayıcıları döndürür *PFD'ler* bağımsız değişkeni. Öğe *PFD'ler*[0] okuma tanımlayıcısı ve öğeyi içeren *PFD'ler*[1] yazma tanımlayıcısı içeriyor. Kanal dosya tanımlayıcıları diğer dosya tanımlayıcıları aynı şekilde kullanılır. (Düşük düzey giriş ve çıkış işlevleri **_read** ve **_write** okuma ve yazma için bir kanal.) Kanal son koşulunu algılamak için denetle bir **_read** 0 okunan bayt sayısını döndürür. istek.
+**_Pipe** işlevi kanala iki dosya tanımlayıcısı döndürür *PFD'ler* bağımsız değişken. Öğe *PFD'ler*[0] okuma tanımlayıcısını ve öğeyi içeren *PFD'ler*[1] ise yazma tanımlayıcısını içerir. Kanal dosya tanımlayıcıları, diğer dosya tanımlayıcılarıyla aynı şekilde kullanılır. (Alt düzey giriş ve çıkış işlevleri **_read** ve **_write** okuyabileceği ve bir kanala yazılabilir.) Kanal bitiş koşulunu algılamak için denetle bir **_read** okunan bayt sayısı olarak 0 getiren isteği.
 
-*Psize* bağımsız değişkeni için kanal ayırmak için bayt cinsinden bellek miktarını belirtir. *Metin modu* bağımsız değişkeni kanal çeviri modu belirtir. Bildirim sabiti **_O_TEXT** bir metin çeviri ve sabiti belirtir **_o_bınary** ikili bir çeviri belirtir. (Bkz [fopen, _wfopen](fopen-wfopen.md) metin ve ikili modun açıklaması için.) Varsa *metin modu* bağımsız değişken: 0, **_pipe** varsayılan mod değişkeni tarafından belirtilen varsayılan çeviri modu kullanan [_fmode](../../c-runtime-library/fmode.md).
+*Psize* bağımsız değişkeni kanala ayrılacak bayt cinsinden bellek miktarını belirtir. *Metin modu* bağımsız değişkeni kanal için çeviri modunu belirtir. Bildirim sabiti **_O_TEXT** metin çevirisi ve sabit belirtir **_o_bınary** ikili dönüşümü belirler. (Bkz [fopen, _wfopen](fopen-wfopen.md) metin ve ikili modların tanımı için.) Varsa *metin modu* bağımsız değişken: 0, **_pipe** varsayılan modlu değişkeninin belirttiği varsayılan çeviri modunu kullanır [_fmode](../../c-runtime-library/fmode.md).
 
-Çoklu iş parçacığı kullanan programlarda hiçbir kilitleme gerçekleştirilir. Döndürülen dosya tanımlayıcıları yeni açıldığından ve sonra kadar herhangi bir iş parçacığı tarafından başvurulan değil **_pipe** çağrısı tamamlandığında.
+Çok iş parçacıklı programlarda hiçbir kilitleme gerçekleştirilmez. Döndürülen dosya tanımlayıcıları yeni açılmıştır ve herhangi bir iş parçacığı tarafından başvurulmaması gereken **_pipe** çağrısı tamamlanmadan.
 
-Kullanılacak **_pipe** üst işlem ve bir alt işlem arasında iletişim kurmak için işlev, her işlem yalnızca bir tanımlayıcısı kanalda açık olmalıdır. Tanımlayıcıları opposites olmalıdır: üst açmak okuma bir tanımlayıcısı varsa sonra alt açmak yazma tanımlayıcısı olmalıdır. Bunu yapmanın en kolay yolu çok Bitsel veya (**|**) **_O_NOINHERIT** ile bayrak *metin modu*. Ardından, **_dup** veya **_dup2** alt öğesi olarak geçirmek istediğiniz kanal tanımlayıcısı devralınabilir bir kopyasını oluşturun. Özgün tanımlayıcısı kapatın ve alt işlem oluşturma. Spawn çağrısından döndürme üzerinde yinelenen tanımlayıcısı üst işleminde kapatın. Daha fazla bilgi için bu makalenin sonraki bölümlerinde örnek 2 bakın.
+Kullanılacak **_pipe** bir üst işlem ve bir alt işlem arasında iletişim kurmak için işlev, her bir işlemin kanalda açık yalnızca bir tanımlayıcısı olmalıdır. Tanımlayıcıların birbirinin zıttı olması gerekir: üst açık bir okuma tanımlayıcısı varsa sonra alt açık bir yazma tanımlayıcısı olması gerekir. Bunu yapmanın en kolay yolu için bit düzeyinde veya (**|**) **_O_NOINHERIT** ile bayrak *metin modu*. Ardından, **_dup** veya **_dup2** alta geçirmek istediğiniz kanal tanımlayıcısının devralınabilir bir kopyasını oluşturmak için. Özgün tanımlayıcıyı kapatın ve sonra alt işlemi oluşturun. Oluşturma çağrısından dönüşte döndüren üzerinde üst işlemdeki yinelenen tanımlayıcıyı kapatın. Daha fazla bilgi için bu makaledeki örnek 2 bakın.
 
-Tüm kendi tanımlayıcıları kapatılmış olduğunda Windows işletim sisteminde bir kanal yok. (Tüm okuma tanımlayıcıları kanal üzerinde kapatılmışsa kanala yazma bir hataya neden olur.) Tüm okuma ve yazma kanal bekleme işlemi oluncaya kadar yeterli veri veya g/ç isteği tamamlamak için yeterli arabellek alanı.
+Windows işletim sisteminde, kendi tanımlayıcılarının tümü kapandığında kanal yokolur. (Kanal üzerindeki tüm okuma tanımlayıcıları kapatılmışsa, ardından kanala yazmak hataya neden olur.) Tüm okuma ve yazma kanal bekleme işlemi yeterli veri veya g/ç isteği tamamlamak için yeterli arabellek alanı oluncaya kadar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_pipe**|\<io.h >|\<fcntl.h >, 1 \<errno.h > 2|
 
@@ -110,7 +100,7 @@ Tüm kendi tanımlayıcıları kapatılmış olduğunda Windows işletim sistemi
 
 2 **errno** tanımlar.
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -223,7 +213,7 @@ Dad, the square root of 8000 is 89.44.
 
 ## <a name="example-2"></a>Örnek 2
 
-Bu, bir temel filtre uygulamasıdır. Filtre oluşturulan uygulamanın stdout yönlendiren bir kanal oluşturduktan sonra uygulama crt_pipe_beeper olarak çoğaltılır. Filtre ASCII 7 (bip) karakterleri kaldırır.
+Bu temel bir filtre uygulamasıdır. Bu, oluşturulan uygulamanın stdout'unu filtreye yönlendiren bir kanal oluşturduktan sonra crt_pipe_beeper uygulamasını oluşturur. Filtre ASCII 7 (bip) karakterlerini kaldırır.
 
 ```C
 // crt_pipe_beeper.c
@@ -242,7 +232,7 @@ int main()
 }
 ```
 
-Gerçek filtre uygulama:
+Gerçek filtre uygulaması:
 
 ```C
 // crt_pipe_BeepFilter.C

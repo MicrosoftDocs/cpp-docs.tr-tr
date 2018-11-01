@@ -1,12 +1,6 @@
 ---
-title: 'Bellek Yönetimi: Çerçeve ayırma | Microsoft Docs'
-ms.custom: ''
+title: 'Bellek Yönetimi: Çerçeve Ayırma'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - memory leaks [MFC], frame allocation
 - memory [MFC], detecting leaks
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - frame allocation [MFC]
 - frame variables [MFC]
 ms.assetid: 945a211a-6f4f-4679-bb6a-b0f2a0d4a6c1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1138a675d64561a2e8399accd93c4ebb5eff382d
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 45b0242ec8acafa2345482893d14decb02c4a3f9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083872"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448002"
 ---
 # <a name="memory-management-frame-allocation"></a>Bellek Yönetimi: Çerçeve Ayırma
 

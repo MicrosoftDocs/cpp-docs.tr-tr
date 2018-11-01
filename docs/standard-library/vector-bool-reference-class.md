@@ -1,27 +1,17 @@
 ---
-title: 'vektör&lt;bool&gt;:: reference sınıfı | Microsoft Docs'
-ms.custom: ''
+title: 'vektör&lt;bool&gt;:: reference sınıfı'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - vector/vector<bool>::reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - vector<bool> reference class
 ms.assetid: f27854f9-0ef0-4e7e-ad2e-cd53b6cb3334
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 798c65764ce49e795d3a6220803d51c72411ca79
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 7930c1cd93cd05a752d4997b9480c766ee26bd99
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686414"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471506"
 ---
 # <a name="vectorltboolgtreference-class"></a>vektör&lt;bool&gt;:: reference sınıfı
 

@@ -1,10 +1,6 @@
 ---
-title: CUserTool sınıfı | Microsoft Docs
-ms.custom: ''
+title: CUserTool sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CUserTool
 - AFXUSERTOOL/CUserTool
@@ -20,8 +16,6 @@ f1_keywords:
 - AFXUSERTOOL/CUserTool::m_strArguments
 - AFXUSERTOOL/CUserTool::m_strInitialDirectory
 - AFXUSERTOOL/CUserTool::m_strLabel
-dev_langs:
-- C++
 helpviewer_keywords:
 - CUserTool [MFC], CopyIconToClipboard
 - CUserTool [MFC], DrawToolIcon
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - CUserTool [MFC], m_strInitialDirectory
 - CUserTool [MFC], m_strLabel
 ms.assetid: 7c287d3e-d012-488d-b4e1-aa0f83f294bb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ac2820757cd2adc120a3c2075fc6b0d5d8bcbd82
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6c439ace92a407c8de3a200dedd61428b9bdbc28
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069756"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437381"
 ---
 # <a name="cusertool-class"></a>CUserTool sınıfı
 

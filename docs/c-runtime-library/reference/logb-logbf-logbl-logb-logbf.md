@@ -1,10 +1,6 @@
 ---
-title: logb, logbf, logbl, _logb, _logbf | Microsoft Docs
-ms.custom: ''
+title: logb, logbf, logbl, _logb, _logbf
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - logb
 - _logb
@@ -30,8 +26,6 @@ f1_keywords:
 - _logb
 - _logbf
 - logbf
-dev_langs:
-- C++
 helpviewer_keywords:
 - _logbf function
 - mantissas, floating-point variables
@@ -44,20 +38,16 @@ helpviewer_keywords:
 - floating-point functions, mantissa and exponent
 - exponents and mantissas
 ms.assetid: 780c4daa-6fe6-4fbc-9412-4c1ba1a1766f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f09a243994112c3ce19d72213391e09ba23c3c4c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9f598eedaf30b1f2a1858129e648a117355d112e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402780"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466293"
 ---
 # <a name="logb-logbf-logbl-logb-logbf"></a>logb, logbf, logbl, _logb, _logbf
 
-Kayan nokta bağımsız değişkenin üs değeri ayıklar.
+Bir kayan nokta bağımsız değişkeninin üs değerini ayıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -88,21 +78,21 @@ float _logbf(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Kayan nokta değeri.
+Bir kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**logb** taraflı olmayan üs değerini döndürür *x* bir kayan nokta değeri olarak gösterilen imzalı bir tamsayı olarak.
+**logb** popülasyon üs değerini döndürür *x* bir kayan nokta değeri olarak temsil edilen imzalı bir tamsayı olarak.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Logb** işlevleri üstel kayan nokta bağımsız değişkeninin değerini ayıklamak *x*, gibi *x* sonsuz aralığıyla temsil. Varsa bağımsız değişkeni *x* olan normalleştirilmiş gibi normal dışı, işlem görür.
+**Logb** işlevlerin kayan nokta bağımsız değişkeni üs değerini ayıklamak *x*gibi *x* sonsuz aralık içerisinde temsil ediliyormuş. Bağımsız değişken *x* olduğundan, normalleştirilmiş alacağı normalleştirilmekten çıkarılmışsa, normalleştirilmişmiş.
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **logb** alın ve dönüş **float** veya **uzun** **çift** değerleri. Bir C programı **logb** her zaman alan ve döndüren bir **çift**.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **logb** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **logb** her zaman alan ve döndüren bir **çift**.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, UL|Yok.|_DOMAIN|
+|± QNAN, ONRAKİNİ BUL|Yok.|_DOMAIN|
 |± 0|ZERODIVIDE|_SING|
 
 ## <a name="requirements"></a>Gereksinimler
@@ -112,7 +102,7 @@ Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **logb** a
 |**_logb**|\<float.h >|
 |**logb**, **logbf**, **logbl**, **_logbf**|\<Math.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

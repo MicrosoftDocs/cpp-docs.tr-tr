@@ -1,10 +1,6 @@
 ---
-title: fseek, _fseeki64 | Microsoft Docs
-ms.custom: ''
+title: fseek, _fseeki64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fseeki64
 - fseek
@@ -24,8 +20,6 @@ apitype: DLLExport
 f1_keywords:
 - fseek
 - _fseeki64
-dev_langs:
-- C++
 helpviewer_keywords:
 - _fseeki64 function
 - fseeki64 function
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - file pointers [C++]
 - seek file pointers
 ms.assetid: f6bb1f8b-891c-426e-9e14-0e7e5c62df70
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 01c0eee248090f6bffad6f68b34d59f1a6fa7265
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 15ff6e4a70069845369acdc3ffd153c48f228201
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465603"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447547"
 ---
 # <a name="fseek-fseeki64"></a>fseek, _fseeki64
 

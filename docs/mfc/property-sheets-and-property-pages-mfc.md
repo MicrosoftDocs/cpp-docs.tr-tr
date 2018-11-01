@@ -1,12 +1,6 @@
 ---
-title: Özellik bölümleri ve özellik sayfaları (MFC) | Microsoft Docs
-ms.custom: ''
+title: Özellik Bölümleri ve Özellik Sayfaları (MFC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC dialog boxes [MFC], tabs
 - property pages [MFC], property sheets
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - CPropertySheet class [MFC], property sheets and pages
 - property sheets, propert pages
 ms.assetid: de8fea12-6c35-4cef-8625-b8073a379446
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cfb5bd849c79d64769cb13d854605292689dfe73
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 971b8cde1560e54f87269e8b85a41cdec55c091d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441992"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445402"
 ---
 # <a name="property-sheets-and-property-pages-mfc"></a>Özellik Bölümleri ve Özellik Sayfaları (MFC)
 

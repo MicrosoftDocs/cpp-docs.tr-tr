@@ -1,14 +1,8 @@
 ---
-title: CL dosya adı sözdizimi | Microsoft Docs
-ms.custom: ''
+title: CL Dosya Adı Sözdizimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - cl
-dev_langs:
-- C++
 helpviewer_keywords:
 - syntax, compiler filename
 - paths, CL compiler filename syntax
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - file names [C++], CL compiler
 - file names [C++]
 ms.assetid: 3ca72586-75be-4477-b323-a1be232e80d4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 04d82be73f2e73a24daeabd6219abdeadcb4cbbf
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 929096ed169a33e0876c3afb68f3594757d61e4e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716891"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438941"
 ---
 # <a name="cl-filename-syntax"></a>CL Dosya Adı Sözdizimi
 

@@ -1,12 +1,6 @@
 ---
-title: Veri kaynağı (ODBC) | Microsoft Docs
-ms.custom: ''
+title: Veri Kaynağı (ODBC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC data sources, configuring
 - CDatabase class, data source connections
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - configuring ODBC data sources
 - ODBC data sources, represented by CDatabase
 ms.assetid: b246721f-b9e1-49bd-a6c7-f348b8c3d537
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 39c017113d6f3da0041b5e460666af955c27b0fa
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: df61ca28a1a5c7fb1f2096f2cc22654794f5dbdc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066155"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50469803"
 ---
 # <a name="data-source-odbc"></a>Veri Kaynağı (ODBC)
 

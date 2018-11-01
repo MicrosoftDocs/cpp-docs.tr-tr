@@ -1,14 +1,8 @@
 ---
-title: Şablon sınıfları diziler, listeler ve eşler | Microsoft Docs
-ms.custom: ''
+title: Diziler, Listeler ve Eşlemeler için Şablon Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.template
-dev_langs:
-- C++
 helpviewer_keywords:
 - arrays [MFC], classes
 - template classes [MFC], for arrays/lists and maps
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - map classes [MFC]
 - template classes [MFC]
 ms.assetid: a8331c4b-068a-48f8-a629-b8449601e121
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 218c5344ad8cdc1e63f3337cd031ac707fa7b5ef
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 93104c978ead80598a540da1469065643cb27442
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375542"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466059"
 ---
 # <a name="template-classes-for-arrays-lists-and-maps"></a>Diziler, Listeler ve Eşlemeler için Şablon Sınıfları
 

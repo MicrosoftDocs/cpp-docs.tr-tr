@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3707 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3707
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3707
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3707
 ms.assetid: ac63a5dd-7a4b-48d2-9f2a-be9cb090134c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d18d4a82d06018cdba6147ba6756b1718648847a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8a1525539c84ea427815a03057bb6d2f9213fec7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052795"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431121"
 ---
 # <a name="compiler-error-c3707"></a>Derleyici Hatası C3707
 

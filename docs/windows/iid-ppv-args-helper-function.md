@@ -1,28 +1,18 @@
 ---
-title: Iıd_ppv_args_helper işlevi | Microsoft Docs
-ms.custom: ''
+title: IID_PPV_ARGS_Helper İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - client/IID_PPV_ARGS_Helper
-dev_langs:
-- C++
 helpviewer_keywords:
 - IID_PPV_ARGS_Helper function
 ms.assetid: afee9b23-8df1-4575-903f-e9ba748418f0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: c3964ce5257a6b2398571c9ed3ba5792b5bd9cca
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cae29c70c551701a351cdcf404342ed1634a0e3b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384487"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467424"
 ---
 # <a name="iidppvargshelper-function"></a>IID_PPV_ARGS_Helper İşlevi
 

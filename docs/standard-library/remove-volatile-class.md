@@ -1,28 +1,18 @@
 ---
-title: remove_volatile sınıfı | Microsoft Docs
-ms.custom: ''
+title: remove_volatile Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::remove_volatile
-dev_langs:
-- C++
 helpviewer_keywords:
 - remove_volatile class
 - remove_volatile
 ms.assetid: 8b87e2c2-a581-4eb3-8691-c5603910d61d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e12a6a16b8ec9c2d3564e78233da716585add1ca
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: b327bb8362e1f6523d22950974012747e0de99f8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44099518"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50442009"
 ---
 # <a name="removevolatile-class"></a>remove_volatile Sınıfı
 

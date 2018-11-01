@@ -1,10 +1,6 @@
 ---
-title: CPropertySheet sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPropertySheet sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPropertySheet
 - AFXDLGS/CPropertySheet
@@ -31,8 +27,6 @@ f1_keywords:
 - AFXDLGS/CPropertySheet::SetWizardButtons
 - AFXDLGS/CPropertySheet::SetWizardMode
 - AFXDLGS/CPropertySheet::m_psh
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPropertySheet [MFC], CPropertySheet
 - CPropertySheet [MFC], AddPage
@@ -58,16 +52,12 @@ helpviewer_keywords:
 - CPropertySheet [MFC], SetWizardMode
 - CPropertySheet [MFC], m_psh
 ms.assetid: 8461ccff-d14f-46e0-a746-42ad642ef94e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7df22a7e2209b49f65d240336229a3c80ba4ddb7
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8ea466abe153bd31ef15c41b277b57f90cd2b50b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063828"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450940"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet sınıfı
 

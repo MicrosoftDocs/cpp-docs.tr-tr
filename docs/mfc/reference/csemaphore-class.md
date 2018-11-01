@@ -1,29 +1,19 @@
 ---
-title: CSemaphore sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSemaphore sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSemaphore
 - AFXMT/CSemaphore
 - AFXMT/CSemaphore::CSemaphore
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSemaphore [MFC], CSemaphore
 ms.assetid: 385fc7e4-8f86-4be2-85e1-d23b38c12f7f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a8794c2625e3ecda442cc0e7a1079ede148ed8e9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e8e71af6fa33dc748bfb8d19266a72495f216502
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074819"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447027"
 ---
 # <a name="csemaphore-class"></a>CSemaphore sınıfı
 

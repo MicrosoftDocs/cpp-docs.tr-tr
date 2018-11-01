@@ -1,27 +1,17 @@
 ---
-title: C çalışma zamanı hatası R6027 | Microsoft Docs
-ms.custom: ''
+title: C çalışma zamanı hatası R6027
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - R6027
-dev_langs:
-- C++
 helpviewer_keywords:
 - R6027
 ms.assetid: c06a62b3-08d9-4bf5-bcad-8340ec552f69
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 10f46968876a56706e05bcee55268c1aed99372b
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 2884f148091d9407d3229f0690a161639b5195e1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860608"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446521"
 ---
 # <a name="c-runtime-error-r6027"></a>C çalışma zamanı hatası R6027
 

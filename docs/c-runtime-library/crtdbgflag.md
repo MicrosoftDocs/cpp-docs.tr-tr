@@ -1,15 +1,9 @@
 ---
-title: _crtDbgFlag | Microsoft Docs
-ms.custom: ''
+title: _crtDbgFlag
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - _crtDbgFlag
 - crtDbgFlag
-dev_langs:
-- C++
 helpviewer_keywords:
 - memory allocation, tracking flag
 - crtDbgFlag constant
@@ -19,16 +13,12 @@ helpviewer_keywords:
 - enable memory allocation tracking flag
 - memory, tracking on the debug heap
 ms.assetid: 9e7adb47-8ab9-4e19-81d5-e2f237979973
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6d9900d42a5bae3c7a613028a7ae4ffe4bdc0333
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5abb0418b5ffb1f95bf7b362f621f99f411094d6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46044918"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50435301"
 ---
 # <a name="crtdbgflag"></a>_crtDbgFlag
 

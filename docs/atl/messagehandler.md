@@ -1,27 +1,18 @@
 ---
-title: MessageHandler | Microsoft Docs
-ms.custom: ''
+title: MessageHandler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
 ms.topic: reference
 f1_keywords:
 - MessageHandler
-dev_langs:
-- C++
 helpviewer_keywords:
 - MessageHandler function
 ms.assetid: 8a0acf97-1b0d-4226-91b9-75446634a03c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c0c7d76ff3b1e05d482b365150c9072a9fdd8d5c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3627dadde60a5ba0ece90497b85e2085f33e0919
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076717"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448405"
 ---
 # <a name="messagehandler"></a>MessageHandler
 

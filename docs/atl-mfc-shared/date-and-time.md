@@ -1,28 +1,18 @@
 ---
-title: Tarih ve saat | Microsoft Docs
-ms.custom: ''
+title: Tarih ve Saat
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - time, MFC programming
 - time
 - MFC, date and time
 - dates, MFC
 ms.assetid: ecf56dc5-d418-4603-ad3e-af7e205a6403
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 90317405f09695c57c907e94306623d5b3e2386d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dcb5ef9f21987e11608cfa29e77b24e96153e6b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419974"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459455"
 ---
 # <a name="date-and-time"></a>Tarih ve Saat
 

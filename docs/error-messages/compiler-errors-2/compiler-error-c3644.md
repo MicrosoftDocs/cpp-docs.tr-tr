@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3644 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3644
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3644
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3644
 ms.assetid: 2e3f6c41-3ec5-4a01-82bc-f11b61ebe68e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 63e48b944bd5b828ece1110240c462584703ba73
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6d147d6a5955208bbca1ccf9a2f2bcfe3f485b4f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099492"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428034"
 ---
 # <a name="compiler-error-c3644"></a>Derleyici Hatası C3644
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3052 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3052
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3052
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3052
 ms.assetid: 87480c42-1ceb-4775-8d20-88c54a7bb6a6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2d292087aefcc7bb99e505aefd0534dd018b2725
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ed9c27e1602f9372cb9137615ef66932a8df960c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46049227"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441840"
 ---
 # <a name="compiler-error-c3052"></a>Derleyici Hatası C3052
 

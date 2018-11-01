@@ -1,25 +1,15 @@
 ---
-title: NMAKE seçenekleri | Microsoft Docs
-ms.custom: ''
+title: NMAKE Seçenekleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - NMAKE program, options
 ms.assetid: 00ba1aec-ef27-44cf-8d82-c5c095e45bae
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 89f71bff1d8f64da2ad029e300fe2427235eac0a
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 84130afea6cc73c480b46f065d6d85e365101b38
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894531"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50455347"
 ---
 # <a name="nmake-options"></a>NMAKE Seçenekleri
 

@@ -1,31 +1,21 @@
 ---
-title: Cdocıtem sınıfı | Microsoft Docs
-ms.custom: ''
+title: Cdocıtem sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CDocItem
 - AFXOLE/CDocItem
 - AFXOLE/CDocItem::GetDocument
 - AFXOLE/CDocItem::IsBlank
-dev_langs:
-- C++
 helpviewer_keywords:
 - CDocItem [MFC], GetDocument
 - CDocItem [MFC], IsBlank
 ms.assetid: 84fb8610-a4c8-4211-adc0-e70e8d002c11
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6d67b6b19c6fe54189ac482e3ce7ad9b92bd9b84
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cf854bbc99ebeee55ae130b747c77fd7fe52f8d8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413692"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437110"
 ---
 # <a name="cdocitem-class"></a>Cdocıtem sınıfı
 

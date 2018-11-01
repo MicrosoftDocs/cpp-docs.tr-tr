@@ -1,10 +1,6 @@
 ---
-title: CComPtrBase sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComPtrBase sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComPtrBase
 - ATLCOMCLI/ATL::CComPtrBase
@@ -18,21 +14,15 @@ f1_keywords:
 - ATLCOMCLI/ATL::CComPtrBase::Release
 - ATLCOMCLI/ATL::CComPtrBase::SetSite
 - ATLCOMCLI/ATL::CComPtrBase::p
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComPtrBase class
 ms.assetid: 6dbe9543-dee8-4a97-b02f-dd3a25f4a1a0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 68701e0cc79eac815ab56f99f41cc0f47bf3585f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 8d7c96ff047a6340511ee1d67f025db0ad7c5368
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065141"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452695"
 ---
 # <a name="ccomptrbase-class"></a>CComPtrBase sınıfı
 

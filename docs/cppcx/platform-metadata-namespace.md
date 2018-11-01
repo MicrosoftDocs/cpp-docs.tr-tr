@@ -1,26 +1,18 @@
 ---
-title: Platform::metadata Namespace | Microsoft Docs
-ms.custom: ''
+title: Platform::metadata Namespace
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Metadata
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::Metadata Namespace
 ms.assetid: e3e114d8-a4b0-47f0-865a-9ce9d7212e86
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 660ba394e6eacb640aae72a791d034499d69aa4e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 39a4709c8f66c4dcc2ee5185f2a1df27b0666445
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44101852"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462874"
 ---
 # <a name="platformmetadata-namespace"></a>Platform::metadata Namespace
 

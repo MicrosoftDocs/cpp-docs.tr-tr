@@ -1,43 +1,33 @@
 ---
-title: Derleyici Hatası C2435 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2435
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2435
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2435
 ms.assetid: be6aa8f8-579b-42ea-bdd8-2d01393646ad
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8ddf078420da8aba170bbd21a0db775f9246cea4
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 5cd7a83575da7ab2a30401406d0c2ccf6c1b603e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34703648"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438542"
 ---
 # <a name="compiler-error-c2435"></a>Derleyici Hatası C2435
 
-> '*var*': / clr: safe ile derlenemiyor, yönetilen CRT gerektirdiğinde dinamik başlatma
+> '*var*': dinamik başlatma yönetilen CRT gerektirir; / CLR: safe ile derlenemez
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
-Genel uygulama başına etki alanı değişkenini, başlatma gerektiriyorsa ile derlenmiş CRT `/clr:pure`, hangi değil üretmek doğrulanabilen bir görüntüsü.
+Genel uygulama başına etki alanı değişkenini, başlatma ile derlenmiş CRT gerektirir `/clr:pure`, doğrulanabilir bir görüntü oluşturmuyor.
 
-Daha fazla bilgi için bkz: [appdomain](../../cpp/appdomain.md) ve [işlem](../../cpp/process.md).
+Daha fazla bilgi için [appdomain](../../cpp/appdomain.md) ve [işlem](../../cpp/process.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C2435 oluşturur:
+Aşağıdaki örnek, C2435 oluşturur:
 
 ```cpp
 // C2435.cpp

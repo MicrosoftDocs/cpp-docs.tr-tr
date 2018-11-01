@@ -1,27 +1,17 @@
 ---
-title: Kalıcı olmayan iletişim kutuları oluşturma | Microsoft Docs
-ms.custom: ''
+title: Kalıcı Olmayan İletişim Kutuları Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC dialog boxes [MFC], modeless
 - modeless dialog boxes [MFC], creating
 - MFC dialog boxes [MFC], creating
 ms.assetid: 70d78c7f-3d40-477b-9f78-0f33c359f88b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 77b80f66f2956e71b90e4d939a0fb74aef28edb1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4cc2bc0ce54ad658a8bf13e70a8fa54479cbbf79
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407042"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453713"
 ---
 # <a name="creating-modeless-dialog-boxes"></a>Kalıcı Olmayan İletişim Kutuları Oluşturma
 

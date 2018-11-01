@@ -1,12 +1,6 @@
 ---
-title: Koleksiyon sınıfı seçme önerileri | Microsoft Docs
-ms.custom: ''
+title: Koleksiyon Sınıfı Seçme Önerileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - type safety of collection classes [MFC]
 - collection classes [MFC], serialization
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - collection classes [MFC], duplicates allowed
 - collection classes [MFC], shapes
 ms.assetid: a82188cd-443f-40d8-a244-edf292a53db4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0bb6338d7a40059da5f4e351dfac0d8d879e8c21
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2c8cb323feb44618909895a4ee536ad3b7832173
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404793"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446741"
 ---
 # <a name="recommendations-for-choosing-a-collection-class"></a>Koleksiyon Sınıfı Seçme Önerileri
 

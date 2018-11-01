@@ -1,27 +1,17 @@
 ---
-title: Nccalcsıze_params yapısı | Microsoft Docs
-ms.custom: ''
+title: NCCALCSIZE_PARAMS Yapısı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - NCCALCSIZE_PARAMS
-dev_langs:
-- C++
 helpviewer_keywords:
 - NCCALCSIZE_PARAMS structure [MFC]
 ms.assetid: 3424cd9f-806a-4089-82fb-414187589edf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6290c7600584f3225fee6cf9ed6a0f94373584c8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3dbe1fcdb941a94876dd95a0eed86d6f4a3e15c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413711"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443777"
 ---
 # <a name="nccalcsizeparams-structure"></a>NCCALCSIZE_PARAMS Yapısı
 

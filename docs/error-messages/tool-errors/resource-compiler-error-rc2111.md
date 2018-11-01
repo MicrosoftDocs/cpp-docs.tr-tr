@@ -1,27 +1,17 @@
 ---
-title: Kaynak Derleyicisi hatası RC2111 | Microsoft Docs
-ms.custom: ''
+title: Kaynak Derleyicisi Hatası RC2111
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - RC2111
-dev_langs:
-- C++
 helpviewer_keywords:
 - RC2111
 ms.assetid: 118cba57-82a4-4199-acf4-9d9561946218
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e8e0e0f153b5eed21f906dd228072a4239dec63e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bf8cce125920e6506c2c37a6e840acfecd80bc5a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46076456"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452656"
 ---
 # <a name="resource-compiler-error-rc2111"></a>Kaynak Derleyicisi Hatası RC2111
 

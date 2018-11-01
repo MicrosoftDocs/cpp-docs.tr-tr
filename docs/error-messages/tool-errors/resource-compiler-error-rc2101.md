@@ -1,27 +1,17 @@
 ---
-title: Kaynak Derleyicisi hatası RC2101 | Microsoft Docs
-ms.custom: ''
+title: Kaynak Derleyicisi Hatası RC2101
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - RC2101
-dev_langs:
-- C++
 helpviewer_keywords:
 - RC2101
 ms.assetid: 580f9d74-162f-41e9-9438-ddbe3457c359
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 196806e6d2767c889ae96d239af69113c542ba6c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 595e87b73d79a01993e0e9b3aaa814332b21413f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034765"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448029"
 ---
 # <a name="resource-compiler-error-rc2101"></a>Kaynak Derleyicisi Hatası RC2101
 

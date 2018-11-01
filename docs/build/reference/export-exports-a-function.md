@@ -1,30 +1,20 @@
 ---
-title: -EXPORT (bir işlevi dışarı aktarır) | Microsoft Docs
-ms.custom: ''
+title: /EXPORT (İşlevi Dışarı Aktarır)
 ms.date: 09/05/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.ExportFunctions
 - /export
-dev_langs:
-- C++
 helpviewer_keywords:
 - /EXPORT linker option
 - EXPORT linker option
 - -EXPORT linker option
 ms.assetid: 0920fb44-a472-4091-a8e6-73051f494ca0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 22b79454b71f4908d71e683d8bebe4611da7cb14
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: a26df26849302ae1cce449f92cdeb5ee6dfd9baa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861875"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456140"
 ---
 # <a name="export-exports-a-function"></a>/EXPORT (İşlevi Dışarı Aktarır)
 
@@ -76,7 +66,7 @@ BOOL CALLBACK PlainFuncName( Things * lpParams)
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

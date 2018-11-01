@@ -1,28 +1,18 @@
 ---
-title: "Nasıl yapılır: derleme görevleri dosyası projeleri için IntelliSense'i etkinleştirme | Microsoft Docs"
-ms.custom: ''
+title: "Nasıl Yapılır: Derleme Görevleri Dosyası Projeleri için IntelliSense'i Etkinleştirme"
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCNMakeTool.IntelliSense
-dev_langs:
-- C++
 helpviewer_keywords:
 - Makefile projects, IntelliSense
 - IntelliSense, Makefile projects
 ms.assetid: 9443f453-f18f-4f12-a9a1-ef9dbf8b188f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1dda7b485c5aef7b6277da3141f293e16ac7523b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 80a4696856fea46c7749cfeb120535dcdab86282
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433731"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434677"
 ---
 # <a name="how-to-enable-intellisense-for-makefile-projects"></a>Nasıl Yapılır: Derleme Görevleri Dosyası Projeleri için IntelliSense'i Etkinleştirme
 

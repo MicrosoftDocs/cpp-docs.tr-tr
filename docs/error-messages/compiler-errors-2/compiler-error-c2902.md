@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2902 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2902
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2902
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2902
 ms.assetid: 89d78d0e-78e5-4c2c-a0f9-a60110e9395e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5997e9a038e4310ada42cdc371bc8f2c058a440a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 09a418d5a6f8b95ed55f1dc5d573b2176d0d0ccf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017437"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450147"
 ---
 # <a name="compiler-error-c2902"></a>Derleyici Hatası C2902
 

@@ -1,29 +1,19 @@
 ---
-title: CWinApp ve MFC Uygulama Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: CWinApp ve MFC Uygulama Sihirbazı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CWinApp
-dev_langs:
-- C++
 helpviewer_keywords:
 - application wizards [MFC], and CWinApp
 - CWinApp class [MFC], and MFC Application Wizard
 - MFC, wizards
 ms.assetid: f8ac0491-3302-4e46-981d-0790624eb8a2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 009126061856d1165e5d08f6ecc4bd2e7745f2fd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c659387043accbd6cdad7d5e2b97ce8bf15c6e63
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382966"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437216"
 ---
 # <a name="cwinapp-and-the-mfc-application-wizard"></a>CWinApp ve MFC Uygulama Sihirbazı
 

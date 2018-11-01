@@ -1,10 +1,6 @@
 ---
-title: Yeniden Adlandır, _wrename | Microsoft Docs
-ms.custom: ''
+title: yeniden adlandır, _wrename
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - rename
 - _wrename
@@ -25,8 +21,6 @@ f1_keywords:
 - _wrename
 - _trename
 - Rename
-dev_langs:
-- C++
 helpviewer_keywords:
 - trename function
 - directories [C++], renaming
@@ -40,16 +34,12 @@ helpviewer_keywords:
 - names [C++], changing directory
 - renaming files
 ms.assetid: 9f0a6103-26a2-4dda-b14b-79a48946266a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f02829b394649b86dfda9baad7c5792853fce746
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 70793dee54460b6372bfbe815115aa9211670c6f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407479"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463992"
 ---
 # <a name="rename-wrename"></a>yeniden adlandır, _wrename
 
@@ -70,44 +60,44 @@ int _wrename(
 
 ### <a name="parameters"></a>Parametreler
 
-*EskiAd*<br/>
-Eski adı işaretçi.
+*OldName*<br/>
+Eski adı işaretçisi.
 
-*newname*<br/>
-Yeni ad işaretçi.
+*Yeni ad*<br/>
+Yeni ad işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa bu işlevlerin her biri 0 döndürür. Bir hata üzerinde işlevi sıfır olmayan bir değer döndürür ve ayarlar **errno** aşağıdaki değerlerden birine:
+Bu işlevlerin her biri, başarılı olursa 0 döndürür. Bir hatada, işlev sıfır olmayan bir değer döndürür ve ayarlar **errno** aşağıdaki değerlerden biri olarak:
 
 |errno değeri|Koşul|
 |-|-|
-**EACCES**|Dosya veya dizin tarafından belirtilen *newname* zaten var veya (geçersiz bir yol) oluşturulamadı; veya *EskiAd* bir dizindir ve *newname* farklı bir yol belirtir.
-**ENOENT**|Dosya veya tarafından belirtilen yol *EskiAd* bulunamadı.
-**EINVAL**|Adı geçersiz karakterler içeriyor.
+**SPAWN**|Dosya veya dizin tarafından belirtilen *newname* zaten var veya (geçersiz yol) oluşturulamadı; veya *oldname* bir dizin ve *newname* farklı bir yol belirtir.
+**ENOENT**|Dosya veya yol tarafından belirtilen *oldname* nebyl nalezen.
+**EINVAL**|Ad geçersiz karakterler içeriyor.
 
-Diğer olası dönüş değerleri için bkz: [_doserrno, _errno, syserrlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Diğer olası dönüş değerleri için bkz: [_doserrno, gt; _errno &, syserrlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Yeniden adlandırma** işlevi yeniden adlandırır dosya veya dizin tarafından belirtilen *EskiAd* tarafından verilen adına *newname*. Eski adı, varolan bir dosya veya dizin yolunu olması gerekir. Varolan bir dosya veya dizin adını yeni bir ad olmamalıdır. Kullanabileceğiniz **yeniden adlandırma** bir dosyayı bir dizin veya aygıtı farklı bir yol vererek diğerine taşıma *newname* bağımsız değişkeni. Ancak, kullanamazsınız **yeniden adlandırma** bir dizin taşımak için. Dizinleri yeniden adlandırıldı ancak taşınmaz.
+**Yeniden Adlandır** dosya veya dizin tarafından belirtilen işlevi yeniden adlandırır *oldname* tarafından verilen adına *newname*. Eski adı, varolan bir dosya veya dizin yolu olmalıdır. Yeni ad var olan bir dosya veya dizin adı olmalıdır. Kullanabileceğiniz **Yeniden Adlandır** bir dosya bir dizin veya cihaz farklı bir yol vererek taşımak için *newname* bağımsız değişken. Bununla birlikte kullanamazsınız **Yeniden Adlandır** bir dizine taşınır. Dizinleri yeniden adlandırılamaz ancak taşınmaz.
 
-**_wrename** bir joker karakter sürümü **_rename**; bağımsız değişkenleri **_wrename** joker karakter dizelerdir. **_wrename** ve **_rename** Aksi takdirde aynı şekilde davranır.
+**_wrename** geniş karakterli sürümüdür **_rename**; bağımsız değişkenler **_wrename** geniş karakterli dizelerdir. **_wrename** ve **_rename** aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_trename**|**Yeniden Adlandır**|**Yeniden Adlandır**|**_wrename**|
+|**_trename**|**Yeniden adlandırma**|**Yeniden adlandırma**|**_wrename**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**Yeniden Adlandır**|\<io.h > veya \<stdio.h >|
+|**Yeniden adlandırma**|\<io.h > veya \<stdio.h >|
 |**_wrename**|\<stdio.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

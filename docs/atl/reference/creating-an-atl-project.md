@@ -1,30 +1,20 @@
 ---
-title: ATL projesi oluşturma | Microsoft Docs
-ms.custom: ''
+title: ATL projesi oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.appwiz.ATL.project
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL projects, creating
 - ATL70.DLL
 - _ATL_MIN_CRT macro
 - distributing files with ATL components
 ms.assetid: 061d5f98-f669-440e-9380-42f017a0f9e8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b22e903b86ba3de8bcd98aa47f1b6756288f2f78
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c6fb81ad1a6a5233eb27f67fb7985e23b0c0f4b1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070984"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443803"
 ---
 # <a name="creating-an-atl-project"></a>ATL projesi oluşturma
 

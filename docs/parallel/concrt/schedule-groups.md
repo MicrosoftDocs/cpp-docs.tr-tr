@@ -1,25 +1,15 @@
 ---
-title: Zamanlama grupları | Microsoft Docs
-ms.custom: ''
+title: Zamanlama Grupları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - schedule groups
 ms.assetid: 03523572-5891-4d17-89ce-fa795605f28b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4fa61772af96ba0d2602ff42a6a43b2b3a13a4e6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 60d6bdaf863e60fa9923f7d7447309338c5dbed2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385905"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453530"
 ---
 # <a name="schedule-groups"></a>Zamanlama Grupları
 

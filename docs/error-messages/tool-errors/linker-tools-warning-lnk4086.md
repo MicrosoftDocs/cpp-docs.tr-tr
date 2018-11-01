@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları uyarısı LNK4086 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Uyarısı LNK4086
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK4086
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK4086
 ms.assetid: ea1eecbb-ba2c-41bb-9a4f-fa0808a4b92d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 21a2ee7660f0ad78d04f7edb191929296c8d47a9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c6a5a0714e070e6cf3aee8efcdfbdfa07fa9ee69
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079238"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50427865"
 ---
 # <a name="linker-tools-warning-lnk4086"></a>Bağlayıcı Araçları Uyarısı LNK4086
 

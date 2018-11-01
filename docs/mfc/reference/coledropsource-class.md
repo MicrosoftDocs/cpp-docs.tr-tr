@@ -1,10 +1,6 @@
 ---
-title: COleDropSource sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleDropSource sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleDropSource
 - AFXOLE/COleDropSource
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXOLE/COleDropSource::GiveFeedback
 - AFXOLE/COleDropSource::OnBeginDrag
 - AFXOLE/COleDropSource::QueryContinueDrag
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleDropSource [MFC], COleDropSource
 - COleDropSource [MFC], GiveFeedback
 - COleDropSource [MFC], OnBeginDrag
 - COleDropSource [MFC], QueryContinueDrag
 ms.assetid: d3eecc5f-a70b-4a01-b705-7d2c098ebe17
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cb12135a0fbffdeba55130bced80c2f23c365caa
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 51d524054b67a5cecc5aa7791b0aeea0cc076813
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052363"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50457791"
 ---
 # <a name="coledropsource-class"></a>COleDropSource sınıfı
 

@@ -1,12 +1,6 @@
 ---
-title: Eksik türleri | Microsoft Docs
-ms.custom: ''
+title: Eksik Türler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - void keyword [C], incomplete
 - types [C], incomplete
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - void keyword [C]
 - structures, incomplete
 ms.assetid: 01bc0cf6-9fa7-458c-9371-ecbe54ea6aee
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ae26bf4f3e036e6e71acc090c174638133d2e881
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9f0df4c28fc0da860d5a903b3f2833a328312dd7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759612"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50433507"
 ---
 # <a name="incomplete-types"></a>Eksik Türler
 

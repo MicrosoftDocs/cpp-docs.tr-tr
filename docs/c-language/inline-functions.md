@@ -1,27 +1,17 @@
 ---
-title: Satır içi işlevler | Microsoft Docs
-ms.custom: ''
+title: Satır İçi İşlevler
 ms.date: 10/16/2017
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - fast code
 - inline functions, __inline keyword
 - functions [C++], inline functions
 ms.assetid: 00f4b2ff-8ad0-4165-9f4c-2ef157d03f31
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 127438da4929e58e07e10701dd64869b084fe4c5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2f2ed8ccff0ecbdeff7f3ebac94d5e19ec8042f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46078588"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452643"
 ---
 # <a name="inline-functions"></a>Satır İçi İşlevler
 

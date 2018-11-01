@@ -1,23 +1,13 @@
 ---
-title: setjmp longjump | Microsoft Docs
-ms.custom: ''
+title: setjmp longjump
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: b0e21902-095d-4198-8f9a-b6326525721a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f53160a5deeb3ea0db111fc0aae7429b19b7cc86
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 765cef3f02bed09bed0278aaeecdcdbd55d86b67
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703280"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50427904"
 ---
 # <a name="setjmplongjump"></a>setjmp/longjump
 

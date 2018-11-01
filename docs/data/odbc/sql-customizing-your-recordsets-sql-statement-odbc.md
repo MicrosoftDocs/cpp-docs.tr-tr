@@ -1,12 +1,6 @@
 ---
-title: 'SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC) | Microsoft Docs'
-ms.custom: ''
+title: 'SQL: Kayıt Kümenizin SQL Deyimini Özelleştirme (ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - recordsets, SQL statements
 - ODBC recordsets, SQL statements
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - overriding, SQL statements
 - SQL, opening recordsets
 ms.assetid: 72293a08-cef2-4be2-aa1c-30565fcfbaf9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: c1e48922fb2afbe7981d77bc4b351c3843ecbce9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 84ce18ccbf3cc59dd9c94826366595d2f128784f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077185"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459937"
 ---
 # <a name="sql-customizing-your-recordsets-sql-statement-odbc"></a>SQL: Kayıt Kümenizin SQL Deyimini Özelleştirme (ODBC)
 

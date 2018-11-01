@@ -1,10 +1,6 @@
 ---
-title: isascii, __isascii, iswascii | Microsoft Docs
-ms.custom: ''
+title: isascii, __isascii, iswascii
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - iswascii
 - __isascii
@@ -30,8 +26,6 @@ f1_keywords:
 - ctype/isascii
 - ctype/__isascii
 - corecrt_wctype/iswascii
-dev_langs:
-- C++
 helpviewer_keywords:
 - __isascii function
 - _isascii function
@@ -40,20 +34,16 @@ helpviewer_keywords:
 - istascii function
 - iswascii function
 ms.assetid: ba4325ad-7cb3-4fb9-b096-58906d67971a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bffc46bae24689558999d188f96e5b9f8d21c54e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d150e7bb335dc77ed86f445128eebf97b8be5ac3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402279"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50433665"
 ---
 # <a name="isascii-isascii-iswascii"></a>isascii, __isascii, iswascii
 
-Belirli bir karakterin bir ASCII karakter olup olmadığını belirler.
+Belirli bir karakter, ASCII karakter olup olmadığını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,17 +61,17 @@ int iswascii(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test etmek için bir tamsayı.
+Test edilecek tamsayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamları döndürür sıfır olmayan IF her **c** bir ASCII karakter belirli bir gösterimidir. **__isascii** sıfır olmayan bir değer döndürür **c** ASCII karakter (aralığında 0x00 - 0x7F). **iswascii** sıfır olmayan bir değer döndürür **c** bir ASCII karakter joker karakter gösterimidir. Bu yordamlar her 0 döndürür **c** test durumu uygun değil.
+Yordamların her biri bu döndürür sıfır olmayan **c** bir ASCII karakter belirli bir gösterimidir. **__isascii** sıfır olmayan bir değer döndürür **c** bir ASCII karakter (aralığında 0x00 - 0x7F). **iswascii** sıfır olmayan bir değer döndürür **c** bir ASCII karakterinin geniş karakter gösterimidir. Bu yordamların her biri 0 döndürür **c** test koşulu karşılamayan.
 
 ## <a name="remarks"></a>Açıklamalar
 
 Her ikisi de **__isascii** ve **iswascii** önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece makroları olarak uygulanır.
 
-Geriye dönük uyumluluk için **isascii** makrosu yalnızca IF uygulanan [ &#95; &#95;STDC&#95; &#95; ](../../preprocessor/predefined-macros.md) tanımlı değil ya da 0; tanımlanan aksi tanımlı değil.
+Geriye dönük uyumluluk için **isascii** yalnızca bir makro durumlarda uygulanan [ &#95; &#95;STDC&#95; &#95; ](../../preprocessor/predefined-macros.md) tanımlı değil veya; 0 olarak tanımlandığında aksi tanımsızdır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -96,7 +86,7 @@ Geriye dönük uyumluluk için **isascii** makrosu yalnızca IF uygulanan [ &#95
 |**isascii**, **__isascii**|C: \<ctype.h ><br /><br /> C++: \<cctype > veya \<ctype.h >|
 |**iswascii**|C: \<wctype.h >, \<ctype.h >, veya \<wchar.h ><br /><br /> C++: \<cwctype >, \<cctype >, \<wctype.h >, \<ctype.h >, veya \<wchar.h >|
 
-**İsascii**, **__isascii** ve **iswascii** Microsoft belirli işlevlerdir. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+**İsascii**, **__isascii** ve **iswascii** Microsoft'a özgü işlevlerdir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

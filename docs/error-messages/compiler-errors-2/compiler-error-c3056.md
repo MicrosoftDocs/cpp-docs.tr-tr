@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3056 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3056
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3056
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3056
 ms.assetid: 9500173d-870b-49b3-8e88-0ee93586d19a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0495bc9c31df3aa3ff47ef860e8e47ea6f7c2248
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d33aa6679c6dc68b7f1a62e75aff6fadc65dc7bd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46063586"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447417"
 ---
 # <a name="compiler-error-c3056"></a>Derleyici Hatası C3056
 

@@ -1,14 +1,8 @@
 ---
-title: "Windows Yuvaları: Sınıf Casyncsocket'ini kullanma | Microsoft Docs"
-ms.custom: ''
+title: "Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma"
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CAsyncSocket
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAsyncSocket class [MFC], programming model
 - Windows Sockets [MFC], asynchronous
@@ -17,16 +11,12 @@ helpviewer_keywords:
 - sockets [MFC], asynchronous operation
 - Windows Sockets [MFC], converting Unicode and MBCS strings
 ms.assetid: 825dae17-7c1b-4b86-8d6c-da7f1afb5d8d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0aaefc41ca365e2bf4d87583f2e25dfa2a870a90
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: abce497f49347719af08e71a75afa12cb99507f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079018"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459299"
 ---
 # <a name="windows-sockets-using-class-casyncsocket"></a>Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma
 

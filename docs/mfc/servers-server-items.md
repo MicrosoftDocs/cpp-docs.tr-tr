@@ -1,12 +1,6 @@
 ---
-title: 'Sunucular: Sunucu öğeleri | Microsoft Docs'
-ms.custom: ''
+title: 'Sunucular: Sunucu Öğeleri'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - server items, implementing
 - servers [MFC], server items
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - server items
 - OLE server applications [MFC], server items
 ms.assetid: 28ba81a1-726a-4728-a52d-68bc7efd5a3c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c134f0d0b0c8ee3009e372de7712a6c0894a51de
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: ea04a3eefff0f127873ffbf67ea39ade3a6b9b85
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082911"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453696"
 ---
 # <a name="servers-server-items"></a>Sunucular: Sunucu Öğeleri
 

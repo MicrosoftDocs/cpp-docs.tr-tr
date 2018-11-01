@@ -1,18 +1,12 @@
 ---
-title: num_put sınıfı | Microsoft Docs
-ms.custom: ''
+title: num_put Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xlocnum/std::num_put
 - locale/std::num_put::char_type
 - locale/std::num_put::iter_type
 - locale/std::num_put::do_put
 - locale/std::num_put::put
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::num_put [C++]
 - std::num_put [C++], char_type
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - std::num_put [C++], do_put
 - std::num_put [C++], put
 ms.assetid: 36c5bffc-8283-4201-8ed4-78c4d81f8a17
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 98f6154f8eed0d192189d0907cb7dc7ae6642439
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c6866358cde7d381ec8a703d50aeb3193bef9d5e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067689"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441866"
 ---
 # <a name="numput-class"></a>num_put Sınıfı
 

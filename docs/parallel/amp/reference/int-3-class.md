@@ -1,10 +1,6 @@
 ---
-title: int_3 sınıfı | Microsoft Docs
-ms.custom: ''
+title: int_3 Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::int_3::get_x
 - amp_short_vectors/Concurrency::graphics::int_3::operator-=
@@ -75,19 +71,13 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::int_3::get_zyx
 - amp_short_vectors/Concurrency::graphics::int_3::xz
 - amp_short_vectors/Concurrency::graphics::int_3::set_yz
-dev_langs:
-- C++
 ms.assetid: d4af182f-30f1-455c-b16d-aa99cd314038
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 69dd5e5080735c1b347b164887fdfab76aa9b178
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c3588ccfc1e775ebecc245c055f600da4d2652ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428402"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440540"
 ---
 # <a name="int3-class"></a>int_3 Sınıfı
 

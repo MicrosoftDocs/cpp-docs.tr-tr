@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3381 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3381
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3381
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3381
 ms.assetid: d276c89f-8377-4cb6-a8d4-7770885f06c4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7bd6c1d641f7476d3c372939b948931a306e0f80
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ae416d68831d1964c89d938dfcddd364e521195c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080720"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440280"
 ---
 # <a name="compiler-error-c3381"></a>Derleyici Hatası C3381
 

@@ -1,30 +1,20 @@
 ---
-title: CAutoVectorPtrElementTraits sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAutoVectorPtrElementTraits sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAutoVectorPtrElementTraits
 - ATLCOLL/ATL::CAutoVectorPtrElementTraits
 - ATLCOLL/ATL::CAutoVectorPtrElementTraits::INARGTYPE
 - ATLCOLL/ATL::CAutoVectorPtrElementTraits::OUTARGTYPE
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAutoVectorPtrElementTraits class
 ms.assetid: 16b81a56-55fb-46ca-b376-66a1884231a6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8308051d44b0daa0a4691ba825890970762dcc2a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b71ac4163c1c34fbbe686cdff05319347db521cd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46036910"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459013"
 ---
 # <a name="cautovectorptrelementtraits-class"></a>CAutoVectorPtrElementTraits sınıfı
 

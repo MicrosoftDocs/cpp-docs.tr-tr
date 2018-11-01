@@ -1,29 +1,19 @@
 ---
-title: Uygulama Çerçevesi | Microsoft Docs
-ms.custom: ''
+title: Uygulama Framework'ü
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.mfc
-dev_langs:
-- C++
 helpviewer_keywords:
 - application framework [MFC], building applications
 - applications [MFC]
 - application framework [MFC]
 ms.assetid: 912684e6-4418-49dc-9877-a4cd19d69d20
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d04e8cef4500e738fb0948574786012b8a141daf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c17adc830cd6201402c069f4facab835ed21ba0a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425944"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50428596"
 ---
 # <a name="application-framework"></a>Uygulama Framework'ü
 

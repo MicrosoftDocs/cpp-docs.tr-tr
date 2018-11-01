@@ -1,10 +1,6 @@
 ---
-title: strtod, _strtod_l, wcstod, _wcstod_l | Microsoft Docs
-ms.custom: ''
+title: strtod, _strtod_l, wcstod, _wcstod_l
 ms.date: 10/20/2017
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wcstod
 - _wcstod_l
@@ -33,8 +29,6 @@ f1_keywords:
 - corecrt_wstdlib/wcstod
 - stdlib/_strtod_l
 - corecrt_wstdlib/_wcstod_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - wcstod_l function
 - tcstod_l function
@@ -48,20 +42,16 @@ helpviewer_keywords:
 - _strtod_l function
 - string conversion, to floating point values
 ms.assetid: 0444f74a-ba2a-4973-b7f0-1d77ba88c6ed
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9abf6ea87681470f4e1d290a9a0059efb41de499
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c8c2b3b491e2e7265829fa88580529dc757ace8c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417497"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50469335"
 ---
 # <a name="strtod-strtodl-wcstod-wcstodl"></a>strtod, _strtod_l, wcstod, _wcstod_l
 
-Dizeleri çift duyarlıklı değerine dönüştürür.
+Dize, çift duyarlıklı bir değere Dönüştür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -92,20 +82,20 @@ double wcstod_l(
 Dönüştürülecek null ile sonlandırılmış dize.
 
 *endptr*<br/>
-Tarama durdurur karakter işaretçi.
+Taramayı durduran karakter işaretçisi.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**strtod** gösterimi, servis talebi işlevi döndürür +/-taşma, ne zaman neden olacağından dışında kayan noktalı sayı değerini döndürür**HUGE_VAL**. İşaretini **HUGE_VAL** gösterilemez değerini oturum eşleşir. **strtod** dönüştürme gerçekleştirilebilir veya bir underflow oluşur 0 döndürür.
+**strtod** gösterimi içinde çalışması işlevi döndürür +/-taşmaya neden olduğu zaman dışında kayan nokta sayı değerini döndürür**HUGE_VAL**. İşaretini **HUGE_VAL** temsil edilemeyen değerin işareti ile eşleşir. **strtod** dönüştürme gerçekleştirilemeyiorsa veya bir Yetersizlik durumu oluşursa 0 döndürür.
 
-**wcstod** değerleri analogously çok döndürür **strtod**. Her iki işlevler için **errno** ayarlanır **ERANGE** taşması veya yetersiz olursa ve açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer dönüş kodları hakkında daha fazla bilgi için.
+**wcstod** çok öğesine değerleri döndürür **strtod**. Her iki işlev için **errno** ayarlanır **ERANGE** taşma veya yetersiz gelme oluşması ve açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer döndürme kodları hakkında daha fazla bilgi için.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Giriş dizesi her işlevi dönüştürür *strSource* için bir **çift**. **Strtod** işlev dönüştürür *strSource* çift duyarlıklı değeri. **strtod** dize okumayı durdurur *strSource* ilk karakterinde onu bir sayı bir parçası olarak tanıyabilmesi olamaz. Bu sonlandırma null karakter olabilir. **wcstod** bir joker karakter sürümü **strtod**; kendi *strSource* bağımsız değişkeni olan bir joker karakter dizesi. Bu işlevler aynı şekilde aksi davranır.
+Giriş dizesindeki her işlevi dönüştürür *strSource* için bir **çift**. **Strtod** işlev dönüştürür *strSource* çift duyarlıklı bir değere. **strtod** dizesini okumayı durdurur *strSource* bir sayının parçası olarak tanıyamadığı ilk karakterde. Bu sondaki boş karakter olabilir. **wcstod** geniş karakterli sürümüdür **strtod**; *strSource* geniş karakterli bir dizedir. Bu işlevler, aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -114,17 +104,17 @@ Giriş dizesi her işlevi dönüştürür *strSource* için bir **çift**. **Str
 |**_tcstod**|**strtod**|**strtod**|**wcstod**|
 |**_tcstod_l**|**_strtod_l**|**_strtod_l**|**_wcstod_l**|
 
-**Lc_numerıc** geçerli yerel kategori ayarı belirler tanıma taban noktası karakterinin *strSource*. Daha fazla bilgi için bkz: [setlocale](setlocale-wsetlocale.md). Olmadan çalışır **_l** sonekini kullan geçerli yerel; **_strtod_l** aynıdır **_strtod_l** kullandıkları dışında *yerel* yerine geçilen. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**Lc_numerıc** geçerli yerel ayarının kategori ayarı belirler taban karakterin tanınmasını yerel ayarların noktası *strSource*. Daha fazla bilgi için [setlocale](setlocale-wsetlocale.md). İşlevlerin **_l** soneki geçerli yerel ayarı kullanır; **_strtod_l** aynıdır **_strtod_l** kullanmaları hariç, *yerel ayar* geçirilen. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Varsa *endptr* değil **NULL**, tarama durduruldu karakteri gösteren bir işaretçi işaret konumunda depolanan *endptr*. Hiçbir dönüştürme gerçekleştirilebiliyorsa (hiç geçerli basamak bulunamadı veya geçersiz taban belirtildi), değeri *strSource* gösterdiği konumunda depolanan *endptr*.
+Varsa *endptr* değil **NULL**, taramayı durduran karaktere bir işaretçi tarafından işaret edilen konumda depolanır *endptr*. Dönüştürme gerçekleştirilemezse (geçerli hiç basamak bulunamamış veya geçersiz bir taban belirtilmişse), değeri *strSource* tarafından işaret edilen konumda depolanır *endptr*.
 
 **strtod** bekliyor *strSource* bir dizeye aşağıdaki biçimlerden birini işaret edecek şekilde:
 
-[*boşluk*] [*oturum*] {*basamak* [*taban* *basamak*] &#124;  *sayı tabanını* *basamak*} [{**e** &#124; **E**} [*oturum*] *basamak*] [*boşluk*] [*oturum*] {**0 x** &#124; **0 X**} {*hexdigits* [ *taban* *hexdigits*] &#124; *taban* *hexdigits*} [{**p** &#124; **P**} [*oturum*] *hexdigits*] [*boşluk*] [*oturum*] {} **INF** &#124; **SONSUZ**} [*boşluk*] [*oturum*]  **NAN** [*dizisi*]
+[*boşluk*] [*oturum*] {*basamak* [*taban* *basamak*] &#124;  *sayı tabanını* *basamak*} [{**e** &#124; **E**} [*oturum*] *basamak*] [*boşluk*] [*oturum*] {**0 x** &#124; **0 X**} {*hexdigits* [ *taban* *hexdigits*] &#124; *taban* *hexdigits*} [{**p** &#124; **P**} [*oturum*] *hexdigits*] [*boşluk*] [*oturum*] { **INF** &#124; **SONSUZ**} [*boşluk*] [*oturum*]  **NAN** [*dizisi*]
 
-İsteğe bağlı başında *boşluk* , göz ardı edilir; boşluk ve sekme karakterlerden oluşabilir *oturum* da artı (+) veya eksi (-); *basamak* bir veya daha fazla ondalık basamakların; *hexdigits* onaltılık basamak; bir veya daha fazla olan *taban* taban noktasını karakter ya da bir nokta (.) varsayılan "C" yerel ya da yerel ayarlara özgü değeri geçerli yerel farklıysa veya zaman *yerel* belirtilir; bir *dizisi* alfasayısal dizisini veya alt çizgi karakteri. Sayı tabanını noktasını karakter önce hiç basamak görünüyorsa, ondalık ve onaltılık sayı formlarında en az bir taban noktasını karakter sonra görünmesi gerekir. Ondalık biçiminde bir tanıtım harfini oluşur üs tarafından ondalık basamak izlenebilir (**e** veya **E**) ve isteğe bağlı olarak işaretli bir tam sayı. Onaltılık biçimde bir tanıtım harfini oluşur üs tarafından onaltılık basamak izlenebilir (**p** veya **P**) ve temsil eden bir isteğe bağlı olarak imzalanmış onaltılık tamsayı 2'in üssü olarak üs. Ne üs bir parçası, ne de bir taban noktası karakter görüntülenirse, ya da formunda dizedeki son basamaklı izlemek için bir taban noktası karakter varsayılır. Durum göz ardı edilir hem de **INF** ve **NAN** forms. Şu biçimlerden birini sığmayan ilk karakter tarama durdurur.
+İsteğe bağlı önde gelen *boşluk* yoksayılan boşluk ve sekme karakterlerinden oluşabilir *oturum* ya da artı (+) veya eksidir (–); *basamak* bir veya daha fazla ondalık basamaktır; *hexdigits* onaltılık basamaktır; bir veya daha fazla *taban* taban noktası karakter ya da bir nokta (.) varsayılan "C" yerel ayarında, ya da yerel ayara özgü değer, geçerli yerel ayarları farklı ise ya da zaman *yerel ayar* belirtilir; bir *dizisi* alfasayısal oluşan bir dizidir veya alt çizgi karakterleri. Herhangi bir basamak taban noktası karakterden önce görünüyorsa ondalık ve onaltılık sayı formlarında en az bir taban noktası karakterden sonra yer almalıdır. Ondalık biçiminde ondalık basamak bir tanıtıcı harften oluşan bir üs gelebilir (**e** veya **E**) ve isteğe bağlı olarak imzalı bir tamsayı. Onaltılık biçimde onaltılık basamak bir tanıtıcı harften oluşan bir üs gelebilir (**p** veya **P**) ve temsil eden bir isteğe bağlı olarak imzalı bir onaltılık tamsayı 2'in kuvveti olarak üs. Üstel bir parça ya da bir taban noktası karakter görünürse, iki biçimden biriyle noktası taban karakterin dizedeki son basamağı izleyin varsayılır. Durum hem de sayılır **INF** ve **NAN** forms. Şu biçimlerden birini uymayan ilk karakter taramayı durdurur.
 
-Bu işlevlerin UCRT sürümleri Fortran stili dönüştürülmesini desteklemez (**d** veya **D**) üs harf. Bu standart uzantısı CRT önceki sürümleri tarafından desteklenen ve kodunuz için önemli bir değişiklik olabilir. Onaltılık dizeler ve önceki sürümlerinde desteklenmemiş INF ve NAN değerler gidiş UCRT sürümlerini destekler. Bu da önemli değişiklikler kodunuzda neden olabilir. Örneğin, "0x1a" dizesi tarafından yorumlanacağını **strtod** 0,0 önceki sürümlerinde, ancak 26.0 UCRT sürümünde.
+Bu işlevlerin UCRT sürümleri Fortran stili dönüştürülmesini desteklemez (**d** veya **D**) üs harf. Bu standart olmayan uzantı CRT önceki sürümleri tarafından desteklenen ve kodunuz için bir değişiklik olması olabilir. Onaltılık dizeler ve önceki sürümlerinde desteklenmemiş, INF ve NAN değerlerini gidiş dönüşü engelleyebilecek UCRT sürümleri destekler. Bu aynı zamanda önemli değişiklikler kodunuzda neden olabilir. Örneğin, "0x1a" dizesi olarak yorumlanacağını **strtod** 0,0 önceki sürümlerinde, ancak 26.0 UCRT sürümü.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -133,7 +123,7 @@ Bu işlevlerin UCRT sürümleri Fortran stili dönüştürülmesini desteklemez 
 |**strtod**, **_strtod_l**|C: &lt;stdlib.h > C++: &lt;cstdlib > veya &lt;stdlib.h > |
 |**wcstod**, **_wcstod_l**|C: &lt;stdlib.h > veya &lt;wchar.h > C++: &lt;cstdlib >, &lt;stdlib.h > veya &lt;wchar.h > |
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

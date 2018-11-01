@@ -1,12 +1,6 @@
 ---
-title: İletişim kutusu veri değişimi ve doğrulaması | Microsoft Docs
-ms.custom: ''
+title: İletişim Kutusu Veri Değişimi ve Doğrulaması
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - data validation [MFC], dialog boxes
 - dialog box data [MFC]
@@ -21,16 +15,12 @@ helpviewer_keywords:
 - dialog boxes [MFC], retrieving data
 - retrieving dialog box data
 ms.assetid: 7d373554-7330-43ae-abf1-4bb14e437b4a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8a1006300a0d0a1bc0587e7866e97260ae293516
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a68f3bf3af3d7c782e0d3414ffa90871ef5bd3a2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379846"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437186"
 ---
 # <a name="dialog-data-exchange-and-validation"></a>İletişim Kutusu Veri Değişimi ve Doğrulaması
 

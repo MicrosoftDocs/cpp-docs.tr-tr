@@ -1,30 +1,20 @@
 ---
-title: ATL projesine yeni arabirim ekleme | Microsoft Docs
-ms.custom: ''
+title: ATL projesine yeni arabirim ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.appwiz.ATL.interface
-dev_langs:
-- C++
 helpviewer_keywords:
 - interfaces, adding to ATL objects
 - Implement Interface ATL wizard
 - controls [ATL], interfaces
 - ATL projects, adding interfaces
 ms.assetid: 7d34b023-2c6b-4155-aca3-d47a40968063
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fec98fd785f5e99875c5f73b13ce1082c16add2b
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 1724dd3eb73b82e34c5cc2b0c1965d73e099a708
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861765"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440059"
 ---
 # <a name="adding-a-new-interface-in-an-atl-project"></a>ATL projesine yeni arabirim ekleme
 

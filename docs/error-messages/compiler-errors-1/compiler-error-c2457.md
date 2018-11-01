@@ -1,37 +1,27 @@
 ---
-title: Derleyici Hatası C2457 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2457
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2457
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2457
 ms.assetid: 347e169d-23ad-434f-8836-5b09b53980ff
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 61cdb4f4b679bab858717a6fb96838f389822a6b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a08ac9f9cfbc332b90ad16c663349ee227427278
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33224929"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446646"
 ---
 # <a name="compiler-error-c2457"></a>Derleyici Hatası C2457
 
-> '*makrosu*': önceden tanımlanmış makrosu işlev gövdesi dışında yer alamaz
+> '*makrosu*': önceden tanımlanmış makro bir işlev gövdesinin dışında yer alamaz
 
-Önceden tanımlanmış bir makrosu gibi kullanma girişiminde [ &#95; &#95;işlevi&#95;&#95;](../../preprocessor/predefined-macros.md), genel alanda.
+Önceden tanımlanmış bir makro gibi kullanma girişiminde [ &#95; &#95;işlevi&#95;&#95;](../../preprocessor/predefined-macros.md), genel bir alana.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C2457 oluşturur ve ayrıca doğru kullanımını gösterir:
+Aşağıdaki örnek, C2457 oluşturur ve ayrıca doğru kullanımını gösterir:
 
 ```cpp
 // C2457.cpp

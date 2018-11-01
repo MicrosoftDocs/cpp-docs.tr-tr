@@ -1,27 +1,17 @@
 ---
-title: Sağlamlık | Microsoft Docs
-ms.custom: ''
+title: Sağlamlık
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.runtime
-dev_langs:
-- C++
 helpviewer_keywords:
 - robustness [CRT]
 ms.assetid: 7f1a87f8-eff9-4b76-ae9b-d133d3de6adf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a369698e0fcfc97b9713e0e1e5059115cce81dc7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9244ba430efab01cd82b8ad773ad669470d67cff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46104068"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454710"
 ---
 # <a name="robustness"></a>Sağlamlık
 

@@ -1,10 +1,6 @@
 ---
-title: CPaneFrameWnd sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPaneFrameWnd sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPaneFrameWnd
 - AFXPANEFRAMEWND/CPaneFrameWnd
@@ -71,8 +67,6 @@ f1_keywords:
 - AFXPANEFRAMEWND/CPaneFrameWnd::OnCheckRollState
 - AFXPANEFRAMEWND/CPaneFrameWnd::OnDrawBorder
 - AFXPANEFRAMEWND/CPaneFrameWnd::m_bUseSaveBits
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPaneFrameWnd [MFC], AddPane
 - CPaneFrameWnd [MFC], AddRemovePaneFromGlobalList
@@ -138,16 +132,12 @@ helpviewer_keywords:
 - CPaneFrameWnd [MFC], OnDrawBorder
 - CPaneFrameWnd [MFC], m_bUseSaveBits
 ms.assetid: ea3423a3-2763-482e-b763-817036ded10d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fb6e87d9deac7a6d0082480196b7dbeecf5a85b8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e31b390d9464b3cbe6babd744e987ce7222e58bf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50081085"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450173"
 ---
 # <a name="cpaneframewnd-class"></a>CPaneFrameWnd sınıfı
 

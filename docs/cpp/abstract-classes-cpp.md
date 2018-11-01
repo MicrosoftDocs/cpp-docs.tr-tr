@@ -1,28 +1,18 @@
 ---
-title: Soyut sınıflar (C++) | Microsoft Docs
-ms.custom: ''
+title: Soyut Sınıflar (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - classes [C++], abstract
 - base classes [C++], abstract classes [C++]
 - abstract classes [C++]
 - derived classes [C++], abstract classes [C++]
 ms.assetid: f0c5975b-39de-4d68-9640-6ce57f4632e6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 91ed7cb82bbf9036a32ee20ecf33a8138086a98c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a7b41a2cabc2cff2eca24cf50c6c30d5190d39a9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46103961"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461314"
 ---
 # <a name="abstract-classes-c"></a>Soyut Sınıflar (C++)
 

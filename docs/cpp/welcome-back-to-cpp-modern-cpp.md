@@ -1,23 +1,14 @@
 ---
-title: Yeniden Hoş Geldiniz (Modern C++) C++ | Microsoft Docs
-ms.custom: ''
+title: C++'a (Modern C++) Tekrar Hoş Geldiniz
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
 ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8bb45f18c38323f8c5e56a7b9bd6148bb1ca6142
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a7d82a65141e402e779a428ba32d15ddd70016c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070842"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454641"
 ---
 # <a name="welcome-back-to-c-modern-c"></a>C++'a (Modern C++) Tekrar Hoş Geldiniz
 

@@ -1,10 +1,6 @@
 ---
-title: rand | Microsoft Docs
-ms.custom: ''
+title: rand
 ms.date: 1/02/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - rand
 apilocation:
@@ -22,8 +18,6 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - rand
-dev_langs:
-- C++
 helpviewer_keywords:
 - generating pseudorandom numbers
 - random numbers, generating
@@ -31,16 +25,12 @@ helpviewer_keywords:
 - rand function
 - pseudorandom numbers
 - numbers, generating pseudorandom
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 081e380dc639ed6a814913dd42c6fc1b55041b01
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 67e128fc4adea345807a2d59078a00e3c4bd1f07
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43681141"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440735"
 ---
 # <a name="rand"></a>rand
 

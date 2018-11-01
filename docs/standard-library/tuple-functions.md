@@ -1,14 +1,10 @@
 ---
-title: '&lt;Tanımlama grubu&gt; işlevleri | Microsoft Docs'
-ms.custom: ''
+title: '&lt;Tanımlama grubu&gt; işlevleri'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - tuple/std::get
 - tuple/std::make_tuple
 - tuple/std::tie
-dev_langs:
-- C++
 ms.assetid: bc6be38f-5258-4c14-b81b-63caa335fd44
 helpviewer_keywords:
 - std::get [C++]
@@ -17,12 +13,12 @@ helpviewer_keywords:
 - std::get [C++]
 - std::make_tuple [C++]
 - std::tie [C++]
-ms.openlocfilehash: c9280de6a2fde3ce2758b5884437704a2cdd879f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 93c11a89f7cdfa3949be2d97e401fad199a17d97
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712770"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50435545"
 ---
 # <a name="lttuplegt-functions"></a>&lt;Tanımlama grubu&gt; işlevleri
 

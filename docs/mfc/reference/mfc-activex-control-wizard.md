@@ -1,14 +1,8 @@
 ---
-title: MFC ActiveX Denetim Sihirbazı | Microsoft Docs
-ms.custom: ''
+title: MFC ActiveX Denetim Sihirbazı
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.appwiz.mfc.ctl.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - ActiveX controls [MFC], MFC
 - MFC ActiveX controls [MFC], wizards
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - MFC ActiveX Control Wizard
 - OLE controls [MFC]
 ms.assetid: f19d698c-bdc3-4c74-af97-3d6ccb441b75
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 09a4cdccf92df9681a85a03369ad0ba1792a6b25
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: d916517342bd28aaf77cdce20e2479eb80dec024
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204736"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446598"
 ---
 # <a name="mfc-activex-control-wizard"></a>MFC ActiveX Denetim Sihirbazı
 

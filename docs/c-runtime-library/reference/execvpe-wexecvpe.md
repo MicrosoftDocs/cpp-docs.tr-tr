@@ -1,10 +1,6 @@
 ---
-title: _execvpe, _wexecvpe | Microsoft Docs
-ms.custom: ''
+title: _execvpe, _wexecvpe
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _execvpe
 - _wexecvpe
@@ -26,31 +22,25 @@ f1_keywords:
 - execvpe
 - _wexecvpe
 - _execvpe
-dev_langs:
-- C++
 helpviewer_keywords:
 - wexecvpe function
 - execvpe function
 - _wexecvpe function
 - _execvpe function
 ms.assetid: c0c3c986-d9c0-4814-a96c-10f0b3092766
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 97020ba4e1b20bfc95f48eaa1afe6fa111a9b769
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 064f8b94a9a97795015c09c11cd56e0370dcc60c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401236"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431700"
 ---
 # <a name="execvpe-wexecvpe"></a>_execvpe, _wexecvpe
 
 Yükler ve yeni alt işlemleri çalıştırır.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -70,47 +60,47 @@ intptr_t _wexecvpe(
 ### <a name="parameters"></a>Parametreler
 
 *■ CmdName*<br/>
-Yürütülecek dosyasının yolu.
+Yürütülecek dosyanın yolu.
 
 *argv*<br/>
-Parametreleri işaretçiler dizisi.
+Parametreler için işaretçiler dizisi.
 
 *envp*<br/>
-Ortam ayarları işaretçiler dizisi.
+Ortam ayarlarına bir işaretçiler dizisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, bu işlevler için arama işlemi döndürmeyin. Dönüş değeri-1, bu durumda bir hata gösterir **errno** genel değişkeni ayarlanır.
+Başarılı olursa, bu işlevler çağırma işlemine geri gitmez. -1 değeri, bu durumda bir hata belirtir **errno** global değişkeni ayarlanır.
 
 |**errno** değeri|Açıklama|
 |-------------------|-----------------|
-|**E2BIG**|Ortam ayarları ve bağımsız değişkenler için gerekli alanı 32 KB'yi aşıyor.|
-|**EACCES**|Belirtilen dosya kilitleme veya paylaşım ihlali var.|
-|**EMFILE**|Çok fazla dosya açık durumda. (Belirtilen dosya yürütülebilir olup olmadığını belirlemek için açık olması gerekir.)|
+|**E2BIG**|Bağımsız değişkenler ve ortam ayarları için gereken alan 32 KB aşıyor.|
+|**SPAWN**|Belirtilen dosya kilitleme veya paylaşma ihlali var.|
+|**EMFILE**|Çok fazla dosya açık durumda. (Belirtilen dosyanın yürütülebilir olup olmadığını belirlemek için açık olması gerekir.)|
 |**ENOENT**|Dosya veya yol bulunamadı.|
-|**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya yürütülebilir dosya biçimi geçersiz.|
-|**ENOMEM**|Yeni işlemi yürütmek yeterli kullanılabilir bellek yok; kullanılabilir bellek bozulmuş; veya geçersiz bir blok var, arama işlemi düzgün ayrılmamış olduğunu gösterir.|
+|**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya geçersiz bir yürütülebilir dosya biçimine sahip.|
+|**ENOMEM**|Yeni işlemi yürütmek yeterli bellek yok; kullanılabilir bellek bozulmuş; ya da geçersiz bir engel var., çağıran işlemin düzgün ayrılmamış olduğunu gösterir.|
 
-Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri yükler ve yeni bir işlem yürütür ve komut satırı bağımsız değişkenleri ve ortam ayarları işaretçiler bir dizi bir dizi işaretçileri geçirir. Bu işlevleri kullanma **yolu** yürütmek için dosyayı bulmak için ortam değişkeni.
+Bu işlevlerin her biri yükler ve yeni bir işlem yürütür ve komut satırı bağımsız değişkenleri ve bir ortam ayarlarına bir işaretçiler dizisi bir işaretçiler dizisi geçirir. Bu işlevleri **yolu** yürütülecek dosyayı bulmak için ortam değişkeni.
 
-**_Execvpe** işlevleri parametrelerini doğrulayın. Varsa *■ cmdname* null işaretçinin veya *argv* null işaretçi, boş bir dizi için bir işaretçi veya ilk bağımsız değişken olarak boş bir dize içeren bir dizi gösteren bir işaretçi, geçersiz bu işlevleri çağırma bölümünde açıklandığı gibi parametre işleyicisi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve -1 döndürür. Hiçbir işlem başlatılır.
+**_Execvpe** işlevleri kendi parametrelerini doğrular. Varsa *■ cmdname* null bir işaretçiyse veya *argv* null işaretçisiyse, işaretçi boş diziyse ya da ilk bağımsız değişken olarak boş bir dize içeren bir dizi işaretçisi, bu işlevler geçersiz çağırma bölümünde anlatıldığı gibi parametre işleyicisini [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ve -1 döndürür. Hiçbir işlem başlatılmadı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli başlık|İsteğe bağlı üstbilgi|
+|İşlev|Gerekli başlık|İsteğe bağlı başlık|
 |--------------|---------------------|---------------------|
 |**_execvpe**|\<Process.h >|\<errno.h >|
 |**_wexecvpe**|\<Process.h > veya \<wchar.h >|\<errno.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örnekte bkz [_exec, _wexec işlevleri](../../c-runtime-library/exec-wexec-functions.md).
+Örnekte bakın [_exec, _wexec işlevleri](../../c-runtime-library/exec-wexec-functions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

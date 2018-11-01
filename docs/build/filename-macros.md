@@ -1,27 +1,17 @@
 ---
-title: Dosya adı makroları | Microsoft Docs
-ms.custom: ''
+title: Dosya Adı Makroları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - macros, NMAKE
 - filename macros in NMAKE
 - NMAKE program, filename macros
 ms.assetid: 20afd6b3-5b6c-4e33-9d01-309ce98ef9db
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bc231dfb156460a2a0cc383b6d038a98c6e2015b
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 2e7552d77d753d4e93734f2fc9a35b3b68d8d55c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894414"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50457700"
 ---
 # <a name="filename-macros"></a>Dosya Adı Makroları
 

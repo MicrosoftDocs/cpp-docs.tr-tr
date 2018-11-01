@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2243 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2243
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2243
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2243
 ms.assetid: b90065bb-d251-4ba9-8b4c-280ee13fa9c0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ef5d3a6c20ff147ac2a4b765c7779cec9f19627e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ded5a3d459e4b5d1412998aadbaa385864f505a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46102235"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445558"
 ---
 # <a name="compiler-error-c2243"></a>Derleyici Hatası C2243
 

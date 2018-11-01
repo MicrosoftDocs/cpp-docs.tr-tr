@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı komut satırı sözdizimi | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Komut Satırı Sözdizimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - linker [C++], syntax
 - linker command line [C++]
 - LINK tool [C++], command-line syntax
 ms.assetid: e2a31e17-77bd-4e74-9305-75b105b26539
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5f1e891d91b96c5f29fb01dae5b1b8b9d731cdf3
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 844d2fe4c02e274cda02fe71303f0b6dd092b431
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45718353"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464122"
 ---
 # <a name="linker-command-line-syntax"></a>Bağlayıcı Komut Satırı Sözdizimi
 

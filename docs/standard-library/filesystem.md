@@ -1,10 +1,6 @@
 ---
-title: '&lt;dosya sistemi&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;dosya sistemi&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - filesystem/std::experimental::filesystem::directory_entry
 - filesystem/std::experimental::filesystem::recursive_directory_iterator
@@ -12,19 +8,13 @@ f1_keywords:
 - filesystem/std::experimental::filesystem::filesystem_error
 - filesystem/std::experimental::filesystem::directory_iterator
 - <filesystem>
-dev_langs:
-- C++
 ms.assetid: 5005753b-46fa-43e1-8d4e-1b38617d3cfd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 88e44100e20ce40b343a82c7caed66387ca1bcd5
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 54817eeeba0b885cbf3de558c04fe2eb5d6e14fa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43681046"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473391"
 ---
 # <a name="ltfilesystemgt"></a>&lt;dosya sistemi&gt;
 

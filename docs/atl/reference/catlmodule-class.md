@@ -1,10 +1,6 @@
 ---
-title: CAtlModule sınıfı | Microsoft Docs
-ms.custom: ''
+title: CAtlModule sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CAtlModule
 - ATLBASE/ATL::CAtlModule
@@ -21,21 +17,15 @@ f1_keywords:
 - ATLBASE/ATL::CAtlModule::UpdateRegistryFromResourceS
 - ATLBASE/ATL::CAtlModule::m_libid
 - ATLBASE/ATL::CAtlModule::m_pGIT
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAtlModule class
 ms.assetid: 63fe02f1-4c4b-4e7c-ae97-7ad7b4252415
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3211f87e2c692c587ee2df82497fc56662e4974d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4d1c8dbfc7606efda50637ba17790ecafc80a976
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077291"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456829"
 ---
 # <a name="catlmodule-class"></a>CAtlModule sınıfı
 

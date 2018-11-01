@@ -1,28 +1,17 @@
 ---
-title: defaultbind (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: defaultbind (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.defaultbind
-dev_langs:
-- C++
 helpviewer_keywords:
 - defaultbind attribute
 ms.assetid: b20a8437-24e6-4b6d-a2df-09fe5e1006e0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 89fb592a29fec5198ee96b25319e194eeaffa91f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 43d5a1c827824f64ad1376a2461cfec6b9405fe7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063607"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50458402"
 ---
 # <a name="defaultbind"></a>defaultbind
 

@@ -1,10 +1,6 @@
 ---
-title: nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl | Microsoft Docs
-ms.custom: ''
+title: nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - nextafterf
 - _nextafterf
@@ -42,8 +38,6 @@ f1_keywords:
 - math/nexttoward
 - math/nexttowardf
 - math/nexttowardl
-dev_langs:
-- C++
 helpviewer_keywords:
 - _nextafter function
 - nextafter function
@@ -54,20 +48,16 @@ helpviewer_keywords:
 - nexttowardf function
 - nexttowardl function
 ms.assetid: 9785bfb9-de53-4bd0-9637-f05fa0c1f6ab
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9c68d039ff1318ea082d409078a55c8d337a48de
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0e0a60dc9f7c068d8c18c10f3c6b819b9e06d3b7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403722"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444870"
 ---
 # <a name="nextafter-nextafterf-nextafterl-nextafter-nextafterf-nexttoward-nexttowardf-nexttowardl"></a>nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
 
-Sonraki gösterilebilir kayan nokta değeri döndürür.
+Gösterilebilir sıradaki kayan nokta değeri döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -102,24 +92,24 @@ Doğru gitmek için kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş türü sonra sonraki gösterilebilir kayan nokta değerini döndürür *x* yönünde *y*. Varsa *x* ve *y* işlevi döndürür eşit olup olmadığını *y*, dönüş türüyle tetiklenen durum dönüştürülür. Varsa *x* eşit değil *y*, ve sonucu bir denormal veya sıfır **FE_UNDERFLOW** ve **FE_INEXACT** kayan nokta özel durumları ayarlanmış olan ve doğru bir sonuç döndürdü. Her iki *x* veya *y* dönüş değeri giriş NaN biri bir NAN olduğundan. Varsa *x* sınırlıdır ve sonucu sonsuz veya türünde gösterilebilir değil, doğru şekilde imzalanmış sonsuz veya NAN döndürülür, **FE_OVERFLOW** ve **FE_INEXACT** kayan nokta özel durumları olarak ayarlanır ve **errno** ayarlanır **ERANGE**.
+Dönüş türü sonra sonraki gösterilebilir kayan nokta değeri döndürür *x* yönünde *y*. Varsa *x* ve *y* işlevi döndürür eşit olup olmadığını *y*, hiçbir özel durum harekete dönüş türüyle dönüştürülür. Varsa *x* eşit değildir *y*, ve sonucu bir denormal veya sıfır olan **FE_UNDERFLOW** ve **FE_INEXACT** kayan nokta özel durumları ayarlanır, ve doğru bir sonuç döndürdü. Ya da *x* veya *y* dönüş değeri bir giriş NaN'ler ise bir NAN olup. Varsa *x* sınırlıdır ve sonucu sonsuz veya türü içinde gösterilebilir değil, doğru şekilde imzalanmış sonsuz veya NAN döndürülür, **FE_OVERFLOW** ve **FE_INEXACT** kayan nokta özel durumlarını ayarlanır ve **errno** ayarlanır **ERANGE**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Nextafter** ve **nexttoward** işlevi aileleri dışında parametre türü eşdeğer *y*. Varsa *x* ve *y* döndürülen değer eşit olan *y* dönüş türüne dönüştürülemiyor.
+**Nextafter** ve **nexttoward** dışında parametre türü, eşdeğer işlev aileleri *y*. Varsa *x* ve *y* döndürülen değer eşit olan *y* dönüş türüne dönüştürülür.
 
-Aşırı yüklemesi, C++ dahil ederseniz izin verdiğinden \<cmath > aşırı çağırabilirsiniz **nextafter** ve **nexttoward** bu iade **float** ve **uzun** **çift** türleri. Bir C programı **nextafter** ve **nexttoward** her zaman geri **çift**.
+Aşırı yükleme, C++ eklerseniz izin verdiğinden \<cmath > aşırı yüklemesini çağırabilirsiniz **nextafter** ve **nexttoward** döndüren **float** ve **uzun** **çift** türleri. C programında **nextafter** ve **nexttoward** her zaman dönüş **çift**.
 
-**_Nextafter** ve **_nextafterf** Microsoft belirli işlevlerdir. **_Nextafterf** işlevi yalnızca kullanılabilir x64 için derlerken.
+**_Nextafter** ve **_nextafterf** Microsoft'a özgü işlevlerdir. **_Nextafterf** işlevi, yalnızca kullanılabilir x64 için derleme yaparken.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli üstbilgisi (C)|Gerekli üstbilgisi (C++)|
+|Yordam|Gerekli başlık (C)|Gerekli başlık (C++)|
 |-------------|---------------------------|-------------------------------|
 |**nextafter**, **nextafterf**, **nextafterl**, **_nextafterf**, **nexttoward**, **nexttowardf** , **nexttowardl**|\<Math.h >|\<Math.h > veya \<cmath >|
 |**_nextafter**|\<float.h >|\<float.h > veya \<cfloat >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

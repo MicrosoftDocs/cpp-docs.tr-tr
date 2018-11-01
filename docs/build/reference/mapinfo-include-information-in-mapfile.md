@@ -1,32 +1,22 @@
 ---
-title: -MAPINFO (bilgileri eşlem dahil) | Microsoft Docs
-ms.custom: ''
+title: /MAPINFO (Bilgileri Eşlem Dosyasına Dahil Et)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.MapLines
 - VC.Project.VCLinkerTool.MapInfoFixups
 - VC.Project.VCLinkerTool.MapExports
 - /mapinfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - /MAPINFO linker option
 - MAPINFO linker option
 - -MAPINFO linker option
 ms.assetid: 533d2bce-f9b7-4fea-ae1c-0b4864c9d10b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f52e044962007c4a820bf234d45b5cb9ffd584f6
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: bfb8273a8299349ea9aa0b78f1ee14a6cbb6276c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723096"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440319"
 ---
 # <a name="mapinfo-include-information-in-mapfile"></a>/MAPINFO (Bilgileri Eşlem Dosyasına Dahil Et)
 
@@ -50,7 +40,7 @@ Mapınfo seçeneği belirtirseniz oluşturulduğu mapfile içinde belirtilen bil
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MapExports%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MapExports%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

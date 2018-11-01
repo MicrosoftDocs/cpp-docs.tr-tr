@@ -1,14 +1,8 @@
 ---
-title: CL bağlayıcı çağırır | Microsoft Docs
-ms.custom: ''
+title: CL Bağlayıcı Çağırır
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - cl
-dev_langs:
-- C++
 helpviewer_keywords:
 - compiling source code [C++], without linking
 - invoking linker from the compiler
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - cl.exe compiler [C++], compiling without linking
 - cl.exe compiler [C++], controlling linker
 ms.assetid: eae47ef7-09eb-40c9-b318-7c714cd452fc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ed6c968b86192ae79c0c921f8b3fababc596c9a2
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e071209bd09fea17082379bf3f2486866b52c548
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713836"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447209"
 ---
 # <a name="cl-invokes-the-linker"></a>CL Bağlayıcı Çağırır
 

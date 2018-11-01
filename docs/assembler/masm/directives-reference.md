@@ -1,27 +1,17 @@
 ---
-title: Yönergeler başvurusu | Microsoft Docs
-ms.custom: ''
+title: Yönergeler Başvurusu
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - Directives Reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), directives reference
 ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 47c9f2bc2d28eed99b0e3eecb37b5ade3347b2cf
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 943cce887fbce87e00cd6ff3d5452835db78173e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686574"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50436068"
 ---
 # <a name="directives-reference"></a>Yönergeler Başvurusu
 

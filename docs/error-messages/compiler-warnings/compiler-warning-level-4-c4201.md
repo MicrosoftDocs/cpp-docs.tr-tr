@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4201 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4201
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4201
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4201
 ms.assetid: 6156f508-9393-4d77-9e73-1ec3e1c32d0d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 702ce23333e29548e9bfe092c15ae60c5652168e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c7c10273e06ec35528dbd9d51c02bb844d275638
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46096944"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445805"
 ---
 # <a name="compiler-warning-level-4-c4201"></a>Derleyici Uyarısı (düzey 4) C4201
 

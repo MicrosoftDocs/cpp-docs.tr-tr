@@ -1,10 +1,6 @@
 ---
-title: CPathT sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPathT sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CPathT
 - ATLPATH/ATL::CPathT
@@ -50,21 +46,15 @@ f1_keywords:
 - ATLPATH/ATL::CPathT::StripToRoot
 - ATLPATH/ATL::CPathT::UnquoteSpaces
 - ATLPATH/ATL::CPathT::m_strPath
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPathT class
 ms.assetid: eba4137d-1fd2-4b44-a2e1-0944db64df3c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d95a8f6b28b638b65191bc04ad094cc128f7b247
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cf845d04c008e83d0e9851718c995036bc810b55
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080317"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449354"
 ---
 # <a name="cpatht-class"></a>CPathT sınıfı
 

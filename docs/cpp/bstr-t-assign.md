@@ -1,27 +1,17 @@
 ---
-title: _bstr_t::Assign | Microsoft Docs
-ms.custom: ''
+title: _bstr_t::Assign
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _bstr_t::Assign
-dev_langs:
-- C++
 helpviewer_keywords:
 - Assign method [C++]
 ms.assetid: 2e209bbe-77ca-4598-86d5-6c2ea213f43c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 338cd25d68d68a00aa931b94e06afa4968f19985
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 922c29849361d3a116df32671a2c49ac3b4988fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46073284"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460054"
 ---
 # <a name="bstrtassign"></a>_bstr_t::Assign
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2109 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2109
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2109
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2109
 ms.assetid: 2d1ac79d-a985-4904-a38b-b270578d664d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 551c391c67e54c00a26fe6c11fb062adcb9c2f30
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6592f36b29fe643e088669089b1af1b69b7b2125
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46100800"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452058"
 ---
 # <a name="compiler-error-c2109"></a>Derleyici Hatası C2109
 

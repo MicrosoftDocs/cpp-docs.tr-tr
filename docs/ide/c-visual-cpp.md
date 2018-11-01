@@ -1,28 +1,18 @@
 ---
-title: '&lt;c&gt; (Visual C++) | Microsoft Docs'
-ms.custom: ''
+title: '&lt;c&gt; (Visual C++)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - <c>
-dev_langs:
-- C++
 helpviewer_keywords:
 - <c> C++ XML tag
 - c C++ XML tag
 ms.assetid: 3b23fc0f-e10d-4dd0-b197-48a46cbddd9f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 74e2fdd2f970ca3c1f177dd8d7ea565757a03a4b
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 1efb411537e07ae9a5c2e4a70b5fa3ac319d79c3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313006"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431102"
 ---
 # <a name="ltcgt-visual-c"></a>&lt;c&gt; (Visual C++)
 

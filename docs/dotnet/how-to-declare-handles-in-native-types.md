@@ -1,30 +1,20 @@
 ---
-title: 'Nasıl yapılır: yerel türlerde işleyicileri bildirme | Microsoft Docs'
+title: 'Nasıl yapılır: Yerel Türlerde İşleyicileri Bildirme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
 f1_keywords:
 - gcroot
-dev_langs:
-- C++
 helpviewer_keywords:
 - handles, declaring
 - gcroot keyword [C++]
 - types [C++], declaring handles in
 ms.assetid: b8c0eead-17e5-4003-b21f-b673f997d79f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: fbf2934c2d7a1192e55ee9b454f91e7e8cc7037f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4b5cd212589be04f5f9f3a5dd6d4496a8f5add2c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431274"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50464936"
 ---
 # <a name="how-to-declare-handles-in-native-types"></a>Nasıl yapılır: Yerel Türlerde İşleyicileri Bildirme
 

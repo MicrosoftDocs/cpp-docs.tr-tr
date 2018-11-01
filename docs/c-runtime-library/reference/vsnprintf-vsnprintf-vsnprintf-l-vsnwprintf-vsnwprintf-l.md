@@ -1,10 +1,6 @@
 ---
-title: vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l | Microsoft Docs
-ms.custom: ''
+title: vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _vsnprintf
 - _vsnprintf_l
@@ -41,8 +37,6 @@ f1_keywords:
 - stdio/_vsnwprintf_l
 - _vsnprintf_l
 - _vsnwprintf_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - vsntprintf function
 - _vsnwprintf_l function
@@ -58,16 +52,12 @@ helpviewer_keywords:
 - formatted text [C++]
 - vsnwprintf function
 ms.assetid: a97f92df-c2f8-4ea0-9269-76920d2d566a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e5166ef52f88e714d1168fe25a1ec29dd5360205
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7c3416397d8f43963d3be2ce9bc39707ea7865db
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210511"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453891"
 ---
 # <a name="vsnprintf-vsnprintf-vsnprintfl-vsnwprintf-vsnwprintfl"></a>vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
 

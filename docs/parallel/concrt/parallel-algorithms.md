@@ -1,25 +1,15 @@
 ---
-title: Paralel algoritmalar | Microsoft Docs
-ms.custom: ''
+title: Paralel Algoritmalar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - parallel algorithms [Concurrency Runtime]
 ms.assetid: 045dca7b-4d73-4558-a44c-383b88a28473
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f1eb46754f80bca89419e6c3c85db94ec802df2f
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 0ad7f67016dcb7d4638de0f159feb23cd1282b19
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163406"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445597"
 ---
 # <a name="parallel-algorithms"></a>Paralel Algoritmalar
 

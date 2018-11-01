@@ -1,16 +1,10 @@
 ---
-title: __lzcnt16, __lzcnt, __lzcnt64 | Microsoft Docs
-ms.custom: ''
+title: __lzcnt16, __lzcnt, __lzcnt64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __lzcnt64
 - __lzcnt16
 - __lzcnt
-dev_langs:
-- C++
 helpviewer_keywords:
 - __lzcnt intrinsic
 - lzcnt instruction
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - lzcnt64 intrinsic
 - __lzcnt64 intrinsic
 ms.assetid: 412113e7-052e-46e5-8bfa-d5ad72abc10e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4dd24a6fb51e32e7f1b83b1f238089fc973c0cd7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6e7685e13faa82a03640701539454ddc8729c94f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383161"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461405"
 ---
 # <a name="lzcnt16-lzcnt-lzcnt64"></a>__lzcnt16, __lzcnt, __lzcnt64
 

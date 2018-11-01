@@ -1,10 +1,6 @@
 ---
-title: CD2DMesh sınıfı | Microsoft Docs
-ms.custom: ''
+title: CD2DMesh sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CD2DMesh
 - AFXRENDERTARGET/CD2DMesh
@@ -17,8 +13,6 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DMesh::IsValid
 - AFXRENDERTARGET/CD2DMesh::Open
 - AFXRENDERTARGET/CD2DMesh::m_pMesh
-dev_langs:
-- C++
 helpviewer_keywords:
 - CD2DMesh [MFC], CD2DMesh
 - CD2DMesh [MFC], Attach
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - CD2DMesh [MFC], Open
 - CD2DMesh [MFC], m_pMesh
 ms.assetid: 11a2c78a-1367-40e8-a34f-44aa0509a4c9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a7ed748a7f098dcbec68decbff29f8973e0b8476
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1cc1769f66b54f2a9a23ef9ad94298687fe4d925
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405989"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445649"
 ---
 # <a name="cd2dmesh-class"></a>CD2DMesh sınıfı
 

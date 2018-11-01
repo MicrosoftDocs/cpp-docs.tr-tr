@@ -1,10 +1,6 @@
 ---
-title: CRichEditDoc sınıfı | Microsoft Docs
-ms.custom: ''
+title: CRichEditDoc sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CRichEditDoc
 - AFXRICH/CRichEditDoc
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXRICH/CRichEditDoc::GetStreamFormat
 - AFXRICH/CRichEditDoc::GetView
 - AFXRICH/CRichEditDoc::m_bRTF
-dev_langs:
-- C++
 helpviewer_keywords:
 - CRichEditDoc [MFC], CreateClientItem
 - CRichEditDoc [MFC], GetStreamFormat
 - CRichEditDoc [MFC], GetView
 - CRichEditDoc [MFC], m_bRTF
 ms.assetid: c936ec18-d516-49d4-b7fb-c9aa0229eddc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1343b2bffa86f04200e1f8c5451640345c58c73b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8e97b17a3620d75660a5ac2109bc440f8ad27b16
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420354"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453468"
 ---
 # <a name="cricheditdoc-class"></a>CRichEditDoc sınıfı
 

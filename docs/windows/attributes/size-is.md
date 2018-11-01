@@ -1,28 +1,17 @@
 ---
-title: size_is (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: size_is (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.size_is
-dev_langs:
-- C++
 helpviewer_keywords:
 - size_is attribute
 ms.assetid: 70192d09-f6c5-4d52-b3fe-303f8cb10aa5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 6cbcc63e2fb9cadb576ec8272809b523a1138707
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 95b0e16e5f5d085e526f45e8e98898474fc5a17f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50063620"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449445"
 ---
 # <a name="sizeis"></a>size_is
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2766 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2766
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2766
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2766
 ms.assetid: 8032f4ca-6827-4f04-9c61-c44643c85cc4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ee59a8ebc0de3c539d1c9b775dcf06525b1a77fa
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 87ea9f693265080d744746c6a8014b2b8b6db13a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46051535"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446495"
 ---
 # <a name="compiler-error-c2766"></a>Derleyici Hatası C2766
 

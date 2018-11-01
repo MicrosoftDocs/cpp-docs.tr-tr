@@ -1,28 +1,18 @@
 ---
-title: __thiscall | Microsoft Docs
-ms.custom: ''
+title: __thiscall
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __thiscall
 - __thiscall_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __thiscall keyword [C++]
 ms.assetid: a6a22dd2-0101-4885-b33b-22f6057965df
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: af20b6d406b0e2119df04d5348c554b3405e8597
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fc5a32fedf52377889b61103856e2125733cd696
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46103379"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50448847"
 ---
 # <a name="thiscall"></a>__thiscall
 

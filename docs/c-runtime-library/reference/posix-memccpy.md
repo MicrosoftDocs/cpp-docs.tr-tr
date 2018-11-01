@@ -1,10 +1,6 @@
 ---
-title: memccpy | Microsoft Docs
-ms.custom: ''
+title: memccpy
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - memccpy
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - memccpy
-dev_langs:
-- C++
 helpviewer_keywords:
 - memccpy function
 ms.assetid: e9951812-2b69-43e9-bbee-a0001bce4d80
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a7060ef8cfdd54604e6748477d09bcace6dda456
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b3d24aeefd43302571438aa49efb144df0fdd8ca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398012"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454694"
 ---
 # <a name="memccpy"></a>memccpy
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_memccpy](memccpy.md) yerine.
+Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_memccpy](memccpy.md) yerine.

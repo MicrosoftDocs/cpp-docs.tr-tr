@@ -1,30 +1,20 @@
 ---
-title: Ipropertynotifysinkcp sınıfı | Microsoft Docs
-ms.custom: ''
+title: Ipropertynotifysinkcp sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IPropertyNotifySinkCP
 - atlctl/ATL::IPropertyNotifySinkCP
-dev_langs:
-- C++
 helpviewer_keywords:
 - connection points [C++], managing
 - sinks, notifying of changes
 - IPropertyNotifySinkCP class
 ms.assetid: 1b41445e-bc88-4fa6-bb62-d68aacec2bd5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0b5afa1543b5d06a115b70fee3d48d12dcbb79da
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6a80ff17b5d8083704b144686d8bff27be115b18
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076951"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461613"
 ---
 # <a name="ipropertynotifysinkcp-class"></a>Ipropertynotifysinkcp sınıfı
 

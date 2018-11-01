@@ -1,10 +1,6 @@
 ---
-title: CMFCCaptionBar sınıfı | Microsoft Docs
-ms.custom: ''
+title: CMFCCaptionBar sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCCaptionBar
 - AFXCAPTIONBAR/CMFCCaptionBar
@@ -38,8 +34,6 @@ f1_keywords:
 - AFXCAPTIONBAR/CMFCCaptionBar::m_clrBarBackground
 - AFXCAPTIONBAR/CMFCCaptionBar::m_clrBarBorder
 - AFXCAPTIONBAR/CMFCCaptionBar::m_clrBarText
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCCaptionBar [MFC], Create
 - CMFCCaptionBar [MFC], DoesAllowDynInsertBefore
@@ -72,16 +66,12 @@ helpviewer_keywords:
 - CMFCCaptionBar [MFC], m_clrBarBorder
 - CMFCCaptionBar [MFC], m_clrBarText
 ms.assetid: acb54d5f-14ff-4c96-aeb3-7717cf566d9a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 509c2eb386e235e8ba7c6d2bc016ff92f6499263
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 857427c12dd0f763bf88c99a65d5f9cf3eca1270
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077549"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429360"
 ---
 # <a name="cmfccaptionbar-class"></a>CMFCCaptionBar sınıfı
 

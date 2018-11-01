@@ -1,27 +1,17 @@
 ---
-title: DLL türleri | Microsoft Docs
-ms.custom: ''
+title: DLL Türleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC DLLs [C++], types
 - DLLs [C++], types
 - DLLs [C++], MFC
 ms.assetid: f6a30db9-6138-4b2c-90cc-a17855e499a6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1ca646c39bbe99ba4ed4059f350d9478b669d408
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: daf042f742a9c4b7757813fc73eeb4b6d1a87413
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710183"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441125"
 ---
 # <a name="kinds-of-dlls"></a>DLL Türleri
 

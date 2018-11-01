@@ -1,27 +1,17 @@
 ---
-title: Çıkarım kuralları | Microsoft Docs
-ms.custom: ''
+title: Çıkarsama Kuralları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - inference rules in NMAKE
 - rules, inference
 - NMAKE program, inference rules
 ms.assetid: caff320f-fb07-4eea-80c3-a6a2133a8492
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ed45e5ad61ea1cc50172cd86716b357baa64fa39
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: cb67fc8fe8e65814c9b169f7936c7d225d26e1e3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724392"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471051"
 ---
 # <a name="inference-rules"></a>Çıkarsama Kuralları
 

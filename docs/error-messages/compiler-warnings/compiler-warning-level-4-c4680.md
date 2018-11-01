@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4680 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4680
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4680
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4680
 ms.assetid: 6e043f4c-c601-4b77-8130-920cff1d912e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 06e4e9aa4c3c3cdef2c0d241a5636248290ac2e6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9130fa2665452b85c5ec83eef0b3d1d618c995a3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053797"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466715"
 ---
 # <a name="compiler-warning-level-4-c4680"></a>Derleyici Uyarısı (düzey 4) C4680
 

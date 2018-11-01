@@ -1,10 +1,6 @@
 ---
-title: Itarget sınıfı | Microsoft Docs
-ms.custom: ''
+title: ITarget Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - ITarget
 - AGENTS/concurrency::ITarget
@@ -14,21 +10,15 @@ f1_keywords:
 - AGENTS/concurrency::ITarget::link_source
 - AGENTS/concurrency::ITarget::unlink_source
 - AGENTS/concurrency::ITarget::unlink_sources
-dev_langs:
-- C++
 helpviewer_keywords:
 - ITarget class
 ms.assetid: 5678db25-112a-4f72-be13-42e16b67c48b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8fe26b202dbe9aabc1ccf98a59ead6c51c498fc1
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: fed6f6c9b93869602eb43dabfef4743fbce3a3d1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163718"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430010"
 ---
 # <a name="itarget-class"></a>ITarget Sınıfı
 

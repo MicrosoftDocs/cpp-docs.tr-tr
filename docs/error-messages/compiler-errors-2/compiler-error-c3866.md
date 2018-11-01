@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3866 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3866
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3866
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3866
 ms.assetid: 685870af-2440-4cdf-a6cb-284a5b96ef9d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eb56440dd67bc59e7719acdf70cee2784c889db2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 98014fec77ce47fa4c484645f401e615f1470e2f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46048909"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446299"
 ---
 # <a name="compiler-error-c3866"></a>Derleyici Hatası C3866
 

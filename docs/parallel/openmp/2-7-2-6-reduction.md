@@ -1,23 +1,13 @@
 ---
-title: 2.7.2.6 azaltma | Microsoft Docs
-ms.custom: ''
+title: 2.7.2.6 reduction
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: e7630a15-2978-4dbe-a29b-3a46371a0151
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 05ed97968921692f69f2ff0040ae14dc41ef52b5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 54b326feb4e4ccf1f1da5c8152ffc8d1e4bd13b2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375608"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456023"
 ---
 # <a name="2726-reduction"></a>2.7.2.6 reduction
 

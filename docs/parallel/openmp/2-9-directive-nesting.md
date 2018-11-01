@@ -1,23 +1,13 @@
 ---
-title: 2.9 yönerge iç içe | Microsoft Docs
-ms.custom: ''
+title: 2.9 Yönerge İç İçe Koyma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 6565a43c-fd2d-4366-8322-8d75e1b06600
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b9558180a2f063171be563219f89ec3858e37a5d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 804cafd65fde19e501b89c47925f471143d74938
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396995"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438734"
 ---
 # <a name="29-directive-nesting"></a>2.9 Yönerge İç İçe Koyma
 

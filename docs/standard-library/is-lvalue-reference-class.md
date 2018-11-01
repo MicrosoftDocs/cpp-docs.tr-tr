@@ -1,28 +1,18 @@
 ---
-title: is_lvalue_reference sınıfı | Microsoft Docs
-ms.custom: ''
+title: is_lvalue_reference Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - type_traits/std::is_lvalue_reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - is_lvalue_reference class
 - is_lvalue_reference
 ms.assetid: 7f11896b-935c-4de1-9c87-9d0127f904e2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ecd065ff80b5c45bca863534e28bc467b3a4105c
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: e032522e790b7027886ba1a6199ed7fdf86c0936
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105386"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50460183"
 ---
 # <a name="islvaluereference-class"></a>is_lvalue_reference Sınıfı
 

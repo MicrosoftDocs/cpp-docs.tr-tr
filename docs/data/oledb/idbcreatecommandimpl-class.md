@@ -1,10 +1,6 @@
 ---
-title: Idbcreatecommandımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IDBCreateCommandImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL::IDBCreateCommandImpl
 - IDBCreateCommandImpl
@@ -12,23 +8,16 @@ f1_keywords:
 - IDBCreateCommandImpl.CreateCommand
 - CreateCommand
 - IDBCreateCommandImpl::CreateCommand
-dev_langs:
-- C++
 helpviewer_keywords:
 - IDBCreateCommandImpl class
 - CreateCommand method
 ms.assetid: eac4755e-1668-42e1-958e-a35620c385ae
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 727d50025ce7fc4808444ac7ad73d828c6f0c545
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2ac243f5e2c91636183c31640b50fa7bef95254d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053521"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459026"
 ---
 # <a name="idbcreatecommandimpl-class"></a>IDBCreateCommandImpl Sınıfı
 

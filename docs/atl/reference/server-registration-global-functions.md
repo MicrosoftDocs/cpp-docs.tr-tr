@@ -1,29 +1,19 @@
 ---
-title: Sunucu kaydı genel işlevleri | Microsoft Docs
-ms.custom: ''
+title: Sunucu kaydı genel işlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - atlbase/ATL::AtlComModuleRegisterServer
 - atlbase/ATL::AtlComModuleUnregisterServer
 - atlbase/ATL::AtlComModuleRegisterClassObjects
 - atlbase/ATL::AtlComModuleRevokeClassObjects
 - atlbase/ATL::AtlComModuleGetClassObject
-dev_langs:
-- C++
 ms.assetid: c2f0a35d-857c-4538-a44d-c4ea0db63b06
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c8a2935d5b1c32298215b0ebfcf7382dafd259b3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: f97a4ff0dc28077d42fe0f8ca4992946db4082f1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50052947"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441801"
 ---
 # <a name="server-registration-global-functions"></a>Sunucu kaydı genel işlevleri
 

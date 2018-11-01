@@ -1,28 +1,18 @@
 ---
-title: call_in_appdomain işlevi | Microsoft Docs
-ms.custom: ''
+title: call_in_appdomain İşlevi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - call_in_appdomain
-dev_langs:
-- C++
 helpviewer_keywords:
 - call_in_appdomain function
 ms.assetid: 9a1a5026-b76b-4cae-a3d4-29badeb9db9c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: e56b4dfe239d25cb039e35e09ddb895968723710
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a7ee0ef9c98ee940ab810abd82f6220da95d7346
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436259"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452142"
 ---
 # <a name="callinappdomain-function"></a>call_in_appdomain İşlevi
 

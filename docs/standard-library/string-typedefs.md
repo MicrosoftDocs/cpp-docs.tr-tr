@@ -1,20 +1,18 @@
 ---
-title: '&lt;dize&gt; typedefs | Microsoft Docs'
-ms.custom: ''
+title: '&lt;dize&gt; tür tanımları'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - string/std::string
 - string/std::u16string
 - string/std::u32string
 - string/std::wstring
 ms.assetid: fdca01e9-f2f1-4b59-abda-0093d760b3cc
-ms.openlocfilehash: 5747d511777ae6f1f32d8e93bb6ee90bd0193bf9
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 534c51e8a627ca893ea42e023f12d8bc62d6fb5c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959985"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456283"
 ---
 # <a name="ltstringgt-typedefs"></a>&lt;dize&gt; tür tanımları
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2529 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2529
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2529
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2529
 ms.assetid: 73a99e55-b91e-488d-9b72-cc80faaeb436
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9a6919c65dbe900cd4d6d4a60ef5370c6a683523
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b634f2369805114209860f5e304a7cd2cca2ec91
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46104289"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438785"
 ---
 # <a name="compiler-error-c2529"></a>Derleyici Hatası C2529
 

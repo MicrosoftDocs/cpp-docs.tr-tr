@@ -1,27 +1,17 @@
 ---
-title: Proje derleme hatası PRJ0028 | Microsoft Docs
-ms.custom: ''
+title: Proje Derleme Hatası PRJ0028
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - PRJ0028
-dev_langs:
-- C++
 helpviewer_keywords:
 - PRJ0028
 ms.assetid: 0a6e0da7-cb3d-40b6-81a6-6196a9c2526b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f90e7f6629ae50f734ac127d05c6c70d002133a3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9b74c64cee2b5734beab2bf30475b129160e67ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062624"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472845"
 ---
 # <a name="project-build-error-prj0028"></a>Proje Derleme Hatası PRJ0028
 

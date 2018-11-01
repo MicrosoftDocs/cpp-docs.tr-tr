@@ -1,28 +1,18 @@
 ---
-title: C veya C++ verilerine __asm bloklarındaki erişme | Microsoft Docs
-ms.custom: ''
+title: __asm Bloklarında C veya C++ Verilerine Erişme
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - data members [C++], in __asm blocks
 - data access [C++], in __asm blocks
 - __asm keyword [C++], data members
 - structure types in __asm blocks
 ms.assetid: e99f5a28-0381-4090-8ece-6af8f2436a49
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f9e4b684c878e630de81ac712fab714dc09db5ff
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1f56cc5c049c1501ea09c76f31be3ab9dea5ed10
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43685043"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50433065"
 ---
 # <a name="accessing-c-or-c-data-in-asm-blocks"></a>__asm Bloklarında C veya C++ Verilerine Erişme
 

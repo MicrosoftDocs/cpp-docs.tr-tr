@@ -1,10 +1,6 @@
 ---
-title: COleControlSite sınıfı | Microsoft Docs
-ms.custom: ''
+title: COleControlSite sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleControlSite
 - AFXOCC/COleControlSite
@@ -58,8 +54,6 @@ f1_keywords:
 - AFXOCC/COleControlSite::m_pWindowlessObject
 - AFXOCC/COleControlSite::m_pWndCtrl
 - AFXOCC/COleControlSite::m_rect
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleControlSite [MFC], COleControlSite
 - COleControlSite [MFC], BindDefaultProperty
@@ -112,16 +106,12 @@ helpviewer_keywords:
 - COleControlSite [MFC], m_pWndCtrl
 - COleControlSite [MFC], m_rect
 ms.assetid: 43970644-5eab-434a-8ba6-56d144ff1e3f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5963bdd004bfbd242e00e8adac274f33949b08ec
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c9aa5b57b2610dbe0528d99d1c8ad996e1fc4a60
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50082422"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50437810"
 ---
 # <a name="colecontrolsite-class"></a>COleControlSite sınıfı
 
