@@ -1,17 +1,11 @@
 ---
-title: _com_ptr_t ayıklayıcıları | Microsoft Docs
-ms.custom: ''
+title: _com_ptr_t Ayıklayıcıları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _com_ptr_t::operatorInterface&
 - _com_ptr_t::operatorbool
 - _com_ptr_t::operator->
 - _com_ptr_t::operator*
-dev_langs:
-- C++
 helpviewer_keywords:
 - operator Interface& [C++]
 - '* operator [C++], with specific objects'
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - extractors, _com_ptr_t class
 - extractors [C++]
 ms.assetid: 194b9e0e-123c-49ff-a187-0a7fcd68145a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3465b75d39d62c2118c53533f46627a68a1f286d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 494507592222a7cd6334f2272c3a306e61e5d47f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101676"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545983"
 ---
 # <a name="comptrt-extractors"></a>_com_ptr_t Ayıklayıcıları
 
@@ -46,11 +36,11 @@ Kapsüllenmiş COM arabirimi işaretçisini ayıklayın.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-operator Interface*( ) const throw( ); 
-operator Interface&( ) const; 
-Interface& operator*( ) const; 
-Interface* operator->( ) const; 
-Interface** operator&( ) throw( ); 
+operator Interface*( ) const throw( ); 
+operator Interface&( ) const; 
+Interface& operator*( ) const; 
+Interface* operator->( ) const; 
+Interface** operator&( ) throw( ); 
 operator bool( ) const throw( );
 ```
 

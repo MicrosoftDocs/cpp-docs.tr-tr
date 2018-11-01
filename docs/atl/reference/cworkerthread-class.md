@@ -1,10 +1,6 @@
 ---
-title: CWorkerThread sınıfı | Microsoft Docs
-ms.custom: ''
+title: CWorkerThread sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CWorkerThread
 - ATLUTIL/ATL::CWorkerThread
@@ -16,21 +12,15 @@ f1_keywords:
 - ATLUTIL/ATL::CWorkerThread::Initialize
 - ATLUTIL/ATL::CWorkerThread::RemoveHandle
 - ATLUTIL/ATL::CWorkerThread::Shutdown
-dev_langs:
-- C++
 helpviewer_keywords:
 - CWorkerThread class
 ms.assetid: be79a832-1345-4a36-a13e-a406cc65286f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 79855860b4d2d6bfee328f8fa07f2a3ba6cfd69c
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 9469770dc0538b968cfaafa2de45f28bd864193c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861466"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532008"
 ---
 # <a name="cworkerthread-class"></a>CWorkerThread sınıfı
 

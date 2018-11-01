@@ -1,10 +1,6 @@
 ---
-title: uint_3 sınıfı | Microsoft Docs
-ms.custom: ''
+title: uint_3 Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::uint_3::get_xz
 - amp_short_vectors/Concurrency::graphics::uint_3::set_yzx
@@ -75,19 +71,13 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::uint_3::yxz
 - amp_short_vectors/Concurrency::graphics::uint_3::set_xzy
 - amp_short_vectors/Concurrency::graphics::uint_3::operator-=
-dev_langs:
-- C++
 ms.assetid: 5e22c277-9d4f-4a3a-b38c-a83d5fcab33c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 82e7c5e73c8003b8696a97b1d664c0670ba05c51
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5faf2789c89e492d74851cb94d270b6fac2972c7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386204"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553380"
 ---
 # <a name="uint3-class"></a>uint_3 Sınıfı
 

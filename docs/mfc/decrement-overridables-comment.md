@@ -1,28 +1,18 @@
 ---
-title: --Geçersiz kılınabilen öğelerle ilgili açıklama | Microsoft Docs
-ms.custom: ''
+title: --Geçersiz kılınabilen öğelerle ilgili açıklama
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Overridables comment in MFC source files
 - MFC source files, Overridables comment
 - overriding, Overridables comment in MFC source files
 - comments, MFC
 ms.assetid: 8968dea5-0d94-451f-bcb2-991580e65ba2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d50fb62767f2130e89cb75df5d66f8c18ce2a097
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9efba74676ba118659601522fc915bf25f607116
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428063"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554178"
 ---
 # <a name="-overridables-comment"></a>// Geçersiz Kılınabilen Öğelerle İlgili Açıklama
 

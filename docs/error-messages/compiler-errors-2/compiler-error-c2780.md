@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2780 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2780
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2780
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2780
 ms.assetid: 423793d8-a3b2-4f35-85f8-ae1d043e2b69
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a7e0bac3957ece3d2b0363f57a99443e9a3cf992
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9a427bbd79570a2646447d5326e034035306fac6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024079"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547465"
 ---
 # <a name="compiler-error-c2780"></a>Derleyici Hatası C2780
 

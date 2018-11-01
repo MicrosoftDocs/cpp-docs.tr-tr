@@ -1,33 +1,23 @@
 ---
-title: CReversalTransition sınıfı | Microsoft Docs
-ms.custom: ''
+title: CReversalTransition sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CReversalTransition
 - AFXANIMATIONCONTROLLER/CReversalTransition
 - AFXANIMATIONCONTROLLER/CReversalTransition::CReversalTransition
 - AFXANIMATIONCONTROLLER/CReversalTransition::Create
 - AFXANIMATIONCONTROLLER/CReversalTransition::m_duration
-dev_langs:
-- C++
 helpviewer_keywords:
 - CReversalTransition [MFC], CReversalTransition
 - CReversalTransition [MFC], Create
 - CReversalTransition [MFC], m_duration
 ms.assetid: e89516be-2d07-4885-95a8-fc278f46e3ad
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 393c0ed7c9d1c5715528468e0c611ae399fbadf6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c94c4085d822e397a8ffc5fed4648a40eec4d1da
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431508"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554550"
 ---
 # <a name="creversaltransition-class"></a>CReversalTransition sınıfı
 
