@@ -1,12 +1,6 @@
 ---
-title: Sözde hedefler | Microsoft Docs
-ms.custom: ''
+title: Sözde Hedefler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - makefiles, pseudotargets
 - pseudotargets and NMAKE
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - timestamps, makefile pseudotargets
 - NMAKE program, targets
 ms.assetid: c8c479dc-0129-4186-8366-bc6251f2b494
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 56c0c0c93163759b604352a6e623f15726b8e7ec
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: bf0f1e2feb91611222ade366a7644e89cbe22600
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715838"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541082"
 ---
 # <a name="pseudotargets"></a>Sözde Hedefler
 

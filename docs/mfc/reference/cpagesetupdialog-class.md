@@ -1,10 +1,6 @@
 ---
-title: CPageSetupDialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: CPageSetupDialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CPageSetupDialog
 - AFXDLGS/CPageSetupDialog
@@ -20,8 +16,6 @@ f1_keywords:
 - AFXDLGS/CPageSetupDialog::OnDrawPage
 - AFXDLGS/CPageSetupDialog::PreDrawPage
 - AFXDLGS/CPageSetupDialog::m_psd
-dev_langs:
-- C++
 helpviewer_keywords:
 - CPageSetupDialog [MFC], CPageSetupDialog
 - CPageSetupDialog [MFC], CreatePrinterDC
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - CPageSetupDialog [MFC], PreDrawPage
 - CPageSetupDialog [MFC], m_psd
 ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b82d7066f9fa0adfaae0f989941f191c99223aed
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 136f172dcd406e323afddae87d6fb234b5d4b273
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080240"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544891"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog sınıfı
 

@@ -1,28 +1,18 @@
 ---
-title: -favor (Mimari özellikleri için iyileştirme) | Microsoft Docs
-ms.custom: ''
+title: /favor (Mimari Özellikleri için İyileştirme)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /favor
-dev_langs:
-- C++
 helpviewer_keywords:
 - -favor compiler option [C++]
 - /favor compiler option [C++]
 ms.assetid: ad264df2-e30f-4d68-8bd0-10d6bee71a2a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 03d1bdce12e461446f1804844040457dae6e9d43
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 35a8f36437d14b258273fb637eb6fd8b3c8e3c4b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724781"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552184"
 ---
 # <a name="favor-optimize-for-architecture-specifics"></a>/favor (Mimari Özellikleri için İyileştirme)
 
@@ -65,7 +55,7 @@ X64 programı hakkında bilgi için Mimari bkz [x64 yazılım kuralları](../../
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -1,29 +1,19 @@
 ---
-title: Iaxwinambientdispatchex arabirimi | Microsoft Docs
-ms.custom: ''
+title: Iaxwinambientdispatchex arabirimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IAxWinAmbientDispatchEx
 - ATLIFACE/ATL::IAxWinAmbientDispatchEx
 - ATLIFACE/ATL::SetAmbientDispatch
-dev_langs:
-- C++
 helpviewer_keywords:
 - IAxWinAmbientDispatchEx interface
 ms.assetid: 2c25e079-6128-4278-bc72-b2c6195ba7ef
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e579c537421eba0f3b9dbcf347e08b6691cddb21
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5b4afabe2c12dff048bc6a6fb904a82b3cea4d01
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022220"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539444"
 ---
 # <a name="iaxwinambientdispatchex-interface"></a>Iaxwinambientdispatchex arabirimi
 

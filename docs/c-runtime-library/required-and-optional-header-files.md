@@ -1,28 +1,18 @@
 ---
-title: Gerekli ve isteğe bağlı başlık dosyaları | Microsoft Docs
-ms.custom: ''
+title: Gerekli ve İsteğe Bağlı Başlık Dosyaları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.headers
-dev_langs:
-- C++
 helpviewer_keywords:
 - include files, required in run time
 - header files, required in run time
 ms.assetid: f64d0bf5-e2c3-4b42-97d0-443b3d901d9f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: afd523bad5d70cdfc80a6e8a532b2409be535c6b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: db3b05edf1496d92eaed5c7f07b9961cdde351c2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091874"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539418"
 ---
 # <a name="required-and-optional-header-files"></a>Gerekli ve İsteğe Bağlı Başlık Dosyaları
 

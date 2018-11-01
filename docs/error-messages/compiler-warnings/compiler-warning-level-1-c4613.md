@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4613 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4613
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4613
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4613
 ms.assetid: 399f521b-651c-4997-bc91-f40198e9a4d4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6a69c1182a5ad5a25d80b5818f799bf9e684dec8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3eaea39f49b985334247da41fa8f3499d3697815
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46027121"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554465"
 ---
 # <a name="compiler-warning-level-1-c4613"></a>Derleyici Uyarısı (düzey 1) C4613
 

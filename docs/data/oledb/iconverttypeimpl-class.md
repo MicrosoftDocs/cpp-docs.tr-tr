@@ -1,10 +1,6 @@
 ---
-title: Iconverttypeımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: IConvertTypeImpl Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
 f1_keywords:
 - ATL.IConvertTypeImpl<T>
 - IConvertTypeImpl
@@ -14,23 +10,16 @@ f1_keywords:
 - IConvertTypeImpl.CanConvert
 - CanConvert
 - IConvertTypeImpl::CanConvert
-dev_langs:
-- C++
 helpviewer_keywords:
 - IConvertTypeImpl class
 - CanConvert method
 ms.assetid: 7f81e79e-7d3f-4cbe-b93c-d632a94b15f6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 351f22f49ec005b07fad6f4b215cdc75637213e0
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: dffd15478f0ae10d42b49be3b202fbd4845abb56
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078485"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544657"
 ---
 # <a name="iconverttypeimpl-class"></a>IConvertTypeImpl Sınıfı
 

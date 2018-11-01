@@ -1,28 +1,18 @@
 ---
-title: Gecikme yükü DLL'lerini belirtme | Microsoft Docs
-ms.custom: ''
+title: Gecikme Yükü DLL'lerini Belirtme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - DELAYLOAD linker option
 - delayed loading of DLLs
 - delayed loading of DLLs, specifying
 - /DELAYLOAD linker option
 ms.assetid: 94cbecfe-7a42-40d1-a618-9f2786bac0d8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e9becc0a686d3add5db140b239f1997f81a45be
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 986dab0621127c90097808025825930bf9974a7a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722585"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50549870"
 ---
 # <a name="specifying-dlls-to-delay-load"></a>Gecikme Yükü DLL'lerini Belirtme
 

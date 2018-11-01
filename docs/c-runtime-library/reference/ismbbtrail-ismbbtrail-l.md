@@ -1,10 +1,6 @@
 ---
-title: _ismbbtrail, _ismbbtrail_l | Microsoft Docs
-ms.custom: ''
+title: _ismbbtrail, _ismbbtrail_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbbtrail
 - _ismbbtrail_l
@@ -26,28 +22,22 @@ f1_keywords:
 - ismbbtrail
 - _ismbbtrail_l
 - ismbbtrail_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - ismbbtrail_l function
 - _ismbbtrail function
 - _ismbbtrail_l function
 - ismbbtrail function
 ms.assetid: dfdd0292-960b-4c1d-bf11-146e0fc80247
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7e41ad2be1447946570f10028249582225386877
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5c09884f013e878fca516388f1ad933a2a08b35a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399757"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545944"
 ---
 # <a name="ismbbtrail-ismbbtraill"></a>_ismbbtrail, _ismbbtrail_l
 
-Bir bayt birden çok baytlı karakter sonunda baytını olup olmadığını belirler.
+Bir bayt çok baytlı karakterin sondaki bayt olup olmadığını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,29 +54,29 @@ int _ismbbtrail_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Sınanacak tamsayı.
+Test edilecek tamsayı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_ismbbtrail** sıfır olmayan bir değer döndürür tamsayı *c* birden çok baytlı karakter ikinci bayttır. Örneğin, kod sayfası 932 yalnızca, geçerli 0x40 için 0x7E ve 0x80 için 0xFC aralıktır.
+**_ismbbtrail** sıfır olmayan bir değer döndürür tamsayı *c* olan çok baytlı karakterin ikinci baytı. Örneğin, kod sayfası 932'de yalnızca de geçerli aralıklar 0x40 için 0x7E ve 0x80 için 0xFC.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_ismbbtrail** geçerli yerel ayar için yerel ayara bağımlı davranışı kullanır. **_ismbbtrail_l** yerine geçirilen yerel kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**_ismbbtrail** yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_ismbbtrail_l** bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_ismbbtrail**|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|
 |**_ismbbtrail_l**|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|
 
-\* İçin test durumları için bildirim sabitleri.
+\* Test koşullarına ilişkin bildirim sabitleri için.
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

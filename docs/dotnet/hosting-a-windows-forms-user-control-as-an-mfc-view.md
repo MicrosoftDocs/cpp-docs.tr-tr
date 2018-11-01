@@ -1,28 +1,17 @@
 ---
-title: Forms kullanıcı denetimi MFC görünümü olarak bir Windows barındırma | Microsoft Docs
-ms.custom: ''
+title: MFC Görünümü Olarak Windows Forms Kullanıcı Denetimi Barındırma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC [C++], Windows Forms support
 - Windows Forms controls [C++], hosting as an MFC view
 - hosting Windows Forms control [C++]
 ms.assetid: 43c02ab4-1366-434c-a980-0b19326d6ea0
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: b80b3a9d206ef48df1219d60afdc344874d3bab4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c041ae941858184245879ced972c19e6e998b677
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374522"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544569"
 ---
 # <a name="hosting-a-windows-forms-user-control-as-an-mfc-view"></a>MFC Görünümü Olarak Windows Forms Kullanıcı Denetimi Barındırma
 

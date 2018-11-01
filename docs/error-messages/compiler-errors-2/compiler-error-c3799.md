@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3799 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3799
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3799
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3799
 ms.assetid: 336a2811-9370-4e6e-b03b-325bda470805
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1022a2a1f5c5bb6279fc4af0acedbf28d7723aa6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 19ff414bde9bb24fca62fd10cfef6d18109199e8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46105342"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553549"
 ---
 # <a name="compiler-error-c3799"></a>Derleyici Hatası C3799
 

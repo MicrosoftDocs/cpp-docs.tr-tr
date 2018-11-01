@@ -1,10 +1,6 @@
 ---
-title: fopen, _wfopen | Microsoft Docs
-ms.custom: ''
+title: fopen, _wfopen
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wfopen
 - fopen
@@ -27,8 +23,6 @@ f1_keywords:
 - _tfopen
 - corecrt_wstdio/_wfopen
 - stdio/fopen
-dev_langs:
-- C++
 helpviewer_keywords:
 - opening files, for file I/O
 - wfopen function
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - files [C++], opening
 - fopen function
 ms.assetid: e868993f-738c-4920-b5e4-d8f2f41f933d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1633f846d1e3b6300463ef1cd3b9a6dd8c1446a7
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: a8b204c2bf48802b8efcfe5ca487d62876942c29
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465749"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540342"
 ---
 # <a name="fopen-wfopen"></a>fopen, _wfopen
 

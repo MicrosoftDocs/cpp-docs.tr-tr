@@ -1,10 +1,6 @@
 ---
-title: _Statıc_assert makrosu | Microsoft Docs
-ms.custom: ''
+title: _STATIC_ASSERT Makrosu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -19,21 +15,15 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _STATIC_ASSERT
-dev_langs:
-- C++
 helpviewer_keywords:
 - _STATIC_ASSERT macro
 ms.assetid: 89b0350c-2c2f-4be6-9786-8b1f0780a5da
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8eda76666679b133b2d5486d21cd4c8e24d1fdf3
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 5d3aa1d9665b48a0690d8eb62353fc98c5a550f7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105089"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539548"
 ---
 # <a name="staticassert-macro"></a>_STATIC_ASSERT Makrosu
 

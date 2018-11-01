@@ -1,26 +1,16 @@
 ---
-title: Bir kısayol tuşu denetimini kullanma | Microsoft Docs
-ms.custom: ''
+title: Bir Sık Kullanılan Tuş Denetimi Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHotKeyCtrl class [MFC], using
 - hot key controls
 ms.assetid: cdd6524b-cc43-447f-b151-164273559685
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: be0d27016204724672c23f04fdee38f01b69e6a5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 335489011076b1e30a9c36720a3bf2e94c7918b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372296"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542200"
 ---
 # <a name="using-a-hot-key-control"></a>Bir Sık Kullanılan Tuş Denetimi Kullanma
 

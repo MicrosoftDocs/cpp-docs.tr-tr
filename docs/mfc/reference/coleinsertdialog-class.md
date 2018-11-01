@@ -1,10 +1,6 @@
 ---
-title: Coleınsertdialog sınıfı | Microsoft Docs
-ms.custom: ''
+title: Coleınsertdialog sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleInsertDialog
 - AFXODLGS/COleInsertDialog
@@ -17,8 +13,6 @@ f1_keywords:
 - AFXODLGS/COleInsertDialog::GetPathName
 - AFXODLGS/COleInsertDialog::GetSelectionType
 - AFXODLGS/COleInsertDialog::m_io
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleInsertDialog [MFC], COleInsertDialog
 - COleInsertDialog [MFC], CreateItem
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - COleInsertDialog [MFC], GetSelectionType
 - COleInsertDialog [MFC], m_io
 ms.assetid: a9ec610b-abde-431e-bd01-c40159a66dbb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b8687826734439532ecc429f6ecd61adf4aeb4ca
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c99344c71d3f9789905516d661749b3668b57d50
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077263"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546321"
 ---
 # <a name="coleinsertdialog-class"></a>Coleınsertdialog sınıfı
 

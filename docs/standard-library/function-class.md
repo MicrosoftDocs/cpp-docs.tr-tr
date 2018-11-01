@@ -1,10 +1,6 @@
 ---
-title: Sınıf işlev | Microsoft Docs
-ms.custom: ''
+title: function Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - functional/std::function
 - functional/std::function::result_type
@@ -14,8 +10,6 @@ f1_keywords:
 - functional/std::function::target_type
 - functional/std::function::operator unspecified
 - functional/std::function::operator()
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::function [C++]
 - std::function [C++], result_type
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - std::function [C++], target
 - std::function [C++], target_type
 ms.assetid: 7b5ca76b-9ca3-4d89-8fcf-cad70a4aeae6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3cfafc2c17ef804cb8d87c1189c8a7f3163d3c46
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 80b0dd6e2145ce98e9191dd81bdff10b2870f4fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104140"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530513"
 ---
 # <a name="function-class"></a>function Sınıfı
 

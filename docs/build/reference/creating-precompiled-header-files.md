@@ -1,30 +1,20 @@
 ---
-title: Önceden derlenmiş üst bilgi dosyaları oluşturma | Microsoft Docs
-ms.custom: ''
+title: Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - pch
-dev_langs:
-- C++
 helpviewer_keywords:
 - precompiled header files, creating
 - PCH files, creating
 - cl.exe compiler, precompiling code
 - .pch files, creating
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e050532de79a82291948862840b4c8fa6a3b4995
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3014b2da9f9d9e03e9ea791c9a97ff59f842e8ae
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703209"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482621"
 ---
 # <a name="creating-precompiled-header-files"></a>Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma
 
