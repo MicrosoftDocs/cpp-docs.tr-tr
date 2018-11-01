@@ -1,28 +1,18 @@
 ---
-title: Ağaç denetim öğesi konumu | Microsoft Docs
-ms.custom: ''
+title: Ağaç Denetim Öğesi Konumu
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTreeCtrl class [MFC], item position
 - item position in tree controls
 - tree controls [MFC], item position
 - position, CTreeCtrl items
 ms.assetid: cd264344-2cf9-4d90-9ea8-c6900b6f60e7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7e24c21a8a44f09e9141b1763646d1a887bda158
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d39e48cf940f3e5e903fc8a1c82952d5c2550c05
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412099"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501211"
 ---
 # <a name="tree-control-item-position"></a>Ağaç Denetim Öğesi Konumu
 

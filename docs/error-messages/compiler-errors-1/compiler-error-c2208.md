@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2208 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2208
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2208
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2208
 ms.assetid: 9ae704bc-bf70-45f1-8e47-0470f21edd4e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6721166efad2fc214ccf2c2a45ec2342b67c39e4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7970ba5d8d2b19bd6e330fad1879880fc5cbf32d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101728"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516954"
 ---
 # <a name="compiler-error-c2208"></a>Derleyici Hatası C2208
 

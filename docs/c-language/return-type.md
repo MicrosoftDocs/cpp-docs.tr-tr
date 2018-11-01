@@ -1,12 +1,6 @@
 ---
-title: Dönüş türü | Microsoft Docs
-ms.custom: ''
+title: Dönüş Türü
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - function return types
 - return values [C++], function procedures
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - return keyword [C++], function return types
 - functions [C++], return types
 ms.assetid: 3e5b8a97-b341-48c5-8be8-8986980ef586
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 08c81333d599411b180ebf5f0a00e1ab61536903
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4a4f3392f340fbe3ef1f5cf0a22a1a55f98e9384
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46076859"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50497059"
 ---
 # <a name="return-type"></a>Dönüş Türü
 

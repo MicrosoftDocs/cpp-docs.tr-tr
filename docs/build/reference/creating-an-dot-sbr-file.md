@@ -1,12 +1,6 @@
 ---
-title: Oluşturma bir. SBR dosya | Microsoft Docs
-ms.custom: ''
+title: .Sbr Dosyası Oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - SBR files
 - BSCMAKE, input files
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - local symbols in browse information
 - symbols
 ms.assetid: bdb4b93c-a88a-441a-84fd-01087d03be25
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ac872dd13458c3fe15971f30a72b06e5510c5bd0
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 63f007e567f3c1db556ba6a7f0c1a354c449f31b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723690"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501016"
 ---
 # <a name="creating-an-sbr-file"></a>.Sbr Dosyası Oluşturma
 

@@ -1,27 +1,17 @@
 ---
-title: özel durum sınıfı | Microsoft Docs
-ms.custom: ''
+title: exception Class
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - exception
-dev_langs:
-- C++
 helpviewer_keywords:
 - exception class
 ms.assetid: 4f181f67-5888-4b50-89a6-745091ffb2fe
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ec1cfe2be7f6a2172b6624f15cb3dcde4f0ba3c2
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 009ef74d810976eb9f054b45e388ceb0fe612b2e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957024"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50521048"
 ---
 # <a name="exception-class"></a>exception Class
 
