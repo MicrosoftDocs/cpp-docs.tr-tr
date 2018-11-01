@@ -1,10 +1,6 @@
 ---
-title: CComContainedObject sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComContainedObject sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComContainedObject
 - ATLCOM/ATL::CComContainedObject
@@ -13,23 +9,17 @@ f1_keywords:
 - ATLCOM/ATL::CComContainedObject::GetControllingUnknown
 - ATLCOM/ATL::CComContainedObject::QueryInterface
 - ATLCOM/ATL::CComContainedObject::Release
-dev_langs:
-- C++
 helpviewer_keywords:
 - aggregate objects [C++], in ATL
 - aggregation [C++], ATL objects
 - CComContainedObject class
 ms.assetid: e8616b41-c200-47b8-bf2c-fb9f713ebdad
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8f38fc3499ecc5956369a78c37f94358a1006cc2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 289174fbfc61b0bbca65233fe24d93537627e17d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46108696"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492579"
 ---
 # <a name="ccomcontainedobject-class"></a>CComContainedObject sınıfı
 

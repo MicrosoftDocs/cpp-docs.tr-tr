@@ -1,10 +1,6 @@
 ---
-title: CTypedPtrMap sınıfı | Microsoft Docs
-ms.custom: ''
+title: CTypedPtrMap sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CTypedPtrMap
 - AFXTEMPL/CTypedPtrMap
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXTEMPL/CTypedPtrMap::Lookup
 - AFXTEMPL/CTypedPtrMap::RemoveKey
 - AFXTEMPL/CTypedPtrMap::SetAt
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTypedPtrMap [MFC], GetNextAssoc
 - CTypedPtrMap [MFC], Lookup
 - CTypedPtrMap [MFC], RemoveKey
 - CTypedPtrMap [MFC], SetAt
 ms.assetid: 9f377385-c6e9-4471-8b40-8fe220c50164
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 85f44473237a17a83aae2377e63a4e35d43483b9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f09b44c5b898ee0d583db45ca63ee67c3d1c5b47
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433798"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494867"
 ---
 # <a name="ctypedptrmap-class"></a>CTypedPtrMap sınıfı
 

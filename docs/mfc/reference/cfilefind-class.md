@@ -1,10 +1,6 @@
 ---
-title: CFileFind sınıfı | Microsoft Docs
-ms.custom: ''
+title: CFileFind sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CFileFind
 - AFX/CFileFind
@@ -33,8 +29,6 @@ f1_keywords:
 - AFX/CFileFind::MatchesMask
 - AFX/CFileFind::CloseContext
 - AFX/CFileFind::m_pTM
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFileFind [MFC], CFileFind
 - CFileFind [MFC], Close
@@ -62,16 +56,12 @@ helpviewer_keywords:
 - CFileFind [MFC], CloseContext
 - CFileFind [MFC], m_pTM
 ms.assetid: 9990068c-b023-4114-9580-a50182d15240
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 83fe08284b4d4018a9a2b9f25105094e1d70033b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 983c8c46100312947f9b5c357df23b51d6eaabc7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399476"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462166"
 ---
 # <a name="cfilefind-class"></a>CFileFind sınıfı
 

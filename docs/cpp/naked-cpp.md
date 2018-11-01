@@ -1,28 +1,18 @@
 ---
-title: naked (C++) | Microsoft Docs
-ms.custom: ''
+title: naked (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - naked_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __declspec keyword [C++], naked
 - naked __declspec keyword
 ms.assetid: 69723241-05e1-439b-868e-20a83a16ab6d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cdf77589ea39de4d17ccad1e3ef369cf4f0ca24d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 951760d7f9566c084bbe3d5a574d006020576c61
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080890"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50478383"
 ---
 # <a name="naked-c"></a>naked (C++)
 

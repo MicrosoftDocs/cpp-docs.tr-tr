@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4020 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4020
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4020
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4020
 ms.assetid: 8c4cd6be-9371-4c8c-b0ff-a5ad367bbab0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ef0303c1a811304cd2edaa8622208dc4bada86ef
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 75148c210ddd2a611061d58c036d12c084f442cb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46046738"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482036"
 ---
 # <a name="compiler-warning-level-1-c4020"></a>Derleyici Uyarısı (düzey 1) C4020
 

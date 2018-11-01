@@ -1,28 +1,18 @@
 ---
-title: Derleyici COM desteği sınıfları | Microsoft Docs
-ms.custom: ''
+title: Derleyici COM Desteği Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _com_raise_error
-dev_langs:
-- C++
 helpviewer_keywords:
 - cl.exe compiler, COM support
 - COM, compiler support
 ms.assetid: 6d800d9b-b902-4033-9639-740a30b06f88
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a3403a09700ba6f84792cc570d9fb093026241d8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 066fe797bc500625e96e027777a70f278b88cddb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070833"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50479670"
 ---
 # <a name="compiler-com-support-classes"></a>Derleyici COM Desteği Sınıfları
 

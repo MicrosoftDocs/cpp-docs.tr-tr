@@ -1,27 +1,17 @@
 ---
-title: . ERRNDEF | Microsoft Docs
-ms.custom: ''
+title: .ERRNDEF
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .ERRNDEF
-dev_langs:
-- C++
 helpviewer_keywords:
 - .ERRNDEF directive
 ms.assetid: 9fab57bb-02ad-486f-b46d-bcd23980f00d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: df3ff7289d2fd988780320c0cb6cc44684df5721
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 8cbd9be590be2483b5fa43b20ba0df2e7af2cb5b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680235"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476238"
 ---
 # <a name="errndef"></a>.ERRNDEF
 

@@ -1,28 +1,17 @@
 ---
-title: length_is (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: length_is (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.length_is
-dev_langs:
-- C++
 helpviewer_keywords:
 - length_is attribute
 ms.assetid: 1d99b883-84bb-4b1e-b098-eb780fc94f40
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 37c220347070f9a2fecdda44ffe1a3971112f49f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 54206dd82a550924169bf7bcccd4f70f9e5a657c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50066987"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50489572"
 ---
 # <a name="lengthis"></a>length_is
 

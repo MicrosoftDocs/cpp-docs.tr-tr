@@ -1,26 +1,15 @@
 ---
-title: Sağlayıcınıza arabirim ekleme | Microsoft Docs
-ms.custom: ''
+title: Sağlayıcınıza Arabirim Ekleme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB provider templates, object interfaces
 ms.assetid: b0fc7cf8-428a-4584-9d64-ce9074d0eb66
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 83f04b53ec7d3527ddfbd58582f435d5fb153014
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 295a7955b78918d6281a28b616f201869f37b01e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073077"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50488679"
 ---
 # <a name="adding-an-interface-to-your-provider"></a>Sağlayıcınıza Arabirim Ekleme
 

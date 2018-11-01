@@ -1,10 +1,6 @@
 ---
-title: Derleyici hataları C3000 ile c3099 arasındaki | Microsoft Docs
-ms.custom: ''
+title: Derleyici hataları C3000 ile c3099 arasındaki
 ms.date: 11/17/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3051
 - C3061
@@ -41,19 +37,13 @@ helpviewer_keywords:
 - C3092
 - C3093
 - C3098
-dev_langs:
-- C++
 ms.assetid: 01b7b9cb-b351-4b5a-8cb0-1fcddb08d2ab
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7565a2656bcb5c9ad10c83179b563423d42be7b5
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: b7a01c35086fe503e39af2af60655c03301dc7c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44319051"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50475497"
 ---
 # <a name="compiler-errors-c3000-through-c3099"></a>Derleyici hataları C3000 ile c3099 arasındaki
 

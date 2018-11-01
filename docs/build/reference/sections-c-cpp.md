@@ -1,27 +1,17 @@
 ---
-title: BÖLÜMLERİ (C/C++) | Microsoft Docs
-ms.custom: ''
+title: SECTIONS (C/C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - SECTIONS
-dev_langs:
-- C++
 helpviewer_keywords:
 - SECTIONS .def file statement
 ms.assetid: 7b974366-9ef5-4e57-bbcc-73a1df6f8857
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ecd8d6050df7a4d30b0a37cad28e030d1cd63cf0
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 7b6708e760a85a137a01718d07a5f167de849220
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722907"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485872"
 ---
 # <a name="sections-cc"></a>SECTIONS (C/C++)
 

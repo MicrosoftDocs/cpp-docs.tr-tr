@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3290 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3290
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3290
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3290
 ms.assetid: 0baf684b-1143-4953-ac99-a2fa267d8017
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b97818dd6ef7b38bb815e2c0a6345cc056fc45c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d82d3272563f7a5af5de399a2f7fff621500e612
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058932"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50490487"
 ---
 # <a name="compiler-error-c3290"></a>Derleyici Hatası C3290
 

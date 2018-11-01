@@ -1,23 +1,13 @@
 ---
-title: Yığın ayırma | Microsoft Docs
-ms.custom: ''
+title: Yığın Ayırma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 098e51f2-eda6-40d0-b149-0b618aa48b47
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9e0210239f2d915fcc3445a74cfdf5b0d1796df7
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 23b22491a6eeac078f551a6513a7ecad4be43fe9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45701505"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50478827"
 ---
 # <a name="stack-allocation"></a>Yığın Ayırma
 

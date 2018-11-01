@@ -1,30 +1,20 @@
 ---
-title: __cpuid, __cpuidex | Microsoft Docs
-ms.custom: ''
+title: __cpuid, __cpuidex
 ms.date: 03/22/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __cpuid_cpp
 - __cpuid
-dev_langs:
-- C++
 helpviewer_keywords:
 - __cpuid intrinsic
 - cpuid instruction
 - cpuid intrinsic
 ms.assetid: f8c344d3-91bf-405f-8622-cb0e337a6bdc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0f3139332c07652b9fbca536d7c21ba4e10ef7dc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 30b66c78c6c3477c4da634901058d77d0e362101
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414361"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494564"
 ---
 # <a name="cpuid-cpuidex"></a>__cpuid, __cpuidex
 

@@ -1,14 +1,8 @@
 ---
-title: OLE sürükle/bırak ve veri aktarımı sınıfları | Microsoft Docs
-ms.custom: ''
+title: OLE Sürükle/Bırak ve Veri Aktarımı Sınıfları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.ole
-dev_langs:
-- C++
 helpviewer_keywords:
 - ActiveX classes [MFC]
 - OLE drag and drop [MFC], and data transfer classes
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - data transfer [MFC], OLE
 - data transfer classes [MFC]
 ms.assetid: c8ab2825-ed69-4b88-8ae6-f368b94726b8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a4b5d694d0081fbe2d852884c4a379e962c22f2a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7520881314da9568f6130f5fe2ccf0a3e0e88e2a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444144"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50475198"
 ---
 # <a name="ole-drag-and-drop-and-data-transfer-classes"></a>OLE Sürükle/Bırak ve Veri Aktarımı Sınıfları
 

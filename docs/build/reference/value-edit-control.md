@@ -1,25 +1,15 @@
 ---
-title: Değer düzenleme denetimi | Microsoft Docs
-ms.custom: ''
+title: Değer Düzenleme Denetimi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - Value edit control
 ms.assetid: 129d8f74-2629-4a29-981f-ddb3c1e174cd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 823306fa95b2a4a317afef8aed21cd361a773be3
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1203b020b5e4d34e4d81dfc10505786638f567ce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722312"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482647"
 ---
 # <a name="value-edit-control"></a>Değer Düzenleme Denetimi
 

@@ -1,20 +1,13 @@
 ---
-title: CLR tümleştirme (C + +/ CX) | Microsoft Docs
-ms.custom: ''
+title: CLR tümleştirme (C + +/ CX)
 ms.date: 01/22/2017
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: 76e213cf-2f3d-4181-b35b-9fd25d5b307c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 95dd817e7081eea6371e9dab9d95aec06d22971c
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 7b14d8067625719b337e2c830b739269ef96dccd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110772"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461821"
 ---
 # <a name="clr-integration-ccx"></a>CLR tümleştirme (C + +/ CX)
 

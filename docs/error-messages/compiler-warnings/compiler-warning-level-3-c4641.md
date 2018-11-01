@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4641 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (Düzey 3) C4641
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4641
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4641
 ms.assetid: 28fe5c3e-6039-42da-9100-1312b5b15aea
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f44e94868f6a7b379fb1a2f75bbd28ce011b54c9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: eea1f28c55c8beef5fada10080ebaac9371c94e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46112115"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477486"
 ---
 # <a name="compiler-warning-level-3-c4641"></a>Derleyici Uyarısı (Düzey 3) C4641
 

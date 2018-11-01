@@ -1,26 +1,16 @@
 ---
-title: Ağaç denetim öğesi bilgileri | Microsoft Docs
-ms.custom: ''
+title: Ağaç Denetim Öğesi Bilgileri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - tree controls [MFC], item information
 - CTreeCtrl class [MFC], item information
 ms.assetid: 8dcab855-27de-49e9-95d8-f78ba963ea71
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a61d6dbf2084288d6015e8fc2c08bfc2283d4ba4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f33d9616b04abfe442471705b6d1a42333648a69
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391026"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506099"
 ---
 # <a name="tree-control-item-information"></a>Ağaç Denetim Öğesi Bilgileri
 

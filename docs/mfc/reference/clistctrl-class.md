@@ -1,10 +1,6 @@
 ---
-title: CListCtrl sınıfı | Microsoft Docs
-ms.custom: ''
+title: CListCtrl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CListCtrl
 - AFXCMN/CListCtrl
@@ -137,8 +133,6 @@ f1_keywords:
 - AFXCMN/CListCtrl::SortItemsEx
 - AFXCMN/CListCtrl::SubItemHitTest
 - AFXCMN/CListCtrl::Update
-dev_langs:
-- C++
 helpviewer_keywords:
 - CListCtrl [MFC], CListCtrl
 - CListCtrl [MFC], ApproximateViewRect
@@ -270,16 +264,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f89d70ed5b7a84cdbed61784b59b0748abc6432d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0d07ee024a1659c18e929b0827d6ac989fa0cdde
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50083327"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498806"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
 

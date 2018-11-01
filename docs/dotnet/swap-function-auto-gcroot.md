@@ -1,29 +1,19 @@
 ---
-title: swap işlevi (auto_gcroot) | Microsoft Docs
-ms.custom: ''
+title: swap İşlevi (auto_gcroot)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
 ms.topic: reference
 f1_keywords:
 - msclr::swap
 - msclr.swap
-dev_langs:
-- C++
 helpviewer_keywords:
 - swap function
 ms.assetid: 2fe8146b-a7f7-445a-9ae9-53b5556be701
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 2606f49e4b8996d4e95abe91df9eb5c26d70929f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 084749bc92491593995904b6707ca94f6545981f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419418"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484285"
 ---
 # <a name="swap-function-autogcroot"></a>swap İşlevi (auto_gcroot)
 

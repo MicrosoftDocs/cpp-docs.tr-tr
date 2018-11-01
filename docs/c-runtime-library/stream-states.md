@@ -1,25 +1,15 @@
 ---
-title: Stream durumları | Microsoft Docs
-ms.custom: ''
+title: Akış Durumları
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - streams, states
 ms.assetid: 5f28c968-f132-403f-968c-8417ff315e52
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2bdf4b351b05204fab11be2f5a0a1a8b7f71f462
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d51f24b82c10d58e91f5d20b6656eb16621004ac
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056358"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481178"
 ---
 # <a name="stream-states"></a>Akış Durumları
 

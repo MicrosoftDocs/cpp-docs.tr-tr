@@ -1,23 +1,13 @@
 ---
-title: A.23 ordered yönergesi örnekleri | Microsoft Docs
-ms.custom: ''
+title: A.23   ordered Yönergesi Örnekleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: f8fa761b-7fc5-4447-95f9-8571e9ca31bf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ec609a77e9bdc7cbdbb0822dfde0a88110ce0244
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2868b771fd57613981f3c6458b48493a1b26eee4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405976"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472286"
 ---
 # <a name="a23---examples-of-the-ordered-directive"></a>A.23   ordered Yönergesi Örnekleri
 

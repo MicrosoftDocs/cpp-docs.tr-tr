@@ -1,10 +1,6 @@
 ---
-title: CSocket sınıfı | Microsoft Docs
-ms.custom: ''
+title: CSocket sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CSocket
 - AFXSOCK/CSocket
@@ -15,8 +11,6 @@ f1_keywords:
 - AFXSOCK/CSocket::FromHandle
 - AFXSOCK/CSocket::IsBlocking
 - AFXSOCK/CSocket::OnMessagePending
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSocket [MFC], CSocket
 - CSocket [MFC], Attach
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - CSocket [MFC], IsBlocking
 - CSocket [MFC], OnMessagePending
 ms.assetid: 7f23c081-d24d-42e3-b511-8053ca53d729
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 170acf3fb9d8cc1e63177a372517cccc8e21b94c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3c5340a8c65f804747fd8d3c8bd31fb20f80c6ea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445132"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487311"
 ---
 # <a name="csocket-class"></a>CSocket sınıfı
 

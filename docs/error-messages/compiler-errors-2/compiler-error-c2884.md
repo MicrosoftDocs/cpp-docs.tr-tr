@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2884 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2884
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2884
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2884
 ms.assetid: 8b4d43e3-3fb5-4360-86c8-de59d8736d4f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9d9266162d4608e39982cce1e94751e427bc5e47
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d920629dc0697d0f2fdd05ac5aca6118b89b88cb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054720"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50489733"
 ---
 # <a name="compiler-error-c2884"></a>Derleyici Hatası C2884
 

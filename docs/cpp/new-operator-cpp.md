@@ -1,25 +1,15 @@
 ---
-title: New işleci (C++) | Microsoft Docs
-ms.custom: ''
+title: new İşleci (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - new keyword [C++]
 ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5cc2131ad3c74477aa8972ca4e6e75bf845c954e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 83800f823ffd14fd61a9735b09b12d2f07f6d0a4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057307"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477993"
 ---
 # <a name="new-operator-c"></a>new İşleci (C++)
 

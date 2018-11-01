@@ -1,30 +1,20 @@
 ---
-title: _HEAP_MAXREQ | Microsoft Docs
-ms.custom: ''
+title: _HEAP_MAXREQ
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - HEAP_MAXREQ
 - _HEAP_MAXREQ
-dev_langs:
-- C++
 helpviewer_keywords:
 - HEAP_MAXREQ constants
 - _HEAP_MAXREQ constants
 - heap constants
 ms.assetid: c2dbc2ea-35ad-45d8-b459-d76ba0089ff7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 21e2fb3b7c9db01621d54376dcf3afa1f456f471
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8060339a73cee4e912f6ccb54488b0799f17dd0d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034311"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496534"
 ---
 # <a name="heapmaxreq"></a>_HEAP_MAXREQ
 

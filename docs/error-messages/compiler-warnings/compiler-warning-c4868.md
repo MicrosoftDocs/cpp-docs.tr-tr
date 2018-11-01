@@ -1,38 +1,33 @@
 ---
-title: Derleyici Uyarısı C4868 | Microsoft Docs
+title: Derleyici Uyarısı C4868
 ms.date: 10/26/2017
-ms.topic: error-reference
 f1_keywords:
 - C4868
 ms.assetid: fc6aa7e5-34dd-4ec2-88bd-16e430361dc7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 922a1a8434da8449758b9d55ebe89ace2f262cd5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d0bc8716e53e71c52f6a31036a95d0b4cefedd79
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33275248"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481323"
 ---
 # <a name="compiler-warning-level-4-c4868"></a>Derleyici Uyarısı (düzey 4) C4868
 
-> '_dosya_(*line_number*)' derleyici zorla küme ayracı içine alınan Başlatıcı listesinde soldan sağa değerlendirme sırası
+> '_dosya_(*line_number*)' derleyici küme ayracıyla belirtilen Başlatıcı listesinde soldan sağa Değerlendirme sırasını zorla
 
-Bir küme ayracı içine alınan başlatıcı listesi soldan sağa sırada değerlendirilecek öğeleridir. Derleyici olduğu bu düzeni olmasını garanti etmek mümkün iki durum vardır: öğeleri değeriyle; geçirilen nesneleri bazıları ilk olduğunda ile derleme yapılırken saniyedir `/clr` ve bazı öğeler nesnelerin alanlar veya dizi öğeleridir. Derleyici soldan sağa değerlendirme garanti edemez olduğunda uyarı C4868 yayar.
+Bir küme ayracıyla belirtilen Başlatıcı listesinde soldan sağa sırada değerlendirilecek öğeleridir. Derleyici olduğu bu düzeni olmasını garanti etmek mümkün iki durum vardır: ilk değere göre; geçirilen nesneleri öğelerin bazıları ise ile derlerken, ikincisi ise `/clr` ve bazı öğeleri alanlar nesne veya dizi öğeleri. Derleyici, soldan sağa değerlendirmesi garanti edemez zaman uyarısı C4868 yayar.
 
-Bu uyarı, Visual C++ 2015 güncelleştirme 2 için yapılmıştır derleyici uyumluluğu iş sonucu olarak oluşturulabilir. Visual C++ 2015 güncelleştirme 2 önce derlenmiş kod artık C4868 oluşmasına neden olabilir.
+Bu uyarı, Visual C++ 2015 güncelleştirme 2 için yapılmış derleyici uyumluluğu iş sonucu olarak oluşturulabilir. Visual C++ 2015 güncelleştirme 2 önce derlenmiş kod, şimdi C4868 oluşturabilirsiniz.
 
-Varsayılan olarak bu uyarı kapalıdır. Kullanım `/Wall` bu uyarıyı etkinleştirmek için.
+Varsayılan olarak bu uyarıyı kapalıdır. Kullanım `/Wall` bu uyarıyı etkinleştirmek için.
 
-Bu uyarıyı çözmek için önce Başlatıcı liste öğelerini soldan sağa değerlendirmesi değerlendirme öğelerin sırasını bağımlı yan etkileri zaman üretebilir gibi gerekli olup olmadığını göz önünde bulundurun. Çoğu durumda, hangi öğelerin değerlendirilme sırasını observable bir etkisi yoktur.
+Bu uyarıyı çözmek için önce başlatıcı listesi öğeleri soldan sağa değerlendirme sırası bağımlı yan etki değerlendirme öğelerinin ne zaman üretebilir gibi gerekli olup olmadığını göz önünde bulundurun. Çoğu durumda, öğeleri değerlendirilme sırasını gözlemlenebilir bir etkisi yok.
 
-Değerlendirme sırası soldan sağa olmalıdır, öğeleri geçirmek mümkün olup olmadığını değerlendirin `const` yerine başvuru. Bunun gibi bir değişiklik, aşağıdaki kod örneğinde uyarı ortadan kaldırır.
+Soldan sağa Değerlendirme sırasını olması gerekiyorsa, öğeleri geçirmek mümkün olup olmadığını göz önünde bulundurun `const` yerine başvuru. Bunun gibi bir değişiklik, aşağıdaki kod örneği'nde uyarı ortadan kaldırır.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek C4868 oluşturur ve düzeltmek için bir yol gösterir:
+Bu örnek, C4868 oluşturur ve bunu düzeltmek için bir yol gösterir:
 
 ```cpp
 // C4868.cpp

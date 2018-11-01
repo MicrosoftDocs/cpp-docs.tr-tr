@@ -1,12 +1,6 @@
 ---
-title: Derleme özelleştirmeleri sorunlarını giderme | Microsoft Docs
-ms.custom: ''
+title: Derleme Özelleştirmeleri Sorunlarını Giderme
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - build events [C++], troubleshooting
 - builds [C++], build events
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - builds [C++], troubleshooting
 - custom build steps [C++], troubleshooting
 ms.assetid: e4ceb177-fbee-4ed3-a7d7-80f0d78c1d07
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2821c851c5b4498250a78f33eb111dd5f20ae272
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 52f4e37a2321cbd19fc85e7036cb8882e9399ac5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895155"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480916"
 ---
 # <a name="troubleshooting-build-customizations"></a>Derleme Özelleştirmeleri Sorunlarını Giderme
 

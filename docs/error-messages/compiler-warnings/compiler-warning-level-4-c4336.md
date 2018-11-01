@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 4) C4336 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 4) C4336
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4336
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4336
 ms.assetid: 93f199dd-d6dd-42c0-82d8-c12d101a7235
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0ce0bc5a8a3df26a330de55c331d46b1f0c1d692
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4946b932fa897dab057e430f16c781e2d06bebd0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46051177"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484896"
 ---
 # <a name="compiler-warning-level-4-c4336"></a>Derleyici Uyarısı (düzey 4) C4336
 

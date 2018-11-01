@@ -1,10 +1,6 @@
 ---
-title: CComHeap sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComHeap sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComHeap
 - ATLCOMMEM/ATL::CComHeap
@@ -12,21 +8,15 @@ f1_keywords:
 - ATLCOMMEM/ATL::CComHeap::Free
 - ATLCOMMEM/ATL::CComHeap::GetSize
 - ATLCOMMEM/ATL::CComHeap::Reallocate
-dev_langs:
-- C++
 helpviewer_keywords:
 - CComHeap class
 ms.assetid: c74183ce-98ae-46fb-b186-93ea4cf0222b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b38aabbb418a355f85917a2d287c2f473cb2e7df
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ae076ee7e2b1e04a997d0b345a2d89b4cc59183d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062923"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496076"
 ---
 # <a name="ccomheap-class"></a>CComHeap sınıfı
 

@@ -1,28 +1,18 @@
 ---
-title: (C++) kullanım dışı | Microsoft Docs
-ms.custom: ''
+title: deprecated (C++)
 ms.date: 03/28/2017
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - deprecated_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - __declspec keyword [C++], deprecated
 - deprecated __declspec keyword
 ms.assetid: beef1129-9434-4cb3-8392-f1eb29e04805
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f2d35f8d5f263125cd6a5e0a5e34105c3424f87b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 34f9c10cd898b0359463d5933141822576fa4a11
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070302"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50485859"
 ---
 # <a name="deprecated-c"></a>deprecated (C++)
 

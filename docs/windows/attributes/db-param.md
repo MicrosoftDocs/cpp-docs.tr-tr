@@ -1,28 +1,17 @@
 ---
-title: db_param (C++ COM özniteliği) | Microsoft Docs
-ms.custom: ''
+title: db_param (C++ COM özniteliği)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.db_param
-dev_langs:
-- C++
 helpviewer_keywords:
 - db_param attribute
 ms.assetid: a28315f5-4722-459e-92ef-32e83c0b205a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 03131071f38dbbe1f9e1dbc2dc6645dcfb5d7366
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 58d6fa5026395b4be6663ab253cf9ffdfea01788
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057861"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505046"
 ---
 # <a name="dbparam"></a>db_param
 

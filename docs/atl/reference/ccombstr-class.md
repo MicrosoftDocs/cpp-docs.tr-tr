@@ -1,10 +1,6 @@
 ---
-title: CComBSTR sınıfı | Microsoft Docs
-ms.custom: ''
+title: CComBSTR sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - CComBSTR
 - ATLBASE/ATL::CComBSTR
@@ -28,23 +24,17 @@ f1_keywords:
 - ATLBASE/ATL::CComBSTR::ToUpper
 - ATLBASE/ATL::CComBSTR::WriteToStream
 - ATLBASE/ATL::CComBSTR::m_str
-dev_langs:
-- C++
 helpviewer_keywords:
 - BSTRs, wrapper
 - CComBSTR class
 - CComBSTR
 ms.assetid: 8fea1879-a05e-47a5-a803-8dec60eaa534
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e209a314992fb0b4d2969c183a9b31071f0521c7
-ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
+ms.openlocfilehash: 52e8472e315932978af38d405c753b0a62fcbe45
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410856"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50475653"
 ---
 # <a name="ccombstr-class"></a>CComBSTR sınıfı
 

@@ -1,25 +1,15 @@
 ---
-title: Örnek kapsayıcı üyeleri | Microsoft Docs
-ms.custom: ''
+title: Örnek Kapsayıcı Üyeleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - container classes
 ms.assetid: dc5a1998-a31b-4adf-b888-8abe5b87a4e0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 33a251b2b9bf9b010367a88a4c9f566a73acb544
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 28d726bbf2b756c047523954fd4d5f843ee11d2f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956787"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492144"
 ---
 # <a name="sample-container-members"></a>Örnek Kapsayıcı Üyeleri
 

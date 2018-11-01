@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2065 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2065
 ms.date: 09/01/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2065
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2065
 ms.assetid: 78093376-acb7-45f5-9323-5ed7e0aab1dc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 30fa9500ad7df934643c606be4f29925e2d18676
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ae7f582de5d6c45df34c42164756356a9c794d31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46042513"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482529"
 ---
 # <a name="compiler-error-c2065"></a>Derleyici Hatası C2065
 

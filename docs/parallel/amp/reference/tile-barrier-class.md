@@ -1,10 +1,6 @@
 ---
-title: tile_barrier sınıfı | Microsoft Docs
-ms.custom: ''
+title: tile_barrier Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-amp
-ms.topic: reference
 f1_keywords:
 - tile_barrier
 - AMP/tile_barrier
@@ -13,21 +9,15 @@ f1_keywords:
 - AMP/Concurrency::tile_barrier::tile_barrier::wait_with_all_memory_fence
 - AMP/Concurrency::tile_barrier::tile_barrier::wait_with_global_memory_fence
 - AMP/Concurrency::tile_barrier::tile_barrier::wait_with_tile_static_memory_fence
-dev_langs:
-- C++
 helpviewer_keywords:
 - tile_barrier class
 ms.assetid: b4ccdccb-0032-4e11-b7bd-dc9d43445dee
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eab8fbba799c84fdc9246659b5880cdc9f266084
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7902ba2315fe348789527e755e124e7fc0ba965f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46406983"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50509066"
 ---
 # <a name="tilebarrier-class"></a>tile_barrier Sınıfı
 

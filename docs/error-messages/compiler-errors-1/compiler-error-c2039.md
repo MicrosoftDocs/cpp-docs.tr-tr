@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2039 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2039
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2039
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2039
 ms.assetid: f9dfd521-9b36-4454-a69c-d63f45b606bb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2896a6d98b49802676b1b5a8966a8e0d130a24fe
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ff795a551c091deb73c5fae1e3b67a61d9966ff0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091237"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482816"
 ---
 # <a name="compiler-error-c2039"></a>Derleyici Hatası C2039
 

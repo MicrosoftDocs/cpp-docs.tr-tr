@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3653 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3653
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3653
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3653
 ms.assetid: 316549d7-f7ef-4578-a2ba-57adc8aac527
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8d0409317cb0cdf6a248554cba2e18d7f9d2e0e0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d7936303dab4fbb273a01f98def5b9af99f89dac
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019009"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477629"
 ---
 # <a name="compiler-error-c3653"></a>Derleyici Hatası C3653
 

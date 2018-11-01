@@ -1,45 +1,35 @@
 ---
-title: Derleyici Uyarısı C4958 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı C4958
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4958
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4958
 ms.assetid: e79b9e9c-d572-4a3a-a3b6-60962b70864a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6e32acc4ec45275976e7fb56f993b10ba8a2a855
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 7d4ac6f21cfcfe0f37eb17ff81eabd3e6341a7d5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704879"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477408"
 ---
 # <a name="compiler-warning-c4958"></a>Derleyici Uyarısı C4958
 
-> '*işlemi*': işaretçi aritmetiği doğrulanabilen değil
+> '*işlemi*': işaretçi aritmetik doğrulanabilir değil
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşaretçi aritmetiği kullanarak doğrulanamayan bir görüntü oluşturur.
+İşaretçi aritmetiği kullanma, doğrulanamayan bir görüntü oluşturur.
 
-Daha fazla bilgi için bkz: [saf ve doğrulanabilen kod (C + +/ CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
+Daha fazla bilgi için [saf ve doğrulanabilen kod (C + +/ CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
 
-**/CLR: safe** derleyici seçeneği Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 içinde desteklenmiyor.
+**/CLR: safe** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
 
-Bu uyarıyı hata olarak verilir ve ile devre dışı bırakılabilir [uyarı](../../preprocessor/warning.md) pragma veya [/wd](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği.
+Bu uyarı hata olarak verilir ve ile devre dışı bırakılabilir [uyarı](../../preprocessor/warning.md) pragma veya [/wd](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C4958 oluşturur:
+Aşağıdaki örnekte C4958 oluşturur:
 
 ```cpp
 // C4958.cpp
@@ -54,9 +44,9 @@ int main( ) {
 }
 ```
 
-İşaretçi aritmetiği dizi işlemleriyle derleyici uygular. Bu nedenle, yerel diziler doğrulanabilir değildir; CLR dizisi kullanın. Daha fazla bilgi için bkz: [dizi](../../windows/arrays-cpp-component-extensions.md).
+Derleyicinin dizi işaretçi aritmetik işlemlerle uygular. Bu nedenle, yerel dizi doğrulanabilir değildir; CLR dizisi kullanın. Daha fazla bilgi için [dizi](../../windows/arrays-cpp-component-extensions.md).
 
-Aşağıdaki örnek C4958 oluşturur:
+Aşağıdaki örnekte C4958 oluşturur:
 
 ```cpp
 // C4958b.cpp

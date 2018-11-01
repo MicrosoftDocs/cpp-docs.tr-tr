@@ -1,29 +1,19 @@
 ---
-title: __fastcall | Microsoft Docs
-ms.custom: ''
+title: __fastcall
 ms.date: 10/09/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __fastcall_cpp
 - __fastcall
 - _fastcall
-dev_langs:
-- C++
 helpviewer_keywords:
 - __fastcall keyword [C++]
 ms.assetid: bb5b9c8a-dfad-450c-9119-0ac2bc59544f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fa181349ab01ea2a375bacbb5e23d073a99f3f11
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 19cc8efb98660e8cdb3f6d9b03f0b7bd85a34949
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161248"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480047"
 ---
 # <a name="fastcall"></a>__fastcall
 

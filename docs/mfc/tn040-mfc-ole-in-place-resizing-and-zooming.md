@@ -1,30 +1,20 @@
 ---
-title: 'TN040: MFC-OLE yeniden boyutlandırma ve yakınlaştırma yerinde | Microsoft Docs'
-ms.custom: ''
+title: 'TN040: MFC-OLE yeniden boyutlandırma ve yakınlaştırma yerinde'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc.ole
-dev_langs:
-- C++
 helpviewer_keywords:
 - resizing in-place
 - TN040
 - zooming and in-place activation
 - in-place activation, zooming and resizing
 ms.assetid: 4d7859bd-0b2e-4254-be62-2735cecf02c6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5b8e43969389d26645ef987e9c96996d2cdea3b0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 072ebe0180bb44145cef694e2283e91a0cacf602
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434758"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477213"
 ---
 # <a name="tn040-mfcole-in-place-resizing-and-zooming"></a>TN040: MFC/OLE Yerinde Yeniden Boyutlandırma ve Yakınlaştırma
 

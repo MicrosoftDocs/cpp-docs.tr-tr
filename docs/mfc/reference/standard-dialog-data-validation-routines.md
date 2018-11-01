@@ -1,25 +1,15 @@
 ---
-title: Standart iletişim kutusu veri doğrulama rutinleri | Microsoft Docs
-ms.custom: ''
+title: Standart İletişim Kutusu Veri Doğrulama Rutinleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - standard dialog, data validation routines
 ms.assetid: 44dbc222-a897-4949-925e-7660e8964ccd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3a37f79851df043a5473c82b514b7e85f418f1b6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: b5813600bbf8eb2a7b25992b3e1b020fcf8dfa02
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067923"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513951"
 ---
 # <a name="standard-dialog-data-validation-routines"></a>Standart İletişim Kutusu Veri Doğrulama Rutinleri
 

@@ -1,27 +1,17 @@
 ---
-title: Null deyimi | Microsoft Docs
-ms.custom: ''
+title: Boş Deyim
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - expressions [C++], null
 - null statement
 - null values, expressions
 ms.assetid: 606f5953-55f0-40c8-ae03-3ee3a819b851
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 27180a8252344f7b3185ec83b48ebef42f832907
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2797937b184bebe0e29f8e5eae428f601c824811
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46077366"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50480697"
 ---
 # <a name="null-statement"></a>Boş Deyim
 

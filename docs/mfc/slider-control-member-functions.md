@@ -1,26 +1,16 @@
 ---
-title: Kaydırıcı denetimi üye işlevleri | Microsoft Docs
-ms.custom: ''
+title: Kaydırıcı Denetimi Üye İşlevleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSliderCtrl class [MFC], methods
 - slider controls [MFC], member functions
 ms.assetid: dbde49ee-7306-4d14-a6ce-d09aa198178f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f3c7c9d2b1cfd863f2c76a6f0ce9de197912786
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 25414b1d98c87c67c1dc8e13bb44bdc25869db94
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377519"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472656"
 ---
 # <a name="slider-control-member-functions"></a>Kaydırıcı Denetimi Üye İşlevleri
 

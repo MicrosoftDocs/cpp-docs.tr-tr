@@ -1,12 +1,6 @@
 ---
-title: 'Bellek Yönetimi: Yeniden boyutlandırılabilir bellek blokları | Microsoft Docs'
-ms.custom: ''
+title: 'Bellek Yönetimi: Yeniden Boyutlandırılabilir Bellek Blokları'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - memory blocks [MFC], resizable
 - memory [MFC], corruption
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - blocks [MFC], memory allocation
 - resizable memory blocks [MFC]
 ms.assetid: f0efe6f4-a3ed-4541-9195-51ec1291967a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 92582e4255c88b9cc78368a635b27772f2e51a30
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 499e2d4a99152e08f50159c4c952eb882c9fd425
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443910"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481152"
 ---
 # <a name="memory-management-resizable-memory-blocks"></a>Bellek Yönetimi: Yeniden Boyutlandırılabilir Bellek Blokları
 

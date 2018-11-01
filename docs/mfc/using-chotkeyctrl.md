@@ -1,29 +1,19 @@
 ---
-title: CHotKeyCtrl kullanma | Microsoft Docs
-ms.custom: ''
+title: CHotKeyCtrl Kullanma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - CHotKeyCtrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - keys, hot and CHotKeyCtrl
 - CHotKeyCtrl class [MFC], using
 - hot key controls
 ms.assetid: 9b207117-d848-4224-8888-c3d197bb0c95
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bd966b74590d0e7641f2f789b5c45f901a3cf8c8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bf6ad9c8ea1b1a66f5a8abbf61f78c942ffda2fa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421511"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50483778"
 ---
 # <a name="using-chotkeyctrl"></a>CHotKeyCtrl Kullanma
 

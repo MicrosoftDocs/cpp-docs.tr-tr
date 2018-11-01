@@ -1,15 +1,9 @@
 ---
-title: Özel CWinApp Hizmetleri | Microsoft Docs
-ms.custom: ''
+title: Özel CWinApp Hizmetleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - LoadStdProfileSettings
 - EnableShellOpen
-dev_langs:
-- C++
 helpviewer_keywords:
 - files [MFC], most recently used
 - DragAcceptFiles method [MFC]
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - MFC, file operations
 - registration [MFC], shell
 ms.assetid: 0480cd01-f629-4249-b221-93432d95b431
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 79d3744b5accf9b1ab45f6881afb4683dfc967fd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8dd69538cc322fe8518a33444b71171a936a02aa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431539"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487535"
 ---
 # <a name="special-cwinapp-services"></a>Özel CWinApp Hizmetleri
 

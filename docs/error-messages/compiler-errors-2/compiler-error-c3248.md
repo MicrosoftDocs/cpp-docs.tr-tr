@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3248 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3248
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3248
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3248
 ms.assetid: d00b9d7d-b6be-4a5b-bb52-48174ea71fc4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b273f116c473b73a0cf3e9a5f2184d4dfbf89bd9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1a5a88e7623fd96aefe8d838ab17ba576320aa41
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46109749"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482691"
 ---
 # <a name="compiler-error-c3248"></a>Derleyici Hatası C3248
 

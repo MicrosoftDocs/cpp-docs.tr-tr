@@ -1,28 +1,18 @@
 ---
-title: İfade semantikleri | Microsoft Docs
-ms.custom: ''
+title: İfade Semantikleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - grammar, expressions
 - expressions [C++], semantics
 - expression evaluation
 - expression evaluation, about expression evaluation
 ms.assetid: 4a792154-533b-48b9-8709-31bfc170f0a7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 24b16bbba8318e6ff41b724b71599fca8a83f03e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: df86f73aa38ad9393adcbf193390cd785c934115
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46115768"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50490967"
 ---
 # <a name="semantics-of-expressions"></a>İfade Semantikleri
 

@@ -1,27 +1,17 @@
 ---
-title: . SETFRAME | Microsoft Docs
-ms.custom: ''
+title: .SETFRAME
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
 f1_keywords:
 - .SETFRAME
-dev_langs:
-- C++
 helpviewer_keywords:
 - .SETFRAME directive
 ms.assetid: eaa9b5ed-4daa-4f1e-bdb6-100758007ab3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 956a49e40c38310819d66e89fa6bf4492443a29c
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: c2c35cdb2889350b27e9fb11c397b684506972c5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691295"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506892"
 ---
 # <a name="setframe"></a>.SETFRAME
 

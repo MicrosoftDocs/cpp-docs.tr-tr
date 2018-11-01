@@ -1,27 +1,18 @@
 ---
-title: ML önemli olmayan hatası A2064 | Microsoft Docs
-ms.custom: ''
+title: ML Önemli Olmayan Hatası A2064
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A2064
-dev_langs:
-- C++
 helpviewer_keywords:
 - A2064
 ms.assetid: 553a5ec5-b404-4321-ab2c-b9ccec6471fc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4fb9ce61b1cfb350811a0acaacc1222a0ad540ee
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 29de1615662716dbe5df3f5a8941ffd3d844b71f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691963"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50483284"
 ---
 # <a name="ml-nonfatal-error-a2064"></a>ML Önemli Olmayan Hatası A2064
 

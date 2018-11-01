@@ -1,27 +1,17 @@
 ---
-title: Bağlayıcı araçları hatası LNK1140 | Microsoft Docs
-ms.custom: ''
+title: Bağlayıcı Araçları Hatası LNK1140
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1140
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1140
 ms.assetid: 468d7651-a7cd-47b9-aead-5bb2fab56121
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9f850360bc749a41e548cebae9f58f9fc7d3d420
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 48c735f29918c4d1caeb15123f7376276d116fb4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46044710"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50482479"
 ---
 # <a name="linker-tools-error-lnk1140"></a>Bağlayıcı Araçları Hatası LNK1140
 

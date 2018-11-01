@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4183 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4183
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4183
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4183
 ms.assetid: dc48312c-4b34-44dd-80ff-eb5f11d5ca47
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2753b8fc47de3363c38ed6ee4dedeaf8d085c485
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0d947a0f6d777a5ed3191d6d232a604028be2003
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022442"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477460"
 ---
 # <a name="compiler-warning-level-1-c4183"></a>Derleyici Uyarısı (düzey 1) C4183
 

@@ -1,14 +1,8 @@
 ---
-title: 'TN022: Standart komutları uygulama | Microsoft Docs'
-ms.custom: ''
+title: 'TN022: Standart Komutları Uygulama'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.commands
-dev_langs:
-- C++
 helpviewer_keywords:
 - ID_PREV_PANE command [MFC]
 - ID_APP_EXIT command [MFC]
@@ -65,16 +59,12 @@ helpviewer_keywords:
 - ID_FILE_NEW command [MFC]
 - ID_INDICATOR_NUM command
 ms.assetid: a7883b46-23f7-4870-ac3a-804aed9258b5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 35025775d56baf0f59d70490719b1eedc1a36849
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0f79aaaf59f12e226220e51681f64d0bf1131303
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073325"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504344"
 ---
 # <a name="tn022-standard-commands-implementation"></a>TN022: Standart Komutları Uygulama
 
