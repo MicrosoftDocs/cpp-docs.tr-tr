@@ -1,27 +1,17 @@
 ---
-title: ATL Özellik Sayfası Sihirbazı, seçenekleri | Microsoft Docs
-ms.custom: ''
+title: ATL Özellik Sayfası Sihirbazı Seçenekleri
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.atl.ppg.options
-dev_langs:
-- C++
 helpviewer_keywords:
 - ATL Property Page Wizard, options
 ms.assetid: a7107779-b2ea-4f99-b84b-7f3e0c504bc8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 92f3855cf9c760ef8e6bb761f4a0bac042f8c539
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e891bd9e37bbf2fbedcdd71649305cdc366065fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081773"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642019"
 ---
 # <a name="options-atl-property-page-wizard"></a>ATL Özellik Sayfası Sihirbazı Seçenekleri
 

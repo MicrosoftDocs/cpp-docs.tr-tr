@@ -1,11 +1,6 @@
 ---
-title: catanh, catanhf, catanhl | Microsoft Docs
-ms.custom: ''
+title: catanh, catanhf, catanhl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - catanh
 - catanhf
@@ -30,27 +25,21 @@ f1_keywords:
 - complex/catanh
 - complex/catanhf
 - complex/catanhl
-dev_langs:
-- C++
 helpviewer_keywords:
 - catanh function
 - catanhf function
 - catanhl function
 ms.assetid: 1b6021cb-647a-41b4-9d7f-919cc8b57b86
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cd74d00e7f5be5e7631bc33fb9b7ea13eb32a407
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8c71d4e44de72b54fd334fc2464ca221f36855a3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393956"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646373"
 ---
 # <a name="catanh-catanhf-catanhl"></a>catanh, catanhf, catanhl
 
-Dal keser gerçek ekseni boyunca [-1; + 1] aralığı dışında ile karmaşık bir sayının ters hiperbolik tanjant alır.
+Dal keser gerçek ekseni aralığı [-1; + 1] dışında ile karmaşık bir sayının ters hiperbolik tanjant alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -79,19 +68,19 @@ Radyan cinsinden açı temsil eden bir karmaşık sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Ters hiperbolik tanjantını *z*, radyan cinsinden açı. Sonuç gerçek ekseninde ve aralığında sınırsız [-iπ/2; + iπ/2] sanal ekseni boyunca. Bir etki alanına hata oluşacaktır *z* [-1, + 1] aralık dışında. Kutbu'na hata oluşacaktır *z* -1 ya da + 1.
+Ters hiperbolik tanjantını *z*, radyan cinsinden açı. Sonuç gerçek ekseni ve aralık içinde sınırsız [-iπ/2; + iπ/2] sanal ekseni. Bir etki alanı hatası meydana gelir *z* [-1, + 1] aralığının dışında. Kutup hata oluşacaktır *z* -1 veya + 1.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **catanh** alın ve dönüş **_Fcomplex** ve **_Lcomplex** değerleri. Bir C programı **catanh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **catanh** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **catanh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üstbilgi|
+|Yordam|C üstbilgisi|C++ üst bilgisi|
 |-------------|--------------|------------------|
 |**catanh**, **catanhf**, **catanhl**|\<Complex.h >|\<ccomplex >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

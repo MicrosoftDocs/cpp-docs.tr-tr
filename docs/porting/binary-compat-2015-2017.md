@@ -1,25 +1,15 @@
 ---
-title: Visual Studio 2015 ve Visual Studio 2017 arasındaki C++ ikili uyumluluğu | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 2015 ve Visual Studio 2017 arasındaki C++ ikili uyumluluğu
 ms.date: 09/24/2018
-ms.technology:
-- cpp-language
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - binary compatibility, Visual C++
 ms.assetid: 591580f6-3181-4bbe-8ac3-f4fbaca949e6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f6d81f5cdce8955194985f66863940b97e32d40
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 43de0d3ca08bbe291581aa002bd8927ce272ab53
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065531"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666927"
 ---
 # <a name="c-binary-compatibility-between-visual-studio-2015-and-visual-studio-2017"></a>Visual Studio 2015 ve Visual Studio 2017 arasındaki C++ ikili uyumluluğu
 

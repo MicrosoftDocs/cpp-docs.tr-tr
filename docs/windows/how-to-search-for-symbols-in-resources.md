@@ -1,27 +1,16 @@
 ---
-title: 'Nasıl yapılır: sembolleri kaynaklarda (C++) için arama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: sembolleri kaynaklarda (C++) arama'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - symbols [C++], finding
 - resources [C++], searching for symbols
 ms.assetid: 6efef8e8-d0d4-4c49-b895-314974e7791a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: b4adac3b4e593ab19287e21e5a965f3a28d008b8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b289fa1c2e5e5e1997c5024b21cae3d7a22b2b8f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427621"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50655997"
 ---
 # <a name="how-to-search-for-symbols-in-resources-c"></a>Nasıl yapılır: sembolleri kaynaklarda (C++) arama
 

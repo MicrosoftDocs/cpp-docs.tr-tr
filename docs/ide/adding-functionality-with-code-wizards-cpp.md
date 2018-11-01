@@ -1,14 +1,8 @@
 ---
-title: (C++) kod sihirbazlarıyla işlevsellik ekleme | Microsoft Docs
-ms.custom: ''
+title: (C++) kod sihirbazlarıyla işlevsellik ekleme
 ms.date: 10/03/2018
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.classes
-dev_langs:
-- C++
 helpviewer_keywords:
 - code wizards [C++]
 - wizards [C++], code
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - projects [C++], adding functionality
 - class wizards [C++]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 43d6301a13b0abd517b0fb596f953617cf80f7b0
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: d96b02317f88abd426ceaca4a239e59b2c88b585
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861180"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50629872"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>(C++) kod sihirbazlarıyla işlevsellik ekleme
 

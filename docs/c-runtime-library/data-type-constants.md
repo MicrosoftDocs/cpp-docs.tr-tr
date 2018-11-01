@@ -1,10 +1,6 @@
 ---
-title: Veri türü sabitleri | Microsoft Docs
-ms.custom: ''
+title: Veri Türü Sabitleri
 ms.date: 06/25/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - FLT_MIN
 - SHRT_MAX
@@ -77,8 +73,6 @@ f1_keywords:
 - _LDBL_RADIX
 - LDBL_TRUE_MIN
 - DECIMAL_DIG
-dev_langs:
-- C++
 helpviewer_keywords:
 - DBL_MAX_EXP constant
 - _DBL_RADIX constant
@@ -145,16 +139,12 @@ helpviewer_keywords:
 - SIZE_MAX constant
 - RSIZE_MAX constant
 ms.assetid: c0f1c405-0465-41d5-b5ff-e81cdb6f1622
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0ef742989b4af7a3698f6047098110ee58e29bf4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c4ffbf294083131f29ffe957fd0434182fbb8f99
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46035675"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636936"
 ---
 # <a name="data-type-constants"></a>Veri Türü Sabitleri
 

@@ -1,12 +1,6 @@
 ---
-title: Belge-görünüm oluşturma | Microsoft Docs
-ms.custom: ''
+title: Belge-görünüm oluşturma
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - documents [MFC], creating
 - views [MFC], and frame windows
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - MFC, documents
 - tables [MFC], objects each MFC object creates
 ms.assetid: bda14f41-ed50-439d-af9e-591174e7dd64
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0deb187a6540af71a1dc72b730347374bc25f963
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: eccc65df784d000f8dccc244e295da522658b626
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423082"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633568"
 ---
 # <a name="documentview-creation"></a>Belge/Görünüm Oluşturma
 

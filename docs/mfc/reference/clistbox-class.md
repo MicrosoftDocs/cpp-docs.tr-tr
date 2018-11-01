@@ -1,10 +1,6 @@
 ---
-title: CListBox sınıfı | Microsoft Docs
-ms.custom: ''
+title: CListBox sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CListBox
 - AFXWIN/CListBox
@@ -56,8 +52,6 @@ f1_keywords:
 - AFXWIN/CListBox::SetTabStops
 - AFXWIN/CListBox::SetTopIndex
 - AFXWIN/CListBox::VKeyToItem
-dev_langs:
-- C++
 helpviewer_keywords:
 - CListBox [MFC], CListBox
 - CListBox [MFC], AddString
@@ -108,16 +102,12 @@ helpviewer_keywords:
 - CListBox [MFC], SetTopIndex
 - CListBox [MFC], VKeyToItem
 ms.assetid: 7ba3c699-c286-4cd9-9066-532c41ec05d1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5341342336b05d4fddab50a81d611e89b85573f2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 38463d5e7daf86c40cdef429cd80b18598e19025
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50068950"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656098"
 ---
 # <a name="clistbox-class"></a>CListBox sınıfı
 

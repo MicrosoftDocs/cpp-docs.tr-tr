@@ -1,29 +1,19 @@
 ---
-title: auto_partitioner sınıfı | Microsoft Docs
-ms.custom: ''
+title: auto_partitioner Sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - auto_partitioner
 - PPL/concurrency::auto_partitioner
 - PPL/concurrency::auto_partitioner::auto_partitioner
-dev_langs:
-- C++
 helpviewer_keywords:
 - auto_partitioner class
 ms.assetid: 7cc08e5d-20b4-47a4-b4b5-c214a78f5a9e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a2bb62d76733e77c2528a80dfc4e9ef358878895
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9e4701c39512613bd7525c2cc0e3d24a57e7689d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425417"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50644931"
 ---
 # <a name="autopartitioner-class"></a>auto_partitioner Sınıfı
 

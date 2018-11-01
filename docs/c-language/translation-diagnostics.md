@@ -1,23 +1,13 @@
 ---
-title: 'Çeviri: Tanılamalar | Microsoft Docs'
-ms.custom: ''
+title: 'Çeviri: Tanılamalar'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 3730ca7c-0147-452d-bd4a-6a1e97e9793e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d297cfd4f4dee49d3344ae2f159f85682f05ea2f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4863b97dc1db7ff295b5f786ca97da2551d0fa62
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017592"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665003"
 ---
 # <a name="translation-diagnostics"></a>Çeviri: Tanılamalar
 

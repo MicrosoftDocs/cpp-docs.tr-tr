@@ -1,30 +1,20 @@
 ---
-title: static_assert | Microsoft Docs
-ms.custom: ''
+title: static_assert
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - static_assert_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - C++ keywords, static_assert
 - C2338
 - assertions [C++], static_assert
 - static_assert
 ms.assetid: 28dd3668-e78c-4de8-ba68-552084743426
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a3c3648f0b372df3c898c41197cba86e6ae9f894
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d5ef1ba45001a2b1a3ee1f2da46f66224857b070
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46078497"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668981"
 ---
 # <a name="staticassert"></a>static_assert
 

@@ -1,30 +1,20 @@
 ---
-title: RuntimeClassFlags yapısı | Microsoft Docs
-ms.custom: ''
+title: RuntimeClassFlags Yapısı
 ms.date: 10/03/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::RuntimeClassFlags
 - implements/Microsoft::WRL::RuntimeClassFlags::value
-dev_langs:
-- C++
 helpviewer_keywords:
 - Microsoft::WRL::RuntimeClassFlags structure
 - Microsoft::WRL::RuntimeClassFlags::value constant
 ms.assetid: 7098d605-bd14-4d51-82f4-3def8296a938
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 90b590637935b7dbeaa0bb6a07ed84faeb0d0a1d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 74ae72dc87d45abba04d15303ed2ec92b18f8c28
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50076185"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668539"
 ---
 # <a name="runtimeclassflags-structure"></a>RuntimeClassFlags Yapısı
 

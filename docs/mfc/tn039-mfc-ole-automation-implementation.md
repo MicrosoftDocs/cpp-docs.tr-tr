@@ -1,14 +1,8 @@
 ---
-title: 'TN039: MFC-OLE Otomasyon uygulaması | Microsoft Docs'
-ms.custom: ''
+title: 'TN039: MFC-OLE Otomasyon uygulaması'
 ms.date: 06/28/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc.ole
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, COM support
 - IDispatch interface
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - TN039
 - Automation, MFC COM interface entry points
 ms.assetid: 765fa3e9-dd54-4f08-9ad2-26e0546ff8b6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 59eca912aab816f75ce8d585036f8f900c4f7bd3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cd6f8d681ef7e6517f2172ca6b22b13723a962fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399885"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658997"
 ---
 # <a name="tn039-mfcole-automation-implementation"></a>TN039: MFC/OLE Otomasyon Uygulaması
 

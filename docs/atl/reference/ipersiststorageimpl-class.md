@@ -1,10 +1,6 @@
 ---
-title: Ipersiststorageımpl sınıfı | Microsoft Docs
-ms.custom: ''
+title: Ipersiststorageımpl sınıfı
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: reference
 f1_keywords:
 - IPersistStorageImpl
 - ATLCOM/ATL::IPersistStorageImpl
@@ -15,22 +11,16 @@ f1_keywords:
 - ATLCOM/ATL::IPersistStorageImpl::Load
 - ATLCOM/ATL::IPersistStorageImpl::Save
 - ATLCOM/ATL::IPersistStorageImpl::SaveCompleted
-dev_langs:
-- C++
 helpviewer_keywords:
 - storage, ATL
 - IPersistStorageImpl class
 ms.assetid: d652f02c-239c-47c7-9a50-3e9fc3014fff
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1479ced25a741e27a195b529b6bf8825b47ce41e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 320ef54c6148adf5354a6a7b1860a84e118dc6de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099609"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668994"
 ---
 # <a name="ipersiststorageimpl-class"></a>Ipersiststorageımpl sınıfı
 

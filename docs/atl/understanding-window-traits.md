@@ -1,25 +1,15 @@
 ---
-title: ATL pencere özelliklerini | Microsoft Docs
-ms.custom: ''
+title: ATL pencere özelliklerini
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - window traits
 ms.assetid: c90cf850-9e91-49da-9cf3-ad4efb30347d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 91ea30c79712ced6c86da0b030882fe6a88359ed
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 0ab1a3c8f20a8e81304cdae68731bc70fbfc05c7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764049"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647050"
 ---
 # <a name="understanding-window-traits"></a>Pencere özelliklerini anlama
 

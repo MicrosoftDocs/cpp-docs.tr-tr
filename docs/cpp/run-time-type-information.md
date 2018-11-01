@@ -1,12 +1,7 @@
 ---
-title: Çalışma zamanı türü bilgileri | Microsoft Docs
+title: Çalışma Zamanı Türü Bilgileri
 ms.custom: index-page
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - RTTI compiler option
 - run-time type information
@@ -14,16 +9,12 @@ helpviewer_keywords:
 - type information, run-time type checking
 - run-time checks, type checking
 ms.assetid: becbd0e5-0439-4c61-854f-8a74f7160c54
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9f9ce0094bce1f8e7590cef0cbe3bfe85f35158d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1d11ee3ea472f935120c59f0faefee905361ee97
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056067"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656171"
 ---
 # <a name="run-time-type-information"></a>Çalışma Zamanı Türü Bilgileri
 

@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1 ve 4) C4112 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1 ve 4) C4112
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4112
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4112
 ms.assetid: aff64897-bb79-4a67-9b6f-902c6d44f3dc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9015a7ee7a0b71d3c6aafd3e3b32d4ea1b07f108
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3678d0ce5d9eb9568f0272da4173e72502b0557f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110555"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50655838"
 ---
 # <a name="compiler-warning-levels-1-and-4-c4112"></a>Derleyici Uyarısı (düzey 1 ve 4) C4112
 

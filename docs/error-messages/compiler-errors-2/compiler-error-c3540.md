@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C3540 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C3540
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3540
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3540
 ms.assetid: 3c0c959c-e3b7-40eb-b922-ccac44bd9d85
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6525812d56a82ce2f5d8cad7a63250c726ce5193
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d0c4f1b71ccd12ad39fb25ef3411d2fb46b89da7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46103281"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665822"
 ---
 # <a name="compiler-error-c3540"></a>Derleyici Hatası C3540
 

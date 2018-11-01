@@ -1,27 +1,17 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4378 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Uyarısı (düzey 1) C4378
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4378
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4378
 ms.assetid: d08e11ef-891a-4752-9a5e-360e7394acf7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b34e02b884546bd1b7a3858ba6b668fd3d45258f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6197bd66214785d515bb1b73ceaf5a68d6751e79
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46135808"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666524"
 ---
 # <a name="compiler-warning-level-1-c4378"></a>Derleyici Uyarısı (düzey 1) C4378
 

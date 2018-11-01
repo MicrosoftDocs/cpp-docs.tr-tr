@@ -1,16 +1,10 @@
 ---
-title: '/ ZC: rvaluecast (tür dönüştürme kurallarını zorlama) | Microsoft Docs'
-ms.custom: ''
+title: /Zc:rvalueCast (Tür dönüştürme kurallarını zorlama)
 ms.date: 03/06/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - rvaluecast
 - /Zc:rvalueCast
 - VC.Project.VCCLCompilerTool.EnforceTypeConversionRules
-dev_langs:
-- C++
 helpviewer_keywords:
 - -Zc compiler options (C++)
 - rvaluecast
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 7825277d-e565-4c48-b0fb-76ac0b0c6e38
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 626cabbec169d541a63dd65c22a7380718613b79
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8e4be80d09ebf7f48795e01669610a0dc4f736d5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706595"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648207"
 ---
 # <a name="zcrvaluecast-enforce-type-conversion-rules"></a>/Zc:rvalueCast (Tür dönüştürme kurallarını zorlama)
 

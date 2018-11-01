@@ -1,10 +1,6 @@
 ---
-title: strcpy, wcscpy, _mbscpy | Microsoft Docs
-ms.custom: ''
+title: strcpy, wcscpy, _mbscpy
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - strcpy
 - wcscpy
@@ -29,8 +25,6 @@ f1_keywords:
 - wcscpy
 - _tcscpy
 - strcpy
-dev_langs:
-- C++
 helpviewer_keywords:
 - strcpy function
 - tcscpy function
@@ -43,23 +37,19 @@ helpviewer_keywords:
 - _ftcscpy function
 - _mbscpy function
 ms.assetid: f97a4f81-e9ee-4f15-888a-0fa5d7094c5a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c996fc8ceb81d98d24e3c95330f2ed9c37097e7d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a6846123fedf48601d36ab8779d7c9868e5e9917
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413927"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640069"
 ---
 # <a name="strcpy-wcscpy-mbscpy"></a>strcpy, wcscpy, _mbscpy
 
-Bir dize kopyalar. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md).
+Bir dizeyi kopyalar. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md).
 
 > [!IMPORTANT]
-> **_mbscpy** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscpy** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -99,22 +89,22 @@ unsigned char *_mbscpy(
 Hedef dize.
 
 *strSource*<br/>
-Sonlandırılmış kaynak dizesi.
+Null ile sonlandırılmış kaynak dizesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, hedef dize döndürür. Hiçbir değer döndürmeyen bir hatayı belirtmek için ayrılmıştır.
+Bu işlevlerin her biri hedef dizesini getirir. Dönüş değeri bir hatayı göstermek üzere ayrılmıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strcpy** işlev kopyaları *strSource*, tarafından belirtilen konuma sonlandırma null karakteri de dahil olmak üzere *strDestination*. Davranışını **strcpy** kaynak ve hedef dizeleri çakışırsa tanımlanmadı.
+**Strcpy** işlev kopyaları *strSource*, tarafından belirtilen konuma bir sonlandırıcı null karakter de dahil olmak üzere *strDestination*. Davranışını **strcpy** kaynak ve hedef dizeleri örtüştürürse tanımsızdır.
 
 > [!IMPORTANT]
-> Çünkü **strcpy** yeterli alana denetlemez *strDestination* , kopyalamadan önce *strSource*, onu bir arabellek taşmaları olası nedeni. Bu nedenle, kullanmanızı öneririz [strcpy_s](strcpy-s-wcscpy-s-mbscpy-s.md) yerine.
+> Çünkü **strcpy** içinde yeterli yer denetlemez *strDestination* , kopyalamadan önce *strSource*, olduğu arabellek taşmalarına neden olabilir. Bu nedenle, kullanmanızı öneririz [strcpy_s](strcpy-s-wcscpy-s-mbscpy-s.md) yerine.
 
-**wcscpy** ve **_mbscpy** , sırasıyla, joker karakter ve çok baytlı karakter sürümleridir **strcpy**. Bağımsız değişkenleri ve dönüş değerini **wcscpy** joker karakter olan dizeleri; bu **_mbscpy** çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.
+**wcscpy** ve **_mbscpy** , sırasıyla, geniş karakter ve çok baytlı karakter sürümleridir **strcpy**. Bağımsız değişkenler ve dönüş değeri **wcscpy** geniş karakterli dizelerdir; **_mbscpy** çok baytlı karakter dizeleridir. Bu üç işlev aynı şekilde davranır.
 
-C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon aşırı yüklemeleri bu işlevler vardır. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -130,7 +120,7 @@ C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon a�
 |**wcscpy**|\<String.h > veya \<wchar.h >|
 |**_mbscpy**|\<Mbstring.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

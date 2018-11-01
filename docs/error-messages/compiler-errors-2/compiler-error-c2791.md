@@ -1,27 +1,17 @@
 ---
-title: Derleyici Hatası C2791 | Microsoft Docs
-ms.custom: ''
+title: Derleyici Hatası C2791
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2791
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2791
 ms.assetid: 938ad1fb-75d9-4ce2-ad92-83d6249005b5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 853e9b8a7741b31a57af172427656be8a78a99f5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 66a111ea6fe2ca5acfbc473d19da62d9de67372a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098153"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666615"
 ---
 # <a name="compiler-error-c2791"></a>Derleyici Hatası C2791
 
